@@ -82,10 +82,10 @@ export default function Membership() {
           <div style={{ fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--mustard-text)", fontFamily: "var(--U)", marginBottom: "1rem" }}>What is inside</div>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, color: "var(--ink)", marginBottom: "3rem" }}>Five things the membership gives you</h2>
           {[
-            { title: "The full essay archive", desc: `${essays.display} essays searchable by topic, audience, and reading time. The skeptic essays, the pastor essays, the marriage essays — all in one place, organized as reading paths.` },
+            { title: "The member library — deeper essays and reading paths, before anyone else sees them", desc: `${essays.display} essays searchable by topic, audience, and reading time. The skeptic essays, the pastor essays, the marriage essays — all in one place, organized as reading paths.` },
             { title: "Writing before it goes public", desc: "New essays land in the member library before they reach Substack or Facebook. You read it first." },
             { title: `Curated reading guides for the ${SITE_STATS.bookCount} books`, desc: "Each book paired with the essays that extend its argument. Not a list of titles — a guided path through the ideas." },
-            { title: "Member-only tools and resources", desc: "The Bible Verse Finder, Prayer Generator, and future tools built for pastors, parents, and anyone trying to live well." },
+            { title: "Member-only tools and resources", desc: "A say in what gets built next — member requests set the roadmap for new tools for pastors, parents, and anyone trying to live well." },
             { title: "Direct access to James", desc: "A monthly open letter from James to members only, and a contact channel that gets a response. Not a broadcast — a conversation." },
           ].map((b, i) => (
             <div key={i} style={{ borderTop: i === 0 ? "none" : "1px solid var(--bone-muted)", paddingTop: i === 0 ? 0 : "1.5rem", marginBottom: "1.5rem" }}>

@@ -117,7 +117,7 @@ export default function Wisdom() {
             Most of your life is lived in the place no single command reaches. Whether to take the job. How much to give. When to speak and when to hold your peace. The Bible has more than rules for that place. It has wisdom, the hard-won skill of living well in a world that does not come with instructions.
           </p>
           <p style={{ ...heroP, marginBottom: "26px" }}>
-            A full third of the Old Testament, Proverbs, Ecclesiastes, and Job, exists for exactly these decisions. Here is the whole of it, gathered in one place, for whatever you are facing.
+            Three whole books of the Old Testament — Proverbs, Ecclesiastes, Job — exist for exactly these decisions. Here it is, gathered in one place, for whatever you are facing.
           </p>
           <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
             <Link href="/tools/wisdom-finder" style={{ display: "inline-block", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--charcoal)", background: "var(--mustard)", padding: "13px 22px", textDecoration: "none" }}>
@@ -187,7 +187,6 @@ export default function Wisdom() {
 
           <div style={{ marginTop: "var(--s-4)", display: "flex", gap: "var(--s-4)", flexWrap: "wrap" }}>
             <Link href="/life" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>The Integrated Life</Link>
-            <Link href="/disciple-making" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>Make Disciples</Link>
             <Link href="/tools/rule-of-life" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>Build a Rule of Life</Link>
           </div>
         </div>

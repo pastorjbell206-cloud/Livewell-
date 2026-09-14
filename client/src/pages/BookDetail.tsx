@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import { LoadFailed } from "@/components/LoadFailed";
 import { SEOMeta, getBookSchema, getBreadcrumbSchema } from "@/components/SEOMeta";
 import { trpc } from "@/lib/trpc";
 import { Link, useRoute } from "wouter";
@@ -27,6 +28,24 @@ export default function BookDetail() {
       <Layout>
         <div className="flex justify-center py-32">
           <Loader2 size={32} className="animate-spin" style={{ color: "var(--gold)" }} />
+        </div>
+      </Layout>
+    );
+  }
+
+  // A request that failed is not a book that does not exist. "Doesn't exist"
+  // is a claim about the catalogue, and it is the wrong one to make when the
+  // server simply did not answer.
+  if (bookQuery.isError) {
+    return (
+      <Layout>
+        <div className="py-16">
+          <LoadFailed
+            what="This book"
+            onRetry={() => void bookQuery.refetch()}
+            backHref="/read"
+            backLabel="Back to the library"
+          />
         </div>
       </Layout>
     );

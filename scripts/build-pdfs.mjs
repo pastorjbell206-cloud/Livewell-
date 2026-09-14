@@ -3,6 +3,7 @@
  *
  * Sources:
  *   client/public/context/guides/*.json          → client/public/downloads/context/<slug>.pdf
+ *   client/public/leadership/sermon-series.json  → client/public/downloads/sermon-series/<id>.pdf
  *
  * Run:  node scripts/build-pdfs.mjs
  *
@@ -22,7 +23,9 @@ import PDFDocument from "pdfkit";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const GUIDES_DIR = path.join(ROOT, "client/public/context/guides");
+const SERIES_FILE = path.join(ROOT, "client/public/leadership/sermon-series.json");
 const OUT_CONTEXT = path.join(ROOT, "client/public/downloads/context");
+const OUT_SERIES = path.join(ROOT, "client/public/downloads/sermon-series");
 const STUDYGUIDES_DIR = path.join(ROOT, "client/public/studyguides");
 const OUT_STUDYGUIDES = path.join(ROOT, "client/public/downloads/studyguides");
 const BOOKS_DIR = path.join(ROOT, "client/public/books");
@@ -478,11 +481,73 @@ async function buildContextGuide(guide) {
 }
 
 // ---------------------------------------------------------------------------
+// Sermon series
+// ---------------------------------------------------------------------------
+
+async function buildSermonSeries(series, intro) {
+  const outPath = path.join(OUT_SERIES, `${series.id}.pdf`);
+  await writePdf(outPath, (doc) => {
+    const weeks = series.sermons?.length || 0;
+    coverPage(doc, {
+      kicker: `Sermon Series · ${series.kind === "book" ? "Through a Book" : "Topical"} · ${weeks} Weeks`,
+      title: series.title,
+      subtitle: series.subtitle,
+    });
+
+    // Series front matter
+    if (series.scriptureRange) {
+      doc.font("Times-Bold").fontSize(11).fillColor(INK).text("Text. ", { continued: true })
+        .font("Times-Roman").text(series.scriptureRange, { lineGap: 3 });
+      doc.moveDown(0.4);
+    }
+    if (series.audience) {
+      doc.font("Times-Bold").fontSize(11).fillColor(INK).text("Good for. ", { continued: true })
+        .font("Times-Roman").text(series.audience, { lineGap: 3 });
+      doc.moveDown(0.4);
+    }
+    if (series.bigIdea) {
+      doc.font("Times-Bold").fontSize(11).fillColor(INK).text("The arc. ", { continued: true })
+        .font("Times-Roman").text(series.bigIdea, { lineGap: 4 });
+    }
+    doc.moveDown(1.6);
+
+    for (const sermon of series.sermons || []) {
+      sectionHeading(doc, { title: `${sermon.n}. ${sermon.title}` });
+      if (sermon.text) {
+        doc.moveDown(-0.3);
+        doc.font("Times-Italic").fontSize(10.5).fillColor(MUTED)
+          .text(sermon.text, { lineGap: 3 });
+        doc.moveDown(0.5);
+      }
+      doc.font("Times-Bold").fontSize(11).fillColor(INK).text("Big idea. ", { continued: true })
+        .font("Times-Roman").text(sermon.bigIdea || "", { lineGap: 4 });
+      doc.moveDown(0.4);
+      doc.font("Times-Bold").fontSize(11).fillColor(INK).text("Aim. ", { continued: true })
+        .font("Times-Roman").text(sermon.aim || "", { lineGap: 4 });
+      doc.moveDown(0.8);
+      notesLines(doc, 4);
+      doc.moveDown(1.2);
+    }
+
+    // Shared guidance from the Sermon Series Library, so the PDF stands alone.
+    if (intro) {
+      doc.moveDown(0.4);
+      thinRule(doc, RULE, 0.5);
+      doc.moveDown(1.2);
+      listHeading(doc, "How to Use This Series");
+      bodyParagraphs(doc, intro);
+    }
+  }, { title: series.title });
+  return outPath;
+}
+
+// ---------------------------------------------------------------------------
 // Main
 // ---------------------------------------------------------------------------
 
 async function main() {
   fs.mkdirSync(OUT_CONTEXT, { recursive: true });
+  fs.mkdirSync(OUT_SERIES, { recursive: true });
   fs.mkdirSync(OUT_STUDYGUIDES, { recursive: true });
   fs.mkdirSync(OUT_BOOKS, { recursive: true });
   fs.mkdirSync(OUT_READING_PATHS, { recursive: true });
@@ -497,15 +562,20 @@ async function main() {
     }
   }
 
-  // Free reading-library books (chapter files referenced by books/index.json)
-  const bookIndex = JSON.parse(fs.readFileSync(path.join(BOOKS_DIR, "index.json"), "utf8"));
-  const bookList = Array.isArray(bookIndex) ? bookIndex : bookIndex.books || [];
-  for (const entry of bookList) {
-    if (PAID_BOOK_SLUGS.has(entry.slug)) continue;
-    const file = path.join(BOOKS_DIR, `${entry.slug}.json`);
-    if (!fs.existsSync(file)) continue;
-    const book = { slug: entry.slug, ...JSON.parse(fs.readFileSync(file, "utf8")) };
-    written.push(await buildBook(book));
+  // Free reading-library books — retired July 2026 (catalog reduced to the
+  // three handwritten titles; drafts archived in content/archive/). The block
+  // no-ops when the library manifest is absent so the build stays green.
+  const bookIndexPath = path.join(BOOKS_DIR, "index.json");
+  if (fs.existsSync(bookIndexPath)) {
+    const bookIndex = JSON.parse(fs.readFileSync(bookIndexPath, "utf8"));
+    const bookList = Array.isArray(bookIndex) ? bookIndex : bookIndex.books || [];
+    for (const entry of bookList) {
+      if (PAID_BOOK_SLUGS.has(entry.slug)) continue;
+      const file = path.join(BOOKS_DIR, `${entry.slug}.json`);
+      if (!fs.existsSync(file)) continue;
+      const book = { slug: entry.slug, ...JSON.parse(fs.readFileSync(file, "utf8")) };
+      written.push(await buildBook(book));
+    }
   }
 
   if (fs.existsSync(STUDYGUIDES_DIR)) {
@@ -521,6 +591,15 @@ async function main() {
   for (const file of guideFiles) {
     const guide = JSON.parse(fs.readFileSync(path.join(GUIDES_DIR, file), "utf8"));
     written.push(await buildContextGuide(guide));
+  }
+
+  // Whole-Bible sermon series — moved to the Pastors Connection Network;
+  // library archived under content/archive/leadership-lib/.
+  if (fs.existsSync(SERIES_FILE)) {
+    const seriesData = JSON.parse(fs.readFileSync(SERIES_FILE, "utf8"));
+    for (const series of seriesData.series || []) {
+      written.push(await buildSermonSeries(series, seriesData.intro));
+    }
   }
 
   let total = 0;

@@ -19,7 +19,7 @@ const buttonStyle: React.CSSProperties = {
 
 export function StripeBuyButton({
   paymentLink,
-  label = "Get the ebook — $9.99",
+  label = "Get the ebook — $8.99",
 }: {
   paymentLink: string;
   label?: string;

@@ -12,6 +12,8 @@ import {
   pillarForPost,
   subThemesForPost,
 } from "@/lib/taxonomy";
+import SubjectShelf from "@/components/SubjectShelf";
+import { subjectById } from "@/lib/subjects";
 
 const PILLAR = PILLAR_BY_ID.get(6)!; // Living Well After Christendom (formation)
 
@@ -166,6 +168,7 @@ export default function LivingWell() {
           />
         </div>
       </section>
+      {subjectById("prayer-and-practice") && <SubjectShelf subject={subjectById("prayer-and-practice")!} />}
     </Layout>
   );
 }

@@ -3,7 +3,7 @@ import { z } from "zod";
 import {
   createCheckoutSession,
   getCheckoutSession,
-  BOOK_PRICES,
+  EBOOK_PRICE_USD,
   isStripeConfigured,
   createMembershipCheckoutSession,
 } from "./stripe-service";
@@ -132,12 +132,13 @@ export const stripeRouter = router({
     }),
 
   /**
-   * Get book pricing (public)
+   * Get book pricing (public). Every ebook is the same price, so this is one
+   * number rather than a per-title table.
    */
   getBookPrices: publicProcedure.query(() => {
     return {
       success: true,
-      prices: BOOK_PRICES,
+      ebookPriceUSD: EBOOK_PRICE_USD,
     };
   }),
 

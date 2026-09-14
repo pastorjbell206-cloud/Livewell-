@@ -15,13 +15,16 @@ import { SKEPTIC_TRACK_LIVE } from "@/lib/skepticTrack";
 
 import { PullQuote, SectionArt, StatementBand } from "@/components/EditorialBlocks";
 import Footer from "@/components/Footer";
-import { LibraryStrip } from "@/components/LibraryStrip";
 import MinimalNav from "@/components/MinimalNav";
+import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { SegmentedSignup } from "@/components/SegmentedSignup";
 import { SEOMeta, getOrganizationSchema, getWebSiteSchema } from "@/components/SEOMeta";
 import { TrackChip } from "@/components/TrackChip";
 import { trpc } from "@/lib/trpc";
 import { isFullEssay } from "@/lib/essayQuality";
+import FollowJames from "@/components/FollowJames";
+import AnnouncementBar from "@/components/AnnouncementBar";
+import PersistentHelpTab from "@/components/PersistentHelpTab";
 import {
   META_DESCRIPTION,
   PRIMARY_HEADLINE,
@@ -34,6 +37,23 @@ import {
 // track" secondary CTA that serves everyone (the skeptic entry stays as a
 // tertiary link). "B": the original long subhead + skeptic-first secondary.
 // Flip this one constant to switch variants without touching markup.
+// The wisdom topics surfaced on the front page. Chosen for search intent: these
+// are the things people actually type at midnight. The full 208 live at /wisdom.
+const WISDOM_TOPICS = [
+  { id: "anxiety", label: "Anxiety and worry" },
+  { id: "grief", label: "Grief and loss" },
+  { id: "marriage-conflict", label: "Marriage trouble" },
+  { id: "depression", label: "Depression" },
+  { id: "wayward-child", label: "A child who walked away" },
+  { id: "doubt", label: "Doubt and questions" },
+  { id: "forgiveness", label: "When you cannot forgive" },
+  { id: "addiction", label: "Addiction" },
+  { id: "loneliness", label: "Loneliness" },
+  { id: "anger", label: "Anger and resentment" },
+  { id: "suffering", label: "Suffering" },
+  { id: "singleness", label: "Singleness" },
+];
+
 const HERO_VARIANT: "A" | "B" = "A";
 
 // The intent doors — the primary way into the site. Written in the reader's
@@ -59,7 +79,7 @@ const DOORS = [
   {
     title: "I don't believe any of this",
     blurb:
-      "Written by a pastor who was an atheist far longer than he has been this. No setup, no pressure, no altar call.",
+      "Written by a pastor who was an atheist before he was anything else. No setup, no pressure, no altar call.",
     href: "/skeptic-track",
     cta: "Read the skeptic track",
   },
@@ -78,11 +98,18 @@ const DOORS = [
     cta: "Enter the family room",
   },
   {
-    title: "I want to disciple someone",
+    title: "I want to study, not just read",
     blurb:
-      "Eighteen table-ready studies that make you confident to walk with one person — no program, no stage, no seminary required.",
-    href: "/table",
-    cta: "Sit at the Table",
+      "Study guides with a leader's guide and a handout, guided reading paths, and printables for the room you'll teach in.",
+    href: "/studyguides",
+    cta: "Pick a study",
+  },
+  {
+    title: "I want wisdom for a real situation",
+    blurb:
+      "Two hundred and eight everyday situations — anger, money, grief, a hard boss, a wandering child — each answered from Scripture.",
+    href: "/wisdom",
+    cta: "Name the situation",
   },
   {
     title: "I have a hard question",
@@ -101,6 +128,7 @@ const PILLARS = [
   { name: "Theological Depth", href: "/theology", blurb: "Doctrine, church history, the whole biblical story." },
   { name: "Prophetic Justice", href: "/justice", blurb: "The poor, the outsider, the systems we inherit." },
   { name: "Prophetic Disruption", href: "/disruption", blurb: "The church, empire, and the politics that capture it." },
+  { name: "The Historic Faith", href: "/historic-faith", blurb: "Creeds, councils, and the long memory of the church." },
   { name: "Integrated Life", href: "/life", blurb: "Marriage, parenting, vocation, and rest." },
 ];
 
@@ -128,6 +156,7 @@ export default function Home() {
 
   return (
     <div>
+      <AnnouncementBar />
       <SEOMeta
         title="LiveWell by James Bell"
         description={META_DESCRIPTION}
@@ -267,7 +296,7 @@ export default function Home() {
                   {HERO_VARIANT === "A" ? "Find your track" : "Start here if you're a skeptic"}
                 </button>
               </Link>
-              <Link href="/table" style={{ textDecoration: "none" }}>
+              <Link href="/books" style={{ textDecoration: "none" }}>
                 <button
                   type="button"
                   style={{
@@ -283,7 +312,7 @@ export default function Home() {
                     cursor: "pointer",
                   }}
                 >
-                  Disciple someone
+                  See the books
                 </button>
               </Link>
             </div>
@@ -365,6 +394,50 @@ export default function Home() {
               </div>
             </article>
           </Link>
+        </div>
+      </section>
+
+      {/* THE ASK, EARLY — a reader who is already convinced by the hero should
+          not have to scroll past eight doors and the whole library to find the
+          subscribe form. The full segmented version still sits further down for
+          the reader who needed convincing; this is the same ask, stated once up
+          front. */}
+      <section
+        id="home-hero-signup"
+        style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--s-4)" }}
+      >
+        <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", textAlign: "center" }}>
+          <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "10px" }}>
+            The newsletter
+          </div>
+          <h2
+            style={{
+              fontFamily: "var(--F)",
+              fontSize: "clamp(24px, 3.4vw, 34px)",
+              fontWeight: 400,
+              letterSpacing: "-0.02em",
+              color: "var(--ink)",
+              lineHeight: 1.15,
+              marginBottom: "10px",
+            }}
+          >
+            One serious essay a week.
+          </h2>
+          <p
+            style={{
+              fontFamily: "var(--B)",
+              fontSize: "16px",
+              lineHeight: 1.7,
+              color: "var(--ink-muted)",
+              maxWidth: "52ch",
+              margin: "0 auto var(--s-4)",
+            }}
+          >
+            Theology that carries the weight of a Tuesday. No filler, no funnel, and you can leave whenever you like.
+          </p>
+          <div style={{ maxWidth: "460px", margin: "0 auto" }}>
+            <NewsletterSignup variant="inline" source="home-hero" />
+          </div>
         </div>
       </section>
 
@@ -484,9 +557,81 @@ export default function Home() {
         </div>
       </section>
 
+      {/* WISDOM — 208 topics answering "what does the Bible say about ___".
+          This is the largest single answer library on the site and it was not
+          on the front page at all, which is exactly the kind of thing a reader
+          arrives already looking for. Twelve of the highest-intent topics, then
+          the door to the rest. */}
+      <section id="home-wisdom" style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--s-4)" }}>
+        <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
+          <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "10px" }}>
+            Wisdom for all of life
+          </div>
+          <h2
+            style={{
+              fontFamily: "var(--F)",
+              fontSize: "clamp(24px, 3.4vw, 34px)",
+              fontWeight: 400,
+              letterSpacing: "-0.02em",
+              color: "var(--ink)",
+              lineHeight: 1.15,
+              marginBottom: "10px",
+            }}
+          >
+            What does the Bible actually say about what you are facing?
+          </h2>
+          <p
+            style={{
+              fontFamily: "var(--B)",
+              fontSize: "16px",
+              lineHeight: 1.7,
+              color: "var(--ink-muted)",
+              maxWidth: "62ch",
+              marginBottom: "var(--s-5)",
+            }}
+          >
+            Two hundred and eight topics, each one worked through honestly: the passages, the history, what the verse
+            actually meant, and where it lands on an ordinary week. Start where it hurts.
+          </p>
+
+          <div style={{ display: "flex", flexWrap: "wrap", gap: "10px", marginBottom: "var(--s-5)" }}>
+            {WISDOM_TOPICS.map(t => (
+              <Link
+                key={t.id}
+                href={`/wisdom/${t.id}`}
+                style={{
+                  fontFamily: "var(--U)",
+                  fontSize: "13.5px",
+                  fontWeight: 500,
+                  color: "var(--ink)",
+                  textDecoration: "none",
+                  background: "var(--card)",
+                  border: "1px solid var(--border)",
+                  borderRadius: "999px",
+                  padding: "9px 18px",
+                }}
+              >
+                {t.label}
+              </Link>
+            ))}
+          </div>
+
+          <div style={{ display: "flex", flexWrap: "wrap", gap: "20px" }}>
+            <Link href="/wisdom" style={{ fontFamily: "var(--U)", fontSize: "13.5px", fontWeight: 600, color: "var(--ink)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px" }}>
+              All 208 topics
+            </Link>
+            <Link href="/tools" style={{ fontFamily: "var(--U)", fontSize: "13.5px", fontWeight: 600, color: "var(--ink)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px" }}>
+              Every tool and assessment
+            </Link>
+            <Link href="/downloads" style={{ fontFamily: "var(--U)", fontSize: "13.5px", fontWeight: 600, color: "var(--ink)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px" }}>
+              Downloads and PDFs
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* FROM THE LIBRARY — the free full-length books, the strongest asset on
           the site, so they sit above the essay river rather than under it. */}
-      <LibraryStrip />
 
       {/* RECENT ESSAYS */}
       <section
@@ -664,7 +809,7 @@ export default function Home() {
               maxWidth: "32ch",
             }}
           >
-            Four ways in. One argument.
+            The pillars. One argument.
           </h2>
           <div
             style={{
@@ -722,6 +867,9 @@ export default function Home() {
       </section>
       </main>
 
+      <FollowJames heading="Everything James publishes, in one place" blurb="The essays and books live here. The newsletter, the podcast, and the daily notes live elsewhere. Same voice, different rooms." />
+
+      <PersistentHelpTab />
       <Footer />
     </div>
   );

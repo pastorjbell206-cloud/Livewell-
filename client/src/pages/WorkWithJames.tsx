@@ -65,7 +65,7 @@ export default function WorkWithJames() {
                 How I Can Help
               </h2>
               {[
-                { title: "Speaking & Preaching", desc: "Conferences, retreats, revivals, and pulpit supply. Theological depth meets pastoral warmth." },
+                { title: "Speaking & Preaching", desc: "Conferences, retreats, revivals, and pulpit supply. Serious theology, preached like it matters on a Tuesday." },
                 { title: "Pastoral Coaching", desc: "One-on-one coaching for pastors facing burnout, church conflict, leadership development, or personal growth." },
                 { title: "Church Consulting", desc: "Strategic planning, revitalization assessment, leadership team development, and ministry audit." },
                 { title: "Writing & Ghostwriting", desc: "Book development, sermon series resources, curriculum writing, and collaborative projects." },
@@ -98,7 +98,7 @@ export default function WorkWithJames() {
                 <div role="status" style={{ padding: "40px 24px", textAlign: "center", background: "var(--ok-bg)", borderRadius: "8px" }}>
                   <CheckCircle size={48} style={{ color: "var(--ok)", margin: "0 auto 16px" }} />
                   <h3 style={{ fontSize: "20px", fontWeight: 600, color: "var(--ok)", fontFamily: "var(--F)", marginBottom: "8px" }}>Message Sent</h3>
-                  <p style={{ fontSize: "15px", color: "var(--ok)", fontFamily: "var(--B)" }}>Thank you for reaching out. I'll respond within 48 hours.</p>
+                  <p style={{ fontSize: "15px", color: "var(--ok)", fontFamily: "var(--B)" }}>Thank you for reaching out. I read everything and reply as soon as I can.</p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "16px" }}>

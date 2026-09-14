@@ -58,7 +58,7 @@ const STATIC_PAGES = [
   {
     path: "/about",
     title: "About James Bell",
-    description: "Lead Pastor of First Baptist Church of Fenton, founder of the Pastors Connection Network, author of twenty-one books. Came to faith from atheism. Raised without a father. Five sons.",
+    description: "James Bell has pastored First Baptist Church of Fenton, Michigan for twelve years. He founded the Pastors Connection Network and ENDS, hosts the Following the Way podcast, and has written twenty-one books.",
     type: "profile",
     schemas: [personSchema()],
   },
@@ -70,14 +70,8 @@ const STATIC_PAGES = [
   },
   {
     path: "/books",
-    title: "Books — by James Bell",
-    description: "Books on theology, ministry, marriage, and the Christian life. Twenty-one titles spanning church leadership, prophetic justice, and the integrated life.",
-    type: "website",
-  },
-  {
-    path: "/reading-paths",
-    title: "Reading Paths — Curated Collections",
-    description: "Curated reading paths: burnout and sabbatical, prophetic justice, new pastors, marriage in ministry. Each path is an argument arc, not a topic list.",
+    title: "Books by James Bell — Three Titles, Written by Hand",
+    description: "The books James Bell wrote by hand: When God Bless America Replaces Thy Kingdom Come, The Monster in the Mirror, and Believe. Read the opening of each free.",
     type: "website",
   },
   {
@@ -95,7 +89,7 @@ const STATIC_PAGES = [
   {
     path: "/tools",
     title: "Tools for Pastors and Readers",
-    description: "Practical tools for pastors and serious readers: verse finder, prayer generator, sermon-prep helpers.",
+    description: "Practical tools for serious readers: assessments, study guides, the wisdom library, verse finder, prayer generator, and more.",
     type: "website",
   },
   {
@@ -530,15 +524,60 @@ const SECTION_BY_ROUTE = {
   "/resources/creeds/": { name: "Creeds & Confessions", path: "/resources/creeds" },
   "/theology/history/": { name: "Church History", path: "/theology/history" },
   "/studyguides/": { name: "Study Guides", path: "/studyguides" },
-  "/table/": { name: "The Table", path: "/table" },
   "/how-tos/": { name: "How-To Library", path: "/how-tos" },
-  "/read/": { name: "Books", path: "/read" },
   "/plans/": { name: "Care Plans", path: "/plans" },
   "/theology/doctrine/": { name: "Theology", path: "/theology" },
   "/justice/topic/": { name: "Prophetic Justice", path: "/justice" },
   "/disruption/topic/": { name: "Prophetic Disruption", path: "/disruption" },
   "/wisdom/": { name: "Wisdom", path: "/wisdom" },
 };
+
+// ---------------------------------------------------------------------------
+// Hub index pages shipped ~5.3KB of shell with no content: the essays are on
+// their own prerendered pages (each carries its full body), but the hub itself
+// listed nothing a crawler could follow or read. This injects a real, linked
+// listing so each hub has substance and passes link equity to its children.
+// Capped per hub: the sitemap carries the complete set, so a hub needs a
+// representative body, not every row.
+const HUB_LISTINGS = {
+  "/writing": { label: "Essays", cap: 150, load: () => {
+    const lib = readJsonSafe("content/static-library.generated.json") || [];
+    return lib.filter((e) => e && e.slug && e.title)
+      .map((e) => ({ title: e.title, href: `/writing/${e.slug}`, blurb: e.excerpt || "" }));
+  } },
+  "/books": { label: "Books", cap: 10, load: () => [
+    { title: "When God Bless America Replaces Thy Kingdom Come", href: "/books/when-god-bless-america", blurb: "A pastor's critique of political idolatry in the American church." },
+    { title: "The Monster in the Mirror", href: "/books/the-monster-in-the-mirror", blurb: "Why every generation gets the Bible wrong, and what to do about ours." },
+    { title: "Believe", href: "/books/believe", blurb: "Rational answers to the hardest questions skeptics ask, from a former atheist." },
+  ] },
+  "/studyguides": { label: "Study guides", cap: 80, load: () => {
+    const d = readJsonSafe("client/public/studyguides/index.json");
+    return ((d && d.guides) || []).map((g) => ({ title: g.title, href: `/studyguides/${g.slug}`, blurb: g.blurb || "" }));
+  } },
+  "/pathways": { label: "Guided pathways", cap: 40, load: () => {
+    const d = readJsonSafe("client/public/pathways/index.json") || [];
+    return d.map((x) => ({ title: x.title, href: `/pathways/${x.slug}`, blurb: x.subtitle || "" }));
+  } },
+};
+
+function readJsonSafe(rel) {
+  try { return JSON.parse(fs.readFileSync(path.join(process.cwd(), rel), "utf8")); }
+  catch { return null; }
+}
+
+
+function hubListingHtml(routePath) {
+  const cfg = HUB_LISTINGS[routePath];
+  if (!cfg) return "";
+  let items;
+  try { items = cfg.load(); } catch { return ""; }
+  if (!items || !items.length) return "";
+  const rows = items.slice(0, cfg.cap).map((it) => {
+    const blurb = it.blurb ? `<p>${escapeHtml(String(it.blurb).slice(0, 160))}</p>` : "";
+    return `<li><a href="${escapeHtml(it.href)}">${escapeHtml(it.title)}</a>${blurb}</li>`;
+  }).join("\n");
+  return `<nav aria-label="${escapeHtml(cfg.label)}"><h2>${escapeHtml(cfg.label)}</h2><ul>\n${rows}\n</ul></nav>`;
+}
 
 function escapeHtml(s) {
   return String(s ?? "")
@@ -674,7 +713,7 @@ async function main() {
       type: page.type,
       schemas: page.schemas || [],
     });
-    writeRoute(template, page, head);
+    writeRoute(template, page, head, hubListingHtml(page.path));
     wrote++;
   }
 
@@ -691,9 +730,7 @@ async function main() {
     // (audit 02 #4): study-guide toolkits, Table studies, the How-To library,
     // and the read-online books.
     { file: "client/public/studyguides/index.json", key: "guides", route: "/studyguides/", ogPrefix: "studyguides", desc: "blurb", contentDir: "client/public/studyguides" },
-    { file: "client/public/table/studies-index.json", key: "studies", route: "/table/", ogPrefix: "table", desc: "summary", contentDir: "client/public/table/studies" },
     { file: "client/public/howtos/index.json", key: "articles", route: "/how-tos/", ogPrefix: "howtos", desc: "excerpt", contentDir: "client/public/howtos/a" },
-    { file: "client/public/books/index.json", key: "books", route: "/read/", ogPrefix: "read", desc: "blurb", type: "book", contentDir: "client/public/books" },
     { file: "client/public/plans/plans-index.json", key: "plans", route: "/plans/", ogPrefix: "plans", desc: "blurb", contentDir: "client/public/plans" },
     // The 50 contested-doctrine pages (/theology/doctrine/:slug) — manifest
     // from scripts/build-theology-index.mjs; subtitle is the description.
@@ -709,6 +746,11 @@ async function main() {
     // framing is the description, and the title matches the page's own
     // "{label} — What the Bible Says" so scrapers see the same head.
     { file: "client/public/wisdom/topics.json", key: "topics", route: "/wisdom/", ogPrefix: "wisdom", slugField: "id", titleField: "label", desc: "framing", titleTemplate: "{title} — What the Bible Says" },
+    // The 13 guided reading pathways (/pathways/:slug) and the 4 formation
+    // guides (/leadership/guides/:slug). Both are param routes, so the route
+    // table extractor skips them by design and only a manifest pass reaches
+    // them; the sitemap has listed both families all along.
+    { file: "client/public/pathways/index.json", route: "/pathways/", ogPrefix: "pathways", desc: "subtitle" },
   ];
   let withBody = 0;
   for (const src of LIBRARY_SOURCES) {
@@ -716,7 +758,9 @@ async function main() {
     try {
       data = JSON.parse(fs.readFileSync(path.join(REPO_ROOT, src.file), "utf8"));
     } catch { continue; }
-    for (const e of data[src.key] || []) {
+    // Most manifests are `{ key: [...] }`; a couple (pathways) are a bare array.
+    const entries = Array.isArray(data) ? data : data[src.key] || [];
+    for (const e of entries) {
       // Most manifests key by slug/title; a few (e.g. the whole-Bible sermons)
       // key by id/name, so allow a per-source field alias.
       const slug = e.slug || (src.slugField ? e[src.slugField] : undefined);
@@ -797,7 +841,16 @@ async function main() {
   const written = new Set(STATIC_PAGES.map((p) => p.path));
   const appSrc = fs.readFileSync(path.join(REPO_ROOT, "client/src/App.tsx"), "utf8");
   const importMap = {};
-  for (const m of appSrc.matchAll(/const (\w+) = lazy\(\(\) => import\("(\.\/pages\/[^"]+)"\)\)/g)) {
+  // Two lazy forms are in use: the one-liner `lazy(() => import("./pages/X"))`
+  // and the named-export form, which wraps and usually breaks across lines:
+  //   const X = lazy(() =>
+  //     import("./pages/X").then((m) => ({ default: m.X }))
+  //   );
+  // Matching only the first form silently dropped the second from prerendering
+  // — a page could ship a perfect literal <SEOMeta> and still serve the
+  // homepage head. Match up to the closing quote of the import path and let
+  // whatever follows be whatever it is.
+  for (const m of appSrc.matchAll(/const (\w+) = lazy\(\(\) =>\s*import\("(\.\/pages\/[^"]+)"/g)) {
     importMap[m[1]] = m[2];
   }
   for (const m of appSrc.matchAll(/^import (\w+) from "(\.\/pages\/[^"]+)";/gm)) {
@@ -819,7 +872,13 @@ async function main() {
     const normalized = routePath === "/" ? "" : routePath;
     if (routePath === "/404" || written.has(normalized)) continue;
     const rel = importMap[comp];
-    if (!rel) continue;
+    if (!rel) {
+      // Report rather than skip in silence. A component the import scanner
+      // cannot resolve is exactly how /book-bundles and /article-collections
+      // went un-prerendered without anything saying so.
+      uncovered.push(`${routePath} (component ${comp} — import not resolved)`);
+      continue;
+    }
     const compPath = path.join(REPO_ROOT, "client/src", rel.replace(/^\.\//, "")) + ".tsx";
     let compSrc;
     try {
@@ -866,7 +925,7 @@ async function main() {
       image: ogImageUrl(title),
       type: "website",
     });
-    writeRoute(template, { path: routePath }, head);
+    writeRoute(template, { path: routePath }, head, hubListingHtml(routePath));
     written.add(routePath);
     extracted++;
     wrote++;

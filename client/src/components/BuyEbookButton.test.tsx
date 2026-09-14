@@ -14,7 +14,7 @@ import userEvent from "@testing-library/user-event";
 
 import { BuyEbookButton } from "./BuyEbookButton";
 
-const CHECKOUT_LABEL = "Buy the eBook — $9.99";
+const CHECKOUT_LABEL = "Buy the eBook — $8.99";
 
 function jsonResponse(status: number, body: unknown): Response {
   return new Response(JSON.stringify(body), {

@@ -1,13 +1,28 @@
 import Stripe from "stripe";
+import { eq } from "drizzle-orm";
 import { createBookPurchase, updateBookPurchaseStatus } from "./db-email-books";
+import { getDb } from "./db";
+import { books } from "../drizzle/schema";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || "sk_test_placeholder");
 
-export const BOOK_PRICES: Record<number, { title: string; priceUSD: number; stripePriceId: string }> = {
-  1: { title: "Book One", priceUSD: 14.99, stripePriceId: "price_book_1" },
-  2: { title: "Book Two", priceUSD: 16.99, stripePriceId: "price_book_2" },
-  3: { title: "Book Three", priceUSD: 12.99, stripePriceId: "price_book_3" },
-};
+/**
+ * One price, every ebook. This used to be a three-entry table of "Book One",
+ * "Book Two", "Book Three" at made-up prices — a placeholder that would have
+ * charged a real reader $14.99 for whatever book happened to be id 1. The
+ * title now comes from the books table and the amount from here.
+ *
+ * Mirrored in api/index.ts (EBOOK_PRICE_CENTS) for the production runtime.
+ */
+export const EBOOK_PRICE_USD = 8.99;
+
+/** Title for a book id, or null when no such book exists (or no database). */
+async function bookTitle(bookId: number): Promise<string | null> {
+  const db = await getDb();
+  if (!db) return null;
+  const rows = await db.select({ title: books.title }).from(books).where(eq(books.id, bookId)).limit(1);
+  return rows[0]?.title ?? null;
+}
 
 /**
  * Create a Stripe checkout session for book purchase
@@ -18,10 +33,11 @@ export async function createCheckoutSession(
   customerName: string,
   origin: string
 ): Promise<{ sessionUrl: string; sessionId: string }> {
-  const bookPrice = BOOK_PRICES[bookId];
-  if (!bookPrice) {
-    throw new Error(`Book ${bookId} not found in pricing`);
+  const title = await bookTitle(bookId);
+  if (!title) {
+    throw new Error(`Book ${bookId} not found`);
   }
+  const bookPrice = { title, priceUSD: EBOOK_PRICE_USD };
 
   try {
     // Create checkout session

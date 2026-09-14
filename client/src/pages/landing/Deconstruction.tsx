@@ -16,15 +16,15 @@ const ARTICLES = [
 const FAQ_ITEMS = [
   {
     question: "What is faith deconstruction?",
-    answer: "Deconstruction is the process of critically examining the beliefs you inherited -- not to destroy faith, but to distinguish between what you were taught and what is actually true. It is not rebellion. It is the refusal to believe something you have not examined."
+    answer: "Deconstruction is the process of critically examining the beliefs you inherited — not to destroy faith, but to distinguish between what you were taught and what is actually true. It is not rebellion. It is the refusal to believe something you have not examined."
   },
   {
     question: "Is it a sin to deconstruct your faith?",
-    answer: "The Bible is full of people who questioned God -- Abraham argued, Job demanded answers, the Psalms are loaded with lament. Questioning is not sin. It is the beginning of a faith that belongs to you rather than one you borrowed from someone else."
+    answer: "The Bible is full of people who questioned God — Abraham argued, Job demanded answers, the Psalms are loaded with lament. Questioning is not sin. It is the beginning of a faith that belongs to you rather than one you borrowed from someone else."
   },
   {
     question: "Can you deconstruct and still be a Christian?",
-    answer: "Yes. Deconstruction is not the opposite of faith. Many people who deconstruct find a deeper, more honest Christianity on the other side -- one that does not require them to check their brain at the door. The issue is not whether you question. The issue is whether you are willing to follow the questions honestly."
+    answer: "Yes. Deconstruction is not the opposite of faith. Many people who deconstruct find a deeper, more honest Christianity on the other side — one that does not require them to check their brain at the door. The issue is not whether you question. The issue is whether you are willing to follow the questions honestly."
   },
   {
     question: "What is the difference between deconstruction and deconversion?",
@@ -86,7 +86,7 @@ export default function Deconstruction() {
           Your questions are not the enemy of faith. They are the beginning of a faith worth having.
         </h1>
         <p style={{ fontFamily: "var(--U)", fontSize: "16px", color: "rgba(255,255,255,0.6)", marginTop: "32px", maxWidth: "560px", marginLeft: "auto", marginRight: "auto", lineHeight: 1.7 }}>
-          Written by a pastor who came to faith from atheism -- and who believes the questions that scare the church are the same ones that make faith real.
+          Written by a pastor who came to faith from atheism — and who believes the questions that scare the church are the same ones that make faith real.
         </p>
       </section>
 
@@ -116,14 +116,14 @@ export default function Deconstruction() {
           <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "24px" }}>WHERE ARE YOU</p>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--ink)", marginBottom: "32px" }}>Start where you actually are</h2>
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <Link href="/writing/deconstruction-without-reconstruction" style={{ textDecoration: "none" }}>
+            <Link href="/writing/deconstruction-is-not-destruction" style={{ textDecoration: "none" }}>
               <div style={{ background: "var(--card)", padding: "24px", borderRadius: "3px", border: "1px solid rgba(0,0,0,0.06)" }}>
                 <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "8px" }}>I AM DECONSTRUCTING</p>
                 <p style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 400, color: "var(--ink)", marginBottom: "8px" }}>Deconstruction Is Not Destruction</p>
                 <p style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted, #5A5448)", lineHeight: 1.6 }}>For the person in the middle of it. The thing that feels like falling apart might be the thing that puts you back together.</p>
               </div>
             </Link>
-            <Link href="/writing/deconstruction-without-reconstruction" style={{ textDecoration: "none" }}>
+            <Link href="/writing/reconstructing-faith" style={{ textDecoration: "none" }}>
               <div style={{ background: "var(--card)", padding: "24px", borderRadius: "3px", border: "1px solid rgba(0,0,0,0.06)" }}>
                 <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "8px" }}>I AM REBUILDING</p>
                 <p style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 400, color: "var(--ink)", marginBottom: "8px" }}>Reconstructing Faith After Deconstruction</p>
@@ -189,8 +189,8 @@ export default function Deconstruction() {
       {/* Email Signup */}
       <section style={{ background: "var(--charcoal)", padding: "80px 24px" }}>
         <div style={{ maxWidth: "560px", margin: "0 auto", textAlign: "center" }}>
-          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--charcoal-fg)", marginBottom: "16px" }}>Get the 7-day Deconstruction Guide</h2>
-          <p style={{ fontFamily: "var(--U)", fontSize: "14px", color: "rgba(255,255,255,0.6)", marginBottom: "32px", lineHeight: 1.7 }}>Seven days of essays, questions, and Scripture for the person whose faith is coming apart -- or being put back together. No guilt. No conversion bait. Just honest theology.</p>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--charcoal-fg)", marginBottom: "16px" }}>Essays for the taking-apart</h2>
+          <p style={{ fontFamily: "var(--U)", fontSize: "14px", color: "rgba(255,255,255,0.6)", marginBottom: "32px", lineHeight: 1.7 }}>Seven days of essays, questions, and Scripture for the person whose faith is coming apart — or being put back together. No guilt. No conversion bait. Just honest theology.</p>
           <LandingSignup source="landing-deconstruction" />
         </div>
       </section>

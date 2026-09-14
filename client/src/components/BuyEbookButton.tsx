@@ -42,7 +42,7 @@ function humanize(slug: string): string {
 export function BuyEbookButton({
   slug,
   title,
-  label = "Buy the eBook — $9.99",
+  label = "Buy the eBook — $8.99",
 }: {
   slug: string;
   title?: string;

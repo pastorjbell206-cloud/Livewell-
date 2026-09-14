@@ -19,47 +19,26 @@ const Writing = lazy(() => import("./pages/Writing"));
 const ArticleDetail = lazy(() => import("./pages/ArticleDetail"));
 const Books = lazy(() => import("./pages/Books"));
 const BookDetail = lazy(() => import("./pages/BookDetail"));
-const AloneInACrowdedChurch = lazy(() => import("./pages/books/AloneInACrowdedChurch"));
 const AloneInACrowdedChurchThankYou = lazy(() => import("./pages/books/AloneInACrowdedChurchThankYou"));
-const Covenant = lazy(() => import("./pages/books/Covenant"));
 const CovenantThankYou = lazy(() => import("./pages/books/CovenantThankYou"));
-const Babylon = lazy(() => import("./pages/books/Babylon"));
 const BabylonThankYou = lazy(() => import("./pages/books/BabylonThankYou"));
-const HowToReadTheBible = lazy(() => import("./pages/books/HowToReadTheBible"));
 const HowToReadTheBibleThankYou = lazy(() => import("./pages/books/HowToReadTheBibleThankYou"));
-const BeTrueToYourself = lazy(() => import("./pages/books/BeTrueToYourself"));
 const BeTrueToYourselfThankYou = lazy(() => import("./pages/books/BeTrueToYourselfThankYou"));
-const WhatBelongsToThePoor = lazy(() => import("./pages/books/WhatBelongsToThePoor"));
 const WhatBelongsToThePoorThankYou = lazy(() => import("./pages/books/WhatBelongsToThePoorThankYou"));
-const RuleOfLifeBook = lazy(() => import("./pages/books/RuleOfLife"));
 const RuleOfLifeThankYou = lazy(() => import("./pages/books/RuleOfLifeThankYou"));
-const WhyNotWhat = lazy(() => import("./pages/books/WhyNotWhat"));
 const WhyNotWhatThankYou = lazy(() => import("./pages/books/WhyNotWhatThankYou"));
-const SermonOnTheMountAsPolitics = lazy(() => import("./pages/books/SermonOnTheMountAsPolitics"));
 const SermonOnTheMountAsPoliticsThankYou = lazy(() => import("./pages/books/SermonOnTheMountAsPoliticsThankYou"));
-const PropheticJustice101 = lazy(() => import("./pages/books/PropheticJustice101"));
 const PropheticJustice101ThankYou = lazy(() => import("./pages/books/PropheticJustice101ThankYou"));
-const MarriageInMinistry = lazy(() => import("./pages/books/MarriageInMinistry"));
 const MarriageInMinistryThankYou = lazy(() => import("./pages/books/MarriageInMinistryThankYou"));
-const TheLonelinessOfThePastor = lazy(() => import("./pages/books/TheLonelinessOfThePastor"));
 const TheLonelinessOfThePastorThankYou = lazy(() => import("./pages/books/TheLonelinessOfThePastorThankYou"));
-const HealWell = lazy(() => import("./pages/books/HealWell"));
 const HealWellThankYou = lazy(() => import("./pages/books/HealWellThankYou"));
-const BornAgainFromAtheism = lazy(() => import("./pages/books/BornAgainFromAtheism"));
 const BornAgainFromAtheismThankYou = lazy(() => import("./pages/books/BornAgainFromAtheismThankYou"));
-const TheGodWhoIsNotNice = lazy(() => import("./pages/books/TheGodWhoIsNotNice"));
 const TheGodWhoIsNotNiceThankYou = lazy(() => import("./pages/books/TheGodWhoIsNotNiceThankYou"));
-const FaithAfterDeconstruction = lazy(() => import("./pages/books/FaithAfterDeconstruction"));
 const FaithAfterDeconstructionThankYou = lazy(() => import("./pages/books/FaithAfterDeconstructionThankYou"));
-const OrdinaryHoliness = lazy(() => import("./pages/books/OrdinaryHoliness"));
 const OrdinaryHolinessThankYou = lazy(() => import("./pages/books/OrdinaryHolinessThankYou"));
-const TheScandalOfTheCross = lazy(() => import("./pages/books/TheScandalOfTheCross"));
 const TheScandalOfTheCrossThankYou = lazy(() => import("./pages/books/TheScandalOfTheCrossThankYou"));
-const HeavenIsNotYourReward = lazy(() => import("./pages/books/HeavenIsNotYourReward"));
 const HeavenIsNotYourRewardThankYou = lazy(() => import("./pages/books/HeavenIsNotYourRewardThankYou"));
-const PrayerInTheDark = lazy(() => import("./pages/books/PrayerInTheDark"));
 const PrayerInTheDarkThankYou = lazy(() => import("./pages/books/PrayerInTheDarkThankYou"));
-const TheBodyYouLeft = lazy(() => import("./pages/books/TheBodyYouLeft"));
 const TheBodyYouLeftThankYou = lazy(() => import("./pages/books/TheBodyYouLeftThankYou"));
 const WhenGodBlessAmerica = lazy(() => import("./pages/WhenGodBlessAmerica"));
 const WhenGodBlessAmericaThankYou = lazy(() => import("./pages/WhenGodBlessAmericaThankYou"));
@@ -67,7 +46,6 @@ const Believe = lazy(() => import("./pages/Believe"));
 const BelieveThankYou = lazy(() => import("./pages/BelieveThankYou"));
 const DeconstructionOfFaith = lazy(() => import("./pages/DeconstructionOfFaith"));
 const DeconstructionOfFaithThankYou = lazy(() => import("./pages/DeconstructionOfFaithThankYou"));
-const RaisingBelievers = lazy(() => import("./pages/RaisingBelievers"));
 const RaisingBelieversThankYou = lazy(() => import("./pages/RaisingBelieversThankYou"));
 const TheMonsterInTheMirror = lazy(() => import("./pages/TheMonsterInTheMirror"));
 const TheMonsterInTheMirrorThankYou = lazy(() => import("./pages/TheMonsterInTheMirrorThankYou"));
@@ -79,18 +57,13 @@ const BibleAndTransgenderIdentity = lazy(() => import("./pages/BibleAndTransgend
 const BibleAndTransgenderIdentityThankYou = lazy(() => import("./pages/BibleAndTransgenderIdentityThankYou"));
 const IsCriticalRaceTheoryBiblical = lazy(() => import("./pages/IsCriticalRaceTheoryBiblical"));
 const IsCriticalRaceTheoryBiblicalThankYou = lazy(() => import("./pages/IsCriticalRaceTheoryBiblicalThankYou"));
-const ConsiderTheBirds = lazy(() => import("./pages/ConsiderTheBirds"));
 const ConsiderTheBirdsThankYou = lazy(() => import("./pages/ConsiderTheBirdsThankYou"));
-const WhereYourTreasureIs = lazy(() => import("./pages/WhereYourTreasureIs"));
 const WhereYourTreasureIsThankYou = lazy(() => import("./pages/WhereYourTreasureIsThankYou"));
 const About = lazy(() => import("./pages/About"));
 const Exile = lazy(() => import("./pages/Exile"));
-const Table = lazy(() => import("./pages/table/Table"));
-const TableStudy = lazy(() => import("./pages/table/TableStudy"));
-const BookLibrary = lazy(() => import("./pages/books/BookLibrary"));
-const BookReader = lazy(() => import("./pages/books/BookReader"));
 
 const Resources = lazy(() => import("./pages/Resources"));
+const Downloads = lazy(() => import("./pages/Downloads"));
 const ContextLibrary = lazy(() => import("./pages/resources/ContextLibrary"));
 const CreedsLibrary = lazy(() => import("./pages/resources/CreedsLibrary"));
 const CreedDocument = lazy(() => import("./pages/resources/CreedDocument"));
@@ -123,8 +96,6 @@ const ReadingScripturePastOurPolitics = lazy(() => import("./pages/pillars/Readi
 const ThePastoralAngle = lazy(() => import("./pages/pillars/ThePastoralAngle"));
 const Membership = lazy(() => import("./pages/Membership"));
 const MembershipSuccess = lazy(() => import("./pages/MembershipSuccess"));
-const Discipleship = lazy(() => import("./pages/Discipleship"));
-const DiscipleMaking = lazy(() => import("./pages/DiscipleMaking"));
 const Wisdom = lazy(() => import("./pages/Wisdom"));
 const WisdomTopic = lazy(() => import("./pages/WisdomTopic"));
 const HowTos = lazy(() => import("./pages/HowTos"));
@@ -189,10 +160,8 @@ const SavedItems = lazy(() => import("./pages/tools/SavedItems"));
 const ScriptureMemory = lazy(() => import("./pages/tools/ScriptureMemory"));
 const ConflictGuide = lazy(() => import("./pages/tools/ConflictGuide"));
 const LifeAudit = lazy(() => import("./pages/tools/LifeAudit"));
-const ChurchHealth = lazy(() => import("./pages/tools/ChurchHealth"));
 const DeepBibleCompanion = lazy(() => import("./pages/tools/DeepBibleCompanion"));
 const FamilyDevotionBuilder = lazy(() => import("./pages/tools/FamilyDevotionBuilder"));
-const DiscipleshipTable = lazy(() => import("./pages/tools/DiscipleshipTable"));
 const RuleOfLife = lazy(() => import("./pages/tools/RuleOfLife"));
 const BibleOnTopic = lazy(() => import("./pages/tools/BibleOnTopic"));
 const WisdomFinder = lazy(() => import("./pages/tools/WisdomFinder"));
@@ -240,9 +209,6 @@ const AuthorProfile = lazy(() =>
 const ArticleCollections = lazy(() =>
   import("./pages/ArticleCollections").then((m) => ({ default: m.ArticleCollections }))
 );
-const BookBundles = lazy(() =>
-  import("./pages/BookBundles").then((m) => ({ default: m.BookBundles }))
-);
 
 const AdminLogin = lazy(() => import("./pages/AdminLogin"));
 const AdminDashboard = lazy(() => import("./pages/AdminDashboard"));
@@ -275,6 +241,38 @@ function ArticlesRedirect() {
   return null;
 }
 
+/**
+ * The pastors' library moved to the Pastors Connection Network, and the
+ * disciple-making tools are bound for the discipleship app; the free-book
+ * reader and the wide paid shelf closed when James reduced the catalog to
+ * the three books he wrote by hand. Server-side 301s in vercel.json cover
+ * crawlers and direct hits; these cover in-app navigation to old links.
+ */
+function PastorsMovedRedirect() {
+  useEffect(() => { window.location.replace("https://pastorsconnectionnetwork.com"); }, []);
+  // Visible while the hop happens (and if it doesn't): a real destination link.
+  return (
+    <div style={{ minHeight: "60vh", display: "grid", placeItems: "center", background: "var(--bone)", padding: "48px 24px" }}>
+      <p style={{ fontFamily: "var(--B)", fontSize: "16px", color: "var(--ink)", maxWidth: "48ch", textAlign: "center" }}>
+        The pastors&rsquo; library moved to the{" "}
+        <a href="https://pastorsconnectionnetwork.com" style={{ color: "var(--ink)", borderBottom: "1px solid var(--mustard)", textDecoration: "none" }}>
+          Pastors Connection Network
+        </a>
+        . Taking you there now.
+      </p>
+    </div>
+  );
+}
+function ToToolsRedirect() {
+  const [, navigate] = useLocation();
+  useEffect(() => { navigate("/tools", { replace: true }); }, [navigate]);
+  return null;
+}
+function ToBooksRedirect() {
+  const [, navigate] = useLocation();
+  useEffect(() => { navigate("/books", { replace: true }); }, [navigate]);
+  return null;
+}
 function ForFamiliesRedirect() {
   const [, navigate] = useLocation();
   useEffect(() => { navigate("/parenting", { replace: true }); }, [navigate]);
@@ -356,10 +354,6 @@ function Router() {
         <Route path="/life/:slug" component={LifeDomain} />
         <Route path="/life" component={LifeIndex} />
         <Route path="/exile" component={Exile} />
-        <Route path="/table/:slug" component={TableStudy} />
-        <Route path="/table" component={Table} />
-        <Route path="/read/:slug" component={BookReader} />
-        <Route path="/read" component={BookLibrary} />
         <Route path="/parenting" component={Parenting} />
         <Route path="/family/catechism" component={FamilyCatechism} />
         <Route path="/family/devotions" component={FamilyDevotions} />
@@ -417,6 +411,45 @@ function Router() {
         <Route path="/plans/:slug">{(p) => <CarePlan key={p.slug} />}</Route>
         <Route path="/start" component={StartHereQuiz} />
         <Route path="/start-here" component={StartHereDiagnostic} />
+        {/* Retired sections: 301'd in vercel.json, mirrored here for in-app links */}
+        <Route path="/leadership/*?" component={PastorsMovedRedirect} />
+        <Route path="/pastors" component={PastorsMovedRedirect} />
+        <Route path="/for-leaders" component={PastorsMovedRedirect} />
+        <Route path="/the-pastoral-angle" component={PastorsMovedRedirect} />
+        <Route path="/pastors-resource-wall" component={PastorsMovedRedirect} />
+        <Route path="/table/*?" component={ToToolsRedirect} />
+        <Route path="/discipleship" component={ToToolsRedirect} />
+        <Route path="/disciple-making" component={ToToolsRedirect} />
+        <Route path="/tools/sermon-outline" component={ToToolsRedirect} />
+        <Route path="/tools/pastor-burnout" component={ToToolsRedirect} />
+        <Route path="/tools/church-health" component={ToToolsRedirect} />
+        <Route path="/tools/discipleship-table" component={ToToolsRedirect} />
+        <Route path="/read/*?" component={ToBooksRedirect} />
+        <Route path="/book-bundles" component={ToBooksRedirect} />
+        <Route path="/books/raising-believers" component={ToBooksRedirect} />
+        <Route path="/consider-the-birds" component={ToBooksRedirect} />
+        <Route path="/where-your-treasure-is" component={ToBooksRedirect} />
+        <Route path="/alone-in-a-crowded-church" component={ToBooksRedirect} />
+        <Route path="/covenant" component={ToBooksRedirect} />
+        <Route path="/babylon" component={ToBooksRedirect} />
+        <Route path="/how-to-read-the-bible" component={ToBooksRedirect} />
+        <Route path="/be-true-to-yourself" component={ToBooksRedirect} />
+        <Route path="/what-belongs-to-the-poor" component={ToBooksRedirect} />
+        <Route path="/rule-of-life" component={ToBooksRedirect} />
+        <Route path="/why-not-what" component={ToBooksRedirect} />
+        <Route path="/sermon-on-the-mount-as-politics" component={ToBooksRedirect} />
+        <Route path="/prophetic-justice-101" component={ToBooksRedirect} />
+        <Route path="/marriage-in-ministry" component={ToBooksRedirect} />
+        <Route path="/the-loneliness-of-the-pastor" component={ToBooksRedirect} />
+        <Route path="/healwell" component={ToBooksRedirect} />
+        <Route path="/born-again-from-atheism" component={ToBooksRedirect} />
+        <Route path="/the-god-who-is-not-nice" component={ToBooksRedirect} />
+        <Route path="/faith-after-deconstruction" component={ToBooksRedirect} />
+        <Route path="/ordinary-holiness" component={ToBooksRedirect} />
+        <Route path="/the-scandal-of-the-cross" component={ToBooksRedirect} />
+        <Route path="/heaven-is-not-your-reward" component={ToBooksRedirect} />
+        <Route path="/prayer-in-the-dark" component={ToBooksRedirect} />
+        <Route path="/the-body-you-left" component={ToBooksRedirect} />
         <Route path="/for-families" component={ForFamiliesRedirect} />
         <Route path="/pillars" component={Pillars} />
         <Route path="/living-well" component={LivingWell} />
@@ -426,10 +459,9 @@ function Router() {
         <Route path="/capture-by-the-left" component={CaptureByTheLeft} />
         <Route path="/reading-scripture-past-our-politics" component={ReadingScripturePastOurPolitics} />
         <Route path="/the-pastoral-angle" component={ThePastoralAngle} />
+        <Route path="/for-pastors" component={PastorsMovedRedirect} />
         <Route path="/membership" component={Membership} />
         <Route path="/membership/success" component={MembershipSuccess} />
-        <Route path="/discipleship" component={Discipleship} />
-        <Route path="/disciple-making" component={DiscipleMaking} />
         <Route path="/wisdom" component={Wisdom} />
         <Route path="/wisdom/:id" component={WisdomTopic} />
         <Route path="/how-tos" component={HowTos} />
@@ -447,13 +479,13 @@ function Router() {
         <Route path="/subscribe" component={EmailSignup} />
         <Route path="/authors/:slug" component={AuthorProfile} />
         <Route path="/article-collections" component={ArticleCollections} />
-        <Route path="/book-bundles" component={BookBundles} />
         <Route path="/resources/hard-issues-series" component={HardIssuesSeries} />
         <Route path="/resources/context/:slug" component={ContextGuide} />
         <Route path="/resources/context" component={ContextLibrary} />
         <Route path="/resources/creeds/:slug" component={CreedDocument} />
         <Route path="/resources/creeds" component={CreedsLibrary} />
         <Route path="/resources" component={Resources} />
+        <Route path="/downloads" component={Downloads} />
         <Route path="/books" component={Books} />
         <Route path="/books/when-god-bless-america/thank-you" component={WhenGodBlessAmericaThankYou} />
         <Route path="/books/when-god-bless-america" component={WhenGodBlessAmerica} />
@@ -462,7 +494,6 @@ function Router() {
         <Route path="/books/deconstruction-of-faith/thank-you" component={DeconstructionOfFaithThankYou} />
         <Route path="/books/deconstruction-of-faith" component={DeconstructionOfFaith} />
         <Route path="/books/raising-believers/thank-you" component={RaisingBelieversThankYou} />
-        <Route path="/books/raising-believers" component={RaisingBelievers} />
         <Route path="/books/the-monster-in-the-mirror/thank-you" component={TheMonsterInTheMirrorThankYou} />
         <Route path="/books/the-monster-in-the-mirror" component={TheMonsterInTheMirror} />
         <Route path="/books/the-reliability-of-scripture/thank-you" component={TheReliabilityOfScriptureThankYou} />
@@ -476,51 +507,29 @@ function Router() {
         <Route path="/books/:slug" component={BookDetail} />
         {/* LiveWell series — top-level sales + gated thank-you pages */}
         <Route path="/consider-the-birds/thank-you" component={ConsiderTheBirdsThankYou} />
-        <Route path="/consider-the-birds" component={ConsiderTheBirds} />
         <Route path="/where-your-treasure-is/thank-you" component={WhereYourTreasureIsThankYou} />
-        <Route path="/where-your-treasure-is" component={WhereYourTreasureIs} />
         <Route path="/alone-in-a-crowded-church/thank-you" component={AloneInACrowdedChurchThankYou} />
-        <Route path="/alone-in-a-crowded-church" component={AloneInACrowdedChurch} />
         <Route path="/covenant/thank-you" component={CovenantThankYou} />
-        <Route path="/covenant" component={Covenant} />
         <Route path="/babylon/thank-you" component={BabylonThankYou} />
-        <Route path="/babylon" component={Babylon} />
         <Route path="/how-to-read-the-bible/thank-you" component={HowToReadTheBibleThankYou} />
-        <Route path="/how-to-read-the-bible" component={HowToReadTheBible} />
         <Route path="/be-true-to-yourself/thank-you" component={BeTrueToYourselfThankYou} />
-        <Route path="/be-true-to-yourself" component={BeTrueToYourself} />
         <Route path="/what-belongs-to-the-poor/thank-you" component={WhatBelongsToThePoorThankYou} />
-        <Route path="/what-belongs-to-the-poor" component={WhatBelongsToThePoor} />
         <Route path="/rule-of-life/thank-you" component={RuleOfLifeThankYou} />
-        <Route path="/rule-of-life" component={RuleOfLifeBook} />
         <Route path="/why-not-what/thank-you" component={WhyNotWhatThankYou} />
-        <Route path="/why-not-what" component={WhyNotWhat} />
+        <Route path="/sermon-series" component={PastorsMovedRedirect} />
         <Route path="/sermon-on-the-mount-as-politics/thank-you" component={SermonOnTheMountAsPoliticsThankYou} />
-        <Route path="/sermon-on-the-mount-as-politics" component={SermonOnTheMountAsPolitics} />
         <Route path="/prophetic-justice-101/thank-you" component={PropheticJustice101ThankYou} />
-        <Route path="/prophetic-justice-101" component={PropheticJustice101} />
         <Route path="/marriage-in-ministry/thank-you" component={MarriageInMinistryThankYou} />
-        <Route path="/marriage-in-ministry" component={MarriageInMinistry} />
         <Route path="/the-loneliness-of-the-pastor/thank-you" component={TheLonelinessOfThePastorThankYou} />
-        <Route path="/the-loneliness-of-the-pastor" component={TheLonelinessOfThePastor} />
         <Route path="/healwell/thank-you" component={HealWellThankYou} />
-        <Route path="/healwell" component={HealWell} />
         <Route path="/born-again-from-atheism/thank-you" component={BornAgainFromAtheismThankYou} />
-        <Route path="/born-again-from-atheism" component={BornAgainFromAtheism} />
         <Route path="/the-god-who-is-not-nice/thank-you" component={TheGodWhoIsNotNiceThankYou} />
-        <Route path="/the-god-who-is-not-nice" component={TheGodWhoIsNotNice} />
         <Route path="/faith-after-deconstruction/thank-you" component={FaithAfterDeconstructionThankYou} />
-        <Route path="/faith-after-deconstruction" component={FaithAfterDeconstruction} />
         <Route path="/ordinary-holiness/thank-you" component={OrdinaryHolinessThankYou} />
-        <Route path="/ordinary-holiness" component={OrdinaryHoliness} />
         <Route path="/the-scandal-of-the-cross/thank-you" component={TheScandalOfTheCrossThankYou} />
-        <Route path="/the-scandal-of-the-cross" component={TheScandalOfTheCross} />
         <Route path="/heaven-is-not-your-reward/thank-you" component={HeavenIsNotYourRewardThankYou} />
-        <Route path="/heaven-is-not-your-reward" component={HeavenIsNotYourReward} />
         <Route path="/prayer-in-the-dark/thank-you" component={PrayerInTheDarkThankYou} />
-        <Route path="/prayer-in-the-dark" component={PrayerInTheDark} />
         <Route path="/the-body-you-left/thank-you" component={TheBodyYouLeftThankYou} />
-        <Route path="/the-body-you-left" component={TheBodyYouLeft} />
         <Route path="/substack" component={SubstackPage} />
         <Route path="/about" component={About} />
         <Route path="/search" component={SearchPage} />
@@ -547,10 +556,8 @@ function Router() {
         <Route path="/tools/scripture-memory" component={ScriptureMemory} />
         <Route path="/tools/conflict-guide" component={ConflictGuide} />
         <Route path="/tools/life-audit" component={LifeAudit} />
-        <Route path="/tools/church-health" component={ChurchHealth} />
         <Route path="/tools/deep-bible" component={DeepBibleCompanion} />
         <Route path="/tools/family-devotions" component={FamilyDevotionBuilder} />
-        <Route path="/tools/discipleship-table" component={DiscipleshipTable} />
         <Route path="/tools/rule-of-life" component={RuleOfLife} />
         <Route path="/tools/bible-on" component={BibleOnTopic} />
         <Route path="/tools/wisdom-finder" component={WisdomFinder} />
@@ -562,6 +569,7 @@ function Router() {
         <Route path="/privacy" component={Privacy} />
         <Route path="/accessibility" component={Accessibility} />
         <Route path="/terms" component={Terms} />
+        <Route path="/pastoral-burnout" component={PastorsMovedRedirect} />
         <Route path="/faith-crisis" component={FaithCrisis} />
         <Route path="/marriage-crisis" component={MarriageCrisis} />
         <Route path="/grief" component={GriefLanding} />

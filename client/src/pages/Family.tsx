@@ -15,6 +15,8 @@ import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { PullQuote, StatementBand, SectionArt } from "@/components/EditorialBlocks";
 import { trpc } from "@/lib/trpc";
+import SubjectShelf from "@/components/SubjectShelf";
+import { subjectById } from "@/lib/subjects";
 
 interface Devotion {
   id: string;
@@ -279,10 +281,10 @@ export default function Family() {
             <LinkCard href="/tools/bible-study" title="Bible study guide" desc="Study any book of the Bible with themes, questions, and reading strategies." />
             <LinkCard href="/tools/prayer-generator" title="Prayer generator" desc="Guided prayers for morning, evening, strength, guidance, and gratitude." />
             <LinkCard href="/tools/rule-of-life" title="Rule of life builder" desc="Build a sustainable rhythm of prayer, Scripture, rest, community, and mission you can actually keep." />
-            <LinkCard href="/disciple-making" title="Make disciples" desc="Equip the ordinary believer to make disciples around a table. The path, plus a Start a Table tool." />
           </div>
         </div>
       </section>
+      {subjectById("family") && <SubjectShelf subject={subjectById("family")!} />}
     </Layout>
   );
 }

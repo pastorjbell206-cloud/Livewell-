@@ -55,4 +55,4 @@ I am not asking you to believe a wonder because it moves you. Do not do that; it
 
 "With man this is impossible, but with God all things are possible" (Matthew 19:26, ESV). The sentence turns entirely on the second clause. Rule out the God, and the impossible stays impossible, and Hume can go home undefeated. Leave the door so much as ajar, and the whole question changes, because then the rare thing is not a broken law. It is the lawgiver, present for a morning, and the only honest way to answer him is to look.
 
-I thought I had a proof. I had a definition, and I had built a world around it small enough that nothing could ever surprise me in it. The surprise, when it came, did not break the world. It told me who had been holding it up the whole time.
+I thought I had a proof. I had a definition, and I had built a world around it small enough that nothing could ever surprise me in it. That is the whole of my case here, and it is less than you were probably expecting: not that miracles happen, but that I had never actually asked. I had answered in advance and called the answering rigor.

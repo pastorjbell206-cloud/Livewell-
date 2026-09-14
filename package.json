@@ -25,6 +25,7 @@
     "og": "node scripts/build-og-images.mjs",
     "prerender": "node scripts/prerender-heads.mjs",
     "verify:seo": "node scripts/verify-seo.mjs",
+    "audit:canonicals": "node scripts/audit-canonicals.mjs",
     "publish:docx": "tsx scripts/publish-docx.ts",
     "publish:book": "tsx scripts/publish-book.ts",
     "publish:md": "tsx scripts/publish-md.ts",

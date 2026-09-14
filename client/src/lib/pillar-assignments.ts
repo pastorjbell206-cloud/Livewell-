@@ -158,11 +158,6 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
     "subThemes": [],
     "confidence": "high"
   },
-  "learned-from-pastor-disagrees": {
-    "pillar": 5,
-    "subThemes": [],
-    "confidence": "high"
-  },
   "slow-burn-ministry-exhaustion": {
     "pillar": 5,
     "subThemes": [],
@@ -1547,18 +1542,6 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
       "fatherhood",
       "parenting",
       "family-household",
-      "vocation-work",
-      "practices"
-    ],
-    "confidence": "high"
-  },
-  "parenting-when-your-child-doubts-or-walks-away": {
-    "pillar": 6,
-    "subThemes": [
-      "fatherhood",
-      "parenting",
-      "family-household",
-      "friendship-community",
       "vocation-work",
       "practices"
     ],

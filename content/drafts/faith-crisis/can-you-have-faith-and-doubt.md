@@ -1,21 +1,15 @@
-# Can You Have Faith and Still Have Doubts?
-
-> **Status:** DRAFT for James's review. Not published, not wired to a route.
-> **Title (SEO):** Can You Have Faith and Still Have Doubts?
-> **Optional literary kicker:** "Faith Was Never Certainty"
-> **Target queries:** "can you have faith and doubt", "is doubt a sin", "can you
-> be a christian and have doubts", "what does the bible say about doubt"
-> **Pillar:** Theological Depth · **Type:** Theological Reframe (~640 words)
-> **Written for:** the doubting Christian (audience #2), the companion to
-> "Why Does God Feel So Far Away?"
-> **Preview text:** You were told a real Christian does not have questions. The
-> word God actually chose says the opposite.
->
-> Checked against the LiveWell voice: no forbidden words, no em-dashes, no
-> exclamation points, Scripture verbatim (ESV) with references, one load-bearing
-> word (emunah, Exodus 17:12), gospel earned in the close. Every citation is real
-> and verifiable; no personal anecdote is invented for James.
-
+---
+title: "Can You Have Faith and Still Have Doubts?"
+slug: can-you-have-faith-and-doubt
+track: doubt
+audience: individuals
+format: essay
+status: draft
+read_time_minutes: 4
+excerpt: "You were told a real Christian does not have questions. The Hebrew word underneath faith says the opposite. Emunah is not certainty, it is weight-bearing steadiness, the word used of Moses hands held up until sunset."
+seo_keywords: "can you have faith and doubt, is doubt a sin, can you be a christian and have doubts, what does the bible say about doubt, emunah meaning hebrew faith, faith is not certainty, i believe help my unbelief"
+meta_description: "Can you have faith and still have doubts? The Hebrew word for faith, emunah, means weight-bearing steadiness rather than certainty. Doubt that stays is not the opposite of faith."
+publish_at: null
 ---
 
 You were told, somewhere along the way, that faith means being sure. That a real Christian does not have questions, or has quietly answered them all, and that the doubt rising in you at two in the morning is the opposite of belief. So you have been treating your doubt as evidence against you. A leak in the hull. Proof you are losing it.

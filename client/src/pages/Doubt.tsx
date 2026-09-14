@@ -4,6 +4,8 @@ import MinimalNav from "@/components/MinimalNav";
 import Footer from "@/components/Footer";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import PillarLeadMagnet from "@/components/PillarLeadMagnet";
+import SubjectShelf from "@/components/SubjectShelf";
+import { subjectById } from "@/lib/subjects";
 
 export default function Doubt() {
 
@@ -55,7 +57,7 @@ export default function Doubt() {
     {
       title: "Someone I love is questioning their faith",
       description: "For parents, friends, and pastors watching someone you care about walk away. How to stay present without defending.",
-      href: "/writing/parenting-when-your-child-doubts-or-walks-away"
+      href: "/writing/teenager-losing-faith"
     },
     {
       title: "I've never believed but I'm curious",
@@ -248,6 +250,7 @@ export default function Doubt() {
       </main>
 
       <Footer />
+      {subjectById("doubt") && <SubjectShelf subject={subjectById("doubt")!} />}
     </div>
   );
 }

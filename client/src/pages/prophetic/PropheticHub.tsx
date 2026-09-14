@@ -8,6 +8,8 @@ import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { StatementBand, SectionArt } from "@/components/EditorialBlocks";
 import { getReadEssays } from "@/lib/readProgress";
+import SubjectShelf from "@/components/SubjectShelf";
+import { subjectById } from "@/lib/subjects";
 import type { SectionConfig, TopicIndexEntry } from "@/lib/prophetic";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
@@ -118,6 +120,12 @@ export default function PropheticHub({ config }: { config: SectionConfig }) {
           })}
         </div>
       </section>
+      {(() => {
+        // Each prophetic section gathers its own subject across the library:
+        // Justice pulls the justice writing, Disruption the church-and-power work.
+        const subject = subjectById(config.key === "justice" ? "justice" : "politics-and-power");
+        return subject ? <SubjectShelf subject={subject} /> : null;
+      })()}
     </Layout>
   );
 }

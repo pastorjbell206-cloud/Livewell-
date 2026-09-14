@@ -1,6 +1,6 @@
 {
   "slug": "the-psalms",
-  "title": "Praying the Honest Prayers",
+  "title": "The Psalms: A Bible Study on Honest Prayer",
   "subtitle": "A five-session study on the Psalms and the prayers we were afraid to pray.",
   "summary": "This study is for anyone who has stood in church singing about God's goodness while something inside them was screaming, and for the small groups that carry those people. It walks slowly through five sessions on the Psalter as the church's prayer book, on the lament that God does not merely permit but invites, on the imprecatory psalms and what to do with the rage they voice, on the psalms of trust and thanksgiving that are earned and not pasted on, and on the psalms of ascent and the long climb of worship. It is built so a busy person or a volunteer can lead it with no preparation. Every question carries the answer behind it. Every silence has a backup. Every session ends in prayer, because a study of the prayer book ought to teach a room to pray.\n\nThis is not a study that stands above the Psalms and admires them from a safe distance. The writer came to faith out of atheism, and he remembers what it was to have no one to say the words to. He was raised without a father, and the fatherless ache runs under every psalm that cries out to God as a father. He has five sons, and he has prayed the desperate psalms over each of them in the dark. He does not point from outside the Psalter. He learned to pray inside it, badly, and is still learning. And the one thing this study will not do is teach anyone that faith means presenting God with a cleaned-up face. The Psalms do the opposite. They put the rage, the grief, the doubt, and the terror into the mouth of the worshiper and call it prayer. A God who inspired Psalm 88 is not a God who needs to be protected from your honesty. He wrote the honest prayers first.",
   "audience": "Believers, doubters, and small groups learning to pray",
@@ -12,18 +12,55 @@
       "title": "The Prayer Book We Were Handed",
       "aim": "To recover the Psalter as the church's given prayer book, the place God teaches his people to speak to him in praise and in protest, and to refuse both the sentimentality that reads only the sunny psalms and the embarrassment that skips the rest.",
       "summary": "Bell says the first time he tried to pray, newly out of atheism and sure he was doing it wrong, no one told him there was a book already written for exactly that. There was. The church calls it the Psalms, and for most of Christian history it was the prayer book of the whole people of God, prayed and sung and memorized until it became the marrow of how believers talked to God. The real question is not whether the Psalms are beautiful poetry, which everyone grants, but what they are for, because the Psalter is not primarily a book about God. It is a book of words addressed to God, handed to us so we would not have to invent from scratch what to say. Athanasius saw it in the fourth century, that most of Scripture speaks to us while the Psalms speak for us, giving us our own words back. Calvin called the Psalter an anatomy of all the parts of the soul, because there is no interior weather a human being can suffer that is not somewhere in this book, already prayed. Bell takes the strong case for skipping the hard psalms, that a worship service wants to lift people, that no one comes on a Sunday to be handed a curse or a scream. There is a pastoral instinct in it worth honoring. But a church that prays only the psalms of praise has quietly told its people that half their inner life is not welcome in God's presence, and the people learn the lesson and pray with a mask on. Then the turn. The reason God gave us the whole Psalter, the praise and the lament and even the rage, is that he wants the whole person in the room, not the edited one. We do not clean ourselves up to pray. We bring the mess into the presence of the only One who can do anything with it, and the Psalms are the words for the bringing.",
-      "keyScripture": { "ref": "Psalm 62:8", "why": "Trust in him at all times, O people, pour out your heart before him, God is a refuge for us, naming prayer not as the presentation of a composed self but as the pouring out of the whole heart, contents and all, before the God who is a refuge precisely for people with something to pour." },
-      "timing": [ { "segment": "Open", "minutes": 5 }, { "segment": "Discuss", "minutes": 35 }, { "segment": "Close", "minutes": 10 } ],
+      "keyScripture": {
+        "ref": "Psalm 62:8",
+        "why": "Trust in him at all times, O people, pour out your heart before him, God is a refuge for us, naming prayer not as the presentation of a composed self but as the pouring out of the whole heart, contents and all, before the God who is a refuge precisely for people with something to pour."
+      },
+      "timing": [
+        {
+          "segment": "Open",
+          "minutes": 5
+        },
+        {
+          "segment": "Discuss",
+          "minutes": 35
+        },
+        {
+          "segment": "Close",
+          "minutes": 10
+        }
+      ],
       "discussion": [
-        { "q": "Bell says he tried to pray without knowing a prayer book already existed for exactly that. When you pray, are you inventing the words from scratch, or has anyone ever handed you the Psalms as the place to learn?", "behind": "Open on the reader's actual practice, not on theory. Many in the room pray in fragments they made up under pressure and have never been told the church has a given book for it. Surface the gap between praying alone from nothing and praying with the words God provided. Land it on relief, that there is help, not on shame that they did not know." },
-        { "q": "Athanasius said most of Scripture speaks to us but the Psalms speak for us, giving us our own words back. Where have you needed words for God and not had them, and what did you do with the silence?", "behind": "Press on the experience of wordlessness. Grief, fear, and joy all outrun our vocabulary, and the Psalms exist to meet exactly that. You want the room to remember a moment they could not pray for lack of words, so the Psalter lands as gift and not as assignment. Do not rush past the silence some will name." },
-        { "q": "Bell takes the strong case for a church that prays only the lifting psalms, so no one is handed a scream on a Sunday. What is true in that instinct, and what does a people lose when it never prays the hard ones?", "behind": "Hold both halves. The pastoral wish to encourage is real and good. But a diet of only praise teaches people that grief and doubt are unwelcome in God's presence, and they learn to pray with a mask. Help the room feel the cost of the edited Psalter without dismissing the kindness behind the instinct." },
-        { "q": "Calvin called the Psalms an anatomy of all the parts of the soul. Which part of your soul have you never once brought to God, and what have you assumed would happen if you did?", "behind": "This is the convicting center. Everyone edits something out of prayer, the anger, the envy, the doubt, the despair, on the assumption that God cannot handle it or will be offended. Press gently on what each person keeps back and why. Go first and name your own withheld part." },
-        { "q": "Bell says we do not clean ourselves up to pray, we bring the mess to the only One who can do anything with it. What would change in your prayers this week if you actually believed God wants the whole person and not the edited one?", "behind": "Move toward the gospel turn and toward practice. The point is not to perform rawness but to stop performing composure. Invite the room to imagine an honest prayer they have never prayed, and let them feel that the invitation is God's own, written into the book he gave." }
+        {
+          "q": "Bell says he tried to pray without knowing a prayer book already existed for exactly that. When you pray, are you inventing the words from scratch, or has anyone ever handed you the Psalms as the place to learn?",
+          "behind": "Open on the reader's actual practice, not on theory. Many in the room pray in fragments they made up under pressure and have never been told the church has a given book for it. Surface the gap between praying alone from nothing and praying with the words God provided. Land it on relief, that there is help, not on shame that they did not know."
+        },
+        {
+          "q": "Athanasius said most of Scripture speaks to us but the Psalms speak for us, giving us our own words back. Where have you needed words for God and not had them, and what did you do with the silence?",
+          "behind": "Press on the experience of wordlessness. Grief, fear, and joy all outrun our vocabulary, and the Psalms exist to meet exactly that. You want the room to remember a moment they could not pray for lack of words, so the Psalter lands as gift and not as assignment. Do not rush past the silence some will name."
+        },
+        {
+          "q": "Bell takes the strong case for a church that prays only the lifting psalms, so no one is handed a scream on a Sunday. What is true in that instinct, and what does a people lose when it never prays the hard ones?",
+          "behind": "Hold both halves. The pastoral wish to encourage is real and good. But a diet of only praise teaches people that grief and doubt are unwelcome in God's presence, and they learn to pray with a mask. Help the room feel the cost of the edited Psalter without dismissing the kindness behind the instinct."
+        },
+        {
+          "q": "Calvin called the Psalms an anatomy of all the parts of the soul. Which part of your soul have you never once brought to God, and what have you assumed would happen if you did?",
+          "behind": "This is the convicting center. Everyone edits something out of prayer, the anger, the envy, the doubt, the despair, on the assumption that God cannot handle it or will be offended. Press gently on what each person keeps back and why. Go first and name your own withheld part."
+        },
+        {
+          "q": "Bell says we do not clean ourselves up to pray, we bring the mess to the only One who can do anything with it. What would change in your prayers this week if you actually believed God wants the whole person and not the edited one?",
+          "behind": "Move toward the gospel turn and toward practice. The point is not to perform rawness but to stop performing composure. Invite the room to imagine an honest prayer they have never prayed, and let them feel that the invitation is God's own, written into the book he gave."
+        }
       ],
       "objections": [
-        { "objection": "Prayer should be reverent. Bringing your raw anger and despair to God is disrespectful, and the point of the Psalms is the praise, not the complaining. We should aspire to the high notes, not wallow in the low ones.", "response": "Honor the reverence, because it is pointing at something real, that God is holy and not our therapist and not a wall to shout at for its own sake. But notice who wrote the low notes. The despair of Psalm 88, the protest of Psalm 13, the rage of Psalm 137, are not the failures of the Psalter, they are the Psalter, breathed out by the same Spirit as the praise and preserved by the same church that sang the hallelujahs. Reverence that can only say the pleasant things is not reverence, it is performance, and God is not honored by a worshiper who hides half of himself and calls the hiding respect. The Psalms are reverent precisely because they take God seriously enough to tell him the truth, and they always, even out of the pit, tell it to him and not merely about him." },
-        { "objection": "The Psalms are ancient Hebrew poetry from a completely different world. They are beautiful, but they are not a manual for how I am supposed to pray in the twenty-first century. That is reading too much into an old songbook.", "response": "Grant the distance, because it is real, and reading the Psalms well means reading them as the poetry of a particular people in a particular history rather than as timeless greeting cards. But watch what the church has done with this book for two thousand years across every culture it entered, prayed it, sang it, buried its dead with it, because the human interior the Psalms map has not changed. The fear of death, the ache of abandonment, the hunger for justice, the surprise of joy, are not first-century Hebrew experiences, they are human ones, and the reason believers in every century reached for these old words is that the words kept fitting. Jesus himself prayed the Psalms, from Psalm 22 on the cross to Psalm 31 with his last breath, which means the church's Lord treated this old songbook as his own prayer book, and what was good enough for him is not too ancient for us." }
+        {
+          "objection": "Prayer should be reverent. Bringing your raw anger and despair to God is disrespectful, and the point of the Psalms is the praise, not the complaining. We should aspire to the high notes, not wallow in the low ones.",
+          "response": "Honor the reverence, because it is pointing at something real, that God is holy and not our therapist and not a wall to shout at for its own sake. But notice who wrote the low notes. The despair of Psalm 88, the protest of Psalm 13, the rage of Psalm 137, are not the failures of the Psalter, they are the Psalter, breathed out by the same Spirit as the praise and preserved by the same church that sang the hallelujahs. Reverence that can only say the pleasant things is not reverence, it is performance, and God is not honored by a worshiper who hides half of himself and calls the hiding respect. The Psalms are reverent precisely because they take God seriously enough to tell him the truth, and they always, even out of the pit, tell it to him and not merely about him."
+        },
+        {
+          "objection": "The Psalms are ancient Hebrew poetry from a completely different world. They are beautiful, but they are not a manual for how I am supposed to pray in the twenty-first century. That is reading too much into an old songbook.",
+          "response": "Grant the distance, because it is real, and reading the Psalms well means reading them as the poetry of a particular people in a particular history rather than as timeless greeting cards. But watch what the church has done with this book for two thousand years across every culture it entered, prayed it, sang it, buried its dead with it, because the human interior the Psalms map has not changed. The fear of death, the ache of abandonment, the hunger for justice, the surprise of joy, are not first-century Hebrew experiences, they are human ones, and the reason believers in every century reached for these old words is that the words kept fitting. Jesus himself prayed the Psalms, from Psalm 22 on the cross to Psalm 31 with his last breath, which means the church's Lord treated this old songbook as his own prayer book, and what was good enough for him is not too ancient for us."
+        }
       ],
       "quietRoomQuestion": "What is the one thing you have never said to God, the sentence you have been sure would be unwelcome in prayer, and where in the Psalms might God have already put those very words in a worshiper's mouth?",
       "practice": "This week, pray one psalm a day out loud, slowly, as your own words rather than as something you are studying. Start with Psalm 62 and let it teach you to pour out your heart. Then find the one part of your soul you have been editing out of prayer, the anger or the fear or the doubt, and bring it to God in plain words, without cleaning it up first. Write down what happened in you when you stopped presenting the edited self and prayed as the whole one.",
@@ -35,17 +72,41 @@
       ],
       "teaching": "The first time Bell tried to pray, he was newly out of atheism and certain he was doing it wrong, kneeling by a bed with no idea what a person was supposed to say to a God he had spent years denying. What no one told him, in that fumbling season, was that there was already a book written for exactly this, that he did not have to invent from scratch what to say to God because God had provided the words. The church calls that book the Psalms, and for most of Christian history it was not a section people admired and skipped. It was the prayer book of the whole people of God, prayed at dawn and dusk, sung in cathedrals and hovels, memorized until it became the marrow of how believers spoke to heaven. So we begin not with the beauty of the Psalms, which no one disputes, but with the question of what they are for, because the answer reframes the whole thing. Most of the Bible is God speaking to us. The Psalms are mostly us speaking to God, which is why Athanasius, writing in the fourth century to a man named Marcellinus, said the strange thing about this book is that in it you find your own words, that where the rest of Scripture addresses you, the Psalms are spoken by you, handed to you as your own voice. Calvin said the same in his own idiom, calling the Psalter an anatomy of all the parts of the soul, because there is no interior weather a human being can suffer that is not somewhere in this book, already prayed by someone who felt it first. Now take the strong case for editing the Psalter down, because it is a pastoral instinct and it is not stupid. A worship service wants to lift people. Most of us come to church already carrying enough weight, and the leader who reaches for the psalms of praise rather than the psalms of the pit is trying, kindly, to send people home encouraged rather than crushed. Grant the kindness. But watch the cost, because it is heavy and it is hidden. A church that prays only the sunny psalms has quietly taught its people that half of their actual inner life is unwelcome in the presence of God. The grief is not sung. The doubt is not prayed. The rage has no liturgy. And the people are not fools, they learn the lesson, and they come to God with the composed face and leave the real one in the car, and prayer becomes one more room where they perform. I know that performance from the inside, because I did it for years, thanking God in the words I thought he wanted while the true words sat locked behind my teeth. Here is the turn, and it is the whole reason the Psalter contains what it contains. God gave us the entire book, the hallelujahs and the how-longs and even the terrible curses, because he wants the whole person in the room and not the edited one. He is not a God who needs to be spared your honesty. He inspired Psalm 88, the darkest prayer in the Bible, a psalm that ends without a single ray of light, and he put it in the book on purpose, which means the darkness has a place in his presence and a language he himself provided. We do not clean ourselves up to pray. We were never asked to. We bring the mess, the whole unedited contents of the heart, into the presence of the one and only One who can actually do something with it, and the Psalms are the words for the bringing. That is the gift Bell wishes someone had handed him by that bed. It has been in the church's hands the whole time.",
       "scriptureStudy": [
-        { "ref": "Psalm 1:1-2", "note": "Blessed is the man whose delight is in the law of the Lord, and on his law he meditates day and night. The Psalter opens by naming its own use, a book to be chewed on continually, so the first word about the Psalms is that they are meant to be lived in, not merely read." },
-        { "ref": "Psalm 62:8", "note": "Pour out your heart before him, God is a refuge for us. Prayer is the pouring out of the whole heart, and the God addressed is a refuge, the safe place precisely for a person with a full and heavy heart to empty it." },
-        { "ref": "Psalm 42:5", "note": "Why are you cast down, O my soul, and why are you in turmoil within me? Hope in God. The psalmist prays by talking to his own downcast soul in God's hearing, showing that honest self-address and hope in God are not opposites but partners." },
-        { "ref": "Psalm 19:14", "note": "Let the words of my mouth and the meditation of my heart be acceptable in your sight, O Lord. The prayer asks that both speech and inner thought be brought before God, refusing the split between the presentable words and the hidden heart." },
-        { "ref": "Colossians 3:16", "note": "Let the word of Christ dwell in you richly, teaching and admonishing one another in psalms and hymns and spiritual songs. The New Testament church is commanded to keep singing the Psalms, so the prayer book of Israel becomes the prayer book of the church." },
-        { "ref": "Luke 24:44", "note": "Everything written about me in the Law of Moses and the Prophets and the Psalms must be fulfilled. The risen Jesus names the Psalms as one of the three great parts of Scripture that speak of him, which is why the church has always read them with Christ in the center." },
-        { "ref": "Psalm 150:6", "note": "Let everything that has breath praise the Lord. The Psalter ends where the honest praying leads, in praise, but it is praise arrived at through the whole book, earned by passing through the lament and the pit, not pasted on before them." }
+        {
+          "ref": "Psalm 1:1-2",
+          "note": "Blessed is the man whose delight is in the law of the Lord, and on his law he meditates day and night. The Psalter opens by naming its own use, a book to be chewed on continually, so the first word about the Psalms is that they are meant to be lived in, not merely read."
+        },
+        {
+          "ref": "Psalm 62:8",
+          "note": "Pour out your heart before him, God is a refuge for us. Prayer is the pouring out of the whole heart, and the God addressed is a refuge, the safe place precisely for a person with a full and heavy heart to empty it."
+        },
+        {
+          "ref": "Psalm 42:5",
+          "note": "Why are you cast down, O my soul, and why are you in turmoil within me? Hope in God. The psalmist prays by talking to his own downcast soul in God's hearing, showing that honest self-address and hope in God are not opposites but partners."
+        },
+        {
+          "ref": "Psalm 19:14",
+          "note": "Let the words of my mouth and the meditation of my heart be acceptable in your sight, O Lord. The prayer asks that both speech and inner thought be brought before God, refusing the split between the presentable words and the hidden heart."
+        },
+        {
+          "ref": "Colossians 3:16",
+          "note": "Let the word of Christ dwell in you richly, teaching and admonishing one another in psalms and hymns and spiritual songs. The New Testament church is commanded to keep singing the Psalms, so the prayer book of Israel becomes the prayer book of the church."
+        },
+        {
+          "ref": "Luke 24:44",
+          "note": "Everything written about me in the Law of Moses and the Prophets and the Psalms must be fulfilled. The risen Jesus names the Psalms as one of the three great parts of Scripture that speak of him, which is why the church has always read them with Christ in the center."
+        },
+        {
+          "ref": "Psalm 150:6",
+          "note": "Let everything that has breath praise the Lord. The Psalter ends where the honest praying leads, in praise, but it is praise arrived at through the whole book, earned by passing through the lament and the pit, not pasted on before them."
+        }
       ],
       "goingDeeper": "Press into the history the session only gestures at, because the church's use of the Psalms is a story worth knowing and largely forgotten. For most of Christian history the Psalter was prayed through on a regular cycle, in the monasteries every week and in the wider church across daily prayer, so that an ordinary believer might have most of the hundred and fifty psalms by heart. Dietrich Bonhoeffer, writing in 1940 in a small book titled Psalms: The Prayer Book of the Bible, argued that we learn to pray not by consulting our own hearts but by praying the words God has given, and that the Psalms are ultimately the prayers of Christ, into which the church is drawn, so that even the psalms a believer cannot yet mean are prayed on behalf of the whole body and finally by Christ himself. A group can weigh this carefully, asking what it means to pray words that outrun your present feeling, and whether that is honesty's opposite or its schooling. Set this beside C. S. Lewis, whose Reflections on the Psalms in 1958 approached the book as a literary man and an honest one, refusing to pretend the hard psalms were easy and admitting the curses shocked him, while insisting that the very rawness he flinched at was evidence the Psalms take evil seriously in a way polite religion does not. Then take the harder turn, into the claim that the Psalter has a shape, that its editors placed it deliberately, moving from the torah-delight of Psalm 1 through the long middle of lament and kingship to the crescendo of praise in the final psalms, so that the book itself enacts the movement from meditation through the pit to praise. The aim is not to admire the Psalms as artifacts but to recover them as the practiced, corporate, Christ-centered school of prayer the church once knew them to be, and to ask what a believer loses who was handed the songbook but never told it was meant to teach him how to speak to God.",
       "caseStudy": "A woman in your group is faithful, cheerful, and quick to redirect any heavy conversation toward gratitude. When the session names the edited prayer, she pushes back gently. She says she does not see the point of dwelling on the negative, that Scripture tells us to think on whatever is lovely, and that her practice of thanking God even when she does not feel it has carried her through hard years. Here is the work for the leader, and it must honor her before it presses her. She is not wrong that gratitude is commanded and that praise is real medicine, and you should say so plainly and mean it, because her discipline of thanks is a genuine grace and has clearly held her. But notice what the practice may be costing, because the gratitude offered as a way to avoid the grief is not the gratitude the Psalms model, which arrives through the lament and not around it. She may be using thanksgiving the way some people use a smile, to keep the hard thing at a safe distance from God and from herself. Do not let her hear an attack on gratitude. Help her see the difference between the praise that has passed through Psalm 88 and the praise that skips it, and ask, gently, whether there is a grief she has been thanking God past instead of bringing to him.",
-      "memoryVerse": { "ref": "Psalm 62:8", "text": "Trust in him at all times, O people; pour out your heart before him; God is a refuge for us." }
+      "memoryVerse": {
+        "ref": "Psalm 62:8",
+        "text": "Trust in him at all times, O people; pour out your heart before him; God is a refuge for us."
+      }
     },
     {
       "n": 2,
@@ -53,18 +114,55 @@
       "title": "How Long, O Lord: The Complaint God Invites",
       "aim": "To see lament as a God-given form of faith rather than its failure, to hear the complaint psalms as prayers that stay turned toward God even in protest, and to sit honestly with Psalm 88, the prayer that ends in the dark, without rushing it toward a resolution it refuses.",
       "summary": "Bell says the church taught him a hundred ways to praise and not one way to grieve in God's direction, so when the grief came he assumed it meant his faith had failed. It did not. The Psalter devotes more of itself to lament than to any other kind of prayer, and lament is not the absence of faith but one of its native tongues, the prayer that brings the pain to God instead of away from him. The real question is what to do with the how-long, the complaint that rises when God seems absent and the promised help does not come, and the Psalms answer by handing us the words to say it to his face. Psalm 13 asks how long four times before it ever turns, and it does turn, but only after the protest is fully voiced. Brueggemann named this the psalm of disorientation, the prayer for the season when the old settled world has come apart and the sunny psalms no longer fit, and he argued that a church with no language for disorientation forces its wounded to choose between honesty and faith. Bell takes the strong case for keeping a brave face, that complaining to God is faithless, that mature believers trust and do not question. There is a half-truth in it worth naming. But the psalmists question relentlessly and are called men after God's own heart, which means the brave face was never the requirement. Then Psalm 88, the psalm that does not resolve, that ends with darkness as its last word, and the hardest, most freeing truth in the session. God put a prayer with no happy ending in the prayer book on purpose, so that the believer in the pit would know there is a psalm for even this, that the darkness has a language and the language is still addressed to God. Lament is faith refusing to let go of God even when it cannot see him.",
-      "keyScripture": { "ref": "Psalm 13:1", "why": "How long, O Lord? Will you forget me forever? How long will you hide your face from me? naming the complaint God invites, the protest that accuses him of absence and yet keeps speaking to him, which is the paradox of lament, faith arguing with God rather than walking away from him." },
-      "timing": [ { "segment": "Open", "minutes": 5 }, { "segment": "Discuss", "minutes": 35 }, { "segment": "Close", "minutes": 10 } ],
+      "keyScripture": {
+        "ref": "Psalm 13:1",
+        "why": "How long, O Lord? Will you forget me forever? How long will you hide your face from me? naming the complaint God invites, the protest that accuses him of absence and yet keeps speaking to him, which is the paradox of lament, faith arguing with God rather than walking away from him."
+      },
+      "timing": [
+        {
+          "segment": "Open",
+          "minutes": 5
+        },
+        {
+          "segment": "Discuss",
+          "minutes": 35
+        },
+        {
+          "segment": "Close",
+          "minutes": 10
+        }
+      ],
       "discussion": [
-        { "q": "Bell says the church taught him to praise but never to grieve in God's direction, so when grief came he assumed his faith had failed. Were you ever taught that lament is faithlessness, and what did it cost you when the grief arrived?", "behind": "Open on the wound most people carry unexamined, the belief that a real Christian does not complain to God. Surface where that lesson was learned and what it did when suffering came, usually a double burden, the pain plus the guilt for feeling it. Land it on the relief that lament is in the book, not on blame for the teachers." },
-        { "q": "Psalm 13 asks how long four times before it turns toward trust, and it does not skip the asking. Why do you think the psalm makes us wait through the whole complaint before it arrives at hope?", "behind": "Press on the structure, because the order is the teaching. The psalm does not rush to the resolution, it voices the full protest first, which tells us the complaint is not a detour on the way to faith but part of it. Help the room feel that the honest asking is doing something, not delaying something." },
-        { "q": "Bell takes the strong case that mature believers trust and do not question, that complaining to God is faithless. What is the half-truth in it, and where does it go wrong?", "behind": "Hold both halves. There is a real trust that endures without demanding explanations, and that is not nothing. But the psalmists question God constantly and are still the models of faith, which means questioning and trusting are not opposites. Help the room see that the brave face, held as a rule, teaches people to lie to God, and that lament is the honest alternative faith actually takes." },
-        { "q": "Psalm 88 is the one psalm that does not resolve, ending with darkness as its last word. Why would God put a prayer with no happy ending in the prayer book, and who needs it there?", "behind": "This is the heart of the session and it must not be softened. Psalm 88 refuses the tidy turn, and its presence in Scripture is a gift to the person whose darkness has not lifted. Help the room see that God provided a prayer for the pit that stays in the pit, so no one in that place has to fake a resolution they do not have. Let the weight sit." },
-        { "q": "Bell says lament is faith refusing to let go of God even when it cannot see him. Where are you right now more tempted to walk away in silence than to argue with God to his face, and what would it look like to lament instead?", "behind": "Close on the invitation and toward practice. The alternative to lament is not serene trust, it is silence and drift, quietly leaving because there was no permission to protest. Help the room see that arguing with God, as the psalmists do, keeps the relationship alive where silence would end it. Invite an honest how-long they have not yet prayed." }
+        {
+          "q": "Bell says the church taught him to praise but never to grieve in God's direction, so when grief came he assumed his faith had failed. Were you ever taught that lament is faithlessness, and what did it cost you when the grief arrived?",
+          "behind": "Open on the wound most people carry unexamined, the belief that a real Christian does not complain to God. Surface where that lesson was learned and what it did when suffering came, usually a double burden, the pain plus the guilt for feeling it. Land it on the relief that lament is in the book, not on blame for the teachers."
+        },
+        {
+          "q": "Psalm 13 asks how long four times before it turns toward trust, and it does not skip the asking. Why do you think the psalm makes us wait through the whole complaint before it arrives at hope?",
+          "behind": "Press on the structure, because the order is the teaching. The psalm does not rush to the resolution, it voices the full protest first, which tells us the complaint is not a detour on the way to faith but part of it. Help the room feel that the honest asking is doing something, not delaying something."
+        },
+        {
+          "q": "Bell takes the strong case that mature believers trust and do not question, that complaining to God is faithless. What is the half-truth in it, and where does it go wrong?",
+          "behind": "Hold both halves. There is a real trust that endures without demanding explanations, and that is not nothing. But the psalmists question God constantly and are still the models of faith, which means questioning and trusting are not opposites. Help the room see that the brave face, held as a rule, teaches people to lie to God, and that lament is the honest alternative faith actually takes."
+        },
+        {
+          "q": "Psalm 88 is the one psalm that does not resolve, ending with darkness as its last word. Why would God put a prayer with no happy ending in the prayer book, and who needs it there?",
+          "behind": "This is the heart of the session and it must not be softened. Psalm 88 refuses the tidy turn, and its presence in Scripture is a gift to the person whose darkness has not lifted. Help the room see that God provided a prayer for the pit that stays in the pit, so no one in that place has to fake a resolution they do not have. Let the weight sit."
+        },
+        {
+          "q": "Bell says lament is faith refusing to let go of God even when it cannot see him. Where are you right now more tempted to walk away in silence than to argue with God to his face, and what would it look like to lament instead?",
+          "behind": "Close on the invitation and toward practice. The alternative to lament is not serene trust, it is silence and drift, quietly leaving because there was no permission to protest. Help the room see that arguing with God, as the psalmists do, keeps the relationship alive where silence would end it. Invite an honest how-long they have not yet prayed."
+        }
       ],
       "objections": [
-        { "objection": "Complaining to God shows a lack of faith. We are told to give thanks in all circumstances and to be anxious for nothing, so a Christian who is arguing with God and asking how long is really just failing to trust him.", "response": "Take the verses seriously, because they are real and they matter, and there is a genuine call in Scripture to trust God past our understanding. But hold them next to the book God gave us to pray, which is soaked in complaint, where the same Spirit who inspired give thanks in all circumstances inspired how long, O Lord, will you forget me forever. These are not in tension, they are in sequence, because the thanksgiving that Scripture commands is very often reached through the lament and not instead of it. The psalmists who ask how long are not the faithless ones, they are David and the sons of Korah, the very models of faith, and their questioning is not the opposite of trust but its most strenuous form, the refusal to stop talking to a God who seems silent. A faith that can only say thank you and never dares to say how long is not stronger. It is quieter, and often it is hiding." },
-        { "objection": "Psalm 88 ends in total darkness with no hope at all. That is depressing, not edifying, and I do not see why anyone should pray a prayer that just leaves you in despair. Faith is supposed to give hope.", "response": "Sit with the discomfort, because it is honest, and Psalm 88 is meant to disturb. But ask who this psalm is for, because the answer changes everything. It is for the person whose darkness has not lifted, who has prayed for the breakthrough and not received it, who sits in a hospital corridor or a grief that will not pass and is handed, by every cheerful believer around them, the demand to feel better than they do. To that person Psalm 88 is not despair, it is company, the discovery that God himself put a prayer for their exact place in the holy book, that the darkness is not proof of faithlessness because there is inspired Scripture that lives there too. Notice what the psalm does even in the dark, it keeps addressing God, crying out day and night before the very One who seems to have hidden his face. That is not the absence of hope. It is hope stripped down to its last and strongest form, the refusal to stop speaking to God even when God has gone silent." }
+        {
+          "objection": "Complaining to God shows a lack of faith. We are told to give thanks in all circumstances and to be anxious for nothing, so a Christian who is arguing with God and asking how long is really just failing to trust him.",
+          "response": "Take the verses seriously, because they are real and they matter, and there is a genuine call in Scripture to trust God past our understanding. But hold them next to the book God gave us to pray, which is soaked in complaint, where the same Spirit who inspired give thanks in all circumstances inspired how long, O Lord, will you forget me forever. These are not in tension, they are in sequence, because the thanksgiving that Scripture commands is very often reached through the lament and not instead of it. The psalmists who ask how long are not the faithless ones, they are David and the sons of Korah, the very models of faith, and their questioning is not the opposite of trust but its most strenuous form, the refusal to stop talking to a God who seems silent. A faith that can only say thank you and never dares to say how long is not stronger. It is quieter, and often it is hiding."
+        },
+        {
+          "objection": "Psalm 88 ends in total darkness with no hope at all. That is depressing, not edifying, and I do not see why anyone should pray a prayer that just leaves you in despair. Faith is supposed to give hope.",
+          "response": "Sit with the discomfort, because it is honest, and Psalm 88 is meant to disturb. But ask who this psalm is for, because the answer changes everything. It is for the person whose darkness has not lifted, who has prayed for the breakthrough and not received it, who sits in a hospital corridor or a grief that will not pass and is handed, by every cheerful believer around them, the demand to feel better than they do. To that person Psalm 88 is not despair, it is company, the discovery that God himself put a prayer for their exact place in the holy book, that the darkness is not proof of faithlessness because there is inspired Scripture that lives there too. Notice what the psalm does even in the dark, it keeps addressing God, crying out day and night before the very One who seems to have hidden his face. That is not the absence of hope. It is hope stripped down to its last and strongest form, the refusal to stop speaking to God even when God has gone silent."
+        }
       ],
       "quietRoomQuestion": "What is the how-long you have been afraid to pray, the complaint you have been carrying about God rather than to him, and what have you feared would happen if you finally said it to his face?",
       "practice": "This week, pray a lament. Take Psalm 13 or Psalm 88 and pray it as your own, and then, in your own words, bring God the actual complaint you have been keeping from him, the loss or the delay or the silence, and say it to his face without softening it into something more acceptable. Do not force a resolution you do not have. If the how-long is all you can pray, pray only that. Write down what shifted, or did not, when you stopped grieving away from God and grieved toward him instead.",
@@ -76,17 +174,41 @@
       ],
       "teaching": "The church taught Bell a hundred ways to praise God and never once taught him how to grieve in God's direction, so when the grief finally came, and it comes for everyone, he did the natural thing and assumed it meant his faith had collapsed. It had not. What had collapsed was a false picture of faith, the picture in which a real believer only ever thanks and trusts and never questions, and that picture does not come from the Bible. It comes from a church that quietly edited its own prayer book. Because the plain fact, the one that startles people when they finally count, is that the Psalter gives more of itself to lament than to any other single kind of prayer. There are more psalms of complaint than psalms of praise. Grief turned toward God is not the failure of the Psalms, it is their most common mode, which means lament is not the absence of faith but one of faith's native tongues, the language faith speaks when it hurts. So the real question of this session is what a believer is supposed to do with the how-long, the cry that rises when God seems absent and the help he promised does not arrive on time or at all, and the Psalms answer by putting the words in our mouths and pointing them at God. Look at how Psalm 13 works, because the structure is the sermon. It asks how long four separate times, how long will you forget me, how long will you hide your face, how long must I take counsel in my soul, how long shall my enemy be exalted, and only after all four, only after the full protest has been voiced, does it turn, and it does turn, ending in trust and even in song. But it does not skip the asking to get to the singing. It makes us wait through the whole complaint, because the complaint is not a detour on the road to faith, it is part of the road. Walter Brueggemann gave us the useful language for this, calling Psalm 13 a psalm of disorientation, the prayer for the season when the settled world has come apart and the confident sunny psalms no longer fit in the mouth, and he made the sharp observation that a church with no language for disorientation forces its wounded people to choose between being honest and being faithful, when the Psalms were given precisely so they would never have to choose. Take the strong case for the brave face, because sincere people hold it. It says that mature believers trust and do not question, that complaining to God betrays a lack of faith, that we should master our doubts rather than voice them. There is a half-truth buried in it, a real and quiet trust that endures without demanding God explain himself, and that trust is genuine. But the objection cannot survive its own Bible, because the men who wrote the questioning psalms, who accused God of forgetting and hiding and sleeping, are David and the sons of Korah, the very models of faith Scripture holds up, and their relentless questioning did not disqualify them, it is why we call the Psalms honest. The brave face, held as a law, does not produce strong faith. It produces people who lie to God with a smile and grieve alone in the car. And then there is Psalm 88, and I have to slow down here, because it is the one psalm that does not resolve. Every other lament turns, sooner or later, toward hope. Psalm 88 does not. It begins in the pit and it stays in the pit and its very last word, in the Hebrew, is darkness. The companions have become darkness, the psalm ends, and there is no dawn. And the freeing, staggering truth is that God put that prayer in the prayer book on purpose. He inspired a lament with no happy ending and preserved it in his holy word, so that the believer whose darkness has not lifted, who has begged for the light and not received it, would open the book and find, sitting there in Scripture, a prayer for their exact place. I have needed that psalm. I have prayed in the dark over my sons and felt the ceiling was made of iron, and the cheerful believers around me had run out of things to say, and Psalm 88 was the only prayer that did not lie. Notice what it does even there, in the pit, with no resolution coming, it keeps crying out to God, day and night, before the very One who seems to have hidden his face. That is the whole thing. That is lament. It is not the loss of faith. It is faith stripped down to its last and strongest muscle, the refusal to let go of God even when it cannot see him, the choice to argue with him to his face rather than walk away in silence. The opposite of lament was never serene trust. The opposite of lament is leaving. And the God who gave us how long is the God who would rather be shouted at than abandoned.",
       "scriptureStudy": [
-        { "ref": "Psalm 13:1", "note": "How long, O Lord? Will you forget me forever? The psalm opens by accusing God of forgetting and hiding, and it says this to God, not about him, which is the mark of true lament, protest that stays in relationship." },
-        { "ref": "Psalm 13:5-6", "note": "But I have trusted in your steadfast love, my heart shall rejoice in your salvation. The turn comes only after the fourfold how-long, showing that the trust is reached through the complaint and not instead of it, earned on the far side of honesty." },
-        { "ref": "Psalm 88:1", "note": "O Lord, God of my salvation, I cry out day and night before you. Even the darkest psalm begins by naming God as the God of my salvation and keeps crying to him, so the address to God survives when everything else has gone dark." },
-        { "ref": "Psalm 88:18", "note": "You have caused my beloved and my friend to shun me, my companions have become darkness. The last word of the psalm is darkness, with no resolution, and its presence in Scripture is God's provision for the believer whose night has not ended." },
-        { "ref": "Psalm 22:1", "note": "My God, my God, why have you forsaken me? The lament Jesus prayed from the cross, which means the Lord himself took the language of forsakenness on his lips, sanctifying the honest cry of dereliction as prayer and not as failure." },
-        { "ref": "Psalm 42:9", "note": "I say to God, my rock, why have you forgotten me? The psalmist calls God his rock and in the same breath accuses him of forgetting, holding trust and protest together in one sentence, which is the grammar of lament." },
-        { "ref": "Lamentations 3:19-23", "note": "Remember my affliction, the wormwood and the gall. But this I call to mind, the steadfast love of the Lord never ceases. Even outside the Psalter, biblical lament moves from the naming of bitter pain to the deliberate recollection of covenant love, refusing both denial and despair." }
+        {
+          "ref": "Psalm 13:1",
+          "note": "How long, O Lord? Will you forget me forever? The psalm opens by accusing God of forgetting and hiding, and it says this to God, not about him, which is the mark of true lament, protest that stays in relationship."
+        },
+        {
+          "ref": "Psalm 13:5-6",
+          "note": "But I have trusted in your steadfast love, my heart shall rejoice in your salvation. The turn comes only after the fourfold how-long, showing that the trust is reached through the complaint and not instead of it, earned on the far side of honesty."
+        },
+        {
+          "ref": "Psalm 88:1",
+          "note": "O Lord, God of my salvation, I cry out day and night before you. Even the darkest psalm begins by naming God as the God of my salvation and keeps crying to him, so the address to God survives when everything else has gone dark."
+        },
+        {
+          "ref": "Psalm 88:18",
+          "note": "You have caused my beloved and my friend to shun me, my companions have become darkness. The last word of the psalm is darkness, with no resolution, and its presence in Scripture is God's provision for the believer whose night has not ended."
+        },
+        {
+          "ref": "Psalm 22:1",
+          "note": "My God, my God, why have you forsaken me? The lament Jesus prayed from the cross, which means the Lord himself took the language of forsakenness on his lips, sanctifying the honest cry of dereliction as prayer and not as failure."
+        },
+        {
+          "ref": "Psalm 42:9",
+          "note": "I say to God, my rock, why have you forgotten me? The psalmist calls God his rock and in the same breath accuses him of forgetting, holding trust and protest together in one sentence, which is the grammar of lament."
+        },
+        {
+          "ref": "Lamentations 3:19-23",
+          "note": "Remember my affliction, the wormwood and the gall. But this I call to mind, the steadfast love of the Lord never ceases. Even outside the Psalter, biblical lament moves from the naming of bitter pain to the deliberate recollection of covenant love, refusing both denial and despair."
+        }
       ],
       "goingDeeper": "Take up the research and the theology the church too rarely lets inform its worship, and test them against Scripture. Scholars who count the psalms find that laments outnumber every other type, roughly a third of the Psalter by most reckonings, and yet a survey of the songs most churches actually sing finds lament nearly absent, which means the modern church has quietly reversed the proportions of its own inspired hymnbook. A group should sit with that gap and ask what it teaches a congregation when a book that is a third grief is sung as though it were all praise. Set this beside Brueggemann's threefold pattern, orientation, disorientation, and new orientation, the settled world, its coming apart, and the surprised trust on the far side that is never merely a return to how things were. The pattern is a useful map precisely because it refuses to let disorientation be skipped, insisting that the way to new orientation runs through the pit and not around it. Then weigh C. S. Lewis, who in Reflections on the Psalms admitted he was troubled by the psalms and did not pretend otherwise, and yet found in their unguarded emotion a seriousness about God and about suffering that more genteel religion lacks. Then press the hardest pastoral question, the one this session most needs. If lament is a God-given form of prayer, then a church that has no room for it is not protecting its people from despair, it is abandoning them to it, because the person forbidden to grieve toward God does not stop grieving, he grieves alone and often leaves. And carry the whole thing to its center in Christ, who prayed Psalm 22 from the cross, so that the deepest lament in the Psalter became the prayer of God himself in the flesh, which means when we lament we are not falling out of faith, we are praying with our crucified Lord. The aim is to recover lament as an act of faith, to give the room permission the church often withheld, and to insist that the darkness of Psalm 88 is not the enemy of hope but sometimes its only honest road.",
       "caseStudy": "A man in your group lost his wife two years ago and has been, by every outward sign, a model of faith, thanking God publicly, quoting Romans 8:28, telling everyone that God is good all the time. But when the session turns to Psalm 88, he goes quiet, and when he finally speaks he says, almost apologetically, that he is not sure he has actually prayed since the funeral, that he has said the right things but has not really talked to God at all. Here is the work for the leader, and it must honor his faith before it touches the wound. His confession of God's goodness is not a lie and you must not treat it as one, because he means it and it has held him upright. But notice what he has just admitted, that the brave face has cost him the relationship, that in refusing to grieve toward God he has stopped talking to God, and the composed thanksgiving has become the wall between them. He was never given permission to lament, so he chose the only other option he knew, silence dressed as strength. Do not let him hear that his faith has been fake. Help him see that Psalm 88 is God's own invitation to bring the anger and the emptiness he has been too faithful to voice, and gently ask him whether the God he has been thanking might also be strong enough to be shouted at, and whether the shouting might be the way back to the praying he has lost.",
-      "memoryVerse": { "ref": "Psalm 13:1", "text": "How long, O Lord? Will you forget me forever? How long will you hide your face from me?" }
+      "memoryVerse": {
+        "ref": "Psalm 13:1",
+        "text": "How long, O Lord? Will you forget me forever? How long will you hide your face from me?"
+      }
     },
     {
       "n": 3,
@@ -94,18 +216,55 @@
       "title": "By the Waters of Babylon: What to Do With the Rage",
       "aim": "To face the imprecatory psalms honestly rather than skipping them, to hear the curse of Psalm 137 as the handing over of real rage to God rather than the endorsement of vengeance, and to trace how these terrible prayers point past themselves to the cross where the wrath they voice was finally answered.",
       "summary": "Bell says the psalm most people wish were not in the Bible is the one that ends with a blessing on whoever dashes an enemy's infants against the rock, and the honest thing is not to pretend the sentence is not there. It is there. Psalm 137, one of the most beautiful psalms in the book, the exiles weeping by the rivers of Babylon, ends in a curse so brutal that most churches read the first six verses and stop. The real question is what these imprecatory psalms are doing in the prayer book of the people of God, and the answer begins with a distinction the skipping obscures, that voicing rage to God is not the same as acting on it, and may be its only alternative. The exile that produced Psalm 137 was not a metaphor. Babylon had burned Jerusalem, murdered children, and marched the survivors a thousand miles to mock them, and the psalm is the prayer of real victims of real atrocity. Bell takes the strong case for cutting these psalms out, that they are sub-Christian, that Jesus told us to love our enemies and pray for those who persecute us, that a prayer for infant slaughter has no place on a believer's lips. The objection has Jesus on its side and cannot be waved off. But watch what the curse actually does, it hands the vengeance to God rather than seizing it, it says shall be repaid rather than I will repay, and in that handing over is the seed of everything Jesus later commands. Then the turn to the cross. Paul quotes exactly this instinct, vengeance is mine, I will repay, says the Lord, and the wrath these psalms cry out for was not ignored by God, it was absorbed by him, poured out on his own Son so that the enemy the psalmist cursed might become the brother he prays for. The rage is real, the injustice is real, and the only safe place to bring both is the God who took the wrath into himself.",
-      "keyScripture": { "ref": "Psalm 137:8-9", "why": "O daughter of Babylon, doomed to be destroyed, blessed shall he be who repays you with what you have done to us, blessed shall he be who takes your little ones and dashes them against the rock, the hardest sentence in the Psalter, a real victim's rage handed to God in the language of the very atrocity done to them, which the study faces rather than skips." },
-      "timing": [ { "segment": "Open", "minutes": 5 }, { "segment": "Discuss", "minutes": 35 }, { "segment": "Close", "minutes": 10 } ],
+      "keyScripture": {
+        "ref": "Psalm 137:8-9",
+        "why": "O daughter of Babylon, doomed to be destroyed, blessed shall he be who repays you with what you have done to us, blessed shall he be who takes your little ones and dashes them against the rock, the hardest sentence in the Psalter, a real victim's rage handed to God in the language of the very atrocity done to them, which the study faces rather than skips."
+      },
+      "timing": [
+        {
+          "segment": "Open",
+          "minutes": 5
+        },
+        {
+          "segment": "Discuss",
+          "minutes": 35
+        },
+        {
+          "segment": "Close",
+          "minutes": 10
+        }
+      ],
       "discussion": [
-        { "q": "Bell says most churches read the first six verses of Psalm 137 and stop before the curse. Why do you think we skip the hard ending, and what are we protecting when we do?", "behind": "Open by naming the avoidance directly. The skipping is an instinct to keep the Bible respectable and the worship pleasant, but it also hides part of what God inspired. Surface what the room is protecting, usually a picture of faith with no rage in it, and let them feel that the skipping is itself a choice with a cost, not a neutral act." },
-        { "q": "The exile behind Psalm 137 was a real atrocity, burned city, murdered children, a thousand-mile march into mockery. How does knowing the psalm is the prayer of actual victims change how you hear the curse?", "behind": "Press on the history, because the curse sounds monstrous in the abstract and different in context. This is not casual cruelty, it is the cry of people who watched their own children die. Help the room resist judging the victims from a comfortable distance, and feel the weight of a rage that came from real and unspeakable loss." },
-        { "q": "Bell takes the strong case that these psalms are sub-Christian, that Jesus told us to love our enemies. What is true in that objection, and where does cutting the psalms out cost us something?", "behind": "Hold both halves with real honesty. The objection has Jesus on its side and must not be dismissed, and no one should leave thinking the curse is a model to imitate. But cutting the psalms out also removes the only honest place to bring real rage, and pretends believers do not have it. Help the room hold the tension rather than resolve it too fast." },
-        { "q": "Bell says the curse hands the vengeance to God rather than seizing it, saying shall be repaid rather than I will repay. What is the difference between bringing your rage to God and acting on it, and why might the prayer be the safer thing?", "behind": "This is the pivotal distinction of the session. The psalm does not pick up a sword, it puts the rage into God's hands and leaves it there. Help the room see that the alternative to lament-rage is not calm, it is either buried resentment or actual violence, and that the terrible prayer is a way of disarming, not arming, the one who prays it." },
-        { "q": "Bell says the wrath these psalms cry for was absorbed by God at the cross, poured out on his own Son. How does the cross answer the rage of Psalm 137 without ignoring the injustice that caused it?", "behind": "Close on the gospel turn. The cross does not dismiss the demand for justice, it satisfies it, taking the wrath into God himself so the enemy might become a brother. Help the room feel that Christianity neither pretends the injustice is nothing nor leaves the victim to carry the vengeance, but answers both at the cross. End on weight, the rage brought to the God who bore it." }
+        {
+          "q": "Bell says most churches read the first six verses of Psalm 137 and stop before the curse. Why do you think we skip the hard ending, and what are we protecting when we do?",
+          "behind": "Open by naming the avoidance directly. The skipping is an instinct to keep the Bible respectable and the worship pleasant, but it also hides part of what God inspired. Surface what the room is protecting, usually a picture of faith with no rage in it, and let them feel that the skipping is itself a choice with a cost, not a neutral act."
+        },
+        {
+          "q": "The exile behind Psalm 137 was a real atrocity, burned city, murdered children, a thousand-mile march into mockery. How does knowing the psalm is the prayer of actual victims change how you hear the curse?",
+          "behind": "Press on the history, because the curse sounds monstrous in the abstract and different in context. This is not casual cruelty, it is the cry of people who watched their own children die. Help the room resist judging the victims from a comfortable distance, and feel the weight of a rage that came from real and unspeakable loss."
+        },
+        {
+          "q": "Bell takes the strong case that these psalms are sub-Christian, that Jesus told us to love our enemies. What is true in that objection, and where does cutting the psalms out cost us something?",
+          "behind": "Hold both halves with real honesty. The objection has Jesus on its side and must not be dismissed, and no one should leave thinking the curse is a model to imitate. But cutting the psalms out also removes the only honest place to bring real rage, and pretends believers do not have it. Help the room hold the tension rather than resolve it too fast."
+        },
+        {
+          "q": "Bell says the curse hands the vengeance to God rather than seizing it, saying shall be repaid rather than I will repay. What is the difference between bringing your rage to God and acting on it, and why might the prayer be the safer thing?",
+          "behind": "This is the pivotal distinction of the session. The psalm does not pick up a sword, it puts the rage into God's hands and leaves it there. Help the room see that the alternative to lament-rage is not calm, it is either buried resentment or actual violence, and that the terrible prayer is a way of disarming, not arming, the one who prays it."
+        },
+        {
+          "q": "Bell says the wrath these psalms cry for was absorbed by God at the cross, poured out on his own Son. How does the cross answer the rage of Psalm 137 without ignoring the injustice that caused it?",
+          "behind": "Close on the gospel turn. The cross does not dismiss the demand for justice, it satisfies it, taking the wrath into God himself so the enemy might become a brother. Help the room feel that Christianity neither pretends the injustice is nothing nor leaves the victim to carry the vengeance, but answers both at the cross. End on weight, the rage brought to the God who bore it."
+        }
       ],
       "objections": [
-        { "objection": "The imprecatory psalms are simply sub-Christian. Jesus told us to love our enemies and pray for those who persecute us, and a prayer that asks God to dash babies against rocks flatly contradicts him. These verses should be quietly retired.", "response": "Do not brush the objection aside, because it has Jesus himself in it, and no one should walk away thinking Psalm 137 is a template for how to feel about their enemies. Grant that fully. But notice what the psalm actually does with the rage, because it does not act, it prays, and that difference is the whole thing. The exile does not pick up a sword and march on Babylon, he brings the unbearable rage to God and hands it over, and in the handing over is the very seed Jesus later grows, the refusal to take vengeance into your own hands because vengeance belongs to God. Paul quotes exactly that instinct, never avenge yourselves, for it is written, vengeance is mine, I will repay, says the Lord. Retiring the psalm does not make the rage disappear, it only removes the sanctioned place to bring it, leaving the wronged believer to either bury the fury until it poisons them or act on it. The psalm is not the enemy of loving your enemy. It is often the only honest first step a real victim can take toward it." },
-        { "objection": "Even if I understand the rage, I cannot imagine actually praying these words. Bringing that kind of hatred into prayer feels like it would just feed the bitterness and make me a worse person, not a better one.", "response": "Hear the real fear, because it is wise, and prayer that rehearses hatred to nurse it would indeed poison the one who prays. But that is not what the psalm does, and the direction is what saves it. Bitterness fed in the dark, replayed in the mind and told to no one, is exactly what makes a person worse, hardening into the settled hatred you fear. The psalm does the opposite, it drags the hatred out of the dark and puts it in God's hands, and something happens in the handing over, because rage surrendered to God is rage you are no longer carrying yourself. You are not asked to pretend the fury is not there, which would only drive it underground. You are asked to bring it, all of it, to the one who is just and can be trusted with it, and to leave it with him. The psalmist who prays Psalm 137 is not feeding his rage. He is giving it away, to the only One strong enough and good enough to hold it, and that is how the rage finally loses its grip on him." }
+        {
+          "objection": "The imprecatory psalms are simply sub-Christian. Jesus told us to love our enemies and pray for those who persecute us, and a prayer that asks God to dash babies against rocks flatly contradicts him. These verses should be quietly retired.",
+          "response": "Do not brush the objection aside, because it has Jesus himself in it, and no one should walk away thinking Psalm 137 is a template for how to feel about their enemies. Grant that fully. But notice what the psalm actually does with the rage, because it does not act, it prays, and that difference is the whole thing. The exile does not pick up a sword and march on Babylon, he brings the unbearable rage to God and hands it over, and in the handing over is the very seed Jesus later grows, the refusal to take vengeance into your own hands because vengeance belongs to God. Paul quotes exactly that instinct, never avenge yourselves, for it is written, vengeance is mine, I will repay, says the Lord. Retiring the psalm does not make the rage disappear, it only removes the sanctioned place to bring it, leaving the wronged believer to either bury the fury until it poisons them or act on it. The psalm is not the enemy of loving your enemy. It is often the only honest first step a real victim can take toward it."
+        },
+        {
+          "objection": "Even if I understand the rage, I cannot imagine actually praying these words. Bringing that kind of hatred into prayer feels like it would just feed the bitterness and make me a worse person, not a better one.",
+          "response": "Hear the real fear, because it is wise, and prayer that rehearses hatred to nurse it would indeed poison the one who prays. But that is not what the psalm does, and the direction is what saves it. Bitterness fed in the dark, replayed in the mind and told to no one, is exactly what makes a person worse, hardening into the settled hatred you fear. The psalm does the opposite, it drags the hatred out of the dark and puts it in God's hands, and something happens in the handing over, because rage surrendered to God is rage you are no longer carrying yourself. You are not asked to pretend the fury is not there, which would only drive it underground. You are asked to bring it, all of it, to the one who is just and can be trusted with it, and to leave it with him. The psalmist who prays Psalm 137 is not feeding his rage. He is giving it away, to the only One strong enough and good enough to hold it, and that is how the rage finally loses its grip on him."
+        }
       ],
       "quietRoomQuestion": "Who is the person you have wanted, in an honest moment, to see repaid for what they did, and have you ever dared to bring that rage to God, or have you only buried it and called the burying forgiveness?",
       "practice": "This week, name the rage you have been carrying, the real wrong done to you or to someone you love, and instead of burying it or rehearsing it in the dark, bring it to God in plain words, the way the psalmist does, and hand him the vengeance you have wanted to keep. Tell him what was done and that you cannot carry the wanting to see it repaid, and then, having handed it over, ask him for the grace to begin praying for the very person, the way Jesus prayed for his executioners. Write down what changed in you when you stopped carrying the vengeance yourself and gave it to God.",
@@ -117,17 +276,41 @@
       ],
       "teaching": "The psalm most people quietly wish were not in the Bible is the one that ends by pronouncing a blessing on whoever seizes an enemy's babies and dashes them against the rock, and the honest thing, the only honest thing, is to admit the sentence is there and not pretend otherwise. It is there. Psalm 137, one of the most achingly beautiful poems in the whole Psalter, the one that opens by the rivers of Babylon with the exiles weeping and hanging their harps in the willows, unable to sing the Lord's song in a strange land, ends nine verses later with a curse so brutal that most churches read the first six verses aloud on a Sunday and stop, letting the congregation assume the psalm ends with the tears. It does not. And the question we have to face, rather than skip, is what these imprecatory psalms, the psalms of cursing, are doing in the prayer book of the people of God. The answer begins with a distinction that the skipping conveniently hides, the difference between voicing rage to God and acting on it. Those are not the same thing. They may, in fact, be opposites. Because here is the history the curse is soaked in, and it is not a metaphor. Babylon had burned Jerusalem to the ground, torn down the temple, slaughtered children in the streets, and marched the survivors a thousand miles across the desert to a foreign city where their captors mocked them and demanded, as entertainment, that they sing one of their happy Zion songs. Psalm 137 is the prayer of those survivors. It is the cry of people who watched their own infants die and were then asked to perform their faith for the amusement of the men who killed them. When you know that, the curse stops sounding like casual cruelty and starts sounding like what it is, the almost unbearable rage of real victims of real atrocity, given to God in the exact language of the horror that was done to them, an eye for an eye, a child for a child. Now take the strong case for cutting these psalms out of Christian use, because it is a serious case and it has the best possible advocate. It says these psalms are sub-Christian, that they belong to an older and harsher covenant, that Jesus stood on a hillside and told us to love our enemies and pray for those who persecute us and turn the other cheek, and that a prayer begging God for the slaughter of enemy infants cannot coexist with the Sermon on the Mount. This objection has Jesus himself in it, and I will not wave it off, and no one in the room should leave thinking Psalm 137 is a model for how a Christian ought to feel. But watch, carefully, what the psalm actually does with the rage, because the doing is everything. The exile does not pick up a sword. He does not organize a raid. He does not act on the fury at all. He brings it to God, and he hands it over, and even in the terrible words he says, in effect, blessed is the one who repays, not blessed am I who will repay. The vengeance is placed in God's hands, not seized by the psalmist's, and in that handing over is the very seed of everything Jesus later commands. Paul makes the connection explicit, quoting the same instinct straight out of the law, beloved, never avenge yourselves, but leave it to the wrath of God, for it is written, vengeance is mine, I will repay, says the Lord. That is Psalm 137 grown to maturity. The command not to avenge yourself is possible only because there is a God to whom you can hand the vengeance, and the cursing psalm is the raw, first, staggering act of that handing over. And now the turn, the one that only the cross can make. The wrath that Psalm 137 cries out for was not ignored by God. It was not dismissed as immature and set aside. It was answered, and it was answered in the most costly way conceivable, because at the cross God took the very wrath the psalmist demanded and poured it out, not on Babylon, not on our enemies, but on his own Son, so that the enemy the exile cursed might become the brother the Christian prays for. I know this from a strange angle, as a man who came to God from atheism carrying more rage than I could name, some of it at a father who was not there. I did not know what to do with it, so for years I buried it and called the burying maturity, and it did not stay buried, it seeped. What the imprecatory psalms taught me is that God would rather I bring him the whole ugly load than pretend I do not carry it, that the rage handed to him is rage I am no longer holding myself. The injustice is real. The Psalter never pretends it is nothing. But the rage has a place to go that is neither the sword nor the grave, and its name is the God who took the wrath into himself. Bring him the fury. He can hold what would destroy you.",
       "scriptureStudy": [
-        { "ref": "Psalm 137:1", "note": "By the waters of Babylon, there we sat down and wept, when we remembered Zion. The psalm begins in grief and exile, establishing that the curse at its end rises from real loss, not idle malice, the tears coming before the rage." },
-        { "ref": "Psalm 137:4", "note": "How shall we sing the Lord's song in a foreign land? The captors demand a performance of joy from people who have lost everything, which is the cruelty that provokes the psalm, the mockery of the grieving by the powerful." },
-        { "ref": "Psalm 137:9", "note": "Blessed shall he be who takes your little ones and dashes them against the rock! The hardest verse in the Psalter, an eye for an eye in the language of the atrocity done to them, handed to God as prayer rather than carried out as vengeance." },
-        { "ref": "Psalm 139:19-22", "note": "Oh that you would slay the wicked, O God, I hate them with complete hatred. Even the psalm most cherished for its intimacy contains an imprecation, showing the curse is woven through the Psalter and not confined to one shocking poem." },
-        { "ref": "Romans 12:19", "note": "Never avenge yourselves, but leave it to the wrath of God, for it is written, vengeance is mine, I will repay, says the Lord. Paul grounds the command to renounce personal vengeance in the very truth the imprecatory psalms enact, that repayment belongs to God." },
-        { "ref": "Luke 23:34", "note": "Father, forgive them, for they know not what they do. Jesus on the cross prays for his executioners, the mature end of the road the cursing psalm begins, the handing of vengeance to God completed in the prayer for the enemy's forgiveness." },
-        { "ref": "Revelation 6:10", "note": "O Sovereign Lord, how long before you will judge and avenge our blood? The martyrs under the altar pray an imprecatory prayer in heaven itself, which means the cry for justice is not sub-Christian but is answered, not erased, at the end of all things." }
+        {
+          "ref": "Psalm 137:1",
+          "note": "By the waters of Babylon, there we sat down and wept, when we remembered Zion. The psalm begins in grief and exile, establishing that the curse at its end rises from real loss, not idle malice, the tears coming before the rage."
+        },
+        {
+          "ref": "Psalm 137:4",
+          "note": "How shall we sing the Lord's song in a foreign land? The captors demand a performance of joy from people who have lost everything, which is the cruelty that provokes the psalm, the mockery of the grieving by the powerful."
+        },
+        {
+          "ref": "Psalm 137:9",
+          "note": "Blessed shall he be who takes your little ones and dashes them against the rock! The hardest verse in the Psalter, an eye for an eye in the language of the atrocity done to them, handed to God as prayer rather than carried out as vengeance."
+        },
+        {
+          "ref": "Psalm 139:19-22",
+          "note": "Oh that you would slay the wicked, O God, I hate them with complete hatred. Even the psalm most cherished for its intimacy contains an imprecation, showing the curse is woven through the Psalter and not confined to one shocking poem."
+        },
+        {
+          "ref": "Romans 12:19",
+          "note": "Never avenge yourselves, but leave it to the wrath of God, for it is written, vengeance is mine, I will repay, says the Lord. Paul grounds the command to renounce personal vengeance in the very truth the imprecatory psalms enact, that repayment belongs to God."
+        },
+        {
+          "ref": "Luke 23:34",
+          "note": "Father, forgive them, for they know not what they do. Jesus on the cross prays for his executioners, the mature end of the road the cursing psalm begins, the handing of vengeance to God completed in the prayer for the enemy's forgiveness."
+        },
+        {
+          "ref": "Revelation 6:10",
+          "note": "O Sovereign Lord, how long before you will judge and avenge our blood? The martyrs under the altar pray an imprecatory prayer in heaven itself, which means the cry for justice is not sub-Christian but is answered, not erased, at the end of all things."
+        }
       ],
       "goingDeeper": "Press into the theology the imprecatory psalms force upon us, because handled carelessly they wound and handled well they heal. The church has offered several honest ways to read these psalms, and a group should weigh them rather than settle too quickly. Some read them as the cry of the oppressed that the comfortable have no right to censor, noticing that the loudest objections to the cursing psalms tend to come from those who have never been the victim of atrocity, and that survivors of genocide and abuse have often found in them the only Scripture that took their rage seriously. Others read them christologically, hearing in them the voice of Christ crying out against all evil, and finally the voice of the church longing for the final justice of God. Bonhoeffer, who prayed the Psalms daily in an underground seminary under a regime committing real atrocities, insisted in Psalms: The Prayer Book of the Bible that we can pray even the psalms of vengeance because in them we hand God's own judgment back to God and renounce our own, and because ultimately it is the innocent Christ who prays them and bears the judgment they invoke. Set this beside C. S. Lewis, who in Reflections on the Psalms called the cursing psalms devilish in their ferocity and refused to excuse them, yet argued that their very refusal to be nice about evil is more honest than a tolerance that has simply stopped caring about injustice at all. Then press the hardest pastoral question, the one a room of real people needs. What does a survivor of genuine evil do with rage that will not go away, and is the counsel to simply forgive and move on, offered so cheaply in so many churches, actually a way of silencing them? The imprecatory psalms suggest a truer path, that the road to forgiveness may run through the honest naming of the wrong and the deliberate handing of the vengeance to God, and that a forgiveness which skips the rage is often only repression wearing forgiveness as a mask. The aim is to hold together the reality of the injustice, the danger of nursed hatred, the command of Christ to love the enemy, and the cross where the wrath was borne, and to leave the room with a place to bring the rage that is neither the sword nor the grave.",
       "caseStudy": "A woman in your group was abused as a child by a relative who was never held accountable and who died respected and mourned. When the session turns to Psalm 137, she is visibly moved, and she says, with some fear, that she has always been told good Christians forgive, and she has tried, but the truth is she has wished him in hell and has hated herself for the wishing. Here is the work for the leader, and it must be gentle, careful, and unhurried, and it must not rush her toward a forgiveness she has been beaten with before. Do not correct the rage, and do not, under any circumstances, imply that a real Christian would not feel it, because the cheap command to forgive is part of what has wounded her. The imprecatory psalms are God's gift to exactly her, the proof that her rage has a sanctioned place in Scripture and a rightful destination in God's hands. Help her see that she has been trying to leap to forgiveness while carrying the vengeance herself, and that the psalm offers a different order, first the honest naming of the evil to God, then the handing of the repayment to him who alone is just, and only then, in his time and not on anyone's schedule, the slow possibility of release. Keep a path to real help visible, a counselor trained in abuse, and make private time available to her. Validate the rage. Never validate the self-hatred, and never leave her thinking the wrong done to her was small or that God did not see it. He saw it. He bore it.",
-      "memoryVerse": { "ref": "Psalm 139:23-24", "text": "Search me, O God, and know my heart! Try me and know my thoughts! And see if there be any grievous way in me, and lead me in the way everlasting!" }
+      "memoryVerse": {
+        "ref": "Psalm 139:23-24",
+        "text": "Search me, O God, and know my heart! Try me and know my thoughts! And see if there be any grievous way in me, and lead me in the way everlasting!"
+      }
     },
     {
       "n": 4,
@@ -135,18 +318,55 @@
       "title": "The Lord Is My Shepherd: Trust and Thanks That Are Earned",
       "aim": "To hear the psalms of trust and thanksgiving as the far side of lament rather than its denial, to see that Psalm 23 walks through the valley and Psalm 103 remembers real forgiveness, and to refuse both the sentimentality that treats these psalms as cheap comfort and the cynicism that finds them naive.",
       "summary": "Bell says Psalm 23 is read at more funerals than any other passage and understood at almost none of them, because we hear it as a lullaby when it is the testimony of a man who has walked through the valley of the shadow of death and come out still trusting. The psalms of trust and thanksgiving are the most loved and the most misread in the book, precisely because their peace looks easy and is not. The real question is where trust like this comes from, and the answer is that it is earned, arrived at through the pit and not around it, which is why Brueggemann called this the psalm of new orientation, the settled confidence on the far side of disorientation that is never merely a return to how things were before. Psalm 23 does not deny the valley, it walks through it, and the comfort of the rod and the staff is comfort for a sheep in the dark, not for a sheep in a meadow. Psalm 103 does not thank God in general, it blesses him for particular mercies, forgiveness and healing and steadfast love, remembered by a soul deliberately talking itself out of forgetfulness. Bell takes the strong case that this trust is naive, that a mature adult who has seen real suffering cannot sing the Lord is my shepherd without embarrassment. There is a real challenge in it. But the psalmist is not naive about suffering, he has been through the valley and names it, and his trust is not the absence of the dark but the discovery of a presence within it, you are with me. Then the turn. Thanksgiving in the Psalms is not the denial of what is wrong, it is the deliberate remembering of what is true, the soul commanding itself to bless the Lord and forget not all his benefits. Trust is not the refusal to see the valley. It is the choice to see the shepherd in it.",
-      "keyScripture": { "ref": "Psalm 103:2", "why": "Bless the Lord, O my soul, and forget not all his benefits, naming thanksgiving not as a feeling that arrives but as a discipline the soul commands upon itself, the deliberate remembering of particular mercy against the strong human pull toward forgetfulness and complaint." },
-      "timing": [ { "segment": "Open", "minutes": 5 }, { "segment": "Discuss", "minutes": 35 }, { "segment": "Close", "minutes": 10 } ],
+      "keyScripture": {
+        "ref": "Psalm 103:2",
+        "why": "Bless the Lord, O my soul, and forget not all his benefits, naming thanksgiving not as a feeling that arrives but as a discipline the soul commands upon itself, the deliberate remembering of particular mercy against the strong human pull toward forgetfulness and complaint."
+      },
+      "timing": [
+        {
+          "segment": "Open",
+          "minutes": 5
+        },
+        {
+          "segment": "Discuss",
+          "minutes": 35
+        },
+        {
+          "segment": "Close",
+          "minutes": 10
+        }
+      ],
       "discussion": [
-        { "q": "Bell says Psalm 23 is read at most funerals and understood at almost none, heard as a lullaby when it is the testimony of a man who walked through the valley. How have you read Psalm 23, as easy comfort or as hard-won trust?", "behind": "Open by unsettling the familiar. Most people have Psalm 23 so worn smooth they no longer hear it. Help the room notice the valley of the shadow of death sitting right in the middle of the psalm, and feel that its peace is the peace of someone who has been in the dark, not someone who has avoided it." },
-        { "q": "Brueggemann called this the trust on the far side of disorientation, never merely a return to how things were. Have you known a peace that came through a hard season rather than around it, and how was it different from the peace you had before?", "behind": "Press on the difference between naive trust and earned trust. New orientation is not the old confidence restored, it is a deeper thing forged in the valley. Help the room name a trust that was tested and survived, and see that it is sturdier than the untested kind, because it has already met the dark." },
-        { "q": "Bell takes the strong case that this trust is naive, that an adult who has seen real suffering cannot sing the Lord is my shepherd without embarrassment. What is the real challenge in that, and how does the psalm answer it?", "behind": "Hold both halves. The challenge is serious, and cheap comfort does deserve the charge of naivety. But the psalmist is not naive, he names the valley and the enemies and the dark, and his trust is not ignorance of suffering but a presence found inside it. Help the room distinguish the sentimental reading, which is naive, from the psalm itself, which is not." },
-        { "q": "Psalm 103 commands the soul to bless the Lord and forget not all his benefits, treating thanksgiving as something the psalmist has to talk himself into. Where do you need to preach to your own soul like that, and what particular mercies have you forgotten?", "behind": "This is the practical center. Thanksgiving in Psalm 103 is not a mood, it is a discipline the psalmist imposes on his own forgetful heart. Help the room see that gratitude is often a deliberate act of remembering against the pull of complaint, and get specific about actual mercies that have been forgotten, not gratitude in the abstract." },
-        { "q": "Bell says trust is not the refusal to see the valley but the choice to see the shepherd in it. What would change this week if your thanksgiving were the deliberate remembering of what is true rather than the denial of what is wrong?", "behind": "Close on the reframe and toward practice. The point is a thanksgiving that has looked hard at the valley and still names the shepherd, not one that pretends the valley away. Help the room move from either forced positivity or honest despair toward the psalmist's harder third thing, seeing the dark clearly and the shepherd within it at the same time." }
+        {
+          "q": "Bell says Psalm 23 is read at most funerals and understood at almost none, heard as a lullaby when it is the testimony of a man who walked through the valley. How have you read Psalm 23, as easy comfort or as hard-won trust?",
+          "behind": "Open by unsettling the familiar. Most people have Psalm 23 so worn smooth they no longer hear it. Help the room notice the valley of the shadow of death sitting right in the middle of the psalm, and feel that its peace is the peace of someone who has been in the dark, not someone who has avoided it."
+        },
+        {
+          "q": "Brueggemann called this the trust on the far side of disorientation, never merely a return to how things were. Have you known a peace that came through a hard season rather than around it, and how was it different from the peace you had before?",
+          "behind": "Press on the difference between naive trust and earned trust. New orientation is not the old confidence restored, it is a deeper thing forged in the valley. Help the room name a trust that was tested and survived, and see that it is sturdier than the untested kind, because it has already met the dark."
+        },
+        {
+          "q": "Bell takes the strong case that this trust is naive, that an adult who has seen real suffering cannot sing the Lord is my shepherd without embarrassment. What is the real challenge in that, and how does the psalm answer it?",
+          "behind": "Hold both halves. The challenge is serious, and cheap comfort does deserve the charge of naivety. But the psalmist is not naive, he names the valley and the enemies and the dark, and his trust is not ignorance of suffering but a presence found inside it. Help the room distinguish the sentimental reading, which is naive, from the psalm itself, which is not."
+        },
+        {
+          "q": "Psalm 103 commands the soul to bless the Lord and forget not all his benefits, treating thanksgiving as something the psalmist has to talk himself into. Where do you need to preach to your own soul like that, and what particular mercies have you forgotten?",
+          "behind": "This is the practical center. Thanksgiving in Psalm 103 is not a mood, it is a discipline the psalmist imposes on his own forgetful heart. Help the room see that gratitude is often a deliberate act of remembering against the pull of complaint, and get specific about actual mercies that have been forgotten, not gratitude in the abstract."
+        },
+        {
+          "q": "Bell says trust is not the refusal to see the valley but the choice to see the shepherd in it. What would change this week if your thanksgiving were the deliberate remembering of what is true rather than the denial of what is wrong?",
+          "behind": "Close on the reframe and toward practice. The point is a thanksgiving that has looked hard at the valley and still names the shepherd, not one that pretends the valley away. Help the room move from either forced positivity or honest despair toward the psalmist's harder third thing, seeing the dark clearly and the shepherd within it at the same time."
+        }
       ],
       "objections": [
-        { "objection": "The psalms of trust are lovely but naive. Anyone who has watched real suffering, a child die, a marriage end, a diagnosis arrive, cannot honestly sing the Lord is my shepherd, I shall not want. Sometimes you do want, desperately, and he does not come.", "response": "Take the challenge with full seriousness, because a sentimental reading of these psalms really is naive and deserves the charge, and the cheerful believer who has never suffered and quotes Psalm 23 like a slogan should be embarrassed. But read the psalm itself, closely, because it is not what the objection assumes. The man who wrote I shall not want also wrote, in the same short poem, that he walks through the valley of the shadow of death, that he sets a table in the presence of enemies, that there is a darkness he passes through and does not pretend away. This is not a psalm written from the meadow. It is written from the far side of the valley, by someone who has been in the dark, and its claim is not that the valley does not exist but that he was not alone in it, you are with me. That is not naivety. It is the hardest-won kind of trust there is, the trust that has met the worst and found a presence there, and it has more right to sing than the untested optimism the objection rightly distrusts." },
-        { "objection": "Telling people to just be thankful is what churches do to avoid dealing with real pain. Slapping gratitude on top of grief is toxic positivity with a Bible verse, and it makes people feel guilty for not feeling better.", "response": "Grant the danger completely, because it is real and the church has done exactly this, weaponizing gratitude to silence grief and shaming the suffering for not performing joy. That is a genuine cruelty and Psalm 103 is not it. Notice how the thanksgiving in the psalm actually works, because it is not slapped on top of anything, and it is not a feeling anyone is commanded to fake. It is a discipline the psalmist imposes on his own soul, bless the Lord, O my soul, forget not, which is the language of a man arguing with his own forgetfulness, deliberately recalling specific mercies against the strong pull of despair. This is the opposite of denial. Denial refuses to look at the pain. The psalmist has looked at the pain, all through this book, and now chooses to also remember what is true, the forgiveness, the healing, the steadfast love, not instead of the grief but alongside it. That is not toxic positivity. It is the honest work of a heart that refuses to let the valley be the only thing it can see." }
+        {
+          "objection": "The psalms of trust are lovely but naive. Anyone who has watched real suffering, a child die, a marriage end, a diagnosis arrive, cannot honestly sing the Lord is my shepherd, I shall not want. Sometimes you do want, desperately, and he does not come.",
+          "response": "Take the challenge with full seriousness, because a sentimental reading of these psalms really is naive and deserves the charge, and the cheerful believer who has never suffered and quotes Psalm 23 like a slogan should be embarrassed. But read the psalm itself, closely, because it is not what the objection assumes. The man who wrote I shall not want also wrote, in the same short poem, that he walks through the valley of the shadow of death, that he sets a table in the presence of enemies, that there is a darkness he passes through and does not pretend away. This is not a psalm written from the meadow. It is written from the far side of the valley, by someone who has been in the dark, and its claim is not that the valley does not exist but that he was not alone in it, you are with me. That is not naivety. It is the hardest-won kind of trust there is, the trust that has met the worst and found a presence there, and it has more right to sing than the untested optimism the objection rightly distrusts."
+        },
+        {
+          "objection": "Telling people to just be thankful is what churches do to avoid dealing with real pain. Slapping gratitude on top of grief is toxic positivity with a Bible verse, and it makes people feel guilty for not feeling better.",
+          "response": "Grant the danger completely, because it is real and the church has done exactly this, weaponizing gratitude to silence grief and shaming the suffering for not performing joy. That is a genuine cruelty and Psalm 103 is not it. Notice how the thanksgiving in the psalm actually works, because it is not slapped on top of anything, and it is not a feeling anyone is commanded to fake. It is a discipline the psalmist imposes on his own soul, bless the Lord, O my soul, forget not, which is the language of a man arguing with his own forgetfulness, deliberately recalling specific mercies against the strong pull of despair. This is the opposite of denial. Denial refuses to look at the pain. The psalmist has looked at the pain, all through this book, and now chooses to also remember what is true, the forgiveness, the healing, the steadfast love, not instead of the grief but alongside it. That is not toxic positivity. It is the honest work of a heart that refuses to let the valley be the only thing it can see."
+        }
       ],
       "quietRoomQuestion": "What particular mercies have you forgotten, the specific benefits your soul has stopped counting, and what has the forgetting done to the way you see God and your own life?",
       "practice": "This week, keep Psalm 103 near and do what it does, command your own soul to remember. Each day, name three particular mercies, not gratitude in general but specific benefits you had stopped counting, and thank God for each by name. And if you are in a valley, pray Psalm 23 slowly and let it teach you to name both the dark and the shepherd in it, refusing both the denial that skips the valley and the despair that cannot see the presence. Write down what happens to your seeing when you deliberately remember what is true instead of only what is wrong.",
@@ -158,17 +378,41 @@
       ],
       "teaching": "Psalm 23 is read at more funerals than any other passage in the Bible and understood at almost none of them, because we have worn it so smooth that we hear it as a lullaby when it is in fact the battle-tested testimony of a man who has walked through the valley of the shadow of death and come out the other side still able to call God his shepherd. That is the trouble with the psalms of trust and thanksgiving, the most beloved and the most misread poems in the book. Their peace looks easy. It is not easy. It is the hardest thing in the Psalter, because it comes last, after everything else, on the far side of the pit. So the real question of this session is where a trust like this actually comes from, and the answer is that it is earned, arrived at through the valley and never around it. Brueggemann gave us the language again, calling Psalm 23 a psalm of new orientation, the settled confidence that lies on the far side of disorientation, and he was careful to insist that new orientation is never merely the old orientation restored, never just a return to the untroubled confidence a person had before the world came apart. It is a deeper and sturdier thing, because it has been through the dark and knows what the dark is like. Look at the psalm itself, and notice what the funeral reading skips. Right in the center of the twenty-third Psalm, between the green pastures and the overflowing cup, sits the valley of the shadow of death, and the psalmist does not pretend it is not there. He walks through it. The whole psalm passes directly through the darkest place a human being can go, and the famous comfort, the rod and the staff, is not comfort for a sheep lying in a sunny meadow. It is comfort for a sheep in the dark, on a dangerous path, with the shadow of death all around it. The peace of Psalm 23 is not the peace of someone who has avoided suffering. It is the peace of someone who has been through it and discovered he was not alone. Now take the strong case that this trust is naive, because it is a serious objection and it deserves a serious hearing. It says that these psalms are lovely but childish, that anyone who has watched real suffering, held a dying child, sat in the wreckage of a marriage, opened the envelope with the diagnosis in it, cannot honestly sing I shall not want, because sometimes you do want, desperately, and the shepherd does not seem to come. There is a real challenge here, and I feel it, and the sentimental reading of Psalm 23 fully deserves the charge of naivety. The believer who has never suffered and quotes the psalm like a greeting card should be embarrassed. But the psalm is not the sentimental reading, and the psalmist is not naive about suffering. He is the one who names the valley. He is the one who sets the table in the presence of his enemies, which means the enemies are still right there at the meal. His trust is not ignorance of the dark. It is a presence found inside the dark, and the entire weight of the psalm rests on four words that turn from talking about the shepherd to talking to him, you are with me. That is not the confidence of a man who has never been afraid. It is the confidence of a man who has been terrified and found God in the terror. And then there is Psalm 103, which teaches us what biblical thanksgiving actually is, because it is not what most of us think. We think gratitude is a feeling that either shows up or does not. The psalmist knows better. He opens by commanding his own soul, bless the Lord, O my soul, and all that is within me, bless his holy name, and then he says the thing that gives the whole game away, forget not all his benefits. He is talking to himself. He is preaching to his own forgetful heart, arguing with his own tendency to complain, deliberately dragging specific mercies back into view, the forgiveness of sin, the healing, the redemption from the pit, the steadfast love and mercy. This is not a mood that descended on him. It is a discipline he is imposing on himself, the hard work of remembering what is true against the strong human pull toward forgetting it. I have to do this by hand. Left to itself my soul forgets every benefit by breakfast and remembers every grievance by lunch, and the only way I have ever found to thank God honestly is to do what the psalmist does, to talk to my own soul and make it count the mercies one by one. Here is the turn that holds the whole session together. Thanksgiving in the Psalms is not the denial of what is wrong. It never asks you to pretend the valley is not there, and it is not the toxic positivity that shames the grieving into performing joy. It is the deliberate remembering of what is also true, held right alongside the grief and not instead of it. The psalmist has looked at the pain, honestly, all the way through this book, and he now chooses to look at the mercy too. So trust, in the end, is not the refusal to see the valley. Anyone can close their eyes. Trust is the choice to see the shepherd in the valley, to name the dark clearly and the presence within it at the same time, and that is a harder and truer thing than either the denial that skips the valley or the despair that cannot see past it. The Lord is my shepherd. The man who wrote it had been through the valley. That is exactly why he could.",
       "scriptureStudy": [
-        { "ref": "Psalm 23:1", "note": "The Lord is my shepherd, I shall not want. The opening claim is not that the psalmist never lacks anything but that with the Lord as shepherd he lacks nothing he truly needs, a trust that will be tested by the valley three verses later." },
-        { "ref": "Psalm 23:4", "note": "Even though I walk through the valley of the shadow of death, I will fear no evil, for you are with me. The center of the psalm walks straight through the darkest place, and the comfort is not the absence of the valley but the presence of God within it." },
-        { "ref": "Psalm 23:5", "note": "You prepare a table before me in the presence of my enemies. The peace of the psalm is not the removal of enemies but a feast spread while they watch, trust exercised in the middle of threat rather than after its end." },
-        { "ref": "Psalm 103:2", "note": "Bless the Lord, O my soul, and forget not all his benefits. Thanksgiving is a command the psalmist gives his own forgetful soul, the deliberate work of remembering specific mercy against the pull toward complaint." },
-        { "ref": "Psalm 103:8-10", "note": "The Lord is merciful and gracious, slow to anger and abounding in steadfast love. He does not deal with us according to our sins. The psalm grounds thanksgiving in the character of God revealed to Moses, the covenant love that treats us better than our sins deserve." },
-        { "ref": "Psalm 103:13-14", "note": "As a father shows compassion to his children, so the Lord shows compassion, for he knows our frame, he remembers that we are dust. The trust rests on a God who knows our weakness and pities it, the fatherly compassion that steadies the grateful heart." },
-        { "ref": "Psalm 116:12-13", "note": "What shall I render to the Lord for all his benefits to me? I will lift up the cup of salvation. The thanksgiving psalm answers remembered mercy with worship and vow, showing that gratitude in the Psalms moves toward action and offering, not merely feeling." }
+        {
+          "ref": "Psalm 23:1",
+          "note": "The Lord is my shepherd, I shall not want. The opening claim is not that the psalmist never lacks anything but that with the Lord as shepherd he lacks nothing he truly needs, a trust that will be tested by the valley three verses later."
+        },
+        {
+          "ref": "Psalm 23:4",
+          "note": "Even though I walk through the valley of the shadow of death, I will fear no evil, for you are with me. The center of the psalm walks straight through the darkest place, and the comfort is not the absence of the valley but the presence of God within it."
+        },
+        {
+          "ref": "Psalm 23:5",
+          "note": "You prepare a table before me in the presence of my enemies. The peace of the psalm is not the removal of enemies but a feast spread while they watch, trust exercised in the middle of threat rather than after its end."
+        },
+        {
+          "ref": "Psalm 103:2",
+          "note": "Bless the Lord, O my soul, and forget not all his benefits. Thanksgiving is a command the psalmist gives his own forgetful soul, the deliberate work of remembering specific mercy against the pull toward complaint."
+        },
+        {
+          "ref": "Psalm 103:8-10",
+          "note": "The Lord is merciful and gracious, slow to anger and abounding in steadfast love. He does not deal with us according to our sins. The psalm grounds thanksgiving in the character of God revealed to Moses, the covenant love that treats us better than our sins deserve."
+        },
+        {
+          "ref": "Psalm 103:13-14",
+          "note": "As a father shows compassion to his children, so the Lord shows compassion, for he knows our frame, he remembers that we are dust. The trust rests on a God who knows our weakness and pities it, the fatherly compassion that steadies the grateful heart."
+        },
+        {
+          "ref": "Psalm 116:12-13",
+          "note": "What shall I render to the Lord for all his benefits to me? I will lift up the cup of salvation. The thanksgiving psalm answers remembered mercy with worship and vow, showing that gratitude in the Psalms moves toward action and offering, not merely feeling."
+        }
       ],
       "goingDeeper": "Press into the shape of these psalms and the theology under them, because the psalms of trust and thanksgiving are the most misused in the church precisely because they are the easiest to lift out of context. A group should first notice, against every sentimental reading, that the psalms of trust almost always presuppose the psalms of lament, that new orientation in Brueggemann's pattern is unintelligible without the disorientation it passes through, so that Psalm 23 read as a lullaby is Psalm 23 read wrong. The trust is credible only because it is earned. Set this beside the psychological research on gratitude, which consistently finds that deliberate, specific practices of thankfulness measurably steady the human mind, and grant the finding as real common grace, while naming what it cannot see, that the psalmist's thanksgiving is not a technique for personal well-being but the response of a redeemed soul to a covenant God, aimed at the Lord and not at the self. The secular study gets the practice right and the object wrong. Then take up C. S. Lewis, who in Reflections on the Psalms wrote memorably about praise, observing that praise is not something God demands out of vanity but the natural completion of enjoyment, that we praise what we love and the praise finishes the joy, so that the psalmist commanding his soul to bless the Lord is teaching it to complete its own delight in God. Then press the hardest pastoral question, the one that guards the room. How does a leader hand the psalms of trust to someone still in the valley without turning them into a bludgeon, without demanding a new orientation from a person still living the disorientation? The answer the psalms themselves give is patience, that trust is arrived at and not commanded, that Psalm 23 is testimony and not requirement, and that the person in the dark is not failing if they cannot yet sing it, because even the psalmist reached it only on the far side. The aim is to recover these beloved psalms from both the cynic who finds them naive and the sentimentalist who makes them cheap, and to hand them back as the hard-won, honest, Christ-shaped trust of people who walked through the valley and found the shepherd there.",
       "caseStudy": "A man in your group leads with a relentless positivity that the others have started to find hard to be around, meeting every heavy thing anyone shares with a quick Bible verse and an assurance that God works all things for good. When the session distinguishes earned trust from naive trust, he does not recognize himself in the naive category and seems puzzled that anyone would. Here is the work for the leader, and it must honor the genuine faith in him before it presses. His confidence in God's goodness is real and you must not mock it, because cynicism is not the goal and his hope is not fake. But notice what his quick verses may be doing to the room, cutting off the lament before it can be spoken, teaching the hurting people around him that their grief is unwelcome, offering a new orientation to people still in the valley. His trust may be the untested kind, the confidence that has not yet walked through the shadow, and the danger is not that he trusts God but that he uses trust to avoid sitting with pain, his own or anyone else's. Do not let him hear that his faith is shallow. Help him see the difference between the trust that has passed through Psalm 88 and the trust that skips it, and ask him, gently, whether his rush to reassure is faith or discomfort, and whether the most loving thing he could offer a grieving friend might be silence and presence rather than a verse.",
-      "memoryVerse": { "ref": "Psalm 23:1", "text": "The Lord is my shepherd; I shall not want." }
+      "memoryVerse": {
+        "ref": "Psalm 23:1",
+        "text": "The Lord is my shepherd; I shall not want."
+      }
     },
     {
       "n": 5,
@@ -176,18 +420,55 @@
       "title": "I Lift Up My Eyes: The Songs of Ascent and the Long Climb",
       "aim": "To hear the Psalms of Ascent as the songs of pilgrims on the road to Jerusalem, to recover worship as a long and repeated climb rather than a single summit experience, and to see how the whole Psalter gathers into praise that has passed through everything the study has walked.",
       "summary": "Bell says the pilgrims who first sang the Psalms of Ascent were not on a spiritual high, they were on a long, dusty, uphill road, and the songs were what they sang to keep walking. Psalms 120 through 134, the fifteen Songs of Ascent, were the pilgrimage songs of Israel, sung by ordinary families climbing the road up to Jerusalem for the festivals, and they map worship as it actually is, a repeated climb rather than a permanent summit. The real question the whole study has been building toward is what worship is for, and the ascents answer it, not as an escape from the ordinary but as the ordinary lifting its eyes. Psalm 120 begins in distress and a foreign land, Psalm 121 lifts its eyes to the hills and finds help, and the collection climbs step by step toward the house of the Lord, gathering trust and repentance and rest along the way, ending in the night watchmen blessing God in Psalm 134. Bell takes the strong case that worship should be the mountaintop, the intense experience, the feeling of God's nearness, and that a faith without those highs is going through the motions. There is something real in the hunger for it. But the pilgrims sang these songs on the road, not the summit, and the ascents teach that worship is mostly the long climb, the faithful repeated turning toward God on the ordinary uphill days when nothing is felt. Then the turn that gathers the whole study. The Psalter ends not where it began but where the honest praying leads, in five psalms of unbroken praise, and that final praise is not naive, it is praise that has passed through the lament and the pit and the rage and the valley and come out singing anyway. We do not skip to the praise. We climb to it. And the God we climb toward came down the road to meet us, so that the long ascent is answered by a longer descent, his.",
-      "keyScripture": { "ref": "Psalm 121:1-2", "why": "I lift up my eyes to the hills. From where does my help come? My help comes from the Lord, who made heaven and earth, the pilgrim song of a traveler on the long road who lifts his eyes past the dangers of the hills to the God who made them, naming worship as the deliberate lifting of the eyes on the ordinary climb." },
-      "timing": [ { "segment": "Open", "minutes": 5 }, { "segment": "Discuss", "minutes": 35 }, { "segment": "Close", "minutes": 10 } ],
+      "keyScripture": {
+        "ref": "Psalm 121:1-2",
+        "why": "I lift up my eyes to the hills. From where does my help come? My help comes from the Lord, who made heaven and earth, the pilgrim song of a traveler on the long road who lifts his eyes past the dangers of the hills to the God who made them, naming worship as the deliberate lifting of the eyes on the ordinary climb."
+      },
+      "timing": [
+        {
+          "segment": "Open",
+          "minutes": 5
+        },
+        {
+          "segment": "Discuss",
+          "minutes": 35
+        },
+        {
+          "segment": "Close",
+          "minutes": 10
+        }
+      ],
       "discussion": [
-        { "q": "Bell says the pilgrims who sang the Songs of Ascent were not on a spiritual high but on a long dusty uphill road, singing to keep walking. How does it change these psalms to hear them as walking songs rather than mountaintop songs?", "behind": "Open by relocating worship from the summit to the road. Most people picture worship as the intense moment, and the ascents were sung by tired families climbing a literal hill. Help the room feel that worship is mostly the walking, the repeated turning toward God on ordinary days, not the rare peak experience." },
-        { "q": "Psalm 121 lifts its eyes to the hills and asks where help comes from. Where do you tend to lift your eyes when you are in trouble, and what would it look like to lift them past the hills to the God who made them?", "behind": "Press on the direction of the gaze. The hills were where danger lived for a traveler, and the psalmist looks past them to their Maker. Help the room name where they actually look for help under pressure, usually themselves or their circumstances, and consider the deliberate act of lifting the eyes higher." },
-        { "q": "Bell takes the strong case that worship should be the mountaintop, the intense experience of God's nearness, and that a faith without those highs is just going through the motions. What is real in that hunger, and where does it mislead?", "behind": "Hold both halves. The longing for the felt nearness of God is good and not to be despised. But a faith that only counts the highs as worship will judge the long ordinary road as failure, when the pilgrims sang precisely on that road. Help the room value the mountaintop without making it the only place worship happens." },
-        { "q": "The ascents climb step by step toward the house of the Lord, gathering trust and repentance and rest along the way. What does it mean for your own worship to be a long climb rather than a single summit you either reach or fail to?", "behind": "This is the formative center. Worship as a climb reframes the whole enterprise, from a peak you chase to a road you walk faithfully over years. Help the room release the pressure of the summit and receive the dignity of the ordinary faithful step, the repeated turning toward God when nothing is felt." },
-        { "q": "Bell says the Psalter ends in praise that has passed through the lament and the pit and the rage and the valley, that we climb to the praise rather than skip to it. Looking back over these five sessions, how has the whole honest road changed what praise means to you?", "behind": "Close by gathering the entire study. The final praise of the Psalter is earned, arrived at through everything the sessions have walked. Help the room see their own five weeks as an ascent, and let the praise they arrive at be the honest kind, sung by people who have brought God the whole truth. End on weight and worship, not on a tidy summary." }
+        {
+          "q": "Bell says the pilgrims who sang the Songs of Ascent were not on a spiritual high but on a long dusty uphill road, singing to keep walking. How does it change these psalms to hear them as walking songs rather than mountaintop songs?",
+          "behind": "Open by relocating worship from the summit to the road. Most people picture worship as the intense moment, and the ascents were sung by tired families climbing a literal hill. Help the room feel that worship is mostly the walking, the repeated turning toward God on ordinary days, not the rare peak experience."
+        },
+        {
+          "q": "Psalm 121 lifts its eyes to the hills and asks where help comes from. Where do you tend to lift your eyes when you are in trouble, and what would it look like to lift them past the hills to the God who made them?",
+          "behind": "Press on the direction of the gaze. The hills were where danger lived for a traveler, and the psalmist looks past them to their Maker. Help the room name where they actually look for help under pressure, usually themselves or their circumstances, and consider the deliberate act of lifting the eyes higher."
+        },
+        {
+          "q": "Bell takes the strong case that worship should be the mountaintop, the intense experience of God's nearness, and that a faith without those highs is just going through the motions. What is real in that hunger, and where does it mislead?",
+          "behind": "Hold both halves. The longing for the felt nearness of God is good and not to be despised. But a faith that only counts the highs as worship will judge the long ordinary road as failure, when the pilgrims sang precisely on that road. Help the room value the mountaintop without making it the only place worship happens."
+        },
+        {
+          "q": "The ascents climb step by step toward the house of the Lord, gathering trust and repentance and rest along the way. What does it mean for your own worship to be a long climb rather than a single summit you either reach or fail to?",
+          "behind": "This is the formative center. Worship as a climb reframes the whole enterprise, from a peak you chase to a road you walk faithfully over years. Help the room release the pressure of the summit and receive the dignity of the ordinary faithful step, the repeated turning toward God when nothing is felt."
+        },
+        {
+          "q": "Bell says the Psalter ends in praise that has passed through the lament and the pit and the rage and the valley, that we climb to the praise rather than skip to it. Looking back over these five sessions, how has the whole honest road changed what praise means to you?",
+          "behind": "Close by gathering the entire study. The final praise of the Psalter is earned, arrived at through everything the sessions have walked. Help the room see their own five weeks as an ascent, and let the praise they arrive at be the honest kind, sung by people who have brought God the whole truth. End on weight and worship, not on a tidy summary."
+        }
       ],
       "objections": [
-        { "objection": "If worship is mostly the long boring climb and not the mountaintop, then why bother? The whole point of faith is to actually experience God. A religion of just showing up and going through the motions on ordinary days sounds dead.", "response": "Hear the real hunger in it, because the longing to experience God is good and God is not against it, and the mountaintop moments, when they come, are gifts to be received with joy. Grant that fully. But notice the assumption hiding underneath, that only the felt highs count as real worship and everything else is going through the motions, because that assumption will wreck a life of faith. The pilgrims who wrote the ascents sang them on the road, tired and dusty and far from the summit, and their singing was not going through the motions, it was worship, the deliberate turning of the heart toward God on an ordinary uphill day. Most of any real life with God is lived on that road, not on the peak, and a faith that can only worship on the mountaintop will fall silent for the long stretches in between, which is most of the time. The ascents teach the harder and better thing, that the faithful step taken when nothing is felt is not lesser worship. It is the very substance of it, and the mountaintop, when it comes, is the gift, not the wage." },
-        { "objection": "The Psalter ends in all that praise, but that just feels like the Bible papering over everything hard it said earlier. After Psalm 88 and Psalm 137, ending with five psalms of hallelujah feels like it takes it all back and pretends the darkness never happened.", "response": "This is a serious worry and it deserves a real answer, because a praise that erased the lament would indeed be a betrayal of everything the Psalter dared to say. But look at what the final praise actually is, because it does not take anything back, it stands on the far side of it. The Psalter does not open with the hallelujahs, it ends with them, after Psalm 88 and after Psalm 137 and after all the how-longs, which means the praise is not offered instead of the darkness but through it and beyond it. This is not the naive praise of people who have never suffered. It is the earned praise of a book that told the whole truth first, that gave full voice to the pit and the rage and the valley and then, having hidden nothing, climbed to praise anyway. That is the opposite of papering over. Papering over would be starting with the hallelujahs and never mentioning the dark. The Psalter mentions the dark, at length, in God's own inspired words, and only then arrives at a praise that has earned the right to sing. We do not skip to it. We climb to it, and the climbing is what makes the song true." }
+        {
+          "objection": "If worship is mostly the long boring climb and not the mountaintop, then why bother? The whole point of faith is to actually experience God. A religion of just showing up and going through the motions on ordinary days sounds dead.",
+          "response": "Hear the real hunger in it, because the longing to experience God is good and God is not against it, and the mountaintop moments, when they come, are gifts to be received with joy. Grant that fully. But notice the assumption hiding underneath, that only the felt highs count as real worship and everything else is going through the motions, because that assumption will wreck a life of faith. The pilgrims who wrote the ascents sang them on the road, tired and dusty and far from the summit, and their singing was not going through the motions, it was worship, the deliberate turning of the heart toward God on an ordinary uphill day. Most of any real life with God is lived on that road, not on the peak, and a faith that can only worship on the mountaintop will fall silent for the long stretches in between, which is most of the time. The ascents teach the harder and better thing, that the faithful step taken when nothing is felt is not lesser worship. It is the very substance of it, and the mountaintop, when it comes, is the gift, not the wage."
+        },
+        {
+          "objection": "The Psalter ends in all that praise, but that just feels like the Bible papering over everything hard it said earlier. After Psalm 88 and Psalm 137, ending with five psalms of hallelujah feels like it takes it all back and pretends the darkness never happened.",
+          "response": "This is a serious worry and it deserves a real answer, because a praise that erased the lament would indeed be a betrayal of everything the Psalter dared to say. But look at what the final praise actually is, because it does not take anything back, it stands on the far side of it. The Psalter does not open with the hallelujahs, it ends with them, after Psalm 88 and after Psalm 137 and after all the how-longs, which means the praise is not offered instead of the darkness but through it and beyond it. This is not the naive praise of people who have never suffered. It is the earned praise of a book that told the whole truth first, that gave full voice to the pit and the rage and the valley and then, having hidden nothing, climbed to praise anyway. That is the opposite of papering over. Papering over would be starting with the hallelujahs and never mentioning the dark. The Psalter mentions the dark, at length, in God's own inspired words, and only then arrives at a praise that has earned the right to sing. We do not skip to it. We climb to it, and the climbing is what makes the song true."
+        }
       ],
       "quietRoomQuestion": "When you think of worship, do you picture a mountaintop moment you are always chasing and mostly failing to reach, or a long faithful road you are actually walking, and what would change if you believed the road itself was the worship?",
       "practice": "This week, treat worship as a climb. Pray one of the Songs of Ascent each day, Psalms 120 through 134, and let them teach you to worship on the ordinary road rather than only on the peak. On a day when you feel nothing, lift your eyes anyway, with Psalm 121, and turn deliberately toward God when there is no high to ride. And look back over these five sessions and pray the honest praise you have climbed to, the praise of someone who has brought God the whole truth. Write down what it means to you that the praise at the end of the book comes after everything, not instead of it.",
@@ -199,47 +480,143 @@
       ],
       "teaching": "The pilgrims who first sang the Songs of Ascent were not standing on a mountaintop having a spiritual experience. They were on a long, dusty, uphill road, walking for days toward Jerusalem for one of the festivals, tired and footsore and far from home, and the songs were simply what they sang to keep their legs moving. That is the first thing to know about Psalms 120 through 134, the fifteen Songs of Ascent, and it changes everything about how we hear them. They are walking songs. They were sung by ordinary families climbing the literal road up to the city, which sits high in the hills so that every approach to it is a climb, and the very name, Songs of Ascent, is a map of what worship actually is, not a permanent summit but a repeated climb. So this last session brings the whole study to the question it has been building toward from the beginning, the question of what worship is for, and the ascents answer it in a way that surprises us. Worship is not the escape from the ordinary. It is the ordinary lifting its eyes. Watch how the little collection moves, because it moves like a real road. Psalm 120 begins in distress, in a foreign land, among people who hate peace, which is exactly where a pilgrimage starts, in the ordinary trouble of a life far from home. Then Psalm 121 lifts its eyes to the hills and asks the traveler's question, from where does my help come, and the hills were not scenery to an ancient traveler, they were where the bandits hid, so to lift your eyes to the hills was to look straight at the danger, and the psalm looks past the danger to the one who made the hills, my help comes from the Lord, who made heaven and earth. And from there the collection climbs, step by step, gathering things as it goes, the trust of Psalm 123, the rescue of Psalm 124, the repentance and waiting of Psalm 130 out of the depths, the stilled and quieted soul of Psalm 131, until it arrives at the house of the Lord and ends, in Psalm 134, with the night watchmen in the temple lifting their hands to bless God in the dark. A whole pilgrimage, from distress in a far country to blessing in the house of God, sung on the road the entire way. Now take the strong case for the mountaintop, because it is a real hunger and I will not sneer at it. It says that worship is supposed to be the intense experience, the felt nearness of God, the moment the presence becomes almost tangible, and that a faith with none of those highs has become a dead routine, going through the motions. There is something true in that hunger. The mountaintop moments are real, and they are gifts, and God is not against them, and a person who has never once felt his nearness is right to long for it. But watch the assumption underneath the objection, because it will quietly wreck a life of faith. The assumption is that only the felt highs count as worship, that everything else is just going through the motions, and if you believe that, you will fall silent for the long stretches between the peaks, which is most of a life. The pilgrims knew better. They sang on the road, not the summit. They worshiped on the dusty uphill day when nothing was felt, and their singing was not going through the motions, it was the very substance of worship, the deliberate turning of the heart toward God on an ordinary climb. Most of any real walk with God is that road, and the ascents teach us to sing on it, to count the faithful ordinary step as worship and to receive the mountaintop, when it comes, as a gift rather than a wage we earned or failed to earn. And here is the turn, the one that gathers not just this session but the whole study into a single motion. Where does the Psalter end? Not where it began. It does not open with the hallelujahs. It ends with them, in the last five psalms, an unbroken crescendo of praise, let everything that has breath praise the Lord. And the thing to see, the thing this whole study has been walking toward, is that this final praise is not naive. It is not the easy praise of people who have never suffered. It comes at the end of the book, which means it comes after Psalm 88 and its darkness, after Psalm 137 and its rage, after all the how-longs and all the valleys, and it is praise that has passed through every one of them and come out singing anyway. That is the pattern of the whole Psalter, and it is the pattern of the honest life with God. We do not skip to the praise. We climb to it. The hallelujah at the end is earned by the lament in the middle, and a praise that had not passed through the pit would not be worth singing. I came to God from atheism with no road behind me and no father to have shown me the way up, and what these psalms have given me over the years is not a shortcut to the summit but a road, an honest road, wide enough for the grief and the rage and the doubt, that climbs, slowly, toward a praise I could not have faked at the start and cannot stop singing now. And the last word is not even about our climbing. Because while the pilgrim sings his way up the long road toward the house of God, the God he is climbing toward has already come down it to meet him, all the way down, further down than Babylon, down into the pit and the valley and the forsakenness of Psalm 22, so that the long ascent is answered by a longer descent, his, and the honest prayers we were afraid to pray turn out to have been prayed first, and finished, by him. Let everything that has breath praise the Lord.",
       "scriptureStudy": [
-        { "ref": "Psalm 120:1", "note": "In my distress I called to the Lord, and he answered me. The pilgrimage songs begin in trouble and a far country, showing that the climb toward God starts from the ordinary distress of a life away from home, not from a summit already reached." },
-        { "ref": "Psalm 121:1-2", "note": "I lift up my eyes to the hills. My help comes from the Lord, who made heaven and earth. The traveler looks past the danger of the hills to their Maker, worship as the deliberate lifting of the eyes from the threat to the God above it." },
-        { "ref": "Psalm 122:1", "note": "I was glad when they said to me, Let us go to the house of the Lord! The pilgrim rejoices not in a private feeling but in going up with others to worship, reminding us the ascents were sung by a community climbing together, not by isolated individuals." },
-        { "ref": "Psalm 130:1-2", "note": "Out of the depths I cry to you, O Lord! O Lord, hear my voice. Even the pilgrimage collection contains a cry from the depths, so the road to the house of God still passes through the pit, and repentance is part of the climb." },
-        { "ref": "Psalm 131:1-2", "note": "I have calmed and quieted my soul, like a weaned child with its mother. Near the top of the ascents the psalmist stills his own striving, showing that the climb leads not to spiritual achievement but to a childlike rest in God." },
-        { "ref": "Psalm 134:1-2", "note": "Come, bless the Lord, all you servants of the Lord, lift up your hands to the holy place and bless the Lord. The ascents end in the temple at night, the pilgrimage arriving at worship, the whole climb gathered into blessing God in the dark." },
-        { "ref": "Psalm 150:6", "note": "Let everything that has breath praise the Lord! Praise the Lord! The Psalter ends in unbroken praise, but it is praise reached at the end of the whole book, earned by passing through the lament and the pit, the summit of a long honest climb." }
+        {
+          "ref": "Psalm 120:1",
+          "note": "In my distress I called to the Lord, and he answered me. The pilgrimage songs begin in trouble and a far country, showing that the climb toward God starts from the ordinary distress of a life away from home, not from a summit already reached."
+        },
+        {
+          "ref": "Psalm 121:1-2",
+          "note": "I lift up my eyes to the hills. My help comes from the Lord, who made heaven and earth. The traveler looks past the danger of the hills to their Maker, worship as the deliberate lifting of the eyes from the threat to the God above it."
+        },
+        {
+          "ref": "Psalm 122:1",
+          "note": "I was glad when they said to me, Let us go to the house of the Lord! The pilgrim rejoices not in a private feeling but in going up with others to worship, reminding us the ascents were sung by a community climbing together, not by isolated individuals."
+        },
+        {
+          "ref": "Psalm 130:1-2",
+          "note": "Out of the depths I cry to you, O Lord! O Lord, hear my voice. Even the pilgrimage collection contains a cry from the depths, so the road to the house of God still passes through the pit, and repentance is part of the climb."
+        },
+        {
+          "ref": "Psalm 131:1-2",
+          "note": "I have calmed and quieted my soul, like a weaned child with its mother. Near the top of the ascents the psalmist stills his own striving, showing that the climb leads not to spiritual achievement but to a childlike rest in God."
+        },
+        {
+          "ref": "Psalm 134:1-2",
+          "note": "Come, bless the Lord, all you servants of the Lord, lift up your hands to the holy place and bless the Lord. The ascents end in the temple at night, the pilgrimage arriving at worship, the whole climb gathered into blessing God in the dark."
+        },
+        {
+          "ref": "Psalm 150:6",
+          "note": "Let everything that has breath praise the Lord! Praise the Lord! The Psalter ends in unbroken praise, but it is praise reached at the end of the whole book, earned by passing through the lament and the pit, the summit of a long honest climb."
+        }
       ],
       "goingDeeper": "Press into the shape of the Psalter as a whole, because this final session is the place to see the book as a book and not a random collection. Scholars have long noticed that the Psalms are arranged in five books, echoing the five books of Moses, and that they are edited deliberately, moving from the torah-delight of Psalm 1 and the enthronement of the king in Psalm 2, through the long middle heavy with lament, toward the sustained praise of the closing psalms, so that the whole Psalter enacts a movement from meditation through suffering to praise. A group should sit with the claim that this order is itself a teaching, that the book was assembled to lead a person from honest struggle to earned worship, and to ask what it means that the inspired hymnbook does not end where the anxious modern worshiper wants to begin. Set this beside Bonhoeffer, who in Psalms: The Prayer Book of the Bible argued that the Psalms are finally the prayers of Christ, that he is the true pilgrim who climbed the whole road and the true worshiper in whose voice the whole Psalter is prayed, so that the church praying the ascents is praying with and in her Lord who ascended not only to Jerusalem but through death to the right hand of the Father. Set it also beside C. S. Lewis on praise, his insight that praise is the appointed consummation of joy, that we were made to complete our delight in God by voicing it, and that the endless hallelujahs of the Psalter's close are not tedious repetition but the natural overflow of a joy that has finally found its object. Then press the pastoral question that gathers the whole study. What does it do to a congregation to be handed only the summit and never the climb, only the praise and never the road that earns it? A church that sings only the mountaintop songs produces worshipers who feel like failures on the ordinary days and frauds in the valley, while a church that learns to sing the ascents, on the dusty uphill road, produces worshipers who can keep walking toward God through anything, because they were taught that the walking itself is worship. The aim is to end the study by seeing the Psalter whole, as one long honest ascent from distress to praise, prayed with Christ who walked it first and came down to meet us on it, and to send the room home not to chase summits but to keep climbing, singing the honest prayers all the way up.",
       "caseStudy": "A woman in your group has quietly concluded, over the course of the five sessions, that her faith is second-rate, because she almost never feels the emotional highs that others describe and worship for her has long been a matter of showing up and doing the next faithful thing without much feeling. As the session names worship as a long climb rather than a mountaintop, she is on the edge of tears, unsure whether to feel relieved or exposed. Here is the work for the leader, and it must be tender, because she has been carrying a false verdict on herself for years. Do not dismiss the mountaintop, because the felt nearness of God is a real gift and her longing for it is not wrong. But name plainly what the ascents teach, that the pilgrims sang on the road and not the summit, that the faithful ordinary step taken when nothing is felt is not lesser worship but the very substance of it, and that her long quiet obedience is not a second-rate faith but exactly the kind of worship the Songs of Ascent were written for. Help her see that she has been measuring her whole life by the peaks and missing the fact that she has been climbing faithfully the entire time. Let her hear, maybe for the first time, that the God she has been walking toward without much feeling has been walking with her the whole way, and that the road itself, dusty and unspectacular, has been worship all along.",
-      "memoryVerse": { "ref": "Psalm 121:1-2", "text": "I lift up my eyes to the hills. From where does my help come? My help comes from the Lord, who made heaven and earth." }
+      "memoryVerse": {
+        "ref": "Psalm 121:1-2",
+        "text": "I lift up my eyes to the hills. From where does my help come? My help comes from the Lord, who made heaven and earth."
+      }
     }
   ],
   "leaderPrimer": "The particular danger of a study on the Psalms is that it can turn into a literature seminar, a room admiring the poetry from a safe distance while never once praying it. Refuse that from the first night. The Psalms are not a text to be analyzed, they are a prayer book to be prayed, and this study fails if a group finishes it able to discuss lament and still unable to lament. So make the room a place where people actually pray, out loud and in their own words, the honest prayers the psalms give them permission to pray. Set the rule early. What is said in honesty stays in the room, and no one is here to correct anyone else's grief or rage or doubt, because the Psalter itself does not correct them, it voices them. The truest movement in these sessions will often happen in silence, in a person who realizes they have been praying with a mask on and quietly takes it off before God. Make room for that silence rather than demanding confession across the circle. Two sessions carry particular weight, and you must prepare for them. Session two sits with Psalm 88, the psalm that does not resolve, and someone in almost any room is living in that psalm right now, in a darkness that has not lifted, and the worst thing you can do is rush them toward a happy ending the psalm itself refuses. Let the weight sit. Session three faces the imprecatory psalms, and there is a real chance that someone in the room is a survivor of genuine evil carrying rage they have been shamed for, and the study's whole point is that God gave them a sanctioned place to bring it. Do not, under any circumstances, meet a disclosure of abuse or trauma with a quick command to forgive. Know a counselor before you begin, keep a path to real help visible, believe people when they tell you what was done to them, and make a private way to reach you. Bell leads this from inside it. He came to faith from atheism and remembers having no one to pray to, he was raised without a father and knows the fatherless ache that runs under the psalms, and he has prayed the desperate psalms over his five sons in the dark. If you present yourself as a master of prayer, the room will perform prayer back at you and nothing will move. Go in as a fellow beginner still learning to pray the honest prayers. Five weeks will not turn anyone into a saint. It can hand a room the prayer book the church has always had, and teach ordinary people that the whole of themselves, the praise and the grief and the fury and the doubt, is welcome in the presence of the God who wrote the honest prayers first.",
   "faq": [
-    { "q": "Is this study going to be a poetry class, or does it actually help me pray?", "a": "It is built to help you pray, not to admire the poetry from a distance. The Psalms are the church's given prayer book, and the whole point of this study is to hand it back to you as words you can actually use, in praise and in protest, in thanksgiving and in the pit. Every session ends in prayer rather than in analysis, and the weekly practice puts a psalm in your mouth to pray as your own rather than a passage to dissect. You will learn some history and some structure, because knowing what a psalm is doing helps you pray it, but the aim throughout is a person who finishes the five weeks praying more honestly than they started, with a whole book of God-given words for the parts of their life they never knew they could bring to him." },
-    { "q": "I struggle with doubt and dark feelings. Will this study make me feel like a bad Christian for that?", "a": "The opposite. The Psalter gives more of itself to lament than to any other kind of prayer, and this study takes that seriously, insisting that grief and doubt turned toward God are not the failure of faith but one of its native tongues. Session two sits honestly with Psalm 13 and Psalm 88, the psalm that ends in darkness with no resolution, and the whole point is that God put a prayer for even that place in the holy book, so that the believer in the dark would know their darkness has a language and a home in Scripture. You will not be told to cheer up or to have more faith. You will be shown that the God who inspired the honest prayers wants the whole person, doubts and all, and that bringing him the darkness is itself an act of faith." },
-    { "q": "What about the violent psalms, the ones that ask God to hurt people? How can those possibly be in the Bible?", "a": "The study faces them rather than skipping them, in session three. Psalm 137 ends with a blessing on whoever dashes an enemy's infants against the rock, and the honest thing is to admit the sentence is there and ask what it is doing in the prayer book of God's people. The answer begins with a distinction, that voicing rage to God is not the same as acting on it, and may be its only alternative. The psalm is the prayer of real victims of real atrocity, and it does not pick up a sword, it hands the vengeance to God, saying repayment belongs to him and not to us, which is the very seed of what Jesus later commands when he tells us to leave vengeance to God. The study traces how these terrible prayers point past themselves to the cross, where the wrath they cry for was absorbed by God himself. It handles the rage with care, especially for anyone carrying real trauma, and it never presents the curse as a model to imitate." },
-    { "q": "What is the difference between lament and just complaining or being ungrateful?", "a": "Lament is complaint that stays turned toward God rather than away from him. The difference is the direction. Grumbling talks about God behind his back, nursing grievance and drifting away, while lament brings the very same pain to God's face and keeps speaking to him, even in protest. Psalm 13 accuses God of forgetting and hiding, but it says it to God, and it ends in trust reached through the complaint and not instead of it. That is the mark of biblical lament, it argues with God rather than abandoning him, and it is faith's refusal to let go even when it cannot see him. So lament is not the opposite of faith or gratitude, it is often the honest road to them, and the alternative to lament is usually not serene trust but silence and quiet leaving." },
-    { "q": "Does the study just tell suffering people to be more thankful?", "a": "No, and it is careful here. Session four handles the psalms of trust and thanksgiving, and it names the real danger of weaponizing gratitude to silence grief, the toxic positivity that shames the hurting for not feeling better. Psalm 103 does not slap thanks on top of pain, it is a man commanding his own forgetful soul to remember specific mercies, the deliberate work of recalling what is true alongside the grief and not instead of it. And Psalm 23 is not a lullaby, it walks straight through the valley of the shadow of death, so its trust is earned on the far side of suffering, not pasted over it. The study insists that thanksgiving in the Psalms is the honest remembering of what is true by someone who has looked hard at what is wrong, never the denial of the pain, and it warns leaders not to hand the psalms of trust to someone still in the valley as a bludgeon." },
-    { "q": "I do not feel emotional in worship the way others seem to. Is something wrong with my faith?", "a": "Session five was written partly for you. The Songs of Ascent were sung by ordinary pilgrims on a long dusty uphill road, not on a mountaintop, and they map worship as a repeated climb rather than a permanent summit. A faith that counts only the emotional highs as real worship will judge the long ordinary road as failure, but the pilgrims sang precisely on that road, and the study insists that the faithful step taken when nothing is felt is not lesser worship, it is the very substance of it. Your long quiet obedience is not a second-rate faith. It is exactly the kind of worship the ascents were written for, and the mountaintop moments, when they come, are gifts to receive with joy rather than wages you earned or failed to earn." },
-    { "q": "Why does the study spend so much time on the hard psalms instead of the encouraging ones?", "a": "Because the hard psalms are most of the book and the church has quietly edited them out, and a people that prays only the sunny psalms has taught itself that half its inner life is unwelcome in God's presence. The study does not neglect the encouraging psalms, session four is devoted to trust and thanksgiving and session five ends in praise, but it insists that the praise at the end of the Psalter is earned by passing through the lament in the middle, that we climb to the hallelujah rather than skip to it. A study that handed you only the comfortable psalms would leave you with nowhere to bring your grief and rage and doubt, which is exactly the poverty the study is trying to heal. The whole Psalter, honestly prayed, is richer than the edited version, and the encouragement at the end means more because it hid nothing first." },
-    { "q": "Do I need to know the Bible well to lead or join this study?", "a": "No. The study was written to be led by ordinary people, not experts, and every discussion question carries the answer behind it, every silence has a backup, and every session ends in prayer rather than argument. You do not need to know the historical background of each psalm, because the study provides what you need, and you do not need to have your own prayer life figured out, because the whole point is learning to pray the honest prayers together. If anything, the leader who admits they are still learning to pray will lead better than the one who performs mastery, because the Psalms are a school of prayer for beginners, and everyone in the room, leader included, is a beginner before God." },
-    { "q": "Is it really okay to bring anger at God into my prayers?", "a": "The Psalms say yes, repeatedly and without apology. Psalm 13 accuses God of forgetting and hiding, Psalm 88 charges him with causing the darkness, Psalm 22 cries out that he has forsaken the one praying, and all of it is Scripture, breathed out by the same Spirit as the praise and prayed by the very models of faith. The key is that the anger is brought to God, not carried away from him, spoken to his face rather than nursed behind his back. A God who inspired these psalms is not a God who needs to be protected from your honesty, and the anger handed to him is anger you are no longer carrying alone. What the study will not do is tell you that mature faith means hiding your fury behind a brave face, because the brave face, held as a rule, only teaches people to lie to God with a smile." },
-    { "q": "How does this study connect to Jesus, or is it only about the Old Testament?", "a": "Jesus is at the center of it throughout. The risen Christ named the Psalms as one of the three great parts of Scripture that speak of him, and he prayed them himself, crying Psalm 22 from the cross and committing his spirit with the words of Psalm 31 as he died. The study reads the lament in the light of a Lord who lamented, the imprecatory psalms in the light of a cross where the wrath they cry for was absorbed by God himself, and the psalms of ascent in the light of a Christ who climbed the whole road and then came down it to meet us. Bonhoeffer taught that the Psalms are finally the prayers of Christ, into which the church is drawn, so that when we pray them we are praying with our Lord. This is not a detour into the Old Testament away from Jesus. It is a way of praying the whole of Scripture with Christ in the middle of it." },
-    { "q": "I am a skeptic. Is not religion just teaching people to talk themselves into feeling better?", "a": "It is a fair suspicion, and the study earns the right to answer it by refusing exactly that move. The Psalms are the least sentimental religious literature you will find, and this study leans into their honesty rather than around it. They do not talk people into feeling better, they give full and inspired voice to despair that does not lift, rage at real atrocity, and doubt that accuses God to his face, and they preserve the prayer that ends in darkness with no resolution as holy Scripture. Whatever else that is, it is not the power of positive thinking. The writer came to faith from atheism and remembers the wordlessness of having no one to pray to, and what he found in the Psalms was not a technique for cheerfulness but a book honest enough to hold the worst of him. You do not have to believe what he believes to notice that a prayer book containing Psalm 88 is not in the business of pretending, and to wonder what kind of God would write the honest prayers first." }
+    {
+      "q": "Is this study going to be a poetry class, or does it actually help me pray?",
+      "a": "It is built to help you pray, not to admire the poetry from a distance. The Psalms are the church's given prayer book, and the whole point of this study is to hand it back to you as words you can actually use, in praise and in protest, in thanksgiving and in the pit. Every session ends in prayer rather than in analysis, and the weekly practice puts a psalm in your mouth to pray as your own rather than a passage to dissect. You will learn some history and some structure, because knowing what a psalm is doing helps you pray it, but the aim throughout is a person who finishes the five weeks praying more honestly than they started, with a whole book of God-given words for the parts of their life they never knew they could bring to him."
+    },
+    {
+      "q": "I struggle with doubt and dark feelings. Will this study make me feel like a bad Christian for that?",
+      "a": "The opposite. The Psalter gives more of itself to lament than to any other kind of prayer, and this study takes that seriously, insisting that grief and doubt turned toward God are not the failure of faith but one of its native tongues. Session two sits honestly with Psalm 13 and Psalm 88, the psalm that ends in darkness with no resolution, and the whole point is that God put a prayer for even that place in the holy book, so that the believer in the dark would know their darkness has a language and a home in Scripture. You will not be told to cheer up or to have more faith. You will be shown that the God who inspired the honest prayers wants the whole person, doubts and all, and that bringing him the darkness is itself an act of faith."
+    },
+    {
+      "q": "What about the violent psalms, the ones that ask God to hurt people? How can those possibly be in the Bible?",
+      "a": "The study faces them rather than skipping them, in session three. Psalm 137 ends with a blessing on whoever dashes an enemy's infants against the rock, and the honest thing is to admit the sentence is there and ask what it is doing in the prayer book of God's people. The answer begins with a distinction, that voicing rage to God is not the same as acting on it, and may be its only alternative. The psalm is the prayer of real victims of real atrocity, and it does not pick up a sword, it hands the vengeance to God, saying repayment belongs to him and not to us, which is the very seed of what Jesus later commands when he tells us to leave vengeance to God. The study traces how these terrible prayers point past themselves to the cross, where the wrath they cry for was absorbed by God himself. It handles the rage with care, especially for anyone carrying real trauma, and it never presents the curse as a model to imitate."
+    },
+    {
+      "q": "What is the difference between lament and just complaining or being ungrateful?",
+      "a": "Lament is complaint that stays turned toward God rather than away from him. The difference is the direction. Grumbling talks about God behind his back, nursing grievance and drifting away, while lament brings the very same pain to God's face and keeps speaking to him, even in protest. Psalm 13 accuses God of forgetting and hiding, but it says it to God, and it ends in trust reached through the complaint and not instead of it. That is the mark of biblical lament, it argues with God rather than abandoning him, and it is faith's refusal to let go even when it cannot see him. So lament is not the opposite of faith or gratitude, it is often the honest road to them, and the alternative to lament is usually not serene trust but silence and quiet leaving."
+    },
+    {
+      "q": "Does the study just tell suffering people to be more thankful?",
+      "a": "No, and it is careful here. Session four handles the psalms of trust and thanksgiving, and it names the real danger of weaponizing gratitude to silence grief, the toxic positivity that shames the hurting for not feeling better. Psalm 103 does not slap thanks on top of pain, it is a man commanding his own forgetful soul to remember specific mercies, the deliberate work of recalling what is true alongside the grief and not instead of it. And Psalm 23 is not a lullaby, it walks straight through the valley of the shadow of death, so its trust is earned on the far side of suffering, not pasted over it. The study insists that thanksgiving in the Psalms is the honest remembering of what is true by someone who has looked hard at what is wrong, never the denial of the pain, and it warns leaders not to hand the psalms of trust to someone still in the valley as a bludgeon."
+    },
+    {
+      "q": "I do not feel emotional in worship the way others seem to. Is something wrong with my faith?",
+      "a": "Session five was written partly for you. The Songs of Ascent were sung by ordinary pilgrims on a long dusty uphill road, not on a mountaintop, and they map worship as a repeated climb rather than a permanent summit. A faith that counts only the emotional highs as real worship will judge the long ordinary road as failure, but the pilgrims sang precisely on that road, and the study insists that the faithful step taken when nothing is felt is not lesser worship, it is the very substance of it. Your long quiet obedience is not a second-rate faith. It is exactly the kind of worship the ascents were written for, and the mountaintop moments, when they come, are gifts to receive with joy rather than wages you earned or failed to earn."
+    },
+    {
+      "q": "Why does the study spend so much time on the hard psalms instead of the encouraging ones?",
+      "a": "Because the hard psalms are most of the book and the church has quietly edited them out, and a people that prays only the sunny psalms has taught itself that half its inner life is unwelcome in God's presence. The study does not neglect the encouraging psalms, session four is devoted to trust and thanksgiving and session five ends in praise, but it insists that the praise at the end of the Psalter is earned by passing through the lament in the middle, that we climb to the hallelujah rather than skip to it. A study that handed you only the comfortable psalms would leave you with nowhere to bring your grief and rage and doubt, which is exactly the poverty the study is trying to heal. The whole Psalter, honestly prayed, is richer than the edited version, and the encouragement at the end means more because it hid nothing first."
+    },
+    {
+      "q": "Do I need to know the Bible well to lead or join this study?",
+      "a": "No. The study was written to be led by ordinary people, not experts, and every discussion question carries the answer behind it, every silence has a backup, and every session ends in prayer rather than argument. You do not need to know the historical background of each psalm, because the study provides what you need, and you do not need to have your own prayer life figured out, because the whole point is learning to pray the honest prayers together. If anything, the leader who admits they are still learning to pray will lead better than the one who performs mastery, because the Psalms are a school of prayer for beginners, and everyone in the room, leader included, is a beginner before God."
+    },
+    {
+      "q": "Is it really okay to bring anger at God into my prayers?",
+      "a": "The Psalms say yes, repeatedly and without apology. Psalm 13 accuses God of forgetting and hiding, Psalm 88 charges him with causing the darkness, Psalm 22 cries out that he has forsaken the one praying, and all of it is Scripture, breathed out by the same Spirit as the praise and prayed by the very models of faith. The key is that the anger is brought to God, not carried away from him, spoken to his face rather than nursed behind his back. A God who inspired these psalms is not a God who needs to be protected from your honesty, and the anger handed to him is anger you are no longer carrying alone. What the study will not do is tell you that mature faith means hiding your fury behind a brave face, because the brave face, held as a rule, only teaches people to lie to God with a smile."
+    },
+    {
+      "q": "How does this study connect to Jesus, or is it only about the Old Testament?",
+      "a": "Jesus is at the center of it throughout. The risen Christ named the Psalms as one of the three great parts of Scripture that speak of him, and he prayed them himself, crying Psalm 22 from the cross and committing his spirit with the words of Psalm 31 as he died. The study reads the lament in the light of a Lord who lamented, the imprecatory psalms in the light of a cross where the wrath they cry for was absorbed by God himself, and the psalms of ascent in the light of a Christ who climbed the whole road and then came down it to meet us. Bonhoeffer taught that the Psalms are finally the prayers of Christ, into which the church is drawn, so that when we pray them we are praying with our Lord. This is not a detour into the Old Testament away from Jesus. It is a way of praying the whole of Scripture with Christ in the middle of it."
+    },
+    {
+      "q": "I am a skeptic. Is not religion just teaching people to talk themselves into feeling better?",
+      "a": "It is a fair suspicion, and the study earns the right to answer it by refusing exactly that move. The Psalms are the least sentimental religious literature you will find, and this study leans into their honesty rather than around it. They do not talk people into feeling better, they give full and inspired voice to despair that does not lift, rage at real atrocity, and doubt that accuses God to his face, and they preserve the prayer that ends in darkness with no resolution as holy Scripture. Whatever else that is, it is not the power of positive thinking. The writer came to faith from atheism and remembers the wordlessness of having no one to pray to, and what he found in the Psalms was not a technique for cheerfulness but a book honest enough to hold the worst of him. You do not have to believe what he believes to notice that a prayer book containing Psalm 88 is not in the business of pretending, and to wonder what kind of God would write the honest prayers first."
+    }
   ],
   "timeline": [
-    { "date": "circa 1000 BC", "event": "David, the shepherd-king, composes psalms of praise, lament, and trust, and the tradition of Israel's sung prayer takes root, so that roughly half the Psalter comes to bear his name and the shepherd of Psalm 23 writes as one who was himself a shepherd." },
-    { "date": "circa 950 BC onward", "event": "The Songs of Ascent and the temple worship of Israel develop around the festivals, as pilgrims sing their way up the road to Jerusalem, and the psalms become the living liturgy of a people who prayed and sang their faith rather than only reading it." },
-    { "date": "586 BC", "event": "Babylon burns Jerusalem, destroys the temple, and marches the survivors into exile, the atrocity that produces Psalm 137, the exiles weeping by the rivers of Babylon and voicing to God a rage that only real victims of real horror could feel." },
-    { "date": "circa 515 BC", "event": "After the return from exile the Psalter is gathered and edited into its final five-book shape, arranged deliberately to move from the torah-delight of Psalm 1 through the long middle of lament toward the sustained praise of the closing psalms." },
-    { "date": "circa 200 BC", "event": "The Psalms are translated into Greek in the Septuagint, carrying Israel's prayer book into the wider ancient world and shaping the way the earliest church, praying in Greek, would come to know and quote the Psalms." },
-    { "date": "circa AD 30", "event": "Jesus prays the Psalms at the deepest moments of his life, crying My God, my God, why have you forsaken me from Psalm 22 on the cross and committing his spirit with the words of Psalm 31, so that the Lord himself treats the Psalter as his own prayer book." },
-    { "date": "circa AD 360", "event": "Athanasius writes his Letter to Marcellinus on the Psalms, observing that where the rest of Scripture speaks to us, the Psalms speak for us, giving the reader his own words, a description of the book that has shaped Christian prayer ever since." },
-    { "date": "circa AD 400", "event": "Augustine composes his vast Expositions of the Psalms, preaching through the whole Psalter and reading it as the voice of Christ and his body the church, one of the most influential treatments of the Psalms in Christian history." },
-    { "date": "1528", "event": "Martin Luther, who prayed and lectured on the Psalms throughout his life, calls the Psalter a little Bible in his preface, because it gathers the whole of Scripture and the whole of the Christian experience into one book of prayer." },
-    { "date": "1557", "event": "John Calvin publishes his Commentary on the Psalms, calling the book an anatomy of all the parts of the soul, because there is no emotion of which a human being can be conscious that is not here represented as in a mirror." },
-    { "date": "1940", "event": "Dietrich Bonhoeffer, teaching in an underground seminary under a regime committing real atrocities, publishes Psalms: The Prayer Book of the Bible, arguing that we learn to pray by praying the God-given words of the Psalms, which are finally the prayers of Christ." },
-    { "date": "1958", "event": "C. S. Lewis publishes Reflections on the Psalms, approaching the book as an honest reader who refuses to excuse the hard psalms and yet finds in their unguarded emotion a seriousness about God, suffering, and evil that more genteel religion lacks." },
-    { "date": "1984", "event": "Walter Brueggemann's The Message of the Psalms gives the church the pattern of orientation, disorientation, and new orientation, a map of the psalms of the settled life, of the life come apart, and of the surprised trust reached on the far side." }
+    {
+      "date": "circa 1000 BC",
+      "event": "David, the shepherd-king, composes psalms of praise, lament, and trust, and the tradition of Israel's sung prayer takes root, so that roughly half the Psalter comes to bear his name and the shepherd of Psalm 23 writes as one who was himself a shepherd."
+    },
+    {
+      "date": "circa 950 BC onward",
+      "event": "The Songs of Ascent and the temple worship of Israel develop around the festivals, as pilgrims sing their way up the road to Jerusalem, and the psalms become the living liturgy of a people who prayed and sang their faith rather than only reading it."
+    },
+    {
+      "date": "586 BC",
+      "event": "Babylon burns Jerusalem, destroys the temple, and marches the survivors into exile, the atrocity that produces Psalm 137, the exiles weeping by the rivers of Babylon and voicing to God a rage that only real victims of real horror could feel."
+    },
+    {
+      "date": "circa 515 BC",
+      "event": "After the return from exile the Psalter is gathered and edited into its final five-book shape, arranged deliberately to move from the torah-delight of Psalm 1 through the long middle of lament toward the sustained praise of the closing psalms."
+    },
+    {
+      "date": "circa 200 BC",
+      "event": "The Psalms are translated into Greek in the Septuagint, carrying Israel's prayer book into the wider ancient world and shaping the way the earliest church, praying in Greek, would come to know and quote the Psalms."
+    },
+    {
+      "date": "circa AD 30",
+      "event": "Jesus prays the Psalms at the deepest moments of his life, crying My God, my God, why have you forsaken me from Psalm 22 on the cross and committing his spirit with the words of Psalm 31, so that the Lord himself treats the Psalter as his own prayer book."
+    },
+    {
+      "date": "circa AD 360",
+      "event": "Athanasius writes his Letter to Marcellinus on the Psalms, observing that where the rest of Scripture speaks to us, the Psalms speak for us, giving the reader his own words, a description of the book that has shaped Christian prayer ever since."
+    },
+    {
+      "date": "circa AD 400",
+      "event": "Augustine composes his vast Expositions of the Psalms, preaching through the whole Psalter and reading it as the voice of Christ and his body the church, one of the most influential treatments of the Psalms in Christian history."
+    },
+    {
+      "date": "1528",
+      "event": "Martin Luther, who prayed and lectured on the Psalms throughout his life, calls the Psalter a little Bible in his preface, because it gathers the whole of Scripture and the whole of the Christian experience into one book of prayer."
+    },
+    {
+      "date": "1557",
+      "event": "John Calvin publishes his Commentary on the Psalms, calling the book an anatomy of all the parts of the soul, because there is no emotion of which a human being can be conscious that is not here represented as in a mirror."
+    },
+    {
+      "date": "1940",
+      "event": "Dietrich Bonhoeffer, teaching in an underground seminary under a regime committing real atrocities, publishes Psalms: The Prayer Book of the Bible, arguing that we learn to pray by praying the God-given words of the Psalms, which are finally the prayers of Christ."
+    },
+    {
+      "date": "1958",
+      "event": "C. S. Lewis publishes Reflections on the Psalms, approaching the book as an honest reader who refuses to excuse the hard psalms and yet finds in their unguarded emotion a seriousness about God, suffering, and evil that more genteel religion lacks."
+    },
+    {
+      "date": "1984",
+      "event": "Walter Brueggemann's The Message of the Psalms gives the church the pattern of orientation, disorientation, and new orientation, a map of the psalms of the settled life, of the life come apart, and of the surprised trust reached on the far side."
+    }
   ],
   "facilitatorScript": {
     "open": "Welcome, and thank you for being here, because it takes a kind of courage to learn to pray honestly in front of other people. Before we start, three things. First, the Psalms are not a poem we are here to admire, they are a prayer book we are here to actually pray, so we will pray out loud in this room, in our own words, and no one has to do it well. Second, what is said in honesty here stays here, and no one is going to correct anyone else's grief or doubt or anger, because the Psalms themselves do not correct them, they give them words. Third, the writer prays these prayers from inside, as someone who came to God from atheism with no idea how to pray and is still learning, so we are all beginners here, leader included. One more thing that matters, and I mean it. If anyone here is carrying a darkness that has not lifted, or a rage from a real wrong done to you, this study is built to make room for exactly that, and I am available to talk privately and to help. Tonight we are praying our way through this together: ________. Let me read our key psalm, and then we will sit with it before we say anything else. There are no wrong answers in the first five minutes, only honest ones.",
@@ -281,18 +658,66 @@
     }
   ],
   "bibliography": [
-    { "title": "Psalms: The Prayer Book of the Bible", "author": "Dietrich Bonhoeffer", "note": "The theological spine of the study, arguing that we learn to pray by praying the God-given words of the Psalms and that the Psalms are finally the prayers of Christ into which the church is drawn. Anchors sessions 1, 3, and 5." },
-    { "title": "Reflections on the Psalms", "author": "C. S. Lewis", "note": "An honest reader's engagement with the Psalms that refuses to excuse the hard ones, wrestling openly with the cursing psalms and recovering praise as the consummation of joy. Supports sessions 3, 4, and 5." },
-    { "title": "The Message of the Psalms: A Theological Commentary", "author": "Walter Brueggemann", "note": "The source of the pattern of orientation, disorientation, and new orientation that runs through the study, mapping the psalms of the settled life, the life come apart, and the surprised trust on the far side. Anchors sessions 2 and 4." },
-    { "title": "Praying the Psalms: Engaging Scripture and the Life of the Spirit", "author": "Walter Brueggemann", "note": "A shorter companion to the commentary on how the Psalms teach honest prayer, including the boldness of lament and complaint. Background for sessions 1 and 2. Leader to confirm specific claims before attributing them." },
-    { "title": "Reflections on the Psalms as the Prayer Book of Christ", "author": "the Letter to Marcellinus, Athanasius of Alexandria", "note": "The fourth-century letter observing that the Psalms speak for us, giving the reader his own words, cited in session 1 and the timeline. A primary source to be read, not only quoted." },
-    { "title": "Commentary on the Book of Psalms", "author": "John Calvin", "note": "The Reformer's commentary that calls the Psalter an anatomy of all the parts of the soul, cited in session 1 and the timeline as the classic account of the Psalms as a mirror of the whole inner life. Leader to confirm before pressing specific claims." },
-    { "title": "Expositions of the Psalms", "author": "Augustine of Hippo", "note": "The vast early treatment reading the Psalter as the voice of Christ and his body the church, historical anchor for the study's christological reading. Cited in the timeline. Leader to handle the volume selectively." },
-    { "title": "Open and Unafraid: The Psalms as a Guide to Life", "author": "W. David O. Taylor", "note": "A pastoral guide to praying the Psalms across the whole range of human emotion, including anger, sadness, and joy, useful as an accessible companion for group members. Supports all five sessions. Leader to confirm specific claims." },
-    { "title": "A Sacrifice of Praise", "author": "counseling and pastoral literature on lament", "note": "Representative of the growing body of pastoral work recovering lament for the church. Offered as a category for leaders to draw on locally rather than a single endorsed text. Leader to select a trusted resource and confirm its claims." },
-    { "title": "Prophetic Lament: A Call for Justice in Troubled Times", "author": "Soong-Chan Rah", "note": "On the church's loss of lament and the cost of a worship that sings only triumph, useful background for the study's insistence that the sunny-only Psalter abandons the suffering. Supports session 2. Leader to confirm specific claims." },
-    { "title": "The Case for the Psalms: Why They Are Essential", "author": "N. T. Wright", "note": "An accessible argument that the Psalms shape the Christian's sense of time, space, and God, and that the church impoverishes itself by neglecting them. Background for session 1. Leader to confirm before attributing specific claims." },
-    { "title": "The Book of Psalms", "author": "the psalmists of Israel", "note": "The prayer book at the heart of the whole study, to be read, prayed, and sung and not only discussed. The primary text for every session, and the point of the entire study is to hand it back to the room as living prayer." }
+    {
+      "title": "Psalms: The Prayer Book of the Bible",
+      "author": "Dietrich Bonhoeffer",
+      "note": "The theological spine of the study, arguing that we learn to pray by praying the God-given words of the Psalms and that the Psalms are finally the prayers of Christ into which the church is drawn. Anchors sessions 1, 3, and 5."
+    },
+    {
+      "title": "Reflections on the Psalms",
+      "author": "C. S. Lewis",
+      "note": "An honest reader's engagement with the Psalms that refuses to excuse the hard ones, wrestling openly with the cursing psalms and recovering praise as the consummation of joy. Supports sessions 3, 4, and 5."
+    },
+    {
+      "title": "The Message of the Psalms: A Theological Commentary",
+      "author": "Walter Brueggemann",
+      "note": "The source of the pattern of orientation, disorientation, and new orientation that runs through the study, mapping the psalms of the settled life, the life come apart, and the surprised trust on the far side. Anchors sessions 2 and 4."
+    },
+    {
+      "title": "Praying the Psalms: Engaging Scripture and the Life of the Spirit",
+      "author": "Walter Brueggemann",
+      "note": "A shorter companion to the commentary on how the Psalms teach honest prayer, including the boldness of lament and complaint. Background for sessions 1 and 2. Leader to confirm specific claims before attributing them."
+    },
+    {
+      "title": "Reflections on the Psalms as the Prayer Book of Christ",
+      "author": "the Letter to Marcellinus, Athanasius of Alexandria",
+      "note": "The fourth-century letter observing that the Psalms speak for us, giving the reader his own words, cited in session 1 and the timeline. A primary source to be read, not only quoted."
+    },
+    {
+      "title": "Commentary on the Book of Psalms",
+      "author": "John Calvin",
+      "note": "The Reformer's commentary that calls the Psalter an anatomy of all the parts of the soul, cited in session 1 and the timeline as the classic account of the Psalms as a mirror of the whole inner life. Leader to confirm before pressing specific claims."
+    },
+    {
+      "title": "Expositions of the Psalms",
+      "author": "Augustine of Hippo",
+      "note": "The vast early treatment reading the Psalter as the voice of Christ and his body the church, historical anchor for the study's christological reading. Cited in the timeline. Leader to handle the volume selectively."
+    },
+    {
+      "title": "Open and Unafraid: The Psalms as a Guide to Life",
+      "author": "W. David O. Taylor",
+      "note": "A pastoral guide to praying the Psalms across the whole range of human emotion, including anger, sadness, and joy, useful as an accessible companion for group members. Supports all five sessions. Leader to confirm specific claims."
+    },
+    {
+      "title": "A Sacrifice of Praise",
+      "author": "counseling and pastoral literature on lament",
+      "note": "Representative of the growing body of pastoral work recovering lament for the church. Offered as a category for leaders to draw on locally rather than a single endorsed text. Leader to select a trusted resource and confirm its claims."
+    },
+    {
+      "title": "Prophetic Lament: A Call for Justice in Troubled Times",
+      "author": "Soong-Chan Rah",
+      "note": "On the church's loss of lament and the cost of a worship that sings only triumph, useful background for the study's insistence that the sunny-only Psalter abandons the suffering. Supports session 2. Leader to confirm specific claims."
+    },
+    {
+      "title": "The Case for the Psalms: Why They Are Essential",
+      "author": "N. T. Wright",
+      "note": "An accessible argument that the Psalms shape the Christian's sense of time, space, and God, and that the church impoverishes itself by neglecting them. Background for session 1. Leader to confirm before attributing specific claims."
+    },
+    {
+      "title": "The Book of Psalms",
+      "author": "the psalmists of Israel",
+      "note": "The prayer book at the heart of the whole study, to be read, prayed, and sung and not only discussed. The primary text for every session, and the point of the entire study is to hand it back to the room as living prayer."
+    }
   ],
   "furtherReading": [
     "Psalms: The Prayer Book of the Bible, Dietrich Bonhoeffer, for those who want the fuller theological case that the Psalms are the school of prayer and finally the prayers of Christ.",
@@ -302,37 +727,160 @@
     "The Book of Psalms itself, prayed slowly and out loud a psalm a day, for anyone willing to let the prayer book teach them to pray rather than only to read."
   ],
   "glossary": [
-    { "term": "Psalter", "definition": "The Book of Psalms, the hundred and fifty prayers and songs that served as the prayer book of Israel and then of the church, gathered into five books and moving from meditation through lament to praise. The church's given school of prayer." },
-    { "term": "Lament", "definition": "The prayer that brings pain, grief, and complaint to God rather than away from him, staying turned toward God even in protest. The most common kind of psalm, and a native tongue of faith, not its failure." },
-    { "term": "Imprecatory psalm", "definition": "A psalm that calls down God's judgment on enemies, such as Psalm 137 or Psalm 69, voicing real rage at real wrong. Handled in the study as the handing of vengeance to God rather than the endorsement of it, pointing past itself to the cross." },
-    { "term": "Psalms of Ascent", "definition": "Psalms 120 through 134, the fifteen pilgrimage songs sung by Israelites climbing the road up to Jerusalem for the festivals. They map worship as a long repeated climb rather than a permanent mountaintop." },
-    { "term": "Orientation", "definition": "Brueggemann's term for the psalms of the settled, ordered life, where the world makes sense and God is reliably good, such as the wisdom and creation psalms. The starting point that lament will later disrupt." },
-    { "term": "Disorientation", "definition": "Brueggemann's term for the psalms of the life come apart, the lament and complaint prayed when the settled world has shattered and the sunny psalms no longer fit. The pit the honest prayer passes through." },
-    { "term": "New orientation", "definition": "Brueggemann's term for the surprised trust reached on the far side of disorientation, never merely a return to the old confidence but a deeper trust forged in the valley, such as the psalms of thanksgiving and Psalm 23." },
-    { "term": "Steadfast love", "definition": "The English rendering of the Hebrew chesed, God's faithful covenant loving-kindness shown to a people who do not deserve it, named again and again as the ground of the psalmist's trust, especially in Psalm 103." },
-    { "term": "Selah", "definition": "A Hebrew term scattered through the Psalms whose exact meaning is uncertain, likely a musical or liturgical direction, often taken as a pause, a place to stop and let the words land before praying on." },
-    { "term": "Vengeance handed to God", "definition": "The move at the heart of the imprecatory psalms, where the psalmist brings his rage to God and leaves the repaying in God's hands rather than seizing it, the seed of the command to never avenge yourself but leave it to the wrath of God." },
-    { "term": "The prayers of Christ", "definition": "Bonhoeffer's claim that the Psalms are finally prayed by Christ, who prayed them in his life and death, so that the church praying the Psalms prays with and in her Lord, even the psalms she cannot yet fully mean." },
-    { "term": "Praise", "definition": "Not the naive cheer of people who have never suffered but, in the Psalter, the earned song reached at the end of the book, after the lament and the pit and the valley, the crescendo that hid nothing first and climbed to the hallelujah." },
-    { "term": "Pilgrimage", "definition": "The literal festival climb up to Jerusalem that produced the Songs of Ascent, and the picture of the life of worship as a long road walked toward God, mostly ordinary and uphill, sung the whole way rather than only at the summit." }
+    {
+      "term": "Psalter",
+      "definition": "The Book of Psalms, the hundred and fifty prayers and songs that served as the prayer book of Israel and then of the church, gathered into five books and moving from meditation through lament to praise. The church's given school of prayer."
+    },
+    {
+      "term": "Lament",
+      "definition": "The prayer that brings pain, grief, and complaint to God rather than away from him, staying turned toward God even in protest. The most common kind of psalm, and a native tongue of faith, not its failure."
+    },
+    {
+      "term": "Imprecatory psalm",
+      "definition": "A psalm that calls down God's judgment on enemies, such as Psalm 137 or Psalm 69, voicing real rage at real wrong. Handled in the study as the handing of vengeance to God rather than the endorsement of it, pointing past itself to the cross."
+    },
+    {
+      "term": "Psalms of Ascent",
+      "definition": "Psalms 120 through 134, the fifteen pilgrimage songs sung by Israelites climbing the road up to Jerusalem for the festivals. They map worship as a long repeated climb rather than a permanent mountaintop."
+    },
+    {
+      "term": "Orientation",
+      "definition": "Brueggemann's term for the psalms of the settled, ordered life, where the world makes sense and God is reliably good, such as the wisdom and creation psalms. The starting point that lament will later disrupt."
+    },
+    {
+      "term": "Disorientation",
+      "definition": "Brueggemann's term for the psalms of the life come apart, the lament and complaint prayed when the settled world has shattered and the sunny psalms no longer fit. The pit the honest prayer passes through."
+    },
+    {
+      "term": "New orientation",
+      "definition": "Brueggemann's term for the surprised trust reached on the far side of disorientation, never merely a return to the old confidence but a deeper trust forged in the valley, such as the psalms of thanksgiving and Psalm 23."
+    },
+    {
+      "term": "Steadfast love",
+      "definition": "The English rendering of the Hebrew chesed, God's faithful covenant loving-kindness shown to a people who do not deserve it, named again and again as the ground of the psalmist's trust, especially in Psalm 103."
+    },
+    {
+      "term": "Selah",
+      "definition": "A Hebrew term scattered through the Psalms whose exact meaning is uncertain, likely a musical or liturgical direction, often taken as a pause, a place to stop and let the words land before praying on."
+    },
+    {
+      "term": "Vengeance handed to God",
+      "definition": "The move at the heart of the imprecatory psalms, where the psalmist brings his rage to God and leaves the repaying in God's hands rather than seizing it, the seed of the command to never avenge yourself but leave it to the wrath of God."
+    },
+    {
+      "term": "The prayers of Christ",
+      "definition": "Bonhoeffer's claim that the Psalms are finally prayed by Christ, who prayed them in his life and death, so that the church praying the Psalms prays with and in her Lord, even the psalms she cannot yet fully mean."
+    },
+    {
+      "term": "Praise",
+      "definition": "Not the naive cheer of people who have never suffered but, in the Psalter, the earned song reached at the end of the book, after the lament and the pit and the valley, the crescendo that hid nothing first and climbed to the hallelujah."
+    },
+    {
+      "term": "Pilgrimage",
+      "definition": "The literal festival climb up to Jerusalem that produced the Songs of Ascent, and the picture of the life of worship as a long road walked toward God, mostly ordinary and uphill, sung the whole way rather than only at the summit."
+    }
   ],
   "scriptureIndex": [
-    { "ref": "Psalm 1:1-2", "sessions": [1] },
-    { "ref": "Psalm 13:1", "sessions": [2] },
-    { "ref": "Psalm 19:14", "sessions": [1] },
-    { "ref": "Psalm 22:1", "sessions": [2, 3] },
-    { "ref": "Psalm 23:1", "sessions": [4] },
-    { "ref": "Psalm 23:4", "sessions": [4] },
-    { "ref": "Psalm 42:5", "sessions": [1, 2] },
-    { "ref": "Psalm 62:8", "sessions": [1] },
-    { "ref": "Psalm 88:1", "sessions": [2] },
-    { "ref": "Psalm 103:2", "sessions": [4] },
-    { "ref": "Psalm 121:1-2", "sessions": [5] },
-    { "ref": "Psalm 130:1-2", "sessions": [2, 5] },
-    { "ref": "Psalm 137:9", "sessions": [3] },
-    { "ref": "Psalm 139:23-24", "sessions": [3] },
-    { "ref": "Psalm 150:6", "sessions": [1, 5] },
-    { "ref": "Romans 12:19", "sessions": [3] }
+    {
+      "ref": "Psalm 1:1-2",
+      "sessions": [
+        1
+      ]
+    },
+    {
+      "ref": "Psalm 13:1",
+      "sessions": [
+        2
+      ]
+    },
+    {
+      "ref": "Psalm 19:14",
+      "sessions": [
+        1
+      ]
+    },
+    {
+      "ref": "Psalm 22:1",
+      "sessions": [
+        2,
+        3
+      ]
+    },
+    {
+      "ref": "Psalm 23:1",
+      "sessions": [
+        4
+      ]
+    },
+    {
+      "ref": "Psalm 23:4",
+      "sessions": [
+        4
+      ]
+    },
+    {
+      "ref": "Psalm 42:5",
+      "sessions": [
+        1,
+        2
+      ]
+    },
+    {
+      "ref": "Psalm 62:8",
+      "sessions": [
+        1
+      ]
+    },
+    {
+      "ref": "Psalm 88:1",
+      "sessions": [
+        2
+      ]
+    },
+    {
+      "ref": "Psalm 103:2",
+      "sessions": [
+        4
+      ]
+    },
+    {
+      "ref": "Psalm 121:1-2",
+      "sessions": [
+        5
+      ]
+    },
+    {
+      "ref": "Psalm 130:1-2",
+      "sessions": [
+        2,
+        5
+      ]
+    },
+    {
+      "ref": "Psalm 137:9",
+      "sessions": [
+        3
+      ]
+    },
+    {
+      "ref": "Psalm 139:23-24",
+      "sessions": [
+        3
+      ]
+    },
+    {
+      "ref": "Psalm 150:6",
+      "sessions": [
+        1,
+        5
+      ]
+    },
+    {
+      "ref": "Romans 12:19",
+      "sessions": [
+        3
+      ]
+    }
   ],
   "promoKit": {
     "bulletinBlurb": "Most of us were taught how to praise God and never taught what to do with the grief, the doubt, or the rage. The Psalms were. This five-session study hands back the church's own prayer book, the place God teaches his people to speak to him in the whole truth of their lives. It walks through the Psalter as the school of prayer, the lament God invites, the terrible honesty of the cursing psalms and what to do with real rage, the trust and thanksgiving earned on the far side of the valley, and the long climb of worship in the Songs of Ascent. It is honest about the dark, careful with real pain, and written from inside prayer, not above it, by a man who came to faith from atheism and had to learn to pray from scratch. Built so anyone can lead it with no prep. Come honest, not finished.",
@@ -348,5 +896,6 @@
       "We do not skip to the praise. We climb to it.",
       "The honest prayers we were afraid to pray turn out to have been prayed first, and finished, by him."
     ]
-  }
+  },
+  "kicker": "Praying the Honest Prayers"
 }

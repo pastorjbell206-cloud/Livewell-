@@ -33,20 +33,23 @@ function routeMatchers(): { regexes: RegExp[]; prefixes: string[] } {
     /* no vercel.json */
   }
 
-  // Route/redirect patterns → regex. Order matters: a catch-all segment
-  // (":path*", as Vercel writes a wildcard redirect) has to be swallowed before
-  // the single-segment ":param" rule runs, or it leaves a stray "*" behind and
-  // the RegExp constructor throws "Nothing to repeat".
-  const toRegex = (p: string) =>
-    new RegExp(
-      "^" +
-        p
-          .replace(/[.+?^${}()|[\]\\]/g, "\\$&")
-          .replace(/:[A-Za-z0-9_]+\*/g, ".*")
-          .replace(/:[A-Za-z0-9_]+/g, "[^/]+")
-          .replace(/\*/g, ".*") +
-        "/?$",
-    );
+  // Wouter route syntax → regex. Handles :params, rest params (:rest*), bare
+  // wildcards (*), and optional wildcards (/*? matches with or without the
+  // trailing segment). Tokens are swapped for placeholders before escaping so
+  // the escape pass cannot mangle them.
+  const toRegex = (p: string) => {
+    let pat = p
+      .replace(/\/\*\?/g, "\u0001")
+      .replace(/:[A-Za-z0-9_]+\*/g, "\u0002")
+      .replace(/\*/g, "\u0002")
+      .replace(/:[A-Za-z0-9_]+/g, "\u0003");
+    pat = pat.replace(/[.+?^${}()|[\]\\]/g, "\\$&");
+    pat = pat
+      .replace(/\u0001/g, "(?:/.*)?")
+      .replace(/\u0002/g, ".*")
+      .replace(/\u0003/g, "[^/]+");
+    return new RegExp("^" + pat + "/?$");
+  };
 
   return {
     regexes: [...routePaths, ...redirectSources].map(toRegex),

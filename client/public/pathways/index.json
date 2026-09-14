@@ -3,78 +3,180 @@
     "slug": "anxiety",
     "title": "Anxiety and the Peace of Christ",
     "subtitle": "A guided route through the worry that will not turn off — four essays, a study, and a book.",
-    "forWhom": "For the reader who lies awake running the same loop, and who knows the difference between the fear a doctor should hear and the fear only the Father can quiet."
+    "forWhom": "For the reader who lies awake running the same loop, and who knows the difference between the fear a doctor should hear and the fear only the Father can quiet.",
+    "steps": [
+      "what-jesus-said-about-worry-and-money",
+      "when-fear-rewrites-theology",
+      "augustine-the-restless-man",
+      "sabbath-isnt-optional",
+      "anxiety",
+      "essays-rest-and-sabbath"
+    ]
   },
   {
     "slug": "christian-nationalism",
     "title": "Faith and the Flag",
     "subtitle": "When the cross gets conscripted — four essays, a study, and a book.",
-    "forWhom": "For the reader in a church that has started to sound like a campaign, and for the one who suspects their own side is not innocent either."
+    "forWhom": "For the reader in a church that has started to sound like a campaign, and for the one who suspects their own side is not innocent either.",
+    "steps": [
+      "state-of-the-american-church",
+      "when-god-bless-america-replaces-thy-kingdom-come",
+      "the-flag-in-the-sanctuary",
+      "the-persecution-we-invented",
+      "two-kingdoms-one-pledge",
+      "christian-nationalism",
+      "the-captive-church"
+    ]
   },
   {
     "slug": "discipleship",
     "title": "Making Disciples at the Table",
     "subtitle": "Discipleship without a program — four essays, a study, and a book.",
-    "forWhom": "For the ordinary Christian with no title and no training who suspects that following Jesus was always meant to be handed on, not just attended."
+    "forWhom": "For the ordinary Christian with no title and no training who suspects that following Jesus was always meant to be handed on, not just attended.",
+    "steps": [
+      "culture-discipleship-not-attendance",
+      "the-table-that-divides",
+      "why-hearing-isnt-enough",
+      "the-machine-that-forms-you",
+      "the-basics-at-the-table",
+      "come-to-the-table"
+    ]
   },
   {
     "slug": "doubt-and-deconstruction",
     "title": "When Faith Has Questions",
     "subtitle": "For the reader taking the faith apart — four essays, a study, and a book.",
-    "forWhom": "For the Christian with real questions and the skeptic who left over them — anyone who would rather have an honest doubt than a dishonest certainty."
+    "forWhom": "For the Christian with real questions and the skeptic who left over them — anyone who would rather have an honest doubt than a dishonest certainty.",
+    "steps": [
+      "deconstruction-without-reconstruction",
+      "the-god-who-hides",
+      "suffering-without-explanation",
+      "did-the-resurrection-happen",
+      "doubt",
+      "born-again-from-atheism"
+    ]
   },
   {
     "slug": "manhood",
     "title": "Manhood, the Father Wound, and Raising Sons",
     "subtitle": "Two essays, a study, and a book — from a man raised without a father, raising five sons.",
-    "forWhom": "For the man carrying a wound he never named, and for anyone raising a boy toward a manhood the culture keeps counterfeiting."
+    "forWhom": "For the man carrying a wound he never named, and for anyone raising a boy toward a manhood the culture keeps counterfeiting.",
+    "steps": [
+      "the-father-wound-and-the-god-question",
+      "raising-sons-manhood",
+      "manhood",
+      "essays-manhood"
+    ]
   },
   {
     "slug": "marriage",
     "title": "Marriage, Past the Tips",
     "subtitle": "For a marriage that needs more than technique — four essays, a study, and a book.",
-    "forWhom": "For two people who are not in crisis and not fine either, and who suspect the slow drift is more dangerous than the loud fight."
+    "forWhom": "For two people who are not in crisis and not fine either, and who suspect the slow drift is more dangerous than the loud fight.",
+    "steps": [
+      "the-covenant-you-didnt-understand",
+      "the-slow-drift-that-ends-marriages",
+      "what-silence-costs-a-marriage",
+      "what-the-bible-says-about-submission",
+      "marriage",
+      "essays-marriage-covenant-roles"
+    ]
   },
   {
     "slug": "money",
     "title": "Money and the Heart",
     "subtitle": "What the heart does with treasure — four essays, a study, and a book.",
-    "forWhom": "For the worried and the comfortable alike — the reader who suspects their bank statement is a truer confession than their doctrine."
+    "forWhom": "For the worried and the comfortable alike — the reader who suspects their bank statement is a truer confession than their doctrine.",
+    "steps": [
+      "what-the-bible-says-about-money",
+      "what-jesus-said-about-worry-and-money",
+      "what-jubilee-means",
+      "poor-not-ministry-category",
+      "money",
+      "essays-money-stewardship"
+    ]
   },
   {
     "slug": "parenting",
     "title": "Raising Kids Who Keep the Faith",
     "subtitle": "Forming a child's heart, not just their behavior — four essays, a study, and a book.",
-    "forWhom": "For the parent less worried about raising a well-behaved child than a child whose faith survives contact with the world."
+    "forWhom": "For the parent less worried about raising a well-behaved child than a child whose faith survives contact with the world.",
+    "steps": [
+      "the-weight-of-what-you-model",
+      "raising-kids-who-think",
+      "teaching-kids-about-doubt",
+      "when-your-child-asks-a-question",
+      "the-family-table",
+      "essays-raising-kids-in-faith"
+    ]
   },
   {
     "slug": "prayer",
     "title": "Learning to Pray Again",
     "subtitle": "How do you actually pray? Four essays, a study, and a book for the reader whose prayers have gone quiet.",
-    "forWhom": "For the one who believes prayer matters and cannot remember the last time it felt like anything."
+    "forWhom": "For the one who believes prayer matters and cannot remember the last time it felt like anything.",
+    "steps": [
+      "how-do-you-actually-pray",
+      "the-only-prayer-jesus-taught",
+      "praying-the-words-when-you-have-none",
+      "when-prayer-goes-unanswered",
+      "prayer",
+      "essays-on-prayer"
+    ]
   },
   {
     "slug": "progressive-captivity",
     "title": "Faith and the Cause",
     "subtitle": "When the gospel gets recruited to a cause — five essays, a study, and a book.",
-    "forWhom": "For the reader in a church that has started to sound like a movement, and for the one honest enough to ask whether their own side has a captivity too."
+    "forWhom": "For the reader in a church that has started to sound like a movement, and for the one honest enough to ask whether their own side has a captivity too.",
+    "steps": [
+      "when-justice-becomes-a-gospel",
+      "the-sin-we-stopped-naming",
+      "conscience-outsourced-to-party",
+      "deconstruction-without-reconstruction",
+      "progressive-captivity",
+      "doubt",
+      "the-captive-church"
+    ]
   },
   {
     "slug": "rest-and-rhythm",
     "title": "Rest, Sabbath, and the Cure for Hurry",
     "subtitle": "You do not have a time problem. Three essays, a study, and a book on the rhythm the church forgot.",
-    "forWhom": "For the tired — and for the one who cannot tell the difference between tired and done."
+    "forWhom": "For the tired — and for the one who cannot tell the difference between tired and done.",
+    "steps": [
+      "sabbath-is-resistance",
+      "difference-tired-and-done",
+      "augustine-the-restless-man",
+      "sabbath",
+      "essays-rest-and-sabbath"
+    ]
   },
   {
     "slug": "suffering-and-grief",
     "title": "When the Weight Doesn't Lift",
     "subtitle": "For grief that has outlasted everyone's patience — four essays, a study, and a book.",
-    "forWhom": "For the reader carrying a loss the world expected them to be over by now, and for anyone sitting beside them with nothing to say."
+    "forWhom": "For the reader carrying a loss the world expected them to be over by now, and for anyone sitting beside them with nothing to say.",
+    "steps": [
+      "the-weight-that-stays",
+      "when-god-is-silent-and-the-room-is-empty",
+      "the-theology-of-saturday",
+      "why-hope-is-not-wishful-thinking",
+      "grief",
+      "essays-hard-questions"
+    ]
   },
   {
     "slug": "work-and-vocation",
     "title": "Work and the Weight of Monday",
     "subtitle": "Is your job just a paycheck? Three essays, a study, and a book on the work God actually sees.",
-    "forWhom": "For the reader whose Monday feels like a different world than their Sunday — and suspects it should not."
+    "forWhom": "For the reader whose Monday feels like a different world than their Sunday — and suspects it should not.",
+    "steps": [
+      "is-your-job-just-a-paycheck",
+      "the-work-nobody-watches",
+      "when-the-calling-costs-more",
+      "work-and-vocation",
+      "the-undivided-life"
+    ]
   }
 ]

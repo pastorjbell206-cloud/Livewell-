@@ -45,7 +45,7 @@ const FAQ_ITEMS = [
   },
   {
     question: "When did Christianity become the dominant Western religion?",
-    answer: "The turning point is 313 AD, when Constantine issued the Edict of Milan. Christianity went from a persecuted minority to the official religion of the Roman Empire within a generation. That marriage of church and state shaped -- and distorted -- Christianity for the next seventeen centuries."
+    answer: "The turning point is 313 AD, when Constantine issued the Edict of Milan. Within a generation Christianity went from persecuted minority to imperial favorite — and by 380, under Theodosius, to the empire's official religion. That marriage of church and state shaped — and distorted — Christianity for the next seventeen centuries."
   },
   {
     question: "What caused the Protestant Reformation?",
@@ -57,7 +57,7 @@ const FAQ_ITEMS = [
   },
   {
     question: "Is Christianity dying in the West?",
-    answer: "Cultural Christianity is dying. Whether actual Christianity is dying depends on what you mean by Christianity. If you mean the Christendom model -- state-sponsored, culturally assumed, socially rewarded -- yes, that is over. If you mean a living faith that costs something and changes the people who hold it, the story is more complicated than the headlines suggest."
+    answer: "Cultural Christianity is dying. Whether actual Christianity is dying depends on what you mean by Christianity. If you mean the Christendom model — state-sponsored, culturally assumed, socially rewarded — yes, that is over. If you mean a living faith that costs something and changes the people who hold it, the story is more complicated than the headlines suggest."
   },
 ];
 
@@ -111,7 +111,7 @@ export default function ChurchHistory() {
           You cannot understand where Christianity is going until you understand where it has been.
         </h1>
         <p style={{ fontFamily: "var(--U)", fontSize: "16px", color: "rgba(255,255,255,0.6)", marginTop: "32px", maxWidth: "560px", marginLeft: "auto", marginRight: "auto", lineHeight: 1.7 }}>
-          Two thousand years. Seventeen essays. The full story of how a movement that began with twelve people in an occupied territory became the defining force of Western civilization -- and what is happening now that it is not.
+          Two thousand years. The full story of how a movement that began with twelve people in an occupied territory became the defining force of Western civilization — and what is happening now that it is not.
         </p>
       </section>
 
@@ -217,7 +217,7 @@ export default function ChurchHistory() {
           <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "24px" }}>KEEP READING</p>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--ink)", marginBottom: "16px" }}>The full post-Christian series</h2>
           <p style={{ fontFamily: "var(--U)", fontSize: "16px", color: "var(--ink-muted, #5A5448)", lineHeight: 1.7, marginBottom: "32px", maxWidth: "52ch", marginLeft: "auto", marginRight: "auto" }}>
-            Church history is the foundation. The full series covers sixty essays across seven tiers -- from the collapse of Christendom to the questions that will define the next century of faith.
+            Church history is the foundation. The full series covers sixty essays across seven tiers — from the collapse of Christendom to the questions that will define the next century of faith.
           </p>
           <Link href="/post-christian" style={{ textDecoration: "none" }}>
             <button style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", border: "none", padding: "12px 28px", fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)", borderRadius: "3px", cursor: "pointer" }}>Explore the Full Series</button>

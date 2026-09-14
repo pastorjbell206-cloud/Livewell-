@@ -32,7 +32,7 @@ const COLLECTIONS: ArticleCollection[] = [
     title: "Pastoral Health & Wellness",
     description: "A comprehensive guide to maintaining physical, emotional, and spiritual health in ministry",
     icon: "💪",
-    price: 9.99,
+    price: 8.99,
     articles: [
       {
         id: 1,
@@ -180,7 +180,7 @@ const COLLECTIONS: ArticleCollection[] = [
     title: "Spiritual Formation & Prayer",
     description: "Deepening your interior life and prayer practice",
     icon: "",
-    price: 9.99,
+    price: 8.99,
     articles: [
       {
         id: 13,

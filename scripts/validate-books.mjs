@@ -32,6 +32,13 @@ function manuscriptChapters(slug) {
 }
 
 // 1. Every manifest book must have a manuscript with >= 1 chapter.
+// The read-online library was archived (see the books restructure). With no
+// manifest there are no "read free" promises to guard, so pass cleanly rather
+// than crash; if the library ever returns, this guard resumes automatically.
+if (!fs.existsSync(MANIFEST)) {
+  console.log("[books] no read-online manifest present (library archived) - nothing to validate.");
+  process.exit(0);
+}
 const manifest = JSON.parse(fs.readFileSync(MANIFEST, "utf8"));
 const books = Array.isArray(manifest.books) ? manifest.books : [];
 for (const b of books) {

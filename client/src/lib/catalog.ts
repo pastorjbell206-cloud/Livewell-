@@ -82,22 +82,6 @@ export const LIBRARY_SOURCES: LibrarySource[] = [
     buildHref: (slug) => `/resources/creeds/${slug}`,
     indexHref: "/resources/creeds",
   },
-  {
-    url: "/table/studies-index.json",
-    listKey: "studies",
-    label: "The Table",
-    type: "Table Study",
-    buildHref: (slug) => `/table/${slug}`,
-    indexHref: "/table",
-  },
-  {
-    url: "/books/index.json",
-    listKey: "books",
-    label: "Books",
-    type: "Book",
-    buildHref: (slug) => `/read/${slug}`,
-    indexHref: "/read",
-  },
 ];
 
 /** First value that is a non-empty string, else "". */

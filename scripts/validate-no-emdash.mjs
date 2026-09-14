@@ -22,8 +22,6 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 
 // Directories globbed recursively for *.json, plus explicit single files.
 const DIRS = [
-  "client/public/books",
-  "client/public/leadership",
   "client/public/howtos",
   "client/public/creeds",
   "client/public/studyguides",

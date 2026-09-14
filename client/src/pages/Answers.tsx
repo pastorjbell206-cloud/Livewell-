@@ -44,8 +44,8 @@ export default function Answers() {
           <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.75)", maxWidth: "60ch" }}>
             Straight answers first — two minutes each. Behind every one stands the
             full essay, and behind the essay, the book. Go as deep as you want.
-            Written by a pastor who was an atheist far longer than he has been
-            this, so the questions get taken seriously, not managed.
+            Written by a pastor who was an atheist first, so the questions get
+            taken seriously, not managed.
           </p>
         </div>
       </section>

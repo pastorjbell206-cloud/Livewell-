@@ -52,22 +52,6 @@ const NEEDS: Need[] = [
     ],
   },
   {
-    // Replaced the former "I am a leader running on empty" need, whose four
-    // links all pointed at pastor material that moved to PCN. Exhaustion was
-    // never only a pastor's problem, and /help should not lose the door.
-    id: "empty",
-    title: "I am running on empty",
-    opener: "Not a bad week. The kind of tired sleep does not touch, in a life that quietly stopped having any room in it.",
-    helps: [
-      { href: "/life/ambition-and-rest", label: "Read: why the work never feels finished, and what rest is actually for", kind: "read" },
-      { href: "/tools/life-audit", label: "Assess: where the life you are living and the life you meant to live have parted", kind: "assess" },
-      { href: "/life/rest-and-the-sabbath", label: "Read: rest as something commanded, not earned", kind: "read" },
-      { href: "/tools/rule-of-life", label: "Do: build a rule of life — ordinary practices, kept on ordinary weeks", kind: "do" },
-      { href: "/tools/emotional-health", label: "Assess: an honest read on where you actually are", kind: "assess" },
-      { href: "/tools/prayer-generator", label: "Pray: words for a week with nothing left", kind: "pray" },
-    ],
-  },
-  {
     id: "doubt",
     title: "I believe, but I am full of doubt",
     opener: "Doubt is not the opposite of faith. It is often part of a living one. You do not have to hide it here.",
@@ -111,7 +95,7 @@ const NEEDS: Need[] = [
     opener: "Welcome. Nobody expects you to know the words yet. Here is how to begin, one small step at a time, with everything explained.",
     helps: [
       { href: "/plans/new-believer", label: "Do: eight weeks of beginnings", kind: "do" },
-      { href: "/discipleship", label: "Read: the pathway from new believer to mature", kind: "read" },
+      { href: "/pathways", label: "Read: the pathway from new believer to mature", kind: "read" },
       { href: "/tools/prayer-generator", label: "Pray: how to pray when you do not know how", kind: "pray" },
       { href: "/start", label: "Assess: find your starting place", kind: "assess" },
     ],
@@ -151,6 +135,14 @@ const NEEDS: Need[] = [
     ],
   },
   {
+    id: "burnout",
+    title: "I am a leader running on empty",
+    opener: "The loneliest job in the room. If you are a pastor near the end of yourself, start here. Seeking help is faith, not failure.",
+    helps: [
+      { href: "/pastoral-burnout", label: "Read: why pastors leave, and how to stay whole", kind: "read" },
+    ],
+  },
+  {
     id: "grow",
     title: "I just want to grow, and follow well",
     opener: "Not in crisis. You want the whole of life to come under one Lord, on an ordinary Tuesday. Here is the path.",
@@ -158,7 +150,7 @@ const NEEDS: Need[] = [
       { href: "/church-history", label: "Read: the church’s long story as a place to stand", kind: "read" },
       { href: "/plans/whole-life", label: "Do: an eight-week plan toward one undivided life", kind: "do" },
       { href: "/life/assessment", label: "Assess: the Whole-Life Assessment, with a rule of life", kind: "assess" },
-      { href: "/discipleship", label: "Do: the discipleship pathway, new believer to mature", kind: "do" },
+      { href: "/pathways", label: "Do: the discipleship pathway, new believer to mature", kind: "do" },
       { href: "/life", label: "Read: the Integrated Life hub", kind: "read" },
       { href: "/start", label: "Assess: find your starting path", kind: "assess" },
     ],
@@ -183,7 +175,7 @@ export default function Help() {
         url="https://www.livewellbyjamesbell.co/help"
       />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>Start here</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5.4vw, 56px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "18px", maxWidth: "18ch" }}>

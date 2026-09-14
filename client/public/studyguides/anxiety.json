@@ -1,9 +1,8 @@
 {
   "slug": "anxiety",
-  "title": "Consider the Birds",
+  "title": "Anxiety: A Bible Study on Worry and the Peace of Christ",
   "subtitle": "A five-session study on anxiety, and the peace Christ gives instead.",
-  "summary": "This study is for small groups, adult Sunday school classes, and individuals who are tired of being told to stop worrying by people who have never lain awake at three in the morning doing the math on a life that will not balance. It walks slowly through five movements drawn from James Bell's book Consider the Birds, on what anxiety is and is not, on the birds and the lilies Jesus told us to look at, on the peace Paul describes from a prison cell, on casting the weight onto the One who actually cares, and on the rest Christ offers to people who are tired in a way sleep does not touch. It is built to be run by a busy volunteer with zero preparation. Every question carries the answer behind it, every silence has a backup, and every session ends in prayer rather than advice.\n\nThis is not a study that tells anxious people their faith would fix them if it were stronger. It will not do that, and the leader must never let it. Some anxiety is the soul reaching for the wrong refuge, and the gospel speaks to that with power. Some anxiety is a body that has stopped producing what it needs, a wiring that misfires, a grief that has not finished, and that anxiety needs a doctor and is no more a sin than a broken arm. The study holds both without flinching, and refuses to make the second sound like the first. Most of all it implicates the leader and the writer. Bell does not stand outside this. He has lain awake. He has white-knuckled a morning he had no reason to fear and called it discernment. He has preached peace on a Sunday and gripped the wheel all the way home. He writes from inside the worry. So will you."
-  ,
+  "summary": "This study is for small groups, adult Sunday school classes, and individuals who are tired of being told to stop worrying by people who have never lain awake at three in the morning doing the math on a life that will not balance. It walks slowly through five movements drawn from James Bell's book Consider the Birds, on what anxiety is and is not, on the birds and the lilies Jesus told us to look at, on the peace Paul describes from a prison cell, on casting the weight onto the One who actually cares, and on the rest Christ offers to people who are tired in a way sleep does not touch. It is built to be run by a busy volunteer with zero preparation. Every question carries the answer behind it, every silence has a backup, and every session ends in prayer rather than advice.\n\nThis is not a study that tells anxious people their faith would fix them if it were stronger. It will not do that, and the leader must never let it. Some anxiety is the soul reaching for the wrong refuge, and the gospel speaks to that with power. Some anxiety is a body that has stopped producing what it needs, a wiring that misfires, a grief that has not finished, and that anxiety needs a doctor and is no more a sin than a broken arm. The study holds both without flinching, and refuses to make the second sound like the first. Most of all it implicates the leader and the writer. Bell does not stand outside this. He has lain awake. He has white-knuckled a morning he had no reason to fear and called it discernment. He has preached peace on a Sunday and gripped the wheel all the way home. He writes from inside the worry. So will you.",
   "audience": "Small groups, adult Sunday school, and individuals",
   "sessionsLabel": "5 sessions (run as 5, 8, or 4 weeks)",
   "sessions": [
@@ -13,18 +12,55 @@
       "title": "What Anxiety Actually Is",
       "aim": "To name anxiety honestly, neither as a sin to be scolded out of people nor as a thing too delicate to touch, and to refuse both the preacher who shames the worried and the lie that a worried Christian is a faithless one.",
       "summary": "A woman told Bell after a service that she had prayed harder than anyone she knew and still could not breathe some mornings, and she wanted to know what she was doing wrong. She was not doing anything wrong. She was carrying something, and somebody had told her the carrying was unbelief. The first question is not how to stop being anxious. It is what anxiety even is. Bell takes the strong form of two answers that want to silence each other. The first says anxiety is a spiritual failure, a small faith, a refusal to trust, and it is right that Jesus does say do not be anxious, right that some of our worry is the heart trusting the wrong thing. The second says anxiety is purely medical, a chemical event, nothing to do with the soul, and it is right that a body can break in ways no prayer reaches, right that shaming a sick person is cruelty dressed as theology. Bell will not let either win cleanly. Anxiety is not always sin, which refutes the scolder, and anxiety is not always only chemistry, which refutes the reductionist. It is sometimes the soul afraid, sometimes the body failing, often both at once, and the pastoral work is to tell which without pretending you always can. Jesus does not open with a rebuke. He says look at the birds. The cure begins not with shame but with attention turned outward, toward a God who feeds what cannot sow.",
-      "keyScripture": { "ref": "Matthew 6:25", "why": "Jesus begins not with a command to feel differently but with therefore do not be anxious about your life, naming worry as a thing that fastens onto the basics of survival, food and body, and treating it as something to be addressed rather than scolded." },
-      "timing": [ { "segment": "Open", "minutes": 5 }, { "segment": "Discuss", "minutes": 35 }, { "segment": "Close", "minutes": 10 } ],
+      "keyScripture": {
+        "ref": "Matthew 6:25",
+        "why": "Jesus begins not with a command to feel differently but with therefore do not be anxious about your life, naming worry as a thing that fastens onto the basics of survival, food and body, and treating it as something to be addressed rather than scolded."
+      },
+      "timing": [
+        {
+          "segment": "Open",
+          "minutes": 5
+        },
+        {
+          "segment": "Discuss",
+          "minutes": 35
+        },
+        {
+          "segment": "Close",
+          "minutes": 10
+        }
+      ],
       "discussion": [
-        { "q": "Before tonight, what did you privately believe anxiety was, a spiritual problem, a medical one, or a character flaw you were supposed to hide?", "behind": "Surface the default before defining anything. Most people in the room carry an unexamined verdict on their own worry, and it is usually a harsh one. The point is not to settle the question yet but to expose the assumption and the shame attached to it. Land it on honesty, not consensus. Go first if the room is slow." },
-        { "q": "Jesus does not open by rebuking the anxious. He says look at the birds. Why do you think he starts with attention rather than with a command to feel differently?", "behind": "Move the room off the scolding reflex. We expect Jesus to say stop it, and instead he says look. The aim is to notice that the cure begins with the eyes turned outward, not with effort turned inward. Help them feel the mercy in the method before they feel the weight of the command." },
-        { "q": "Bell says some anxiety is the soul reaching for the wrong refuge, and some is a body that has simply broken, and that telling them apart is the hard pastoral work. Where in your own life have you confused the two?", "behind": "This is the hinge of the whole study. Do not let it become a debate about whether medication is allowed. Keep it on the personal recognition that we mislabel our own worry constantly, calling sickness sin and calling sin spirituality. The honesty here protects everyone who comes after." },
-        { "q": "Bell takes the strong form of the scolder, that Jesus does say do not be anxious and means it. What is true in that, and what does it become when it forgets the sick body?", "behind": "Protect the even-handedness from the start. Jesus does give a command, and some of our worry really is the heart trusting money or control or approval. Make sure the room does not leave thinking worry is always blameless. The error is not the command. It is the command swung as a club at a person who is ill." },
-        { "q": "Bell confesses he has white-knuckled a morning he had no reason to fear and called it discernment. Where have you dressed up your own anxiety as something more respectable?", "behind": "Move from diagnosis to self-implication. You are not hunting for confession to shame anyone. You want each person, including you the leader, inside the struggle, because the gospel reaches the worried only after the worried admits the worry. Go first." }
+        {
+          "q": "Before tonight, what did you privately believe anxiety was, a spiritual problem, a medical one, or a character flaw you were supposed to hide?",
+          "behind": "Surface the default before defining anything. Most people in the room carry an unexamined verdict on their own worry, and it is usually a harsh one. The point is not to settle the question yet but to expose the assumption and the shame attached to it. Land it on honesty, not consensus. Go first if the room is slow."
+        },
+        {
+          "q": "Jesus does not open by rebuking the anxious. He says look at the birds. Why do you think he starts with attention rather than with a command to feel differently?",
+          "behind": "Move the room off the scolding reflex. We expect Jesus to say stop it, and instead he says look. The aim is to notice that the cure begins with the eyes turned outward, not with effort turned inward. Help them feel the mercy in the method before they feel the weight of the command."
+        },
+        {
+          "q": "Bell says some anxiety is the soul reaching for the wrong refuge, and some is a body that has simply broken, and that telling them apart is the hard pastoral work. Where in your own life have you confused the two?",
+          "behind": "This is the hinge of the whole study. Do not let it become a debate about whether medication is allowed. Keep it on the personal recognition that we mislabel our own worry constantly, calling sickness sin and calling sin spirituality. The honesty here protects everyone who comes after."
+        },
+        {
+          "q": "Bell takes the strong form of the scolder, that Jesus does say do not be anxious and means it. What is true in that, and what does it become when it forgets the sick body?",
+          "behind": "Protect the even-handedness from the start. Jesus does give a command, and some of our worry really is the heart trusting money or control or approval. Make sure the room does not leave thinking worry is always blameless. The error is not the command. It is the command swung as a club at a person who is ill."
+        },
+        {
+          "q": "Bell confesses he has white-knuckled a morning he had no reason to fear and called it discernment. Where have you dressed up your own anxiety as something more respectable?",
+          "behind": "Move from diagnosis to self-implication. You are not hunting for confession to shame anyone. You want each person, including you the leader, inside the struggle, because the gospel reaches the worried only after the worried admits the worry. Go first."
+        }
       ],
       "objections": [
-        { "objection": "Anxiety is just unbelief. Jesus says do not be anxious, plainly, as a command, and if you were really trusting God you would not be falling apart. The cure is more faith, not a prescription.", "response": "Sit with the half that is true, because Bell grants it. Jesus does command it, and some of our worry is the heart clutching the wrong thing, security or control or the good opinion of people, and that worry is addressed by trust and not by anything else. Then make the distinction with care. The same Jesus who said do not be anxious wept at a tomb and sweat as it were great drops of blood in a garden. Anxiety is not always the heart sinning. Sometimes it is the body breaking, the way a diabetic's body breaks, and you would not tell a diabetic to repent of his pancreas. To aim the command do not be anxious at a person whose adrenal system is misfiring is not faith. It is cruelty, and it drives the sick away from the very Savior who would carry them." },
-        { "objection": "Anxiety is purely a medical condition, a matter of brain chemistry, and dragging God or the soul into it is exactly the kind of religious shaming that keeps people from getting help.", "response": "Grant what is right, because much of it is. A body can break in ways no amount of prayer will reset, anxiety can be as physical as a fever, and the church has done real harm telling sick people to pray harder. Get the doctor. Get the help. None of that is unbelief. Then press the other edge gently. To say anxiety is only chemistry is to claim something the data cannot, that a human being is a machine and nothing more, that the dread of death and the ache of meaning are merely misfiring neurons. Some anxiety is medical and needs medicine. Some is the soul afraid of the right things in the wrong way, and that one is not healed by chemistry, because it was never only chemical. Honor the body. Do not erase the soul." }
+        {
+          "objection": "Anxiety is just unbelief. Jesus says do not be anxious, plainly, as a command, and if you were really trusting God you would not be falling apart. The cure is more faith, not a prescription.",
+          "response": "Sit with the half that is true, because Bell grants it. Jesus does command it, and some of our worry is the heart clutching the wrong thing, security or control or the good opinion of people, and that worry is addressed by trust and not by anything else. Then make the distinction with care. The same Jesus who said do not be anxious wept at a tomb and sweat as it were great drops of blood in a garden. Anxiety is not always the heart sinning. Sometimes it is the body breaking, the way a diabetic's body breaks, and you would not tell a diabetic to repent of his pancreas. To aim the command do not be anxious at a person whose adrenal system is misfiring is not faith. It is cruelty, and it drives the sick away from the very Savior who would carry them."
+        },
+        {
+          "objection": "Anxiety is purely a medical condition, a matter of brain chemistry, and dragging God or the soul into it is exactly the kind of religious shaming that keeps people from getting help.",
+          "response": "Grant what is right, because much of it is. A body can break in ways no amount of prayer will reset, anxiety can be as physical as a fever, and the church has done real harm telling sick people to pray harder. Get the doctor. Get the help. None of that is unbelief. Then press the other edge gently. To say anxiety is only chemistry is to claim something the data cannot, that a human being is a machine and nothing more, that the dread of death and the ache of meaning are merely misfiring neurons. Some anxiety is medical and needs medicine. Some is the soul afraid of the right things in the wrong way, and that one is not healed by chemistry, because it was never only chemical. Honor the body. Do not erase the soul."
+        }
       ],
       "quietRoomQuestion": "What is the one fear you have never said out loud to anyone, the one you carry into the dark when the house is quiet?",
       "practice": "This week, the next time the worry rises, do not fight it and do not feed it. Just name it, out loud or on paper, as plainly as you can. Then ask one honest question of it. Is this my soul reaching for a refuge that is not God, or is this my body asking for help I have refused to get. Write down what it answered, and do not judge the answer.",
@@ -36,16 +72,40 @@
       ],
       "teaching": "Start where Bell starts, with a woman after a service. She told him she had prayed harder than anyone she knew and still could not breathe some mornings, and she wanted to know what she was doing wrong. She was not doing anything wrong. She was carrying something heavy, and somewhere along the way someone had told her that the carrying itself was unbelief. So we begin not with how to stop being anxious, which is where everyone wants to begin, but with the harder and more honest question. What is anxiety. Until we answer that, every cure we offer will land on the wrong wound. Take the two answers that want to silence each other, and take them at their strongest. The first says anxiety is a spiritual failure. It points to the plain words of Jesus, do not be anxious, and it concludes that worry is small faith, a refusal to trust, a sin to be repented of. And it is not entirely wrong. Jesus does say it. Some of our worry is exactly the heart clutching the wrong refuge, reaching for money or control or the good opinion of the room and panicking when the grip slips. That worry is real, and it is addressed by trust, and pretending otherwise would be its own kind of lie. The second answer says anxiety is purely medical, a chemical event in the brain, a matter of serotonin and cortisol and a body doing what bodies do, and that to bring God or the soul into it at all is the very shaming that keeps sick people from getting help. And this answer is not wrong either. A body can break. Anxiety can be as physical as a fever and as little chosen. The church has done genuine harm telling people with panic disorders to pray harder, as though the cure for a malfunctioning adrenal system were a quiet time. Now watch what happens when you refuse to let either answer win the whole field. Anxiety is not always sin, which destroys the scolder's position, because the same Jesus who said do not be anxious wept at a grave and sweat what looked like blood in a garden the night before he died. If anxiety were always unbelief, the Son of God was an unbeliever in Gethsemane, which is blasphemy. But anxiety is also not always only chemistry, which destroys the reductionist's position, because to say a human being is only a machine of neurons is a claim no microscope has ever supported, a faith statement dressed as science. The dread of death is not a misfire. It is the soul telling the truth about a world that is broken. So here is the verdict, and the leader must hold it cleanly all the way through. Anxiety is sometimes the soul afraid, sometimes the body failing, and very often both at once, tangled together so tightly that no one can fully separate them, and the pastoral work, the hard work, is to tell which without pretending you always can. Some of you in this room need to repent of a trust you have placed in something that cannot hold you. Some of you need to see a doctor and stop calling your illness a character flaw. Many of you need both, and need permission to need both. And here I have to stand inside it, because I have done the mislabeling in both directions. I have white-knuckled a morning I had no earthly reason to fear and called it discernment. I have preached peace from a pulpit on Sunday and gripped the steering wheel the whole way home. The law names the writer before the reader. Then notice how Jesus begins, because it changes everything. He does not open the most famous teaching on worry in human history with a rebuke. He does not say stop it, have more faith, what is wrong with you. He says look at the birds of the air. The cure begins with the eyes lifted, with attention turned outward and upward, toward a Father who feeds what cannot sow and clothes what cannot weave. Before he commands anything, he points. That is mercy, and it is where we will go next.",
       "scriptureStudy": [
-        { "ref": "Matthew 6:25", "note": "Therefore do not be anxious about your life, what you will eat or what you will drink. Notice the worry Jesus names is not exotic, it is the basics, food and body, survival. He is not addressing the worried as failures but as creatures fastened to the wrong center." },
-        { "ref": "Philippians 4:6", "note": "Do not be anxious about anything. Paul gives the same command, but from a prison cell, which means it is not the cheerful advice of a man whose life is easy. The command comes with a method attached, not a scolding." },
-        { "ref": "1 Peter 5:7", "note": "Casting all your anxieties on him, because he cares for you. Peter assumes the anxieties are there, real, and many. He does not say you should not have them. He tells you where to put them, which is a different thing entirely." },
-        { "ref": "Luke 22:44", "note": "And being in agony he prayed more earnestly, and his sweat became like great drops of blood. The night before the cross, the Son of God experienced something the body does under extreme distress. If anxiety were always sin, this verse could not exist." },
-        { "ref": "John 11:35", "note": "Jesus wept. He stood at the grave of a friend he was about to raise and still wept. The grief was not a failure of faith. Some of what looks like anxiety is grief that has not finished, and grief is not a sin to be repented of." },
-        { "ref": "Psalm 42:5", "note": "Why are you cast down, O my soul, and why are you in turmoil within me. The psalmist speaks to his own anxious soul honestly, naming the turmoil rather than denying it, then preaching hope back to himself. Scripture gives us language for the fear, not only against it." },
-        { "ref": "Matthew 11:28", "note": "Come to me, all who labor and are heavy laden, and I will give you rest. The invitation is addressed precisely to the burdened and the worn, not to people who have already mastered their peace. Anxiety is a qualification for coming, not a disqualification." }
+        {
+          "ref": "Matthew 6:25",
+          "note": "Therefore do not be anxious about your life, what you will eat or what you will drink. Notice the worry Jesus names is not exotic, it is the basics, food and body, survival. He is not addressing the worried as failures but as creatures fastened to the wrong center."
+        },
+        {
+          "ref": "Philippians 4:6",
+          "note": "Do not be anxious about anything. Paul gives the same command, but from a prison cell, which means it is not the cheerful advice of a man whose life is easy. The command comes with a method attached, not a scolding."
+        },
+        {
+          "ref": "1 Peter 5:7",
+          "note": "Casting all your anxieties on him, because he cares for you. Peter assumes the anxieties are there, real, and many. He does not say you should not have them. He tells you where to put them, which is a different thing entirely."
+        },
+        {
+          "ref": "Luke 22:44",
+          "note": "And being in agony he prayed more earnestly, and his sweat became like great drops of blood. The night before the cross, the Son of God experienced something the body does under extreme distress. If anxiety were always sin, this verse could not exist."
+        },
+        {
+          "ref": "John 11:35",
+          "note": "Jesus wept. He stood at the grave of a friend he was about to raise and still wept. The grief was not a failure of faith. Some of what looks like anxiety is grief that has not finished, and grief is not a sin to be repented of."
+        },
+        {
+          "ref": "Psalm 42:5",
+          "note": "Why are you cast down, O my soul, and why are you in turmoil within me. The psalmist speaks to his own anxious soul honestly, naming the turmoil rather than denying it, then preaching hope back to himself. Scripture gives us language for the fear, not only against it."
+        },
+        {
+          "ref": "Matthew 11:28",
+          "note": "Come to me, all who labor and are heavy laden, and I will give you rest. The invitation is addressed precisely to the burdened and the worn, not to people who have already mastered their peace. Anxiety is a qualification for coming, not a disqualification."
+        }
       ],
       "goingDeeper": "Press into the history the church would rather forget, because we have not always handled the anxious well, and the harm has a shape worth seeing. For long stretches the Christian tradition collapsed every disturbance of the soul into the moral category of sin, so that melancholy and what we would now call clinical depression or anxiety were treated chiefly as acedia, spiritual sloth, or as a lack of trust to be confessed. There was real insight buried in that, the recognition that the soul can be sick and not only the body, but it hardened into a cruelty that left sick people doubly burdened, ill and ashamed of being ill. Set that beside the modern correction and its overcorrection. The twentieth century, with the rise of psychiatry and the discovery of how profoundly brain chemistry shapes mood, swung hard the other way, until in much of the culture anxiety became a purely medical event with no soul attached, a problem of molecules to be solved by molecules. A serious group should weigh both swings. Read the older voices honestly, where they saw that the human person is more than a chemical machine, and weigh them against the genuine medical knowledge that has rescued countless people from suffering the old framework could not touch. The discipline this whole study requires is to refuse both reductions, to hold that a person is body and soul at once, that anxiety can be sin or sickness or grief or all three, and that the cure may be repentance, or medication, or therapy, or all of them together, without the church pretending it can always tell which from the outside.",
-      "memoryVerse": { "ref": "1 Peter 5:7", "text": "Casting all your anxieties on him, because he cares for you." }
+      "memoryVerse": {
+        "ref": "1 Peter 5:7",
+        "text": "Casting all your anxieties on him, because he cares for you."
+      }
     },
     {
       "n": 2,
@@ -53,18 +113,55 @@
       "title": "Consider the Birds, Consider the Lilies",
       "aim": "To take seriously what Jesus actually told us to do with our worry, to look, and to see in the birds and the lilies not a denial of need but a sermon on a Father who feeds and clothes what cannot provide for itself.",
       "summary": "Jesus gives the most direct instruction in Scripture for what to do with anxiety, and it is not what we expect. He does not say analyze it, suppress it, or out-argue it. He says look at something. Look at the birds. Consider the lilies. The first question is why a Savior would answer the deepest dread of the human heart by pointing at wildlife and weeds. Bell takes the strong form of the cynic's read, that this is naive, that the birds do starve and the lilies do wither, that telling a man with no money to watch sparrows is a cruelty. He grants it weight. The birds do die. Jesus is not promising no one ever goes hungry. But the cynic misses what the argument actually is. It is not the birds never struggle. It is your Father feeds them, the lesser, and you are the greater, of more value than many sparrows. The logic runs from the small to the large, from the bird God did not die for to the child he did. Anxiety, Jesus is saying, is at bottom a failure to know whose you are. It treats God as absent when he is feeding the very sparrow on your windowsill. Then the turn. Worry adds not a single hour to your life, which means it is not even useful, only corrosive, and the kingdom Jesus tells you to seek first is not one more thing to be anxious about but the only thing that finally dissolves the anxiety. Seek first the kingdom, and the rest is your Father's problem.",
-      "keyScripture": { "ref": "Matthew 6:26", "why": "Look at the birds of the air, they neither sow nor reap nor gather into barns, and yet your heavenly Father feeds them, and the argument runs from the lesser creature God provides for to the greater child he loves, naming anxiety as a failure to know whose you are." },
-      "timing": [ { "segment": "Open", "minutes": 5 }, { "segment": "Discuss", "minutes": 35 }, { "segment": "Close", "minutes": 10 } ],
+      "keyScripture": {
+        "ref": "Matthew 6:26",
+        "why": "Look at the birds of the air, they neither sow nor reap nor gather into barns, and yet your heavenly Father feeds them, and the argument runs from the lesser creature God provides for to the greater child he loves, naming anxiety as a failure to know whose you are."
+      },
+      "timing": [
+        {
+          "segment": "Open",
+          "minutes": 5
+        },
+        {
+          "segment": "Discuss",
+          "minutes": 35
+        },
+        {
+          "segment": "Close",
+          "minutes": 10
+        }
+      ],
       "discussion": [
-        { "q": "Jesus answers the deepest dread of the human heart by telling us to look at birds and flowers. What is your honest first reaction to that, and what does the reaction reveal?", "behind": "Open on the gut response before the exegesis. Many will feel it is too simple, almost dismissive, and that instinct is exactly what Bell wants to examine. The point is to surface our resistance to so plain a remedy, because the resistance often hides our refusal to believe God actually provides." },
-        { "q": "Bell takes the cynic's objection seriously, that the birds do starve and the lilies do wither, so the comfort is hollow. What is true in that, and what does it miss about the actual argument Jesus is making?", "behind": "Hold both halves. The cynic is right that Jesus is not promising no one ever goes hungry. The miss is that the argument is not the birds never struggle, it is your Father feeds them and you are worth more. Help the room hear the lesser-to-greater logic, so the comfort stops sounding like denial." },
-        { "q": "Jesus says worry cannot add a single hour to your life. Where have you treated anxiety as if it were doing something useful, as if the worrying itself were a form of working?", "behind": "This is a quiet, convicting center. Many of us secretly believe our worry is responsible, that to stop worrying would be to stop caring or to drop our guard. Press on the uselessness Jesus names. The aim is to expose the lie that anxiety is a kind of labor, when it adds nothing and costs everything." },
-        { "q": "Bell says anxiety is, at bottom, a failure to know whose you are. Does that ring true to your experience of worry, or do you want to resist it?", "behind": "Let people push back honestly, because this can sound like an oversimplification and the leader must not force it. But the aim is to feel the theological diagnosis under the symptom, that much worry is an orphan's worry, the fear of a child who has forgotten he has a Father who feeds the sparrows." },
-        { "q": "Seek first the kingdom of God, Jesus says, and all these things will be added. How would your week be different if the kingdom, and not the rest, were the thing you sought first?", "behind": "Close on the reordering, with self-implication. Bell admits he seeks the rest first and tells himself he will get to the kingdom once the rest is secured, which is exactly backwards. Invite people to name what they have been seeking first, and go first yourself. The point is reordering, not resolution." }
+        {
+          "q": "Jesus answers the deepest dread of the human heart by telling us to look at birds and flowers. What is your honest first reaction to that, and what does the reaction reveal?",
+          "behind": "Open on the gut response before the exegesis. Many will feel it is too simple, almost dismissive, and that instinct is exactly what Bell wants to examine. The point is to surface our resistance to so plain a remedy, because the resistance often hides our refusal to believe God actually provides."
+        },
+        {
+          "q": "Bell takes the cynic's objection seriously, that the birds do starve and the lilies do wither, so the comfort is hollow. What is true in that, and what does it miss about the actual argument Jesus is making?",
+          "behind": "Hold both halves. The cynic is right that Jesus is not promising no one ever goes hungry. The miss is that the argument is not the birds never struggle, it is your Father feeds them and you are worth more. Help the room hear the lesser-to-greater logic, so the comfort stops sounding like denial."
+        },
+        {
+          "q": "Jesus says worry cannot add a single hour to your life. Where have you treated anxiety as if it were doing something useful, as if the worrying itself were a form of working?",
+          "behind": "This is a quiet, convicting center. Many of us secretly believe our worry is responsible, that to stop worrying would be to stop caring or to drop our guard. Press on the uselessness Jesus names. The aim is to expose the lie that anxiety is a kind of labor, when it adds nothing and costs everything."
+        },
+        {
+          "q": "Bell says anxiety is, at bottom, a failure to know whose you are. Does that ring true to your experience of worry, or do you want to resist it?",
+          "behind": "Let people push back honestly, because this can sound like an oversimplification and the leader must not force it. But the aim is to feel the theological diagnosis under the symptom, that much worry is an orphan's worry, the fear of a child who has forgotten he has a Father who feeds the sparrows."
+        },
+        {
+          "q": "Seek first the kingdom of God, Jesus says, and all these things will be added. How would your week be different if the kingdom, and not the rest, were the thing you sought first?",
+          "behind": "Close on the reordering, with self-implication. Bell admits he seeks the rest first and tells himself he will get to the kingdom once the rest is secured, which is exactly backwards. Invite people to name what they have been seeking first, and go first yourself. The point is reordering, not resolution."
+        }
       ],
       "objections": [
-        { "objection": "This is naive comfort for people with no real problems. The birds do starve. The lilies do wither. Telling a man who cannot pay rent to go watch sparrows is an insult, not a gospel.", "response": "Bell grants the weight of this and does not win cheaply. The birds do die. Sparrows fall, and Jesus knew it, because a few verses later he says not one of them falls apart from your Father. He is not promising that no one ever goes hungry or that hardship is an illusion. Then hear what the argument actually is. It is not the birds never struggle. It is your Father feeds them, the creatures he did not make in his image, the ones he did not die for, and you are of more value than many sparrows. The logic runs from the lesser to the greater. If God attends to the bird he did not redeem, the comfort is not that you will never lack, but that you are not forgotten, not an orphan, not alone in a machine. That is not naive. That is a Father." },
-        { "objection": "If I just stop worrying and trust God to provide like the birds, am I not being irresponsible? Should I quit planning, saving, working, and wait for food to fall from the sky?", "response": "No, and Jesus is careful here, so we should be too. The birds do not sow or reap, but they do work, they hunt and build and feed their young from dawn to dusk. Jesus is not commending laziness. He is dismantling anxiety, which is a different thing from labor. You can work hard and plan well without lying awake rehearsing every disaster, because the working is your task and the outcome is your Father's. Anxiety is not the same as diligence. It is diligence that has lost its Father, labor that has forgotten it is not finally in charge. Seek first the kingdom, do your work as worship, and refuse the extra burden of carrying an outcome that was never yours to carry." }
+        {
+          "objection": "This is naive comfort for people with no real problems. The birds do starve. The lilies do wither. Telling a man who cannot pay rent to go watch sparrows is an insult, not a gospel.",
+          "response": "Bell grants the weight of this and does not win cheaply. The birds do die. Sparrows fall, and Jesus knew it, because a few verses later he says not one of them falls apart from your Father. He is not promising that no one ever goes hungry or that hardship is an illusion. Then hear what the argument actually is. It is not the birds never struggle. It is your Father feeds them, the creatures he did not make in his image, the ones he did not die for, and you are of more value than many sparrows. The logic runs from the lesser to the greater. If God attends to the bird he did not redeem, the comfort is not that you will never lack, but that you are not forgotten, not an orphan, not alone in a machine. That is not naive. That is a Father."
+        },
+        {
+          "objection": "If I just stop worrying and trust God to provide like the birds, am I not being irresponsible? Should I quit planning, saving, working, and wait for food to fall from the sky?",
+          "response": "No, and Jesus is careful here, so we should be too. The birds do not sow or reap, but they do work, they hunt and build and feed their young from dawn to dusk. Jesus is not commending laziness. He is dismantling anxiety, which is a different thing from labor. You can work hard and plan well without lying awake rehearsing every disaster, because the working is your task and the outcome is your Father's. Anxiety is not the same as diligence. It is diligence that has lost its Father, labor that has forgotten it is not finally in charge. Seek first the kingdom, do your work as worship, and refuse the extra burden of carrying an outcome that was never yours to carry."
+        }
       ],
       "quietRoomQuestion": "If you truly believed the God who feeds the sparrow on your windowsill knew your name and your need, what is the worry you would lay down first?",
       "practice": "This week, do exactly what Jesus said. Once a day, stop and look at something God is keeping alive without your help, a bird, a tree, a weed pushing through the sidewalk. Watch it long enough to mean it. Then say out loud, my Father feeds that, and I am worth more than that. Write down whether saying it changed anything, even a little.",
@@ -76,16 +173,40 @@
       ],
       "teaching": "Jesus gives the most direct instruction in all of Scripture for what to do with worry, and it is almost embarrassingly simple. He does not tell us to analyze our anxiety, to journal it, to argue it down, to white-knuckle our way past it. He tells us to look at something. Look at the birds of the air. Consider the lilies of the field. The question we have to sit with is why the Son of God would answer the deepest dread of the human heart by pointing at wildlife and weeds, because if we do not understand the method, we will dismiss it as a greeting card, and it is the opposite of a greeting card. Take the cynic's objection at full strength, because it is the honest one. The birds do starve. The lilies do wither and get thrown into the oven, which Jesus himself says in the very next breath. Telling a man who cannot make rent to go watch sparrows can sound like the cruelest kind of denial, the comfortable telling the desperate that their problem is a failure to appreciate nature. Grant it. Jesus is not promising that no one ever goes hungry. He is not saying hardship is an illusion or that the faithful are exempt from want. To pretend he is would be to make him a liar, because the world is full of faithful people who have known hunger. But now look at what the argument actually is, because the cynic has misread it. Jesus does not say the birds never struggle. He says your heavenly Father feeds them. The whole weight rests on that one phrase. The birds neither sow nor reap nor gather into barns, and yet they are fed, because there is a Father who attends to them. And then the hinge, the lesser-to-greater logic that runs through the entire passage. Are you not of more value than they. The God who feeds the sparrow he did not make in his image, the creature he did not redeem with his own blood, that same God is your Father, and you are worth more to him than many sparrows. The comfort is not that you will never lack. The comfort is that you are not an orphan. You are not alone in a cold machine of cause and effect. There is a Father, and he is attentive down to the smallest bird that falls, and not one of them falls apart from him. So what is anxiety, finally, in light of the birds. It is at bottom a failure to know whose you are. It is the worry of a child who has forgotten he has a Father, the dread of an orphan who believes the whole weight of his survival rests on his own two hands because no one is watching over him. And here Jesus drives in the verdict that should stop us cold. Which of you by being anxious can add a single hour to his span of life. Worry does not even work. It is not useful. It is not a form of responsibility or a kind of labor that keeps the disaster away. It adds nothing and subtracts plenty. We tell ourselves the worrying is the price of caring, that to stop would be to drop our guard, and Jesus calls the bluff. Your anxiety has never once added an hour. It has only stolen the ones you had. And I have to stand inside this, because I am the worst at it. I seek the rest first, the security and the plan and the cushion, and I tell myself I will get to the kingdom once those are nailed down, which is exactly the order Jesus forbids. Seek first the kingdom of God and his righteousness, he says, and all these things will be added to you. Not the rest first and the kingdom when there is time. The kingdom first, and the rest becomes your Father's problem, because it always was. The cure for the orphan's worry is not better self-talk. It is the recovery of a Father, the one who feeds the birds and clothes the lilies and knows your name and has never, not once, forgotten a single sparrow.",
       "scriptureStudy": [
-        { "ref": "Matthew 6:26", "note": "Look at the birds, your heavenly Father feeds them, are you not of more value than they. The argument is lesser to greater. The bird is fed though it cannot store, and you, the greater, have a Father, not merely a creator." },
-        { "ref": "Matthew 6:27", "note": "Which of you by being anxious can add a single hour to his span of life. Jesus names anxiety as useless, not merely sinful. It does not work, it does not lengthen life, it only corrodes the life you have." },
-        { "ref": "Matthew 6:28-29", "note": "Consider the lilies, they neither toil nor spin, yet Solomon in all his glory was not arrayed like one of these. God clothes the flower more beautifully than the richest king, attending to beauty no one will see, which tells you how attentive he is." },
-        { "ref": "Matthew 6:30", "note": "If God so clothes the grass, which is thrown into the oven, will he not much more clothe you, O you of little faith. Jesus names the little faith gently, as a diagnosis, not a condemnation, and aims the comfort straight at it." },
-        { "ref": "Matthew 6:31-32", "note": "Do not be anxious, for your heavenly Father knows that you need them all. The pagans chase these things because they have no Father to know their need. The cure for anxiety is the knowledge that you are known and provided for by a Father." },
-        { "ref": "Matthew 6:33", "note": "Seek first the kingdom of God and his righteousness, and all these things will be added to you. The reordering is the whole point. Seek the rest first and you stay anxious. Seek the kingdom first and the rest becomes the Father's concern." },
-        { "ref": "Matthew 10:29-31", "note": "Not one sparrow falls to the ground apart from your Father, and you are of more value than many sparrows. Jesus does not deny the sparrow falls. He insists the Father is present even in the falling, which is a deeper comfort than exemption." }
+        {
+          "ref": "Matthew 6:26",
+          "note": "Look at the birds, your heavenly Father feeds them, are you not of more value than they. The argument is lesser to greater. The bird is fed though it cannot store, and you, the greater, have a Father, not merely a creator."
+        },
+        {
+          "ref": "Matthew 6:27",
+          "note": "Which of you by being anxious can add a single hour to his span of life. Jesus names anxiety as useless, not merely sinful. It does not work, it does not lengthen life, it only corrodes the life you have."
+        },
+        {
+          "ref": "Matthew 6:28-29",
+          "note": "Consider the lilies, they neither toil nor spin, yet Solomon in all his glory was not arrayed like one of these. God clothes the flower more beautifully than the richest king, attending to beauty no one will see, which tells you how attentive he is."
+        },
+        {
+          "ref": "Matthew 6:30",
+          "note": "If God so clothes the grass, which is thrown into the oven, will he not much more clothe you, O you of little faith. Jesus names the little faith gently, as a diagnosis, not a condemnation, and aims the comfort straight at it."
+        },
+        {
+          "ref": "Matthew 6:31-32",
+          "note": "Do not be anxious, for your heavenly Father knows that you need them all. The pagans chase these things because they have no Father to know their need. The cure for anxiety is the knowledge that you are known and provided for by a Father."
+        },
+        {
+          "ref": "Matthew 6:33",
+          "note": "Seek first the kingdom of God and his righteousness, and all these things will be added to you. The reordering is the whole point. Seek the rest first and you stay anxious. Seek the kingdom first and the rest becomes the Father's concern."
+        },
+        {
+          "ref": "Matthew 10:29-31",
+          "note": "Not one sparrow falls to the ground apart from your Father, and you are of more value than many sparrows. Jesus does not deny the sparrow falls. He insists the Father is present even in the falling, which is a deeper comfort than exemption."
+        }
       ],
       "goingDeeper": "Take up the long Christian habit of reading the created world as a second book alongside Scripture, what the older theologians called the book of nature, because Jesus is doing something more deliberate than offering a pretty image when he points at the birds. Augustine and others spoke of creation as a text God authored to teach his creatures about himself, and the medieval tradition developed this into a whole way of seeing, in which a sparrow or a lily was not mere decoration but a sermon, a visible word about an invisible Father. Read this way, look at the birds is not Jesus changing the subject from theology to nature. It is Jesus teaching theology through nature, training the anxious eye to read providence in the ordinary. Set this beside the modern condition, in which most of us live indoors, screen-lit, and almost never look at a bird long enough to learn anything from it, and ask whether part of our anxiety is a kind of blindness, a loss of the daily evidence of a providing God that our ancestors could not avoid seeing. A serious group should weigh the danger on the other side as well, the sentimental nature-worship that turns the creation into the comfort itself rather than a pointer to the Creator, and ask how to look at the birds the way Jesus meant, through the bird to the Father, never stopping at the bird. The aim is to recover sight, the discipline of considering, which is slower and harder and more theological than glancing.",
-      "memoryVerse": { "ref": "Matthew 6:26", "text": "Look at the birds of the air: they neither sow nor reap nor gather into barns, and yet your heavenly Father feeds them. Are you not of more value than they?" }
+      "memoryVerse": {
+        "ref": "Matthew 6:26",
+        "text": "Look at the birds of the air: they neither sow nor reap nor gather into barns, and yet your heavenly Father feeds them. Are you not of more value than they?"
+      }
     },
     {
       "n": 3,
@@ -93,18 +214,55 @@
       "title": "The Peace That Guards",
       "aim": "To hear Paul's command not to be anxious as the word of a man in chains, and to receive the peace of God not as a feeling we manufacture but as a sentry posted at the gates of a heart that has handed its fears over in prayer.",
       "summary": "Paul tells the Philippians to be anxious for nothing, and the easy thing is to roll our eyes, until we remember where he wrote it. He wrote it in prison, likely chained to a guard, with a real chance of execution ahead. The first question is how a man in those conditions can command joy and forbid anxiety without being either a fool or a liar. The answer is that Paul is not describing a personality, he is describing a practice and a gift. Bell takes the strong form of the skeptic, that this is denial, a religious coping mechanism, telling yourself everything is fine until you believe it. He grants that false peace exists and that the church has often peddled it. But Paul's peace is not the absence of trouble or the suppression of feeling. It is something that comes after the fear is brought, by prayer and supplication with thanksgiving, into the presence of God. You do not manufacture it. You ask, and it is given, and it does something specific. It guards. The word is a military one, a garrison posted around the heart and the mind. Then the turn. Paul does not stop at peace. He commands the anxious mind to be filled with particular things, whatever is true, honorable, just, pure, lovely, because the anxious mind will rehearse the worst on a loop unless it is given something else to hold. Peace is not the end of the work. It is the guard at the gate while the mind is retrained to dwell on what is real.",
-      "keyScripture": { "ref": "Philippians 4:6-7", "why": "Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God, and the peace of God will guard your hearts and minds, naming peace not as a feeling we summon but as a sentry posted after the fear is handed over." },
-      "timing": [ { "segment": "Open", "minutes": 5 }, { "segment": "Discuss", "minutes": 35 }, { "segment": "Close", "minutes": 10 } ],
+      "keyScripture": {
+        "ref": "Philippians 4:6-7",
+        "why": "Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God, and the peace of God will guard your hearts and minds, naming peace not as a feeling we summon but as a sentry posted after the fear is handed over."
+      },
+      "timing": [
+        {
+          "segment": "Open",
+          "minutes": 5
+        },
+        {
+          "segment": "Discuss",
+          "minutes": 35
+        },
+        {
+          "segment": "Close",
+          "minutes": 10
+        }
+      ],
       "discussion": [
-        { "q": "Paul wrote be anxious for nothing from a prison cell with execution possibly ahead. How does knowing where he wrote it change how the command lands on you?", "behind": "Open on the context, because the context is the argument. The command sounds like cheap optimism until you know the author was in chains. The aim is to let the room feel that this peace is not the peace of a man whose life is easy, which makes it credible in a way comfortable advice never is." },
-        { "q": "Bell takes the skeptic's view seriously, that this peace is just denial, telling yourself everything is fine until you believe it. What is true in that warning, and how is Paul's peace different?", "behind": "Hold both halves. False peace is real and the church has sold it. The difference is that Paul's peace comes after the fear is brought honestly to God, not by pretending the fear away. Help the room see prayer here is not suppression but transfer, the opposite of denial." },
-        { "q": "Paul says the peace of God will guard your hearts. The word is military, a garrison. What changes when you picture peace not as a calm feeling but as a sentry standing watch over you?", "behind": "This is the image to land. We imagine peace as a mood we have to generate, and Paul describes it as a guard God posts. The aim is to move peace from something we achieve to something we receive, an active protection around a heart that could not protect itself." },
-        { "q": "Paul does not stop at peace, he tells the mind to dwell on whatever is true, honorable, lovely. Why does the anxious mind need to be given something to hold, and not just told to stop?", "behind": "Press on the retraining. The anxious mind rehearses disaster on a loop, and an empty command to stop leaves the loop running. Paul gives a replacement. Help the room see that telling yourself stop worrying fails, but redirecting the mind to something true and good actually displaces the loop." },
-        { "q": "Bell admits he has prayed his requests to God and then picked them right back up and carried them home anyway. Where do you do the same, asking God to take the weight and then refusing to let go of it?", "behind": "Close with self-implication. Many of us pray as a formality and keep gripping the fear. The aim is honest recognition that handing it over is a real act we often fake. Go first, and keep it gentle. The point is not to add guilt but to name the gap between asking and releasing." }
+        {
+          "q": "Paul wrote be anxious for nothing from a prison cell with execution possibly ahead. How does knowing where he wrote it change how the command lands on you?",
+          "behind": "Open on the context, because the context is the argument. The command sounds like cheap optimism until you know the author was in chains. The aim is to let the room feel that this peace is not the peace of a man whose life is easy, which makes it credible in a way comfortable advice never is."
+        },
+        {
+          "q": "Bell takes the skeptic's view seriously, that this peace is just denial, telling yourself everything is fine until you believe it. What is true in that warning, and how is Paul's peace different?",
+          "behind": "Hold both halves. False peace is real and the church has sold it. The difference is that Paul's peace comes after the fear is brought honestly to God, not by pretending the fear away. Help the room see prayer here is not suppression but transfer, the opposite of denial."
+        },
+        {
+          "q": "Paul says the peace of God will guard your hearts. The word is military, a garrison. What changes when you picture peace not as a calm feeling but as a sentry standing watch over you?",
+          "behind": "This is the image to land. We imagine peace as a mood we have to generate, and Paul describes it as a guard God posts. The aim is to move peace from something we achieve to something we receive, an active protection around a heart that could not protect itself."
+        },
+        {
+          "q": "Paul does not stop at peace, he tells the mind to dwell on whatever is true, honorable, lovely. Why does the anxious mind need to be given something to hold, and not just told to stop?",
+          "behind": "Press on the retraining. The anxious mind rehearses disaster on a loop, and an empty command to stop leaves the loop running. Paul gives a replacement. Help the room see that telling yourself stop worrying fails, but redirecting the mind to something true and good actually displaces the loop."
+        },
+        {
+          "q": "Bell admits he has prayed his requests to God and then picked them right back up and carried them home anyway. Where do you do the same, asking God to take the weight and then refusing to let go of it?",
+          "behind": "Close with self-implication. Many of us pray as a formality and keep gripping the fear. The aim is honest recognition that handing it over is a real act we often fake. Go first, and keep it gentle. The point is not to add guilt but to name the gap between asking and releasing."
+        }
       ],
       "objections": [
-        { "objection": "This peace is just denial, a religious coping mechanism. You tell yourself everything is fine, you slap a Bible verse on the fear, and you suppress it until you believe your own act. That is not peace, it is repression.", "response": "Bell grants that this kind of false peace is everywhere, including in the church, and that it does real damage. There is a fake serenity that is just suppression in a Christian costume. Then mark the difference precisely. Paul's peace does not come from pretending the fear away. It comes after the fear is dragged into the open, by prayer and supplication, with the requests made known to God in detail. That is the opposite of denial. Denial refuses to look at the fear. Paul insists you look at it, name it, and hand it over. The peace is not you talking yourself out of the truth. It is God posting a guard once you have stopped carrying what was never yours to carry alone." },
-        { "objection": "I have prayed and prayed about my anxiety and the peace never came. So either the promise is false or there is something wrong with me, and both of those make it worse.", "response": "Treat this gently, because it is the most painful objection in the room and the leader must not answer it glibly. First, the promise is not a vending machine, and the peace that guards is not always a felt calm, sometimes it is a strength to keep standing when you feel nothing. Second, and say this plainly, if you have prayed faithfully for a long time and the dread does not lift, that can be a sign your body needs help your prayers were never meant to replace, and seeing a doctor is not a failure of this verse. Paul prayed three times for his thorn and it stayed. The peace he received was not the removal of the trouble but grace sufficient inside it, and sometimes that grace comes wearing the face of a physician." }
+        {
+          "objection": "This peace is just denial, a religious coping mechanism. You tell yourself everything is fine, you slap a Bible verse on the fear, and you suppress it until you believe your own act. That is not peace, it is repression.",
+          "response": "Bell grants that this kind of false peace is everywhere, including in the church, and that it does real damage. There is a fake serenity that is just suppression in a Christian costume. Then mark the difference precisely. Paul's peace does not come from pretending the fear away. It comes after the fear is dragged into the open, by prayer and supplication, with the requests made known to God in detail. That is the opposite of denial. Denial refuses to look at the fear. Paul insists you look at it, name it, and hand it over. The peace is not you talking yourself out of the truth. It is God posting a guard once you have stopped carrying what was never yours to carry alone."
+        },
+        {
+          "objection": "I have prayed and prayed about my anxiety and the peace never came. So either the promise is false or there is something wrong with me, and both of those make it worse.",
+          "response": "Treat this gently, because it is the most painful objection in the room and the leader must not answer it glibly. First, the promise is not a vending machine, and the peace that guards is not always a felt calm, sometimes it is a strength to keep standing when you feel nothing. Second, and say this plainly, if you have prayed faithfully for a long time and the dread does not lift, that can be a sign your body needs help your prayers were never meant to replace, and seeing a doctor is not a failure of this verse. Paul prayed three times for his thorn and it stayed. The peace he received was not the removal of the trouble but grace sufficient inside it, and sometimes that grace comes wearing the face of a physician."
+        }
       ],
       "quietRoomQuestion": "What is the fear you have prayed about but never actually handed over, the one you keep asking God to take and then quietly take back?",
       "practice": "This week, take one specific worry and do the full thing Paul describes, in order. Name it to God in detail, ask him plainly for what you want, and add one honest thanksgiving even if you have to reach for it. Then, when the worry comes back, instead of arguing with it, deliberately turn your mind to one true and good thing and hold it there. Write down what happens over the week, including the days it does not seem to work.",
@@ -116,16 +274,40 @@
       ],
       "teaching": "Paul tells the Philippians to be anxious for nothing, and the modern reflex is to roll our eyes, because be anxious for nothing sounds exactly like the useless advice people give who have never actually been afraid. Then you remember where he wrote it. Paul wrote these words from prison, very likely chained to a Roman guard, with a real and serious chance that the next official decision about his life would be an execution order. This is not the peace of a man on vacation. This is a man in chains telling free people not to be anworried, and that fact alone should make us stop and listen, because either he is a fool, or a liar, or he knows something about peace that has nothing to do with how comfortable your circumstances are. Take the skeptic's objection first, because it is fair and the church has earned it. The skeptic says this peace is just denial, a religious coping mechanism, the practice of telling yourself everything is fine and slapping a verse over the wound until you half believe your own performance. And there is a version of Christian peace that is exactly that, a fake serenity, suppression in a Sunday outfit, and it does real harm, because it teaches people to bury their fear instead of facing it and then wonders why they break. Grant the warning fully. False peace is a real thing. But Paul's peace is the opposite of denial, and you can see it in the order of his sentence. He does not say stop feeling afraid. He says, in everything by prayer and supplication with thanksgiving, let your requests be made known to God. Notice what that requires. It requires you to look the fear full in the face, to name it specifically, to bring the actual request, the real dread, into the presence of God and lay it down there. Denial refuses to look. Paul insists you look, and then hand over what you have seen. That is not suppression. That is transfer. And then the promise, and it is precise. The peace of God, which surpasses all understanding, will guard your hearts and your minds in Christ Jesus. Two things to see here. First, this peace surpasses understanding, which means it does not come from figuring the problem out. It is not the relief of having solved the thing. It can arrive while the thing is still completely unsolved, which is the only kind of peace any use to a man in a cell. Second, and do not miss this, it guards. The word Paul chooses is a military word, the word for a garrison standing watch over a city. Peace is not pictured here as a feeling you generate by trying hard to feel calm. It is pictured as a sentry God posts at the gates of your heart and mind, a protection placed around you that you could not have placed there yourself. You do not manufacture this peace. You ask, and it is stationed. But Paul does not stop at peace, and this is the part we skip. He immediately tells the anxious mind what to do with itself. Whatever is true, whatever is honorable, whatever is just, pure, lovely, commendable, think about these things. He knows something about the anxious mind that we know from the inside. It will not sit still. Left alone, it rehearses the worst on an endless loop, running the disaster again and again. And you cannot defeat that loop by simply commanding it to stop, because a mind told only to stop is a mind left staring at the very thing it is trying not to see. So Paul does not say stop. He says replace. Fill the mind with what is true and good and real, deliberately, repeatedly, until the loop of catastrophe is crowded out by something worth dwelling on. And I have to confess where I fail at all of this, because I do the praying and then I undo it on the drive home. I make my requests known to God, sincerely, and then I pick the whole weight right back up off the altar and carry it out to the car, gripping it the entire way, as though God might not have heard, as though it were safer in my hands than in his. The peace that guards is for the one who actually leaves the request where he laid it. So bring the fear, all the way, named and honest. Lay it down and do not take it back. Let God post the guard. And then give your restless mind something true to hold, because peace is not the end of the work. It is the watchman at the gate while the mind is slowly, patiently, retrained.",
       "scriptureStudy": [
-        { "ref": "Philippians 4:4", "note": "Rejoice in the Lord always, again I will say, rejoice. Paul commands joy from prison, which tells you this rejoicing is not a mood dependent on circumstance but a settled orientation toward the Lord who does not change." },
-        { "ref": "Philippians 4:5", "note": "Let your reasonableness be known to everyone. The Lord is at hand. Before the command about anxiety comes the reminder that the Lord is near, which is the ground of all of it. Peace follows from the nearness of God, not from the absence of trouble." },
-        { "ref": "Philippians 4:6", "note": "Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God. The cure is not suppression but transfer, the fear named in detail and handed over, with thanksgiving that refuses to let dread have the last word." },
-        { "ref": "Philippians 4:7", "note": "And the peace of God, which surpasses all understanding, will guard your hearts and your minds. The peace exceeds comprehension, so it does not depend on solving the problem, and it guards, a military word, a garrison God posts that you could not station yourself." },
-        { "ref": "Philippians 4:8", "note": "Whatever is true, honorable, just, pure, lovely, think about these things. Paul retrains the anxious mind by replacement, not by mere prohibition, because a mind told only to stop keeps staring at the very fear it flees." },
-        { "ref": "Philippians 4:11-13", "note": "I have learned in whatever situation I am to be content, I can do all things through him who strengthens me. Contentment is learned, not native, and the strength is borrowed, not summoned. Even Paul had to be taught this peace over time." },
-        { "ref": "2 Corinthians 12:8-9", "note": "Three times I pleaded with the Lord about this thorn, and he said my grace is sufficient for you. Sometimes the answer is not the removal of the trouble but grace sufficient inside it, which guards prayers that seem unanswered from being read as failure." }
+        {
+          "ref": "Philippians 4:4",
+          "note": "Rejoice in the Lord always, again I will say, rejoice. Paul commands joy from prison, which tells you this rejoicing is not a mood dependent on circumstance but a settled orientation toward the Lord who does not change."
+        },
+        {
+          "ref": "Philippians 4:5",
+          "note": "Let your reasonableness be known to everyone. The Lord is at hand. Before the command about anxiety comes the reminder that the Lord is near, which is the ground of all of it. Peace follows from the nearness of God, not from the absence of trouble."
+        },
+        {
+          "ref": "Philippians 4:6",
+          "note": "Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God. The cure is not suppression but transfer, the fear named in detail and handed over, with thanksgiving that refuses to let dread have the last word."
+        },
+        {
+          "ref": "Philippians 4:7",
+          "note": "And the peace of God, which surpasses all understanding, will guard your hearts and your minds. The peace exceeds comprehension, so it does not depend on solving the problem, and it guards, a military word, a garrison God posts that you could not station yourself."
+        },
+        {
+          "ref": "Philippians 4:8",
+          "note": "Whatever is true, honorable, just, pure, lovely, think about these things. Paul retrains the anxious mind by replacement, not by mere prohibition, because a mind told only to stop keeps staring at the very fear it flees."
+        },
+        {
+          "ref": "Philippians 4:11-13",
+          "note": "I have learned in whatever situation I am to be content, I can do all things through him who strengthens me. Contentment is learned, not native, and the strength is borrowed, not summoned. Even Paul had to be taught this peace over time."
+        },
+        {
+          "ref": "2 Corinthians 12:8-9",
+          "note": "Three times I pleaded with the Lord about this thorn, and he said my grace is sufficient for you. Sometimes the answer is not the removal of the trouble but grace sufficient inside it, which guards prayers that seem unanswered from being read as failure."
+        }
       ],
       "goingDeeper": "Take up the older spiritual writers on the difference between consolation and the bare act of faith, because Paul's peace that surpasses understanding has often been misread as a guaranteed feeling, and the misreading wounds people. The tradition long distinguished between the felt sweetness of God's presence, which comes and goes and is never under our control, and the underlying reality of being held by God, which does not depend on the feeling at all. The desert and monastic writers spoke honestly of long stretches of dryness, of dark nights, in which the felt peace vanished while the actual standing before God remained, and they refused to treat the absence of the feeling as the absence of the gift. Set this beside the modern assumption, fed by a culture of instant emotional results, that if a promise is true the feeling should follow immediately and reliably, and ask what damage that assumption does to a believer who has prayed faithfully and still lies awake. A serious group should hold this carefully, because here the spiritual and the medical meet. The peace that guards may be a deep settledness underneath an unsettled body, and a believer can possess the gift while a brain chemistry problem keeps the felt calm out of reach. The discipline is to honor both, to seek the peace God promises through prayer and the retraining of the mind, and at the same time to take seriously that a persistent, crushing dread that prayer does not touch may be a physical condition that needs a physician, and that getting that help is not a failure of Philippians 4 but an obedience to the God who made the body.",
-      "memoryVerse": { "ref": "Philippians 4:6-7", "text": "Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God. And the peace of God, which surpasses all understanding, will guard your hearts and your minds in Christ Jesus." }
+      "memoryVerse": {
+        "ref": "Philippians 4:6-7",
+        "text": "Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God. And the peace of God, which surpasses all understanding, will guard your hearts and your minds in Christ Jesus."
+      }
     },
     {
       "n": 4,
@@ -133,18 +315,55 @@
       "title": "Cast It On Him",
       "aim": "To take Peter's command to cast our anxieties on God as a real transfer of weight and not a figure of speech, and to anchor it where Peter does, in the simple, staggering reason that he cares for you.",
       "summary": "Peter gives the most physical command in Scripture about worry. Cast all your anxieties on him. The word cast means to throw, to hurl, to fling something off yourself and onto something else, the way you would heave a heavy pack off your shoulders. The first question is whether such a transfer is even possible, whether you can actually move the weight of a fear from your own back onto God's, or whether this is just a comforting metaphor. Bell takes the strong form of the doubt, that you cannot transfer a feeling by deciding to, that telling an anxious person to cast their care on God is like telling them to stop having the feeling, which never works. He grants the difficulty. You cannot simply will a fear away. But Peter does not say feel differently. He says throw, an action, and he ties it to two things that make it possible. First, humble yourselves under the mighty hand of God, because anxiety is often pride, the refusal to admit you are not in control of what you have been losing sleep trying to control. Casting the care requires admitting it was never yours to carry. Second, and this is the whole foundation, because he cares for you. Then the turn. Peter does not promise the casting makes the lions disappear. The very next verse is about a roaring lion seeking someone to devour, and the call is to be sober and watchful. The weight comes off not because the danger is gone but because Someone stronger is carrying it now, Someone who is not too busy or too distant or too great to care about the specific fear keeping you awake tonight.",
-      "keyScripture": { "ref": "1 Peter 5:6-7", "why": "Humble yourselves therefore under the mighty hand of God, casting all your anxieties on him, because he cares for you, joining the act of throwing the weight to the humility that admits it was never ours to carry and to the staggering reason that God actually cares." },
-      "timing": [ { "segment": "Open", "minutes": 5 }, { "segment": "Discuss", "minutes": 35 }, { "segment": "Close", "minutes": 10 } ],
+      "keyScripture": {
+        "ref": "1 Peter 5:6-7",
+        "why": "Humble yourselves therefore under the mighty hand of God, casting all your anxieties on him, because he cares for you, joining the act of throwing the weight to the humility that admits it was never ours to carry and to the staggering reason that God actually cares."
+      },
+      "timing": [
+        {
+          "segment": "Open",
+          "minutes": 5
+        },
+        {
+          "segment": "Discuss",
+          "minutes": 35
+        },
+        {
+          "segment": "Close",
+          "minutes": 10
+        }
+      ],
       "discussion": [
-        { "q": "Peter says cast, which means throw or hurl, a violent physical word. What does it change to picture handing your worry to God as throwing a heavy pack off your back rather than as quietly praying about it?", "behind": "Open on the physicality of the word. We tend to make casting gentle and vague, and Peter made it forceful and concrete. The aim is to feel that this is an act of the will, a deliberate heaving-off, not a soft wish, so people stop expecting it to feel like nothing." },
-        { "q": "Bell connects anxiety to pride, the refusal to admit you are not in control. Where in your worry can you find the hidden assumption that the outcome was yours to manage in the first place?", "behind": "This is a sharp, convicting question, so handle it with care, because not all anxiety is pride and you must say so. But much of it is the soul refusing to be a creature. Help the room find the place where the worry assumes a control they never had, gently, without implying the sick are merely proud." },
-        { "q": "Peter grounds the whole command in four words, because he cares for you. Which part of that is hardest for you to believe, that he cares, or that he cares for you specifically?", "behind": "This is the heart. Many believe God cares in general and doubt he cares about their particular fear. Press on the for you. The aim is to expose the practical orphan-belief underneath the worry, that God is real but distracted, present but not paying attention to me." },
-        { "q": "The verse right after this is about a roaring lion. Peter does not promise casting your care makes the danger vanish. Why does it matter that the weight comes off even though the lion is still there?", "behind": "Land the realism. Peter is not promising a problem-free life. The relief is not that the danger is gone but that Someone stronger now carries it. Help the room see this is more honest, and finally more comforting, than a promise that the troubles will disappear." },
-        { "q": "Bell confesses he casts his cares on God and then crawls back under the pack and picks it up again. Where do you take the weight back after you have handed it over, and why do you think you do?", "behind": "Close with self-implication. The casting is not once for all, it is a discipline we repeat because we keep retrieving the burden. Invite honest recognition of the retrieving, and go first. The point is not guilt but the ordinary, repeated work of casting again." }
+        {
+          "q": "Peter says cast, which means throw or hurl, a violent physical word. What does it change to picture handing your worry to God as throwing a heavy pack off your back rather than as quietly praying about it?",
+          "behind": "Open on the physicality of the word. We tend to make casting gentle and vague, and Peter made it forceful and concrete. The aim is to feel that this is an act of the will, a deliberate heaving-off, not a soft wish, so people stop expecting it to feel like nothing."
+        },
+        {
+          "q": "Bell connects anxiety to pride, the refusal to admit you are not in control. Where in your worry can you find the hidden assumption that the outcome was yours to manage in the first place?",
+          "behind": "This is a sharp, convicting question, so handle it with care, because not all anxiety is pride and you must say so. But much of it is the soul refusing to be a creature. Help the room find the place where the worry assumes a control they never had, gently, without implying the sick are merely proud."
+        },
+        {
+          "q": "Peter grounds the whole command in four words, because he cares for you. Which part of that is hardest for you to believe, that he cares, or that he cares for you specifically?",
+          "behind": "This is the heart. Many believe God cares in general and doubt he cares about their particular fear. Press on the for you. The aim is to expose the practical orphan-belief underneath the worry, that God is real but distracted, present but not paying attention to me."
+        },
+        {
+          "q": "The verse right after this is about a roaring lion. Peter does not promise casting your care makes the danger vanish. Why does it matter that the weight comes off even though the lion is still there?",
+          "behind": "Land the realism. Peter is not promising a problem-free life. The relief is not that the danger is gone but that Someone stronger now carries it. Help the room see this is more honest, and finally more comforting, than a promise that the troubles will disappear."
+        },
+        {
+          "q": "Bell confesses he casts his cares on God and then crawls back under the pack and picks it up again. Where do you take the weight back after you have handed it over, and why do you think you do?",
+          "behind": "Close with self-implication. The casting is not once for all, it is a discipline we repeat because we keep retrieving the burden. Invite honest recognition of the retrieving, and go first. The point is not guilt but the ordinary, repeated work of casting again."
+        }
       ],
       "objections": [
-        { "objection": "You cannot just transfer a feeling by deciding to. Telling an anxious person to cast their care on God is like telling them to stop being anxious. If I could throw the feeling off by choosing to, I would have done it already.", "response": "Bell grants the real difficulty here. You cannot will a feeling out of existence, and a command that amounts to just stop feeling it is useless and a little cruel. But Peter does not say feel differently. He says cast, an action, and he attaches it to humility, to the deliberate admission that the outcome was never in your hands. The casting is not a feeling you summon, it is a thing you do, often before the feeling changes and sometimes without the feeling changing at all. You bring the fear to God, you name it, you consciously hand over the control you never actually had, and you do it again the next hour when you find you have taken it back. The relief may follow or it may lag, but the casting is an act of trust, not a mood you have to produce." },
-        { "objection": "If I just cast all my anxiety on God, am I not abandoning my responsibilities? Some of my worry is about real things I am supposed to be handling. Casting it sounds like dropping the ball and calling it faith.", "response": "Notice what Peter ties the casting to, sobriety and watchfulness, because the very next line says be sober-minded, be watchful, your adversary the devil prowls like a roaring lion. Peter is not telling you to go to sleep at the wheel. Casting your anxiety is not the same as casting off your duty. You can carry your responsibilities, the real tasks that are genuinely yours, while refusing to carry the outcome, which was never yours. Anxiety is not responsibility. It is responsibility plus the crushing weight of an outcome you were never strong enough to guarantee and were never asked to. Carry the task that is yours. Hand God the result that was always his, and stay awake while you do it." }
+        {
+          "objection": "You cannot just transfer a feeling by deciding to. Telling an anxious person to cast their care on God is like telling them to stop being anxious. If I could throw the feeling off by choosing to, I would have done it already.",
+          "response": "Bell grants the real difficulty here. You cannot will a feeling out of existence, and a command that amounts to just stop feeling it is useless and a little cruel. But Peter does not say feel differently. He says cast, an action, and he attaches it to humility, to the deliberate admission that the outcome was never in your hands. The casting is not a feeling you summon, it is a thing you do, often before the feeling changes and sometimes without the feeling changing at all. You bring the fear to God, you name it, you consciously hand over the control you never actually had, and you do it again the next hour when you find you have taken it back. The relief may follow or it may lag, but the casting is an act of trust, not a mood you have to produce."
+        },
+        {
+          "objection": "If I just cast all my anxiety on God, am I not abandoning my responsibilities? Some of my worry is about real things I am supposed to be handling. Casting it sounds like dropping the ball and calling it faith.",
+          "response": "Notice what Peter ties the casting to, sobriety and watchfulness, because the very next line says be sober-minded, be watchful, your adversary the devil prowls like a roaring lion. Peter is not telling you to go to sleep at the wheel. Casting your anxiety is not the same as casting off your duty. You can carry your responsibilities, the real tasks that are genuinely yours, while refusing to carry the outcome, which was never yours. Anxiety is not responsibility. It is responsibility plus the crushing weight of an outcome you were never strong enough to guarantee and were never asked to. Carry the task that is yours. Hand God the result that was always his, and stay awake while you do it."
+        }
       ],
       "quietRoomQuestion": "If you believed, all the way down, that God cares about the specific thing keeping you awake, what would you throw onto him tonight?",
       "practice": "This week, make the casting physical, because Peter made it physical. Write your heaviest worry on a piece of paper, hold it, feel its weight in your hand, and then pray it over to God out loud and put it somewhere you have to leave it, a Bible, a box, a drawer. When you catch yourself reaching to pick it back up, say out loud, that one is his now, because he cares for me. Write down how many times in the week you had to cast the same thing again.",
@@ -156,16 +375,40 @@
       ],
       "teaching": "Peter gives us the most physical, the most bodily, command in all of Scripture about worry, and we have softened it into a sentiment. Cast all your anxieties on him. The word translated cast is not gentle. It means to throw, to hurl, to fling something off yourself with force, the same word used when the disciples threw their cloaks onto the colt for Jesus to ride. It is the motion of a man heaving a crushing pack off his shoulders and onto something that can bear it. So the first honest question is whether such a transfer is even possible. Can you actually move the weight of a fear off your own back and onto God, or is this just a lovely metaphor that falls apart the moment you are lying awake at three in the morning. Take the doubt at full strength, because it is the right one. You cannot transfer a feeling by deciding to. If you could simply choose to stop feeling the dread, you would have chosen it a long time ago. Telling an anxious person to cast their care on God can sound exactly like telling them to stop being anxious, which is the most useless sentence in the world, the verbal equivalent of telling someone in pain to stop hurting. Grant the difficulty completely. The feeling does not obey a command. But look closely at what Peter actually says, because he does not say feel differently. He says cast, which is not a feeling but an action, a thing you do with your will whether or not the feeling has caught up yet. And he frames it with two things that make the action possible. The first comes in the verse before. Humble yourselves, therefore, under the mighty hand of God. Peter knows something uncomfortable about anxiety, which is that a great deal of it is pride. Not all of it, and the leader must say so, because some anxiety is a sick body and has nothing to do with pride. But much of our worry is the refusal to admit that the thing we are losing sleep over was never under our control in the first place. We lie awake managing an outcome we have no actual power to guarantee, and the lying awake is a kind of arrogance, the creature insisting on doing the Creator's job. To cast the care, you first have to humble yourself enough to admit it was never yours to carry. The throwing requires the humbling. And the second thing, the foundation under all of it, is four words that should stop us every time. Because he cares for you. That is the whole reason the casting works. Not because the fear is small, not because the danger is fake, but because the One you are throwing it to actually cares, and is strong enough to hold it. And here is where most of us quietly break down, if we are honest. We can believe God cares in general, that he is loving in some cosmic, distant way. What we cannot quite believe is that he cares for me, for this specific fear, the one that is not noble or theological but small and embarrassing and mine. We live as practical orphans, believing in a Father who is real but too busy, present but not actually paying attention to us. Peter aims straight at that. He cares for you. Then comes the part we never quote, and it changes everything. The very next verse is not a promise that the danger goes away. It is, be sober-minded, be watchful, your adversary the devil prowls around like a roaring lion. Peter does not say cast your care on God and the lion disappears. The lion is still there. The casting does not make you safe in the sense of trouble-free. What it does is take the weight off your back even while the danger remains, because the weight is now on Someone strong enough to bear both you and the lion. That is more honest than the false promise that faith makes your troubles vanish, and in the end it is more comforting, because it does not require you to pretend the danger is not real. And I have to tell you that I am terrible at this, that my own casting has a short half-life. I throw the pack onto God, I feel the relief for an hour, and then out of sheer habit I crawl back under it and pick it up again, as if it were safer on my back than in his hands. So the casting is not a thing you do once. It is a thing you do again, and again, every time you find you have retrieved the burden, humbling yourself again, throwing it again, reminding yourself again that he cares for you. Carry the task that is actually yours. Stay awake and watchful. And the outcome, the weight, the thing too heavy to hold, throw that, hard, onto the One whose hand is mighty and who has never once been too busy to care about you.",
       "scriptureStudy": [
-        { "ref": "1 Peter 5:6", "note": "Humble yourselves under the mighty hand of God so that at the proper time he may exalt you. The humbling comes first, because anxiety is often the proud refusal to be a creature, and the hand under which you humble yourself is mighty, strong enough to hold what crushes you." },
-        { "ref": "1 Peter 5:7", "note": "Casting all your anxieties on him, because he cares for you. The word cast means to hurl, an act of the will, and the reason is not the smallness of the fear but the bigness of his care, for you, specifically, by name." },
-        { "ref": "1 Peter 5:8", "note": "Be sober-minded, be watchful, your adversary the devil prowls like a roaring lion. The verse right after casting proves Peter is not promising a danger-free life. The weight comes off, but you stay awake, because the lion is real." },
-        { "ref": "Psalm 55:22", "note": "Cast your burden on the Lord, and he will sustain you, he will never permit the righteous to be moved. Peter is quoting Israel's older song. The promise is not that the burden vanishes but that the One who takes it will sustain you under it." },
-        { "ref": "Matthew 11:30", "note": "For my yoke is easy and my burden is light. The burden does not disappear, it is exchanged, the crushing weight of self-sufficiency traded for the light yoke of a Lord who pulls beside you." },
-        { "ref": "Psalm 56:3", "note": "When I am afraid, I put my trust in you. The psalmist does not claim he never fears, he names the fear and acts on it, putting his trust in God in the very moment of being afraid, which is exactly what casting looks like from the inside." },
-        { "ref": "John 14:27", "note": "Peace I leave with you, my peace I give to you, not as the world gives. Jesus gives a peace the world cannot manufacture and cannot take, the settled gift that makes the casting more than wishful thinking." }
+        {
+          "ref": "1 Peter 5:6",
+          "note": "Humble yourselves under the mighty hand of God so that at the proper time he may exalt you. The humbling comes first, because anxiety is often the proud refusal to be a creature, and the hand under which you humble yourself is mighty, strong enough to hold what crushes you."
+        },
+        {
+          "ref": "1 Peter 5:7",
+          "note": "Casting all your anxieties on him, because he cares for you. The word cast means to hurl, an act of the will, and the reason is not the smallness of the fear but the bigness of his care, for you, specifically, by name."
+        },
+        {
+          "ref": "1 Peter 5:8",
+          "note": "Be sober-minded, be watchful, your adversary the devil prowls like a roaring lion. The verse right after casting proves Peter is not promising a danger-free life. The weight comes off, but you stay awake, because the lion is real."
+        },
+        {
+          "ref": "Psalm 55:22",
+          "note": "Cast your burden on the Lord, and he will sustain you, he will never permit the righteous to be moved. Peter is quoting Israel's older song. The promise is not that the burden vanishes but that the One who takes it will sustain you under it."
+        },
+        {
+          "ref": "Matthew 11:30",
+          "note": "For my yoke is easy and my burden is light. The burden does not disappear, it is exchanged, the crushing weight of self-sufficiency traded for the light yoke of a Lord who pulls beside you."
+        },
+        {
+          "ref": "Psalm 56:3",
+          "note": "When I am afraid, I put my trust in you. The psalmist does not claim he never fears, he names the fear and acts on it, putting his trust in God in the very moment of being afraid, which is exactly what casting looks like from the inside."
+        },
+        {
+          "ref": "John 14:27",
+          "note": "Peace I leave with you, my peace I give to you, not as the world gives. Jesus gives a peace the world cannot manufacture and cannot take, the settled gift that makes the casting more than wishful thinking."
+        }
       ],
       "goingDeeper": "Take up the theology of providence, the doctrine that God not only made the world but actively upholds and governs it down to its smallest detail, because casting your anxieties on God means nothing unless the God you are throwing them to is actually running things. The older confessions spoke of God's care extending to the falling of a sparrow and the numbering of the hairs of your head, an attentiveness so total that nothing reaches you that has not passed through his hand first. Set this beside the deistic drift of the modern imagination, in which God, if he exists, is pictured as having wound up the universe and stepped back, present at the start but absent from the details, which produces exactly the practical orphanhood that fuels so much anxiety. A serious group should weigh how the doctrine of meticulous providence comforts and where it raises hard questions, because if God governs all things, then the believer's suffering is somehow within his care, which is both the deepest comfort available and a doctrine that must be handled with enormous tenderness around real pain. Do not let it curdle into the cruelty of telling a suffering person their agony is God's tidy plan. Hold instead the harder and truer thing, that God is sovereign and good and present in the suffering, that the same providence that numbers the sparrows wept at Lazarus's tomb, and that casting your care on such a God is not throwing it into the void but handing it to a Father who is already holding everything, including you.",
-      "memoryVerse": { "ref": "1 Peter 5:6-7", "text": "Humble yourselves, therefore, under the mighty hand of God so that at the proper time he may exalt you, casting all your anxieties on him, because he cares for you." }
+      "memoryVerse": {
+        "ref": "1 Peter 5:6-7",
+        "text": "Humble yourselves, therefore, under the mighty hand of God so that at the proper time he may exalt you, casting all your anxieties on him, because he cares for you."
+      }
     },
     {
       "n": 5,
@@ -173,18 +416,55 @@
       "title": "Come to Me, and Rest",
       "aim": "To bring the whole study to the invitation underneath all the others, that Christ does not finally offer a technique for managing anxiety but offers himself, and rest for the weary in a yoke shared with him.",
       "summary": "Every other approach to anxiety ends with something for you to do. Pray more, think differently, cast your care, look at the birds. All of it is true and given by God, and none of it is the bottom. The bottom is a person, and an invitation. Come to me, all who labor and are heavy laden, and I will give you rest. The first question is what kind of tired Jesus is talking to, because he names a specific exhaustion, the labor and the heavy load, the bone-weariness of carrying what was never meant to be carried alone. Bell takes the strong form of the objection, that this is just one more thing to add to an already overwhelmed life, that come to me sounds like one more demand on people who are drowning in demands. He grants how it can sound. But Jesus does not say do more. He says come, and then take my yoke, and a yoke is not a solo burden, it is the wooden frame that joins two animals so the stronger pulls the weight. The rest is not the end of all labor. It is labor with Christ in the harness beside you, pulling the part you could never pull. Then the turn, and the end of the whole study. Jesus says learn from me, for I am gentle and lowly in heart. The character of the One we come to is the final word on anxiety. We are not handing our fears to a stern taskmaster who is annoyed we cannot manage, but to a gentle and lowly Lord who took the heaviest load himself, the cross, so that ours could be made light. The study does not resolve. It points to him and leaves you at his feet, where the rest actually is.",
-      "keyScripture": { "ref": "Matthew 11:28-30", "why": "Come to me, all who labor and are heavy laden, and I will give you rest, take my yoke upon you and learn from me, for I am gentle and lowly in heart, naming Christ himself, not a technique, as the rest for the anxious, and a shared yoke as the place the weight finally becomes bearable." },
-      "timing": [ { "segment": "Open", "minutes": 5 }, { "segment": "Discuss", "minutes": 35 }, { "segment": "Close", "minutes": 10 } ],
+      "keyScripture": {
+        "ref": "Matthew 11:28-30",
+        "why": "Come to me, all who labor and are heavy laden, and I will give you rest, take my yoke upon you and learn from me, for I am gentle and lowly in heart, naming Christ himself, not a technique, as the rest for the anxious, and a shared yoke as the place the weight finally becomes bearable."
+      },
+      "timing": [
+        {
+          "segment": "Open",
+          "minutes": 5
+        },
+        {
+          "segment": "Discuss",
+          "minutes": 35
+        },
+        {
+          "segment": "Close",
+          "minutes": 10
+        }
+      ],
       "discussion": [
-        { "q": "Every method we have studied ends with something for you to do, but Jesus ends with come to me. Why does it matter that the final answer to anxiety is a person and not a technique?", "behind": "Open by gathering the whole study. The practices are good but they can become one more performance. The aim is to move the room from doing to coming, from managing anxiety to a relationship with the One who carries it. Help them feel the relief of an answer that is a person rather than a program." },
-        { "q": "Jesus names a specific kind of tired, those who labor and are heavy laden. What is the difference between ordinary tiredness and the weariness Jesus is talking to here?", "behind": "Get the room to name the deep exhaustion under anxiety, the tired that sleep does not fix. The aim is recognition, that many carry a soul-weariness from holding a weight that was never theirs alone, and that Jesus addresses exactly this, not mere fatigue." },
-        { "q": "Bell takes the objection that come to me sounds like just one more demand on an overwhelmed life. How does the image of the yoke answer that, once you see a yoke joins two and not one?", "behind": "This is the central image. We hear come and take a yoke as more burden. The truth is a yoke pairs you with a stronger one who pulls the weight. Help the room feel that this is the opposite of one more demand, it is the offer to stop pulling alone." },
-        { "q": "Jesus says learn from me, for I am gentle and lowly in heart. How does it change your willingness to bring him your anxiety to know that his heart toward the weary is gentleness and not irritation?", "behind": "Land on the character of Christ, which is the whole point of the session. Many secretly believe Jesus is exasperated by their recurring fear. The aim is to let the gentleness and lowliness reframe how they come, not bracing for a rebuke but expected by a tender Lord." },
-        { "q": "Looking back over all five sessions, what is the one fear you most want to bring to Jesus tonight, and what has kept you from coming with it before now?", "behind": "Close the whole study with self-implication and invitation. Do not resolve it. Invite each person, the leader first, to name the fear and the reason for the distance. The point is to end at his feet, carrying weight toward him, not setting it down satisfied." }
+        {
+          "q": "Every method we have studied ends with something for you to do, but Jesus ends with come to me. Why does it matter that the final answer to anxiety is a person and not a technique?",
+          "behind": "Open by gathering the whole study. The practices are good but they can become one more performance. The aim is to move the room from doing to coming, from managing anxiety to a relationship with the One who carries it. Help them feel the relief of an answer that is a person rather than a program."
+        },
+        {
+          "q": "Jesus names a specific kind of tired, those who labor and are heavy laden. What is the difference between ordinary tiredness and the weariness Jesus is talking to here?",
+          "behind": "Get the room to name the deep exhaustion under anxiety, the tired that sleep does not fix. The aim is recognition, that many carry a soul-weariness from holding a weight that was never theirs alone, and that Jesus addresses exactly this, not mere fatigue."
+        },
+        {
+          "q": "Bell takes the objection that come to me sounds like just one more demand on an overwhelmed life. How does the image of the yoke answer that, once you see a yoke joins two and not one?",
+          "behind": "This is the central image. We hear come and take a yoke as more burden. The truth is a yoke pairs you with a stronger one who pulls the weight. Help the room feel that this is the opposite of one more demand, it is the offer to stop pulling alone."
+        },
+        {
+          "q": "Jesus says learn from me, for I am gentle and lowly in heart. How does it change your willingness to bring him your anxiety to know that his heart toward the weary is gentleness and not irritation?",
+          "behind": "Land on the character of Christ, which is the whole point of the session. Many secretly believe Jesus is exasperated by their recurring fear. The aim is to let the gentleness and lowliness reframe how they come, not bracing for a rebuke but expected by a tender Lord."
+        },
+        {
+          "q": "Looking back over all five sessions, what is the one fear you most want to bring to Jesus tonight, and what has kept you from coming with it before now?",
+          "behind": "Close the whole study with self-implication and invitation. Do not resolve it. Invite each person, the leader first, to name the fear and the reason for the distance. The point is to end at his feet, carrying weight toward him, not setting it down satisfied."
+        }
       ],
       "objections": [
-        { "objection": "Come to me sounds like just one more thing to do. I am already overwhelmed, already failing at prayer and trust and all of it, and now I have to come too. It feels like one more demand on a life that has no room left.", "response": "Bell grants exactly how it can land, because to a drowning person every instruction sounds like another wave. But hear what Jesus actually offers, because it is the reverse of a demand. He says come to me and I will give you rest, and then, take my yoke. A yoke is the wooden frame that joins two animals so they pull together, and Jesus is the stronger one in the harness. This is not one more thing added to your load. It is the offer to stop carrying your load alone. Everything else in this study was a verb for you to do. This is an invitation to be joined to Someone who does the pulling you cannot do. You do not come to Jesus to take on more. You come to be unburdened, to put your neck in a yoke where the weight is finally shared with One strong enough to bear it." },
-        { "objection": "I have come to Jesus, over and over, and I am still anxious. So either the rest he promises is not real, or I am not coming right, and either way I am worse off than before.", "response": "Hold this one gently, because it is the cry of someone who has tried and the leader must not bruise them. First, the rest Jesus promises is rest for your soul, a settled belonging underneath the unsettled mind, and that can be real and present even when the felt anxiety has not yet lifted. Coming to Jesus is not a guarantee the symptom vanishes on schedule. Second, and say this plainly one last time, if you have come faithfully and the dread still crushes you, that is not proof you came wrong and it is not proof Jesus failed you. It may be a body that needs medical help, and getting that help is itself a way of coming to him, because he made the body and works through doctors and medicine as surely as through prayer. The gentle and lowly Lord is not standing over you disappointed. He is in the harness, pulling, and sometimes the pulling looks like sending you the care you have been ashamed to seek." }
+        {
+          "objection": "Come to me sounds like just one more thing to do. I am already overwhelmed, already failing at prayer and trust and all of it, and now I have to come too. It feels like one more demand on a life that has no room left.",
+          "response": "Bell grants exactly how it can land, because to a drowning person every instruction sounds like another wave. But hear what Jesus actually offers, because it is the reverse of a demand. He says come to me and I will give you rest, and then, take my yoke. A yoke is the wooden frame that joins two animals so they pull together, and Jesus is the stronger one in the harness. This is not one more thing added to your load. It is the offer to stop carrying your load alone. Everything else in this study was a verb for you to do. This is an invitation to be joined to Someone who does the pulling you cannot do. You do not come to Jesus to take on more. You come to be unburdened, to put your neck in a yoke where the weight is finally shared with One strong enough to bear it."
+        },
+        {
+          "objection": "I have come to Jesus, over and over, and I am still anxious. So either the rest he promises is not real, or I am not coming right, and either way I am worse off than before.",
+          "response": "Hold this one gently, because it is the cry of someone who has tried and the leader must not bruise them. First, the rest Jesus promises is rest for your soul, a settled belonging underneath the unsettled mind, and that can be real and present even when the felt anxiety has not yet lifted. Coming to Jesus is not a guarantee the symptom vanishes on schedule. Second, and say this plainly one last time, if you have come faithfully and the dread still crushes you, that is not proof you came wrong and it is not proof Jesus failed you. It may be a body that needs medical help, and getting that help is itself a way of coming to him, because he made the body and works through doctors and medicine as surely as through prayer. The gentle and lowly Lord is not standing over you disappointed. He is in the harness, pulling, and sometimes the pulling looks like sending you the care you have been ashamed to seek."
+        }
       ],
       "quietRoomQuestion": "If Jesus is truly gentle and lowly toward the weary, what is the weariness you have been carrying alone that you could finally bring to him tonight?",
       "practice": "This week, before you do any of the practices from the earlier sessions, do this one first. Each morning, before the day's demands begin, sit for two minutes and say nothing but come to me, hearing it as said to you. Do not try to fix anything. Do not problem-solve. Just come, and let the gentleness of the One who said it be the first thing your anxious mind meets. At the end of the week, write down what it was like to begin with coming instead of with managing.",
@@ -196,49 +476,154 @@
       ],
       "teaching": "We have spent four sessions on things to do with anxiety, and every one of them is true and given by God. Look at the birds. Pray and let the peace guard you. Cast the weight onto him. Retrain the mind to dwell on what is real. All of it good, all of it commanded. But if we end there, we will have turned the cure for anxiety into a new and exhausting performance, one more set of spiritual tasks to fail at, and the worried person will simply add this study to the long list of things he is not doing well enough. So we have to go underneath all of it, to the bottom, and the bottom is not a technique. It is a person, and an invitation, and they are the most rested words in the Bible. Come to me, all who labor and are heavy laden, and I will give you rest. Hear first what kind of tired Jesus is talking to, because he is precise. He does not say come, all who are slightly busy. He names the laboring and the heavy laden, the bone-deep weariness of carrying a load too heavy for too long, the exhaustion that has nothing to do with how much you slept, because it is the soul that is tired and not just the body. Many of you know that tired. It is the tired of holding an outcome you cannot guarantee, a fear you cannot fix, a weight that was never meant to be carried by one set of shoulders. To that exact exhaustion, Jesus says come. Take the objection at its strongest, because it is the one a drowning person actually feels. Come to me sounds like one more thing to do. You are already overwhelmed, already behind on prayer and trust and peace, and now there is one more imperative, come, one more demand on a life with no room left in it. To someone going under, every instruction sounds like another wave. Grant how it can land. But then look at what Jesus actually offers, because it is the reverse of a demand, and the reversal is the whole gospel. He says, take my yoke upon you. Now, a yoke sounds at first like more burden, another weight strapped on. But a yoke is not a solo load. A yoke is the wooden crossbar that joins two animals together so that they pull as one, and a young or weaker animal was yoked beside an older, stronger one who carried the real weight and set the pace and did the work the smaller one could not. When Jesus says take my yoke, he is not adding to your load. He is offering to get into the harness beside you. The rest he promises is not the end of all labor, as though you would never work or struggle again. It is labor with Christ pulling next to you, bearing the part you were never strong enough to bear, so that the load that was crushing you alone becomes, his word, light. My yoke is easy and my burden is light, not because the burden shrank, but because you are no longer pulling it by yourself. And then comes the line that is the final word of this entire study, the deepest thing Jesus says about why the anxious can come to him at all. Learn from me, for I am gentle and lowly in heart. This is the only place in the Gospels where Jesus tells us about his own heart, and what he says is not that he is powerful, though he is, not that he is holy, though he is, but that he is gentle and lowly. The character of the One we are coming to is the bottom of everything. Because here is what the anxious heart secretly believes. It believes that if it keeps bringing the same fear back, the same worry it confessed last week and the week before, Jesus must finally be exasperated, tapping his foot, disappointed that we cannot just get it together. And Jesus says, no. My heart toward the weary and the heavy laden is gentle. It is lowly. I am not standing over you annoyed. I am the One who came down, who took the heaviest load any heart has ever carried, the sin and the dread and the godforsakenness of the cross, so that yours could be made light. And I have to come to him in exactly this way myself, because I am so prone to treat him as the taskmaster and not the gentle one, to white-knuckle my own peace as though it were one more thing to achieve for him instead of one more thing to receive from him. So let this study end where it should, not with a resolution, because anxiety this side of heaven does not get a clean resolution, but with a person and an open invitation. If you are tired in the place sleep does not reach, if you have carried a fear so long you have forgotten it was not always yours to carry, hear him, said to you, by name. Come to me. Put your neck in the yoke beside mine. And for some of you, coming to him this week will mean finally making the appointment you have been ashamed to make, because the gentle Lord who made your body works through doctors too, and getting help is not a failure of faith but a form of coming. However you come, come. He is gentle. He is lowly. And he has been waiting, with rest, the whole time.",
       "scriptureStudy": [
-        { "ref": "Matthew 11:28", "note": "Come to me, all who labor and are heavy laden, and I will give you rest. The invitation is to a person, not a program, and it is addressed precisely to the worn out, who are qualified to come by their very exhaustion." },
-        { "ref": "Matthew 11:29", "note": "Take my yoke upon you, and learn from me, for I am gentle and lowly in heart. A yoke joins two so the stronger pulls, and the only self-description Jesus gives of his own heart is gentleness, which is the final word on how he meets the anxious." },
-        { "ref": "Matthew 11:30", "note": "For my yoke is easy, and my burden is light. The burden is not made light because it shrank but because Christ is in the harness pulling beside you, bearing the weight you could never bear alone." },
-        { "ref": "Psalm 23:1-3", "note": "The Lord is my shepherd, he makes me lie down in green pastures, he restores my soul. The shepherd does not drive the anxious sheep, he leads it to rest and restoration, the same gentleness Jesus claims as his own heart." },
-        { "ref": "Psalm 23:4", "note": "Even though I walk through the valley of the shadow of death, I will fear no evil, for you are with me. The comfort is not the absence of the valley but the presence of the shepherd in it, with rod and staff, exactly as the yoke joins you to Christ inside the load." },
-        { "ref": "John 16:33", "note": "In the world you will have tribulation, but take heart, I have overcome the world. Jesus promises trouble and peace in the same breath, the peace resting not on the absence of tribulation but on the One who has already overcome it." },
-        { "ref": "Hebrews 4:9-10", "note": "There remains a Sabbath rest for the people of God, for whoever has entered God's rest has also rested from his works. The deepest rest is rest from striving, including the striving to manage our own anxiety, received as a gift and not earned as a wage." }
+        {
+          "ref": "Matthew 11:28",
+          "note": "Come to me, all who labor and are heavy laden, and I will give you rest. The invitation is to a person, not a program, and it is addressed precisely to the worn out, who are qualified to come by their very exhaustion."
+        },
+        {
+          "ref": "Matthew 11:29",
+          "note": "Take my yoke upon you, and learn from me, for I am gentle and lowly in heart. A yoke joins two so the stronger pulls, and the only self-description Jesus gives of his own heart is gentleness, which is the final word on how he meets the anxious."
+        },
+        {
+          "ref": "Matthew 11:30",
+          "note": "For my yoke is easy, and my burden is light. The burden is not made light because it shrank but because Christ is in the harness pulling beside you, bearing the weight you could never bear alone."
+        },
+        {
+          "ref": "Psalm 23:1-3",
+          "note": "The Lord is my shepherd, he makes me lie down in green pastures, he restores my soul. The shepherd does not drive the anxious sheep, he leads it to rest and restoration, the same gentleness Jesus claims as his own heart."
+        },
+        {
+          "ref": "Psalm 23:4",
+          "note": "Even though I walk through the valley of the shadow of death, I will fear no evil, for you are with me. The comfort is not the absence of the valley but the presence of the shepherd in it, with rod and staff, exactly as the yoke joins you to Christ inside the load."
+        },
+        {
+          "ref": "John 16:33",
+          "note": "In the world you will have tribulation, but take heart, I have overcome the world. Jesus promises trouble and peace in the same breath, the peace resting not on the absence of tribulation but on the One who has already overcome it."
+        },
+        {
+          "ref": "Hebrews 4:9-10",
+          "note": "There remains a Sabbath rest for the people of God, for whoever has entered God's rest has also rested from his works. The deepest rest is rest from striving, including the striving to manage our own anxiety, received as a gift and not earned as a wage."
+        }
       ],
       "goingDeeper": "Take up the theme of rest as it runs from Genesis to the end of the Bible, because the rest Jesus offers in Matthew 11 is not a stray comforting phrase but the resolution of a thread woven through the whole of Scripture. It begins at creation, where God rests on the seventh day, not from exhaustion but in completion, and blesses the rest as holy. It continues in the Sabbath command, which forbade Israel from the ceaseless labor of the surrounding economies and built a weekly rehearsal of trust into the calendar, a regular day of refusing to be anxious about provision. It deepens in the promised land, called God's rest, and when that rest proved incomplete, the writer of Hebrews points forward to a Sabbath rest that still remains, the rest of ceasing from our own works and trusting Christ's finished one. Set this against the modern condition of restlessness, the inability to stop, the cultural conviction that to rest is to fall behind, and ask how much anxiety is the soul of a people who have forgotten how to keep Sabbath, who no longer have a weekly practice of declaring that the world keeps turning when we stop. A serious group should consider how the recovery of real rest, Sabbath kept and trust practiced, is not a self-help tactic but participation in the rhythm God built into creation and fulfilled in Christ, and how the invitation come to me and I will give you rest gathers all of it, the seventh day and the promised land and the cross, into a single person who is himself our Sabbath.",
-      "memoryVerse": { "ref": "Matthew 11:28-29", "text": "Come to me, all who labor and are heavy laden, and I will give you rest. Take my yoke upon you, and learn from me, for I am gentle and lowly in heart, and you will find rest for your souls." }
+      "memoryVerse": {
+        "ref": "Matthew 11:28-29",
+        "text": "Come to me, all who labor and are heavy laden, and I will give you rest. Take my yoke upon you, and learn from me, for I am gentle and lowly in heart, and you will find rest for your souls."
+      }
     }
   ],
   "leaderPrimer": "An anxiety group has a particular silence, and you should learn to hear it before session one. It is not the silence of people with nothing to say. It is the silence of people doing math, the three in the morning arithmetic on a life that will not balance, run quietly behind composed faces while the room discusses birds and lilies. Your first job is not to break that silence. It is to make the room safe enough that someone eventually breaks it themselves, and to receive what comes out without flinching. Because the hazard of this study, the one you will meet every week, is the urge to fix. Somebody names a fear, and everything in you reaches for the solution, the verse, the reframe, the tip. Resist it. A person who confesses at last that she cannot breathe some mornings does not need you to solve her before the coffee is cold. She needs to discover that she can say it in a room of Christians and not be handed a lecture on trust. And guard this line as if souls depend on it, because they do. Some anxiety is the soul grasping for a refuge that cannot hold, and these sessions speak to that with real power, the birds, the peace that guards, the casting, the rest. And some anxiety is a body that is sick, wiring gone wrong through no failure of faith, and that anxiety needs a doctor the way a broken leg needs one. Say so out loud, more than once. The person on medication in your room has spent years braced against the sentence that her prescription betrays God, and you may be the first leader who never says it. Bell does not write this from above the worry. He has lain awake doing the arithmetic. He has preached peace and gripped the wheel the whole way home. Lead from that same inside or do not lead it at all. These five sessions end at Matthew eleven, at the invitation to come and rest, and your room will arrive there still anxious. Let them. The study was never going to end the fear in five weeks. It means to end the loneliness of the fear, and the shame. Peace is his gift to give, on his schedule. Your work is smaller and harder. Stay in the room, unshocked and unhurried, pointing at the One who is gentle, until the anxious stop performing calm for you. That is enough.",
   "faq": [
-    { "q": "Is this study going to tell anxious people their faith is just too weak?", "a": "No, and it works hard to prevent exactly that. The first session takes the strong form of the view that anxiety is unbelief, grants that Jesus does say do not be anxious and that some worry really is the heart trusting the wrong thing, and then refuses to let that become a club. The same Jesus who said do not be anxious wept at a grave and sweat what looked like blood in Gethsemane, so anxiety cannot always be sin without making the Son of God an unbeliever. The study insists, repeatedly, that some anxiety is a sick body and is no more a sin than a broken arm. If you came braced to be shamed for struggling, you will find instead a study that stands inside the struggle with you, and a leader primer that tells the facilitator to say plainly that a person with anxiety is not a weak Christian." },
-    { "q": "Does this study think anxiety is a sin?", "a": "Sometimes, and sometimes not, and refusing to flatten that is the whole point. Some anxiety is the soul reaching for a refuge that is not God, security or control or approval, and that worry is addressed by trust and repentance like any other misplaced love. But much anxiety is not sin at all. It is a body that has broken, a chemistry that misfires, a grief that has not finished, and to call that sin is a cruelty the study names and rejects. The honest pastoral work, which the study admits cannot always be done with certainty, is to tell the difference without pretending you always can. The safest posture, the one the study urges on every leader, is compassion plus honesty, never assuming a frightened person is simply sinning." },
-    { "q": "Is the study saying I should not take medication or see a doctor?", "a": "The opposite, emphatically. The study says, more than once and in plain words, that some anxiety is a medical condition that needs a doctor, that getting help from a physician, a counselor, or a prescription is not a failure of faith but is often the very form faith takes, because the God who made the body works through the people and medicines that heal it. The leader primer instructs the facilitator to say this out loud in the group and to err toward sending people for help. If you have prayed faithfully and the dread does not lift, the study treats that not as proof you prayed wrong but as a possible sign your body needs care your prayers were never meant to replace. Coming to Christ, the fifth session says, sometimes looks like finally making the appointment you have been ashamed to make." },
-    { "q": "If I just trusted God more, would my anxiety go away?", "a": "Not necessarily, and the study refuses to promise it would. For the part of your anxiety that is the soul clutching the wrong refuge, growing trust in God genuinely addresses it, and you may find real relief there. But if your anxiety has a medical root, more trust will not fix a chemistry problem any more than it would fix a broken bone, and believing it should will only pile shame on top of suffering. Paul prayed three times for his thorn and it stayed, and the answer he got was grace sufficient inside it, not removal. So the honest answer is that trusting God more is part of the picture for some anxiety and not the cure for all of it, and the study would rather tell you that hard truth than sell you a promise that leaves you blaming yourself when the dread does not lift." },
-    { "q": "Why does Jesus answer anxiety by telling us to look at birds and flowers?", "a": "Because he is teaching theology through the created world, not changing the subject to nature. The argument is not that the birds never struggle, they do, and Jesus knew it, since he also says not one sparrow falls apart from your Father. The argument runs from the lesser to the greater. Your heavenly Father feeds the birds he did not make in his image and did not die for, and you are worth more to him than many sparrows, so the comfort is not that you will never lack but that you are not an orphan in a cold machine. Anxiety, in this light, is at bottom a failure to know whose you are, the dread of a child who has forgotten he has a Father. Looking at the birds is Jesus training the anxious eye to read providence in the ordinary." },
-    { "q": "Is the peace Paul promises just positive thinking or denial?", "a": "No, and the study draws the line carefully. There is a false peace that is only suppression in a Christian costume, and the church has done real harm selling it. But Paul's peace is the opposite of denial. It comes after the fear is dragged into the open, named in detail, and handed to God in prayer, which requires you to look at the fear rather than bury it. And the peace itself is not a feeling you manufacture, it is a guard God posts, a military word, a garrison stationed around a heart that could not protect itself. The study also notes, honestly, that the felt calm does not always come on schedule, that the peace may be a deep settledness underneath an unsettled body, and that persistent crushing dread which prayer does not touch may be a physical condition needing a physician." },
-    { "q": "What does it actually mean to cast my anxiety on God?", "a": "Peter uses a violent, physical word, cast, which means to throw or hurl, the motion of heaving a crushing pack off your shoulders onto something strong enough to bear it. It is not a feeling you summon but an act of the will you perform, often before the feeling changes and sometimes without it changing at all. You name the fear, you humble yourself enough to admit the outcome was never yours to control, and you hand it over, grounded in four words, because he cares for you. The study is honest that this is not once for all. We cast the weight and then crawl back under it out of habit and have to cast it again, and again. And the casting does not make the danger disappear, the very next verse is about a roaring lion, it moves the weight onto Someone strong enough to carry both you and the lion." },
-    { "q": "I have prayed and prayed and the anxiety is still here. What does that mean?", "a": "It does not mean your faith failed and it does not mean the promises are false, and the study answers this in more than one place because it is the most painful question in the room. The peace that guards is not always a felt calm, sometimes it is the strength to keep standing when you feel nothing, and the rest Christ gives is rest for the soul that can be real underneath a mind that is still unsettled. But the study also says plainly that if you have prayed faithfully over a long time and the dread does not lift, that can be a sign your body needs help your prayers were never meant to replace. Seeing a doctor is not a failure of Philippians 4 or of coming to Jesus. It may be exactly how the gentle Lord, who made your body, is answering you." },
-    { "q": "Is this study only for people with serious or clinical anxiety?", "a": "No. It is for anyone who worries, which is everyone, from the person with a diagnosed anxiety disorder to the person who simply lies awake doing the math on a life that will not balance. The ordinary orphan-worry that forgets it has a Father is addressed alongside the clinical kind, and the study is careful to honor both without collapsing one into the other. A person who has never had a panic attack will still find their everyday anxiety measured by the birds and the lilies and invited to the rest of Christ. The leader primer even names the group member who has never been anxious a day in their life and asks the leader to help that person grow in compassion rather than judgment, because understanding anxiety is good for the whole room, not only for those who suffer it most." },
-    { "q": "Does the study promise that if I follow it my anxiety will disappear?", "a": "No, and it deliberately refuses to. The study ends without resolution, on purpose, because anxiety this side of heaven does not get a clean ending, and a study that promised one would be lying. The point is not the absence of fear but the presence of Christ inside it, a peace that can guard you while the trouble remains, a weight that can be shared even while the lion still prowls, a rest for the soul that does not depend on the symptom vanishing on schedule. For some the worry will ease, for some it will need a doctor, for some it will be a long companionship with grace sufficient inside the thorn. What the study promises is not a cure you achieve but a Lord you come to, gentle and lowly, who carries what you cannot." },
-    { "q": "Why does the study keep implicating the writer and the leader instead of just helping the anxious?", "a": "Because that is the method, and the method is the mercy. Bell does not stand outside this as the calm man explaining peace to the troubled. He has lain awake. He has gripped the wheel all the way home from preaching peace. He has called his own dread discernment because fear sounded less spiritual. He writes from inside the worry, and the study asks every leader to do the same, because you cannot help a frightened person from above without your help curdling into either shame or distance. A leader who admits I struggle with this too can sit beside the anxious as a fellow sufferer, which is the only place real comfort comes from. A study that pointed only at other people's anxiety would let everyone perform fine and change no one." },
-    { "q": "I am a skeptic. Is not this just religion telling frightened people a comforting story?", "a": "It is a fair suspicion, and the study tries to earn the right to answer it by refusing the cheap version of exactly that. It does not tell you to feel better by pretending the danger is not real, the birds do fall and the lion does prowl and Paul wrote about peace from a cell awaiting possible execution. It does not promise that faith makes your troubles vanish. And it takes the medical reality of anxiety seriously, insisting that some of it needs a doctor and not a sermon, which is not what you would expect from a story meant only to keep frightened people quiet. What it offers is not a comforting denial of the dark but a claim that there is Someone in the dark with you, gentle and lowly, who carried the heaviest weight himself. You can weigh that claim. The study does not ask you to pretend." },
-    { "q": "How do I lead this if I struggle with anxiety myself?", "a": "Your anxiety is not a disqualification. It may be your single greatest qualification. The study is built to be led by a fellow sufferer, not by someone who has conquered worry and now dispenses calm, and every discussion question carries the answer behind it, every silence has a backup, and every session ends in prayer rather than advice, so you are not improvising. Your honesty about your own fear, even your own clinical anxiety if that is your story, may be the most pastoral thing in the room, the permission that lets others stop performing fine. What you do need is to refuse to shame anyone, to keep the group safe for the wounded and the medicated and the secretly terrified, to send people toward the help they need without judgment, and to point everyone, yourself first, toward the gentle Lord who said come to me. Read the leader primer, settle your own heart, and trust the material." }
+    {
+      "q": "Is this study going to tell anxious people their faith is just too weak?",
+      "a": "No, and it works hard to prevent exactly that. The first session takes the strong form of the view that anxiety is unbelief, grants that Jesus does say do not be anxious and that some worry really is the heart trusting the wrong thing, and then refuses to let that become a club. The same Jesus who said do not be anxious wept at a grave and sweat what looked like blood in Gethsemane, so anxiety cannot always be sin without making the Son of God an unbeliever. The study insists, repeatedly, that some anxiety is a sick body and is no more a sin than a broken arm. If you came braced to be shamed for struggling, you will find instead a study that stands inside the struggle with you, and a leader primer that tells the facilitator to say plainly that a person with anxiety is not a weak Christian."
+    },
+    {
+      "q": "Does this study think anxiety is a sin?",
+      "a": "Sometimes, and sometimes not, and refusing to flatten that is the whole point. Some anxiety is the soul reaching for a refuge that is not God, security or control or approval, and that worry is addressed by trust and repentance like any other misplaced love. But much anxiety is not sin at all. It is a body that has broken, a chemistry that misfires, a grief that has not finished, and to call that sin is a cruelty the study names and rejects. The honest pastoral work, which the study admits cannot always be done with certainty, is to tell the difference without pretending you always can. The safest posture, the one the study urges on every leader, is compassion plus honesty, never assuming a frightened person is simply sinning."
+    },
+    {
+      "q": "Is the study saying I should not take medication or see a doctor?",
+      "a": "The opposite, emphatically. The study says, more than once and in plain words, that some anxiety is a medical condition that needs a doctor, that getting help from a physician, a counselor, or a prescription is not a failure of faith but is often the very form faith takes, because the God who made the body works through the people and medicines that heal it. The leader primer instructs the facilitator to say this out loud in the group and to err toward sending people for help. If you have prayed faithfully and the dread does not lift, the study treats that not as proof you prayed wrong but as a possible sign your body needs care your prayers were never meant to replace. Coming to Christ, the fifth session says, sometimes looks like finally making the appointment you have been ashamed to make."
+    },
+    {
+      "q": "If I just trusted God more, would my anxiety go away?",
+      "a": "Not necessarily, and the study refuses to promise it would. For the part of your anxiety that is the soul clutching the wrong refuge, growing trust in God genuinely addresses it, and you may find real relief there. But if your anxiety has a medical root, more trust will not fix a chemistry problem any more than it would fix a broken bone, and believing it should will only pile shame on top of suffering. Paul prayed three times for his thorn and it stayed, and the answer he got was grace sufficient inside it, not removal. So the honest answer is that trusting God more is part of the picture for some anxiety and not the cure for all of it, and the study would rather tell you that hard truth than sell you a promise that leaves you blaming yourself when the dread does not lift."
+    },
+    {
+      "q": "Why does Jesus answer anxiety by telling us to look at birds and flowers?",
+      "a": "Because he is teaching theology through the created world, not changing the subject to nature. The argument is not that the birds never struggle, they do, and Jesus knew it, since he also says not one sparrow falls apart from your Father. The argument runs from the lesser to the greater. Your heavenly Father feeds the birds he did not make in his image and did not die for, and you are worth more to him than many sparrows, so the comfort is not that you will never lack but that you are not an orphan in a cold machine. Anxiety, in this light, is at bottom a failure to know whose you are, the dread of a child who has forgotten he has a Father. Looking at the birds is Jesus training the anxious eye to read providence in the ordinary."
+    },
+    {
+      "q": "Is the peace Paul promises just positive thinking or denial?",
+      "a": "No, and the study draws the line carefully. There is a false peace that is only suppression in a Christian costume, and the church has done real harm selling it. But Paul's peace is the opposite of denial. It comes after the fear is dragged into the open, named in detail, and handed to God in prayer, which requires you to look at the fear rather than bury it. And the peace itself is not a feeling you manufacture, it is a guard God posts, a military word, a garrison stationed around a heart that could not protect itself. The study also notes, honestly, that the felt calm does not always come on schedule, that the peace may be a deep settledness underneath an unsettled body, and that persistent crushing dread which prayer does not touch may be a physical condition needing a physician."
+    },
+    {
+      "q": "What does it actually mean to cast my anxiety on God?",
+      "a": "Peter uses a violent, physical word, cast, which means to throw or hurl, the motion of heaving a crushing pack off your shoulders onto something strong enough to bear it. It is not a feeling you summon but an act of the will you perform, often before the feeling changes and sometimes without it changing at all. You name the fear, you humble yourself enough to admit the outcome was never yours to control, and you hand it over, grounded in four words, because he cares for you. The study is honest that this is not once for all. We cast the weight and then crawl back under it out of habit and have to cast it again, and again. And the casting does not make the danger disappear, the very next verse is about a roaring lion, it moves the weight onto Someone strong enough to carry both you and the lion."
+    },
+    {
+      "q": "I have prayed and prayed and the anxiety is still here. What does that mean?",
+      "a": "It does not mean your faith failed and it does not mean the promises are false, and the study answers this in more than one place because it is the most painful question in the room. The peace that guards is not always a felt calm, sometimes it is the strength to keep standing when you feel nothing, and the rest Christ gives is rest for the soul that can be real underneath a mind that is still unsettled. But the study also says plainly that if you have prayed faithfully over a long time and the dread does not lift, that can be a sign your body needs help your prayers were never meant to replace. Seeing a doctor is not a failure of Philippians 4 or of coming to Jesus. It may be exactly how the gentle Lord, who made your body, is answering you."
+    },
+    {
+      "q": "Is this study only for people with serious or clinical anxiety?",
+      "a": "No. It is for anyone who worries, which is everyone, from the person with a diagnosed anxiety disorder to the person who simply lies awake doing the math on a life that will not balance. The ordinary orphan-worry that forgets it has a Father is addressed alongside the clinical kind, and the study is careful to honor both without collapsing one into the other. A person who has never had a panic attack will still find their everyday anxiety measured by the birds and the lilies and invited to the rest of Christ. The leader primer even names the group member who has never been anxious a day in their life and asks the leader to help that person grow in compassion rather than judgment, because understanding anxiety is good for the whole room, not only for those who suffer it most."
+    },
+    {
+      "q": "Does the study promise that if I follow it my anxiety will disappear?",
+      "a": "No, and it deliberately refuses to. The study ends without resolution, on purpose, because anxiety this side of heaven does not get a clean ending, and a study that promised one would be lying. The point is not the absence of fear but the presence of Christ inside it, a peace that can guard you while the trouble remains, a weight that can be shared even while the lion still prowls, a rest for the soul that does not depend on the symptom vanishing on schedule. For some the worry will ease, for some it will need a doctor, for some it will be a long companionship with grace sufficient inside the thorn. What the study promises is not a cure you achieve but a Lord you come to, gentle and lowly, who carries what you cannot."
+    },
+    {
+      "q": "Why does the study keep implicating the writer and the leader instead of just helping the anxious?",
+      "a": "Because that is the method, and the method is the mercy. Bell does not stand outside this as the calm man explaining peace to the troubled. He has lain awake. He has gripped the wheel all the way home from preaching peace. He has called his own dread discernment because fear sounded less spiritual. He writes from inside the worry, and the study asks every leader to do the same, because you cannot help a frightened person from above without your help curdling into either shame or distance. A leader who admits I struggle with this too can sit beside the anxious as a fellow sufferer, which is the only place real comfort comes from. A study that pointed only at other people's anxiety would let everyone perform fine and change no one."
+    },
+    {
+      "q": "I am a skeptic. Is not this just religion telling frightened people a comforting story?",
+      "a": "It is a fair suspicion, and the study tries to earn the right to answer it by refusing the cheap version of exactly that. It does not tell you to feel better by pretending the danger is not real, the birds do fall and the lion does prowl and Paul wrote about peace from a cell awaiting possible execution. It does not promise that faith makes your troubles vanish. And it takes the medical reality of anxiety seriously, insisting that some of it needs a doctor and not a sermon, which is not what you would expect from a story meant only to keep frightened people quiet. What it offers is not a comforting denial of the dark but a claim that there is Someone in the dark with you, gentle and lowly, who carried the heaviest weight himself. You can weigh that claim. The study does not ask you to pretend."
+    },
+    {
+      "q": "How do I lead this if I struggle with anxiety myself?",
+      "a": "Your anxiety is not a disqualification. It may be your single greatest qualification. The study is built to be led by a fellow sufferer, not by someone who has conquered worry and now dispenses calm, and every discussion question carries the answer behind it, every silence has a backup, and every session ends in prayer rather than advice, so you are not improvising. Your honesty about your own fear, even your own clinical anxiety if that is your story, may be the most pastoral thing in the room, the permission that lets others stop performing fine. What you do need is to refuse to shame anyone, to keep the group safe for the wounded and the medicated and the secretly terrified, to send people toward the help they need without judgment, and to point everyone, yourself first, toward the gentle Lord who said come to me. Read the leader primer, settle your own heart, and trust the material."
+    }
   ],
   "timeline": [
-    { "date": "circa 1000 BC", "event": "The psalmists give Israel a language for anxiety that neither denies it nor surrenders to it, speaking to their own cast-down souls, asking why are you in turmoil within me, and preaching hope back to themselves, so that Scripture supplies words for the fear and not only against it." },
-    { "date": "circa 700 BC", "event": "Isaiah proclaims that the one whose mind is stayed on God is kept in perfect peace, binding inner peace to the direction of the mind centuries before Paul tells the Philippians to dwell on whatever is true." },
-    { "date": "circa AD 30", "event": "Jesus preaches the Sermon on the Mount, telling the crowds to look at the birds of the air and consider the lilies of the field, giving the most direct teaching in Scripture on what to do with worry, and the night before the cross experiences in Gethsemane an agony so severe his sweat became like drops of blood." },
-    { "date": "circa AD 62", "event": "Paul, writing to the Philippians from imprisonment, commands them to be anxious for nothing but in everything by prayer to make their requests known to God, describing a peace that guards the heart like a posted garrison." },
-    { "date": "circa AD 64", "event": "Peter writes to scattered and suffering Christians, telling them to cast all their anxieties on God because he cares for them, even as he warns them that an adversary prowls like a roaring lion, joining the relief of the casting to the realism of the danger." },
-    { "date": "circa 400", "event": "Augustine writes in his Confessions that the human heart is restless until it rests in God, naming the deep restlessness underneath much human anxiety as a longing for a rest only God can give." },
-    { "date": "circa 1400s", "event": "Thomas a Kempis, in The Imitation of Christ, counsels the troubled soul to bring its disquiet to Christ rather than to lean on its own management, reflecting the long contemplative tradition of casting one's care on God." },
-    { "date": "circa 1527", "event": "Martin Luther, who battled his own severe spells of dread and despair he called Anfechtungen, writes and counsels others through them, insisting that such terrors are not always the soul's guilt but are sometimes assaults to be endured by clinging to the promises of Christ." },
-    { "date": "1656", "event": "Jeremiah Burroughs publishes The Rare Jewel of Christian Contentment, the Puritan classic arguing that contentment is a learned and inward grace, not a native temperament, echoing Paul's claim that he had learned in whatever state he was to be content." },
-    { "date": "1855", "event": "Soren Kierkegaard, who wrote searchingly on anxiety and dread as features of the human condition, dies, having distinguished the existential anxiety bound up with freedom and finitude from mere fearfulness, deepening the church's understanding that some anxiety is woven into being human." },
-    { "date": "circa 1900s", "event": "The rise of modern psychiatry and the eventual discovery of how profoundly brain chemistry shapes mood begin to rescue countless sufferers from conditions the older purely moral framework could not touch, while also tempting the culture to reduce anxiety to chemistry alone." },
-    { "date": "1942", "event": "C. S. Lewis publishes The Screwtape Letters, depicting how fear and worry about an unknown future can be exploited to pull the soul away from the present where God actually meets it, a vivid account of anxiety's spiritual mechanics." },
-    { "date": "1969", "event": "The modern recovery of grief studies and the wider recognition of post-traumatic and grief-related anxiety begin to clarify that some of what looks like faithless worry is unfinished grief or the body's response to trauma, and not a moral failure to be repented of." },
-    { "date": "2020", "event": "Dane Ortlund publishes Gentle and Lowly, drawing the church's attention to Matthew 11 and Christ's own description of his heart toward the weary and heavy laden as gentle and lowly, recovering the tenderness of Jesus toward the burdened that anchors the final session." }
+    {
+      "date": "circa 1000 BC",
+      "event": "The psalmists give Israel a language for anxiety that neither denies it nor surrenders to it, speaking to their own cast-down souls, asking why are you in turmoil within me, and preaching hope back to themselves, so that Scripture supplies words for the fear and not only against it."
+    },
+    {
+      "date": "circa 700 BC",
+      "event": "Isaiah proclaims that the one whose mind is stayed on God is kept in perfect peace, binding inner peace to the direction of the mind centuries before Paul tells the Philippians to dwell on whatever is true."
+    },
+    {
+      "date": "circa AD 30",
+      "event": "Jesus preaches the Sermon on the Mount, telling the crowds to look at the birds of the air and consider the lilies of the field, giving the most direct teaching in Scripture on what to do with worry, and the night before the cross experiences in Gethsemane an agony so severe his sweat became like drops of blood."
+    },
+    {
+      "date": "circa AD 62",
+      "event": "Paul, writing to the Philippians from imprisonment, commands them to be anxious for nothing but in everything by prayer to make their requests known to God, describing a peace that guards the heart like a posted garrison."
+    },
+    {
+      "date": "circa AD 64",
+      "event": "Peter writes to scattered and suffering Christians, telling them to cast all their anxieties on God because he cares for them, even as he warns them that an adversary prowls like a roaring lion, joining the relief of the casting to the realism of the danger."
+    },
+    {
+      "date": "circa 400",
+      "event": "Augustine writes in his Confessions that the human heart is restless until it rests in God, naming the deep restlessness underneath much human anxiety as a longing for a rest only God can give."
+    },
+    {
+      "date": "circa 1400s",
+      "event": "Thomas a Kempis, in The Imitation of Christ, counsels the troubled soul to bring its disquiet to Christ rather than to lean on its own management, reflecting the long contemplative tradition of casting one's care on God."
+    },
+    {
+      "date": "circa 1527",
+      "event": "Martin Luther, who battled his own severe spells of dread and despair he called Anfechtungen, writes and counsels others through them, insisting that such terrors are not always the soul's guilt but are sometimes assaults to be endured by clinging to the promises of Christ."
+    },
+    {
+      "date": "1656",
+      "event": "Jeremiah Burroughs publishes The Rare Jewel of Christian Contentment, the Puritan classic arguing that contentment is a learned and inward grace, not a native temperament, echoing Paul's claim that he had learned in whatever state he was to be content."
+    },
+    {
+      "date": "1855",
+      "event": "Soren Kierkegaard, who wrote searchingly on anxiety and dread as features of the human condition, dies, having distinguished the existential anxiety bound up with freedom and finitude from mere fearfulness, deepening the church's understanding that some anxiety is woven into being human."
+    },
+    {
+      "date": "circa 1900s",
+      "event": "The rise of modern psychiatry and the eventual discovery of how profoundly brain chemistry shapes mood begin to rescue countless sufferers from conditions the older purely moral framework could not touch, while also tempting the culture to reduce anxiety to chemistry alone."
+    },
+    {
+      "date": "1942",
+      "event": "C. S. Lewis publishes The Screwtape Letters, depicting how fear and worry about an unknown future can be exploited to pull the soul away from the present where God actually meets it, a vivid account of anxiety's spiritual mechanics."
+    },
+    {
+      "date": "1969",
+      "event": "The modern recovery of grief studies and the wider recognition of post-traumatic and grief-related anxiety begin to clarify that some of what looks like faithless worry is unfinished grief or the body's response to trauma, and not a moral failure to be repented of."
+    },
+    {
+      "date": "2020",
+      "event": "Dane Ortlund publishes Gentle and Lowly, drawing the church's attention to Matthew 11 and Christ's own description of his heart toward the weary and heavy laden as gentle and lowly, recovering the tenderness of Jesus toward the burdened that anchors the final session."
+    }
   ],
   "facilitatorScript": {
     "open": "Welcome. Thank you for being here, and thank you for the courage it took, because anxiety is one of the hardest things to talk about honestly in a room. Before we start, three things. First, this is a safe room. You can say I am not okay here. You can say I take medication for this here. Nobody is going to fix you or quote a verse at you to make you stop. Second, this study takes anxiety seriously, all of it, the kind that is the soul afraid and the kind that is a body that needs a doctor, and it will never tell you your fear is just weak faith. Some anxiety needs prayer, some needs a physician, and most of us cannot fully tell which, and that is okay. Third, the writer puts himself inside all of this, and so will I. I have lain awake. I have white-knuckled mornings I had no reason to fear. We are not pointing at the anxious from a safe distance. We are the anxious. Tonight we are looking at this together: ________. Let me read our key passage, and then we will sit with it before we say anything else. There are no wrong answers in the first five minutes, only honest ones.",
@@ -280,18 +665,66 @@
     }
   ],
   "bibliography": [
-    { "title": "Gentle and Lowly: The Heart of Christ for Sinners and Sufferers", "author": "Dane Ortlund", "note": "Draws out Matthew 11 and the one place Jesus describes his own heart as gentle and lowly toward the weary. The pastoral spine of session 5." },
-    { "title": "The Rare Jewel of Christian Contentment", "author": "Jeremiah Burroughs", "note": "The Puritan classic showing contentment is a learned inward grace and not a native temperament, echoing Paul's I have learned to be content. Anchors session 3." },
-    { "title": "A Small Book for the Anxious Heart", "author": "Edward T. Welch", "note": "A gentle, biblically grounded set of meditations for the worried that refuses to shame the anxious. Useful across all five sessions. Leader to confirm specific claims before attributing them to Bell." },
-    { "title": "Reformed Preaching, and broader writing on the fear of man", "author": "Edward T. Welch", "note": "Welch's work on the fear of man and the misplaced trust under much anxiety informs the soul-side of the diagnosis in session 1. Leader to confirm the specifics before pressing them as settled." },
-    { "title": "When the Darkness Will Not Lift: Doing What We Can While We Wait for God", "author": "John Piper", "note": "A short, tender treatment of spiritual darkness that takes both the soul and the body seriously and refuses easy answers. Supports sessions 1 and 3 on prayers that seem unanswered." },
-    { "title": "Spurgeon's Sorrows: Realistic Hope for Those Who Suffer from Depression", "author": "Zack Eswine", "note": "On Charles Spurgeon's lifelong battle with depression, showing a great preacher who suffered and did not regard it as simple unbelief. Background for the study's refusal to equate anxiety with weak faith." },
-    { "title": "The Imitation of Christ", "author": "Thomas a Kempis", "note": "The contemplative classic counseling the troubled soul to bring its disquiet to Christ rather than lean on its own management. Background for sessions 4 and 5." },
-    { "title": "The Screwtape Letters", "author": "C. S. Lewis", "note": "Depicts how fear of an unknown future is used to pull the soul out of the present where God meets it, a vivid account of anxiety's spiritual mechanics. Supports session 2." },
-    { "title": "The Confessions", "author": "Augustine of Hippo", "note": "The source of the line that the heart is restless until it rests in God, naming the restlessness beneath much human anxiety. Background for session 5 on rest." },
-    { "title": "The Anatomy of the Soul", "author": "Curt Thompson", "note": "A Christian psychiatrist's account of how the brain, relationships, and the spiritual life intertwine, useful for holding body and soul together rather than reducing one to the other. Leader to confirm before stating its arguments as the study's position. Offered as a balancing voice for session 1." },
-    { "title": "Why Do I Feel Like This? Understand Your Difficult Emotions and Find Grace to Move Through", "author": "Peace Amadi", "note": "A Christian psychologist's treatment of difficult emotions that takes the clinical reality seriously alongside faith. Not cited by Bell directly. Leader to confirm before attributing specific claims, offered as a voice honoring the medical side across the study." },
-    { "title": "Running Scared: Fear, Worry, and the God of Rest", "author": "Edward T. Welch", "note": "A fuller biblical treatment of fear and worry oriented around the rest God gives, paralleling the study's arc from worry to rest. Leader to confirm specifics before pressing them as Bell's own argument." }
+    {
+      "title": "Gentle and Lowly: The Heart of Christ for Sinners and Sufferers",
+      "author": "Dane Ortlund",
+      "note": "Draws out Matthew 11 and the one place Jesus describes his own heart as gentle and lowly toward the weary. The pastoral spine of session 5."
+    },
+    {
+      "title": "The Rare Jewel of Christian Contentment",
+      "author": "Jeremiah Burroughs",
+      "note": "The Puritan classic showing contentment is a learned inward grace and not a native temperament, echoing Paul's I have learned to be content. Anchors session 3."
+    },
+    {
+      "title": "A Small Book for the Anxious Heart",
+      "author": "Edward T. Welch",
+      "note": "A gentle, biblically grounded set of meditations for the worried that refuses to shame the anxious. Useful across all five sessions. Leader to confirm specific claims before attributing them to Bell."
+    },
+    {
+      "title": "Reformed Preaching, and broader writing on the fear of man",
+      "author": "Edward T. Welch",
+      "note": "Welch's work on the fear of man and the misplaced trust under much anxiety informs the soul-side of the diagnosis in session 1. Leader to confirm the specifics before pressing them as settled."
+    },
+    {
+      "title": "When the Darkness Will Not Lift: Doing What We Can While We Wait for God",
+      "author": "John Piper",
+      "note": "A short, tender treatment of spiritual darkness that takes both the soul and the body seriously and refuses easy answers. Supports sessions 1 and 3 on prayers that seem unanswered."
+    },
+    {
+      "title": "Spurgeon's Sorrows: Realistic Hope for Those Who Suffer from Depression",
+      "author": "Zack Eswine",
+      "note": "On Charles Spurgeon's lifelong battle with depression, showing a great preacher who suffered and did not regard it as simple unbelief. Background for the study's refusal to equate anxiety with weak faith."
+    },
+    {
+      "title": "The Imitation of Christ",
+      "author": "Thomas a Kempis",
+      "note": "The contemplative classic counseling the troubled soul to bring its disquiet to Christ rather than lean on its own management. Background for sessions 4 and 5."
+    },
+    {
+      "title": "The Screwtape Letters",
+      "author": "C. S. Lewis",
+      "note": "Depicts how fear of an unknown future is used to pull the soul out of the present where God meets it, a vivid account of anxiety's spiritual mechanics. Supports session 2."
+    },
+    {
+      "title": "The Confessions",
+      "author": "Augustine of Hippo",
+      "note": "The source of the line that the heart is restless until it rests in God, naming the restlessness beneath much human anxiety. Background for session 5 on rest."
+    },
+    {
+      "title": "The Anatomy of the Soul",
+      "author": "Curt Thompson",
+      "note": "A Christian psychiatrist's account of how the brain, relationships, and the spiritual life intertwine, useful for holding body and soul together rather than reducing one to the other. Leader to confirm before stating its arguments as the study's position. Offered as a balancing voice for session 1."
+    },
+    {
+      "title": "Why Do I Feel Like This? Understand Your Difficult Emotions and Find Grace to Move Through",
+      "author": "Peace Amadi",
+      "note": "A Christian psychologist's treatment of difficult emotions that takes the clinical reality seriously alongside faith. Not cited by Bell directly. Leader to confirm before attributing specific claims, offered as a voice honoring the medical side across the study."
+    },
+    {
+      "title": "Running Scared: Fear, Worry, and the God of Rest",
+      "author": "Edward T. Welch",
+      "note": "A fuller biblical treatment of fear and worry oriented around the rest God gives, paralleling the study's arc from worry to rest. Leader to confirm specifics before pressing them as Bell's own argument."
+    }
   ],
   "furtherReading": [
     "Gentle and Lowly, Dane Ortlund, for readers who want to sit longer with the heart of Christ toward the weary that anchors session 5.",
@@ -301,32 +734,127 @@
     "The Anatomy of the Soul, Curt Thompson, for those who want to think honestly about how body, brain, and soul intertwine in anxiety, read alongside the study's refusal to reduce the person to chemistry."
   ],
   "glossary": [
-    { "term": "Anxiety", "definition": "The dread, worry, or alarm that fastens onto an uncertain future or an unguaranteed outcome. Scripture treats it not as a single thing but as sometimes the soul afraid, sometimes the body broken, often both at once, and the study refuses to flatten it into only one." },
-    { "term": "Clinical anxiety", "definition": "Anxiety with a medical root, a disorder of the body and brain chemistry that prayer and trust alone do not reach and that needs a doctor's help. The study insists it is no more a sin than a broken arm, and getting help for it is not a failure of faith." },
-    { "term": "Worry", "definition": "The ordinary anxious rehearsal of feared outcomes that Jesus addresses with the birds and the lilies. He calls it useless, since it cannot add a single hour to life, and locates it in a soul that has forgotten it has a Father." },
-    { "term": "Providence", "definition": "The doctrine that God not only made the world but actively upholds and governs it down to the falling of a sparrow and the numbered hairs of a head, the attentiveness that makes casting your care on him something more than throwing it into the void." },
-    { "term": "Casting", "definition": "Peter's word for what to do with anxiety, meaning to throw or hurl, the forceful heaving of a crushing weight off yourself and onto God. It is an act of the will, not a feeling, repeated as often as we crawl back under the burden we set down." },
-    { "term": "The peace that guards", "definition": "Paul's term for the peace of God that surpasses understanding, pictured not as a feeling we summon but as a military garrison God posts around the heart and mind after the fear has been brought to him in prayer." },
-    { "term": "The yoke of Christ", "definition": "The image from Matthew 11 of the wooden frame that joins two animals so the stronger pulls the weight. Taking Christ's yoke is not adding a burden but being joined to the One who bears the part you cannot, so the load becomes light." },
-    { "term": "Gentle and lowly", "definition": "The only description Jesus gives of his own heart, in Matthew 11, naming his posture toward the weary and heavy laden as gentleness rather than irritation, the final word on how the anxious may come to him." },
-    { "term": "Sabbath rest", "definition": "The pattern of trust built into creation when God rested on the seventh day and into the law that forbade Israel's ceaseless labor, fulfilled in the rest Christ gives, a ceasing from the striving to secure ourselves, including the striving to manage our own fear." },
-    { "term": "The fear of man", "definition": "The anxious overweighting of other people's opinions and approval, a common root of worry in which the soul has handed to people a power and a verdict that belong to God alone." },
-    { "term": "Acedia", "definition": "An old name for a listless restlessness or spiritual sloth of soul, once used to fold melancholy and what we would now call depression or anxiety into a moral category. The study notes the insight buried in it and rejects the cruelty it hardened into." },
-    { "term": "Anfechtungen", "definition": "Luther's word for the severe spells of dread, doubt, and spiritual assault he endured, which he insisted were not always the soul's guilt but sometimes attacks to be survived by clinging to the promises of Christ." },
-    { "term": "Consolation", "definition": "The felt sweetness of God's presence, distinguished by the older spiritual writers from the underlying reality of being held by God. Consolation comes and goes and is never under our control, while the gift of God's care does not depend on the feeling." },
-    { "term": "Contentment", "definition": "The learned inward grace Paul names, the settledness in whatever state he found himself, not a native calm temperament but a thing taught over time through trust in the God who supplies every need." }
+    {
+      "term": "Anxiety",
+      "definition": "The dread, worry, or alarm that fastens onto an uncertain future or an unguaranteed outcome. Scripture treats it not as a single thing but as sometimes the soul afraid, sometimes the body broken, often both at once, and the study refuses to flatten it into only one."
+    },
+    {
+      "term": "Clinical anxiety",
+      "definition": "Anxiety with a medical root, a disorder of the body and brain chemistry that prayer and trust alone do not reach and that needs a doctor's help. The study insists it is no more a sin than a broken arm, and getting help for it is not a failure of faith."
+    },
+    {
+      "term": "Worry",
+      "definition": "The ordinary anxious rehearsal of feared outcomes that Jesus addresses with the birds and the lilies. He calls it useless, since it cannot add a single hour to life, and locates it in a soul that has forgotten it has a Father."
+    },
+    {
+      "term": "Providence",
+      "definition": "The doctrine that God not only made the world but actively upholds and governs it down to the falling of a sparrow and the numbered hairs of a head, the attentiveness that makes casting your care on him something more than throwing it into the void."
+    },
+    {
+      "term": "Casting",
+      "definition": "Peter's word for what to do with anxiety, meaning to throw or hurl, the forceful heaving of a crushing weight off yourself and onto God. It is an act of the will, not a feeling, repeated as often as we crawl back under the burden we set down."
+    },
+    {
+      "term": "The peace that guards",
+      "definition": "Paul's term for the peace of God that surpasses understanding, pictured not as a feeling we summon but as a military garrison God posts around the heart and mind after the fear has been brought to him in prayer."
+    },
+    {
+      "term": "The yoke of Christ",
+      "definition": "The image from Matthew 11 of the wooden frame that joins two animals so the stronger pulls the weight. Taking Christ's yoke is not adding a burden but being joined to the One who bears the part you cannot, so the load becomes light."
+    },
+    {
+      "term": "Gentle and lowly",
+      "definition": "The only description Jesus gives of his own heart, in Matthew 11, naming his posture toward the weary and heavy laden as gentleness rather than irritation, the final word on how the anxious may come to him."
+    },
+    {
+      "term": "Sabbath rest",
+      "definition": "The pattern of trust built into creation when God rested on the seventh day and into the law that forbade Israel's ceaseless labor, fulfilled in the rest Christ gives, a ceasing from the striving to secure ourselves, including the striving to manage our own fear."
+    },
+    {
+      "term": "The fear of man",
+      "definition": "The anxious overweighting of other people's opinions and approval, a common root of worry in which the soul has handed to people a power and a verdict that belong to God alone."
+    },
+    {
+      "term": "Acedia",
+      "definition": "An old name for a listless restlessness or spiritual sloth of soul, once used to fold melancholy and what we would now call depression or anxiety into a moral category. The study notes the insight buried in it and rejects the cruelty it hardened into."
+    },
+    {
+      "term": "Anfechtungen",
+      "definition": "Luther's word for the severe spells of dread, doubt, and spiritual assault he endured, which he insisted were not always the soul's guilt but sometimes attacks to be survived by clinging to the promises of Christ."
+    },
+    {
+      "term": "Consolation",
+      "definition": "The felt sweetness of God's presence, distinguished by the older spiritual writers from the underlying reality of being held by God. Consolation comes and goes and is never under our control, while the gift of God's care does not depend on the feeling."
+    },
+    {
+      "term": "Contentment",
+      "definition": "The learned inward grace Paul names, the settledness in whatever state he found himself, not a native calm temperament but a thing taught over time through trust in the God who supplies every need."
+    }
   ],
   "scriptureIndex": [
-    { "ref": "Psalm 23", "sessions": [5] },
-    { "ref": "Psalm 42:5", "sessions": [1] },
-    { "ref": "Psalm 55:22", "sessions": [4] },
-    { "ref": "Matthew 6:25-34", "sessions": [1, 2] },
-    { "ref": "Matthew 10:29-31", "sessions": [2] },
-    { "ref": "Matthew 11:28-30", "sessions": [1, 5] },
-    { "ref": "Luke 12:22-34", "sessions": [2] },
-    { "ref": "John 14:27", "sessions": [4] },
-    { "ref": "Philippians 4:4-9", "sessions": [3] },
-    { "ref": "1 Peter 5:6-7", "sessions": [1, 4] }
+    {
+      "ref": "Psalm 23",
+      "sessions": [
+        5
+      ]
+    },
+    {
+      "ref": "Psalm 42:5",
+      "sessions": [
+        1
+      ]
+    },
+    {
+      "ref": "Psalm 55:22",
+      "sessions": [
+        4
+      ]
+    },
+    {
+      "ref": "Matthew 6:25-34",
+      "sessions": [
+        1,
+        2
+      ]
+    },
+    {
+      "ref": "Matthew 10:29-31",
+      "sessions": [
+        2
+      ]
+    },
+    {
+      "ref": "Matthew 11:28-30",
+      "sessions": [
+        1,
+        5
+      ]
+    },
+    {
+      "ref": "Luke 12:22-34",
+      "sessions": [
+        2
+      ]
+    },
+    {
+      "ref": "John 14:27",
+      "sessions": [
+        4
+      ]
+    },
+    {
+      "ref": "Philippians 4:4-9",
+      "sessions": [
+        3
+      ]
+    },
+    {
+      "ref": "1 Peter 5:6-7",
+      "sessions": [
+        1,
+        4
+      ]
+    }
   ],
   "promoKit": {
     "bulletinBlurb": "Worry gets handled two wrong ways in church, scolded as weak faith or waved off as nobody's business but your doctor's, and almost no one stops to ask what Jesus actually said. This five-session study, drawn from James Bell's Consider the Birds, walks slowly through what anxiety is and is not, the birds and the lilies Jesus told us to look at, the peace Paul wrote about from a prison cell, casting our weight on the One who cares, and the rest Christ gives the weary. It takes anxiety seriously, including the kind that needs a doctor, and it never shames the worried. Built so any volunteer can lead it with no prep. Come honest, not finished.",
@@ -342,5 +870,6 @@
       "You do not come to Jesus to take on more. You come to stop carrying it alone.",
       "Learn from me, he said, for I am gentle and lowly in heart. That is the final word on how the anxious may come."
     ]
-  }
+  },
+  "kicker": "Consider the Birds"
 }

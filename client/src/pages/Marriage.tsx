@@ -6,6 +6,8 @@ import { NewsletterSignup } from "@/components/NewsletterSignup";
 import PillarLeadMagnet from "@/components/PillarLeadMagnet";
 import { CrisisHelp } from "@/components/CrisisHelp";
 import { StatementBand, SectionArt } from "@/components/EditorialBlocks";
+import SubjectShelf from "@/components/SubjectShelf";
+import { subjectById } from "@/lib/subjects";
 
 export default function Marriage() {
 
@@ -52,17 +54,17 @@ export default function Marriage() {
     {
       title: "Marriage: Covenant & Roles",
       description: "What covenant means, what you promised, and how two people lead and serve when love feels impossible.",
-      href: "/read/essays-marriage-covenant-roles"
+      href: "/writing?q=covenant"
     },
     {
       title: "Marriage: Communication & Conflict",
       description: "How to fight fair, have the conversations you've been avoiding, and repair after rupture.",
-      href: "/read/essays-marriage-communication-conflict"
+      href: "/writing?q=conflict"
     },
     {
       title: "Marriage: Crisis & Rebuilding",
       description: "Affairs, addiction, divorce, and the long work of starting again when the marriage nearly ended.",
-      href: "/read/essays-marriage-crisis-repair"
+      href: "/writing?q=marriage"
     }
   ];
 
@@ -160,7 +162,7 @@ export default function Marriage() {
                     {path.description}
                   </p>
                   <div style={{ fontSize: "12px", fontWeight: "bold", color: "var(--gold)" }}>
-                    Read the book, free →
+                    Read the essays →
                   </div>
                 </div>
               </Link>
@@ -195,7 +197,7 @@ export default function Marriage() {
       <section style={{ background: "var(--bone)", padding: "80px 20px" }}>
         <div style={{ maxWidth: "800px", margin: "0 auto", textAlign: "center" }}>
           <h2 style={{ fontSize: "32px", fontWeight: "bold", marginBottom: "16px", fontFamily: "var(--F)", color: "var(--ink)" }}>
-            Your marriage can be more than you thought possible.
+            Start with an honest reading of where you are.
           </h2>
           <p style={{ fontSize: "16px", lineHeight: "1.8", marginBottom: "32px", color: "var(--ink3)" }}>
             Start with the Marriage Health Assessment. It takes 10 minutes and will show you exactly where your marriage is strongest and where repair work begins.
@@ -214,6 +216,7 @@ export default function Marriage() {
         </div>
       </section>
 
+      {subjectById("marriage") && <SubjectShelf subject={subjectById("marriage")!} />}
       <CrisisHelp />
       </main>
 

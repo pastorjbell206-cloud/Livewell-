@@ -17,6 +17,7 @@ import { recordReadEvent } from "@/components/ReadDepthBeacon";
 import { ArrowLeft, BookOpen, Bookmark, Share2, User } from "lucide-react";
 
 import Layout from "@/components/Layout";
+import { LoadFailed } from "@/components/LoadFailed";
 import PageEndNav from "@/components/PageEndNav";
 import ReadingProgressBar from "@/components/ReadingProgressBar";
 import { SEOMeta, getArticleSchema, getBreadcrumbSchema } from "@/components/SEOMeta";
@@ -28,7 +29,7 @@ import { AudienceLabel } from "@/components/AudienceLabel";
 import { TrackChip } from "@/components/TrackChip";
 import { KeepReadingBook } from "@/components/KeepReadingBook";
 import { RelatedEssays } from "@/components/RelatedEssays";
-import ArticleNextSteps from "@/components/ArticleNextSteps";
+import ArticleNextSteps, { isArticleOnPath } from "@/components/ArticleNextSteps";
 import { SubstackSeriesNote } from "@/components/SubstackSeriesNote";
 import { GeneratedHero } from "@/components/GeneratedHero";
 import { trpc } from "@/lib/trpc";
@@ -494,6 +495,24 @@ export default function ArticleDetail() {
     );
   }
 
+  // A request that failed is not an article that does not exist. Telling a
+  // reader the piece is gone when the server simply did not answer is a lie
+  // the reader has no way to check, and it loses them for good.
+  if (postQuery.isError) {
+    return (
+      <Layout>
+        <div style={{ padding: "var(--s-6) var(--s-4)" }}>
+          <LoadFailed
+            what="This essay"
+            onRetry={() => void postQuery.refetch()}
+            backHref="/writing"
+            backLabel="Back to the writing"
+          />
+        </div>
+      </Layout>
+    );
+  }
+
   if (!post) {
     return (
       <Layout>
@@ -881,10 +900,21 @@ export default function ArticleDetail() {
 
             {/* NEXT STEPS — the matched tool and reading path for this essay
                 (built long ago, never imported; revived by QW-16) */}
-            <ArticleNextSteps articleSlug={post.slug ?? ""} articlePillar={post.pillar ?? ""} />
-
-            {/* KEEP READING — the book, then another essay */}
-            <KeepReadingBook post={post} />
+            {/* ONE PRIMARY NEXT STEP. A reader at the end of an essay is at
+                peak intent, so exactly one ask leads, chosen by where they
+                are: mid-path, the next essay in that path; otherwise the book
+                that carries the argument. The other demotes to a quiet line. */}
+            {isArticleOnPath(post.slug ?? "") ? (
+              <>
+                <ArticleNextSteps articleSlug={post.slug ?? ""} articlePillar={post.pillar ?? ""} />
+                <KeepReadingBook post={post} quiet />
+              </>
+            ) : (
+              <>
+                <KeepReadingBook post={post} />
+                <ArticleNextSteps articleSlug={post.slug ?? ""} articlePillar={post.pillar ?? ""} />
+              </>
+            )}
             <RelatedEssays post={post} />
 
             {/* NEWSLETTER (single CTA — no fake form) */}

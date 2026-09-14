@@ -18,6 +18,7 @@ import { SEOMeta } from "@/components/SEOMeta";
 import { StatementBand } from "@/components/EditorialBlocks";
 import { TrackChip } from "@/components/TrackChip";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
+import { LoadFailed } from "@/components/LoadFailed";
 import { trpc } from "@/lib/trpc";
 import { pillarToTrack, resolveTrack, pillarForPost, PILLAR_BY_SLUG, subThemesForPost, SUBTHEMES, PILLARS_V2, MOVEMENTS } from "@/lib/taxonomy";
 import {
@@ -67,6 +68,10 @@ export default function Writing() {
   const postsQuery = trpc.posts.listPublished.useQuery();
   const [search, setSearch] = useState("");
   const [showFilters, setShowFilters] = useState(false);
+  // Windowed render: hundreds of cards at once is a scroll of soup and a real
+  // render cost. Start at 24; the button below the grid grows the window, and
+  // any filter change resets it.
+  const [visibleCount, setVisibleCount] = useState(24);
 
   // URL-driven filter state. Reads ?track=, ?audience=, ?format=, ?q=.
   // Re-read on route change during render (the documented "state from
@@ -143,6 +148,9 @@ export default function Writing() {
     });
   }, [posts, activeTrack, activePillar, activeSubTheme, activeAudience, activeFormat, effectiveSearch, isNewPillar, newPillarName, activeSub, subLabel, activeSeries]);
 
+
+  useEffect(() => { setVisibleCount(24); }, [activeTrack, activePillar, activeSubTheme, activeAudience, activeFormat, effectiveSearch, activeSub, activeSeries]);
+
   const activePillarInfo = activePillar ? PILLAR_BY_SLUG.get(activePillar) ?? null : null;
 
   // Counts for hiding empty filter chips (so chips never lead to 0 results).
@@ -176,6 +184,29 @@ export default function Writing() {
   );
 
   const activeTrackInfo = activeTrack ? resolveTrack(activeTrack) : null;
+
+  /**
+   * Is the reader narrowing the list right now? The "N of M" count only means
+   * something when they are. Unfiltered it read as "958 of 962 essays shown",
+   * which looks like four went missing; in fact `posts` includes hidden
+   * duplicate stubs and catalog stubs that are excluded on purpose. Show the
+   * plain total when nothing is filtering, and the ratio when something is.
+   */
+  const allCount = useMemo(
+    () => posts.filter(p => !HIDDEN_SLUGS.has(p.slug) && isFullEssay(p)).length,
+    [posts]
+  );
+
+  const isFiltering = Boolean(
+    activeTrack ||
+      activePillar ||
+      activeSub ||
+      activeSeries ||
+      activeSubTheme ||
+      activeAudience ||
+      activeFormat ||
+      effectiveSearch
+  );
 
   return (
     <Layout>
@@ -271,7 +302,9 @@ export default function Writing() {
           >
             {postsQuery.isLoading
               ? "Loading…"
-              : `${filtered.length} of ${posts.length} essays shown`}
+              : isFiltering
+                ? `${filtered.length} of ${allCount} essays shown`
+                : `${filtered.length} essays`}
           </div>
 
           {/* Pillar 6 sub-theme chips */}
@@ -322,6 +355,28 @@ export default function Writing() {
                   {st.replace(/-/g, " ")}
                 </Link>
               ))}
+            </div>
+          )}
+
+          {rest.length > visibleCount && (
+            <div style={{ textAlign: "center", marginTop: "var(--s-5)" }}>
+              <button
+                type="button"
+                onClick={() => setVisibleCount(c => c + 48)}
+                style={{
+                  fontFamily: "var(--U)",
+                  fontSize: "14px",
+                  fontWeight: 600,
+                  color: "var(--ink)",
+                  background: "transparent",
+                  border: "1px solid var(--border)",
+                  borderRadius: "var(--radius-sm)",
+                  padding: "13px 28px",
+                  cursor: "pointer",
+                }}
+              >
+                Show more — {rest.length - visibleCount} remaining
+              </button>
             </div>
           )}
         </div>
@@ -658,7 +713,19 @@ export default function Writing() {
             </div>
           )}
 
-          {!postsQuery.isLoading && rest.length === 0 && (
+          {/* A failed request is not an empty result. Telling a reader to
+              change their filter when the server never answered sends them
+              hunting for a mistake they did not make. */}
+          {postsQuery.isError && (
+            <LoadFailed
+              what="The writing"
+              onRetry={() => void postsQuery.refetch()}
+              backHref="/"
+              backLabel="Back to the home page"
+            />
+          )}
+
+          {!postsQuery.isLoading && !postsQuery.isError && rest.length === 0 && (
             <p
               style={{
                 fontFamily: "var(--B)",
@@ -679,7 +746,7 @@ export default function Writing() {
                 gap: "24px",
               }}
             >
-              {rest.map(post => (
+              {rest.slice(0, visibleCount).map(post => (
                 <Link
                   key={post.id}
                   href={`/writing/${post.slug}`}
@@ -690,7 +757,7 @@ export default function Writing() {
                       background: "var(--card)",
                       border: "1px solid var(--border)",
                       borderRadius: "var(--radius-sm)",
-                      padding: "var(--s-4)",
+                      overflow: "hidden",
                       height: "100%",
                       display: "flex",
                       flexDirection: "column",
@@ -704,6 +771,20 @@ export default function Writing() {
                       e.currentTarget.style.borderColor = "var(--border)";
                     }}
                   >
+                    {/* Branded typographic card art — the same generator that
+                        renders every essay's share card, so the archive reads
+                        as a designed library rather than a wall of text. Edge-
+                        cached for a year per title, lazy below the fold. */}
+                    <img
+                      loading="lazy"
+                      decoding="async"
+                      src={`/api/og?title=${encodeURIComponent(post.title)}${post.pillar ? `&pillar=${encodeURIComponent(post.pillar)}` : ""}`}
+                      alt=""
+                      width={1200}
+                      height={630}
+                      style={{ width: "100%", height: "auto", display: "block", borderBottom: "1px solid var(--border)" }}
+                    />
+                    <div style={{ padding: "var(--s-4)", display: "flex", flexDirection: "column", flex: 1 }}>
                     <div style={{ marginBottom: "12px" }}>
                       <TrackChip pillarOrTrack={post.pillar} slug={post.slug} asLink={false} />
                     </div>
@@ -748,6 +829,7 @@ export default function Writing() {
                       {post.format && post.format !== "article" && (
                         <span>{FORMAT_LABELS[post.format] ?? post.format}</span>
                       )}
+                    </div>
                     </div>
                   </article>
                 </Link>
