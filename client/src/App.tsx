@@ -113,6 +113,7 @@ const Privacy = lazy(() => import("./pages/Privacy"));
 const Accessibility = lazy(() => import("./pages/Accessibility"));
 const Terms = lazy(() => import("./pages/Terms"));
 const ToolsHub = lazy(() => import("./pages/ToolsHub"));
+const Study = lazy(() => import("./pages/Study"));
 const VerseFinder = lazy(() => import("./pages/tools/VerseFinder"));
 const PrayerGenerator = lazy(() => import("./pages/tools/PrayerGenerator"));
 const BibleStudy = lazy(() => import("./pages/tools/BibleStudy"));
@@ -152,7 +153,6 @@ const NationHub = lazy(() => import("./pages/nation/NationHub"));
 const NationEssay = lazy(() => import("./pages/nation/NationEssay"));
 const NationScorecard = lazy(() => import("./pages/nation/NationScorecard"));
 const NationPolicy = lazy(() => import("./pages/nation/NationPolicy"));
-const SermonSeries = lazy(() => import("./pages/leadership/SermonSeries"));
 const PropheticLament = lazy(() => import("./pages/prophetic/PropheticLament"));
 const EmotionalHealth = lazy(() => import("./pages/tools/EmotionalHealth"));
 const SavedItems = lazy(() => import("./pages/tools/SavedItems"));
@@ -556,6 +556,7 @@ function Router() {
         <Route path="/explore" component={Explore} />
         <Route path="/library" component={Library} />
         <Route path="/diagnostic" component={Diagnostic} />
+        <Route path="/study" component={Study} />
         <Route path="/tools" component={ToolsHub} />
         <Route path="/tools/verse-finder" component={VerseFinder} />
         <Route path="/tools/prayer-generator" component={PrayerGenerator} />

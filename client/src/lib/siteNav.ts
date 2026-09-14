@@ -84,8 +84,9 @@ export const SITE_NAV_GROUPS: SiteNavGroup[] = [
     // history and the theology the study stands on.
     title: "Study",
     links: [
+      { label: "Study the Bible", href: "/study", primary: true },
       { label: "Study any passage", href: "/tools/deep-bible", primary: true },
-      { label: "A passage in context", href: "/tools/passage-context", primary: true },
+      { label: "A passage in context", href: "/theology/passage", primary: true },
       { label: "What the Bible says about…", href: "/tools/bible-on", primary: true },
       { label: "Find a verse by topic", href: "/tools/verse-finder", primary: true },
       { label: "Twelve books, studied", href: "/tools/bible-study", primary: true },
