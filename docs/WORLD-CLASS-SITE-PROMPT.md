@@ -56,14 +56,16 @@ arranged by what the reader is holding: a reference, a topic, a question, a
 book, a word they do not know.
 
 **The reader who wants the church's history.** Two front doors exist right now,
-`/church-history` and `/theology/history`, and they do not agree. The library
-underneath (`client/public/history/` and `client/public/theology/`) holds the
-councils, figures, heresies, and timeline in two copies that have already
-diverged. A reader cannot tell which is the real one. The path world-class
-requires: one door, one library, an arc a person can actually walk — from the
-first Christians to the present, with the figures and the councils hung on the
-timeline where they happened, each one linking to the essay that tells its
-story and the doctrine it settled.
+`/church-history` (a landing page with its own hand-written list of six eras)
+and `/theology/history` (the hub that actually reads the library), and they do
+not agree on what the history is. The library underneath is in one place —
+`client/public/theology/` holds the 11 councils, 36 figures, 10 heresies, and
+seven-era timeline — while the 22 history essays are indexed separately in
+`client/public/history/essays-index.json` and nothing hangs them on the
+timeline. The path world-class requires: one door, one arc a person can
+actually walk — from the first Christians to the present — with the figures,
+the councils, and the essays hung on the timeline where they happened, each
+linking to the doctrine it settled.
 
 **The reader who came for an essay.** They arrived from a search result or a
 friend's link, they are on one essay, and they will decide in ninety seconds
