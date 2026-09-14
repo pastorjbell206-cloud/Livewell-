@@ -344,10 +344,10 @@ export default function StartHereQuiz() {
             {/* RESULTS PAGE */}
             <div style={{ textAlign: "center", marginBottom: "48px" }}>
               <h1 style={{ fontSize: "36px", fontWeight: "bold", color: "var(--ink)", marginBottom: "16px", fontFamily: "var(--F)" }}>
-                Your Personalized Reading Path
+                Where to start
               </h1>
               <p style={{ fontSize: "16px", color: "var(--ink3)", marginBottom: "24px" }}>
-                Based on where you are, here's where to start:
+                Three essays for what you said is weighing on you, and one book after them. If what you named is a crisis, a reading list is not enough on its own. The Care Plans under Help are built for that, and a real person is better than any page here.
               </p>
               <h2 style={{ fontSize: "24px", fontWeight: "bold", color: "var(--ink)", marginBottom: "32px", fontFamily: "var(--F)" }}>
                 {readingPath.title}
@@ -357,7 +357,7 @@ export default function StartHereQuiz() {
             {/* ARTICLES */}
             <div style={{ marginBottom: "48px" }}>
               <h3 style={{ fontSize: "18px", fontWeight: "bold", color: "var(--ink)", marginBottom: "24px" }}>
-                Start with these articles:
+                Start with these essays
               </h3>
               <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
                 {readingPath.articles.map((article, i) => (
@@ -368,7 +368,7 @@ export default function StartHereQuiz() {
                           {article.title}
                         </h4>
                         <p style={{ fontSize: "13px", color: "var(--ink3)", margin: 0 }}>
-                          7-12 min read
+                          Essay
                         </p>
                       </div>
                       <span style={{ color: "var(--gold)", fontWeight: "bold", marginLeft: "16px", whiteSpace: "nowrap" }}>
@@ -389,7 +389,7 @@ export default function StartHereQuiz() {
                 {readingPath.book}
               </h3>
               <p style={{ fontSize: "14px", color: "var(--ink3)", marginBottom: "16px" }}>
-                Go deeper with James Bell's most comprehensive work on this topic.
+                A book from the same desk, longer than an essay and slower to finish, for when three pieces are not enough.
               </p>
               <Link href="/books" style={{ display: "inline-block", background: "var(--ink)", color: "var(--paper)", padding: "14px 24px", minHeight: "44px", lineHeight: "16px", fontSize: "14px", fontWeight: "bold", borderRadius: "4px", textDecoration: "none", boxSizing: "border-box" }}>
                 View Books

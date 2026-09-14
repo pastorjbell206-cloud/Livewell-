@@ -33,7 +33,7 @@ const COMPARISONS = [
   },
   {
     category: "Formation",
-    liturgical: "Worship forms you by repetition. You become what you pray. The fixed prayers, the creeds, the lectionary readings — they shape the imagination over decades. James K.A. Smith: liturgies are 'formative practices that train our hearts.'",
+    liturgical: "Worship forms you by repetition. You become what you pray. The fixed prayers, the creeds, the lectionary readings — they shape the imagination over decades. James K.A. Smith argues that liturgies are formative practices that train the heart.",
     contemporary: "Worship forms you by encounter. The emotional experience of meeting God in the moment — through a powerful song, a moving sermon, a prayer response — is the primary means of spiritual formation. The best services produce transformation.",
   },
 ];
@@ -76,7 +76,7 @@ const FAQ_ITEMS = [
   },
   {
     question: "Is contemporary worship biblical?",
-    answer: "The New Testament does not prescribe a worship format. The early church gathered for the apostles' teaching, fellowship, breaking of bread, and prayer (Acts 2:42). Within a generation, that developed into the Word-and-Table structure that liturgical churches preserve. Contemporary worship's informality is not anti-biblical, but it is historically novel — the first nineteen centuries of Christianity would not recognize it. That does not make it wrong. But it should make its practitioners more humble about claiming biblical warrant.",
+    answer: "The New Testament does not prescribe a worship format. The early church gathered for the apostles' teaching, fellowship, breaking of bread, and prayer (Acts 2:42). Within a generation, that developed into the Word-and-Table structure that liturgical churches preserve. Contemporary worship's informality is not anti-biblical, but it is historically novel. The worship set, the projection screen, and the service built to carry a visitor toward a decision descend from the revival tradition of the nineteenth century and the Jesus Movement of the twentieth, not from the church of Justin Martyr. That does not make it wrong. But it should make its practitioners more humble about claiming biblical warrant.",
   },
   {
     question: "What is the blended model?",

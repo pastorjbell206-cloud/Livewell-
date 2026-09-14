@@ -79,7 +79,7 @@ export default function FaithAfterDeconstruction() {
             People are taking apart the faith they were handed, and the church mostly answers with fear. But some of that taking-apart is the Spirit's work, not the devil's. The faith you were given was often the gospel fused with its cultural packaging, and pulling it apart can clear the ground for something that can actually bear weight. This book honors the honest questions, refuses the cheap answers, and shows a way through the wilderness to a faith that holds because it was tested.
           </p>
           <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink-muted)" }}>
-            By James Bell, who has had his own faith come apart and be rebuilt, and does not write as a gatekeeper. Read the opening below, free.
+            By James Bell, who came to faith from atheism and does not write as a gatekeeper. Read the opening below, free.
           </p>
         </div>
       </section>

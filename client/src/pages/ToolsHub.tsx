@@ -56,7 +56,7 @@ export const TOOLS = [
   },
   {
     title: "Rule of Life Builder",
-    description: "A rule of life is not a performance contract. It is a trellis. Choose sustainable practices across prayer, Scripture, rest, community, mission, and the body, and build a rhythm of grace you can actually keep. Part of Integrated Life.",
+    description: "A rule of life is not a performance contract. It is a trellis. Choose sustainable practices across prayer, Scripture, rest, community, mission, and the body, and settle on a pattern you can actually keep on an ordinary week. Part of Integrated Life.",
     href: "/tools/rule-of-life",
     icon: Target,
     color: "var(--goldlt)",
@@ -84,14 +84,14 @@ export const TOOLS = [
   },
   {
     title: "Bible Verse Finder",
-    description: "Find Scripture for any season of life. Search by topic — anxiety, grief, hope, courage, marriage, and more — and get curated verses you can copy and share.",
+    description: "Search Scripture by what you are carrying: anxiety, grief, courage, marriage, and more. Each search returns the passages themselves, with the reference, so you can read them in context, copy them, and keep the ones you need.",
     href: "/tools/verse-finder",
     icon: BookOpen,
     color: "var(--ink2)",
   },
   {
     title: "Prayer Generator",
-    description: "Guided prayers for every occasion. Choose a prayer type — morning, evening, strength, guidance, gratitude — and receive a theologically rich prayer you can personalize.",
+    description: "Words for when you do not have your own. Choose the hour or the need, morning, evening, strength, guidance, gratitude, and get a written prayer you can change until it says what you mean.",
     href: "/tools/prayer-generator",
     icon: Heart,
     color: "var(--ink)",
@@ -196,7 +196,7 @@ export const TOOLS = [
   },
   {
     title: "The Party Scorecard",
-    description: "How close is each party to the Bible, theme by theme? An even-handed tally built to come out split. The real test is whether you can name where your own side falls short.",
+    description: "How close is each party to the Bible, theme by theme? An honest tally that lands where the evidence puts it, not where either side would like. The real test is whether you can name where your own side falls short.",
     href: "/nation/scorecard",
     icon: Target,
     color: "var(--ink2)",

@@ -76,7 +76,7 @@ export default function OrdinaryHoliness() {
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-4)" }}>
         <div style={prose}>
           <p style={{ fontFamily: "var(--B)", fontSize: "19px", lineHeight: 1.8, color: "var(--ink)" }}>
-            We were taught to look for God on the mountaintop, and so we miss him in the only place he mostly comes: the ordinary. The dishes, the commute, the diaper, the meeting, the marriage on a Tuesday, the work no one sees. Holiness is not an escape from ordinary life into a more religious one. It is God met and served in the life you already have. This is a theology of the ordinary, for people tired of being told their real life is a distraction from the spiritual one.
+            We were taught to look for God on the mountaintop, and so we miss him in the place he most often comes: the ordinary. The dishes, the commute, the diaper, the meeting, the marriage on a Tuesday, the work no one sees. Holiness is not an escape from ordinary life into a more religious one. It is God met and served in the life you already have. This is a theology of the ordinary, for people tired of being told their real life is a distraction from the spiritual one.
           </p>
           <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink-muted)" }}>
             By James Bell, who keeps looking for God in the dramatic and finding him in the dishes. Read the opening below, free.

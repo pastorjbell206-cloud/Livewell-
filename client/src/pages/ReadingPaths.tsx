@@ -25,7 +25,7 @@ const READING_PATHS: ReadingPath[] = [
     title: "When Your Marriage Is Drifting",
     introduction:
       "This path is for the person who has not given up but who has noticed the distance — the silence at dinner, the resentment that calcified so slowly neither of you can name when it started. These essays will not fix your marriage. They will name what is actually happening, which is where repair begins.",
-    estimatedTime: "45 minutes of reading that could change the next 40 years",
+    estimatedTime: "45 minutes of reading, for the marriage you have not given up on",
     articles: [
       {
         title: "Why Do Married Couples Slowly Drift Apart?",
@@ -179,8 +179,8 @@ const READING_PATHS: ReadingPath[] = [
     id: 5,
     title: "Justice and the Kingdom — Where Faith Meets the World",
     introduction:
-      "The church has been silent. These essays name what the silence cost. They trace the prophetic tradition from Amos to the present and refuse to let justice remain an abstraction.",
-    estimatedTime: "55 minutes that will not let you look away",
+      "The church has never lacked the texts. Amos, Isaiah, and James were read aloud in the same sanctuaries that went quiet when justice started to cost something, and the few who broke the silence were often punished for it by the rest of us. These essays name what the silence cost. They trace the prophetic tradition from Amos to the present and refuse to let justice remain an abstraction.",
+    estimatedTime: "55 minutes, from Amos to the present",
     articles: [
       {
         title: "Where the Church Was Silent",

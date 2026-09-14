@@ -117,7 +117,7 @@ export default function WhereYourTreasureIs() {
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
         <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
           <p style={{ fontFamily: "var(--F)", fontSize: "26px", lineHeight: 1.4, color: "var(--ink)", margin: "0 0 28px" }}>
-            Jesus talked about money more than he talked about heaven, and far more than he talked about hell. We have quietly agreed not to notice.
+            Jesus kept returning to money. He set his parables among laborers, landowners, debtors, and stewards, he gave it a name, mammon, and he called it a master. We have quietly agreed not to notice.
           </p>
           <div style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.75, color: "var(--ink)" }}>
             <p style={{ margin: "0 0 1.2em" }}>

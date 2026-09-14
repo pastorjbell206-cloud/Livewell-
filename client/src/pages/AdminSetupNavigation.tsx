@@ -113,8 +113,8 @@ export default function AdminSetupNavigation() {
           Set up navigation
         </h1>
         <p className="font-body mb-8" style={{ color: "var(--ink-muted)", lineHeight: 1.7 }}>
-          This organizes your articles into the new two-level menu — the five pillars and their
-          sub-pathways, plus the Study Guides &amp; Series section. It only adds the menu labels to
+          This organizes your articles into the new two-level menu: the sub-pathways under each
+          pillar, plus the Study Guides &amp; Series section. It only adds the menu labels to
           each article. It never changes a post's title, text, pillar, or published status. Safe to
           run more than once.
         </p>

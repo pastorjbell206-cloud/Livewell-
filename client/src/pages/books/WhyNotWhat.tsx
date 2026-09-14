@@ -85,8 +85,7 @@ export default function WhyNotWhat() {
             then what, every time, in every place it matters.
           </p>
           <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink-muted)" }}>
-            By James Bell, who came to faith from atheism when someone finally stopped answering his whats and let him
-            feel the weight of the why. Read the opening below, free.
+            By James Bell, who came to faith from atheism. Read the opening below, free.
           </p>
         </div>
       </section>

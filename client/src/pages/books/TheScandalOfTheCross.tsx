@@ -94,7 +94,7 @@ export default function TheScandalOfTheCross() {
       <section style={{ background: "var(--ink)", color: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
         <div style={{ ...prose, textAlign: "center" }}>
           <p style={{ fontFamily: "var(--F)", fontSize: "24px", fontStyle: "italic", margin: "0 0 22px", color: "rgba(245,240,230,.92)" }}>
-            We made the cross into jewelry. The first Christians could not even say the word without flinching.
+            Rome raised the cross to make a public example of a dying man. We hang it on a chain. Somewhere between the two, the scandal went quiet.
           </p>
           <div style={{ display: "inline-flex" }}>
             <BuyEbookButton slug={SLUG} title={TITLE} />

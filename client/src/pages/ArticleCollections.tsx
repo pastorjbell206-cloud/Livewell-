@@ -207,7 +207,7 @@ const COLLECTIONS: ArticleCollection[] = [
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
 const WHAT_YOU_GET = [
-  "Curated articles on a specific topic",
+  "Articles gathered on a single subject",
   "Professional PDF formatting for easy reading",
   "Discussion questions for small groups",
   "Lifetime access to download anytime",
@@ -218,7 +218,7 @@ export function ArticleCollections() {
     <Layout>
       <SEOMeta
         title="Article Collections — LiveWell by James Bell"
-        description="Curated collections of articles on pastoral health, leadership, marriage, prophetic witness, and spiritual formation — available as downloadable guides."
+        description="Collections of articles on pastoral health, leadership, marriage, prophetic witness, and spiritual formation, gathered as downloadable guides you own."
         url={`${SITE_URL}/article-collections`}
       />
 
@@ -274,8 +274,8 @@ export function ArticleCollections() {
               maxWidth: "62ch",
             }}
           >
-            Curated collections of articles on a single subject, set in clean PDF guides
-            you can read, print, and study with a group — yours for as long as you need them.
+            Articles on a single subject, gathered into clean PDF guides you can read,
+            print, and study with a group. Once you buy one, it is yours to keep.
           </p>
         </div>
       </section>
@@ -453,7 +453,7 @@ export function ArticleCollections() {
                     }}
                   >
                     <DollarSign size={16} />
-                    Buy Now
+                    Buy the collection
                   </button>
                   <button
                     type="button"

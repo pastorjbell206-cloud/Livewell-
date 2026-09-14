@@ -55,8 +55,8 @@ export default function SermonSeriesPage() {
   return (
     <Layout>
       <SEOMeta
-        title="Sermon Series Library — Ready-to-Preach Series for Pastors"
-        description="Structured 4-8 week preaching plans built from 60 post-Christian articles. Real Scripture, genuine outlines, concrete illustrations. Ready for your pulpit."
+        title="Sermon Series Library — Preaching Plans for Pastors"
+        description="Four- to eight-week preaching plans built from the post-Christian essays on this site: a primary text each week, a three-point outline, an illustration, and an application question."
         keywords="sermon series, preaching plans, sermon outlines, post-Christian preaching, pastoral resources, church sermon series"
         url="https://www.livewellbyjamesbell.co/sermon-series"
         structuredData={{
@@ -152,11 +152,13 @@ function SeriesIndex({ onSelect }: { onSelect: (s: SermonSeriesData) => void }) 
               marginBottom: "28px",
             }}
           >
-            Ready-to-preach series for pastors. Each plan maps 4 to 8 weeks of
-            sermons with real Scripture references, genuine three-point outlines,
-            concrete illustration suggestions, and application questions your
-            congregation can take home. Built from 60 deeply researched articles
-            on post-Christian faith.
+            Each plan maps four to eight weeks of sermons. Every week carries a
+            primary text and supporting passages, a three-point outline, a
+            suggested illustration, and an application question your
+            congregation can take home. The series are built from the essays on
+            post-Christian faith published here, and each week links back to the
+            essay it came from, so you can read the whole argument before you
+            preach it.
           </p>
           <div
             style={{
@@ -484,7 +486,7 @@ function SeriesDetail({
               transition: "all 240ms var(--ease)",
             }}
           >
-            <Printer size={14} /> Download Series Guide
+            <Printer size={14} /> Print the series guide
           </button>
         </div>
       </section>

@@ -280,7 +280,7 @@ export default function Dashboard() {
           >
             {stats.lastActive
               ? `Last active ${relativeTime(stats.lastActive)}`
-              : "Your reading begins here. Everything you engage with is tracked in this room."}
+              : "Your reading begins here. What you read and use will be kept in this room."}
           </p>
 
           {/* Stats row */}
@@ -828,8 +828,8 @@ export default function Dashboard() {
                   lineHeight: 1.7,
                 }}
               >
-                You have engaged with everything we would suggest. Keep reading.
-                The work is never done.
+                You have read or used everything on this page's list. The writing
+                runs deeper than the list does.
               </p>
             </div>
           ) : (

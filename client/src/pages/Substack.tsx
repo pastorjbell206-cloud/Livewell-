@@ -15,7 +15,7 @@ export default function SubstackPage() {
     <>
       <SEOMeta
         title="Newsletter"
-        description="Subscribe to James Bell's Substack newsletter for longer-form writing, personal reflections, and deep theological insights."
+        description="One serious essay a week from a working pastor: the church and the flag, Scripture read past the tribe, marriage after the tips run out, doubt taken seriously."
         keywords="newsletter, Substack, theology, faith, writing"
       />
       <Layout>
