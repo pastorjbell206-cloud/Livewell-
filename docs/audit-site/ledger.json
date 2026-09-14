@@ -248,19 +248,19 @@
       "kind": "route",
       "ref": "/answers",
       "id": "route:/answers",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "Kept as a destination in the recomposed header/footer map (docs/audit-site/decisions.md).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "route:/article-collections": {
       "kind": "route",
       "ref": "/article-collections",
       "id": "route:/article-collections",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "Kept as a destination in the recomposed header/footer map (docs/audit-site/decisions.md).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "route:/articles": {
       "kind": "route",
@@ -275,10 +275,10 @@
       "kind": "route",
       "ref": "/assessments",
       "id": "route:/assessments",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "Kept as a destination in the recomposed header/footer map (docs/audit-site/decisions.md).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "route:/babylon": {
       "kind": "route",
@@ -329,10 +329,10 @@
       "kind": "route",
       "ref": "/books",
       "id": "route:/books",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "Kept as a destination in the recomposed header/footer map (docs/audit-site/decisions.md).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "route:/books/believe": {
       "kind": "route",
@@ -536,10 +536,10 @@
       "kind": "route",
       "ref": "/church-history",
       "id": "route:/church-history",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "redirected",
+      "verdict": "redirected",
+      "notes": "Second front door to church history with its own hand-written era list, disagreeing with the hub that reads the library. 301 -> /theology/history. Inbound links keep working through the redirect; retarget them when their pages leave the repair set.",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "route:/church-hurt": {
       "kind": "route",
@@ -752,10 +752,10 @@
       "kind": "route",
       "ref": "/downloads",
       "id": "route:/downloads",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "Kept as a destination in the recomposed header/footer map (docs/audit-site/decisions.md).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "route:/exile": {
       "kind": "route",
@@ -770,10 +770,10 @@
       "kind": "route",
       "ref": "/explore",
       "id": "route:/explore",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "Kept as a destination in the recomposed header/footer map (docs/audit-site/decisions.md).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "route:/faith-after-deconstruction": {
       "kind": "route",
@@ -842,10 +842,10 @@
       "kind": "route",
       "ref": "/faq",
       "id": "route:/faq",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "Kept as a destination in the recomposed header/footer map (docs/audit-site/decisions.md).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "route:/faq/can-science-and-faith-coexist": {
       "kind": "route",
@@ -968,10 +968,10 @@
       "kind": "route",
       "ref": "/framework",
       "id": "route:/framework",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "redirected",
+      "verdict": "redirected",
+      "notes": "\"How the library fits together\" duplicates /pillars (the taxonomy spine). 301 -> /pillars.",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "route:/grief": {
       "kind": "route",
@@ -1022,28 +1022,28 @@
       "kind": "route",
       "ref": "/help",
       "id": "route:/help",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "Kept as a destination in the recomposed header/footer map (docs/audit-site/decisions.md).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "route:/historic-faith": {
       "kind": "route",
       "ref": "/historic-faith",
       "id": "route:/historic-faith",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "Kept as a destination in the recomposed header/footer map (docs/audit-site/decisions.md).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "route:/honest-questions": {
       "kind": "route",
       "ref": "/honest-questions",
       "id": "route:/honest-questions",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "Kept as a destination in the recomposed header/footer map (docs/audit-site/decisions.md).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "route:/how-to-read-the-bible": {
       "kind": "route",
@@ -1067,10 +1067,10 @@
       "kind": "route",
       "ref": "/how-tos",
       "id": "route:/how-tos",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "Kept as a destination in the recomposed header/footer map (docs/audit-site/decisions.md).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "route:/justice": {
       "kind": "route",
@@ -1130,19 +1130,19 @@
       "kind": "route",
       "ref": "/library",
       "id": "route:/library",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "Kept as a destination in the recomposed header/footer map (docs/audit-site/decisions.md).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "route:/life": {
       "kind": "route",
       "ref": "/life",
       "id": "route:/life",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "Kept as a destination in the recomposed header/footer map (docs/audit-site/decisions.md).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "route:/life/assessment": {
       "kind": "route",
@@ -1157,19 +1157,19 @@
       "kind": "route",
       "ref": "/living-well",
       "id": "route:/living-well",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "Kept as a destination in the recomposed header/footer map (docs/audit-site/decisions.md).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "route:/map": {
       "kind": "route",
       "ref": "/map",
       "id": "route:/map",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "Kept as a destination in the recomposed header/footer map (docs/audit-site/decisions.md).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "route:/marriage": {
       "kind": "route",
@@ -1418,19 +1418,19 @@
       "kind": "route",
       "ref": "/pathways",
       "id": "route:/pathways",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "Kept as a destination in the recomposed header/footer map (docs/audit-site/decisions.md).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "route:/pillars": {
       "kind": "route",
       "ref": "/pillars",
       "id": "route:/pillars",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "Kept as a destination in the recomposed header/footer map (docs/audit-site/decisions.md).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "route:/post-christian": {
       "kind": "route",
@@ -1499,10 +1499,10 @@
       "kind": "route",
       "ref": "/reading-paths",
       "id": "route:/reading-paths",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "Kept as a destination in the recomposed header/footer map (docs/audit-site/decisions.md).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "route:/reading-scripture-past-our-politics": {
       "kind": "route",
@@ -1517,10 +1517,10 @@
       "kind": "route",
       "ref": "/resources",
       "id": "route:/resources",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "Kept as a destination in the recomposed header/footer map (docs/audit-site/decisions.md).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "route:/resources/context": {
       "kind": "route",
@@ -1625,28 +1625,28 @@
       "kind": "route",
       "ref": "/start",
       "id": "route:/start",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "Kept as a destination in the recomposed header/footer map (docs/audit-site/decisions.md).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "route:/start-here": {
       "kind": "route",
       "ref": "/start-here",
       "id": "route:/start-here",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "redirected",
+      "verdict": "redirected",
+      "notes": "Duplicate front door for \"where do I begin\" (StartHereDiagnostic beside StartHereQuiz at /start). 301 -> /start in App.tsx + vercel.json. Open question for James: the Diagnostic may be the better instrument to sit behind /start.",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "route:/studyguides": {
       "kind": "route",
       "ref": "/studyguides",
       "id": "route:/studyguides",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "Kept as a destination in the recomposed header/footer map (docs/audit-site/decisions.md).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "route:/subscribe": {
       "kind": "route",
@@ -1760,10 +1760,10 @@
       "kind": "route",
       "ref": "/theology",
       "id": "route:/theology",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "Kept as a destination in the recomposed header/footer map (docs/audit-site/decisions.md).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "route:/theology/biblical": {
       "kind": "route",
@@ -1823,10 +1823,10 @@
       "kind": "route",
       "ref": "/theology/history",
       "id": "route:/theology/history",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "Kept as a destination in the recomposed header/footer map (docs/audit-site/decisions.md).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "route:/theology/how-to-use": {
       "kind": "route",
@@ -1895,10 +1895,10 @@
       "kind": "route",
       "ref": "/tools",
       "id": "route:/tools",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "Kept as a destination in the recomposed header/footer map (docs/audit-site/decisions.md).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "route:/tools/bible-on": {
       "kind": "route",
@@ -2210,10 +2210,10 @@
       "kind": "route",
       "ref": "/wisdom",
       "id": "route:/wisdom",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "Kept as a destination in the recomposed header/footer map (docs/audit-site/decisions.md).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "route:/work-with-james": {
       "kind": "route",
@@ -2228,10 +2228,10 @@
       "kind": "route",
       "ref": "/writing",
       "id": "route:/writing",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "Kept as a destination in the recomposed header/footer map (docs/audit-site/decisions.md).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "tool:/tools/bible-on": {
       "kind": "tool",
@@ -2445,450 +2445,450 @@
       "ref": "/start",
       "label": "Start Here",
       "id": "nav:/start",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "nav:/writing": {
       "kind": "nav",
       "ref": "/writing",
       "label": "All the writing",
       "id": "nav:/writing",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "nav:/explore": {
       "kind": "nav",
       "ref": "/explore",
       "label": "Explore everything",
       "id": "nav:/explore",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "nav:/theology": {
       "kind": "nav",
       "ref": "/theology",
       "label": "Theology",
       "id": "nav:/theology",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "nav:/theology/history": {
       "kind": "nav",
       "ref": "/theology/history",
       "label": "Church history",
       "id": "nav:/theology/history",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "nav:/justice": {
       "kind": "nav",
       "ref": "/justice",
       "label": "Justice",
       "id": "nav:/justice",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "nav:/disruption": {
       "kind": "nav",
       "ref": "/disruption",
       "label": "The church and power",
       "id": "nav:/disruption",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "nav:/writing?track=doubt": {
       "kind": "nav",
       "ref": "/writing?track=doubt",
       "label": "When faith has questions",
       "id": "nav:/writing?track=doubt",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "nav:/marriage": {
       "kind": "nav",
       "ref": "/marriage",
       "label": "Marriage",
       "id": "nav:/marriage",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "nav:/parenting": {
       "kind": "nav",
       "ref": "/parenting",
       "label": "Parenting",
       "id": "nav:/parenting",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "nav:/family": {
       "kind": "nav",
       "ref": "/family",
       "label": "Home and family",
       "id": "nav:/family",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "nav:/living-well": {
       "kind": "nav",
       "ref": "/living-well",
       "label": "Living well",
       "id": "nav:/living-well",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "nav:/historic-faith": {
       "kind": "nav",
       "ref": "/historic-faith",
       "label": "The historic faith",
       "id": "nav:/historic-faith",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "nav:/pillars": {
       "kind": "nav",
       "ref": "/pillars",
       "label": "All six pillars",
       "id": "nav:/pillars",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "nav:/map": {
       "kind": "nav",
       "ref": "/map",
       "label": "The map",
       "id": "nav:/map",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "nav:/framework": {
       "kind": "nav",
       "ref": "/framework",
       "label": "The framework",
       "id": "nav:/framework",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "Old-map link retired from siteNav.ts in the header recomposition; the page itself still exists.",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "nav:/article-collections": {
       "kind": "nav",
       "ref": "/article-collections",
       "label": "Article collections",
       "id": "nav:/article-collections",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "nav:/library": {
       "kind": "nav",
       "ref": "/library",
       "label": "The Commonplace",
       "id": "nav:/library",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "nav:/books": {
       "kind": "nav",
       "ref": "/books",
       "label": "The books",
       "id": "nav:/books",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "nav:/books/when-god-bless-america": {
       "kind": "nav",
       "ref": "/books/when-god-bless-america",
       "label": "When God Bless America Replaces Thy Kingdom Come",
       "id": "nav:/books/when-god-bless-america",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "nav:/books/the-monster-in-the-mirror": {
       "kind": "nav",
       "ref": "/books/the-monster-in-the-mirror",
       "label": "The Monster in the Mirror",
       "id": "nav:/books/the-monster-in-the-mirror",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "nav:/books/believe": {
       "kind": "nav",
       "ref": "/books/believe",
       "label": "Believe",
       "id": "nav:/books/believe",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "nav:/roadmap": {
       "kind": "nav",
       "ref": "/roadmap",
       "label": "The book roadmap",
       "id": "nav:/roadmap",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "nav:/tools": {
       "kind": "nav",
       "ref": "/tools",
       "label": "All tools",
       "id": "nav:/tools",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "nav:/assessments": {
       "kind": "nav",
       "ref": "/assessments",
       "label": "Where are you? (assessments)",
       "id": "nav:/assessments",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "nav:/studyguides": {
       "kind": "nav",
       "ref": "/studyguides",
       "label": "Study guides and curriculum",
       "id": "nav:/studyguides",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "nav:/pathways": {
       "kind": "nav",
       "ref": "/pathways",
       "label": "Guided reading paths",
       "id": "nav:/pathways",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "nav:/downloads": {
       "kind": "nav",
       "ref": "/downloads",
       "label": "Downloads and PDFs",
       "id": "nav:/downloads",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "nav:/answers": {
       "kind": "nav",
       "ref": "/answers",
       "label": "Answers to hard questions",
       "id": "nav:/answers",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "nav:/wisdom": {
       "kind": "nav",
       "ref": "/wisdom",
       "label": "Wisdom for all of life",
       "id": "nav:/wisdom",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "nav:/tools/wisdom-finder": {
       "kind": "nav",
       "ref": "/tools/wisdom-finder",
       "label": "Wisdom finder",
       "id": "nav:/tools/wisdom-finder",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "nav:/resources/hard-issues-series": {
       "kind": "nav",
       "ref": "/resources/hard-issues-series",
       "label": "The Hard Issues Series",
       "id": "nav:/resources/hard-issues-series",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "nav:/tools/theology-quiz": {
       "kind": "nav",
       "ref": "/tools/theology-quiz",
       "label": "Theology quiz",
       "id": "nav:/tools/theology-quiz",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "nav:/resources/context": {
       "kind": "nav",
       "ref": "/resources/context",
       "label": "Reading Scripture in context",
       "id": "nav:/resources/context",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "nav:/how-tos": {
       "kind": "nav",
       "ref": "/how-tos",
       "label": "How-to guides",
       "id": "nav:/how-tos",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "nav:/reading-paths": {
       "kind": "nav",
       "ref": "/reading-paths",
       "label": "Reading paths",
       "id": "nav:/reading-paths",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "nav:/faq": {
       "kind": "nav",
       "ref": "/faq",
       "label": "Questions people ask",
       "id": "nav:/faq",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "nav:/about": {
       "kind": "nav",
       "ref": "/about",
       "label": "About James Bell",
       "id": "nav:/about",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "nav:https://substack.com/@jamesbell333289": {
       "kind": "nav",
       "ref": "https://substack.com/@jamesbell333289",
       "label": "Newsletter (Substack)",
       "id": "nav:https://substack.com/@jamesbell333289",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "nav:http://followingthewaypodcast.com/": {
       "kind": "nav",
       "ref": "http://followingthewaypodcast.com/",
       "label": "Following the Way (podcast)",
       "id": "nav:http://followingthewaypodcast.com/",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "nav:mailto:Pastorjbell206@gmail.com": {
       "kind": "nav",
       "ref": "mailto:Pastorjbell206@gmail.com",
       "label": "Contact",
       "id": "nav:mailto:Pastorjbell206@gmail.com",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "nav:/membership": {
       "kind": "nav",
       "ref": "/membership",
       "label": "Membership",
       "id": "nav:/membership",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "nav:/work-with-james": {
       "kind": "nav",
       "ref": "/work-with-james",
       "label": "Work with James",
       "id": "nav:/work-with-james",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "nav:https://pastorsconnectionnetwork.com": {
       "kind": "nav",
       "ref": "https://pastorsconnectionnetwork.com",
       "label": "Pastors Connection Network",
       "id": "nav:https://pastorsconnectionnetwork.com",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "nav:https://endsinitiative.org": {
       "kind": "nav",
       "ref": "https://endsinitiative.org",
       "label": "ENDS",
       "id": "nav:https://endsinitiative.org",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     },
     "library:client/public/theology/church-history-councils.json": {
       "kind": "library",
@@ -2944,6 +2944,136 @@
       "verdict": null,
       "notes": null,
       "auditedAt": null
+    },
+    "nav:/tools/deep-bible": {
+      "kind": "nav",
+      "ref": "/tools/deep-bible",
+      "label": "Study any passage",
+      "id": "nav:/tools/deep-bible",
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
+    },
+    "nav:/tools/passage-context": {
+      "kind": "nav",
+      "ref": "/tools/passage-context",
+      "label": "A passage in context",
+      "id": "nav:/tools/passage-context",
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
+    },
+    "nav:/tools/bible-on": {
+      "kind": "nav",
+      "ref": "/tools/bible-on",
+      "label": "What the Bible says about…",
+      "id": "nav:/tools/bible-on",
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
+    },
+    "nav:/tools/verse-finder": {
+      "kind": "nav",
+      "ref": "/tools/verse-finder",
+      "label": "Find a verse by topic",
+      "id": "nav:/tools/verse-finder",
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
+    },
+    "nav:/tools/bible-study": {
+      "kind": "nav",
+      "ref": "/tools/bible-study",
+      "label": "Twelve books, studied",
+      "id": "nav:/tools/bible-study",
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
+    },
+    "nav:/tools/scripture-memory": {
+      "kind": "nav",
+      "ref": "/tools/scripture-memory",
+      "label": "Scripture memory",
+      "id": "nav:/tools/scripture-memory",
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
+    },
+    "nav:/tools/glossary": {
+      "kind": "nav",
+      "ref": "/tools/glossary",
+      "label": "Theology glossary",
+      "id": "nav:/tools/glossary",
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
+    },
+    "nav:/tools/test-the-case": {
+      "kind": "nav",
+      "ref": "/tools/test-the-case",
+      "label": "Test the case",
+      "id": "nav:/tools/test-the-case",
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
+    },
+    "nav:/tools/which-lens": {
+      "kind": "nav",
+      "ref": "/tools/which-lens",
+      "label": "Which lens are you reading through?",
+      "id": "nav:/tools/which-lens",
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
+    },
+    "nav:/honest-questions": {
+      "kind": "nav",
+      "ref": "/honest-questions",
+      "label": "Essays for skeptics and seekers",
+      "id": "nav:/honest-questions",
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
+    },
+    "nav:/help": {
+      "kind": "nav",
+      "ref": "/help",
+      "label": "Find help for what you are facing",
+      "id": "nav:/help",
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
+    },
+    "nav:/life": {
+      "kind": "nav",
+      "ref": "/life",
+      "label": "The whole of life",
+      "id": "nav:/life",
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
+    },
+    "nav:/resources": {
+      "kind": "nav",
+      "ref": "/resources",
+      "label": "Resources",
+      "id": "nav:/resources",
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
+      "auditedAt": "2026-09-14T19:45:08.578Z"
     }
   }
 }

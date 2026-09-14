@@ -109,7 +109,6 @@ const Doubt = lazy(() => import("./pages/Doubt"));
 const Help = lazy(() => import("./pages/Help"));
 const CarePlan = lazy(() => import("./pages/plans/CarePlan"));
 const StartHereQuiz = lazy(() => import("./pages/StartHereQuiz"));
-const StartHereDiagnostic = lazy(() => import("./pages/StartHereDiagnostic"));
 const Privacy = lazy(() => import("./pages/Privacy"));
 const Accessibility = lazy(() => import("./pages/Accessibility"));
 const Terms = lazy(() => import("./pages/Terms"));
@@ -131,7 +130,6 @@ const TheologyDoctrine = lazy(() => import("./pages/TheologyDoctrine"));
 const PassageContext = lazy(() => import("./pages/tools/PassageContext"));
 const TheologyHistory = lazy(() => import("./pages/TheologyHistory"));
 const HistoryEssay = lazy(() => import("./pages/history/HistoryEssay"));
-const Framework = lazy(() => import("./pages/Framework"));
 const TheologyBiblical = lazy(() => import("./pages/TheologyBiblical"));
 const TheologyCompare = lazy(() => import("./pages/TheologyCompare"));
 const TheologyGlossary = lazy(() => import("./pages/TheologyGlossary"));
@@ -177,7 +175,6 @@ const MarriageCrisis = lazy(() => import("./pages/landing/MarriageCrisis"));
 const GriefLanding = lazy(() => import("./pages/landing/Grief"));
 const ParentingStruggles = lazy(() => import("./pages/landing/ParentingStruggles"));
 const Deconstruction = lazy(() => import("./pages/landing/Deconstruction"));
-const ChurchHistory = lazy(() => import("./pages/landing/ChurchHistory"));
 const HistoricFaith = lazy(() => import("./pages/HistoricFaith"));
 const Answers = lazy(() => import("./pages/Answers"));
 const Assessments = lazy(() => import("./pages/Assessments"));
@@ -274,6 +271,21 @@ function ToBooksRedirect() {
   useEffect(() => { navigate("/books", { replace: true }); }, [navigate]);
   return null;
 }
+function ToStartRedirect() {
+  const [, navigate] = useLocation();
+  useEffect(() => { navigate("/start", { replace: true }); }, [navigate]);
+  return null;
+}
+function ToPillarsRedirect() {
+  const [, navigate] = useLocation();
+  useEffect(() => { navigate("/pillars", { replace: true }); }, [navigate]);
+  return null;
+}
+function ToChurchHistoryRedirect() {
+  const [, navigate] = useLocation();
+  useEffect(() => { navigate("/theology/history", { replace: true }); }, [navigate]);
+  return null;
+}
 function ForFamiliesRedirect() {
   const [, navigate] = useLocation();
   useEffect(() => { navigate("/parenting", { replace: true }); }, [navigate]);
@@ -363,7 +375,7 @@ function Router() {
         <Route path="/theology/passage" component={PassageContext} />
         <Route path="/theology/history/:slug" component={HistoryEssay} />
         <Route path="/theology/history" component={TheologyHistory} />
-        <Route path="/framework" component={Framework} />
+        <Route path="/framework" component={ToPillarsRedirect} />
         <Route path="/theology/biblical" component={TheologyBiblical} />
         <Route path="/theology/compare" component={TheologyCompare} />
         <Route path="/theology/glossary" component={TheologyGlossary} />
@@ -411,7 +423,7 @@ function Router() {
         <Route path="/help" component={Help} />
         <Route path="/plans/:slug">{(p) => <CarePlan key={p.slug} />}</Route>
         <Route path="/start" component={StartHereQuiz} />
-        <Route path="/start-here" component={StartHereDiagnostic} />
+        <Route path="/start-here" component={ToStartRedirect} />
         {/* Retired sections: 301'd in vercel.json, mirrored here for in-app links */}
         <Route path="/leadership/*?" component={PastorsMovedRedirect} />
         <Route path="/pastors" component={PastorsMovedRedirect} />
@@ -576,7 +588,7 @@ function Router() {
         <Route path="/grief" component={GriefLanding} />
         <Route path="/parenting-help" component={ParentingStruggles} />
         <Route path="/deconstruction" component={Deconstruction} />
-        <Route path="/church-history" component={ChurchHistory} />
+        <Route path="/church-history" component={ToChurchHistoryRedirect} />
         <Route path="/historic-faith" component={HistoricFaith} />
         <Route path="/answers" component={Answers} />
         <Route path="/assessments" component={Assessments} />
