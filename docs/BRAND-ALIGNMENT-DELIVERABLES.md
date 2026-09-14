@@ -469,9 +469,15 @@ An empty version of this section would be a red flag. It is not empty.
   index; §4 is a checklist, not a confirmation.
 - **The two production fixes in `api/index.ts`** (the missing
   `subscribers.subscribe` case on the single-call path, and the real feed sync)
-  are typechecked and mirror the working batch-path code, but there is no
-  database in this environment, so neither was exercised against MySQL. Watch
-  the first footer submit and the first admin Sync click on the preview.
+  are typechecked and mirror the working batch-path code, and every column the
+  new INSERT names was checked against this file's own `SCHEMA_SQL` for `posts`
+  (`subPathway`/`isSeries` are written in a guarded UPDATE because the live
+  table may predate them). But there is no database in this environment, so
+  neither was exercised against MySQL. Watch the first footer submit and the
+  first admin Sync click on the preview.
+- **The server's import of the shared Substack mapping** (`@/lib/substackImport`
+  from `server/`) was executed under both runtimes the code has: esbuild
+  (production bundle) and tsx (the `pnpm dev` runtime). Both resolve it.
 - **The series note on an essay page** was verified by the route smoke test
   and unit tests, not by screenshot: essay pages need the API to load a post,
   and the built site has none here. Home, `/substack`, and `/subscribe` were
