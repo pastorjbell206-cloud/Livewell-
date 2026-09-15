@@ -105,7 +105,7 @@ const TOPICS: Topic[] = [
   {
     id: "friendship",
     label: "Friendship",
-    framing: "Scripture knows you become the average of the people you keep close. It honors the friend who wounds faithfully over the enemy who flatters, and it says a brother is born for the hard day.",
+    framing: "Scripture knows the company you keep will shape you, for wisdom or for harm. It honors the friend who wounds faithfully over the enemy who flatters, and it says a brother is born for the hard day.",
     verses: [
       { ref: "Proverbs 17:17", text: "A friend loves at all times, and a brother is born for adversity." },
       { ref: "Proverbs 27:6", text: "Faithful are the wounds of a friend, profuse are the kisses of an enemy." },
@@ -244,7 +244,7 @@ export default function BibleOnTopic() {
             What the Bible says about
           </h1>
           <p style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.75, color: "rgba(245,240,230,0.82)", maxWidth: "62ch" }}>
-            Most of life is lived in the place no single command reaches. Pick an arena of life below and see what Scripture actually says, the heart of the passages worth knowing by heart, so you can open your own Bible and read them in full.
+            Most of life is lived in the place no single command reaches. Pick an arena of life below and see what Scripture actually says: the passages worth knowing by heart, each reduced to its center line, so you can open your own Bible and read them in full.
           </p>
         </div>
       </section>

@@ -63,13 +63,13 @@ const CATEGORIES: Category[] = [
       },
     ],
     interpretation: {
-      low: "Your spiritual life is either absent or running on fumes. This is not a moral failing. It is a diagnostic. Many people who love God have allowed the practices that once sustained them to erode under the weight of busyness, disappointment, or doubt. The question is not whether you are a bad Christian. The question is whether you are starving and calling it fine.",
+      low: "Your spiritual life is either absent or running on fumes. Read that as a diagnosis rather than a moral failing. Many people who love God have allowed the practices that once sustained them to erode under the weight of busyness, disappointment, or doubt. The question is not whether you are a bad Christian. The question is whether you are starving and calling it fine.",
       mid: "You have some spiritual rhythms, but they are inconsistent or shallow. There is foundation here -- you have not abandoned the life of faith. But the distance between where you are and where you could be is real, and it shows up in the rest of your life in ways you may not have connected.",
-      high: "Your spiritual life shows the marks of sustained attention. You are doing the work that most people avoid. Protect it. The greatest threat to a mature spiritual life is the assumption that it will maintain itself. It will not. Every discipline requires continued intention.",
+      high: "Your spiritual life shows the marks of sustained attention. You have kept the practices most people let slide. Protect them. The greatest threat to a mature spiritual life is the assumption that it will maintain itself. It will not. Every discipline requires continued intention.",
     },
     nextSteps: {
       low: [
-        { text: "Begin with five minutes of prayer each morning. Not eloquent prayer. Honest prayer. 'God, I am here. Help me today.' That is enough to begin." },
+        { text: "Begin with five minutes of prayer each morning. It does not need to be eloquent, only honest. 'God, I am here. Help me today.' That is enough to begin." },
         { text: "Read one Psalm each day for the next thirty days. Start with Psalm 1. The Psalms are the prayer book of Scripture -- they give you words when you have none of your own." },
       ],
       mid: [
@@ -113,11 +113,11 @@ const CATEGORIES: Category[] = [
     },
     nextSteps: {
       low: [
-        { text: "Have the conversation you have been avoiding. Not all of it. Just the first sentence. 'I feel distant from you, and I want to fix it.' That sentence changes the trajectory." },
+        { text: "Have the conversation you have been avoiding. You do not need all of it, only the first sentence: 'I feel distant from you, and I want to fix it.' The first sentence is the hard one; the rest is a conversation." },
         { text: "Consider professional help -- a counselor, a pastor, a trusted mentor. Relationships in crisis need a third voice in the room. Asking for help is not weakness. It is wisdom." },
       ],
       mid: [
-        { text: "Establish a weekly check-in with your spouse or closest person: 'How are we doing?' Not about schedules. About the relationship itself." },
+        { text: "Establish a weekly check-in with your spouse or closest person: 'How are we doing?' The question is about the relationship itself, not the schedule." },
         { text: "Identify the area of greatest friction and give it one focused conversation this week. Do not try to fix everything. Fix one thing." },
       ],
       high: [
@@ -162,7 +162,7 @@ const CATEGORIES: Category[] = [
       ],
       mid: [
         { text: "Start a weekly family rhythm -- a meal, a walk, a prayer time -- that requires no planning beyond being there together. Consistency builds the security your children need more than any activity or lesson." },
-        { text: "Have an age-appropriate conversation about faith with each child this week. Not a lecture. A question: 'What do you think God is like?' Listen to the answer. It will tell you everything." },
+        { text: "Have an age-appropriate conversation about faith with each child this week. Make it a question rather than a lecture: 'What do you think God is like?' Then listen. The answer will tell you more than you expect." },
       ],
       high: [
         { text: "Begin writing letters to your children -- letters they will read when they are older. Your current wisdom, captured now, becomes their inheritance." },
@@ -201,7 +201,7 @@ const CATEGORIES: Category[] = [
     },
     nextSteps: {
       low: [
-        { text: "Walk for twenty minutes today. Not tomorrow. Today. Do it again tomorrow. The goal is not fitness. The goal is breaking the pattern of inactivity. Movement begets movement." },
+        { text: "Walk for twenty minutes today, not tomorrow, and then do it again tomorrow. The goal is not fitness yet; it is breaking the pattern of inactivity, and one walk makes the next one easier." },
         { text: "Set a non-negotiable bedtime for this week -- and honor it. Put your phone in another room thirty minutes before that time. Your body cannot heal what your habits keep breaking." },
       ],
       mid: [
@@ -289,7 +289,7 @@ const CATEGORIES: Category[] = [
     },
     nextSteps: {
       low: [
-        { text: "Three times today, pause and name what you are feeling in one word. Not 'fine.' An actual emotion. Write it down. You cannot steward what you have not identified." },
+        { text: "Three times today, pause and name what you are feeling in one word, and not 'fine' but an actual emotion. Write it down. You cannot steward what you have not identified." },
         { text: "Identify one boundary you need to set this week -- one 'no' you have been afraid to say -- and say it. The guilt will come. Let it come. It is the voice of a pattern, not the voice of God." },
       ],
       mid: [
@@ -377,11 +377,11 @@ const CATEGORIES: Category[] = [
     },
     nextSteps: {
       low: [
-        { text: "Reach out to one person this week and initiate a real conversation. Not a text. A phone call or a face-to-face meeting. Say: 'I have been too isolated, and I want to change that.' That sentence is the hardest step, and it is the only one that matters right now." },
+        { text: "Reach out to one person this week and initiate a real conversation, by phone or face to face rather than by text. Say: 'I have been too isolated, and I want to change that.' That sentence is the hardest step, and it is the only one that matters right now." },
         { text: "Show up somewhere consistently -- a church small group, a service team, a regular gathering. You do not build community by wanting it. You build it by being present in the same place, with the same people, repeatedly." },
       ],
       mid: [
-        { text: "Deepen one existing friendship. Choose the person you are closest to and tell them something you have been holding back. Depth is not found. It is built, one vulnerable conversation at a time." },
+        { text: "Deepen one existing friendship. Choose the person you are closest to and tell them something you have been holding back. Depth in a friendship is built one honest conversation at a time." },
         { text: "Begin serving in a way that puts you in regular contact with others -- a ministry team, a neighborhood project, a recurring volunteer role. Service builds the kind of bonds that social events cannot." },
       ],
       high: [
@@ -447,13 +447,13 @@ function getOverallInterpretation(score: number): {
       label: "Under Strain",
       color: "var(--strain)",
       description:
-        "Multiple areas of your life are carrying more weight than they can bear. This is not sustainable, and you already know it. The good news is that you took this assessment, which means the denial is breaking. Pick the one area that, if it improved, would change everything else. Start there. One area. One step. This week.",
+        "Multiple areas of your life are carrying more weight than they can bear. This is not sustainable, and you already know it. Pick the one area whose repair would take the most weight off the others, and start there, with one step, this week.",
     };
   return {
     label: "In Crisis",
     color: "var(--alert)",
     description:
-      "Your results indicate serious strain across most areas of your life. Hear this: the assessment is not the final word. It is a starting point. But it is a starting point that requires action, not just awareness. You need help -- a counselor, a pastor, a trusted friend -- someone who can walk with you as you begin the work of rebuilding. Do not try to do this alone.",
+      "Your results indicate serious strain across most areas of your life. The assessment is not the final word. It is a starting point. But it is a starting point that requires action, not just awareness. You need help -- a counselor, a pastor, a trusted friend -- someone who can walk with you as you begin the work of rebuilding. Do not try to do this alone.",
   };
 }
 
@@ -601,7 +601,7 @@ export default function LifeAudit() {
     <Layout>
       <SEOMeta
         title="Life Audit -- A Comprehensive Assessment Across Eight Areas"
-        description="Twenty-four questions across eight life areas: spiritual health, marriage, parenting, physical health, finances, vocation, and community. Honest results."
+        description="Twenty-four questions across eight life areas: spiritual health, marriage, parenting, physical health, finances, emotional health, vocation, and community. Honest results."
         keywords="life audit, life assessment, spiritual health, marriage assessment, parenting, financial health, emotional health, vocation, community, Christian life"
         structuredData={{
           "@context": "https://schema.org",

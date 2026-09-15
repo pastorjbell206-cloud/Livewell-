@@ -76,10 +76,10 @@ export default function PropheticJustice101() {
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-4)" }}>
         <div style={prose}>
           <p style={{ fontFamily: "var(--B)", fontSize: "19px", lineHeight: 1.8, color: "var(--ink)" }}>
-            The church privatized righteousness and outsourced justice. We offered charity and avoided the harder word. But mishpat and tsedaqah, justice and righteousness, are not a political add-on to the gospel. They are close to the center of who God is, from the Exodus to the Jubilee to the prophets to the sermon Jesus preached in Nazareth. This book recovers the prophetic tradition and asks the question the church keeps avoiding. What do we actually owe our neighborhood.
+            The church privatized righteousness and outsourced justice. We offered charity and avoided the harder word. But mishpat and tsedaqah, justice and righteousness, are not a political add-on to the gospel. They are close to the center of who God is, from the Exodus to the Jubilee to the prophets to the sermon Jesus preached in Nazareth. This book recovers the prophetic tradition and asks the question the church keeps avoiding. What do we actually owe our neighborhood?
           </p>
           <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink-muted)" }}>
-            By James Bell. Prophetic and pastoral, biblical and unflinching, and never partisan. Read the opening below, free.
+            By James Bell. The book's claim is that justice is not a lane in politics but a name for what God is like, and the church cannot outsource it. Read the opening below, free.
           </p>
         </div>
       </section>

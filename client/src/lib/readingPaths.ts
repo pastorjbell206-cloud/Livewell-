@@ -79,17 +79,15 @@ export const READING_PATHS: ReadingPath[] = [
     entries: [
       {
         title: "When God Bless America Replaces Thy Kingdom Come",
-        slug: "when-god-bless-america-replaces-thy-kingdom-come",
         blurb:
           "How patriotism became the practical savior of American Christianity.",
-        available: true,
+        available: false,
       },
       {
         title:
           "When the Church Becomes a Political Brand — and How to Step Back",
-        slug: "church-political-brand-step-back",
         blurb: "The mechanics of a church turned voting bloc, and the way out.",
-        available: true,
+        available: false,
       },
       {
         title: "The Flag in the Sanctuary: How It Got There",
@@ -171,9 +169,8 @@ export const READING_PATHS: ReadingPath[] = [
     entries: [
       {
         title: "Justice Without Love Is Ideology",
-        slug: "justice-without-love-ideology",
         blurb: "What happens when a good thing takes God's place.",
-        available: true,
+        available: false,
       },
       {
         title: "Why Racial Reconciliation Without Repentance Is Just Branding",
@@ -252,14 +249,12 @@ export const READING_PATHS: ReadingPath[] = [
       },
       {
         title: "Mishpat and Tsedaqah",
-        slug: "mishpat-tsedaqah",
         blurb: "Two Hebrew words the church has flattened.",
-        available: true,
+        available: false,
       },
       {
         title: "What Micah 6:8 Actually Demands",
-        slug: "micah-6-8-demands",
-        available: true,
+        available: false,
       },
       {
         title: "What Leviticus 19 Demands in a Border Crisis",
@@ -268,33 +263,27 @@ export const READING_PATHS: ReadingPath[] = [
       },
       {
         title: "What the Good Samaritan Is Actually Arguing",
-        slug: "good-samaritan-arguing",
-        available: true,
+        available: false,
       },
       {
         title: "What the Jubilee Means",
-        slug: "what-jubilee-means",
-        available: true,
+        available: false,
       },
       {
         title: "The Widow, the Orphan, the Stranger",
-        slug: "widow-orphan-stranger",
-        available: true,
+        available: false,
       },
       {
         title: "What the Greek Actually Says: Why Original Language Matters",
-        slug: "greek-original-language-matters",
-        available: true,
+        available: false,
       },
       {
         title: "The Kingdom of God Is Not What You Think It Is",
-        slug: "kingdom-of-god-not-what-you-think",
-        available: true,
+        available: false,
       },
       {
         title: "Sin Is Not Just What You Do — It's What You Are",
-        slug: "sin-not-just-what-you-do",
-        available: true,
+        available: false,
       },
       {
         title: "Six Lenses That Distort the Bible Before You Read a Word",
@@ -335,9 +324,8 @@ export const READING_PATHS: ReadingPath[] = [
     entries: [
       {
         title: "The Church Has a Credibility Problem",
-        slug: "church-credibility-problem",
         blurb: "Why the watching world stopped believing us.",
-        available: true,
+        available: false,
       },
       {
         title: "Where the Church Was Silent",
@@ -347,9 +335,8 @@ export const READING_PATHS: ReadingPath[] = [
       },
       {
         title: "Complicity Is Not Innocence",
-        slug: "complicity-not-innocence",
         blurb: "What silence costs the witness.",
-        available: true,
+        available: false,
       },
       {
         title:
@@ -359,8 +346,7 @@ export const READING_PATHS: ReadingPath[] = [
       },
       {
         title: "How to Lead When Trust in Institutions Is at an All-Time Low",
-        slug: "lead-when-trust-institutions-low",
-        available: true,
+        available: false,
       },
       {
         title:
@@ -417,60 +403,50 @@ export const READING_PATHS: ReadingPath[] = [
     entries: [
       {
         title: "The Hidden Pain of the Successful Pastor",
-        slug: "hidden-pain-successful-pastor",
         blurb: "The peculiar isolation success in ministry creates.",
-        available: true,
+        available: false,
       },
       {
         title: "The Slow Burn: How Ministry Exhaustion Sneaks Up on You",
-        slug: "slow-burn-ministry-exhaustion",
         blurb: "Burnout is not a moment. It is a process.",
-        available: true,
+        available: false,
       },
       {
         title: "When the Shepherd Needs Shepherding",
-        slug: "when-shepherd-needs-shepherding",
-        available: true,
+        available: false,
       },
       {
         title: "The Loneliness of Leadership",
-        slug: "loneliness-of-leadership",
-        available: true,
+        available: false,
       },
       {
         title: "The Danger of Pastoral Isolation",
-        slug: "danger-pastoral-isolation",
-        available: true,
+        available: false,
       },
       {
         title:
           "It's Okay to See a Counselor — Why Pastors Resist and Why They Shouldn't",
-        slug: "okay-to-see-counselor",
-        available: true,
+        available: false,
       },
       {
         title:
           "How to Pastor a Congregation That Is Politically Divided — And Keep the Gospel Central",
-        slug: "pastor-politically-divided-gospel-central",
-        available: true,
+        available: false,
       },
       {
         title:
           "How to Talk About Political Divisiveness From the Pulpit Without Destroying Your Church",
-        slug: "talk-politics-pulpit-without-destroying",
-        available: true,
+        available: false,
       },
       {
         title: "The Prophetic Pastor",
-        slug: "prophetic-pastor",
         blurb:
           "Naming injustice and advocating for the vulnerable is not optional.",
-        available: true,
+        available: false,
       },
       {
         title: "The Interior Life of the Pastor",
-        slug: "interior-life-of-pastor",
-        available: true,
+        available: false,
       },
       {
         title: "How to Pastor a Congregation Captured by a Cable Network",

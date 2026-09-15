@@ -163,7 +163,7 @@ export default function SearchPage() {
 
   return (
     <Layout>
-      <SEOMeta title="Search" description="Search 880+ essays on faith, theology, and the Christian life." />
+      <SEOMeta title="Search" description="Search the essays, libraries, tools, and books on LiveWell." />
       <div className="container py-16 max-w-4xl mx-auto">
         {/* Back button */}
         <button
@@ -185,7 +185,7 @@ export default function SearchPage() {
               lineHeight: 1.2,
             }}
           >
-            Search Livewell
+            Search LiveWell
           </h1>
 
           {/* Search input */}
@@ -233,7 +233,7 @@ export default function SearchPage() {
         <div>
           {query === "" ? (
             <div className="text-center py-12" style={{ color: "var(--ink-muted)" }}>
-              <p className="text-lg">Enter a search term to get started</p>
+              <p className="text-lg">Type a word or a topic. The essays, the libraries, and the tools are all in here.</p>
             </div>
           ) : (
             <>

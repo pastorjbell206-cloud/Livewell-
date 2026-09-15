@@ -45,7 +45,8 @@ export default function EmailSignup() {
           <p style={{ fontFamily: "var(--B)", fontSize: "clamp(16px, 2vw, 18px)", color: "rgba(255,255,255,.65)", maxWidth: 560, margin: "0 auto", lineHeight: 1.75 }}>
             Theology that meets the actual Tuesday afternoon of marriage, money,
             parenting, and doubt. Tell us who you are and the first essay you get
-            will match it. No spam. Unsubscribe anytime.
+            will match it. Nothing else comes with it, and you can leave the
+            moment it stops being worth your time.
           </p>
         </div>
       </section>

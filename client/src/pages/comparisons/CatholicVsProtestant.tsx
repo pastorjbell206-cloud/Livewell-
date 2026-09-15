@@ -14,7 +14,7 @@ const COMPARISONS = [
   },
   {
     category: "Salvation",
-    catholic: "Faith formed by love, expressed through the sacraments. Justification is a process — initial grace received at baptism, sustained through the Eucharist, restored through confession. Works cooperate with grace (Council of Trent, 1545).",
+    catholic: "Faith formed by love, expressed through the sacraments. Justification is a process — initial grace received at baptism, sustained through the Eucharist, restored through confession. Works cooperate with grace (Council of Trent, 1545-1563).",
     protestant: "Sola Fide. Faith alone, received as a gift, not earned. Justification is a declaration — God counts the sinner righteous because of Christ's finished work. Good works are the fruit of salvation, not its cause (Luther, Calvin, the Reformers).",
   },
   {
@@ -136,7 +136,7 @@ export default function CatholicVsProtestant() {
         <p style={{ ...S.eyebrow, color: "var(--mustard)" }}>COMPARISON</p>
         <h1 style={S.h1}>Catholic vs. Protestant</h1>
         <p style={S.heroSub}>
-          The division that split Western Christianity in 1517 and never healed. Not because the differences are trivial — because they are not. And not because reconciliation is impossible — because the shared ground runs deeper than most people on either side admit.
+          The division that split Western Christianity in 1517 and never healed. The differences are real, and no honest account pretends otherwise. The shared ground still runs deeper than most people on either side admit.
         </p>
       </section>
 

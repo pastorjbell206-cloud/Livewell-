@@ -2080,15 +2080,6 @@ export const SOCIAL_QUOTES: SocialQuote[] = [
     author: "James Bell",
   },
   {
-    text: "Rest is not the reward at the end of faithfulness. Rest is the ground from which faithfulness grows.",
-    articleSlug: "sabbath-is-resistance",
-    articleTitle: "Sabbath is Resistance",
-    pillar: "Theological Depth",
-    category: "comfort",
-    sourceType: "essay",
-    author: "James Bell",
-  },
-  {
     text: "We are not watching the death of Christianity. We are watching the death of the habit of Christianity, and we keep mistaking the corpse of the habit for the corpse of the faith.",
     articleSlug: "christendom-is-ending",
     articleTitle: "What the End of Christian America Actually Means",

@@ -395,7 +395,7 @@ export default function Writing() {
             },
             {
               title: "What the End of Christian America Actually Means",
-              blurb: "The platform's thesis: what is dying is not the faith but Christendom, and the difference changes everything.",
+              blurb: "The platform's thesis: what is dying is not the faith but Christendom, and the difference decides whether the church spends the next generation grieving a country or serving a kingdom.",
               href: "/writing/christendom-is-ending",
             },
             {

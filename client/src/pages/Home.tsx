@@ -442,7 +442,7 @@ export default function Home() {
               margin: "0 auto var(--s-4)",
             }}
           >
-            Theology that carries the weight of a Tuesday. No filler, no funnel, and you can leave whenever you like.
+            Serious theology, written for the week you are actually living. No filler, no funnel, and you can leave whenever you like.
           </p>
           <div style={{ maxWidth: "460px", margin: "0 auto" }}>
             <NewsletterSignup variant="inline" source="home-hero" />
@@ -599,7 +599,7 @@ export default function Home() {
               marginBottom: "var(--s-5)",
             }}
           >
-            Two hundred and eight topics, each one worked through honestly: the passages, the history, what the verse
+            Two hundred and eight topics, each one worked through: the passages, the history, what the verse
             actually meant, and where it lands on an ordinary week. Start where it hurts.
           </p>
 

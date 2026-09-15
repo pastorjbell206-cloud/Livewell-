@@ -37,6 +37,14 @@ For the reader whose faith has outgrown the answers they were given — whose ma
 
 ## Voice & Tone
 
+> **Governing standard: `docs/VOICE-JAMES-BELL.md`** — James's own statement of
+> the mature register. Where this section and that file disagree, that file
+> wins. The material differences: developed paragraphs rank above fragment
+> stacks; repeated antithesis, anaphora, and em-dashes go on the avoid list
+> once their rhetorical work is done; contractions and natural spoken phrasing
+> are preferred. The moves below survive at a genuine hinge — they are no
+> longer the default gait.
+
 ### Long-form register (essays, books, sermons published as prose)
 
 Prophetic and pastoral simultaneously, never one without the other. Intellectual anchors: Tim Keller (architecture), Walter Brueggemann (prophetic imagination), Eugene Peterson (pastoral texture), Dietrich Bonhoeffer (willingness to name the thing at cost).
@@ -72,11 +80,10 @@ Signposting ("here is what I mean," "let me explain"). Clean application turns. 
 
 ### Punctuation mechanics
 
-These describe Bell's actual voice; they are the single source of truth (other
-docs defer here).
+Mechanics only; register is governed by `docs/VOICE-JAMES-BELL.md`.
 
-- **Em-dash** — part of the voice; permitted. Favor the hard period for the
-  "Not X. Y." ground-clearing move, but the em-dash may carry flow elsewhere.
+- **Em-dash** — permitted, sparingly. Never the standard connector between
+  clauses; repeated em-dashes are on the avoid list in the governing standard.
 - **Semicolon** — permitted in prose where it binds two close clauses. Not
   forbidden.
 - **Exclamation point** — reserved for **direct Scripture quotation** (quoted
@@ -86,6 +93,10 @@ docs defer here).
 ---
 
 ## Structural Moves (the Bell patterns)
+
+> Reserved for genuine hinges, not the default gait — see
+> `docs/VOICE-JAMES-BELL.md`. A piece built from these moves paragraph after
+> paragraph fails the mature register even when each move is executed well.
 
 1. **"Not X. Y."** — ground-clearing with a hard period, never a comma. "This is not about politics. It is about the cross."
 2. **Short-Long-Short** — sentence rhythm. A short declaration. A longer sentence that builds the evidence, names the history, implicates the reader. Then the verdict: three to eight words.
@@ -515,7 +526,8 @@ How to work in this repo, in order of weight:
 > protocol and a vibe disagree, follow the protocol.
 
 **Read order (before the first edit):** this file top to bottom; then the
-governing doc for the task type (content → `EDITORIAL-CONSTITUTION.md`; non-trivial
+governing doc for the task type (content → `EDITORIAL-CONSTITUTION.md` and
+`docs/VOICE-JAMES-BELL.md` for anything in James's voice; non-trivial
 engineering → `ARCHITECTURE.md`); then the source of truth the task touches —
 `drizzle/schema.ts` (data), `taxonomy.ts` (content IA), `index.css` `:root`
 (tokens), `api/index.ts` + `server/routers.ts` (the API, both runtimes).

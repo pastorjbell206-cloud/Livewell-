@@ -312,7 +312,7 @@ export default function ScriptureMemory() {
     <Layout>
       <SEOMeta
         title="Scripture Memory System -- Memorize Bible Verses"
-        description="Memorize 40 Bible verses across 8 categories using proven techniques: first-letter hints, fill-in-the-blank, and full recall. Track your progress."
+        description="Memorize 40 Bible verses across 8 categories with first-letter hints, fill-in-the-blank, and full recall. Track your progress."
         keywords="scripture memory, Bible memorization, memorize Bible verses, scripture memory system, Bible memory techniques"
         structuredData={{
           "@context": "https://schema.org",
@@ -370,8 +370,9 @@ export default function ScriptureMemory() {
               fontFamily: "var(--U)",
             }}
           >
-            Forty verses across eight categories. Four memorization modes. One
-            goal: Scripture that lives in you, not just on a screen.
+            Forty verses across eight categories, with four ways to work each
+            one into memory. The aim is Scripture you can reach for at three in
+            the morning without a phone in your hand.
           </p>
 
           {/* Progress bar */}

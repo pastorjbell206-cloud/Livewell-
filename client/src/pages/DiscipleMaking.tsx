@@ -41,7 +41,7 @@ const PATH: PathItem[] = [
   {
     slug: "making-disciples-at-the-table",
     title: "Making disciples at the table",
-    blurb: "Jesus made disciples over meals, in homes, around tables. The most natural place on earth to form a person in Christ, and how to start one this week.",
+    blurb: "A shared meal is the most natural place on earth to form a person in Christ, which is why Jesus kept eating with people. How to start a table this week.",
     href: "/life/making-disciples-at-the-table",
   },
   {
@@ -89,7 +89,7 @@ export default function DiscipleMaking() {
     <Layout>
       <SEOMeta
         title="Make Disciples — Around Tables, in Living Rooms, Over Coffee"
-        description="Jesus did not run a program. He made disciples over meals, in homes, with ordinary people. Equipping the regular believer to do the same around a table."
+        description="Disciple-making the way Jesus actually did it, with a few people, a shared meal, and time. Nine guides and a tool for the ordinary believer who wants to start a table."
         url="https://www.livewellbyjamesbell.co/disciple-making"
       />
 
@@ -131,7 +131,7 @@ export default function DiscipleMaking() {
           <div style={{ marginTop: "var(--s-5)", background: "var(--charcoal)", padding: "var(--s-4)", color: "var(--bone)" }}>
             <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "10px" }}>The tool</div>
             <p style={{ fontFamily: "var(--F)", fontSize: "19px", lineHeight: 1.5, marginBottom: "16px", maxWidth: "56ch" }}>
-              Start a Table builds you a complete, reproducing plan for a discipleship table: who to invite, how to ask, a simple weekly rhythm of meal, Scripture, and prayer, and how to multiply it. Made for the regular person with no training.
+              Start a Table gives you a complete plan for a discipleship table, one built to reproduce itself: who to invite, how to ask, a simple weekly rhythm of meal, Scripture, and prayer, and how to multiply it. Made for the regular person with no training.
             </p>
             <Link href="/tools/discipleship-table" style={{ fontFamily: "var(--U)", fontSize: "13.5px", fontWeight: 600, color: "var(--mustard)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px" }}>
               Start a table

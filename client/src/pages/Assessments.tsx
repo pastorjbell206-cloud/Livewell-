@@ -57,7 +57,7 @@ const GROUPS: Group[] = [
     eyebrow: "For what you are carrying",
     heading: "The weight you brought with you.",
     blurb:
-      "Instruments for the specific thing that is heavy right now. Each one is a mirror, not a verdict — what it shows you, the writing here is built to meet.",
+      "Instruments for the specific thing that is heavy right now. Each one ends with an honest reading of where you stand and a place to start reading.",
     items: [
       {
         title: "The Marriage Assessment",
@@ -77,7 +77,7 @@ const GROUPS: Group[] = [
     eyebrow: "For what you believe",
     heading: "The convictions under the surface.",
     blurb:
-      "What you actually believe — and whether you hold it evenly — is measurable. These are the mirror for the mind.",
+      "What you actually believe, and whether you hold it evenly, is measurable. These two take that measure.",
     items: [
       {
         title: "The Theology Quiz",
@@ -88,7 +88,7 @@ const GROUPS: Group[] = [
       {
         title: "The Consistency Check",
         takeIf: "you suspect you defend truth selectively — one standard for your side, another for theirs.",
-        gives: "A mirror, not a scorecard.",
+        gives: "Where your standard bends, laid out plainly.",
         href: "/disruption/consistency",
       },
     ],
@@ -117,7 +117,7 @@ export default function Assessments() {
     <Layout>
       <SEOMeta
         title="Assessments — Where Are You, Actually?"
-        description="Every honest instrument on the site in one place: the spiritual check-in, the whole-life map, marriage, the life audit, theology, and consistency. A mirror, not a verdict — and the writing to meet what it shows you."
+        description="Every honest instrument on the site in one place: the spiritual check-in, the whole-life map, marriage, the life audit, theology, and consistency. None of them grades you, and each one tells you what to read next."
         url="https://www.livewellbyjamesbell.co/assessments"
         structuredData={assessmentsSchema}
       />
