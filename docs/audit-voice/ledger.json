@@ -260,7 +260,7 @@
       "pillar": "Leadership Formation",
       "words": 2567,
       "id": "essay:return-ministry-after-burnout",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The pastoral substance is the strongest in the batch and the self-implication is real (\"I have asked a brother on leave, 'So when are you coming back?'... it was a deadline wearing encouragement's clothes\"), the Elijah and Peter readings stay with the text long enough to do theological work, and the \"door marked not going back\" section says the sentence nobody says. But the register is the old one: roughly fourteen \"Not X. Y.\" constructions (\"is not the collapse. It is the first good week afterward\"; \"is not faithfulness; it is relapse with a liturgy\"; \"Rest is not the concession... It is the instruction\"; \"The pedestal is not a gift. It is the old job description, gilded\"; \"Not the ministry. The soul.\"), one-word paragraph leads that are sermon outline (\"Patience.\" \"Honesty.\" \"No pedestal.\"), and a final paragraph built on anaphora that recaps the three Scripture sections (\"Elijah got bread before... Peter got breakfast before... The apostles got the boat before\") and then ends on a fragment stack. The \"(ESV)\" tag after every one of some twenty citations is decoration. Scripture itself is verbatim and accurate. The fix is targeted: cut two-thirds of the antitheses, dissolve the one-word leads into paragraphs, and end on the Psalm 23 paragraph, which already carries the weight.",
       "auditedAt": "2026-09-14T19:35:11.032Z",
@@ -277,6 +277,10 @@
         "unverifiable": [],
         "selfImplication": true,
         "endingWeight": "recap"
+      },
+      "repair": {
+        "at": "2026-09-15T18:37:06.352Z",
+        "from": "wave 1"
       }
     },
     "stub:difference-tired-and-done": {
@@ -587,7 +591,7 @@
       "pillar": "Leadership Formation",
       "words": 2559,
       "id": "essay:gen-z-wants-from-church",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The thinking is sound, the attractional church gets a genuine steelman (\"missionaries who read their field correctly, and the criticism that follows means nothing without that sentence\"), the rich young ruler is read with care (\"The cost was what the love looked like once it took the man seriously\"), and the self-implication is specific (\"I shortened sermons that needed their length... I lost the room anyway\"). But the essay is built as a four-point outline whose headings are themselves parallel antitheses (\"They will forgive uncertainty. They will never forgive spin.\" / \"They have algorithms. They need elders.\"), each section closing on a manufactured slogan (\"They are not afraid of hard. They are bored of easy.\"; \"The volume is the deficiency.\"; \"Children do not inherit our marketing. They inherit our actual gods.\"), roughly ten \"Not X. Y.\" turns, and a stock turn on the explicit avoid list (\"sit with that\"). The standard asks for one memorable verdict earned by the argument over several attempted slogans; this has a slogan per paragraph. \"Older men who let me stand close enough to watch them live\" extends the known biography and should be confirmed with James. Fix: keep the argument and the ending, dissolve the four-part scaffold into accumulation, keep two slogans.",
       "auditedAt": "2026-09-14T19:35:11.032Z",
@@ -606,6 +610,10 @@
         ],
         "selfImplication": true,
         "endingWeight": "earned"
+      },
+      "repair": {
+        "at": "2026-09-15T18:37:06.352Z",
+        "from": "wave 1"
       }
     },
     "stub:young-adults-coming-back-church": {
@@ -879,7 +887,7 @@
       "pillar": "Leadership Formation",
       "words": 2558,
       "id": "essay:engaging-nones-religiously-unaffiliated",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "Architecturally this is one of the strongest in the set: the three nones are described with real sympathy (faith as \"roughly what ham radio is\"; the burned woman who \"backed out of the room quietly\"), the church-growth playbook gets its due (\"I will not sneer at a tool God has stooped to use\"), and the Scripture is ESV-accurate and integrated rather than decorative (Philip's \"Come and see\", Paul on Mars Hill, Emmaus, the whole of 1 Peter 3:15). Self-implication is specific (\"I have approved the mailers and argued about the font\"). What holds it at revise is the fabrication gate, not the prose: the ending rests on a detailed conversion narrative with quoted dialogue (\"The Christian who finally cracked my settled unbelief... said, more than once, *that is a real question*\"; \"People fed me... a long stretch of time, no ask at the end\") that extends the known biography into exactly the kind of story the audit warns \"sounds right.\" It must be confirmed by James or the essay rewritten around the hole. Secondary: the close runs a triple anaphora (\"Anyone unhurried enough... Anyone settled enough... Anyone who can say\") and ends on two fragments (\"Not the death of their belief. The exhaustion of ours.\"), old-register moves stacked where one would land.",
       "auditedAt": "2026-09-14T19:35:11.032Z",
@@ -893,6 +901,10 @@
         ],
         "selfImplication": true,
         "endingWeight": "earned"
+      },
+      "repair": {
+        "at": "2026-09-15T18:37:06.352Z",
+        "from": "wave 1"
       }
     },
     "essay:ai-authenticity-pastor-artificial-intelligence": {
@@ -902,7 +914,7 @@
       "pillar": "Leadership Formation",
       "words": 2604,
       "id": "essay:ai-authenticity-pastor-artificial-intelligence",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The argument is genuinely excellent and the history is real and specific (the Phaedrus, Hugh of Saint-Cher's concordance c. 1230, Cruden 1737, Strong 1890, radio in 1921), the fear is given \"its strongest form, not its silliest\" before the line is redrawn through the man, and Ezekiel 3 is allowed to do sustained theological work rather than serve as an epigraph. Self-implication is precise (\"I have twenty-one books and a platform with my name on it, more reason than most to want the producing made easier\"). Two things keep it from passing. First, John 10:5 is misquoted: the essay prints \"for they do not know his voice\" where the ESV reads \"for they do not know the voice of strangers,\" and it is labeled ESV; that has to be corrected. Second, antithesis is the default connector at eleven hard-period turns (\"Delivery was never the office. Ingestion was.\"; \"Openness is not a courtesy... It is the load-bearing wall\"; \"Integrity does not have a technology problem. It has only ever had a truth-telling problem\"), with the 2 Corinthians 4 paragraph carrying three in a row. The ending is earned (\"The machine can produce everything about a sermon except a man who was there\"), and the fix is a thinning pass, not a rebuild.",
       "auditedAt": "2026-09-14T19:35:11.032Z",
@@ -916,6 +928,10 @@
         ],
         "selfImplication": true,
         "endingWeight": "earned"
+      },
+      "repair": {
+        "at": "2026-09-15T18:37:06.352Z",
+        "from": "wave 1"
       }
     },
     "stub:church-political-brand-step-back": {
@@ -1063,7 +1079,7 @@
       "pillar": "Prophetic Justice",
       "words": 2559,
       "id": "essay:creation-care-not-optional",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The argument accumulates properly: the fearful man in the pew is honored before he is answered (\"He is not a fool for declining to convert\"), the green altar gets \"the same instrument,\" Lynn White is conceded before he is corrected, and the ending passes through the empty tomb to the five sons (\"The second one is still in the sentence\") and earns its weight. Every citation checks: Schaeffer 1970, White in Science 1967, the abad/shamar link to Numbers 3:7-8, the 2 Peter 3:10 'found' reading, Wright 2008, Flint 2014, and all ESV quotations verbatim. What keeps it from shipping as it stands is register: the eschatology section stacks five antitheses in two paragraphs (\"Renewal, not replacement.\" \"Childbirth, not a death rattle.\" \"all things made new, not all new things made\" \"does not end with an evacuation. It ends with an arrival\"), the Settled/Unsettled pair is engineered symmetry, \"Nineteen seventy.\" is a one-word fragment for effect, and \"White got the symptom right... He got the anthropology wrong\" is the CLAUDE.md template verdict verbatim. Em-dash stripping has also left comma splices a reader trips on (\"for their own appetite, Ezekiel's entire indictment\"; \"a lifeboat, D. L. Moody said nearly that\"). Trims, not a rebuild.",
       "auditedAt": "2026-09-14T19:35:11.032Z",
@@ -1080,6 +1096,10 @@
         "unverifiable": [],
         "selfImplication": true,
         "endingWeight": "earned"
+      },
+      "repair": {
+        "at": "2026-09-15T18:37:06.352Z",
+        "from": "wave 1"
       }
     },
     "stub:widow-orphan-stranger": {
@@ -1137,7 +1157,7 @@
       "pillar": "Prophetic Justice",
       "words": 2571,
       "id": "essay:racial-reconciliation-without-repentance",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The biblical spine is real and every text checks (Numbers 5:7, Exodus 22:1 fourfold, Luke 3:8-14, Luke 19:8-9, 2 Corinthians 7:10, Jeremiah 6:14, Matthew 5:23-24 all verbatim ESV; the 1995 SBC resolution is real), the right's position is stated \"in full\" in a form its defenders would sign, and the self-implication is genuine (\"I have repented my way out of the dock rather than into it\"). But the gait is the old register as default: fourteen hard \"Not X. Y.\" constructions (\"is not a fad and not a fashion. It is a command\"; \"did not produce a statement. It produced a subtraction\"; \"The photograph is not evidence that anything changed. It is evidence I would like...\"), epigrams stacked three to a paragraph (\"the sacrament of the guilty conscience,\" \"grief as a genre, absolution by attendance,\" \"public relations with a Scripture reference\"), and a perfectly symmetrical left/right that the standard warns against (\"two counterfeits, wearing opposite jerseys, running the same play\"; \"divided the labor of avoidance\"). The \"claim, before I have earned it\" bolded-thesis scaffold recurs across sibling essays and reads as a template. The penultimate movement recaps (\"So the road... has a known shape. It is confession... It is grief... And it is restitution\") before the door image lands.",
       "auditedAt": "2026-09-14T19:35:11.032Z",
@@ -1154,6 +1174,10 @@
         "unverifiable": [],
         "selfImplication": true,
         "endingWeight": "earned"
+      },
+      "repair": {
+        "at": "2026-09-15T18:37:06.352Z",
+        "from": "wave 1"
       }
     },
     "stub:prophetic-tradition-economic-justice": {
@@ -1273,7 +1297,7 @@
       "pillar": "Leadership Formation",
       "words": 2564,
       "id": "essay:silence-abuse-church",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The thinking is sound and the care is right: the case for quiet is stated so its keepers \"would sign every line,\" the Tamar reading (\"Silence the wounded... Invoke the bond... Minimize the wound\") is genuinely illuminating, the survivor section refuses a forgiveness deadline and keeps the police and a counselor visible, and every text checks (Ezekiel 34:2, 4, 10, 16; 2 Samuel 13:12, 20, 21; Matthew 18:6 and 18:15; Romans 13:4; Ephesians 5:11; Luke 12:2; Spotlight 2002; the 2022 Guidepost report; Langberg's Redeeming Power 2020 paraphrased accurately). The register is the old one: fourteen \"Not X. Y.\" constructions (\"Not a smoke-filled room, a pastor's study\"; \"Calling the police is not a betrayal of the church. It is obedience\"; \"What he put in your hands was never the brand. It was the sheep\"), an epigram closing nearly every paragraph (\"It recruits love.\" \"protection delayed is predation permitted\" \"the truth is the church's native country\"), and two symmetrical three-part scaffolds, the three-move script and the three bolded imperatives of \"What repentance requires,\" which reads as a list in prose clothing even where concreteness is warranted. Self-implication is real at the open (\"It lives in me. I know the flinch\") but the indictment points outward at \"the quiet-keepers\" for the rest of the piece. Ending is earned (\"the script does not break itself\") but is a charge rather than a passage through mercy.",
       "auditedAt": "2026-09-14T19:35:11.032Z",
@@ -1291,6 +1315,10 @@
         "unverifiable": [],
         "selfImplication": true,
         "endingWeight": "earned"
+      },
+      "repair": {
+        "at": "2026-09-15T18:37:06.352Z",
+        "from": "wave 1"
       }
     },
     "stub:imago-dei-means-more": {
@@ -1414,7 +1442,7 @@
       "pillar": "Prophetic Justice",
       "words": 2574,
       "id": "essay:white-churches-diversity",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The thinking is sound and often striking: the soreg gives \"dividing wall\" mortar (\"the barrier had a body count attached to it\"), Antioch is read correctly as a doctrine expressed in a seating chart, McGavran 1970 and Emerson and Smith 2000 are named for the ideas they carry rather than as decoration, and the self-implication is total (\"I am the man in this essay\"). Sources check: Ephesians 2:14-16, Galatians 2:11-12 and 14, Revelation 7:9 verbatim; the 1871 inscription; the MLK line is hedged honestly (\"usually credited to\"). But this is the heaviest old-register gait in the batch: eighteen \"Not X. Y.\" turns (\"We diversify the picture. We do not divide the power\"; \"This was not a mood. It was architecture\"; \"That is a crucifixion, not a playlist\"; \"the Lord did not ask me to decorate it. He asked me to help take it down\"), the same \"Here is the claim, stated before I have earned it\" scaffold as its siblings, \"But there was a tell,\" and the wall-decoration image spent three times (\"freshly painted, with a better sound system in front of it\"; \"a monument to the wall with a better band in front of it\"; \"hung a great many beautiful things on that wall\"). The opening also makes specific factual claims about the writer's actual congregation (\"Everyone with color in that room was on the stage. Everyone with power in that room was not\") that a reader will take as a description of a real church; \"the church I have pastored toward for years\" is garbled.",
       "auditedAt": "2026-09-14T19:35:11.032Z",
@@ -1433,6 +1461,10 @@
         ],
         "selfImplication": true,
         "endingWeight": "earned"
+      },
+      "repair": {
+        "at": "2026-09-15T18:37:06.352Z",
+        "from": "wave 1"
       }
     },
     "stub:reaching-rich-comfortable": {
@@ -1478,7 +1510,7 @@
       "pillar": "Prophetic Justice",
       "words": 2585,
       "id": "essay:disability-justice-theological",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The objection is steelmanned and conceded (\"Nearly all of that is true, and none of it gets walked back here\"), and the turn is precise: \"We took a real hope and made it a schedule. Healing became the thing that happens before full membership.\" John 9, Exodus 4:11, 2 Corinthians 12, Luke 24:39 with Eiesland (1994), 1 Corinthians 12:21-22, Swinton (2012), and Luke 14 all do work, and the ADA 1990 religious exemption is stated accurately. One quotation is not verbatim: the essay gives John 9:3 as \"It was not this man who sinned, or his parents\" where the ESV reads \"It was not that this man sinned, or his parents.\" The register fails the mature standard: eighteen \"Not X. Y.\" turns (\"The world's gods are personifications of ability. Ours was crucified\"; \"is not the outreach program of the banquet. It is the banquet\"; \"They are not the objects of the feast. They are the invited\"; \"it is not being generous. It is being completed\"), the sibling scaffolds \"Here is the tell, and it indicts me before it indicts anyone\" and \"The claim, plainly,\" a \"Be careful here, because people bleed on this verse\" variant of the standard's own phrase, imperative tics (\"Read the chapter instead.\" \"Read the word.\"), and an announced non-resolution (\"I do not know how to end this comfortably, so I will not try\") that is itself a stock move. The ending that follows the announcement is earned, passing through the scarred risen body, and the direct address to the disabled reader is rightly kept free of a program.",
       "auditedAt": "2026-09-14T19:35:11.032Z",
@@ -1498,6 +1530,10 @@
         ],
         "selfImplication": true,
         "endingWeight": "earned"
+      },
+      "repair": {
+        "at": "2026-09-15T18:37:06.352Z",
+        "from": "wave 1"
       }
     },
     "stub:earth-is-lords": {
@@ -1687,7 +1723,7 @@
       "pillar": "Prophetic Justice",
       "words": 2601,
       "id": "essay:leviticus-19-border-crisis",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The scholarship is the best kind: Hoffmeier (2009) and Carroll R. (2008) are real, characterized fairly, and used to prove the one thing 'neither tribe wants proven'; Bava Metzia 59b's thirty-six/forty-six count is accurate; every ESV quotation checks. What fails is the machine test. The two steelman sections are built as mirror images with matched openers ('Take it in the form its best defenders would sign.' / 'Now the other room, at full strength.') and matched closers ('That is the case. It is serious and biblical, and the half of the church that waves it away with a chant has not answered it.' / 'That case is also serious, also biblical. And the half of the church that dismisses it as politics in a robe has not answered it either.'), then the indictment runs 'Watch the tell' / 'Watch this tell too' / 'Same crime, opposite jerseys' -- exactly the perfect parallelism and engineered right-left symmetry the standard names as sounding generated, and the essay's own next section concedes the weights are not equal. The 'Not X. Y.' gait runs about seven hard-period instances plus a half-dozen inline antitheses ('A hermeneutic that always lands on the side of your own comfort is not a hermeneutic. It is a mirror.'), thickest in the indictment and 'What is bound' sections. Fix: let the two steelmans differ in length and shape, cut the twin closers and the foreshadowing line 'Hold that distinction; it will indict both rooms before this essay ends', and thin the verdicts to one per movement. The fatherless-at-the-gate paragraph and the five-sons paragraph are the essay's real voice and should carry more of it.",
       "auditedAt": "2026-09-14T19:35:11.032Z",
@@ -1707,6 +1743,10 @@
         "unverifiable": [],
         "selfImplication": true,
         "endingWeight": "earned"
+      },
+      "repair": {
+        "at": "2026-09-15T18:37:06.352Z",
+        "from": "wave 1"
       }
     },
     "essay:church-incarceration-silence": {
@@ -1716,7 +1756,7 @@
       "pillar": "Prophetic Justice",
       "words": 2588,
       "id": "essay:church-incarceration-silence",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The thinking is sound and the fairness is real: the victim is honored before the prisoner ('Somewhere tonight a mother is lying awake because a man took her daughter'), the narrower reading of 'the least of these my brothers' is granted its full weight before Hebrews 13:3 is brought in, and the self-implication is concrete and unflattering ('I have kept a visitation list in my desk for fifteen years and no cell block has ever been on it', 'the prisoner frightened me and did not flatter me'). Scripture checks throughout (Matthew 25:36, 40; Hebrews 13:3; Luke 4:18; Isaiah 61:1; Romans 13:4) and the penitentiary history is accurate. The register is the old one. I count about twelve hard-period 'Not X. Y.' constructions ('It is not an oversight. It is a theology.', 'It was not a scheduling problem. It was a refusal.', 'He did not choose between mercy and truth. He was the place they met.'), the bolded two-sentence thesis, a section closing on 'He knew we would prefer a gospel of five needs. He gave us six.', and every section opened by a one-line imperative ('Notice what makes the prison different', 'Push the history back', 'Set the church's forgetting next to its own book', 'Now the ditch on the other side'), which is a template, not a transition. 'Both halves are the same lie wearing opposite jerseys' repeats the Leviticus essay's phrase and 'the both/and the tribes cannot hold' is stock. Keep the argument; convert roughly two-thirds of the verdicts back into the developed sentences they were distilled from.",
       "auditedAt": "2026-09-14T19:35:11.032Z",
@@ -1735,6 +1775,10 @@
         "unverifiable": [],
         "selfImplication": true,
         "endingWeight": "earned"
+      },
+      "repair": {
+        "at": "2026-09-15T18:37:06.352Z",
+        "from": "wave 1"
       }
     },
     "stub:church-must-speak-housing": {
@@ -2323,7 +2367,7 @@
       "pillar": "politics",
       "words": 3195,
       "id": "essay:authority-we-traded-for-authenticity",
-      "status": "rewrite",
+      "status": "repaired",
       "verdict": "rewrite",
       "notes": "The argument is real and the sources are the right ones used for their ideas rather than their names: Taylor's age of authenticity, Rieff's psychological man, Bellah's Sheila, MacIntyre's emotivism, Newbigin's public truth, the Bereans and Judges 21:25. The distinction between reading the text in its world and submitting the text to a prior verdict ('One submits to the passage to hear it more truly. The other submits the passage to a verdict reached before the page was open.') is the kind of named distinction the standard asks for. But the prose is the old register end to end: roughly thirty 'Not X. Y.' constructions in 3,195 words, one every hundred words ('Context is not the enemy. It is repentance.', 'That is not a feeling. It is a logical floor.', 'We did not lose the argument. We dismantled the court.', 'A god who only ever agrees with me is not a god. He is a mirror'), five bolded slogans, and two staged one-line fragment drops ('We thought we were gaining freedom. / We were changing kings.' and 'Authority was never the cage. / It was the hand reaching in.') that are the artificially dramatic hook the standard names by name. The ending accumulates verdicts and closes on manufactured intensity ('And I had been on my knees the whole time, in the dark, to me.'). This cannot be thinned by deletion because the sentences are built from the tic; keep the thesis, the context distinction, the Bereans, the pastoral paragraph about people whose floor opened, and rebuild the rest as paragraphs. 'At nineteen' is a specific biographical event not in the known facts and needs James's word, and the Sheila quotation is elided without marking.",
       "auditedAt": "2026-09-14T19:35:11.032Z",
@@ -2347,6 +2391,10 @@
         ],
         "selfImplication": true,
         "endingWeight": "earned"
+      },
+      "repair": {
+        "at": "2026-09-15T18:37:06.352Z",
+        "from": "wave 1"
       }
     },
     "essay:cheap-grace-left-hand": {
@@ -2356,7 +2404,7 @@
       "pillar": "politics",
       "words": 3045,
       "id": "essay:cheap-grace-left-hand",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "Fairness is the essay's strength: it grants the conservative cheap grace first ('the progressive Christian who aims them there is not wrong'), restores Bonhoeffer to 'the room he was actually standing in' with the Deutsche Christen and Barmen 1934 correctly drawn and the honest note that he 'was not himself a signatory', and honors the left's fear that forgiveness 'has been said to abused women and exploited workers' before answering it. Volf 1996 and the Moltmann question, Niebuhr's Detroit years and 1932, Flossenbürg on April 9, 1945 all check; self-implication is specific ('I have throttled men over pennies while carrying a forgiven fortune'). The register is the old one: about fifteen 'Not X. Y.' constructions ('The test of grace was never the ally. It was always the enemy.', 'Not: if you have something against him. If he has something against you.', 'Not the sinner. The righteous one.'), five bolded slogans, and template section-openers ('Grant the obvious first', 'Hold that, and the left's version comes into focus', 'Watch the second move', 'So set the demand down without decoration', which is the same sentence the authority essay uses). Loose Scripture in three places (an unreferenced liturgical Matthew 6:12, a Luke/Matthew blend on tax collectors, Psalm 58:6 paraphrased). Keep the elder-brother movement and the closing image; rebuild the first three sections into developed paragraphs and drop the bolding.",
       "auditedAt": "2026-09-14T19:35:11.032Z",
@@ -2380,6 +2428,10 @@
         ],
         "selfImplication": true,
         "endingWeight": "earned"
+      },
+      "repair": {
+        "at": "2026-09-15T18:37:06.352Z",
+        "from": "wave 1"
       }
     },
     "essay:conscience-outsourced-to-party": {
@@ -2389,7 +2441,7 @@
       "pillar": "politics",
       "words": 3155,
       "id": "essay:conscience-outsourced-to-party",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The argument does accumulate (Haidt's groupishness, Bellah's civil religion, the Deutsche Christen and Barmen, then the Moral Majority as the right's mirror), and the Daniel window is a controlling image held long enough to work; the self-implication at \"I have closed my own window and prayed toward the consensus\" is concrete. But the gait is the old register: roughly twenty \"Not X. Y.\" turns (\"Not whether your politics are right. Whether they are yours.\" / \"Agreement is not witness. Agreement is the sound a mirror makes.\" / \"Not God in addition to men. Not God once we have checked with the coalition.\") and six bolded slogan-verdicts where the standard asks for one earned thesis line. The claim that \"the left's version is more dangerous precisely because the left believes it is the side that thinks for itself\" is asserted, never argued, and it is exactly the asymmetric charge the voice standard says must be supported or dropped. The cut-flower paragraph (\"a conviction cut from its root keeps its color for a while, the way a cut flower does\") appears nearly verbatim in right-side-of-history, and the Newbigin \"forty years to India... a Britain that had quietly stopped believing\" sentence is shared with three other essays in this batch; a reader who opens two essays hears the same paragraph twice. Note also that here \"my own tribe's mirror image\" is the right (so the writer is placing himself on the left), while six-verses-we-memorized opens \"I am a conservative-leaning pastor\"; the self-implication is real in each essay but the tribal identity shifts to fit the target, which reads as manufactured biography across the corpus.",
       "auditedAt": "2026-09-14T19:35:11.032Z",
@@ -2410,6 +2462,10 @@
         ],
         "selfImplication": true,
         "endingWeight": "earned"
+      },
+      "repair": {
+        "at": "2026-09-15T18:37:06.352Z",
+        "from": "wave 1"
       }
     },
     "essay:deconstruction-without-reconstruction": {
@@ -2419,7 +2475,7 @@
       "pillar": "politics",
       "words": 3100,
       "id": "essay:deconstruction-without-reconstruction",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "This is the strongest architecture in the batch: it concedes the deconstructors' case first (\"The people deconstructing their faith are usually right about why\"), recovers Derrida's actual meaning, brings Polanyi, MacIntyre, and Taylor in where they explain the mechanism, then moves canonically through Matthew 12, Jeremiah 29, Nehemiah 4, Mark 9, Thomas, and Augustine, and the biography (\"At nineteen I built an atheism brick by brick,\" \"the weight of my father's absence\") is consistent with the known facts and does real work. The ending (\"a hammer was never a shelter and was never meant to be one\") passes through the cross and empty tomb two paragraphs earlier and is the best-earned close of the eight. What keeps it from shipping as it stands: \"Read the record: the ones who would not reconstruct assimilated into Babylon and dissolved, and history does not even keep their names\" is an inference dressed as a historical record, the very thing the standard names as \"vague claims presented as history\"; the exile date conflates Jeremiah 29 (written to the 597 deportees) with 587; \"the wave that crested around 2015... on TikTok\" is anachronistic since the exvangelical hashtag dates to 2016 and TikTok's reach later; and both Scripture quotes drop the ESV exclamation (\"I believe; help my unbelief!\" / \"My Lord and my God!\") while presented as verbatim. About fourteen \"Not X. Y.\" turns and four bolded verdicts (\"**Especially to yourself.**\") remain above the mature-register ceiling, and every section opens with the same one-sentence hook paragraph, a template shared with all eight essays. The Taylor immanent-frame and Newbigin paragraphs are near-verbatim duplicates of passages in right-side-of-history, when-justice-becomes-a-gospel, and conscience-outsourced-to-party.",
       "auditedAt": "2026-09-14T19:35:11.032Z",
@@ -2441,6 +2497,10 @@
         ],
         "selfImplication": true,
         "endingWeight": "earned"
+      },
+      "repair": {
+        "at": "2026-09-15T18:37:06.352Z",
+        "from": "wave 1"
       }
     },
     "essay:right-side-of-history": {
@@ -2481,7 +2541,7 @@
       "pillar": "politics",
       "words": 3235,
       "id": "essay:the-sin-we-stopped-naming",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The nearest thing to a pass in this batch, and the revise is surgical. It steelmans its own side before turning (\"A generation reacted, and the reaction was right\"), the H. Richard Niebuhr sentence is real and verbatim, Reinhold Niebuhr, Menninger, and Plantinga's \"culpable shalom-breaking\" each advance the diagnosis rather than decorate it, it names the other ditch (\"the gospel with its arms cut off\"), and the self-implication is the best in the set because it turns on the essay itself: \"The temptation in writing an essay called The Sin We Stopped Naming is to name it in everyone but the author... There is no exit from this hall of mirrors that does not run through the first person.\" The ending (\"the doctrine of sin, in the end, names the one naming it, and waits\") passes through repentance and carries weight. Two things need confirming before it ships: \"Niebuhr would later call original sin the one Christian doctrine empirically verifiable by a glance at the morning paper\" is a widely repeated attribution whose exact source is contested and the \"morning paper\" gloss is the writer's embellishment, and \"The publican said five words\" is true only in the Greek (the ESV is seven) without saying so. Roughly eighteen antitheses is still heavy, though more of them are genuine hinges here (\"His sin was not in his analysis. It was in his pronoun.\") than in the other essays; \"Good feelings have always been the cheapest disguise sin puts on\" is lifted verbatim from right-side-of-history and \"Once you see the trade, you cannot unsee it\" is that essay's sentence with one word changed.",
       "auditedAt": "2026-09-14T19:35:11.032Z",
@@ -2502,6 +2562,10 @@
         ],
         "selfImplication": true,
         "endingWeight": "earned"
+      },
+      "repair": {
+        "at": "2026-09-15T18:37:06.352Z",
+        "from": "wave 1"
       }
     },
     "essay:when-justice-becomes-a-gospel": {
@@ -2511,7 +2575,7 @@
       "pillar": "politics",
       "words": 3150,
       "id": "essay:when-justice-becomes-a-gospel",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The concession at the top is real (\"It is the gospel's own freight... When historians weigh us they will not be kind, and they should not be\"), Rauschenbusch is handled fairly and specifically (Hell's Kitchen, 1917), and the Keller threat test with \"I had built a calf, and it was beautiful, and it was made of everything I most admired\" is honest self-implication. But the machine test fails on structure: the four-part gospel schema (\"A fall... An election... An atonement... An end\") and the four-paragraph anaphora \"It cannot forgive. It cannot rest. It cannot extend grace to the dead... a fourth thing it cannot do\" are perfect symmetry, a listicle wearing prose, and \"eschatology for people who have stopped believing in eschatology\" is right-side-of-history's \"heaven for people who have stopped believing in heaven\" recycled alongside the same Taylor fish-in-water paragraph. The essay also runs the same Luke 18 Pharisee, the same Niebuhr, and the same \"I have prayed like the wrong man\" beat as the-sin-we-stopped-naming, so the two pieces are largely one essay published twice. \"Never me, always them, always the ones outside the circle of the awake\" is partisan shorthand the standard forbids, and the right's counterpart idol gets one sentence and an unargued \"it is worse\" before \"Both rooms are bowing\" imposes symmetry. The ending re-runs the Pharisee parable and the Keller test it already stated, then lands on the reveal \"In the mirror.\", a device rather than earned weight.",
       "auditedAt": "2026-09-14T19:35:11.032Z",
@@ -2534,6 +2598,10 @@
         ],
         "selfImplication": true,
         "endingWeight": "recap"
+      },
+      "repair": {
+        "at": "2026-09-15T18:37:06.352Z",
+        "from": "wave 1"
       }
     },
     "essay:nostalgia-is-not-the-kingdom": {
@@ -2543,7 +2611,7 @@
       "pillar": "politics",
       "words": 2746,
       "id": "essay:nostalgia-is-not-the-kingdom",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The fairness is real (\"The decline he feels is real. The numbers are real\"), \"Christian for whom\" is the distinction that changes the argument, and Noll and Holland are used as witnesses whose ideas advance the diagnosis; \"I have made that sound\" and \"I have let the gospel be my nation's chaplain\" put the writer inside it concretely. The factual failure that must be fixed: \"Three days out of Egypt, three days past the sea splitting open\" attached to the pots-of-meat complaint conflates Exodus 15:22 (Marah, three days) with Exodus 16:3, which is a month into the wilderness. Structurally the essay is right-side-of-history turned around and it borrows that essay's prose to do it: the Augustine paragraph (\"answered him with twenty-two books... the longest refusal in Christian literature\") is near-verbatim, so are \"The claim of this essay is blunt, and the rest of it is me earning the claim,\" \"Here is the test, and it is brutal, and I have failed it,\" \"Nostalgia and progressivism are the same idolatry,\" and the closing \"the One who walked out of his own grave.\" Sixteen antitheses (\"The golden age was not lost. It was a thing we agreed not to look at too closely.\") and three bolded verdicts keep it in the old gait, and the coda \"He has gone on ahead. He always does.\" softens an otherwise earned ending into a warm two-line tag.",
       "auditedAt": "2026-09-14T19:35:11.032Z",
@@ -2566,6 +2634,10 @@
         ],
         "selfImplication": true,
         "endingWeight": "earned"
+      },
+      "repair": {
+        "at": "2026-09-15T18:37:06.352Z",
+        "from": "wave 1"
       }
     },
     "essay:six-verses-we-memorized": {
@@ -2575,7 +2647,7 @@
       "pillar": "politics",
       "words": 2683,
       "id": "essay:six-verses-we-memorized",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "This is the fairest essay in the batch on its own terms: it gives Romans 13 and the order texts their honest case (\"order is a gift, that anarchy is not holiness\"), reads Romans 13 to verse 8, quotes Leviticus 19:33–34 and Amos 5 accurately, names the left's own skipped list without forcing equivalence, and the shelf confession (\"I have given Romans 13 its full Sunday. I am not sure I have ever given Leviticus 19:34 a single one\") is the most concrete self-implication of the eight. It cannot ship because of the numbers: \"the God who wrote all eighty thousand of them\" is simply wrong (the Bible has roughly 31,100 verses), \"the roughly two thousand verses about money and the poor that scholars have been tallying for decades\" is the contested Wallis/Sider tally presented as settled scholarship with no scholar named, and \"the other sixty\" is a rhetorical figure built for the six/sixty symmetry that the essay then treats as a count (\"could not, on its best day, produce three of them\"). Paragraphs are developed and fragments are few, which is the mature register, but thirteen antitheses (\"You have not honored the text. You have quarried it.\") and the template opener \"So here is the test, and I have failed it\" remain. The ending is earned from Matthew 25 but stops at judgment (\"he is going to ask, on a day none of us schedules\") with no pass through mercy for the church it has just indicted, which the standard asks for when the subject warrants it.",
       "auditedAt": "2026-09-14T19:35:11.032Z",
@@ -2597,6 +2669,10 @@
         ],
         "selfImplication": true,
         "endingWeight": "earned"
+      },
+      "repair": {
+        "at": "2026-09-15T18:37:06.352Z",
+        "from": "wave 1"
       }
     },
     "essay:strongman-theology": {
@@ -2635,7 +2711,7 @@
       "pillar": "politics",
       "words": 2612,
       "id": "essay:the-flag-in-the-sanctuary",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The argument genuinely accumulates (military funeral steelman, 312/313, Bellah 1967, Bellamy 1892, 1954/1956/1957, Exodus 20, Daniel 3, Matthew 22, Augustine) and the dates check out, but the gait is old-register: roughly twelve 'Not X. Y.' hinges ('These were not acts of revival. They were acts of statecraft'; 'That is not honor. That is the golden image with better music'; 'An idol is rarely a demon. It is usually a blessing promoted past its station'), so the tic outnumbers the hinge. The piece signposts its own architecture ('Let me be fair before I am sharp', 'Now the theological turn, and it is sharper than the history') and closes on a one-line question, 'Whose image are you.', which leaves the accused exposed rather than opening toward repentance. Self-implication is declared ('the people I am describing are my people', 'I have stood in that room') but never shown; the 'we' who 'sang the national anthem over the swap' never becomes an 'I' who did. Exodus 20:4 is quoted as 'an idol' (ESV reads 'carved image') with no translation named.",
       "auditedAt": "2026-09-14T19:35:11.032Z",
@@ -2656,6 +2732,10 @@
         ],
         "selfImplication": true,
         "endingWeight": "earned"
+      },
+      "repair": {
+        "at": "2026-09-15T18:37:06.352Z",
+        "from": "wave 1"
       }
     },
     "essay:the-persecution-we-invented": {
@@ -2698,7 +2778,7 @@
       "pillar": "politics",
       "words": 2608,
       "id": "essay:the-third-temptation",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The exegetical spine is strong (Matthew 4 against John 6:15, Philippians 2 'grasped', Mark 10:42–45) and the confession is real ('Here is the test, and it is brutal, and I have failed it'; 'I have wanted the mountain'). What the essay never does is draw the distinction the mature register prizes between ordinary civic participation and idolatrous grasping; 'the prospect of a court reshaped, a law passed, an election won' is treated as the tempter's offer wholesale, which a Christian who voted to end a real injustice would not sign. The antithesis count is around fifteen ('He is not describing a different way to use power. He is describing a different thing altogether'; 'It does not feel like the third temptation. It feels like faithfulness'), plus a 'precisely how... precisely how... precisely how' anaphora, and the close is a fragment stack ('We have not been giving it. That is not the world's failure. It is ours.') that leaves the church exposed with no way home. 'Here is the test, and it is brutal' recurs verbatim in the precinct essay, a machine tell. Matthew 4:9 is italicized twice as 'All this I will give you' where ESV reads 'All these', and the Grand Inquisitor's lines are italicized as if verbatim when they are translation-dependent paraphrase.",
       "auditedAt": "2026-09-14T19:35:11.032Z",
@@ -2723,6 +2803,10 @@
         ],
         "selfImplication": true,
         "endingWeight": "earned"
+      },
+      "repair": {
+        "at": "2026-09-15T18:37:06.352Z",
+        "from": "wave 1"
       }
     },
     "essay:two-kingdoms-one-pledge": {
@@ -2732,7 +2816,7 @@
       "pillar": "politics",
       "words": 2626,
       "id": "essay:two-kingdoms-one-pledge",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The flattery paragraph is the best distinction in the batch ('A church that is hunted knows it has a second country... A church that is honored can go a hundred years without ever discovering it has a second country at all'), the abuse of the doctrine is conceded honestly, and Augustine and Luther 1523 are used as witnesses that do work. But there is a factual error that must come out: 'Bonhoeffer helped write the Barmen Declaration of 1934' is false (Barth drafted it; Bonhoeffer was in London), and the radio address was two days after January 30, not 'weeks after'. Matthew 6:24 is quoted in NIV wording without naming the translation. The thesis leans on an etymology ('a feudal word, the oath a vassal swore') and on an assertion ('a posture our ancestors would have recognized instantly as the posture of worship') its opponents would not grant. Fifteen antitheses ('It is not a doctrine of withdrawal. It is a doctrine of ordered love'; 'Not we would prefer to. Not in extreme cases. Must.') and a closing image ('The music will play again, and the room will stand') that duplicates the flag essay's ending almost move for move. Self-implication is asserted ('I am inside this, not above it') but never given a concrete instance.",
       "auditedAt": "2026-09-14T19:35:11.032Z",
@@ -2757,6 +2841,10 @@
         ],
         "selfImplication": true,
         "endingWeight": "earned"
+      },
+      "repair": {
+        "at": "2026-09-15T18:37:06.352Z",
+        "from": "wave 1"
       }
     },
     "essay:when-the-pulpit-became-a-precinct": {
@@ -2766,7 +2854,7 @@
       "pillar": "politics",
       "words": 2627,
       "id": "essay:when-the-pulpit-became-a-precinct",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "This is the best-argued of the political five: the steelman is real ('There is no villain in it... a series of sensible men solving real problems with the tool that happened to be working'), the woman three pews back keeps the victim visible, Hunter's ressentiment and John 17:21 do actual diagnostic work, and the pastor's confession is concrete ('where you let the tribe's enemies stand in for sin so you never have to name the sin in the room'). It still fails the mature register on gait: eighteen 'Not X. Y.' constructions by my count, the heaviest of the political set ('The capture does not require corruption. It only requires...'; 'Not a personality difference. Not a healthy diversity of emphasis. A tearing of the one body'; 'We did not just divide the body. We falsified the evidence'), so the hinge has become the default sentence. 'Here is the test for any church, and it is brutal' is the same sentence the third-temptation essay uses, and every captured church described here votes one direction, which the essay should either own or widen. The ending is earned and concrete (the coat, the door), but there is no way home after the diagnosis; 'The will to power, Hunter wrote, leaves a residue' reads as a quotation without being one.",
       "auditedAt": "2026-09-14T19:35:11.032Z",
@@ -2788,6 +2876,10 @@
         ],
         "selfImplication": true,
         "endingWeight": "earned"
+      },
+      "repair": {
+        "at": "2026-09-15T18:37:06.352Z",
+        "from": "wave 1"
       }
     },
     "essay:proof-texting": {
@@ -2797,7 +2889,7 @@
       "pillar": "theology",
       "words": 2562,
       "id": "essay:proof-texting",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "Closest to a pass in the batch. The paragraphs are developed, the coin and the stone-in-the-wall images are sustained rather than swapped every paragraph, Job's friends and Satan's Psalm 91 are used as arguments rather than ornaments, and the discipline section ('Before you spend the coin, ask where it was minted') is the symptom-cause-wisdom movement done properly. Seven antitheses, several of them earned hinges ('He out-reads the devil. He does not out-quote him'). What keeps it from shipping: 2 Peter 3:16 is italicized as Scripture in non-ESV wording ('distort, as they do the other Scriptures, to their own destruction'), which breaks the site's own verbatim rule; the writer never enters the indictment in first person, the proof-texter is 'he' throughout and 'the vice of all of us' is the only concession, when the 'Both tribes do it' section is exactly where a preacher should name his own canon within the canon; and the 'This is the trap / This is the lesson / That is the real cost' signposts repeat. The ending's last clause is earned, though the sentence before it restates the 'willingness to lose' paragraph.",
       "auditedAt": "2026-09-14T19:35:11.032Z",
@@ -2818,6 +2910,10 @@
         ],
         "selfImplication": false,
         "endingWeight": "earned"
+      },
+      "repair": {
+        "at": "2026-09-15T18:37:06.352Z",
+        "from": "wave 1"
       }
     },
     "essay:reading-in-community": {
@@ -2860,7 +2956,7 @@
       "pillar": "theology",
       "words": 2564,
       "id": "essay:six-lenses-that-distort-the-bible",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "Taylor's background, Smith's liturgies, and the 2 Corinthians 3–4 veil are used as real mechanism, the nationalism paragraph refuses the cheap symmetry ('America into the promised land and... into Babylon are wearing the same lens facing opposite directions'), and the Emmaus turn ('We do not argue our way out of our distortions. We are met our way out of them') earns the ending. But this is the heaviest old-register piece in the batch: twenty-six 'Not X. Y.' constructions by my count, nearly one per hundred words, so almost every paragraph closes on a snapped antithesis ('He thinks he is bringing a blank mind to the text. He is bringing a trained heart'; 'The biblical word for our condition is not bias. It is veil'; 'The goal is not glasslessness. The goal is...'), and the two-by-three symmetry of the lenses ('how the self got large' / 'how the cross got comfortable') is the perfect parallelism the standard names as sounding generated. Each lens is asserted rather than conceded first; only individualism gets a 'which is not nothing'. The writer never says which lens he wears, and Scripture arrives in unmarked non-ESV wording: Joshua 5:14 as 'Neither' (NIV; ESV 'No') and 1 Corinthians 13:12 in altered KJV. At this density the revision is near the rewrite border.",
       "auditedAt": "2026-09-14T19:35:11.032Z",
@@ -2884,6 +2980,10 @@
         ],
         "selfImplication": false,
         "endingWeight": "earned"
+      },
+      "repair": {
+        "at": "2026-09-15T18:37:06.352Z",
+        "from": "wave 1"
       }
     },
     "essay:the-whole-counsel": {
@@ -2923,7 +3023,7 @@
       "pillar": "theology",
       "words": 2584,
       "id": "essay:what-the-original-audience-heard",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "Nearest to a pass in the batch: it accumulates from Bailey through Walton to Jonah and Philemon, steelmans the honest fear (\"has God hidden his word behind a wall of scholarship only experts can climb\") and answers it without condescension (\"The plain reader gets the house\"), and the ending returns to the man on the hill outside Nineveh with real weight. What keeps it from shipping is the register: roughly 15 antitheses (\"Jesus was not being friendly. He was redrawing the boundary\"; \"This is not trivia. It is the difference between a parable that comforts and a parable that detonates\") and matched triplets (\"We are the good Samaritan, never the lawyer. We are Jonah's God, never Jonah. We are Paul, never Philemon\") that make the prose sound built rather than thought. The Philemon line given in quotation marks (\"no longer as a slave but as a beloved brother\") is not verbatim in ESV or any standard translation and should be offered as paraphrase. Three rhetorical questions are missing their question marks, which reads as a mechanical scrub. Self-implication is a genuine \"we\" throughout but never reaches \"I.\"",
       "auditedAt": "2026-09-14T19:35:11.032Z",
@@ -2945,6 +3045,10 @@
         ],
         "selfImplication": true,
         "endingWeight": "earned"
+      },
+      "repair": {
+        "at": "2026-09-15T18:37:06.352Z",
+        "from": "wave 1"
       }
     },
     "essay:christendom-is-ending": {
@@ -3079,7 +3183,7 @@
       "pillar": "after-christendom",
       "words": 2615,
       "id": "essay:witness-without-power",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "Best architecture in the batch: Stark and Kreider are used for their actual findings, 1 Corinthians 1 and 2 Corinthians 12 govern the diagnosis rather than decorate it, the opposing case is given its strongest form before it is answered (\"The case for seizing power is not stupid... Law teaches... The defender's exhibit is abolition and the civil rights movement\"), and the writer is inside the indictment in the first person (\"I include myself and my own tribe in the failure\"; \"I am still, most days, learning to want it\"). What blocks a pass is the gait: roughly 22 antitheses (\"Not tolerated in weakness. Not despite weakness. Made perfect in it\"; \"A church that rules looks like every other ruler. A church that serves, forgives, and suffers looks like its Lord\"), the built triplet \"out-loved, out-suffered, and out-died,\" and four bold pull-quotes. Hauerwas's \"first political task is to be the church\" is his real thesis but no work is cited. The ending is earned: the plague bedside returns from the opening and \"We just got rich enough, for a while, to forget it\" implicates rather than consoles. Revision here is trimming, not rebuilding.",
       "auditedAt": "2026-09-14T19:35:11.032Z",
@@ -3100,6 +3204,10 @@
         ],
         "selfImplication": true,
         "endingWeight": "earned"
+      },
+      "repair": {
+        "at": "2026-09-15T18:37:06.352Z",
+        "from": "wave 1"
       }
     },
     "essay:discipling-people-out-of-fear": {
@@ -4461,7 +4569,7 @@
       "pillar": "theology",
       "words": 2627,
       "id": "essay:why-the-incarnation-matters",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The architecture is right (cozy card, the scandal, the Gnostic refusal, Athanasius, Chalcedon 451 with its four adverbs correctly given, the God who knows from inside, the thirty hidden years) and the writer enters as pastor and former atheist (\"the thing I, as an atheist, was least prepared for\"). The serious problem is the citation of Athanasius's \"most quoted line\": the essay renders it \"so that we might become, not God, but God's,\" but De Incarnatione 54 says he became man that we might become god (divine); the essay has altered the most famous sentence in the book and presented the alteration as his. The earlier quotation (\"having a body that could die, he might die in the place of all, and might restore the corrupt to incorruption\") is not verbatim from any standard translation I can confirm, and Hebrews 2:18 is quoted as \"being tested\" where ESV reads \"tempted,\" cited under a 2:14–18 range for a one-verse quote. \"No other religion has ever dared to say this\" is an unqualified sweep that avatar traditions would contest. The close performs an anaphoric triplet (\"That is God... That is the maker of light... That is the source of all words\") and a symmetrical slogan (\"The smallness was the strategy. The weakness was the point\") on top of eleven antitheses; the Nazareth section duplicates ordinary-time nearly paragraph for paragraph.",
       "auditedAt": "2026-09-14T23:03:01.642Z",
@@ -4484,6 +4592,10 @@
         ],
         "selfImplication": true,
         "endingWeight": "earned"
+      },
+      "repair": {
+        "at": "2026-09-15T18:37:06.352Z",
+        "from": "wave 1"
       }
     },
     "essay:easter-is-not-a-day": {
@@ -4493,7 +4605,7 @@
       "pillar": "devotionals",
       "words": 2580,
       "id": "essay:easter-is-not-a-day",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The proportion argument is genuinely good (\"We are rigorous about the fasting and careless about the feast... It is a confession\"), the history holds (no kneeling in Eastertide, the eighth day, 1 Cor 15 as the earliest account, Wright 2008), the Scripture is ESV-accurate, and the writer implicates himself concretely (\"I have kept Easter as a single Sunday for most of my life, and I can tell you exactly what it produced\"). The graveside paragraph carries real pastoral weight. Two failures. First, \"Schmemann, again, saw the whole Christian life as fundamentally Paschal\" is the first and only mention of Schmemann in the essay — no first name, no work, no prior reference; a paragraph was cut or the piece was stitched, and a reader trips on it. Second, a Baptist pastor commending Eastertide never states the strong case of his own tradition against the church calendar (the Puritan and free-church objection that seasons are unbiblical), so the piece asserts the season rather than earning it against its best objector. Eleven antitheses (\"This is not a man surviving his own funeral. This is the hinge of history turning\"), paired symmetrical slogans (\"The feast was longer than the fast. The joy outlasted the sorrow\"), and \"cracked... open\" used twice in consecutive paragraphs.",
       "auditedAt": "2026-09-14T23:03:01.642Z",
@@ -4512,6 +4624,10 @@
         ],
         "selfImplication": true,
         "endingWeight": "earned"
+      },
+      "repair": {
+        "at": "2026-09-15T18:37:06.352Z",
+        "from": "wave 1"
       }
     },
     "essay:ordinary-time": {
@@ -4821,7 +4937,7 @@
       "pillar": "devotionals",
       "words": 2561,
       "id": "essay:praying-at-fixed-hours",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The Scripture spine does real work and reads correctly against ESV wording (Psalm 119:164, Psalm 55:17, Daniel 6:10, Acts 3:1), the Daniel paragraph ('They threatened a structure he had built in peacetime, brick by ordinary brick') is the essay's best writing, and the Reformers get a fair hearing ('So much of what they recovered was pure gain'). But the old register is the gait: anaphora stacks ('Not the harvest. Not the guests. Not the mood of the man kneeling down.'; 'Prayer with a clock. Prayer with a script. Prayer that starts at noon because it is noon.') and about nine hard-period antitheses ('The schedule was not the enemy of real prayer. The schedule was the thing...', 'The hard part is not the content. The hard part is the obedience'). Two factual problems: 'three centuries later we are living in the wreckage of that overcorrection' undercounts the distance from the Reformers by two hundred years, and 'Read that as a literal count, because that is how the people who first sang it read it' asserts an ancient reading of Psalm 119:164 the essay cannot show (seven as completeness is at least as common). The ending is earned; it closes the loop on the waiting-room opener without restating the thesis.",
       "auditedAt": "2026-09-14T19:35:11.032Z",
@@ -4842,6 +4958,10 @@
         ],
         "selfImplication": true,
         "endingWeight": "earned"
+      },
+      "repair": {
+        "at": "2026-09-15T18:37:06.352Z",
+        "from": "wave 1"
       }
     },
     "essay:reading-the-bible-slowly": {
@@ -5384,7 +5504,7 @@
       "pillar": "theology",
       "words": 2561,
       "id": "essay:augustine-the-restless-man",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The portrait is warm and mostly accurate to the Confessions (the pear theft, the Milan beggar, 'Tolle, lege,' the Romans 13 passage, 'How long? How long this tomorrow and tomorrow?' are all real and rendered close to standard translations), and the ending is a genuine verdict (\"he had never been the one doing the chasing\"). Three source problems need fixing before it ships: \"you are not what you think. You are what you love\" is attributed to Tim Keller, but that formulation is James K.A. Smith's (You Are What You Love, 2016); Peter Brown is credited with calling Augustine \"essentially the inventor of the inner self,\" a claim more associated with Charles Taylor that I cannot verify in Brown; and \"Psalm 139, which Augustine prayed constantly\" is an unsupported claim about his prayer life. \"Grant me chastity and self-control, but please, not yet\" sits in quotation marks but is a loose rendering of 8.7.17. The register is the old one, a dozen antitheses (\"Augustine does not start with answers. He starts with the wanting.\" \"The restlessness was not the disease. The restlessness was the symptom\" \"The ache was not random. It was a homing signal.\"). And the writer never enters: a man who came to faith from atheism narrating the most famous conversion in the West stays a narrator throughout, when the garden or the disordered-love paragraph is where his own running belonged.",
       "auditedAt": "2026-09-14T19:35:11.032Z",
@@ -5406,6 +5526,10 @@
         ],
         "selfImplication": false,
         "endingWeight": "earned"
+      },
+      "repair": {
+        "at": "2026-09-15T18:37:06.352Z",
+        "from": "wave 1"
       }
     },
     "essay:christianity-was-never-western": {
@@ -6102,7 +6226,7 @@
       "pillar": "theology",
       "words": 2639,
       "id": "essay:what-jesus-said-the-good-life-is",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "Pennington and Willard are the right witnesses and are used correctly (makarios as flourishing; the Beatitudes as announcement rather than entrance requirement), and the Isaiah 61 and Luke 6 material gives the argument canonical depth. But this is the most rhetorically patterned essay of the eight: the four-fold \"We bless the self-assured; Jesus blesses the poor in spirit... We bless... Jesus blesses...\" paragraph is perfect symmetry, the \"If Jesus is right... If Jesus is right... And if Jesus is right\" triplet is anaphora doing what argument should, \"still on the hillside, still pointing, still saying\" is a third, and the antitheses run seventeen deep (\"That is not a bug in the list. It is the thesis of the list\" imports a tech cliché). The opposing account is a soft target (the airport bookstore, the pillow, the mug) rather than the strongest case a defender of ordinary ambition would sign. The self-implication is present but generic (\"I would rather be blessed for my strength than for the end of it\"), and the close opens with \"That is the strange weight of this opening,\" the same construction as \"That is the strange gift\" in the heart essay, then restates the thesis rather than landing it.",
       "auditedAt": "2026-09-14T19:35:11.032Z",
@@ -6125,6 +6249,10 @@
         ],
         "selfImplication": true,
         "endingWeight": "recap"
+      },
+      "repair": {
+        "at": "2026-09-15T18:37:06.352Z",
+        "from": "wave 1"
       }
     },
     "essay:why-hearing-isnt-enough": {
@@ -6293,7 +6421,7 @@
       "pillar": "theology",
       "words": 2624,
       "id": "essay:who-is-the-holy-spirit",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The thinking is sound and the sources check: Chan's Forgotten God (2009), Basil's On the Holy Spirit (c. 375) and the 'with' versus 'through/in' doxology fight, Constantinople 381, and the John 14/16, Acts 5, Genesis 1 texts are all real and quoted accurately. The self-implication is genuine and earned ('The blur was never in him. It was in me.'). But this is the old gait wearing developed paragraphs: 'He does not bludgeon. He builds.' 'A small preposition. A vast difference.' 'He is not dim. He is deferential.' 'You do not harness a person. You surrender to one. You do not access him like a current. You know him like a friend' is antithesis stacked four deep after the point landed, and 'The Spirit hears. The Spirit speaks. The Spirit guides. The Spirit declares.' is anaphora the standard names by name. The historical claim that early Christians 'prayed to the Spirit' before the councils is thin for the first centuries and should be softened or cut. The last paragraph is a series teaser ('The next question... is what such a person actually does') that hands away the weight the confession just earned.",
       "auditedAt": "2026-09-14T19:35:11.032Z",
@@ -6314,6 +6442,10 @@
         ],
         "selfImplication": true,
         "endingWeight": "earned"
+      },
+      "repair": {
+        "at": "2026-09-15T18:37:06.352Z",
+        "from": "wave 1"
       }
     },
     "essay:does-hell-exist": {
@@ -6350,7 +6482,7 @@
       "pillar": "theology",
       "words": 2565,
       "id": "essay:is-there-life-after-death",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "Nearest the pass line of the seven revises. The atheist account is given with real dignity from inside ('the honest atheism I held for years... Many of them have looked harder at death than the religious have'), the Wright/Surprised by Hope (2008) correction is accurate, 1 Cor 15, John 11, Job 19, and 2 Cor 5 are handled in context, and the ending returns to the graveside and earns 'one day will say her name.' Three things keep it from shipping as is. The reincarnation section is a Western composite ('The droplet returns to the ocean... It saves the soul by dissolving the self') that names the atman and then describes Advaita as if it were the whole tradition; a Hindu bhakti or Buddhist reader would not sign it, and 'in most versions' does not cover the gap. Two apologetic claims are overstated: women's testimony 'carried no legal weight' (restricted, not nil) and the witnesses 'could not stop talking about even when it cost them their lives' / 'frightened men who became unkillable' (attested for a few apostles, assumed for the rest). And the antithesis gait is near one per paragraph ('That is not the shape of a fairy tale. It is the shape of a witness'; 'The real question is sharper'), with the thesis restated as soul-versus-body three separate times.",
       "auditedAt": "2026-09-14T19:35:11.032Z",
@@ -6371,6 +6503,10 @@
         ],
         "selfImplication": true,
         "endingWeight": "earned"
+      },
+      "repair": {
+        "at": "2026-09-15T18:37:06.352Z",
+        "from": "wave 1"
       }
     },
     "essay:what-is-heaven-actually-like": {
@@ -6444,7 +6580,7 @@
       "pillar": "theology",
       "words": 2562,
       "id": "essay:will-there-be-a-judgment-day",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The Volf turn is the strongest move in the batch, the self-implication is real and repeated ('the truth told about every life without exception, including mine'; 'The atheist materialist I used to be'), the careless-word section is genuinely searching, and the ending passes through the cross ('the one who already stood in the dock for you'). Two things need work before it ships. First, fairness: the unbeliever is only given in the crudest form ('morality is just evolved preference... the words \"that was unjust\" are just noises we make'); a non-theist moral realist would not sign that, and the 'they cannot live it' move is a Keller-era commonplace that lands on a caricature. Second, three attributions I cannot verify and would not let stand unchecked: Volf is quoted as writing that a non-judging God 'would be unworthy of worship' (his actual argument in Exclusion and Embrace is that a God who is not indignant would be 'an accomplice' to injustice; the phrase here should be confirmed or marked as paraphrase), the biographical color 'mass graves dug a few hours' drive from where he sat' (he wrote largely in the US), and 'N. T. Wright observes that the biblical hope of judgment is not the cosmic equivalent of a tabloid exposing the famous', which I cannot source. The antithesis gait is again near one per paragraph ('That is not an afterthought. It is the load-bearing beam.'; 'Remove judgment and you do not get more mercy. You get either despair...').",
       "auditedAt": "2026-09-14T19:35:11.032Z",
@@ -6466,6 +6602,10 @@
         ],
         "selfImplication": true,
         "endingWeight": "earned"
+      },
+      "repair": {
+        "at": "2026-09-15T18:37:06.352Z",
+        "from": "wave 1"
       }
     },
     "essay:can-you-be-a-christian-alone": {
@@ -6622,7 +6762,7 @@
       "pillar": "doubt",
       "words": 2776,
       "id": "essay:the-atheist-in-the-pulpit",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "On prose this is the mature register the standard describes: long, developed paragraphs, the atheist steelmanned to the point of respect ('I still think that is the best answer available to the position'), only four or five antitheses in 2,800 words, and an ending that passes through grace and stops on one earned line ('Somebody was watching the road'). Russell's 'accidental collocations of atoms' and Lewis's 'most dejected and reluctant convert in all England' are verbatim; the Luke 15 exegesis (the missing hired-servant clause in v. 21 against v. 19) is correct in the ESV. The verdict is 'revise' for one reason only: the essay extends James's biography well past the four facts the audit allows ('I found Bertrand Russell at nineteen', a father 'not dead, just gone', the specific night of conversion, 'I pray the word Father with no muscle memory for it'). If James confirms every one of these as his own, the piece passes without a changed sentence; if any is invented, it is a cut, not a revise, because invented testimony under his name is the one unforgivable act here. Hold for his ruling.",
       "auditedAt": "2026-09-14T19:35:11.032Z",
@@ -6642,6 +6782,10 @@
         ],
         "selfImplication": true,
         "endingWeight": "earned"
+      },
+      "repair": {
+        "at": "2026-09-15T18:37:06.352Z",
+        "from": "wave 1"
       }
     },
     "essay:the-machine-that-forms-you": {
@@ -6651,7 +6795,7 @@
       "pillar": "devotionals",
       "words": 3497,
       "id": "essay:the-machine-that-forms-you",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "Substantively excellent: Smith, Ellul, Haidt, Augustine, Taylor and Psalm 115 are all real, accurately summarized, and each advances the mechanism; the smash-the-machines position is stated 'in its strongest form, because it is strong'; the self-implication is concrete and repeated ('I checked my phone this morning before I prayed', 'with my signature on it', the Saturday-night sermon confession). The failure is slogan density: nearly every paragraph closes on an epigram, and one paragraph carries four antitheses in a row ('The feed did not create that self. It inherited it... The phone is not the disease. It is the opportunistic infection... Haidt has the symptom exactly right and the anthropology wrong... The machine did not invent the ache. It monetized it'), which is the old gait inside full paragraphs. 'The usual verdict on our best secular witnesses' is the style guide's own sentence quoted into the essay, and the reader can hear the brief. The italicized catechism triplet ('You are what you crave... You deserve to be seen... The self is the product') and the 'Here is the claim this essay stands on' opener shared with two sibling essays are the template showing. Trim half the verdicts, cut the brief language, and this ships.",
       "auditedAt": "2026-09-14T19:35:11.032Z",
@@ -6673,6 +6817,10 @@
         ],
         "selfImplication": true,
         "endingWeight": "earned"
+      },
+      "repair": {
+        "at": "2026-09-15T18:37:06.352Z",
+        "from": "wave 1"
       }
     },
     "essay:the-hour-that-forms-the-week": {
@@ -6711,7 +6859,7 @@
       "pillar": "devotionals",
       "words": 3973,
       "id": "essay:the-end-of-home-field-advantage",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The scholarship is real and load-bearing throughout: 313 and 380, Kingswood 1739, Rochester 1830, Los Angeles 1949, the 1880 'come home' hymn, GSS 1972 and Pew 2021, Kierkegaard's 1854-55 attack, Diognetus handled with the right caveat ('this is an apology, a portrait polished for a skeptical reader'), Tertullian c. 197, Newbigin's 1936-1974 and Winson Green, the 'only hermeneutic of the gospel' line verbatim, and 1 Peter 3:15-16 unfolded in the order Peter wrote it. Both reflexes, volume and silence, are given their real motives before the verdict, and the writer is inside the ward ('I have taught the napkin', 'I cycled through the pair'). Two things keep it from passing as it stands. First, the personal narrative is extensive and beyond the known facts: the napkin evangelist, the friend 'who took my contempt without returning it', training volunteers in 'conversational pivots', 'I bought the campaign kits', 'measured a season of my ministry in response cards'; if James confirms these it passes, if any is invented it is a cut. Second, the register still leans on the older moves at 4,000 words: eleven antitheses ('Much of what died was not faith. It was assent', 'They did not have the advantage. They had a hope'), a fragment triplet ('Not miracles. Not numbers... Not power'), the brief's own phrase 'with the same instrument', and four witnesses (Diognetus, Tertullian, Newbigin, Peter) marshaled for one point, which asks for the ruthless edit the standard names. The ending is earned and self-implicating: 'Before I teach one more class on what to say, I have to sit with why.'",
       "auditedAt": "2026-09-14T19:35:11.032Z",
@@ -6735,6 +6883,10 @@
         ],
         "selfImplication": true,
         "endingWeight": "earned"
+      },
+      "repair": {
+        "at": "2026-09-15T18:37:06.352Z",
+        "from": "wave 1"
       }
     },
     "essay:what-a-christian-owes-the-city": {
@@ -6744,7 +6896,7 @@
       "pillar": "devotionals",
       "words": 3495,
       "id": "essay:what-a-christian-owes-the-city",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The architecture is the mature register's: the foyer question, the two wrong doors, Jeremiah's letter read by its address line, Augustine's two loves, Romans 13 beside Revelation 13, Hunter and Newbigin explained rather than name-dropped, then the mirror turned inward with real cost (\"I know which verse rises in me unbidden depending on who won\"; \"I knew which applause was cheap and I banked it anyway\"). It fails on density, not thinking: roughly thirteen \"not X, Y\" turns and a two-beat verdict closing almost every paragraph (\"The same sentence bows and refuses to kneel,\" \"kept the leather cover,\" \"It was owed,\" \"None of this will trend. That is much of its value\"), so the tic outnumbers the hinges. Two lines are the house documents recited as prose — \"a tribe in robes\" is CLAUDE.md's Orthodoxy Guardrails sentence and \"The future does not belong to stronger tribes; it belongs to deeper disciples\" is the Editorial Constitution's North Star — which reads as the guide talking, not the pastor. Dates and quotations hold against what I know (597 BC, 24 August 410, 413–426, Hunter 2010, Newbigin 1989, every ESV citation accurate). The fix is subtractive: one verdict per movement, and let the Augustine and foyer paragraphs carry weight in full sentences.",
       "auditedAt": "2026-09-14T19:35:11.032Z",
@@ -6764,6 +6916,10 @@
         ],
         "selfImplication": true,
         "endingWeight": "earned"
+      },
+      "repair": {
+        "at": "2026-09-15T18:37:06.352Z",
+        "from": "wave 1"
       }
     },
     "essay:excavation-not-demolition": {
@@ -6773,7 +6929,7 @@
       "pillar": "doubt",
       "words": 3501,
       "id": "essay:excavation-not-demolition",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The thinking is sound and the self-implication comes early and costs something (\"Some of the deconstruction happening in my county is the disassembly of sermons with my name on them\"); the counter-speech is steelmanned (\"some deconstruction is appetite looking for an alibi\") and Arius gets his due before Nicaea answers him. But every section closes on an epigram — \"Same shovel. Opposite prayer.\", \"Rubble is honest. Nobody can live in it.\", \"The demolition is in the calling. It is not the calling.\" — about twelve antitheses in all, and the ending is a four-beat fragment stack (\"Take it apart, then. Take it all the way apart, toward something. The bedrock is not going anywhere. It never has.\"), which is the old gait exactly. Signposting recurs: \"But now the question that decides everything,\" \"and here the whole matter turns,\" and \"the difference between those two descriptions is the entire argument of this essay,\" a sentence that reappears almost verbatim in depression-or-the-dark-night. Sources are real and marked honestly (Guidepost May 2022, the 2021 RZIM investigation, Soul Searching 2005, Nicaea 325, Chalcedon 451, 1517/1521, Luther's first thesis flagged as paraphrase, Jeremiah 1:10, Ezra 3:12–13, Mark 9:24, 1 Thessalonians 5:21 all accurate ESV). Prune the epigrams to the genuine hinges and rebuild the close as a paragraph.",
       "auditedAt": "2026-09-14T19:35:11.032Z",
@@ -6792,6 +6948,10 @@
         ],
         "selfImplication": true,
         "endingWeight": "earned"
+      },
+      "repair": {
+        "at": "2026-09-15T18:37:06.352Z",
+        "from": "wave 1"
       }
     },
     "essay:depression-or-the-dark-night": {
@@ -6801,7 +6961,7 @@
       "pillar": "doubt",
       "words": 3996,
       "id": "essay:depression-or-the-dark-night",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "This is the strongest essay in the batch and the closest to a pass: fair before sharp on both sides (\"the pray-harder church is holding a truth the clinic cannot say out loud\"; \"in large part, the church deserved to lose\"; \"The clinicians who added it were not villains\"), self-implication leading rather than trailing (\"I baptized his suffering as his fault\"), Spurgeon paraphrased and marked \"in substance,\" a visible 988 path, an explicit not-medical-advice line, and an ending that is earned (\"Elijah ate the bread before he heard the whisper... So are you\"). Sources hold against what I know: Freud 1927, Rieff 1966, DSM-5-TR 2022, John of the Cross seized December 1577 and the melancholy differential in Book I, the Surrey Gardens disaster of 19 October 1856, 1 Kings 19 quoted accurately. What keeps it from shipping as it stands is one sentence and one habit: \"The verdict on the therapeutic is the one this platform keeps reaching about every secular account worth taking seriously: it got the symptom right and the anthropology wrong\" is CLAUDE.md's Scholarship Standard quoted back with the platform named — a pastor across a table does not cite his own style guide — and \"the difference between those two verbs is nearly the whole argument of this essay\" is the same signpost that appears in excavation-not-demolition. Cut those two, thin the ten antitheses toward the true hinges (\"Not abandonment. Weaning.\" and \"He outnumbered it.\" earn their place; \"Two opposite errors. One result.\" does not), and it passes.",
       "auditedAt": "2026-09-14T19:35:11.032Z",
@@ -6820,6 +6980,10 @@
         ],
         "selfImplication": true,
         "endingWeight": "earned"
+      },
+      "repair": {
+        "at": "2026-09-15T18:37:06.352Z",
+        "from": "wave 1"
       }
     },
     "essay:a-whole-life": {
@@ -6829,7 +6993,7 @@
       "pillar": "devotionals",
       "words": 4008,
       "id": "essay:a-whole-life",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The best-argued piece of the eight: the opposing case is given in a form its defenders would sign (\"A defender of the family-shaped church would sign every sentence of that paragraph, and every sentence of it is true\"), answered on two precise points, then settled by the unmarried Christ; the self-implication is concrete and repeated (\"I built it,\" \"I am the man in that sentence\"), and the people-in-the-room section refuses to diagnose anyone. Sources are consistent with what I know (Pew's 1960/2010 figures, Eusebius on Cornelius's 1,500, Jovinian condemned 393 and Pammachius pulling Jerome's book, Luther 1525, Aelred's \"God is friendship,\" Hauerwas 1981, Allberry 2019), and Luke 20 is honestly marked as paraphrase. Register is where it slips: about fourteen antitheses, with two stacks in a single paragraph (\"Not tolerates it. Not makes pastoral peace with it. Wishes it\" followed at once by \"Not good-for-now. Not good-until. Good\") and slogans such as \"They are not behind the times. They are ahead of them,\" plus the meta line \"the house rule of this essay is that no calling gets softened to sharpen another,\" which is the Audience Standard talking. The ending is earned (\"Two gifts, one of one kind and one of another. He kept the one we pity\"). Thin the antitheses so the exegesis carries and it ships.",
       "auditedAt": "2026-09-14T19:35:11.032Z",
@@ -6848,6 +7012,10 @@
         ],
         "selfImplication": true,
         "endingWeight": "earned"
+      },
+      "repair": {
+        "at": "2026-09-15T18:37:06.352Z",
+        "from": "wave 1"
       }
     },
     "essay:the-work-nobody-watches": {
@@ -7659,7 +7827,7 @@
       "pillar": "doubt",
       "words": 2795,
       "id": "essay:end-of-life-and-bioethics",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The steelman of the autonomy case is the best in the batch and the standard's 'concede what is true in the objection' is done at full weight ('It is cruelty wearing a lab coat. We would not do it to a dog.'; 'They are not asking for death. They have that already. They are asking that it be good.'). The ordinary/extraordinary-means distinction is explained so the reader learns the idea, Cicely Saunders and St Christopher's (1967) are real and do work, the medical/legal disclaimer and the 988 line are present, and the self-implication is concrete inside the known biography ('I have five sons... I am that man on the bad afternoons'). But at roughly eighteen 'Not X. Y.' turns in 2,800 words this is the heaviest use of the old gait in the eight ('Not cured. Met.'; 'The answer to being abandoned is not to be killed. It is to not be abandoned.'; 'I do not get to be useful all the way to the end. I get to be his.'), the opening is the template ('The question does not arrive in an ethics seminar. It arrives in a room with a bed in it.'), and the close stacks verdict fragments ('Attended, not abandoned. Unafraid, because carried. Given back the way it was given.' ... 'Not by yourself.'). Two claims need tightening: 'Wherever assisted dying has been made law, the criteria... have tended over years to widen' is true of the Netherlands, Belgium, and Canada but names no jurisdiction and the standard asks for concrete events; and Paul writing 'with the executioner somewhere down the hall' dramatizes beyond Philippians 1:20-22, where the outcome is uncertain. The ending is earned and passes through resurrection ('The faith that says a man rose from a grave is not the faith most desperate to keep everyone out of one').",
       "auditedAt": "2026-09-15T14:41:52.218Z",
@@ -7680,6 +7848,10 @@
         ],
         "selfImplication": true,
         "endingWeight": "earned"
+      },
+      "repair": {
+        "at": "2026-09-15T18:37:06.352Z",
+        "from": "wave 1"
       }
     },
     "essay:christian-sexual-ethic": {
