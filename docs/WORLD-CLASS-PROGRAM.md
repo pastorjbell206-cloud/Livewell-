@@ -44,6 +44,15 @@ What is real, verified by reading the code and the numbers:
 - **Purchase.** Book checkout is wired server-side and the prod key is set;
   membership falls back to a waitlist until two Stripe price IDs are entered
   as site settings.
+- **The site reset never shipped.** Found while chasing clipped homepage
+  cards in phase 3: since July, a comment in `index.css` mentioned Tailwind's
+  `mb-*` and `p-*` classes with a slash between them, the asterisk-slash closed
+  the comment early, and the browser swallowed the global reset (border-box,
+  zero margins and padding) as an invalid rule. Every page had been laying out
+  on browser defaults: extra paragraph margins, content-box padding pushing
+  cards past their grid rows, uneven card heights. Restored, with a test that
+  strips comments the way a browser does and fails if the reset is gone. Most
+  of "the spacing feels off" was this one line.
 
 ## 2. The phases, in order
 

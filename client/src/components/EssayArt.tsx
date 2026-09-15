@@ -298,6 +298,11 @@ export function EssayArt({
   return (
     <svg
       viewBox={`0 0 ${W} ${H}`}
+      // Intrinsic dimensions: without them a grid row measures the SVG at
+      // zero height during track sizing and the card content overflows the
+      // row once the aspect ratio resolves.
+      width={W}
+      height={H}
       role={decorative ? undefined : "img"}
       aria-hidden={decorative ? true : undefined}
       aria-label={decorative ? undefined : title ? `Cover art for ${title}` : "Essay cover art"}

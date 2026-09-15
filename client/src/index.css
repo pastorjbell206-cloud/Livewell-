@@ -30,8 +30,11 @@
 
 /* The site reset lives in the lowest cascade layer so Tailwind utilities can
  * override it. Unlayered, this rule silently beat every layered margin/padding
- * utility (unlayered > @layer in the cascade) — the admin's mb-*/p-*/gap-*
- * classes all computed to 0 and the whole admin rendered with no whitespace. */
+ * utility (unlayered > @layer in the cascade) and the admin's margin, padding
+ * and gap classes all computed to 0, so the whole admin rendered with no
+ * whitespace. Never write a Tailwind wildcard like "mb-" followed by an
+ * asterisk and a slash inside this comment: that sequence closes the comment
+ * early and the parser swallows the reset below as an invalid rule. */
 @layer base{
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 }
