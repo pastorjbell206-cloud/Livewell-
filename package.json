@@ -39,6 +39,8 @@
     "validate:integrity": "node scripts/validate-content-integrity.mjs",
     "validate:links": "node scripts/validate-links.mjs",
     "validate:seo": "node scripts/validate-seo-layer.mjs",
+    "validate:notes": "node scripts/validate-notes.mjs",
+    "notes:import": "node scripts/import-facebook-notes.mjs",
     "seo:layer": "node scripts/build-seo-layer.mjs",
     "llms:full": "node scripts/build-llms-full.mjs",
     "theology-index": "node scripts/build-theology-index.mjs"

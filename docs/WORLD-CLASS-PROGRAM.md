@@ -98,8 +98,16 @@ Each phase ships on its own, verified, before the next starts.
    `docs/audit-voice/rewrites-for-review.md`, unapplied, for James to accept
    or strike. Not a blind pass over 678 essays; that is how writing starts
    sounding like a machine.
-6. **Notes.** A short-form section for the Facebook-style posts, with an import
-   format for a Facebook export, so the site holds all of the writing.
+6. **Notes.** Shipped as `/notes`, a content-as-data section for the
+   Facebook-length pieces (`client/public/notes/notes.json`), newest first,
+   grouped by year, each note with a permalink and a link back to the original
+   post. `scripts/import-facebook-notes.mjs` reads a Facebook "Download your
+   information" JSON export (repairing its mis-encoded text) or a plain text
+   file of posts, merges without duplicating, and never rewrites a word.
+   `scripts/validate-notes.mjs` gates the library in CI. The library ships
+   empty on purpose: nothing is written in James's name by anyone else, and
+   the page says so and points to Facebook until the posts are imported. The
+   footer carries the link; the header will once there is something to read.
 7. **Purchase path.** Trace checkout end to end in code, serve the WebP covers,
    and list exactly what James must set for membership to go live.
 
@@ -112,6 +120,11 @@ Each phase ships on its own, verified, before the next starts.
 - **Stripe.** The two membership price IDs, entered as site settings, turn the
   waitlist into checkout. Book checkout is already wired.
 - **A Facebook export**, or the posts pasted into the import format, to fill
-  the Notes section.
+  the Notes section. Facebook: Settings, Your information, Download your
+  information, format JSON, only "Posts". Then
+  `node scripts/import-facebook-notes.mjs <the posts folder> --write`, then
+  `node scripts/validate-notes.mjs`. Or paste posts into a text file, one per
+  block separated by a line of three dashes, each block starting with
+  `date: YYYY-MM-DD`, and run the same command on that file.
 - **Reading the rewrites.** Phase 5 produces drafts in his voice for him to
   accept or strike, essay by essay.

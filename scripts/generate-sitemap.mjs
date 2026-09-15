@@ -224,6 +224,7 @@ const STATIC_PAGES = [
   { url: "/living-well", priority: "0.75", changefreq: "monthly" },
   { url: "/wisdom", priority: "0.8", changefreq: "monthly" },
   { url: "/how-tos", priority: "0.75", changefreq: "monthly" },
+  { url: "/notes", priority: "0.7", changefreq: "weekly" },
   { url: "/studyguides", priority: "0.8", changefreq: "monthly" },
   { url: "/article-collections", priority: "0.7", changefreq: "monthly" },
   { url: "/substack", priority: "0.6", changefreq: "monthly" },

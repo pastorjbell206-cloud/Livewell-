@@ -42,6 +42,7 @@ jobs:
           node scripts/validate-argument-cases.mjs
           node scripts/validate-links.mjs
           node scripts/validate-seo-layer.mjs
+          node scripts/validate-notes.mjs
 
       - name: Test
         run: pnpm test
