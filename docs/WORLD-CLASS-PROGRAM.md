@@ -108,8 +108,21 @@ Each phase ships on its own, verified, before the next starts.
    empty on purpose: nothing is written in James's name by anyone else, and
    the page says so and points to Facebook until the posts are imported. The
    footer carries the link; the header will once there is something to read.
-7. **Purchase path.** Trace checkout end to end in code, serve the WebP covers,
-   and list exactly what James must set for membership to go live.
+7. **Purchase path.** Traced end to end. Finding: the three hand-written
+   books charged the card through Stripe (two by Payment Link, one by an
+   embedded Buy Button) and then sent the buyer to a thank-you page that
+   linked the EPUB and PDF as plain public files under `/ebook/`. Anyone who
+   guessed the URL had the book free, and the thank-you page verified
+   nothing. Now: the files live in the server's private ebook store with the
+   other twenty-three titles; the three books are entries in the gated
+   catalogue; the buy button goes through the site's own checkout (with the
+   Payment Link as the fallback until the server-side price exists); and the
+   thank-you page confirms the session is paid before it serves either
+   format. A session from a Payment Link carries no metadata, so the page
+   names the book and the server checks the claim against what the session
+   actually bought. The six older ebook pages that still deliver from
+   `/ebook/` (Raising Believers and the others) are unchanged and listed
+   below for James.
 
 ## 3. What needs James
 
@@ -117,8 +130,25 @@ Each phase ships on its own, verified, before the next starts.
   handful of his own — the church, the desk, the family table — would replace
   generated art on the pages that matter most. Until then the poster system
   carries every surface.
-- **Stripe.** The two membership price IDs, entered as site settings, turn the
-  waitlist into checkout. Book checkout is already wired.
+- **Stripe, books.** One click in the admin (Commerce, "Create Stripe
+  prices") creates an $8.99 price for every ebook in the catalogue, the three
+  hand-written books now included, and stores the ids as site settings. From
+  then on the buy buttons use the site's own checkout, which returns the buyer
+  to the thank-you page with a session id and unlocks the download. Until that
+  click, the buttons fall back to the existing Payment Links. For those to
+  deliver, each Payment Link (and the Buy Button for When God Bless America)
+  must redirect after payment to
+  `https://www.livewellbyjamesbell.co/books/<slug>/thank-you?session_id={CHECKOUT_SESSION_ID}`,
+  set in the Stripe dashboard under the link's "After payment" option. Without
+  the session id the thank-you page cannot confirm the purchase and offers the
+  email fallback instead.
+- **Stripe, membership.** The two membership price IDs, entered as site
+  settings, turn the waitlist into checkout.
+- **The older ebook pages.** Raising Believers, Deconstruction of Faith, The
+  Reliability of Scripture, the two "What the Bible Says" titles and Is
+  Critical Race Theory Biblical still deliver from public `/ebook/` folders.
+  Say the word and they move behind the same gate; they were left as they are
+  because they are not on the three-book shelf.
 - **A Facebook export**, or the posts pasted into the import format, to fill
   the Notes section. Facebook: Settings, Your information, Download your
   information, format JSON, only "Posts". Then

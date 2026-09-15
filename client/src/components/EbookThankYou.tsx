@@ -31,29 +31,47 @@ function readSessionId(): string {
   return new URLSearchParams(window.location.search).get("session_id") || "";
 }
 
-export function EbookThankYou({ slug, title }: { slug: string; title: string }) {
+export function EbookThankYou({
+  slug,
+  title,
+  bookPath,
+}: {
+  slug: string;
+  title: string;
+  /** The book's own page, when it is not /<slug> (the hand-written books live at /books/<slug>). */
+  bookPath?: string;
+}) {
   const [sessionId] = useState(readSessionId);
   const [status, setStatus] = useState<Status>(() => (readSessionId() ? "verifying" : "missing"));
   const [attempt, setAttempt] = useState(0);
-  const [downloading, setDownloading] = useState(false);
+  const [downloading, setDownloading] = useState<"" | "pdf" | "epub">("");
   const [downloadError, setDownloadError] = useState(false);
+  const [hasEpub, setHasEpub] = useState(false);
+  const backHref = bookPath ?? `/${slug}`;
+  // The slug travels with every call so a session from a Stripe Payment Link
+  // (which carries no metadata) can be checked against the book it claims.
+  const query = `session_id=${encodeURIComponent(sessionId)}&slug=${encodeURIComponent(slug)}`;
 
   // The "verifying" state is set at mount (initial state) and by the
   // try-again buttons; the effect itself only reports the async result.
   useEffect(() => {
     if (!sessionId) return;
     let active = true;
-    fetch(`/api/download?session_id=${encodeURIComponent(sessionId)}&check=1`)
+    fetch(`/api/download?${query}&check=1`)
       .then((r) => {
         if (!r.ok) throw new Error(`verify ${r.status}`);
         return r.json();
       })
-      .then((d) => active && setStatus(d?.paid ? "paid" : "unpaid"))
+      .then((d) => {
+        if (!active) return;
+        setHasEpub(Array.isArray(d?.formats) && d.formats.includes("epub"));
+        setStatus(d?.paid ? "paid" : "unpaid");
+      })
       .catch(() => active && setStatus("error"));
     return () => {
       active = false;
     };
-  }, [sessionId, attempt]);
+  }, [sessionId, attempt, query]);
 
   const retryVerification = useCallback(() => {
     // Without a session id there is nothing to re-check; stay on "missing".
@@ -61,18 +79,18 @@ export function EbookThankYou({ slug, title }: { slug: string; title: string }) 
     setAttempt((n) => n + 1);
   }, [sessionId]);
 
-  const handleDownload = useCallback(async () => {
+  const handleDownload = useCallback(async (format: "pdf" | "epub" = "pdf") => {
     if (downloading) return;
-    setDownloading(true);
+    setDownloading(format);
     setDownloadError(false);
     try {
-      const res = await fetch(`/api/download?session_id=${encodeURIComponent(sessionId)}`);
+      const res = await fetch(`/api/download?${query}${format === "epub" ? "&format=epub" : ""}`);
       if (!res.ok) throw new Error(`download ${res.status}`);
       const blob = await res.blob();
       const url = URL.createObjectURL(blob);
       const a = document.createElement("a");
       a.href = url;
-      a.download = `${title.replace(/[^\w\s-]/g, "").trim().replace(/\s+/g, "-")}.pdf`;
+      a.download = `${title.replace(/[^\w\s-]/g, "").trim().replace(/\s+/g, "-")}.${format}`;
       document.body.appendChild(a);
       a.click();
       a.remove();
@@ -80,9 +98,9 @@ export function EbookThankYou({ slug, title }: { slug: string; title: string }) 
     } catch {
       setDownloadError(true);
     } finally {
-      setDownloading(false);
+      setDownloading("");
     }
-  }, [downloading, sessionId, title]);
+  }, [downloading, query, title]);
 
   return (
     <Layout>
@@ -108,11 +126,20 @@ export function EbookThankYou({ slug, title }: { slug: string; title: string }) 
                 Your copy is ready
               </h1>
               <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "54ch", margin: "0 auto 36px" }}>
-                Thank you for buying <em>{title}</em>. Download the PDF below — it reads on your phone, tablet, e-reader, or computer. Keep this page bookmarked; your download link stays active here.
+                Thank you for buying <em>{title}</em>.{" "}
+                {hasEpub
+                  ? "Download either format below: the EPUB for your e-reader or phone, the PDF for everything else."
+                  : "Download the PDF below — it reads on your phone, tablet, e-reader, or computer."}{" "}
+                Keep this page bookmarked; your download link stays active here.
               </p>
               <div style={{ display: "flex", gap: "16px", justifyContent: "center", flexWrap: "wrap" }}>
-                <button type="button" onClick={handleDownload} disabled={downloading} style={{ ...btn, background: "var(--mustard)", color: "var(--ink)", opacity: downloading ? 0.7 : 1 }}>
-                  {downloading ? "Preparing your download…" : "Download the PDF"}
+                {hasEpub && (
+                  <button type="button" onClick={() => handleDownload("epub")} disabled={Boolean(downloading)} style={{ ...btn, background: "var(--charcoal)", color: "var(--charcoal-fg)", opacity: downloading ? 0.7 : 1 }}>
+                    {downloading === "epub" ? "Preparing your download…" : "Download the EPUB"}
+                  </button>
+                )}
+                <button type="button" onClick={() => handleDownload("pdf")} disabled={Boolean(downloading)} style={{ ...btn, background: "var(--mustard)", color: "var(--ink)", opacity: downloading ? 0.7 : 1 }}>
+                  {downloading === "pdf" ? "Preparing your download…" : "Download the PDF"}
                 </button>
               </div>
               {downloadError && (
@@ -173,7 +200,7 @@ export function EbookThankYou({ slug, title }: { slug: string; title: string }) 
                 <button type="button" onClick={retryVerification} style={{ ...btn, background: "var(--mustard)", color: "var(--ink)" }}>
                   Check again
                 </button>
-                <Link href={`/${slug}`} style={{ ...btn, background: "var(--charcoal)", color: "var(--charcoal-fg)" }}>
+                <Link href={backHref} style={{ ...btn, background: "var(--charcoal)", color: "var(--charcoal-fg)" }}>
                   Back to the book
                 </Link>
               </div>
@@ -183,7 +210,7 @@ export function EbookThankYou({ slug, title }: { slug: string; title: string }) 
           <p style={{ fontFamily: "var(--B)", fontSize: "14px", color: "var(--ink-muted)", marginTop: "40px" }}>
             Trouble downloading?{" "}
             <a href="mailto:Pastorjbell206@gmail.com?subject=Ebook%20download" style={{ color: "var(--ink)", borderBottom: "1px solid var(--mustard)" }}>Email us</a>{" "}
-            and we'll help. <Link href={`/${slug}`} style={{ color: "var(--ink)", borderBottom: "1px solid var(--mustard)" }}>Back to the book</Link>.
+            and we'll help. <Link href={backHref} style={{ color: "var(--ink)", borderBottom: "1px solid var(--mustard)" }}>Back to the book</Link>.
           </p>
         </div>
       </section>

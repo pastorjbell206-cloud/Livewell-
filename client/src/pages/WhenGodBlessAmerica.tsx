@@ -10,6 +10,7 @@ import { createElement, useEffect } from "react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { BookNextSteps } from "@/components/BookNextSteps";
+import { BuyEbookButton } from "@/components/BuyEbookButton";
 import { AUTHOR_BIO, SITE_URL } from "@/lib/site";
 import { STRIPE_PUBLISHABLE_KEY } from "@/lib/stripe";
 
@@ -90,7 +91,7 @@ export default function WhenGodBlessAmerica() {
               James Bell
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "18px", flexWrap: "wrap" }}>
-              <StripeBuyButton />
+              <BuyEbookButton slug="when-god-bless-america" title="When God Bless America Replaces Thy Kingdom Come" label="Get the ebook — $8.99" fallback={<StripeBuyButton />} />
               <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "rgba(245,240,230,.65)" }}>
                 EPUB + PDF · instant download · secure checkout by Stripe
               </span>

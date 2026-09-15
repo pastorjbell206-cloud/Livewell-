@@ -3113,9 +3113,45 @@ interface EbookConfig {
   priceEnv: string;
   file: URL;
   filename: string;
+  /** An EPUB alongside the PDF, served through the same gate with ?format=epub. */
+  epub?: URL;
+  epubFilename?: string;
+  /** Where Checkout returns the buyer. Default: /<slug>/thank-you. */
+  thankYouPath?: string;
 }
 
 const EBOOKS: Record<string, EbookConfig> = {
+  // The three books James wrote by hand, sold from /books/<slug>. Their files
+  // used to sit in client/public/ebook/ as plain static assets, so the "gated"
+  // download was a public URL anyone could guess. They now live here with the
+  // rest and are served only against a paid session.
+  "believe": {
+    title: "Believe",
+    priceEnv: "STRIPE_PRICE_BELIEVE",
+    file: new URL("./_ebooks/believe.pdf", import.meta.url),
+    filename: "Believe.pdf",
+    epub: new URL("./_ebooks/believe.epub", import.meta.url),
+    epubFilename: "Believe.epub",
+    thankYouPath: "/books/believe/thank-you",
+  },
+  "the-monster-in-the-mirror": {
+    title: "The Monster in the Mirror",
+    priceEnv: "STRIPE_PRICE_THE_MONSTER_IN_THE_MIRROR",
+    file: new URL("./_ebooks/the-monster-in-the-mirror.pdf", import.meta.url),
+    filename: "The-Monster-in-the-Mirror.pdf",
+    epub: new URL("./_ebooks/the-monster-in-the-mirror.epub", import.meta.url),
+    epubFilename: "The-Monster-in-the-Mirror.epub",
+    thankYouPath: "/books/the-monster-in-the-mirror/thank-you",
+  },
+  "when-god-bless-america": {
+    title: "When God Bless America Replaces Thy Kingdom Come",
+    priceEnv: "STRIPE_PRICE_WHEN_GOD_BLESS_AMERICA",
+    file: new URL("./_ebooks/when-god-bless-america.pdf", import.meta.url),
+    filename: "When-God-Bless-America.pdf",
+    epub: new URL("./_ebooks/when-god-bless-america.epub", import.meta.url),
+    epubFilename: "When-God-Bless-America.epub",
+    thankYouPath: "/books/when-god-bless-america/thank-you",
+  },
   "consider-the-birds": {
     title: "Consider the Birds",
     priceEnv: "STRIPE_PRICE_CONSIDER_THE_BIRDS",
@@ -3290,11 +3326,12 @@ async function ebookCheckout(req: VercelRequest, res: VercelResponse) {
     const priceId = await resolveEbookPriceId(slug, book.priceEnv);
     if (!priceId) return json(res, 503, { error: "This book is not on sale yet." });
     const origin = siteOrigin(req);
+    const thankYou = book.thankYouPath ?? `/${slug}/thank-you`;
     const session = await stripe.checkout.sessions.create({
       mode: "payment",
       line_items: [{ price: priceId, quantity: 1 }],
-      success_url: `${origin}/${slug}/thank-you?session_id={CHECKOUT_SESSION_ID}`,
-      cancel_url: `${origin}/${slug}`,
+      success_url: `${origin}${thankYou}?session_id={CHECKOUT_SESSION_ID}`,
+      cancel_url: `${origin}${thankYou.replace(/\/thank-you$/, "")}`,
       metadata: { slug },
     });
     return json(res, 200, { url: session.url });
@@ -3313,20 +3350,24 @@ async function ebookDownload(req: VercelRequest, res: VercelResponse) {
   if (!stripe) return json(res, 503, { error: "not configured", paid: false, ok: false });
   if (!sessionId) return json(res, 400, { error: "missing session_id", paid: false, ok: false });
   try {
-    const session = await stripe.checkout.sessions.retrieve(sessionId);
-    const slug = String(session.metadata?.slug || "");
-    const book = EBOOKS[slug];
+    const session = await stripe.checkout.sessions.retrieve(sessionId, {
+      expand: ["line_items.data.price.product"],
+    });
+    const slug = await resolvePurchasedSlug(session, String(req.query.slug || ""));
+    const book = slug ? EBOOKS[slug] : undefined;
     const paid = (session.payment_status === "paid" || session.status === "complete") && Boolean(book);
     // Record the purchase durably on the thank-you round-trip too, so a record
     // exists even if the Stripe webhook was slow or never fired.
-    if (paid) { try { await recordPurchase(session); } catch { /* best-effort */ } }
+    if (paid) { try { await recordPurchase(session, slug); } catch { /* best-effort */ } }
     if (check) {
-      return json(res, 200, { ok: true, paid, slug, title: book?.title || null });
+      const formats = book ? ["pdf", ...(book.epub ? ["epub"] : [])] : [];
+      return json(res, 200, { ok: true, paid, slug, title: book?.title || null, formats });
     }
     if (!paid) return json(res, 402, { error: "payment not completed" });
-    const data = readFileSync(book!.file);
-    res.setHeader("Content-Type", "application/pdf");
-    res.setHeader("Content-Disposition", `attachment; filename="${book!.filename}"`);
+    const wantEpub = String(req.query.format || "") === "epub" && Boolean(book!.epub);
+    const data = readFileSync(wantEpub ? book!.epub! : book!.file);
+    res.setHeader("Content-Type", wantEpub ? "application/epub+zip" : "application/pdf");
+    res.setHeader("Content-Disposition", `attachment; filename="${wantEpub ? book!.epubFilename : book!.filename}"`);
     res.setHeader("Cache-Control", "private, no-store");
     return res.status(200).send(data);
   } catch (e: any) {
@@ -3335,12 +3376,38 @@ async function ebookDownload(req: VercelRequest, res: VercelResponse) {
   }
 }
 
+// Which book a paid session bought. Sessions our own /api/checkout created
+// carry the slug in metadata. Sessions from a Stripe Payment Link or an embedded
+// Buy Button (the way two of the hand-written books were first wired) carry no
+// metadata, so the thank-you page names the book it expects and the claim is
+// checked against what the session actually bought: the line item's price must
+// be the price configured for that book, or its product must carry the book's
+// title. A paid session for one book never unlocks another.
+async function resolvePurchasedSlug(session: Stripe.Checkout.Session, claimed: string): Promise<string> {
+  const fromMeta = String(session.metadata?.slug || "");
+  if (fromMeta && EBOOKS[fromMeta]) return fromMeta;
+  const book = claimed ? EBOOKS[claimed] : undefined;
+  if (!book) return "";
+  const items = session.line_items?.data ?? [];
+  const expectedPrice = await resolveEbookPriceId(claimed, book.priceEnv);
+  const title = book.title.toLowerCase();
+  for (const item of items) {
+    const price = item.price;
+    if (expectedPrice && price?.id === expectedPrice) return claimed;
+    const product = price?.product;
+    const productName = product && typeof product === "object" && "name" in product ? String(product.name || "") : "";
+    const desc = String(item.description || "");
+    if ((productName && productName.toLowerCase().includes(title)) || desc.toLowerCase().includes(title)) return claimed;
+  }
+  return "";
+}
+
 // Durable record of a completed ebook purchase. Authenticity is guaranteed by
 // re-retrieving the checkout session from Stripe (a forged webhook body cannot
 // fabricate a paid session), so this does not depend on raw-body signature
 // verification, which a shared catch-all serverless function cannot obtain cleanly.
-async function recordPurchase(session: Stripe.Checkout.Session): Promise<void> {
-  const slug = String(session.metadata?.slug || "");
+async function recordPurchase(session: Stripe.Checkout.Session, resolvedSlug?: string): Promise<void> {
+  const slug = resolvedSlug || String(session.metadata?.slug || "");
   if (!slug || !EBOOKS[slug]) return;
   const email = session.customer_details?.email || session.customer_email || null;
   const amount = session.amount_total ?? null;
