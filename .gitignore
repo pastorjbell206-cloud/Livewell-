@@ -139,3 +139,6 @@ client/public/og/
 # Local agent worktrees (never commit)
 .claude/worktrees/
 client/public/sitemap.xml
+
+# Static essay files, built at deploy by scripts/build-public-essays.mjs
+client/public/essays/

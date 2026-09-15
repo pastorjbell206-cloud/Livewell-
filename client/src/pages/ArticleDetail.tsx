@@ -33,11 +33,24 @@ import ArticleNextSteps, { isArticleOnPath } from "@/components/ArticleNextSteps
 import { SubstackSeriesNote } from "@/components/SubstackSeriesNote";
 import { GeneratedHero } from "@/components/GeneratedHero";
 import { trpc } from "@/lib/trpc";
+import { fetchJson } from "@/lib/fetch-json";
 import { pillarForPost } from "@/lib/taxonomy";
 import { articleUrl, OG_DEFAULT_IMAGE, SITE_URL } from "@/lib/site";
 import { trackEssayComplete, trackPathStep } from "@/lib/telemetry";
 import { markEssayRead } from "@/lib/readProgress";
 import { readStoredJSON, writeStoredJSON } from "@/lib/storage";
+
+/** A static essay file is a serialized post: dates arrive as strings. */
+const isPostShape = (x: unknown): x is Record<string, unknown> =>
+  !!x && typeof x === "object" &&
+  typeof (x as Record<string, unknown>).slug === "string" &&
+  typeof (x as Record<string, unknown>).title === "string" &&
+  typeof (x as Record<string, unknown>).body === "string";
+
+function withDates(p: Record<string, unknown>): Record<string, unknown> {
+  const d = (v: unknown) => (typeof v === "string" && v ? new Date(v) : v instanceof Date ? v : null);
+  return { ...p, publishedAt: d(p.publishedAt), createdAt: d(p.createdAt), updatedAt: d(p.updatedAt) };
+}
 
 /**
  * Per-slug byline overrides. Every essay not listed here is authored by
@@ -425,11 +438,34 @@ export default function ArticleDetail() {
   const { slug } = useParams<{ slug: string }>();
   const bodyRef = useRef<HTMLDivElement>(null);
   const [, navigate] = useLocation();
+  // Static first. The 678 library essays ship as /essays/<slug>.json (built by
+  // scripts/build-public-essays.mjs), so a library essay paints from the CDN
+  // without waiting on the API and never shows "didn't load" because a
+  // function was slow. Only a static miss (a database-only essay, or a dev
+  // checkout that has not run the build step) reaches for tRPC.
+  const [staticPost, setStaticPost] = useState<Record<string, unknown> | "miss" | null>(null);
+  const [prevSlug, setPrevSlug] = useState(slug);
+  if (prevSlug !== slug) {
+    setPrevSlug(slug);
+    setStaticPost(null);
+  }
+  useEffect(() => {
+    if (!slug) return;
+    let stale = false;
+    fetchJson<Record<string, unknown>>(`/essays/${encodeURIComponent(slug)}.json`, isPostShape)
+      .then(p => { if (!stale) setStaticPost(withDates(p)); })
+      .catch(() => { if (!stale) setStaticPost("miss"); });
+    return () => { stale = true; };
+  }, [slug]);
   const postQuery = trpc.posts.getBySlug.useQuery(
     { slug: slug ?? "" },
-    { enabled: Boolean(slug) }
+    { enabled: Boolean(slug) && staticPost === "miss" }
   );
-  const post = postQuery.data ?? null;
+  type LoadedPost = NonNullable<typeof postQuery.data>;
+  const post: LoadedPost | null =
+    staticPost && staticPost !== "miss" ? (staticPost as unknown as LoadedPost) : (postQuery.data ?? null);
+  const stillLoading = staticPost === null || (staticPost === "miss" && postQuery.isLoading);
+  const loadFailed = staticPost === "miss" && postQuery.isError;
 
   // Reading-focus mode (board rec #10): a page-level calm that reduces the
   // article to title + body, persisted so the preference survives a reload.
@@ -485,7 +521,7 @@ export default function ArticleDetail() {
     return () => observer.disconnect();
   }, [postSlug]);
 
-  if (postQuery.isLoading) {
+  if (stillLoading) {
     return (
       <Layout>
         <div style={{ padding: "var(--s-6) var(--s-4)", textAlign: "center" }}>
@@ -498,7 +534,7 @@ export default function ArticleDetail() {
   // A request that failed is not an article that does not exist. Telling a
   // reader the piece is gone when the server simply did not answer is a lie
   // the reader has no way to check, and it loses them for good.
-  if (postQuery.isError) {
+  if (loadFailed) {
     return (
       <Layout>
         <div style={{ padding: "var(--s-6) var(--s-4)" }}>
