@@ -15,6 +15,11 @@
          load on demand via unicode-range. Font preloads require crossorigin
          even same-origin. -->
     <link rel="preload" as="font" type="font/woff2" href="/fonts/cormorant-garamond-400-latin.woff2" crossorigin />
+    <!-- The home hero's subhead — the page's largest contentful paint — is
+         italic Cormorant. Without this preload the italic face is requested
+         only after the stylesheet parses, and the paragraph repaints larger
+         when it lands, which is the paint Lighthouse counts as LCP. -->
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/cormorant-garamond-400-italic-latin.woff2" crossorigin />
     <link rel="preload" as="font" type="font/woff2" href="/fonts/inter-400-latin.woff2" crossorigin />
 
     <!-- Open Graph -->

@@ -102,3 +102,24 @@ under 4× CPU throttling. That is bundle work (splitting what the home page
 does not use out of the initial graph), not markup work, and it is the next
 lever if the 90 threshold is to hold in CI. Until then the `quality` job stays
 non-blocking, with the threshold asserted so the number is never hidden.
+
+**Second pass (same day).** Two more levers measured on the front page:
+
+- **Radix and sonner out of the initial graph.** The root `TooltipProvider`
+  served nothing (no page renders a tooltip; the admin sidebar mounts its
+  own) and the sonner `Toaster` is fed only by admin pages. Provider removed,
+  toaster lazy. Initial payload 186 → 154 KB gzipped; FCP 2.6 → ~2.1 s.
+- **The LCP element's actual font preloaded.** The hero subhead is italic
+  Cormorant; only the regular weight was preloaded, so the paragraph
+  repainted larger when the italic face arrived, and that later paint is
+  what counts as LCP. Preloading the italic face moved the local score from
+  83 / 85 / 91 to **92 / 85 / 93** (median 92). Kept.
+
+What is left is the font swap itself: under slow 4G the italic face lands at
+about 2.2 s, and whether that falls inside the LCP window decides a 92 or an
+85. Two honest options, neither taken here: a metric-matched fallback face
+(`size-adjust` / `ascent-override` on a local Georgia so the swap does not
+change the paragraph's size — needs Cormorant's real metrics, not guessed
+numbers), or `font-display: optional` on the hero face (no swap ever, at the
+cost of Georgia on a slow first visit). James's call, because the second one
+trades the editorial typeface on exactly the readers with the worst phones.

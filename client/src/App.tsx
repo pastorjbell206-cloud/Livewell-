@@ -1,5 +1,10 @@
-import { Toaster } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
+// The toaster is only ever fed by the admin pages (toast() calls live there),
+// so it loads lazily: sonner and next-themes leave the initial graph every
+// reader downloads. No root TooltipProvider: nothing outside the admin
+// sidebar renders a tooltip, and the sidebar mounts its own provider.
+const Toaster = lazy(() =>
+  import("@/components/ui/sonner").then((m) => ({ default: m.Toaster }))
+);
 import PageTracker from "@/components/PageTracker";
 import WebVitalsBeacon from "@/components/WebVitalsBeacon";
 import ClientErrorReporter from "@/components/ClientErrorReporter";
@@ -682,16 +687,16 @@ function App() {
       */}
       <ThemeProvider defaultTheme="light">
         <ToastProvider>
-          <TooltipProvider>
+          <Suspense fallback={null}>
             <Toaster />
-            <ToastContainer />
-            <WouterRouter hook={useTransitionLocation}>
-              <PageTracker />
-              <WebVitalsBeacon />
-              <ClientErrorReporter />
-              <Router />
-            </WouterRouter>
-          </TooltipProvider>
+          </Suspense>
+          <ToastContainer />
+          <WouterRouter hook={useTransitionLocation}>
+            <PageTracker />
+            <WebVitalsBeacon />
+            <ClientErrorReporter />
+            <Router />
+          </WouterRouter>
         </ToastProvider>
       </ThemeProvider>
     </ErrorBoundary>
