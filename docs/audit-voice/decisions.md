@@ -116,3 +116,87 @@
 
 - The audit asked to cut the PullQuote outright. Removing the element would leave an unused PullQuote import (an import change, and a lint failure), so I replaced its text instead. If you would rather the block go entirely, that is a two-line code change (the element and the import).
 
+
+## Essays — biography to confirm
+
+> Lines the audit flagged as first-person claims beyond the known facts (came to faith from atheism, raised without a father, five sons, fifteen years at FBC Fenton, founded PCN). Each is either James's, and ships, or is not, and comes out. Nothing here was changed by the repair pass.
+
+### gen-z-wants-from-church
+- "what pulled me was not programming... It was older men who let me stand close enough to watch them live" extends the conversion biography beyond the facts on file
+
+### engaging-nones-religiously-unaffiliated
+- First-person conversion narrative: a specific Christian who "did not flinch" and said "that is a real question"; "People fed me... real tables, a long stretch of time"; "Nobody mailed me anything. Somebody fed me, and took the years" — detailed personal anecdote beyond the four known biographical facts; confirm with James before it ships
+
+### white-churches-diversity
+- Claims about the writer's own congregation's platform, elder board, website statement, and homepage photograph ("A Black worship leader on the platform some Sundays"; "Everyone with color in that room was on the stage") are biography about a real church that cannot be verified from the facts on record
+
+### authority-we-traded-for-authenticity
+- 'I made this trade myself, at nineteen, with both hands and gladly' and 'I traded it once myself, at nineteen' state a specific biographical event not among the known facts (atheism, raised without a father, five sons); confirm with James or remove the age.
+
+### deconstruction-without-reconstruction
+- "an empty tomb three days later that I cannot explain away and have spent thirty years trying" (biographical detail not in the known facts; consistent but unverified)
+
+### how-to-talk-kids-faith-doubt
+- 'I came to faith from atheism. Nobody argued me across the line with a flawless case... What moved me was watching people who held the faith without pretending it was easy' — extends the known biographical fact into a conversion narrative; must be James's own account or be cut
+
+### suffering-without-explanation
+- 'I have read them carefully and even taught them to students' (biography not on file; confirm or cut)
+
+### will-there-be-a-judgment-day
+- 'mass graves dug a few hours' drive from where he sat' — Volf wrote Exclusion and Embrace largely at Fuller/Yale; biographical embellishment
+
+### the-atheist-in-the-pulpit
+- 'I found Bertrand Russell at nineteen' (biographical detail beyond the known facts; confirm with James)
+- father 'not dead, just gone... a decision someone kept making every morning by not coming back' (confirm with James)
+- the conversion narrative ('a night came when the resistance simply had nothing left to stand on... I did not walk an aisle') (confirm with James)
+- 'I pray the word Father with no muscle memory for it' (confirm with James)
+
+### the-machine-that-forms-you
+- 'I checked my phone this morning before I prayed' and 'I bought my sons' devices with my own money' and the son's 'arithmetic' look (household anecdotes beyond the known facts; confirm with James)
+
+### the-hour-that-forms-the-week
+- 'I spent my early ministry curating novelty' (confirm with James)
+
+### the-end-of-home-field-advantage
+- the napkin evangelist anecdote ('two cliffs, a chasm between them, a cross laid across the gap') (confirm with James)
+- the friend 'who took my contempt without returning it... stayed in the friendship through years' (confirm with James)
+- 'I have taught the napkin... trained volunteers in the conversational pivots... I bought the campaign kits. I once measured a season of my ministry in response cards' (confirm with James)
+
+### the-work-nobody-watches
+- Every biographical claim about Susanna Bell — her upbringing, the ledger, the fear — unconfirmed per the repo's own workplan
+
+### the-womanhood-they-preached-was-small
+- Every biographical claim about Susanna Bell's upbringing and the implied abuse — unconfirmed per the repo's own workplan
+
+### can-you-be-good-without-god
+- The machinist 'in my old neighborhood' — personal anecdote; confirm with James before publishing
+
+### is-faith-just-wishful-thinking
+- 'a boy raised without a father who... found in a godless universe not a grief but a relief' — extends known biography into a psychological story; confirm with James
+
+### are-miracles-believable
+- 'I was nineteen' — biographical specific; confirm with James
+
+### meaning-without-god
+- "as though my son's life had a worth no atom of me had voted on" — implies a son during his atheism; biography beyond the known facts, confirm with James
+- "a night when I was the thing that had broken and there was no one on the shore" — biography beyond the known facts, confirm with James
+
+### natural-evil-and-animal-suffering
+- "I have buried other people's children" — plausible for a working pastor, unverified biography
+
+### what-new-atheists-got-right
+- "I asked hard questions as a young man and I was handed slogans… the men who gave them to me mistook my leaving for rebellion" — claims a church upbringing and a departure from it; not among the known biographical facts
+- "I laughed out loud reading him" — memoir detail, unverifiable
+
+### morality-without-god-and-with-him
+- "I gave blood. I told the truth when it cost me. I would have run into traffic for a stranger's kid" (personal biography beyond the known facts)
+
+### the-questions-that-actually-matter
+- "I spent six years as an atheist" (duration not among the known biographical facts)
+
+### what-following-this-actually-costs
+- "I came to all this at twenty-four" (age of conversion not among the known facts)
+
+### what-secular-explanations-still-have-to-explain
+- "I was that atheist until I was twenty-four" (age not among the known facts)
+

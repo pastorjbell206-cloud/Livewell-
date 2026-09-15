@@ -7197,10 +7197,30 @@
       "pillar": "doubt",
       "words": 2351,
       "id": "essay:meaning-without-god",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "The architecture accumulates: Camus and Sartre are given in the form their defenders would sign (\"Concede this fully, or do not bother turning the page\"), the distinction that turns the essay (invented vs. discovered meaning) is drawn before any verdict, and Tolstoy's rope, The Rebel, and the Russell Tribunal are real and doing work rather than decorating. Self-implication is genuine (\"I did the identical thing for years and called it maturity\"), Ecclesiastes 1:2, 2:11, 3:11 and 1 Corinthians 15:32 are quoted accurately, and the ending (\"Then notice which one of you gets tired first\") presses without resolving. Two things keep it from a clean line-by-line defense: eight \"Not X. Y.\" turns in 2,350 words (\"The ache is not a malfunction to be medicated. It is a piece of evidence\") and three \"Here is…\" openers (\"Here is the tell I find most telling\") are the old gait showing through developed paragraphs; and two biographical clauses (\"as though my son's life had a worth no atom of me had voted on\"; \"a night when I was the thing that had broken\") extend the known facts and need James's confirmation, though they are one-line cuts if not his. Note also that \"a version you can knock over is not worth the paper\" appears verbatim in what-new-atheists-got-right, and \"Now turn it over, gently, and look at the seam\" is the same hinge as that essay's \"Now turn the argument over and look at its underside\"; one of the two should lose each.",
+      "auditedAt": "2026-09-15T14:41:52.218Z",
+      "signals": {
+        "thesis": "You can build real meaning without God, but meaning you invent cannot hold you on the night you are the thing that broke; only discovered meaning does, and Ecclesiastes and the resurrection name what the ache is evidence of.",
+        "fragmentStacks": 0,
+        "notXY": 8,
+        "stockPhrases": [
+          "Here is the tell I find most telling",
+          "Here is what took me longest to believe",
+          "And here is what I will not let the believer skip",
+          "a version you can knock over is not worth the paper (verbatim in what-new-atheists-got-right)",
+          "Now turn it over, gently, and look at the seam (same hinge as what-new-atheists-got-right)"
+        ],
+        "unverifiable": [
+          "\"as though my son's life had a worth no atom of me had voted on\" — implies a son during his atheism; biography beyond the known facts, confirm with James",
+          "\"a night when I was the thing that had broken and there was no one on the shore\" — biography beyond the known facts, confirm with James",
+          "\"In 1966 he sat as executive president of the tribunal… and he judged them\" — Sartre was executive president, but the Tribunal's sessions were held in 1967 (Stockholm, Roskilde); date is imprecise",
+          "\"I have known atheists who… faced a terminal diagnosis with a steadiness\" — generic anecdote, unverifiable"
+        ],
+        "selfImplication": true,
+        "endingWeight": "earned"
+      }
     },
     "essay:natural-evil-and-animal-suffering": {
       "kind": "essay",
@@ -7209,10 +7229,26 @@
       "pillar": "doubt",
       "words": 2108,
       "id": "essay:natural-evil-and-animal-suffering",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "The strongest piece in the batch. It opens at the objection's full strength (Rowe's 1979 fawn and Darwin's 1860 letter to Asa Gray on the ichneumon, both real and accurately described), refuses the three pastoral evasions before offering anything (\"I will not tell a mother in an oncology ward that God needed another angel\"), and then offers four considerations it explicitly declines to call an answer (\"The evidential problem is not dissolved. It is, at most, held\"). Romans 8:20-22, Job 38-41, Luke 13:4-5 and Matthew 27:46 are quoted accurately and each does structural work; the Job reading (\"almost everyone uses [it] to deliver the very lecture the book was written to demolish\") is the kind of named distinction the standard asks for. The ending passes through the cross and leaves the fawn in the undergrowth rather than attaching hope to it. Watch two things: eight \"Not X. Y.\" turns concentrated in the last three paragraphs (\"Not a symbolic body. A nervous system.\"), and \"I have winced from the back pew,\" which briefly places the writer outside the church's failure instead of inside it. \"I have made it elsewhere\" should link the actual free-will essay.",
+      "auditedAt": "2026-09-15T14:41:52.218Z",
+      "signals": {
+        "thesis": "The free-will defense does not answer natural evil; Christianity does not solve the fawn, but it makes two claims the suffering cannot reach — this is not the order God intends to keep (Romans 8), and he did not stay outside it (the cross) — so the problem is held, not dissolved.",
+        "fragmentStacks": 0,
+        "notXY": 8,
+        "stockPhrases": [
+          "So let me say first what I will not do with it",
+          "Not a symbolic body. A nervous system.",
+          "That is not comfort. It is a reason to think… (same sentence shape as anxiety-and-faith's \"That is not comfort. That is a smaller room\")"
+        ],
+        "unverifiable": [
+          "\"I have buried other people's children\" — plausible for a working pastor, unverified biography",
+          "\"I have made it elsewhere\" — cross-reference to a free-will essay that should be linked or named"
+        ],
+        "selfImplication": true,
+        "endingWeight": "earned"
+      }
     },
     "essay:what-new-atheists-got-right": {
       "kind": "essay",
@@ -7221,10 +7257,29 @@
       "pillar": "doubt",
       "words": 2330,
       "id": "essay:what-new-atheists-got-right",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "revise",
+      "verdict": "revise",
+      "notes": "The fairness is the essay's real achievement: Harris, Dawkins, Dennett and Hitchens are stated in forms they would sign (dates, titles and the subtitle are correct), the concessions are unhedged (\"Religion has blood on it\"), the counter (genetic fallacy, Dawkins treating God as \"a large invisible object,\" Matthew 23:27 and James 1:27 quoted accurately) is argued rather than asserted, and the ending (\"before he says one more word about who poisons everything\") is earned. It is a revise rather than a pass for one reason that outweighs the prose: the spine is first-person memoir well past the known facts — \"I owned the books… I read that one twice,\" \"I asked hard questions as a young man and I was handed slogans… the men who gave them to me mistook my leaving for rebellion,\" \"I did not walk away from Jesus of Nazareth. I walked away from a version of him\" — which claims a church upbringing and a departure, and places a convinced atheism in 2006-2007 against roughly fifteen years of ministry. If every line of that is James's, it ships after one fix; if any of it is not, it is fabricated biography at the center of the piece, and I cannot tell which from the text. The one fix: \"a version you can knock over is not worth the paper\" is verbatim in meaning-without-god, and \"Now turn the argument over and look at its underside\" is that essay's hinge in different clothes; the template is showing. Eight \"Not X. Y.\" turns (\"Hitchens did not build a system. He indicted.\") is at the ceiling.",
+      "auditedAt": "2026-09-15T14:41:52.218Z",
+      "signals": {
+        "thesis": "The New Atheists were right about religion's crimes, its anti-intellectualism, and its habit of shutting down the mind, but wrong by the genetic fallacy and Dawkins's category mistake; Jesus indicted religion harder than they did, and they were right about the church he left and wrong about the God he had not met.",
+        "fragmentStacks": 0,
+        "notXY": 8,
+        "stockPhrases": [
+          "a version you can knock over is not worth the paper (verbatim in meaning-without-god)",
+          "And here is the sentence it took me years to be able to write without flinching",
+          "So let me stop performing balance and simply concede the ground",
+          "Now turn the argument over and look at its underside"
+        ],
+        "unverifiable": [
+          "\"I owned the books… bought, underlined… I read that one twice\" — places a convinced atheism in 2006-2007; against ~15 years of ministry this is tight and must be confirmed",
+          "\"I asked hard questions as a young man and I was handed slogans… the men who gave them to me mistook my leaving for rebellion\" — claims a church upbringing and a departure from it; not among the known biographical facts",
+          "\"I have carried them into hospital rooms and gravesides ever since\" — plausible, unverified",
+          "\"I laughed out loud reading him\" — memoir detail, unverifiable"
+        ],
+        "selfImplication": true,
+        "endingWeight": "earned"
+      }
     },
     "essay:angels-demons-and-the-unseen": {
       "kind": "essay",
@@ -7233,10 +7288,27 @@
       "pillar": "doubt",
       "words": 2212,
       "id": "essay:angels-demons-and-the-unseen",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "revise",
+      "verdict": "revise",
+      "notes": "The thinking is sound and the fairness is real: Taylor's buffered self and immanent frame are named as ideas rather than name-dropped, and the church's circus is conceded before the text is defended (\"The church earned the smile\"). Isaiah 45:5, Hebrews 1:14, Ephesians 6:12, Colossians 2:15 and 1 Peter 5:8 are accurate and structural, and the self-implication is honest (\"I called the not-checking rigor\"). What fails is the register: ten \"Not X. Y.\" turns in 2,200 words, clustered (\"the spectacle is not reverence. It is entertainment\" and \"He is not being cynical. He is being accurate\" in the same paragraph), the old-gait fragment move on Colossians (\"Disarmed. Not fought to a draw, not held at bay pending some later rematch, but stripped and paraded\"), and a fragment-triplet recap right before the close (\"A creation with one Lord and no rival. Messengers who serve. Powers that are real, and personal, and already beaten.\"). Two hook-style openers (\"Here is the reasonable person's objection, and it is reasonable\"; \"Now the turn the fear-market cannot afford to let you hear\") are the dramatic signposting the standard avoids. A half-day's trim, not a rebuild.",
+      "auditedAt": "2026-09-15T14:41:52.218Z",
+      "signals": {
+        "thesis": "The modern dismissal of the unseen order targets a counterfeit (dualism, greeting-card angels, deliverance theater); the biblical claim is one Lord with no rival, servant messengers, and personal powers already disarmed at the cross, to be held in sobriety rather than fear.",
+        "fragmentStacks": 0,
+        "notXY": 10,
+        "stockPhrases": [
+          "Here is the reasonable person's objection, and it is reasonable",
+          "Now the turn the fear-market cannot afford to let you hear",
+          "Read that slowly, because it is doing something precise (same instruction as personhood-in-the-age-of-ai's \"Read it slowly\")",
+          "So let me stand inside the indictment where I belong",
+          "Disarmed. Not fought to a draw, not held at bay… but stripped and paraded"
+        ],
+        "unverifiable": [
+          "\"The New Testament does not spend much time on lurid possession stories\" — a judgment call given the Synoptic exorcisms; defensible but stated as fact"
+        ],
+        "selfImplication": true,
+        "endingWeight": "earned"
+      }
     },
     "essay:anxiety-and-faith": {
       "kind": "essay",
@@ -7245,10 +7317,30 @@
       "pillar": "doubt",
       "words": 2048,
       "id": "essay:anxiety-and-faith",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "revise",
+      "verdict": "revise",
+      "notes": "As a crisis page it does the care right: both bad answers are granted their due before being taken apart, Philippians 4:6-7, 1 Kings 19, Psalm 42:5, Matthew 26:38 and Luke 22:44 are quoted accurately, the disclaimer (\"I am a pastor and not a physician, and none of this is medical advice\") and a path to help are visible, and the self-implication is concrete (\"I once preached closer to it than I like to remember\"). The register is the old one at full density: twelve \"Not X. Y.\" turns including two section headers (\"Lament is not the failure of faith. It is faith.\"), anaphora stacks (\"It is not 'stop feeling anxious or else.' It is not a command… It is a door, held open\"), and a two-answers section built on perfect symmetry (\"I have to grant this answer its due\" / \"I want to grant this one its due as well\"). The ending recaps — \"a Father who feeds the exhausted, a Savior who sweat in a garden, a songbook full of people who prayed their turmoil… and a room full of ordinary help\" — and repeats the thesis line verbatim before the final image. Cut or qualify \"It is the word for a divided mind\": the merimnaō-from-merizō etymology is a pulpit commonplace the lexicons do not support, and decorative Greek is on the avoid list. \"That is not comfort. That is a smaller room with the lights turned off\" is the same sentence shape as natural-evil's \"That is not comfort. It is a reason…\", and \"wears a lab coat\" reappears in the AI essay.",
+      "auditedAt": "2026-09-15T14:41:52.218Z",
+      "signals": {
+        "thesis": "Anxiety is not a report card on your soul; the pray-harder answer and the it's-only-chemistry answer each cut the person in half, while Scripture (Philippians 4, Elijah, the laments, Gethsemane) meets the whole person, and ordinary help is a gift rather than a defeat.",
+        "fragmentStacks": 0,
+        "notXY": 12,
+        "stockPhrases": [
+          "So let me be plain at the start, and then spend the rest of this earning it",
+          "But here is where it turns cruel",
+          "So let me say the practical thing without a bait and switch",
+          "hear this with everything I have",
+          "wears a lab coat (reused in personhood-in-the-age-of-ai)",
+          "That is not comfort. That is a smaller room with the lights turned off"
+        ],
+        "unverifiable": [
+          "\"It is the word for a divided mind, a heart pulled in two directions\" — the merimnaō/merizō etymology is contested and not supported by standard lexicons; qualify as a traditional reading or cut",
+          "\"Roughly a third of the Psalms are laments\" — common estimate, unsourced",
+          "\"I have watched this in my own congregation, and I have to confess I once preached closer to it\" — plausible pastoral confession, unverified"
+        ],
+        "selfImplication": true,
+        "endingWeight": "recap"
+      }
     },
     "essay:just-war-and-pacifism": {
       "kind": "essay",
@@ -7257,10 +7349,30 @@
       "pillar": "doubt",
       "words": 2012,
       "id": "essay:just-war-and-pacifism",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "revise",
+      "verdict": "revise",
+      "notes": "The best steelman pair in the batch, and the essay does the contested-doctrine method properly: it names the question as one \"the church has held open,\" gives Tertullian (De Idololatria's disarming of Peter), Origen, Yoder (1972), Augustine, Aquinas's three conditions and Romans 13:4 accurately, and refuses to land (\"You can read this and pick up the rifle and remain my brother\"). \"I have five sons. I know exactly which way my body wants to move\" is real self-implication on known facts. The register is the old gait: twelve \"Not X. Y.\" turns in 2,000 words (\"Augustine did not develop it to unleash violence. He developed it to leash it\"; \"It is not permission. It is a wall of conditions\"), fragment openers (\"Not because I am hedging.\" / \"Not the annoying neighbor.\"), two fragment triplets (\"Two graves. Both of them Christian. Both of them… faithful.\"; \"A sword… A voice… And a cross…\"), and a \"To the pacifist… / To the just war Christian…\" section built on perfect symmetry. The opening (\"The question does not usually arrive in a seminar. It arrives at a door.\") is the same template as meaning-without-god's \"The question does not usually announce itself. It waits for a good day.\" Fix \"could have called ten thousand angels down\": Matthew 26:53 says \"more than twelve legions\"; the ten thousand is the hymn, not the text. Mark the Hauerwas lines (\"a community that can afford to lose\") as paraphrase.",
+      "auditedAt": "2026-09-15T14:41:52.218Z",
+      "signals": {
+        "thesis": "The church has held pacifism and just war as faithful for two thousand years and canonized saints on both sides; given both cases at full strength, neither has a clean answer, and the reader is trusted to choose while forbidden to call the other choice easy.",
+        "fragmentStacks": 0,
+        "notXY": 12,
+        "stockPhrases": [
+          "The question does not usually arrive in a seminar. It arrives at a door. (template opening shared with meaning-without-god)",
+          "That is the point I will not spare you",
+          "Now let me put the two questions in the same room",
+          "Now turn, and give the other side the same refusal to caricature",
+          "Two graves. Both of them Christian. Both of them… faithful."
+        ],
+        "unverifiable": [
+          "\"could have called ten thousand angels down\" — Matthew 26:53 reads \"more than twelve legions of angels\"; \"ten thousand\" is the gospel-song line, not Scripture",
+          "\"The Greek word carries the enemy who wants you dead\" — echthros means enemy/hostile; the \"wants you dead\" gloss is an overreach on the lexicon",
+          "Hauerwas: \"a community that can afford to lose, because it has already been told how the story ends\" — offered without attribution marking; should be flagged as paraphrase, not quotation",
+          "\"Origen, answering the pagan Celsus a generation later\" — Contra Celsum is c. 248, nearly fifty years after Tertullian's c. 200; \"a generation\" is loose"
+        ],
+        "selfImplication": true,
+        "endingWeight": "earned"
+      }
     },
     "essay:near-death-experiences": {
       "kind": "essay",
@@ -7269,10 +7381,30 @@
       "pillar": "doubt",
       "words": 1695,
       "id": "essay:near-death-experiences",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "revise",
+      "verdict": "revise",
+      "notes": "The argument is right and fairly built: the believer's case and the skeptic's case each get a full section, the verdicts are honest (\"Near is not across\"; \"It is not the rock\"), and the 2 Corinthians 12:2-4 reading (Paul \"refuses even to be sure what it was\") is accurate and the essay's best move. Three failures, one serious. Serious: the opening memory — \"I remember the satisfaction that news gave me, back when I held that the brain was a machine\" — is anchored to Alex Malarkey's recantation, which came in January 2015; against the roughly fifteen years of ministry the site claims, James was already a pastor by then, so this reads as an invented memory unless the timeline is other than stated. Confirm or cut; it is the first paragraph. Second: \"A handful of cardiologists and neurologists have spent careers on the phenomenon… publishing in ordinary medical literature\" is an unnamed appeal to authority, and \"A retired machinist in Ohio and a woman in a village that never heard his language\" reads as a report but is an illustration; the scholarship standard says cite specifically or not at all. Third: the close stacks slogans (\"They saw a light. He left an empty grave.\") after the sun-and-flashlight metaphor has already landed, where the standard asks for one earned verdict rather than several. Two \"Here is…\" openers.",
+      "auditedAt": "2026-09-15T14:41:52.218Z",
+      "signals": {
+        "thesis": "Near-death accounts are strange and consistent but cannot bear the weight of proof; Christian hope rests on the public resurrection rather than private vision, as Paul's refusal to build anything on his own vision in 2 Corinthians 12 shows.",
+        "fragmentStacks": 0,
+        "notXY": 6,
+        "stockPhrases": [
+          "Set the thing on the table before either side reaches for it",
+          "Here is what I did not understand as a materialist",
+          "And here is the detail that undid the last of my resistance",
+          "They saw a light. He left an empty grave.",
+          "The passage. The enveloping light. The sense of a love so total…"
+        ],
+        "unverifiable": [
+          "\"I remember the satisfaction that news gave me, back when I held that the brain was a machine\" — the recantation (Alex Malarkey) was January 2015; inconsistent with ~15 years of ministry unless James's timeline differs; must be confirmed or cut",
+          "\"A handful of cardiologists and neurologists have spent careers on the phenomenon… publishing in ordinary medical literature\" — no names, no journals; cite or cut",
+          "\"A retired machinist in Ohio and a woman in a village that never heard his language describe the same architecture\" — presented as report, reads as invented illustration",
+          "\"the instrument the surgeon called for, a conversation out in the corridor, an object on a ledge\" — allusions to specific unnamed cases; the essay hedges (\"I hold these loosely\") but does not source them"
+        ],
+        "selfImplication": true,
+        "endingWeight": "earned"
+      }
     },
     "essay:personhood-in-the-age-of-ai": {
       "kind": "essay",
@@ -7281,10 +7413,31 @@
       "pillar": "doubt",
       "words": 2340,
       "id": "essay:personhood-in-the-age-of-ai",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "revise",
+      "verdict": "revise",
+      "notes": "The thesis is sharp and the theology is right: Genesis 2:7 is read against both the materialist and the \"ghost in the machine\" cartoon, the image is argued as status rather than capacity (\"We know it every time we stand over a crib\"), and transhumanism is named as Gnosticism \"wearing a lab coat\"; Turing 1950, Ryle 1949, Kurzweil and the creed are accurate. The self-implication is the best in the batch (\"I have preferred the machine's patience to a person's demand\"). But this is the old register at its densest: roughly seventeen \"Not X. Y.\" turns in 2,340 words, three of them as section headers (\"Intelligence is not personhood\"; \"We are not ghosts piloting meat\"; \"Being known, not simulated\"), plus fragment stacks (\"A bias for our own kind of matter. The last respectable bigotry.\"; \"Let it fail. It had it coming.\"; \"Not the calculating. Not the fluency. Not even the creativity\"). The \"What the machine reveals\" section recaps every prior section before the final paragraph earns its close. Fairness gap: \"there is no evidence that it is anyone while it does\" and the weeping-actor analogy assume the answer; the functionalist's reply is that we have only behavior in the human case too (the other-minds problem), and the essay steelmans the position at the top and then never meets its strongest rejoinder. Four signposts (\"Here it is at full strength\"; \"Now the deepest thing\"), and \"The last respectable bigotry\" is a cliché.",
+      "auditedAt": "2026-09-15T14:41:52.218Z",
+      "signals": {
+        "thesis": "Intelligence is not personhood; a person is a someone, dust with breath in it, given the image rather than earning it by capacity, and the machine reveals this by contrast — the danger was never that it would become a person but that we would agree to become less than one.",
+        "fragmentStacks": 0,
+        "notXY": 17,
+        "stockPhrases": [
+          "Here it is at full strength",
+          "But here is where the machine, for all its fluency, walks past the real question",
+          "Here is the difference that finally cannot be crossed",
+          "Now the deepest thing",
+          "The last respectable bigotry",
+          "wearing a lab coat (reused from anxiety-and-faith)",
+          "Let it fail. It had it coming.",
+          "Read it slowly. (same instruction as angels-demons-and-the-unseen's \"Read that slowly\")"
+        ],
+        "unverifiable": [
+          "\"there is no evidence that it is anyone while it does\" — asserted as settled; the other-minds objection is not engaged",
+          "\"what its defenders now call carbon chauvinism\" — real term, but no defender is named"
+        ],
+        "selfImplication": true,
+        "endingWeight": "earned"
+      }
     },
     "essay:can-you-lose-your-salvation": {
       "kind": "essay",
@@ -7293,10 +7446,29 @@
       "pillar": "doubt",
       "words": 2399,
       "id": "essay:can-you-lose-your-salvation",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "revise",
+      "verdict": "revise",
+      "notes": "The thinking is sound and the steelmans are real: John 10, Philippians 1, and Romans 8 are given at full strength, then Hebrews 6 and 10 and John 15 are given the same strength, and the two 'To the one who holds...' paragraphs let each side land its hardest question. But the gait is the old register throughout: roughly fifteen 'Not X. Y.' constructions in 2,400 words ('Not may complete. Will complete.'; 'A warning against the impossible is not a warning. It is a decoration.'; 'that is not the evidence of a dead faith. It is a pulse.'), plus six one-sentence hinge paragraphs ('I am going to give you both hands at full strength, and refuse to spare you the choosing.'; 'The two traditions, held the way their best people hold them, walk out in the same posture.') where developed paragraphs should carry the turn. The opening is the corpus template ('The question does not usually arrive in a classroom. It arrives at three in the morning.'). One attribution needs checking: Arminius is credited with arguing that 'a bond you are not free to break is not the love of a person but the holding of an object,' but Arminius famously left perseverance undecided; this is a modern Wesleyan formulation, not a primary text, and should be attributed to Wesley alone or marked as a tradition's reading. The ending ('Hold on. And if you are too tired to hold on, let yourself be held.') is earned by the bedside frame and passes through Christ keeping rather than the reader gripping.",
+      "auditedAt": "2026-09-15T14:41:52.218Z",
+      "signals": {
+        "thesis": "Whether salvation can be lost is a second-order question on which both traditions, lived out by their best people, end in the same posture of clinging to Christ, and the frightened believer's fear is itself evidence of a living faith rather than a dead one.",
+        "fragmentStacks": 0,
+        "notXY": 15,
+        "stockPhrases": [
+          "The question does not usually arrive in a classroom. It arrives at three in the morning.",
+          "give it the same refusal to caricature",
+          "at full strength",
+          "Read that slowly.",
+          "That is one hand. Now take the other",
+          "Now put the two hands in the same room, where they have always lived",
+          "I would be failing you if I left it out"
+        ],
+        "unverifiable": [
+          "Arminius credited with the 'love of a person vs. holding of an object' argument: a paraphrase attributed to 'Jacobus Arminius and, after him, John Wesley' with no primary text; Arminius did not commit on perseverance"
+        ],
+        "selfImplication": true,
+        "endingWeight": "earned"
+      }
     },
     "essay:how-to-read-genesis-one": {
       "kind": "essay",
@@ -7305,10 +7477,28 @@
       "pillar": "doubt",
       "words": 2135,
       "id": "essay:how-to-read-genesis-one",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "revise",
+      "verdict": "revise",
+      "notes": "The strongest piece in the batch and the closest to a pass: the three-chair architecture genuinely accumulates, each chair is steelmanned in a form its defenders would sign (the young-earth reader's question about Paul and Romans 5:12 is honored rather than smirked at), the sources do real work (Kline's framework, Augustine's warning in The Literal Meaning of Genesis, Walton on function, Collins and BioLogos), and the self-implication is concrete and inside the allowed biography ('I have wanted both idols'). What keeps it from shipping is the antithesis tic at every hinge: 'The wall was never the resurrection first. It was the rocks.'; 'That silence is not an oversight. It is room'; 'or it is not a scalpel. It is a flag.'; and the close stacks three in a row ('They did not declare a date. They declared a Maker.'; 'Genesis 1 will not tell you the age of the earth. It will tell you whose earth it is.'). 'Now the chairs.' is a fragment paragraph standing where a transition sentence belongs. The Warfield claim ('thought a Christian could hold to evolution as the method God used and lose nothing') is the majority reading (Noll and Livingstone) but is contested among Warfield scholars and should be qualified as such. The ending is earned: personal, unresolved on the second-order question, resolved on the first.",
+      "auditedAt": "2026-09-15T14:41:52.218Z",
+      "signals": {
+        "thesis": "The creeds bind that God created and that humans bear his image, but not the age of the earth or the mode of creation, so the three faithful readings of Genesis 1 are chairs in one room rather than a locked door, and the text answers who and why rather than how.",
+        "fragmentStacks": 0,
+        "notXY": 12,
+        "stockPhrases": [
+          "Now the chairs.",
+          "refuse the caricature",
+          "give it the same refusal to caricature",
+          "I said I would not tell you where I land, and I will keep that.",
+          "the temptation crouching in each chair",
+          "The instrument that cuts one has to cut the other, or it is not a scalpel. It is a flag."
+        ],
+        "unverifiable": [
+          "B. B. Warfield presented as settled in accepting evolution as God's method; this is a contested reading among Warfield scholars and should be marked as one tradition's reading rather than stated flat"
+        ],
+        "selfImplication": true,
+        "endingWeight": "earned"
+      }
     },
     "essay:is-hell-eternal": {
       "kind": "essay",
@@ -7317,10 +7507,28 @@
       "pillar": "doubt",
       "words": 2133,
       "id": "essay:is-hell-eternal",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "revise",
+      "verdict": "revise",
+      "notes": "The fairness here is exemplary: eternal conscious torment gets Matthew 25:46's single Greek word and Anselm and Edwards; conditionalism gets Matthew 10:28, Romans 6:23, Stott's 1988 admission in Essentials, and Fudge; the wider hope is handed over with the honesty that 'the tradition has, on the whole, refused to teach this as true,' which is exactly how the standard says a minority position should be carried. Self-implication is real and inside the known biography ('hell was not one of my objections to Christianity. It was the objection'). But the register is the old one: about ten 'Not X. Y.' turns ('Not preserve in agony. Destroy.'; 'Not as an answer. As a minority hope'; 'it is not a resolution. It is a Person.'), the template opening ('The question does not usually arrive as theology. It arrives at two in the morning.'), and a four-way exchange paragraph ('To the traditionalist, the conditionalist says... To the conditionalist, the traditionalist says... To both, the wider hope says... And to the wider hope...') whose perfect symmetry reads as generated. Citations check out; the Lewis line is paraphrased rather than quoted and the actual wording in The Problem of Pain is 'locked on the inside,' which is worth matching. The ending passes through the cross ('who cried out that he was forsaken so that the forsaking might have somewhere else to go') and refuses to settle the fear; it is earned.",
+      "auditedAt": "2026-09-15T14:41:52.218Z",
+      "signals": {
+        "thesis": "That the lost can be finally separated from God is settled; the nature and duration of that loss is a second-order question with three answers the church has given, and whatever hell is, it belongs to the God who climbed into the forsaking himself.",
+        "fragmentStacks": 0,
+        "notXY": 10,
+        "stockPhrases": [
+          "The question does not usually arrive as theology. It arrives at two in the morning.",
+          "Hear it at full strength before you flinch",
+          "give the second view the same refusal to caricature",
+          "I said I would not adjudicate between those two, and I will keep that.",
+          "put them in the same room, because that is where they actually live, and refuse to let anyone in it off the hook",
+          "None of them gets to walk out clean."
+        ],
+        "unverifiable": [
+          "C. S. Lewis paraphrase 'the doors of hell are locked from the inside': real line (The Problem of Pain), but the wording is 'locked on the inside'; confirm and match if it is to stand as a near-quote"
+        ],
+        "selfImplication": true,
+        "endingWeight": "earned"
+      }
     },
     "essay:predestination-and-free-will": {
       "kind": "essay",
@@ -7329,10 +7537,31 @@
       "pillar": "doubt",
       "words": 2223,
       "id": "essay:predestination-and-free-will",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "revise",
+      "verdict": "revise",
+      "notes": "The Philippians 2:12-13 move is the best single paragraph in the eight ('Paul does not resolve it. He does not tell you which clause is load-bearing.'), the Reformed case is given its pastoral heart rather than its machinery, prevenient grace is named and explained so the reader learns the idea, and the writer names the thing he is worst at, which is real self-implication. But this essay and cessationism-or-continuation share whole paragraphs nearly word for word: 'Start with the Reformed side, and refuse the cartoon of it first... No serious Reformed Christian believes anything like that, and if that is the version in your head you have never actually heard the case,' 'Here is the case.', 'That is the cartoon, and it is just as false.', 'Neither of them has a clean answer. That is not my failure to find one.', 'You are trusted here. You can close this page a Calvinist and remain my brother.' A reader who opens both will hear a template, not a pastor. Add the fragments used as emphasis ('He chose.'; 'Not your foreseen goodness. The purpose of his will.'; 'No one may boast. Not even about believing.') and about ten 'Not X. Y.' constructions, and the gait is the old register. The Wesley attribution ('A love that cannot be refused is not love... Wesley pressed it') is a characterization of his anti-irresistible-grace argument, not a quotation, and should be marked as paraphrase. Scripture and the Dort (1618) and Remonstrance (1610) dates are correct. The ending is earned: 'This one keeps me up... I have decided that is enough to live on, and more than enough to kneel on.'",
+      "auditedAt": "2026-09-15T14:41:52.218Z",
+      "signals": {
+        "thesis": "Election and free response are a second-order division between traditions that confess the same Christ, Scripture puts both edges in a single breath (Philippians 2:12-13), and a God large enough to be both is one the writer could not have invented.",
+        "fragmentStacks": 0,
+        "notXY": 10,
+        "stockPhrases": [
+          "The question does not usually arrive in a lecture hall. It arrives on the drive home.",
+          "Start with the Reformed side, and refuse the cartoon of it first.",
+          "Here is the case.",
+          "Read it slowly.",
+          "Now turn, and give the other side the identical refusal to caricature.",
+          "That is the cartoon, and it is just as false.",
+          "Now let me put the two of them in the same room, because that is where they actually live, and refuse to let either off the hook.",
+          "Neither of them has a clean answer. That is not my failure to find one. That is the shape of the thing.",
+          "You are trusted here. You can close this page a Calvinist and remain my brother."
+        ],
+        "unverifiable": [
+          "Wesley credited with 'A love that cannot be refused is not love. It is something else wearing love's face.' as an argument he 'pressed'; no primary text cited, reads as a modern Arminian formulation placed in his mouth"
+        ],
+        "selfImplication": true,
+        "endingWeight": "earned"
+      }
     },
     "essay:baptism-mode-and-subjects": {
       "kind": "essay",
@@ -7341,10 +7570,27 @@
       "pillar": "doubt",
       "words": 2217,
       "id": "essay:baptism-mode-and-subjects",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "revise",
+      "verdict": "revise",
+      "notes": "Structurally this is the best register in the batch: developed paragraphs end to end, only one short opener, and the writer does what the Scholarship Standard requires by naming where he lands ('My own baptism was a believer's baptism... My experience is a witness. It is not a verdict.'). Both cases are steelmanned in the form their defenders would sign, the Acts 16 household texts are read by both sides honestly, and the Didache's 'pour water on the head three times' is real and used to do exactly the work claimed. The one thing that must be fixed before it ships is a historical claim the essay itself contradicts two paragraphs later: 'The Reformers who would not budge an inch on justification wrote to each other across this line as brothers.' The magisterial Reformers were all paedobaptists; the brotherly correspondence ran across the Supper, not the font, and the essay goes on to say that 'Zurich drowned some of them for the crime of being baptized twice.' That is Zwingli's city drowning the credobaptists, not brothers writing across the line. Nine 'Not X. Y.' turns ('immersion is not a preference. It is the drama made visible'; 'He did not miss it. He is standing in the same river') and the template closers ('take it at full height,' 'give the other side the identical refusal to caricature,' the double 'remain my brother') are the remaining work. The ending image ('both of you already wet') is earned.",
+      "auditedAt": "2026-09-15T14:41:52.218Z",
+      "signals": {
+        "thesis": "Baptism's meaning (burial and resurrection with Christ) is shared across the font; who receives it and how deep the water goes is the classic second-order question, and the writer's own believer's baptism is a witness, not a verdict.",
+        "fragmentStacks": 0,
+        "notXY": 9,
+        "stockPhrases": [
+          "take it at full height",
+          "Now turn, and give the other side the identical refusal to caricature",
+          "both sides have a temptation crouching at the door, the same instrument turned on each",
+          "Here is where I owe you my own hand",
+          "You can read this and take your child to the font and remain my brother. You can read this and wait... and remain my brother."
+        ],
+        "unverifiable": [
+          "'The Reformers who would not budge an inch on justification wrote to each other across this line as brothers' — historically false as stated: Luther, Zwingli, and Calvin were all paedobaptists, and the essay's own later line ('Zurich drowned some of them') shows the credo/paedo line was enforced by execution, not brotherhood"
+        ],
+        "selfImplication": true,
+        "endingWeight": "earned"
+      }
     },
     "essay:cessationism-or-continuation": {
       "kind": "essay",
@@ -7353,10 +7599,32 @@
       "pillar": "doubt",
       "words": 2309,
       "id": "essay:cessationism-or-continuation",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "revise",
+      "verdict": "revise",
+      "notes": "The self-implication is the strongest in the eight: the writer enters the cessationist's temptation from inside ('the old atheist in me finds it the most comfortable room in the house. It asks nothing of me. It lets the machine stay silent and calls the silence theology'), and the hospital-room frame is carried through to an ending that is earned ('a man who used to be sure the room was empty and is now only sure that it is not'). Sources are real and doing work: Warfield's Counterfeit Miracles (1918), Gaffin, Carson's Showing the Spirit on the burden of proof, Grudem on fallible prophecy, and the 1 Corinthians 13:10-12 exchange is fair to both readings. The failure is the shared scaffold: 'Start with the cessationist, and refuse the cartoon first... No serious cessationist believes anything close to that. If that is the version in your head, you have never heard the case,' 'Here is the case.', 'Now turn, and give the other side the identical refusal to caricature... That is the cartoon, and it is just as false.', 'Neither side has a clean answer to the other. That is not my failure to find one.', 'You are trusted here. You can close this page a cessationist and remain my brother.' These are lifted nearly verbatim from predestination-and-free-will, and about eleven 'Not X. Y.' turns ('That is not unbelief. To the people who hold it, it is reverence.'; 'That is not the arrival of a book... That is the return of Christ.') make the old register the default gait. Two personal anecdotes carry the whole frame (the dying man on the monitors; the woman whose healing 'her doctors could not account for') and cannot be verified from anything in the repository; they stand only if they are James's own.",
+      "auditedAt": "2026-09-15T14:41:52.218Z",
+      "signals": {
+        "thesis": "Whether the miraculous gifts continue is a question no creed binds and the New Testament refuses to close in either direction (1 Thessalonians 5:19-21), so the honest posture is to keep praying with hands open and eyes open, refusing both functional deism and credulity.",
+        "fragmentStacks": 0,
+        "notXY": 11,
+        "stockPhrases": [
+          "Start with the cessationist, and refuse the cartoon first.",
+          "If that is the version in your head, you have never heard the case.",
+          "Here is the case.",
+          "Now turn, and give the other side the identical refusal to caricature.",
+          "That is the cartoon, and it is just as false.",
+          "Now let me put them in the same room, because that is where they actually live, and refuse to let either off the hook.",
+          "Neither side has a clean answer to the other. That is not my failure to find one.",
+          "You are trusted here. You can close this page a cessationist and remain my brother."
+        ],
+        "unverifiable": [
+          "Personal anecdote: praying over a dying man while watching the monitor ('Nothing moved.')",
+          "Personal anecdote: the woman 'prayed over' whose recovery 'her doctors could not account for'",
+          "'The movement that traces back to the Azusa Street revival of 1906 is now counted in the hundreds of millions' — plausible from standard estimates but no source named"
+        ],
+        "selfImplication": true,
+        "endingWeight": "earned"
+      }
     },
     "essay:divorce-and-remarriage": {
       "kind": "essay",
@@ -7365,10 +7633,24 @@
       "pillar": "doubt",
       "words": 1986,
       "id": "essay:divorce-and-remarriage",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "revise",
+      "verdict": "revise",
+      "notes": "Full paragraphs throughout with no one-sentence hinges, the strict view is steelmanned in a form Rome would sign ('They are guarding the one human institution that still tells a child what a covenant is'), Malachi 2:16 is handled with unusual care about the ESV rendering versus 'I hate divorce,' and the self-implication is the most concrete in the batch, using only the biography the standard allows ('I have been the rigorist... I was raised without a father, in the wreckage a broken home leaves in a boy who never got a vote, and I have five sons... I have committed it.'). The crisis path is kept visible ('If you are in danger, it belongs first with people who can actually keep you safe'). What needs work is density: fourteen 'Not X. Y.' constructions in under 2,000 words is the highest rate in the eight ('Jesus did not loosen Moses. He tightened him.'; 'it does not look like holiness. It looks like a man protecting a doctrine with someone else's body.'; 'Grace is not the wage paid out on a record you kept clean. It is the thing that walks toward you'), and the paired verdict 'The rigorist stopped feeling the person. The sentimentalist stopped feeling the promise.' is the perfect symmetry the standard names. The ending passes through the woman at the well and the cross and is earned up to its last sentence, but 'It is only the night, and the night has never once been the end of the story' is a line any Christian blogger could have written and should go. Scripture citations are all accurate.",
+      "auditedAt": "2026-09-15T14:41:52.218Z",
+      "signals": {
+        "thesis": "Marriage's goodness and permanence is confessed by all, the grounds for divorce and remarriage are a second-order question on which faithful churches differ, the decision belongs in a room with a pastor and not on a page, and no ended marriage has out-sinned the cross.",
+        "fragmentStacks": 0,
+        "notXY": 14,
+        "stockPhrases": [
+          "take it at full strength",
+          "give the other side the same refusal to caricature",
+          "Refuse both of the easy men.",
+          "the night has never once been the end of the story"
+        ],
+        "unverifiable": [],
+        "selfImplication": true,
+        "endingWeight": "earned"
+      }
     },
     "essay:end-of-life-and-bioethics": {
       "kind": "essay",
@@ -7377,10 +7659,28 @@
       "pillar": "doubt",
       "words": 2795,
       "id": "essay:end-of-life-and-bioethics",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "revise",
+      "verdict": "revise",
+      "notes": "The steelman of the autonomy case is the best in the batch and the standard's 'concede what is true in the objection' is done at full weight ('It is cruelty wearing a lab coat. We would not do it to a dog.'; 'They are not asking for death. They have that already. They are asking that it be good.'). The ordinary/extraordinary-means distinction is explained so the reader learns the idea, Cicely Saunders and St Christopher's (1967) are real and do work, the medical/legal disclaimer and the 988 line are present, and the self-implication is concrete inside the known biography ('I have five sons... I am that man on the bad afternoons'). But at roughly eighteen 'Not X. Y.' turns in 2,800 words this is the heaviest use of the old gait in the eight ('Not cured. Met.'; 'The answer to being abandoned is not to be killed. It is to not be abandoned.'; 'I do not get to be useful all the way to the end. I get to be his.'), the opening is the template ('The question does not arrive in an ethics seminar. It arrives in a room with a bed in it.'), and the close stacks verdict fragments ('Attended, not abandoned. Unafraid, because carried. Given back the way it was given.' ... 'Not by yourself.'). Two claims need tightening: 'Wherever assisted dying has been made law, the criteria... have tended over years to widen' is true of the Netherlands, Belgium, and Canada but names no jurisdiction and the standard asks for concrete events; and Paul writing 'with the executioner somewhere down the hall' dramatizes beyond Philippians 1:20-22, where the outcome is uncertain. The ending is earned and passes through resurrection ('The faith that says a man rose from a grave is not the faith most desperate to keep everyone out of one').",
+      "auditedAt": "2026-09-15T14:41:52.218Z",
+      "signals": {
+        "thesis": "The disagreement over assisted dying is about whose life it is, not about pain; the tradition's line between allowing a death and causing one frees a Christian to stop fighting without reaching for the syringe, and the answer to dying abandoned is not to be killed but to be accompanied.",
+        "fragmentStacks": 0,
+        "notXY": 18,
+        "stockPhrases": [
+          "The question does not arrive in an ethics seminar. It arrives in a room with a bed in it.",
+          "refuse the cartoon of it first",
+          "I want you to feel the weight of that before I say anything else",
+          "Now let me stand somewhere else, and try to earn the standing.",
+          "Attended, not abandoned. Unafraid, because carried."
+        ],
+        "unverifiable": [
+          "'Wherever assisted dying has been made law, the criteria that began narrow... have tended over years to widen' — no jurisdiction or date named; should cite the Netherlands, Belgium, or Canada's 2021 MAID expansion or be cut",
+          "Paul 'with the executioner somewhere down the hall' — dramatization not supported by Philippians 1:20-22, where Paul expects to be released"
+        ],
+        "selfImplication": true,
+        "endingWeight": "earned"
+      }
     },
     "essay:christian-sexual-ethic": {
       "kind": "essay",
@@ -7389,10 +7689,28 @@
       "pillar": "doubt",
       "words": 2346,
       "id": "essay:christian-sexual-ethic",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "revise",
+      "verdict": "revise",
+      "notes": "Nearest to a pass in the batch: both cases are given in forms Vines, Brownson, and Wesley Hill would sign, the cross-examination runs both ways, and the writer stands inside it (\"I am the pastor who did not notice for three years\"). Every Scripture quote checks against the ESV; Side A/Side B, Vines, Brownson, and Hill are real. What keeps it from shipping as it stands: a one-line scold that manufactures intensity (\"If you cannot feel the weight of that, you are not ready for the next sentence\"), the stock turn \"Because here is the harder thing,\" and a steelman scaffold shared nearly verbatim with women-in-ministry (\"refuse the cartoon of it first\" / \"give the other side the identical refusal to caricature\" / \"That is not a failure of my writing. It is the actual shape of a question\"), so a reader who opens both essays hears a template rather than a man. Twelve not-this-but-that constructions in 2,300 words is more than the mature register spends on hinges. Fix those sentences and this passes.",
+      "auditedAt": "2026-09-15T14:41:52.218Z",
+      "signals": {
+        "thesis": "The church's cruelty to gay people is real and ours, but naming it does not settle the doctrine; the affirming and traditional cases both deserve their strongest form, faithful Christians are not agreed, and the pastor's actual failure was missing the person in the second row, not picking the wrong side.",
+        "fragmentStacks": 0,
+        "notXY": 12,
+        "stockPhrases": [
+          "Because here is the harder thing.",
+          "Here is what I will not do.",
+          "If you cannot feel the weight of that, you are not ready for the next sentence.",
+          "Start with the affirming case, and refuse the cartoon of it first.",
+          "Now turn, and give the other side the identical refusal to caricature.",
+          "That is not a failure of my writing. It is the actual shape of a question the church has not closed."
+        ],
+        "unverifiable": [
+          "The second-row man who sat three years and left (personal anecdote presented as James's experience; cannot be checked from the repository)"
+        ],
+        "selfImplication": true,
+        "endingWeight": "earned"
+      }
     },
     "essay:christians-and-abortion": {
       "kind": "essay",
@@ -7401,10 +7719,30 @@
       "pillar": "doubt",
       "words": 2197,
       "id": "essay:christians-and-abortion",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "revise",
+      "verdict": "revise",
+      "notes": "The thinking is sound and the fairness real, but the essay performs its rubric out loud: the H2s read like the CLAUDE.md contested-doctrine checklist (\"Naming the order, because it is the whole thing\"; \"The two cheap versions, refused together, with the same grief\"), the two steelmans are mirror-built (\"And the last move, the one that ought to land hardest on...\" twice; \"Grant that. Do not flinch from it.\" answered by \"Grant that too.\"), and the two cheap-version paragraphs close on \"It is the easy half\" / \"It is the other easy half.\" \"Same instrument. Same grief... It was a flag\" lifts the style guide's own sentences into the prose, which is the machine test failing by name. Fourteen not-X-Y constructions and a dramatic hook (\"The word that starts most of these arguments is not a word. It is a wall.\"). The close to the woman in the room is the best thing here: it passes through the cross (\"no sin his cross was too small to cover\"), keeps a path to help visible, and \"Not resolved. Held.\" earns its fragments. \"In the first century\" for the Didache is conventional but contested, and \"the evidence points less at the courtroom than at the conditions\" is an empirical claim with no witness.",
+      "auditedAt": "2026-09-15T14:41:52.218Z",
+      "signals": {
+        "thesis": "The conviction that unborn life bears God's image is ancient and near the center of Christian ethics, while the hard cases and the shape of the law are contested among faithful Christians; both tribes take a cheap half, and the church owes the woman in the room more than it owes the argument.",
+        "fragmentStacks": 0,
+        "notXY": 14,
+        "stockPhrases": [
+          "Here is the part both teams skip, and skipping it is how the shouting stays possible.",
+          "Same instrument. Same grief.",
+          "It was never a guardrail. It was a flag.",
+          "Grant that. Do not flinch from it.",
+          "Grant that too.",
+          "The word that starts most of these arguments is not a word. It is a wall.",
+          "Now turn, and give this side the same refusal to caricature"
+        ],
+        "unverifiable": [
+          "Didache dated to \"the first century\" (usual range is late first to early second century; stated flat)",
+          "\"the evidence points less at the courtroom than at the conditions\" (unsourced empirical claim inside the steelman)"
+        ],
+        "selfImplication": true,
+        "endingWeight": "earned"
+      }
     },
     "essay:faith-and-gender-identity": {
       "kind": "essay",
@@ -7413,10 +7751,28 @@
       "pillar": "doubt",
       "words": 2326,
       "id": "essay:faith-and-gender-identity",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "revise",
+      "verdict": "revise",
+      "notes": "The pastoral care is the strongest in the batch: \"presence before position,\" the 988 line named with \"I would rather you skip everything else and keep that number,\" John 9:3 doing real theological work, and the writer inside the failure (\"I have stood in rooms where a trans person was discussed the way you would discuss a policy, and I did not always stop it\"). The historic conviction gets a genuine distinction its critics rarely hear (\"the church that told him so was preaching a culture, not a Christ\"). What needs work: the same visible template as the abortion essay (headed rubric sections, \"Now turn, and give the historic Christian conviction the same refusal to caricature,\" \"refuse both shortcuts with the same hand\"), a symmetrical both-sides close (\"Both shortcuts spare the speaker the weight. Both make the suffering person carry it instead\") that the voice standard flags when symmetrical responsibility has not been shown, and one flat empirical claim with no witness: \"a certainty that the actual research and the actual medicine and the actual long human record do not yet support.\" Fifteen not-X-Y turns. The affirming steelman is a relief argument only; its serious holders would also make a theological case, and they would notice it is missing.",
+      "auditedAt": "2026-09-15T14:41:52.218Z",
+      "signals": {
+        "thesis": "The church owes transgender people presence before position: the body as God's good creation is first-order and bound, the pastoral and medical particulars are genuinely contested among people who share that faith, and both the church's sneer and the culture's certainty are shortcuts that make the suffering person carry the weight.",
+        "fragmentStacks": 0,
+        "notXY": 15,
+        "stockPhrases": [
+          "Before it is a debate, it is a person.",
+          "Now turn, and give the historic Christian conviction the same refusal to caricature",
+          "And this is where I refuse both shortcuts with the same hand",
+          "Both shortcuts spare the speaker the weight. Both make the suffering person carry it instead.",
+          "That question deserves to land. I am not going to pretend it away."
+        ],
+        "unverifiable": [
+          "\"a certainty that the actual research and the actual medicine and the actual long human record do not yet support\" (unsourced claim about the state of gender-medicine evidence)",
+          "Rooms where a trans person was discussed as policy (personal anecdote; cannot be checked here)"
+        ],
+        "selfImplication": true,
+        "endingWeight": "earned"
+      }
     },
     "essay:women-in-ministry": {
       "kind": "essay",
@@ -7425,10 +7781,28 @@
       "pillar": "doubt",
       "words": 2097,
       "id": "essay:women-in-ministry",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "revise",
+      "verdict": "revise",
+      "notes": "Strong texts on both sides, Junia and Chrysostom handled well, and \"One tribe makes a footstool of women. The other makes a footstool of the text\" is an earned verdict with the writer inside it (\"I have sat in those rooms. I have nodded in them\"). Two fairness problems: the complementarian steelman leans on the Son being \"eternally... ordered under\" the Father, the ERAS view many complementarians themselves rejected in the 2016 debate, so its defenders would not all sign it; and \"a city ruled by the temple of Artemis, a cult led by women\" is stated flat when the priesthood at Ephesus is historically contested. The scaffold is shared nearly line for line with christian-sexual-ethic (\"Start with the complementarian case, and refuse the cartoon of it first,\" \"Now turn, and give the other side the identical refusal to caricature,\" \"That is not my failure to find one. That is the shape of the thing\"). Fourteen not-X-Y constructions. The ending (\"Paul reached back to Eden. Paul greeted Junia. Both are on the page.\") carries weight and passes through the shared table.",
+      "auditedAt": "2026-09-15T14:41:52.218Z",
+      "signals": {
+        "thesis": "Whether a woman may preach is a second-order question the creeds do not bind, on which complementarian and egalitarian traditions read the same Bible in full strength and come out in different rooms; neither has a clean answer to the other, and any position that requires making a fool of the woman across the aisle or of Paul is smaller than the Scripture it claims.",
+        "fragmentStacks": 0,
+        "notXY": 14,
+        "stockPhrases": [
+          "Start with the complementarian case, and refuse the cartoon of it first.",
+          "Now turn, and give the other side the identical refusal to caricature.",
+          "Now let me put the two of them in the same room",
+          "Neither of them has a clean answer. That is not my failure to find one. That is the shape of the thing."
+        ],
+        "unverifiable": [
+          "\"a cult led by women\" (Ephesian Artemis; contested, stated as fact)",
+          "Complementarians \"will point you to\" the Son eternally ordered under the Father (ERAS is disputed within complementarianism; presented as the shared view)",
+          "\"For the first thousand years of the church the fathers read that name as a woman\" (broadly supported but stated without a witness)"
+        ],
+        "selfImplication": true,
+        "endingWeight": "earned"
+      }
     },
     "essay:morality-without-god-and-with-him": {
       "kind": "essay",
@@ -7437,10 +7811,28 @@
       "pillar": "doubt",
       "words": 1615,
       "id": "essay:morality-without-god-and-with-him",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "revise",
+      "verdict": "revise",
+      "notes": "The best architecture in the batch: it concedes the slander first (\"you do not need God to be good, and anyone who tells you otherwise is not defending the faith. He is defending his own comfort\"), steelmans the naturalist twice including the honest \"trust the datum\" reply, and presses only at the thin point (\"Your naturalism can explain the feeling. It has a harder time explaining why you are right to trust it\"). Lewis and Dostoevsky are characterized accurately, and the closing self-implication (\"Christians have hurt children too, and covered for the men who did\") is real. Failures: the opening \"We didn't come to faith because we ran out of arguments\" has no antecedent for \"we\" and reads as a misfire; \"Steelman it once more\" leaks editorial jargon into prose written to a skeptic; \"I gave blood. I told the truth when it cost me\" is biography that cannot be checked from here; and the two one-line closing paragraphs are old-register fragment. Thirteen not-X-Y constructions, and the evolutionary-debunking worry is credited to \"philosophers on every side\" without a name.",
+      "auditedAt": "2026-09-15T14:41:52.218Z",
+      "signals": {
+        "thesis": "You do not need God to be good, and Christians who say otherwise slander their neighbors; but the naturalist account explains why we feel moral obligation without underwriting whether it tracks anything real, and the skeptic's own certainty that some things are wrong regardless of consensus is evidence, not proof, of a moral order he did not manufacture.",
+        "fragmentStacks": 0,
+        "notXY": 13,
+        "stockPhrases": [
+          "Steelman it once more, because the naturalist has a reply and it deserves the room.",
+          "Here is the test case, and I want to hand it to you the way it was once handed to me",
+          "So that argument is dead. Good. Let it stay dead.",
+          "Let me be careful about what this is and is not."
+        ],
+        "unverifiable": [
+          "\"I gave blood. I told the truth when it cost me. I would have run into traffic for a stranger's kid\" (personal biography beyond the known facts)",
+          "\"quiet unbelievers who hid the hunted while baptized Christians looked away\" (vague history, no event named)",
+          "\"a worry raised by philosophers on every side of the God question\" (no philosopher named)"
+        ],
+        "selfImplication": true,
+        "endingWeight": "earned"
+      }
     },
     "essay:the-bible-without-the-marketing": {
       "kind": "essay",
@@ -7449,10 +7841,27 @@
       "pillar": "doubt",
       "words": 1503,
       "id": "essay:the-bible-without-the-marketing",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "revise",
+      "verdict": "revise",
+      "notes": "The self-implication is real and concrete (\"I have done a smaller version of it myself, using a verse to win instead of to heal, reaching for chapter and verse the way a man reaches for a rock\") and the Christ-centered library reading is well built. Two real failures. First, the inerrantist is never steelmanned: the position is only ever \"a marketing campaign,\" \"a costume,\" \"the modern world, wearing a Bible,\" and the historiography (\"is not the ancient consensus of the church. It is largely a modern construction\") is one side of a live scholarly dispute (Rogers/McKim against Woodbridge) sold as \"the fact almost no skeptic knows,\" in a piece by a Baptist pastor whose own confession affirms Scripture \"without any mixture of error.\" Second, the machine test: \"Now hear the self-implication, because I will not point this at 'them'\" names the rubric move as it makes it, and \"Here is the fact...\" / \"So here is what I am actually claiming\" are stock turns. Thirteen not-X-Y constructions in 1,500 words is the densest ratio in the batch beside historical-jesus. The cathedral ending is earned and passes through \"a library with a bleeding center.\"",
+      "auditedAt": "2026-09-15T14:41:52.218Z",
+      "signals": {
+        "thesis": "The brittle, all-or-nothing inerrancy the skeptic rejected is a largely modern construction, not the church's older way of reading Scripture as a Christ-centered library argued over in community; the skeptic broke a loose brick and mistook it for the cathedral.",
+        "fragmentStacks": 0,
+        "notXY": 13,
+        "stockPhrases": [
+          "Here is the fact almost no skeptic knows, and it changes the shape of the argument.",
+          "Now hear the self-implication, because I will not point this at \"them.\"",
+          "So here is what I am actually claiming, and it is less than you were sold and more than you expected.",
+          "It is the modern world, wearing a Bible."
+        ],
+        "unverifiable": [
+          "\"total, flat, all-or-nothing inerrancy... is not the ancient consensus of the church. It is largely a modern construction\" (contested historiography stated as fact)",
+          "\"Augustine correcting the reading before him, someone correcting Augustine\" (vague, no text named)"
+        ],
+        "selfImplication": true,
+        "endingWeight": "earned"
+      }
     },
     "essay:the-historical-jesus-without-the-shortcuts": {
       "kind": "essay",
@@ -7461,10 +7870,31 @@
       "pillar": "doubt",
       "words": 1554,
       "id": "essay:the-historical-jesus-without-the-shortcuts",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "revise",
+      "verdict": "revise",
+      "notes": "Honest about the limit (\"History cannot prove the resurrection. If you walked away with only that sentence, you would have understood me correctly\"), Ehrman and Wright are characterized accurately, and the three alternatives get credible form. But the piece runs the minimal-facts apologetics script it says it is avoiding, dispatching each alternative on the same beat (\"The explanation covers some of the data. It stretches over the rest\"), and the transitions chain stock turns: \"Let me show you my hands,\" \"Here is what I will not do,\" \"So let me steelman the ordinary explanations,\" \"Which brings me to the only honest verdict,\" \"So here is where I leave you.\" Fifteen not-X-Y constructions in 1,550 words, two slogan verdicts (\"From contempt to consideration\"; \"Not to close the case. To reopen it.\"), and a close that restates the essay's stated intent rather than landing new weight. No Scripture is quoted at all, so the theological turn is thin for a piece on this platform. \"Hallucinations... do not reliably visit groups\" is the standard apologetic claim, hedged but unsourced.",
+      "auditedAt": "2026-09-15T14:41:52.218Z",
+      "signals": {
+        "thesis": "History cannot prove the resurrection, but the facts secular historians grant (a crucified teacher, followers convinced within years and in Jerusalem that he was alive) resist the ordinary explanations, and the honest distance to travel is from contempt to consideration.",
+        "fragmentStacks": 0,
+        "notXY": 15,
+        "stockPhrases": [
+          "Let me show you my hands.",
+          "Here is what I will not do.",
+          "This is the part the confident apologist skips.",
+          "So let me steelman the ordinary explanations, because they deserve their strongest form, not a straw one.",
+          "Which brings me to the only honest verdict.",
+          "So here is where I leave you",
+          "Not to close the case. To reopen it.",
+          "It is a different faith, wearing skepticism's coat."
+        ],
+        "unverifiable": [
+          "\"hallucinations are, as far as we know, private events. They do not reliably visit groups\" (contested claim, no source)",
+          "\"material most scholars date to within a few years of the events\" (accurate consensus for the 1 Corinthians 15 creed, but the passage is never named)"
+        ],
+        "selfImplication": true,
+        "endingWeight": "recap"
+      }
     },
     "essay:the-problem-of-suffering-honestly": {
       "kind": "essay",
@@ -7473,10 +7903,28 @@
       "pillar": "doubt",
       "words": 1646,
       "id": "essay:the-problem-of-suffering-honestly",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "revise",
+      "verdict": "revise",
+      "notes": "The piece most in the mature register: each theodicy gets \"There is something true in that\" before it breaks, the confession is concrete and costly (\"I told a widow that God had a plan, and I watched something close in her face... It was her deciding I was not safe to grieve in front of\"), and the ending passes through the cross and refuses generic hope (\"They are holding onto a hand in the dark, and telling the truth about how dark it is\"). Ivan's returned ticket, Job 38:4, Psalm 13:1, Mark 15:34, and John 11:35 are all accurate. One factual error: \"Job, is forty chapters long\" when Job has forty-two. Stock intensifiers (\"Read that again,\" \"Here is what I have to confess,\" \"So look at it.\") and fifteen not-X-Y constructions (\"Not to explain the suffering. To protest it, to him, at volume\") are the old gait. \"I have buried children\" and the widow anecdote are personal claims that cannot be checked here. Fix the number, cut the intensifiers, and it ships.",
+      "auditedAt": "2026-09-15T14:41:52.218Z",
+      "signals": {
+        "thesis": "The standard theodicies each hold a partial truth and break at the bedside; the Bible itself refuses the tidy answer through Job and the lament psalms and gives instead a crucified God who prays the complaint, which is not a solution but a hand in the dark.",
+        "fragmentStacks": 0,
+        "notXY": 15,
+        "stockPhrases": [
+          "Here is what I have to confess.",
+          "Read that again.",
+          "So look at it.",
+          "I have to be careful here"
+        ],
+        "unverifiable": [
+          "\"Job, is forty chapters long\" (Job has 42 chapters; factual error)",
+          "\"I have buried children\" and the widow told \"God had a plan\" (personal anecdotes; cannot be checked here)",
+          "\"The shortest verse in the Bible\" (true of English translations only)"
+        ],
+        "selfImplication": true,
+        "endingWeight": "earned"
+      }
     },
     "essay:the-questions-that-actually-matter": {
       "kind": "essay",
@@ -7485,10 +7933,27 @@
       "pillar": "doubt",
       "words": 1668,
       "id": "essay:the-questions-that-actually-matter",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "revise",
+      "verdict": "revise",
+      "notes": "Closest to a pass in the batch: developed paragraphs, an argument that accumulates, and a steelman the skeptic would sign (\"I have known unbelievers whose integrity shamed me\"; \"He does make meaning, and it is real meaning\"). What keeps it from shipping is mechanical and small. Line 17 has a comma splice where a dash was stripped (\"pretending it is would be its own dishonesty, some of the sharpest people I know find the question\"), and line 21 stacks appositives until the sentence loses its spine. The \"Every honest atheist / Every serious atheist / Every honest person\" construction appears three times, and the penultimate paragraph is an anaphoric recap (\"That death is a wound... That the meaning you make feels found. That the longing does not leave. That cruelty feels like a fact. That love asks...\") that the standard names explicitly. Two biography specifics are not in the known facts: \"six years as an atheist\" and \"shamed me in my collar\" (a Baptist pastor?). Fix those and it passes.",
+      "auditedAt": "2026-09-15T14:41:52.218Z",
+      "signals": {
+        "thesis": "The questions apologetics answers (first cause, fine-tuning, the empty tomb) are not the ones skeptics actually carry; the real ones are death, meaning that feels found rather than made, persistent longing, the weight of wrong, and love, and this opener names them without pretending to answer them.",
+        "fragmentStacks": 0,
+        "notXY": 6,
+        "stockPhrases": [
+          "Here is the first honest admission",
+          "Notice what I have not done",
+          "Let me concede the strongest version",
+          "Every honest atheist I have ever known / Every serious atheist I know / Every honest person eventually (x3)"
+        ],
+        "unverifiable": [
+          "\"I spent six years as an atheist\" (duration not among the known biographical facts)",
+          "\"shamed me in my collar\" (costume detail; Baptist pastors do not typically wear one)"
+        ],
+        "selfImplication": true,
+        "endingWeight": "earned"
+      }
     },
     "essay:what-following-this-actually-costs": {
       "kind": "essay",
@@ -7497,10 +7962,28 @@
       "pillar": "doubt",
       "words": 1652,
       "id": "essay:what-following-this-actually-costs",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "revise",
+      "verdict": "revise",
+      "notes": "The self-implication is the strongest in the batch and it is concrete: \"I have five sons and a mortgage,\" \"I have wanted, on specific afternoons, the door the culture holds open,\" \"I still check to see who noticed. I am inside this indictment and I am not writing my way out of it.\" Scripture checks (Luke 14:28, Luke 9:23 both verbatim ESV) and the Bonhoeffer idea is offered as paraphrase, though coyly unnamed (\"a German pastor the Nazis killed\"). The failure is register: roughly ten \"Not X. Y.\" turns in 1,650 words (\"He was not recruiting. He was warning.\"; \"This is not a rule about behavior. It is an account of what a person is.\"; \"It is your politics wearing a robe\"), a standalone verdict paragraph (\"This is not a better version of your existing life. It is a different one.\"), and a right/left paragraph built on perfect parallelism. \"Jesus said the quiet part out loud\" is internet idiom, not a pastor across a table. Note also that this essay and the-cost-of-following make the same argument with the same proof text, the same cross-as-execution move, the same Bonhoeffer, and the same \"I will not ask you to decide anything\" close; one of them should be merged into the other.",
+      "auditedAt": "2026-09-15T14:41:52.218Z",
+      "signals": {
+        "thesis": "Christianity costs your money (the assumption of ownership), your body and marriage, your politics, and your standing as the center of your own story, and the size of that bill is the best evidence it is not a con.",
+        "fragmentStacks": 0,
+        "notXY": 10,
+        "stockPhrases": [
+          "Jesus said the quiet part out loud",
+          "So here is what it actually costs",
+          "So let me put the whole argument in one sentence",
+          "If you are on the right... If you are on the left (symmetrical parallel)",
+          "I will not soften either one"
+        ],
+        "unverifiable": [
+          "\"I came to all this at twenty-four\" (age of conversion not among the known facts)",
+          "\"a mortgage\" (ordinary, but not a known fact)"
+        ],
+        "selfImplication": true,
+        "endingWeight": "earned"
+      }
     },
     "essay:what-secular-explanations-still-have-to-explain": {
       "kind": "essay",
@@ -7509,10 +7992,27 @@
       "pillar": "doubt",
       "words": 1603,
       "id": "essay:what-secular-explanations-still-have-to-explain",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "revise",
+      "verdict": "revise",
+      "notes": "The thinking is the best in the batch and every source checks: Taylor's immanent frame, Wigner's \"unreasonable effectiveness,\" Nagel as an atheist who refuses to pretend, Chalmers naming the hard problem, the planet predicted on paper. The concession is real (\"If you were an atheist because of this, you were not being lazy\") and the self-implication lands at the close (\"I waved it away because I already knew there was nothing there. I never checked. The waving was the faith.\"). The failure is that the editorial manual leaks into the prose: \"The steelman here is strong, so take it,\" \"The steelman:\", \"The steelman is the honest one,\" and \"in the form their defenders would sign\" is CLAUDE.md's own phrase spoken to the reader. A skeptic hears the debate-club move the essay claims to refuse. Add ~9 antitheses (\"Not disproven. Just unnecessary.\"; \"Not morality. Obligation.\"), clipped verdicts inside paragraphs (\"Grant all of it.\" \"Fair.\" \"Live in it. Live all the way in it.\"), and a first/second/third/fourth scaffold, and it is old gait on a strong frame. No Scripture anywhere, which is defensible for a pre-theological refusal but worth naming.",
+      "auditedAt": "2026-09-15T14:41:52.218Z",
+      "signals": {
+        "thesis": "Granting that the God of the gaps deserves eviction, four things remain that do not shrink as science advances (intelligibility, consciousness, obligation, truth and beauty), and honesty requires refusing to wave them away rather than claiming them as proofs.",
+        "fragmentStacks": 0,
+        "notXY": 9,
+        "stockPhrases": [
+          "The steelman here is strong, so take it",
+          "The steelman: / The steelman is the honest one",
+          "in the form their defenders would sign",
+          "Grant all of it. / Fair.",
+          "The first is... The second is... The third is... The fourth is"
+        ],
+        "unverifiable": [
+          "\"I was that atheist until I was twenty-four\" (age not among the known facts)"
+        ],
+        "selfImplication": true,
+        "endingWeight": "earned"
+      }
     },
     "essay:the-cost-of-following": {
       "kind": "essay",
@@ -7521,10 +8021,29 @@
       "pillar": "doubt",
       "words": 2402,
       "id": "essay:the-cost-of-following",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "revise",
+      "verdict": "revise",
+      "notes": "Sources are the cleanest in the batch and I checked each: Freud's The Future of an Illusion (1927), Marx's \"opium of the people... sigh of the oppressed,\" Bonhoeffer's Nachfolge (1937), hanged April 1945 after returning to Germany, and eleven ESV quotations (Luke 14:28, 14:33; Mark 8:34, 8:35, 10:21, 10:22; Matt 6:24, 10:22; 1 Cor 6:19-20) all verbatim. The architecture accumulates properly and Freud is granted \"at full strength.\" But the piece is the old register with headings on top: thirteen antitheses (\"It is a builder's warning, not an altar call\"; \"The size of the demand does not settle whether it is true. It does settle whether it is a crutch\"), anaphoric triples (\"Does not chase. Does not amend the terms. Does not call after him with a smaller number.\"), and signposting one-liners standing as paragraphs (\"Now watch what happens,\" \"Here is the tell,\" \"Here is the turn\"). The \"What remains\" section recaps before it earns (\"The first is that this costs more... The second is that a thing which asks for all of that...\"). Self-implication is the conversion narrative (\"the wound in me had a vested interest in the argument\"), not the present-tense failure to pay that what-following-this-actually-costs supplies; the two essays should be merged, keeping this one's Scripture and that one's mirror.",
+      "auditedAt": "2026-09-15T14:41:52.218Z",
+      "signals": {
+        "thesis": "The suspicion that Christianity is a crutch cannot survive contact with what Jesus actually demands; the size of the bill does not prove the faith true, but it does prove it is not a comfort mechanism.",
+        "fragmentStacks": 0,
+        "notXY": 13,
+        "stockPhrases": [
+          "Here is the tell",
+          "Here is the turn",
+          "Now watch what happens",
+          "So let me be as plain as he was",
+          "Let me start by conceding",
+          "Does not chase. Does not amend the terms. Does not call after him"
+        ],
+        "unverifiable": [
+          "\"men I once respected who regard a conversion like mine as a failure of nerve\" (anecdote, unverifiable; ordinary)",
+          "\"Decades earlier Karl Marx\" (1843/44 vs 1927 is eight decades; accurate but understated)"
+        ],
+        "selfImplication": true,
+        "endingWeight": "earned"
+      }
     },
     "essay:can-you-have-faith-and-doubt": {
       "kind": "essay",
@@ -7533,10 +8052,29 @@
       "pillar": "doubt",
       "words": 618,
       "id": "essay:can-you-have-faith-and-doubt",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "rewrite",
+      "verdict": "rewrite",
+      "notes": "The controlling image is real and good: Exodus 17:12 does use emunah for Moses' braced hands, and the Mark 9:24 father is quoted accurately. That thinking should survive. The prose is the old gait wall to wall in 618 words: six antitheses (\"emunah does not mean certainty. It is a word for weight-bearing\"; \"God wants your performance of sureness more than He wants you. / He does not.\"), fragment verdicts (\"A leak in the hull. Proof you are losing it.\" \"Steady. Held. Faithful under load.\"), and a closing application box (\"So this week... Ask three better questions instead. Am I still here. Am I still praying... Am I still refusing to leave\") that is the same template as why-does-god-feel-far-away's \"Monday morning, three questions.\" There is no steelman: it declares the certainty definition \"did not come from the Bible\" without meeting James 1:6-8 (\"the one who doubts is like a wave of the sea\") or Matthew 14:31, the verses its defenders would cite. And the writer never enters; a man who left atheism has nothing to say in first person about doubt here. \"The reframe\" is coaching vocabulary. Rebuild in developed paragraphs with the counter-verses engaged and the writer inside; keep the arms held up.",
+      "auditedAt": "2026-09-15T14:41:52.218Z",
+      "signals": {
+        "thesis": "Faith in the Bible's own words (emunah, pistis) is weight-bearing loyalty rather than certainty, so doubt that stays is not the opposite of faith; walking out the door is.",
+        "fragmentStacks": 0,
+        "notXY": 6,
+        "stockPhrases": [
+          "Here is what the certainty definition costs you",
+          "The reframe is not",
+          "So this week, stop grading your faith",
+          "Ask three better questions instead",
+          "That is the whole of it, if you want it"
+        ],
+        "unverifiable": [
+          "\"A third of the Psalms are complaint\" (unattributed statistic; commonly traced to Brueggemann, counts vary widely)",
+          "pistis \"lands closer to loyalty than to intellectual assent\" presented as settled (a live scholarly position, e.g. Morgan, Bates, not a consensus)",
+          "\"the definition... did not come from the Bible\" (contradicted by James 1:6-8 and Matt 14:31, which the essay does not engage)"
+        ],
+        "selfImplication": false,
+        "endingWeight": "earned"
+      }
     },
     "essay:why-does-god-feel-far-away": {
       "kind": "essay",
@@ -7545,10 +8083,27 @@
       "pillar": "doubt",
       "words": 1329,
       "id": "essay:why-does-god-feel-far-away",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "revise",
+      "verdict": "revise",
+      "notes": "Taylor is deployed accurately (1500 vs. now, immanent frame, buffered/porous self, nova effect) and every verse checks against ESV: Isaiah 45:15, 1 Kings 19:12, Psalm 22:1/Matt 27:46, Acts 17:23, 27-28, 31, John 20:25, 29. The ending earns its image and passes through the resurrection (\"the door was opened from the outside, by a God who walked out of a tomb and into a locked room\"). But the register is old gait throughout, about twelve antitheses (\"God is not disproven. He is made optional.\"; \"The doubt is not a discovery. It is an inheritance.\"; \"These are not leftovers. They are the wall reporting that it is a wall.\"), one-line verdict paragraphs (\"It is telling them something about the room.\"), and symmetrical pairs (\"The believer feels it as a low ache under the singing. The skeptic feels it as the obvious.\"). The skeptic's strongest form, that hiddenness is itself evidence, is dismissed in the first line as something they \"mistake for proof\" and never steelmanned; \"A cage does not prove the bird\" concedes the point in six words and moves on. \"Monday morning, three questions\" is the clean application turn, and the same device closes can-you-have-faith-and-doubt, which reads as a template. Two Elijah glosses overreach: the text records Jezebel's threat, not \"the crowds turned,\" and Elijah did not go \"looking for God in the big loud proofs\"; God sent them.",
+      "auditedAt": "2026-09-15T14:41:52.218Z",
+      "signals": {
+        "thesis": "The sense that God is far is not a discovery about God but the inheritance of a disenchanted age (Taylor's immanent frame and buffered self), and the gospel answers it not with 'feel harder' but with a God who opens the locked door from the outside.",
+        "fragmentStacks": 0,
+        "notXY": 12,
+        "stockPhrases": [
+          "Here is the part that should stop the skeptic and steady the believer at the same time",
+          "Monday morning, three questions",
+          "The believer feels it as... The skeptic feels it as... (symmetry)",
+          "A hypothesis the machine no longer requires"
+        ],
+        "unverifiable": [
+          "\"after the fire fell and the crowds turned\" (1 Kings 18-19 records Jezebel's threat, not a turning crowd)",
+          "\"went looking for God in the big loud proofs, the wind and the earthquake and the fire\" (Elijah did not seek them; the text has God send them)"
+        ],
+        "selfImplication": true,
+        "endingWeight": "earned"
+      }
     },
     "book:when-god-bless-america-replaces-thy-kingdom-come": {
       "kind": "book",
