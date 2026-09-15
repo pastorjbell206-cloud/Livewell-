@@ -500,6 +500,23 @@ function bookSchema(book, url, image) {
   };
 }
 
+// The plain-language search layer (scripts/build-seo-layer.mjs): a meta
+// description in everyday words per essay and, when the title is a question,
+// the question with the essay's own answer. Missing file = no layer, no crash.
+const SEO_LAYER = readJsonSafe("content/seo-layer.generated.json") || {};
+
+function qaSchema(qa) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "QAPage",
+    mainEntity: {
+      "@type": "Question",
+      name: qa.question,
+      acceptedAnswer: { "@type": "Answer", text: qa.answer },
+    },
+  };
+}
+
 // BreadcrumbList so a search result shows the trail (Home › Section › Title)
 // and the page's place in the site. crumbs: [{ name, path }] — path is relative
 // to SITE_URL (empty string = the home page).
@@ -953,7 +970,8 @@ async function main() {
         // branded card from its title (+ pillar) via the dynamic OG endpoint.
         const image =
           post.coverImage || ogImageUrl(post.title, post.pillar || undefined);
-        const description = post.excerpt || post.title;
+        const seo = SEO_LAYER[post.slug];
+        const description = seo?.metaDescription || post.excerpt || post.title;
         const publishedIso = post.publishedAt
           ? new Date(post.publishedAt).toISOString()
           : new Date(post.createdAt).toISOString();
@@ -969,7 +987,8 @@ async function main() {
           publishedDate: publishedIso,
           modifiedDate: modifiedIso,
           schemas: [
-            articleSchema(post, url, image),
+            articleSchema({ ...post, excerpt: description }, url, image),
+            ...(seo?.qa ? [qaSchema(seo.qa)] : []),
             breadcrumbSchema([
               { name: "Home", path: "" },
               { name: "Writing", path: "/writing" },
@@ -1052,7 +1071,8 @@ async function main() {
       if (writtenEssaySlugs.has(rec.slug)) continue;
       const url = `${SITE_URL}/writing/${rec.slug}`;
       const image = rec.coverImage || ogImageUrl(rec.title, rec.pillar || undefined);
-      const description = rec.excerpt || rec.title;
+      const seo = SEO_LAYER[rec.slug];
+      const description = seo?.metaDescription || rec.excerpt || rec.title;
       const publishedIso = rec.publishedAt
         ? new Date(rec.publishedAt).toISOString()
         : new Date(rec.createdAt || Date.parse("2026-01-01")).toISOString();
@@ -1065,7 +1085,7 @@ async function main() {
         type: "article",
         publishedDate: publishedIso,
         modifiedDate: modifiedIso,
-        schemas: [articleSchema(rec, url, image)],
+        schemas: [articleSchema({ ...rec, excerpt: description }, url, image), ...(seo?.qa ? [qaSchema(seo.qa)] : [])],
       });
       const bodyHtml = bodyFromContent({
         title: rec.title,

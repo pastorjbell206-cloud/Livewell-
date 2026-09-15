@@ -38,6 +38,8 @@
     "validate:pathways": "node scripts/validate-pathways.mjs",
     "validate:integrity": "node scripts/validate-content-integrity.mjs",
     "validate:links": "node scripts/validate-links.mjs",
+    "validate:seo": "node scripts/validate-seo-layer.mjs",
+    "seo:layer": "node scripts/build-seo-layer.mjs",
     "llms:full": "node scripts/build-llms-full.mjs",
     "theology-index": "node scripts/build-theology-index.mjs"
   },

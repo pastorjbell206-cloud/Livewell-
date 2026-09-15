@@ -73,11 +73,18 @@ Each phase ships on its own, verified, before the next starts.
    before it asks for an email. Cards carry art. The tools hub gets rhythm.
    One subscribe block per page. Verified by screenshots under real mobile
    emulation, not window resizing.
-4. **Plain-language SEO layer.** For every essay, a meta description and a
-   one-line summary in everyday words, derived from the essay and checked for
-   readability; question-shaped decks where the essay answers a question;
-   Article and FAQ structured data; internal links. Verdict-style titles stay
-   as headlines; the plain-language layer sits beside them, not over them.
+4. **Plain-language SEO layer.** Shipped as `scripts/build-seo-layer.mjs`.
+   For every essay, a meta description of 70 to 155 characters in whole
+   sentences, no em-dashes, no forbidden words: hand-written in
+   `content/seo-overrides.json` for the flagship and most-asked essays,
+   otherwise assembled from the essay's own standfirst and opening, sentence
+   by sentence, so nothing is claimed the essay does not say. Where the title
+   is a question (92 essays), QAPage structured data carries the question and
+   the essay's own standfirst as the answer. Rides on the static essay files
+   and the prerendered heads; the essay page itself still shows James's
+   standfirst. `docs/seo/plain-language-report.md` lists the derived
+   descriptions that still read at college level, the queue for hand
+   rewrites. Verdict-style titles stay as headlines.
 5. **A human voice, audited then rewritten by hand.** A scanner reports the
    machine tells per essay: forbidden words, stacked triplets, runs of
    rhetorical questions, thirty-word sentences, signposting. Then the openings

@@ -22,7 +22,15 @@ import { fileURLToPath } from "node:url";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const SRC = path.join(ROOT, "content/static-library.generated.json");
+const SEO = path.join(ROOT, "content/seo-layer.generated.json");
 const OUT = path.join(ROOT, "client/public/essays");
+
+/** Merge the plain-language search layer (meta description, question and answer) into a record. */
+export function withSeo(r, layer) {
+  const e = layer && r && layer[r.slug];
+  if (!e) return r;
+  return { ...r, metaDescription: e.metaDescription, ...(e.qa ? { qa: e.qa } : {}) };
+}
 
 /** The index record: everything a listing needs, no body. */
 export function indexRecord(r) {
@@ -35,14 +43,15 @@ export function safeSlug(slug) {
   return typeof slug === "string" && /^[a-z0-9][a-z0-9-]{0,200}$/.test(slug);
 }
 
-export function build(records, outDir = OUT) {
+export function build(records, outDir = OUT, layer = {}) {
   if (existsSync(outDir)) rmSync(outDir, { recursive: true, force: true });
   mkdirSync(outDir, { recursive: true });
   const index = [];
   let written = 0;
   const skipped = [];
-  for (const r of records) {
-    if (!r || r.published === false || !safeSlug(r.slug)) { skipped.push(r?.slug ?? "(no slug)"); continue; }
+  for (const raw of records) {
+    if (!raw || raw.published === false || !safeSlug(raw.slug)) { skipped.push(raw?.slug ?? "(no slug)"); continue; }
+    const r = withSeo(raw, layer);
     writeFileSync(path.join(outDir, `${r.slug}.json`), JSON.stringify(r));
     index.push(indexRecord(r));
     written++;
@@ -54,7 +63,8 @@ export function build(records, outDir = OUT) {
 const isMain = process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url);
 if (isMain) {
   const records = JSON.parse(readFileSync(SRC, "utf8"));
-  const { written, indexed, skipped } = build(records);
+  const layer = existsSync(SEO) ? JSON.parse(readFileSync(SEO, "utf8")) : {};
+  const { written, indexed, skipped } = build(records, OUT, layer);
   console.log(`[essays] wrote ${written} essay files + index.json (${indexed} entries) to client/public/essays/`);
   if (skipped.length) console.log(`[essays] skipped ${skipped.length}: ${skipped.slice(0, 5).join(", ")}${skipped.length > 5 ? "…" : ""}`);
 }

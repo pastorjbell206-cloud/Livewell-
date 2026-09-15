@@ -20,7 +20,7 @@ import Layout from "@/components/Layout";
 import { LoadFailed } from "@/components/LoadFailed";
 import PageEndNav from "@/components/PageEndNav";
 import ReadingProgressBar from "@/components/ReadingProgressBar";
-import { SEOMeta, getArticleSchema, getBreadcrumbSchema } from "@/components/SEOMeta";
+import { SEOMeta, getArticleSchema, getBreadcrumbSchema, getQAPageSchema } from "@/components/SEOMeta";
 import { AuthorBio } from "@/components/AuthorBio";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { CitationCopy } from "@/components/CitationCopy";
@@ -34,7 +34,6 @@ import { SubstackSeriesNote } from "@/components/SubstackSeriesNote";
 import { EssayArt } from "@/components/EssayArt";
 import { trpc } from "@/lib/trpc";
 import { fetchJson } from "@/lib/fetch-json";
-import { pillarForPost } from "@/lib/taxonomy";
 import { articleUrl, OG_DEFAULT_IMAGE, SITE_URL } from "@/lib/site";
 import { trackEssayComplete, trackPathStep } from "@/lib/telemetry";
 import { markEssayRead } from "@/lib/readProgress";
@@ -590,7 +589,12 @@ export default function ArticleDetail() {
   }
 
   const canonical = articleUrl(post.slug);
-  const description = post.excerpt || post.title;
+  // The plain-language search layer (scripts/build-seo-layer.mjs) rides on the
+  // static essay files: a meta description in everyday words and, when the
+  // title is a question, the question with the essay's own answer. The page
+  // itself still shows James's standfirst.
+  const seo = post as { metaDescription?: string; qa?: { question: string; answer: string } };
+  const description = seo.metaDescription || post.excerpt || post.title;
   const ogImage = post.coverImage || OG_DEFAULT_IMAGE;
   const publishedIso = String(post.publishedAt || post.createdAt || "");
   const author = ARTICLE_AUTHORS[post.slug] ?? "James Bell";
@@ -617,7 +621,7 @@ export default function ArticleDetail() {
             canonical,
             undefined,
             undefined,
-            undefined,
+            post.pillar ?? undefined,
             author
           ),
           getBreadcrumbSchema([
@@ -625,6 +629,7 @@ export default function ArticleDetail() {
             { name: "Writing", url: `${SITE_URL}/writing` },
             { name: post.title, url: canonical },
           ]),
+          ...(seo.qa ? [getQAPageSchema(seo.qa.question, seo.qa.answer)] : []),
         ]}
       />
       <article className={focus ? "lw-reading-focus" : undefined}>
