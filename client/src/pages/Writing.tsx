@@ -17,7 +17,7 @@ import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { StatementBand } from "@/components/EditorialBlocks";
 import { TrackChip } from "@/components/TrackChip";
-import { GeneratedHero } from "@/components/GeneratedHero";
+import { EssayArt } from "@/components/EssayArt";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { LoadFailed } from "@/components/LoadFailed";
 import { trpc } from "@/lib/trpc";
@@ -791,7 +791,7 @@ export default function Writing() {
                       />
                     ) : (
                       <div style={{ borderBottom: "1px solid var(--border)" }}>
-                        <GeneratedHero seed={post.slug} pillarId={pillarForPost(post)?.id} title={post.title} />
+                        <EssayArt seed={post.slug} track={post.pillar} decorative />
                       </div>
                     )}
                     <div style={{ padding: "var(--s-4)", display: "flex", flexDirection: "column", flex: 1 }}>

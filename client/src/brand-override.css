@@ -18,14 +18,19 @@ h1, h2, h3, h4, h5, h6 {
 
 a { transition: color 240ms cubic-bezier(0.22,1,0.36,1); }
 
-article a, .prose a {
+/* Running-text links only. This used to match `article a`, and on the essay
+   page everything is inside <article>: the kicker chip, the contents list, the
+   next-steps links. Positioned half an em above the box bottom, the underline
+   drew straight through the text of any link taller than a line of prose. The
+   essay body keeps its own border-bottom underline (index.css .article-body a). */
+.prose a {
   text-decoration: none;
   background-image: linear-gradient(var(--mustard), var(--mustard));
   background-repeat: no-repeat;
   background-position: 0 calc(100% - 0.5em);
   background-size: 100% 1px;
 }
-article a:hover, .prose a:hover { background-size: 100% 2px; }
+.prose a:hover { background-size: 100% 2px; }
 
 blockquote {
   font-family: "Cormorant Garamond", Georgia, serif !important;

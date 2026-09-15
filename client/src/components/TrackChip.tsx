@@ -62,7 +62,7 @@ export function TrackChip({
 
   if (asLink && pillar) {
     return (
-      <Link href={pillarUrl(pillar.slug)} style={{ textDecoration: "none" }}>
+      <Link href={pillarUrl(pillar.slug)} style={{ textDecoration: "none", backgroundImage: "none" }}>
         {content}
       </Link>
     );

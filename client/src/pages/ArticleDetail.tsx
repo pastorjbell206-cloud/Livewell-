@@ -31,7 +31,7 @@ import { KeepReadingBook } from "@/components/KeepReadingBook";
 import { RelatedEssays } from "@/components/RelatedEssays";
 import ArticleNextSteps, { isArticleOnPath } from "@/components/ArticleNextSteps";
 import { SubstackSeriesNote } from "@/components/SubstackSeriesNote";
-import { GeneratedHero } from "@/components/GeneratedHero";
+import { EssayArt } from "@/components/EssayArt";
 import { trpc } from "@/lib/trpc";
 import { fetchJson } from "@/lib/fetch-json";
 import { pillarForPost } from "@/lib/taxonomy";
@@ -417,6 +417,9 @@ function TableOfContents({
                   lineHeight: 1.4,
                   color: "var(--ink-muted)",
                   textDecoration: "none",
+                  // The global prose-link gradient underline paints mid-text on these
+                  // list links; a contents list carries no underline.
+                  backgroundImage: "none",
                   transition: "color 0.2s",
                 }}
                 onMouseEnter={e => (e.currentTarget.style.color = "var(--ink)")}
@@ -789,11 +792,7 @@ export default function ArticleDetail() {
                 }}
               />
             ) : (
-              <GeneratedHero
-                seed={post.slug}
-                pillarId={pillarForPost(post)?.id}
-                title={post.title}
-              />
+              <EssayArt seed={post.slug} track={post.pillar} title={post.title} style={{ borderRadius: "var(--radius-sm)" }} />
             )}
           </div>
         </section>

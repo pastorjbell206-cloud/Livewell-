@@ -226,7 +226,7 @@ export default function MinimalNav() {
       )}
 
       {/* Main Nav */}
-      <nav
+      <nav className="site-nav"
         style={{
           position: "sticky",
           top: 0,
