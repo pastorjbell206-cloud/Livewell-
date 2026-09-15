@@ -125,7 +125,7 @@ export default function CarePlan() {
             <div style={{ marginTop: "14px" }}>
               <div style={{ fontFamily: "var(--U)", fontSize: "13px", color: "rgba(245,240,230,0.7)", marginBottom: "8px" }}>
                 {doneCount === data.weeks.length
-                  ? "All eight weeks walked. Well done is an understatement."
+                  ? "All eight weeks walked."
                   : `${doneCount} of ${data.weeks.length} weeks walked${currentWeek ? ` · you are on week ${currentWeek}` : ""}`}
               </div>
               <div style={{ height: "3px", background: "rgba(245,240,230,0.15)", maxWidth: "360px" }}>

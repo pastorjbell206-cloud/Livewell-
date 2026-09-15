@@ -200,3 +200,98 @@
 ### what-secular-explanations-still-have-to-explain
 - "I was that atheist until I was twenty-four" (age not among the known facts)
 
+
+## Surface repairs, second pass — rulings needed
+
+## client/src/pages/faq/WhyArePeopleLeavingChurch.tsx
+
+- If James wants the generational percentages back, the sentence needs the actual Pew figures and year; I did not substitute numbers I could not verify.
+
+## client/src/pages/landing/HonestQuestions.tsx
+
+- The hero now says he "carried questions like these" rather than "asked every one of these questions"; James should confirm even the softened version matches his story, or cut the clause to the bare former-atheist fact.
+
+## client/src/pages/landing/PostChristian.tsx
+
+- The page's tier arrays total sixty titles, but I did not confirm that all sixty slugs resolve to live essays; if any are unpublished, the count in the hero, meta, and schema should drop to match.
+
+## client/src/pages/leadership/BudgetCalculator.tsx
+
+- If the healthy-range percentages do come from a named source (a denominational benchmark, a published survey), James can name it and the 'drawn from' claim can return with the citation.
+
+## client/src/pages/nation/NationHub.tsx
+
+- The scorecard card still says "The tally is meant to come out split." The note cross-referenced this as an admission about the tool's design rather than an edit instruction; if the scorecard is in fact built to balance, the sentence is honest and the tool is the problem, and if it is not, the line should say the tally falls where the evidence puts it. That is a ruling on the tool, not a copy fix.
+
+## client/src/pages/nation/NationScorecard.tsx
+
+- The hub card in client/src/pages/ToolsHub.tsx (not in my assignment) still says "The tally is meant to come out split"; the file's own header comment says the same. Both should be brought in line with this page's caption.
+
+## client/src/pages/pillars/ThePastoralAngle.tsx
+
+- If either removed sentence is true and you want it back, it needs your own words; I could not confirm it from the permitted facts.
+- The Find Help pointer is plain text ("go to the Find Help page first") because making it a link would require adding a wouter Link import to this file, which is a code change. Worth doing if you want it clickable.
+
+## client/src/pages/tools/BibleReference.tsx
+
+- The sexuality topic still steelmans both readings and does not name where you land or the tradition it comes from. Your doctrinal position is not among the facts I am permitted to assert, and the site's homosexuality page does not state it in a form I could quote, so that sentence needs your own words.
+
+## client/src/pages/tools/DeepBibleCompanion.tsx
+
+- Line 1477 still says Philippians 4:13 "has become one of the most misquoted verses in the Bible"; the notes did not flag it and it is hedged with "one of", so I left it, but it is the same family of claim.
+
+## pcn-healthy-growing-church
+
+- The notes flag "Breaking Through the Plateau" as church-growth-conference language, but it is the printed subtitle; only James can rename it.
+
+## livewell-staying
+
+- The notes ask that the book's page keep a visible path to real help beside a blurb that names depression; that is page-level copy in BookDetail.tsx, outside the description field, and needs his ruling on where it lives.
+
+## dangerous-calling-why-the-office-of-pastor-is-not-for-everyone
+
+- Title collision: Paul David Tripp's Dangerous Calling (Crossway, 2012) covers the same subject. The blurb cannot distinguish the two without inventing contents; James must rule on the title or supply what sets his apart.
+
+## the-first-flock-the-church-s-calling-to-care-for-pastors-and-their-families
+
+- The title's exact sense of "first flock" (the pastor's household as his first flock, or pastors and families as the church's first flock) cannot be settled from the subtitle alone; the rewrite is worded to be true under either reading, but James should confirm which the book argues.
+
+## earthen-vessels-why-our-bodies-matter-to-our-faith
+
+- Title collision: Matthew Lee Anderson's Earthen Vessels: Why Our Bodies Matter to Our Faith (Bethany House, 2011) carries the identical title and subtitle. That is a ruling on the title, not the copy.
+
+## the-unfinished-church-calling-vision-and-the-future-god-is-building
+
+- The blurb stays as close to the subtitle as honesty allows; if the book makes a sharper specific claim about what is unfinished, James can supply it and the blurb should carry it.
+
+## client/src/pages/tools/PastorBurnout.tsx
+
+- The crisis-band opener "Hear this: you are not failing. You are drowning." still contains the stock turn "Hear this:" that the signals list; I left it because the notes say the lowest band should not be touched. Removing the two words would not weaken the care if you want it gone.
+- The ScriptureNote is rendered with rendering="unverified"; the notes say the NIV quotations are fine so long as the note names the translation, which is a component concern, not copy.
+
+## client/src/pages/tools/PrayerGenerator.tsx
+
+- Two pre-existing ESLint warnings (unused useMemo import here, unused useEffect in ScriptureMemory.tsx) predate this work and fail --max-warnings 0; fixing them means touching imports, which was off-limits for this pass.
+
+## client/src/pages/tools/Proverbs31.tsx
+
+- The file's header code comment (line 3) still repeats the "for centuries" claim; it is not reader-facing so I left it, but it can be trimmed whenever someone is in the file.
+
+## client/src/pages/tools/WhichLens.tsx
+
+- If any of the four original first-person claims (carrying the Flag lens for years; softening hard words for a cold room; preaching an edited canon and being discipled by men who did the same; being formed by the consumer church) is true of James, he can restore the specific version; the generalized "we" is the honest default until he confirms.
+
+## client/public/family-seasonal.json
+
+- The audit's structural note does not hold on inspection: advent[1], [3], [7], [9]-[12], [14], [16], [22], [23] and holyWeek[3], [5] all already carry both a question and a prayer in the file, so no fields were added. If the site is rendering those days without them, the gap is in the page component, not the JSON.
+
+## client/public/family-catechism.json
+
+- The near-duplicate pairs the audit noticed ([48]/[52], [49]/[53], [3]/[75], [7]/[63], [17]/[56], [46]/[60], [47]/[61]) are structural, not copy: deciding whether to merge or cut entries renumbers the catechism and needs his ruling.
+- [21].commentary was listed among the antithesis openers but contains no "X is not A. It is B." construction (it opens "The law is like a mirror..."); I left it untouched rather than rewrite a field that does not fail.
+
+## client/public/family-devotions-2.json
+
+- Deity-pronoun capitalization is split down the library: entries [0]-[36] mostly capitalize He/His/Him, entries [37]-[59] mostly do not, and the flip the audit saw at [42] is where the second convention begins. The catechism and the ESV both use lowercase, but normalizing forty entries in either direction is a house-style ruling, not a copy fix, so I left it.
+- Every passageText is NIV against the platform's ESV default. Replacing sixty passages means sixty verbatim ESV quotations that should be pasted from the text, not typed from memory; I did not touch them.
+- [8].title "Brave Is Not Fearless" carries the same antithesis as the bigIdea I rewrote beneath it; the notes did not name titles, so it stands, but he may want it to match.

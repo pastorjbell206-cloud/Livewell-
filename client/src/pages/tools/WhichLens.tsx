@@ -102,7 +102,7 @@ const LENSES: Record<LensId, {
   flag: {
     name: "The Flag",
     verdict: "The nation has been doing some of your believing for you.",
-    body: "This is not an accusation from across the room — the man who built this site carried the same lens for years without feeling its weight. The Flag reads the gospel through the country: the church's wins are the party's wins, the church's enemies are the nation's enemies, and somewhere along the way defending one started to feel identical to defending the other. Nobody chose it on purpose. It was handed to us, dressed as loyalty. The pillar below exists to take it apart slowly — history first, verdict last.",
+    body: "This is not an accusation from across the room; most of us who grew up in American churches carried this lens for years without feeling its weight, and the man who built this site is not exempt. The Flag reads the gospel through the country: the church's wins are the party's wins, the church's enemies are the nation's enemies, and somewhere along the way defending one started to feel identical to defending the other. Nobody chose it on purpose. It was handed to us, dressed as loyalty. The pillar below exists to take it apart slowly — history first, verdict last.",
     ctaLabel: "Enter the pillar: The Capture by the Right",
     ctaHref: "/capture-by-the-right",
     pathHref: "/reading-paths/capture-by-the-right",
@@ -110,7 +110,7 @@ const LENSES: Record<LensId, {
   cause: {
     name: "The Cause",
     verdict: "The critique has been doing some of your believing for you.",
-    body: "This lens is harder to catch because its vocabulary sounds like the Sermon on the Mount — justice, compassion, the wounded believed. Those words are Scripture's own. But somewhere the critique of the church quietly became the creed, the platform stopped being negotiable while the doctrines started, and the faith began apologizing for things Jesus never apologized for. The writer of this site has flinched the same way — softened a hard word because the room would have gone cold. The pillar below turns the same instrument the right receives the other way, with the same grief.",
+    body: "This lens is harder to catch because its vocabulary sounds like the Sermon on the Mount — justice, compassion, the wounded believed. Those words are Scripture's own. But somewhere the critique of the church quietly became the creed, the platform stopped being negotiable while the doctrines started, and the faith began apologizing for things Jesus never apologized for. Anyone who has stood in front of a room and felt it go cold knows the pull to soften a hard word, and pastors are not exempt. The pillar below turns the same instrument the right receives the other way, with the same grief.",
     ctaLabel: "Enter the pillar: The Capture by the Left",
     ctaHref: "/capture-by-the-left",
     pathHref: "/reading-paths/capture-by-the-left",
@@ -118,7 +118,7 @@ const LENSES: Record<LensId, {
   highlighter: {
     name: "The Highlighter",
     verdict: "Your Bible has been edited — by your own hand, in your own favor.",
-    body: "Verses as ammunition. A canon within the canon — the passages that win arguments bright yellow, the ones that would cost you something left unmarked. Everyone reads this way until someone shows them they are doing it; the man who built this site preached the edited version for years and was discipled by men who did the same. The pillar below is a course in reading again: context before conclusions, the whole arc before the favorite shelf, and the discipline of letting the text say what your side wishes it didn't.",
+    body: "Verses as ammunition. A canon within the canon — the passages that win arguments bright yellow, the ones that would cost you something left unmarked. Everyone reads this way until someone shows them they are doing it, and we were most of us discipled by people who read the same way and never noticed. The pillar below is a course in reading again: context before conclusions, the whole arc before the favorite shelf, and the discipline of letting the text say what your side wishes it didn't.",
     ctaLabel: "Enter the pillar: Reading Scripture Past Our Politics",
     ctaHref: "/reading-scripture-past-our-politics",
     pathHref: "/reading-paths/reading-scripture-past-our-politics",
@@ -134,7 +134,7 @@ const LENSES: Record<LensId, {
   marketplace: {
     name: "The Marketplace",
     verdict: "Somewhere along the way, you became the customer — and the customer is always right.",
-    body: "This is the lens the culture hands out free at the door: church as service provider, sermon as product, God as a very effective life coach. It is why 'fed' became the test of a congregation and 'fit' became the test of a faith. No one is sneered at here — the entire American religious economy was built to disciple us into this, and it worked on the man writing these words too. The way out is not a better product. It is formation — the slow, unglamorous practices that turn a consumer back into a disciple.",
+    body: "This is the lens the culture hands out free at the door: church as service provider, sermon as product, God as a very effective life coach. It is why 'fed' became the test of a congregation and 'fit' became the test of a faith. No one is sneered at here — the entire American religious economy was built to disciple us into this, and it worked on most of us, the writer included. The way out is not a better product. It is formation — the slow, unglamorous practices that turn a consumer back into a disciple.",
     ctaLabel: "Enter the formation pillar: Living Well",
     ctaHref: "/living-well",
   },

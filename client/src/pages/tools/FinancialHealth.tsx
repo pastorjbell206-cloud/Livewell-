@@ -60,7 +60,7 @@ const CATEGORIES: Category[] = [
     ],
     recommendations: {
       low: [
-        "Start with a specific, consistent amount -- even if it is small. Generosity is a muscle. It atrophies without use and strengthens with practice. Give the same amount to your church every week for the next month and notice what it does to your relationship with money.",
+        "Start with a specific, consistent amount -- even if it is small. Generosity is learned by giving, not by intending to give. Give the same amount to your church every week for the next month and notice what it does to your relationship with money.",
         "Examine what holds you back. Is it fear of not having enough? Is it the belief that you have earned everything you have? Both are common. Both are lies the culture tells so effectively that they feel like wisdom.",
         "Read the story of the widow's mite in Mark 12:41-44. Jesus did not measure generosity by amount. He measured it by cost. What would it cost you to give in a way that you actually feel?",
       ],
@@ -105,7 +105,7 @@ const CATEGORIES: Category[] = [
     ],
     recommendations: {
       low: [
-        "Comparison is the engine of discontent, and the modern world has built an entire economy on it. Reduce your exposure. Unfollow the accounts that make you feel behind. You are not behind. You are where you are.",
+        "Most discontent begins with comparison, and the modern economy is built on supplying it. Reduce your exposure. Unfollow the accounts that make you feel behind; the feeling is manufactured, and the people paid to manufacture it do not know your life.",
         "Write down ten things you have that money cannot buy. Not as a platitude exercise -- as a confrontation with the lie that more money would solve the ache you feel. The ache is real. The solution is misdiagnosed.",
         "Read Philippians 4:11-13 slowly. Paul wrote those words from prison. Contentment is not the result of having enough. It is the result of knowing who holds you, regardless of what you hold.",
       ],
@@ -116,7 +116,7 @@ const CATEGORIES: Category[] = [
       ],
       high: [
         "Contentment at this level is rare and countercultural. You are living proof that the gospel produces something the market cannot sell.",
-        "Be honest about the ongoing work. Contentment is not a destination. It is a daily discipline that can erode in a single envious moment. Stay vigilant.",
+        "Be honest about the ongoing work. Contentment is not a destination. It is a daily discipline, and it can erode in a single envious moment.",
         "Share your contentment without making it a sermon. The most powerful testimony is a person who genuinely has enough and lives like it. People will notice. Let them ask.",
       ],
     },
@@ -242,7 +242,7 @@ function getOverallLabel(score: number): {
       label: "Growing Steward",
       color: "var(--mustard)",
       description:
-        "You are building good habits but have areas that need attention. This is where most honest Christians live -- aware that their financial life does not yet match their theology, but willing to close the gap. The fact that you are here, taking this assessment, suggests you are ready for the next step.",
+        "You are building good habits but have areas that need attention. This is where most honest Christians live -- aware that their financial life does not yet match their theology, but willing to close the gap. The gap will not close on its own. Pick the category where the distance is widest and start there.",
     };
   if (pct >= 0.4)
     return {
@@ -255,7 +255,7 @@ function getOverallLabel(score: number): {
     label: "Foundation Needed",
     color: "var(--alert)",
     description:
-      "Your financial life needs significant restructuring, and that is not a statement about your worth -- it is a statement about your habits. Many of the most faithful people in Scripture went through seasons of financial crisis. The difference between crisis and character is what you do next. Start by getting help: a financial counselor, a trusted mentor, a Dave Ramsey class at your church. You do not have to figure this out alone.",
+      "Your financial life needs significant restructuring, and that is not a statement about your worth -- it is a statement about your habits. Many of the most faithful people in Scripture went through seasons of financial crisis. The difference between crisis and character is what you do next. Start by getting help: a financial counselor, a trusted mentor, a class at your church on handling money. You do not have to figure this out alone.",
   };
 }
 
@@ -451,7 +451,9 @@ export default function FinancialHealth() {
           >
             Twelve questions across four areas of financial stewardship. Not a
             budget calculator -- a diagnostic for whether your money reflects
-            what you say you believe.
+            what you say you believe. It is not financial advice; for decisions
+            about debt, investments, or taxes, talk to someone qualified who
+            knows your situation.
           </p>
         </div>
       </section>

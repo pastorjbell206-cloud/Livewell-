@@ -32,7 +32,7 @@ const AGE_GROUPS: AgeGroup[] = [
       {
         title: "Naming the world as gift",
         description:
-          "When your two-year-old points at the moon and waits for you to say something, that is not a teaching moment. It is a worship moment. Say 'God made that.' Not as curriculum. As wonder. The child who learns to see the world as made is already doing theology.",
+          "When your two-year-old points at the moon and waits for you to say something, that is not a teaching moment. It is a worship moment. Say 'God made that,' as wonder rather than as curriculum. The child who learns to see the world as made is already doing theology.",
       },
       {
         title: "Emotional regulation through presence",
@@ -109,7 +109,7 @@ const AGE_GROUPS: AgeGroup[] = [
         mistake: "Making God the answer to every fear without sitting in the fear first",
         why: "When a preschooler says 'I am scared of the dark,' the instinct is to say 'God is with you, so you do not need to be scared.' But this teaches them that faith eliminates fear, which is not true and will not hold. Jesus was afraid in Gethsemane. Fear and faith coexist.",
         instead:
-          "First acknowledge the fear: 'The dark can be scary. I understand that.' Then, after the feeling is named and honored: 'And God is in the dark with you, even when you cannot see Him.' The order matters. Validation before theology.",
+          "First acknowledge the fear: 'The dark can be scary. I understand that.' Then, after the feeling is named and honored: 'And God is in the dark with you, even when you cannot see Him.' The order matters; a fear that has been named can be answered, and one that has been talked over cannot.",
       },
       {
         mistake: "Turning every moment into a Bible lesson",
@@ -160,7 +160,7 @@ const AGE_GROUPS: AgeGroup[] = [
       "Move from 'God made everything' to 'God is doing something.' Elementary-age children are ready for the idea that God is active in the world -- that God cares about injustice, that God is working through people, that the Bible is not just ancient stories but a living word that speaks into their Tuesday afternoon.",
       "When they encounter suffering -- a classmate's parent dies, a friend is bullied, they see homelessness for the first time -- do not rush to explanation. Say 'This is not the way God wants things to be.' Then ask: 'What do you think we could do about it?' You are building a theology of lament and a theology of action in the same conversation.",
       "Let them read the Bible themselves -- not a children's paraphrase but an actual Bible with a reading level they can handle. When they stumble on something confusing or disturbing (and they will), treat it as an invitation, not a crisis. 'That is a hard part. Scholars have wrestled with that for thousands of years. What do you think it means?'",
-      "Before bed, ask your child: 'What is one thing you wondered about today?' Then find a Bible story or a verse that touches that wonder. Not a lesson. A connection. The child who learns that Scripture speaks to their real questions will still open it at thirty.",
+      "Before bed, ask your child: 'What is one thing you wondered about today?' Then find a Bible story or a verse that touches that wonder, not as a lesson but as a connection. The child who learns that Scripture speaks to their real questions will still open it at thirty.",
     ],
     mistakes: [
       {
@@ -216,7 +216,7 @@ const AGE_GROUPS: AgeGroup[] = [
     ],
     talkAboutGod: [
       "Stop lecturing. Start asking. 'What do you think happens after we die?' 'Do you think prayer actually works?' 'If you could ask God one question, what would it be?' These conversations require that you surrender control of the outcome. You are not catechizing. You are listening to a soul that is forming in real time.",
-      "When they express doubt, resist the urge to fix it immediately. Say 'That is a real question. I have wrestled with that too.' Then tell them honestly where you landed -- and that it took years. Faith that has never been questioned is not faith. It is habit. Give them room to do the hard work.",
+      "When they express doubt, resist the urge to fix it immediately. Say 'That is a real question. I have wrestled with that too.' Then tell them honestly where you landed -- and that it took years. Faith that has never been questioned is not faith. It is habit. Give them room to wrestle with it.",
       "Introduce them to Christians who think. Give them a book by C.S. Lewis. Tell them about Dietrich Bonhoeffer, who died for his faith. Show them that Christianity is not intellectually embarrassing -- that serious people have believed seriously. Tweens are terrified of being foolish. Show them that faith is not foolishness.",
       "Talk about current events through a theological lens. When something unjust happens in the news, say 'What do you think God thinks about that?' Do not give them your answer first. Let them wrestle. Then engage. You are teaching them that faith has something to say about Monday morning, not just Sunday morning.",
     ],
@@ -229,7 +229,7 @@ const AGE_GROUPS: AgeGroup[] = [
       },
       {
         mistake: "Competing with their peer group instead of equipping them for it",
-        why: "Tweens care desperately about what their friends think. Parents sometimes try to make church 'cool' to compete -- flashy youth groups, pizza parties, relevance at all costs. But the child does not need church to be cool. They need church to be real. Cool expires. Real endures.",
+        why: "Tweens care desperately about what their friends think. Parents sometimes try to make church 'cool' to compete -- flashy youth groups, pizza parties, relevance at all costs. But the child does not need church to be cool. They need church to be real. Cool has a short shelf life, and what is real outlasts it.",
         instead:
           "Acknowledge the pressure directly: 'I know it is hard to be the kid who goes to church. I know your friends might not get it.' Then give them language for why it matters to them -- not to you, to them. Help them articulate their own reasons, even if those reasons are still forming.",
       },
@@ -243,7 +243,7 @@ const AGE_GROUPS: AgeGroup[] = [
     practice: {
       title: "The Weekly Walk",
       description:
-        "Once this week, take your tween on a walk -- just the two of you, no phones, no agenda. Walk for at least twenty minutes. Do not bring up God, church, or morality. Talk about whatever they want to talk about: school, friends, a show they are watching, a game they are playing. Just listen. Then, near the end of the walk, ask one question: 'What is the hardest thing about being your age right now?' Listen to the answer without fixing it. Then say 'I am glad you told me that.' This walk is not about spiritual content. It is about relational infrastructure. Your tween will only bring you their spiritual questions if they trust that you will listen without an agenda. And trust is built in the ordinary, not the extraordinary.",
+        "Once this week, take your tween on a walk -- just the two of you, no phones, no agenda. Walk for at least twenty minutes. Do not bring up God, church, or morality. Talk about whatever they want to talk about: school, friends, a show they are watching, a game they are playing. Just listen. Then, near the end of the walk, ask one question: 'What is the hardest thing about being your age right now?' Listen to the answer without fixing it. Then say 'I am glad you told me that.' This walk is not about spiritual content; it is about the relationship that spiritual questions will one day need. Your tween will only bring you their spiritual questions if they trust that you will listen without an agenda. And trust is built in the ordinary, not the extraordinary.",
     },
   },
   {
@@ -322,7 +322,7 @@ const AGE_GROUPS: AgeGroup[] = [
       {
         title: "A faith modeled in suffering, not just in success",
         description:
-          "Your young adult needs to see what faith looks like when your marriage is hard, when your parent dies, when your career stalls, when your body fails. Sunday-morning faith is easy to perform. Tuesday-afternoon faith -- the kind that holds when nothing is working -- is what they need to witness. Your suffering, handled with faith, is the most powerful sermon you will ever preach.",
+          "Your young adult needs to see what faith looks like when your marriage is hard, when your parent dies, when your career stalls, when your body fails. Sunday-morning faith is easy to perform. Tuesday-afternoon faith -- the kind that holds when nothing is working -- is what they need to witness. How you carry your own suffering will teach them more about faith than anything you say about it.",
       },
       {
         title: "Freedom to come back",

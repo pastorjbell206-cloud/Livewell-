@@ -30,9 +30,9 @@ const AUDIENCES: Audience[] = [
     id: "seekers",
     label: "Neighbors and seekers (not yet believing)",
     invite:
-      "We are having a few people over for dinner soon. No agenda, just good food and good conversation. We would love to have you there. Come as you are.",
+      "We are having a few people over for dinner soon. No agenda, just good food and good conversation. We would love to have you there.",
     focus:
-      "Belonging comes before believing. The first job is simply to make them want to come back, so welcome them, feed them, ask real questions about their lives, and let them see an ordinary Christian home up close. Bring Scripture in gently after a few weeks, once the trust is real, and never preach at the table.",
+      "Let them belong at your table long before anyone asks them to believe anything. The first job is simply to make them want to come back, so welcome them, feed them, ask real questions about their lives, and let them see an ordinary Christian home up close. Bring Scripture in gently after a few weeks, once the trust is real, and never preach at the table.",
     passages: [
       "Luke 15:11-32, the prodigal son",
       "Luke 19:1-10, Zacchaeus",
@@ -44,7 +44,7 @@ const AUDIENCES: Audience[] = [
     id: "new-believers",
     label: "New believers learning to follow",
     invite:
-      "We are starting a simple weekly table to grow together in following Jesus. A meal, a short bit of Scripture, and prayer. Nothing heavy and nothing you need to prepare. Would you come.",
+      "We are starting a simple weekly table to grow together in following Jesus. A meal, a short bit of Scripture, and prayer. Nothing heavy and nothing you need to prepare. Would you come?",
     focus:
       "The basics of following Jesus, caught more than taught. Read a Gospel together a little at a time, pray for one another by name and follow up, and let them watch you live an ordinary, hopeful, struggling Christian life. They are learning the shape of a life with God by sharing yours.",
     passages: [
@@ -58,7 +58,7 @@ const AUDIENCES: Audience[] = [
     id: "committed",
     label: "A few committed followers going deep",
     invite:
-      "I would love to gather a few of us who want to take following Jesus seriously: to meet weekly around a meal, open the Scriptures, be honest about our actual lives, and help each other grow. Are you in.",
+      "I would love to gather a few of us who want to take following Jesus seriously: to meet weekly around a meal, open the Scriptures, be honest about our actual lives, and help each other grow. Are you in?",
     focus:
       "Depth and honesty, aimed at multiplication. Go further into Scripture, confess sin to one another, carry each other in prayer, and from the very start tell them plainly that they are being equipped to open a table of their own one day. A disciple who knows they are being trained to make disciples becomes one.",
     passages: [
@@ -142,7 +142,7 @@ export default function DiscipleshipTable() {
     a.passages.forEach((p) => lines.push(`- ${p}`));
     lines.push("");
     lines.push("HOW TO MULTIPLY:");
-    lines.push("From the beginning, tell your people that one day they will do this for someone else. When someone is ready, help them start their own table, with their own people, on their own street. The goal is not a bigger table but more tables, each one reproducing.");
+    lines.push("From the beginning, tell your people that one day they will do this for someone else. When someone is ready, help them start their own table, with their own people, on their own street. The goal is not a bigger table but more tables, each one able to start another.");
     return lines.join("\n");
   }
 
@@ -162,7 +162,7 @@ export default function DiscipleshipTable() {
     <Layout>
       <SEOMeta
         title="Start a Table — A Discipleship Table Starter Kit"
-        description="Build a reproducing plan for making disciples around a table: an invitation, a weekly rhythm of meal, Scripture, and prayer, and how to multiply. No training."
+        description="Build a plan for making disciples around a table: an invitation, a weekly rhythm of meal, Scripture, and prayer, and how to help it multiply. No training."
         url="https://www.livewellbyjamesbell.co/tools/discipleship-table"
       />
 
@@ -173,7 +173,7 @@ export default function DiscipleshipTable() {
             Start a table
           </h1>
           <p style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.75, color: "rgba(245,240,230,0.82)", maxWidth: "62ch" }}>
-            Tell us who you want to gather and how often. We will hand you a complete, reproducing plan, the invitation to send, a simple rhythm of meal and Scripture and prayer, the passages to begin with, and how to multiply. No training required. You already have what you need.
+            Tell us who you want to gather and how often. We will hand you a complete plan built to be passed on: the invitation to send, a simple rhythm of meal and Scripture and prayer, the passages to begin with, and how to multiply. No training required, only a table, a meal, and the willingness to open a Bible in front of people.
           </p>
         </div>
       </section>
@@ -318,7 +318,7 @@ export default function DiscipleshipTable() {
                   <span style={{ ...eyebrow, color: "var(--mustard)" }}>How to multiply</span>
                 </div>
                 <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.75, color: "rgba(245,240,230,0.85)" }}>
-                  From the beginning, tell your people that one day they will do this for someone else. When someone is ready, help them start their own table, with their own people, on their own street. The goal is not a bigger table but more tables, each one reproducing.
+                  From the beginning, tell your people that one day they will do this for someone else. When someone is ready, help them start their own table, with their own people, on their own street. The goal is not a bigger table but more tables, each one able to start another.
                 </p>
               </div>
             </div>

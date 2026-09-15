@@ -52,7 +52,7 @@ const CONFLICT_TYPES: ConflictType[] = [
           reference: "James 1:19",
         },
         warning:
-          "Do not begin with 'You always...' or 'You never...' Those words are not descriptions. They are indictments. And indictments put people on trial, not in conversation.",
+          "Do not begin with 'You always...' or 'You never...' Those words describe nothing; they indict, and an indictment puts a person on trial instead of in a conversation.",
       },
       {
         number: 2,
@@ -86,7 +86,7 @@ const CONFLICT_TYPES: ConflictType[] = [
           reference: "James 4:2b",
         },
         warning:
-          "Do not confuse a need with a verdict. 'I need you to acknowledge that you were wrong' is not a need. It is a demand for a confession. A need sounds like: 'I need ten minutes of your full attention when I get home.'",
+          "Do not confuse a need with a verdict. 'I need you to acknowledge that you were wrong' is a demand for a confession dressed as a need. A need sounds like: 'I need ten minutes of your full attention when I get home.'",
       },
       {
         number: 4,
@@ -182,7 +182,7 @@ const CONFLICT_TYPES: ConflictType[] = [
           reference: "Proverbs 15:22",
         },
         warning:
-          "Do not demand total control of the finances as a solution. Financial domination by one spouse is not stewardship. It is control. Partnership means both people have voice and visibility.",
+          "Do not demand total control of the finances as a solution. When one spouse dominates the money, whatever it gets called, it is control rather than stewardship. Partnership means both people have voice and visibility.",
       },
       {
         number: 4,
@@ -244,7 +244,7 @@ const CONFLICT_TYPES: ConflictType[] = [
           reference: "Proverbs 22:6",
         },
         warning:
-          "Do not use the children as evidence in your case against your spouse. 'The kids agree with me' is not a parenting insight. It is a coalition against the other parent.",
+          "Do not use the children as evidence in your case against your spouse. 'The kids agree with me' is a coalition against the other parent, whatever it feels like from the inside.",
       },
       {
         number: 2,
@@ -261,7 +261,7 @@ const CONFLICT_TYPES: ConflictType[] = [
           reference: "Ephesians 6:4",
         },
         warning:
-          "Do not claim moral superiority over your spouse's parenting. 'At least I am involved' or 'At least I discipline them' are not observations. They are weapons.",
+          "Do not claim moral superiority over your spouse's parenting. 'At least I am involved' or 'At least I discipline them' are weapons, and both of you know it the moment the words are out.",
       },
       {
         number: 3,
@@ -341,7 +341,7 @@ const CONFLICT_TYPES: ConflictType[] = [
           reference: "1 Corinthians 7:5",
         },
         warning:
-          "Do not frame desire as entitlement. 'I have needs' is not a conversation starter. It is a demand that reduces your spouse to a service provider.",
+          "Do not frame desire as entitlement. 'I have needs' opens no conversation; it makes a demand that reduces your spouse to a service provider.",
       },
       {
         number: 2,
@@ -454,7 +454,7 @@ const CONFLICT_TYPES: ConflictType[] = [
           reference: "1 Peter 4:8",
         },
         warning:
-          "Do not issue ultimatums. 'It is me or your mother' is not a conversation. It is a hostage negotiation. And it will damage your marriage more than the in-law ever could.",
+          "Do not issue ultimatums. 'It is me or your mother' turns a marriage into a hostage negotiation, and it will damage the marriage more than the in-law ever could.",
       },
       {
         number: 3,
@@ -550,13 +550,13 @@ const CONFLICT_TYPES: ConflictType[] = [
           reference: "Colossians 3:23",
         },
         warning:
-          "Do not martyr yourself. Doing everything silently and then exploding is not virtue. It is a pattern. If you never ask for help, you cannot be angry that help did not come.",
+          "Do not martyr yourself. Doing everything silently and then exploding is a pattern, not a virtue, and if you never ask for help, you cannot be angry that help did not come.",
       },
       {
         number: 3,
         title: "Name what you need",
         description:
-          "Be specific. 'I need more help around the house' is too vague to act on. Name the tasks, the frequency, and the standard. Clarity is kindness.",
+          "Be specific. 'I need more help around the house' is too vague to act on. Name the tasks, the frequency, and the standard, so that your spouse has something they can actually do.",
         questions: [
           { text: "Which three tasks, if your spouse took them over, would change your daily experience the most?" },
           { text: "Do you need help with the work itself, or help with the mental load of planning and remembering?" },
@@ -567,7 +567,7 @@ const CONFLICT_TYPES: ConflictType[] = [
           reference: "Ecclesiastes 4:9--10",
         },
         warning:
-          "Do not assign tasks and then criticize how they are done. If you re-do what your spouse just did, you have taught them that their effort does not matter. Let good enough be good enough.",
+          "Do not assign tasks and then criticize how they are done. If you re-do what your spouse just did, you have taught them that their effort does not matter. A dish washed differently is still a dish washed.",
       },
       {
         number: 4,
@@ -629,7 +629,7 @@ const CONFLICT_TYPES: ConflictType[] = [
           reference: "James 1:5",
         },
         warning:
-          "Do not position yourself as spiritually superior. 'If you really loved God...' is not a conversation. It is spiritual manipulation.",
+          "Do not position yourself as spiritually superior. 'If you really loved God...' is spiritual manipulation, however sincerely it is meant.",
       },
       {
         number: 2,
@@ -697,7 +697,7 @@ const CONFLICT_TYPES: ConflictType[] = [
           reference: "Romans 12:10",
         },
         warning:
-          "Do not set a timeline for your spouse's spiritual change. Faith that grows under pressure is not faith. It is compliance. Pray for them. Love them. And let God do what only God can do.",
+          "Do not set a timeline for your spouse's spiritual change. Faith that grows under pressure is only compliance. Pray for them. Love them. And let God do what only God can do.",
       },
     ],
     relatedArticles: [

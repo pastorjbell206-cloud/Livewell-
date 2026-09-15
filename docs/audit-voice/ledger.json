@@ -8111,7 +8111,7 @@
       "title": "When God Bless America Replaces Thy Kingdom Come",
       "words": 25,
       "id": "book:when-god-bless-america-replaces-thy-kingdom-come",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "Calm and unhyped, but the one sentence after the subtitle merely restates it: \"How Patriotism Became Our Practical Savior\" is followed by \"how patriotism has replaced the kingdom of God as the practical savior,\" so \"practical savior\" lands twice in thirty words and the reader learns nothing the title did not say. \"A direct examination\" is catalog labeling, not a thought. Replace the sentence with the book's actual claim (what was traded, who did the trading, that the writer is inside it) and it ships.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -8121,6 +8121,13 @@
         ],
         "forbiddenWords": [],
         "crisisCare": "n/a"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "Replaced the sentence that restated the subtitle (\"A direct examination of how patriotism has replaced the kingdom of God as the practical savior in American Christianity.\") with the book's claim: what was asked of the nation (\"keep us safe, tell us who we are, and settle our hope\"), who made the trade (\"people who loved both God and country, the writer among them\"), and its cost. Subtitle lead kept.",
+        "removedUnverifiable": [],
+        "leftForJames": [],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "book:the-monster-in-the-mirror": {
@@ -8129,7 +8136,7 @@
       "title": "The Monster in the Mirror",
       "words": 31,
       "id": "book:the-monster-in-the-mirror",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The subtitle carries the self-implication (\"Why Yours Is No Different\"); the blurb sentence drops it and retreats to inert catalog copy: \"An exploration of how each generation interprets Scripture through its own cultural lens.\" No hype, nothing forbidden, but \"exploration\" and \"cultural lens\" could describe any hermeneutics primer. Rewrite the sentence so the mirror turns on the reader and the writer, which is the book's whole point.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -8140,6 +8147,13 @@
         ],
         "forbiddenWords": [],
         "crisisCare": "n/a"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "Replaced \"An exploration of how each generation interprets Scripture through its own cultural lens.\" with two sentences that turn the mirror on reader and writer: \"the assumptions you and I are reading through right now, how to find them, and what to do once the mirror shows you something you would rather not have seen.\" Subtitle lead kept.",
+        "removedUnverifiable": [],
+        "leftForJames": [],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "book:pcn-healthy-growing-church": {
@@ -8148,7 +8162,7 @@
       "title": "The Healthy & Growing Church",
       "words": 23,
       "id": "book:pcn-healthy-growing-church",
-      "status": "rewrite",
+      "status": "repaired",
       "verdict": "rewrite",
       "notes": "The blurb is a keyword string, not a sentence with a thought: \"Comprehensive guide on church health, decline, revitalization, replanting, and leading without losing hope.\" \"Comprehensive guide\" is a promise no book keeps, and the subtitle's \"Breaking Through the Plateau\" reads as church-growth-conference language. The one human phrase, \"leading without losing hope,\" is the seed of a real blurb; build from that and drop the inventory.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -8159,6 +8173,15 @@
         ],
         "forbiddenWords": [],
         "crisisCare": "n/a"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "Dropped the keyword inventory (\"Comprehensive guide on church health, decline, revitalization, replanting...\") and built from the one human phrase: now addressed to \"the pastor of a church that has stalled or begun to shrink, who needs honest numbers, a sober plan for what comes next, and a way to keep leading without losing hope.\" The subtitle line (including \"Breaking Through the Plateau\") was left intact because it is the book's own subtitle, not blurb copy.",
+        "removedUnverifiable": [],
+        "leftForJames": [
+          "The notes flag \"Breaking Through the Plateau\" as church-growth-conference language, but it is the printed subtitle; only James can rename it."
+        ],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "book:pcn-patient-pastor": {
@@ -8167,7 +8190,7 @@
       "title": "The Patient Pastor",
       "words": 28,
       "id": "book:pcn-patient-pastor",
-      "status": "rewrite",
+      "status": "repaired",
       "verdict": "rewrite",
       "notes": "\"Master the skill of patient leadership and strategic change management\" is an imperative brochure hook in corporate-church language; \"master the skill\" is a promise, and \"strategic change management\" is the business-seminar vocabulary the voice standard names as corporate church language. Nothing here sounds like a pastor speaking across a table. The subtitle (\"Without Losing Your Church or Your Mind\") is the honest line; the blurb should grow from it.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -8178,6 +8201,13 @@
         ],
         "forbiddenWords": [],
         "crisisCare": "n/a"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "Replaced \"Master the skill of patient leadership and strategic change management.\" with a thought grown from the subtitle: \"move too fast and you lose people, move too slow and you lose yourself,\" and patience \"as a pastoral discipline rather than a personality trait.\" Subtitle and series tag kept.",
+        "removedUnverifiable": [],
+        "leftForJames": [],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "book:pcn-change-without-casualties": {
@@ -8186,7 +8216,7 @@
       "title": "Change Without Casualties",
       "words": 23,
       "id": "book:pcn-change-without-casualties",
-      "status": "rewrite",
+      "status": "repaired",
       "verdict": "rewrite",
       "notes": "\"Strategic guide for implementing change while maintaining congregational trust\" is management copy: \"strategic,\" \"implementing,\" \"maintaining\" are the words of a consultant's deck, not a pastor who has watched a church split over a decision. The title's real weight (casualties, meaning people) is absent from the blurb. Rebuild around the cost the title names.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -8197,6 +8227,13 @@
         ],
         "forbiddenWords": [],
         "crisisCare": "n/a"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "Replaced the consultant line (\"Strategic guide for implementing change while maintaining congregational trust.\") with copy built on the cost the title names: \"The casualties of a badly handled church decision are not programs or budgets. They are people, the ones who leave and the ones who stay but stop trusting.\" Subtitle and series tag kept.",
+        "removedUnverifiable": [],
+        "leftForJames": [],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "book:pcn-changing-unchangeable": {
@@ -8205,7 +8242,7 @@
       "title": "Changing the Unchangeable",
       "words": 26,
       "id": "book:pcn-changing-unchangeable",
-      "status": "rewrite",
+      "status": "repaired",
       "verdict": "rewrite",
       "notes": "\"Face institutional resistance and lead real change in traditional churches\" is a conference-session imperative, the artificially dramatic hook the standard tells us to avoid, and \"lead real change\" is generic leadership copy. The subtitle's \"We've Always Done It This Way\" is a genuine, spoken line; the blurb should sound like the man who has heard it in a deacons' meeting, with the fairness to say why people say it before challenging them.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -8216,6 +8253,13 @@
         ],
         "forbiddenWords": [],
         "crisisCare": "ok"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "Replaced the conference imperative (\"Face institutional resistance and lead real change in traditional churches.\") with fairness before the challenge: people who say it \"are usually protecting something that once mattered and often still does,\" and the book \"takes that resistance seriously before it asks how a pastor leads reform.\" Subtitle and series tag kept.",
+        "removedUnverifiable": [],
+        "leftForJames": [],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "book:livewell-staying": {
@@ -8224,7 +8268,7 @@
       "title": "Staying",
       "words": 24,
       "id": "book:livewell-staying",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The subtitle (\"Depression, Crisis, and the Long Middle\") is the most honest copy in the set; the sentence under it softens into publishing stock: \"life's most difficult seasons\" and \"with honesty and grace\" are the filler phrases of a hundred Christian marriage books. Nothing validates despair or diagnoses the reader, so the care is intact, but a blurb that names depression should let the book's page keep a visible path to real help beside it. Replace the two stock phrases with what the book actually says about staying when staying is hard.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -8236,6 +8280,15 @@
         ],
         "forbiddenWords": [],
         "crisisCare": "ok"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "Replaced \"Practical wisdom for couples carrying a marriage through life's most difficult seasons with honesty and grace.\" with what staying costs: \"staying married is not a feeling but a decision made again every morning,\" for the crisis and \"the long stretch afterward.\" Added one care line, \"It is not a substitute for a doctor or a counselor, and it does not pretend to be,\" which claims nothing about the book's contents.",
+        "removedUnverifiable": [],
+        "leftForJames": [
+          "The notes ask that the book's page keep a visible path to real help beside a blurb that names depression; that is page-level copy in BookDetail.tsx, outside the description field, and needs his ruling on where it lives."
+        ],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "book:dangerous-calling-why-the-office-of-pastor-is-not-for-everyone": {
@@ -8244,7 +8297,7 @@
       "title": "Dangerous Calling: Why the Office of Pastor Is Not for Everyone",
       "words": 45,
       "id": "book:dangerous-calling-why-the-office-of-pastor-is-not-for-everyone",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "Three stock jacket sentences: the book labels itself \"A prophetic examination\" (prophetic is something a book is, not something it announces), \"what it truly means to be called\" is filler, \"both the glory and the weight\" is perfect symmetry, and \"Essential reading for anyone\" is the hype closer. The claim about \"the romanticization of ministry\" is real and specific; keep it and cut the rest. Separately, a human should rule on the title: Paul David Tripp published Dangerous Calling (Crossway, 2012) on the same subject, and the blurb does nothing to distinguish this book from it.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -8257,6 +8310,15 @@
         ],
         "forbiddenWords": [],
         "crisisCare": "n/a"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "Cut \"A prophetic examination,\" \"what it truly means,\" \"both the glory and the weight,\" and the closer \"Essential reading for anyone considering pastoral ministry or supporting pastors.\" Kept the one real claim, now as \"Ministry has been romanticized, and a good many people walk into the pastorate on the strength of that picture,\" ending on the weight that remains once the romance is stripped away.",
+        "removedUnverifiable": [],
+        "leftForJames": [
+          "Title collision: Paul David Tripp's Dangerous Calling (Crossway, 2012) covers the same subject. The blurb cannot distinguish the two without inventing contents; James must rule on the title or supply what sets his apart."
+        ],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "book:the-hidden-life-of-a-pastor-tending-your-soul-while-tending-the-flock": {
@@ -8265,7 +8327,7 @@
       "title": "The Hidden Life of a Pastor: Tending Your Soul While Tending the Flock",
       "words": 43,
       "id": "book:the-hidden-life-of-a-pastor-tending-your-soul-while-tending-the-flock",
-      "status": "rewrite",
+      "status": "repaired",
       "verdict": "rewrite",
       "notes": "Pure template with no sentence that could only be about this book: \"A pastoral guide to spiritual formation and personal renewal,\" a list (\"their struggles, temptations, and spiritual disciplines\"), then \"a companion to pastoral leaders seeking to maintain their own spiritual vitality,\" which is corporate-church vocabulary. It is burnout-adjacent copy and nothing in it validates despair, but it also honors no real pain; it gestures at \"struggles\" without naming one. Rebuild from the subtitle's actual tension: the soul that goes untended while the flock is tended.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -8277,6 +8339,13 @@
         ],
         "forbiddenWords": [],
         "crisisCare": "ok"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "Rebuilt from the subtitle's tension, replacing \"A pastoral guide to spiritual formation and personal renewal... a companion to pastoral leaders seeking to maintain their own spiritual vitality\" with \"A pastor can spend years tending a congregation's souls while his own goes quietly untended, and no one on the outside can tell.\"",
+        "removedUnverifiable": [],
+        "leftForJames": [],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "book:the-first-flock-the-church-s-calling-to-care-for-pastors-and-their-families": {
@@ -8285,7 +8354,7 @@
       "title": "The First Flock: The Church's Calling to Care for Pastors and Their Families",
       "words": 50,
       "id": "book:the-first-flock-the-church-s-calling-to-care-for-pastors-and-their-families",
-      "status": "rewrite",
+      "status": "repaired",
       "verdict": "rewrite",
       "notes": "The thesis sentence states the book's argument backwards: \"Bell argues that the congregation is the pastors \\\"first flock\\\", they must be cared for with the same intentionality as the broader church.\" The subtitle says the church is called to care for pastors and their families, so the pastor's household, not the congregation, is the first flock; as written the blurb misleads the buyer about what the book claims. It is also a comma splice with a missing apostrophe and straight quotes, and \"with the same intentionality\" is corporate filler. The last sentence (\"from taking pastors for granted to actively supporting them\") is the only usable line.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -8295,6 +8364,15 @@
         ],
         "forbiddenWords": [],
         "crisisCare": "n/a"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "Removed the backwards thesis (\"the congregation is the pastors \\\"first flock\\\", they must be cared for with the same intentionality\") along with its comma splice, missing apostrophe, and filler; the blurb now says \"Pastors and their families are a flock too, and the church is called to care for them rather than only to be cared for by them,\" keeping the one usable line about taking pastors for granted.",
+        "removedUnverifiable": [],
+        "leftForJames": [
+          "The title's exact sense of \"first flock\" (the pastor's household as his first flock, or pastors and families as the church's first flock) cannot be settled from the subtitle alone; the rewrite is worded to be true under either reading, but James should confirm which the book argues."
+        ],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "book:earthen-vessels-why-our-bodies-matter-to-our-faith": {
@@ -8303,7 +8381,7 @@
       "title": "Earthen Vessels: Why Our Bodies Matter to Our Faith",
       "words": 42,
       "id": "book:earthen-vessels-why-our-bodies-matter-to-our-faith",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The middle sentence carries a real position (\"challenges the dualism that separates spirit from body\"), and \"whole Christianity that honors the physical\" stays just this side of holistic. The failures are surface: \"A theological exploration of\" is the template opener and \"incarnational living\" is insider church jargon that explains nothing to the skeptic. Beyond the copy, a human must rule on the title: Matthew Lee Anderson published Earthen Vessels: Why Our Bodies Matter to Our Faith (Bethany House, 2011), the identical title and subtitle, and the site's integrity claim cannot carry that unexamined.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -8314,6 +8392,15 @@
         ],
         "forbiddenWords": [],
         "crisisCare": "n/a"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "Replaced the template opener \"A theological exploration of embodied faith and incarnational living\" with a plain statement of the dualism the book opposes (\"the body as the soul's container, something to be managed until it can be left behind\"); kept the real position on dualism and the health/sexuality/work/material-world scope already in the blurb, rephrased as a thought rather than a list.",
+        "removedUnverifiable": [],
+        "leftForJames": [
+          "Title collision: Matthew Lee Anderson's Earthen Vessels: Why Our Bodies Matter to Our Faith (Bethany House, 2011) carries the identical title and subtitle. That is a ruling on the title, not the copy."
+        ],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "book:preach-the-word-the-primacy-of-expository-preaching-in-the-local-church": {
@@ -8322,7 +8409,7 @@
       "title": "Preach the Word: The Primacy of Expository Preaching in the Local Church",
       "words": 38,
       "id": "book:preach-the-word-the-primacy-of-expository-preaching-in-the-local-church",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "\"This book is essential for preachers\" is the hype closer, and \"practical concerns about relevance and engagement\" is conference-track vocabulary. The middle claim (\"makes the case for text-driven preaching\") is real but generic; the voice standard asks for fairness before sharpness, so the blurb should say plainly what the strongest case against expository preaching is before saying the book answers it. Cut the closer and it is close.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -8334,6 +8421,13 @@
         ],
         "forbiddenWords": [],
         "crisisCare": "n/a"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "Cut \"A defense and guide to,\" \"relevance and engagement,\" and the closer \"This book is essential for preachers seeking to ground their ministry in Scripture.\" Added the fair case first (\"it can bore a room and answer questions no one in it was asking, and any honest preacher has watched it happen\") before the book's argument for text-driven preaching.",
+        "removedUnverifiable": [],
+        "leftForJames": [],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "book:the-undershepherd-pastoral-leadership-authority-and-the-care-of-god-s-people": {
@@ -8342,7 +8436,7 @@
       "title": "The Undershepherd: Pastoral Leadership, Authority, and the Care of God's People",
       "words": 39,
       "id": "book:the-undershepherd-pastoral-leadership-authority-and-the-care-of-god-s-people",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "\"A comprehensive theology of pastoral leadership\" promises what no single book delivers; drop \"comprehensive.\" The middle sentence is the honest core (under-shepherd accountable to Christ the Chief Shepherd, which is 1 Peter 5 without saying so) and should stay. Two missing apostrophes (\"the pastors role,\" \"the pastors responsibility\") need fixing, and the closing list (\"authority, care, discipline\") is a table of contents rather than a thought.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -8353,6 +8447,13 @@
         ],
         "forbiddenWords": [],
         "crisisCare": "n/a"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "Dropped \"comprehensive,\" fixed both missing apostrophes (\"the pastor's role\"), kept the honest core about the under-shepherd accountable to Christ the Chief Shepherd, and replaced the table-of-contents closer (\"authority, care, discipline, and the pastors responsibility\") with a thought: \"the authority a pastor carries is borrowed, the care he owes is not optional, and the flock was never his.\"",
+        "removedUnverifiable": [],
+        "leftForJames": [],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "book:the-pruning-church-decline-faithful-endurance-and-the-promise-of-renewal": {
@@ -8361,7 +8462,7 @@
       "title": "The Pruning: Church Decline, Faithful Endurance, and the Promise of Renewal",
       "words": 42,
       "id": "book:the-pruning-church-decline-faithful-endurance-and-the-promise-of-renewal",
-      "status": "rewrite",
+      "status": "repaired",
       "verdict": "rewrite",
       "notes": "The thesis sentence makes the exact move the voice standard forbids, attaching generic hope to an unresolved diagnosis: \"see decline not as failure but as opportunity for renewal and refocus.\" \"Opportunity\" is corporate, and a church watching its people die deserves better than a reframe. \"A prophetic word\" is self-labeling, \"offers hope and practical guidance\" and \"seasons of loss and transition\" are stock. The John 15 image of pruning is strong enough to build a real blurb from, if the blurb is willing to say that pruning cuts.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -8374,6 +8475,13 @@
         ],
         "forbiddenWords": [],
         "crisisCare": "n/a"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "Removed the forbidden reframe (\"see decline not as failure but as opportunity for renewal and refocus\"), \"A prophetic word,\" \"offers hope and practical guidance,\" and \"seasons of loss and transition.\" Rebuilt from John 15 with the cut visible: \"the vinedresser cuts, and what is cut is gone,\" and the book \"refuses to dress that decline up as an opportunity.\"",
+        "removedUnverifiable": [],
+        "leftForJames": [],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "book:one-body-many-churches-a-theology-of-unity-for-a-fractured-church": {
@@ -8382,7 +8490,7 @@
       "title": "One Body, Many Churches: A Theology of Unity for a Fractured Church",
       "words": 36,
       "id": "book:one-body-many-churches-a-theology-of-unity-for-a-fractured-church",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The middle sentence states a real position (\"a robust doctrine of the universal church while honoring local church distinctives\"), though \"robust\" is the reflexive adjective of seminary marketing and can go. \"A theological exploration of\" opens the same template as a dozen other blurbs here, and \"This book addresses fragmentation, cooperation, and the church's witness\" is a topic list. Name one fracture the book actually takes on and the blurb earns its title.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -8394,6 +8502,13 @@
         ],
         "forbiddenWords": [],
         "crisisCare": "n/a"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "Cut \"A theological exploration of,\" \"robust,\" and the topic list \"This book addresses fragmentation, cooperation, and the church's witness.\" Named the fracture the blurb already pointed at (denominational lines) as a concrete opening, \"The church Christ prayed would be one is divided along denominational lines, and most of us have made our peace with that,\" and kept the universal/local position.",
+        "removedUnverifiable": [],
+        "leftForJames": [],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "book:necessary-words-a-pastoral-theology-of-courage-and-difficult-conversations": {
@@ -8402,7 +8517,7 @@
       "title": "Necessary Words: A Pastoral Theology of Courage and Difficult Conversations",
       "words": 40,
       "id": "book:necessary-words-a-pastoral-theology-of-courage-and-difficult-conversations",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "\"This book equips leaders with biblical wisdom\" is church-conference copy, and \"speaking truth in love\" uses Ephesians 4:15 as a stock phrase rather than a quoted text. The middle sentence names real work (\"confronting sin, addressing conflict, and speaking difficult truths\") and \"conversations that build rather than destroy\" is a fair line. Fix the missing apostrophe in \"the pastors prophetic role,\" cut \"equips,\" and let the blurb admit what these conversations cost the one who has them.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -8413,6 +8528,13 @@
         ],
         "forbiddenWords": [],
         "crisisCare": "n/a"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "Cut \"speaking truth in love\" as stock phrase and \"This book equips leaders with biblical wisdom,\" fixed \"the pastor's prophetic role,\" kept the real work named in the middle sentence and \"conversations that build rather than destroy,\" and added what they cost: \"he does not pretend those words are cheap for the one who has to say them.\"",
+        "removedUnverifiable": [],
+        "leftForJames": [],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "book:sent-into-the-city-the-church-s-calling-to-its-neighborhood-and-world": {
@@ -8421,7 +8543,7 @@
       "title": "Sent Into the City: The Church's Calling to Its Neighborhood and World",
       "words": 36,
       "id": "book:sent-into-the-city-the-church-s-calling-to-its-neighborhood-and-world",
-      "status": "rewrite",
+      "status": "repaired",
       "verdict": "rewrite",
       "notes": "Nearly every noun phrase is a conference track title: \"missional engagement,\" \"community involvement,\" \"social justice, community transformation, and kingdom witness.\" \"Community transformation\" is the forbidden word's cousin, and the stack of jargon is what the voice standard calls corporate church language. The one real line, \"move beyond programs to genuine presence in their neighborhoods,\" should be the whole blurb's spine, stated in plain words a neighbor could read.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -8434,6 +8556,13 @@
         ],
         "forbiddenWords": [],
         "crisisCare": "n/a"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "Dropped every conference-track phrase (\"missional engagement,\" \"community involvement,\" \"social justice, community transformation, and kingdom witness\") and made the one real line the spine: \"A church can run programs for its neighborhood for years without ever being present in it,\" sent \"to the actual streets and people around it rather than to the idea of them, and from there to the world.\"",
+        "removedUnverifiable": [],
+        "leftForJames": [],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "book:to-the-ends-of-the-earth-global-mission-national-partnership-and-the-sent-church": {
@@ -8442,7 +8571,7 @@
       "title": "To the Ends of the Earth: Global Mission, National Partnership, and the Sent Church",
       "words": 39,
       "id": "book:to-the-ends-of-the-earth-global-mission-national-partnership-and-the-sent-church",
-      "status": "rewrite",
+      "status": "repaired",
       "verdict": "rewrite",
       "notes": "No sentence here is about this book rather than any missions book: \"explores the church's role in world missions, cross-cultural partnership, and the global nature of God's kingdom\" is a topic list, and \"calls the church to think globally\" is half a bumper sticker. The subtitle's \"National Partnership\" implies a specific argument about partnering with national leaders rather than exporting Western ministry, and the blurb never says it. Build the blurb on that claim.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -8454,6 +8583,13 @@
         ],
         "forbiddenWords": [],
         "crisisCare": "n/a"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "Replaced the topic list and \"calls the church to think globally\" with the argument the subtitle's \"National Partnership\" implies: \"Global mission was never meant to be the export of Western ministry to the rest of the world,\" a sent church partnering \"with national leaders as equals,\" and what that costs \"a church accustomed to being the one who sends.\"",
+        "removedUnverifiable": [],
+        "leftForJames": [],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "book:faithful-in-exile-pastoral-leadership-and-the-church-s-witness-in-a-post-christian-age": {
@@ -8462,7 +8598,7 @@
       "title": "Faithful in Exile: Pastoral Leadership and the Church's Witness in a Post-Christian Age",
       "words": 37,
       "id": "book:faithful-in-exile-pastoral-leadership-and-the-church-s-witness-in-a-post-christian-age",
-      "status": "rewrite",
+      "status": "repaired",
       "verdict": "rewrite",
       "notes": "Empty template from first word to last: \"A prophetic guide\" self-labels, \"maintain faithfulness and witness in a post-Christian context\" is institutional vocabulary, and \"offers both challenge and encouragement for leaders facing cultural change\" is the symmetrical filler the standard names as sounding generated. The exile image (Jeremiah 29, 1 Peter) is the strongest thing the title has and the blurb never touches it. Rebuild from the image and say what faithfulness costs when the culture has stopped listening.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -8475,6 +8611,13 @@
         ],
         "forbiddenWords": [],
         "crisisCare": "n/a"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "Replaced the empty template (\"A prophetic guide,\" \"maintain faithfulness and witness,\" \"both challenge and encouragement for leaders facing cultural change\") with the exile image from Jeremiah's letter (build houses, seek the welfare of the city), applied to a culture that has stopped listening and pastors \"leading people who grieve what was lost,\" ending \"that instruction has not expired.\"",
+        "removedUnverifiable": [],
+        "leftForJames": [],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "book:common-grace-what-pastors-learn-when-they-listen-to-the-world": {
@@ -8483,7 +8626,7 @@
       "title": "Common Grace: What Pastors Learn When They Listen to the World",
       "words": 41,
       "id": "book:common-grace-what-pastors-learn-when-they-listen-to-the-world",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The middle sentence is a real, slightly surprising claim (\"pastors must listen to the world to understand God's common grace at work\") and matches the subtitle; keep it. The frame around it is template: \"A theology of common grace and cultural engagement\" and \"calls for thoughtful engagement\" use \"engagement\" twice in three sentences, and \"challenges Christian isolation\" points at others without the self-implication the man would supply. Cut the repetition and let the blurb concede what the isolated church is afraid of.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -8495,6 +8638,13 @@
         ],
         "forbiddenWords": [],
         "crisisCare": "n/a"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "Kept the real middle claim, cut the double \"engagement\" and \"This book challenges Christian isolation,\" and opened by conceding what the isolated church fears (\"listen to the world long enough and you may start to sound like it\"), closing with the self-implication the man would supply: \"Most of us, the writer included, have found it easier to preach at the world than to learn from it.\"",
+        "removedUnverifiable": [],
+        "leftForJames": [],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "book:the-unfinished-church-calling-vision-and-the-future-god-is-building": {
@@ -8503,7 +8653,7 @@
       "title": "The Unfinished Church: Calling, Vision, and the Future God Is Building",
       "words": 44,
       "id": "book:the-unfinished-church-calling-vision-and-the-future-god-is-building",
-      "status": "rewrite",
+      "status": "repaired",
       "verdict": "rewrite",
       "notes": "Hollow throughout: \"A vision for the church's future and God's ongoing work,\" \"the church's road\" (which reads as journey-as-metaphor with the word swapped and the metaphor left standing), \"God's unfolding story,\" and \"offers hope and direction\" are generic Christian inspiration, and \"future\" appears three times in three sentences. Nothing states what the book argues or what is unfinished. Rebuild from a concrete claim, or the blurb tells the buyer this is a book about nothing in particular.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -8517,6 +8667,15 @@
         ],
         "forbiddenWords": [],
         "crisisCare": "n/a"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "Removed \"A vision for the church's future,\" \"the church's road,\" \"God's unfolding story,\" \"offers hope and direction,\" and the triple \"future.\" Rebuilt on the subtitle's own terms: \"The church is not finished, and neither is the work God is doing through it,\" ending on the distinction between \"the church God is building\" and \"the church we are anxious to protect.\"",
+        "removedUnverifiable": [],
+        "leftForJames": [
+          "The blurb stays as close to the subtitle as honesty allows; if the book makes a sharper specific claim about what is unfinished, James can supply it and the blurb should carry it."
+        ],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "page:client/src/pages/About.tsx": {
@@ -11938,7 +12097,7 @@
       "words": 1798,
       "blocks": 16,
       "id": "page:client/src/pages/faq/WhatIsReligiousTrauma.tsx",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The care is right — real organizations named, therapy modalities described, grief legitimized, and leaving faith handled without coercion (\"that is between them and God — not between them and the church that hurt them\"). The voice fails the fair-before-sharp test in two places: the hero \"The church caused this\" is a blanket accusation with no named distinction between the systems described and the churches that did not do this; and the answer to whether religious trauma is real dismisses the honest questioner (\"is usually asked by people who have never experienced it. For those who have, the question answers itself\") instead of conceding what is fair in the question. \"intention does not determine impact\" is borrowed cliché.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -11948,6 +12107,13 @@
         ],
         "forbiddenWords": [],
         "crisisCare": "ok"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "Hero now draws the distinction the note asked for: \"The church caused this. A pastor names it, examines it, and refuses to look away.\" became \"Churches did this. Not every church, but the systems that did it are not rare, and a pastor who loves the church has to say so. This page names it, examines it, and refuses to look away.\" The 'is it real' answer now concedes the fair question before answering it (\"is usually asked by people who have never experienced it. For those who have, the question answers itself\" became \"is a fair one, and it deserves a straight answer rather than a dismissal. A careful person is right to ask whether a term that sits outside the diagnostic manual names something clinicians can actually observe...\"), and the borrowed cliché \"But intention does not determine impact\" became \"The wounds are real regardless, and they are counted by what was done to the person, not by what the leaders meant.\" All care copy (named organizations, therapy modalities, leaving-faith handling) untouched.",
+        "removedUnverifiable": [],
+        "leftForJames": [],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "page:client/src/pages/faq/WhatIsTheDifferenceBetweenCatholicAndProtestant.tsx": {
@@ -11956,7 +12122,7 @@
       "words": 1893,
       "blocks": 16,
       "id": "page:client/src/pages/faq/WhatIsTheDifferenceBetweenCatholicAndProtestant.tsx",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "Substantively strong and even-handed — the Westminster \"Antichrist\" line is quoted honestly alongside its recognition of Catholic baptism, and the papacy answer ends well (\"They are not questions that should prevent Christians from recognizing one another\"). The hero closes on the stock hook \"Here is what actually divides them.\" One category error: \"most mainstream Protestant denominations -- including the World Council of Churches\" — the WCC is a council, not a denomination.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -11966,6 +12132,13 @@
         ],
         "forbiddenWords": [],
         "crisisCare": "n/a"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "Hero hook \"Here is what actually divides them.\" became \"These answers give each tradition its own voice before naming where they part.\" The WCC category error is corrected: \"including the World Council of Churches and even many evangelical bodies\" became \"the member churches of the World Council of Churches among them, and even many evangelical bodies\".",
+        "removedUnverifiable": [],
+        "leftForJames": [],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "page:client/src/pages/faq/WhyArePeopleLeavingChurch.tsx": {
@@ -11974,7 +12147,7 @@
       "words": 1533,
       "blocks": 19,
       "id": "page:client/src/pages/faq/WhyArePeopleLeavingChurch.tsx",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The Jeremiah close is the platform's voice at its best (\"The judgment was on what Israel had made of God's house. The mercy was that God was not finished.\") and the hero is self-implicating. The numbers contradict each other: one answer says \"The Southern Baptist Convention has lost roughly 1.3 million members since 2006\" while the next says it \"peaked at 16.3 million members in 2006 and has fallen to roughly 13 million\" — that is a loss of over three million; reconcile. \"only 36% of Millennials (born 1981-1996) identify as Protestant or Catholic, compared to 67% of the Silent Generation\" does not match the Pew figures I know and needs a source. \"a culture that prizes individual authenticity\" trips the forbidden list in noun form; \"self-expression\" or Taylor's own \"the age of authenticity\" in quotes would be cleaner.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -11984,6 +12157,18 @@
           "authenticity"
         ],
         "crisisCare": "n/a"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "The contradictory SBC figures are reconciled to the page's own numbers (16.3M peak to roughly 13M): \"has lost roughly 1.3 million members since 2006\" became \"has lost more than three million members since its 2006 peak.\" The unsourced Pew generational percentages were removed and the sentence rewritten to the direction the page's other cited data supports: \"Pew Research has documented the same slope generation by generation: each cohort since the Silent Generation is less likely than the one before it to identify as Christian, and the drop is steepest among Millennials and Gen Z.\" Forbidden noun fixed: \"prizes individual authenticity\" became \"prizes self-expression\".",
+        "removedUnverifiable": [
+          "Pew Research found that only 36% of Millennials (born 1981-1996) identify as Protestant or Catholic, compared to 67% of the Silent Generation (born 1928-1945). Among Gen Z adults (born 1997-2012), early data suggests even lower religious affiliation.",
+          "The Southern Baptist Convention has lost roughly 1.3 million members since 2006. (replaced with the figure implied by the page's own 16.3M-to-13M numbers)"
+        ],
+        "leftForJames": [
+          "If James wants the generational percentages back, the sentence needs the actual Pew figures and year; I did not substitute numbers I could not verify."
+        ],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "page:client/src/pages/faq/WhyDoYoungPeopleLeaveChurch.tsx": {
@@ -11992,7 +12177,7 @@
       "words": 1604,
       "blocks": 16,
       "id": "page:client/src/pages/faq/WhyDoYoungPeopleLeaveChurch.tsx",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "Good diagnostic spine (\"The church lost them not by asking too much but by offering too little\"; \"The young just leave first\") and it refuses one-directional politics. Verify the claim that a \"2022 survey by the Survey Center on American Life found that the single most common reason young adults gave for leaving their childhood religion was that it became too focused on politics\" — my recollection is that ceasing to believe the teachings ranked first, with politics lower. \"unlocking keychain leadership\" is Fuller's own commitment name, but it is unmarked as a quotation and lands a forbidden word in the site's voice; put the phrase in quotes and attribute it. \"The Silent Generation produced the sexual revolution\" is contestable generational shorthand.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -12004,6 +12189,16 @@
           "unlocking"
         ],
         "crisisCare": "n/a"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "The flagged 2022 Survey Center on American Life claim was removed and the paragraph rewritten around the hole: \"...catastrophic for its relationship with young adults, and the data on this is unambiguous. A 2022 survey by the Survey Center on American Life found that the single most common reason... was that it became too focused on politics. This is not a vague complaint.\" became \"...catastrophic for its relationship with young adults. Ask them why they left and politics comes up early, and the complaint is not vague.\" Fuller's commitment name is now marked and attributed: \"First, unlocking keychain leadership:\" became \"First, what the Fuller researchers call \\\"unlocking keychain leadership\\\":\". The contestable \"The Silent Generation produced the sexual revolution.\" sentence was cut; the closer \"That distinction is everything.\" became \", and young adults could tell the difference.\"",
+        "removedUnverifiable": [
+          "A 2022 survey by the Survey Center on American Life found that the single most common reason young adults gave for leaving their childhood religion was that it became too focused on politics.",
+          "The Silent Generation produced the sexual revolution."
+        ],
+        "leftForJames": [],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "page:client/src/pages/history/HistoryEssay.tsx": {
@@ -12044,7 +12239,7 @@
       "words": 654,
       "blocks": 18,
       "id": "page:client/src/pages/landing/ChurchHurt.tsx",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The care standard is met: 988 is named at the top, external organizations are listed, forgiveness is not pressed (\"They do not ask you to forgive on someone else's timeline\"), and the door back to church is left open without pressure. Two copy fixes: the description doubles itself (\"...and the long road back. Essays on spiritual abuse, religious trauma, purity culture, and the long road to healing.\") — keep one; and \"give yourself permission to heal\" / \"it takes permission to be angry\" drift into counseling idiom the voice standard avoids — say the same thing plainly (anger is allowed; no one gets to set your timeline). The hero's \"naming it is the first step toward healing\" is close to the same register; consider ending on \"was not God.\"",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -12055,6 +12250,13 @@
         ],
         "forbiddenWords": [],
         "crisisCare": "ok"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "The doubled description (both SEOMeta and webPageSchema) now keeps only the first half: \"...and the long road back.\" The counseling idiom in the FAQ was replaced with plain speech: \"it takes permission to be angry... You do have to give yourself permission to heal.\" became \"the anger is allowed... You do not have to decide right now what you believe, and no one gets to set your timeline for deciding.\" The hero now ends on the weight: \"What happened to you in that church was not God. And naming it is the first step toward healing.\" became \"What happened to you in that church had a name, and it was not God.\" The 988 note, external organizations, and forgiveness-timeline copy are untouched.",
+        "removedUnverifiable": [],
+        "leftForJames": [],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "page:client/src/pages/landing/Deconstruction.tsx": {
@@ -12063,7 +12265,7 @@
       "words": 673,
       "blocks": 20,
       "id": "page:client/src/pages/landing/Deconstruction.tsx",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The hero and byline are right (\"the questions that scare the church are the same ones that make faith real\"), the Great Dechurching and Pew citations are real, and the FAQs are pastoral. Copy failures: \"does not require them to check their brain at the door\" and \"circle the wagons\" are stock idioms; the signup blurb \"No guilt. No conversion bait. Just honest theology.\" is a marketing fragment stack. Unlike its sibling FaithCrisis page, this doubt-facing landing offers no path to real help at all — a short pointer to a person, not only a reading list, belongs here.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -12075,6 +12277,13 @@
         ],
         "forbiddenWords": [],
         "crisisCare": "concern"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "Stock idioms replaced: \"check their brain at the door\" became \"stop thinking in order to keep believing\"; \"circle the wagons\" became \"defend itself against the people asking\". The signup fragment stack \"No guilt. No conversion bait. Just honest theology.\" became \"None of it is written to guilt you back into a pew or bait you toward a decision. It is theology that tells you the truth as far as the writer can see it.\" To close the care gap, two sentences were added to the end of the existing argument paragraph pointing to a real person: \"They are also only essays. If the taking-apart has become heavier than questions, talk to a real person: a pastor you still trust, a counselor, or, if it has turned into not wanting to be here, the 988 Suicide & Crisis Lifeline, by call or text.\"",
+        "removedUnverifiable": [],
+        "leftForJames": [],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "page:client/src/pages/landing/FaithCrisis.tsx": {
@@ -12115,7 +12324,7 @@
       "words": 692,
       "blocks": 20,
       "id": "page:client/src/pages/landing/HonestQuestions.tsx",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The FAQ answers are the real thing (\"If God cannot handle your questions, God is not God\"; \"a God who enters suffering rather than explaining it away. That is not a complete answer. It is the beginning of one\"). The page-furniture around them slips into ad copy: the \"No X. No Y. Just Z.\" formula runs twice (\"No cliches. No bait-and-switch. Just honest engagement\"; \"No guilt. No pressure. Just theology that takes your intelligence seriously\") and the meta line \"answered without flinching\" is a hype hook. Also check \"asked every one of these questions before he believed a word of the gospel\": the former-atheist fact is real, the \"every one of these questions\" claim is an extension James should confirm.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -12127,6 +12336,15 @@
         ],
         "forbiddenWords": [],
         "crisisCare": "n/a"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "Both copies of the meta line lost the hype hook: \"answered without flinching. Written by a pastor who came to faith from atheism.\" became \"answered at length by a pastor who came to faith from atheism.\" The hero's biographical overreach and fragment stack were rewritten: \"Written by a former atheist who asked every one of these questions before he believed a word of the gospel. No cliches. No bait-and-switch. Just honest engagement...\" became \"Written by a pastor who came to faith from atheism, and who carried questions like these before he believed a word of the gospel. The hardest objections to Christianity get engaged here without a cliche and without a bait-and-switch at the end.\" The signup's \"No guilt. No pressure. Just theology that takes your intelligence seriously.\" became \"Nothing here will guilt you or press you toward a decision; it assumes you are an adult and can weigh the argument yourself.\"",
+        "removedUnverifiable": [],
+        "leftForJames": [
+          "The hero now says he \"carried questions like these\" rather than \"asked every one of these questions\"; James should confirm even the softened version matches his story, or cut the clause to the bare former-atheist fact."
+        ],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "page:client/src/pages/landing/MarriageCrisis.tsx": {
@@ -12135,7 +12353,7 @@
       "words": 367,
       "blocks": 11,
       "id": "page:client/src/pages/landing/MarriageCrisis.tsx",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The help section is the best on the site: it names abuse as \"not a marriage problem to work through. It is a safety question, and it is a today conversation,\" and the hotline line \"for you even if you are only wondering whether it counts\" is real care. The problem is the stats copy above it: \"Marriage does not fail because two people are incompatible. It fails because two people stop doing the costly work of seeing each other\" is a universal cause that the page's own abuse paragraph refutes, and a spouse whose marriage ended by the other's abandonment or violence reads it as a verdict on them. Qualify it so the blame is not automatically shared. Minor: the book blurb (\"Before you lead a church, you lead a family\") is pitched at pastors on a page for anyone.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -12143,6 +12361,13 @@
         "stockPhrases": [],
         "forbiddenWords": [],
         "crisisCare": "concern"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "The universal-cause verdict is now qualified so blame is not automatically shared: \"Marriage does not fail because two people are incompatible. It fails because two people stop doing the costly work of seeing each other.\" became \"Most marriages that come apart do not fail because two people were incompatible. They fail because two people stopped doing the costly work of seeing each other. That is not every story. Some marriages end by one person's abandonment or violence, and nothing here hands that spouse a share of the blame. But for the marriage that is quietly going cold, the diagnosis holds.\" The First Flock blurb was widened past pastors: \"Before you lead a church, you lead a family...\" became \"Written for pastors, but not only for them. The people under your own roof are the first congregation anyone is given, and this book is about what it costs to care for them first.\" The help section and hotlines are untouched.",
+        "removedUnverifiable": [],
+        "leftForJames": [],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "page:client/src/pages/landing/ParentingStruggles.tsx": {
@@ -12185,7 +12410,7 @@
       "words": 409,
       "blocks": 14,
       "id": "page:client/src/pages/landing/PostChristian.tsx",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The argument block has a real thesis (\"Christianity is not dying. Something is dying\"), but the surrounding copy sells rather than states: \"Sixty essays. Seven tiers. The full story of how the most powerful religious movement in Western history is losing its grip\" is a fragment stack plus an overclaim, the anaphora triplet \"Written by a pastor. Written from inside the room. Written for anyone who refuses to settle for easy answers in either direction\" is exactly the generated-sounding symmetry the standard names, and \"No spam. No guilt\" is newsletter boilerplate. \"may be closer to the original thing than anything Christendom ever produced\" is a large historical verdict delivered as hero copy with no argument under it; either earn it or soften it. Confirm the series actually contains sixty live essays before the number stays.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -12198,6 +12423,15 @@
         ],
         "forbiddenWords": [],
         "crisisCare": "n/a"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "Hero fragment stack and overclaim rewritten: \"Sixty essays. Seven tiers. The full story of how the most powerful religious movement in Western history is losing its grip — and what, if anything, remains...\" became \"Sixty essays in seven tiers, tracing how the faith that shaped the West lost its cultural hold, and what, if anything, remains when the scaffolding falls.\" The unearned historical verdict is now offered as a claim to be argued: \"may be closer to the original thing than anything Christendom ever produced\" became \"may turn out to look more like the church before Constantine than the one Christendom built. That is a claim to be argued, not assumed, and the essays here try to earn it.\" The anaphora triplet became \"They were written by a working pastor from inside the room, for the reader who will not accept an easy answer from either direction.\" and \"No spam. No guilt.\" became \", and nothing else in your inbox.\" The seven tier arrays on the page list exactly sixty essays, so the count matches the page's own contents.",
+        "removedUnverifiable": [],
+        "leftForJames": [
+          "The page's tier arrays total sixty titles, but I did not confirm that all sixty slugs resolve to live essays; if any are unpublished, the count in the hero, meta, and schema should drop to match."
+        ],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "page:client/src/pages/leadership/BeforeYouPost.tsx": {
@@ -12222,7 +12456,7 @@
       "words": 433,
       "blocks": 10,
       "id": "page:client/src/pages/leadership/BudgetCalculator.tsx",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The voice is right (\"Show a church its budget and it will tell you what that church actually worships\"; \"A church with no reserve is one furnace away from a crisis\"). Two claims need grounding or removal: \"The ranges are guides drawn from healthy churches\" asserts an empirical source that is never named, and on a money tool the CLAUDE.md care standard asks for a plain \"this is not financial advice\" line, which \"not commandments\" does not supply. Name where the ranges come from or drop \"drawn from healthy churches\"; add the one-line disclaimer.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -12230,6 +12464,17 @@
         "stockPhrases": [],
         "forbiddenWords": [],
         "crisisCare": "n/a"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "The unnamed empirical source was removed and the money disclaimer added in one line: \"The ranges are guides drawn from healthy churches, not commandments.\" became \"The ranges are guides, not commandments, and none of this is financial advice; take the numbers to your treasurer and your elders before you take them to a vote.\"",
+        "removedUnverifiable": [
+          "The ranges are guides drawn from healthy churches"
+        ],
+        "leftForJames": [
+          "If the healthy-range percentages do come from a named source (a denominational benchmark, a published survey), James can name it and the 'drawn from' claim can return with the citation."
+        ],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "page:client/src/pages/leadership/DecisionLog.tsx": {
@@ -12494,7 +12739,7 @@
       "words": 537,
       "blocks": 18,
       "id": "page:client/src/pages/leadership/ServantLeadership.tsx",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The hero is in register and self-implicating (\"We assumed the basin and platformed the gift, and then acted surprised when the men we elevated could not carry the weight\"). The failure is slogan density and repetition: the thesis line \"He is not built in the spotlight. He is built in the years no one was watching\" is printed twice on the page (thesis band and QUOTES block), \"We assumed the basin and platformed the gift\" is also printed twice, and mark 2's verdict \"Character is the only credential that lasts\" sits a screen above the closer \"Character is the only competence that lasts.\" The QUOTES block is a stack of four aphorisms where the standard asks for one verdict earned by the argument. Dedupe and cut the quote stack to one line; the marks themselves can stay.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -12506,6 +12751,13 @@
         ],
         "forbiddenWords": [],
         "crisisCare": "n/a"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "The QUOTES block was cut from four aphorisms to one, \"The towel was the throne the whole time.\", which removes both duplicates (the thesis line \"He is not built in the spotlight...\" now appears only in the thesis band; \"We assumed the basin and platformed the gift\" only in the hero) and the near-duplicate of principle 03. Mark 2's verdict \"Character is the only credential that lasts.\" became \"The qualification is the man, not the gift.\" so it no longer collides with the closer \"Character is the only competence that lasts.\" The nine marks and five principles are otherwise untouched.",
+        "removedUnverifiable": [],
+        "leftForJames": [],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "page:client/src/pages/leadership/ServantLeadershipHandbook.tsx": {
@@ -12642,7 +12894,7 @@
       "words": 363,
       "blocks": 11,
       "id": "page:client/src/pages/nation/NationHub.tsx",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The hero argument is right and the statement band is a real verdict (\"the danger is never only the other side — it is how badly we want our own to be\"). Two copy failures: the hero closes on self-advertisement, \"This is the most careful, least tribal look this site can offer,\" which the standard reads as advertising the writer rather than clarifying the reader's world; and the policy card ends on a wink, \"and why both parties would hate it,\" which is tweet-shaped. Also note the scorecard card's \"The tally is meant to come out split\" (see the Scorecard entry) for what it admits about the tool.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -12653,6 +12905,15 @@
         ],
         "forbiddenWords": [],
         "crisisCare": "n/a"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "The hero's self-advertisement \"This is the most careful, least tribal look this site can offer at the Bible, the nation, and power.\" became \"What follows tries to look at the Bible, the nation, and power with the same instrument turned on every side, the writer's own included.\" The policy card's wink \"and why both parties would hate it.\" became \"and why neither party's platform could absorb it.\" The statement band was left as the note approved it.",
+        "removedUnverifiable": [],
+        "leftForJames": [
+          "The scorecard card still says \"The tally is meant to come out split.\" The note cross-referenced this as an admission about the tool's design rather than an edit instruction; if the scorecard is in fact built to balance, the sentence is honest and the tool is the problem, and if it is not, the line should say the tally falls where the evidence puts it. That is a ruling on the tool, not a copy fix."
+        ],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "page:client/src/pages/nation/NationPolicy.tsx": {
@@ -12677,7 +12938,7 @@
       "words": 233,
       "blocks": 9,
       "id": "page:client/src/pages/nation/NationScorecard.tsx",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "One honesty problem in one sentence. The tally caption reads \"However it splits, read it as the verdict it is meant to be,\" and the hub card for this tool says \"The tally is meant to come out split.\" A page billed as \"An even-handed measure\" cannot also tell the reader its result was decided before the themes were scored; that is the symmetrical-criticism-by-design the standard warns against. Keep the true half (\"No column adds up to the kingdom of God\") and let the verdict be what the themes show, not what the tool was built to produce.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -12687,6 +12948,15 @@
         ],
         "forbiddenWords": [],
         "crisisCare": "n/a"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "Removed the line that told the reader the result was decided in advance. Before: \"However it splits, read it as the verdict it is meant to be. No column adds up to the kingdom of God.\" After: \"However it splits, the split is what the themes show, not a side to cheer for. No column adds up to the kingdom of God.\" The true half is kept; the tally now reports what the themes score rather than what the tool was built to produce.",
+        "removedUnverifiable": [],
+        "leftForJames": [
+          "The hub card in client/src/pages/ToolsHub.tsx (not in my assignment) still says \"The tally is meant to come out split\"; the file's own header comment says the same. Both should be brought in line with this page's caption."
+        ],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "page:client/src/pages/pillars/AfterChristendomPillar.tsx": {
@@ -12695,7 +12965,7 @@
       "words": 70,
       "blocks": 3,
       "id": "page:client/src/pages/pillars/AfterChristendomPillar.tsx",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The argument is in register and self-implicated (\"I am not neutral here. I pastor a church that remembers when the culture did half its work\"), and it distinguishes Christendom from Christianity fairly before the verdict. Two mechanical fixes: em-dashes are the standard connector here (five across three short paragraphs plus the blurbs), and two lines are cleverness for its own sake: \"decided it would look good on a shield\" and the Long Arc blurb \"The church has ended before. It hasn't,\" which reads as a riddle rather than a claim. The triplet \"out-lived, out-loved, and finally out-lasted\" strains for its middle term.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -12705,6 +12975,13 @@
         ],
         "forbiddenWords": [],
         "crisisCare": "n/a"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "Removed all six em-dash connectors across the three paragraphs and two blurbs, replaced \"decided it would look good on a shield\" with the plain \"carried it into battle\", rewrote the Long Arc riddle (\"The church has ended before. It hasn't.\") as a claim (\"The church has been pronounced finished more than once, and the timeline kept going.\"), and reduced the strained triplet \"out-lived, out-loved, and finally out-lasted an empire\" to \"outlived an empire\". Kept \"That world is not dying. It is dead\" as the one Not X. Y. hinge; the self-implicating third paragraph is untouched except for its final em-dash.",
+        "removedUnverifiable": [],
+        "leftForJames": [],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "page:client/src/pages/pillars/CaptureByTheLeft.tsx": {
@@ -12761,7 +13038,7 @@
       "words": 45,
       "blocks": 2,
       "id": "page:client/src/pages/pillars/ThePastoralAngle.tsx",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The voice is right and the pain is honored without being resolved. Two fixable problems. First, biography: \"I have been on both sides of the counseling appointment\" and \"I have come apart quietly on Saturday nights and stood up anyway on Sunday mornings\" are specific personal claims not among the facts the audit permits (atheism, no father, five sons, FBC Fenton); James must confirm them in his own words or the sentences come out. Second, this landing names doubt, burnout, grief, and a pastor who \"could not get out of bed on Monday,\" then offers only self-scored instruments, one of them pitched on fear (\"before the congregation finds out the hard way\"); add one line pointing to a person or the Find Help page so the path to real help is visible on the page that names the crisis.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -12771,6 +13048,19 @@
         ],
         "forbiddenWords": [],
         "crisisCare": "concern"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "Cut the two unpermitted biographical claims. Before: \"I have been on both sides of the counseling appointment. I carry things people have told me that I can never repeat, and I have come apart quietly on Saturday nights and stood up anyway on Sunday mornings — and I know exactly how much of that was faithfulness and how much was the fear of being found out.\" After: \"Fifteen years of pastoring one church means I carry things people have told me that I can never repeat, and I know how much of what passes for faithfulness on a Sunday morning is really the fear of being found out.\" Replaced the fear-pitched burnout blurb (\"before the congregation finds out the hard way\") with \"while there is still time to do something about it\", and added a closing line pointing a reader in crisis to the Find Help page (\"It exists to get you to a real person.\").",
+        "removedUnverifiable": [
+          "I have been on both sides of the counseling appointment.",
+          "I have come apart quietly on Saturday nights and stood up anyway on Sunday mornings — and I know exactly how much of that was faithfulness and how much was the fear of being found out."
+        ],
+        "leftForJames": [
+          "If either removed sentence is true and you want it back, it needs your own words; I could not confirm it from the permitted facts.",
+          "The Find Help pointer is plain text (\"go to the Find Help page first\") because making it a link would require adding a wouter Link import to this file, which is a code change. Worth doing if you want it clickable."
+        ],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "page:client/src/pages/plans/CarePlan.tsx": {
@@ -12779,7 +13069,7 @@
       "words": 536,
       "blocks": 11,
       "id": "page:client/src/pages/plans/CarePlan.tsx",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The shell is calm and the care contract is kept: the JSON careNote renders and <CrisisHelp /> sits under every plan, so help stays visible. One line of sentimental filler to cut: the completion state \"All eight weeks walked. Well done is an understatement\" is fitness-app cheer, not this voice; \"All eight weeks walked\" alone carries the weight. Week bodies, intro, and careNote come from /plans/*.json and were not in this batch.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -12789,6 +13079,13 @@
         ],
         "forbiddenWords": [],
         "crisisCare": "ok"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "Cut the fitness-app tail from the completion state. Before: \"All eight weeks walked. Well done is an understatement.\" After: \"All eight weeks walked.\"",
+        "removedUnverifiable": [],
+        "leftForJames": [],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "page:client/src/pages/prophetic/PropheticConsistency.tsx": {
@@ -13037,7 +13334,7 @@
       "words": 752,
       "blocks": 17,
       "id": "page:client/src/pages/table/Table.tsx",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "Substance is right (\"The table was never ours to charge admission to\" is a real verdict) but the mechanics fall into the older gait: em-dashes as the standard connector (\"had no building — it met\", \"no license to buy — only\", \"walks them — but\", \"free to use — in your church\", \"— it exists to make you the host\"), and the fragment stack \"No stage. No expert required. One table, an open Bible, and someone willing to go first\" is then repeated almost verbatim in the StatementBand two sections later. The SEO line \"A one-place engine for making disciples\" is corporate church language, and \"In a country that has stopped coming to the sanctuary\" is a sweeping claim stated as settled fact.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -13048,6 +13345,13 @@
         ],
         "forbiddenWords": [],
         "crisisCare": "n/a"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "Replaced \"A one-place engine for making disciples\" (SEO description and structured data) with \"One place for making disciples where people actually live\"; rewrote the hero so the sweeping \"In a country that has stopped coming to the sanctuary, that older model is not a fallback. It is the way forward.\" became \"In a country where fewer people are willing to walk through a sanctuary door, a church that goes back to the living room is not improvising so much as remembering where it started.\"; removed the five em-dash connectors (the first-church clause now uses a semicolon, the StatementBand a colon, the leader-study line a period, the others a comma or nothing); and de-duplicated the fragment stack so the hero now reads \"None of it needs a stage or a credential, only a table, a Bible, and a host willing to open the door\" while the StatementBand keeps the pull-quote version.",
+        "removedUnverifiable": [],
+        "leftForJames": [],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "page:client/src/pages/table/TableStudy.tsx": {
@@ -13072,7 +13376,7 @@
       "words": 773,
       "blocks": 21,
       "id": "page:client/src/pages/tools/BibleOnTopic.tsx",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "Most framings are compressed Bell (\"cleverness, which is folly that has learned to dress well\"; \"Scripture meets the anxious with presence, not a scolding\"). Two fixes: the Friendship framing opens \"Scripture knows you become the average of the people you keep close\", which is the Jim Rohn self-help slogan passed off as what Scripture says; and the hero's \"the heart of the passages worth knowing by heart\" stumbles over its own repetition. Anxiety and suffering framings honor real pain without validating despair.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -13082,6 +13386,15 @@
         ],
         "forbiddenWords": [],
         "crisisCare": "ok"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "Removed the Jim Rohn slogan from the Friendship framing. Before: \"Scripture knows you become the average of the people you keep close.\" After: \"Scripture knows the company you keep will shape you, for wisdom or for harm.\" (which is what Proverbs 13:20 in the same list actually says). Fixed the hero stumble \"the heart of the passages worth knowing by heart\" to \"the passages worth knowing by heart, each reduced to its center line\".",
+        "removedUnverifiable": [
+          "you become the average of the people you keep close (self-help slogan presented as what Scripture says)"
+        ],
+        "leftForJames": [],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "page:client/src/pages/tools/BibleReference.tsx": {
@@ -13090,7 +13403,7 @@
       "words": 18915,
       "blocks": 401,
       "id": "page:client/src/pages/tools/BibleReference.tsx",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "Overwhelmingly strong: fair before sharp on every passage, honest \"How this gets misused\" sections, real interpretive ranges. Three fixes. The anxiety topic asserts twice that \"The Bible's most repeated command is 'Do not fear'\" and \"commands 'do not fear' more than 300 times\", a circulating claim that cannot be verified as stated; per the standard it comes out or gets rewritten around the hole. The Sabbath takeaway ends \"Resting is an act of faith that says 'God has this handled'\", which is the forbidden \"God's got this\" in a thin disguise. The sexuality topic steelmans both readings and then declines to name where the author lands or what order of question it is, which the contested-doctrine protocol requires. Grief, suffering, and anxiety sections honor pain and name medication as not a failure of faith.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -13103,6 +13416,18 @@
           "God has this handled (= \"God's got this\")"
         ],
         "crisisCare": "ok"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "Removed both unverifiable fear-count claims: the introduction's \"The Bible's most repeated command is 'Do not fear'\" is now \"The Bible returns to 'Do not fear' again and again\", and the takeaway's \"commands 'do not fear' more than 300 times\" is now \"keeps saying 'do not fear,' and it never once says 'do not feel.'\" Replaced the Sabbath takeaway's disguised \"God's got this\" (\"Resting is an act of faith that says 'God has this handled.'\") with \"Resting is an act of faith: it admits that the world kept turning before you woke up and will keep turning after you stop.\" In the sexuality topic, added the order-of-question sentence the contested-doctrine protocol requires (no creed settles it; not a matter of taste either; it touches body, marriage, obedience and divides churches at cost) without asserting where the author lands.",
+        "removedUnverifiable": [
+          "The Bible's most repeated command is 'Do not fear'",
+          "The Bible commands 'do not fear' more than 300 times"
+        ],
+        "leftForJames": [
+          "The sexuality topic still steelmans both readings and does not name where you land or the tradition it comes from. Your doctrinal position is not among the facts I am permitted to assert, and the site's homosexuality page does not state it in a form I could quote, so that sentence needs your own words."
+        ],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "page:client/src/pages/tools/BibleStudy.tsx": {
@@ -13127,7 +13452,7 @@
       "words": 3808,
       "blocks": 141,
       "id": "page:client/src/pages/tools/ChurchHealth.tsx",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "Sharp and often true (\"the budget is a confession\"; \"If that terrifies you, the problem is not their readiness. It is your control\"), but it runs entirely on the older gait the voice standard now ranks below developed paragraphs: aphoristic antithesis stacked line after line (\"Confirmation is comfortable. Formation is costly. Formation is the task.\"; \"Depth produces partnership. Breadth produces tourism.\"; \"They are not performers. They are pastoral theologians with instruments.\") and corporate leadership vocabulary the standard names as avoid (\"leadership pipeline\", \"deployed\", \"develop the people who execute it\", \"one-page leadership development plan\"). A pastor writing to pastors never once says \"we\"; every indictment is \"your church\". The lowest band handles the pastor well: \"naming it is the first step\" and a visible path to outside help.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -13140,6 +13465,13 @@
         ],
         "forbiddenWords": [],
         "crisisCare": "ok"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "Replaced the corporate vocabulary (\"leadership pipeline\" x2, \"teaching pipeline\", \"deployed\" x2, \"develop the people who execute it\", \"one-page leadership development plan\", \"desperately needed\", \"desperate for a discipleship framework\") with plain pastoral language (\"a clear way of raising leaders\", \"sent\", \"form the people who will carry it out\", \"Write down, on one page, who you are raising up\", \"Plenty of churches are still handling money in the dark\"). Rewrote the three named antithesis stacks as developed sentences: \"Confirmation is comfortable. Formation is costly. Formation is the task.\" became \"...and most of us drift there because confirmation is comfortable and formation costs the preacher first.\"; \"Depth produces partnership. Breadth produces tourism.\" became \"Depth in one place produces partnership; a dozen shallow commitments produce mission tourism.\"; \"They are not performers. They are pastoral theologians with instruments.\" became \"...closer to pastoral theologian with an instrument than to performer.\" Added first-person-plural self-implication in two low-band lines (\"Most of us have preached that sermon more than once.\"; \"the budget is a confession, and most of us would rather not read ours aloud.\"). The crisis band and its path to outside help are untouched.",
+        "removedUnverifiable": [],
+        "leftForJames": [],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "page:client/src/pages/tools/ConflictGuide.tsx": {
@@ -13148,7 +13480,7 @@
       "words": 3757,
       "blocks": 131,
       "id": "page:client/src/pages/tools/ConflictGuide.tsx",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "Crisis handling is exemplary: the safety notice (\"that is not a conflict to resolve. It is a situation to get safe from\") and the Domestic Violence Hotline sit before any step, and the betrayal track says plainly \"Do not skip professional help.\" One stock line to cut: \"Clarity is kindness\" is the Brené Brown slogan. The \"not X. It is Y.\" construction is the default rhythm of nearly every warning (\"is not a conversation. It is a hostage negotiation\"; \"is not stewardship. It is control\"; \"is not virtue. It is a pattern\"), which the standard lists as a tic once its work is done; thin a third of them. Otherwise the voice is pastoral and precise.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -13159,6 +13491,13 @@
         ],
         "forbiddenWords": [],
         "crisisCare": "ok"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "Cut the two stock slogans: \"Clarity is kindness.\" became \"so that your spouse has something they can actually do\", and \"Let good enough be good enough.\" became \"A dish washed differently is still a dish washed.\" Thinned nine of the roughly twenty \"is not X. It is Y.\" warnings into full sentences, including the three the notes quoted: \"is not a conversation. It is a hostage negotiation\" is now \"turns a marriage into a hostage negotiation, and it will damage the marriage more than the in-law ever could\"; \"is not stewardship. It is control\" is now \"whatever it gets called, it is control rather than stewardship\"; \"is not virtue. It is a pattern\" is now \"is a pattern, not a virtue, and if you never ask for help...\". The safety notice, the Domestic Violence Hotline, and \"Do not skip professional help\" are untouched.",
+        "removedUnverifiable": [],
+        "leftForJames": [],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "page:client/src/pages/tools/DeepBibleCompanion.tsx": {
@@ -13167,7 +13506,7 @@
       "words": 37024,
       "blocks": 874,
       "id": "page:client/src/pages/tools/DeepBibleCompanion.tsx",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The scholarship is careful and steelmanned (the satan as \"prosecuting attorney, not a fallen angel — at least in this text\"), but several fixable failures: \"God moved into the neighborhood\" is Eugene Peterson's Message rendering of John 1:14 used without attribution; \"Jeremiah 29:11 ... is the most quoted verse in America\" is unverifiable as stated; \"The emotional authenticity makes it the model\" uses a forbidden word; the SEO promise \"PhD-level depth made accessible\" and the hero's \"No pastor required. No seminary required\" are hype hooks, the latter an odd line for a pastor's platform. The paraphrase blocks run on fragment stacks and em-dashes (\"Not command. Not demand. Speak.\"; \"Not guilty. Period.\") as the default gait rather than at hinges. \"And here is the scandal:\" is signposting.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -13182,6 +13521,17 @@
           "authenticity"
         ],
         "crisisCare": "n/a"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "Attributed the Message rendering (\"God, as Eugene Peterson rendered it in The Message, moved into the neighborhood.\"); removed the unverifiable superlative so Jeremiah 29:11 \"is printed on coffee mugs, graduation cards, and Instagram posts\" rather than \"is the most quoted verse in America\"; replaced the forbidden \"emotional authenticity\" with \"The rawness of it\"; replaced the SEO hook \"PhD-level depth made accessible\" with \"Serious depth in plain language\" and the hero's \"No pastor required. No seminary required. Just you, the text, and the tools\" with \"built so an ordinary reader with an open Bible can follow the argument all the way down\"; cut the signpost \"And here is the scandal:\"; and rewrote four fragment-stack paraphrases as sentences (\"Not command. Not demand. Speak.\"; \"No condemnation. Period.\"; \"Not a song. Not a feeling. Your life.\"; \"Not sick. Not struggling. Dead.\"), keeping one Not X. Y. hinge in the Romans 8 paraphrase.",
+        "removedUnverifiable": [
+          "Jeremiah 29:11 ... is the most quoted verse in America"
+        ],
+        "leftForJames": [
+          "Line 1477 still says Philippians 4:13 \"has become one of the most misquoted verses in the Bible\"; the notes did not flag it and it is hedged with \"one of\", so I left it, but it is the same family of claim."
+        ],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "page:client/src/pages/tools/DiscipleshipTable.tsx": {
@@ -13190,7 +13540,7 @@
       "words": 981,
       "blocks": 33,
       "id": "page:client/src/pages/tools/DiscipleshipTable.tsx",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "Warm and concrete where it counts (\"let them watch you live an ordinary, hopeful, struggling Christian life\"; \"The goal is not a bigger table but more tables\"). Fixes: \"Belonging comes before believing\" and \"Come as you are\" are church-culture stock; the hero's \"You already have what you need\" is generic inspiration; two invitation texts end questions with periods (\"Would you come.\" \"Are you in.\"), which reads as a copy error in a sentence meant to be sent to a neighbor; \"reproducing plan\" is repeated as jargon in SEO, hero, and body.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -13202,6 +13552,13 @@
         ],
         "forbiddenWords": [],
         "crisisCare": "n/a"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "Removed the church-culture stock: the seekers' invitation no longer ends \"Come as you are.\", and its focus opens \"Let them belong at your table long before anyone asks them to believe anything.\" instead of \"Belonging comes before believing.\" Fixed the two invitation questions to end with question marks (\"Would you come?\" / \"Are you in?\"). Replaced the hero's \"You already have what you need.\" with \"only a table, a meal, and the willingness to open a Bible in front of people\", and reduced \"reproducing plan\" from three uses to none (SEO: \"a plan ... and how to help it multiply\"; hero: \"a complete plan built to be passed on\"; body and copied plan text: \"each one able to start another\").",
+        "removedUnverifiable": [],
+        "leftForJames": [],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "page:client/src/pages/tools/EmotionalHealth.tsx": {
@@ -13210,7 +13567,7 @@
       "words": 2427,
       "blocks": 85,
       "id": "page:client/src/pages/tools/EmotionalHealth.tsx",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "Crisis care is the best on the site: the lowest band says \"A score in this range is a reason to talk to a real person, not just to try harder\" and \"if the depletion has turned into not wanting to be here, that is not something to carry alone for another day\", with 988 and a counselor link right there. A few stock lines to fix: \"Emotional health is not a destination. It is a direction\"; \"your nervous system has been hijacked by a device\"; and in the depleted band \"They will cost you your health, your relationships, or your faith\" immediately followed by \"This is not a warning. It is an invitation\", which contradicts itself and lands a prophecy of loss on the reader least able to carry it.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -13222,6 +13579,13 @@
         ],
         "forbiddenWords": [],
         "crisisCare": "ok"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "Replaced the three stock lines: \"Emotional health is not a destination. It is a direction.\" became \"That work is never finished in this life, and it does not need to be. It needs to be started.\"; \"your nervous system has been hijacked by a device\" became \"how thoroughly the phone has trained you to reach for it\"; \"You have permission to stop.\" became \"Stopping at the end of a day is not quitting; it is keeping the pattern he set.\" In the Approaching Burnout band, removed the self-contradicting prophecy of loss. Before: \"They will cost you your health, your relationships, or your faith. This is not a warning. It is an invitation.\" After: \"That is not a verdict on you; it is the reason this page will point you to a real person before it points you to a practice.\" The 988 line, the counselor link, and \"talk to a real person\" are untouched.",
+        "removedUnverifiable": [],
+        "leftForJames": [],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "page:client/src/pages/tools/FamilyDevotionBuilder.tsx": {
@@ -13230,7 +13594,7 @@
       "words": 9773,
       "blocks": 195,
       "id": "page:client/src/pages/tools/FamilyDevotionBuilder.tsx",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The devotion bodies are the mature register done well at every age band (\"greed wearing a choir robe\"; \"History is not a treadmill. It is a pregnancy\"; \"Love without obedience ... is not love. It is a mood\"). Fixes: \"The philosopher Charles Taylor calls this the exhausting condition of the modern self\" attributes near-quoted wording Taylor does not use; offer it as paraphrase or cut the name. \"Let that settle\" in the finished-series message is \"Let that sink in\" by another name. Signposting recurs (\"Here is the hard part\", \"But here is the secret\", \"Here is what forgiveness is not\", \"Here is what the farmer knows\"). \"your generation ... reports the least optimism\" is a statistic without a source. SEO's \"in seconds\" is a hype hook.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -13244,6 +13608,16 @@
         ],
         "forbiddenWords": [],
         "crisisCare": "n/a"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "Removed four signposting openers (\"Here is the hard part\" -> \"The hard part is that most of us...\", \"Here is what forgiveness is not\", \"But here is the secret\", \"Here is what the farmer knows\"), cut the Charles Taylor name from a near-quote he does not use (now \"That is the exhausting condition of the modern self, endlessly performing an identity it also has to invent\"), removed the sourceless optimism statistic, dropped \"in seconds\" from the SEO description, replaced \"Let that settle\" with \"That is not a small thing\" in the finished-term message, and \"the sweet spot\" with \"the range that works best\".",
+        "removedUnverifiable": [
+          "\"The philosopher Charles Taylor calls this the exhausting condition of the modern self\" (attribution removed; idea kept unattributed)",
+          "\"which is why your generation, with more evidence scrolling past hourly than any generation in history, reports the least optimism\" (rewritten as \"you have more of that evidence scrolling past you every hour than your parents ever did\")"
+        ],
+        "leftForJames": [],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "page:client/src/pages/tools/FinancialHealth.tsx": {
@@ -13252,7 +13626,7 @@
       "words": 2751,
       "blocks": 105,
       "id": "page:client/src/pages/tools/FinancialHealth.tsx",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "Diagnosis is honest and theological (\"Financial competence without generosity is just accumulation with a Bible verse attached\"). Fixes: CLAUDE.md requires money pages to say plainly this is not financial advice, and no such line appears in the reader-facing prose; the lowest band recommends \"a Dave Ramsey class at your church\", a named commercial program the platform should not endorse in a results screen; stock reassurance in \"You are not behind. You are where you are\" and \"Generosity is a muscle\"; and \"The fact that you are here, taking this assessment, suggests you are ready for the next step\" flatters the reader. Path to help (financial counselor, trusted mentor) is visible.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -13265,6 +13639,13 @@
         ],
         "forbiddenWords": [],
         "crisisCare": "ok"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "Added the plain not-financial-advice line to the intro paragraph (\"It is not financial advice; for decisions about debt, investments, or taxes, talk to someone qualified who knows your situation.\"); replaced \"a Dave Ramsey class at your church\" with \"a class at your church on handling money\"; rewrote the stock reassurances (\"Generosity is a muscle. It atrophies...\" -> \"Generosity is learned by giving, not by intending to give\"; \"You are not behind. You are where you are\" -> the feeling is manufactured by people who do not know your life); cut \"Stay vigilant\"; replaced the flattery line \"The fact that you are here, taking this assessment, suggests you are ready\" with \"The gap will not close on its own. Pick the category where the distance is widest and start there.\" The path to help (counselor, mentor) is untouched.",
+        "removedUnverifiable": [],
+        "leftForJames": [],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "page:client/src/pages/tools/LifeAudit.tsx": {
@@ -13273,7 +13654,7 @@
       "words": 4711,
       "blocks": 161,
       "id": "page:client/src/pages/tools/LifeAudit.tsx",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The interpretation and next-step copy runs on the fragment-stack gait the voice standard retires: \"This is not a moral failing. It is a diagnostic.\" / \"Not eloquent prayer. Honest prayer.\" / \"Not tomorrow. Today.\" / \"Depth is not found. It is built\" recur across nearly every block until the move is a tic, and several closers are hype (\"That sentence changes the trajectory,\" \"It will tell you everything,\" \"would change everything else\"). \"You are doing the work that most people avoid\" is therapy-speak, and the Strained band diagnoses the reader with a condition they never named: \"The good news is that you took this assessment, which means the denial is breaking.\" The SEO description promises \"eight life areas\" and lists seven. The crisis band does keep a path to help visible (\"a counselor, a pastor, a trusted friend... Do not try to do this alone\").",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -13288,6 +13669,13 @@
           "do the work (\"You are doing the work that most people avoid\")"
         ],
         "crisisCare": "concern"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "Thinned the fragment-stack gait to full sentences across the interpretation and next-step blocks (\"This is not a moral failing. It is a diagnostic\" -> \"Read that as a diagnosis rather than a moral failing\"; \"Not eloquent prayer. Honest prayer\"; \"Not tomorrow. Today\"; \"Not a lecture. A question\"; \"Depth is not found. It is built\"; \"Not a text\"; \"Not 'fine.'\"), keeping \"The question is not whether you are a bad Christian. The question is whether you are starving and calling it fine\" as the one hinge. Cut the hype closers (\"That sentence changes the trajectory\" -> \"The first sentence is the hard one; the rest is a conversation\"; \"It will tell you everything\" -> \"more than you expect\"; \"would change everything else\"), the therapy-speak (\"You are doing the work that most people avoid\" -> \"You have kept the practices most people let slide\"), the reader-diagnosing line \"which means the denial is breaking\", and \"Hear this:\" in the crisis band while leaving its counselor/pastor/friend path intact. The SEO description listed seven areas under \"eight\"; the eighth (emotional health) exists in the tool, so it was added to the list rather than changing the count.",
+        "removedUnverifiable": [],
+        "leftForJames": [],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "page:client/src/pages/tools/MarriageAssessment.tsx": {
@@ -13296,7 +13684,7 @@
       "words": 2493,
       "blocks": 102,
       "id": "page:client/src/pages/tools/MarriageAssessment.tsx",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "Same antithesis tic as the Life Audit (\"Do not demand trust. Earn it.\" / \"Not as punishment -- as a declaration\" / \"This is not a verdict -- it is a diagnosis. And a diagnosis is a gift\"), plus corporate filler (\"This is not a crisis -- it is an opportunity\") and superlative hype (\"the most courageous thing a married person can do,\" \"the difference between a good marriage and a great one\"). \"These small gestures rebuild the neural pathways of connection\" is an unverifiable science claim doing rhetorical work. The distress band is handled well: it refuses despair (\"this assessment is not the final word\") and names a concrete path (\"Contact a licensed marriage counselor this week\"), though a marriage-in-trouble page could say in one line that where there is abuse, safety comes before couples counseling. Gary Chapman citation is real.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -13308,6 +13696,15 @@
         ],
         "forbiddenWords": [],
         "crisisCare": "ok"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "Kept \"Do not demand trust. Earn it.\" as the single hinge and rewrote the rest of the antithesis tic into full sentences (\"Not as punishment -- as a declaration\" folded into one sentence; \"This is not a verdict -- it is a diagnosis. And a diagnosis is a gift\" -> \"Read that as a diagnosis rather than a verdict; a diagnosis tells you where to focus\"; \"This is not a crisis -- it is an opportunity\" -> \"it is not a crisis, but it is not a place to settle either\"). Cut the superlatives (\"the most courageous thing a married person can do\" -> \"one of the braver things a married person does\"; \"the difference between a good marriage and a great one\" -> \"on different ground from one that only talks well\") and the science claim about neural pathways. In the distress band, removed \"Hear this clearly:\", kept the licensed-counselor-this-week instruction, and added the safety line: \"if there is abuse in your home, your safety comes before couples counseling. Call the National Domestic Violence Hotline at 1-800-799-7233 or text START to 88788, any hour\" (same number the site's MarriageCrisis page uses).",
+        "removedUnverifiable": [
+          "\"These small gestures rebuild the neural pathways of connection\" (now \"Small gestures like these rebuild a closeness that words alone cannot\")"
+        ],
+        "leftForJames": [],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "page:client/src/pages/tools/ParentingGuide.tsx": {
@@ -13316,7 +13713,7 @@
       "words": 5823,
       "blocks": 124,
       "id": "page:client/src/pages/tools/ParentingGuide.tsx",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The strongest of the assessment set: developed paragraphs, fair before sharp (the young-adult section takes the leavers' critiques seriously), real citations (Numbers 6, Lewis, Bonhoeffer, Psalm 13). What needs trimming is the slogan habit at section ends: \"Cool expires. Real endures.\", \"Not a lesson. A connection.\", \"Not as curriculum. As wonder.\", and corporate phrasing like \"relational infrastructure.\" \"Your suffering, handled with faith, is the most powerful sermon you will ever preach\" and \"Validation before theology\" are the register slipping toward inspirational filler; \"Give them room to do the hard work\" brushes therapy-speak.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -13330,6 +13727,13 @@
           "do the hard work (borderline)"
         ],
         "crisisCare": "n/a"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "Retired the section-ending slogans as full sentences: \"Cool expires. Real endures.\" -> \"Cool has a short shelf life, and what is real outlasts it\"; \"Not a lesson. A connection.\" and \"Not as curriculum. As wonder.\" folded into their sentences; \"relational infrastructure\" -> \"the relationship that spiritual questions will one day need\"; \"Validation before theology\" -> \"a fear that has been named can be answered, and one that has been talked over cannot\"; \"the most powerful sermon you will ever preach\" -> \"How you carry your own suffering will teach them more about faith than anything you say about it\"; \"do the hard work\" -> \"wrestle with it\".",
+        "removedUnverifiable": [],
+        "leftForJames": [],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "page:client/src/pages/tools/ParentingVerses.tsx": {
@@ -13370,7 +13774,7 @@
       "words": 6401,
       "blocks": 195,
       "id": "page:client/src/pages/tools/PastorBurnout.tsx",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The crisis architecture is right and should not be touched: the lowest band honors the pain, refuses the despair (\"The exhaustion is real. The voice that says it will never lift is not telling you the truth\"), alludes to self-harm without specifics, and puts 988 and named counseling paths first. The recovery-step copy needs work: unsourced statistics stated as fact (\"the single greatest predictor of pastoral failure,\" \"the leading cause of forced pastoral exits,\" \"the most common and most devastating form of pastoral burnout,\" \"movement is the only thing that breaks the neurological loop\"), hype (\"Healthy board relationships are ministry gold... Many pastors would trade their salary for what you have\"), and the fragment tic (\"Gently. Firmly. Without choosing a side. That is the prophetic task.\"). \"Give yourself permission to feel nothing in response to congregational need\" should be reworded; it reads as counsel to go numb. Scripture is quoted NIV with a ScriptureNote, which is fine so long as the note names the translation.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -13382,6 +13786,21 @@
         ],
         "forbiddenWords": [],
         "crisisCare": "ok"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "Left the crisis band (988, counseling paths, \"You are not failing. You are drowning\") untouched per the notes. In the recovery steps, removed the four unsourced statistics stated as fact and rewrote each around the hole; cut the hype (\"ministry gold... Many pastors would trade their salary\" -> \"A healthy board relationship is rarer than it should be... Plenty of pastors carry a weight here that you have been spared\"); joined the fragment tic (\"Gently. Firmly. Without choosing a side.\" -> \"gently and firmly, without choosing a side\", keeping \"That is the prophetic task\"); replaced \"fires to extinguish\" with plain urgency; and reworded the numbing counsel to \"give yourself permission not to respond to every congregational need\".",
+        "removedUnverifiable": [
+          "\"This is the single greatest predictor of pastoral failure\" (now \"Isolation is where most of the other failures begin\")",
+          "\"Dysfunctional board relationships are the leading cause of forced pastoral exits\" (now \"Trust between a pastor and a board, once collapsed, does not repair itself\")",
+          "\"This is the most common and most devastating form of pastoral burnout\" (now \"This may be the hardest form of pastoral burnout to see\")",
+          "\"movement is the only thing that breaks the neurological loop\" (now \"movement is one of the few things that loosens it\")"
+        ],
+        "leftForJames": [
+          "The crisis-band opener \"Hear this: you are not failing. You are drowning.\" still contains the stock turn \"Hear this:\" that the signals list; I left it because the notes say the lowest band should not be touched. Removing the two words would not weaken the care if you want it gone.",
+          "The ScriptureNote is rendered with rendering=\"unverified\"; the notes say the NIV quotations are fine so long as the note names the translation, which is a component concern, not copy."
+        ],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "page:client/src/pages/tools/PrayerGenerator.tsx": {
@@ -13390,7 +13809,7 @@
       "words": 2722,
       "blocks": 56,
       "id": "page:client/src/pages/tools/PrayerGenerator.tsx",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The prayers are earnest, first-person, and mostly land (\"I'm not going to pretend this is easy. What I will do is stay\"). One stock Christian slogan must go: \"You don't call the qualified — You qualify the called.\" The SEO tagline \"Theologically rich, personally meaningful\" is marketing copy, and a few lines lean on clever symmetry (\"Slow me down enough to hear You. Speed me up enough to obey\"). Scripture allusions (2 Corinthians 12:9, Mark 9:24, Psalm 50:10, Matthew 10:31) are accurate.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -13401,6 +13820,15 @@
         ],
         "forbiddenWords": [],
         "crisisCare": "ok"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "Cut the slogan \"You don't call the qualified — You qualify the called\" and replaced it with \"remind them that You have always worked through people who felt the same, and that their sufficiency comes from You and not from themselves\" (2 Corinthians 3:5 allusion); flattened the symmetrical \"Slow me down enough to hear You. Speed me up enough to obey\" to \"Slow me down enough to hear You, and then give me the will to do what I hear\"; replaced the SEO tagline \"Theologically rich, personally meaningful\" with \"each one honest enough to pray in your own words\".",
+        "removedUnverifiable": [],
+        "leftForJames": [
+          "Two pre-existing ESLint warnings (unused useMemo import here, unused useEffect in ScriptureMemory.tsx) predate this work and fail --max-warnings 0; fixing them means touching imports, which was off-limits for this pass."
+        ],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "page:client/src/pages/tools/Proverbs31.tsx": {
@@ -13409,7 +13837,7 @@
       "words": 208,
       "blocks": 7,
       "id": "page:client/src/pages/tools/Proverbs31.tsx",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The hero makes a historical claim the site cannot stand behind: \"the way the church has read Proverbs for centuries\" (SEO: \"the way the wisdom tradition has read it for centuries\"). A chapter-a-day matched to the calendar date is a modern devotional habit, not a documented practice of the church across centuries; \"There are thirty-one chapters for a reason\" implies a design that is not there. Drop the pedigree and the page is honest and good: \"Open your Bible to Proverbs {n} and read the whole chapter slowly. These are only the door.\"",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -13419,6 +13847,19 @@
         ],
         "forbiddenWords": [],
         "crisisCare": "n/a"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "Dropped the unverifiable pedigree from both reader-facing lines. Hero: \"There are thirty-one chapters for a reason. Read one a day, matched to the date, the way the church has read Proverbs for centuries.\" -> \"Proverbs has thirty-one chapters and most months have thirty-one days, which makes it simple to read one a day, matched to the date.\" SEO description likewise loses \"the way the wisdom tradition has read it for centuries\". The single hinge \"Do not study it. Live in it\" stays.",
+        "removedUnverifiable": [
+          "\"the way the church has read Proverbs for centuries\" (hero)",
+          "\"the way the wisdom tradition has read it for centuries\" (SEO description)",
+          "\"There are thirty-one chapters for a reason\" (implied design claim)"
+        ],
+        "leftForJames": [
+          "The file's header code comment (line 3) still repeats the \"for centuries\" claim; it is not reader-facing so I left it, but it can be trimmed whenever someone is in the file."
+        ],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "page:client/src/pages/tools/QuoteLibrary.tsx": {
@@ -13475,7 +13916,7 @@
       "words": 1438,
       "blocks": 69,
       "id": "page:client/src/pages/tools/ScriptureMemory.tsx",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The hero is a marketing cadence of fragments: \"Forty verses across eight categories. Four memorization modes. One goal: Scripture that lives in you, not just on a screen.\" The SEO description claims \"proven techniques\" with nothing behind the word. Verses are NIV throughout (Philippians 4:6-7, Proverbs 3:5-6, Galatians 2:20, etc.) with a ScriptureNote present; keep the translation named. The in-page instruction copy (\"Select a category to begin...\") is fine.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -13486,6 +13927,15 @@
         ],
         "forbiddenWords": [],
         "crisisCare": "n/a"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "Replaced the hero fragment stack (\"Forty verses across eight categories. Four memorization modes. One goal: Scripture that lives in you, not just on a screen.\") with \"Forty verses across eight categories, with four ways to work each one into memory. The aim is Scripture you can reach for at three in the morning without a phone in your hand.\" Dropped \"using proven techniques\" from the SEO description. ScriptureNote and translation naming untouched.",
+        "removedUnverifiable": [
+          "\"proven techniques\" (SEO description)"
+        ],
+        "leftForJames": [],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "page:client/src/pages/tools/SermonOutline.tsx": {
@@ -13494,7 +13944,7 @@
       "words": 2942,
       "blocks": 85,
       "id": "page:client/src/pages/tools/SermonOutline.tsx",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "Two integrity failures: \"Micah 6:8 is eight words long in Hebrew\" is false (the verse runs to roughly seventeen words; only the closing clause approaches eight), and \"A hospital chaplain once said...\" is an unattributed anecdote that reads as invented. The Hope hook is a stock AI turn (\"Here is what the world will tell you... Here is what Scripture says\"), and the closing challenges slide into motivational sermon-outline cadence (\"Not in the argument. In the action. Be the man who does it.\" / \"Not because it is easy. Because it is true.\"). The rest is strong and real: Job 2:13, John 9, Psalm 88, Mark 9:24, Bonhoeffer's cheap/costly grace, Zechariah 7:9.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -13506,6 +13956,16 @@
         ],
         "forbiddenWords": [],
         "crisisCare": "ok"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "Removed the false Hebrew word count (\"Micah 6:8 is eight words long in Hebrew\" -> \"Micah 6:8 is short enough to carry in a pocket\") and the unattributed chaplain anecdote (\"A hospital chaplain once said...\" -> \"Sit with enough people in crisis and you learn that what they are asking for is not answers. It is someone who understands.\"). Rewrote the Hope hook (\"Here is what the world will tell you... Here is what Scripture says\" -> \"The world will tell you to stay positive... Scripture tells you something harder\") and the two motivational closers as full sentences (\"Not in the argument. In the action. Be the man who does it.\" -> \"in the action rather than the argument, and most of it will be done where no one is keeping score except God\"; \"Not because it is easy. Because it is true.\" -> \"not because it is easy but because it is true\").",
+        "removedUnverifiable": [
+          "\"Micah 6:8 is eight words long in Hebrew\"",
+          "\"A hospital chaplain once said the most common thing people in crisis tell him is not 'I need answers.' It is 'I need someone who understands.'\""
+        ],
+        "leftForJames": [],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "page:client/src/pages/tools/TestTheCase.tsx": {
@@ -13530,7 +13990,7 @@
       "words": 18128,
       "blocks": 274,
       "id": "page:client/src/pages/tools/TheologyGlossary.tsx",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "Scholarship is mostly solid (Nicaea 325/381, Chalcedon 451, Trent, Athanasius's 367 letter, Barth's Nein! 1934, Benedictus Deus 1336 all check), the contested entries steelman both sides, and the register is calm. Two citation fixes: the Supersessionism entry credits \"Justin Martyr, Adversus Judaeos,\" but Justin's work is the Dialogue with Trypho and Adversus Judaeos belongs to Tertullian and the later genre; and the Propitiation entry says Romans 3:25 calls Christ \"the hilasmos\" when Romans uses hilasterion (hilasmos is 1 John). The \"Why It Matters\" lines lean on a superlative tic (\"the most neglected metaphor,\" \"the most uncomfortable word,\" \"the most misunderstood,\" \"the most persistent temptation,\" \"the most counter-cultural claim Christianity makes,\" \"the most radical claim in the history of ethics\") that should be thinned.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -13540,6 +14000,13 @@
         ],
         "forbiddenWords": [],
         "crisisCare": "n/a"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "Two citation fixes: Supersessionism now cites \"Justin Martyr, Dialogue with Trypho\" instead of \"Adversus Judaeos\"; Propitiation now reads \"Romans 3:25, where Paul calls Christ the hilasterion, and in 1 John 2:2 and 4:10, where John calls him the hilasmos\" instead of attributing hilasmos to Romans. Thinned the superlative tic in five entries (\"the most uncomfortable word\" -> \"an uncomfortable word\"; \"the most neglected metaphor... arguably the most personal\" -> \"the salvation metaphor the church talks about least, and perhaps the warmest\"; \"the most persistent temptation\"; \"the most counter-cultural claim Christianity makes\" -> \"It runs against nearly everything the age teaches about power\"; \"the most radical claim in the history of ethics\" -> \"a claim about human worth that no ethics without God has managed to ground\"), leaving Total Depravity's \"the most misunderstood of the five points\" as the one that stays.",
+        "removedUnverifiable": [],
+        "leftForJames": [],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "page:client/src/pages/tools/VerseFinder.tsx": {
@@ -13564,7 +14031,7 @@
       "words": 1131,
       "blocks": 26,
       "id": "page:client/src/pages/tools/WhichLens.tsx",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The lens verdicts do the hard things right: fair before sharp on both the Flag and the Cause \"with the same grief,\" the Rearview honored before it is refused, no sneer at the Marketplace reader. The revision is a biography check, not a voice fix: \"the man who built this site carried the same lens for years,\" \"preached the edited version for years and was discipled by men who did the same,\" \"has flinched the same way — softened a hard word because the room would have gone cold,\" and \"it worked on the man writing these words too\" are specific claims about James's life beyond the four known facts. Confirm each with him or generalize the self-implication to \"we.\"",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -13572,6 +14039,20 @@
         "stockPhrases": [],
         "forbiddenWords": [],
         "crisisCare": "n/a"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "Generalized the four biographical self-implications to \"we\" while keeping the writer inside the indictment: \"the man who built this site carried the same lens for years\" -> \"most of us who grew up in American churches carried this lens for years without feeling its weight, and the man who built this site is not exempt\"; \"has flinched the same way — softened a hard word\" -> \"Anyone who has stood in front of a room and felt it go cold knows the pull to soften a hard word, and pastors are not exempt\"; \"preached the edited version for years and was discipled by men who did the same\" -> \"we were most of us discipled by people who read the same way and never noticed\"; \"it worked on the man writing these words too\" -> \"it worked on most of us, the writer included\".",
+        "removedUnverifiable": [
+          "\"the man who built this site carried the same lens for years without feeling its weight\"",
+          "\"The writer of this site has flinched the same way — softened a hard word because the room would have gone cold\"",
+          "\"the man who built this site preached the edited version for years and was discipled by men who did the same\"",
+          "\"it worked on the man writing these words too\" (softened to \"the writer included\")"
+        ],
+        "leftForJames": [
+          "If any of the four original first-person claims (carrying the Flag lens for years; softening hard words for a cold room; preaching an edited canon and being discipled by men who did the same; being formed by the consumer church) is true of James, he can restore the specific version; the generalized \"we\" is the honest default until he confirms."
+        ],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "page:client/src/pages/tools/WisdomFinder.tsx": {
@@ -13595,7 +14076,7 @@
       "ref": "client/public/family-catechism.json",
       "words": 12352,
       "id": "library:client/public/family-catechism.json",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The bulk of the 301 fields ship as they stand: calm, full-thought commentary that honors real hurt ([64], [69], [73], [74].commentary) and implicates the parent before the child ([14], [20], [36].commentary). Three fields need a hand: [59].commentary's \"following Jesus is a team sport, never a solo one\" is youth-group cliché; [65].commentary's \"tested harder than any book in history and still stands\" (and [65].answer's \"the ring of truth that no one could have invented\") is an unverifiable superlative that a skeptic at the table would catch; [8].commentary is a literal hit on \"saying God's got this\" (used to refuse the slogan, but still the phrase on the page). Across the library the \"X is not A. It is B.\" opener is the default gait ([11], [21], [34], [35], [36], [39], [40], [44], [48].commentary), the exact repeated antithesis the standard puts on the avoid list; and two borrowed lines travel unattributed, Buechner's \"the worst thing is never the last thing\" ([74].commentary) and Augustine's \"never be at rest until they are at rest in him\" ([63].commentary). Note also the near-duplicate pairs ([48]/[52], [49]/[53], [3]/[75], [7]/[63], [17]/[56], [46]/[60], [47]/[61]) that suggest two catechisms were merged.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -13611,6 +14092,20 @@
           "God's got this ([8].commentary, quoted in refusal)"
         ],
         "crisisCare": "ok"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "Fourteen fields edited in place (file: /home/user/Livewell-/client/public/family-catechism.json), JSON validated, pnpm check and pnpm test green. [59] loses the youth-group line (\"following Jesus is a team sport, never a solo one\" became \"no one follows Jesus alone, because God does not save people one at a time into a private faith. He saves them into a family\"); [8] keeps the refusal of the slogan without printing it (\"a different thing entirely from saying God's got this\" became \"a harder and better thing to say than the slogans we reach for in a hospital hallway\"); [63] now attributes Augustine as paraphrase (\"as Augustine prayed at the opening of his Confessions, that their hearts will be restless until they rest in him\"); [74] replaces Buechner's unattributed line with a resurrection-grounded sentence of our own; [65].answer and [65].commentary drop the two unverifiable superlatives; and the \"X is not A. It is B.\" opener is rewritten as a developed sentence at [11], [34], [35], [36], [40], [44], [48], with [39] (\"Salvation is not only being let off the hook. It is being brought home.\") kept as the one genuine hinge.",
+        "removedUnverifiable": [
+          "[65].commentary: \"the Bible has been tested harder than any book in history and still stands\" (replaced with \"has been questioned in every generation and has not gone quiet\")",
+          "[65].answer: \"that story has the ring of truth that no one could have invented\" (replaced with \"it tells that story without flattering anyone in it, not even its heroes\")",
+          "[74].commentary: \"the worst thing is never the last thing\" (Buechner, unattributed; replaced with our own sentence rather than an attributed quotation I could not verify verbatim)"
+        ],
+        "leftForJames": [
+          "The near-duplicate pairs the audit noticed ([48]/[52], [49]/[53], [3]/[75], [7]/[63], [17]/[56], [46]/[60], [47]/[61]) are structural, not copy: deciding whether to merge or cut entries renumbers the catechism and needs his ruling.",
+          "[21].commentary was listed among the antithesis openers but contains no \"X is not A. It is B.\" construction (it opens \"The law is like a mirror...\"); I left it untouched rather than rewrite a field that does not fail."
+        ],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "library:client/public/family-devotions-2.json": {
@@ -13618,7 +14113,7 @@
       "ref": "client/public/family-devotions-2.json",
       "words": 16347,
       "id": "library:client/public/family-devotions-2.json",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "Most reflections are sound, and the hard ones are handled with care ([30].reflection refuses the Romans 8:28 bandage, [25].reflection tells a child \"It does not mean you let them hurt you,\" [47] and [16] honor worry and grief without validating despair). The failures are fixable but real: [7].bigIdea is Rick Warren's widely circulated (and often Lewis-misattributed) line \"Humility is not thinking less of yourself. It is thinking of yourself less\" passed off as our own, and should be attributed or replaced; [18].reflection carries Buechner's \"the worst thing is never the last thing\" unattributed; therapy-speak \"showing up\" runs through [10].reflection (\"Show up for the hard moments\"), [10].questions[2], [10].prayer, [32].reflection (\"God keeps showing up\") and [32].prayer; and signpost turns of the \"here's the thing\" family open paragraphs at [25].reflection (\"Here is the heart of it\") and [48].reflection (\"Here is the wonderful part you can hold onto\"). The bigIdea line is built on the same \"X is not the absence of Y\" cliché at [8] (\"Courage is not the absence of fear\"), [47] (\"Peace is not the absence of problems\") and [56].reflection (\"power under control\"), and the \"X is not A. It is B.\" antithesis is the bigIdea default across roughly twenty entries; several reflections run one paragraph thin ([7], [28], [53], [59]), pronoun capitalization flips from He to he at [42], and every passageText is NIV against the platform's ESV default.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -13637,6 +14132,20 @@
           "Here is the wonderful part you can hold onto ([48].reflection)"
         ],
         "crisisCare": "ok"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "Thirty-eight fields edited in place (file: /home/user/Livewell-/client/public/family-devotions-2.json), JSON validated, pnpm check and pnpm test green. The borrowed Warren line at [7].bigIdea (\"Humility is not thinking less of yourself. It is thinking of yourself less.\") is replaced with \"A humble person does not need to be noticed, which leaves them free to notice everyone else,\" with its tail also lifted from [7].prayer; Buechner's line at [18] becomes \"even death, the worst thing we know, did not get the last word. Jesus did\"; \"show up / shows up / showing up\" is gone from [10].reflection, [10].questions[2], [10].prayer, [32].reflection, [32].prayer and [32].bigIdea (the literal uses at [2], [4] and the first line of [32].reflection were left, as they are not the therapy-speak sense); the signposts at [25] (\"Here is the heart of it\") and [48] (\"Here is the wonderful part you can hold onto\") are folded into the thought they announced; the \"absence of\" and \"power under control\" clichés at [8], [47], [56] and the Sunday-school grace/mercy formula at [23] are rewritten in plain words; the \"X is not A. It is B.\" bigIdea default is rewritten as a full sentence across twenty-one entries, with [16] (\"Heaven is not floating on clouds. It is the day God makes everything that is broken right again.\") kept as the one hinge; and the thin reflections at [7], [28], [53], [59] each gain a second paragraph that turns the idea toward the parents at the table without adding any biography or citation.",
+        "removedUnverifiable": [
+          "[7].bigIdea: \"Humility is not thinking less of yourself. It is thinking of yourself less.\" (Rick Warren's line, often misattributed to Lewis; replaced rather than attributed)",
+          "[18].reflection: \"The empty tomb means the worst thing is never the last thing. Hope had the final word.\" (Buechner, unattributed; replaced with our own sentence)"
+        ],
+        "leftForJames": [
+          "Deity-pronoun capitalization is split down the library: entries [0]-[36] mostly capitalize He/His/Him, entries [37]-[59] mostly do not, and the flip the audit saw at [42] is where the second convention begins. The catechism and the ESV both use lowercase, but normalizing forty entries in either direction is a house-style ruling, not a copy fix, so I left it.",
+          "Every passageText is NIV against the platform's ESV default. Replacing sixty passages means sixty verbatim ESV quotations that should be pasted from the text, not typed from memory; I did not touch them.",
+          "[8].title \"Brave Is Not Fearless\" carries the same antithesis as the bigIdea I rewrote beneath it; the notes did not name titles, so it stands, but he may want it to match."
+        ],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "library:client/public/family-devotions.json": {
@@ -13661,7 +14170,7 @@
       "ref": "client/public/family-reading-plans.json",
       "words": 4147,
       "id": "library:client/public/family-reading-plans.json",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "The voice holds across all 115 fields: plain, unhurried, one scene and one honest question per day, self-implicating where it counts ([3].days[5].prompt: \"that includes all of us at this table\"), and the questions honor real trouble without preaching ([0].days[7].prompt: \"what storm is scaring your family right now\"). Two accuracy/mechanics slips keep it from shipping as-is. [1].days[4].prompt adds a detail Genesis 6–7 does not contain: \"Noah builds a huge boat because God told him to, while everyone laughs\" — the laughing is folk tradition, not text, and this library tells families to read straight off the page; cut the clause. [1].days[25].prompt has a missing possessive (\"God shuts the lions mouths\"). Lesser: [0].days[25].prompt imports Luke's \"sweating\" into a Mark reading (Mark 14 has no sweat), and [0].days[14].prompt and [2].days[18].prompt embed questions without a question mark. The uniform \"Scene. Ask X.\" shape is a functional format for a prompt library, not the AI symmetry the standard warns against, and passes.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -13669,6 +14178,16 @@
         "stockPhrases": [],
         "forbiddenWords": [],
         "crisisCare": "n/a"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "Five prompt fields fixed, nothing else touched. [1].days[4] lost the extra-biblical clause: \"Noah builds a huge boat because God told him to, while everyone laughs\" is now \"...because God told him to, before there is any sign of a flood\" (Genesis 6 has the boat and the warning, not the mockery). [0].days[25] dropped Luke's detail from a Mark reading: \"sweating and afraid\" is now \"deeply troubled and afraid\" (Mark 14:33-34). [1].days[25] gained its possessive (\"the lions' mouths\"); [0].days[14] and [2].days[18] now punctuate their embedded questions (\"built around: who do you say that I am?\" and \"I lift my eyes to the hills. Where does my help come from?\").",
+        "removedUnverifiable": [
+          "while everyone laughs (Genesis 6:9-22 prompt; the laughing is folk tradition, not in the text)",
+          "sweating (Mark 14:32-42 prompt; the sweat is Luke 22:44, absent from Mark)"
+        ],
+        "leftForJames": [],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "library:client/public/family-seasonal.json": {
@@ -13676,7 +14195,7 @@
       "ref": "client/public/family-seasonal.json",
       "words": 4900,
       "id": "library:client/public/family-seasonal.json",
-      "status": "revise",
+      "status": "repaired",
       "verdict": "revise",
       "notes": "This is the strongest family copy in the set — advent[6].reflection (\"Some families this December are missing someone at the table. The promise is not that the dark is fake\"), holyWeek[3] (\"every one of us has chosen something small over someone who loved us\"), holyWeek[5] (\"Let today feel heavy. It was.\") honor pain, implicate the writer, and end with weight. Three fixable failures: advent[18].reflection lifts Eugene Peterson's Message rendering of John 1:14 verbatim and unattributed (\"He moved into the neighborhood\") — attribute it or rephrase, since the standard forbids passing another writer's sentence off as ours; advent[21].reflection lands on the stock AI turn the standard names (\"Some things you just hold and let sink in\"); advent[4].reflection puts a car in ancient Judah (\"the kind of place people drove past\"). Pattern note for the editor rather than a failure: the \"Not X. Y.\" antithesis recurs as the hinge of roughly a third of the reflections (advent[0], [6], [10], [18], [20]); read one per night it works, read together it becomes a tic — thin it. Structural, not voice: advent[1], [3], [7], [9]–[12], [14], [16], [22], [23] and holyWeek[3], [5] ship without a question and/or prayer, which reads as inconsistency to a parent using it nightly.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
@@ -13687,6 +14206,18 @@
         ],
         "forbiddenWords": [],
         "crisisCare": "ok"
+      },
+      "repair": {
+        "changed": true,
+        "summary": "Six advent reflections edited; questions, prayers, titles and holyWeek untouched. advent[18] no longer carries Eugene Peterson's Message rendering: \"God did not save us from far away with a wave of his hand. He moved into the neighborhood.\" is now \"God could have saved us from far away, with a wave of his hand. Instead he came and lived among us, in a real town, on a real street, with people who knew his face.\" (the closing \"He moved in\" stays; it is the day's title, not Peterson's sentence). advent[21] drops the stock turn: \"Some things you just hold and let sink in\" is now \"You carry them quietly for a while before you understand them.\" advent[4] loses the car (\"people drove past\" is now \"travelers passed through\"). The \"Not X. Y.\" hinge was thinned to one: advent[6] (\"The promise is not that the dark is fake. The promise is that a light is coming into it\") is kept as the genuine hinge; advent[0], [10], [18] and [20] were rewritten as full thoughts (e.g. advent[20]: \"he sent the news past the palace and the temple to shepherds working the night shift in a field\").",
+        "removedUnverifiable": [
+          "He moved into the neighborhood (advent[18].reflection; Eugene Peterson's The Message rendering of John 1:14, unattributed; rephrased rather than attributed)",
+          "the kind of place people drove past (advent[4].reflection; anachronism in ancient Judah)"
+        ],
+        "leftForJames": [
+          "The audit's structural note does not hold on inspection: advent[1], [3], [7], [9]-[12], [14], [16], [22], [23] and holyWeek[3], [5] all already carry both a question and a prayer in the file, so no fields were added. If the site is rendering those days without them, the gap is in the page component, not the JSON."
+        ],
+        "at": "2026-09-15T15:02:22.223Z"
       }
     },
     "library:client/public/subpathway-mapping.json": {

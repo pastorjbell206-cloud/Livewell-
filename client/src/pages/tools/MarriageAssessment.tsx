@@ -71,7 +71,7 @@ const CATEGORIES: Category[] = [
       high: [
         "Protect what you have built. The couples who communicate well often stop noticing the effort it takes. Keep being intentional.",
         "Use your communication strength to mentor another couple. What comes naturally to you may save someone else's marriage.",
-        "Go deeper. Move from 'we talk well' to 'we talk about the things that terrify us.' That is the difference between a good marriage and a great one.",
+        "Go deeper. Move from 'we talk well' to 'we talk about the things that terrify us.' A marriage that can say the frightening things out loud is on different ground from one that only talks well.",
       ],
     },
     articleLink: {
@@ -107,7 +107,7 @@ const CATEGORIES: Category[] = [
       ],
       mid: [
         "Schedule a weekly date that requires no planning beyond being there. The couples who wait for the perfect evening never have one.",
-        "Reintroduce non-sexual touch. A hand on the shoulder. Sitting close enough that your knees touch. These small gestures rebuild the neural pathways of connection.",
+        "Reintroduce non-sexual touch. A hand on the shoulder. Sitting close enough that your knees touch. Small gestures like these rebuild a closeness that words alone cannot.",
         "Ask your spouse: 'When did you last feel truly close to me?' Their answer will tell you more than any book.",
       ],
       high: [
@@ -144,7 +144,7 @@ const CATEGORIES: Category[] = [
     recommendations: {
       low: [
         "Trust, once broken, is not rebuilt by promises. It is rebuilt by consistent, small, verifiable actions over time. Do not demand trust. Earn it.",
-        "If financial secrecy exists, open every account together this week. Not as punishment -- as a declaration that this marriage has no hidden rooms.",
+        "If financial secrecy exists, open every account together this week, not as punishment but as a declaration that this marriage has no hidden rooms.",
         "If vulnerability feels unsafe, ask yourself whether your spouse has actually weaponized your honesty, or whether you are protecting yourself from a wound that predates this marriage. Both are real. Both need attention.",
       ],
       mid: [
@@ -229,7 +229,7 @@ const CATEGORIES: Category[] = [
       low: [
         "If every fight becomes a trial where past offenses are introduced as evidence, you need a reset. Agree together: 'Forgiven means finished. We do not reopen closed cases.'",
         "Learn to take a twenty-minute break when conversations escalate. Not to avoid the conflict, but because your nervous system needs time to leave fight-or-flight mode before you can think clearly.",
-        "If you cannot resolve conflict without professional help, get professional help. That is not weakness. It is the most courageous thing a married person can do.",
+        "If you cannot resolve conflict without professional help, get professional help. Asking is not weakness; it is one of the braver things a married person does.",
       ],
       mid: [
         "You manage conflict but may not be resolving it. There is a difference. Managed conflict stays quiet. Resolved conflict stays gone.",
@@ -274,20 +274,20 @@ function getOverallLabel(score: number): {
       label: "Growing",
       color: "var(--mustard)",
       description:
-        "Your marriage has genuine strengths and identifiable growth areas. This is not a crisis -- it is an opportunity. Most marriages live here. The question is whether you will stay here or move toward something deeper. The fact that you took this assessment suggests you are ready for it.",
+        "Your marriage has genuine strengths and identifiable growth areas. Most marriages live here, and it is not a crisis, but it is not a place to settle either. The question is whether you will stay here or move toward something deeper. The fact that you took this assessment suggests you are ready for it.",
     };
   if (pct >= 0.4)
     return {
       label: "Needs Attention",
       color: "var(--strain)",
       description:
-        "Several areas of your marriage are under strain. This is not a verdict -- it is a diagnosis. And a diagnosis is a gift, because it tells you where to focus. Do not try to fix everything at once. Pick the category with the lowest score and start there. One area at a time. One conversation at a time.",
+        "Several areas of your marriage are under strain. Read that as a diagnosis rather than a verdict; a diagnosis tells you where to focus. Do not try to fix everything at once. Pick the category with the lowest score and start there. One area at a time. One conversation at a time.",
     };
   return {
     label: "In Crisis",
     color: "var(--alert)",
     description:
-      "Your scores indicate significant distress in your marriage. Hear this clearly: this assessment is not the final word. Many marriages that score here have been rebuilt into something stronger than what existed before. But it will require help -- professional help, not just good intentions. Contact a licensed marriage counselor this week. Not next month. This week.",
+      "Your scores indicate significant distress in your marriage. This assessment is not the final word. Many marriages that score here have been rebuilt into something stronger than what existed before. But it will require help -- professional help, not just good intentions. Contact a licensed marriage counselor this week, not next month. And one thing has to be said plainly: if there is abuse in your home, your safety comes before couples counseling. Call the National Domestic Violence Hotline at 1-800-799-7233 or text START to 88788, any hour.",
   };
 }
 

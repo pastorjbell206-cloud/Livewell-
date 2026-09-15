@@ -31,7 +31,7 @@ const FAQ_ITEMS = [
   },
   {
     question: "Can I still believe in God after being hurt by the church?",
-    answer: "Many people do. But it takes time, and it takes permission to be angry. The distance between God and the people who misrepresented God is real. You do not have to decide right now what you believe. You do have to give yourself permission to heal."
+    answer: "Many people do. But it takes time, and the anger is allowed. The distance between God and the people who misrepresented God is real. You do not have to decide right now what you believe, and no one gets to set your timeline for deciding."
   },
   {
     question: "What is religious trauma?",
@@ -56,7 +56,7 @@ const webPageSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
   name: "Church Hurt: Resources for Survivors of Spiritual Abuse and Religious Trauma",
-  description: "Honest writing for anyone the church has hurt — spiritual abuse, religious trauma, purity culture, and the long road back. Essays on spiritual abuse, religious trauma, purity culture, and the long road to healing.",
+  description: "Honest writing for anyone the church has hurt — spiritual abuse, religious trauma, purity culture, and the long road back.",
   url: "https://www.livewellbyjamesbell.co/church-hurt",
   author: {
     "@type": "Person",
@@ -77,7 +77,7 @@ export default function ChurchHurt() {
     <Layout>
       <SEOMeta
         title="Church Hurt: Resources for Survivors of Spiritual Abuse and Religious Trauma"
-        description="Honest writing for anyone the church has hurt — spiritual abuse, religious trauma, purity culture, and the long road back. Essays on spiritual abuse, religious trauma, purity culture, and the long road to healing."
+        description="Honest writing for anyone the church has hurt — spiritual abuse, religious trauma, purity culture, and the long road back."
         keywords="church hurt, spiritual abuse, religious trauma, toxic church, purity culture, church abuse, healing from church, leaving toxic church, church and mental health"
         structuredData={[faqSchema, webPageSchema]}
       />
@@ -86,7 +86,7 @@ export default function ChurchHurt() {
       <section style={{ background: "var(--charcoal)", padding: "clamp(80px,12vw,160px) 24px", textAlign: "center" }}>
         <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "24px" }}>CHURCH HURT</p>
         <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px,5vw,60px)", fontWeight: 400, color: "var(--charcoal-fg)", maxWidth: "780px", margin: "0 auto", lineHeight: 1.15, letterSpacing: "-0.02em" }}>
-          What happened to you in that church was not God. And naming it is the first step toward healing.
+          What happened to you in that church had a name, and it was not God.
         </h1>
       </section>
 
