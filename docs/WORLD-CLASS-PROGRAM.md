@@ -85,12 +85,19 @@ Each phase ships on its own, verified, before the next starts.
    standfirst. `docs/seo/plain-language-report.md` lists the derived
    descriptions that still read at college level, the queue for hand
    rewrites. Verdict-style titles stay as headlines.
-5. **A human voice, audited then rewritten by hand.** A scanner reports the
-   machine tells per essay: forbidden words, stacked triplets, runs of
-   rhetorical questions, thirty-word sentences, signposting. Then the openings
-   of the most-read essays are rewritten in Bell's voice for his review. Not a
-   blind pass over 678 essays; that is how writing starts sounding like a
-   machine.
+5. **A human voice, audited then rewritten by hand.** Shipped as
+   `scripts/voice-tells.mjs`, which measures the shipped library for the tells
+   that survive a word search (sentence length, stacked triplets, the "It is
+   not X. It is Y." tic, hedges, whether the writer ever appears) and writes
+   `docs/audit-voice/machine-tells.md`. Finding: the banned words cluster in a
+   batch of fifty-nine survey essays with HTML bodies, written in a briefing
+   register; 39 exact word-level edits fixed every banned word in the banned
+   sense, applied to every copy of the library through
+   `scripts/apply-library-voice-edits.mjs` so a rebuild cannot bring them
+   back. Three openings from that batch are rewritten in Bell's voice in
+   `docs/audit-voice/rewrites-for-review.md`, unapplied, for James to accept
+   or strike. Not a blind pass over 678 essays; that is how writing starts
+   sounding like a machine.
 6. **Notes.** A short-form section for the Facebook-style posts, with an import
    format for a Facebook export, so the site holds all of the writing.
 7. **Purchase path.** Trace checkout end to end in code, serve the WebP covers,

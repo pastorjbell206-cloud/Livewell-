@@ -543,7 +543,7 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     groupDiscussion: [
       "The prosperity gospel is described as 'a different religion wearing Christianity's clothes.' Is that assessment too harsh, or does it accurately capture the nature of the distortion?",
       "The sociological appeal of the prosperity gospel lies in offering certainty and control to people facing economic precarity. What should the church offer these same people instead — and is it offering it?",
-      "Paul catalogued his sufferings as credentials of authentic apostleship. The prosperity preachers catalog their jets and homes. How did American Christianity produce both — and which one does your community's culture more closely resemble?"
+      "Paul catalogued his sufferings as credentials of true apostleship. The prosperity preachers catalog their jets and homes. How did American Christianity produce both — and which one does your community's culture more closely resemble?"
     ],
     actionStep: "Examine your own prayer life this week for prosperity gospel assumptions. When you pray, are you seeking God's presence or God's provision? Are you requesting transformation or transaction? Notice the difference.",
     openingPrayer: "God of the widow's mite and the borrowed tomb, we confess that we have sometimes wanted a God who makes us comfortable rather than a God who makes us faithful. Strip away the prosperity theology that lives in our assumptions, even when we would never preach it from a pulpit.",
