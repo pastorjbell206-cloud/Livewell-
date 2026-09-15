@@ -651,13 +651,62 @@ function rewriteIndexHtml(template, routeHead) {
   return html;
 }
 
+const HOME_HERO_MARKER = /\s*<!--\s*prerender:home-hero[\s\S]*?-->/;
+
+/**
+ * The front page's hero, as static HTML, from the same constants Home.tsx
+ * renders (client/src/lib/positioning.ts), so the two cannot drift.
+ *
+ * Why: on the home page the largest contentful paint is the hero subhead — a
+ * paragraph of text. As a SPA it only existed after the JS bundle downloaded
+ * and ran, which under a throttled mobile connection put LCP near four
+ * seconds against a 90-score budget. Painting it from the HTML, inside the
+ * existing static shell, moves the largest paint to the first paint. React
+ * replaces the shell on mount; the markup mirrors the hero's tokens and type
+ * so the swap is not visible.
+ */
+function homeHeroHtml() {
+  const src = fs.readFileSync(
+    path.join(REPO_ROOT, "client/src/lib/positioning.ts"),
+    "utf8"
+  );
+  const pick = (name) => {
+    const m = src.match(
+      new RegExp(`export const ${name}\\s*=\\s*"((?:[^"\\\\]|\\\\.)*)"`)
+    );
+    return m ? m[1].replace(/\\"/g, '"') : "";
+  };
+  const esc = (s) =>
+    s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  const kicker = pick("PRIMARY_KICKER");
+  const headline = pick("PRIMARY_HEADLINE");
+  const subhead = pick("PRIMARY_SUBHEAD_SHORT");
+  if (!headline || !subhead) return "";
+  return `
+        <section style="background:var(--charcoal,#1A1A1A);color:var(--charcoal-fg,#F5F0E6);padding:var(--s-7,96px) var(--s-4,32px) var(--s-6,64px)">
+          <div style="max-width:var(--w-default,1100px);margin:0 auto">
+            <div style="max-width:780px">
+              <div style="display:inline-flex;align-items:center;gap:12px;margin-bottom:20px">
+                <span aria-hidden="true" style="width:32px;height:1px;background:var(--mustard,#D4A017)"></span>
+                <span style="font-family:var(--U,sans-serif);font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--mustard,#D4A017)">${esc(kicker)}</span>
+              </div>
+              <h1 style="font-family:var(--F,Georgia,serif);font-size:clamp(42px,7vw,96px);font-weight:400;line-height:1.03;letter-spacing:-.025em;color:var(--charcoal-fg,#F5F0E6);margin:0 0 24px">${esc(headline)}</h1>
+              <p style="font-family:var(--F,Georgia,serif);font-size:clamp(20px,2.6vw,30px);font-style:italic;font-weight:400;line-height:1.3;color:var(--charcoal-fg,#F5F0E6);max-width:32ch;margin:0 0 24px">${esc(subhead)}</p>
+            </div>
+          </div>
+        </section>`;
+}
+
 function writeRoute(template, route, head, bodyHtml = "") {
-  const target =
-    route.path === ""
-      ? path.join(DIST_DIR, "index.html")
-      : path.join(DIST_DIR, route.path.replace(/^\//, ""), "index.html");
+  const isHome = route.path === "" || route.path === "/";
+  const target = isHome
+    ? path.join(DIST_DIR, "index.html")
+    : path.join(DIST_DIR, route.path.replace(/^\//, ""), "index.html");
   fs.mkdirSync(path.dirname(target), { recursive: true });
   let html = rewriteIndexHtml(template, head);
+  // The static hero paints from the HTML on the front page only; every other
+  // route drops the marker so a deep link never flashes the home hero.
+  html = html.replace(HOME_HERO_MARKER, isHome ? homeHeroHtml() : "");
   // Inject crawlable article content at the top of #root. The client mounts
   // with createRoot, which replaces #root entirely, so this is crawler-only.
   if (bodyHtml) {
@@ -871,6 +920,9 @@ async function main() {
     if (routePath === "/404" || written.has(normalized)) continue;
     const rel = importMap[comp];
     if (!rel) {
+      // A redirect route (ToToolsRedirect, PastorsMovedRedirect, …) has no
+      // page of its own and needs no head; it is not an uncovered page.
+      if (/Redirect$/.test(comp)) continue;
       // Report rather than skip in silence. A component the import scanner
       // cannot resolve is exactly how /book-bundles and /article-collections
       // went un-prerendered without anything saying so.

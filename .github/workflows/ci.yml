@@ -71,7 +71,9 @@ jobs:
           node-version: 20
           cache: pnpm
       - run: pnpm install --frozen-lockfile
-      - run: pnpm run sitemap && pnpm run build
+      # Prerender too, so Lighthouse measures the HTML Vercel actually ships
+      # (build:vercel runs prerender; the static home hero lives there).
+      - run: pnpm run sitemap && pnpm run build && pnpm run prerender
       - name: Serve built site
         run: npx serve -s dist/public -l 4173 &
       - name: Lighthouse (home)

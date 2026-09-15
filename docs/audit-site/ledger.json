@@ -5,10 +5,10 @@
       "kind": "route",
       "ref": "/",
       "id": "route:/",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "repaired",
+      "verdict": "repaired",
+      "notes": "Home LCP was the hero subhead text, painted only after ~186 KB of JS under mobile throttling (LCP 4.0 s, performance 79 in CI). The prerender step now injects the hero (kicker, headline, subhead from positioning.ts) into the / HTML inside the static shell, home only. Local Lighthouse: 83 -> 90, LCP 4.0 s -> 3.0 s. CI number pending; next lever if short: non-blocking stylesheet with inlined critical tokens.",
+      "auditedAt": "2026-09-15T14:38:25.228Z"
     },
     "route:/404": {
       "kind": "route",
@@ -1823,10 +1823,10 @@
       "kind": "route",
       "ref": "/theology/history",
       "id": "route:/theology/history",
-      "status": "pass",
-      "verdict": "pass",
-      "notes": "Kept as a destination in the recomposed header/footer map (docs/audit-site/decisions.md).",
-      "auditedAt": "2026-09-14T19:45:08.578Z"
+      "status": "repaired",
+      "verdict": "repaired",
+      "notes": "Every era now hangs its essay, councils, figures, and disputes on the timeline, resolved by year from each library's own dating.",
+      "auditedAt": "2026-09-15T14:38:25.228Z"
     },
     "route:/theology/how-to-use": {
       "kind": "route",
@@ -2940,10 +2940,10 @@
       "ref": "client/src/pages/ArticleDetail.tsx",
       "label": "the essay reading experience",
       "id": "reading:client/src/pages/ArticleDetail.tsx",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "The reading kit exists: reading time (AudienceLabel), the excerpt as the orientation line, a collapsible In-this-essay card from the rendered h2s (hidden under three sections), reading-progress bar, reading-focus mode. Single-column by design. Quote-share attribution fixed to the resolved author.",
+      "auditedAt": "2026-09-15T14:38:25.228Z"
     },
     "nav:/tools/deep-bible": {
       "kind": "nav",
@@ -3074,6 +3074,35 @@
       "verdict": "pass",
       "notes": "In the recomposed five-door map (Read / Study / Answers / Grow / Books; About footer-only).",
       "auditedAt": "2026-09-14T19:45:08.578Z"
+    },
+    "route:/study": {
+      "kind": "route",
+      "ref": "/study",
+      "id": "route:/study",
+      "status": "pass",
+      "verdict": "pass",
+      "notes": "New: the one door to studying the Bible, arranged by what the reader is holding; entries from the ToolsHub registry plus two off-registry doors (Passage Context at /theology/passage, Wisdom).",
+      "auditedAt": "2026-09-15T14:38:56.850Z"
+    },
+    "nav:/study": {
+      "kind": "nav",
+      "ref": "/study",
+      "label": "Study the Bible",
+      "id": "nav:/study",
+      "status": "pending",
+      "verdict": null,
+      "notes": null,
+      "auditedAt": null
+    },
+    "nav:/theology/passage": {
+      "kind": "nav",
+      "ref": "/theology/passage",
+      "label": "A passage in context",
+      "id": "nav:/theology/passage",
+      "status": "pending",
+      "verdict": null,
+      "notes": null,
+      "auditedAt": null
     }
   }
 }

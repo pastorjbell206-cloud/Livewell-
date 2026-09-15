@@ -60,7 +60,20 @@ diverging copies. It does not: `client/public/theology/` is the one library
 essays. The two-front-doors finding stood; the two-copies finding was a bad
 `cmp` against files that were never there. Corrected in the prompt.
 
-## 3. Gates
+## 3. The reading-experience kit — already built, verified rather than rebuilt
+
+The wayfinding audit's §6 spec (reading time, a one-sentence orientation line,
+an anchored contents list) turned out to exist on `ArticleDetail` in a form
+the prompt's draft did not credit: `AudienceLabel` carries the reading time,
+the essay's excerpt renders as the orientation line under the title, and a
+collapsible "In this essay" card builds anchored links from the rendered
+`<h2>`s (hidden on essays with fewer than three sections, so short pieces stay
+untouched). It is a single-column card rather than the sticky desktop rail
+the spec imagined — a deliberate choice recorded in its own docstring ("No
+layout grid, no right rail: the single-column measure stays exactly as it
+was"). Left as is. Reading-progress bar and reading-focus mode also exist.
+
+## 4. Gates
 
 Lighthouse thresholds are now asserted in `.github/workflows/ci.yml`
 (performance and accessibility ≥ 90, best practices and SEO ≥ 95). The
