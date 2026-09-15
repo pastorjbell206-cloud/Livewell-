@@ -79,3 +79,26 @@ Lighthouse thresholds are now asserted in `.github/workflows/ci.yml`
 (performance and accessibility ≥ 90, best practices and SEO ≥ 95). The
 `quality` job stays `continue-on-error` until the first run shows the numbers
 hold; then it flips to blocking. Recorded here so the flip is not forgotten.
+
+## 5. Home-page performance — what moved the number and what did not
+
+The CI Lighthouse performance score on the front page was 79 (accessibility
+100, best practices 96, SEO 100). The largest contentful paint is the hero
+subhead, a paragraph of text.
+
+- **Hero painted from the HTML** (`scripts/prerender-heads.mjs` injects it
+  into the `/` shell from `positioning.ts`): LCP 4.0 s → 3.0 s locally,
+  score 83 → 90 locally, **79 → 83 in CI**. Kept.
+- **Deferring the stylesheet with inlined critical CSS** (tokens, base rules,
+  `@font-face`): LCP unchanged at 3.0 s, FCP 2.6 → 2.5 s, TBT 90 → 210 ms,
+  score 90 → 88 locally. The stylesheet was not the bottleneck; the change
+  added a swap step and a FOUC risk for no gain. **Reverted.**
+- The PWA service worker precaches nothing (608 bytes); not a factor.
+
+Where the remaining seven CI points live: the ~170 KB (gzipped) of script on
+the home path — the app chunk, React, and the Radix vendor chunk that the
+first paint does not need — and the resulting Speed Index and blocking time
+under 4× CPU throttling. That is bundle work (splitting what the home page
+does not use out of the initial graph), not markup work, and it is the next
+lever if the 90 threshold is to hold in CI. Until then the `quality` job stays
+non-blocking, with the threshold asserted so the number is never hidden.

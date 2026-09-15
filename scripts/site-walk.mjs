@@ -24,7 +24,12 @@ import { createRequire } from "node:module";
 import { execFileSync } from "node:child_process";
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 
-const require = createRequire(import.meta.url);
+// WALK_MODULES points at a node_modules holding playwright + axe-core (a
+// scratch install locally; `npx -p playwright -p axe-core` in CI). Without it,
+// resolution falls back to the repo's own node_modules.
+const require = createRequire(
+  process.env.WALK_MODULES ? process.env.WALK_MODULES.replace(/\/?$/, "/") : import.meta.url
+);
 const { chromium } = require("playwright");
 const AXE_SRC = readFileSync(require.resolve("axe-core/axe.min.js"), "utf8");
 
