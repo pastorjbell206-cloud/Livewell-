@@ -17,9 +17,11 @@ import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { StatementBand } from "@/components/EditorialBlocks";
 import { TrackChip } from "@/components/TrackChip";
+import { EssayArt } from "@/components/EssayArt";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { LoadFailed } from "@/components/LoadFailed";
 import { trpc } from "@/lib/trpc";
+import { fetchJson } from "@/lib/fetch-json";
 import { pillarToTrack, resolveTrack, pillarForPost, PILLAR_BY_SLUG, subThemesForPost, SUBTHEMES, PILLARS_V2, MOVEMENTS } from "@/lib/taxonomy";
 import {
   PILLAR_BY_SLUG as NEW_PILLAR_BY_SLUG,
@@ -31,6 +33,13 @@ import { SUBPATHWAY_BY_SLUG } from "@/lib/subpathwayMap.generated";
 import { HIDDEN_SLUGS } from "@/lib/hiddenSlugs";
 import { isFullEssay } from "@/lib/essayQuality";
 import { StartHereRow } from "@/components/StartHereRow";
+
+const isIndexRow = (x: unknown): x is Record<string, unknown> =>
+  !!x && typeof x === "object" && typeof (x as Record<string, unknown>).slug === "string" && typeof (x as Record<string, unknown>).title === "string";
+function withListDates(p: Record<string, unknown>): Record<string, unknown> {
+  const d = (v: unknown) => (typeof v === "string" && v ? new Date(v) : v instanceof Date ? v : null);
+  return { ...p, publishedAt: d(p.publishedAt), createdAt: d(p.createdAt), updatedAt: d(p.updatedAt) };
+}
 
 /** A post's sub-pathway: the DB value if set, else the static slug map. */
 function resolveSub(p: any): string | null {
@@ -66,6 +75,21 @@ function parseSearchParams(): URLSearchParams {
 export default function Writing() {
   const [location] = useLocation();
   const postsQuery = trpc.posts.listPublished.useQuery();
+  type ListedPost = NonNullable<typeof postsQuery.data>[number];
+  // Static first: /essays/index.json (built by scripts/build-public-essays.mjs)
+  // paints the library instantly from the CDN; the API list, which also carries
+  // database-only essays, replaces it when it arrives. A failed API call with the
+  // static index already on screen is not an error the reader needs to see.
+  const [staticIndex, setStaticIndex] = useState<ListedPost[] | null>(null);
+  useEffect(() => {
+    let stale = false;
+    fetchJson<unknown[]>("/essays/index.json", (x): x is unknown[] => Array.isArray(x))
+      .then(rows => { if (!stale) setStaticIndex(rows.filter(isIndexRow).map(withListDates) as unknown as ListedPost[]); })
+      .catch(() => { /* no static index (dev without the build step) — the API list carries the page */ });
+    return () => { stale = true; };
+  }, []);
+  const listLoading = postsQuery.isLoading && !staticIndex;
+  const listFailed = postsQuery.isError && !staticIndex;
   const [search, setSearch] = useState("");
   const [showFilters, setShowFilters] = useState(false);
   // Windowed render: hundreds of cards at once is a scroll of soup and a real
@@ -99,7 +123,7 @@ export default function Writing() {
   const subLabel = activeSub ? SUBPATHWAY_LABEL_BY_SLUG[activeSub] ?? null : null;
   const newHeading = activeSeries ? STUDY_GUIDES_LABEL : subLabel ?? newPillarName;
 
-  const posts = postsQuery.data ?? [];
+  const posts: ListedPost[] = postsQuery.data ?? staticIndex ?? [];
 
   const filtered = useMemo(() => {
     return posts.filter(p => {
@@ -113,7 +137,7 @@ export default function Writing() {
         const track = pillarToTrack(p.pillar);
         if (track !== activeTrack) return false;
       }
-      // Pillar (legacy two-movement / six-pillar taxonomy)
+      // Pillar (two-movement pillar taxonomy)
       if (activePillar && !isNewPillar) {
         const pl = pillarForPost(p);
         if (!pl || pl.slug !== activePillar) return false;
@@ -243,7 +267,7 @@ export default function Writing() {
         style={{
           background: "var(--charcoal)",
           padding: "var(--s-6) var(--s-4) var(--s-5)",
-          color: "var(--bone)",
+          color: "var(--charcoal-fg)",
         }}
       >
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
@@ -300,7 +324,7 @@ export default function Writing() {
               color: "rgba(245,240,230,0.55)",
             }}
           >
-            {postsQuery.isLoading
+            {listLoading
               ? "Loading…"
               : isFiltering
                 ? `${filtered.length} of ${allCount} essays shown`
@@ -329,7 +353,7 @@ export default function Writing() {
                   padding: "6px 12px",
                   borderRadius: "999px",
                   border: `1px solid ${!activeSubTheme ? "var(--mustard)" : "rgba(245,240,230,0.25)"}`,
-                  color: "var(--bone)",
+                  color: "var(--charcoal-fg)",
                   textDecoration: "none",
                 }}
               >
@@ -348,7 +372,7 @@ export default function Writing() {
                     padding: "6px 12px",
                     borderRadius: "999px",
                     border: `1px solid ${activeSubTheme === st ? "var(--mustard)" : "rgba(245,240,230,0.25)"}`,
-                    color: "var(--bone)",
+                    color: "var(--charcoal-fg)",
                     textDecoration: "none",
                   }}
                 >
@@ -358,27 +382,6 @@ export default function Writing() {
             </div>
           )}
 
-          {rest.length > visibleCount && (
-            <div style={{ textAlign: "center", marginTop: "var(--s-5)" }}>
-              <button
-                type="button"
-                onClick={() => setVisibleCount(c => c + 48)}
-                style={{
-                  fontFamily: "var(--U)",
-                  fontSize: "14px",
-                  fontWeight: 600,
-                  color: "var(--ink)",
-                  background: "transparent",
-                  border: "1px solid var(--border)",
-                  borderRadius: "var(--radius-sm)",
-                  padding: "13px 28px",
-                  cursor: "pointer",
-                }}
-              >
-                Show more — {rest.length - visibleCount} remaining
-              </button>
-            </div>
-          )}
         </div>
       </section>
 
@@ -407,7 +410,7 @@ export default function Writing() {
         />
       )}
 
-      {/* PILLAR CHIPS — the two-movement / six-pillar taxonomy */}
+      {/* PILLAR CHIPS — the two-movement pillar taxonomy */}
       <section
         style={{
           background: "var(--bone)",
@@ -689,7 +692,7 @@ export default function Writing() {
         }}
       >
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
-          {postsQuery.isLoading && (
+          {listLoading && (
             <div
               role="status"
               aria-label="Loading the writing"
@@ -716,7 +719,7 @@ export default function Writing() {
           {/* A failed request is not an empty result. Telling a reader to
               change their filter when the server never answered sends them
               hunting for a mistake they did not make. */}
-          {postsQuery.isError && (
+          {listFailed && (
             <LoadFailed
               what="The writing"
               onRetry={() => void postsQuery.refetch()}
@@ -725,7 +728,7 @@ export default function Writing() {
             />
           )}
 
-          {!postsQuery.isLoading && !postsQuery.isError && rest.length === 0 && (
+          {!listLoading && !listFailed && rest.length === 0 && (
             <p
               style={{
                 fontFamily: "var(--B)",
@@ -771,19 +774,26 @@ export default function Writing() {
                       e.currentTarget.style.borderColor = "var(--border)";
                     }}
                   >
-                    {/* Branded typographic card art — the same generator that
-                        renders every essay's share card, so the archive reads
-                        as a designed library rather than a wall of text. Edge-
-                        cached for a year per title, lazy below the fold. */}
-                    <img
-                      loading="lazy"
-                      decoding="async"
-                      src={`/api/og?title=${encodeURIComponent(post.title)}${post.pillar ? `&pillar=${encodeURIComponent(post.pillar)}` : ""}`}
-                      alt=""
-                      width={1200}
-                      height={630}
-                      style={{ width: "100%", height: "auto", display: "block", borderBottom: "1px solid var(--border)" }}
-                    />
+                    {/* Every essay carries an image. A real cover wins; otherwise the
+                        same deterministic art the essay page shows, drawn in-page —
+                        no request per card. (This used to fetch the 1200×630 share
+                        card from the edge function for every card: a heavy, dark
+                        block per essay, and a broken image whenever it did not answer.) */}
+                    {post.coverImage ? (
+                      <img
+                        loading="lazy"
+                        decoding="async"
+                        src={post.coverImage}
+                        alt=""
+                        width={1200}
+                        height={675}
+                        style={{ width: "100%", height: "auto", aspectRatio: "16 / 9", objectFit: "cover", display: "block", borderBottom: "1px solid var(--border)" }}
+                      />
+                    ) : (
+                      <div style={{ borderBottom: "1px solid var(--border)" }}>
+                        <EssayArt seed={post.slug} track={post.pillar} decorative />
+                      </div>
+                    )}
                     <div style={{ padding: "var(--s-4)", display: "flex", flexDirection: "column", flex: 1 }}>
                     <div style={{ marginBottom: "12px" }}>
                       <TrackChip pillarOrTrack={post.pillar} slug={post.slug} asLink={false} />
@@ -834,6 +844,27 @@ export default function Writing() {
                   </article>
                 </Link>
               ))}
+            </div>
+          )}
+          {rest.length > visibleCount && (
+            <div style={{ textAlign: "center", marginTop: "var(--s-5)" }}>
+              <button
+                type="button"
+                onClick={() => setVisibleCount(c => c + 48)}
+                style={{
+                  fontFamily: "var(--U)",
+                  fontSize: "14px",
+                  fontWeight: 600,
+                  color: "var(--ink)",
+                  background: "transparent",
+                  border: "1px solid var(--border)",
+                  borderRadius: "var(--radius-sm)",
+                  padding: "13px 28px",
+                  cursor: "pointer",
+                }}
+              >
+                Show more — {rest.length - visibleCount} remaining
+              </button>
             </div>
           )}
         </div>

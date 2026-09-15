@@ -66,6 +66,7 @@ export default function Books() {
               letterSpacing: "-0.02em",
               lineHeight: 1.05,
               maxWidth: "20ch",
+              color: "var(--charcoal-fg)",
               marginBottom: "18px",
             }}
           >
@@ -166,7 +167,7 @@ export default function Books() {
       ))}
 
       {/* WHERE THE REST WENT — honest, brief, prose */}
-      <section style={{ background: "var(--charcoal)", color: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
+      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-6) var(--s-4)" }}>
         <div style={{ maxWidth: "var(--w-content)", margin: "0 auto" }}>
           <h2
             style={{
@@ -174,6 +175,7 @@ export default function Books() {
               fontSize: "clamp(24px, 3.2vw, 32px)",
               fontWeight: 400,
               letterSpacing: "-0.015em",
+              color: "var(--charcoal-fg)",
               marginBottom: "14px",
             }}
           >

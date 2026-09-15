@@ -1,5 +1,5 @@
 /**
- * Per-essay pillar assignments under the two-movement / six-pillar taxonomy.
+ * Per-essay pillar assignments under the two-movement pillar taxonomy.
  * Generated from scripts/classify-pillars.mjs (uses each essay's current pillar
  * as a prior, with keyword overrides). Edit freely to correct a filing — the
  * resolver in taxonomy.ts reads this first, then falls back to the legacy map.
@@ -48,12 +48,12 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
     "confidence": "high"
   },
   "the-atheist-in-the-pulpit": {
-    "pillar": 4,
+    "pillar": 6,
     "subThemes": [],
     "confidence": "high"
   },
   "excavation-not-demolition": {
-    "pillar": 4,
+    "pillar": 6,
     "subThemes": [],
     "confidence": "high"
   },
@@ -72,7 +72,7 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
     "confidence": "high"
   },
   "the-end-of-home-field-advantage": {
-    "pillar": 4,
+    "pillar": 6,
     "subThemes": [],
     "confidence": "high"
   },
@@ -87,7 +87,7 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
     "confidence": "high"
   },
   "not-persecuted-seduced-crisis-american-christianity": {
-    "pillar": 4,
+    "pillar": 6,
     "subThemes": [],
     "confidence": "med"
   },
@@ -389,7 +389,7 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
     "confidence": "high"
   },
   "engaging-nones-religiously-unaffiliated": {
-    "pillar": 4,
+    "pillar": 6,
     "subThemes": [],
     "confidence": "med"
   },
@@ -792,42 +792,42 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
     "confidence": "high"
   },
   "unity-without-uniformity": {
-    "pillar": 4,
+    "pillar": 6,
     "subThemes": [],
     "confidence": "med"
   },
   "courage-to-be-different": {
-    "pillar": 4,
+    "pillar": 6,
     "subThemes": [],
     "confidence": "med"
   },
   "collaboration-across-denominations": {
-    "pillar": 4,
+    "pillar": 6,
     "subThemes": [],
     "confidence": "med"
   },
   "global-church-is-your-church": {
-    "pillar": 4,
+    "pillar": 6,
     "subThemes": [],
     "confidence": "med"
   },
   "mission-is-not-optional": {
-    "pillar": 4,
+    "pillar": 6,
     "subThemes": [],
     "confidence": "med"
   },
   "your-city-is-mission-field": {
-    "pillar": 4,
+    "pillar": 6,
     "subThemes": [],
     "confidence": "med"
   },
   "church-response-to-culture": {
-    "pillar": 4,
+    "pillar": 6,
     "subThemes": [],
     "confidence": "med"
   },
   "truth-in-post-truth-world": {
-    "pillar": 4,
+    "pillar": 6,
     "subThemes": [],
     "confidence": "med"
   },
@@ -986,7 +986,7 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
     "confidence": "med"
   },
   "christendom-is-ending-christianity-is-not": {
-    "pillar": 4,
+    "pillar": 6,
     "subThemes": [],
     "confidence": "high"
   },
@@ -996,7 +996,7 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
     "confidence": "med"
   },
   "two-kingdoms-faith-and-state": {
-    "pillar": 4,
+    "pillar": 6,
     "subThemes": [],
     "confidence": "high"
   },
@@ -1011,7 +1011,7 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
     "confidence": "high"
   },
   "why-churches-close-and-what-comes-next": {
-    "pillar": 4,
+    "pillar": 6,
     "subThemes": [],
     "confidence": "med"
   },
@@ -1663,5 +1663,14 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
       "practices"
     ],
     "confidence": "high"
-  }
+  },
+  // Filed 2026-09: unfiled Scripture-reading essays that defaulted to the pastoral
+  // pillar. Each excerpt was read before filing; all six are about how the Bible
+  // is read past the tribe, which is what pillar 3 is.
+  "proof-texting": { "pillar": 3, "subThemes": [], "confidence": "high" },
+  "six-lenses-that-distort-the-bible": { "pillar": 3, "subThemes": [], "confidence": "high" },
+  "the-whole-counsel": { "pillar": 3, "subThemes": [], "confidence": "high" },
+  "six-verses-we-memorized": { "pillar": 3, "subThemes": [], "confidence": "high" },
+  "what-the-original-audience-heard": { "pillar": 3, "subThemes": [], "confidence": "high" },
+  "reading-in-community": { "pillar": 3, "subThemes": [], "confidence": "high" }
 };

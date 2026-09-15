@@ -30,8 +30,11 @@
 
 /* The site reset lives in the lowest cascade layer so Tailwind utilities can
  * override it. Unlayered, this rule silently beat every layered margin/padding
- * utility (unlayered > @layer in the cascade) — the admin's mb-*/p-*/gap-*
- * classes all computed to 0 and the whole admin rendered with no whitespace. */
+ * utility (unlayered > @layer in the cascade) and the admin's margin, padding
+ * and gap classes all computed to 0, so the whole admin rendered with no
+ * whitespace. Never write a Tailwind wildcard like "mb-" followed by an
+ * asterisk and a slash inside this comment: that sequence closes the comment
+ * early and the parser swallows the reset below as an invalid rule. */
 @layer base{
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 }
@@ -62,6 +65,17 @@
   --mustard:#D4A017;
   --mustard-deep:#B08A12;
   --mustard-text:#7A6010;
+
+  /*  Category hues for the prophetic timeline. Decorative identifiers, not
+      brand colour — deep enough to read as text on a light card. They are
+      lightened under html.dark, where --card goes near-black and these deep
+      values would otherwise disappear.  */
+  --cat-church:#7A1F1F;
+  --cat-empire:#5A4A2A;
+  --cat-capitalism:#8A5A00;
+  --cat-communism:#5A2A6A;
+  --cat-nation:#2A4A6A;
+  --cat-affirm:#3E5C3A;
 
   /*  Semantic score tokens (warm/earthy, brand-harmonized)  */
   --ok:#3D5A40;--ok-bg:rgba(61,90,64,0.08);
@@ -131,6 +145,9 @@ html.dark{
   --ink:#F4F1EA;--ink-muted:#9A968E;
   /* Mustard — slightly desaturated for dark mode to keep WCAG AA */
   --mustard:#D4A017;--mustard-deep:#B08A12;--mustard-text:#E0B945;
+  /* Category hues — lightened so they stay legible on the near-black card */
+  --cat-church:#E09A9A;--cat-empire:#C9B98A;--cat-capitalism:#E0A93F;
+  --cat-communism:#C49AD8;--cat-nation:#8FB4D9;--cat-affirm:#8FBF8A;
   /* Semantic score tokens — foregrounds lightened for dark contrast */
   --ok:#7FA486;--ok-bg:rgba(61,90,64,0.12);
   --alert:#D98C8C;--alert-bg:rgba(155,44,44,0.12);
@@ -236,7 +253,8 @@ img{display:block;max-width:100%}
 /* NAV */
 .nav-wrap{position:sticky;top:0;z-index:200;background:rgba(250,248,244,.97);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);transition:box-shadow .3s}
 .nav-wrap.shadow{box-shadow:0 4px 32px rgba(26,51,40,.08)}
-nav{display:flex;align-items:center;justify-content:space-between;height:70px;max-width:1200px;margin:0 auto;padding:0 32px}
+/* The site header only. This was a bare `nav{}` rule and applied to every <nav> on the site — the essay contents box, end-of-essay links, breadcrumbs, pagination — forcing each into a 70px flex row that overflowed its content. */
+.nav-wrap nav,nav.site-nav{display:flex;align-items:center;justify-content:space-between;height:70px;max-width:1200px;margin:0 auto;padding:0 32px}
 .nav__logo{font-family:var(--F);font-size:21px;font-weight:600;color:var(--forest);letter-spacing:-.01em;flex-shrink:0;display:flex;align-items:baseline;gap:6px}
 .nav__logo em{font-style:italic;color:var(--gold)}
 .nav__logo small{font-family:var(--U);font-size:12px;font-weight:300;color:var(--ink3);letter-spacing:.02em}
@@ -436,7 +454,7 @@ footer{background:var(--charcoal);color:var(--bone);padding:60px 0 40px}
 
 @media(max-width:480px){
   .wrap{padding:0 16px}
-  nav{padding:0 16px;height:60px}
+  .nav-wrap nav,nav.site-nav{padding:0 16px;height:60px}
   .hero-h{font-size:32px}
   .hero-ctas{flex-direction:column;align-items:flex-start}
   .grid-4{grid-template-columns:1fr}

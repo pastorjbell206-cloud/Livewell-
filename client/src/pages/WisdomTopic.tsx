@@ -68,9 +68,11 @@ export default function WisdomTopic() {
   const [failed, setFailed] = useState(false);
   const [nonce, setNonce] = useState(0);
 
+  // The error state is cleared by the retry handler below, not here: calling
+  // setState synchronously in an effect body forces an extra render on every
+  // mount, and on first mount `failed` is already false.
   useEffect(() => {
     let stale = false;
-    setFailed(false);
     fetchJson("/wisdom/topics.json", isTopicsFile)
       .then((d) => { if (!stale) setTopics(d.topics); })
       .catch(() => { if (!stale) setFailed(true); });
@@ -80,7 +82,7 @@ export default function WisdomTopic() {
   if (failed) {
     return (
       <Layout>
-        <LoadFailed onRetry={() => setNonce((n) => n + 1)} />
+        <LoadFailed onRetry={() => { setFailed(false); setNonce((n) => n + 1); }} />
       </Layout>
     );
   }
@@ -143,7 +145,7 @@ export default function WisdomTopic() {
       />
 
       {/* Hero */}
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "14px" }}>
             <Link href="/wisdom" style={{ color: "var(--mustard)", textDecoration: "none" }}>Wisdom</Link> · What the Bible says

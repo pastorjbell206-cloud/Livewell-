@@ -93,12 +93,13 @@ const GroupGuide = lazy(() => import("./pages/GroupGuide"));
 const CaptureByTheRight = lazy(() => import("./pages/pillars/CaptureByTheRight"));
 const CaptureByTheLeft = lazy(() => import("./pages/pillars/CaptureByTheLeft"));
 const ReadingScripturePastOurPolitics = lazy(() => import("./pages/pillars/ReadingScripturePastOurPolitics"));
-const AfterChristendomPillar = lazy(() => import("./pages/pillars/AfterChristendomPillar"));
+const ThePastoralAngle = lazy(() => import("./pages/pillars/ThePastoralAngle"));
 const Membership = lazy(() => import("./pages/Membership"));
 const MembershipSuccess = lazy(() => import("./pages/MembershipSuccess"));
 const Wisdom = lazy(() => import("./pages/Wisdom"));
 const WisdomTopic = lazy(() => import("./pages/WisdomTopic"));
 const HowTos = lazy(() => import("./pages/HowTos"));
+const Notes = lazy(() => import("./pages/Notes"));
 const HowToArticle = lazy(() => import("./pages/HowToArticle"));
 const LifeIndex = lazy(() => import("./pages/life/LifeIndex"));
 const LifeDomain = lazy(() => import("./pages/life/LifeDomain"));
@@ -154,7 +155,6 @@ const NationHub = lazy(() => import("./pages/nation/NationHub"));
 const NationEssay = lazy(() => import("./pages/nation/NationEssay"));
 const NationScorecard = lazy(() => import("./pages/nation/NationScorecard"));
 const NationPolicy = lazy(() => import("./pages/nation/NationPolicy"));
-const SermonSeries = lazy(() => import("./pages/leadership/SermonSeries"));
 const PropheticLament = lazy(() => import("./pages/prophetic/PropheticLament"));
 const EmotionalHealth = lazy(() => import("./pages/tools/EmotionalHealth"));
 const SavedItems = lazy(() => import("./pages/tools/SavedItems"));
@@ -459,13 +459,14 @@ function Router() {
         <Route path="/capture-by-the-right" component={CaptureByTheRight} />
         <Route path="/capture-by-the-left" component={CaptureByTheLeft} />
         <Route path="/reading-scripture-past-our-politics" component={ReadingScripturePastOurPolitics} />
-        <Route path="/after-christendom" component={AfterChristendomPillar} />
+        <Route path="/the-pastoral-angle" component={ThePastoralAngle} />
         <Route path="/for-pastors" component={PastorsMovedRedirect} />
         <Route path="/membership" component={Membership} />
         <Route path="/membership/success" component={MembershipSuccess} />
         <Route path="/wisdom" component={Wisdom} />
         <Route path="/wisdom/:id" component={WisdomTopic} />
         <Route path="/how-tos" component={HowTos} />
+        <Route path="/notes" component={Notes} />
         <Route path="/how-tos/:slug" component={HowToArticle} />
         <Route path="/studyguides" component={StudyGuidesIndex} />
         <Route path="/studyguides/:slug" component={StudyGuide} />
@@ -658,16 +659,14 @@ function App() {
   return (
     <ErrorBoundary>
       {/*
-        Dark mode is intentionally not `switchable` for now. The site-wide dark
-        palette is unfinished — many section heroes mix theme-flipping tokens
-        (--ink / --bone) with non-flipping ones (--charcoal / --charcoal-fg),
-        so under html.dark their text renders invisible (dark-on-dark or
-        light-on-light). Until those heroes are standardized on the correct
-        pairing, dark mode stays off: every visitor gets light mode, the Footer
-        toggle is hidden (toggleTheme is undefined when not switchable), and any
-        visitor whose localStorage still says "dark" is reset to light.
+        Dark mode is switchable via the Footer toggle. Every dark hero/section/
+        card is standardized on the always-dark pairing — background
+        var(--charcoal) (holds dark in both themes) with text var(--charcoal-fg)
+        (holds light in both themes) — so headings stay readable under
+        html.dark. Inverting controls (buttons with var(--ink) bg + var(--paper)
+        text) flip in lockstep and remain legible. Default stays light.
       */}
-      <ThemeProvider defaultTheme="light">
+      <ThemeProvider defaultTheme="light" switchable>
         <ToastProvider>
           <TooltipProvider>
             <Toaster />

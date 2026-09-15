@@ -130,7 +130,7 @@ export default function Explore() {
   return (
     <Layout>
       <SEOMeta
-        title="Explore the Whole Library | James Bell"
+        title="Explore Everything — The full catalogue | James Bell"
         description="Every essay, tool, study guide, book, creed, and course in one searchable place. Filter by type or search across all of it — the whole library, one front door."
         url={`${SITE_URL}/explore`}
       />

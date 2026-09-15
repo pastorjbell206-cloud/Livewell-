@@ -119,7 +119,7 @@ export function AdminSyncPanel() {
           </h3>
           <div className="flex items-center gap-2" style={{ color: "var(--ink-muted)" }}>
             <Clock size={16} />
-            <span>Daily at 6:00 AM</span>
+            <span>Manual — click Sync</span>
           </div>
         </div>
 
@@ -323,9 +323,9 @@ export function AdminSyncPanel() {
       >
         <AlertCircle size={20} style={{ color: "var(--adm-warn)", flexShrink: 0 }} />
         <div style={{ color: "var(--adm-warn-text)" }}>
-          <p className="font-semibold mb-1">Automatic Syncing Enabled</p>
+          <p className="font-semibold mb-1">Manual sync</p>
           <p style={{ fontSize: "0.875rem" }}>
-            Feeds are automatically synced daily at 6:00 AM. You can also manually trigger syncs anytime using the buttons above.
+            Nothing runs on a schedule. Click Sync to pull the Substack feed; new posts are added as unpublished drafts for review, filed by the same mapping the importer uses. The Pastors Connection feed is no longer synced here — that material lives on pastorsconnectionnetwork.com.
           </p>
         </div>
       </div>

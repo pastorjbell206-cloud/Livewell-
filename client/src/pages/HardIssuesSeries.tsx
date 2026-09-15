@@ -270,7 +270,7 @@ export default function HardIssuesSeries() {
       />
 
       {/* HERO */}
-      <section style={{ background: "var(--ink)", color: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
+      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-6) var(--s-4)" }}>
         <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
           <div style={{ ...eyebrow, color: "var(--mustard)" }}>Pastors Connection Network · Free for Church Leaders</div>
           <h1
@@ -327,7 +327,7 @@ export default function HardIssuesSeries() {
       </section>
 
       {/* SUPPORT */}
-      <section style={{ background: "var(--ink)", color: "var(--bone)", padding: "var(--s-6) var(--s-4)", textAlign: "center" }}>
+      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-6) var(--s-4)", textAlign: "center" }}>
         <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
           <div style={{ ...eyebrow, color: "var(--mustard)" }}>Optional</div>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(26px, 3.4vw, 34px)", fontWeight: 400, letterSpacing: "-0.02em", margin: "10px 0 16px" }}>

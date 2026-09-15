@@ -18,7 +18,6 @@ const PATH_FOR_PILLAR: Record<string, string> = {
   "capture-by-the-right": "capture-by-the-right",
   "capture-by-the-left": "capture-by-the-left",
   "reading-scripture-past-our-politics": "reading-scripture-past-our-politics",
-  "after-christendom-pillar": "the-church-after-christendom",
   "the-pastoral-angle": "the-pastoral-angle",
 };
 
@@ -29,7 +28,7 @@ export default function Map() {
   return (
     <Layout>
       <SEOMeta
-        title="The Map — Two Movements, Six Pillars | LiveWell"
+        title="The Map — Two Movements, Five Pillars | LiveWell"
         description="The whole site in one screen: five pillars of diagnosis — the captures, Scripture, Christendom, the pastoral weight — flowing into one pillar of formation."
         url="https://www.livewellbyjamesbell.co/map"
       />
@@ -38,10 +37,10 @@ export default function Map() {
       <section style={{ background: "var(--charcoal)", padding: "var(--s-7) var(--s-3) var(--s-5)" }}>
         <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "1.5rem" }}>The map</div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(2.2rem, 4.8vw, 3.2rem)", fontWeight: 400, lineHeight: 1.08, letterSpacing: "-0.02em", color: "var(--bone)", marginBottom: "1.2rem" }}>
+          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(2.2rem, 4.8vw, 3.2rem)", fontWeight: 400, lineHeight: 1.08, letterSpacing: "-0.02em", color: "var(--charcoal-fg)", marginBottom: "1.2rem" }}>
             The whole argument, in one screen
           </h1>
-          <p style={{ color: "var(--bone)", opacity: 0.8, fontSize: "1.05rem", lineHeight: 1.7, maxWidth: "62ch" }}>
+          <p style={{ color: "var(--charcoal-fg)", opacity: 0.8, fontSize: "1.05rem", lineHeight: 1.7, maxWidth: "62ch" }}>
             Everything here moves the same direction: first the diagnosis — what captured the American church, named one capture at a time — then the formation, where a life gets rebuilt on older ground. Stand anywhere on this map and you can see where you are, what came before you, and what the next step is.
           </p>
         </div>
@@ -117,7 +116,7 @@ export default function Map() {
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-3)", textAlign: "center" }}>
         <div style={{ maxWidth: "560px", margin: "0 auto" }}>
           <div style={{ width: "40px", height: "2px", background: "var(--mustard)", margin: "0 auto 2rem" }} />
-          <p style={{ fontFamily: "var(--F)", fontSize: "1.1rem", lineHeight: 1.65, color: "var(--bone)", fontStyle: "italic", marginBottom: "2rem" }}>
+          <p style={{ fontFamily: "var(--F)", fontSize: "1.1rem", lineHeight: 1.65, color: "var(--charcoal-fg)", fontStyle: "italic", marginBottom: "2rem" }}>
             You do not have to walk it in order. But it was built in order, and the order is doing something.
           </p>
           <div style={{ display: "flex", gap: "2rem", justifyContent: "center", flexWrap: "wrap" }}>
@@ -131,7 +130,7 @@ export default function Map() {
               All reading paths
             </Link>
             <Link href="/pillars" style={{ fontFamily: "var(--U)", fontSize: "0.875rem", fontWeight: 500, color: "var(--mustard)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "0.25rem" }}>
-              The six pillars
+              The five pillars
             </Link>
           </div>
         </div>

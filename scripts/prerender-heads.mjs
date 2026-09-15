@@ -42,8 +42,10 @@ const BING_VERIFICATION =
 // Branded default card rendered by the dynamic OG Edge function (api/og.tsx).
 // There is no static og-default.png in the repo; this endpoint always renders.
 const OG_DEFAULT = ogImageUrl("LiveWell by James Bell", "Theology for everyday life");
+// Hand-mirror of BRAND_SENTENCE in client/src/lib/positioning.ts (this .mjs
+// cannot import it). server/brand-sentence.test.ts fails CI if they drift.
 const FALLBACK_DESC =
-  "Theology that carries the weight of everyday life. Essays on faith, justice, marriage, parenting, and pastoral ministry by James Bell.";
+  "The American church traded the gospel for power; James Bell writes from inside the trade, for readers tired of being told whose side God is on.";
 
 const STATIC_PAGES = [
   {
@@ -68,19 +70,19 @@ const STATIC_PAGES = [
   },
   {
     path: "/books",
-    title: "Books — by James Bell",
+    title: "Books by James Bell — Three Titles, Written by Hand",
     description: "The books James Bell wrote by hand: When God Bless America Replaces Thy Kingdom Come, The Monster in the Mirror, and Believe. Read the opening of each free.",
     type: "website",
   },
   {
     path: "/marriage",
-    title: "Marriage — Essays for Couples",
+    title: "Christian Marriage Help — Covenant, Conflict, and Repair",
     description: "Marriage essays for couples in ministry, midlife, and beyond. Honest, theologically grounded, never tip-shaped.",
     type: "website",
   },
   {
     path: "/parenting",
-    title: "Parenting — From a Father of Five",
+    title: "Christian Parenting Help — From a Father of Five",
     description: "Essays on parenting from a pastor and father of five sons. Formation over performance, presence over advice.",
     type: "website",
   },
@@ -110,7 +112,7 @@ const STATIC_PAGES = [
   },
   {
     path: "/library",
-    title: "The Library — A commonplace book",
+    title: "The Commonplace — A quote book of what is worth keeping",
     description: "Curated quotes from Keller, Brueggemann, Peterson, Bonhoeffer, Newbigin, Taylor, Bellah, Haidt.",
     type: "website",
   },
@@ -134,7 +136,7 @@ const STATIC_PAGES = [
   },
   {
     path: "/nation",
-    title: "Christ and the Nation",
+    title: "Christ and the Nation — The Bible, America, and Power",
     description: "Was America a Christian nation? How close is each party to the Bible? What a biblical government would actually mean.",
     type: "website",
   },
@@ -495,6 +497,23 @@ function bookSchema(book, url, image) {
     author: { "@type": "Person", name: book.author || AUTHOR_NAME },
     image: image || OG_DEFAULT,
     url,
+  };
+}
+
+// The plain-language search layer (scripts/build-seo-layer.mjs): a meta
+// description in everyday words per essay and, when the title is a question,
+// the question with the essay's own answer. Missing file = no layer, no crash.
+const SEO_LAYER = readJsonSafe("content/seo-layer.generated.json") || {};
+
+function qaSchema(qa) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "QAPage",
+    mainEntity: {
+      "@type": "Question",
+      name: qa.question,
+      acceptedAnswer: { "@type": "Answer", text: qa.answer },
+    },
   };
 }
 
@@ -951,7 +970,8 @@ async function main() {
         // branded card from its title (+ pillar) via the dynamic OG endpoint.
         const image =
           post.coverImage || ogImageUrl(post.title, post.pillar || undefined);
-        const description = post.excerpt || post.title;
+        const seo = SEO_LAYER[post.slug];
+        const description = seo?.metaDescription || post.excerpt || post.title;
         const publishedIso = post.publishedAt
           ? new Date(post.publishedAt).toISOString()
           : new Date(post.createdAt).toISOString();
@@ -967,7 +987,8 @@ async function main() {
           publishedDate: publishedIso,
           modifiedDate: modifiedIso,
           schemas: [
-            articleSchema(post, url, image),
+            articleSchema({ ...post, excerpt: description }, url, image),
+            ...(seo?.qa ? [qaSchema(seo.qa)] : []),
             breadcrumbSchema([
               { name: "Home", path: "" },
               { name: "Writing", path: "/writing" },
@@ -1050,7 +1071,8 @@ async function main() {
       if (writtenEssaySlugs.has(rec.slug)) continue;
       const url = `${SITE_URL}/writing/${rec.slug}`;
       const image = rec.coverImage || ogImageUrl(rec.title, rec.pillar || undefined);
-      const description = rec.excerpt || rec.title;
+      const seo = SEO_LAYER[rec.slug];
+      const description = seo?.metaDescription || rec.excerpt || rec.title;
       const publishedIso = rec.publishedAt
         ? new Date(rec.publishedAt).toISOString()
         : new Date(rec.createdAt || Date.parse("2026-01-01")).toISOString();
@@ -1063,7 +1085,7 @@ async function main() {
         type: "article",
         publishedDate: publishedIso,
         modifiedDate: modifiedIso,
-        schemas: [articleSchema(rec, url, image)],
+        schemas: [articleSchema({ ...rec, excerpt: description }, url, image), ...(seo?.qa ? [qaSchema(seo.qa)] : [])],
       });
       const bodyHtml = bodyFromContent({
         title: rec.title,

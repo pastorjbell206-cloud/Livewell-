@@ -93,7 +93,7 @@ export default function DiscipleMaking() {
         url="https://www.livewellbyjamesbell.co/disciple-making"
       />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>Make Disciples · The ordinary way</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5.2vw, 56px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "18px", maxWidth: "18ch" }}>
@@ -128,7 +128,7 @@ export default function DiscipleMaking() {
             ))}
           </div>
 
-          <div style={{ marginTop: "var(--s-5)", background: "var(--charcoal)", padding: "var(--s-4)", color: "var(--bone)" }}>
+          <div style={{ marginTop: "var(--s-5)", background: "var(--charcoal)", padding: "var(--s-4)", color: "var(--charcoal-fg)" }}>
             <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "10px" }}>The tool</div>
             <p style={{ fontFamily: "var(--F)", fontSize: "19px", lineHeight: 1.5, marginBottom: "16px", maxWidth: "56ch" }}>
               Start a Table builds you a complete, reproducing plan for a discipleship table: who to invite, how to ask, a simple weekly rhythm of meal, Scripture, and prayer, and how to multiply it. Made for the regular person with no training.

@@ -44,7 +44,7 @@ export default function NationScorecard() {
     <Layout>
       <SEOMeta title="The Scorecard — How Close Is Each Party to the Bible?" description="An even-handed measure, theme by theme, of how near the left, center, and right come to the teaching of Scripture. No party is the kingdom of God." url="https://www.livewellbyjamesbell.co/nation/scorecard" />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
             <Link href="/nation" style={{ color: "inherit" }}>Christ and the Nation</Link> · The scorecard
@@ -116,10 +116,10 @@ export default function NationScorecard() {
       </section>
 
       {data?.closing && (
-        <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4)", color: "var(--bone)" }}>
+        <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4)", color: "var(--charcoal-fg)" }}>
           <div style={wrap}>
             <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "10px" }}>The verdict</div>
-            {data.closing.split("\n\n").map((p, i) => <p key={i} style={{ fontFamily: "var(--F)", fontSize: "clamp(20px, 2.8vw, 26px)", fontWeight: 400, lineHeight: 1.5, color: "var(--bone)", maxWidth: "60ch", marginBottom: "14px" }}>{p}</p>)}
+            {data.closing.split("\n\n").map((p, i) => <p key={i} style={{ fontFamily: "var(--F)", fontSize: "clamp(20px, 2.8vw, 26px)", fontWeight: 400, lineHeight: 1.5, color: "var(--charcoal-fg)", maxWidth: "60ch", marginBottom: "14px" }}>{p}</p>)}
             <Link href="/nation/policy" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard)" }}>What biblical policy might look like →</Link>
           </div>
         </section>

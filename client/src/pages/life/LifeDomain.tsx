@@ -57,7 +57,7 @@ export default function LifeDomain() {
     <Layout>
       {data && <SEOMeta title={`${data.title} — Integrated Life`} description={data.subtitle} url={`https://www.livewellbyjamesbell.co/life/${slug}`} />}
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
             <Link href="/life" style={{ color: "inherit" }}>Integrated Life</Link>
@@ -78,7 +78,7 @@ export default function LifeDomain() {
         const dark = part.id === "formation";
         const bg = dark ? "var(--charcoal)" : i % 2 ? "var(--bone-warm)" : "var(--bone)";
         return (
-          <section key={part.id} style={{ background: bg, padding: "var(--s-5) var(--s-4)", color: dark ? "var(--bone)" : "var(--ink)" }}>
+          <section key={part.id} style={{ background: bg, padding: "var(--s-5) var(--s-4)", color: dark ? "var(--charcoal-fg)" : "var(--ink)" }}>
             <div style={wrap}>
               <div className="eyebrow" style={{ color: dark ? "var(--mustard)" : "var(--mustard-text)", marginBottom: "8px" }}>Part {i + 1} of 8</div>
               <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px, 3.4vw, 34px)", fontWeight: 400, letterSpacing: "-0.02em", lineHeight: 1.1, marginBottom: "var(--s-3)" }}>{part.title}</h2>

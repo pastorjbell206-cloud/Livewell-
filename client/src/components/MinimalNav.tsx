@@ -110,6 +110,9 @@ export default function MinimalNav() {
 
   return (
     <>
+      {/* Skip link — first focusable element on every page (the nav renders on
+          all of them, including the pages that bypass Layout). Targets #main. */}
+      <a href="#main" className="skip-link">Skip to content</a>
       {/* Search Overlay */}
       {searchOpen && (
         <div
@@ -166,7 +169,7 @@ export default function MinimalNav() {
                   border: "none",
                   borderBottom: "2px solid var(--mustard)",
                   fontSize: "clamp(28px, 4vw, 48px)",
-                  color: "var(--bone)",
+                  color: "var(--charcoal-fg)",
                   outline: "none",
                   padding: "8px 0 16px",
                   caretColor: "var(--mustard)",
@@ -223,7 +226,7 @@ export default function MinimalNav() {
       )}
 
       {/* Main Nav */}
-      <nav
+      <nav className="site-nav"
         style={{
           position: "sticky",
           top: 0,
@@ -439,8 +442,8 @@ export default function MinimalNav() {
               <button
                 type="button"
                 style={{
-                  background: "var(--ink)",
-                  color: "var(--bone)",
+                  background: "var(--charcoal)",
+                  color: "var(--charcoal-fg)",
                   border: "none",
                   borderBottom: "2px solid var(--mustard)",
                   padding: "9px 20px",
@@ -642,8 +645,8 @@ export default function MinimalNav() {
                   flex: 1,
                   textDecoration: "none",
                   textAlign: "center",
-                  background: "var(--ink)",
-                  color: "var(--bone)",
+                  background: "var(--charcoal)",
+                  color: "var(--charcoal-fg)",
                   borderBottom: "2px solid var(--mustard)",
                   padding: "14px 24px",
                   fontFamily: "var(--U)",

@@ -16,12 +16,11 @@ import ToolStrip, { type ToolStripItem } from "@/components/ToolStrip";
  * where the pillar sits in the arc. Copy lives in the pages, not here.
  */
 
-/** Pillar slug → its landing route (the sixth lives at /living-well). */
+/** Pillar slug → its landing route (the formation pillar lives at /living-well). */
 export const ROUTE_FOR_PILLAR: Record<string, string> = {
   "capture-by-the-right": "/capture-by-the-right",
   "capture-by-the-left": "/capture-by-the-left",
   "reading-scripture-past-our-politics": "/reading-scripture-past-our-politics",
-  "after-christendom-pillar": "/after-christendom",
   "the-pastoral-angle": "/the-pastoral-angle",
   "living-well-after-christendom": "/living-well",
 };
@@ -69,7 +68,7 @@ export default function PillarLanding({
   return (
     <Layout>
       {/* HERO */}
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-7) var(--s-4) var(--s-6)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-7) var(--s-4) var(--s-6)", color: "var(--charcoal-fg)" }}>
         <div style={{ maxWidth: "var(--w-content)", margin: "0 auto" }}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
             Diagnosis · Pillar {NUMBER_WORD[pillar.id]}
@@ -136,21 +135,21 @@ export default function PillarLanding({
           <div>
             {prev && ROUTE_FOR_PILLAR[prev.slug] && (
               <Link href={ROUTE_FOR_PILLAR[prev.slug]} style={{ textDecoration: "none" }}>
-                <span style={{ display: "block", fontFamily: "var(--U)", fontSize: "0.7rem", letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--bone)", opacity: 0.5, marginBottom: "0.3rem" }}>← Previous pillar</span>
-                <span style={{ fontFamily: "var(--F)", fontSize: "1.05rem", color: "var(--bone)" }}>{prev.name}</span>
+                <span style={{ display: "block", fontFamily: "var(--U)", fontSize: "0.7rem", letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--charcoal-fg)", opacity: 0.5, marginBottom: "0.3rem" }}>← Previous pillar</span>
+                <span style={{ fontFamily: "var(--F)", fontSize: "1.05rem", color: "var(--charcoal-fg)" }}>{prev.name}</span>
               </Link>
             )}
           </div>
           <div style={{ textAlign: "right" }}>
             {next && ROUTE_FOR_PILLAR[next.slug] && (
               <Link href={ROUTE_FOR_PILLAR[next.slug]} style={{ textDecoration: "none" }}>
-                <span style={{ display: "block", fontFamily: "var(--U)", fontSize: "0.7rem", letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--bone)", opacity: 0.5, marginBottom: "0.3rem" }}>Next pillar →</span>
-                <span style={{ fontFamily: "var(--F)", fontSize: "1.05rem", color: "var(--bone)" }}>{next.name}</span>
+                <span style={{ display: "block", fontFamily: "var(--U)", fontSize: "0.7rem", letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--charcoal-fg)", opacity: 0.5, marginBottom: "0.3rem" }}>Next pillar →</span>
+                <span style={{ fontFamily: "var(--F)", fontSize: "1.05rem", color: "var(--charcoal-fg)" }}>{next.name}</span>
               </Link>
             )}
           </div>
           <div style={{ flexBasis: "100%", marginTop: "1.2rem" }}>
-            <Link href="/pillars" style={goldLink}>All six pillars</Link>
+            <Link href="/pillars" style={goldLink}>All five pillars</Link>
           </div>
         </div>
       </section>

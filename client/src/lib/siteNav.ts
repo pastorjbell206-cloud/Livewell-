@@ -60,6 +60,9 @@ export const SITE_NAV_GROUPS: SiteNavGroup[] = [
     links: [
       { label: "All the writing", href: "/writing", primary: true },
       { label: "Explore everything", href: "/explore", primary: true },
+      // The short pieces (Facebook-length). Footer tail until the posts are
+      // imported; a header link to an empty room helps nobody.
+      { label: "Notes", href: "/notes" },
       { label: "Theology", href: "/theology", primary: true },
       { label: "Church history", href: "/theology/history", primary: true },
       { label: "Justice", href: "/justice", primary: true },

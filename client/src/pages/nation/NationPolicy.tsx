@@ -32,7 +32,7 @@ export default function NationPolicy() {
     <Layout>
       <SEOMeta title="The Biblical Policy Explorer — What Would It Actually Look Like?" description="If biblical law shaped policy in America, from Jubilee to the gleaning laws to the warning against kings, what would it look like? It leaves both parties out." url="https://www.livewellbyjamesbell.co/nation/policy" />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
             <Link href="/nation" style={{ color: "inherit" }}>Christ and the Nation</Link> · The policy explorer
@@ -85,10 +85,10 @@ export default function NationPolicy() {
       </section>
 
       {data?.closing && (
-        <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4)", color: "var(--bone)" }}>
+        <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4)", color: "var(--charcoal-fg)" }}>
           <div style={wrap}>
             <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "10px" }}>The point</div>
-            {data.closing.split("\n\n").map((p, i) => <p key={i} style={{ fontFamily: "var(--F)", fontSize: "clamp(20px, 2.8vw, 26px)", fontWeight: 400, lineHeight: 1.5, color: "var(--bone)", maxWidth: "60ch", marginBottom: "14px" }}>{p}</p>)}
+            {data.closing.split("\n\n").map((p, i) => <p key={i} style={{ fontFamily: "var(--F)", fontSize: "clamp(20px, 2.8vw, 26px)", fontWeight: 400, lineHeight: 1.5, color: "var(--charcoal-fg)", maxWidth: "60ch", marginBottom: "14px" }}>{p}</p>)}
             <Link href="/nation/theocracy" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard)" }}>Why a theocracy cannot be rebuilt →</Link>
           </div>
         </section>

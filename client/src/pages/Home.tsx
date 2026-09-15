@@ -1,25 +1,28 @@
 /**
  * Home — mission-forward landing page.
  *
- * The homepage leads with the founder's headline and four mission doors —
- * Become a Disciple, Make Disciples, Leadership Training, Prophetic Justice —
- * so a visitor is routed by what they came for, not by the political/cultural
- * essay arcs (those live under Writing and the nav, not the front page). Below
+ * The homepage leads with the founder's headline and the intent doors — written
+ * in the reader's own words ("I'm doubting my faith", "My marriage is
+ * struggling") — so a visitor is routed by what they came for, not by the
+ * political/cultural essay arcs (those live under Writing and the nav, not the
+ * front page). The doors are the DOORS array below; edit them there. Below
  * the doors: the latest essays, the segmented signup (the conversion surface),
- * and the five pillars as the deeper taxonomy spine.
+ * and the pillars as the deeper taxonomy spine.
  */
+import { useEffect, useState } from "react";
 import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
 import { SKEPTIC_TRACK_LIVE } from "@/lib/skepticTrack";
 
-import { PullQuote, SectionArt, StatementBand } from "@/components/EditorialBlocks";
+import { StatementBand } from "@/components/EditorialBlocks";
 import Footer from "@/components/Footer";
 import MinimalNav from "@/components/MinimalNav";
-import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { SegmentedSignup } from "@/components/SegmentedSignup";
 import { SEOMeta, getOrganizationSchema, getWebSiteSchema } from "@/components/SEOMeta";
 import { TrackChip } from "@/components/TrackChip";
+import { EssayArt } from "@/components/EssayArt";
 import { trpc } from "@/lib/trpc";
+import { fetchJson } from "@/lib/fetch-json";
 import { isFullEssay } from "@/lib/essayQuality";
 import FollowJames from "@/components/FollowJames";
 import AnnouncementBar from "@/components/AnnouncementBar";
@@ -30,6 +33,7 @@ import {
   PRIMARY_KICKER,
   PRIMARY_SUBHEAD,
   PRIMARY_SUBHEAD_SHORT,
+  SUBSTACK_PITCH,
 } from "@/lib/positioning";
 // Hero A/B variant. "A" (default): tighter two-sentence subhead + a "Find your
 // track" secondary CTA that serves everyone (the skeptic entry stays as a
@@ -118,7 +122,10 @@ const DOORS = [
   },
 ];
 
-// The five pillars — the deeper writing taxonomy, kept visible below the doors.
+// Four reading areas — the deeper writing taxonomy, kept visible below the
+// doors. These are the reference wings, not the two-movement pillar spine
+// (that lives at /pillars and in taxonomy.ts); the heading below says "ways in"
+// so the homepage never claims a pillar count that contradicts /pillars.
 const PILLARS = [
   { name: "Theological Depth", href: "/theology", blurb: "Doctrine, church history, the whole biblical story." },
   { name: "Prophetic Justice", href: "/justice", blurb: "The poor, the outsider, the systems we inherit." },
@@ -140,7 +147,18 @@ const FLAGSHIP_SLUGS = [
 
 export default function Home() {
   const articlesQuery = trpc.posts.listPublished.useQuery();
-  const all = articlesQuery.data ?? [];
+  type Listed = NonNullable<typeof articlesQuery.data>[number];
+  // Static first, like /writing: the flagship essays come from /essays/index.json
+  // (built at deploy) so the front page shows the writing before the API answers.
+  const [staticIndex, setStaticIndex] = useState<Listed[] | null>(null);
+  useEffect(() => {
+    let stale = false;
+    fetchJson<unknown[]>("/essays/index.json", (x): x is unknown[] => Array.isArray(x))
+      .then(rows => { if (!stale) setStaticIndex(rows.filter(r => !!r && typeof r === "object") as unknown as Listed[]); })
+      .catch(() => { /* no static index in this checkout — the API list carries the page */ });
+    return () => { stale = true; };
+  }, []);
+  const all: Listed[] = articlesQuery.data ?? staticIndex ?? [];
 
   // Lead with the strongest essays; fall back to latest if a slug is absent.
   // The fallback skips catalog stubs (see docs/audit-corpus/) so a short abstract
@@ -229,22 +247,8 @@ export default function Home() {
               {PRIMARY_HEADLINE}
             </h1>
 
-            <p
-              className="lede-rise-2"
-              style={{
-                fontFamily: "var(--F)",
-                fontSize: "clamp(20px, 2.6vw, 30px)",
-                fontStyle: "italic",
-                fontWeight: 400,
-                lineHeight: 1.3,
-                color: "var(--charcoal-fg)",
-                maxWidth: "32ch",
-                marginBottom: "24px",
-              }}
-            >
-              Learning to follow Jesus — and live well — in post-Christian America.
-            </p>
-
+            {/* One positioning sentence, from positioning.ts. A second, hardcoded
+                line used to sit here; the hero now says one thing. */}
             <p
               style={{
                 fontFamily: "var(--B)",
@@ -406,47 +410,140 @@ export default function Home() {
         </div>
       </section>
 
-      {/* THE ASK, EARLY — a reader who is already convinced by the hero should
-          not have to scroll past eight doors and the whole library to find the
-          subscribe form. The full segmented version still sits further down for
-          the reader who needed convincing; this is the same ask, stated once up
-          front. */}
+      {/* RECENT ESSAYS */}
       <section
-        id="home-hero-signup"
-        style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--s-4)" }}
+        style={{
+          background: "var(--bone)",
+          padding: "var(--s-6) var(--s-4)",
+        }}
       >
-        <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", textAlign: "center" }}>
-          <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "10px" }}>
-            The newsletter
-          </div>
-          <h2
+        <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
+          <div
             style={{
-              fontFamily: "var(--F)",
-              fontSize: "clamp(24px, 3.4vw, 34px)",
-              fontWeight: 400,
-              letterSpacing: "-0.02em",
-              color: "var(--ink)",
-              lineHeight: 1.15,
-              marginBottom: "10px",
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "baseline",
+              marginBottom: "var(--s-4)",
+              flexWrap: "wrap",
+              gap: "12px",
             }}
           >
-            One serious essay a week.
-          </h2>
-          <p
-            style={{
-              fontFamily: "var(--B)",
-              fontSize: "16px",
-              lineHeight: 1.7,
-              color: "var(--ink-muted)",
-              maxWidth: "52ch",
-              margin: "0 auto var(--s-4)",
-            }}
-          >
-            Theology that carries the weight of a Tuesday. No filler, no funnel, and you can leave whenever you like.
-          </p>
-          <div style={{ maxWidth: "460px", margin: "0 auto" }}>
-            <NewsletterSignup variant="inline" source="home-hero" />
+            <h2
+              style={{
+                fontFamily: "var(--F)",
+                fontSize: "32px",
+                fontWeight: 400,
+                letterSpacing: "-0.015em",
+                color: "var(--ink)",
+              }}
+            >
+              Start with these
+            </h2>
+            <Link
+              href="/writing"
+              style={{
+                fontFamily: "var(--U)",
+                fontSize: "13px",
+                fontWeight: 600,
+                color: "var(--ink-muted)",
+                textDecoration: "none",
+                borderBottom: "1px solid var(--mustard)",
+                paddingBottom: "2px",
+              }}
+            >
+              All writing →
+            </Link>
           </div>
+
+          {articlesQuery.isLoading && (
+            <div
+              role="status"
+              aria-label="Loading the essays"
+              style={{
+                display: "grid",
+                gridTemplateColumns: "repeat(auto-fill, minmax(min(300px, 100%), 1fr))",
+                gap: "24px",
+              }}
+            >
+              {Array.from({ length: 3 }, (_, i) => (
+                <div
+                  key={i}
+                  className="animate-pulse"
+                  style={{
+                    background: "var(--bone)",
+                    borderRadius: "var(--radius-sm)",
+                    height: "200px",
+                  }}
+                />
+              ))}
+            </div>
+          )}
+
+          {flagship.length > 0 && (
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "repeat(auto-fill, minmax(min(300px, 100%), 1fr))",
+                gap: "24px",
+              }}
+            >
+              {flagship.map(a => (
+                <Link
+                  key={a.id}
+                  href={`/writing/${a.slug}`}
+                  style={{ textDecoration: "none", color: "inherit" }}
+                >
+                  <article
+                    style={{
+                      background: "var(--card)",
+                      padding: "var(--s-4)",
+                      border: "1px solid var(--border)",
+                      borderRadius: "var(--radius-sm)",
+                      minHeight: "100%",
+                      display: "flex",
+                      flexDirection: "column",
+                      cursor: "pointer",
+                      transition: "all 0.2s",
+                    }}
+                    onMouseEnter={e => {
+                      e.currentTarget.style.borderColor = "var(--mustard)";
+                    }}
+                    onMouseLeave={e => {
+                      e.currentTarget.style.borderColor = "var(--border)";
+                    }}
+                  >
+                    <EssayArt seed={a.slug} track={a.pillar} decorative style={{ marginBottom: "14px", borderRadius: "var(--radius-sm)" }} />
+                    <div style={{ marginBottom: "12px" }}>
+                      <TrackChip pillarOrTrack={a.pillar} slug={a.slug} asLink={false} />
+                    </div>
+                    <h3
+                      style={{
+                        fontFamily: "var(--F)",
+                        fontSize: "22px",
+                        fontWeight: 500,
+                        letterSpacing: "-0.005em",
+                        lineHeight: 1.25,
+                        color: "var(--ink)",
+                        marginBottom: "12px",
+                        flex: 1,
+                      }}
+                    >
+                      {a.title}
+                    </h3>
+                    <div
+                      style={{
+                        fontFamily: "var(--U)",
+                        fontSize: "12px",
+                        color: "var(--ink-muted)",
+                      }}
+                    >
+                      {a.readingTimeMinutes ?? 5} min read
+                    </div>
+                  </article>
+                </Link>
+              ))}
+            </div>
+          )}
         </div>
       </section>
 
@@ -488,9 +585,6 @@ export default function Home() {
             Pick the door that sounds like you. Each one leads somewhere built
             for exactly that, and the rest of the site opens from there.
           </p>
-          <PullQuote>
-            Theology that can carry the weight of a Tuesday afternoon.
-          </PullQuote>
           <div
             style={{
               display: "grid",
@@ -639,145 +733,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FROM THE LIBRARY — the free full-length books, the strongest asset on
-          the site, so they sit above the essay river rather than under it. */}
-
-      {/* RECENT ESSAYS */}
-      <section
-        style={{
-          background: "var(--bone)",
-          padding: "var(--s-6) var(--s-4)",
-        }}
-      >
-        <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
-          <SectionArt seed="home-recent-essays" />
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "baseline",
-              marginBottom: "var(--s-4)",
-              flexWrap: "wrap",
-              gap: "12px",
-            }}
-          >
-            <h2
-              style={{
-                fontFamily: "var(--F)",
-                fontSize: "32px",
-                fontWeight: 400,
-                letterSpacing: "-0.015em",
-                color: "var(--ink)",
-              }}
-            >
-              Start with these
-            </h2>
-            <Link
-              href="/writing"
-              style={{
-                fontFamily: "var(--U)",
-                fontSize: "13px",
-                fontWeight: 600,
-                color: "var(--ink-muted)",
-                textDecoration: "none",
-                borderBottom: "1px solid var(--mustard)",
-                paddingBottom: "2px",
-              }}
-            >
-              All writing →
-            </Link>
-          </div>
-
-          {articlesQuery.isLoading && (
-            <div
-              role="status"
-              aria-label="Loading the essays"
-              style={{
-                display: "grid",
-                gridTemplateColumns: "repeat(auto-fill, minmax(min(300px, 100%), 1fr))",
-                gap: "24px",
-              }}
-            >
-              {Array.from({ length: 3 }, (_, i) => (
-                <div
-                  key={i}
-                  className="animate-pulse"
-                  style={{
-                    background: "var(--bone)",
-                    borderRadius: "var(--radius-sm)",
-                    height: "200px",
-                  }}
-                />
-              ))}
-            </div>
-          )}
-
-          {flagship.length > 0 && (
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "repeat(auto-fill, minmax(min(300px, 100%), 1fr))",
-                gap: "24px",
-              }}
-            >
-              {flagship.map(a => (
-                <Link
-                  key={a.id}
-                  href={`/writing/${a.slug}`}
-                  style={{ textDecoration: "none", color: "inherit" }}
-                >
-                  <article
-                    style={{
-                      background: "var(--card)",
-                      padding: "var(--s-4)",
-                      border: "1px solid var(--border)",
-                      borderRadius: "var(--radius-sm)",
-                      height: "100%",
-                      display: "flex",
-                      flexDirection: "column",
-                      cursor: "pointer",
-                      transition: "all 0.2s",
-                    }}
-                    onMouseEnter={e => {
-                      e.currentTarget.style.borderColor = "var(--mustard)";
-                    }}
-                    onMouseLeave={e => {
-                      e.currentTarget.style.borderColor = "var(--border)";
-                    }}
-                  >
-                    <div style={{ marginBottom: "12px" }}>
-                      <TrackChip pillarOrTrack={a.pillar} slug={a.slug} asLink={false} />
-                    </div>
-                    <h3
-                      style={{
-                        fontFamily: "var(--F)",
-                        fontSize: "22px",
-                        fontWeight: 500,
-                        letterSpacing: "-0.005em",
-                        lineHeight: 1.25,
-                        color: "var(--ink)",
-                        marginBottom: "12px",
-                        flex: 1,
-                      }}
-                    >
-                      {a.title}
-                    </h3>
-                    <div
-                      style={{
-                        fontFamily: "var(--U)",
-                        fontSize: "12px",
-                        color: "var(--ink-muted)",
-                      }}
-                    >
-                      {a.readingTimeMinutes ?? 5} min read
-                    </div>
-                  </article>
-                </Link>
-              ))}
-            </div>
-          )}
-        </div>
-      </section>
 
       {/* SEGMENTED SUBSCRIBE — the single most important conversion surface */}
       <section
@@ -787,11 +742,7 @@ export default function Home() {
         }}
       >
         <div style={{ maxWidth: "var(--w-content)", margin: "0 auto" }}>
-          <SegmentedSignup
-            variant="panel"
-            title="One essay a week. Pick your track."
-            description="New essays Tuesday morning, a different lead by reader. Skeptics get the questions taken seriously. Christians get depth. Pastors get the letter and the work."
-          />
+          <SegmentedSignup variant="panel" title="Subscribe" description={SUBSTACK_PITCH} source="home" />
         </div>
       </section>
 
@@ -800,7 +751,7 @@ export default function Home() {
         than your assumptions.
       </StatementBand>
 
-      {/* THE FIVE PILLARS — the deeper writing taxonomy spine */}
+      {/* THE PILLARS — the deeper writing taxonomy spine */}
       <section
         style={{
           background: "var(--bone)",

@@ -23,13 +23,20 @@ export const SUBSTACK_URL = `https://${SUBSTACK_HANDLE}.substack.com`;
 
 // Substack subscribe handoff. Substack has no public signup API, so the
 // genuine subscription has to complete on Substack. We prefill the email and
-// tag the source so the segment carries through.
-export function substackSubscribeUrl(email?: string, source?: string): string {
+// tag the source so attribution carries through.
+//
+// One convention for every placement: utm_medium is WHERE the form sat
+// (footer, subscribe-page, substack-page, essay-series-note) and utm_content
+// is the reader's self-selected audience, when they chose one. The two used to
+// be mixed — one component put the audience in utm_medium — which muddied
+// Substack's source reporting.
+export function substackSubscribeUrl(email?: string, source?: string, audience?: string): string {
   const params = new URLSearchParams();
   if (email) params.set("email", email);
   // Substack reads utm_source/medium on the subscribe page.
   params.set("utm_source", "livewell");
   if (source) params.set("utm_medium", source);
+  if (audience) params.set("utm_content", audience);
   const qs = params.toString();
   return `${SUBSTACK_URL}/subscribe${qs ? `?${qs}` : ""}`;
 }

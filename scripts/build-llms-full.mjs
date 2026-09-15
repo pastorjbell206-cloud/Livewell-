@@ -126,5 +126,10 @@ for (const sec of SECTIONS) {
 out += `## Contact\n\nPastorjbell206@gmail.com\n`;
 
 fs.mkdirSync(path.dirname(OUT), { recursive: true });
+// The index is read by machines, and CI (scripts/validate-no-emdash.mjs) forbids
+// em-dashes in it. Sources such as the church-history subtitles still carry them,
+// so normalise at the point of emission rather than editing authored content:
+// " — " becomes ", " and any stray dash becomes a comma.
+out = out.replace(/\s*[—–]\s*/g, ", ");
 fs.writeFileSync(OUT, out);
 console.log(`[llms-full] wrote ${OUT} — ${total} entries, ${(out.length / 1024).toFixed(1)} KB`);

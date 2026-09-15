@@ -99,7 +99,7 @@ const linkPill: React.CSSProperties = {
   fontFamily: "var(--U)",
   fontSize: "0.8125rem",
   fontWeight: 500,
-  color: "var(--bone)",
+  color: "var(--charcoal-fg)",
   textDecoration: "none",
   padding: "0.55rem 1rem",
   border: "1px solid rgba(244,241,234,0.18)",
@@ -187,7 +187,7 @@ export function AuthorProfile() {
               fontFamily: "var(--U)",
               fontSize: "0.8125rem",
               fontWeight: 500,
-              color: "var(--bone)",
+              color: "var(--charcoal-fg)",
               opacity: 0.6,
               textDecoration: "none",
               marginBottom: "var(--s-5)",
@@ -227,7 +227,7 @@ export function AuthorProfile() {
                   fontWeight: 400,
                   lineHeight: 1.05,
                   letterSpacing: "-0.02em",
-                  color: "var(--bone)",
+                  color: "var(--charcoal-fg)",
                   marginBottom: "1.5rem",
                 }}
               >
@@ -238,7 +238,7 @@ export function AuthorProfile() {
                   fontFamily: "var(--B)",
                   fontSize: "1.0625rem",
                   lineHeight: 1.7,
-                  color: "var(--bone)",
+                  color: "var(--charcoal-fg)",
                   opacity: 0.82,
                   maxWidth: "60ch",
                 }}

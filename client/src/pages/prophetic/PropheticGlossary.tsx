@@ -44,7 +44,7 @@ export default function PropheticGlossary({ config }: { config: SectionConfig })
     <Layout>
       <SEOMeta title={`Glossary — ${config.label}`} description="The words of biblical justice from mishpat to jubilee, including the politically loaded ones, defined even-handedly." url={`https://www.livewellbyjamesbell.co${config.base}/glossary`} />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
             <Link href={config.base} style={{ color: "inherit" }}>{config.label}</Link> · Glossary

@@ -284,7 +284,7 @@ export default function Dashboard() {
               fontWeight: 400,
               lineHeight: 1.1,
               letterSpacing: "-0.02em",
-              color: "var(--bone)",
+              color: "var(--charcoal-fg)",
               marginBottom: "0.5rem",
             }}
           >
@@ -294,7 +294,7 @@ export default function Dashboard() {
             style={{
               fontFamily: "var(--U)",
               fontSize: "0.95rem",
-              color: "var(--bone)",
+              color: "var(--charcoal-fg)",
               opacity: 0.5,
               marginBottom: "2.5rem",
               lineHeight: 1.7,
@@ -335,7 +335,7 @@ export default function Dashboard() {
                     fontFamily: "var(--F)",
                     fontSize: "2rem",
                     fontWeight: 600,
-                    color: s.accent ? "var(--mustard)" : "var(--bone)",
+                    color: s.accent ? "var(--mustard)" : "var(--charcoal-fg)",
                     lineHeight: 1,
                     marginBottom: "0.35rem",
                   }}
@@ -392,7 +392,7 @@ export default function Dashboard() {
                   display: "inline-block",
                   padding: "0.75rem 1.5rem",
                   background: "var(--charcoal)",
-                  color: "var(--bone)",
+                  color: "var(--charcoal-fg)",
                   fontFamily: "var(--U)",
                   fontSize: "0.8rem",
                   fontWeight: 500,
@@ -659,6 +659,7 @@ export default function Dashboard() {
             <textarea
               value={noteText}
               onChange={(e) => setNoteText(e.target.value)}
+              aria-label="Write a note"
               placeholder="Write a note — a thought from your reading, a question you are sitting with, a conviction that will not let you go."
               rows={3}
               style={{
@@ -695,6 +696,7 @@ export default function Dashboard() {
                 type="text"
                 value={noteSlug}
                 onChange={(e) => setNoteSlug(e.target.value)}
+                aria-label="Article slug (optional)"
                 placeholder="Article slug (optional)"
                 style={{
                   flex: 1,
