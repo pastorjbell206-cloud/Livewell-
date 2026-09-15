@@ -12,6 +12,8 @@
 
 ## client/src/pages/ArticleDetail.tsx
 
+**Resolved in code:** the resolved `author` is now passed into QuoteSelectionShare and ShareableQuote, so a highlighted or pulled quote is attributed to its writer.
+
 - Pass the resolved `author` (line 556) into QuoteSelectionShare (line 815) and ShareableQuote (line 833) and use it in the two attribution templates at lines 185 and 274; until then a reader sharing a highlight from "the-work-nobody-watches" or "the-womanhood-they-preached-was-small" attributes Susanna's sentence to James.
 
 ## client/src/pages/AuthorProfile.tsx

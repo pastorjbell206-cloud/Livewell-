@@ -22,25 +22,41 @@ const READING_PATHS: ReadingPath[] = [
     slug: "marriage-drifting",
     title: "When Your Marriage Is Drifting",
     articles: [
+      { title: "Why Do Married Couples Slowly Drift Apart?", slug: "the-slow-drift-that-ends-marriages" },
+      { title: "What Silence Actually Costs a Marriage", slug: "what-silence-costs-a-marriage" },
+      { title: "What the Resentment in Your Marriage Is Telling You", slug: "the-resentment-in-your-marriage" },
+      { title: "How Do You Forgive Without Pretending It Didn't Happen?", slug: "forgiveness-without-pretending" },
     ],
   },
   {
     slug: "faith-crisis",
     title: "Faith in Crisis — A Path Through Doubt",
     articles: [
-      { title: "Truth in a Post-Truth World", slug: "truth-in-post-truth-world" },
+      { title: "What If Christianity Is Wrong?", slug: "what-if-we-are-wrong" },
+      { title: "When God Stops Making Sense", slug: "when-god-doesnt-make-sense" },
+      { title: "What to Do When God Feels Absent", slug: "dark-night-god-feels-absent" },
+      { title: "How Does the Church Tell the Truth in a Post-Truth Age?", slug: "truth-in-post-truth-world" },
+      { title: "What Comes After Deconstruction of Your Faith?", slug: "excavation-not-demolition" },
     ],
   },
   {
     slug: "pastor-nobody-sees",
     title: "The Pastor Nobody Sees",
     articles: [
+      { title: "Why Are Pastors So Lonely in a Full Church?", slug: "the-loneliest-room-in-the-church" },
+      { title: "Who Pastors the Pastor When No One Checks In?", slug: "the-pastor-nobody-checks-on" },
+      { title: "Why Do Pastors Treat Exhaustion as Faithfulness?", slug: "burnout-is-not-a-badge" },
+      { title: "When Ministry Is Quietly Killing Your Marriage", slug: "protecting-marriage-in-ministry" },
     ],
   },
   {
     slug: "raising-children",
     title: "Raising Children Who Think Theologically",
     articles: [
+      { title: "How Do You Raise Kids Who Think About Their Faith?", slug: "raising-kids-who-think" },
+      { title: "How Do You Talk to Your Kids About Doubt?", slug: "teaching-kids-about-doubt" },
+      { title: "When Your Teenager Says They Don't Believe Anymore", slug: "teenager-losing-faith" },
+      { title: "How a Father Shapes the Way a Child Sees God", slug: "the-father-wound-and-the-god-question" },
     ],
   },
   {
@@ -48,7 +64,10 @@ const READING_PATHS: ReadingPath[] = [
     title: "Justice and the Kingdom — Where Faith Meets the World",
     articles: [
       { title: "Where the Church Was Silent", slug: "where-church-was-silent" },
-      { title: "Justice Is Not a Political Category: It Is a Theological One", slug: "justice-not-political-theological" },
+      { title: "Is Justice a Political Issue or a Theological One?", slug: "justice-not-political-theological" },
+      { title: "What Does the Bible Say About the Church and the Poor?", slug: "poor-not-ministry-category" },
+      { title: "Why Does Charity Treat Symptoms and Not Causes?", slug: "symptoms-without-causes-charity" },
+      { title: "Can a System Sin?", slug: "individual-sin-systemic-sin-2" },
     ],
   },
 ];
