@@ -3,6 +3,27 @@
 Newest first. One entry per working session: what changed, what broke, what
 is next. Decisions made without asking are recorded with their reason.
 
+## 2026-09-21 — Gate 1 approved; PR #522 merged
+
+**Changed.** James approved and merged all of the latest work. PR #522 squash-
+merged to `main` as `5331be6` (133 files): the 128 placeholder retirement,
+pillar map, five-door header, `/study`, the history timeline, home performance,
+the voice audit ledgers and 120 surface repairs, 43 gated essay rewrites (still
+candidates pending per-essay "save it"), `AUDIT.md`, `log.md`. Vercel deploys
+`main` to production.
+
+**Broke.** Nothing. CI `build` green on the merged head; `quality` red on the
+asserted performance floor only (83 vs 90), non-blocking, explained on the PR.
+
+**Decided.** Merging counts as Gate 1 approval of the audit and plan. The brand
+ruling (keep cream/mustard/Cormorant vs the prompt's palette) is still open and
+gates Phase 2; Phase 1 does not depend on it.
+
+**Next.** Production still serves the 128 placeholders and the old essay
+bodies until the DB steps run with `DATABASE_URL`. Then Phase 1: contrast and
+axe fixes on 44 routes, the 11 dead ends, admin middleware guard and login
+rate limit, dependency upgrades, `brief.md` and `handover.md`.
+
 ## 2026-09-21 — Phase 0 under the master site prompt
 
 **Changed.** `AUDIT.md` written at the repo root (read-only discovery; all
