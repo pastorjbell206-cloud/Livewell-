@@ -115,19 +115,22 @@ const HERO_PHOTO: { src: string; alt: string } | null = null;
 const FLAGSHIP_SLUGS: string[] = featured.flagship;
 
 export default function Home() {
-  const articlesQuery = trpc.posts.listPublished.useQuery();
-  type Listed = NonNullable<typeof articlesQuery.data>[number];
-  // Static first, like /writing: the flagship essays come from /essays/featured.json
-  // (built at deploy) so the front page shows the writing before the API answers.
-  const [staticIndex, setStaticIndex] = useState<Listed[] | null>(null);
+  // Static first, and static only when the build is present: the front page
+  // reads /essays/featured.json (5 KB, built at deploy) and never waits on the
+  // API. The full list is fetched only when the static file is missing (a dev
+  // checkout without the build step), so the front page costs no function call
+  // and paints once instead of twice.
+  const [staticIndex, setStaticIndex] = useState<Record<string, unknown>[] | "miss" | null>(null);
   useEffect(() => {
     let stale = false;
     fetchJson<unknown[]>("/essays/featured.json", (x): x is unknown[] => Array.isArray(x))
-      .then(rows => { if (!stale) setStaticIndex(rows.filter(r => !!r && typeof r === "object") as unknown as Listed[]); })
-      .catch(() => { /* no static build in this checkout — the API list carries the page */ });
+      .then(rows => { if (!stale) setStaticIndex(rows.filter(r => !!r && typeof r === "object") as Record<string, unknown>[]); })
+      .catch(() => { if (!stale) setStaticIndex("miss"); });
     return () => { stale = true; };
   }, []);
-  const all: Listed[] = articlesQuery.data ?? staticIndex ?? [];
+  const articlesQuery = trpc.posts.listPublished.useQuery(undefined, { enabled: staticIndex === "miss" });
+  type Listed = NonNullable<typeof articlesQuery.data>[number];
+  const all: Listed[] = staticIndex && staticIndex !== "miss" ? (staticIndex as unknown as Listed[]) : (articlesQuery.data ?? []);
 
   // Lead with the strongest essays; fall back to latest if a slug is absent.
   // The fallback skips catalog stubs (see docs/audit-corpus/) so a short abstract
@@ -276,6 +279,14 @@ export default function Home() {
               here the day one exists (HERO_PHOTO). Until then the lead essay's
               own art, so the front door opens on an image and a piece of
               writing rather than a paragraph about the writing. */}
+          {!flagship[0] && (
+            // Reserve the picture's room until the essay arrives, so nothing
+            // below moves when it does.
+            <div aria-hidden style={{ maxWidth: "640px", justifySelf: "end", width: "100%" }}>
+              <div style={{ aspectRatio: "16 / 9", width: "100%", background: "rgba(245,240,230,0.06)", borderRadius: "var(--radius-sm)" }} />
+              <div style={{ height: "44px" }} />
+            </div>
+          )}
           {flagship[0] && (
             <Link href={`/writing/${flagship[0].slug}`} style={{ textDecoration: "none", color: "inherit", display: "block", maxWidth: "640px", justifySelf: "end", width: "100%" }}>
               {HERO_PHOTO ? (
@@ -339,7 +350,7 @@ export default function Home() {
             </Link>
           </div>
 
-          {articlesQuery.isLoading && (
+          {flagship.length === 0 && (staticIndex === null || (staticIndex === "miss" && articlesQuery.isLoading)) && (
             <div
               role="status"
               aria-label="Loading the essays"
@@ -349,14 +360,17 @@ export default function Home() {
                 gap: "24px",
               }}
             >
-              {Array.from({ length: 3 }, (_, i) => (
+              {Array.from({ length: 4 }, (_, i) => (
                 <div
                   key={i}
                   className="animate-pulse"
                   style={{
-                    background: "var(--bone)",
+                    background: "var(--bone-warm)",
                     borderRadius: "var(--radius-sm)",
-                    height: "200px",
+                    // The height of a finished card, so the grid does not grow
+                    // under the reader when the essays arrive (CLS 0.07 → 0).
+                    aspectRatio: "3 / 4",
+                    minHeight: "340px",
                   }}
                 />
               ))}
@@ -533,9 +547,9 @@ export default function Home() {
             </Link>
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(280px, 100%), 1fr))", gap: "var(--s-4)" }}>
-            {SHELF.map((b, i) => (
+            {SHELF.map(b => (
               <Link key={b.slug} href={b.href} style={{ textDecoration: "none", color: "inherit", display: "flex", gap: "18px", alignItems: "center" }}>
-                <CoverImage src={b.cover} alt={`${b.title} — cover`} eager={i === 0} style={{ width: "96px", height: "auto", flex: "0 0 auto", borderRadius: "3px", boxShadow: "0 12px 28px rgba(20,17,12,0.22)", display: "block" }} />
+                <CoverImage src={b.cover} alt={`${b.title} — cover`} style={{ width: "96px", height: "auto", flex: "0 0 auto", borderRadius: "3px", boxShadow: "0 12px 28px rgba(20,17,12,0.22)", display: "block" }} />
                 <div>
                   <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "8px" }}>{b.kicker}</div>
                   <h3 style={{ fontFamily: "var(--F)", fontSize: "21px", fontWeight: 500, lineHeight: 1.2, letterSpacing: "-0.01em", color: "var(--ink)", marginBottom: "8px" }}>{b.title}</h3>
