@@ -65,18 +65,18 @@ const CATEGORIES: Category[] = [
     ],
     actionSteps: {
       low: [
-        "Audit your last month of sermons. Were they built from the text outward, or from a topic backward into proof texts? The difference is the difference between exposition and decoration. If the text could be removed and the sermon would still stand, Scripture is not central -- it is ornamental.",
-        "Ask five congregants this question: 'What has our church taught you about God in the last six months that you did not already know?' If they cannot answer, your teaching is confirming assumptions, not forming believers. Confirmation is comfortable. Formation is costly. Formation is the task.",
+        "Audit your last month of sermons. Were they built from the text outward, or from a topic backward into proof texts? The difference is the difference between exposition and decoration. If the text could be removed and the sermon would still stand, Scripture is not central -- it is ornamental. Most of us have preached that sermon more than once.",
+        "Ask five congregants this question: 'What has our church taught you about God in the last six months that you did not already know?' If they cannot answer, the teaching is confirming what people already assumed rather than forming them, and most of us drift there because confirmation is comfortable and formation costs the preacher first.",
         "Evaluate whether your worship leader understands theology or only understands music. The songs a church sings become the theology a church believes. If the lyrics would embarrass a serious reading of the Psalms, the songs must change -- regardless of how the congregation feels about the melody.",
       ],
       mid: [
         "You have a foundation of theological seriousness. Build on it by introducing one element per month that stretches your congregation. A creed read aloud. A lament Psalm sung together. A two-minute silence after the sermon. Formation happens in practices, not just information.",
-        "Train your worship team in the theology of what they are leading. A worship leader who cannot explain why a hymn was chosen does not understand the role. They are not performers. They are pastoral theologians with instruments.",
+        "Train your worship team in the theology of what they are leading. A worship leader who cannot explain why a hymn was chosen does not yet understand the role, which is closer to pastoral theologian with an instrument than to performer.",
         "Consider whether your teaching is consistently accessible without being shallow. The goal is not complexity for its own sake. The goal is a congregation that can read Romans without panic and Leviticus without boredom.",
       ],
       high: [
         "Your worship and teaching are forming your people. This is the most important thing a church does, and you are doing it well. Protect it fiercely -- especially from the pressure to entertain.",
-        "Develop a preaching team or teaching pipeline. A church that depends on one voice is fragile. A church with multiple faithful teachers is resilient.",
+        "Develop a preaching team, more than one voice the congregation trusts with the text. A church that depends on one voice is fragile. A church with multiple faithful teachers is resilient.",
         "Invite honest feedback from your most theologically serious members and your newest believers simultaneously. The worship that serves both is the worship that is truly healthy.",
       ],
     },
@@ -117,7 +117,7 @@ const CATEGORIES: Category[] = [
         "Identify the generational gap in your discipleship. If no one over fifty is investing in anyone under thirty, you have a structural problem that will become an existential one within a decade.",
       ],
       high: [
-        "Your community and discipleship structures are producing fruit. This is the heartbeat of a healthy church. Share your model with other pastors -- many are desperate for a discipleship framework that actually works.",
+        "Your community and discipleship structures are producing fruit. This is the heartbeat of a healthy church. Share your model with other pastors -- many are looking for a way of making disciples that has actually produced some.",
         "Continue to evaluate whether community has become comfortable rather than formational. Healthy groups must periodically be disrupted -- by mission, by adding new members, by taking on a shared challenge.",
         "Invest in your small group leaders as seriously as you invest in your sermon. They are your primary discipleship delivery system.",
       ],
@@ -150,11 +150,11 @@ const CATEGORIES: Category[] = [
     actionSteps: {
       low: [
         "Walk a one-mile radius around your church building this week. How many people in that radius know your church exists? How many would say it has made their life better? If the answer to both is 'few,' your church has become a private club with a steeple. Reverse that. Pick one neighborhood need and meet it. Consistently. For a year.",
-        "Examine your budget. The percentage allocated to outreach and mission reveals your actual priorities -- not your stated ones. If less than ten percent of your budget serves people outside your walls, the budget is a confession.",
+        "Examine your budget. The percentage allocated to outreach and mission reveals your actual priorities -- not your stated ones. If less than ten percent of your budget serves people outside your walls, the budget is a confession, and most of us would rather not read ours aloud.",
         "Stop asking 'How do we get people to come to church?' and start asking 'How do we bring the church to people?' The first question assumes the building is the center. The second assumes the Gospel is.",
       ],
       mid: [
-        "You have outreach activity but it may lack strategic focus. Pick one local mission and one global mission and invest deeply rather than spreading thin across a dozen causes. Depth produces partnership. Breadth produces tourism.",
+        "You have outreach activity but it may lack strategic focus. Pick one local mission and one global mission and invest deeply rather than spreading thin across a dozen causes. Depth in one place produces partnership; a dozen shallow commitments produce mission tourism.",
         "Train your congregation in the theology of mission -- not evangelism techniques, but the conviction that God is a sending God and every believer is sent. When the theology is clear, the practice follows naturally.",
         "Evaluate whether your outreach produces dependence or dignity. The best mission work empowers. The worst creates a permanent need for your continued involvement. Aim for the first.",
       ],
@@ -178,7 +178,7 @@ const CATEGORIES: Category[] = [
     questions: [
       {
         id: 10,
-        text: "We have a clear leadership pipeline -- people are being identified, trained, and deployed into ministry roles, not just recruited to fill gaps.",
+        text: "We have a clear way of raising leaders -- people are being identified, trained, and sent into ministry roles, not just recruited to fill gaps.",
       },
       {
         id: 11,
@@ -193,7 +193,7 @@ const CATEGORIES: Category[] = [
       low: [
         "If leadership in your church depends on the pastor and two or three reliable volunteers, you do not have a leadership structure. You have a dependency. Write down the names of five people under forty in your congregation who show leadership capacity. Schedule coffee with each of them this month. Ask them what they see in the church and what they would change. Then listen.",
         "Distinguish between delegation and dumping. Delegation gives authority with a task. Dumping gives a task without support. If your volunteers feel used rather than developed, you are dumping. The fix is not more gratitude. It is more investment.",
-        "Create a one-page leadership development plan. Not a hundred-page manual. One page: who you are developing, what you are developing in them, and when they will be ready to lead. If you cannot fit it on one page, you are overcomplicating what is fundamentally a relational process.",
+        "Write down, on one page, who you are raising up, what you are forming in them, and when they will be ready to lead. Not a hundred-page manual. If you cannot fit it on one page, you are overcomplicating what is fundamentally a relational process.",
       ],
       mid: [
         "You have some leadership development but it may lack intentional progression. Add clear stages: observe, assist, lead with supervision, lead independently. Each stage should have a timeframe and a conversation.",
@@ -201,8 +201,8 @@ const CATEGORIES: Category[] = [
         "Invest in your leaders' spiritual formation, not just their competence. A skilled leader without character will eventually damage your church. A leader with character and developing skills will strengthen it.",
       ],
       high: [
-        "Your leadership pipeline is functioning. This means your church can survive your departure, which is the ultimate test of pastoral leadership development.",
-        "Continue to push authority downward. The healthiest churches are led by many, not by one. Your role is to set the vision and develop the people who execute it.",
+        "Your church is raising leaders. This means it can survive your departure, which is the ultimate test of pastoral leadership development.",
+        "Continue to push authority downward. The healthiest churches are led by many, not by one. Your role is to hold the vision and form the people who will carry it out.",
         "Mentor other pastors in leadership development. This skill set is the most commonly missing piece in pastoral training, and you have something to offer.",
       ],
     },
@@ -245,7 +245,7 @@ const CATEGORIES: Category[] = [
       high: [
         "Your financial stewardship is healthy. This builds congregational trust and frees you to lead without the constant anxiety of hidden financial problems.",
         "Model financial generosity as a church. Give away more than feels comfortable. The church that hoards its resources is the church that has forgotten who owns them.",
-        "Share your financial practices with other churches. Healthy financial models are desperately needed, and your transparency can set a standard.",
+        "Share your financial practices with other churches. Plenty of churches are still handling money in the dark, and your transparency can set a standard.",
       ],
     },
     articleLink: {
@@ -270,7 +270,7 @@ const CATEGORIES: Category[] = [
       },
       {
         id: 18,
-        text: "There is a functional care network in our church -- the pastor is not the only person providing pastoral care, and lay caregivers are trained and deployed.",
+        text: "There is a functional care network in our church -- the pastor is not the only person providing pastoral care, and lay caregivers are trained and sent.",
       },
     ],
     actionSteps: {

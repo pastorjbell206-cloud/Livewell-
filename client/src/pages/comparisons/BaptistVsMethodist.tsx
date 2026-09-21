@@ -50,8 +50,8 @@ const CURRENT_SPLITS = [
   {
     tradition: "Methodist Divisions",
     items: [
-      "The United Methodist Church formally split in 2023-2024 over the ordination and marriage of LGBTQ+ persons. The Global Methodist Church formed as a traditionalist alternative.",
-      "The split was driven partly by the growing influence of African and Asian Methodists, who are theologically conservative and numerically dominant in the global denomination.",
+      "The United Methodist Church fractured over the ordination and marriage of LGBTQ+ persons. The Global Methodist Church launched in 2022 as a traditionalist alternative, and thousands of congregations disaffiliated from the UMC between 2019 and 2023.",
+      "The split was shaped partly by the growing voice of Methodists in Africa and Asia, who are largely conservative on these questions and whose share of the global denomination has been rising.",
       "The African Methodist Episcopal (AME) and AME Zion denominations remain separate, with roots in the racial segregation of American Methodism in the 18th and 19th centuries.",
     ],
   },
@@ -199,7 +199,7 @@ export default function BaptistVsMethodist() {
         <div style={S.wrapNarrow}>
           <p style={S.eyebrow}>THE FRACTURES</p>
           <h2 style={S.h2}>The current splits in both traditions</h2>
-          <p style={S.bodyText}>Neither tradition is monolithic. Both are fracturing along lines of theology, race, politics, and sexuality. The splits are not signs of weakness. They are signs that the questions still matter enough to divide over.</p>
+          <p style={S.bodyText}>Neither tradition is monolithic. Both are fracturing along lines of theology, race, politics, and sexuality. It is tempting to read the splits as proof that the questions still matter, and they do. But a divided church is also a grief, and none of us gets to stand outside it.</p>
           {CURRENT_SPLITS.map((split, i) => (
             <div key={i} style={{ marginBottom: i < CURRENT_SPLITS.length - 1 ? "40px" : "0" }}>
               <h3 style={{ fontFamily: "var(--F)", fontSize: "22px", fontWeight: 500, color: "var(--ink)", marginBottom: "16px" }}>{split.tradition}</h3>

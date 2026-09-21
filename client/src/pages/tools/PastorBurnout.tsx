@@ -109,7 +109,7 @@ const CATEGORIES: Category[] = [
     recovery: {
       low: [
         "Your emotional reserves are depleted. This is not a character flaw. It is the predictable result of pouring out without being poured into. Schedule an appointment with a licensed counselor this week -- not a pastor friend, a professional. You need someone whose job is not to need anything from you.",
-        "For the next thirty days, give yourself permission to feel nothing in response to congregational need. Not permanently -- temporarily. You are not being callous. You are acknowledging that the well is dry and drawing from it further will crack the foundation.",
+        "For the next thirty days, give yourself permission not to respond to every congregational need. Not permanently -- temporarily. You are not being callous. You are acknowledging that the well is dry and drawing from it further will crack the foundation.",
         "Identify the three most emotionally demanding relationships in your ministry. For one month, create a buffer -- an associate pastor, a deacon, a lay leader who handles the first call. You cannot be the first responder to everyone's crisis when you are in one yourself.",
       ],
       mid: [
@@ -149,7 +149,7 @@ const CATEGORIES: Category[] = [
     },
     recovery: {
       low: [
-        "Your marriage is absorbing the cost of your ministry. This is the most common and most devastating form of pastoral burnout, because the damage is invisible to the congregation and catastrophic at home. Tell your spouse tonight: 'I see what this has cost us. I am going to change it.' Then change it.",
+        "Your marriage is absorbing the cost of your ministry. This may be the hardest form of pastoral burnout to see, because the damage is invisible to the congregation and catastrophic at home. Tell your spouse tonight: 'I see what this has cost us. I am going to change it.' Then change it.",
         "Block one evening per week that belongs entirely to your marriage. Not 'unless something comes up.' Not 'except during sermon prep season.' One evening. Non-negotiable. The church that cannot survive without you one evening a week has a structural problem, not a pastoral one.",
         "If your spouse has stopped complaining about ministry demands, that may not be acceptance. It may be resignation. Ask them directly: 'What has my ministry cost our marriage?' Do not defend yourself when they answer. Listen. The answer is the diagnosis.",
       ],
@@ -192,7 +192,7 @@ const CATEGORIES: Category[] = [
       low: [
         "Your body is telling you what your theology will not: you are not indestructible. Schedule a full physical this month. Tell the doctor you are a pastor under sustained stress. They will know what to check. Cortisol, blood pressure, sleep quality -- these are not vanity metrics. They are survival indicators.",
         "For the next two weeks, go to bed at a fixed time regardless of what remains undone. Your body cannot recover on four hours of sleep mixed with anxiety. The sermon will not be worse because you rested. It will be worse because you did not.",
-        "Move your body for thirty minutes, three times this week. Walking counts. The point is not fitness. The point is that your body has been locked in a stress posture for months, and movement is the only thing that breaks the neurological loop.",
+        "Move your body for thirty minutes, three times this week. Walking counts. The point is not fitness. The point is that your body has been locked in a stress posture for months, and movement is one of the few things that loosens it.",
       ],
       mid: [
         "You are surviving physically but not thriving. The gap between surviving and thriving is where chronic illness lives. Close the gap now while the cost is habits, not prescriptions.",
@@ -231,7 +231,7 @@ const CATEGORIES: Category[] = [
     },
     recovery: {
       low: [
-        "You are dangerously isolated. This is the single greatest predictor of pastoral failure -- not moral weakness, not theological drift, but the absence of anyone who knows you. This week, identify one person outside your congregation -- a pastor, a counselor, a trusted friend -- and tell them one true thing about your life. Start there.",
+        "You are dangerously isolated. Isolation is where most of the other failures begin; the absence of anyone who knows you leaves every other weakness unwatched. This week, identify one person outside your congregation -- a pastor, a counselor, a trusted friend -- and tell them one true thing about your life. Start there.",
         "Join or form a confidential pastors' group. Not a networking group. Not a preaching cohort. A group of three to five pastors who meet monthly with one rule: nothing said leaves the room. The Pastors Connection Network exists for this purpose. Use it.",
         "Examine whether your isolation is imposed or chosen. Some pastors are isolated because their context offers no peers. Others are isolated because vulnerability feels too expensive. If it is the second, the cost of continued hiding is higher than the cost of being known.",
       ],
@@ -272,7 +272,7 @@ const CATEGORIES: Category[] = [
     },
     recovery: {
       low: [
-        "Dysfunctional board relationships are the leading cause of forced pastoral exits. If trust has collapsed, you need a mediator -- not a congregational vote, not a sermon series on unity, a trained church conflict mediator. Contact your denomination or the Pastors Connection Network for referrals.",
+        "Trust between a pastor and a board, once collapsed, does not repair itself. You need a mediator -- not a congregational vote, not a sermon series on unity, a trained church conflict mediator. Contact your denomination or the Pastors Connection Network for referrals.",
         "Document your concerns in writing -- not as legal preparation, but as clarity. When conflict is chronic, the details blur and emotions dominate. Written documentation forces precision and provides a basis for honest conversation.",
         "Ask yourself whether the board conflict is about governance or about you. Sometimes boards are dysfunctional regardless of the pastor. Sometimes the pastor is the common variable. Both require different responses. A trusted outside voice can help you see which is true.",
       ],
@@ -282,7 +282,7 @@ const CATEGORIES: Category[] = [
         "Address the one thing you have been avoiding. The conflict you defer always compounds. Bring it up with courage and clarity, not accusation. 'I have noticed a pattern and I want to address it before it becomes a crisis.'",
       ],
       high: [
-        "Healthy board relationships are ministry gold. Invest in them, celebrate them publicly, and model them for other churches. Many pastors would trade their salary for what you have.",
+        "A healthy board relationship is rarer than it should be. Invest in it, name it publicly with gratitude, and let other churches see how it works. Plenty of pastors carry a weight here that you have been spared.",
         "Use your relational health to take strategic risks together. A united leadership team can absorb congregational resistance to necessary change. A divided one cannot.",
         "Prepare for leadership transitions now, while things are healthy. Board relationships built on one personality do not survive pastoral succession. Build them on shared mission.",
       ],
@@ -315,7 +315,7 @@ const CATEGORIES: Category[] = [
       low: [
         "You are absorbing more congregational weight than any one person can carry. The first step is not a strategy -- it is a confession. Tell someone: 'I am drowning in this.' The weight of unprocessed criticism is cumulative and corrosive. It will compromise your preaching, your marriage, and your health if it is not addressed.",
         "Establish a twenty-four-hour rule for criticism: you do not respond to any critical email, conversation, or meeting for twenty-four hours. Not to be passive-aggressive. To allow your nervous system to exit fight-or-flight before you process the content. Most criticism loses its sting after a day. The criticism that does not is the criticism worth addressing.",
-        "If political division has made your church ungovernable, recognize that this is not a failure of your leadership. It is the consequence of a culture that has made political identity more foundational than baptismal identity. Name it from the pulpit. Gently. Firmly. Without choosing a side. That is the prophetic task.",
+        "If political division has made your church ungovernable, recognize that this is not a failure of your leadership. It is the consequence of a culture that has made political identity more foundational than baptismal identity. Name it from the pulpit, gently and firmly, without choosing a side. That is the prophetic task.",
       ],
       mid: [
         "You are managing congregational pressure but it is costing you more than it should. The key is not thicker skin -- it is better systems. Criticism should be processed through a team, not absorbed by one person. Build a leadership buffer.",
@@ -434,7 +434,7 @@ function getOverallBurnout(score: number): {
       label: "Early Warning",
       color: "var(--mustard)",
       description:
-        "Your results show a ministry under strain in specific areas. You are not in crisis, but you are closer than you think. The distance between early warning and active burnout is shorter than most pastors believe -- because the trajectory feels manageable until it is not. The categories where you scored lowest are not weaknesses to manage. They are fires to extinguish. Address them now, while you still have the capacity to do so.",
+        "Your results show a ministry under strain in specific areas. You are not in crisis, but you are closer than you think. The distance between early warning and active burnout is shorter than most pastors believe -- because the trajectory feels manageable until it is not. Treat the categories where you scored lowest as urgent rather than as weaknesses to manage around, and address them now, while you still have the capacity to do so.",
     };
   if (pct >= 0.4)
     return {

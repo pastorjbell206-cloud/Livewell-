@@ -29,7 +29,7 @@ export default function Answers() {
     <Layout>
       <SEOMeta
         title="Honest Answers to Hard Questions About Christianity"
-        description="Did the resurrection happen? Why trust the Bible? If God is good, why suffering? Straight answers from a pastor who was an atheist first — each with the full essay behind it."
+        description="Did the resurrection happen? Why trust the Bible? If God is good, why suffering? Straight answers from a pastor who was an atheist first, each with the full essay behind it."
         url="https://www.livewellbyjamesbell.co/answers"
         structuredData={faqSchema}
       />
@@ -42,7 +42,7 @@ export default function Answers() {
             The questions people actually ask.
           </h1>
           <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.75)", maxWidth: "60ch" }}>
-            Straight answers first — two minutes each. Behind every one stands the
+            Straight answers first, two minutes each. Behind every one stands the
             full essay, and behind the essay, the book. Go as deep as you want.
             Written by a pastor who was an atheist first, so the questions get
             taken seriously, not managed.
@@ -108,8 +108,8 @@ export default function Answers() {
       <section style={{ background: "var(--charcoal)", color: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
         <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto", textAlign: "center" }}>
           <p style={{ fontFamily: "var(--F)", fontSize: "clamp(20px, 2.8vw, 28px)", fontStyle: "italic", lineHeight: 1.4, color: "rgba(245,240,230,0.92)", marginBottom: "18px" }}>
-            Your question is not on this page? It has probably been asked before,
-            and taken seriously.
+            Your question is not on this page? Someone has probably asked it before,
+            and it was answered at length.
           </p>
           <Link href="/faq" style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--mustard)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px" }}>
             Browse every question →

@@ -192,8 +192,8 @@ function getCategoryResult(name: string, score: number): CategoryResult {
       },
       steps: [
         "Choose one day this week -- or even half a day -- and declare it sabbath. No email. No work. No productivity. Do something that replenishes you: walk outside, cook a meal slowly, read a book that has nothing to do with your job. If this feels impossible, that is precisely the evidence that you need it.",
-        "Put your phone in another room for two hours. Not on silent -- in another room. Notice what happens in your body when you cannot check it. That anxious pull is not a sign that you are needed. It is a sign that your nervous system has been hijacked by a device. Reclaim the quiet. God speaks in it.",
-        "At the end of today, before you go to bed, say out loud: 'It is enough.' The work is not finished. The inbox is not empty. The house is not clean. And it is enough. God rested on the seventh day not because the work of creation was perfect but because it was finished for that day. You have permission to stop.",
+        "Put your phone in another room for two hours. Not on silent -- in another room. Notice what happens in your body when you cannot check it. That anxious pull is not a sign that you are needed. It is a sign of how thoroughly the phone has trained you to reach for it. Reclaim the quiet. God speaks in it.",
+        "At the end of today, before you go to bed, say out loud: 'It is enough.' The work is not finished. The inbox is not empty. The house is not clean. And it is enough. God rested on the seventh day not because the work of creation was perfect but because it was finished for that day. Stopping at the end of a day is not quitting; it is keeping the pattern he set.",
       ],
       articleLink: {
         title: "Essays on sabbath and rest",
@@ -229,7 +229,7 @@ function getOverallInterpretation(totalScore: number): {
     return {
       label: "Growing but Uneven",
       description:
-        "You have real strength in some areas and significant gaps in others. This is normal and human. Most of us overdevelop the emotional skills that come naturally and neglect the ones that cost us. The invitation is not to feel guilty about the gaps but to name them honestly and start the slow work of growth. Emotional health is not a destination. It is a direction.",
+        "You have real strength in some areas and significant gaps in others. This is normal and human. Most of us overdevelop the emotional skills that come naturally and neglect the ones that cost us. The invitation is not to feel guilty about the gaps but to name them honestly and begin the slow work of growth. That work is never finished in this life, and it does not need to be. It needs to be started.",
     };
   }
   if (pct >= 0.4) {
@@ -242,7 +242,7 @@ function getOverallInterpretation(totalScore: number): {
   return {
     label: "Approaching Burnout",
     description:
-      "These results point to a level of emotional and spiritual depletion that requires immediate attention -- not more effort, but a fundamental reorientation of how you are living. You cannot give what you do not have. The patterns that brought you here -- the overwork, the suppressed grief, the inability to rest, the unforgiven wounds -- are not sustainable. They will cost you your health, your relationships, or your faith. This is not a warning. It is an invitation. The God who commands rest is not disappointed in you for needing it. He built it into the fabric of creation because He knew you would need it.",
+      "These results point to a level of emotional and spiritual depletion that requires immediate attention -- not more effort, but a fundamental reorientation of how you are living. You cannot give what you do not have. The patterns that brought you here -- the overwork, the suppressed grief, the inability to rest, the unforgiven wounds -- are not sustainable. That is not a verdict on you; it is the reason this page will point you to a real person before it points you to a practice. The God who commands rest is not disappointed in you for needing it. He built it into the fabric of creation because He knew you would need it.",
   };
 }
 

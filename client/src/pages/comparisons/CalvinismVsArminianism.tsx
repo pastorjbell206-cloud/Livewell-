@@ -42,7 +42,7 @@ const HISTORICAL_CONTEXT = [
   { year: "354-430", label: "Augustine of Hippo", desc: "Argued for predestination and the bondage of the will against Pelagius. Set the terms of the debate for the next 1,600 years." },
   { year: "1509-1564", label: "John Calvin", desc: "Systematized the theology of God's sovereignty in the Institutes. Geneva became the laboratory for Reformed Christianity." },
   { year: "1560-1609", label: "Jacobus Arminius", desc: "A Dutch Reformed theologian who questioned unconditional election. His followers codified his views in the Five Articles of Remonstrance (1610)." },
-  { year: "1618-1619", label: "The Synod of Dort", desc: "The Reformed churches formally condemned Arminianism and articulated the five points (TULIP). The Remonstrants were expelled." },
+  { year: "1618-1619", label: "The Synod of Dort", desc: "The Reformed churches formally condemned Arminianism and articulated the five points later summarized as TULIP. The Remonstrants were expelled." },
   { year: "1703-1791", label: "John Wesley", desc: "Took Arminian theology and made it a movement. Methodism carried Arminianism to the masses. The revival changed England." },
   { year: "1703-1758", label: "Jonathan Edwards", desc: "America's greatest Calvinist mind. Freedom of the Will (1754) remains the most rigorous defense of compatibilism in the English language." },
 ];
@@ -66,7 +66,7 @@ const RELATED_ARTICLES = [
 const FAQ_ITEMS = [
   {
     question: "Was Calvin actually a Calvinist?",
-    answer: "Not in the five-point sense. Calvin never used the TULIP acronym — that was a later systematization from the Synod of Dort (1618-1619), more than fifty years after his death. Calvin's theology was broader and more pastoral than the five points suggest. But the points do represent a fair distillation of his core convictions about God's sovereignty in salvation.",
+    answer: "Not in the five-point sense. Calvin never used the TULIP acronym. The five points themselves were articulated at the Synod of Dort (1618-1619), more than fifty years after his death, and the acronym came centuries later as an English mnemonic. Calvin's theology was broader and more pastoral than the five points suggest. But the points do represent a fair distillation of his core convictions about God's sovereignty in salvation.",
   },
   {
     question: "What is Molinism?",

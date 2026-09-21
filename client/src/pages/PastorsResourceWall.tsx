@@ -65,7 +65,7 @@ const SERMON_PREP: ResourceLink[] = [
 const PASTOR_CARE: ResourceLink[] = [
   {
     title: "Pastor Burnout Assessment",
-    description: "Ten questions. Honest answers. No marketing.",
+    description: "Ten questions about where you actually are, with nothing to buy at the end.",
     href: "/tools/pastor-burnout",
     icon: Users,
   },
@@ -278,8 +278,9 @@ export default function PastorsResourceWall() {
                 padding: "var(--s-4) 0",
               }}
             >
-              Discussion guides land here as they are produced. The
-              Trench Work collection is already available below.
+              Discussion guides for the books land here as they are produced.
+              None are ready yet, but the sermon-prep and pastor-care tools on
+              this page are.
             </p>
           )}
           {downloads.length > 0 && (

@@ -247,7 +247,7 @@ const TOPICS: Topic[] = [
     icon: "heart-pulse",
     oneLiner: "What Scripture says to the anxious person without dismissing the anxiety.",
     introduction:
-      "The Bible's most repeated command is 'Do not fear,' which tells you two things: fear is real, and God takes it seriously. Scripture does not treat anxiety as a character defect or a faith failure. The psalms are full of people who are terrified and bring that terror to God without apology.",
+      "The Bible returns to 'Do not fear' again and again, which tells you two things: fear is real, and God takes it seriously. Scripture does not treat anxiety as a character defect or a faith failure. The psalms are full of people who are terrified and bring that terror to God without apology.",
     passages: [
       {
         reference: "Psalm 23",
@@ -313,7 +313,7 @@ const TOPICS: Topic[] = [
     interpretiveRange:
       "Christians disagree on the relationship between faith and mental health. Some traditions treat all anxiety as a spiritual problem solvable by prayer and Scripture. Others recognize anxiety disorders as medical conditions requiring treatment alongside spiritual care. The best pastoral theology holds both: anxiety has spiritual dimensions, and medication is not a failure of faith. What all faithful readings affirm is that God meets the anxious person with presence, not condemnation.",
     takeaway:
-      "The Bible commands 'do not fear' more than 300 times, but it never commands 'do not feel.' The invitation is not to suppress anxiety but to bring it, unedited, to a God who is strong enough to hold it and present enough to meet you inside it.",
+      "The Bible keeps saying 'do not fear,' and it never once says 'do not feel.' The invitation is not to suppress anxiety but to bring it, unedited, to a God who is strong enough to hold it and present enough to meet you inside it.",
   },
   {
     title: "Forgiveness",
@@ -705,7 +705,7 @@ const TOPICS: Topic[] = [
       },
     ],
     interpretiveRange:
-      "This is one of the most contested areas in contemporary Christianity. Traditional and affirming positions both claim biblical fidelity. What distinguishes genuine disagreement from bad faith is whether the person has actually done the work of exegesis or merely proof-texted their prior conviction. What all faithful Christians should agree on: the body is good, sexual ethics matter, purity culture has done real damage, and no one should be treated as less than the image of God regardless of where you land on contested questions.",
+      "This is one of the most contested areas in contemporary Christianity. Traditional and affirming positions both claim biblical fidelity. It helps to say what order of question this is: no ancient creed settles it, so it is not a matter the confessional floor decides, but it is not a matter of taste either. It touches the body, marriage, and obedience, and churches divide over it at real cost. What distinguishes genuine disagreement from bad faith is whether the person has actually done the work of exegesis or merely proof-texted their prior conviction. What all faithful Christians should agree on: the body is good, sexual ethics matter, purity culture has done real damage, and no one should be treated as less than the image of God regardless of where you land on contested questions.",
     takeaway:
       "The difference between biblical sexuality and purity culture is the difference between honoring the body and fearing it. The Bible says the body is a temple. Purity culture treats it as a threat. If your sexual ethic produces shame rather than dignity, it has departed from the text it claims to follow.",
   },
@@ -967,7 +967,7 @@ const TOPICS: Topic[] = [
         misuse:
           "Spiritualized to the point of irrelevance: 'We rest in Christ, so we do not need a physical day of rest.' But the author says the Sabbath-rest 'remains' for the people of God, using the present tense. The spiritual reality does not cancel the physical practice; it deepens it.",
         teaches:
-          "Sabbath rest is a rehearsal of the gospel: you stop working because the decisive work has already been done. Just as salvation is not earned by effort, Sabbath declares that your value is not produced by your output. Resting is an act of faith that says 'God has this handled.'",
+          "Sabbath rest is a rehearsal of the gospel: you stop working because the decisive work has already been done. Just as salvation is not earned by effort, Sabbath declares that your value is not produced by your output. Resting is an act of faith: it admits that the world kept turning before you woke up and will keep turning after you stop.",
       },
       {
         reference: "Psalm 46:10",

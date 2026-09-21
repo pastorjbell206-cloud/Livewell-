@@ -10,7 +10,7 @@ const PRAYERS: Record<string, string[]> = {
   "Morning Prayer": [
     "Lord, as this new day begins, I offer it to You. Before the noise of the world reaches me, let Your voice be the first I hear. Fill me with purpose and patience. Guide my words, guard my heart, and give me eyes to see the people around me as You see them. I do not know what this day holds, but I know who holds it. Let me walk in that confidence. Amen.",
     "Father, I wake with gratitude that Your mercies are new this morning. I confess that yesterday I carried burdens You never asked me to hold. Today, I lay them down. Give me clarity for the decisions ahead, kindness for the conversations I will have, and courage to do the right thing even when it costs me. Let this day bring You glory. Amen.",
-    "God of the morning, thank You for breath, for rest, for another chance. I bring You my anxieties before they multiply. I bring You my calendar before it controls me. I bring You my relationships before I damage them with hurry. Slow me down enough to hear You. Speed me up enough to obey. Amen.",
+    "God of the morning, thank You for breath, for rest, for another chance. I bring You my anxieties before they multiply. I bring You my calendar before it controls me. I bring You my relationships before I damage them with hurry. Slow me down enough to hear You, and then give me the will to do what I hear. Amen.",
   ],
   "Evening Prayer": [
     "Lord, the day is ending and I bring it to You — the parts I'm proud of and the parts I regret. Thank You for carrying me through moments I didn't think I could handle. Forgive me where I fell short. As I rest tonight, quiet the voices that replay my failures. Let me sleep in the assurance that tomorrow is not mine to worry about. You are enough. Amen.",
@@ -44,7 +44,7 @@ const PRAYERS: Record<string, string[]> = {
   ],
   "Pastoral Prayer": [
     "Lord, I pray for every pastor reading this right now — the ones who preached last Sunday with a broken heart, the ones who counseled someone else's marriage while their own was struggling, the ones who are quietly thinking about quitting. See them. Sustain them. Remind them that the call has not expired, even when the strength has. Surround them with brothers who will carry what they cannot. Amen.",
-    "Father, the weight of ministry is real. The loneliness is real. The criticism is real. But so is Your faithfulness. For every shepherd who feels unseen today, let them know that You see. For every leader who feels unqualified, remind them that You don't call the qualified — You qualify the called. Renew their passion for the work. Amen.",
+    "Father, the weight of ministry is real. The loneliness is real. The criticism is real. But so is Your faithfulness. For every shepherd who feels unseen today, let them know that You see. For every leader who feels unqualified, remind them that You have always worked through people who felt the same, and that their sufficiency comes from You and not from themselves. Renew their love for the work. Amen.",
     "God, I pray for the pastor's family — the spouse who shares them with the church, the children who wonder why Dad or Mom is always at the hospital, the marriage that gets the leftovers. Protect what the enemy wants to destroy. Let the pastor's home be a place of rest, not another arena of performance. Amen.",
   ],
   "Prayer for Your Children": [
@@ -237,7 +237,7 @@ export default function PrayerGenerator() {
     <Layout>
       <SEOMeta
         title="Prayer Generator — Guided Prayers for Every Occasion"
-        description="Find guided prayers for morning, evening, strength, guidance, gratitude, suffering, and pastoral ministry. Theologically rich, personally meaningful."
+        description="Guided prayers for morning, evening, strength, guidance, gratitude, suffering, and pastoral ministry, each one honest enough to pray in your own words."
         keywords="prayer generator, morning prayer, evening prayer, prayer for strength, guided prayer, Christian prayer"
         structuredData={{
           "@context": "https://schema.org",

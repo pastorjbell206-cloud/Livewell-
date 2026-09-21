@@ -14,7 +14,7 @@ export default function Pastors() {
     <>
       <SEOMeta
         title="Pastors Connection Network"
-        description="A network connecting pastors across denominational lines around the gospel and kingdom advancement. Community for isolated pastors and church leaders."
+        description="A network of pastors across denominational lines, gathered around the gospel rather than a tribe. For the pastor who is leading alone."
         keywords="pastors, church leadership, community, network, ministry"
       />
       <Layout>
@@ -35,7 +35,7 @@ export default function Pastors() {
               You weren't meant to lead alone
             </h1>
             <p className="font-body text-lg" style={{ color: "rgba(244,241,234,0.7)", lineHeight: 1.8 }}>
-              Connecting pastors across denominational and background lines around the gospel and kingdom advancement — not around theological tribalism or institutional loyalty.
+              Pastors from across denominational lines and backgrounds, gathered around the gospel and the work of the kingdom rather than around a theological tribe or an institution's loyalty.
             </p>
           </div>
         </div>
@@ -54,7 +54,7 @@ export default function Pastors() {
                 The Pastors Connection Network exists because too many pastors lead in isolation. They carry the weight of congregations, families, and communities without anyone who understands what that weight actually feels like.
               </p>
               <p>
-                This isn't a membership programme with perks. It's not a conference circuit or a networking event. It's a network built around one conviction: pastors need other pastors who will tell them the truth, sit with them in the hard seasons, and remind them why they started.
+                This isn't a membership program with perks. It's not a conference circuit or a networking event. It's a network built around one conviction: pastors need other pastors who will tell them the truth, sit with them in the hard seasons, and remind them why they started.
               </p>
               <p>
                 The network connects pastors who serve in megachurches with pastors who serve in living rooms, because the work is the same work.
@@ -90,7 +90,7 @@ export default function Pastors() {
                   Monthly Peer Calls
                 </h3>
                 <p className="font-body" style={{ color: "var(--charcoal)", lineHeight: 1.8 }}>
-                  Connect with other pastors in intimate group settings where real conversations happen. No agenda, no performance — just pastors being honest about the work.
+                  A small group of pastors on a call once a month, with no agenda and nothing to perform, being honest with each other about the work.
                 </p>
               </div>
               <div>
@@ -98,15 +98,15 @@ export default function Pastors() {
                   Peer Mentorship & Accountability
                 </h3>
                 <p className="font-body" style={{ color: "var(--charcoal)", lineHeight: 1.8 }}>
-                  Get paired with other leaders who understand your context and will ask the hard questions. Real mentorship that helps you lead better and live better.
+                  You are paired with pastors who understand your context and will ask the questions no one in your congregation can, about the work and about the life underneath it.
                 </p>
               </div>
               <div>
                 <h3 className="font-display font-semibold mb-3" style={{ color: "var(--charcoal)" }}>
-                  Private Community Access
+                  A Private Room for the Questions
                 </h3>
                 <p className="font-body" style={{ color: "var(--charcoal)", lineHeight: 1.8 }}>
-                  Join a private community of pastors where you can ask questions, share struggles, and find resources from leaders who've walked similar paths.
+                  A private space, closed to your congregation, where you can ask the question you cannot ask in your denomination, say what the week actually cost, and hear from pastors who have carried the same weight.
                 </p>
               </div>
             </div>

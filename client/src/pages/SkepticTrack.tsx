@@ -99,7 +99,7 @@ export default function SkepticTrack() {
               letterSpacing: "0.05em",
             }}
           >
-            — James Bell, who came to faith from atheism at 24.
+            — James Bell, who came to faith from atheism.
           </p>
         </div>
       </section>

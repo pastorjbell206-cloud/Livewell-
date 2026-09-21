@@ -68,7 +68,7 @@ export default function Proverbs31() {
     <Layout>
       <SEOMeta
         title="Proverbs in 31 Days — A Chapter a Day for the Wise Life"
-        description="A chapter of Proverbs a day, matched to the date, the way the wisdom tradition has read it for centuries. A theme, a verse worth knowing, and a reflection."
+        description="A chapter of Proverbs a day, matched to the date. A theme, a verse worth knowing, and a reflection that runs the chapter into a real decision."
         url="https://www.livewellbyjamesbell.co/tools/proverbs-31"
       />
 
@@ -79,7 +79,7 @@ export default function Proverbs31() {
             Proverbs in 31 days
           </h1>
           <p style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.75, color: "rgba(245,240,230,0.82)", maxWidth: "62ch" }}>
-            There are thirty-one chapters for a reason. Read one a day, matched to the date, the way the church has read Proverbs for centuries. Do not study it. Live in it, and let one line follow you into the day's decisions.
+            Proverbs has thirty-one chapters and most months have thirty-one days, which makes it simple to read one a day, matched to the date. Do not study it. Live in it, and let one line follow you into the day's decisions.
           </p>
         </div>
       </section>

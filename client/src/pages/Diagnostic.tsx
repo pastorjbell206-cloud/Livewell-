@@ -405,7 +405,7 @@ export default function Diagnostic() {
                   marginBottom: "var(--s-4)",
                 }}
               >
-                Here's what stands out.
+                What the answers show.
               </h2>
               {lead && (
                 <div
