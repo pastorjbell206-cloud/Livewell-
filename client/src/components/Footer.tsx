@@ -67,7 +67,9 @@ export default function Footer() {
               );
             return (
             <div key={group.title}>
-              <h3 style={colTitle}>{group.title}</h3>
+              {/* h2, not h3: on a page whose body has only an h1 (notes, the
+                  start quiz) an h3 here skips a level (axe heading-order). */}
+              <h2 style={colTitle}>{group.title}</h2>
               <div style={col}>{rows.map((l) => renderLink(l, footerLink))}</div>
               {rest.length > 0 && (
                 <div style={{ display: "flex", flexWrap: "wrap", marginTop: "6px" }}>

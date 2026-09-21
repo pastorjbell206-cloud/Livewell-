@@ -814,7 +814,10 @@ export default function Writing() {
                     <div style={{ marginBottom: "12px" }}>
                       <TrackChip pillarOrTrack={post.pillar} slug={post.slug} asLink={false} />
                     </div>
-                    <h3
+                    {/* h2: the featured essay above is an h2 and only renders when
+                        the database marks one; without it the cards followed the
+                        h1 directly and skipped a level (axe heading-order). */}
+                    <h2
                       style={{
                         fontFamily: "var(--F)",
                         fontSize: "22px",
@@ -826,7 +829,7 @@ export default function Writing() {
                       }}
                     >
                       {post.title}
-                    </h3>
+                    </h2>
                     {post.excerpt && (
                       <p
                         style={{

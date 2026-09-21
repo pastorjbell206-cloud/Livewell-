@@ -167,7 +167,10 @@ export function StatementBand({
         {eyebrow && (
           <div
             className="eyebrow"
-            style={{ justifyContent: "center", marginBottom: "18px", color: "var(--mustard-text)" }}
+            // --mustard-text is the darkened mustard for cream; on charcoal it
+            // fails AA contrast (axe, /writing), so the dark band uses the
+            // accent itself.
+            style={{ justifyContent: "center", marginBottom: "18px", color: dark ? "var(--mustard)" : "var(--mustard-text)" }}
           >
             {eyebrow}
           </div>
