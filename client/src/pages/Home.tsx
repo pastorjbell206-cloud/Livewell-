@@ -225,11 +225,15 @@ export default function Home() {
                 line used to sit here; the hero now says one thing. */}
             <p
               style={{
-                fontFamily: "var(--B)",
-                fontSize: "19px",
-                lineHeight: 1.65,
-                color: "rgba(245,240,230,0.75)",
-                maxWidth: "62ch",
+                // Mirrors the static hero the prerender paints into the HTML
+                // (scripts/prerender-heads.mjs, homeHeroHtml) so first paint and
+                // mount are the same picture.
+                fontFamily: "var(--F)",
+                fontSize: "clamp(20px, 2.6vw, 30px)",
+                fontStyle: "italic",
+                lineHeight: 1.3,
+                color: "rgba(245,240,230,0.82)",
+                maxWidth: "30ch",
                 marginBottom: "40px",
               }}
             >
