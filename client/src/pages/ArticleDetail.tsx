@@ -185,10 +185,13 @@ function ShareableQuote({
   children,
   shareTitle,
   shareUrl,
+  author,
 }: {
   children?: React.ReactNode;
   shareTitle: string;
   shareUrl: string;
+  /** The essay's resolved byline; shared quotes are attributed to the person who wrote them. */
+  author: string;
 }) {
   const textRef = useRef<HTMLDivElement>(null);
   const [copied, setCopied] = useState(false);
@@ -196,7 +199,7 @@ function ShareableQuote({
   const onShare = async () => {
     const quote = textRef.current?.textContent?.trim() ?? "";
     if (!quote) return;
-    const attributed = `"${quote}" — James Bell`;
+    const attributed = `"${quote}" — ${author}`;
     if (typeof navigator !== "undefined" && navigator.share) {
       try {
         await navigator.share({ title: shareTitle, text: attributed, url: shareUrl });
@@ -243,10 +246,13 @@ function QuoteSelectionShare({
   title,
   url,
   bodyRef,
+  author,
 }: {
   title: string;
   url: string;
   bodyRef: React.RefObject<HTMLDivElement | null>;
+  /** The essay's resolved byline; a highlighted sentence is attributed to its writer. */
+  author: string;
 }) {
   const [pop, setPop] = useState<{ text: string; top: number; left: number } | null>(null);
   const [copied, setCopied] = useState(false);
@@ -285,7 +291,7 @@ function QuoteSelectionShare({
   if (!pop) return null;
 
   const share = async () => {
-    const attributed = `“${pop.text}” — James Bell`;
+    const attributed = `“${pop.text}” — ${author}`;
     if (typeof navigator !== "undefined" && navigator.share) {
       try { await navigator.share({ title, text: attributed, url }); setPop(null); return; } catch { /* fall through to copy */ }
     }
@@ -593,7 +599,7 @@ export default function ArticleDetail() {
   const [bodyBefore, bodyAfter] = splitForRelated((post.body ?? "").replace(/^\s*#{1,6}\s+.*\r?\n+/, ""));
   const proseComponents = {
     blockquote: ({ children }: { children?: React.ReactNode }) => (
-      <ShareableQuote shareTitle={post.title} shareUrl={canonical}>
+      <ShareableQuote shareTitle={post.title} shareUrl={canonical} author={author}>
         {children}
       </ShareableQuote>
     ),
@@ -862,7 +868,7 @@ export default function ArticleDetail() {
               {focus ? "Exit focus" : "Focus"}
             </button>
           </div>
-          <QuoteSelectionShare title={post.title} url={canonical} bodyRef={bodyRef} />
+          <QuoteSelectionShare title={post.title} url={canonical} bodyRef={bodyRef} author={author} />
           {!focus && <TableOfContents bodyRef={bodyRef} contentKey={post.slug} />}
           <div
             className="article-body"

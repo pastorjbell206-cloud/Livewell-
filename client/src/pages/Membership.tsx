@@ -84,9 +84,9 @@ export default function Membership() {
           {[
             { title: "The member library — deeper essays and reading paths, before anyone else sees them", desc: `${essays.display} essays searchable by topic, audience, and reading time. The skeptic essays, the pastor essays, the marriage essays — all in one place, organized as reading paths.` },
             { title: "Writing before it goes public", desc: "New essays land in the member library before they reach Substack or Facebook. You read it first." },
-            { title: `Curated reading guides for the ${SITE_STATS.bookCount} books`, desc: "Each book paired with the essays that extend its argument. Not a list of titles — a guided path through the ideas." },
+            { title: `Curated reading guides for the ${SITE_STATS.bookCount} books`, desc: "Each book paired with the essays that extend its argument, so you read the ideas in the order they were built rather than working down a list of titles." },
             { title: "Member-only tools and resources", desc: "A say in what gets built next — member requests set the roadmap for new tools for pastors, parents, and anyone trying to live well." },
-            { title: "Direct access to James", desc: "A monthly open letter from James to members only, and a contact channel that gets a response. Not a broadcast — a conversation." },
+            { title: "Direct access to James", desc: "A monthly open letter from James to members only, and a contact channel that gets a response from him rather than an autoreply." },
           ].map((b, i) => (
             <div key={i} style={{ borderTop: i === 0 ? "none" : "1px solid var(--bone-muted)", paddingTop: i === 0 ? 0 : "1.5rem", marginBottom: "1.5rem" }}>
               <h3 style={{ fontFamily: "var(--F)", fontSize: "1.25rem", fontWeight: 400, color: "var(--ink)", marginBottom: "0.5rem" }}>{b.title}</h3>
@@ -149,7 +149,7 @@ export default function Membership() {
           </div>
 
           <div style={{ display: "flex", justifyContent: "center", gap: "2rem", flexWrap: "wrap", fontSize: "0.75rem", color: "var(--ink-muted)", fontFamily: "var(--U)" }}>
-            <span>Cancel anytime, no friction</span>
+            <span>Cancel whenever you choose</span>
             <span>Secured by Stripe</span>
             <span>No advertisers</span>
           </div>
@@ -183,7 +183,7 @@ export default function Membership() {
           {[
             { q: "What if I do not love it?", a: "Cancel anytime. No form. No phone call. No retention sequence. One click in your account settings. If the writing is not carrying weight for you, you should leave — and you will not be penalized for it." },
             { q: "How is this different from the free Substack?", a: `Substack delivers the weekly letter. The membership is the full library — ${essays.display} essays searchable by topic, the curated book guides, the member-only essays that go deeper than what a free newsletter can carry, and direct access to James.` },
-            { q: "I am a pastor — is this for me?", a: "It was built for you first. The Pastors Connection Network is the community arm; the membership is the writing arm. Pastoral burnout, sermon preparation, theological formation, the loneliness of leading — the member library addresses all of it." },
+            { q: "I am a pastor — is this for me?", a: "It was built for you first. The Pastors Connection Network is the community arm; the membership is the writing arm. Pastoral burnout, sermon preparation, theological formation, the loneliness of leading: the member library is written toward all of it. A library cannot sit with you, though, and the network exists for that." },
             { q: "I am not a Christian. Does the membership assume I am?", a: "No. The skeptic is the hardest case, which is why the writing takes the skeptic seriously. The membership gives you the full archive — including the essays on doubt, historical criticism, and the intellectual architecture of belief. You will not be preached at. You will be argued with." },
             { q: "Where does my money go?", a: `Directly to the writing. No advertisers, no sponsors, no denominational subsidies. Your membership funds the time it takes to produce theology that does not cut corners. The ${SITE_STATS.bookCount} books were written this way. The ${essays.display} essays are written this way.` },
             { q: "Can I gift a membership?", a: "Not yet — but it is on the roadmap. If you want to gift it now, email Pastorjbell206@gmail.com and James will set it up manually." },

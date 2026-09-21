@@ -177,7 +177,7 @@ export default function BookDetail() {
                       className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded font-ui font-medium transition-colors"
                       style={{ backgroundColor: "var(--bone)", color: "var(--ink)" }}
                     >
-                      <BookOpen size={18} /> Read Sample
+                      <BookOpen size={18} /> Read a sample
                     </button>
                   )}
                   {book.purchaseUrl && (
@@ -188,7 +188,7 @@ export default function BookDetail() {
                       className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded font-ui font-medium no-underline transition-colors"
                       style={{ backgroundColor: "var(--charcoal)", color: "var(--charcoal-fg)" }}
                     >
-                      <ExternalLink size={18} /> Purchase Now
+                      <ExternalLink size={18} /> Buy the book
                     </a>
                   )}
                 </div>
@@ -269,7 +269,7 @@ export default function BookDetail() {
                 marginBottom: "16px",
               }}
             >
-              The work the book asks of you starts now.
+              Before you buy it, read it.
             </h2>
             <p
               style={{

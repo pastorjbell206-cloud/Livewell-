@@ -101,7 +101,7 @@ export default function Covenant() {
       <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-6) var(--s-4)" }}>
         <div style={{ ...prose, textAlign: "center" }}>
           <p style={{ fontFamily: "var(--F)", fontSize: "24px", fontStyle: "italic", margin: "0 0 22px", color: "rgba(245,240,230,.92)" }}>
-            It is not your love that sustains the marriage. It is the marriage that sustains your love.
+            The vow was not a description of how you felt that day. It was a promise about every day you could not yet see.
           </p>
           <div style={{ display: "inline-flex" }}>
             <BuyEbookButton slug={SLUG} />

@@ -30,7 +30,7 @@ export default function BeTrueToYourself() {
     <Layout>
       <SEOMeta
         title={`${TITLE} — An Ebook by James Bell`}
-        description="Be true to yourself is the one commandment no one questions. A case that it is the most destructive lie of the age, and the freedom on the other side."
+        description="Be true to yourself is the one commandment no one questions. What people rightly want from it, what it quietly asks of them, and the older freedom on the other side."
         url={`${SITE_URL}/${SLUG}`}
         structuredData={{
           "@context": "https://schema.org",
@@ -77,11 +77,12 @@ export default function BeTrueToYourself() {
         <div style={prose}>
           <p style={{ fontFamily: "var(--B)", fontSize: "19px", lineHeight: 1.8, color: "var(--ink)" }}>
             Be true to yourself is the one piece of advice no one in modern America is allowed to question. It is on
-            the graduation card, in the movie, at the end of the therapy session. This short book argues it is not
-            the harmless wisdom it pretends to be. It is the central commandment of a religion with no name, the
-            worship of the self, and it is the most destructive lie of the age. How the self became god, what it
-            cost us, and the older and stranger freedom on the other side. Not be true to yourself. You are not your
-            own.
+            the graduation card, in the movie, at the end of the therapy session. Some of what people mean by it is
+            right: do not live a lie, do not perform a self you do not have, do not let someone else's approval run
+            your life. But underneath that honest wish the phrase is doing quieter work. It is the central
+            commandment of a religion with no name, the worship of the self, and this short book argues that it has
+            cost us more than we have been willing to count. How the self became god, what that did to us, and the
+            older and stranger freedom on the other side. Not be true to yourself. You are not your own.
           </p>
           <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink-muted)" }}>
             By James Bell, who came to faith from atheism and has spent fifteen years pastoring in the secular age.

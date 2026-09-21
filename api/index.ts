@@ -1459,7 +1459,15 @@ async function trpcGetPost(id: number | string): Promise<any | null> {
           // NOT fall through to the static library below (a DB row exists, so
           // this slug is DB-owned) — otherwise the static copy resurfaces and
           // the admin takedown is defeated.
-          if (!r.published) return { __takenDown: true };
+          if (!r.published) {
+            // One exception: a row that is itself a catalogue stub (a 50-word
+            // abstract) unpublished while the library holds the full essay
+            // under the same slug. Hiding the stub must not hide the essay.
+            // A real essay taken down by the admin stays down.
+            const lib = (STATIC_LIBRARY as any[]).find((x) => x.slug === r.slug);
+            if (wordCount(r.body) < 200 && lib && wordCount(lib.body) >= 200 && !TAKEN_DOWN.has(r.slug)) return staticFullCard(lib);
+            return { __takenDown: true };
+          }
           return {
             id: r.id, slug: r.slug, title: r.title, excerpt: r.excerpt || "",
             body: r.body || null, content: r.body || null,

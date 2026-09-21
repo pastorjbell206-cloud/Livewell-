@@ -76,7 +76,7 @@ export default function MarriageInMinistry() {
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-4)" }}>
         <div style={prose}>
           <p style={{ fontFamily: "var(--B)", fontSize: "19px", lineHeight: 1.8, color: "var(--ink)" }}>
-            The church can become the other lover. It takes the pastor's best hours, his sharpest attention, his last reserve of emotional energy, and it leaves the marriage the leftovers, and it does all of it in the name of God. This book names the pressures the parsonage puts on a marriage that no ordinary marriage manual will name, and it is honest about where I failed my own wife for the sake of the work. It is also about how the covenant survives, and more than survives.
+            The church can become the other lover. It takes the pastor's best hours, his sharpest attention, his last reserve of emotional energy, and it leaves the marriage the leftovers, and it does all of it in the name of God. This book names the pressures the parsonage puts on a marriage that no ordinary marriage manual will name, and it does not pretend the pastor writing it has been exempt from them. It is also about how the covenant survives, and more than survives.
           </p>
           <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink-muted)" }}>
             By James Bell, written from inside the ministry marriage, not from a safe distance. Read the opening below, free.

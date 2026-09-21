@@ -52,7 +52,7 @@ export const READING_PATHS = {
     title: "Marriage Under Strain",
     articles: [
       { title: "When Romance Left Covenant Remains", slug: "when-romance-left-covenant-remains" },
-      { title: "Why Does Every Generation Get the Bible Wrong?", slug: "the-monster-in-the-mirror" },
+      { title: "What the Resentment in Your Marriage Is Telling You", slug: "the-resentment-in-your-marriage" },
       { title: "Rest, Ambition, and the Idol of Success", slug: "rest-ambition-and-the-idol-of-success" }
     ],
     book: "What If We're Wrong?"
@@ -61,16 +61,16 @@ export const READING_PATHS = {
     title: "Building Covenant Strength",
     articles: [
       { title: "When Romance Left Covenant Remains", slug: "when-romance-left-covenant-remains" },
-      { title: "Why Does Every Generation Get the Bible Wrong?", slug: "the-monster-in-the-mirror" },
-      { title: "What We Owe the Ones Who Come After", slug: "what-we-owe-generations" }
+      { title: "What Are You Really Promising in Your Marriage Vows?", slug: "the-covenant-you-didnt-understand" },
+      { title: "Why Do Married Couples Slowly Drift Apart?", slug: "the-slow-drift-that-ends-marriages" }
     ],
     book: "The Monster in the Mirror"
   },
   "parenting-crisis-articles": {
     title: "Parenting Through Uncertainty",
     articles: [
-      { title: "What We Owe the Ones Who Come After", slug: "what-we-owe-generations" },
-      { title: "Why Does Every Generation Get the Bible Wrong?", slug: "the-monster-in-the-mirror" },
+      { title: "When Your Teenager Says They Don't Believe Anymore", slug: "teenager-losing-faith" },
+      { title: "How to Talk to Your Kids About Faith When You're Not Sure Yourself", slug: "how-to-talk-kids-faith-doubt" },
       { title: "Rest, Ambition, and the Idol of Success", slug: "rest-ambition-and-the-idol-of-success" }
     ],
     book: "When God Bless America Replaces Thy Kingdom Come"
@@ -78,7 +78,7 @@ export const READING_PATHS = {
   "doubt-crisis-articles": {
     title: "Finding Faith in the Questions",
     articles: [
-      { title: "Why Does Every Generation Get the Bible Wrong?", slug: "the-monster-in-the-mirror" },
+      { title: "What If Christianity Is Wrong?", slug: "what-if-we-are-wrong" },
       { title: "What You're Really Leaving When You Leave the Faith", slug: "constantines-bargain" },
       { title: "Why a Frightened Church Wants a King", slug: "strongman-theology" }
     ],
@@ -89,14 +89,14 @@ export const READING_PATHS = {
     articles: [
       { title: "Can You Be a Christian on Your Own?", slug: "can-you-be-a-christian-alone" },
       { title: "Rest, Ambition, and the Idol of Success", slug: "rest-ambition-and-the-idol-of-success" },
-      { title: "What We Owe the Ones Who Come After", slug: "what-we-owe-generations" }
+      { title: "Who Pastors the Pastor When No One Checks In?", slug: "the-pastor-nobody-checks-on" }
     ],
     book: "The Monster in the Mirror"
   },
   "default": {
     title: "Essential LiveWell Collection",
     articles: [
-      { title: "Why Does Every Generation Get the Bible Wrong?", slug: "the-monster-in-the-mirror" },
+      { title: "What Comes After Deconstruction of Your Faith?", slug: "excavation-not-demolition" },
       { title: "When Romance Left Covenant Remains", slug: "when-romance-left-covenant-remains" },
       { title: "Why a Frightened Church Wants a King", slug: "strongman-theology" }
     ],
@@ -347,10 +347,10 @@ export default function StartHereQuiz() {
             {/* RESULTS PAGE */}
             <div style={{ textAlign: "center", marginBottom: "48px" }}>
               <h1 style={{ fontSize: "36px", fontWeight: "bold", color: "var(--ink)", marginBottom: "16px", fontFamily: "var(--F)" }}>
-                Your Personalized Reading Path
+                Where to start
               </h1>
               <p style={{ fontSize: "16px", color: "var(--ink3)", marginBottom: "24px" }}>
-                Based on where you are, here's where to start:
+                Three essays for what you said is weighing on you, and one book after them. If what you named is a crisis, a reading list is not enough on its own. The Care Plans under Help are built for that, and a real person is better than any page here.
               </p>
               <h2 style={{ fontSize: "24px", fontWeight: "bold", color: "var(--ink)", marginBottom: "32px", fontFamily: "var(--F)" }}>
                 {readingPath.title}
@@ -360,7 +360,7 @@ export default function StartHereQuiz() {
             {/* ARTICLES */}
             <div style={{ marginBottom: "48px" }}>
               <h3 style={{ fontSize: "18px", fontWeight: "bold", color: "var(--ink)", marginBottom: "24px" }}>
-                Start with these articles:
+                Start with these essays
               </h3>
               <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
                 {readingPath.articles.map((article, i) => (
@@ -371,7 +371,7 @@ export default function StartHereQuiz() {
                           {article.title}
                         </h4>
                         <p style={{ fontSize: "13px", color: "var(--ink3)", margin: 0 }}>
-                          7-12 min read
+                          Essay
                         </p>
                       </div>
                       <span style={{ color: "var(--gold)", fontWeight: "bold", marginLeft: "16px", whiteSpace: "nowrap" }}>
@@ -392,7 +392,7 @@ export default function StartHereQuiz() {
                 {readingPath.book}
               </h3>
               <p style={{ fontSize: "14px", color: "var(--ink3)", marginBottom: "16px" }}>
-                Go deeper with James Bell's most comprehensive work on this topic.
+                A book from the same desk, longer than an essay and slower to finish, for when three pieces are not enough.
               </p>
               <Link href="/books" style={{ display: "inline-block", background: "var(--ink)", color: "var(--paper)", padding: "14px 24px", minHeight: "44px", lineHeight: "16px", fontSize: "14px", fontWeight: "bold", borderRadius: "4px", textDecoration: "none", boxSizing: "border-box" }}>
                 View Books

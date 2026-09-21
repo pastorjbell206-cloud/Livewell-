@@ -23,20 +23,11 @@ interface PlannedBook {
   for: string;
 }
 
-const IN_DEVELOPMENT: PlannedBook[] = [
-  {
-    title: "When God Bless America Replaces Thy Kingdom Come",
-    pitch:
-      "The book on Christian nationalism. What it is, what it replaces, and what faithful witness looks like under it.",
-    for: "skeptics, Christians, pastors",
-  },
-  {
-    title: "The Monster in the Mirror",
-    pitch:
-      "A pastor on the parts of himself he wants to deny — and what the gospel says about them anyway.",
-    for: "anyone honest enough to read it",
-  },
-];
+// Both titles that used to sit here ("When God Bless America Replaces Thy
+// Kingdom Come," "The Monster in the Mirror") are now in print with their own
+// book pages, so they belong in the published grid above, not here. Add a
+// title only once it is actually being written.
+const IN_DEVELOPMENT: PlannedBook[] = [];
 
 const PLANNED: PlannedBook[] = [
   {
@@ -46,7 +37,7 @@ const PLANNED: PlannedBook[] = [
   },
   {
     title: "Raising Five Sons",
-    pitch: "What I learned from being there every day for two decades. Formation over performance.",
+    pitch: "What a father of five sons has had to unlearn about raising them. Formation over performance.",
     for: "parents",
   },
 ];
@@ -132,7 +123,7 @@ export default function RoadMap() {
     <Layout>
       <SEOMeta
         title="The Roadmap — 48 books"
-        description="What James Bell has shipped, what's in development, and the planned roadmap of the next ten years."
+        description="What James Bell has in print, what is being written, and what is planned next, on one page."
         url="https://www.livewellbyjamesbell.co/roadmap"
       />
 
@@ -170,9 +161,10 @@ export default function RoadMap() {
               maxWidth: "62ch",
             }}
           >
-            Forty-eight books planned over the next decade. {bookCountWordCap}
-            {" "}already in print. The rest, here in order. Subscribe to the
-            weekly letter to know when one lands.
+            Forty-eight books is the plan. {bookCountWordCap}
+            {" "}are already in print. The rest get listed here when they are
+            actually underway, not before, so this page will always run shorter
+            than the plan. Subscribe to the weekly letter to know when one lands.
           </p>
         </div>
       </section>

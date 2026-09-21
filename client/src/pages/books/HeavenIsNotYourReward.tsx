@@ -29,7 +29,7 @@ export default function HeavenIsNotYourReward() {
     <Layout>
       <SEOMeta
         title={`${TITLE} — An Ebook by James Bell`}
-        description={"Recovering the Bible's actual hope: bodily resurrection and a renewed creation, against souls floating off to the clouds, and what that changes."}
+        description={"Recovering the Bible's fuller hope: bodily resurrection and a renewed creation, not only a soul at rest with Christ, and what that changes."}
         url={`${SITE_URL}/${SLUG}`}
         structuredData={{
           "@context": "https://schema.org",
@@ -75,10 +75,10 @@ export default function HeavenIsNotYourReward() {
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-4)" }}>
         <div style={prose}>
           <p style={{ fontFamily: "var(--B)", fontSize: "19px", lineHeight: 1.8, color: "var(--ink)" }}>
-            The church traded the Bible's real hope for a thin one: disembodied souls floating off to the clouds. But the New Testament does not promise an escape from the world. It promises the resurrection of the body and the renewal of everything, a new heaven and a new earth. That difference is not academic. It changes how we grieve, how we work, how we treat the earth, how we pursue justice, and how we face our own death. This book recovers the hope the church forgot it had.
+            We traded the Bible's full hope for a thinner one. The thin version holds something true: to die is to be with Christ, and Jesus promised the thief paradise that very day. But the New Testament does not stop there, and it does not promise an escape from the world. It promises the resurrection of the body and the renewal of everything, a new heaven and a new earth. That difference is not academic. It changes how we grieve, how we work, how we treat the earth, how we pursue justice, and how we face our own death. This book recovers the hope we forgot we had.
           </p>
           <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink-muted)" }}>
-            By James Bell. The fully biblical hope, for people tired of clouds and harps. Read the opening below, free.
+            By James Bell. The Bible's whole hope, for people who need more than a way out of the world. Read the opening below, free.
           </p>
         </div>
       </section>

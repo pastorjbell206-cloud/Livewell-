@@ -36,7 +36,7 @@ const AUTHORS: Record<string, Author> = {
     slug: "james-bell",
     bio: "Pastor, author, and theological voice for the thinking Christian",
     longBio:
-      "James Bell writes, teaches, and leads from one conviction: behavior modification was never the point. Heart transformation is. He writes from decades inside the room where people fall apart, not from a safe distance. He is the founder of LiveWell and the Pastors Connection Network.",
+      "James Bell writes, teaches, and leads from one conviction: behavior modification was never the point. Heart transformation is. He writes from fifteen years pastoring inside the room where people fall apart, not from a safe distance. He is the founder of LiveWell and the Pastors Connection Network.",
     role: "Founder & Primary Author",
     email: "Pastorjbell206@gmail.com",
     facebook: "https://facebook.com/james.bell.609252",
@@ -66,7 +66,7 @@ const AUTHORS: Record<string, Author> = {
     slug: "pcn",
     bio: "Collective wisdom from pastoral leaders across the globe",
     longBio:
-      "The Pastors Connection Network is a community of pastoral leaders committed to theological depth, spiritual formation, and prophetic witness. Through collaborative writing and shared resources, PCN provides a platform for voices that challenge the church to think deeply and act faithfully.",
+      "The Pastors Connection Network is the network James Bell founded for pastors who carry what he carries: the sermon that has to be ready by Sunday, the marriage in the counseling chair, the loneliness of a full church. The writing published here under its name comes from pastors in that network, thinking hard about what faithfulness costs and saying it plainly.",
     role: "Contributing Authors",
     website: "https://pastorsconnectionnetwork.com",
     articles: [

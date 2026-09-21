@@ -65,7 +65,7 @@ const THEMES: Record<string, ThemeData> = {
       elementary: {
         teaching: [
           "Psalm 100 was a song people sang on their way into the temple. They did not wait until they felt thankful. They sang thanks at the gate, on purpose, before anything else happened. That is worth noticing. Gratitude in the Bible is not a feeling that shows up on good days. It is a choice you make at the door.",
-          "Here is the hard part. Most of us are better at noticing what we do not have. A friend gets something and we want it. A day goes wrong and we forget the hundred things that went right. The psalm gives us the fix. Say it out loud. The Lord is good. His mercy lasts forever. Saying it changes what we see.",
+          "The hard part is that most of us are better at noticing what we do not have. A friend gets something and we want it. A day goes wrong and we forget the hundred things that went right. The psalm gives us the fix. Say it out loud. The Lord is good. His mercy lasts forever. Saying it changes what we see.",
         ],
         questions: [
           "Why do you think the people sang thanks before they even got inside the temple?",
@@ -189,7 +189,7 @@ const THEMES: Record<string, ThemeData> = {
       elementary: {
         teaching: [
           "Paul says forgive as Christ forgave you. That little word as carries all the weight. How did Christ forgive you? Before you said sorry. Completely, not partially. At His own cost, on a cross. That is the pattern, and it is a hard one, because our instinct is to wait until the other person earns it.",
-          "Here is what forgiveness is not. It is not saying the thing did not hurt. It is not pretending it was okay. It is deciding you will not spend your life making them pay. You hand the debt to God, who judges better than you do, and you get your own heart back. The person who refuses to forgive is the one who stays trapped.",
+          "Forgiveness is not saying the thing did not hurt, and it is not pretending it was okay. It is deciding you will not spend your life making them pay. You hand the debt to God, who judges better than you do, and you get your own heart back. The person who refuses to forgive is the one who stays trapped.",
         ],
         questions: [
           "Why is it harder to forgive someone who never says sorry?",
@@ -251,7 +251,7 @@ const THEMES: Record<string, ThemeData> = {
       elementary: {
         teaching: [
           "Paul gives a reason for honesty that most people miss. He does not say tell the truth or you will get in trouble. He says tell the truth because we are members one of another. We belong to each other, like parts of one body. When your eye lies to your feet about what it sees, the whole body falls. A family works the same way. Every lie, even a small one, makes the family a little less safe.",
-          "Most lies come from fear. We lie to escape trouble, or to look better than we are. But here is the secret. The truth, told early, is almost always smaller than the lie that grows to cover it. And a kid who can say I did it and I am sorry is stronger than a kid who can only hide.",
+          "Most lies come from fear. We lie to escape trouble, or to look better than we are. But the truth, told early, is almost always smaller than the lie that grows to cover it. And a kid who can say I did it and I am sorry is stronger than a kid who can only hide.",
         ],
         questions: [
           "Why do you think people lie even when the truth would have been okay?",
@@ -464,7 +464,7 @@ const THEMES: Record<string, ThemeData> = {
       mixed: {
         teaching: [
           "James says to wait like a farmer. The farmer plants, then waits months for rain and harvest, and all his stomping and sighing cannot speed up one tomato. Our family knows about waiting too. Little ones wait for birthdays. Big ones wait for answers to prayers that are taking years. The waiting comes in different sizes, but it is the same lesson.",
-          "Here is what the farmer knows. Waiting is not wasted time. Things grow in the waiting, under the surface, where nobody can see. God is doing the same in each of us, and in this family. He is never late. He is growing something.",
+          "The farmer knows that waiting is not wasted time. Things grow in the waiting, under the surface, where nobody can see. God is doing the same in each of us, and in this family. He is never late. He is growing something.",
         ],
         questions: [
           "What is each person in this family waiting for right now? Everyone answers.",
@@ -512,7 +512,7 @@ const THEMES: Record<string, ThemeData> = {
       teens: {
         teaching: [
           "Peter's readers were social outsiders, mocked, excluded, slandered for leaving the old gods. To people the empire treated as nothing, Peter writes the most extravagant identity statement in the New Testament. You are a chosen generation, a royal priesthood, a holy nation, God's own possession. Every title is shared, given, and unearned. Not one of them was achieved, voted on, or performed for. That is the structural difference between identity in Christ and every other identity on offer.",
-          "Think about how identity works now. You assemble it, out of achievements, aesthetics, followers, the team you make or do not make, the scores that come back. Self-made identity has one fatal feature. Anything you build can be repossessed. The athlete is one injury from nobody. The straight-A identity is one bad semester from collapse. The philosopher Charles Taylor calls this the exhausting condition of the modern self, endlessly performing a self it must also invent. Peter's word cuts across all of it. Your deepest identity is not built. It is given.",
+          "Think about how identity works now. You assemble it, out of achievements, aesthetics, followers, the team you make or do not make, the scores that come back. Self-made identity has one fatal feature. Anything you build can be repossessed. The athlete is one injury from nobody. The straight-A identity is one bad semester from collapse. That is the exhausting condition of the modern self, endlessly performing an identity it also has to invent. Peter's word cuts across all of it. Your deepest identity is not built. It is given.",
           "Notice the purpose clause, though, because this is not just comfort. You were named so that you would show forth the praises of Him who called you out of darkness. Identity in Christ is not a participation trophy. It is a commission. People who know who they are become free to stop performing and start serving, because they no longer need every room to tell them they matter. They already know.",
         ],
         questions: [
@@ -635,7 +635,7 @@ const THEMES: Record<string, ThemeData> = {
       teens: {
         teaching: [
           "Romans 15:13 is a benediction, but look at the logic before you let it sound nice. Paul calls God the God of hope and asks Him to fill believers with joy and peace in believing, so that they abound in hope by the power of the Holy Spirit. Hope here is not an emotion you generate. It is a result, with inputs. Believing leads to joy and peace, and joy and peace overflow into hope, and the entire chain runs on power that is not yours. If your hope has collapsed, the verse says to check the inputs, not to try harder at the output.",
-          "Be precise about what hope is, because the word has been worn thin. Optimism says things will probably work out, and it dies on contact with evidence, which is why your generation, with more evidence scrolling past hourly than any generation in history, reports the least optimism. Biblical hope is different in kind. It is confidence about the future grounded in an event in the past. God raised Jesus from the dead. That either happened or it did not. If it did, then death, the worst fact in every human story, has already lost, and hope is not naive. It is realism with better information.",
+          "Be precise about what hope is, because the word has been worn thin. Optimism says things will probably work out, and it dies on contact with evidence, and you have more of that evidence scrolling past you every hour than your parents ever did. Biblical hope is different in kind. It is confidence about the future grounded in an event in the past. God raised Jesus from the dead. That either happened or it did not. If it did, then death, the worst fact in every human story, has already lost, and hope is not naive. It is realism with better information.",
           "This is why Christians can look directly at terrible things without flinching or pretending. We are not required to say everything happens for a reason, or that it is all fine. It is not all fine. We are people who believe the story turns, because we have seen it turn once, on the third day. Hope is living now in a way that only makes sense if that is true.",
         ],
         questions: [
@@ -924,7 +924,7 @@ export default function FamilyDevotionBuilder() {
     <Layout>
       <SEOMeta
         title="Family Devotion Builder — 15-Minute Devotions by Age and Theme"
-        description="Build a complete 15-minute family devotion in seconds. Pick your kids' ages and a theme, and get Scripture, teaching, discussion, an activity, and a prayer."
+        description="Build a complete 15-minute family devotion. Pick your kids' ages and a theme, and get Scripture, teaching, discussion, an activity, and a prayer."
         keywords="family devotions, family devotion builder, devotions for kids, family worship, devotions by age, Bible activities for children, devotions for teens, family Bible time"
         structuredData={{
           "@context": "https://schema.org",
@@ -1003,7 +1003,7 @@ export default function FamilyDevotionBuilder() {
               </p>
               <p style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.6, color: "var(--ink-muted)", margin: "0 0 18px", maxWidth: "62ch" }}>
                 {allDone
-                  ? `The term is finished. ${series.weeks.length} weeks at the table, and your family kept every one. Let that settle. Build the next term when you are ready.`
+                  ? `The term is finished. ${series.weeks.length} weeks at the table, and your family kept every one. That is not a small thing. Build the next term when you are ready.`
                   : "Open this week's devotion, and mark each week done as your family finishes it."}
               </p>
               <div style={{ display: "flex", flexDirection: "column", gap: "8px", marginBottom: "20px" }}>
@@ -1103,7 +1103,7 @@ export default function FamilyDevotionBuilder() {
             <div style={{ background: "var(--card)", border: "1px solid var(--border)", borderTop: "4px solid var(--mustard)", borderRadius: "10px", padding: "28px 20px" }}>
               <div style={SECTION_LABEL}>Build a series</div>
               <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "var(--ink)", margin: "0 0 24px", maxWidth: "62ch" }}>
-                One age band for the whole term. Then add themes in the order your family will take them, one per week. Two weeks is the shortest term; four to twelve is the sweet spot, and a theme may repeat once.
+                One age band for the whole term. Then add themes in the order your family will take them, one per week. Two weeks is the shortest term; four to twelve is the range that works best, and a theme may repeat once.
               </p>
 
               <div style={{ marginBottom: "24px" }}>

@@ -1,5 +1,10 @@
-import { Toaster } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
+// The toaster is only ever fed by the admin pages (toast() calls live there),
+// so it loads lazily: sonner and next-themes leave the initial graph every
+// reader downloads. No root TooltipProvider: nothing outside the admin
+// sidebar renders a tooltip, and the sidebar mounts its own provider.
+const Toaster = lazy(() =>
+  import("@/components/ui/sonner").then((m) => ({ default: m.Toaster }))
+);
 import PageTracker from "@/components/PageTracker";
 import WebVitalsBeacon from "@/components/WebVitalsBeacon";
 import ClientErrorReporter from "@/components/ClientErrorReporter";
@@ -110,11 +115,11 @@ const Doubt = lazy(() => import("./pages/Doubt"));
 const Help = lazy(() => import("./pages/Help"));
 const CarePlan = lazy(() => import("./pages/plans/CarePlan"));
 const StartHereQuiz = lazy(() => import("./pages/StartHereQuiz"));
-const StartHereDiagnostic = lazy(() => import("./pages/StartHereDiagnostic"));
 const Privacy = lazy(() => import("./pages/Privacy"));
 const Accessibility = lazy(() => import("./pages/Accessibility"));
 const Terms = lazy(() => import("./pages/Terms"));
 const ToolsHub = lazy(() => import("./pages/ToolsHub"));
+const Study = lazy(() => import("./pages/Study"));
 const VerseFinder = lazy(() => import("./pages/tools/VerseFinder"));
 const PrayerGenerator = lazy(() => import("./pages/tools/PrayerGenerator"));
 const BibleStudy = lazy(() => import("./pages/tools/BibleStudy"));
@@ -176,7 +181,6 @@ const MarriageCrisis = lazy(() => import("./pages/landing/MarriageCrisis"));
 const GriefLanding = lazy(() => import("./pages/landing/Grief"));
 const ParentingStruggles = lazy(() => import("./pages/landing/ParentingStruggles"));
 const Deconstruction = lazy(() => import("./pages/landing/Deconstruction"));
-const ChurchHistory = lazy(() => import("./pages/landing/ChurchHistory"));
 const HistoricFaith = lazy(() => import("./pages/HistoricFaith"));
 const Answers = lazy(() => import("./pages/Answers"));
 const Assessments = lazy(() => import("./pages/Assessments"));
@@ -270,6 +274,21 @@ function ToBooksRedirect() {
   useEffect(() => { navigate("/books", { replace: true }); }, [navigate]);
   return null;
 }
+function ToStartRedirect() {
+  const [, navigate] = useLocation();
+  useEffect(() => { navigate("/start", { replace: true }); }, [navigate]);
+  return null;
+}
+function ToPillarsRedirect() {
+  const [, navigate] = useLocation();
+  useEffect(() => { navigate("/pillars", { replace: true }); }, [navigate]);
+  return null;
+}
+function ToChurchHistoryRedirect() {
+  const [, navigate] = useLocation();
+  useEffect(() => { navigate("/theology/history", { replace: true }); }, [navigate]);
+  return null;
+}
 function ForFamiliesRedirect() {
   const [, navigate] = useLocation();
   useEffect(() => { navigate("/parenting", { replace: true }); }, [navigate]);
@@ -359,7 +378,7 @@ function Router() {
         <Route path="/theology/passage" component={PassageContext} />
         <Route path="/theology/history/:slug" component={HistoryEssay} />
         <Route path="/theology/history" component={TheologyHistory} />
-        <Route path="/framework" component={ArticlesRedirect} />
+        <Route path="/framework" component={ToPillarsRedirect} />
         <Route path="/theology/biblical" component={TheologyBiblical} />
         <Route path="/theology/compare" component={TheologyCompare} />
         <Route path="/theology/glossary" component={TheologyGlossary} />
@@ -407,7 +426,7 @@ function Router() {
         <Route path="/help" component={Help} />
         <Route path="/plans/:slug">{(p) => <CarePlan key={p.slug} />}</Route>
         <Route path="/start" component={StartHereQuiz} />
-        <Route path="/start-here" component={StartHereDiagnostic} />
+        <Route path="/start-here" component={ToStartRedirect} />
         {/* Retired sections: 301'd in vercel.json, mirrored here for in-app links */}
         <Route path="/leadership/*?" component={PastorsMovedRedirect} />
         <Route path="/pastors" component={PastorsMovedRedirect} />
@@ -543,6 +562,7 @@ function Router() {
         <Route path="/explore" component={ArticlesRedirect} />
         <Route path="/library" component={Library} />
         <Route path="/diagnostic" component={Diagnostic} />
+        <Route path="/study" component={Study} />
         <Route path="/tools" component={ToolsHub} />
         <Route path="/tools/verse-finder" component={VerseFinder} />
         <Route path="/tools/prayer-generator" component={PrayerGenerator} />
@@ -575,7 +595,7 @@ function Router() {
         <Route path="/grief" component={GriefLanding} />
         <Route path="/parenting-help" component={ParentingStruggles} />
         <Route path="/deconstruction" component={Deconstruction} />
-        <Route path="/church-history" component={ChurchHistory} />
+        <Route path="/church-history" component={ToChurchHistoryRedirect} />
         <Route path="/historic-faith" component={HistoricFaith} />
         <Route path="/answers" component={Answers} />
         <Route path="/assessments" component={Assessments} />
@@ -666,16 +686,16 @@ function App() {
       */}
       <ThemeProvider defaultTheme="light" switchable>
         <ToastProvider>
-          <TooltipProvider>
+          <Suspense fallback={null}>
             <Toaster />
-            <ToastContainer />
-            <WouterRouter hook={useTransitionLocation}>
-              <PageTracker />
-              <WebVitalsBeacon />
-              <ClientErrorReporter />
-              <Router />
-            </WouterRouter>
-          </TooltipProvider>
+          </Suspense>
+          <ToastContainer />
+          <WouterRouter hook={useTransitionLocation}>
+            <PageTracker />
+            <WebVitalsBeacon />
+            <ClientErrorReporter />
+            <Router />
+          </WouterRouter>
         </ToastProvider>
       </ThemeProvider>
     </ErrorBoundary>

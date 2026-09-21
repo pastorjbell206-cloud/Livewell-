@@ -23,7 +23,7 @@ const ITEMS = [
   { href: "/nation/which-party", kind: "The verdict", title: "Which Party Fits the Bible More?", desc: "The straight answer, from a kingdom perspective: it depends on which issues you weight, and Scripture weights them all. The real test is whether you can name where your own side is wrong." },
   { href: "/nation/render", kind: "The way forward", title: "Render to Caesar", desc: "How a Christian actually engages politics faithfully: dual citizenship, holding a party with an open hand, and the patient work of faithful presence." },
   { href: "/nation/theocracy", kind: "The history", title: "What an Old Testament Theocracy Actually Was", desc: "How ancient Israel was really governed, the strange parts included, and why it was a one-time thing that cannot be rebuilt." },
-  { href: "/nation/policy", kind: "A tool", title: "If We Actually Had a Biblical Government", desc: "The Year of Jubilee, gleaning, the warning against kings. What the principles might look like as policy, and why both parties would hate it." },
+  { href: "/nation/policy", kind: "A tool", title: "If We Actually Had a Biblical Government", desc: "The Year of Jubilee, gleaning, the warning against kings. What the principles might look like as policy, and why neither party's platform could absorb it." },
   { href: "/nation/empire", kind: "The warning", title: "The Danger of Empire", desc: "From Babel to Babylon to Rome to now. Every empire demands worship, and the church keeps being seduced by power, on the left and the right." },
   { href: "/nation/christian-nationalism", kind: "The definition", title: "What Christian Nationalism Actually Is", desc: "The scholarship and the data, the honest lines it is not, and why a sincere believer finds it attractive before it becomes idolatry." },
   { href: "/nation/nationalism-history", kind: "The history", title: "How We Got Here", desc: "The dated arc from the Puritan errand to manifest destiny to the Cold War fusion to the Religious Right. How the story of a Christian America was built." },
@@ -48,7 +48,7 @@ export default function NationHub() {
             The Bible is not a party.
           </h1>
           <p style={{ fontFamily: "var(--B)", fontSize: "19px", lineHeight: 1.7, color: "rgba(245,240,230,0.8)", maxWidth: "62ch" }}>
-            America is not the new Israel. Israel's theocracy was a one-time thing that pointed to Christ and cannot be rebuilt, and a biblical government coerced onto a free people would itself betray the gospel. And yet Scripture's vision still judges every party and leaves both the left and the right homeless. This is the most careful, least tribal look this site can offer at the Bible, the nation, and power.
+            America is not the new Israel. Israel's theocracy was a one-time thing that pointed to Christ and cannot be rebuilt, and a biblical government coerced onto a free people would itself betray the gospel. And yet Scripture's vision still judges every party and leaves both the left and the right homeless. What follows tries to look at the Bible, the nation, and power with the same instrument turned on every side, the writer's own included.
           </p>
           <SectionArt seed="nation-hero" tone="dark" />
         </div>

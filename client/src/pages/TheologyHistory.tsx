@@ -54,6 +54,55 @@ export default function TheologyHistory() {
     return [...known, ...extra];
   }, [figures]);
 
+  // Hang everything on the one arc. Each library dates its entries differently
+  // (essays by dateRange, councils by year, figures by dates, heresies by
+  // century), so every item is resolved to a year and then to the timeline
+  // era whose range holds it. The reader opens an era and finds its essay,
+  // its councils, its figures, and what was disputed, in one place.
+  const eraBounds = useMemo(() => {
+    const bounds: { id: string; start: number; end: number }[] = [];
+    for (const era of eras) {
+      const nums = (era.range.match(/\d+/g) || []).map(Number);
+      const start = nums[0] ?? 0;
+      const end = /today/i.test(era.range) ? 9999 : (nums[1] ?? start);
+      bounds.push({ id: era.id, start, end });
+    }
+    return bounds;
+  }, [eras]);
+  const eraIdForYear = (year: number | null): string | null => {
+    if (year == null) return null;
+    const hit = eraBounds.find((b) => year >= b.start && year < b.end) ?? eraBounds.find((b) => year >= b.start && year <= b.end);
+    return hit?.id ?? null;
+  };
+  const firstYear = (s: string | undefined): number | null => {
+    if (!s) return null;
+    const m = s.match(/\d{2,4}/);
+    return m ? Number(m[0]) : null;
+  };
+  const centuryYear = (s: string | undefined): number | null => {
+    const words: Record<string, number> = { first: 1, second: 2, third: 3, fourth: 4, fifth: 5, sixth: 6, seventh: 7, eighth: 8, ninth: 9, tenth: 10 };
+    const m = (s || "").toLowerCase().match(/(\w+)\s+century/);
+    if (!m) return firstYear(s);
+    const n = words[m[1]] ?? Number(m[1].replace(/\D/g, ""));
+    return n ? (n - 1) * 100 + 50 : null;
+  };
+  const byEra = useMemo(() => {
+    const map = new Map<string, { essays: typeof essays; councils: Council[]; figures: Figure[]; heresies: Heresy[] }>();
+    for (const era of eras) map.set(era.id, { essays: [], councils: [], figures: [], heresies: [] });
+    const put = (id: string | null, kind: "essays" | "councils" | "figures" | "heresies", item: never) => {
+      if (id && map.has(id)) (map.get(id)![kind] as unknown[]).push(item);
+    };
+    for (const e of essays) {
+      const named = eras.find((x) => x.name === e.era)?.id ?? null;
+      put(named ?? eraIdForYear(firstYear(e.dateRange)), "essays", e as never);
+    }
+    for (const c of councils) put(eraIdForYear(firstYear(c.year)), "councils", c as never);
+    for (const f of figures) put(eraIdForYear(firstYear(f.dates)), "figures", f as never);
+    for (const h of heresies) put(eraIdForYear(centuryYear(h.era)), "heresies", h as never);
+    return map;
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [eras, essays, councils, figures, heresies, eraBounds]);
+
   const tabs: { id: Tab; label: string; count: number }[] = [
     { id: "timeline", label: "The timeline", count: eras.length },
     { id: "councils", label: "The councils", count: councils.length },
@@ -151,6 +200,56 @@ export default function TheologyHistory() {
                           </div>
                         ))}
                       </div>
+                      {(() => {
+                        const hung = byEra.get(era.id);
+                        if (!hung) return null;
+                        const rowLabel = { fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase" as const, color: "var(--mustard-text)", marginBottom: "6px" };
+                        const quiet = { fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.6, color: "var(--ink-muted)" };
+                        const has = hung.essays.length || hung.councils.length || hung.figures.length || hung.heresies.length;
+                        if (!has) return null;
+                        return (
+                          <div style={{ marginTop: "20px", paddingTop: "16px", borderTop: "1px solid var(--border)", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(220px, 100%), 1fr))", gap: "16px" }}>
+                            {hung.essays.length > 0 && (
+                              <div>
+                                <div style={rowLabel}>Read this era</div>
+                                {hung.essays.map((s) => (
+                                  <Link key={s.slug} href={`/theology/history/${s.slug}`} style={{ display: "block", fontFamily: "var(--F)", fontSize: "17px", lineHeight: 1.3, color: "var(--ink)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px", marginBottom: "8px", width: "fit-content" }}>{s.title}</Link>
+                                ))}
+                              </div>
+                            )}
+                            {hung.councils.length > 0 && (
+                              <div>
+                                <div style={rowLabel}>Councils</div>
+                                {hung.councils.map((c) => (
+                                  <button key={c.name} type="button" onClick={() => setTab("councils")} style={{ ...quiet, display: "block", background: "none", border: "none", padding: 0, cursor: "pointer", textAlign: "left", color: "var(--ink)", marginBottom: "4px" }}>
+                                    {c.name} <span style={{ color: "var(--ink-muted)" }}>· {c.year}</span>
+                                  </button>
+                                ))}
+                              </div>
+                            )}
+                            {hung.figures.length > 0 && (
+                              <div>
+                                <div style={rowLabel}>Figures</div>
+                                {hung.figures.map((f) => (
+                                  <button key={f.name} type="button" onClick={() => setTab("figures")} style={{ ...quiet, display: "block", background: "none", border: "none", padding: 0, cursor: "pointer", textAlign: "left", color: "var(--ink)", marginBottom: "4px" }}>
+                                    {f.name} <span style={{ color: "var(--ink-muted)" }}>· {f.dates}</span>
+                                  </button>
+                                ))}
+                              </div>
+                            )}
+                            {hung.heresies.length > 0 && (
+                              <div>
+                                <div style={rowLabel}>What was disputed</div>
+                                {hung.heresies.map((h) => (
+                                  <button key={h.name} type="button" onClick={() => setTab("heresies")} style={{ ...quiet, display: "block", background: "none", border: "none", padding: 0, cursor: "pointer", textAlign: "left", color: "var(--ink)", marginBottom: "4px" }}>
+                                    {h.name}
+                                  </button>
+                                ))}
+                              </div>
+                            )}
+                          </div>
+                        );
+                      })()}
                     </div>
                   )}
                 </div>

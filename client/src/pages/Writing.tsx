@@ -128,7 +128,10 @@ export default function Writing() {
   const filtered = useMemo(() => {
     return posts.filter(p => {
       // Hidden duplicate stubs never appear in the listing.
-      if (HIDDEN_SLUGS.has(p.slug)) return false;
+      // Main hid 128 "phantom" slugs judged from the seed rows (50-word abstracts).
+      // The library holds full essays under those same slugs, and the static index
+      // lists the library. Hide only what is actually a stub in the row we have.
+      if (HIDDEN_SLUGS.has(p.slug) && !isFullEssay(p)) return false;
       // Catalog stubs (a title over a 40-word abstract, no essay behind it)
       // stay out of the index — see docs/audit-corpus/. Real short posts pass.
       if (!isFullEssay(p)) return false;
@@ -217,7 +220,7 @@ export default function Writing() {
    * plain total when nothing is filtering, and the ratio when something is.
    */
   const allCount = useMemo(
-    () => posts.filter(p => !HIDDEN_SLUGS.has(p.slug) && isFullEssay(p)).length,
+    () => posts.filter(p => isFullEssay(p)).length,
     [posts]
   );
 
@@ -411,7 +414,7 @@ export default function Writing() {
             },
             {
               title: "What the End of Christian America Actually Means",
-              blurb: "The platform's thesis: what is dying is not the faith but Christendom, and the difference changes everything.",
+              blurb: "The platform's thesis: what is dying is not the faith but Christendom, and the difference decides whether the church spends the next generation grieving a country or serving a kingdom.",
               href: "/writing/christendom-is-ending",
             },
             {

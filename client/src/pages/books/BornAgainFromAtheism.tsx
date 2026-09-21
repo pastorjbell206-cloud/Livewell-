@@ -76,7 +76,7 @@ export default function BornAgainFromAtheism() {
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-4)" }}>
         <div style={prose}>
           <p style={{ fontFamily: "var(--B)", fontSize: "19px", lineHeight: 1.8, color: "var(--ink)" }}>
-            I was an atheist, and I remember what an atheist actually wants, because I was one. This is the account of how an unbeliever came to faith as a grown man, and what he found on the other side that he did not expect. Not the smug apologetics that treats the skeptic as a fool. The honest story of the doubts taken at full strength, the arguments that did not settle it, and the strange, unrelenting approach of the God I most wanted not to meet.
+            I was an atheist, and I remember what an atheist actually wants. This is the account of how I came to faith as a grown man, and what I found on the other side that I did not expect. Not the smug apologetics that treats the skeptic as a fool. The honest story of the doubts taken at full strength, the arguments that did not settle it, and the strange, unrelenting approach of the God I most wanted not to meet.
           </p>
           <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink-muted)" }}>
             By James Bell, who came to faith from atheism and has been writing toward the skeptic ever since. Read the opening below, free.

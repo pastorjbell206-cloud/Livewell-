@@ -14,7 +14,7 @@ const COMPARISONS = [
   {
     category: "Theology",
     evangelical: "Conservative orthodoxy. The virgin birth, bodily resurrection, substitutionary atonement, and literal return of Christ are non-negotiable. The boundary markers are doctrinal. If you do not hold them, you are outside the tradition.",
-    mainline: "Progressive or moderate orthodoxy. The creeds are affirmed but often reinterpreted through contemporary lenses. The boundary markers are relational and liturgical more than doctrinal. Theological diversity within a tradition is a feature, not a bug.",
+    mainline: "Progressive or moderate orthodoxy. The creeds are affirmed but often reinterpreted through contemporary lenses. The boundary markers are relational and liturgical more than doctrinal. Theological diversity within a tradition is treated as a strength rather than a threat.",
   },
   {
     category: "Culture",
@@ -29,7 +29,7 @@ const COMPARISONS = [
   {
     category: "Mission",
     evangelical: "Evangelism and church planting. The Great Commission is the central mandate. Personal conversion is the goal. Global missions is the strategy. The Billy Graham model: preach the gospel, call for a decision.",
-    mainline: "Service and justice. The Great Commandment is the central mandate. Social transformation is the goal. Community development, advocacy, and institutional presence are the strategy. The Dorothy Day model: serve the poor, change the structures.",
+    mainline: "Service and justice. The Great Commandment is the central mandate. Social transformation is the goal. Community development, advocacy, and institutional presence are the strategy. The social gospel model: serve the poor, change the structures.",
   },
   {
     category: "Demographics",
@@ -52,7 +52,7 @@ const SHARED_GROUND = [
   "Both care about the world. The disagreement is over strategy, not compassion. Evangelicals build hospitals and orphanages alongside their preaching. Mainline Protestants preach and pray alongside their advocacy.",
   "Both are losing ground in the West. Neither model — neither the countercultural stance nor the accommodating one — has reversed the secularization of American society.",
   "Both produced heroes. Martin Luther King Jr. was trained in mainline theology and preached with evangelical fire. Billy Graham was an evangelist who befriended presidents from both parties.",
-  "Both need each other. Evangelicalism without mainline social conscience becomes theologically rigorous and socially blind. Mainline Protestantism without evangelical conviction becomes socially relevant and theologically empty.",
+  "Both need each other, though not in the same way. Evangelicalism has often held its doctrine tightly while going quiet about the poor and the structures that keep them poor. Mainline Protestantism has kept the social conscience and, in many places, let the doctrine thin out until there was little left to sustain the conscience.",
 ];
 
 const RELATED_ARTICLES = [
@@ -70,7 +70,7 @@ const FAQ_ITEMS = [
   },
   {
     question: "What are the 'mainline' denominations?",
-    answer: "The seven sisters: United Methodist Church, Evangelical Lutheran Church in America, Presbyterian Church (USA), Episcopal Church, United Church of Christ, Christian Church (Disciples of Christ), and American Baptist Churches USA. They were called 'mainline' because they dominated American religious life from the colonial era through the mid-twentieth century. The term is geographical as much as theological — these were the churches on the main line of the Pennsylvania Railroad running through affluent Philadelphia suburbs.",
+    answer: "The seven sisters: United Methodist Church, Evangelical Lutheran Church in America, Presbyterian Church (USA), Episcopal Church, United Church of Christ, Christian Church (Disciples of Christ), and American Baptist Churches USA. They were called 'mainline' because they dominated American religious life from the colonial era through the mid-twentieth century. The term is often traced to the Pennsylvania Railroad's Main Line, the affluent suburbs west of Philadelphia where these churches were strong, though that etymology is disputed.",
   },
   {
     question: "Why is the mainline shrinking?",
@@ -143,7 +143,7 @@ export default function EvangelicalVsMainline() {
         <p style={{ ...S.eyebrow, color: "var(--mustard)" }}>COMPARISON</p>
         <h1 style={S.h1}>Evangelical vs. Mainline</h1>
         <p style={S.heroSub}>
-          One side says the church must confront the culture. The other says the church must listen to it. Both are right about the other's blind spot. Neither has figured out what comes next.
+          One side says the church must confront the culture. The other says the church must listen to it. Each can name the other's blind spot more easily than its own. Neither has figured out what comes next.
         </p>
       </section>
 
@@ -152,7 +152,7 @@ export default function EvangelicalVsMainline() {
         <div style={S.wrap}>
           <p style={S.eyebrow}>POINT BY POINT</p>
           <h2 style={S.h2}>Where they diverge</h2>
-          <p style={S.bodyText}>These categories are oversimplified. They are also useful. The real picture is messier than any comparison chart — but you have to start somewhere, and this is where the fault lines run.</p>
+          <p style={S.bodyText}>These categories are oversimplified. They are also useful. The real picture is messier than any comparison chart, but the chart shows where the fault lines run, and that is where the argument begins.</p>
 
           <div style={{ display: "flex", flexDirection: "column" }}>
             <div className="compare-header-desktop" style={{ display: "grid", gridTemplateColumns: "160px 1fr 1fr", gap: "0", borderBottom: "2px solid var(--mustard)" }}>

@@ -11,6 +11,7 @@ export const SUBPATHWAY_BY_SLUG: Record<string, SlugCategory> = {
   "art-of-saying-no-without-guilt": { pillar: "Integrated Life", sub: "Rhythms & Sabbath", series: false },
   "bivocational-pastors-get-right": { pillar: "Integrated Life", sub: "Vocation & Money", series: false },
   "stopped-competing-church-across-town": { pillar: "Leadership Formation", sub: "Church Revitalization", series: false },
+  "learned-from-pastor-disagrees": { pillar: "Leadership Formation", sub: "Pastoral Health", series: false },
   "sabbatical-why-church-should-require": { pillar: "Integrated Life", sub: "Rhythms & Sabbath", series: false },
   "return-ministry-after-burnout": { pillar: "Leadership Formation", sub: "Pastoral Health", series: false },
   "difference-tired-and-done": { pillar: "Leadership Formation", sub: "Pastoral Health", series: false },

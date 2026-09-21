@@ -76,10 +76,10 @@ export default function TheLonelinessOfThePastor() {
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-4)" }}>
         <div style={prose}>
           <p style={{ fontFamily: "var(--B)", fontSize: "19px", lineHeight: 1.8, color: "var(--ink)" }}>
-            Pastors are quitting in numbers we have never seen, and underneath the statistics is a specific and structural loneliness. A pastor cannot be a normal member of his own church. He performs being fine. He has no peers. He slowly dies of isolation, and the affairs and the burnouts and the resignations all grow in that soil. The answer is not a stronger pastor. It is brotherhood. This is the book the Pastors Connection Network was built around.
+            Pastors quit, and the reason they give is rarely the reason. Underneath it is a specific and structural loneliness. A pastor cannot be a normal member of his own church. He performs being fine. He has no peers. He slowly dies of isolation, and the affairs and the burnouts and the resignations all grow in that soil. The answer is not a stronger pastor. It is brotherhood. This is the book the Pastors Connection Network was built around.
           </p>
           <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink-muted)" }}>
-            By James Bell, founder of the PCN, who nearly quit himself. Read the opening below, free.
+            By James Bell, who founded the Pastors Connection Network so that the pastor with no peers would have some. Read the opening below, free.
           </p>
         </div>
       </section>

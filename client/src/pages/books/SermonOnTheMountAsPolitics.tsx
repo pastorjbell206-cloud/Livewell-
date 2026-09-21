@@ -76,10 +76,10 @@ export default function SermonOnTheMountAsPolitics() {
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-4)" }}>
         <div style={prose}>
           <p style={{ fontFamily: "var(--B)", fontSize: "19px", lineHeight: 1.8, color: "var(--ink)" }}>
-            We took the most public address Jesus ever gave, a sermon preached to people living under occupation, and shrank it down until it fit inside our own chests. We called that faithfulness. It was not. The Sermon on the Mount is the constitution of a different kingdom, an announcement of how a community lives when God is actually king, with something to say about power, money, enemies, truth, and the poor that no nation has ever dared to try. This book reads it the way it was meant to be read, without the spiritualizing, and counts the cost of actually obeying it.
+            We took the most public address Jesus ever gave, a sermon preached to people living under occupation, and shrank it down until it fit inside our own chests. We called that faithfulness. It was not. The Sermon on the Mount is the constitution of a different kingdom, an announcement of how a community lives when God is actually king, with something to say about power, money, enemies, truth, and the poor that no nation, ours included, has shown much appetite for. This book reads it the way it was meant to be read, without the spiritualizing, and counts the cost of actually obeying it.
           </p>
           <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink-muted)" }}>
-            By James Bell, who first met this sermon as an atheist and could not get past the fact that almost no one was living it. Read the opening below, free.
+            By James Bell, who came to faith from atheism and has spent fifteen years pastoring a church that is still learning to live this sermon, its pastor included. Read the opening below, free.
           </p>
         </div>
       </section>

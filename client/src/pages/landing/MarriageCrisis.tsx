@@ -58,7 +58,7 @@ export default function MarriageCrisis() {
         <div style={{ maxWidth: "720px", margin: "0 auto" }}>
           <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "24px" }}>YOU ARE NOT ALONE</p>
           <p style={{ fontFamily: "var(--U)", fontSize: "16px", color: "var(--ink)", lineHeight: 1.7, maxWidth: "68ch" }}>
-            Marriage does not fail because two people are incompatible. It fails because two people stop doing the costly work of seeing each other. These essays are not tips. They are theology pressed into the hardest room in the house.
+            Most marriages that come apart do not fail because two people were incompatible. They fail because two people stopped doing the costly work of seeing each other. That is not every story. Some marriages end by one person's abandonment or violence, and nothing here hands that spouse a share of the blame. But for the marriage that is quietly going cold, the diagnosis holds. These essays are not tips. They are theology pressed into the hardest room in the house.
           </p>
         </div>
       </section>
@@ -87,7 +87,7 @@ export default function MarriageCrisis() {
           <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "24px" }}>RECOMMENDED READING</p>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--ink)", marginBottom: "16px" }}>The First Flock</h2>
           <p style={{ fontFamily: "var(--U)", fontSize: "16px", color: "var(--ink-muted, #5A5448)", lineHeight: 1.7, marginBottom: "32px", maxWidth: "52ch", marginLeft: "auto", marginRight: "auto" }}>
-            Before you lead a church, you lead a family. A book about what it costs to pastor the people under your own roof first.
+            Written for pastors, but not only for them. The people under your own roof are the first congregation anyone is given, and this book is about what it costs to care for them first.
           </p>
           <Link href="/books" style={{ textDecoration: "none" }}>
             <button style={{ background: "var(--mustard)", color: "var(--ink)", border: "none", padding: "12px 28px", fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)", borderRadius: "3px", cursor: "pointer" }}>Browse Books</button>

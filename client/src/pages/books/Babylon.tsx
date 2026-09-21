@@ -77,9 +77,9 @@ export default function Babylon() {
         <div style={prose}>
           <p style={{ fontFamily: "var(--B)", fontSize: "19px", lineHeight: 1.8, color: "var(--ink)" }}>
             Everyone quotes one verse from Jeremiah's letter to the exiles, the one about the plans God has for you.
-            Almost no one reads the four verses before it, which are the actual letter, and which tell a defeated
-            people to do the last thing they expected. Build houses. Plant gardens. Marry and raise children. Seek
-            the welfare of the city that conquered them. This short book is that part of the letter, worked into an
+            Almost no one reads the instructions earlier in the same letter, Jeremiah 29:4-7, which are the actual
+            letter, and which tell a defeated people to do the last thing they expected. Build houses. Plant
+            gardens. Marry and raise children. Seek the welfare of the city that conquered them. This short book is that part of the letter, worked into an
             ordinary life. Not how to take the country back, and not how to make peace with losing it. How to live,
             and live well, as an exile who seeks the good of the city without bowing to its gods.
           </p>

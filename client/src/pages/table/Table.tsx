@@ -90,7 +90,7 @@ export default function Table() {
       "@type": "CollectionPage",
       name: "The Table — Disciplemaking in Homes",
       description:
-        "A one-place engine for making disciples where people live: a free home-study curriculum, leader equipping, books, and study guides. The living room, not the classroom.",
+        "One place for making disciples where people actually live: a free home-study curriculum, leader equipping, books, and study guides. The living room, not the classroom.",
       url: "https://www.livewellbyjamesbell.co/table",
       author: { "@type": "Person", name: "James Bell", url: "https://www.livewellbyjamesbell.co/about" },
       publisher: { "@type": "Organization", name: "LiveWell by James Bell" },
@@ -109,7 +109,7 @@ export default function Table() {
     <Layout>
       <SEOMeta
         title="The Table — Disciplemaking in Homes"
-        description="A one-place engine for making disciples where people live: a free home-study curriculum, leader equipping, books, and study guides. The living room, not the classroom."
+        description="One place for making disciples where people actually live: a free home-study curriculum, leader equipping, books, and study guides. The living room, not the classroom."
         url="https://www.livewellbyjamesbell.co/table"
         structuredData={structuredData}
       />
@@ -122,10 +122,10 @@ export default function Table() {
             The Table
           </h1>
           <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.75, color: "rgba(245,240,230,0.85)", maxWidth: "64ch", marginBottom: "14px" }}>
-            Discipleship did not begin in a classroom. It began at tables, on roads, in borrowed upper rooms. The first church had no building — it met house to house, broke bread, and grew. In a country that has stopped coming to the sanctuary, that older model is not a fallback. It is the way forward.
+            Discipleship did not begin in a classroom. It began at tables, on roads, in borrowed upper rooms. The first church had no building; it met house to house, broke bread, and grew. In a country where fewer people are willing to walk through a sanctuary door, a church that goes back to the living room is not improvising so much as remembering where it started.
           </p>
           <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.75, color: "rgba(245,240,230,0.85)", maxWidth: "64ch" }}>
-            This is the place a church, a family, or two friends can come to find a study, run it in a living room, and be equipped to lead it. No stage. No expert required. One table, an open Bible, and someone willing to go first.
+            This is the place a church, a family, or two friends can come to find a study, run it in a living room, and learn to lead it. None of it needs a stage or a credential, only a table, a Bible, and a host willing to open the door.
           </p>
         </div>
       </section>
@@ -150,7 +150,7 @@ export default function Table() {
       </section>
 
       <StatementBand tone="dark" eyebrow="The table" width="34ch">
-        No stage, no expert, no license to buy — only an open Bible and someone willing to go first.
+        No stage, no expert, no license to buy: an open Bible and someone willing to go first.
       </StatementBand>
 
       {/* The curriculum */}
@@ -162,7 +162,7 @@ export default function Table() {
           </h2>
           <div style={{ width: "36px", height: "2px", background: "var(--mustard)", marginBottom: "var(--s-3)" }} />
           <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "62ch", marginBottom: "var(--s-4)" }}>
-            Each study is built for a home: open the night, read the passage, talk it through, take a practice into the week, and name the person you will pass it to. They are numbered in the order a reader naturally walks them — but any table can start where it stands.
+            Each study is built for a home: open the night, read the passage, talk it through, take a practice into the week, and name the person you will pass it to. They are numbered in the order a reader naturally walks them, but any table can start where it stands.
           </p>
 
           <div style={{ background: "var(--bone-warm)", borderLeft: "3px solid var(--mustard)", borderRadius: "var(--radius-sm)", padding: "14px 18px", maxWidth: "62ch", marginBottom: "var(--s-4)" }}>
@@ -219,7 +219,7 @@ export default function Table() {
                 <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink)", marginTop: "var(--s-4)", maxWidth: "62ch" }}>
                   Never led anything? Start with{" "}
                   <Link href={`/table/${leaderStudy.slug}`} style={{ color: "var(--mustard-text)", fontWeight: 600 }}>{leaderStudy.title}</Link>
-                  {" "}— it exists to make you the host.
+                  . It exists to make you the host.
                 </p>
               )}
             </>
@@ -236,7 +236,7 @@ export default function Table() {
             Use it freely
           </h2>
           <p style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.75, color: "rgba(245,240,230,0.85)", maxWidth: "62ch" }}>
-            Every study here is free to use — in your church, your Sunday school class, your small group, your living room. No license to buy, no account to make, no permission to ask. Print what you need, copy what helps, hand it to whoever is ready. The table was never ours to charge admission to.
+            Every study here is free to use in your church, your Sunday school class, your small group, your living room. No license to buy, no account to make, no permission to ask. Print what you need, copy what helps, hand it to whoever is ready. The table was never ours to charge admission to.
           </p>
         </div>
       </section>

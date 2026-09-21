@@ -24,7 +24,7 @@ const FAQ_ITEMS = [
   },
   {
     question: "Can you deconstruct and still be a Christian?",
-    answer: "Yes. Deconstruction is not the opposite of faith. Many people who deconstruct find a deeper, more honest Christianity on the other side — one that does not require them to check their brain at the door. The issue is not whether you question. The issue is whether you are willing to follow the questions honestly."
+    answer: "Yes. Deconstruction is not the opposite of faith. Many people who deconstruct find a deeper, more honest Christianity on the other side — one that does not ask them to stop thinking in order to keep believing. The issue is not whether you question. The issue is whether you are willing to follow the questions honestly."
   },
   {
     question: "What is the difference between deconstruction and deconversion?",
@@ -105,7 +105,7 @@ export default function Deconstruction() {
             </div>
           </div>
           <p style={{ fontFamily: "var(--U)", fontSize: "16px", color: "var(--ink)", lineHeight: 1.7, maxWidth: "68ch" }}>
-            The church has two options. It can treat every question as a threat and circle the wagons. Or it can take the questions seriously and build a faith that does not require intellectual dishonesty to maintain. These essays choose the second path.
+            The church has two options. It can treat every question as a threat and defend itself against the people asking. Or it can take the questions seriously and build a faith that does not require intellectual dishonesty to maintain. These essays choose the second path. They are also only essays. If the taking-apart has become heavier than questions, talk to a real person: a pastor you still trust, a counselor, or, if it has turned into not wanting to be here, the 988 Suicide & Crisis Lifeline, by call or text.
           </p>
         </div>
       </section>
@@ -190,7 +190,7 @@ export default function Deconstruction() {
       <section style={{ background: "var(--charcoal)", padding: "80px 24px" }}>
         <div style={{ maxWidth: "560px", margin: "0 auto", textAlign: "center" }}>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--charcoal-fg)", marginBottom: "16px" }}>Essays for the taking-apart</h2>
-          <p style={{ fontFamily: "var(--U)", fontSize: "14px", color: "rgba(255,255,255,0.6)", marginBottom: "32px", lineHeight: 1.7 }}>Seven days of essays, questions, and Scripture for the person whose faith is coming apart — or being put back together. No guilt. No conversion bait. Just honest theology.</p>
+          <p style={{ fontFamily: "var(--U)", fontSize: "14px", color: "rgba(255,255,255,0.6)", marginBottom: "32px", lineHeight: 1.7 }}>Seven days of essays, questions, and Scripture for the person whose faith is coming apart or being put back together. None of it is written to guilt you back into a pew or bait you toward a decision. It is theology that tells you the truth as far as the writer can see it.</p>
           <LandingSignup source="landing-deconstruction" />
         </div>
       </section>

@@ -68,7 +68,7 @@ export default function NationScorecard() {
               ))}
             </div>
             <p style={{ fontFamily: "var(--B)", fontSize: "14px", color: "var(--ink-muted)", fontStyle: "italic", marginTop: "12px", maxWidth: "56ch", marginLeft: "auto", marginRight: "auto" }}>
-              However it splits, read it as the verdict it is meant to be. No column adds up to the kingdom of God.
+              However it splits, the split is what the themes show, not a side to cheer for. No column adds up to the kingdom of God.
             </p>
           </div>
         </section>

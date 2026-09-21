@@ -156,10 +156,10 @@ const RESULTS: Record<ResultKey, ResultProfile> = {
     title: "Healing First",
     tagline: "Before theology, safety",
     description:
-      "What happened to you in the church was real. Before you can think clearly about God, you need to know that this space will not replicate the harm. The resources on this path are written by a pastor who has sat across from people the church broke and chose their side.",
+      "What happened to you in the church was real. Before you can think clearly about God, you need to know that the writing here will not repeat the harm. It was written by a pastor who knows what a church can do to a person, and it takes your account of it seriously before it asks anything of you.",
     primaryCta: { label: "Start with Healing", href: "/church-hurt" },
     secondarySuggestions: [
-      { label: "When Faith Falls Apart", href: "/deconstruction", note: "A reading path for rebuilding on your own terms" },
+      { label: "When Faith Falls Apart", href: "/deconstruction", note: "A reading path for rebuilding, at the pace the wound allows" },
       { label: "Care Plans", href: "/help", note: "Pastoral resources for specific seasons of crisis" },
       { label: "The Skeptic's Path", href: "/honest-questions", note: "When you are ready to ask the harder questions" },
     ],
@@ -167,7 +167,7 @@ const RESULTS: Record<ResultKey, ResultProfile> = {
   pastor: {
     key: "pastor",
     title: "Pastor's Lifeline",
-    tagline: "You cannot pour from a dry well",
+    tagline: "Someone ought to be pastoring the pastor",
     description:
       "You preach rest and practice exhaustion. You carry confessions you cannot repeat and doubts you cannot voice. This path is built for pastors who need someone to minister to them for once — not with platitudes, but with the honesty you give everyone else and rarely receive.",
     primaryCta: { label: "Visit the Pastors Connection Network", href: "https://pastorsconnectionnetwork.com" },
@@ -194,7 +194,7 @@ const RESULTS: Record<ResultKey, ResultProfile> = {
       "Christianity did not drop from the sky. It was forged in Roman courts and desert monasteries, split by emperors and reformers, carried across oceans by missionaries and colonizers. If you want to understand the faith, you need the full story — the parts the Sunday sermon skips.",
     primaryCta: { label: "Read the Story of Christianity", href: "/church-history" },
     secondarySuggestions: [
-      { label: "Theology History Essays", href: "/theology/history", note: "Deep dives into the turning points" },
+      { label: "Theology History Essays", href: "/theology/history", note: "The turning points, one at a time, with the history behind each" },
       { label: "Creeds and Confessions", href: "/resources/creeds", note: "The words the church fought over and died for" },
       { label: "Deep Bible Companion", href: "/tools/deep-bible", note: "Study the text the whole tradition argues about" },
     ],
@@ -208,8 +208,8 @@ const RESULTS: Record<ResultKey, ResultProfile> = {
     primaryCta: { label: "Begin Rebuilding", href: "/deconstruction" },
     secondarySuggestions: [
       { label: "Healing First", href: "/church-hurt", note: "If the wound is still open, start here instead" },
-      { label: "The Skeptic's Path", href: "/honest-questions", note: "Wrestle with the hardest questions head on" },
-      { label: "Reading Paths", href: "/reading-paths", note: "Curated sequences that meet you where you are" },
+      { label: "The Skeptic's Path", href: "/honest-questions", note: "The hardest questions, taken seriously rather than managed" },
+      { label: "Reading Paths", href: "/reading-paths", note: "Ordered sequences of essays, chosen for where you are starting from" },
     ],
   },
 };
@@ -421,7 +421,7 @@ export default function StartHereDiagnostic() {
     <div style={{ background: "var(--bone)", minHeight: "100vh", display: "flex", flexDirection: "column" }}>
       <SEOMeta
         title="Start Here — Find Your Path | LiveWell by James Bell"
-        description="Five questions. One honest recommendation. Take the Start Here diagnostic to find the LiveWell content that meets you where you actually are — skeptic, wounded, exhausted, curious, or rebuilding."
+        description="Five questions. One honest recommendation. The Start Here diagnostic points you to the writing on LiveWell that fits where you are: skeptic, wounded, exhausted, curious, or rebuilding."
         keywords="start here, faith diagnostic, where to start, skeptic, church hurt, pastoral burnout, Bible study, deconstruction, LiveWell, James Bell"
         url="https://www.livewellbyjamesbell.co/start-here"
         type="website"

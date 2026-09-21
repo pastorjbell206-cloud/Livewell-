@@ -47,6 +47,30 @@ reading the numbers. Those are James's.
 | Engineering health | A- | A | 364 tests, two new content-as-data files, the essay data split lazily, the six older ebook pages on the shared thank-you component, actions on Node 22. The 3 MB chunk is admin-only and loads nowhere a reader goes. |
 | Analytics and learning loop | D | D | Nothing here can be done from code. One approval in Vercel and one look a month. |
 
+### A note on the same-day merge from main
+
+Another session merged PR #522 into `main` the same morning: the header
+recomposed into five doors (Read, Study, Answers, Grow, Books), a `/study`
+door, church history hung on one timeline, voice repairs across essays and
+pages, the home hero painted from HTML, and "128 phantom articles retired."
+This branch was reconciled onto it. Main's decisions won where they were the
+newer product call (the five doors, `/framework` to `/pillars`); this branch's
+won where main had not revisited them (the four-section homepage, the one
+brand sentence, the Substack pitch, the gated books).
+
+One thing needed correcting rather than merging. The 128 "phantom" slugs were
+judged from the database seed, where each is a 50-word abstract. Under the
+same slugs the essay library holds the full essays, 1,700 words each, and the
+static index lists the library. Main's hidden-slug list would have hidden 129
+real essays from the writing index, and main's `unpublish-stubs` script, run
+against production, would have made the API 404 them. Now: the index hides a
+slug only when the row it has is itself a stub; the API serves the library's
+full essay when a stub row is unpublished and the library has the real one; a
+real essay taken down by the admin stays down. **Do not run
+`scripts/unpublish-stubs.mjs` expecting the essays to disappear; they will
+not, and they should not.** The right long-term fix is to reseed those 128
+rows from the library.
+
 ### What James does to reach A+
 
 1. Save the portrait to `client/public/images/james-bell.jpg` and change one constant in `client/src/lib/site.ts`. Ten minutes.
