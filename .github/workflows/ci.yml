@@ -143,7 +143,11 @@ jobs:
           # for months, and only "/" was ever checked. browser-driver-manager
           # installs a Chrome and a ChromeDriver that match each other, and the
           # prerender step above gives every route real HTML, so ten routes are
-          # audited, not one.
+          # audited, not one. --load-delay holds the scan four seconds after
+          # the load event: the app's JavaScript starts after the first paint
+          # (vite-paint-first.ts) and every route but home is a lazy chunk, so
+          # a scan at load sees the static shell (no main landmark, no h1 on
+          # hub pages) instead of the page the reader gets.
           sleep 3
           set +e
           npx --yes browser-driver-manager install chrome >/dev/null 2>&1
@@ -156,7 +160,7 @@ jobs:
           [ -n "$CHROMEDRIVER_TEST_PATH" ] && AXE_ARGS="$AXE_ARGS --chromedriver-path $CHROMEDRIVER_TEST_PATH"
           worst=0
           for route in / /writing /writing/is-jesus-really-the-only-way /books /books/believe /tools /start /about /notes /canon; do
-            npx --yes @axe-core/cli "http://localhost:4173$route" $AXE_ARGS --exit
+            npx --yes @axe-core/cli "http://localhost:4173$route" $AXE_ARGS --load-delay 4000 --exit
             code=$?
             if [ "$code" = "2" ]; then
               echo "::warning::axe could not start a browser for $route (environment, not a content failure)"
