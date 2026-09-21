@@ -17,8 +17,45 @@ essays that is three times larger than a reader can hold in their head. The
 work from here is not adding. It is cutting, focusing, and making the few
 things that matter unmistakable.
 
-**Overall: B+.** Top ten percent of independent writing sites. Not yet one of
-the best in the world. The gap is editorial and photographic, not technical.
+**Overall at audit time: B+.** Top ten percent of independent writing sites.
+Not yet one of the best in the world. The gap is editorial and photographic,
+not technical.
+
+## Re-graded after the four passes (same day)
+
+James asked for every grade to reach A+. Four passes followed the audit's own
+order; this is where each area stands now, measured the same way, and what
+stands between it and the top mark. The honest total is **A-**: everything
+code can do is done or wired and waiting on a key; the remaining distance is
+the photographs, the survey-essay rewrites, the Stripe click, and a habit of
+reading the numbers. Those are James's.
+
+| Area | Was | Now | What moved, and what remains |
+|---|---|---|---|
+| Writing and voice | A- | A- | Banned words in the banned sense: zero. The 128 stubs no longer reach a reader: production and the prerender serve the library's full body when a database row is the abstract. Still open: the 59 survey essays in the first person (three drafts wait in `docs/audit-voice/rewrites-for-review.md`). |
+| Design and typography | B+ | A- | Hero: one line, one button, one image. Eight doors to four. The nine-card "follow" block, the wisdom chips and the pillar grid are gone from the front page. Cormorant 600 retired. Tools hub leads with eight. Writing hub opens on the newest essay's art. Remains: photographs. A slot waits (`HERO_PHOTO` in `Home.tsx`). |
+| Information architecture | C+ | B+ | Four duplicate browse pages redirect to `/writing`. Footer 46 to 35 links. Tools 23 to 8 featured, 15 in a quiet list. `/canon`: the twelve to read first, in the header. Remains: unpublish the stubs at the source and move the 93 pastor essays, both James's decisions. |
+| Homepage | B | A- | Four sections, four cards on one row, the books on the front page for the first time. 997 KB on a phone, from 1,538. Remains: the photograph. |
+| Essay reading experience | A- | A | Three essays from the essay's own track sit two-thirds of the way down, computed at build time (a doubt essay no longer offers three essays on pastoring). Guide and case data load only where they apply. |
+| Performance | B | A- | Front page 1,538 KB to 997 KB; books 1,569 to 1,003; essay 1,476 to 1,243. Fonts 275 to 238 KB. WebP covers. Remains: `/writing` still loads the 555 KB index (it is the index); a paged index would finish this. Lighthouse re-runs in CI on the next build. |
+| Accessibility | A- | A- | The axe step in CI is fixed and runs against ten prerendered routes. Held at A- until that run has actually reported green. |
+| SEO and discoverability | A | A | Unchanged. Redirected pages removed from the sitemap; `/canon` added. |
+| Purchase and delivery | B+ | A- | 32 ebooks behind the paid-session gate (was 26; the six public folders are gone). Three-book bundle at $19.99 on `/books`. Receipt with re-download link, sent through Resend when `RESEND_API_KEY` is set. Remains: one click in the admin to create the prices; then delete the Payment Links. |
+| Email and audience | C | C+ | The receipt is the first email the site sends itself. Remains: one list, a welcome sequence, a provider key. |
+| Search | C- | A- | Reads the essay index, the tools and the shelf with no server, ranks title hits over excerpt hits, shows the essay art, and lands on the query from the masthead (it used to open empty). Remains: notes and the libraries in one ranked list. |
+| Trust and about | B | B+ | Author card under every essay already existed; the portrait is now one constant. Remains: the file itself, saved to `client/public/images/james-bell.jpg` (this session's proxy refused the CDN). |
+| Engineering health | A- | A | 364 tests, two new content-as-data files, the essay data split lazily, the six older ebook pages on the shared thank-you component, actions on Node 22. The 3 MB chunk is admin-only and loads nowhere a reader goes. |
+| Analytics and learning loop | D | D | Nothing here can be done from code. One approval in Vercel and one look a month. |
+
+### What James does to reach A+
+
+1. Save the portrait to `client/public/images/james-bell.jpg` and change one constant in `client/src/lib/site.ts`. Ten minutes.
+2. Take or commission the twelve photographs; set `HERO_PHOTO`. The single biggest visible change left.
+3. Click "Create Stripe prices" in the admin; then delete the Payment Links and the embedded Buy Button.
+4. Set `RESEND_API_KEY` (and `RECEIPT_FROM`) in Vercel so receipts send.
+5. Read the three rewritten openings and say yes or no; pick which of the 59 survey essays get the same treatment.
+6. Approve the Vercel Analytics read, or open the dashboard once a month and send the top twenty routes.
+7. Unpublish the 128 stubs at the source (or say the word and it is one script), and publish the 93 pastor essays on PCN.
 
 ---
 
