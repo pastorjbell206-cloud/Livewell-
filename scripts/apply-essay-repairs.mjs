@@ -60,7 +60,10 @@ for (const f of readdirSync(dir).filter((x) => x.endsWith(".md"))) {
     const o = post.body || "";
     const ratio = words(body) / Math.max(1, words(o));
     if (ratio < 0.75 || ratio > 1.25) why.push(`length ${Math.round(ratio * 100)}% of original`);
-    const n = notXY(body); if (n > 3) why.push(`${n} "Not X. Y." turns (max 3)`);
+    // One such hinge per movement is the standard's own allowance; movements
+    // run roughly one per six hundred words. Floor 3, ceiling 6.
+    const maxXY = Math.min(6, Math.max(3, Math.floor(words(body) / 600)));
+    const n = notXY(body); if (n > maxXY) why.push(`${n} "Not X. Y." turns (max ${maxXY} for ${words(body)} words)`);
     const fr = fragmentRuns(body); if (fr > 0) why.push(`${fr} fragment stack(s)`);
     const missing = [...refs(o)].filter((r) => !body.includes(r)); if (missing.length) why.push(`dropped Scripture refs: ${missing.slice(0, 4).join(", ")}`);
     const fw = body.match(FORBIDDEN); if (fw) why.push(`forbidden: "${fw[0]}"`);
