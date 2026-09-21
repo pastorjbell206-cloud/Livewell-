@@ -270,7 +270,20 @@ export default function Writing() {
           color: "var(--charcoal-fg)",
         }}
       >
-        <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
+        <div className={isFiltering ? undefined : "home-hero-grid"} style={{ maxWidth: "var(--w-default)", margin: "0 auto", display: isFiltering ? undefined : "grid", gap: "var(--s-5)", alignItems: "center" }}>
+          {/* The newest essay's art beside the heading, so the hub does not open
+              on the same charcoal block as every other hub. Filtered views keep
+              the plain heading; the art belongs to the unfiltered front of the room. */}
+          {!isFiltering && !listLoading && posts[0] && (
+            <Link href={`/writing/${posts[0].slug}`} style={{ textDecoration: "none", color: "inherit", display: "block", order: 2, maxWidth: "560px", width: "100%", justifySelf: "end" }}>
+              <EssayArt seed={posts[0].slug} track={posts[0].pillar} title={posts[0].title} style={{ borderRadius: "var(--radius-sm)", boxShadow: "0 24px 60px rgba(0,0,0,0.35)" }} />
+              <div style={{ display: "flex", gap: "12px", alignItems: "baseline", marginTop: "12px", flexWrap: "wrap" }}>
+                <span style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--mustard)" }}>Newest</span>
+                <span style={{ fontFamily: "var(--F)", fontSize: "19px", lineHeight: 1.25, color: "var(--charcoal-fg)" }}>{posts[0].title}</span>
+              </div>
+            </Link>
+          )}
+          <div>
           <div
             className="eyebrow"
             style={{ marginBottom: "16px", color: "var(--mustard)" }}
@@ -381,7 +394,7 @@ export default function Writing() {
               ))}
             </div>
           )}
-
+          </div>
         </div>
       </section>
 

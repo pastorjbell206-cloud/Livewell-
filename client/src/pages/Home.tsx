@@ -11,7 +11,6 @@
  */
 import { useEffect, useState } from "react";
 import { Link } from "wouter";
-import { ArrowRight } from "lucide-react";
 import { SKEPTIC_TRACK_LIVE } from "@/lib/skepticTrack";
 
 import { StatementBand } from "@/components/EditorialBlocks";
@@ -24,40 +23,18 @@ import { EssayArt } from "@/components/EssayArt";
 import { trpc } from "@/lib/trpc";
 import { fetchJson } from "@/lib/fetch-json";
 import { isFullEssay } from "@/lib/essayQuality";
-import FollowJames from "@/components/FollowJames";
 import AnnouncementBar from "@/components/AnnouncementBar";
+import featured from "@/data/featured.json";
+import { SHELF } from "@/lib/shelf";
+import { CoverImage } from "@/components/CoverImage";
 import PersistentHelpTab from "@/components/PersistentHelpTab";
 import {
   META_DESCRIPTION,
   PRIMARY_HEADLINE,
   PRIMARY_KICKER,
-  PRIMARY_SUBHEAD,
   PRIMARY_SUBHEAD_SHORT,
   SUBSTACK_PITCH,
 } from "@/lib/positioning";
-// Hero A/B variant. "A" (default): tighter two-sentence subhead + a "Find your
-// track" secondary CTA that serves everyone (the skeptic entry stays as a
-// tertiary link). "B": the original long subhead + skeptic-first secondary.
-// Flip this one constant to switch variants without touching markup.
-// The wisdom topics surfaced on the front page. Chosen for search intent: these
-// are the things people actually type at midnight. The full 208 live at /wisdom.
-const WISDOM_TOPICS = [
-  { id: "anxiety", label: "Anxiety and worry" },
-  { id: "grief", label: "Grief and loss" },
-  { id: "marriage-conflict", label: "Marriage trouble" },
-  { id: "depression", label: "Depression" },
-  { id: "wayward-child", label: "A child who walked away" },
-  { id: "doubt", label: "Doubt and questions" },
-  { id: "forgiveness", label: "When you cannot forgive" },
-  { id: "addiction", label: "Addiction" },
-  { id: "loneliness", label: "Loneliness" },
-  { id: "anger", label: "Anger and resentment" },
-  { id: "suffering", label: "Suffering" },
-  { id: "singleness", label: "Singleness" },
-];
-
-const HERO_VARIANT: "A" | "B" = "A";
-
 // The intent doors — the primary way into the site. Written in the reader's
 // own words (recognition beats recall: a first-time visitor knows their
 // problem, not our taxonomy), each routing to an existing surface. The pillar
@@ -122,40 +99,32 @@ const DOORS = [
   },
 ];
 
-// Four reading areas — the deeper writing taxonomy, kept visible below the
-// doors. These are the reference wings, not the two-movement pillar spine
-// (that lives at /pillars and in taxonomy.ts); the heading below says "ways in"
-// so the homepage never claims a pillar count that contradicts /pillars.
-const PILLARS = [
-  { name: "Theological Depth", href: "/theology", blurb: "Doctrine, church history, the whole biblical story." },
-  { name: "Prophetic Justice", href: "/justice", blurb: "The poor, the outsider, the systems we inherit." },
-  { name: "Prophetic Disruption", href: "/disruption", blurb: "The church, empire, and the politics that capture it." },
-  { name: "The Historic Faith", href: "/historic-faith", blurb: "Creeds, councils, and the long memory of the church." },
-  { name: "Integrated Life", href: "/life", blurb: "Marriage, parenting, vocation, and rest." },
-];
-
 // Hand-picked flagship essays for the front page. Curated, not chronological —
 // the front page should lead with the strongest work, not the newest.
-const FLAGSHIP_SLUGS = [
-  "what-the-gospel-actually-is",
-  "what-is-the-kingdom-of-god-and-why-it-changes-everything",
-  "what-christian-nationalism-is-and-is-not",
-  "how-to-read-the-bible-without-making-it-say-what-you-want",
-  "already-and-not-yet-living-between-two-worlds",
-  "why-there-are-so-many-christian-denominations",
-];
+/**
+ * The photograph the front door opens on. None exists yet: the only real
+ * photograph on the site is the portrait on /about. When James supplies one
+ * (the church, the desk, the table), set it here and the lead essay's art
+ * steps aside. Host it in client/public/images/, never a third-party CDN.
+ */
+const HERO_PHOTO: { src: string; alt: string } | null = null;
+
+// The essays the front page leads with live in one data file that the build
+// also reads, so /essays/featured.json carries exactly these six cards and the
+// front page never downloads the whole 555 KB index to draw them.
+const FLAGSHIP_SLUGS: string[] = featured.flagship;
 
 export default function Home() {
   const articlesQuery = trpc.posts.listPublished.useQuery();
   type Listed = NonNullable<typeof articlesQuery.data>[number];
-  // Static first, like /writing: the flagship essays come from /essays/index.json
+  // Static first, like /writing: the flagship essays come from /essays/featured.json
   // (built at deploy) so the front page shows the writing before the API answers.
   const [staticIndex, setStaticIndex] = useState<Listed[] | null>(null);
   useEffect(() => {
     let stale = false;
-    fetchJson<unknown[]>("/essays/index.json", (x): x is unknown[] => Array.isArray(x))
+    fetchJson<unknown[]>("/essays/featured.json", (x): x is unknown[] => Array.isArray(x))
       .then(rows => { if (!stale) setStaticIndex(rows.filter(r => !!r && typeof r === "object") as unknown as Listed[]); })
-      .catch(() => { /* no static index in this checkout — the API list carries the page */ });
+      .catch(() => { /* no static build in this checkout — the API list carries the page */ });
     return () => { stale = true; };
   }, []);
   const all: Listed[] = articlesQuery.data ?? staticIndex ?? [];
@@ -163,9 +132,14 @@ export default function Home() {
   // Lead with the strongest essays; fall back to latest if a slug is absent.
   // The fallback skips catalog stubs (see docs/audit-corpus/) so a short abstract
   // never leads the front page.
+  // Three curated essays and the newest one: four cards, not six. Nobody can
+  // hold six; everyone can hold three and one that is new.
   const bySlug = new Map(all.map(a => [a.slug, a] as const));
-  const curated = FLAGSHIP_SLUGS.map(s => bySlug.get(s)).filter((a): a is (typeof all)[number] => !!a);
-  const flagship = curated.length ? curated : all.filter(isFullEssay).slice(0, 6);
+  const curated = FLAGSHIP_SLUGS.map(s => bySlug.get(s)).filter((a): a is (typeof all)[number] => !!a).slice(0, 3);
+  const newest = all
+    .filter(a => !FLAGSHIP_SLUGS.includes(a.slug) && isFullEssay(a))
+    .sort((a, b) => String(b.publishedAt ?? "").localeCompare(String(a.publishedAt ?? "")))[0];
+  const flagship = curated.length ? [...curated, ...(newest ? [newest] : [])] : all.filter(isFullEssay).slice(0, 4);
 
   return (
     <div>
@@ -259,18 +233,13 @@ export default function Home() {
                 marginBottom: "40px",
               }}
             >
-              {HERO_VARIANT === "A" ? PRIMARY_SUBHEAD_SHORT : PRIMARY_SUBHEAD}
+              {PRIMARY_SUBHEAD_SHORT}
             </p>
 
-            <div
-              style={{
-                display: "flex",
-                flexWrap: "wrap",
-                gap: "12px",
-                alignItems: "center",
-              }}
-            >
-              <Link href="/writing" style={{ textDecoration: "none" }}>
+            {/* One button. The hero used to offer three buttons, a skeptic link
+                and a vision card; a front door with five handles is a wall. */}
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "20px", alignItems: "center" }}>
+              <Link href="/start" style={{ textDecoration: "none" }}>
                 <button
                   type="button"
                   style={{
@@ -278,7 +247,7 @@ export default function Home() {
                     color: "var(--charcoal)",
                     border: "none",
                     borderBottom: "2px solid var(--mustard)",
-                    padding: "14px 28px",
+                    padding: "15px 30px",
                     fontFamily: "var(--U)",
                     fontSize: "13px",
                     fontWeight: 600,
@@ -287,126 +256,37 @@ export default function Home() {
                     cursor: "pointer",
                   }}
                 >
-                  Read the essays
+                  Start here
                 </button>
               </Link>
-              <Link href={HERO_VARIANT === "A" ? "/start" : "/skeptic-track"} style={{ textDecoration: "none" }}>
-                <button
-                  type="button"
-                  style={{
-                    background: "transparent",
-                    color: "var(--charcoal-fg)",
-                    border: "1px solid rgba(245,240,230,0.25)",
-                    padding: "14px 28px",
-                    fontFamily: "var(--U)",
-                    fontSize: "13px",
-                    fontWeight: 600,
-                    letterSpacing: "0.04em",
-                    borderRadius: "var(--radius-sm)",
-                    cursor: "pointer",
-                  }}
-                >
-                  {HERO_VARIANT === "A" ? "Find your track" : "Start here if you're a skeptic"}
-                </button>
-              </Link>
-              <Link href="/books" style={{ textDecoration: "none" }}>
-                <button
-                  type="button"
-                  style={{
-                    background: "transparent",
-                    color: "var(--charcoal-fg)",
-                    border: "1px solid rgba(245,240,230,0.25)",
-                    padding: "14px 28px",
-                    fontFamily: "var(--U)",
-                    fontSize: "13px",
-                    fontWeight: 600,
-                    letterSpacing: "0.04em",
-                    borderRadius: "var(--radius-sm)",
-                    cursor: "pointer",
-                  }}
-                >
-                  See the books
-                </button>
+              <Link
+                href="/canon"
+                style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "rgba(245,240,230,0.7)", textDecoration: "none", backgroundImage: "none", borderBottom: "1px solid rgba(245,240,230,0.3)", paddingBottom: "2px" }}
+              >
+                Or read the twelve essays to start with
               </Link>
             </div>
-            {HERO_VARIANT === "A" && SKEPTIC_TRACK_LIVE && (
-              <div style={{ marginTop: "16px" }}>
-                <Link
-                  href="/skeptic-track"
-                  style={{
-                    fontFamily: "var(--U)",
-                    fontSize: "13px",
-                    color: "rgba(245,240,230,0.6)",
-                    textDecoration: "underline",
-                    textUnderlineOffset: "3px",
-                  }}
-                >
-                  Or start here if you're a skeptic
-                </Link>
-              </div>
-            )}
           </div>
 
-          {/* Vision card — the mission, not the latest article */}
-          <Link
-            href="/exile"
-            style={{ textDecoration: "none", color: "inherit" }}
-          >
-            <article
-              style={{
-                background: "rgba(245,240,230,0.06)",
-                border: "1px solid rgba(245,240,230,0.14)",
-                borderTop: "2px solid var(--mustard)",
-                padding: "var(--s-5)",
-                borderRadius: "var(--radius-sm)",
-                cursor: "pointer",
-                transition: "all 0.2s",
-                maxWidth: "640px",
-              }}
-            >
-              <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>
-                The vision
+          {/* The picture. A photograph of James, the church or the table goes
+              here the day one exists (HERO_PHOTO). Until then the lead essay's
+              own art, so the front door opens on an image and a piece of
+              writing rather than a paragraph about the writing. */}
+          {flagship[0] && (
+            <Link href={`/writing/${flagship[0].slug}`} style={{ textDecoration: "none", color: "inherit", display: "block", maxWidth: "640px", justifySelf: "end", width: "100%" }}>
+              {HERO_PHOTO ? (
+                <img src={HERO_PHOTO.src} alt={HERO_PHOTO.alt} width={1200} height={800} style={{ width: "100%", height: "auto", display: "block", borderRadius: "var(--radius-sm)" }} />
+              ) : (
+                <EssayArt seed={flagship[0].slug} track={flagship[0].pillar} title={flagship[0].title} style={{ borderRadius: "var(--radius-sm)", boxShadow: "0 24px 60px rgba(0,0,0,0.35)" }} />
+              )}
+              <div style={{ display: "flex", gap: "12px", alignItems: "baseline", marginTop: "14px", flexWrap: "wrap" }}>
+                <span style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--mustard)" }}>
+                  {HERO_PHOTO ? "Start with this" : "The essay to start with"}
+                </span>
+                <span style={{ fontFamily: "var(--F)", fontSize: "20px", lineHeight: 1.25, color: "var(--charcoal-fg)" }}>{flagship[0].title}</span>
               </div>
-              <h2
-                style={{
-                  fontFamily: "var(--F)",
-                  fontSize: "28px",
-                  fontWeight: 500,
-                  lineHeight: 1.2,
-                  letterSpacing: "-0.01em",
-                  color: "var(--charcoal-fg)",
-                  marginBottom: "12px",
-                }}
-              >
-                Living well as exiles in a post-Christian world.
-              </h2>
-              <p
-                style={{
-                  fontFamily: "var(--B)",
-                  fontSize: "15px",
-                  lineHeight: 1.65,
-                  color: "rgba(245,240,230,0.7)",
-                  marginBottom: "16px",
-                  maxWidth: "55ch",
-                }}
-              >
-                Where we came from, where we are, how to live, and where we are going. Build the house. Plant the garden. Raise the children. Make disciples at the table.
-              </p>
-              <div
-                style={{
-                  fontFamily: "var(--U)",
-                  fontSize: "12px",
-                  color: "rgba(245,240,230,0.55)",
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "6px",
-                }}
-              >
-                Read the vision
-                <ArrowRight size={12} aria-hidden />
-              </div>
-            </article>
-          </Link>
+            </Link>
+          )}
         </div>
       </section>
 
@@ -461,7 +341,7 @@ export default function Home() {
               aria-label="Loading the essays"
               style={{
                 display: "grid",
-                gridTemplateColumns: "repeat(auto-fill, minmax(min(300px, 100%), 1fr))",
+                gridTemplateColumns: "repeat(auto-fill, minmax(min(240px, 100%), 1fr))",
                 gap: "24px",
               }}
             >
@@ -483,7 +363,7 @@ export default function Home() {
             <div
               style={{
                 display: "grid",
-                gridTemplateColumns: "repeat(auto-fill, minmax(min(300px, 100%), 1fr))",
+                gridTemplateColumns: "repeat(auto-fill, minmax(min(240px, 100%), 1fr))",
                 gap: "24px",
               }}
             >
@@ -556,35 +436,12 @@ export default function Home() {
         }}
       >
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
-          <div className="eyebrow" style={{ marginBottom: "12px" }}>
+          {/* Four doors by the reader's intent. The heading and paragraph that
+              used to sit above them made this a second homepage; the doors say
+              it themselves. */}
+          <div className="eyebrow" style={{ marginBottom: "var(--s-4)" }}>
             Start where you are
           </div>
-          <h2
-            style={{
-              fontFamily: "var(--F)",
-              fontSize: "clamp(28px, 4vw, 38px)",
-              fontWeight: 400,
-              letterSpacing: "-0.015em",
-              color: "var(--ink)",
-              marginBottom: "16px",
-              maxWidth: "32ch",
-            }}
-          >
-            What brings you here?
-          </h2>
-          <p
-            style={{
-              fontFamily: "var(--B)",
-              fontSize: "17px",
-              lineHeight: 1.65,
-              color: "var(--ink-muted)",
-              maxWidth: "60ch",
-              marginBottom: "var(--s-4)",
-            }}
-          >
-            Pick the door that sounds like you. Each one leads somewhere built
-            for exactly that, and the rest of the site opens from there.
-          </p>
           <div
             style={{
               display: "grid",
@@ -592,7 +449,7 @@ export default function Home() {
               gap: "24px",
             }}
           >
-            {DOORS.filter(door => SKEPTIC_TRACK_LIVE || door.href !== "/skeptic-track").map(door => (
+            {DOORS.filter(door => SKEPTIC_TRACK_LIVE || door.href !== "/skeptic-track").slice(0, 4).map(door => (
               <Link key={door.href} href={door.href} style={{ textDecoration: "none" }}>
                 <article
                   style={{
@@ -660,75 +517,28 @@ export default function Home() {
         </div>
       </section>
 
-      {/* WISDOM — 208 topics answering "what does the Bible say about ___".
-          This is the largest single answer library on the site and it was not
-          on the front page at all, which is exactly the kind of thing a reader
-          arrives already looking for. Twelve of the highest-intent topics, then
-          the door to the rest. */}
-      <section id="home-wisdom" style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--s-4)" }}>
+      {/* THE BOOKS — three, written by hand. They were not on the front page. */}
+      <section style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--s-4)" }}>
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
-          <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "10px" }}>
-            Wisdom for all of life
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", flexWrap: "wrap", gap: "12px", marginBottom: "var(--s-4)" }}>
+            <h2 style={{ fontFamily: "var(--F)", fontSize: "32px", fontWeight: 400, letterSpacing: "-0.015em", color: "var(--ink)" }}>
+              Three books. Every word mine.
+            </h2>
+            <Link href="/books" style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--ink)", textDecoration: "none", backgroundImage: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px" }}>
+              The books →
+            </Link>
           </div>
-          <h2
-            style={{
-              fontFamily: "var(--F)",
-              fontSize: "clamp(24px, 3.4vw, 34px)",
-              fontWeight: 400,
-              letterSpacing: "-0.02em",
-              color: "var(--ink)",
-              lineHeight: 1.15,
-              marginBottom: "10px",
-            }}
-          >
-            What does the Bible actually say about what you are facing?
-          </h2>
-          <p
-            style={{
-              fontFamily: "var(--B)",
-              fontSize: "16px",
-              lineHeight: 1.7,
-              color: "var(--ink-muted)",
-              maxWidth: "62ch",
-              marginBottom: "var(--s-5)",
-            }}
-          >
-            Two hundred and eight topics, each one worked through honestly: the passages, the history, what the verse
-            actually meant, and where it lands on an ordinary week. Start where it hurts.
-          </p>
-
-          <div style={{ display: "flex", flexWrap: "wrap", gap: "10px", marginBottom: "var(--s-5)" }}>
-            {WISDOM_TOPICS.map(t => (
-              <Link
-                key={t.id}
-                href={`/wisdom/${t.id}`}
-                style={{
-                  fontFamily: "var(--U)",
-                  fontSize: "13.5px",
-                  fontWeight: 500,
-                  color: "var(--ink)",
-                  textDecoration: "none",
-                  background: "var(--card)",
-                  border: "1px solid var(--border)",
-                  borderRadius: "999px",
-                  padding: "9px 18px",
-                }}
-              >
-                {t.label}
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(280px, 100%), 1fr))", gap: "var(--s-4)" }}>
+            {SHELF.map((b, i) => (
+              <Link key={b.slug} href={b.href} style={{ textDecoration: "none", color: "inherit", display: "flex", gap: "18px", alignItems: "center" }}>
+                <CoverImage src={b.cover} alt={`${b.title} — cover`} eager={i === 0} style={{ width: "96px", height: "auto", flex: "0 0 auto", borderRadius: "3px", boxShadow: "0 12px 28px rgba(20,17,12,0.22)", display: "block" }} />
+                <div>
+                  <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "8px" }}>{b.kicker}</div>
+                  <h3 style={{ fontFamily: "var(--F)", fontSize: "21px", fontWeight: 500, lineHeight: 1.2, letterSpacing: "-0.01em", color: "var(--ink)", marginBottom: "8px" }}>{b.title}</h3>
+                  <span style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, color: "var(--ink-muted)" }}>Read the opening free · $8.99</span>
+                </div>
               </Link>
             ))}
-          </div>
-
-          <div style={{ display: "flex", flexWrap: "wrap", gap: "20px" }}>
-            <Link href="/wisdom" style={{ fontFamily: "var(--U)", fontSize: "13.5px", fontWeight: 600, color: "var(--ink)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px" }}>
-              All 208 topics
-            </Link>
-            <Link href="/tools" style={{ fontFamily: "var(--U)", fontSize: "13.5px", fontWeight: 600, color: "var(--ink)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px" }}>
-              Every tool and assessment
-            </Link>
-            <Link href="/downloads" style={{ fontFamily: "var(--U)", fontSize: "13.5px", fontWeight: 600, color: "var(--ink)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px" }}>
-              Downloads and PDFs
-            </Link>
           </div>
         </div>
       </section>
@@ -750,88 +560,8 @@ export default function Home() {
         Christianity is deeper than your politics. Older than your culture. Wiser
         than your assumptions.
       </StatementBand>
-
-      {/* THE PILLARS — the deeper writing taxonomy spine */}
-      <section
-        style={{
-          background: "var(--bone)",
-          padding: "var(--s-6) var(--s-4)",
-        }}
-      >
-        <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
-          <div className="eyebrow" style={{ marginBottom: "12px" }}>
-            The writing, by pillar
-          </div>
-          <h2
-            style={{
-              fontFamily: "var(--F)",
-              fontSize: "clamp(28px, 4vw, 38px)",
-              fontWeight: 400,
-              letterSpacing: "-0.015em",
-              color: "var(--ink)",
-              marginBottom: "var(--s-4)",
-              maxWidth: "32ch",
-            }}
-          >
-            The pillars. One argument.
-          </h2>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
-              gap: "16px",
-            }}
-          >
-            {PILLARS.map(pillar => (
-              <Link key={pillar.href} href={pillar.href} style={{ textDecoration: "none" }}>
-                <div
-                  style={{
-                    padding: "20px",
-                    background: "var(--card)",
-                    border: "1px solid var(--border)",
-                    borderRadius: "var(--radius-sm)",
-                    height: "100%",
-                    transition: "all 0.2s",
-                    cursor: "pointer",
-                  }}
-                  onMouseEnter={e => {
-                    e.currentTarget.style.borderColor = "var(--mustard)";
-                  }}
-                  onMouseLeave={e => {
-                    e.currentTarget.style.borderColor = "var(--border)";
-                  }}
-                >
-                  <h3
-                    style={{
-                      fontFamily: "var(--F)",
-                      fontSize: "20px",
-                      fontWeight: 500,
-                      letterSpacing: "-0.005em",
-                      color: "var(--ink)",
-                      marginBottom: "8px",
-                    }}
-                  >
-                    {pillar.name}
-                  </h3>
-                  <p
-                    style={{
-                      fontFamily: "var(--B)",
-                      fontSize: "13px",
-                      lineHeight: 1.6,
-                      color: "var(--ink-muted)",
-                    }}
-                  >
-                    {pillar.blurb}
-                  </p>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
       </main>
 
-      <FollowJames heading="Everything James publishes, in one place" blurb="The essays and books live here. The newsletter, the podcast, and the daily notes live elsewhere. Same voice, different rooms." />
 
       <PersistentHelpTab />
       <Footer />

@@ -8,6 +8,42 @@ import { Link } from "wouter";
 import { ArrowLeft, Search as SearchIcon } from "lucide-react";
 
 import { LibrarySource, LIBRARY_SOURCES, pickString } from "@/lib/catalog";
+import { EssayArt } from "@/components/EssayArt";
+import { fetchJson } from "@/lib/fetch-json";
+import { SHELF } from "@/lib/shelf";
+import { TOOLS } from "@/pages/ToolsHub";
+
+// --- Static-first search over the essays, the tools and the books ---
+// The essay index ships with the site (/essays/index.json, built at deploy),
+// so 678 essays are searchable with no server at all. Scored, not filtered:
+// a title hit outranks an excerpt hit, a whole-word hit outranks a fragment.
+
+interface EssayHit {
+  slug: string;
+  title: string;
+  excerpt?: string;
+  metaDescription?: string;
+  pillar?: string | null;
+  readTime?: string | null;
+}
+
+const isEssayIndex = (x: unknown): x is EssayHit[] =>
+  Array.isArray(x) && x.every(e => !!e && typeof e === "object" && typeof (e as EssayHit).slug === "string" && typeof (e as EssayHit).title === "string");
+
+function scoreText(haystack: string, terms: string[], weight: number): number {
+  const h = haystack.toLowerCase();
+  let s = 0;
+  for (const t of terms) {
+    if (!t) continue;
+    if (new RegExp(`\\b${t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`, "i").test(h)) s += 2 * weight;
+    else if (h.includes(t)) s += weight;
+  }
+  return s;
+}
+
+function scoreEssay(e: EssayHit, terms: string[]): number {
+  return scoreText(e.title, terms, 3) + scoreText(`${e.metaDescription ?? ""} ${e.excerpt ?? ""}`, terms, 1) + scoreText(e.pillar ?? "", terms, 1);
+}
 
 // --- Library manifest search (static JSON content libraries) ---
 // The source registry lives in @/lib/catalog so search and the unified
@@ -55,7 +91,11 @@ async function fetchLibrarySource(source: LibrarySource): Promise<LibraryEntry[]
 
 export default function SearchPage() {
   const [, navigate] = useLocation();
-  const [query, setQuery] = useState("");
+  // The masthead search box lands here with ?q=; a search page that ignored
+  // it opened empty, which is the one thing a search page must not do.
+  const [query, setQuery] = useState(() =>
+    typeof window !== "undefined" ? new URLSearchParams(window.location.search).get("q") ?? "" : "",
+  );
   const [searchType, setSearchType] = useState<"all" | "articles" | "resources">("all");
 
   // Library manifests: fetched once on mount, filtered client-side per query
@@ -73,6 +113,39 @@ export default function SearchPage() {
       cancelled = true;
     };
   }, []);
+
+  // The essay index, fetched once the first query is typed.
+  const [essayIndex, setEssayIndex] = useState<EssayHit[] | null>(null);
+  useEffect(() => {
+    if (essayIndex !== null || query.trim().length === 0) return;
+    let stale = false;
+    fetchJson("/essays/index.json", isEssayIndex)
+      .then(list => { if (!stale) setEssayIndex(list); })
+      .catch(() => { if (!stale) setEssayIndex([]); });
+    return () => { stale = true; };
+  }, [query, essayIndex]);
+
+  const terms = useMemo(() => query.trim().toLowerCase().split(/\s+/).filter(t => t.length > 1), [query]);
+
+  const essayMatches = useMemo(() => {
+    if (!terms.length || !essayIndex) return [];
+    return essayIndex
+      .map(e => ({ e, s: scoreEssay(e, terms) }))
+      .filter(x => x.s > 0)
+      .sort((a, b) => b.s - a.s)
+      .slice(0, 12)
+      .map(x => x.e);
+  }, [essayIndex, terms]);
+
+  const toolMatches = useMemo(
+    () => (terms.length ? TOOLS.filter(t => scoreText(`${t.title} ${t.description}`, terms, 1) > 0).slice(0, 6) : []),
+    [terms],
+  );
+  const bookMatches = useMemo(
+    () => (terms.length ? SHELF.filter(b => scoreText(`${b.title} ${b.kicker} ${b.blurb}`, terms, 1) > 0) : []),
+    [terms],
+  );
+  const staticCount = essayMatches.length + toolMatches.length + bookMatches.length;
 
   const libraryMatches = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -142,7 +215,7 @@ export default function SearchPage() {
       case "resource":
         return result.url || "/resources";
       case "book":
-        return "/store";
+        return "/books";
       default:
         return "/";
     }
@@ -237,6 +310,53 @@ export default function SearchPage() {
             </div>
           ) : (
             <>
+              {/* Essays, tools and books, from the files the site ships with:
+                  no server needed, and the essay art on every hit. */}
+              {essayMatches.length > 0 && (
+                <div className="mb-12">
+                  <p className="font-ui text-xs font-medium uppercase mb-6" style={{ color: "var(--gold)", letterSpacing: "0.18em" }}>
+                    From the essays
+                  </p>
+                  <div style={{ display: "grid", gap: "14px" }}>
+                    {essayMatches.map(e => (
+                      <Link key={`essay-${e.slug}`} href={`/writing/${e.slug}`} style={{ display: "flex", gap: "16px", alignItems: "flex-start", padding: "14px", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", background: "var(--card)", textDecoration: "none", color: "inherit", backgroundImage: "none" }}>
+                        <div style={{ flex: "0 0 112px" }}>
+                          <EssayArt seed={e.slug} track={e.pillar ?? undefined} decorative style={{ borderRadius: "3px" }} />
+                        </div>
+                        <div style={{ minWidth: 0 }}>
+                          <h3 style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 500, lineHeight: 1.25, color: "var(--ink)", marginBottom: "6px" }}>{e.title}</h3>
+                          <p className="line-clamp-2" style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.6, color: "var(--ink-muted)" }}>{e.metaDescription || e.excerpt}</p>
+                        </div>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
+              {(toolMatches.length > 0 || bookMatches.length > 0) && (
+                <div className="mb-12" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(260px, 100%), 1fr))", gap: "var(--s-4)" }}>
+                  {toolMatches.length > 0 && (
+                    <div>
+                      <p className="font-ui text-xs font-medium uppercase mb-4" style={{ color: "var(--gold)", letterSpacing: "0.18em" }}>Tools</p>
+                      <ul style={{ listStyle: "none", margin: 0, padding: 0, display: "grid", gap: "8px" }}>
+                        {toolMatches.map(t => (
+                          <li key={t.href}><Link href={t.href} style={{ fontFamily: "var(--U)", fontSize: "15px", fontWeight: 500, color: "var(--ink)", textDecoration: "none", backgroundImage: "none" }}>{t.title}</Link></li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                  {bookMatches.length > 0 && (
+                    <div>
+                      <p className="font-ui text-xs font-medium uppercase mb-4" style={{ color: "var(--gold)", letterSpacing: "0.18em" }}>Books</p>
+                      <ul style={{ listStyle: "none", margin: 0, padding: 0, display: "grid", gap: "8px" }}>
+                        {bookMatches.map(b => (
+                          <li key={b.slug}><Link href={b.href} style={{ fontFamily: "var(--F)", fontSize: "18px", color: "var(--ink)", textDecoration: "none", backgroundImage: "none" }}>{b.title}</Link></li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </div>
+              )}
+
               {/* Library results from the static JSON manifests */}
               {visibleLibraryMatches.length > 0 && (
                 <div className="mb-12">
@@ -299,11 +419,13 @@ export default function SearchPage() {
               )}
 
               {isLoading ? (
+                staticCount === 0 && (
                 <div className="text-center py-12" style={{ color: "var(--ink-muted)" }}>
                   <p className="text-lg">Searching…</p>
                 </div>
-              ) : results.length === 0 ? (
-                visibleLibraryMatches.length === 0 ? (
+                )
+              ) : results.filter((r: any) => !(r.type === "article" && essayMatches.some(e => e.slug === r.slug))).length === 0 ? (
+                visibleLibraryMatches.length === 0 && staticCount === 0 ? (
                   isError ? (
                     <LoadFailed
                       what="The search"
@@ -345,11 +467,11 @@ export default function SearchPage() {
               ) : (
             <div>
               <p role="status" className="text-sm font-ui mb-6" style={{ color: "var(--ink-muted)" }}>
-                Found {results.length} result{results.length !== 1 ? "s" : ""}
+                {staticCount > 0 ? "More results" : `Found ${results.length} result${results.length !== 1 ? "s" : ""}`}
               </p>
 
               <div className="space-y-4">
-                {results.map((result: any) => (
+                {results.filter((r: any) => !(r.type === "article" && essayMatches.some(e => e.slug === r.slug))).map((result: any) => (
                   <Link
                     key={`${result.type}-${result.id}`}
                     href={getResultLink(result)}

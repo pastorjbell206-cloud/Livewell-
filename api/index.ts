@@ -666,7 +666,7 @@ async function createStripePrices(req: VercelRequest, res: VercelResponse) {
         } catch {
           // Deleted or from another account: treat as unset and recreate.
         }
-        if (amount === EBOOK_PRICE_CENTS) {
+        if (amount === (book.priceCents ?? EBOOK_PRICE_CENTS)) {
           results.push({ slug, status: "exists", priceId: existing });
           continue;
         }
@@ -687,12 +687,12 @@ async function createStripePrices(req: VercelRequest, res: VercelResponse) {
       }
       const prices = await stripe.prices.list({ product: product.id, active: true, limit: 100 });
       let price = prices.data.find(
-        (p) => p.unit_amount === EBOOK_PRICE_CENTS && p.currency === "usd" && !p.recurring,
+        (p) => p.unit_amount === (book.priceCents ?? EBOOK_PRICE_CENTS) && p.currency === "usd" && !p.recurring,
       );
       if (!price) {
         price = await stripe.prices.create({
           product: product.id,
-          unit_amount: EBOOK_PRICE_CENTS,
+          unit_amount: book.priceCents ?? EBOOK_PRICE_CENTS,
           currency: "usd",
         });
       }
@@ -1334,14 +1334,27 @@ function byDateDesc(a: any, b: any): number {
 // `const TAKEN_DOWN = new Set<string>([...])` shape if you edit it.
 const TAKEN_DOWN = new Set<string>([]);
 
+// 128 database rows are catalogue stubs (a 50-word abstract) of essays the
+// library holds in full (1,700 words). "DB wins on slug" handed the reader the
+// stub. When the library body is the fuller one, the reader gets it; the row's
+// own id, dates, cover and publish state still win.
+const wordCount = (s: unknown): number => String(s ?? "").split(/\s+/).filter(Boolean).length;
+function preferFullBody(row: any): any {
+  if (!row || typeof row.body !== "string" || wordCount(row.body) >= 200) return row;
+  const lib = (STATIC_LIBRARY as any[]).find((r) => r.slug === row.slug);
+  if (!lib || wordCount(lib.body) <= wordCount(row.body)) return row;
+  return { ...row, body: lib.body, excerpt: row.excerpt || lib.excerpt, readTime: row.readTime || lib.readTime };
+}
+
 // Append the static essays the DB doesn't already have (DB wins on slug), then
 // order the whole set newest-first so the index reads as one library.
 function mergeWithStatic(dbRows: any[], slim: boolean): any[] {
-  const have = new Set((dbRows || []).map((r) => r.slug));
+  const rows = (dbRows || []).map(preferFullBody);
+  const have = new Set(rows.map((r) => r.slug));
   const extra = (STATIC_LIBRARY as any[])
     .filter((r) => !have.has(r.slug) && !TAKEN_DOWN.has(r.slug))
     .map(slim ? staticSlimCard : staticFullCard);
-  return [...(dbRows || []), ...extra].sort(byDateDesc);
+  return [...rows, ...extra].sort(byDateDesc);
 }
 function staticBySlugOrId(id: number | string): any | null {
   const s = String(id);
@@ -1469,7 +1482,7 @@ async function trpcGetPost(id: number | string): Promise<any | null> {
       return { ...toPostCard(row), body: row.body || null, content: row.body || null };
     });
     if (dbRow && (dbRow as any).__takenDown) return null; // 404, and no static fallback
-    if (dbRow) return dbRow;
+    if (dbRow) return preferFullBody(dbRow);
   } catch { /* no DB / unreachable: fall through to the static library */ }
   // Not in the DB (or DB down): serve from the static essay library.
   return staticBySlugOrId(id);
@@ -3118,9 +3131,42 @@ interface EbookConfig {
   epubFilename?: string;
   /** Where Checkout returns the buyer. Default: /<slug>/thank-you. */
   thankYouPath?: string;
+  /** A bundle: the member slugs whose files this purchase unlocks. */
+  bundle?: string[];
+  /** Price in cents when not the one-price rule (bundles). */
+  priceCents?: number;
 }
 
+const gated = (slug: string, title: string, filename: string): EbookConfig => ({
+  title,
+  priceEnv: `STRIPE_PRICE_${slug.toUpperCase().replace(/-/g, "_")}`,
+  file: new URL(`./_ebooks/${slug}.pdf`, import.meta.url),
+  filename: `${filename}.pdf`,
+  epub: new URL(`./_ebooks/${slug}.epub`, import.meta.url),
+  epubFilename: `${filename}.epub`,
+  thankYouPath: `/books/${slug}/thank-you`,
+});
+
 const EBOOKS: Record<string, EbookConfig> = {
+  // All three hand-written books for the price of two-and-a-bit. The
+  // highest-converting offer a three-book author can make.
+  "the-three-books": {
+    title: "The three books",
+    priceEnv: "STRIPE_PRICE_THE_THREE_BOOKS",
+    file: new URL("./_ebooks/believe.pdf", import.meta.url),
+    filename: "Believe.pdf",
+    thankYouPath: "/books/the-three-books/thank-you",
+    bundle: ["when-god-bless-america", "the-monster-in-the-mirror", "believe"],
+    priceCents: 1999,
+  },
+  // The six older ebooks sold from /books/<slug>. Their files sat in
+  // client/public/ebook/ as plain static assets until September 2026.
+  "raising-believers": gated("raising-believers", "Raising Believers", "Raising-Believers"),
+  "deconstruction-of-faith": gated("deconstruction-of-faith", "The Deconstruction of Faith", "The-Deconstruction-of-Faith"),
+  "the-reliability-of-scripture": gated("the-reliability-of-scripture", "The Reliability of Scripture", "The-Reliability-of-Scripture"),
+  "bible-and-homosexuality": gated("bible-and-homosexuality", "What the Bible Says About Homosexuality", "What-the-Bible-Says-About-Homosexuality"),
+  "bible-and-transgender-identity": gated("bible-and-transgender-identity", "What the Bible Says About Transgender Identity", "What-the-Bible-Says-About-Transgender-Identity"),
+  "critical-race-theory-biblical": gated("critical-race-theory-biblical", "Is Critical Race Theory Biblical?", "Is-Critical-Race-Theory-Biblical"),
   // The three books James wrote by hand, sold from /books/<slug>. Their files
   // used to sit in client/public/ebook/ as plain static assets, so the "gated"
   // download was a public URL anyone could guess. They now live here with the
@@ -3359,15 +3405,21 @@ async function ebookDownload(req: VercelRequest, res: VercelResponse) {
     // Record the purchase durably on the thank-you round-trip too, so a record
     // exists even if the Stripe webhook was slow or never fired.
     if (paid) { try { await recordPurchase(session, slug); } catch { /* best-effort */ } }
+    // A bundle unlocks each member; a single book is a bundle of one.
+    const members = book ? (book.bundle ?? [slug]).map((s) => [s, EBOOKS[s]] as const).filter(([, b]) => Boolean(b)) : [];
     if (check) {
-      const formats = book ? ["pdf", ...(book.epub ? ["epub"] : [])] : [];
-      return json(res, 200, { ok: true, paid, slug, title: book?.title || null, formats });
+      const items = members.map(([s, b]) => ({ slug: s, title: b.title, formats: ["pdf", ...(b.epub ? ["epub"] : [])] }));
+      const formats = items[0]?.formats ?? [];
+      return json(res, 200, { ok: true, paid, slug, title: book?.title || null, formats, items });
     }
     if (!paid) return json(res, 402, { error: "payment not completed" });
-    const wantEpub = String(req.query.format || "") === "epub" && Boolean(book!.epub);
-    const data = readFileSync(wantEpub ? book!.epub! : book!.file);
+    const wanted = String(req.query.item || "") || members[0]?.[0];
+    const chosen = members.find(([s]) => s === wanted)?.[1];
+    if (!chosen) return json(res, 400, { error: "that book is not part of this purchase" });
+    const wantEpub = String(req.query.format || "") === "epub" && Boolean(chosen.epub);
+    const data = readFileSync(wantEpub ? chosen.epub! : chosen.file);
     res.setHeader("Content-Type", wantEpub ? "application/epub+zip" : "application/pdf");
-    res.setHeader("Content-Disposition", `attachment; filename="${wantEpub ? book!.epubFilename : book!.filename}"`);
+    res.setHeader("Content-Disposition", `attachment; filename="${wantEpub ? chosen.epubFilename : chosen.filename}"`);
     res.setHeader("Cache-Control", "private, no-store");
     return res.status(200).send(data);
   } catch (e: any) {
@@ -3422,11 +3474,46 @@ async function recordPurchase(session: Stripe.Checkout.Session, resolvedSlug?: s
       currency VARCHAR(12),
       createdAt DATETIME DEFAULT CURRENT_TIMESTAMP
     ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4`);
-    await c.execute(
+    const [result]: any = await c.execute(
       "INSERT INTO purchases (sessionId, slug, email, amountTotal, currency) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE email = COALESCE(VALUES(email), email), amountTotal = VALUES(amountTotal), currency = VALUES(currency)",
       [session.id, slug, email, amount, currency],
     );
+    // affectedRows is 1 for a new row and 2 for a duplicate-key update, so the
+    // receipt goes once, on the first confirmation, never on every reload.
+    if (result?.affectedRows === 1 && email) {
+      try { await sendReceipt(email, slug, session.id); } catch (err: any) { console.error("[receipt]", err?.message || err); }
+    }
   });
+}
+
+// A receipt with the re-download link, sent through Resend when a key is set
+// (RESEND_API_KEY, and RECEIPT_FROM for the sender). Without the key nothing is
+// sent and nothing fails: the thank-you page already holds the same link.
+async function sendReceipt(to: string, slug: string, sessionId: string): Promise<void> {
+  const key = process.env.RESEND_API_KEY?.trim();
+  const book = EBOOKS[slug];
+  if (!key || !book) return;
+  const from = process.env.RECEIPT_FROM?.trim() || "LiveWell by James Bell <hello@livewellbyjamesbell.co>";
+  const link = `${PRODUCTION_SITE_URL}${book.thankYouPath ?? `/${slug}/thank-you`}?session_id=${encodeURIComponent(sessionId)}`;
+  const titles = (book.bundle ?? [slug]).map((s) => EBOOKS[s]?.title).filter(Boolean).join(", ");
+  const text = [
+    `Thank you for buying ${titles}.`,
+    "",
+    "Your download page, which stays live, is here:",
+    link,
+    "",
+    "The EPUB reads on a phone or e-reader; the PDF reads on everything else.",
+    "If anything goes wrong with the download, reply to this email and a person will send the files directly.",
+    "",
+    "James Bell",
+    "livewellbyjamesbell.co",
+  ].join("\n");
+  const r = await fetch("https://api.resend.com/emails", {
+    method: "POST",
+    headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/json" },
+    body: JSON.stringify({ from, to, subject: `Your copy of ${titles}`, text }),
+  });
+  if (!r.ok) throw new Error(`resend ${r.status}`);
 }
 
 // Durable record of a new member (a completed membership subscription checkout),

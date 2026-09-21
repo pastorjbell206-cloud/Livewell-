@@ -734,6 +734,26 @@
             "permanent": true
         },
         {
+            "source": "/explore",
+            "destination": "/writing",
+            "permanent": true
+        },
+        {
+            "source": "/map",
+            "destination": "/writing",
+            "permanent": true
+        },
+        {
+            "source": "/framework",
+            "destination": "/writing",
+            "permanent": true
+        },
+        {
+            "source": "/article-collections",
+            "destination": "/writing",
+            "permanent": true
+        },
+        {
             "source": "/resources-for-pastors",
             "destination": "/for-pastors",
             "permanent": true

@@ -13,13 +13,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - uses: pnpm/action-setup@v4
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
-          node-version: 20
+          node-version: 22
           cache: pnpm
 
       - run: pnpm install --frozen-lockfile
@@ -66,14 +66,14 @@ jobs:
     runs-on: ubuntu-latest
     continue-on-error: true
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: pnpm/action-setup@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
-          node-version: 20
+          node-version: 22
           cache: pnpm
       - run: pnpm install --frozen-lockfile
-      - run: pnpm run sitemap && pnpm run build
+      - run: pnpm run sitemap && pnpm run essays:public && pnpm run build && pnpm run prerender
       - name: Serve built site
         run: npx serve -s dist/public -l 4173 &
       - name: Lighthouse (home)
@@ -98,12 +98,31 @@ jobs:
           # rendered in time. It exercises the shared Layout, nav, footer, and a
           # hero h1 — the design system's a11y. Full-route a11y is covered by
           # axe/Lighthouse against live Vercel previews, per docs/ARCHITECTURE.
+          #
+          # September 2026: the driver mismatch had silently skipped this step
+          # for months, and only "/" was ever checked. browser-driver-manager
+          # installs a Chrome and a ChromeDriver that match each other, and the
+          # prerender step above gives every route real HTML, so ten routes are
+          # audited, not one.
           sleep 3
           set +e
-          npx --yes @axe-core/cli http://localhost:4173/ --exit
-          code=$?
-          if [ "$code" = "2" ]; then
-            echo "::warning::axe skipped — Chrome/ChromeDriver version mismatch (environment, not a content failure)"
-            exit 0
+          npx --yes browser-driver-manager install chrome >/dev/null 2>&1
+          if [ -f "$HOME/.browser-driver-manager/.env" ]; then
+            # shellcheck disable=SC1090
+            . "$HOME/.browser-driver-manager/.env"
           fi
-          exit $code
+          AXE_ARGS=""
+          [ -n "$CHROME_TEST_PATH" ] && AXE_ARGS="$AXE_ARGS --chrome-path $CHROME_TEST_PATH"
+          [ -n "$CHROMEDRIVER_TEST_PATH" ] && AXE_ARGS="$AXE_ARGS --chromedriver-path $CHROMEDRIVER_TEST_PATH"
+          worst=0
+          for route in / /writing /writing/is-jesus-really-the-only-way /books /books/believe /tools /start /about /notes /canon; do
+            npx --yes @axe-core/cli "http://localhost:4173$route" $AXE_ARGS --exit
+            code=$?
+            if [ "$code" = "2" ]; then
+              echo "::warning::axe could not start a browser for $route (environment, not a content failure)"
+            elif [ "$code" != "0" ]; then
+              echo "::error::axe found accessibility violations on $route"
+              worst=1
+            fi
+          done
+          exit $worst

@@ -19,8 +19,6 @@
 @font-face{font-family:"Cormorant Garamond";font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/cormorant-garamond-400-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
 @font-face{font-family:"Cormorant Garamond";font-style:normal;font-weight:500;font-display:swap;src:url(/fonts/cormorant-garamond-500-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
 @font-face{font-family:"Cormorant Garamond";font-style:normal;font-weight:500;font-display:swap;src:url(/fonts/cormorant-garamond-500-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
-@font-face{font-family:"Cormorant Garamond";font-style:normal;font-weight:600;font-display:swap;src:url(/fonts/cormorant-garamond-600-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
-@font-face{font-family:"Cormorant Garamond";font-style:normal;font-weight:600;font-display:swap;src:url(/fonts/cormorant-garamond-600-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
 @font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/inter-400-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
 @font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/inter-400-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
 @font-face{font-family:"Inter";font-style:normal;font-weight:500;font-display:swap;src:url(/fonts/inter-500-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
@@ -255,7 +253,7 @@ img{display:block;max-width:100%}
 .nav-wrap.shadow{box-shadow:0 4px 32px rgba(26,51,40,.08)}
 /* The site header only. This was a bare `nav{}` rule and applied to every <nav> on the site — the essay contents box, end-of-essay links, breadcrumbs, pagination — forcing each into a 70px flex row that overflowed its content. */
 .nav-wrap nav,nav.site-nav{display:flex;align-items:center;justify-content:space-between;height:70px;max-width:1200px;margin:0 auto;padding:0 32px}
-.nav__logo{font-family:var(--F);font-size:21px;font-weight:600;color:var(--forest);letter-spacing:-.01em;flex-shrink:0;display:flex;align-items:baseline;gap:6px}
+.nav__logo{font-family:var(--F);font-size:21px;font-weight:500;color:var(--forest);letter-spacing:-.01em;flex-shrink:0;display:flex;align-items:baseline;gap:6px}
 .nav__logo em{font-style:italic;color:var(--gold)}
 .nav__logo small{font-family:var(--U);font-size:12px;font-weight:300;color:var(--ink3);letter-spacing:.02em}
 .nav__mid{display:flex;align-items:center;gap:2px}
@@ -272,7 +270,7 @@ img{display:block;max-width:100%}
 .mlink{display:flex;align-items:flex-start;gap:11px;padding:9px 11px;border-radius:3px;transition:background .2s;margin-bottom:2px}
 .mlink:hover{background:var(--cream)}
 .mlink-ico{font-size:17px;flex-shrink:0;margin-top:1px}
-.mlink strong{display:block;font-family:var(--F);font-size:15px;font-weight:600;color:var(--ink);margin-bottom:1px}
+.mlink strong{display:block;font-family:var(--F);font-size:15px;font-weight:500;color:var(--ink);margin-bottom:1px}
 .mlink span{font-family:var(--U);font-size:12px;color:var(--ink3)}
 .nav__right{display:flex;align-items:center;gap:10px}
 .btn-nv{font-family:var(--U);font-size:13px;font-weight:600;padding:10px 20px;border-radius:2px;letter-spacing:.04em;transition:.2s}
@@ -293,7 +291,7 @@ img{display:block;max-width:100%}
 .mob-menu.open{display:block}
 .mob-sec-title{font-family:var(--U);font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid var(--border)}
 .mob-sec{margin-bottom:20px}
-.mob-sec a{display:block;font-family:var(--F);font-size:16px;font-weight:600;color:var(--ink);padding:8px 0;border-bottom:1px solid var(--border)}
+.mob-sec a{display:block;font-family:var(--F);font-size:16px;font-weight:500;color:var(--ink);padding:8px 0;border-bottom:1px solid var(--border)}
 @media (max-width:768px){
 .mob-menu{display:block !important;position:static;top:auto;overflow-y:visible;z-index:auto;padding:16px 32px 24px;border-top:1px solid var(--border)}
 .mob-sec{margin-bottom:20px}
@@ -333,7 +331,7 @@ img{display:block;max-width:100%}
 .btn-ghost{font-family:var(--U);font-size:13px;color:rgba(255,255,255,.7);border:1px solid rgba(255,255,255,.2);padding:14px 26px;border-radius:2px;transition:.2s}
 .btn-ghost:hover{border-color:rgba(255,255,255,.5);color:white}
 .hero-stats{display:flex;align-items:center;gap:28px;padding-top:32px;border-top:1px solid rgba(255,255,255,.1)}
-.hstat-n{font-family:var(--F);font-size:30px;font-weight:600;color:var(--goldlt);line-height:1;margin-bottom:3px}
+.hstat-n{font-family:var(--F);font-size:30px;font-weight:500;color:var(--goldlt);line-height:1;margin-bottom:3px}
 .hstat-l{font-family:var(--U);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.4)}
 .hstat-div{width:1px;height:36px;background:rgba(255,255,255,.1)}
 
@@ -341,7 +339,7 @@ img{display:block;max-width:100%}
 .hero-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.13);backdrop-filter:blur(10px);padding:36px;position:relative}
 .hero-card::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--gold),var(--goldlt))}
 .hero-card img{width:88px;height:88px;border-radius:50%;object-fit:cover;object-position:top center;border:2px solid var(--gold);margin-bottom:18px;display:block}
-.hcard-name{font-family:var(--F);font-size:23px;font-weight:600;color:white;margin-bottom:2px}
+.hcard-name{font-family:var(--F);font-size:23px;font-weight:500;color:white;margin-bottom:2px}
 .hcard-role{font-family:var(--U);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--goldlt);margin-bottom:16px}
 .hcard-bio{font-size:14px;color:rgba(255,255,255,.6);line-height:1.75;margin-bottom:22px}
 .hcard-quote{font-family:var(--F);font-size:15px;font-style:italic;color:rgba(255,255,255,.8);border-left:2px solid var(--gold);padding:14px 16px;background:rgba(255,255,255,.04);line-height:1.65}
@@ -356,7 +354,7 @@ img{display:block;max-width:100%}
 .strip-item{flex-shrink:0;display:flex;align-items:center;gap:14px;padding:0 28px;border-right:1px solid rgba(255,255,255,.07);transition:background .2s;min-width:250px;cursor:pointer}
 .strip-item:hover{background:rgba(255,255,255,.04)}
 .sitem-cat{font-family:var(--U);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:4px}
-.sitem-title{font-family:var(--F);font-size:16px;font-weight:600;color:white;line-height:1.3}
+.sitem-title{font-family:var(--F);font-size:16px;font-weight:500;color:white;line-height:1.3}
 
 /* CONTENT SECTIONS */
 .section{padding:80px 0}
@@ -416,14 +414,14 @@ img{display:block;max-width:100%}
 .card-img{width:100%;height:240px;object-fit:cover;display:block}
 .card-body{padding:24px}
 .card-cat{font-family:var(--U);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:8px;font-weight:600}
-.card-title{font-family:var(--F);font-size:20px;font-weight:600;color:var(--ink);margin-bottom:12px;line-height:1.3}
+.card-title{font-family:var(--F);font-size:20px;font-weight:500;color:var(--ink);margin-bottom:12px;line-height:1.3}
 .card-desc{font-size:14px;color:var(--ink3);line-height:1.7;margin-bottom:16px}
 .card-meta{display:flex;align-items:center;gap:12px;font-family:var(--U);font-size:12px;color:var(--ink3)}
 
 /* FOOTER */
 footer{background:var(--charcoal);color:var(--bone);padding:60px 0 40px}
 .footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:40px;margin-bottom:40px}
-.footer-col h4{font-family:var(--F);font-size:18px;font-weight:600;margin-bottom:16px}
+.footer-col h4{font-family:var(--F);font-size:18px;font-weight:500;margin-bottom:16px}
 .footer-col a{display:block;font-size:14px;color:rgba(255,255,255,.7);margin-bottom:10px;transition:color .2s}
 .footer-col a:hover{color:white}
 .footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:24px;display:flex;justify-content:space-between;align-items:center;font-size:13px;color:rgba(255,255,255,.5)}

@@ -957,13 +957,27 @@ async function main() {
   // the static-library pass below doesn't double-write them.
   const writtenEssaySlugs = new Set();
 
+  // 128 database rows are catalogue stubs (a 50-word abstract) of essays the
+  // library holds in full (1,700 words). "DB wins on slug" would hand a crawler
+  // the stub. When the library body is the fuller one, the page gets it.
+  const libBySlug = new Map(
+    (readJsonSafe("content/static-library.generated.json") || []).map((r) => [r.slug, r])
+  );
+  const words = (s) => String(s || "").split(/\s+/).filter(Boolean).length;
+  const preferFullBody = (row) => {
+    const lib = libBySlug.get(row.slug);
+    if (!lib || words(row.body) >= 200 || words(lib.body) <= words(row.body)) return row;
+    return { ...row, body: lib.body, excerpt: row.excerpt || lib.excerpt };
+  };
+
   // DB-driven pages
   const conn = await loadDb();
   if (conn) {
     try {
-      const [posts] = await conn.query(
+      const [dbPosts] = await conn.query(
         "SELECT slug, title, excerpt, pillar, body, coverImage, publishedAt, updatedAt, createdAt FROM posts WHERE published = true"
       );
+      const posts = dbPosts.map(preferFullBody);
       for (const post of posts) {
         const url = `${SITE_URL}/writing/${post.slug}`;
         // Use the essay's own cover when present; otherwise render a per-essay

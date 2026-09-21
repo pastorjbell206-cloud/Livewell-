@@ -11,7 +11,7 @@
 import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { Link, useLocation, useParams } from "wouter";
-import { DISCUSSION_GUIDES } from "@/data/discussion-guides";
+import { DISCUSSION_GUIDE_SLUGS } from "@/data/discussion-guide-slugs";
 import { Markdown } from "@/components/Markdown";
 import { recordReadEvent } from "@/components/ReadDepthBeacon";
 import { ArrowLeft, BookOpen, Bookmark, Share2, User } from "lucide-react";
@@ -31,6 +31,7 @@ import { KeepReadingBook } from "@/components/KeepReadingBook";
 import { RelatedEssays } from "@/components/RelatedEssays";
 import ArticleNextSteps, { isArticleOnPath } from "@/components/ArticleNextSteps";
 import { SubstackSeriesNote } from "@/components/SubstackSeriesNote";
+import { splitForRelated } from "@/lib/essay-split";
 import { EssayArt } from "@/components/EssayArt";
 import { trpc } from "@/lib/trpc";
 import { fetchJson } from "@/lib/fetch-json";
@@ -589,6 +590,14 @@ export default function ArticleDetail() {
   }
 
   const canonical = articleUrl(post.slug);
+  const [bodyBefore, bodyAfter] = splitForRelated((post.body ?? "").replace(/^\s*#{1,6}\s+.*\r?\n+/, ""));
+  const proseComponents = {
+    blockquote: ({ children }: { children?: React.ReactNode }) => (
+      <ShareableQuote shareTitle={post.title} shareUrl={canonical}>
+        {children}
+      </ShareableQuote>
+    ),
+  };
   // The plain-language search layer (scripts/build-seo-layer.mjs) rides on the
   // static essay files: a meta description in everyday words and, when the
   // title is a question, the question with the essay's own answer. The page
@@ -868,17 +877,14 @@ export default function ArticleDetail() {
             }}
           >
             {post.body ? (
-              <Markdown
-                components={{
-                  blockquote: ({ children }: { children?: React.ReactNode }) => (
-                    <ShareableQuote shareTitle={post.title} shareUrl={canonical}>
-                      {children}
-                    </ShareableQuote>
-                  ),
-                }}
-              >
-                {post.body.replace(/^\s*#{1,6}\s+.*\r?\n+/, "")}
-              </Markdown>
+              <>
+                <Markdown components={proseComponents}>{bodyBefore}</Markdown>
+                {/* Two-thirds of the way down, three essays worth reading next.
+                    A reader still here is still with the argument; the foot of
+                    the page only reaches finishers. */}
+                {bodyAfter && !focus && <RelatedEssays post={post} compact />}
+                {bodyAfter && <Markdown components={proseComponents}>{bodyAfter}</Markdown>}
+              </>
             ) : (
               <p style={{ fontStyle: "italic", color: "var(--ink-muted)" }}>
                 This article is in preparation.
@@ -917,7 +923,7 @@ export default function ArticleDetail() {
             {/* Three-audience share replaces the single SendToPastor button */}
             <AudienceShare title={post.title} url={canonical} />
             {/* Pastor distribution: hand this essay to a whole small group */}
-            {post.slug && DISCUSSION_GUIDES[post.slug] && (
+            {post.slug && DISCUSSION_GUIDE_SLUGS.has(post.slug) && (
               <Link
                 href={`/group-guide/${post.slug}`}
                 style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--ink)", textDecoration: "none", border: "1px solid var(--border)", borderRadius: "999px", padding: "7px 14px", whiteSpace: "nowrap" }}
@@ -955,7 +961,8 @@ export default function ArticleDetail() {
                 <ArticleNextSteps articleSlug={post.slug ?? ""} articlePillar={post.pillar ?? ""} />
               </>
             )}
-            <RelatedEssays post={post} />
+            {/* Short essays never split; they get the related list here instead. */}
+            {!bodyAfter && <RelatedEssays post={post} />}
 
             {/* NEWSLETTER (single CTA — no fake form) */}
             <section

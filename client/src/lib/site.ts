@@ -4,6 +4,13 @@
 export const SITE_URL = "https://www.livewellbyjamesbell.co";
 export const SITE_NAME = "LiveWell by James Bell";
 export const AUTHOR_NAME = "James Bell";
+/**
+ * The one photograph of James on the site. It still lives on a third-party
+ * CDN: this session could not fetch it (the proxy refused the host). When the
+ * file is saved to client/public/images/james-bell.jpg, point this at
+ * "/images/james-bell.jpg" and every surface follows.
+ */
+export const AUTHOR_PORTRAIT = "https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/IMG_4533_137f3486.jpeg";
 
 // The canonical author bio for book/funnel pages. One sentence pair, one
 // register — every page that carries a bio renders this constant, so the

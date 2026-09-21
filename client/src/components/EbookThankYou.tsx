@@ -44,9 +44,11 @@ export function EbookThankYou({
   const [sessionId] = useState(readSessionId);
   const [status, setStatus] = useState<Status>(() => (readSessionId() ? "verifying" : "missing"));
   const [attempt, setAttempt] = useState(0);
-  const [downloading, setDownloading] = useState<"" | "pdf" | "epub">("");
+  const [downloading, setDownloading] = useState<string>("");
   const [downloadError, setDownloadError] = useState(false);
   const [hasEpub, setHasEpub] = useState(false);
+  // A bundle unlocks several books; the check reply lists them.
+  const [items, setItems] = useState<{ slug: string; title: string; formats: string[] }[]>([]);
   const backHref = bookPath ?? `/${slug}`;
   // The slug travels with every call so a session from a Stripe Payment Link
   // (which carries no metadata) can be checked against the book it claims.
@@ -65,6 +67,7 @@ export function EbookThankYou({
       .then((d) => {
         if (!active) return;
         setHasEpub(Array.isArray(d?.formats) && d.formats.includes("epub"));
+        setItems(Array.isArray(d?.items) && d.items.length > 1 ? d.items : []);
         setStatus(d?.paid ? "paid" : "unpaid");
       })
       .catch(() => active && setStatus("error"));
@@ -79,18 +82,18 @@ export function EbookThankYou({
     setAttempt((n) => n + 1);
   }, [sessionId]);
 
-  const handleDownload = useCallback(async (format: "pdf" | "epub" = "pdf") => {
+  const handleDownload = useCallback(async (format: "pdf" | "epub" = "pdf", item?: { slug: string; title: string }) => {
     if (downloading) return;
-    setDownloading(format);
+    setDownloading(item ? `${item.slug}:${format}` : format);
     setDownloadError(false);
     try {
-      const res = await fetch(`/api/download?${query}${format === "epub" ? "&format=epub" : ""}`);
+      const res = await fetch(`/api/download?${query}${format === "epub" ? "&format=epub" : ""}${item ? `&item=${encodeURIComponent(item.slug)}` : ""}`);
       if (!res.ok) throw new Error(`download ${res.status}`);
       const blob = await res.blob();
       const url = URL.createObjectURL(blob);
       const a = document.createElement("a");
       a.href = url;
-      a.download = `${title.replace(/[^\w\s-]/g, "").trim().replace(/\s+/g, "-")}.${format}`;
+      a.download = `${(item?.title ?? title).replace(/[^\w\s-]/g, "").trim().replace(/\s+/g, "-")}.${format}`;
       document.body.appendChild(a);
       a.click();
       a.remove();
@@ -132,6 +135,25 @@ export function EbookThankYou({
                   : "Download the PDF below — it reads on your phone, tablet, e-reader, or computer."}{" "}
                 Keep this page bookmarked; your download link stays active here.
               </p>
+              {items.length > 1 ? (
+                <div style={{ display: "grid", gap: "18px", textAlign: "left" }}>
+                  {items.map(item => (
+                    <div key={item.slug} style={{ display: "flex", flexWrap: "wrap", gap: "12px", alignItems: "center", justifyContent: "space-between", padding: "16px 20px", background: "var(--card)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)" }}>
+                      <span style={{ fontFamily: "var(--F)", fontSize: "20px", color: "var(--ink)" }}>{item.title}</span>
+                      <span style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
+                        {item.formats.includes("epub") && (
+                          <button type="button" onClick={() => handleDownload("epub", item)} disabled={Boolean(downloading)} style={{ ...btn, minWidth: 0, padding: "10px 16px", fontSize: "13px", background: "var(--charcoal)", color: "var(--charcoal-fg)", opacity: downloading ? 0.7 : 1 }}>
+                            {downloading === `${item.slug}:epub` ? "Preparing…" : "EPUB"}
+                          </button>
+                        )}
+                        <button type="button" onClick={() => handleDownload("pdf", item)} disabled={Boolean(downloading)} style={{ ...btn, minWidth: 0, padding: "10px 16px", fontSize: "13px", background: "var(--mustard)", color: "var(--ink)", opacity: downloading ? 0.7 : 1 }}>
+                          {downloading === `${item.slug}:pdf` ? "Preparing…" : "PDF"}
+                        </button>
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              ) : (
               <div style={{ display: "flex", gap: "16px", justifyContent: "center", flexWrap: "wrap" }}>
                 {hasEpub && (
                   <button type="button" onClick={() => handleDownload("epub")} disabled={Boolean(downloading)} style={{ ...btn, background: "var(--charcoal)", color: "var(--charcoal-fg)", opacity: downloading ? 0.7 : 1 }}>
@@ -142,6 +164,7 @@ export function EbookThankYou({
                   {downloading === "pdf" ? "Preparing your download…" : "Download the PDF"}
                 </button>
               </div>
+              )}
               {downloadError && (
                 <p role="alert" style={{ fontFamily: "var(--B)", fontSize: "15px", color: "var(--ink)", marginTop: "18px" }}>
                   The download didn't start. Try again in a moment — your purchase is confirmed and this page keeps working. If it keeps failing, email us and a person will send the file directly.

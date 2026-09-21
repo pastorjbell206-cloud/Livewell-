@@ -9,6 +9,7 @@
 import { createElement, useEffect } from "react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { CoverImage } from "@/components/CoverImage";
 import { BookNextSteps } from "@/components/BookNextSteps";
 import { BuyEbookButton } from "@/components/BuyEbookButton";
 import { AUTHOR_BIO, SITE_URL } from "@/lib/site";
@@ -73,10 +74,10 @@ export default function WhenGodBlessAmerica() {
       {/* HERO */}
       <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-6) var(--s-4)" }}>
         <div className="book-detail-hero" style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "grid", gap: "var(--s-5)", alignItems: "center" }}>
-          <img
+          <CoverImage
             src={COVER}
             alt="When God Bless America Replaces Thy Kingdom Come — cover"
-            width={1600} height={2416}
+            width={1600} height={2416} eager
             style={{ width: "100%", height: "auto", borderRadius: "var(--radius-sm)", boxShadow: "0 16px 48px rgba(0,0,0,.45)" }}
           />
           <div>

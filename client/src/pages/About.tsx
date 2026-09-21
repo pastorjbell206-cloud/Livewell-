@@ -3,14 +3,14 @@ import { SEOMeta } from "@/components/SEOMeta";
 import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
 import { SITE_STATS } from "@/config/siteStats";
-import { SITE_URL } from "@/lib/site";
+import { SITE_URL, AUTHOR_PORTRAIT } from "@/lib/site";
 import { PullQuote, StatementBand, SectionArt } from "@/components/EditorialBlocks";
 import { Figure } from "@/components/Figure";
 import { SKEPTIC_TRACK_LIVE } from "@/lib/skepticTrack";
 import FollowJames from "@/components/FollowJames";
 import { SAME_AS } from "@/lib/channels";
 
-const PORTRAIT = "https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/IMG_4533_137f3486.jpeg";
+const PORTRAIT = AUTHOR_PORTRAIT;
 
 const PATHWAYS = [
   { href: "/skeptic-track", label: "If you are not sure you believe any of this", desc: "Start with the track written for skeptics, by someone who used to be one. No tricks, no altar call at the end. Just your questions taken seriously." },

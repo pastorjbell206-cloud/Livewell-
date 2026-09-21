@@ -210,6 +210,23 @@ export const TOOLS = [
   },
 ];
 
+/**
+ * The eight tools people finish. Twenty-three identical cards meant nobody
+ * could tell which mattered; these lead the hub, the rest stay live at their
+ * URLs in a quiet list below. Move an href between the two by measuring what
+ * gets used, not by guessing.
+ */
+export const FEATURED_TOOLS = new Set([
+  "/life/assessment",
+  "/tools/marriage-assessment",
+  "/tools/deep-bible",
+  "/tools/family-devotions",
+  "/tools/theology-quiz",
+  "/tools/wisdom-finder",
+  "/tools/prayer-generator",
+  "/tools/life-audit",
+]);
+
 /** Display groups for the hub, ordered by need. Every TOOLS href appears exactly once. */
 export const TOOL_GROUPS = [
   { title: "Start with an honest reading", tools: TOOLS.filter((t) => ["/diagnostic","/tools/life-audit","/assessments","/tools/emotional-health","/life/assessment"].includes(t.href)) },
@@ -260,7 +277,9 @@ export default function ToolsHub() {
           household, then the public square. Grouping lives in TOOL_GROUPS. */}
       <section style={{ padding: "60px 32px", background: "var(--paper)" }}>
         <div className="wrap" style={{ maxWidth: "1000px" }}>
-          {TOOL_GROUPS.map((group) => (
+          {TOOL_GROUPS.map((group) => ({ ...group, tools: group.tools.filter((t) => FEATURED_TOOLS.has(t.href)) }))
+            .filter((group) => group.tools.length > 0)
+            .map((group) => (
             <div key={group.title} style={{ marginBottom: "56px" }}>
               <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "6px" }}>{group.title}</div>
               <div style={{ width: "40px", height: "1px", background: "var(--mustard)", marginBottom: "22px" }} />
@@ -304,6 +323,19 @@ export default function ToolsHub() {
               </div>
             </div>
           ))}
+          {/* Everything else, still live, in a list a reader can scan in ten seconds. */}
+          <div style={{ borderTop: "1px solid var(--border)", paddingTop: "var(--s-4)", marginTop: "8px" }}>
+            <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "14px" }}>Every other tool</div>
+            <ul style={{ listStyle: "none", margin: 0, padding: 0, display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(260px, 100%), 1fr))", gap: "10px 28px" }}>
+              {TOOLS.filter((t) => !FEATURED_TOOLS.has(t.href)).map((tool) => (
+                <li key={tool.href}>
+                  <Link href={tool.href} style={{ fontFamily: "var(--U)", fontSize: "14.5px", fontWeight: 500, color: "var(--ink)", textDecoration: "none", backgroundImage: "none", display: "inline-flex", alignItems: "center", minHeight: "36px" }}>
+                    {tool.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
           <div style={{ textAlign: "center", marginTop: "32px" }}>
             <Link
               href="/tools/saved"

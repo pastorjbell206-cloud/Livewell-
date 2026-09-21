@@ -44,6 +44,7 @@ const WhenGodBlessAmerica = lazy(() => import("./pages/WhenGodBlessAmerica"));
 const WhenGodBlessAmericaThankYou = lazy(() => import("./pages/WhenGodBlessAmericaThankYou"));
 const Believe = lazy(() => import("./pages/Believe"));
 const BelieveThankYou = lazy(() => import("./pages/BelieveThankYou"));
+const TheThreeBooksThankYou = lazy(() => import("./pages/TheThreeBooksThankYou"));
 const DeconstructionOfFaith = lazy(() => import("./pages/DeconstructionOfFaith"));
 const DeconstructionOfFaithThankYou = lazy(() => import("./pages/DeconstructionOfFaithThankYou"));
 const RaisingBelieversThankYou = lazy(() => import("./pages/RaisingBelieversThankYou"));
@@ -83,9 +84,7 @@ const Pathways = lazy(() => import("./pages/Pathways"));
 const TopicPathway = lazy(() => import("./pages/TopicPathway"));
 const EmailSignup = lazy(() => import("./pages/EmailSignup"));
 const Pillars = lazy(() => import("./pages/Pillars"));
-const Explore = lazy(() => import("./pages/Explore"));
 const LivingWell = lazy(() => import("./pages/LivingWell"));
-const SiteMapPage = lazy(() => import("./pages/Map"));
 const TheologyExplorer = lazy(() => import("./pages/TheologyExplorer"));
 const WhichLens = lazy(() => import("./pages/tools/WhichLens"));
 const TestTheCase = lazy(() => import("./pages/tools/TestTheCase"));
@@ -100,6 +99,7 @@ const Wisdom = lazy(() => import("./pages/Wisdom"));
 const WisdomTopic = lazy(() => import("./pages/WisdomTopic"));
 const HowTos = lazy(() => import("./pages/HowTos"));
 const Notes = lazy(() => import("./pages/Notes"));
+const Canon = lazy(() => import("./pages/Canon"));
 const HowToArticle = lazy(() => import("./pages/HowToArticle"));
 const LifeIndex = lazy(() => import("./pages/life/LifeIndex"));
 const LifeDomain = lazy(() => import("./pages/life/LifeDomain"));
@@ -132,7 +132,6 @@ const TheologyDoctrine = lazy(() => import("./pages/TheologyDoctrine"));
 const PassageContext = lazy(() => import("./pages/tools/PassageContext"));
 const TheologyHistory = lazy(() => import("./pages/TheologyHistory"));
 const HistoryEssay = lazy(() => import("./pages/history/HistoryEssay"));
-const Framework = lazy(() => import("./pages/Framework"));
 const TheologyBiblical = lazy(() => import("./pages/TheologyBiblical"));
 const TheologyCompare = lazy(() => import("./pages/TheologyCompare"));
 const TheologyGlossary = lazy(() => import("./pages/TheologyGlossary"));
@@ -206,9 +205,6 @@ const ReadingPathDetail = lazy(() =>
 );
 const AuthorProfile = lazy(() =>
   import("./pages/AuthorProfile").then((m) => ({ default: m.AuthorProfile }))
-);
-const ArticleCollections = lazy(() =>
-  import("./pages/ArticleCollections").then((m) => ({ default: m.ArticleCollections }))
 );
 
 const AdminLogin = lazy(() => import("./pages/AdminLogin"));
@@ -363,7 +359,7 @@ function Router() {
         <Route path="/theology/passage" component={PassageContext} />
         <Route path="/theology/history/:slug" component={HistoryEssay} />
         <Route path="/theology/history" component={TheologyHistory} />
-        <Route path="/framework" component={Framework} />
+        <Route path="/framework" component={ArticlesRedirect} />
         <Route path="/theology/biblical" component={TheologyBiblical} />
         <Route path="/theology/compare" component={TheologyCompare} />
         <Route path="/theology/glossary" component={TheologyGlossary} />
@@ -454,7 +450,7 @@ function Router() {
         <Route path="/for-families" component={ForFamiliesRedirect} />
         <Route path="/pillars" component={Pillars} />
         <Route path="/living-well" component={LivingWell} />
-        <Route path="/map" component={SiteMapPage} />
+        <Route path="/map" component={ArticlesRedirect} />
         <Route path="/theology/explorer" component={TheologyExplorer} />
         <Route path="/capture-by-the-right" component={CaptureByTheRight} />
         <Route path="/capture-by-the-left" component={CaptureByTheLeft} />
@@ -467,6 +463,7 @@ function Router() {
         <Route path="/wisdom/:id" component={WisdomTopic} />
         <Route path="/how-tos" component={HowTos} />
         <Route path="/notes" component={Notes} />
+        <Route path="/canon" component={Canon} />
         <Route path="/how-tos/:slug" component={HowToArticle} />
         <Route path="/studyguides" component={StudyGuidesIndex} />
         <Route path="/studyguides/:slug" component={StudyGuide} />
@@ -480,7 +477,7 @@ function Router() {
         <Route path="/pathways/:slug" component={TopicPathway} />
         <Route path="/subscribe" component={EmailSignup} />
         <Route path="/authors/:slug" component={AuthorProfile} />
-        <Route path="/article-collections" component={ArticleCollections} />
+        <Route path="/article-collections" component={ArticlesRedirect} />
         <Route path="/resources/hard-issues-series" component={HardIssuesSeries} />
         <Route path="/resources/context/:slug" component={ContextGuide} />
         <Route path="/resources/context" component={ContextLibrary} />
@@ -492,6 +489,7 @@ function Router() {
         <Route path="/books/when-god-bless-america/thank-you" component={WhenGodBlessAmericaThankYou} />
         <Route path="/books/when-god-bless-america" component={WhenGodBlessAmerica} />
         <Route path="/books/believe/thank-you" component={BelieveThankYou} />
+        <Route path="/books/the-three-books/thank-you" component={TheThreeBooksThankYou} />
         <Route path="/books/believe" component={Believe} />
         <Route path="/books/deconstruction-of-faith/thank-you" component={DeconstructionOfFaithThankYou} />
         <Route path="/books/deconstruction-of-faith" component={DeconstructionOfFaith} />
@@ -542,7 +540,7 @@ function Router() {
         <Route path="/quiz" component={TheologyQuiz} />
         <Route path="/skeptic-track" component={SkepticTrack} />
         <Route path="/roadmap" component={RoadMap} />
-        <Route path="/explore" component={Explore} />
+        <Route path="/explore" component={ArticlesRedirect} />
         <Route path="/library" component={Library} />
         <Route path="/diagnostic" component={Diagnostic} />
         <Route path="/tools" component={ToolsHub} />

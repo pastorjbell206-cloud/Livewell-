@@ -222,9 +222,10 @@ guide). The share buttons are generic.
 | Layout shift | 0 | 0 |
 
 The build emits 285 chunks. One of them, `content-data`, is 3.1 MB (1.08 MB
-gzipped): the whole seed database bundled into the client because
-`lib/site.ts` and `lib/readingPaths.ts` import it. Any page that touches
-either module can pull it. The entry chunk is 326 KB before gzip.
+gzipped): the whole seed database bundled into the client. Checked further: it
+is imported only by the admin dashboard and loads only there, so readers never
+download it. It is still a 3 MB chunk in a public build that should be a fetch.
+The entry chunk is 326 KB before gzip.
 
 **Recommendations.**
 

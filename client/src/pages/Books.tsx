@@ -11,37 +11,10 @@
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { CoverImage } from "@/components/CoverImage";
+import { BuyEbookButton } from "@/components/BuyEbookButton";
 import { SITE_URL } from "@/lib/site";
-
-const BOOKS = [
-  {
-    slug: "when-god-bless-america",
-    href: "/books/when-god-bless-america",
-    cover: "/books/when-god-bless-america.jpg",
-    title: "When God Bless America Replaces Thy Kingdom Come",
-    kicker: "Politics and the church",
-    blurb:
-      "A pastor's critique of political idolatry in the American church — from Scripture, from church history, and from inside the sanctuary. Not a case for the other party. A case for the kingdom that does not run for office.",
-  },
-  {
-    slug: "the-monster-in-the-mirror",
-    href: "/books/the-monster-in-the-mirror",
-    cover: "/books/the-monster-in-the-mirror.jpg",
-    title: "The Monster in the Mirror",
-    kicker: "Reading the Bible honestly",
-    blurb:
-      "Every generation reads the Bible with blind spots, and every generation is sure it is the one that finally sees clearly. This book asks the harder question: what will our grandchildren say we missed?",
-  },
-  {
-    slug: "believe",
-    href: "/books/believe",
-    cover: "/books/believe.jpg",
-    title: "Believe",
-    kicker: "For skeptics",
-    blurb:
-      "Rational answers to the hardest questions skeptics ask — God, the Bible, the resurrection, suffering, hell — from a pastor who spent years on the other side of the argument and remembers what it sounds like from there.",
-  },
-];
+import { SHELF as BOOKS } from "@/lib/shelf";
 
 export default function Books() {
   return (
@@ -109,13 +82,10 @@ export default function Books() {
             }}
           >
             <Link href={b.href} style={{ flex: "0 0 auto" }}>
-              <img
-                loading={i === 0 ? "eager" : "lazy"}
-                decoding="async"
+              <CoverImage
+                eager={i === 0}
                 src={b.cover}
                 alt={`${b.title} — cover`}
-                width={1600}
-                height={2560}
                 style={{
                   width: "clamp(150px, 22vw, 220px)",
                   height: "auto",
@@ -165,6 +135,24 @@ export default function Books() {
           </div>
         </section>
       ))}
+
+      {/* THE BUNDLE — all three for the price of two and a bit. */}
+      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4)", borderTop: "1px solid var(--border)" }}>
+        <div style={{ maxWidth: "var(--w-default)", margin: "0 auto", display: "flex", gap: "var(--s-5)", alignItems: "center", flexWrap: "wrap", justifyContent: "space-between" }}>
+          <div style={{ flex: "1 1 360px", maxWidth: "60ch" }}>
+            <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "10px" }}>All three</div>
+            <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(26px, 3.4vw, 36px)", fontWeight: 400, letterSpacing: "-0.015em", color: "var(--ink)", marginBottom: "12px" }}>
+              The three books together, $19.99.
+            </h2>
+            <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink-muted)" }}>
+              The country, the Bible, and the honest questions, in one purchase. EPUB and PDF of each, delivered the moment you check out.
+            </p>
+          </div>
+          <div style={{ flex: "0 0 auto" }}>
+            <BuyEbookButton slug="the-three-books" title="the three books" label="Get all three — $19.99" />
+          </div>
+        </div>
+      </section>
 
       {/* WHERE THE REST WENT — honest, brief, prose */}
       <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-6) var(--s-4)" }}>

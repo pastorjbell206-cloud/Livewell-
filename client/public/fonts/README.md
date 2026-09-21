@@ -4,7 +4,7 @@ Subsetted woff2 files for the two brand families, downloaded from Google
 Fonts' serving CDN (fonts.gstatic.com) and committed here so no page load
 ever contacts a third party for type.
 
-- **Cormorant Garamond** — upright 400/500/600 + italic 400, latin and
+- **Cormorant Garamond** — upright 400/500 + italic 400, latin and
   latin-ext subsets. Copyright the Cormorant Project Authors; licensed
   under the SIL Open Font License 1.1.
 - **Inter** — 400/500/600, latin and latin-ext subsets. Copyright the

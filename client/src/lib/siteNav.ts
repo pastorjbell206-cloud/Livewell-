@@ -58,8 +58,11 @@ export const SITE_NAV_GROUPS: SiteNavGroup[] = [
     // "I want to read." Everything written, and the subjects it is written on.
     title: "Articles",
     links: [
+      // One way to browse the writing. /explore, /map, /framework and
+      // /article-collections were four more ways to browse the same essays;
+      // they now redirect here (vercel.json) and are gone from the map.
       { label: "All the writing", href: "/writing", primary: true },
-      { label: "Explore everything", href: "/explore", primary: true },
+      { label: "Start with these twelve", href: "/canon", primary: true },
       // The short pieces (Facebook-length). Footer tail until the posts are
       // imported; a header link to an empty room helps nobody.
       { label: "Notes", href: "/notes" },
@@ -72,12 +75,7 @@ export const SITE_NAV_GROUPS: SiteNavGroup[] = [
       { label: "Parenting", href: "/parenting" },
       { label: "Home and family", href: "/family" },
       { label: "Living well", href: "/living-well" },
-      { label: "The historic faith", href: "/historic-faith" },
       { label: "All six pillars", href: "/pillars" },
-      { label: "The map", href: "/map" },
-      { label: "The framework", href: "/framework" },
-      { label: "Article collections", href: "/article-collections" },
-      { label: "The Commonplace", href: "/library" },
     ],
   },
   {
@@ -107,13 +105,8 @@ export const SITE_NAV_GROUPS: SiteNavGroup[] = [
       // James asked for the wisdom material to be easier to reach, so both of
       // its doors sit in the header rather than the footer tail.
       { label: "Wisdom for all of life", href: "/wisdom", primary: true },
-      { label: "Wisdom finder", href: "/tools/wisdom-finder", primary: true },
-      { label: "The Hard Issues Series", href: "/resources/hard-issues-series" },
-      { label: "Theology quiz", href: "/tools/theology-quiz" },
       { label: "Reading Scripture in context", href: "/resources/context" },
       { label: "How-to guides", href: "/how-tos" },
-      { label: "Reading paths", href: "/reading-paths" },
-      { label: "Questions people ask", href: "/faq" },
     ],
   },
   {
@@ -123,7 +116,6 @@ export const SITE_NAV_GROUPS: SiteNavGroup[] = [
       { label: "Newsletter (Substack)", href: "https://substack.com/@jamesbell333289", external: true, primary: true },
       { label: "Following the Way (podcast)", href: "http://followingthewaypodcast.com/", external: true, primary: true },
       { label: "Contact", href: "mailto:Pastorjbell206@gmail.com", external: true, primary: true },
-      { label: "Membership", href: "/membership" },
       { label: "Work with James", href: "/work-with-james" },
       // The pastors' material now lives with the network it belongs to.
       { label: "Pastors Connection Network", href: "https://pastorsconnectionnetwork.com", external: true },
