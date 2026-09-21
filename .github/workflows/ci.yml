@@ -100,9 +100,14 @@ jobs:
             for (const k in r.categories) console.log(k, Math.round(r.categories[k].score * 100));
             const a = r.audits;
             for (const k of ['first-contentful-paint','largest-contentful-paint','total-blocking-time','cumulative-layout-shift','speed-index','interactive']) console.log('  ' + k, a[k] && a[k].displayValue);
-            const el = a['largest-contentful-paint-element'];
-            const node = el && el.details && el.details.items && el.details.items[0] && el.details.items[0].items && el.details.items[0].items[0] && el.details.items[0].items[0].node;
-            if (node) console.log('  lcp element:', String(node.snippet || node.nodeLabel || '').slice(0, 160));
+            // Lighthouse 13: the LCP element and its render delay live in the
+            // lcp-breakdown-insight audit (a table of subparts, then the node).
+            const lcp = a['lcp-breakdown-insight'];
+            const items = (lcp && lcp.details && lcp.details.items) || [];
+            const node = items.find(x => x.type === 'node');
+            const table = items.find(x => x.type === 'table');
+            if (node) console.log('  lcp element:', node.selector, '|', String(node.nodeLabel || '').slice(0, 90));
+            if (table) for (const row of table.items) console.log('    ' + row.label + ': ' + Math.round(row.duration) + ' ms');
           "
       - name: Lighthouse thresholds (docs/WORLD-CLASS-SITE-PROMPT.md — asserted, not printed)
         run: |

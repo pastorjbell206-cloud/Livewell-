@@ -65,6 +65,30 @@ describe("brand sentence", () => {
     expect(m![1]).toBe(BRAND_SENTENCE);
   });
 
+  it("is what the prerender paints into the static home hero", () => {
+    // scripts/prerender-heads.mjs (homeHeroHtml) reads positioning.ts as text
+    // and follows one alias (PRIMARY_SUBHEAD_SHORT = BRAND_SENTENCE). This is
+    // the same extraction; if it stops resolving here, the built front page
+    // ships with no hero in its HTML and the largest paint waits on the JS.
+    const src = read("client/src/lib/positioning.ts");
+    const pick = (name: string, depth = 0): string => {
+      const m = src.match(new RegExp(`export const ${name}\\s*=\\s*("(?:[^"\\\\]|\\\\.)*"|[A-Z_][A-Z0-9_]*)\\s*;`));
+      if (!m) return "";
+      if (m[1].startsWith('"')) return m[1].slice(1, -1).replace(/\\"/g, '"');
+      return depth < 3 ? pick(m[1], depth + 1) : "";
+    };
+    expect(pick("PRIMARY_SUBHEAD_SHORT")).toBe(BRAND_SENTENCE);
+    expect(pick("PRIMARY_HEADLINE").length).toBeGreaterThan(10);
+    expect(pick("PRIMARY_KICKER").length).toBeGreaterThan(3);
+    // And the built HTML, when a build exists, carries it.
+    const built = path.join(repoRoot, "dist/public/index.html");
+    if (statSync(built, { throwIfNoEntry: false })) {
+      const html = readFileSync(built, "utf8");
+      expect(html.includes('class="home-hero-grid"'), "dist/public/index.html has no static home hero").toBe(true);
+      expect(html.includes(BRAND_SENTENCE.replace(/&/g, "&amp;"))).toBe(true);
+    }
+  });
+
   it("is mirrored byte-for-byte in the prod RSS channel description", () => {
     const src = read("api/index.ts");
     const start = src.indexOf("async function rssLiveWell");

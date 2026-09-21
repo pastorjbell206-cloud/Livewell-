@@ -209,8 +209,12 @@ export default function Home() {
               </span>
             </div>
 
+            {/* No entrance animation here. The static shell already painted
+                this headline from the HTML; a fade-in on mount would hide it
+                again for 900ms and push the largest paint out to the moment
+                the JS finished (CI measured LCP at 3.9s against a 1.8s first
+                paint for exactly that reason). */}
             <h1
-              className="lede-rise"
               style={{
                 fontFamily: "var(--F)",
                 fontSize: "clamp(42px, 7vw, 96px)",
