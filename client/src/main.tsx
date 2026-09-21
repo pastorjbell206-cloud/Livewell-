@@ -4,10 +4,10 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { httpBatchLink, TRPCClientError } from "@trpc/client";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
+import { useEffect, useState, type ReactNode } from "react";
 import { createRoot } from "react-dom/client";
 import superjson from "superjson";
 import App from "./App";
-import { getLoginUrl } from "./const";
 import "./index.css";
 import "./brand-override.css";
 
@@ -69,12 +69,45 @@ const trpcClient = trpc.createClient({
   ],
 });
 
+/**
+ * Mounts its children after the page has loaded and the main thread is idle.
+ * Vercel's analytics and speed-insights components inject a script tag on
+ * mount; mounted with the app they join the fonts and the essay index on the
+ * connection while the reader is still waiting for the first screen. They
+ * lose nothing by waiting: the script reads the current URL when it runs, and
+ * Speed Insights reports vitals that are only final at the end of the visit.
+ */
+function AfterLoad({ children }: { children: ReactNode }) {
+  const [ready, setReady] = useState(false);
+  useEffect(() => {
+    let idle: number | undefined;
+    const arm = () => {
+      const w = window as Window & { requestIdleCallback?: (cb: () => void) => number };
+      if (typeof w.requestIdleCallback === "function") idle = w.requestIdleCallback(() => setReady(true));
+      else idle = window.setTimeout(() => setReady(true), 1500);
+    };
+    if (document.readyState === "complete") arm();
+    else window.addEventListener("load", arm, { once: true });
+    return () => {
+      window.removeEventListener("load", arm);
+      if (idle !== undefined) {
+        const w = window as Window & { cancelIdleCallback?: (id: number) => void };
+        if (typeof w.cancelIdleCallback === "function") w.cancelIdleCallback(idle);
+        window.clearTimeout(idle);
+      }
+    };
+  }, []);
+  return ready ? <>{children}</> : null;
+}
+
 createRoot(document.getElementById("root")!).render(
   <trpc.Provider client={trpcClient} queryClient={queryClient}>
     <QueryClientProvider client={queryClient}>
       <App />
-      <Analytics />
-      <SpeedInsights />
+      <AfterLoad>
+        <Analytics />
+        <SpeedInsights />
+      </AfterLoad>
     </QueryClientProvider>
   </trpc.Provider>
 );

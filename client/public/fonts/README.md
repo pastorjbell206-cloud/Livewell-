@@ -7,7 +7,10 @@ ever contacts a third party for type.
 - **Cormorant Garamond** — upright 400/500 + italic 400, latin and
   latin-ext subsets. Copyright the Cormorant Project Authors; licensed
   under the SIL Open Font License 1.1.
-- **Inter** — 400/500/600, latin and latin-ext subsets. Copyright the
+- **Inter** — 400/500, latin and latin-ext subsets; the 500 face is declared
+  for `font-weight: 500 600`, so UI set at 600 renders in the 500 file with no
+  synthetic bold and no third download (the brand table specifies Inter 500
+  for UI and labels). Copyright the
   Inter Project Authors; licensed under the SIL Open Font License 1.1.
 
 The matching `@font-face` rules (with the original `unicode-range` values,
