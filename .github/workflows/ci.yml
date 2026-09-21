@@ -79,13 +79,31 @@ jobs:
       - run: pnpm run sitemap && pnpm run essays:public && pnpm run build && pnpm run prerender
       - name: Serve built site
         run: npx serve -s dist/public -l 4173 &
-      - name: Lighthouse (home)
+      - name: Lighthouse (home, median of three)
+        # A single Lighthouse run on a shared runner swings by twenty points
+        # (79, 75 and 50 on three consecutive commits that changed little on
+        # the front page). Three runs, the median by performance, and the
+        # metrics behind the score so a drop can be read, not guessed at.
         run: |
-          npx --yes lighthouse http://localhost:4173/ \
-            --chrome-flags="--headless --no-sandbox" \
-            --only-categories=performance,accessibility,best-practices,seo \
-            --output=json --output-path=./lh.json --quiet
-          node -e "const r=require('./lh.json').categories; for (const k in r) console.log(k, Math.round(r[k].score*100))"
+          for i in 1 2 3; do
+            npx --yes lighthouse http://localhost:4173/ \
+              --chrome-flags="--headless --no-sandbox" \
+              --only-categories=performance,accessibility,best-practices,seo \
+              --output=json --output-path=./lh-$i.json --quiet
+          done
+          node -e "
+            const runs = [1,2,3].map(i => require('./lh-' + i + '.json'));
+            runs.sort((a, b) => a.categories.performance.score - b.categories.performance.score);
+            const r = runs[1];
+            require('fs').writeFileSync('./lh.json', JSON.stringify(r));
+            console.log('performance runs:', runs.map(x => Math.round(x.categories.performance.score * 100)).join(' / '), '(median kept)');
+            for (const k in r.categories) console.log(k, Math.round(r.categories[k].score * 100));
+            const a = r.audits;
+            for (const k of ['first-contentful-paint','largest-contentful-paint','total-blocking-time','cumulative-layout-shift','speed-index','interactive']) console.log('  ' + k, a[k] && a[k].displayValue);
+            const el = a['largest-contentful-paint-element'];
+            const node = el && el.details && el.details.items && el.details.items[0] && el.details.items[0].items && el.details.items[0].items[0] && el.details.items[0].items[0].node;
+            if (node) console.log('  lcp element:', String(node.snippet || node.nodeLabel || '').slice(0, 160));
+          "
       - name: Lighthouse thresholds (docs/WORLD-CLASS-SITE-PROMPT.md — asserted, not printed)
         run: |
           node -e "

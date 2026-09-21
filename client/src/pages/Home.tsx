@@ -363,7 +363,6 @@ export default function Home() {
               {Array.from({ length: 4 }, (_, i) => (
                 <div
                   key={i}
-                  className="animate-pulse"
                   style={{
                     background: "var(--bone-warm)",
                     borderRadius: "var(--radius-sm)",
