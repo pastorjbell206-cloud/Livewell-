@@ -683,11 +683,11 @@ export const ARTICLES_TIER_3 = [
       "The church has spent two decades trying to make itself more appealing to young adults. The effort has largely failed — not because the tactics were wrong, but because the diagnosis was.",
     pillar: "Prophetic Disruption",
     readTime: "12 min",
-    body: `<p>The statistics have been recited so often that they have acquired the quality of liturgy. Roughly 60 to 65 percent of young adults who were regular churchgoers in their teens disengage from church life by their mid-twenties. The decline in religious affiliation among 18-to-35-year-olds has been steeper and faster than in any other age cohort. Only about 30 percent of millennials and an even smaller percentage of Gen Z say they attend religious services regularly. The church is aging, graying, and shrinking, and the generation that should be replenishing its ranks is, with remarkable consistency, choosing not to.</p>
+    body: `<p>Somewhere between sixty and sixty-five percent of the teenagers who sat in our youth rooms are gone by twenty-five. We have recited that number so many times it has started to sound like liturgy. Then we did what institutions do when they are frightened. We fixed the lighting.</p>
 
-<p>The church's response to these statistics has been, for the most part, a case study in misdiagnosis. Assuming that the problem is one of presentation rather than substance, churches across America have invested heavily in aesthetic and experiential upgrades designed to make the church more attractive to young adults. Better coffee. Fog machines. LED light shows. Worship bands that sound like Coldplay. Sermon series with cinematic title sequences. Apps for everything. Pastors in skinny jeans. The operating assumption is that young adults are consumers who will attend church if the product is sufficiently polished, and that the church's competitive disadvantage is one of production values rather than credibility.</p>
+<p>Fog machines. LED walls. A band that sounds like the radio. A pastor in the jeans of a man twenty years younger. An app. I have signed off on more of this than I would like to admit, and I did it for the reason everyone does. It assumes the problem is the packaging, and packaging is something you can buy.</p>
 
-<p>This assumption is not merely wrong. It is insulting. And it has produced two decades of strategic investment in precisely the things that young adults are not looking for, while neglecting the things they are.</p>
+<p>The assumption is wrong, and worse than wrong, it is insulting. It treats a generation as customers who will come back when the product is polished enough, when what they told us, over and over, was that they could not trust it. Two decades of money went into the things they were not asking for. The things they were asking for could not be bought, and that was the problem. That is the diagnosis this essay is about.</p>
 
 <h2>The Data Behind the Departure</h2>
 

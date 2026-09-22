@@ -7,7 +7,7 @@ A banned word is the easiest tell to remove and the least important. These are t
 | Measure | Value |
 |---|---|
 | Essays measured | 678 |
-| Words | 1,363,402 |
+| Words | 1,363,289 |
 | Banned words in the banned sense | 0 in 0 essays |
 | Mean sentence length (words) | 17.8 |
 | Share of sentences at 30+ words | 17.8% |
@@ -58,17 +58,17 @@ Ranked by the composite. Read the top of this list aloud first.
 | 27 | 3-treating-sunday-as-the-only-metric | 24.3 | 19.7 | 24.7% | 1.1 | 0 | no |  |
 | 28 | what-christians-believe-about-hell | 24.3 | 22.7 | 30.1% | 0.9 | 0.5 | yes | yes |
 | 29 | when-politics-replaced-theology | 24.2 | 22.3 | 27.1% | 1.7 | 0.4 | yes | yes |
-| 30 | the-death-of-christendom | 24.1 | 17 | 13.3% | 3.6 | 0.6 | yes | yes |
-| 31 | why-christianity | 24.1 | 18 | 15.3% | 1.3 | 2.2 | yes | yes |
-| 32 | reconstructing-faith | 23.5 | 18.8 | 21.8% | 2.4 | 0.4 | yes | yes |
-| 33 | exvangelical-when-leaving-isnt-losing-faith | 23.4 | 19.8 | 21.7% | 1.7 | 1.1 | yes | yes |
-| 34 | evolution-and-genesis | 23.4 | 22.9 | 28% | 1.7 | 0 | yes | yes |
-| 35 | christianity-after-christendom | 23.4 | 19.6 | 24.6% | 1.2 | 0 | yes | yes |
-| 36 | your-marriage-is-ministry-too | 23.3 | 19.1 | 25.8% | 1.7 | 2.8 | yes |  |
-| 37 | the-black-church-in-america | 23.1 | 18.6 | 16.6% | 2.5 | 0.7 | yes | yes |
-| 38 | how-american-christianity-became-american | 22.9 | 23.2 | 27.7% | 1.9 | 0 | yes | yes |
-| 39 | why-people-are-leaving-the-church | 22.9 | 20.2 | 17.6% | 1.9 | 1 | yes | yes |
-| 40 | what-christians-can-learn-from-judaism | 22.8 | 16.2 | 12% | 3.5 | 1 | yes | yes |
+| 30 | why-christianity | 24.1 | 18 | 15.3% | 1.3 | 2.2 | yes | yes |
+| 31 | reconstructing-faith | 23.5 | 18.8 | 21.8% | 2.4 | 0.4 | yes | yes |
+| 32 | exvangelical-when-leaving-isnt-losing-faith | 23.4 | 19.8 | 21.7% | 1.7 | 1.1 | yes | yes |
+| 33 | evolution-and-genesis | 23.4 | 22.9 | 28% | 1.7 | 0 | yes | yes |
+| 34 | christianity-after-christendom | 23.4 | 19.6 | 24.6% | 1.2 | 0 | yes | yes |
+| 35 | your-marriage-is-ministry-too | 23.3 | 19.1 | 25.8% | 1.7 | 2.8 | yes |  |
+| 36 | the-black-church-in-america | 23.1 | 18.6 | 16.6% | 2.5 | 0.7 | yes | yes |
+| 37 | how-american-christianity-became-american | 22.9 | 23.2 | 27.7% | 1.9 | 0 | yes | yes |
+| 38 | what-christians-can-learn-from-judaism | 22.8 | 16.2 | 12% | 3.5 | 1 | yes | yes |
+| 39 | the-death-of-christendom | 22.5 | 16.5 | 11.4% | 3.6 | 0.3 | yes | yes |
+| 40 | what-christians-can-learn-from-islam | 22.4 | 19 | 23.5% | 2.5 | 0 | yes | yes |
 
 ## Longest-winded, by share of sentences at thirty words or more
 

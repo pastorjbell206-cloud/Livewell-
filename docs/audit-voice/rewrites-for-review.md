@@ -1,15 +1,22 @@
 # Openings rewritten for James's review
 
-Nothing here is applied. These are proposals, side by side with the current
-text, for three essays from the survey batch (the fifty-nine essays with HTML
-bodies, written in a briefing register: third person, statistics first, the
-writer never in the room). The facts are the essays' own; nothing is added.
-The change is the voice: the writer inside the indictment, short-long-short,
-a verdict instead of a summary.
+**Decision, 22 September 2026: all three accepted as written.** James
+confirmed the first-person sentences each one puts in his voice. The three
+edits are entries in `content/voice-edits-library.json` and were applied to
+the library and every copy through `scripts/apply-library-voice-edits.mjs`;
+the public essays were rebuilt. The "current opening" under each heading is
+now the old text, kept for the record. Do not propose these three again.
 
-To accept one, say so and it goes into the source file and every copy through
-`scripts/apply-library-voice-edits.mjs`. To strike one, nothing happens. To
-change one, edit it here and say so.
+These were proposals, side by side with the then-current text, for three
+essays from the survey batch (the fifty-nine essays with HTML bodies, written
+in a briefing register: third person, statistics first, the writer never in
+the room). The facts are the essays' own; nothing is added. The change is the
+voice: the writer inside the indictment, short-long-short, a verdict instead
+of a summary.
+
+The same treatment for the rest of the fifty-nine is drafted five at a time in
+`docs/audit-voice/survey-rewrites-batch-N.md`, each batch waiting on James's
+yes before it is applied.
 
 ---
 

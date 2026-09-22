@@ -43,6 +43,10 @@ function walk(dir, exts, out = []) {
 
 const COPIES = [
   "api/static-library.generated.ts",
+  // The root-level api/*.json article sets are imported by api/index.ts at
+  // runtime and are sources for scripts/build-static-library.mjs; an edit
+  // that misses them comes back on the next library rebuild.
+  ...readdirSync(path.join(ROOT, "api")).filter(n => n.endsWith(".json") && n !== "tsconfig.json").map(n => path.join("api", n)),
   "client/src/data/content-data.json",
   ...walk("client/src/data", [".ts"]),
   ...walk("content/archive/free-library", [".json"]),
