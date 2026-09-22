@@ -3,6 +3,38 @@
 Newest first. One entry per working session: what changed, what broke, what
 is next. Decisions made without asking are recorded with their reason.
 
+## 2026-09-22 — Correction: the 128 "placeholders" are real essays; retirement reversed
+
+**Found.** Checking production after the merge: all 128 slugs the audit
+called placeholders are published, full-length essays in the live database
+(7–10 minute reads, every one present in the live index), and their full
+text is in the repo at `content/full/<slug>.md` (1,522–2,104 words each). The
+seed file holds 50-word abstracts under those slugs, and the first pass
+judged from the seed. One of them is the voice exemplar "You Are Not the
+Exception," which the audit had reported as absent from the site.
+
+**Changed.** Reversed the retirement on `main`: the 128 slugs are no longer
+hidden from the writing index; the 24 reading-path entries are available
+again with their slugs; the Blind Spots guide chapter is available again;
+the seed rows are `published: true` again; `scripts/unpublish-stubs.mjs`
+deleted, since running it would have unpublished 128 real essays.
+`AUDIT.md` §0, §2, and §5 corrected in place. The pages whose stub picks were
+swapped for other real essays (`ReadingPaths.tsx`, `Dashboard.tsx`,
+`StartHereQuiz.tsx`) were left as they are: both sets are real essays, and
+those files also carry voice repairs that would have been lost in a revert.
+
+**Broke.** For about a day on production, the 128 essays were missing from
+the `/writing` index and from five reading paths. Direct links, search
+engines, and the essay pages themselves were unaffected.
+
+**Decided.** The database and `content/full/` are the record of an essay's
+length and existence; the seed file is not. Recorded so no later pass repeats
+the mistake. The 128 full bodies have not been voice-audited and join the
+Phase 4 queue.
+
+**Next.** Merge, confirm the index on production, then Phase 1 as listed
+below minus the withdrawn P0.
+
 ## 2026-09-21 — Gate 1 approved; PR #522 merged
 
 **Changed.** James approved and merged all of the latest work. PR #522 squash-

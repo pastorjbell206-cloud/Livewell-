@@ -18,7 +18,7 @@ report and adapt rather than migrate:
 | Next.js App Router, MDX | React 19 + Vite 7 SPA, wouter routing, tRPC v11, Drizzle + MySQL, Vercel. Prerendered per-route heads (`scripts/prerender-heads.mjs`, 1,442 HTML files) — not SSR/ISR. | No framework migration without written approval. "Statically generated essay pages" means extending the prerender step, not adopting Next. |
 | Tokens: paper / forest / oxblood / brass | Tokens exist and govern (`client/src/index.css` `:root`; contract in `CLAUDE.md`): cream `#F5F0E6`, black `#1A1A1A`, mustard `#D4A017`, ink `#14110C`. Dark mode is deliberately disabled site-wide (`App.tsx` ThemeProvider). | Per rule 4.2, the repo's token file governs. The prompt's palette is a conflict, reported here, not applied. Night reading is a new feature request, not a restoration. |
 | Fraunces / Source Serif 4 / Hanken Grotesk | Cormorant Garamond (display) + Inter (body/UI), self-hosted, subset, `font-display: swap`, preloaded. | Typeface change = brand change; needs James. |
-| Voice exemplars "You Are Not the Exception" and "Zanah…" on the site | "You Are Not the Exception" exists locally only as a 123-word placeholder (retired in this branch; the real essay is on Substack). "Zanah" does not exist as a post; the word appears inside two other essays. | Both exemplars must be imported from Substack before Phase 4 can calibrate against them. |
+| Voice exemplars "You Are Not the Exception" and "Zanah…" on the site | **Corrected 2026-09-22.** "You Are Not the Exception" is live in production (`/writing/you-are-not-the-exception`, 9-minute read, published) and its full text is in the repo at `content/full/you-are-not-the-exception.md`. The local seed row for that slug is a one-word placeholder with the wrong title, which is what the first pass judged from. "Zanah" does not exist as a post; the word appears inside two other essays. | "Zanah" must be imported from Substack before Phase 4 can calibrate against it. "You Are Not the Exception" needs nothing. |
 | Audit backlog ~85 posts; #145/#146/#147/#160 states | No DB access here (`DATABASE_URL` unset). The local seed (`client/src/data/content-data.json`) holds 350 posts; DB row IDs are not in it. | Cannot confirm the #145–#160 states. The voice audit on this branch covers all 350 (see §2). |
 | `readme.md`, `brief.md`, `handover.md`, `log.md` | `README.md` exists. The other three do not. | Created `log.md` this session; `brief.md` and `handover.md` are Phase 1 deliverables. |
 | Admin at `/admin/posts/{ID}/edit` | Present (`client/src/pages/AdminPostEditor.tsx`). Two runtimes implement the API: dev Express (`server/`) and prod serverless (`api/index.ts`), guarded by `server/api-parity.test.ts`. | Every API change lands twice. |
@@ -83,7 +83,7 @@ is the runtime source and could not be read here):
 |---|---|
 | Posts | 350 |
 | Published essays (≥200 words) | 222 — 534,083 words, median 2,212 |
-| Placeholder "posts" under 200 words, previously published | 128 — retired on this branch (`published: false`, hidden, every listing reference removed, 24 reading-path entries flipped to "Coming soon"). Prod DB still serves them until `scripts/unpublish-stubs.mjs` runs. **P0 as found; fixed on branch, pending prod.** |
+| Seed rows under 200 words, previously judged "placeholders" | 128 — **finding withdrawn 2026-09-22.** The 128 short rows are abstracts in the seed file only. Every one of the 128 slugs is a full essay in production (all 128 present in the live index, published, 7–10 minute reads) and in the repo at `content/full/<slug>.md` (1,522–2,104 words). The retirement that hid them from the writing index, the reading paths, and the guides was reversed; `scripts/unpublish-stubs.mjs` was deleted because it would have unpublished 128 real essays. The seed file remains the wrong place to judge a post's length: the live database and `content/full/` are the record. |
 | Books | 21 (3 by hand on the shelf; the rest archived) |
 | Content-as-data libraries | family (5), church history (councils 11, figures 36, heresies 10, timeline 7 eras), 22 history essays, wisdom 208 topics, life domains 69, plus study guides, how-tos, creeds, plans |
 | Post fields | title, slug, body, excerpt, pillar, published, publishedAt — **no `substackUrl`, no structured Scripture / word / witness / date metadata, no tags** |
@@ -174,8 +174,10 @@ Not validated against Google's tester from here.
 ## 5. Findings, ranked
 
 **P0 — broken or dangerous**
-1. 128 placeholder articles served as published in production
-   (`scripts/unpublish-stubs.mjs` written; needs `DATABASE_URL` and `--apply`).
+1. ~~128 placeholder articles served as published in production~~ Withdrawn
+   2026-09-22: they are full essays in production and in `content/full/`; the
+   seed abstracts misled the first pass. The 128 full bodies have not been
+   through the voice audit and join its queue.
 2. 65 routes unreachable in three clicks and 11 dead-end pages, including
    external hops that leave the reader on a one-line interstitial.
 
