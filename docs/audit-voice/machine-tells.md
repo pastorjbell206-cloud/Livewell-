@@ -7,13 +7,13 @@ A banned word is the easiest tell to remove and the least important. These are t
 | Measure | Value |
 |---|---|
 | Essays measured | 678 |
-| Words | 1,363,677 |
+| Words | 1,363,751 |
 | Banned words in the banned sense | 0 in 0 essays |
 | Mean sentence length (words) | 17.8 |
 | Share of sentences at 30+ words | 17.8% |
 | Triplets per 1,000 words | 0.6 |
 | "It is not X. It is Y." per 1,000 words | 0.8 |
-| Essays where the writer never appears (no I, we, my) | 4 |
+| Essays where the writer never appears (no I, we, my) | 3 |
 | Essays with HTML bodies (the survey batch) | 59 |
 
 ## Banned words that are actually tells
@@ -31,44 +31,44 @@ Ranked by the composite. Read the top of this list aloud first.
 |---|---|---|---|---|---|---|---|---|
 | 1 | religious-trauma-is-real | 34.9 | 20.4 | 21.2% | 7.1 | 1.4 | yes | yes |
 | 2 | what-christians-can-learn-from-buddhism | 32.2 | 19.5 | 23.7% | 3.7 | 2.1 | yes | yes |
-| 3 | what-evangelicalism-was-supposed-to-be | 27.5 | 17.2 | 8.8% | 2.4 | 0.4 | no | yes |
+| 3 | three-families-of-christianity | 27.6 | 22.3 | 27.9% | 2.8 | 0.4 | yes | yes |
 | 4 | what-the-reformation-actually-changed | 27.3 | 22 | 25.9% | 3.7 | 0.3 | yes | yes |
-| 5 | colonialism-and-missions | 27 | 20.1 | 26.3% | 3.5 | 0.5 | yes | yes |
-| 6 | three-families-of-christianity | 26.9 | 22.3 | 26.1% | 2.8 | 0.4 | yes | yes |
-| 7 | the-christian-mystics | 26.9 | 18.8 | 20.1% | 2.8 | 1.2 | yes | yes |
-| 8 | guide-to-every-major-denomination | 26.6 | 25.3 | 30% | 3.3 | 0 | yes | yes |
-| 9 | non-denominational-doesnt-mean-no-tradition | 26.5 | 23.4 | 28.1% | 1.9 | 0.5 | yes | yes |
-| 10 | purity-culture-and-its-wreckage | 26.3 | 22.4 | 27.3% | 3.2 | 0 | yes | yes |
-| 11 | the-spirituality-of-doubt | 26.3 | 18.3 | 22.1% | 1.9 | 1.9 | yes | yes |
-| 12 | pentecostalism-and-the-global-south | 26.2 | 20 | 17.1% | 4.7 | 0.4 | yes | yes |
-| 13 | digital-discipleship | 26.2 | 17.5 | 16.7% | 4.5 | 0.5 | yes | yes |
-| 14 | prosperity-gospel-injustice | 26.1 | 20.9 | 24.4% | 0.6 | 1.7 | no |  |
-| 15 | liturgical-vs-contemporary-worship | 25.9 | 23 | 25.3% | 3.9 | 0 | yes | yes |
-| 16 | the-problem-with-certainty | 25.7 | 16.2 | 15.4% | 1.5 | 2.5 | yes | yes |
-| 17 | creeds-confessions-statements-of-faith | 25.4 | 21.3 | 23% | 3.5 | 0.4 | yes | yes |
-| 18 | charismatic-movement-inside-every-denomination | 25.3 | 25.1 | 33.3% | 2 | 0 | yes | yes |
-| 19 | white-evangelicalism-and-race | 24.7 | 15.7 | 14.2% | 2.3 | 1.8 | yes | yes |
-| 20 | deconstruction-is-not-destruction | 24.5 | 19.4 | 19% | 2.7 | 0.9 | yes | yes |
-| 21 | the-historical-jesus | 24.5 | 20.9 | 23.5% | 2.8 | 0.5 | yes | yes |
-| 22 | 3-treating-sunday-as-the-only-metric | 24.3 | 19.7 | 24.7% | 1.1 | 0 | no |  |
-| 23 | what-christians-believe-about-hell | 24.3 | 22.7 | 30.1% | 0.9 | 0.5 | yes | yes |
-| 24 | when-politics-replaced-theology | 24.2 | 22.3 | 27.1% | 1.7 | 0.4 | yes | yes |
-| 25 | why-christianity | 24.1 | 18 | 15.3% | 1.3 | 2.2 | yes | yes |
-| 26 | reconstructing-faith | 23.5 | 18.8 | 21.8% | 2.4 | 0.4 | yes | yes |
-| 27 | exvangelical-when-leaving-isnt-losing-faith | 23.4 | 19.8 | 21.7% | 1.7 | 1.1 | yes | yes |
-| 28 | evolution-and-genesis | 23.4 | 22.9 | 28% | 1.7 | 0 | yes | yes |
-| 29 | christianity-after-christendom | 23.4 | 19.6 | 24.6% | 1.2 | 0 | yes | yes |
-| 30 | your-marriage-is-ministry-too | 23.3 | 19.1 | 25.8% | 1.7 | 2.8 | yes |  |
-| 31 | toxic-masculinity-in-the-pulpit | 23.3 | 16.5 | 11.8% | 3.8 | 1 | yes | yes |
-| 32 | the-black-church-in-america | 23.1 | 18.6 | 16.6% | 2.5 | 0.7 | yes | yes |
-| 33 | the-anabaptist-option | 23 | 21.4 | 21% | 2.8 | 0 | yes | yes |
-| 34 | how-american-christianity-became-american | 22.9 | 23.2 | 27.7% | 1.9 | 0 | yes | yes |
-| 35 | what-christians-can-learn-from-judaism | 22.8 | 16.2 | 12% | 3.5 | 1 | yes | yes |
-| 36 | the-death-of-christendom | 22.5 | 16.5 | 11.4% | 3.6 | 0.3 | yes | yes |
-| 37 | what-christians-can-learn-from-islam | 22.4 | 19 | 23.5% | 2.5 | 0 | yes | yes |
-| 38 | science-and-faith-are-not-at-war | 22.2 | 19 | 17.8% | 2.2 | 0.9 | yes | yes |
-| 39 | megachurch-model | 22.2 | 16 | 11.5% | 3.3 | 0.6 | yes | yes |
-| 40 | the-great-schism | 22.1 | 19.6 | 14.3% | 3.7 | 0 | yes | yes |
+| 5 | colonialism-and-missions | 27.2 | 19.6 | 25% | 3.1 | 1 | yes | yes |
+| 6 | non-denominational-doesnt-mean-no-tradition | 26.5 | 23.4 | 28.1% | 1.9 | 0.5 | yes | yes |
+| 7 | purity-culture-and-its-wreckage | 26.3 | 22.4 | 27.3% | 3.2 | 0 | yes | yes |
+| 8 | the-spirituality-of-doubt | 26.3 | 18.3 | 22.1% | 1.9 | 1.9 | yes | yes |
+| 9 | pentecostalism-and-the-global-south | 26.2 | 20 | 17.1% | 4.7 | 0.4 | yes | yes |
+| 10 | digital-discipleship | 26.2 | 17.5 | 16.7% | 4.5 | 0.5 | yes | yes |
+| 11 | prosperity-gospel-injustice | 26.1 | 20.9 | 24.4% | 0.6 | 1.7 | no |  |
+| 12 | guide-to-every-major-denomination | 26.1 | 24.9 | 28.7% | 3.3 | 0 | yes | yes |
+| 13 | liturgical-vs-contemporary-worship | 25.9 | 23 | 25.3% | 3.9 | 0 | yes | yes |
+| 14 | the-problem-with-certainty | 25.7 | 16.2 | 15.4% | 1.5 | 2.5 | yes | yes |
+| 15 | creeds-confessions-statements-of-faith | 25.4 | 21.3 | 23% | 3.5 | 0.4 | yes | yes |
+| 16 | charismatic-movement-inside-every-denomination | 25.3 | 25.1 | 33.3% | 2 | 0 | yes | yes |
+| 17 | the-christian-mystics | 25 | 19.2 | 20.6% | 2.4 | 0.8 | yes | yes |
+| 18 | white-evangelicalism-and-race | 24.7 | 15.7 | 14.2% | 2.3 | 1.8 | yes | yes |
+| 19 | deconstruction-is-not-destruction | 24.5 | 19.4 | 19% | 2.7 | 0.9 | yes | yes |
+| 20 | the-historical-jesus | 24.5 | 20.9 | 23.5% | 2.8 | 0.5 | yes | yes |
+| 21 | 3-treating-sunday-as-the-only-metric | 24.3 | 19.7 | 24.7% | 1.1 | 0 | no |  |
+| 22 | what-christians-believe-about-hell | 24.3 | 22.7 | 30.1% | 0.9 | 0.5 | yes | yes |
+| 23 | when-politics-replaced-theology | 24.2 | 22.3 | 27.1% | 1.7 | 0.4 | yes | yes |
+| 24 | why-christianity | 24.1 | 18 | 15.3% | 1.3 | 2.2 | yes | yes |
+| 25 | reconstructing-faith | 23.5 | 18.8 | 21.8% | 2.4 | 0.4 | yes | yes |
+| 26 | exvangelical-when-leaving-isnt-losing-faith | 23.4 | 19.8 | 21.7% | 1.7 | 1.1 | yes | yes |
+| 27 | evolution-and-genesis | 23.4 | 22.9 | 28% | 1.7 | 0 | yes | yes |
+| 28 | christianity-after-christendom | 23.4 | 19.6 | 24.6% | 1.2 | 0 | yes | yes |
+| 29 | your-marriage-is-ministry-too | 23.3 | 19.1 | 25.8% | 1.7 | 2.8 | yes |  |
+| 30 | toxic-masculinity-in-the-pulpit | 23.3 | 16.5 | 11.8% | 3.8 | 1 | yes | yes |
+| 31 | the-black-church-in-america | 23.1 | 18.6 | 16.6% | 2.5 | 0.7 | yes | yes |
+| 32 | the-anabaptist-option | 23 | 21.4 | 21% | 2.8 | 0 | yes | yes |
+| 33 | how-american-christianity-became-american | 22.9 | 23.2 | 27.7% | 1.9 | 0 | yes | yes |
+| 34 | what-christians-can-learn-from-judaism | 22.8 | 16.2 | 12% | 3.5 | 1 | yes | yes |
+| 35 | the-death-of-christendom | 22.5 | 16.5 | 11.4% | 3.6 | 0.3 | yes | yes |
+| 36 | what-christians-can-learn-from-islam | 22.4 | 19 | 23.5% | 2.5 | 0 | yes | yes |
+| 37 | science-and-faith-are-not-at-war | 22.2 | 19 | 17.8% | 2.2 | 0.9 | yes | yes |
+| 38 | megachurch-model | 22.2 | 16 | 11.5% | 3.3 | 0.6 | yes | yes |
+| 39 | the-great-schism | 22.1 | 19.6 | 14.3% | 3.7 | 0 | yes | yes |
+| 40 | can-you-trust-the-bible | 22.1 | 20.9 | 21.2% | 2.3 | 0 | yes | yes |
 
 ## Longest-winded, by share of sentences at thirty words or more
 
@@ -91,7 +91,6 @@ Ranked by the composite. Read the top of this list aloud first.
 | 4-never-preaching-anything-that-costs-you-something | 31% | 20.9 |
 | a-day-of-doing-nothing | 30.6% | 23.6 |
 | what-christians-believe-about-hell | 30.1% | 22.7 |
-| guide-to-every-major-denomination | 30% | 25.3 |
 | spouse-wishes-knew-parsonage | 29.8% | 21.4 |
 | christians-and-abortion | 29.7% | 20.9 |
 | theology-of-borders | 29.5% | 21.8 |
@@ -99,3 +98,4 @@ Ranked by the composite. Read the top of this list aloud first.
 | is-hell-eternal | 29.3% | 21.5 |
 | gen-z-wants-from-church | 29.3% | 23.2 |
 | does-hell-exist | 29.2% | 22.6 |
+| theology-fair-wages | 29.1% | 21.2 |

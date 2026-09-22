@@ -44,6 +44,7 @@ Derived descriptions that still read at college level. Each is true to the essay
 | complicity-not-innocence | 15 | The comfortable Christian position in a culture with genuine injustice is neither endorsement nor active resistance. |
 | prosperity-gospel-is-not-the-gospel | 15 | In 2011, Senator Chuck Grassley concluded a three-year Senate Finance Committee inquiry, opened in 2007, into the finances of six prominent televangelists. |
 | 3-treating-sunday-as-the-only-metric | 14.9 | It is easy, especially in a culture that quantifies everything, to measure the health of your ministry by Sunday attendance and sermon reception. |
+| guide-to-every-major-denomination | 14.7 | The existence of denominations embarrasses many Christians and trips up many outsiders. |
 | why-people-fled-to-the-desert | 14.6 | When Christianity stopped being dangerous and became respectable, thousands of people walked out into the Egyptian desert to live alone. |
 | maternal-mortality-pro-life | 14.6 | The United States has the highest maternal mortality rate among wealthy nations, not marginally, but by multiples. |
 | white-churches-diversity-wrong | 14.6 | The conversation about diversity in white evangelical churches usually goes wrong in the same direction. |
@@ -66,7 +67,6 @@ Derived descriptions that still read at college level. Each is true to the essay
 | symptoms-without-causes-charity | 13.4 | There is a story, attributed to various sources over the years, about people standing on a riverbank pulling drowning bodies from the water. |
 | 44-what-the-church-in-the-global-south-can-teach-the-church-in-america-about-suffering | 13.3 | The American church has developed a sophisticated relationship with comfort. Its buildings are climate controlled. |
 | digital-divide | 13.3 | The resources that enable human flourishing (land, water, shelter, education) are not distributed randomly. They concentrate. |
-| guide-to-every-major-denomination | 13.3 | The existence of denominations is an embarrassment to many Christians and a stumbling block to many outsiders. |
 | apologetics-what-about-those-who-never-heard | 13.2 | It seems deeply unfair that eternity could hinge on whether you happened to be born where the message reached, and the unfairness is worth facing squarely. |
 | how-to-preach-to-people-who-have-heard-it-all | 13.2 | The hardest congregation is not the hostile one but the one that has already heard your text a hundred times and stopped expecting anything from it. |
 | the-womanhood-they-preached-was-small | 12.9 | The world I was raised in preached a womanhood of shrinkage, modesty as fear of the body, submission as erasure, silence as virtue, Scripture as a leash. |
