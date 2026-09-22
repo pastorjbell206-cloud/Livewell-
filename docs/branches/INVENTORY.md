@@ -14,7 +14,7 @@
 
 | PR | Age | Files | Merges onto `main`? | Already on `main`? | Verdict |
 |---|---|---|---|---|---|
-| #459 Dark mode, PCN move, pillar merge, brand alignment, static essays… | active today | 344 | clean (mechanically) | partly | **see §2** |
+| #459 Dark mode, PCN move, pillar merge, brand alignment, static essays… | active today | 344 | clean | partly | **DO NOT MERGE AS A UNIT**; cherry-pick four parts, fold six into phases, reject two (§2) |
 | #521 Completion audit: duplicate hrefs on four pages | 4 weeks | 5 lines of code + stale doc deletions | conflict on `ledger.json` | no (3 of 4 pages still carry the duplicate) | **FOLD** the five-line fix; close the PR |
 | #518 Marriage and Parenting: the middle movement | 4 weeks | 2 pages of prose | clean | no | **FOLD** into the Phase 5 review queue (prose; two first-person claims for James) |
 | #441 dependabot: setup-node 4 → 7 | 9 weeks | 2 workflow files | clean | no (`main` still on v4, with Node 20 deprecation warnings) | **FOLD** into Phase 8 hardening with the other action bumps |
@@ -94,4 +94,68 @@ re-implement on the Phase 3 branch rather than merge.
 
 ## 2. PR #459 — the full read
 
-*(Filled in below from the branch review; see the section that follows.)*
+Reviewed from the real diff, not the description, in a separate worktree at
+the branch head, with the gates run there. Size: 344 files, +14,294 / −3,553,
+719 non-merge commits with author dates from March to today (rebased
+history). It merges onto current `main` with no textual conflict and does not
+touch the five files `main` corrected yesterday, so the 128-essay reversal
+survives a merge. Gates on the branch: `pnpm check` 0 errors; `pnpm test`
+368 passed, 72 skipped; `pnpm build` clean; the essay export and prerender
+run clean (678 essays, 1,441 HTML files). Not run: the other twelve
+validators, lint, Lighthouse, axe.
+
+**Verdict: do not merge as a unit.** It bundles about a dozen unrelated
+decisions. Several contradict `main`'s recorded decisions (dark mode off, the
+six-pillar spine, the database as the record). It changes live purchase flows
+in a way that breaks every existing download link and depends on Stripe
+redirect settings nobody has verified. And it ships eight essays and a
+site-wide positioning sentence in James's first person on the strength of a
+commit message. Cherry-pick the parts that are plainly correct; put the rest
+in front of James one at a time.
+
+### Area by area
+
+| Area | What it actually does | Verdict |
+|---|---|---|
+| **Static essays** (`scripts/build-public-essays.mjs`, `ArticleDetail`, `Writing`, `Home`, `Search`) | Exports 678 essays from a committed JSON library (`content/static-library.generated.json`) to `client/public/essays/<slug>.json` plus an index, featured, and canon file at deploy. Pages fetch the JSON client-side and fall back to the API on a miss. **Not static HTML**: the body reaches the served page only through the crawler-only injection the prerender step already did, and `createRoot` discards it, so a reader sees the prerendered essay, then a blank, then the JSON-rendered essay. It also splits long essays at two-thirds to insert related essays. | **FOLD.** The export is a good CDN cache but it hardens the JSON library as the source of truth, the opposite of Phase 1. Rebuild it as an export *from the database* once `content/full/` is imported (Phase 2 does exactly this, with real hydration). |
+| **Stub heuristics** (`api/index.ts` `preferFullBody`, unpublished-stub exception, same in the prerender) | Prod-only: swaps a short database body for the library's longer one by word count; serves the library essay when a database row is unpublished. Dev has no equivalent. | **REJECT.** `main` fixed the root cause. This changes takedown semantics (an unpublished row no longer hides the essay) and widens dev/prod asymmetry. |
+| **Performance** (`vite-paint-first.ts`, deferred analytics, lazy guide/argument data, WebP covers, deterministic essay art, two font weights dropped) | Removes the module script from the head and re-injects it after first paint; loads data only on the pages that use it; SVG essay art replaces per-card image fetches. Dropping Cormorant 600 renders "600" as 500. | **FOLD** as its own PR after a real-device check. Paint-first lengthens the visible re-render described above; take it with Phase 2's hydration fix, not before. |
+| **CI** (`ci.yml`) | checkout v5, setup-node v5, Node 22; two more validators in the blocking step; Lighthouse median of three; axe over ten prerendered routes; thresholds unchanged, still non-blocking. | **MERGE AS IS** after confirming the Vercel project's Node version. Also covers #441. |
+| **Money paths** (ebook gate, bundle, Resend receipt; 18 ebook files moved out of `client/public/`) | Six older ebooks and the three hand-written books served only against a paid Checkout session; a three-book bundle at $19.99; a receipt email on first purchase when `RESEND_API_KEY` is set. No keys in code. | **FOLD**, gated on James: (a) every past buyer's direct download link 404s with no redirect possible; (b) the Stripe Payment Links and Buy Buttons must redirect with `?session_id={CHECKOUT_SESSION_ID}` or every buyer lands on "missing session"; (c) `STRIPE_PRICE_THE_THREE_BOOKS` must exist. Belongs to Phase 7 with a live test purchase. |
+| **Dark mode** (`App.tsx` `switchable`, ~109 files of token swaps, six new `--cat-*` tokens) | Re-enables the footer theme toggle that `main` deliberately turned off, on a mechanical token swap across 109 files with no visual verification. | **REJECT** for now. Contradicts a Decision Log entry. Re-propose as its own PR with screenshots of every dark section in both themes. The six tokens are correctly placed and harmless. |
+| **Hardcoded hex** | None added in components. `api/og.tsx` edge constants updated to brand values (pre-existing pattern; the edge function cannot read CSS). | Clean. |
+| **Prose and positioning** (see the list below) | 28 library essays edited: 8 with rewritten openings that put first-person biographical claims in James's voice, 20 with forbidden-word swaps. A new site-wide brand sentence replaces the meta description, RSS, `index.html`, and homepage subhead. A first-person Substack pitch. 23 hand-written meta descriptions and QAPage JSON-LD for 678 essays. Docs on the branch say James accepted the eight rewrites on 22 September; the repo cannot verify that. | **FOLD** only what James confirms in writing, through the Phase 5 queue. Nothing here rides in on a merge. |
+| **Routes and redirects** | `/explore`, `/map`, `/article-collections` 301 to `/writing` in both wouter and `vercel.json`; new `/canon`, `/notes`, `/the-pastoral-angle`, a bundle thank-you page. `vercel.json` was reindented from two to four spaces: 1,050 lines of churn for three redirects and one header. | **FOLD.** Re-apply the three redirects and the header on a clean file. |
+| **PCN move, pillar merge, taxonomy** | Moves 30 already-unrouted pastor pages and four scripts to `archive/`; deletes pillar four from `taxonomy.ts` and merges it into six; reassigns 16 slugs; rewrites `CLAUDE.md` to "five pillars". | **REJECT** the taxonomy change (the six pillars are the recorded spine; `taxonomy.ts` is never edited to fit a piece). The archive move is acceptable as its own commit. |
+| **Substack sync and API fixes** (both runtimes, tests) | Feed sync inserts unpublished drafts idempotently under a real pillar instead of published duplicates; fixes the prod-only "procedure not found" on the footer subscribe form; the admin cover-image field is finally saved. Parity test green. | **MERGE AS IS.** Genuine bug fixes with tests. |
+| **Product changes** (four-section homepage with a photo slot, `/canon` of twelve, empty `/notes`, tools hub leads with eight, announcement bar off, client-side search) | Product decisions James has not signed; the canon is marked "proposal" in its own comment. | **FOLD** one at a time after James picks the canon and the homepage, in Phase 4. |
+| **Docs and audits** | Session write-ups (`WORLD-CLASS-AUDIT.md`, brand-alignment docs, state of the site, voice notes). | **MERGE AS IS** or drop; no runtime effect. |
+
+### Prose on #459 that would go live (for James)
+
+Eight library essays with rewritten openings carrying new first-person
+claims: `non-denominational-doesnt-mean-no-tradition` ("I pastor a church with
+a denomination in its name"), `toxic-masculinity-in-the-pulpit` ("I have five
+sons…"), `religious-trauma-is-real` ("I came to faith as an adult, from
+outside…"), `what-christians-can-learn-from-buddhism`, `the-anabaptist-option`
+("I am a Baptist pastor. I baptize people who can answer for themselves…"),
+`the-death-of-christendom`, `why-people-are-leaving-the-church` ("I have sat
+in the meetings where we explained this to ourselves…"),
+`why-young-adults-arent-coming-back`. Twenty more with word-level swaps only.
+Site copy: the brand sentence in `positioning.ts` ("The American church traded
+the gospel for power; James Bell writes from inside the trade…"), the Substack
+pitch ("I have sat with enough of the dying to know what a flag cannot do"),
+the homepage ("Three books. Every word mine."), subscribe copy on four
+components, the Pillars page ("Four pillars… the fifth"), and 23 hand-written
+meta descriptions.
+
+### What to do with #459 at Gate 0
+
+Leave the pull request open and stop pushing to it. Cherry-pick, onto fresh
+branches in this order, each green before the next: (1) the Substack sync,
+subscribe fix, and cover-image field; (2) the CI workflow, folding #441;
+(3) the three redirects and cache header on a clean `vercel.json`;
+(4) the docs. Then close #459 with a note pointing at those merges and at
+the phase that owns each remaining piece: static export and performance to
+Phase 2, product changes to Phase 4, prose to Phase 5, the ebook gate and
+bundle to Phase 7, dark mode and the taxonomy change declined with reasons.
