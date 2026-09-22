@@ -6,11 +6,11 @@ export const ARTICLES_TIER_3 = [
       "The exodus from American churches is not a mystery. The data is clear, the reasons are documented, and the church's refusal to listen is accelerating the departure.",
     pillar: "Prophetic Disruption",
     readTime: "13 min",
-    body: `<p>The numbers are no longer debatable. In 1999, Gallup found that 70 percent of Americans belonged to a church, synagogue, or mosque. By 2020, that number had fallen to 47 percent — the first time in the history of the poll that it dropped below the majority line. By 2023, it had settled at 45 percent. In a single generation, the United States went from being a nation where church membership was a default social behavior to one where it is a minority practice.</p>
+    body: `<p>In 1999, seven in ten Americans belonged to a church, a synagogue, or a mosque. By 2020 it was fewer than half, the first time in the history of the Gallup poll that membership fell below the majority line. By 2023 it had settled at forty-five percent. That is one generation. A default became a minority habit while most of us were arguing about the music.</p>
 
-<p>Pew Research Center's Religious Landscape Study tells the same story from a different angle. In 2007, 78 percent of Americans identified as Christian. By 2021, that number had fallen to 63 percent, and projections suggest it could drop below 50 percent by the mid-2040s. The decline is not concentrated among any single demographic. It is happening among whites and people of color, among the college-educated and those without degrees, in rural areas and urban centers. It is, by any sociological measure, a broad-based cultural shift.</p>
+<p>I have sat in the meetings where we explained this to ourselves. Better marketing. A younger worship leader. A sermon series with a better title. I have voted for some of it. Every one of those answers assumes the people who left misunderstood us, and that if we could only present ourselves more clearly they would come back.</p>
 
-<p>And yet the dominant response from church leadership has been a combination of denial, blame, and strategic tinkering — as if the problem were a matter of better marketing, younger worship leaders, or more compelling sermon series. The institutional church, by and large, has refused to sit with the most uncomfortable possibility: that people are leaving not because they misunderstand the church, but because they understand it all too well.</p>
+<p>The evidence says the opposite. They understood us. They watched what we did with power, with money, with the people who did not fit, and with the questions we told them not to ask, and they drew a reasonable conclusion. The exodus is not a mystery. The data is public, the reasons are on the record, and the one thing the church has refused to do is listen. This essay is an attempt to listen.</p>
 
 <h2>What the Data Actually Shows</h2>
 
