@@ -7,7 +7,7 @@ A banned word is the easiest tell to remove and the least important. These are t
 | Measure | Value |
 |---|---|
 | Essays measured | 678 |
-| Words | 1,363,751 |
+| Words | 1,363,801 |
 | Banned words in the banned sense | 0 in 0 essays |
 | Mean sentence length (words) | 17.8 |
 | Share of sentences at 30+ words | 17.8% |
@@ -35,17 +35,17 @@ Ranked by the composite. Read the top of this list aloud first.
 | 4 | what-the-reformation-actually-changed | 27.3 | 22 | 25.9% | 3.7 | 0.3 | yes | yes |
 | 5 | colonialism-and-missions | 27.2 | 19.6 | 25% | 3.1 | 1 | yes | yes |
 | 6 | non-denominational-doesnt-mean-no-tradition | 26.5 | 23.4 | 28.1% | 1.9 | 0.5 | yes | yes |
-| 7 | purity-culture-and-its-wreckage | 26.3 | 22.4 | 27.3% | 3.2 | 0 | yes | yes |
-| 8 | the-spirituality-of-doubt | 26.3 | 18.3 | 22.1% | 1.9 | 1.9 | yes | yes |
-| 9 | pentecostalism-and-the-global-south | 26.2 | 20 | 17.1% | 4.7 | 0.4 | yes | yes |
-| 10 | digital-discipleship | 26.2 | 17.5 | 16.7% | 4.5 | 0.5 | yes | yes |
-| 11 | prosperity-gospel-injustice | 26.1 | 20.9 | 24.4% | 0.6 | 1.7 | no |  |
-| 12 | guide-to-every-major-denomination | 26.1 | 24.9 | 28.7% | 3.3 | 0 | yes | yes |
-| 13 | liturgical-vs-contemporary-worship | 25.9 | 23 | 25.3% | 3.9 | 0 | yes | yes |
-| 14 | the-problem-with-certainty | 25.7 | 16.2 | 15.4% | 1.5 | 2.5 | yes | yes |
-| 15 | creeds-confessions-statements-of-faith | 25.4 | 21.3 | 23% | 3.5 | 0.4 | yes | yes |
-| 16 | charismatic-movement-inside-every-denomination | 25.3 | 25.1 | 33.3% | 2 | 0 | yes | yes |
-| 17 | the-christian-mystics | 25 | 19.2 | 20.6% | 2.4 | 0.8 | yes | yes |
+| 7 | digital-discipleship | 26.2 | 17.5 | 16.7% | 4.5 | 0.5 | yes | yes |
+| 8 | prosperity-gospel-injustice | 26.1 | 20.9 | 24.4% | 0.6 | 1.7 | no |  |
+| 9 | guide-to-every-major-denomination | 26.1 | 24.9 | 28.7% | 3.3 | 0 | yes | yes |
+| 10 | liturgical-vs-contemporary-worship | 26.1 | 22.6 | 25.7% | 3.9 | 0 | yes | yes |
+| 11 | the-problem-with-certainty | 25.7 | 16.2 | 15.4% | 1.5 | 2.5 | yes | yes |
+| 12 | creeds-confessions-statements-of-faith | 25.4 | 21.3 | 23% | 3.5 | 0.4 | yes | yes |
+| 13 | pentecostalism-and-the-global-south | 25.3 | 19.6 | 15.2% | 4.6 | 0.4 | yes | yes |
+| 14 | charismatic-movement-inside-every-denomination | 25.3 | 25.1 | 33.3% | 2 | 0 | yes | yes |
+| 15 | the-spirituality-of-doubt | 25.3 | 18.5 | 22.1% | 1.4 | 1.9 | yes | yes |
+| 16 | the-christian-mystics | 25 | 19.2 | 20.6% | 2.4 | 0.8 | yes | yes |
+| 17 | purity-culture-and-its-wreckage | 24.8 | 21.9 | 24.5% | 3.1 | 0 | yes | yes |
 | 18 | white-evangelicalism-and-race | 24.7 | 15.7 | 14.2% | 2.3 | 1.8 | yes | yes |
 | 19 | deconstruction-is-not-destruction | 24.5 | 19.4 | 19% | 2.7 | 0.9 | yes | yes |
 | 20 | the-historical-jesus | 24.5 | 20.9 | 23.5% | 2.8 | 0.5 | yes | yes |
