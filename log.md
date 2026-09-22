@@ -3,6 +3,31 @@
 Newest first. One entry per working session: what changed, what broke, what
 is next. Decisions made without asking are recorded with their reason.
 
+## 2026-09-22 — Foundation Prompt, Phase 0: the branch inventory
+
+**Changed.** `docs/FOUNDATION-PROMPT.md` written (the plan a firm would run:
+reconcile branches, one source of truth, essays as HTML, measure, cut,
+editorial machine, photography, money, blocking gates). Phase 0 opened
+read-only: `docs/branches/INVENTORY.md` with a verdict on each of the ten
+open pull requests. No branch merged, folded, or closed.
+
+**Found.** Nine of the ten are one-commit branches from July and August. One
+is already on `main` (#374). Three are docs or prose (#377, #518, #521's
+prompt). Five carry small, still-needed code that `main` lacks: crisis help
+on `/doubt` (#375), the `<main>` landmark on six pages (#376), the author
+Person schema (#370), the funnel telemetry (#368), the setup-node bump
+(#441). Their GitHub "files changed" counts are inflated by stale bases; the
+real diffs are a few lines to a few dozen. #459 is the one large branch
+(344 files, active today); its full read, with the gates run in a separate
+worktree, is recorded in the inventory.
+
+**Decided.** Small branches are folded by re-applying their intent on the
+phase branch that owns the concern, never by merging a stale base. Every
+close carries a note naming what was in it and where it went.
+
+**Next.** Gate 0: James approves the merge, fold, and close list. Then the
+actions run one at a time, and Phase 1 opens with the backup.
+
 ## 2026-09-22 — Correction: the 128 "placeholders" are real essays; retirement reversed
 
 **Found.** Checking production after the merge: all 128 slugs the audit
