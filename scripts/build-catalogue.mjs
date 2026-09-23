@@ -145,10 +145,17 @@ async function loadDbEssays() {
   let conn;
   try {
     conn = await mysql.createConnection({ uri: process.env.DATABASE_URL, ssl: { rejectUnauthorized: true } });
+    // Ask for only the columns the live table actually has: the production
+    // schema and drizzle/schema.ts have drifted (no readingTimeMinutes there).
+    const [cols] = await conn.query("SHOW COLUMNS FROM posts");
+    const actual = new Map(cols.map((c) => [String(c.Field).toLowerCase(), String(c.Field)]));
+    const wanted = ["slug", "title", "excerpt", "pillar", "readingTimeMinutes", "readTime", "publishedAt", "createdAt"]
+      .filter((c) => actual.has(c.toLowerCase()))
+      .map((c) => `\`${actual.get(c.toLowerCase())}\` AS \`${c}\``);
     const [rows] = await conn.query(
       // The same guard the sitemap and the API index use: a body under 600
       // characters is an abstract, not an essay.
-      "SELECT slug, title, excerpt, pillar, readingTimeMinutes, readTime, publishedAt, createdAt FROM posts WHERE published = true AND CHAR_LENGTH(body) >= 600"
+      `SELECT ${wanted.join(", ")} FROM posts WHERE published = true AND CHAR_LENGTH(body) >= 600`
     );
     return rows;
   } catch (err) {
