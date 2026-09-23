@@ -45,8 +45,11 @@ function routeMatchers(): { regexes: RegExp[]; prefixes: string[] } {
       .replace(/:[A-Za-z0-9_]+/g, "\u0003");
     pat = pat.replace(/[.+?^${}()|[\]\\]/g, "\\$&");
     pat = pat
+      // eslint-disable-next-line no-control-regex -- sentinel characters, intentional
       .replace(/\u0001/g, "(?:/.*)?")
+      // eslint-disable-next-line no-control-regex -- sentinel characters, intentional
       .replace(/\u0002/g, ".*")
+      // eslint-disable-next-line no-control-regex -- sentinel characters, intentional
       .replace(/\u0003/g, "[^/]+");
     return new RegExp("^" + pat + "/?$");
   };
