@@ -125,4 +125,9 @@ But the movement did not begin in 2016. It began in living rooms and therapists'
 
 ## Decision
 
-Waiting on James.
+**23 September 2026: the four proposals accepted as written**, first-person
+sentences confirmed; number 28 left as it is. Applied through
+`content/voice-edits-library.json` and the applier to the library, the server
+copy, the root-level `api/*.json` sources and the seed files; public essays and
+the SEO layer rebuilt. The "current opening" above each proposal is now the old
+text, kept for the record.

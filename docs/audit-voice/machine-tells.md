@@ -7,7 +7,7 @@ A banned word is the easiest tell to remove and the least important. These are t
 | Measure | Value |
 |---|---|
 | Essays measured | 678 |
-| Words | 1,363,912 |
+| Words | 1,364,021 |
 | Banned words in the banned sense | 0 in 0 essays |
 | Mean sentence length (words) | 17.8 |
 | Share of sentences at 30+ words | 17.8% |
@@ -48,19 +48,19 @@ Ranked by the composite. Read the top of this list aloud first.
 | 17 | the-christian-mystics | 25 | 19.2 | 20.6% | 2.4 | 0.8 | yes | yes |
 | 18 | purity-culture-and-its-wreckage | 24.8 | 21.9 | 24.5% | 3.1 | 0 | yes | yes |
 | 19 | 3-treating-sunday-as-the-only-metric | 24.3 | 19.7 | 24.7% | 1.1 | 0 | no |  |
-| 20 | what-christians-believe-about-hell | 24.3 | 22.7 | 30.1% | 0.9 | 0.5 | yes | yes |
-| 21 | when-politics-replaced-theology | 24.2 | 22.3 | 27.1% | 1.7 | 0.4 | yes | yes |
-| 22 | why-christianity | 24.1 | 18 | 15.3% | 1.3 | 2.2 | yes | yes |
-| 23 | the-historical-jesus | 24 | 20.8 | 22.3% | 2.8 | 0.5 | yes | yes |
+| 20 | why-christianity | 24.1 | 18 | 15.3% | 1.3 | 2.2 | yes | yes |
+| 21 | the-historical-jesus | 24 | 20.8 | 22.3% | 2.8 | 0.5 | yes | yes |
+| 22 | reconstructing-faith | 24 | 19.2 | 22.9% | 2.4 | 0.4 | yes | yes |
+| 23 | when-politics-replaced-theology | 23.9 | 21.6 | 24.8% | 2 | 0.4 | yes | yes |
 | 24 | deconstruction-is-not-destruction | 23.6 | 18.9 | 16.8% | 2.7 | 0.9 | yes | yes |
-| 25 | reconstructing-faith | 23.5 | 18.8 | 21.8% | 2.4 | 0.4 | yes | yes |
-| 26 | exvangelical-when-leaving-isnt-losing-faith | 23.4 | 19.8 | 21.7% | 1.7 | 1.1 | yes | yes |
-| 27 | evolution-and-genesis | 23.4 | 22.9 | 28% | 1.7 | 0 | yes | yes |
-| 28 | christianity-after-christendom | 23.4 | 19.6 | 24.6% | 1.2 | 0 | yes | yes |
-| 29 | your-marriage-is-ministry-too | 23.3 | 19.1 | 25.8% | 1.7 | 2.8 | yes |  |
-| 30 | toxic-masculinity-in-the-pulpit | 23.3 | 16.5 | 11.8% | 3.8 | 1 | yes | yes |
-| 31 | the-black-church-in-america | 23.1 | 18.6 | 16.6% | 2.5 | 0.7 | yes | yes |
-| 32 | the-anabaptist-option | 23 | 21.4 | 21% | 2.8 | 0 | yes | yes |
+| 25 | evolution-and-genesis | 23.4 | 22.9 | 28% | 1.7 | 0 | yes | yes |
+| 26 | christianity-after-christendom | 23.4 | 19.6 | 24.6% | 1.2 | 0 | yes | yes |
+| 27 | your-marriage-is-ministry-too | 23.3 | 19.1 | 25.8% | 1.7 | 2.8 | yes |  |
+| 28 | toxic-masculinity-in-the-pulpit | 23.3 | 16.5 | 11.8% | 3.8 | 1 | yes | yes |
+| 29 | the-black-church-in-america | 23.1 | 18.6 | 16.6% | 2.5 | 0.7 | yes | yes |
+| 30 | the-anabaptist-option | 23 | 21.4 | 21% | 2.8 | 0 | yes | yes |
+| 31 | exvangelical-when-leaving-isnt-losing-faith | 23 | 19.4 | 21.3% | 1.6 | 1.1 | yes | yes |
+| 32 | what-christians-believe-about-hell | 23 | 23.4 | 30.4% | 0.9 | 0 | yes | yes |
 | 33 | how-american-christianity-became-american | 22.9 | 23.2 | 27.7% | 1.9 | 0 | yes | yes |
 | 34 | what-christians-can-learn-from-judaism | 22.8 | 16.2 | 12% | 3.5 | 1 | yes | yes |
 | 35 | the-death-of-christendom | 22.5 | 16.5 | 11.4% | 3.6 | 0.3 | yes | yes |
@@ -90,7 +90,7 @@ Ranked by the composite. Read the top of this list aloud first.
 | 42-the-unreached-people-groups-closest-to-you-that-youve-never-considered | 31.2% | 22 |
 | 4-never-preaching-anything-that-costs-you-something | 31% | 20.9 |
 | a-day-of-doing-nothing | 30.6% | 23.6 |
-| what-christians-believe-about-hell | 30.1% | 22.7 |
+| what-christians-believe-about-hell | 30.4% | 23.4 |
 | spouse-wishes-knew-parsonage | 29.8% | 21.4 |
 | christians-and-abortion | 29.7% | 20.9 |
 | theology-of-borders | 29.5% | 21.8 |
