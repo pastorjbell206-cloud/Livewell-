@@ -61,6 +61,7 @@ export const SITE_NAV_GROUPS: SiteNavGroup[] = [
     // "I want to read." The essays, the paths through them, and the subjects.
     title: "Read",
     links: [
+      { label: "The Library: everything", href: "/explore", primary: true },
       { label: "All the writing", href: "/writing", primary: true },
       { label: "Reading paths", href: "/reading-paths", primary: true },
       { label: "Topic pathways", href: "/pathways", primary: true },
@@ -72,7 +73,6 @@ export const SITE_NAV_GROUPS: SiteNavGroup[] = [
       { label: "Parenting", href: "/parenting" },
       { label: "Home and family", href: "/family" },
       { label: "Living well", href: "/living-well" },
-      { label: "Explore everything", href: "/explore" },
       { label: "Article collections", href: "/article-collections" },
       { label: "The Commonplace", href: "/library" },
     ],

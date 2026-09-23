@@ -41,6 +41,7 @@ jobs:
           node scripts/validate-answers.mjs
           node scripts/validate-argument-cases.mjs
           node scripts/validate-links.mjs
+          pnpm exec tsx scripts/validate-catalogue.mjs
 
       - name: Test
         run: pnpm test

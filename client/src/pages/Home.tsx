@@ -489,7 +489,7 @@ export default function Home() {
             for exactly that, and the rest of the site opens from there.
           </p>
           <PullQuote>
-            Theology that can carry the weight of a Tuesday afternoon.
+            Connecting the depth of theology to the weight of everyday life.
           </PullQuote>
           <div
             style={{

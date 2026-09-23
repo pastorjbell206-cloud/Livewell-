@@ -159,7 +159,7 @@ export const TRACKS: Track[] = [
     title: "Devotionals",
     kicker: "Devotional",
     description:
-      "Short readings for the actual Tuesday afternoon — not the imagined retreat.",
+      "Short readings for an ordinary day, not the imagined retreat.",
     group: "everyday",
   },
 ];

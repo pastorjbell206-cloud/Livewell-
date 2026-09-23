@@ -3,6 +3,77 @@
 Newest first. One entry per working session: what changed, what broke, what
 is next. Decisions made without asking are recorded with their reason.
 
+## 2026-09-23 — Elite Site Prompt, Phase A: the Library
+
+**Changed.** One catalogue of everything on the site,
+`scripts/build-catalogue.mjs`, rebuilt on every build. On deploy it reads the
+essays from the database, the same way the sitemap does. It covers 20 kinds:
+essays, books, the free booklets, study guides, answers, wisdom topics,
+how-tos, life domains, context guides, doctrines, church history, creeds,
+justice, the church and power, nation, pathways, care plans, group guides,
+arguments, and the family resources. `/explore` became the Library. It has one
+search across all of it, including Scripture references and corrections for a
+misspelled word. Its filters are kind, subject, length, and "only things I can
+download," every view is a shareable URL, and each result has its downloads
+inline. `/downloads` now reads the same catalogue and gains the ten free
+booklets and a books shelf. Search links into the Library. The Read menu leads
+with "The Library: everything." `/downloads` joined the sitemap. The booklet
+list moved into `client/src/data/booklets.ts` so the page and the catalogue
+share it. New wording is staged in `content/site-copy.md` for approval.
+
+**Decided.** The Library lives at `/explore`, not `/library`. `/library` is The
+Commonplace, an indexed page, and the prompt's own rule forbids changing an
+address. `/explore` was already the "everything" page, so no address changed.
+The reading-path PDFs stay off the open shelf because they are email-gated.
+The paid ebooks are listed as books, never as files.
+
+**Found.** The nine paid ebooks (the three shelf books, the five unshelved
+book pages, and Raising Believers) sit as public files under `/ebook/<slug>/`.
+Anyone with the address can download them without paying. That is a money
+path for James to rule on. The fix is to move them behind the paid-session
+download the 23 other ebooks already use.
+
+**Verified.** Typecheck clean. 323 tests pass, 10 of them new. Every CI
+validator passes, including the new `validate-catalogue`, which checks that
+every item resolves to a real route and every file exists or is built by the
+deploy. Lint shows 0 errors. The build and prerender are clean. Axe finds no
+serious violations on `/explore` or `/downloads` at 1440 or 390 wide.
+Screenshots were checked at both widths.
+
+**Not done in Phase A.** A4, the "More on this" block on every item page drawn
+from the catalogue, is not built. The site search's own library results still
+cover six libraries; it now links to the Library for the rest. Church-history
+figures, councils, and heresies link to the history page rather than each
+entry. The podcast and Substack feeds belong to Phase B.
+
+**Next.** Gate A: James searches for five things he knows he wrote and
+downloads one PDF on his phone. Then Phase B, "Everywhere James is."
+
+## 2026-09-22 — Foundation Prompt, Phase 0: the branch inventory
+
+**Changed.** `docs/FOUNDATION-PROMPT.md` written (the plan a firm would run:
+reconcile branches, one source of truth, essays as HTML, measure, cut,
+editorial machine, photography, money, blocking gates). Phase 0 opened
+read-only: `docs/branches/INVENTORY.md` with a verdict on each of the ten
+open pull requests. No branch merged, folded, or closed.
+
+**Found.** Nine of the ten are one-commit branches from July and August. One
+is already on `main` (#374). Three are docs or prose (#377, #518, #521's
+prompt). Five carry small, still-needed code that `main` lacks: crisis help
+on `/doubt` (#375), the `<main>` landmark on six pages (#376), the author
+Person schema (#370), the funnel telemetry (#368), the setup-node bump
+(#441). Their GitHub "files changed" counts are inflated by stale bases; the
+real diffs are a few lines to a few dozen. #459 is the one large branch
+(344 files, active today); its full read, with the gates run in a separate
+worktree, is recorded in the inventory.
+
+**Decided.** Small branches are folded by re-applying their intent on the
+phase branch that owns the concern, never by merging a stale base. Every
+close carries a note naming what was in it and where it went.
+
+**Next.** Gate 0: James approves the merge, fold, and close list. Then the
+actions run one at a time, and Phase 1 opens with the backup.
+
 ## 2026-09-22 — Correction: the 128 "placeholders" are real essays; retirement reversed
 
 **Found.** Checking production after the merge: all 128 slugs the audit

@@ -17,7 +17,7 @@ export const PRIMARY_HEADLINE =
 export const PRIMARY_KICKER = "New essays weekly";
 
 export const PRIMARY_SUBHEAD =
-  "After Christendom essays on theology, politics, and the American church — and the actual Tuesday afternoon of marriage, money, parenting, manhood, womanhood, doubt, and pastoring. From a pastor and essayist tracing the collapse of cultural Christianity, the rise of Christian nationalism, and the long work of forming people who can carry weight.";
+  "After Christendom essays on theology, politics, and the American church — and the everyday weight of marriage, money, parenting, manhood, womanhood, doubt, and pastoring. From a pastor and essayist tracing the collapse of cultural Christianity, the rise of Christian nationalism, and the long work of forming people who can carry weight.";
 
 // Shortened two-sentence hero subhead (variant A). Same claims as the long
 // version above, compressed. The long version is kept for variant B.

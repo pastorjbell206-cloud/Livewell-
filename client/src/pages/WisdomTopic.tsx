@@ -70,7 +70,6 @@ export default function WisdomTopic() {
 
   useEffect(() => {
     let stale = false;
-    setFailed(false);
     fetchJson("/wisdom/topics.json", isTopicsFile)
       .then((d) => { if (!stale) setTopics(d.topics); })
       .catch(() => { if (!stale) setFailed(true); });
@@ -80,7 +79,7 @@ export default function WisdomTopic() {
   if (failed) {
     return (
       <Layout>
-        <LoadFailed onRetry={() => setNonce((n) => n + 1)} />
+        <LoadFailed onRetry={() => { setFailed(false); setNonce((n) => n + 1); }} />
       </Layout>
     );
   }
