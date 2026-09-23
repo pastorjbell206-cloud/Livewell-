@@ -125,4 +125,9 @@ Recovering the Jewish roots of the faith is not a matter of interfaith politenes
 
 ## Decision
 
-Waiting on James.
+**23 September 2026: the four proposals accepted as written**, first-person
+sentences confirmed; number 31 left as it is. Applied through
+`content/voice-edits-library.json` and the applier to the library, the server
+copy, the root-level `api/*.json` sources and the seed files; public essays and
+the SEO layer rebuilt. The "current opening" above each proposal is now the old
+text, kept for the record.

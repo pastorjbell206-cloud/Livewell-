@@ -7,7 +7,7 @@ A banned word is the easiest tell to remove and the least important. These are t
 | Measure | Value |
 |---|---|
 | Essays measured | 678 |
-| Words | 1,364,021 |
+| Words | 1,364,103 |
 | Banned words in the banned sense | 0 in 0 essays |
 | Mean sentence length (words) | 17.8 |
 | Share of sentences at 30+ words | 17.8% |
@@ -54,17 +54,17 @@ Ranked by the composite. Read the top of this list aloud first.
 | 23 | when-politics-replaced-theology | 23.9 | 21.6 | 24.8% | 2 | 0.4 | yes | yes |
 | 24 | deconstruction-is-not-destruction | 23.6 | 18.9 | 16.8% | 2.7 | 0.9 | yes | yes |
 | 25 | evolution-and-genesis | 23.4 | 22.9 | 28% | 1.7 | 0 | yes | yes |
-| 26 | christianity-after-christendom | 23.4 | 19.6 | 24.6% | 1.2 | 0 | yes | yes |
-| 27 | your-marriage-is-ministry-too | 23.3 | 19.1 | 25.8% | 1.7 | 2.8 | yes |  |
-| 28 | toxic-masculinity-in-the-pulpit | 23.3 | 16.5 | 11.8% | 3.8 | 1 | yes | yes |
-| 29 | the-black-church-in-america | 23.1 | 18.6 | 16.6% | 2.5 | 0.7 | yes | yes |
-| 30 | the-anabaptist-option | 23 | 21.4 | 21% | 2.8 | 0 | yes | yes |
-| 31 | exvangelical-when-leaving-isnt-losing-faith | 23 | 19.4 | 21.3% | 1.6 | 1.1 | yes | yes |
-| 32 | what-christians-believe-about-hell | 23 | 23.4 | 30.4% | 0.9 | 0 | yes | yes |
-| 33 | how-american-christianity-became-american | 22.9 | 23.2 | 27.7% | 1.9 | 0 | yes | yes |
-| 34 | what-christians-can-learn-from-judaism | 22.8 | 16.2 | 12% | 3.5 | 1 | yes | yes |
-| 35 | the-death-of-christendom | 22.5 | 16.5 | 11.4% | 3.6 | 0.3 | yes | yes |
-| 36 | what-christians-can-learn-from-islam | 22.4 | 19 | 23.5% | 2.5 | 0 | yes | yes |
+| 26 | your-marriage-is-ministry-too | 23.3 | 19.1 | 25.8% | 1.7 | 2.8 | yes |  |
+| 27 | toxic-masculinity-in-the-pulpit | 23.3 | 16.5 | 11.8% | 3.8 | 1 | yes | yes |
+| 28 | the-anabaptist-option | 23 | 21.4 | 21% | 2.8 | 0 | yes | yes |
+| 29 | the-black-church-in-america | 23 | 18.5 | 16.3% | 2.5 | 0.7 | yes | yes |
+| 30 | exvangelical-when-leaving-isnt-losing-faith | 23 | 19.4 | 21.3% | 1.6 | 1.1 | yes | yes |
+| 31 | what-christians-believe-about-hell | 23 | 23.4 | 30.4% | 0.9 | 0 | yes | yes |
+| 32 | what-christians-can-learn-from-judaism | 23 | 16.6 | 12.9% | 3.4 | 1 | yes | yes |
+| 33 | christianity-after-christendom | 22.6 | 19.7 | 24.4% | 0.8 | 0 | yes | yes |
+| 34 | the-death-of-christendom | 22.5 | 16.5 | 11.4% | 3.6 | 0.3 | yes | yes |
+| 35 | what-christians-can-learn-from-islam | 22.4 | 19 | 23.5% | 2.5 | 0 | yes | yes |
+| 36 | how-american-christianity-became-american | 22.2 | 23.1 | 27.5% | 1.6 | 0 | yes | yes |
 | 37 | science-and-faith-are-not-at-war | 22.2 | 19 | 17.8% | 2.2 | 0.9 | yes | yes |
 | 38 | megachurch-model | 22.2 | 16 | 11.5% | 3.3 | 0.6 | yes | yes |
 | 39 | the-great-schism | 22.1 | 19.6 | 14.3% | 3.7 | 0 | yes | yes |
