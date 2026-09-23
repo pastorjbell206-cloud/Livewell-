@@ -7,7 +7,7 @@ A banned word is the easiest tell to remove and the least important. These are t
 | Measure | Value |
 |---|---|
 | Essays measured | 678 |
-| Words | 1,363,801 |
+| Words | 1,363,912 |
 | Banned words in the banned sense | 0 in 0 essays |
 | Mean sentence length (words) | 17.8 |
 | Share of sentences at 30+ words | 17.8% |
@@ -35,24 +35,24 @@ Ranked by the composite. Read the top of this list aloud first.
 | 4 | what-the-reformation-actually-changed | 27.3 | 22 | 25.9% | 3.7 | 0.3 | yes | yes |
 | 5 | colonialism-and-missions | 27.2 | 19.6 | 25% | 3.1 | 1 | yes | yes |
 | 6 | non-denominational-doesnt-mean-no-tradition | 26.5 | 23.4 | 28.1% | 1.9 | 0.5 | yes | yes |
-| 7 | digital-discipleship | 26.2 | 17.5 | 16.7% | 4.5 | 0.5 | yes | yes |
-| 8 | prosperity-gospel-injustice | 26.1 | 20.9 | 24.4% | 0.6 | 1.7 | no |  |
-| 9 | guide-to-every-major-denomination | 26.1 | 24.9 | 28.7% | 3.3 | 0 | yes | yes |
-| 10 | liturgical-vs-contemporary-worship | 26.1 | 22.6 | 25.7% | 3.9 | 0 | yes | yes |
-| 11 | the-problem-with-certainty | 25.7 | 16.2 | 15.4% | 1.5 | 2.5 | yes | yes |
-| 12 | creeds-confessions-statements-of-faith | 25.4 | 21.3 | 23% | 3.5 | 0.4 | yes | yes |
-| 13 | pentecostalism-and-the-global-south | 25.3 | 19.6 | 15.2% | 4.6 | 0.4 | yes | yes |
-| 14 | charismatic-movement-inside-every-denomination | 25.3 | 25.1 | 33.3% | 2 | 0 | yes | yes |
-| 15 | the-spirituality-of-doubt | 25.3 | 18.5 | 22.1% | 1.4 | 1.9 | yes | yes |
-| 16 | the-christian-mystics | 25 | 19.2 | 20.6% | 2.4 | 0.8 | yes | yes |
-| 17 | purity-culture-and-its-wreckage | 24.8 | 21.9 | 24.5% | 3.1 | 0 | yes | yes |
-| 18 | white-evangelicalism-and-race | 24.7 | 15.7 | 14.2% | 2.3 | 1.8 | yes | yes |
-| 19 | deconstruction-is-not-destruction | 24.5 | 19.4 | 19% | 2.7 | 0.9 | yes | yes |
-| 20 | the-historical-jesus | 24.5 | 20.9 | 23.5% | 2.8 | 0.5 | yes | yes |
-| 21 | 3-treating-sunday-as-the-only-metric | 24.3 | 19.7 | 24.7% | 1.1 | 0 | no |  |
-| 22 | what-christians-believe-about-hell | 24.3 | 22.7 | 30.1% | 0.9 | 0.5 | yes | yes |
-| 23 | when-politics-replaced-theology | 24.2 | 22.3 | 27.1% | 1.7 | 0.4 | yes | yes |
-| 24 | why-christianity | 24.1 | 18 | 15.3% | 1.3 | 2.2 | yes | yes |
+| 7 | charismatic-movement-inside-every-denomination | 26.5 | 25.2 | 34.3% | 2.4 | 0 | yes | yes |
+| 8 | digital-discipleship | 26.2 | 17.5 | 16.7% | 4.5 | 0.5 | yes | yes |
+| 9 | prosperity-gospel-injustice | 26.1 | 20.9 | 24.4% | 0.6 | 1.7 | no |  |
+| 10 | guide-to-every-major-denomination | 26.1 | 24.9 | 28.7% | 3.3 | 0 | yes | yes |
+| 11 | liturgical-vs-contemporary-worship | 26.1 | 22.6 | 25.7% | 3.9 | 0 | yes | yes |
+| 12 | creeds-confessions-statements-of-faith | 25.7 | 21.4 | 24.2% | 3.4 | 0.4 | yes | yes |
+| 13 | the-problem-with-certainty | 25.7 | 16.2 | 15.4% | 1.5 | 2.5 | yes | yes |
+| 14 | white-evangelicalism-and-race | 25.6 | 16 | 14.9% | 2.7 | 1.8 | yes | yes |
+| 15 | pentecostalism-and-the-global-south | 25.3 | 19.6 | 15.2% | 4.6 | 0.4 | yes | yes |
+| 16 | the-spirituality-of-doubt | 25.3 | 18.5 | 22.1% | 1.4 | 1.9 | yes | yes |
+| 17 | the-christian-mystics | 25 | 19.2 | 20.6% | 2.4 | 0.8 | yes | yes |
+| 18 | purity-culture-and-its-wreckage | 24.8 | 21.9 | 24.5% | 3.1 | 0 | yes | yes |
+| 19 | 3-treating-sunday-as-the-only-metric | 24.3 | 19.7 | 24.7% | 1.1 | 0 | no |  |
+| 20 | what-christians-believe-about-hell | 24.3 | 22.7 | 30.1% | 0.9 | 0.5 | yes | yes |
+| 21 | when-politics-replaced-theology | 24.2 | 22.3 | 27.1% | 1.7 | 0.4 | yes | yes |
+| 22 | why-christianity | 24.1 | 18 | 15.3% | 1.3 | 2.2 | yes | yes |
+| 23 | the-historical-jesus | 24 | 20.8 | 22.3% | 2.8 | 0.5 | yes | yes |
+| 24 | deconstruction-is-not-destruction | 23.6 | 18.9 | 16.8% | 2.7 | 0.9 | yes | yes |
 | 25 | reconstructing-faith | 23.5 | 18.8 | 21.8% | 2.4 | 0.4 | yes | yes |
 | 26 | exvangelical-when-leaving-isnt-losing-faith | 23.4 | 19.8 | 21.7% | 1.7 | 1.1 | yes | yes |
 | 27 | evolution-and-genesis | 23.4 | 22.9 | 28% | 1.7 | 0 | yes | yes |
@@ -81,8 +81,8 @@ Ranked by the composite. Read the top of this list aloud first.
 | 30-how-to-talk-about-political-divisiveness-from-the-pulpit-without-destroying-your-church | 35% | 22.9 |
 | black-church-prophetic-justice | 34.4% | 20.9 |
 | protecting-your-marriage-from-work | 34.4% | 23.1 |
+| charismatic-movement-inside-every-denomination | 34.3% | 25.2 |
 | christianity-was-never-western | 33.6% | 22.4 |
-| charismatic-movement-inside-every-denomination | 33.3% | 25.1 |
 | 44-what-the-church-in-the-global-south-can-teach-the-church-in-america-about-suffering | 32.4% | 25.2 |
 | 28-why-young-adults-are-coming-back-to-church-and-how-not-to-lose-them-again | 31.9% | 23.3 |
 | healthcare-moral-issue | 31.7% | 22 |

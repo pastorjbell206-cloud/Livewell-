@@ -55,7 +55,6 @@ Derived descriptions that still read at college level. Each is true to the essay
 | revitalize-or-replant | 14.1 | The distinction matters because the strategies are completely different. |
 | church-comfort-inequality | 14 | The American church has made peace with a level of economic inequality that the prophets would have named without hesitation. |
 | scripture-meditation | 14 | At some point in pastoral ministry, and I cannot tell you precisely when it happened to me, the Bible became a resource rather than a word addressed to me. |
-| deconstruction-is-not-destruction | 14 | Deconstruction has become a dirty word in many churches. It is spoken with the same hushed alarm once reserved for words like "liberal" or "heretical." |
 | 29-what-the-scandals-in-the-church-are-teaching-us-about-accountability | 13.9 | The past decade has been one of the most sobering in the modern history of the American church when it comes to leadership accountability. |
 | unreached-people-groups-closest-to-you | 13.9 | Count the apartment complex where recent immigrants from Somalia live in quiet and considerable isolation. |
 | apologetics-can-a-reasonable-person-believe-in-miracles | 13.9 | Modern people are taught that miracles are the one thing an educated person cannot accept, and that confidence rests on an argument worth examining. |
@@ -65,6 +64,7 @@ Derived descriptions that still read at college level. Each is true to the essay
 | 10-its-okay-to-see-a-counselor-why-pastors-resist-and-why-they-shouldnt | 13.4 | Of all the things that are slowly changing in pastoral culture, the stigma around professional counseling may be the most stubbornly persistent. |
 | church-must-speak-housing | 13.4 | In most American cities right now, housing consumes a share of working-class income that previous generations would have called a crisis. |
 | symptoms-without-causes-charity | 13.4 | There is a story, attributed to various sources over the years, about people standing on a riverbank pulling drowning bodies from the water. |
+| deconstruction-is-not-destruction | 13.4 | Deconstruction has become a dirty word in many churches. It is said with the hushed alarm once reserved for "liberal" or "heretical." |
 | 44-what-the-church-in-the-global-south-can-teach-the-church-in-america-about-suffering | 13.3 | The American church has developed a sophisticated relationship with comfort. Its buildings are climate controlled. |
 | digital-divide | 13.3 | The resources that enable human flourishing (land, water, shelter, education) are not distributed randomly. They concentrate. |
 | apologetics-what-about-those-who-never-heard | 13.2 | It seems deeply unfair that eternity could hinge on whether you happened to be born where the message reached, and the unfairness is worth facing squarely. |
