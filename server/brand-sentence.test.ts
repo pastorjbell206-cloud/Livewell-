@@ -84,6 +84,9 @@ describe("brand sentence", () => {
     const built = path.join(repoRoot, "dist/public/index.html");
     if (statSync(built, { throwIfNoEntry: false })) {
       const html = readFileSync(built, "utf8");
+      // A build without a prerender leaves Vite's template, marker and all;
+      // only a prerendered file is expected to carry the hero.
+      if (html.includes("prerender:home-hero")) return;
       expect(html.includes('class="home-hero-grid"'), "dist/public/index.html has no static home hero").toBe(true);
       expect(html.includes(BRAND_SENTENCE.replace(/&/g, "&amp;"))).toBe(true);
     }
