@@ -47,10 +47,22 @@ function loadTakenDown() {
 }
 const TAKEN_DOWN = loadTakenDown();
 
+// The pastor-trade essays moved to PCN: their old URLs 301 there (vercel.json),
+// so they must not be advertised here whether the DB still holds them or not.
+function loadMoved() {
+  try {
+    return new Set(JSON.parse(fs.readFileSync("content/pcn-moved.json", "utf8")).slugs || []);
+  } catch {
+    return new Set();
+  }
+}
+const PCN_MOVED = loadMoved();
+
 function mergeArticles(dbArticles) {
-  const have = new Set((dbArticles || []).map(a => a.slug));
-  const extra = STATIC_ARTICLES.filter(a => !have.has(a.slug) && !TAKEN_DOWN.has(a.slug));
-  return [...(dbArticles || []), ...extra];
+  const db = (dbArticles || []).filter(a => !PCN_MOVED.has(a.slug));
+  const have = new Set(db.map(a => a.slug));
+  const extra = STATIC_ARTICLES.filter(a => !have.has(a.slug) && !TAKEN_DOWN.has(a.slug) && !PCN_MOVED.has(a.slug));
+  return [...db, ...extra];
 }
 
 const STATIC_PAGES = [

@@ -52,8 +52,11 @@ const SECTIONS = [
       const data = readJson("client/src/data/content-data.json");
       const posts = Array.isArray(data) ? data : data?.posts;
       if (!Array.isArray(posts)) return [];
+      // The pastor-trade essays moved to PCN (content/pcn-moved.json) are no
+      // longer this site's; their URLs redirect there.
+      const moved = new Set(readJson("content/pcn-moved.json")?.slugs || []);
       return posts
-        .filter((p) => p && p.slug && p.title && p.published !== false)
+        .filter((p) => p && p.slug && p.title && p.published !== false && !moved.has(p.slug))
         .map((p) => entryLine(p.title, `${SITE}/writing/${p.slug}`, p.excerpt || p.summary || p.subtitle));
     },
   },

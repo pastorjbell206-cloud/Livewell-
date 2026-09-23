@@ -92,7 +92,11 @@ export function build(records, outDir = OUT, layer = {}, featuredSlugs = [], can
 
 const isMain = process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url);
 if (isMain) {
-  const records = JSON.parse(readFileSync(SRC, "utf8"));
+  // The pastor-trade essays moved to PCN (content/pcn-moved.json) are not
+  // written, indexed, featured or related; their URLs redirect (vercel.json).
+  const MOVED_FILE = path.join(ROOT, "content/pcn-moved.json");
+  const moved = new Set(existsSync(MOVED_FILE) ? JSON.parse(readFileSync(MOVED_FILE, "utf8")).slugs ?? [] : []);
+  const records = JSON.parse(readFileSync(SRC, "utf8")).filter((r) => !moved.has(r?.slug));
   const layer = existsSync(SEO) ? JSON.parse(readFileSync(SEO, "utf8")) : {};
   const featuredSlugs = existsSync(FEATURED) ? JSON.parse(readFileSync(FEATURED, "utf8")).flagship ?? [] : [];
   const canonSlugs = existsSync(CANON) ? JSON.parse(readFileSync(CANON, "utf8")).slugs ?? [] : [];

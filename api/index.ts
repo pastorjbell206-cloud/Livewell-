@@ -13,6 +13,12 @@ import superjson from "superjson";
 // slug collision; static fills the rest; if the DB is unreachable the site still
 // serves the library. Regenerate with `node scripts/build-static-library.mjs`.
 import STATIC_LIBRARY from "./static-library.generated.js";
+// The pastor-trade essays moved to the Pastors Connection Network. Their old
+// URLs 301 there (vercel.json); this list keeps them out of every listing,
+// the RSS feed and the essay route whether the DB still holds them or not.
+// Generated copy of content/pcn-moved.json (scripts/export-pcn-essays.mjs).
+import PCN_MOVED_JSON from "./pcn-moved.json" with { type: "json" };
+const PCN_MOVED = new Set<string>(((PCN_MOVED_JSON as any)?.slugs as string[]) || []);
 import { readFileSync } from "node:fs";
 import { readFile } from "node:fs/promises";
 import Stripe from "stripe";
@@ -1349,17 +1355,17 @@ function preferFullBody(row: any): any {
 // Append the static essays the DB doesn't already have (DB wins on slug), then
 // order the whole set newest-first so the index reads as one library.
 function mergeWithStatic(dbRows: any[], slim: boolean): any[] {
-  const rows = (dbRows || []).map(preferFullBody);
+  const rows = (dbRows || []).filter((r) => !PCN_MOVED.has(r?.slug)).map(preferFullBody);
   const have = new Set(rows.map((r) => r.slug));
   const extra = (STATIC_LIBRARY as any[])
-    .filter((r) => !have.has(r.slug) && !TAKEN_DOWN.has(r.slug))
+    .filter((r) => !have.has(r.slug) && !TAKEN_DOWN.has(r.slug) && !PCN_MOVED.has(r.slug))
     .map(slim ? staticSlimCard : staticFullCard);
   return [...rows, ...extra].sort(byDateDesc);
 }
 function staticBySlugOrId(id: number | string): any | null {
   const s = String(id);
   const rec = (STATIC_LIBRARY as any[]).find((r) => r.slug === s || String(r.id) === s);
-  if (!rec || TAKEN_DOWN.has(rec.slug)) return null;
+  if (!rec || TAKEN_DOWN.has(rec.slug) || PCN_MOVED.has(rec.slug)) return null;
   return staticFullCard(rec);
 }
 
@@ -1490,6 +1496,7 @@ async function trpcGetPost(id: number | string): Promise<any | null> {
       return { ...toPostCard(row), body: row.body || null, content: row.body || null };
     });
     if (dbRow && (dbRow as any).__takenDown) return null; // 404, and no static fallback
+    if (dbRow && PCN_MOVED.has((dbRow as any).slug)) return null; // moved to PCN; the URL redirects there
     if (dbRow) return preferFullBody(dbRow);
   } catch { /* no DB / unreachable: fall through to the static library */ }
   // Not in the DB (or DB down): serve from the static essay library.
@@ -3075,7 +3082,7 @@ async function rssLiveWell(_req: VercelRequest, res: VercelResponse) {
           ORDER BY publishedAt DESC, updatedAt DESC
           LIMIT 50`
       );
-      return Array.isArray(posts) ? posts : [];
+      return Array.isArray(posts) ? posts.filter((p: any) => !PCN_MOVED.has(p?.slug)) : [];
     });
     const buildDate = new Date().toUTCString();
     const items = rows

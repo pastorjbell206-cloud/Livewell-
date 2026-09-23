@@ -42,6 +42,19 @@ each library was presented, and reusable directly if PCN runs a React front end.
   `SermonSeries.tsx` — the pastor-facing landing pages.
 - `pages/tools/PastorBurnout.tsx`, `SermonOutline.tsx` — the two pastor-facing instruments.
 
+### `essays/` — the 93 essays, exported (September 2026)
+
+`scripts/export-pcn-essays.mjs` wrote one Markdown file per essay here, with
+front matter (title, slug, date, pillar, deck, the PCN canonical URL, the old
+LiveWell URL, the body format and word count), plus `manifest.json`. Bodies come
+from the static library; the two the code did not hold are named in the manifest
+as needing a database export. The same run wrote `content/pcn-moved.json`, which
+the site's builders and API read to stop carrying these essays, and added a
+permanent redirect for each old `/writing/<slug>` URL to
+`https://pastorsconnectionnetwork.com/writing/<slug>` in `vercel.json`. The
+redirects resolve once PCN publishes the essays at those slugs; the base URL is
+one constant in the script if PCN's URL shape differs.
+
 ### `pastor-essays-in-database.md` — the 93 that are not in this folder
 
 The pastor-trade **essays** live in the site's database rather than in code, so a file move

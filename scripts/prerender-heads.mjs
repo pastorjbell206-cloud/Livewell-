@@ -504,6 +504,9 @@ function bookSchema(book, url, image) {
 // description in everyday words per essay and, when the title is a question,
 // the question with the essay's own answer. Missing file = no layer, no crash.
 const SEO_LAYER = readJsonSafe("content/seo-layer.generated.json") || {};
+// The pastor-trade essays moved to PCN: no per-route HTML, since the URL
+// redirects there (vercel.json) and the sitemap no longer lists it.
+const PCN_MOVED = new Set((readJsonSafe("content/pcn-moved.json") || {}).slugs || []);
 
 function qaSchema(qa) {
   return {
@@ -1059,6 +1062,7 @@ async function main() {
       );
       const posts = dbPosts.map(preferFullBody);
       for (const post of posts) {
+        if (PCN_MOVED.has(post.slug)) continue;
         const url = `${SITE_URL}/writing/${post.slug}`;
         // Use the essay's own cover when present; otherwise render a per-essay
         // branded card from its title (+ pillar) via the dynamic OG endpoint.
@@ -1162,7 +1166,7 @@ async function main() {
     let staticWrote = 0;
     for (const rec of staticLib) {
       if (!rec || !rec.slug || rec.published === false) continue;
-      if (writtenEssaySlugs.has(rec.slug)) continue;
+      if (writtenEssaySlugs.has(rec.slug) || PCN_MOVED.has(rec.slug)) continue;
       const url = `${SITE_URL}/writing/${rec.slug}`;
       const image = rec.coverImage || ogImageUrl(rec.title, rec.pillar || undefined);
       const seo = SEO_LAYER[rec.slug];
