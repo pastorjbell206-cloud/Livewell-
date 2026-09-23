@@ -107,4 +107,9 @@ The most famous argument against miracles is David Hume's, in section 10 of An E
 
 ## Decision
 
-Waiting on James.
+**23 September 2026: the three proposals accepted as written**, first-person
+sentences confirmed; numbers 47 and 50 left as they are. Applied through
+`content/voice-edits-library.json` and the applier to the library, the server
+copy, the root-level `api/*.json` sources and the seed files; public essays and
+the SEO layer rebuilt. The "current opening" above each proposal is now the old
+text, kept for the record.

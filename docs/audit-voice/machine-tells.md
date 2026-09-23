@@ -7,7 +7,7 @@ A banned word is the easiest tell to remove and the least important. These are t
 | Measure | Value |
 |---|---|
 | Essays measured | 678 |
-| Words | 1,364,288 |
+| Words | 1,364,380 |
 | Banned words in the banned sense | 0 in 0 essays |
 | Mean sentence length (words) | 17.8 |
 | Share of sentences at 30+ words | 17.8% |
