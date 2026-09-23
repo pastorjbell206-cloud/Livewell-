@@ -142,4 +142,8 @@ The first step toward trusting the Bible is to stop expecting it to be something
 
 ## Decision
 
-Waiting on James.
+**23 September 2026: all five accepted as written**, first-person sentences
+confirmed. Applied through `content/voice-edits-library.json` and the applier
+to the library, the server copy, the root-level `api/*.json` sources and the
+seed files; public essays and the SEO layer rebuilt. The "current opening"
+above each proposal is now the old text, kept for the record.
