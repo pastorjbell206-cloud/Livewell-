@@ -3,6 +3,52 @@
 Newest first. One entry per working session: what changed, what broke, what
 is next. Decisions made without asking are recorded with their reason.
 
+## 2026-09-23 — Elite Site Prompt, Phase A: the Library
+
+**Changed.** One catalogue of everything on the site,
+`scripts/build-catalogue.mjs`, rebuilt on every build. On deploy it reads the
+essays from the database, the same way the sitemap does. It covers 20 kinds:
+essays, books, the free booklets, study guides, answers, wisdom topics,
+how-tos, life domains, context guides, doctrines, church history, creeds,
+justice, the church and power, nation, pathways, care plans, group guides,
+arguments, and the family resources. `/explore` became the Library. It has one
+search across all of it, including Scripture references and corrections for a
+misspelled word. Its filters are kind, subject, length, and "only things I can
+download," every view is a shareable URL, and each result has its downloads
+inline. `/downloads` now reads the same catalogue and gains the ten free
+booklets and a books shelf. Search links into the Library. The Read menu leads
+with "The Library: everything." `/downloads` joined the sitemap. The booklet
+list moved into `client/src/data/booklets.ts` so the page and the catalogue
+share it. New wording is staged in `content/site-copy.md` for approval.
+
+**Decided.** The Library lives at `/explore`, not `/library`. `/library` is The
+Commonplace, an indexed page, and the prompt's own rule forbids changing an
+address. `/explore` was already the "everything" page, so no address changed.
+The reading-path PDFs stay off the open shelf because they are email-gated.
+The paid ebooks are listed as books, never as files.
+
+**Found.** The nine paid ebooks (the three shelf books, the five unshelved
+book pages, and Raising Believers) sit as public files under `/ebook/<slug>/`.
+Anyone with the address can download them without paying. That is a money
+path for James to rule on. The fix is to move them behind the paid-session
+download the 23 other ebooks already use.
+
+**Verified.** Typecheck clean. 323 tests pass, 10 of them new. Every CI
+validator passes, including the new `validate-catalogue`, which checks that
+every item resolves to a real route and every file exists or is built by the
+deploy. Lint shows 0 errors. The build and prerender are clean. Axe finds no
+serious violations on `/explore` or `/downloads` at 1440 or 390 wide.
+Screenshots were checked at both widths.
+
+**Not done in Phase A.** A4, the "More on this" block on every item page drawn
+from the catalogue, is not built. The site search's own library results still
+cover six libraries; it now links to the Library for the rest. Church-history
+figures, councils, and heresies link to the history page rather than each
+entry. The podcast and Substack feeds belong to Phase B.
+
+**Next.** Gate A: James searches for five things he knows he wrote and
+downloads one PDF on his phone. Then Phase B, "Everywhere James is."
+
 ## 2026-09-22 — Foundation Prompt, Phase 0: the branch inventory
 
 **Changed.** `docs/FOUNDATION-PROMPT.md` written (the plan a firm would run:

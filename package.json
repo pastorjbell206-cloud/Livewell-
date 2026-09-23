@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "NODE_ENV=development tsx watch server/_core/index.ts",
-    "build": "vite build && esbuild server/_core/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist",
+    "build": "tsx scripts/build-catalogue.mjs && vite build && esbuild server/_core/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist",
     "build:vercel": "rm -rf node_modules/.vite .vite dist && pnpm run pdfs && pnpm run og && pnpm run howtos && pnpm run wisdom && pnpm run sitemap && pnpm run publish:articles && pnpm run llms:full && pnpm run build && pnpm run prerender",
     "start": "NODE_ENV=production node dist/index.js",
     "check": "tsc --noEmit",
@@ -40,7 +40,8 @@
     "validate:integrity": "node scripts/validate-content-integrity.mjs",
     "validate:links": "node scripts/validate-links.mjs",
     "llms:full": "node scripts/build-llms-full.mjs",
-    "theology-index": "node scripts/build-theology-index.mjs"
+    "theology-index": "node scripts/build-theology-index.mjs",
+    "catalogue": "tsx scripts/build-catalogue.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
