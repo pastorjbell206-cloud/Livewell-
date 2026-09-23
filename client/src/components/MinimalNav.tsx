@@ -657,25 +657,6 @@ export default function MinimalNav() {
               >
                 Subscribe
               </Link>
-              <Link
-                href="/membership"
-                onClick={() => setMobileOpen(false)}
-                style={{
-                  flex: 1,
-                  textDecoration: "none",
-                  textAlign: "center",
-                  background: "transparent",
-                  color: "var(--ink)",
-                  border: "1px solid var(--ink)",
-                  padding: "13px 24px",
-                  fontFamily: "var(--U)",
-                  fontSize: "14px",
-                  fontWeight: 600,
-                  borderRadius: "var(--radius-sm)",
-                }}
-              >
-                Membership
-              </Link>
             </div>
           </div>
         )}

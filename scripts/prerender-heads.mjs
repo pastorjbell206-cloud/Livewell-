@@ -117,12 +117,6 @@ const STATIC_PAGES = [
     type: "website",
   },
   {
-    path: "/membership",
-    title: "Membership — LiveWell by James Bell",
-    description: "Full access to the essays, member-only writing, curated reading paths, and the deeper room where theology meets the weight of real life.",
-    type: "website",
-  },
-  {
     path: "/justice",
     title: "Prophetic Justice — Where the church went silent",
     description: "Mishpat and tsedaqah — justice and right relationship — sit near the heart of God. The poor at the gate, the worker and the wage, the vulnerable, refusing capture by either political tribe.",

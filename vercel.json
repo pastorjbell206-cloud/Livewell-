@@ -1183,6 +1183,16 @@
             "source": "/writing/why-pastors-are-leaving-ministry",
             "destination": "https://pastorsconnectionnetwork.com/writing/why-pastors-are-leaving-ministry",
             "permanent": true
+        },
+        {
+            "source": "/membership",
+            "destination": "/subscribe",
+            "permanent": true
+        },
+        {
+            "source": "/membership/success",
+            "destination": "/subscribe",
+            "permanent": true
         }
     ],
     "rewrites": [

@@ -83,7 +83,6 @@ const STATIC_PAGES = [
   { url: "/writing?track=finances", priority: "0.7", changefreq: "weekly" },
   { url: "/tools", priority: "0.6", changefreq: "monthly" },
   { url: "/work-with-james", priority: "0.6", changefreq: "monthly" },
-  { url: "/membership", priority: "0.7", changefreq: "monthly" },
   { url: "/resources", priority: "0.7", changefreq: "monthly" },
   // Five-pillar listing pages (current nav taxonomy) + Study Guides.
   { url: "/writing?pillar=theological-depth", priority: "0.85", changefreq: "weekly" },

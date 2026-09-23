@@ -98,8 +98,6 @@ const CaptureByTheRight = lazy(() => import("./pages/pillars/CaptureByTheRight")
 const CaptureByTheLeft = lazy(() => import("./pages/pillars/CaptureByTheLeft"));
 const ReadingScripturePastOurPolitics = lazy(() => import("./pages/pillars/ReadingScripturePastOurPolitics"));
 const ThePastoralAngle = lazy(() => import("./pages/pillars/ThePastoralAngle"));
-const Membership = lazy(() => import("./pages/Membership"));
-const MembershipSuccess = lazy(() => import("./pages/MembershipSuccess"));
 const Wisdom = lazy(() => import("./pages/Wisdom"));
 const WisdomTopic = lazy(() => import("./pages/WisdomTopic"));
 const HowTos = lazy(() => import("./pages/HowTos"));
@@ -476,8 +474,6 @@ function Router() {
         <Route path="/reading-scripture-past-our-politics" component={ReadingScripturePastOurPolitics} />
         <Route path="/the-pastoral-angle" component={ThePastoralAngle} />
         <Route path="/for-pastors" component={PastorsMovedRedirect} />
-        <Route path="/membership" component={Membership} />
-        <Route path="/membership/success" component={MembershipSuccess} />
         <Route path="/wisdom" component={Wisdom} />
         <Route path="/wisdom/:id" component={WisdomTopic} />
         <Route path="/how-tos" component={HowTos} />
