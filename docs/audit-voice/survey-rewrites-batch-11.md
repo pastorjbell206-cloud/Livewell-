@@ -151,4 +151,10 @@ The most common version runs downhill, from parents to adult children. The paren
 
 ## Decision
 
-Waiting on James.
+**23 September 2026: all five accepted as written**, first-person sentences
+confirmed; number 52 left as it is. Applied through
+`content/voice-edits-library.json` and the applier to the library, the server
+copy, the root-level `api/*.json` sources and the seed files; public essays and
+the SEO layer rebuilt. The "current opening" above each proposal is now the old
+text, kept for the record. This was the last batch: all fifty-nine survey
+essays have been reviewed; forty-eight rewritten, eleven left as they were.

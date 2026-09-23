@@ -12,7 +12,7 @@ Search engines and answer engines see a second layer beside every essay: a meta 
 | Essays with question-and-answer data | 92 |
 | Average reading grade, descriptions | 7.8 |
 | Average reading grade, original standfirsts | 9.6 |
-| Derived descriptions at grade 12 or above (hand-rewrite queue) | 88 |
+| Derived descriptions at grade 12 or above (hand-rewrite queue) | 87 |
 
 ## Hand-rewrite queue
 
@@ -42,7 +42,6 @@ Derived descriptions that still read at college level. Each is true to the essay
 | 34-what-a-healthy-pastor-referral-network-actually-looks-like | 15 | Every pastor makes referrals, to counselors, to other ministries, to specialists in areas outside their competence. |
 | 42-the-unreached-people-groups-closest-to-you-that-youve-never-considered | 15 | When the church talks about unreached people groups, the conversation almost always faces outward and away, toward the ethnic and linguistic communities. |
 | complicity-not-innocence | 15 | The comfortable Christian position in a culture with genuine injustice is neither endorsement nor active resistance. |
-| prosperity-gospel-is-not-the-gospel | 15 | In 2011, Senator Chuck Grassley concluded a three-year Senate Finance Committee inquiry, opened in 2007, into the finances of six prominent televangelists. |
 | 3-treating-sunday-as-the-only-metric | 14.9 | It is easy, especially in a culture that quantifies everything, to measure the health of your ministry by Sunday attendance and sermon reception. |
 | guide-to-every-major-denomination | 14.7 | The existence of denominations embarrasses many Christians and trips up many outsiders. |
 | why-people-fled-to-the-desert | 14.6 | When Christianity stopped being dangerous and became respectable, thousands of people walked out into the Egyptian desert to live alone. |
