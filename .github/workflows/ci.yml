@@ -109,6 +109,22 @@ jobs:
             if (node) console.log('  lcp element:', node.selector, '|', String(node.nodeLabel || '').slice(0, 90));
             if (table) for (const row of table.items) console.log('    ' + row.label + ': ' + Math.round(row.duration) + ' ms');
           "
+      - name: Lighthouse (writing hub, one run, printed)
+        # The hub is the second door; its number and its transfer are printed
+        # so a regression there is read, not guessed at. Not asserted.
+        run: |
+          npx --yes lighthouse http://localhost:4173/writing \
+            --chrome-flags="--headless --no-sandbox" \
+            --only-categories=performance \
+            --output=json --output-path=./lh-writing.json --quiet
+          node -e "
+            const r = require('./lh-writing.json'); const a = r.audits;
+            const items = a['network-requests'].details.items;
+            const kb = (xs) => Math.round(xs.reduce((s, x) => s + (x.transferSize || 0), 0) / 1024);
+            console.log('writing hub: performance', Math.round(r.categories.performance.score * 100));
+            for (const k of ['first-contentful-paint','largest-contentful-paint','total-blocking-time','cumulative-layout-shift']) console.log('  ' + k, a[k] && a[k].displayValue);
+            console.log('  requests', items.length, '| transfer', kb(items), 'KB | json', kb(items.filter(x => /\\.json/.test(x.url))), 'KB | scripts', kb(items.filter(x => x.resourceType === 'Script')), 'KB');
+          "
       - name: Lighthouse thresholds (docs/WORLD-CLASS-SITE-PROMPT.md — asserted, not printed)
         run: |
           node -e "

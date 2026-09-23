@@ -21,7 +21,7 @@ describe("public essay files", () => {
     const { written, indexed, skipped } = build(records, out);
     const files = readdirSync(out);
     expect(written).toBe(indexed);
-    expect(files.length).toBe(written + 3); // + index.json + featured.json + canon.json
+    expect(files.length).toBe(written + 4); // + index.json + index-lite.json + featured.json + canon.json
     expect(written).toBeGreaterThan(600);
     expect(skipped).toEqual([]);
 

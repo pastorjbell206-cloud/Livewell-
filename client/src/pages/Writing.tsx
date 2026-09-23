@@ -74,22 +74,26 @@ function parseSearchParams(): URLSearchParams {
 
 export default function Writing() {
   const [location] = useLocation();
-  const postsQuery = trpc.posts.listPublished.useQuery();
-  type ListedPost = NonNullable<typeof postsQuery.data>[number];
-  // Static first: /essays/index.json (built by scripts/build-public-essays.mjs)
-  // paints the library instantly from the CDN; the API list, which also carries
-  // database-only essays, replaces it when it arrives. A failed API call with the
-  // static index already on screen is not an error the reader needs to see.
-  const [staticIndex, setStaticIndex] = useState<ListedPost[] | null>(null);
+  // Static only: /essays/index-lite.json (built by scripts/build-public-essays.mjs)
+  // carries what the cards and every filter need and paints the library from
+  // the CDN. The hub used to download the full 500 KB index and then call the
+  // API for the same list again on every visit; the API is now called only
+  // when the built file is missing (dev without the build step). An essay
+  // published from the admin joins the hub at the next deploy; its own URL
+  // works at once.
+  const [staticIndex, setStaticIndex] = useState<Record<string, unknown>[] | "miss" | null>(null);
   useEffect(() => {
     let stale = false;
-    fetchJson<unknown[]>("/essays/index.json", (x): x is unknown[] => Array.isArray(x))
-      .then(rows => { if (!stale) setStaticIndex(rows.filter(isIndexRow).map(withListDates) as unknown as ListedPost[]); })
-      .catch(() => { /* no static index (dev without the build step) — the API list carries the page */ });
+    fetchJson<unknown[]>("/essays/index-lite.json", (x): x is unknown[] => Array.isArray(x))
+      .then(rows => { if (!stale) setStaticIndex(rows.filter(isIndexRow).map(withListDates)); })
+      .catch(() => { if (!stale) setStaticIndex("miss"); });
     return () => { stale = true; };
   }, []);
-  const listLoading = postsQuery.isLoading && !staticIndex;
-  const listFailed = postsQuery.isError && !staticIndex;
+  const postsQuery = trpc.posts.listPublished.useQuery(undefined, { enabled: staticIndex === "miss" });
+  type ListedPost = NonNullable<typeof postsQuery.data>[number];
+  const staticRows = staticIndex && staticIndex !== "miss" ? (staticIndex as unknown as ListedPost[]) : null;
+  const listLoading = staticIndex === null || (staticIndex === "miss" && postsQuery.isLoading);
+  const listFailed = staticIndex === "miss" && postsQuery.isError;
   const [search, setSearch] = useState("");
   const [showFilters, setShowFilters] = useState(false);
   // Windowed render: hundreds of cards at once is a scroll of soup and a real
@@ -123,7 +127,7 @@ export default function Writing() {
   const subLabel = activeSub ? SUBPATHWAY_LABEL_BY_SLUG[activeSub] ?? null : null;
   const newHeading = activeSeries ? STUDY_GUIDES_LABEL : subLabel ?? newPillarName;
 
-  const posts: ListedPost[] = postsQuery.data ?? staticIndex ?? [];
+  const posts: ListedPost[] = staticRows ?? postsQuery.data ?? [];
 
   const filtered = useMemo(() => {
     return posts.filter(p => {

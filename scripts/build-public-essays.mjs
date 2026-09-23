@@ -55,6 +55,31 @@ export function indexRecord(r) {
   return rest;
 }
 
+/**
+ * The light index record: what the writing hub needs to paint and filter its
+ * cards, and nothing else. The full index (metaDescription, the question and
+ * answer, every date) is what search reads on a query; the hub used to
+ * download all of it to draw its first screen. The excerpt is cut at what the
+ * card shows (140 characters) plus one, so the card's own "longer than 140"
+ * ellipsis still fires.
+ */
+export function liteRecord(r) {
+  const excerpt = typeof r.excerpt === "string" ? r.excerpt : "";
+  const out = {
+    id: r.id, slug: r.slug, title: r.title,
+    excerpt: excerpt.length > 140 ? excerpt.slice(0, 141) : excerpt,
+    pillar: r.pillar ?? null, publishedAt: r.publishedAt ?? null,
+  };
+  // Optional fields travel only when set: in a 587-row file the repeated keys
+  // of null fields weigh more than the values.
+  for (const k of ["readTime", "readingTimeMinutes", "format", "audience", "topic", "subPathway", "coverImage"]) {
+    if (r[k] !== undefined && r[k] !== null && r[k] !== "") out[k] = r[k];
+  }
+  if (r.featured) out.featured = true;
+  if (r.isSeries) out.isSeries = true;
+  return out;
+}
+
 /** Slugs are used as file names; refuse anything that could escape the directory. */
 export function safeSlug(slug) {
   return typeof slug === "string" && /^[a-z0-9][a-z0-9-]{0,200}$/.test(slug);
@@ -74,6 +99,8 @@ export function build(records, outDir = OUT, layer = {}, featuredSlugs = [], can
     written++;
   }
   writeFileSync(path.join(outDir, "index.json"), JSON.stringify(index));
+  const lite = JSON.stringify(index.map(liteRecord));
+  writeFileSync(path.join(outDir, "index-lite.json"), lite);
   // The front page's few cards, so it never downloads the whole index (555 KB)
   // to draw them: the curated essays, then the newest one not among them.
   const bySlug = new Map(index.map(r => [r.slug, r]));
@@ -87,7 +114,7 @@ export function build(records, outDir = OUT, layer = {}, featuredSlugs = [], can
   // The canon: the twelve essays to read first, in order, for /canon.
   const canon = canonSlugs.map(s => bySlug.get(s)).filter(Boolean);
   writeFileSync(path.join(outDir, "canon.json"), JSON.stringify(canon));
-  return { written, indexed: index.length, featured: featured.length, canon: canon.length, skipped };
+  return { written, indexed: index.length, featured: featured.length, canon: canon.length, skipped, liteBytes: Buffer.byteLength(lite) };
 }
 
 const isMain = process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url);
@@ -100,7 +127,7 @@ if (isMain) {
   const layer = existsSync(SEO) ? JSON.parse(readFileSync(SEO, "utf8")) : {};
   const featuredSlugs = existsSync(FEATURED) ? JSON.parse(readFileSync(FEATURED, "utf8")).flagship ?? [] : [];
   const canonSlugs = existsSync(CANON) ? JSON.parse(readFileSync(CANON, "utf8")).slugs ?? [] : [];
-  const { written, indexed, featured, canon, skipped } = build(records, OUT, layer, featuredSlugs, canonSlugs);
-  console.log(`[essays] wrote ${written} essay files + index.json (${indexed}) + featured.json (${featured}) + canon.json (${canon}) to client/public/essays/`);
+  const { written, indexed, featured, canon, skipped, liteBytes } = build(records, OUT, layer, featuredSlugs, canonSlugs);
+  console.log(`[essays] wrote ${written} essay files + index.json (${indexed}) + index-lite.json (${Math.round(liteBytes / 1024)} KB) + featured.json (${featured}) + canon.json (${canon}) to client/public/essays/`);
   if (skipped.length) console.log(`[essays] skipped ${skipped.length}: ${skipped.slice(0, 5).join(", ")}${skipped.length > 5 ? "…" : ""}`);
 }
