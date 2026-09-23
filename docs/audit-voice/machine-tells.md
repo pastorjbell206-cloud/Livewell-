@@ -7,7 +7,7 @@ A banned word is the easiest tell to remove and the least important. These are t
 | Measure | Value |
 |---|---|
 | Essays measured | 678 |
-| Words | 1,364,203 |
+| Words | 1,364,288 |
 | Banned words in the banned sense | 0 in 0 essays |
 | Mean sentence length (words) | 17.8 |
 | Share of sentences at 30+ words | 17.8% |
@@ -66,9 +66,9 @@ Ranked by the composite. Read the top of this list aloud first.
 | 35 | the-death-of-christendom | 22.5 | 16.5 | 11.4% | 3.6 | 0.3 | yes | yes |
 | 36 | megachurch-model | 22.3 | 17 | 15.9% | 2.7 | 0.5 | yes | yes |
 | 37 | how-american-christianity-became-american | 22.2 | 23.1 | 27.5% | 1.6 | 0 | yes | yes |
-| 38 | sexual-abuse-crisis-in-the-church | 21.8 | 13.8 | 5.8% | 2.1 | 2.1 | yes | yes |
-| 39 | interfaith-marriage | 21.7 | 18.9 | 18.2% | 2 | 0.8 | yes | yes |
-| 40 | church-and-mental-health | 21.7 | 16.6 | 13% | 2 | 1.5 | yes | yes |
+| 38 | what-christians-can-learn-from-indigenous-spirituality | 22.2 | 19 | 19.2% | 1.6 | 1.1 | yes | yes |
+| 39 | interfaith-marriage | 21.8 | 19.1 | 18.5% | 2 | 0.8 | yes | yes |
+| 40 | imago-dei-means-more | 21.6 | 18.6 | 22.5% | 0 | 4.2 | yes |  |
 
 ## Longest-winded, by share of sentences at thirty words or more
 
