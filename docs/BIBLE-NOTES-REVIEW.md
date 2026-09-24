@@ -234,3 +234,26 @@ Deuteronomy 34: Genesis 50:13 added for Jacob's burial.
 - Deuteronomy 27: Zertal dated the Ebal structure to the late thirteenth
   and twelfth centuries BC.
 - Deuteronomy 33: Laish (Dan) lies beside Bashan rather than in it.
+
+## Joshua introduction and chapters 1–24
+
+**Corrected.** Introduction: Paul quotes Deuteronomy 21:22-23, which Joshua
+8:29 carries out. Joshua 3: the place of Jesus' baptism is uncertain.
+Joshua 5: priests serving barefoot is later tradition. Joshua 6, 10: the hard
+questions on the ban now give all the main Christian responses (judgment,
+hyperbole, reading in the light of Christ, Origen's spiritual reading, and
+the Torah's more frequent language of driving out). Joshua 8, 11: the
+killings at Ai and "not sparing anyone who breathed" now have the main
+responses too. Joshua 9: Hebrews 6:17-18 stated correctly. Joshua 10: six
+cities, not seven; the Septuagint lacks verses 15 and 43. Joshua 13: 1 Peter
+2:9 read the right way round. Joshua 15: Othniel took Debir; the Septuagint's
+extra towns include Bethlehem. Joshua 16: forced labor as a heavy yoke (1
+Kings 12:4). Joshua 17, 22: the hard questions no longer settle what is open.
+Joshua 18, 21, 23: overstatements and a wrong generation reference fixed.
+
+**To double-check.**
+- Joshua 19: the Tel Dan fragments (1993, 1994).
+- Joshua 17: the Samaria ostraca's clan names.
+- Joshua 11: the early-date view of Hazor's destruction levels.
+- Joshua 12: Egyptian conquest lists showing names in bound-captive ovals.
+- Joshua 13: the Deir Alla inscription (about 840–760 BC).
