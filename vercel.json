@@ -1505,6 +1505,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/flags-in-the-sanctuary",
+            "destination": "/writing/the-flag-in-the-sanctuary",
+            "permanent": true
+        },
+        {
             "source": "/writing/forgiveness-without-pretending",
             "destination": "/writing/forgiveness-in-marriage",
             "permanent": true
@@ -1512,6 +1517,11 @@
         {
             "source": "/writing/how-to-raise-children-in-the-faith",
             "destination": "/writing/how-to-talk-kids-faith-doubt",
+            "permanent": true
+        },
+        {
+            "source": "/writing/loving-versus-worshiping-your-country",
+            "destination": "/writing/the-flag-in-the-sanctuary",
             "permanent": true
         },
         {
@@ -1570,6 +1580,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/prosperity-gospel-injustice",
+            "destination": "/writing/prosperity-gospel-is-not-the-gospel",
+            "permanent": true
+        },
+        {
             "source": "/writing/protecting-marriage-in-ministry",
             "destination": "/writing/protecting-your-marriage-from-work",
             "permanent": true
@@ -1587,6 +1602,11 @@
         {
             "source": "/writing/slow-drift-marriage",
             "destination": "/writing/the-slow-drift-that-ends-marriages",
+            "permanent": true
+        },
+        {
+            "source": "/writing/spiritual-abuse-how-good-theology-gets-weaponized",
+            "destination": "/writing/religious-trauma-is-real",
             "permanent": true
         },
         {

@@ -86,13 +86,13 @@
   "excerptGrade": 3.9
  },
  "the-flag-in-the-sanctuary": {
-  "metaDescription": "The flag standing beside the cross did not arrive by accident, and it did not arrive in the New Testament.",
-  "source": "derived",
-  "grade": 8.7,
-  "excerptGrade": 10,
+  "metaDescription": "How the American flag came into church sanctuaries, what civil religion is, and how Scripture separates loving your country from worshiping it.",
+  "source": "rewrite",
+  "grade": 13.9,
+  "excerptGrade": 8.5,
   "qa": {
-   "question": "Why Is There a Flag in the Sanctuary?",
-   "answer": "The flag standing beside the cross did not arrive by accident, and it did not arrive in the New Testament. A pastor traces how American civil religion fused God and nation, and why the seam should worry the people who love both."
+   "question": "Should Churches Have an American Flag in the Sanctuary?",
+   "answer": "The flag beside the pulpit arrived through war and grief, not through a vote or a theology. Loving your country is a Christian virtue; the question is whether the sanctuary still teaches which loyalty is final."
   }
  },
  "the-persecution-we-invented": {
@@ -2677,12 +2677,6 @@
   "grade": 3.3,
   "excerptGrade": 2.8
  },
- "prosperity-gospel-injustice": {
-  "metaDescription": "These are real errors. They are not the most serious ones. The most serious error of the prosperity gospel is not that it misunderstands God.",
-  "source": "derived",
-  "grade": 5.1,
-  "excerptGrade": 16.4
- },
  "protecting-marriage-ministry-demands": {
   "metaDescription": "There is a theology buried in the way most pastors manage their time, and it is not the theology they would preach.",
   "source": "derived",
@@ -3290,18 +3284,6 @@
   "source": "hand",
   "grade": 6.3,
   "excerptGrade": 11.3
- },
- "loving-versus-worshiping-your-country": {
-  "metaDescription": "Love can be corrected, and worship cannot, and that single difference is the whole line between honoring your country and serving it as a god.",
-  "source": "derived",
-  "grade": 12.1,
-  "excerptGrade": 12.1
- },
- "flags-in-the-sanctuary": {
-  "metaDescription": "The flag stands on most American platforms because nobody put it there on purpose, and that is precisely the problem.",
-  "source": "derived",
-  "grade": 11.1,
-  "excerptGrade": 11.1
  },
  "how-the-religious-right-was-built": {
   "metaDescription": "A fair history of the religious right, from Scopes and Billy Graham to Bob Jones, Roe and the Moral Majority, and the mainline's parallel political turn.",
@@ -4034,22 +4016,20 @@
   "excerptGrade": 8
  },
  "prosperity-gospel-is-not-the-gospel": {
-  "metaDescription": "The inquiry produced no legislation. By any serious theological standard it is also a heresy.",
-  "source": "derived",
-  "grade": 11.7,
-  "excerptGrade": 15.6
+  "metaDescription": "What the prosperity gospel teaches, where it came from, why it draws the poor, and how Job, Paul, Hebrews 11 and the Beatitudes answer it from Scripture.",
+  "source": "rewrite",
+  "grade": 11.1,
+  "excerptGrade": 8.5,
+  "qa": {
+   "question": "What Is the Prosperity Gospel, and Is It Biblical?",
+   "answer": "The prosperity gospel promises health and wealth as the return on faith and giving. It is right that God cares about bodies and bread, wrong about how he gives, and the poor it courts pay the highest price for the error."
+  }
  },
  "religious-trauma-is-real": {
-  "metaDescription": "For millions of people, the most damaging experiences of their lives happened in the name of God.",
-  "source": "derived",
-  "grade": 9.8,
-  "excerptGrade": 10.2
- },
- "spiritual-abuse-how-good-theology-gets-weaponized": {
-  "metaDescription": "Spiritual abuse does not require bad theology. The church's vulnerability to this dynamic is a structural problem, not merely a personnel one.",
-  "source": "derived",
-  "grade": 11.2,
-  "excerptGrade": 12.5
+  "metaDescription": "What religious trauma and spiritual abuse are, where the terms came from, how hard truth differs from abuse, and what Scripture says to shepherds who harm.",
+  "source": "rewrite",
+  "grade": 10.9,
+  "excerptGrade": 12.6
  },
  "why-young-adults-arent-coming-back": {
   "metaDescription": "The church has spent two decades trying to make itself more appealing to young adults.",
