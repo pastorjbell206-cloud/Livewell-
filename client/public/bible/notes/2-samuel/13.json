@@ -3,29 +3,71 @@
   "summary": "David's eldest son Amnon becomes obsessed with his half-sister Tamar, and with the help of his cousin Jonadab's scheme he lures her into his room and rapes her, then throws her out in hatred. David is furious but does nothing. Two years later Tamar's full brother Absalom has Amnon murdered at a sheepshearing feast and flees to his grandfather, the king of Geshur, where he stays three years.",
   "story": "Nathan had warned that the sword would never depart from David's house and that evil would rise against him from within it (12:10-11). This chapter is the first fulfillment. The sins that marked David's taking of Bathsheba, desire acted on through deception and power, followed by killing, now appear in his sons. The chapter also launches the Absalom story that runs through chapter 19. Absalom's hatred, David's passivity, and the exile that follows lead directly to the rebellion that will drive David from Jerusalem. Readers should notice how often David is told things and how rarely he acts.",
   "historical": "David had several wives and sons by them (3:2-5). Amnon was his firstborn, by Ahinoam of Jezreel, and so the natural heir. Absalom was the third son, by Maacah, the daughter of Talmai king of Geshur, a small Aramean kingdom east of the Sea of Galilee. Tamar was Absalom's full sister and Amnon's half-sister. With Amnon dead (and the second son, Chileab, never mentioned after 3:3), Absalom becomes the likely heir, which gives his revenge a political edge as well as a personal one.\n\nThe ancient Greek translation, and a fragment of Samuel among the Dead Sea Scrolls, add a line to verse 21 saying that David would not punish Amnon because he loved him as his firstborn. Many scholars think this reflects an original reading lost from the traditional Hebrew text; others see it as an early explanation. Either way, the chapter's point is the same: the king was angry and did nothing.",
-  "cultural": "The law of Moses forbade sexual relations between a man and his half-sister (Leviticus 18:9, 11; 20:17). Tamar's plea in verse 13 that the king \"will not withhold me from you\" may reflect older custom (Abraham married his half-sister, Genesis 20:12) or simply her desperate attempt to escape. Her cry that \"such a thing should never be done in Israel\" echoes the language used of the rape of Dinah (Genesis 34:7) and of the crime at Gibeah (Judges 19-20). The law also required a man who violated an unbetrothed virgin to marry her and never divorce her (Deuteronomy 22:28-29), a protection for a woman's future in a society where she might otherwise be left without a household. That is why Tamar says that sending her away is worse than the first wrong (verse 16).\n\nTamar's robe marked her as a king's virgin daughter. The same rare Hebrew phrase describes Joseph's robe (Genesis 37:3), and in both stories the garment is part of a family's violent disintegration. Ashes on the head and torn clothing were signs of mourning and shame. Sheepshearing was a festival with feasting and wine (compare Nabal in 1 Samuel 25), and mules were royal mounts, which is why the king's sons flee on them.",
-  "literary": "The chapter is told with painful restraint. The narrator lets the characters' words show who they are: Jonadab's cunning, Amnon's commands, Tamar's reasoned and dignified pleading, Absalom's silence, and David's anger that goes nowhere. The words love and hate frame Amnon's crime: his so-called love turns in a moment into a hatred greater than the love (verse 15), exposing it as lust. The repeated word \"brother\" and \"sister\" (Tamar is called his sister again and again) keeps the family bond in view as it is violated. The chapter mirrors chapter 11: a king's son sees, desires, arranges, and takes, and then a brother arranges a killing at a feast where the victim's heart is merry with wine, just as David had made Uriah drunk.",
+  "cultural": "The law of Moses forbade sexual relations between a man and his half-sister (Leviticus 18:9, 11; 20:17). Tamar's plea in verse 13 that the king “will not withhold me from you” may reflect older custom (Abraham married his half-sister, Genesis 20:12) or simply her desperate attempt to escape. Her cry that “such a thing should never be done in Israel” echoes the language used of the rape of Dinah (Genesis 34:7) and of the crime at Gibeah (Judges 19-20). The law also required a man who violated an unbetrothed virgin to marry her and never divorce her (Deuteronomy 22:28-29), a protection for a woman's future in a society where she might otherwise be left without a household. That is why Tamar says that sending her away is worse than the first wrong (verse 16).\n\nTamar's robe marked her as a king's virgin daughter. The same rare Hebrew phrase describes Joseph's robe (Genesis 37:3), and in both stories the garment is part of a family's violent disintegration. Ashes on the head and torn clothing were signs of mourning and shame. Sheepshearing was a festival with feasting and wine (compare Nabal in 1 Samuel 25), and mules were royal mounts, which is why the king's sons flee on them.",
+  "literary": "The chapter is told with painful restraint. The narrator lets the characters' words show who they are: Jonadab's cunning, Amnon's commands, Tamar's reasoned and dignified pleading, Absalom's silence, and David's anger that goes nowhere. The words love and hate frame Amnon's crime: his so-called love turns in a moment into a hatred greater than the love (verse 15), exposing it as lust. The repeated word “brother” and “sister” (Tamar is called his sister again and again) keeps the family bond in view as it is violated. The chapter mirrors chapter 11: a king's son sees, desires, arranges, and takes, and then a brother arranges a killing at a feast where the victim's heart is merry with wine, just as David had made Uriah drunk.",
   "outline": [
-    { "v": "1-5", "t": "Amnon's obsession and Jonadab's plan" },
-    { "v": "6-14", "t": "Amnon lures and rapes Tamar" },
-    { "v": "15-20", "t": "Tamar thrown out, and Absalom takes her in" },
-    { "v": "21-22", "t": "David's anger and Absalom's silent hatred" },
-    { "v": "23-29", "t": "Absalom kills Amnon at the sheepshearing" },
-    { "v": "30-36", "t": "A false report and the sons' return" },
-    { "v": "37-39", "t": "Absalom flees to Geshur, and David mourns and longs" }
+    {
+      "v": "1-5",
+      "t": "Amnon's obsession and Jonadab's plan"
+    },
+    {
+      "v": "6-14",
+      "t": "Amnon lures and rapes Tamar"
+    },
+    {
+      "v": "15-20",
+      "t": "Tamar thrown out, and Absalom takes her in"
+    },
+    {
+      "v": "21-22",
+      "t": "David's anger and Absalom's silent hatred"
+    },
+    {
+      "v": "23-29",
+      "t": "Absalom kills Amnon at the sheepshearing"
+    },
+    {
+      "v": "30-36",
+      "t": "A false report and the sons' return"
+    },
+    {
+      "v": "37-39",
+      "t": "Absalom flees to Geshur, and David mourns and longs"
+    }
   ],
   "doctrines": [
-    { "id": "sin", "note": "The chapter shows sin passing from one generation to the next. Amnon's lust, deceit, and cruelty echo his father's sin with Bathsheba, and Absalom's murder echoes David's killing of Uriah. Sin is not only individual; it shapes families." },
-    { "id": "family", "note": "A household with many wives, rival heirs, and an absent or passive father is shown collapsing. David's failure to act on Tamar's behalf leaves justice to Absalom's revenge. The chapter warns what happens when fathers are angry but do not protect." },
-    { "id": "judgment", "note": "Nathan's word in 12:10-11 begins to come true. God's judgment here works largely through the natural consequences of human choices, the sword David used returning to his own house." }
+    {
+      "id": "sin",
+      "note": "The chapter shows sin passing from one generation to the next. Amnon's lust, deceit, and cruelty echo his father's sin with Bathsheba, and Absalom's murder echoes David's killing of Uriah. Sin is not only individual; it shapes families."
+    },
+    {
+      "id": "family",
+      "note": "A household with many wives, rival heirs, and an absent or passive father is shown collapsing. David's failure to act on Tamar's behalf leaves justice to Absalom's revenge. The chapter warns what happens when fathers are angry but do not protect."
+    },
+    {
+      "id": "judgment",
+      "note": "Nathan's word in 12:10-11 begins to come true. God's judgment here works largely through the natural consequences of human choices, the sword David used returning to his own house."
+    }
   ],
   "words": [
-    { "s": "H6031B", "note": "Anah, to afflict, humble, or violate. Tamar pleads \"Do not humiliate me\" (verse 12), and the same verb describes what Amnon did (verses 14, 22, 32). It is the language of forced degradation, and the text names the act for what it is." },
-    { "s": "H5039", "note": "Nevalah, folly or outrageous disgrace. It is used for acts so shameful that they violate the moral fabric of the community, especially sexual crimes (Genesis 34:7; Judges 19:23-24). Tamar warns that Amnon would become like one of the fools (nabal) in Israel, a word that means a morally senseless person." },
-    { "s": "H8130", "note": "Sane, to hate. Amnon's hatred after the rape is greater than his love before it (verse 15), and Absalom hates Amnon for disgracing Tamar (verse 22). The chapter traces how hatred follows sin and breeds more sin." },
-    { "s": "H6446", "note": "Pas, the word behind Tamar's robe of many colors, possibly a long-sleeved or ornamented garment. It appears in this phrase only here and in the story of Joseph (Genesis 37:3, 23, 32). In both stories a favored child's robe becomes a sign of betrayal within the family." }
+    {
+      "s": "H6031B",
+      "note": "Anah, to afflict, humble, or violate. Tamar pleads “Do not humiliate me” (verse 12), and the same verb describes what Amnon did (verses 14, 22, 32). It is the language of forced degradation, and the text names the act for what it is."
+    },
+    {
+      "s": "H5039",
+      "note": "Nevalah, folly or outrageous disgrace. It is used for acts so shameful that they violate the moral fabric of the community, especially sexual crimes (Genesis 34:7; Judges 19:23-24). Tamar warns that Amnon would become like one of the fools (nabal) in Israel, a word that means a morally senseless person."
+    },
+    {
+      "s": "H8130",
+      "note": "Sane, to hate. Amnon's hatred after the rape is greater than his love before it (verse 15), and Absalom hates Amnon for disgracing Tamar (verse 22). The chapter traces how hatred follows sin and breeds more sin."
+    },
+    {
+      "s": "H6446",
+      "note": "Pas, the word behind Tamar's robe of many colors, possibly a long-sleeved or ornamented garment. It appears in this phrase only here and in the story of Joseph (Genesis 37:3, 23, 32). In both stories a favored child's robe becomes a sign of betrayal within the family."
+    }
   ],
-  "christ": "This chapter offers no direct prophecy of Christ, and it should not be allegorized. Its connection to the larger story is that it shows how deeply sin has entered even the royal line through which the Messiah would come. Tamar's cry that such a thing \"should never be done in Israel\" is the cry of a victim for justice that her father the king would not give. The New Testament presents Jesus as a king who defends the vulnerable, who treated women with dignity at a time when many did not, and who is the promised shoot of Jesse who will judge the poor with righteousness (Isaiah 11:1-4, a passage Christians have always read of him). The failure of David as father and king in this chapter sharpens the longing for a son of David who will not fail those who look to him for protection.",
+  "christ": "This chapter offers no direct prophecy of Christ, and it should not be allegorized. Its connection to the larger story is that it shows how deeply sin has entered even the royal line through which the Messiah would come. Tamar's cry that such a thing “should never be done in Israel” is the cry of a victim for justice that her father the king would not give. The New Testament presents Jesus as a king who defends the vulnerable, who treated women with dignity at a time when many did not, and who is the promised shoot of Jesse who will judge the poor with righteousness (Isaiah 11:1-4, a passage Christians have always read of him). The failure of David as father and king in this chapter sharpens the longing for a son of David who will not fail those who look to him for protection.",
   "hard": {
     "q": "Why does the Bible tell this story, and why does David do nothing?",
     "a": "The Bible does not hide sexual violence, even in the royal family, and it tells Tamar's story with sympathy for her and condemnation of Amnon. She is given the chapter's clearest moral voice. The text also exposes David's failure: he was furious but did not punish his son, protect his daughter, or bring the matter to justice. Interpreters offer several reasons. He may have favored his firstborn, as the Greek text says. He may have felt his own authority compromised by his sin with Bathsheba. He may simply have been a passive father. The narrator does not excuse him; the consequences of his inaction unfold through the rest of the book. For readers who have suffered abuse, the chapter's honesty matters. Scripture names the wrong, believes the victim, and shows the damage done when those in power fail to act. Anyone carrying that kind of harm deserves to be heard and helped, and should reach out to a trusted person, a pastor, or a counselor."
