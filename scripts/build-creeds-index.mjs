@@ -2,7 +2,7 @@
 /**
  * build-creeds-index.mjs
  *
- * Scans client/public/context/documents/*.json and writes
+ * Scans client/public/creeds/documents/*.json and writes
  * client/public/creeds/documents-index.json, the manifest the Reading Scripture
  * in Context library (/resources/context) loads. Run this after adding or
  * changing any context document JSON file.

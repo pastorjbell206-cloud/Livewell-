@@ -45,13 +45,13 @@
     },
     {
       "kind": "book",
-      "heading": "Then read the book — free, then buy",
+      "heading": "Then work it through",
       "note": "Read it cover to cover on the site before you ever buy it.",
       "items": [
         {
-          "label": "Essays on Prayer",
-          "href": "/read/essays-on-prayer",
-          "blurb": "A gathered volume for the reader rebuilding a prayer life from the ground up."
+          "label": "Prayer: a Bible study on learning to pray",
+          "href": "/studyguides/prayer",
+          "blurb": "A working study for the reader rebuilding a prayer life from the ground up."
         }
       ]
     }

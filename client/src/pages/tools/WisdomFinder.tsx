@@ -112,12 +112,14 @@ function topicForToday(topics: Topic[]): Topic | null {
   return topics[Math.abs(h) % topics.length];
 }
 
-/** Route a pull quote to its source work: essays under /writing, books under
- *  /read, study guides under /studyguides (same mapping as the Quote Library). */
-function quoteSourcePath(q: SocialQuote): string {
+/** Route a pull quote to its source work: essays under /writing, study
+ *  guides under /studyguides (same mapping as the Quote Library). Book quotes
+ *  return null — the free on-site library was retired with the shelf
+ *  reduction, so the source is named without a link. */
+function quoteSourcePath(q: SocialQuote): string | null {
   switch (q.sourceType) {
     case "book":
-      return `/read/${q.articleSlug}`;
+      return null;
     case "studyguide":
       return `/studyguides/${q.articleSlug}`;
     default:
@@ -292,9 +294,13 @@ function TopicPanel({
                 </blockquote>
                 <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: 0 }}>
                   — {q.author ?? "James Bell"},{" "}
-                  <Link href={quoteSourcePath(q)} style={{ color: "var(--ink)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "1px" }}>
+                  {quoteSourcePath(q) ? (
+                    <Link href={quoteSourcePath(q)!} style={{ color: "var(--ink)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "1px" }}>
                     {q.articleTitle}
                   </Link>
+                  ) : (
+                    <span style={{ color: "var(--ink)" }}>{q.articleTitle}</span>
+                  )}
                 </p>
               </div>
             ))}
@@ -430,7 +436,7 @@ export default function WisdomFinder() {
   }
 
   const loadingLine = (
-    <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "var(--ink-muted)" }}>Loading the wisdom library…</p>
+    <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "var(--ink-muted)" }} role="status">Loading the wisdom library…</p>
   );
   const loadFailedPanel = (
     <LoadFailed what="The wisdom library" onRetry={() => setNonce((n) => n + 1)} backHref="/tools" backLabel="Back to the tools" />

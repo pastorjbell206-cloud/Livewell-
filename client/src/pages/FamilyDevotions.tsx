@@ -118,7 +118,7 @@ export default function FamilyDevotions() {
       <section style={{ background: "var(--bone)", padding: "var(--s-4) var(--s-4) var(--s-7)" }}>
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto", display: "flex", flexDirection: "column", gap: "10px" }}>
           {list.length === 0 && (
-            <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }}>Loading…</p>
+            <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }} role="status">Loading…</p>
           )}
           {tab === "weekly" && weekly.map((d, i) => (
             <Accordion key={d.id} id={d.id} eyebrow={`Week ${i + 1} · ${d.theme}`} title={d.title}>

@@ -12,21 +12,21 @@ const QUESTIONS = [
     title: "What's weighing heaviest right now?",
     options: [
       { label: "Marriage", value: "marriage", color: "var(--gold)" },
-      { label: "Parenting", value: "parenting", color: "#9B8BA8" },
-      { label: "Faith & Doubt", value: "doubt", color: "#8B6B7F" },
-      { label: "Calling & Purpose", value: "calling", color: "#6B8E6F" },
-      { label: "Justice & Culture", value: "justice", color: "#8B4545" },
-      { label: "Pastoral Ministry", value: "pastoral", color: "#6B8E6F" }
+      { label: "Parenting", value: "parenting", color: "var(--accent-mauve)" },
+      { label: "Faith & Doubt", value: "doubt", color: "var(--accent-plum)" },
+      { label: "Calling & Purpose", value: "calling", color: "var(--accent-moss)" },
+      { label: "Justice & Culture", value: "justice", color: "var(--accent-oxide)" },
+      { label: "Pastoral Ministry", value: "pastoral", color: "var(--accent-moss)" }
     ]
   },
   {
     id: "situation",
     title: "How would you describe where you are?",
     options: [
-      { label: "In Crisis", value: "crisis", color: "#8B4545" },
-      { label: "Searching for Answers", value: "searching", color: "#6B8E6F" },
+      { label: "In Crisis", value: "crisis", color: "var(--accent-oxide)" },
+      { label: "Searching for Answers", value: "searching", color: "var(--accent-moss)" },
       { label: "Growing Deeper", value: "growing", color: "var(--ink)" },
-      { label: "Leading Others", value: "leading", color: "#6B8E6F" }
+      { label: "Leading Others", value: "leading", color: "var(--accent-moss)" }
     ]
   },
   {
@@ -34,9 +34,9 @@ const QUESTIONS = [
     title: "What kind of content helps you most?",
     options: [
       { label: "Deep Articles", value: "articles", color: "var(--gold)" },
-      { label: "Practical Tools", value: "tools", color: "#6B8E6F" },
-      { label: "Books", value: "books", color: "#8B6B7F" },
-      { label: "Devotionals", value: "devotionals", color: "#6B9B8B" }
+      { label: "Practical Tools", value: "tools", color: "var(--accent-moss)" },
+      { label: "Books", value: "books", color: "var(--accent-plum)" },
+      { label: "Devotionals", value: "devotionals", color: "var(--accent-teal)" }
     ]
   }
 ];
@@ -229,7 +229,7 @@ export default function StartHereQuiz() {
                   { label: "Marriage", href: "/marriage" },
                   { label: "Parenting", href: "/parenting" },
                   { label: "Doubt", href: "/doubt" },
-                  { label: "Disciple someone", href: "/table" },
+                  { label: "Disciple someone", href: "/studyguides" },
                   { label: "Grief", href: "/plans/grief" },
                   { label: "Pastoring", href: "/for-pastors" },
                   { label: "The essays", href: "/writing" },
@@ -280,7 +280,7 @@ export default function StartHereQuiz() {
                     aria-pressed={answers[QUESTIONS[currentStep].id] === option.value}
                     style={{
                       background: answers[QUESTIONS[currentStep].id] === option.value ? option.color : "var(--card)",
-                      color: answers[QUESTIONS[currentStep].id] === option.value ? "#FFF" : "var(--ink)",
+                      color: answers[QUESTIONS[currentStep].id] === option.value ? "var(--bone)" : "var(--ink)",
                       border: answers[QUESTIONS[currentStep].id] === option.value ? "none" : "1px solid var(--border)",
                       borderLeft: answers[QUESTIONS[currentStep].id] === option.value ? "none" : `6px solid ${option.color}`,
                       padding: "24px",

@@ -62,7 +62,7 @@ export default function CreedsLibrary() {
       <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-6)" }}>
         <div style={wrap}>
           {items.length === 0 ? (
-            <p style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }}>Loading the library…</p>
+            <p style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }} role="status">Loading the library…</p>
           ) : (
             grouped.map(([g, entries]) => (
               <div key={g} style={{ marginBottom: "var(--s-5)" }}>

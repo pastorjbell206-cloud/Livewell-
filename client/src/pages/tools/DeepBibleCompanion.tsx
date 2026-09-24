@@ -1845,7 +1845,7 @@ function buildNotesText(book: BibleBook, ws: Workspace): string {
 
 const quietBtn = {
   padding: "0.6rem 1rem", minHeight: "44px", background: "none",
-  border: "1px solid var(--border, #e5e0d5)", borderRadius: "2px",
+  border: "1px solid var(--border)", borderRadius: "2px",
   color: "var(--ink, #14110C)", fontSize: "0.8rem",
   fontFamily: "var(--U, Inter, sans-serif)", fontWeight: 500, cursor: "pointer",
 } as const;
@@ -1858,7 +1858,7 @@ const panelEyebrow = {
 function StorageNote({ problem }: { problem: StorageProblem }) {
   if (problem === "none") return null;
   return (
-    <p style={{ fontSize: "0.8rem", fontStyle: "italic", lineHeight: 1.6, color: "var(--ink-muted, #666)", maxWidth: "560px", margin: "0 0 1.5rem" }}>
+    <p style={{ fontSize: "0.8rem", fontStyle: "italic", lineHeight: 1.6, color: "var(--ink-muted)", maxWidth: "560px", margin: "0 0 1.5rem" }}>
       {problem === "blocked"
         ? "This browser is not letting the tool store anything, so notes and marks last only as long as this visit. Print or copy anything you want to keep."
         : "The notes saved earlier in this browser could not be read, so the workspace starts fresh. New notes will save as usual."}
@@ -1877,9 +1877,9 @@ function MarkToggle({ marked, label, onToggle }: { marked: boolean; label: strin
         display: "inline-flex", alignItems: "center", gap: "0.5rem",
         padding: "0.5rem 0.9rem", minHeight: "44px",
         background: marked ? "var(--charcoal, #1a1a1a)" : "none",
-        border: `1px solid ${marked ? "var(--charcoal, #1a1a1a)" : "var(--border, #e5e0d5)"}`,
+        border: `1px solid ${marked ? "var(--charcoal, #1a1a1a)" : "var(--border)"}`,
         borderRadius: "2px",
-        color: marked ? "var(--bone, #F5F0E6)" : "var(--ink-muted, #666)",
+        color: marked ? "var(--bone, #F5F0E6)" : "var(--ink-muted)",
         fontSize: "0.75rem", fontFamily: "var(--U, Inter, sans-serif)", fontWeight: 500,
         cursor: "pointer", whiteSpace: "nowrap",
       }}
@@ -1934,8 +1934,8 @@ function NoteField({ ariaLabel, initial, savedWord, onCommit }: {
   return (
     <div style={{ marginTop: "1.25rem" }}>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", gap: "1rem", marginBottom: "0.4rem" }}>
-        <span style={{ fontFamily: "var(--U, Inter, sans-serif)", fontSize: "0.7rem", fontWeight: 500, letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--ink-muted, #666)" }}>Your notes</span>
-        <span aria-live="polite" style={{ fontFamily: "var(--U, Inter, sans-serif)", fontSize: "0.7rem", color: "var(--ink-muted, #666)" }}>{showSaved ? savedWord : ""}</span>
+        <span style={{ fontFamily: "var(--U, Inter, sans-serif)", fontSize: "0.7rem", fontWeight: 500, letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--ink-muted)" }}>Your notes</span>
+        <span aria-live="polite" style={{ fontFamily: "var(--U, Inter, sans-serif)", fontSize: "0.7rem", color: "var(--ink-muted)" }}>{showSaved ? savedWord : ""}</span>
       </div>
       <textarea
         aria-label={ariaLabel}
@@ -1952,7 +1952,7 @@ function NoteField({ ariaLabel, initial, savedWord, onCommit }: {
         onBlur={() => commit(latest.current)}
         style={{
           width: "100%", boxSizing: "border-box", minHeight: "96px", padding: "0.75rem",
-          background: "var(--card)", border: "1px solid var(--border, #e5e0d5)", borderRadius: "2px",
+          background: "var(--card)", border: "1px solid var(--border)", borderRadius: "2px",
           fontFamily: "var(--U, Inter, sans-serif)", fontSize: "0.9rem", lineHeight: 1.6,
           color: "var(--ink, #14110C)", resize: "vertical",
         }}
@@ -2139,9 +2139,9 @@ export default function DeepBibleCompanion() {
           <div style={{ maxWidth: "1000px", margin: "0 auto" }}>
             <StorageNote problem={storageProblem} />
             {workspaceBooks.length > 0 && (
-              <div style={{ marginBottom: "2.5rem", padding: "1.5rem", background: "var(--card)", border: "1px solid var(--border, #e5e0d5)", borderLeft: "3px solid var(--mustard, #D4A017)", borderRadius: "2px" }}>
+              <div style={{ marginBottom: "2.5rem", padding: "1.5rem", background: "var(--card)", border: "1px solid var(--border)", borderLeft: "3px solid var(--mustard, #D4A017)", borderRadius: "2px" }}>
                 <div style={panelEyebrow}>Your workspace</div>
-                <p style={{ fontSize: "0.85rem", lineHeight: 1.6, color: "var(--ink-muted, #666)", margin: "0 0 1rem", maxWidth: "560px" }}>
+                <p style={{ fontSize: "0.85rem", lineHeight: 1.6, color: "var(--ink-muted)", margin: "0 0 1rem", maxWidth: "560px" }}>
                   Your notes and marks from earlier study, kept in this browser. Pick up where you left off.
                 </p>
                 <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem" }}>
@@ -2153,12 +2153,12 @@ export default function DeepBibleCompanion() {
                       style={{
                         display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "baseline",
                         gap: "0.25rem 1rem", padding: "0.75rem 1rem", minHeight: "44px",
-                        background: "var(--bone, #F5F0E6)", border: "1px solid var(--border, #e5e0d5)",
+                        background: "var(--bone, #F5F0E6)", border: "1px solid var(--border)",
                         borderRadius: "2px", cursor: "pointer", textAlign: "left", width: "100%",
                       }}
                     >
                       <span style={{ fontFamily: "var(--F, 'Cormorant Garamond', serif)", fontSize: "1.05rem", color: "var(--ink, #14110C)" }}>{a.book.name}</span>
-                      <span style={{ fontSize: "0.75rem", color: "var(--ink-muted, #666)", fontFamily: "var(--U, Inter, sans-serif)" }}>
+                      <span style={{ fontSize: "0.75rem", color: "var(--ink-muted)", fontFamily: "var(--U, Inter, sans-serif)" }}>
                         {countsLine(a.noteCount, a.markCount)}{a.touched ? ` · last touched ${fmtDate(a.touched)}` : ""}
                       </span>
                     </button>
@@ -2186,7 +2186,7 @@ export default function DeepBibleCompanion() {
                     const hasContent = book.passages.length > 0;
                     return (
                       <button key={book.name} onClick={() => hasContent && setSelectedBook(book)} style={{
-                        padding: "1.25rem", background: "var(--card)", border: "1px solid #e5e0d5",
+                        padding: "1.25rem", background: "var(--card)", border: "1px solid var(--border)",
                         borderRadius: "2px", cursor: hasContent ? "pointer" : "default", textAlign: "left",
                         opacity: hasContent ? 1 : 0.5, transition: "all 240ms ease",
                       }}>
@@ -2210,9 +2210,9 @@ export default function DeepBibleCompanion() {
             <h2 style={{ fontFamily: "var(--F, 'Cormorant Garamond', serif)", fontSize: "1.75rem", fontWeight: 400, color: "var(--ink, #14110C)", marginBottom: "0.5rem" }}>{selectedBook.name}</h2>
             <p style={{ fontSize: "0.85rem", color: "var(--ink-muted)", marginBottom: "2rem" }}>{selectedBook.hook}</p>
             {bookAct !== null && bookAct.noteCount + bookAct.markCount > 0 && (
-              <div style={{ marginBottom: "2rem", padding: "1.5rem", background: "var(--card)", border: "1px solid var(--border, #e5e0d5)", borderLeft: "3px solid var(--mustard, #D4A017)", borderRadius: "2px" }}>
+              <div style={{ marginBottom: "2rem", padding: "1.5rem", background: "var(--card)", border: "1px solid var(--border)", borderLeft: "3px solid var(--mustard, #D4A017)", borderRadius: "2px" }}>
                 <div style={panelEyebrow}>Your marks and notes</div>
-                <p style={{ fontSize: "0.85rem", lineHeight: 1.6, color: "var(--ink-muted, #666)", margin: "0 0 1rem", maxWidth: "560px" }}>
+                <p style={{ fontSize: "0.85rem", lineHeight: 1.6, color: "var(--ink-muted)", margin: "0 0 1rem", maxWidth: "560px" }}>
                   {countsLine(bookAct.noteCount, bookAct.markCount)}
                   {bookAct.touched ? ` · last touched ${fmtDate(bookAct.touched)}` : ""}. What struck you is kept here so you can return to it.
                 </p>
@@ -2226,12 +2226,12 @@ export default function DeepBibleCompanion() {
                         style={{
                           display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "baseline",
                           gap: "0.25rem 1rem", padding: "0.6rem 1rem", minHeight: "44px",
-                          background: "var(--bone, #F5F0E6)", border: "1px solid var(--border, #e5e0d5)",
+                          background: "var(--bone, #F5F0E6)", border: "1px solid var(--border)",
                           borderRadius: "2px", cursor: "pointer", textAlign: "left", width: "100%",
                         }}
                       >
                         <span style={{ fontFamily: "var(--F, 'Cormorant Garamond', serif)", fontSize: "0.95rem", color: "var(--ink, #14110C)" }}>{m.ref}</span>
-                        <span style={{ fontSize: "0.75rem", color: "var(--ink-muted, #666)", fontFamily: "var(--U, Inter, sans-serif)" }}>{TABS[m.layer]}</span>
+                        <span style={{ fontSize: "0.75rem", color: "var(--ink-muted)", fontFamily: "var(--U, Inter, sans-serif)" }}>{TABS[m.layer]}</span>
                       </button>
                     ))}
                   </div>
@@ -2241,7 +2241,7 @@ export default function DeepBibleCompanion() {
                   {bookAct.noteCount > 0 && (
                     <button onClick={() => copyNotes(selectedBook)} style={quietBtn}>Copy my notes</button>
                   )}
-                  <span aria-live="polite" style={{ fontSize: "0.75rem", color: "var(--ink-muted, #666)", fontFamily: "var(--U, Inter, sans-serif)" }}>
+                  <span aria-live="polite" style={{ fontSize: "0.75rem", color: "var(--ink-muted)", fontFamily: "var(--U, Inter, sans-serif)" }}>
                     {copyState === "copied"
                       ? "Copied to your clipboard."
                       : copyState === "blocked"
@@ -2254,7 +2254,7 @@ export default function DeepBibleCompanion() {
             <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
               {selectedBook.passages.map((p, i) => (
                 <button key={i} onClick={() => { setSelectedPassage(p); setActiveTab(0); }} style={{
-                  padding: "1.5rem", background: "var(--card)", border: "1px solid #e5e0d5", borderLeft: "3px solid var(--mustard, #D4A017)",
+                  padding: "1.5rem", background: "var(--card)", border: "1px solid var(--border)", borderLeft: "3px solid var(--mustard, #D4A017)",
                   borderRadius: "2px", cursor: "pointer", textAlign: "left", transition: "all 240ms ease",
                 }}>
                   <div style={{ fontFamily: "var(--F, 'Cormorant Garamond', serif)", fontSize: "1.1rem", fontWeight: 400, color: "var(--ink, #14110C)", marginBottom: "0.25rem" }}>{p.ref}</div>
@@ -2273,7 +2273,7 @@ export default function DeepBibleCompanion() {
             <h2 style={{ fontFamily: "var(--F, 'Cormorant Garamond', serif)", fontSize: "1.75rem", fontWeight: 400, color: "var(--ink, #14110C)", marginBottom: "2rem" }}>{selectedPassage.ref}</h2>
             <StorageNote problem={storageProblem} />
 
-            <div style={{ display: "flex", gap: "0", borderBottom: "1px solid #e5e0d5", marginBottom: "2rem", overflowX: "auto" }}>
+            <div style={{ display: "flex", gap: "0", borderBottom: "1px solid var(--border)", marginBottom: "2rem", overflowX: "auto" }}>
               {TABS.map((tab, i) => (
                 <button key={tab} onClick={() => setActiveTab(i)} aria-current={activeTab === i ? "true" : undefined} style={{
                   padding: "0.75rem 1rem", background: "none", border: "none", borderBottom: activeTab === i ? "2px solid var(--mustard, #D4A017)" : "2px solid transparent",
@@ -2282,7 +2282,7 @@ export default function DeepBibleCompanion() {
               ))}
             </div>
 
-            <div style={{ background: "var(--card)", border: "1px solid #e5e0d5", borderRadius: "2px", padding: "2rem" }}>
+            <div style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: "2px", padding: "2rem" }}>
               <div style={{ display: "flex", justifyContent: "flex-end", marginBottom: "1.25rem" }}>
                 <MarkToggle
                   marked={(ws.marks[selectedBook.name] ?? []).includes(`${selectedPassage.ref}::${activeTab}`)}
@@ -2319,7 +2319,7 @@ export default function DeepBibleCompanion() {
                   <p style={{ fontSize: "0.95rem", lineHeight: 1.7, color: "var(--ink, #14110C)", marginBottom: "2rem" }}>{selectedPassage.paraphrase}</p>
                   <h4 style={{ fontFamily: "var(--U, Inter, sans-serif)", fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--mustard, #D4A017)", marginBottom: "0.75rem" }}>Key Words</h4>
                   {selectedPassage.keyWords.map((kw, i) => (
-                    <div key={i} style={{ marginBottom: "1.25rem", paddingLeft: "1rem", borderLeft: "2px solid #e5e0d5" }}>
+                    <div key={i} style={{ marginBottom: "1.25rem", paddingLeft: "1rem", borderLeft: "2px solid var(--border)" }}>
                       <div style={{ fontFamily: "var(--F, 'Cormorant Garamond', serif)", fontSize: "1rem", fontWeight: 500, color: "var(--ink, #14110C)", marginBottom: "0.25rem" }}>"{kw.word}" — <span style={{ fontStyle: "italic", color: "var(--mustard, #D4A017)" }}>{kw.original}</span></div>
                       <p style={{ fontSize: "0.85rem", lineHeight: 1.65, color: "var(--ink-muted)" }}>{kw.meaning}</p>
                     </div>
@@ -2353,7 +2353,7 @@ export default function DeepBibleCompanion() {
                   <div style={{ marginBottom: "1.5rem" }}>
                     <h4 style={{ fontFamily: "var(--U, Inter, sans-serif)", fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--mustard, #D4A017)", marginBottom: "0.5rem" }}>Key Terms</h4>
                     {selectedPassage.literary.keyTerms.map((kt, i) => (
-                      <div key={i} style={{ marginBottom: "1rem", paddingLeft: "1rem", borderLeft: "2px solid #e5e0d5" }}>
+                      <div key={i} style={{ marginBottom: "1rem", paddingLeft: "1rem", borderLeft: "2px solid var(--border)" }}>
                         <div style={{ fontFamily: "var(--F, 'Cormorant Garamond', serif)", fontSize: "1rem", fontWeight: 500, color: "var(--ink, #14110C)" }}>{kt.term} <span style={{ fontStyle: "italic", fontSize: "0.85rem", color: "var(--mustard, #D4A017)" }}>({kt.language})</span></div>
                         <p style={{ fontSize: "0.85rem", lineHeight: 1.65, color: "var(--ink-muted)" }}>{kt.meaning}</p>
                       </div>
@@ -2418,7 +2418,7 @@ export default function DeepBibleCompanion() {
                   <div style={{ marginBottom: "1.5rem" }}>
                     <h4 style={{ fontFamily: "var(--U, Inter, sans-serif)", fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--mustard, #D4A017)", marginBottom: "0.75rem" }}>Recommended Books</h4>
                     {selectedPassage.deeper.books.map((b, i) => (
-                      <p key={i} style={{ fontSize: "0.9rem", color: "var(--ink, #14110C)", marginBottom: "0.5rem", paddingLeft: "1rem", borderLeft: "1px solid #e5e0d5" }}>{b}</p>
+                      <p key={i} style={{ fontSize: "0.9rem", color: "var(--ink, #14110C)", marginBottom: "0.5rem", paddingLeft: "1rem", borderLeft: "1px solid var(--border)" }}>{b}</p>
                     ))}
                   </div>
                   <div style={{ marginBottom: "1.5rem" }}>
@@ -2441,10 +2441,10 @@ export default function DeepBibleCompanion() {
             </div>
 
             <div style={{ display: "flex", justifyContent: "space-between", marginTop: "1.5rem" }}>
-              <button onClick={() => setActiveTab(Math.max(0, activeTab - 1))} disabled={activeTab === 0} style={{ padding: "0.5rem 1rem", background: "none", border: "1px solid #e5e0d5", borderRadius: "2px", color: activeTab === 0 ? "#ccc" : "var(--ink, #14110C)", fontSize: "0.8rem", fontFamily: "var(--U, Inter, sans-serif)", cursor: activeTab === 0 ? "default" : "pointer" }}>
+              <button onClick={() => setActiveTab(Math.max(0, activeTab - 1))} disabled={activeTab === 0} style={{ padding: "0.5rem 1rem", background: "none", border: "1px solid var(--border)", borderRadius: "2px", color: activeTab === 0 ? "var(--ink-muted)" : "var(--ink, #14110C)", fontSize: "0.8rem", fontFamily: "var(--U, Inter, sans-serif)", cursor: activeTab === 0 ? "default" : "pointer" }}>
                 Previous Layer
               </button>
-              <button onClick={() => setActiveTab(Math.min(5, activeTab + 1))} disabled={activeTab === 5} style={{ padding: "0.5rem 1rem", background: "none", border: "1px solid #e5e0d5", borderRadius: "2px", color: activeTab === 5 ? "#ccc" : "var(--ink, #14110C)", fontSize: "0.8rem", fontFamily: "var(--U, Inter, sans-serif)", cursor: activeTab === 5 ? "default" : "pointer" }}>
+              <button onClick={() => setActiveTab(Math.min(5, activeTab + 1))} disabled={activeTab === 5} style={{ padding: "0.5rem 1rem", background: "none", border: "1px solid var(--border)", borderRadius: "2px", color: activeTab === 5 ? "var(--ink-muted)" : "var(--ink, #14110C)", fontSize: "0.8rem", fontFamily: "var(--U, Inter, sans-serif)", cursor: activeTab === 5 ? "default" : "pointer" }}>
                 Next Layer
               </button>
             </div>

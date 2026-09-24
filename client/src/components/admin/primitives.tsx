@@ -10,16 +10,17 @@
 import type { CSSProperties, ReactNode } from "react";
 import { Loader2 } from "lucide-react";
 
-// The admin's working palette (the .admin-scope light workspace).
+// The admin's working palette (the .admin-scope light workspace). Values are
+// the workspace tokens from index.css — same colors as before, no bare hex.
 export const A = {
-  ink: "#1A1A1A",
-  muted: "#6B7280",
-  faint: "#9CA3AF",
-  line: "#E5E7EB",
-  card: "#FFFFFF",
-  accent: "#B8963E", // print-safe mustard for small accents
-  danger: "#9B2C2C",
-  ok: "#2E7D32",
+  ink: "var(--charcoal)",
+  muted: "var(--adm-gray)",
+  faint: "var(--adm-gray-soft)",
+  line: "var(--adm-gray-line)",
+  card: "var(--card)",
+  accent: "var(--adm-gold)", // print-safe mustard for small accents
+  danger: "var(--alert)",
+  ok: "var(--adm-ok)",
 } as const;
 
 /** A titled section with the standard heading + description rhythm. */
@@ -42,7 +43,7 @@ export function Panel({ children, style }: { children: ReactNode; style?: CSSPro
 }
 
 /** A big number with a label and a footnote, top-accented. */
-export function StatTile({ label, value, sub, color = "#2C3E50" }: { label: string; value: string; sub?: string; color?: string }) {
+export function StatTile({ label, value, sub, color = "var(--adm-slate)" }: { label: string; value: string; sub?: string; color?: string }) {
   return (
     <div className="flex flex-col p-6 rounded-lg" style={{ background: A.card, borderTop: `5px solid ${color}`, boxShadow: "0 1px 3px rgba(26,26,26,0.08)" }}>
       <div className="font-ui text-xs uppercase tracking-wider mb-3" style={{ color: A.muted }}>{label}</div>
@@ -55,7 +56,7 @@ export function StatTile({ label, value, sub, color = "#2C3E50" }: { label: stri
 /** Loading line — one consistent look, never an unlabeled spinner. */
 export function LoadingNote({ label = "Loading…" }: { label?: string }) {
   return (
-    <p className="font-body text-sm" style={{ color: A.muted }}>
+    <p role="status" className="font-body text-sm" style={{ color: A.muted }}>
       <Loader2 size={16} className="animate-spin inline" /> {label}
     </p>
   );

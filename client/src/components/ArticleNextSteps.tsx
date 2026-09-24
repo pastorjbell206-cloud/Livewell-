@@ -56,11 +56,11 @@ const TOOL_MAP: Record<string, ToolRec> = {
       "A serious diagnostic for the covenant relationship — not tips, but an honest read of where you are.",
     href: "/tools/marriage-assessment",
   },
-  "pastor-burnout": {
-    name: "Pastor Burnout Diagnostic",
+  "emotional-health": {
+    name: "Emotional Health Assessment",
     description:
-      "An honest assessment of the cost you are carrying — and whether it is sustainable.",
-    href: "/tools/pastor-burnout",
+      "An honest read of the weight you are carrying, and whether the pace you keep is sustainable.",
+    href: "/tools/emotional-health",
   },
   "life-audit": {
     name: "Life Audit",
@@ -86,12 +86,6 @@ const TOOL_MAP: Record<string, ToolRec> = {
       "Find what Scripture actually says about a topic — with context, not proof-texts.",
     href: "/tools/bible-on",
   },
-  "church-health": {
-    name: "Church Health Diagnostic",
-    description:
-      "An honest look at the institution you serve — its strengths, blind spots, and structural risks.",
-    href: "/tools/church-health",
-  },
 };
 
 /** Keywords in slugs that map to specific tools. Order matters: first match wins. */
@@ -99,8 +93,7 @@ const SLUG_TOOL_RULES: Array<{ keywords: string[]; toolKey: string }> = [
   { keywords: ["deconstruction", "leaving", "exvangelical", "nones", "reconstructing"], toolKey: "start-here" },
   { keywords: ["marriage", "interfaith-marriage", "covenant"], toolKey: "marriage-assessment" },
   { keywords: ["parenting", "raising-kids", "family"], toolKey: "parenting-guide" },
-  { keywords: ["burnout", "pastor-burnout"], toolKey: "pastor-burnout" },
-  { keywords: ["leadership", "megachurch", "church-health", "toxic-masculinity"], toolKey: "church-health" },
+  { keywords: ["burnout", "pastor-burnout"], toolKey: "emotional-health" },
   { keywords: ["suffering", "doubt", "bible", "genesis", "miracles", "scripture", "god-real", "historical-jesus"], toolKey: "deep-bible" },
   { keywords: ["denomination", "calvinism", "arminianism", "liturgical", "creeds", "charismatic", "schism", "reformation"], toolKey: "theology-quiz" },
   { keywords: ["politics", "culture-war", "purity", "prosperity", "race", "colonialism", "abuse"], toolKey: "bible-on-topic" },
@@ -112,7 +105,7 @@ const PILLAR_TOOL_FALLBACK: Record<string, string> = {
   "capture-by-the-left": "bible-on-topic",
   "reading-scripture-past-our-politics": "deep-bible",
   "after-christendom-pillar": "theology-quiz",
-  "the-pastoral-angle": "pastor-burnout",
+  "the-pastoral-angle": "emotional-health",
   "living-well-after-christendom": "life-audit",
 };
 

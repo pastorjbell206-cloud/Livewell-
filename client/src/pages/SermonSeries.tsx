@@ -7,6 +7,7 @@
  * application questions.
  */
 import { useState, useRef, useCallback } from "react";
+import { scrollBehavior } from "@/lib/motion";
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
@@ -36,7 +37,7 @@ export default function SermonSeriesPage() {
   const openSeries = useCallback((s: SermonSeriesData) => {
     setActiveSeries(s);
     setExpandedWeek(null);
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: scrollBehavior() });
   }, []);
 
   const closeSeries = useCallback(() => {

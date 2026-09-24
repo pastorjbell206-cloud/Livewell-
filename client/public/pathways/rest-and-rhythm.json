@@ -10,13 +10,13 @@
       "note": "Start here, in order.",
       "items": [
         {
-          "label": "Sabbath Is Resistance",
-          "href": "/writing/sabbath-is-resistance",
+          "label": "Why a Day of Doing Nothing Is an Act of Defiance",
+          "href": "/writing/a-day-of-doing-nothing",
           "blurb": "Rest as the oldest protest against a world that measures you by output."
         },
         {
-          "label": "The Difference Between Being Tired and Being Done",
-          "href": "/writing/difference-tired-and-done",
+          "label": "Why Pastors Quit",
+          "href": "/writing/why-pastors-quit",
           "blurb": "The line most people cross without noticing, and how to walk back from it."
         },
         {
@@ -40,13 +40,13 @@
     },
     {
       "kind": "book",
-      "heading": "Then read the book — free, then buy",
+      "heading": "Then work it through",
       "note": "Read it cover to cover on the site before you ever buy it.",
       "items": [
         {
-          "label": "Essays on Rest &amp; Sabbath",
-          "href": "/read/essays-rest-and-sabbath",
-          "blurb": "The whole case for the hour that reorders the other hundred and sixty-seven."
+          "label": "Sabbath: a Bible study on rest and hurry",
+          "href": "/studyguides/sabbath",
+          "blurb": "The whole case for the hour that reorders the other hundred and sixty-seven, worked into practice."
         }
       ]
     }

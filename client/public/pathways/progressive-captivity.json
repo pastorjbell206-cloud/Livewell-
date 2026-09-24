@@ -50,13 +50,13 @@
     },
     {
       "kind": "book",
-      "heading": "Then read the book, free",
+      "heading": "Then work it through",
       "note": "The Captive Church follows the one temptation Jesus refused in the wilderness, and it names the trade on both sides. The flag and the cause are the same exchange, wearing different clothes. Read it free.",
       "items": [
         {
-          "label": "The Captive Church — read free",
-          "href": "/read/the-captive-church",
-          "blurb": "Ten chapters on the church's captivity to power, on the left and the right alike. The complete book, free."
+          "label": "Capture by the Left: the full reading path",
+          "href": "/reading-paths/capture-by-the-left",
+          "blurb": "The essays on the church's captivity to progressive culture, in the order the argument was built."
         },
         {
           "label": "Find James's books in the bookstore",

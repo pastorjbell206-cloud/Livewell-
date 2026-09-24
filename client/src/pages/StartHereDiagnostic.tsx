@@ -1,4 +1,5 @@
 import { useState, useCallback, useRef, useEffect } from "react";
+import { scrollBehavior } from "@/lib/motion";
 import { Link } from "wouter";
 import { SEOMeta } from "@/components/SEOMeta";
 import MinimalNav from "@/components/MinimalNav";
@@ -341,9 +342,9 @@ export default function StartHereDiagnostic() {
 
   const scrollToTop = useCallback(() => {
     if (containerRef.current) {
-      containerRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+      containerRef.current.scrollIntoView({ behavior: scrollBehavior(), block: "start" });
     } else {
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      window.scrollTo({ top: 0, behavior: scrollBehavior() });
     }
   }, []);
 

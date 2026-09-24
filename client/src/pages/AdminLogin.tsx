@@ -56,10 +56,10 @@ export default function AdminLogin() {
           style={{
             width: "100%",
             padding: 32,
-            background: "white",
+            background: "var(--card)",
             borderRadius: 8,
             boxShadow: "0 4px 16px rgba(0,0,0,0.06)",
-            fontFamily: "system-ui, sans-serif",
+            fontFamily: "var(--U)",
           }}
         >
           <h1 style={{ fontSize: 24, fontWeight: 700, marginBottom: 8, color: "var(--ink)" }}>Admin Login</h1>

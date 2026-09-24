@@ -37,21 +37,21 @@
       "note": "The Basics at the Table is a guided study for starting with one person — the meal, the text, the question, and the sending, the way Jesus taught it.",
       "items": [
         {
-          "label": "The Basics at the Table — a study for disciplers",
-          "href": "/table/the-basics-at-the-table",
-          "blurb": "A work-through study that ends with you discipling someone by name."
+          "label": "Pick a study and take someone through it",
+          "href": "/studyguides",
+          "blurb": "Sixty-two working Bible studies with leader and participant guides. Choose one and put a name on the calendar."
         }
       ]
     },
     {
       "kind": "book",
-      "heading": "Then read the book, free",
+      "heading": "Then work it through",
       "note": "Come to the Table recovers Jesus's method for people with no training: disciple-making in ordinary homes. By the last chapter you will have set your first table. Free to read.",
       "items": [
         {
-          "label": "Come to the Table — read free",
-          "href": "/read/come-to-the-table",
-          "blurb": "Twelve chapters on disciple making in homes for ordinary Christians. The complete book, free."
+          "label": "Build a devotion path for your home",
+          "href": "/tools/family-devotion-builder",
+          "blurb": "Disciple making starts at your own table. Build a plan your household can actually keep."
         },
         {
           "label": "Find James's books in the bookstore",

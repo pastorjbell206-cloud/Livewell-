@@ -17,8 +17,8 @@ export default function Doubt() {
       readTime: "10 min read"
     },
     {
-      title: "When the Church Married Empire",
-      slug: "when-the-church-married-empire",
+      title: "How Christianity Became an Empire",
+      slug: "how-christianity-became-an-empire",
       topic: "Faith & Doubt",
       readTime: "12 min read"
     },

@@ -6,6 +6,7 @@
  * with search, category filtering, and alphabetical navigation.
  */
 import { useState, useMemo, useCallback, useEffect } from "react";
+import { scrollBehavior } from "@/lib/motion";
 import { Link } from "wouter";
 import { Search, ChevronDown, ChevronUp, BookOpen, X } from "lucide-react";
 import Layout from "@/components/Layout";
@@ -979,7 +980,7 @@ export default function TheologyGlossary() {
       setTimeout(() => {
         const el = document.getElementById(hash);
         if (el) {
-          el.scrollIntoView({ behavior: "smooth", block: "start" });
+          el.scrollIntoView({ behavior: scrollBehavior(), block: "start" });
           setExpandedTerms(new Set([decodeURIComponent(hash)]));
         }
       }, 120);
@@ -1046,11 +1047,11 @@ export default function TheologyGlossary() {
 
   const categoryColor = (cat: Category): string => {
     const map: Record<Category, string> = {
-      Doctrine: "#8B5E3C",
-      "Biblical Studies": "#3D5A40",
-      "Church History": "#6B4C7A",
-      "Worship & Practice": "#2E6B8A",
-      "Philosophy & Ethics": "#9B6B30",
+      Doctrine: "var(--accent-sienna)",
+      "Biblical Studies": "var(--ok)",
+      "Church History": "var(--accent-violet)",
+      "Worship & Practice": "var(--accent-slate)",
+      "Philosophy & Ethics": "var(--accent-bronze)",
     };
     return map[cat] || "var(--ink-muted)";
   };
@@ -1271,7 +1272,7 @@ export default function TheologyGlossary() {
                       return;
                     }
                     e.preventDefault();
-                    document.getElementById(`letter-${letter}`)?.scrollIntoView({ behavior: "smooth", block: "start" });
+                    document.getElementById(`letter-${letter}`)?.scrollIntoView({ behavior: scrollBehavior(), block: "start" });
                   }}
                   style={{
                     fontFamily: "var(--B)",
@@ -1501,7 +1502,7 @@ export default function TheologyGlossary() {
                             </h4>
                             <p
                               style={{
-                                fontFamily: "JetBrains Mono, monospace",
+                                fontFamily: "var(--mono)",
                                 fontSize: "13px",
                                 lineHeight: 1.6,
                                 color: "var(--ink-muted)",
@@ -1547,7 +1548,7 @@ export default function TheologyGlossary() {
                                       const targetId = rt.toLowerCase().replace(/\s+/g, "-");
                                       setExpandedTerms((prev) => { const next = new Set(Array.from(prev)); next.add(rt); return next; });
                                       setTimeout(() => {
-                                        document.getElementById(targetId)?.scrollIntoView({ behavior: "smooth", block: "start" });
+                                        document.getElementById(targetId)?.scrollIntoView({ behavior: scrollBehavior(), block: "start" });
                                       }, 50);
                                     }}
                                     style={{

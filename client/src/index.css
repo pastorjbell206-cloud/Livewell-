@@ -80,9 +80,26 @@
   --clay:#A65D3F;
   --bone-bright:#FBF9F5;
 
+  /* Accent ramp — the shared hue set for content-family badges, chips, and
+     era/category labels (timeline, glossary, quiz, quotes). Dark mode lightens
+     each so label text stays legible on dark cards; anything using one as a
+     background pairs it with var(--bone) text, which flips the other way. */
+  --accent-oxide:#7A1F1F;
+  --accent-umber:#5A4A2A;
+  --accent-amber:#8A5A00;
+  --accent-violet:#6B4C7A;
+  --accent-slate:#2E6B8A;
+  --accent-sienna:#8B5E3C;
+  --accent-bronze:#9B6B30;
+  --accent-mauve:#9B8BA8;
+  --accent-plum:#8B6B7F;
+  --accent-moss:#6B8E6F;
+  --accent-teal:#6B9B8B;
+
   /* Motion system — one easing, one distance, honored by every entry
      animation on the site. prefers-reduced-motion turns all of it off via
-     the global guard below. */
+     the global guard below (durations, delays, and smooth scrolling; JS
+     scrolls go through lib/motion.ts, which checks the same media query). */
   --motion-ease:cubic-bezier(.16,1,.3,1);
   --motion-rise:12px;
   --motion-dur:600ms;
@@ -102,6 +119,7 @@
   --F:"Cormorant Garamond","EB Garamond",Georgia,serif;
   --B:"Inter",-apple-system,BlinkMacSystemFont,sans-serif;
   --U:"Inter",-apple-system,BlinkMacSystemFont,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,monospace;
   --display:"Cormorant Garamond",Georgia,serif;--serif:"Cormorant Garamond","EB Garamond",Georgia,serif;--sans:"Inter",-apple-system,sans-serif;
 
   /*  Shape  */
@@ -135,6 +153,12 @@ html.dark{
   --ok:#7FA486;--ok-bg:rgba(61,90,64,0.12);
   --alert:#D98C8C;--alert-bg:rgba(155,44,44,0.12);
   --strain:#D69A5C;--strain-bg:rgba(181,101,29,0.12);
+  /* Taxonomy + accent ramp — lightened so labels read on dark cards */
+  --olive:#96A48B;--clay:#C98F76;
+  --accent-oxide:#C88787;--accent-umber:#B3A385;--accent-amber:#D0A85C;
+  --accent-violet:#B295C0;--accent-slate:#7FA8C4;--accent-sienna:#C39A78;
+  --accent-bronze:#CDA36B;--accent-mauve:#B9AECB;--accent-plum:#C0A3B4;
+  --accent-moss:#9DBFA1;--accent-teal:#9CC4B7;
   /* Legacy aliases */
   --paper:#14110C;--paper2:#1A1608;--cream:#2A2418;
   --line:#3A3328;--border:#3A3328;--borderdk:#4A4232;
@@ -161,6 +185,11 @@ html.dark{
   --line:#D9D3C4;--border:#D9D3C4;--borderdk:#C0B9A8;
   --gold:#D4A017;--goldlt:#7A6010;--goldpale:#F5F0E6;
   --ink2:#5A5448;--ink3:#5A5448;--stone:#5A5448;--stone2:#9A968E;
+  /* Semantic score tokens — re-pinned to light values so admin dashboards
+     never inherit the dark-mode foregrounds onto their white cards. */
+  --ok:#3D5A40;--ok-bg:rgba(61,90,64,0.08);
+  --alert:#9B2C2C;--alert-bg:rgba(155,44,44,0.08);
+  --strain:#B5651D;--strain-bg:rgba(181,101,29,0.08);
 
   /* ADMIN WORKSPACE TOKENS (--adm-*) — the admin's own palette, light-only.
    * Admin components reference either a brand token above or one of these;
@@ -219,7 +248,7 @@ html.dark{
 html{scroll-behavior:smooth}
 body{background:var(--bone);color:var(--ink);font-family:var(--B);font-size:1rem;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 ::selection{background:var(--mustard);color:var(--ink)}
-@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:0.01ms!important;transition-duration:0.01ms!important}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:0.01ms!important;animation-delay:0s!important;animation-iteration-count:1!important;transition-duration:0.01ms!important}}
 a{color:inherit;text-decoration:none}
 button{cursor:pointer;border:none;background:none;font-family:inherit}
 ul{list-style:none}
@@ -488,7 +517,7 @@ h1, h2, h3 { text-wrap: balance; }
 .article-body li{margin-top:.4em}
 .article-body strong{font-weight:600;color:var(--ink)}
 .article-body em{font-style:italic}
-.article-body code{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.92em;background:var(--bone-warm);padding:.12em .35em;border-radius:2px}
+.article-body code{font-family:var(--mono);font-size:.92em;background:var(--bone-warm);padding:.12em .35em;border-radius:2px}
 .article-body hr{border:0;height:1px;background:var(--border);margin:3em auto;max-width:120px}
 .article-body img{margin:2em 0;border-radius:var(--radius-sm);max-width:100%;height:auto}
 /* Anti-overlap: never let the floated drop cap collide with a following

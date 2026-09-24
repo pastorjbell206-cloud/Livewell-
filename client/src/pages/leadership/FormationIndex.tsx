@@ -70,7 +70,7 @@ export default function FormationIndex() {
       <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-6)" }}>
         <div style={wrap}>
           {items.length === 0 ? (
-            <p style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }}>Loading the topics…</p>
+            <p style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }} role="status">Loading the topics…</p>
           ) : (
             grouped.map(([pillar, entries]) => (
               <div key={pillar} style={{ marginBottom: "var(--s-5)" }}>

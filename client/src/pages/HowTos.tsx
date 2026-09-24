@@ -92,7 +92,7 @@ export default function HowTos() {
           </div>
 
           {items.length === 0 ? (
-            <p style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }}>Loading the library…</p>
+            <p style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }} role="status">Loading the library…</p>
           ) : (
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(320px, 100%), 1fr))", gap: "var(--s-3)" }}>
               {shown.map((e) => (

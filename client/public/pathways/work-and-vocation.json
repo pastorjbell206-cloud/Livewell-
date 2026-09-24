@@ -40,13 +40,13 @@
     },
     {
       "kind": "book",
-      "heading": "Then read the book — free, then buy",
+      "heading": "Then work it through",
       "note": "Read it cover to cover on the site before you ever buy it.",
       "items": [
         {
-          "label": "The Undivided Life",
-          "href": "/read/the-undivided-life",
-          "blurb": "The case against a faith that lives in the religious corner while the job runs on its own logic."
+          "label": "Work and Vocation: a Bible study",
+          "href": "/studyguides/work-and-vocation",
+          "blurb": "The case against a faith that lives in the religious corner while the job runs on its own logic, worked through."
         }
       ]
     }
