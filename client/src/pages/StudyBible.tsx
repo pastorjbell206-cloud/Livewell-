@@ -694,21 +694,11 @@ function VerseStudy({ books, book, chapter, verse, lang, setSel }: { books: Bibl
   const [related, setRelated] = useState<CatalogueItem[] | null>(null);
   useEffect(() => {
     let stale = false;
-    const chapterKey = `${book.name.toLowerCase()} ${chapter}`;
     fetchCatalogue()
-      .then((c) => {
-        if (stale) return;
-        const hits = c.items.filter((it) =>
-          (it.scripture ?? []).some((s) => {
-            const n = s.toLowerCase().replace(/\s+/g, " ").trim();
-            return n === chapterKey || n.startsWith(`${chapterKey}:`) || n.startsWith(`${chapterKey}–`) || n.startsWith(`${chapterKey}-`);
-          })
-        );
-        setRelated(hits.slice(0, 8));
-      })
+      .then((c) => { if (!stale) setRelated(itemsForPassage(c.items, books, book.slug, chapter).slice(0, 8)); })
       .catch(() => { if (!stale) setRelated([]); });
     return () => { stale = true; };
-  }, [book.name, chapter]);
+  }, [books, book.slug, chapter]);
 
   const script = lang === "H" ? HEB : GRK;
   const refLabel = `${book.name} ${chapter}:${verse.v}`;
