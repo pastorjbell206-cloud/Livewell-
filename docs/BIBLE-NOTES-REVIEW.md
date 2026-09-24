@@ -104,3 +104,19 @@ Christ" as Paul is usually read.
 - Exodus 18: the Talmud's debate over when Jethro came.
 - Exodus 19: Egeria and Jebel Musa; the Justinian date for Saint Catherine's.
 - Exodus 20: Alt on apodictic law; Mendenhall on Hittite treaties (1950s).
+
+## Exodus 21–40
+
+**Corrected.** Exodus 22: the Mesad Hashavyahu ostracon is near Yavneh-Yam.
+Exodus 24: in Genesis 26:30-31 the feast comes before the oaths. Exodus 25:
+internal tooling text removed. Exodus 27: tamid first appears at 25:30.
+Exodus 28: the undergarments' contrast with fertility rites softened to "may".
+Exodus 40: "as the LORD had commanded" counted correctly; Pentecost described
+as Acts 2:2-4 has it.
+
+**To double-check.**
+- Exodus 37: "mercy seat" from Tyndale's 1530 Pentateuch (following Luther).
+- Exodus 35: Karaite Sabbath fire practice has varied.
+- Exodus 21: Hammurabi's stela described as basalt (older sources say diorite).
+- Exodus 23: the Gezer Calendar dated to about the tenth century BC.
+- Exodus 32: the Ashkelon calf is bronze or copper with silver plating.
