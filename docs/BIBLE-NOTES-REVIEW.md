@@ -646,3 +646,25 @@ Lamentations 4: a path to help added.
 - Jeremiah 40: the Tell el-Umeiri Baalis seal (1984).
 - Jeremiah 41: Pritchard's Gibeon pool.
 - Jeremiah 48: Josephus on Nebuchadnezzar's twenty-third year.
+
+## Ezekiel introduction and chapters 1–24
+
+**Checked and sound.** The dated oracles counted from Jehoiachin's exile;
+chapter 1's vision explained without speculation; the glory's departure
+(9:3, 10:18-19, 11:23) and return (43); chapters 16 and 23 handled with adult
+tact and honesty about readers' difficulties.
+
+**Corrected.** Introduction: "a contemporary of Daniel"; the Daniel of 14:14
+may be the Danel of Ugaritic legend. Ezekiel 5, 8, 12, 18, 20: counts, the
+priests' area, the north gate of the inner court, Kebar. Ezekiel 19, 21, 24:
+dates hedged (587 or 586 BC; about January 588; the siege's length by
+chronology). Ezekiel 23: a path to help added (the domestic violence
+hotline, local services, a pastor or counselor).
+
+**To double-check.**
+- Ezekiel 1: the Murashu archive's "Kabar" canal.
+- Ezekiel 3: Tel-abib as "mound of the flood".
+- Ezekiel 4, 21: the Septuagint readings (190 days; "unrighteous and lawless").
+- Ezekiel 8: 8:17 among the tiqqune soferim.
+- Ezekiel 17: Lachish letter 3 and Zedekiah's appeal to Egypt.
+- Ezekiel 23: ancient disfigurement penalties (likely the Middle Assyrian Laws).
