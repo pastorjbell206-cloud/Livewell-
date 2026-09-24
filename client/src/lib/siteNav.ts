@@ -147,6 +147,7 @@ export const SITE_NAV_GROUPS: SiteNavGroup[] = [
     title: "About",
     links: [
       { label: "About James Bell", href: "/about" },
+      { label: "Connect: everywhere James is", href: "/connect" },
       { label: "Newsletter (Substack)", href: "https://substack.com/@jamesbell333289", external: true },
       { label: "Following the Way (podcast)", href: "http://followingthewaypodcast.com/", external: true },
       { label: "Contact", href: "mailto:Pastorjbell206@gmail.com", external: true },

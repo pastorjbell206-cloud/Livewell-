@@ -9,6 +9,7 @@
 import { useEffect, useState } from "react";
 import { Link, useRoute } from "wouter";
 import Layout from "@/components/Layout";
+import MoreOnThis from "@/components/MoreOnThis";
 import { SEOMeta } from "@/components/SEOMeta";
 import { TriageBadge } from "@/components/TriageBadge";
 import type { Doctrine } from "@/lib/theology";
@@ -249,6 +250,7 @@ export default function TheologyDoctrine() {
         </div>
       </section>
 
+      {slug && <MoreOnThis href={`/theology/doctrine/${slug}`} />}
       <PageEndNav back={{ href: "/theology", label: "Theological Depth" }} />
     </Layout>
   );

@@ -15,6 +15,7 @@
 import { useEffect, useState } from "react";
 import { Link, useRoute } from "wouter";
 import Layout from "@/components/Layout";
+import MoreOnThis from "@/components/MoreOnThis";
 import { SEOMeta } from "@/components/SEOMeta";
 import LoadFailed from "@/components/LoadFailed";
 import { fetchJson } from "@/lib/fetch-json";
@@ -202,6 +203,7 @@ export default function WisdomTopic() {
           </ul>
         </div>
       </section>
+      <MoreOnThis href={`/wisdom/${id}`} />
     </Layout>
   );
 }

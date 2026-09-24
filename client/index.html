@@ -61,6 +61,38 @@
     <meta name="apple-mobile-web-app-title" content="LiveWell" />
     <meta name="format-detection" content="telephone=no" />
     <link rel="apple-touch-icon" href="/pwa-192x192.png" />
+    <!-- Self-heal. React replaces this static shell the moment the app starts.
+         If the page has finished loading and the shell is still here four
+         seconds later, the app failed to start in this browser: usually a
+         stored copy from an earlier deploy asking for files that no longer
+         exist. Clear any service workers and caches and reload, once per
+         browser session, so a reader is never left on the banner alone. -->
+    <script>
+      (function () {
+        try {
+          window.addEventListener("load", function () {
+            setTimeout(function () {
+              if (!document.getElementById("lw-shell")) return;
+              if (sessionStorage.getItem("lw-heal")) return;
+              sessionStorage.setItem("lw-heal", "1");
+              var go = function () { location.reload(); };
+              var jobs = [];
+              if (navigator.serviceWorker && navigator.serviceWorker.getRegistrations) {
+                jobs.push(navigator.serviceWorker.getRegistrations().then(function (rs) {
+                  return Promise.all(rs.map(function (r) { return r.unregister(); }));
+                }));
+              }
+              if (window.caches && caches.keys) {
+                jobs.push(caches.keys().then(function (ks) {
+                  return Promise.all(ks.map(function (k) { return caches.delete(k); }));
+                }));
+              }
+              Promise.all(jobs).then(go, go);
+            }, 4000);
+          });
+        } catch (e) { /* never block the page */ }
+      })();
+    </script>
   </head>
   <body>
     <div id="root">
@@ -68,7 +100,7 @@
            CSS arrives and long before the JS bundle runs, so a deep link on a
            slow phone shows the masthead instead of blank cream. React replaces
            it on mount. Tokens come from :root in the built CSS. -->
-      <div style="min-height:100vh;background:var(--bone,#F5F0E6)">
+      <div id="lw-shell" style="min-height:100vh;background:var(--bone,#F5F0E6)">
         <div style="height:58px;display:flex;align-items:center;padding:0 20px;background:rgba(245,240,230,.97);border-bottom:1px solid var(--border,#D9D3C4)">
           <span style="font-family:var(--F,Georgia,serif);font-size:20px;color:var(--ink,#14110C)">LiveWell</span>
           <span style="font-family:var(--U,sans-serif);font-size:9px;letter-spacing:.18em;color:var(--ink-muted,#5A5448);margin-left:10px">BY JAMES BELL</span>

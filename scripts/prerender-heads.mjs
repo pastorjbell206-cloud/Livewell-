@@ -552,6 +552,19 @@ const HUB_LISTINGS = {
     const d = readJsonSafe("client/public/studyguides/index.json");
     return ((d && d.guides) || []).map((g) => ({ title: g.title, href: `/studyguides/${g.slug}`, blurb: g.blurb || "" }));
   } },
+  // The Library and the Downloads shelf render from the catalogue at runtime;
+  // give crawlers the same list as plain links (built by build-catalogue.mjs
+  // before this script runs).
+  "/explore": { label: "The Library", cap: 400, load: () => {
+    const c = readJsonSafe("client/public/catalogue/index.json");
+    return ((c && c.items) || []).filter((i) => i.kind !== "Essay")
+      .map((i) => ({ title: `${i.title} (${i.kind})`, href: i.href, blurb: i.summary || "" }));
+  } },
+  "/downloads": { label: "Downloads", cap: 200, load: () => {
+    const c = readJsonSafe("client/public/catalogue/index.json");
+    return ((c && c.items) || []).filter((i) => i.files && i.files.length)
+      .map((i) => ({ title: i.title, href: i.files[0].href, blurb: i.summary || "" }));
+  } },
   "/pathways": { label: "Guided pathways", cap: 40, load: () => {
     const d = readJsonSafe("client/public/pathways/index.json") || [];
     return d.map((x) => ({ title: x.title, href: `/pathways/${x.slug}`, blurb: x.subtitle || "" }));

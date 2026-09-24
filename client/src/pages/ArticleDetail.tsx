@@ -22,6 +22,7 @@ import PageEndNav from "@/components/PageEndNav";
 import ReadingProgressBar from "@/components/ReadingProgressBar";
 import { SEOMeta, getArticleSchema, getBreadcrumbSchema } from "@/components/SEOMeta";
 import { AuthorBio } from "@/components/AuthorBio";
+import ChannelLine from "@/components/ChannelLine";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { CitationCopy } from "@/components/CitationCopy";
 import { AudienceShare } from "@/components/AudienceShare";
@@ -932,6 +933,7 @@ export default function ArticleDetail() {
 
             {/* AUTHOR BIO */}
             <AuthorBio author={author} />
+            <ChannelLine />
 
             <PageEndNav back={{ href: "/writing", label: "All essays" }} />
           </>

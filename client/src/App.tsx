@@ -175,6 +175,7 @@ const ToolsGlossary = lazy(() => import("./pages/tools/TheologyGlossary"));
 const QuoteLibrary = lazy(() => import("./pages/tools/QuoteLibrary"));
 const Dashboard = lazy(() => import("./pages/Dashboard"));
 const WorkWithJames = lazy(() => import("./pages/WorkWithJames"));
+const Connect = lazy(() => import("./pages/Connect"));
 const FaithCrisis = lazy(() => import("./pages/landing/FaithCrisis"));
 const MarriageCrisis = lazy(() => import("./pages/landing/MarriageCrisis"));
 const GriefLanding = lazy(() => import("./pages/landing/Grief"));
@@ -585,6 +586,7 @@ function Router() {
         <Route path="/tools/quotes" component={QuoteLibrary} />
         <Route path="/tools/glossary" component={ToolsGlossary} />
         <Route path="/work-with-james" component={WorkWithJames} />
+        <Route path="/connect" component={Connect} />
         <Route path="/privacy" component={Privacy} />
         <Route path="/accessibility" component={Accessibility} />
         <Route path="/terms" component={Terms} />

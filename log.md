@@ -3,6 +3,19 @@
 Newest first. One entry per working session: what changed, what broke, what
 is next. Decisions made without asking are recorded with their reason.
 
+## 2026-09-24 — Elite Site Prompt, Phases A–D finished; the blank-page safeguard
+
+**Changed.**
+- **More on this.** Every study guide, how-to, wisdom topic, context guide, life domain, doctrine, and church-history essay now ends with up to four related items from the catalogue. Shared Scripture counts most, then subject, then title words, with no more than two of one kind. Essays keep their existing related block.
+- **Connect.** `/connect` gathers every place to find James: the front page's "Follow the writing" block, which gains a Library tile, the newsletter, and speaking through Work with James. Every essay now ends with a one-line "James also writes elsewhere" list read from `lib/channels.ts`. The Library ends with the same block, the footer links to Connect, and the sitemap lists it.
+- **Print and wrapping.** The print stylesheet hides navigation and end-of-page blocks, shows link addresses, and sets page margins. Headlines wrap evenly.
+- **Crawlable lists.** The prerender gives crawlers the Library's 400 non-essay items and the Downloads files as plain links.
+- **Self-heal.** A small script in `client/index.html` watches the static shell. If the page has loaded and the app still hasn't replaced the shell four seconds later, it clears service workers and caches and reloads, once per session. James's desktop Chrome was stuck on the shell while fresh browsers loaded normally.
+
+**Verified.** Typecheck clean. 325 tests pass, 2 of them new. Every validator passes. Lint shows 0 errors. Build and prerender are clean. Axe finds no serious issues on `/connect`, a study guide, a wisdom topic, an essay, or the home page, at 1440 and 390 wide. The self-heal was tested both ways: a normal load is untouched, and a broken first load reloads once and then mounts.
+
+**Not done, with reasons.** There is no `/speaking` page with topics or events: those must come from James, and Work with James already takes requests. Phase D's per-file structured data and Phase E's admin "add anything" screen and monthly depth report depend on Foundation Phases 1 and 3. New wording is staged in `content/site-copy.md`.
+
 ## 2026-09-23 — Elite Site Prompt, Phase A: the Library
 
 **Changed.** One catalogue of everything on the site,

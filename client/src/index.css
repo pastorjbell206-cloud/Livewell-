@@ -457,7 +457,16 @@ footer{background:var(--charcoal);color:var(--bone);padding:60px 0 40px}
   article { max-width: 100%; }
   img { max-width: 100%; page-break-inside: avoid; }
   h1, h2, h3 { page-break-after: avoid; }
+  /* An essay printed or saved as PDF should still point home and show where
+     its links go; the end-of-page blocks are for the screen. */
+  header, nav, [aria-label="More on this"] { display: none !important; }
+  .article-body a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 10pt; }
+  @page { margin: 2cm; }
 }
+
+/* Headlines break into even lines; body paragraphs avoid a lone last word. */
+h1, h2, h3 { text-wrap: balance; }
+.article-body p { text-wrap: pretty; }
 
 /* ─── EDITORIAL TYPOGRAPHY ────────────────────────────────────────
  * Applies inside .article-body — the scope wrapping the shared Markdown

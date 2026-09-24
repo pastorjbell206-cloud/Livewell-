@@ -4,6 +4,7 @@
  * the shared Markdown renderer the article pages use.
  */
 import Layout from "@/components/Layout";
+import MoreOnThis from "@/components/MoreOnThis";
 import { SEOMeta } from "@/components/SEOMeta";
 import { useEffect, useState } from "react";
 import { Link, useRoute } from "wouter";
@@ -83,6 +84,7 @@ export default function HowToArticle() {
           )}
         </div>
       </section>
+      {article && slug && <MoreOnThis href={`/how-tos/${slug}`} />}
     </Layout>
   );
 }
