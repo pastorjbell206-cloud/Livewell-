@@ -790,3 +790,26 @@ story "implicitly" concedes the empty tomb.
 - Matthew 23: Mishnah Shekalim on whitewashed tombs.
 - Matthew 28: whether the tomb guards were Roman.
 - Matthew 13: Antipas rebuilding Sepphoris in Jesus' youth.
+
+## Mark
+
+**Checked and sound.** Papias (via Eusebius 3.39) and the Peter link; the
+date debate; the longer ending's evidence (Sinaiticus, Vaticanus, Eusebius,
+Jerome, Irenaeus, the Freer Logion); Antipas, Herodias, Aretas IV; Pilate and
+the Pilate stone; Caiaphas; the 1968 heel bone; Galilean geography; the
+resurrection as first-order confession.
+
+**Corrected.** Introduction: the centurion is the first human in Mark to call
+Jesus Son of God; Son of Man as Jesus' name for himself; Synoptic priority
+added (the majority view and the Augustinian and Two-Gospel alternatives);
+the shorter ending alone in one Old Latin manuscript; the section framing.
+Mark 1: eutheos and euthys. Mark 6: "apostles" also at 3:14; the dust custom
+softened. Mark 7, 10, 11, 12, 14, 16: the vice list, Bartimaeus, John
+2:19-21, the quadrans, the vineyard order, "before the council", apisteo.
+
+**To double-check.**
+- Mark 5: the Tenth Legion's boar; Kursi.
+- Mark 8: Herod's Augustus temple (Caesarea Philippi or Omrit).
+- Mark 4: the 1986 Galilee boat's stern (reconstructed).
+- Mark 10, 14, 15: the Sanhedrin's power to execute (debated).
+- Mark introduction: Farmer's The Synoptic Problem (1964).
