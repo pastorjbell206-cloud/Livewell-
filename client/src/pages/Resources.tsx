@@ -33,7 +33,7 @@ const LIBRARIES = [
     href: "/studyguides",
     eyebrow: "For group leaders",
     title: "Study Guides",
-    desc: "Run a class on Sunday without a week of prep: a leader's guide with timing and the answer behind every question, a participant handout, a facilitator script, and free printable PDFs. The whole collection in one place.",
+    desc: "Run a class on Sunday with zero prep: a leader's guide with timing and the answer behind every question, a participant handout, a facilitator script, and printable PDFs delivered free by email. The whole collection in one place.",
   },
   {
     href: "/resources/creeds",
@@ -42,10 +42,10 @@ const LIBRARIES = [
     desc: "The full texts of the creeds and confessions with plain-language notes on what the loaded phrases meant to the people who wrote them.",
   },
   {
-    href: "/resources/hard-issues-series",
-    eyebrow: "For elders · Free from PCN",
-    title: "The Hard Issues Series",
-    desc: "Five free booklets for elder teams: what elders are for, the biblical qualifications, finding and installing elders, handling disagreement, and removing an elder. Free PDF and EPUB.",
+    href: "/discipleship",
+    eyebrow: "The guided path",
+    title: "The Discipleship Pathway",
+    desc: "Four stages from new believer to disciple-maker, with concrete steps and a tracker that remembers where you are.",
   },
   {
     href: "/family/devotions",
@@ -106,13 +106,13 @@ export default function Resources() {
   return (
     <Layout>
       <SEOMeta
-        title="Resources — Study Guides, Libraries, and Ministry Tools"
-        description="Free resources for disciples, pastors, and leaders: the Reading Scripture in Context library, study guides, creeds and confessions, family devotions, and downloads."
+        title="The Resource Hub — Study Guides, Guides, and Downloads"
+        description="Free resources for disciples, group leaders, and households: the Reading Scripture in Context library, study guides, the creeds and confessions, family devotions, and downloads."
         url="https://www.livewellbyjamesbell.co/resources"
       />
 
       {/* HERO */}
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>Resources</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(34px, 5.4vw, 58px)", fontWeight: 400, lineHeight: 1.04, letterSpacing: "-0.025em", marginBottom: "18px", maxWidth: "20ch" }}>
@@ -246,7 +246,7 @@ export default function Resources() {
                       href={r.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      style={{ display: "inline-flex", alignItems: "center", gap: "8px", fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--bone)", background: "var(--charcoal)", padding: "9px 14px", textDecoration: "none", alignSelf: "flex-start" }}
+                      style={{ display: "inline-flex", alignItems: "center", gap: "8px", fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--charcoal-fg)", background: "var(--charcoal)", padding: "9px 14px", textDecoration: "none", alignSelf: "flex-start" }}
                     >
                       <Download size={14} /> Download
                     </a>
@@ -260,7 +260,7 @@ export default function Resources() {
       </section>
 
       {/* CLOSING */}
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--s-4)", color: "var(--bone)", textAlign: "center" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--s-4)", color: "var(--charcoal-fg)", textAlign: "center" }}>
         <div style={{ maxWidth: "560px", margin: "0 auto" }}>
           <p style={{ fontFamily: "var(--F)", fontSize: "17px", fontStyle: "italic", lineHeight: 1.6, color: "rgba(245,240,230,0.85)", marginBottom: "20px" }}>
             Looking for the writing itself? The essays and the books are the spine of everything here.

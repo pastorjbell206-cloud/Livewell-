@@ -36,22 +36,33 @@ export function PageTracker() {
     if (location.startsWith("/admin")) return; // never count admin visits
     if (last.current === location) return; // dedupe repeated fires for one path
     last.current = location;
-    try {
-      const body = JSON.stringify({
-        path: location,
-        referrer: document.referrer || null,
-        visitorId: visitorId(),
-      });
-      // keepalive lets the beacon survive a navigation; failures are ignored.
-      fetch("/api/track", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body,
-        keepalive: true,
-      }).catch(() => {});
-    } catch {
-      /* never break navigation */
+    const send = () => {
+      try {
+        const body = JSON.stringify({
+          path: location,
+          referrer: document.referrer || null,
+          visitorId: visitorId(),
+        });
+        // keepalive lets the beacon survive a navigation; failures are ignored.
+        fetch("/api/track", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body,
+          keepalive: true,
+        }).catch(() => {});
+      } catch {
+        /* never break navigation */
+      }
+    };
+    // The first view waits for the page to finish loading: a beacon fired
+    // during first render shares the connection with the fonts and the
+    // essay index the reader is waiting on. Later route changes send at once.
+    if (document.readyState === "complete") {
+      send();
+      return;
     }
+    window.addEventListener("load", send, { once: true });
+    return () => window.removeEventListener("load", send);
   }, [location]);
 
   return null;

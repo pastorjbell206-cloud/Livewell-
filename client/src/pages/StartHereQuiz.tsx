@@ -51,18 +51,18 @@ export const READING_PATHS = {
   "marriage-crisis-articles": {
     title: "Marriage Under Strain",
     articles: [
-      { title: "When Romance Left Covenant Remains", slug: "when-romance-left-covenant-remains" },
-      { title: "What the Resentment in Your Marriage Is Telling You", slug: "the-resentment-in-your-marriage" },
-      { title: "Rest, Ambition, and the Idol of Success", slug: "rest-ambition-and-the-idol-of-success" }
+      { title: "What Is Covenant Marriage? Why Marriage Is Not a Contract", slug: "covenant-vs-contract-what-marriage-is" },
+      { title: "Resentment in Marriage and How to Stop Resenting Your Spouse", slug: "the-resentment-in-your-marriage" },
+      { title: "What Is the Sabbath and Should Christians Keep It Today?", slug: "what-the-sabbath-is-and-why-you-need-it" }
     ],
     book: "What If We're Wrong?"
   },
   "marriage-searching-articles": {
     title: "Building Covenant Strength",
     articles: [
-      { title: "When Romance Left Covenant Remains", slug: "when-romance-left-covenant-remains" },
-      { title: "What Are You Really Promising in Your Marriage Vows?", slug: "the-covenant-you-didnt-understand" },
-      { title: "Why Do Married Couples Slowly Drift Apart?", slug: "the-slow-drift-that-ends-marriages" }
+      { title: "What Is Covenant Marriage? Why Marriage Is Not a Contract", slug: "covenant-vs-contract-what-marriage-is" },
+      { title: "Why Married Couples Drift Apart and End Up Feeling Like Roommates", slug: "the-slow-drift-that-ends-marriages" },
+      { title: "How to Forgive Your Spouse, and Why Forgiveness Isn't Trust", slug: "forgiveness-in-marriage" }
     ],
     book: "The Monster in the Mirror"
   },
@@ -70,8 +70,8 @@ export const READING_PATHS = {
     title: "Parenting Through Uncertainty",
     articles: [
       { title: "When Your Teenager Says They Don't Believe Anymore", slug: "teenager-losing-faith" },
-      { title: "How to Talk to Your Kids About Faith When You're Not Sure Yourself", slug: "how-to-talk-kids-faith-doubt" },
-      { title: "Rest, Ambition, and the Idol of Success", slug: "rest-ambition-and-the-idol-of-success" }
+      { title: "How to Raise Kids in the Faith When You Have Doubts Yourself", slug: "how-to-talk-kids-faith-doubt" },
+      { title: "What Is the Sabbath and Should Christians Keep It Today?", slug: "what-the-sabbath-is-and-why-you-need-it" }
     ],
     book: "When God Bless America Replaces Thy Kingdom Come"
   },
@@ -87,8 +87,8 @@ export const READING_PATHS = {
   "pastoral-articles": {
     title: "Pastoral Leadership & Burnout",
     articles: [
-      { title: "Can You Be a Christian on Your Own?", slug: "can-you-be-a-christian-alone" },
-      { title: "Rest, Ambition, and the Idol of Success", slug: "rest-ambition-and-the-idol-of-success" },
+      { title: "Can You Be a Christian Without Going to Church?", slug: "can-you-be-a-christian-alone" },
+      { title: "What Is the Sabbath and Should Christians Keep It Today?", slug: "what-the-sabbath-is-and-why-you-need-it" },
       { title: "Who Pastors the Pastor When No One Checks In?", slug: "the-pastor-nobody-checks-on" }
     ],
     book: "The Monster in the Mirror"
@@ -97,7 +97,7 @@ export const READING_PATHS = {
     title: "Essential LiveWell Collection",
     articles: [
       { title: "What Comes After Deconstruction of Your Faith?", slug: "excavation-not-demolition" },
-      { title: "When Romance Left Covenant Remains", slug: "when-romance-left-covenant-remains" },
+      { title: "What Is Covenant Marriage? Why Marriage Is Not a Contract", slug: "covenant-vs-contract-what-marriage-is" },
       { title: "Why a Frightened Church Wants a King", slug: "strongman-theology" }
     ],
     book: "The Monster in the Mirror"
@@ -214,6 +214,10 @@ export default function StartHereQuiz() {
 
       <MinimalNav />
 
+      {/* This page renders the nav directly rather than through Layout, so it
+          declares its own main landmark — the skip link in MinimalNav targets it. */}
+      <main id="main">
+
       <section style={{ flex: 1, padding: "40px 20px", maxWidth: "900px", margin: "0 auto", width: "100%" }}>
         {!isComplete ? (
           <>
@@ -231,7 +235,6 @@ export default function StartHereQuiz() {
                   { label: "Doubt", href: "/doubt" },
                   { label: "Disciple someone", href: "/table" },
                   { label: "Grief", href: "/plans/grief" },
-                  { label: "Pastoring", href: "/for-pastors" },
                   { label: "The essays", href: "/writing" },
                 ].map((c) => (
                   <Link key={c.href} href={c.href} style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink)", textDecoration: "none", background: "var(--card)", border: "1px solid var(--border)", borderRadius: "999px", padding: "8px 16px" }}>
@@ -433,6 +436,8 @@ export default function StartHereQuiz() {
           </>
         )}
       </section>
+
+      </main>
 
       <Footer />
     </div>

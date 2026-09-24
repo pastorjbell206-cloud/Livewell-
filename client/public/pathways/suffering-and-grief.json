@@ -45,18 +45,13 @@
     },
     {
       "kind": "book",
-      "heading": "Then read the book, free",
-      "note": "Hard Questions gathers the long-form work on suffering, evil, the hiddenness of God, and whether faith survives them. The full book, free.",
+      "heading": "Then read the book",
+      "note": "The book gives the problem of suffering the length it deserves, alongside the other questions that keep honest people from faith.",
       "items": [
         {
-          "label": "Hard Questions — read free",
-          "href": "/read/essays-hard-questions",
-          "blurb": "Twenty-two chapters of honest answers for a skeptical age. Free to read in full."
-        },
-        {
-          "label": "Find James's books in the bookstore",
-          "href": "/books",
-          "blurb": "Print and ebook editions of the full library."
+          "label": "Believe: The Rational Case for Christian Faith",
+          "href": "/books/believe",
+          "blurb": "Answers to the hardest questions skeptics ask about God, the Bible, the resurrection, suffering, and hell, from a pastor who was once an atheist."
         }
       ]
     }

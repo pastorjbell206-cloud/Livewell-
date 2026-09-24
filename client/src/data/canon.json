@@ -1,0 +1,17 @@
+{
+  "_comment": "The twelve essays to read first: the canon. Featured on /canon and offered as the first reading path. James picks and reorders; this list is a proposal drawn from the homepage flagships, the first-time-here essays and the most-asked questions. scripts/build-public-essays.mjs emits /essays/canon.json from it.",
+  "slugs": [
+    "the-atheist-in-the-pulpit",
+    "what-the-gospel-actually-is",
+    "what-is-the-kingdom-of-god-and-why-it-changes-everything",
+    "how-to-read-the-bible-without-making-it-say-what-you-want",
+    "already-and-not-yet-living-between-two-worlds",
+    "does-god-actually-exist",
+    "is-jesus-really-the-only-way",
+    "can-you-have-faith-and-doubt",
+    "what-christian-nationalism-is-and-is-not",
+    "christendom-is-ending",
+    "when-the-church-is-what-hurt-you",
+    "why-there-are-so-many-christian-denominations"
+  ]
+}

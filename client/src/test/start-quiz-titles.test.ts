@@ -9,12 +9,18 @@ import { describe, it, expect } from "vitest";
 import { READING_PATHS } from "@/pages/StartHereQuiz";
 import contentData from "@/data/content-data.json";
 import staticLibrary from "../../../content/static-library.generated.json";
+import rewrites from "../../../content/rewrites.generated.json";
 
 type Rec = { slug: string; title: string };
 const posts = (contentData as { posts: Rec[] }).posts ?? (contentData as unknown as Rec[]);
+const rewritten = new Set<string>((rewrites as { rewritten: string[] }).rewritten);
+const merged = (rewrites as { merged: Record<string, string> }).merged;
 const bySlug = new Map<string, string>();
 for (const r of staticLibrary as Rec[]) bySlug.set(r.slug, r.title);
-for (const r of posts) bySlug.set(r.slug, r.title); // seed wins, like the runtime
+// The seed wins, like the runtime, except over a rewrite (a rewrite outranks the
+// old row everywhere) and for an essay merged away (its address redirects).
+for (const r of posts) if (!rewritten.has(r.slug)) bySlug.set(r.slug, r.title);
+for (const slug of Object.keys(merged)) bySlug.delete(slug);
 
 describe("Start Here quiz titles", () => {
   const pairs = Object.values(READING_PATHS).flatMap((p) => p.articles);

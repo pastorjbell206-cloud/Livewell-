@@ -115,7 +115,7 @@ export default function Table() {
       />
 
       {/* Vision — hero */}
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>Make Disciples</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(36px, 6vw, 64px)", fontWeight: 400, lineHeight: 1.04, letterSpacing: "-0.025em", marginBottom: "20px", maxWidth: "18ch" }}>
@@ -228,7 +228,7 @@ export default function Table() {
       </section>
 
       {/* Use it freely */}
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--s-4)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--s-4)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <SectionArt seed="table-freely" tone="dark" />
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "12px" }}>No license, no gate</div>
@@ -251,9 +251,8 @@ export default function Table() {
                 Leading a table is a skill anyone can learn. Start with how to host, how to ask a question and wait, and how to raise the next leader instead of keeping the seat.
               </p>
               <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <Link href="/leadership/guides" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>Training guides for leaders</Link>
                 <Link href="/discipleship" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>The discipleship pathway</Link>
-                <Link href="/leadership" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>The leadership library</Link>
+                <Link href="/studyguides" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>Study guides for groups</Link>
               </div>
             </div>
             <div>

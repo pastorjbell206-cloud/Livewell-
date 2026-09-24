@@ -11,6 +11,7 @@
 import mysql from "mysql2/promise";
 import fs from "node:fs";
 import dotenv from "dotenv";
+import { redirectedEssaySlugs } from "./redirected-essays.mjs";
 
 dotenv.config();
 
@@ -47,10 +48,26 @@ function loadTakenDown() {
 }
 const TAKEN_DOWN = loadTakenDown();
 
+// The pastor-trade essays moved to PCN: their old URLs 301 there (vercel.json),
+// so they must not be advertised here whether the DB still holds them or not.
+function loadMoved() {
+  try {
+    return new Set(JSON.parse(fs.readFileSync("content/pcn-moved.json", "utf8")).slugs || []);
+  } catch {
+    return new Set();
+  }
+}
+const PCN_MOVED = loadMoved();
+// Essays merged into a rewrite (scripts/apply-rewrites.mjs) redirect to it.
+for (const slug of Object.keys((() => { try { return JSON.parse(fs.readFileSync("content/rewrites.generated.json", "utf8")).merged || {}; } catch { return {}; } })())) PCN_MOVED.add(slug);
+// Never advertise an address that redirects elsewhere (redirected-essays.mjs).
+for (const slug of redirectedEssaySlugs()) PCN_MOVED.add(slug);
+
 function mergeArticles(dbArticles) {
-  const have = new Set((dbArticles || []).map(a => a.slug));
-  const extra = STATIC_ARTICLES.filter(a => !have.has(a.slug) && !TAKEN_DOWN.has(a.slug));
-  return [...(dbArticles || []), ...extra];
+  const db = (dbArticles || []).filter(a => !PCN_MOVED.has(a.slug));
+  const have = new Set(db.map(a => a.slug));
+  const extra = STATIC_ARTICLES.filter(a => !have.has(a.slug) && !TAKEN_DOWN.has(a.slug) && !PCN_MOVED.has(a.slug));
+  return [...db, ...extra];
 }
 
 const STATIC_PAGES = [
@@ -69,10 +86,8 @@ const STATIC_PAGES = [
   { url: "/writing?track=manhood", priority: "0.7", changefreq: "weekly" },
   { url: "/writing?track=womanhood", priority: "0.7", changefreq: "weekly" },
   { url: "/writing?track=finances", priority: "0.7", changefreq: "weekly" },
-  { url: "/for-pastors", priority: "0.75", changefreq: "weekly" },
   { url: "/tools", priority: "0.6", changefreq: "monthly" },
   { url: "/work-with-james", priority: "0.6", changefreq: "monthly" },
-  { url: "/membership", priority: "0.7", changefreq: "monthly" },
   { url: "/resources", priority: "0.7", changefreq: "monthly" },
   // Five-pillar listing pages (current nav taxonomy) + Study Guides.
   { url: "/writing?pillar=theological-depth", priority: "0.85", changefreq: "weekly" },
@@ -97,7 +112,6 @@ const STATIC_PAGES = [
   { url: "/family/devotions", priority: "0.75", changefreq: "monthly" },
   { url: "/family/catechism", priority: "0.7", changefreq: "monthly" },
   { url: "/family/reading-plans", priority: "0.7", changefreq: "monthly" },
-  { url: "/framework", priority: "0.85", changefreq: "monthly" },
   { url: "/historic-faith", priority: "0.85", changefreq: "monthly" },
   { url: "/answers", priority: "0.9", changefreq: "weekly" },
   { url: "/assessments", priority: "0.85", changefreq: "monthly" },
@@ -211,10 +225,10 @@ const STATIC_PAGES = [
   // Entry points, hubs, and misc previously missing
   { url: "/start-here", priority: "0.85", changefreq: "monthly" },
   { url: "/pathways", priority: "0.75", changefreq: "monthly" },
-  { url: "/map", priority: "0.8", changefreq: "monthly" },
   { url: "/capture-by-the-right", priority: "0.8", changefreq: "monthly" },
   { url: "/capture-by-the-left", priority: "0.8", changefreq: "monthly" },
-  { url: "/after-christendom", priority: "0.8", changefreq: "monthly" },
+  { url: "/reading-scripture-past-our-politics", priority: "0.8", changefreq: "monthly" },
+  { url: "/the-pastoral-angle", priority: "0.8", changefreq: "monthly" },
   { url: "/theology/explorer", priority: "0.8", changefreq: "monthly" },
   { url: "/tools/which-lens", priority: "0.8", changefreq: "monthly" },
   { url: "/tools/test-the-case", priority: "0.8", changefreq: "monthly" },
@@ -227,11 +241,11 @@ const STATIC_PAGES = [
   { url: "/living-well", priority: "0.75", changefreq: "monthly" },
   { url: "/wisdom", priority: "0.8", changefreq: "monthly" },
   { url: "/how-tos", priority: "0.75", changefreq: "monthly" },
+  { url: "/notes", priority: "0.7", changefreq: "weekly" },
+  { url: "/canon", priority: "0.9", changefreq: "monthly" },
   { url: "/studyguides", priority: "0.8", changefreq: "monthly" },
-  { url: "/article-collections", priority: "0.7", changefreq: "monthly" },
   { url: "/substack", priority: "0.6", changefreq: "monthly" },
   { url: "/subscribe", priority: "0.7", changefreq: "monthly" },
-  { url: "/resources/hard-issues-series", priority: "0.75", changefreq: "monthly" },
   // Legal
   { url: "/privacy", priority: "0.3", changefreq: "monthly" },
   { url: "/terms", priority: "0.3", changefreq: "monthly" },

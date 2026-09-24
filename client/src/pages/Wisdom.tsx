@@ -107,7 +107,7 @@ export default function Wisdom() {
         url="https://www.livewellbyjamesbell.co/wisdom"
       />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>Wisdom · For all of life</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5.2vw, 56px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "18px", maxWidth: "18ch" }}>
@@ -123,7 +123,7 @@ export default function Wisdom() {
             <Link href="/tools/wisdom-finder" style={{ display: "inline-block", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--charcoal)", background: "var(--mustard)", padding: "13px 22px", textDecoration: "none" }}>
               Tell us what you are facing
             </Link>
-            <Link href="/life/wisdom-for-all-of-life" style={{ display: "inline-block", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--bone)", background: "transparent", border: "1px solid rgba(245,240,230,0.4)", padding: "13px 22px", textDecoration: "none" }}>
+            <Link href="/life/wisdom-for-all-of-life" style={{ display: "inline-block", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--charcoal-fg)", background: "transparent", border: "1px solid rgba(245,240,230,0.4)", padding: "13px 22px", textDecoration: "none" }}>
               Read the guide
             </Link>
           </div>

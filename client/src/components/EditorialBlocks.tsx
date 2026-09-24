@@ -60,7 +60,7 @@ export function PullQuote({
           fontWeight: 400,
           lineHeight: 1.28,
           letterSpacing: "-0.012em",
-          color: dark ? "var(--bone)" : "var(--ink)",
+          color: dark ? "var(--charcoal-fg)" : "var(--ink)",
           margin: 0,
         }}
       >
@@ -112,7 +112,7 @@ export function ScriptureBlock({
           fontWeight: 400,
           lineHeight: 1.42,
           letterSpacing: "-0.005em",
-          color: dark ? "var(--bone)" : "var(--ink)",
+          color: dark ? "var(--charcoal-fg)" : "var(--ink)",
           margin: 0,
         }}
       >
@@ -159,7 +159,7 @@ export function StatementBand({
     <section
       style={{
         background: dark ? "var(--charcoal)" : "var(--bone-warm)",
-        color: dark ? "var(--bone)" : "var(--ink)",
+        color: dark ? "var(--charcoal-fg)" : "var(--ink)",
         padding: "var(--s-6) var(--s-4)",
       }}
     >
@@ -167,7 +167,10 @@ export function StatementBand({
         {eyebrow && (
           <div
             className="eyebrow"
-            style={{ justifyContent: "center", marginBottom: "18px", color: "var(--mustard-text)" }}
+            // --mustard-text is the darkened mustard for cream; on charcoal it
+            // fails AA contrast (axe, /writing), so the dark band uses the
+            // accent itself.
+            style={{ justifyContent: "center", marginBottom: "18px", color: dark ? "var(--mustard)" : "var(--mustard-text)" }}
           >
             {eyebrow}
           </div>
@@ -180,7 +183,7 @@ export function StatementBand({
             fontStyle: "italic",
             lineHeight: 1.25,
             letterSpacing: "-0.015em",
-            color: dark ? "var(--bone)" : "var(--ink)",
+            color: dark ? "var(--charcoal-fg)" : "var(--ink)",
             margin: 0,
             maxWidth: width,
             marginInline: "auto",

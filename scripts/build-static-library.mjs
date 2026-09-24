@@ -14,6 +14,7 @@
  */
 import { readFileSync, writeFileSync, readdirSync, existsSync, statSync } from "node:fs";
 import { join } from "node:path";
+import { applyToLibrary, loadRewrites, loadRetirements } from "./apply-rewrites.mjs";
 
 // dir -> classification. pillar must be a value pillarToTrack() resolves, so the
 // essay lands in the right /writing track and content-pillar. Editorial; James
@@ -376,7 +377,9 @@ if (existsSync(PC_PATH)) {
   }
 }
 
-const allRecords = records.concat(bridgeRecords, draftRecords, pcRecords);
+// The rewrites (content/rewrites/*.md, docs/rewrites/STANDARD.md) lie over
+// every source, so rebuilding the library from its sources never undoes them.
+const allRecords = applyToLibrary(records.concat(bridgeRecords, draftRecords, pcRecords), loadRewrites(), undefined, loadRetirements()).records;
 
 const outPath = "api/static-library.generated.ts";
 const banner =

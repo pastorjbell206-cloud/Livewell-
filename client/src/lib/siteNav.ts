@@ -5,25 +5,16 @@
  *
  * LiveWell is James Bell's writing platform: the essays, the books, the
  * newsletter, theology, church history, justice, the hard questions — a place
- * to read, learn, and grow. The header carries that identity in five doors
- * named for what the READER came to do, not for the author's filing system
- * (docs/WORLD-CLASS-SITE-PROMPT.md; the approved IA in
- * docs/SITE-STRATEGY-AUDIT.md §4): Read, Study, Answers, Grow, Books — with
- * "Start Here" standing beside them for the newcomer. Study is the one door
- * to the Bible tools and the church's history; Answers is the one door to
- * the hard questions; Grow holds the assessments, guides, and instruments.
- *
- * About, contact, membership, and the pastors' network live in a footer-only
- * group. A group with no `primary` links never appears in the header or the
- * mobile menu; the footer still shows it, and the newsletter form anchors
- * under it on every page. Nothing is deleted and no URL breaks: the retired
- * duplicate doors (/start-here, /framework, /church-history) 301 to the door
- * that survived.
+ * to read, learn, and grow. The header carries five doors named for what the
+ * reader came to do (docs/SITE-STRATEGY-AUDIT.md §4): Read, Study, Answers,
+ * Grow, Books. About, contact and the pastors' network live in a footer-only
+ * group; the newsletter form anchors under it on every page.
  *
  * Two surfaces, one map: `primary: true` puts a link in the header and renders
  * it prominently in the footer; everything else renders as the footer column's
  * compact tail. The header stays scannable and the footer stays short, but no
- * destination is ever lost.
+ * destination is ever lost. Pages that redirect (/explore, /map, /framework,
+ * /article-collections) are not listed: a link to a redirect is a detour.
  */
 export interface SiteNavLink {
   label: string;
@@ -58,23 +49,30 @@ export function headerLinks(group: SiteNavGroup): SiteNavLink[] {
 
 export const SITE_NAV_GROUPS: SiteNavGroup[] = [
   {
-    // "I want to read." The essays, the paths through them, and the subjects.
+    // "I want to read." The essays, the twelve to start with, the paths, the subjects.
     title: "Read",
     links: [
       { label: "The Library: everything", href: "/explore", primary: true },
       { label: "All the writing", href: "/writing", primary: true },
+      { label: "Start with these twelve", href: "/canon", primary: true },
       { label: "Reading paths", href: "/reading-paths", primary: true },
-      { label: "Topic pathways", href: "/pathways", primary: true },
       { label: "The six pillars", href: "/pillars", primary: true },
       { label: "When faith has questions", href: "/writing?track=doubt", primary: true },
       { label: "Justice", href: "/justice", primary: true },
       { label: "The church and power", href: "/disruption", primary: true },
+      // The web companion to When God Bless America: eleven essays and the
+      // scorecard. Built and indexed, but no menu reached it until Sept 2026.
+      { label: "Christ and the nation", href: "/nation", primary: true },
+      // Jeremiah 29 and 1 Peter for a church displaced; finished, never linked.
+      { label: "Living as exiles", href: "/exile" },
+      // The short pieces (Facebook-length). Footer tail until the posts are
+      // imported; a header link to an empty room helps nobody.
+      { label: "Notes", href: "/notes" },
+      { label: "Topic pathways", href: "/pathways" },
       { label: "Marriage", href: "/marriage" },
       { label: "Parenting", href: "/parenting" },
       { label: "Home and family", href: "/family" },
       { label: "Living well", href: "/living-well" },
-      { label: "Article collections", href: "/article-collections" },
-      { label: "The Commonplace", href: "/library" },
     ],
   },
   {
@@ -89,14 +87,12 @@ export const SITE_NAV_GROUPS: SiteNavGroup[] = [
       { label: "Study any passage", href: "/tools/deep-bible", primary: true },
       { label: "A passage in context", href: "/theology/passage", primary: true },
       { label: "What the Bible says about…", href: "/tools/bible-on", primary: true },
-      { label: "Find a verse by topic", href: "/tools/verse-finder", primary: true },
-      { label: "Twelve books, studied", href: "/tools/bible-study", primary: true },
       { label: "Church history", href: "/theology/history", primary: true },
       { label: "Theology", href: "/theology", primary: true },
+      { label: "Find a verse by topic", href: "/tools/verse-finder" },
+      { label: "Twelve books, studied", href: "/tools/bible-study" },
       { label: "Wisdom for all of life", href: "/wisdom" },
       { label: "Wisdom finder", href: "/tools/wisdom-finder" },
-      { label: "Scripture memory", href: "/tools/scripture-memory" },
-      { label: "Theology glossary", href: "/tools/glossary" },
       { label: "The historic faith", href: "/historic-faith" },
       { label: "Reading Scripture in context", href: "/resources/context" },
     ],
@@ -109,7 +105,6 @@ export const SITE_NAV_GROUPS: SiteNavGroup[] = [
       { label: "Questions people ask", href: "/faq", primary: true },
       { label: "Test the case", href: "/tools/test-the-case", primary: true },
       { label: "Which lens are you reading through?", href: "/tools/which-lens", primary: true },
-      { label: "The Hard Issues Series", href: "/resources/hard-issues-series", primary: true },
       { label: "Essays for skeptics and seekers", href: "/honest-questions" },
       { label: "Theology quiz", href: "/tools/theology-quiz" },
     ],
@@ -126,7 +121,6 @@ export const SITE_NAV_GROUPS: SiteNavGroup[] = [
       { label: "The whole of life", href: "/life" },
       { label: "How-to guides", href: "/how-tos" },
       { label: "Resources", href: "/resources" },
-      { label: "The map", href: "/map" },
     ],
   },
   {
@@ -152,7 +146,6 @@ export const SITE_NAV_GROUPS: SiteNavGroup[] = [
       { label: "Newsletter (Substack)", href: "https://substack.com/@jamesbell333289", external: true },
       { label: "Following the Way (podcast)", href: "http://followingthewaypodcast.com/", external: true },
       { label: "Contact", href: "mailto:Pastorjbell206@gmail.com", external: true },
-      { label: "Membership", href: "/membership" },
       { label: "Work with James", href: "/work-with-james" },
       // The pastors' material now lives with the network it belongs to.
       { label: "Pastors Connection Network", href: "https://pastorsconnectionnetwork.com", external: true },

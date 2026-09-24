@@ -9,7 +9,9 @@
 import { createElement, useEffect } from "react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { CoverImage } from "@/components/CoverImage";
 import { BookNextSteps } from "@/components/BookNextSteps";
+import { BuyEbookButton } from "@/components/BuyEbookButton";
 import { AUTHOR_BIO, SITE_URL } from "@/lib/site";
 import { STRIPE_PUBLISHABLE_KEY } from "@/lib/stripe";
 
@@ -70,12 +72,12 @@ export default function WhenGodBlessAmerica() {
       />
 
       {/* HERO */}
-      <section style={{ background: "var(--ink)", color: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
+      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-6) var(--s-4)" }}>
         <div className="book-detail-hero" style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "grid", gap: "var(--s-5)", alignItems: "center" }}>
-          <img
+          <CoverImage
             src={COVER}
             alt="When God Bless America Replaces Thy Kingdom Come — cover"
-            width={1600} height={2416}
+            width={1600} height={2416} eager
             style={{ width: "100%", height: "auto", borderRadius: "var(--radius-sm)", boxShadow: "0 16px 48px rgba(0,0,0,.45)" }}
           />
           <div>
@@ -90,7 +92,7 @@ export default function WhenGodBlessAmerica() {
               James Bell
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "18px", flexWrap: "wrap" }}>
-              <StripeBuyButton />
+              <BuyEbookButton slug="when-god-bless-america" title="When God Bless America Replaces Thy Kingdom Come" label="Get the ebook — $8.99" fallback={<StripeBuyButton />} />
               <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "rgba(245,240,230,.65)" }}>
                 EPUB + PDF · instant download · secure checkout by Stripe
               </span>
@@ -140,7 +142,7 @@ export default function WhenGodBlessAmerica() {
       </section>
 
       {/* BUY + BIO */}
-      <section style={{ background: "var(--ink)", color: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
+      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-6) var(--s-4)" }}>
         <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto", textAlign: "center" }}>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "30px", fontWeight: 400, margin: "0 0 14px" }}>
             Read it now

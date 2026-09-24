@@ -20,11 +20,6 @@
           "blurb": "You cannot serve God and mammon. He said it as a warning, not a paradox."
         },
         {
-          "label": "What the Jubilee Means",
-          "href": "/writing/what-jubilee-means",
-          "blurb": "An economy God built to reset every fifty years, and why we quietly filed it under metaphor."
-        },
-        {
           "label": "The Poor Are Not a Ministry Category — They Are the Test of the Church",
           "href": "/writing/poor-not-ministry-category",
           "blurb": "Scripture does not treat the poor as a program. It treats them as the exam."
@@ -40,23 +35,6 @@
           "label": "Where Your Treasure Is — a study on money",
           "href": "/studyguides/money",
           "blurb": "Five sessions on what the heart does with what it has."
-        }
-      ]
-    },
-    {
-      "kind": "book",
-      "heading": "Then read the book, free",
-      "note": "On Money & Stewardship gathers the long-form work — debt, generosity, tithing, contentment, and what Jesus meant by mammon. The full book, free.",
-      "items": [
-        {
-          "label": "On Money & Stewardship — read free",
-          "href": "/read/essays-money-stewardship",
-          "blurb": "Sixteen chapters on treasure and the heart. Free to read in full."
-        },
-        {
-          "label": "Find James's books in the bookstore",
-          "href": "/books",
-          "blurb": "Print and ebook editions of the full library."
         }
       ]
     }

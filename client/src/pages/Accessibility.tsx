@@ -16,7 +16,7 @@ export default function Accessibility() {
         description="Our commitment to an accessible site: WCAG 2.1 AA as the working standard, what is in place, and how to tell us when something is in your way."
         url="https://www.livewellbyjamesbell.co/accessibility"
       />
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>Accessibility</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(30px, 5vw, 48px)", fontWeight: 400, lineHeight: 1.08, letterSpacing: "-0.02em" }}>

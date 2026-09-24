@@ -1,0 +1,168 @@
+# Pastor-trade essays still published on LiveWell
+
+These %d essays live in the **database**, not in the code, so they were not moved by the
+archive. They are still published at `/writing/<slug>` and still carry their search
+rankings. Nothing here is lost.
+
+To take them off LiveWell, unpublish them in Admin -> Posts (search the slug). Do it in
+batches, and only after the same piece is live on PCN, so the reader always lands
+somewhere. Redirecting each URL to its PCN home preserves the traffic; deleting outright
+forfeits it.
+
+## Slugs
+
+- `17-mobilizing-your-church-for-world-missions-without-a-big-budget`
+- `ai-authenticity-pastor-artificial-intelligence`
+- `anxiety-perfectionism-pastor-breaking-cycle`
+- `art-of-saying-no-without-guilt`
+- `before-launch-ministry-ask-other-church`
+- `bivocational-ministry-done-right`
+- `bivocational-pastors-get-right`
+- `building-leadership-team`
+- `burnout-nobody-talks-about`
+- `church-closures-outpacing-plants`
+- `church-needs-you-healthy-not-busy`
+- `church-political-brand-step-back`
+- `church-split-surviving-learning-forward`
+- `city-wide-church-together`
+- `conflict-is-not-failure`
+- `culture-discipleship-not-attendance`
+- `danger-pastoral-isolation`
+- `delegation-is-not-weakness`
+- `depression-in-the-pulpit`
+- `difference-tired-and-done`
+- `eighty-percent-churches-plateaued`
+- `expository-vs-topical-preaching`
+- `finding-your-barnabas`
+- `five-biggest-mistakes-new-pastors`
+- `five-preaching-habits-that-empty-a-room`
+- `five-sermon-habits-shrinking-faith`
+- `gen-z-wants-from-church`
+- `give-feedback-changes-behavior`
+- `global-south-church-teach-suffering`
+- `healthy-pastor-referral-network`
+- `hidden-pain-successful-pastor`
+- `how-to-build-a-healthy-church-staff-culture`
+- `how-to-develop-leaders-not-just-volunteers`
+- `how-to-lead-without-losing-your-soul`
+- `how-to-preach-to-people-who-have-heard-it-all`
+- `how-to-revitalize-a-dying-church`
+- `interior-life-of-pastor`
+- `lead-church-decline-without-losing-hope`
+- `lead-through-church-crisis`
+- `lead-when-trust-institutions-low`
+- `leading-a-church-when-trust-is-gone`
+- `leading-through-conflict-on-a-church-team`
+- `learned-from-pastor-disagrees`
+- `learned-unity-pastoring-across-cultures`
+- `loneliness-of-leadership`
+- `metrics-tell-church-healthy`
+- `mission-sending-culture-never-sent`
+- `most-dangerous-person-church-staff`
+- `national-pastors-redefining-missionary`
+- `not-your-churchs-attendance-numbers`
+- `okay-to-see-counselor`
+- `pastor-politically-divided-gospel-central`
+- `pastoral-care-wealthy-congregant`
+- `pastors-authority-relational`
+- `pastors-depression-not-faith-problem`
+- `pastors-kids-watching-what-seeing`
+- `personal-board-accountability`
+- `preach-same-gospel-different-people`
+- `preaching-politics-without-losing-the-gospel`
+- `preaching-to-room-not-there-yet`
+- `present-at-home-mind-never-leaves`
+- `prophetic-pastor`
+- `protecting-marriage-ministry-demands`
+- `reformed-charismatic-pastors-same-table`
+- `replanting-when-a-church-starts-over`
+- `return-ministry-after-burnout`
+- `revitalize-or-replant`
+- `sabbatical-why-church-should-require`
+- `scandals-teaching-accountability`
+- `short-term-mission-trips-help-hurt`
+- `slow-burn-ministry-exhaustion`
+- `small-churches-get-right`
+- `spouse-wishes-knew-parsonage`
+- `staff-culture-no-burnout`
+- `stop-performing-start-pastoring`
+- `stopped-competing-church-across-town`
+- `talk-global-missions-moves-congregation`
+- `talk-politics-pulpit-without-destroying`
+- `the-difference-between-a-sermon-and-a-talk`
+- `the-interior-life-of-the-pastor`
+- `the-lonely-seat-power-and-the-senior-leader`
+- `three-small-churches-coplanted`
+- `unreached-people-groups-closest-to-you`
+- `vision-without-community-fantasy`
+- `when-fire-someone-with-integrity`
+- `when-man-pulpit-falling-apart`
+- `when-preaching-gets-stale`
+- `when-shepherd-needs-shepherding`
+- `when-to-fire-someone-in-ministry`
+- `white-churches-wrong-about-diversity`
+- `why-pastors-are-leaving-ministry`
+- `why-pastors-quit-and-how-to-stay`
+- `young-adults-coming-back-church`
+
+## Numbered PCN imports, moved 24 September 2026
+
+The 57 numbered pastoral imports still live on LiveWell. James asked for writing below the scholarly bar to be rewritten or retired, and for the pastoral material to stay with PCN; these were the weakest pastor essays on the site (machine-cased titles, vague research appeals, little first person). They move with the rest.
+
+- `1-preaching-to-the-felt-need-without-the-deeper-need`
+- `1-the-slow-burn-how-ministry-exhaustion-sneaks-up-on-you-before-you-see-it-coming`
+- `1-trying-to-change-everything-in-the-first-year`
+- `10-its-okay-to-see-a-counselor-why-pastors-resist-and-why-they-shouldnt`
+- `11-what-pastors-need-to-know-about-depression-and-why-its-not-a-faith-problem`
+- `12-anxiety-perfectionism-and-the-pastor-breaking-the-cycle`
+- `13-you-are-not-your-churchs-attendance-numbers`
+- `14-how-to-preach-the-same-gospel-to-people-who-are-nothing-alike`
+- `15-when-your-preaching-gets-stale-and-what-to-do-about-it`
+- `16-five-sermon-habits-that-are-slowly-shrinking-your-congregations-faith`
+- `17-preaching-to-the-room-thats-not-there-yet-how-to-reach-the-unchurched-through-your-sunday-message`
+- `18-80-of-churches-are-plateaued-or-declining-are-you-one-of-them`
+- `19-what-small-churches-get-right-that-large-churches-rarely-talk-about`
+- `2-always-resolving-the-tension`
+- `2-confusing-availability-with-pastoral-care`
+- `2-what-a-sabbatical-is-and-why-your-church-should-require-one`
+- `20-the-metrics-that-actually-tell-you-if-your-church-is-healthy`
+- `21-when-is-it-time-to-revitalize-and-when-is-it-time-to-replant`
+- `22-how-to-lead-a-church-through-a-season-of-decline-without-losing-hope`
+- `23-how-to-give-feedback-that-actually-changes-behavior`
+- `24-the-most-dangerous-person-on-a-church-staff-it-might-surprise-you`
+- `25-when-to-fire-someone-and-how-to-do-it-with-integrity`
+- `26-building-a-staff-culture-where-people-dont-burn-out-and-leave`
+- `27-what-gen-z-actually-wants-from-a-church-and-why-its-not-what-you-think`
+- `28-why-young-adults-are-coming-back-to-church-and-how-not-to-lose-them-again`
+- `29-what-the-scandals-in-the-church-are-teaching-us-about-accountability`
+- `3-how-to-return-to-ministry-after-burning-out`
+- `3-illustrating-everything-with-success-stories`
+- `3-treating-sunday-as-the-only-metric`
+- `30-how-to-talk-about-political-divisiveness-from-the-pulpit-without-destroying-your-church`
+- `31-when-a-church-split-happens-surviving-it-learning-from-it-moving-forward`
+- `32-reformed-and-charismatic-pastors-at-the-same-table-what-happened-when-we-tried`
+- `33-the-case-for-doing-city-wide-church-together-at-least-once-a-year`
+- `34-what-a-healthy-pastor-referral-network-actually-looks-like`
+- `35-how-three-small-churches-co-planted-one-new-congregation`
+- `36-before-you-launch-that-ministry-ask-if-another-church-in-town-is-already-doing-it`
+- `37-what-predominantly-white-churches-get-wrong-when-they-talk-about-diversity`
+- `39-church-closures-are-outpacing-church-plants-3-to-1-what-that-means-for-the-mission`
+- `4-navigating-conflict-alone`
+- `4-never-preaching-anything-that-costs-you-something`
+- `4-the-difference-between-being-tired-and-being-done`
+- `40-how-to-talk-about-global-missions-in-a-way-that-actually-moves-your-congregation`
+- `41-when-short-term-mission-trips-help-and-when-they-hurt`
+- `42-the-unreached-people-groups-closest-to-you-that-youve-never-considered`
+- `43-how-national-pastors-are-redefining-what-it-means-to-be-a-missionary`
+- `44-what-the-church-in-the-global-south-can-teach-the-church-in-america-about-suffering`
+- `45-building-a-mission-sending-culture-in-a-church-thats-never-sent-anyone`
+- `46-how-to-pastor-a-congregation-that-is-politically-divided-and-keep-the-gospel-central`
+- `47-engaging-the-nones-what-research-tells-us-about-reaching-the-religiously-unaffiliated`
+- `48-ai-authenticity-and-the-pastor-what-artificial-intelligence-means-for-ministry`
+- `49-when-the-church-becomes-a-political-brand-and-how-to-step-back-from-the-edge`
+- `5-ending-every-sermon-with-the-same-application-structure`
+- `5-when-the-man-in-the-pulpit-is-falling-apart`
+- `50-how-to-lead-when-trust-in-institutions-including-the-church-is-at-an-all-time-low`
+- `7-protecting-your-marriage-when-ministry-demands-everything`
+- `8-the-pastors-kids-are-watching-what-are-they-seeing`
+- `9-how-to-be-present-at-home-when-your-mind-never-leaves-the-church`

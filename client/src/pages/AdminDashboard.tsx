@@ -172,7 +172,7 @@ export default function AdminDashboard() {
           Dashboard
         </h1>
         <p className="font-body text-lg mb-8" style={{ color: "var(--adm-gray)" }}>
-          Welcome to the Livewell admin panel. Manage your content below.
+          Welcome to the LiveWell admin panel. Manage your content below.
         </p>
 
         {/* Needs attention — what to do next, before the numbers. */}

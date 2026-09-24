@@ -8,6 +8,8 @@ export interface FeedItem {
   author?: string;
   source: "substack" | "pastors-connection";
   guid?: string;
+  /** Full post body from <content:encoded>, when the feed carries one. */
+  content?: string;
 }
 
 /**
@@ -17,7 +19,7 @@ export async function parseFeed(feedUrl: string, source: "substack" | "pastors-c
   try {
     const response = await fetch(feedUrl, {
       headers: {
-        "User-Agent": "Mozilla/5.0 (compatible; Livewell/1.0)",
+        "User-Agent": "LiveWellSite/1.0",
       },
     });
 
@@ -66,6 +68,8 @@ export async function parseFeed(feedUrl: string, source: "substack" | "pastors-c
         source,
         guid: (Array.isArray(item.guid) ? item.guid[0] : item.guid) || 
               (Array.isArray(item.id) ? item.id[0] : item.id) || "",
+        // xml2js keeps the namespaced tag name (lowercased by normalizeTags).
+        content: (Array.isArray(item["content:encoded"]) ? item["content:encoded"][0] : item["content:encoded"]) || undefined,
       };
     });
   } catch (error: any) {

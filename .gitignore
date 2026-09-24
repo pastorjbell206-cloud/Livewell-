@@ -141,3 +141,14 @@ client/public/og/
 # Local agent worktrees (never commit)
 .claude/worktrees/
 client/public/sitemap.xml
+
+# Static essay files, built at deploy by scripts/build-public-essays.mjs
+client/public/essays/
+
+# Machine-tells scanner detail; the .md beside it is the report
+docs/audit-voice/machine-tells.json
+
+# Rewrite drafts awaiting integrity review stay local; only reviewed essays
+# (content/rewrites/*.md) are committed. Keeps draft saves from triggering deploys.
+content/rewrites/pending/*.md
+!content/rewrites/pending/README.md

@@ -16,8 +16,8 @@ const legalLink = { color: "rgba(255,255,255,0.75)", textDecoration: "none", dis
 const col = { display: "flex", flexDirection: "column", gap: "0" } as const;
 
 /**
- * Footer mirrors the header's mental model. The six-pillar V2 set is the spine
- * (linked as "The Six Pillars" → /pillars, per docs/TAXONOMY-PROPOSAL.md); the
+ * Footer mirrors the header's mental model. The five-pillar V2 set is the spine
+ * (linked as "All five pillars" → /pillars, per docs/TAXONOMY-PROPOSAL.md); the
  * rich hub pages sit under it. "Resources" appears exactly once in navigation
  * (the Resource Hub, labeled Downloads & Study Guides here).
  */
@@ -67,7 +67,9 @@ export default function Footer() {
               );
             return (
             <div key={group.title}>
-              <h3 style={colTitle}>{group.title}</h3>
+              {/* h2, not h3: on a page whose body has only an h1 (notes, the
+                  start quiz) an h3 here skips a level (axe heading-order). */}
+              <h2 style={colTitle}>{group.title}</h2>
               <div style={col}>{rows.map((l) => renderLink(l, footerLink))}</div>
               {rest.length > 0 && (
                 <div style={{ display: "flex", flexWrap: "wrap", marginTop: "6px" }}>

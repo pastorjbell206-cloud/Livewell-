@@ -13,13 +13,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - uses: pnpm/action-setup@v4
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
-          node-version: 20
+          node-version: 22
           cache: pnpm
 
       - run: pnpm install --frozen-lockfile
@@ -41,6 +41,8 @@ jobs:
           node scripts/validate-answers.mjs
           node scripts/validate-argument-cases.mjs
           node scripts/validate-links.mjs
+          node scripts/validate-seo-layer.mjs
+          node scripts/validate-notes.mjs
           pnpm exec tsx scripts/validate-catalogue.mjs
           node scripts/validate-bible.mjs
 
@@ -66,25 +68,65 @@ jobs:
     runs-on: ubuntu-latest
     continue-on-error: true
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: pnpm/action-setup@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
-          node-version: 20
+          node-version: 22
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       # Prerender too, so Lighthouse measures the HTML Vercel actually ships
-      # (build:vercel runs prerender; the static home hero lives there).
-      - run: pnpm run sitemap && pnpm run build && pnpm run prerender
+      # (build:vercel runs prerender; the static home hero lives there), and
+      # the static essays so the front page and search have their files.
+      - run: pnpm run sitemap && pnpm run essays:public && pnpm run build && pnpm run prerender
       - name: Serve built site
         run: npx serve -s dist/public -l 4173 &
-      - name: Lighthouse (home)
+      - name: Lighthouse (home, median of three)
+        # A single Lighthouse run on a shared runner swings by twenty points
+        # (79, 75 and 50 on three consecutive commits that changed little on
+        # the front page). Three runs, the median by performance, and the
+        # metrics behind the score so a drop can be read, not guessed at.
         run: |
-          npx --yes lighthouse http://localhost:4173/ \
+          for i in 1 2 3; do
+            npx --yes lighthouse http://localhost:4173/ \
+              --chrome-flags="--headless --no-sandbox" \
+              --only-categories=performance,accessibility,best-practices,seo \
+              --output=json --output-path=./lh-$i.json --quiet
+          done
+          node -e "
+            const runs = [1,2,3].map(i => require('./lh-' + i + '.json'));
+            runs.sort((a, b) => a.categories.performance.score - b.categories.performance.score);
+            const r = runs[1];
+            require('fs').writeFileSync('./lh.json', JSON.stringify(r));
+            console.log('performance runs:', runs.map(x => Math.round(x.categories.performance.score * 100)).join(' / '), '(median kept)');
+            for (const k in r.categories) console.log(k, Math.round(r.categories[k].score * 100));
+            const a = r.audits;
+            for (const k of ['first-contentful-paint','largest-contentful-paint','total-blocking-time','cumulative-layout-shift','speed-index','interactive']) console.log('  ' + k, a[k] && a[k].displayValue);
+            // Lighthouse 13: the LCP element and its render delay live in the
+            // lcp-breakdown-insight audit (a table of subparts, then the node).
+            const lcp = a['lcp-breakdown-insight'];
+            const items = (lcp && lcp.details && lcp.details.items) || [];
+            const node = items.find(x => x.type === 'node');
+            const table = items.find(x => x.type === 'table');
+            if (node) console.log('  lcp element:', node.selector, '|', String(node.nodeLabel || '').slice(0, 90));
+            if (table) for (const row of table.items) console.log('    ' + row.label + ': ' + Math.round(row.duration) + ' ms');
+          "
+      - name: Lighthouse (writing hub, one run, printed)
+        # The hub is the second door; its number and its transfer are printed
+        # so a regression there is read, not guessed at. Not asserted.
+        run: |
+          npx --yes lighthouse http://localhost:4173/writing \
             --chrome-flags="--headless --no-sandbox" \
-            --only-categories=performance,accessibility,best-practices,seo \
-            --output=json --output-path=./lh.json --quiet
-          node -e "const r=require('./lh.json').categories; for (const k in r) console.log(k, Math.round(r[k].score*100))"
+            --only-categories=performance \
+            --output=json --output-path=./lh-writing.json --quiet
+          node -e "
+            const r = require('./lh-writing.json'); const a = r.audits;
+            const items = a['network-requests'].details.items;
+            const kb = (xs) => Math.round(xs.reduce((s, x) => s + (x.transferSize || 0), 0) / 1024);
+            console.log('writing hub: performance', Math.round(r.categories.performance.score * 100));
+            for (const k of ['first-contentful-paint','largest-contentful-paint','total-blocking-time','cumulative-layout-shift']) console.log('  ' + k, a[k] && a[k].displayValue);
+            console.log('  requests', items.length, '| transfer', kb(items), 'KB | json', kb(items.filter(x => /\\.json/.test(x.url))), 'KB | scripts', kb(items.filter(x => x.resourceType === 'Script')), 'KB');
+          "
       - name: Lighthouse thresholds (docs/WORLD-CLASS-SITE-PROMPT.md — asserted, not printed)
         run: |
           node -e "
@@ -114,12 +156,35 @@ jobs:
           # rendered in time. It exercises the shared Layout, nav, footer, and a
           # hero h1 — the design system's a11y. Full-route a11y is covered by
           # axe/Lighthouse against live Vercel previews, per docs/ARCHITECTURE.
+          #
+          # September 2026: the driver mismatch had silently skipped this step
+          # for months, and only "/" was ever checked. browser-driver-manager
+          # installs a Chrome and a ChromeDriver that match each other, and the
+          # prerender step above gives every route real HTML, so ten routes are
+          # audited, not one. --load-delay holds the scan four seconds after
+          # the load event: the app's JavaScript starts after the first paint
+          # (vite-paint-first.ts) and every route but home is a lazy chunk, so
+          # a scan at load sees the static shell (no main landmark, no h1 on
+          # hub pages) instead of the page the reader gets.
           sleep 3
           set +e
-          npx --yes @axe-core/cli http://localhost:4173/ --exit
-          code=$?
-          if [ "$code" = "2" ]; then
-            echo "::warning::axe skipped — Chrome/ChromeDriver version mismatch (environment, not a content failure)"
-            exit 0
+          npx --yes browser-driver-manager install chrome >/dev/null 2>&1
+          if [ -f "$HOME/.browser-driver-manager/.env" ]; then
+            # shellcheck disable=SC1090
+            . "$HOME/.browser-driver-manager/.env"
           fi
-          exit $code
+          AXE_ARGS=""
+          [ -n "$CHROME_TEST_PATH" ] && AXE_ARGS="$AXE_ARGS --chrome-path $CHROME_TEST_PATH"
+          [ -n "$CHROMEDRIVER_TEST_PATH" ] && AXE_ARGS="$AXE_ARGS --chromedriver-path $CHROMEDRIVER_TEST_PATH"
+          worst=0
+          for route in / /writing /writing/is-jesus-really-the-only-way /books /books/believe /tools /start /about /notes /canon; do
+            npx --yes @axe-core/cli "http://localhost:4173$route" $AXE_ARGS --load-delay 4000 --exit
+            code=$?
+            if [ "$code" = "2" ]; then
+              echo "::warning::axe could not start a browser for $route (environment, not a content failure)"
+            elif [ "$code" != "0" ]; then
+              echo "::error::axe found accessibility violations on $route"
+              worst=1
+            fi
+          done
+          exit $worst

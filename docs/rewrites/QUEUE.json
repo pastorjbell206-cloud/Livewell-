@@ -1,0 +1,3103 @@
+[
+ {
+  "slug": "parenting-discipline-that-forms-the-heart",
+  "title": "Discipline That Forms the Heart, Not Just the Behavior",
+  "pillar": "devotionals",
+  "theme": 1,
+  "score": 37,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "parenting-spiritual-milestones-by-age",
+  "title": "What to Aim for at Each Age: Spiritual Milestones",
+  "pillar": "devotionals",
+  "theme": 1,
+  "score": 37,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "teen-did-the-resurrection-actually-happen",
+  "title": "Did the Resurrection Actually Happen?",
+  "pillar": "theology",
+  "theme": 1,
+  "score": 39,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "parenting-raising-kids-in-a-screen-age",
+  "title": "Raising Kids in a Screen and Phone Age",
+  "pillar": "devotionals",
+  "theme": 1,
+  "score": 40,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "parenting-talking-about-sex-and-identity",
+  "title": "How to Talk to Your Kids About Sex and Identity",
+  "pillar": "devotionals",
+  "theme": 1,
+  "score": 40,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "parenting-teaching-kids-to-pray-and-read-scripture",
+  "title": "Teaching Your Kids to Pray and Read the Bible",
+  "pillar": "devotionals",
+  "theme": 1,
+  "score": 41,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "parenting-letting-them-fail",
+  "title": "Letting Them Fail: Raising Resilient Kids",
+  "pillar": "devotionals",
+  "theme": 1,
+  "score": 41,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "children-poverty-prophetic-indictment",
+  "title": "Children Poverty Prophetic Indictment",
+  "pillar": "theology",
+  "theme": 1,
+  "score": 43,
+  "redirected": true,
+  "replaces": []
+ },
+ {
+  "slug": "church-sex-more-than-money",
+  "title": "Church Sex More Than Money",
+  "pillar": "theology",
+  "theme": 1,
+  "score": 43,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "teen-can-you-actually-trust-the-bible",
+  "title": "Can You Actually Trust the Bible?",
+  "pillar": "theology",
+  "theme": 1,
+  "score": 43,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "parenting-family-rhythms-that-form-faith",
+  "title": "Family Rhythms: Building a Household That Forms Faith",
+  "pillar": "devotionals",
+  "theme": 1,
+  "score": 45,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "teen-isnt-jesus-just-one-way-among-many",
+  "title": "Isn't Jesus Just One Way Among Many?",
+  "pillar": "theology",
+  "theme": 1,
+  "score": 45,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "family-and-faith-transitions",
+  "title": "When Your Family Thinks You've Lost Your Mind",
+  "pillar": "devotionals",
+  "theme": 1,
+  "score": 45,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "sexual-abuse-crisis-in-the-church",
+  "title": "The Sexual Abuse Crisis: A Reckoning the Church Cannot Avoid",
+  "pillar": "prophetic-justice",
+  "theme": 1,
+  "score": 45,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "your-marriage-is-ministry-too",
+  "title": "Your Marriage is Ministry Too",
+  "pillar": "theology",
+  "theme": 1,
+  "score": 47,
+  "redirected": true,
+  "replaces": []
+ },
+ {
+  "slug": "apologetics-can-a-reasonable-person-believe-in-miracles",
+  "title": "Can a Reasonable Person Believe in Miracles?",
+  "pillar": "theology",
+  "theme": 1,
+  "score": 48,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "teen-if-god-is-good-why-is-there-suffering",
+  "title": "If God Is Good, Why Is There So Much Suffering?",
+  "pillar": "theology",
+  "theme": 1,
+  "score": 49,
+  "redirected": false,
+  "replaces": [
+   "apologetics-why-does-god-allow-evil"
+  ]
+ },
+ {
+  "slug": "teen-does-science-disprove-god",
+  "title": "Doesn't Science Disprove God?",
+  "pillar": "theology",
+  "theme": 1,
+  "score": 49,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "teen-it-is-okay-to-doubt",
+  "title": "It Is Okay to Doubt: What to Do With Your Questions",
+  "pillar": "theology",
+  "theme": 1,
+  "score": 50,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "church-fathers-not-boring",
+  "title": "Church Fathers Not Boring",
+  "pillar": "theology",
+  "theme": 1,
+  "score": 51,
+  "redirected": true,
+  "replaces": []
+ },
+ {
+  "slug": "why-god-started-with-one-family",
+  "title": "Why God Started With One Family",
+  "pillar": "theology",
+  "theme": 1,
+  "score": 52,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "school-to-prison-pipeline",
+  "title": "The School-to-Prison Pipeline",
+  "pillar": "prophetic-justice",
+  "theme": 1,
+  "score": 53,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "family-devotions-authentic",
+  "title": "Family Devotions That Don't Feel Forced",
+  "pillar": "parenting",
+  "theme": 1,
+  "score": 58,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "christian-sexual-ethic",
+  "title": "Is the Historic Christian View of Sex Homophobic?",
+  "pillar": "doubt",
+  "theme": 1,
+  "score": 58,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "the-womanhood-they-preached-was-small",
+  "title": "The Womanhood They Preached Was Small",
+  "pillar": "devotionals",
+  "theme": 1,
+  "score": 59,
+  "redirected": false,
+  "replaces": [],
+  "skip": "Susanna Bell's essay: rewrite only with her"
+ },
+ {
+  "slug": "silence-and-solitude",
+  "title": "What the Desert Fathers Knew About Silence",
+  "pillar": "devotionals",
+  "theme": 1,
+  "score": 60,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "raising-sons-manhood",
+  "title": "Raising Sons in a World Confused About Manhood",
+  "pillar": "parenting",
+  "theme": 1,
+  "score": 62,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "discipline-without-domination",
+  "title": "How to Discipline Without Crushing Your Child",
+  "pillar": "parenting",
+  "theme": 1,
+  "score": 63,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "how-to-talk-kids-faith-doubt",
+  "title": "How to Talk to Your Kids About Faith When You're Not Sure Yourself",
+  "pillar": "parenting",
+  "theme": 1,
+  "score": 63,
+  "redirected": false,
+  "replaces": [
+   "how-to-raise-children-in-the-faith"
+  ]
+ },
+ {
+  "slug": "the-work-nobody-watches",
+  "title": "The Work Nobody Watches",
+  "pillar": "parenting",
+  "theme": 1,
+  "score": 63,
+  "redirected": false,
+  "replaces": [],
+  "skip": "Susanna Bell's essay: rewrite only with her"
+ },
+ {
+  "slug": "education-inequality",
+  "title": "Education Inequality and the Children We Form",
+  "pillar": "prophetic-justice",
+  "theme": 1,
+  "score": 63,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "what-fatherhood-requires",
+  "title": "What Fatherhood Requires",
+  "pillar": "devotionals",
+  "theme": 1,
+  "score": 63,
+  "redirected": false,
+  "replaces": [
+   "the-father-wound-and-the-god-question"
+  ]
+ },
+ {
+  "slug": "the-weight-of-what-you-model",
+  "title": "Your Kids Learn Faith From What You Do, Not What You Say",
+  "pillar": "parenting",
+  "theme": 1,
+  "score": 69,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "raising-kids-post-christian",
+  "title": "Raising Kids in a Post-Christian Culture",
+  "pillar": "devotionals",
+  "theme": 1,
+  "score": 69,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "what-secular-explanations-still-have-to-explain",
+  "title": "What Secular Explanations Still Have to Explain",
+  "pillar": "doubt",
+  "theme": 2,
+  "score": 32,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "jeremiah-letter-exiles",
+  "title": "Jeremiah Letter Exiles",
+  "pillar": "theology",
+  "theme": 2,
+  "score": 40,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "deconstruction-is-not-destruction",
+  "title": "Deconstruction Is Not Destruction",
+  "pillar": "american-church",
+  "theme": 2,
+  "score": 41,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "exvangelical-when-leaving-isnt-losing-faith",
+  "title": "Exvangelical: When Leaving Isn't Losing Faith",
+  "pillar": "american-church",
+  "theme": 2,
+  "score": 41,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "amos-american-church",
+  "title": "Amos American Church",
+  "pillar": "theology",
+  "theme": 2,
+  "score": 42,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "why-poverty-political",
+  "title": "Why Poverty Political",
+  "pillar": "theology",
+  "theme": 2,
+  "score": 42,
+  "redirected": true,
+  "replaces": []
+ },
+ {
+  "slug": "religious-trauma-is-real",
+  "title": "Religious Trauma Is Real",
+  "pillar": "american-church",
+  "theme": 2,
+  "score": 43,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "when-romance-left-covenant-remains",
+  "title": "When Romance Left Covenant Remains",
+  "pillar": "theology",
+  "theme": 2,
+  "score": 47,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "incarnation-changes-everything",
+  "title": "Incarnation Changes Everything",
+  "pillar": "theology",
+  "theme": 2,
+  "score": 49,
+  "redirected": true,
+  "replaces": []
+ },
+ {
+  "slug": "justice-not-political-theological",
+  "title": "Justice Not Political Theological",
+  "pillar": "theology",
+  "theme": 2,
+  "score": 49,
+  "redirected": false,
+  "replaces": [
+   "justice-not-political"
+  ]
+ },
+ {
+  "slug": "prophetic-imagination",
+  "title": "Prophetic Imagination",
+  "pillar": "theology",
+  "theme": 2,
+  "score": 49,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "apologetics-where-does-morality-come-from",
+  "title": "Where Do Right and Wrong Even Come From?",
+  "pillar": "theology",
+  "theme": 2,
+  "score": 49,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "non-denominational-doesnt-mean-no-tradition",
+  "title": "Non-Denominational Doesn't Mean No Tradition",
+  "pillar": "theology",
+  "theme": 2,
+  "score": 49,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "the-rise-of-the-nones",
+  "title": "The Rise of the Nones",
+  "pillar": "american-church",
+  "theme": 2,
+  "score": 49,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "partnering-national-pastor",
+  "title": "Partnering National Pastor",
+  "pillar": "theology",
+  "theme": 2,
+  "score": 50,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "loving-versus-worshiping-your-country",
+  "title": "The Difference Between Loving and Worshiping Your Country",
+  "pillar": "american-church",
+  "theme": 2,
+  "score": 50,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "spiritual-abuse-how-good-theology-gets-weaponized",
+  "title": "Spiritual Abuse: How Good Theology Gets Weaponized",
+  "pillar": "american-church",
+  "theme": 2,
+  "score": 50,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "flags-in-the-sanctuary",
+  "title": "Flags in the Sanctuary: A Theology of the Nation",
+  "pillar": "american-church",
+  "theme": 2,
+  "score": 52,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "purity-culture-and-its-wreckage",
+  "title": "Purity Culture and Its Wreckage",
+  "pillar": "american-church",
+  "theme": 2,
+  "score": 54,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "suffering-without-explanation",
+  "title": "Why Does God Allow Suffering?",
+  "pillar": "doubt",
+  "theme": 2,
+  "score": 55,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "can-you-be-a-christian-alone",
+  "title": "Can You Be a Christian on Your Own?",
+  "pillar": "american-church",
+  "theme": 2,
+  "score": 55,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "how-to-find-a-church-worth-joining",
+  "title": "How Do You Find a Church Worth Joining?",
+  "pillar": "american-church",
+  "theme": 2,
+  "score": 55,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "not-persecuted-seduced-crisis-american-christianity",
+  "title": "Not Persecuted Seduced Crisis American Christianity",
+  "pillar": "theology",
+  "theme": 2,
+  "score": 55,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "when-god-bless-america-replaces-thy-kingdom-come",
+  "title": "When God Bless America Replaces Thy Kingdom Come",
+  "pillar": "theology",
+  "theme": 2,
+  "score": 55,
+  "redirected": true,
+  "replaces": []
+ },
+ {
+  "slug": "when-the-church-is-what-hurt-you",
+  "title": "When the Church Is the Thing That Hurt You",
+  "pillar": "american-church",
+  "theme": 2,
+  "score": 56,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "why-people-are-leaving-the-church",
+  "title": "Why People Are Leaving the Church",
+  "pillar": "american-church",
+  "theme": 2,
+  "score": 57,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "prosperity-gospel-is-not-the-gospel",
+  "title": "The Prosperity Gospel Is Not the Gospel",
+  "pillar": "american-church",
+  "theme": 2,
+  "score": 57,
+  "redirected": false,
+  "replaces": [
+   "prosperity-gospel-injustice"
+  ]
+ },
+ {
+  "slug": "when-politics-replaced-theology",
+  "title": "When Politics Replaced Theology",
+  "pillar": "american-church",
+  "theme": 2,
+  "score": 59,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "predestination-and-free-will",
+  "title": "Does God Choose Us, or Do We Choose Him?",
+  "pillar": "doubt",
+  "theme": 2,
+  "score": 60,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "the-early-church-under-rome",
+  "title": "The Early Church Under Rome: Faith Without Power",
+  "pillar": "american-church",
+  "theme": 2,
+  "score": 61,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "done-with-church-not-jesus",
+  "title": "What If You're Done With Church but Not With Jesus?",
+  "pillar": "american-church",
+  "theme": 2,
+  "score": 62,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "collaboration-across-denominations",
+  "title": "Collaboration Across Denominations",
+  "pillar": "theology",
+  "theme": 2,
+  "score": 62,
+  "redirected": true,
+  "replaces": []
+ },
+ {
+  "slug": "how-the-religious-right-was-built",
+  "title": "How the Religious Right Was Built",
+  "pillar": "american-church",
+  "theme": 2,
+  "score": 63,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "the-great-awakenings-and-the-making-of-american-faith",
+  "title": "The Great Awakenings and the Making of American Faith",
+  "pillar": "theology",
+  "theme": 2,
+  "score": 63,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "why-the-church-lost-the-culture-war",
+  "title": "Why the Church Lost the Culture War",
+  "pillar": "prophetic-justice",
+  "theme": 2,
+  "score": 63,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "why-the-incarnation-matters",
+  "title": "Why It Matters That God Became a Baby",
+  "pillar": "theology",
+  "theme": 2,
+  "score": 64,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "outrage-is-not-a-spiritual-gift",
+  "title": "Outrage Is Not a Spiritual Gift",
+  "pillar": "american-church",
+  "theme": 2,
+  "score": 64,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "the-faith-once-delivered",
+  "title": "The Faith That Was Settled Before America Existed",
+  "pillar": "theology",
+  "theme": 2,
+  "score": 66,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "is-poverty-political-the-bibles-answer",
+  "title": "Is Poverty Political? The Bible's Uncomfortable Answer",
+  "pillar": "prophetic-justice",
+  "theme": 2,
+  "score": 66,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "whose-kingdom-jesus-and-political-power",
+  "title": "Whose Kingdom? Jesus and Political Power",
+  "pillar": "american-church",
+  "theme": 2,
+  "score": 67,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "exile-is-not-the-end",
+  "title": "The Church Has Been an Exile Before",
+  "pillar": "after-christendom",
+  "theme": 2,
+  "score": 69,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "what-render-unto-caesar-actually-means",
+  "title": "What Render Unto Caesar Actually Means",
+  "pillar": "american-church",
+  "theme": 2,
+  "score": 69,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "christendom-is-ending-christianity-is-not",
+  "title": "Christendom Is Ending. Christianity Is Not.",
+  "pillar": "american-church",
+  "theme": 2,
+  "score": 69,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "why-there-are-so-many-christian-denominations",
+  "title": "Why There Are So Many Christian Denominations",
+  "pillar": "theology",
+  "theme": 2,
+  "score": 69,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "two-kingdoms-faith-and-state",
+  "title": "Two Kingdoms: How Christians Relate Faith and State",
+  "pillar": "american-church",
+  "theme": 2,
+  "score": 70,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "the-black-church-in-america",
+  "title": "The Black Church: The Most Important Institution in American Christianity",
+  "pillar": "prophetic-justice",
+  "theme": 2,
+  "score": 78,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "poverty-tourism-not-mission",
+  "title": "Poverty Tourism Not Mission",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 29,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "weight-of-what-you-cant-say",
+  "title": "Weight of what you Cant Say",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 34,
+  "redirected": true,
+  "replaces": []
+ },
+ {
+  "slug": "church-member-abortion-secret",
+  "title": "Church Member Abortion Secret",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 36,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "prophetic-tradition-economic-justice",
+  "title": "Prophetic Tradition Economic Justice",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 36,
+  "redirected": true,
+  "replaces": []
+ },
+ {
+  "slug": "hospitality-not-optional",
+  "title": "Hospitality Not Optional",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 37,
+  "redirected": true,
+  "replaces": []
+ },
+ {
+  "slug": "sabbath-isnt-optional",
+  "title": "Sabbath Isnt Optional",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 37,
+  "redirected": true,
+  "replaces": []
+ },
+ {
+  "slug": "isaiah-58-demands",
+  "title": "Isaiah 58 Demands",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 38,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "widow-orphan-stranger",
+  "title": "Widow Orphan Stranger",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 38,
+  "redirected": true,
+  "replaces": []
+ },
+ {
+  "slug": "you-are-not-the-exception",
+  "title": "You are Not the Exception",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 38,
+  "redirected": false,
+  "replaces": [
+   "the-monster-in-the-mirror"
+  ]
+ },
+ {
+  "slug": "micah-6-8-demands",
+  "title": "Micah 6 8 Demands",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 39,
+  "redirected": true,
+  "replaces": []
+ },
+ {
+  "slug": "post-roe-church-responsibility",
+  "title": "Post Roe Church Responsibility",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 39,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "pro-life-pro-choice-labels",
+  "title": "Pro Life Pro Choice Labels",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 39,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "support-life-after-birth",
+  "title": "Support Life After Birth",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 39,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "beatitudes-actually-promising",
+  "title": "Beatitudes Actually Promising",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 40,
+  "redirected": true,
+  "replaces": []
+ },
+ {
+  "slug": "build-real-friendships-other-pastors",
+  "title": "Build Real Friendships Other Pastors",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 41,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "church-crisis-pregnancy",
+  "title": "Church Crisis Pregnancy",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 41,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "church-megaproject-widows-mite",
+  "title": "Church Megaproject Widows Mite",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 41,
+  "redirected": true,
+  "replaces": []
+ },
+ {
+  "slug": "complicity-not-innocence",
+  "title": "Complicity Not Innocence",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 41,
+  "redirected": true,
+  "replaces": []
+ },
+ {
+  "slug": "good-samaritan-actually-arguing",
+  "title": "Good Samaritan Actually Arguing",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 41,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "hard-cases-abortion-debate",
+  "title": "Hard Cases Abortion Debate",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 41,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "individual-sin-systemic-sin-2",
+  "title": "Individual Sin Systemic Sin 2",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 41,
+  "redirected": false,
+  "replaces": [
+   "individual-sin-systemic-sin"
+  ]
+ },
+ {
+  "slug": "nehemiah-rebuilding",
+  "title": "Nehemiah Rebuilding",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 41,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "pastoral-care-wealthy",
+  "title": "Pastoral Care Wealthy",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 41,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "symptoms-without-causes",
+  "title": "Symptoms without Causes",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 41,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "what-jubilee-means",
+  "title": "What Jubilee Means",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 41,
+  "redirected": true,
+  "replaces": []
+ },
+ {
+  "slug": "book-ruth-gleaning-laws",
+  "title": "Book Ruth Gleaning Laws",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 42,
+  "redirected": false,
+  "replaces": [
+   "ruth-gleaning-laws"
+  ]
+ },
+ {
+  "slug": "early-church-practiced",
+  "title": "Early Church Practiced",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 42,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "greek-original-language-matters",
+  "title": "Greek Original Language Matters",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 42,
+  "redirected": true,
+  "replaces": []
+ },
+ {
+  "slug": "leviticus-19-border-crisis",
+  "title": "Leviticus 19 Border Crisis",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 42,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "psalm-82-unjust-systems",
+  "title": "Psalm 82 Unjust Systems",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 42,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "vulnerable-people-not-pews",
+  "title": "Vulnerable People Not Pews",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 42,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "apologetics-how-can-a-loving-god-allow-hell",
+  "title": "How Can a Loving God Send Anyone to Hell?",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 42,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "mishpat-tsedaqah",
+  "title": "Mishpat Tsedaqah",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 43,
+  "redirected": true,
+  "replaces": []
+ },
+ {
+  "slug": "prayer-is-not-optional",
+  "title": "Prayer is Not Optional",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 43,
+  "redirected": true,
+  "replaces": []
+ },
+ {
+  "slug": "symptoms-without-causes-charity",
+  "title": "Symptoms without Causes Charity",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 43,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "theology-of-enough",
+  "title": "Theology of Enough",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 43,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "unity-without-uniformity",
+  "title": "Unity without Uniformity",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 43,
+  "redirected": true,
+  "replaces": []
+ },
+ {
+  "slug": "apologetics-what-about-those-who-never-heard",
+  "title": "What About People Who Never Heard of Jesus?",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 43,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "grief-abortion-church",
+  "title": "Grief Abortion Church",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 44,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "most-prophetic-live-differently",
+  "title": "Most Prophetic Live Differently",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 44,
+  "redirected": true,
+  "replaces": []
+ },
+ {
+  "slug": "poor-not-ministry-category",
+  "title": "Poor Not Ministry Category",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 44,
+  "redirected": false,
+  "replaces": [
+   "poor-not-ministry"
+  ]
+ },
+ {
+  "slug": "apologetics-hasnt-the-church-done-terrible-things",
+  "title": "Hasn't the Church Done Terrible Things?",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 44,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "what-christians-can-learn-from-islam",
+  "title": "What Christians Can Learn From Islam",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 44,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "do-justice-manifesto",
+  "title": "Do Justice Manifesto",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 45,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "rebuild-trust-after-broken",
+  "title": "Rebuild Trust After Broken",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 45,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "solidarity-theological-virtue",
+  "title": "Solidarity Theological Virtue",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 45,
+  "redirected": true,
+  "replaces": []
+ },
+ {
+  "slug": "what-christians-can-learn-from-buddhism",
+  "title": "What Christians Can Learn From Buddhism",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 45,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "imago-dei-means-more",
+  "title": "Imago Dei Means More",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 46,
+  "redirected": true,
+  "replaces": []
+ },
+ {
+  "slug": "justice-without-love-ideology",
+  "title": "Justice without Love Ideology",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 46,
+  "redirected": true,
+  "replaces": []
+ },
+ {
+  "slug": "mission-is-not-optional",
+  "title": "Mission is Not Optional",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 46,
+  "redirected": true,
+  "replaces": []
+ },
+ {
+  "slug": "sin-not-just-what-you-do",
+  "title": "Sin Not Just what you Do",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 46,
+  "redirected": true,
+  "replaces": []
+ },
+ {
+  "slug": "spiritual-disciplines-for-pastors",
+  "title": "Spiritual Disciplines for Pastors",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 46,
+  "redirected": true,
+  "replaces": []
+ },
+ {
+  "slug": "stranger-at-gate",
+  "title": "Stranger at Gate",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 46,
+  "redirected": true,
+  "replaces": []
+ },
+ {
+  "slug": "when-one-partner-has-grown",
+  "title": "When One Partner Has Grown",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 46,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "what-christians-can-learn-from-indigenous-spirituality",
+  "title": "What Christians Can Learn From Indigenous Spirituality",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 46,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "eschatology-matters-end-shapes-now",
+  "title": "Eschatology Matters End Shapes Now",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 47,
+  "redirected": true,
+  "replaces": []
+ },
+ {
+  "slug": "exodus-demands-church",
+  "title": "Exodus Demands Church",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 47,
+  "redirected": false,
+  "replaces": [
+   "exodus-demands-church-today"
+  ]
+ },
+ {
+  "slug": "the-theology-of-time",
+  "title": "The Theology of Time",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 47,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "what-we-owe-ones-after",
+  "title": "What We Owe Ones After",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 47,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "good-samaritan-arguing",
+  "title": "Good Samaritan Arguing",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 48,
+  "redirected": true,
+  "replaces": []
+ },
+ {
+  "slug": "what-we-owe-generations",
+  "title": "What We Owe Generations",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 48,
+  "redirected": true,
+  "replaces": []
+ },
+ {
+  "slug": "apologetics-why-is-god-hidden",
+  "title": "If God Is Real, Why Does He Feel So Hidden?",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 48,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "what-the-creed-leaves-out",
+  "title": "What the Creed Refuses to Argue About",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 49,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "consistent-pro-life-ethic",
+  "title": "Consistent Pro Life Ethic",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 49,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "cost-of-ministry-silos",
+  "title": "Cost of Ministry Silos",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 49,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "mobilizing-church-missions-small-budget",
+  "title": "Mobilizing Church Missions Small Budget",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 49,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "already-and-not-yet-living-between-two-worlds",
+  "title": "Already and Not Yet: Living Between Two Worlds",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 49,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "earth-is-lords",
+  "title": "Earth is Lords",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 50,
+  "redirected": true,
+  "replaces": []
+ },
+ {
+  "slug": "silence-abuse-church",
+  "title": "Silence Abuse Church",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 50,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "what-james-5-says",
+  "title": "What James 5 Says",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 50,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "the-moment-the-story-turns",
+  "title": "The Moment the Whole Story Turns",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 51,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "prophetic-thing-live-differently",
+  "title": "Prophetic Thing Live Differently",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 51,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "exodus-the-story-underneath-the-whole-bible",
+  "title": "Exodus: The Story Underneath the Whole Bible",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 51,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "liturgical-vs-contemporary-worship",
+  "title": "Liturgical vs. Contemporary Worship: What We Gained and What We Lost",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 51,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "the-bible-is-one-story",
+  "title": "The Bible Is One Story, Not a Rulebook",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 52,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "reaching-rich-more-comfortable",
+  "title": "Reaching Rich More Comfortable",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 52,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "vulnerable-people-not-in-pews",
+  "title": "Vulnerable People Not in Pews",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 52,
+  "redirected": true,
+  "replaces": []
+ },
+ {
+  "slug": "your-city-is-mission-field",
+  "title": "Your City is Mission Field",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 52,
+  "redirected": true,
+  "replaces": []
+ },
+ {
+  "slug": "proof-texting",
+  "title": "How Both Sides Use the Bible to Win",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 53,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "church-comfort-inequality",
+  "title": "Church Comfort Inequality",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 53,
+  "redirected": true,
+  "replaces": []
+ },
+ {
+  "slug": "scripture-unborn",
+  "title": "Scripture Unborn",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 53,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "worship-without-justice-noise",
+  "title": "Worship without Justice Noise",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 53,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "what-the-original-audience-heard",
+  "title": "What the First Readers of the Bible Actually Heard",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 54,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "fully-god-fully-human",
+  "title": "How Can Jesus Be Both God and Human?",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 54,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "engaging-nones-religiously-unaffiliated",
+  "title": "Engaging Nones Religiously Unaffiliated",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 54,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "kingdom-of-god-not-what-you-think",
+  "title": "Kingdom of God Not what you Think",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 54,
+  "redirected": true,
+  "replaces": []
+ },
+ {
+  "slug": "what-christians-can-learn-from-judaism",
+  "title": "What Christians Can Learn From Judaism",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 54,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "what-the-miracles-mean",
+  "title": "What the Miracles Were Actually For",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 55,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "is-there-life-after-death",
+  "title": "Is There Really Life After Death?",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 55,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "missions-without-justice-colonialism",
+  "title": "Missions without Justice Colonialism",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 55,
+  "redirected": false,
+  "replaces": [
+   "future-of-missions-already-there"
+  ]
+ },
+ {
+  "slug": "the-christian-mystics",
+  "title": "The Mystics: Christianity's Best-Kept Secret",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 55,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "what-jesus-said-the-good-life-is",
+  "title": "What Jesus Said the Good Life Actually Is",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 56,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "how-do-you-actually-change",
+  "title": "How Do You Actually Change?",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 56,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "church-megaproject-widow-mite",
+  "title": "Church Megaproject Widow Mite",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 56,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "the-examined-life",
+  "title": "The Examined Life",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 56,
+  "redirected": true,
+  "replaces": []
+ },
+ {
+  "slug": "theology-clean-air",
+  "title": "Theology Clean Air",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 56,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "white-churches-diversity-wrong",
+  "title": "White Churches Diversity Wrong",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 56,
+  "redirected": false,
+  "replaces": [
+   "white-churches-diversity"
+  ]
+ },
+ {
+  "slug": "the-whole-counsel",
+  "title": "Why You Can't Cherry-Pick the Bible",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 57,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "will-there-be-a-judgment-day",
+  "title": "Will There Really Be a Judgment Day?",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 57,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "prophets-expelled-sanctuary",
+  "title": "Prophets Expelled Sanctuary",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 57,
+  "redirected": true,
+  "replaces": []
+ },
+ {
+  "slug": "the-crusades-what-actually-happened",
+  "title": "The Crusades: What Actually Happened",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 57,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "being-filled-with-the-spirit",
+  "title": "What It Means to Be Filled With the Spirit",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 58,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "consistent-ethic-life",
+  "title": "Consistent Ethic Life",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 58,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "hope-of-resurrection",
+  "title": "Hope of Resurrection",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 58,
+  "redirected": true,
+  "replaces": []
+ },
+ {
+  "slug": "why-the-bible-is-one-story-not-66-books",
+  "title": "Why the Bible Is One Story, Not Sixty-Six Books",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 58,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "why-baptism",
+  "title": "What Baptism Is Actually For",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 59,
+  "redirected": false,
+  "replaces": [
+   "baptism-mode-and-subjects"
+  ]
+ },
+ {
+  "slug": "why-faith-uses-physical-things",
+  "title": "Why Christianity Uses Bread, Water, and Wine",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 59,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "what-is-heaven-actually-like",
+  "title": "What Is Heaven Actually Like?",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 59,
+  "redirected": false,
+  "replaces": [
+   "how-the-story-ends"
+  ]
+ },
+ {
+  "slug": "why-hope-is-not-wishful-thinking",
+  "title": "Why Christian Hope Is Not Wishful Thinking",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 59,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "church-response-to-culture",
+  "title": "Church Response to Culture",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 59,
+  "redirected": true,
+  "replaces": []
+ },
+ {
+  "slug": "can-you-trust-the-bible",
+  "title": "Can You Trust the Bible?",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 59,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "what-went-wrong",
+  "title": "What the Bible Says Actually Went Wrong With the World",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 60,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "global-church-is-your-church",
+  "title": "Global Church is your Church",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 60,
+  "redirected": true,
+  "replaces": []
+ },
+ {
+  "slug": "repentance-and-renewal",
+  "title": "Repentance and Renewal",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 60,
+  "redirected": true,
+  "replaces": []
+ },
+ {
+  "slug": "what-it-means-to-bear-the-image-of-god",
+  "title": "What It Means to Bear the Image of God",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 60,
+  "redirected": false,
+  "replaces": [
+   "imago-dei-means"
+  ]
+ },
+ {
+  "slug": "what-the-resurrection-changes",
+  "title": "What Actually Changes If Jesus Rose",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 61,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "who-is-the-holy-spirit",
+  "title": "Who Is the Holy Spirit?",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 62,
+  "redirected": false,
+  "replaces": [
+   "what-does-the-holy-spirit-do"
+  ]
+ },
+ {
+  "slug": "why-people-fled-to-the-desert",
+  "title": "Why People Fled to the Desert to Find God",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 63,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "truth-in-post-truth-world",
+  "title": "Truth in Post Truth World",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 63,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "does-god-change-his-mind",
+  "title": "Does God Change His Mind?",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 64,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "what-jesus-said-about-worry-and-money",
+  "title": "What Jesus Said About Worry and Money",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 64,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "psalms-as-prayer-not-poetry",
+  "title": "Psalms as Prayer Not Poetry",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 64,
+  "redirected": true,
+  "replaces": []
+ },
+ {
+  "slug": "what-the-gospel-actually-is",
+  "title": "What the Gospel Actually Is",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 64,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "is-god-angry",
+  "title": "Is God Angry?",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 65,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "why-did-jesus-have-to-die",
+  "title": "Why Did Jesus Have to Die?",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 65,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "reading-in-community",
+  "title": "You Were Never Meant to Read the Bible Alone",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 66,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "scripture-meditation",
+  "title": "Scripture Meditation",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 66,
+  "redirected": true,
+  "replaces": []
+ },
+ {
+  "slug": "why-christianity",
+  "title": "Why Christianity and Not Something Else?",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 66,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "why-hearing-isnt-enough",
+  "title": "Why Just Agreeing With Jesus Isn't Enough",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 67,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "creation-care-not-optional",
+  "title": "Creation Care Not Optional",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 67,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "how-the-reformation-started-and-why-it-still-matters",
+  "title": "How the Reformation Started and Why It Still Matters",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 67,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "is-god-in-control",
+  "title": "If God Is in Control, Why Doesn't It Feel Like It?",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 68,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "church-credibility-problem",
+  "title": "Church Credibility Problem",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 68,
+  "redirected": true,
+  "replaces": []
+ },
+ {
+  "slug": "evolution-and-genesis",
+  "title": "Evolution and Genesis: A Pastor's Guide",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 68,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "the-holiness-of-god",
+  "title": "What Does It Mean That God Is Holy?",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 69,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "does-hell-exist",
+  "title": "Does Hell Exist, and How Could a Loving God Allow It?",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 69,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "courage-to-be-different",
+  "title": "Courage to Be Different",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 69,
+  "redirected": true,
+  "replaces": []
+ },
+ {
+  "slug": "the-trinity-is-not-optional",
+  "title": "The Trinity Is Not Optional",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 69,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "do-miracles-still-happen",
+  "title": "Miracles: Do They Still Happen?",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 82,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "creeds-confessions-statements-of-faith",
+  "title": "Creeds, Confessions, and Statements of Faith: Why the Church Wrote Them Down",
+  "pillar": "theology",
+  "theme": 3,
+  "score": 89,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "what-following-this-actually-costs",
+  "title": "What Following This Actually Costs",
+  "pillar": "doubt",
+  "theme": 4,
+  "score": 32,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "what-psalms-teach-about-anger-at-god",
+  "title": "Is It Okay to Be Angry at God?",
+  "pillar": "doubt",
+  "theme": 4,
+  "score": 35,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "the-theology-of-saturday",
+  "title": "Where Is God on Holy Saturday?",
+  "pillar": "doubt",
+  "theme": 4,
+  "score": 38,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "the-bible-without-the-marketing",
+  "title": "The Bible Without the Marketing",
+  "pillar": "doubt",
+  "theme": 4,
+  "score": 38,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "the-problem-of-suffering-honestly",
+  "title": "The Problem of Suffering, Honestly",
+  "pillar": "doubt",
+  "theme": 4,
+  "score": 38,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "the-historical-jesus-without-the-shortcuts",
+  "title": "The Historical Jesus, Without the Shortcuts",
+  "pillar": "doubt",
+  "theme": 4,
+  "score": 39,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "near-death-experiences",
+  "title": "Does the Evidence for Near-Death Experiences Prove Anything?",
+  "pillar": "doubt",
+  "theme": 4,
+  "score": 40,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "morality-without-god-and-with-him",
+  "title": "Morality Without God, and With Him",
+  "pillar": "doubt",
+  "theme": 4,
+  "score": 40,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "the-weight-that-stays",
+  "title": "When Grief Doesn't Lift",
+  "pillar": "doubt",
+  "theme": 4,
+  "score": 42,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "anxiety-and-faith",
+  "title": "Is My Anxiety a Spiritual Failure?",
+  "pillar": "doubt",
+  "theme": 4,
+  "score": 42,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "the-questions-that-actually-matter",
+  "title": "The Questions That Actually Matter",
+  "pillar": "doubt",
+  "theme": 4,
+  "score": 44,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "does-god-actually-exist",
+  "title": "Does God Actually Exist?",
+  "pillar": "doubt",
+  "theme": 4,
+  "score": 45,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "is-jesus-really-the-only-way",
+  "title": "Is Jesus Really the Only Way?",
+  "pillar": "doubt",
+  "theme": 4,
+  "score": 48,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "christians-and-abortion",
+  "title": "What Should Christians Think About Abortion?",
+  "pillar": "doubt",
+  "theme": 4,
+  "score": 49,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "natural-evil-and-animal-suffering",
+  "title": "The Suffering God Never Ordered",
+  "pillar": "doubt",
+  "theme": 4,
+  "score": 49,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "christianity-and-islam",
+  "title": "What Christianity and Islam Actually Dispute",
+  "pillar": "doubt",
+  "theme": 4,
+  "score": 51,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "what-about-those-who-never-heard",
+  "title": "What About Those Who Never Heard?",
+  "pillar": "doubt",
+  "theme": 4,
+  "score": 51,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "personhood-in-the-age-of-ai",
+  "title": "What Makes Us Human in the Age of AI?",
+  "pillar": "doubt",
+  "theme": 4,
+  "score": 53,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "when-god-doesnt-make-sense",
+  "title": "When God Stops Making Sense",
+  "pillar": "doubt",
+  "theme": 4,
+  "score": 54,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "angels-demons-and-the-unseen",
+  "title": "What the Bible Says About Angels, Demons, and the Unseen",
+  "pillar": "doubt",
+  "theme": 4,
+  "score": 54,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "can-you-lose-your-salvation",
+  "title": "Can You Lose Your Salvation?",
+  "pillar": "doubt",
+  "theme": 4,
+  "score": 54,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "are-miracles-believable",
+  "title": "Are Miracles Believable?",
+  "pillar": "doubt",
+  "theme": 4,
+  "score": 55,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "faith-and-gender-identity",
+  "title": "What Does the Church Owe Transgender People?",
+  "pillar": "doubt",
+  "theme": 4,
+  "score": 56,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "women-in-ministry",
+  "title": "Can a Woman Preach?",
+  "pillar": "doubt",
+  "theme": 4,
+  "score": 56,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "cessationism-or-continuation",
+  "title": "Do the Gifts Still Happen?",
+  "pillar": "doubt",
+  "theme": 4,
+  "score": 57,
+  "redirected": false,
+  "replaces": [
+   "what-the-bible-says-about-spiritual-gifts"
+  ]
+ },
+ {
+  "slug": "when-god-is-silent-and-the-room-is-empty",
+  "title": "Where Is God When You're Grieving?",
+  "pillar": "doubt",
+  "theme": 4,
+  "score": 58,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "how-to-read-genesis-one",
+  "title": "How Should a Christian Read Genesis 1?",
+  "pillar": "doubt",
+  "theme": 4,
+  "score": 58,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "when-fear-rewrites-theology",
+  "title": "When Fear Starts Rewriting What You Believe",
+  "pillar": "doubt",
+  "theme": 4,
+  "score": 62,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "is-faith-irrational",
+  "title": "Is Believing Anything on Faith Irrational?",
+  "pillar": "doubt",
+  "theme": 4,
+  "score": 62,
+  "redirected": false,
+  "replaces": [
+   "apologetics-isnt-faith-believing-without-evidence"
+  ]
+ },
+ {
+  "slug": "did-the-resurrection-happen",
+  "title": "Did the Resurrection Actually Happen?",
+  "pillar": "doubt",
+  "theme": 4,
+  "score": 63,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "dark-night-god-feels-absent",
+  "title": "What to Do When God Feels Absent",
+  "pillar": "doubt",
+  "theme": 4,
+  "score": 64,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "did-god-command-genocide",
+  "title": "Did God Command Genocide?",
+  "pillar": "doubt",
+  "theme": 4,
+  "score": 64,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "end-of-life-and-bioethics",
+  "title": "Should We Keep People Alive at Any Cost?",
+  "pillar": "doubt",
+  "theme": 4,
+  "score": 64,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "the-atheist-in-the-pulpit",
+  "title": "The Atheist in the Pulpit",
+  "pillar": "doubt",
+  "theme": 4,
+  "score": 64,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "what-if-we-are-wrong",
+  "title": "What If Christianity Is Wrong?",
+  "pillar": "doubt",
+  "theme": 4,
+  "score": 65,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "is-faith-just-wishful-thinking",
+  "title": "Is Faith Just Wishful Thinking?",
+  "pillar": "doubt",
+  "theme": 4,
+  "score": 65,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "why-trust-the-bible",
+  "title": "Why Would Anyone Trust the Bible?",
+  "pillar": "doubt",
+  "theme": 4,
+  "score": 67,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "can-you-be-good-without-god",
+  "title": "Can You Be Good Without God?",
+  "pillar": "doubt",
+  "theme": 4,
+  "score": 68,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "foster-care-unfinished-mandate",
+  "title": "Foster Care: The Unfinished Mandate",
+  "pillar": "prophetic-justice",
+  "theme": 5,
+  "score": 31,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "church-and-mental-health",
+  "title": "How the Church Handles Mental Health (Badly)",
+  "pillar": "prophetic-justice",
+  "theme": 5,
+  "score": 40,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "healthcare-moral-issue",
+  "title": "Healthcare Is a Moral Issue",
+  "pillar": "prophetic-justice",
+  "theme": 5,
+  "score": 42,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "megachurch-model",
+  "title": "The Megachurch Model: What Worked, What Didn't, What's Next",
+  "pillar": "prophetic-justice",
+  "theme": 5,
+  "score": 42,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "gentrification-displacement",
+  "title": "Gentrification and Displacement",
+  "pillar": "prophetic-justice",
+  "theme": 5,
+  "score": 43,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "jubilee-debt-and-the-economy-god-commanded",
+  "title": "Jubilee, Debt, and the Economy God Commanded",
+  "pillar": "prophetic-justice",
+  "theme": 5,
+  "score": 44,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "church-mental-health-justice",
+  "title": "Mental Health Is a Justice Issue",
+  "pillar": "prophetic-justice",
+  "theme": 5,
+  "score": 45,
+  "redirected": true,
+  "replaces": []
+ },
+ {
+  "slug": "elder-abuse-invisible",
+  "title": "Elder Abuse: The Invisible Sin",
+  "pillar": "prophetic-justice",
+  "theme": 5,
+  "score": 46,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "climate-refugees",
+  "title": "Climate Refugees and the Sojourner",
+  "pillar": "prophetic-justice",
+  "theme": 5,
+  "score": 47,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "church-domestic-violence",
+  "title": "The Church and Domestic Violence",
+  "pillar": "prophetic-justice",
+  "theme": 5,
+  "score": 48,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "church-food-insecurity",
+  "title": "The Church and Food Insecurity",
+  "pillar": "prophetic-justice",
+  "theme": 5,
+  "score": 49,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "toxic-masculinity-in-the-pulpit",
+  "title": "Toxic Masculinity in the Pulpit",
+  "pillar": "prophetic-justice",
+  "theme": 5,
+  "score": 49,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "water-theological-issue",
+  "title": "Water Is a Theological Issue",
+  "pillar": "prophetic-justice",
+  "theme": 5,
+  "score": 50,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "addiction-justice-issue",
+  "title": "Addiction Is a Justice Issue",
+  "pillar": "prophetic-justice",
+  "theme": 5,
+  "score": 51,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "maternal-mortality-pro-life",
+  "title": "Maternal Mortality and the Meaning of Pro-Life",
+  "pillar": "prophetic-justice",
+  "theme": 5,
+  "score": 51,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "colonialism-and-missions",
+  "title": "Colonialism and Missions",
+  "pillar": "prophetic-justice",
+  "theme": 5,
+  "score": 51,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "the-eye-of-the-needle-jesus-and-the-rich",
+  "title": "The Eye of the Needle: Jesus and the Rich",
+  "pillar": "prophetic-justice",
+  "theme": 5,
+  "score": 52,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "racial-reconciliation-without-repentance",
+  "title": "Racial Reconciliation Without Repentance",
+  "pillar": "prophetic-justice",
+  "theme": 5,
+  "score": 53,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "charity-is-not-justice-the-difference",
+  "title": "Charity Is Not Justice: The Difference That Changes Everything",
+  "pillar": "prophetic-justice",
+  "theme": 5,
+  "score": 53,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "individual-sin-and-systemic-sin-explained",
+  "title": "Individual Sin and Systemic Sin: What the Bible Teaches",
+  "pillar": "prophetic-justice",
+  "theme": 5,
+  "score": 53,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "theological-case-against-torture",
+  "title": "The Theological Case Against Torture",
+  "pillar": "prophetic-justice",
+  "theme": 5,
+  "score": 54,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "church-gun-violence",
+  "title": "The Church and Gun Violence",
+  "pillar": "prophetic-justice",
+  "theme": 5,
+  "score": 55,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "environmental-racism",
+  "title": "Environmental Racism and the Body of Christ",
+  "pillar": "prophetic-justice",
+  "theme": 5,
+  "score": 55,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "food-sovereignty-theology-table",
+  "title": "Food Sovereignty and the Theology of the Table",
+  "pillar": "prophetic-justice",
+  "theme": 5,
+  "score": 55,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "complicity-how-good-people-sustain-bad-systems",
+  "title": "Complicity: How Good People Sustain Bad Systems",
+  "pillar": "prophetic-justice",
+  "theme": 5,
+  "score": 55,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "why-the-prophets-made-everyone-uncomfortable",
+  "title": "Why the Prophets Made Everyone Uncomfortable",
+  "pillar": "prophetic-justice",
+  "theme": 5,
+  "score": 55,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "what-the-bible-says-about-immigrants-and-refugees-in-depth",
+  "title": "What the Bible Says About Immigrants and Refugees",
+  "pillar": "prophetic-justice",
+  "theme": 5,
+  "score": 55,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "food-deserts-theology-bread",
+  "title": "Food Deserts and the Theology of Bread",
+  "pillar": "prophetic-justice",
+  "theme": 5,
+  "score": 56,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "moral-injury-veterans",
+  "title": "Moral Injury and the Veterans Among Us",
+  "pillar": "prophetic-justice",
+  "theme": 5,
+  "score": 56,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "theology-of-borders",
+  "title": "A Theology of Borders",
+  "pillar": "prophetic-justice",
+  "theme": 5,
+  "score": 56,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "church-refugee-crisis",
+  "title": "The Church and the Refugee",
+  "pillar": "prophetic-justice",
+  "theme": 5,
+  "score": 57,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "literacy-as-justice",
+  "title": "Literacy as Justice",
+  "pillar": "prophetic-justice",
+  "theme": 5,
+  "score": 57,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "church-must-speak-housing",
+  "title": "Why the Church Must Speak About Housing",
+  "pillar": "prophetic-justice",
+  "theme": 5,
+  "score": 58,
+  "redirected": true,
+  "replaces": []
+ },
+ {
+  "slug": "doctrine-of-discovery",
+  "title": "The Doctrine of Discovery",
+  "pillar": "prophetic-justice",
+  "theme": 5,
+  "score": 58,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "human-trafficking-selective-outrage",
+  "title": "Human Trafficking and Our Selective Outrage",
+  "pillar": "prophetic-justice",
+  "theme": 5,
+  "score": 58,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "theology-of-land",
+  "title": "A Theology of Land",
+  "pillar": "prophetic-justice",
+  "theme": 5,
+  "score": 58,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "theology-of-repair",
+  "title": "The Practices of Repair",
+  "pillar": "prophetic-justice",
+  "theme": 5,
+  "score": 58,
+  "redirected": true,
+  "replaces": []
+ },
+ {
+  "slug": "theology-of-reparations",
+  "title": "A Theology of Reparations",
+  "pillar": "prophetic-justice",
+  "theme": 5,
+  "score": 59,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "disability-dignity-and-the-image-of-god",
+  "title": "Disability, Dignity, and the Image of God",
+  "pillar": "prophetic-justice",
+  "theme": 5,
+  "score": 59,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "mental-health-and-the-church-beyond-pray-about-it",
+  "title": "Mental Health and the Church: Beyond Just Pray About It",
+  "pillar": "prophetic-justice",
+  "theme": 5,
+  "score": 59,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "church-wealth-world-poverty",
+  "title": "The Church's Wealth and the World's Poverty",
+  "pillar": "prophetic-justice",
+  "theme": 5,
+  "score": 60,
+  "redirected": true,
+  "replaces": []
+ },
+ {
+  "slug": "gender-based-violence",
+  "title": "Gender-Based Violence and the House of God",
+  "pillar": "prophetic-justice",
+  "theme": 5,
+  "score": 60,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "payday-lending-christians",
+  "title": "Payday Lending and the People of God",
+  "pillar": "prophetic-justice",
+  "theme": 5,
+  "score": 60,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "theology-fair-wages",
+  "title": "A Theology of Fair Wages",
+  "pillar": "prophetic-justice",
+  "theme": 5,
+  "score": 60,
+  "redirected": false,
+  "replaces": [
+   "church-wage-theft"
+  ]
+ },
+ {
+  "slug": "the-consistent-pro-life-ethic-womb-to-tomb",
+  "title": "The Consistent Pro-Life Ethic: Womb to Tomb",
+  "pillar": "prophetic-justice",
+  "theme": 5,
+  "score": 60,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "redlining-church-neighborhoods",
+  "title": "Redlining and the Neighborhoods We Kept",
+  "pillar": "prophetic-justice",
+  "theme": 5,
+  "score": 61,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "what-the-bible-means-by-reconciliation",
+  "title": "What the Bible Means by Reconciliation",
+  "pillar": "prophetic-justice",
+  "theme": 5,
+  "score": 61,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "digital-divide",
+  "title": "The Digital Divide and the Gleaning Edge",
+  "pillar": "prophetic-justice",
+  "theme": 5,
+  "score": 62,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "the-image-of-god-and-the-lie-of-race",
+  "title": "The Image of God and the Lie of Race",
+  "pillar": "prophetic-justice",
+  "theme": 5,
+  "score": 64,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "what-the-bible-says-about-the-poor-and-the-stranger",
+  "title": "What the Bible Says About the Poor and the Stranger",
+  "pillar": "prophetic-justice",
+  "theme": 5,
+  "score": 66,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "color-blindness-not-virtue",
+  "title": "Color-Blindness Is Not the Virtue We Think It Is",
+  "pillar": "prophetic-justice",
+  "theme": 5,
+  "score": 68,
+  "redirected": true,
+  "replaces": []
+ },
+ {
+  "slug": "lament-the-prayer-the-church-forgot",
+  "title": "Lament: The Prayer the Church Forgot",
+  "pillar": "prophetic-justice",
+  "theme": 5,
+  "score": 73,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "reconstructing-faith",
+  "title": "Reconstructing Faith: What Comes After Deconstruction",
+  "pillar": "devotionals",
+  "theme": 6,
+  "score": 35,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "faith-at-work",
+  "title": "Faith at Work When Nobody Shares It",
+  "pillar": "devotionals",
+  "theme": 6,
+  "score": 42,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "finding-a-good-church",
+  "title": "How to Find a Church That Won't Hurt You",
+  "pillar": "devotionals",
+  "theme": 6,
+  "score": 43,
+  "redirected": false,
+  "replaces": [
+   "why-young-adults-arent-coming-back"
+  ]
+ },
+ {
+  "slug": "what-is-vocation-work-as-calling",
+  "title": "What Is Vocation? Work as Calling",
+  "pillar": "devotionals",
+  "theme": 6,
+  "score": 46,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "why-the-church-has-a-calendar",
+  "title": "Why Does the Church Have Its Own Calendar?",
+  "pillar": "devotionals",
+  "theme": 6,
+  "score": 47,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "when-prayer-goes-unanswered",
+  "title": "What to Do When Prayer Goes Unanswered",
+  "pillar": "devotionals",
+  "theme": 6,
+  "score": 48,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "why-lent",
+  "title": "Why Would Anyone Give Something Up for Lent?",
+  "pillar": "devotionals",
+  "theme": 6,
+  "score": 49,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "easter-is-not-a-day",
+  "title": "Easter Was Never Meant to Be One Sunday",
+  "pillar": "devotionals",
+  "theme": 6,
+  "score": 51,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "how-to-talk-about-faith",
+  "title": "How to Talk About Faith Without Being Weird",
+  "pillar": "devotionals",
+  "theme": 6,
+  "score": 51,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "what-is-advent",
+  "title": "What Is Advent, and Why Wait for Something That Already Happened?",
+  "pillar": "devotionals",
+  "theme": 6,
+  "score": 53,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "how-do-you-actually-pray",
+  "title": "How Do You Actually Pray?",
+  "pillar": "devotionals",
+  "theme": 6,
+  "score": 53,
+  "redirected": false,
+  "replaces": [
+   "the-only-prayer-jesus-taught"
+  ]
+ },
+ {
+  "slug": "why-christians-fast",
+  "title": "Why Christians Fast (and Why You Probably Stopped)",
+  "pillar": "devotionals",
+  "theme": 6,
+  "score": 55,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "what-the-bible-says-about-money",
+  "title": "What the Bible Actually Says About Money",
+  "pillar": "devotionals",
+  "theme": 6,
+  "score": 55,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "how-to-read-the-bible-devotionally",
+  "title": "How to Read the Bible Devotionally",
+  "pillar": "devotionals",
+  "theme": 6,
+  "score": 55,
+  "redirected": false,
+  "replaces": [
+   "reading-the-bible-slowly"
+  ]
+ },
+ {
+  "slug": "a-christian-view-of-personal-finance",
+  "title": "A Christian View of Personal Finance",
+  "pillar": "devotionals",
+  "theme": 6,
+  "score": 55,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "digital-discipleship",
+  "title": "Digital Discipleship: Spiritual Formation in the Age of Algorithms",
+  "pillar": "devotionals",
+  "theme": 6,
+  "score": 57,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "friendship-the-love-we-forgot",
+  "title": "Friendship Is the Love We Forgot",
+  "pillar": "devotionals",
+  "theme": 6,
+  "score": 58,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "ordinary-time",
+  "title": "What the Boring Middle of the Year Teaches You",
+  "pillar": "devotionals",
+  "theme": 6,
+  "score": 60,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "a-day-of-doing-nothing",
+  "title": "Why a Day of Doing Nothing Is an Act of Defiance",
+  "pillar": "devotionals",
+  "theme": 6,
+  "score": 60,
+  "redirected": false,
+  "replaces": [
+   "sabbath-is-resistance"
+  ]
+ },
+ {
+  "slug": "how-to-rest-in-a-culture-of-exhaustion",
+  "title": "How to Rest in a Culture of Exhaustion",
+  "pillar": "devotionals",
+  "theme": 6,
+  "score": 60,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "rest-ambition-and-the-idol-of-success",
+  "title": "Rest, Ambition, and the Idol of Success",
+  "pillar": "devotionals",
+  "theme": 6,
+  "score": 60,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "how-to-die-well",
+  "title": "How to Die Well",
+  "pillar": "devotionals",
+  "theme": 6,
+  "score": 61,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "your-body-is-not-a-cage",
+  "title": "Your Body Is Not a Cage",
+  "pillar": "devotionals",
+  "theme": 6,
+  "score": 61,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "how-to-find-gods-will-for-your-career",
+  "title": "How to Find God's Will for Your Career",
+  "pillar": "devotionals",
+  "theme": 6,
+  "score": 63,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "prayer-when-you-do-not-feel-like-it",
+  "title": "Prayer When You Do Not Feel Like It",
+  "pillar": "devotionals",
+  "theme": 6,
+  "score": 65,
+  "redirected": false,
+  "replaces": [
+   "praying-when-you-dont-feel-it"
+  ]
+ },
+ {
+  "slug": "praying-the-words-when-you-have-none",
+  "title": "Praying the Words When You Have None",
+  "pillar": "devotionals",
+  "theme": 6,
+  "score": 68,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "your-work-was-never-going-to-save-you",
+  "title": "Your Work Was Never Going to Save You",
+  "pillar": "devotionals",
+  "theme": 6,
+  "score": 68,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "praying-at-fixed-hours",
+  "title": "Praying at the Same Times Every Day, Like Christians Always Did",
+  "pillar": "devotionals",
+  "theme": 6,
+  "score": 69,
+  "redirected": false,
+  "replaces": []
+ },
+ {
+  "slug": "the-examined-life-practices-that-hold",
+  "title": "The Examined Life: Spiritual Practices That Hold",
+  "pillar": "devotionals",
+  "theme": 6,
+  "score": 69,
+  "redirected": false,
+  "replaces": []
+ }
+]

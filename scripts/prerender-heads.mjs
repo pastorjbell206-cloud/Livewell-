@@ -42,8 +42,10 @@ const BING_VERIFICATION =
 // Branded default card rendered by the dynamic OG Edge function (api/og.tsx).
 // There is no static og-default.png in the repo; this endpoint always renders.
 const OG_DEFAULT = ogImageUrl("LiveWell by James Bell", "Theology for everyday life");
+// Hand-mirror of BRAND_SENTENCE in client/src/lib/positioning.ts (this .mjs
+// cannot import it). server/brand-sentence.test.ts fails CI if they drift.
 const FALLBACK_DESC =
-  "Theology that carries the weight of everyday life. Essays on faith, justice, marriage, parenting, and pastoral ministry by James Bell.";
+  "The American church traded the gospel for power; James Bell writes from inside the trade, for readers tired of being told whose side God is on.";
 
 const STATIC_PAGES = [
   {
@@ -68,19 +70,19 @@ const STATIC_PAGES = [
   },
   {
     path: "/books",
-    title: "Books — by James Bell",
+    title: "Books by James Bell — Three Titles, Written by Hand",
     description: "The books James Bell wrote by hand: When God Bless America Replaces Thy Kingdom Come, The Monster in the Mirror, and Believe. Read the opening of each free.",
     type: "website",
   },
   {
     path: "/marriage",
-    title: "Marriage — Essays for Couples",
+    title: "Christian Marriage Help — Covenant, Conflict, and Repair",
     description: "Marriage essays for couples in ministry, midlife, and beyond. Honest, theologically grounded, never tip-shaped.",
     type: "website",
   },
   {
     path: "/parenting",
-    title: "Parenting — From a Father of Five",
+    title: "Christian Parenting Help — From a Father of Five",
     description: "Essays on parenting from a pastor and father of five sons. Formation over performance, presence over advice.",
     type: "website",
   },
@@ -110,14 +112,8 @@ const STATIC_PAGES = [
   },
   {
     path: "/library",
-    title: "The Library — A commonplace book",
+    title: "The Commonplace — A quote book of what is worth keeping",
     description: "Curated quotes from Keller, Brueggemann, Peterson, Bonhoeffer, Newbigin, Taylor, Bellah, Haidt.",
-    type: "website",
-  },
-  {
-    path: "/membership",
-    title: "Membership — LiveWell by James Bell",
-    description: "Full access to the essays, member-only writing, curated reading paths, and the deeper room where theology meets the weight of real life.",
     type: "website",
   },
   {
@@ -134,7 +130,7 @@ const STATIC_PAGES = [
   },
   {
     path: "/nation",
-    title: "Christ and the Nation",
+    title: "Christ and the Nation — The Bible, America, and Power",
     description: "Was America a Christian nation? How close is each party to the Bible? What a biblical government would actually mean.",
     type: "website",
   },
@@ -423,8 +419,26 @@ function extractReadableText(obj, acc = [], depth = 0) {
   return acc;
 }
 
+/**
+ * The reply channel under every essay (client/src/components/ReplyToEssay.tsx
+ * renders the same block once the app mounts). Copy and address come from one
+ * file so the two never drift; the link opens a mail client with the essay's
+ * title as the subject.
+ */
+const REPLY = readJsonSafe("client/src/data/reply.json");
+function replyBlockHtml(title) {
+  if (!REPLY || !REPLY.email || !REPLY.copy) return "";
+  const href = `mailto:${REPLY.email}?subject=${encodeURIComponent(title)}`;
+  return [
+    `<aside class="pre-reply" aria-label="Reply to this essay">`,
+    `<p>${escapeHtml(REPLY.copy)}</p>`,
+    `<p><a href="${escapeHtml(href)}">${escapeHtml(REPLY.link || "Write to James")}</a></p>`,
+    `</aside>`,
+  ].join("\n");
+}
+
 /** Build the crawlable <article> body block for #root. */
-function renderArticleBody({ title, subtitle, contentHtml, sectionLabel }) {
+function renderArticleBody({ title, subtitle, contentHtml, sectionLabel, reply = false }) {
   const parts = [
     `<article itemscope itemtype="https://schema.org/Article">`,
     sectionLabel ? `<p class="pre-eyebrow">${escapeHtml(sectionLabel)}</p>` : "",
@@ -434,6 +448,7 @@ function renderArticleBody({ title, subtitle, contentHtml, sectionLabel }) {
     `<div itemprop="articleBody">`,
     contentHtml,
     `</div>`,
+    reply ? replyBlockHtml(title) : "",
     `</article>`,
   ];
   // A tiny style keeps the crawler-only content readable if JS ever fails to
@@ -442,7 +457,7 @@ function renderArticleBody({ title, subtitle, contentHtml, sectionLabel }) {
 }
 
 /** Turn a content object (or raw markdown) into the injected body HTML. */
-function bodyFromContent({ title, subtitle, sectionLabel, markdown, contentObj }) {
+function bodyFromContent({ title, subtitle, sectionLabel, markdown, contentObj, reply = false }) {
   let contentHtml = "";
   if (markdown) {
     contentHtml = mdToHtml(markdown);
@@ -451,7 +466,7 @@ function bodyFromContent({ title, subtitle, sectionLabel, markdown, contentObj }
     contentHtml = paras.map((p) => mdToHtml(p)).filter(Boolean).join("\n");
   }
   if (!contentHtml) return "";
-  return renderArticleBody({ title, subtitle, contentHtml, sectionLabel });
+  return renderArticleBody({ title, subtitle, contentHtml, sectionLabel, reply });
 }
 
 function articleSchema(post, url, image) {
@@ -495,6 +510,37 @@ function bookSchema(book, url, image) {
     author: { "@type": "Person", name: book.author || AUTHOR_NAME },
     image: image || OG_DEFAULT,
     url,
+  };
+}
+
+// The plain-language search layer (scripts/build-seo-layer.mjs): a meta
+// description in everyday words per essay and, when the title is a question,
+// the question with the essay's own answer. Missing file = no layer, no crash.
+const SEO_LAYER = readJsonSafe("content/seo-layer.generated.json") || {};
+// The pastor-trade essays moved to PCN: no per-route HTML, since the URL
+// redirects there (vercel.json) and the sitemap no longer lists it.
+const PCN_MOVED = new Set((readJsonSafe("content/pcn-moved.json") || {}).slugs || []);
+// Rewrites (scripts/apply-rewrites.mjs): merged essays redirect, so they are not
+// prerendered; a rewritten essay is prerendered from the library record even
+// when the database still holds the old text under the same slug.
+const REWRITES = readJsonSafe("content/rewrites.generated.json") || { rewritten: [], merged: {} };
+const REWRITTEN = new Set(REWRITES.rewritten || []);
+for (const slug of Object.keys(REWRITES.merged || {})) PCN_MOVED.add(slug);
+// An address that redirects elsewhere is never served, so it is not prerendered.
+for (const r of (readJsonSafe("vercel.json") || {}).redirects || []) {
+  const m = String(r.source || "").match(/^\/writing\/([a-z0-9][a-z0-9-]*)$/);
+  if (m) PCN_MOVED.add(m[1]);
+}
+
+function qaSchema(qa) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "QAPage",
+    mainEntity: {
+      "@type": "Question",
+      name: qa.question,
+      acceptedAnswer: { "@type": "Answer", text: qa.answer },
+    },
   };
 }
 
@@ -665,6 +711,7 @@ function rewriteIndexHtml(template, routeHead) {
 }
 
 const HOME_HERO_MARKER = /\s*<!--\s*prerender:home-hero[\s\S]*?-->/;
+const HOME_HERO_BLOCK = /\s*<!-- home-hero:start -->[\s\S]*?<!-- home-hero:end -->/;
 
 /**
  * The front page's hero, as static HTML, from the same constants Home.tsx
@@ -683,28 +730,47 @@ function homeHeroHtml() {
     path.join(REPO_ROOT, "client/src/lib/positioning.ts"),
     "utf8"
   );
-  const pick = (name) => {
+  // A constant is either a string literal or an alias of another constant
+  // (PRIMARY_SUBHEAD_SHORT = BRAND_SENTENCE). Follow the alias. Before this
+  // did, the alias read as "no match", the function returned "", and the
+  // front page shipped with no hero in its HTML for the whole time the
+  // brand-sentence alias existed: first paint was the masthead alone and
+  // the largest paint waited on the JS bundle.
+  const pick = (name, depth = 0) => {
     const m = src.match(
-      new RegExp(`export const ${name}\\s*=\\s*"((?:[^"\\\\]|\\\\.)*)"`)
+      new RegExp(`export const ${name}\\s*=\\s*("(?:[^"\\\\]|\\\\.)*"|[A-Z_][A-Z0-9_]*)\\s*;`)
     );
-    return m ? m[1].replace(/\\"/g, '"') : "";
+    if (!m) return "";
+    if (m[1].startsWith('"')) return m[1].slice(1, -1).replace(/\\"/g, '"');
+    return depth < 3 ? pick(m[1], depth + 1) : "";
   };
   const esc = (s) =>
     s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
   const kicker = pick("PRIMARY_KICKER");
   const headline = pick("PRIMARY_HEADLINE");
   const subhead = pick("PRIMARY_SUBHEAD_SHORT");
-  if (!headline || !subhead) return "";
+  if (!headline || !subhead) {
+    throw new Error(
+      "[prerender] could not read PRIMARY_HEADLINE / PRIMARY_SUBHEAD_SHORT from client/src/lib/positioning.ts; the home hero would ship empty"
+    );
+  }
+  // The same two-column grid Home.tsx mounts into (.home-hero-grid in the
+  // built CSS), with the picture column reserved at the ratio the lead
+  // essay's art will fill, so the swap moves nothing on desktop either.
   return `
         <section style="background:var(--charcoal,#1A1A1A);color:var(--charcoal-fg,#F5F0E6);padding:var(--s-7,96px) var(--s-4,32px) var(--s-6,64px)">
-          <div style="max-width:var(--w-default,1100px);margin:0 auto">
+          <div class="home-hero-grid" style="max-width:var(--w-default,1100px);margin:0 auto;display:grid;gap:var(--s-6,64px)">
             <div style="max-width:780px">
               <div style="display:inline-flex;align-items:center;gap:12px;margin-bottom:20px">
                 <span aria-hidden="true" style="width:32px;height:1px;background:var(--mustard,#D4A017)"></span>
                 <span style="font-family:var(--U,sans-serif);font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--mustard,#D4A017)">${esc(kicker)}</span>
               </div>
               <h1 style="font-family:var(--F,Georgia,serif);font-size:clamp(42px,7vw,96px);font-weight:400;line-height:1.03;letter-spacing:-.025em;color:var(--charcoal-fg,#F5F0E6);margin:0 0 24px">${esc(headline)}</h1>
-              <p style="font-family:var(--F,Georgia,serif);font-size:clamp(20px,2.6vw,30px);font-style:italic;font-weight:400;line-height:1.3;color:var(--charcoal-fg,#F5F0E6);max-width:32ch;margin:0 0 24px">${esc(subhead)}</p>
+              <p style="font-family:var(--F,Georgia,serif);font-size:clamp(20px,2.6vw,30px);font-style:italic;font-weight:400;line-height:1.3;color:rgba(245,240,230,.82);max-width:30ch;margin:0 0 40px">${esc(subhead)}</p>
+            </div>
+            <div aria-hidden="true" style="max-width:640px;justify-self:end;width:100%">
+              <div style="aspect-ratio:16 / 9;width:100%;background:rgba(245,240,230,.06);border-radius:var(--radius-sm,4px)"></div>
+              <div style="height:44px"></div>
             </div>
           </div>
         </section>`;
@@ -718,8 +784,16 @@ function writeRoute(template, route, head, bodyHtml = "") {
   fs.mkdirSync(path.dirname(target), { recursive: true });
   let html = rewriteIndexHtml(template, head);
   // The static hero paints from the HTML on the front page only; every other
-  // route drops the marker so a deep link never flashes the home hero.
-  html = html.replace(HOME_HERO_MARKER, isHome ? homeHeroHtml() : "");
+  // route drops the marker so a deep link never flashes the home hero. The
+  // template is dist/public/index.html, which this same function overwrites
+  // for "/", so a second run finds the hero block where the marker was: both
+  // are recognised, and the block is stripped or replaced the same way.
+  const hero = isHome
+    ? `<!-- home-hero:start -->${homeHeroHtml()}\n        <!-- home-hero:end -->`
+    : "";
+  html = HOME_HERO_MARKER.test(html)
+    ? html.replace(HOME_HERO_MARKER, hero)
+    : html.replace(HOME_HERO_BLOCK, hero);
   // Inject crawlable article content at the top of #root. The client mounts
   // with createRoot, which replaces #root entirely, so this is crawler-only.
   if (bodyHtml) {
@@ -1020,20 +1094,39 @@ async function main() {
   // the static-library pass below doesn't double-write them.
   const writtenEssaySlugs = new Set();
 
+  // 128 database rows are catalogue stubs (a 50-word abstract) of essays the
+  // library holds in full (1,700 words). "DB wins on slug" would hand a crawler
+  // the stub. When the library body is the fuller one, the page gets it.
+  const libBySlug = new Map(
+    (readJsonSafe("content/static-library.generated.json") || []).map((r) => [r.slug, r])
+  );
+  const words = (s) => String(s || "").split(/\s+/).filter(Boolean).length;
+  const preferFullBody = (row) => {
+    const lib = libBySlug.get(row.slug);
+    if (lib && REWRITTEN.has(row.slug)) {
+      return { ...row, title: lib.title, excerpt: lib.excerpt, body: lib.body, pillar: lib.pillar || row.pillar, updatedAt: lib.updatedAt || row.updatedAt };
+    }
+    if (!lib || words(row.body) >= 200 || words(lib.body) <= words(row.body)) return row;
+    return { ...row, body: lib.body, excerpt: row.excerpt || lib.excerpt };
+  };
+
   // DB-driven pages
   const conn = await loadDb();
   if (conn) {
     try {
-      const [posts] = await conn.query(
+      const [dbPosts] = await conn.query(
         `SELECT ${await selectList(conn, "posts", ["slug", "title", "excerpt", "pillar", "body", "coverImage", "publishedAt", "updatedAt", "createdAt"])} FROM posts WHERE published = true`
       );
+      const posts = dbPosts.map(preferFullBody);
       for (const post of posts) {
+        if (PCN_MOVED.has(post.slug)) continue;
         const url = `${SITE_URL}/writing/${post.slug}`;
         // Use the essay's own cover when present; otherwise render a per-essay
         // branded card from its title (+ pillar) via the dynamic OG endpoint.
         const image =
           post.coverImage || ogImageUrl(post.title, post.pillar || undefined);
-        const description = post.excerpt || post.title;
+        const seo = SEO_LAYER[post.slug];
+        const description = seo?.metaDescription || post.excerpt || post.title;
         const publishedIso = post.publishedAt
           ? new Date(post.publishedAt).toISOString()
           : new Date(post.createdAt).toISOString();
@@ -1049,7 +1142,8 @@ async function main() {
           publishedDate: publishedIso,
           modifiedDate: modifiedIso,
           schemas: [
-            articleSchema(post, url, image),
+            articleSchema({ ...post, excerpt: description }, url, image),
+            ...(seo?.qa ? [qaSchema(seo.qa)] : []),
             breadcrumbSchema([
               { name: "Home", path: "" },
               { name: "Writing", path: "/writing" },
@@ -1062,6 +1156,7 @@ async function main() {
           subtitle: post.excerpt || "",
           sectionLabel: post.pillar || "",
           markdown: post.body || "",
+          reply: true,
         });
         writeRoute(template, { path: `/writing/${post.slug}` }, head, bodyHtml);
         wrote++;
@@ -1134,10 +1229,11 @@ async function main() {
     let staticWrote = 0;
     for (const rec of staticLib) {
       if (!rec || !rec.slug || rec.published === false) continue;
-      if (writtenEssaySlugs.has(rec.slug)) continue;
+      if (writtenEssaySlugs.has(rec.slug) || PCN_MOVED.has(rec.slug)) continue;
       const url = `${SITE_URL}/writing/${rec.slug}`;
       const image = rec.coverImage || ogImageUrl(rec.title, rec.pillar || undefined);
-      const description = rec.excerpt || rec.title;
+      const seo = SEO_LAYER[rec.slug];
+      const description = seo?.metaDescription || rec.excerpt || rec.title;
       const publishedIso = rec.publishedAt
         ? new Date(rec.publishedAt).toISOString()
         : new Date(rec.createdAt || Date.parse("2026-01-01")).toISOString();
@@ -1150,13 +1246,14 @@ async function main() {
         type: "article",
         publishedDate: publishedIso,
         modifiedDate: modifiedIso,
-        schemas: [articleSchema(rec, url, image)],
+        schemas: [articleSchema({ ...rec, excerpt: description }, url, image), ...(seo?.qa ? [qaSchema(seo.qa)] : [])],
       });
       const bodyHtml = bodyFromContent({
         title: rec.title,
         subtitle: rec.excerpt || "",
         sectionLabel: rec.pillar || "",
         markdown: rec.body || "",
+        reply: true,
       });
       writeRoute(template, { path: `/writing/${rec.slug}` }, head, bodyHtml);
       wrote++;

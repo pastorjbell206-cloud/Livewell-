@@ -6,7 +6,7 @@
  * essay verified against client/src/lib/pillar-assignments.ts (the filing
  * registry) — this component fetches nothing, so every link resolves and the
  * card never depends on the network settling. We resolve the current post to
- * its six-pillar id via pillarForPost, offer that pillar's cornerstones (minus
+ * its pillar id via pillarForPost, offer that pillar's cornerstones (minus
  * the current essay, de-duplicated), and top up from a cross-pillar cornerstone
  * set when a pillar is thin — so the reader always gets three to four.
  */
@@ -15,6 +15,7 @@ import { pillarForPost } from "@/lib/taxonomy";
 
 interface PostLike {
   slug?: string | null;
+  related?: { slug: string; title: string; deck?: string }[] | null;
   pillar?: string | null;
 }
 
@@ -73,6 +74,13 @@ const FALLBACK: RelatedItem[] = [
 
 /** Up to four other essays, current excluded, de-duped, topped up when thin. */
 function pickRelated(post: PostLike): RelatedItem[] {
+  // The static essay file carries three picks from the essay's own track,
+  // computed at build time (scripts/build-public-essays.mjs). Those win; the
+  // pillar cornerstones below are the fallback for database-only essays.
+  const built = Array.isArray(post.related)
+    ? post.related.filter(r => r && typeof r.slug === "string" && typeof r.title === "string" && r.slug !== post.slug)
+    : [];
+  if (built.length >= 3) return built.slice(0, 4).map(r => ({ slug: r.slug, title: r.title, blurb: r.deck ?? "" }));
   const current = (post.slug ?? "").trim();
   const pillarId = pillarForPost(post)?.id ?? 5;
   const seen = new Set<string>([current]);
@@ -90,17 +98,30 @@ function pickRelated(post: PostLike): RelatedItem[] {
   return out;
 }
 
-export function RelatedEssays({ post }: { post: PostLike }) {
+export function RelatedEssays({ post, compact = false }: { post: PostLike; compact?: boolean }) {
   const items = pickRelated(post);
   if (items.length === 0) return null;
 
   return (
     <section
-      style={{
-        background: "var(--bone)",
-        padding: "var(--s-6) var(--s-4)",
-        borderTop: "1px solid var(--border)",
-      }}
+      aria-label="Keep reading"
+      style={
+        compact
+          ? {
+              // Inside the essay body: a quiet inset, not a full-bleed band.
+              margin: "2.4em 0",
+              padding: "20px 24px",
+              background: "var(--bone-warm)",
+              borderLeft: "2px solid var(--mustard)",
+              borderRadius: "var(--radius-sm)",
+              fontSize: "16px",
+            }
+          : {
+              background: "var(--bone)",
+              padding: "var(--s-6) var(--s-4)",
+              borderTop: "1px solid var(--border)",
+            }
+      }
     >
       <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
         <div

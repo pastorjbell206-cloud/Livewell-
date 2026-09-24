@@ -13,6 +13,18 @@ import superjson from "superjson";
 // slug collision; static fills the rest; if the DB is unreachable the site still
 // serves the library. Regenerate with `node scripts/build-static-library.mjs`.
 import STATIC_LIBRARY from "./static-library.generated.js";
+// The pastor-trade essays moved to the Pastors Connection Network. Their old
+// URLs 301 there (vercel.json); this list keeps them out of every listing,
+// the RSS feed and the essay route whether the DB still holds them or not.
+// Generated copy of content/pcn-moved.json (scripts/export-pcn-essays.mjs).
+import PCN_MOVED_JSON from "./pcn-moved.json" with { type: "json" };
+const PCN_MOVED = new Set<string>(((PCN_MOVED_JSON as any)?.slugs as string[]) || []);
+// Generated copy of content/rewrites.generated.json (scripts/apply-rewrites.mjs).
+// A rewritten essay outranks a stale database row on every surface; an essay
+// merged into another leaves every listing (vercel.json redirects its address).
+import REWRITES_JSON from "./rewrites.json" with { type: "json" };
+const REWRITTEN = new Set<string>(((REWRITES_JSON as any)?.rewritten as string[]) || []);
+const MERGED = new Set<string>(Object.keys(((REWRITES_JSON as any)?.merged as Record<string, string>) || {}));
 import { readFileSync } from "node:fs";
 import { readFile } from "node:fs/promises";
 import Stripe from "stripe";
@@ -666,7 +678,7 @@ async function createStripePrices(req: VercelRequest, res: VercelResponse) {
         } catch {
           // Deleted or from another account: treat as unset and recreate.
         }
-        if (amount === EBOOK_PRICE_CENTS) {
+        if (amount === (book.priceCents ?? EBOOK_PRICE_CENTS)) {
           results.push({ slug, status: "exists", priceId: existing });
           continue;
         }
@@ -687,12 +699,12 @@ async function createStripePrices(req: VercelRequest, res: VercelResponse) {
       }
       const prices = await stripe.prices.list({ product: product.id, active: true, limit: 100 });
       let price = prices.data.find(
-        (p) => p.unit_amount === EBOOK_PRICE_CENTS && p.currency === "usd" && !p.recurring,
+        (p) => p.unit_amount === (book.priceCents ?? EBOOK_PRICE_CENTS) && p.currency === "usd" && !p.recurring,
       );
       if (!price) {
         price = await stripe.prices.create({
           product: product.id,
-          unit_amount: EBOOK_PRICE_CENTS,
+          unit_amount: book.priceCents ?? EBOOK_PRICE_CENTS,
           currency: "usd",
         });
       }
@@ -944,6 +956,124 @@ async function getArticle(req: VercelRequest, res: VercelResponse, slug: string)
   }
 }
 
+// ---------------------------------------------------------------------------
+// Substack feed sync (prod). A self-contained mirror of the admin importer's
+// mapping in client/src/lib/substackImport.ts — api/ cannot import client code.
+// Keep the two maps in step. Synced posts are inserted as UNPUBLISHED drafts,
+// idempotent by the Substack /p/ slug, filed under a real pillar. The previous
+// stubs did nothing and the admin panel threw on their result shape.
+// ---------------------------------------------------------------------------
+const SUBSTACK_FEED_URL = process.env.SUBSTACK_FEED_URL || "https://jamesbell333289.substack.com/feed";
+const SUBSTACK_SERIES_TITLE = "The End of Christian America";
+const SUBSTACK_SUB_TO_PILLAR: Record<string, string> = {
+  "Doctrine & Scripture": "Theological Depth",
+  "Systemic Sin": "Prophetic Justice",
+  "Church & Empire": "Prophetic Disruption",
+  "Christian Nationalism": "Prophetic Disruption",
+  "Cultural Captivity": "Prophetic Disruption",
+};
+// slug -> sub-pathway label; every listed post imports in full.
+const SUBSTACK_BY_SLUG: Record<string, string> = {
+  "the-bible-assumes-you-will-be-wrong": "Doctrine & Scripture",
+  "how-the-bible-gets-translated-by": "Doctrine & Scripture",
+  "the-conservative-blind-spot": "Cultural Captivity",
+  "the-progressive-blind-spot": "Cultural Captivity",
+  "how-american-individualism-distorts": "Cultural Captivity",
+  "when-fear-becomes-theology": "Cultural Captivity",
+  "when-fear-rewrites-theology": "Cultural Captivity",
+  "every-generation-was-sure-it-was": "Cultural Captivity",
+  "when-patriotism-becomes-a-gospel": "Christian Nationalism",
+  "how-christian-nationalism-rewrites": "Christian Nationalism",
+  "when-the-church-married-empire": "Church & Empire",
+  "jesus-is-lord": "Church & Empire",
+  "blind-spots": "Systemic Sin",
+  "the-monster-is-never-the-one-in-the": "Systemic Sin",
+  "you-are-not-the-exception": "Systemic Sin",
+};
+function substackCategoryForSlug(slug: string): { sub: string; pillar: string; mode: "full" | "teaser"; series: boolean } | null {
+  if (slug.startsWith("the-end-of-christian-america")) return { sub: "Church & Empire", pillar: "Prophetic Disruption", mode: "teaser", series: true };
+  const sub = SUBSTACK_BY_SLUG[slug];
+  if (!sub) return null;
+  return { sub, pillar: SUBSTACK_SUB_TO_PILLAR[sub] || "Theological Depth", mode: "full", series: false };
+}
+function substackSlugFromLink(link: string): string {
+  const m = String(link || "").match(/\/p\/([^/?#]+)/);
+  return m ? m[1] : "";
+}
+function substackPlainText(html: string): string {
+  return String(html || "")
+    .replace(/<[^>]+>/g, " ").replace(/&nbsp;|&#160;/g, " ").replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">")
+    .replace(/&quot;|&#8220;|&#8221;|&ldquo;|&rdquo;/g, '"').replace(/&#39;|&apos;|&#8217;|&#8216;|&rsquo;|&lsquo;/g, "'")
+    .replace(/&#8212;|&mdash;/g, "—").replace(/&#8211;|&ndash;/g, "–").replace(/&#8230;|&hellip;/g, "…")
+    .replace(/\s+/g, " ").trim();
+}
+function substackHtmlToMarkdown(html: string): string {
+  let s = String(html || "");
+  s = s.replace(/<div[^>]*class="[^"]*(subscription|button|share|paywall|footer|poll|image-link-expand)[^"]*"[^>]*>[\s\S]*?<\/div>/gi, "");
+  s = s.replace(/<h1[^>]*>([\s\S]*?)<\/h1>/gi, (_m, x) => `\n# ${substackPlainText(x)}\n`);
+  s = s.replace(/<h2[^>]*>([\s\S]*?)<\/h2>/gi, (_m, x) => `\n## ${substackPlainText(x)}\n`);
+  s = s.replace(/<h3[^>]*>([\s\S]*?)<\/h3>/gi, (_m, x) => `\n### ${substackPlainText(x)}\n`);
+  s = s.replace(/<blockquote[^>]*>([\s\S]*?)<\/blockquote>/gi, (_m, x) => `\n> ${substackPlainText(x)}\n`);
+  s = s.replace(/<a[^>]*href="([^"]*)"[^>]*>([\s\S]*?)<\/a>/gi, (_m, h, x) => `[${substackPlainText(x)}](${h})`);
+  s = s.replace(/<(strong|b)[^>]*>([\s\S]*?)<\/(strong|b)>/gi, (_m, _t, x) => `**${substackPlainText(x)}**`);
+  s = s.replace(/<(em|i)[^>]*>([\s\S]*?)<\/(em|i)>/gi, (_m, _t, x) => `*${substackPlainText(x)}*`);
+  s = s.replace(/<li[^>]*>([\s\S]*?)<\/li>/gi, (_m, x) => `\n- ${substackPlainText(x)}`);
+  s = s.replace(/<hr[^>]*>/gi, "\n\n---\n\n").replace(/<\/(p|div|ul|ol|figure)>/gi, "\n\n").replace(/<br\s*\/?>/gi, "\n");
+  s = substackPlainText(s.replace(/<[^>]+>/g, "")).length ? s.replace(/<[^>]+>/g, "") : "";
+  return s.replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/\n{3,}/g, "\n\n").replace(/[ \t]+\n/g, "\n").trim();
+}
+async function fetchSubstackFeedItems(): Promise<Array<{ title: string; link: string; pubDate: string; description: string; content: string }>> {
+  const r = await fetch(SUBSTACK_FEED_URL, { headers: { "User-Agent": "LiveWellSite/1.0" } });
+  if (!r.ok) throw new Error(`substack feed ${r.status}`);
+  const xml = await r.text();
+  const items: Array<{ title: string; link: string; pubDate: string; description: string; content: string }> = [];
+  const re = /<item>([\s\S]*?)<\/item>/g;
+  let m: RegExpExecArray | null;
+  while ((m = re.exec(xml)) !== null) {
+    const block = m[1];
+    const pick = (tag: string) => {
+      const x = block.match(new RegExp(`<${tag}[^>]*>([\\s\\S]*?)</${tag}>`));
+      return x ? x[1].replace(/^<!\[CDATA\[/, "").replace(/\]\]>$/, "").trim() : "";
+    };
+    items.push({ title: pick("title"), link: pick("link"), pubDate: pick("pubDate"), description: pick("description"), content: pick("content:encoded") });
+  }
+  return items;
+}
+function shapeSubstackFeedItem(it: { title: string; link: string; pubDate: string; description: string; content: string }) {
+  const slug = substackSlugFromLink(it.link);
+  if (!slug) return null;
+  const cat = substackCategoryForSlug(slug);
+  if (!cat) return null;
+  const excerpt = substackPlainText(it.description).slice(0, 300);
+  const body = cat.mode === "teaser"
+    ? `${excerpt}\n\n*This is part of the serialized series “${SUBSTACK_SERIES_TITLE}.”*\n\n[Read the full essay on Substack →](${it.link})`
+    : (substackHtmlToMarkdown(it.content) || `${excerpt}\n\n[Read on Substack →](${it.link})`);
+  const words = body.trim().split(/\s+/).filter(Boolean).length;
+  const when = new Date(it.pubDate);
+  return { slug, title: substackPlainText(it.title) || "Untitled", excerpt, body, pillar: cat.pillar, subPathway: cat.sub, isSeries: cat.series, readTime: `${Math.max(1, Math.round(words / 200))} min read`, publishedAt: Number.isNaN(when.getTime()) ? new Date() : when };
+}
+async function runSubstackSync(): Promise<{ itemsAdded: number; itemsSkipped: number; errors: string[] }> {
+  let itemsAdded = 0, itemsSkipped = 0; const errors: string[] = [];
+  try {
+    const items = await fetchSubstackFeedItems();
+    await withConn(async (c) => {
+      for (const it of items) {
+        const s = shapeSubstackFeedItem(it);
+        if (!s) { itemsSkipped++; continue; }
+        const [ex]: any = await c.execute("SELECT id FROM posts WHERE slug = ? LIMIT 1", [s.slug]);
+        if (Array.isArray(ex) && ex.length > 0) { itemsSkipped++; continue; }
+        await c.execute(
+          "INSERT INTO posts (title, slug, body, excerpt, pillar, readTime, publishedAt, published, featured, createdAt, updatedAt) VALUES (?, ?, ?, ?, ?, ?, ?, 0, 0, NOW(), NOW())",
+          [s.title, s.slug, s.body, s.excerpt, s.pillar, s.readTime, s.publishedAt]
+        );
+        try { await c.execute("UPDATE posts SET subPathway = ?, isSeries = ? WHERE slug = ?", [s.subPathway, s.isSeries ? 1 : 0, s.slug]); } catch { /* columns not migrated yet */ }
+        itemsAdded++;
+      }
+    });
+  } catch (e: any) { errors.push(String(e?.message || e)); }
+  return { itemsAdded, itemsSkipped, errors };
+}
+
 async function substackRss(req: VercelRequest, res: VercelResponse) {
   const CACHE_TTL = 30 * 60 * 1000;
   const fresh = /[?&]fresh=1/.test(req.url || "");
@@ -1116,7 +1246,7 @@ async function leadMagnetSignup(req: VercelRequest, res: VercelResponse) {
 async function sitemap(_req: VercelRequest, res: VercelResponse) {
   try {
     const base = "https://www.livewellbyjamesbell.co";
-    const staticPaths = ["/", "/writing", "/books", "/consider-the-birds", "/where-your-treasure-is", "/about", "/quiz", "/search", "/marriage", "/parenting", "/doubt", "/start", "/for-pastors", "/for-leaders", "/membership", "/reading-paths", "/resources"];
+    const staticPaths = ["/", "/writing", "/books", "/consider-the-birds", "/where-your-treasure-is", "/about", "/quiz", "/search", "/marriage", "/parenting", "/doubt", "/start", "/for-pastors", "/for-leaders", "/reading-paths", "/resources"];
     let articles: any[] = [];
     try {
       articles = await withConn(async (c) => {
@@ -1216,19 +1346,44 @@ function byDateDesc(a: any, b: any): number {
 // `const TAKEN_DOWN = new Set<string>([...])` shape if you edit it.
 const TAKEN_DOWN = new Set<string>([]);
 
+// 128 database rows are catalogue stubs (a 50-word abstract) of essays the
+// library holds in full (1,700 words). "DB wins on slug" handed the reader the
+// stub. When the library body is the fuller one, the reader gets it; the row's
+// own id, dates, cover and publish state still win.
+const wordCount = (s: unknown): number => String(s ?? "").split(/\s+/).filter(Boolean).length;
+function preferFullBody(row: any): any {
+  if (row && REWRITTEN.has(row.slug)) {
+    const rw = (STATIC_LIBRARY as any[]).find((r) => r.slug === row.slug);
+    if (rw) {
+      const hasBody = row.body !== undefined || row.content !== undefined;
+      return {
+        ...row, title: rw.title, excerpt: rw.excerpt || row.excerpt, pillar: rw.pillar || row.pillar,
+        readTime: rw.readTime || row.readTime, readingTimeMinutes: rw.readingTimeMinutes || row.readingTimeMinutes,
+        updatedAt: rw.updatedAt || row.updatedAt,
+        ...(hasBody ? { body: rw.body, content: rw.body } : {}),
+      };
+    }
+  }
+  if (!row || typeof row.body !== "string" || wordCount(row.body) >= 200) return row;
+  const lib = (STATIC_LIBRARY as any[]).find((r) => r.slug === row.slug);
+  if (!lib || wordCount(lib.body) <= wordCount(row.body)) return row;
+  return { ...row, body: lib.body, excerpt: row.excerpt || lib.excerpt, readTime: row.readTime || lib.readTime };
+}
+
 // Append the static essays the DB doesn't already have (DB wins on slug), then
 // order the whole set newest-first so the index reads as one library.
 function mergeWithStatic(dbRows: any[], slim: boolean): any[] {
-  const have = new Set((dbRows || []).map((r) => r.slug));
+  const rows = (dbRows || []).filter((r) => !PCN_MOVED.has(r?.slug) && !MERGED.has(r?.slug)).map(preferFullBody);
+  const have = new Set(rows.map((r) => r.slug));
   const extra = (STATIC_LIBRARY as any[])
-    .filter((r) => !have.has(r.slug) && !TAKEN_DOWN.has(r.slug))
+    .filter((r) => !have.has(r.slug) && !TAKEN_DOWN.has(r.slug) && !PCN_MOVED.has(r.slug) && !MERGED.has(r.slug))
     .map(slim ? staticSlimCard : staticFullCard);
-  return [...(dbRows || []), ...extra].sort(byDateDesc);
+  return [...rows, ...extra].sort(byDateDesc);
 }
 function staticBySlugOrId(id: number | string): any | null {
   const s = String(id);
   const rec = (STATIC_LIBRARY as any[]).find((r) => r.slug === s || String(r.id) === s);
-  if (!rec || TAKEN_DOWN.has(rec.slug)) return null;
+  if (!rec || TAKEN_DOWN.has(rec.slug) || PCN_MOVED.has(rec.slug) || MERGED.has(rec.slug)) return null;
   return staticFullCard(rec);
 }
 
@@ -1328,7 +1483,15 @@ async function trpcGetPost(id: number | string): Promise<any | null> {
           // NOT fall through to the static library below (a DB row exists, so
           // this slug is DB-owned) — otherwise the static copy resurfaces and
           // the admin takedown is defeated.
-          if (!r.published) return { __takenDown: true };
+          if (!r.published) {
+            // One exception: a row that is itself a catalogue stub (a 50-word
+            // abstract) unpublished while the library holds the full essay
+            // under the same slug. Hiding the stub must not hide the essay.
+            // A real essay taken down by the admin stays down.
+            const lib = (STATIC_LIBRARY as any[]).find((x) => x.slug === r.slug);
+            if (wordCount(r.body) < 200 && lib && wordCount(lib.body) >= 200 && !TAKEN_DOWN.has(r.slug)) return staticFullCard(lib);
+            return { __takenDown: true };
+          }
           return {
             id: r.id, slug: r.slug, title: r.title, excerpt: r.excerpt || "",
             body: r.body || null, content: r.body || null,
@@ -1351,7 +1514,9 @@ async function trpcGetPost(id: number | string): Promise<any | null> {
       return { ...toPostCard(row), body: row.body || null, content: row.body || null };
     });
     if (dbRow && (dbRow as any).__takenDown) return null; // 404, and no static fallback
-    if (dbRow) return dbRow;
+    if (dbRow && PCN_MOVED.has((dbRow as any).slug)) return null; // moved to PCN; the URL redirects there
+    if (dbRow && MERGED.has((dbRow as any).slug)) return null; // merged into a rewrite; the URL redirects there
+    if (dbRow) return preferFullBody(dbRow);
   } catch { /* no DB / unreachable: fall through to the static library */ }
   // Not in the DB (or DB down): serve from the static essay library.
   return staticBySlugOrId(id);
@@ -1713,9 +1878,9 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
         const slug = input?.slug || input?.title?.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
         return await withConn(async (c) => {
           const [r]: any = await c.execute(
-            `INSERT INTO posts (title, slug, body, excerpt, pillar, readTime, published, createdAt, updatedAt)
-             VALUES (?, ?, ?, ?, ?, ?, ?, NOW(), NOW())`,
-            [input?.title || "", slug, input?.body || "", input?.excerpt || "", input?.pillar || "Theological Depth", input?.readTime || "5 min", input?.published ?? false]
+            `INSERT INTO posts (title, slug, body, excerpt, pillar, readTime, coverImage, published, createdAt, updatedAt)
+             VALUES (?, ?, ?, ?, ?, ?, ?, ?, NOW(), NOW())`,
+            [input?.title || "", slug, input?.body || "", input?.excerpt || "", input?.pillar || "Theological Depth", input?.readTime || "5 min", input?.coverImage || null, input?.published ?? false]
           );
           const created = await trpcGetPost(r.insertId);
           return trpcOk(res, created);
@@ -1728,7 +1893,7 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
         return await withConn(async (c) => {
           const sets: string[] = [];
           const params: any[] = [];
-          for (const field of ["title", "slug", "body", "excerpt", "pillar", "readTime", "published", "featured"]) {
+          for (const field of ["title", "slug", "body", "excerpt", "pillar", "readTime", "coverImage", "published", "featured"]) {
             if (input?.[field] !== undefined) {
               sets.push(`${field} = ?`);
               params.push(input[field]);
@@ -2379,6 +2544,28 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
         return trpcOk(res, row);
       }
 
+      case "subscribers.subscribe": {
+        // Mirrors the batch-path case in processProc. The single-call path had no
+        // case for this procedure, so the footer form and every NewsletterSignup
+        // placement returned "procedure not found" in production while dev worked.
+        if (req.method !== "POST") return trpcErr(res, "METHOD_NOT_SUPPORTED", "subscribers.subscribe requires POST", 405);
+        const email = String(input?.email || "").trim().toLowerCase();
+        if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) return trpcErr(res, "BAD_REQUEST", "invalid email", 400);
+        const audienceType = typeof input?.audienceType === "string" ? input.audienceType.slice(0, 24) : "";
+        const source = [String(input?.source || "site").slice(0, 48), audienceType].filter(Boolean).join(":");
+        try {
+          await withConn(async (c) => {
+            try {
+              await c.execute("INSERT INTO subscribers (email, name, source) VALUES (?, ?, ?) ON DUPLICATE KEY UPDATE name=COALESCE(VALUES(name), name)", [email, input?.name || null, source]);
+            } catch {
+              // The live table may lack name/source columns; never lose the email.
+              await c.execute("INSERT INTO subscribers (email) VALUES (?) ON DUPLICATE KEY UPDATE active=1", [email]);
+            }
+          });
+          await pushToNewsletterProvider(email, input?.name || null, String(input?.source || "site"));
+        } catch { /* best-effort ledger; the Substack handoff completes the subscription */ }
+        return trpcOk(res, { ok: true }, 200);
+      }
       default:
         if (proc.endsWith(".listPublished") || proc.endsWith(".listAll")) return trpcOk(res, []);
         return trpcErr(res, "NOT_FOUND", "procedure not found: " + proc, 404);
@@ -2690,10 +2877,20 @@ async function processProc(req: VercelRequest, res: VercelResponse, proc: string
         return { result: { data: superjson.serialize({ ok: true }) } };
       } catch (e: any) { return { error: { message: String(e?.message), code: -32603, data: { code: "INTERNAL_SERVER_ERROR", httpStatus: 500 } } }; }
     case "feedSync.getStatus":
-      return { result: { data: superjson.serialize({ sources: [{ name: "Substack", url: "https://jamesbell333289.substack.com/feed", lastSync: null, status: "idle" }], schedule: "Manual" }) } };
+      return { result: { data: superjson.serialize({ sources: [{ name: "Substack", url: SUBSTACK_FEED_URL, lastSync: null, status: "idle" }], schedule: "Manual" }) } };
     case "feedSync.syncAll":
-    case "feedSync.syncSource":
-      return { result: { data: superjson.serialize({ ok: true, message: "Feed sync not yet configured. Use the admin panel to add articles manually." }) } };
+    case "feedSync.syncSource": {
+      if (!authedSession(req)) return { error: { message: "unauthorized", code: -32603, data: { code: "UNAUTHORIZED", httpStatus: 401 } } };
+      // Only Substack is synced. The Pastors Connection feed is not: that
+      // material moved to pastorsconnectionnetwork.com and is not rebuilt here.
+      const source = proc === "feedSync.syncSource" ? String(input?.source || "substack") : "substack";
+      const empty = { itemsAdded: 0, itemsSkipped: 0, errors: [] as string[] };
+      const sub = source === "substack" ? await runSubstackSync() : { ...empty, errors: [`"${source}" is not synced on this site.`] };
+      const ok = sub.errors.length === 0;
+      const message = ok ? `Substack: ${sub.itemsAdded} added as drafts, ${sub.itemsSkipped} skipped.` : sub.errors.join("; ");
+      if (proc === "feedSync.syncSource") return { result: { data: superjson.serialize({ ok, message, details: sub }) } };
+      return { result: { data: superjson.serialize({ ok, message, details: { totalAdded: sub.itemsAdded, totalSkipped: sub.itemsSkipped, errors: sub.errors, substack: sub, pastorsConnection: empty } }) } };
+    }
     case "notifications.delete":
       if (!authedSession(req)) return { error: { message: "unauthorized", code: -32603, data: { code: "UNAUTHORIZED", httpStatus: 401 } } };
       try {
@@ -2893,7 +3090,8 @@ function escapeXml(s: string): string {
 async function rssLiveWell(_req: VercelRequest, res: VercelResponse) {
   const SITE_URL = "https://www.livewellbyjamesbell.co";
   const SITE_NAME = "LiveWell by James Bell";
-  const DESC = "Theology that carries the weight of everyday life. Essays on faith, justice, marriage, parenting, and pastoral ministry by James Bell.";
+  // Hand-mirror of BRAND_SENTENCE (client/src/lib/positioning.ts); guarded by server/brand-sentence.test.ts.
+  const DESC = "The American church traded the gospel for power; James Bell writes from inside the trade, for readers tired of being told whose side God is on.";
   try {
     const rows: any[] = await withConn(async (c) => {
       const [posts]: any = await c.query(
@@ -2903,7 +3101,7 @@ async function rssLiveWell(_req: VercelRequest, res: VercelResponse) {
           ORDER BY publishedAt DESC, updatedAt DESC
           LIMIT 50`
       );
-      return Array.isArray(posts) ? posts : [];
+      return Array.isArray(posts) ? posts.filter((p: any) => !PCN_MOVED.has(p?.slug) && !MERGED.has(p?.slug)).map(preferFullBody) : [];
     });
     const buildDate = new Date().toUTCString();
     const items = rows
@@ -2962,9 +3160,78 @@ interface EbookConfig {
   priceEnv: string;
   file: URL;
   filename: string;
+  /** An EPUB alongside the PDF, served through the same gate with ?format=epub. */
+  epub?: URL;
+  epubFilename?: string;
+  /** Where Checkout returns the buyer. Default: /<slug>/thank-you. */
+  thankYouPath?: string;
+  /** A bundle: the member slugs whose files this purchase unlocks. */
+  bundle?: string[];
+  /** Price in cents when not the one-price rule (bundles). */
+  priceCents?: number;
 }
 
+const gated = (slug: string, title: string, filename: string): EbookConfig => ({
+  title,
+  priceEnv: `STRIPE_PRICE_${slug.toUpperCase().replace(/-/g, "_")}`,
+  file: new URL(`./_ebooks/${slug}.pdf`, import.meta.url),
+  filename: `${filename}.pdf`,
+  epub: new URL(`./_ebooks/${slug}.epub`, import.meta.url),
+  epubFilename: `${filename}.epub`,
+  thankYouPath: `/books/${slug}/thank-you`,
+});
+
 const EBOOKS: Record<string, EbookConfig> = {
+  // All three hand-written books for the price of two-and-a-bit. The
+  // highest-converting offer a three-book author can make.
+  "the-three-books": {
+    title: "The three books",
+    priceEnv: "STRIPE_PRICE_THE_THREE_BOOKS",
+    file: new URL("./_ebooks/believe.pdf", import.meta.url),
+    filename: "Believe.pdf",
+    thankYouPath: "/books/the-three-books/thank-you",
+    bundle: ["when-god-bless-america", "the-monster-in-the-mirror", "believe"],
+    priceCents: 1999,
+  },
+  // The six older ebooks sold from /books/<slug>. Their files sat in
+  // client/public/ebook/ as plain static assets until September 2026.
+  "raising-believers": gated("raising-believers", "Raising Believers", "Raising-Believers"),
+  "deconstruction-of-faith": gated("deconstruction-of-faith", "The Deconstruction of Faith", "The-Deconstruction-of-Faith"),
+  "the-reliability-of-scripture": gated("the-reliability-of-scripture", "The Reliability of Scripture", "The-Reliability-of-Scripture"),
+  "bible-and-homosexuality": gated("bible-and-homosexuality", "What the Bible Says About Homosexuality", "What-the-Bible-Says-About-Homosexuality"),
+  "bible-and-transgender-identity": gated("bible-and-transgender-identity", "What the Bible Says About Transgender Identity", "What-the-Bible-Says-About-Transgender-Identity"),
+  "critical-race-theory-biblical": gated("critical-race-theory-biblical", "Is Critical Race Theory Biblical?", "Is-Critical-Race-Theory-Biblical"),
+  // The three books James wrote by hand, sold from /books/<slug>. Their files
+  // used to sit in client/public/ebook/ as plain static assets, so the "gated"
+  // download was a public URL anyone could guess. They now live here with the
+  // rest and are served only against a paid session.
+  "believe": {
+    title: "Believe",
+    priceEnv: "STRIPE_PRICE_BELIEVE",
+    file: new URL("./_ebooks/believe.pdf", import.meta.url),
+    filename: "Believe.pdf",
+    epub: new URL("./_ebooks/believe.epub", import.meta.url),
+    epubFilename: "Believe.epub",
+    thankYouPath: "/books/believe/thank-you",
+  },
+  "the-monster-in-the-mirror": {
+    title: "The Monster in the Mirror",
+    priceEnv: "STRIPE_PRICE_THE_MONSTER_IN_THE_MIRROR",
+    file: new URL("./_ebooks/the-monster-in-the-mirror.pdf", import.meta.url),
+    filename: "The-Monster-in-the-Mirror.pdf",
+    epub: new URL("./_ebooks/the-monster-in-the-mirror.epub", import.meta.url),
+    epubFilename: "The-Monster-in-the-Mirror.epub",
+    thankYouPath: "/books/the-monster-in-the-mirror/thank-you",
+  },
+  "when-god-bless-america": {
+    title: "When God Bless America Replaces Thy Kingdom Come",
+    priceEnv: "STRIPE_PRICE_WHEN_GOD_BLESS_AMERICA",
+    file: new URL("./_ebooks/when-god-bless-america.pdf", import.meta.url),
+    filename: "When-God-Bless-America.pdf",
+    epub: new URL("./_ebooks/when-god-bless-america.epub", import.meta.url),
+    epubFilename: "When-God-Bless-America.epub",
+    thankYouPath: "/books/when-god-bless-america/thank-you",
+  },
   "consider-the-birds": {
     title: "Consider the Birds",
     priceEnv: "STRIPE_PRICE_CONSIDER_THE_BIRDS",
@@ -3139,11 +3406,12 @@ async function ebookCheckout(req: VercelRequest, res: VercelResponse) {
     const priceId = await resolveEbookPriceId(slug, book.priceEnv);
     if (!priceId) return json(res, 503, { error: "This book is not on sale yet." });
     const origin = siteOrigin(req);
+    const thankYou = book.thankYouPath ?? `/${slug}/thank-you`;
     const session = await stripe.checkout.sessions.create({
       mode: "payment",
       line_items: [{ price: priceId, quantity: 1 }],
-      success_url: `${origin}/${slug}/thank-you?session_id={CHECKOUT_SESSION_ID}`,
-      cancel_url: `${origin}/${slug}`,
+      success_url: `${origin}${thankYou}?session_id={CHECKOUT_SESSION_ID}`,
+      cancel_url: `${origin}${thankYou.replace(/\/thank-you$/, "")}`,
       metadata: { slug },
     });
     return json(res, 200, { url: session.url });
@@ -3162,20 +3430,30 @@ async function ebookDownload(req: VercelRequest, res: VercelResponse) {
   if (!stripe) return json(res, 503, { error: "not configured", paid: false, ok: false });
   if (!sessionId) return json(res, 400, { error: "missing session_id", paid: false, ok: false });
   try {
-    const session = await stripe.checkout.sessions.retrieve(sessionId);
-    const slug = String(session.metadata?.slug || "");
-    const book = EBOOKS[slug];
+    const session = await stripe.checkout.sessions.retrieve(sessionId, {
+      expand: ["line_items.data.price.product"],
+    });
+    const slug = await resolvePurchasedSlug(session, String(req.query.slug || ""));
+    const book = slug ? EBOOKS[slug] : undefined;
     const paid = (session.payment_status === "paid" || session.status === "complete") && Boolean(book);
     // Record the purchase durably on the thank-you round-trip too, so a record
     // exists even if the Stripe webhook was slow or never fired.
-    if (paid) { try { await recordPurchase(session); } catch { /* best-effort */ } }
+    if (paid) { try { await recordPurchase(session, slug); } catch { /* best-effort */ } }
+    // A bundle unlocks each member; a single book is a bundle of one.
+    const members = book ? (book.bundle ?? [slug]).map((s) => [s, EBOOKS[s]] as const).filter(([, b]) => Boolean(b)) : [];
     if (check) {
-      return json(res, 200, { ok: true, paid, slug, title: book?.title || null });
+      const items = members.map(([s, b]) => ({ slug: s, title: b.title, formats: ["pdf", ...(b.epub ? ["epub"] : [])] }));
+      const formats = items[0]?.formats ?? [];
+      return json(res, 200, { ok: true, paid, slug, title: book?.title || null, formats, items });
     }
     if (!paid) return json(res, 402, { error: "payment not completed" });
-    const data = readFileSync(book!.file);
-    res.setHeader("Content-Type", "application/pdf");
-    res.setHeader("Content-Disposition", `attachment; filename="${book!.filename}"`);
+    const wanted = String(req.query.item || "") || members[0]?.[0];
+    const chosen = members.find(([s]) => s === wanted)?.[1];
+    if (!chosen) return json(res, 400, { error: "that book is not part of this purchase" });
+    const wantEpub = String(req.query.format || "") === "epub" && Boolean(chosen.epub);
+    const data = readFileSync(wantEpub ? chosen.epub! : chosen.file);
+    res.setHeader("Content-Type", wantEpub ? "application/epub+zip" : "application/pdf");
+    res.setHeader("Content-Disposition", `attachment; filename="${wantEpub ? chosen.epubFilename : chosen.filename}"`);
     res.setHeader("Cache-Control", "private, no-store");
     return res.status(200).send(data);
   } catch (e: any) {
@@ -3184,12 +3462,38 @@ async function ebookDownload(req: VercelRequest, res: VercelResponse) {
   }
 }
 
+// Which book a paid session bought. Sessions our own /api/checkout created
+// carry the slug in metadata. Sessions from a Stripe Payment Link or an embedded
+// Buy Button (the way two of the hand-written books were first wired) carry no
+// metadata, so the thank-you page names the book it expects and the claim is
+// checked against what the session actually bought: the line item's price must
+// be the price configured for that book, or its product must carry the book's
+// title. A paid session for one book never unlocks another.
+async function resolvePurchasedSlug(session: Stripe.Checkout.Session, claimed: string): Promise<string> {
+  const fromMeta = String(session.metadata?.slug || "");
+  if (fromMeta && EBOOKS[fromMeta]) return fromMeta;
+  const book = claimed ? EBOOKS[claimed] : undefined;
+  if (!book) return "";
+  const items = session.line_items?.data ?? [];
+  const expectedPrice = await resolveEbookPriceId(claimed, book.priceEnv);
+  const title = book.title.toLowerCase();
+  for (const item of items) {
+    const price = item.price;
+    if (expectedPrice && price?.id === expectedPrice) return claimed;
+    const product = price?.product;
+    const productName = product && typeof product === "object" && "name" in product ? String(product.name || "") : "";
+    const desc = String(item.description || "");
+    if ((productName && productName.toLowerCase().includes(title)) || desc.toLowerCase().includes(title)) return claimed;
+  }
+  return "";
+}
+
 // Durable record of a completed ebook purchase. Authenticity is guaranteed by
 // re-retrieving the checkout session from Stripe (a forged webhook body cannot
 // fabricate a paid session), so this does not depend on raw-body signature
 // verification, which a shared catch-all serverless function cannot obtain cleanly.
-async function recordPurchase(session: Stripe.Checkout.Session): Promise<void> {
-  const slug = String(session.metadata?.slug || "");
+async function recordPurchase(session: Stripe.Checkout.Session, resolvedSlug?: string): Promise<void> {
+  const slug = resolvedSlug || String(session.metadata?.slug || "");
   if (!slug || !EBOOKS[slug]) return;
   const email = session.customer_details?.email || session.customer_email || null;
   const amount = session.amount_total ?? null;
@@ -3204,11 +3508,46 @@ async function recordPurchase(session: Stripe.Checkout.Session): Promise<void> {
       currency VARCHAR(12),
       createdAt DATETIME DEFAULT CURRENT_TIMESTAMP
     ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4`);
-    await c.execute(
+    const [result]: any = await c.execute(
       "INSERT INTO purchases (sessionId, slug, email, amountTotal, currency) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE email = COALESCE(VALUES(email), email), amountTotal = VALUES(amountTotal), currency = VALUES(currency)",
       [session.id, slug, email, amount, currency],
     );
+    // affectedRows is 1 for a new row and 2 for a duplicate-key update, so the
+    // receipt goes once, on the first confirmation, never on every reload.
+    if (result?.affectedRows === 1 && email) {
+      try { await sendReceipt(email, slug, session.id); } catch (err: any) { console.error("[receipt]", err?.message || err); }
+    }
   });
+}
+
+// A receipt with the re-download link, sent through Resend when a key is set
+// (RESEND_API_KEY, and RECEIPT_FROM for the sender). Without the key nothing is
+// sent and nothing fails: the thank-you page already holds the same link.
+async function sendReceipt(to: string, slug: string, sessionId: string): Promise<void> {
+  const key = process.env.RESEND_API_KEY?.trim();
+  const book = EBOOKS[slug];
+  if (!key || !book) return;
+  const from = process.env.RECEIPT_FROM?.trim() || "LiveWell by James Bell <hello@livewellbyjamesbell.co>";
+  const link = `${PRODUCTION_SITE_URL}${book.thankYouPath ?? `/${slug}/thank-you`}?session_id=${encodeURIComponent(sessionId)}`;
+  const titles = (book.bundle ?? [slug]).map((s) => EBOOKS[s]?.title).filter(Boolean).join(", ");
+  const text = [
+    `Thank you for buying ${titles}.`,
+    "",
+    "Your download page, which stays live, is here:",
+    link,
+    "",
+    "The EPUB reads on a phone or e-reader; the PDF reads on everything else.",
+    "If anything goes wrong with the download, reply to this email and a person will send the files directly.",
+    "",
+    "James Bell",
+    "livewellbyjamesbell.co",
+  ].join("\n");
+  const r = await fetch("https://api.resend.com/emails", {
+    method: "POST",
+    headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/json" },
+    body: JSON.stringify({ from, to, subject: `Your copy of ${titles}`, text }),
+  });
+  if (!r.ok) throw new Error(`resend ${r.status}`);
 }
 
 // Durable record of a new member (a completed membership subscription checkout),

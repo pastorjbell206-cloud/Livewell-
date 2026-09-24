@@ -60,7 +60,7 @@ export default function LifeIndex() {
         url="https://www.livewellbyjamesbell.co/life"
       />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>Integrated Life · The capstone</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5.2vw, 56px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "18px", maxWidth: "20ch" }}>
@@ -100,7 +100,7 @@ export default function LifeIndex() {
             ))
           )}
 
-          <div style={{ marginTop: "var(--s-4)", background: "var(--charcoal)", padding: "var(--s-4)", color: "var(--bone)" }}>
+          <div style={{ marginTop: "var(--s-4)", background: "var(--charcoal)", padding: "var(--s-4)", color: "var(--charcoal-fg)" }}>
             <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "10px" }}>Start with an honest look</div>
             <p style={{ fontFamily: "var(--F)", fontSize: "19px", lineHeight: 1.5, marginBottom: "16px", maxWidth: "56ch" }}>
               The Whole-Life Assessment maps where your life is flourishing and where it has gone quiet, then hands you a rule of life for this season. It is not a scorecard. God is not grading you.

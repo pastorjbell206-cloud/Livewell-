@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 
-const h2: React.CSSProperties = { fontSize: "22px", fontFamily: "var(--F)", fontWeight: 600, margin: "32px 0 12px", color: "var(--ink)" };
+const h2: React.CSSProperties = { fontSize: "22px", fontFamily: "var(--F)", fontWeight: 500, margin: "32px 0 12px", color: "var(--ink)" };
 const p: React.CSSProperties = { marginBottom: "16px" };
 const link: React.CSSProperties = { color: "var(--gold)", textDecoration: "underline" };
 

@@ -61,7 +61,7 @@ export default function SavedItems() {
         description="Everything you saved across the LiveWell tools — verses, prayers, quotes, and wisdom entries — in one place."
       />
 
-      <section style={{ background: "var(--charcoal)", color: "var(--bone)", padding: "80px 32px 60px", textAlign: "center" }}>
+      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "80px 32px 60px", textAlign: "center" }}>
         <div className="wrap" style={{ maxWidth: "700px" }}>
           <div style={{ fontSize: "11px", fontWeight: 700, letterSpacing: "0.2em", color: "var(--mustard)", fontFamily: "var(--U)", marginBottom: "16px" }}>
             YOUR COLLECTION

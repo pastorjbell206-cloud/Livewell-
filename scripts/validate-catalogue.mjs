@@ -7,7 +7,8 @@
  * Builds the catalogue in memory without a database (the static essay library
  * stands in, as it does in CI) and fails if:
  *   1. any source produced nothing (a manifest moved or its shape changed);
- *   2. an essay in the static library is missing (minus takedowns and hidden);
+ *   2. an essay in the static library is missing (minus takedowns, hidden,
+ *      and the essays moved to PCN);
  *   3. any item's link does not match a route in client/src/App.tsx;
  *   4. any downloadable file neither exists on disk nor is a PDF the deploy
  *      builds from a source that exists (scripts/build-pdfs.mjs);
@@ -45,7 +46,11 @@ const setFrom = (rel, name) => {
   const m = src.match(new RegExp(`${name} = new Set<string>\\(\\[([\\s\\S]*?)\\]\\)`));
   return new Set(m ? [...m[1].matchAll(/["']([^"']+)["']/g)].map((x) => x[1]) : []);
 };
-const excluded = new Set([...setFrom("api/index.ts", "TAKEN_DOWN"), ...setFrom("client/src/lib/hiddenSlugs.ts", "HIDDEN_SLUGS")]);
+// The essays moved to PCN (content/pcn-moved.json) redirect away and are
+// deliberately left out of the Library, like takedowns and hidden slugs.
+const movedToPcn = JSON.parse(fs.readFileSync(path.join(ROOT, "content/pcn-moved.json"), "utf8")).slugs ?? [];
+const { redirectedEssaySlugs } = await import("./redirected-essays.mjs");
+const excluded = new Set([...setFrom("api/index.ts", "TAKEN_DOWN"), ...setFrom("client/src/lib/hiddenSlugs.ts", "HIDDEN_SLUGS"), ...movedToPcn, ...redirectedEssaySlugs(ROOT)]);
 for (const r of staticLib) {
   if (!r?.slug || r.published === false || r.published === 0 || excluded.has(r.slug)) continue;
   if (!essayHrefs.has(`/writing/${r.slug}`)) fail(`essay missing from the catalogue: ${r.slug}`);

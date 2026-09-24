@@ -34,7 +34,7 @@ export default function PropheticConsistency({ config }: { config: SectionConfig
     <Layout>
       <SEOMeta title={`The Consistency Check — ${config.label}`} description="A searching self-examination of whether you defend truth selectively, one standard for your side and another for your opponents. A mirror, not a weapon." url={`https://www.livewellbyjamesbell.co${config.base}/consistency`} />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
             <Link href={config.base} style={{ color: "inherit" }}>{config.label}</Link> · The consistency check
@@ -78,14 +78,14 @@ export default function PropheticConsistency({ config }: { config: SectionConfig
             </div>
           </section>
 
-          <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4)", color: "var(--bone)" }}>
+          <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4)", color: "var(--charcoal-fg)" }}>
             <div style={wrap}>
               {markedCount > 0 && (
                 <p style={{ fontFamily: "var(--U)", fontSize: "13px", letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "16px" }}>
                   {markedCount === 1 ? "One landed. That is enough to start." : `${markedCount} landed. None of us reads this clean.`}
                 </p>
               )}
-              {data.closing.split("\n\n").map((p, i) => <p key={i} style={{ fontFamily: "var(--F)", fontSize: "clamp(20px, 2.8vw, 26px)", fontWeight: 400, lineHeight: 1.5, color: "var(--bone)", maxWidth: "60ch", marginBottom: "14px" }}>{p}</p>)}
+              {data.closing.split("\n\n").map((p, i) => <p key={i} style={{ fontFamily: "var(--F)", fontSize: "clamp(20px, 2.8vw, 26px)", fontWeight: 400, lineHeight: 1.5, color: "var(--charcoal-fg)", maxWidth: "60ch", marginBottom: "14px" }}>{p}</p>)}
               <div style={{ marginTop: "var(--s-4)" }}>
                 <Link href={`${config.base}/topic/truth-and-tribe`} style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard)" }}>Read: When Truth Becomes Negotiable →</Link>
               </div>

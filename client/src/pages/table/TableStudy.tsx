@@ -95,7 +95,7 @@ export default function TableStudy() {
       />
 
       {/* Header */}
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <Link href="/table" style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, color: "var(--mustard)", textDecoration: "none" }}>← The Table</Link>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5vw, 52px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", margin: "16px 0 12px", maxWidth: "20ch" }}>{study.title}</h1>
@@ -145,7 +145,7 @@ export default function TableStudy() {
           ))}
 
           {/* Next */}
-          <div style={{ background: "var(--charcoal)", padding: "var(--s-4)", color: "var(--bone)", marginTop: "var(--s-3)" }}>
+          <div style={{ background: "var(--charcoal)", padding: "var(--s-4)", color: "var(--charcoal-fg)", marginTop: "var(--s-3)" }}>
             <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "12px" }}>When the study ends</div>
             <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
               {study.next.map((n) => (

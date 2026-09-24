@@ -49,6 +49,7 @@ const WhenGodBlessAmerica = lazy(() => import("./pages/WhenGodBlessAmerica"));
 const WhenGodBlessAmericaThankYou = lazy(() => import("./pages/WhenGodBlessAmericaThankYou"));
 const Believe = lazy(() => import("./pages/Believe"));
 const BelieveThankYou = lazy(() => import("./pages/BelieveThankYou"));
+const TheThreeBooksThankYou = lazy(() => import("./pages/TheThreeBooksThankYou"));
 const DeconstructionOfFaith = lazy(() => import("./pages/DeconstructionOfFaith"));
 const DeconstructionOfFaithThankYou = lazy(() => import("./pages/DeconstructionOfFaithThankYou"));
 const RaisingBelieversThankYou = lazy(() => import("./pages/RaisingBelieversThankYou"));
@@ -90,7 +91,6 @@ const EmailSignup = lazy(() => import("./pages/EmailSignup"));
 const Pillars = lazy(() => import("./pages/Pillars"));
 const Explore = lazy(() => import("./pages/Explore"));
 const LivingWell = lazy(() => import("./pages/LivingWell"));
-const SiteMapPage = lazy(() => import("./pages/Map"));
 const TheologyExplorer = lazy(() => import("./pages/TheologyExplorer"));
 const WhichLens = lazy(() => import("./pages/tools/WhichLens"));
 const TestTheCase = lazy(() => import("./pages/tools/TestTheCase"));
@@ -98,12 +98,12 @@ const GroupGuide = lazy(() => import("./pages/GroupGuide"));
 const CaptureByTheRight = lazy(() => import("./pages/pillars/CaptureByTheRight"));
 const CaptureByTheLeft = lazy(() => import("./pages/pillars/CaptureByTheLeft"));
 const ReadingScripturePastOurPolitics = lazy(() => import("./pages/pillars/ReadingScripturePastOurPolitics"));
-const AfterChristendomPillar = lazy(() => import("./pages/pillars/AfterChristendomPillar"));
-const Membership = lazy(() => import("./pages/Membership"));
-const MembershipSuccess = lazy(() => import("./pages/MembershipSuccess"));
+const ThePastoralAngle = lazy(() => import("./pages/pillars/ThePastoralAngle"));
 const Wisdom = lazy(() => import("./pages/Wisdom"));
 const WisdomTopic = lazy(() => import("./pages/WisdomTopic"));
 const HowTos = lazy(() => import("./pages/HowTos"));
+const Notes = lazy(() => import("./pages/Notes"));
+const Canon = lazy(() => import("./pages/Canon"));
 const HowToArticle = lazy(() => import("./pages/HowToArticle"));
 const LifeIndex = lazy(() => import("./pages/life/LifeIndex"));
 const LifeDomain = lazy(() => import("./pages/life/LifeDomain"));
@@ -210,9 +210,6 @@ const ReadingPathDetail = lazy(() =>
 );
 const AuthorProfile = lazy(() =>
   import("./pages/AuthorProfile").then((m) => ({ default: m.AuthorProfile }))
-);
-const ArticleCollections = lazy(() =>
-  import("./pages/ArticleCollections").then((m) => ({ default: m.ArticleCollections }))
 );
 
 const AdminLogin = lazy(() => import("./pages/AdminLogin"));
@@ -473,18 +470,18 @@ function Router() {
         <Route path="/for-families" component={ForFamiliesRedirect} />
         <Route path="/pillars" component={Pillars} />
         <Route path="/living-well" component={LivingWell} />
-        <Route path="/map" component={SiteMapPage} />
+        <Route path="/map" component={ArticlesRedirect} />
         <Route path="/theology/explorer" component={TheologyExplorer} />
         <Route path="/capture-by-the-right" component={CaptureByTheRight} />
         <Route path="/capture-by-the-left" component={CaptureByTheLeft} />
         <Route path="/reading-scripture-past-our-politics" component={ReadingScripturePastOurPolitics} />
-        <Route path="/after-christendom" component={AfterChristendomPillar} />
+        <Route path="/the-pastoral-angle" component={ThePastoralAngle} />
         <Route path="/for-pastors" component={PastorsMovedRedirect} />
-        <Route path="/membership" component={Membership} />
-        <Route path="/membership/success" component={MembershipSuccess} />
         <Route path="/wisdom" component={Wisdom} />
         <Route path="/wisdom/:id" component={WisdomTopic} />
         <Route path="/how-tos" component={HowTos} />
+        <Route path="/notes" component={Notes} />
+        <Route path="/canon" component={Canon} />
         <Route path="/how-tos/:slug" component={HowToArticle} />
         <Route path="/studyguides" component={StudyGuidesIndex} />
         <Route path="/studyguides/:slug" component={StudyGuide} />
@@ -498,7 +495,7 @@ function Router() {
         <Route path="/pathways/:slug" component={TopicPathway} />
         <Route path="/subscribe" component={EmailSignup} />
         <Route path="/authors/:slug" component={AuthorProfile} />
-        <Route path="/article-collections" component={ArticleCollections} />
+        <Route path="/article-collections" component={ArticlesRedirect} />
         <Route path="/resources/hard-issues-series" component={HardIssuesSeries} />
         <Route path="/resources/context/:slug" component={ContextGuide} />
         <Route path="/resources/context" component={ContextLibrary} />
@@ -510,6 +507,7 @@ function Router() {
         <Route path="/books/when-god-bless-america/thank-you" component={WhenGodBlessAmericaThankYou} />
         <Route path="/books/when-god-bless-america" component={WhenGodBlessAmerica} />
         <Route path="/books/believe/thank-you" component={BelieveThankYou} />
+        <Route path="/books/the-three-books/thank-you" component={TheThreeBooksThankYou} />
         <Route path="/books/believe" component={Believe} />
         <Route path="/books/deconstruction-of-faith/thank-you" component={DeconstructionOfFaithThankYou} />
         <Route path="/books/deconstruction-of-faith" component={DeconstructionOfFaith} />
@@ -682,16 +680,14 @@ function App() {
   return (
     <ErrorBoundary>
       {/*
-        Dark mode is intentionally not `switchable` for now. The site-wide dark
-        palette is unfinished — many section heroes mix theme-flipping tokens
-        (--ink / --bone) with non-flipping ones (--charcoal / --charcoal-fg),
-        so under html.dark their text renders invisible (dark-on-dark or
-        light-on-light). Until those heroes are standardized on the correct
-        pairing, dark mode stays off: every visitor gets light mode, the Footer
-        toggle is hidden (toggleTheme is undefined when not switchable), and any
-        visitor whose localStorage still says "dark" is reset to light.
+        Dark mode is switchable via the Footer toggle. Every dark hero/section/
+        card is standardized on the always-dark pairing — background
+        var(--charcoal) (holds dark in both themes) with text var(--charcoal-fg)
+        (holds light in both themes) — so headings stay readable under
+        html.dark. Inverting controls (buttons with var(--ink) bg + var(--paper)
+        text) flip in lockstep and remain legible. Default stays light.
       */}
-      <ThemeProvider defaultTheme="light">
+      <ThemeProvider defaultTheme="light" switchable>
         <ToastProvider>
           <Suspense fallback={null}>
             <Toaster />

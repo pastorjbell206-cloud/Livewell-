@@ -125,7 +125,7 @@ export default function BookLibrary() {
     padding: "7px 13px", borderRadius: "999px", cursor: "pointer", whiteSpace: "nowrap",
     border: "1px solid var(--border)", background: "var(--card)", color: "var(--ink-muted)",
   };
-  const chipActive: React.CSSProperties = { background: "var(--ink)", color: "var(--bone)", borderColor: "var(--ink)" };
+  const chipActive: React.CSSProperties = { background: "var(--charcoal)", color: "var(--charcoal-fg)", borderColor: "var(--ink)" };
 
   return (
     <Layout>

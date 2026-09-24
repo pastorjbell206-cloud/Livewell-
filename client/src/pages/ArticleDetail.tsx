@@ -11,7 +11,7 @@
 import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { Link, useLocation, useParams } from "wouter";
-import { DISCUSSION_GUIDES } from "@/data/discussion-guides";
+import { DISCUSSION_GUIDE_SLUGS } from "@/data/discussion-guide-slugs";
 import { Markdown } from "@/components/Markdown";
 import { recordReadEvent } from "@/components/ReadDepthBeacon";
 import { ArrowLeft, BookOpen, Bookmark, Share2, User } from "lucide-react";
@@ -20,7 +20,7 @@ import Layout from "@/components/Layout";
 import { LoadFailed } from "@/components/LoadFailed";
 import PageEndNav from "@/components/PageEndNav";
 import ReadingProgressBar from "@/components/ReadingProgressBar";
-import { SEOMeta, getArticleSchema, getBreadcrumbSchema } from "@/components/SEOMeta";
+import { SEOMeta, getArticleSchema, getBreadcrumbSchema, getQAPageSchema } from "@/components/SEOMeta";
 import { AuthorBio } from "@/components/AuthorBio";
 import ChannelLine from "@/components/ChannelLine";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
@@ -31,13 +31,29 @@ import { TrackChip } from "@/components/TrackChip";
 import { KeepReadingBook } from "@/components/KeepReadingBook";
 import { RelatedEssays } from "@/components/RelatedEssays";
 import ArticleNextSteps, { isArticleOnPath } from "@/components/ArticleNextSteps";
-import { GeneratedHero } from "@/components/GeneratedHero";
+import { SubstackSeriesNote } from "@/components/SubstackSeriesNote";
+import { ReplyToEssay } from "@/components/ReplyToEssay";
+import { splitForRelated } from "@/lib/essay-split";
+import MERGED_ESSAYS from "@/data/merged-essays.json";
+import { EssayArt } from "@/components/EssayArt";
 import { trpc } from "@/lib/trpc";
-import { pillarForPost } from "@/lib/taxonomy";
+import { fetchJson } from "@/lib/fetch-json";
 import { articleUrl, OG_DEFAULT_IMAGE, SITE_URL } from "@/lib/site";
 import { trackEssayComplete, trackPathStep } from "@/lib/telemetry";
 import { markEssayRead } from "@/lib/readProgress";
 import { readStoredJSON, writeStoredJSON } from "@/lib/storage";
+
+/** A static essay file is a serialized post: dates arrive as strings. */
+const isPostShape = (x: unknown): x is Record<string, unknown> =>
+  !!x && typeof x === "object" &&
+  typeof (x as Record<string, unknown>).slug === "string" &&
+  typeof (x as Record<string, unknown>).title === "string" &&
+  typeof (x as Record<string, unknown>).body === "string";
+
+function withDates(p: Record<string, unknown>): Record<string, unknown> {
+  const d = (v: unknown) => (typeof v === "string" && v ? new Date(v) : v instanceof Date ? v : null);
+  return { ...p, publishedAt: d(p.publishedAt), createdAt: d(p.createdAt), updatedAt: d(p.updatedAt) };
+}
 
 /**
  * Per-slug byline overrides. Every essay not listed here is authored by
@@ -296,7 +312,7 @@ function QuoteSelectionShare({
         onMouseDown={(e) => e.preventDefault()}
         onClick={share}
         aria-live="polite"
-        style={{ display: "inline-flex", alignItems: "center", gap: "7px", background: "var(--charcoal)", color: "var(--bone)", border: "none", borderRadius: "var(--radius-sm)", padding: "8px 14px", fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, letterSpacing: "0.04em", cursor: "pointer", boxShadow: "var(--shadow-modal)", whiteSpace: "nowrap" }}
+        style={{ display: "inline-flex", alignItems: "center", gap: "7px", background: "var(--charcoal)", color: "var(--charcoal-fg)", border: "none", borderRadius: "var(--radius-sm)", padding: "8px 14px", fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, letterSpacing: "0.04em", cursor: "pointer", boxShadow: "var(--shadow-modal)", whiteSpace: "nowrap" }}
       >
         <Share2 size={13} aria-hidden /> {copied ? "Copied" : "Share quote"}
       </button>
@@ -410,6 +426,9 @@ function TableOfContents({
                   lineHeight: 1.4,
                   color: "var(--ink-muted)",
                   textDecoration: "none",
+                  // The global prose-link gradient underline paints mid-text on these
+                  // list links; a contents list carries no underline.
+                  backgroundImage: "none",
                   transition: "color 0.2s",
                 }}
                 onMouseEnter={e => (e.currentTarget.style.color = "var(--ink)")}
@@ -431,11 +450,41 @@ export default function ArticleDetail() {
   const { slug } = useParams<{ slug: string }>();
   const bodyRef = useRef<HTMLDivElement>(null);
   const [, navigate] = useLocation();
+  // An essay merged into a rewrite (scripts/apply-rewrites.mjs) redirects on the
+  // server, but an in-app link is routed here without a request. Send the
+  // reader on to the essay it became, replacing the history entry.
+  const mergedInto = slug ? (MERGED_ESSAYS as Record<string, string>)[slug] : undefined;
+  useEffect(() => {
+    if (mergedInto) navigate(`/writing/${mergedInto}`, { replace: true });
+  }, [mergedInto, navigate]);
+  // Static first. The 678 library essays ship as /essays/<slug>.json (built by
+  // scripts/build-public-essays.mjs), so a library essay paints from the CDN
+  // without waiting on the API and never shows "didn't load" because a
+  // function was slow. Only a static miss (a database-only essay, or a dev
+  // checkout that has not run the build step) reaches for tRPC.
+  const [staticPost, setStaticPost] = useState<Record<string, unknown> | "miss" | null>(null);
+  const [prevSlug, setPrevSlug] = useState(slug);
+  if (prevSlug !== slug) {
+    setPrevSlug(slug);
+    setStaticPost(null);
+  }
+  useEffect(() => {
+    if (!slug) return;
+    let stale = false;
+    fetchJson<Record<string, unknown>>(`/essays/${encodeURIComponent(slug)}.json`, isPostShape)
+      .then(p => { if (!stale) setStaticPost(withDates(p)); })
+      .catch(() => { if (!stale) setStaticPost("miss"); });
+    return () => { stale = true; };
+  }, [slug]);
   const postQuery = trpc.posts.getBySlug.useQuery(
     { slug: slug ?? "" },
-    { enabled: Boolean(slug) }
+    { enabled: Boolean(slug) && staticPost === "miss" }
   );
-  const post = postQuery.data ?? null;
+  type LoadedPost = NonNullable<typeof postQuery.data>;
+  const post: LoadedPost | null =
+    staticPost && staticPost !== "miss" ? (staticPost as unknown as LoadedPost) : (postQuery.data ?? null);
+  const stillLoading = staticPost === null || (staticPost === "miss" && postQuery.isLoading);
+  const loadFailed = staticPost === "miss" && postQuery.isError;
 
   // Reading-focus mode (board rec #10): a page-level calm that reduces the
   // article to title + body, persisted so the preference survives a reload.
@@ -491,7 +540,7 @@ export default function ArticleDetail() {
     return () => observer.disconnect();
   }, [postSlug]);
 
-  if (postQuery.isLoading) {
+  if (stillLoading) {
     return (
       <Layout>
         <div style={{ padding: "var(--s-6) var(--s-4)", textAlign: "center" }}>
@@ -504,7 +553,7 @@ export default function ArticleDetail() {
   // A request that failed is not an article that does not exist. Telling a
   // reader the piece is gone when the server simply did not answer is a lie
   // the reader has no way to check, and it loses them for good.
-  if (postQuery.isError) {
+  if (loadFailed) {
     return (
       <Layout>
         <div style={{ padding: "var(--s-6) var(--s-4)" }}>
@@ -539,8 +588,8 @@ export default function ArticleDetail() {
             onClick={() => navigate("/writing")}
             style={{
               padding: "12px 24px",
-              background: "var(--ink)",
-              color: "var(--bone)",
+              background: "var(--charcoal)",
+              color: "var(--charcoal-fg)",
               border: "none",
               borderRadius: "var(--radius-sm)",
               cursor: "pointer",
@@ -557,7 +606,20 @@ export default function ArticleDetail() {
   }
 
   const canonical = articleUrl(post.slug);
-  const description = post.excerpt || post.title;
+  const [bodyBefore, bodyAfter] = splitForRelated((post.body ?? "").replace(/^\s*#{1,6}\s+.*\r?\n+/, ""));
+  const proseComponents = {
+    blockquote: ({ children }: { children?: React.ReactNode }) => (
+      <ShareableQuote shareTitle={post.title} shareUrl={canonical} author={author}>
+        {children}
+      </ShareableQuote>
+    ),
+  };
+  // The plain-language search layer (scripts/build-seo-layer.mjs) rides on the
+  // static essay files: a meta description in everyday words and, when the
+  // title is a question, the question with the essay's own answer. The page
+  // itself still shows James's standfirst.
+  const seo = post as { metaDescription?: string; qa?: { question: string; answer: string } };
+  const description = seo.metaDescription || post.excerpt || post.title;
   const ogImage = post.coverImage || OG_DEFAULT_IMAGE;
   const publishedIso = String(post.publishedAt || post.createdAt || "");
   const author = ARTICLE_AUTHORS[post.slug] ?? "James Bell";
@@ -584,7 +646,7 @@ export default function ArticleDetail() {
             canonical,
             undefined,
             undefined,
-            undefined,
+            post.pillar ?? undefined,
             author
           ),
           getBreadcrumbSchema([
@@ -592,6 +654,7 @@ export default function ArticleDetail() {
             { name: "Writing", url: `${SITE_URL}/writing` },
             { name: post.title, url: canonical },
           ]),
+          ...(seo.qa ? [getQAPageSchema(seo.qa.question, seo.qa.answer)] : []),
         ]}
       />
       <article className={focus ? "lw-reading-focus" : undefined}>
@@ -759,11 +822,7 @@ export default function ArticleDetail() {
                 }}
               />
             ) : (
-              <GeneratedHero
-                seed={post.slug}
-                pillarId={pillarForPost(post)?.id}
-                title={post.title}
-              />
+              <EssayArt seed={post.slug} track={post.pillar} title={post.title} style={{ borderRadius: "var(--radius-sm)" }} />
             )}
           </div>
         </section>
@@ -834,17 +893,14 @@ export default function ArticleDetail() {
             }}
           >
             {post.body ? (
-              <Markdown
-                components={{
-                  blockquote: ({ children }: { children?: React.ReactNode }) => (
-                    <ShareableQuote shareTitle={post.title} shareUrl={canonical} author={author}>
-                      {children}
-                    </ShareableQuote>
-                  ),
-                }}
-              >
-                {post.body.replace(/^\s*#{1,6}\s+.*\r?\n+/, "")}
-              </Markdown>
+              <>
+                <Markdown components={proseComponents}>{bodyBefore}</Markdown>
+                {/* Two-thirds of the way down, three essays worth reading next.
+                    A reader still here is still with the argument; the foot of
+                    the page only reaches finishers. */}
+                {bodyAfter && !focus && <RelatedEssays post={post} compact />}
+                {bodyAfter && <Markdown components={proseComponents}>{bodyAfter}</Markdown>}
+              </>
             ) : (
               <p style={{ fontStyle: "italic", color: "var(--ink-muted)" }}>
                 This article is in preparation.
@@ -883,7 +939,7 @@ export default function ArticleDetail() {
             {/* Three-audience share replaces the single SendToPastor button */}
             <AudienceShare title={post.title} url={canonical} />
             {/* Pastor distribution: hand this essay to a whole small group */}
-            {post.slug && DISCUSSION_GUIDES[post.slug] && (
+            {post.slug && DISCUSSION_GUIDE_SLUGS.has(post.slug) && (
               <Link
                 href={`/group-guide/${post.slug}`}
                 style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--ink)", textDecoration: "none", border: "1px solid var(--border)", borderRadius: "999px", padding: "7px 14px", whiteSpace: "nowrap" }}
@@ -900,6 +956,10 @@ export default function ArticleDetail() {
             (board rec #9), then the newsletter CTA, author bio, and end nav. */}
         {!focus && (
           <>
+            {/* ON SUBSTACK — one sentence, only on the essays that belong to the
+                argument the Substack is serializing (isSeriesEssay). */}
+            <SubstackSeriesNote post={post} />
+
             {/* NEXT STEPS — the matched tool and reading path for this essay
                 (built long ago, never imported; revived by QW-16) */}
             {/* ONE PRIMARY NEXT STEP. A reader at the end of an essay is at
@@ -917,7 +977,8 @@ export default function ArticleDetail() {
                 <ArticleNextSteps articleSlug={post.slug ?? ""} articlePillar={post.pillar ?? ""} />
               </>
             )}
-            <RelatedEssays post={post} />
+            {/* Short essays never split; they get the related list here instead. */}
+            {!bodyAfter && <RelatedEssays post={post} />}
 
             {/* NEWSLETTER (single CTA — no fake form) */}
             <section
@@ -934,6 +995,10 @@ export default function ArticleDetail() {
             {/* AUTHOR BIO */}
             <AuthorBio author={author} />
             <ChannelLine />
+
+            {/* REPLY — one link that opens a mail client with the essay's
+                title as the subject. An invitation to disagree, not an ask. */}
+            <ReplyToEssay title={post.title} />
 
             <PageEndNav back={{ href: "/writing", label: "All essays" }} />
           </>

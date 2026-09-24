@@ -237,7 +237,7 @@ export default function BibleOnTopic() {
         url="https://www.livewellbyjamesbell.co/tools/bible-on"
       />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>A tool · Integrated Life</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(30px, 5vw, 50px)", fontWeight: 400, lineHeight: 1.06, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "20ch" }}>
@@ -277,7 +277,7 @@ export default function BibleOnTopic() {
           <div style={{ maxWidth: "720px", borderTop: "2px solid var(--mustard)", paddingTop: "var(--s-4)" }}>
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "12px", marginBottom: "var(--s-3)" }}>
               <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px, 3.4vw, 32px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)" }}>{topic.label}</h2>
-              <button onClick={copyTopic} aria-live="polite" style={{ cursor: "pointer", display: "inline-flex", alignItems: "center", gap: "6px", padding: "9px 16px", background: "var(--charcoal)", color: "var(--bone)", border: "none", fontFamily: "var(--U)", fontWeight: 600, fontSize: "13px" }}>
+              <button onClick={copyTopic} aria-live="polite" style={{ cursor: "pointer", display: "inline-flex", alignItems: "center", gap: "6px", padding: "9px 16px", background: "var(--charcoal)", color: "var(--charcoal-fg)", border: "none", fontFamily: "var(--U)", fontWeight: 600, fontSize: "13px" }}>
                 {copied ? <Check size={15} /> : <Copy size={15} />} {copied ? "Copied" : "Copy"}
               </button>
             </div>

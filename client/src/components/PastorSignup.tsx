@@ -184,8 +184,8 @@ export function PastorSignup({ source, networkUrl }: PastorSignupProps) {
           disabled={subscribe.isPending}
           style={{
             padding: "12px 22px",
-            background: "var(--ink)",
-            color: "var(--bone)",
+            background: "var(--charcoal)",
+            color: "var(--charcoal-fg)",
             border: "none",
             borderRadius: "var(--radius-sm)",
             fontFamily: "var(--U)",

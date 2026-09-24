@@ -56,7 +56,7 @@ export default function TheologyExplorer() {
       />
 
       {/* HERO */}
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-7) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-7) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>
             <Link href="/theology" style={{ color: "inherit" }}>Theological Depth</Link> · The Explorer
@@ -131,7 +131,7 @@ export default function TheologyExplorer() {
       </section>
 
       {/* ONWARD */}
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--s-4)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--s-4)", color: "var(--charcoal-fg)" }}>
         <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto", display: "flex", gap: "24px", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center" }}>
           <p style={{ fontFamily: "var(--F)", fontSize: "19px", fontStyle: "italic", lineHeight: 1.5, color: "rgba(245,240,230,0.9)", margin: 0, maxWidth: "34ch" }}>
             Not sure where you land? The section will not tell you what to think. It will show you the room.

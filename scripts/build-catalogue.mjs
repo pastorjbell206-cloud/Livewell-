@@ -30,6 +30,7 @@ import zlib from "node:zlib";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import dotenv from "dotenv";
 import mysql from "mysql2/promise";
+import { redirectedEssaySlugs } from "./redirected-essays.mjs";
 
 import { ANSWERS } from "../client/src/data/answers.ts";
 import { ARGUMENT_CASES } from "../client/src/data/argumentCases.ts";
@@ -175,14 +176,32 @@ function loadStaticEssays() {
   }
 }
 
+/** The pastor-trade essays moved to PCN; their URLs 301 there (vercel.json). */
+function movedToPcn() {
+  try {
+    return new Set(JSON.parse(fs.readFileSync(path.join(ROOT, "content/pcn-moved.json"), "utf8")).slugs ?? []);
+  } catch {
+    return new Set();
+  }
+}
+
 function essayItems(dbRows, staticRows) {
   const takenDown = parseSet("api/index.ts", "TAKEN_DOWN");
   const hidden = parseSet("client/src/lib/hiddenSlugs.ts", "HIDDEN_SLUGS");
+  const moved = movedToPcn();
+  // Essays merged into a rewrite leave the Library; a rewritten essay lists from
+  // the library record, not a stale database row (scripts/apply-rewrites.mjs).
+  let rw = { rewritten: [], merged: {} };
+  try { rw = JSON.parse(fs.readFileSync(path.join(ROOT, "content/rewrites.generated.json"), "utf8")); } catch { /* none yet */ }
+  for (const slug of Object.keys(rw.merged || {})) moved.add(slug);
+  for (const slug of redirectedEssaySlugs(ROOT)) moved.add(slug); // address redirects elsewhere
+  const rewritten = new Set(rw.rewritten || []);
+  dbRows = (dbRows ?? []).filter((r) => !rewritten.has(r.slug));
   const bySlug = new Map();
   // Database first; the static library fills in slugs the database lacks,
   // exactly as posts.listPublished merges them.
   for (const r of [...(dbRows ?? []), ...staticRows]) {
-    if (!r.slug || bySlug.has(r.slug) || takenDown.has(r.slug) || hidden.has(r.slug)) continue;
+    if (!r.slug || bySlug.has(r.slug) || takenDown.has(r.slug) || hidden.has(r.slug) || moved.has(r.slug)) continue;
     bySlug.set(r.slug, item({
       kind: "Essay",
       title: r.title,
@@ -396,7 +415,8 @@ export function assemble(dbRows) {
   const parts = {
     essays: essayItems(dbRows, staticEssays),
     books: bookItems(),
-    booklets: bookletItems(),
+    // The elder and governance booklets are PCN's (the pastor material left this
+    // site in 2026); their page redirects there. bookletItems() stays for PCN.
     answers: answerItems(),
     arguments: argumentItems(),
     groupGuides: groupGuideItems(),

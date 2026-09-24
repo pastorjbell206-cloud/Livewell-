@@ -42,23 +42,6 @@
           "blurb": "Five sessions for married couples, engaged pairs, or a group of both."
         }
       ]
-    },
-    {
-      "kind": "book",
-      "heading": "Then read the book, free",
-      "note": "Marriage: Covenant & Roles collects the essays on what marriage actually is and how two people lead and serve each other. Read the whole thing here.",
-      "items": [
-        {
-          "label": "Marriage: Covenant & Roles — read free",
-          "href": "/read/essays-marriage-covenant-roles",
-          "blurb": "Seven chapters on one flesh, headship and submission read honestly, and the long work of staying."
-        },
-        {
-          "label": "Find James's books in the bookstore",
-          "href": "/books",
-          "blurb": "Print and ebook editions of the full library."
-        }
-      ]
     }
   ]
 }

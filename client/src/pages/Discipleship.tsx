@@ -49,16 +49,9 @@ const STAGES: Stage[] = [
       {
         id: "begin-mark",
         title: "Read the Gospel of Mark",
-        desc: "Sixteen chapters, one sitting if you can manage it. Mark is the shortest account of Jesus and the fastest. The sermon series library walks through whole books like this one.",
-        href: "/leadership/sermon-series",
+        desc: "Sixteen chapters, one sitting if you can manage it. Mark is the shortest account of Jesus and the fastest.",
+        href: null,
         type: "Read",
-      },
-      {
-        id: "begin-study",
-        title: "Learn how to study the Bible",
-        desc: "Not how to feel about it. How to read it: observation, context, meaning, and only then application.",
-        href: "/leadership/article/how-to-study-the-bible",
-        type: "Study",
       },
       {
         id: "begin-pray",
@@ -73,13 +66,6 @@ const STAGES: Stage[] = [
         desc: "Not a podcast. A room with people in it, some of whom you would not have chosen. Visit until one of them becomes yours, then stay.",
         href: null,
         type: "Do",
-      },
-      {
-        id: "begin-membership",
-        title: "Read why church membership matters",
-        desc: "Belonging to a church is not a subscription you hold lightly. It is a set of people who will know when you are missing.",
-        href: "/leadership/article/why-church-membership-matters",
-        type: "Read",
       },
       {
         id: "begin-memorize",
@@ -123,13 +109,6 @@ const STAGES: Stage[] = [
         title: "Trace the storyline of Scripture",
         desc: "Sixty-six books, one plot. Biblical theology shows you how creation, covenant, exile, and Christ hold together.",
         href: "/theology/biblical",
-        type: "Study",
-      },
-      {
-        id: "root-genres",
-        title: "Learn the genres of the Bible",
-        desc: "Law is not poetry and a parable is not a newspaper. Knowing what kind of text you are holding changes what you ask of it.",
-        href: "/leadership/article/bible-genres",
         type: "Study",
       },
       {
@@ -228,32 +207,18 @@ const STAGES: Stage[] = [
       "You were discipled so that you would disciple. The pathway does not end with you. It ends, if it ever ends, when you hand it to someone else and they keep walking.",
     steps: [
       {
-        id: "pass-real",
-        title: "Learn what real discipleship looks like",
-        desc: "Not a program. A person walking with a person, over years, with the Bible open between them.",
-        href: "/leadership/article/what-real-discipleship-looks-like",
-        type: "Read",
-      },
-      {
         id: "pass-one",
         title: "Begin discipling one person",
         desc: "One name. One standing time each week or two. You do not need a curriculum to start. You need a table and a willingness to be known.",
-        href: "/leadership/article/discipling-men",
+        href: null,
         type: "Do",
       },
       {
         id: "pass-group",
         title: "Lead a small group study",
-        desc: "Gather a few people around a book of the Bible and work through it together. Here is how to make the group actually work.",
-        href: "/leadership/article/making-small-groups-work",
+        desc: "Gather a few people around a book of the Bible and work through it together, week after week, until the book has been read and argued over and prayed through.",
+        href: null,
         type: "Do",
-      },
-      {
-        id: "pass-teach",
-        title: "Learn to teach the text",
-        desc: "The leadership library holds the whole shelf on handling Scripture in front of other people: preparation, interpretation, delivery.",
-        href: "/leadership/library",
-        type: "Study",
       },
       {
         id: "pass-hospitality",
@@ -268,13 +233,6 @@ const STAGES: Stage[] = [
         desc: "Short, honest, regular. A family that reads and prays together for ten minutes is doing more formation than most programs manage in a year.",
         href: "/family/devotions",
         type: "Do",
-      },
-      {
-        id: "pass-pastors",
-        title: "Carry the people who lead you",
-        desc: "Pastors are the most under-shepherded people in the church. Learn what they carry, then pray for yours by name.",
-        href: "/pastors",
-        type: "Read",
       },
     ],
   },
@@ -412,7 +370,7 @@ export default function Discipleship() {
       <section style={{ background: "var(--charcoal)", padding: "6rem 1.5rem 5rem" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "1.5rem" }}>The Discipleship Pathway</div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(2.25rem, 5.5vw, 4rem)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.02em", color: "var(--bone)", marginBottom: "1.5rem", maxWidth: "18ch" }}>
+          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(2.25rem, 5.5vw, 4rem)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.02em", color: "var(--charcoal-fg)", marginBottom: "1.5rem", maxWidth: "18ch" }}>
             The long obedience, in order.
           </h1>
           <p style={{ fontFamily: "var(--B)", fontSize: "1.125rem", lineHeight: 1.7, color: "rgba(245,240,230,0.8)", maxWidth: "62ch", marginBottom: "1.5rem" }}>
@@ -480,8 +438,8 @@ export default function Discipleship() {
       <section style={{ background: "var(--charcoal)", padding: "5rem 1.5rem", textAlign: "center" }}>
         <div style={{ maxWidth: "560px", margin: "0 auto" }}>
           <div style={{ width: "40px", height: "2px", background: "var(--mustard)", margin: "0 auto 2rem" }} />
-          <p style={{ fontFamily: "var(--F)", fontSize: "1.125rem", lineHeight: 1.65, color: "var(--bone)", fontStyle: "italic", margin: 0 }}>
-            Thirty steps fit on a page. The life they point to does not. When the last box is checked, you will not be finished. You will be equipped, which is a different thing, and a heavier one.
+          <p style={{ fontFamily: "var(--F)", fontSize: "1.125rem", lineHeight: 1.65, color: "var(--charcoal-fg)", fontStyle: "italic", margin: 0 }}>
+            Two dozen steps fit on a page. The life they point to does not. When the last box is checked, you will not be finished. You will be equipped, which is a different thing, and a heavier one.
           </p>
           <div style={{ marginTop: "2rem" }}>
             <Link href="/disciple-making" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px" }}>Now go make disciples, around a table</Link>
