@@ -33,3 +33,19 @@ Jerusalem.
   most often (tallies differ).
 - Genesis 7–8: the flood's mirror structure (best known from Gordon Wenham);
   exact day counts vary between versions.
+
+## Genesis 15–32
+
+**Corrected.** Genesis 16: Hammurabi's law on a wife giving her slave woman
+(§146) concerns a wife of a particular priestly class. Genesis 28: "Almighty"
+for Shaddai comes mainly from the Latin Vulgate; the Greek uses it chiefly in
+Job. Genesis 29: "the land of the people of the east" is the narrator's
+phrase; Isaac's blindness, not darkness, made Jacob's deception possible.
+
+**To double-check.**
+- Genesis 25: the Nuzi tablet on selling an inheritance share (the Nuzi
+  parallels' weight is debated).
+- Genesis 31: the bride's father passing part of the marriage payment to his
+  daughter rests on comparative evidence, not the text.
+- Genesis 24: the camel dating (Sapir-Hen and Ben-Yosef, 2014) is recent and
+  debated; it is presented as an open question.
