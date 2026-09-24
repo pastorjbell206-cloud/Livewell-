@@ -520,6 +520,17 @@ const SEO_LAYER = readJsonSafe("content/seo-layer.generated.json") || {};
 // The pastor-trade essays moved to PCN: no per-route HTML, since the URL
 // redirects there (vercel.json) and the sitemap no longer lists it.
 const PCN_MOVED = new Set((readJsonSafe("content/pcn-moved.json") || {}).slugs || []);
+// Rewrites (scripts/apply-rewrites.mjs): merged essays redirect, so they are not
+// prerendered; a rewritten essay is prerendered from the library record even
+// when the database still holds the old text under the same slug.
+const REWRITES = readJsonSafe("content/rewrites.generated.json") || { rewritten: [], merged: {} };
+const REWRITTEN = new Set(REWRITES.rewritten || []);
+for (const slug of Object.keys(REWRITES.merged || {})) PCN_MOVED.add(slug);
+// An address that redirects elsewhere is never served, so it is not prerendered.
+for (const r of (readJsonSafe("vercel.json") || {}).redirects || []) {
+  const m = String(r.source || "").match(/^\/writing\/([a-z0-9][a-z0-9-]*)$/);
+  if (m) PCN_MOVED.add(m[1]);
+}
 
 function qaSchema(qa) {
   return {
@@ -1079,6 +1090,9 @@ async function main() {
   const words = (s) => String(s || "").split(/\s+/).filter(Boolean).length;
   const preferFullBody = (row) => {
     const lib = libBySlug.get(row.slug);
+    if (lib && REWRITTEN.has(row.slug)) {
+      return { ...row, title: lib.title, excerpt: lib.excerpt, body: lib.body, pillar: lib.pillar || row.pillar, updatedAt: lib.updatedAt || row.updatedAt };
+    }
     if (!lib || words(row.body) >= 200 || words(lib.body) <= words(row.body)) return row;
     return { ...row, body: lib.body, excerpt: row.excerpt || lib.excerpt };
   };

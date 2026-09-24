@@ -1,0 +1,28 @@
+{
+ "rewritten": [
+  "covenant-vs-contract-what-marriage-is",
+  "emotional-labor-in-marriage",
+  "forgiveness-in-marriage",
+  "healthy-conflict-marriage",
+  "the-resentment-in-your-marriage",
+  "the-slow-drift-that-ends-marriages",
+  "what-the-bible-says-about-submission",
+  "when-you-married-someone-you-no-longer-recognize"
+ ],
+ "merged": {
+  "the-covenant-you-didnt-understand": "covenant-vs-contract-what-marriage-is",
+  "emotional-labor-marriage": "emotional-labor-in-marriage",
+  "marriage-after-kids-arrive": "emotional-labor-in-marriage",
+  "forgiveness-without-pretending": "forgiveness-in-marriage",
+  "marriage-forgiveness-and-repair": "forgiveness-in-marriage",
+  "marriage-fighting-fair": "healthy-conflict-marriage",
+  "fighting-fair-is-not-enough": "healthy-conflict-marriage",
+  "resentment-marriage-telling-you": "the-resentment-in-your-marriage",
+  "slow-drift-marriage": "the-slow-drift-that-ends-marriages",
+  "bible-submission-marriage": "what-the-bible-says-about-submission",
+  "marriage-leading-and-serving-together": "what-the-bible-says-about-submission",
+  "married-someone-no-longer-recognize": "when-you-married-someone-you-no-longer-recognize",
+  "marriage-empty-nest": "when-you-married-someone-you-no-longer-recognize",
+  "when-marriage-becomes-a-mirror": "when-you-married-someone-you-no-longer-recognize"
+ }
+}

@@ -11,6 +11,7 @@
 import mysql from "mysql2/promise";
 import fs from "node:fs";
 import dotenv from "dotenv";
+import { redirectedEssaySlugs } from "./redirected-essays.mjs";
 
 dotenv.config();
 
@@ -57,6 +58,10 @@ function loadMoved() {
   }
 }
 const PCN_MOVED = loadMoved();
+// Essays merged into a rewrite (scripts/apply-rewrites.mjs) redirect to it.
+for (const slug of Object.keys((() => { try { return JSON.parse(fs.readFileSync("content/rewrites.generated.json", "utf8")).merged || {}; } catch { return {}; } })())) PCN_MOVED.add(slug);
+// Never advertise an address that redirects elsewhere (redirected-essays.mjs).
+for (const slug of redirectedEssaySlugs()) PCN_MOVED.add(slug);
 
 function mergeArticles(dbArticles) {
   const db = (dbArticles || []).filter(a => !PCN_MOVED.has(a.slug));
@@ -239,7 +244,6 @@ const STATIC_PAGES = [
   { url: "/studyguides", priority: "0.8", changefreq: "monthly" },
   { url: "/substack", priority: "0.6", changefreq: "monthly" },
   { url: "/subscribe", priority: "0.7", changefreq: "monthly" },
-  { url: "/resources/hard-issues-series", priority: "0.75", changefreq: "monthly" },
   // Legal
   { url: "/privacy", priority: "0.3", changefreq: "monthly" },
   { url: "/terms", priority: "0.3", changefreq: "monthly" },

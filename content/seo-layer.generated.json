@@ -252,25 +252,13 @@
   "excerptGrade": 4.1
  },
  "emotional-labor-in-marriage": {
-  "metaDescription": "There is a kind of work in every marriage that leaves no trace. It is not the dishes, though it includes remembering the dishes.",
-  "source": "derived",
-  "grade": 6.3,
-  "excerptGrade": 13.7
- },
- "fighting-fair-is-not-enough": {
-  "metaDescription": "You can win every fight by the rules and still lose the marriage. Fair fighting was always the wrong goal. You learned to fight fair.",
-  "source": "derived",
-  "grade": 2.8,
-  "excerptGrade": 3.7
- },
- "forgiveness-without-pretending": {
-  "metaDescription": "Most of what we call forgiveness in a marriage is pretending. Real forgiveness names the wound in full and then refuses to charge for it.",
-  "source": "hand",
-  "grade": 6.7,
-  "excerptGrade": 7.4,
+  "metaDescription": "What emotional labor and the mental load really are, why one spouse ends up carrying them, why children deepen the gap, and what Scripture asks of both.",
+  "source": "rewrite",
+  "grade": 11.1,
+  "excerptGrade": 9.9,
   "qa": {
-   "question": "How Do You Forgive Without Pretending It Didn't Happen?",
-   "answer": "Most of what we call forgiveness in marriage is pretending. Real forgiveness names the wound fully and then refuses to charge for it."
+   "question": "Why Does One Spouse Carry the Whole Mental Load in Marriage?",
+   "answer": "The heaviest work in many marriages is not the chores but the watch: the anticipating and remembering that leaves no trace when it is done well. Children multiply it, and Scripture has always called it work that both spouses owe."
   }
  },
  "protecting-marriage-in-ministry": {
@@ -279,23 +267,17 @@
   "grade": 8,
   "excerptGrade": 7.6
  },
- "the-covenant-you-didnt-understand": {
-  "metaDescription": "You stood at the altar and made a promise you did not understand. That was never the problem. The promise was built to be bigger than you.",
-  "source": "derived",
-  "grade": 3.2,
-  "excerptGrade": 3.2
- },
  "the-resentment-in-your-marriage": {
-  "metaDescription": "Resentment is not the rot in your marriage. It does not arrive as anger. Anger is loud and brief and at least honest about itself.",
-  "source": "derived",
-  "grade": 3.7,
-  "excerptGrade": 5.6
+  "metaDescription": "What resentment in marriage means, when a grievance is fair and when it turns to bitterness, and how Scripture moves from honest speech to forgiveness.",
+  "source": "rewrite",
+  "grade": 11.6,
+  "excerptGrade": 9.5
  },
  "the-slow-drift-that-ends-marriages": {
-  "metaDescription": "No one signs the divorce papers because of a single Tuesday. They sign because of a thousand of them, each too small to notice, each a quiet turn away.",
-  "source": "derived",
-  "grade": 5.5,
-  "excerptGrade": 5.5
+  "metaDescription": "Why couples drift apart and end up like roommates: the old sin of acedia, the modern soulmate marriage, and how Scripture calls spouses back to attention.",
+  "source": "rewrite",
+  "grade": 12.3,
+  "excerptGrade": 6.9
  },
  "what-silence-costs-a-marriage": {
   "metaDescription": "The marriage rarely dies in the fight. It dies in the silence afterward, the one that started to feel like peace.",
@@ -304,22 +286,24 @@
   "excerptGrade": 4.2
  },
  "what-the-bible-says-about-submission": {
-  "metaDescription": "The verse you have been beaten with begins one sentence earlier than anyone ever quotes it, and the heavier command was always addressed to the man.",
-  "source": "derived",
-  "grade": 11.8,
-  "excerptGrade": 11.8
- },
- "when-marriage-becomes-a-mirror": {
-  "metaDescription": "You did not marry a stranger. You married a mirror, and most of us would rather break the glass than look at what it shows.",
-  "source": "derived",
-  "grade": 3.4,
-  "excerptGrade": 3.4
+  "metaDescription": "Ephesians 5 read in context: mutual submission, headship defined by the cross, both main Christian views, and why submission never requires enduring abuse.",
+  "source": "rewrite",
+  "grade": 13.9,
+  "excerptGrade": 8.8,
+  "qa": {
+   "question": "What Does the Bible Say About Submission in Marriage?",
+   "answer": "Ephesians 5 begins a sentence earlier than it is usually quoted, and its heaviest command falls on the husband. Read whole, it gives no one a license to dominate and no one permission to hide."
+  }
  },
  "when-you-married-someone-you-no-longer-recognize": {
-  "metaDescription": "The person across the table did not vanish. You watched it happen over years of ordinary life and called the change a betrayal.",
-  "source": "derived",
-  "grade": 6.9,
-  "excerptGrade": 6.5
+  "metaDescription": "Why spouses become strangers, especially once the kids leave, what growing apart does and does not mean, and why the marriage vow was made for this season.",
+  "source": "rewrite",
+  "grade": 11.1,
+  "excerptGrade": 9.4,
+  "qa": {
+   "question": "I Don't Recognize My Spouse Anymore. Is the Marriage Over?",
+   "answer": "The stranger across the table is not proof the marriage failed. Both of you changed, as every vow assumed you would, and the question is whether you will learn the person who is actually there, including the one in the mirror."
+  }
  },
  "discipline-without-domination": {
   "metaDescription": "Most of what passes for Christian discipline is the management of the parent's anger wearing the costume of the child's correction.",
@@ -1843,12 +1827,6 @@
   "grade": 4.7,
   "excerptGrade": 13.7
  },
- "bible-submission-marriage": {
-  "metaDescription": "Few words in the marriage conversation have been more weaponized, and more abandoned, than submission.",
-  "source": "derived",
-  "grade": 11.5,
-  "excerptGrade": 11.5
- },
  "bivocational-pastors-get-right": {
   "metaDescription": "An enormous share of American pastors, in many denominations, most of them, serve their congregations on part-time or bivocational terms.",
   "source": "derived",
@@ -2189,12 +2167,6 @@
   "grade": 10.7,
   "excerptGrade": 14.6
  },
- "emotional-labor-marriage": {
-  "metaDescription": "Emotional labor is not a clinical term. One spouse usually does most of it. In most marriages, that spouse is the wife.",
-  "source": "derived",
-  "grade": 4.4,
-  "excerptGrade": 15.4
- },
  "engaging-nones-religiously-unaffiliated": {
   "metaDescription": "They are not atheists, most of them. They left (or never arrived) not because they resolved the God question in the negative.",
   "source": "derived",
@@ -2340,10 +2312,10 @@
   "excerptGrade": 9.1
  },
  "healthy-conflict-marriage": {
-  "metaDescription": "Most people have two options they cycle between when conflict enters their marriage.",
-  "source": "derived",
-  "grade": 7.6,
-  "excerptGrade": 7.6
+  "metaDescription": "What Scripture and marriage research teach about anger, fighting fair, and repair, and why healthy conflict in marriage has to end in reconciliation.",
+  "source": "rewrite",
+  "grade": 12.4,
+  "excerptGrade": 8.5
  },
  "healthy-pastor-referral-network": {
   "metaDescription": "The call came on a Tuesday afternoon. He needed a therapist. He needed a marriage counselor with clinical training. He needed, eventually, a psychiatrist.",
@@ -2494,18 +2466,6 @@
   "source": "derived",
   "grade": 5.6,
   "excerptGrade": 4
- },
- "marriage-empty-nest": {
-  "metaDescription": "For a certain kind of marriage, and it is more common than anyone likes to admit, the children were the project.",
-  "source": "derived",
-  "grade": 8.9,
-  "excerptGrade": 9.3
- },
- "married-someone-no-longer-recognize": {
-  "metaDescription": "It is possible to love someone deeply and look at them one morning and realize you do not know who this person is anymore.",
-  "source": "derived",
-  "grade": 10,
-  "excerptGrade": 6.8
  },
  "maternal-mortality-pro-life": {
   "metaDescription": "The United States has the highest maternal mortality rate among wealthy nations, not marginally, but by multiples.",
@@ -2813,12 +2773,6 @@
   "grade": 3.6,
   "excerptGrade": 6
  },
- "resentment-marriage-telling-you": {
-  "metaDescription": "Resentment is the emotion people feel worst about feeling. So people do what we do with the emotions we cannot afford to acknowledge: they manage it.",
-  "source": "derived",
-  "grade": 8.1,
-  "excerptGrade": 8
- },
  "return-ministry-after-burnout": {
   "metaDescription": "The pastors I have watched return to ministry after burning out almost always make the same mistake.",
   "source": "derived",
@@ -2908,12 +2862,6 @@
   "source": "derived",
   "grade": 7.2,
   "excerptGrade": 7.2
- },
- "slow-drift-marriage": {
-  "metaDescription": "The story we tell about failed marriages involves revelation. We tell that story because it makes sense. It has a cause.",
-  "source": "derived",
-  "grade": 6.2,
-  "excerptGrade": 19
  },
  "small-churches-get-right": {
   "metaDescription": "The megachurch is the aspiration. The small church is the consolation prize.",
@@ -3590,10 +3538,10 @@
   "excerptGrade": 12.1
  },
  "covenant-vs-contract-what-marriage-is": {
-  "metaDescription": "A woman I had married eleven years earlier sat in my office and told me she wanted out, and the reason she gave was that she was no longer happy.",
-  "source": "derived",
-  "grade": 11.8,
-  "excerptGrade": 16.1
+  "metaDescription": "What is covenant marriage? The biblical meaning of marriage from Genesis 2 and 15 to Ephesians 5, and how the West came to treat marriage as a contract.",
+  "source": "rewrite",
+  "grade": 5.9,
+  "excerptGrade": 8.8
  },
  "how-to-raise-children-in-the-faith": {
   "metaDescription": "One of my sons told me, somewhere around fourteen, that he was not sure he believed any of it.",
@@ -3614,10 +3562,10 @@
   "excerptGrade": 14.5
  },
  "forgiveness-in-marriage": {
-  "metaDescription": "A couple sat in my office keeping a ledger they would have denied keeping.",
-  "source": "derived",
-  "grade": 6.7,
-  "excerptGrade": 15.7
+  "metaDescription": "What it means to forgive your spouse: how forgiveness differs from reconciliation and trust, what repentance owes, and why it never requires danger.",
+  "source": "rewrite",
+  "grade": 13.4,
+  "excerptGrade": 8.5
  },
  "marriage-communication-that-works": {
   "metaDescription": "Most couples do not have a communication problem, they have a translation problem, and the difference is the whole game.",
@@ -3625,23 +3573,11 @@
   "grade": 11.1,
   "excerptGrade": 11.1
  },
- "marriage-fighting-fair": {
-  "metaDescription": "The first lie about conflict in marriage is that good marriages do not have much of it. The couples who never fight are not the healthy ones.",
-  "source": "derived",
-  "grade": 5.4,
-  "excerptGrade": 13.5
- },
  "marriage-money-and-marriage": {
   "metaDescription": "Money fights are almost never about money, they are about fear and control and worth, and a budget cannot fix a thing the budget cannot see.",
   "source": "derived",
   "grade": 11.3,
   "excerptGrade": 11.3
- },
- "marriage-after-kids-arrive": {
-  "metaDescription": "The child does not threaten the marriage, but the way we organize our love around the child often does, and almost no one warns you.",
-  "source": "derived",
-  "grade": 9.3,
-  "excerptGrade": 9.3
  },
  "marriage-intimacy": {
   "metaDescription": "The church taught a generation that sex was dangerous, then handed them a ring and expected the danger to evaporate overnight.",
@@ -3649,23 +3585,11 @@
   "grade": 12.3,
   "excerptGrade": 12.6
  },
- "marriage-forgiveness-and-repair": {
-  "metaDescription": "Forgiveness cancels the debt, but it does not rebuild the house, and a marriage needs both, which is why so many couples forgive and stay broken anyway.",
-  "source": "derived",
-  "grade": 12,
-  "excerptGrade": 12
- },
  "marriage-through-depression-and-crisis": {
   "metaDescription": "When one of you goes dark, the vow stops being a feeling and becomes a structure, and the structure is the only thing that holds when the feeling is gone.",
   "source": "derived",
   "grade": 10.7,
   "excerptGrade": 10.7
- },
- "marriage-leading-and-serving-together": {
-  "metaDescription": "Most marriages have no spiritual life together because both people are waiting for the other one to go first, and the waiting can outlast the marriage.",
-  "source": "derived",
-  "grade": 12.3,
-  "excerptGrade": 12.3
  },
  "parenting-discipline-that-forms-the-heart": {
   "metaDescription": "The word discipline shares a root with disciple, and we have spent a generation forgetting that.",

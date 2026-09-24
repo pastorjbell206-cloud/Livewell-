@@ -15,11 +15,6 @@
           "blurb": "The whole diagnosis first: two captivities, right and left, and the older faith underneath both."
         },
         {
-          "label": "When God Bless America Replaces Thy Kingdom Come",
-          "href": "/writing/when-god-bless-america-replaces-thy-kingdom-come",
-          "blurb": "How patriotism became the practical savior of American Christianity."
-        },
-        {
           "label": "Why Is There a Flag in the Sanctuary?",
           "href": "/writing/the-flag-in-the-sanctuary",
           "blurb": "It did not arrive by accident, and it does not stay there by accident."
@@ -50,18 +45,13 @@
     },
     {
       "kind": "book",
-      "heading": "Then read the book, free",
-      "note": "The Captive Church follows the one temptation Jesus refused in the wilderness through Constantine, the denarius, and the flag on the platform. Read it free.",
+      "heading": "Then read the book",
+      "note": "The book follows the whole argument: how the American church traded the kingdom for a flag, and the older faith that was there before the trade.",
       "items": [
         {
-          "label": "The Captive Church — read free",
-          "href": "/read/the-captive-church",
-          "blurb": "Ten chapters on nationalism, empire, and the cost of cultural Christianity. The complete book, free."
-        },
-        {
-          "label": "Find James's books in the bookstore",
-          "href": "/books",
-          "blurb": "Print and ebook editions of the full library."
+          "label": "When God Bless America Replaces Thy Kingdom Come",
+          "href": "/books/when-god-bless-america",
+          "blurb": "A pastor's critique of political idolatry in the American church, from Scripture, from church history, and from inside the sanctuary."
         }
       ]
     }

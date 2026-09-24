@@ -19,6 +19,7 @@
 import { readFileSync, writeFileSync, mkdirSync, rmSync, existsSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { redirectedEssaySlugs } from "./redirected-essays.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const SRC = path.join(ROOT, "content/static-library.generated.json");
@@ -123,7 +124,9 @@ if (isMain) {
   // written, indexed, featured or related; their URLs redirect (vercel.json).
   const MOVED_FILE = path.join(ROOT, "content/pcn-moved.json");
   const moved = new Set(existsSync(MOVED_FILE) ? JSON.parse(readFileSync(MOVED_FILE, "utf8")).slugs ?? [] : []);
-  const records = JSON.parse(readFileSync(SRC, "utf8")).filter((r) => !moved.has(r?.slug));
+  // An essay whose address redirects elsewhere is not listed (redirected-essays.mjs).
+  const redirected = redirectedEssaySlugs(ROOT);
+  const records = JSON.parse(readFileSync(SRC, "utf8")).filter((r) => !moved.has(r?.slug) && !redirected.has(r?.slug));
   const layer = existsSync(SEO) ? JSON.parse(readFileSync(SEO, "utf8")) : {};
   const featuredSlugs = existsSync(FEATURED) ? JSON.parse(readFileSync(FEATURED, "utf8")).flagship ?? [] : [];
   const canonSlugs = existsSync(CANON) ? JSON.parse(readFileSync(CANON, "utf8")).slugs ?? [] : [];

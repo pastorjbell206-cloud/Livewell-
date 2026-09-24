@@ -19,6 +19,12 @@ import STATIC_LIBRARY from "./static-library.generated.js";
 // Generated copy of content/pcn-moved.json (scripts/export-pcn-essays.mjs).
 import PCN_MOVED_JSON from "./pcn-moved.json" with { type: "json" };
 const PCN_MOVED = new Set<string>(((PCN_MOVED_JSON as any)?.slugs as string[]) || []);
+// Generated copy of content/rewrites.generated.json (scripts/apply-rewrites.mjs).
+// A rewritten essay outranks a stale database row on every surface; an essay
+// merged into another leaves every listing (vercel.json redirects its address).
+import REWRITES_JSON from "./rewrites.json" with { type: "json" };
+const REWRITTEN = new Set<string>(((REWRITES_JSON as any)?.rewritten as string[]) || []);
+const MERGED = new Set<string>(Object.keys(((REWRITES_JSON as any)?.merged as Record<string, string>) || {}));
 import { readFileSync } from "node:fs";
 import { readFile } from "node:fs/promises";
 import Stripe from "stripe";
@@ -1346,6 +1352,18 @@ const TAKEN_DOWN = new Set<string>([]);
 // own id, dates, cover and publish state still win.
 const wordCount = (s: unknown): number => String(s ?? "").split(/\s+/).filter(Boolean).length;
 function preferFullBody(row: any): any {
+  if (row && REWRITTEN.has(row.slug)) {
+    const rw = (STATIC_LIBRARY as any[]).find((r) => r.slug === row.slug);
+    if (rw) {
+      const hasBody = row.body !== undefined || row.content !== undefined;
+      return {
+        ...row, title: rw.title, excerpt: rw.excerpt || row.excerpt, pillar: rw.pillar || row.pillar,
+        readTime: rw.readTime || row.readTime, readingTimeMinutes: rw.readingTimeMinutes || row.readingTimeMinutes,
+        updatedAt: rw.updatedAt || row.updatedAt,
+        ...(hasBody ? { body: rw.body, content: rw.body } : {}),
+      };
+    }
+  }
   if (!row || typeof row.body !== "string" || wordCount(row.body) >= 200) return row;
   const lib = (STATIC_LIBRARY as any[]).find((r) => r.slug === row.slug);
   if (!lib || wordCount(lib.body) <= wordCount(row.body)) return row;
@@ -1355,17 +1373,17 @@ function preferFullBody(row: any): any {
 // Append the static essays the DB doesn't already have (DB wins on slug), then
 // order the whole set newest-first so the index reads as one library.
 function mergeWithStatic(dbRows: any[], slim: boolean): any[] {
-  const rows = (dbRows || []).filter((r) => !PCN_MOVED.has(r?.slug)).map(preferFullBody);
+  const rows = (dbRows || []).filter((r) => !PCN_MOVED.has(r?.slug) && !MERGED.has(r?.slug)).map(preferFullBody);
   const have = new Set(rows.map((r) => r.slug));
   const extra = (STATIC_LIBRARY as any[])
-    .filter((r) => !have.has(r.slug) && !TAKEN_DOWN.has(r.slug) && !PCN_MOVED.has(r.slug))
+    .filter((r) => !have.has(r.slug) && !TAKEN_DOWN.has(r.slug) && !PCN_MOVED.has(r.slug) && !MERGED.has(r.slug))
     .map(slim ? staticSlimCard : staticFullCard);
   return [...rows, ...extra].sort(byDateDesc);
 }
 function staticBySlugOrId(id: number | string): any | null {
   const s = String(id);
   const rec = (STATIC_LIBRARY as any[]).find((r) => r.slug === s || String(r.id) === s);
-  if (!rec || TAKEN_DOWN.has(rec.slug) || PCN_MOVED.has(rec.slug)) return null;
+  if (!rec || TAKEN_DOWN.has(rec.slug) || PCN_MOVED.has(rec.slug) || MERGED.has(rec.slug)) return null;
   return staticFullCard(rec);
 }
 
@@ -1497,6 +1515,7 @@ async function trpcGetPost(id: number | string): Promise<any | null> {
     });
     if (dbRow && (dbRow as any).__takenDown) return null; // 404, and no static fallback
     if (dbRow && PCN_MOVED.has((dbRow as any).slug)) return null; // moved to PCN; the URL redirects there
+    if (dbRow && MERGED.has((dbRow as any).slug)) return null; // merged into a rewrite; the URL redirects there
     if (dbRow) return preferFullBody(dbRow);
   } catch { /* no DB / unreachable: fall through to the static library */ }
   // Not in the DB (or DB down): serve from the static essay library.
@@ -3082,7 +3101,7 @@ async function rssLiveWell(_req: VercelRequest, res: VercelResponse) {
           ORDER BY publishedAt DESC, updatedAt DESC
           LIMIT 50`
       );
-      return Array.isArray(posts) ? posts.filter((p: any) => !PCN_MOVED.has(p?.slug)) : [];
+      return Array.isArray(posts) ? posts.filter((p: any) => !PCN_MOVED.has(p?.slug) && !MERGED.has(p?.slug)).map(preferFullBody) : [];
     });
     const buildDate = new Date().toUTCString();
     const items = rows

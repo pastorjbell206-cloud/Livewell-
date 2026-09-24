@@ -815,6 +815,11 @@
             "permanent": true
         },
         {
+            "source": "/resources/hard-issues-series",
+            "destination": "https://pastorsconnectionnetwork.com",
+            "permanent": true
+        },
+        {
             "source": "/for-leaders",
             "destination": "https://pastorsconnectionnetwork.com",
             "permanent": true
@@ -1187,6 +1192,361 @@
         {
             "source": "/membership/success",
             "destination": "/subscribe",
+            "permanent": true
+        },
+        {
+            "source": "/writing/1-preaching-to-the-felt-need-without-the-deeper-need",
+            "destination": "https://pastorsconnectionnetwork.com/writing/1-preaching-to-the-felt-need-without-the-deeper-need",
+            "permanent": true
+        },
+        {
+            "source": "/writing/1-the-slow-burn-how-ministry-exhaustion-sneaks-up-on-you-before-you-see-it-coming",
+            "destination": "https://pastorsconnectionnetwork.com/writing/1-the-slow-burn-how-ministry-exhaustion-sneaks-up-on-you-before-you-see-it-coming",
+            "permanent": true
+        },
+        {
+            "source": "/writing/1-trying-to-change-everything-in-the-first-year",
+            "destination": "https://pastorsconnectionnetwork.com/writing/1-trying-to-change-everything-in-the-first-year",
+            "permanent": true
+        },
+        {
+            "source": "/writing/10-its-okay-to-see-a-counselor-why-pastors-resist-and-why-they-shouldnt",
+            "destination": "https://pastorsconnectionnetwork.com/writing/10-its-okay-to-see-a-counselor-why-pastors-resist-and-why-they-shouldnt",
+            "permanent": true
+        },
+        {
+            "source": "/writing/11-what-pastors-need-to-know-about-depression-and-why-its-not-a-faith-problem",
+            "destination": "https://pastorsconnectionnetwork.com/writing/11-what-pastors-need-to-know-about-depression-and-why-its-not-a-faith-problem",
+            "permanent": true
+        },
+        {
+            "source": "/writing/12-anxiety-perfectionism-and-the-pastor-breaking-the-cycle",
+            "destination": "https://pastorsconnectionnetwork.com/writing/12-anxiety-perfectionism-and-the-pastor-breaking-the-cycle",
+            "permanent": true
+        },
+        {
+            "source": "/writing/13-you-are-not-your-churchs-attendance-numbers",
+            "destination": "https://pastorsconnectionnetwork.com/writing/13-you-are-not-your-churchs-attendance-numbers",
+            "permanent": true
+        },
+        {
+            "source": "/writing/14-how-to-preach-the-same-gospel-to-people-who-are-nothing-alike",
+            "destination": "https://pastorsconnectionnetwork.com/writing/14-how-to-preach-the-same-gospel-to-people-who-are-nothing-alike",
+            "permanent": true
+        },
+        {
+            "source": "/writing/15-when-your-preaching-gets-stale-and-what-to-do-about-it",
+            "destination": "https://pastorsconnectionnetwork.com/writing/15-when-your-preaching-gets-stale-and-what-to-do-about-it",
+            "permanent": true
+        },
+        {
+            "source": "/writing/16-five-sermon-habits-that-are-slowly-shrinking-your-congregations-faith",
+            "destination": "https://pastorsconnectionnetwork.com/writing/16-five-sermon-habits-that-are-slowly-shrinking-your-congregations-faith",
+            "permanent": true
+        },
+        {
+            "source": "/writing/17-preaching-to-the-room-thats-not-there-yet-how-to-reach-the-unchurched-through-your-sunday-message",
+            "destination": "https://pastorsconnectionnetwork.com/writing/17-preaching-to-the-room-thats-not-there-yet-how-to-reach-the-unchurched-through-your-sunday-message",
+            "permanent": true
+        },
+        {
+            "source": "/writing/18-80-of-churches-are-plateaued-or-declining-are-you-one-of-them",
+            "destination": "https://pastorsconnectionnetwork.com/writing/18-80-of-churches-are-plateaued-or-declining-are-you-one-of-them",
+            "permanent": true
+        },
+        {
+            "source": "/writing/19-what-small-churches-get-right-that-large-churches-rarely-talk-about",
+            "destination": "https://pastorsconnectionnetwork.com/writing/19-what-small-churches-get-right-that-large-churches-rarely-talk-about",
+            "permanent": true
+        },
+        {
+            "source": "/writing/2-always-resolving-the-tension",
+            "destination": "https://pastorsconnectionnetwork.com/writing/2-always-resolving-the-tension",
+            "permanent": true
+        },
+        {
+            "source": "/writing/2-confusing-availability-with-pastoral-care",
+            "destination": "https://pastorsconnectionnetwork.com/writing/2-confusing-availability-with-pastoral-care",
+            "permanent": true
+        },
+        {
+            "source": "/writing/2-what-a-sabbatical-is-and-why-your-church-should-require-one",
+            "destination": "https://pastorsconnectionnetwork.com/writing/2-what-a-sabbatical-is-and-why-your-church-should-require-one",
+            "permanent": true
+        },
+        {
+            "source": "/writing/20-the-metrics-that-actually-tell-you-if-your-church-is-healthy",
+            "destination": "https://pastorsconnectionnetwork.com/writing/20-the-metrics-that-actually-tell-you-if-your-church-is-healthy",
+            "permanent": true
+        },
+        {
+            "source": "/writing/21-when-is-it-time-to-revitalize-and-when-is-it-time-to-replant",
+            "destination": "https://pastorsconnectionnetwork.com/writing/21-when-is-it-time-to-revitalize-and-when-is-it-time-to-replant",
+            "permanent": true
+        },
+        {
+            "source": "/writing/22-how-to-lead-a-church-through-a-season-of-decline-without-losing-hope",
+            "destination": "https://pastorsconnectionnetwork.com/writing/22-how-to-lead-a-church-through-a-season-of-decline-without-losing-hope",
+            "permanent": true
+        },
+        {
+            "source": "/writing/23-how-to-give-feedback-that-actually-changes-behavior",
+            "destination": "https://pastorsconnectionnetwork.com/writing/23-how-to-give-feedback-that-actually-changes-behavior",
+            "permanent": true
+        },
+        {
+            "source": "/writing/24-the-most-dangerous-person-on-a-church-staff-it-might-surprise-you",
+            "destination": "https://pastorsconnectionnetwork.com/writing/24-the-most-dangerous-person-on-a-church-staff-it-might-surprise-you",
+            "permanent": true
+        },
+        {
+            "source": "/writing/25-when-to-fire-someone-and-how-to-do-it-with-integrity",
+            "destination": "https://pastorsconnectionnetwork.com/writing/25-when-to-fire-someone-and-how-to-do-it-with-integrity",
+            "permanent": true
+        },
+        {
+            "source": "/writing/26-building-a-staff-culture-where-people-dont-burn-out-and-leave",
+            "destination": "https://pastorsconnectionnetwork.com/writing/26-building-a-staff-culture-where-people-dont-burn-out-and-leave",
+            "permanent": true
+        },
+        {
+            "source": "/writing/27-what-gen-z-actually-wants-from-a-church-and-why-its-not-what-you-think",
+            "destination": "https://pastorsconnectionnetwork.com/writing/27-what-gen-z-actually-wants-from-a-church-and-why-its-not-what-you-think",
+            "permanent": true
+        },
+        {
+            "source": "/writing/28-why-young-adults-are-coming-back-to-church-and-how-not-to-lose-them-again",
+            "destination": "https://pastorsconnectionnetwork.com/writing/28-why-young-adults-are-coming-back-to-church-and-how-not-to-lose-them-again",
+            "permanent": true
+        },
+        {
+            "source": "/writing/29-what-the-scandals-in-the-church-are-teaching-us-about-accountability",
+            "destination": "https://pastorsconnectionnetwork.com/writing/29-what-the-scandals-in-the-church-are-teaching-us-about-accountability",
+            "permanent": true
+        },
+        {
+            "source": "/writing/3-how-to-return-to-ministry-after-burning-out",
+            "destination": "https://pastorsconnectionnetwork.com/writing/3-how-to-return-to-ministry-after-burning-out",
+            "permanent": true
+        },
+        {
+            "source": "/writing/3-illustrating-everything-with-success-stories",
+            "destination": "https://pastorsconnectionnetwork.com/writing/3-illustrating-everything-with-success-stories",
+            "permanent": true
+        },
+        {
+            "source": "/writing/3-treating-sunday-as-the-only-metric",
+            "destination": "https://pastorsconnectionnetwork.com/writing/3-treating-sunday-as-the-only-metric",
+            "permanent": true
+        },
+        {
+            "source": "/writing/30-how-to-talk-about-political-divisiveness-from-the-pulpit-without-destroying-your-church",
+            "destination": "https://pastorsconnectionnetwork.com/writing/30-how-to-talk-about-political-divisiveness-from-the-pulpit-without-destroying-your-church",
+            "permanent": true
+        },
+        {
+            "source": "/writing/31-when-a-church-split-happens-surviving-it-learning-from-it-moving-forward",
+            "destination": "https://pastorsconnectionnetwork.com/writing/31-when-a-church-split-happens-surviving-it-learning-from-it-moving-forward",
+            "permanent": true
+        },
+        {
+            "source": "/writing/32-reformed-and-charismatic-pastors-at-the-same-table-what-happened-when-we-tried",
+            "destination": "https://pastorsconnectionnetwork.com/writing/32-reformed-and-charismatic-pastors-at-the-same-table-what-happened-when-we-tried",
+            "permanent": true
+        },
+        {
+            "source": "/writing/33-the-case-for-doing-city-wide-church-together-at-least-once-a-year",
+            "destination": "https://pastorsconnectionnetwork.com/writing/33-the-case-for-doing-city-wide-church-together-at-least-once-a-year",
+            "permanent": true
+        },
+        {
+            "source": "/writing/34-what-a-healthy-pastor-referral-network-actually-looks-like",
+            "destination": "https://pastorsconnectionnetwork.com/writing/34-what-a-healthy-pastor-referral-network-actually-looks-like",
+            "permanent": true
+        },
+        {
+            "source": "/writing/35-how-three-small-churches-co-planted-one-new-congregation",
+            "destination": "https://pastorsconnectionnetwork.com/writing/35-how-three-small-churches-co-planted-one-new-congregation",
+            "permanent": true
+        },
+        {
+            "source": "/writing/36-before-you-launch-that-ministry-ask-if-another-church-in-town-is-already-doing-it",
+            "destination": "https://pastorsconnectionnetwork.com/writing/36-before-you-launch-that-ministry-ask-if-another-church-in-town-is-already-doing-it",
+            "permanent": true
+        },
+        {
+            "source": "/writing/37-what-predominantly-white-churches-get-wrong-when-they-talk-about-diversity",
+            "destination": "https://pastorsconnectionnetwork.com/writing/37-what-predominantly-white-churches-get-wrong-when-they-talk-about-diversity",
+            "permanent": true
+        },
+        {
+            "source": "/writing/39-church-closures-are-outpacing-church-plants-3-to-1-what-that-means-for-the-mission",
+            "destination": "https://pastorsconnectionnetwork.com/writing/39-church-closures-are-outpacing-church-plants-3-to-1-what-that-means-for-the-mission",
+            "permanent": true
+        },
+        {
+            "source": "/writing/4-navigating-conflict-alone",
+            "destination": "https://pastorsconnectionnetwork.com/writing/4-navigating-conflict-alone",
+            "permanent": true
+        },
+        {
+            "source": "/writing/4-never-preaching-anything-that-costs-you-something",
+            "destination": "https://pastorsconnectionnetwork.com/writing/4-never-preaching-anything-that-costs-you-something",
+            "permanent": true
+        },
+        {
+            "source": "/writing/4-the-difference-between-being-tired-and-being-done",
+            "destination": "https://pastorsconnectionnetwork.com/writing/4-the-difference-between-being-tired-and-being-done",
+            "permanent": true
+        },
+        {
+            "source": "/writing/40-how-to-talk-about-global-missions-in-a-way-that-actually-moves-your-congregation",
+            "destination": "https://pastorsconnectionnetwork.com/writing/40-how-to-talk-about-global-missions-in-a-way-that-actually-moves-your-congregation",
+            "permanent": true
+        },
+        {
+            "source": "/writing/41-when-short-term-mission-trips-help-and-when-they-hurt",
+            "destination": "https://pastorsconnectionnetwork.com/writing/41-when-short-term-mission-trips-help-and-when-they-hurt",
+            "permanent": true
+        },
+        {
+            "source": "/writing/42-the-unreached-people-groups-closest-to-you-that-youve-never-considered",
+            "destination": "https://pastorsconnectionnetwork.com/writing/42-the-unreached-people-groups-closest-to-you-that-youve-never-considered",
+            "permanent": true
+        },
+        {
+            "source": "/writing/43-how-national-pastors-are-redefining-what-it-means-to-be-a-missionary",
+            "destination": "https://pastorsconnectionnetwork.com/writing/43-how-national-pastors-are-redefining-what-it-means-to-be-a-missionary",
+            "permanent": true
+        },
+        {
+            "source": "/writing/44-what-the-church-in-the-global-south-can-teach-the-church-in-america-about-suffering",
+            "destination": "https://pastorsconnectionnetwork.com/writing/44-what-the-church-in-the-global-south-can-teach-the-church-in-america-about-suffering",
+            "permanent": true
+        },
+        {
+            "source": "/writing/45-building-a-mission-sending-culture-in-a-church-thats-never-sent-anyone",
+            "destination": "https://pastorsconnectionnetwork.com/writing/45-building-a-mission-sending-culture-in-a-church-thats-never-sent-anyone",
+            "permanent": true
+        },
+        {
+            "source": "/writing/46-how-to-pastor-a-congregation-that-is-politically-divided-and-keep-the-gospel-central",
+            "destination": "https://pastorsconnectionnetwork.com/writing/46-how-to-pastor-a-congregation-that-is-politically-divided-and-keep-the-gospel-central",
+            "permanent": true
+        },
+        {
+            "source": "/writing/47-engaging-the-nones-what-research-tells-us-about-reaching-the-religiously-unaffiliated",
+            "destination": "https://pastorsconnectionnetwork.com/writing/47-engaging-the-nones-what-research-tells-us-about-reaching-the-religiously-unaffiliated",
+            "permanent": true
+        },
+        {
+            "source": "/writing/48-ai-authenticity-and-the-pastor-what-artificial-intelligence-means-for-ministry",
+            "destination": "https://pastorsconnectionnetwork.com/writing/48-ai-authenticity-and-the-pastor-what-artificial-intelligence-means-for-ministry",
+            "permanent": true
+        },
+        {
+            "source": "/writing/49-when-the-church-becomes-a-political-brand-and-how-to-step-back-from-the-edge",
+            "destination": "https://pastorsconnectionnetwork.com/writing/49-when-the-church-becomes-a-political-brand-and-how-to-step-back-from-the-edge",
+            "permanent": true
+        },
+        {
+            "source": "/writing/5-ending-every-sermon-with-the-same-application-structure",
+            "destination": "https://pastorsconnectionnetwork.com/writing/5-ending-every-sermon-with-the-same-application-structure",
+            "permanent": true
+        },
+        {
+            "source": "/writing/5-when-the-man-in-the-pulpit-is-falling-apart",
+            "destination": "https://pastorsconnectionnetwork.com/writing/5-when-the-man-in-the-pulpit-is-falling-apart",
+            "permanent": true
+        },
+        {
+            "source": "/writing/50-how-to-lead-when-trust-in-institutions-including-the-church-is-at-an-all-time-low",
+            "destination": "https://pastorsconnectionnetwork.com/writing/50-how-to-lead-when-trust-in-institutions-including-the-church-is-at-an-all-time-low",
+            "permanent": true
+        },
+        {
+            "source": "/writing/7-protecting-your-marriage-when-ministry-demands-everything",
+            "destination": "https://pastorsconnectionnetwork.com/writing/7-protecting-your-marriage-when-ministry-demands-everything",
+            "permanent": true
+        },
+        {
+            "source": "/writing/8-the-pastors-kids-are-watching-what-are-they-seeing",
+            "destination": "https://pastorsconnectionnetwork.com/writing/8-the-pastors-kids-are-watching-what-are-they-seeing",
+            "permanent": true
+        },
+        {
+            "source": "/writing/9-how-to-be-present-at-home-when-your-mind-never-leaves-the-church",
+            "destination": "https://pastorsconnectionnetwork.com/writing/9-how-to-be-present-at-home-when-your-mind-never-leaves-the-church",
+            "permanent": true
+        },
+        {
+            "source": "/writing/bible-submission-marriage",
+            "destination": "/writing/what-the-bible-says-about-submission",
+            "permanent": true
+        },
+        {
+            "source": "/writing/emotional-labor-marriage",
+            "destination": "/writing/emotional-labor-in-marriage",
+            "permanent": true
+        },
+        {
+            "source": "/writing/fighting-fair-is-not-enough",
+            "destination": "/writing/healthy-conflict-marriage",
+            "permanent": true
+        },
+        {
+            "source": "/writing/forgiveness-without-pretending",
+            "destination": "/writing/forgiveness-in-marriage",
+            "permanent": true
+        },
+        {
+            "source": "/writing/marriage-after-kids-arrive",
+            "destination": "/writing/emotional-labor-in-marriage",
+            "permanent": true
+        },
+        {
+            "source": "/writing/marriage-empty-nest",
+            "destination": "/writing/when-you-married-someone-you-no-longer-recognize",
+            "permanent": true
+        },
+        {
+            "source": "/writing/marriage-fighting-fair",
+            "destination": "/writing/healthy-conflict-marriage",
+            "permanent": true
+        },
+        {
+            "source": "/writing/marriage-forgiveness-and-repair",
+            "destination": "/writing/forgiveness-in-marriage",
+            "permanent": true
+        },
+        {
+            "source": "/writing/marriage-leading-and-serving-together",
+            "destination": "/writing/what-the-bible-says-about-submission",
+            "permanent": true
+        },
+        {
+            "source": "/writing/married-someone-no-longer-recognize",
+            "destination": "/writing/when-you-married-someone-you-no-longer-recognize",
+            "permanent": true
+        },
+        {
+            "source": "/writing/resentment-marriage-telling-you",
+            "destination": "/writing/the-resentment-in-your-marriage",
+            "permanent": true
+        },
+        {
+            "source": "/writing/slow-drift-marriage",
+            "destination": "/writing/the-slow-drift-that-ends-marriages",
+            "permanent": true
+        },
+        {
+            "source": "/writing/the-covenant-you-didnt-understand",
+            "destination": "/writing/covenant-vs-contract-what-marriage-is",
+            "permanent": true
+        },
+        {
+            "source": "/writing/when-marriage-becomes-a-mirror",
+            "destination": "/writing/when-you-married-someone-you-no-longer-recognize",
             "permanent": true
         }
     ],

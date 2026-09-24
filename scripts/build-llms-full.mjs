@@ -55,8 +55,19 @@ const SECTIONS = [
       // The pastor-trade essays moved to PCN (content/pcn-moved.json) are no
       // longer this site's; their URLs redirect there.
       const moved = new Set(readJson("content/pcn-moved.json")?.slugs || []);
+      // Rewritten essays (scripts/apply-rewrites.mjs) list under their new title
+      // and deck; essays merged into them are gone (their URLs redirect).
+      const rw = readJson("content/rewrites.generated.json") || { rewritten: [], merged: {} };
+      const rewritten = new Set(rw.rewritten || []);
+      for (const slug of Object.keys(rw.merged || {})) moved.add(slug);
+      for (const r of readJson("vercel.json")?.redirects || []) {
+        const m = String(r.source || "").match(/^\/writing\/([a-z0-9][a-z0-9-]*)$/);
+        if (m) moved.add(m[1]); // the address redirects elsewhere
+      }
+      const lib = new Map((readJson("content/static-library.generated.json") || []).map((r) => [r.slug, r]));
       return posts
         .filter((p) => p && p.slug && p.title && p.published !== false && !moved.has(p.slug))
+        .map((p) => (rewritten.has(p.slug) && lib.get(p.slug) ? { ...p, title: lib.get(p.slug).title, excerpt: lib.get(p.slug).excerpt } : p))
         .map((p) => entryLine(p.title, `${SITE}/writing/${p.slug}`, p.excerpt || p.summary || p.subtitle));
     },
   },

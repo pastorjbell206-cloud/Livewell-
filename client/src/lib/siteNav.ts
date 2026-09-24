@@ -60,6 +60,11 @@ export const SITE_NAV_GROUPS: SiteNavGroup[] = [
       { label: "When faith has questions", href: "/writing?track=doubt", primary: true },
       { label: "Justice", href: "/justice", primary: true },
       { label: "The church and power", href: "/disruption", primary: true },
+      // The web companion to When God Bless America: eleven essays and the
+      // scorecard. Built and indexed, but no menu reached it until Sept 2026.
+      { label: "Christ and the nation", href: "/nation", primary: true },
+      // Jeremiah 29 and 1 Peter for a church displaced; finished, never linked.
+      { label: "Living as exiles", href: "/exile" },
       // The short pieces (Facebook-length). Footer tail until the posts are
       // imported; a header link to an empty room helps nobody.
       { label: "Notes", href: "/notes" },
@@ -99,7 +104,6 @@ export const SITE_NAV_GROUPS: SiteNavGroup[] = [
       { label: "Questions people ask", href: "/faq", primary: true },
       { label: "Test the case", href: "/tools/test-the-case", primary: true },
       { label: "Which lens are you reading through?", href: "/tools/which-lens", primary: true },
-      { label: "The Hard Issues Series", href: "/resources/hard-issues-series" },
       { label: "Essays for skeptics and seekers", href: "/honest-questions" },
       { label: "Theology quiz", href: "/tools/theology-quiz" },
     ],

@@ -49,7 +49,8 @@ const setFrom = (rel, name) => {
 // The essays moved to PCN (content/pcn-moved.json) redirect away and are
 // deliberately left out of the Library, like takedowns and hidden slugs.
 const movedToPcn = JSON.parse(fs.readFileSync(path.join(ROOT, "content/pcn-moved.json"), "utf8")).slugs ?? [];
-const excluded = new Set([...setFrom("api/index.ts", "TAKEN_DOWN"), ...setFrom("client/src/lib/hiddenSlugs.ts", "HIDDEN_SLUGS"), ...movedToPcn]);
+const { redirectedEssaySlugs } = await import("./redirected-essays.mjs");
+const excluded = new Set([...setFrom("api/index.ts", "TAKEN_DOWN"), ...setFrom("client/src/lib/hiddenSlugs.ts", "HIDDEN_SLUGS"), ...movedToPcn, ...redirectedEssaySlugs(ROOT)]);
 for (const r of staticLib) {
   if (!r?.slug || r.published === false || r.published === 0 || excluded.has(r.slug)) continue;
   if (!essayHrefs.has(`/writing/${r.slug}`)) fail(`essay missing from the catalogue: ${r.slug}`);

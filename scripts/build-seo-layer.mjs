@@ -202,11 +202,16 @@ export function buildLayer(records, overrides = {}) {
   for (const r of records) {
     if (!r || !r.slug || r.published === false) continue;
     const o = overrides[r.slug] || {};
-    const metaDescription = o.metaDescription ? toPlain(o.metaDescription) : deriveDescription(r);
-    const qa = o.question && o.answer ? { question: toPlain(o.question), answer: toPlain(o.answer) } : findQuestion(r);
+    // A rewrite (content/rewrites/<slug>.md, applied by apply-rewrites.mjs) is
+    // newer than any hand override written for the old text, so its own
+    // description wins and the old question/answer override no longer applies.
+    const rewritten = Boolean(r.rewrittenAt);
+    const handDescription = rewritten ? r.metaDescription || o.metaDescription : o.metaDescription || r.metaDescription;
+    const metaDescription = handDescription ? toPlain(handDescription) : deriveDescription(r);
+    const qa = !rewritten && o.question && o.answer ? { question: toPlain(o.question), answer: toPlain(o.answer) } : findQuestion(r);
     const entry = {
       metaDescription,
-      source: o.metaDescription ? "hand" : "derived",
+      source: rewritten && r.metaDescription ? "rewrite" : o.metaDescription ? "hand" : "derived",
       grade: readingGrade(metaDescription),
       excerptGrade: readingGrade(r.excerpt || ""),
     };

@@ -50,18 +50,13 @@
     },
     {
       "kind": "book",
-      "heading": "Then read the book, free",
-      "note": "The Captive Church follows the one temptation Jesus refused in the wilderness, and it names the trade on both sides. The flag and the cause are the same exchange, wearing different clothes. Read it free.",
+      "heading": "Then read the book",
+      "note": "The book turns the same question on every reader: each generation reads the Bible through its own politics, and ours is no exception, on either side.",
       "items": [
         {
-          "label": "The Captive Church — read free",
-          "href": "/read/the-captive-church",
-          "blurb": "Ten chapters on the church's captivity to power, on the left and the right alike. The complete book, free."
-        },
-        {
-          "label": "Find James's books in the bookstore",
-          "href": "/books",
-          "blurb": "Print and ebook editions of the full library."
+          "label": "The Monster in the Mirror",
+          "href": "/books/the-monster-in-the-mirror",
+          "blurb": "Why every generation gets the Bible wrong, why ours is no different, and what it takes to see our own blind spots."
         }
       ]
     }
