@@ -475,3 +475,23 @@ darkness with a friend, pastor, or doctor added.
 - Psalm 24: Mishnah Tamid and the Septuagint heading (first day of the week).
 - Psalm 29: Ugarit found in 1928, tablets in 1929.
 - Psalm 40:6: the Septuagint's "a body You prepared".
+
+## Psalms 51–100
+
+**Corrected.** Psalm 51: bara with God as subject "in the simple stem".
+Psalms 54, 71, 86: word notes no longer built on etymology (ezer, tiqvah,
+rachum). Psalm 56, 69: the Davidic collections described accurately. Psalm
+68: Zalmon's location uncertain. Psalm 72: Hammurabi's epilogue. Psalm 76,
+81, 97, 100: counts and transliteration. Psalm 82: Deuteronomy 32:8's "sons of
+God" (Dead Sea Scrolls and Greek) against "sons of Israel" (traditional
+Hebrew). Psalm 83: Judges 5's own account of the storm. Psalm 88: a path to
+help added.
+
+**To double-check.**
+- Psalm 88: prayed on Good Friday and Holy Saturday (traditional Matins).
+- Psalm 96: Justin Martyr's "reigns from the tree".
+- Psalms 68, 72, 80: the Targum readings.
+- Psalms 81, 92-94: the daily psalms of Mishnah Tamid 7:4.
+- Psalm 74: synagogues in the land before the last centuries BC.
+- Psalm 91: 11Q11.
+- Psalm 56: the Septuagint's rendering of Miktam.
