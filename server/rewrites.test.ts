@@ -3,7 +3,7 @@ import { readFileSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 // @ts-expect-error — plain ESM script, no types.
-import { parseRewrite, loadRewrites, loadAllRewrites, applyToLibrary, applyToRedirects } from "../scripts/apply-rewrites.mjs";
+import { parseRewrite, loadRewrites, loadAllRewrites, loadRetirements, applyToLibrary, applyToRedirects } from "../scripts/apply-rewrites.mjs";
 
 // The rewrites James asked for (docs/rewrites/STANDARD.md). The standard's
 // judgment calls (depth, fairness, voice) are read, not tested; what can be
@@ -51,6 +51,21 @@ describe("the rewrite plumbing", () => {
       { source: "/writing/b", destination: "/writing/a", permanent: true },
     ]);
   });
+});
+
+describe("retired duplicates", () => {
+  const retire = loadRetirements(repoRoot);
+  const lib = readJson("content/static-library.generated.json");
+  const slugs = new Set(lib.map((r: any) => r.slug));
+  const redirects: any[] = readJson("vercel.json").redirects;
+  for (const [from, to] of Object.entries(retire)) {
+    it(`${from} is retired into ${to}`, () => {
+      expect(slugs.has(from), `${from} still in the library`).toBe(false);
+      expect(slugs.has(to as string), `${to} is not in the library`).toBe(true);
+      expect(redirects.some((r) => r.source === `/writing/${from}` && r.destination === `/writing/${to}`)).toBe(true);
+      expect(readJson("content/rewrites.generated.json").merged[from]).toBe(to);
+    });
+  }
 });
 
 describe("every rewrite meets the checkable parts of the standard", () => {

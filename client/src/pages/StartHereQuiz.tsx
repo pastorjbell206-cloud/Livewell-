@@ -51,8 +51,8 @@ export const READING_PATHS = {
   "marriage-crisis-articles": {
     title: "Marriage Under Strain",
     articles: [
-      { title: "When Romance Left Covenant Remains", slug: "when-romance-left-covenant-remains" },
-      { title: "What the Resentment in Your Marriage Is Telling You", slug: "the-resentment-in-your-marriage" },
+      { title: "What Is Covenant Marriage? Why Marriage Is Not a Contract", slug: "covenant-vs-contract-what-marriage-is" },
+      { title: "Resentment in Marriage and How to Stop Resenting Your Spouse", slug: "the-resentment-in-your-marriage" },
       { title: "Rest, Ambition, and the Idol of Success", slug: "rest-ambition-and-the-idol-of-success" }
     ],
     book: "What If We're Wrong?"
@@ -60,9 +60,9 @@ export const READING_PATHS = {
   "marriage-searching-articles": {
     title: "Building Covenant Strength",
     articles: [
-      { title: "When Romance Left Covenant Remains", slug: "when-romance-left-covenant-remains" },
-      { title: "What Are You Really Promising in Your Marriage Vows?", slug: "the-covenant-you-didnt-understand" },
-      { title: "Why Do Married Couples Slowly Drift Apart?", slug: "the-slow-drift-that-ends-marriages" }
+      { title: "What Is Covenant Marriage? Why Marriage Is Not a Contract", slug: "covenant-vs-contract-what-marriage-is" },
+      { title: "Why Married Couples Drift Apart and End Up Feeling Like Roommates", slug: "the-slow-drift-that-ends-marriages" },
+      { title: "How to Forgive Your Spouse, and Why Forgiveness Isn't Trust", slug: "forgiveness-in-marriage" }
     ],
     book: "The Monster in the Mirror"
   },
@@ -70,7 +70,7 @@ export const READING_PATHS = {
     title: "Parenting Through Uncertainty",
     articles: [
       { title: "When Your Teenager Says They Don't Believe Anymore", slug: "teenager-losing-faith" },
-      { title: "How to Talk to Your Kids About Faith When You're Not Sure Yourself", slug: "how-to-talk-kids-faith-doubt" },
+      { title: "How to Raise Kids in the Faith When You Have Doubts Yourself", slug: "how-to-talk-kids-faith-doubt" },
       { title: "Rest, Ambition, and the Idol of Success", slug: "rest-ambition-and-the-idol-of-success" }
     ],
     book: "When God Bless America Replaces Thy Kingdom Come"
@@ -97,7 +97,7 @@ export const READING_PATHS = {
     title: "Essential LiveWell Collection",
     articles: [
       { title: "What Comes After Deconstruction of Your Faith?", slug: "excavation-not-demolition" },
-      { title: "When Romance Left Covenant Remains", slug: "when-romance-left-covenant-remains" },
+      { title: "What Is Covenant Marriage? Why Marriage Is Not a Contract", slug: "covenant-vs-contract-what-marriage-is" },
       { title: "Why a Frightened Church Wants a King", slug: "strongman-theology" }
     ],
     book: "The Monster in the Mirror"

@@ -6,13 +6,13 @@ Search engines and answer engines see a second layer beside every essay: a meta 
 
 | Measure | Value |
 |---|---|
-| Essays with a description | 653 |
-| Hand-written descriptions | 22 |
-| Derived from the essay's own sentences | 631 |
-| Essays with question-and-answer data | 101 |
+| Essays with a description | 643 |
+| Hand-written descriptions | 20 |
+| Derived from the essay's own sentences | 623 |
+| Essays with question-and-answer data | 102 |
 | Average reading grade, descriptions | 8.0 |
 | Average reading grade, original standfirsts | 9.6 |
-| Derived descriptions at grade 12 or above (hand-rewrite queue) | 81 |
+| Derived descriptions at grade 12 or above (hand-rewrite queue) | 79 |
 
 ## Hand-rewrite queue
 
@@ -28,7 +28,6 @@ Derived descriptions that still read at college level. Each is true to the essay
 | how-american-christianity-became-american | 17.8 | American Christianity is not European Christianity with an American accent. |
 | 26-building-a-staff-culture-where-people-dont-burn-out-and-leave | 16.6 | The cost of staff turnover in ministry is enormous and systematically underestimated. |
 | talk-global-missions-moves-congregation | 16.6 | The missions presentation is a reliable feature of the American evangelical calendar. |
-| when-politics-replaced-theology | 16.1 | The story of how American evangelicalism traded its prophetic voice for political power is not the story most evangelicals have been told. |
 | scandals-teaching-accountability | 15.9 | The names accumulate. Pastors of megachurches. Founders of parachurch organizations. Denominational leaders with decades of respected service. |
 | you-are-not-the-exception | 15.8 | Every generation believes it is the exception to the rules of biblical interpretation. |
 | toxic-masculinity-in-the-pulpit | 15.7 | The church that confuses aggression with authority and domination with leadership has not recovered biblical manhood. |
@@ -89,7 +88,6 @@ Derived descriptions that still read at college level. Each is true to the essay
 | give-feedback-changes-behavior | 12.3 | Most feedback conversations accomplish one thing: they make the person giving the feedback feel that they have discharged an obligation. |
 | hard-cases-abortion-debate | 12.3 | The people who make abortion debates most uncomfortable are not the ideologues on either side. |
 | mobilizing-church-missions-small-budget | 12.3 | The assumption lives in almost every small church I have encountered: that world missions is something larger churches do. |
-| not-persecuted-seduced-crisis-american-christianity | 12.3 | The crisis facing American Christianity is not primarily numerical. It is not about attendance decline or shrinking affiliation, though both are real. |
 | prophetic-pastor | 12.3 | And when they talk about pastoral ministry, they usually mean someone who comes to the bedside, who holds the grieving, who offers presence in the dark. |
 | where-church-was-silent | 12.3 | The church in America has a history that is not primarily the history of courage and faithfulness, though it contains that. |
 | principalities-and-powers-the-bibles-language-for-systems | 12.3 | Paul had a vocabulary for systemic evil two thousand years before the word systemic existed. |

@@ -33,6 +33,7 @@ import ArticleNextSteps, { isArticleOnPath } from "@/components/ArticleNextSteps
 import { SubstackSeriesNote } from "@/components/SubstackSeriesNote";
 import { ReplyToEssay } from "@/components/ReplyToEssay";
 import { splitForRelated } from "@/lib/essay-split";
+import MERGED_ESSAYS from "@/data/merged-essays.json";
 import { EssayArt } from "@/components/EssayArt";
 import { trpc } from "@/lib/trpc";
 import { fetchJson } from "@/lib/fetch-json";
@@ -448,6 +449,13 @@ export default function ArticleDetail() {
   const { slug } = useParams<{ slug: string }>();
   const bodyRef = useRef<HTMLDivElement>(null);
   const [, navigate] = useLocation();
+  // An essay merged into a rewrite (scripts/apply-rewrites.mjs) redirects on the
+  // server, but an in-app link is routed here without a request. Send the
+  // reader on to the essay it became, replacing the history entry.
+  const mergedInto = slug ? (MERGED_ESSAYS as Record<string, string>)[slug] : undefined;
+  useEffect(() => {
+    if (mergedInto) navigate(`/writing/${mergedInto}`, { replace: true });
+  }, [mergedInto, navigate]);
   // Static first. The 678 library essays ship as /essays/<slug>.json (built by
   // scripts/build-public-essays.mjs), so a library essay paints from the CDN
   // without waiting on the API and never shows "didn't load" because a

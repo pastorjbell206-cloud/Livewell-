@@ -1389,16 +1389,6 @@
    "answer": "The New Testament has no category for the solitary Christian. Not because the writers were authoritarian, but because they could not conceive of a hand that had decided it no longer needed the body. A gentle argument for why faith was built for company."
   }
  },
- "done-with-church-not-jesus": {
-  "metaDescription": "Millions have walked out of church without walking away from Jesus. That is not a contradiction to fix. It is a wound to name, and a question to ask.",
-  "source": "hand",
-  "grade": 4,
-  "excerptGrade": 6.1,
-  "qa": {
-   "question": "What If You're Done With Church but Not With Jesus?",
-   "answer": "Millions of Americans have walked out of church without walking away from Jesus. That is not a contradiction to be corrected. It is a wound to be named, and a question that will not stay quiet."
-  }
- },
  "how-to-find-a-church-worth-joining": {
   "metaDescription": "If you are ready to try again but afraid of getting hurt again, you need more than a vibe check.",
   "source": "derived",
@@ -1420,10 +1410,14 @@
   }
  },
  "when-the-church-is-what-hurt-you": {
-  "metaDescription": "Church hurt is real, and naming it is not bitterness. A pastor on the wound the institution causes, and the God who is furious about it.",
-  "source": "hand",
-  "grade": 5.8,
-  "excerptGrade": 7.9
+  "metaDescription": "Hurt by a church? Why betrayal by a congregation cuts so deep, what Scripture says about it, forgiveness versus reconciliation, and whether to go back.",
+  "source": "rewrite",
+  "grade": 8.2,
+  "excerptGrade": 11.2,
+  "qa": {
+   "question": "Is It Better to Stay Away From Church?",
+   "answer": "Some who read this have already decided, and their case deserves to be stated as they would state it. They gave years to a congregation, taught the classes and brought the meals, and when the moment came the church took their trust and handed back a rumor. Since leaving they sleep better on Saturday nights, and their children are no longer around the people who did it. They pray more honestly at home than they ever did in the building, they still read Scripture, and they keep a few Christian friends who proved faithful."
+  }
  },
  "1-preaching-to-the-felt-need-without-the-deeper-need": {
   "metaDescription": "Congregations have felt needs, the things they know they want help with. Parenting, marriage, finances, purpose, anxiety.",
@@ -2533,12 +2527,6 @@
   "grade": 7.6,
   "excerptGrade": 7.6
  },
- "not-persecuted-seduced-crisis-american-christianity": {
-  "metaDescription": "The crisis facing American Christianity is not primarily numerical. It is not about attendance decline or shrinking affiliation, though both are real.",
-  "source": "derived",
-  "grade": 12.3,
-  "excerptGrade": 10.8
- },
  "not-your-churchs-attendance-numbers": {
   "metaDescription": "The number comes out after the service. Someone counts the chairs, or the clickers register the bodies, or the app generates the report.",
   "source": "derived",
@@ -3115,12 +3103,6 @@
   "grade": 4.9,
   "excerptGrade": 4.9
  },
- "when-romance-left-covenant-remains": {
-  "metaDescription": "There is a season in a marriage when you look at your spouse across the table and the feeling you have is not warm. Not hostile, just neutral.",
-  "source": "derived",
-  "grade": 5,
-  "excerptGrade": 5
- },
  "when-shepherd-needs-shepherding": {
   "metaDescription": "You were never designed to carry the weight of ministry alone, and the Gospel you preach proves it. You know how to shepherd.",
   "source": "derived",
@@ -3192,12 +3174,6 @@
   "source": "derived",
   "grade": 10,
   "excerptGrade": 10
- },
- "your-marriage-is-ministry-too": {
-  "metaDescription": "There is a quiet tragedy playing out in too many pastors' homes. The congregation is growing. The ministry is bearing fruit.",
-  "source": "derived",
-  "grade": 5.7,
-  "excerptGrade": 5.7
  },
  "apologetics-where-does-morality-come-from": {
   "metaDescription": "Almost everyone believes some things are really wrong and not just unpopular, and that belief is harder to account for than most people admit.",
@@ -3327,41 +3303,21 @@
   "grade": 11.1,
   "excerptGrade": 11.1
  },
- "whose-kingdom-jesus-and-political-power": {
-  "metaDescription": "Before Jesus preached a sermon or healed a single body, he was taken to a high place and shown every kingdom of the world.",
-  "source": "derived",
-  "grade": 11,
-  "excerptGrade": 13.2
- },
  "how-the-religious-right-was-built": {
-  "metaDescription": "The young pastor who shadowed me for a summer assumed the religious right had always existed.",
-  "source": "derived",
-  "grade": 10.6,
-  "excerptGrade": 18.1
- },
- "what-render-unto-caesar-actually-means": {
-  "metaDescription": "The verse most often quoted to keep faith private was spoken to trap a man, and it does the opposite of what we have made it do.",
-  "source": "derived",
-  "grade": 9.4,
-  "excerptGrade": 9.4
- },
- "christendom-is-ending-christianity-is-not": {
-  "metaDescription": "The arrangement that made Christianity the default religion of the West is dying, and many believers are grieving the wrong thing.",
-  "source": "derived",
-  "grade": 11.7,
-  "excerptGrade": 11.7
- },
- "the-early-church-under-rome": {
-  "metaDescription": "For three centuries the church grew with no army, no law, and no protection, and that is the period we should study hardest now.",
-  "source": "derived",
-  "grade": 9.5,
-  "excerptGrade": 9.5
+  "metaDescription": "A fair history of the religious right, from Scopes and Billy Graham to Bob Jones, Roe and the Moral Majority, and the mainline's parallel political turn.",
+  "source": "rewrite",
+  "grade": 15,
+  "excerptGrade": 8.8
  },
  "two-kingdoms-faith-and-state": {
-  "metaDescription": "The old teaching that there are two kingdoms has been used both to silence the church and to baptize the state, and it was meant to do neither.",
-  "source": "derived",
-  "grade": 9.7,
-  "excerptGrade": 9.7
+  "metaDescription": "What render unto Caesar means in Mark 12, how Romans 13 reads with Revelation 13, and how Augustine, Luther, Calvin, Anabaptists and Barmen drew the line.",
+  "source": "rewrite",
+  "grade": 11.8,
+  "excerptGrade": 11.7,
+  "qa": {
+   "question": "What Does Render Unto Caesar Mean for Church and State?",
+   "answer": "Jesus did not split life into two equal drawers, one for God and one for politics. He handed Caesar back a coin and claimed for God everything that bears God's image, which leaves the state real, limited and answerable, and leaves the church neither a throne nor permission to be silent."
+  }
  },
  "the-church-after-cultural-power": {
   "metaDescription": "Now that the church no longer sets the terms of the culture, it has to decide whether it ever knew how to be the church without them.",
@@ -4056,10 +4012,10 @@
   "excerptGrade": 11.7
  },
  "why-people-are-leaving-the-church": {
-  "metaDescription": "The exodus from American churches is not a mystery. In 1999, seven in ten Americans belonged to a church, a synagogue, or a mosque.",
-  "source": "derived",
-  "grade": 8.3,
-  "excerptGrade": 11.1
+  "metaDescription": "Why people are leaving the church: the rise of the nones and dones, what secularization theory missed, and why faith rarely survives leaving the body.",
+  "source": "rewrite",
+  "grade": 14,
+  "excerptGrade": 9.7
  },
  "deconstruction-is-not-destruction": {
   "metaDescription": "What faith deconstruction means, from Derrida to the exvangelical movement, and how to tell dismantling a church culture from abandoning the creed.",
@@ -4070,12 +4026,6 @@
    "question": "What Is Faith Deconstruction, and What Does Exvangelical Mean?",
    "answer": "Deconstruction began as a philosopher's way of reading and became the name for leaving evangelicalism. Much of what exvangelicals left deserved to be left. The real question is whether the digging stops in the rubble or reaches the foundation."
   }
- },
- "the-rise-of-the-nones": {
-  "metaDescription": "They are the fastest-growing 'religious' group in America, and most of them are not atheists.",
-  "source": "derived",
-  "grade": 9.1,
-  "excerptGrade": 13.3
  },
  "purity-culture-and-its-wreckage": {
   "metaDescription": "A generation was taught that their sexual worth was a commodity to be preserved.",
@@ -4088,12 +4038,6 @@
   "source": "derived",
   "grade": 11.7,
   "excerptGrade": 15.6
- },
- "when-politics-replaced-theology": {
-  "metaDescription": "The story of how American evangelicalism traded its prophetic voice for political power is not the story most evangelicals have been told.",
-  "source": "derived",
-  "grade": 16.1,
-  "excerptGrade": 12.2
  },
  "religious-trauma-is-real": {
   "metaDescription": "For millions of people, the most damaging experiences of their lives happened in the name of God.",

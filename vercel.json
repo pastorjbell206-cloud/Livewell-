@@ -384,11 +384,6 @@
             "permanent": true
         },
         {
-            "source": "/writing/your-marriage-is-ministry-too",
-            "destination": "/writing/protecting-your-marriage-from-work",
-            "permanent": true
-        },
-        {
             "source": "/writing/weight-of-what-you-cant-say",
             "destination": "/writing/the-loneliest-room-in-the-church",
             "permanent": true
@@ -1485,6 +1480,16 @@
             "permanent": true
         },
         {
+            "source": "/writing/christendom-is-ending-christianity-is-not",
+            "destination": "/writing/christendom-is-ending",
+            "permanent": true
+        },
+        {
+            "source": "/writing/done-with-church-not-jesus",
+            "destination": "/writing/why-people-are-leaving-the-church",
+            "permanent": true
+        },
+        {
             "source": "/writing/emotional-labor-marriage",
             "destination": "/writing/emotional-labor-in-marriage",
             "permanent": true
@@ -1545,6 +1550,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/not-persecuted-seduced-crisis-american-christianity",
+            "destination": "/writing/the-persecution-we-invented",
+            "permanent": true
+        },
+        {
             "source": "/writing/parenting-discipline-that-forms-the-heart",
             "destination": "/writing/discipline-without-domination",
             "permanent": true
@@ -1590,8 +1600,23 @@
             "permanent": true
         },
         {
+            "source": "/writing/the-early-church-under-rome",
+            "destination": "/writing/witness-without-power",
+            "permanent": true
+        },
+        {
             "source": "/writing/the-father-wound-and-the-god-question",
             "destination": "/writing/what-fatherhood-requires",
+            "permanent": true
+        },
+        {
+            "source": "/writing/the-rise-of-the-nones",
+            "destination": "/writing/why-people-are-leaving-the-church",
+            "permanent": true
+        },
+        {
+            "source": "/writing/what-render-unto-caesar-actually-means",
+            "destination": "/writing/two-kingdoms-faith-and-state",
             "permanent": true
         },
         {
@@ -1600,8 +1625,28 @@
             "permanent": true
         },
         {
+            "source": "/writing/when-politics-replaced-theology",
+            "destination": "/writing/how-the-religious-right-was-built",
+            "permanent": true
+        },
+        {
+            "source": "/writing/when-romance-left-covenant-remains",
+            "destination": "/writing/covenant-vs-contract-what-marriage-is",
+            "permanent": true
+        },
+        {
             "source": "/writing/when-your-child-asks-a-question",
             "destination": "/writing/raising-kids-who-think",
+            "permanent": true
+        },
+        {
+            "source": "/writing/whose-kingdom-jesus-and-political-power",
+            "destination": "/writing/two-kingdoms-faith-and-state",
+            "permanent": true
+        },
+        {
+            "source": "/writing/your-marriage-is-ministry-too",
+            "destination": "/writing/protecting-your-marriage-from-work",
             "permanent": true
         }
     ],
