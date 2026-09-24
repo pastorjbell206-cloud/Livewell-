@@ -1,0 +1,178 @@
+{
+  "note": "The one story of the Bible, in eleven acts. Act ids, titles, and summaries come from /theology/biblical-theology-storyline.json; this file adds each act's dates, its historical world, what to watch for, its people, and a reading path. Taken in order, the paths walk all 1,189 chapters exactly once. Where a book's date is debated, it sits where most readers place it.",
+  "intro": "The Bible is a library of sixty-six books written over more than a thousand years, in three languages, by kings, shepherds, priests, fishermen, and a tax collector. It is also one story. It runs from a good world made by God, through a catastrophe that broke it, through God's long and costly work to mend it by choosing one family, then one nation, then one king, and finally through Jesus of Nazareth, to a new creation where God lives with his people for good.\n\nThe path below walks every chapter of the Bible in the order of that story rather than the order the books sit on the shelf. Where a prophet spoke during a king's reign, or a letter was written during Paul's travels, the path reads them where they happened as closely as the evidence allows. Where dates are debated, the path follows the most common placement, and the book's introduction sets out the positions. You can start anywhere, but if you have never read the Bible before, start at the beginning and read an act at a time.",
+  "acts": [
+    {
+      "id": "creation",
+      "dates": "Before recorded history",
+      "world": "Genesis 1 and 2 were first heard in a world full of other creation stories. Babylon told of the god Marduk splitting the body of the sea goddess Tiamat to make the sky and the earth, and of humans made to do the gods' drudgery. Egypt told of creation rising from primeval waters. Genesis uses some of the same imagery (waters, an expanse, separated realms) and answers those stories point by point: one God, no battle, a good world, and human beings made not as slaves but as God's own image and representatives.\n\nThese chapters are not dated history in the way the reigns of kings are. How they relate to science and to the age of the earth is debated among Christians who share the same confession that God made everything. What every reading agrees on is what the chapters are for: to say who made the world, what it is for, and who we are in it.",
+      "watch": "Watch for what God calls good, and how often. Watch for the pairing of the days, forming realms and then filling them. Notice that human beings are given work, a garden, a partner, and one boundary. And watch the garden itself: a place where God walks with people, which the tabernacle, the temple, and finally the new creation will all echo.",
+      "people": ["God", "Adam", "Eve"],
+      "path": [{ "book": "genesis", "from": 1, "to": 2 }]
+    },
+    {
+      "id": "fall",
+      "dates": "Before recorded history",
+      "world": "The flood story in Genesis 6 to 9 has well-known parallels in Mesopotamia, most famously in the Epic of Gilgamesh and the older Atrahasis epic, where the gods send a flood because humans are too noisy and one man survives in a boat. Genesis tells the story as a moral one: God grieves over violence and corruption, and he saves Noah's family and makes a covenant never to destroy the earth by flood again. The tower of Babel in Genesis 11 recalls the stepped temple towers (ziggurats) of Mesopotamian cities, built to reach toward the heavens.\n\nThe genealogies in these chapters link the first humans to Abraham. How to read their long lifespans and how far the flood extended are questions faithful readers answer differently, and the chapter notes set out the positions.",
+      "watch": "Watch sin spread outward from one act of distrust: from a couple, to a brother's murder, to a violent world, to a whole humanity organized against God at Babel. Watch also for grace at every step: clothing for the exiles from the garden, a mark of protection for Cain, an ark for Noah, a covenant with every living creature. The promise in Genesis 3:15, that the woman's offspring will crush the serpent, is the first glimmer of the rescue that the rest of the Bible unfolds.",
+      "people": ["Adam", "Eve", "Cain", "Abel", "Seth", "Enoch", "Noah"],
+      "path": [{ "book": "genesis", "from": 3, "to": 11 }]
+    },
+    {
+      "id": "abraham",
+      "dates": "Around 2000 to 1600 BC, by most reckonings",
+      "world": "Abraham's family came from Ur, a great city of southern Mesopotamia, and settled first at Haran in the north before God called Abraham on to Canaan. Canaan was a land of small city-states between the empires of Mesopotamia and Egypt, and the patriarchs lived as semi-nomadic herders, moving between wells and pasturelands, buying a burial plot, digging wells, and making treaties with local rulers. Egypt, with its Nile harvests, was the refuge in times of famine, which is how the family ends up there at the close of Genesis.\n\nScholars have compared customs in these chapters with texts from Mesopotamian sites such as Mari and Nuzi, including arrangements for a childless wife to give a servant to her husband and the weight given to a father's deathbed blessing. How closely those parallels date the stories is debated. The book of Job is read here too: its setting, with a wealthy herdsman who offers sacrifices as head of his family, fits the patriarchal world, though when the book was written is uncertain.",
+      "watch": "Watch the promise God makes to Abraham in Genesis 12:1-3 (land, descendants, blessing to all nations) and how every chapter threatens it: barrenness, famine, danger, family betrayal. Watch God keep it anyway, often through the least likely person: the younger son, the deceiver, the brother sold as a slave. And in Job, watch a righteous man's suffering refuse every easy answer.",
+      "people": ["Abraham", "Sarah", "Hagar", "Ishmael", "Lot", "Isaac", "Rebekah", "Esau", "Jacob", "Rachel", "Leah", "Joseph", "Judah", "Job"],
+      "path": [
+        { "book": "genesis", "from": 12, "to": 50 },
+        { "book": "job", "from": 1, "to": 42 }
+      ]
+    },
+    {
+      "id": "exodus",
+      "dates": "The fifteenth or the thirteenth century BC",
+      "world": "The exodus happened in the age of Egypt's New Kingdom, when pharaohs ruled from the Nile delta to Canaan. The Bible doesn't name the pharaoh, and the date is debated. One reading follows 1 Kings 6:1, which places the exodus 480 years before Solomon began the temple, giving a date around 1446 BC. Another points to the store city Rameses in Exodus 1:11 and dates the events to the reign of Ramesses II (1279 to 1213 BC), reading the 480 years as a round figure. The earliest mention of Israel outside the Bible, on the Merneptah Stele (about 1208 BC), shows Israel already a people in Canaan by then.\n\nAt Sinai God gives Israel a covenant and a law. Readers have long compared the laws with other ancient codes, such as the laws of Hammurabi of Babylon (about 1750 BC), and the shape of Deuteronomy with the treaties great kings made with their vassals: a history of what the king has done, stipulations, blessings and curses, and witnesses. The comparison shows both how much Israel's law shared with its world and how different it was, with its concern for the slave, the stranger, the widow, and the orphan, and its insistence that the king himself was under the law.",
+      "watch": "Watch the order: God rescues Israel first and gives the law second. Watch the tabernacle, whose detailed instructions fill much of Exodus, as the heart of the whole book: God coming to live among his people. Watch Leviticus answer the question the tabernacle raises (how can sinful people live near a holy God), Numbers show a generation that won't trust him, and Deuteronomy call the next generation to love the LORD with all their heart.",
+      "people": ["Moses", "Aaron", "Miriam", "Pharaoh", "Jethro", "Joshua", "Caleb", "Korah", "Balaam"],
+      "path": [
+        { "book": "exodus", "from": 1, "to": 40 },
+        { "book": "leviticus", "from": 1, "to": 27 },
+        { "book": "numbers", "from": 1, "to": 36 },
+        { "book": "deuteronomy", "from": 1, "to": 34 },
+        { "book": "psalms", "from": 90, "to": 90 }
+      ]
+    },
+    {
+      "id": "land-judges",
+      "dates": "From the entry into Canaan to about 1050 BC",
+      "world": "Israel entered a land of fortified Canaanite cities in the late Bronze Age. Around 1200 BC the great powers of the eastern Mediterranean went through a collapse: the Hittite empire fell, Egypt's hold on Canaan weakened, and the Philistines, part of the groups Egyptian records call the Sea Peoples, settled on the southern coast with iron weapons and five strong cities. This is the unsettled world of Judges, where no central power keeps order and local tribes face raids from Moabites, Midianites, Ammonites, and Philistines.\n\nThe religion of Canaan is known in detail from texts found at Ugarit (Ras Shamra) on the Syrian coast, discovered in 1928. They describe Baal, the storm god who brings rain and fertility, and the goddess Asherah. For farmers in a land that depends on rain, worshiping Baal felt like common sense, which is why the pull was so strong. How to read the conquest accounts, and the violence in them, is one of the hard questions of these books, and the chapter notes set out how Christians have answered it.",
+      "watch": "Watch the cycle in Judges: the people turn to other gods, fall under oppression, cry out, and God raises up a deliverer, and each round goes lower than the last. Watch the refrain that in those days there was no king in Israel. And watch the small book of Ruth, set in the same dark days, where a foreign widow's loyalty and a kinsman's kindness lead, in its last line, to King David.",
+      "people": ["Joshua", "Rahab", "Caleb", "Deborah", "Gideon", "Jephthah", "Samson", "Delilah", "Naomi", "Ruth", "Boaz"],
+      "path": [
+        { "book": "joshua", "from": 1, "to": 24 },
+        { "book": "judges", "from": 1, "to": 21 },
+        { "book": "ruth", "from": 1, "to": 4 }
+      ]
+    },
+    {
+      "id": "kingdom",
+      "dates": "About 1050 to 586 BC",
+      "world": "Saul becomes king around 1050 BC, David reigns from about 1010 to 970, and Solomon from about 970 to 930. An Aramaic inscription found at Tel Dan in 1993, from the ninth century BC, mentions the house of David, the earliest reference to David outside the Bible. After Solomon the kingdom splits in two: Israel in the north, with its capital eventually at Samaria, and Judah in the south, with Jerusalem and the temple. The Moabite king Mesha's stone inscription (about 840 BC) names Omri, king of Israel.\n\nThen the empires come. Assyria, under kings such as Tiglath-pileser III, Shalmaneser V, and Sargon II, conquers the northern kingdom and destroys Samaria in 722 BC, deporting its people. In 701 BC the Assyrian king Sennacherib besieges Jerusalem; his own annals boast of shutting Hezekiah up like a bird in a cage but never claim to take the city. A century later Babylon under Nebuchadnezzar rises, deports Jerusalem's leaders in 605 and 597 BC, and finally burns the city and the temple in 587 or 586 BC. Chronicles retells this history for the community that came home from exile. The Psalms, Proverbs, Ecclesiastes, and the Song of Songs belong to the life of this kingdom and its worship, gathered and edited over centuries.",
+      "watch": "Watch God's promise to David in 2 Samuel 7: a son on his throne forever. Watch every king after him measured against David and most found wanting. Watch the temple, where God puts his name, and the idolatry that finally empties it. Read the Psalms as the prayer book of this whole story, and Proverbs and Ecclesiastes as the wisdom of a people learning how to live under God, and where life refuses to fit the pattern.",
+      "people": ["Samuel", "Saul", "Jonathan", "David", "Bathsheba", "Nathan", "Solomon", "Rehoboam", "Jeroboam", "Ahab", "Jezebel", "Elijah", "Elisha", "Jehu", "Hezekiah", "Josiah", "Zedekiah"],
+      "path": [
+        { "book": "1-samuel", "from": 1, "to": 31 },
+        { "book": "2-samuel", "from": 1, "to": 24 },
+        { "book": "1-chronicles", "from": 1, "to": 29 },
+        { "book": "psalms", "from": 1, "to": 89 },
+        { "book": "psalms", "from": 91, "to": 136 },
+        { "book": "psalms", "from": 138, "to": 150 },
+        { "book": "1-kings", "from": 1, "to": 11 },
+        { "book": "2-chronicles", "from": 1, "to": 9 },
+        { "book": "proverbs", "from": 1, "to": 31 },
+        { "book": "song-of-solomon", "from": 1, "to": 8 },
+        { "book": "ecclesiastes", "from": 1, "to": 12 },
+        { "book": "1-kings", "from": 12, "to": 22 },
+        { "book": "2-kings", "from": 1, "to": 25 },
+        { "book": "2-chronicles", "from": 10, "to": 36 }
+      ]
+    },
+    {
+      "id": "prophets-exile",
+      "dates": "About 790 to 538 BC",
+      "world": "The prophets spoke during the years the books of Kings describe, so this act steps back and hears their voices across those same centuries. Jonah, Amos, and Hosea spoke in the eighth century BC, when the northern kingdom was prosperous under Jeroboam II and about to fall to Assyria. Isaiah and Micah spoke in Judah through the Assyrian crisis. Nahum announced the fall of Nineveh, which came in 612 BC. Zephaniah, Habakkuk, and Jeremiah spoke as Babylon rose and Judah's last kings played the empires against each other. Letters written on pottery at Lachish, from about 588 BC, record the last days before Babylon's armies arrived.\n\nThen the exile. Judah's leaders, craftsmen, and priests were taken to Babylon, where Ezekiel, himself a deported priest, saw visions of God's glory leaving the temple and one day returning, and where Daniel served in the royal court. Lamentations grieves the fallen city; Obadiah condemns Edom for joining in its plunder. Joel's date is uncertain, and it is read here among the prophets who warn of the day of the LORD. The exile ended when the Persian king Cyrus took Babylon in 539 BC.",
+      "watch": "Watch the prophets as covenant messengers more than fortune tellers: they call Israel back to the covenant, name idolatry and injustice, and warn of judgment. Then watch the hope that rises from the ruins: a new covenant written on the heart (Jeremiah 31), a new heart and a new spirit (Ezekiel 36), a servant who suffers for the sins of many (Isaiah 53), and a son of man who receives an everlasting kingdom (Daniel 7).",
+      "people": ["Jonah", "Amos", "Hosea", "Gomer", "Isaiah", "Hezekiah", "Micah", "Jeremiah", "Baruch", "Nebuchadnezzar", "Ezekiel", "Daniel", "Shadrach", "Meshach", "Abednego", "Cyrus"],
+      "path": [
+        { "book": "jonah", "from": 1, "to": 4 },
+        { "book": "amos", "from": 1, "to": 9 },
+        { "book": "hosea", "from": 1, "to": 14 },
+        { "book": "joel", "from": 1, "to": 3 },
+        { "book": "isaiah", "from": 1, "to": 66 },
+        { "book": "micah", "from": 1, "to": 7 },
+        { "book": "nahum", "from": 1, "to": 3 },
+        { "book": "zephaniah", "from": 1, "to": 3 },
+        { "book": "habakkuk", "from": 1, "to": 3 },
+        { "book": "jeremiah", "from": 1, "to": 52 },
+        { "book": "lamentations", "from": 1, "to": 5 },
+        { "book": "obadiah", "from": 1, "to": 1 },
+        { "book": "psalms", "from": 137, "to": 137 },
+        { "book": "ezekiel", "from": 1, "to": 48 },
+        { "book": "daniel", "from": 1, "to": 12 }
+      ]
+    },
+    {
+      "id": "return-silence",
+      "dates": "538 BC to the birth of Jesus",
+      "world": "Persia ruled from India to Egypt, and its kings allowed deported peoples to go home and rebuild their temples. The Cyrus Cylinder, a clay inscription from about 539 BC, describes that policy, though it does not mention the Jews. A first group returned to Jerusalem; the prophets Haggai and Zechariah urged them to finish rebuilding the temple, which was completed around 515 BC. Esther is set in the Persian court of Xerxes I (486 to 465 BC). Ezra arrived around 458 BC to teach the law, and Nehemiah around 445 BC to rebuild the walls. Malachi spoke to the rebuilt but disappointed community, probably in the mid-fifth century BC.\n\nThen come roughly four centuries the Old Testament does not narrate. Alexander the Great conquered Persia in the 330s BC and spread Greek language and culture. His successors, the Ptolemies of Egypt and then the Seleucids of Syria, ruled Judea. In Alexandria the Hebrew Scriptures were translated into Greek (the Septuagint), beginning with the Torah in the third century BC. In 167 BC the Seleucid king Antiochus IV desecrated the temple, provoking the Maccabean revolt; the temple was rededicated in 164 BC, the origin of Hanukkah. Rome took Jerusalem in 63 BC, and Herod the Great ruled as Rome's client king from 37 to 4 BC, rebuilding the temple on a grand scale. The synagogue, the Pharisees, the Sadducees, and the community behind the Dead Sea Scrolls (found at Qumran in 1947) all belong to these years, and they are the world Jesus was born into.",
+      "watch": "Watch the homecoming that is real but small: a rebuilt temple that makes the old men weep, walls rebuilt under threat, a people who keep falling back into the same sins. Watch Esther, where God is never named yet never absent. And watch Malachi end the Old Testament looking forward: the Lord will suddenly come to his temple, and a messenger will prepare his way.",
+      "people": ["Zerubbabel", "Joshua the high priest", "Haggai", "Zechariah", "Esther", "Mordecai", "Haman", "Xerxes", "Ezra", "Nehemiah", "Malachi"],
+      "path": [
+        { "book": "ezra", "from": 1, "to": 6 },
+        { "book": "haggai", "from": 1, "to": 2 },
+        { "book": "zechariah", "from": 1, "to": 14 },
+        { "book": "esther", "from": 1, "to": 10 },
+        { "book": "ezra", "from": 7, "to": 10 },
+        { "book": "nehemiah", "from": 1, "to": 13 },
+        { "book": "malachi", "from": 1, "to": 4 }
+      ]
+    },
+    {
+      "id": "christ",
+      "dates": "About 6 BC to AD 30 or 33",
+      "world": "Jesus was born under the Roman emperor Augustus (27 BC to AD 14) and before the death of Herod the Great in 4 BC, so most historians place his birth between about 6 and 4 BC. He grew up in Nazareth in Galilee, ruled by Herod's son Herod Antipas, while Judea and Jerusalem came under Roman prefects. Pontius Pilate was prefect from AD 26 to 36; a stone inscription bearing his name was found at Caesarea in 1961. Caiaphas was high priest for most of those years. Jesus was crucified in Jerusalem at Passover, most likely in AD 30 or 33. Roman and Jewish writers of the next century, including Tacitus and Josephus, mention his execution.\n\nThe Jewish world of the Gospels was diverse. Pharisees taught careful obedience to the law and its traditions in synagogues across the land. Sadducees, many of them priestly aristocrats, controlled the temple. Zealots wanted armed revolt against Rome. Many longed for a Messiah, an anointed king from David's line, to throw off Roman rule. Crucifixion was Rome's punishment for slaves and rebels, meant to shame as much as to kill, which is why a crucified Messiah sounded like a contradiction in terms.",
+      "watch": "Read the four Gospels as four portraits of one person. Matthew shows Jesus as the promised king and the fulfillment of Israel's Scriptures, Mark as the Son of God who comes to serve and to give his life, Luke as the Savior of outsiders and the poor, and John as the eternal Word made flesh. Watch who recognizes him and who doesn't. Watch every Gospel slow down at the last week. And watch the empty tomb, which each Gospel reports and on which the rest of the New Testament stands.",
+      "people": ["Jesus", "Mary", "Joseph", "John the Baptist", "Peter", "Andrew", "James", "John", "Matthew", "Thomas", "Judas Iscariot", "Mary Magdalene", "Martha", "Lazarus", "Nicodemus", "Caiaphas", "Pontius Pilate", "Herod Antipas"],
+      "path": [
+        { "book": "matthew", "from": 1, "to": 28 },
+        { "book": "mark", "from": 1, "to": 16 },
+        { "book": "luke", "from": 1, "to": 24 },
+        { "book": "john", "from": 1, "to": 21 }
+      ]
+    },
+    {
+      "id": "church-spirit",
+      "dates": "About AD 30 to 95",
+      "world": "The church began in Jerusalem and spread along the roads and sea lanes of the Roman Empire, which Rome had made safer and faster to travel than ever before. Greek was the common language from Syria to Rome, so the apostles wrote in it. Paul, a Pharisee and a Roman citizen from Tarsus, carried the message to the cities of Asia Minor and Greece, usually starting in the synagogue and then going to the Gentiles. Some fixed points help date his travels: the emperor Claudius expelled Jews from Rome around AD 49 (Acts 18:2), and an inscription at Delphi dates Gallio's term as proconsul of Achaia (Acts 18:12) to about AD 51 to 52.\n\nThe letters were written into this movement, most of them by Paul in the 50s and early 60s, some by Peter, James, John, and Jude, and one (Hebrews) by an unknown author. The dates and even the authorship of several letters are debated, and each book's introduction sets out the positions; this path reads the letters where most place them in the story of Acts. Nero blamed Christians for the great fire of Rome in AD 64, and early tradition holds that Peter and Paul were both executed in Rome in those years. In AD 70 Roman armies destroyed Jerusalem and the temple.",
+      "watch": "Watch the Spirit poured out at Pentecost and the gospel moving outward, just as Jesus said in Acts 1:8: Jerusalem, Judea and Samaria, the ends of the earth. Watch the great question of the early church (must Gentiles become Jews to follow Jesus?) and how the letters answer it. And read each letter as one side of a real conversation with a real church, following its argument before you pull out a verse.",
+      "people": ["Peter", "John", "Stephen", "Philip", "Paul", "Barnabas", "Silas", "Timothy", "Titus", "Lydia", "Priscilla", "Aquila", "Apollos", "James the brother of Jesus", "Onesimus", "Philemon", "Jude"],
+      "path": [
+        { "book": "acts", "from": 1, "to": 12 },
+        { "book": "james", "from": 1, "to": 5 },
+        { "book": "acts", "from": 13, "to": 14 },
+        { "book": "galatians", "from": 1, "to": 6 },
+        { "book": "acts", "from": 15, "to": 18 },
+        { "book": "1-thessalonians", "from": 1, "to": 5 },
+        { "book": "2-thessalonians", "from": 1, "to": 3 },
+        { "book": "acts", "from": 19, "to": 20 },
+        { "book": "1-corinthians", "from": 1, "to": 16 },
+        { "book": "2-corinthians", "from": 1, "to": 13 },
+        { "book": "romans", "from": 1, "to": 16 },
+        { "book": "acts", "from": 21, "to": 28 },
+        { "book": "ephesians", "from": 1, "to": 6 },
+        { "book": "colossians", "from": 1, "to": 4 },
+        { "book": "philemon", "from": 1, "to": 1 },
+        { "book": "philippians", "from": 1, "to": 4 },
+        { "book": "1-timothy", "from": 1, "to": 6 },
+        { "book": "titus", "from": 1, "to": 3 },
+        { "book": "2-timothy", "from": 1, "to": 4 },
+        { "book": "1-peter", "from": 1, "to": 5 },
+        { "book": "hebrews", "from": 1, "to": 13 },
+        { "book": "2-peter", "from": 1, "to": 3 },
+        { "book": "jude", "from": 1, "to": 1 },
+        { "book": "1-john", "from": 1, "to": 5 },
+        { "book": "2-john", "from": 1, "to": 1 },
+        { "book": "3-john", "from": 1, "to": 1 }
+      ]
+    },
+    {
+      "id": "new-creation",
+      "dates": "Written about AD 95, or in the late 60s; its vision reaches to the end",
+      "world": "Revelation was written by a prophet named John, exiled on the island of Patmos, to seven churches in the Roman province of Asia (in modern western Turkey). Early church writers, beginning with Irenaeus in the second century, date it to the end of the emperor Domitian's reign (AD 81 to 96); others argue for a date in the late 60s under Nero. Either way, the churches lived in cities where loyalty to Rome was expressed through worship of the emperor, and where refusing it could cost a Christian a trade, a reputation, or a life.\n\nThe book belongs to a genre called apocalyptic, familiar from Daniel and from Jewish writings between the testaments: visions full of symbols, numbers, beasts, and cosmic battles that pull back the curtain on history to show who really reigns. Christians have read it in several ways: as mainly about the first century, as a map of church history, as mainly about the end, or as a symbolic portrait of the conflict between Christ and evil in every age. Those readings, and the debates over the millennium in chapter 20, are second-order questions, and every reading agrees on its center.",
+      "watch": "Watch the throne room in chapters 4 and 5, where the Lion of the tribe of Judah turns out to be a Lamb who was slain. Watch the images borrowed from the whole Old Testament: plagues from Exodus, beasts from Daniel, a city from Ezekiel and Isaiah. And watch the last two chapters bring the Bible's first two chapters home: a river, the tree of life, no more curse, and God dwelling with his people.",
+      "people": ["John", "Jesus Christ", "the seven churches"],
+      "path": [{ "book": "revelation", "from": 1, "to": 22 }]
+    }
+  ]
+}

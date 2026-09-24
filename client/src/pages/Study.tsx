@@ -121,9 +121,9 @@ export default function Study() {
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
           <Link href="/study/bible" style={{ display: "block", padding: "32px", background: "var(--card)", border: "1px solid var(--border)", borderLeft: "4px solid var(--mustard)", borderRadius: "var(--radius-sm)", textDecoration: "none", backgroundImage: "none" }}>
             <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "10px" }}>New · The Study Bible</div>
-            <div style={{ fontFamily: "var(--F)", fontSize: "clamp(1.6rem, 3vw, 2.2rem)", fontWeight: 400, color: "var(--ink)", marginBottom: "10px", lineHeight: 1.15 }}>Every chapter, with the Hebrew and Greek beneath every word</div>
+            <div style={{ fontFamily: "var(--F)", fontSize: "clamp(1.6rem, 3vw, 2.2rem)", fontWeight: 400, color: "var(--ink)", marginBottom: "10px", lineHeight: 1.15 }}>Learn the whole Bible, one story from Genesis to Revelation</div>
             <p style={{ fontFamily: "var(--B)", fontSize: "1rem", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "64ch", margin: "0 0 14px" }}>
-              Read the whole Bible and open any word to its dictionary meaning, its grammar in plain English, and everywhere else it appears. Open any verse to its cross-references and the guides that set it in its world.
+              Follow the Bible's one story in eleven acts, read an introduction to every book, and open study notes on every chapter: its history, its culture, how it is built, what it teaches, and how it points to Christ. Beneath every English word are the Hebrew and Greek it translates.
             </p>
             <div style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--ink)", borderBottom: "1px solid var(--mustard)", width: "fit-content", paddingBottom: "2px" }}>Open the Study Bible</div>
           </Link>

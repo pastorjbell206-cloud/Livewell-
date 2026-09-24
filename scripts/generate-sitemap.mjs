@@ -285,6 +285,23 @@ function manifestPages() {
       console.warn(`[sitemap] could not read ${s.file}: ${err.message}`);
     }
   }
+  // The Study Bible: every book, every chapter, the eleven acts of the story,
+  // and the doctrine pages (client/public/bible/*).
+  try {
+    const books = JSON.parse(fs.readFileSync("client/public/bible/books.json", "utf8"));
+    for (const b of books) {
+      pages.push({ url: `/study/bible/${b.slug}`, priority: "0.8", changefreq: "monthly" });
+      for (let c = 1; c <= b.chapters; c++) pages.push({ url: `/study/bible/${b.slug}/${c}`, priority: "0.7", changefreq: "monthly" });
+    }
+    pages.push({ url: "/study/bible/story", priority: "0.9", changefreq: "monthly" });
+    for (const a of JSON.parse(fs.readFileSync("client/public/bible/story.json", "utf8")).acts)
+      pages.push({ url: `/study/bible/story/${a.id}`, priority: "0.8", changefreq: "monthly" });
+    pages.push({ url: "/study/bible/doctrines", priority: "0.8", changefreq: "monthly" });
+    for (const d of JSON.parse(fs.readFileSync("client/public/bible/doctrines.json", "utf8")).doctrines)
+      pages.push({ url: `/study/bible/doctrines/${d.id}`, priority: "0.7", changefreq: "monthly" });
+  } catch (err) {
+    console.warn(`[sitemap] could not read the Study Bible: ${err.message}`);
+  }
   return pages;
 }
 

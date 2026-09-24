@@ -1,18 +1,21 @@
 /**
  * /study/bible — the Study Bible (docs/STUDY-BIBLE-PROMPT.md, Phase 1).
  *
- *   /study/bible                     every book, by testament
- *   /study/bible/:book               the book's chapters
+ *   /study/bible                     the front door: the story, the books, the doctrines
+ *   /study/bible/:book               the book: its introduction and every chapter
  *   /study/bible/:book/:chapter      the reader: Berean Standard Bible text, a
  *                                    word-by-word Hebrew or Greek interlinear,
- *                                    and a study panel for any verse or word
+ *                                    a study panel for any verse or word, and
+ *                                    the chapter's study notes
  *
- * Data comes from /bible/* (scripts/build-bible.mjs): licensed sources only,
- * credited at the foot of every page. Nothing here is written from memory.
+ * Original-language data comes from /bible/* (scripts/build-bible.mjs):
+ * licensed sources only, credited at the foot of every page. The authored
+ * layer (introductions, notes, the story path) follows docs/BIBLE-NOTES-SPEC.md.
+ * The story and doctrine pages live in StudyBibleStory and StudyBibleDoctrines.
  */
 import { useEffect, useMemo, useState, type CSSProperties, type ReactNode } from "react";
 import { Link, useRoute } from "wouter";
-import { ChevronLeft, ChevronRight, X } from "lucide-react";
+import { ArrowRight, ChevronLeft, ChevronRight, X } from "lucide-react";
 
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
@@ -36,6 +39,22 @@ import {
   type BibleWord,
   type LexEntry,
 } from "@/lib/bible";
+import {
+  fetchDoctrines,
+  fetchIntro,
+  fetchNote,
+  fetchNotesIndex,
+  fetchStory,
+  fetchStoryline,
+  flattenStory,
+  itemsForPassage,
+  readProgress,
+  spreadKinds,
+  type BookIntro,
+  type ChapterNote,
+} from "@/lib/bible-notes";
+import { Band, Credits, H2, H3, Pill, Prose, RelatedList, card, kicker, useLoad } from "@/pages/study-bible/shared";
+import { ChapterHead, ChapterNotesBody, OutlinePanel, useStoryPlace } from "@/pages/study-bible/ChapterNotes";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 const HEB: CSSProperties = { fontFamily: '"SBL Hebrew", "Ezra SIL", "Taamey Frank CLM", "Times New Roman", serif', direction: "rtl" };
@@ -70,11 +89,13 @@ export default function StudyBible() {
 
   return (
     <Layout>
-      <SEOMeta
-        title="The Study Bible: Hebrew, Greek, and Every Word Explained"
-        description="Read the whole Bible with the Hebrew and Greek beneath every word: dictionary meanings, grammar in plain English, every occurrence, cross-references, and the context guides that open each passage."
-        url="https://www.livewellbyjamesbell.co/study/bible"
-      />
+      {!slug && (
+        <SEOMeta
+          title="The Study Bible: Learn the Whole Story, With Hebrew and Greek"
+          description="Learn the whole Bible: its one story in eleven acts, an introduction to every book, study notes on all 1,189 chapters with their history and culture, the doctrines they teach, and the Hebrew and Greek beneath every word."
+          url="https://www.livewellbyjamesbell.co/study/bible"
+        />
+      )}
       {failed && !books ? (
         <div style={{ padding: "var(--s-6) var(--s-4)" }}>
           <LoadFailed what="The Study Bible" onRetry={retry} backHref="/study" backLabel="Back to Study" />
@@ -89,7 +110,7 @@ export default function StudyBible() {
       ) : book && Number.isFinite(chapterNum) ? (
         <Reader books={books} book={book} chapter={chapterNum} />
       ) : book ? (
-        <ChapterGrid book={book} />
+        <BookPage books={books} book={book} />
       ) : (
         <BookIndex books={books} />
       )}
@@ -98,43 +119,80 @@ export default function StudyBible() {
   );
 }
 
-// ── index pages ──────────────────────────────────────────────────────────────
+// ── the front door ───────────────────────────────────────────────────────────
 
-function Hero({ eyebrow, title, children }: { eyebrow: string; title: string; children?: ReactNode }) {
-  return (
-    <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-4)" }}>
-      <div style={wrap}>
-        <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "12px" }}>{eyebrow}</div>
-        <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(2.1rem, 4.8vw, 3.2rem)", fontWeight: 400, letterSpacing: "-0.02em", lineHeight: 1.08, color: "var(--ink)", margin: "0 0 12px" }}>{title}</h1>
-        {children}
-      </div>
-    </section>
-  );
-}
+/** The traditional sections of the Protestant canon, by position in books.json. */
+const SECTIONS: { label: string; from: number; to: number }[] = [
+  { label: "The Law", from: 0, to: 4 },
+  { label: "History", from: 5, to: 16 },
+  { label: "Poetry and Wisdom", from: 17, to: 21 },
+  { label: "The Prophets", from: 22, to: 38 },
+  { label: "The Gospels and Acts", from: 39, to: 43 },
+  { label: "The Letters", from: 44, to: 64 },
+  { label: "Revelation", from: 65, to: 65 },
+];
 
 function BookIndex({ books }: { books: BibleBook[] }) {
-  const groups: [string, BibleBook[]][] = [
-    ["The Old Testament", books.filter((b) => b.testament === "OT")],
-    ["The New Testament", books.filter((b) => b.testament === "NT")],
+  const { data: index } = useLoad("notes-index", fetchNotesIndex);
+  const { data: next } = useLoad("story-next", () =>
+    fetchStory().then((story) => {
+      const progress = readProgress();
+      if (!progress.size) return null;
+      return flattenStory(story).find((s) => !progress.has(`${s.slug}/${s.chapter}`)) ?? null;
+    })
+  );
+  const nameOf = (slug: string) => books.find((b) => b.slug === slug)?.name ?? slug;
+  const doors: { href: string; kicker: string; title: string; body: string }[] = [
+    { href: "/study/bible/story", kicker: "Start here", title: "The Story of the Bible", body: "The whole Bible as one story in eleven acts, from creation to new creation, with the history behind each act and every chapter in the order it happened." },
+    { href: "#books", kicker: "Book by book", title: "The Sixty-Six Books", body: "An introduction to every book (who wrote it, when, why, and how it is built), then study notes on each of its chapters." },
+    { href: "/study/bible/doctrines", kicker: "What it teaches", title: "The Doctrines", body: "God, creation, sin, covenant, Christ, salvation, the Spirit, the church, and the last things, each traced through every chapter that teaches it." },
   ];
   return (
     <>
-      <Hero eyebrow="The Study Bible" title="Read it the way scholars do">
-        <p style={{ fontFamily: "var(--B)", fontSize: "1.05rem", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "64ch", margin: 0 }}>
-          Every chapter of Scripture, with the Hebrew and Greek beneath every word. Tap a word for its dictionary meaning, its grammar in plain English, and everywhere else it appears. Tap a verse for its cross-references and the guides that open its world.
-        </p>
-      </Hero>
+      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-5)" }}>
+        <div style={wrap}>
+          <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "12px" }}>The Study Bible</div>
+          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(2.3rem, 5.4vw, 3.8rem)", fontWeight: 400, letterSpacing: "-0.02em", lineHeight: 1.05, color: "var(--ink)", margin: "0 0 16px", textWrap: "balance" }}>Learn the whole Bible</h1>
+          <p style={{ fontFamily: "var(--B)", fontSize: "1.12rem", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "66ch", margin: 0 }}>
+            Whether you have never opened it or have read it for years. Every chapter comes with notes on its history, its culture, how it is built, what it teaches, and where it sits in the one story that runs from Genesis to Revelation. Underneath every English word are the Hebrew and Greek it translates.
+          </p>
+          {next && (
+            <p style={{ margin: "var(--s-4) 0 0" }}>
+              <Link href={`${chapterHref(next.slug, next.chapter)}?path=story`} style={{ display: "inline-flex", alignItems: "center", gap: "8px", minHeight: "46px", padding: "0 20px", background: "var(--ink)", color: "var(--bone)", borderRadius: "999px", textDecoration: "none", backgroundImage: "none", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600 }}>
+                Continue the story: {nameOf(next.slug)} {next.chapter} <ArrowRight size={16} aria-hidden />
+              </Link>
+            </p>
+          )}
+        </div>
+      </section>
       <section style={{ background: "var(--bone)", padding: "0 var(--s-4) var(--s-6)" }}>
+        <ul style={{ ...wrap, listStyle: "none", padding: 0, display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "14px" }}>
+          {doors.map((d) => (
+            <li key={d.href}>
+              <Link href={d.href} style={{ ...card, display: "grid", gap: "8px", height: "100%", padding: "var(--s-4)", textDecoration: "none", backgroundImage: "none", color: "var(--ink)" }}>
+                <span style={kicker}>{d.kicker}</span>
+                <span style={{ fontFamily: "var(--F)", fontSize: "1.65rem", lineHeight: 1.1 }}>{d.title}</span>
+                <span style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.6, color: "var(--ink-muted)" }}>{d.body}</span>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </section>
+      <section id="books" style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--s-4)", scrollMarginTop: "70px" }}>
         <div style={{ ...wrap, display: "grid", gap: "var(--s-5)" }}>
-          {groups.map(([label, list]) => (
-            <div key={label}>
-              <h2 style={{ fontFamily: "var(--F)", fontSize: "1.6rem", fontWeight: 400, color: "var(--ink)", margin: "0 0 12px" }}>{label}</h2>
-              <ul style={{ listStyle: "none", margin: 0, padding: 0, display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(150px, 1fr))", gap: "8px" }}>
-                {list.map((b) => (
+          <H2>The Sixty-Six Books</H2>
+          {SECTIONS.map((sec) => (
+            <div key={sec.label}>
+              <H3>{sec.label}</H3>
+              <ul style={{ listStyle: "none", margin: 0, padding: 0, display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(230px, 1fr))", gap: "8px" }}>
+                {books.slice(sec.from, sec.to + 1).map((b) => (
                   <li key={b.code}>
-                    <Link href={`/study/bible/${b.slug}`} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", minHeight: "44px", padding: "8px 12px", background: "var(--card)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", color: "var(--ink)", textDecoration: "none", fontFamily: "var(--U)", fontSize: "14px" }}>
-                      <span>{b.name}</span>
-                      <span style={{ color: "var(--ink-muted)", fontSize: "12px" }}>{b.chapters}</span>
+                    <Link href={`/study/bible/${b.slug}`} style={{ ...card, display: "grid", gap: "4px", height: "100%", padding: "10px 14px", color: "var(--ink)", textDecoration: "none", backgroundImage: "none" }}>
+                      <span style={{ display: "flex", justifyContent: "space-between", gap: "8px", fontFamily: "var(--U)", fontSize: "14.5px", fontWeight: 600 }}>
+                        <span>{b.name}</span>
+                        <span style={{ color: "var(--ink-muted)", fontSize: "12px", fontWeight: 400 }}>{b.chapters} ch.</span>
+                      </span>
+                      {index?.taglines[b.slug] && <span style={{ fontFamily: "var(--B)", fontSize: "13.5px", lineHeight: 1.45, color: "var(--ink-muted)" }}>{index.taglines[b.slug]}</span>}
                     </Link>
                   </li>
                 ))}
@@ -147,25 +205,150 @@ function BookIndex({ books }: { books: BibleBook[] }) {
   );
 }
 
-function ChapterGrid({ book }: { book: BibleBook }) {
+// ── a book ───────────────────────────────────────────────────────────────────
+
+function BookPage({ books, book }: { books: BibleBook[]; book: BibleBook }) {
+  const { data: intro } = useLoad<BookIntro>(`intro-${book.slug}`, () => fetchIntro(book.slug));
+  const { data: index } = useLoad("notes-index", fetchNotesIndex);
+  const { data: act } = useLoad(`act-${book.slug}`, () =>
+    Promise.all([fetchStory(), fetchStoryline()]).then(([story, line]) => {
+      const a = story.acts.find((x) => x.path.some((r) => r.book === book.slug));
+      const l = a && line.find((x) => x.id === a.id);
+      return l ? { id: l.id, label: l.act, title: l.title } : null;
+    })
+  );
+  const { data: related } = useLoad(`book-related-${book.slug}`, () =>
+    fetchCatalogue().then((c) => spreadKinds(itemsForPassage(c.items, books, book.slug), 8))
+  );
+  const { data: doctrines } = useLoad("doctrines", fetchDoctrines);
+  const titles = index?.titles[book.slug] ?? [];
+  const testament = book.testament === "OT" ? "The Old Testament" : "The New Testament";
+
   return (
     <>
-      <Hero eyebrow={book.testament === "OT" ? "The Old Testament" : "The New Testament"} title={book.name}>
-        <p style={{ margin: 0, fontFamily: "var(--U)", fontSize: "14px" }}>
-          <Link href="/study/bible" style={{ color: "var(--ink)", textDecoration: "underline", textDecorationColor: "var(--mustard)", textUnderlineOffset: "4px", backgroundImage: "none" }}>All the books</Link>
-        </p>
-      </Hero>
-      <section style={{ background: "var(--bone)", padding: "0 var(--s-4) var(--s-6)" }}>
-        <ul aria-label={`Chapters of ${book.name}`} style={{ ...wrap, listStyle: "none", padding: 0, display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(56px, 1fr))", gap: "8px" }}>
-          {Array.from({ length: book.chapters }, (_, i) => i + 1).map((n) => (
-            <li key={n}>
-              <Link href={chapterHref(book.slug, n)} aria-label={`${book.name} chapter ${n}`} style={{ display: "flex", alignItems: "center", justifyContent: "center", height: "48px", background: "var(--card)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", color: "var(--ink)", textDecoration: "none", fontFamily: "var(--U)", fontSize: "15px" }}>
-                {n}
-              </Link>
-            </li>
-          ))}
-        </ul>
+      {intro ? (
+        <SEOMeta title={`${book.name}: Introduction, Outline, and Study Notes`} description={intro.tagline} url={`https://www.livewellbyjamesbell.co/study/bible/${book.slug}`} />
+      ) : (
+        <SEOMeta title={`${book.name}: Study Notes, Hebrew and Greek`} description={`Every chapter of ${book.name} with study notes and the original language beneath every word.`} url={`https://www.livewellbyjamesbell.co/study/bible/${book.slug}`} />
+      )}
+      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-5)" }}>
+        <div style={wrap}>
+          <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "12px" }}>
+            <span><Link href="/study/bible" style={{ color: "inherit", textDecoration: "none", backgroundImage: "none" }}>The Study Bible</Link> · {testament}</span>
+          </div>
+          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(2.3rem, 5.4vw, 3.8rem)", fontWeight: 400, letterSpacing: "-0.02em", lineHeight: 1.05, color: "var(--ink)", margin: "0 0 14px" }}>{book.name}</h1>
+          {intro && <p style={{ fontFamily: "var(--B)", fontSize: "1.15rem", lineHeight: 1.65, color: "var(--ink-muted)", maxWidth: "62ch", margin: "0 0 14px" }}>{intro.tagline}</p>}
+          <p style={{ margin: 0, fontFamily: "var(--U)", fontSize: "13.5px", color: "var(--ink-muted)", display: "flex", flexWrap: "wrap", gap: "6px 14px" }}>
+            <span>{book.chapters} chapter{book.chapters === 1 ? "" : "s"}</span>
+            {act && <span>In the story: <Link href={`/study/bible/story/${act.id}`} style={quietLink}>{act.label}, {act.title}</Link></span>}
+            <a href="#chapters" style={quietLink}>Go to the chapters</a>
+          </p>
+        </div>
       </section>
+
+      {intro && (
+        <>
+          <Band>
+            <H2>What this book is</H2>
+            <Prose text={intro.overview} />
+          </Band>
+          <Band tone="warm">
+            <H2>How it is built</H2>
+            <ol style={{ listStyle: "none", margin: 0, padding: 0, display: "grid", gap: "10px", maxWidth: "72ch" }}>
+              {intro.structure.map((s) => {
+                const first = parseInt(s.range, 10);
+                return (
+                  <li key={s.range} style={{ ...card, padding: "14px var(--s-4)" }}>
+                    <Link href={chapterHref(book.slug, first)} style={{ ...quietLink, textDecoration: "none", display: "block" }}>
+                      <span style={kicker}>{book.name} {s.range.replace(/-/g, "–")}</span>
+                      <span style={{ display: "block", fontFamily: "var(--F)", fontSize: "1.3rem", margin: "4px 0" }}>{s.title}</span>
+                    </Link>
+                    <span style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.6, color: "var(--ink)" }}>{s.summary}</span>
+                  </li>
+                );
+              })}
+            </ol>
+          </Band>
+        </>
+      )}
+
+      <section id="chapters" style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4)", scrollMarginTop: "70px" }}>
+        <div style={wrap}>
+          <H2>The chapters</H2>
+          <ol aria-label={`Chapters of ${book.name}`} style={{ listStyle: "none", margin: 0, padding: 0, display: "grid", gridTemplateColumns: titles.some(Boolean) ? "repeat(auto-fill, minmax(250px, 1fr))" : "repeat(auto-fill, minmax(56px, 1fr))", gap: "8px" }}>
+            {Array.from({ length: book.chapters }, (_, i) => i + 1).map((n) => {
+              const title = titles[n - 1];
+              return (
+                <li key={n}>
+                  <Link href={chapterHref(book.slug, n)} aria-label={`${book.name} chapter ${n}${title ? `: ${title}` : ""}`} style={{ ...card, display: "flex", alignItems: "center", gap: "12px", minHeight: "48px", height: "100%", padding: title ? "8px 12px" : 0, justifyContent: title ? "flex-start" : "center", color: "var(--ink)", textDecoration: "none", backgroundImage: "none" }}>
+                    <span style={{ flex: "0 0 auto", fontFamily: "var(--U)", fontSize: "15px", fontWeight: 600, minWidth: title ? "28px" : undefined, textAlign: "center" }}>{n}</span>
+                    {title && <span style={{ fontFamily: "var(--B)", fontSize: "14.5px", lineHeight: 1.4 }}>{title}</span>}
+                  </Link>
+                </li>
+              );
+            })}
+          </ol>
+        </div>
+      </section>
+
+      {intro && (
+        <>
+          <Band tone="warm">
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "var(--s-5)" }}>
+              <div><H3>Who wrote it</H3><Prose text={intro.author} size={16} /></div>
+              <div><H3>When</H3><Prose text={intro.date} size={16} /></div>
+              <div><H3>The world it was written in</H3><Prose text={intro.setting} size={16} /></div>
+              <div><H3>Why it was written</H3><Prose text={intro.purpose} size={16} /></div>
+            </div>
+          </Band>
+          <Band>
+            <H2>Where it sits in the story</H2>
+            <Prose text={intro.story} />
+            <div style={{ height: "var(--s-4)" }} />
+            <H2>{book.testament === "OT" ? "How it points to Christ" : "What it shows of Christ"}</H2>
+            <Prose text={intro.christ} />
+          </Band>
+          <Band tone="warm">
+            <H2>Themes to follow</H2>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "14px" }}>
+              {intro.themes.map((t) => (
+                <div key={t.title} style={{ ...card, padding: "var(--s-4)" }}>
+                  <H3>{t.title}</H3>
+                  <p style={{ margin: 0, fontFamily: "var(--B)", fontSize: "15.5px", lineHeight: 1.65, color: "var(--ink)" }}>{t.body}</p>
+                </div>
+              ))}
+            </div>
+          </Band>
+          <Band>
+            <H2>Chapters to start with</H2>
+            <ul style={{ listStyle: "none", margin: "0 0 var(--s-5)", padding: 0, display: "grid", gap: "10px", maxWidth: "72ch" }}>
+              {intro.keyChapters.map((k) => (
+                <li key={k.ch} style={{ display: "flex", gap: "14px", alignItems: "baseline" }}>
+                  <Link href={chapterHref(book.slug, k.ch)} style={{ ...quietLink, flex: "0 0 auto", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600 }}>{book.name} {k.ch}</Link>
+                  <span style={{ fontFamily: "var(--B)", fontSize: "15.5px", lineHeight: 1.6, color: "var(--ink)" }}>{k.why}</span>
+                </li>
+              ))}
+            </ul>
+            <H2>How to read it well</H2>
+            <Prose text={intro.reading} />
+            {intro.doctrines.length > 0 && (
+              <>
+                <div style={{ ...kicker, margin: "var(--s-4) 0 10px" }}>Doctrines it teaches</div>
+                <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
+                  {intro.doctrines.map((d) => <Pill key={d} href={`/study/bible/doctrines/${d}`}>{doctrines?.find((x) => x.id === d)?.name ?? d}</Pill>)}
+                </div>
+              </>
+            )}
+          </Band>
+        </>
+      )}
+
+      {related && related.length > 0 && (
+        <Band tone={intro ? "warm" : "bone"}>
+          <H2>{book.name} on LiveWell</H2>
+          <RelatedList items={related} />
+        </Band>
+      )}
     </>
   );
 }
@@ -198,6 +381,8 @@ function Reader({ books, book, chapter }: { books: BibleBook[]; book: BibleBook;
   const wide = useWide();
   const lang = book.testament === "OT" ? "H" : "G";
   const valid = chapter >= 1 && chapter <= book.chapters;
+  const { data: note } = useLoad<ChapterNote>(valid ? `note-${book.slug}/${chapter}` : null, () => fetchNote(book.slug, chapter));
+  const place = useStoryPlace(book.slug, chapter);
   const data = loaded?.key === key ? loaded.data : null;
   const failed = failedKey === key;
 
@@ -223,6 +408,12 @@ function Reader({ books, book, chapter }: { books: BibleBook[]; book: BibleBook;
     if (hashVerse) requestAnimationFrame(() => document.getElementById(`v${hashVerse.v}`)?.scrollIntoView({ block: "center" }));
   }, [hashVerse]);
 
+  // A #notes link (from a doctrine page) lands on the notes once they exist.
+  useEffect(() => {
+    if (note && data && typeof window !== "undefined" && window.location.hash === "#notes")
+      requestAnimationFrame(() => document.getElementById("notes")?.scrollIntoView({ block: "start" }));
+  }, [note, data]);
+
   const changeMode = (m: Mode) => {
     setMode(m);
     writeStoredJSON(MODE_KEY, m);
@@ -242,9 +433,17 @@ function Reader({ books, book, chapter }: { books: BibleBook[]; book: BibleBook;
   }
 
   const panel = sel && data ? <StudyPanel books={books} book={book} chapter={chapter} sel={sel} setSel={setSel} lang={lang} onClose={() => setSel(null)} /> : null;
+  const onVerse = (v: BibleVerse) => setSel({ kind: "verse", verse: v });
+  const onWord = (v: BibleVerse, i: number) => setSel({ kind: "word", verse: v, index: i });
 
   return (
     <>
+      <SEOMeta
+        title={note ? `${book.name} ${chapter} Study Notes \u2013 ${note.title}` : `${book.name} ${chapter} Study Notes, Hebrew and Greek`}
+        description={note?.summary ?? `${book.name} ${chapter} with study notes, cross-references, and the ${lang === "H" ? "Hebrew" : "Greek"} beneath every word.`}
+        url={`https://www.livewellbyjamesbell.co/study/bible/${book.slug}/${chapter}`}
+        type="article"
+      />
       <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-3)", borderBottom: "1px solid var(--border)" }}>
         <div style={{ ...wrap, display: "flex", flexWrap: "wrap", alignItems: "flex-end", justifyContent: "space-between", gap: "14px" }}>
           <div>
@@ -274,24 +473,26 @@ function Reader({ books, book, chapter }: { books: BibleBook[]; book: BibleBook;
       <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-6)" }}>
         <div style={{ ...wrap, display: "flex", gap: "var(--s-5)", alignItems: "flex-start" }}>
           <div style={{ flex: "1 1 0", minWidth: 0 }}>
+            <ChapterHead note={note} place={place} />
             {failed && !data ? (
               <LoadFailed what={`${book.name} ${chapter}`} onRetry={() => { setFailedKey(null); setNonce((n) => n + 1); }} backHref={`/study/bible/${book.slug}`} backLabel={`All of ${book.name}`} />
             ) : !data ? (
               <p role="status" style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }}>Opening {book.name} {chapter}…</p>
             ) : mode === "reading" ? (
-              <ReadingText data={data} sel={sel} onVerse={(v) => setSel({ kind: "verse", verse: v })} />
+              <ReadingText data={data} sel={sel} onVerse={onVerse} />
             ) : (
-              <Interlinear data={data} lang={lang} sel={sel} onVerse={(v) => setSel({ kind: "verse", verse: v })} onWord={(v, i) => setSel({ kind: "word", verse: v, index: i })} />
+              <Interlinear data={data} lang={lang} sel={sel} onVerse={onVerse} onWord={onWord} />
             )}
             {data && (
               <p style={{ marginTop: "var(--s-5)", fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", maxWidth: "68ch" }}>
                 Tap a verse number to study the verse{mode === "interlinear" ? ", or any word to study the word" : `. Switch to ${lang === "H" ? "Hebrew" : "Greek"} to see every word beneath the English`}.
               </p>
             )}
+            {note && <ChapterNotesBody books={books} book={book} chapter={chapter} note={note} data={data} place={place} onWord={onWord} onVerse={onVerse} />}
           </div>
           {wide && (
             <aside aria-label="Study panel" style={{ flex: "0 0 380px", position: "sticky", top: "88px", maxHeight: "calc(100vh - 110px)", overflowY: "auto", background: "var(--card)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", padding: "var(--s-4)" }}>
-              {panel ?? <p style={{ margin: 0, fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.6, color: "var(--ink-muted)" }}>Choose a verse number or a word, and its study opens here.</p>}
+              {panel ?? (note ? <OutlinePanel note={note} data={data} onVerse={onVerse} /> : <p style={{ margin: 0, fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.6, color: "var(--ink-muted)" }}>Choose a verse number or a word, and its study opens here.</p>)}
             </aside>
           )}
         </div>
@@ -493,21 +694,11 @@ function VerseStudy({ books, book, chapter, verse, lang, setSel }: { books: Bibl
   const [related, setRelated] = useState<CatalogueItem[] | null>(null);
   useEffect(() => {
     let stale = false;
-    const chapterKey = `${book.name.toLowerCase()} ${chapter}`;
     fetchCatalogue()
-      .then((c) => {
-        if (stale) return;
-        const hits = c.items.filter((it) =>
-          (it.scripture ?? []).some((s) => {
-            const n = s.toLowerCase().replace(/\s+/g, " ").trim();
-            return n === chapterKey || n.startsWith(`${chapterKey}:`) || n.startsWith(`${chapterKey}–`) || n.startsWith(`${chapterKey}-`);
-          })
-        );
-        setRelated(hits.slice(0, 8));
-      })
+      .then((c) => { if (!stale) setRelated(itemsForPassage(c.items, books, book.slug, chapter).slice(0, 8)); })
       .catch(() => { if (!stale) setRelated([]); });
     return () => { stale = true; };
-  }, [book.name, chapter]);
+  }, [books, book.slug, chapter]);
 
   const script = lang === "H" ? HEB : GRK;
   const refLabel = `${book.name} ${chapter}:${verse.v}`;
@@ -570,17 +761,5 @@ function VerseStudy({ books, book, chapter, verse, lang, setSel }: { books: Bibl
         <Link href={`/explore?q=${encodeURIComponent(`${book.name} ${chapter}`)}`} style={quietLink}>Search the Library for {book.name} {chapter}</Link>
       </p>
     </div>
-  );
-}
-
-function Credits() {
-  return (
-    <footer style={{ background: "var(--bone-warm)", padding: "var(--s-4)", borderTop: "1px solid var(--border)" }}>
-      <p style={{ ...wrap, fontFamily: "var(--U)", fontSize: "12px", lineHeight: 1.7, color: "var(--ink-muted)", margin: "0 auto" }}>
-        English text: the Berean Standard Bible (public domain). Hebrew and Greek texts, dictionaries, and grammar: STEP Bible data from Tyndale House, Cambridge,{" "}
-        <a href="https://www.STEPBible.org" target="_blank" rel="noopener noreferrer" style={quietLink}>STEPBible.org</a>, CC BY 4.0. Cross-references:{" "}
-        <a href="https://www.openbible.info/labs/cross-references/" target="_blank" rel="noopener noreferrer" style={quietLink}>OpenBible.info</a>, CC BY.
-      </p>
-    </footer>
   );
 }

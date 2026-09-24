@@ -85,7 +85,8 @@ export const SITE_NAV_GROUPS: SiteNavGroup[] = [
     title: "Study",
     links: [
       { label: "Study the Bible", href: "/study", primary: true },
-      { label: "The Study Bible: Hebrew and Greek", href: "/study/bible", primary: true },
+      { label: "The Study Bible: learn the whole Bible", href: "/study/bible", primary: true },
+      { label: "The story of the Bible, start to finish", href: "/study/bible/story", primary: true },
       { label: "Study any passage", href: "/tools/deep-bible", primary: true },
       { label: "A passage in context", href: "/theology/passage", primary: true },
       { label: "What the Bible says about…", href: "/tools/bible-on", primary: true },

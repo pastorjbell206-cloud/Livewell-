@@ -3,6 +3,22 @@
 Newest first. One entry per working session: what changed, what broke, what
 is next. Decisions made without asking are recorded with their reason.
 
+## 2026-09-25 — The Study Bible: learn the whole Bible
+
+**Changed.** The Study Bible is now a place to learn the whole Bible, not only to read it.
+- **The story:** `/study/bible/story` tells the Bible as one story in eleven acts (the site's storyline). Each act gives its dates, the history behind it, what to watch for, the people, and a reading path. Together the paths walk all 1,189 chapters once, in the order the story happened. Reading progress is kept in the browser.
+- **Every book:** each of the 66 books has an introduction covering author, date, setting, purpose, structure, themes, where it sits in the story, how it points to Christ, how to read it well, and key chapters.
+- **Every chapter:** each of the 1,189 chapters has study notes covering where it sits in the story, its history, its culture, how it is built (with a verse outline), the doctrines it teaches, key Hebrew or Greek words, how it points to Christ, a hard question where one arises, and three questions for reflection. About 1.8 million words in all, in a plain reference voice, not James's.
+- **Doctrines:** `/study/bible/doctrines` gives 29 doctrines, each with every chapter that teaches it and LiveWell's writing on it.
+- **Links out:** every chapter links to LiveWell items that cite it (the Psalm/Psalms mismatch is now handled), to its passage guide where one exists, to related writing by doctrine, and to other translations (linked out, never stored).
+- **Search engines:** the prerender gives every book, chapter, act, and doctrine page its own title, description, and readable text (1,295 pages), and the sitemap lists them all.
+
+**How it was made and checked.** `docs/BIBLE-NOTES-SPEC.md` is the writers' brief. `scripts/validate-bible-notes.mjs` gates CI. It checks shape, the forbidden language, and em-dashes or exclamation points outside quoted Scripture, and it verifies every quotation of three or more words against the Berean Standard Bible. Then a reviewer fact-checked every book and corrected errors in place. `docs/BIBLE-NOTES-REVIEW.md` records every correction, plus the claims flagged for James's team to confirm against a primary source.
+
+**Needs James.** The hard question on Leviticus 18:22 states the historic and revisionist readings without saying where LiveWell lands. The contested-doctrine standard asks the author to name his position, so James should write the closing line. Crisis-facing notes (Job, Lamentations, Jeremiah 20, Psalms 39 and 88, 1 Samuel 31, 2 Samuel 13 and 17, Judges 19 and 21, Ezekiel 16 and 23, 2 Corinthians 1 and 4) point to real help, with US numbers named first; the site may want one standard wording.
+
+**Verified.** Typecheck clean. 336 tests pass. Every CI validator passes, including the full notes check (66 introductions, 1,189 chapter notes, story path complete). The build, sitemap, prerender, and canonical audit are clean. Axe finds no serious issues on nine Study Bible pages at 1440 and 390 wide, with all note sections open.
+
 ## 2026-09-24 — The Study Bible, Phase 1
 
 **Changed.** `docs/STUDY-BIBLE-PROMPT.md` is the expert board's prompt: seats, rules, sources, five phases, and gates. Phase 1 is built:
