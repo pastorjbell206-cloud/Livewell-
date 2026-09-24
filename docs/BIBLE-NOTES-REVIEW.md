@@ -767,3 +767,26 @@ recurs; Matthew alone closes the Sermon on the Mount.
 - Malachi 4: the winged-sun stamps; repeating 4:5; Sirach 48:10.
 
 **The Old Testament is complete: every book written and fact-checked.**
+
+## Matthew
+
+**Checked and sound.** The Herods, Pilate, and Caiaphas; the genealogy (the
+omitted kings, Luke's line, the four women); Matthew 16:18's three readings;
+the Olivet discourse's readings; the resurrection as first-order confession
+and its evidence.
+
+**Corrected.** Introduction: the Sermon on the Mount "among the most
+influential" moral teachings. Matthew 1: Luke places the family in Nazareth
+before the birth; the Septuagint's date; the Father not named in chapter 1.
+Matthew 3, 4, 5, 6, 7, 8, 9, 13, 14, 17, 25: dates, geography, the Kaddish's
+wording, word counts, and parallels corrected. Matthew 16: Caesarea Philippi;
+the denials use a different verb. Matthew 26: 26:64 quoted; "given for many"
+(substitution is one theory among several). Matthew 28: the guards'
+story "implicitly" concedes the empty tomb.
+
+**To double-check.**
+- Matthew 17: the Tabor tradition (perhaps Origen).
+- Matthew 22: the Tiberius denarius inscription.
+- Matthew 23: Mishnah Shekalim on whitewashed tombs.
+- Matthew 28: whether the tomb guards were Roman.
+- Matthew 13: Antipas rebuilding Sepphoris in Jesus' youth.
