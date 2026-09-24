@@ -882,3 +882,24 @@ exceptions" (Epiphanius). Romans 7: Kümmel spelled correctly.
   (partly Chrysostom).
 - Romans 16: the Erastus inscription (contested).
 - Romans 5: eph' ho as "because" (Fitzmyer differs).
+
+## Acts
+
+**Checked and sound.** Gallio and the Delphi letter; Sergius Paulus; Felix,
+Festus, the Agrippas, Claudius, Nero; the journeys, cities, and speeches;
+Acts 15 and Galatians 2; tongues, Spirit baptism, baptism, and election
+across traditions; the shipwreck (James Smith, 1848; the Fast; the Euraquilo;
+the 76/276 reading; St. Paul's Bay).
+
+**Corrected.** Introduction: the "we" passages 20:5-15 and 21:1-18. Acts 3:
+Genesis 12:3 and 22:18. Acts 4: the Sadducees' canon attributed to early
+Christian writers. Acts 5: "presumably" Caiaphas. Acts 9: Tabitha and Talitha
+only if Peter spoke Aramaic. Acts 14: Iconium was Phrygian; the Lystra speech
+is about the living God. Acts 16: Timothy "likely regarded" as Jewish. Acts
+18: 2 Thessalonians "if, as many hold, it is his"; akribos is the same word.
+Acts 24: verse 23. Acts 27: Matthew 12:39-40 (compare Luke 11:29-30).
+
+**To double-check.**
+- Acts 10, 20: distances (Joppa to Caesarea; Miletus to Ephesus by road).
+- Acts 19: Ephesus or Pergamum as the provincial capital.
+- Acts 2: the Stone-Campbell view on baptism could be added.
