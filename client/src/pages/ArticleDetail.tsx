@@ -31,6 +31,7 @@ import { KeepReadingBook } from "@/components/KeepReadingBook";
 import { RelatedEssays } from "@/components/RelatedEssays";
 import ArticleNextSteps, { isArticleOnPath } from "@/components/ArticleNextSteps";
 import { SubstackSeriesNote } from "@/components/SubstackSeriesNote";
+import { ReplyToEssay } from "@/components/ReplyToEssay";
 import { splitForRelated } from "@/lib/essay-split";
 import { EssayArt } from "@/components/EssayArt";
 import { trpc } from "@/lib/trpc";
@@ -984,6 +985,10 @@ export default function ArticleDetail() {
 
             {/* AUTHOR BIO */}
             <AuthorBio author={author} />
+
+            {/* REPLY — one link that opens a mail client with the essay's
+                title as the subject. An invitation to disagree, not an ask. */}
+            <ReplyToEssay title={post.title} />
 
             <PageEndNav back={{ href: "/writing", label: "All essays" }} />
           </>

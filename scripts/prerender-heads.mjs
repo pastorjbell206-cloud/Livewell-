@@ -419,8 +419,26 @@ function extractReadableText(obj, acc = [], depth = 0) {
   return acc;
 }
 
+/**
+ * The reply channel under every essay (client/src/components/ReplyToEssay.tsx
+ * renders the same block once the app mounts). Copy and address come from one
+ * file so the two never drift; the link opens a mail client with the essay's
+ * title as the subject.
+ */
+const REPLY = readJsonSafe("client/src/data/reply.json");
+function replyBlockHtml(title) {
+  if (!REPLY || !REPLY.email || !REPLY.copy) return "";
+  const href = `mailto:${REPLY.email}?subject=${encodeURIComponent(title)}`;
+  return [
+    `<aside class="pre-reply" aria-label="Reply to this essay">`,
+    `<p>${escapeHtml(REPLY.copy)}</p>`,
+    `<p><a href="${escapeHtml(href)}">${escapeHtml(REPLY.link || "Write to James")}</a></p>`,
+    `</aside>`,
+  ].join("\n");
+}
+
 /** Build the crawlable <article> body block for #root. */
-function renderArticleBody({ title, subtitle, contentHtml, sectionLabel }) {
+function renderArticleBody({ title, subtitle, contentHtml, sectionLabel, reply = false }) {
   const parts = [
     `<article itemscope itemtype="https://schema.org/Article">`,
     sectionLabel ? `<p class="pre-eyebrow">${escapeHtml(sectionLabel)}</p>` : "",
@@ -430,6 +448,7 @@ function renderArticleBody({ title, subtitle, contentHtml, sectionLabel }) {
     `<div itemprop="articleBody">`,
     contentHtml,
     `</div>`,
+    reply ? replyBlockHtml(title) : "",
     `</article>`,
   ];
   // A tiny style keeps the crawler-only content readable if JS ever fails to
@@ -438,7 +457,7 @@ function renderArticleBody({ title, subtitle, contentHtml, sectionLabel }) {
 }
 
 /** Turn a content object (or raw markdown) into the injected body HTML. */
-function bodyFromContent({ title, subtitle, sectionLabel, markdown, contentObj }) {
+function bodyFromContent({ title, subtitle, sectionLabel, markdown, contentObj, reply = false }) {
   let contentHtml = "";
   if (markdown) {
     contentHtml = mdToHtml(markdown);
@@ -447,7 +466,7 @@ function bodyFromContent({ title, subtitle, sectionLabel, markdown, contentObj }
     contentHtml = paras.map((p) => mdToHtml(p)).filter(Boolean).join("\n");
   }
   if (!contentHtml) return "";
-  return renderArticleBody({ title, subtitle, contentHtml, sectionLabel });
+  return renderArticleBody({ title, subtitle, contentHtml, sectionLabel, reply });
 }
 
 function articleSchema(post, url, image) {
@@ -1093,6 +1112,7 @@ async function main() {
           subtitle: post.excerpt || "",
           sectionLabel: post.pillar || "",
           markdown: post.body || "",
+          reply: true,
         });
         writeRoute(template, { path: `/writing/${post.slug}` }, head, bodyHtml);
         wrote++;
@@ -1184,6 +1204,7 @@ async function main() {
         subtitle: rec.excerpt || "",
         sectionLabel: rec.pillar || "",
         markdown: rec.body || "",
+        reply: true,
       });
       writeRoute(template, { path: `/writing/${rec.slug}` }, head, bodyHtml);
       wrote++;
