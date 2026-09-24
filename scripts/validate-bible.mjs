@@ -30,6 +30,7 @@ for (const b of books) {
       if (!v.t && !(v.later && v.w.length)) fail(`${p} verse ${v.v} has no text and no later-edition words`);
       verses++;
       words += v.w.length;
+      for (const w of v.w) if (/[\\/]/.test(w[0])) { fail(`${p} verse ${v.v}: source separator left in "${w[0]}"`); break; }
       xrefs += (v.x ?? []).length;
     }
   }

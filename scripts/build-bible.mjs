@@ -117,7 +117,9 @@ for (const f of canonical("TAHOT")) {
     // written-only Ketiv forms and editorial rows.
     if (!/^L|^Q/.test(type)) continue;
     const c = line.split("\t");
-    const heb = (c[1] || "").replace(/\//g, "").trim();
+    // "/" splits prefixes and "\\" sets off punctuation (sof pasuq, maqaf) in
+    // the source; the reader sees the word as printed.
+    const heb = (c[1] || "").replace(/[\/\\]/g, "").trim();
     const tr = (c[2] || "").replace(/\//g, "").trim();
     const gloss = (c[3] || "").replace(/\s*\/\s*/g, " ").replace(/\s+/g, " ").trim();
     const dstrong = c[4] || "";
