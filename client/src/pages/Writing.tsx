@@ -180,7 +180,15 @@ export default function Writing() {
   }, [posts, activeTrack, activePillar, activeSubTheme, activeAudience, activeFormat, effectiveSearch, isNewPillar, newPillarName, activeSub, subLabel, activeSeries]);
 
 
-  useEffect(() => { setVisibleCount(24); }, [activeTrack, activePillar, activeSubTheme, activeAudience, activeFormat, effectiveSearch, activeSub, activeSeries]);
+  // Reset pagination when the filters change: adjust state during render
+  // (React's recommended pattern) rather than in an effect, which would
+  // render the old page size once before correcting it.
+  const filterKey = [activeTrack, activePillar, activeSubTheme, activeAudience, activeFormat, effectiveSearch, activeSub, activeSeries].join("\u0000");
+  const [pagedFor, setPagedFor] = useState(filterKey);
+  if (pagedFor !== filterKey) {
+    setPagedFor(filterKey);
+    setVisibleCount(24);
+  }
 
   const activePillarInfo = activePillar ? PILLAR_BY_SLUG.get(activePillar) ?? null : null;
 

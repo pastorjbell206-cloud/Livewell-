@@ -779,6 +779,23 @@ function writeRoute(template, route, head, bodyHtml = "") {
   return target;
 }
 
+/**
+ * A SELECT list of the wanted columns that the live table actually has, each
+ * aliased to the name the code reads. Production's tables have drifted from
+ * drizzle/schema.ts (no posts.coverImage, no posts.readingTimeMinutes), and a
+ * single unknown column used to abort the whole database pass.
+ */
+async function selectList(conn, table, wanted) {
+  const [cols] = await conn.query(`SHOW COLUMNS FROM \`${table}\``);
+  const actual = new Map(cols.map((c) => [String(c.Field).toLowerCase(), String(c.Field)]));
+  const missing = wanted.filter((c) => !actual.has(c.toLowerCase()));
+  if (missing.length) console.warn(`[prerender] ${table} has no column(s): ${missing.join(", ")} (skipped)`);
+  return wanted
+    .filter((c) => actual.has(c.toLowerCase()))
+    .map((c) => `\`${actual.get(c.toLowerCase())}\` AS \`${c}\``)
+    .join(", ");
+}
+
 async function loadDb() {
   if (!process.env.DATABASE_URL) return null;
   try {
@@ -1071,7 +1088,7 @@ async function main() {
   if (conn) {
     try {
       const [dbPosts] = await conn.query(
-        "SELECT slug, title, excerpt, pillar, body, coverImage, publishedAt, updatedAt, createdAt FROM posts WHERE published = true"
+        `SELECT ${await selectList(conn, "posts", ["slug", "title", "excerpt", "pillar", "body", "coverImage", "publishedAt", "updatedAt", "createdAt"])} FROM posts WHERE published = true`
       );
       const posts = dbPosts.map(preferFullBody);
       for (const post of posts) {
@@ -1120,7 +1137,7 @@ async function main() {
       }
 
       const [books] = await conn.query(
-        "SELECT slug, title, description, author, coverImage FROM books WHERE published = true AND slug IS NOT NULL"
+        `SELECT ${await selectList(conn, "books", ["slug", "title", "description", "author", "coverImage"])} FROM books WHERE published = true AND slug IS NOT NULL`
       );
       for (const book of books) {
         const url = `${SITE_URL}/books/${book.slug}`;
@@ -1163,6 +1180,11 @@ async function main() {
       } catch {
         // table may not exist
       }
+    } catch (e) {
+      // A database problem costs the database pages only; the static essay
+      // library below must still be written (it used to be skipped entirely,
+      // leaving every essay with the homepage's title and description).
+      console.error(`[prerender] database pages skipped: ${e.message}`);
     } finally {
       await conn.end();
     }

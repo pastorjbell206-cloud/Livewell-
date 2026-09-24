@@ -78,4 +78,16 @@ describe("the essays moved to PCN", () => {
     const present = index.filter((r: any) => slugs.includes(r.slug)).map((r: any) => r.slug);
     expect(present, "moved essays still in client/public/essays/index.json; rerun pnpm run essays:public").toEqual([]);
   });
+
+  it("is absent from the Library catalogue, even when the database still holds the rows", async () => {
+    // @ts-expect-error — plain ESM script, no types.
+    const { assemble } = await import("../scripts/build-catalogue.mjs");
+    const dbRows = slugs.slice(0, 3).map((slug) => ({ slug, title: slug, excerpt: "", pillar: "pastoral-ministry" }));
+    const { items } = assemble(dbRows);
+    const listed = items
+      .filter((i: any) => i.kind === "Essay")
+      .map((i: any) => String(i.href).replace("/writing/", ""))
+      .filter((s: string) => slugs.includes(s));
+    expect(listed, "moved essays listed in the Library (scripts/build-catalogue.mjs)").toEqual([]);
+  });
 });

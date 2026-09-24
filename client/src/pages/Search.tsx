@@ -310,6 +310,17 @@ export default function SearchPage() {
             </div>
           ) : (
             <>
+              {/* The Library searches every kind of writing, Scripture
+                  references included; this page searches the database and
+                  six libraries. Offer the wider search on every query. */}
+              <p className="mb-8" style={{ fontFamily: "var(--U)", fontSize: "15px" }}>
+                <Link
+                  href={`/explore?q=${encodeURIComponent(query.trim())}`}
+                  style={{ color: "var(--ink)", fontWeight: 600, textDecoration: "none", borderBottom: "1px solid var(--mustard)" }}
+                >
+                  Search for “{query.trim()}” across the whole Library
+                </Link>
+              </p>
               {/* Essays, tools and books, from the files the site ships with:
                   no server needed, and the essay art on every hit. */}
               {essayMatches.length > 0 && (

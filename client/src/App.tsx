@@ -89,6 +89,7 @@ const Pathways = lazy(() => import("./pages/Pathways"));
 const TopicPathway = lazy(() => import("./pages/TopicPathway"));
 const EmailSignup = lazy(() => import("./pages/EmailSignup"));
 const Pillars = lazy(() => import("./pages/Pillars"));
+const Explore = lazy(() => import("./pages/Explore"));
 const LivingWell = lazy(() => import("./pages/LivingWell"));
 const TheologyExplorer = lazy(() => import("./pages/TheologyExplorer"));
 const WhichLens = lazy(() => import("./pages/tools/WhichLens"));
@@ -555,7 +556,7 @@ function Router() {
         <Route path="/quiz" component={TheologyQuiz} />
         <Route path="/skeptic-track" component={SkepticTrack} />
         <Route path="/roadmap" component={RoadMap} />
-        <Route path="/explore" component={ArticlesRedirect} />
+        <Route path="/explore" component={Explore} />
         <Route path="/library" component={Library} />
         <Route path="/diagnostic" component={Diagnostic} />
         <Route path="/study" component={Study} />

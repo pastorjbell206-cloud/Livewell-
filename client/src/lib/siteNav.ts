@@ -52,6 +52,7 @@ export const SITE_NAV_GROUPS: SiteNavGroup[] = [
     // "I want to read." The essays, the twelve to start with, the paths, the subjects.
     title: "Read",
     links: [
+      { label: "The Library: everything", href: "/explore", primary: true },
       { label: "All the writing", href: "/writing", primary: true },
       { label: "Start with these twelve", href: "/canon", primary: true },
       { label: "Reading paths", href: "/reading-paths", primary: true },

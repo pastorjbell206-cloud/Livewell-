@@ -79,7 +79,7 @@ export default function About() {
       </section>
 
       <StatementBand tone="light" width="38ch">
-        Theology is only worth anything if it holds up on a Tuesday afternoon.
+        Theology is only worth anything if it holds up in an ordinary life.
       </StatementBand>
 
       {/* THE CHURCH AND THE NETWORK */}

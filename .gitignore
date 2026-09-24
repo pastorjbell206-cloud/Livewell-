@@ -132,6 +132,8 @@ scripts/.fill2-spec.md
 
 # Generated at build time by scripts/build-pdfs.mjs (pnpm run pdfs)
 client/public/downloads/
+# Built by scripts/build-catalogue.mjs on every build (reads the database on deploy).
+client/public/catalogue/
 
 # Generated at build time by scripts/build-og-images.mjs (pnpm run og)
 client/public/og/
