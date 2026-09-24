@@ -668,3 +668,24 @@ hotline, local services, a pastor or counselor).
 - Ezekiel 8: 8:17 among the tiqqune soferim.
 - Ezekiel 17: Lachish letter 3 and Zedekiah's appeal to Egypt.
 - Ezekiel 23: ancient disfigurement penalties (likely the Middle Assyrian Laws).
+
+## Ezekiel 25–48
+
+**Checked and sound.** Josephus on Tyre's thirteen-year siege; Alexander's
+causeway (332 BC); Herodotus on Apries and Amasis; both readings of chapter
+28; chapters 36-37; Gog and Magog with no modern-nation identifications; the
+temple vision's readings, dates, measurements, and tribe and gate orders.
+
+**Corrected.** Ezekiel 25, 32, 36, 39, 42, 43: word counts, verse placements,
+and the Hebrew's "five hundred rods" (each side six times longer). Ezekiel
+27: mallach's etymology hedged. Ezekiel 31: Assyria fell to Nabopolassar and
+Nebuchadnezzar. Ezekiel 38: rosh as a place name (Septuagint, NASB) or a
+title (many scholars). Ezekiel 41: Ezekiel "from Jerusalem's priestly
+families"; the wooden altar's two identifications. Ezekiel 44: the Carites
+"probably" foreign. Ezekiel 47: the Gihon; Lebo-hamath probably in the Beqaa.
+
+**To double-check.**
+- Ezekiel 28: Ithobaal numbered II or III.
+- Ezekiel 29, 31: the fragmentary year-37 text (568/567 BC).
+- Ezekiel 38: Gog and Gugu of Lydia.
+- Ezekiel 45: the holy district 10,000 cubits (Hebrew) or 20,000 (Greek).
