@@ -30,7 +30,7 @@ Most men asking what the Bible says about being a father stand somewhere between
 
 **This essay turns on two distinctions and one claim beneath them. Authority is not the same thing as presence, and provision is not the same thing as attention; American fathers have usually been handed one half of each pair and told it was the whole. Underneath both lies the claim the church made in the fourth century against men who read God's fatherhood off their own: our fatherhood is not the pattern for God's. His is the pattern for ours. That answers the skeptic who says God is a father projected onto the sky, and it's the only good news I know for a man whose father left the word empty.**
 
-### The Strongest Case That God Is a Father Projected Onto the Sky
+## The Strongest Case That God Is a Father Projected Onto the Sky
 
 The skeptic's objection deserves to go first, in its strongest form. In 1841 Ludwig Feuerbach published *The Essence of Christianity*, a book Marian Evans (later George Eliot) translated into English in 1854 and one that taught the nineteenth century to read religion from below. Feuerbach's claim was that theology is anthropology in disguise. What believers worship as God is humanity's own nature, its reason and will and capacity to love, lifted out of human beings, perfected, and set over against them as a separate being. Feuerbach didn't sneer at Christianity; he took its doctrines seriously and claimed to have found the human truth hidden inside each one. His charge isn't that believers are fools. It's that they are talking about themselves without knowing it.
 
@@ -44,7 +44,7 @@ No theory of this kind should be trusted to explain any one man too neatly, and 
 
 But the Christian has a stranger answer than a draw, and it's the one that matters most for fathers. The church saw the projection problem coming. It fought it fifteen centuries before Feuerbach, on the ground of fatherhood itself.
 
-### Named From Above: What Athanasius Saw
+## Named From Above: What Athanasius Saw
 
 Around the year 318 a presbyter in Alexandria named Arius began teaching that the Son of God, however exalted, was himself a creature: there was a time, his followers said, when the Son was not. Much of the force of that position came from what everyone knows about fathers and sons. A father exists before his son; if God begot the Son, then God existed first, and the Son had a beginning. It was the common sense of human fatherhood applied directly to God. The Council of Nicaea rejected it in 325, confessing the Son "begotten, not made, of one substance with the Father," but the argument ran on for most of the century, and its most stubborn opponent was Athanasius, bishop of Alexandria from 328, exiled five times for refusing to give ground.
 
@@ -60,7 +60,7 @@ The correction matters, because *Abba* holds together what our culture keeps pul
 
 J. I. Packer saw where this leads. In *Knowing God* (1973) he wrote that "adoption is the highest privilege that the gospel offers: higher even than justification." Justification is the courtroom, the verdict of acquittal. Adoption is the acquitted man taken home and given the Father's name. For a man raised without a father, that chapter reads less like theology than like a deed of transfer. The office no man handed me was handed to me by God.
 
-### How American Fathers Went Missing
+## How American Fathers Went Missing
 
 The absent father has a history, and it doesn't begin with divorce. Israel's law assumed a father who would teach the commandments "when you sit in your house, and when you walk by the way" (Deuteronomy 6:7), a father whose instruction was woven through shared days. On the farm and in the workshop a son learned a trade, and a way of being a man, from a man he watched all day. The industrial revolution of the late eighteenth and nineteenth centuries moved paid work out of the house. The father became a breadwinner who left at dawn and came home at dark, and the home was reimagined, in the century's sentimental vocabulary, as the mother's sphere. Provision survived the change. Daily presence did not.
 
@@ -72,7 +72,7 @@ The careful research came later. Sara McLanahan and Gary Sandefur, in *Growing U
 
 Scripture had already named where the fatherless stand. "Father of the fatherless and protector of widows is God in his holy habitation. God settles the solitary in a home" (Psalm 68:5–6). The verse isn't sentimental. It's a statement of jurisdiction. The fatherless are under God's own protection, and a people that neglects them answers to him. We in the American church have been loud about the family as a political cause and quieter about the fathers in our own pews, the ones who have handed the formation of their children to a youth program and the ones who have simply gone. We've grieved the breakdown of the family as though it happened to us, rather than among us and sometimes through us.
 
-### The Provider's Case, and What It Leaves Out
+## The Provider's Case, and What It Leaves Out
 
 There is a man who hears all of this and bristles, and he deserves his hearing in the form he'd sign. He works fifty or sixty hours a week, sometimes nights, sometimes two jobs, and misses the recital because the shift can't be traded. He has never thought of that as absence. It is love in its most costly and least sentimental form. Perhaps he grew up in a house where the lights were shut off, and swore his children would never know that fear. He points out, correctly, that poverty does real harm, that the research itself found income explained much of the gap, and that the men who lecture him about presence usually hold jobs that allow it. He can cite Scripture: "But if anyone does not provide for his relatives, and especially for members of his household, he has denied the faith and is worse than an unbeliever" (1 Timothy 5:8). And he can point out that when Jesus wanted to show the Father's goodness, he reached for provision: "Or which one of you, if his son asks him for bread, will give him a stone? . . . If you then, who are evil, know how to give good gifts to your children, how much more will your Father who is in heaven give good things to those who ask him!" (Matthew 7:9, 11). To this man, talk of presence sounds like the ethic of the salaried class, and he suspects it of looking down on men like his own father, who never said much but never missed a rent payment.
 
@@ -86,7 +86,7 @@ Where it goes wrong is in concluding that because the thing was abused, the thin
 
 Paul holds both in a single sentence. "Fathers, do not provoke your children to anger, but bring them up in the discipline and instruction of the Lord" (Ephesians 6:4). Both clauses are commands aimed at the same man. The text won't let the father abdicate, and it won't let him crush. The ghost has dropped the second clause's content. The tyrant has dropped its restraint.
 
-### The Father Who Ran, and the Hearts of the Fathers
+## The Father Who Ran, and the Hearts of the Fathers
 
 The parable of the two sons also gives the clearest picture in Scripture of what a father's authority is for. The younger son demands his inheritance while his father still lives, spends it, and comes home rehearsing a speech about being taken on as a hired hand. "But while he was still a long way off, his father saw him and felt compassion, and ran and embraced him and kissed him" (Luke 15:20). Kenneth Bailey, who taught the New Testament for decades in the Middle East, argued in *Finding the Lost* (1992) that in the village world Jesus described, a man of standing did not run; to run he had to gather up his robes and make himself a spectacle, and the father takes that shame on himself to reach his son before the village does. The text itself is plain about where the father's authority goes. It's still his house, his robe, his ring and his feast, and he gives the orders. He spends all of it closing the distance. Then he leaves his own party to go out to the elder son as well: "his father came out and entreated him" (Luke 15:28). That's authority spent as presence, and it is what the Father whose name we carry is like.
 

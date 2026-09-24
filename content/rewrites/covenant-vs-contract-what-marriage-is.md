@@ -33,7 +33,7 @@ Couples argue about money and chores and whose family gets Christmas, but rarely
 
 I should say where I'm standing. I'm a pastor, married to Susanna, and we're raising five sons. I also came to faith out of atheism, and I haven't forgotten how reasonable the contract view sounds from outside, or how often the church's talk of covenant sounded like a way of keeping people in rooms they had every right to leave. The Christian claim about marriage is very large, the history of its misuse is real, and I won't defend the first by pretending the second away.
 
-### The case for the contract
+## The case for the contract
 
 Start with the other side in the form its best defenders would sign. For most of Western history, the argument runs, the language of permanent union didn't protect women; it absorbed them. When William Blackstone summarized English law in his *Commentaries on the Laws of England* (1765), he described the doctrine of coverture in words that sound almost like a sermon on Genesis: "By marriage, the husband and wife are one person in law: that is, the very being or legal existence of the woman is suspended during the marriage." That is "one flesh" turned into legal machinery, and what it meant in practice, in England and in the American states that inherited its common law, was that a married woman generally could not hold property in her own name, make contracts, or keep her own wages. The unbreakable bond was a real cage, and pulpits defended it.
 
@@ -43,7 +43,7 @@ Robert Bellah and his colleagues gave the underlying sensibility a name in *Habi
 
 I grant most of it. There are marriages that ought to end, and a theology that can't say so has made an idol of an institution and fed people to it. Covenant worth the name protects the vulnerable before the institution. What I don't grant is the conclusion, because the contract offered as the cure doesn't deliver the dignity it promises.
 
-### What a contract protects, and what a covenant binds
+## What a contract protects, and what a covenant binds
 
 A contract exists to protect each party from the other. That is its genius. When I sign one, I'm preparing for the day the other party fails me, specifying in advance what I'm owed and what I'll do if I don't get it. Every contract is written with one eye on the exit, and in commerce that is exactly right. But a contract keeps the parties two. It marks where you end and I begin, and it guards the self. A marriage built on that logic will keep two selves intact and adjacent, each watching the ledger, each checking whether the benefit still exceeds the cost. When such a marriage ends, the contract hasn't failed. It kept two people safe from each other right up to the moment it released them from each other. What it promised on top of that, intimacy with an exit, is a contradiction, because intimacy is the surrender of exactly the self-protection a contract exists to preserve.
 
@@ -57,7 +57,7 @@ Marriage enters Scripture before the word covenant is ever attached to it. "It i
 
 The later Scriptures name what Genesis enacts. Proverbs warns against the woman "who forsakes the companion of her youth and forgets the covenant of her God" (Proverbs 2:17, ESV), and Malachi indicts the men of Judah on the same ground: "the LORD was witness between you and the wife of your youth, to whom you have been faithless, though she is your companion and your wife by covenant" (Malachi 2:14, ESV). Notice who is in the room. A contract has two parties. A marriage, in Scripture, has a witness, and the witness is God. When the Pharisees test Jesus on divorce, he goes back behind Moses' concession, "from the beginning it was not so" (Matthew 19:8, ESV), and names the true agent of the union: "So they are no longer two but one flesh. What therefore God has joined together, let not man separate" (Matthew 19:6, ESV). The couple consents. God joins.
 
-### From sacrament to contract
+## From sacrament to contract
 
 We didn't arrive at the contract in 1969. The movement took sixteen centuries, and each stage answered a real problem, which is why it's so hard to see.
 
@@ -77,7 +77,7 @@ Then came *Obergefell v. Hodges* in 2015, in which the Supreme Court held that t
 
 The verdict of the history cuts in every direction. The conservative church that dates the fall of marriage to 2015 has to account for the divorces in its own pews and its quiet acceptance of the soulmate model. The progressive church that dissolved covenant into affirmation has to account for what it subtracted. We didn't lose marriage in a courtroom. We lost it at our own kitchen tables, when we began to believe marriage was for the self and kept the old words for the ceremony.
 
-### The vow and the stranger
+## The vow and the stranger
 
 The shift is buried inside one word. A vow is an odd kind of speech. When you vow, you are not predicting your future feelings. You are binding your future self in advance, against the day your feelings argue otherwise, precisely because you know they will. The traditional vows say so bluntly: for better, for worse, in sickness and in health. We hear poetry, but those are terms, addressed to the diagnosis, the lost job, the year you don't like each other. The vow exists for the day the contract would have ended. A preference, unlike a vow, is revisable the moment it stops preferring, and once marriage became a preference, its ending no longer required any explanation at all.
 
@@ -89,7 +89,7 @@ Timothy Keller develops the same claim in *The Meaning of Marriage* (2011), writ
 
 None of us gets to point at this from outside. Most married people keep a ledger in small ways and on ordinary evenings, measuring what they've given against what they think they're owed, and the ones who insist they don't are usually keeping it most carefully. The ledger is the contract living quietly inside a covenant. It appears as the silence after an argument that neither person will break first, as the fair division of chores that has replaced any gift, as a marriage that stays technically compliant while two people become strangers in the same bed. And we pastors have often made it worse, spending premarital hours on budgets and communication skills while barely explaining what a vow is, or who is listening when it's made.
 
-### When the covenant is broken
+## When the covenant is broken
 
 All of this can be turned into a weapon, and has been. So, plainly: a covenant is not a sentence to endure abuse, and nothing in Scripture or in this essay requires anyone to stay in a home where they are being harmed. The spouse who beats, terrorizes or controls by fear has already broken the covenant, and shattered the one flesh long before the other said a word about it. To tell a battered spouse that the vow obliges them to remain inside the violence is the institution feeding on the person it was meant to shelter, and the church has sometimes done exactly that and called it faithfulness. If you are in danger, safety comes first. In the United States, the National Domestic Violence Hotline is 1-800-799-7233, and if you are thinking of ending your life, call or text 988. A person in that situation also needs an advocate and often a lawyer; nothing here is legal advice.
 
@@ -99,7 +99,7 @@ The argument of this essay leads toward the Reformation view, with persistent ab
 
 What the three views share matters more than where they part. None treats marriage as a contract. Each asks what breaks a covenant, not what ends a contract. A contract ends when the benefit fails. The covenant is broken only by betrayal, and even then Scripture grieves it as a death rather than filing it as a default.
 
-### What the marriage was always pointing at
+## What the marriage was always pointing at
 
 The Christian claim is not finally that covenant works better. It is that marriage was never mainly about the two people in it, and the prophets saw it first. God told Hosea, "Go again, love a woman who is loved by another man and is an adulteress, even as the LORD loves the children of Israel, though they turn to other gods and love cakes of raisins" (Hosea 3:1, ESV). A prophet's broken marriage became the sermon, and the sermon was that God does not leave: "I will betroth you to me forever" (Hosea 2:19, ESV). Jeremiah names the covenant at Sinai as one "that they broke, though I was their husband, declares the LORD" (Jeremiah 31:32, ESV). The whole history of Israel is a marriage kept by one party.
 

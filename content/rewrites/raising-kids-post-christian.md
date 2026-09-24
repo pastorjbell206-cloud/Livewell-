@@ -31,7 +31,7 @@ I have five sons, and that question has come to my own table. I didn't have a go
 
 The first honest thing to say to that child is that he's right. Most of the people around us don't believe what we believe. The second honest thing is that this has been true for most of the Christians who have ever lived, and that the Bible was written almost entirely for people in exactly his position. The strange thing isn't that our children are growing up as a minority. The strange thing is that for a few centuries their grandparents didn't have to.
 
-### What the Culture Used to Do for Us
+## What the Culture Used to Do for Us
 
 The sociologist Peter Berger gave us the language for what has changed. In *The Sacred Canopy* (1967) he argued that every picture of the world, religious or otherwise, stays believable only as long as it is held up by what he called a plausibility structure: the web of people, institutions and ordinary conversations that treat it as obviously real. Nobody believes alone. For most of Western history the Christian story was held up by a canopy of that kind. The parish, the calendar, the school, the court and the family table all assumed the same story, and a child raised under that canopy absorbed the faith the way he absorbed his language.
 
@@ -47,7 +47,7 @@ None of this means the old canopy was a golden age. It produced genuine saints, 
 
 The indictment starts with us. My generation of Christian parents, and the pastors who served them, which includes me, grew used to a culture that reinforced what we said on Sunday. We outsourced the formation of our children to the ambient Christianity of the neighborhood and then to programs designed to replace it, and we measured success by attendance. The culture stopped reinforcing us, and we discovered how thin the thing we had been passing on really was.
 
-### The Minority Household Is the Normal One
+## The Minority Household Is the Normal One
 
 The panic in many Christian homes assumes that the minority position is a new and unnatural condition. The New Testament assumes the opposite. Every letter in it was written to small communities inside a culture that did not share their faith, and much of what they say about the household assumes homes where only some members believed.
 
@@ -61,7 +61,7 @@ A generation or two later the anonymous *Epistle to Diognetus*, written to a pag
 
 So when a child says nobody else believes this, the Christian parent can tell him the truth with some confidence. You are in the company of Timothy, and of the children in Pliny's courtroom, and of every Christian child in the second century. The minority household isn't a sign that something has gone wrong with the faith. It's the condition the faith was born in.
 
-### Exile Is Not a Siege
+## Exile Is Not a Siege
 
 A family that realizes it has become a minority tends to reach for one of two pictures of itself: siege or exile. They look alike from a distance, but they produce very different children.
 
@@ -79,7 +79,7 @@ The church's two most common responses to the end of Christendom are both siege 
 
 I'm not writing from outside any of these. Pastors are as vulnerable as anyone to the siege, because fear fills rooms, and to the slow accommodation, because it keeps them full, and many of us have taken a turn at both.
 
-### The Benedict Option and Its Critics
+## The Benedict Option and Its Critics
 
 No recent book has pressed the question of the Christian household harder than Rod Dreher's *The Benedict Option* (2017), and it deserves to be stated in the form its admirers would sign. Dreher took his title from the last page of Alasdair MacIntyre's *After Virtue* (1981), which compared our moment to the late Roman Empire, when people of good will turned from propping up the imperium to building local communities in which the moral and intellectual life could survive the dark ages, and closed by saying that we too were waiting for another, very different St. Benedict. Dreher argued that the culture war was lost, treated the sexual revolution as the decisive defeat and the Supreme Court's decision in *Obergefell v. Hodges* (2015) as a marker of it, and held that Christians who wanted Christian grandchildren had to build thick communities of practice on the pattern of the Rule of St. Benedict, with its ordered prayer, stability, work and hospitality. He commended classical Christian schools and homeschooling, tight congregations, limits on children's technology, and what the Czech dissident Václav Benda called a "parallel polis," the underground institutions that let dissidents live truthfully under communism.
 
@@ -93,7 +93,7 @@ Where the essay lands is this. Whether a family homeschools, chooses a Christian
 
 But the strongest objection deserves to stand. Dreher would answer that faithful presence, without thick community to sustain it, is usually just assimilation with better manners, and the last fifty years of American church life give him a good deal of evidence. A family that sends its children into the city without a plausibility structure strong enough to hold them is practicing wishful thinking more than exile. That objection hasn't been fully answered here. The nearest thing to an answer is that Jeremiah wrote to a people, not to a family. The exile needs a congregation as well as a home, and no household can be that congregation by itself.
 
-### Every Household Keeps a Liturgy
+## Every Household Keeps a Liturgy
 
 If the congregation is the exile's wider plausibility structure, the household is its daily one, and James K. A. Smith helps explain why. In *Desiring the Kingdom* (2009) Smith argues that human beings are lovers before they are thinkers, liturgical creatures whose deepest loves are shaped less by the ideas we hold than by the practices we repeat. His best-known example is the shopping mall, which teaches a whole vision of the good life without making an argument. The implication for parents is uncomfortable. Every household already keeps a liturgy. The Sunday tournament that outranks worship, the phone at the table, the anxious years of building a résumé for the right college: these are catechisms, and they teach a child what his parents actually love more reliably than anything the parents say. I can't write that sentence from a safe distance. Pastors' homes keep these liturgies too.
 
@@ -101,7 +101,7 @@ Daniel's story turns on a small phrase. When a decree made prayer to anyone but 
 
 So exile, in a household, looks mostly unremarkable. It looks like a Lord's Day kept even when it costs something the child wanted. It looks like parents who pray aloud in plain words, who confess their own sins to their children and ask forgiveness, and who tell the truth about the church's failures before a critic does. It looks like a table where the unbelieving neighbor is a welcome guest, and where the children never hear that neighbor spoken of as the enemy, because they are watching their parents seek the shalom of the city. And it looks like a home where the child's question, why do we believe this when nobody else does, is received as the beginning of a conversation rather than a threat.
 
-### Elect Exiles
+## Elect Exiles
 
 Peter opens his letter to the Christians of Bithynia and the neighboring provinces by calling them "elect exiles" (1 Peter 1:1), and he tells them what that name requires: "Beloved, I urge you as sojourners and exiles to abstain from the passions of the flesh, which wage war against your soul. Keep your conduct among the Gentiles honorable, so that when they speak against you as evildoers, they may see your good deeds and glorify God on the day of visitation" (1 Peter 2:11–12). Both halves are there, the refusal and the presence, the king's food declined and the city's welfare sought. Peter assumes the neighbors are watching and will misunderstand, and he tells the exiles to live in a way that can't finally be explained without God.
 

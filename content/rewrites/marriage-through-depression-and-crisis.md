@@ -25,7 +25,7 @@ Two things need to be said first. If your husband or wife has talked about wanti
 
 The argument that follows is simple to state. The church has often confused kinds of sorrow that its own older tradition learned to tell apart, and it has answered all of them with explanations, when Scripture's first answers are care for the body, presence for the soul, and a language of lament that lets a person speak to God from the bottom of the pit. And we have nearly forgotten the spouse who stays well, who carries the house, and who is quietly going under.
 
-### What the illness does to a marriage
+## What the illness does to a marriage
 
 Depression isn't sadness, or not only sadness. The person you love goes flat. The things that used to reach them, a joke, a child's news, your hand on their back, don't seem to land. Sleep goes wrong. Small decisions become impossible. Sometimes it looks less like grief than like irritability, a short fuse and a closed door, and the well spouse spends months thinking the problem is the marriage. Very often there's no clear cause, which may be the cruelest part, because the well spouse keeps searching for the thing to fix and there's frequently nothing there that fixing would cure.
 
@@ -33,7 +33,7 @@ A marriage runs on reciprocity: two people give and receive, and the giving is r
 
 The second work is where the church has sometimes done real harm. Get help, and don't let anyone shame your spouse for receiving it. What you're seeing may be depression, or grief, or another medical problem, or a medication's side effect, and sorting that out is a doctor's work, not yours and not a pastor's. Treatment may include counseling, medication, or both, as the professionals judge. The idea that a faithful Christian ought to be able to pray their way out of a major depression isn't only mistaken; it can be dangerous, because it keeps sick people from care. We don't tell a diabetic that insulin shows a lack of faith. The brain is an organ of the body God made, and sometimes it gets sick. Treating it is stewardship, not unbelief. The spouse who gently insists on treatment, makes the appointment, and sits in the waiting room is doing one of the most loving things a marriage allows. Pray, by all means, for the doctor and the patience to wait. Prayer and medicine have never been rivals, and those of us who taught otherwise owe the sick an apology.
 
-### Three sorrows the church learned to tell apart
+## Three sorrows the church learned to tell apart
 
 In the late fourth century Evagrius of Pontus, a monk in the Egyptian desert, described in his *Praktikos* the thoughts that assailed the men who had gone there to pray. Two of his eight matter here. One is *lypē*, sadness, which he ties to loss and frustrated desire. The other is *akēdia*, acedia, which he calls the noonday demon after the Greek text of Psalm 91:6. Acedia makes the day feel endless, sends the monk to the window again and again, fills him with contempt for his cell and his brothers, and persuades him that he'd serve God better and be happier somewhere else. Its remedy is to stay, to keep to the cell and the work and the prayers until the temptation passes. By the time Gregory the Great set out his list of capital sins in the late sixth century, acedia had been folded into sadness, and later medieval teaching slowly flattened it into sloth.
 
@@ -47,7 +47,7 @@ So here is the distinction the church at its best has drawn, and that Kathleen N
 
 There's an uncomfortable turn in that old distinction. In a marriage darkened by depression, the one most exposed to acedia may not be the sick spouse at all. It may be the well one, who is not ill but exhausted, who looks at the house and the silent person in it and begins to feel, with a force that seems like insight, that life must be somewhere else. That feeling isn't a sin to be ashamed of. It's a temptation to be recognized, and we'll return to it.
 
-### What Job's friends got right for a week
+## What Job's friends got right for a week
 
 The Bible's longest meditation on suffering contains both the best and the worst pastoral care ever recorded, and they come from the same three men.
 
@@ -65,7 +65,7 @@ Psalm 88 goes further, and its willingness to go further is a mercy. It's the on
 
 Kathryn Greene-McCreight, an Episcopal priest and theologian, wrote of her own severe mood disorder in *Darkness Is My Only Companion* (2006), a title that echoes that psalm's last line. She describes seasons when she couldn't pray and had to be carried by the prayers of others, and she receives psychiatric treatment as a gift within the Christian life rather than a betrayal of it.
 
-### Sleep and bread before theology
+## Sleep and bread before theology
 
 If Job gives the pattern of bad comfort, Elijah gives the pattern of God's care, and the order of that care is the lesson.
 
@@ -77,7 +77,7 @@ Sleep and bread, twice; then the conversation, the correction and the friend. Go
 
 Now turn the story toward the one doing all this. Elijah's first mistake was leaving his servant behind, and the well spouse is in real danger of doing the same. Caring for a depressed husband or wife is among the heaviest loads a person carries, and it's often carried in secret, out of loyalty and embarrassment and a wish to protect the sick spouse's dignity. Your suffering is real too, even though your spouse is the one who is sick. Getting your own support isn't betrayal. It means a counselor of your own, a doctor if your own sleep and health are failing, one or two friends who know the truth, and a church that can bring meals and pray without gossiping. Organizations such as the National Alliance on Mental Illness offer education and support specifically for family members. Burton's last counsel is yours as much as the sufferer's: don't be solitary. And the angel's instruction to eat and sleep is yours as well.
 
-### The case for leaving, stated fairly
+## The case for leaving, stated fairly
 
 Some readers have waited through all of this to see whether the essay will be honest about them. Their case isn't weak, and it goes something like this. I didn't sign up for this. The person I married is gone, and it's been years, not months. I've given everything and nothing comes back. I'm losing my own health. The children are growing up with one parent absent in the next room and the other running on fumes, and they're learning that this is what marriage is. My spouse has refused treatment, or tried it halfway and quit, and I can't make a grown adult get well. The church's old insistence on staying no matter what trapped people, often women, in lives that crushed them. Surely God doesn't require me to disappear into someone else's illness for the rest of my life.
 
@@ -91,7 +91,7 @@ The strongest objection this essay can't fully answer is the spouse who refuses 
 
 Here the word from the desert returns, gently. Some of what the exhausted spouse feels is plain depletion, cured by rest and help. Some may be the noonday demon, the restless certainty that peace lies anywhere but here. At two in the morning you can't always tell which, which is why the decision shouldn't be made at two in the morning, or alone.
 
-### A promise written for the dark
+## A promise written for the dark
 
 The vow is where a marriage stops running on feeling and starts running on structure, and in a season like this the structure is the whole point. When one of the two people holding a marriage up can't feel anything at all, a marriage built only on feeling has nothing left to stand on. The promise carries the weight the emotions used to carry. One of the few mercies hidden in a dark season is finding out that it can, that the vow was made of something stronger than your mood or theirs.
 

@@ -35,7 +35,7 @@ I have sat in the meetings where churches explain this to themselves. Better mar
 
 Both contain something true. But the honest account is harder than either. The culture made leaving the church possible in a way it had never been before. The church, too often, made leaving reasonable. And the people who walked out are right about more than we would like to admit and mistaken about one thing that matters more than all the rest, which is the belief that Christ can be kept while his body is set down. That belief is sincere, and it is widely held, and it almost never survives a second generation. Seeing why requires going back further than the latest survey.
 
-### Who the Nones Are and When They Arrived
+## Who the Nones Are and When They Arrived
 
 The word came out of survey method before it named a movement. Since 1972 the General Social Survey, run by NORC at the University of Chicago, has asked a national sample of Americans, "What is your religious preference?" Someone who answers "none" is counted as one of the nones. For most of the next two decades that answer came from somewhere between one American in twenty and one in fifteen, and the line on the chart barely moved. Then, in the 1990s, it began to climb, and it has not come back down. By 2021 the Pew Research Center put the religiously unaffiliated at 29 percent of American adults, larger than any single Christian tradition in the country.
 
@@ -49,7 +49,7 @@ I would have checked that box once, and in my case it meant atheist, which makes
 
 One distinction clarifies nearly everything that follows. Sociologists measure three different things that headlines tend to blur: belonging, which is membership or the name you give when asked your religion; behaving, which is whether you actually attend; and believing, which is what you hold to be true about God. Gallup and the General Social Survey measure the first. Attendance and belief are separate lines. A person can drop the name and keep praying, or keep the name and never walk through a door. The most important question in this essay lives in the gap between belonging and believing, and whether that gap can stay open for long.
 
-### What Secularization Theory Got Wrong and What It Got Right
+## What Secularization Theory Got Wrong and What It Got Right
 
 For much of the twentieth century, sociologists thought they already knew the ending of this story. The classic statement came from Peter Berger in *The Sacred Canopy* (1967). Religion, Berger argued, is held up by what he called plausibility structures: the web of conversation, institutions and shared practice that makes a belief feel obviously true to the people inside it. Modernity tears that web. Cities mix strangers with different gods. Science and bureaucracy explain large parts of life without reference to heaven. As the canopy frays, religion retreats into the private self, and eventually, many of Berger's contemporaries assumed, it fades. The more modern a society, the less religious it would become.
 
@@ -65,7 +65,7 @@ And the church is not the only institution losing its members. Putnam's *Bowling
 
 Everything in that account is true, and a church that ignores it will blame itself for weather it did not make. But it does not explain as much as it is often asked to. Pluralism removed the social cost of leaving. It did not supply a reason to leave, and it cannot tell us why one person with every freedom to walk away stays while her neighbor, with the same freedom, goes. The culture made leaving possible. The next question is what made it worth doing.
 
-### The Case the Leavers Make
+## The Case the Leavers Make
 
 The people who left with good reasons deserve to have their case stated as they would state it. It goes something like this. We believed what you taught us. You told us the truth mattered, that the weak were precious to God, that sexual integrity was holy, that humility was the mark of a disciple, and that Jesus is Lord and Caesar is not. Then we watched what you did with power, with money, with children, and with the people who asked questions you didn't want asked. We did not leave because we stopped believing your sermons. We left because we believed them, and you didn't seem to.
 
@@ -83,7 +83,7 @@ Scripture does not let the church hear any of this defensively. When the Lord in
 
 This is where a distinction becomes necessary. Some people leave because of the offense of the gospel itself. Paul was plain that "we preach Christ crucified, a stumbling block to Jews and folly to Gentiles" (1 Corinthians 1:23), and no amount of repentance or reform will make a crucified and risen Lord easy to accept. That offense the church can't remove and mustn't try to. But a great many people leave because of the offense of the church: the cover-up, the partisanship, the contempt for questions, the budget that tells a different story than the sermon. That offense the church must remove. American congregations have a habit of claiming the first when they are guilty of the second, describing every departure as persecution and every critic as someone who couldn't bear the truth. It is a comfortable story. It lets us keep everything.
 
-### Drift, and the Faith We Handed Down
+## Drift, and the Faith We Handed Down
 
 Not everyone who left was wounded, and treating every departure as a wound misreads most of them. In *The Great Dechurching* (2023), Jim Davis and Michael Graham, working with Ryan Burge's survey research, estimated that roughly forty million American adults who once attended church regularly no longer do, and they argued that this is the largest and fastest religious shift in the country's history. Their most important finding was about how people left. The largest share did not walk out in anger. They drifted. They moved, changed jobs, had a baby, or found that a season of disruption had turned into a way of life. A smaller group had been harmed, by abuse or by leaders who misused their authority, and the authors take that group seriously. But most dechurching, in their account, was ordinary. Sunday came, and nobody went, and then it kept happening.
 
@@ -95,7 +95,7 @@ Look at what that faith does not need. It does not need a congregation, because 
 
 The contrast with the early church could hardly be sharper. The letter to the Hebrews was written to believers who had once paid a real price for gathering. The writer reminds them that they "endured a hard struggle with sufferings, sometimes being publicly exposed to reproach and affliction," and it adds, "you joyfully accepted the plundering of your property" (Hebrews 10:32–34). For them, gathering cost something and leaving offered relief. For most Americans until recently, gathering cost almost nothing and leaving cost a little social standing. Now leaving costs nothing at all, and the question is whether the church has given anyone a reason to stay once staying is no longer expected.
 
-### Leaving the Church Without Leaving Christ
+## Leaving the Church Without Leaving Christ
 
 The distinction the leavers draw is real, and the church should stop pretending otherwise. A person can leave an institution without leaving Christ. Grace Davie named the pattern in Britain in 1994 as believing without belonging, and Hout and Fischer found it among the American nones of the 1990s. In John 6, after a hard teaching, "many of his disciples turned back and no longer walked with him," and Jesus asked the Twelve, "Do you want to go away as well?" Peter's answer says nothing about the company: "Lord, to whom shall we go? You have the words of eternal life" (John 6:66–68). Faith attaches to a Person before it attaches to a room.
 
@@ -109,7 +109,7 @@ Cyprian of Carthage, writing around 251, argued that no one can have God for his
 
 Dietrich Bonhoeffer wrote *Life Together* (1939) after the Gestapo had closed his underground seminary, and he supplies the word both sides need. The person who loves his dream of community more than the actual community, he warned, becomes its destroyer, and God's grace often arrives by shattering the dream. The warning falls first on churches that love their image more than their wounded members, and then on anyone waiting for a congregation that will never disappoint them.
 
-### What Remains
+## What Remains
 
 The first obligation belongs to the church, and it is repentance, not a relaunch. That means telling the truth about abuse and handing abusers to the police even when the institution pays for it. It means refusing to let any party, right or left, write the sermon. It means making room for the questions the dones brought and the church sent away. None of it is a strategy for getting people back, and if it's done as one, the people who left will know. They have learned to recognize marketing.
 

@@ -33,7 +33,7 @@ So when I say the objection is serious, I am not being generous. I am rememberin
 
 **Nobody at the table avoids an exclusive claim, the pluralist included, so the honest question is not whether to make one but which one is true. The Christian claim began as the defiance of the powerless rather than the boast of the strong, it locates salvation in a person received as a gift, and it settles who the Savior is without handing anyone the roster of the saved.**
 
-### The Case for Many Ways, at Full Strength
+## The Case for Many Ways, at Full Strength
 
 Here is the objection in its strongest form, and I will not soften it, because a version you can knock over is not worth answering. The philosopher John Hick spent a career pressing it, and he pressed it well. He had come to faith as a young man in an evangelical form, and what moved him away from it was, by his own account, a city. From 1967 he taught at the University of Birmingham, and in the mosques, gurdwaras, temples and synagogues of his neighbors he found people doing what he believed Christians did in church, opening themselves to a reality greater than themselves and being changed by it.
 
@@ -45,7 +45,7 @@ And underneath the philosophy sits an intuition even harder to shake, because it
 
 Grant all of it. Grant that the church has often held this doctrine like a weapon, has used the word only to bless conquest and baptize contempt, has said to the grieving what should never be said to the grieving. Grant that a great deal of what passes for defending the exclusivity of Christ has been the ugliest thing in the room. If you do not feel the force of that, you are not ready to say the next sentence.
 
-### Three Answers the Church Has Given
+## Three Answers the Church Has Given
 
 Before the next sentence, it helps to know that Christians have given not one answer here but three. In *Christians and Religious Pluralism* (1983), the English theologian Alan Race sorted them into the scheme nearly every discussion since has used or argued with: exclusivism, inclusivism and pluralism.
 
@@ -55,7 +55,7 @@ Inclusivism holds that Christ alone saves, but that his grace may reach people w
 
 Pluralism is Hick's own answer: no tradition is the center, and every tradition is a valid path to the one Real. In fairness to him, he knew its price and paid it openly. If Christianity is one planet among many, the church cannot go on saying that the eternal Son of God became a man in Jesus of Nazareth, because that would make one tradition the center after all. So in 1977 Hick edited *The Myth of God Incarnate*, in which he and his fellow contributors argued that the incarnation should be read as myth or metaphor rather than as a literal claim about who Jesus was. That was consistent, and it shows what pluralism actually does. It does not add Jesus to the list of ways. It revises what the church has always said about Jesus until he fits on the list, and at that point the question is no longer whether Christianity can make room for other faiths but whether what remains is still Christianity.
 
-### Who Is Telling the Story of the Elephant?
+## Who Is Telling the Story of the Elephant?
 
 Now watch what the argument does when you turn it over.
 
@@ -69,7 +69,7 @@ The religions themselves bear this out once we read what they teach. They disagr
 
 This is the thing I did not see when I was on the other side. I thought pluralism was the humble position and exclusivity the arrogant one. It is the reverse. Pluralism does not refuse the total claim. It makes a total claim and calls the refusal humility. Everyone at the table is making a truth claim about the whole. The Buddhist who says the self is an illusion and the Christian who says the self is loved by name are not describing the same elephant from two angles. They are saying incompatible things about what is finally real, and the pluralist who says they are both partial is not standing outside that disagreement. He has joined it, on a third side, and pretended he floated above it.
 
-### The Charge of Arrogance and the Accident of Birth
+## The Charge of Arrogance and the Accident of Birth
 
 The charge of arrogance, the one most people actually feel, deserves its own answer. The philosopher Alvin Plantinga took it up in "A Defense of Religious Exclusivism" (1995). The complaint is that the Christian believes what millions of thoughtful, devout people reject, and that holding on anyway is arrogant. Plantinga's reply is patient rather than clever. Suppose, he says, she has weighed the other faiths as carefully as she can, has found their followers admirable, and still finds that the gospel seems true. If she goes on believing it, she is doing what the pluralist does, holding a view about religion that others reject. If she suspends judgment, she has taken a third position that both of them think mistaken. If believing what others deny is arrogance, everyone is arrogant, including the person bringing the charge. Plantinga conceded something, and the concession matters: knowing that wise and holy people see the world otherwise can reasonably lower a person's confidence and may send her back to examine what she holds. That is not a defeat. It may be the beginning of a faith held with open eyes rather than inherited ones.
 
@@ -79,7 +79,7 @@ Scripture does not treat geography as an accident at all. When Paul stood before
 
 So the question was never whether we can avoid an exclusive claim. No one avoids one. The question is which exclusive claim is true. And that is a different kind of question, a harder and more honest one, and it deserves better than the charge of arrogance, because the charge applies to the one making it just as much.
 
-### No Other Name, Spoken From the Dock
+## No Other Name, Spoken From the Dock
 
 Then there is the history, which almost everyone gets backwards. When people hear the church say there is no other name, they hear Christendom talking. They hear cathedrals and crusades, the strong telling the weak that the weak must convert or be damned. But go back to where the sentence was first spoken. Peter says it in the fourth chapter of Acts, and the scene is not a throne room. Peter is a fisherman standing trial. He and John have been arrested, hauled before the very council that arranged the execution of Jesus only weeks earlier, and asked by what power they had healed a lame man. It is into that, powerless before the people who could kill him as easily as they killed his teacher, that Peter says it: "And there is salvation in no one else, for there is no other name under heaven given among men by which we must be saved" (Acts 4:12). The next verse records that the council perceived "that they were uneducated, common men," and "they were astonished" (Acts 4:13). That is not the language of empire. That is a condemned minority refusing to add the emperor's name, or the council's, to the name of the crucified man they will not stop preaching. The exclusivity did not begin as a boast of the powerful. It began as the defiance of the powerless, and it cost most of them their lives.
 
@@ -87,7 +87,7 @@ The scandal of the claim was never that it grabbed too much power. The scandal w
 
 This is also why the image of many paths up one mountain misses the Christian claim. Most religious systems are instructions for a climb. The gospel says the climb cannot be made, and that God came down into the valley where we are. The one way is not a wall but a rescue, and the rescued include every Christian who has been smug about it. We have held the name of Jesus like a membership card rather than a rope thrown to the drowning, and a person pulled half dead out of the water has no standing to sneer at anyone still in it. The Jesus who said he was the way is the same Jesus who marveled at the faith of a Roman officer, "Truly, I tell you, with no one in Israel have I found such faith," and then warned that "many will come from east and west and recline at table with Abraham, Isaac, and Jacob in the kingdom of heaven, while the sons of the kingdom will be thrown into the outer darkness" (Matthew 8:10–12). His hardest words were kept for the religious insiders who were sure of their place.
 
-### The Savior and the Roster
+## The Savior and the Roster
 
 I need to be careful here, because two questions get fused and they are not the same. One is whether Jesus is the only Savior, whether the cross is the sole ground on which any human being is ever reconciled to God. The historic church answers yes, and it is bound to, because the whole faith stands on it. The other question is whether every person must consciously hear and name him in this life to be reached by what he did. That question is genuinely harder, the church has held more than one faithful answer to it, and it is not the one I am settling today. Hold it open. What the exclusivity of Christ settles is the mechanism, that all grace runs through one cross. It does not by itself hand you the roster of who is saved, and anyone who tells you it does has said more than the text does.
 
@@ -97,7 +97,7 @@ The first answer holds that explicit faith is necessary, and it rests on Paul's 
 
 This essay does not choose among the three. It leaves the matter where it found it, open, before the question Abraham asked over a city not his own: "Shall not the Judge of all the earth do what is just?" (Genesis 18:25). The strongest objection to that openness is the one Romans 10 raises. If God may reach people without a messenger, why send one? The answer is partial and has to be said so. The church does not go because it has calculated the roster. It goes because the name has been given, because hidden grace is not the joy of knowing whom you have trusted, and because God "commands all people everywhere to repent" (Acts 17:30). The tension remains, and it should.
 
-### The Way, Spoken to a Frightened Friend
+## The Way, Spoken to a Frightened Friend
 
 Which brings the whole thing back to the face across the table, and to the verse people quote at that face without ever reading where it sits. "I am the way, and the truth, and the life. No one comes to the Father except through me" (John 14:6). We hear it as a bouncer at a door. Read the sentence before it. Thomas, frightened, says, "Lord, we do not know where you are going. How can we know the way?" (John 14:5). The line about the only way is not spoken to an outsider to keep him out. It is spoken to a terrified friend who asked how to find God, and it is the tenderest possible answer: you do not have to know the way, because I am the way, and I am not leaving you to find it alone. The exclusivity and the comfort are the same sentence. They were never meant to be pried apart.
 

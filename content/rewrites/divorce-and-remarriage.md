@@ -33,13 +33,13 @@ One thing belongs at the top, before any argument, because some who read this ar
 
 The claim this essay has to earn is that the Bible's teaching on divorce is harder than the culture wants and more merciful than the church has often been. Jesus, asked whether a man could send away his wife "for any cause," pulled the law of Moses back toward the garden and in the same breath named an exception. Paul, facing a case Jesus hadn't addressed, named another. Faithful Christians have read those exceptions differently for most of the church's history, and an honest answer has to begin by saying what kind of disagreement that is.
 
-### What kind of question this is
+## What kind of question this is
 
 Start with what isn't in dispute, because nearly everything true here begins there. Marriage is good, and it is older than any culture that has tried to amend it. When Jesus was asked about divorce, he didn't begin with Moses. He reached past Moses to the beginning, to the man and woman God made and joined, and concluded: "So they are no longer two but one flesh. What therefore God has joined together, let not man separate" (Matthew 19:6, ESV). Paul would later say that the one flesh points beyond itself to Christ and the church (Ephesians 5:31–32). That's why the vow is never a convenience and its breaking is never small. Every tradition described below confesses as much. The argument that follows is among people who all hold onto it.
 
 The dividing line is narrower than the noise suggests. Are there grounds on which a Christian may rightly end a marriage? If so, may a divorced Christian marry again while the former spouse is living? Those questions have divided sincere believers from one another without dividing any of them from Christ. The creeds don't mention them, and nothing about the Trinity, the person of Christ, the cross, or the resurrection hangs on the answer. They are second-order questions, serious enough to shape a church's discipline and a family's future, and open enough that a brother who answers them differently is still a brother. The Eastern Orthodox churches have long permitted a second marriage, with a penitential rite, as mercy toward human weakness. The Roman Catholic Church does not. Most churches of the Reformation permit it on defined grounds. All of them recite the Nicene Creed, and none of them thinks divorce is morally neutral or the divorced beyond grace.
 
-### What Moses allowed and what Malachi saw
+## What Moses allowed and what Malachi saw
 
 The foundational passage in the Old Testament is not a command to divorce. It's case law, one long conditional sentence with its only command at the very end:
 
@@ -55,7 +55,7 @@ Malachi, preaching to Judah in the century after the return from exile, is where
 
 Verse 16 is one of the hardest lines in the Hebrew Bible to translate. The King James Version and the older NIV made God the subject: the LORD "hateth putting away," or "I hate divorce." The ESV makes the husband the subject, the man who does not love his wife but divorces her. Both renderings are defensible, and God's anger survives either one. But the ESV shows where the anger lands: on men discarding the wives of their youth (while, it seems, marrying "the daughter of a foreign god," 2:11), a treachery God calls violence. "I hate divorce" has too often been heard as a sentence against the divorced. The passage is a sentence against the one who breaks faith, spoken on behalf of the one he broke it against.
 
-### What Jesus was asked
+## What Jesus was asked
 
 Matthew preserves the exact wording of the question put to Jesus: "Is it lawful to divorce one's wife for any cause?" (Matthew 19:3, ESV). It sounds general. It wasn't. "Any cause" sat at the center of a live dispute between the two great Pharisaic schools of the generation before him.
 
@@ -69,7 +69,7 @@ Mark's account has no exception at all. In the house, Jesus tells the disciples,
 
 So the same Jesus speaks absolutely in Mark and Luke and with an exception in Matthew. Everything the church has argued since flows from how those two facts are fitted together.
 
-### Paul and the deserted believer
+## Paul and the deserted believer
 
 Paul faced a problem Jesus hadn't ruled on: in Corinth, converts found themselves married to spouses who still worshiped other gods. First he repeats the Lord's teaching: "To the married I give this charge (not I, but the Lord): the wife should not separate from her husband (but if she does, she should remain unmarried or else be reconciled to her husband), and the husband should not divorce his wife" (1 Corinthians 7:10–11, ESV). Then he turns to the new case: "To the rest I say (I, not the Lord) that if any brother has a wife who is an unbeliever, and she consents to live with him, he should not divorce her" (1 Corinthians 7:12, ESV).
 
@@ -77,7 +77,7 @@ Paul faced a problem Jesus hadn't ruled on: in Corinth, converts found themselve
 
 What "not enslaved" releases the believer from is the second fault line of the debate. The permanence reading says it frees the deserted believer from the duty to hold the marriage together, but not to marry again, since Paul has just said a separated wife should "remain unmarried or else be reconciled." The Reformation reading says that readers who knew divorce as the certificate that made a woman free to marry would have heard "not enslaved" as exactly that freedom. The permanence reading has verse 11. The Reformation reading has the plain force of verse 15. Each has to explain the other's verse.
 
-### Four answers, each in its strongest voice
+## Four answers, each in its strongest voice
 
 Take the permanence view first, at full strength, because the last fifty years have made it easy to sneer at, and it doesn't deserve the sneer. It holds that what God joins, no one on earth has standing to pull apart, including the two people inside it, and that a separated Christian may not remarry while the former spouse lives. It can claim early witnesses. *The Shepherd of Hermas*, in the second century, told a husband who put away an adulterous wife to remain unmarried so that she could repent and return. Gordon Wenham and William Heth argued in *Jesus and Divorce* (1984) that the church of the first centuries overwhelmingly refused remarriage after divorce, and that this near-consensus, among people who read the Gospels in their own language and culture, is the best guide to what Jesus meant; Matthew's exception, on their reading, permits separation but not a new marriage. Others read it as unfaithfulness during betrothal, since Matthew alone tells of Joseph, who "resolved to divorce her quietly" (Matthew 1:19, ESV). The permanence Christian looks at a culture that ends a marriage more easily than it breaks a lease and says that somebody has to testify with an entire life that the promise meant what it said. That isn't cruelty. It is guarding what a covenant is, at personal cost.
 
@@ -87,7 +87,7 @@ The Reformation view, often called the Erasmian view, takes its name from a man 
 
 The fourth view extends that logic, and Instone-Brewer is its most careful defender. He argues that when Jesus rejected "any cause" divorce, he rejected the Hillelite innovation, not the older grounds in Exodus 21 that both schools accepted and no one asked him about. Silence about grounds nobody disputed is not repeal. Paul, he notes, restates those obligations in Christian form: "The husband should give to his wife her conjugal rights, and likewise the wife to her husband" (1 Corinthians 7:3, ESV), and each spouse is concerned with "how to please" the other (7:33–34). If a covenant carries obligations, it can be broken by their persistent violation, and abuse is neglect in its most violent form. On this view, the abused or grossly neglected spouse is the victim of a broken covenant and is free. Its critics answer that it builds a great deal on what the Gospels don't say, and that once neglect is a ground, the category can widen until it resembles the "any cause" Jesus refused.
 
-### What 1969 changed, and what it exposed in us
+## What 1969 changed, and what it exposed in us
 
 For most of Western history the church's debate ran alongside law that roughly shared its assumptions. In 1969 Governor Ronald Reagan signed California's Family Law Act, which took effect in 1970 and let a court dissolve a marriage for "irreconcilable differences" without either spouse proving fault. Within about fifteen years nearly every state had followed.
 
@@ -101,7 +101,7 @@ The two failures share a root. The rigorist stopped feeling the person; the sent
 
 The distinction the whole question turns on is between the person who files and the person who breaks. The law records who went to court. Scripture asks who broke faith. Sometimes they are the same person, and often they are not. The spouse who finally signs the papers after years of betrayal, desertion, or terror may be the one Malachi's God is defending, and the spouse who never filed anything may be the one who covered his garment with violence long before.
 
-### Where this essay lands, and what it cannot settle
+## Where this essay lands, and what it cannot settle
 
 This essay reads the two exceptions Scripture names as real. Jesus could have said that whoever divorces and remarries commits adultery, and stopped. In Matthew he didn't. Paul could have told a deserted believer to wait out a marriage the other person had abandoned. He said instead that the believer is not enslaved. The essay won't erase either sentence to make the rule tidier. What those sentences permit next, separation only or a new marriage, is the question the traditions above divide over, and the essay doesn't settle it for anyone from here; that belongs with the reader's own church. It holds just as firmly that the church must never order an abused spouse back under the roof where the abuse happens. Whether abuse and grave neglect themselves dissolve the covenant, as Instone-Brewer argues, it treats as a serious question and leaves open. And it will not rule on anyone's particular marriage from a distance.
 

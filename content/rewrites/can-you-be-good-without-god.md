@@ -29,7 +29,7 @@ review: "James, please confirm the first-person lines, all carried from your ori
 reviewed: 2026-09-24
 ---
 
-### What the question is not asking
+## What the question is not asking
 
 Begin with the concession, and make it without reservation, because the argument that follows collapses the moment it becomes grudging. You don't need to believe in God to be good. Unbelievers are not, as a class, worse neighbors, parents or citizens than the people in the pews, and many are more honest and more generous than the Christians who argue with them. When I was an atheist, the decent unbelievers in my life weren't a category in somebody's apologetics lecture. They were the people I actually knew, and if you had told any of them that their kindness required a theological license, they would have laughed, and they would have been right to laugh. If the claim on the table were that people without faith can't behave well, it would be refuted by every ordinary Tuesday.
 
@@ -41,7 +41,7 @@ So press the question gently. When you say that gratuitous cruelty is wrong, you
 
 I had three answers to this when I was an unbeliever, and I used them in rotation, depending on who was asking. Cooperation outbred selfishness, so the bands that guarded their children left more children. The revulsion I felt at cruelty was equipment, installed by that same pressure and no more chosen than my fear of heights. And underneath both, if I'm honest, it simply felt wrong, and I thought that feeling it strongly enough was the same as its being so. All three are true as far as they go, and they are good explanations of why I flinch. What I could never get any of them to do was tell me the cruelty was still wrong when I wasn't in the room to flinch at it.
 
-### Plato's dilemma and the door it hides
+## Plato's dilemma and the door it hides
 
 At this point the believer usually reaches for God, and the skeptic has a reply older than the church. Plato set it down in the *Euthyphro*, a dialogue set in 399 BC outside the Athenian court where Socrates was to answer the charge of impiety that would end in his death. There he meets Euthyphro, on his way to prosecute his own father for the death of a laborer and very sure that he knows what holiness requires. Socrates asks him a question that has never gone away: is the holy loved by the gods because it is holy, or is it holy because the gods love it?
 
@@ -57,7 +57,7 @@ Scripture had spoken this way long before the philosophers. "You shall be holy, 
 
 The skeptic can fairly ask whether the believer has only moved the question back a step. Why should God's nature be the standard? But every account of morality stops somewhere, and the question is whether it stops at the kind of thing that could serve as a standard. For years I assumed this third door was a dodge. It isn't. It doesn't prove that God exists, and no honest defender says it does. What it shows is that the *Euthyphro* refutes a caricature of Christian ethics, not the thing itself.
 
-### The secular answers at full strength
+## The secular answers at full strength
 
 The skeptic doesn't need the *Euthyphro* to make his case, and the serious secular accounts of morality are not the cartoons Christians debate. Four deserve to be heard in the form their own defenders would sign.
 
@@ -73,7 +73,7 @@ The third account is evolutionary ethics, and it is the one I lived inside. Char
 
 The fourth account is the strongest. The robust moral realist doesn't say morality is a useful fiction or a warm feeling. He says objective moral facts exist and need no God to hold them up, in the way the truths of mathematics need no God. Two and two make four in every possible world, and gratuitous cruelty is wrong in every possible world. Derek Parfit gave the last years of his life to this in *On What Matters* (2011), arguing that there are normative truths, discovered rather than invented, binding on every rational mind. Erik Wielenberg makes the case squarely as an atheist in *Robust Ethics* (2014): moral facts are brute and necessary, and they need no foundation outside themselves because they are the foundation. This is a serious metaphysics, and it grants the reality of right and wrong while denying that God is needed to secure it. If you are going to reject the moral argument, reject it here, where it is strong.
 
-### What the strongest answer costs
+## What the strongest answer costs
 
 So press it there, honestly. It carries two costs, and each bill was drawn up by a philosopher with no interest in defending God.
 
@@ -85,7 +85,7 @@ Wielenberg's reply is ingenious. He offers what philosophers call a third-factor
 
 One more pressure point remains. The truth that a triangle's angles sum to two right angles lays no claim on my will. The truth that I must not betray a friend does, and when I ignore it I don't experience a factual error. I experience guilt, which has the texture of a debt owed to someone. Adams takes that texture at face value: obligation is social by nature, a demand made by someone on someone. The robust realist has a law without a lawgiver and a debt without a creditor. Wielenberg would answer that obligation is itself a brute feature of reality, and the answer is consistent. But the Christian account doesn't have to call the addressed quality of conscience an illusion while asking you to keep obeying it. The summons feels addressed because it is.
 
-### Nietzsche's unpaid bill
+## Nietzsche's unpaid bill
 
 This is where I have to stop describing the skeptic and describe myself, because I wasn't consistent, and my inconsistency is the point. I said, with conviction, that morality was evolved and useful and felt. And then I lived every waking hour as though some things were simply wrong, wrong the way stone is hard, wrong before I felt anything about them at all. When I read of a man who abused a child, I didn't think that my neural equipment was firing. I thought that the act was evil, and I meant it as a report about the man, not about my nerves. I couldn't get my behavior to sit down inside my theory. The theory said preference, and I lived conviction.
 
@@ -95,7 +95,7 @@ Tom Holland, a historian of Greece and Rome, arrives at Nietzsche's history from
 
 This cuts at the church before it cuts at anyone else, because a church can own the ground and still refuse to stand on it. In 1845, Baptists in the South left their national mission body over whether a slaveholder could be appointed a missionary, and Baptist preachers, men of the tradition I serve in, defended slavery from the pulpit while confessing every doctrine that grounds human dignity in the image of God. The same instrument has to measure every side. A Christianity that uses the moral law as a weapon for its own tribe has forgotten that the law judges its keepers first. A secularism that condemns the faith in the faith's own vocabulary has forgotten where the vocabulary came from. Both are living on an inheritance they don't honor.
 
-### The law written on the heart
+## The law written on the heart
 
 The Christian claim, rightly understood, runs the other way: unbelievers can see the moral law, and the apostle who made the claim was the first to concede what this essay began by conceding. In Romans, Paul builds a long indictment from 1:18 to 3:20, and its most surprising turn comes at the start of chapter 2, where he stops accusing pagans and turns on the religious man who has been nodding along: "Therefore you have no excuse, O man, every one of you who judges. For in passing judgment on another you condemn yourself, because you, the judge, practice the very same things" (Romans 2:1, ESV). Only then does he speak of the Gentiles who never had the law of Moses:
 

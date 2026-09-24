@@ -26,7 +26,7 @@ I came to faith from atheism, so the view from the unbelieving side of the table
 
 The argument here turns on one distinction. Three different things feel almost identical from the inside, and a great deal of family damage comes from confusing them: persecution, which is suffering for Christ; ordinary friction, which is the cost any family pays when one member's world changes; and the convert's own zeal, which is suffering the believer has brought on himself and then baptized. Only the first carries the promise of blessing. The place to begin is a fact the Gospels don't hide: Jesus's own family thought he had lost his mind.
 
-### "He is out of his mind"
+## "He is out of his mind"
 
 Mark tells it without softening. Jesus had just chosen the twelve, and the crowds were pressing in. "Then he went home, and the crowd gathered again, so that they could not even eat. And when his family heard it, they went out to seize him, for they were saying, 'He is out of his mind'" (Mark 3:20–21, ESV). The phrase the ESV renders "his family" is literally "those from him," his own people, and the verb for what they meant to do is the one Mark later uses for the arrest in Gethsemane. They were coming to take him home by force.
 
@@ -40,7 +40,7 @@ And the family didn't stay at the door. Paul lists among the witnesses of the ri
 
 That is the first word for the new believer whose family has said the same about you. You're in company you couldn't be ashamed of. But you aren't more faithful than Mary was, and the story doesn't end with the family outside.
 
-### The case the family would make
+## The case the family would make
 
 A family that says you've lost your mind is usually making an argument, even when it comes out as tears, and the argument deserves to be heard in its strongest form before anyone answers it. We have watched people we love get pulled into groups that cost them everything. We remember Jonestown, where in November 1978 more than nine hundred people died in the Guyana jungle at the command of a preacher who had begun by promising community and racial justice. We have seen people find religion at the lowest point of their lives, in the wreck of a divorce or an addiction, and we have seen some of them lose it again within a year. You changed quickly. You have new friends who seem to matter more than we do. You say things you would have laughed at two years ago, and when we push back you seem to hear it as proof that you're right. From where we stand, that doesn't look like wisdom. It looks like capture.
 
@@ -54,7 +54,7 @@ William James saw the deeper problem more than a century ago. In *The Varieties 
 
 So the family's argument has a true center, and the new believer should grant it without resentment. Some groups do capture people, and a loving family has every right to name the signs: a group that demands you cut off your family, that takes control of your money, that keeps secrets from new members, or that treats its leader as beyond question. If those are present, the family's alarm is a gift, not an attack. But if they aren't, then "you've lost your mind" is doing the work James warned against. It explains a conviction away by where it came from, and it never gets around to asking whether it's true. The fair answer to a frightened family isn't to prove you're sane. It is to let them watch the fruit for as long as they need to.
 
-### What the sword in Matthew 10 divides
+## What the sword in Matthew 10 divides
 
 The verse most often quoted to a new believer in a hard family is also the one most often misread. "Do not think that I have come to bring peace to the earth. I have not come to bring peace, but a sword. For I have come to set a man against his father, and a daughter against her mother, and a daughter-in-law against her mother-in-law. And a person's enemies will be those of his own household" (Matthew 10:34–36, ESV). Some believers hear a license in it: if my family is angry, I must be doing something right. Outsiders hear the home-wrecking faith Celsus described. Both readings lift the words out of their setting.
 
@@ -66,7 +66,7 @@ The next verses make the point sharper. "Whoever loves father or mother more tha
 
 So the verdict on this text is simple enough to carry. Jesus warned that loyalty to him would divide households. He never made the division the proof of faithfulness.
 
-### Persecution, friction or your own zeal
+## Persecution, friction or your own zeal
 
 Persecution deserves its name, and naming it honestly keeps the word from being cheapened. In Carthage in 203, a young woman named Vibia Perpetua, about twenty-two, well born and nursing an infant son, was arrested as a catechumen preparing for baptism. Part of the account that survives, *The Passion of Perpetua and Felicity*, is her own prison diary, and its most painful pages are about her father, the one member of her family, she wrote, who would not rejoice in her suffering. He came to her again and again. Once she pointed to a water jar and asked whether it could be called anything other than what it was; when he said no, she told him that neither could she be called anything but what she was, a Christian. He threw himself at her in anger and then went away. Later he came back broken, begging her to pity his gray hairs, to think of her mother and brothers and her baby who couldn't live without her, kissing her hands and calling her no longer daughter but lady. At her hearing the presiding official, Hilarianus, told her to spare her father's old age and her son's infancy and offer the sacrifice for the emperors. She refused. When her father kept pressing her, Hilarianus had him thrown down and beaten with a rod, and Perpetua wrote that she felt it as if she herself had been struck, and grieved for his wretched old age.
 
@@ -76,7 +76,7 @@ Most new believers in America are facing something else, and calling it persecut
 
 And then there is the suffering we bring on ourselves. Peter anticipated that too: "But let none of you suffer as a murderer or a thief or an evildoer or as a meddler. Yet if anyone suffers as a Christian, let him not be ashamed, but let him glorify God in that name" (1 Peter 4:15–16, ESV). He puts the meddler in the same list as the thief. The new believer who turns every holiday into a debate, leaves pamphlets on the guest-room pillow and tells a grieving aunt where her unbelieving husband has gone will meet resistance, and it will be deserved. Those of us who came to faith from outside the church are especially prone to this, because the relief of finally seeing makes us impatient with everyone who doesn't. The honest test is humbling: would they still be angry with me if I believed exactly the same things and carried them more gently? If the answer is no, the offense is mine and not the gospel's.
 
-### Honoring the parents who think you're wrong
+## Honoring the parents who think you're wrong
 
 The fifth commandment doesn't expire at eighteen, and it doesn't wait for agreement. "Honor your father and your mother, that your days may be long in the land that the LORD your God is giving you" (Exodus 20:12, ESV). The Hebrew verb for honor comes from the word for weight. To honor your parents is to give what they say and feel real weight, even when you can't do what they ask. Paul draws a line that matters here: "Children, obey your parents in the Lord, for this is right. 'Honor your father and mother' (this is the first commandment with a promise), 'that it may go well with you and that you may live long in the land'" (Ephesians 6:1–3, ESV). Obedience belongs to children under their parents' roof, and even there it is "in the Lord." Honor belongs to every season of life.
 
@@ -86,7 +86,7 @@ In practice that looks less dramatic than a new believer expects. At your parent
 
 Sometimes a boundary is needed, and a boundary isn't a wall. A boundary says, "I love you, and I'm not going anywhere, but I won't argue about this every time we're together." A wall ends the relationship. Walls are sometimes necessary, when disagreement has become abuse or contempt has become control, but they should be the last resort, never the first. And time is often kinder than the first months suggest.
 
-### When it's your child who has changed
+## When it's your child who has changed
 
 The most famous parent of a wandering child in Christian history nearly shut the door. When the young Augustine joined the Manichees, a sect his mother Monica considered blasphemous, she wept for him, he later wrote in the *Confessions*, more than most mothers weep over a child's death, and for a time she refused to live with him or let him eat at her table. Then she dreamed that she stood on a wooden rule, grieving, and a radiant young man told her to look, because where she was, there her son was also, and she saw Augustine standing beside her. When he tried to read it as a promise that she would come around to his view, she answered at once that it said he would be where she was, not the other way round. After that she let him back to the table. It took nearly nine more years. He slipped away from her to Rome by night, and she followed him to Italy anyway. He came to faith in a garden in Milan in 386 and was baptized the following Easter, and at Ostia, shortly before she died, she told him that the one thing she had wanted to live for was to see him a Christian, and God had given her more than that.
 

@@ -26,7 +26,7 @@ Most parents of boys can feel it before they can name it. A son of twelve or fou
 
 This essay is for the father, and for the mother raising a son on her own, who senses both pulls and wants something truer to hand him. It is written by a man raised without a father and now raising five sons, from inside the problem at both ends. A fatherless boy assembles manhood out of whatever is lying around; a father learns that his sons are assembling theirs out of him. The argument here is that the church does not meet this moment by baptizing one of the two scripts, which it has done more than once in American history. It meets it by recovering something older than both: strength as a virtue, formed in the affections, governed by love, and seen whole in a man who knelt with a towel around his waist on the night he was betrayed.
 
-### Two false manhoods, and what each gets right
+## Two false manhoods, and what each gets right
 
 Call them the domineering and the diminished. The domineering script arrives loudly, through a profitable online economy of men who teach boys to rank everyone around them, to treat women as prizes and conversation as combat, to read kindness as weakness. It promises significance and delivers contempt, first for others and eventually for the boy himself. But be fair about why it works. It is nearly the only voice in his world telling him that his drive is not a disease and summoning him to discipline. Many of the boys drawn to it are not budding tyrants. They are lonely, behind in school, and hungry to be told that becoming a man is an achievement worth the effort. The domineering script is a lie told to a real hunger.
 
@@ -36,7 +36,7 @@ Richard Reeves, then a senior fellow at the Brookings Institution and writing fr
 
 Set the two scripts side by side and a common grammar appears. Both make the boy's strength the whole question, one maximizing it and the other minimizing it. Neither asks what the strength is for or whom it answers to. Both keep the self at the center, one by enlarging it and the other by policing it. That shared assumption is much older than the internet.
 
-### An old anxiety with a new feed
+## An old anxiety with a new feed
 
 Anxiety about manhood is not a modern invention. The anthropologist David Gilmore, comparing cultures in *Manhood in the Making* (1990), found that in most societies manhood is treated as a precarious status that must be won, tested and publicly proven, and can be lost, in a way womanhood usually is not. The world into which the gospel came had its own sharp version. The Latin *virtus* grows from *vir*, a man, and Roman manliness meant mastery over one's household, one's inferiors, one's enemies and one's passions. Against that backdrop a crucified Lord was the most complete picture of unmanning the empire knew, a body stripped and displayed as a warning. Paul knew how it sounded: "we preach Christ crucified, a stumbling block to Jews and folly to Gentiles" (1 Corinthians 1:23).
 
@@ -46,7 +46,7 @@ The pattern returned a century later. In 1990 Bill McCartney, then head football
 
 Kristin Kobes Du Mez gathered this history into a sustained indictment in *Jesus and John Wayne* (2020). Her argument is that for white American evangelicals, from the Cold War forward, a militant and patriarchal ideal of manhood, the rugged hero who protects by dominating, became a working theology, one that shaped their politics and helped them excuse strong men who abused their power. Whatever one concludes about every link in her chain, the pattern is recognizable, and it is the one Putney found a century earlier. Each generation, the church tried to win men back by making Jesus look like the man the culture already respected: the gentleman athlete, the executive, the coach, the cowboy. We have done this in our own pulpits and youth rooms. A son raised on the result learns to admire the image and never quite meets the man.
 
-### The case for recovery, and the case against it
+## The case for recovery, and the case against it
 
 Both serious Christian positions deserve a hearing in the form their own defenders would sign. The case for recovering a robust masculinity runs like this. God made humanity male and female: "So God created man in his own image, in the image of God he created him; male and female he created them" (Genesis 1:27). Sexual difference is part of the goodness of creation, and a church embarrassed by it will lose the men it is embarrassed by. Reeves's data show that the drift of boys is real, not a partisan talking point. The sociologist W. Bradford Wilcox, in *Soft Patriarchs, New Men* (2004), found that churchgoing evangelical fathers with traditional convictions about family roles were, on average, more involved with their children and more emotionally engaged with their wives than many other men, which suggests the traditional vision in practice has often been gentler than its critics imagine. And there is a pastoral point that is hard to answer: if the church will not give boys a picture of courage and responsibility that calls on their strength, someone else will, and the someone else is already waiting in their phones.
 
@@ -58,7 +58,7 @@ Underneath these two cases sits a second-order question that divides faithful ch
 
 That leads to the distinction the argument turns on. Strength and dominance are not the same thing. Strength is the capacity to bear weight, to endure, protect, build and stand firm. Dominance is strength that has made itself its own end, spent on securing the self's rank over others. The domineering script pursues dominance and calls it strength. The diminished script gives up strength in order to be rid of dominance. Each side is right about the other's danger: a church that disarms boys leaves them defenseless, and a church that arms them without forming them breeds predators. The question is not how much strength a boy should have. It is what kind of heart will govern it.
 
-### Men without chests
+## Men without chests
 
 The oldest serious answer to that question is not Christian at all, and the church was wise enough to receive it. Aristotle, in the *Nicomachean Ethics*, treats courage as a virtue, a settled disposition of character, and places it as a mean between cowardice, which fears too much, and rashness, which fears too little. The brave man is not the one who feels no fear. He fears the right things, for the right reason, in the right way, and stands anyway because what he stands for is noble. Virtues, Aristotle insists, are acquired by practice: we become brave by doing brave acts, until effort becomes second nature. A boy is made brave by being given small, real things to be brave about, again and again, by people who expect him to manage them.
 
@@ -70,7 +70,7 @@ C. S. Lewis brought this tradition to bear on modern education in *The Abolition
 
 The diagnosis fits our sons with uncomfortable precision. A boy taught that all his strong feelings are suspect and a boy taught that only his appetites are real have both been left without a chest. Augustine, in *The City of God* (426), gave a definition of virtue that answers both: virtue is rightly ordered love. The goal is a son who loves the right things in the right order, who feels anger at cruelty, tenderness toward the weak and shame at his own cowardice, and who has been shown by people he trusts what to do with each. That is the work of a whole childhood, as a boy watches what the adults around him admire, laugh at and grow angry about.
 
-### Strength that kneels
+## Strength that kneels
 
 The virtue tradition can describe the well-ordered heart, but it cannot supply the one thing a boy most needs, which is a person to look at. Scripture does not hand our sons a list of manly traits. It hands them a man.
 
@@ -92,7 +92,7 @@ Gethsemane completes the picture, and there Aristotle and Aquinas find more than
 
 Here is the setting for the verse most often quoted to boys about manhood. At the close of his first letter to Corinth, Paul writes: "Be watchful, stand firm in the faith, act like men, be strong. Let all that you do be done in love" (1 Corinthians 16:13–14). "Act like men" translates a single Greek verb meaning to conduct oneself courageously, manfully. The defenders of a robust masculinity are right that Paul reaches for a word rooted in manhood without embarrassment. The critics are right to notice the context. The imperatives are plural and addressed to the whole congregation, the "brothers" of verse 15, women as well as men. And Paul fences the military verbs with love, in a letter to a church fractured by pride, where he has already defined what love is: "Love is patient and kind; love does not envy or boast; it is not arrogant or rude. It does not insist on its own way" (1 Corinthians 13:4–5). Courage without love is the domineering script. Love without courage is the diminished one. Paul allows neither.
 
-### What David told his son
+## What David told his son
 
 Scripture records its own charge from a father to a son about manhood. As David lay dying, 1 Kings records, he called for Solomon:
 

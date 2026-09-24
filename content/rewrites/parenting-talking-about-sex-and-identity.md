@@ -20,7 +20,7 @@ review: "Integrity pass done. Still for James: (1) Naming the Southern Baptist C
 reviewed: 2026-09-24
 ---
 
-### The talk that never comes
+## The talk that never comes
 
 Most Christian parents are waiting for a conversation. We call it the talk, and we've scheduled it for some future birthday when the child will be old enough, which usually means when we expect to feel less mortified. That age doesn't arrive. The parent never feels ready, and long before the appointed day the child has already received a substantial education from the screen, the school bus, the older cousin, the search bar and the culture itself, which teaches early and relentlessly and never asks anyone's permission.
 
@@ -34,7 +34,7 @@ In practice that means starting earlier and smaller than feels comfortable. A fo
 
 There's a part of this that fathers in particular tend to abdicate, partly from embarrassment and partly from the old assumption that this is a mother's territory. I was raised without a father, and I have felt the hole where that instruction should have been. A boy who never hears his father speak plainly and without shame about sex, about what it's for and what it costs and how to treat a woman as a person rather than a body, won't therefore learn nothing. He'll learn everything, from sources that don't love him. The silence doesn't protect a son. It hands him over. I have five sons, and I refuse to leave the same hole in them by being too awkward to speak. Daughters need their fathers here too; a girl who has heard a good man speak of her body with reverence has a measure for every man who speaks of it otherwise.
 
-### What the body is for
+## What the body is for
 
 Before a parent can tell a child what to do with his body, the parent has to know what the body is. Most of us carry a loose Christian inheritance mixed with modern assumption, and our children can hear the seams.
 
@@ -50,7 +50,7 @@ That passage turns on a distinction every parent needs, between a body that is g
 
 To modern ears "you are not your own" sounds like a restriction. To a child it's also a shelter. If your body belongs to God, it doesn't belong to the boy pressuring you, the adult who wants a secret, or the industry that wants your attention. The sentence that asks for chastity also forbids anyone from taking what isn't theirs.
 
-### How the church made sex strange, and how the West unmade it
+## How the church made sex strange, and how the West unmade it
 
 Christian parents often assume that the ethic they want to pass on is simply what decent people believed until recently. The history is stranger and more useful. When the church first taught it, it was the odd view, and knowing that changes how you teach it to a child who already feels odd for holding it.
 
@@ -70,7 +70,7 @@ This is the most important thing for a Christian parent to grasp. When your teen
 
 And it did shape us. Evangelical Christians spent the last half century denouncing the sexual revolution while importing its central assumption. We told our children to follow their hearts. We made our peace with easy divorce with little of the resistance we brought to other questions, which made our sexual ethic look selective to everyone watching. Taylor's diagnosis describes the water all of us swim in, the church included, and I'm not standing on dry ground while I say so.
 
-### What purity culture got wrong, and what it didn't
+## What purity culture got wrong, and what it didn't
 
 Many parents reading this grew up inside what is now called purity culture, which peaked in the 1990s, and some are still carrying it. The True Love Waits campaign, launched among Southern Baptists in 1993, invited teenagers to sign pledge cards promising abstinence until marriage. Joshua Harris's *I Kissed Dating Goodbye* (1997) became a bestseller and urged young people to give up dating altogether. There were rings, rallies and youth-group object lessons a generation still remembers with a wince: the rose passed around the room until its petals were gone, the piece of tape that loses its grip after being stuck to too many arms.
 
@@ -86,7 +86,7 @@ Notice what the sexual revolution and purity culture have in common, because it'
 
 So the answer to bad teaching of a true ethic is better teaching of the same ethic. The failures of the 1990s show that we taught it with fear where we should have taught it with hope, and with shame where we should have taught it with grace. Your child deserves the ethic without the shame, which is harder to give than either the rules alone or no rules at all.
 
-### The curriculum your child is already enrolled in
+## The curriculum your child is already enrolled in
 
 For a child with a connected device, the question about pornography is no longer whether he'll encounter it but when, often by accident. It's free, endless and built to escalate, and it hands him an account of sex cut loose from love, from covenant and from the personhood of the other, before his own desire has fully woken. Pornography isn't only a temptation your child will someday face. It's a curriculum he is already enrolled in, and it teaches desire what to want before he has any say.
 
@@ -96,7 +96,7 @@ Consent and body safety belong in the same conversation, and they follow directl
 
 The church can't teach this with clean hands. The Boston Globe's 2002 reporting on abuse in the Catholic Archdiocese of Boston and the 2022 independent investigation into how the Southern Baptist Convention's Executive Committee handled abuse allegations exposed the same sin in different robes, institutions protecting their reputations instead of children. "Whoever causes one of these little ones who believe in me to sin, it would be better for him if a great millstone were hung around his neck and he were thrown into the sea" (Mark 9:42, ESV). If you suspect a child is being harmed, call the Childhelp National Child Abuse Hotline at 1-800-422-4453. If your child is thinking about self-harm or suicide, call or text 988, the Suicide & Crisis Lifeline. If anyone is in immediate danger, call 911.
 
-### When your child tells you who he is
+## When your child tells you who he is
 
 Many parents eventually face a harder conversation: a child who says he's attracted to people of the same sex, or a child in real distress about being a boy or a girl. This essay is not medical advice. Questions about a child's mental health or about any medical treatment belong with qualified physicians and counselors, and no parent should try to settle them alone or from something they read.
 
@@ -108,7 +108,7 @@ This essay's conviction is the one the Christian story gives. The body isn't raw
 
 But no Christian conviction requires contempt, and nothing in this ethic permits a parent to reject a child or put him out of the house. Speak fairly of the other view with your child; the moment he catches you caricaturing it, he'll stop trusting you on everything. Grieve the church's cruelty out loud so he knows you aren't defending it. A teenager who hears his parents speak with contempt about people wrestling with these questions learns that their faith makes people harder.
 
-### Love through everything
+## Love through everything
 
 The question that decides the rest is whether your child believes you'll stop loving him if he tells you the truth. That fear drives a child underground, and underground is the one place you can't reach him. Jesus told of a son who took his inheritance to a far country, and of a father who did not follow him there, yet saw him coming from far away. "But while he was still a long way off, his father saw him and felt compassion, and ran and embraced him and kissed him" (Luke 15:20, ESV). Paul puts the same love at the center of the gospel: "but God shows his love for us in that while we were still sinners, Christ died for us" (Romans 5:8, ESV). God's love for us was never his approval of us. It came first, and it cost him a cross.
 

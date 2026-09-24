@@ -24,7 +24,7 @@ Walter Brueggemann, an Old Testament scholar in the United Church of Christ, wro
 
 One distinction runs through all of it. In Brueggemann's usage, imagination is not invention. It is perception, the capacity to see what is really there and what the reigning order has trained people not to see. A prophet isn't a person with an unusually creative mind. He is a person who has stopped being numb.
 
-### The empire Moses left and the people he formed
+## The empire Moses left and the people he formed
 
 Brueggemann begins with Moses, because in his reading the exodus is what makes prophecy possible at all. Pharaoh's Egypt is his picture of a settled world, and he named two things in it that Moses had to dismantle. One was a religion of static triumphalism, in which the gods were fixtures of the regime, never surprised, never moved, never on the side of the brickmakers. The other was a politics of oppression and exploitation, in which order was kept by the taskmaster. Beneath both lay an economy in which the few were well supplied and the many made the bricks. Each part protected the others. A god who can't be moved by the cry of a slave is exactly the god a slave economy requires.
 
@@ -34,7 +34,7 @@ The community that came out of Egypt was meant to be Egypt's opposite. Its econo
 
 The story doesn't flatter the people it freed. In the wilderness they looked back on slavery with longing: "Would that we had died by the hand of the LORD in the land of Egypt, when we sat by the meat pots and ate bread to the full" (Exodus 16:3, ESV). That may be the most honest sentence in the Pentateuch about how the royal consciousness holds people. It does not hold them only by force. It holds them by the memory of full stomachs, and a free people will always be tempted to trade its freedom back for the meat pots.
 
-### How Solomon rebuilt Egypt in Jerusalem
+## How Solomon rebuilt Egypt in Jerusalem
 
 The center of the book is Brueggemann's claim that Israel, within a few generations of Moses, rebuilt Egypt with its own hands, and that Solomon was the builder. He calls the result the royal consciousness: a way of seeing the world from the palace, in which the present arrangement is assumed to be permanent, prosperity is taken as proof of God's favor, and whatever the arrangement costs is kept out of sight. He reads Solomon's tenth-century reign as a counterrevolution against Moses and names its achievement in three parts: an economics of affluence, a politics of oppression, and a controlled, static religion in which God and his temple have become fixtures of the royal establishment, available to the king on the king's terms.
 
@@ -46,7 +46,7 @@ Brueggemann's most penetrating word for what this does to people is numbness. A 
 
 At Solomon's death the northern tribes came to his son Rehoboam with one request: "Your father made our yoke heavy. Now therefore lighten the hard service of your father and his heavy yoke on us, and we will serve you" (1 Kings 12:4, ESV). It is the groan of Exodus 2 again, and Rehoboam answered it the way Pharaoh had, with a heavier yoke (1 Kings 12:11). The kingdom split around 930 BC and was never whole again.
 
-### Criticism begins in grief
+## Criticism begins in grief
 
 If the royal consciousness runs on numbness, then the first prophetic act, Brueggemann argues, is not an argument. It is grief spoken in public, pain brought to speech that the arrangement has made unspeakable. His model is Jeremiah, and the choice is exact.
 
@@ -60,7 +60,7 @@ Classical Christian theology guards something true with its doctrine of divine i
 
 That yields the distinction on which the rest of the argument turns. Grief and outrage can use the same words, but they are opposite acts. Outrage stands outside the people it condemns and enjoys the distance; it needs an enemy and is quietly disappointed if the enemy repents. Grief stands inside, shares the loss, and wants nothing so much as the repentance that would end it. The prophets were often angry, and God's anger is real in their books, but it is anger on behalf of the wounded, spoken from inside the wound. Anger without grief is only the royal consciousness with a microphone.
 
-### Hope that comes after grief
+## Hope that comes after grief
 
 Grief is the first prophetic task, never the last. The second is what Brueggemann calls energizing: a hope concrete enough, and unlike the present enough, that people can begin to live toward it. His model is Isaiah 40 through 55. Brueggemann, with most critical scholars, assigns these chapters to an anonymous prophet of the exile; many conservative scholars hold that the whole book comes from Isaiah of Jerusalem, speaking ahead of events. On either view the chapters address a people who had lost their city in 587 and who had concluded that their God was defeated or had forgotten them. The text names Cyrus of Persia (Isaiah 44:28; 45:1), whose decree of 538 BC would send them home.
 
@@ -72,7 +72,7 @@ Brueggemann's closing chapters argue that Jesus brings both tasks to their fulln
 
 For Brueggemann the cross is the deepest criticism of all: the royal consciousness, Roman and religious together, executed the one man who would not be numb, and God entered the death it inflicted. The resurrection is the deepest energizing, the new thing no empire can administer. The church can stand with him there gladly. It is also where his argument most needs pressing.
 
-### Where Brueggemann needs pressing
+## Where Brueggemann needs pressing
 
 A fair reading owes Brueggemann's critics a hearing. The first objection is that his Solomon is a sharper villain than the canon's. The same book of Kings that records the labor draft says that God gave Solomon wisdom as a gift (1 Kings 3:12), that the glory of the LORD filled the temple so the priests could not stand to minister (1 Kings 8:10-11), and that Solomon's dedication prayer contains one of Scripture's great confessions of God's freedom: "But will God indeed dwell on the earth? Behold, heaven and the highest heaven cannot contain you; how much less this house that I have built!" (1 Kings 8:27, ESV). Isaiah received his call inside that temple (Isaiah 6:1); Jesus called its successor his Father's house (John 2:16). The canon does not set Moses against the temple as liberation against captivity. The fairer reading is that the institution was God's gift and was captured by the royal consciousness, and that the prophets attacked the capture, not the gift. Brueggemann's scheme illuminates, but it runs smoother than the text.
 
@@ -86,7 +86,7 @@ Here the opening distinction has to be held firmly. The prophetic imagination is
 
 The third objection is political, and it deserves its strongest form. For many conservative Christians, "prophetic" has become the word the left uses to baptize its platform: the prophets are invoked for policies the educated progressive class already held, and the result is a partisan God, static triumphalism for the other side. That critique has real force. The book was taken up most eagerly in the mainline Protestant world, and some of what was called prophetic there was the royal consciousness of a different palace. The remedy is to read the prophets whole. Amos condemned the comfortable women of Samaria who crushed the needy (Amos 4:1) and the courts that took bribes and turned the needy aside in the gate (Amos 5:12). Isaiah opposed Jerusalem's trust in Egypt's horses (Isaiah 31:1) as fiercely as he opposed its worship without justice (Isaiah 1:13-17). Any use of that instrument that only ever cuts one way has stopped being prophetic.
 
-### The royal consciousness in the American church
+## The royal consciousness in the American church
 
 Brueggemann wrote about Solomon, but he was writing to Americans. The honest way to use his categories is on every part of the church, with the same instrument and the same grief, beginning with ourselves.
 

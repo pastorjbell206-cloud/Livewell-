@@ -44,7 +44,7 @@ at the bar:
    through repentance, the cross or the resurrection when the subject warrants
    it, and names what the reader carries out.
 
-Length is 3,000 to 4,500 words, in four to seven sections under `###`
+Length is 3,000 to 4,500 words, in four to seven sections under `##`
 headings, written as developed paragraphs. Lists appear only where the content
 really is a list.
 
@@ -130,7 +130,7 @@ review: "Anything James should check: a claim, a story kept from the source, a c
 reviewed: 2026-09-24   # set by the integrity reviewer; without it the rewrite is not applied
 ---
 
-Body in Markdown. Sections under ### headings.
+Body in Markdown. Sections under ## headings (h2, like every other essay on the site; the page title is the h1).
 ```
 
 Build scripts apply every file in `content/rewrites/` over the library. A

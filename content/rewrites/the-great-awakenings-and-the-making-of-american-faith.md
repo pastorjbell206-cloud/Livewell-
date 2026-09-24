@@ -28,7 +28,7 @@ review: "Integrity-reviewed 2026-09-24. Verified: Finney, Lectures on Revivals o
 reviewed: 2026-09-24
 ---
 
-### The faith you were handed has a history
+## The faith you were handed has a history
 
 Ask an American evangelical when she became a Christian and there's a fair chance she can give you a date. A summer camp when she was twelve, a folding chair at the back of a gymnasium, the Sunday she finally walked the aisle while the congregation sang the last verse one more time. Ask how she chose her church and she may tell you how the worship moved her. None of this sounds strange. It feels like the shape of the faith itself: a personal decision, a felt encounter, a congregation chosen by the believer rather than a congregation that received a child at the font and raised her. But very little of it would have been recognizable to most Christians in most centuries, and none of it was inevitable. It has a history, and the largest part of that history runs through two waves of revival that historians call the First and Second Great Awakenings.
 
@@ -36,7 +36,7 @@ The textbook answer to "what was the Great Awakening" goes like this. The First 
 
 One caveat belongs at the front, since honest history begins with what's contested. The name itself came later. Joseph Tracy gave the colonial revivals the title that stuck when he published *The Great Awakening* in 1842, a full century after the events. In 1982 the historian Jon Butler went further, arguing in the *Journal of American History* that "the Great Awakening," understood as a single, unified, colony-wide event, was an interpretative fiction: the revivals were scattered, regional and brief, and later writers stitched them into a national awakening that could be credited with preparing the ground for the Revolution. Butler turns out to be more useful to believers than he first appears, and we'll come back to him. For now it's enough to say that the revivals were real and that the story we tell about them was assembled afterward. Both are true.
 
-### The First Great Awakening: Northampton, the open field and Enfield
+## The First Great Awakening: Northampton, the open field and Enfield
 
 The first fire caught in Northampton, Massachusetts, a river town in the Connecticut Valley, in the winter of 1734 and 1735. Its pastor, Jonathan Edwards, had succeeded his grandfather Solomon Stoddard in that pulpit and would become the most formidable theological mind colonial America produced. After a series of sermons on justification by faith, the town changed. Edwards counted converts in the hundreds, the young people gave up the frolics he had preached against, and by the following spring, he wrote, the town seemed to be full of the presence of God. He set it all down in a long letter that became a book, *A Faithful Narrative of the Surprising Work of God*, published in London in 1737 and read on both sides of the Atlantic. The word to notice is *surprising*. Edwards had preached as he always preached. He hadn't engineered the season and didn't claim to understand its timing. He reported it the way a farmer reports rain.
 
@@ -52,7 +52,7 @@ The awakening divided the churches almost immediately. In 1740 Gilbert Tennent p
 
 Thomas Kidd's *The Great Awakening* (2007) refuses to let this quarrel collapse into two camps. Kidd distinguishes the moderate evangelicals, Edwards and Whitefield among them, who defended the revivals while policing their excesses, from radicals like Davenport, who carried the logic of immediate experience all the way to separatism and visions, and from the antirevivalists who opposed the whole business. Against Butler, Kidd argues that something real and connected did happen across the colonies and the Atlantic, and that its lasting product was the evangelical movement itself. Kidd has the better of the argument. Butler's warning survives it anyway. Every generation of revivalists has told the story of its revival in a way that vindicated its own methods, beginning with the first.
 
-### Edwards's test: the difference between heat and fruit
+## Edwards's test: the difference between heat and fruit
 
 Edwards spent the rest of the decade on the question the revival forced on him. His mature answer came in *A Treatise Concerning Religious Affections*, published in 1746, after the fire had cooled and he had watched some of its converts drift back to where they began. No American has written a better book on telling true religion from its counterfeit.
 
@@ -62,7 +62,7 @@ This is the distinction the whole history turns on. Heat is the intensity of an 
 
 Edwards then acted on his own test, and it cost him his pulpit. His grandfather Stoddard had opened the Lord's Supper to baptized people of outwardly moral life, on the theory that the Supper could itself be a converting ordinance. Edwards came to believe that the table should be kept for those who could make a credible profession of faith, which is to say the church should look for fruit before welcoming someone to the table. The town that had once seemed full of the presence of God voted him out in 1750. The irony is exact. The greatest theologian of the First Awakening tried to bind revival to the ordinary discipline of a congregation, and the revived congregation dismissed him for trying.
 
-### The Second Great Awakening: Cane Ridge, Finney and the burned-over district
+## The Second Great Awakening: Cane Ridge, Finney and the burned-over district
 
 The Second Great Awakening was a different animal, and the difference was the new republic. After the Revolution the established churches were dismantled state by state (Massachusetts, the last to let go, ended its establishment in 1833), the population poured west beyond the reach of any parish system, and the old educated clergy were too few and too slow for the frontier. Into that open space came revival, no longer as an occasional surprise but as the ordinary means of gathering a church.
 
@@ -78,7 +78,7 @@ His theology matched his method. Finney rejected the inherited doctrine of origi
 
 The region Finney worked became known as the burned-over district, swept by revival so often that nothing was left to burn. Whitney Cross's *The Burned-over District* (1950) shows what else grew in that scorched ground: Joseph Smith's *Book of Mormon*, published at Palmyra in 1830; William Miller's movement predicting Christ's return, which ended in the Great Disappointment of October 1844; John Humphrey Noyes's perfectionist community at Oneida. None of it can simply be laid at Finney's feet, but it shares his premise. The individual, freed from the discipline of a tradition, reaches for a direct and immediate experience of God, and a movement forms around whoever seems to have it.
 
-### Revival, reform and slavery
+## Revival, reform and slavery
 
 A fair account has to give the Second Awakening its due, and its due is large. The revivals that produced the anxious bench also produced Bible and tract societies, Sunday schools, missions and colleges. The American Temperance Society was founded in 1826. Theodore Dwight Weld, converted under Finney, became one of the most effective abolitionist organizers in the country. When the trustees of Lane Seminary in Cincinnati moved to silence student abolitionists after the debates of 1834, many of the students left for Oberlin, which admitted Black students and women and where Finney taught and later served as president. The revivalist conviction that a sinner could and must repent immediately became the abolitionist conviction that the nation could and must end slavery immediately. Turned against the nation's great sin, the logic of decision became a prophetic weapon.
 
@@ -88,7 +88,7 @@ The awakenings also had a Black history of their own, and it isn't a footnote. E
 
 When white churches refused Black members as equals, Black Christians built their own. Richard Allen, born enslaved in 1760, was converted under Methodist preaching and bought his freedom. In Philadelphia, by Allen's own account, he, Absalom Jones and others walked out of St. George's Methodist Church after Jones was pulled up from his knees during prayer for kneeling in the wrong part of the gallery; historians date the walkout anywhere from 1787 to the early 1790s. Allen founded Bethel Church in 1794, and in 1816 he gathered Black Methodist congregations from several cities into the African Methodist Episcopal Church and became its first bishop. It was among the first fully independent Black denominations in the country. In one sense the AME Church is the purest fruit of the awakenings: a church of people converted by revival preaching who refused to let the preachers' own churches define them as less than members of Christ's body. In another it is the heaviest evidence against the white revival churches, because the fruit Edwards told us to look for, a new and lasting love for God and neighbor, was so often missing exactly where the neighbor was Black.
 
-### What revivalism gave, and what it cost
+## What revivalism gave, and what it cost
 
 The strongest case for the revivals should be made in the form their defenders would sign. Before the First Awakening, a great many colonists had been baptized and catechized without ever believing a word of it. Revival insisted that faith must be personally received, and that insistence is biblical. "You must be born again" (John 3:7, ESV) was said to Nicodemus, a teacher of Israel with every religious advantage. At Pentecost about three thousand were baptized in a single day (Acts 2:41). The revivals reached people no settled parish would have reached, the frontier family, the poor, the enslaved, and there are people alive in Christ today because a revival preacher pressed them for a decision no respectable church would have asked of them. Whoever sneers at the tent should count its fruit first.
 
@@ -100,7 +100,7 @@ Iain Murray's *Revival and Revivalism* (1994) gives the distinction its name. Re
 
 Two costs follow, and both are ours. The first is conversion without catechesis. If the decision is the thing, then whatever comes after is follow-up, and a church can grow by counting decisions while its people never learn the creed, the story of Scripture or the shape of a holy life. The second is the individual over the church. If the Spirit's work is known chiefly by what I feel, I become its final judge, and a congregation becomes a place I attend while it helps me. Tennent's hearer, free to leave for a converted minister, becomes the church shopper, and Finney's constituted means run forward into the altar call, the stadium crusade and the service designed by audience research to clear every obstacle before the decision. We didn't stumble into consumer Christianity. We built much of it in the revival tent, with the best intentions in the world. And the inheritance doesn't belong to one side. Heirs on the right kept Finney's decisionism and dropped his reform; heirs on the left kept his confidence that the right means could perfect society and dropped the conversion. Both kept the premise that faith is what the individual chooses and does. Neither kept the catechism.
 
-### Heat, fruit and the church that tests them
+## Heat, fruit and the church that tests them
 
 I can't write any of this from outside. I preach for conversions, I want the room to feel something, and I know how to make it happen: the music under the appeal, the pause, the story, the lowered voice. I have at times mistaken the warmth I produced for the work only God does, and counted a Sunday's response the way a shopkeeper counts a till. I came to faith from atheism, and what reached me was no atmosphere anyone engineered. It was truth that would not move. I should know better than anyone. I still reach for the dials.
 

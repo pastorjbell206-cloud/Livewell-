@@ -27,7 +27,7 @@ People who go looking for help with this usually hear one of two things. The the
 
 Resentment, in its first form, is a moral judgment: something was owed to me and it wasn't paid. The judgment can be true or false, and when it's true it deserves to be heard, named, and answered, above all by the person who owes. But resentment that is never spoken, never answered, and never forgiven changes its nature. It stops being a judgment about a debt and becomes a way of seeing the debtor. Moral philosophers have a word for that second thing, borrowed from the French: *ressentiment*. A marriage can survive a great deal of the first. It rarely survives much of the second. The Christian answer to both is neither suppression nor affirmation. It is something older and harder: a debt counted honestly, spoken truthfully, and then forgiven at real cost to the one forgiving.
 
-### A debt and a judgment
+## A debt and a judgment
 
 One of the best accounts of resentment in the English theological tradition is nearly three hundred years old. In 1726 Joseph Butler, later bishop of Durham, published his *Fifteen Sermons Preached at the Rolls Chapel*, and two of them take up this exact problem, one on resentment and one on forgiving injuries. Butler refused the easy move of calling resentment sinful in itself. He distinguished hasty, sudden anger, which flares at any harm, from settled and deliberate resentment, which is aimed at injury and injustice, at the sense that someone has wronged us and not merely hurt us. That second kind, he argued, belongs to the way God made us. It is a defense given to human nature against injustice and cruelty, and a world without it would be a world where wrongdoing met no resistance at all. The sin is not in having it. The sin is in its abuse: when it outruns the injury, when it hardens into malice, when it wants the other person harmed rather than the wrong made right. Forgiveness, for Butler, did not mean pretending the injury never happened. It meant laying down revenge while still seeing the wrong for what it was.
 
@@ -37,7 +37,7 @@ Jeffrie Murphy pressed the point further in *Forgiveness and Mercy* (1988), writ
 
 Put the three together and a picture emerges that Scripture already assumes. Jesus taught his disciples to pray, "and forgive us our debts, as we also have forgiven our debtors" (Matthew 6:12, ESV), and the metaphor is not accidental. A wrong creates a debt. Resentment is the part of us that keeps the books. Forgiveness is the cancellation of a debt that is real, which means you can't forgive what you refuse to count. The ledger isn't the problem. The problem is what happens to the bookkeeper when the ledger is never presented, never paid, and never released.
 
-### The spouse who is resentful for good reason
+## The spouse who is resentful for good reason
 
 Before anything is said about bitterness, the resentful spouse deserves to be heard at full strength, because a great deal of resentment in marriage is simply accurate.
 
@@ -53,7 +53,7 @@ I can't write this section as a neutral observer. I'm a husband and the father o
 
 One boundary has to be stated plainly. Some resentment has nothing to do with dishes. It is the conscience's refusal to accept being threatened, controlled, isolated, or hurt. If what you are carrying is fear of your spouse, nothing in this essay or in Christian teaching on forgiveness requires you to remain in danger. Forgiveness is not the same as reconciliation, and neither one requires you to go back to harm. The National Domestic Violence Hotline is available at 1-800-799-7233, and if you are in immediate danger, call 911.
 
-### When resentment turns: Nietzsche and Scheler
+## When resentment turns: Nietzsche and Scheler
 
 Resentment is often right, but it rarely stays right, and the sharpest account of how it goes wrong came from Christianity's fiercest modern critic.
 
@@ -67,7 +67,7 @@ But Scheler also saw where Nietzsche went wrong about Christianity, and it is th
 
 There is one more thing both men saw that the church should not miss. On both accounts, ressentiment is born of held-down feeling and a sense of powerlessness. It grows in silence. Which means the counsel simply to put resentment away, if it means swallowing it unspoken, doesn't cure ressentiment. It manufactures it.
 
-### What Hebrews and Ephesians actually say
+## What Hebrews and Ephesians actually say
 
 The church's usual verse on this subject is Hebrews 12:15, and it is almost always quoted out of its setting. The passage reads: "Strive for peace with everyone, and for the holiness without which no one will see the Lord. See to it that no one fails to obtain the grace of God; that no 'root of bitterness' springs up and causes trouble, and by it many become defiled; that no one is sexually immoral or unholy like Esau, who sold his birthright for a single meal" (Hebrews 12:14–16, ESV).
 
@@ -81,7 +81,7 @@ C. S. Lewis drew the needed distinction in his short essay "On Forgiveness." To 
 
 Forgiveness is also not the same as reconciliation or restored trust. One person can release a debt alone; reconciliation needs the repentance Luke 17 describes, and trust returns only through changed conduct. A spouse can forgive fully and still say the pattern has to change, and the forgiveness is what lets her say it without contempt.
 
-### Saying it to God first
+## Saying it to God first
 
 If the grievance must be spoken, but not in the voice of a verdict, where does all the heat go? The Psalms answer that, and they answer it more honestly than the church usually does.
 
@@ -93,7 +93,7 @@ What the imprecatory psalms model is neither suppression nor revenge. The psalmi
 
 For a marriage, this means the fullest version of the grievance is spoken first upward, as raw and unfair as it actually is, and then across the table in a form that can be answered. The spouse who has prayed the psalm is far more likely to say, "I've been carrying this, and I need you to see it," than, "You always do this." One is a request. The other is a sentence already passed.
 
-### The elder brother
+## The elder brother
 
 Jesus told a story about resentment, and it's worth noticing whom he put at the center of it.
 

@@ -23,7 +23,7 @@ review: "Integrity pass done. For James: (1) The source's story of the man in th
 reviewed: 2026-09-24
 ---
 
-### The question behind the question
+## The question behind the question
 
 The question rarely arrives as a question. It arrives as a person who has already decided whether you are safe.
 
@@ -37,7 +37,7 @@ Now the word itself. The psychologist George Weinberg popularized *homophobia* i
 
 Serious, Scripture-loving Christians disagree here, some holding the historic teaching as a boundary of the faith and others treating the question as a difference between brothers and sisters. This essay will say where it lands, but only after both cases have been set down in the form their best defenders would sign, because a verdict handed over before the other side has been felt is not a conviction. It is a reflex.
 
-### Why the old ethic now sounds like hatred
+## Why the old ethic now sounds like hatred
 
 To many readers under forty, the charge of homophobia doesn't feel like an argument. It feels like a description, and that feeling has a history.
 
@@ -49,7 +49,7 @@ Some of that change was a real gain. The church often treated same-sex attractio
 
 And the church gave up much of its sexual ethic long before this debate reached it. The Anglican bishops at the Lambeth Conference of 1930 cautiously permitted contraception within marriage, and most Protestants followed with little theological reflection. California's Family Law Act of 1969 introduced no-fault divorce, the rest of the country followed, and evangelical churches absorbed the new divorce culture with barely a sermon of resistance. We made our peace with all of it, and then discovered the full force of our convictions at the one point where they cost the majority in our pews nothing. The skeptic who suspects prejudice dressed as principle has noticed something true about us. The question is whether it is true about the teaching.
 
-### A vision of the body, not a list of prohibitions
+## A vision of the body, not a list of prohibitions
 
 The historic Christian ethic begins with a story about what bodies are for, and every prohibition in it is a shadow cast by that story.
 
@@ -65,7 +65,7 @@ Put together, the ethic says this: sexual union belongs to the covenant of a man
 
 Kyle Harper's *From Shame to Sin* (2013) shows how strange this ethic looked when it first appeared. Roman sexual morality, Harper argues, was organized around status and shame. A freeborn wife was guarded so that her children would be legitimate heirs; a male citizen could use slaves and prostitutes without disgrace, so long as his partners were beneath him in rank and he kept the dominant role. Justin Martyr's *First Apology* (around 155) protested that exposed infants were gathered up and raised for prostitution. Into that world the church brought a morality built on the free will of every person before God, and it called sexual sin by the same name whoever committed it and to whomever. Its "no" fell hardest on the powerful: the master who took his slave girl, the citizen at the brothel. Roman morals judged same-sex relations by who held which role; the church forbade them outright, as it forbade the master's use of the slave. Whatever else one concludes, the historic ethic began as a despised minority's vision pressed against the pleasures of the most powerful men in Rome.
 
-### Romans 1 and the trap in chapter 2
+## Romans 1 and the trap in chapter 2
 
 Romans 1 is the passage most often thrown and least often read. Paul states his subject first: "For the wrath of God is revealed from heaven against all ungodliness and unrighteousness of men, who by their unrighteousness suppress the truth" (Romans 1:18). The root is the suppression of what can be known about God, and the pivot is an exchange: "they exchanged the truth about God for a lie and worshiped and served the creature rather than the Creator, who is blessed forever! Amen" (1:25). Only then does Paul write, "For their women exchanged natural relations for those that are contrary to nature; and the men likewise gave up natural relations with women and were consumed with passion for one another" (1:26–27).
 
@@ -75,7 +75,7 @@ But Paul keeps writing, and the church has often stopped reading. The list that 
 
 Two misreadings follow from ignoring the trap. The first reads 1:26–27 and skips 2:1, setting gay people apart as a special class of sinner; a church that does that has become the very man Paul addresses, and the reader who came to Romans 1 for ammunition is the reader Paul was aiming at. The second lets 2:1 swallow the chapter before it, as though the turn on the judge meant the things Paul named no longer counted. The turn widens the diagnosis to everyone and cancels none of it. What Romans 1 refuses is a ranking, and it refuses to let the one reading it stand anywhere but under the same mercy.
 
-### The affirming case at full strength
+## The affirming case at full strength
 
 The affirming case deserves better than the cartoon it usually gets. Its most serious advocates love the book they are arguing about.
 
@@ -87,7 +87,7 @@ James Brownson's *Bible, Gender, Sexuality* (2013) comes at the question as a Re
 
 Beneath all of it runs the argument from history. The church once quoted chapter and verse for slavery, whole libraries of it, and it was wrong, and it took the witness of the excluded to make it see. What if we are standing in that place again, defending with a handful of verses a cruelty our grandchildren won't believe we couldn't see? That argument has moral seriousness. Refuse to feel it and you have not understood it.
 
-### The traditional reply, and the debt it carries
+## The traditional reply, and the debt it carries
 
 The traditional case gets the same refusal to caricature. Its first reply is that the argument begins in Genesis and the words of Jesus, and the prohibitions are the edge of that pattern rather than its center. Gagnon's second reply is historical. The ancient world did imagine lasting, even inborn, same-sex desire, as Aristophanes' speech in Plato's *Symposium* shows with its myth of divided humans seeking their other halves, some of them male and male. Romans 1:26 condemns women's same-sex relations, which cannot be explained as pederasty. And the rare word in 1 Corinthians 6 appears to have been formed from the Greek translation of Leviticus 18:22 and 20:13, which forbid a man lying with a male without reference to age, rank or exploitation. On this reading Paul was repeating the sexual ethic he had inherited from Israel's Scripture, without exception clauses.
 
@@ -105,7 +105,7 @@ Wesley Hill has lived inside that teaching and written about it without self-pit
 
 I won't pretend that costs nothing, and the cost is the objection I have not fully answered. I am asking a gay believer for a lifelong chastity I was never asked to bear, and the church that asks it has mostly failed to build the friendship and belonging that would make such a life anything but lonely. If we require the cross and withhold the community, we have preached a burden and kept back the body that was supposed to help carry it, and the fault is ours. I hold the historic teaching. I hold it with a debt I have not paid.
 
-### What we will be asked
+## What we will be asked
 
 If you are gay and have read this far, past everything the church has done to make sure you wouldn't, you have shown more willingness to sit in the hard room than most of the people who talk loudest about you have ever shown you. You are not an issue. You never were. You are welcome to argue with every line, and if you finish unconvinced, I hope you can at least say the teaching was stated without contempt.
 

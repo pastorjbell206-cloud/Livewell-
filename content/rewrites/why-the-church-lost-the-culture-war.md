@@ -19,7 +19,7 @@ review: "Integrity-reviewed 2026-09-24. Verified or corrected: Hunter 1991 and 2
 reviewed: 2026-09-24
 ---
 
-### The defeat, and the name we gave the fight
+## The defeat, and the name we gave the fight
 
 For a generation of American Christians the defeat is simply a fact of life. The public argument over marriage, sex and the family, which many churches treated as theirs to win, was settled against them with a speed that surprised both sides. When Gallup first asked Americans in 1996 whether marriages between people of the same sex should be recognized in law, about a quarter said yes. By the time the Supreme Court decided *Obergefell v. Hodges* on June 26, 2015, and required every state to license those marriages, a majority agreed, and within a few years the figure stood near seven in ten. In March 2021 Gallup reported that membership in a church, synagogue or mosque had fallen below half of American adults for the first time since it began asking in 1937. Whatever else those years were, they were not a victory.
 
@@ -27,7 +27,7 @@ The familiar explanations come from both directions. One says the church lost be
 
 A separate essay on this site traces how the religious right was built. This one is about the idea itself. Metaphors are not neutral. The words we use for our situation decide in advance what counts as success, who counts as an enemy and what we may do to win, and a church that calls its public life a war has settled a great deal before the first sermon is preached. I'm a Baptist pastor in the tradition that fought this war most loudly, and I'm not writing from the other side of the aisle. The losses are ours to count, and some of them are mine.
 
-### Where the phrase came from
+## Where the phrase came from
 
 The phrase is German before it is American. In the 1870s, in the empire Otto von Bismarck had just assembled under Prussian leadership, the state set out to break the political power of the Roman Catholic Church, and German liberals gave the campaign its name: *Kulturkampf*, the struggle over culture. After the First Vatican Council defined papal infallibility in July 1870, Catholic Germans looked to Bismarck and his liberal allies like citizens whose final loyalty lay in Rome. Between 1871 and 1875 came a cascade of laws. Political preaching from the pulpit was made a crime, the Jesuits were expelled, the May Laws of 1873 put the training and appointment of priests under state control, and civil marriage was made compulsory. Bishops were fined, imprisoned or driven into exile.
 
@@ -39,7 +39,7 @@ Hunter was describing a fracture. Within a year a politician had turned it into 
 
 The metaphor carried assumptions that most of us absorbed without noticing. A war has two armies, and everyone belongs to one. It has territory, which one side holds and the other wants. It has a scoreboard, and it has an end, after which the losing side accepts the winner's terms. Each of them misled us.
 
-### Territory and garden
+## Territory and garden
 
 The word culture comes from the Latin *colere*, which means to till, to tend and to inhabit, and also to honor or worship; the word *cultus* grows from the same root. A culture, in that older sense, is what grows when a people tends something over a long time: the habits of a household, the shape of a week, the stories told to children. The first charge given to humanity in Scripture is cultural in exactly this sense: "The LORD God took the man and put him in the garden of Eden to work it and keep it" (Genesis 2:15, ESV). You can seize territory in an afternoon. You can't seize a garden. You can only tend it or neglect it.
 
@@ -53,7 +53,7 @@ Read Hunter through MacIntyre and the culture war looks different. What looked l
 
 That is why *Obergefell* felt like an ending even to people who had expected it. Justice Anthony Kennedy's majority opinion grounded the right to marry in the dignity and autonomy of the person, the four dissenters answered on the role of courts and the nature of marriage, and neither side persuaded the other. The decision did not settle the moral question. It settled who held the territory. For a movement that had understood itself as a moral majority, the discovery was worse than a loss: there was no longer a shared set of values to defend, and the majority had not been there for some time. Seven years later *Dobbs v. Jackson Women's Health Organization* (2022) overturned *Roe v. Wade*, and some Christians took it as proof that the war could still be won. For those who hold what the church has held since the *Didache* forbade the killing of a child by abortion, the decision was a real good. But it returned the question to the states, not to a common conscience, and several of the ballot measures that followed, including one here in Michigan in 2022, went the other way. The territory had changed hands. The garden had not.
 
-### Those who would fight on, and those who never would have fought
+## Those who would fight on, and those who never would have fought
 
 Two groups of Christians will object to all of this, and both deserve to be heard in the form they'd sign.
 
@@ -65,7 +65,7 @@ Each case sees something the other misses. Those who would keep fighting are rig
 
 The fighters have one objection I can't fully answer. Faithful presence is slow, and a child in danger needs protection now. Law can save a life this year that formation will not reach for a generation. Whatever the church learns from losing the culture war, it can't learn indifference to the vulnerable people the war was, at its best, trying to protect. The answer is not to keep fighting on the old terms, but the cost of changing them is not small, and anyone who says otherwise has not counted it.
 
-### What losing revealed
+## What losing revealed
 
 The first thing the defeat exposed was how much of the agreement had never been conviction. The name Moral Majority assumed that the nation's morals were basically Christian and needed only to be mobilized. But much of that majority held its morality the way people hold an accent, as something received rather than chosen or understood. When the surrounding culture stopped reinforcing it, it went, and it went inside the church as well as outside. The sexual revolution didn't wait at the church door to be voted down. It came in with us, into our marriages, our screens and our children's assumptions, while our platforms were still promising to hold the line. We had handed the formation of our own people to a culture that happened, for a time, to agree with us, and we mistook its agreement for our strength.
 
@@ -75,7 +75,7 @@ The same instrument has to measure the left, and it gives a hard reading. The ma
 
 The third thing the defeat exposed was what the war had formed in us. A people who spend thirty years describing their neighbors as the enemy become a people who see enemies, and their children learn the tone long before the doctrine. Any pastor who has preached through these years knows how easily a sermon finds its energy in what "they" are doing to "us," and none of us who preach is exempt. My own tradition should have known better than most. Baptists learned their public voice as a persecuted minority. Roger Williams was banished from Massachusetts Bay and founded Providence in 1636 as a refuge for conscience, and in the years before the Revolution Baptist preachers in Virginia were jailed for preaching without a license from the established church. A tradition whose convictions about religious liberty were formed in jail learned, within living memory, to speak like an establishment that feared losing its place. The war failed to change the culture. It changed us instead, and the change shows exactly where the gospel should have been most distinct, in how we speak of those who disagree with us.
 
-### The church that never had the culture
+## The church that never had the culture
 
 The church's founding documents were written by people who never held the territory. For nearly three centuries before Constantine's victory in 312 and the Edict of Milan in 313, Christians were a minority, often despised and sometimes hunted, with no legal standing and no expectation of any. The First Letter of Peter is addressed to "elect exiles of the dispersion in Pontus, Galatia, Cappadocia, Asia, and Bithynia" (1 Peter 1:1, ESV), scattered congregations in what is now Turkey, slandered by neighbors whose ways they had left. Peter's instruction to them is compact:
 
@@ -91,7 +91,7 @@ Jesus had set the terms on the night he was arrested. When the soldiers came to 
 
 None of this makes the church passive. Jeremiah wrote to the exiles in Babylon, who had lost everything a people can lose in public, and told them to "build houses and live in them; plant gardens and eat their produce" (Jeremiah 29:5, ESV), and then to "seek the welfare of the city where I have sent you into exile, and pray to the LORD on its behalf, for in its welfare you will find your welfare" (Jeremiah 29:7, ESV). Hunter draws on this letter for faithful presence, and almost none of it concerns power. The exiles are to plant gardens, seek the good of a city that is not theirs, and pray for it. That is cultural work in the oldest sense of the word.
 
-### The war Peter named
+## The war Peter named
 
 The defeat is not the whole story of American Christians in these years. Many quietly adopted children, ran pregnancy centers, fed the hungry and loved neighbors who voted against everything they believed, while the noise of the war drowned out their witness. Repentance begins where they began, with ordinary things. It looks like churches that take up the formation of their own people as their first public work: catechizing children in what the faith teaches and why, teaching marriage as a covenant before campaigning for it as a policy, and keeping a common life whose forgiveness, hospitality and generosity can be seen from the street. It looks like care for mothers and children that is as visible in a congregation's budget and nursery as it ever was at a rally. It looks like conservative Christians who can hold the historic teaching on marriage and still treat their gay neighbors as neighbors, and progressive Christians who can pursue justice for the poor and still treat their conservative neighbors as something other than bigots. It looks like Christians who still vote and still argue in public, as citizens should, but who no longer mistake the outcome of an election for the state of the kingdom.
 

@@ -22,7 +22,7 @@ What rarely gets quoted is the sentence it finishes. The verse everyone loves is
 
 The claim of this essay is that Amos speaks more directly to a church like ours than almost any book in the Old Testament, and that he cuts in both directions at once. He exposes a worship that has made its peace with injustice, and with the same blade he exposes a religion that has agreed to serve as chaplain to a nation or a party. The distinction the whole book turns on is written into the name of the town where he preached. Bethel means "house of God." The priest who ran it called it "the king's sanctuary." A church can carry the first name and serve as the second without noticing, and that is the danger Amos was sent to name. I write as a pastor who stands inside that danger every week, not as a commentator looking down on it.
 
-### A shepherd from Tekoa in a boom economy
+## A shepherd from Tekoa in a boom economy
 
 The book opens with a date. "The words of Amos, who was among the shepherds of Tekoa, which he saw concerning Israel in the days of Uzziah king of Judah and in the days of Jeroboam the son of Joash, king of Israel, two years before the earthquake" (Amos 1:1). The earthquake was remembered for centuries; Zechariah could still write, "as you fled from the earthquake in the days of Uzziah king of Judah" (Zechariah 14:5). These words were spoken to real people, in a real economy, under a king whose name they knew.
 
@@ -36,7 +36,7 @@ Popular preaching often makes Amos a poor farmhand, and he may have been. But th
 
 Hold the whole arc in view, because Amos preached in the calm before the end. In 745 BC Tiglath-pileser III took the Assyrian throne and turned the empire west again. In 722 BC Samaria fell, and the northern kingdom was carried off and never came back (2 Kings 17). Within about four decades of Amos's preaching, its houses of ivory were rubble. Nobody at the festivals of Jeroboam's golden years could see that coming.
 
-### The sermon that turned on its audience
+## The sermon that turned on its audience
 
 Amos's first recorded sermon is among the most skillful rhetoric in Scripture, and it works by letting the audience enjoy it. He begins with Damascus, the enemy to the north: "For three transgressions of Damascus, and for four, I will not revoke the punishment, because they have threshed Gilead with threshing sledges of iron" (Amos 1:3). Then Gaza, for selling whole communities into slavery. Then Tyre. Then Edom, Ammon and Moab, who were not strangers at all but kin, the descendants of Esau and of Lot. The circle is tightening. Then Judah, the brother kingdom to the south, "because they have rejected the law of the LORD, and have not kept his statutes" (Amos 2:4). Israel would have liked that one best of all.
 
@@ -50,7 +50,7 @@ This is the structure of the whole book, and it's the structure of Nathan's para
 
 Abraham Joshua Heschel, the Jewish philosopher whose *The Prophets* (1962) remains the most searching modern study of these books, noticed that what horrified the prophets looks, to most of us, like the ordinary friction of economic life: a little cheating in business, a court that leans toward the side with money. We call these slight. The prophets called them catastrophe. Heschel's explanation was that the prophet does not see injustice from the human side alone. He feels something of what God feels about it, what Heschel called the divine pathos, God's own involvement in the fate of the wronged. Christians who hold, with the classical tradition, that God is not tossed about by passions as we are will want to state that more carefully than Heschel did. The prophets weren't exaggerating. We are underreacting, because our scale of moral weight has been set by what we are used to.
 
-### Songs God will not hear
+## Songs God will not hear
 
 Amos's attack is so severe that it has often been misread as an attack on worship itself. It isn't. It is an attack on worship that has become an alibi.
 
@@ -70,7 +70,7 @@ Walter Brueggemann, in *The Prophetic Imagination* (1978), gave this condition a
 
 The canon agrees with Amos. Isaiah opens his book with the same charge against Jerusalem's festivals. Micah asks what the LORD requires. Jesus, standing in the temple courts eight centuries later, tells the most scrupulous worshipers of his day that they "tithe mint and dill and cumin, and have neglected the weightier matters of the law: justice and mercy and faithfulness" (Matthew 23:23). The teaching is not that worship is optional. It's that worship which leaves justice untouched has become something other than worship, and God declines to be its audience.
 
-### Bethel, the king's sanctuary
+## Bethel, the king's sanctuary
 
 Bethel had an old and holy name. Jacob gave it after his dream of the ladder (Genesis 28:19). But the sanctuary Amos walked into was founded as policy. When the kingdom split around 930 BC, the first Jeroboam feared that if his people kept going up to the temple in Jerusalem, their hearts would turn back to the house of David and they would kill him (1 Kings 12:26–27). So he made two calves of gold, set one at Bethel and one at Dan, and said, "Behold your gods, O Israel, who brought you up out of the land of Egypt" (1 Kings 12:28). Many scholars think the calves were meant as pedestals for the invisible LORD rather than rival gods. If so, the royal sanctuary didn't preach a foreign deity. It told the true story of the exodus, in the true name, for the king's purpose.
 
@@ -86,7 +86,7 @@ Martin Luther King Jr. met his Amaziahs in April 1963, and they weren't segregat
 
 I am not exempt from this. I have silenced voices that were inconvenient. I have managed prophetic challenge rather than received it. I have felt the impulse to tell someone to go prophesy somewhere else. Amaziah is the character a pastor is most likely to become, with a building to keep open and a congregation to keep together. And the reverse error is real too: not every loud critic is Amos. Before Amos ever confronted Amaziah, he prayed for the people he would indict: "O Lord GOD, please forgive! How can Jacob stand? He is so small!" (Amos 7:2). A self-appointed prophet who enjoys the condemnation and never prays that prayer is not standing where Amos stood.
 
-### Darkness, and not light
+## Darkness, and not light
 
 Israel had a hope, and Amos turned it inside out. The people longed for the day of the LORD, when God would rise up, crush their enemies and vindicate his people. "Woe to you who desire the day of the LORD! Why would you have the day of the LORD? It is darkness, and not light" (Amos 5:18). The day would come, but not as they pictured it, because they had assumed they were the ones to be vindicated.
 
@@ -94,7 +94,7 @@ American Christians on both sides keep a version of that hope. One pictures the 
 
 Then Amos says something stranger. "And on that day," declares the Lord GOD, "I will make the sun go down at noon and darken the earth in broad daylight" (Amos 8:9). He adds that God will make it "like the mourning for an only son" (Amos 8:10). The Gospel writers don't cite Amos when they tell of the crucifixion, but no reader who knows this book can miss what they describe: "And when the sixth hour had come, there was darkness over the whole land until the ninth hour" (Mark 15:33). The day of darkness came at noon, and the mourning was for an only Son. The judgment Amos announced fell, and it fell on the one person who had never kept a cloak overnight or rigged a scale. The cross does not let us around Amos. It is the only way through him. And the way through begins where it began at Bethel, with the worshipers.
 
-### The fallen booth of David
+## The fallen booth of David
 
 Amos ends with hope. "In that day I will raise up the booth of David that is fallen and repair its breaches, and raise up its ruins and rebuild it as in the days of old" (Amos 9:11). Many critical scholars since the nineteenth century have judged this ending a later addition to a book of judgment; others answer that a prophet of judgment can see past it. The canon ends the book here, and the New Testament reads it as Scripture. It does not soften a line of the eight chapters before it. The house of David is a booth now, a flimsy harvest shelter, not a palace of ivory. Restoration begins in ruins.
 

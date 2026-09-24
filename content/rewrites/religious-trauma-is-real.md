@@ -31,7 +31,7 @@ Some who read this are reading from inside harm, so several things belong at the
 
 Two words get run together in this conversation. "Religious trauma" is a clinical word about what happened inside a person. "Spiritual abuse" is a moral word about what someone holding spiritual power did to them. The church has spent much of the last fifteen years arguing about the first, whether religious trauma is a real diagnosis, and has often used that argument to avoid answering for the second. But Scripture never needed a diagnostic manual to condemn a shepherd who fed himself. I came to faith as an adult, from atheism, so I didn't carry a childhood version of this into the church. But I hold a pulpit, and I know how little effort it takes to use one against the person who questioned me. The people who most need to hear that this harm is real are often the people most invested in denying it, and on some days the pastor is one of them.
 
-### Where the words came from
+## Where the words came from
 
 The concern is older than the vocabulary. In 1961 the psychiatrist Robert Jay Lifton published *Thought Reform and the Psychology of Totalism*, a study of "thought reform" in Mao's China. Lifton wasn't writing about churches, which is part of what makes his work useful: he showed that a closed system of total meaning works the same way whatever it believes. Among the marks of such a system he named the control of what a person may hear and read, a demand for purity no one can meet, "loading the language" with phrases that end thought rather than start it, and a principle he called doctrine over person. Where a person's experience contradicts the doctrine, the experience must be wrong. Anyone who has been told that their doubt proves their sin has met that principle in a Christian accent.
 
@@ -45,7 +45,7 @@ Two things follow. First, Religious Trauma Syndrome is not a formal diagnosis. I
 
 That is why the distinction matters. A person can be deeply wounded by a church without anyone having abused them; a death, a failed congregation, or a true word heard at the wrong time can all leave marks. A leader can abuse someone who never meets any clinical threshold, and a person can be harmed for years and never call it trauma. The absence of a diagnosis has sometimes been treated as if it settled whether anything wrong was done. It settles nothing of the kind. Whether a wound has an entry in the manual is a question for clinicians. Whether a shepherd fed himself is a question for the church, and the church has had the answer since Ezekiel.
 
-### The pastor's fear, stated fairly
+## The pastor's fear, stated fairly
 
 There's a pastor reading this with his arms folded, and he deserves to have his objection stated better than he'd put it himself. He's not defending abuse. He's afraid of a word that has no edges.
 
@@ -57,7 +57,7 @@ Most of that is true, and a church that forgets it will end up with a faith that
 
 The second is what the record actually shows. The reports that have shaken the church in this century, which we'll come to, did not describe congregations too timid to preach hard truth. They described institutions protecting powerful men. The pastor's fear is real, but it isn't symmetrical with the harm, and treating the two dangers as equal is its own kind of dishonesty. The question isn't whether the church may say hard things. It must. The question is how to tell a hard truth from an abusive one, and Jesus answered it.
 
-### A heavy burden and an easy yoke
+## A heavy burden and an easy yoke
 
 Matthew's Gospel sets two sayings of Jesus twelve chapters apart, and each interprets the other. The first is an invitation: "Come to me, all who labor and are heavy laden, and I will give you rest. Take my yoke upon you, and learn from me, for I am gentle and lowly in heart, and you will find rest for your souls. For my yoke is easy, and my burden is light" (Matthew 11:28–30). The second is an indictment, spoken in the temple in the last week of his life: "They tie up heavy burdens, hard to bear, and lay them on people's shoulders, but they themselves are not willing to move them with their finger" (Matthew 23:4). Matthew uses the same Greek word for "burden" in both places. There are two ways of laying a load on a human being, and Jesus names both.
 
@@ -71,7 +71,7 @@ That's why good theology is no protection. Every mark of spiritual abuse the res
 
 Jesus reserves the word "woe" for the people who did this. "Woe to you, scribes and Pharisees, hypocrites! For you tithe mint and dill and cumin, and have neglected the weightier matters of the law: justice and mercy and faithfulness" (Matthew 23:23). The Pharisees weren't the careless. They were the serious ones, the people who studied Scripture most closely and cared most about holiness. The danger Jesus names lives nearest the people who take God most seriously, which is why the chapter belongs to pastors before anyone else.
 
-### Shepherds who feed themselves
+## Shepherds who feed themselves
 
 The prophet saw it six centuries earlier. Ezekiel was a priest carried to Babylon in the deportation of 597 BC, and his thirty-fourth chapter comes just after the news that Jerusalem has fallen. His shepherds are first of all Judah's kings and officials, whom the ancient Near East called the shepherds of their people. "Thus says the Lord GOD: Ah, shepherds of Israel who have been feeding yourselves! Should not shepherds feed the sheep?" (Ezekiel 34:2). The charge is specific. "The weak you have not strengthened, the sick you have not healed, the injured you have not bound up, the strayed you have not brought back, the lost you have not sought, and with force and harshness you have ruled them" (34:4). God's verdict is personal: "Behold, I am against the shepherds, and I will require my sheep at their hand" (34:10).
 
@@ -85,7 +85,7 @@ Every one of those institutions confessed the creeds. What failed was the use of
 
 I pastor a Baptist church, and the autonomy of the local congregation is a Baptist conviction with real scriptural reasons behind it. So we Baptists have to reckon with the fact that the Guidepost report found that doctrine used as a reason not to act. Ezekiel's shepherds didn't need bad theology either. They needed only to keep the fat for themselves, and to rule "with force and harshness" people they had been given to heal.
 
-### What was done in God's name is not God
+## What was done in God's name is not God
 
 The third commandment reads, "You shall not take the name of the LORD your God in vain, for the LORD will not hold him guiltless who takes his name in vain" (Exodus 20:7). We've mostly taught it as a rule about cursing. It reaches further. To take up God's name for an empty or false purpose, to lay it over one's own will so that resisting the man becomes resisting God, is what the controlling shepherd does every time he speaks. The commandment doesn't say God will overlook it. It says the opposite.
 

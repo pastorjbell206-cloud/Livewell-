@@ -27,7 +27,7 @@ Part of that accusation is unfair, and I'll come to the part that is. But the co
 
 **The claim of this essay is that the church talks about sex more than money not because Scripture weighs them that way, but because the American church, on the right and on the left, divided a single biblical subject in two. The New Testament treats sexual immorality and covetousness as twin forms of one disordered desire, the grasping after more that turns a gift into a god. Twentieth-century Protestantism split into parties that each kept half of that sentence, and a consumer economy trained all of us to feel the one sin as a scandal and the other as success. The remedy is not to say less about sex. It is to hear the whole sentence again, beginning with the half that indicts the preacher.**
 
-### What the Bible actually puts together
+## What the Bible actually puts together
 
 You will often hear that the Bible contains more than two thousand verses about money. The figure circulates without a clear source, and I won't lean on it. What matters more is the company these warnings keep. Read Scripture on money beside Scripture on sex, and what stands out is not that one outweighs the other. It is how often the writers refuse to separate them.
 
@@ -41,7 +41,7 @@ The apostolic letters make the pairing almost a formula. Paul tells the Corinthi
 
 Paul's word for *covetousness*, *pleonexia*, means the craving for more. When he warns the Thessalonians against sexual immorality, "that no one transgress and wrong his brother in this matter" (1 Thessalonians 4:6, ESV), the verb rendered *wrong* comes from the same family: to overreach, to take more than your share. For Paul, sexual sin is a kind of grasping, and grasping is a kind of idolatry. Add 1 Timothy's warning that "those who desire to be rich fall into temptation, into a snare," because "the love of money is a root of all kinds of evils" (1 Timothy 6:9–10, ESV), and James telling the rich that "the wages of the laborers who mowed your fields, which you kept back by fraud, are crying out against you" (James 5:4, ESV), and the verdict is plain. The Bible does not rank these two sins so much as braid them.
 
-### The case for the church's emphasis
+## The case for the church's emphasis
 
 Those who have kept the church's sexual ethic clear deserve their case at its strongest, because much of it is right.
 
@@ -57,7 +57,7 @@ That is the distinction that changes the question. There is a contested sin, whi
 
 Taken seriously, the steelman cuts deeper still. If Murray and Putnam are right, the sexual and the economic were never separate subjects, and a church that preaches one without the other can't defend the family well. And the Paul who says sexual sin is against the body also calls covetousness idolatry. The canon never gives permission to preach one and go quiet about the other.
 
-### How the church divided the sentence
+## How the church divided the sentence
 
 The church's most honored preachers held the sentence together for a very long time, and they said things about wealth that would empty a modern stewardship campaign.
 
@@ -69,7 +69,7 @@ The sociologist David Moberg's *The Great Reversal* (1972) gave the result its c
 
 Politics hardened the split. After 1973 conservative Protestants organized around abortion, the family and the schools, and by 1979, with the founding of the Moral Majority, they had become a durable part of a coalition that also championed free-market economics. Progressive churches found their allies among the movements carrying the sexual revolution forward. I have to be careful here. How to tax, regulate and help the poor are prudential questions on which faithful Christians disagree in good conscience, and this is no argument for any party's policy. The claim is narrower. Covetousness is not a policy position. The heart that wants more is present in every voting bloc, and each coalition handed its churches a list of sins it could safely name and a list it could not. For much of fifty years, the coalition wrote the sermon calendar.
 
-### The money sermons we do preach
+## The money sermons we do preach
 
 The American church does talk about money, constantly. The trouble is the kind of talk.
 
@@ -83,7 +83,7 @@ We have been slow to see this because the power works through habit rather than 
 
 Then there is the plainest reason, the one pastors are least eager to say. The members best able to fund a church are usually those for whom Scripture's warnings about wealth cost the most. This is a structural pressure, not a personal scandal, and it works through a thousand small decisions not to go quite that far this week. I have made those decisions. I have told myself that the congregation wasn't ready, that the political implications would be misread, that a hard word about money has to be earned through years of trust. Some of that is true. None of it is entirely honest.
 
-### The sermon aimed at the absent
+## The sermon aimed at the absent
 
 The Old Testament has a story about how prophecy works, and it binds the two sins together. After David took Bathsheba and arranged her husband's death, Nathan came to him with a case. A rich man with very many flocks had a visitor, and rather than take an animal from his own herds, "he took the poor man's lamb and prepared it for the man who had come to him" (2 Samuel 12:4, ESV). David pronounced the sentence himself: "As the LORD lives, the man who has done this deserves to die" (2 Samuel 12:5, ESV). Then Nathan said, "You are the man!" (2 Samuel 12:7, ESV).
 
@@ -95,7 +95,7 @@ I don't want to pretend a false symmetry. The two failures are not equally commo
 
 The skeptic is owed a straight answer about the accusation this essay began with. It is largely correct, and the Bible made it first. The church did not go quiet about greed because God cares more about bedrooms than portfolios. It went quiet because one sermon costs the preacher little and the other a great deal, and because both of its political families found it easier to prosecute the absent than to convict the present. Basil said as much about the barns sixteen centuries ago. Nathan said it to a king.
 
-### The man Jesus loved
+## The man Jesus loved
 
 Mark tells of a man who ran up to Jesus and knelt, asking what he must do to inherit eternal life. Jesus recited the commandments: "Do not murder, Do not commit adultery, Do not steal, Do not bear false witness, Do not defraud, Honor your father and mother" (Mark 10:19, ESV). *Do not defraud* is not in the Decalogue as Moses gave it. Matthew and Luke leave it out of their lists (Matthew 19:18–19; Luke 18:20); only Mark records Jesus adding it, in the same list as the commandment on adultery. The man said he had kept them all from his youth, and nothing in the text suggests he was lying. He was the member any church would want: serious, observant, honest in business, and eager.
 

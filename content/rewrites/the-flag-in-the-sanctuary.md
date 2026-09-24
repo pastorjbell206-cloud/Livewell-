@@ -30,7 +30,7 @@ People do ask about it. A visitor asks why a church that confesses a kingdom not
 
 The claim of this essay is that the flag in the sanctuary is the visible seam where two faiths meet: the Christian faith, and the American civil religion that borrows so much of its vocabulary that most of us have never noticed we attend both. That seam has a datable history and a cost the people who love both God and country are rarely asked to count. The line that matters runs between love and worship, and the Apostle Peter drew it in two short commands to a church of exiles: "Fear God. Honor the emperor" (1 Peter 2:17, ESV). I pastor an American church, and I write from inside that line, not above it.
 
-### What the veteran and the family are right about
+## What the veteran and the family are right about
 
 Begin with the man at the funeral, because he is the one this argument must not wound for nothing. An old soldier stands as his friend's casket passes, the honor guard folds the flag into its tight triangle and places it in a widow's hands, and his eyes fill. He is not committing idolatry. He is honoring a real sacrifice made for a country that has, for all its sins, protected the freedom to worship more steadily than most powers in history. The family with a folded flag on the mantel knows exactly who died for their sins and who died for their country, and they are right to be grateful. Every pastor who has buried a veteran knows that room, and knows that nothing in it is cheap.
 
@@ -42,7 +42,7 @@ G. K. Chesterton put the difference in a sentence few have improved. In *The Def
 
 The defender of the flag has one more point, his strongest. The warnings about nationalism, he says, always cut one way, and much of the suspicion of patriotism is really contempt for ordinary people and their ordinary loyalties. The contempt is real. Some churches have taken their flags down as a sneer rather than a confession, and a bare platform can serve pride as easily as a draped one can serve idolatry. Rootlessness is no virtue. The Bible's last pages do not dissolve the nations into a gray, placeless humanity; John sees the new Jerusalem receive them: "They will bring into it the glory and the honor of the nations" (Revelation 21:26, ESV). At the end the nations are judged, purified, and brought in as tribute rather than erased. The real question is where that love is placed, and what it is allowed to stand beside.
 
-### How the flag got into the sanctuary
+## How the flag got into the sanctuary
 
 The fusion of cross and crown is older than America. In 312 Constantine is said to have ordered the Christian emblem painted on his soldiers' shields before the battle at the Milvian Bridge; in 313 the Edict of Milan ended the persecution of Christians; in 380 Theodosius made Nicene Christianity the religion of the empire. The church gained real goods, but it also acquired the empire's reflexes: its love of victory, its certainty that God rode with its armies, its habit of reading national success as divine approval. Every flag beside an American pulpit descends, whether anyone intends it or not, from those painted shields.
 
@@ -56,7 +56,7 @@ Then the words went in. On February 7, 1954, with President Eisenhower in the pe
 
 The answer, then, isn't sinister. Nobody decided it theologically. It came in during wars, carried by grief and gratitude and fear, and it stayed because moving it would have felt like betraying the dead. The history does not make the flag an idol. It shows that the church never asked the question, while the nation, in crisis after crisis, reached for God as a boundary marker, a way of saying which side we are on.
 
-### Two faiths that use the same words
+## Two faiths that use the same words
 
 The fusion got its classic description from a sociologist. In 1967 Robert Bellah published "Civil Religion in America" in the journal *Daedalus*. He opened with John F. Kennedy's inaugural address of 1961, which invoked God and never once named Christ, and argued that alongside the churches there exists a well-institutionalized religion of the nation itself, with sacred texts in the founding documents, holy days in the Fourth of July and Memorial Day, and martyrs in the war dead. Its God, Bellah observed, is austere and generic, concerned far more with order, law, and right than with salvation and love. Bellah was clear that this religion is something other than Christianity: it borrows Christianity's words and answers to something else.
 
@@ -66,7 +66,7 @@ But Lincoln is rare, and Bellah himself lost hope. In 1975, after Vietnam and in
 
 This is why civil religion is so hard for Christians to see. It is not the opposite of our faith. It is close enough to be mistaken for it, using God's name and asking us to stand and place our hands over our hearts and feel something that rhymes with reverence. A child who notices that we stand, fall silent, and bare our heads before the flag much as we do before God has noticed something most adults stopped hearing.
 
-### What the sociologists found, and what their critics say
+## What the sociologists found, and what their critics say
 
 Since Bellah, the fusion has been measured and given a harder name. In *Taking America Back for God* (2020) Andrew Whitehead and Samuel Perry define Christian nationalism as a cultural framework of myths, symbols, narratives, and values that idealizes and advocates a fusion of Christianity with American civic life, sorting Americans from those they call Ambassadors to those they call Rejecters. Their most important finding for the church: Christian nationalism is a different thing from Christian devotion. On a number of measures, once the nationalist framework is accounted for, Americans who pray, read Scripture, and attend worship often lean the other way on questions about outsiders. The fusion can grow alongside serious faith and pull against it. Philip Gorski and Samuel Perry pressed further in *The Flag and the Cross* (2022), arguing that the American version has long been bound up with race, a story about who counts as a real American.
 
@@ -78,7 +78,7 @@ The same instrument must cut the other way, or it isn't the church's instrument 
 
 Honesty also forbids a false balance. The flag beside the pulpit is most at home in churches like mine, conservative Protestant congregations, many of them Baptist, and Whitehead and Perry's data place the strongest embrace of the fusion among white evangelicals. The left has real idols. But this object in this room is chiefly our temptation, and I'd be a coward to pretend otherwise. I've watched it in myself. There have been seasons when I would have been more upset to hear my nation criticized than to hear my Lord ignored, when I grew hot at an insult to the flag and stayed cool at an insult to the cross. The thing you defend most fiercely is the thing you actually worship, whatever your mouth confesses on Sunday.
 
-### Fear God, honor the emperor
+## Fear God, honor the emperor
 
 Scripture begins with a people who were a nation before they had a country. Peter wrote to "elect exiles of the dispersion" (1 Peter 1:1, ESV), small congregations scattered across Asia Minor with no land, no army, and no standing, and then gave them Israel's title from Sinai: "But you are a chosen race, a royal priesthood, a holy nation, a people for his own possession, that you may proclaim the excellencies of him who called you out of darkness into his marvelous light" (1 Peter 2:9, ESV). Those are the words of Exodus 19:6, applied to a church drawn from many peoples. The church is a nation, the only one Scripture calls holy, and its citizens are scattered through every other.
 
@@ -90,7 +90,7 @@ Scripture also shows what happens when the two collide. In Daniel 3 an empire ra
 
 Augustine wrote his answer while an empire fell. After Alaric's Goths sacked Rome in 410 and pagans blamed the Christian God, Augustine spent 413 to 426 writing *The City of God*. Its central image is two cities formed by two loves, the earthly by love of self reaching to contempt of God, the heavenly by love of God reaching to contempt of self (Book 14), tangled together in every nation and every heart until the end. He was no enemy of patriotism. In Book 5 he credited the old Roman patriots for loving their city above their comfort, and said God gave them the earthly glory they sought as their reward. In Book 19 he defined a people as a multitude bound together by agreement about the things it loves, which makes every nation finally a question about love, and he cited Jeremiah's letter to the exiles to explain why the pilgrim church prays for the peace of the city it passes through. Beneath it all lies his brief definition of virtue as rightly ordered love (Book 15). Sin, for Augustine, is most often a good thing loved out of its order. The nationalist loves his country out of order, above the kingdom, above the stranger his country fears, above the Christ who counted a welcome given to the stranger as a welcome given to himself (Matthew 25:35). The problem was never the size of the love. It was the place the love was put.
 
-### What the room teaches
+## What the room teaches
 
 Architecture preaches. The eye learns from arrangement faster than the ear learns from speech, and a child raised where two banners flank the pulpit absorbs an equivalence long before anyone could explain it. The Flag Code asks that the national flag in a church hold the position of superior prominence. Paul says of the Son that he is "the head of the body, the church. He is the beginning, the firstborn from the dead, that in everything he might be preeminent" (Colossians 1:18, ESV). A congregation cannot give superior prominence to two things in the same room. It will decide, if only by its furniture, which claim it honors.
 

@@ -31,7 +31,7 @@ Spiritual abuse and religious trauma have their own essay on this site. This one
 
 The argument is this. The abuse crisis is a crisis of shepherding, not of church structure: the same logic, protecting the institution in the name of protecting the mission, produced the same silence in hierarchical, congregational and established churches alike. Scripture names that logic and judges it most severely in the household of God. And the church's most common defense, that Christians are called to forgive, rests on a confusion between forgiveness and immunity that the Bible never makes.
 
-### What twenty-five years of reports found
+## What twenty-five years of reports found
 
 In January 2002 the Boston Globe's Spotlight team began publishing what it had found in the records of the Archdiocese of Boston. The first story concerned one priest, John Geoghan, accused by more than a hundred people over some thirty years, and showed that Cardinal Bernard Law and other officials had known of accusations against him and moved him from parish to parish anyway. The stories that followed, gathered that year into the book *Betrayal*, showed that Geoghan was an instance, not an exception. Complaints were handled privately, settlements carried confidentiality clauses, and accused men were reassigned to places where no one knew what the archdiocese knew. Law resigned in December 2002.
 
@@ -43,7 +43,7 @@ The Church of England supplies the third case, and it is especially hard for eva
 
 Set the three side by side and the lesson flatters no one. One church is hierarchical, one congregational, one established by law. One concealed through bishops, one through a committee that insisted it had no authority, and one through a network of evangelical friends who trusted each other more than they trusted the police. Each polity supplied its own shield. The pattern was the same.
 
-### The first wrong and the second
+## The first wrong and the second
 
 Two wrongs run through every report, and they have to be kept apart. The first is the abuse, committed by a person. The second is what the institution did when it learned: the disbelief, the transfer, the confidential settlement, the statement asking for prayer, the long silence toward the police. The psychologists Carly Parnitzke Smith and Jennifer Freyd named the second wrong institutional betrayal in a 2014 paper of that title, meaning harm done by an institution to people who depend on it, including its failure to prevent abuse or to respond well when abuse is disclosed. The research they drew on linked such betrayal to worse trauma symptoms after an assault, over and above the harm of the assault itself. For many survivors it is the wrong that told them what they were worth.
 
@@ -55,7 +55,7 @@ Diane Langberg, a psychologist who has spent decades treating survivors of traum
 
 Pastors should be honest about why these instincts come so easily to us. We usually know the accused; we have eaten at his table. The person bringing the accusation is often young, or new, or someone the church has already filed away as difficult. Our salaries and our sense of our own faithfulness are bound up with the institution's good name. Reading the reports doesn't make any of us safe from the calculation. The men whose emails fill the Guidepost report had lived through the Boston revelations like everyone else.
 
-### What Scripture says to shepherds
+## What Scripture says to shepherds
 
 Ezekiel prophesied among the exiles in Babylon, and his oracle against the shepherds follows the news that Jerusalem had fallen in 587 BC. Explaining the catastrophe, he starts with Israel's own leaders:
 
@@ -75,7 +75,7 @@ The Old Testament tells the story of a cover-up inside a royal household, withou
 
 The text most often invoked to shield accused leaders is 1 Timothy 5:19: "Do not admit a charge against an elder except on the evidence of two or three witnesses" (ESV). It deserves its strongest reading. Paul is protecting leaders from malicious accusation, a real danger in any congregation, and applying the rule of Deuteronomy 19:15 that no one is condemned on one person's word. But Paul goes on: "As for those who persist in sin, rebuke them in the presence of all, so that the rest may stand in fear. In the presence of God and of Christ Jesus and of the elect angels I charge you to keep these rules without prejudging, doing nothing from partiality" (1 Timothy 5:20–21, ESV). The passage that protects an elder from a false charge requires that a guilty one be exposed in public, precisely because he leads, and forbids the partiality that shields a man for who he is. Then: "Do not be hasty in the laying on of hands, nor take part in the sins of others" (1 Timothy 5:22, ESV). A church that quietly passes a known abuser to another congregation has done both. And Paul is describing how a church judges its own officers, not whether a crime may be reported; the police don't need two witnesses to begin. The law of Moses itself gives a betrothed young woman assaulted in the open country the benefit of the doubt, "because he met her in the open country, and though the betrothed young woman cried for help there was no one to rescue her" (Deuteronomy 22:27, ESV). Scripture knows that abuse happens where there are no witnesses. The church has too often pretended not to.
 
-### Forgiveness is not immunity
+## Forgiveness is not immunity
 
 On January 24, 2018, in a Lansing, Michigan, courtroom, Rachael Denhollander was the last of more than 150 women and girls to address Larry Nassar, the former Michigan State University and USA Gymnastics physician who had abused them. She had been the first to accuse him publicly, in 2016. Denhollander, an attorney and an evangelical Christian, spoke to Nassar of the gospel, told him she prayed he would come to real repentance and receive forgiveness from God, which he needed far more than hers, and said she extended her own forgiveness as well. In the same statement she asked the judge for the maximum sentence, and asked, "How much is a little girl worth?" The institutions that failed Nassar's victims were secular; the pattern is human before it is ecclesiastical. Yet in an interview with Christianity Today soon afterward, Denhollander said that the church is one of the worst places to go for help with abuse, and her advocacy for survivors in Christian institutions has cost her.
 
@@ -85,7 +85,7 @@ Nor does forgiveness remove consequences. When Nathan confronted David, David sa
 
 Dietrich Bonhoeffer gave the church a name for what it did instead. In *The Cost of Discipleship* (1937) he called it cheap grace: forgiveness preached without repentance, absolution without confession, a grace that justifies the sin rather than the sinner. The abuse crisis turned his warning inside out. The church demanded costly forgiveness from the weakest people in it and handed cheap grace to the strongest: survivors were told to forgive quickly and stop talking, and offenders were told they were forgiven and sent to another pulpit. Jesus does command forgiveness. But it is God's work in a wounded person, often slow and never on another's timetable, and no church may make it the price of being believed, cared for or allowed to speak. It never requires a survivor to keep quiet, to meet, or to have any contact with the person who harmed her.
 
-### Why a church must never investigate a crime
+## Why a church must never investigate a crime
 
 Every state requires certain people to report suspected child abuse. Many name clergy, some require every adult to report, and the rules about confession and pastoral conversations vary. Church leaders should know the law where they serve; nothing here is legal advice. But a church's own rule should be simpler and stricter than any state's. When there is reason to suspect a child is being abused, the church calls the police or child protective services immediately, before anything else. It doesn't interview the child, confront the accused or wait to be sure. Being sure is the investigators' job.
 
@@ -97,7 +97,7 @@ An accusation of abuse in a church touches three jurisdictions. The crime belong
 
 With an adult survivor, the survivor decides whether to go to the police, though states also protect some dependent or vulnerable adults with reporting laws of their own, and leaders should know those too. The church should tell her she may, help her if she chooses to, and never discourage it or make her silence the price of its care. When a pastor sexually exploits someone who came to him for counsel, the church should call it an abuse of power, not an affair between equals; some states treat it as a crime. On an ordinary Tuesday, faithfulness looks unremarkable: background checks, no adult alone and out of sight with a child, trained volunteers, a written policy saying anyone may call the police, an accused staff member placed on leave while the authorities work, the congregation told the truth, and survivors offered care without being asked to sign away their voice. It needs only a decision, made in advance, that the church's name will never again be weighed against a child.
 
-### What the church carries now
+## What the church carries now
 
 Peter told scattered churches that "it is time for judgment to begin at the household of God" (1 Peter 4:17, ESV). That judgment has come, mostly by outside hands: reporters, grand juries, independent investigators, and survivors told for years that speaking would hurt the church. To the reader who doesn't believe and takes these reports as proof of what you suspected: about these institutions you are right, and the church should say so first. But the verdict you pass on these shepherds is Ezekiel's, and the millstone was Jesus's word before it was yours. That doesn't prove the faith true. It does mean the scandal is not all Christianity has to say about itself.
 

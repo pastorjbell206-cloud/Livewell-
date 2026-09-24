@@ -19,7 +19,7 @@ review: "Integrity reviewed 2026-09-24. Changed: the unsourced first-person line
 reviewed: 2026-09-24
 ---
 
-### A promise made to people who need it
+## A promise made to people who need it
 
 Most people meet the prosperity gospel late at night. It comes through a screen at the hour when the bills are on the kitchen table and the test results are still in their envelope, and it says what nobody else is saying: God has not forgotten you, God wants you well, and there is something you can do tonight. Sow a seed. Speak the promise aloud. Refuse to confess the sickness. For someone with no margin left, that is not a small promise. It may be the only one in the room that sounds as if it was addressed to her.
 
@@ -31,7 +31,7 @@ The platform I write for names prosperity teaching as an error it will not teach
 
 The argument turns on one distinction. Scripture is full of blessing, and God is generous past all accounting. The question is not whether God gives. It is whether God owes. A gift comes from a Father who knows what his children need, on his terms and in his time, and it may arrive as bread or as a cross. A return comes from a mechanism: the right input yields the right output, and if the output fails, the input must have been wrong. The prosperity gospel takes the language of gift and runs it through the machinery of return, and nearly everything that follows (the theology, the money, the blame) comes from that one substitution.
 
-### From New Thought to the television studio
+## From New Thought to the television studio
 
 The prosperity gospel did not grow out of the main stream of Christian theology, and its family tree explains much of what it became. One root is the nineteenth-century New Thought movement, whose teachers, beginning with the New England mesmerist Phineas Quimby, held that disease and want were at bottom wrong beliefs that right thinking could cure. A second is the Holiness faith-cure movement of the same decades, which taught that bodily healing was provided in the atonement and could be received by faith. A third is older and more American than either: the conviction, preached from Baptist pulpits as readily as any others, that godliness and getting ahead belong together. Russell Conwell, the Baptist pastor who founded Temple University, delivered his lecture "Acres of Diamonds" thousands of times around the turn of the twentieth century, telling audiences that getting rich was a Christian duty and that poverty nearly always traced back to someone's shortcomings. A Baptist can't read him without hearing his own tradition's accent.
 
@@ -45,7 +45,7 @@ That same year the enterprise came into full public view. The PTL network of Jim
 
 None of this stayed home. The broadcasts, books and conferences that carried the message across America carried it overseas, where it met Pentecostal revival and poverty far deeper than anything in Tulsa, in West Africa, Brazil and the Philippines. A teaching about the blessing of God had become, by every measurable sign, an industry.
 
-### What it gets right
+## What it gets right
 
 Before any verdict, the prosperity gospel deserves to be stated the way its most thoughtful defenders would state it. Much of what it says is true, and a church that dismisses it without hearing it usually has a quieter error of its own.
 
@@ -55,7 +55,7 @@ They remembered it in places the older churches had often neglected. Pentecostal
 
 The steelman, then, runs like this: God is good, God is generous, God cares about the whole person, God answers prayer, and faith expects him to act. Every clause is biblical. The question is what the prosperity gospel does with it, and the sharpest answer came from inside the Pentecostal world. Gordon Fee, a New Testament scholar ordained in the Assemblies of God, wrote *The Disease of the Health and Wealth Gospels* (1985) as a warning to his own movement. He did not deny that God heals or provides. He argued that the prosperity teachers had taken a true expectation of God's goodness and turned it into a right the believer could claim, a guarantee enforced by the correct words. That is exactly the difference between a gift and a return. The prosperity gospel gets the object right and the grammar wrong. Scripture speaks of God's goodness in the grammar of a father's promise, and the prosperity gospel speaks of it in the grammar of a contract.
 
-### What Scripture says about gain
+## What Scripture says about gain
 
 The Bible's oldest sustained answer to the prosperity gospel is Job, and the argument begins before Job suffers anything. When the LORD commends his servant, the accuser asks the question the whole book is written to answer: "Does Job fear God for no reason?" (Job 1:9, ESV). The charge is that Job's piety is a transaction. The prosperity gospel, without meaning to, answers the accuser's question the accuser's way. It tells believers there is indeed a reason to fear God, and the reason is the return.
 
@@ -73,7 +73,7 @@ Seed faith leans on Paul's words to Corinth about sowing and reaping bountifully
 
 Even 3 John 2, where Roberts began, turns out to be a greeting. Fee pointed out that it is the conventional health-wish that opened ancient letters, and the ESV renders it so: "Beloved, I pray that all may go well with you and that you may be in good health, as it goes well with your soul" (3 John 2, ESV). A courtesy is not a covenant. And a few chapters after the mountain-moving promise where Hagin began, the one who taught it knelt in Gethsemane and prayed, "Abba, Father, all things are possible for you. Remove this cup from me. Yet not what I will, but what you will" (Mark 14:36, ESV). No one has ever prayed with more faith than Jesus prayed that night. The cup was not removed, and its not being removed saved the world.
 
-### What it does to the poor
+## What it does to the poor
 
 Most critiques of the prosperity gospel stop at what it gets wrong about God. Those errors are real, but they are not the gravest. The gravest is what the teaching does to the people it courts most eagerly.
 
@@ -87,7 +87,7 @@ The most searching Christian response has come from the places where the teachin
 
 No teaching about faith requires a sick person to refuse medical care, and no one should give away money they need for rent, food or medicine on the promise of a return. This essay is not medical or financial advice. Anyone pressed to give beyond their means, or to stop treatment as proof of faith, should talk it through with a doctor and a pastor who has nothing to gain from the answer.
 
-### The comfortable version, and the shape of blessing
+## The comfortable version, and the shape of blessing
 
 It would be easy to end there, with the television preachers on one side and the rest of us safely on the other. The prosperity gospel makes an ideal opponent for a middle-class church, because its excesses are loud and ours are quiet. But Bowler's category of soft prosperity won't let churches like mine off so lightly.
 

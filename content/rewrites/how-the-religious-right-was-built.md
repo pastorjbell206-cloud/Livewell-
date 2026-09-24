@@ -24,7 +24,7 @@ review: "(1) First person carried from the sources only, verified in integrity r
 reviewed: 2026-09-24
 ---
 
-### The story each side tells
+## The story each side tells
 
 Most American Christians under sixty have never known a church that wasn't sorted into political camps. The voter guide in the foyer, the assumption about how the person in the next pew votes, the quiet suspicion of the believer who votes the other way: all of it feels like the weather, the climate faith has always lived in. It isn't. The movement we call the religious right is younger than many of the people who belong to it. It was built on purpose, by people whose names we know, in years we can count. And the older Protestant establishment it rose to oppose had been built the same way a generation before.
 
@@ -34,7 +34,7 @@ I held the first story myself before I read the history, and I have preached to 
 
 The honest history is less flattering than the first story and less tidy than the second. What it shows is not that Christians were wrong to care about the public order. They weren't. What it shows is that a people who had real convictions about the unborn and about the freedom of their churches allowed the machinery of partisan politics to decide which convictions counted, how loudly they were held, and who was a faithful Christian. The mainline had done the same thing earlier, on the other side of the aisle.
 
-### After Dayton: retreat, rebuilding and the new evangelicals
+## After Dayton: retreat, rebuilding and the new evangelicals
 
 In July 1925 a high school teacher named John Scopes was tried in Dayton, Tennessee, for teaching evolution in violation of state law. William Jennings Bryan, three times the Democratic nominee for president and the most famous evangelical layman in the country, helped prosecute. Clarence Darrow defended. Scopes was convicted and fined, and the verdict was later set aside on a technicality, but the courtroom was never the point. H. L. Mencken's dispatches turned the trial into a national verdict on fundamentalism itself, and Bryan died in Dayton five days after it ended. George Marsden's *Fundamentalism and American Culture* (1980) traces how a movement that had been, before the First World War, a respectable coalition of Protestant scholars and preachers defending the supernatural claims of the faith became, in the popular mind after Dayton, a byword for rural backwardness.
 
@@ -48,7 +48,7 @@ Graham was the new evangelicalism's public face. His Los Angeles campaign of 194
 
 The Eisenhower years matter here for another reason. Kevin Kruse's *One Nation Under God* (2015) shows how the 1950s fused a generic, anticommunist public piety with national identity: "under God" was added to the Pledge of Allegiance in 1954, and "In God We Trust" became the national motto in 1956. Kruse argues that much of this was promoted by business leaders who saw religion as an ally against the New Deal. By 1960 a great many American Christians of every kind had learned to hear the nation's voice and the church's voice as one sound. That habit would be put to work.
 
-### The mainline got there first
+## The mainline got there first
 
 The religious right did not invent the political church. It inherited the idea from the people it defined itself against.
 
@@ -64,7 +64,7 @@ Robert Wuthnow's *The Restructuring of American Religion* (1988) supplied the so
 
 This is the parallel case, and it has to be told with care, because the evidence doesn't support equal blame. The causes were not morally interchangeable, the scale of the two movements' political power was not the same, and on civil rights one side was simply right. But the grammar was shared. In both cases the church's public faithfulness came to be expressed chiefly in the currency of policy, and in both cases the policies arrived as a package assembled by a coalition, not by the church's own reading of Scripture. The mainline showed where that road ends. The religious right took it anyway.
 
-### Two convictions and a tax case
+## Two convictions and a tax case
 
 Before the verdict, the conviction deserves to be stated in the form its own defenders would sign, because much of it is true.
 
@@ -80,7 +80,7 @@ Randall Balmer builds on this record in *Bad Faith* (2021), extending an argumen
 
 Balmer's critics are serious historians, and their objections deserve the same hearing. Williams argues that evangelical opposition to abortion grew steadily through the 1970s and that pro-life conviction was real, not a cover story. Many who fought for the Christian schools experienced that fight as a question of religious liberty, and their testimony counts too. And Weyrich's recollection, given more than a decade after the fact by a man who blamed Carter for a policy begun under Nixon and Ford, is a slender foundation for a whole thesis. The fairest reading I can give is that the strands were braided rather than sequential. The pro-life conviction was real, and Schaeffer and Koop's tour and the Moral Majority's founding happened in the same year. But the defense of institutions built around racial exclusion was woven into the movement's origins far more deeply than its founding story admits. A movement that remembers itself as born purely to defend the unborn has edited a harder chapter out of its own genealogy, and an honest descendant has to put it back.
 
-### The machine, 1979 to 1989
+## The machine, 1979 to 1989
 
 The pieces came together quickly. In 1976, the year *Newsweek* called the year of the evangelical, a Southern Baptist Sunday school teacher named Jimmy Carter won the presidency speaking openly of being born again. Four years later many of the same voters turned against him, disappointed by his support for the Equal Rights Amendment, his administration's handling of the family and the schools, and the IRS proposal. In June 1979 Jerry Falwell, pastor of Thomas Road Baptist Church in Lynchburg, Virginia, founded the Moral Majority with Weyrich, Howard Phillips and Richard Viguerie, and Weyrich supplied the name. Christian Voice and the Religious Roundtable organized alongside it. In August 1980 Ronald Reagan told a Religious Roundtable gathering in Dallas, in substance, that since they could not endorse him he would endorse them. Reagan had been divorced, and as governor of California he had signed the 1967 law that liberalized abortion in that state. White evangelicals chose him over the born-again Baptist anyway.
 
@@ -94,7 +94,7 @@ The same instrument has to be turned on the left, and on those of us who would r
 
 The movement achieved its signature goal in June 2022, when *Dobbs v. Jackson Women's Health Organization* overturned *Roe*. Whatever one thinks of the decision, the victory poses a question the coalition cannot answer for the church: whether fifty years of political mobilization formed a people who will care for mothers and children now that the law no longer carries the argument for them. That question was always the church's, not the party's.
 
-### The king's sanctuary
+## The king's sanctuary
 
 Scripture saw this long before Lynchburg. When the kingdom of Israel split after Solomon, Jeroboam, the first king of the north, feared that if his people kept going up to the temple in Jerusalem their hearts would turn back to the southern king. So he set up golden calves at Bethel and Dan and gave his people a worship of their own (1 Kings 12:26 to 29). Bethel was built to serve a political need. Nearly two centuries later, when the herdsman Amos came north and preached judgment on the house of the second Jeroboam, the priest of Bethel, Amaziah, reported him to the king and sent him home: "never again prophesy at Bethel, for it is the king's sanctuary, and it is a temple of the kingdom" (Amos 7:13, ESV). Amaziah didn't need to believe anything false about God. He only needed to accept that the sanctuary belonged to the king, and that a word which endangered the kingdom's interests could not be spoken there. Amos's answer was to deny that he had any standing the court could grant or take away: "I was no prophet, nor a prophet's son, but I was a herdsman and a dresser of sycamore figs" (Amos 7:14, ESV).
 

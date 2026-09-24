@@ -25,7 +25,7 @@ The question most people in this place eventually ask is whether to go back, if 
 
 One word before going further. This essay is about the wounds of congregational life: betrayal, exclusion, gossip, division, leaders who failed the people in their care. Where what happened was abuse, whether sexual, physical, or a sustained pattern of control and intimidation, it deserves a different kind of help, and a separate essay on this site addresses it. If you or someone in your home is in danger, call the National Domestic Violence Hotline at 1-800-799-7233. Crimes belong with the police, not with a church committee. If the weight of it has pressed you toward despair, call or text 988 to reach the 988 Suicide & Crisis Lifeline. Nothing written below asks anyone to return to a place where they were abused.
 
-### "It Is You, My Companion": Why Church Hurt Cuts Deeper
+## "It Is You, My Companion": Why Church Hurt Cuts Deeper
 
 The oldest account of this wound in the Bible is a song. Psalm 55 is headed as a psalm of David, and whoever first prayed it had been betrayed from the inside. The psalmist says that if an enemy had taunted him he could have borne it, and that he could have hidden from an adversary (Psalm 55:12, paraphrased). Then he names the real source: "But it is you, a man, my equal, my companion, my familiar friend. We used to take sweet counsel together; within God's house we walked in the throng" (Psalm 55:13–14, ESV). A few lines later he describes what the friend did: "My companion stretched out his hand against his friends; he violated his covenant. His speech was smooth as butter, yet war was in his heart" (Psalm 55:20–21, ESV).
 
@@ -39,7 +39,7 @@ Then there is Jesus, who knew this wound by name. On the night before he died, a
 
 Whatever you were told about your hurt, you were not the first person inside the company of Jesus to be betrayed by someone who shared the bread. Jesus was. He doesn't need the experience explained to him, and he doesn't regard it as small.
 
-### The Church the New Testament Actually Describes
+## The Church the New Testament Actually Describes
 
 Many people who were hurt by a church had first been sold something. The church was a family, a safe place, different from the other churches in town. I write as a pastor, a member of the profession that composed most of that copy, and the promise did real damage. When a church advertises itself as a place where nothing like this happens, the thing that happens doesn't just hurt. It exposes the advertisement, and the person who believed it is left wondering whether anything else they were told was true.
 
@@ -55,7 +55,7 @@ Two things follow. The first is that what happened to you is not evidence that t
 
 Diane Langberg, a psychologist who has spent decades with people harmed inside Christian institutions, argues in *Redeeming Power* (2020) that power is a stewardship God gives for the protection of the vulnerable, and that a corrupted system turns it around, spending it to protect the institution from the people it harmed. The person who tells the truth becomes the problem, and the pressure lands on them. Through Ezekiel, God indicts the shepherds of Israel: "The weak you have not strengthened, the sick you have not healed, the injured you have not bound up, the strayed you have not brought back, the lost you have not sought, and with force and harshness you have ruled them" (Ezekiel 34:4, ESV). Then he says what he intends to do: "Behold, I am against the shepherds, and I will require my sheep at their hand" (Ezekiel 34:10, ESV). If you've been told that your anger at the leaders is a spiritual problem, read that again. God is not neutral about what was done in his name. He counts the sheep.
 
-### The Wish-Dream and the Mixed Body
+## The Wish-Dream and the Mixed Body
 
 In 1933 the German Evangelical Church began to bend to Hitler. A movement calling itself the German Christians took control of much of its leadership, and church synods moved to bar pastors of Jewish descent from the ministry. A minority broke away, wrote the Barmen Declaration in May 1934, and became the Confessing Church. Dietrich Bonhoeffer was among them, and from 1935 he ran an underground seminary for its pastors at Finkenwalde until the Gestapo closed it in 1937. The next year he wrote a short book about living with other Christians, published in 1939 as *Life Together*, and he wrote it as a man who had watched his own national church betray Christ.
 
@@ -75,7 +75,7 @@ There's a final part of this story, and it implicates the church rather than the
 
 So the mixed body cuts both ways. It does not mean the church should tolerate what was done to you. The master in the parable says plainly, "An enemy has done this" (Matthew 13:28, ESV), and the harvest is a judgment, not an amnesty. Paul, who knew the church was full of sinners, still asked the Corinthians, "Is it not those inside the church whom you are to judge?" (1 Corinthians 5:12, ESV). What the doctrine does mean is that you will not find a church without weeds, and that the wheat itself sometimes acts like weeds, as Peter did at Antioch. The person who hurt you may have been a false believer, or a real one who sinned gravely. You aren't asked to sort that out; the harvest belongs to God, who sees what nobody at the table could see. That frees you from two burdens at once: the need to prove the whole church false, and the pressure to pretend that what happened was fine.
 
-### Forgiving Is Not the Same as Going Back
+## Forgiving Is Not the Same as Going Back
 
 Somewhere in your story, someone probably told you to forgive, and what they meant was that you should stop talking about it. Few misuses of Scripture do more harm, because it takes the word at the center of the gospel and makes it a tool for protecting the people who did the damage.
 
@@ -87,7 +87,7 @@ And forgiveness never requires silence. Miroslav Volf, who was himself repeatedl
 
 So there are three separate things here, and each has its own answer. Forgiveness is commanded, and God will work it in you at a pace he knows better than your critics do. Reconciliation is hoped for, and it depends on truth from the other side. Going back to the particular congregation that hurt you is neither commanded nor always wise, and where there was abuse, it's out of the question.
 
-### Is It Better to Stay Away From Church?
+## Is It Better to Stay Away From Church?
 
 Some who read this have already decided, and their case deserves to be stated as they would state it. They gave years to a congregation, taught the classes and brought the meals, and when the moment came the church took their trust and handed back a rumor. Since leaving they sleep better on Saturday nights, and their children are no longer around the people who did it. They pray more honestly at home than they ever did in the building, they still read Scripture, and they keep a few Christian friends who proved faithful. They'll add that Jesus was most often at odds with the religious leaders of his day. Much of that is true, and none of it is bitterness. Leaving a congregation that harmed you can be an act of faithfulness. Bonhoeffer left a church that bowed to Hitler. A sheep that runs from a wolf is not rebelling against the shepherd.
 

@@ -35,7 +35,7 @@ review: "For James: (1) Inerrancy is stated as a second-order question and left 
 reviewed: 2026-09-24
 ---
 
-### The story most people believe about the Bible
+## The story most people believe about the Bible
 
 Most people who have decided the Bible can't be trusted didn't reach that conclusion by reading the Bible. They reached it by absorbing a story about the Bible, the way you absorb the rules of a game nobody ever explained to you. The story runs roughly like this. The texts were copied by hand for centuries, so they must have drifted like a message in the telephone game until nobody can know what was first written. A council of bishops in the fourth century voted on which books would make Jesus divine and burned the rest. And the books that survived contradict each other so often that only the willfully credulous could take them as history. Put those claims together and trusting the Bible looks less like faith than like a failure to check.
 
@@ -45,7 +45,7 @@ But the skeptic deserves better than the answers the church usually gives. We ha
 
 So the question has to be taken apart, because "Can you trust the Bible?" is really three questions wearing one coat. The first is a question of transmission: do we have, substantially, what the authors wrote? The second is a question of history: when these writers describe events, are they reliable witnesses to what happened? The third is a question of authority: does this book have a rightful claim on what I believe about God and how I live? The first two are open to any historian, believing or not. The third isn't settled by evidence alone, though it isn't settled without evidence either. Most confusion about the Bible comes from blurring the three. The anxious defender treats the third as if it depended on winning every skirmish in the first two. The skeptic assumes that a problem in the first two dissolves the third. They are making the same mistake from opposite ends.
 
-### Copies of copies: what the manuscripts actually show
+## Copies of copies: what the manuscripts actually show
 
 The telephone game works as an image because the game has one chain. Each player hears the message once, passes it to one other person, and nobody can check. The New Testament wasn't transmitted that way. From the second century on, its books were copied in many places at once, in Egypt and Syria and Asia Minor and Italy, by communities that didn't know one another and often disagreed, and they were translated early into Latin, Syriac and Coptic. The result is not a chain but a branching tree, and a branching tree can be checked. A slip made by a tired scribe in one region shows up as an oddity against copies descended from other regions. Textual criticism is the discipline of reading those branches against each other to recover the earliest text the evidence allows.
 
@@ -59,7 +59,7 @@ Ehrman himself draws a line not far from Wallace's. In the question-and-answer s
 
 Notice what has been granted and what hasn't. Textual criticism can tell us, with high confidence in most places and honest uncertainty in a few, what the authors wrote. It can't tell us whether what they wrote is true. A perfectly transmitted falsehood is still false. The right picture of the text answers only the first question.
 
-### What the Dead Sea Scrolls changed
+## What the Dead Sea Scrolls changed
 
 The Hebrew Scriptures raise the same question across a longer span. Until the middle of the twentieth century the oldest complete manuscripts of the Hebrew Bible were medieval: the Aleppo Codex from the tenth century and the Leningrad Codex from 1008, both products of the Masoretes, the scribal families who standardized the text and its vowels. A skeptic could fairly ask how anyone could know what Isaiah had said more than fifteen centuries before those codices were copied.
 
@@ -69,7 +69,7 @@ That's the half of the story apologists tell, and it's true. The other half matt
 
 A flat view of the Bible finds that threatening, as though Scripture should have dropped from heaven as a single fixed copy. Jeremiah never claims that. It describes its own making: the prophet dictating to Baruch the scribe, King Jehoiakim cutting the scroll and burning it column by column, and Jeremiah dictating it all again on a fresh scroll. The chapter ends, "And many similar words were added to them" (Jeremiah 36:32). The book tells us it was written twice. What the scrolls show is a text guarded with great care by communities that held it holy, and a history of composition more human than a flat theory expects. The skeptic who hears only the first half is being sold something. The believer who hears only the second hasn't read Jeremiah 36.
 
-### Who decided which books are in the Bible?
+## Who decided which books are in the Bible?
 
 The second piece of the folklore is more dramatic. In Dan Brown's *The Da Vinci Code* (2003), a character explains that Constantine commissioned a new Bible, that Jesus was voted into godhood at the Council of Nicaea in 325, and that earlier gospels portraying him as a mortal man were suppressed. Millions of readers took it as history. Nicaea was called to settle the Arian controversy over whether the Son is fully God, and its creed and canons say nothing about which books belong in the New Testament.
 
@@ -81,7 +81,7 @@ The strongest scholarly challenge comes from another direction. Walter Bauer arg
 
 Michael Kruger's *Canon Revisited* (2012) presses the question underneath the history: what makes a book canonical at all? If the church's vote makes a book Scripture, the church stands above Scripture; if historians must certify each book, the historians do. Kruger argues instead for what the Reformed tradition calls a self-attesting canon, in a line running back to Calvin's *Institutes* (1559), in which the books carry their authority in themselves; their divine qualities, their apostolic origin and their reception by the church as a whole are three ways that one authority shows itself. The church didn't create the canon so much as recognize it. A skeptic won't grant Kruger's premise, and Kruger doesn't pretend he must. But the model explains the historical pattern better than the conspiracy does. The books that won were the books the churches couldn't stop reading.
 
-### Are the Gospels history or legend?
+## Are the Gospels history or legend?
 
 Transmission and canon tell us we have the books the early church read, substantially as written. They don't tell us whether those books are reliable accounts of what happened. For much of the twentieth century the dominant scholarly model, shaped above all by Rudolf Bultmann's *The History of the Synoptic Tradition* (1921), treated the Gospels as products of anonymous communities that reshaped oral traditions for their own needs until the historical core was hard to find beneath the preaching. That model still sits beneath many educated dismissals.
 
@@ -93,7 +93,7 @@ Bauckham has critics. Many scholars doubt Papias can bear the weight he places o
 
 The writers tell us what kind of claim they meant to make. Luke names his sources as "those who from the beginning were eyewitnesses and ministers of the word" (Luke 1:2), and says he wrote "having followed all things closely for some time past," so that, as he tells Theophilus, "you may have certainty concerning the things you have been taught" (Luke 1:3–4). By ancient standards that is a historian's preface, naming sources, method and purpose. It doesn't prove Luke accurate, but it tells us he expected to be checked. Paul, writing to Corinth in the mid-50s, passes on a tradition he says he had himself received (1 Corinthians 15:3), that Christ "was raised on the third day in accordance with the Scriptures, and that he appeared to Cephas, then to the twelve. Then he appeared to more than five hundred brothers at one time, most of whom are still alive, though some have fallen asleep" (1 Corinthians 15:4–6). *Most of whom are still alive* is not the language of legend. It's an invitation to go and ask.
 
-### What about the contradictions in the Bible?
+## What about the contradictions in the Bible?
 
 This objection deserves the most respect, because it has real texture and the glib answers to it are bad. Mark has one young man at the empty tomb, Matthew one angel, Luke two men, John two angels. Matthew has Judas hang himself (Matthew 27:5), and Acts has him fall headlong (Acts 1:18). The first three Gospels place the cleansing of the temple in Jesus' last week, and John places it near the beginning. Mark says, "And it was the third hour when they crucified him" (Mark 15:25), while John says that when Pilate brought Jesus out, "it was the day of Preparation of the Passover. It was about the sixth hour" (John 19:14). Pretending these tensions aren't there is a kind of lying, and it does the Bible no honor.
 
@@ -105,7 +105,7 @@ Historians of the ancient world recognize the pattern. Independent witnesses ten
 
 None of this makes every difficulty vanish. Some remain hard, and a thoughtful Christian ought to be able to say "I don't know how these fit" without panic. What the evidence doesn't support is the leap from "the Gospels differ in detail" to "the Gospels are unreliable." By that standard no ancient event could be known.
 
-### What it means to trust the Bible
+## What it means to trust the Bible
 
 Grant all of that, and the third question still stands. A historian can judge the Gospels early, sincere testimony and still conclude the witnesses were mistaken. Authority is a different kind of claim, and Christians haven't always stated it the same way.
 

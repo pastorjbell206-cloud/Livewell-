@@ -24,7 +24,7 @@ review: "Integrity pass done; all Scripture checked against ESV. Please still ch
 reviewed: 2026-09-24
 ---
 
-### The Question Parents Are Actually Asking
+## The Question Parents Are Actually Asking
 
 Most parents who type "when should my child get a smartphone" into a search bar already suspect the answer is later than the one they're about to give. The pressure comes from every side. The school sends homework through an app, the coach runs the team through a group chat, and the other sixth graders all seem to have one, a fact your child reports with the precision of a lawyer entering evidence. You want to protect without smothering, and you have a nagging sense that the thing you're being asked to hand over isn't quite what it appears to be. It looks like a telephone. It doesn't behave like one.
 
@@ -34,7 +34,7 @@ The public argument has mostly been conducted in the vocabulary of screen time: 
 
 The whole question turns on a distinction. There is a *content* problem with phones, and Christian parents have mostly been good at seeing it: pornography, violence, predators, cruelty. But there is also a *formation* problem, and it would remain if every harmful image on earth were filtered out. The phone doesn't only deliver things to a child. It trains the child who holds it: what he attends to, how long he can attend, what he wants, how he knows whether he matters. The first problem calls for filters. The second calls for something older and harder, which Scripture describes, strikingly, in the language of the eye.
 
-### What Haidt Gets Right, and What His Critics Want Us to See
+## What Haidt Gets Right, and What His Critics Want Us to See
 
 The most influential account of what happened to children and phones is Jonathan Haidt's *The Anxious Generation* (2024), and it deserves to be stated at its strongest before anyone argues with it. Haidt, a social psychologist at New York University, argues that between roughly 2010 and 2015 childhood was rewired. He calls it the great rewiring. A *play-based childhood*, in which children spent long unsupervised hours together in the physical world, taking small risks, settling their own disputes and learning to read faces, gave way to a *phone-based childhood*, in which social life migrated onto devices that were always present and never finished. The timing is the heart of his case. The iPhone arrived in 2007, the App Store in 2008, the "like" button and the retweet around 2009, and the front-facing camera around 2010. By the middle of the decade, Haidt argues, adolescents across the English-speaking world were living through their phones, and measures of adolescent anxiety, depression and self-harm turned sharply upward at nearly the same moment, earliest and most steeply among girls.
 
@@ -46,7 +46,7 @@ That should chasten anyone who writes about this with too much certainty. The ho
 
 The Christian parent doesn't need to win the argument between Haidt and Odgers in order to act. How much of a mental-health crisis one technology has caused is a question for researchers, and it may take decades to answer. What a child's attention is *for*, and who should be allowed to train it, is a question Scripture answered long before there was a study to cite. Haidt got the symptom right, and his critics are right that it has more than one cause. Neither side, on its own terms, can say why attention matters in the first place.
 
-### Every Medium Is a Teacher
+## Every Medium Is a Teacher
 
 The critics are right that fear of new media is old, but the long view cuts in a direction they don't always expect. Neil Postman opened *Technopoly* (1992) with the story Plato tells in the *Phaedrus*, where the god Theuth offers King Thamus the gift of writing and the king refuses it, warning that it will give his people the appearance of wisdom without the substance and make them forgetful. Thamus was wrong that writing would do only harm. He was right that it would change what memory is. Every technology gives something and takes something, and the question is never whether a medium is good in the abstract but what it does to the people who live inside it.
 
@@ -60,7 +60,7 @@ The Christian account of formation names what these critics can see but can't qu
 
 And what does the phone make? The deepest harm is not any single image but a contradiction the device teaches without a word. It tells a child he is the center of a world arranged to serve his appetite, and at the same moment that his worth is decided by a crowd that doesn't love him. He scrolls a feed built for his pleasure, then posts something and waits, heart in his throat, for the verdict of people who will forget him by morning. The child is sovereign and worthless in the same five minutes. No filter touches that, because the problem isn't in the content. It's in the form.
 
-### The Parent Who Needs the Phone
+## The Parent Who Needs the Phone
 
 The other side of the kitchen table deserves its strongest hearing, because many parents who hand their children smartphones at eleven aren't careless. They're afraid, and some of their fears are reasonable.
 
@@ -74,7 +74,7 @@ Each of these can be honored without conceding that the answer is a smartphone i
 
 The preparation case wins a real concession. Total abstinence followed by sudden, unsupervised access at eighteen is a postponed crash. The better image is apprenticeship: access that grows as the child shows he can carry it, starting with the least powerful devices and the most public uses, under a parent who is actually paying attention. The driving analogy is right, and it cuts both ways. We teach teenagers to drive, but we don't hand a twelve-year-old the keys and wish him well.
 
-### The Eye Is the Lamp
+## The Eye Is the Lamp
 
 If the formation problem is real, its heart is attention, and Scripture says more about attention than the modern church usually hears.
 
@@ -90,7 +90,7 @@ No modern writer saw this more clearly than Simone Weil. In her 1942 essay "Refl
 
 None of this is new. Augustine, in his *Confessions* around the year 400, tells of his friend Alypius, dragged to the gladiatorial games in Rome, who shut his eyes against the spectacle, opened them at the crowd's roar, and went home in love with the blood. Later Augustine confesses that even a lizard catching flies on his wall could pull his mind from serious thought. He called it the lust of the eyes, and he would have understood the phone in a minute: a lizard on the wall that never stops catching flies.
 
-### Sabbath and a Better Room
+## Sabbath and a Better Room
 
 If the problem is formation, the answer can't be subtraction alone. The phone feeds real hungers, for connection, for novelty, for a place to be somebody, and a parent who removes it and offers nothing will be resented, fairly, for making her child's life smaller and calling it discipline. The phone has to be displaced by something with more weight.
 
@@ -102,7 +102,7 @@ The shape of that better room isn't complicated, though it is costly. It's a tab
 
 Two cautions belong here. Some children are struggling with more than a phone. If your child shows signs of depression or anxiety that won't lift, talk to your pediatrician or a licensed counselor; this essay isn't medical advice. If a child speaks of wanting to die or of hurting himself, call or text the 988 Suicide and Crisis Lifeline right away. And the parent who has already given the phone and now regrets it hasn't lost. Access can be narrowed as well as widened, and a parent who says, "I decided this too quickly, and I'm going to change it, starting with my own habits," is teaching her child something worth more than any rule.
 
-### Jesus, Looking at Him, Loved Him
+## Jesus, Looking at Him, Loved Him
 
 The hardest sentence in this essay isn't about children. We are the first generation of parents who can sit with our children for an entire evening and never once look at them. Sherry Turkle's *Alone Together* (2011) described a culture that expects more from its devices and less from one another, where connection offers the feeling of company without its demands, and some of the young people she interviewed spoke of competing with their parents' phones. I've done what those parents did. I've handed a child a screen to buy myself twenty minutes of quiet, and the quiet was real, and so was the cost. The phone is the path of least resistance for the tired parent as much as for the restless child. Grace covers the evenings we lose to it, but grace was never meant to be a strategy.
 

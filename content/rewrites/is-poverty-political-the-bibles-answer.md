@@ -24,7 +24,7 @@ review: "Integrity-reviewed 2026-09-24. Verified: Wright (2004) on mishpat, tsed
 reviewed: 2026-09-24
 ---
 
-### The question that closes a room
+## The question that closes a room
 
 Ask whether poverty is political in many American churches and you can watch faces close. The word has become a smell, a sign that someone is about to carry the news cycle into the sanctuary, and so the answer comes quickly: poverty is a heart issue, it's about generosity and not policy, keep the government out of the gospel. In other churches the answer comes just as quickly from the opposite direction: poverty is a system, charity is a bandage on a wound the system keeps reopening, and a church that feeds the hungry without asking why they're hungry has made its peace with the arrangement. I understand the first instinct, and I have shared it. The second has its own force. Each side has read part of the Bible carefully.
 
@@ -36,7 +36,7 @@ Everything turns on a distinction between three things the American argument kee
 
 > Scripture binds the obligation. It does not hand down the policy. Most of our quarrels come from pretending otherwise.
 
-### Mercy written into the field
+## Mercy written into the field
 
 Some of Israel's most practical economic law concerns a harvest. "When you reap the harvest of your land, you shall not reap your field right up to its edge, neither shall you gather the gleanings after your harvest. And you shall not strip your vineyard bare, neither shall you gather the fallen grapes of your vineyard. You shall leave them for the poor and for the sojourner: I am the LORD your God" (Leviticus 19:9–10, ESV). This isn't an exhortation to feel generous, and it isn't a tax redistributed by a central office. It's a limit written into ownership itself. The landowner's right stops short of the edge of his own field, and what grows there belongs, by God's decree, to people who gather it with their own hands. In Ruth, a widowed foreigner gleans in Boaz's barley field, and Boaz goes beyond the law by telling his young men to let extra fall for her (Ruth 2). The law set the floor; his kindness rose above it. That's justice and charity in a single chapter.
 
@@ -50,7 +50,7 @@ Whether Israel ever kept the Jubilee is uncertain. Jeremiah tells of a release o
 
 Beneath all of this runs a pair of Hebrew words the Old Testament often joins: *mishpat*, usually rendered justice, and *tsedaqah*, righteousness. Wright shows that together they describe less the blind neutrality of a Western courtroom than a community of right relationships and the active putting right of wrongs, especially for the widow, the orphan, the sojourner and the poor. Timothy Keller, in *Generous Justice* (2010), draws the conclusion that matters here: in the Bible, giving to the poor is regularly called righteousness rather than charity, so that failing to give is not stinginess but injustice. In later Jewish usage *tsedaqah* came to mean almsgiving, as *tzedakah* still does, and some later manuscripts of Matthew 6:1 read "alms" where the earliest read "righteousness." Scripture won't let us file generosity under the optional and justice under the political. It uses one word for both.
 
-### The prophets, and a sermon in Nazareth
+## The prophets, and a sermon in Nazareth
 
 Walter Brueggemann argued in *The Prophetic Imagination* (1978) that the trouble began with the monarchy itself. Solomon built what he called a royal consciousness, an economy of accumulation and forced labor that managed abundance for the few, and the prophets rose as the alternative, remembering the God who heard the cry of slaves. One needn't accept all of Brueggemann's reading to see what it explains: the prophets' anger fell hardest on people with power, and their charges were specific.
 
@@ -64,7 +64,7 @@ In Luke's telling, Jesus opened his public ministry in the synagogue at Nazareth
 
 Then there is the judgment of the nations in Matthew 25. "For I was hungry and you gave me food, I was thirsty and you gave me drink, I was a stranger and you welcomed me, I was naked and you clothed me, I was sick and you visited me, I was in prison and you came to me" (Matthew 25:35–36, ESV). "Truly, I say to you, as you did it to one of the least of these my brothers, you did it to me" (25:40). Interpreters divide over who "the least of these my brothers" are. A long line of readers, noting that Matthew often uses "brothers" for Jesus' disciples (12:48–50; 28:10), takes them to be needy Christians; others read the phrase as reaching every hungry and imprisoned person. On either reading the passage says two things our politics prefers to separate. The ones sent away are condemned for neglect, not for cruelty; they simply didn't come. And the acts that count are face to face: food handed over, a sick man visited, a prisoner seen. No one in the story is judged for a policy position. No one is excused because a program existed.
 
-### What the church did before there was a welfare state
+## What the church did before there was a welfare state
 
 The first Christians took the law's promise literally. "And all who believed were together and had all things in common. And they were selling their possessions and belongings and distributing the proceeds to all, as any had need" (Acts 2:44–45, ESV). Two chapters later, describing the same shared life (Acts 4:32–35), Luke writes a sentence that echoes Deuteronomy 15:4: "There was not a needy person among them" (Acts 4:34, ESV). The Torah's goal, which Israel missed, the Spirit had begun to reach in one congregation. Yet the sharing was not compelled. Peter tells Ananias that his field, before it was sold, "did it not remain your own?" (Acts 5:4, ESV), and his sin was the lie, not the keeping. Soon the church had to build a structure, appointing seven men to oversee the daily distribution to widows when some were being overlooked (Acts 6:1–6). Generosity needed administration almost at once.
 
@@ -74,7 +74,7 @@ The watching world noticed. In the 360s the emperor Julian, trying to revive the
 
 These men were not socialists. They treated property as a stewardship and preached to the consciences of the rich. But their claim is a claim of justice: the poor were owed. The church's monasteries, hospitals and parishes carried that claim for centuries, until the state began to take the work over. When Henry VIII dissolved the English monasteries between 1536 and 1541, much of their relief went with them, and the Elizabethan Poor Law of 1601 made support of the poor a parish tax. The Poor Law Amendment Act of 1834 pushed relief toward the workhouse, and Victorian poor relief hardened the line between the deserving and the undeserving poor. That line still runs through every American argument about welfare, and it's older than both our parties.
 
-### Two traditions answer the industrial age
+## Two traditions answer the industrial age
 
 The modern form of the question arrived with the factory, and in 1891 two great traditions of Christian social thought answered it. In May, Leo XIII issued *Rerum Novarum*, which defended private property against the socialists and, in the same breath, the worker's right to a just wage and to form associations, teaching that the state owes particular care to the poor because the rich have other ways to shield themselves. In November, Abraham Kuyper opened the first Christian Social Congress in Amsterdam with the address later published as *The Problem of Poverty*. Kuyper rejected both the individualism he traced to the French Revolution and the socialist answer, and he told the congress that Jesus, like the prophets, took the side of the poor and suffering against the powerful. His doctrine of sphere sovereignty, set out in 1880, gave the state a real but limited office: to guard justice among the other spheres of family, church, labor and enterprise, not to swallow them.
 
@@ -82,7 +82,7 @@ The Catholic tradition kept building. Pius XI named the principle of subsidiarit
 
 Neither tradition can be filed under an American party. Both bind the obligation to the poor without apology, name structures as well as hearts, and refuse either to make the state the only actor or to let it off the hook. A reader of either will find a paragraph to embarrass the right and another to embarrass the left, which is usually a sign that someone has been reading Scripture instead of a platform.
 
-### The American argument, stated fairly
+## The American argument, stated fairly
 
 American evangelicals had their own version of the debate, and each side deserves its strongest voice. Ronald Sider's *Rich Christians in an Age of Hunger* (1977) argued that the God of Scripture takes the side of the poor, called comfortable believers to a simpler life and a graduated tithe, and insisted that sin lives in unjust economic structures as well as in hearts. At its best it asked the prophets' question: what do the arrangements we benefit from do to people we'll never meet? David Chilton answered with *Productive Christians in an Age of Guilt-Manipulators* (1981), charging that Sider misread both the Bible and economics; later editions of Sider's book granted more to markets. Marvin Olasky's *The Tragedy of American Compassion* (1992) made the conservative case with real moral seriousness. Nineteenth-century American charity, he argued, worked because it was personal, discerning and demanding: it knew the names of the poor, asked for work where work was possible, and addressed the spirit as well as the stomach, while the welfare expansion of the 1960s replaced suffering-with by disbursement at a distance. The book fed the welfare debates of the mid-1990s. Steve Corbett and Brian Fikkert, in *When Helping Hurts* (2009), drawing on Bryant Myers's *Walking with the Poor* (1999), described poverty as broken relationship with God, self, others and creation, warned that aid which defines poverty only as a lack of things can humiliate the poor and inflate the helper, and distinguished relief in a crisis from rehabilitation and long development.
 
@@ -92,7 +92,7 @@ So name the order of the question. That Christians owe the poor, personally and 
 
 What can be judged is the evasion, and the same instrument fits both hands. A man who marches for the poor and never opens his door to one has learned to love humanity in order to avoid loving a human; the program becomes his absolution. But run it the other way. The man who insists poverty is only a heart issue can hand a hungry man a meal on Tuesday and vote on Wednesday to keep the rigged court that put him on the street, and feel clean both days. Privatized compassion is not the alternative to political evasion. It's the most respectable form of it. I've preached with more clarity about individual sin than about the sin embedded in systems, because individual sin threatens no one's portfolio. That's a confession, not a boast.
 
-### The man at the gate
+## The man at the gate
 
 Jesus told of a rich man and a beggar: "And at his gate was laid a poor man named Lazarus, covered with sores" (Luke 16:20, ESV). I've preached that parable as a story about what comes after death, which it certainly is. I was slower to notice that the rich man is never accused of harming Lazarus. He simply lived beside him, passing a dying man at his own threshold on the way in and out. Even in torment he knows the beggar's name and asks that Lazarus be sent to cool his tongue. He had known it all along.
 

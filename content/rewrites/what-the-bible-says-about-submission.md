@@ -28,7 +28,7 @@ One thing needs to be said before anything else, because some who read this are 
 
 The rest of the question deserves more patience than it usually gets. Submission can close the faces in a room of Christians before a sentence is finished, and outside the church it has become shorthand for everything a thoughtful person suspects is wrong with the faith. So here is the claim this essay has to earn. The verse begins a sentence earlier than it is usually quoted. Paul took a genre written to secure the power of the man at the top of the household and turned its heaviest command on that man. And faithful Christians still disagree, for serious reasons, about how much order remains once he has done it. That last part is where an honest answer has to begin.
 
-### Two readings, each in its strongest voice
+## Two readings, each in its strongest voice
 
 There are two broad positions among Christians who take the whole Bible as God's word, and both deserve to be heard as their best defenders would state them.
 
@@ -40,7 +40,7 @@ Each position is trying to honor the same Scripture, each can point to real text
 
 That tells you what kind of question this is. The Nicene Creed does not mention it, and neither does Chalcedon; nothing about the Trinity, the person of Christ, the cross, or the resurrection hangs on it. It is a second-order question, the kind that divides faithful churches without dividing the faith. It shapes which congregation a family joins and how a denomination writes its confession, and it is worth arguing carefully. But a complementarian and an egalitarian can kneel at the same table, and if they cannot, the problem isn't their doctrine of marriage.
 
-### The sentence begins at verse 21
+## The sentence begins at verse 21
 
 Ephesians 5:22 is the middle of a sentence. The thought begins at verse 18: "And do not get drunk with wine, for that is debauchery, but be filled with the Spirit" (Ephesians 5:18, ESV). Paul then describes what a Spirit-filled church looks like through a string of participles: "addressing one another in psalms and hymns and spiritual songs, singing and making melody to the Lord with your heart, giving thanks always and for everything to God the Father in the name of our Lord Jesus Christ, submitting to one another out of reverence for Christ" (Ephesians 5:19–21, ESV). Submission first appears here as a fruit of the Spirit's presence in a worshiping community, alongside singing and thanksgiving, before it is ever a social arrangement.
 
@@ -54,7 +54,7 @@ Then Paul turns to the husband and stays far longer: three verses to wives, roug
 
 Then Paul lifts the whole thing out of the household. He quotes Genesis, "Therefore a man shall leave his father and mother and hold fast to his wife, and the two shall become one flesh," and adds, "This mystery is profound, and I am saying that it refers to Christ and the church" (Ephesians 5:31–32, ESV). The marriage is a small enacted picture of a larger covenant, in which the one with every right to be served came to give himself away.
 
-### A household code turned toward the powerful
+## A household code turned toward the powerful
 
 To hear how this passage first sounded, you need to know its genre. Scholars call it a household code, and it had a long pedigree. In the first book of his *Politics*, written in the fourth century before Christ, Aristotle analyzed the household as three relationships, master and slave, husband and wife, father and child, and argued that the male is by nature fitter to command than the female. The discussion is addressed to the man who rules. The others are the ruled, and they are discussed rather than spoken to. Around the end of the first century, Plutarch's *Advice to the Bride and Groom*, a gentle and in places affectionate little book, counseled a wife to worship only the gods her husband believes in and to shut the door on foreign religions. A wife's religion belonged to her husband's household.
 
@@ -66,7 +66,7 @@ David Balch argued in *Let Wives Be Submissive* (1981) that Peter's code was par
 
 The egalitarian says that logic of accommodation applies to the wife as much as to the slave. The complementarian says it doesn't, because Paul never grounds slavery in creation, while he grounds marriage in Genesis 2:24 and in Christ's relation to the church. The distinction between accommodation and endorsement is the right one to argue over. What neither camp can honestly claim is that Paul simply copied the household code of his world. He kept its form and broke its logic, and the break runs straight through the husband.
 
-### How a verse about dying became a license
+## How a verse about dying became a license
 
 The church has not always read the passage whole, but it has never lacked witnesses who did. John Chrysostom, preaching on Ephesians in the late fourth century, kept the wife's subjection and yet told husbands that Christ's example obliged them to care for their wives as Christ cares for the church, even if it meant suffering anything and giving their lives for them. That is the long tradition at its best. The trouble is that across most of Christian history the surrounding culture supplied the content of the word head, and the culture's picture was the Roman father, the lord of the manor, the man whose word was law in his own house. The cross was affirmed and the throne was practiced.
 
@@ -78,7 +78,7 @@ Beneath the tyrant and the absentee lies the same grammar: both assume power is 
 
 I have to stand inside this, not outside it, and I won't pretend I have always read this text well. Any man who has been married long enough knows how easy it is to call self-protection leadership, and how much more comfortable headship is when it means deciding than when it means absorbing the cost. I was raised without a father, so whatever I understand about being a husband I did not learn by watching one at home. And every father of sons, and I have five, has to reckon with the fact that each boy will one day read Ephesians 5 and decide what he thinks it permits him, and that what he has seen at home will teach him more than any sermon.
 
-### Where I land, and what I have not answered
+## Where I land, and what I have not answered
 
 I read verse 21 as the roof over the whole passage. The mutual submission it commands is not a preface to be discarded once the real instructions begin; it is the frame that governs them. At the same time, I don't think Paul's distinct words to wives and husbands can be flattened into perfect symmetry without doing to the text what the tyrant does, reading our century back into his. Paul kept an order. He addressed wife and husband differently, and I take that seriously. But he filled that order with a content that can no longer serve the purpose orders usually serve, which is to secure the comfort of whoever sits at the top. The asymmetry I find in the passage is this: within a marriage where both spouses defer to one another out of reverence for Christ, the husband carries a particular calling to go first into self-giving, to initiate the costliest love, and to answer to God if the home is not being loved that way. The wife's submission is a gift she gives, freely and "as to the Lord," to a husband who is called to lay down his life. It is never a tax he collects. Complementarian readers will think this gives away too much. Egalitarian readers will think it keeps too much. I hold it with conviction, and without contempt for either.
 
@@ -88,7 +88,7 @@ From the other side, the slavery parallel presses hard. If I read Paul's instruc
 
 A thoughtful Christian who lands a step to either side of me is still my brother or sister. What neither of us may do is leave the passage with a husband who is served instead of spent.
 
-### What submission never means
+## What submission never means
 
 Whatever one decides about the order Paul preserves, some things fall outside every faithful reading. Submission never requires anyone to endure abuse. Not physical violence, not sexual coercion, not threats, not the slow campaign of control that isolates a woman from her friends, her money, and her own judgment. The instruction is "as to the Lord," and the Lord does not ask his people to hand their bodies or consciences to cruelty. When a husband uses Ephesians 5 to demand compliance, he has read the one verse addressed to his wife, skipped the nine addressed to him, and laid the weight meant for himself on the person it was written to protect. He isn't exercising headship badly. He isn't exercising it at all. Headship understood as domination is sin, and it should be named in the church with the same plainness we name any other sin.
 
@@ -96,7 +96,7 @@ A wife who leaves to get safe has not rebelled against Scripture. A church that 
 
 If you are in that place now, you are not required to read your way to certainty before you reach for help. Call the National Domestic Violence Hotline at 1-800-799-7233. Advocates there can help you think through your options and how to stay safe, including how to leave safely if you decide to. If you are in immediate danger, call 911. If you are thinking about harming yourself, call or text 988. This essay is not legal advice; if you need protection orders or legal counsel, the hotline can point you toward people trained to help.
 
-### Going first
+## Going first
 
 Many Christian marriages suffer less from too much headship or too much submission than from something quieter. A husband and wife attend church, pray over a meal, and have almost no spiritual life together: no honest prayer in each other's hearing, no conversation about what God is doing in them, no confession offered to the one they have wronged. Both are waiting for the other to go first, and the waiting can outlast the marriage. Praying honestly in front of the person who knows your failures isn't too holy for most couples. It's too naked.
 

@@ -29,7 +29,7 @@ A child learns to lie long before anyone teaches him lying. The phone rings, the
 
 That isn't a modern discovery. It is the way the New Testament assumes every Christian is formed, and it makes Christian parenting both heavier and more merciful than a curriculum. Heavier, because what gets passed down is a life rather than a set of answers, and a life can't be faked across eighteen years of breakfasts. More merciful, because the life the New Testament holds up for imitation was never a flawless one. What a child most needs to see is a parent who has been forgiven and knows it, and who turns back to God in plain view.
 
-### "Be Imitators of Me": How the New Testament Forms a Person
+## "Be Imitators of Me": How the New Testament Forms a Person
 
 Read Paul's letters asking how he expected faith to pass from one person to another, and one word keeps surfacing. "Be imitators of me, as I am of Christ" (1 Corinthians 11:1). The Greek is *mimētēs*, the root of our word "mimic," and Paul doesn't use it as an occasional flourish. He tells the Philippians, "Brothers, join in imitating me, and keep your eyes on those who walk according to the example you have in us" (Philippians 3:17). Near the end of that letter he names how they took the faith in from him, "What you have learned and received and heard and seen in me," and tells them to "practice these things, and the God of peace will be with you" (Philippians 4:9). Learning and hearing belong to a classroom. Receiving and seeing belong to a household.
 
@@ -43,7 +43,7 @@ The root lies deeper than teaching method. Jesus says of himself, "the Son can d
 
 In the New Testament, doctrine travels inside a life. The question for parents was never whether our children will imitate us. It is what they will find when they do.
 
-### Deuteronomy 6 and the Whole-Life Pattern
+## Deuteronomy 6 and the Whole-Life Pattern
 
 The Old Testament passage most Christian parents know here is Deuteronomy 6, usually read as a command to teach. It is one. But read the paragraph whole:
 
@@ -55,7 +55,7 @@ Israel later kept this passage literally, in the tefillin bound on arm and foreh
 
 Deuteronomy knows a second danger, comfort. When Israel eats and is full in houses it did not fill, it must "take care lest you forget the LORD" (Deuteronomy 6:12). Forgetting in plenty rarely comes as a decision; the parents simply stop needing God anywhere the children can see. And when the son asks what all these practices mean, the answer begins, "We were Pharaoh's slaves in Egypt" (Deuteronomy 6:21). Israel's catechism starts with the parent counting himself among the slaves who needed rescue.
 
-### What the Psychologists Saw, and What They Couldn't
+## What the Psychologists Saw, and What They Couldn't
 
 Modern psychology came to the power of imitation late. Through the middle of the twentieth century much of American psychology assumed that learning ran on reinforcement: a behavior is tried, rewarded or punished, and so strengthened or weakened. In 1961 Albert Bandura, with Dorothea Ross and Sheila Ross at Stanford, reported the experiment that made him famous. Nursery-school children watched an adult attack an inflatable Bobo doll with a mallet and particular aggressive words, while other children watched an adult play quietly. Left alone afterward, the children who had watched the aggressive adult reproduced the aggression, down to specific blows and phrases. No one had rewarded them or told them to do it, and the adult hadn't been trying to teach anything.
 
@@ -69,7 +69,7 @@ So the secular account got the mechanism right, and the church should say so wit
 
 Luther gave the point a form a household can use. In *A Brief Instruction on What to Look For and Expect in the Gospels* (1521) he insisted that Christ must first be received as a gift, God's own act for us, before he can be followed as an example. The order is everything. Our children will imitate us, and Scripture blesses it, but no parent can be the gift. The one thing a parent can model that points beyond himself is the act of receiving it. Paul's sentence holds this in its second clause: be imitators of me, "as I am of Christ." Remove that clause and imitation is only another name for being shaped by whoever is closest. Keep it, and the parent becomes a window rather than a wall.
 
-### The Actor's Mask: Hypocrisy and What Children See
+## The Actor's Mask: Hypocrisy and What Children See
 
 The word Jesus uses again and again in Matthew 23 is *hypocrites*, and it comes from the Greek stage, where a *hypokritēs* was an actor speaking from behind a mask. The chapter, his last public teaching in Matthew's Gospel, opens with a concession we tend to skip: "The scribes and the Pharisees sit on Moses' seat, so do and observe whatever they tell you, but not the works they do. For they preach, but do not practice" (Matthew 23:2–3). Their teaching was largely sound; the distance between the teaching and the life did the damage, and Jesus names it: "They tie up heavy burdens, hard to bear, and lay them on people's shoulders, but they themselves are not willing to move them with their finger" (Matthew 23:4). Then comes the verse that ought to frighten every religious parent: "you travel across sea and land to make a single proselyte, and when he becomes a proselyte, you make him twice as much a child of hell as yourselves" (Matthew 23:15). Hypocrisy reproduces. The convert learns the mask along with the creed and wears it with a newcomer's zeal.
 
@@ -81,7 +81,7 @@ Those findings sit awkwardly against a century of church habit, in which parents
 
 The mask comes in more than one shape. Religious parents are tempted to perform piety. Parents who have seen that performance and fled it are tempted to something quieter: keeping their own convictions out of view so the child can choose for himself. It sounds like respect. What the child watches is a parent for whom God isn't important enough to practice. The performer teaches that faith is a costume. The withholder teaches that it is optional. Neither lets a child see what it looks like to live as though God were real.
 
-### Neither Performance Nor Perfection
+## Neither Performance Nor Perfection
 
 Here a serious parent can feel crushed. If children copy everything, desires included, who can bear it? Two escapes present themselves, and both are traps.
 
@@ -97,7 +97,7 @@ A repentance that forms a child names the wrong without a "but" attached, since 
 
 I have to be careful here. Repentance before a child is not a way to settle what has to be settled elsewhere. Where the wrong is violence or abuse in the home, an apology is not enough and is not safe to rely on. The child's protection comes first, and the way forward runs through outside help and real accountability; in the United States the National Domestic Violence Hotline is 1-800-799-7233. Truth, protection and repair cannot be skipped by saying sorry well.
 
-### The Saints, and the Model Behind Every Model
+## The Saints, and the Model Behind Every Model
 
 No parent was meant to be a child's only model. Hebrews tells the church, "Remember your leaders, those who spoke to you the word of God. Consider the outcome of their way of life, and imitate their faith" (Hebrews 13:7). The church took that seriously from the start. Ignatius of Antioch, under guard on the road to his death in Rome early in the second century, asked the Roman Christians to let him be an imitator of the suffering of his God. The account of Polycarp's martyrdom, around 155 or 156, says the church loved the martyrs as disciples and imitators of the Lord. Athanasius wrote his *Life of Antony* around 360 so that others would follow the monk's pattern.
 
@@ -107,7 +107,7 @@ The saints relieve a parent of being the only model; a household that reads the 
 
 The same Scriptures refuse to let parents turn this into a formula. Samuel served God faithfully from boyhood to old age, "Yet his sons did not walk in his ways but turned aside after gain. They took bribes and perverted justice" (1 Samuel 8:3). And Ezekiel, answering a generation that blamed its fathers, declares, "The son shall not suffer for the iniquity of the father, nor the father suffer for the iniquity of the son" (Ezekiel 18:20). Modeling is the deepest channel of formation, not a machine that guarantees an outcome, and parents whose grown children have walked away should not read an essay like this as a verdict on them. Children are persons, not copies, and the Spirit is not bound by our examples.
 
-### What the Children Will Read Back
+## What the Children Will Read Back
 
 Every parent is writing on their children in a hand they can't see, and the script is written in reflexes: what we reach for when bad news comes, how we speak of the people who wronged us, what makes our faces light up, what we do with money when no one is counting, and what we do in the hour after we have failed. Our children are reading it now. In twenty years they will read it back to us in their own marriages and their own bad Tuesdays, and we will recognize the handwriting because it will be ours.
 

@@ -104,7 +104,10 @@ describe("every rewrite meets the checkable parts of the standard", () => {
       it("is long enough to develop the argument, in sections", () => {
         expect(wordCount).toBeGreaterThanOrEqual(2800);
         expect(wordCount).toBeLessThanOrEqual(5200);
-        expect((plain.match(/^###\s/gm) || []).length).toBeGreaterThanOrEqual(3);
+        // Sections are h2 (`##`): the page title is the h1, and a jump to h3
+        // fails axe's heading-order rule (CI's quality job audits an essay).
+        expect((plain.match(/^##\s/gm) || []).length).toBeGreaterThanOrEqual(3);
+        expect(plain, "sections must be ## (h2), not ###").not.toMatch(/^###\s/m);
       });
 
       it("keeps the mechanics: no em-dash, no forbidden language, exclamations only inside quotations", () => {

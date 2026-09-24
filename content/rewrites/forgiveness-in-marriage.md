@@ -26,7 +26,7 @@ The opposite marriage is quieter and in some ways worse. Nothing is ever said. T
 
 I recognize both marriages because I recognize both people. Every married person does, the one writing this included. We have said *it's fine* with the meter still running underneath, and we have demanded to be trusted again the week after we broke the trust. So the claim of this essay is aimed at me before it is aimed at anyone. **Forgiveness is the costly release of a real debt: it names the wrong at its full weight and then absorbs the cost instead of collecting it. Reconciliation is something else, the restoration of the relationship, and it requires repentance. Restored trust is a third thing again, a prediction about future conduct that only changed conduct can rebuild.** Most of the harm done in the name of forgiveness, whether it sends a wounded spouse back into danger or lets a "forgiving" spouse keep collecting forever, comes from collapsing those three into one.
 
-### What Jesus Meant by a Debt
+## What Jesus Meant by a Debt
 
 The Bible's central teaching on forgiveness is usually quoted from its middle, and the middle makes less sense without its beginning. Before Matthew 18 says a word about forgiving, it gives instructions that sound nothing like the silent, pretending kind: "If your brother sins against you, go and tell him his fault, between you and him alone. If he listens to you, you have gained your brother" (Matthew 18:15). The sin is named, to the person, in private, with the aim of gaining him back. Only after that does Peter ask his question: "Lord, how often will my brother sin against me, and I forgive him? As many as seven times?" And Jesus answers, "I do not say to you seven times, but seventy-seven times" (Matthew 18:21–22).
 
@@ -38,7 +38,7 @@ Miroslav Volf makes this the first move of his account in *Free of Charge* (2005
 
 Paul's description of love carries the same accounting image. Love "is not irritable or resentful" (1 Corinthians 13:5), and the Greek behind that last phrase speaks of not *reckoning* the wrong, the language of entering an item in a ledger. The alternative to pretending is not keeping the books. It is counting the debt honestly and then closing the account.
 
-### How Forgiveness Became Self-Care
+## How Forgiveness Became Self-Care
 
 The idea most modern couples carry into the kitchen is different, and it has a history. For most of the church's life, forgiveness was a practice that passed between persons and before God, embedded in a community and bound to repentance. The Fourth Lateran Council in 1215 required every Western Christian to confess at least once a year, and the system that grew around that requirement assumed that sin was a debt owed to God and neighbor and that forgiveness was an event with parties to it. When Luther wrote his Ninety-Five Theses in 1517, the first of them insisted that Christ intended the whole life of believers to be one of repentance. Rome and Wittenberg fought bitterly over how forgiveness is received, but neither imagined it as a private adjustment of the forgiver's feelings.
 
@@ -50,7 +50,7 @@ What it could not see was the moral world the symptom lives in. It moved the cen
 
 The therapeutic account got the symptom right and the anthropology wrong. It knows resentment is poison. It does not know that the wound is a debt, owed to someone, and released only when someone bears the loss.
 
-### Three Things We Keep Calling by One Name
+## Three Things We Keep Calling by One Name
 
 Understood as the release of a debt, forgiveness can finally be told apart from its neighbors. **Forgiveness** is unilateral. It can be given by one person, before God, whether or not the offender repents or even knows. Jesus prays for the men driving the nails, "Father, forgive them, for they know not what they do" (Luke 23:34), and none of them has asked. **Reconciliation** is bilateral. It is the restoration of the relationship itself, and it takes two, because it requires the offender to name the wrong, turn from it, and come back. **Trust** is different from both. It is a prediction about someone's future conduct based on a pattern of past conduct, and when the pattern breaks, no act of forgiveness can restore the prediction. Only a new pattern can do that, and new patterns take time.
 
@@ -62,7 +62,7 @@ The story of Joseph shows all three things at work in one family. When his broth
 
 Paul's instruction holds the same shape: "If possible, so far as it depends on you, live peaceably with all" (Romans 12:18). Some of reconciliation depends on you. Some of it does not.
 
-### Cheap Grace at the Kitchen Table
+## Cheap Grace at the Kitchen Table
 
 Dietrich Bonhoeffer gave the church a name for what happens when forgiveness is demanded without repentance. *The Cost of Discipleship* (1937) grew out of the underground seminary he led at Finkenwalde for the Confessing Church, a seminary the Gestapo closed that same year, and it opens with the distinction between cheap grace and costly grace. Cheap grace, in Bonhoeffer's account, is forgiveness proclaimed without repentance, absolution without confession, grace without the cross and without discipleship; it is the church selling pardon at bargain rates. Costly grace is costly because it calls a person to follow Christ, and it is grace because it gives that person life. Bonhoeffer was writing about a German church that had made its peace with power, but the same logic runs through a marriage. The spouse who says *I said I was sorry, why are you still upset?* is usually asking for cheap grace: the benefits of forgiveness without the cost of repentance, and above all without the slow, humbling season in which trust is earned back.
 
@@ -74,7 +74,7 @@ Bonhoeffer saw that this kind of honesty cannot be managed alone. In *Life Toget
 
 The wounded spouse has obligations too, and they are just as specific. Peter's question in Matthew 18 was about repeated offenses, but Jesus's answer, seventy-seven times, describes something every forgiven marriage learns: the same wound, once forgiven, presents its bill again the next morning, and the next month, and on the anniversary. Forgiveness is decided once and then kept by refusing, again and again, to collect. Lewis's counsel in *Mere Christianity* was characteristically practical: if you want to learn forgiveness, do not begin with the Gestapo, begin with a husband or wife, with the thing said last week. There is a difference between the caution that trust requires while it is rebuilt and the use of an old offense as a weapon, kept loaded on a shelf within reach so that it can be produced whenever an argument needs winning. The first is wisdom. The second is revenge on an installment plan. Only you know which one you are doing, but if you are honest, you do know.
 
-### What Forgiveness Does Not Ask of You
+## What Forgiveness Does Not Ask of You
 
 The word has been misused so often that its limits have to be stated plainly.
 
@@ -88,7 +88,7 @@ And it never requires remaining in danger. This needs to be said without qualifi
 
 If you are in danger now, call the National Domestic Violence Hotline at 1-800-799-7233. If you are in crisis or thinking about harming yourself, call or text 988 to reach the Suicide & Crisis Lifeline. Tell a pastor you trust, or a counselor, or a friend who will believe you. None of this is a failure of faith.
 
-### The Debt That Was Absorbed
+## The Debt That Was Absorbed
 
 Paul's two great commands to forgive both carry the same clause, and the clause is where everything turns. "Be kind to one another, tenderhearted, forgiving one another, as God in Christ forgave you" (Ephesians 4:32). "Bearing with one another and, if one has a complaint against another, forgiving each other; as the Lord has forgiven you, so you also must forgive" (Colossians 3:13). Notice that Ephesians sets its command a few verses after "Be angry and do not sin; do not let the sun go down on your anger" (Ephesians 4:26). Anger is assumed. Complaints are assumed. Paul is writing to people with real grievances, and the standard he gives them is not what the offender deserves. It is what they were given when they deserved nothing.
 

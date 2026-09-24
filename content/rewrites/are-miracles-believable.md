@@ -21,7 +21,7 @@ review: "Please confirm two things. First, the first-person frame (that while an
 reviewed: 2026-09-24
 ---
 
-### The proof I carried
+## The proof I carried
 
 There is a feeling deep in the modern mind that the question of miracles was settled a long time ago. Nobody quite remembers the hearing, but everyone knows the verdict. The dead stay dead, water stays water, and a grown person who says otherwise has stepped out of the world the rest of us live in. The feeling rarely presents itself as an argument. It presents itself as maturity, which is exactly why it is so hard to examine, because nobody cross-examines their own adulthood.
 
@@ -31,7 +31,7 @@ I carried that assumption for years, and I carried it in its strongest form. I c
 
 This essay won't try to prove that miracles happen. It asks a narrower question, and the honest answer is less comfortable for the skeptic than he usually expects and less comfortable for a good many Christians too. Can a reasonable person believe in miracles, and if he does, what exactly is he believing? The philosopher I borrowed from ended his argument with a sentence meant to close the matter for good: "So that, upon the whole, we may conclude, that the Christian Religion not only was at first attended with miracles, but even at this day cannot be believed by any reasonable person without one." He meant it as irony. Faith, on his account, is so contrary to reason that believing it would itself require a miracle. Keep that sentence in mind. It says more than its author intended.
 
-### Hume's argument at full strength
+## Hume's argument at full strength
 
 David Hume published "Of Miracles" in 1748 as the tenth section of the book he later retitled *An Enquiry Concerning Human Understanding*. A version of him that can be knocked over is worth no one's time, so he should be heard as he made the case.
 
@@ -45,7 +45,7 @@ Much of this is simply true, and it should be granted freely. Most miracle claim
 
 So the question isn't whether Hume's caution is wise. It is. The question is whether his argument settles the matter before any particular claim is heard, as I once thought it did. It doesn't, and the flaw isn't at the edges. It sits in the middle of the argument, in the word "law."
 
-### What a law of nature is, and what a miracle is
+## What a law of nature is, and what a miracle is
 
 Hume wasn't the first to object, and the older objection is in some ways the harder one for a Christian, because it is theological. In 1670 Baruch Spinoza devoted the sixth chapter of his *Theological-Political Treatise* to miracles. The laws of nature, he argued, are simply the decrees of God, flowing from the necessity and perfection of the divine nature, so a miracle against nature would be God contradicting himself. Worse, since a miracle is by definition something we can't explain, it can teach us nothing about God, while the fixed and unchanging order of nature teaches us a great deal.
 
@@ -61,7 +61,7 @@ Those who want to keep the word "violation" can do so carefully. Richard Swinbur
 
 Put these witnesses together and the question changes shape. It was never whether nature is regular. Everyone in the argument agrees that it is, and a miracle only means anything against that background, as a signature only means something on a page that was written in an ordinary hand. The question is whether nature is all there is. If it is, Hume hardly needs an argument, since a closed system has nobody who could act on it. If it isn't, if the regularities we call laws are the settled habits of a God who "upholds the universe by the word of his power" (Hebrews 1:3, ESV), then a miracle isn't a crack in the machine. It is the one who keeps the machine running acting, for once, in a way he usually doesn't.
 
-### Where the proof cheats
+## Where the proof cheats
 
 With that distinction in hand, the circle in Hume's first part becomes visible. His scale works only if experience is uniform against miracles. But how could anyone know experience is uniform against them? Only by knowing that every reported miracle in history is false, including the one now on the table. If even one of them happened, experience isn't uniform, and the whole weight on that side of the scale falls away. Lewis pressed exactly this point in *Miracles* and called it by its name, a circle. The verdict has been written into the premise.
 
@@ -77,7 +77,7 @@ Hume's third observation, that miracle reports thrive among "ignorant and barbar
 
 Here is where the argument I loved left me. I didn't lose it to a better argument. I lost it to the discovery that I had never had one. I had described the universe as a locked room, then congratulated myself on finding that nothing had ever come through the door.
 
-### What the Gospels themselves do with miracles
+## What the Gospels themselves do with miracles
 
 Hume's fourth observation, that rival miracles cancel each other, assumes that a miracle is essentially a credential, a piece of evidence offered to win an argument between religions. The Gospels don't treat miracles that way. They are more restrained about miracles than Hume supposed, and far more restrained than much of the church.
 
@@ -91,7 +91,7 @@ That is not how a religion built on credentials behaves. In the Gospels a miracl
 
 This cuts against the church in both of its familiar directions. The Christianity that cut the miracles out to stay respectable, from Jefferson's razor to Bultmann's demythologizing, treated miracles as credentials it was embarrassed to present. The Christianity that sells miracles, the healing crusade that never follows up and the prosperity preacher who promises a breakthrough for a gift, treats them as credentials it is proud to present. One is ashamed and the other is greedy, but they share the same mistake about what a miracle is for. Neither sounds like Mark's Jesus, who sighed at the demand for a sign and went on healing the few who came to him.
 
-### The one miracle that carries the weight
+## The one miracle that carries the weight
 
 Christianity doesn't ask anyone to believe in miracles in general, and it certainly doesn't ask anyone to believe every report. It stakes everything on one event, and it says so with a bluntness no skeptic could improve on. "And if Christ has not been raised, then our preaching is in vain and your faith is in vain" (1 Corinthians 15:14, ESV). A few lines later Paul adds that without the resurrection "your faith is futile and you are still in your sins" (1 Corinthians 15:17, ESV). This isn't a symbol a person can keep after the history collapses. It is a claim about a tomb, and Paul invites the check. In the same chapter, writing in the mid-50s of the first century, he reports that the risen Jesus "appeared to more than five hundred brothers at one time, most of whom are still alive, though some have fallen asleep" (1 Corinthians 15:6, ESV). That is not the posture of a man hiding from Hume's scale. It is a man setting his one claim on it and telling you to weigh it.
 

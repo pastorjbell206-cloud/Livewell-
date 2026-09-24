@@ -36,7 +36,7 @@ The church is not exempt. We fill our services so that no gap goes unfilled, mea
 
 The Christian tradition has a long memory on this question, longer than the attention economy by fifteen centuries: the desert fathers and mothers of fourth-century Egypt, Benedict's Rule, and behind them Elijah hearing God in a low whisper after the wind, the earthquake and the fire, and Jesus rising before dawn to pray in a desolate place. What they knew is that silence and solitude are not techniques for calm. They are the place where a person stops performing for an audience, stands before God without the noise he has been using to hide, and comes back able to love. Seeing that depends on two distinctions most talk of "unplugging" misses. Solitude is not loneliness, and silence is not avoidance. In each case the difference lies not in how quiet the room is but in who is in it with you.
 
-### Pascal's room and the business of noise
+## Pascal's room and the business of noise
 
 Pascal's name for our condition was *divertissement*, usually translated diversion, and he meant something sharper than entertainment. He noticed that a king surrounded by every pleasure becomes miserable the moment he is left without something to occupy him, because then he begins to think about himself, about what he is and where he is headed. The man who spends a day hunting a hare would not want the hare if you handed it to him; he wants the chase, because the chase keeps him from thinking. Diversion, for Pascal, is the whole machinery by which human beings keep their attention off their own condition, and above all off their mortality. We are, in his famous image, reeds, the weakest things in nature, but thinking reeds, and the thinking is exactly what we arrange our lives to avoid.
 
@@ -48,7 +48,7 @@ Sherry Turkle of MIT named the social result in *Alone Together* (2011): people 
 
 The critics of the attention economy have the symptom right, and Christians should say so without hedging. But Pascal sees something they mostly cannot. Put the phone in a drawer and the restlessness is still there, reaching for the next thing. The industry didn't create our flight from ourselves and from God. It found the flight already underway and learned to charge rent on it. The tradition's answer is a different relationship with silence, and the people who first worked that out went a long way from any city to do it.
 
-### Why Christians walked into the desert
+## Why Christians walked into the desert
 
 Around the year 270 a young Egyptian Christian named Antony, born around 251 and orphaned at about eighteen or twenty, walked into church and heard the gospel reading: "If you would be perfect, go, sell what you possess and give to the poor, and you will have treasure in heaven; and come, follow me" (Matthew 19:21). He took it as addressed to him. He gave away his inheritance and went farther and farther out, first to the tombs, then to an abandoned fort in the desert where he lived alone for about twenty years. He died in 356, and within a few years Athanasius, bishop of Alexandria, wrote *The Life of Antony* (c. 360). In the eighth book of his *Confessions*, Augustine describes hearing of Antony for the first time, and of two imperial officials at Trier who read the *Life* and left the emperor's service on the spot. His own conversion in a Milan garden in 386 follows directly in the narrative.
 
@@ -64,7 +64,7 @@ The answer the fathers gave to acedia was almost always the same. A brother came
 
 Henri Nouwen, who organized *The Way of the Heart* (1981) around the three words spoken to Arsenius, argued that we have the desert almost exactly backward. We picture solitude as a private place to recover, a kind of restorative retreat. The fathers experienced it as what Nouwen called the furnace of transformation, the place where, stripped of the roles and the audience and the busyness by which we ordinarily hold ourselves together, we finally meet ourselves as we are and meet God without anything in between. Solitude is not where you go to get away from your problems. It is where you finally have them, without the noise you have been using to keep them at arm's length. The fathers who walked into that silence were rarely serene when they arrived, and they knew the only road to a quiet heart ran through the racket of a confronted one.
 
-### Elijah's whisper and the withdrawals of Jesus
+## Elijah's whisper and the withdrawals of Jesus
 
 The desert tradition was reading its Bible, and the Bible keeps staging the same scene. The clearest version comes right after the loudest victory in the Old Testament. On Mount Carmel, "the fire of the LORD fell and consumed the burnt offering" (1 Kings 18:38) in front of the prophets of Baal and the whole watching nation. A chapter later Elijah is running for his life from Jezebel, and he sits down under a broom tree and asks to die: "It is enough; now, O LORD, take away my life, for I am no better than my fathers" (1 Kings 19:4). God answers first with bread. An angel touches him and says, "Arise and eat" (19:5), and he eats and sleeps and eats again. Then he walks forty days to Horeb, the mountain of Moses, and there the old signs of Sinai pass in front of him, the signs of the day when "the LORD had descended on it in fire" and "the whole mountain trembled greatly" (Exodus 19:18):
 
@@ -78,7 +78,7 @@ Then there is Jesus, who needed silence less than anyone who ever lived and soug
 
 Grief, popularity, demand and the offer of power: those are the moments he goes off alone. In solitude he received from the Father the identity the crowd kept trying to hand him on its own terms, and he came back knowing what he was for. It is of a piece with what he told his disciples about prayer: "go into your room and shut the door and pray to your Father who is in secret" (Matthew 6:6). The room he commends is the one place where there is no audience to perform for.
 
-### Solitude is not loneliness, and silence is not avoidance
+## Solitude is not loneliness, and silence is not avoidance
 
 Paul Tillich, in a sermon collected in *The Eternal Now* (1963), observed that our language has two words for being alone. Loneliness names its pain, and solitude names its glory. Scripture takes loneliness seriously. The first thing God calls not good in the created order is "that the man should be alone" (Genesis 2:18). Loneliness is a real wound, and in 2023 the United States Surgeon General issued a formal advisory calling it an epidemic. Loneliness is aloneness imposed and experienced as absence. Solitude is aloneness chosen, in the presence of God, for the sake of returning to others. One is a deprivation and the other is a discipline, and the tragedy of our moment is that we have more of the first and almost none of the second. We are rarely alone and rarely anything but lonely, which is exactly what Turkle's phrase "alone together" describes.
 
@@ -92,7 +92,7 @@ Thomas Merton, who entered the Trappist monastery at Gethsemani in Kentucky in 1
 
 One pastoral word belongs here. Elijah under the broom tree was not helped by being left alone. He was fed, he slept, and God came near. If the quiet brings up grief or despair that feels too heavy to carry, the faithful response is to reach for people: a pastor, a friend, a doctor. In the United States, you can call or text 988 to reach the Suicide & Crisis Lifeline at any hour.
 
-### The objections worth taking seriously
+## The objections worth taking seriously
 
 The strongest objection comes from inside the church. In 1521, hidden at the Wartburg, Martin Luther wrote his judgment on monastic vows, and his case deserves a hearing on its own terms. The cloister, he argued, had turned a way of life into a higher grade of Christianity and a claim on God's favor, as if a vow could accomplish what only faith receives, and as if the farmer, the mother and the magistrate were serving God at a lower rank. Withdrawal from the neighbor, on those terms, is not holiness. It is a refusal of the callings God actually gives. Luther was largely right about what much of late medieval monasticism had become, and Protestants should not pretend otherwise. But the Reformation kept the critique and, over time, lost the practice. Many of us inherited an activism with no cell in it, a faith that reads sitting still before God as a failure to be useful.
 
@@ -100,7 +100,7 @@ A second objection is practical, and it is fair. Solitude sounds like a luxury f
 
 The third objection is really a warning. Silence has been captured before. The market now sells quiet back to us as a productivity aid and a wellness routine, and the app that promises calm is often built by the same economy that stole it. The therapeutic version treats silence as self-care, and the activist church, whether its causes lean right or left, treats it as wasted time. They look like opposites, but they share a grammar. Both make silence a means to our own ends. Christian silence is time given to God with no promised return, which is precisely why it frees us.
 
-### What the silence gives back
+## What the silence gives back
 
 None of this reduces to a method, but it does become concrete. It usually starts with the device, because willpower is no match for an industry. Put it in another room. Keep the first minutes of the day for God before the world gets in, with a psalm read slowly and nothing required of you afterward. Expect acedia, because it will come. The minutes will stretch, and some part of you will insist that you could serve God better by doing something. That is the moment the fathers told their disciples to stay. And don't measure it by how it feels. Much of it will be dry, the way roots grow in a season when nothing shows above the ground. You are not in the silence to get something. You are there to become someone who can be still.
 

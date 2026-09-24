@@ -32,7 +32,7 @@ The ethic purity culture claimed to teach is older and truer than the movement, 
 
 I came to faith out of atheism, so no one handed me a pledge card as a teenager. I'm raising five sons inside the church, so whatever the church now teaches in its place will be handed to them. The churches that built purity culture were churches like mine, and the silence about what it cost has been ours.
 
-### How purity culture was built
+## How purity culture was built
 
 Most accounts begin in 1993, where the pledge cards begin, but the movement's instincts are older. In 1873 the Comstock Act made it a federal crime to send "obscene" material through the mail, contraceptive information included. In the 1880s and 1890s the social purity movement, carried largely by women in groups like the Woman's Christian Temperance Union, fought prostitution, pressed for a single moral standard for men and women, and campaigned to raise the age of consent. Its main target was the behavior of men and its main concern the protection of girls. A century later the weight would shift.
 
@@ -46,7 +46,7 @@ The next year Joshua Harris, homeschooled and in his early twenties, published *
 
 Christine Gardner's *Making Chastity Sexy* (2011) studied how these campaigns persuaded, and found that they borrowed the rhetoric of the culture they opposed. They sold waiting the way advertisers sell anything, as the route to the best outcome, and the outcome promised was a spectacular marriage and spectacular sex. Wait now and you'll be rewarded later. That promise was a different gospel in miniature.
 
-### What the pledges did, and what they left behind
+## What the pledges did, and what they left behind
 
 The movement's defenders and critics both tend to overstate the evidence, so it's worth being precise about it. In 2001 the sociologists Peter Bearman and Hannah Brückner published a study in the *American Journal of Sociology* using the National Longitudinal Study of Adolescent Health, a large federal survey of American teenagers. They found that pledging did delay first intercourse, and the delay was real. But it held only under a particular condition. The pledge worked when pledgers were a minority in their school, when taking it marked a young person as part of a distinct community. Where pledging became common, the effect faded. Their interpretation was that the pledge functioned less as a private vow than as a badge of identity, and identities work partly by being different.
 
@@ -56,7 +56,7 @@ In 2021 Sheila Wray Gregoire, Rebecca Gregoire Lindenbach and Joanna Sawatsky pu
 
 Joshua Harris's own story became a public parable he never asked to be. After years of hearing from readers who said the book had hurt them, he announced in 2018 that he no longer agreed with its central ideas and that the book would be discontinued. In 2019 he announced that he and his wife were separating and, later that month, that by the measures he knew he no longer considered himself a Christian. It isn't mine to judge a man's soul from his public statements, and he deserves better than to be used as an illustration by either side. But many who grew up with his book read his arc as confirmation that the whole framework was built on sand, and the church has to reckon with why that reading felt so plausible.
 
-### The strongest case for the movement
+## The strongest case for the movement
 
 Before any verdict, the movement deserves to be stated in the form its best defenders would sign, and the case is stronger than its critics admit. The parents and pastors who built purity culture were responding to real wreckage. They watched the sexual revolution promise freedom and deliver, for many, broken homes, absent fathers and disease. The AIDS epidemic was killing people, and the internet was about to put pornography in every bedroom. They had every reason to believe that sex outside the covenant of marriage does harm, and that belief is no longer confined to Christians. Louise Perry, a secular feminist, argued in *The Case Against the Sexual Revolution* (2022) that the revolution's freedoms were shaped largely around male desire and that women have paid most of its costs. The purity movement said something like that thirty years earlier, and was mocked for it.
 
@@ -66,7 +66,7 @@ The last point is the sharpest, and it deserves a name. Some critics didn't stop
 
 Every piece of that case is true, and it still misses the center. The intentions were mostly good and the ethic was true. What failed was not the conviction that sex belongs in marriage but the gospel the conviction was wrapped in, and a true ethic taught inside a false gospel will form people in the false gospel. The defensive answer protects a method, and the progressive answer throws out the truth the method betrayed. The work in front of the church is harder than either: to keep the ethic and repent of the gospel it was taught with.
 
-### Holiness sold as a transaction
+## Holiness sold as a transaction
 
 Gardner showed what the campaigns promised. Christian Smith and Melinda Lundquist Denton showed where the promise came from. Their National Study of Youth and Religion interviewed American teenagers in the early 2000s, the pledge generation itself, and in *Soul Searching* (2005) they named the working faith they heard: moralistic therapeutic deism. God exists, wants people to be good and nice, wants them to feel good about themselves, stays mostly out of the way unless needed, and takes good people to heaven when they die. Smith and Denton weren't describing purity culture, but purity culture spoke that folk faith's dialect. God keeps the books, obedience is a deposit, and the return is paid out on the wedding night. It is the same logic the church rightly condemns in the prosperity preachers, moved from the bank account to the bedroom.
 
@@ -78,7 +78,7 @@ These were converts from a Greek city where a free man's sexual access to slaves
 
 This is where the distinction between virginity and chastity earns its keep. C. S. Lewis, in *Mere Christianity* (1952), called chastity the most unpopular of the Christian virtues and stated the old rule without apology: either marriage with complete faithfulness to one's spouse, or total abstinence. That rule has no expiration date. It binds the married man in how he looks at other women as surely as it binds the teenager. The pledge's one concrete promise, by contrast, ran until the wedding, so the movement concentrated its whole moral energy on adolescence and had almost nothing to say to the married, the divorced, or the long single. A status belongs to one season. A virtue belongs to all of them, and it can be taken up again by someone whose history is already written.
 
-### Shame where grace belonged
+## Shame where grace belonged
 
 Purity culture quoted this passage often, and needed to finish reading it. "Flee from sexual immorality. Every other sin a person commits is outside the body, but the sexually immoral person sins against his own body. Or do you not know that your body is a temple of the Holy Spirit within you, whom you have from God? You are not your own, for you were bought with a price. So glorify God in your body" (1 Corinthians 6:18–20).
 
@@ -92,7 +92,7 @@ The movement also got the order of sins backward. Lewis, in the same book, calle
 
 And because sexual sin became the unforgivable sin in practice, it became the unconfessable one. Dietrich Bonhoeffer observed in *Life Together* (1939) that sin wants to get a person alone, and that the more isolated he becomes, the more destructive its power; confession to a brother breaks the isolation. A youth group where the worst thing you could be was impure was a youth group where no one would say so aloud. The secrecy made no one purer. It made the sin stronger and the sinner lonelier.
 
-### Whose eyes, whose hands
+## Whose eyes, whose hands
 
 Jesus's own teaching on lust is addressed to men, and it is severe. "You have heard that it was said, 'You shall not commit adultery.' But I say to you that everyone who looks at a woman with lustful intent has already committed adultery with her in his heart. If your right eye causes you to sin, tear it out and throw it away. For it is better that you lose one of your members than that your whole body be thrown into hell. And if your right hand causes you to sin, cut it off and throw it away. For it is better that you lose one of your members than that your whole body go into hell" (Matthew 5:27–30).
 
@@ -108,7 +108,7 @@ Where the teaching met abuse, it became dangerous. A movement that tells a girl 
 
 If someone is hurting you now, or you are still carrying what someone did to you, the shame of it was never yours. In the United States the National Domestic Violence Hotline is 1-800-799-7233, and the National Sexual Assault Hotline is 1-800-656-4673. If you are thinking of ending your life, call or text 988. If a child is in danger, call 911 and report it to the police. A church that asks you to handle abuse quietly inside its walls is protecting itself, not you.
 
-### A high priest who was tempted
+## A high priest who was tempted
 
 The letter to the Hebrews says something about Jesus that purity culture seldom let itself say. "For we do not have a high priest who is unable to sympathize with our weaknesses, but one who in every respect has been tempted as we are, yet without sin. Let us then with confidence draw near to the throne of grace, that we may receive mercy and find grace to help in time of need" (Hebrews 4:15–16).
 

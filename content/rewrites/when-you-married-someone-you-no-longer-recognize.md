@@ -27,7 +27,7 @@ The usual advice is small: a date night, a weekend away, a deck of conversation 
 
 My answer runs against the grain of how most of us were taught to think about love. The stranger across the table is not evidence that the marriage has failed. Every serious account of the marriage vow assumed this day would come, and the stranger is precisely the person the promise was written to cover. There's a harder discovery waiting behind that one, and I'll get to it honestly: there are two strangers in the house, and one of them is you.
 
-### Two strangers under one roof
+## Two strangers under one roof
 
 Start with what's true in the complaint, because a great deal is. People really do change. Some change is growth: a spouse who was timid at twenty-five becomes brave at forty-five and takes up a conviction or a calling the marriage was never arranged to hold. Some change is wound: illness, depression, a trauma survived, an addiction taken up or finally put down, any of which can alter a personality so deeply that the husband or wife who remains is grieving someone still alive. And some change is drift, the slow and mostly innocent process by which two people become more fully themselves and find that the older versions don't fit as easily as the younger ones did. These situations need different responses, and much of the damage in marriages begins when all three are flattened into one verdict: you've changed.
 
@@ -39,7 +39,7 @@ That points to the distinction the whole question turns on. Recognition is not t
 
 So the feeling "I don't know who this is" is often accurate, though not in the way it's meant. It rarely means a different person has replaced the one you married. It usually means the person you married kept becoming someone, just out of your line of sight, while you steered by an old map. And while you were cataloging how your spouse had changed, you were changing too: more tired in some rooms, more certain in others, less curious about the one person you had decided you already understood. The search phrase quietly nominates a victim and a culprit. The truth is that there were always two strangers.
 
-### What the quiet house reveals
+## What the quiet house reveals
 
 For many couples the discovery comes at a predictable hour. The last child leaves, and the house that was organized for two decades around someone else's schedule is suddenly organized around nothing. Two people who were competent, even admirable, co-parents look at each other across the quiet and find they have little to say that isn't about the kids.
 
@@ -51,7 +51,7 @@ There's a detail in Scripture that ought to steady couples here, and almost no o
 
 That calls for grief before strategy. The couple who skips straight to cheerful talk about "our new season" will find the grief surfacing anyway, usually as irritability or withdrawal. It's worth naming aloud, together: we spent twenty years facing the same direction and forgot to face each other, and we'd like to start.
 
-### The case for letting go, stated fairly
+## The case for letting go, stated fairly
 
 I owe the strongest objection its full weight, because thoughtful people hold it, and some of them are reading this with their bags half packed.
 
@@ -69,7 +69,7 @@ But in the far more common case, where no one is in danger and two people simply
 
 The grounds on which a Christian may end a marriage are a second-order question, one on which faithful churches differ without dividing the faith. Jesus names sexual immorality (Matthew 19:9). Paul names the departure of an unbelieving spouse (1 Corinthians 7:15). Many Christians have long reasoned that abuse is its own form of desertion, breaking the covenant from within; others read those texts more narrowly, and some traditions permit separation but never remarriage. Whatever divides these readings, none of the historic ones finds "we grew apart" named in the texts. The strongest objection to stopping there is that a covenant takes two, and one faithful spouse cannot keep a marriage alone if the other has left it in every way but the paperwork. Paul seems to acknowledge that limit: "God has called you to peace" (1 Corinthians 7:15, ESV). The verse can't honestly be stretched over every unhappy marriage, and it can't honestly be ignored. Christians who draw the line in different places remain brothers and sisters, and a question this weighty belongs in the counsel of a pastor who knows the particulars.
 
-### The stranger is also a mirror
+## The stranger is also a mirror
 
 There's a second reason the stranger feels unbearable, and it's harder to admit. Very often "I don't recognize you" means something closer to "you no longer reflect back the version of me I prefer."
 
@@ -83,7 +83,7 @@ I can't write this from the counselor's chair. I'm a husband, and I know the hal
 
 Paul describes Christ's love for his bride in the language of washing: he "gave himself up for her, that he might sanctify her, having cleansed her by the washing of water with the word" (Ephesians 5:25–26, ESV). Marriage is one of the chief places where ordinary people are shown the truth about themselves by someone who has promised not to leave when they see it. The mirror isn't the enemy. What you do in front of it is the question.
 
-### What a promise is for
+## What a promise is for
 
 If both spouses will change, and neither can see who the other will become, what exactly did they promise?
 
@@ -101,7 +101,7 @@ The passage most often read at weddings says the same thing more severely once i
 
 On an ordinary Tuesday, keeping that promise mostly looks like becoming a student again of a person you assumed you'd finished reading. It means asking the questions you stopped asking: what are you thinking about these days, what are you afraid of, what do you want the next ten years to hold, what have I missed? It means treating your spouse's change as news rather than a verdict, following a new conviction or a new silence back into the room it came from, and letting yourself be changed a little in their direction. It may mean sitting with a good counselor. None of it photographs well. It's one conversation, then another, the patient reacquaintance with a soul that kept moving while you assumed it was parked.
 
-### Enjoy life with the one you love
+## Enjoy life with the one you love
 
 The Preacher of Ecclesiastes gives married people a command that sounds sentimental until you read the chapter around it. "Enjoy life with the wife whom you love, all the days of your vain life that he has given you under the sun, because that is your portion in life and in your toil at which you toil under the sun" (Ecclesiastes 9:9, ESV). The verses before it insist that the same end comes to the righteous and the wicked and that the dead know nothing; the verse after it warns that there is no work or wisdom in Sheol, to which you are going. The Preacher isn't offering advice from a sunny porch. He's standing at the edge of the grave, having found that nothing under the sun can be held, and he names one of the few things worth receiving anyway: the person God has given you, for the days you have. The word behind "vain," *hevel*, means vapor or breath. The days are brief, and the person beside you is your portion in them. Not the one you remember, and not the one you wish they'd become. The one who is there.
 

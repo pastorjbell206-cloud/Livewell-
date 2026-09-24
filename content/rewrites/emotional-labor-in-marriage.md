@@ -24,7 +24,7 @@ And very often the other spouse is bewildered. From where he stands the house ru
 
 **Here is the claim this essay stands on. The heaviest weight in many marriages is not the tasks but the watch: the standing responsibility to anticipate, notice and remember, which leaves no evidence when it is done well. Our economy spent two centuries teaching us that this kind of work is not work. Children multiply it overnight. Scripture has always called it work and asked both spouses to carry it. The repair begins not with a fairer chore chart but when the spouse who has been resting in the other's vigilance takes up the watch, a small, daily form of the self-emptying Paul saw in Christ.**
 
-### What "emotional labor" meant before it meant everything
+## What "emotional labor" meant before it meant everything
 
 The phrase has a birthplace, and the drift in its meaning explains some of the confusion in our kitchens. The sociologist Arlie Russell Hochschild coined *emotional labor* in *The Managed Heart* (1983), a study built largely around flight attendants at Delta Air Lines. The airline, she saw, was selling a feeling, and the worker had to produce it. The smile was part of the product. A flight attendant summoned warmth for a rude passenger and suppressed her own fear in turbulence so that the passenger would feel safe. Hochschild defined emotional labor as that management of feeling to create a publicly observable display, sold for a wage. She used a different name, *emotion work*, for the same effort in private life, and her worry was specific: when a company buys your feelings, you can lose track of which ones are yours.
 
@@ -34,7 +34,7 @@ The popular usage bundles two things. One is emotion work in Hochschild's sense:
 
 This yields the distinction the rest of the essay depends on: the difference between a task and a watch. A task is finite. A watch is standing responsibility for a whole domain: knowing that the dishwasher has been leaking, that the lunch account is low, that the child's shoes are getting tight. When a well-meaning husband says, "Just tell me what to do and I'll do it," he has confessed the whole problem without intending to. He has volunteered for the task and left her the watch. He will be an excellent employee. She remains the management, the part that never sleeps.
 
-### How the work of the home became invisible
+## How the work of the home became invisible
 
 None of this began with any particular couple. For most of human history the household was an economy. In the agrarian world of the Bible, and still in much of colonial America, husband, wife, children and often servants worked in and around the same house, growing and processing food, making cloth, trading surplus. Each spouse's work was visible to the other because it happened in the same yard. Nobody thought the spinning was a hobby. It was how the family lived.
 
@@ -46,7 +46,7 @@ Then women moved into paid work in great numbers, and the separate spheres were 
 
 Both sides of our culture inherited this history badly. Many conservative Christians baptized the Victorian separate spheres and called them biblical, though the ideal of a woman confined to a sentimental, unpaid domestic haven owes far more to the nineteenth century than to the book of Proverbs. Many progressive voices rightly exposed the unfairness but accepted the market's terms, as though dignity arrives only with a paycheck. The positions look opposite. Underneath they share one grammar: the market decides what is real work. The spouse who carries the watch is arguing, alone at ten o'clock at night, against two centuries of it.
 
-### Why the load doubles when the children come
+## Why the load doubles when the children come
 
 If there is a season when this imbalance most often takes hold, it is the arrival of the first child. A couple that split the chores more or less evenly as two working adults can find, within months, that one of them has become the household's chief operating officer and the other its most willing volunteer.
 
@@ -60,7 +60,7 @@ This season is also where exhaustion can shade into something medical. Postpartu
 
 And children expose us. The selfishness a husband and wife could hide as two adults gets dragged into the light by a small person who needs everything and returns very little for years. That exposure is painful, and it is also a mercy, because nobody repents of a sin he cannot see. I say that as the father of five sons, not from a safe distance.
 
-### The spouse who feels accused
+## The spouse who feels accused
 
 Now I owe the other side its strongest form, because the spouse who feels unfairly accused often has a real case, and a marriage will not heal if he is simply told to be quiet.
 
@@ -72,7 +72,7 @@ Much of this should be granted plainly. His anxieties are real work. Her standar
 
 One Gospel scene that both sides claim settles the matter for neither. Martha opened her home to Jesus and was "distracted with much serving," while her sister Mary sat at his feet. Martha said, "Lord, do you not care that my sister has left me to serve alone? Tell her then to help me" (Luke 10:40, ESV). She did not ask to stop working. She asked not to be alone in it, which is exactly the cry of the spouse who carries the watch. But Jesus did not send Mary to the kitchen. "Martha, Martha, you are anxious and troubled about many things, but one thing is necessary. Mary has chosen the good portion, which will not be taken away from her" (Luke 10:41–42, ESV). That answer gives no comfort to the husband on the couch, since Jesus was the guest and the teacher, not a man excusing himself from the work of his own house. But it does say something to the one who carries the watch. Not everything on the list is necessary, and some of what she carries is anxiety rather than labor, a kind of control she is afraid to set down. A faithful reading keeps both halves.
 
-### What the Bible calls this work
+## What the Bible calls this work
 
 If our economy taught us that the work of a home is not work, the Bible never did.
 
@@ -88,7 +88,7 @@ Peter adds a line for husbands: "live with your wives in an understanding way, s
 
 The church has rediscovered this before. In *The Estate of Marriage* (1522), Martin Luther imagined natural reason turning up its nose at married life: must I rock the baby, wash its diapers, sit up with it at night? Faith, he answered, sees the same tasks adorned with God's approval, and he pictured a father washing diapers while others mocked him as an effeminate fool, and said that God and the angels smile, not because diapers are glorious but because the man does it in faith. Luther was no modern egalitarian. But his attack on the idea that monks held a holier calling than parents did something enormous. Charles Taylor, in *Sources of the Self* (1989), calls it the affirmation of ordinary life: the insistence that the good life is lived in work and family, not above them. Modern culture kept that affirmation and let the market decide which ordinary work counts. The Reformation dignified the diaper. We quietly gave the dignity to the paycheck.
 
-### The mind of Christ at the kitchen sink
+## The mind of Christ at the kitchen sink
 
 The deepest word Scripture has for this is a portrait of God.
 
@@ -106,7 +106,7 @@ I have to turn the mirror here, because a pastor is especially exposed on this p
 
 What does taking up the watch look like on an ordinary Tuesday? It begins with seeing, the step most couples skip because it feels too small. The spouse who has not carried the watch asks what the other has been holding, listens to the whole answer without defending his record, and says out loud, in the spirit of Proverbs 31, that he sees it and will not pretend it carries itself. Then he takes whole domains rather than chores: the children's medical care from scheduling to follow-up, or the meals from planning through the grocery list. And the spouse who has carried the watch does something equally hard. She lets him do it his way, lets some standards go, and, remembering Martha, asks which parts of her list are necessary and which are anxiety. Neither of them keeps a ledger. Both of them keep watch.
 
-### The watch that never sleeps
+## The watch that never sleeps
 
 There is a verse about watchfulness that belongs at the end of this, because it names the limit of what any spouse can do. "He will not let your foot be moved; he who keeps you will not slumber. Behold, he who keeps Israel will neither slumber nor sleep" (Psalm 121:3–4, ESV). Only one watcher never sleeps. The spouse who has carried the whole watch of a household alone has been asked, without anyone quite saying so, to do what only God does, and it has worn her down precisely because she is not God. Part of the relief the gospel offers her is permission to be finite. She was never meant to hold the whole house in her mind.
 

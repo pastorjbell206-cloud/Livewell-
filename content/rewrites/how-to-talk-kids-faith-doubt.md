@@ -28,7 +28,7 @@ The fear underneath is specific. You assume the faith passes down through the pa
 
 This essay is not first about your children's questions. It is about yours: what a parent with real uncertainty owes a child, and what exactly gets handed on. A parent can carry the faith in front of a child in three ways. Performed certainty teaches the child that faith is theater and that adults keep the real conversation offstage. Contempt, the knowing half-smile at the tradition, teaches that faith is something serious people outgrow. The third is honest uncertainty held inside the tradition, and it is the posture Scripture actually models. **What a Christian parent hands on was never their own certainty. It is what they received, delivered by hands that sometimes tremble, and the faith has been passed down that way from the beginning.**
 
-### A Father Who Could Only Half Believe
+## A Father Who Could Only Half Believe
 
 The most honest prayer in the Gospels was prayed by a parent. Mark sets the scene with care (Mark 9:14–29). Jesus comes down from the mountain of the transfiguration and walks into an argument: a crowd, some scribes, his own disciples, and a father whose son has been seized since childhood by a spirit that throws him into fire and water. The father had brought the boy to the disciples, and they could not help him. By the time he stands in front of Jesus, his hope has worn down to a conditional clause: "But if you can do anything, have compassion on us and help us" (Mark 9:22).
 
@@ -40,7 +40,7 @@ Jesus does not send the man away to come back when his faith has been purified. 
 
 The parent who whispers *I believe; help my unbelief* at a child's bedside is not standing at the edge of the faith. He is standing in one of its oldest places, in the company of a man whose son Jesus healed.
 
-### Why Belief Feels So Fragile Now
+## Why Belief Feels So Fragile Now
 
 Part of what you feel is personal: a grief that never resolved, a prayer that went unanswered, a church that failed you. But part of it is the air. You are doubting in a particular century, and it helps to know what that century has done to belief.
 
@@ -54,7 +54,7 @@ Lesslie Newbigin, the missionary bishop who spent decades in India before turnin
 
 This is the first release a doubting parent needs. You were never asked to be certain in the way Descartes meant, and no generation of believers ever was. You were asked to trust someone, and trust can live with a great deal of unresolved question, the way a long marriage lives with a great deal of unresolved mystery about the person you married. When you tell a child *I'm not sure about that, but I trust him*, you are describing what faith has always been.
 
-### What Asaph Would Not Say to the Children
+## What Asaph Would Not Say to the Children
 
 Psalm 73 is the testimony of a man who nearly let go. It opens with the creed he was raised on, "Truly God is good to Israel, to those who are pure in heart" (Psalm 73:1), and at once admits that he almost stopped believing it: "But as for me, my feet had almost stumbled, my steps had nearly slipped. For I was envious of the arrogant when I saw the prosperity of the wicked" (Psalm 73:2–3). What follows is a bitter portrait of people who ignore God and flourish anyway, and then the conclusion his experience had been pressing on him: "All in vain have I kept my heart clean and washed my hands in innocence" (Psalm 73:13). That is no mild wobble. It is a man concluding that his faithfulness has been a waste of his life.
 
@@ -70,7 +70,7 @@ Honest uncertainty sounds different from either. It sounds like Asaph after the 
 
 Jude's short letter holds both halves of a parent's task. He urges his readers "to contend for the faith that was once for all delivered to the saints" (Jude 3), and near the close tells the same readers, "And have mercy on those who doubt" (Jude 22). He sees no contradiction between guarding what was delivered and showing mercy to the one who wavers, and a doubting parent may extend that mercy to himself without loosening his hold on the deposit. One caution belongs here. A long winter of doubt sometimes travels with depression, and when the darkness includes not wanting to be alive, it has become more than a theological question. Tell someone you trust, see a doctor, and in the US call or text 988, the Suicide and Crisis Lifeline.
 
-### Handed Over
+## Handed Over
 
 When Paul wrote to the Corinthians about the resurrection, he used the vocabulary of a courier. "For I delivered to you as of first importance what I also received: that Christ died for our sins in accordance with the Scriptures, that he was buried, that he was raised on the third day in accordance with the Scriptures, and that he appeared to Cephas, then to the twelve" (1 Corinthians 15:3–5). *Received* and *delivered* were the ordinary words for passing on a tradition, and the noun that belongs to them, *paradosis*, is what the New Testament means by tradition: literally, a handing over. The Jewish teachers spoke the same way; the tractate Avot in the Mishnah, which was compiled around the year 200, opens by saying that Moses received the Torah at Sinai and handed it on to Joshua, and Joshua to the elders. The Mishnah was written down long after Paul, but its vocabulary of receiving and handing on belongs to the world of the traditions Paul, trained as a Pharisee, had once guarded.
 
@@ -88,7 +88,7 @@ Nor should the parent try to carry this alone. Peter Berger argued in *The Sacre
 
 For a doubting parent, that is a mercy. You were never meant to be your child's entire plausibility structure, and one tired adult's certainty was never going to hold up the faith for a household. The worst thing a struggling parent can do is withdraw from the church to spare the children the sight of his doubt, because the church is where you borrow the faith of others when your own is thin. It is where your children hear old people sing words you cannot sing this month, and learn that the faith is held up by a people and not by one parent's face.
 
-### The Parent Who Would Rather Not Choose for Them
+## The Parent Who Would Rather Not Choose for Them
 
 Some parents have settled on the other path, and their argument deserves its strongest form. A child cannot consent to a religion. Whatever a parent tells a four-year-old about God, the child believes because a parent said it, so religious upbringing works through the one authority a child cannot question. If I am unsure the faith is true, teaching it to my child as true is a lie, however gentle. Many of these parents have also seen religious upbringing at its worst: children taught to fear hell before they could read, shamed for questions, controlled in God's name. Peter Berger gave the instinct a sociological footing in *The Heretical Imperative* (1979). The Greek *hairesis*, from which we get "heresy," first meant choice, and Berger argued that modernity makes heretics of us all in that literal sense: what was once received as fate must now be chosen. If the child will have to choose anyway, why not let her choose from a clean slate?
 
@@ -100,7 +100,7 @@ Blaise Pascal saw this clearly. His *Pensées*, published in 1670 from the notes
 
 Every household is embarked, and the real choice is between shaping a child openly and shaping her by default. This essay lands on raising children in the faith, honestly: telling them what you believe, what you doubt, and why you stay, and telling them plainly that one day the choice will be theirs. A child can only really weigh a faith she has been allowed to live inside. The strongest objection is not fully answered. A parent's words carry weight a child cannot measure, and even honest teaching uses that weight. The best answer this essay can give is that every parent uses it for something, and it is better used in the open, with warmth, than hidden behind a neutrality that does not exist. Thoughtful people will weigh that differently. If your doubt has hardened into settled unbelief, do not perform a faith you have left. But be sure that what you left was the faith and not a tradition of men, and that you have not mistaken a winter for a death.
 
-### On the Night He Was Handed Over
+## On the Night He Was Handed Over
 
 Paul uses the same pair of verbs once more in that letter, and the second use should stop every parent: "For I received from the Lord what I also delivered to you, that the Lord Jesus on the night when he was betrayed took bread" (1 Corinthians 11:23). In Greek, *delivered* and *betrayed* are the same verb. The tradition Paul hands on is the story of the night Jesus was handed over by a friend to his enemies, and beneath that, by the Father: "He who did not spare his own Son but gave him up for us all" (Romans 8:32), where "gave him up" is that verb again. The gospel is a handing over before it is ever a tradition handed on.
 

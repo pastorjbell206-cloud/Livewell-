@@ -31,7 +31,7 @@ Christians have usually been offered one of two cures. The older one, still aliv
 
 This essay turns on a single distinction. Conflict management and reconciliation are different things. Management asks how two people can disagree without doing each other damage. Reconciliation asks how two people who have actually wronged each other can be made one again. The rules for fighting fair belong to the first, and they are worth learning. But a marriage is a covenant, and a covenant isn't kept by a ceasefire. What heals it is the older work the church has always called confession and forgiveness, and that work begins in a place no rulebook was written to reach.
 
-### Where quarrels come from
+## Where quarrels come from
 
 The New Testament's most direct word on the subject comes as a question. "What causes quarrels and what causes fights among you? Is it not this, that your passions are at war within you? You desire and do not have, so you murder. You covet and cannot obtain, so you fight and quarrel" (James 4:1–2). James was writing to churches, not to couples, and his word "murder" is meant to startle. He has just spent a chapter on the tongue, which he calls "a restless evil, full of deadly poison" (James 3:8), and he knows that most of the killing people do to one another is done with sentences. What matters for a marriage is where he locates the war. It is "within you" before it is between you. The dishes are the occasion of the fight. The cause is a desire that has hardened into a demand and found a person standing in its way.
 
@@ -43,7 +43,7 @@ Martin Luther, lecturing on Romans in 1515 and 1516, took Augustine's diagnosis 
 
 So the first thing to say about healthy conflict is that it has to begin with a question aimed inward. Before "what did you do," there is "what do I want so badly that I am willing to hurt you for it." The rules for fighting fair don't ask that question. James asks it first.
 
-### What anger is for
+## What anger is for
 
 None of this makes anger the enemy. Where the church has taught as if it were, couples have swallowed every grievance in the name of peace until it came out sideways, years later, as coldness or contempt. Scripture is more honest than that, and more demanding.
 
@@ -57,7 +57,7 @@ James supplies the order in which anger is to be handled. "Know this, my beloved
 
 One more line keeps the passage honest. Five verses after "be angry," Paul writes, "Let all bitterness and wrath and anger and clamor and slander be put away from you, along with all malice" (Ephesians 4:31). The same apostle who permits anger tells us to put it away. He is distinguishing anger as a flash of moral sight from anger as a way of life, and he is telling us that the second must go. Then he gives the measure that replaces it: "Be kind to one another, tenderhearted, forgiving one another, as God in Christ forgave you" (Ephesians 4:32). The standard isn't fairness. It is the way we were forgiven, which was never fair.
 
-### How the church learned to fight fair
+## How the church learned to fight fair
 
 For most of Christian history, conflict between spouses was spoken of in the vocabulary of sin, patience and reconciliation. When the English church wrote its marriage service in the Book of Common Prayer of 1549, it had couples promise to hold each other "for better for worse, for richer for poorer, in sickness and in health." The vow assumed disappointment. It asked two people to decide in advance that the other's failures would not dissolve the bond, and it placed the remedy for conflict inside the promise and inside the church's ordinary life of confession and absolution.
 
@@ -73,7 +73,7 @@ A pastor who waves this away because it comes from a laboratory rather than a pu
 
 It is worth noticing, though, how close Gottman's central finding sits to something Jesus said. "Everyone who is angry with his brother will be liable to judgment; whoever insults his brother will be liable to the council; and whoever says, 'You fool!' will be liable to the hell of fire" (Matthew 5:22). Jesus traced murder back to contempt nearly two thousand years before a researcher found contempt at the root of divorce. The research got the symptom right. The question is whether its tools can reach the cause.
 
-### What the rules cannot reach
+## What the rules cannot reach
 
 The first limit is that the rules govern the form of a fight and not its object. They can make desire speak politely. They cannot change what it wants. A husband can make his demands in flawless "I" statements and remain, under the grammar, a man who has decided his wife exists to supply his comfort. James's question about where quarrels come from is still waiting for an answer after every rule has been kept.
 
@@ -85,7 +85,7 @@ The fourth limit is the deepest, and it brings us back to the distinction this e
 
 A ceasefire is not peace. It is the absence of shooting, and the two can look the same from outside for a very long time.
 
-### Confession between husband and wife
+## Confession between husband and wife
 
 Jesus's teaching on conflict is ordered in a way that most of us reverse. "Why do you see the speck that is in your brother's eye, but do not notice the log that is in your own eye? ... You hypocrite, first take the log out of your own eye, and then you will see clearly to take the speck out of your brother's eye" (Matthew 7:3, 5). He doesn't forbid removing specks. He sets the order of the operation, and the first cut is on myself. He also sets the priority. "So if you are offering your gift at the altar and there remember that your brother has something against you, leave your gift there before the altar and go. First be reconciled to your brother, and then come and offer your gift" (Matthew 5:23–24). Reconciliation ranks ahead of worship. If that is the order at the altar, it is the order at the kitchen table. And when Jesus describes going to someone who has sinned against us, he names the goal plainly: "If he listens to you, you have gained your brother" (Matthew 18:15).
 
@@ -99,7 +99,7 @@ Forgiveness is the other half, and it is not the same as trust. Forgiveness canc
 
 And here a line has to be drawn without qualification. No teaching on conflict, forbearance or forgiveness asks anyone to endure abuse. If your spouse hits you, threatens you, controls your money or your movements to punish you, cuts you off from the people who love you, or leaves you afraid in your own home, you are not in a communication problem that better skills will fix, and you are not failing to forgive when you seek safety. Forgiveness never requires you to remain in danger, and reconciliation is never wise where the danger is real. In the United States, the National Domestic Violence Hotline answers at 1-800-799-7233. Call it. The church has too often sent people back into harm in the name of peace, and it must not do so again.
 
-### The fight beneath the fight
+## The fight beneath the fight
 
 Stanley Hauerwas once proposed, half in jest and entirely in earnest, that we always marry the wrong person (*Christian Century*, 1978). He did not mean that everyone chose badly. He meant that no one knows at the altar whom they are marrying, because neither person is finished, and the one you wake beside in year fifteen is someone the one at the altar never met. Conflict is often the moment the stranger appears. Often the fight is the first sign that your spouse has become someone new, or that you have, and the question underneath it is whether you will love the person who is actually there.
 

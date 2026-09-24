@@ -33,7 +33,7 @@ The church gave most of these couples a theology of sex made of two words. Befor
 
 Some of both is true. The culture is right that the loss is serious. The church is right that Scripture expects sexual union in marriage and treats its long absence as a danger. But both answers treat the body as something owed, in one case to the self and in the other to the spouse, and neither has noticed what Paul was doing when he wrote the sentences everyone quotes. The Bible's teaching on sex in marriage is neither a license nor a quota. It's a doctrine of mutual belonging, in which each spouse's body is given to the other. What is given can be offered, received, waited for and grieved. It can't be seized. The question turns on the difference between a body that belongs to your spouse and a body your spouse owns.
 
-### What Paul was correcting at Corinth
+## What Paul was correcting at Corinth
 
 The seventh chapter of 1 Corinthians opens with Paul answering a letter: "Now concerning the matters about which you wrote: 'It is good for a man not to have sexual relations with a woman'" (1 Corinthians 7:1). The ESV puts that second sentence in quotation marks for good reason. Gordon Fee argues in *The First Epistle to the Corinthians* (1987) that it is the Corinthians' own slogan, quoted back before Paul corrects it. Some in that church had concluded that the Spirit had lifted them above the body, and that the holiest thing a married believer could do was to stop sleeping with a spouse.
 
@@ -51,7 +51,7 @@ The passage most often used to pressure reluctant spouses was written to stop sp
 
 This needs saying without softening. Consent and care are not optional features of Christian marriage. Sex obtained by threat, force, guilt or relentless pressure is abuse, whatever verse is quoted over it, and no faithful reading of Scripture asks anyone to endure it. If that describes your home, the National Domestic Violence Hotline answers at 1-800-799-7233, and you deserve a pastor or counselor who will take you seriously.
 
-### A book of desire in the middle of the Bible
+## A book of desire in the middle of the Bible
 
 Paul wasn't grudgingly permitting sex. He was defending something Scripture had celebrated from the beginning. "Therefore a man shall leave his father and his mother and hold fast to his wife, and they shall become one flesh. And the man and his wife were both naked and were not ashamed" (Genesis 2:24–25). The one-flesh union belongs to the world before the fall, in the chapter God pronounces good. And the first thing sin does in the next chapter is not to invent desire but to poison exposure: "Then the eyes of both were opened, and they knew that they were naked. And they sewed fig leaves together and made themselves loincloths" (Genesis 3:7). Their bodies hadn't changed. Being seen had become dangerous. When Scripture names the sexual act, it often uses the ordinary verb for knowing, "Now Adam knew Eve his wife" (Genesis 4:1), the same verb the prophets use for knowing God. Sexual union is a form of personal disclosure, which is exactly why it wounds so deeply when it's used without love.
 
@@ -63,7 +63,7 @@ Proverbs 5 is a father's warning to his son about adultery, and its remedy is de
 
 John Paul II, in the Wednesday audiences of 1979 to 1984 later gathered as the *Theology of the Body*, called this the nuptial meaning of the body: in marriage the body says with flesh what the vows say with words. A Baptist needn't share his sacramental theology to see the point. When sex is used to take rather than give, the body is made to tell a lie, and both people feel it.
 
-### How the church learned to distrust desire
+## How the church learned to distrust desire
 
 If Scripture is this clear, how did the church come to sound so embarrassed? The honest answer begins with something admirable. Peter Brown shows in *The Body and Society* (1988) that early Christian renunciation was not simply hatred of the body. In the Roman world a citizen's body belonged to the city, which needed heirs and soldiers. Young men and women who chose lifelong virginity were declaring that their bodies belonged to the age to come, not to the empire's demand for children. Jesus said that in the resurrection "they neither marry nor are given in marriage" (Matthew 22:30), and Paul wished others could be single as he was (1 Corinthians 7:7). The celibate are a sign that marriage is not the final thing, and the church still needs that witness.
 
@@ -77,7 +77,7 @@ Medieval canon lawyers then took Paul's language of what is owed and built a leg
 
 The Reformers began the recovery. Martin Luther's *The Estate of Marriage* (1522) called marriage God's own work, and on 13 June 1525 he married Katharina von Bora, a former nun who had fled her convent two years earlier. Yet the recovery was incomplete. In the same treatise Luther could still say that intercourse is never without sin, though God excuses it by his grace because marriage is his work. The shift came slowly and can be dated. The Book of Common Prayer of 1549 listed three causes for which marriage was ordained, and the "mutual society, help, and comfort" of husband and wife came third, after children and the remedy against sin. The Westminster Confession of 1646 put the mutual help of husband and wife first. The tradition was learning, clumsily, that the love of the spouses was not an afterthought.
 
-### Two revolutions and the same mistake
+## Two revolutions and the same mistake
 
 The twentieth century brought two revolutions, usually told as opposites. The first oral contraceptive was approved in 1960, *Griswold v. Connecticut* struck down a state ban on contraception for married couples in 1965, and within a decade much of the West had rewritten its sexual ethic.
 
@@ -89,7 +89,7 @@ But the movement taught chastity through shame and fear. It made girls responsib
 
 The two revolutions made the same mistake. Both put sex at the center of the self. One made it an idol to be served and the other an idol to be feared, and an idol feared is still an idol. Neither could see sex as a good and ordinary part of a covenant between two people who belong to God before they belong to each other. Those of us who preach should be honest here. We found it easier to denounce the culture's appetites than to say one frank, careful word about the marriages in our own pews. The silence that couple is living in didn't come only from Hollywood. We built some of it.
 
-### Why a marriage goes quiet
+## Why a marriage goes quiet
 
 The bedroom is rarely where the trouble starts. It's usually where the trouble shows up, so before a couple asks what's wrong with their sex life, they have to ask what it's reporting. They also need one distinction before the conversation can go anywhere. "I don't want you" and "I can't find desire right now" are different sentences with different answers. The spouse who wants more tends to hear the first when the second is being said, and the spouse who wants less often can't tell from the inside which is true.
 
@@ -107,7 +107,7 @@ The conversation itself belongs in daylight, at a time when nothing is being ask
 
 Some couples object that they simply aren't very physical and are content. That can be true; illness, age and long seasons of caregiving can make the body a smaller part of a marriage's language, and no one is handing out a quota. But Paul assumes a pause is chosen by both and ends in return, so a couple should ask honestly whether their peace is rest or a truce they called contentment because trying kept ending in hurt.
 
-### Naked and not ashamed
+## Naked and not ashamed
 
 Under every cause and remedy lies the oldest line in the Bible's account of marriage: "the man and his wife were both naked and were not ashamed" (Genesis 2:25). The nakedness is of the body and more than the body, the condition of being completely seen with nothing managed, and the miracle is that it didn't frighten them. After the fall the man says what every human being has said in some form: "I was afraid, because I was naked, and I hid myself" (Genesis 3:10). Most of us suspect that if we were fully known we'd be left, so we manage what our spouse may see, and a marriage can go on for decades that way, sexually active or not, without either person being known. Most couples are less under-skilled than under-known. The revolution offered nakedness without the promise not to leave, which is only exposure, and purity culture offered a promise wrapped in fear, and fear keeps the fig leaves on.
 

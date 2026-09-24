@@ -29,7 +29,7 @@ They deserve a real answer, and it turns on a distinction the Bible draws more c
 
 The Bible's great rescue opens in a tent, with a marriage under strain, a couple who can't have children, and an argument about who will inherit the house.
 
-### Babel and the Eleven Chapters Before Abraham
+## Babel and the Eleven Chapters Before Abraham
 
 Genesis doesn't let the call of Abraham be read on its own. Chapters 1 through 11 trace a widening wound. Adam and Eve reach for what was forbidden; Cain kills Abel; by Genesis 6 the earth is "filled with violence" (Genesis 6:11). Even after the flood, Noah lies drunk in his tent and a curse falls on his grandson. The Hebrew verb for cursing, *'arar*, falls five times in these chapters: on the serpent (3:14), the ground (3:17), Cain (4:11), the ground again at Noah's naming (5:29), and Canaan (9:25).
 
@@ -43,7 +43,7 @@ Count the words for blessing in those verses and there are five, answering the f
 
 Christopher J. H. Wright built *The Mission of God* (2006) around this hinge. Genesis 1 through 11 lays out the problem, a ruined world and divided nations; Genesis 12 launches God's answer, which is the election of one people not away from the nations but for them. In Wright's formulation, paraphrased, it's less that God has a mission for his people than that God has a people for his mission.
 
-### What God Promised Abraham in Genesis 12, 15 and 17
+## What God Promised Abraham in Genesis 12, 15 and 17
 
 The first word of the call costs more than a modern reader feels. In the ancient Near East the household wasn't a private refuge from the world; it was the world. The Hebrew phrase is *bet 'ab*, the father's house, and the archaeologist Lawrence Stager showed in a 1985 article how thoroughly it shaped village life in early Israel: land, labor, protection, name and inheritance all ran through it. Joshua reminds Israel that Terah, Abraham's father, "served other gods" beyond the Euphrates (Joshua 24:2), and two generations later Rachel steals her father's household gods when she flees (Genesis 31:19). To leave the father's house was to leave everything that told an ancient person who he was. God takes that structure apart and promises to build a household on a different foundation: not inheritance, but promise.
 
@@ -55,7 +55,7 @@ Genesis 17 comes when Abram is ninety-nine, thirteen years after Ishmael's birth
 
 The plainest statement of why God chose Abraham comes on the road to Sodom. The LORD says that "all the nations of the earth shall be blessed in him," and gives the reason: "For I have chosen him, that he may command his children and his household after him to keep the way of the LORD by doing righteousness and justice, so that the LORD may bring to Abraham what he has promised him" (Genesis 18:18–19). Wright reads this as a compressed map of the Old Testament: election, then a household that practices righteousness and justice, then the blessing of the nations. The middle term is a family. And the first thing Abraham does after hearing why he was chosen is plead for a city of strangers, asking, "Shall not the Judge of all the earth do what is just?" (18:25).
 
-### The Strongest Objection: Why One Family, Why One People?
+## The Strongest Objection: Why One Family, Why One People?
 
 The objection deserves its full strength first. In 1730 the English deist Matthew Tindal published *Christianity as Old as the Creation*. A perfectly good and just God, he reasoned, would give every human being equal access to what salvation requires, so true religion must be universal, available to reason in every age and nation. A revelation given to one people in one corner of the world, reaching most of humanity late or never, can't be the work of a God who loves all his creatures equally. On this view particularity is not a mystery. It's evidence against the claim.
 
@@ -71,7 +71,7 @@ That is the distinction the question turns on: the means are particular, and the
 
 A remainder is left over, and it should be named. Why did the rescue move so slowly? Why did most of the families of the earth live and die for centuries without hearing the promise that named them, and what becomes of those who never heard? Faithful Christians disagree on that last question. The Bible's answer to "why one family?" is strong. Its answer to "why so long?" is left largely with God, and Abraham's own question is the right place to leave it: the Judge of all the earth will do what is just.
 
-### Sarah and Hagar, Jacob and Esau, Joseph and His Brothers
+## Sarah and Hagar, Jacob and Esau, Joseph and His Brothers
 
 Genesis refuses to idealize Abraham's family. Erich Auerbach, a Jewish philologist driven from his chair at Marburg, wrote *Mimesis* (1946) in wartime exile in Istanbul and opened it by setting the binding of Isaac in Genesis 22 beside a scene from Homer's *Odyssey*. Homer's heroes, he observed, are evenly lit and do not change; the biblical figures are "fraught with background" and altered by a history that runs across decades. The patriarchs are formed, slowly and at great cost.
 
@@ -91,7 +91,7 @@ The end of Genesis makes that visible. Judah, who proposed selling Joseph, offer
 
 I was raised without a father, and I have five sons, so I can't read these chapters as a spectator. What steadies me isn't that the patriarchs got fatherhood right. Mostly they didn't. It's that God kept his promise through their households anyway, and that the story shows those households changing: Jacob limping toward Esau, Judah offering himself for his father's other favorite, Joseph weeping over the brothers who sold him. The family of promise is not where grace was rewarded. It's where grace went to work.
 
-### The Church as the Family of Abraham
+## The Church as the Family of Abraham
 
 The New Testament opens with Abraham's name: "The book of the genealogy of Jesus Christ, the son of David, the son of Abraham" (Matthew 1:1). The line that follows runs through Tamar, Rahab, Ruth the Moabite and "the wife of Uriah," a family carried through foreigners and scandal like the one Genesis described.
 
@@ -105,7 +105,7 @@ Ephesians gives the promise its household shape. Gentiles were once "alienated f
 
 Here the Gentile church has to hear Israel's warning, because we've failed it the same way. Paul asks whether God has rejected his people and answers, "By no means!" (Romans 11:1). Gentile believers are wild branches grafted into Israel's olive tree: "do not be arrogant toward the branches. If you are, remember it is not you who support the root, but the root that supports you" (11:18). Levenson shows in *Inheriting Abraham* (2012) that Abraham isn't a neutral figure the three "Abrahamic" faiths share on equal terms; each tradition reads him through its own commitments. How the church and the Jewish people now stand in God's purpose is a question faithful Christians answer differently, and it doesn't touch the creeds. But a church that treats its adoption into Abraham's family as grounds for contempt toward Abraham's children has turned election back into favoritism.
 
-### What the Chosen Carry
+## What the Chosen Carry
 
 Every group that has believed itself chosen by God has been tempted to read the choosing as a verdict on its worth instead of a summons into someone else's rescue. The church has done it for two thousand years, building walls where God meant doors. I've done it in miniature more times than I'd like to count, enjoying the warmth of belonging to God's people and forgetting that belonging is a sending. The hardest part of grace is not receiving it. It's remembering that it was never given to be kept.
 

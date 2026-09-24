@@ -26,7 +26,7 @@ reach for.
 - Write exactly one file, `content/rewrites/pending/<kept-slug>.md`, in the
   format in STANDARD.md. It moves up to `content/rewrites/` only after the
   integrity review. Touch nothing else. Don't run git or the build scripts.
-- 3,000 to 4,500 words of body in four to seven `###` sections.
+- 3,000 to 4,500 words of body in four to seven `##` sections (never `###`: the page title is the h1, so sections must be h2).
 - Keep what is true and strong in the source, and cut what is invented,
   clichéd or thin. Don't pad. Depth comes from the history, the named
   witnesses, the distinctions and Scripture read in context, not from length.

@@ -27,7 +27,7 @@ The other child is harder to love in the moment. He asks at dinner why God let h
 
 I have five sons, and I am a pastor, which gives me two separate reasons to answer too fast. The failure I know best in myself is the good answer delivered too soon: the child asks something hard, I know something true about it, and I say the true thing completely and immediately and feel the relief of having handled it. I had not handled it. I had ended it. **The distinction this essay turns on is between a child who performs answers and a child who owns questions. The first can recite the faith without ever having been asked to trust it, and the recitation will be discarded the first time it costs something. The second has been allowed to ask inside the house of faith, and Scripture, far from fearing that child, set a place for him at the table.**
 
-### The Question Written Into the Liturgy
+## The Question Written Into the Liturgy
 
 Most Christians know Deuteronomy 6 by its opening. "Hear, O Israel: The LORD our God, the LORD is one. You shall love the LORD your God with all your heart and with all your soul and with all your might. And these words that I command you today shall be on your heart. You shall teach them diligently to your children, and shall talk of them when you sit in your house, and when you walk by the way, and when you lie down, and when you rise" (Deuteronomy 6:4–7). We read this as a mandate for instruction, and it is. But look at where the instruction happens: at the table, on the road, at bedtime, at breakfast, on the doorposts a child walks past every day (6:9). The faith is handed down in the ordinary hours, which means it is handed down in conversation, and a conversation has two voices.
 
@@ -37,7 +37,7 @@ The same pattern runs through the Passover itself: "And when your children say t
 
 Notice, too, what kind of answer Moses gives. It is testimony in the first person plural: *We were Pharaoh's slaves.* The parent answers by including himself in the story of rescue. He does not stand outside the faith and explain it; he stands inside it and confesses it. That is harder than having the right answer, because it requires the parent to have been rescued from something and to remember it. A parent can say "God brought them out of Egypt" at no cost at all. "He brought *us* out" is a claim about the parent's own life, and a child hears the difference long before he can name it.
 
-### From Catechism to Recitation
+## From Catechism to Recitation
 
 The church inherited this dialogue and formalized it. For most of Christian history the catechism was the church's great tool for handing the faith to children, and its form was always the same: a question, then an answer. The Reformation made that form nearly universal among Protestants, and it did so in response to a problem that sounds very modern. When Luther took part in the church visitations in Saxony in the late 1520s, he was dismayed by what he found. Ordinary Christians, especially in the villages, and many of their pastors knew almost nothing of what they professed. Christendom had produced a population that performed the faith without understanding it. His answer was the Small Catechism of 1529, arranged so that the head of a household could teach it at home, the Deuteronomy 6 table restored. After each commandment, each article of the Creed, each petition of the Lord's Prayer, Luther asks the same thing: *What does this mean?* It is the child's question from Exodus, put back into the child's mouth.
 
@@ -47,7 +47,7 @@ That is the catechism's gift: words for questions before a child knows how to as
 
 John Westerhoff, in *Will Our Children Have Faith?* (1976), described faith as growing the way a tree adds rings: an experienced faith, absorbed from the people who love you; an affiliative faith, the faith of belonging to a community and learning its story; a searching faith, marked by doubt, critical judgment, and experiment; and only then an owned faith. A child who is never allowed to search has not been protected from doubt; he has been kept from ownership. James Fowler's *Stages of Faith* (1981) made a related observation: the faith of adolescence is typically held in conformity to the people who matter most, largely unexamined, and moving beyond it requires a season of taking responsibility for one's own commitments. Many adults never make that move, and a borrowed faith holds only as long as the lenders stay in the room.
 
-### What We Actually Handed Them
+## What We Actually Handed Them
 
 In 2005 the sociologist Christian Smith, with Melinda Lundquist Denton, published *Soul Searching*, drawn from the National Study of Youth and Religion. What they found was less rebellion than inarticulacy. Most teenagers were not hostile to their parents' religion; they simply could not say much about it, and the fragments they produced added up to something Smith and Denton named Moralistic Therapeutic Deism: a God exists who made the world and watches over it; God wants people to be good, nice, and fair; the central goal of life is to be happy and feel good about oneself; God need not be much involved except when there is a problem to solve; and good people go to heaven when they die.
 
@@ -61,7 +61,7 @@ We built an economy of performance, the grades and teams and metrics on the scre
 
 Charles Taylor's *A Secular Age* (2007) explains why this fails now. Taylor describes a world in which belief in God is no longer the default but one option among many, held in full awareness that intelligent and decent people hold others, so that every faith, Christian or secular, is held under cross-pressure. Peter Berger's *The Sacred Canopy* (1967) had described the older condition, in which a culture's institutions made belief plausible by leaning the same direction at once, and a child could absorb faith almost by osmosis. That canopy is gone. Whatever our children hold at thirty, they will hold because they chose it against real alternatives. A faith that has only ever been recited cannot survive that choice, because it was never offered as one.
 
-### The Parent Who Is Afraid of the Question
+## The Parent Who Is Afraid of the Question
 
 The parent frightened by all this deserves to be heard in his strongest form, because his fear is not imaginary. Children are not small philosophers standing on neutral ground, and there is no neutral ground to stand on. Scripture calls believers out of spiritual childhood so that "we may no longer be children, tossed to and fro by the waves and carried about by every wind of doctrine, by human cunning, by craftiness in deceitful schemes" (Ephesians 4:14). Proverbs tells parents to "train up a child in the way he should go" (Proverbs 22:6), not to hold a seminar on the options. This father has watched friends' children "start asking questions" at nineteen and stop coming home at Christmas. He has noticed that questioning is often less a method than an identity, performed online and rewarded by peers, and he suspects, correctly, that "think for yourself" often means "think like your new friends." He is not afraid of thought. He is afraid of a script dressed up as thought.
 
@@ -73,7 +73,7 @@ So the fearful parent is right about the danger and wrong about the cure. Silenc
 
 Anselm of Canterbury gave his *Proslogion* (around 1078) the working title *fides quaerens intellectum*, faith seeking understanding. The formula neither puts questions before faith, as the modern skeptic does, nor forbids them, as the anxious believer is tempted to. Faith is what does the asking, because it trusts there is something true at the bottom of the question and that God is not threatened by being sought. The frightened parent guards the answer. The free parent walks the child toward it.
 
-### The Boy in the Temple and the Disciple Who Asked to Touch
+## The Boy in the Temple and the Disciple Who Asked to Touch
 
 The Gospels give us one story from the boyhood of Jesus, and it is a story about questions. At twelve he stays behind in Jerusalem after the Passover, the festival built around a child's question, and his parents search for three days. "After three days they found him in the temple, sitting among the teachers, listening to them and asking them questions. And all who heard him were amazed at his understanding and his answers" (Luke 2:46–47). Listening and asking come before answering. Luke adds that he "increased in wisdom and in stature and in favor with God and man" (Luke 2:52). The incarnation includes a childhood of learning, and the learning included asking.
 
@@ -85,7 +85,7 @@ Then comes the scene that gave him his name. Absent when the risen Jesus first a
 
 Jesus's final word, "Blessed are those who have not seen and yet have believed" (John 20:29), is often read as a scolding. But John turns at once to his readers: "these are written so that you may believe that Jesus is the Christ, the Son of God, and that by believing you may have life in his name" (John 20:31). The blessing reaches past Thomas to everyone after him, including our children, who will never touch the wounds but are handed the testimony of people who did. In neither the temple nor the upper room is the question treated as betrayal, and in the upper room what answers it is a person, still bearing the marks of what he suffered.
 
-### What Owning a Question Looks Like at Home
+## What Owning a Question Looks Like at Home
 
 None of this reduces to a technique, but a household does ordinary things differently once it stops rewarding recitation and starts welcoming questions. It begins with the parent's face. Children run a quiet test before they ask the real question: they float a small doubt, a trial balloon, and watch what happens to you. If your face tightens, the door closes, and the real questions go where you cannot follow. A child reads fear in the body before a word is spoken, and if the parent is secretly afraid that the question, fully entertained, might unravel the parent's own faith, the child will take that fear as the real answer. So the work begins in us. We have to have done enough of our own asking that the child's hardest question lands in someone who is not afraid of it.
 
@@ -99,7 +99,7 @@ It means teaching children to think critically in both directions, asking whethe
 
 Above all, it means answering the way Moses told Israel to answer: with testimony. Children can argue with a proposition all day. It is much harder to argue with a parent who says honestly, *this is what God has done for me, and here is where I would be without it.* I came to faith from atheism, and I cannot pretend the questions a skeptical child asks are stupid. What finally answers them is the parent's life more than the parent's cleverness, watched at close range for years by a child who knows exactly when a performance is a performance.
 
-### The Wounds Are Still There
+## The Wounds Are Still There
 
 We have tended to think our task is to produce children with the right answers and to judge ourselves by whether they can recite them. The children who recited best are too often the ones now furthest away. That is an accusation against the formation we gave them before it is an accusation against them, and it falls on parents first, the one writing this included. We asked for performance and got it. We were afraid of questions because we had not faced our own, and our children, who miss nothing, learned from our fear what we never meant to teach: that the faith cannot bear being looked at directly.
 

@@ -32,7 +32,7 @@ Both uses leave people uneasy. Many Christians carry two fears at once. They're 
 
 I have preached the render line as if Jesus came to teach us how to keep our heads down. I was wrong, and the text knew it before I did. The passage has to be read in its setting, beside the texts the church has always read with it, and then through the traditions that tried to draw the line between faith and state, including where each went badly wrong. The claim to be earned is this. Jesus did not divide life into two drawers of equal size. He handed Caesar back a coin and claimed for God everything that bears God's image, Caesar included. That leaves the state real, limited and answerable, and it leaves the church with neither a throne nor permission to be silent.
 
-### The coin in the Temple courts
+## The coin in the Temple courts
 
 The question was asked in the last week of Jesus's life, in the Temple courts, by men who had been sent. Mark is blunt about the purpose: "they sent to him some of the Pharisees and some of the Herodians, to trap him in his talk" (Mark 12:13, ESV). The pairing matters. The Pharisees resented Roman rule as an affront to Israel's God. The Herodians owed their standing to the Roman order and to the house of Herod that served it. They agreed on very little, except that this man had to be stopped, a point Mark had already made nine chapters earlier (Mark 3:6). Just before they arrive, Jesus has told the parable of the tenants who kill the owner's son, and the leaders "perceived that he had told the parable against them" (Mark 12:12, ESV). The tax question is their reply.
 
@@ -48,7 +48,7 @@ Rome understood the answer better than many modern readers do. A few days later 
 
 The saying settles that the state has a genuine but bounded claim, and that God, not Caesar, draws the boundary. It doesn't say where the boundary runs in a particular law, war or court case. For that the church has read Mark 12 alongside other texts, and argued, for two thousand years.
 
-### Romans 13 and Revelation 13: the same power, two faces
+## Romans 13 and Revelation 13: the same power, two faces
 
 Romans 13 opens with the most quoted and least read sentence Paul wrote about the state: "Let every person be subject to the governing authorities. For there is no authority except from God, and those that exist have been instituted by God" (Romans 13:1, ESV). Read in its setting, it does something narrower and more demanding than bless whoever rules.
 
@@ -62,7 +62,7 @@ The two chapters don't contradict each other. They describe one institution unde
 
 Between the two stands Acts 5:29. Ordered by the Sanhedrin to stop teaching in Jesus's name, "Peter and the apostles answered, 'We must obey God rather than men'" (Acts 5:29, ESV). Notice what happened next. They were beaten and released, and they left "rejoicing that they were counted worthy to suffer dishonor for the name" (Acts 5:41, ESV). They disobeyed the command and didn't resist the penalty. That points to the distinction the whole tradition turns on. Submission and obedience are not the same thing. Paul's word in Romans 13:1 is "be subject," which means to recognize an order as God's. Obedience is doing what a particular command requires. A Christian can refuse a command that would require sin and remain subject, accepting the court, the fine or the cell. The apostles were never more subject to the governing authorities than when they took the flogging for disobeying them. And the Jesus who told Pilate, "You would have no authority over me at all unless it had been given you from above" (John 19:11, ESV), let that authority crucify him.
 
-### Two, not one: Augustine and Gelasius
+## Two, not one: Augustine and Gelasius
 
 The church's first great attempt to hold these texts together came after the faith had moved from the arena to the palace. Constantine made Christianity legal in 313; Theodosius made it the religion of the empire in 380. Then in 410 Alaric's Goths sacked Rome, and pagans blamed the Christians for abandoning the gods who had kept the city safe. Augustine's answer, *The City of God*, written between 413 and 426, gave the Western church its basic grammar. Two loves, he wrote, have made two cities: love of self to the contempt of God made the earthly city, and love of God to the contempt of self made the heavenly (14.28). The cities aren't addresses. They run mingled through every empire and every congregation until the judgment. The pilgrim city makes use of the earthly peace, obeys its laws and seeks its order, so long as the worship of the true God isn't hindered (19.17), but it never mistakes that peace for home. And Augustine could be unsparing about the state's pretensions. Take away justice, he asked, and what are kingdoms but great robberies (4.4)?
 
@@ -72,7 +72,7 @@ Eighty years later, in 494, Pope Gelasius I wrote to the emperor Anastasius in C
 
 The balance didn't hold. Through the investiture struggles of the eleventh century to Boniface VIII's bull *Unam Sanctam* in 1302, which placed both the spiritual and the temporal sword in the church's power, the two became in practice one with a subordinate. From the other side, kings spent centuries treating bishops as officers of the crown. What survived the misuse was Gelasius's insight: a people is safer when the one who holds the sword isn't also the one who pronounces final judgment on the soul.
 
-### The Reformation's three answers
+## The Reformation's three answers
 
 Martin Luther wrote *Temporal Authority: To What Extent It Should Be Obeyed* in 1523, after several German princes banned his translation of the New Testament. God, he argued, governs the world through two governments. The spiritual government makes people righteous through the Word and the Spirit; the temporal government restrains the wicked by the sword so that there is outward peace. If everyone were a true Christian the sword would be unnecessary, but the world isn't, and to rule it by the gospel alone would be, in Luther's image, like penning wolves and sheep together and telling them to keep the peace. So the Christian, who needs no sword for himself, may serve it for his neighbor's sake, as judge or constable or prince. But the sword's reach ends at body and property. It can't compel faith, because faith is free, and heresy is a spiritual thing that no iron can cut and no fire can burn. If a prince orders you to surrender your New Testament, Luther told his readers, refuse him and bear what follows. There Acts 5:29 applies.
 
@@ -86,7 +86,7 @@ The authorities answered with the sword. Felix Manz had already been drowned by 
 
 I pastor a Baptist church, and Baptists owe more to these people than we usually admit. The conviction that faith cannot be coerced, that the church is a gathered people rather than a parish of everyone born within its bounds, and that the magistrate has no business with the conscience was paid for in their blood. Roger Williams, the founder of Rhode Island and for a short time of the first Baptist church in America, wrote in 1644 of a hedge or wall of separation between the garden of the church and the wilderness of the world. By the time Thomas Jefferson wrote of a wall in his 1802 letter to the Danbury Baptists, the image had long meant, for dissenters, protection of the church from the state, never the banishment of faith from public life.
 
-### Kuyper, and the test at Barmen
+## Kuyper, and the test at Barmen
 
 Abraham Kuyper gave the modern Reformed answer in a lecture titled *Sphere Sovereignty*, delivered at the opening of the Free University of Amsterdam on 20 October 1880. Society, he argued, isn't a pyramid with the state at the top. Family, church, school, science, art and commerce each hold an authority directly from God rather than on loan from the state, and the state's task is to guard the boundaries between them, protect the weak inside them and keep the whole in justice without swallowing any part. In that lecture he said there is not a square inch of human existence that Christ, sovereign over all, does not claim as his own. Kuyper later served as prime minister of the Netherlands (1901–1905). He refuses both the private drawer and the state that owns everything. His weakness is practical: someone has to draw the boundaries of the spheres, the one with the power usually does, and Christians with majorities have heard "every square inch" as a license rather than a limit.
 
@@ -94,7 +94,7 @@ The hardest test came in Germany. After Hitler took power in January 1933, the G
 
 Barmen has its own silence. It defended the church's freedom to confess Christ more clearly than it defended the neighbors being stripped of their rights, and it did not name the Jews at all. A church can say every true thing about Christ's lordship over the state and still fail the people the state is crushing.
 
-### Where the argument lands, and what it leaves open
+## Where the argument lands, and what it leaves open
 
 Oliver O'Donovan's *The Desire of the Nations* (1996) gives the most careful account of why these pieces belong together. After the resurrection and ascension, he argues, rulers aren't abolished but desacralized. Christ has triumphed, and the authority left to governments in the time between his ascension and return is essentially the authority of judgment, discerning right from wrong and giving it public effect. They no longer carry a people's salvation or identity. That is Romans 13's servant exactly, and it names the beast's crime in Revelation 13: an office of judgment that has claimed to be a god.
 
@@ -102,7 +102,7 @@ The order of the question needs naming. That Jesus Christ is Lord, seated at the
 
 The strongest objection comes from Schleitheim, and this essay hasn't fully answered it. If the state's vocation is judgment backed by force, and Jesus said, "Do not resist the one who is evil" (Matthew 5:39, ESV), can the same disciple be the one who carries out wrath (Romans 13:4)? Paul sets 12:19 beside 13:4 as though they fit, but never says a Christian holds the office. Luther's answer, that the Christian bears the sword for his neighbor and never for himself, is serious. It has also covered a great deal of violence that served no neighbor. The Anabaptists paid for their answer with their own lives; the magisterial churches often paid for theirs with other people's. A reader who lands with Schleitheim stands in an honorable line.
 
-### What we have handed to Caesar
+## What we have handed to Caesar
 
 The same instrument cuts in every direction: what are we giving Caesar that bears God's image? On the right, the temptation is the old one Barmen refused, the church as the nation's chaplain, certain the kingdom is one election away. Jesus was offered every kingdom of the world for a single act of worship (Matthew 4:8–9) and refused. On the left, the church becomes the conscience of a party, its statements predictable from the platform, quietly expecting the right state to deliver a redemption only Christ brings. One makes the state guardian of the church's identity, the other the agent of the kingdom's justice, and both ask Caesar for more than a coin. The private drawer is no refuge. William Cavanaugh argues in *The Myth of Religious Violence* (2009) that the story of the secular state rescuing Europe from the wars of religion has served to legitimate the state's own claim on the loyalty people will die for. Something always fills the space God is told to vacate. Not every error weighs the same, and the church has to say which are graver, but the test is the same for all.
 

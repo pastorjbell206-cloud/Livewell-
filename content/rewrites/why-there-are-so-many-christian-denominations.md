@@ -25,7 +25,7 @@ review: "Integrity-reviewed 2026-09-24. Verified: World Christian Encyclopedia 2
 reviewed: 2026-09-24
 ---
 
-### The number, and the prayer it answers
+## The number, and the prayer it answers
 
 Someone always brings up the number. There are thirty thousand denominations, or thirty-three thousand, or more, depending on who's telling it, and the conclusion follows as though it were arithmetic: if Christians can't agree on what their own book means, why should anyone else take it seriously? The doubting Christian hears it with embarrassment, because she drives past four churches on the way to her own and couldn't say what separates them. And the newcomer searching for a church finds that many of the results call themselves non-denominational, which sounds like a way out of the whole quarrel, and wonders whether that's the safe choice.
 
@@ -41,7 +41,7 @@ The prayer grounds the church's unity in the communion of the Father and the Son
 
 And the first generation was already failing. Within a few years of the church's founding in Corinth, believers were sorting themselves into parties under the names of their favorite teachers, and Paul wrote back: "What I mean is that each one of you says, 'I follow Paul,' or 'I follow Apollos,' or 'I follow Cephas,' or 'I follow Christ.' Is Christ divided? Was Paul crucified for you? Or were you baptized in the name of Paul?" (1 Corinthians 1:12–13, ESV). The question isn't rhetorical decoration. Faction puts a human name where Christ's name belongs, when it was the cross, not the preacher, that made them one people. Every denomination ever founded has had to answer Paul's question, and some have answered it better than others.
 
-### Four breaks, each with a date
+## Four breaks, each with a date
 
 The first lasting division came earlier than most Western Christians realize. After the Council of Chalcedon in 451 defined Christ as one person in two natures, much of the church in Egypt, Syria and Armenia refused the council's wording, and the Oriental Orthodox churches (Coptic, Armenian, Syriac, Ethiopian) have lived apart ever since. In the last half century their patriarchs and the bishops of Rome have signed common declarations acknowledging that they confess the same Christ in different vocabulary.
 
@@ -53,7 +53,7 @@ The fourth break ran through the Reformation itself. In Zurich in January 1525, 
 
 Europe tried to settle the wreckage by drawing borders. The Peace of Augsburg in 1555 let each German prince choose Lutheran or Catholic for his territory; the Peace of Westphalia in 1648 added the Reformed; the Anabaptists were never included. Europe now had divided churches, but not yet denominations in the modern sense, because each body still claimed to be the church of its land. What turned those divisions into the denominational world we know was America.
 
-### How America multiplied the churches
+## How America multiplied the churches
 
 Ernst Troeltsch drew a distinction in *The Social Teaching of the Christian Churches* (1912) that makes the American story legible. A church, in his sense, is the body a person is born into, embracing a whole society and making peace with its institutions. A sect is a body a person chooses, gathered out of society and set against its compromises. America produced a third thing, and the word for it carries a theory inside it. A denomination is a named part of the church that doesn't claim to be the whole, one "name" among others, each assuming the true church is larger than itself.
 
@@ -69,7 +69,7 @@ Pentecostalism tested Niebuhr's thesis from the other side. In April 1906 Willia
 
 The fundamentalist and modernist controversies of the 1920s and 1930s then divided Northern Presbyterians and Northern Baptists, and those fights, unlike many before them, were partly over first things: whether Christ rose bodily, whether the Bible could be trusted.
 
-### The Catholic and Orthodox case at full strength
+## The Catholic and Orthodox case at full strength
 
 The most serious critique of this history doesn't come from skeptics. It comes from Catholic and Orthodox Christians, and it should be stated as they would state it. Christ founded one visible church, built on the apostles and kept by their successors, and that church received the Scriptures, fixed the canon and read the Bible within a living tradition. The Reformers cut Scripture loose from the community that carried it and handed every believer the final word on its meaning. The predictable result was division without end, because once no one can settle a dispute, every dispute becomes a new church. John Henry Newman, received into the Catholic Church in 1845, put it in one line in the introduction to his *Essay on the Development of Christian Doctrine* (1845): "To be deep in history is to cease to be a Protestant." The sociologist Christian Smith, addressing evangelicals in *The Bible Made Impossible* (2011), named the problem pervasive interpretive pluralism: sincere, competent readers who share a high view of the Bible keep reaching different conclusions on things that matter, and a biblicism that can't account for that has undercut itself. Smith himself became a Catholic. The Second Vatican Council's decree on ecumenism, *Unitatis Redintegratio* (1964), said with real grief that division contradicts the will of Christ, scandalizes the world and harms the preaching of the gospel, and it said so while calling Protestants brothers whose baptism truly joins them to Christ. The Orthodox press further back. The nineteenth-century Russian theologian Alexei Khomiakov argued that Rome and the Protestants share one Western habit, treating authority as something outside the church's common life, a juridical office or an individual's reasoning, so that Protestantism is Rome's child rather than its cure.
 
@@ -79,7 +79,7 @@ The Protestant answer turns on a distinction the critique usually passes over. K
 
 This essay lands where its writer stands, inside the Protestant and Baptist tradition, and it has to name the objection it hasn't fully answered. Protestantism has no final court on earth for a second-order dispute. Its answer, that the Spirit rules the church through Scripture read together over time, is true, but it's slow, and for five centuries it has let pride split congregations with a clear conscience. I've been part of that. I have worn my tradition's distinctives like a team jersey, defined more by what I'm against than by the Lord I'm for, which is the Corinthian disease exactly. I have made jokes from the pulpit about traditions whose members have suffered more for Christ than I ever will. I have felt the small tribal warmth of being among the ones who got it right, a warmth Felix Manz and the men who drowned him both knew. "I follow Paul" is alive and well. It has only changed names.
 
-### What the divided churches still confess
+## What the divided churches still confess
 
 Now the fact the number hides. Put a Pentecostal from Lagos, an Orthodox priest from Thessaloniki, a Catholic from Manila and a Baptist from Michigan in one room, and they will find that they confess the same God, Father, Son and Holy Spirit, the same Christ, crucified under Pontius Pilate and raised bodily on the third day, and the same life of the world to come. Most of their churches recite the Nicene or the Apostles' Creed, and most that don't still teach what the creeds say. The remarkable thing isn't that Christians have disagreed about bishops and baptism. It's that across two thousand years, every culture on earth and all the blood they've shed, they have kept the same center.
 
@@ -89,7 +89,7 @@ That's why the distinction between orders of doctrine matters so much here. Firs
 
 The tragedy of the last five centuries is that the orders were confused in both directions. Zurich treated a second-order question as a first-order one and drowned a man for it. The modernists of the 1920s treated first-order questions as though they were third-order and called it tolerance. Lesslie Newbigin, a bishop of the Church of South India, which in 1947 united Anglicans, Methodists, Presbyterians and Congregationalists, argued in *The Household of God* (1953) that each great tradition had kept hold of something the others let slip: Protestants the church as the congregation of the faithful gathered by the Word, Catholics the church as the visible body of Christ continuous through time, Pentecostals the church as the community where the Holy Spirit is present in power. Each needs what the others have kept.
 
-### What "non-denominational" actually means
+## What "non-denominational" actually means
 
 Walk into a typical non-denominational church in America and you can predict the room: a band, songs on screens, a topical sermon series, a building meant to feel like a venue, and a statement of faith that's broadly evangelical and quiet on the questions that divide denominations. The word on the sign promises no institutional baggage and no tribal loyalties.
 
@@ -103,7 +103,7 @@ The missing name has costs. The movement now has de facto denominations in netwo
 
 So anyone weighing a church, with a name on the sign or without one, should ask plainly what it teaches about baptism and the Supper, which historic confession it stands under, who holds the pastor accountable, who owns the building, and what happens when the founder leaves. A healthy church will answer without defensiveness.
 
-### The wall already broken
+## The wall already broken
 
 The number was always a distraction. The real scandal isn't that Christians hold different convictions about baptism or bishops. It's how many of our divisions Niebuhr traced correctly to class, region, nation and race, and how often we have called those divisions faithfulness. That calls for repentance, and a better statistic won't substitute for it.
 

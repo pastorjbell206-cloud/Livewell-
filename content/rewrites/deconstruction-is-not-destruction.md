@@ -31,7 +31,7 @@ Both reactions are answering a real question, and both answer it too quickly. I'
 
 That's the distinction this essay turns on. To deconstruct an inherited church culture is one thing; to abandon the creed is another. The first can be an act of faithfulness, and the church's own history is full of it. The second is a different decision, one that deconstruction doesn't require, though a person can drift into it when nobody is willing to say where the foundation is. There's a useful name for the first kind of work: excavation. Demolition clears a site. Excavation digs down through the layers to find what the house was built on, and it keeps digging until it finds out whether anything is there.
 
-### Where the word "deconstruction" came from
+## Where the word "deconstruction" came from
 
 The word has a lineage, and the popular sense has kept only part of it.
 
@@ -45,7 +45,7 @@ Somewhere between the seminar room and the podcast, the word changed. In its com
 
 The lineage still leaves a trace in the popular word, and the trace is worth naming. Derrida's deconstruction was suspicious of foundations as such. It worked by showing that whatever a text treats as bedrock rests on something else. When that instinct passes into a person's faith, it can do two very different things. It can expose a false foundation: the political loyalty, the celebrity pastor or the purity pledge that had been standing in the place where Christ belonged. Or it can train a person to believe there's no foundation anywhere, that every floor is simply another layer to be pried up. The first is excavation. The second never ends, because it has decided in advance that there's nothing at the bottom to find. Most people in the middle of deconstruction honestly don't know which of these they're doing. That uncertainty isn't a failure on their part. It's the real question, and the church has mostly refused to help them answer it.
 
-### What "exvangelical" means, and why so many left
+## What "exvangelical" means, and why so many left
 
 In 2016 the writer and podcaster Blake Chastain began using the hashtag #exvangelical on Twitter. It wasn't a manifesto. It was a name for something a great many people had been living without a word for: they had been formed by American evangelicalism, usually from childhood, and they were no longer inside it. The word names what was left, not where anyone went. Some exvangelicals still follow Jesus in Anglican, Catholic, Orthodox or mainline Protestant churches. Some believe in God but belong nowhere. Some no longer believe at all. What they share is a history and a verdict on it.
 
@@ -65,7 +65,7 @@ Scripture doesn't take the institution's side in any of this. Ezekiel indicts Is
 
 The church can't hear this from a safe distance. We built the rallies, sold the books, cheered the candidates and trusted the celebrities, and pastors are inside that "we," this one included. The honest first response to the exvangelical movement is confession, and a rebuttal can wait. A great many people didn't leave because they stopped taking the faith seriously. They left because they took it more seriously than the institutions that taught it to them.
 
-### The church has taken itself apart before
+## The church has taken itself apart before
 
 The church's panic about deconstruction has a short memory. Taking apart an inherited religious culture in order to recover the faith underneath it is one of the oldest things the people of God do, and Scripture does it long before the church does.
 
@@ -81,7 +81,7 @@ Honesty requires the other half of the story. The Reformation also fractured Wes
 
 The early church left a test for telling the faith from its accretions. Vincent of Lérins, a monk writing around 434, proposed that the faith is what has been believed everywhere, always and by all. It's a blunt instrument, and it can't settle every question, but it points in the right direction. The Nicene Creed, set down in 325 and expanded at Constantinople in 381, is confessed by Catholic, Orthodox and Protestant churches alike. The purity pledge card isn't. Neither is a voter guide, a dating rule or a worship style. The prophet gives the same direction in a sentence: "Thus says the LORD: 'Stand by the roads, and look, and ask for the ancient paths, where the good way is; and walk in it, and find rest for your souls'" (Jeremiah 6:16, ESV). Reform in Scripture always moves backward and down, toward what is older than the corruption. It never moves merely away.
 
-### Suspicion, and what lies past it
+## Suspicion, and what lies past it
 
 The philosopher who best described the inner life of deconstruction was a French Reformed Protestant. In *Freud and Philosophy* (1965), Paul Ricoeur named Marx, Nietzsche and Freud the masters of a school of suspicion. Each taught modern people to read consciousness as a mask and to ask what a stated reason was hiding: class interest, the will to power, repressed desire. Ricoeur didn't dismiss them. He thought suspicion could do real work, even religious work, because it burns away idols, and he argued that interpretation lives under a double motive, a readiness to suspect and a readiness to listen. His readers turned his phrase into "the hermeneutics of suspicion," and it describes the deconstructing believer almost exactly. Why did my youth pastor teach that? Whose interests did that doctrine protect? Those aren't impious questions. Sometimes the honest answer is that it protected someone.
 
@@ -91,7 +91,7 @@ John Henry Newman supplied a distinction a century earlier that saves a great de
 
 Charles Taylor explains why all of this feels so sudden now. In *A Secular Age* (2007) he describes a world in which belief in God is one live option among many, even for believers, and he calls the modern person cross-pressured: pulled toward transcendence, pulled toward a world closed in on itself, and never quite free of either pull. The presence of so many serious alternatives makes every position more fragile, unbelief included. Evangelical subculture, with its own music, schools, publishers and radio, promised a kind of insulation from that pressure. When the insulation failed, often at nineteen in a dormitory or at thirty in a divorce, the cross-pressure arrived all at once, and it felt like the collapse of the faith itself. Taylor's account implicates the rest of us too. The pastor who panics at the word is cross-pressured as well, and some of the church's alarm is simply our own fragility, projected onto the young.
 
-### Two maps for the road: McLaren and Childers
+## Two maps for the road: McLaren and Childers
 
 Two recent books offer maps for the person in the middle, and each deserves to be read as its admirers would recognize it.
 
@@ -101,7 +101,7 @@ Alisa Childers, a former member of the Christian pop group ZOEgirl, published *A
 
 Each map sees what the other can miss. McLaren sees the person; Childers sees the creed. The church needs both, and it needs a third thing neither book supplies on its own: the discipline of sorting convictions by weight. Some things are first-order, the Trinity, the full deity and humanity of Christ, his bodily resurrection, salvation by grace through the cross, and the authority of Scripture. Some are second-order, dividing faithful churches but not the faith: baptism, church government, women in office, the millennium. And a great many are cultural, the pledge cards, the dating rules, the party loyalties, the worship style. Most of what exvangelicals left belongs to the third category, and some to the second. The tragedy is that the church taught all three at the same volume. The progressive exit can repeat the error in reverse, building its own culture with its own pledges and fusing the faith to the other party with the same confidence. The same instrument measures both.
 
-### Excavation, not demolition
+## Excavation, not demolition
 
 "For no one can lay a foundation other than that which is laid, which is Jesus Christ" (1 Corinthians 3:11, ESV). Paul goes on to warn the Corinthians that whatever is built on that foundation, gold and silver or wood, hay and straw, will be tested on the Day by fire. The fire burns the building; it doesn't burn the foundation. A good deal of American church culture was hay and straw, and some of it is already burning. A person standing in that fire may mistake it for the end of the faith. It may be the fire Paul promised.
 

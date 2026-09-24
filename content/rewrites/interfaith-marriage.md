@@ -27,7 +27,7 @@ That is the first thing to set right. The New Testament speaks one word to the C
 
 The question isn't marginal. As more Americans have come to claim no religion at all, marriages across the line of belief have become an ordinary part of church life. The question sits in our pews every Sunday, often as one person at the end of a row with an empty seat beside them. I came to faith from atheism, and I read this subject with more sympathy for the person on the far side of the yoke than a good deal of Christian writing on it shows. That sympathy is part of why I want to say both words plainly.
 
-### The case for marrying a good man who doesn't believe
+## The case for marrying a good man who doesn't believe
 
 Begin with the strongest case for the marriage, because it deserves better than the caricature it usually gets. He is good. He is honest with money, patient with her mother, gentle with children, and faithful in ways that several professing Christians she dated were not. Scripture itself teaches that God's common grace is at work outside the church; in Romans 2 Paul says that Gentiles who don't have the law sometimes do by nature what the law requires, because its work is written on their hearts. Why should a label on a survey outweigh a character she has watched for three years? She knows Christian marriages that are cold, controlling and miserable. She knows church men who can quote Ephesians 5 and can't wash a dish. And the field is thin. Christian women in particular often find congregations with fewer single men in them than single women, so "wait for a believer" can sound a great deal like "be alone."
 
@@ -37,7 +37,7 @@ Some of that is simply true, and the church has earned part of the skepticism be
 
 But notice what the steelman asks marriage to be. It treats marriage as a reward for goodness, a verdict on a person's character: if he's good enough, he qualifies. The Christian account of marriage has never worked that way. Marriage is a shared life with a direction, two people bound to one task, and the question it asks isn't whether he is good. It's whether the two of you can pull the same plow.
 
-### What the yoke is for
+## What the yoke is for
 
 The phrase everyone quotes comes from 2 Corinthians 6:14: "Do not be unequally yoked with unbelievers. For what partnership has righteousness with lawlessness? Or what fellowship has light with darkness?" (ESV). The image comes from the farm law of Israel: "You shall not plow with an ox and a donkey together" (Deuteronomy 22:10, ESV). The rare Greek verb Paul uses is related to the word the Greek Old Testament uses in Leviticus 19:19 for letting cattle breed with a different kind. The point of the Deuteronomy law is not that the donkey is a bad animal. The two animals differ in height, stride and strength, so that yoked together they drag against one another, the weaker one is chafed raw, and the furrow runs crooked. The image carries no contempt for the unbeliever. It's realism about the plow.
 
@@ -51,7 +51,7 @@ Naomi Schaefer Riley's *'Til Faith Do Us Part* (2013), a study of interfaith mar
 
 So the argument of this essay, for the one still deciding, comes to this. Paul's "only in the Lord" is the boundary Scripture sets around the choice, and it is wisdom before it is a rule. Whatever you decide, decide with your eyes open. Don't assume the difference will resolve itself, or that love will be enough to bridge it, or that he'll eventually come around. The reason for Paul's limit isn't that he's less good than you, or that God keeps a scorecard on your romance. Such a marriage asks him to share a life whose center he doesn't share, and asks you to keep the center of your life in a room he can't enter. And be honest in the other direction as well. "In the Lord" doesn't mean in the building. Marrying a churchgoer who holds the nice, distant God of Smith and Denton's teenagers isn't obedience to 1 Corinthians 7:39 either.
 
-### The hard background in Ezra and Nehemiah
+## The hard background in Ezra and Nehemiah
 
 Anyone who reads the whole Bible on this question eventually reaches two of its hardest chapters. Ezra came to Jerusalem, by the traditional dating in 458 BC, to a small and fragile community of returned exiles. The officials told him that the people had married among the surrounding nations, "so that the holy race has mixed itself with the peoples of the lands" (Ezra 9:2, ESV). Ezra tore his garments, pulled hair from his head and beard, and prayed one of the great confessions of Scripture, owning the sin as his own and his people's. Then a man named Shecaniah proposed, "let us make a covenant with our God to put away all these wives and their children" (Ezra 10:3, ESV). The assembly gathered in the open square in the ninth month, "trembling because of this matter and because of the heavy rain" (10:9, ESV), and a list of the men was drawn up. The book ends on a sentence that won't let the reader look away: "All these had married foreign women, and some of the women had even borne children" (10:44, ESV). Some years later Nehemiah found men of Judah married to women of Ashdod, Ammon and Moab, and heard their children in the street: "half of their children spoke the language of Ashdod, and they could not speak the language of Judah" (Nehemiah 13:24, ESV). He writes that he "confronted them and cursed them and beat some of them and pulled out their hair" (13:25, ESV), and he reminded them that foreign wives had led even Solomon into sin.
 
@@ -59,7 +59,7 @@ These chapters have to be read with care, and two things have to be said togethe
 
 Paul makes sure of that, and the way he does it is one of the quiet wonders of the New Testament. A prophet of the same restoration era, Haggai, put a question of ritual law to the priests. If holy meat touches ordinary food, does the food become holy? No. If someone made unclean by a corpse touches the food, does it become unclean? Yes (Haggai 2:11–13). Under the old arrangement, uncleanness spread by contact and holiness didn't. The Corinthians seem to have feared exactly this about their mixed marriages, that union with an unbeliever made the believer unclean, the way Paul had warned that union with a prostitute would (1 Corinthians 6:15–17). Paul reverses the direction of the contagion: "For the unbelieving husband is made holy because of his wife, and the unbelieving wife is made holy because of her husband. Otherwise your children would be unclean, but as it is, they are holy" (1 Corinthians 7:14, ESV). He doesn't mean the spouse is saved; two verses later he says the believer can't know that. He means the marriage and the household are set apart for God by the presence of the believer, so that the believer isn't defiled by staying and the children aren't outside the covenant's reach. In Christ, holiness is the stronger contagion. That's why the church never took up Ezra's remedy, and why no one should take it up now.
 
-### If you are already married to someone who doesn't believe
+## If you are already married to someone who doesn't believe
 
 So the word to the married is different, and Paul gives it with unusual care: "To the rest I say (I, not the Lord) that if any brother has a wife who is an unbeliever, and she consents to live with him, he should not divorce her. If any woman has a husband who is an unbeliever, and he consents to live with her, she should not divorce him" (1 Corinthians 7:12–13, ESV). "I, not the Lord" doesn't make the counsel optional. It means Jesus never addressed a situation that only arose once the gospel crossed into pagan households, and his apostle now does. The believer stays. Your marriage isn't second-class, and it isn't a sin you're living in. It's a covenant God honors and sets apart.
 
@@ -71,7 +71,7 @@ Charles Taylor's *A Secular Age* (2007) describes our time as one in which belie
 
 Much of the rest is ordinary wisdom. Talk about the children before they force the question, and don't recruit them against the other parent. Take your spouse's world seriously: read what they read, ask why it matters to them, let them be a whole person rather than a spiritual deficit. And the church has a word to hear here too. We've often treated these believers as half-members. Every time we ask "Where's your husband?" in the lobby, we tell them their marriage is a failure of their faith. It isn't. It's a holy household with an empty chair, and the church should seat them as full members of the family.
 
-### Won without a word
+## Won without a word
 
 Peter wrote to churches in exactly this situation, and his counsel has been used both as a gift and as a weapon. "Likewise, wives, be subject to your own husbands, so that even if some do not obey the word, they may be won without a word by the conduct of their wives, when they see your respectful and pure conduct" (1 Peter 3:1–2, ESV). To hear it rightly you have to know what was expected of a wife in a Greco-Roman household. Plutarch, in his *Advice to the Bride and Groom*, written around AD 100, told the new wife to worship only the gods her husband honored and to shut the door on strange rites and foreign superstitions. A Christian wife married to a pagan had already broken that expectation simply by keeping her faith. David Balch argued in *Let Wives Be Submissive* (1981) that 1 Peter's household instructions answer the Roman suspicion that foreign cults corrupted respectable homes. Peter isn't telling her to surrender her faith to keep the peace, which is what her culture demanded. He's telling her to keep it, and to let the household see that it has made her better rather than worse.
 
@@ -81,7 +81,7 @@ The church's most famous example comes from Augustine. In Book 9 of the *Confess
 
 Honesty requires telling the rest of it. Augustine also records, with an admiration we can't share, that the wives of Thagaste came to Monica with bruised faces from husbands gentler than hers, and that she counseled them toward silence and deference. The church has told Monica's story, and preached 1 Peter 3, to keep women in homes where they were being hurt. We did that, and some of us did it from pulpits. Peter's instruction to be unafraid in a frightening house was never an instruction to stay in a dangerous one.
 
-### When faith becomes a weapon
+## When faith becomes a weapon
 
 So let it be said without qualification. Nothing in 1 Corinthians 7 or 1 Peter 3 requires anyone to endure abuse. Paul's word to the believer whose spouse departs is "God has called you to peace" (1 Corinthians 7:15, ESV), and a home where one person is afraid of the other isn't a home of peace.
 
@@ -89,7 +89,7 @@ Faith differences become instruments of control in both directions. An unbelievi
 
 If that describes your home, tell someone safe, and don't wait for a pastor's permission. In the United States the National Domestic Violence Hotline is available at 1-800-799-7233, and if you're in immediate danger, call 911. A lawyer, not this essay, is the one to advise you on custody and property; nothing here is legal advice. The church's first task is to protect you. The marriage can be talked about afterward.
 
-### The one who loved first
+## The one who loved first
 
 For the one still deciding, Paul's limit is hard, and it deserves to be felt as hard. Saying no to a good person you love would be no small thing, and the church shouldn't pretend that a verse makes it painless or that God owes you a better match for obeying. What "only in the Lord" says is that Christ isn't a private preference kept in a side room. He's the center, and a marriage is built around a center. If honest discernment leads you to a no, it may cost you more than most of us in the church have ever given up for this faith, and the limit is still worth taking seriously.
 

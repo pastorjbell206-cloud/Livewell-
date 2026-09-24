@@ -31,7 +31,7 @@ When I was an atheist, this was the part of Christianity I was least prepared fo
 
 **The incarnation is not the preface to salvation, a disguise God wore long enough to reach the cross and then set aside. In the church's oldest reading it is the shape of salvation itself: God healing human nature by taking all of it, body and mind, birth and death, and never giving it back. The distinction that makes the claim thinkable is one the skeptic rarely hears, that Jesus is fully human without being merely human. And its consequences reach well past Christmas, into what a body is, what ordinary work is worth, and what we owe the flesh of the people next to us.**
 
-### What the New Testament Actually Claims
+## What the New Testament Actually Claims
 
 The Gospel of John opens by echoing Genesis: "In the beginning was the Word, and the Word was with God, and the Word was God" (John 1:1). For a Greek reader the *logos* was the rational order of the cosmos; for a Jewish reader it was the creating speech of God (Psalm 33:6). John claims both, "All things were made through him" (John 1:3), and then says what neither audience could accept: "And the Word became flesh and dwelt among us, and we have seen his glory, glory as of the only Son from the Father, full of grace and truth" (John 1:14).
 
@@ -45,7 +45,7 @@ Colossians widens the frame to the cosmos: "He is the image of the invisible God
 
 Hebrews supplies the necessity. "Since therefore the children share in flesh and blood, he himself likewise partook of the same things, that through death he might destroy the one who has the power of death, that is, the devil, and deliver all those who through fear of death were subject to lifelong slavery" (Hebrews 2:14–15). "Therefore he had to be made like his brothers in every respect" (Hebrews 2:17). And then, pastorally: "For we do not have a high priest who is unable to sympathize with our weaknesses, but one who in every respect has been tempted as we are, yet without sin" (Hebrews 4:15). That last clause treats sin not as part of what makes us human but as the wound in our humanity. A sinless man is not less human than we are. He is the one fully human life the world has seen.
 
-### Is God Becoming Man Even Coherent? The Skeptic's Case
+## Is God Becoming Man Even Coherent? The Skeptic's Case
 
 The strongest objection to the incarnation is not that it is too miraculous. It is that it seems to make no sense.
 
@@ -61,7 +61,7 @@ Søren Kierkegaard, in *Philosophical Fragments* (1844), called God in human for
 
 None of this makes the incarnation easy to picture. Hard to picture is not the same as impossible to mean. The skeptic may still judge the claim false, but the people who hold it did not fail to notice the problem. The church noticed it in the fourth century and argued about it for well over a century.
 
-### Four Ways to Get Jesus Wrong, and the Councils That Said No
+## Four Ways to Get Jesus Wrong, and the Councils That Said No
 
 The early church reached its doctrine of Christ by refusing, one after another, the explanations that made Jesus easier to understand. Each heresy was a serious attempt to solve the skeptic's problem by giving up something the gospel cannot survive without.
 
@@ -77,7 +77,7 @@ Those four phrases are not an explanation. They are a fence, telling you what yo
 
 The heresies are not someone else's problem; they live on in us under other names. Adolf von Harnack's *What Is Christianity?* (1900) argued that the gospel Jesus preached concerned the Father and the infinite worth of the soul, not Jesus himself, and much progressive Christianity since has honored a Jesus who is the finest of teachers and not quite God. That is Arius with better manners. Meanwhile much devout piety has a Jesus who never really felt fear or had to learn anything, whose humanity is a costume. That is the old error that he only seemed human, at home in conservative churches that would never use its name. The same instrument cuts both ways. A merely human Jesus cannot save us, and a Jesus who only looks human cannot reach us.
 
-### Why Did God Become Man? Athanasius and Anselm
+## Why Did God Become Man? Athanasius and Anselm
 
 Two books eight centuries apart give the classic answers, and each sees what the other underplays.
 
@@ -93,7 +93,7 @@ Put the books together and the logic comes into focus. Athanasius sees sin mainl
 
 That is why it can't be treated as a preface. Gregory's principle means the whole of Christ's human life belongs to the rescue: the birth, the wilderness, the tears at a friend's grave (John 11:35), the terror in Gethsemane. Irenaeus, writing around 180, called it recapitulation, Christ walking obediently back over the ground Adam lost. The cross is the center, but the incarnation is the whole body the center belongs to.
 
-### The Manger Without the Tinsel
+## The Manger Without the Tinsel
 
 With the doctrine in view, the Christmas narratives read less comfortably.
 
@@ -105,7 +105,7 @@ Matthew is harder still. His genealogy names four women besides Mary, each carry
 
 That is the point. God entered a world where emperors count the poor and kings kill children to protect a throne, and he entered it at the bottom. The sentimental Christmas keeps the baby and loses the world he was born into, and so it loses the reason he came. It loses the history too. C. S. Lewis, who also came to faith out of unbelief, argued in "Myth Became Fact" (1944) that in Jesus the old stories of a dying and rising god came down into history. Myths happen once upon a time. This happened in the reign of Augustus, in a village with a name.
 
-### The Body, the Workbench and the Ordinary Day
+## The Body, the Workbench and the Ordinary Day
 
 The incarnation offended the ancient world for a reason. Educated opinion assumed that spirit is high and matter low, and by the second century the systems we call Gnostic taught that the material world was the work of a lesser, ignorant power and that salvation meant escaping it. Some who called themselves Christians tried to spare Christ the indignity by teaching that he only seemed to have a body. The New Testament had already drawn the line: "every spirit that confesses that Jesus Christ has come in the flesh is from God" (1 John 4:2). Ignatius of Antioch, writing to the church at Tralles around 110 on his way to die in Rome, insisted that Jesus was truly born, truly ate and drank, truly suffered under Pontius Pilate and was truly raised. If he only seemed to suffer, Ignatius asked, why was Ignatius in chains? Irenaeus, answering the Gnostic teachers of his day, wrote that *gloria Dei vivens homo*, the glory of God is a living human being. The incarnation is God's second signature under the verdict of Genesis: "And God saw everything that he had made, and behold, it was very good" (Genesis 1:31).
 
@@ -113,7 +113,7 @@ It also sanctifies the part of life nobody records. "Jesus, when he began his mi
 
 And it gives bodies a claim on us. "You are not your own, for you were bought with a price. So glorify God in your body" (1 Corinthians 6:19–20). Jesus spent his ministry touching lepers and feeding crowds, and he said, "as you did it to one of the least of these my brothers, you did it to me" (Matthew 25:40). The strongest objection comes from inside the church: bodies pass and souls endure, so with limited time the soul must come first. There's truth in that, since the gospel is more than bread. But the incarnation won't honor the clean separation the argument depends on. I have preached the incarnation for years and lived as if it were mostly about the soul's eternal destination, moving quickly past bodily suffering because I hadn't reckoned with what it means that God took flesh. The same instrument cuts the culture around us. A church that treats the body as a waiting room for the soul and an economy that prices bodies by their output are making the same Gnostic mistake from opposite ends. What we believe about the body of Jesus determines what we owe the body of a neighbor.
 
-### The Flesh He Kept
+## The Flesh He Kept
 
 The incarnation did not end at Easter. The risen Jesus insists on his body: "See my hands and my feet, that it is I myself. Touch me, and see. For a spirit does not have flesh and bones as you see that I have" (Luke 24:39). He tells Thomas, "Put your finger here, and see my hands; and put out your hand, and place it in my side" (John 20:27). The risen body still bore the wounds. Years later Paul writes in the present tense, "For there is one God, and there is one mediator between God and men, the man Christ Jesus" (1 Timothy 2:5). The Son did not take off our nature once the work was done. There is now human flesh at the center of God's life, and it has scars.
 

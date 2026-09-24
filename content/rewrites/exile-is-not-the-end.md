@@ -25,7 +25,7 @@ But the word gets used carelessly, and in two opposite directions. Some reach fo
 
 I came to this faith from atheism, which means I first met the church from outside its walls, and I owe the reader who is still outside them some honesty at the start. When the largest religious community in the most powerful nation on earth calls itself a band of exiles, a skeptic is entitled to laugh. That objection will get a real hearing. First, the letter itself, read where it was written.
 
-### A letter to the deportees of 597 BC
+## A letter to the deportees of 597 BC
 
 Jeremiah 29 is usually quoted as if it were written after Jerusalem burned. It wasn't. The chapter dates itself: the letter went to the elders, priests, prophets and people whom Nebuchadnezzar had carried off, after King Jeconiah, the queen mother, the officials and the craftsmen had been deported (Jeremiah 29:1–2). That is the deportation of 597 BC, recorded in 2 Kings 24:10–16, when Babylon took the young king and the skilled and influential classes of Judah east and put Zedekiah on the throne as a vassal. The prophet Ezekiel went with them (Ezekiel 1:1–3). The temple was still standing, and it would stand for roughly another decade, until the Babylonians returned in 587 and burned it.
 
@@ -43,7 +43,7 @@ The third thing is the word *welfare*, which translates the Hebrew *shalom* and 
 
 How the letter landed is recorded in the same chapter. A man named Shemaiah wrote from Babylon to the priest in Jerusalem, demanding to know why Jeremiah hadn't been put in the stocks, and he summarized the letter as his evidence: "Your exile will be long; build houses and live in them, and plant gardens and eat their produce" (Jeremiah 29:28, ESV). He meant it as proof that Jeremiah was a madman and a traitor. It was an accurate summary.
 
-### Seventy years and a promise in the plural
+## Seventy years and a promise in the plural
 
 The letter doesn't end with the command to settle. It turns to a promise, and the promise comes with a number attached: "For thus says the LORD: When seventy years are completed for Babylon, I will visit you, and I will fulfill to you my promise and bring you back to this place" (Jeremiah 29:10, ESV).
 
@@ -57,7 +57,7 @@ A scene in Daniel shows what a faithful exile did with this letter. In the first
 
 That is where the word *exile* has to begin for us, if it's going to be used at all. When American Christians borrow it, we tend to cast ourselves as Daniel in the lions' den. We rarely cast ourselves as the people at the temple gate, reciting the name of a holy place as if it guaranteed our standing. Yet much of what the church in this country has lost, it lost by its own hand, trading witness for standing. Some of us tied the gospel to a party and a flag and called the bargain faithfulness. Others quietly subtracted whatever in the faith embarrassed the educated class and called that faithfulness too. Both made a sacred institution into a guarantee. Babylon didn't commit the scandals of abuse and cover-up. We did. I am a pastor, and the indictment runs through my own vocation before it reaches anyone else's. If the word *exile* fits us, it fits first at Daniel's prayer, not at Daniel's den.
 
-### Daniel at court, and the psalm by the rivers
+## Daniel at court, and the psalm by the rivers
 
 If Jeremiah 29 is the instruction, the first six chapters of Daniel are the instruction lived. These court tales tell of Judeans serving in a pagan administration. Daniel and his friends are chosen for the king's service and taught "the literature and language of the Chaldeans" (Daniel 1:4, ESV), given Babylonian names and raised high in the government. Nothing in the text treats any of this as compromise. Daniel goes so far as to counsel Nebuchadnezzar for the good of his soul and his realm: "break off your sins by practicing righteousness, and your iniquities by showing mercy to the oppressed" (Daniel 4:27, ESV). That is seeking the city's welfare at the highest level, and it includes telling the king the truth.
 
@@ -77,7 +77,7 @@ Brueggemann built much of his work on this point. In *The Prophetic Imagination*
 
 Grief needs one distinction to stay healthy. Grief mourns what was lost, and there was real good in what we have lost: a shared moral vocabulary, a common calendar, funerals where everyone knew the words. Grievance insists that it was owed to us. Psalm 137 is grief, and even its rage is prayed. A great deal of what passes for Christian lament in this country is grievance. The exile who grieves can still seek the welfare of the city. The exile nursing a grievance can't, because he has already decided the city is his enemy.
 
-### Elect exiles: Peter, Diognetus and the pilgrim city
+## Elect exiles: Peter, Diognetus and the pilgrim city
 
 The New Testament names the church's place in the world with the same word. Peter opens his first letter, "To those who are elect exiles of the dispersion in Pontus, Galatia, Cappadocia, Asia, and Bithynia" (1 Peter 1:1, ESV). Later he writes, "Beloved, I urge you as sojourners and exiles to abstain from the passions of the flesh, which wage war against your soul" (1 Peter 2:11, ESV). The Greek words are *parepidēmos*, a temporary resident away from home, and *paroikos*, a resident alien who lives in a place without belonging to it. At the end of the letter Peter sends greetings from "she who is at Babylon, who is likewise chosen" (1 Peter 5:13, ESV), almost certainly the church in Rome. He is reading the church's whole situation through Jeremiah's categories. The empire is Babylon, the believers are the exiles, and the question is how to live there.
 
@@ -95,7 +95,7 @@ Then the arrangement changed. In 313 the Edict of Milan made Christianity legal,
 
 The greatest theologian of Christendom's first century built his answer to the fall of Rome on Jeremiah's letter. Our exile didn't begin in 1963, or 1973, or 2015. The church has always been a pilgrim city living inside someone else's. Christendom let us forget it for a long time, and some of the forgetting was a gift, because the culture carried the faith to people who might never otherwise have heard it. But the forgetting was also a lie about who we are. What is new in our moment is not our exile. It's our discovery of it.
 
-### Are American Christians exiles at all?
+## Are American Christians exiles at all?
 
 The modern revival of the word came from more than one direction. Stanley Hauerwas and William Willimon's *Resident Aliens* (1989) marked Christendom's end with a small scene from Willimon's youth, a Sunday evening in 1963 when the Fox Theater in Greenville, South Carolina, opened in defiance of the old blue laws. They called the church a colony, an island of one culture in the middle of another, whose first political task is to be the church. Lee Beach's *The Church in Exile* (2015) developed the exile reading into a practical theology for congregations after Christendom.
 
@@ -105,7 +105,7 @@ Two distinctions keep the word honest. The first separates exile from persecutio
 
 With those distinctions drawn, the verdict is this. Exile is not a sociological measure. It's a theological location. The critics are right that most American Christians aren't exiles in any sense a refugee would recognize. Peter's readers were called exiles because they had been chosen and born again into a home that isn't yet visible, not because they had lost status. In that sense Christians have always been exiles, in Rome, in Christendom and in Michigan, and we are exiles now whether we are winning elections or losing them. Whoever uses the word to complain has misread it. Whoever uses it to leave has disobeyed it.
 
-### Building houses in a city that isn't home
+## Building houses in a city that isn't home
 
 What the letter asks is almost embarrassingly ordinary: build a house, plant a garden, marry, raise children, seek the welfare of the city and pray for it. None of that is heroic, and all of it is resistance, because each act refuses both the nostalgia that wants the old arrangement back and the panic that wants to flee. Praying for the city means knowing it: the schools that are failing, the families on the edge of losing their homes, the addicted, the lonely. Prayer rooted in knowledge is intercession. Prayer divorced from knowledge is sentiment. And seeking the city's shalom in a democracy means voting, serving and holding office without ever mistaking the office for the kingdom, as Daniel served Babylon without worshiping its king.
 

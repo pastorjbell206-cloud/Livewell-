@@ -36,7 +36,7 @@ We usually explain this as a problem of time. We're busy, the children take ever
 
 The argument of this essay is that drift is a condition of the heart before it is a condition of the calendar. The church has an old name for it, far older than the modern idea that marriage exists to make us happy: acedia. It describes a sorrow that settles over the good right in front of you, a weariness with the very place and person you've been given, and a restlessness that would rather be almost anywhere else. It is a disorder of love, and a disorder of love can't be scheduled away. It has to be healed, and Scripture heals disordered loves the way it always has: by attention, by repentance, and by a faithfulness older than ours.
 
-### The noonday demon
+## The noonday demon
 
 In the late fourth century Evagrius of Pontus, a monk in the Egyptian desert, wrote down with unnerving precision the thoughts that assailed the men who had gone out there to pray. In his *Praktikos* he names eight of them, and he calls acedia the heaviest. He gives it a strange title, the noonday demon, drawn from the Greek version of Psalm 91:6, which the ESV renders as the promise of protection from "the destruction that wastes at noonday." The demon, Evagrius says, comes in the late morning and stays through the middle of the afternoon. It makes the sun seem to stand still and the day seem fifty hours long. It sends the monk to the window again and again to see whether anyone is coming. It fills him with distaste for his cell and his work, convinces him that no one around him really cares for him, and sets his mind wandering toward some other place where he could serve God more easily and be happier doing it.
 
@@ -50,7 +50,7 @@ Josef Pieper pressed that insight into the modern world in *Leisure: The Basis o
 
 One distinction has to be drawn with care. Kathleen Norris, in *Acedia & Me* (2008), read her own long marriage alongside the desert fathers and argued that the old word names something our vocabulary had lost, while insisting that acedia and clinical depression are not the same thing. Some withdrawal in marriage is illness, not sin, and a spouse who has gone flat and silent may need a physician before a sermon. If that describes you or someone you love, talk to a doctor; if the flatness has turned toward despair, call or text 988, the Suicide & Crisis Lifeline. Acedia is sorrow toward a good it can still see; depression can take the seeing itself. To confuse the two is to moralize an illness or medicate a sin.
 
-### How marriage came to carry everything and be tended by no one
+## How marriage came to carry everything and be tended by no one
 
 Acedia is ancient, but its American form has a history, and the history explains why drift now so often ends in divorce rather than in the grey endurance of earlier generations.
 
@@ -66,7 +66,7 @@ The sociologists got the symptom right. We did load marriage with more than it c
 
 The church is not outside this indictment, and I'm not either. Conservative churches absorbed the soulmate language into wedding sermons about the one person God made just for you, and then, when the feeling faded, reached for permanence as a club without asking whether anyone had been tending what they were ordering people to keep. Churches that made peace with the therapeutic often did the opposite, baptizing fulfillment and quietly treating a cold marriage as a verdict. Underneath, the two share a grammar: both treat a marriage as something that either works or doesn't, and neither asks what the spouses have actually been loving.
 
-### The case that you simply married the wrong person
+## The case that you simply married the wrong person
 
 There's a serious objection here, and it deserves the form its own defenders would sign. People change. The twenty-four-year-olds who married each other are not the forty-six-year-olds who now share the house, and sometimes the change carries them in genuinely different directions, with different convictions and different hopes. What the church calls drift is often just the honest registration of incompatibility discovered late. To relabel it acedia, a sin, is to moralize a mismatch, to heap guilt on people who did nothing wrong except grow up, and to keep them in loveless marriages by persuading them the lovelessness is their fault. Many married young under pressure from church cultures that treated early marriage as an achievement. And the spouse who finally names the distance is usually the one who has been paying attention all along; telling her to try harder blames the only person who was trying.
 
@@ -78,7 +78,7 @@ Iris Murdoch gives the best picture I know of what that looking does. In *The So
 
 Set against Murdoch and Weil, a good deal of what we call discovered incompatibility turns out to be a stranger we made by not looking. We stopped asking and started assuming. I don't say that to deny that some marriages end, or that one spouse can hold a marriage together alone; one can't, and sometimes the other has already gone. I say it because the incompatibility story, however true in a given case, is also the story acedia most wants to tell. It locates the problem in the fit and asks nothing of the eyes.
 
-### Love is trained before it is felt
+## Love is trained before it is felt
 
 Augustine gave the church its most durable account of why this is so. In *The City of God*, in book fifteen, he defines virtue briefly and truly as the right ordering of love, the *ordo amoris*. We are creatures whose loves are always being ordered or disordered, and whose lives follow what we love most. That is why drift is so hard to see from the inside. It doesn't happen by decision. It happens by the slow reordering of what the heart reaches for first.
 
@@ -90,7 +90,7 @@ One line in the Song of Songs indicts me. The young woman explains why she's sun
 
 Dietrich Bonhoeffer understood the mechanism from a prison cell. In May 1943, from Tegel, he wrote a wedding sermon for his friend Eberhard Bethge and Bethge's bride, Renate, and in it he turned the soulmate model inside out. It is not their love, he told the couple, that sustains the marriage; from their wedding day on, it is the marriage that sustains their love. The soulmate model assumes the feeling carries the covenant, so when the feeling thins the covenant must be failing. Bonhoeffer assumes the reverse. The covenant, kept, is what carries the love through the seasons when the feeling can't carry itself. But a covenant can only sustain a love that is being practiced inside it. Covenant without attention is not faithfulness. It's possession.
 
-### What the prophet heard at the altar
+## What the prophet heard at the altar
 
 Scripture's sharpest word on this comes from Malachi, writing to Judah in the century after the return from exile, when the temple had been rebuilt and the enthusiasm that rebuilt it had gone stale. The book addresses a people who kept the forms of worship while their hearts drifted, and in the second chapter it ties that drift to their homes. The men of Judah were weeping at the altar because God no longer accepted their offerings, and Malachi tells them why:
 
@@ -106,7 +106,7 @@ Here I have to say plainly what covenant does not mean. Nothing in Malachi, the 
 
 There's one more text, and it stings because of where it was sent. Decades after Paul's letter, the risen Christ addressed the church in Ephesus, the city whose name that letter traditionally bears, and he commended it: "I know your works, your toil and your patient endurance" (Revelation 2:2). They were orthodox, busy and tireless. Then: "But I have this against you, that you have abandoned the love you had at first. Remember therefore from where you have fallen; repent, and do the works you did at first" (Revelation 2:4–5). Christ's diagnosis of that church reads like a description of marital drift. Its cure is three verbs, and none of them is *feel*. Remember. Repent. Do.
 
-### The God who did not drift
+## The God who did not drift
 
 The deepest reason drift has to be named as a sin, and not merely a mismatch, is that the whole Bible is the story of a God who refused to drift from a people who drifted from him. Hosea, whose own marriage became a parable, hears God grieving: "What shall I do with you, O Ephraim? What shall I do with you, O Judah? Your love is like a morning cloud, like the dew that goes early away" (Hosea 6:4). That is acedia seen from heaven's side, a love that evaporates by midmorning without anyone deciding it should. The astonishing thing is not God's anger, though it is real, but his pursuit. "Therefore, behold, I will allure her, and bring her into the wilderness, and speak tenderly to her" (Hosea 2:14). "And I will betroth you to me forever. I will betroth you to me in righteousness and in justice, in steadfast love and in mercy" (Hosea 2:19).
 

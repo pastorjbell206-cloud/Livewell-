@@ -27,7 +27,7 @@ I write as a pastor and a husband, from inside the same economy as everyone read
 
 **The claim of this essay is that most money fights in marriage are worship disputes carried on in the language of arithmetic. Two people bring two inherited faiths about money into one house, in a culture that has spent a century forming them as consumers and financing the formation on credit, and Jesus gives the rival faith a name: mammon. A better budget helps. But the fight is settled only when a couple decides together which master their household serves, and learns to tell frugality from fear and generosity from display.**
 
-### The fight beneath the fight
+## The fight beneath the fight
 
 Money never enters a marriage neutral. Suppose one spouse grew up in a house where the lights were sometimes shut off, and now a low balance doesn't register as a number. It registers in the body, as the memory of a cold house. The other grew up where money was simply there and never discussed, and to that spouse the first one's anxiety looks irrational and controlling. Each is being faithful to a story about money handed to them before they could choose it, and now both stories share one address and one checking account.
 
@@ -37,7 +37,7 @@ But psychology can only take the diagnosis so far, and Jesus' story goes further
 
 Jesus aims the warning against covetousness at both brothers, the one holding the inheritance and the one demanding it. In a marriage it is not the vice of the spender alone. The saver who hoards against every possible future and the spender who reaches for the next relief are both conducting the rich man's monologue, one in the key of fear and the other in the key of appetite. Marriage is meant to break that monologue, since two people who have become one flesh cannot keep talking to their own souls about their own goods. A money fight is sometimes the first honest sign that the monologue has been interrupted. Hidden money is always the sign that it has resumed.
 
-### How the household stopped being an economy
+## How the household stopped being an economy
 
 Our word *economy* comes from the Greek *oikonomia*, the ordering of an *oikos*, a household. For most of human history the household was a unit of production: the farm, the shop, the loom, the family trade. Aristotle, in the first book of his *Politics*, separated household management, the art of acquiring what a household needs to live well, from an art of money-making that treats wealth as an end in itself. The first has a natural limit, because a household's needs are finite. The second has none. Aristotle's household rested on slaves and the subordination of women, which should keep us from romanticizing it. But his distinction names what the rich fool lost. The fool's barns had no limit because his acquiring had come loose from any household it was meant to serve.
 
@@ -51,7 +51,7 @@ The credit only financed a formation already under way. The philosopher James K.
 
 Put the history together and the couple at the kitchen table are two people catechized for decades by the liturgies of consumption, each holding instruments of credit their great-grandparents could not have imagined, in a household that produces almost nothing together and consumes almost everything separately. None of us chose this formation, but all of us have consented to it, the pastors who preach against it included. The money fight is where the formation surfaces.
 
-### Mammon, fear and display
+## Mammon, fear and display
 
 Jesus' saying about two masters sits inside a carefully built passage. "Do not lay up for yourselves treasures on earth, where moth and rust destroy and where thieves break in and steal, but lay up for yourselves treasures in heaven, where neither moth nor rust destroys and where thieves do not break in and steal. For where your treasure is, there your heart will be also" (Matthew 6:19–21, ESV). The saying about the eye follows: "The eye is the lamp of the body. So, if your eye is healthy, your whole body will be full of light, but if your eye is bad, your whole body will be full of darkness. If then the light in you is darkness, how great is the darkness!" (Matthew 6:22–23, ESV). In Jewish idiom a bad or "evil" eye was a grudging eye, the stingy look that Deuteronomy warns against when a lender sees the year of release approaching and refuses his poor brother (Deuteronomy 15:9). The healthy eye is the generous one. Then comes the verdict: "No one can serve two masters, for either he will hate the one and love the other, or he will be devoted to the one and despise the other. You cannot serve God and money" (Matthew 6:24, ESV).
 
@@ -65,7 +65,7 @@ The second distinction is between generosity and display. Generosity gives to me
 
 Paul traces both liturgies to one root: "But godliness with contentment is great gain, for we brought nothing into the world, and we cannot take anything out of the world," while "the love of money is a root of all kinds of evils" (1 Timothy 6:6–7, 10, ESV). And the letter to the Hebrews sets side by side two commands we rarely read together. "Let marriage be held in honor among all, and let the marriage bed be undefiled," it says, and in the next breath, "Keep your life free from love of money, and be content with what you have, for he has said, 'I will never leave you nor forsake you'" (Hebrews 13:4–5, ESV). Fidelity in marriage and freedom from the love of money stand as neighboring disciplines, and the promise attached is aimed at the fear beneath the money. Anyone who has lived through abandonment knows how closely the dread of being left and the dread of running out are related. The answer to both is a Father who does not leave, and no balance can stand in for him.
 
-### The counterfeit and its respectable cousin
+## The counterfeit and its respectable cousin
 
 American Christianity has produced its own theology of money, and it deserves a fair hearing first. The historian Kate Bowler, in *Blessed* (2013), traces the prosperity gospel through the mid-century healing revivals and teachers like Oral Roberts, whose "seed-faith" taught that a gift to God was a seed that would return as a harvest. Bowler organizes the movement around four themes, faith, wealth, health and victory, and distinguishes a "hard" prosperity that promises specific returns on specific gifts from a "soft" prosperity that speaks more gently of God's desire for his children to flourish. Her history treats its adherents with real sympathy. Much of its audience had been told for generations that their poverty was God's will, and it told them God was for them. That is not nothing.
 
@@ -75,7 +75,7 @@ We would be dishonest, though, to let the televangelist carry the whole charge. 
 
 John Wesley offered the older Protestant alternative in his sermon "The Use of Money" (1760), preached on the parable of the unjust steward, in three rules: gain all you can, save all you can, give all you can. Gain all you can, but never at the cost of your health, your conscience or your neighbor. Save all you can, and by *save* Wesley did not mean accumulate; he meant refuse to spend on vanity and appetite. The purpose of the first two rules is the third. Saving in Wesley's sense is frugality in the service of generosity, the opposite of hoarding. Late in life, in his sermon "Causes of the Inefficacy of Christianity" (1789), he lamented that many of his own people kept the first rule, fewer the second, and hardly any the third. The warning applies to every tradition that has taught its members to prosper, including ours.
 
-### Joint or separate accounts?
+## Joint or separate accounts?
 
 Here the practical question arrives: should a married couple combine everything, or keep separate accounts? Nothing in this section is financial or legal advice. Property law differs by state (nine states treat most marital property as community property), and the specifics of accounts, debts and estates belong with a qualified professional.
 
@@ -91,7 +91,7 @@ Two further matters are not prudential at all. The first is financial infidelity
 
 The second is control. One spouse tracking the budget is ordinary stewardship. One spouse acting as the household's gatekeeper, requiring permission for a coffee, is something else, and it falls hardest on the spouse who earns less or earns nothing in wages. The spouse at home with small children is doing work no salary could cover, and a marriage that quietly ranks its members by their paychecks is running on the world's scoreboard rather than Christ's. At its far end, control becomes abuse. Those who work with domestic violence recognize financial abuse as a pattern of its own: one spouse controls all access to money, demands receipts for every purchase, forbids or sabotages the other's work, hides assets, or runs up debt in the other's name. If that describes your home, it is not a budgeting disagreement, and no teaching on covenant or oneness requires you to endure it. Keeping money of your own for safety in that situation is wisdom, not faithlessness. The National Domestic Violence Hotline answers at 1-800-799-7233, and if you are in immediate danger, call 911.
 
-### Rich toward God
+## Rich toward God
 
 The French thinker Jacques Ellul, in *Money and Power* (1954; English 1984), argued that money behaves less like a tool than like a power, the Mammon of the Gospels, bending those who handle it toward its own logic of buying and selling. His answer was not to flee money but to profane it, stripping it of its sacred claim by bringing it into a logic it cannot compute, the logic of grace. The chief way to do that, he argued, is to give it away. A gift breaks the circuit in which everything has a price. That is why generosity practiced together and quietly does more for a marriage's relationship to money than any restriction on spending. It is also why generosity cannot be display. A gift made to be seen has simply bought something, and money is perfectly happy to be spent that way.
 

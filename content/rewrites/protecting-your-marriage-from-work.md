@@ -31,7 +31,7 @@ Most advice on this subject is about boundaries: the phone in a basket, the date
 
 The argument of this essay is that the danger to a marriage lies first in what the work is for and only second in how many hours it takes, though the hours matter, and some institutions are built to take all of them. Scripture calls work good before it calls it hard, and it treats provision as a genuine duty. It also knows how a good gift becomes a god, and it answers with something no productivity system can offer: a day of rest, commanded twice for two different reasons, given first to people who remembered being slaves. The distinction that matters most is between work done as provision and work done as proof. From the outside they look identical. Only one of them is starving the person you married.
 
-### The honest case for the long hours
+## The honest case for the long hours
 
 The objection deserves the form its own defenders would sign, because it's usually made by people who love their families very much. Providing for your household is itself an act of love, and often the most costly one available. The spouse grinding through a demanding job is not neglecting the marriage but carrying it: paying for the house the children sleep in, the insurance that covered the surgery, the tuition, the grocery bill that rises every month. Talk about presence and connection is a luxury held by people who have never lain awake over rent. The paycheck is affection in usable form, and a spouse who resents the hours is resenting the very thing that keeps the family standing. *I'm not neglecting them. I'm the reason they're okay.*
 
@@ -43,7 +43,7 @@ And many families cannot simply choose fewer hours. That has to be said plainly.
 
 All of that is true. What the objection permits, though, is a slide, and it happens in people who aren't poor as easily as in people who are. It moves from *work is a way of loving them* to *work is the way of loving them*, and from there to an arrangement in which providing has replaced presence entirely and the provider calls the replacement his gift. The honest provision and the quiet abandonment look exactly alike from the street. The difference lies in whether the marriage is still the thing the work serves or has become the thing that serves the work. Most of us can't tell which we're doing, because we always narrate ourselves as the provider and never as the one who left.
 
-### How a good gift became a rival
+## How a good gift became a rival
 
 Genesis puts work and marriage side by side at the beginning, and the order is worth noticing. The man is placed in the garden to work it, and only then, while he is already working, God says, "It is not good that the man should be alone; I will make him a helper fit for him" (Genesis 2:18). The man was employed in the most satisfying job anyone has ever held, and he was still alone, and his aloneness wasn't answered by more garden. The one-flesh union is given for a lack that good work could not fill. A person working harder and growing lonelier inside a marriage is reliving the man's condition before the woman was made: surrounded by good labor and still unaccompanied.
 
@@ -55,7 +55,7 @@ The Reformation's high view of work had a second life Luther didn't intend. Max 
 
 The industrial economy did the rest. It pulled work out of the home, and once the work happened somewhere the marriage couldn't see, the two became rivals for the same hours, and only one of them came home with a number attached. The Fair Labor Standards Act of 1938 put a ceiling on the hourly worker's week before overtime, but it left salaried professionals largely outside those rules, and the most prestigious professions of the century were often the ones with no limit on the hours. The common day of rest eroded too. In *McGowan v. Maryland* (1961) the Supreme Court upheld Sunday closing laws on the ground that a shared day of rest served a public purpose, yet in the decades that followed most such laws were repealed or ignored. Then the phone arrived in the pocket, and in 2020 the office moved into the kitchen. We didn't decide to live without the walls. We simply stopped noticing they were gone.
 
-### Institutions that want all of you
+## Institutions that want all of you
 
 The sociologist Lewis Coser gave this problem its most useful name. In *Greedy Institutions* (1974) he set his idea beside Erving Goffman's account of total institutions in *Asylums* (1961), the prisons and asylums that hold people behind walls and control them by force. Coser described organizations that seek undivided loyalty without any walls at all. A greedy institution doesn't lock the door. It makes total devotion admirable and weakens the claims of every competing tie until the member gives everything willingly and calls it commitment. His examples ranged from celibate clergy to revolutionary parties, and he counted the family itself, in its demands on a wife at home, among them. In 1986 Mady Wechsler Segal applied the idea to military life, arguing that the armed forces and the family are both greedy institutions making legitimate and competing demands on the same person.
 
@@ -69,7 +69,7 @@ Eugene Peterson warned against exactly this. In *The Contemplative Pastor* (1989
 
 A greedy institution is a structure, though, not only a state of mind, and structures aren't cured by better attitudes. Some honest responses are structural: a different rotation, the promotion declined because it doubles the travel, a new job when that's possible, and, for those with authority over other people's hours, a refusal to run an institution that devours its members' homes. Not every family can do these things. But the pressure being structural doesn't make the heart uninvolved, because the institution can only take what we are willing, for our own reasons, to hand over.
 
-### Provision and proof
+## Provision and proof
 
 Luther's teaching supplies the distinction underneath all of this. If the Christian lives in God by faith and in the neighbor by love, then work belongs to the second. It's for the neighbor: the patient, the customer, the child, the spouse. It is not where a person earns standing before God, or before himself. In the Large Catechism (1529), explaining the first commandment, Luther defined a god as whatever the heart clings to and trusts for its good, and he counted money and learning among the gods people most often trust. Work goes wrong when it stops being provision, something done for another, and becomes proof, something done to establish that I matter. Timothy Keller, drawing on Luther and Sayers in *Every Good Endeavor* (2012), argues that work becomes an idol when we ask it to supply the identity and worth only God can give, and that such an idol drives a person by turns to overwork and to despair, because a god made of achievement can never say *enough*.
 
@@ -87,7 +87,7 @@ Jesus presses the same question further: "For what does it profit a man to gain 
 
 Every tribe has its version of this idol. Conservative churches have long praised the hardworking provider in ways that let husbands vanish into the office with a clear conscience. The progressive account of career as the chief site of self-realization often treats marriage and children as drags on becoming who you really are. And the therapeutic industry sells rest back to us as self-care, a recovery routine for peak performance. These look like opposites, but they share a grammar: each makes work the measure of a life and fits the marriage in around it. I'm inside that grammar too. Most of us are.
 
-### Two reasons to stop
+## Two reasons to stop
 
 The fourth commandment is given twice, and the reasons differ. In Exodus the ground is creation: "For in six days the LORD made heaven and earth, the sea, and all that is in them, and rested on the seventh day. Therefore the LORD blessed the Sabbath day and made it holy" (Exodus 20:11). Abraham Joshua Heschel observed in *The Sabbath* (1951) that the first thing Scripture calls holy is neither a place nor an object but a day (Genesis 2:3), and he described the Sabbath as a palace in time, a sanctuary built of hours rather than stone. On his reading the Sabbath isn't a pause to recover for the week; the week moves toward the Sabbath.
 
@@ -99,7 +99,7 @@ Christians differ over how the command binds us. The Westminster Confession (164
 
 Deuteronomy also speaks to those who can't keep Sunday. It was given to servants whose masters controlled their hours, so it is also a command about other people's rest. Whoever sets the schedule for others, the manager, the owner, the church board, answers for whether they rest. For the nurse who works Sundays, the Sabbath may be a Tuesday afternoon carved out against the grain, and no one should load guilt on her for what others decided. And the spouse at home with small children works a job with no day off. Whose rest is being protected in your house?
 
-### The rest no one earns
+## The rest no one earns
 
 The curse spoke of thorns and sweat and dust. When the soldiers mocked Jesus, "twisting together a crown of thorns, they put it on him" (Mark 15:17), and the church has long seen in that crown the curse of Genesis 3 carried by the one who came to lift it. He finished his work, and his body lay in the tomb through the Sabbath while the women "rested according to the commandment" (Luke 23:56). Then came the first day of the week. In the gospel, rest isn't the reward at the end of the work. It's where the life of faith begins: "Come to me, all who labor and are heavy laden, and I will give you rest" (Matthew 11:28). "So then, there remains a Sabbath rest for the people of God, for whoever has entered God's rest has also rested from his works as God did from his" (Hebrews 4:9–10).
 

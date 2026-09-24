@@ -29,7 +29,7 @@ The usual diagnosis is a communication problem, and the usual cure is technique.
 
 That is where silence enters, and the argument of this essay is that we have misunderstood it. We treat silence as the absence of communication, the neutral state a marriage falls back into when the talking stops. In a marriage, silence is itself a message, and it can say three very different things. It can punish. It can protect. It can listen. From across the room the three look identical, and the difference between them is the difference between a marriage being starved and a marriage being kept.
 
-### Three silences that look alike
+## Three silences that look alike
 
 The first is the silence that punishes, known by its common name: the silent treatment. A spouse is hurt or angry, and instead of saying so, withdraws. The answers get short, the shoulder turns, and the room goes cold when the other one walks in. Its message is a verdict, and its power lies in never being spoken, because a verdict that is never spoken can never be answered. The other spouse is left to guess what they did and to work for a thaw on terms no one will name. The punishing silence isn't the absence of speech. It's speech designed so that no reply is possible.
 
@@ -43,7 +43,7 @@ A simple test sorts them: ask what the silence is holding back, and for whose sa
 
 One more distinction has to be drawn plainly. When silence is part of a pattern of control, when it is used to make a spouse afraid, to extract compliance or to punish independence, and especially when it comes alongside other controls over money, friendships or movement, or with threats of any kind, it is no longer a communication problem. It may be emotional abuse, and nothing in Scripture or in this essay asks anyone to endure it. If you recognize your home in that description, call the National Domestic Violence Hotline at 1-800-799-7233, and tell someone you trust. What follows is written for marriages that have gone quiet, not homes that have become unsafe.
 
-### The case for keeping quiet
+## The case for keeping quiet
 
 The spouse who goes quiet deserves a fair hearing, because that spouse is often the most self-aware person in the house. Put the case in the form such a spouse would sign. Some people grew up in homes where words were weapons, and they know what they're capable of saying when cornered. They have watched thirty seconds of heat do damage that took years to heal. So they go quiet, not to punish, but because they don't trust the mouth they have when they're angry. They would rather be accused of coldness than be guilty of cruelty.
 
@@ -57,7 +57,7 @@ There's a particular cowardice here that I recognize in myself, so I can't write
 
 Some went silent for a harder reason: the last time they said the tender thing, it was used against them a week later. That is real, and it shouldn't be waved away with a verse. The answer is to say that too: I want to tell you the real thing, and the last time I did it came back at me, and I need to know that won't happen again. That is also speech, and it repairs the conditions every other conversation depends on.
 
-### What James knew about the tongue
+## What James knew about the tongue
 
 To see why silence is never neutral, you have to see what speech is, and Scripture's answer begins before anyone exists to talk to. "And God said, 'Let there be light,' and there was light" (Genesis 1:3). We are made in the image of a God who creates by speaking, and we are addressed before we ever answer. That's why words carry such weight among us. We aren't transmitting data. We are doing, in a small and creaturely way, what God does when he makes and blesses.
 
@@ -71,7 +71,7 @@ Proverbs shows what the healed tongue sounds like. "Death and life are in the po
 
 Paul's subject in Ephesians 4 is a body growing up together. "Rather, speaking the truth in love, we are to grow up in every way into him who is the head, into Christ" (Ephesians 4:15). The Greek is a single participle, something like *truthing in love*. It forbids using honesty as a weapon and forbids using love as an excuse for cowardice. The brutal spouse tells the truth and skips the love; the conflict-avoidant spouse keeps the love and skips the truth. Both are lying, in opposite directions. Then Paul gives the reason silence can be a sin: "Therefore, having put away falsehood, let each one of you speak the truth with his neighbor, for we are members one of another" (Ephesians 4:25). Truth-telling is required because of membership. You don't hide things from your own hand, and falsehood includes the silence that lets someone go on believing the hurt was forgotten and the distance isn't there. Paul's test for every word follows: "Let no corrupting talk come out of your mouths, but only such as is good for building up, as fits the occasion, that it may give grace to those who hear" (Ephesians 4:29). By that measure the punishing silence fails on every count.
 
-### How we lost the habit of attention
+## How we lost the habit of attention
 
 The trouble of the heart runs through every generation. But the modern marriage meets it under particular conditions, and they have a history that begins well before the phone in your pocket.
 
@@ -85,7 +85,7 @@ None of this is a case for nostalgia. The husband of 1955 hidden behind the morn
 
 Simone Weil saw the stakes before any of these machines existed. In a 1942 letter to the poet Joë Bousquet she called attention the rarest and purest form of generosity. In her essay on school studies, collected in *Waiting for God* (1951), she argued that love of neighbor in its fullness comes down to being able to ask another person what they are going through, and she recalled the old Grail legend, in which the vessel belongs to the first one who asks the wounded king that question. In the story the knight's failure isn't a lack of courage. He doesn't ask. A great many marriages are failing the same way. No one has betrayed anyone. No one has asked.
 
-### Listening as the first debt of love
+## Listening as the first debt of love
 
 Bonhoeffer wrote *Life Together* in 1938, after the Gestapo had closed the underground seminary he led at Finkenwalde, and his chapter on what Christians owe one another sets listening near the top. The first service we owe others, he argued, is to listen to them; just as love for God begins with listening to his Word, love for a brother begins with learning to listen to him. He warned against listening with half an ear, an impatient attention that presumes it already knows what the other will say and is only waiting to answer. And he drew a conclusion that should unsettle any spouse who prays more easily than he listens: whoever can no longer listen to his brother will soon no longer be listening to God either.
 
@@ -101,7 +101,7 @@ The second discipline belongs to the speaker: say the real thing. Most marital c
 
 Some of the most important listening has no words in it at all. When Job's friends heard of his ruin, "they sat with him on the ground seven days and seven nights, and no one spoke a word to him, for they saw that his suffering was very great" (Job 2:13). Everything went wrong once they started explaining. For seven days they got it right, with a presence that didn't fix or explain but stayed.
 
-### Where are you?
+## Where are you?
 
 The first question God asks a human being in Scripture is asked of a man who has gone silent. "But the LORD God called to the man and said to him, 'Where are you?'" (Genesis 3:9). God isn't lost. The man is. And God doesn't accept the silence as the new arrangement. He comes looking, with a question rather than a charge, which leaves room for an answer, and he walks through the hedge of leaves and trees not to shame the man but to draw him back into speech.
 
