@@ -388,3 +388,24 @@ of Dodo. 1 Chronicles 28: David's bloodshed as "many" interpreters read it.
 - 1 Chronicles 13 and 26: Obed-edom's identity described slightly
   differently.
 - 1 Chronicles 29: the Lord's Prayer doxology and verse 11.
+
+## 2 Chronicles
+
+**Corrected.** Introduction: Joash, not Jehoshaphat, repaired the temple;
+Shemaiah also appears in 1 Kings 12:22. 2 Chronicles 4: the second temple
+lacked the first temple's splendor. 2 Chronicles 7: Lebo-hamath probably
+Lebweh in the Beqaa. 2 Chronicles 9: the closing notice adapts 1 Kings
+11:41-43; verses 25-28 "closely echo" 1:14-17. 2 Chronicles 11: Zorah and
+Aijalon added to the fifteen fortresses. 2 Chronicles 12, 14, 22, 25, 28, 29,
+33, 35: references, counts, and overstatements fixed. 2 Chronicles 36:
+2 Kings 24:6 says only that Jehoiakim "rested with his fathers".
+
+**To double-check.**
+- Chronicles last "in the traditional order" (true of the Talmud and most
+  printed Bibles; the Aleppo and Leningrad codices place it first among the
+  Writings).
+- 2 Chronicles 17:3: manuscripts lacking "David".
+- 2 Chronicles 3: Ain Dara's date; 12: Shishak about 925 BC; 34: Ashurbanipal's
+  death (631 or 627 BC).
+- 2 Chronicles 8: Hiram's towns (leans to one view).
+- 2 Chronicles 16: Thiele on Asa's 35th and 36th years (one view of several).
