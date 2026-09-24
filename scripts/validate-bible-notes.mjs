@@ -56,11 +56,15 @@ const forbiddenRe = new RegExp(`\\b(${FORBIDDEN.map((w) => w.replace(/[.*+?^${}(
 function prose(where, text, min, max = 4000) {
   if (typeof text !== "string" || text.trim().length < min) return fail(where, `needs at least ${min} characters (has ${text?.length ?? 0})`);
   if (text.length > max) fail(where, `over ${max} characters`);
-  const m = text.match(forbiddenRe);
-  if (m) fail(where, `forbidden word "${m[1]}"`);
   if (/^\s*[-*•]\s/m.test(text)) fail(where, "bullet list in prose");
   const quotes = [...text.matchAll(/[“"]([^”"]+)[”"]/g)].map((q) => q[1]);
   const outside = text.replace(/[“"][^”"]+[”"]/g, "");
+  // The forbidden list governs our prose, not Scripture: a verbatim BSB
+  // quotation may say "your truth" (Psalm 86:11). Quotes too short to verify
+  // (under three words) are held to the list like prose.
+  const unverified = quotes.filter((q) => norm(q).split(" ").length < 3).join(" ");
+  const m = `${outside} ${unverified}`.match(forbiddenRe);
+  if (m) fail(where, `forbidden word "${m[1]}"`);
   if (outside.includes("!")) fail(where, "exclamation point outside quoted Scripture");
   for (const q of quotes) {
     const n = norm(q);
