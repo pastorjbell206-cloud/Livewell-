@@ -49,3 +49,36 @@ phrase; Isaac's blindness, not darkness, made Jacob's deception possible.
   daughter rests on comparative evidence, not the text.
 - Genesis 24: the camel dating (Sapir-Hen and Ben-Yosef, 2014) is recent and
   debated; it is presented as an open question.
+
+## Genesis 33–50
+
+**Corrected.** Genesis 34: Judith is Scripture for Catholic and Orthodox
+Christians and Apocrypha for Protestants. Genesis 39: chata is "to sin"; the
+"miss a target" sense is rare (Judges 20:16), not the word's literal meaning.
+Genesis 42: the brothers are not said to be armed. Genesis 43: Reuben's
+earlier attempts to save his brothers are acknowledged before Judah's pledge.
+Genesis 45: she'erit is illustrated from Micah 2:12 and Zephaniah 3:13, which
+use it (Isaiah 10 uses she'ar). Genesis 46: Matthew 2:15 applies Hosea 11:1
+to the stay in Egypt. Genesis 47: Rameses is "apparently" Goshen or part of
+it. Genesis 49: the two senses of shevet are noted without building a claim
+on them.
+
+**To double-check.**
+- Genesis 33: the Amarna letters' "seven times and seven times"; Shechem
+  under Labayu; the scribal dots over "kissed him" (33:4).
+- Genesis 36: Papyrus Anastasi VI (about 1200 BC); Faynan copper mining in
+  the tenth century BC; the Vulgate's "hot springs" and the KJV's "mules".
+- Genesis 37, 39, 46: Papyrus Brooklyn 35.1446 (about the eighteenth century
+  BC) and the Beni Hasan painting (about 1890 BC).
+- Genesis 40: the Chester Beatty dream book (thirteenth century BC); royal
+  birthday festivals in later Egyptian texts.
+- Genesis 41: the Famine Stela (Sehel Island, Ptolemaic, Djoser); Aper-El's
+  tomb at Saqqara; the Redford and Kitchen positions.
+- Genesis 43: Herodotus on Egyptians not sharing knives or pots with Greeks.
+- Genesis 44: Hammurabi on theft from temple or palace; oil divination.
+- Genesis 45: the Egyptian title "god's father".
+- Genesis 46: the Dead Sea Scrolls reading of seventy-five in Exodus 1:5.
+- Genesis 49: Justin Martyr on 49:10-11; the Septuagint and Targum Onkelos
+  on "Shiloh".
+- Genesis 50: 110 years as the Egyptian ideal lifespan; about seventy days of
+  embalming.
