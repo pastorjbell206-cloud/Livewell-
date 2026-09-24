@@ -82,3 +82,25 @@ on them.
   on "Shiloh".
 - Genesis 50: 110 years as the Egyptian ideal lifespan; about seventy days of
   embalming.
+
+## Exodus introduction and chapters 1–20
+
+**Corrected.** Egyptian royal inscriptions "rarely if ever" recorded defeats
+(introduction, Exodus 11). Exodus 1: God is not mentioned before verse 17.
+Exodus 2: the Jacob parallel no longer calls Rachel wronged. Exodus 3: "the
+mountain of God" marked as possibly already sacred. Exodus 4: Matthew's use of
+Hosea described as typology, as most read it. Exodus 6: only "redeem" comes
+from family law. Exodus 13: Luke 2 records Jesus' presentation, not a
+redemption payment. Exodus 15: the enemy's six clauses described accurately.
+Exodus 16: the "man hu" question is in verse 15. Exodus 17: "that rock was
+Christ" as Paul is usually read.
+
+**To double-check.**
+- Exodus 1: the painted birth brick from South Abydos (Josef Wegner).
+- Exodus 5: New Kingdom brick-quota records (the Louvre leather roll).
+- Exodus 8: Greta Hort's natural-chain theory of the plagues (late 1950s).
+- Exodus 15: Cross and Freedman on the Song of the Sea's age.
+- Exodus 17: Mishnah Rosh Hashanah 3:8; the Mesha Stele (about 840 BC).
+- Exodus 18: the Talmud's debate over when Jethro came.
+- Exodus 19: Egeria and Jebel Musa; the Justinian date for Saint Catherine's.
+- Exodus 20: Alt on apodictic law; Mendenhall on Hittite treaties (1950s).
