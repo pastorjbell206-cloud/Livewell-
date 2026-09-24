@@ -594,11 +594,6 @@
             "permanent": true
         },
         {
-            "source": "/writing/poor-not-ministry",
-            "destination": "/theology",
-            "permanent": true
-        },
-        {
             "source": "/writing/sabbatical-why-church-should-require",
             "destination": "/leadership",
             "permanent": true
@@ -1425,6 +1420,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/a-day-of-doing-nothing",
+            "destination": "/writing/what-the-sabbath-is-and-why-you-need-it",
+            "permanent": true
+        },
+        {
             "source": "/writing/apologetics-can-a-reasonable-person-believe-in-miracles",
             "destination": "/writing/are-miracles-believable",
             "permanent": true
@@ -1505,6 +1505,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/finding-a-good-church",
+            "destination": "/writing/how-to-find-a-church-worth-joining",
+            "permanent": true
+        },
+        {
             "source": "/writing/flags-in-the-sanctuary",
             "destination": "/writing/the-flag-in-the-sanctuary",
             "permanent": true
@@ -1512,6 +1517,11 @@
         {
             "source": "/writing/forgiveness-without-pretending",
             "destination": "/writing/forgiveness-in-marriage",
+            "permanent": true
+        },
+        {
+            "source": "/writing/fully-god-fully-human",
+            "destination": "/writing/why-the-incarnation-matters",
             "permanent": true
         },
         {
@@ -1627,6 +1637,16 @@
         {
             "source": "/writing/parenting-teaching-kids-to-pray-and-read-scripture",
             "destination": "/writing/family-devotions-authentic",
+            "permanent": true
+        },
+        {
+            "source": "/writing/poor-not-ministry",
+            "destination": "/writing/is-poverty-political-the-bibles-answer",
+            "permanent": true
+        },
+        {
+            "source": "/writing/poor-not-ministry-category",
+            "destination": "/writing/is-poverty-political-the-bibles-answer",
             "permanent": true
         },
         {
@@ -1822,6 +1842,11 @@
         {
             "source": "/writing/why-poverty-political",
             "destination": "/writing/is-poverty-political-the-bibles-answer",
+            "permanent": true
+        },
+        {
+            "source": "/writing/why-young-adults-arent-coming-back",
+            "destination": "/writing/why-people-are-leaving-the-church",
             "permanent": true
         },
         {

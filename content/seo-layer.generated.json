@@ -577,12 +577,6 @@
   "grade": 10.2,
   "excerptGrade": 10.1
  },
- "a-day-of-doing-nothing": {
-  "metaDescription": "Stopping for a full day, no work, no producing, no proving, feels almost impossible to a culture organized around output.",
-  "source": "derived",
-  "grade": 12.3,
-  "excerptGrade": 10.4
- },
  "praying-at-fixed-hours": {
   "metaDescription": "For most of Christian history, believers stopped what they were doing and prayed at set times of the day. They did not wait to feel like it.",
   "source": "derived",
@@ -1182,16 +1176,6 @@
   "source": "derived",
   "grade": 12.4,
   "excerptGrade": 11.7
- },
- "fully-god-fully-human": {
-  "metaDescription": "The claim that Jesus is fully God and fully man sounds like a riddle the church invented to win an argument.",
-  "source": "derived",
-  "grade": 8.9,
-  "excerptGrade": 9,
-  "qa": {
-   "question": "How Can Jesus Be Both God and Human?",
-   "answer": "The claim that Jesus is fully God and fully man sounds like a riddle the church invented to win an argument. It was actually the church refusing to throw away either half of something it could not afford to lose."
-  }
  },
  "what-the-miracles-mean": {
   "metaDescription": "We treat the miracles as proof, divine credentials meant to settle the argument.",
@@ -2477,18 +2461,6 @@
   "grade": 7.4,
   "excerptGrade": 7.4
  },
- "poor-not-ministry-category": {
-  "metaDescription": "The biblical position on the poor is not ambiguous. Somewhere along the way the American church turned it into a department.",
-  "source": "derived",
-  "grade": 9.3,
-  "excerptGrade": 17.7
- },
- "poor-not-ministry": {
-  "metaDescription": "Somewhere in the history of the American church, the poor became a category. Not people. A category.",
-  "source": "derived",
-  "grade": 8.8,
-  "excerptGrade": 8.8
- },
  "poverty-tourism-not-mission": {
   "metaDescription": "They return with photographs. The photographs are often shown in church, sometimes with tears.",
   "source": "derived",
@@ -3753,12 +3725,6 @@
   "grade": 10.9,
   "excerptGrade": 12.6
  },
- "why-young-adults-arent-coming-back": {
-  "metaDescription": "The church has spent two decades trying to make itself more appealing to young adults.",
-  "source": "derived",
-  "grade": 6.8,
-  "excerptGrade": 8
- },
  "is-god-real": {
   "metaDescription": "The question of God's existence deserves more than slogans from either side.",
   "source": "derived",
@@ -3854,12 +3820,6 @@
   "source": "derived",
   "grade": 10.4,
   "excerptGrade": 8.4
- },
- "finding-a-good-church": {
-  "metaDescription": "The search for a good church is not about finding perfection. The person who has been hurt by a church occupies a uniquely painful position.",
-  "source": "derived",
-  "grade": 7.2,
-  "excerptGrade": 8.2
  },
  "family-and-faith-transitions": {
   "metaDescription": "When family says you've lost your mind over faith: Jesus's family in Mark 3, Matthew 10 in context, honoring parents, and persecution versus your own zeal.",
