@@ -1,0 +1,208 @@
+{
+  "note": "The Study Bible's doctrine vocabulary. Chapter notes tag doctrines by id; every id here has a page at /study/bible/doctrines/<id> listing the chapters that teach it. 'page' links the site's full treatment under /theology/doctrine/<page> where one exists.",
+  "doctrines": [
+    {
+      "id": "god",
+      "name": "Who God Is",
+      "page": "god-and-trinity",
+      "summary": "Scripture never argues God into existence; it introduces him. He is the one living God, maker of everything, who is not part of the world he made and yet is present to every part of it. He names himself to Moses as the LORD, the one who is and who keeps his promises, and the whole Bible is the long disclosure of his character.",
+      "terms": "who is god"
+    },
+    {
+      "id": "trinity",
+      "name": "The Trinity",
+      "page": "trinity",
+      "summary": "The church confesses one God in three persons, Father, Son, and Holy Spirit, equal in power and glory and never three gods. The word Trinity is not in the Bible, but the church found the pattern everywhere in it: the Father sends the Son, the Son makes the Father known, and the Spirit gives life and unites believers to both. The Nicene Creed (325, expanded 381) set the confession in the form the church still uses.",
+      "terms": "trinity"
+    },
+    {
+      "id": "attributes",
+      "name": "God's Character: Holiness, Love, Justice",
+      "page": "divine-attributes",
+      "summary": "God's attributes are not parts of him but ways of naming who he is: holy, righteous, faithful, merciful, patient, wise, all-powerful, everywhere present, unchanging. The Bible holds his holiness and his love together; Exodus 34:6-7 is the self-description the rest of the Old Testament quotes most often.",
+      "terms": "holiness of god"
+    },
+    {
+      "id": "creation",
+      "name": "Creation",
+      "page": "creation",
+      "summary": "God made everything that exists, freely and from nothing, and called it good. Creation is not divine and not an accident; it is a gift that depends on God at every moment. Christians disagree about the age of the earth and how to read the days of Genesis 1, but they agree on the confession that God is maker of heaven and earth.",
+      "terms": "creation"
+    },
+    {
+      "id": "humanity",
+      "name": "Humanity and the Image of God",
+      "page": "anthropology",
+      "summary": "Human beings are made in the image of God, male and female, as embodied creatures given dignity, relationship, work, and rule over the earth under God. That image is damaged by sin but never erased, which is why every human life carries weight. Jesus is the true image of God, and salvation restores the image in those united to him.",
+      "terms": "image of god"
+    },
+    {
+      "id": "sin",
+      "name": "Sin and the Fall",
+      "page": "sin",
+      "summary": "Sin is not only breaking rules; it is turning from God to ourselves, which bends every relationship we have. It enters the world in Genesis 3 and spreads through every human heart and society. Scripture names it with many words: missing the mark, rebellion, twistedness, faithlessness. It shows that sin is both something we do and something that has hold of us.",
+      "terms": "sin"
+    },
+    {
+      "id": "providence",
+      "name": "Providence",
+      "page": "providence",
+      "summary": "God does not wind the world up and walk away. He sustains and governs all things, working through ordinary events and even through evil intentions to bring about his purposes. Joseph's words in Genesis 50:20 are the Bible's classic statement of it.",
+      "terms": "providence"
+    },
+    {
+      "id": "sovereignty",
+      "name": "God's Sovereignty and Human Choice",
+      "page": "sovereignty-and-freedom",
+      "summary": "Scripture teaches both that God rules over all things and that human beings make real choices for which they are responsible. Christians have explained how these fit together in different ways (Augustinian and Reformed, Arminian and Wesleyan, Molinist), and the question is second-order. Every tradition holds both truths.",
+      "terms": "sovereignty"
+    },
+    {
+      "id": "covenant",
+      "name": "Covenant",
+      "page": "covenant-frameworks",
+      "summary": "A covenant is a binding relationship sealed by promise and oath. God relates to his people by covenant: with Noah, with Abraham, with Israel at Sinai, with David, and finally the new covenant promised in Jeremiah 31 and sealed in Jesus' blood. Tracing the covenants is one of the surest ways to follow the whole story of the Bible.",
+      "terms": "covenant"
+    },
+    {
+      "id": "law",
+      "name": "The Law",
+      "page": null,
+      "summary": "The law given at Sinai was God's instruction for a redeemed people, a way of life shaped by his holiness, not a ladder to earn rescue. Israel was rescued first and given the law second. The New Testament teaches that Christ fulfills the law, and Christians differ on how its parts apply today. They agree that it still reveals God's character and our need of grace.",
+      "terms": "law"
+    },
+    {
+      "id": "holiness",
+      "name": "Holiness and Worship",
+      "page": null,
+      "summary": "God is holy, set apart in his purity and majesty, and he makes a people holy to belong to him. The tabernacle, the temple, the sacrifices, and the feasts all teach how sinful people may live near a holy God. Worship is the right response to who he is, and it reaches beyond ritual into justice and daily obedience.",
+      "terms": "worship"
+    },
+    {
+      "id": "revelation",
+      "name": "God Speaks: Revelation and Scripture",
+      "page": "scripture",
+      "summary": "God makes himself known in creation, in his acts in history, in the words of the prophets and apostles, and supremely in his Son. Scripture is the written witness he gave, breathed out by God and written by human authors in their own languages, styles, and settings. It carries his authority.",
+      "terms": "scripture"
+    },
+    {
+      "id": "messiah",
+      "name": "The Messiah",
+      "page": "christology",
+      "summary": "The Old Testament plants promises of a coming deliverer: the offspring of the woman, the son of David, the servant who suffers, the son of man who receives the kingdom. The New Testament proclaims that these promises meet in Jesus of Nazareth, the Christ, meaning the anointed one. The church confesses him as fully God and fully man (Chalcedon, 451).",
+      "terms": "jesus christ"
+    },
+    {
+      "id": "atonement",
+      "name": "Sacrifice and Atonement",
+      "page": "soteriology",
+      "summary": "Atonement is how sinners are made one with God again. Israel's sacrifices taught that sin is deadly serious and that God himself provides a way to cover it. The New Testament presents the death of Jesus as the sacrifice those offerings pointed toward. Christians use several biblical pictures for it at once: substitution, ransom, victory over evil, reconciliation.",
+      "terms": "atonement"
+    },
+    {
+      "id": "salvation",
+      "name": "Salvation by Grace Through Faith",
+      "page": "soteriology",
+      "summary": "Salvation is God's rescue of sinners from sin, death, and judgment into life with him. It is a gift of grace received by faith, not wages earned. Scripture describes it in many ways: justification (declared right with God), adoption, new birth, redemption, sanctification, and final glory.",
+      "terms": "grace"
+    },
+    {
+      "id": "spirit",
+      "name": "The Holy Spirit",
+      "page": "holy-spirit",
+      "summary": "The Spirit is the Lord and giver of life, present at creation, empowering judges, kings, and prophets, and promised by the prophets for all God's people. At Pentecost he is poured out on the church. He unites believers to Christ, makes them new, gives gifts for the body, and shapes them into Christ's likeness.",
+      "terms": "holy spirit"
+    },
+    {
+      "id": "kingdom",
+      "name": "The Kingdom of God",
+      "page": null,
+      "summary": "The kingdom of God is his rule breaking into a rebel world to set it right. The Old Testament longs for it and the prophets foresee it. Jesus announces that it has come near in himself. It is already present in his work and his people, and not yet complete until he returns.",
+      "terms": "kingdom of god"
+    },
+    {
+      "id": "church",
+      "name": "The People of God and the Church",
+      "page": "church",
+      "summary": "God's purpose has always been a people: Israel, called to be a light to the nations, and then the church, Jew and Gentile together in Christ, called his body, his bride, and his temple. The church is not a club of the finished but a gathered household of the forgiven, sent into the world.",
+      "terms": "church"
+    },
+    {
+      "id": "sacraments",
+      "name": "Baptism and the Lord's Supper",
+      "page": "sacraments",
+      "summary": "Jesus gave his church two practices: baptism, the sign of entry into Christ, and the Lord's Supper, the meal that proclaims his death until he comes. They have roots in circumcision, the Passover, and the covenant meals of Israel. Christians differ on who should be baptized and on how Christ is present in the Supper, which are second-order questions.",
+      "terms": "baptism"
+    },
+    {
+      "id": "judgment",
+      "name": "Judgment and Justice",
+      "page": null,
+      "summary": "Because God is good, he does not ignore evil. He judges nations and individuals in history and will judge the world in righteousness at the end. His justice includes protecting the poor, the widow, the orphan, and the stranger. The prophets hold his people to that standard first.",
+      "terms": "justice"
+    },
+    {
+      "id": "suffering",
+      "name": "Suffering and Evil",
+      "page": "problem-of-evil",
+      "summary": "Scripture does not hide suffering. It gives whole books to it: Job, Lamentations, and many of the Psalms. It lets the sufferer protest, refuses easy answers, and places human pain inside a story in which God himself enters suffering in Christ and promises to wipe every tear away.",
+      "terms": "suffering"
+    },
+    {
+      "id": "wisdom",
+      "name": "Wisdom",
+      "page": null,
+      "summary": "Biblical wisdom is skill in living well in God's world, beginning with the fear of the LORD. Proverbs teaches how life usually goes, Job and Ecclesiastes show where that pattern breaks, and the New Testament presents Christ as the wisdom of God.",
+      "terms": "wisdom"
+    },
+    {
+      "id": "prayer",
+      "name": "Prayer and Lament",
+      "page": null,
+      "summary": "Prayer is speaking to the God who speaks. The Psalms give every kind of prayer words: praise, thanksgiving, confession, and lament that argues with God in faith. Jesus taught his disciples to pray, prayed himself, and the Spirit helps believers pray when they have no words.",
+      "terms": "prayer"
+    },
+    {
+      "id": "faith",
+      "name": "Faith and Faithfulness",
+      "page": null,
+      "summary": "Faith is trust in God and his promises, not a leap in the dark. Abraham believed God and it was counted to him as righteousness. Throughout Scripture that trust shows itself in faithful obedience, endurance under trial, and hope in what God has not yet done.",
+      "terms": "faith"
+    },
+    {
+      "id": "repentance",
+      "name": "Repentance and Forgiveness",
+      "page": null,
+      "summary": "Repentance is turning back to God, a change of mind and direction and not only regret. The prophets call Israel to return, and Jesus and the apostles call everyone to repent and believe. God's forgiveness is freely given and costly to him, and those forgiven are called to forgive.",
+      "terms": "forgiveness"
+    },
+    {
+      "id": "idolatry",
+      "name": "Idolatry",
+      "page": null,
+      "summary": "Idolatry is giving to anything created the trust, love, and worship that belong to God alone. In Scripture it ranges from carved images to greed, which Paul calls idolatry. The prophets show that we become like what we worship.",
+      "terms": "idolatry"
+    },
+    {
+      "id": "mission",
+      "name": "The Nations and Mission",
+      "page": null,
+      "summary": "From the promise to Abraham that all families of the earth would be blessed, God's purpose reaches every nation. Israel was to be a light to the nations, Jesus sends his disciples to make disciples of all nations, and Revelation ends with every tribe and tongue before the throne.",
+      "terms": "mission"
+    },
+    {
+      "id": "family",
+      "name": "Marriage, Family, and Sexuality",
+      "page": null,
+      "summary": "Scripture begins with a marriage and ends with a wedding. It honors marriage between a man and a woman, singleness, and the household as places where faithfulness is learned. It tells the truth about broken families, including the patriarchs' own, and Paul reads marriage as a picture of Christ and the church.",
+      "terms": "marriage"
+    },
+    {
+      "id": "hope",
+      "name": "Resurrection and the Last Things",
+      "page": "last-things",
+      "summary": "Christian hope is not escape from the body but the resurrection of the body and a renewed creation. Christ's bodily resurrection is the first fruits of it. Christians share the confession that he will come again to judge the living and the dead, though they differ on the millennium and the order of end-time events.",
+      "terms": "resurrection"
+    }
+  ]
+}

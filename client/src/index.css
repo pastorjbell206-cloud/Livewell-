@@ -449,6 +449,12 @@ footer{background:var(--charcoal);color:var(--bone);padding:60px 0 40px}
   .article-body p:first-of-type::first-letter{font-size:3.6em}
 }
 
+/* Study Bible note sections: a +/− affordance on the <details> summaries. */
+.sb-section > summary { list-style: none; }
+.sb-section > summary::-webkit-details-marker { display: none; }
+.sb-section > summary::after { content: "+"; margin-left: auto; padding-left: 16px; font-family: var(--U); font-size: 22px; font-weight: 400; color: var(--mustard-text); }
+.sb-section[open] > summary::after { content: "\2212"; }
+
 @media print {
   .nav-wrap, .sticky-nav, .announce, footer, .no-print { display: none !important; }
   body { font-size: 12pt; line-height: 1.6; color: #000; background: #fff; }

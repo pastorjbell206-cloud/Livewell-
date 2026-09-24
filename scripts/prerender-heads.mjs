@@ -730,6 +730,123 @@ function writeRoute(template, route, head, bodyHtml = "") {
 }
 
 /**
+ * The Study Bible (client/public/bible/*): every book, every chapter, the
+ * eleven acts of the story, and the doctrine pages are param routes, so the
+ * route-table pass cannot reach them. Each gets its own head and, for
+ * crawlers, its introduction or study notes and (for a chapter) the Berean
+ * Standard Bible text as plain HTML. The client replaces #root on mount.
+ */
+function prerenderStudyBible(template) {
+  const BIBLE = path.join(REPO_ROOT, "client/public/bible");
+  const read = (rel) => { try { return JSON.parse(fs.readFileSync(path.join(BIBLE, rel), "utf8")); } catch { return null; } };
+  const books = read("books.json");
+  if (!books) return 0;
+  const story = read("story.json");
+  const doctrines = read("doctrines.json")?.doctrines ?? [];
+  const index = read("notes-index.json") ?? { titles: {}, doctrines: {} };
+  let storyline = [];
+  try { storyline = JSON.parse(fs.readFileSync(path.join(REPO_ROOT, "client/public/theology/biblical-theology-storyline.json"), "utf8")).acts; } catch { /* acts keep their ids */ }
+  const para = (t) => String(t ?? "").split(/\n\s*\n/).filter(Boolean).map((x) => `<p>${escapeHtml(x)}</p>`).join("\n");
+  const section = (h, body) => (body ? `<section><h2>${escapeHtml(h)}</h2>\n${body}</section>` : "");
+  const root = { name: "The Study Bible", path: "/study/bible" };
+  const trim = (t, n = 158) => { const x = String(t ?? "").replace(/\s+/g, " ").trim(); return x.length > n ? `${x.slice(0, n - 1).replace(/\s+\S*$/, "")}…` : x; };
+  const titleOf = (slug, c) => index.titles?.[slug]?.[c - 1] ?? null;
+  let n = 0;
+  const emit = (routePath, title, description, crumbs, body, type = "website") => {
+    const url = `${SITE_URL}${routePath}`;
+    const head = buildHead({ title, description, url, image: ogImageUrl(title), type, schemas: [breadcrumbSchema([{ name: "Home", path: "" }, ...crumbs])] });
+    writeRoute(template, { path: routePath }, head, `<article>\n${body}\n</article>`);
+    n++;
+  };
+
+  for (const b of books) {
+    const intro = read(`notes/${b.slug}/intro.json`);
+    const chapters = Array.from({ length: b.chapters }, (_, i) => i + 1)
+      .map((c) => `<li><a href="/study/bible/${b.slug}/${c}">${escapeHtml(`${b.name} ${c}`)}${titleOf(b.slug, c) ? `: ${escapeHtml(titleOf(b.slug, c))}` : ""}</a></li>`)
+      .join("\n");
+    const bookBody = [
+      `<h1>${escapeHtml(b.name)}</h1>`,
+      intro ? `<p>${escapeHtml(intro.tagline)}</p>` : "",
+      intro ? section("What this book is", para(intro.overview)) : "",
+      intro ? section("How it is built", `<ol>${intro.structure.map((x) => `<li><strong>${escapeHtml(`${b.name} ${x.range}: ${x.title}`)}</strong>. ${escapeHtml(x.summary)}</li>`).join("\n")}</ol>`) : "",
+      section("The chapters", `<ol>\n${chapters}\n</ol>`),
+      intro ? section("Who wrote it", para(intro.author)) : "",
+      intro ? section("When", para(intro.date)) : "",
+      intro ? section("The world it was written in", para(intro.setting)) : "",
+      intro ? section("Why it was written", para(intro.purpose)) : "",
+      intro ? section("Where it sits in the story", para(intro.story)) : "",
+      intro ? section(b.testament === "OT" ? "How it points to Christ" : "What it shows of Christ", para(intro.christ)) : "",
+      intro ? section("Themes to follow", intro.themes.map((t) => `<h3>${escapeHtml(t.title)}</h3><p>${escapeHtml(t.body)}</p>`).join("\n")) : "",
+      intro ? section("How to read it well", para(intro.reading)) : "",
+    ].join("\n");
+    emit(
+      `/study/bible/${b.slug}`,
+      intro ? `${b.name}: Introduction, Outline, and Study Notes` : `${b.name}: Study Notes, Hebrew and Greek`,
+      intro ? trim(intro.tagline) : `Every chapter of ${b.name} with study notes and the original language beneath every word.`,
+      [root, { name: b.name, path: `/study/bible/${b.slug}` }],
+      bookBody
+    );
+
+    for (let c = 1; c <= b.chapters; c++) {
+      const note = read(`notes/${b.slug}/${c}.json`);
+      const text = read(`ch/${b.slug}/${c}.json`);
+      const verses = (text?.verses ?? []).filter((v) => v.t).map((v) => `<li value="${v.v}">${escapeHtml(v.t)}</li>`).join("\n");
+      const lang = b.testament === "OT" ? "Hebrew" : "Greek";
+      const body = [
+        `<h1>${escapeHtml(`${b.name} ${c}`)}${note ? `: ${escapeHtml(note.title)}` : ""}</h1>`,
+        note ? `<p>${escapeHtml(note.summary)}</p>` : "",
+        verses ? section(`${b.name} ${c} (Berean Standard Bible)`, `<ol>\n${verses}\n</ol>`) : "",
+        note ? section("Where we are in the story", para(note.story)) : "",
+        note ? section("The historical setting", para(note.historical)) : "",
+        note ? section("The world behind the text", para(note.cultural)) : "",
+        note ? section("How the chapter is built", `${para(note.literary)}\n<ol>${note.outline.map((o) => `<li>${escapeHtml(`${c}:${o.v} ${o.t}`)}</li>`).join("")}</ol>`) : "",
+        note ? section("What it teaches", note.doctrines.map((d) => `<p><a href="/study/bible/doctrines/${escapeHtml(d.id)}">${escapeHtml(doctrines.find((x) => x.id === d.id)?.name ?? d.id)}</a>. ${escapeHtml(d.note)}</p>`).join("\n")) : "",
+        note ? section(`Key ${lang} words`, note.words.map((w) => `<p>${escapeHtml(w.note)}</p>`).join("\n")) : "",
+        note ? section(b.testament === "OT" ? "How it points to Christ" : "What it shows of Christ", para(note.christ)) : "",
+        note?.hard ? section("A hard question", `<p><em>${escapeHtml(note.hard.q)}</em></p>\n${para(note.hard.a)}`) : "",
+        note ? section("For reflection or a group", `<ol>${note.questions.map((q) => `<li>${escapeHtml(q)}</li>`).join("")}</ol>`) : "",
+        `<nav><a href="/study/bible/${b.slug}">${escapeHtml(b.name)}</a>${c > 1 ? ` · <a href="/study/bible/${b.slug}/${c - 1}">${escapeHtml(`${b.name} ${c - 1}`)}</a>` : ""}${c < b.chapters ? ` · <a href="/study/bible/${b.slug}/${c + 1}">${escapeHtml(`${b.name} ${c + 1}`)}</a>` : ""}</nav>`,
+      ].join("\n");
+      emit(
+        `/study/bible/${b.slug}/${c}`,
+        note ? `${b.name} ${c} Study Notes \u2013 ${note.title}` : `${b.name} ${c} Study Notes, Hebrew and Greek`,
+        note ? trim(note.summary) : `${b.name} ${c} with study notes, cross-references, and the ${lang} beneath every word.`,
+        [root, { name: b.name, path: `/study/bible/${b.slug}` }, { name: `${b.name} ${c}`, path: `/study/bible/${b.slug}/${c}` }],
+        body,
+        "article"
+      );
+    }
+  }
+
+  const bookName = (slug) => books.find((b) => b.slug === slug)?.name ?? slug;
+  for (const act of story?.acts ?? []) {
+    const line = storyline.find((l) => l.id === act.id) ?? {};
+    const links = act.path.flatMap((r) => Array.from({ length: r.to - r.from + 1 }, (_, k) => r.from + k).map((c) =>
+      `<li><a href="/study/bible/${r.book}/${c}">${escapeHtml(`${bookName(r.book)} ${c}`)}${titleOf(r.book, c) ? `: ${escapeHtml(titleOf(r.book, c))}` : ""}</a></li>`)).join("\n");
+    emit(
+      `/study/bible/story/${act.id}`,
+      `${line.title ?? act.id}: ${line.act ?? "The Story of the Bible"}`,
+      trim(line.turning ?? act.watch),
+      [root, { name: "The Story of the Bible", path: "/study/bible/story" }, { name: line.title ?? act.id, path: `/study/bible/story/${act.id}` }],
+      [`<h1>${escapeHtml(line.title ?? act.id)}</h1>`, `<p>${escapeHtml(act.dates)}</p>`, section("What happens", para(line.summary)), section("The world behind it", para(act.world)), section("What to watch for", para(act.watch)), section("Read it, chapter by chapter", `<ol>\n${links}\n</ol>`)].join("\n")
+    );
+  }
+
+  for (const d of doctrines) {
+    const keys = index.doctrines?.[d.id] ?? [];
+    const links = keys.map((k) => { const [slug, c] = k.split("/"); return `<li><a href="/study/bible/${slug}/${c}">${escapeHtml(`${bookName(slug)} ${c}`)}${titleOf(slug, +c) ? `: ${escapeHtml(titleOf(slug, +c))}` : ""}</a></li>`; }).join("\n");
+    emit(
+      `/study/bible/doctrines/${d.id}`,
+      `${d.name}: What the Bible Teaches`,
+      trim(d.summary),
+      [root, { name: "The Doctrines of the Bible", path: "/study/bible/doctrines" }, { name: d.name, path: `/study/bible/doctrines/${d.id}` }],
+      [`<h1>${escapeHtml(d.name)}</h1>`, para(d.summary), links ? section("Where the Bible teaches it", `<ol>\n${links}\n</ol>`) : ""].join("\n")
+    );
+  }
+  return n;
+}
+
+/**
  * A SELECT list of the wanted columns that the live table actually has, each
  * aliased to the name the code reads. Production's tables have drifted from
  * drizzle/schema.ts (no posts.coverImage, no posts.readingTimeMinutes), and a
@@ -909,6 +1026,10 @@ async function main() {
     }
   }
   console.log(`[prerender] injected crawlable body content into ${withBody} library pages`);
+
+  const studyBible = prerenderStudyBible(template);
+  wrote += studyBible;
+  console.log(`[prerender] wrote ${studyBible} Study Bible pages (books, chapters, acts, doctrines)`);
 
   // Route-table extraction: every static route whose component declares
   // <SEOMeta title="..." description="..." /> as string literals gets a real
