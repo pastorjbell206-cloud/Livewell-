@@ -300,12 +300,12 @@
         },
         {
             "source": "/writing/spouse-wishes-knew-parsonage",
-            "destination": "/writing/protecting-marriage-in-ministry",
+            "destination": "/writing/protecting-your-marriage-from-work",
             "permanent": true
         },
         {
             "source": "/writing/protecting-marriage-ministry-demands",
-            "destination": "/writing/protecting-marriage-in-ministry",
+            "destination": "/writing/protecting-your-marriage-from-work",
             "permanent": true
         },
         {
@@ -385,7 +385,7 @@
         },
         {
             "source": "/writing/your-marriage-is-ministry-too",
-            "destination": "/writing/protecting-marriage-in-ministry",
+            "destination": "/writing/protecting-your-marriage-from-work",
             "permanent": true
         },
         {
@@ -1505,6 +1505,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/marriage-communication-that-works",
+            "destination": "/writing/what-silence-costs-a-marriage",
+            "permanent": true
+        },
+        {
             "source": "/writing/marriage-empty-nest",
             "destination": "/writing/when-you-married-someone-you-no-longer-recognize",
             "permanent": true
@@ -1527,6 +1532,11 @@
         {
             "source": "/writing/married-someone-no-longer-recognize",
             "destination": "/writing/when-you-married-someone-you-no-longer-recognize",
+            "permanent": true
+        },
+        {
+            "source": "/writing/protecting-marriage-in-ministry",
+            "destination": "/writing/protecting-your-marriage-from-work",
             "permanent": true
         },
         {

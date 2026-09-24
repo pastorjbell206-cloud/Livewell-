@@ -261,12 +261,6 @@
    "answer": "The heaviest work in many marriages is not the chores but the watch: the anticipating and remembering that leaves no trace when it is done well. Children multiply it, and Scripture has always called it work that both spouses owe."
   }
  },
- "protecting-marriage-in-ministry": {
-  "metaDescription": "The work that destroys a pastor's marriage looks exactly like faithfulness.",
-  "source": "derived",
-  "grade": 8,
-  "excerptGrade": 7.6
- },
  "the-resentment-in-your-marriage": {
   "metaDescription": "What resentment in marriage means, when a grievance is fair and when it turns to bitterness, and how Scripture moves from honest speech to forgiveness.",
   "source": "rewrite",
@@ -280,10 +274,14 @@
   "excerptGrade": 6.9
  },
  "what-silence-costs-a-marriage": {
-  "metaDescription": "The marriage rarely dies in the fight. It dies in the silence afterward, the one that started to feel like peace.",
-  "source": "derived",
-  "grade": 4.2,
-  "excerptGrade": 4.2
+  "metaDescription": "Why the silent treatment wounds a marriage, when silence protects or listens instead, and what Scripture, Bonhoeffer and Gottman teach about talking again.",
+  "source": "rewrite",
+  "grade": 12.4,
+  "excerptGrade": 8.8,
+  "qa": {
+   "question": "Where are you?",
+   "answer": "The first question God asks a human being in Scripture is asked of a man who has gone silent. \"But the LORD God called to the man and said to him, 'Where are you?'\" (Genesis 3:9). God isn't lost. The man is. And God doesn't accept the silence as the new arrangement. He comes looking, with a question rather than a charge, which leaves room for an answer, and he walks through the hedge of leaves and trees not to shame the man but to draw him back into speech."
+  }
  },
  "what-the-bible-says-about-submission": {
   "metaDescription": "Ephesians 5 read in context: mutual submission, headship defined by the cross, both main Christian views, and why submission never requires enduring abuse.",
@@ -734,10 +732,14 @@
   }
  },
  "divorce-and-remarriage": {
-  "metaDescription": "The church has carried this question for two thousand years without setting it down. I will not hand you a verdict. I will refuse to pretend it is light.",
-  "source": "derived",
-  "grade": 3.2,
-  "excerptGrade": 5.3
+  "metaDescription": "Biblical grounds for divorce and remarriage: Moses, Jesus, and Paul read in context, four Christian views, and why no view requires staying in danger.",
+  "source": "rewrite",
+  "grade": 11.5,
+  "excerptGrade": 9.4,
+  "qa": {
+   "question": "What Does the Bible Say About Divorce and Remarriage?",
+   "answer": "Asked whether a man could divorce his wife for any cause, Jesus tightened the law of Moses and named an exception in the same breath. Read in context, the texts are harder than the culture wants and more merciful than the church has often been."
+  }
  },
  "does-god-actually-exist": {
   "metaDescription": "A pastor who spent years as an atheist on why he stopped: not because someone won an argument, but because his own view could not pay its bills.",
@@ -3538,10 +3540,10 @@
   "excerptGrade": 14.6
  },
  "protecting-your-marriage-from-work": {
-  "metaDescription": "A man told me, with no apparent grief, that his marriage had become a logistics partnership.",
-  "source": "derived",
-  "grade": 8.4,
-  "excerptGrade": 14.5
+  "metaDescription": "When work is hurting your marriage: why some jobs demand everything, how good work becomes an idol, and what the Bible's two reasons for rest teach.",
+  "source": "rewrite",
+  "grade": 11.3,
+  "excerptGrade": 6.9
  },
  "forgiveness-in-marriage": {
   "metaDescription": "What it means to forgive your spouse: how forgiveness differs from reconciliation and trust, what repentance owes, and why it never requires danger.",
@@ -3549,17 +3551,15 @@
   "grade": 13.4,
   "excerptGrade": 8.5
  },
- "marriage-communication-that-works": {
-  "metaDescription": "Most couples do not have a communication problem, they have a translation problem, and the difference is the whole game.",
-  "source": "derived",
-  "grade": 11.1,
-  "excerptGrade": 11.1
- },
  "marriage-money-and-marriage": {
-  "metaDescription": "Money fights are almost never about money, they are about fear and control and worth, and a budget cannot fix a thing the budget cannot see.",
-  "source": "derived",
-  "grade": 11.3,
-  "excerptGrade": 11.3
+  "metaDescription": "Why Christian couples fight about money, what Jesus meant by mammon, how to weigh joint or separate bank accounts, and when money control becomes abuse.",
+  "source": "rewrite",
+  "grade": 12.6,
+  "excerptGrade": 12.3,
+  "qa": {
+   "question": "Joint or separate accounts?",
+   "answer": "Here the practical question arrives: should a married couple combine everything, or keep separate accounts? Nothing in this section is financial or legal advice. Property law differs by state (nine states treat most marital property as community property), and the specifics of accounts, debts and estates belong with a qualified professional."
+  }
  },
  "marriage-intimacy": {
   "metaDescription": "What 1 Corinthians 7 and the Song of Songs teach about sex in marriage, why Christian marriages go sexless, and how couples can seek help without pressure.",
