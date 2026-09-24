@@ -1465,6 +1465,16 @@
             "permanent": true
         },
         {
+            "source": "/writing/apologetics-can-a-reasonable-person-believe-in-miracles",
+            "destination": "/writing/are-miracles-believable",
+            "permanent": true
+        },
+        {
+            "source": "/writing/apologetics-where-does-morality-come-from",
+            "destination": "/writing/can-you-be-good-without-god",
+            "permanent": true
+        },
+        {
             "source": "/writing/apologetics-why-does-god-allow-evil",
             "destination": "/writing/if-god-is-good-why-suffering",
             "permanent": true
@@ -1625,6 +1635,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/teen-can-you-actually-trust-the-bible",
+            "destination": "/writing/why-trust-the-bible",
+            "permanent": true
+        },
+        {
             "source": "/writing/teen-does-science-disprove-god",
             "destination": "/writing/faith-and-science",
             "permanent": true
@@ -1632,6 +1647,11 @@
         {
             "source": "/writing/teen-if-god-is-good-why-is-there-suffering",
             "destination": "/writing/if-god-is-good-why-suffering",
+            "permanent": true
+        },
+        {
+            "source": "/writing/teen-isnt-jesus-just-one-way-among-many",
+            "destination": "/writing/is-jesus-really-the-only-way",
             "permanent": true
         },
         {

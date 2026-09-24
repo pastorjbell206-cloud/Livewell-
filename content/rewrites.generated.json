@@ -1,6 +1,8 @@
 {
  "rewritten": [
   "amos-american-church",
+  "are-miracles-believable",
+  "can-you-be-good-without-god",
   "christian-sexual-ethic",
   "church-sex-more-than-money",
   "covenant-vs-contract-what-marriage-is",
@@ -16,6 +18,7 @@
   "how-the-religious-right-was-built",
   "how-to-talk-kids-faith-doubt",
   "interfaith-marriage",
+  "is-jesus-really-the-only-way",
   "is-poverty-political-the-bibles-answer",
   "marriage-intimacy",
   "marriage-money-and-marriage",
@@ -24,6 +27,7 @@
   "parenting-letting-them-fail",
   "parenting-raising-kids-in-a-screen-age",
   "parenting-talking-about-sex-and-identity",
+  "prophetic-imagination",
   "prosperity-gospel-is-not-the-gospel",
   "protecting-your-marriage-from-work",
   "purity-culture-and-its-wreckage",
@@ -31,6 +35,8 @@
   "raising-kids-who-think",
   "raising-sons-manhood",
   "religious-trauma-is-real",
+  "sexual-abuse-crisis-in-the-church",
+  "silence-and-solitude",
   "the-flag-in-the-sanctuary",
   "the-great-awakenings-and-the-making-of-american-faith",
   "the-resentment-in-your-marriage",
@@ -46,7 +52,8 @@
   "why-people-are-leaving-the-church",
   "why-the-church-lost-the-culture-war",
   "why-the-incarnation-matters",
-  "why-there-are-so-many-christian-denominations"
+  "why-there-are-so-many-christian-denominations",
+  "why-trust-the-bible"
  ],
  "merged": {
   "not-persecuted-seduced-crisis-american-christianity": "the-persecution-we-invented",
@@ -58,6 +65,8 @@
   "apologetics-why-does-god-allow-evil": "if-god-is-good-why-suffering",
   "teen-does-science-disprove-god": "faith-and-science",
   "teen-it-is-okay-to-doubt": "can-you-have-faith-and-doubt",
+  "apologetics-can-a-reasonable-person-believe-in-miracles": "are-miracles-believable",
+  "apologetics-where-does-morality-come-from": "can-you-be-good-without-god",
   "the-covenant-you-didnt-understand": "covenant-vs-contract-what-marriage-is",
   "exvangelical-when-leaving-isnt-losing-faith": "deconstruction-is-not-destruction",
   "parenting-discipline-that-forms-the-heart": "discipline-without-domination",
@@ -71,6 +80,7 @@
   "fighting-fair-is-not-enough": "healthy-conflict-marriage",
   "when-politics-replaced-theology": "how-the-religious-right-was-built",
   "how-to-raise-children-in-the-faith": "how-to-talk-kids-faith-doubt",
+  "teen-isnt-jesus-just-one-way-among-many": "is-jesus-really-the-only-way",
   "why-poverty-political": "is-poverty-political-the-bibles-answer",
   "sexless-marriage-conversation": "marriage-intimacy",
   "parenting-spiritual-milestones-by-age": "parenting-family-rhythms-that-form-faith",
@@ -95,6 +105,7 @@
   "the-rise-of-the-nones": "why-people-are-leaving-the-church",
   "done-with-church-not-jesus": "why-people-are-leaving-the-church",
   "incarnation-changes-everything": "why-the-incarnation-matters",
-  "non-denominational-doesnt-mean-no-tradition": "why-there-are-so-many-christian-denominations"
+  "non-denominational-doesnt-mean-no-tradition": "why-there-are-so-many-christian-denominations",
+  "teen-can-you-actually-trust-the-bible": "why-trust-the-bible"
  }
 }

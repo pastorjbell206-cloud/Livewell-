@@ -6,13 +6,13 @@ Search engines and answer engines see a second layer beside every essay: a meta 
 
 | Measure | Value |
 |---|---|
-| Essays with a description | 631 |
-| Hand-written descriptions | 19 |
-| Derived from the essay's own sentences | 612 |
-| Essays with question-and-answer data | 103 |
+| Essays with a description | 627 |
+| Hand-written descriptions | 18 |
+| Derived from the essay's own sentences | 609 |
+| Essays with question-and-answer data | 97 |
 | Average reading grade, descriptions | 8.1 |
 | Average reading grade, original standfirsts | 9.5 |
-| Derived descriptions at grade 12 or above (hand-rewrite queue) | 75 |
+| Derived descriptions at grade 12 or above (hand-rewrite queue) | 72 |
 
 ## Hand-rewrite queue
 
@@ -34,7 +34,6 @@ Derived descriptions that still read at college level. Each is true to the essay
 | the-sin-we-stopped-naming | 15.5 | Progressive Christianity recovered structural sin and called it justice. |
 | 47-engaging-the-nones-what-research-tells-us-about-reaching-the-religiously-unaffiliated | 15.4 | The "nones", people who claim no religious affiliation when surveyed, are the fastest-growing religious demographic in the United States. |
 | bivocational-pastors-get-right | 15.2 | An enormous share of American pastors, in many denominations, most of them, serve their congregations on part-time or bivocational terms. |
-| why-trust-the-bible | 15.1 | Translated through telephone games, edited by councils with agendas, full of contradictions, that's the story most people inherit about the Bible. |
 | 3-illustrating-everything-with-success-stories | 15 | It implies that faithful application of biblical truth reliably produces good outcomes in visible, timely ways. |
 | 34-what-a-healthy-pastor-referral-network-actually-looks-like | 15 | Every pastor makes referrals, to counselors, to other ministries, to specialists in areas outside their competence. |
 | 42-the-unreached-people-groups-closest-to-you-that-youve-never-considered | 15 | When the church talks about unreached people groups, the conversation almost always faces outward and away, toward the ethnic and linguistic communities. |
@@ -52,7 +51,6 @@ Derived descriptions that still read at college level. Each is true to the essay
 | scripture-meditation | 14 | At some point in pastoral ministry, and I cannot tell you precisely when it happened to me, the Bible became a resource rather than a word addressed to me. |
 | 29-what-the-scandals-in-the-church-are-teaching-us-about-accountability | 13.9 | The past decade has been one of the most sobering in the modern history of the American church when it comes to leadership accountability. |
 | unreached-people-groups-closest-to-you | 13.9 | Count the apartment complex where recent immigrants from Somalia live in quiet and considerable isolation. |
-| apologetics-can-a-reasonable-person-believe-in-miracles | 13.9 | Modern people are taught that miracles are the one thing an educated person cannot accept, and that confidence rests on an argument worth examining. |
 | 33-the-case-for-doing-city-wide-church-together-at-least-once-a-year | 13.5 | There is a moment that most pastors who have experienced a genuine city-wide worship gathering can describe with unusual precision. |
 | how-christianity-became-an-empire | 13.5 | The story of how a persecuted Jewish sect became the official religion of the Roman Empire, and what was gained and lost in the transformation. |
 | what-christians-can-learn-from-buddhism | 13.5 | The contemplative traditions of Christianity and Buddhism have been carrying on a quiet conversation for centuries. |
@@ -75,7 +73,6 @@ Derived descriptions that still read at college level. Each is true to the essay
 | the-theology-of-time | 12.6 | Every productivity system assumes you do not have enough time to get everything done. |
 | calvinism-and-arminianism | 12.6 | The oldest and most consequential debate in Protestant theology is also the most misunderstood. |
 | 21-when-is-it-time-to-revitalize-and-when-is-it-time-to-replant | 12.5 | The language of church revitalization has been one of the most discussed topics in pastoral circles for the past decade, and for good reason. |
-| apologetics-where-does-morality-come-from | 12.5 | Almost everyone believes some things are really wrong and not just unpopular, and that belief is harder to account for than most people admit. |
 | apologetics-how-can-a-loving-god-allow-hell | 12.5 | The doctrine of hell strikes most people as the cruelest thing Christianity teaches, and the objection deserves a real answer rather than a flinch. |
 | right-side-of-history | 12.4 | "The right side of history" is the most successful piece of secular theology of our age, and the American church swallowed it whole. |
 | your-body-is-not-a-cage | 12.4 | We have learned to treat the body as a vehicle the real self drives around, a thing to be optimized, overridden, or escaped. |

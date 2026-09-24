@@ -606,10 +606,10 @@
   "excerptGrade": 7.6
  },
  "silence-and-solitude": {
-  "metaDescription": "Sixteen hundred years ago, a handful of Christians walked into the desert to be alone and quiet.",
-  "source": "derived",
-  "grade": 9.1,
-  "excerptGrade": 11.1
+  "metaDescription": "What the desert fathers, Benedict's Rule, Elijah and Jesus teach about silence and solitude, why we flee them, and how solitude differs from loneliness.",
+  "source": "rewrite",
+  "grade": 14.4,
+  "excerptGrade": 11.5
  },
  "why-christians-fast": {
   "metaDescription": "Fasting was once as ordinary in Christian life as prayer. Then it quietly disappeared.",
@@ -634,14 +634,10 @@
   }
  },
  "are-miracles-believable": {
-  "metaDescription": "It took me a long time to notice that my proof was a definition doing all the work. I used to think I had a proof.",
-  "source": "derived",
-  "grade": 3.5,
-  "excerptGrade": 9.7,
-  "qa": {
-   "question": "Are Miracles Believable?",
-   "answer": "For years I carried what I took to be a proof against miracles, borrowed from a dead Scottish philosopher, and I loved the clean feeling of the case being closed. It took me a long time to notice that my proof was a definition doing all the work."
-  }
+  "metaDescription": "Hume's argument against miracles at full strength, the replies of Lewis, Swinburne, Earman and Keener, and what the Gospels say miracles are for.",
+  "source": "rewrite",
+  "grade": 12.4,
+  "excerptGrade": 14.3
  },
  "baptism-mode-and-subjects": {
   "metaDescription": "Two churches on the same street baptize with the same water and cannot agree on who should stand in it, or how deep.",
@@ -654,14 +650,10 @@
   }
  },
  "can-you-be-good-without-god": {
-  "metaDescription": "You can be good without God. I was, for years, and so are people you love.",
-  "source": "derived",
-  "grade": 0.8,
-  "excerptGrade": 4.1,
-  "qa": {
-   "question": "Can You Be Good Without God?",
-   "answer": "You can be good without God. I was, for years, and so are people you love. The question that kept its grip on me was quieter: what makes cruelty actually wrong, and not just a thing I happen to hate."
-  }
+  "metaDescription": "Yes, unbelievers can be good. The harder question is where morality comes from: Plato's Euthyphro, Kant, Darwin, Nietzsche and the law on the heart.",
+  "source": "rewrite",
+  "grade": 7.3,
+  "excerptGrade": 11.4
  },
  "can-you-lose-your-salvation": {
   "metaDescription": "The question does not usually arrive in a classroom. The church has answered it two ways for centuries. I am not going to close it for you.",
@@ -830,13 +822,13 @@
   }
  },
  "is-jesus-really-the-only-way": {
-  "metaDescription": "A former atheist on the claim he once found obscene: that Jesus is the only way. The objection at full strength, and the one question it cannot survive.",
-  "source": "hand",
-  "grade": 5.9,
-  "excerptGrade": 10.7,
+  "metaDescription": "Is Jesus the only way to God? John Hick's pluralism at full strength, Rahner and Newbigin, Acts 4:12 and John 14:6 in context, and those who never heard.",
+  "source": "rewrite",
+  "grade": 4.6,
+  "excerptGrade": 10.1,
   "qa": {
    "question": "Is Jesus Really the Only Way?",
-   "answer": "For most of my life I was an atheist, and of all the things the church claimed, that Jesus is the only way struck me as not merely improbable but obscene. Then I noticed the one question the parable of the blind men and the elephant cannot survive being asked."
+   "answer": "For most of my life I was an atheist, and of all the things the church claimed, that Jesus is the only way struck me as not merely improbable but obscene. But the parable of the blind men and the elephant cannot survive one question: who is telling it?"
   }
  },
  "just-war-and-pacifism": {
@@ -940,13 +932,13 @@
   }
  },
  "why-trust-the-bible": {
-  "metaDescription": "Translated through telephone games, edited by councils with agendas, full of contradictions, that's the story most people inherit about the Bible.",
-  "source": "derived",
-  "grade": 15.1,
+  "metaDescription": "Can you trust the Bible? An honest look at manuscripts, the Dead Sea Scrolls, how the canon formed, the Gospels as history, contradictions and inerrancy.",
+  "source": "rewrite",
+  "grade": 8.2,
   "excerptGrade": 11.1,
   "qa": {
-   "question": "Why Would Anyone Trust the Bible?",
-   "answer": "Translated through telephone games, edited by councils with agendas, full of contradictions, that's the story most people inherit about the Bible. Almost none of it survives contact with the actual scholarship. Here is what the evidence really shows, objections included."
+   "question": "Who decided which books are in the Bible?",
+   "answer": "The second piece of the folklore is more dramatic. In Dan Brown's The Da Vinci Code (2003), a character explains that Constantine commissioned a new Bible, that Jesus was voted into godhood at the Council of Nicaea in 325, and that earlier gospels portraying him as a mortal man were suppressed. Millions of readers took it as history. Nicaea was called to settle the Arian controversy over whether the Son is fully God, and its creed and canons say nothing about which books belong in the New Testament."
   }
  },
  "women-in-ministry": {
@@ -2640,10 +2632,10 @@
   "excerptGrade": 14.2
  },
  "prophetic-imagination": {
-  "metaDescription": "Walter Brueggemann spent a career arguing that the most radical thing the church can do is imagine differently.",
-  "source": "derived",
-  "grade": 11.1,
-  "excerptGrade": 11.1
+  "metaDescription": "A summary of Walter Brueggemann's The Prophetic Imagination: royal consciousness, grief and hope, its fair critiques, and what it asks of the church today.",
+  "source": "rewrite",
+  "grade": 13.4,
+  "excerptGrade": 10.4
  },
  "prophetic-pastor": {
   "metaDescription": "And when they talk about pastoral ministry, they usually mean someone who comes to the bedside, who holds the grieving, who offers presence in the dark.",
@@ -3155,16 +3147,6 @@
   "grade": 10,
   "excerptGrade": 10
  },
- "apologetics-where-does-morality-come-from": {
-  "metaDescription": "Almost everyone believes some things are really wrong and not just unpopular, and that belief is harder to account for than most people admit.",
-  "source": "derived",
-  "grade": 12.5,
-  "excerptGrade": 12.5,
-  "qa": {
-   "question": "Where Do Right and Wrong Even Come From?",
-   "answer": "Almost everyone believes some things are really wrong and not just unpopular, and that belief is harder to account for than most people admit."
-  }
- },
  "apologetics-why-is-god-hidden": {
   "metaDescription": "If God wanted to be known, it seems He could simply show Himself, and His silence is one of the heaviest reasons people stop believing.",
   "source": "derived",
@@ -3203,16 +3185,6 @@
   "qa": {
    "question": "Hasn't the Church Done Terrible Things?",
    "answer": "The crimes committed under the banner of Christ are real and many, and any honest defense of the faith has to own them before it says anything else."
-  }
- },
- "apologetics-can-a-reasonable-person-believe-in-miracles": {
-  "metaDescription": "Modern people are taught that miracles are the one thing an educated person cannot accept, and that confidence rests on an argument worth examining.",
-  "source": "derived",
-  "grade": 13.9,
-  "excerptGrade": 13.9,
-  "qa": {
-   "question": "Can a Reasonable Person Believe in Miracles?",
-   "answer": "Modern people are taught that miracles are the one thing an educated person cannot accept, and that confidence rests on an argument worth examining."
   }
  },
  "apologetics-isnt-faith-believing-without-evidence": {
@@ -3709,26 +3681,6 @@
    "answer": "Everything Christians claim hangs on one event in one weekend, and you are allowed to ask whether it actually happened."
   }
  },
- "teen-can-you-actually-trust-the-bible": {
-  "metaDescription": "You have heard that the Bible was copied, changed, and voted on by men with an agenda, so here is what the evidence actually shows.",
-  "source": "derived",
-  "grade": 10.7,
-  "excerptGrade": 10.7,
-  "qa": {
-   "question": "Can You Actually Trust the Bible?",
-   "answer": "You have heard that the Bible was copied, changed, and voted on by men with an agenda, so here is what the evidence actually shows."
-  }
- },
- "teen-isnt-jesus-just-one-way-among-many": {
-  "metaDescription": "Saying one religion is true sounds arrogant in a world of many faiths, so here is why Christians say it anyway and how to say it without sneering.",
-  "source": "derived",
-  "grade": 11.3,
-  "excerptGrade": 11.3,
-  "qa": {
-   "question": "Isn't Jesus Just One Way Among Many?",
-   "answer": "Saying one religion is true sounds arrogant in a world of many faiths, so here is why Christians say it anyway and how to say it without sneering."
-  }
- },
  "what-the-bible-says-about-the-poor-and-the-stranger": {
   "metaDescription": "A man sleeps under the overpass two blocks from our church. I have driven past him on my way to preach about him.",
   "source": "derived",
@@ -4126,10 +4078,10 @@
   "excerptGrade": 7.6
  },
  "sexual-abuse-crisis-in-the-church": {
-  "metaDescription": "The abuse crisis is not a Catholic problem or a Protestant problem. It is a power problem.",
-  "source": "derived",
-  "grade": 6.5,
-  "excerptGrade": 8.1
+  "metaDescription": "What the abuse reports found in Catholic, Baptist and Anglican churches, why cover-ups happen, what Scripture says, and how a church must respond.",
+  "source": "rewrite",
+  "grade": 11.8,
+  "excerptGrade": 12.9
  },
  "why-the-church-lost-the-culture-war": {
   "metaDescription": "Where the phrase culture war came from, why Christians lost it, and what Hunter, Taylor, MacIntyre and 1 Peter show about witness without cultural power.",
