@@ -1535,6 +1535,21 @@
             "permanent": true
         },
         {
+            "source": "/writing/parenting-discipline-that-forms-the-heart",
+            "destination": "/writing/discipline-without-domination",
+            "permanent": true
+        },
+        {
+            "source": "/writing/parenting-spiritual-milestones-by-age",
+            "destination": "/writing/parenting-family-rhythms-that-form-faith",
+            "permanent": true
+        },
+        {
+            "source": "/writing/parenting-teaching-kids-to-pray-and-read-scripture",
+            "destination": "/writing/family-devotions-authentic",
+            "permanent": true
+        },
+        {
             "source": "/writing/protecting-marriage-in-ministry",
             "destination": "/writing/protecting-your-marriage-from-work",
             "permanent": true

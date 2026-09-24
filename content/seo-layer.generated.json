@@ -304,16 +304,16 @@
   }
  },
  "discipline-without-domination": {
-  "metaDescription": "Most of what passes for Christian discipline is the management of the parent's anger wearing the costume of the child's correction.",
-  "source": "derived",
-  "grade": 11.7,
-  "excerptGrade": 8
+  "metaDescription": "What biblical discipline means: paideia in Ephesians and Hebrews, the rod in Proverbs read as wisdom, the spanking debate, and correcting without anger.",
+  "source": "rewrite",
+  "grade": 13.4,
+  "excerptGrade": 10.3
  },
  "family-devotions-authentic": {
-  "metaDescription": "The reason your family devotions feel like a performance is that you turned a meal into a program.",
-  "source": "derived",
-  "grade": 9.8,
-  "excerptGrade": 8.2
+  "metaDescription": "How to do family devotions and teach kids to pray and read the Bible: what Scripture asks of a home, what history shows, and what tired parents can keep.",
+  "source": "rewrite",
+  "grade": 11.6,
+  "excerptGrade": 10.8
  },
  "how-to-talk-kids-faith-doubt": {
   "metaDescription": "You are afraid your uncertainty will infect your child. The thing that actually infects them is watching you hide it.",
@@ -3577,47 +3577,29 @@
    "answer": "Depression in a marriage is a medical illness and a spiritual burden at once. The church has often met it with explanations, when the sick spouse needs treatment and presence and the well spouse needs help of their own. The vow was written for this season."
   }
  },
- "parenting-discipline-that-forms-the-heart": {
-  "metaDescription": "The word discipline shares a root with disciple, and we have spent a generation forgetting that.",
-  "source": "derived",
-  "grade": 9.8,
-  "excerptGrade": 16.8
- },
  "parenting-raising-kids-in-a-screen-age": {
-  "metaDescription": "Any parent who approaches this subject as a person who has it handled is either lying or has not looked closely. We are all inside this.",
-  "source": "derived",
-  "grade": 6.7,
-  "excerptGrade": 16.3
+  "metaDescription": "When should a child get a smartphone? Haidt and his critics, Postman, McLuhan and Scripture on screens, attention and formation, and why parents go first.",
+  "source": "rewrite",
+  "grade": 5.8,
+  "excerptGrade": 7.9
  },
  "parenting-talking-about-sex-and-identity": {
-  "metaDescription": "There is no such age. The parent never feels ready. So the first thing to surrender is the idea that you control the timing.",
-  "source": "derived",
-  "grade": 3.3,
-  "excerptGrade": 17.9
- },
- "parenting-teaching-kids-to-pray-and-read-scripture": {
-  "metaDescription": "No one sits an infant down and teaches him grammar. The devotional is not the problem.",
-  "source": "derived",
-  "grade": 4.5,
-  "excerptGrade": 18.6
+  "metaDescription": "How Christian parents can talk with kids about sex, the body and gender identity: Scripture, church history, purity culture's failures, and lasting love.",
+  "source": "rewrite",
+  "grade": 14.4,
+  "excerptGrade": 7.5
  },
  "parenting-letting-them-fail": {
-  "metaDescription": "I want to name the thing we do, because it does not feel like harm while we are doing it. It feels like love. The forgotten lunch driven up to the school.",
-  "source": "derived",
-  "grade": 2.2,
-  "excerptGrade": 12.3
- },
- "parenting-spiritual-milestones-by-age": {
-  "metaDescription": "I am wary of this whole exercise before I begin it, and I want to say why, because the wariness is part of the wisdom.",
-  "source": "derived",
-  "grade": 10.7,
-  "excerptGrade": 17.7
+  "metaDescription": "Why overprotective parenting leaves kids fragile, how to tell danger from difficulty, and what Scripture says about suffering, providence and letting go.",
+  "source": "rewrite",
+  "grade": 15.5,
+  "excerptGrade": 9.9
  },
  "parenting-family-rhythms-that-form-faith": {
-  "metaDescription": "We have it backwards, most of us, about how faith gets into a child. And those moments are real and they matter. But they are not the main road.",
-  "source": "derived",
-  "grade": 2,
-  "excerptGrade": 17.8
+  "metaDescription": "Spiritual milestones for children by age, and why Sabbath, feast, table and the church year form faith more deeply than a checklist of things to achieve.",
+  "source": "rewrite",
+  "grade": 11.3,
+  "excerptGrade": 7.6
  },
  "why-pastors-are-leaving-ministry": {
   "metaDescription": "A man I trained for the ministry called me last spring to tell me he was done. Not falling, not in scandal, not in doubt about the existence of God.",
