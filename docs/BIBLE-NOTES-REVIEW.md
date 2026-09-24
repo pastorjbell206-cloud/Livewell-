@@ -583,3 +583,21 @@ proclaims the Jubilee.
 - Isaiah 14: the "Sin of Sargon" text on his unrecovered body.
 - Isaiah 19: Josephus (Antiquities 13) on Onias and Leontopolis.
 - Introduction: the Great Isaiah Scroll (about 125 BC).
+
+## Isaiah 34–66
+
+**Checked and sound.** The Hezekiah narratives against 2 Kings 18-20 and
+Sennacherib's annals; Cyrus (the Cylinder, the Nabonidus Chronicle) and the
+authorship question; the four Servant Songs with Jewish and Christian
+readings stated fairly (Duhm, the Targum, Rashi and Kimhi, the Great Isaiah
+Scroll at 53:11); every New Testament use; the new heavens and new earth.
+
+**Corrected.** Isaiah 39, 47, 51, 60: word counts and verse placements.
+Isaiah 57: the extent of sexual fertility rites stated as debated. Isaiah 66:
+Lud "probably" Lydia; the Valley of Hinnom's rubbish-dump tradition (Kimhi,
+about 1200) replaced with the child-sacrifice link and Gehenna.
+
+**To double-check.**
+- Isaiah 46: Xerxes and the Babylon statue (Herodotus 1.183; "debated").
+- Isaiah 56: where the temple trading took place (inferred).
+- Isaiah 42, 61: 61:1-3 as a fifth Servant Song; the Targum on 42:1.
