@@ -218,3 +218,19 @@ Synoptics present the Last Supper as Passover, John's chronology differs.
 - Deuteronomy 14: pig bones as an identity marker (hedged, debated).
 - Deuteronomy 6: the Nash Papyrus dated by palaeography.
 - Deuteronomy 1, 3: Tophel, Laban, Dizahab, Edrei, Kadesh-barnea sites.
+
+## Deuteronomy 18–34
+
+**Corrected.** Deuteronomy 18: Ahaz and Manasseh both used the fire rite;
+the sorcery list belongs to Manasseh (2 Kings 21:6); qasam heads the occult
+practices after child sacrifice. Deuteronomy 20: the hard question no longer
+claims the church never used these texts to justify violence; it names the
+misuse. Deuteronomy 30: Daniel 9 is set in Babylon. Deuteronomy 31: Josiah's
+discovery "about 622 BC". Deuteronomy 33: Reuben's saying is one verse.
+Deuteronomy 34: Genesis 50:13 added for Jacob's burial.
+
+**To double-check.**
+- Deuteronomy 20: Assyrian reliefs of orchard-cutting at sieges.
+- Deuteronomy 27: Zertal dated the Ebal structure to the late thirteenth
+  and twelfth centuries BC.
+- Deuteronomy 33: Laish (Dan) lies beside Bashan rather than in it.
