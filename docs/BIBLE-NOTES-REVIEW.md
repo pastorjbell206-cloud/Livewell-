@@ -927,3 +927,25 @@ Corinthians 11: C. K. Barrett's moderate view of the super-apostles added.
 - 1 Corinthians 11: church buildings two centuries later (Dura-Europos).
 - 1 Corinthians 8: meat and the poor (Theissen; Meggitt disputes).
 - The crisis-line wording (988 is US-only): one standard wording site-wide.
+
+## Hebrews through Jude
+
+**Checked and sound.** Hebrews' authorship views (Clement, Origen,
+Tertullian, Luther, Harnack); the warning passages (Reformed, Arminian,
+Schreiner and Caneday, Free Grace, Catholic and Orthodox); Melchizedek
+(11QMelchizedek, Philo, the rabbis); the incense altar; James 2 and Paul
+(Luther 1522, Trent 1547); the three readings of 1 Peter 3:18-22; 2 Peter's
+authorship (Eusebius, Jerome, Athanasius 367, P72); the Johannine comma; Jude,
+1 Enoch, and the Assumption of Moses; paths to help.
+
+**Corrected.** Hebrews introduction: the synagogue "tolerated" rather than
+legally recognized. Hebrews 8: kainos and neos overlap (12:24). Hebrews 12,
+13: dates aligned (Tertullian early third century; Hebrews 70s or 80s on the
+later view). James 3, 5: the list in 3:17; aleipho and chrio. 1 Peter 1:
+paroikia. 1 John 3: teknon by usage. 2 John: shortest by verse count. Jude:
+"kept in (or for) Jesus Christ".
+
+**To double-check.**
+- 1 Peter introduction: Silas and Silvanus as forms of one name.
+- Hebrews 13:20 as the only explicit mention of Jesus' resurrection.
+- 3 John: euodoo argued partly from etymology.
