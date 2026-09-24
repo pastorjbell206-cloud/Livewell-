@@ -689,3 +689,29 @@ families"; the wooden altar's two identifications. Ezekiel 44: the Carites
 - Ezekiel 29, 31: the fragmentary year-37 text (568/567 BC).
 - Ezekiel 38: Gog and Gugu of Lydia.
 - Ezekiel 45: the holy district 10,000 cubits (Hebrew) or 20,000 (Greek).
+
+## Daniel and Hosea
+
+**Checked and sound.** Daniel's dating debate and four-kingdom readings; the
+Babylonian, Persian, Seleucid, and Ptolemaic history; the seventy weeks (three
+readings, no modern nations); Hosea's eighth-century history; Hosea 2's hard
+question and its warning against misuse.
+
+**Corrected.** Daniel introduction: the 605 BC deportation "by Daniel's
+account". Daniel 3, 4, 10, 12: wording, counts, references. Daniel 6:
+Ugbaru (the general) and Gubaru (the governor) are two people. Daniel 7:
+Belshazzar's first year about 553 BC. Daniel 9: offerings may have continued
+at the site (Jeremiah 41:5). Daniel 11: refrain references; the
+dispensational school described accurately. Hosea introduction, 4: "sexual
+immorality" (sacred prostitution is debated); Jesus twice quotes 6:6 and also
+10:8. Hosea 1: "wife of harlotries" rather than zonah. Hosea 2: Achan's theft
+at Jericho; Romans 9:25-26. Hosea 7, 10: thirty years of six kings; twenty
+years of four assassinations; the verse 14 reading. Hosea 9, 11: a flight to
+Egypt "may well" have happened; Matthew's use of Hosea 11:1.
+
+**To double-check.**
+- Daniel introduction: 4QDan^c (about 125 BC).
+- Daniel 8: Cumont's astrological proposal; William Miller's 1843-44 dates
+  (October 1844 came from Samuel Snow).
+- Hosea 2: God paying the bride price (a common reading, stated as fact).
+- Hosea 3: the barley-silver arithmetic and the homer's size.
