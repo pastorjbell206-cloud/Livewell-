@@ -515,3 +515,24 @@ counts. Psalm 137: the note no longer speaks in the first person.
 - Psalms 122, 124, 131: "of David" missing in some Septuagint manuscripts.
 - Psalm 136: Pharaoh's "strong arm" (Hoffmeier's proposal).
 - Psalm 129: charash as one root or two.
+
+## Proverbs
+
+**Checked and sound.** The authorship headings (Solomon, the men of
+Hezekiah, the words of the wise, Agur, Lemuel, Massa); no proverb is
+presented as an unconditional promise anywhere in the book.
+
+**Corrected.** Introduction, Proverbs 23: Amenemope usually dated to the late
+second millennium BC (some later); "thirty" in 22:20 uncertain. Proverbs 2, 7,
+8, 10, 14, 15, 17, 18, 22: accuracy and precision fixes. Proverbs 6, 12, 23:
+word notes no longer built on etymology. Proverbs 13: 14:3 uses a different
+word; Mark 10:45 connection softened. Proverbs 20: Psalm 51 "ascribed" to
+David. Proverbs 25: Hezekiah more than two centuries after Solomon. Proverbs
+28: Mark 7:9-13 added. Proverbs 30: verse 4 clarified; the Lord's Prayer link
+marked thematic. Proverbs 31: the queen mother named for Judah's kings.
+
+**To double-check.**
+- Amenemope's date window (about 1300-1000 BC).
+- Proverbs 31: the gebirah's official role (debated); Eshet Chayil sung by
+  the family as well as husbands.
+- Proverbs 24: the weighed heart (Egyptian image, "may").
