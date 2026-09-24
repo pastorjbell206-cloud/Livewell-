@@ -861,3 +861,24 @@ Lazarus as the last and greatest sign. John 12: the citadel of Jerusalem;
 - John 5: the fifth colonnade at the St. Anne pools (questioned).
 - John 18: the Passover release and Mishnah Pesahim 8:6.
 - John 21: 1 Peter 5:2 and Petrine authorship (contested).
+
+## Romans
+
+**Checked and sound.** Claudius's edict (about AD 49, earlier view noted);
+Sanders, Dunn, Wright, Luther, and Calvin on "works of the law"; the readings
+of 1:18-32, Romans 7, Romans 9 and 11:26, Romans 13 (no partisan
+application), and Romans 16; hilasterion (Morris, Dodd, the mercy seat).
+
+**Corrected.** Introduction: 3:21-26 no longer takes a side on pistis
+Christou ("faith in", or "the faithfulness of"). Romans 1: the Wisdom of
+Solomon's date and setting. Romans 2: Deuteronomy 1:17 and 10:17. Romans 3:
+"Certainly not" at verses 4 and 6; dikaioo six times. Romans 5: paraptoma and
+parabasis. Romans 9: porosis at 11:7, 25; Augustine's later writings (from
+the 390s). Romans 15: elpis. Romans 16: Junia read as a woman "with rare
+exceptions" (Epiphanius). Romans 7: Kümmel spelled correctly.
+
+**To double-check.**
+- Romans 12: the coals read as shame (Augustine, Jerome) and as judgment
+  (partly Chrysostom).
+- Romans 16: the Erastus inscription (contested).
+- Romans 5: eph' ho as "because" (Fitzmyer differs).
