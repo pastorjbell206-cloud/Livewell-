@@ -3,6 +3,24 @@
 Newest first. One entry per working session: what changed, what broke, what
 is next. Decisions made without asking are recorded with their reason.
 
+## 2026-09-24 — The Study Bible, Phase 1
+
+**Changed.** `docs/STUDY-BIBLE-PROMPT.md` is the expert board's prompt: seats, rules, sources, five phases, and gates. Phase 1 is built:
+- **`/study/bible`**: all 66 books and 1,189 chapters in the Berean Standard Bible (public domain).
+- **Interlinear:** a Hebrew and Greek interlinear for every verse, from STEPBible TAHOT and TAGNT (Tyndale House, CC BY 4.0).
+- **Word panel:** tap any word for its grammar in plain language (TEHMC and TEGMC), its dictionary entry (TBESH and TBESG, 21,232 entries), and its occurrence count with the first 60 places, in canonical order.
+- **Verse panel:** tap any verse for its words, its 12 strongest cross-references (OpenBible.info, CC BY), and every LiveWell item that treats that chapter.
+- **Greek editions:** where the major Greek editions differ, the words are marked and the editions named.
+- **Omitted verses:** the 16 verses the critical text omits (Acts 8:37 and the rest) are shown, with their later-edition Greek and a plain note.
+- **Data:** `scripts/build-bible.mjs` builds the data into `client/public/bible/` (46 MB, one file per chapter, loaded one at a time). `scripts/validate-bible.mjs` gates CI.
+- **Entry points:** the Study page leads with it, the Study menu links it, and the sitemap lists it.
+
+**Verified.** Typecheck clean. 329 tests pass, 4 of them new. Every validator passes. Lint shows 0 errors. Build and prerender are clean. Axe finds no serious issues on the index, Genesis 1, Psalm 23, John 1, John 3:16, and Acts 8:37, at 1440 and 390 wide, in reading and interlinear modes, with the word and verse panels open.
+
+**Known and stated.** Three Old Testament verses have no original words: Hebrew and English number them differently. 15 Strong's numbers, out of 16,958 used, have no brief-lexicon entry, and the panel says so.
+
+**Next (Phases 2–5 of the prompt).** Word-study pages with the full LSJ lexicon, and search by grammar. Person and place pages from TIPNR. Authored book introductions and context notes, through James's "save it". Reading with the church. A study method and sermon builder.
+
 ## 2026-09-24 — Elite Site Prompt, Phases A–D finished; the blank-page safeguard
 
 **Changed.**
