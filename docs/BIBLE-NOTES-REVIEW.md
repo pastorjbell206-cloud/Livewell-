@@ -451,3 +451,27 @@ seven days of silence no longer made a type of the incarnation. Job 5: 1 Peter
 - Job 42: interpreters reading the undoubled children as a hint of life
   beyond death (no source named).
 - Job 12, 28: YHWH once in the dialogue (12:9); Adonai only at 28:28.
+
+## Psalms introduction and Psalms 1–50
+
+**Checked and sound.** The messianic psalms (2, 16, 22, 40, 45) and every New
+Testament citation of them.
+
+**Corrected.** Introduction: about two-thirds of the psalms name a person in
+the heading and about a quarter have none; Psalm 110:1; Psalm 110 near the
+opening of Book 5. Psalm 6, 13: "How long?" first asked of God at 6:3 (of
+people at 4:2). Psalm 20: the Papyrus Amherst 63 relationship stated as
+debated. Psalm 25: qavah's meaning rests on usage, not the "cord" link.
+Psalm 31, 34, 37, 43, 44, 49: accuracy fixes (Naomi's family; "harp" in the
+BSB; Sheol three times). Psalm 39: a path to help added. Psalm 42: sharing
+darkness with a friend, pastor, or doctor added.
+
+**To double-check.**
+- Introduction: the heading counts (73 David, 12 Asaph, 11 Korah).
+- Psalm 15: the Talmud (Makkot) on David's eleven qualities.
+- Psalm 20: Papyrus Amherst 63 (about fourth century BC; Horus).
+- Psalm 21: the Targum's "King Messiah".
+- Psalm 22:16: the Nahal Hever fragment and other versions reading a verb.
+- Psalm 24: Mishnah Tamid and the Septuagint heading (first day of the week).
+- Psalm 29: Ugarit found in 1928, tablets in 1929.
+- Psalm 40:6: the Septuagint's "a body You prepared".
