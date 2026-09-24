@@ -141,3 +141,36 @@ counted as a word.
 - Leviticus 15: ancient restrictions on menstruating women at sacred sites.
 - Leviticus 9: the Ketef Hinnom scrolls as the oldest objects inscribed with
   biblical words (depends on Barkay's dating).
+
+## Leviticus 16–27, the Numbers introduction, Numbers 1–6
+
+**Needs James's ruling: Leviticus 18:22 (the hard question).** The note sets
+out the historic reading (still the teaching of the Catholic and Orthodox
+churches and most Protestant churches) and the revisionist readings, each in
+its own terms, and ends by saying the question divides churches today. It
+does not say where LiveWell lands. `CLAUDE.md`'s contested-doctrine standard
+asks the author to name where he lands and why; James should decide the
+closing line.
+
+**Corrected.** Leviticus 18: the incest laws do not forbid cousin or uncle
+marriage; verse 23 addresses women too; the exile echoes cited (Ezra 9:11,
+Ezekiel 36:17-19); Paul's use of verse 5 marked as the common reading.
+Leviticus 19: the man in Luke 10 is a wounded traveler, not said to be a Jew.
+Leviticus 22: the Lord's Prayer shares verse 32's concern rather than
+deriving from it. Leviticus 23: Exodus 12:23's own wording (the destroyer).
+Leviticus 24: "continually" is in the Hebrew, not the BSB; Jesus and Stephen
+"condemned" for blasphemy. Leviticus 27: a clean animal vowed for sacrifice
+cannot be redeemed. Numbers 4: Tutankhamun's tomb discovered in 1922; massa's
+link to "oracle" softened. Numbers 5: Exodus 34:14 uses a related word, not
+qinah. Numbers 6: Luke 24:50 as many readers see it.
+
+**To double-check.**
+- Leviticus 17: the Talmudic view that the chapter covers only animals meant
+  for sacrifice.
+- Leviticus 18: Paul's Greek word in 1 Corinthians 6:9 as formed from the
+  Septuagint of Leviticus.
+- Leviticus 26: Esarhaddon's treaty curses (672 BC), iron sky and bronze
+  ground.
+- Numbers 3: the Talmud (Bekhorot) and Rashi on the 300 extra Levites.
+- Numbers introduction: Kadesh-barnea as base "for much of the forty years"
+  (one reading of Deuteronomy 1:46).
