@@ -601,3 +601,23 @@ about 1200) replaced with the child-sacrifice link and Gehenna.
 - Isaiah 46: Xerxes and the Babylon statue (Herodotus 1.183; "debated").
 - Isaiah 56: where the temple trading took place (inferred).
 - Isaiah 42, 61: 61:1-3 as a fifth Servant Song; the Targum on 42:1.
+
+## Jeremiah introduction and chapters 1–26
+
+**Checked and sound.** Kings and dates throughout; the confessions; the three
+counts of the seventy years; chapter 20's path to help.
+
+**Corrected.** Jeremiah 1: 1:9 "recalls" Deuteronomy 18:18; Paul "sent to the
+nations". Jeremiah 9: "boast" five times. Jeremiah 10, 25: the Greek text
+about one-seventh shorter. Jeremiah 15: 15:10 laments his birth (the curse is
+20:14). Jeremiah 16: the grieving voice in 9:1. Jeremiah 18: the potter's
+wheel. Jeremiah 23: the refrain; the "burden" pun as the Greek reading.
+Jeremiah 24: those "living in the land of Egypt". Jeremiah 25: an unsupported
+custom removed. Jeremiah 26: Micah cited by name as legal precedent (one of
+very few such places); Uriah's return; Shaphan's family "stand by" Jeremiah.
+
+**To double-check.**
+- Jeremiah 11, 20: Luke 23:34's place in the original text is disputed.
+- Jeremiah 17, 23: the Greek lacks 17:1-4 and moves 23:7-8 (could be noted).
+- Jeremiah 22: Aharoni and Ramat Rahel (debated).
+- Jeremiah 13: the distance to the Euphrates; the spring near Parah.
