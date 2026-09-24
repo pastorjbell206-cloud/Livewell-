@@ -174,3 +174,26 @@ qinah. Numbers 6: Luke 24:50 as many readers see it.
 - Numbers 3: the Talmud (Bekhorot) and Rashi on the 300 extra Levites.
 - Numbers introduction: Kadesh-barnea as base "for much of the forty years"
   (one reading of Deuteronomy 1:46).
+
+## Numbers 7–36
+
+**Corrected.** Numbers 7: 1 Chronicles 15:13-15 added for carrying the ark.
+Numbers 10: Paul applies Psalm 68 to the ascension; Hobab's first answer is
+recorded. Numbers 11: God repeats "burden" in verse 17. Numbers 12: the third
+complaint since Sinai. Numbers 17: the Testimony is the tablets in the ark.
+Numbers 18: Genesis 28:22 uses a related verb, not ma'aser. Numbers 19: the
+purification verb in verses 12, 13, 19, 20. Numbers 21: Rephidim was an
+earlier victory. Numbers 24: Balak had been answered twice; verse 9 is
+closest to Genesis 27:29. Numbers 25, 26, 27, 29, 33, 35: wording and
+precision fixes. Numbers 28: the Passover-week sheaf is closer to the
+resurrection's timing. Numbers 31: Acts 7:30 gives Moses' forty years.
+
+**To double-check.**
+- Numbers 7: the second-longest chapter in the English Bible after Psalm 119.
+- Numbers 9: "cloud" eleven times in verses 15-23 (Hebrew count).
+- Numbers 10: the Arch of Titus relief showing a pair of trumpets.
+- Numbers 21: the Timna copper snake; Heshbon and Arad occupation gaps.
+- Numbers 24: Bar Kokhba's name and Numbers 24:17.
+- Numbers 26: Mendenhall's "eleph" article (1958).
+- Numbers 32: the Mesha Stele (about 840 BC).
+- Numbers 34: the borders and Egypt's province of Canaan (argued, not settled).
