@@ -474,10 +474,10 @@
   }
  },
  "the-faith-once-delivered": {
-  "metaDescription": "Most of what an American thinks of as 'Christianity' is a few generations old.",
-  "source": "derived",
-  "grade": 9.3,
-  "excerptGrade": 8
+  "metaDescription": "What Jude meant by the faith once delivered, how the creeds of Nicaea and Chalcedon confess Scripture, and why America's no creed but the Bible fails.",
+  "source": "rewrite",
+  "grade": 11.8,
+  "excerptGrade": 12.7
  },
  "the-trinity-plainly": {
   "metaDescription": "It sounds like a math problem the church flunked: one God, three persons. It was never math.",
@@ -712,14 +712,10 @@
   }
  },
  "did-the-resurrection-happen": {
-  "metaDescription": "Everything in Christianity hangs on one event that either happened or did not. The historical case for the resurrection, made the way a skeptic deserves.",
-  "source": "hand",
-  "grade": 10.1,
-  "excerptGrade": 12,
-  "qa": {
-   "question": "Did the Resurrection Actually Happen?",
-   "answer": "Everything in Christianity hangs on one event that either happened or didn't. Here is the historical case for the resurrection, handled the way a skeptic deserves, without the shortcuts, without the pressure, with the strongest version of the doubt left standing."
-  }
+  "metaDescription": "The historical case that Jesus rose: the early creed in 1 Corinthians 15, the empty tomb and women witnesses, and the strongest skeptical replies weighed.",
+  "source": "rewrite",
+  "grade": 12.6,
+  "excerptGrade": 13.7
  },
  "divorce-and-remarriage": {
   "metaDescription": "Biblical grounds for divorce and remarriage: Moses, Jesus, and Paul read in context, four Christian views, and why no view requires staying in danger.",
@@ -874,13 +870,13 @@
   }
  },
  "predestination-and-free-will": {
-  "metaDescription": "The night I came to faith, I could not tell whether I had finally found God or been finally found by him.",
-  "source": "derived",
-  "grade": 7.5,
-  "excerptGrade": 6.5,
+  "metaDescription": "Predestination vs. free will from Augustine to Dort, Wesley and Barth: both views at full strength, Romans 9 in context, and what the creeds leave open.",
+  "source": "rewrite",
+  "grade": 5.4,
+  "excerptGrade": 8.4,
   "qa": {
-   "question": "Does God Choose Us, or Do We Choose Him?",
-   "answer": "The night I came to faith, I could not tell whether I had finally found God or been finally found by him. Years later I learned the church has argued that exact question for centuries and never closed it. I have stopped needing it closed."
+   "question": "Predestination vs. Free Will: What Does the Bible Teach?",
+   "answer": "The church has argued for sixteen centuries over whether God chooses us or we choose him, and the creeds never closed the question. Both answers are stronger than their cartoons, and both send the frightened soul to the same place."
   }
  },
  "the-atheist-in-the-pulpit": {
@@ -988,10 +984,10 @@
   "excerptGrade": 6.9
  },
  "what-secular-explanations-still-have-to-explain": {
-  "metaDescription": "The case for atheism is stronger than the church admits, grant it fully.",
-  "source": "derived",
-  "grade": 4.9,
-  "excerptGrade": 4.4
+  "metaDescription": "Consciousness, reason, morality, fine-tuning, the church's rise and our longing for more: what naturalism still must explain, and why it isn't a gap.",
+  "source": "rewrite",
+  "grade": 12.4,
+  "excerptGrade": 10.6
  },
  "does-god-change-his-mind": {
   "metaDescription": "The Bible says God does not change. The Bible also says God 'relented' and 'changed his mind.'",
@@ -1376,24 +1372,20 @@
   }
  },
  "can-you-be-a-christian-alone": {
-  "metaDescription": "The New Testament has no category for the solitary Christian. A gentle argument for why faith was built for company.",
-  "source": "derived",
-  "grade": 8.4,
-  "excerptGrade": 9.2,
+  "metaDescription": "Can you be a Christian without going to church? What Scripture, Cyprian, the Reformers and Bonhoeffer say about a faith that is personal but never private.",
+  "source": "rewrite",
+  "grade": 7.2,
+  "excerptGrade": 9.6,
   "qa": {
-   "question": "Can You Be a Christian on Your Own?",
-   "answer": "The New Testament has no category for the solitary Christian. Not because the writers were authoritarian, but because they could not conceive of a hand that had decided it no longer needed the body. A gentle argument for why faith was built for company."
+   "question": "Can You Be a Christian Without Going to Church?",
+   "answer": "You can believe alone, and God does not lose track of anyone who does. But the New Testament knows a faith that is personal and never private, and the things that make a Christian a Christian, the word from outside, the water and the bread, cannot be done by one person."
   }
  },
  "how-to-find-a-church-worth-joining": {
-  "metaDescription": "If you are ready to try again but afraid of getting hurt again, you need more than a vibe check.",
-  "source": "derived",
-  "grade": 7,
-  "excerptGrade": 7.8,
-  "qa": {
-   "question": "How Do You Find a Church Worth Joining?",
-   "answer": "If you are ready to try again but afraid of getting hurt again, you need more than a vibe check. A pastor on what to actually look for, what you can forgive, and the one or two things you must never overlook."
-  }
+  "metaDescription": "How to find a good church without church shopping: the historic marks of the church, what to look for in leaders, and the red flags to walk away from.",
+  "source": "rewrite",
+  "grade": 10,
+  "excerptGrade": 8.2
  },
  "what-is-church-actually-for": {
   "metaDescription": "If church is a service you attend, then a bad service is reason enough to stop. But the New Testament never describes a service.",
@@ -2368,16 +2360,10 @@
   "excerptGrade": 3.1
  },
  "justice-not-political-theological": {
-  "metaDescription": "Somewhere in the last several decades of American church life, a strange inversion occurred.",
-  "source": "derived",
-  "grade": 12.6,
-  "excerptGrade": 12.6
- },
- "justice-not-political": {
-  "metaDescription": "A pastor who preached on justice was assumed to be announcing a partisan alignment.",
-  "source": "derived",
-  "grade": 10.9,
-  "excerptGrade": 16.4
+  "metaDescription": "What mishpat, tsedaqah and dikaiosyne mean, how the prophets, Jesus and James used them, and why biblical justice is public but belongs to no party.",
+  "source": "rewrite",
+  "grade": 13,
+  "excerptGrade": 10.8
  },
  "justice-without-love-ideology": {
   "metaDescription": "Paul's meditation on love in 1 Corinthians 13 is among the most quoted and least examined passages in the New Testament.",
@@ -3338,10 +3324,10 @@
   "excerptGrade": 8.3
  },
  "outrage-is-not-a-spiritual-gift": {
-  "metaDescription": "We mistook the heat of our anger for the fire of the Spirit, and the machine that sells our attention was happy to let us believe it.",
-  "source": "derived",
-  "grade": 10.2,
-  "excerptGrade": 10.2
+  "metaDescription": "What Scripture, the desert fathers and Aquinas teach about righteous anger, and why the outrage rewarded online, on the right and the left, is different.",
+  "source": "rewrite",
+  "grade": 12.6,
+  "excerptGrade": 10.5
  },
  "formed-by-screens-technology-and-the-soul": {
   "metaDescription": "The screen does not only fill our time, it slowly remakes the kind of soul we have time for. My youngest can find a video faster than I can find my keys.",
@@ -3670,16 +3656,6 @@
   "source": "derived",
   "grade": 12.3,
   "excerptGrade": 12.3
- },
- "teen-did-the-resurrection-actually-happen": {
-  "metaDescription": "Everything Christians claim hangs on one event in one weekend, and you are allowed to ask whether it actually happened.",
-  "source": "derived",
-  "grade": 11.7,
-  "excerptGrade": 11.7,
-  "qa": {
-   "question": "Did the Resurrection Actually Happen?",
-   "answer": "Everything Christians claim hangs on one event in one weekend, and you are allowed to ask whether it actually happened."
-  }
  },
  "what-the-bible-says-about-the-poor-and-the-stranger": {
   "metaDescription": "A man sleeps under the overpass two blocks from our church. I have driven past him on my way to preach about him.",

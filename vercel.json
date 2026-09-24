@@ -229,11 +229,6 @@
             "permanent": true
         },
         {
-            "source": "/writing/justice-not-political",
-            "destination": "/justice",
-            "permanent": true
-        },
-        {
             "source": "/writing/where-church-was-silent",
             "destination": "/justice",
             "permanent": true
@@ -1535,6 +1530,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/justice-not-political",
+            "destination": "/writing/justice-not-political-theological",
+            "permanent": true
+        },
+        {
             "source": "/writing/loving-versus-worshiping-your-country",
             "destination": "/writing/the-flag-in-the-sanctuary",
             "permanent": true
@@ -1637,6 +1637,11 @@
         {
             "source": "/writing/teen-can-you-actually-trust-the-bible",
             "destination": "/writing/why-trust-the-bible",
+            "permanent": true
+        },
+        {
+            "source": "/writing/teen-did-the-resurrection-actually-happen",
+            "destination": "/writing/did-the-resurrection-happen",
             "permanent": true
         },
         {

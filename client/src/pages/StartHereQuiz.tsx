@@ -87,7 +87,7 @@ export const READING_PATHS = {
   "pastoral-articles": {
     title: "Pastoral Leadership & Burnout",
     articles: [
-      { title: "Can You Be a Christian on Your Own?", slug: "can-you-be-a-christian-alone" },
+      { title: "Can You Be a Christian Without Going to Church?", slug: "can-you-be-a-christian-alone" },
       { title: "Rest, Ambition, and the Idol of Success", slug: "rest-ambition-and-the-idol-of-success" },
       { title: "Who Pastors the Pastor When No One Checks In?", slug: "the-pastor-nobody-checks-on" }
     ],

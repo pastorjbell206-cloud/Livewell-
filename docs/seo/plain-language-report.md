@@ -6,13 +6,13 @@ Search engines and answer engines see a second layer beside every essay: a meta 
 
 | Measure | Value |
 |---|---|
-| Essays with a description | 627 |
-| Hand-written descriptions | 18 |
-| Derived from the essay's own sentences | 609 |
-| Essays with question-and-answer data | 97 |
+| Essays with a description | 625 |
+| Hand-written descriptions | 17 |
+| Derived from the essay's own sentences | 608 |
+| Essays with question-and-answer data | 94 |
 | Average reading grade, descriptions | 8.1 |
 | Average reading grade, original standfirsts | 9.5 |
-| Derived descriptions at grade 12 or above (hand-rewrite queue) | 72 |
+| Derived descriptions at grade 12 or above (hand-rewrite queue) | 71 |
 
 ## Hand-rewrite queue
 
@@ -68,7 +68,6 @@ Derived descriptions that still read at college level. Each is true to the essay
 | the-questions-that-actually-matter | 12.8 | Most defenses of Christianity answer questions skeptics aren't asking. |
 | what-evangelicalism-was-supposed-to-be | 12.8 | That it became something else entirely is one of the great tragedies of modern American religion. |
 | what-a-christian-owes-the-city | 12.7 | The critique of political idolatry is finished only when it builds something. |
-| justice-not-political-theological | 12.6 | Somewhere in the last several decades of American church life, a strange inversion occurred. |
 | staff-culture-no-burnout | 12.6 | The church staff that cannot keep good people has usually decided, usually without knowing it, that the mission matters more than the people serving it. |
 | the-theology-of-time | 12.6 | Every productivity system assumes you do not have enough time to get everything done. |
 | calvinism-and-arminianism | 12.6 | The oldest and most consequential debate in Protestant theology is also the most misunderstood. |
