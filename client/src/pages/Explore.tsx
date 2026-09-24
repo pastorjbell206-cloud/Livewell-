@@ -21,6 +21,7 @@ import { Search as SearchIcon, Download } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { LoadFailed } from "@/components/LoadFailed";
+import FollowJames from "@/components/FollowJames";
 import { SITE_URL } from "@/lib/site";
 import { trpc } from "@/lib/trpc";
 import { TOOLS } from "@/pages/ToolsHub";
@@ -350,6 +351,7 @@ export default function Explore() {
           )}
         </div>
       </section>
+      <FollowJames heading="Everywhere else James writes" />
     </Layout>
   );
 }

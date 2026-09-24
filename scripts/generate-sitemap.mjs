@@ -220,6 +220,7 @@ const STATIC_PAGES = [
   { url: "/tools/test-the-case", priority: "0.8", changefreq: "monthly" },
   { url: "/explore", priority: "0.85", changefreq: "weekly" },
   { url: "/downloads", priority: "0.75", changefreq: "weekly" },
+  { url: "/connect", priority: "0.7", changefreq: "monthly" },
   { url: "/pillars", priority: "0.8", changefreq: "monthly" },
   { url: "/exile", priority: "0.7", changefreq: "monthly" },
   { url: "/living-well", priority: "0.75", changefreq: "monthly" },

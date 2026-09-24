@@ -88,6 +88,10 @@ export default function FollowJames({
           {/* The site's own surfaces first: everything written, the books, the
               things to use, and the way to work with James. A reader should be
               able to reach all of it from one block rather than hunting. */}
+          <Link href="/explore" style={tile}>
+            <div style={tileTitle}>The Library</div>
+            <p style={tileBlurb}>Everything in one place: essays, books, guides, and every download, searchable.</p>
+          </Link>
           <Link href="/writing" style={tile}>
             <div style={tileTitle}>All the writing</div>
             <p style={tileBlurb}>Every essay, searchable, filed by subject.</p>
