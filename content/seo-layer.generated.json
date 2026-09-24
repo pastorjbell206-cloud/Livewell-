@@ -328,10 +328,10 @@
   "excerptGrade": 8.1
  },
  "raising-sons-manhood": {
-  "metaDescription": "Your son is being handed two false manhoods and told to pick one. One inflates him, one erases him. Neither one is the cross.",
-  "source": "derived",
-  "grade": 2.8,
-  "excerptGrade": 2.1
+  "metaDescription": "What biblical manhood means for raising sons: the domineering and diminished counterfeits, the virtue tradition, and Christ's strength under control.",
+  "source": "rewrite",
+  "grade": 13.5,
+  "excerptGrade": 10.5
  },
  "teenager-losing-faith": {
   "metaDescription": "Your first instinct will be to win the argument. The argument is not the thing your teenager is testing. You are.",
@@ -346,10 +346,10 @@
   "excerptGrade": 4.4
  },
  "the-weight-of-what-you-model": {
-  "metaDescription": "Your children are not listening to your instructions. They are watching your reflexes, and the reflexes are the curriculum.",
-  "source": "derived",
-  "grade": 8,
-  "excerptGrade": 7.9
+  "metaDescription": "Why kids learn faith from their parents' example: imitation in Scripture, Bandura and Girard on modeling, hypocrisy, and why a parent's repentance matters.",
+  "source": "rewrite",
+  "grade": 14.9,
+  "excerptGrade": 10.5
  },
  "the-work-nobody-watches": {
   "metaDescription": "The culture calls mothering a waste of a mind. The church hands it a carnation one Sunday a year and loads it like a mule the other fifty-one.",
@@ -680,13 +680,13 @@
   }
  },
  "christian-sexual-ethic": {
-  "metaDescription": "A gay teenager sat in my church for three years and never told me, because he had learned exactly what we would do with it.",
-  "source": "derived",
-  "grade": 9.3,
-  "excerptGrade": 5.9,
+  "metaDescription": "Is the Christian view of sexuality homophobic? Genesis, Jesus, Romans 1, the strongest affirming and traditional cases, and the church's failures.",
+  "source": "rewrite",
+  "grade": 11,
+  "excerptGrade": 10.5,
   "qa": {
-   "question": "Is the Historic Christian View of Sex Homophobic?",
-   "answer": "A gay teenager sat in my church for three years and never told me, because he had learned exactly what we would do with it. Before I say one word about the texts, I have to say that. The church earned his silence, and it is the first thing that has to be true on the page."
+   "question": "Is the Christian View of Sexuality Homophobic?",
+   "answer": "The church has often treated gay people with contempt, and that has to be confessed first. But the historic Christian ethic is a vision of the body that asks the same costly thing of everyone, and it deserves to be weighed at full strength beside its best critics."
   }
  },
  "christianity-and-islam": {
@@ -1072,10 +1072,14 @@
   "excerptGrade": 6.7
  },
  "why-god-started-with-one-family": {
-  "metaDescription": "If God meant to rescue the whole world, why start with one obscure herdsman in the Bronze Age and his barren wife?",
-  "source": "derived",
-  "grade": 6.9,
-  "excerptGrade": 8.2
+  "metaDescription": "Why did God choose Abraham? The covenant of Genesis 12, 15 and 17, Paul's reading of it, and why biblical election is a calling for the nations, not favor.",
+  "source": "rewrite",
+  "grade": 6.3,
+  "excerptGrade": 5.9,
+  "qa": {
+   "question": "The Strongest Objection: Why One Family, Why One People?",
+   "answer": "The objection deserves its full strength first. In 1730 the English deist Matthew Tindal published Christianity as Old as the Creation. A perfectly good and just God, he reasoned, would give every human being equal access to what salvation requires, so true religion must be universal, available to reason in every age and nation. A revelation given to one people in one corner of the world, reaching most of humanity late or never, can't be the work of a God who loves all his creatures equally. On this view particularity is not a mystery. It's evidence against the claim."
+  }
  },
  "augustine-the-restless-man": {
   "metaDescription": "We have been reading ourselves in his pages ever since. He wrote the story of his own soul. Not his accomplishments, he had plenty.",
@@ -1984,10 +1988,10 @@
   "excerptGrade": 12.2
  },
  "church-sex-more-than-money": {
-  "metaDescription": "Scripture will not stop talking about money, wealth, poverty, and economic justice.",
-  "source": "derived",
-  "grade": 10.7,
-  "excerptGrade": 10.7
+  "metaDescription": "Why churches preach on sexual sin far more than greed though Scripture pairs them, and how history, politics and consumer habits split the Bible's warning.",
+  "source": "rewrite",
+  "grade": 11.6,
+  "excerptGrade": 10.5
  },
  "church-split-surviving-learning-forward": {
   "metaDescription": "Nobody tells you, in seminary, what it feels like to watch the congregation break in two.",
@@ -4058,22 +4062,20 @@
   "excerptGrade": 11.1
  },
  "deconstruction-is-not-destruction": {
-  "metaDescription": "Deconstruction has become a dirty word in many churches. It is said with the hushed alarm once reserved for \"liberal\" or \"heretical.\"",
-  "source": "derived",
-  "grade": 13.4,
-  "excerptGrade": 8.7
+  "metaDescription": "What faith deconstruction means, from Derrida to the exvangelical movement, and how to tell dismantling a church culture from abandoning the creed.",
+  "source": "rewrite",
+  "grade": 13.9,
+  "excerptGrade": 9.8,
+  "qa": {
+   "question": "What Is Faith Deconstruction, and What Does Exvangelical Mean?",
+   "answer": "Deconstruction began as a philosopher's way of reading and became the name for leaving evangelicalism. Much of what exvangelicals left deserved to be left. The real question is whether the digging stops in the rubble or reaches the foundation."
+  }
  },
  "the-rise-of-the-nones": {
   "metaDescription": "They are the fastest-growing 'religious' group in America, and most of them are not atheists.",
   "source": "derived",
   "grade": 9.1,
   "excerptGrade": 13.3
- },
- "exvangelical-when-leaving-isnt-losing-faith": {
-  "metaDescription": "A growing movement of former evangelicals is redefining what it means to leave a tradition without leaving the faith that tradition claimed to own.",
-  "source": "derived",
-  "grade": 14.4,
-  "excerptGrade": 14.4
  },
  "purity-culture-and-its-wreckage": {
   "metaDescription": "A generation was taught that their sexual worth was a commodity to be preserved.",
@@ -4194,10 +4196,10 @@
   "excerptGrade": 3.2
  },
  "raising-kids-post-christian": {
-  "metaDescription": "Your children will not inherit your faith by osmosis. There is a moment every Christian parent dreads, though few admit it out loud.",
-  "source": "derived",
-  "grade": 6.3,
-  "excerptGrade": 7.6
+  "metaDescription": "How to raise Christian kids in a secular culture: what ended with Christendom, the Benedict Option debate, and why Scripture calls families exiles.",
+  "source": "rewrite",
+  "grade": 13.4,
+  "excerptGrade": 11.4
  },
  "faith-at-work": {
   "metaDescription": "The office is not a mission field. The average American spends about 90,000 hours at work over a lifetime.",
@@ -4224,10 +4226,10 @@
   "excerptGrade": 8.2
  },
  "family-and-faith-transitions": {
-  "metaDescription": "Faith transitions do not happen in isolation. They happen in families. And the family that cannot hold theological difference cannot hold each other.",
-  "source": "derived",
-  "grade": 8.9,
-  "excerptGrade": 8.9
+  "metaDescription": "When family says you've lost your mind over faith: Jesus's family in Mark 3, Matthew 10 in context, honoring parents, and persecution versus your own zeal.",
+  "source": "rewrite",
+  "grade": 12.3,
+  "excerptGrade": 10.4
  },
  "christianity-after-christendom": {
   "metaDescription": "The era when Christianity was the cultural default is over. What comes next may be harder, smaller, and more costly.",

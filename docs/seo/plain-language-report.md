@@ -6,13 +6,13 @@ Search engines and answer engines see a second layer beside every essay: a meta 
 
 | Measure | Value |
 |---|---|
-| Essays with a description | 654 |
+| Essays with a description | 653 |
 | Hand-written descriptions | 22 |
-| Derived from the essay's own sentences | 632 |
-| Essays with question-and-answer data | 99 |
+| Derived from the essay's own sentences | 631 |
+| Essays with question-and-answer data | 101 |
 | Average reading grade, descriptions | 8.0 |
 | Average reading grade, original standfirsts | 9.6 |
-| Derived descriptions at grade 12 or above (hand-rewrite queue) | 83 |
+| Derived descriptions at grade 12 or above (hand-rewrite queue) | 81 |
 
 ## Hand-rewrite queue
 
@@ -49,7 +49,6 @@ Derived descriptions that still read at college level. Each is true to the essay
 | white-churches-diversity-wrong | 14.6 | The conversation about diversity in white evangelical churches usually goes wrong in the same direction. |
 | 50-how-to-lead-when-trust-in-institutions-including-the-church-is-at-an-all-time-low | 14.4 | Trust in government, in media, in healthcare, in universities, in the justice system, all of these have declined to historic lows by multiple measures. |
 | moral-injury-veterans | 14.4 | The word "trauma" has become a general-purpose container, applied to an expanding range of hard experience until it sometimes loses its force. |
-| exvangelical-when-leaving-isnt-losing-faith | 14.4 | A growing movement of former evangelicals is redefining what it means to leave a tradition without leaving the faith that tradition claimed to own. |
 | 7-protecting-your-marriage-when-ministry-demands-everything | 14.3 | Ministry and marriage are both long-term commitments that require sustained, intentional investment to flourish. |
 | revitalize-or-replant | 14.1 | The distinction matters because the strategies are completely different. |
 | church-comfort-inequality | 14 | The American church has made peace with a level of economic inequality that the prophets would have named without hesitation. |
@@ -63,7 +62,6 @@ Derived descriptions that still read at college level. Each is true to the essay
 | 10-its-okay-to-see-a-counselor-why-pastors-resist-and-why-they-shouldnt | 13.4 | Of all the things that are slowly changing in pastoral culture, the stigma around professional counseling may be the most stubbornly persistent. |
 | church-must-speak-housing | 13.4 | In most American cities right now, housing consumes a share of working-class income that previous generations would have called a crisis. |
 | symptoms-without-causes-charity | 13.4 | There is a story, attributed to various sources over the years, about people standing on a riverbank pulling drowning bodies from the water. |
-| deconstruction-is-not-destruction | 13.4 | Deconstruction has become a dirty word in many churches. It is said with the hushed alarm once reserved for "liberal" or "heretical." |
 | 44-what-the-church-in-the-global-south-can-teach-the-church-in-america-about-suffering | 13.3 | The American church has developed a sophisticated relationship with comfort. Its buildings are climate controlled. |
 | digital-divide | 13.3 | The resources that enable human flourishing (land, water, shelter, education) are not distributed randomly. They concentrate. |
 | apologetics-what-about-those-who-never-heard | 13.2 | It seems deeply unfair that eternity could hinge on whether you happened to be born where the message reached, and the unfairness is worth facing squarely. |
