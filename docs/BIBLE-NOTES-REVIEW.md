@@ -257,3 +257,29 @@ Joshua 18, 21, 23: overstatements and a wrong generation reference fixed.
 - Joshua 11: the early-date view of Hazor's destruction levels.
 - Joshua 12: Egyptian conquest lists showing names in bound-captive ovals.
 - Joshua 13: the Deir Alla inscription (about 840–760 BC).
+
+## Judges and Ruth
+
+**Corrected.** Judges 9: "the one extended story" without a foreign
+oppressor. Judges 11: Psalm 118:22 (Mark 12:10, Acts 4:11) cited. Judges 13:
+"barren" appears in Hannah's song (1 Samuel 2:5). Judges 14: the word for
+"occasion" unique only in this sense; "right in his eyes" explained. Judges
+16: Samson "brought to his death". Judges 18: the "succeed"/"rush" roots
+softened. Judges 19: the concubine found collapsed and unresponsive (the
+Hebrew doesn't say when she died; the Septuagint adds it). Judges 20: the
+second inquiry asks whether to go up again. Ruth 4: the sandal custom as
+"perhaps"; the dating pointer goes to the introduction.
+
+**Care added.** Judges 19 and 21 now close with a word for readers who carry
+their own experience of sexual violence, naming the women as victims and
+pointing to a pastor, a counselor, a sexual assault helpline, and emergency
+services.
+
+**To double-check.**
+- Judges 18:30: "the captivity of the land" (Assyrian deportations or the
+  ark's capture).
+- Judges 6: camel raiding as one of the earliest descriptions (dating debated).
+- Judges 9: Thebez as Tubas; G. Ernest Wright on El-berith.
+- Judges 16: Augustine, The City of God, book 1 (chapters 21 and 26).
+- Ruth 2: an ephah of barley (size uncertain).
+- Ruth introduction: Ruth after Proverbs in the Leningrad Codex and BHS.
