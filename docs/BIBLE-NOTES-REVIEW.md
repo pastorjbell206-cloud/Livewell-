@@ -409,3 +409,24 @@ Aijalon added to the fifteen fortresses. 2 Chronicles 12, 14, 22, 25, 28, 29,
   death (631 or 627 BC).
 - 2 Chronicles 8: Hiram's towns (leans to one view).
 - 2 Chronicles 16: Thiele on Asa's 35th and 36th years (one view of several).
+
+## Ezra, Nehemiah, Esther
+
+**Checked and sound.** The Persian kings and dates throughout; the list
+totals in Ezra 1, 2, 8, 10 and Nehemiah 7 recomputed and correct. The
+temple's completion is now dated 515 BC everywhere (Adar of Darius's sixth
+year), including the story path.
+
+**Corrected.** Ezra introduction: the two-book division dates to the 15th-16th
+centuries; the return told "with echoes of the first exodus". Ezra 3:
+1 Chronicles 16:34 added. Nehemiah 2: shared language with Ezra 7-8, not
+borrowed. Nehemiah 3: Tekoa is within the province. Nehemiah 5, 6, 10, 11, 13:
+quotation, date, and reference fixes. Esther: the Kish of Mordecai's line
+"recalls" Saul's family; Haman "the Agagite" recalls Agag; the timeline of
+the gallows follows 5:14 and 7:9.
+
+**To double-check.**
+- Ezra 5: the Babylonian tablet naming Tattannu; Esther 2, 10: Marduka at Susa.
+- The Elephantine letter (about 407 BC) naming Sanballat's sons and Johanan.
+- Esther 9: the Greek text's 15,000 dead.
+- Ezra 3: yasad as "restore".
