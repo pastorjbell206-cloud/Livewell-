@@ -197,3 +197,24 @@ resurrection's timing. Numbers 31: Acts 7:30 gives Moses' forty years.
 - Numbers 26: Mendenhall's "eleph" article (1958).
 - Numbers 32: the Mesha Stele (about 840 BC).
 - Numbers 34: the borders and Egypt's province of Canaan (argued, not settled).
+
+## Deuteronomy introduction and chapters 1–17
+
+**Corrected.** Introduction: "beyond the Jordan" softened (it can mean the
+west, 3:25). Deuteronomy 1, 17: the traditional date as the fifteenth or
+thirteenth century BC. Deuteronomy 2: Arad (Numbers 21:1-3) was earlier than
+Sihon. Deuteronomy 3: the Mesha Stele names Nebo and Ashtar-Chemosh.
+Deuteronomy 4: verses 16-18 use tavnit. Deuteronomy 7: Rahab is placed in
+David's line by Matthew 1:5. Deuteronomy 13: the third case ends with God's
+mercy; verse 9 concerns the one enticed. Deuteronomy 14: the list follows
+Leviticus 11's order. Deuteronomy 16: Numbers 9's wilderness Passover; the
+Synoptics present the Last Supper as Passover, John's chronology differs.
+
+**To double-check.**
+- Deuteronomy 4: astral worship spreading in Judah under Assyria (debated).
+- Deuteronomy 9: smashing a treaty tablet as voiding it; the Anat–Mot
+  parallel is looser than stated.
+- Deuteronomy 12: the Arad shrine's date and link to Hezekiah (disputed).
+- Deuteronomy 14: pig bones as an identity marker (hedged, debated).
+- Deuteronomy 6: the Nash Papyrus dated by palaeography.
+- Deuteronomy 1, 3: Tophel, Laban, Dizahab, Edrei, Kadesh-barnea sites.
