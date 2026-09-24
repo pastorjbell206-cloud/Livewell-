@@ -430,3 +430,24 @@ the gallows follows 5:14 and 7:9.
 - The Elephantine letter (about 407 BC) naming Sanballat's sons and Johanan.
 - Esther 9: the Greek text's 15,000 dead.
 - Ezra 3: yasad as "restore".
+
+## Job
+
+**Corrected.** Introduction and Job 1: the accuser (ha-satan) is identified
+with the devil by most Christian readers and read as a member of the heavenly
+court by many Old Testament scholars; no longer stated as settled. Job 2: the
+seven days of silence no longer made a type of the incarnation. Job 5: 1 Peter
+2:24 as the New Testament use. Contested translations now marked at 3:8, 6:14,
+9:33, 13:15 (some versions follow the spoken reading), 16:14, 16:20, 18:15,
+22:30, 23:2, 26:11, 33:24. Job 39-40: small reference fixes.
+
+**Care added.** Paths to help where Job wishes to die: chapters 7, 9, 10, 14,
+17 (in addition to 3 and 6).
+
+**To double-check.**
+- The Babylonian Theodicy's date (early first millennium BC, approximate).
+- Job 19: Behistun (about 520-515 BC).
+- Job 22: the Tell Qasile ostracon's "gold of Ophir".
+- Job 42: interpreters reading the undoubled children as a hint of life
+  beyond death (no source named).
+- Job 12, 28: YHWH once in the dialogue (12:9); Adonai only at 28:28.
