@@ -536,3 +536,24 @@ marked thematic. Proverbs 31: the queen mother named for Judah's kings.
 - Proverbs 31: the gebirah's official role (debated); Eshet Chayil sung by
   the family as well as husbands.
 - Proverbs 24: the weighed heart (Egyptian image, "may").
+
+## Ecclesiastes and the Song of Songs
+
+**Checked and sound.** The hevel readings and the frame narrator in
+Ecclesiastes; the Song's main readings stated without taking a side, its
+imagery handled with adult tact.
+
+**Corrected.** Ecclesiastes 3, 5, 10: counts and first-imperative fixes.
+Ecclesiastes 9: 1 Corinthians 15:58 and the Lord's Supper as thematic echoes,
+not fulfilment. Ecclesiastes 12: the "one Shepherd" usually taken as God
+(some read Solomon). Song introduction: 1 Kings 4:32-33; the three-character
+theory first proposed in 1771 (Jacobi). Song 4, 5: pronoun and imagery fixes;
+one restrained sentence on the second layer in 5:2-6. Song 7: duda'im as
+mandrakes only here and Genesis 30:14-16. Song 8: its synagogue use replaced
+with the certain fact of copies among the Dead Sea Scrolls.
+
+**To double-check.**
+- Ecclesiastes 9: Siduri's advice in the Old Babylonian Gilgamesh.
+- Ecclesiastes introduction: 4QQoh-a (about 175-150 BC).
+- Song 6: Tirzah before about 880 BC (Omri's move to Samaria).
+- Song 7: Heshbon's reservoirs (Tell Hesban).
