@@ -298,6 +298,15 @@ export default function Writing() {
               </div>
             </Link>
           )}
+          {/* Hold the art's place while the index loads. On a phone the grid is
+              one column and the art sits under the heading, so arriving late it
+              pushed the whole page down (CI measured a 0.16 layout shift). */}
+          {!isFiltering && listLoading && (
+            <div aria-hidden style={{ order: 2, maxWidth: "560px", width: "100%", justifySelf: "end" }}>
+              <div style={{ aspectRatio: "16 / 9", width: "100%", borderRadius: "var(--radius-sm)", background: "rgba(245,240,230,0.06)" }} />
+              <div style={{ marginTop: "12px", fontFamily: "var(--F)", fontSize: "19px", lineHeight: 1.25 }}>&nbsp;</div>
+            </div>
+          )}
           <div>
           <div
             className="eyebrow"
