@@ -23,8 +23,9 @@ reach for.
 
 ## Writing
 
-- Write exactly one file, `content/rewrites/<kept-slug>.md`, in the format in
-  STANDARD.md. Touch nothing else. Don't run git or the build scripts.
+- Write exactly one file, `content/rewrites/pending/<kept-slug>.md`, in the
+  format in STANDARD.md. It moves up to `content/rewrites/` only after the
+  integrity review. Touch nothing else. Don't run git or the build scripts.
 - 3,000 to 4,500 words of body in four to seven `###` sections.
 - Keep what is true and strong in the source, and cut what is invented,
   clichéd or thin. Don't pad. Depth comes from the history, the named
