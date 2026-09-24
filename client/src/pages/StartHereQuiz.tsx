@@ -53,7 +53,7 @@ export const READING_PATHS = {
     articles: [
       { title: "What Is Covenant Marriage? Why Marriage Is Not a Contract", slug: "covenant-vs-contract-what-marriage-is" },
       { title: "Resentment in Marriage and How to Stop Resenting Your Spouse", slug: "the-resentment-in-your-marriage" },
-      { title: "Rest, Ambition, and the Idol of Success", slug: "rest-ambition-and-the-idol-of-success" }
+      { title: "What Is the Sabbath and Should Christians Keep It Today?", slug: "what-the-sabbath-is-and-why-you-need-it" }
     ],
     book: "What If We're Wrong?"
   },
@@ -71,7 +71,7 @@ export const READING_PATHS = {
     articles: [
       { title: "When Your Teenager Says They Don't Believe Anymore", slug: "teenager-losing-faith" },
       { title: "How to Raise Kids in the Faith When You Have Doubts Yourself", slug: "how-to-talk-kids-faith-doubt" },
-      { title: "Rest, Ambition, and the Idol of Success", slug: "rest-ambition-and-the-idol-of-success" }
+      { title: "What Is the Sabbath and Should Christians Keep It Today?", slug: "what-the-sabbath-is-and-why-you-need-it" }
     ],
     book: "When God Bless America Replaces Thy Kingdom Come"
   },
@@ -88,7 +88,7 @@ export const READING_PATHS = {
     title: "Pastoral Leadership & Burnout",
     articles: [
       { title: "Can You Be a Christian Without Going to Church?", slug: "can-you-be-a-christian-alone" },
-      { title: "Rest, Ambition, and the Idol of Success", slug: "rest-ambition-and-the-idol-of-success" },
+      { title: "What Is the Sabbath and Should Christians Keep It Today?", slug: "what-the-sabbath-is-and-why-you-need-it" },
       { title: "Who Pastors the Pastor When No One Checks In?", slug: "the-pastor-nobody-checks-on" }
     ],
     book: "The Monster in the Mirror"

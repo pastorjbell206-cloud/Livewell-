@@ -115,8 +115,9 @@ describe("every rewrite meets the checkable parts of the standard", () => {
         // The em-dash is banned; an en-dash is right in a verse range (5:21–33) but not as a clause dash.
         expect(all).not.toMatch(/—/);
         expect(all).not.toMatch(/\s–\s/);
-        // Proper names are not prose: Pew's Religious Landscape Study keeps its name.
-        expect(all.replace(/Religious Landscape Study/g, "")).not.toMatch(FORBIDDEN);
+        // Proper names are not prose: Pew's Religious Landscape Study keeps its
+        // name, and so does Diana Greene Foster (The Turnaway Study).
+        expect(all.replace(/Religious Landscape Study|Greene Foster/g, "")).not.toMatch(FORBIDDEN);
         // Phrases are checked outside quotations: Revelation 2:5 (ESV) says "do the works".
         const outsideQuotes = all.replace(/"[^"]*"|“[^”]*”/g, "");
         expect(outsideQuotes).not.toMatch(PHRASES);

@@ -57,7 +57,7 @@ export const ANSWERS: Answer[] = [
       "Out of the whirlwind God answers Job with questions, not a theodicy — he refuses the explanation and offers himself. The center of the faith is not a God who explains from a distance but one who entered it. The child in the ward is still in the ward. The people who met him in their worst hour do not come back saying they understand. They come back saying they are not alone in it.",
     ],
     essaySlug: "if-god-is-good-why-suffering",
-    essayTitle: "If God Is Good, Why Is There So Much Suffering?",
+    essayTitle: "If God Is Good, Why Is There Suffering? An Honest Answer",
     bookTitle: "Prayer in the Dark",
     bookHref: "/prayer-in-the-dark",
   },

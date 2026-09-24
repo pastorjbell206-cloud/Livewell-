@@ -6,13 +6,13 @@ Search engines and answer engines see a second layer beside every essay: a meta 
 
 | Measure | Value |
 |---|---|
-| Essays with a description | 625 |
-| Hand-written descriptions | 17 |
-| Derived from the essay's own sentences | 608 |
+| Essays with a description | 597 |
+| Hand-written descriptions | 16 |
+| Derived from the essay's own sentences | 581 |
 | Essays with question-and-answer data | 94 |
-| Average reading grade, descriptions | 8.1 |
+| Average reading grade, descriptions | 8.2 |
 | Average reading grade, original standfirsts | 9.5 |
-| Derived descriptions at grade 12 or above (hand-rewrite queue) | 71 |
+| Derived descriptions at grade 12 or above (hand-rewrite queue) | 65 |
 
 ## Hand-rewrite queue
 
@@ -37,11 +37,9 @@ Derived descriptions that still read at college level. Each is true to the essay
 | 3-illustrating-everything-with-success-stories | 15 | It implies that faithful application of biblical truth reliably produces good outcomes in visible, timely ways. |
 | 34-what-a-healthy-pastor-referral-network-actually-looks-like | 15 | Every pastor makes referrals, to counselors, to other ministries, to specialists in areas outside their competence. |
 | 42-the-unreached-people-groups-closest-to-you-that-youve-never-considered | 15 | When the church talks about unreached people groups, the conversation almost always faces outward and away, toward the ethnic and linguistic communities. |
-| complicity-not-innocence | 15 | The comfortable Christian position in a culture with genuine injustice is neither endorsement nor active resistance. |
 | 3-treating-sunday-as-the-only-metric | 14.9 | It is easy, especially in a culture that quantifies everything, to measure the health of your ministry by Sunday attendance and sermon reception. |
 | guide-to-every-major-denomination | 14.7 | The existence of denominations embarrasses many Christians and trips up many outsiders. |
 | why-people-fled-to-the-desert | 14.6 | When Christianity stopped being dangerous and became respectable, thousands of people walked out into the Egyptian desert to live alone. |
-| maternal-mortality-pro-life | 14.6 | The United States has the highest maternal mortality rate among wealthy nations, not marginally, but by multiples. |
 | white-churches-diversity-wrong | 14.6 | The conversation about diversity in white evangelical churches usually goes wrong in the same direction. |
 | 50-how-to-lead-when-trust-in-institutions-including-the-church-is-at-an-all-time-low | 14.4 | Trust in government, in media, in healthcare, in universities, in the justice system, all of these have declined to historic lows by multiple measures. |
 | moral-injury-veterans | 14.4 | The word "trauma" has become a general-purpose container, applied to an expanding range of hard experience until it sometimes loses its force. |
@@ -62,8 +60,6 @@ Derived descriptions that still read at college level. Each is true to the essay
 | apologetics-what-about-those-who-never-heard | 13.2 | It seems deeply unfair that eternity could hinge on whether you happened to be born where the message reached, and the unfairness is worth facing squarely. |
 | how-to-preach-to-people-who-have-heard-it-all | 13.2 | The hardest congregation is not the hostile one but the one that has already heard your text a hundred times and stopped expecting anything from it. |
 | the-womanhood-they-preached-was-small | 12.9 | The world I was raised in preached a womanhood of shrinkage, modesty as fear of the body, submission as erasure, silence as virtue, Scripture as a leash. |
-| consistent-pro-life-ethic | 12.9 | The pro-life movement began with a conviction worth defending: that human life, from its earliest form, bears the image of God and deserves protection. |
-| what-jubilee-means | 12.9 | The Jubilee was God's economic reset button, a radical vision of economic justice built into the law of Israel. |
 | apologetics-isnt-faith-believing-without-evidence | 12.9 | The popular definition of faith as belief without evidence is so common it feels obvious, and it happens to be wrong about what faith has always meant. |
 | the-questions-that-actually-matter | 12.8 | Most defenses of Christianity answer questions skeptics aren't asking. |
 | what-evangelicalism-was-supposed-to-be | 12.8 | That it became something else entirely is one of the great tragedies of modern American religion. |
@@ -80,7 +76,6 @@ Derived descriptions that still read at college level. Each is true to the essay
 | 31-when-a-church-split-happens-surviving-it-learning-from-it-moving-forward | 12.3 | Church splits are among the most painful experiences in ministry, and they are more common than the pastoral culture likes to acknowledge. |
 | eschatology-matters-end-shapes-now | 12.3 | The word eschatology comes from the Greek eschaton, the last thing, the final moment, the end toward which everything is moving. |
 | give-feedback-changes-behavior | 12.3 | Most feedback conversations accomplish one thing: they make the person giving the feedback feel that they have discharged an obligation. |
-| hard-cases-abortion-debate | 12.3 | The people who make abortion debates most uncomfortable are not the ideologues on either side. |
 | mobilizing-church-missions-small-budget | 12.3 | The assumption lives in almost every small church I have encountered: that world missions is something larger churches do. |
 | prophetic-pastor | 12.3 | And when they talk about pastoral ministry, they usually mean someone who comes to the bedside, who holds the grieving, who offers presence in the dark. |
 | where-church-was-silent | 12.3 | The church in America has a history that is not primarily the history of courage and faithfulness, though it contains that. |
@@ -89,5 +84,4 @@ Derived descriptions that still read at college level. Each is true to the essay
 | how-to-find-gods-will-for-your-career | 12.2 | God is far less concerned with the one perfect job he has hidden from you than with the kind of person you are becoming in whatever work you already hold. |
 | charity-is-not-justice-the-difference | 12.1 | We have learned to give bread to the man at the gate and never ask who built the gate, and the Bible refuses to let mercy become a substitute for justice. |
 | ordinary-time | 12 | The church year has two famous seasons and one long stretch nobody talks about, the green months between Pentecost and Advent called Ordinary Time. |
-| the-consistent-pro-life-ethic-womb-to-tomb | 12 | If life is sacred because it bears the image of God, then it is sacred at every point that image is borne, and our convenient exceptions are the tell. |
 | evolution-and-genesis | 12 | The debate over evolution and Genesis has generated more heat than light for over a century. |

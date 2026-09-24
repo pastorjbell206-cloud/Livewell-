@@ -94,11 +94,6 @@
             "permanent": true
         },
         {
-            "source": "/writing/complicity-not-innocence",
-            "destination": "/justice",
-            "permanent": true
-        },
-        {
             "source": "/writing/mishpat-tsedaqah",
             "destination": "/justice",
             "permanent": true
@@ -110,16 +105,6 @@
         },
         {
             "source": "/writing/church-credibility-problem",
-            "destination": "/justice",
-            "permanent": true
-        },
-        {
-            "source": "/writing/prophetic-tradition-economic-justice",
-            "destination": "/justice",
-            "permanent": true
-        },
-        {
-            "source": "/writing/what-jubilee-means",
             "destination": "/justice",
             "permanent": true
         },
@@ -155,11 +140,6 @@
         },
         {
             "source": "/writing/earth-is-lords",
-            "destination": "/justice",
-            "permanent": true
-        },
-        {
-            "source": "/writing/ruth-gleaning-laws",
             "destination": "/justice",
             "permanent": true
         },
@@ -201,11 +181,6 @@
         {
             "source": "/writing/exodus-demands-church-today",
             "destination": "/justice",
-            "permanent": true
-        },
-        {
-            "source": "/writing/sabbath-is-resistance",
-            "destination": "/writing/a-day-of-doing-nothing",
             "permanent": true
         },
         {
@@ -366,11 +341,6 @@
         {
             "source": "/writing/burnout-nobody-talks-about",
             "destination": "/writing/burnout-is-not-a-badge",
-            "permanent": true
-        },
-        {
-            "source": "/writing/sabbath-isnt-optional",
-            "destination": "/writing/a-day-of-doing-nothing",
             "permanent": true
         },
         {
@@ -570,11 +540,6 @@
         },
         {
             "source": "/writing/widow-orphan-stranger",
-            "destination": "/theology",
-            "permanent": true
-        },
-        {
-            "source": "/writing/stranger-at-gate",
             "destination": "/theology",
             "permanent": true
         },
@@ -1480,8 +1445,43 @@
             "permanent": true
         },
         {
+            "source": "/writing/book-ruth-gleaning-laws",
+            "destination": "/writing/jubilee-debt-and-the-economy-god-commanded",
+            "permanent": true
+        },
+        {
             "source": "/writing/christendom-is-ending-christianity-is-not",
             "destination": "/writing/christendom-is-ending",
+            "permanent": true
+        },
+        {
+            "source": "/writing/church-crisis-pregnancy",
+            "destination": "/writing/the-consistent-pro-life-ethic-womb-to-tomb",
+            "permanent": true
+        },
+        {
+            "source": "/writing/church-member-abortion-secret",
+            "destination": "/writing/grief-abortion-church",
+            "permanent": true
+        },
+        {
+            "source": "/writing/church-refugee-crisis",
+            "destination": "/writing/what-the-bible-says-about-immigrants-and-refugees-in-depth",
+            "permanent": true
+        },
+        {
+            "source": "/writing/complicity-how-good-people-sustain-bad-systems",
+            "destination": "/writing/individual-sin-and-systemic-sin-explained",
+            "permanent": true
+        },
+        {
+            "source": "/writing/complicity-not-innocence",
+            "destination": "/writing/individual-sin-and-systemic-sin-explained",
+            "permanent": true
+        },
+        {
+            "source": "/writing/consistent-pro-life-ethic",
+            "destination": "/writing/the-consistent-pro-life-ethic-womb-to-tomb",
             "permanent": true
         },
         {
@@ -1515,13 +1515,33 @@
             "permanent": true
         },
         {
+            "source": "/writing/hard-cases-abortion-debate",
+            "destination": "/writing/christians-and-abortion",
+            "permanent": true
+        },
+        {
             "source": "/writing/how-to-raise-children-in-the-faith",
             "destination": "/writing/how-to-talk-kids-faith-doubt",
             "permanent": true
         },
         {
+            "source": "/writing/how-to-rest-in-a-culture-of-exhaustion",
+            "destination": "/writing/what-the-sabbath-is-and-why-you-need-it",
+            "permanent": true
+        },
+        {
             "source": "/writing/incarnation-changes-everything",
             "destination": "/writing/why-the-incarnation-matters",
+            "permanent": true
+        },
+        {
+            "source": "/writing/individual-sin-systemic-sin",
+            "destination": "/writing/individual-sin-and-systemic-sin-explained",
+            "permanent": true
+        },
+        {
+            "source": "/writing/individual-sin-systemic-sin-2",
+            "destination": "/writing/individual-sin-and-systemic-sin-explained",
             "permanent": true
         },
         {
@@ -1532,6 +1552,11 @@
         {
             "source": "/writing/justice-not-political",
             "destination": "/writing/justice-not-political-theological",
+            "permanent": true
+        },
+        {
+            "source": "/writing/leviticus-19-border-crisis",
+            "destination": "/writing/what-the-bible-says-about-immigrants-and-refugees-in-depth",
             "permanent": true
         },
         {
@@ -1575,6 +1600,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/maternal-mortality-pro-life",
+            "destination": "/writing/the-consistent-pro-life-ethic-womb-to-tomb",
+            "permanent": true
+        },
+        {
             "source": "/writing/non-denominational-doesnt-mean-no-tradition",
             "destination": "/writing/why-there-are-so-many-christian-denominations",
             "permanent": true
@@ -1600,6 +1630,21 @@
             "permanent": true
         },
         {
+            "source": "/writing/post-roe-church-responsibility",
+            "destination": "/writing/the-consistent-pro-life-ethic-womb-to-tomb",
+            "permanent": true
+        },
+        {
+            "source": "/writing/pro-life-pro-choice-labels",
+            "destination": "/writing/christians-and-abortion",
+            "permanent": true
+        },
+        {
+            "source": "/writing/prophetic-tradition-economic-justice",
+            "destination": "/writing/jubilee-debt-and-the-economy-god-commanded",
+            "permanent": true
+        },
+        {
             "source": "/writing/prosperity-gospel-injustice",
             "destination": "/writing/prosperity-gospel-is-not-the-gospel",
             "permanent": true
@@ -1615,6 +1660,26 @@
             "permanent": true
         },
         {
+            "source": "/writing/rest-ambition-and-the-idol-of-success",
+            "destination": "/writing/what-the-sabbath-is-and-why-you-need-it",
+            "permanent": true
+        },
+        {
+            "source": "/writing/ruth-gleaning-laws",
+            "destination": "/writing/jubilee-debt-and-the-economy-god-commanded",
+            "permanent": true
+        },
+        {
+            "source": "/writing/sabbath-is-resistance",
+            "destination": "/writing/what-the-sabbath-is-and-why-you-need-it",
+            "permanent": true
+        },
+        {
+            "source": "/writing/sabbath-isnt-optional",
+            "destination": "/writing/what-the-sabbath-is-and-why-you-need-it",
+            "permanent": true
+        },
+        {
             "source": "/writing/sexless-marriage-conversation",
             "destination": "/writing/marriage-intimacy",
             "permanent": true
@@ -1627,6 +1692,26 @@
         {
             "source": "/writing/spiritual-abuse-how-good-theology-gets-weaponized",
             "destination": "/writing/religious-trauma-is-real",
+            "permanent": true
+        },
+        {
+            "source": "/writing/stranger-at-gate",
+            "destination": "/writing/what-the-bible-says-about-immigrants-and-refugees-in-depth",
+            "permanent": true
+        },
+        {
+            "source": "/writing/suffering-without-explanation",
+            "destination": "/writing/if-god-is-good-why-suffering",
+            "permanent": true
+        },
+        {
+            "source": "/writing/support-life-after-birth",
+            "destination": "/writing/the-consistent-pro-life-ethic-womb-to-tomb",
+            "permanent": true
+        },
+        {
+            "source": "/writing/symptoms-without-causes",
+            "destination": "/writing/individual-sin-and-systemic-sin-explained",
             "permanent": true
         },
         {
@@ -1680,8 +1765,23 @@
             "permanent": true
         },
         {
+            "source": "/writing/the-problem-of-suffering-honestly",
+            "destination": "/writing/if-god-is-good-why-suffering",
+            "permanent": true
+        },
+        {
             "source": "/writing/the-rise-of-the-nones",
             "destination": "/writing/why-people-are-leaving-the-church",
+            "permanent": true
+        },
+        {
+            "source": "/writing/theology-of-borders",
+            "destination": "/writing/what-the-bible-says-about-immigrants-and-refugees-in-depth",
+            "permanent": true
+        },
+        {
+            "source": "/writing/what-jubilee-means",
+            "destination": "/writing/jubilee-debt-and-the-economy-god-commanded",
             "permanent": true
         },
         {
@@ -1712,6 +1812,11 @@
         {
             "source": "/writing/whose-kingdom-jesus-and-political-power",
             "destination": "/writing/two-kingdoms-faith-and-state",
+            "permanent": true
+        },
+        {
+            "source": "/writing/why-does-god-allow-suffering",
+            "destination": "/writing/if-god-is-good-why-suffering",
             "permanent": true
         },
         {

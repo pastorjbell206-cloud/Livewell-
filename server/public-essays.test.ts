@@ -22,7 +22,9 @@ describe("public essay files", () => {
     const files = readdirSync(out);
     expect(written).toBe(indexed);
     expect(files.length).toBe(written + 4); // + index.json + index-lite.json + featured.json + canon.json
-    expect(written).toBeGreaterThan(600);
+    // A floor against an empty build, not a target: the rewrite program merges
+    // thin duplicates into single essays, so the library shrinks on purpose.
+    expect(written).toBeGreaterThan(300);
     expect(skipped).toEqual([]);
 
     const index = JSON.parse(readFileSync(path.join(out, "index.json"), "utf8"));

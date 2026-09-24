@@ -427,16 +427,6 @@
    "answer": "The sense that God is distant is not a conclusion you reasoned your way to. It is the weather of an age. A pastor who came to faith from atheism on disenchantment, the buffered self, and why the thinness you feel is the ceiling of a house rather than the edge of the world."
   }
  },
- "suffering-without-explanation": {
-  "metaDescription": "Everyone shows up with a reason for suffering. Job spends thirty seven chapters refusing every one, and when God finally speaks he gives none either.",
-  "source": "hand",
-  "grade": 8.6,
-  "excerptGrade": 10.8,
-  "qa": {
-   "question": "Why Does God Allow Suffering?",
-   "answer": "Everyone arrives with a reason. The book of Job spends thirty-seven chapters refusing every reason offered, and when God finally speaks, he never gives one either."
-  }
- },
  "the-theology-of-saturday": {
   "metaDescription": "We have a theology of the cross and a theology of the resurrection. We are very good at Friday and Sunday. We have almost nothing for Saturday.",
   "source": "derived",
@@ -692,14 +682,10 @@
   "excerptGrade": 7.1
  },
  "christians-and-abortion": {
-  "metaDescription": "The argument is loud because it is easy. I have been both kinds of certain. Neither one was looking at the room.",
-  "source": "derived",
-  "grade": 2.8,
-  "excerptGrade": 5.3,
-  "qa": {
-   "question": "What Should Christians Think About Abortion?",
-   "answer": "The argument is loud because it is easy. Two slogans, thrown past each other, by people who have already decided the other side is either a killer or a bully. I have been both kinds of certain. Neither one was looking at the room."
-  }
+  "metaDescription": "What the Bible and the historic church teach about abortion, the strongest pro-choice arguments answered, the hard cases, and grace for the wounded.",
+  "source": "rewrite",
+  "grade": 12.4,
+  "excerptGrade": 10.8
  },
  "did-god-command-genocide": {
   "metaDescription": "For years this was my strongest reason to reject the Bible, and I still think the person who reads these pages and recoils is reading them correctly.",
@@ -778,14 +764,10 @@
   }
  },
  "if-god-is-good-why-suffering": {
-  "metaDescription": "The strongest argument against God is not made by philosophers. It is made by a suffering child, and Dostoevsky put it better than any atheist since.",
-  "source": "derived",
-  "grade": 7.6,
-  "excerptGrade": 7.3,
-  "qa": {
-   "question": "If God Is Good, Why Is There So Much Suffering?",
-   "answer": "The strongest argument against God is not made by philosophers. It is made by a suffering child, and Dostoevsky put it better than any atheist since. Here is the problem of evil taken at full strength, no glib answers, no comfort that isn't earned."
-  }
+  "metaDescription": "Why does a good God allow suffering? Epicurus, Plantinga, Rowe's fawn, Job and the cross, and why the answer must never be used on the grieving.",
+  "source": "rewrite",
+  "grade": 7.2,
+  "excerptGrade": 9.7
  },
  "is-faith-irrational": {
   "metaDescription": "I spent years certain that faith was the enemy of reason and that I had chosen reason.",
@@ -964,12 +946,6 @@
   "source": "derived",
   "grade": 3.3,
   "excerptGrade": 8.7
- },
- "the-problem-of-suffering-honestly": {
-  "metaDescription": "The strongest argument against God is the child dying in the next room. The standard apologetic answers are too clean.",
-  "source": "derived",
-  "grade": 6,
-  "excerptGrade": 6.7
  },
  "the-questions-that-actually-matter": {
   "metaDescription": "Most defenses of Christianity answer questions skeptics aren't asking.",
@@ -1809,12 +1785,6 @@
   "grade": 9.3,
   "excerptGrade": 17.7
  },
- "book-ruth-gleaning-laws": {
-  "metaDescription": "The Book of Ruth is not a romance. That is not the first thing most of us were told about it.",
-  "source": "derived",
-  "grade": 1.4,
-  "excerptGrade": 1.4
- },
  "build-real-friendships-other-pastors": {
   "metaDescription": "The pastors' lunch happens four times a year in my city. Everybody is a little bit on.",
   "source": "derived",
@@ -1862,12 +1832,6 @@
   "source": "derived",
   "grade": 3.6,
   "excerptGrade": 3.7
- },
- "church-crisis-pregnancy": {
-  "metaDescription": "A woman in a crisis pregnancy is not a political cause. The church has often failed this moment.",
-  "source": "derived",
-  "grade": 6.3,
-  "excerptGrade": 16.2
  },
  "church-death-penalty": {
   "metaDescription": "The United States executes people in the name of the state. This is not a minor inconsistency.",
@@ -1921,12 +1885,6 @@
   "grade": 10.1,
   "excerptGrade": 16.8
  },
- "church-member-abortion-secret": {
-  "metaDescription": "She has been sitting in your congregation for years. The silence is not indifference.",
-  "source": "derived",
-  "grade": 5.7,
-  "excerptGrade": 6.7
- },
  "church-mental-health-justice": {
   "metaDescription": "Elijah collapsed under a broom tree and asked God to let him die (1 Kings 19:4). This was not an abstract crisis of faith.",
   "source": "derived",
@@ -1950,12 +1908,6 @@
   "source": "derived",
   "grade": 6.9,
   "excerptGrade": 14.6
- },
- "church-refugee-crisis": {
-  "metaDescription": "Before the policy arguments and the border statistics and the think-tank reports, there is a child. Eight years old, or eleven, or four.",
-  "source": "derived",
-  "grade": 6.9,
-  "excerptGrade": 6.9
  },
  "church-response-poverty-charity": {
   "metaDescription": "The food pantry is a good thing. The coat drive is a good thing. Charity responds to the wound. Justice asks about the weapon.",
@@ -2017,12 +1969,6 @@
   "grade": 11.1,
   "excerptGrade": 15.5
  },
- "complicity-not-innocence": {
-  "metaDescription": "The comfortable Christian position in a culture with genuine injustice is neither endorsement nor active resistance.",
-  "source": "derived",
-  "grade": 15,
-  "excerptGrade": 15
- },
  "conflict-is-not-failure": {
   "metaDescription": "The New Testament church had conflict before it had a second generation.",
   "source": "derived",
@@ -2034,12 +1980,6 @@
   "source": "derived",
   "grade": 10.6,
   "excerptGrade": 16.5
- },
- "consistent-pro-life-ethic": {
-  "metaDescription": "The pro-life movement began with a conviction worth defending: that human life, from its earliest form, bears the image of God and deserves protection.",
-  "source": "derived",
-  "grade": 12.9,
-  "excerptGrade": 8.8
  },
  "cost-of-ministry-silos": {
   "metaDescription": "Every church has them. The children's ministry that does not know what the youth ministry is teaching.",
@@ -2264,16 +2204,14 @@
   "excerptGrade": 8.2
  },
  "grief-abortion-church": {
-  "metaDescription": "Not everyone who has had an abortion is at peace with it. One camp says there is nothing to grieve. The pregnancy was a collection of cells.",
-  "source": "derived",
-  "grade": 3.7,
-  "excerptGrade": 14.4
- },
- "hard-cases-abortion-debate": {
-  "metaDescription": "The people who make abortion debates most uncomfortable are not the ideologues on either side.",
-  "source": "derived",
-  "grade": 12.3,
-  "excerptGrade": 12.3
+  "metaDescription": "What Scripture says about forgiveness and grief after abortion, what the research on mental health shows, and where women and men can find help and peace.",
+  "source": "rewrite",
+  "grade": 11.3,
+  "excerptGrade": 9,
+  "qa": {
+   "question": "Grief and Guilt After Abortion: Is There Forgiveness?",
+   "answer": "The forgiveness of God for abortion is real and complete, and it does not require pretending nothing was lost. The church once held the conviction and the way home in one practice; it has too often kept the first and closed the second."
+  }
  },
  "healthcare-moral-issue": {
   "metaDescription": "A woman in my congregation, I will call her Maria, worked two jobs, both without benefits.",
@@ -2335,18 +2273,6 @@
   "grade": 10,
   "excerptGrade": 14.1
  },
- "individual-sin-systemic-sin-2": {
-  "metaDescription": "There is a confession I have to make before I make an argument. I was incomplete.",
-  "source": "derived",
-  "grade": 4.5,
-  "excerptGrade": 4.5
- },
- "individual-sin-systemic-sin": {
-  "metaDescription": "The evangelical tradition I was formed in had a clear account of sin. Sin was personal.",
-  "source": "derived",
-  "grade": 6.7,
-  "excerptGrade": 6.7
- },
  "interior-life-of-pastor": {
   "metaDescription": "There is a kind of ministry that looks like faithfulness from the outside and is hollow from the inside. I have practiced it.",
   "source": "derived",
@@ -2401,12 +2327,6 @@
   "grade": 6.7,
   "excerptGrade": 17.7
  },
- "leviticus-19-border-crisis": {
-  "metaDescription": "The text is not ambiguous. It never was. That last phrase (I am the Lord your God) is not ornamental.",
-  "source": "derived",
-  "grade": 2.4,
-  "excerptGrade": 2.8
- },
  "literacy-as-justice": {
   "metaDescription": "Not summarized for the educated. Not read to the leadership, who would then explain it to the rest.",
   "source": "derived",
@@ -2418,12 +2338,6 @@
   "source": "derived",
   "grade": 5.6,
   "excerptGrade": 4
- },
- "maternal-mortality-pro-life": {
-  "metaDescription": "The United States has the highest maternal mortality rate among wealthy nations, not marginally, but by multiples.",
-  "source": "derived",
-  "grade": 14.6,
-  "excerptGrade": 14.6
  },
  "metrics-tell-church-healthy": {
   "metaDescription": "Ask the average pastor how his church is doing, and he will tell you a number. Attendance, usually. Sometimes giving.",
@@ -2575,12 +2489,6 @@
   "grade": 8.8,
   "excerptGrade": 8.8
  },
- "post-roe-church-responsibility": {
-  "metaDescription": "The church spent fifty years arguing for a political outcome. The outcome arrived.",
-  "source": "derived",
-  "grade": 6.9,
-  "excerptGrade": 6.9
- },
  "poverty-tourism-not-mission": {
   "metaDescription": "They return with photographs. The photographs are often shown in church, sometimes with tears.",
   "source": "derived",
@@ -2611,12 +2519,6 @@
   "grade": 4.7,
   "excerptGrade": 6.4
  },
- "pro-life-pro-choice-labels": {
-  "metaDescription": "The labels arrived before most of the conversations did. This is not an accident. Labels serve a political function.",
-  "source": "derived",
-  "grade": 7.4,
-  "excerptGrade": 14.2
- },
  "prophetic-imagination": {
   "metaDescription": "A summary of Walter Brueggemann's The Prophetic Imagination: royal consciousness, grief and hope, its fair critiques, and what it asks of the church today.",
   "source": "rewrite",
@@ -2634,12 +2536,6 @@
   "source": "derived",
   "grade": 9.9,
   "excerptGrade": 7.6
- },
- "prophetic-tradition-economic-justice": {
-  "metaDescription": "The prophets of Israel were not primarily social activists. They are central to it. We have domesticated them.",
-  "source": "derived",
-  "grade": 7.1,
-  "excerptGrade": 18.2
  },
  "prophets-expelled-sanctuary": {
   "metaDescription": "Amos was told to go home. The phrase is worth sitting with. \"The king's sanctuary and the temple of the kingdom.\" Not God's sanctuary.",
@@ -2724,24 +2620,6 @@
   "source": "derived",
   "grade": 14.1,
   "excerptGrade": 14.7
- },
- "ruth-gleaning-laws": {
-  "metaDescription": "The gleaning laws in Leviticus 19 and 23 are among the most underpreached passages in the Old Testament.",
-  "source": "derived",
-  "grade": 9.8,
-  "excerptGrade": 9.8
- },
- "sabbath-is-resistance": {
-  "metaDescription": "The fourth commandment is the longest commandment. This is not a coincidence.",
-  "source": "derived",
-  "grade": 5.4,
-  "excerptGrade": 5.9
- },
- "sabbath-isnt-optional": {
-  "metaDescription": "There will always be something. There will always be a crisis. Always a meeting that bled into another meeting.",
-  "source": "derived",
-  "grade": 5.5,
-  "excerptGrade": 16.2
  },
  "sabbatical-why-church-should-require": {
   "metaDescription": "The word sabbatical makes most churches nervous. They require it. A sabbatical is the biblical rhythm of rest, scaled up.",
@@ -2839,29 +2717,11 @@
   "grade": 4.1,
   "excerptGrade": 4.1
  },
- "stranger-at-gate": {
-  "metaDescription": "Not a visitor passing through. Not an enemy combatant. To have advocates at the gate was to have standing in society.",
-  "source": "derived",
-  "grade": 6.2,
-  "excerptGrade": 14.3
- },
- "support-life-after-birth": {
-  "metaDescription": "You cannot make a compelling case for the value of a human life and then decline to fund what that life requires to survive.",
-  "source": "derived",
-  "grade": 9.5,
-  "excerptGrade": 5.1
- },
  "symptoms-without-causes-charity": {
   "metaDescription": "There is a story, attributed to various sources over the years, about people standing on a riverbank pulling drowning bodies from the water.",
   "source": "derived",
   "grade": 13.4,
   "excerptGrade": 13.4
- },
- "symptoms-without-causes": {
-  "metaDescription": "The pantry is real. The coats for kids at Christmastime are real. I do not write to dismiss them.",
-  "source": "derived",
-  "grade": 1.2,
-  "excerptGrade": 1.5
  },
  "talk-global-missions-moves-congregation": {
   "metaDescription": "The missions presentation is a reliable feature of the American evangelical calendar.",
@@ -2916,12 +2776,6 @@
   "source": "derived",
   "grade": 6.9,
   "excerptGrade": 18.5
- },
- "theology-of-borders": {
-  "metaDescription": "Borders are very old human technology. The biblical narrative does not look back on that founding moment with uncritical approval.",
-  "source": "derived",
-  "grade": 10.1,
-  "excerptGrade": 15.9
  },
  "theology-of-enough": {
   "metaDescription": "The word is found early in the Exodus story, in the episode most preachers move past on their way to more dramatic material.",
@@ -3018,12 +2872,6 @@
   "source": "derived",
   "grade": 3.7,
   "excerptGrade": 6.2
- },
- "what-jubilee-means": {
-  "metaDescription": "The Jubilee was God's economic reset button, a radical vision of economic justice built into the law of Israel.",
-  "source": "derived",
-  "grade": 12.9,
-  "excerptGrade": 12.9
  },
  "what-we-owe-generations": {
   "metaDescription": "I have five sons. That fact is not incidental to anything I write. It is the weight that keeps my theology honest.",
@@ -3382,10 +3230,14 @@
   }
  },
  "jubilee-debt-and-the-economy-god-commanded": {
-  "metaDescription": "Every fiftieth year, a trumpet sounds on the Day of Atonement, and the whole economy resets. Land sold returns to the family that lost it.",
-  "source": "derived",
-  "grade": 8.2,
-  "excerptGrade": 12.2
+  "metaDescription": "How Leviticus 25, Deuteronomy 15 and Ruth governed land, debt and gleaning, whether Israel kept the Jubilee, and what the law asks of modern economies.",
+  "source": "rewrite",
+  "grade": 13,
+  "excerptGrade": 11.1,
+  "qa": {
+   "question": "Did Israel ever keep the Jubilee?",
+   "answer": "The honest answer is that we don't know. Some scholars read Leviticus 25 as a late, utopian priestly program never enforced; others think it preserves an old institution rarely kept on schedule. What is not in doubt is that debt release was a real practice in Israel's world. Moshe Weinfeld set out in Social Justice in Ancient Israel and in the Ancient Near East (1995) how Mesopotamian kings issued edicts of misharum, \"equity,\" often on taking the throne, cancelling certain debts and freeing people held in debt servitude."
+  }
  },
  "the-eye-of-the-needle-jesus-and-the-rich": {
   "metaDescription": "The point of the story was relief. See, the rich man can get in after all. He just has to stoop a little and drop some baggage.",
@@ -3568,16 +3420,14 @@
   "excerptGrade": 10.4
  },
  "what-the-sabbath-is-and-why-you-need-it": {
-  "metaDescription": "I came to faith from atheism. I came in arguing. God works for six days. Then God stops. The text does not say God grew tired.",
-  "source": "derived",
-  "grade": -0.4,
-  "excerptGrade": 19.5
- },
- "how-to-rest-in-a-culture-of-exhaustion": {
-  "metaDescription": "A man comes to me exhausted, and he has tried everything the culture told him to try. He took the vacation.",
-  "source": "derived",
-  "grade": 5.4,
-  "excerptGrade": 19.6
+  "metaDescription": "What the Sabbath is in Scripture, how Jesus and the early church kept it, four Christian views held today, and why rest is trust in God, not a reward.",
+  "source": "rewrite",
+  "grade": 10.4,
+  "excerptGrade": 12.4,
+  "qa": {
+   "question": "What Is the Sabbath and Should Christians Keep It Today?",
+   "answer": "The Sabbath was given twice, once to creatures and once to freed slaves, and Jesus claimed it rather than cancelled it. Christians still disagree about how it binds us, but every faithful answer rests on one distinction our culture has lost: rest as a reward for work, or rest as trust that God keeps the world running while we stop."
+  }
  },
  "prayer-when-you-do-not-feel-like-it": {
   "metaDescription": "I did not pray for the first twenty years of my life because I did not believe anyone was listening, and that, at least, was honest.",
@@ -3628,22 +3478,16 @@
   "excerptGrade": 9.3
  },
  "individual-sin-and-systemic-sin-explained": {
-  "metaDescription": "The Bible refuses to let us choose between personal guilt and structural evil, because Scripture indicts both at once.",
-  "source": "derived",
-  "grade": 11.1,
-  "excerptGrade": 11.1
+  "metaDescription": "Is sin only personal? What Isaiah, Amos, Daniel and Paul's powers teach about systemic sin, the strongest objections to the idea, and what repentance asks.",
+  "source": "rewrite",
+  "grade": 8.6,
+  "excerptGrade": 10.7
  },
  "what-is-biblical-justice-mishpat-and-tsedaqah": {
   "metaDescription": "Biblical justice is two Hebrew words held together, and the church keeps tearing them apart. A widow comes to the gate.",
   "source": "derived",
   "grade": 5.9,
   "excerptGrade": 8.4
- },
- "complicity-how-good-people-sustain-bad-systems": {
-  "metaDescription": "The Bible's most disturbing claim is that you can keep every rule and still help crucify the innocent. Pilate asked for a basin.",
-  "source": "derived",
-  "grade": 7.4,
-  "excerptGrade": 9.8
  },
  "why-the-prophets-made-everyone-uncomfortable": {
   "metaDescription": "The prophets were exiled and killed not because they predicted the future but because they refused to bless the present.",
@@ -3676,16 +3520,20 @@
   "excerptGrade": 7
  },
  "what-the-bible-says-about-immigrants-and-refugees-in-depth": {
-  "metaDescription": "Scripture commands love of the foreigner not as policy but as memory, and a people who forget the pit will always fear the stranger.",
-  "source": "derived",
-  "grade": 11.5,
-  "excerptGrade": 11.5
+  "metaDescription": "What the Torah's sojourner laws, Romans 13, Ruth and Matthew 25 teach about immigration, what Scripture binds Christians to, and what it leaves to policy.",
+  "source": "rewrite",
+  "grade": 11.6,
+  "excerptGrade": 8.6,
+  "qa": {
+   "question": "What Does the Bible Say About Immigration and Refugees?",
+   "answer": "Scripture binds the church to justice and love toward the sojourner, and it leaves the numbers and procedures of a nation's border to prudence. Both halves of that sentence cut, and they cut the right and the left with the same edge."
+  }
  },
  "the-consistent-pro-life-ethic-womb-to-tomb": {
-  "metaDescription": "If life is sacred because it bears the image of God, then it is sacred at every point that image is borne, and our convenient exceptions are the tell.",
-  "source": "derived",
+  "metaDescription": "What a consistent pro-life ethic asks of the church after birth: Bernardin's seamless garment, the early church, mothers, foster care and life after Dobbs.",
+  "source": "rewrite",
   "grade": 12,
-  "excerptGrade": 12
+  "excerptGrade": 10.9
  },
  "what-is-vocation-work-as-calling": {
   "metaDescription": "Vocation is not the job that makes you feel important, it is the place where God hides himself behind your ordinary work to feed your neighbor.",
@@ -3704,12 +3552,6 @@
   "source": "derived",
   "grade": 5.3,
   "excerptGrade": 13.9
- },
- "rest-ambition-and-the-idol-of-success": {
-  "metaDescription": "A pastor I respect ran himself into the ground and called it faithfulness.",
-  "source": "derived",
-  "grade": 7.6,
-  "excerptGrade": 11.6
  },
  "bivocational-ministry-done-right": {
   "metaDescription": "A man called me late on a Tuesday, ashamed in a way he could barely put into words.",
@@ -3922,16 +3764,6 @@
   "source": "derived",
   "grade": 7.8,
   "excerptGrade": 8.7
- },
- "why-does-god-allow-suffering": {
-  "metaDescription": "The problem of suffering is not an intellectual puzzle to be solved. The question arrives not in a seminar room but in a hospital corridor.",
-  "source": "derived",
-  "grade": 9.1,
-  "excerptGrade": 8.8,
-  "qa": {
-   "question": "Why Does God Allow Suffering?",
-   "answer": "The problem of suffering is not an intellectual puzzle to be solved. It is a wound that demands not explanation but presence, and the Christian answer begins at the cross, where God enters the wound."
-  }
  },
  "can-you-trust-the-bible": {
   "metaDescription": "The Bible is not what most people think it is, on either side of the argument. It is stranger, more honest, and tougher than the stories told about it.",
