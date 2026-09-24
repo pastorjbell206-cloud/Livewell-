@@ -316,10 +316,10 @@
   "excerptGrade": 10.8
  },
  "how-to-talk-kids-faith-doubt": {
-  "metaDescription": "You are afraid your uncertainty will infect your child. The thing that actually infects them is watching you hide it.",
-  "source": "derived",
-  "grade": 5.4,
-  "excerptGrade": 5.4
+  "metaDescription": "How to pass on faith to your kids when you have doubts: what Scripture says, what research on handing down faith found, and why honesty outlasts theater.",
+  "source": "rewrite",
+  "grade": 9.8,
+  "excerptGrade": 7.4
  },
  "raising-kids-who-think": {
   "metaDescription": "How to answer kids' hard questions about God: why Scripture expects children to ask, what the catechisms knew, and why owned questions outlast recitation.",
@@ -338,12 +338,6 @@
   "source": "derived",
   "grade": 3.4,
   "excerptGrade": 4.6
- },
- "the-father-wound-and-the-god-question": {
-  "metaDescription": "Before your child can hear the word Father about God, they will have learned what the word means from you.",
-  "source": "derived",
-  "grade": 6.4,
-  "excerptGrade": 7
  },
  "the-pastors-kids-are-watching": {
   "metaDescription": "Your congregation hears your sermons. Your children watch the drive home.",
@@ -3527,17 +3521,15 @@
   "grade": 5.9,
   "excerptGrade": 8.8
  },
- "how-to-raise-children-in-the-faith": {
-  "metaDescription": "One of my sons told me, somewhere around fourteen, that he was not sure he believed any of it.",
-  "source": "derived",
-  "grade": 8,
-  "excerptGrade": 15.1
- },
  "what-fatherhood-requires": {
-  "metaDescription": "A father came to me after a service, a good man by every external measure, and told me he was doing everything his own father had not.",
-  "source": "derived",
-  "grade": 12,
-  "excerptGrade": 14.6
+  "metaDescription": "What the Bible says about being a father: God as Father in Scripture and the creeds, the father wound, the projection objection, and what fathers owe.",
+  "source": "rewrite",
+  "grade": 11.3,
+  "excerptGrade": 9,
+  "qa": {
+   "question": "What Does the Bible Say About Fathers and the Father Wound?",
+   "answer": "The word father is full before the church ever says it. Scripture and the creeds insist that God's fatherhood is not modeled on ours but ours on his, which answers the skeptic and is the only real hope for a man whose own father left the word empty."
+  }
  },
  "protecting-your-marriage-from-work": {
   "metaDescription": "When work is hurting your marriage: why some jobs demand everything, how good work becomes an idol, and what the Bible's two reasons for rest teach.",

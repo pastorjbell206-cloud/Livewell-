@@ -1500,6 +1500,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/how-to-raise-children-in-the-faith",
+            "destination": "/writing/how-to-talk-kids-faith-doubt",
+            "permanent": true
+        },
+        {
             "source": "/writing/marriage-after-kids-arrive",
             "destination": "/writing/emotional-labor-in-marriage",
             "permanent": true
@@ -1577,6 +1582,11 @@
         {
             "source": "/writing/the-covenant-you-didnt-understand",
             "destination": "/writing/covenant-vs-contract-what-marriage-is",
+            "permanent": true
+        },
+        {
+            "source": "/writing/the-father-wound-and-the-god-question",
+            "destination": "/writing/what-fatherhood-requires",
             "permanent": true
         },
         {
