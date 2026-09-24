@@ -305,3 +305,23 @@ Suicide and Crisis Lifeline added to the path to help.
 - 1 Samuel 23: the sha'al note's "no longer asks God" (Saul inquires in
   14:37 and 28:6).
 - 1 Samuel 26: "hunting a partridge" explained.
+
+## 2 Samuel
+
+**Corrected.** 2 Samuel 1: "love" shares a root, not a word. 2 Samuel 5:
+Matthew 2:6's shepherding line comes from 2 Samuel 5:2. 2 Samuel 6: one
+sacrifice after six paces. 2 Samuel 8: Abraham's borders nearest fulfilment
+under David and Solomon. 2 Samuel 9: the baal element explained neutrally.
+2 Samuel 11: a reflection question no longer frames the chapter as David's
+temptation. 2 Samuel 12: Tamar's rape named as sexual violence; Jedidiah and
+the baptism marked as a thematic echo. 2 Samuel 13: care for Tamar
+strengthened; the National Sexual Assault Hotline (800-656-4673) named.
+2 Samuel 15, 17, 20, 23, 24: accuracy fixes.
+
+**To double-check.**
+- 2 Samuel 12: Rabbah's capture "probably" before Solomon's birth.
+- 2 Samuel 21: Rizpah's vigil lasting months.
+- 2 Samuel 1: the tone of the David and Jonathan hard question.
+- 2 Samuel 8:17: the "Ahimelech son of Abiathar" order could get a sentence.
+- Helplines named across the notes (988, the sexual assault hotline) are
+  US-only; consider adding a line for readers outside the US.
