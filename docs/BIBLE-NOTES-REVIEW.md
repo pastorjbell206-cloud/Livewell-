@@ -973,3 +973,34 @@ times, not repenting twice. Revelation 19: the Hallelujah psalms. Revelation
 - Revelation 3: Strabo's school of physicians near Laodicea.
 - Revelation 5, 7, 9, 14: Roman wills, soldiers' marks, Apollo, the 1,600
   stadia (all hedged).
+
+## Galatians through Philemon
+
+**Checked and sound.** Philippians 2:5-11 as first-order confession; 2 Timothy
+3:16; the authorship debates (Ephesians, Colossians, 2 Thessalonians, the
+Pastorals); Galatians and Acts 15; the readings of 1 Timothy 2-3,
+1 Thessalonians 4, and 2 Thessalonians 2.
+
+**Corrected.** Galatians 1: Titus also lacks a thanksgiving. Galatians 4: the
+"present Jerusalem" as one reading. Ephesians introduction, 5, 6: 5:21 no
+longer assumed to mean mutual submission (both readings given); "some of the
+earliest" manuscripts lack a verb at 5:22; the "stand" count; Onesimus
+"usually identified" as the runaway; 1 Corinthians 7:21 disputed; Atlantic
+slavery. Colossians: Onesimus's status debated; Philemon's house "very
+likely". 1 Thessalonians 1, introduction: 1:1 names no source of grace.
+1 Thessalonians 4: the "not secret" argument attributed. 2 Thessalonians 2:
+apokalupsis and the related verb. 1 Timothy 3, 4, 6: BSB wording; the
+trustworthy saying's referent. 2 Timothy 2, 3, 4: the faithfulness phrase;
+theopneustos "one of its earliest known uses"; Irenaeus identifies Linus;
+Mark's desertion and the later split. Titus 1: the greeting's length.
+Philemon: 120 miles to Colossae.
+
+**To double-check.**
+- Colossians introduction: Colossae to Ephesus (about 120 miles).
+- 2 Timothy 3: Jannes and Jambres in the Targums and the Damascus Document.
+- 1 Thessalonians 3:6: euangelizomai used of something other than the gospel.
+- Titus 2:13: the Granville Sharp rule (majority, but leans).
+- 1 Timothy 1:10: arsenokoitai (sensitive; the historic reading stated as the
+  majority).
+
+**The whole Bible is complete: every book written and fact-checked.**

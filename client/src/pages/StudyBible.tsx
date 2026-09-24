@@ -234,7 +234,7 @@ function BookPage({ books, book }: { books: BibleBook[]; book: BibleBook }) {
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-5)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "12px" }}>
-            <Link href="/study/bible" style={{ color: "inherit", textDecoration: "none", backgroundImage: "none" }}>The Study Bible</Link> · {testament}
+            <span><Link href="/study/bible" style={{ color: "inherit", textDecoration: "none", backgroundImage: "none" }}>The Study Bible</Link> · {testament}</span>
           </div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(2.3rem, 5.4vw, 3.8rem)", fontWeight: 400, letterSpacing: "-0.02em", lineHeight: 1.05, color: "var(--ink)", margin: "0 0 14px" }}>{book.name}</h1>
           {intro && <p style={{ fontFamily: "var(--B)", fontSize: "1.15rem", lineHeight: 1.65, color: "var(--ink-muted)", maxWidth: "62ch", margin: "0 0 14px" }}>{intro.tagline}</p>}
