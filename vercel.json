@@ -1535,8 +1535,18 @@
             "permanent": true
         },
         {
+            "source": "/writing/sexless-marriage-conversation",
+            "destination": "/writing/marriage-intimacy",
+            "permanent": true
+        },
+        {
             "source": "/writing/slow-drift-marriage",
             "destination": "/writing/the-slow-drift-that-ends-marriages",
+            "permanent": true
+        },
+        {
+            "source": "/writing/teaching-kids-about-doubt",
+            "destination": "/writing/raising-kids-who-think",
             "permanent": true
         },
         {
@@ -1547,6 +1557,11 @@
         {
             "source": "/writing/when-marriage-becomes-a-mirror",
             "destination": "/writing/when-you-married-someone-you-no-longer-recognize",
+            "permanent": true
+        },
+        {
+            "source": "/writing/when-your-child-asks-a-question",
+            "destination": "/writing/raising-kids-who-think",
             "permanent": true
         }
     ],

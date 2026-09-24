@@ -123,6 +123,7 @@ replaces: [slug-merged-in, another-slug]   # optional; these redirect here
 sources:
   - "Author, Title (Year)"
 review: "Anything James should check: a claim, a story kept from the source, a citation not fully certain."
+reviewed: 2026-09-24   # set by the integrity reviewer; without it the rewrite is not applied
 ---
 
 Body in Markdown. Sections under ### headings.

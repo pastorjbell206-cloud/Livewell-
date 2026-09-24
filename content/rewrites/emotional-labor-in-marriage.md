@@ -15,6 +15,7 @@ sources:
   - "Martin Luther, The Estate of Marriage (1522)"
   - "Charles Taylor, Sources of the Self: The Making of the Modern Identity (1989)"
 review: "Please check: (1) Hochschild's 2018 interview remark that emotional labor had been stretched beyond her meaning (The Atlantic, Julie Beck, November 2018) is paraphrased without naming the outlet. (2) The Cowans' finding is stated in general terms only. (3) The confession that you were the spouse who thought his visible half was his whole half is carried from the source essay; the lines about a pastor accepting public thanks for hidden labor at home are general. Confirm you are comfortable with both."
+reviewed: 2026-09-24
 ---
 
 Most people who type the words *mental load* or *emotional labor* into a search box are not looking for a sociology lesson. They are looking for language. Usually one spouse, and in most marriages it is the wife, has been carrying something for years that she cannot point to, and she has finally found a phrase that seems to fit it. It is the running inventory of a household that never switches off: the pediatrician appointment that has to be moved, the form due Friday, the gift for Saturday's birthday party, the fact that the youngest has been unusually quiet since Tuesday, the awareness that his mother hasn't been called in a month and will mention it at Thanksgiving. None of it is hard. What is hard is being the only person in the house who knows any of it exists.

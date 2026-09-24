@@ -18,6 +18,7 @@ sources:
   - "Miroslav Volf, Exclusion and Embrace (1996)"
   - "Timothy Keller, The Prodigal God (2008)"
 review: "Please check: (1) the paraphrases of Scheler (ressentiment spreads where formal equality meets factual inequality), of Lewis in the Cursings chapter of Reflections on the Psalms, and of Volf in Exclusion and Embrace are faithful to the works but were not checked against the page. (2) The first-person passages are general self-implication plus the allowed facts (husband, father of five sons), with no events; confirm you are comfortable with the line that you include yourself on the resented side of the ledger."
+reviewed: 2026-09-24
 ---
 
 Resentment rarely announces itself. Anger is loud and brief and at least honest about what it is, but resentment arrives slowly enough to pass for tiredness, or for the ordinary cooling of a long marriage. Somewhere along the way you started keeping a ledger you never decided to keep. You know who emptied the dishwasher and who walked past it, who remembered the pediatrician and who asked what time the appointment was, who got the easy evening and who got the bath, the homework, and the child who couldn't sleep. You aren't shouting. You're counting. And the counting feels like clarity, as if for the first time you're seeing the marriage as it actually is.

@@ -3,7 +3,7 @@ import { readFileSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 // @ts-expect-error — plain ESM script, no types.
-import { parseRewrite, loadRewrites, applyToLibrary, applyToRedirects } from "../scripts/apply-rewrites.mjs";
+import { parseRewrite, loadRewrites, loadAllRewrites, applyToLibrary, applyToRedirects } from "../scripts/apply-rewrites.mjs";
 
 // The rewrites James asked for (docs/rewrites/STANDARD.md). The standard's
 // judgment calls (depth, fairness, voice) are read, not tested; what can be
@@ -60,7 +60,14 @@ describe("every rewrite meets the checkable parts of the standard", () => {
   const index = readJson("content/rewrites.generated.json");
   const redirects: any[] = readJson("vercel.json").redirects;
 
-  it("the generated index matches the files, and the API carries the same copy", () => {
+  it("applies only reviewed rewrites", () => {
+    const reviewed = new Set(rewrites.map((r: any) => r.slug));
+    for (const r of loadAllRewrites(repoRoot)) {
+      if (!reviewed.has(r.slug)) expect(index.rewritten, `${r.slug} is unreviewed but applied`).not.toContain(r.slug);
+    }
+  });
+
+  it("the generated index matches the reviewed files, and the API carries the same copy", () => {
     expect(index.rewritten).toEqual(rewrites.map((r: any) => r.slug).sort());
     expect(readJson("api/rewrites.json")).toEqual(index);
   });

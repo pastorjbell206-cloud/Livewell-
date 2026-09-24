@@ -24,6 +24,7 @@ sources:
   - "Dietrich Bonhoeffer, 'A Wedding Sermon from a Prison Cell' (May 1943), in Letters and Papers from Prison"
   - "California Family Law Act (1969, effective 1970); Obergefell v. Hodges, 576 U.S. 644 (2015)"
 review: "(1) The divorce section concludes, as the essay's argument and not as personal testimony, toward the Reformation view with persistent abuse read as desertion; neither source essay took a position on grounds for divorce, so confirm James wants the essay to land there or cut that paragraph to the three views alone. (2) Bonhoeffer wedding-sermon line is quoted in the standard English translation; match it to the edition James uses. (3) The line that pastors spend premarital hours on budgets more than vows is a general indictment, not an event; confirm he is comfortable with it."
+reviewed: 2026-09-24
 ---
 
 Almost nobody who ends a marriage says it became wicked. What people say, and usually say honestly, is that they aren't happy anymore, that they've grown apart, that the marriage stopped giving them what it once gave. They are rarely lying about their own interior weather. What almost no one examines is the account of marriage that makes the report sound like a verdict. If a marriage exists to make two people happy, one that no longer does has failed at its one task, and a sensible person walks away from a failed instrument. The logic is clean. The question is whether the premise is true.

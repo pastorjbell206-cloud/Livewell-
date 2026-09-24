@@ -62,7 +62,12 @@ function unquote(s) {
   return t;
 }
 
-export function loadRewrites(root = ROOT) {
+/**
+ * Every rewrite file in content/rewrites/, reviewed or not. A rewrite reaches
+ * the site only once the integrity review has passed it and set `reviewed:` to
+ * the review date (docs/rewrites/STANDARD.md): loadRewrites() returns only those.
+ */
+export function loadAllRewrites(root = ROOT) {
   const dir = path.join(root, DIR);
   if (!existsSync(dir)) return [];
   return readdirSync(dir)
@@ -74,6 +79,10 @@ export function loadRewrites(root = ROOT) {
       if (slug !== f.replace(/\.md$/, "")) throw new Error(`${f}: front-matter slug "${slug}" does not match the file name`);
       return { ...r, slug, replaces: Array.isArray(r.replaces) ? r.replaces : r.replaces ? [r.replaces] : [], file: `${DIR}/${f}` };
     });
+}
+
+export function loadRewrites(root = ROOT) {
+  return loadAllRewrites(root).filter((r) => /^\d{4}-\d{2}-\d{2}$/.test(String(r.reviewed || "")));
 }
 
 const words = (s) => String(s || "").split(/\s+/).filter(Boolean).length;

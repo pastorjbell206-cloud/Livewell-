@@ -324,22 +324,16 @@
   "excerptGrade": 5.4
  },
  "raising-kids-who-think": {
-  "metaDescription": "We trained a generation to give the right answer and called it faith. The right answer is not faith.",
-  "source": "derived",
-  "grade": 4.3,
-  "excerptGrade": 5.2
+  "metaDescription": "How to answer kids' hard questions about God: why Scripture expects children to ask, what the catechisms knew, and why owned questions outlast recitation.",
+  "source": "rewrite",
+  "grade": 12.5,
+  "excerptGrade": 8.1
  },
  "raising-sons-manhood": {
   "metaDescription": "Your son is being handed two false manhoods and told to pick one. One inflates him, one erases him. Neither one is the cross.",
   "source": "derived",
   "grade": 2.8,
   "excerptGrade": 2.1
- },
- "teaching-kids-about-doubt": {
-  "metaDescription": "You are waiting for your child to bring you their doubts. They are waiting to find out if doubt is even allowed in this house.",
-  "source": "derived",
-  "grade": 3.4,
-  "excerptGrade": 3.1
  },
  "teenager-losing-faith": {
   "metaDescription": "Your first instinct will be to win the argument. The argument is not the thing your teenager is testing. You are.",
@@ -370,12 +364,6 @@
   "source": "derived",
   "grade": 5.5,
   "excerptGrade": 6.5
- },
- "when-your-child-asks-a-question": {
-  "metaDescription": "The question arrives at bedtime, the worst possible hour, and you do not have the answer.",
-  "source": "derived",
-  "grade": 7.6,
-  "excerptGrade": 6.4
  },
  "can-you-have-faith-and-doubt": {
   "metaDescription": "You were told real Christians do not have questions. The Hebrew word for faith says the opposite: not certainty, but a steadiness that can carry weight.",
@@ -2833,12 +2821,6 @@
   "grade": 6.3,
   "excerptGrade": 6.3
  },
- "sexless-marriage-conversation": {
-  "metaDescription": "There is a number that marriage researchers use: fewer than ten times a year. Below that threshold, the clinical language is \"sexless marriage.\"",
-  "source": "derived",
-  "grade": 11.8,
-  "excerptGrade": 6.7
- },
  "short-term-mission-trips-help-hurt": {
   "metaDescription": "The local construction workers who could have built the wall correctly in one day were not hired.",
   "source": "derived",
@@ -3580,16 +3562,20 @@
   "excerptGrade": 11.3
  },
  "marriage-intimacy": {
-  "metaDescription": "The church taught a generation that sex was dangerous, then handed them a ring and expected the danger to evaporate overnight.",
-  "source": "derived",
-  "grade": 12.3,
-  "excerptGrade": 12.6
+  "metaDescription": "What 1 Corinthians 7 and the Song of Songs teach about sex in marriage, why Christian marriages go sexless, and how couples can seek help without pressure.",
+  "source": "rewrite",
+  "grade": 10.7,
+  "excerptGrade": 11.1
  },
  "marriage-through-depression-and-crisis": {
-  "metaDescription": "When one of you goes dark, the vow stops being a feeling and becomes a structure, and the structure is the only thing that holds when the feeling is gone.",
-  "source": "derived",
-  "grade": 10.7,
-  "excerptGrade": 10.7
+  "metaDescription": "How to love a depressed husband or wife: why treatment and faith aren't rivals, what the Bible's laments offer, and why the caregiver needs help too.",
+  "source": "rewrite",
+  "grade": 11.8,
+  "excerptGrade": 6.6,
+  "qa": {
+   "question": "My Spouse Is Depressed. How Do I Help Without Losing Myself?",
+   "answer": "Depression in a marriage is a medical illness and a spiritual burden at once. The church has often met it with explanations, when the sick spouse needs treatment and presence and the well spouse needs help of their own. The vow was written for this season."
+  }
  },
  "parenting-discipline-that-forms-the-heart": {
   "metaDescription": "The word discipline shares a root with disciple, and we have spent a generation forgetting that.",
@@ -4246,10 +4232,10 @@
   "excerptGrade": 6.1
  },
  "interfaith-marriage": {
-  "metaDescription": "The most intimate theological divide is the one that runs through your own bed. And no amount of pretending it is not there will make it go away.",
-  "source": "derived",
-  "grade": 5.9,
-  "excerptGrade": 5.9
+  "metaDescription": "What the Bible says to a Christian thinking of marrying an unbeliever, and to one already married: 2 Corinthians 6, 1 Corinthians 7 and 1 Peter 3.",
+  "source": "rewrite",
+  "grade": 10.7,
+  "excerptGrade": 8.4
  },
  "digital-discipleship": {
   "metaDescription": "The algorithm is not neutral. It is forming you into a particular kind of person, distracted, reactive, shallow, and perpetually outraged.",

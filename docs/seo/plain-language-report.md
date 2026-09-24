@@ -6,13 +6,13 @@ Search engines and answer engines see a second layer beside every essay: a meta 
 
 | Measure | Value |
 |---|---|
-| Essays with a description | 664 |
+| Essays with a description | 661 |
 | Hand-written descriptions | 22 |
-| Derived from the essay's own sentences | 642 |
-| Essays with question-and-answer data | 94 |
+| Derived from the essay's own sentences | 639 |
+| Essays with question-and-answer data | 95 |
 | Average reading grade, descriptions | 7.9 |
 | Average reading grade, original standfirsts | 9.6 |
-| Derived descriptions at grade 12 or above (hand-rewrite queue) | 85 |
+| Derived descriptions at grade 12 or above (hand-rewrite queue) | 84 |
 
 ## Hand-rewrite queue
 
@@ -94,7 +94,6 @@ Derived descriptions that still read at college level. Each is true to the essay
 | not-persecuted-seduced-crisis-american-christianity | 12.3 | The crisis facing American Christianity is not primarily numerical. It is not about attendance decline or shrinking affiliation, though both are real. |
 | prophetic-pastor | 12.3 | And when they talk about pastoral ministry, they usually mean someone who comes to the bedside, who holds the grieving, who offers presence in the dark. |
 | where-church-was-silent | 12.3 | The church in America has a history that is not primarily the history of courage and faithfulness, though it contains that. |
-| marriage-intimacy | 12.3 | The church taught a generation that sex was dangerous, then handed them a ring and expected the danger to evaporate overnight. |
 | principalities-and-powers-the-bibles-language-for-systems | 12.3 | Paul had a vocabulary for systemic evil two thousand years before the word systemic existed. |
 | apologetics-hasnt-the-church-done-terrible-things | 12.2 | The crimes committed under the banner of Christ are real and many, and any honest defense of the faith has to own them before it says anything else. |
 | how-to-find-gods-will-for-your-career | 12.2 | God is far less concerned with the one perfect job he has hidden from you than with the kind of person you are becoming in whatever work you already hold. |

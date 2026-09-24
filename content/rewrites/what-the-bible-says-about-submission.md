@@ -19,6 +19,7 @@ sources:
   - "Kristin Kobes Du Mez, Jesus and John Wayne (2020)"
   - "Beth Allison Barr, The Making of Biblical Womanhood (2021)"
 review: "(1) The landing (5:21 governs, Paul keeps a real asymmetry of cost, the husband goes first) follows the first-person exegetical choices in the source essay what-the-bible-says-about-submission; confirm he still holds it. (2) The self-implication (not always having read the text well) is carried from that source; the more specific source confession of reading only the first three verses was left out, so restore it only if James wants it. (3) The line tying his five sons to how they will read Ephesians 5 was generalized to every father of sons; confirm the wording."
+reviewed: 2026-09-24
 ---
 
 The search usually begins somewhere private. A wife types the question late at night because someone has handed her a verse, and she wants to know whether it really says what she was told. A husband types it because he suspects the verse gives him something. A skeptic types it because she has heard that the Bible tells women to obey men and wants to see for herself how bad it is. All three are handed the same sentence, almost always on its own: "Wives, submit to your own husbands, as to the Lord" (Ephesians 5:22, ESV).

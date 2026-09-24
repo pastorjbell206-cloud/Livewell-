@@ -22,6 +22,7 @@ sources:
   - "Stanley Hauerwas, 'Sex and Politics: Bertrand Russell and Human Sexuality,' Christian Century (1978)"
   - "Wendell Berry, 'Poetry and Marriage: The Use of Old Forms,' in Standing by Words (1983)"
 review: "(1) Bach and Wyden's The Intimate Enemy is dated only to the late 1960s because the first-edition year (1968 or 1969) is not certain; fill in the year if James has the book. (2) The line placing the writer among those who know the pleasure of the unanswerable point comes from the source essay marriage-fighting-fair; confirm he still wants it."
+reviewed: 2026-09-24
 ---
 
 Most couples don't come apart over one catastrophic fight. They come apart over the same fight, held a hundred times. There is the one about money that is really about trust, the one about his mother that is really about loyalty, the one about the dishes that is really about whether anyone in the house has noticed how tired she is. By year ten the fight has a script. One pushes harder and the other goes quiet, or both go quiet and call it peace, and underneath the quiet a ledger keeps growing that neither of them will read aloud.

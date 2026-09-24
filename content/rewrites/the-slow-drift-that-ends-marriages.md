@@ -25,6 +25,7 @@ sources:
   - "John Gottman and Joan DeClaire, The Relationship Cure (2001)"
   - "Dietrich Bonhoeffer, 'A Wedding Sermon from a Prison Cell' (May 1943), in Letters and Papers from Prison"
 review: "Please check: (1) the Bonhoeffer wedding sermon line is now paraphrased, not quoted; restore it as a direct quotation only after checking the wording in your edition of Letters and Papers from Prison. (2) Hauerwas's wrong-person claim is paraphrased and attributed to his 1978 Christian Century essay; confirm the source. (3) The confession of choosing the urgent over the present, the email over the face across the room, is carried from the source essay; confirm you are comfortable with it."
+reviewed: 2026-09-24
 ---
 
 We carry a picture of how marriages end, and it nearly always involves a discovery. A message on the wrong phone, a confession at the kitchen table, a door closing at one in the morning that splits a life into before and after. Those endings are real, and they deserve every ounce of care the church can give. But they aren't how most marriages end. The more common ending has no scene in it at all. Two people raise the children, pay the mortgage, sit through the ball games and the funerals, and somewhere in the middle of all that competence they become roommates who share a last name. When someone finally asks what happened, the answer usually comes with a shrug: we just grew apart.

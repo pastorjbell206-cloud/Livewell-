@@ -17,6 +17,7 @@ sources:
   - "Philip Rieff, The Triumph of the Therapeutic (1966)"
   - "Hannah Arendt, The Human Condition (1958)"
 review: "(1) The closing confession (holding the receipt more often than tearing it up; forgiveness as a death he keeps being asked to die) is carried from his source essay forgiveness-in-marriage; confirm he still wants it. (2) The section on conditional and unconditional forgiveness lands, as the essay's conclusion, on release always owed and reconciliation requiring repentance, following marriage-forgiveness-and-repair; confirm."
+reviewed: 2026-09-24
 ---
 
 There is a sentence spoken in a great many marriages, usually late and usually in the kitchen, that carries more confused theology than most sermons. *I said I was sorry. Why can't you just forgive me?* The spouse who says it means something that sounds reasonable: an apology has been made, and the continued coolness in the house feels like a penalty collected after the bill was paid. The spouse who hears it hears a demand that the wound be declared healed on the offender's schedule. Both of them are using the word *forgiveness*, and neither of them is wrong about everything. They are simply asking one word to carry three different things.
