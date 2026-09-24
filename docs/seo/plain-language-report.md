@@ -6,13 +6,13 @@ Search engines and answer engines see a second layer beside every essay: a meta 
 
 | Measure | Value |
 |---|---|
-| Essays with a description | 634 |
-| Hand-written descriptions | 20 |
-| Derived from the essay's own sentences | 614 |
-| Essays with question-and-answer data | 100 |
-| Average reading grade, descriptions | 8.0 |
+| Essays with a description | 631 |
+| Hand-written descriptions | 19 |
+| Derived from the essay's own sentences | 612 |
+| Essays with question-and-answer data | 103 |
+| Average reading grade, descriptions | 8.1 |
 | Average reading grade, original standfirsts | 9.5 |
-| Derived descriptions at grade 12 or above (hand-rewrite queue) | 77 |
+| Derived descriptions at grade 12 or above (hand-rewrite queue) | 75 |
 
 ## Hand-rewrite queue
 
@@ -21,7 +21,6 @@ Derived descriptions that still read at college level. Each is true to the essay
 | Essay | Grade | Current description |
 |---|---|---|
 | megachurch-model | 21.7 | The megachurch movement reached millions and revealed something important about American Christianity's hunger for accessibility. |
-| non-denominational-doesnt-mean-no-tradition | 19 | The fastest-growing segment of American Christianity claims no denominational label. |
 | reformation-actually-about | 18.1 | The Protestant Reformation is one of the most consequential events in Western history, religious, cultural, political, economic. |
 | pentecostalism-and-the-global-south | 18 | The most significant development in global Christianity over the past century is not a new theology, a papal encyclical, or a denominational merger. |
 | delegation-is-not-weakness | 17.9 | Somewhere in the formation of American pastoral identity, we absorbed a theology of the indispensable pastor. |
@@ -34,7 +33,6 @@ Derived descriptions that still read at college level. Each is true to the essay
 | the-end-of-home-field-advantage | 15.6 | For fifteen centuries the church evangelized a culture that already half believed, the vocabulary pre-taught, the guilt pre-aimed, the God assumed. |
 | the-sin-we-stopped-naming | 15.5 | Progressive Christianity recovered structural sin and called it justice. |
 | 47-engaging-the-nones-what-research-tells-us-about-reaching-the-religiously-unaffiliated | 15.4 | The "nones", people who claim no religious affiliation when surveyed, are the fastest-growing religious demographic in the United States. |
-| jeremiah-letter-exiles | 15.3 | In 597 BCE, the Babylonian army under Nebuchadnezzar took the first wave of Jerusalem's population into captivity. |
 | bivocational-pastors-get-right | 15.2 | An enormous share of American pastors, in many denominations, most of them, serve their congregations on part-time or bivocational terms. |
 | why-trust-the-bible | 15.1 | Translated through telephone games, edited by councils with agendas, full of contradictions, that's the story most people inherit about the Bible. |
 | 3-illustrating-everything-with-success-stories | 15 | It implies that faithful application of biblical truth reliably produces good outcomes in visible, timely ways. |

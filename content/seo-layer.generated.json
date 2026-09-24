@@ -164,10 +164,14 @@
   "excerptGrade": 6
  },
  "exile-is-not-the-end": {
-  "metaDescription": "The church in the West keeps treating its loss of cultural power as a catastrophe.",
-  "source": "derived",
-  "grade": 6.8,
-  "excerptGrade": 7.6
+  "metaDescription": "What Jeremiah 29 meant to the exiles of 597 BC, how Peter and Augustine read it, and whether American Christians can honestly call themselves exiles.",
+  "source": "rewrite",
+  "grade": 13.5,
+  "excerptGrade": 11.1,
+  "qa": {
+   "question": "Are American Christians exiles at all?",
+   "answer": "The modern revival of the word came from more than one direction. Stanley Hauerwas and William Willimon's Resident Aliens (1989) marked Christendom's end with a small scene from Willimon's youth, a Sunday evening in 1963 when the Fox Theater in Greenville, South Carolina, opened in defiance of the old blue laws. They called the church a colony, an island of one culture in the middle of another, whose first political task is to be the church. Lee Beach's The Church in Exile (2015) developed the exile reading into a practical theology for congregations after Christendom."
+  }
  },
  "the-numbers-behind-the-decline": {
   "metaDescription": "The statistics about the dying church get quoted in two directions, apocalypse and denial, and both are usually wrong.",
@@ -1774,10 +1778,10 @@
   "excerptGrade": 9.6
  },
  "amos-american-church": {
-  "metaDescription": "Amos did not come from the professional class. This detail is not incidental. It is the credential he is offering instead of the one he does not have.",
-  "source": "derived",
-  "grade": 5.3,
-  "excerptGrade": 15.8
+  "metaDescription": "What the prophet Amos told prosperous, worshiping Israel under Jeroboam II about worship without justice, and what his warning means for churches today.",
+  "source": "rewrite",
+  "grade": 13.9,
+  "excerptGrade": 10.2
  },
  "anxiety-perfectionism-pastor-breaking-cycle": {
   "metaDescription": "The perfectionist pastor looks, from the outside, like a man of unusually high standards. He prepares more thoroughly than anyone around him.",
@@ -2370,12 +2374,6 @@
   "source": "derived",
   "grade": 3.1,
   "excerptGrade": 3.1
- },
- "jeremiah-letter-exiles": {
-  "metaDescription": "In 597 BCE, the Babylonian army under Nebuchadnezzar took the first wave of Jerusalem's population into captivity.",
-  "source": "derived",
-  "grade": 15.3,
-  "excerptGrade": 15.3
  },
  "justice-not-political-theological": {
   "metaDescription": "Somewhere in the last several decades of American church life, a strange inversion occurred.",
@@ -3127,12 +3125,6 @@
   "grade": 9.5,
   "excerptGrade": 15.3
  },
- "why-poverty-political": {
-  "metaDescription": "The most effective way to keep the church silent on poverty is to convince it that poverty is a personal problem.",
-  "source": "derived",
-  "grade": 10.6,
-  "excerptGrade": 10.6
- },
  "widow-orphan-stranger": {
   "metaDescription": "Count them through the canon. Exodus 22. Deuteronomy 10, 14, 16, 24, 26, 27. Zechariah 7. Malachi 3. James 1.",
   "source": "derived",
@@ -3304,16 +3296,20 @@
   "excerptGrade": 5.4
  },
  "the-great-awakenings-and-the-making-of-american-faith": {
-  "metaDescription": "American Christianity was born in revival. That fire gave it a faith of the heart, and it also taught it to trust feeling over the church.",
-  "source": "derived",
-  "grade": 6.3,
-  "excerptGrade": 4.4
+  "metaDescription": "The First and Second Great Awakenings explained: Edwards, Whitefield, Cane Ridge, Finney, revival and slavery, and what revivalism gave and cost.",
+  "source": "rewrite",
+  "grade": 14,
+  "excerptGrade": 9.9
  },
  "why-there-are-so-many-christian-denominations": {
-  "metaDescription": "The thirty thousand denominations number is a misused statistic. The stubborn fact is how much divided Christians still confess in common.",
-  "source": "hand",
-  "grade": 9.9,
-  "excerptGrade": 11.2
+  "metaDescription": "Why Christians divided, from 1054 and the Reformation to American revivals and Azusa Street, what still unites them, and what non-denominational means.",
+  "source": "rewrite",
+  "grade": 15.5,
+  "excerptGrade": 11.4,
+  "qa": {
+   "question": "Why Are There So Many Christian Denominations?",
+   "answer": "The divisions are real, they have dates, and many of them owe more to class, race and nation than to the Bible. Underneath them the churches still confess one creed, and the church that calls itself non-denominational is not an exit from that history but one more tradition inside it."
+  }
  },
  "the-crusades-what-actually-happened": {
   "metaDescription": "The Crusades are the favorite club used against the faith. The honest history is worse than the cliche, and its deepest critique is Christian, not secular.",
@@ -3418,10 +3414,14 @@
   "excerptGrade": 15.9
  },
  "is-poverty-political-the-bibles-answer": {
-  "metaDescription": "Ask whether poverty is political in most American churches and you will watch faces close.",
-  "source": "derived",
-  "grade": 10.7,
-  "excerptGrade": 14.6
+  "metaDescription": "What the Torah, the prophets, Jesus and the early church teach about the poor, how charity, justice and policy differ, and where Christians may disagree.",
+  "source": "rewrite",
+  "grade": 12.1,
+  "excerptGrade": 10.5,
+  "qa": {
+   "question": "What Does the Bible Say About Poverty, and Is It Political?",
+   "answer": "Scripture binds every Christian to the poor through the law, the prophets, Jesus and the apostles, but it hands no party a platform. The difference between charity, justice and policy is where honest argument begins."
+  }
  },
  "jubilee-debt-and-the-economy-god-commanded": {
   "metaDescription": "Every fiftieth year, a trumpet sounds on the Day of Atonement, and the whole economy resets. Land sold returns to the family that lost it.",
@@ -3921,12 +3921,6 @@
   "grade": 14.7,
   "excerptGrade": 17.2
  },
- "non-denominational-doesnt-mean-no-tradition": {
-  "metaDescription": "The fastest-growing segment of American Christianity claims no denominational label.",
-  "source": "derived",
-  "grade": 19,
-  "excerptGrade": 12.4
- },
  "calvinism-and-arminianism": {
   "metaDescription": "The oldest and most consequential debate in Protestant theology is also the most misunderstood.",
   "source": "derived",
@@ -3968,10 +3962,10 @@
   }
  },
  "purity-culture-and-its-wreckage": {
-  "metaDescription": "A generation was taught that their sexual worth was a commodity to be preserved.",
-  "source": "derived",
-  "grade": 9.3,
-  "excerptGrade": 8
+  "metaDescription": "What purity culture was, from True Love Waits to I Kissed Dating Goodbye, the harm it did, and the older Christian sexual ethic it distorted and obscured.",
+  "source": "rewrite",
+  "grade": 12.4,
+  "excerptGrade": 7.6
  },
  "prosperity-gospel-is-not-the-gospel": {
   "metaDescription": "What the prosperity gospel teaches, where it came from, why it draws the poor, and how Job, Paul, Hebrews 11 and the Beatitudes answer it from Scripture.",
@@ -4138,10 +4132,10 @@
   "excerptGrade": 8.1
  },
  "why-the-church-lost-the-culture-war": {
-  "metaDescription": "The church spent forty years trying to win a culture war it was never meant to fight. The cost was not just political defeat.",
-  "source": "derived",
-  "grade": 4.3,
-  "excerptGrade": 5.8
+  "metaDescription": "Where the phrase culture war came from, why Christians lost it, and what Hunter, Taylor, MacIntyre and 1 Peter show about witness without cultural power.",
+  "source": "rewrite",
+  "grade": 11.6,
+  "excerptGrade": 10.2
  },
  "white-evangelicalism-and-race": {
   "metaDescription": "The American church did not merely tolerate slavery. It theologized it.",

@@ -339,11 +339,6 @@
             "permanent": true
         },
         {
-            "source": "/writing/why-poverty-political",
-            "destination": "/living-well",
-            "permanent": true
-        },
-        {
             "source": "/writing/imago-dei-means-more",
             "destination": "/living-well",
             "permanent": true
@@ -1525,6 +1520,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/jeremiah-letter-exiles",
+            "destination": "/writing/exile-is-not-the-end",
+            "permanent": true
+        },
+        {
             "source": "/writing/loving-versus-worshiping-your-country",
             "destination": "/writing/the-flag-in-the-sanctuary",
             "permanent": true
@@ -1562,6 +1562,11 @@
         {
             "source": "/writing/married-someone-no-longer-recognize",
             "destination": "/writing/when-you-married-someone-you-no-longer-recognize",
+            "permanent": true
+        },
+        {
+            "source": "/writing/non-denominational-doesnt-mean-no-tradition",
+            "destination": "/writing/why-there-are-so-many-christian-denominations",
             "permanent": true
         },
         {
@@ -1682,6 +1687,11 @@
         {
             "source": "/writing/whose-kingdom-jesus-and-political-power",
             "destination": "/writing/two-kingdoms-faith-and-state",
+            "permanent": true
+        },
+        {
+            "source": "/writing/why-poverty-political",
+            "destination": "/writing/is-poverty-political-the-bibles-answer",
             "permanent": true
         },
         {
