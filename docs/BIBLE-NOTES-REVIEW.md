@@ -325,3 +325,20 @@ strengthened; the National Sexual Assault Hotline (800-656-4673) named.
 - 2 Samuel 8:17: the "Ahimelech son of Abiathar" order could get a sentence.
 - Helplines named across the notes (988, the sexual assault hotline) are
   US-only; consider adding a line for readers outside the US.
+
+## 1 Kings
+
+**Corrected.** Introduction, 1 Kings 14: the Chronicles of the Kings of
+Israel and of Judah are two books. Introduction: 2 Kings 24:18-25:30 is
+closely paralleled in Jeremiah 52. 1 Kings 2, 3, 8, 18, 22: counts and
+references fixed. 1 Kings 5: the cornerstone image comes from Psalm 118:22
+and Isaiah 28:16, not Solomon's foundations. 1 Kings 19: Exodus 19:16-18
+cited accurately; the Black Obelisk figure as Jehu or his envoy; 988 added to
+the path to help (no clinical language used of Elijah).
+
+**To double-check.**
+- Regnal dates follow Thiele-style chronology; others differ by a few years.
+- 1 Kings 14: the Shoshenq I monument fragment from Megiddo.
+- 1 Kings 17: Menander (via Josephus) on a drought under Ithobaal.
+- 1 Kings 6: Tell Tayinat and Ain Dara as temple parallels.
+- 1 Kings 19: which Shalmaneser III inscription calls Hazael "son of a nobody".
