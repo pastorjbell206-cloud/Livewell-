@@ -813,3 +813,27 @@ softened. Mark 7, 10, 11, 12, 14, 16: the vice list, Bartimaeus, John
 - Mark 4: the 1986 Galilee boat's stern (reconstructed).
 - Mark 10, 14, 15: the Sanhedrin's power to execute (debated).
 - Mark introduction: Farmer's The Synoptic Problem (1964).
+
+## Luke
+
+**Checked and sound.** Quirinius and the census (four solutions, left open);
+Tiberius's fifteenth year; the resurrection as first-order confession; the
+manuscript questions at 22:43-44 and 23:34a.
+
+**Corrected.** Introduction: Martha's sister Mary (Luke doesn't name
+Bethany); only Luke calls Jesus Savior; Herod's death "about 4 BC" throughout.
+Luke 2: Mary's purification offering, not a redemption payment. Luke 3: Admin
+and Arni against Matthew's Ram. Luke 6: John 18:22-23 correctly described.
+Luke 8: Mark 15:40-41 also names women. Luke 10: priests in Jericho per later
+tradition. Luke 15: Luke's "for you". Luke 18: the Didache's Wednesday and
+Friday fasts; propitiation and expiation stated as debated. Luke 19, 20, 21:
+word notes and the image of God as inference. Luke 22: Justin and Irenaeus
+knew the tradition of 22:43-44. Luke 24: Codex Bezae's omissions in full;
+Acts 1:3's forty days.
+
+**To double-check.**
+- Luke 2: the Priene inscription (9 BC); the AD 104 Egyptian census edict.
+- Luke 3: the Abila inscription and Lysanias.
+- Luke 7: 7:13 as the narrator's first "Lord".
+- Luke 11: the Didache and the Lord's Prayer's doxology.
+- Luke 17: the temple warning inscription's allogenes.
