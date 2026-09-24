@@ -120,3 +120,24 @@ as Acts 2:2-4 has it.
 - Exodus 21: Hammurabi's stela described as basalt (older sources say diorite).
 - Exodus 23: the Gezer Calendar dated to about the tenth century BC.
 - Exodus 32: the Ashkelon calf is bronze or copper with silver plating.
+
+## Leviticus introduction and chapters 1–15
+
+**Corrected.** Introduction: the narratives break the book rather than frame
+it; qadosh is the adjective "holy". Leviticus 1: birds are not tied to
+poverty in chapter 1, a single bird is asked for, and "holocaust" comes from
+the same Greek root. Leviticus 9: John 1:14's tent verb is in "made His
+dwelling among us". Leviticus 14: "one of" the most elaborate rituals; the
+purification-offering name as many scholars' choice; taher counted
+correctly. Leviticus 15: a normal period brings seven days' impurity; erev
+counted as a word.
+
+**To double-check.**
+- Introduction: "Torat Kohanim" as an early Jewish name (also Sifra's name).
+- Leviticus 4: the asher/ashrei wordplay (Rashi, the Talmud); the paraphrase
+  of Resh Lakish (Yoma 86b) on repentance.
+- Leviticus 7: the thanksgiving meal behind the Lord's Supper (Hartmut Gese).
+- Leviticus 13: nega's count in the chapter.
+- Leviticus 15: ancient restrictions on menstruating women at sacred sites.
+- Leviticus 9: the Ketef Hinnom scrolls as the oldest objects inscribed with
+  biblical words (depends on Barkay's dating).
