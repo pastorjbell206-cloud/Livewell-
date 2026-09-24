@@ -557,3 +557,29 @@ with the certain fact of copies among the Dead Sea Scrolls.
 - Ecclesiastes introduction: 4QQoh-a (about 175-150 BC).
 - Song 6: Tirzah before about 880 BC (Omri's move to Samaria).
 - Song 7: Heshbon's reservoirs (Tell Hesban).
+
+## Isaiah introduction and chapters 1–33
+
+**Checked and sound.** The authorship question; Isaiah 7:14 (almah,
+parthenos, the later Greek versions' neanis, Justin and Trypho, Christian and
+Jewish readings); 9:6-7; chapter 11; the Assyrian kings and dates; the
+oracles against the nations.
+
+**Corrected.** Introduction: Assyria "the dominant empire"; Jesus read Isaiah
+61 at Nazareth after teaching in Galilee (Luke 4:14-21). Isaiah 3: the Bible's
+longest list of women's clothing. Isaiah 7, 8: the Syro-Ephraimite war
+734-732 BC; Ahaz's altar copied from Damascus; the Siloam inscription (not the
+tunnel) found in 1880. Isaiah 9: Aram and Philistia as hostile neighbors.
+Isaiah 10: the refrain first appears at 5:25. Isaiah 18: Taharqa became
+pharaoh about 690 (the prince explanation and two-campaign theory added); the
+Ethiopian official "from beyond Judea and Samaria". Isaiah 23: ships of
+Tarshish in verses 1 and 14. Isaiah 27: the shofar on the Day of Atonement
+proclaims the Jubilee.
+
+**To double-check.**
+- Isaiah 6: the coal from the incense altar or the altar of burnt offering;
+  kaphar as "cover" (disputed etymology).
+- Isaiah 20: Sargon once known only from this verse (often repeated).
+- Isaiah 14: the "Sin of Sargon" text on his unrecovered body.
+- Isaiah 19: Josephus (Antiquities 13) on Onias and Leontopolis.
+- Introduction: the Great Isaiah Scroll (about 125 BC).
