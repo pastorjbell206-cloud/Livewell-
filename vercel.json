@@ -619,11 +619,6 @@
             "permanent": true
         },
         {
-            "source": "/writing/incarnation-changes-everything",
-            "destination": "/writing/why-the-incarnation-matters",
-            "permanent": true
-        },
-        {
             "source": "/writing/prayer-is-not-optional",
             "destination": "/writing/how-do-you-actually-pray",
             "permanent": true
@@ -1475,6 +1470,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/apologetics-why-does-god-allow-evil",
+            "destination": "/writing/if-god-is-good-why-suffering",
+            "permanent": true
+        },
+        {
             "source": "/writing/bible-submission-marriage",
             "destination": "/writing/what-the-bible-says-about-submission",
             "permanent": true
@@ -1517,6 +1517,11 @@
         {
             "source": "/writing/how-to-raise-children-in-the-faith",
             "destination": "/writing/how-to-talk-kids-faith-doubt",
+            "permanent": true
+        },
+        {
+            "source": "/writing/incarnation-changes-everything",
+            "destination": "/writing/why-the-incarnation-matters",
             "permanent": true
         },
         {
@@ -1612,6 +1617,21 @@
         {
             "source": "/writing/teaching-kids-about-doubt",
             "destination": "/writing/raising-kids-who-think",
+            "permanent": true
+        },
+        {
+            "source": "/writing/teen-does-science-disprove-god",
+            "destination": "/writing/faith-and-science",
+            "permanent": true
+        },
+        {
+            "source": "/writing/teen-if-god-is-good-why-is-there-suffering",
+            "destination": "/writing/if-god-is-good-why-suffering",
+            "permanent": true
+        },
+        {
+            "source": "/writing/teen-it-is-okay-to-doubt",
+            "destination": "/writing/can-you-have-faith-and-doubt",
             "permanent": true
         },
         {

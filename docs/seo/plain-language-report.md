@@ -6,13 +6,13 @@ Search engines and answer engines see a second layer beside every essay: a meta 
 
 | Measure | Value |
 |---|---|
-| Essays with a description | 639 |
+| Essays with a description | 634 |
 | Hand-written descriptions | 20 |
-| Derived from the essay's own sentences | 619 |
-| Essays with question-and-answer data | 103 |
+| Derived from the essay's own sentences | 614 |
+| Essays with question-and-answer data | 100 |
 | Average reading grade, descriptions | 8.0 |
 | Average reading grade, original standfirsts | 9.5 |
-| Derived descriptions at grade 12 or above (hand-rewrite queue) | 78 |
+| Derived descriptions at grade 12 or above (hand-rewrite queue) | 77 |
 
 ## Hand-rewrite queue
 
@@ -95,6 +95,5 @@ Derived descriptions that still read at college level. Each is true to the essay
 | how-to-find-gods-will-for-your-career | 12.2 | God is far less concerned with the one perfect job he has hidden from you than with the kind of person you are becoming in whatever work you already hold. |
 | charity-is-not-justice-the-difference | 12.1 | We have learned to give bread to the man at the gate and never ask who built the gate, and the Bible refuses to let mercy become a substitute for justice. |
 | ordinary-time | 12 | The church year has two famous seasons and one long stretch nobody talks about, the green months between Pentecost and Advent called Ordinary Time. |
-| apologetics-why-does-god-allow-evil | 12 | The suffering in the world is the oldest and heaviest reason to doubt God, and it deserves to be answered at full weight rather than waved away. |
 | the-consistent-pro-life-ethic-womb-to-tomb | 12 | If life is sacred because it bears the image of God, then it is sacred at every point that image is borne, and our convenient exceptions are the tell. |
 | evolution-and-genesis | 12 | The debate over evolution and Genesis has generated more heat than light for over a century. |

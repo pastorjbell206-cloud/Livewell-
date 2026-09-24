@@ -502,10 +502,10 @@
   }
  },
  "why-the-incarnation-matters": {
-  "metaDescription": "The Christmas story has been sentimentalized into harmlessness. The problem with the Christmas story is that you have heard it too many times to hear it.",
-  "source": "derived",
-  "grade": 8.1,
-  "excerptGrade": 9.4
+  "metaDescription": "What is the incarnation? John 1, Philippians 2, the councils from Nicaea to Chalcedon, and why God becoming man matters for sin, suffering and the body.",
+  "source": "rewrite",
+  "grade": 7.2,
+  "excerptGrade": 8.6
  },
  "easter-is-not-a-day": {
   "metaDescription": "We treat Easter as a single morning, lilies, a sunrise service, ham by noon, done.",
@@ -2347,12 +2347,6 @@
   "grade": 10,
   "excerptGrade": 14.1
  },
- "incarnation-changes-everything": {
-  "metaDescription": "We have made the incarnation into a preface. Jesus had to be human in order to die for human sins. The incarnation served that purpose.",
-  "source": "derived",
-  "grade": 6.1,
-  "excerptGrade": 16.6
- },
  "individual-sin-systemic-sin-2": {
   "metaDescription": "There is a confession I have to make before I make an argument. I was incomplete.",
   "source": "derived",
@@ -3239,16 +3233,6 @@
    "answer": "The popular definition of faith as belief without evidence is so common it feels obvious, and it happens to be wrong about what faith has always meant."
   }
  },
- "apologetics-why-does-god-allow-evil": {
-  "metaDescription": "The suffering in the world is the oldest and heaviest reason to doubt God, and it deserves to be answered at full weight rather than waved away.",
-  "source": "derived",
-  "grade": 12,
-  "excerptGrade": 12,
-  "qa": {
-   "question": "Why Would a Good God Allow So Much Evil?",
-   "answer": "The suffering in the world is the oldest and heaviest reason to doubt God, and it deserves to be answered at full weight rather than waved away."
-  }
- },
  "what-is-the-kingdom-of-god-and-why-it-changes-everything": {
   "metaDescription": "The kingdom of God is not heaven when you die, and not a project you build. Once you see what Jesus meant by it, the rest of the Bible reads differently.",
   "source": "hand",
@@ -3735,26 +3719,6 @@
    "answer": "You have heard that the Bible was copied, changed, and voted on by men with an agenda, so here is what the evidence actually shows."
   }
  },
- "teen-if-god-is-good-why-is-there-suffering": {
-  "metaDescription": "This is the question that actually drives people away from God, and it deserves far more than a slogan. This is the one.",
-  "source": "derived",
-  "grade": 5.3,
-  "excerptGrade": 9.2,
-  "qa": {
-   "question": "If God Is Good, Why Is There So Much Suffering?",
-   "answer": "This is the question that actually drives people away from God, and it deserves far more than a slogan."
-  }
- },
- "teen-does-science-disprove-god": {
-  "metaDescription": "You have been told science and faith are at war, but the history and the actual questions are stranger than the slogan.",
-  "source": "derived",
-  "grade": 8,
-  "excerptGrade": 8,
-  "qa": {
-   "question": "Doesn't Science Disprove God?",
-   "answer": "You have been told science and faith are at war, but the history and the actual questions are stranger than the slogan."
-  }
- },
  "teen-isnt-jesus-just-one-way-among-many": {
   "metaDescription": "Saying one religion is true sounds arrogant in a world of many faiths, so here is why Christians say it anyway and how to say it without sneering.",
   "source": "derived",
@@ -3764,12 +3728,6 @@
    "question": "Isn't Jesus Just One Way Among Many?",
    "answer": "Saying one religion is true sounds arrogant in a world of many faiths, so here is why Christians say it anyway and how to say it without sneering."
   }
- },
- "teen-it-is-okay-to-doubt": {
-  "metaDescription": "You think your doubts make you a bad Christian, and that fear is doing far more damage than the doubts ever could. Let me guess at something about you.",
-  "source": "derived",
-  "grade": 4.3,
-  "excerptGrade": 6.4
  },
  "what-the-bible-says-about-the-poor-and-the-stranger": {
   "metaDescription": "A man sleeps under the overpass two blocks from our church. I have driven past him on my way to preach about him.",
