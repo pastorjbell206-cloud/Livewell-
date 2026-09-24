@@ -903,3 +903,27 @@ Acts 24: verse 23. Acts 27: Matthew 12:39-40 (compare Luke 11:29-30).
 - Acts 10, 20: distances (Joppa to Caesarea; Miletus to Ephesus by road).
 - Acts 19: Ephesus or Pergamum as the provincial capital.
 - Acts 2: the Stone-Campbell view on baptism could be added.
+
+## 1 and 2 Corinthians
+
+**Checked and sound.** Roman Corinth's history and dates; the contested
+passages (7, 11, 12-14, 14:33-35) stated fairly; the creed of 15:3-8 as
+first-order confession; the unity of 2 Corinthians; the thorn in the flesh
+left open with three views.
+
+**Corrected.** 1 Corinthians introduction: in 1 Corinthians 12 the church is
+Christ's body (the headship image is Ephesians and Colossians). 1 Corinthians
+1, 4: moros; huperetes no longer glossed from "under-rower". 1 Corinthians 5:
+"Do you not know" first at 3:16. 1 Corinthians 7: Catholic canon law's
+Pauline privilege; 7:7 read two ways. 1 Corinthians 8, 10, 11, 12: counts,
+the Psalm 24 blessing, the setting of 11:5, the gift lists. 1 Corinthians 14:
+the originality of 14:34-35 held by "many, probably the majority"; historic
+practice stated. 1 Corinthians 15: Paul names no Scripture. 2 Corinthians 1:
+a path to help at 1:8. 2 Corinthians 6: Isaiah 49:8 follows the second
+Servant Song. 2 Corinthians 7, 10: counts; kanon's certain meanings. 2
+Corinthians 11: C. K. Barrett's moderate view of the super-apostles added.
+
+**To double-check.**
+- 1 Corinthians 11: church buildings two centuries later (Dura-Europos).
+- 1 Corinthians 8: meat and the poor (Theissen; Meggitt disputes).
+- The crisis-line wording (988 is US-only): one standard wording site-wide.
