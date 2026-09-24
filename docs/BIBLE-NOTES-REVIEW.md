@@ -949,3 +949,27 @@ paroikia. 1 John 3: teknon by usage. 2 John: shortest by verse count. Jude:
 - 1 Peter introduction: Silas and Silvanus as forms of one name.
 - Hebrews 13:20 as the only explicit mention of Jesus' resurrection.
 - 3 John: euodoo argued partly from etymology.
+
+## Revelation
+
+**Checked and sound.** The date debate (Domitian per Irenaeus; Nero); the
+seven cities' history; the imperial cult (Suetonius on "lord and god";
+Tiridates in AD 63); the four approaches stated evenly; 666 and 616 (the
+Nero spelling, the Oxyrhynchus papyrus, Irenaeus, Solomon's talents, 888);
+the four millennial views as second-order; no modern names as fulfilments;
+the Old Testament sources of the imagery; the resurrection and judgment as
+first-order confession. Word counts checked against the data.
+
+**Corrected.** Introduction and Revelation 5: John "looks and sees" the Lamb.
+Revelation 2: guild banquets' immorality as some ancient writers described
+it. Revelation 11: hail added at 11:19. Revelation 12: "one of the fullest"
+echoes of Genesis 3:15. Revelation 15: hoti. Revelation 16: cursing three
+times, not repenting twice. Revelation 19: the Hallelujah psalms. Revelation
+20: mille and annus.
+
+**To double-check.**
+- Revelation 6: Domitian's vine edict (Suetonius gives no date).
+- Revelation 2: Thyatira's guilds from inscriptions.
+- Revelation 3: Strabo's school of physicians near Laodicea.
+- Revelation 5, 7, 9, 14: Roman wills, soldiers' marks, Apollo, the 1,600
+  stadia (all hedged).
