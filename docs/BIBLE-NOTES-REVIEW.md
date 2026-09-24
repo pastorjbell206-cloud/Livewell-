@@ -495,3 +495,23 @@ help added.
 - Psalm 74: synagogues in the land before the last centuries BC.
 - Psalm 91: 11Q11.
 - Psalm 56: the Septuagint's rendering of Miktam.
+
+## Psalms 101–150
+
+**Checked and sound.** The New Testament citations of Psalms 110 and 118; the
+Psalm 119 acrostic outline and its lists; Psalm 137:9's honest, pastoral
+treatment and its C. S. Lewis reference.
+
+**Corrected.** Septuagint and Mishnah defined where they first appear. Psalm
+104: Livyatan. Psalm 105: torot (plural). Psalm 108: the headings' origin
+stated both ways; kavod no longer built on etymology; 587 or 586 BC. Psalm
+110: the Hasmoneans combined rule with the high priesthood (some later took
+the title king). Psalm 118: "surrounded" four times. Psalm 119: Zayin, "songs
+on the pilgrim road". Psalms 121, 126, 142, 145, 146, 150: word notes and
+counts. Psalm 137: the note no longer speaks in the first person.
+
+**To double-check.**
+- Psalm 113: the Hallel's place in the Seder per the Mishnah.
+- Psalms 122, 124, 131: "of David" missing in some Septuagint manuscripts.
+- Psalm 136: Pharaoh's "strong arm" (Hoffmeier's proposal).
+- Psalm 129: charash as one root or two.
