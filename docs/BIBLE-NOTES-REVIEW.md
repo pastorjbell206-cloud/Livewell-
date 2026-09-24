@@ -367,3 +367,24 @@ usual reckoning". 2 Kings 21: the upturned bowl as an image of emptiness.
 - 2 Kings 10: the Lachish gate-shrine toilet (excavators' reading, 2016).
 - 2 Kings 22: the Second District on the western hill.
 - 2 Kings 20: Merodach-baladan's second reign (704 or 703 BC).
+
+## 1 Chronicles
+
+**Corrected.** Spellings aligned with the BSB (Uzzah, Perez-uzzah,
+Bathsheba). Zerubbabel "led the returned community" (the timing of his return
+is disputed). 1 Chronicles 4: verse 22. 1 Chronicles 8: the baal names show
+older records, softened. 1 Chronicles 10: Philistine iron claim removed.
+1 Chronicles 11: the 2 Samuel 23 list ends with Uriah. 1 Chronicles 17: the
+promise itself is never called a covenant here. 1 Chronicles 18: differences
+from 2 Samuel 8 added. 1 Chronicles 27: thirteen tribal leaders; Eleazar son
+of Dodo. 1 Chronicles 28: David's bloodshed as "many" interpreters read it.
+1 Chronicles 29: the verse 21 sacrifices were burnt offerings.
+
+**To double-check.**
+- 1 Chronicles 11: Jashobeam's 300 against 800 in 2 Samuel 23:8 (not yet
+  mentioned in the note).
+- 1 Chronicles 16: the exact edges of the psalm parallels.
+- 1 Chronicles 25: Heman's sons' names read as a prayer (debated).
+- 1 Chronicles 13 and 26: Obed-edom's identity described slightly
+  differently.
+- 1 Chronicles 29: the Lord's Prayer doxology and verse 11.
