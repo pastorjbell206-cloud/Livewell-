@@ -283,3 +283,25 @@ services.
 - Judges 16: Augustine, The City of God, book 1 (chapters 21 and 26).
 - Ruth 2: an ephah of barley (size uncertain).
 - Ruth introduction: Ruth after Proverbs in the Leningrad Codex and BHS.
+
+## 1 Samuel
+
+**Corrected.** 1 Samuel 2: 2 Samuel 22 stands near the book's end; the
+fertility-shrine comparison removed. 1 Samuel 4: Izbet Sartah's alphabet
+inscription no longer called Hebrew. 1 Samuel 5, 12: wording fixes. 1 Samuel
+7: water-pouring also in 2 Samuel 23:16. 1 Samuel 15: verse 33 is poetic too.
+1 Samuel 16: the hard question no longer offers a modern diagnosis of Saul.
+1 Samuel 17: the oldest Greek lacks all of verses 12-31 and 55-58; "champion"
+occurs twice. 1 Samuel 18: Michal/Merab at 2 Samuel 21:8. 1 Samuel 19: the
+Psalm 59 heading no longer called a later addition. 1 Samuel 21: the madness
+and praise roots are separate. 1 Samuel 22, 24, 25: overstatements fixed.
+1 Samuel 29: Aphek at the southern edge of the Sharon. 1 Samuel 31: the 988
+Suicide and Crisis Lifeline added to the path to help.
+
+**To double-check.**
+- 1 Samuel 1: dedicating a child to a sanctuary as a known ancient practice.
+- 1 Samuel 4, 14: Shiloh's destruction dating; Michmash as Wadi Suweinit.
+- 1 Samuel 5: the seren and Dagon etymologies.
+- 1 Samuel 23: the sha'al note's "no longer asks God" (Saul inquires in
+  14:37 and 28:6).
+- 1 Samuel 26: "hunting a partridge" explained.
