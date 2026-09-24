@@ -715,3 +715,28 @@ Egypt "may well" have happened; Matthew's use of Hosea 11:1.
   (October 1844 came from Samuel Snow).
 - Hosea 2: God paying the bride price (a common reading, stated as fact).
 - Hosea 3: the barley-silver arithmetic and the homer's size.
+
+## Joel, Amos, Obadiah, Jonah, Micah
+
+**Checked and sound.** The date debates (Joel, Obadiah) and Jonah's genre;
+Amos's earthquake and setting; Micah 5:2 and Matthew 2:6; Amos 9:11-12 and
+Acts 15 (Edom/adam, yarash/darash); Joel 2 and Acts 2; Amos's justice oracles
+measured by the covenant, not by any modern political program.
+
+**Corrected.** Joel introduction: the relenting clause is Joel's addition
+(2:13). Amos: "usually regarded" the first writing prophet; the Joel-Amos
+echo depends on Joel's date; evyon five times; the chapter 4 stanzas; Hosea
+14:1; Jeroboam II dated 793-753 BC throughout (also in Jonah); David's tent in
+Acts 15 as Christian interpretation; the remnant word note. Obadiah: the
+parallel is to parts of Jeremiah 49; the prohibitions. Jonah: the Mark 4
+parallel as readers' observation; the prayer's last word; "one of the
+shortest" sermons; Nahum 3:19 also ends with a question; chus. Micah 5:
+Herod asked the chief priests and scribes. Micah 7: the list works inward.
+
+**To double-check.**
+- Amos 8: the 763 BC eclipse in the Assyrian eponym list.
+- Joel 1: the 1915 Jerusalem locust plague.
+- Jonah 3: Herodotus 9.24 on Persian mourning.
+- Micah 7: 7:18-20 after Jonah on the Day of Atonement; Tashlikh.
+- Micah 5: the Targum's messianic reading.
+- Amos 3, 7: the distance to Bethel (about 11-12 miles).
