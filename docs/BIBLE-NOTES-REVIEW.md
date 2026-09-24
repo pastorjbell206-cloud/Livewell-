@@ -837,3 +837,27 @@ Acts 1:3's forty days.
 - Luke 7: 7:13 as the narrator's first "Lord".
 - Luke 11: the Didache and the Lord's Prayer's doxology.
 - Luke 17: the temple warning inscription's allogenes.
+
+## John
+
+**Checked and sound.** Authorship views; the festivals and Jerusalem places
+(Bethesda, Siloam, Solomon's Colonnade, Hanukkah); the Passover chronology
+against the Synoptics; the evidence on 7:53-8:11; the care taken over "the
+Jews" (chapters 5, 7, 8, 9, 16, 18; Nostra Aetate); John 4 read without the
+noon-reputation assumption; the Christology and resurrection as confession.
+
+**Corrected.** John 1: monogenes ("unique" for many; "only begotten" still
+defended); exegesis from the related noun; "echoes" Exodus 34:6; Philo's
+"second god" acknowledged. John 7: early papyri read "not yet" at 7:8. John 9:
+the mud and Adam as Irenaeus's reading. John 10: shepherds sleeping at the
+gate per later travelers; poimen as a church title in Ephesians 4:11. John 11:
+Lazarus as the last and greatest sign. John 12: the citadel of Jerusalem;
+12:16 and 2:22. John 17: "standing" removed. John 18: Barabbas as substitution
+"often". John 19: Psalm 34:20 added. John 20: the resurrection evidence
+"commonly cited", granted by many and disputed by others; Didymus.
+
+**To double-check.**
+- John 13, 19: Annie Jaubert's calendar theory.
+- John 5: the fifth colonnade at the St. Anne pools (questioned).
+- John 18: the Passover release and Mishnah Pesahim 8:6.
+- John 21: 1 Peter 5:2 and Petrine authorship (contested).
