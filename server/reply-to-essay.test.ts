@@ -51,6 +51,6 @@ describe("the reply channel under every essay", () => {
     if (!html.includes("prerender-content")) return; // built without the prerender pass
     expect(html).toContain('class="pre-reply"');
     expect(html).toContain('href="mailto:Pastorjbell206@gmail.com?subject=Is%20Jesus%20Really%20the%20Only%20Way%3F"');
-    expect(html).toContain("argue back");
+    expect(html).toContain("tell me where");
   });
 });
