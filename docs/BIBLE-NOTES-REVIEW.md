@@ -342,3 +342,28 @@ the path to help (no clinical language used of Elijah).
 - 1 Kings 17: Menander (via Josephus) on a drought under Ithobaal.
 - 1 Kings 6: Tell Tayinat and Ain Dara as temple parallels.
 - 1 Kings 19: which Shalmaneser III inscription calls Hazael "son of a nobody".
+
+## 2 Kings
+
+**Checked and sound.** Every regnal and imperial date and every named
+inscription (the Mesha Stele, Black Obelisk, Tell al-Rimah stela,
+Tiglath-pileser's texts, Sennacherib's prism, the Babylonian Chronicle, the
+Jehoiachin ration tablets, the Siloam inscription, the Lachish letters, the
+Ekron inscription, the Gemariah bulla).
+
+**Corrected.** 2 Kings 5: metsora is one word; Gehazi's last appearance at
+Elisha's side. 2 Kings 8: the famine link softened. 2 Kings 9: "in peace"
+asked five times; chelqah distinguished from cheleq. 2 Kings 11: Matthew's
+genealogy omits Joash. 2 Kings 12: the king's twenty-third year; bedeq's other
+uses cited. 2 Kings 13: arrow-shooting softened. 2 Kings 16: Damascus and
+Assyria. 2 Kings 17: hevel noun and verb. 2 Kings 20: Manasseh's birth "on the
+usual reckoning". 2 Kings 21: the upturned bowl as an image of emptiness.
+2 Kings 23: the hard question no longer takes a side on church and state.
+2 Kings 25: Jehoiachin's release about 561 BC; the ration tablets are earlier.
+
+**To double-check.**
+- 2 Kings 8-9: the Tel Dan Stele's restored names; the Lachish letters'
+  "dog" phrase (letters 2, 5, 6).
+- 2 Kings 10: the Lachish gate-shrine toilet (excavators' reading, 2016).
+- 2 Kings 22: the Second District on the western hill.
+- 2 Kings 20: Merodach-baladan's second reign (704 or 703 BC).
