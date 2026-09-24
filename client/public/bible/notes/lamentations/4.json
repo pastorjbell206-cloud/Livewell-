@@ -6,26 +6,59 @@
   "cultural": "The chapter's contrasts depend on ancient ideas of value and honor. Gold was the most enduring and prized of metals; to say it has grown dull is to say what was thought incorruptible has been corrupted. Clay pots were cheap, everyday, and easily smashed. The nobles, once brighter than snow and ruddier than rubies (verse 7), are now blackened and shriveled: in the ancient world healthy, well-fed skin was a sign of status, and hunger showed on the body. The Hebrew word translated dignitaries may refer to princes or to Nazirites, people under a vow of special consecration (Numbers 6); translations differ.\n\nThe jackal and the ostrich (verse 3) were proverbial in Israel: even the jackal nurses its young, while the ostrich was thought to neglect its eggs (compare Job 39:13-16). The siege has made mothers crueler than wild animals. Verse 10 repeats one of the covenant curses of Deuteronomy 28:53-57. Verses 14 and 15 describe priests and prophets wandering blind and defiled by blood, so that people cry out Unclean at them, the same cry that the law required of a person with a skin disease (Leviticus 13:45). The religious leaders have become ritual outcasts. The cup that passes to Edom (verse 21) is the familiar prophetic image of the cup of God's wrath.",
   "literary": "Lamentations 4 is another alphabetic acrostic, with twenty-two stanzas, but each stanza is two lines long rather than three, so the poem is shorter and more compact than chapters 1 and 2. It opens, like chapters 1 and 2, with the lament cry how. The first half (verses 1 to 11) is a series of before-and-after comparisons that build to the statement that the LORD has exhausted His wrath. The second half (verses 12 to 16) assigns blame to prophets and priests. In verses 17 to 20 the speaker shifts to we, the voice of the survivors remembering the last days of the siege. The poem ends (verses 21 and 22) with paired words to the Daughter of Edom and the Daughter of Zion, reversing their fortunes: the one who rejoices will drink the cup, and the one who has drunk it will see her punishment end.",
   "outline": [
-    { "v": "1-11", "t": "Then and now: the precious made worthless by the siege" },
-    { "v": "12-16", "t": "The sins of prophets and priests" },
-    { "v": "17-20", "t": "Vain hopes: foreign help and the captured king" },
-    { "v": "21-22", "t": "Edom's cup and Zion's completed punishment" }
+    {
+      "v": "1-11",
+      "t": "Then and now: the precious made worthless by the siege"
+    },
+    {
+      "v": "12-16",
+      "t": "The sins of prophets and priests"
+    },
+    {
+      "v": "17-20",
+      "t": "Vain hopes: foreign help and the captured king"
+    },
+    {
+      "v": "21-22",
+      "t": "Edom's cup and Zion's completed punishment"
+    }
   ],
   "doctrines": [
-    { "id": "judgment", "note": "The poem calls Zion's punishment greater than Sodom's (verse 6), because Sodom fell in an instant while Jerusalem suffered slowly. Judgment corresponds to privilege: the people who had most light bore the heaviest consequence." },
-    { "id": "sin", "note": "The chapter identifies leaders' sin specifically: “the sins of her prophets and the guilt of her priests, who shed the blood of the righteous” (verse 13). Corruption at the top of a religious community brings ruin on the whole." },
-    { "id": "hope", "note": "“O Daughter of Zion, your punishment is complete; He will not prolong your exile” (verse 22). Chapter 3 affirmed that the Lord will not cast off forever; here, for the first time, Zion herself is told that her punishment has reached its end. The line anticipates the comfort of Isaiah 40:2, which speaks of Jerusalem's warfare ended and her iniquity pardoned." },
-    { "id": "messiah", "note": "Verse 20 calls the king “The LORD's anointed, the breath of our life.” The people's hope was bound to David's line. Its failure in Zedekiah raised the question of whether God's promise to David would stand, a question the later prophets answer with the promise of a true Messiah." }
+    {
+      "id": "judgment",
+      "note": "The poem calls Zion's punishment greater than Sodom's (verse 6), because Sodom fell in an instant while Jerusalem suffered slowly. Judgment corresponds to privilege: the people who had most light bore the heaviest consequence."
+    },
+    {
+      "id": "sin",
+      "note": "The chapter identifies leaders' sin specifically: “the sins of her prophets and the guilt of her priests, who shed the blood of the righteous” (verse 13). Corruption at the top of a religious community brings ruin on the whole."
+    },
+    {
+      "id": "hope",
+      "note": "“O Daughter of Zion, your punishment is complete; He will not prolong your exile” (verse 22). Chapter 3 affirmed that the Lord will not cast off forever; here, for the first time, Zion herself is told that her punishment has reached its end. The line anticipates the comfort of Isaiah 40:2, which speaks of Jerusalem's warfare ended and her iniquity pardoned."
+    },
+    {
+      "id": "messiah",
+      "note": "Verse 20 calls the king “The LORD's anointed, the breath of our life.” The people's hope was bound to David's line. Its failure in Zedekiah raised the question of whether God's promise to David would stand, a question the later prophets answer with the promise of a true Messiah."
+    }
   ],
   "words": [
-    { "s": "H4899", "note": "Mashiach, anointed. The word behind Messiah (and, through Greek, Christ). Kings and priests were anointed with oil when installed. Here it names Zedekiah, the reigning son of David, whose capture seemed to end the people's hope." },
-    { "s": "H5771I", "note": "Avon, iniquity, and also the guilt and punishment that follow from it. Hebrew often uses the same word for the wrong, the guilt, and its consequences. In verse 6 it means the punishment of the daughter of my people; in verse 22 it appears twice, as the punishment of Zion that is complete and the iniquity of Edom that will be punished." },
-    { "s": "H3563A", "note": "Kos, cup. The cup passed to Edom (verse 21) is the cup of God's wrath known from Jeremiah 25:15-29, where Edom is among the nations who must drink. Jerusalem has already drunk it; now it passes on." }
+    {
+      "s": "H4899",
+      "note": "Mashiach, anointed. The word behind Messiah (and, through Greek, Christ). Kings and priests were anointed with oil when installed. Here it names Zedekiah, the reigning son of David, whose capture seemed to end the people's hope."
+    },
+    {
+      "s": "H5771I",
+      "note": "Avon, iniquity, and also the guilt and punishment that follow from it. Hebrew often uses the same word for the wrong, the guilt, and its consequences. In verse 6 it means the punishment of the daughter of my people; in verse 22 it appears twice, as the punishment of Zion that is complete and the iniquity of Edom that will be punished."
+    },
+    {
+      "s": "H3563A",
+      "note": "Kos, cup. The cup passed to Edom (verse 21) is the cup of God's wrath known from Jeremiah 25:15-29, where Edom is among the nations who must drink. Jerusalem has already drunk it; now it passes on."
+    }
   ],
   "christ": "Verse 20 is the only place in Lamentations that uses the word anointed, mashiach, and it refers to a failed king. The people had said that under his shadow they would live among the nations, but Zedekiah was caught in their pits. The Old Testament does not end with that failure. The prophets promised a righteous Branch from David (Jeremiah 23:5-6) and a king who would truly be his people's life. The New Testament presents Jesus as that anointed one, the Christ, who was also captured and handed over to the nations, but who was raised and now gives the life that Zedekiah could not. The final verse also points forward: the promise that Zion's punishment is complete finds its deepest ground, for Christians, in the cross, where Jesus drank the cup of judgment (Mark 14:36). These are connections of theme and fulfillment, not predictions within the poem.",
   "hard": {
     "q": "Why is Jerusalem's punishment called greater than Sodom's, and why is Edom singled out for judgment at the end?",
-    "a": "Sodom, the city destroyed in Genesis 19, was proverbial for wickedness and sudden destruction. The poem says Jerusalem's punishment is greater (verse 6), not necessarily because her sin was worse in kind but because her suffering was longer and more terrible: Sodom was overthrown in an instant, while Jerusalem starved slowly. Some interpreters also see a principle stated elsewhere in Scripture: to whom much is given, much is required, and Jerusalem, which had the law, the temple, and the prophets, bore a heavier responsibility (compare Ezekiel 16:48). As for Edom, the prophets repeatedly condemn it for its conduct when Jerusalem fell, gloating over a brother nation and handing over fugitives (Obadiah 10-14). The closing verses are not simple revenge; they express the conviction that God's justice applies to all, and that those who rejoiced at another's ruin will answer for it. The poem hands that judgment to God, not to Judah."
+    "a": "Sodom, the city destroyed in Genesis 19, was proverbial for wickedness and sudden destruction. The poem says Jerusalem's punishment is greater (verse 6), not necessarily because her sin was worse in kind but because her suffering was longer and more terrible: Sodom was overthrown in an instant, while Jerusalem starved slowly. Some interpreters also see a principle stated elsewhere in Scripture: to whom much is given, much is required, and Jerusalem, which had the law, the temple, and the prophets, bore a heavier responsibility (compare Ezekiel 16:48). As for Edom, the prophets repeatedly condemn it for its conduct when Jerusalem fell, gloating over a brother nation and handing over fugitives (Obadiah 10-14). The closing verses are not simple revenge; they express the conviction that God's justice applies to all, and that those who rejoiced at another's ruin will answer for it. The poem hands that judgment to God, not to Judah.\n\nThis chapter describes horrors that some readers have lived through or live with now: hunger, the loss of children, a city in ruins. If reading it stirs grief or despair you are carrying, don't carry it alone. Tell someone you trust today, a friend, a pastor, a counselor, or a doctor. If you are thinking of ending your life, call or text 988 in the US, or contact your local emergency services."
   },
   "questions": [
     "The poem blames religious leaders who shed innocent blood and misled the people. How should communities of faith respond when their leaders fail?",

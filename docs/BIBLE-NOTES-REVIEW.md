@@ -621,3 +621,28 @@ very few such places); Uriah's return; Shaphan's family "stand by" Jeremiah.
 - Jeremiah 17, 23: the Greek lacks 17:1-4 and moves 23:7-8 (could be noted).
 - Jeremiah 22: Aharoni and Ramat Rahel (debated).
 - Jeremiah 13: the distance to the Euphrates; the spring near Parah.
+
+## Jeremiah 27–52 and Lamentations
+
+**Checked and sound.** Jeremiah 29:11 read in its context; the new covenant
+and Hebrews 8 (including the Greek "I disregarded them"); the archaeology
+(Lachish Letters 3, 4, 6; the Gemaryahu, Jehucal, and Gedaliah bullae; the
+Baruch bullae flagged as unprovenanced; the Nebo-sarsekim tablet; the
+Babylonian Chronicle; the Jehoiachin ration tablets); the fall's dates;
+paths to help in Lamentations.
+
+**Corrected.** Jeremiah 32: double documents known from Persian-period sealed
+papyri and later Judean desert deeds (the Elephantine claim removed).
+Jeremiah 39: 2 Kings 25 also records the temple's burning; galah no longer
+moralized from its root. Jeremiah 44: "more than twenty years" after the
+temple sermon. Jeremiah 45: about twenty years; the reply to Baruch no longer
+called wordplay. Lamentations introduction: hearing 1:12 as an echo of
+Christ's suffering is the church's reading, not the book's claim.
+Lamentations 4: a path to help added.
+
+**To double-check.**
+- Jeremiah 43: Petrie's "castle of the Jew's daughter"; the year-37 tablet.
+- Jeremiah 47: Kadytis as Gaza; the Saqqara Adon letter.
+- Jeremiah 40: the Tell el-Umeiri Baalis seal (1984).
+- Jeremiah 41: Pritchard's Gibeon pool.
+- Jeremiah 48: Josephus on Nebuchadnezzar's twenty-third year.
