@@ -740,3 +740,30 @@ Herod asked the chief priests and scribes. Micah 7: the list works inward.
 - Micah 7: 7:18-20 after Jonah on the Day of Atonement; Tashlikh.
 - Micah 5: the Targum's messianic reading.
 - Amos 3, 7: the distance to Bethel (about 11-12 miles).
+
+## Nahum, Habakkuk, Zephaniah, Haggai, Zechariah, Malachi
+
+**Checked and sound.** Nineveh's fall (612 BC); Habakkuk 2:4 and its three
+New Testament uses; Josiah's reign and reform; the Darius I dates for Haggai
+and Zechariah (520-518 BC); the Zechariah 9-14 authorship debate and its
+passion-narrative uses (9:9, 11:12-13, 12:10, 13:7); Malachi's messenger and
+John the Baptist.
+
+**Corrected.** Nahum 3: Jonah and Nahum kept together in the Twelve (Micah
+between them). Habakkuk 3: yeshuah in 3:8; Cushan as a people's name.
+Zephaniah 1: the "day of" phrases. Haggai: Jesus listening and asking in the
+temple (Luke 2:46); about sixteen years of stopped building. Zechariah
+introduction: "few" books quoted more in the passion accounts; Matthew
+credits Jeremiah; the center of the eight visions. Zechariah 11: the potter
+"may have" worked at the temple. Malachi: key-chapter wording; "My name"
+recurs; Matthew alone closes the Sermon on the Mount.
+
+**To double-check.**
+- Nahum 2: the Babylonian Chronicle's siege length; Diodorus on the river.
+- Zephaniah 1: Dies irae attributed to Thomas of Celano (traditional).
+- Zechariah 11, 12: the Syriac "treasury"; Matthew 27:9 variants; the
+  Talmud's messiah son of Joseph.
+- Zechariah 14: the Hazor earthquake; the Tabernacles haftarah.
+- Malachi 4: the winged-sun stamps; repeating 4:5; Sirach 48:10.
+
+**The Old Testament is complete: every book written and fact-checked.**
