@@ -1,0 +1,37 @@
+{
+  "title": "Psalm 112: The Person Who Fears the LORD",
+  "summary": "Psalm 112 describes the blessed person who fears the LORD and delights in his commandments. That person is generous, just, steady in the face of bad news, and remembered forever, while the wicked look on and waste away.",
+  "story": "Psalm 112 is the twin of Psalm 111. Where Psalm 111 praised the works of God and ended with the fear of the LORD as the beginning of wisdom, Psalm 112 begins with the man who fears the LORD and shows what that fear produces in a life. The pair stands just after the royal Psalm 110 and before the Hallel psalms (113 to 118). For the community of Book V, rebuilding after exile with little power, it offers a portrait of faithfulness that did not depend on a throne: a household marked by righteousness, generosity to the poor, and fearless trust.",
+  "historical": "Like Psalm 111, this psalm has no named author and opens with “Hallelujah!” Most scholars place the pair in the period after the exile, since both are alphabetic poems close to the wisdom tradition, though an earlier date cannot be ruled out. The portrait of the righteous man who lends freely and conducts his affairs with justice fits a settled agricultural community where debt, lending, and the treatment of the poor were daily concerns. After the exile those concerns were acute: Nehemiah 5 records Jews being forced to mortgage fields and sell children because of debts to their own countrymen, and Nehemiah's rebuke of the lenders shows how much the psalm's ideal mattered.\n\nThe psalm stands in line with Psalm 1, which also opens with a blessing on the one who delights in God's law, and with the wisdom of Proverbs, which contrasts the lasting house of the righteous with the ruin of the wicked.",
+  "cultural": "Wealth in the psalm is not a sign of greed but a resource for generosity. The law of Moses required lending to poor fellow Israelites without interest (Exodus 22:25; Leviticus 25:35-37) and commanded an open hand toward the needy (Deuteronomy 15:7-11). The righteous man of verse 5 is gracious and lends freely, and in verse 9 he has scattered his gifts to the poor, the image of a farmer sowing seed widely.\n\nThe horn in verse 9 was a common symbol of strength and dignity, taken from the horns of wild oxen and rams; to have one's horn lifted up meant to be honored and secure. Being remembered forever mattered deeply in a culture where a person's name lived on in descendants and in the community's memory. Gnashing the teeth in verse 10 is a gesture of rage and frustration, and bad news in verse 7 would be the kind of report that brought word of war, crop failure, or death.",
+  "literary": "Psalm 112 is an acrostic with the same form as Psalm 111: after Hallelujah, twenty-two short lines follow the Hebrew alphabet, two letters per verse in verses 1 to 8 and three in verses 9 and 10. The twins deliberately echo each other. Psalm 111:3 says of God that “His righteousness endures forever,” and Psalm 112:3 and 9 say the same of the righteous man. Psalm 111:4 calls the LORD gracious and compassionate, and Psalm 112:4 applies those words to the upright. The point of the echo is that the person who fears God comes to reflect God's own character. The last verse turns briefly to the wicked, forming a contrast like the one that ends Psalm 1.",
+  "outline": [
+    { "v": "1", "t": "The blessing on one who fears the LORD" },
+    { "v": "2-3", "t": "Descendants, a household, and enduring righteousness" },
+    { "v": "4-6", "t": "Light in darkness; a generous and just life" },
+    { "v": "7-8", "t": "A steady heart that does not fear bad news" },
+    { "v": "9", "t": "Gifts scattered to the poor" },
+    { "v": "10", "t": "The frustration of the wicked" }
+  ],
+  "doctrines": [
+    { "id": "wisdom", "note": "The psalm shows wisdom lived out. The fear of the LORD becomes delight in his commands, integrity in business, generosity to the poor, and courage in bad times." },
+    { "id": "faith", "note": "The righteous person “does not fear bad news” because his heart is “trusting in the LORD.” Faith here is not a feeling of certainty about outcomes but a settled confidence in God that frees a person from dread." },
+    { "id": "humanity", "note": "The echoes of Psalm 111 show that human beings were made to reflect God's character. Those who fear him become gracious, compassionate, and righteous as he is." }
+  ],
+  "words": [
+    { "s": "H0835", "note": "Esher, blessed or happy, the same word that opens Psalm 1. It describes a life that is going well in the deepest sense, a condition of flourishing under God rather than a passing feeling." },
+    { "s": "H6666", "note": "Tsedaqah, righteousness. The word means right conduct in relationships, and in the Old Testament it often includes generosity and care for the needy. Here it “endures forever” twice (verses 3 and 9), the very phrase Psalm 111 used of God." },
+    { "s": "H3559H", "note": "Kun, to be established or steadfast. The righteous man's heart is firm (verse 7). The word describes something fixed on a foundation, and the foundation named is trust in the LORD." },
+    { "s": "H6340", "note": "Pazar, to scatter. The image is of seed or gifts spread widely and freely. Paul quotes this verse in 2 Corinthians 9:9 to encourage generous giving, reading the righteous man's generosity as a harvest God supplies." }
+  ],
+  "christ": "Paul quotes verse 9 in 2 Corinthians 9:9 while urging the Corinthians to give generously to poor believers in Jerusalem, and he grounds that generosity in the grace of Jesus, who though rich became poor for their sake (2 Corinthians 8:9). The link is ethical and thematic rather than a prediction. The portrait of the one who perfectly fears God and delights in his commands is most fully seen in Jesus, and those united to him are formed into the same likeness. The fearlessness of verse 7 finds a New Testament parallel in Jesus' teaching not to be anxious, because the Father knows what his children need (Matthew 6:25-34).",
+  "hard": {
+    "q": "Does this psalm promise that godly people will always be wealthy and successful?",
+    "a": "Read on its own, verse 3 might sound like a promise of prosperity. But the psalm describes the general pattern of wisdom, the way God's world tends to work, rather than a guarantee for every case. The same Psalter includes lament after lament from righteous people who suffer and are poor, and Psalm 73 wrestles openly with the prosperity of the wicked. The wealth in Psalm 112 is also described in terms of what it does: it is lent freely and scattered to the poor, and the righteous man's lasting possession is his righteousness and good name. Interpreters in many traditions have therefore read the psalm as a picture of the blessed life whose final fulfillment lies in God's future, not as a formula for financial success. Prosperity teaching, which promises material wealth in return for faith, takes a wisdom pattern and turns it into a transaction the psalm never offers."
+  },
+  "questions": [
+    "The psalm pictures a person who does not fear bad news. What bad news do you most dread, and what would it look like to meet it with a steady heart?",
+    "Generosity in this psalm is part of righteousness, not an optional extra. How does your use of money reflect or fail to reflect the character of God?",
+    "Psalm 112 describes a person who becomes like the God of Psalm 111. What qualities of God do you hope others will see growing in you?"
+  ]
+}
