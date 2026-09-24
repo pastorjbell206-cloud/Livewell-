@@ -224,7 +224,8 @@
   "theme": 1,
   "score": 59,
   "redirected": false,
-  "replaces": []
+  "replaces": [],
+  "skip": "Susanna Bell's essay: rewrite only with her"
  },
  {
   "slug": "silence-and-solitude",
@@ -271,7 +272,8 @@
   "theme": 1,
   "score": 63,
   "redirected": false,
-  "replaces": []
+  "replaces": [],
+  "skip": "Susanna Bell's essay: rewrite only with her"
  },
  {
   "slug": "education-inequality",

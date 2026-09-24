@@ -50,6 +50,10 @@ really is a list.
 
 ## Integrity rules (non-negotiable)
 
+- **Only James's essays.** Essays by Susanna Bell (the byline map in
+  `client/src/pages/ArticleDetail.tsx`) are hers. They are not rewritten
+  without her.
+
 - **No invented quotations.** Quote a non-biblical source word for word only if
   you are certain of the exact wording and the work it comes from. Otherwise
   paraphrase and attribute it: "Charles Taylor argues in *A Secular Age* (2007)
