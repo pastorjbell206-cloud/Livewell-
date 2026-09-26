@@ -81,7 +81,7 @@ export default function TheologyQuiz() {
         <div style={{ minHeight: "60vh", display: "flex", alignItems: "center", justifyContent: "center", background: "var(--paper)" }}>
           <div style={{ textAlign: "center" }}>
             <div style={{ width: "40px", height: "40px", border: "3px solid var(--bone-muted)", borderTop: "3px solid var(--mustard)", borderRadius: "50%", animation: "spin 1s linear infinite", margin: "0 auto 16px" }} />
-            <p style={{ color: "var(--ink3)", fontFamily: "var(--F)" }}>Loading your quiz…</p>
+            <p style={{ color: "var(--ink3)", fontFamily: "var(--F)" }} role="status">Loading your quiz…</p>
           </div>
         </div>
         <Footer />

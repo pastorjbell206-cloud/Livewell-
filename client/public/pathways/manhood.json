@@ -35,13 +35,13 @@
     },
     {
       "kind": "book",
-      "heading": "Then read the book — free, then buy",
+      "heading": "Then work it through",
       "note": "Read it cover to cover on the site before you ever buy it.",
       "items": [
         {
-          "label": "Essays on Manhood",
-          "href": "/read/essays-manhood",
-          "blurb": "The gathered volume, for the man doing the long work of becoming one."
+          "label": "What Manhood Is For: a Bible study",
+          "href": "/studyguides/manhood",
+          "blurb": "A working study for the man doing the long work of becoming one."
         }
       ]
     }

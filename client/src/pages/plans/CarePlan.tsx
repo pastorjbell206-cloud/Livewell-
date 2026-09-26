@@ -146,8 +146,8 @@ export default function CarePlan() {
                 <div
                   key={w.n}
                   style={{
-                    background: "#FFFFFF",
-                    border: isCurrent ? "1px solid var(--mustard)" : "1px solid rgba(20,17,12,0.08)",
+                    background: "var(--card)",
+                    border: isCurrent ? "1px solid var(--mustard)" : "1px solid var(--border)",
                     borderTop: "2px solid var(--mustard)",
                     padding: "var(--s-3)",
                     marginBottom: "var(--s-3)",

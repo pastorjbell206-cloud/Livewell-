@@ -13,7 +13,7 @@
  * workspace, mustard as punctuation (active bar, kicker), warm grays.
  */
 import { Link, useLocation } from "wouter";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useAuth } from "@/_core/hooks/useAuth";
 import { ArrowUpRight, LogOut, PanelLeftClose, PanelLeft, ChevronRight } from "lucide-react";
 import { ADMIN_NAV } from "@/components/admin/nav";
@@ -61,6 +61,17 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
     try { return localStorage.getItem(COLLAPSE_KEY) === "1"; } catch { return false; }
   });
   const [mobileOpen, setMobileOpen] = useState(false);
+
+  // The drawer honors the house dialog contract: Escape closes it (same as
+  // BookPreview and CommandPalette), so keyboard users are never trapped.
+  useEffect(() => {
+    if (!mobileOpen) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setMobileOpen(false);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [mobileOpen]);
 
   const toggleCollapsed = () => {
     setCollapsed((c) => {

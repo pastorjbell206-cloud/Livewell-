@@ -1,8 +1,10 @@
 import { Link, useLocation } from "wouter";
+import { scrollBehavior } from "@/lib/motion";
 import { ArrowRight } from "lucide-react";
 import { SEOMeta } from "@/components/SEOMeta";
 import { GeneratedCover, coverThemeFor } from "@/components/GeneratedCover";
 import { READING_PATHS as CANONICAL_PATHS, availableCount } from "@/lib/readingPaths";
+import { READING_PATHS as SERIES_PATHS } from "@/data/reading-paths-post-christian";
 
 interface PathArticle {
   title: string;
@@ -183,8 +185,8 @@ const READING_PATHS: ReadingPath[] = [
     estimatedTime: "55 minutes, from Amos to the present",
     articles: [
       {
-        title: "Where the Church Was Silent",
-        slug: "where-church-was-silent",
+        title: "Complicity: How Good People Sustain Bad Systems",
+        slug: "complicity-how-good-people-sustain-bad-systems",
         description:
           "The hardest case against the church is not an argument.",
         readTime: "11 min read",
@@ -227,7 +229,7 @@ export default function ReadingPaths() {
   const scrollToPath = (id: number) => {
     const el = document.getElementById(`path-${id}`);
     if (el) {
-      el.scrollIntoView({ behavior: "smooth", block: "start" });
+      el.scrollIntoView({ behavior: scrollBehavior(), block: "start" });
     }
   };
 
@@ -235,7 +237,7 @@ export default function ReadingPaths() {
     <>
       <SEOMeta
         title="Reading Paths — LiveWell by James Bell"
-        description="Five curated reading paths through marriage, doubt, pastoral life, parenting, and prophetic justice. Start where the weight is heaviest."
+        description="Curated reading paths through marriage, doubt, pastoral life, parenting, justice, and the post-Christian reckoning. Start where the weight is heaviest."
         keywords="reading paths, curated essays, marriage, doubt, pastoral burnout, parenting, justice, theology"
       />
 
@@ -687,6 +689,48 @@ export default function ReadingPaths() {
       })}
 
       {/* CLOSING SECTION */}
+
+      {/* THE POST-CHRISTIAN SERIES — eight sequenced paths through the
+          60-essay series. Essay pages link here as /reading-paths#<slug>
+          (ArticleNextSteps), so each block carries id={path.slug}. */}
+      <section style={{ background: "var(--bone-warm)", padding: "4rem 1.5rem" }}>
+        <div style={{ maxWidth: "760px", margin: "0 auto" }}>
+          <div style={{ fontFamily: "var(--U)", fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "1rem" }}>
+            The post-Christian series
+          </div>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(1.6rem, 3.5vw, 2.2rem)", fontWeight: 400, lineHeight: 1.15, letterSpacing: "-0.02em", color: "var(--ink)", marginBottom: "0.9rem" }}>
+            Eight paths through the reckoning
+          </h2>
+          <p style={{ fontSize: "0.95rem", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "62ch", marginBottom: "2.5rem" }}>
+            The sixty-essay series on Christianity after Christendom, sequenced for the reader you actually are: the historian, the doubter, the one the church hurt, the one still outside looking in.
+          </p>
+          {SERIES_PATHS.map((path) => (
+            <div key={path.slug} id={path.slug} style={{ borderTop: "1px solid var(--border)", padding: "2rem 0", scrollMarginTop: "90px" }}>
+              <h3 style={{ fontFamily: "var(--F)", fontSize: "1.4rem", fontWeight: 400, color: "var(--ink)", margin: "0 0 0.4rem" }}>
+                {path.title}
+              </h3>
+              <p style={{ fontFamily: "var(--U)", fontSize: "0.8rem", color: "var(--mustard-text)", margin: "0 0 0.75rem" }}>
+                For: {path.audience} &middot; {path.articles.length} essays &middot; {path.estimatedTime}
+              </p>
+              <p style={{ fontSize: "0.95rem", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "62ch", margin: "0 0 1.25rem" }}>
+                {path.introduction}
+              </p>
+              <ol style={{ margin: 0, padding: 0, listStyle: "none", display: "flex", flexDirection: "column", gap: "0.6rem" }}>
+                {path.articles.map((a, i) => (
+                  <li key={a.slug}>
+                    <Link href={`/writing/${a.slug}`} style={{ display: "flex", gap: "0.75rem", alignItems: "baseline", textDecoration: "none" }}>
+                      <span style={{ fontFamily: "var(--U)", fontSize: "0.75rem", color: "var(--ink-muted)", flex: "0 0 1.4rem" }}>{i + 1}.</span>
+                      <span style={{ fontFamily: "var(--B)", fontSize: "0.95rem", color: "var(--ink)", borderBottom: "1px solid var(--mustard)", paddingBottom: "1px" }}>{a.title}</span>
+                      <span style={{ fontFamily: "var(--U)", fontSize: "0.75rem", color: "var(--ink-muted)", marginLeft: "auto", flexShrink: 0 }}>{a.readTime}</span>
+                    </Link>
+                  </li>
+                ))}
+              </ol>
+            </div>
+          ))}
+        </div>
+      </section>
+
       <section
         style={{
           background: "var(--charcoal)",

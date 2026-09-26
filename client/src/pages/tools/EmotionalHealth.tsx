@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import { scrollBehavior } from "@/lib/motion";
 import { SEOMeta } from "@/components/SEOMeta";
 import ScriptureNote from "@/components/ScriptureNote";
 import { ToolActions } from "@/components/ToolActions";
@@ -314,14 +315,14 @@ export default function EmotionalHealth() {
     setAnswers({});
     setShowResults(false);
     setResumed(false);
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: scrollBehavior() });
   };
 
   const handleChangeAnswers = () => {
     setShowResults(false);
     setResumed(false);
     persist(answers);
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: scrollBehavior() });
   };
 
   // Calculate results
@@ -587,7 +588,7 @@ export default function EmotionalHealth() {
           ) : (
             <>
               {/* Results */}
-              <ToolActions toolName="Emotional Health Assessment" />
+              <ToolActions toolName="Emotional Health Assessment" onStartOver={handleReset} />
               {persistFailed && (
                 <p
                   style={{

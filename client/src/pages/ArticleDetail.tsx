@@ -9,6 +9,7 @@
  * - Bookmark + reading progress persist in localStorage
  */
 import { useEffect, useRef, useState } from "react";
+import { scrollBehavior } from "@/lib/motion";
 import { createPortal } from "react-dom";
 import { Link, useLocation, useParams } from "wouter";
 import { DISCUSSION_GUIDES } from "@/data/discussion-guides";
@@ -37,7 +38,7 @@ import { pillarForPost } from "@/lib/taxonomy";
 import { articleUrl, OG_DEFAULT_IMAGE, SITE_URL } from "@/lib/site";
 import { trackEssayComplete, trackPathStep } from "@/lib/telemetry";
 import { markEssayRead } from "@/lib/readProgress";
-import { readStoredJSON, writeStoredJSON } from "@/lib/storage";
+import { isArrayOf, readStoredJSON, writeStoredJSON } from "@/lib/storage";
 
 /**
  * Per-slug byline overrides. Every essay not listed here is authored by
@@ -96,38 +97,26 @@ function ShareButton({ title, url }: { title: string; url: string }) {
 }
 
 function readBookmarked(slug: string): boolean {
-  try {
-    const stored = JSON.parse(
-      localStorage.getItem("livewell:bookmarks") || "[]"
-    ) as string[];
-    return stored.includes(slug);
-  } catch {
-    // localStorage may be unavailable (private mode, sandbox)
-    return false;
-  }
+  return readStoredJSON("livewell:bookmarks", isStringArray, [] as string[]).includes(slug);
 }
+
+const isStringArray = isArrayOf((x): x is string => typeof x === "string");
 
 // Rendered with key={slug} so navigating between articles remounts it and
 // re-reads the stored bookmarks for the new slug.
 function BookmarkButton({ slug }: { slug: string }) {
   const [bookmarked, setBookmarked] = useState(() => readBookmarked(slug));
+  const [saveFailed, setSaveFailed] = useState(false);
 
   const toggle = () => {
-    setBookmarked(prev => {
-      const next = !prev;
-      try {
-        const stored = JSON.parse(
-          localStorage.getItem("livewell:bookmarks") || "[]"
-        ) as string[];
-        const updated = next
-          ? Array.from(new Set([...stored, slug]))
-          : stored.filter(s => s !== slug);
-        localStorage.setItem("livewell:bookmarks", JSON.stringify(updated));
-      } catch {
-        // ignore
-      }
-      return next;
-    });
+    // Flip only when the write lands, so "Saved" and aria-pressed stay
+    // truthful in private mode / blocked storage.
+    const next = !bookmarked;
+    const stored = readStoredJSON("livewell:bookmarks", isStringArray, [] as string[]);
+    const updated = next ? Array.from(new Set([...stored, slug])) : stored.filter(s => s !== slug);
+    const ok = writeStoredJSON("livewell:bookmarks", updated);
+    setSaveFailed(!ok);
+    if (ok) setBookmarked(next);
   };
 
   return (
@@ -158,6 +147,11 @@ function BookmarkButton({ slug }: { slug: string }) {
         fill={bookmarked ? "currentColor" : "none"}
       />
       {bookmarked ? "Saved" : "Save"}
+      {saveFailed && (
+        <span role="status" style={{ fontWeight: 400, color: "var(--ink-muted)" }}>
+          — couldn't save to this browser
+        </span>
+      )}
     </button>
   );
 }
@@ -355,7 +349,7 @@ function TableOfContents({
     e.preventDefault();
     const el = document.getElementById(id);
     if (!el) return;
-    el.scrollIntoView({ behavior: "smooth", block: "start" });
+    el.scrollIntoView({ behavior: scrollBehavior(), block: "start" });
     if (typeof history !== "undefined") {
       history.replaceState(null, "", `#${id}`);
     }

@@ -45,13 +45,13 @@
     },
     {
       "kind": "book",
-      "heading": "Then read the book, free",
+      "heading": "Then work it through",
       "note": "Marriage: Covenant & Roles collects the essays on what marriage actually is and how two people lead and serve each other. Read the whole thing here.",
       "items": [
         {
-          "label": "Marriage: Covenant & Roles — read free",
-          "href": "/read/essays-marriage-covenant-roles",
-          "blurb": "Seven chapters on one flesh, headship and submission read honestly, and the long work of staying."
+          "label": "Marriage: a Bible study on covenant love",
+          "href": "/studyguides/marriage",
+          "blurb": "One flesh, headship and submission read honestly, and the long work of staying. A study to work through together."
         },
         {
           "label": "Find James's books in the bookstore",

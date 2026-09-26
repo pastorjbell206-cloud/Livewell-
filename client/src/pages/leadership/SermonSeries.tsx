@@ -53,7 +53,7 @@ export default function SermonSeries() {
             <Chip active={kind === "topical"} onClick={() => setKind("topical")}>Topical</Chip>
           </div>
 
-          {!data && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }}>Loading…</p>}
+          {!data && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }} role="status">Loading…</p>}
           <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
             {shown.map((s) => {
               const isOpen = open === s.id;

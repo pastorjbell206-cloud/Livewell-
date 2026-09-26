@@ -1116,7 +1116,9 @@ async function leadMagnetSignup(req: VercelRequest, res: VercelResponse) {
 async function sitemap(_req: VercelRequest, res: VercelResponse) {
   try {
     const base = "https://www.livewellbyjamesbell.co";
-    const staticPaths = ["/", "/writing", "/books", "/consider-the-birds", "/where-your-treasure-is", "/about", "/quiz", "/search", "/marriage", "/parenting", "/doubt", "/start", "/for-pastors", "/for-leaders", "/membership", "/reading-paths", "/resources"];
+    // Fallback sitemap only (vercel serves the committed file first). No
+    // redirect sources here: a 301ing URL must never be advertised.
+    const staticPaths = ["/", "/writing", "/books", "/about", "/search", "/marriage", "/parenting", "/doubt", "/start", "/tools", "/membership", "/reading-paths", "/resources"];
     let articles: any[] = [];
     try {
       articles = await withConn(async (c) => {
@@ -3105,7 +3107,7 @@ const EBOOKS: Record<string, EbookConfig> = {
   },
 };
 
-const PRODUCTION_SITE_URL = "https://livewellbyjamesbell.co";
+const PRODUCTION_SITE_URL = "https://www.livewellbyjamesbell.co";
 
 function getStripe(): Stripe | null {
   const key = process.env.STRIPE_SECRET_KEY?.trim();

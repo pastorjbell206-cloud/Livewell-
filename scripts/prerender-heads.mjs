@@ -926,7 +926,7 @@ async function main() {
     { file: "client/public/studyguides/index.json", key: "guides", route: "/studyguides/", ogPrefix: "studyguides", desc: "blurb", contentDir: "client/public/studyguides" },
     { file: "client/public/howtos/index.json", key: "articles", route: "/how-tos/", ogPrefix: "howtos", desc: "excerpt", contentDir: "client/public/howtos/a" },
     { file: "client/public/plans/plans-index.json", key: "plans", route: "/plans/", ogPrefix: "plans", desc: "blurb", contentDir: "client/public/plans" },
-    // The 50 contested-doctrine pages (/theology/doctrine/:slug) — manifest
+    // The contested-doctrine pages (/theology/doctrine/:slug) — manifest
     // from scripts/build-theology-index.mjs; subtitle is the description.
     { file: "client/public/theology/index.json", key: "docs", route: "/theology/doctrine/", ogPrefix: "theology-doctrine", desc: "subtitle" },
     // Sermon series for all 66 books of the Bible. The manifest keys the entry

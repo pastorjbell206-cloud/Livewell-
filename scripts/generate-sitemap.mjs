@@ -47,6 +47,26 @@ function loadTakenDown() {
 }
 const TAKEN_DOWN = loadTakenDown();
 
+/**
+ * URLs vercel.json 301s away must never be advertised: a sitemap entry whose
+ * URL redirects is an instruction the crawler can only disobey (the audit in
+ * scripts/audit-canonicals.mjs walks what this file emits). Literal redirect
+ * sources are enough — every essay/static collision is a literal source.
+ */
+function loadRedirectSources() {
+  try {
+    const cfg = JSON.parse(fs.readFileSync("vercel.json", "utf8"));
+    return new Set(
+      (cfg.redirects || [])
+        .map((r) => r.source)
+        .filter((s) => typeof s === "string" && !s.includes(":") && !s.includes("*") && !s.includes("("))
+    );
+  } catch {
+    return new Set();
+  }
+}
+const REDIRECT_SOURCES = loadRedirectSources();
+
 function mergeArticles(dbArticles) {
   const have = new Set((dbArticles || []).map(a => a.slug));
   const extra = STATIC_ARTICLES.filter(a => !have.has(a.slug) && !TAKEN_DOWN.has(a.slug));
@@ -66,20 +86,11 @@ const STATIC_PAGES = [
   { url: "/marriage", priority: "0.7", changefreq: "monthly" },
   { url: "/parenting", priority: "0.7", changefreq: "monthly" },
   { url: "/doubt", priority: "0.7", changefreq: "monthly" },
-  { url: "/writing?track=manhood", priority: "0.7", changefreq: "weekly" },
-  { url: "/writing?track=womanhood", priority: "0.7", changefreq: "weekly" },
-  { url: "/writing?track=finances", priority: "0.7", changefreq: "weekly" },
-  { url: "/for-pastors", priority: "0.75", changefreq: "weekly" },
   { url: "/tools", priority: "0.6", changefreq: "monthly" },
   { url: "/work-with-james", priority: "0.6", changefreq: "monthly" },
   { url: "/membership", priority: "0.7", changefreq: "monthly" },
   { url: "/resources", priority: "0.7", changefreq: "monthly" },
   // Five-pillar listing pages (current nav taxonomy) + Study Guides.
-  { url: "/writing?pillar=theological-depth", priority: "0.85", changefreq: "weekly" },
-  { url: "/writing?pillar=prophetic-justice", priority: "0.85", changefreq: "weekly" },
-  { url: "/writing?pillar=prophetic-disruption", priority: "0.85", changefreq: "weekly" },
-  { url: "/writing?pillar=integrated-life", priority: "0.85", changefreq: "weekly" },
-  { url: "/writing?series=true", priority: "0.8", changefreq: "weekly" },
   // Static content libraries (file-driven, no DB needed).
   { url: "/resources/context", priority: "0.9", changefreq: "weekly" },
   { url: "/resources/creeds", priority: "0.8", changefreq: "monthly" },
@@ -97,7 +108,6 @@ const STATIC_PAGES = [
   { url: "/family/devotions", priority: "0.75", changefreq: "monthly" },
   { url: "/family/catechism", priority: "0.7", changefreq: "monthly" },
   { url: "/family/reading-plans", priority: "0.7", changefreq: "monthly" },
-  { url: "/framework", priority: "0.85", changefreq: "monthly" },
   { url: "/historic-faith", priority: "0.85", changefreq: "monthly" },
   { url: "/answers", priority: "0.9", changefreq: "weekly" },
   { url: "/assessments", priority: "0.85", changefreq: "monthly" },
@@ -132,7 +142,6 @@ const STATIC_PAGES = [
   { url: "/compare/liturgical-vs-contemporary", priority: "0.8", changefreq: "monthly" },
   { url: "/compare/orthodox-vs-catholic", priority: "0.8", changefreq: "monthly" },
   // Crisis and topic landing pages
-  { url: "/church-history", priority: "0.8", changefreq: "monthly" },
   { url: "/church-hurt", priority: "0.8", changefreq: "monthly" },
   { url: "/deconstruction", priority: "0.8", changefreq: "monthly" },
   { url: "/faith-crisis", priority: "0.8", changefreq: "monthly" },
@@ -140,9 +149,7 @@ const STATIC_PAGES = [
   { url: "/honest-questions", priority: "0.8", changefreq: "monthly" },
   { url: "/marriage-crisis", priority: "0.8", changefreq: "monthly" },
   { url: "/parenting-help", priority: "0.8", changefreq: "monthly" },
-  { url: "/pastoral-burnout", priority: "0.8", changefreq: "monthly" },
   { url: "/post-christian", priority: "0.8", changefreq: "monthly" },
-  { url: "/sermon-series", priority: "0.75", changefreq: "monthly" },
   // Ebook product pages previously missing
   { url: "/books/believe", priority: "0.8", changefreq: "monthly" },
   { url: "/books/bible-and-homosexuality", priority: "0.8", changefreq: "monthly" },
@@ -209,7 +216,6 @@ const STATIC_PAGES = [
   { url: "/tools/wisdom-finder", priority: "0.7", changefreq: "monthly" },
   // Leadership instruments previously missing
   // Entry points, hubs, and misc previously missing
-  { url: "/start-here", priority: "0.85", changefreq: "monthly" },
   { url: "/pathways", priority: "0.75", changefreq: "monthly" },
   { url: "/map", priority: "0.8", changefreq: "monthly" },
   { url: "/capture-by-the-right", priority: "0.8", changefreq: "monthly" },
@@ -325,23 +331,38 @@ function buildXml(staticPages, articles, books, readingPaths) {
     seen.add(p.url);
     return true;
   });
+  // A URL vercel.json 301s away, or one whose canonical is another URL
+  // (query strings), must never be advertised.
+  let excluded = 0;
+  const advertisable = (path) => {
+    if (path.includes("?") || REDIRECT_SOURCES.has(path)) {
+      excluded += 1;
+      return false;
+    }
+    return true;
+  };
   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
   xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
   for (const page of allStatic) {
+    if (!advertisable(page.url)) continue;
     xml += urlEntry(`${BASE_URL}${page.url}`, null, page.changefreq, page.priority);
   }
   for (const a of articles) {
     const lastmod = new Date(a.updatedAt).toISOString().split("T")[0];
+    if (!advertisable(`/writing/${a.slug}`)) continue;
     xml += urlEntry(`${BASE_URL}/writing/${a.slug}`, lastmod, "monthly", "0.8");
   }
   for (const b of books) {
     const lastmod = new Date(b.updatedAt).toISOString().split("T")[0];
+    if (!advertisable(`/books/${b.slug}`)) continue;
     xml += urlEntry(`${BASE_URL}/books/${b.slug}`, lastmod, "monthly", "0.7");
   }
   for (const p of readingPaths) {
     const lastmod = new Date(p.updatedAt).toISOString().split("T")[0];
+    if (!advertisable(`/reading-paths/${p.slug}`)) continue;
     xml += urlEntry(`${BASE_URL}/reading-paths/${p.slug}`, lastmod, "monthly", "0.7");
   }
+  if (excluded > 0) console.log(`[sitemap] excluded ${excluded} redirect-source or query-string URLs`);
   xml += "</urlset>\n";
   return xml;
 }

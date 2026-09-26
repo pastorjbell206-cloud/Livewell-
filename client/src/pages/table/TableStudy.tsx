@@ -80,7 +80,7 @@ export default function TableStudy() {
     return (
       <Layout>
         <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
-          <div style={wrap}><p style={{ ...body, color: "var(--ink-muted)" }}>Loading the study…</p></div>
+          <div style={wrap}><p style={{ ...body, color: "var(--ink-muted)" }} role="status">Loading the study…</p></div>
         </section>
       </Layout>
     );

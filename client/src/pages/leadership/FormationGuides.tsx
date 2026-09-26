@@ -39,7 +39,7 @@ export default function FormationGuides() {
     return (
       <Layout>
         <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4)", minHeight: "50vh" }}>
-          <div style={wrap}><p style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }}>Loading the guides…</p></div>
+          <div style={wrap}><p style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }} role="status">Loading the guides…</p></div>
         </section>
       </Layout>
     );

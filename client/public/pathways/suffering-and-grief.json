@@ -45,13 +45,13 @@
     },
     {
       "kind": "book",
-      "heading": "Then read the book, free",
+      "heading": "Then work it through",
       "note": "Hard Questions gathers the long-form work on suffering, evil, the hiddenness of God, and whether faith survives them. The full book, free.",
       "items": [
         {
-          "label": "Hard Questions — read free",
-          "href": "/read/essays-hard-questions",
-          "blurb": "Twenty-two chapters of honest answers for a skeptical age. Free to read in full."
+          "label": "When It Does Not Make Sense: a Bible study",
+          "href": "/studyguides/suffering",
+          "blurb": "A working study for the reader carrying what cannot be explained away."
         },
         {
           "label": "Find James's books in the bookstore",

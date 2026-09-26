@@ -431,9 +431,9 @@ There are **two server implementations of the same API**:
 
 A procedure added to `server/routers.ts` **does not exist in production** until
 it is also added to `api/index.ts`. `server/api-parity.test.ts` fails CI if the
-client calls a procedure prod doesn't implement — respect it. Known prod gaps
-(`stripe.*` REST fallback, `files.*`, `teamCollab.*`) are intentional and need
-per-user auth to close.
+client calls a procedure prod doesn't implement — respect it. `KNOWN_PROD_GAPS`
+is currently **empty**: every client-invoked procedure is implemented in
+`api/index.ts`. Any future intentional gap goes in that set with a reason.
 
 ### Directory map
 
@@ -478,10 +478,12 @@ be set before the Vercel build. Auth model: bcrypt password → HMAC-SHA256
 
 ### CI gates (`.github/workflows/ci.yml`)
 
-On every PR: `pnpm check` → content validators (`validate-formation.mjs`,
-`validate-life.mjs`, `validate-table.mjs`) → `pnpm test` → `pnpm build`. A
-separate, non-blocking `quality` job runs Lighthouse + axe against the built
-site. Keep all four blocking steps green.
+On every PR, five blocking steps: `pnpm check` → the content-gates step (13
+validators: scripture, life, studyguides, pathways, theology, politics,
+no-emdash, content-integrity, skeptic-track, answers, argument-cases, links,
+catalogue) → `pnpm test` → `pnpm build` → the canonical audit (sitemap +
+prerender + `audit:canonicals`). A separate, non-blocking `quality` job runs
+Lighthouse + axe against the built site. Keep all five blocking steps green.
 
 ### Conventions for AI assistants
 

@@ -14,6 +14,7 @@ import { useEffect, useMemo, useState } from "react";
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { writeStoredJSON } from "@/lib/storage";
 
 /* ------------------------------------------------------------------ */
 /* Data                                                                */
@@ -210,12 +211,10 @@ function loadHistory(): RunEntry[] {
   }
 }
 
-function saveHistory(history: RunEntry[]) {
-  try {
-    window.localStorage.setItem(STORAGE_KEY, JSON.stringify(history));
-  } catch {
-    // Storage unavailable. The assessment still works, it just forgets.
-  }
+function saveHistory(history: RunEntry[]): boolean {
+  // Storage unavailable (private mode, full quota) returns false so the
+  // results screen can say so instead of silently forgetting.
+  return writeStoredJSON(STORAGE_KEY, history);
 }
 
 /* ------------------------------------------------------------------ */
@@ -292,12 +291,8 @@ function loadRules(): RuleEntry[] {
   }
 }
 
-function saveRules(rules: RuleEntry[]) {
-  try {
-    window.localStorage.setItem(RULE_KEY, JSON.stringify({ v: RULE_STORE_VERSION, rules }));
-  } catch {
-    // Storage unavailable. The rule still renders, it just forgets.
-  }
+function saveRules(rules: RuleEntry[]): boolean {
+  return writeStoredJSON(RULE_KEY, { v: RULE_STORE_VERSION, rules });
 }
 
 /* ------------------------------------------------------------------ */
@@ -790,6 +785,7 @@ export default function WholeLifeAssessment() {
   const [rules, setRules] = useState<RuleEntry[]>(() => loadRules());
   const [previous, setPrevious] = useState<RunEntry | null>(null);
   const [copied, setCopied] = useState(false);
+  const [saveFailed, setSaveFailed] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -808,7 +804,7 @@ export default function WholeLifeAssessment() {
     const entry: RunEntry = { date: now, scores };
     const next = [...prior, entry];
     setHistory(next);
-    saveHistory(next);
+    const savedRun = saveHistory(next);
     // Draw the rule for this season and keep it, versioned by attempt date.
     const rule: RuleEntry = {
       date: now,
@@ -817,7 +813,8 @@ export default function WholeLifeAssessment() {
     };
     const nextRules = [...loadRules(), rule];
     setRules(nextRules);
-    saveRules(nextRules);
+    const savedRule = saveRules(nextRules);
+    setSaveFailed(!(savedRun && savedRule));
     setCopied(false);
     setScreen(RESULTS_SCREEN);
   };
@@ -1112,6 +1109,11 @@ export default function WholeLifeAssessment() {
                     {verdictFor(scores)}
                   </p>
                 </div>
+                {saveFailed && (
+                  <p role="status" style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "10px 0 0" }}>
+                    Couldn't save to this browser — your work here will not survive a reload.
+                  </p>
+                )}
 
                 <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", marginTop: "var(--s-3)" }}>
                   <button onClick={() => window.print()} style={quietBtn}>Print your results</button>

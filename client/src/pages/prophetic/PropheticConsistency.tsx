@@ -48,7 +48,7 @@ export default function PropheticConsistency({ config }: { config: SectionConfig
         </div>
       </section>
 
-      {!data && <section style={{ background: "var(--bone)", padding: "var(--s-7) var(--s-4)" }}><p style={{ ...wrap, fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center" }}>Loading…</p></section>}
+      {!data && <section style={{ background: "var(--bone)", padding: "var(--s-7) var(--s-4)" }}><p style={{ ...wrap, fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center" }} role="status">Loading…</p></section>}
 
       {data && (
         <>

@@ -173,7 +173,7 @@ export default function TheologyHistory() {
       {tab === "timeline" && (
         <section style={{ background: "var(--bone)", padding: "var(--s-4) var(--s-4) var(--s-7)" }}>
           <div style={{ ...wrap, display: "flex", flexDirection: "column", gap: "12px" }}>
-            {eras.length === 0 && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }}>Loading the story…</p>}
+            {eras.length === 0 && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }} role="status">Loading the story…</p>}
             {eras.map((era) => {
               const isOpen = openEra === era.id;
               return (
@@ -267,7 +267,7 @@ export default function TheologyHistory() {
               The creeds were not handed down from the sky. The whole church gathered, usually in a crisis, and worked out how to say a true thing clearly. Here is what each council faced and what it gave us.
             </p>
             <div style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
-              {councils.length === 0 && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }}>Loading…</p>}
+              {councils.length === 0 && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }} role="status">Loading…</p>}
               {councils.map((c, i) => (
                 <div key={i} style={{ ...cardStyle, padding: "var(--s-4)", borderLeft: `3px solid ${c.ecumenical ? "var(--mustard)" : "var(--border)"}` }}>
                   <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", gap: "8px", alignItems: "baseline", marginBottom: "10px" }}>
@@ -295,7 +295,7 @@ export default function TheologyHistory() {
               The church often learned what it believed by facing what it could not accept. Each of these was sincere, attractive, and wrong in a way that mattered. Many still return today in new clothes.
             </p>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(300px, 100%), 1fr))", gap: "16px" }}>
-              {heresies.length === 0 && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }}>Loading…</p>}
+              {heresies.length === 0 && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }} role="status">Loading…</p>}
               {heresies.map((h, i) => (
                 <div key={i} style={{ ...cardStyle, padding: "var(--s-4)" }}>
                   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", gap: "8px", marginBottom: "10px" }}>
@@ -320,7 +320,7 @@ export default function TheologyHistory() {
       {tab === "figures" && (
         <section style={{ background: "var(--bone)", padding: "var(--s-4) var(--s-4) var(--s-7)" }}>
           <div style={{ ...wrap }}>
-            {figures.length === 0 && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }}>Loading…</p>}
+            {figures.length === 0 && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }} role="status">Loading…</p>}
             {figures.length > 0 && <SectionArt seed="history-figures" />}
             {figuresByEra.map(({ era, items }) => (
               <div key={era} style={{ marginBottom: "var(--s-5)" }}>

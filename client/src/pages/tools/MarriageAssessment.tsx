@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import { scrollBehavior } from "@/lib/motion";
 import { SEOMeta } from "@/components/SEOMeta";
 import { ToolActions } from "@/components/ToolActions";
 import { useState, useRef } from "react";
@@ -370,13 +371,13 @@ export default function MarriageAssessment() {
       persist(answers, currentCategory);
       setTimeout(() => {
         resultsRef.current?.focus({ preventScroll: true });
-        resultsRef.current?.scrollIntoView({ behavior: "smooth" });
+        resultsRef.current?.scrollIntoView({ behavior: scrollBehavior() });
       }, 100);
     } else if (!isLastCategory) {
       const nextStep = currentCategory + 1;
       setCurrentCategory(nextStep);
       persist(answers, nextStep);
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      window.scrollTo({ top: 0, behavior: scrollBehavior() });
     }
   };
 
@@ -385,7 +386,7 @@ export default function MarriageAssessment() {
       const prevStep = currentCategory - 1;
       setCurrentCategory(prevStep);
       persist(answers, prevStep);
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      window.scrollTo({ top: 0, behavior: scrollBehavior() });
     }
   };
 
@@ -395,7 +396,7 @@ export default function MarriageAssessment() {
     setCurrentCategory(0);
     setShowResults(false);
     setResumed(false);
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: scrollBehavior() });
   };
 
   const handleChangeAnswers = () => {
@@ -403,7 +404,7 @@ export default function MarriageAssessment() {
     setCurrentCategory(0);
     setResumed(false);
     persist(answers, 0);
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: scrollBehavior() });
   };
 
   const getCategoryScore = (cat: Category) =>
@@ -862,7 +863,7 @@ export default function MarriageAssessment() {
           style={{ padding: "48px 32px 80px", background: "var(--bone)", outline: "none" }}
         >
           <div className="wrap" style={{ maxWidth: "800px" }}>
-            <ToolActions toolName="Marriage Health Assessment" />
+            <ToolActions toolName="Marriage Health Assessment" onStartOver={handleRestart} />
             {persistFailed && (
               <p
                 style={{
