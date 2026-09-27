@@ -6,13 +6,13 @@ Search engines and answer engines see a second layer beside every essay: a meta 
 
 | Measure | Value |
 |---|---|
-| Essays with a description | 559 |
+| Essays with a description | 557 |
 | Hand-written descriptions | 11 |
-| Derived from the essay's own sentences | 548 |
-| Essays with question-and-answer data | 83 |
+| Derived from the essay's own sentences | 546 |
+| Essays with question-and-answer data | 81 |
 | Average reading grade, descriptions | 8.3 |
 | Average reading grade, original standfirsts | 9.5 |
-| Derived descriptions at grade 12 or above (hand-rewrite queue) | 61 |
+| Derived descriptions at grade 12 or above (hand-rewrite queue) | 60 |
 
 ## Hand-rewrite queue
 
@@ -65,7 +65,6 @@ Derived descriptions that still read at college level. Each is true to the essay
 | the-theology-of-time | 12.6 | Every productivity system assumes you do not have enough time to get everything done. |
 | calvinism-and-arminianism | 12.6 | The oldest and most consequential debate in Protestant theology is also the most misunderstood. |
 | 21-when-is-it-time-to-revitalize-and-when-is-it-time-to-replant | 12.5 | The language of church revitalization has been one of the most discussed topics in pastoral circles for the past decade, and for good reason. |
-| apologetics-how-can-a-loving-god-allow-hell | 12.5 | The doctrine of hell strikes most people as the cruelest thing Christianity teaches, and the objection deserves a real answer rather than a flinch. |
 | right-side-of-history | 12.4 | "The right side of history" is the most successful piece of secular theology of our age, and the American church swallowed it whole. |
 | your-body-is-not-a-cage | 12.4 | We have learned to treat the body as a vehicle the real self drives around, a thing to be optimized, overridden, or escaped. |
 | 14-how-to-preach-the-same-gospel-to-people-who-are-nothing-alike | 12.3 | Walk into almost any established congregation in America and look at the range of people sitting in the pews. |

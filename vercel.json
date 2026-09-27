@@ -1410,6 +1410,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/apologetics-how-can-a-loving-god-allow-hell",
+            "destination": "/writing/does-hell-exist",
+            "permanent": true
+        },
+        {
             "source": "/writing/apologetics-isnt-faith-believing-without-evidence",
             "destination": "/writing/is-faith-irrational",
             "permanent": true
@@ -1982,6 +1987,11 @@
         {
             "source": "/writing/why-young-adults-arent-coming-back",
             "destination": "/writing/why-people-are-leaving-the-church",
+            "permanent": true
+        },
+        {
+            "source": "/writing/will-there-be-a-judgment-day",
+            "destination": "/writing/does-hell-exist",
             "permanent": true
         },
         {

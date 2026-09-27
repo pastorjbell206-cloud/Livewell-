@@ -1182,13 +1182,13 @@
   }
  },
  "does-hell-exist": {
-  "metaDescription": "Hell is the doctrine that empties pews and ends conversations, the one even believers wish they could quietly drop.",
-  "source": "derived",
-  "grade": 9.2,
-  "excerptGrade": 7.7,
+  "metaDescription": "Does hell exist? Gehenna, Matthew 25 and Revelation 20 read in context, three Christian views of hell stated fairly, and why a loving God judges evil.",
+  "source": "rewrite",
+  "grade": 6.7,
+  "excerptGrade": 11,
   "qa": {
-   "question": "Does Hell Exist, and How Could a Loving God Allow It?",
-   "answer": "Hell is the doctrine that empties pews and ends conversations, the one even believers wish they could quietly drop. It deserves an honest hearing, not a flinch and not a sermon. Here are the main things Christians have actually believed, and why none of them is what you were probably told."
+   "question": "How could a loving God allow it?",
+   "answer": "The ache under the original question remains. On proportion, the objection assumes that sin is a small thing answered with a large penalty. Anselm of Canterbury, in Cur Deus Homo (1098), reasoned that sin must be weighed against the honor of the God it dishonors, so that a wrong against the source of all goodness can't be weighed like a wrong against a stranger. That argument doesn't prove anything about duration, and conditionalists accept it as readily as traditionalists do. But it does undo the picture of a cosmic overreaction to trivia."
   }
  },
  "what-is-heaven-actually-like": {
@@ -1202,16 +1202,6 @@
   "source": "derived",
   "grade": 10.9,
   "excerptGrade": 8.4
- },
- "will-there-be-a-judgment-day": {
-  "metaDescription": "Judgment Day sounds like a threat invented to keep people in line, a cosmic courtroom with God as the angry judge.",
-  "source": "derived",
-  "grade": 8.3,
-  "excerptGrade": 6.5,
-  "qa": {
-   "question": "Will There Really Be a Judgment Day?",
-   "answer": "Judgment Day sounds like a threat invented to keep people in line, a cosmic courtroom with God as the angry judge. But ask the people history actually crushed whether they want a final reckoning, and you will hear a very different answer. For them, judgment is not the bad news. It is the only hope left."
-  }
  },
  "can-you-be-a-christian-alone": {
   "metaDescription": "Can you be a Christian without going to church? What Scripture, Cyprian, the Reformers and Bonhoeffer say about a faith that is personal but never private.",
@@ -2795,16 +2785,6 @@
   "qa": {
    "question": "If God Is Real, Why Does He Feel So Hidden?",
    "answer": "If God wanted to be known, it seems He could simply show Himself, and His silence is one of the heaviest reasons people stop believing."
-  }
- },
- "apologetics-how-can-a-loving-god-allow-hell": {
-  "metaDescription": "The doctrine of hell strikes most people as the cruelest thing Christianity teaches, and the objection deserves a real answer rather than a flinch.",
-  "source": "derived",
-  "grade": 12.5,
-  "excerptGrade": 12.5,
-  "qa": {
-   "question": "How Can a Loving God Send Anyone to Hell?",
-   "answer": "The doctrine of hell strikes most people as the cruelest thing Christianity teaches, and the objection deserves a real answer rather than a flinch."
   }
  },
  "apologetics-hasnt-the-church-done-terrible-things": {
