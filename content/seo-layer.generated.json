@@ -1810,16 +1810,14 @@
   "excerptGrade": 14.4
  },
  "good-samaritan-actually-arguing": {
-  "metaDescription": "We have turned the parable of the Good Samaritan into a moral lesson about being helpful.",
-  "source": "derived",
-  "grade": 10.6,
-  "excerptGrade": 10
- },
- "good-samaritan-arguing": {
-  "metaDescription": "The question the lawyer asked is the one we all ask: \"And who is my neighbor?\" (Luke 10:29) It sounds like a sincere request for clarification.",
-  "source": "derived",
-  "grade": 10.4,
-  "excerptGrade": 5.5
+  "metaDescription": "Luke 10:25-37 in context: the lawyer's test, Jewish-Samaritan hostility, the priest and Levite, Augustine's allegory, and the question Jesus turns around.",
+  "source": "rewrite",
+  "grade": 15.1,
+  "excerptGrade": 10.1,
+  "qa": {
+   "question": "What Is the Parable of the Good Samaritan Really About?",
+   "answer": "Jesus told the parable to a lawyer looking for the limits of his obligation. He answered by making the enemy the rescuer and turning the question from who qualifies as my neighbor to whether I will be one."
+  }
  },
  "greek-original-language-matters": {
   "metaDescription": "The Bible was not written in English. This is an obvious statement that carries non-obvious implications.",

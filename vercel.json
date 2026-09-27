@@ -104,11 +104,6 @@
             "permanent": true
         },
         {
-            "source": "/writing/good-samaritan-arguing",
-            "destination": "/justice",
-            "permanent": true
-        },
-        {
             "source": "/writing/solidarity-theological-virtue",
             "destination": "/justice",
             "permanent": true
@@ -1582,6 +1577,11 @@
         {
             "source": "/writing/gender-based-violence",
             "destination": "/writing/church-domestic-violence",
+            "permanent": true
+        },
+        {
+            "source": "/writing/good-samaritan-arguing",
+            "destination": "/writing/good-samaritan-actually-arguing",
             "permanent": true
         },
         {
