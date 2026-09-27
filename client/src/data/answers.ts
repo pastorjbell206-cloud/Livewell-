@@ -330,7 +330,7 @@ export const ANSWERS: Answer[] = [
       "I ran the projection test on everyone but myself. For years I told myself I had followed the evidence into the cold. But underneath, where I did not look, was a boy raised without a father who found in a Godless universe not a grief but a relief, because a sky with no Father in it could not disappoint him the way one man already had. I wanted there to be no God. Ask the believer what they want to be true, and you will find plenty of faith that is a wish with a steeple. Then have the nerve to ask it of yourself. The crutch was real. It was just in my other hand.",
     ],
     essaySlug: "is-faith-just-wishful-thinking",
-    essayTitle: "Is Faith Just Wishful Thinking?",
+    essayTitle: "Is Faith Just Wishful Thinking? Freud, Projection and Hope",
     bookTitle: "Born Again From Atheism",
     bookHref: "/born-again-from-atheism",
   },

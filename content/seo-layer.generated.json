@@ -642,14 +642,10 @@
   "excerptGrade": 12.6
  },
  "is-faith-just-wishful-thinking": {
-  "metaDescription": "For years I was certain that faith was a comfort weak people reached for because they could not bear the cold.",
-  "source": "derived",
-  "grade": 7.2,
-  "excerptGrade": 6.2,
-  "qa": {
-   "question": "Is Faith Just Wishful Thinking?",
-   "answer": "For years I was certain that faith was a comfort weak people reached for because they could not bear the cold. I still think that is sometimes exactly what it is. Then I noticed the wish I had never once examined: my own."
-  }
+  "metaDescription": "Feuerbach, Marx, Nietzsche and Freud said God is a wish. The replies of Vitz, Lewis and Plantinga, and why Christian hope is not the same as optimism.",
+  "source": "rewrite",
+  "grade": 5,
+  "excerptGrade": 9.4
  },
  "is-hell-eternal": {
   "metaDescription": "It is not whether there is a hell that keeps people awake. It is whether it stops.",
@@ -1024,12 +1020,6 @@
   "source": "rewrite",
   "grade": 10.9,
   "excerptGrade": 8.3
- },
- "why-hope-is-not-wishful-thinking": {
-  "metaDescription": "Hope has a bad reputation among honest people, it sounds like the polite word for refusing to face facts, a coat of paint over the void.",
-  "source": "derived",
-  "grade": 10.9,
-  "excerptGrade": 8.4
  },
  "can-you-be-a-christian-alone": {
   "metaDescription": "Can you be a Christian without going to church? What Scripture, Cyprian, the Reformers and Bonhoeffer say about a faith that is personal but never private.",
@@ -1524,10 +1514,14 @@
   "excerptGrade": 15.1
  },
  "church-food-insecurity": {
-  "metaDescription": "The prayer most Christians have memorized word for word contains an economic demand most have never noticed.",
-  "source": "derived",
-  "grade": 11.2,
-  "excerptGrade": 8
+  "metaDescription": "What Scripture says about hunger, from manna to the Lord's Supper, and how churches can move from handing out food to shared tables that honor the hungry.",
+  "source": "rewrite",
+  "grade": 11.5,
+  "excerptGrade": 10.1,
+  "qa": {
+   "question": "What Does the Bible Say About Hunger and Food Insecurity?",
+   "answer": "Scripture treats bread as the stuff of a shared table, not only a supply to be handed out. The church has become good at distribution, and it is necessary work, but the Lord's Supper asks for communion: that the hungry sit down with us as one household."
+  }
  },
  "church-gun-violence": {
   "metaDescription": "The church has a remarkably consistent posture toward gun violence in America: wait, grieve, post, move on. We wait for the news cycle to do its work.",
@@ -1754,18 +1748,6 @@
   "source": "derived",
   "grade": 7,
   "excerptGrade": 7
- },
- "food-deserts-theology-bread": {
-  "metaDescription": "The prayer Jesus taught begins with bread. Not with theology. Not with the kingdom in abstract. \"Give us this day our daily bread\" (Matthew 6:11).",
-  "source": "derived",
-  "grade": 2,
-  "excerptGrade": 2
- },
- "food-sovereignty-theology-table": {
-  "metaDescription": "Begin with the table. Food sovereignty is the name the world's small-farmer movements gave that question.",
-  "source": "derived",
-  "grade": 6.7,
-  "excerptGrade": 14.1
  },
  "foster-care-unfinished-mandate": {
   "metaDescription": "On any given day, the federal count of children in the American foster care system runs to roughly four hundred thousand.",
@@ -2546,10 +2528,14 @@
   "excerptGrade": 8
  },
  "how-the-reformation-started-and-why-it-still-matters": {
-  "metaDescription": "The Reformation was not mainly about corruption. It was about one question: how is a person made right with God. That question is still keeping you awake.",
-  "source": "derived",
-  "grade": 5.4,
-  "excerptGrade": 5.4
+  "metaDescription": "The Reformation from Hus and Tetzel to Luther, Trent and the 1999 Joint Declaration: what it recovered, what it cost, and why it still matters now.",
+  "source": "rewrite",
+  "grade": 11.3,
+  "excerptGrade": 13.8,
+  "qa": {
+   "question": "What Was the Reformation and Why Does It Still Matter?",
+   "answer": "The Reformation began as a quarrel over indulgences and became an argument about how a guilty person stands before God. It recovered a gospel the late medieval church had buried and broke the Western church in the recovering, and an honest account has to grieve the one while receiving the other."
+  }
  },
  "the-great-awakenings-and-the-making-of-american-faith": {
   "metaDescription": "The First and Second Great Awakenings explained: Edwards, Whitefield, Cane Ridge, Finney, revival and slavery, and what revivalism gave and cost.",

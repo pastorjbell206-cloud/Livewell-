@@ -1565,6 +1565,16 @@
             "permanent": true
         },
         {
+            "source": "/writing/food-deserts-theology-bread",
+            "destination": "/writing/church-food-insecurity",
+            "permanent": true
+        },
+        {
+            "source": "/writing/food-sovereignty-theology-table",
+            "destination": "/writing/church-food-insecurity",
+            "permanent": true
+        },
+        {
             "source": "/writing/forgiveness-without-pretending",
             "destination": "/writing/forgiveness-in-marriage",
             "permanent": true
@@ -2202,6 +2212,11 @@
         {
             "source": "/writing/why-does-god-allow-suffering",
             "destination": "/writing/if-god-is-good-why-suffering",
+            "permanent": true
+        },
+        {
+            "source": "/writing/why-hope-is-not-wishful-thinking",
+            "destination": "/writing/is-faith-just-wishful-thinking",
             "permanent": true
         },
         {
