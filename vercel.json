@@ -139,11 +139,6 @@
             "permanent": true
         },
         {
-            "source": "/writing/prophets-expelled-sanctuary",
-            "destination": "/justice",
-            "permanent": true
-        },
-        {
             "source": "/writing/exodus-demands-church-today",
             "destination": "/justice",
             "permanent": true
@@ -1840,6 +1835,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/prophets-expelled-sanctuary",
+            "destination": "/writing/amos-american-church",
+            "permanent": true
+        },
+        {
             "source": "/writing/prosperity-gospel-injustice",
             "destination": "/writing/prosperity-gospel-is-not-the-gospel",
             "permanent": true
@@ -2232,6 +2232,11 @@
         {
             "source": "/writing/will-there-be-a-judgment-day",
             "destination": "/writing/does-hell-exist",
+            "permanent": true
+        },
+        {
+            "source": "/writing/worship-without-justice-noise",
+            "destination": "/writing/amos-american-church",
             "permanent": true
         },
         {
