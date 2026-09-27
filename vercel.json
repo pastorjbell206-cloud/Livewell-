@@ -134,11 +134,6 @@
             "permanent": true
         },
         {
-            "source": "/writing/church-must-speak-housing",
-            "destination": "/justice",
-            "permanent": true
-        },
-        {
             "source": "/writing/the-long-arc",
             "destination": "/writing/right-side-of-history",
             "permanent": true
@@ -1500,6 +1495,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/engaging-nones-religiously-unaffiliated",
+            "destination": "/writing/how-to-talk-about-faith",
+            "permanent": true
+        },
+        {
             "source": "/writing/environmental-racism",
             "destination": "/writing/creation-care-not-optional",
             "permanent": true
@@ -1572,6 +1572,11 @@
         {
             "source": "/writing/gender-based-violence",
             "destination": "/writing/church-domestic-violence",
+            "permanent": true
+        },
+        {
+            "source": "/writing/gentrification-displacement",
+            "destination": "/writing/church-must-speak-housing",
             "permanent": true
         },
         {

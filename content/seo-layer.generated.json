@@ -396,10 +396,10 @@
   }
  },
  "the-weight-that-stays": {
-  "metaDescription": "You were promised the grief would lift. It did not lift. The literature of grief is full of stages, and the stages imply a destination.",
-  "source": "derived",
-  "grade": 4.7,
-  "excerptGrade": 2.5
+  "metaDescription": "Why grief often lasts for years, what the five stages got wrong, what the Bible says about grieving with hope, and when lasting grief needs real help.",
+  "source": "rewrite",
+  "grade": 9.4,
+  "excerptGrade": 7
  },
  "when-god-is-silent-and-the-room-is-empty": {
   "metaDescription": "Why does God feel silent? Isaiah's hidden God, the lament psalms, Job, the dark night, the hiddenness argument, and Holy Saturday, when God lay in a grave.",
@@ -782,23 +782,19 @@
   "excerptGrade": 10.6
  },
  "does-god-change-his-mind": {
-  "metaDescription": "The Bible says God does not change. The Bible also says God 'relented' and 'changed his mind.'",
-  "source": "derived",
-  "grade": 7,
-  "excerptGrade": 9.5,
-  "qa": {
-   "question": "Does God Change His Mind?",
-   "answer": "The Bible says God does not change. The Bible also says God 'relented' and 'changed his mind.' Both are right, and the resolution is not a dodge, it opens onto the strangest and most stabilizing thing anyone has ever said about God."
-  }
+  "metaDescription": "Does God change his mind? Numbers 23:19 and Jonah 3:10 in context, the Hebrew niham, classical theism, open theism, and what relenting means for prayer.",
+  "source": "rewrite",
+  "grade": 4.9,
+  "excerptGrade": 8.4
  },
  "is-god-in-control": {
-  "metaDescription": "We say God is in control and then watch a world that looks anything but controlled.",
-  "source": "derived",
-  "grade": 6.1,
-  "excerptGrade": 5.7,
+  "metaDescription": "What Christian providence actually claims: Joseph, Romans 8:28 in context, Boethius, Lisbon 1755, the Psalms, and why it isn't fate or a funeral slogan.",
+  "source": "rewrite",
+  "grade": 11,
+  "excerptGrade": 11.8,
   "qa": {
    "question": "If God Is in Control, Why Doesn't It Feel Like It?",
-   "answer": "We say God is in control and then watch a world that looks anything but controlled. The gap between the doctrine and the headline is where a lot of faith quietly dies. The tradition's answer is not glib, and it does not ask you to call the wreckage good."
+   "answer": "The church never promised that God's rule would feel like rule. The doctrine of providence claims something harder and kinder than the funeral slogan: no evil escapes God's governance, none of it is called good, and faith has always been allowed to complain while it trusts."
   }
  },
  "the-god-who-hides": {
@@ -1400,10 +1396,10 @@
   "excerptGrade": 5
  },
  "addiction-justice-issue": {
-  "metaDescription": "The language came first: addict, junkie, crackhead, drunk. The addict is weak. Morally compromised. Responsible for the thing that is destroying him.",
-  "source": "derived",
-  "grade": 5.3,
-  "excerptGrade": 15.5
+  "metaDescription": "Is addiction a sin or a disease? The disease model and its critics, Augustine and Romans 7, the roots of AA, and why addiction is also a justice question.",
+  "source": "rewrite",
+  "grade": 7.2,
+  "excerptGrade": 11.1
  },
  "ai-authenticity-pastor-artificial-intelligence": {
   "metaDescription": "A pastor asked me recently whether it was wrong to use artificial intelligence to write his sermons. I did not answer immediately.",
@@ -1536,10 +1532,14 @@
   "excerptGrade": 13.2
  },
  "church-must-speak-housing": {
-  "metaDescription": "In most American cities right now, housing consumes a share of working-class income that previous generations would have called a crisis.",
-  "source": "derived",
-  "grade": 13.4,
-  "excerptGrade": 9.1
+  "metaDescription": "What Leviticus 25, Micah, Isaiah and Naboth teach about homes and land, how American housing was built, and how to weigh gentrification honestly.",
+  "source": "rewrite",
+  "grade": 13.9,
+  "excerptGrade": 13.6,
+  "qa": {
+   "question": "What Does the Bible Say About Housing and Gentrification?",
+   "answer": "Israel's law treated a family's home as an inheritance held under God, not merely an asset to be traded, and the prophets named the legal machinery of dispossession as sin. That standard judges American housing, the fight over gentrification, and the churches that own the ground."
+  }
  },
  "church-needs-you-healthy-not-busy": {
   "metaDescription": "A pastor who gives without receiving will eventually have nothing left to give. Every pastor agrees with that sentence.",
@@ -1701,12 +1701,6 @@
   "grade": 10.7,
   "excerptGrade": 14.6
  },
- "engaging-nones-religiously-unaffiliated": {
-  "metaDescription": "They are not atheists, most of them. They left, or never arrived, not because they resolved the God question in the negative.",
-  "source": "derived",
-  "grade": 5.9,
-  "excerptGrade": 13.4
- },
  "exodus-demands-church": {
   "metaDescription": "How the Exodus runs from Deuteronomy to the Last Supper and 1 Peter, how Puritans, slaves and liberation theology read it, and what it asks of Christians.",
   "source": "rewrite",
@@ -1752,12 +1746,6 @@
   "source": "derived",
   "grade": 6.7,
   "excerptGrade": 7.2
- },
- "gentrification-displacement": {
-  "metaDescription": "The coffee shop opens first. Then the yoga studio. The restaurant follows, with small plates and a wine list.",
-  "source": "derived",
-  "grade": 3,
-  "excerptGrade": 5.7
  },
  "give-feedback-changes-behavior": {
   "metaDescription": "Most feedback conversations accomplish one thing: they make the person giving the feedback feel that they have discharged an obligation.",
@@ -3126,10 +3114,10 @@
   }
  },
  "how-to-talk-about-faith": {
-  "metaDescription": "Most Christians have been trained to share their faith in ways that guarantee nobody wants to hear it. The problem is not the gospel.",
-  "source": "derived",
-  "grade": 4.3,
-  "excerptGrade": 3.2
+  "metaDescription": "How to talk about faith with friends who are nones: who they are, why old methods felt like sales, and what 1 Peter 3 and Acts 17 teach us to do instead.",
+  "source": "rewrite",
+  "grade": 9.8,
+  "excerptGrade": 10
  },
  "raising-kids-post-christian": {
   "metaDescription": "How to raise Christian kids in a secular culture: what ended with Christendom, the Benedict Option debate, and why Scripture calls families exiles.",
