@@ -624,14 +624,10 @@
   "excerptGrade": 13.1
  },
  "how-to-read-genesis-one": {
-  "metaDescription": "The wall was never the resurrection first. It was the rocks. I rejected Christianity at the creation and never got far enough to reach the cross.",
-  "source": "derived",
-  "grade": 5,
-  "excerptGrade": 4.5,
-  "qa": {
-   "question": "How Should a Christian Read Genesis 1?",
-   "answer": "The wall was never the resurrection first. It was the rocks. I rejected Christianity at the creation and never got far enough to reach the cross. What I took for a locked door was a room with several chairs in it."
-  }
+  "metaDescription": "How Genesis 1 is built, what it answered in the ancient world, six ways Christians read the days, and the historical Adam debate, stated fairly.",
+  "source": "rewrite",
+  "grade": 11.6,
+  "excerptGrade": 5.9
  },
  "if-god-is-good-why-suffering": {
   "metaDescription": "Why does a good God allow suffering? Epicurus, Plantinga, Rowe's fawn, Job and the cross, and why the answer must never be used on the grieving.",
@@ -3172,12 +3168,6 @@
   "source": "derived",
   "grade": 6.5,
   "excerptGrade": 9.4
- },
- "evolution-and-genesis": {
-  "metaDescription": "The debate over evolution and Genesis has generated more heat than light for over a century.",
-  "source": "derived",
-  "grade": 12,
-  "excerptGrade": 13.7
  },
  "the-historical-jesus": {
   "metaDescription": "The quest for the historical Jesus has occupied scholars for over two centuries.",

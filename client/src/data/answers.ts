@@ -434,7 +434,7 @@ export const ANSWERS: Answer[] = [
       "The genre question is the one most arguments skip. Genesis 1 answers who and why, and it may simply not be pitched at the modern question of how. As a former atheist I can tell you the science was a real barrier, and learning that the church has held several faithful readings of this chapter mattered more to me than winning any single argument about it. Hold the Creator with a closed hand. Hold the mechanism with an open one.",
     ],
     essaySlug: "how-to-read-genesis-one",
-    essayTitle: "How Should a Christian Read Genesis 1?",
+    essayTitle: "How Should Christians Read Genesis 1? Creation and Evolution",
     bookTitle: "Born Again From Atheism",
     bookHref: "/born-again-from-atheism",
   },

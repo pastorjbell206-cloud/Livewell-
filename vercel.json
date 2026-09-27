@@ -1535,6 +1535,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/evolution-and-genesis",
+            "destination": "/writing/how-to-read-genesis-one",
+            "permanent": true
+        },
+        {
             "source": "/writing/exodus-the-story-underneath-the-whole-bible",
             "destination": "/writing/why-the-bible-is-one-story-not-66-books",
             "permanent": true

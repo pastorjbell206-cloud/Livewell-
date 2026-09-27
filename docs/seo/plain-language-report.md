@@ -6,13 +6,13 @@ Search engines and answer engines see a second layer beside every essay: a meta 
 
 | Measure | Value |
 |---|---|
-| Essays with a description | 501 |
+| Essays with a description | 500 |
 | Hand-written descriptions | 5 |
-| Derived from the essay's own sentences | 496 |
-| Essays with question-and-answer data | 71 |
+| Derived from the essay's own sentences | 495 |
+| Essays with question-and-answer data | 70 |
 | Average reading grade, descriptions | 8.6 |
 | Average reading grade, original standfirsts | 9.7 |
-| Derived descriptions at grade 12 or above (hand-rewrite queue) | 53 |
+| Derived descriptions at grade 12 or above (hand-rewrite queue) | 52 |
 
 ## Hand-rewrite queue
 
@@ -72,4 +72,3 @@ Derived descriptions that still read at college level. Each is true to the essay
 | principalities-and-powers-the-bibles-language-for-systems | 12.3 | Paul had a vocabulary for systemic evil two thousand years before the word systemic existed. |
 | how-to-find-gods-will-for-your-career | 12.2 | God is far less concerned with the one perfect job he has hidden from you than with the kind of person you are becoming in whatever work you already hold. |
 | charity-is-not-justice-the-difference | 12.1 | We have learned to give bread to the man at the gate and never ask who built the gate, and the Bible refuses to let mercy become a substitute for justice. |
-| evolution-and-genesis | 12 | The debate over evolution and Genesis has generated more heat than light for over a century. |
