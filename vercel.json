@@ -1715,6 +1715,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/ordinary-time",
+            "destination": "/writing/why-the-church-has-a-calendar",
+            "permanent": true
+        },
+        {
             "source": "/writing/parenting-discipline-that-forms-the-heart",
             "destination": "/writing/discipline-without-domination",
             "permanent": true

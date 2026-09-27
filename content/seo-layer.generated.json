@@ -485,12 +485,6 @@
   "grade": 6.8,
   "excerptGrade": 5.7
  },
- "ordinary-time": {
-  "metaDescription": "The church year has two famous seasons and one long stretch nobody talks about, the green months between Pentecost and Advent called Ordinary Time.",
-  "source": "derived",
-  "grade": 12,
-  "excerptGrade": 9.8
- },
  "what-is-advent": {
   "metaDescription": "Advent is not the Christmas warm-up. It is four weeks the church spends in the dark, on purpose, waiting for a birth that happened two thousand years ago.",
   "source": "derived",
@@ -512,13 +506,13 @@
   }
  },
  "why-the-church-has-a-calendar": {
-  "metaDescription": "You already live by a calendar, it tells you when to spend, when to hurry, when to want more. The church year tells a different story about time.",
-  "source": "derived",
-  "grade": 5.5,
-  "excerptGrade": 4.5,
+  "metaDescription": "What the church calendar is, how it grew from Israel's feasts and early Christian practice, and what its seasons from Advent to Ordinary Time form in us.",
+  "source": "rewrite",
+  "grade": 11.5,
+  "excerptGrade": 10.7,
   "qa": {
-   "question": "Why Does the Church Have Its Own Calendar?",
-   "answer": "You already live by a calendar, it tells you when to spend, when to hurry, when to want more. The church year tells a different story about time. Here is what it is for, and what it does to you over years."
+   "question": "Is the Church Calendar Biblical?",
+   "answer": "Many Christians who don't keep the church year decline it on principle, and the principle deserves to be stated as its defenders would state it. God alone may say how he's to be worshiped, and the New Testament appoints one holy day, the Lord's day. Everything else in the calendar is human invention, however old and lovely, and the apostles warned against binding consciences with it. Paul was alarmed at the Galatians: \"You observe days and months and seasons and years!\" (Galatians 4:10, ESV)."
   }
  },
  "the-table-that-divides": {
