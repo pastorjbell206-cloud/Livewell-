@@ -602,14 +602,10 @@
   "excerptGrade": 10.8
  },
  "did-god-command-genocide": {
-  "metaDescription": "For years this was my strongest reason to reject the Bible, and I still think the person who reads these pages and recoils is reading them correctly.",
-  "source": "derived",
-  "grade": 11.1,
-  "excerptGrade": 7.8,
-  "qa": {
-   "question": "Did God Command Genocide?",
-   "answer": "For years this was my strongest reason to reject the Bible, and I still think the person who reads these pages and recoils is reading them correctly. So I will not hand you a comfort I could not accept myself."
-  }
+  "metaDescription": "Did God command genocide in Joshua? The herem texts, the skeptic's case, ancient war rhetoric, Rahab, Marcion and the cross, and what still stays hard.",
+  "source": "rewrite",
+  "grade": 6.3,
+  "excerptGrade": 10.7
  },
  "did-the-resurrection-happen": {
   "metaDescription": "The historical case that Jesus rose: the early creed in 1 Corinthians 15, the empty tomb and women witnesses, and the strongest skeptical replies weighed.",
