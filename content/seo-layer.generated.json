@@ -1577,12 +1577,6 @@
   "grade": 8.4,
   "excerptGrade": 9.8
  },
- "church-wage-theft": {
-  "metaDescription": "The law is direct. The sakir, the hired laborer, is named, protected, and the specific mechanism of exploitation is described: holding back what is owed.",
-  "source": "derived",
-  "grade": 10.1,
-  "excerptGrade": 4.4
- },
  "church-wealth-world-poverty": {
   "metaDescription": "What the widow's offering, Jesus on the temple and church history teach about church wealth, building campaigns, sacred beauty and the claim of the poor.",
   "source": "rewrite",
@@ -1676,12 +1670,6 @@
   "source": "derived",
   "grade": 7.7,
   "excerptGrade": 7.7
- },
- "do-justice-manifesto": {
-  "metaDescription": "Micah 6:8 is eight words in English. It takes longer to say than to dismiss. It has been dismissed. The dismissal takes several forms.",
-  "source": "derived",
-  "grade": 4,
-  "excerptGrade": 4
  },
  "doctrine-of-discovery": {
   "metaDescription": "This is the Doctrine of Discovery. It is not ancient history. In Johnson v.",
@@ -1914,10 +1902,14 @@
   "excerptGrade": 5.9
  },
  "micah-6-8-demands": {
-  "metaDescription": "He has shown you, O mortal, what is good. And what does the Lord require of you? To act justly and to love mercy and to walk humbly with your God.",
-  "source": "derived",
-  "grade": 2.1,
-  "excerptGrade": 2.1
+  "metaDescription": "Micah 6:8 in its setting: the covenant lawsuit, the offerings God refused, and what mishpat, hesed and walking humbly with God mean in Hebrew and for us.",
+  "source": "rewrite",
+  "grade": 12.4,
+  "excerptGrade": 8.3,
+  "qa": {
+   "question": "Who is a God like you?",
+   "answer": "I've preached Micah 6:8 without doing it. I've called a congregation to justice while leading a church whose budget mostly went to keeping itself running, described the steadfast love of God from a comfortable distance from the people who most needed to receive it through us, and talked about walking humbly with God while being considerably less humble in the room where the budget was set. That's the ordinary way a pastor makes the offer of 6:6 instead of the life of 6:8: a larger program in place of a smaller obedience."
+  }
  },
  "mission-is-not-optional": {
   "metaDescription": "That framing is the quiet beginning of a church's decline, because it treats as optional the very thing the church exists to do.",
@@ -1930,12 +1922,6 @@
   "source": "derived",
   "grade": 6.9,
   "excerptGrade": 5.5
- },
- "missions-without-justice-colonialism": {
-  "metaDescription": "The history of Christian missions is a history divided against itself.",
-  "source": "derived",
-  "grade": 11.2,
-  "excerptGrade": 11.2
  },
  "mobilizing-church-missions-small-budget": {
   "metaDescription": "The assumption lives in almost every small church I have encountered: that world missions is something larger churches do.",
@@ -2039,12 +2025,6 @@
   "grade": 7.4,
   "excerptGrade": 7.4
  },
- "poverty-tourism-not-mission": {
-  "metaDescription": "They return with photographs. The photographs are often shown in church, sometimes with tears.",
-  "source": "derived",
-  "grade": 6.5,
-  "excerptGrade": 20.1
- },
  "prayer-is-not-optional": {
   "metaDescription": "Ask a pastor how his prayer life is and watch his face before he answers.",
   "source": "derived",
@@ -2098,18 +2078,6 @@
   "source": "derived",
   "grade": 3.8,
   "excerptGrade": 3.8
- },
- "reaching-rich-comfortable": {
-  "metaDescription": "The rich young ruler walked away sad (Mark 10:22). Jesus let him go. This moment tends to make us uncomfortable, so we soften it.",
-  "source": "derived",
-  "grade": 3.8,
-  "excerptGrade": 3.8
- },
- "reaching-rich-more-comfortable": {
-  "metaDescription": "The strategic logic is coherent: if you can reach the people with resources and influence, they will fund the mission and shape the culture.",
-  "source": "derived",
-  "grade": 11,
-  "excerptGrade": 18.1
  },
  "rebuild-trust-after-broken": {
   "metaDescription": "Trust, once broken, does not rebuild on a timeline. That is the first thing to understand, and the thing the person who broke it most needs to hear.",
@@ -2231,12 +2199,6 @@
   "grade": 4.1,
   "excerptGrade": 4.1
  },
- "symptoms-without-causes-charity": {
-  "metaDescription": "There is a story, attributed to various sources over the years, about people standing on a riverbank pulling drowning bodies from the water.",
-  "source": "derived",
-  "grade": 13.4,
-  "excerptGrade": 13.4
- },
  "talk-global-missions-moves-congregation": {
   "metaDescription": "The missions presentation is a reliable feature of the American evangelical calendar.",
   "source": "derived",
@@ -2274,10 +2236,14 @@
   "excerptGrade": 13.8
  },
  "theology-fair-wages": {
-  "metaDescription": "The specificity of this text is worth dwelling on. Not a general principle about being fair to workers.",
-  "source": "derived",
-  "grade": 6.9,
-  "excerptGrade": 18.5
+  "metaDescription": "What Leviticus, Deuteronomy, the prophets, James and Jesus teach about fair pay and wage theft, with Rerum Novarum and the market case weighed fairly.",
+  "source": "rewrite",
+  "grade": 13.9,
+  "excerptGrade": 4.1,
+  "qa": {
+   "question": "What Does the Bible Say About Fair Wages and Wage Theft?",
+   "answer": "Scripture calls a withheld wage theft and says the worker's cry reaches God. What a just wage should require of law is argued among faithful people. Whether we pay what we owe is not."
+  }
  },
  "theology-of-enough": {
   "metaDescription": "The word is found early in the Exodus story, in the episode most preachers move past on their way to more dramatic material.",
@@ -2476,10 +2442,10 @@
   }
  },
  "already-and-not-yet-living-between-two-worlds": {
-  "metaDescription": "Every honest believer eventually runs into the same wall. The promises sound total.",
-  "source": "derived",
-  "grade": 9.6,
-  "excerptGrade": 14.4
+  "metaDescription": "What 'already but not yet' means: the two ages of Jewish hope, how Easter split them, what Vos, Cullmann and Ladd saw, and how to live in the overlap.",
+  "source": "rewrite",
+  "grade": 10.8,
+  "excerptGrade": 10.7
  },
  "what-christian-nationalism-is-and-is-not": {
   "metaDescription": "Christian nationalism gets thrown as an insult in both directions. A pastor on what the phrase actually names, and what it does not.",
@@ -2662,16 +2628,24 @@
   }
  },
  "the-eye-of-the-needle-jesus-and-the-rich": {
-  "metaDescription": "The point of the story was relief. See, the rich man can get in after all. He just has to stoop a little and drop some baggage.",
-  "source": "derived",
-  "grade": 1.9,
-  "excerptGrade": 15
+  "metaDescription": "Mark 10 read in context: the needle gate myth, the rope theory, Clement to Wesley, and what 'with God all things are possible' does and doesn't soften.",
+  "source": "rewrite",
+  "grade": 9.8,
+  "excerptGrade": 7.6,
+  "qa": {
+   "question": "What Did Jesus Mean by a Camel Through the Eye of a Needle?",
+   "answer": "Jesus did not describe a tight squeeze through a low gate. He named an impossibility, and the church has spent two thousand years turning it back into a difficulty it could manage. The impossibility is where grace begins, and grace does not make wealth safe."
+  }
  },
  "charity-is-not-justice-the-difference": {
-  "metaDescription": "We have learned to give bread to the man at the gate and never ask who built the gate, and the Bible refuses to let mercy become a substitute for justice.",
-  "source": "derived",
+  "metaDescription": "How Christians have told charity from justice, from Ambrose and Aquinas to Tocqueville and Câmara, and why the church owes the poor both, justice first.",
+  "source": "rewrite",
   "grade": 12.1,
-  "excerptGrade": 12.1
+  "excerptGrade": 9.8,
+  "qa": {
+   "question": "Charity vs. Justice: What's the Difference for Christians?",
+   "answer": "Charity gives what is ours; justice returns what was never ours to keep. Scripture and the church's long memory bind Christians to both, and warn that generosity can become a respectable way of withholding what we owe."
+  }
  },
  "covenant-vs-contract-what-marriage-is": {
   "metaDescription": "What is covenant marriage? The biblical meaning of marriage from Genesis 2 and 15 to Ephesians 5, and how the West came to treat marriage as a contract.",
@@ -3222,10 +3196,14 @@
   "excerptGrade": 16.5
  },
  "colonialism-and-missions": {
-  "metaDescription": "The cross arrived in the colonies alongside the sword. That refusal is itself a theological failure.",
-  "source": "derived",
-  "grade": 8.9,
-  "excerptGrade": 9.7
+  "metaDescription": "The honest history of missions and colonialism: the Requerimiento, the Congo, residential schools, Las Casas, William Carey, and short-term trips today.",
+  "source": "rewrite",
+  "grade": 15.6,
+  "excerptGrade": 8.9,
+  "qa": {
+   "question": "Whose religion is it now?",
+   "answer": "If Christianity had been nothing more than the chaplaincy of empire, it should have left with the administrators. It didn't. Sanneh made the point in Whose Religion Is Christianity? (2003): across much of Africa the faith grew fastest after independence, in churches led by Africans, worshiping in African languages. The historian Andrew Walls, who taught in West Africa before building the study of world Christianity at Aberdeen and Edinburgh, explained why. In The Missionary Movement in Christian History (1996) he argued that Christian expansion has always been serial rather than progressive."
+  }
  },
  "what-christians-can-learn-from-judaism": {
   "metaDescription": "Christianity emerged from Judaism and then spent two millennia pretending it had outgrown its parent.",

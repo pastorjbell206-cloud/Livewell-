@@ -6,13 +6,13 @@ Search engines and answer engines see a second layer beside every essay: a meta 
 
 | Measure | Value |
 |---|---|
-| Essays with a description | 494 |
+| Essays with a description | 487 |
 | Hand-written descriptions | 5 |
-| Derived from the essay's own sentences | 489 |
-| Essays with question-and-answer data | 72 |
+| Derived from the essay's own sentences | 482 |
+| Essays with question-and-answer data | 77 |
 | Average reading grade, descriptions | 8.7 |
 | Average reading grade, original standfirsts | 9.7 |
-| Derived descriptions at grade 12 or above (hand-rewrite queue) | 52 |
+| Derived descriptions at grade 12 or above (hand-rewrite queue) | 50 |
 
 ## Hand-rewrite queue
 
@@ -50,7 +50,6 @@ Derived descriptions that still read at college level. Each is true to the essay
 | what-christians-can-learn-from-buddhism | 13.5 | The contemplative traditions of Christianity and Buddhism have been carrying on a quiet conversation for centuries. |
 | 10-its-okay-to-see-a-counselor-why-pastors-resist-and-why-they-shouldnt | 13.4 | Of all the things that are slowly changing in pastoral culture, the stigma around professional counseling may be the most stubbornly persistent. |
 | church-must-speak-housing | 13.4 | In most American cities right now, housing consumes a share of working-class income that previous generations would have called a crisis. |
-| symptoms-without-causes-charity | 13.4 | There is a story, attributed to various sources over the years, about people standing on a riverbank pulling drowning bodies from the water. |
 | 44-what-the-church-in-the-global-south-can-teach-the-church-in-america-about-suffering | 13.3 | The American church has developed a sophisticated relationship with comfort. Its buildings are climate controlled. |
 | digital-divide | 13.3 | The resources that enable human flourishing, land, water, shelter, education, are not distributed randomly. They concentrate. |
 | how-to-preach-to-people-who-have-heard-it-all | 13.2 | The hardest congregation is not the hostile one but the one that has already heard your text a hundred times and stopped expecting anything from it. |
@@ -71,4 +70,3 @@ Derived descriptions that still read at college level. Each is true to the essay
 | where-church-was-silent | 12.3 | The church in America has a history that is not primarily the history of courage and faithfulness, though it contains that. |
 | principalities-and-powers-the-bibles-language-for-systems | 12.3 | Paul had a vocabulary for systemic evil two thousand years before the word systemic existed. |
 | how-to-find-gods-will-for-your-career | 12.2 | God is far less concerned with the one perfect job he has hidden from you than with the kind of person you are becoming in whatever work you already hold. |
-| charity-is-not-justice-the-difference | 12.1 | We have learned to give bread to the man at the gate and never ask who built the gate, and the Bible refuses to let mercy become a substitute for justice. |

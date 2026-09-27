@@ -94,22 +94,12 @@
             "permanent": true
         },
         {
-            "source": "/writing/micah-6-8-demands",
-            "destination": "/justice",
-            "permanent": true
-        },
-        {
             "source": "/writing/church-credibility-problem",
             "destination": "/justice",
             "permanent": true
         },
         {
             "source": "/writing/solidarity-theological-virtue",
-            "destination": "/justice",
-            "permanent": true
-        },
-        {
-            "source": "/writing/reaching-rich-comfortable",
             "destination": "/justice",
             "permanent": true
         },
@@ -1465,6 +1455,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/church-wage-theft",
+            "destination": "/writing/theology-fair-wages",
+            "permanent": true
+        },
+        {
             "source": "/writing/color-blindness-not-virtue",
             "destination": "/writing/the-image-of-god-and-the-lie-of-race",
             "permanent": true
@@ -1492,6 +1487,11 @@
         {
             "source": "/writing/dark-night-god-feels-absent",
             "destination": "/writing/when-god-is-silent-and-the-room-is-empty",
+            "permanent": true
+        },
+        {
+            "source": "/writing/do-justice-manifesto",
+            "destination": "/writing/micah-6-8-demands",
             "permanent": true
         },
         {
@@ -1740,6 +1740,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/missions-without-justice-colonialism",
+            "destination": "/writing/colonialism-and-missions",
+            "permanent": true
+        },
+        {
             "source": "/writing/morality-without-god-and-with-him",
             "destination": "/writing/can-you-be-good-without-god",
             "permanent": true
@@ -1800,6 +1805,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/poverty-tourism-not-mission",
+            "destination": "/writing/colonialism-and-missions",
+            "permanent": true
+        },
+        {
             "source": "/writing/prayer-when-you-do-not-feel-like-it",
             "destination": "/writing/how-do-you-actually-pray",
             "permanent": true
@@ -1857,6 +1867,16 @@
         {
             "source": "/writing/racial-reconciliation-without-repentance",
             "destination": "/writing/the-image-of-god-and-the-lie-of-race",
+            "permanent": true
+        },
+        {
+            "source": "/writing/reaching-rich-comfortable",
+            "destination": "/writing/the-eye-of-the-needle-jesus-and-the-rich",
+            "permanent": true
+        },
+        {
+            "source": "/writing/reaching-rich-more-comfortable",
+            "destination": "/writing/the-eye-of-the-needle-jesus-and-the-rich",
             "permanent": true
         },
         {
@@ -1952,6 +1972,11 @@
         {
             "source": "/writing/symptoms-without-causes",
             "destination": "/writing/individual-sin-and-systemic-sin-explained",
+            "permanent": true
+        },
+        {
+            "source": "/writing/symptoms-without-causes-charity",
+            "destination": "/writing/charity-is-not-justice-the-difference",
             "permanent": true
         },
         {
