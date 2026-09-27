@@ -487,16 +487,6 @@
   "grade": 6.7,
   "excerptGrade": 5.2
  },
- "what-happens-at-communion": {
-  "metaDescription": "A small piece of bread. A sip from a cup. Christians have argued for centuries about what it means and almost never about whether it matters.",
-  "source": "derived",
-  "grade": 4.1,
-  "excerptGrade": 3,
-  "qa": {
-   "question": "What Actually Happens at Communion?",
-   "answer": "A small piece of bread. A sip from a cup. Christians have argued for centuries about what it means and almost never about whether it matters. Here is what is going on when the church eats."
-  }
- },
  "why-baptism": {
   "metaDescription": "What baptism is, from Romans 6 to the Didache, and why churches split over infant or believer's baptism, immersion or sprinkling, sacrament or ordinance.",
   "source": "rewrite",
@@ -514,10 +504,14 @@
   "excerptGrade": 6.2
  },
  "why-faith-uses-physical-things": {
-  "metaDescription": "If Christianity is about the spirit and the soul, why is it so obsessed with stuff, water, bread, oil, wine, a body on a cross?",
-  "source": "derived",
-  "grade": 10.2,
-  "excerptGrade": 10.1
+  "metaDescription": "What Communion is and why Christians share bread and wine: the Last Supper, 1 Corinthians, four views of Christ's presence, and why matter still matters.",
+  "source": "rewrite",
+  "grade": 9.7,
+  "excerptGrade": 10.1,
+  "qa": {
+   "question": "Why would a spiritual faith need bread?",
+   "answer": "The suspicion that matter is beneath God is older than the church. In the second century it took a form the church learned to call Gnosticism, a family of movements rather than a single sect. Its teachers differed, but they shared a verdict: the physical world was a mistake or a prison, made by a lesser power, and the enlightened soul's task was to escape it. The body was not really you. Salvation meant getting out."
+  }
  },
  "silence-and-solitude": {
   "metaDescription": "What the desert fathers, Benedict's Rule, Elijah and Jesus teach about silence and solitude, why we flee them, and how solitude differs from loneliness.",
@@ -818,10 +812,10 @@
   }
  },
  "what-went-wrong": {
-  "metaDescription": "Everyone knows something is wrong with the world. We disagree violently about what.",
-  "source": "derived",
-  "grade": 6,
-  "excerptGrade": 6.7
+  "metaDescription": "What is sin? The Bible's words for it, sin as a power, Augustine and Pelagius on original sin, the guilt-machine objection, and why the diagnosis is mercy.",
+  "source": "rewrite",
+  "grade": 8.5,
+  "excerptGrade": 10.7
  },
  "why-god-started-with-one-family": {
   "metaDescription": "Why did God choose Abraham? The covenant of Genesis 12, 15 and 17, Paul's reading of it, and why biblical election is a calling for the nations, not favor.",
@@ -926,12 +920,6 @@
   "source": "derived",
   "grade": 12.4,
   "excerptGrade": 11.7
- },
- "what-the-miracles-mean": {
-  "metaDescription": "We treat the miracles as proof, divine credentials meant to settle the argument.",
-  "source": "derived",
-  "grade": 8.5,
-  "excerptGrade": 8.8
  },
  "what-the-resurrection-changes": {
   "metaDescription": "Why the resurrection matters now: God's verdict on the cross and on injustice, and what Easter means for the body, grief and work, from 1 Corinthians 15.",
@@ -1743,12 +1731,6 @@
   "grade": 12.3,
   "excerptGrade": 9.9
  },
- "global-church-is-your-church": {
-  "metaDescription": "The global church is not somewhere else. Real, but remote. Theirs, not ours.",
-  "source": "derived",
-  "grade": 1.5,
-  "excerptGrade": 14.6
- },
  "global-south-church-teach-suffering": {
   "metaDescription": "They are not praying for comfort. They are praying for courage. They are praying for each other's families in the event of arrest.",
   "source": "derived",
@@ -1824,10 +1806,10 @@
   "excerptGrade": 5.3
  },
  "isaiah-58-demands": {
-  "metaDescription": "The people in Isaiah 58 are confused. They have been religious. They have fasted.",
-  "source": "derived",
-  "grade": 3.1,
-  "excerptGrade": 3.1
+  "metaDescription": "Isaiah 58 in its setting: the returned exiles' fasts, the Hebrew of debt and release, why the Sabbath closes the chapter, Luke 4, and fasting today.",
+  "source": "rewrite",
+  "grade": 11.3,
+  "excerptGrade": 9.6
  },
  "justice-not-political-theological": {
   "metaDescription": "What mishpat, tsedaqah and dikaiosyne mean, how the prophets, Jesus and James used them, and why biblical justice is public but belongs to no party.",
@@ -1888,10 +1870,10 @@
   }
  },
  "mission-is-not-optional": {
-  "metaDescription": "That framing is the quiet beginning of a church's decline, because it treats as optional the very thing the church exists to do.",
-  "source": "derived",
-  "grade": 9.8,
-  "excerptGrade": 12.3
+  "metaDescription": "What the mission of the church is: missio Dei, the Great Commission read in context, the Lausanne debate over evangelism and justice, and mission at home.",
+  "source": "rewrite",
+  "grade": 12.3,
+  "excerptGrade": 9.1
  },
  "mission-sending-culture-never-sent": {
   "metaDescription": "The church that has never sent anyone has usually told itself a reasonable story about why. The mission field is far away.",
@@ -2038,10 +2020,14 @@
   "excerptGrade": 8.5
  },
  "psalm-82-unjust-systems": {
-  "metaDescription": "There is a psalm that most congregations have never heard preached. It is eight verses long.",
-  "source": "derived",
-  "grade": 3.8,
-  "excerptGrade": 3.8
+  "metaDescription": "Psalm 82 verse by verse: the divine council, who the gods are, why Jesus quoted it in John 10, how 'you are gods' is misused, and what justice holds up.",
+  "source": "rewrite",
+  "grade": 9.9,
+  "excerptGrade": 9.1,
+  "qa": {
+   "question": "Psalm 82 Explained: What Does 'You Are Gods' Mean?",
+   "answer": "Psalm 82 puts the gods on trial for failing the weak and the fatherless and sentences them to die like men. Whoever the gods are, the psalm teaches that authority is a trust held for the vulnerable, and that the world stands or shakes on whether it is kept."
+  }
  },
  "rebuild-trust-after-broken": {
   "metaDescription": "Trust, once broken, does not rebuild on a timeline. That is the first thing to understand, and the thing the person who broke it most needs to hear.",
@@ -2096,12 +2082,6 @@
   "source": "derived",
   "grade": 7.7,
   "excerptGrade": 12.4
- },
- "sin-not-just-what-you-do": {
-  "metaDescription": "The therapeutic version of sin works like this: sin is the things you do that hurt yourself or others.",
-  "source": "derived",
-  "grade": 7.3,
-  "excerptGrade": 9.3
  },
  "slow-burn-ministry-exhaustion": {
   "metaDescription": "Burnout almost never arrives as an event. We picture it that way, a collapse, a breakdown, a dramatic morning a man cannot get out of the car.",
@@ -2344,12 +2324,6 @@
   "source": "derived",
   "grade": 9.5,
   "excerptGrade": 15.7
- },
- "your-city-is-mission-field": {
-  "metaDescription": "When Jeremiah wrote to the exiles in Babylon, he did not tell them to keep their distance from the city until the rescue came.",
-  "source": "derived",
-  "grade": 10,
-  "excerptGrade": 10
  },
  "apologetics-hasnt-the-church-done-terrible-things": {
   "metaDescription": "The Crusades, the Inquisition, the wars of religion, slavery and abuse: the honest history, what it proves and what it doesn't, and why Christ judges it.",
@@ -3052,14 +3026,10 @@
   "excerptGrade": 9.5
  },
  "do-miracles-still-happen": {
-  "metaDescription": "The question of miracles is not whether they violate natural law. I hold both, and this essay is written from between them.",
-  "source": "derived",
-  "grade": 5.9,
-  "excerptGrade": 8.9,
-  "qa": {
-   "question": "Miracles: Do They Still Happen?",
-   "answer": "The question of miracles is not whether they violate natural law. It is whether the universe is the kind of place where the unexpected can break through, and whether we are the kind of people willing to notice."
-  }
+  "metaDescription": "What the Gospel miracles were for, the cessationist and continuationist cases, Augustine, Lourdes, faith-healing fraud, and how to pray for the sick.",
+  "source": "rewrite",
+  "grade": 13.4,
+  "excerptGrade": 11.5
  },
  "why-christianity": {
   "metaDescription": "The question is not whether Christianity is the only religion with truth in it.",
