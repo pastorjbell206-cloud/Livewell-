@@ -104,11 +104,6 @@
             "permanent": true
         },
         {
-            "source": "/writing/church-wealth-world-poverty",
-            "destination": "/justice",
-            "permanent": true
-        },
-        {
             "source": "/writing/good-samaritan-arguing",
             "destination": "/justice",
             "permanent": true
@@ -125,11 +120,6 @@
         },
         {
             "source": "/writing/hospitality-not-optional",
-            "destination": "/justice",
-            "permanent": true
-        },
-        {
-            "source": "/writing/church-comfort-inequality",
             "destination": "/justice",
             "permanent": true
         },
@@ -275,11 +265,6 @@
         },
         {
             "source": "/writing/children-poverty-prophetic-indictment",
-            "destination": "/living-well",
-            "permanent": true
-        },
-        {
-            "source": "/writing/church-megaproject-widows-mite",
             "destination": "/living-well",
             "permanent": true
         },
@@ -520,11 +505,6 @@
         },
         {
             "source": "/writing/spiritual-disciplines-for-pastors",
-            "destination": "/theology",
-            "permanent": true
-        },
-        {
-            "source": "/writing/the-examined-life",
             "destination": "/theology",
             "permanent": true
         },
@@ -1460,8 +1440,23 @@
             "permanent": true
         },
         {
+            "source": "/writing/church-comfort-inequality",
+            "destination": "/writing/church-wealth-world-poverty",
+            "permanent": true
+        },
+        {
             "source": "/writing/church-crisis-pregnancy",
             "destination": "/writing/the-consistent-pro-life-ethic-womb-to-tomb",
+            "permanent": true
+        },
+        {
+            "source": "/writing/church-megaproject-widow-mite",
+            "destination": "/writing/church-wealth-world-poverty",
+            "permanent": true
+        },
+        {
+            "source": "/writing/church-megaproject-widows-mite",
+            "destination": "/writing/church-wealth-world-poverty",
             "permanent": true
         },
         {
@@ -2002,6 +1997,16 @@
         {
             "source": "/writing/the-early-church-under-rome",
             "destination": "/writing/witness-without-power",
+            "permanent": true
+        },
+        {
+            "source": "/writing/the-examined-life",
+            "destination": "/writing/how-do-you-actually-change",
+            "permanent": true
+        },
+        {
+            "source": "/writing/the-examined-life-practices-that-hold",
+            "destination": "/writing/how-do-you-actually-change",
             "permanent": true
         },
         {

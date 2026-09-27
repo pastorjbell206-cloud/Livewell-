@@ -992,14 +992,10 @@
   "excerptGrade": 8.4
  },
  "how-do-you-actually-change": {
-  "metaDescription": "Everyone who tries to be better runs into the same wall: willpower works for a while and then it doesn't.",
-  "source": "derived",
-  "grade": 8.1,
-  "excerptGrade": 8.1,
-  "qa": {
-   "question": "How Do You Actually Change?",
-   "answer": "Everyone who tries to be better runs into the same wall: willpower works for a while and then it doesn't. The Bible's account of real change is stranger and more hopeful, fruit grown, not behavior forced."
-  }
+  "metaDescription": "What sanctification means, why willpower fails, how Reformed, Wesleyan, Keswick and Orthodox Christians explain change, and how the examen forms the heart.",
+  "source": "rewrite",
+  "grade": 13.4,
+  "excerptGrade": 12.7
  },
  "what-the-bible-says-about-spiritual-gifts": {
   "metaDescription": "What the Bible teaches about spiritual gifts, the cessationist and continuationist cases at full strength, and how churches should test prophecy today.",
@@ -1507,12 +1503,6 @@
   "grade": 3.7,
   "excerptGrade": 16.5
  },
- "church-comfort-inequality": {
-  "metaDescription": "The American church has made peace with a level of economic inequality that the prophets would have named without hesitation.",
-  "source": "derived",
-  "grade": 14,
-  "excerptGrade": 9.6
- },
  "church-credibility-problem": {
   "metaDescription": "The church has not been silenced. Let that be established first. The church in America can speak. What it has lost is not the capacity to speak.",
   "source": "derived",
@@ -1554,22 +1544,6 @@
   "source": "derived",
   "grade": 3.1,
   "excerptGrade": 13.2
- },
- "church-megaproject-widow-mite": {
-  "metaDescription": "Jesus sat down opposite the treasury and watched. That detail in Mark 12 is worth pausing on.",
-  "source": "derived",
-  "grade": 4.4,
-  "excerptGrade": 4.4,
-  "qa": {
-   "question": "The Debate: Commendation or Lament?",
-   "answer": "The traditional reading takes Jesus's words as commendation. The widow is the pattern of true giving, measured by cost rather than sum. The rich gave \"out of their abundance\", gifts that changed nothing about their lives. She gave everything. On this reading the text stands in a long biblical line, the widow of Zarephath giving her last flour to Elijah (1 Kings 17), the deep poverty of the Macedonian churches overflowing in generosity (2 Corinthians 8:1-3), and its sermon writes itself: God's ledger runs on proportion."
-  }
- },
- "church-megaproject-widows-mite": {
-  "metaDescription": "The temple treasury was elaborate. Into this magnificent structure, in the final days of his ministry, Jesus sat down across from the treasury and watched.",
-  "source": "derived",
-  "grade": 10.1,
-  "excerptGrade": 16.8
  },
  "church-must-speak-housing": {
   "metaDescription": "In most American cities right now, housing consumes a share of working-class income that previous generations would have called a crisis.",
@@ -1620,10 +1594,10 @@
   "excerptGrade": 4.4
  },
  "church-wealth-world-poverty": {
-  "metaDescription": "American Christianity owns a great deal of property. Sanctuaries with professional lighting rigs.",
-  "source": "derived",
-  "grade": 11.5,
-  "excerptGrade": 13
+  "metaDescription": "What the widow's offering, Jesus on the temple and church history teach about church wealth, building campaigns, sacred beauty and the claim of the poor.",
+  "source": "rewrite",
+  "grade": 11.6,
+  "excerptGrade": 11.8
  },
  "city-wide-church-together": {
   "metaDescription": "He did not say: seek the shalom of your particular congregation. He said the city. The whole city.",
@@ -2305,12 +2279,6 @@
   "grade": 3.1,
   "excerptGrade": 15.2
  },
- "the-examined-life": {
-  "metaDescription": "Socrates said the unexamined life is not worth living. His accusers disagreed. They gave him hemlock. The examined life is not, it turns out, always safe.",
-  "source": "derived",
-  "grade": 6,
-  "excerptGrade": 14.4
- },
  "the-long-arc": {
   "metaDescription": "The phrase about the arc of the moral universe bending toward justice was not invented in the twentieth century.",
   "source": "derived",
@@ -2916,12 +2884,6 @@
    "question": "What Is the Sabbath and Should Christians Keep It Today?",
    "answer": "The Sabbath was given twice, once to creatures and once to freed slaves, and Jesus claimed it rather than cancelled it. Christians still disagree about how it binds us, but every faithful answer rests on one distinction our culture has lost: rest as a reward for work, or rest as trust that God keeps the world running while we stop."
   }
- },
- "the-examined-life-practices-that-hold": {
-  "metaDescription": "Socrates said the unexamined life is not worth living, and we have repeated it so often that we no longer hear how much it leaves out.",
-  "source": "derived",
-  "grade": 11.8,
-  "excerptGrade": 21.6
  },
  "how-to-build-a-healthy-church-staff-culture": {
   "metaDescription": "The staff culture you actually have is the one you tolerate on a Tuesday, not the one you describe in the elder retreat.",

@@ -6,13 +6,13 @@ Search engines and answer engines see a second layer beside every essay: a meta 
 
 | Measure | Value |
 |---|---|
-| Essays with a description | 506 |
+| Essays with a description | 501 |
 | Hand-written descriptions | 5 |
-| Derived from the essay's own sentences | 501 |
-| Essays with question-and-answer data | 73 |
+| Derived from the essay's own sentences | 496 |
+| Essays with question-and-answer data | 71 |
 | Average reading grade, descriptions | 8.6 |
 | Average reading grade, original standfirsts | 9.7 |
-| Derived descriptions at grade 12 or above (hand-rewrite queue) | 54 |
+| Derived descriptions at grade 12 or above (hand-rewrite queue) | 53 |
 
 ## Hand-rewrite queue
 
@@ -43,7 +43,6 @@ Derived descriptions that still read at college level. Each is true to the essay
 | moral-injury-veterans | 14.4 | The word "trauma" has become a general-purpose container, applied to an expanding range of hard experience until it sometimes loses its force. |
 | 7-protecting-your-marriage-when-ministry-demands-everything | 14.3 | Ministry and marriage are both long-term commitments that require sustained, intentional investment to flourish. |
 | revitalize-or-replant | 14.1 | The distinction matters because the strategies are completely different. |
-| church-comfort-inequality | 14 | The American church has made peace with a level of economic inequality that the prophets would have named without hesitation. |
 | 29-what-the-scandals-in-the-church-are-teaching-us-about-accountability | 13.9 | The past decade has been one of the most sobering in the modern history of the American church when it comes to leadership accountability. |
 | unreached-people-groups-closest-to-you | 13.9 | Count the apartment complex where recent immigrants from Somalia live in quiet and considerable isolation. |
 | 33-the-case-for-doing-city-wide-church-together-at-least-once-a-year | 13.5 | There is a moment that most pastors who have experienced a genuine city-wide worship gathering can describe with unusual precision. |
