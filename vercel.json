@@ -304,11 +304,6 @@
             "permanent": true
         },
         {
-            "source": "/writing/imago-dei-means-more",
-            "destination": "/living-well",
-            "permanent": true
-        },
-        {
             "source": "/writing/most-prophetic-live-differently",
             "destination": "/living-well",
             "permanent": true
@@ -1552,6 +1547,16 @@
         {
             "source": "/writing/how-to-rest-in-a-culture-of-exhaustion",
             "destination": "/writing/what-the-sabbath-is-and-why-you-need-it",
+            "permanent": true
+        },
+        {
+            "source": "/writing/imago-dei-means",
+            "destination": "/writing/what-it-means-to-bear-the-image-of-god",
+            "permanent": true
+        },
+        {
+            "source": "/writing/imago-dei-means-more",
+            "destination": "/writing/what-it-means-to-bear-the-image-of-god",
             "permanent": true
         },
         {

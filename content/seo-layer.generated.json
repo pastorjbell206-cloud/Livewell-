@@ -2183,18 +2183,6 @@
   "grade": 11.7,
   "excerptGrade": 11.4
  },
- "imago-dei-means-more": {
-  "metaDescription": "In the ancient Near East, a king would place images of himself throughout the territories he governed.",
-  "source": "derived",
-  "grade": 9.8,
-  "excerptGrade": 9.8
- },
- "imago-dei-means": {
-  "metaDescription": "\"So God created man in his own image, in the image of God he created him; male and female he created them\" (Genesis 1:27).",
-  "source": "derived",
-  "grade": 10,
-  "excerptGrade": 14.1
- },
  "interior-life-of-pastor": {
   "metaDescription": "There is a kind of ministry that looks like faithfulness from the outside and is hollow from the inside. I have practiced it.",
   "source": "derived",
@@ -2944,10 +2932,14 @@
   "excerptGrade": 16.3
  },
  "what-it-means-to-bear-the-image-of-god": {
-  "metaDescription": "The first thing the Bible says about a human being is the most radical thing ever said about one.",
-  "source": "derived",
-  "grade": 8,
-  "excerptGrade": 19.1
+  "metaDescription": "What it means to be made in God's image: Genesis in its ancient setting, the three historic readings, and why human dignity rests on God, not ability.",
+  "source": "rewrite",
+  "grade": 12.9,
+  "excerptGrade": 9.6,
+  "qa": {
+   "question": "What Does It Mean to Be Made in the Image of God?",
+   "answer": "Being made in God's image is a status God confers before it is a capacity we exercise. That is why human dignity can be neither earned nor lost, and why every side that rations it stands under the same judgment."
+  }
  },
  "already-and-not-yet-living-between-two-worlds": {
   "metaDescription": "Faith that feels like victory and defeat at once is not failure. The New Testament says you live in the overlap of two ages. Here is what that changes.",
