@@ -14,7 +14,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const repoRoot = path.resolve(__dirname, "..");
 const readJson = (rel: string) => JSON.parse(readFileSync(path.join(repoRoot, rel), "utf8"));
 
-const FORBIDDEN = /\b(delve\w*|leverag\w*|unlock\w*|transformative|navigat\w*|tapestry|foster(?!\s+(care|child|parent|famil|home))\w*|unpack\w*|landscape\w*|nuanced|multifaceted|authentic\w*|journey\w*|holistic)\b/i;
+const FORBIDDEN = /\b(delve\w*|leverag\w*|unlock\w*|transformative|navigat\w*|tapestry|unpack\w*|landscape\w*|nuanced|multifaceted|authentic\w*|journey\w*|holistic)\b/i;
 const PHRASES = /in today.s world|now more than ever|here.s the thing|I want to be real with you|God.s got this|lean into|hold space|do the work|your truth|your feelings are valid|showing up|here is what I mean|let me explain/i;
 
 describe("the rewrite plumbing", () => {
@@ -116,8 +116,10 @@ describe("every rewrite meets the checkable parts of the standard", () => {
         expect(all).not.toMatch(/—/);
         expect(all).not.toMatch(/\s–\s/);
         // Proper names are not prose: Pew's Religious Landscape Study keeps its
-        // name, and so does Diana Greene Foster (The Turnaway Study).
-        expect(all.replace(/Religious Landscape Study|Greene Foster/g, "")).not.toMatch(FORBIDDEN);
+        // name. "foster" is checked lowercase only, so the verb is caught and
+        // the surname (Richard Foster, Diana Greene Foster) is not.
+        expect(all.replace(/Religious Landscape Study/g, "")).not.toMatch(FORBIDDEN);
+        expect(all).not.toMatch(/\bfoster(?!\s+(care|child|parent|famil|home))\w*/);
         // Phrases are checked outside quotations: Revelation 2:5 (ESV) says "do the works".
         const outsideQuotes = all.replace(/"[^"]*"|“[^”]*”/g, "");
         expect(outsideQuotes).not.toMatch(PHRASES);
