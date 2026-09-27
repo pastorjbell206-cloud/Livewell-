@@ -364,11 +364,6 @@
             "permanent": true
         },
         {
-            "source": "/writing/collaboration-across-denominations",
-            "destination": "/leadership",
-            "permanent": true
-        },
-        {
             "source": "/writing/interior-life-of-pastor",
             "destination": "/leadership",
             "permanent": true
@@ -386,11 +381,6 @@
         {
             "source": "/writing/preach-same-gospel-different-people",
             "destination": "/theology",
-            "permanent": true
-        },
-        {
-            "source": "/writing/greek-original-language-matters",
-            "destination": "/writing/how-to-read-the-bible-without-making-it-say-what-you-want",
             "permanent": true
         },
         {
@@ -471,11 +461,6 @@
         {
             "source": "/writing/mission-sending-culture-never-sent",
             "destination": "/writing/17-mobilizing-your-church-for-world-missions-without-a-big-budget",
-            "permanent": true
-        },
-        {
-            "source": "/writing/unity-without-uniformity",
-            "destination": "/disruption",
             "permanent": true
         },
         {
@@ -1385,6 +1370,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/collaboration-across-denominations",
+            "destination": "/writing/why-there-are-so-many-christian-denominations",
+            "permanent": true
+        },
+        {
             "source": "/writing/color-blindness-not-virtue",
             "destination": "/writing/the-image-of-god-and-the-lie-of-race",
             "permanent": true
@@ -1542,6 +1532,11 @@
         {
             "source": "/writing/good-samaritan-arguing",
             "destination": "/writing/good-samaritan-actually-arguing",
+            "permanent": true
+        },
+        {
+            "source": "/writing/greek-original-language-matters",
+            "destination": "/writing/how-to-read-the-bible-without-making-it-say-what-you-want",
             "permanent": true
         },
         {
@@ -2005,6 +2000,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/the-bible-without-the-marketing",
+            "destination": "/writing/why-trust-the-bible",
+            "permanent": true
+        },
+        {
             "source": "/writing/the-covenant-you-didnt-understand",
             "destination": "/writing/covenant-vs-contract-what-marriage-is",
             "permanent": true
@@ -2107,6 +2107,11 @@
         {
             "source": "/writing/toxic-masculinity-in-the-pulpit",
             "destination": "/writing/church-domestic-violence",
+            "permanent": true
+        },
+        {
+            "source": "/writing/unity-without-uniformity",
+            "destination": "/writing/why-there-are-so-many-christian-denominations",
             "permanent": true
         },
         {
