@@ -583,16 +583,6 @@
   "grade": 6.7,
   "excerptGrade": 5.9
  },
- "anxiety-and-faith": {
-  "metaDescription": "The verse arrives at three in the morning and does not comfort. Under the racing heart is a worse fear: that the anxiety itself is the sin.",
-  "source": "hand",
-  "grade": 5.4,
-  "excerptGrade": 4,
-  "qa": {
-   "question": "Is My Anxiety a Spiritual Failure?",
-   "answer": "The verse arrives at three in the morning and does not come as comfort. Underneath the racing heart is a second fear, quieter and worse: that the anxiety itself is the verdict on your faith. It is not. Let me tell you why."
-  }
- },
  "are-miracles-believable": {
   "metaDescription": "Hume's argument against miracles at full strength, the replies of Lewis, Swinburne, Earman and Keener, and what the Gospels say miracles are for.",
   "source": "rewrite",
@@ -937,18 +927,6 @@
    "answer": "We use 'holy' to mean very, very good, a moral grade, the top of the scale. The Bible means something stranger and more unsettling: that God is of a different order entirely, and that standing near Him is the most disorienting thing that can happen to a person."
   }
  },
- "the-bible-is-one-story": {
-  "metaDescription": "Most people who pick up the Bible read it as a pile of rules, a quote bank, or a manual for self-improvement.",
-  "source": "derived",
-  "grade": 9.6,
-  "excerptGrade": 5.6
- },
- "the-moment-the-story-turns": {
-  "metaDescription": "Every long story has a hinge, the moment after which nothing can go back. The Bible has one too, and it is not where you would put it.",
-  "source": "derived",
-  "grade": 4.6,
-  "excerptGrade": 5.3
- },
  "what-went-wrong": {
   "metaDescription": "Everyone knows something is wrong with the world. We disagree violently about what.",
   "source": "derived",
@@ -1074,10 +1052,10 @@
   "excerptGrade": 8.8
  },
  "what-the-resurrection-changes": {
-  "metaDescription": "Set aside, for the length of this essay, whether it happened. There is a question about the resurrection that gets all the attention.",
-  "source": "derived",
-  "grade": 6.9,
-  "excerptGrade": 9.5
+  "metaDescription": "Why the resurrection matters now: God's verdict on the cross and on injustice, and what Easter means for the body, grief and work, from 1 Corinthians 15.",
+  "source": "rewrite",
+  "grade": 10.7,
+  "excerptGrade": 9.3
  },
  "who-did-jesus-claim-to-be": {
   "metaDescription": "Most people inherit a Jesus who said wise things and was kind to outsiders.",
@@ -1709,12 +1687,6 @@
   "grade": 10.1,
   "excerptGrade": 16.8
  },
- "church-mental-health-justice": {
-  "metaDescription": "Elijah collapsed under a broom tree and asked God to let him die (1 Kings 19:4). This was not an abstract crisis of faith.",
-  "source": "derived",
-  "grade": 3.8,
-  "excerptGrade": 3.8
- },
  "church-must-speak-housing": {
   "metaDescription": "In most American cities right now, housing consumes a share of working-class income that previous generations would have called a crisis.",
   "source": "derived",
@@ -2060,12 +2032,6 @@
   "source": "derived",
   "grade": 4.7,
   "excerptGrade": 5.9
- },
- "hope-of-resurrection": {
-  "metaDescription": "He was not speaking hypothetically. There is no middle position available.",
-  "source": "derived",
-  "grade": 11.2,
-  "excerptGrade": 10
  },
  "hospitality-not-optional": {
   "metaDescription": "Somewhere in the last century, hospitality became a personality type. It is optional. It is for those who feel called.",
@@ -2773,17 +2739,11 @@
   "grade": 11.6,
   "excerptGrade": 11.1
  },
- "exodus-the-story-underneath-the-whole-bible": {
-  "metaDescription": "Israel did not begin its national memory with a creed. It began with a rescue.",
-  "source": "derived",
-  "grade": 4.6,
-  "excerptGrade": 15
- },
  "why-the-bible-is-one-story-not-66-books": {
-  "metaDescription": "Open most Bibles and the table of contents tells you it is a collection.",
-  "source": "derived",
-  "grade": 6.7,
-  "excerptGrade": 16.3
+  "metaDescription": "Is the Bible one story? How creation, fall, Israel, Christ, church and new creation fit together, why the exodus runs through it, and the case against.",
+  "source": "rewrite",
+  "grade": 5.8,
+  "excerptGrade": 9.5
  },
  "what-it-means-to-bear-the-image-of-god": {
   "metaDescription": "What it means to be made in God's image: Genesis in its ancient setting, the three historic readings, and why human dignity rests on God, not ability.",
@@ -3234,10 +3194,10 @@
   "excerptGrade": 11.8
  },
  "mental-health-and-the-church-beyond-pray-about-it": {
-  "metaDescription": "A church that treats depression as a faith problem will keep handing the drowning a heavier stone.",
-  "source": "derived",
-  "grade": 7,
-  "excerptGrade": 7
+  "metaDescription": "Why telling a depressed Christian to just pray more fails, what Scripture says about anguish, and how prayer, medicine and the church belong together.",
+  "source": "rewrite",
+  "grade": 11.5,
+  "excerptGrade": 8.4
  },
  "what-the-bible-says-about-immigrants-and-refugees-in-depth": {
   "metaDescription": "What the Torah's sojourner laws, Romans 13, Ruth and Matthew 25 teach about immigration, what Scripture binds Christians to, and what it leaves to policy.",
@@ -3580,12 +3540,6 @@
   "source": "derived",
   "grade": 21.7,
   "excerptGrade": 16.5
- },
- "church-and-mental-health": {
-  "metaDescription": "The church that tells a depressed person to pray harder is not offering spiritual counsel. It is practicing spiritual malpractice.",
-  "source": "derived",
-  "grade": 9,
-  "excerptGrade": 7.3
  },
  "toxic-masculinity-in-the-pulpit": {
   "metaDescription": "The church that confuses aggression with authority and domination with leadership has not recovered biblical manhood.",

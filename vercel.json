@@ -234,11 +234,6 @@
             "permanent": true
         },
         {
-            "source": "/writing/hope-of-resurrection",
-            "destination": "/writing/what-the-resurrection-changes",
-            "permanent": true
-        },
-        {
             "source": "/writing/why-pastors-quit-and-how-to-stay",
             "destination": "/writing/why-pastors-quit",
             "permanent": true
@@ -311,11 +306,6 @@
         {
             "source": "/writing/children-poverty-prophetic-indictment",
             "destination": "/living-well",
-            "permanent": true
-        },
-        {
-            "source": "/writing/church-mental-health-justice",
-            "destination": "/writing/depression-or-the-dark-night",
             "permanent": true
         },
         {
@@ -1405,6 +1395,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/anxiety-and-faith",
+            "destination": "/writing/mental-health-and-the-church-beyond-pray-about-it",
+            "permanent": true
+        },
+        {
             "source": "/writing/apologetics-can-a-reasonable-person-believe-in-miracles",
             "destination": "/writing/are-miracles-believable",
             "permanent": true
@@ -1475,6 +1470,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/church-and-mental-health",
+            "destination": "/writing/mental-health-and-the-church-beyond-pray-about-it",
+            "permanent": true
+        },
+        {
             "source": "/writing/church-crisis-pregnancy",
             "destination": "/writing/the-consistent-pro-life-ethic-womb-to-tomb",
             "permanent": true
@@ -1482,6 +1482,11 @@
         {
             "source": "/writing/church-member-abortion-secret",
             "destination": "/writing/grief-abortion-church",
+            "permanent": true
+        },
+        {
+            "source": "/writing/church-mental-health-justice",
+            "destination": "/writing/mental-health-and-the-church-beyond-pray-about-it",
             "permanent": true
         },
         {
@@ -1517,6 +1522,11 @@
         {
             "source": "/writing/emotional-labor-marriage",
             "destination": "/writing/emotional-labor-in-marriage",
+            "permanent": true
+        },
+        {
+            "source": "/writing/exodus-the-story-underneath-the-whole-bible",
+            "destination": "/writing/why-the-bible-is-one-story-not-66-books",
             "permanent": true
         },
         {
@@ -1557,6 +1567,11 @@
         {
             "source": "/writing/holy-spirit-not-feeling",
             "destination": "/writing/who-is-the-holy-spirit",
+            "permanent": true
+        },
+        {
+            "source": "/writing/hope-of-resurrection",
+            "destination": "/writing/what-the-resurrection-changes",
             "permanent": true
         },
         {
@@ -1865,6 +1880,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/the-bible-is-one-story",
+            "destination": "/writing/why-the-bible-is-one-story-not-66-books",
+            "permanent": true
+        },
+        {
             "source": "/writing/the-covenant-you-didnt-understand",
             "destination": "/writing/covenant-vs-contract-what-marriage-is",
             "permanent": true
@@ -1887,6 +1907,11 @@
         {
             "source": "/writing/the-father-wound-and-the-god-question",
             "destination": "/writing/what-fatherhood-requires",
+            "permanent": true
+        },
+        {
+            "source": "/writing/the-moment-the-story-turns",
+            "destination": "/writing/why-the-bible-is-one-story-not-66-books",
             "permanent": true
         },
         {
