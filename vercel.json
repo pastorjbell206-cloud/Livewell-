@@ -124,11 +124,6 @@
             "permanent": true
         },
         {
-            "source": "/writing/theology-of-repair",
-            "destination": "/justice",
-            "permanent": true
-        },
-        {
             "source": "/writing/hospitality-not-optional",
             "destination": "/justice",
             "permanent": true
@@ -1835,6 +1830,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/redlining-church-neighborhoods",
+            "destination": "/writing/theology-of-reparations",
+            "permanent": true
+        },
+        {
             "source": "/writing/resentment-marriage-telling-you",
             "destination": "/writing/the-resentment-in-your-marriage",
             "permanent": true
@@ -2020,6 +2020,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/theology-of-repair",
+            "destination": "/writing/theology-of-reparations",
+            "permanent": true
+        },
+        {
             "source": "/writing/toxic-masculinity-in-the-pulpit",
             "destination": "/writing/church-domestic-violence",
             "permanent": true
@@ -2032,6 +2037,11 @@
         {
             "source": "/writing/what-about-those-who-never-heard",
             "destination": "/writing/is-jesus-really-the-only-way",
+            "permanent": true
+        },
+        {
+            "source": "/writing/what-christians-can-learn-from-islam",
+            "destination": "/writing/christianity-and-islam",
             "permanent": true
         },
         {

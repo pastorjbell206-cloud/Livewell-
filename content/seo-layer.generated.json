@@ -590,10 +590,14 @@
   }
  },
  "christianity-and-islam": {
-  "metaDescription": "People say the two faiths are basically the same, or that they share nothing at all. Both are ways of not having the conversation.",
-  "source": "derived",
-  "grade": 5.3,
-  "excerptGrade": 7.1
+  "metaDescription": "How Christianity and Islam differ on the Trinity, Jesus, the cross, revelation and grace, and whether Christians and Muslims worship the same God.",
+  "source": "rewrite",
+  "grade": 12.9,
+  "excerptGrade": 7.7,
+  "qa": {
+   "question": "Christianity vs Islam: What Is the Real Difference?",
+   "answer": "Christianity and Islam are neither the same faith nor strangers. They agree that God is one, great and merciful, and they part over whether he has shown his face in Jesus, crucified and raised."
+  }
  },
  "christians-and-abortion": {
   "metaDescription": "What the Bible and the historic church teach about abortion, the strongest pro-choice arguments answered, the hard cases, and grace for the wounded.",
@@ -2223,12 +2227,6 @@
   "grade": 4.6,
   "excerptGrade": 4.1
  },
- "redlining-church-neighborhoods": {
-  "metaDescription": "The neighborhood your church occupies was made. Not by accident, not by natural aggregation, not by the invisible hand of preference and proximity.",
-  "source": "derived",
-  "grade": 10.4,
-  "excerptGrade": 10.4
- },
  "reformation-actually-about": {
   "metaDescription": "The Protestant Reformation is one of the most consequential events in Western history, religious, cultural, political, economic.",
   "source": "derived",
@@ -2421,17 +2419,11 @@
   "grade": 11.9,
   "excerptGrade": 11.9
  },
- "theology-of-repair": {
-  "metaDescription": "The Hebrew prophets did not speak primarily about preventing future wrongdoing. They spoke about reckoning with what had already been done.",
-  "source": "derived",
-  "grade": 8.7,
-  "excerptGrade": 8.7
- },
  "theology-of-reparations": {
-  "metaDescription": "The word arrives with immediate weight. This is itself a diagnosis. The Bible has a great deal to say about restitution.",
-  "source": "derived",
-  "grade": 5.7,
-  "excerptGrade": 18.5
+  "metaDescription": "What the Bible teaches about restitution, from Exodus 22 to Zacchaeus, and how Christians can weigh the case for and against reparations after redlining.",
+  "source": "rewrite",
+  "grade": 13.4,
+  "excerptGrade": 11.6
  },
  "theology-public-health": {
   "metaDescription": "In 2020, the pastoral question that should have been theological became political almost immediately. Masks or no masks.",
@@ -3408,12 +3400,6 @@
   "source": "derived",
   "grade": 11.5,
   "excerptGrade": 13.4
- },
- "what-christians-can-learn-from-islam": {
-  "metaDescription": "Islam is the faith Christians know least and fear most. That fear has produced ignorance, and that ignorance has impoverished both traditions.",
-  "source": "derived",
-  "grade": 8,
-  "excerptGrade": 8.3
  },
  "what-christians-can-learn-from-buddhism": {
   "metaDescription": "The contemplative traditions of Christianity and Buddhism have been carrying on a quiet conversation for centuries.",

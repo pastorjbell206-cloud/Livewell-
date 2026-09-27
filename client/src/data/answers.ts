@@ -369,7 +369,7 @@ export const ANSWERS: Answer[] = [
       "These are not misunderstandings a patient afternoon could clear. They are the load-bearing walls of two different houses, and no one inside either is a fool. I hold the Christian confession as confession, not as a point scored against a neighbor I respect: the one God, without ceasing to be one, entered his own creation as a man, was handed over to be killed, and was not defeated by it. I could be wrong, and if I am, I have built my life on a rumor. But I cannot make it smaller to keep peace at the table, and neither can the devout Muslim across from me. The honesty we owe each other is to name what stands on each side, and refuse to lie about its width.",
     ],
     essaySlug: "christianity-and-islam",
-    essayTitle: "What Christianity and Islam Actually Dispute",
+    essayTitle: "Christianity vs Islam: What Is the Real Difference?",
     bookTitle: "Born Again From Atheism",
     bookHref: "/born-again-from-atheism",
   },
