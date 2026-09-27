@@ -624,13 +624,13 @@
   }
  },
  "does-god-actually-exist": {
-  "metaDescription": "A pastor who spent years as an atheist on why he stopped: not because someone won an argument, but because his own view could not pay its bills.",
-  "source": "hand",
-  "grade": 10.5,
-  "excerptGrade": 6.3,
+  "metaDescription": "Aquinas, Leibniz, the kalam and Anselm's proof, the objections of Hume, Russell, Mackie and Oppy, and which God the arguments would reach if they worked.",
+  "source": "rewrite",
+  "grade": 11.6,
+  "excerptGrade": 8.5,
   "qa": {
-   "question": "Does God Actually Exist?",
-   "answer": "I did not stop being an atheist because someone won an argument. I stopped because the account I was defending kept sending me a bill it could not pay."
+   "question": "Why is there anything at all?",
+   "answer": "The most famous arguments begin from the plainest fact available: something exists. They are usually lumped together as \"the cosmological argument,\" as though there were one, and much of the confusion in popular debate comes from that lumping. There are at least three distinct arguments here, and they stand or fall on different premises."
   }
  },
  "end-of-life-and-bioethics": {
@@ -808,16 +808,10 @@
   "excerptGrade": 8
  },
  "the-historical-jesus-without-the-shortcuts": {
-  "metaDescription": "What you can defend historically. What you can't. There is a version of me that would have skimmed this essay for the trick.",
-  "source": "derived",
-  "grade": 3.3,
-  "excerptGrade": 8.7
- },
- "the-questions-that-actually-matter": {
-  "metaDescription": "Most defenses of Christianity answer questions skeptics aren't asking.",
-  "source": "derived",
-  "grade": 12.8,
-  "excerptGrade": 10.2
+  "metaDescription": "What historians agree about Jesus: the Roman and Jewish sources, the case against the myth theory, the three quests, and where historical method stops.",
+  "source": "rewrite",
+  "grade": 12,
+  "excerptGrade": 12.5
  },
  "what-following-this-actually-costs": {
   "metaDescription": "The honest closer. No altar call. A faith that asks for everything is at least not selling you something cheap.",

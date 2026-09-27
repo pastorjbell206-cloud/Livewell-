@@ -1980,6 +1980,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/the-questions-that-actually-matter",
+            "destination": "/writing/does-god-actually-exist",
+            "permanent": true
+        },
+        {
             "source": "/writing/the-rise-of-the-nones",
             "destination": "/writing/why-people-are-leaving-the-church",
             "permanent": true

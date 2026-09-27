@@ -6,13 +6,13 @@ Search engines and answer engines see a second layer beside every essay: a meta 
 
 | Measure | Value |
 |---|---|
-| Essays with a description | 525 |
-| Hand-written descriptions | 8 |
+| Essays with a description | 524 |
+| Hand-written descriptions | 7 |
 | Derived from the essay's own sentences | 517 |
 | Essays with question-and-answer data | 75 |
 | Average reading grade, descriptions | 8.5 |
 | Average reading grade, original standfirsts | 9.7 |
-| Derived descriptions at grade 12 or above (hand-rewrite queue) | 57 |
+| Derived descriptions at grade 12 or above (hand-rewrite queue) | 56 |
 
 ## Hand-rewrite queue
 
@@ -57,7 +57,6 @@ Derived descriptions that still read at college level. Each is true to the essay
 | digital-divide | 13.3 | The resources that enable human flourishing (land, water, shelter, education) are not distributed randomly. They concentrate. |
 | how-to-preach-to-people-who-have-heard-it-all | 13.2 | The hardest congregation is not the hostile one but the one that has already heard your text a hundred times and stopped expecting anything from it. |
 | the-womanhood-they-preached-was-small | 12.9 | The world I was raised in preached a womanhood of shrinkage, modesty as fear of the body, submission as erasure, silence as virtue, Scripture as a leash. |
-| the-questions-that-actually-matter | 12.8 | Most defenses of Christianity answer questions skeptics aren't asking. |
 | what-evangelicalism-was-supposed-to-be | 12.8 | That it became something else entirely is one of the great tragedies of modern American religion. |
 | what-a-christian-owes-the-city | 12.7 | The critique of political idolatry is finished only when it builds something. |
 | staff-culture-no-burnout | 12.6 | The church staff that cannot keep good people has usually decided, usually without knowing it, that the mission matters more than the people serving it. |
