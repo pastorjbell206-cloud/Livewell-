@@ -425,16 +425,6 @@
   "grade": 4.7,
   "excerptGrade": 2.5
  },
- "what-psalms-teach-about-anger-at-god": {
-  "metaDescription": "The church taught you that anger at God is a sin. The prayer book God gave us is full of it, and his own Son died with a complaint on his lips.",
-  "source": "hand",
-  "grade": 3.2,
-  "excerptGrade": 4,
-  "qa": {
-   "question": "Is It Okay to Be Angry at God?",
-   "answer": "The church taught you that anger at God is a sin to repent of. The prayer book God gave us is full of it, and his own Son died with a complaint on his lips."
-  }
- },
  "when-god-is-silent-and-the-room-is-empty": {
   "metaDescription": "Why does God feel silent? Isaiah's hidden God, the lament psalms, Job, the dark night, the hiddenness argument, and Holy Saturday, when God lay in a grave.",
   "source": "rewrite",
@@ -486,24 +476,20 @@
   "excerptGrade": 5.7
  },
  "what-is-advent": {
-  "metaDescription": "Advent is not the Christmas warm-up. It is four weeks the church spends in the dark, on purpose, waiting for a birth that happened two thousand years ago.",
-  "source": "derived",
-  "grade": 5.5,
-  "excerptGrade": 5.4,
+  "metaDescription": "What Advent is, how it grew from fasts in Gaul and Rome's four Sundays, and why the season before Christmas waits for Christ's return as well as his birth.",
+  "source": "rewrite",
+  "grade": 10.4,
+  "excerptGrade": 11.8,
   "qa": {
-   "question": "What Is Advent, and Why Wait for Something That Already Happened?",
-   "answer": "Advent is not the Christmas warm-up. It is four weeks the church spends in the dark, on purpose, waiting for a birth that happened two thousand years ago. Once you understand why, you may find it is the most honest season there is."
+   "question": "Does a Christian Have to Keep Advent?",
+   "answer": "Many faithful Christians don't keep Advent, and their reasons deserve their strongest form. The Puritan objection to the calendar as a whole is traced in the essay on the church year. The objection to Advent in particular runs like this. The New Testament commands watchfulness but never a season of it. \"Stay awake\" was spoken about every hour, and to give the return of Christ a season implies the rest of the year is off duty. The free-church Christian, Baptist or independent, would say the whole of life is Advent, and a liturgical season risks turning a daily readiness into an annual mood."
   }
  },
  "why-lent": {
-  "metaDescription": "Giving up coffee or chocolate for six weeks looks like a quaint religious diet.",
-  "source": "derived",
-  "grade": 5.9,
-  "excerptGrade": 7.8,
-  "qa": {
-   "question": "Why Would Anyone Give Something Up for Lent?",
-   "answer": "Giving up coffee or chocolate for six weeks looks like a quaint religious diet. It is something far stranger and more serious: forty days of deliberately removing what numbs you, to find out what is actually underneath. Here is what Lent is really for."
-  }
+  "metaDescription": "Why Christians keep Lent and fast: the forty days in Scripture, early church fasting, the Reformers' objections, and how to fast wisely and safely.",
+  "source": "rewrite",
+  "grade": 12,
+  "excerptGrade": 10.9
  },
  "why-the-church-has-a-calendar": {
   "metaDescription": "What the church calendar is, how it grew from Israel's feasts and early Christian practice, and what its seasons from Advent to Ordinary Time form in us.",
@@ -564,12 +550,6 @@
   "source": "rewrite",
   "grade": 14.4,
   "excerptGrade": 11.5
- },
- "why-christians-fast": {
-  "metaDescription": "Fasting was once as ordinary in Christian life as prayer. Then it quietly disappeared.",
-  "source": "derived",
-  "grade": 6.5,
-  "excerptGrade": 6.4
  },
  "angels-demons-and-the-unseen": {
   "metaDescription": "As a materialist this was the easiest thing in the Bible to mock, and later the thing I had understood least. Angels, demons, an unseen order.",
@@ -1774,10 +1754,14 @@
   "excerptGrade": 9.8
  },
  "creation-care-not-optional": {
-  "metaDescription": "We have treated creation care as a political category when it is a theological one.",
-  "source": "derived",
-  "grade": 10.7,
-  "excerptGrade": 8.4
+  "metaDescription": "What Genesis means by dominion, how Christians answered Lynn White's 1967 charge, and why clean air and water are a matter of neighbor love, not party.",
+  "source": "rewrite",
+  "grade": 11.3,
+  "excerptGrade": 11.7,
+  "qa": {
+   "question": "What Does the Bible Say About Caring for the Environment?",
+   "answer": "Genesis gives human beings real authority over the earth, but it is a tenant's authority under a Creator who still owns it. Lynn White's charge against Christianity deserves an honest answer, and so do the neighbors who live downstream of our choices."
+  }
  },
  "culture-discipleship-not-attendance": {
   "metaDescription": "A church can gather a great many people and disciple almost none of them.",
@@ -1833,12 +1817,6 @@
   "grade": 6.7,
   "excerptGrade": 5.8
  },
- "earth-is-lords": {
-  "metaDescription": "Psalm 24 opens with a statement so simple it can be missed: \"The earth is the LORD's, and everything in it, the world, and all who live in it.\"",
-  "source": "derived",
-  "grade": 10.4,
-  "excerptGrade": 13.2
- },
  "education-inequality": {
   "metaDescription": "We have told this story for so long and so loudly that many of us have stopped noticing what it requires us not to see.",
   "source": "derived",
@@ -1862,12 +1840,6 @@
   "source": "derived",
   "grade": 5.9,
   "excerptGrade": 13.4
- },
- "environmental-racism": {
-  "metaDescription": "There is a map you can pull up. You do not need a statistics degree to read it. The overlap is not subtle.",
-  "source": "derived",
-  "grade": 1.8,
-  "excerptGrade": 14.7
  },
  "eschatology-matters-end-shapes-now": {
   "metaDescription": "The word eschatology comes from the Greek eschaton, the last thing, the final moment, the end toward which everything is moving.",
@@ -2281,12 +2253,6 @@
   "grade": 3.8,
   "excerptGrade": 3.8
  },
- "psalms-as-prayer-not-poetry": {
-  "metaDescription": "Psalm 88 ends without resolution. That is unusual. Psalm 88 does none of that.",
-  "source": "derived",
-  "grade": 1.4,
-  "excerptGrade": 8
- },
  "racial-reconciliation-without-repentance": {
   "metaDescription": "The photographs from multi-ethnic Sunday services are real. The warmth in those rooms is real.",
   "source": "derived",
@@ -2491,12 +2457,6 @@
   "grade": 9.1,
   "excerptGrade": 13.8
  },
- "theology-clean-air": {
-  "metaDescription": "Breathe. You just did something that Genesis 2:7 traces to the act of God.",
-  "source": "derived",
-  "grade": 2.3,
-  "excerptGrade": 2.3
- },
  "theology-fair-wages": {
   "metaDescription": "The specificity of this text is worth dwelling on. Not a general principle about being fair to workers.",
   "source": "derived",
@@ -2508,12 +2468,6 @@
   "source": "derived",
   "grade": 10.8,
   "excerptGrade": 10.8
- },
- "theology-of-land": {
-  "metaDescription": "There is a building in most American cities that sits on land whose story it does not know. It has a mortgage, a tax bill, a property line.",
-  "source": "derived",
-  "grade": 5.5,
-  "excerptGrade": 5.5
  },
  "theology-of-protest": {
   "metaDescription": "There is a persistent assumption in large portions of the American church that protest is somehow un-Christian.",
@@ -2580,12 +2534,6 @@
   "source": "derived",
   "grade": 4,
   "excerptGrade": 2.6
- },
- "water-theological-issue": {
-  "metaDescription": "Water appears on the first page of the Bible. The parting of the sea. The wilderness thirst. The rock Moses struck. The Jordan crossing.",
-  "source": "derived",
-  "grade": 2.5,
-  "excerptGrade": 14.4
  },
  "weight-of-what-you-cant-say": {
   "metaDescription": "You know things about your congregation that nobody else knows. You know whose marriage is barely hanging on while they hold hands in the third row.",
@@ -3084,10 +3032,14 @@
   "excerptGrade": 7.8
  },
  "lament-the-prayer-the-church-forgot": {
-  "metaDescription": "We taught ourselves to skip past the prayers of grief, and in skipping them we lost the only language honest enough to carry what race has done.",
-  "source": "derived",
-  "grade": 10.2,
-  "excerptGrade": 10.2
+  "metaDescription": "Is it wrong to be angry at God? How the lament psalms, Job, Jeremiah and Jesus' cry from the cross turn protest into prayer, and where that anger stops.",
+  "source": "rewrite",
+  "grade": 5.1,
+  "excerptGrade": 6.3,
+  "qa": {
+   "question": "Is it wrong to be angry at God?",
+   "answer": "The Christians who say you shouldn't be angry at God aren't fools, and their case deserves the form they'd sign. Anger is a moral judgment; to be angry at someone is to hold that he has done wrong. God cannot do wrong. He is the standard of righteousness, not a party measured against it. So anger at God is always misdirected, a creature putting the Creator in the dock, and the fitting response to loss is Job's on the first day: \"The LORD gave, and the LORD has taken away; blessed be the name of the LORD\" (Job 1:21, ESV)."
+  }
  },
  "building-the-multiethnic-church": {
   "metaDescription": "Why Sunday morning is still segregated, what Ephesians, Galatians and Acts say about the dividing wall, and why real multiethnic churches share power.",

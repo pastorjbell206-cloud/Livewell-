@@ -134,11 +134,6 @@
             "permanent": true
         },
         {
-            "source": "/writing/earth-is-lords",
-            "destination": "/justice",
-            "permanent": true
-        },
-        {
             "source": "/writing/church-comfort-inequality",
             "destination": "/justice",
             "permanent": true
@@ -211,11 +206,6 @@
         {
             "source": "/writing/lead-when-trust-institutions-low",
             "destination": "/theology",
-            "permanent": true
-        },
-        {
-            "source": "/writing/psalms-as-prayer-not-poetry",
-            "destination": "/writing/praying-the-words-when-you-have-none",
             "permanent": true
         },
         {
@@ -1520,8 +1510,18 @@
             "permanent": true
         },
         {
+            "source": "/writing/earth-is-lords",
+            "destination": "/writing/creation-care-not-optional",
+            "permanent": true
+        },
+        {
             "source": "/writing/emotional-labor-marriage",
             "destination": "/writing/emotional-labor-in-marriage",
+            "permanent": true
+        },
+        {
+            "source": "/writing/environmental-racism",
+            "destination": "/writing/creation-care-not-optional",
             "permanent": true
         },
         {
@@ -1790,6 +1790,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/psalms-as-prayer-not-poetry",
+            "destination": "/writing/lament-the-prayer-the-church-forgot",
+            "permanent": true
+        },
+        {
             "source": "/writing/reading-the-bible-slowly",
             "destination": "/writing/how-to-read-the-bible-without-making-it-say-what-you-want",
             "permanent": true
@@ -1960,13 +1965,28 @@
             "permanent": true
         },
         {
+            "source": "/writing/theology-clean-air",
+            "destination": "/writing/creation-care-not-optional",
+            "permanent": true
+        },
+        {
             "source": "/writing/theology-of-borders",
             "destination": "/writing/what-the-bible-says-about-immigrants-and-refugees-in-depth",
             "permanent": true
         },
         {
+            "source": "/writing/theology-of-land",
+            "destination": "/writing/creation-care-not-optional",
+            "permanent": true
+        },
+        {
             "source": "/writing/toxic-masculinity-in-the-pulpit",
             "destination": "/writing/church-domestic-violence",
+            "permanent": true
+        },
+        {
+            "source": "/writing/water-theological-issue",
+            "destination": "/writing/creation-care-not-optional",
             "permanent": true
         },
         {
@@ -1987,6 +2007,11 @@
         {
             "source": "/writing/what-jubilee-means",
             "destination": "/writing/jubilee-debt-and-the-economy-god-commanded",
+            "permanent": true
+        },
+        {
+            "source": "/writing/what-psalms-teach-about-anger-at-god",
+            "destination": "/writing/lament-the-prayer-the-church-forgot",
             "permanent": true
         },
         {
@@ -2037,6 +2062,11 @@
         {
             "source": "/writing/whose-kingdom-jesus-and-political-power",
             "destination": "/writing/two-kingdoms-faith-and-state",
+            "permanent": true
+        },
+        {
+            "source": "/writing/why-christians-fast",
+            "destination": "/writing/why-lent",
             "permanent": true
         },
         {
