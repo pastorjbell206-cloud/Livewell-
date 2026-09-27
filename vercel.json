@@ -89,11 +89,6 @@
             "permanent": true
         },
         {
-            "source": "/writing/church-credibility-problem",
-            "destination": "/justice",
-            "permanent": true
-        },
-        {
             "source": "/writing/prophetic-pastor",
             "destination": "/justice",
             "permanent": true

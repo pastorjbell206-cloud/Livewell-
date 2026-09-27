@@ -692,10 +692,10 @@
   }
  },
  "the-atheist-in-the-pulpit": {
-  "metaDescription": "A pastor who was an atheist with real reasons tells the honest story of what changed his mind, slowly and against his own preference, and what it cost him.",
-  "source": "hand",
-  "grade": 11.6,
-  "excerptGrade": 5.5
+  "metaDescription": "A former atheist, now a pastor, states the atheist case at its strongest, from Russell to Nagel, and tells what moved him to faith and what belief cost.",
+  "source": "rewrite",
+  "grade": 11.3,
+  "excerptGrade": 4.5
  },
  "the-cost-of-following": {
   "metaDescription": "Every invitation to believe you have ever received was trying to sell you something, and you were right to smell it.",
@@ -1448,10 +1448,10 @@
   "excerptGrade": 16.5
  },
  "church-credibility-problem": {
-  "metaDescription": "The church has not been silenced. Let that be established first. The church in America can speak. What it has lost is not the capacity to speak.",
-  "source": "derived",
-  "grade": 3.6,
-  "excerptGrade": 3.7
+  "metaDescription": "Why Americans stopped trusting the church: what Gallup's numbers show, the causes we own, how a true gospel gets discredited, and what repentance requires.",
+  "source": "rewrite",
+  "grade": 13.4,
+  "excerptGrade": 10.4
  },
  "church-death-penalty": {
   "metaDescription": "The United States executes people in the name of the state. This is not a minor inconsistency.",
@@ -1560,10 +1560,14 @@
   "excerptGrade": 14.8
  },
  "climate-refugees": {
-  "metaDescription": "The direction is not in serious dispute, even where the numbers are. The church in the wealthy world will be asked a question it has not prepared for.",
-  "source": "derived",
-  "grade": 6.3,
-  "excerptGrade": 6.8
+  "metaDescription": "Why climate refugees have no status under the 1951 Convention, what the science and projections can bear, and what Scripture's famine migrants teach.",
+  "source": "rewrite",
+  "grade": 11.3,
+  "excerptGrade": 10.6,
+  "qa": {
+   "question": "Climate Refugees and the Bible: Who Is My Neighbor Now?",
+   "answer": "Most people uprooted by a changing climate have no legal category and no single cause anyone can prove. Scripture never made the neighbor wait on either, and it asks the people who burned the most to answer for both restitution and mercy."
+  }
  },
  "conflict-is-not-failure": {
   "metaDescription": "The New Testament church had conflict before it had a second generation.",
@@ -1612,10 +1616,10 @@
   "excerptGrade": 10
  },
  "digital-divide": {
-  "metaDescription": "The resources that enable human flourishing, land, water, shelter, education, are not distributed randomly. They concentrate.",
-  "source": "derived",
-  "grade": 13.3,
-  "excerptGrade": 12.4
+  "metaDescription": "Who the digital divide leaves out, what Congress funded and let lapse, and how the gleaning law of Leviticus 19 shapes a Christian response to access.",
+  "source": "rewrite",
+  "grade": 12.3,
+  "excerptGrade": 13.2
  },
  "disability-justice-theological": {
   "metaDescription": "There is a man in my congregation who has worshiped God in a wheelchair for twenty years.",
@@ -1652,10 +1656,10 @@
   "excerptGrade": 16.4
  },
  "elder-abuse-invisible": {
-  "metaDescription": "It appears in the same chapter as the commands to leave grain at the field's edge for the poor, to not rob your neighbor, to not oppress the hired worker.",
-  "source": "derived",
-  "grade": 10.7,
-  "excerptGrade": 14.6
+  "metaDescription": "What elder abuse is, why most of it goes unreported, what the fifth commandment asks of adult children, and how a church can protect its older members.",
+  "source": "rewrite",
+  "grade": 12,
+  "excerptGrade": 11.4
  },
  "exodus-demands-church": {
   "metaDescription": "How the Exodus runs from Deuteronomy to the Last Supper and 1 Peter, how Puritans, slaves and liberation theology read it, and what it asks of Christians.",
@@ -1770,10 +1774,10 @@
   "excerptGrade": 9.1
  },
  "human-trafficking-selective-outrage": {
-  "metaDescription": "The church mobilizes for human trafficking with a coherence it rarely displays around other forms of exploitation. Conferences fill.",
-  "source": "derived",
-  "grade": 11.7,
-  "excerptGrade": 11.4
+  "metaDescription": "What the law means by human trafficking, what the 2022 global estimates show, where church outrage stops, the 2020 rumors, and what Scripture asks of us.",
+  "source": "rewrite",
+  "grade": 10,
+  "excerptGrade": 5.9
  },
  "interior-life-of-pastor": {
   "metaDescription": "There is a kind of ministry that looks like faithfulness from the outside and is hollow from the inside. I have practiced it.",
@@ -1940,10 +1944,14 @@
   "excerptGrade": 10.5
  },
  "payday-lending-christians": {
-  "metaDescription": "The Mosaic law was not neutral on the question of lending money to the poor.",
-  "source": "derived",
-  "grade": 6,
-  "excerptGrade": 6
+  "metaDescription": "What Exodus, Leviticus, Deuteronomy and Nehemiah teach on interest, how the church judged usury, and what it means for payday loans and their alternatives.",
+  "source": "rewrite",
+  "grade": 15.9,
+  "excerptGrade": 9.1,
+  "qa": {
+   "question": "What Does the Bible Say About Usury and Payday Loans?",
+   "answer": "The Torah forbade turning a poor neighbor's need into income, and the church spent fifteen centuries learning to tell that loan from a merchant's. The payday storefront stands almost exactly on the line Scripture drew."
+  }
  },
  "personal-board-accountability": {
   "metaDescription": "Every CEO has a board. Every doctor has a licensing body. Every pilot answers to a tower.",
