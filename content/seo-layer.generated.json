@@ -570,14 +570,10 @@
   "excerptGrade": 11.4
  },
  "can-you-lose-your-salvation": {
-  "metaDescription": "The question does not usually arrive in a classroom. The church has answered it two ways for centuries. I am not going to close it for you.",
-  "source": "derived",
-  "grade": 3.7,
-  "excerptGrade": 4.5,
-  "qa": {
-   "question": "Can You Lose Your Salvation?",
-   "answer": "The question does not usually arrive in a classroom. It arrives at three in the morning, when a Christian who has failed badly lies in the dark and wonders if the door is still open. The church has answered it two ways for centuries. I am not going to close it for you. I am going to tell you the truth about both."
-  }
+  "metaDescription": "Can you lose your salvation? Five Christian views at full strength, Hebrews 6 and John 10 read in context, and where assurance of salvation truly rests.",
+  "source": "rewrite",
+  "grade": 4.9,
+  "excerptGrade": 11.9
  },
  "christian-sexual-ethic": {
   "metaDescription": "Is the Christian view of sexuality homophobic? Genesis, Jesus, Romans 1, the strongest affirming and traditional cases, and the church's failures.",
