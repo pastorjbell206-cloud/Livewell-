@@ -380,10 +380,10 @@
   }
  },
  "when-fear-rewrites-theology": {
-  "metaDescription": "Fear does not announce itself as fear. It tells you the worry is wisdom.",
-  "source": "derived",
-  "grade": 2.3,
-  "excerptGrade": 7.2
+  "metaDescription": "How fear passes for faith, what the Bible means by the fear of the Lord, and how scrupulosity, prophecy panic and dread distort the face of God.",
+  "source": "rewrite",
+  "grade": 11.1,
+  "excerptGrade": 7.6
  },
  "why-does-god-feel-far-away": {
   "metaDescription": "Feeling that God is far away is not a conclusion you reasoned your way to. It is the weather of our age. A pastor who came from atheism on why.",
@@ -752,10 +752,10 @@
   "excerptGrade": 12.5
  },
  "what-following-this-actually-costs": {
-  "metaDescription": "The honest closer. No altar call. A faith that asks for everything is at least not selling you something cheap.",
-  "source": "derived",
-  "grade": 4.1,
-  "excerptGrade": 6.9
+  "metaDescription": "What it costs to follow Jesus: Luke 14 read in context, Bonhoeffer's call to come and die, the social price of faith today, and the gains Jesus named.",
+  "source": "rewrite",
+  "grade": 10.5,
+  "excerptGrade": 8.5
  },
  "what-secular-explanations-still-have-to-explain": {
   "metaDescription": "Consciousness, reason, morality, fine-tuning, the church's rise and our longing for more: what naturalism still must explain, and why it isn't a gap.",
@@ -1789,12 +1789,6 @@
   "grade": 13,
   "excerptGrade": 10.8
  },
- "justice-without-love-ideology": {
-  "metaDescription": "Paul's meditation on love in 1 Corinthians 13 is among the most quoted and least examined passages in the New Testament.",
-  "source": "derived",
-  "grade": 11.1,
-  "excerptGrade": 5.2
- },
  "lead-church-decline-without-losing-hope": {
   "metaDescription": "Decline does something to a pastor that success never does. Success flatters you. Decline strips you.",
   "source": "derived",
@@ -2014,10 +2008,10 @@
   "excerptGrade": 11.2
  },
  "repentance-and-renewal": {
-  "metaDescription": "The Greek word is metanoia. It does not mean feeling sorry. Not \"improve.\" Not \"reflect.\" Turn around. Most pastors preach this with conviction.",
-  "source": "derived",
-  "grade": 3.6,
-  "excerptGrade": 6
+  "metaDescription": "What biblical repentance is: metanoia and shuv, Luther's first thesis, godly and worldly grief, restitution, corporate confession, and why it isn't shame.",
+  "source": "rewrite",
+  "grade": 13.9,
+  "excerptGrade": 10.4
  },
  "return-ministry-after-burnout": {
   "metaDescription": "The pastors I have watched return to ministry after burning out almost always make the same mistake.",
@@ -2062,10 +2056,10 @@
   "excerptGrade": 14.2
  },
  "solidarity-theological-virtue": {
-  "metaDescription": "The word solidarity carries freight it did not earn in every room where it is spoken. In some rooms it sounds like a union hall.",
-  "source": "derived",
-  "grade": 5.3,
-  "excerptGrade": 4.4
+  "metaDescription": "What solidarity means in Catholic social teaching and in Paul's letters, and why justice cut off from love hardens into ideology on the right and the left.",
+  "source": "rewrite",
+  "grade": 13.3,
+  "excerptGrade": 8.6
  },
  "spiritual-disciplines-for-pastors": {
   "metaDescription": "Nobody warned me that the job itself would become the thing standing between me and God.",
@@ -2122,10 +2116,10 @@
   "excerptGrade": 9.1
  },
  "the-theology-of-time": {
-  "metaDescription": "Every productivity system assumes you do not have enough time to get everything done.",
-  "source": "derived",
-  "grade": 12.6,
-  "excerptGrade": 9.1
+  "metaDescription": "What the Bible says about time and hurry: chronos and kairos, Psalm 90, Ecclesiastes 3, Augustine, clock time, and why hurry is a question of trust.",
+  "source": "rewrite",
+  "grade": 10.9,
+  "excerptGrade": 11.1
  },
  "theological-case-against-torture": {
   "metaDescription": "The question should not require a theological case. The symptom is not primarily political.",
@@ -2256,10 +2250,14 @@
   }
  },
  "you-are-not-the-exception": {
-  "metaDescription": "Every generation believes it is the exception to the rules of biblical interpretation.",
-  "source": "derived",
-  "grade": 15.8,
-  "excerptGrade": 15.8
+  "metaDescription": "Why Christians misread the Bible in every era, from the curse of Ham to 1844 and manifest destiny, what Gadamer and Lewis explain, and how to read humbly.",
+  "source": "rewrite",
+  "grade": 13,
+  "excerptGrade": 7.4,
+  "qa": {
+   "question": "If everyone misreads, does every reading count?",
+   "answer": "The opposite error deserves its strongest statement. If every generation has misread the Bible, the argument runs, then no reading has authority, and the honest course is to admit that the text means what each community makes of it. Some who say this are skeptics; others are Christians who watched the church defend slavery with chapter and verse. The conservative answer is usually fear: a text that can mean anything can command nothing, and a church that cannot say a reading is wrong cannot tell the slaveholder he was wrong either. Both are right about something."
+  }
  },
  "young-adults-coming-back-church": {
   "metaDescription": "Most of those strategies failed to reverse the trend, which should have told us something about the nature of the problem.",

@@ -94,18 +94,8 @@
             "permanent": true
         },
         {
-            "source": "/writing/solidarity-theological-virtue",
-            "destination": "/justice",
-            "permanent": true
-        },
-        {
             "source": "/writing/prophetic-pastor",
             "destination": "/justice",
-            "permanent": true
-        },
-        {
-            "source": "/writing/justice-without-love-ideology",
-            "destination": "/writing/when-justice-becomes-a-gospel",
             "permanent": true
         },
         {
@@ -396,11 +386,6 @@
         {
             "source": "/writing/spiritual-disciplines-for-pastors",
             "destination": "/theology",
-            "permanent": true
-        },
-        {
-            "source": "/writing/repentance-and-renewal",
-            "destination": "/writing/why-christians-confess-out-loud",
             "permanent": true
         },
         {
@@ -1622,6 +1607,11 @@
         {
             "source": "/writing/justice-not-political",
             "destination": "/writing/justice-not-political-theological",
+            "permanent": true
+        },
+        {
+            "source": "/writing/justice-without-love-ideology",
+            "destination": "/writing/solidarity-theological-virtue",
             "permanent": true
         },
         {
