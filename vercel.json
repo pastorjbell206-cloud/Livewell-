@@ -1425,6 +1425,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/baptism-mode-and-subjects",
+            "destination": "/writing/why-baptism",
+            "permanent": true
+        },
+        {
             "source": "/writing/being-filled-with-the-spirit",
             "destination": "/writing/who-is-the-holy-spirit",
             "permanent": true
@@ -1435,8 +1440,18 @@
             "permanent": true
         },
         {
+            "source": "/writing/black-church-prophetic-justice",
+            "destination": "/writing/the-black-church-in-america",
+            "permanent": true
+        },
+        {
             "source": "/writing/book-ruth-gleaning-laws",
             "destination": "/writing/jubilee-debt-and-the-economy-god-commanded",
+            "permanent": true
+        },
+        {
+            "source": "/writing/cessationism-or-continuation",
+            "destination": "/writing/what-the-bible-says-about-spiritual-gifts",
             "permanent": true
         },
         {

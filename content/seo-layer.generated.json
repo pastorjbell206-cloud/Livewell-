@@ -564,10 +564,14 @@
   }
  },
  "why-baptism": {
-  "metaDescription": "Water poured over a head, a few old words, and a person comes up changed, or so the church claims.",
-  "source": "derived",
-  "grade": 7.6,
-  "excerptGrade": 6.7
+  "metaDescription": "What baptism is, from Romans 6 to the Didache, and why churches split over infant or believer's baptism, immersion or sprinkling, sacrament or ordinance.",
+  "source": "rewrite",
+  "grade": 12.9,
+  "excerptGrade": 13,
+  "qa": {
+   "question": "Sacrament or Ordinance: What Does the Water Do?",
+   "answer": "Beneath the debate over who and how lies a third question, older and in some ways deeper: what the water actually does. Augustine gave the classic definition in his Tractates on the Gospel of John: \"Accedit verbum ad elementum, et fit sacramentum,\" the word comes to the element, and it becomes a sacrament. A sacrament, on this account, is a visible sign through which God gives what he has promised."
+  }
  },
  "why-christians-confess-out-loud": {
   "metaDescription": "Saying your worst out loud, to another person, in plain words, almost everything in us resists it.",
@@ -621,16 +625,6 @@
   "grade": 12.4,
   "excerptGrade": 14.3
  },
- "baptism-mode-and-subjects": {
-  "metaDescription": "Two churches on the same street baptize with the same water and cannot agree on who should stand in it, or how deep.",
-  "source": "derived",
-  "grade": 7.2,
-  "excerptGrade": 2.6,
-  "qa": {
-   "question": "Sprinkle or Immerse? Infant or Believer?",
-   "answer": "Two churches on the same street baptize with the same water and cannot agree on who should stand in it, or how deep. One brings a grown convert down under a river. One brings an eight-day-old baby to a font. Both say Scripture. Both are my family. I will not settle it for you."
-  }
- },
  "can-you-be-good-without-god": {
   "metaDescription": "Yes, unbelievers can be good. The harder question is where morality comes from: Plato's Euthyphro, Kant, Darwin, Nietzsche and the law on the heart.",
   "source": "rewrite",
@@ -645,16 +639,6 @@
   "qa": {
    "question": "Can You Lose Your Salvation?",
    "answer": "The question does not usually arrive in a classroom. It arrives at three in the morning, when a Christian who has failed badly lies in the dark and wonders if the door is still open. The church has answered it two ways for centuries. I am not going to close it for you. I am going to tell you the truth about both."
-  }
- },
- "cessationism-or-continuation": {
-  "metaDescription": "I have stood in a hospital room with my hand on a dying man and waited to see if the machines would change. They did not.",
-  "source": "derived",
-  "grade": 3.5,
-  "excerptGrade": 4.5,
-  "qa": {
-   "question": "Do the Gifts Still Happen?",
-   "answer": "I have stood in a hospital room with my hand on a dying man and waited to see if the machines would change. They did not. I came to faith out of atheism, so the question of whether God still acts is not a doctrine I inherited. It is the seam where my old life and my new one still rub."
   }
  },
  "christian-sexual-ethic": {
@@ -1202,10 +1186,10 @@
   }
  },
  "what-the-bible-says-about-spiritual-gifts": {
-  "metaDescription": "Spiritual gifts are where a lot of newcomers get nervous, tongues, prophecy, healing, and a church world that seems split into two armed camps over them.",
-  "source": "derived",
-  "grade": 11.8,
-  "excerptGrade": 9.2
+  "metaDescription": "What the Bible teaches about spiritual gifts, the cessationist and continuationist cases at full strength, and how churches should test prophecy today.",
+  "source": "rewrite",
+  "grade": 13.9,
+  "excerptGrade": 10.2
  },
  "who-is-the-holy-spirit": {
   "metaDescription": "Who the Holy Spirit is, what Scripture says he does, what being filled with the Spirit means across the traditions, and why he is not a feeling.",
@@ -1690,12 +1674,6 @@
   "source": "derived",
   "grade": 15.2,
   "excerptGrade": 15.2
- },
- "black-church-prophetic-justice": {
-  "metaDescription": "This is not a minor omission. It is a form of historical amnesia with theological consequences. The Black church emerged under slavery.",
-  "source": "derived",
-  "grade": 9.3,
-  "excerptGrade": 17.7
  },
  "build-real-friendships-other-pastors": {
   "metaDescription": "The pastors' lunch happens four times a year in my city. Everybody is a little bit on.",
@@ -3494,10 +3472,10 @@
   "excerptGrade": 16.6
  },
  "the-black-church-in-america": {
-  "metaDescription": "The Black church did not emerge as a branch of American Protestantism. It emerged in spite of it.",
-  "source": "derived",
-  "grade": 5.6,
-  "excerptGrade": 12
+  "metaDescription": "A history of the Black church in America, from the invisible institution of slavery to civil rights, and what its witness asks of the whole church.",
+  "source": "rewrite",
+  "grade": 13.6,
+  "excerptGrade": 12.3
  },
  "pentecostalism-and-the-global-south": {
   "metaDescription": "The most significant development in global Christianity over the past century is not a new theology, a papal encyclical, or a denominational merger.",
