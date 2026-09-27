@@ -1680,6 +1680,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/literacy-as-justice",
+            "destination": "/writing/education-inequality",
+            "permanent": true
+        },
+        {
             "source": "/writing/loving-versus-worshiping-your-country",
             "destination": "/writing/the-flag-in-the-sanctuary",
             "permanent": true
@@ -1887,6 +1892,11 @@
         {
             "source": "/writing/sabbath-isnt-optional",
             "destination": "/writing/what-the-sabbath-is-and-why-you-need-it",
+            "permanent": true
+        },
+        {
+            "source": "/writing/school-to-prison-pipeline",
+            "destination": "/writing/education-inequality",
             "permanent": true
         },
         {
