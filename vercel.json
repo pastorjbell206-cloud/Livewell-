@@ -1620,6 +1620,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/is-god-angry",
+            "destination": "/writing/why-did-jesus-have-to-die",
+            "permanent": true
+        },
+        {
             "source": "/writing/is-there-life-after-death",
             "destination": "/writing/what-is-heaven-actually-like",
             "permanent": true

@@ -881,16 +881,6 @@
    "answer": "The Bible says God does not change. The Bible also says God 'relented' and 'changed his mind.' Both are right, and the resolution is not a dodge, it opens onto the strangest and most stabilizing thing anyone has ever said about God."
   }
  },
- "is-god-angry": {
-  "metaDescription": "Most people picture God's anger as a temper, a short fuse, a thrown thunderbolt. That cartoon has done real damage.",
-  "source": "derived",
-  "grade": 4.8,
-  "excerptGrade": 5.5,
-  "qa": {
-   "question": "Is God Angry?",
-   "answer": "Most people picture God's anger as a temper, a short fuse, a thrown thunderbolt. That cartoon has done real damage. The truth is harder and far better: a God who never got angry could not possibly be good."
-  }
- },
  "is-god-in-control": {
   "metaDescription": "We say God is in control and then watch a world that looks anything but controlled.",
   "source": "derived",
@@ -1062,13 +1052,13 @@
   }
  },
  "why-did-jesus-have-to-die": {
-  "metaDescription": "The cross is the most recognized symbol on earth and the least understood. Why a death, and why that death? The church has more than one answer.",
-  "source": "hand",
-  "grade": 2.8,
-  "excerptGrade": 2.7,
+  "metaDescription": "Why Jesus had to die: ransom, satisfaction, substitution and moral influence weighed, God's wrath defined, and the divine child abuse charge answered.",
+  "source": "rewrite",
+  "grade": 13.9,
+  "excerptGrade": 9,
   "qa": {
-   "question": "Why Did Jesus Have to Die?",
-   "answer": "The cross is the most recognized symbol on earth and the least understood. Why a death? Why that death? The church has more than one answer, and the answers turn out to need each other."
+   "question": "Why can't God simply forgive?",
+   "answer": "The objection deserves its strongest form. We forgive each other constantly and nobody dies. If a father can forgive the son who wrecked the car, surely God can forgive without blood, and demanding a death first looks less like love than like a creditor who won't tear up the note until someone pays. The Italian anti-Trinitarian theologian Faustus Socinus pressed this in the sixteenth century with real precision: a debt paid in full hasn't been forgiven, and a debt forgiven needed no payment. You can have forgiveness or satisfaction, he argued, but not both."
   }
  },
  "its-not-just-what-you-do": {
