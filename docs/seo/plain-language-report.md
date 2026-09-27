@@ -6,10 +6,10 @@ Search engines and answer engines see a second layer beside every essay: a meta 
 
 | Measure | Value |
 |---|---|
-| Essays with a description | 524 |
+| Essays with a description | 523 |
 | Hand-written descriptions | 7 |
-| Derived from the essay's own sentences | 517 |
-| Essays with question-and-answer data | 75 |
+| Derived from the essay's own sentences | 516 |
+| Essays with question-and-answer data | 74 |
 | Average reading grade, descriptions | 8.5 |
 | Average reading grade, original standfirsts | 9.7 |
 | Derived descriptions at grade 12 or above (hand-rewrite queue) | 56 |

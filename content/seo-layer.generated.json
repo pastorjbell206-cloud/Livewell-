@@ -633,16 +633,6 @@
    "answer": "The most famous arguments begin from the plainest fact available: something exists. They are usually lumped together as \"the cosmological argument,\" as though there were one, and much of the confusion in popular debate comes from that lumping. There are at least three distinct arguments here, and they stand or fall on different premises."
   }
  },
- "end-of-life-and-bioethics": {
-  "metaDescription": "The question does not arrive in an ethics seminar. It arrives in a room with a bed in it, and a doctor with kind eyes asking what you want to do.",
-  "source": "derived",
-  "grade": 5.7,
-  "excerptGrade": 4.3,
-  "qa": {
-   "question": "Should We Keep People Alive at Any Cost?",
-   "answer": "The question does not arrive in an ethics seminar. It arrives in a room with a bed in it, and a doctor with kind eyes asking what you want to do. I am not going to hand you a slogan on the way in. Both sides of that door are lying to you about how hard this is."
-  }
- },
  "faith-and-gender-identity": {
   "metaDescription": "Before it is a debate, it is a person. The church has owed both of them something for a long time, and mostly sent an argument instead.",
   "source": "derived",
@@ -942,10 +932,10 @@
   "excerptGrade": 5.7
  },
  "how-to-die-well": {
-  "metaDescription": "For most of Christian history, people prepared to die the way we prepare for a wedding.",
-  "source": "derived",
-  "grade": 8.4,
-  "excerptGrade": 9.1
+  "metaDescription": "What Christianity teaches about dying well: the ars moriendi, hospice and palliative care, stopping treatment, and why assisted suicide is not the answer.",
+  "source": "rewrite",
+  "grade": 13.4,
+  "excerptGrade": 9.3
  },
  "the-end-of-home-field-advantage": {
   "metaDescription": "For fifteen centuries the church evangelized a culture that already half believed, the vocabulary pre-taught, the guilt pre-aimed, the God assumed.",

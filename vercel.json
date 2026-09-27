@@ -1525,6 +1525,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/end-of-life-and-bioethics",
+            "destination": "/writing/how-to-die-well",
+            "permanent": true
+        },
+        {
             "source": "/writing/environmental-racism",
             "destination": "/writing/creation-care-not-optional",
             "permanent": true
