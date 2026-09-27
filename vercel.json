@@ -1375,6 +1375,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/a-christian-view-of-personal-finance",
+            "destination": "/writing/what-the-bible-actually-says-about-money-and-wealth",
+            "permanent": true
+        },
+        {
             "source": "/writing/a-day-of-doing-nothing",
             "destination": "/writing/what-the-sabbath-is-and-why-you-need-it",
             "permanent": true
@@ -1532,6 +1537,11 @@
         {
             "source": "/writing/exvangelical-when-leaving-isnt-losing-faith",
             "destination": "/writing/deconstruction-is-not-destruction",
+            "permanent": true
+        },
+        {
+            "source": "/writing/faith-at-work",
+            "destination": "/writing/what-is-vocation-work-as-calling",
             "permanent": true
         },
         {
@@ -1710,6 +1720,16 @@
             "permanent": true
         },
         {
+            "source": "/writing/morality-without-god-and-with-him",
+            "destination": "/writing/can-you-be-good-without-god",
+            "permanent": true
+        },
+        {
+            "source": "/writing/natural-evil-and-animal-suffering",
+            "destination": "/writing/if-god-is-good-why-suffering",
+            "permanent": true
+        },
+        {
             "source": "/writing/near-death-experiences",
             "destination": "/writing/what-is-heaven-actually-like",
             "permanent": true
@@ -1802,6 +1822,11 @@
         {
             "source": "/writing/reading-the-bible-slowly",
             "destination": "/writing/how-to-read-the-bible-without-making-it-say-what-you-want",
+            "permanent": true
+        },
+        {
+            "source": "/writing/reconstructing-faith",
+            "destination": "/writing/deconstruction-is-not-destruction",
             "permanent": true
         },
         {
@@ -2007,6 +2032,11 @@
         {
             "source": "/writing/what-is-biblical-justice-mishpat-and-tsedaqah",
             "destination": "/writing/justice-not-political-theological",
+            "permanent": true
+        },
+        {
+            "source": "/writing/what-jesus-said-about-worry-and-money",
+            "destination": "/writing/what-the-bible-actually-says-about-money-and-wealth",
             "permanent": true
         },
         {
