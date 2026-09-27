@@ -999,12 +999,6 @@
    "answer": "We use 'holy' to mean very, very good, a moral grade, the top of the scale. The Bible means something stranger and more unsettling: that God is of a different order entirely, and that standing near Him is the most disorienting thing that can happen to a person."
   }
  },
- "how-the-story-ends": {
-  "metaDescription": "Ask most people how the Bible ends and they will say: the good people go to heaven. That is not how it ends.",
-  "source": "derived",
-  "grade": 2.7,
-  "excerptGrade": 5.9
- },
  "the-bible-is-one-story": {
   "metaDescription": "Most people who pick up the Bible read it as a pile of rules, a quote bank, or a manual for self-improvement.",
   "source": "derived",
@@ -1250,14 +1244,10 @@
   }
  },
  "what-is-heaven-actually-like": {
-  "metaDescription": "Ask most people to picture heaven and they get clouds, harps, and an endless church service, a vision so boring that even believers half-dread it.",
-  "source": "derived",
-  "grade": 11.2,
-  "excerptGrade": 7.3,
-  "qa": {
-   "question": "What Is Heaven Actually Like?",
-   "answer": "Ask most people to picture heaven and they get clouds, harps, and an endless church service, a vision so boring that even believers half-dread it. That picture is not in the Bible. What the Bible promises is louder, greener, and far more physical than that."
-  }
+  "metaDescription": "What the Bible says about heaven: the state between death and resurrection, new heavens and new earth, the vision of God, and what near-death books miss.",
+  "source": "rewrite",
+  "grade": 10.9,
+  "excerptGrade": 8.3
  },
  "why-hope-is-not-wishful-thinking": {
   "metaDescription": "Hope has a bad reputation among honest people, it sounds like the polite word for refusing to face facts, a coat of paint over the void.",
@@ -2207,12 +2197,6 @@
   "grade": 11.1,
   "excerptGrade": 5.2
  },
- "kingdom-of-god-not-what-you-think": {
-  "metaDescription": "It is the single most common assumption about the phrase, and it quietly bends the whole of the Christian life out of shape.",
-  "source": "derived",
-  "grade": 9.3,
-  "excerptGrade": 12.4
- },
  "lead-church-decline-without-losing-hope": {
   "metaDescription": "Decline does something to a pastor that success never does. Success flatters you. Decline strips you.",
   "source": "derived",
@@ -2902,10 +2886,10 @@
   }
  },
  "what-is-the-kingdom-of-god-and-why-it-changes-everything": {
-  "metaDescription": "The kingdom of God is not heaven when you die, and not a project you build. Once you see what Jesus meant by it, the rest of the Bible reads differently.",
-  "source": "hand",
-  "grade": 5.3,
-  "excerptGrade": 14.3
+  "metaDescription": "What Jesus meant by the kingdom of God: its roots in Israel's hope, a century of scholarly debate, the parables, and why it is God's reign, not a place.",
+  "source": "rewrite",
+  "grade": 11.6,
+  "excerptGrade": 11.1
  },
  "exodus-the-story-underneath-the-whole-bible": {
   "metaDescription": "Israel did not begin its national memory with a creed. It began with a rescue.",

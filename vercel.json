@@ -549,11 +549,6 @@
             "permanent": true
         },
         {
-            "source": "/writing/kingdom-of-god-not-what-you-think",
-            "destination": "/theology",
-            "permanent": true
-        },
-        {
             "source": "/writing/sin-not-just-what-you-do",
             "destination": "/writing/what-went-wrong",
             "permanent": true
@@ -1535,6 +1530,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/how-the-story-ends",
+            "destination": "/writing/what-is-heaven-actually-like",
+            "permanent": true
+        },
+        {
             "source": "/writing/how-to-raise-children-in-the-faith",
             "destination": "/writing/how-to-talk-kids-faith-doubt",
             "permanent": true
@@ -1587,6 +1587,11 @@
         {
             "source": "/writing/justice-not-political",
             "destination": "/writing/justice-not-political-theological",
+            "permanent": true
+        },
+        {
+            "source": "/writing/kingdom-of-god-not-what-you-think",
+            "destination": "/writing/what-is-the-kingdom-of-god-and-why-it-changes-everything",
             "permanent": true
         },
         {
