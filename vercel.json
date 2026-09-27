@@ -84,11 +84,6 @@
             "permanent": true
         },
         {
-            "source": "/writing/when-god-bless-america-replaces-thy-kingdom-come",
-            "destination": "/writing/two-kingdoms-one-pledge",
-            "permanent": true
-        },
-        {
             "source": "/writing/church-political-brand-step-back",
             "destination": "/writing/when-the-pulpit-became-a-precinct",
             "permanent": true
@@ -1880,6 +1875,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/rebuild-trust-after-broken",
+            "destination": "/writing/forgiveness-in-marriage",
+            "permanent": true
+        },
+        {
             "source": "/writing/reconstructing-faith",
             "destination": "/writing/deconstruction-is-not-destruction",
             "permanent": true
@@ -2210,6 +2210,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/what-the-creed-leaves-out",
+            "destination": "/writing/the-faith-once-delivered",
+            "permanent": true
+        },
+        {
             "source": "/writing/what-the-miracles-mean",
             "destination": "/writing/do-miracles-still-happen",
             "permanent": true
@@ -2217,6 +2222,11 @@
         {
             "source": "/writing/what-the-original-audience-heard",
             "destination": "/writing/how-to-read-the-bible-without-making-it-say-what-you-want",
+            "permanent": true
+        },
+        {
+            "source": "/writing/when-god-bless-america-replaces-thy-kingdom-come",
+            "destination": "/writing/the-flag-in-the-sanctuary",
             "permanent": true
         },
         {
