@@ -6,9 +6,9 @@ Search engines and answer engines see a second layer beside every essay: a meta 
 
 | Measure | Value |
 |---|---|
-| Essays with a description | 507 |
+| Essays with a description | 508 |
 | Hand-written descriptions | 5 |
-| Derived from the essay's own sentences | 502 |
+| Derived from the essay's own sentences | 503 |
 | Essays with question-and-answer data | 73 |
 | Average reading grade, descriptions | 8.6 |
 | Average reading grade, original standfirsts | 9.7 |
@@ -53,7 +53,7 @@ Derived descriptions that still read at college level. Each is true to the essay
 | church-must-speak-housing | 13.4 | In most American cities right now, housing consumes a share of working-class income that previous generations would have called a crisis. |
 | symptoms-without-causes-charity | 13.4 | There is a story, attributed to various sources over the years, about people standing on a riverbank pulling drowning bodies from the water. |
 | 44-what-the-church-in-the-global-south-can-teach-the-church-in-america-about-suffering | 13.3 | The American church has developed a sophisticated relationship with comfort. Its buildings are climate controlled. |
-| digital-divide | 13.3 | The resources that enable human flourishing (land, water, shelter, education) are not distributed randomly. They concentrate. |
+| digital-divide | 13.3 | The resources that enable human flourishing, land, water, shelter, education, are not distributed randomly. They concentrate. |
 | how-to-preach-to-people-who-have-heard-it-all | 13.2 | The hardest congregation is not the hostile one but the one that has already heard your text a hundred times and stopped expecting anything from it. |
 | the-womanhood-they-preached-was-small | 12.9 | The world I was raised in preached a womanhood of shrinkage, modesty as fear of the body, submission as erasure, silence as virtue, Scripture as a leash. |
 | what-evangelicalism-was-supposed-to-be | 12.8 | That it became something else entirely is one of the great tragedies of modern American religion. |

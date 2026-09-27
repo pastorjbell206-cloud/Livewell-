@@ -1214,9 +1214,9 @@
   "excerptGrade": 16.6
  },
  "27-what-gen-z-actually-wants-from-a-church-and-why-its-not-what-you-think": {
-  "metaDescription": "They are showing up. The researchers called it a quiet revival. Why they are returning is its own story.",
+  "metaDescription": "They are showing up. Why they are returning is its own story. This piece is about the harder thing: what happens after they walk in.",
   "source": "derived",
-  "grade": 4.3,
+  "grade": 3.2,
   "excerptGrade": 14.3
  },
  "28-why-young-adults-are-coming-back-to-church-and-how-not-to-lose-them-again": {
@@ -1382,7 +1382,7 @@
   "excerptGrade": 17.7
  },
  "5-ending-every-sermon-with-the-same-application-structure": {
-  "metaDescription": "The congregation learns this faster than the preacher realizes. After a few months (sometimes a few weeks) the experienced attender knows what is coming.",
+  "metaDescription": "The congregation learns this faster than the preacher realizes. After a few months, sometimes a few weeks, the experienced attender knows what is coming.",
   "source": "derived",
   "grade": 9.2,
   "excerptGrade": 15.4
@@ -1562,7 +1562,7 @@
   "excerptGrade": 4.4,
   "qa": {
    "question": "The Debate: Commendation or Lament?",
-   "answer": "The traditional reading takes Jesus's words as commendation. The widow is the pattern of true giving, measured by cost rather than sum. The rich gave \"out of their abundance\": gifts that changed nothing about their lives. She gave everything. On this reading the text stands in a long biblical line (the widow of Zarephath giving her last flour to Elijah in 1 Kings 17, the deep poverty of the Macedonian churches overflowing in generosity in 2 Corinthians 8:1-3), and its sermon writes itself: God's ledger runs on proportion."
+   "answer": "The traditional reading takes Jesus's words as commendation. The widow is the pattern of true giving, measured by cost rather than sum. The rich gave \"out of their abundance\", gifts that changed nothing about their lives. She gave everything. On this reading the text stands in a long biblical line, the widow of Zarephath giving her last flour to Elijah (1 Kings 17), the deep poverty of the Macedonian churches overflowing in generosity (2 Corinthians 8:1-3), and its sermon writes itself: God's ledger runs on proportion."
   }
  },
  "church-megaproject-widows-mite": {
@@ -1614,7 +1614,7 @@
   "excerptGrade": 9.8
  },
  "church-wage-theft": {
-  "metaDescription": "The law is direct. The sakir (the hired laborer) is named, protected, and the specific mechanism of exploitation is described: holding back what is owed.",
+  "metaDescription": "The law is direct. The sakir, the hired laborer, is named, protected, and the specific mechanism of exploitation is described: holding back what is owed.",
   "source": "derived",
   "grade": 10.1,
   "excerptGrade": 4.4
@@ -1702,7 +1702,7 @@
   "excerptGrade": 10
  },
  "digital-divide": {
-  "metaDescription": "The resources that enable human flourishing (land, water, shelter, education) are not distributed randomly. They concentrate.",
+  "metaDescription": "The resources that enable human flourishing, land, water, shelter, education, are not distributed randomly. They concentrate.",
   "source": "derived",
   "grade": 13.3,
   "excerptGrade": 12.4
@@ -1750,7 +1750,7 @@
   "excerptGrade": 14.6
  },
  "engaging-nones-religiously-unaffiliated": {
-  "metaDescription": "They are not atheists, most of them. They left (or never arrived) not because they resolved the God question in the negative.",
+  "metaDescription": "They are not atheists, most of them. They left, or never arrived, not because they resolved the God question in the negative.",
   "source": "derived",
   "grade": 5.9,
   "excerptGrade": 13.4
@@ -2554,6 +2554,12 @@
    "question": "What Does It Mean to Be Made in the Image of God?",
    "answer": "Being made in God's image is a status God confers before it is a capacity we exercise. That is why human dignity can be neither earned nor lost, and why every side that rations it stands under the same judgment."
   }
+ },
+ "already-and-not-yet-living-between-two-worlds": {
+  "metaDescription": "Every honest believer eventually runs into the same wall. The promises sound total.",
+  "source": "derived",
+  "grade": 9.6,
+  "excerptGrade": 14.4
  },
  "what-christian-nationalism-is-and-is-not": {
   "metaDescription": "Christian nationalism gets thrown as an insult in both directions. A pastor on what the phrase actually names, and what it does not.",
