@@ -1686,10 +1686,14 @@
   "excerptGrade": 7
  },
  "foster-care-unfinished-mandate": {
-  "metaDescription": "On any given day, the federal count of children in the American foster care system runs to roughly four hundred thousand.",
-  "source": "derived",
-  "grade": 11.7,
-  "excerptGrade": 11.7
+  "metaDescription": "What the Bible says about foster care and adoption: the fatherless in Scripture, adoption in Paul, the U.S. system, its critics, and how churches can help.",
+  "source": "rewrite",
+  "grade": 7.2,
+  "excerptGrade": 12,
+  "qa": {
+   "question": "What Does the Bible Say About Foster Care and Adoption?",
+   "answer": "Scripture never mentions foster care, yet it names God as the one who settles the solitary in a home and calls salvation itself an adoption. Read carefully, it asks the church to stand with the child's own family where that family can be made safe, and to open its own homes where it cannot."
+  }
  },
  "future-of-missions-already-there": {
   "metaDescription": "The map in the missions conference has not changed. The map is not wrong as an artifact of history. It is increasingly wrong as a description of reality.",
@@ -1854,10 +1858,10 @@
   "excerptGrade": 12.3
  },
  "moral-injury-veterans": {
-  "metaDescription": "The word \"trauma\" has become a general-purpose container, applied to an expanding range of hard experience until it sometimes loses its force.",
-  "source": "derived",
-  "grade": 14.4,
-  "excerptGrade": 14.4
+  "metaDescription": "What moral injury is, how it differs from PTSD, what Scripture and the early church knew about guilt after war, and how a church can help veterans heal.",
+  "source": "rewrite",
+  "grade": 11.3,
+  "excerptGrade": 8.6
  },
  "most-dangerous-person-church-staff": {
   "metaDescription": "The staff member every pastor worries about is easy to identify. These people are visible.",
@@ -1872,10 +1876,14 @@
   "excerptGrade": 19.4
  },
  "nehemiah-rebuilding": {
-  "metaDescription": "The wall of Jerusalem had been rubble for 140 years when Nehemiah arrived.",
-  "source": "derived",
-  "grade": 7.6,
-  "excerptGrade": 7.6
+  "metaDescription": "The history behind Nehemiah in 445 BC, his confession, the debt crisis, the reading of the Law, chapter 13, and what rebuilding a broken life requires.",
+  "source": "rewrite",
+  "grade": 12.3,
+  "excerptGrade": 11.6,
+  "qa": {
+   "question": "What Does Nehemiah Teach About Rebuilding What Was Broken?",
+   "answer": "Nehemiah rebuilt Jerusalem's wall in fifty-two days, and then spent years learning that a wall cannot rebuild a people. The book begins in confession and ends unfinished, which is exactly why it helps anyone standing in the ruins of a family, a marriage or a faith."
+  }
  },
  "not-your-churchs-attendance-numbers": {
   "metaDescription": "The number comes out after the service. Someone counts the chairs, or the clickers register the bodies, or the app generates the report.",
@@ -2122,10 +2130,10 @@
   "excerptGrade": 11.1
  },
  "theological-case-against-torture": {
-  "metaDescription": "The question should not require a theological case. The symptom is not primarily political.",
-  "source": "derived",
-  "grade": 9.1,
-  "excerptGrade": 13.8
+  "metaDescription": "A Christian answer to the ticking-bomb case for torture: Dershowitz and Krauthammer, the 2014 Senate report, the church's own record, and the cross.",
+  "source": "rewrite",
+  "grade": 10.8,
+  "excerptGrade": 11.5
  },
  "theology-fair-wages": {
   "metaDescription": "What Leviticus, Deuteronomy, the prophets, James and Jesus teach about fair pay and wage theft, with Rerum Novarum and the market case weighed fairly.",
@@ -3034,10 +3042,10 @@
   "excerptGrade": 12.4
  },
  "megachurch-model": {
-  "metaDescription": "The megachurch movement reached millions and revealed something important about American Christianity's hunger for accessibility.",
-  "source": "derived",
-  "grade": 21.7,
-  "excerptGrade": 16.5
+  "metaDescription": "Are megachurches good for Christianity? Their history from McGavran to Willow Creek and Saddleback, their best case, what failed, and what Scripture says.",
+  "source": "rewrite",
+  "grade": 7.9,
+  "excerptGrade": 9.8
  },
  "colonialism-and-missions": {
   "metaDescription": "The honest history of missions and colonialism: the Requerimiento, the Congo, residential schools, Las Casas, William Carey, and short-term trips today.",
@@ -3062,10 +3070,14 @@
   "excerptGrade": 11.7
  },
  "what-christians-can-learn-from-indigenous-spirituality": {
-  "metaDescription": "The church that destroyed indigenous traditions in the name of Christ had much to learn from the very people it sought to convert.",
-  "source": "derived",
-  "grade": 9.8,
-  "excerptGrade": 8.4
+  "metaDescription": "What Christians can learn from Native American traditions on land, kinship and ceremony, the Native Christians who teach it, and where the faiths differ.",
+  "source": "rewrite",
+  "grade": 12.5,
+  "excerptGrade": 11.5,
+  "qa": {
+   "question": "What Can Christians Learn From Native American Faith Traditions?",
+   "answer": "Native American faith is many traditions, not one, and Christianity has been a Native faith for more than three centuries. Native Christians and their critics can teach the church about land, kinship and ceremony, and where the confessions part, they should part honestly."
+  }
  },
  "the-christian-mystics": {
   "metaDescription": "Who the Christian mystics were, from Dionysius and Julian of Norwich to Teresa and Edwards, what mystical first meant, and the case for and against them.",

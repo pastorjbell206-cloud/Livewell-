@@ -9,10 +9,10 @@ Search engines and answer engines see a second layer beside every essay: a meta 
 | Essays with a description | 455 |
 | Hand-written descriptions | 3 |
 | Derived from the essay's own sentences | 452 |
-| Essays with question-and-answer data | 87 |
+| Essays with question-and-answer data | 90 |
 | Average reading grade, descriptions | 9.2 |
 | Average reading grade, original standfirsts | 9.9 |
-| Derived descriptions at grade 12 or above (hand-rewrite queue) | 43 |
+| Derived descriptions at grade 12 or above (hand-rewrite queue) | 41 |
 
 ## Hand-rewrite queue
 
@@ -20,7 +20,6 @@ Derived descriptions that still read at college level. Each is true to the essay
 
 | Essay | Grade | Current description |
 |---|---|---|
-| megachurch-model | 21.7 | The megachurch movement reached millions and revealed something important about American Christianity's hunger for accessibility. |
 | reformation-actually-about | 18.1 | The Protestant Reformation is one of the most consequential events in Western history, religious, cultural, political, economic. |
 | pentecostalism-and-the-global-south | 18 | The most significant development in global Christianity over the past century is not a new theology, a papal encyclical, or a denominational merger. |
 | delegation-is-not-weakness | 17.9 | Somewhere in the formation of American pastoral identity, we absorbed a theology of the indispensable pastor. |
@@ -38,7 +37,6 @@ Derived descriptions that still read at college level. Each is true to the essay
 | 3-treating-sunday-as-the-only-metric | 14.9 | It is easy, especially in a culture that quantifies everything, to measure the health of your ministry by Sunday attendance and sermon reception. |
 | guide-to-every-major-denomination | 14.7 | The existence of denominations embarrasses many Christians and trips up many outsiders. |
 | 50-how-to-lead-when-trust-in-institutions-including-the-church-is-at-an-all-time-low | 14.4 | Trust in government, in media, in healthcare, in universities, in the justice system, all of these have declined to historic lows by multiple measures. |
-| moral-injury-veterans | 14.4 | The word "trauma" has become a general-purpose container, applied to an expanding range of hard experience until it sometimes loses its force. |
 | 7-protecting-your-marriage-when-ministry-demands-everything | 14.3 | Ministry and marriage are both long-term commitments that require sustained, intentional investment to flourish. |
 | revitalize-or-replant | 14.1 | The distinction matters because the strategies are completely different. |
 | 29-what-the-scandals-in-the-church-are-teaching-us-about-accountability | 13.9 | The past decade has been one of the most sobering in the modern history of the American church when it comes to leadership accountability. |
