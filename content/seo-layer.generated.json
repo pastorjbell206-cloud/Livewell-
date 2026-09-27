@@ -796,14 +796,10 @@
   }
  },
  "women-in-ministry": {
-  "metaDescription": "A woman taught the room better than most men you have heard try, and then asked whether she had been allowed to.",
-  "source": "derived",
-  "grade": 8,
-  "excerptGrade": 7,
-  "qa": {
-   "question": "Can a Woman Preach?",
-   "answer": "A woman taught the room better than most men you have heard try, and then asked whether she had been allowed to. Two faithful traditions read the same Bible and answer that question in opposite directions. I am going to hand you both and refuse to spare you the choosing."
-  }
+  "metaDescription": "Can women be pastors? Both views stated at full strength, with Genesis, Deborah, Phoebe, Junia, 1 Timothy 2, church history, and why it is second-order.",
+  "source": "rewrite",
+  "grade": 7.2,
+  "excerptGrade": 9.9
  },
  "the-bible-without-the-marketing": {
   "metaDescription": "The flat, all-or-nothing Bible you were handed is a fairly recent invention. Inspiration is older.",
