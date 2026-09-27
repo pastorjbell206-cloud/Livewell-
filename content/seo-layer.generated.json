@@ -808,13 +808,13 @@
   }
  },
  "the-holiness-of-god": {
-  "metaDescription": "We use 'holy' to mean very, very good, a moral grade, the top of the scale.",
-  "source": "derived",
-  "grade": 6.1,
-  "excerptGrade": 11.2,
+  "metaDescription": "What does it mean that God is holy? The Hebrew qadosh, Isaiah 6, Rudolf Otto, Leviticus 19, Uzzah, and how Jesus touched the unclean and made them clean.",
+  "source": "rewrite",
+  "grade": 6.3,
+  "excerptGrade": 8.7,
   "qa": {
    "question": "What Does It Mean That God Is Holy?",
-   "answer": "We use 'holy' to mean very, very good, a moral grade, the top of the scale. The Bible means something stranger and more unsettling: that God is of a different order entirely, and that standing near Him is the most disorienting thing that can happen to a person."
+   "answer": "We have flattened holy into very nice, and some of us were taught it as a weapon. Scripture means something stranger: a God wholly other, whose otherness comes near and makes the unclean clean."
   }
  },
  "what-went-wrong": {
@@ -858,10 +858,14 @@
   "excerptGrade": 8.5
  },
  "why-people-fled-to-the-desert": {
-  "metaDescription": "When Christianity stopped being dangerous and became respectable, thousands of people walked out into the Egyptian desert to live alone.",
-  "source": "derived",
-  "grade": 14.6,
-  "excerptGrade": 8.9
+  "metaDescription": "Who the desert fathers and mothers were, from Antony and Pachomius to the ammas and Evagrius's eight thoughts, and what households can learn from them.",
+  "source": "rewrite",
+  "grade": 11.6,
+  "excerptGrade": 10.4,
+  "qa": {
+   "question": "Who Were the Desert Fathers and Mothers, and Why Do They Matter?",
+   "answer": "The desert fathers and mothers left a church grown comfortable after Constantine and found that the world had followed them into the sand, lodged in their own hearts. Their notes on that heart became the seven deadly sins, and their wisdom can still be practiced at home."
+  }
  },
  "how-do-you-actually-pray": {
   "metaDescription": "How to pray: the Lord's Prayer clause by clause, the Psalms and set prayers, and how to keep praying through dryness, lament and unanswered prayer.",
@@ -972,12 +976,6 @@
   "source": "derived",
   "grade": 5.8,
   "excerptGrade": 10.4
- },
- "why-hearing-isnt-enough": {
-  "metaDescription": "You can admire the Sermon on the Mount, nod at every line, and miss the whole thing.",
-  "source": "derived",
-  "grade": 6.3,
-  "excerptGrade": 8.4
  },
  "how-do-you-actually-change": {
   "metaDescription": "What sanctification means, why willpower fails, how Reformed, Wesleyan, Keswick and Orthodox Christians explain change, and how the examen forms the heart.",
@@ -1520,10 +1518,14 @@
   }
  },
  "church-gun-violence": {
-  "metaDescription": "The church has a remarkably consistent posture toward gun violence in America: wait, grieve, post, move on. We wait for the news cycle to do its work.",
-  "source": "derived",
-  "grade": 6.7,
-  "excerptGrade": 6.7
+  "metaDescription": "A fair Christian look at guns: CDC data on gun deaths and suicide, self-defense and nonviolence in the tradition, Heller and Bruen, and the church's call.",
+  "source": "rewrite",
+  "grade": 10.9,
+  "excerptGrade": 6.5,
+  "qa": {
+   "question": "What Should Christians Think About Guns and Gun Violence?",
+   "answer": "Christians who keep a gun to protect their families and Christians who want stricter laws both stand on real ground in Scripture and the tradition. The church can leave much of the policy question open. It cannot stay silent about the dead, most of whom died by their own hand."
+  }
  },
  "church-incarceration-silence": {
   "metaDescription": "Many of them are fathers. Many of them are sons. The church has been mostly quiet about this. That silence is not neutrality.",
@@ -1672,10 +1674,10 @@
   "excerptGrade": 7.7
  },
  "doctrine-of-discovery": {
-  "metaDescription": "This is the Doctrine of Discovery. It is not ancient history. In Johnson v.",
-  "source": "derived",
-  "grade": 4.8,
-  "excerptGrade": 15.7
+  "metaDescription": "What the Doctrine of Discovery is: the papal bulls behind it, Johnson v. M'Intosh, the Vatican's 2023 repudiation, and what Christians owe now.",
+  "source": "rewrite",
+  "grade": 7.4,
+  "excerptGrade": 11.4
  },
  "early-church-practiced": {
   "metaDescription": "The text is not ambiguous. That is a remarkable claim. It is also a description of a practice, not a theology, not an aspiration, not a metaphor.",
@@ -2552,10 +2554,14 @@
   "excerptGrade": 9.4
  },
  "what-the-gospel-actually-is": {
-  "metaDescription": "The gospel is not advice on how to be good or feel loved. It is news about something God has done, and news asks more of you than advice.",
-  "source": "hand",
-  "grade": 4.7,
-  "excerptGrade": 4
+  "metaDescription": "What the gospel is: euangelion in Rome and Isaiah, Paul's creed in 1 Corinthians 15, the king Jesus and justification debate, and why assent falls short.",
+  "source": "rewrite",
+  "grade": 11.3,
+  "excerptGrade": 5.7,
+  "qa": {
+   "question": "King Jesus or justification by faith?",
+   "answer": "Once you agree the gospel is news, a harder question opens among people who agree on nearly everything else: what is the headline? Each side of the argument is protecting something real."
+  }
  },
  "the-trinity-is-not-optional": {
   "metaDescription": "What the Trinity means, how Scripture and the councils of 325 and 381 shaped it, which errors it rules out, and why a triune God means love is eternal.",
@@ -2854,10 +2860,10 @@
   "excerptGrade": 12.3
  },
  "disability-dignity-and-the-image-of-god": {
-  "metaDescription": "A theology that locates human worth in capacity will eventually run out of people it can call human.",
-  "source": "derived",
-  "grade": 11.8,
-  "excerptGrade": 11.8
+  "metaDescription": "What the Bible says about disability: Leviticus 21, John 9, Mephibosheth, the wounds of the risen Christ, eugenics, and what the church owes families.",
+  "source": "rewrite",
+  "grade": 13.4,
+  "excerptGrade": 9.4
  },
  "mental-health-and-the-church-beyond-pray-about-it": {
   "metaDescription": "Why telling a depressed Christian to just pray more fails, what Scripture says about anguish, and how prayer, medicine and the church belong together.",

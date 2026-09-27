@@ -2250,6 +2250,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/why-hearing-isnt-enough",
+            "destination": "/writing/what-the-gospel-actually-is",
+            "permanent": true
+        },
+        {
             "source": "/writing/why-hope-is-not-wishful-thinking",
             "destination": "/writing/is-faith-just-wishful-thinking",
             "permanent": true
