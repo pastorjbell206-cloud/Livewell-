@@ -6,13 +6,13 @@ Search engines and answer engines see a second layer beside every essay: a meta 
 
 | Measure | Value |
 |---|---|
-| Essays with a description | 520 |
-| Hand-written descriptions | 7 |
-| Derived from the essay's own sentences | 513 |
-| Essays with question-and-answer data | 75 |
+| Essays with a description | 507 |
+| Hand-written descriptions | 5 |
+| Derived from the essay's own sentences | 502 |
+| Essays with question-and-answer data | 73 |
 | Average reading grade, descriptions | 8.6 |
 | Average reading grade, original standfirsts | 9.7 |
-| Derived descriptions at grade 12 or above (hand-rewrite queue) | 56 |
+| Derived descriptions at grade 12 or above (hand-rewrite queue) | 54 |
 
 ## Hand-rewrite queue
 
@@ -44,7 +44,6 @@ Derived descriptions that still read at college level. Each is true to the essay
 | 7-protecting-your-marriage-when-ministry-demands-everything | 14.3 | Ministry and marriage are both long-term commitments that require sustained, intentional investment to flourish. |
 | revitalize-or-replant | 14.1 | The distinction matters because the strategies are completely different. |
 | church-comfort-inequality | 14 | The American church has made peace with a level of economic inequality that the prophets would have named without hesitation. |
-| scripture-meditation | 14 | At some point in pastoral ministry, and I cannot tell you precisely when it happened to me, the Bible became a resource rather than a word addressed to me. |
 | 29-what-the-scandals-in-the-church-are-teaching-us-about-accountability | 13.9 | The past decade has been one of the most sobering in the modern history of the American church when it comes to leadership accountability. |
 | unreached-people-groups-closest-to-you | 13.9 | Count the apartment complex where recent immigrants from Somalia live in quiet and considerable isolation. |
 | 33-the-case-for-doing-city-wide-church-together-at-least-once-a-year | 13.5 | There is a moment that most pastors who have experienced a genuine city-wide worship gathering can describe with unusual precision. |
@@ -67,7 +66,6 @@ Derived descriptions that still read at college level. Each is true to the essay
 | your-body-is-not-a-cage | 12.4 | We have learned to treat the body as a vehicle the real self drives around, a thing to be optimized, overridden, or escaped. |
 | 14-how-to-preach-the-same-gospel-to-people-who-are-nothing-alike | 12.3 | Walk into almost any established congregation in America and look at the range of people sitting in the pews. |
 | 31-when-a-church-split-happens-surviving-it-learning-from-it-moving-forward | 12.3 | Church splits are among the most painful experiences in ministry, and they are more common than the pastoral culture likes to acknowledge. |
-| eschatology-matters-end-shapes-now | 12.3 | The word eschatology comes from the Greek eschaton, the last thing, the final moment, the end toward which everything is moving. |
 | give-feedback-changes-behavior | 12.3 | Most feedback conversations accomplish one thing: they make the person giving the feedback feel that they have discharged an obligation. |
 | mobilizing-church-missions-small-budget | 12.3 | The assumption lives in almost every small church I have encountered: that world missions is something larger churches do. |
 | prophetic-pastor | 12.3 | And when they talk about pastoral ministry, they usually mean someone who comes to the bedside, who holds the grieving, who offers presence in the dark. |

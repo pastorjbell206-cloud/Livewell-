@@ -448,7 +448,8 @@
   "theme": 2,
   "score": 50,
   "redirected": false,
-  "replaces": []
+  "replaces": [],
+  "skip": "Pastoral material, set aside per James (24 Sept)"
  },
  {
   "slug": "loving-versus-worshiping-your-country",
@@ -866,7 +867,8 @@
   "theme": 3,
   "score": 41,
   "redirected": false,
-  "replaces": []
+  "replaces": [],
+  "skip": "Pastoral material, set aside per James (24 Sept)"
  },
  {
   "slug": "church-crisis-pregnancy",
@@ -940,7 +942,8 @@
   "theme": 3,
   "score": 41,
   "redirected": false,
-  "replaces": []
+  "replaces": [],
+  "skip": "Pastoral material, set aside per James (24 Sept)"
  },
  {
   "slug": "symptoms-without-causes",
@@ -1041,7 +1044,8 @@
   "theme": 3,
   "score": 43,
   "redirected": true,
-  "replaces": []
+  "replaces": [],
+  "skip": "Pastoral material, set aside per James (24 Sept)"
  },
  {
   "slug": "symptoms-without-causes-charity",
@@ -1205,7 +1209,8 @@
   "theme": 3,
   "score": 46,
   "redirected": true,
-  "replaces": []
+  "replaces": [],
+  "skip": "Pastoral material, set aside per James (24 Sept)"
  },
  {
   "slug": "stranger-at-gate",
@@ -1324,7 +1329,8 @@
   "theme": 3,
   "score": 49,
   "redirected": false,
-  "replaces": []
+  "replaces": [],
+  "skip": "Pastoral material, set aside per James (24 Sept)"
  },
  {
   "slug": "mobilizing-church-missions-small-budget",
@@ -1333,7 +1339,8 @@
   "theme": 3,
   "score": 49,
   "redirected": false,
-  "replaces": []
+  "replaces": [],
+  "skip": "Pastoral material, set aside per James (24 Sept)"
  },
  {
   "slug": "already-and-not-yet-living-between-two-worlds",

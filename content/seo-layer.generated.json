@@ -127,35 +127,11 @@
   "grade": 5.5,
   "excerptGrade": 6
  },
- "proof-texting": {
-  "metaDescription": "A verse for every argument and an argument for every verse. Proof-texting lets both tribes win every debate while Scripture itself disappears.",
-  "source": "derived",
-  "grade": 10.7,
-  "excerptGrade": 9.7
- },
- "reading-in-community": {
-  "metaDescription": "A tribe agrees with you. A community corrects you. Both gather around the Bible. Both pray. Both feel like fellowship.",
-  "source": "derived",
-  "grade": 3.7,
-  "excerptGrade": 5.6
- },
  "six-lenses-that-distort-the-bible": {
   "metaDescription": "You think you read the Bible plainly. Here is how to see the glass before it edits the text.",
   "source": "derived",
   "grade": 2.4,
   "excerptGrade": 9.2
- },
- "the-whole-counsel": {
-  "metaDescription": "Cherry-picking is the American hermeneutic. We keep the verses that fit, lose the ones that don't, and call the leftovers our faith.",
-  "source": "derived",
-  "grade": 7.5,
-  "excerptGrade": 6
- },
- "what-the-original-audience-heard": {
-  "metaDescription": "The first hearers of the Good Samaritan would have flinched at a word you read right past.",
-  "source": "derived",
-  "grade": 6.3,
-  "excerptGrade": 5.9
  },
  "christendom-is-ending": {
   "metaDescription": "What Christendom was, from Constantine and Theodosius to Westphalia and America's Protestant consensus, why it is ending, and what faith looks like after.",
@@ -543,12 +519,6 @@
   "grade": 10.2,
   "excerptGrade": 10.1
  },
- "praying-at-fixed-hours": {
-  "metaDescription": "For most of Christian history, believers stopped what they were doing and prayed at set times of the day. They did not wait to feel like it.",
-  "source": "derived",
-  "grade": 4.5,
-  "excerptGrade": 6
- },
  "silence-and-solitude": {
   "metaDescription": "What the desert fathers, Benedict's Rule, Elijah and Jesus teach about silence and solitude, why we flee them, and how solitude differs from loneliness.",
   "source": "rewrite",
@@ -910,18 +880,6 @@
   "source": "rewrite",
   "grade": 8.3,
   "excerptGrade": 9.7
- },
- "praying-the-words-when-you-have-none": {
-  "metaDescription": "There are seasons when grief or rage burns the words out of you and prayer goes silent.",
-  "source": "derived",
-  "grade": 4.2,
-  "excerptGrade": 7.5
- },
- "when-prayer-goes-unanswered": {
-  "metaDescription": "You prayed, and the thing you begged God for did not come. Here is the honest version.",
-  "source": "derived",
-  "grade": 1.6,
-  "excerptGrade": 3.6
  },
  "a-whole-life": {
   "metaDescription": "Jesus was single. Paul was single and called it good. A father of five on the chapter married preachers skip.",
@@ -1797,12 +1755,6 @@
   "grade": 5.9,
   "excerptGrade": 13.4
  },
- "eschatology-matters-end-shapes-now": {
-  "metaDescription": "The word eschatology comes from the Greek eschaton, the last thing, the final moment, the end toward which everything is moving.",
-  "source": "derived",
-  "grade": 12.3,
-  "excerptGrade": 12.3
- },
  "exodus-demands-church-today": {
   "metaDescription": "The Exodus is not one story among many in Israel's memory. It is the story that all the other stories refer back to.",
   "source": "derived",
@@ -2275,12 +2227,6 @@
   "grade": 6.7,
   "excerptGrade": 12.9
  },
- "scripture-meditation": {
-  "metaDescription": "At some point in pastoral ministry, and I cannot tell you precisely when it happened to me, the Bible became a resource rather than a word addressed to me.",
-  "source": "derived",
-  "grade": 14,
-  "excerptGrade": 14
- },
  "scripture-unborn": {
   "metaDescription": "The Bible does not contain the word abortion. It also does not contain a direct prohibition of it.",
   "source": "derived",
@@ -2581,16 +2527,6 @@
   "grade": 10,
   "excerptGrade": 10
  },
- "apologetics-why-is-god-hidden": {
-  "metaDescription": "If God wanted to be known, it seems He could simply show Himself, and His silence is one of the heaviest reasons people stop believing.",
-  "source": "derived",
-  "grade": 10.2,
-  "excerptGrade": 10.2,
-  "qa": {
-   "question": "If God Is Real, Why Does He Feel So Hidden?",
-   "answer": "If God wanted to be known, it seems He could simply show Himself, and His silence is one of the heaviest reasons people stop believing."
-  }
- },
  "apologetics-hasnt-the-church-done-terrible-things": {
   "metaDescription": "The Crusades, the Inquisition, the wars of religion, slavery and abuse: the honest history, what it proves and what it doesn't, and why Christ judges it.",
   "source": "rewrite",
@@ -2618,12 +2554,6 @@
    "question": "What Does It Mean to Be Made in the Image of God?",
    "answer": "Being made in God's image is a status God confers before it is a capacity we exercise. That is why human dignity can be neither earned nor lost, and why every side that rations it stands under the same judgment."
   }
- },
- "already-and-not-yet-living-between-two-worlds": {
-  "metaDescription": "Faith that feels like victory and defeat at once is not failure. The New Testament says you live in the overlap of two ages. Here is what that changes.",
-  "source": "hand",
-  "grade": 4,
-  "excerptGrade": 14.4
  },
  "what-christian-nationalism-is-and-is-not": {
   "metaDescription": "Christian nationalism gets thrown as an insult in both directions. A pastor on what the phrase actually names, and what it does not.",
@@ -3231,12 +3161,6 @@
   "grade": 3.4,
   "excerptGrade": 6.8
  },
- "creeds-confessions-statements-of-faith": {
-  "metaDescription": "The ancient creeds were not bureaucratic exercises. They were battle lines drawn against heresies that threatened to gut the faith from within.",
-  "source": "derived",
-  "grade": 8.5,
-  "excerptGrade": 9.8
- },
  "charismatic-movement-inside-every-denomination": {
   "metaDescription": "The movement that began in a converted stable in Los Angeles in 1906 has now touched every branch of Christianity on earth.",
   "source": "derived",
@@ -3286,16 +3210,6 @@
   "source": "derived",
   "grade": 7.8,
   "excerptGrade": 8.7
- },
- "can-you-trust-the-bible": {
-  "metaDescription": "The Bible is not what most people think it is, on either side of the argument. It is stranger, more honest, and tougher than the stories told about it.",
-  "source": "hand",
-  "grade": 5.9,
-  "excerptGrade": 9.8,
-  "qa": {
-   "question": "Can You Trust the Bible?",
-   "answer": "The Bible is not what most people think it is, defenders and critics alike. It is stranger, more varied, more honest, and more resilient than either the fundamentalist or the skeptic imagines."
-  }
  },
  "what-christians-believe-about-hell": {
   "metaDescription": "The Christian tradition has never spoken with one voice about hell. So this is not an argument for a single position.",

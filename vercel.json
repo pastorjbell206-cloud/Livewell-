@@ -199,18 +199,8 @@
             "permanent": true
         },
         {
-            "source": "/writing/eschatology-matters-end-shapes-now",
-            "destination": "/writing/why-hope-is-not-wishful-thinking",
-            "permanent": true
-        },
-        {
             "source": "/writing/global-church-is-your-church",
             "destination": "/writing/christianity-was-never-western",
-            "permanent": true
-        },
-        {
-            "source": "/writing/scripture-meditation",
-            "destination": "/writing/how-to-read-the-bible-without-making-it-say-what-you-want",
             "permanent": true
         },
         {
@@ -505,7 +495,7 @@
         },
         {
             "source": "/writing/greek-original-language-matters",
-            "destination": "/writing/what-the-original-audience-heard",
+            "destination": "/writing/how-to-read-the-bible-without-making-it-say-what-you-want",
             "permanent": true
         },
         {
@@ -1380,6 +1370,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/already-and-not-yet-living-between-two-worlds",
+            "destination": "/writing/what-is-the-kingdom-of-god-and-why-it-changes-everything",
+            "permanent": true
+        },
+        {
             "source": "/writing/anxiety-and-faith",
             "destination": "/writing/mental-health-and-the-church-beyond-pray-about-it",
             "permanent": true
@@ -1415,6 +1410,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/apologetics-why-is-god-hidden",
+            "destination": "/writing/when-god-is-silent-and-the-room-is-empty",
+            "permanent": true
+        },
+        {
             "source": "/writing/baptism-mode-and-subjects",
             "destination": "/writing/why-baptism",
             "permanent": true
@@ -1437,6 +1437,11 @@
         {
             "source": "/writing/book-ruth-gleaning-laws",
             "destination": "/writing/jubilee-debt-and-the-economy-god-commanded",
+            "permanent": true
+        },
+        {
+            "source": "/writing/can-you-trust-the-bible",
+            "destination": "/writing/why-trust-the-bible",
             "permanent": true
         },
         {
@@ -1500,6 +1505,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/creeds-confessions-statements-of-faith",
+            "destination": "/writing/the-faith-once-delivered",
+            "permanent": true
+        },
+        {
             "source": "/writing/dark-night-god-feels-absent",
             "destination": "/writing/when-god-is-silent-and-the-room-is-empty",
             "permanent": true
@@ -1527,6 +1537,11 @@
         {
             "source": "/writing/environmental-racism",
             "destination": "/writing/creation-care-not-optional",
+            "permanent": true
+        },
+        {
+            "source": "/writing/eschatology-matters-end-shapes-now",
+            "destination": "/writing/what-is-the-kingdom-of-god-and-why-it-changes-everything",
             "permanent": true
         },
         {
@@ -1785,6 +1800,16 @@
             "permanent": true
         },
         {
+            "source": "/writing/praying-at-fixed-hours",
+            "destination": "/writing/how-do-you-actually-pray",
+            "permanent": true
+        },
+        {
+            "source": "/writing/praying-the-words-when-you-have-none",
+            "destination": "/writing/how-do-you-actually-pray",
+            "permanent": true
+        },
+        {
             "source": "/writing/praying-when-you-dont-feel-it",
             "destination": "/writing/how-do-you-actually-pray",
             "permanent": true
@@ -1792,6 +1817,11 @@
         {
             "source": "/writing/pro-life-pro-choice-labels",
             "destination": "/writing/christians-and-abortion",
+            "permanent": true
+        },
+        {
+            "source": "/writing/proof-texting",
+            "destination": "/writing/how-to-read-the-bible-without-making-it-say-what-you-want",
             "permanent": true
         },
         {
@@ -1817,6 +1847,11 @@
         {
             "source": "/writing/racial-reconciliation-without-repentance",
             "destination": "/writing/the-image-of-god-and-the-lie-of-race",
+            "permanent": true
+        },
+        {
+            "source": "/writing/reading-in-community",
+            "destination": "/writing/how-to-read-the-bible-without-making-it-say-what-you-want",
             "permanent": true
         },
         {
@@ -1862,6 +1897,11 @@
         {
             "source": "/writing/science-and-faith-are-not-at-war",
             "destination": "/writing/faith-and-science",
+            "permanent": true
+        },
+        {
+            "source": "/writing/scripture-meditation",
+            "destination": "/writing/how-to-read-the-bible-without-making-it-say-what-you-want",
             "permanent": true
         },
         {
@@ -2005,6 +2045,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/the-whole-counsel",
+            "destination": "/writing/how-to-read-the-bible-without-making-it-say-what-you-want",
+            "permanent": true
+        },
+        {
             "source": "/writing/theology-clean-air",
             "destination": "/writing/creation-care-not-optional",
             "permanent": true
@@ -2085,6 +2130,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/what-the-original-audience-heard",
+            "destination": "/writing/how-to-read-the-bible-without-making-it-say-what-you-want",
+            "permanent": true
+        },
+        {
             "source": "/writing/when-god-doesnt-make-sense",
             "destination": "/writing/when-god-is-silent-and-the-room-is-empty",
             "permanent": true
@@ -2097,6 +2147,11 @@
         {
             "source": "/writing/when-politics-replaced-theology",
             "destination": "/writing/how-the-religious-right-was-built",
+            "permanent": true
+        },
+        {
+            "source": "/writing/when-prayer-goes-unanswered",
+            "destination": "/writing/how-do-you-actually-pray",
             "permanent": true
         },
         {
