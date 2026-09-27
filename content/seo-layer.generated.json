@@ -1723,12 +1723,6 @@
   "grade": 9.1,
   "excerptGrade": 16.5
  },
- "color-blindness-not-virtue": {
-  "metaDescription": "The vision of Revelation 7 shows the redeemed gathered from every tribe and language and people and nation.",
-  "source": "derived",
-  "grade": 11.1,
-  "excerptGrade": 15.5
- },
  "conflict-is-not-failure": {
   "metaDescription": "The New Testament church had conflict before it had a second generation.",
   "source": "derived",
@@ -2252,12 +2246,6 @@
   "source": "derived",
   "grade": 3.8,
   "excerptGrade": 3.8
- },
- "racial-reconciliation-without-repentance": {
-  "metaDescription": "The photographs from multi-ethnic Sunday services are real. The warmth in those rooms is real.",
-  "source": "derived",
-  "grade": 4.6,
-  "excerptGrade": 4.6
  },
  "reaching-rich-comfortable": {
   "metaDescription": "The rich young ruler walked away sad (Mark 10:22). Jesus let him go. This moment tends to make us uncomfortable, so we soften it.",
@@ -3019,17 +3007,15 @@
   "grade": 10.7,
   "excerptGrade": 10.7
  },
- "what-the-bible-means-by-reconciliation": {
-  "metaDescription": "We have shrunk a word that once meant the end of a war down to the size of a handshake, and the church is paying for the theft.",
-  "source": "derived",
-  "grade": 7.6,
-  "excerptGrade": 7.6
- },
  "the-image-of-god-and-the-lie-of-race": {
-  "metaDescription": "Race is a recent invention dressed up as an ancient fact, and the church helped sew the costume.",
-  "source": "derived",
-  "grade": 7.8,
-  "excerptGrade": 7.8
+  "metaDescription": "What Scripture says about race: nations and tongues, how race was invented, the color-blindness debate, and why reconciliation requires repentance.",
+  "source": "rewrite",
+  "grade": 14.6,
+  "excerptGrade": 13.6,
+  "qa": {
+   "question": "What Does the Bible Say About Race and Racial Reconciliation?",
+   "answer": "Race as a ranking of human worth is a modern invention the church helped build, not a biblical category. The Bible's answer is reconciliation, and biblical reconciliation passes through truth, repentance and restitution before it arrives at peace."
+  }
  },
  "lament-the-prayer-the-church-forgot": {
   "metaDescription": "Is it wrong to be angry at God? How the lament psalms, Job, Jeremiah and Jesus' cry from the cross turn protest into prayer, and where that anger stops.",
