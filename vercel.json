@@ -1865,6 +1865,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/the-crusades-what-actually-happened",
+            "destination": "/writing/apologetics-hasnt-the-church-done-terrible-things",
+            "permanent": true
+        },
+        {
             "source": "/writing/the-death-of-christendom",
             "destination": "/writing/christendom-is-ending",
             "permanent": true

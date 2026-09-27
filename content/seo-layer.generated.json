@@ -2788,14 +2788,10 @@
   }
  },
  "apologetics-hasnt-the-church-done-terrible-things": {
-  "metaDescription": "The crimes committed under the banner of Christ are real and many, and any honest defense of the faith has to own them before it says anything else.",
-  "source": "derived",
-  "grade": 12.2,
-  "excerptGrade": 12.2,
-  "qa": {
-   "question": "Hasn't the Church Done Terrible Things?",
-   "answer": "The crimes committed under the banner of Christ are real and many, and any honest defense of the faith has to own them before it says anything else."
-  }
+  "metaDescription": "The Crusades, the Inquisition, the wars of religion, slavery and abuse: the honest history, what it proves and what it doesn't, and why Christ judges it.",
+  "source": "rewrite",
+  "grade": 13.2,
+  "excerptGrade": 4.8
  },
  "what-is-the-kingdom-of-god-and-why-it-changes-everything": {
   "metaDescription": "What Jesus meant by the kingdom of God: its roots in Israel's hope, a century of scholarly debate, the parables, and why it is God's reign, not a place.",
@@ -2886,12 +2882,6 @@
    "question": "Why Are There So Many Christian Denominations?",
    "answer": "The divisions are real, they have dates, and many of them owe more to class, race and nation than to the Bible. Underneath them the churches still confess one creed, and the church that calls itself non-denominational is not an exit from that history but one more tradition inside it."
   }
- },
- "the-crusades-what-actually-happened": {
-  "metaDescription": "The Crusades are the favorite club used against the faith. The honest history is worse than the cliche, and its deepest critique is Christian, not secular.",
-  "source": "derived",
-  "grade": 7.6,
-  "excerptGrade": 7.6
  },
  "how-to-revitalize-a-dying-church": {
   "metaDescription": "Revitalization is not a program you install but a death the pastor must enter before the congregation can live. The numbers came to me on a Tuesday.",

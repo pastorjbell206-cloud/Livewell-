@@ -6,13 +6,13 @@ Search engines and answer engines see a second layer beside every essay: a meta 
 
 | Measure | Value |
 |---|---|
-| Essays with a description | 557 |
+| Essays with a description | 556 |
 | Hand-written descriptions | 11 |
-| Derived from the essay's own sentences | 546 |
-| Essays with question-and-answer data | 81 |
+| Derived from the essay's own sentences | 545 |
+| Essays with question-and-answer data | 80 |
 | Average reading grade, descriptions | 8.3 |
 | Average reading grade, original standfirsts | 9.5 |
-| Derived descriptions at grade 12 or above (hand-rewrite queue) | 60 |
+| Derived descriptions at grade 12 or above (hand-rewrite queue) | 59 |
 
 ## Hand-rewrite queue
 
@@ -75,7 +75,6 @@ Derived descriptions that still read at college level. Each is true to the essay
 | prophetic-pastor | 12.3 | And when they talk about pastoral ministry, they usually mean someone who comes to the bedside, who holds the grieving, who offers presence in the dark. |
 | where-church-was-silent | 12.3 | The church in America has a history that is not primarily the history of courage and faithfulness, though it contains that. |
 | principalities-and-powers-the-bibles-language-for-systems | 12.3 | Paul had a vocabulary for systemic evil two thousand years before the word systemic existed. |
-| apologetics-hasnt-the-church-done-terrible-things | 12.2 | The crimes committed under the banner of Christ are real and many, and any honest defense of the faith has to own them before it says anything else. |
 | how-to-find-gods-will-for-your-career | 12.2 | God is far less concerned with the one perfect job he has hidden from you than with the kind of person you are becoming in whatever work you already hold. |
 | charity-is-not-justice-the-difference | 12.1 | We have learned to give bread to the man at the gate and never ask who built the gate, and the Bible refuses to let mercy become a substitute for justice. |
 | ordinary-time | 12 | The church year has two famous seasons and one long stretch nobody talks about, the green months between Pentecost and Advent called Ordinary Time. |
