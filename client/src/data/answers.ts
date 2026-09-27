@@ -473,7 +473,7 @@ export const ANSWERS: Answer[] = [
       "Which reframes the anxiety. The body is not luggage the real self is carrying, and the Christian hope is the resurrection of the body rather than escape from it, so the transhumanist dream of uploading the self is an old heresy in new silicon, the gnostic contempt for flesh wearing a better interface. What the machines finally reveal is not that we are machines. It is the difference between being simulated and being known.",
     ],
     essaySlug: "personhood-in-the-age-of-ai",
-    essayTitle: "What Makes Us Human in the Age of AI?",
+    essayTitle: "What Makes Us Human in the Age of AI? A Christian Answer",
     bookTitle: "Ordinary Holiness",
     bookHref: "/ordinary-holiness",
   },

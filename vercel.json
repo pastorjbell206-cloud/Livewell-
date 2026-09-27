@@ -124,16 +124,6 @@
             "permanent": true
         },
         {
-            "source": "/writing/vulnerable-people-not-in-pews",
-            "destination": "/justice",
-            "permanent": true
-        },
-        {
-            "source": "/writing/exodus-demands-church-today",
-            "destination": "/justice",
-            "permanent": true
-        },
-        {
             "source": "/writing/pastoral-care-wealthy-congregant",
             "destination": "/justice",
             "permanent": true
@@ -450,11 +440,6 @@
         },
         {
             "source": "/writing/preach-same-gospel-different-people",
-            "destination": "/theology",
-            "permanent": true
-        },
-        {
-            "source": "/writing/widow-orphan-stranger",
             "destination": "/theology",
             "permanent": true
         },
@@ -1530,6 +1515,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/exodus-demands-church-today",
+            "destination": "/writing/exodus-demands-church",
+            "permanent": true
+        },
+        {
             "source": "/writing/exodus-the-story-underneath-the-whole-bible",
             "destination": "/writing/why-the-bible-is-one-story-not-66-books",
             "permanent": true
@@ -2125,6 +2115,16 @@
             "permanent": true
         },
         {
+            "source": "/writing/vulnerable-people-not-in-pews",
+            "destination": "/writing/widow-orphan-stranger",
+            "permanent": true
+        },
+        {
+            "source": "/writing/vulnerable-people-not-pews",
+            "destination": "/writing/widow-orphan-stranger",
+            "permanent": true
+        },
+        {
             "source": "/writing/water-theological-issue",
             "destination": "/writing/creation-care-not-optional",
             "permanent": true
@@ -2177,6 +2177,11 @@
         {
             "source": "/writing/what-the-bible-says-about-money",
             "destination": "/writing/what-the-bible-actually-says-about-money-and-wealth",
+            "permanent": true
+        },
+        {
+            "source": "/writing/what-the-bible-says-about-the-poor-and-the-stranger",
+            "destination": "/writing/widow-orphan-stranger",
             "permanent": true
         },
         {

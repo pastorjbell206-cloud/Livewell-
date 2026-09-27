@@ -2,6 +2,7 @@
  "rewritten": [
   "already-and-not-yet-living-between-two-worlds",
   "amos-american-church",
+  "angels-demons-and-the-unseen",
   "apologetics-hasnt-the-church-done-terrible-things",
   "are-miracles-believable",
   "building-the-multiethnic-church",
@@ -32,10 +33,12 @@
   "education-inequality",
   "emotional-labor-in-marriage",
   "exile-is-not-the-end",
+  "exodus-demands-church",
   "faith-and-science",
   "family-and-faith-transitions",
   "family-devotions-authentic",
   "forgiveness-in-marriage",
+  "friendship-the-love-we-forgot",
   "good-samaritan-actually-arguing",
   "grief-abortion-church",
   "healthy-conflict-marriage",
@@ -68,6 +71,7 @@
   "parenting-letting-them-fail",
   "parenting-raising-kids-in-a-screen-age",
   "parenting-talking-about-sex-and-identity",
+  "personhood-in-the-age-of-ai",
   "predestination-and-free-will",
   "prophetic-imagination",
   "prosperity-gospel-is-not-the-gospel",
@@ -94,6 +98,7 @@
   "theology-fair-wages",
   "theology-of-reparations",
   "two-kingdoms-faith-and-state",
+  "what-christians-can-learn-from-judaism",
   "what-fatherhood-requires",
   "what-is-advent",
   "what-is-heaven-actually-like",
@@ -123,6 +128,7 @@
   "why-the-incarnation-matters",
   "why-there-are-so-many-christian-denominations",
   "why-trust-the-bible",
+  "widow-orphan-stranger",
   "women-in-ministry"
  ],
  "merged": {
@@ -206,6 +212,7 @@
   "emotional-labor-marriage": "emotional-labor-in-marriage",
   "marriage-after-kids-arrive": "emotional-labor-in-marriage",
   "jeremiah-letter-exiles": "exile-is-not-the-end",
+  "exodus-demands-church-today": "exodus-demands-church",
   "science-and-faith-are-not-at-war": "faith-and-science",
   "parenting-teaching-kids-to-pray-and-read-scripture": "family-devotions-authentic",
   "forgiveness-without-pretending": "forgiveness-in-marriage",
@@ -316,6 +323,9 @@
   "ordinary-time": "why-the-church-has-a-calendar",
   "incarnation-changes-everything": "why-the-incarnation-matters",
   "non-denominational-doesnt-mean-no-tradition": "why-there-are-so-many-christian-denominations",
-  "teen-can-you-actually-trust-the-bible": "why-trust-the-bible"
+  "teen-can-you-actually-trust-the-bible": "why-trust-the-bible",
+  "what-the-bible-says-about-the-poor-and-the-stranger": "widow-orphan-stranger",
+  "vulnerable-people-not-pews": "widow-orphan-stranger",
+  "vulnerable-people-not-in-pews": "widow-orphan-stranger"
  }
 }

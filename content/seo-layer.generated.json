@@ -526,10 +526,14 @@
   "excerptGrade": 11.5
  },
  "angels-demons-and-the-unseen": {
-  "metaDescription": "As a materialist this was the easiest thing in the Bible to mock, and later the thing I had understood least. Angels, demons, an unseen order.",
-  "source": "derived",
-  "grade": 6.7,
-  "excerptGrade": 5.9
+  "metaDescription": "What the Bible says about angels, demons and Satan, read in context: the divine council, the exorcisms, the powers, and what popular belief added later.",
+  "source": "rewrite",
+  "grade": 13.5,
+  "excerptGrade": 10.3,
+  "qa": {
+   "question": "What Does the Bible Actually Say About Angels and Demons?",
+   "answer": "Scripture says more about the unseen than the modern skeptic allows and far less than popular belief assumes. Read in context, it describes a world with one Lord, servants who carry his errands, and an accuser who has already lost his case."
+  }
  },
  "are-miracles-believable": {
   "metaDescription": "Hume's argument against miracles at full strength, the replies of Lewis, Swinburne, Earman and Keener, and what the Gospels say miracles are for.",
@@ -684,14 +688,10 @@
   }
  },
  "personhood-in-the-age-of-ai": {
-  "metaDescription": "The machine can now do most of what I once called the mark of a mind. It can talk, reason, even say it feels.",
-  "source": "derived",
-  "grade": 2.9,
-  "excerptGrade": 4.4,
-  "qa": {
-   "question": "What Makes Us Human in the Age of AI?",
-   "answer": "The machine can now do most of what I once called the mark of a mind. It can talk, reason, even say it feels. So I have to say honestly what in me it can never be, and why that is not the thing I would have guessed."
-  }
+  "metaDescription": "Turing, Searle's Chinese room, Boethius and the image of God: why intelligence is not personhood, and why measuring worth by output fails the weak.",
+  "source": "rewrite",
+  "grade": 12,
+  "excerptGrade": 11.4
  },
  "predestination-and-free-will": {
   "metaDescription": "Predestination vs. free will from Augustine to Dort, Wesley and Barth: both views at full strength, Romans 9 in context, and what the creeds leave open.",
@@ -880,10 +880,10 @@
   "excerptGrade": 4.8
  },
  "friendship-the-love-we-forgot": {
-  "metaDescription": "We have a thousand contacts and almost no friends. We treat friendship as the least serious of the loves, the one you fit in around everything else.",
-  "source": "derived",
-  "grade": 5.8,
-  "excerptGrade": 5.7
+  "metaDescription": "Why adults struggle to make close friends: the loneliness data, what Aristotle, Aelred and C. S. Lewis knew, and what Jesus meant by calling us friends.",
+  "source": "rewrite",
+  "grade": 5.5,
+  "excerptGrade": 11.4
  },
  "how-to-die-well": {
   "metaDescription": "What Christianity teaches about dying well: the ars moriendi, hospice and palliative care, stopping treatment, and why assisted suicide is not the answer.",
@@ -1707,17 +1707,15 @@
   "grade": 5.9,
   "excerptGrade": 13.4
  },
- "exodus-demands-church-today": {
-  "metaDescription": "The Exodus is not one story among many in Israel's memory. It is the story that all the other stories refer back to.",
-  "source": "derived",
-  "grade": 6.9,
-  "excerptGrade": 6.9
- },
  "exodus-demands-church": {
-  "metaDescription": "Before there was a theology, there was a cry. Four verbs. Heard. Remembered. Saw. Knew.",
-  "source": "derived",
-  "grade": 1.9,
-  "excerptGrade": 4.4
+  "metaDescription": "How the Exodus runs from Deuteronomy to the Last Supper and 1 Peter, how Puritans, slaves and liberation theology read it, and what it asks of Christians.",
+  "source": "rewrite",
+  "grade": 13.7,
+  "excerptGrade": 8.7,
+  "qa": {
+   "question": "What Does the Exodus Mean for Christians Today?",
+   "answer": "The Exodus is the founding memory of the people of God, a rescue from Pharaoh for the service of God. Every generation that has claimed it, the church included, has been judged by it."
+  }
  },
  "finding-your-barnabas": {
   "metaDescription": "Read Acts 9 carefully. Paul has just been converted on the Damascus road.",
@@ -2299,18 +2297,6 @@
   "grade": 3.6,
   "excerptGrade": 15.3
  },
- "vulnerable-people-not-in-pews": {
-  "metaDescription": "The homeless man sleeping under the interstate overpass three blocks from my church does not come to our Sunday services.",
-  "source": "derived",
-  "grade": 10.5,
-  "excerptGrade": 7.6
- },
- "vulnerable-people-not-pews": {
-  "metaDescription": "The man pushing the cart along the highway median at noon on a Wednesday is not going to find you. He does not have a car.",
-  "source": "derived",
-  "grade": 4,
-  "excerptGrade": 2.6
- },
  "weight-of-what-you-cant-say": {
   "metaDescription": "You know things about your congregation that nobody else knows. You know whose marriage is barely hanging on while they hold hands in the third row.",
   "source": "derived",
@@ -2390,10 +2376,14 @@
   "excerptGrade": 15.3
  },
  "widow-orphan-stranger": {
-  "metaDescription": "Count them through the canon. Exodus 22. Deuteronomy 10, 14, 16, 24, 26, 27. Zechariah 7. Malachi 3. James 1.",
-  "source": "derived",
-  "grade": -1.3,
-  "excerptGrade": 13.8
+  "metaDescription": "Why Scripture names the widow, orphan and stranger, how Israel's law differed from its neighbors', what the early church did, and who they are today.",
+  "source": "rewrite",
+  "grade": 11.2,
+  "excerptGrade": 8.7,
+  "qa": {
+   "question": "What Does the Bible Say About Widows, Orphans and Strangers?",
+   "answer": "Across the law, the psalms, the prophets and the letters, God names three people who had no one to speak for them and calls himself their next of kin. Who stands in those places now, and why so few of them sit in our pews, is the question the text leaves with the church."
+  }
  },
  "you-are-not-the-exception": {
   "metaDescription": "Every generation believes it is the exception to the rules of biblical interpretation.",
@@ -2875,12 +2865,6 @@
   "grade": 12.3,
   "excerptGrade": 12.3
  },
- "what-the-bible-says-about-the-poor-and-the-stranger": {
-  "metaDescription": "A man sleeps under the overpass two blocks from our church. I have driven past him on my way to preach about him.",
-  "source": "derived",
-  "grade": 3.3,
-  "excerptGrade": 12
- },
  "disability-dignity-and-the-image-of-god": {
   "metaDescription": "A theology that locates human worth in capacity will eventually run out of people it can call human.",
   "source": "derived",
@@ -3206,10 +3190,10 @@
   }
  },
  "what-christians-can-learn-from-judaism": {
-  "metaDescription": "Christianity emerged from Judaism and then spent two millennia pretending it had outgrown its parent.",
-  "source": "derived",
-  "grade": 11.5,
-  "excerptGrade": 13.4
+  "metaDescription": "How Christianity grew out of Judaism, why the church rejected Marcion, its long teaching of contempt, and what Christians can learn from Jewish faith.",
+  "source": "rewrite",
+  "grade": 11,
+  "excerptGrade": 10.5
  },
  "what-christians-can-learn-from-buddhism": {
   "metaDescription": "The contemplative traditions of Christianity and Buddhism have been carrying on a quiet conversation for centuries.",
