@@ -470,10 +470,14 @@
   "excerptGrade": 8.6
  },
  "easter-is-not-a-day": {
-  "metaDescription": "We treat Easter as a single morning, lilies, a sunrise service, ham by noon, done.",
-  "source": "derived",
-  "grade": 6.8,
-  "excerptGrade": 5.7
+  "metaDescription": "Easter as the church's oldest feast: Passover and Pascha, the Vigil, the fifty days, why East and West differ on the date, and the truth about Eostre.",
+  "source": "rewrite",
+  "grade": 10.7,
+  "excerptGrade": 9.6,
+  "qa": {
+   "question": "Eostre, Eggs and Rabbits: Is Easter Pagan?",
+   "answer": "Every spring someone posts that Easter is a pagan festival with a cross painted on it, sometimes a skeptic who thinks Christianity is borrowed mythology, sometimes a Christian who thinks the faithful shouldn't keep the holiday. Both assume the name and customs tell you what the feast is. The claim deserves a patient answer, because part of it is true."
+  }
  },
  "what-is-advent": {
   "metaDescription": "What Advent is, how it grew from fasts in Gaul and Rome's four Sundays, and why the season before Christmas waits for Christ's return as well as his birth.",
