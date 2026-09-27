@@ -381,12 +381,6 @@
   "grade": 3.2,
   "excerptGrade": 5.1
  },
- "dark-night-god-feels-absent": {
-  "metaDescription": "The silence is not punishment and it is not your failure. The tradition has a name for it, and the name is the beginning of surviving it.",
-  "source": "derived",
-  "grade": 5.8,
-  "excerptGrade": 5.8
- },
  "depression-or-the-dark-night": {
   "metaDescription": "On depression, the dark night of the soul, and the line no one should have to find alone. Fifteen years of pastoring keeps sending me the same two people.",
   "source": "derived",
@@ -415,12 +409,6 @@
   "grade": 2.3,
   "excerptGrade": 7.2
  },
- "when-god-doesnt-make-sense": {
-  "metaDescription": "We were sold a God who would add up. The God of the Bible refuses the equation, and the refusal is not a flaw in the system.",
-  "source": "derived",
-  "grade": 5,
-  "excerptGrade": 3.7
- },
  "why-does-god-feel-far-away": {
   "metaDescription": "Feeling that God is far away is not a conclusion you reasoned your way to. It is the weather of our age. A pastor who came from atheism on why.",
   "source": "hand",
@@ -429,16 +417,6 @@
   "qa": {
    "question": "Why Does God Feel So Far Away?",
    "answer": "The sense that God is distant is not a conclusion you reasoned your way to. It is the weather of an age. A pastor who came to faith from atheism on disenchantment, the buffered self, and why the thinness you feel is the ceiling of a house rather than the edge of the world."
-  }
- },
- "the-theology-of-saturday": {
-  "metaDescription": "We have a theology of the cross and a theology of the resurrection. We are very good at Friday and Sunday. We have almost nothing for Saturday.",
-  "source": "derived",
-  "grade": 5.8,
-  "excerptGrade": 7.7,
-  "qa": {
-   "question": "Where Is God on Holy Saturday?",
-   "answer": "We have a theology of the cross and a theology of the resurrection. We have almost nothing for the day in between, which is the day most of the grieving are actually living in."
   }
  },
  "the-weight-that-stays": {
@@ -458,14 +436,10 @@
   }
  },
  "when-god-is-silent-and-the-room-is-empty": {
-  "metaDescription": "You prayed, and the ceiling gave nothing back. You learned the silence in stages. First the phone calls stopped. Then the casseroles stopped.",
-  "source": "derived",
-  "grade": 3.6,
-  "excerptGrade": 5.7,
-  "qa": {
-   "question": "Where Is God When You're Grieving?",
-   "answer": "You prayed, and the ceiling gave nothing back. This is what the church almost never says about the silence of God in grief, and why the silence is not the absence you fear it is."
-  }
+  "metaDescription": "Why does God feel silent? Isaiah's hidden God, the lament psalms, Job, the dark night, the hiddenness argument, and Holy Saturday, when God lay in a grave.",
+  "source": "rewrite",
+  "grade": 6.3,
+  "excerptGrade": 9.3
  },
  "the-faith-once-delivered": {
   "metaDescription": "What Jude meant by the faith once delivered, how the creeds of Nicaea and Chalcedon confess Scripture, and why America's no creed but the Bible fails.",

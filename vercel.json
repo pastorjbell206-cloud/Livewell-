@@ -1505,6 +1505,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/dark-night-god-feels-absent",
+            "destination": "/writing/when-god-is-silent-and-the-room-is-empty",
+            "permanent": true
+        },
+        {
             "source": "/writing/done-with-church-not-jesus",
             "destination": "/writing/why-people-are-leaving-the-church",
             "permanent": true
@@ -1910,6 +1915,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/the-theology-of-saturday",
+            "destination": "/writing/when-god-is-silent-and-the-room-is-empty",
+            "permanent": true
+        },
+        {
             "source": "/writing/theology-of-borders",
             "destination": "/writing/what-the-bible-says-about-immigrants-and-refugees-in-depth",
             "permanent": true
@@ -1942,6 +1952,11 @@
         {
             "source": "/writing/what-the-bible-says-about-money",
             "destination": "/writing/what-the-bible-actually-says-about-money-and-wealth",
+            "permanent": true
+        },
+        {
+            "source": "/writing/when-god-doesnt-make-sense",
+            "destination": "/writing/when-god-is-silent-and-the-room-is-empty",
             "permanent": true
         },
         {
