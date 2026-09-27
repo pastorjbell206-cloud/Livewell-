@@ -94,11 +94,6 @@
             "permanent": true
         },
         {
-            "source": "/writing/mishpat-tsedaqah",
-            "destination": "/justice",
-            "permanent": true
-        },
-        {
             "source": "/writing/micah-6-8-demands",
             "destination": "/justice",
             "permanent": true
@@ -1640,6 +1635,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/mishpat-tsedaqah",
+            "destination": "/writing/justice-not-political-theological",
+            "permanent": true
+        },
+        {
             "source": "/writing/non-denominational-doesnt-mean-no-tradition",
             "destination": "/writing/why-there-are-so-many-christian-denominations",
             "permanent": true
@@ -1857,6 +1857,11 @@
         {
             "source": "/writing/what-does-the-holy-spirit-do",
             "destination": "/writing/who-is-the-holy-spirit",
+            "permanent": true
+        },
+        {
+            "source": "/writing/what-is-biblical-justice-mishpat-and-tsedaqah",
+            "destination": "/writing/justice-not-political-theological",
             "permanent": true
         },
         {
