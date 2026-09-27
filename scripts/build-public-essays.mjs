@@ -128,8 +128,13 @@ if (isMain) {
   const redirected = redirectedEssaySlugs(ROOT);
   const records = JSON.parse(readFileSync(SRC, "utf8")).filter((r) => !moved.has(r?.slug) && !redirected.has(r?.slug));
   const layer = existsSync(SEO) ? JSON.parse(readFileSync(SEO, "utf8")) : {};
-  const featuredSlugs = existsSync(FEATURED) ? JSON.parse(readFileSync(FEATURED, "utf8")).flagship ?? [] : [];
-  const canonSlugs = existsSync(CANON) ? JSON.parse(readFileSync(CANON, "utf8")).slugs ?? [] : [];
+  // A curated slug merged into a rewrite (content/rewrites.generated.json) keeps
+  // its place through the essay that absorbed it, once per list.
+  const MERGED_FILE = path.join(ROOT, "content/rewrites.generated.json");
+  const merged = existsSync(MERGED_FILE) ? JSON.parse(readFileSync(MERGED_FILE, "utf8")).merged ?? {} : {};
+  const resolve = (slugs) => [...new Set(slugs.map((s) => merged[s] ?? s))];
+  const featuredSlugs = resolve(existsSync(FEATURED) ? JSON.parse(readFileSync(FEATURED, "utf8")).flagship ?? [] : []);
+  const canonSlugs = resolve(existsSync(CANON) ? JSON.parse(readFileSync(CANON, "utf8")).slugs ?? [] : []);
   const { written, indexed, featured, canon, skipped, liteBytes } = build(records, OUT, layer, featuredSlugs, canonSlugs);
   console.log(`[essays] wrote ${written} essay files + index.json (${indexed}) + index-lite.json (${Math.round(liteBytes / 1024)} KB) + featured.json (${featured}) + canon.json (${canon}) to client/public/essays/`);
   if (skipped.length) console.log(`[essays] skipped ${skipped.length}: ${skipped.slice(0, 5).join(", ")}${skipped.length > 5 ? "…" : ""}`);

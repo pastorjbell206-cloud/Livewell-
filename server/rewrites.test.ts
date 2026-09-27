@@ -53,6 +53,21 @@ describe("the rewrite plumbing", () => {
   });
 });
 
+describe("curated lists survive merging", () => {
+  // The canon ("the twelve essays to read first") and the flagship list are
+  // James's to edit. A merge or retirement must never quietly shrink them.
+  const merged = readJson("content/rewrites.generated.json").merged;
+  const lib = new Set(readJson("content/static-library.generated.json").map((r: any) => r.slug));
+  for (const [file, key] of [["client/src/data/canon.json", "slugs"], ["client/src/data/featured.json", "flagship"]] as const) {
+    it(`${file} names only essays still in the library`, () => {
+      for (const slug of readJson(file)[key] as string[]) {
+        expect(merged[slug], `${slug} is merged away; edit ${file} or keep the essay`).toBeUndefined();
+        expect(lib.has(slug), `${slug} is not in the library`).toBe(true);
+      }
+    });
+  }
+});
+
 describe("retired duplicates", () => {
   const retire = loadRetirements(repoRoot);
   const lib = readJson("content/static-library.generated.json");
