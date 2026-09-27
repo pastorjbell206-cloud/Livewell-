@@ -6,13 +6,13 @@ Search engines and answer engines see a second layer beside every essay: a meta 
 
 | Measure | Value |
 |---|---|
-| Essays with a description | 563 |
+| Essays with a description | 559 |
 | Hand-written descriptions | 11 |
-| Derived from the essay's own sentences | 552 |
-| Essays with question-and-answer data | 87 |
+| Derived from the essay's own sentences | 548 |
+| Essays with question-and-answer data | 83 |
 | Average reading grade, descriptions | 8.3 |
 | Average reading grade, original standfirsts | 9.5 |
-| Derived descriptions at grade 12 or above (hand-rewrite queue) | 62 |
+| Derived descriptions at grade 12 or above (hand-rewrite queue) | 61 |
 
 ## Hand-rewrite queue
 
@@ -56,7 +56,6 @@ Derived descriptions that still read at college level. Each is true to the essay
 | symptoms-without-causes-charity | 13.4 | There is a story, attributed to various sources over the years, about people standing on a riverbank pulling drowning bodies from the water. |
 | 44-what-the-church-in-the-global-south-can-teach-the-church-in-america-about-suffering | 13.3 | The American church has developed a sophisticated relationship with comfort. Its buildings are climate controlled. |
 | digital-divide | 13.3 | The resources that enable human flourishing (land, water, shelter, education) are not distributed randomly. They concentrate. |
-| apologetics-what-about-those-who-never-heard | 13.2 | It seems deeply unfair that eternity could hinge on whether you happened to be born where the message reached, and the unfairness is worth facing squarely. |
 | how-to-preach-to-people-who-have-heard-it-all | 13.2 | The hardest congregation is not the hostile one but the one that has already heard your text a hundred times and stopped expecting anything from it. |
 | the-womanhood-they-preached-was-small | 12.9 | The world I was raised in preached a womanhood of shrinkage, modesty as fear of the body, submission as erasure, silence as virtue, Scripture as a leash. |
 | the-questions-that-actually-matter | 12.8 | Most defenses of Christianity answer questions skeptics aren't asking. |

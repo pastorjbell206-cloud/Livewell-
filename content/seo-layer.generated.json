@@ -799,16 +799,6 @@
   "grade": 6.7,
   "excerptGrade": 9.1
  },
- "near-death-experiences": {
-  "metaDescription": "The tunnel, the light, the voice saying it is not yet time. As a materialist I mocked these accounts.",
-  "source": "derived",
-  "grade": 3.6,
-  "excerptGrade": 3.8,
-  "qa": {
-   "question": "Does the Evidence for Near-Death Experiences Prove Anything?",
-   "answer": "The tunnel, the light, the voice saying it is not yet time. As a materialist I mocked these accounts. Now I neither worship them nor dismiss them, and I think I can tell you why."
-  }
- },
  "personhood-in-the-age-of-ai": {
   "metaDescription": "The machine can now do most of what I once called the mark of a mind. It can talk, reason, even say it feels.",
   "source": "derived",
@@ -849,16 +839,6 @@
   "qa": {
    "question": "Was Jesus Really Just a Good Teacher?",
    "answer": "The polite modern verdict on Jesus is that he was a great moral teacher, nothing more. C.S. Lewis said that was the one thing he never left open to us. The trilemma gets attacked, fairly, so here it is pressure-tested against the best objections."
-  }
- },
- "what-about-those-who-never-heard": {
-  "metaDescription": "A missionary asked me the question that has emptied more pews than atheism ever did.",
-  "source": "derived",
-  "grade": 8.4,
-  "excerptGrade": 6.7,
-  "qa": {
-   "question": "What About Those Who Never Heard?",
-   "answer": "A missionary asked me the question that has emptied more pews than atheism ever did. Not is God real, but is God fair to the ones who died having never once been told his name."
   }
  },
  "what-new-atheists-got-right": {
@@ -1209,16 +1189,6 @@
   "qa": {
    "question": "Does Hell Exist, and How Could a Loving God Allow It?",
    "answer": "Hell is the doctrine that empties pews and ends conversations, the one even believers wish they could quietly drop. It deserves an honest hearing, not a flinch and not a sermon. Here are the main things Christians have actually believed, and why none of them is what you were probably told."
-  }
- },
- "is-there-life-after-death": {
-  "metaDescription": "The Christian claim is none of these, and it is stranger than all of them. Stand at a graveside long enough and the abstractions burn off.",
-  "source": "derived",
-  "grade": 4.5,
-  "excerptGrade": 7.9,
-  "qa": {
-   "question": "Is There Really Life After Death?",
-   "answer": "Most people, asked what happens when we die, reach for one of three answers, the lights go out, the soul comes back around again, or we drift off to a better place. The Christian claim is none of these, and it is stranger than all of them."
   }
  },
  "what-is-heaven-actually-like": {
@@ -2835,16 +2805,6 @@
   "qa": {
    "question": "How Can a Loving God Send Anyone to Hell?",
    "answer": "The doctrine of hell strikes most people as the cruelest thing Christianity teaches, and the objection deserves a real answer rather than a flinch."
-  }
- },
- "apologetics-what-about-those-who-never-heard": {
-  "metaDescription": "It seems deeply unfair that eternity could hinge on whether you happened to be born where the message reached, and the unfairness is worth facing squarely.",
-  "source": "derived",
-  "grade": 13.2,
-  "excerptGrade": 13.2,
-  "qa": {
-   "question": "What About People Who Never Heard of Jesus?",
-   "answer": "It seems deeply unfair that eternity could hinge on whether you happened to be born where the message reached, and the unfairness is worth facing squarely."
   }
  },
  "apologetics-hasnt-the-church-done-terrible-things": {

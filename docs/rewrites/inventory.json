@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-24T20:32:48.336Z",
+ "generatedAt": "2026-09-27T01:09:32.685Z",
  "rows": [
   {
    "slug": "poverty-tourism-not-mission",
@@ -93,30 +93,6 @@
     "missing apostrophe",
     "slug-cased"
    ],
-   "score": 34,
-   "verdict": "rewrite"
-  },
-  {
-   "slug": "why-young-adults-arent-coming-back",
-   "title": "Why Young Adults Aren't Coming Back",
-   "pillar": "american-church",
-   "redirected": false,
-   "rewritten": false,
-   "words": 2422,
-   "scholars": 1,
-   "scholarNames": [
-    "Tillich"
-   ],
-   "years": 0,
-   "scripture": 0,
-   "headings": 0,
-   "forbidden": 4,
-   "cliche": 0,
-   "hedges": 0,
-   "vague": 0,
-   "fragmentRate": 0.042,
-   "firstPerK": 1.24,
-   "titleProblems": [],
    "score": 34,
    "verdict": "rewrite"
   },
@@ -858,50 +834,6 @@
    "verdict": "rewrite"
   },
   {
-   "slug": "mishpat-tsedaqah",
-   "title": "Mishpat Tsedaqah",
-   "pillar": "theology",
-   "redirected": true,
-   "rewritten": false,
-   "words": 1820,
-   "scholars": 0,
-   "scholarNames": [],
-   "years": 0,
-   "scripture": 14,
-   "headings": 7,
-   "forbidden": 0,
-   "cliche": 0,
-   "hedges": 0,
-   "vague": 0,
-   "fragmentRate": 0.198,
-   "firstPerK": 2.2,
-   "titleProblems": [],
-   "score": 43,
-   "verdict": "rewrite"
-  },
-  {
-   "slug": "poor-not-ministry",
-   "title": "Poor Not Ministry",
-   "pillar": "theology",
-   "redirected": true,
-   "rewritten": false,
-   "words": 1768,
-   "scholars": 0,
-   "scholarNames": [],
-   "years": 0,
-   "scripture": 11,
-   "headings": 5,
-   "forbidden": 0,
-   "cliche": 0,
-   "hedges": 0,
-   "vague": 0,
-   "fragmentRate": 0.153,
-   "firstPerK": 3.39,
-   "titleProblems": [],
-   "score": 43,
-   "verdict": "rewrite"
-  },
-  {
    "slug": "prayer-is-not-optional",
    "title": "Prayer is Not Optional",
    "pillar": "theology",
@@ -1020,30 +952,6 @@
    "verdict": "rewrite"
   },
   {
-   "slug": "finding-a-good-church",
-   "title": "How to Find a Church That Won't Hurt You",
-   "pillar": "devotionals",
-   "redirected": false,
-   "rewritten": false,
-   "words": 2027,
-   "scholars": 1,
-   "scholarNames": [
-    "Weber"
-   ],
-   "years": 0,
-   "scripture": 1,
-   "headings": 0,
-   "forbidden": 0,
-   "cliche": 0,
-   "hedges": 1,
-   "vague": 0,
-   "fragmentRate": 0.098,
-   "firstPerK": 2.96,
-   "titleProblems": [],
-   "score": 43,
-   "verdict": "rewrite"
-  },
-  {
    "slug": "the-questions-that-actually-matter",
    "title": "The Questions That Actually Matter",
    "pillar": "doubt",
@@ -1089,28 +997,6 @@
    "vague": 0,
    "fragmentRate": 0.177,
    "firstPerK": 10.96,
-   "titleProblems": [],
-   "score": 44,
-   "verdict": "rewrite"
-  },
-  {
-   "slug": "poor-not-ministry-category",
-   "title": "Poor Not Ministry Category",
-   "pillar": "theology",
-   "redirected": false,
-   "rewritten": false,
-   "words": 1695,
-   "scholars": 0,
-   "scholarNames": [],
-   "years": 0,
-   "scripture": 15,
-   "headings": 5,
-   "forbidden": 0,
-   "cliche": 0,
-   "hedges": 1,
-   "vague": 0,
-   "fragmentRate": 0.1,
-   "firstPerK": 9.44,
    "titleProblems": [],
    "score": 44,
    "verdict": "rewrite"
@@ -1332,30 +1218,6 @@
    "verdict": "rewrite"
   },
   {
-   "slug": "imago-dei-means-more",
-   "title": "Imago Dei Means More",
-   "pillar": "theology",
-   "redirected": true,
-   "rewritten": false,
-   "words": 1667,
-   "scholars": 1,
-   "scholarNames": [
-    "Calvin"
-   ],
-   "years": 0,
-   "scripture": 4,
-   "headings": 5,
-   "forbidden": 0,
-   "cliche": 0,
-   "hedges": 0,
-   "vague": 0,
-   "fragmentRate": 0.141,
-   "firstPerK": 5.4,
-   "titleProblems": [],
-   "score": 46,
-   "verdict": "rewrite"
-  },
-  {
    "slug": "justice-without-love-ideology",
    "title": "Justice without Love Ideology",
    "pillar": "theology",
@@ -1473,31 +1335,6 @@
    "vague": 0,
    "fragmentRate": 0.096,
    "firstPerK": 4.48,
-   "titleProblems": [],
-   "score": 46,
-   "verdict": "rewrite"
-  },
-  {
-   "slug": "what-is-vocation-work-as-calling",
-   "title": "What Is Vocation? Work as Calling",
-   "pillar": "devotionals",
-   "redirected": false,
-   "rewritten": false,
-   "words": 1577,
-   "scholars": 2,
-   "scholarNames": [
-    "Luther",
-    "Sayers"
-   ],
-   "years": 3,
-   "scripture": 1,
-   "headings": 6,
-   "forbidden": 0,
-   "cliche": 0,
-   "hedges": 0,
-   "vague": 0,
-   "fragmentRate": 0.248,
-   "firstPerK": 7.61,
    "titleProblems": [],
    "score": 46,
    "verdict": "rewrite"
@@ -1854,31 +1691,6 @@
    "verdict": "rewrite"
   },
   {
-   "slug": "reading-the-bible-slowly",
-   "title": "How to Read the Bible Slowly, the Old Way",
-   "pillar": "devotionals",
-   "redirected": false,
-   "rewritten": false,
-   "words": 2393,
-   "scholars": 2,
-   "scholarNames": [
-    "Peterson",
-    "Foster"
-   ],
-   "years": 2,
-   "scripture": 4,
-   "headings": 4,
-   "forbidden": 3,
-   "cliche": 0,
-   "hedges": 1,
-   "vague": 0,
-   "fragmentRate": 0.134,
-   "firstPerK": 5.01,
-   "titleProblems": [],
-   "score": 49,
-   "verdict": "rewrite"
-  },
-  {
    "slug": "natural-evil-and-animal-suffering",
    "title": "The Suffering God Never Ordered",
    "pillar": "doubt",
@@ -1896,30 +1708,6 @@
    "vague": 0,
    "fragmentRate": 0.14,
    "firstPerK": 26.96,
-   "titleProblems": [],
-   "score": 49,
-   "verdict": "rewrite"
-  },
-  {
-   "slug": "praying-when-you-dont-feel-it",
-   "title": "Praying When You Don't Feel Anything",
-   "pillar": "devotionals",
-   "redirected": false,
-   "rewritten": false,
-   "words": 2322,
-   "scholars": 1,
-   "scholarNames": [
-    "James K. A. Smith"
-   ],
-   "years": 1,
-   "scripture": 2,
-   "headings": 4,
-   "forbidden": 0,
-   "cliche": 0,
-   "hedges": 0,
-   "vague": 0,
-   "fragmentRate": 0.19,
-   "firstPerK": 4.31,
    "titleProblems": [],
    "score": 49,
    "verdict": "rewrite"
@@ -2036,28 +1824,6 @@
    "firstPerK": 0.95,
    "titleProblems": [],
    "score": 49,
-   "verdict": "rewrite"
-  },
-  {
-   "slug": "what-the-bible-says-about-spiritual-gifts",
-   "title": "What the Bible Says About Spiritual Gifts",
-   "pillar": "theology",
-   "redirected": false,
-   "rewritten": false,
-   "words": 2409,
-   "scholars": 0,
-   "scholarNames": [],
-   "years": 2,
-   "scripture": 8,
-   "headings": 5,
-   "forbidden": 1,
-   "cliche": 0,
-   "hedges": 0,
-   "vague": 0,
-   "fragmentRate": 0.141,
-   "firstPerK": 1.66,
-   "titleProblems": [],
-   "score": 50,
    "verdict": "rewrite"
   },
   {
@@ -2489,56 +2255,6 @@
    "verdict": "rewrite"
   },
   {
-   "slug": "the-only-prayer-jesus-taught",
-   "title": "The Only Prayer Jesus Taught",
-   "pillar": "devotionals",
-   "redirected": false,
-   "rewritten": false,
-   "words": 2365,
-   "scholars": 3,
-   "scholarNames": [
-    "Cyprian",
-    "N. T. Wright",
-    "James K. A. Smith"
-   ],
-   "years": 2,
-   "scripture": 3,
-   "headings": 8,
-   "forbidden": 0,
-   "cliche": 1,
-   "hedges": 1,
-   "vague": 0,
-   "fragmentRate": 0.211,
-   "firstPerK": 2.96,
-   "titleProblems": [],
-   "score": 52,
-   "verdict": "rewrite"
-  },
-  {
-   "slug": "what-does-the-holy-spirit-do",
-   "title": "What Does the Holy Spirit Actually Do?",
-   "pillar": "theology",
-   "redirected": false,
-   "rewritten": false,
-   "words": 2431,
-   "scholars": 1,
-   "scholarNames": [
-    "Packer"
-   ],
-   "years": 2,
-   "scripture": 9,
-   "headings": 6,
-   "forbidden": 0,
-   "cliche": 0,
-   "hedges": 2,
-   "vague": 0,
-   "fragmentRate": 0.13,
-   "firstPerK": 4.11,
-   "titleProblems": [],
-   "score": 52,
-   "verdict": "rewrite"
-  },
-  {
    "slug": "reaching-rich-more-comfortable",
    "title": "Reaching Rich More Comfortable",
    "pillar": "theology",
@@ -2685,30 +2401,6 @@
    "verdict": "rewrite"
   },
   {
-   "slug": "baptism-mode-and-subjects",
-   "title": "Sprinkle or Immerse? Infant or Believer?",
-   "pillar": "doubt",
-   "redirected": false,
-   "rewritten": false,
-   "words": 2217,
-   "scholars": 1,
-   "scholarNames": [
-    "Calvin"
-   ],
-   "years": 1,
-   "scripture": 6,
-   "headings": 0,
-   "forbidden": 0,
-   "cliche": 0,
-   "hedges": 0,
-   "vague": 0,
-   "fragmentRate": 0.163,
-   "firstPerK": 11.73,
-   "titleProblems": [],
-   "score": 53,
-   "verdict": "rewrite"
-  },
-  {
    "slug": "personhood-in-the-age-of-ai",
    "title": "What Makes Us Human in the Age of AI?",
    "pillar": "doubt",
@@ -2726,55 +2418,6 @@
    "vague": 0,
    "fragmentRate": 0.094,
    "firstPerK": 15.38,
-   "titleProblems": [],
-   "score": 53,
-   "verdict": "rewrite"
-  },
-  {
-   "slug": "how-the-story-ends",
-   "title": "How the Story of the Bible Actually Ends",
-   "pillar": "theology",
-   "redirected": false,
-   "rewritten": false,
-   "words": 2348,
-   "scholars": 2,
-   "scholarNames": [
-    "N. T. Wright",
-    "Bauckham"
-   ],
-   "years": 1,
-   "scripture": 3,
-   "headings": 4,
-   "forbidden": 0,
-   "cliche": 0,
-   "hedges": 1,
-   "vague": 0,
-   "fragmentRate": 0.126,
-   "firstPerK": 3.41,
-   "titleProblems": [],
-   "score": 53,
-   "verdict": "rewrite"
-  },
-  {
-   "slug": "how-do-you-actually-pray",
-   "title": "How Do You Actually Pray?",
-   "pillar": "devotionals",
-   "redirected": false,
-   "rewritten": false,
-   "words": 2502,
-   "scholars": 1,
-   "scholarNames": [
-    "Keller"
-   ],
-   "years": 1,
-   "scripture": 3,
-   "headings": 6,
-   "forbidden": 0,
-   "cliche": 0,
-   "hedges": 0,
-   "vague": 0,
-   "fragmentRate": 0.138,
-   "firstPerK": 8.79,
    "titleProblems": [],
    "score": 53,
    "verdict": "rewrite"
@@ -3048,30 +2691,6 @@
    "verdict": "rewrite"
   },
   {
-   "slug": "fully-god-fully-human",
-   "title": "How Can Jesus Be Both God and Human?",
-   "pillar": "theology",
-   "redirected": false,
-   "rewritten": false,
-   "words": 2426,
-   "scholars": 1,
-   "scholarNames": [
-    "Athanasius"
-   ],
-   "years": 1,
-   "scripture": 4,
-   "headings": 5,
-   "forbidden": 0,
-   "cliche": 0,
-   "hedges": 0,
-   "vague": 0,
-   "fragmentRate": 0.124,
-   "firstPerK": 2.06,
-   "titleProblems": [],
-   "score": 54,
-   "verdict": "rewrite"
-  },
-  {
    "slug": "engaging-nones-religiously-unaffiliated",
    "title": "Engaging Nones Religiously Unaffiliated",
    "pillar": "theology",
@@ -3097,30 +2716,6 @@
    "verdict": "rewrite"
   },
   {
-   "slug": "kingdom-of-god-not-what-you-think",
-   "title": "Kingdom of God Not what you Think",
-   "pillar": "theology",
-   "redirected": true,
-   "rewritten": false,
-   "words": 1756,
-   "scholars": 0,
-   "scholarNames": [],
-   "years": 2,
-   "scripture": 6,
-   "headings": 6,
-   "forbidden": 0,
-   "cliche": 0,
-   "hedges": 0,
-   "vague": 0,
-   "fragmentRate": 0.11,
-   "firstPerK": 6.26,
-   "titleProblems": [
-    "slug-cased"
-   ],
-   "score": 54,
-   "verdict": "rewrite"
-  },
-  {
    "slug": "theological-case-against-torture",
    "title": "The Theological Case Against Torture",
    "pillar": "prophetic-justice",
@@ -3140,30 +2735,6 @@
    "vague": 0,
    "fragmentRate": 0.042,
    "firstPerK": 3.88,
-   "titleProblems": [],
-   "score": 54,
-   "verdict": "rewrite"
-  },
-  {
-   "slug": "white-churches-diversity",
-   "title": "White Churches Diversity",
-   "pillar": "theology",
-   "redirected": false,
-   "rewritten": false,
-   "words": 1759,
-   "scholars": 1,
-   "scholarNames": [
-    "James K.A. Smith"
-   ],
-   "years": 5,
-   "scripture": 3,
-   "headings": 6,
-   "forbidden": 0,
-   "cliche": 0,
-   "hedges": 0,
-   "vague": 0,
-   "fragmentRate": 0.208,
-   "firstPerK": 0,
    "titleProblems": [],
    "score": 54,
    "verdict": "rewrite"
@@ -3216,30 +2787,6 @@
    "vague": 0,
    "fragmentRate": 0.08,
    "firstPerK": 6.74,
-   "titleProblems": [],
-   "score": 55,
-   "verdict": "rewrite"
-  },
-  {
-   "slug": "what-the-bible-says-about-money",
-   "title": "What the Bible Actually Says About Money",
-   "pillar": "devotionals",
-   "redirected": false,
-   "rewritten": false,
-   "words": 2528,
-   "scholars": 1,
-   "scholarNames": [
-    "Craig"
-   ],
-   "years": 1,
-   "scripture": 5,
-   "headings": 6,
-   "forbidden": 0,
-   "cliche": 0,
-   "hedges": 0,
-   "vague": 0,
-   "fragmentRate": 0.124,
-   "firstPerK": 7.12,
    "titleProblems": [],
    "score": 55,
    "verdict": "rewrite"
@@ -3410,32 +2957,6 @@
    "vague": 0,
    "fragmentRate": 0.188,
    "firstPerK": 6.47,
-   "titleProblems": [],
-   "score": 55,
-   "verdict": "rewrite"
-  },
-  {
-   "slug": "how-to-read-the-bible-devotionally",
-   "title": "How to Read the Bible Devotionally",
-   "pillar": "devotionals",
-   "redirected": false,
-   "rewritten": false,
-   "words": 1515,
-   "scholars": 3,
-   "scholarNames": [
-    "Augustine",
-    "Peterson",
-    "Chadwick"
-   ],
-   "years": 4,
-   "scripture": 2,
-   "headings": 6,
-   "forbidden": 0,
-   "cliche": 0,
-   "hedges": 0,
-   "vague": 0,
-   "fragmentRate": 0.214,
-   "firstPerK": 13.86,
    "titleProblems": [],
    "score": 55,
    "verdict": "rewrite"
@@ -3660,32 +3181,6 @@
    "verdict": "rewrite"
   },
   {
-   "slug": "imago-dei-means",
-   "title": "Imago Dei Means",
-   "pillar": "theology",
-   "redirected": false,
-   "rewritten": false,
-   "words": 1875,
-   "scholars": 3,
-   "scholarNames": [
-    "Augustine",
-    "Calvin",
-    "Brueggemann"
-   ],
-   "years": 1,
-   "scripture": 3,
-   "headings": 6,
-   "forbidden": 0,
-   "cliche": 0,
-   "hedges": 0,
-   "vague": 0,
-   "fragmentRate": 0.156,
-   "firstPerK": 6.93,
-   "titleProblems": [],
-   "score": 56,
-   "verdict": "rewrite"
-  },
-  {
    "slug": "moral-injury-veterans",
    "title": "Moral Injury and the Veterans Among Us",
    "pillar": "prophetic-justice",
@@ -3758,62 +3253,6 @@
    "verdict": "rewrite"
   },
   {
-   "slug": "white-churches-diversity-wrong",
-   "title": "White Churches Diversity Wrong",
-   "pillar": "theology",
-   "redirected": false,
-   "rewritten": false,
-   "words": 1544,
-   "scholars": 6,
-   "scholarNames": [
-    "Luther",
-    "Charles Taylor",
-    "Taylor",
-    "James K.A. Smith",
-    "Martin Luther King",
-    "King Jr"
-   ],
-   "years": 0,
-   "scripture": 2,
-   "headings": 4,
-   "forbidden": 0,
-   "cliche": 0,
-   "hedges": 0,
-   "vague": 0,
-   "fragmentRate": 0.205,
-   "firstPerK": 0,
-   "titleProblems": [],
-   "score": 56,
-   "verdict": "rewrite"
-  },
-  {
-   "slug": "apologetics-isnt-faith-believing-without-evidence",
-   "title": "Isn't Faith Just Believing Without Evidence?",
-   "pillar": "theology",
-   "redirected": false,
-   "rewritten": false,
-   "words": 1962,
-   "scholars": 4,
-   "scholarNames": [
-    "Augustine",
-    "Aquinas",
-    "Anselm",
-    "Pascal"
-   ],
-   "years": 0,
-   "scripture": 0,
-   "headings": 7,
-   "forbidden": 0,
-   "cliche": 0,
-   "hedges": 0,
-   "vague": 0,
-   "fragmentRate": 0.057,
-   "firstPerK": 2.55,
-   "titleProblems": [],
-   "score": 56,
-   "verdict": "rewrite"
-  },
-  {
    "slug": "the-whole-counsel",
    "title": "Why You Can't Cherry-Pick the Bible",
    "pillar": "theology",
@@ -3833,30 +3272,6 @@
    "vague": 0,
    "fragmentRate": 0.087,
    "firstPerK": 0.81,
-   "titleProblems": [],
-   "score": 57,
-   "verdict": "rewrite"
-  },
-  {
-   "slug": "cessationism-or-continuation",
-   "title": "Do the Gifts Still Happen?",
-   "pillar": "doubt",
-   "redirected": false,
-   "rewritten": false,
-   "words": 2309,
-   "scholars": 1,
-   "scholarNames": [
-    "Warfield"
-   ],
-   "years": 2,
-   "scripture": 8,
-   "headings": 0,
-   "forbidden": 0,
-   "cliche": 0,
-   "hedges": 0,
-   "vague": 0,
-   "fragmentRate": 0.179,
-   "firstPerK": 25.12,
    "titleProblems": [],
    "score": 57,
    "verdict": "rewrite"
@@ -4067,30 +3482,6 @@
    "verdict": "rewrite"
   },
   {
-   "slug": "being-filled-with-the-spirit",
-   "title": "What It Means to Be Filled With the Spirit",
-   "pillar": "theology",
-   "redirected": false,
-   "rewritten": false,
-   "words": 2480,
-   "scholars": 1,
-   "scholarNames": [
-    "Packer"
-   ],
-   "years": 2,
-   "scripture": 4,
-   "headings": 5,
-   "forbidden": 0,
-   "cliche": 0,
-   "hedges": 0,
-   "vague": 0,
-   "fragmentRate": 0.151,
-   "firstPerK": 2.02,
-   "titleProblems": [],
-   "score": 58,
-   "verdict": "rewrite"
-  },
-  {
    "slug": "church-must-speak-housing",
    "title": "Why the Church Must Speak About Housing",
    "pillar": "prophetic-justice",
@@ -4283,31 +3674,6 @@
    "verdict": "rewrite"
   },
   {
-   "slug": "why-baptism",
-   "title": "What Baptism Is Actually For",
-   "pillar": "theology",
-   "redirected": false,
-   "rewritten": false,
-   "words": 2434,
-   "scholars": 2,
-   "scholarNames": [
-    "Luther",
-    "N. T. Wright"
-   ],
-   "years": 1,
-   "scripture": 4,
-   "headings": 6,
-   "forbidden": 0,
-   "cliche": 0,
-   "hedges": 0,
-   "vague": 0,
-   "fragmentRate": 0.142,
-   "firstPerK": 4.93,
-   "titleProblems": [],
-   "score": 59,
-   "verdict": "rewrite"
-  },
-  {
    "slug": "why-faith-uses-physical-things",
    "title": "Why Christianity Uses Bread, Water, and Wine",
    "pillar": "theology",
@@ -4352,31 +3718,6 @@
    "vague": 0,
    "fragmentRate": 0.121,
    "firstPerK": 25.5,
-   "titleProblems": [],
-   "score": 59,
-   "verdict": "rewrite"
-  },
-  {
-   "slug": "what-is-heaven-actually-like",
-   "title": "What Is Heaven Actually Like?",
-   "pillar": "theology",
-   "redirected": false,
-   "rewritten": false,
-   "words": 2491,
-   "scholars": 2,
-   "scholarNames": [
-    "Lewis",
-    "N. T. Wright"
-   ],
-   "years": 1,
-   "scripture": 4,
-   "headings": 8,
-   "forbidden": 0,
-   "cliche": 0,
-   "hedges": 0,
-   "vague": 0,
-   "fragmentRate": 0.153,
-   "firstPerK": 4.01,
    "titleProblems": [],
    "score": 59,
    "verdict": "rewrite"
@@ -4555,30 +3896,6 @@
    "verdict": "rewrite"
   },
   {
-   "slug": "a-day-of-doing-nothing",
-   "title": "Why a Day of Doing Nothing Is an Act of Defiance",
-   "pillar": "devotionals",
-   "redirected": false,
-   "rewritten": false,
-   "words": 2549,
-   "scholars": 1,
-   "scholarNames": [
-    "Brueggemann"
-   ],
-   "years": 2,
-   "scripture": 4,
-   "headings": 4,
-   "forbidden": 0,
-   "cliche": 0,
-   "hedges": 1,
-   "vague": 0,
-   "fragmentRate": 0.078,
-   "firstPerK": 4.71,
-   "titleProblems": [],
-   "score": 60,
-   "verdict": "rewrite"
-  },
-  {
    "slug": "what-went-wrong",
    "title": "What the Bible Says Actually Went Wrong With the World",
    "pillar": "theology",
@@ -4751,32 +4068,6 @@
    "verdict": "rewrite"
   },
   {
-   "slug": "what-it-means-to-bear-the-image-of-god",
-   "title": "What It Means to Bear the Image of God",
-   "pillar": "theology",
-   "redirected": false,
-   "rewritten": false,
-   "words": 1603,
-   "scholars": 3,
-   "scholarNames": [
-    "Augustine",
-    "James K.A. Smith",
-    "Nietzsche"
-   ],
-   "years": 4,
-   "scripture": 3,
-   "headings": 7,
-   "forbidden": 0,
-   "cliche": 0,
-   "hedges": 1,
-   "vague": 0,
-   "fragmentRate": 0.172,
-   "firstPerK": 5.61,
-   "titleProblems": [],
-   "score": 60,
-   "verdict": "rewrite"
-  },
-  {
    "slug": "how-to-die-well",
    "title": "How to Die Well",
    "pillar": "devotionals",
@@ -4918,55 +4209,6 @@
    "vague": 0,
    "fragmentRate": 0.175,
    "firstPerK": 9.88,
-   "titleProblems": [],
-   "score": 62,
-   "verdict": "rewrite"
-  },
-  {
-   "slug": "is-faith-irrational",
-   "title": "Is Believing Anything on Faith Irrational?",
-   "pillar": "doubt",
-   "redirected": false,
-   "rewritten": false,
-   "words": 2075,
-   "scholars": 2,
-   "scholarNames": [
-    "Hume",
-    "Dawkins"
-   ],
-   "years": 3,
-   "scripture": 5,
-   "headings": 3,
-   "forbidden": 0,
-   "cliche": 0,
-   "hedges": 0,
-   "vague": 0,
-   "fragmentRate": 0.158,
-   "firstPerK": 21.69,
-   "titleProblems": [],
-   "score": 62,
-   "verdict": "rewrite"
-  },
-  {
-   "slug": "who-is-the-holy-spirit",
-   "title": "Who Is the Holy Spirit?",
-   "pillar": "theology",
-   "redirected": false,
-   "rewritten": false,
-   "words": 2624,
-   "scholars": 1,
-   "scholarNames": [
-    "Basil"
-   ],
-   "years": 3,
-   "scripture": 4,
-   "headings": 5,
-   "forbidden": 0,
-   "cliche": 0,
-   "hedges": 0,
-   "vague": 0,
-   "fragmentRate": 0.142,
-   "firstPerK": 4.19,
    "titleProblems": [],
    "score": 62,
    "verdict": "rewrite"
@@ -5479,33 +4721,6 @@
    "verdict": "rewrite"
   },
   {
-   "slug": "prayer-when-you-do-not-feel-like-it",
-   "title": "Prayer When You Do Not Feel Like It",
-   "pillar": "devotionals",
-   "redirected": false,
-   "rewritten": false,
-   "words": 1559,
-   "scholars": 4,
-   "scholarNames": [
-    "Augustine",
-    "Peterson",
-    "Chadwick",
-    "Willard"
-   ],
-   "years": 4,
-   "scripture": 5,
-   "headings": 6,
-   "forbidden": 0,
-   "cliche": 0,
-   "hedges": 0,
-   "vague": 0,
-   "fragmentRate": 0.227,
-   "firstPerK": 10.9,
-   "titleProblems": [],
-   "score": 65,
-   "verdict": "rewrite"
-  },
-  {
    "slug": "reading-in-community",
    "title": "You Were Never Meant to Read the Bible Alone",
    "pillar": "theology",
@@ -5797,33 +5012,6 @@
    "vague": 0,
    "fragmentRate": 0.137,
    "firstPerK": 5.9,
-   "titleProblems": [],
-   "score": 68,
-   "verdict": "rewrite"
-  },
-  {
-   "slug": "your-work-was-never-going-to-save-you",
-   "title": "Your Work Was Never Going to Save You",
-   "pillar": "devotionals",
-   "redirected": false,
-   "rewritten": false,
-   "words": 2073,
-   "scholars": 4,
-   "scholarNames": [
-    "Luther",
-    "Sayers",
-    "Keller",
-    "Weber"
-   ],
-   "years": 6,
-   "scripture": 11,
-   "headings": 0,
-   "forbidden": 0,
-   "cliche": 1,
-   "hedges": 0,
-   "vague": 0,
-   "fragmentRate": 0.201,
-   "firstPerK": 8.2,
    "titleProblems": [],
    "score": 68,
    "verdict": "rewrite"
@@ -6260,33 +5448,6 @@
    "verdict": "keep-review"
   },
   {
-   "slug": "can-you-have-faith-and-doubt",
-   "title": "Can You Have Faith and Still Have Doubts?",
-   "pillar": "doubt",
-   "redirected": false,
-   "rewritten": false,
-   "words": 2044,
-   "scholars": 4,
-   "scholarNames": [
-    "Luther",
-    "Spurgeon",
-    "Newbigin",
-    "Lesslie Newbigin"
-   ],
-   "years": 5,
-   "scripture": 14,
-   "headings": 0,
-   "forbidden": 0,
-   "cliche": 0,
-   "hedges": 0,
-   "vague": 0,
-   "fragmentRate": 0.21,
-   "firstPerK": 5.87,
-   "titleProblems": [],
-   "score": 71,
-   "verdict": "keep-review"
-  },
-  {
    "slug": "why-christians-confess-out-loud",
    "title": "Why Christians Confess Their Sins Out Loud",
    "pillar": "theology",
@@ -6313,32 +5474,6 @@
    "verdict": "keep-review"
   },
   {
-   "slug": "faith-and-science",
-   "title": "Do You Have to Choose Between Faith and Science?",
-   "pillar": "doubt",
-   "redirected": false,
-   "rewritten": false,
-   "words": 2404,
-   "scholars": 3,
-   "scholarNames": [
-    "Polkinghorne",
-    "McGrath",
-    "Collins"
-   ],
-   "years": 3,
-   "scripture": 3,
-   "headings": 7,
-   "forbidden": 0,
-   "cliche": 0,
-   "hedges": 0,
-   "vague": 0,
-   "fragmentRate": 0.052,
-   "firstPerK": 14.56,
-   "titleProblems": [],
-   "score": 71,
-   "verdict": "keep-review"
-  },
-  {
    "slug": "the-first-christians-died-for-this",
    "title": "The First Christians Died for This",
    "pillar": "theology",
@@ -6360,33 +5495,6 @@
    "vague": 0,
    "fragmentRate": 0.114,
    "firstPerK": 8.68,
-   "titleProblems": [],
-   "score": 71,
-   "verdict": "keep-review"
-  },
-  {
-   "slug": "is-your-job-just-a-paycheck",
-   "title": "Is Your Job Just a Paycheck, or Something More?",
-   "pillar": "devotionals",
-   "redirected": false,
-   "rewritten": false,
-   "words": 2507,
-   "scholars": 4,
-   "scholarNames": [
-    "Luther",
-    "Sayers",
-    "Keller",
-    "Bellah"
-   ],
-   "years": 3,
-   "scripture": 3,
-   "headings": 6,
-   "forbidden": 0,
-   "cliche": 0,
-   "hedges": 0,
-   "vague": 0,
-   "fragmentRate": 0.135,
-   "firstPerK": 1.99,
    "titleProblems": [],
    "score": 71,
    "verdict": "keep-review"
@@ -6495,37 +5603,6 @@
    "vague": 0,
    "fragmentRate": 0.209,
    "firstPerK": 18.61,
-   "titleProblems": [],
-   "score": 71,
-   "verdict": "keep-review"
-  },
-  {
-   "slug": "christianity-after-christendom",
-   "title": "Christianity After Christendom",
-   "pillar": "devotionals",
-   "redirected": false,
-   "rewritten": false,
-   "words": 2494,
-   "scholars": 9,
-   "scholarNames": [
-    "Bonhoeffer",
-    "Newbigin",
-    "Charles Taylor",
-    "Taylor",
-    "Stark",
-    "Rodney Stark",
-    "Berger",
-    "Lesslie Newbigin"
-   ],
-   "years": 7,
-   "scripture": 0,
-   "headings": 0,
-   "forbidden": 0,
-   "cliche": 0,
-   "hedges": 4,
-   "vague": 0,
-   "fragmentRate": 0.079,
-   "firstPerK": 1.2,
    "titleProblems": [],
    "score": 71,
    "verdict": "keep-review"
@@ -7106,33 +6183,6 @@
    "verdict": "keep-review"
   },
   {
-   "slug": "christendom-is-ending",
-   "title": "What the End of Christian America Actually Means",
-   "pillar": "after-christendom",
-   "redirected": false,
-   "rewritten": false,
-   "words": 2572,
-   "scholars": 4,
-   "scholarNames": [
-    "Charles Taylor",
-    "Taylor",
-    "Kreider",
-    "Tom Holland"
-   ],
-   "years": 6,
-   "scripture": 3,
-   "headings": 4,
-   "forbidden": 0,
-   "cliche": 0,
-   "hedges": 1,
-   "vague": 0,
-   "fragmentRate": 0.175,
-   "firstPerK": 4.67,
-   "titleProblems": [],
-   "score": 75,
-   "verdict": "keep-review"
-  },
-  {
    "slug": "the-numbers-behind-the-decline",
    "title": "Is the Church Really Dying? What the Numbers Say",
    "pillar": "after-christendom",
@@ -7351,33 +6401,6 @@
    "verdict": "keep-review"
   },
   {
-   "slug": "the-problem-with-certainty",
-   "title": "The Problem with Certainty",
-   "pillar": "theology",
-   "redirected": false,
-   "rewritten": false,
-   "words": 1984,
-   "scholars": 4,
-   "scholarNames": [
-    "Aquinas",
-    "Luther",
-    "Calvin",
-    "Kierkegaard"
-   ],
-   "years": 3,
-   "scripture": 5,
-   "headings": 0,
-   "forbidden": 0,
-   "cliche": 0,
-   "hedges": 0,
-   "vague": 0,
-   "fragmentRate": 0.106,
-   "firstPerK": 9.58,
-   "titleProblems": [],
-   "score": 75,
-   "verdict": "keep-review"
-  },
-  {
    "slug": "what-happens-at-communion",
    "title": "What Actually Happens at Communion?",
    "pillar": "theology",
@@ -7487,37 +6510,6 @@
    "verdict": "keep-review"
   },
   {
-   "slug": "the-death-of-christendom",
-   "title": "The Death of Christendom",
-   "pillar": "american-church",
-   "redirected": false,
-   "rewritten": false,
-   "words": 3305,
-   "scholars": 8,
-   "scholarNames": [
-    "Tertullian",
-    "Bonhoeffer",
-    "Hauerwas",
-    "Charles Taylor",
-    "Taylor",
-    "Dietrich Bonhoeffer",
-    "Stanley Hauerwas",
-    "Dante"
-   ],
-   "years": 13,
-   "scripture": 1,
-   "headings": 0,
-   "forbidden": 2,
-   "cliche": 0,
-   "hedges": 3,
-   "vague": 0,
-   "fragmentRate": 0.101,
-   "firstPerK": 1.21,
-   "titleProblems": [],
-   "score": 76,
-   "verdict": "keep-review"
-  },
-  {
    "slug": "calvinism-and-arminianism",
    "title": "What Calvinism and Arminianism Actually Argue About",
    "pillar": "theology",
@@ -7567,37 +6559,6 @@
    "firstPerK": 1.21,
    "titleProblems": [],
    "score": 76,
-   "verdict": "keep-review"
-  },
-  {
-   "slug": "black-church-prophetic-justice",
-   "title": "The Black Church and Prophetic Justice",
-   "pillar": "prophetic-justice",
-   "redirected": false,
-   "rewritten": false,
-   "words": 2011,
-   "scholars": 8,
-   "scholarNames": [
-    "Augustine",
-    "Aquinas",
-    "Ambrose",
-    "Luther",
-    "Martin Luther King",
-    "King Jr",
-    "Howard Thurman",
-    "Cone"
-   ],
-   "years": 10,
-   "scripture": 1,
-   "headings": 5,
-   "forbidden": 0,
-   "cliche": 0,
-   "hedges": 0,
-   "vague": 0,
-   "fragmentRate": 0.156,
-   "firstPerK": 2.49,
-   "titleProblems": [],
-   "score": 77,
    "verdict": "keep-review"
   },
   {
@@ -7827,37 +6788,6 @@
    "verdict": "keep-review"
   },
   {
-   "slug": "how-to-read-the-bible-without-making-it-say-what-you-want",
-   "title": "How to Read the Bible Without Making It Say What You Want",
-   "pillar": "theology",
-   "redirected": false,
-   "rewritten": false,
-   "words": 2816,
-   "scholars": 8,
-   "scholarNames": [
-    "Augustine",
-    "Bonhoeffer",
-    "Noll",
-    "Charles Taylor",
-    "Taylor",
-    "James K.A. Smith",
-    "Dietrich Bonhoeffer",
-    "Mark Noll"
-   ],
-   "years": 9,
-   "scripture": 1,
-   "headings": 7,
-   "forbidden": 0,
-   "cliche": 0,
-   "hedges": 0,
-   "vague": 0,
-   "fragmentRate": 0.253,
-   "firstPerK": 12.78,
-   "titleProblems": [],
-   "score": 78,
-   "verdict": "keep-review"
-  },
-  {
    "slug": "inerrancy-infallibility-and-the-word-you-can-trust",
    "title": "Inerrancy, Infallibility, and the Word You Can Trust",
    "pillar": "theology",
@@ -7912,36 +6842,6 @@
    "titleProblems": [],
    "score": 78,
    "verdict": "keep-review"
-  },
-  {
-   "slug": "the-black-church-in-america",
-   "title": "The Black Church: The Most Important Institution in American Christianity",
-   "pillar": "prophetic-justice",
-   "redirected": false,
-   "rewritten": false,
-   "words": 2836,
-   "scholars": 5,
-   "scholarNames": [
-    "Luther",
-    "Lewis",
-    "Martin Luther King",
-    "King Jr",
-    "Cone"
-   ],
-   "years": 15,
-   "scripture": 1,
-   "headings": 0,
-   "forbidden": 0,
-   "cliche": 0,
-   "hedges": 2,
-   "vague": 0,
-   "fragmentRate": 0.076,
-   "firstPerK": 0.35,
-   "titleProblems": [
-    "long"
-   ],
-   "score": 78,
-   "verdict": "rewrite"
   },
   {
    "slug": "guide-to-every-major-denomination",
@@ -8023,62 +6923,6 @@
    "vague": 0,
    "fragmentRate": 0.074,
    "firstPerK": 6.32,
-   "titleProblems": [],
-   "score": 79,
-   "verdict": "keep-review"
-  },
-  {
-   "slug": "holy-spirit-not-feeling",
-   "title": "Holy Spirit Not Feeling",
-   "pillar": "theology",
-   "redirected": true,
-   "rewritten": false,
-   "words": 1740,
-   "scholars": 6,
-   "scholarNames": [
-    "Bernard of Clairvaux",
-    "Julian of Norwich",
-    "Calvin",
-    "Wesley",
-    "Jonathan Edwards",
-    "Lewis"
-   ],
-   "years": 6,
-   "scripture": 9,
-   "headings": 4,
-   "forbidden": 0,
-   "cliche": 0,
-   "hedges": 1,
-   "vague": 0,
-   "fragmentRate": 0.145,
-   "firstPerK": 4.6,
-   "titleProblems": [],
-   "score": 79,
-   "verdict": "keep-review"
-  },
-  {
-   "slug": "building-the-multiethnic-church",
-   "title": "Building the Multiethnic Church Without Faking It",
-   "pillar": "prophetic-justice",
-   "redirected": false,
-   "rewritten": false,
-   "words": 2395,
-   "scholars": 4,
-   "scholarNames": [
-    "Luther",
-    "Christian Smith",
-    "Martin Luther King",
-    "King Jr"
-   ],
-   "years": 11,
-   "scripture": 6,
-   "headings": 7,
-   "forbidden": 0,
-   "cliche": 0,
-   "hedges": 0,
-   "vague": 0,
-   "fragmentRate": 0.146,
-   "firstPerK": 2.09,
    "titleProblems": [],
    "score": 79,
    "verdict": "keep-review"
@@ -8255,34 +7099,6 @@
    "verdict": "keep-review"
   },
   {
-   "slug": "what-the-bible-actually-says-about-money-and-wealth",
-   "title": "What the Bible Actually Says About Money",
-   "pillar": "prophetic-justice",
-   "redirected": false,
-   "rewritten": false,
-   "words": 2893,
-   "scholars": 5,
-   "scholarNames": [
-    "Chrysostom",
-    "Calvin",
-    "Charles Taylor",
-    "Taylor",
-    "Wendell Berry"
-   ],
-   "years": 6,
-   "scripture": 5,
-   "headings": 6,
-   "forbidden": 0,
-   "cliche": 0,
-   "hedges": 0,
-   "vague": 0,
-   "fragmentRate": 0.225,
-   "firstPerK": 6.22,
-   "titleProblems": [],
-   "score": 81,
-   "verdict": "keep-review"
-  },
-  {
    "slug": "the-most-segregated-hour",
    "title": "The Most Segregated Hour: Why Sunday Morning Is Still Divided",
    "pillar": "prophetic-justice",
@@ -8307,34 +7123,6 @@
    "vague": 0,
    "fragmentRate": 0.229,
    "firstPerK": 3.59,
-   "titleProblems": [],
-   "score": 81,
-   "verdict": "keep-review"
-  },
-  {
-   "slug": "what-is-biblical-justice-mishpat-and-tsedaqah",
-   "title": "What Is Biblical Justice? Mishpat and Tsedaqah",
-   "pillar": "prophetic-justice",
-   "redirected": false,
-   "rewritten": false,
-   "words": 2831,
-   "scholars": 5,
-   "scholarNames": [
-    "Augustine",
-    "Plantinga",
-    "Keller",
-    "Oliver O'Donovan",
-    "O'Donovan"
-   ],
-   "years": 5,
-   "scripture": 7,
-   "headings": 8,
-   "forbidden": 0,
-   "cliche": 0,
-   "hedges": 0,
-   "vague": 0,
-   "fragmentRate": 0.21,
-   "firstPerK": 7.42,
    "titleProblems": [],
    "score": 81,
    "verdict": "keep-review"
@@ -8421,37 +7209,6 @@
    "vague": 0,
    "fragmentRate": 0.079,
    "firstPerK": 0.38,
-   "titleProblems": [],
-   "score": 81,
-   "verdict": "keep-review"
-  },
-  {
-   "slug": "science-and-faith-are-not-at-war",
-   "title": "Science and Faith Are Not at War",
-   "pillar": "theology",
-   "redirected": false,
-   "rewritten": false,
-   "words": 2242,
-   "scholars": 9,
-   "scholarNames": [
-    "Warfield",
-    "Whitehead",
-    "Dawkins",
-    "Hitchens",
-    "Sam Harris",
-    "Dennett",
-    "Wilberforce",
-    "Polkinghorne"
-   ],
-   "years": 13,
-   "scripture": 0,
-   "headings": 0,
-   "forbidden": 0,
-   "cliche": 0,
-   "hedges": 0,
-   "vague": 0,
-   "fragmentRate": 0.086,
-   "firstPerK": 2.23,
    "titleProblems": [],
    "score": 81,
    "verdict": "keep-review"
@@ -8891,36 +7648,6 @@
    "verdict": "keep-review"
   },
   {
-   "slug": "the-spirituality-of-doubt",
-   "title": "The Spirituality of Doubt",
-   "pillar": "devotionals",
-   "redirected": false,
-   "rewritten": false,
-   "words": 2090,
-   "scholars": 7,
-   "scholarNames": [
-    "Augustine",
-    "Aquinas",
-    "Luther",
-    "Barth",
-    "Tillich",
-    "Newbigin",
-    "Lesslie Newbigin"
-   ],
-   "years": 4,
-   "scripture": 7,
-   "headings": 0,
-   "forbidden": 0,
-   "cliche": 0,
-   "hedges": 0,
-   "vague": 0,
-   "fragmentRate": 0.091,
-   "firstPerK": 13.88,
-   "titleProblems": [],
-   "score": 87,
-   "verdict": "keep-review"
-  },
-  {
    "slug": "discipline-without-domination",
    "title": "How to Discipline a Child Biblically, Without Anger",
    "pillar": "parenting",
@@ -8945,34 +7672,6 @@
    "titleProblems": [],
    "score": 88,
    "verdict": "rewritten"
-  },
-  {
-   "slug": "what-is-the-kingdom-of-god-and-why-it-changes-everything",
-   "title": "What Is the Kingdom of God",
-   "pillar": "theology",
-   "redirected": false,
-   "rewritten": false,
-   "words": 3084,
-   "scholars": 5,
-   "scholarNames": [
-    "Augustine",
-    "Newbigin",
-    "Brueggemann",
-    "N.T. Wright",
-    "Lesslie Newbigin"
-   ],
-   "years": 7,
-   "scripture": 12,
-   "headings": 7,
-   "forbidden": 0,
-   "cliche": 0,
-   "hedges": 0,
-   "vague": 0,
-   "fragmentRate": 0.19,
-   "firstPerK": 2.59,
-   "titleProblems": [],
-   "score": 88,
-   "verdict": "keep-review"
   },
   {
    "slug": "prosperity-gospel-is-not-the-gospel",
@@ -9422,6 +8121,33 @@
    "vague": 0,
    "fragmentRate": 0.08,
    "firstPerK": 1.81,
+   "titleProblems": [],
+   "score": 92,
+   "verdict": "rewritten"
+  },
+  {
+   "slug": "building-the-multiethnic-church",
+   "title": "Why Are Churches So Segregated? Building a Multiethnic Church",
+   "pillar": "prophetic-justice",
+   "redirected": false,
+   "rewritten": true,
+   "words": 4470,
+   "scholars": 4,
+   "scholarNames": [
+    "Luther",
+    "Stott",
+    "Martin Luther King",
+    "King Jr"
+   ],
+   "years": 17,
+   "scripture": 16,
+   "headings": 6,
+   "forbidden": 0,
+   "cliche": 0,
+   "hedges": 0,
+   "vague": 0,
+   "fragmentRate": 0.053,
+   "firstPerK": 1.34,
    "titleProblems": [],
    "score": 92,
    "verdict": "rewritten"
@@ -9981,6 +8707,37 @@
    "verdict": "keep-review"
   },
   {
+   "slug": "christendom-is-ending",
+   "title": "What Is Christendom, and What Comes After It?",
+   "pillar": "after-christendom",
+   "redirected": false,
+   "rewritten": true,
+   "words": 4814,
+   "scholars": 17,
+   "scholarNames": [
+    "Augustine",
+    "Basil",
+    "Ambrose",
+    "Bonhoeffer",
+    "Newbigin",
+    "Hauerwas",
+    "Willimon",
+    "Charles Taylor"
+   ],
+   "years": 55,
+   "scripture": 9,
+   "headings": 7,
+   "forbidden": 0,
+   "cliche": 0,
+   "hedges": 1,
+   "vague": 0,
+   "fragmentRate": 0.075,
+   "firstPerK": 2.08,
+   "titleProblems": [],
+   "score": 97,
+   "verdict": "rewritten"
+  },
+  {
    "slug": "exile-is-not-the-end",
    "title": "Are Christians Exiles? Jeremiah 29 and the Welfare of the City",
    "pillar": "after-christendom",
@@ -10224,6 +8981,37 @@
    "verdict": "rewritten"
   },
   {
+   "slug": "what-is-vocation-work-as-calling",
+   "title": "What Is Vocation? A Christian View of Work and Calling",
+   "pillar": "devotionals",
+   "redirected": false,
+   "rewritten": true,
+   "words": 4692,
+   "scholars": 12,
+   "scholarNames": [
+    "Aquinas",
+    "Benedict",
+    "Luther",
+    "Sayers",
+    "Newbigin",
+    "Volf",
+    "Keller",
+    "Bellah"
+   ],
+   "years": 20,
+   "scripture": 30,
+   "headings": 6,
+   "forbidden": 0,
+   "cliche": 1,
+   "hedges": 0,
+   "vague": 0,
+   "fragmentRate": 0.039,
+   "firstPerK": 5.97,
+   "titleProblems": [],
+   "score": 97,
+   "verdict": "rewritten"
+  },
+  {
    "slug": "the-end-of-home-field-advantage",
    "title": "The End of Home-Field Advantage",
    "pillar": "devotionals",
@@ -10375,6 +9163,35 @@
    "verdict": "rewritten"
   },
   {
+   "slug": "can-you-have-faith-and-doubt",
+   "title": "Can You Have Faith and Doubt at the Same Time?",
+   "pillar": "doubt",
+   "redirected": false,
+   "rewritten": true,
+   "words": 4560,
+   "scholars": 6,
+   "scholarNames": [
+    "Luther",
+    "Calvin",
+    "Lewis",
+    "Newbigin",
+    "Keller",
+    "Lesslie Newbigin"
+   ],
+   "years": 18,
+   "scripture": 34,
+   "headings": 6,
+   "forbidden": 0,
+   "cliche": 0,
+   "hedges": 0,
+   "vague": 0,
+   "fragmentRate": 0.055,
+   "firstPerK": 8.99,
+   "titleProblems": [],
+   "score": 100,
+   "verdict": "rewritten"
+  },
+  {
    "slug": "the-faith-once-delivered",
    "title": "What Is Historic Christianity? The Faith Older Than America",
    "pillar": "theology",
@@ -10430,6 +9247,37 @@
    "vague": 0,
    "fragmentRate": 0.074,
    "firstPerK": 3.56,
+   "titleProblems": [],
+   "score": 100,
+   "verdict": "rewritten"
+  },
+  {
+   "slug": "why-baptism",
+   "title": "What Is Baptism and Why Does It Matter? Infant vs. Believer's",
+   "pillar": "theology",
+   "redirected": false,
+   "rewritten": true,
+   "words": 4689,
+   "scholars": 10,
+   "scholarNames": [
+    "Augustine",
+    "Aquinas",
+    "Tertullian",
+    "Cyprian",
+    "Ambrose",
+    "Luther",
+    "Calvin",
+    "Zwingli"
+   ],
+   "years": 31,
+   "scripture": 24,
+   "headings": 6,
+   "forbidden": 0,
+   "cliche": 0,
+   "hedges": 0,
+   "vague": 0,
+   "fragmentRate": 0.048,
+   "firstPerK": 1.49,
    "titleProblems": [],
    "score": 100,
    "verdict": "rewritten"
@@ -10557,6 +9405,37 @@
    "verdict": "rewritten"
   },
   {
+   "slug": "faith-and-science",
+   "title": "Does Science Disprove God? The History of Faith and Science",
+   "pillar": "doubt",
+   "redirected": false,
+   "rewritten": true,
+   "words": 4575,
+   "scholars": 14,
+   "scholarNames": [
+    "Augustine",
+    "Aquinas",
+    "Calvin",
+    "Warfield",
+    "Hodge",
+    "Noll",
+    "Whitehead",
+    "Hunter"
+   ],
+   "years": 43,
+   "scripture": 16,
+   "headings": 7,
+   "forbidden": 0,
+   "cliche": 0,
+   "hedges": 0,
+   "vague": 0,
+   "fragmentRate": 0.067,
+   "firstPerK": 4.81,
+   "titleProblems": [],
+   "score": 100,
+   "verdict": "rewritten"
+  },
+  {
    "slug": "if-god-is-good-why-suffering",
    "title": "If God Is Good, Why Is There Suffering? An Honest Answer",
    "pillar": "doubt",
@@ -10583,6 +9462,37 @@
    "vague": 0,
    "fragmentRate": 0.067,
    "firstPerK": 6.66,
+   "titleProblems": [],
+   "score": 100,
+   "verdict": "rewritten"
+  },
+  {
+   "slug": "is-faith-irrational",
+   "title": "Is Faith Irrational? Faith, Reason and Evidence",
+   "pillar": "doubt",
+   "redirected": false,
+   "rewritten": true,
+   "words": 4686,
+   "scholars": 14,
+   "scholarNames": [
+    "Augustine",
+    "Aquinas",
+    "Anselm",
+    "Luther",
+    "Calvin",
+    "Wolterstorff",
+    "Plantinga",
+    "Noll"
+   ],
+   "years": 27,
+   "scripture": 15,
+   "headings": 7,
+   "forbidden": 0,
+   "cliche": 0,
+   "hedges": 0,
+   "vague": 0,
+   "fragmentRate": 0.045,
+   "firstPerK": 7.68,
    "titleProblems": [],
    "score": 100,
    "verdict": "rewritten"
@@ -10645,6 +9555,130 @@
    "vague": 0,
    "fragmentRate": 0.093,
    "firstPerK": 2.31,
+   "titleProblems": [],
+   "score": 100,
+   "verdict": "rewritten"
+  },
+  {
+   "slug": "how-do-you-actually-pray",
+   "title": "How to Pray: The Lord's Prayer and Praying When You Don't Feel It",
+   "pillar": "devotionals",
+   "redirected": false,
+   "rewritten": true,
+   "words": 4502,
+   "scholars": 17,
+   "scholarNames": [
+    "Augustine",
+    "Tertullian",
+    "Origen",
+    "Cyprian",
+    "Benedict",
+    "Luther",
+    "Cranmer",
+    "Bonhoeffer"
+   ],
+   "years": 24,
+   "scripture": 35,
+   "headings": 6,
+   "forbidden": 0,
+   "cliche": 0,
+   "hedges": 0,
+   "vague": 0,
+   "fragmentRate": 0.078,
+   "firstPerK": 10.44,
+   "titleProblems": [],
+   "score": 100,
+   "verdict": "rewritten"
+  },
+  {
+   "slug": "what-the-bible-says-about-spiritual-gifts",
+   "title": "What Are the Spiritual Gifts? Cessationism vs. Continuationism",
+   "pillar": "theology",
+   "redirected": false,
+   "rewritten": true,
+   "words": 4539,
+   "scholars": 10,
+   "scholarNames": [
+    "Augustine",
+    "Irenaeus",
+    "Chrysostom",
+    "Justin Martyr",
+    "Calvin",
+    "Warfield",
+    "Hume",
+    "Craig"
+   ],
+   "years": 17,
+   "scripture": 25,
+   "headings": 6,
+   "forbidden": 0,
+   "cliche": 0,
+   "hedges": 0,
+   "vague": 0,
+   "fragmentRate": 0.08,
+   "firstPerK": 5.73,
+   "titleProblems": [],
+   "score": 100,
+   "verdict": "rewritten"
+  },
+  {
+   "slug": "who-is-the-holy-spirit",
+   "title": "Who Is the Holy Spirit and What Does He Do?",
+   "pillar": "theology",
+   "redirected": false,
+   "rewritten": true,
+   "words": 4614,
+   "scholars": 12,
+   "scholarNames": [
+    "Augustine",
+    "Basil",
+    "Gregory of Nazianzus",
+    "Benedict",
+    "Calvin",
+    "Wesley",
+    "Jonathan Edwards",
+    "Warfield"
+   ],
+   "years": 27,
+   "scripture": 48,
+   "headings": 6,
+   "forbidden": 0,
+   "cliche": 0,
+   "hedges": 0,
+   "vague": 0,
+   "fragmentRate": 0.112,
+   "firstPerK": 5.42,
+   "titleProblems": [],
+   "score": 100,
+   "verdict": "rewritten"
+  },
+  {
+   "slug": "what-is-heaven-actually-like",
+   "title": "What Is Heaven Actually Like? What the Bible Says",
+   "pillar": "theology",
+   "redirected": false,
+   "rewritten": true,
+   "words": 4227,
+   "scholars": 12,
+   "scholarNames": [
+    "Augustine",
+    "Aquinas",
+    "Irenaeus",
+    "Origen",
+    "Gregory of Nyssa",
+    "Benedict",
+    "Calvin",
+    "Tyndale"
+   ],
+   "years": 19,
+   "scripture": 14,
+   "headings": 6,
+   "forbidden": 0,
+   "cliche": 0,
+   "hedges": 0,
+   "vague": 0,
+   "fragmentRate": 0.086,
+   "firstPerK": 1.18,
    "titleProblems": [],
    "score": 100,
    "verdict": "rewritten"
@@ -10803,6 +9837,66 @@
    "verdict": "rewritten"
   },
   {
+   "slug": "what-is-the-kingdom-of-god-and-why-it-changes-everything",
+   "title": "What Is the Kingdom of God? What Jesus Meant by It",
+   "pillar": "theology",
+   "redirected": false,
+   "rewritten": true,
+   "words": 4562,
+   "scholars": 6,
+   "scholarNames": [
+    "Niebuhr",
+    "Lewis",
+    "Newbigin",
+    "N. T. Wright",
+    "Lesslie Newbigin",
+    "Craig"
+   ],
+   "years": 28,
+   "scripture": 37,
+   "headings": 6,
+   "forbidden": 0,
+   "cliche": 0,
+   "hedges": 0,
+   "vague": 0,
+   "fragmentRate": 0.087,
+   "firstPerK": 4.6,
+   "titleProblems": [],
+   "score": 100,
+   "verdict": "rewritten"
+  },
+  {
+   "slug": "what-it-means-to-bear-the-image-of-god",
+   "title": "What Does It Mean to Be Made in the Image of God?",
+   "pillar": "theology",
+   "redirected": false,
+   "rewritten": true,
+   "words": 4094,
+   "scholars": 8,
+   "scholarNames": [
+    "Aquinas",
+    "Irenaeus",
+    "Gregory of Nyssa",
+    "Calvin",
+    "Bonhoeffer",
+    "Barth",
+    "Nietzsche",
+    "Dietrich Bonhoeffer"
+   ],
+   "years": 17,
+   "scripture": 15,
+   "headings": 6,
+   "forbidden": 0,
+   "cliche": 0,
+   "hedges": 0,
+   "vague": 0,
+   "fragmentRate": 0.078,
+   "firstPerK": 1.71,
+   "titleProblems": [],
+   "score": 100,
+   "verdict": "rewritten"
+  },
+  {
    "slug": "how-the-religious-right-was-built",
    "title": "History of the Religious Right: How Evangelicals Became Political",
    "pillar": "american-church",
@@ -10951,6 +10045,67 @@
    "vague": 0,
    "fragmentRate": 0.105,
    "firstPerK": 10.01,
+   "titleProblems": [],
+   "score": 100,
+   "verdict": "rewritten"
+  },
+  {
+   "slug": "how-to-read-the-bible-without-making-it-say-what-you-want",
+   "title": "How to Read the Bible in Context, and Let It Read You",
+   "pillar": "theology",
+   "redirected": false,
+   "rewritten": true,
+   "words": 4501,
+   "scholars": 10,
+   "scholarNames": [
+    "Augustine",
+    "Aquinas",
+    "Origen",
+    "Luther",
+    "Calvin",
+    "Tyndale",
+    "Peterson",
+    "Noll"
+   ],
+   "years": 21,
+   "scripture": 29,
+   "headings": 6,
+   "forbidden": 0,
+   "cliche": 0,
+   "hedges": 0,
+   "vague": 0,
+   "fragmentRate": 0.046,
+   "firstPerK": 8,
+   "titleProblems": [],
+   "score": 100,
+   "verdict": "rewritten"
+  },
+  {
+   "slug": "what-the-bible-actually-says-about-money-and-wealth",
+   "title": "What Does the Bible Say About Money and Wealth?",
+   "pillar": "prophetic-justice",
+   "redirected": false,
+   "rewritten": true,
+   "words": 4689,
+   "scholars": 7,
+   "scholarNames": [
+    "Aquinas",
+    "Irenaeus",
+    "Chrysostom",
+    "Basil",
+    "Wesley",
+    "Weber",
+    "Craig"
+   ],
+   "years": 19,
+   "scripture": 47,
+   "headings": 7,
+   "forbidden": 0,
+   "cliche": 0,
+   "hedges": 0,
+   "vague": 0,
+   "fragmentRate": 0.081,
+   "firstPerK": 5.54,
    "titleProblems": [],
    "score": 100,
    "verdict": "rewritten"
@@ -11162,6 +10317,37 @@
    "vague": 0,
    "fragmentRate": 0.076,
    "firstPerK": 6.15,
+   "titleProblems": [],
+   "score": 100,
+   "verdict": "rewritten"
+  },
+  {
+   "slug": "the-black-church-in-america",
+   "title": "The History of the Black Church in America and Why It Matters",
+   "pillar": "prophetic-justice",
+   "redirected": false,
+   "rewritten": true,
+   "words": 4495,
+   "scholars": 11,
+   "scholarNames": [
+    "Augustine",
+    "Aquinas",
+    "Ambrose",
+    "Luther",
+    "Wesley",
+    "Niebuhr",
+    "Martin Luther King",
+    "King Jr"
+   ],
+   "years": 47,
+   "scripture": 12,
+   "headings": 7,
+   "forbidden": 0,
+   "cliche": 0,
+   "hedges": 0,
+   "vague": 0,
+   "fragmentRate": 0.071,
+   "firstPerK": 3.11,
    "titleProblems": [],
    "score": 100,
    "verdict": "rewritten"
@@ -11384,24 +10570,14 @@
  ],
  "pairs": [
   {
-   "a": "the-death-of-christendom",
-   "b": "christianity-after-christendom",
-   "cos": 0.751
-  },
-  {
-   "a": "what-does-the-holy-spirit-do",
-   "b": "who-is-the-holy-spirit",
-   "cos": 0.745
-  },
-  {
    "a": "can-you-be-a-christian-alone",
    "b": "how-to-find-a-church-worth-joining",
    "cos": 0.736
   },
   {
-   "a": "how-to-find-a-church-worth-joining",
-   "b": "finding-a-good-church",
-   "cos": 0.727
+   "a": "protecting-your-marriage-from-work",
+   "b": "what-is-vocation-work-as-calling",
+   "cos": 0.728
   },
   {
    "a": "can-you-be-a-christian-alone",
@@ -11419,14 +10595,9 @@
    "cos": 0.702
   },
   {
-   "a": "imago-dei-means",
-   "b": "what-it-means-to-bear-the-image-of-god",
-   "cos": 0.696
-  },
-  {
-   "a": "is-faith-irrational",
-   "b": "apologetics-isnt-faith-believing-without-evidence",
-   "cos": 0.687
+   "a": "how-to-find-a-church-worth-joining",
+   "b": "building-the-multiethnic-church",
+   "cos": 0.691
   },
   {
    "a": "exodus-demands-church-today",
@@ -11444,29 +10615,9 @@
    "cos": 0.683
   },
   {
-   "a": "is-your-job-just-a-paycheck",
-   "b": "your-work-was-never-going-to-save-you",
-   "cos": 0.676
-  },
-  {
-   "a": "is-your-job-just-a-paycheck",
-   "b": "what-is-vocation-work-as-calling",
-   "cos": 0.675
-  },
-  {
    "a": "when-the-pulpit-became-a-precinct",
    "b": "how-to-find-a-church-worth-joining",
    "cos": 0.672
-  },
-  {
-   "a": "a-day-of-doing-nothing",
-   "b": "what-the-sabbath-is-and-why-you-need-it",
-   "cos": 0.669
-  },
-  {
-   "a": "black-church-prophetic-justice",
-   "b": "the-black-church-in-america",
-   "cos": 0.669
   },
   {
    "a": "the-monster-in-the-mirror",
@@ -11474,49 +10625,19 @@
    "cos": 0.668
   },
   {
-   "a": "reading-the-bible-slowly",
-   "b": "how-to-read-the-bible-devotionally",
-   "cos": 0.666
-  },
-  {
-   "a": "faith-and-science",
-   "b": "science-and-faith-are-not-at-war",
-   "cos": 0.664
-  },
-  {
-   "a": "the-problem-with-certainty",
-   "b": "the-spirituality-of-doubt",
-   "cos": 0.664
-  },
-  {
-   "a": "imago-dei-means-more",
-   "b": "imago-dei-means",
-   "cos": 0.662
-  },
-  {
    "a": "church-wage-theft",
    "b": "theology-fair-wages",
    "cos": 0.661
   },
   {
-   "a": "why-the-incarnation-matters",
-   "b": "fully-god-fully-human",
-   "cos": 0.66
-  },
-  {
-   "a": "is-your-job-just-a-paycheck",
-   "b": "protecting-your-marriage-from-work",
+   "a": "how-do-you-actually-pray",
+   "b": "praying-the-words-when-you-have-none",
    "cos": 0.66
   },
   {
    "a": "religious-trauma-is-real",
    "b": "sexual-abuse-crisis-in-the-church",
    "cos": 0.658
-  },
-  {
-   "a": "christendom-is-ending",
-   "b": "the-death-of-christendom",
-   "cos": 0.657
   },
   {
    "a": "how-to-find-a-church-worth-joining",
@@ -11530,11 +10651,6 @@
   },
   {
    "a": "how-to-find-a-church-worth-joining",
-   "b": "building-the-multiethnic-church",
-   "cos": 0.652
-  },
-  {
-   "a": "how-to-find-a-church-worth-joining",
    "b": "why-people-are-leaving-the-church",
    "cos": 0.652
   },
@@ -11544,24 +10660,14 @@
    "cos": 0.65
   },
   {
-   "a": "what-does-the-holy-spirit-do",
-   "b": "holy-spirit-not-feeling",
-   "cos": 0.647
+   "a": "can-you-be-a-christian-alone",
+   "b": "building-the-multiethnic-church",
+   "cos": 0.646
   },
   {
    "a": "when-the-church-is-what-hurt-you",
    "b": "religious-trauma-is-real",
    "cos": 0.645
-  },
-  {
-   "a": "poor-not-ministry-category",
-   "b": "poor-not-ministry",
-   "cos": 0.645
-  },
-  {
-   "a": "how-do-you-actually-pray",
-   "b": "the-only-prayer-jesus-taught",
-   "cos": 0.644
   },
   {
    "a": "the-slow-drift-that-ends-marriages",
@@ -11579,28 +10685,13 @@
    "cos": 0.64
   },
   {
-   "a": "how-the-story-ends",
-   "b": "what-is-heaven-actually-like",
-   "cos": 0.64
-  },
-  {
-   "a": "white-churches-diversity-wrong",
-   "b": "white-churches-diversity",
-   "cos": 0.64
-  },
-  {
-   "a": "christendom-is-ending",
-   "b": "christianity-after-christendom",
-   "cos": 0.637
-  },
-  {
-   "a": "why-young-adults-arent-coming-back",
-   "b": "finding-a-good-church",
+   "a": "building-the-multiethnic-church",
+   "b": "the-black-church-in-america",
    "cos": 0.636
   },
   {
-   "a": "cessationism-or-continuation",
-   "b": "what-the-bible-says-about-spiritual-gifts",
+   "a": "praying-at-fixed-hours",
+   "b": "how-do-you-actually-pray",
    "cos": 0.635
   },
   {
@@ -11619,34 +10710,9 @@
    "cos": 0.634
   },
   {
-   "a": "protecting-your-marriage-from-work",
-   "b": "your-work-was-never-going-to-save-you",
-   "cos": 0.634
-  },
-  {
-   "a": "praying-when-you-dont-feel-it",
-   "b": "prayer-when-you-do-not-feel-like-it",
-   "cos": 0.632
-  },
-  {
-   "a": "kingdom-of-god-not-what-you-think",
-   "b": "what-is-the-kingdom-of-god-and-why-it-changes-everything",
-   "cos": 0.631
-  },
-  {
-   "a": "being-filled-with-the-spirit",
-   "b": "what-does-the-holy-spirit-do",
-   "cos": 0.629
-  },
-  {
-   "a": "why-baptism",
-   "b": "baptism-mode-and-subjects",
-   "cos": 0.628
-  },
-  {
-   "a": "mishpat-tsedaqah",
-   "b": "what-is-biblical-justice-mishpat-and-tsedaqah",
-   "cos": 0.628
+   "a": "why-there-are-so-many-christian-denominations",
+   "b": "building-the-multiethnic-church",
+   "cos": 0.63
   },
   {
    "a": "how-to-find-a-church-worth-joining",
@@ -11659,9 +10725,9 @@
    "cos": 0.626
   },
   {
-   "a": "how-to-read-the-bible-without-making-it-say-what-you-want",
-   "b": "how-to-read-the-bible-devotionally",
-   "cos": 0.625
+   "a": "when-the-church-is-what-hurt-you",
+   "b": "building-the-multiethnic-church",
+   "cos": 0.626
   },
   {
    "a": "when-the-pulpit-became-a-precinct",
@@ -11681,11 +10747,6 @@
   {
    "a": "the-weight-of-what-you-model",
    "b": "parenting-letting-them-fail",
-   "cos": 0.622
-  },
-  {
-   "a": "what-the-bible-says-about-money",
-   "b": "what-the-bible-actually-says-about-money-and-wealth",
    "cos": 0.622
   },
   {

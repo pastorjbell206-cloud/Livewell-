@@ -1415,6 +1415,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/apologetics-what-about-those-who-never-heard",
+            "destination": "/writing/is-jesus-really-the-only-way",
+            "permanent": true
+        },
+        {
             "source": "/writing/apologetics-where-does-morality-come-from",
             "destination": "/writing/can-you-be-good-without-god",
             "permanent": true
@@ -1590,6 +1595,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/is-there-life-after-death",
+            "destination": "/writing/what-is-heaven-actually-like",
+            "permanent": true
+        },
+        {
             "source": "/writing/is-your-job-just-a-paycheck",
             "destination": "/writing/what-is-vocation-work-as-calling",
             "permanent": true
@@ -1662,6 +1672,11 @@
         {
             "source": "/writing/mishpat-tsedaqah",
             "destination": "/writing/justice-not-political-theological",
+            "permanent": true
+        },
+        {
+            "source": "/writing/near-death-experiences",
+            "destination": "/writing/what-is-heaven-actually-like",
             "permanent": true
         },
         {
@@ -1887,6 +1902,11 @@
         {
             "source": "/writing/theology-of-borders",
             "destination": "/writing/what-the-bible-says-about-immigrants-and-refugees-in-depth",
+            "permanent": true
+        },
+        {
+            "source": "/writing/what-about-those-who-never-heard",
+            "destination": "/writing/is-jesus-really-the-only-way",
             "permanent": true
         },
         {
