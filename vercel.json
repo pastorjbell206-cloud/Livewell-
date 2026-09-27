@@ -2230,6 +2230,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/when-one-partner-has-grown",
+            "destination": "/writing/when-you-married-someone-you-no-longer-recognize",
+            "permanent": true
+        },
+        {
             "source": "/writing/when-politics-replaced-theology",
             "destination": "/writing/how-the-religious-right-was-built",
             "permanent": true
