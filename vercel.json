@@ -1560,6 +1560,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/gender-based-violence",
+            "destination": "/writing/church-domestic-violence",
+            "permanent": true
+        },
+        {
             "source": "/writing/hard-cases-abortion-debate",
             "destination": "/writing/christians-and-abortion",
             "permanent": true
@@ -1957,6 +1962,11 @@
         {
             "source": "/writing/theology-of-borders",
             "destination": "/writing/what-the-bible-says-about-immigrants-and-refugees-in-depth",
+            "permanent": true
+        },
+        {
+            "source": "/writing/toxic-masculinity-in-the-pulpit",
+            "destination": "/writing/church-domestic-violence",
             "permanent": true
         },
         {

@@ -6,13 +6,13 @@ Search engines and answer engines see a second layer beside every essay: a meta 
 
 | Measure | Value |
 |---|---|
-| Essays with a description | 544 |
+| Essays with a description | 542 |
 | Hand-written descriptions | 9 |
-| Derived from the essay's own sentences | 535 |
+| Derived from the essay's own sentences | 533 |
 | Essays with question-and-answer data | 76 |
 | Average reading grade, descriptions | 8.4 |
 | Average reading grade, original standfirsts | 9.6 |
-| Derived descriptions at grade 12 or above (hand-rewrite queue) | 58 |
+| Derived descriptions at grade 12 or above (hand-rewrite queue) | 57 |
 
 ## Hand-rewrite queue
 
@@ -29,7 +29,6 @@ Derived descriptions that still read at college level. Each is true to the essay
 | talk-global-missions-moves-congregation | 16.6 | The missions presentation is a reliable feature of the American evangelical calendar. |
 | scandals-teaching-accountability | 15.9 | The names accumulate. Pastors of megachurches. Founders of parachurch organizations. Denominational leaders with decades of respected service. |
 | you-are-not-the-exception | 15.8 | Every generation believes it is the exception to the rules of biblical interpretation. |
-| toxic-masculinity-in-the-pulpit | 15.7 | The church that confuses aggression with authority and domination with leadership has not recovered biblical manhood. |
 | the-end-of-home-field-advantage | 15.6 | For fifteen centuries the church evangelized a culture that already half believed, the vocabulary pre-taught, the guilt pre-aimed, the God assumed. |
 | the-sin-we-stopped-naming | 15.5 | Progressive Christianity recovered structural sin and called it justice. |
 | 47-engaging-the-nones-what-research-tells-us-about-reaching-the-religiously-unaffiliated | 15.4 | The "nones", people who claim no religious affiliation when surveyed, are the fastest-growing religious demographic in the United States. |

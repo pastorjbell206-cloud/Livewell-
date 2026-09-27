@@ -1626,10 +1626,10 @@
   "excerptGrade": 15.5
  },
  "church-domestic-violence": {
-  "metaDescription": "She has been sitting in your pews for years. She tithes. She serves in the children's ministry.",
-  "source": "derived",
-  "grade": 2.6,
-  "excerptGrade": 2.6
+  "metaDescription": "How churches fail victims of domestic abuse, what Scripture says about violence at home, and why no teaching on submission ever requires enduring abuse.",
+  "source": "rewrite",
+  "grade": 13.9,
+  "excerptGrade": 9.1
  },
  "church-fathers-not-boring": {
   "metaDescription": "They were not writing systematic theology textbooks. They were fighting for the survival of a faith under enormous intellectual and political pressure.",
@@ -1934,12 +1934,6 @@
   "source": "derived",
   "grade": 6.7,
   "excerptGrade": 7.2
- },
- "gender-based-violence": {
-  "metaDescription": "The numbers have existed for decades. The figures move slightly survey to survey. The pattern does not.",
-  "source": "derived",
-  "grade": 6.1,
-  "excerptGrade": 17.7
  },
  "gentrification-displacement": {
   "metaDescription": "The coffee shop opens first. Then the yoga studio. The restaurant follows, with small plates and a wine list.",
@@ -3524,12 +3518,6 @@
   "source": "derived",
   "grade": 21.7,
   "excerptGrade": 16.5
- },
- "toxic-masculinity-in-the-pulpit": {
-  "metaDescription": "The church that confuses aggression with authority and domination with leadership has not recovered biblical manhood.",
-  "source": "derived",
-  "grade": 15.7,
-  "excerptGrade": 12
  },
  "colonialism-and-missions": {
   "metaDescription": "The cross arrived in the colonies alongside the sword. That refusal is itself a theological failure.",
