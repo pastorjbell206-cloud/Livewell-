@@ -6,13 +6,13 @@ Search engines and answer engines see a second layer beside every essay: a meta 
 
 | Measure | Value |
 |---|---|
-| Essays with a description | 463 |
-| Hand-written descriptions | 4 |
-| Derived from the essay's own sentences | 459 |
-| Essays with question-and-answer data | 83 |
+| Essays with a description | 461 |
+| Hand-written descriptions | 3 |
+| Derived from the essay's own sentences | 458 |
+| Essays with question-and-answer data | 85 |
 | Average reading grade, descriptions | 9.1 |
-| Average reading grade, original standfirsts | 9.8 |
-| Derived descriptions at grade 12 or above (hand-rewrite queue) | 47 |
+| Average reading grade, original standfirsts | 9.9 |
+| Derived descriptions at grade 12 or above (hand-rewrite queue) | 46 |
 
 ## Hand-rewrite queue
 
@@ -59,7 +59,6 @@ Derived descriptions that still read at college level. Each is true to the essay
 | calvinism-and-arminianism | 12.6 | The oldest and most consequential debate in Protestant theology is also the most misunderstood. |
 | 21-when-is-it-time-to-revitalize-and-when-is-it-time-to-replant | 12.5 | The language of church revitalization has been one of the most discussed topics in pastoral circles for the past decade, and for good reason. |
 | right-side-of-history | 12.4 | "The right side of history" is the most successful piece of secular theology of our age, and the American church swallowed it whole. |
-| your-body-is-not-a-cage | 12.4 | We have learned to treat the body as a vehicle the real self drives around, a thing to be optimized, overridden, or escaped. |
 | 14-how-to-preach-the-same-gospel-to-people-who-are-nothing-alike | 12.3 | Walk into almost any established congregation in America and look at the range of people sitting in the pews. |
 | 31-when-a-church-split-happens-surviving-it-learning-from-it-moving-forward | 12.3 | Church splits are among the most painful experiences in ministry, and they are more common than the pastoral culture likes to acknowledge. |
 | give-feedback-changes-behavior | 12.3 | Most feedback conversations accomplish one thing: they make the person giving the feedback feel that they have discharged an obligation. |

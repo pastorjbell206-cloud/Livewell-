@@ -78,7 +78,7 @@ export const READING_PATHS = {
   "doubt-crisis-articles": {
     title: "Finding Faith in the Questions",
     articles: [
-      { title: "What If Christianity Is Wrong?", slug: "what-if-we-are-wrong" },
+      { title: "What If Christianity Is Wrong? Living Honestly With the Question", slug: "what-if-we-are-wrong" },
       { title: "What You're Really Leaving When You Leave the Faith", slug: "constantines-bargain" },
       { title: "Why a Frightened Church Wants a King", slug: "strongman-theology" }
     ],

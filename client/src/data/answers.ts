@@ -70,7 +70,7 @@ export const ANSWERS: Answer[] = [
       "No position escapes the wager. The skeptic bets his one life on the tomb staying shut; you bet yours on it opening. Both are total; the honest ones on both sides know it. The question might end a version of your faith — the sheltered one that was always going to break. Let it. You may find you cannot get the stone to stay in front of the tomb.",
     ],
     essaySlug: "what-if-we-are-wrong",
-    essayTitle: "What If Christianity Is Wrong?",
+    essayTitle: "What If Christianity Is Wrong? Living Honestly With the Question",
     bookTitle: "Born Again From Atheism",
     bookHref: "/born-again-from-atheism",
   },

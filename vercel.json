@@ -209,11 +209,6 @@
             "permanent": true
         },
         {
-            "source": "/writing/what-we-owe-generations",
-            "destination": "/living-well",
-            "permanent": true
-        },
-        {
             "source": "/writing/burnout-nobody-talks-about",
             "destination": "/writing/burnout-is-not-a-badge",
             "permanent": true
@@ -374,17 +369,7 @@
             "permanent": true
         },
         {
-            "source": "/writing/courage-to-be-different",
-            "destination": "/leadership",
-            "permanent": true
-        },
-        {
             "source": "/writing/collaboration-across-denominations",
-            "destination": "/leadership",
-            "permanent": true
-        },
-        {
-            "source": "/writing/church-response-to-culture",
             "destination": "/leadership",
             "permanent": true
         },
@@ -411,11 +396,6 @@
         {
             "source": "/writing/greek-original-language-matters",
             "destination": "/writing/how-to-read-the-bible-without-making-it-say-what-you-want",
-            "permanent": true
-        },
-        {
-            "source": "/writing/church-fathers-not-boring",
-            "destination": "/theology",
             "permanent": true
         },
         {
@@ -1435,6 +1415,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/courage-to-be-different",
+            "destination": "/writing/church-response-to-culture",
+            "permanent": true
+        },
+        {
             "source": "/writing/creeds-confessions-statements-of-faith",
             "destination": "/writing/the-faith-once-delivered",
             "permanent": true
@@ -2222,6 +2207,11 @@
         {
             "source": "/writing/what-the-original-audience-heard",
             "destination": "/writing/how-to-read-the-bible-without-making-it-say-what-you-want",
+            "permanent": true
+        },
+        {
+            "source": "/writing/what-we-owe-ones-after",
+            "destination": "/writing/what-we-owe-generations",
             "permanent": true
         },
         {

@@ -370,13 +370,13 @@
   "excerptGrade": 7.9
  },
  "what-if-we-are-wrong": {
-  "metaDescription": "The question shows up at night: what if the whole thing is a story we told ourselves? A faith that cannot survive that question was never faith.",
-  "source": "hand",
+  "metaDescription": "What if Christianity is false? Paul's own test in 1 Corinthians 15, Pascal's wager and its objections, Clifford and James, and how to live with the doubt.",
+  "source": "rewrite",
   "grade": 5.4,
-  "excerptGrade": 6.7,
+  "excerptGrade": 6,
   "qa": {
-   "question": "What If Christianity Is Wrong?",
-   "answer": "The question arrives uninvited, usually at night: what if the whole thing is a story we told ourselves? A faith that cannot survive the question was never faith. It was shelter."
+   "question": "What if it's only useful?",
+   "answer": "There is a softer answer, offered from pulpits and by people who don't believe the creed: even if Christianity is wrong, it's good for you. There is real evidence behind the claim. In 2016 the journal JAMA Internal Medicine published a study led by Shanshan Li, with Tyler VanderWeele of Harvard among the authors, that followed tens of thousands of women in the Nurses' Health Study for about sixteen years; those who attended services more than once a week had a substantially lower risk of dying during that time than those who never attended, after adjusting for many other factors."
   }
  },
  "when-fear-rewrites-theology": {
@@ -910,10 +910,10 @@
   "excerptGrade": 11.4
  },
  "your-body-is-not-a-cage": {
-  "metaDescription": "We have learned to treat the body as a vehicle the real self drives around, a thing to be optimized, overridden, or escaped.",
-  "source": "derived",
+  "metaDescription": "What the Bible says about the body: Genesis 2:7, the incarnation, the resurrection body of 1 Corinthians 15, the Gnostics, and why it shapes how we age.",
+  "source": "rewrite",
   "grade": 12.4,
-  "excerptGrade": 11.7
+  "excerptGrade": 10.7
  },
  "what-the-resurrection-changes": {
   "metaDescription": "Why the resurrection matters now: God's verdict on the cross and on injustice, and what Easter means for the body, grief and work, from 1 Corinthians 15.",
@@ -1472,10 +1472,14 @@
   "excerptGrade": 9.1
  },
  "church-fathers-not-boring": {
-  "metaDescription": "They were not writing systematic theology textbooks. They were fighting for the survival of a faith under enormous intellectual and political pressure.",
-  "source": "derived",
-  "grade": 11.2,
-  "excerptGrade": 15.1
+  "metaDescription": "Who the church fathers were, from Ignatius and Perpetua to Athanasius, Chrysostom and Augustine, where they failed, and why Protestants still read them.",
+  "source": "rewrite",
+  "grade": 12.9,
+  "excerptGrade": 8.4,
+  "qa": {
+   "question": "Who Were the Church Fathers, and Why Should You Read Them?",
+   "answer": "The church fathers were pastors, martyrs, mothers and exiles who held the faith before the empire owned it and while it was being handed over. They got real things wrong, and they are still the family we were given."
+  }
  },
  "church-food-insecurity": {
   "metaDescription": "What Scripture says about hunger, from manna to the Lord's Supper, and how churches can move from handing out food to shared tables that honor the hungry.",
@@ -1532,10 +1536,10 @@
   "excerptGrade": -0.2
  },
  "church-response-to-culture": {
-  "metaDescription": "We are living through a moment when the settlement our parents inherited is dissolving, and we do not yet know what will replace it.",
-  "source": "derived",
-  "grade": 11,
-  "excerptGrade": 12.2
+  "metaDescription": "Niebuhr's five types of Christ and culture, the critiques of Yoder, Hauerwas and Carson, and what Hunter, Crouch and Dreher propose for the church now.",
+  "source": "rewrite",
+  "grade": 11.2,
+  "excerptGrade": 7.4
  },
  "church-sex-more-than-money": {
   "metaDescription": "Why churches preach on sexual sin far more than greed though Scripture pairs them, and how history, politics and consumer habits split the Bible's warning.",
@@ -1584,12 +1588,6 @@
   "source": "derived",
   "grade": 5.1,
   "excerptGrade": 5.1
- },
- "courage-to-be-different": {
-  "metaDescription": "The word the New Testament uses for the church, ekklesia, means \"those called out.\" Not called out into withdrawal.",
-  "source": "derived",
-  "grade": 9.8,
-  "excerptGrade": 9.8
  },
  "creation-care-not-optional": {
   "metaDescription": "What Genesis means by dominion, how Christians answered Lynn White's 1967 charge, and why clean air and water are a matter of neighbor love, not party.",
@@ -1644,10 +1642,14 @@
   "excerptGrade": 11.4
  },
  "early-church-practiced": {
-  "metaDescription": "The text is not ambiguous. That is a remarkable claim. It is also a description of a practice, not a theology, not an aspiration, not a metaphor.",
-  "source": "derived",
-  "grade": 6.7,
-  "excerptGrade": 5.8
+  "metaDescription": "A close reading of Acts 2 and 4, whether Luke idealized the church, how later Christians shared, and how socialist and libertarian readings fare.",
+  "source": "rewrite",
+  "grade": 11.5,
+  "excerptGrade": 10.8,
+  "qa": {
+   "question": "Did Luke idealize the church?",
+   "answer": "There is a serious objection to reading these summaries as reportage, and it deserves the form its best defenders would sign. Educated Greek readers would have heard something familiar in Acts 4:32. Aristotle, in the ninth book of the Nicomachean Ethics, collects the proverbs his culture used about true friendship, among them that friends share a single soul and that friends hold their goods in common. Plato knew the second proverb, and later tradition credited it to Pythagoras and told of Pythagorean circles that pooled their property."
+  }
  },
  "education-inequality": {
   "metaDescription": "What Scripture and church history say about school funding gaps, segregation academies, the school-to-prison pipeline, and what Christians owe children.",
@@ -2220,16 +2222,10 @@
   "excerptGrade": 6.3
  },
  "what-we-owe-generations": {
-  "metaDescription": "I have five sons. That fact is not incidental to anything I write. It is the weight that keeps my theology honest.",
-  "source": "derived",
-  "grade": 3.4,
-  "excerptGrade": 3.4
- },
- "what-we-owe-ones-after": {
-  "metaDescription": "My sons will inherit the world I am making. That sentence has the power to stop a man, or it should.",
-  "source": "derived",
-  "grade": 3.1,
-  "excerptGrade": 3.1
+  "metaDescription": "What the Bible says about the sins of the fathers, what Burke and Parfit saw, and why debt, climate and faith are inheritances Christians must answer for.",
+  "source": "rewrite",
+  "grade": 11.5,
+  "excerptGrade": 11
  },
  "when-fire-someone-with-integrity": {
   "metaDescription": "And yet it is. This is why pastors avoid it too long. Pastoral care that withholds necessary truth is not care.",
