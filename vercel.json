@@ -224,16 +224,6 @@
             "permanent": true
         },
         {
-            "source": "/writing/most-prophetic-live-differently",
-            "destination": "/living-well",
-            "permanent": true
-        },
-        {
-            "source": "/writing/children-poverty-prophetic-indictment",
-            "destination": "/living-well",
-            "permanent": true
-        },
-        {
             "source": "/writing/what-we-owe-generations",
             "destination": "/living-well",
             "permanent": true
@@ -1385,6 +1375,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/children-poverty-prophetic-indictment",
+            "destination": "/writing/widow-orphan-stranger",
+            "permanent": true
+        },
+        {
             "source": "/writing/christendom-is-ending-christianity-is-not",
             "destination": "/writing/christendom-is-ending",
             "permanent": true
@@ -1452,6 +1447,11 @@
         {
             "source": "/writing/complicity-not-innocence",
             "destination": "/writing/individual-sin-and-systemic-sin-explained",
+            "permanent": true
+        },
+        {
+            "source": "/writing/consistent-ethic-life",
+            "destination": "/writing/the-consistent-pro-life-ethic-womb-to-tomb",
             "permanent": true
         },
         {
@@ -1745,6 +1745,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/most-prophetic-live-differently",
+            "destination": "/writing/prophetic-imagination",
+            "permanent": true
+        },
+        {
             "source": "/writing/natural-evil-and-animal-suffering",
             "destination": "/writing/if-god-is-good-why-suffering",
             "permanent": true
@@ -1832,6 +1837,11 @@
         {
             "source": "/writing/proof-texting",
             "destination": "/writing/how-to-read-the-bible-without-making-it-say-what-you-want",
+            "permanent": true
+        },
+        {
+            "source": "/writing/prophetic-thing-live-differently",
+            "destination": "/writing/prophetic-imagination",
             "permanent": true
         },
         {
@@ -1935,8 +1945,18 @@
             "permanent": true
         },
         {
+            "source": "/writing/scripture-unborn",
+            "destination": "/writing/christians-and-abortion",
+            "permanent": true
+        },
+        {
             "source": "/writing/sexless-marriage-conversation",
             "destination": "/writing/marriage-intimacy",
+            "permanent": true
+        },
+        {
+            "source": "/writing/silence-abuse-church",
+            "destination": "/writing/sexual-abuse-crisis-in-the-church",
             "permanent": true
         },
         {
@@ -2155,6 +2175,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/what-james-5-says",
+            "destination": "/writing/theology-fair-wages",
+            "permanent": true
+        },
+        {
             "source": "/writing/what-jesus-said-about-worry-and-money",
             "destination": "/writing/what-the-bible-actually-says-about-money-and-wealth",
             "permanent": true
@@ -2262,6 +2287,11 @@
         {
             "source": "/writing/why-poverty-political",
             "destination": "/writing/is-poverty-political-the-bibles-answer",
+            "permanent": true
+        },
+        {
+            "source": "/writing/why-the-prophets-made-everyone-uncomfortable",
+            "destination": "/writing/amos-american-church",
             "permanent": true
         },
         {
