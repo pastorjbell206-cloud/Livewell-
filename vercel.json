@@ -1855,8 +1855,18 @@
             "permanent": true
         },
         {
+            "source": "/writing/the-problem-with-certainty",
+            "destination": "/writing/can-you-have-faith-and-doubt",
+            "permanent": true
+        },
+        {
             "source": "/writing/the-rise-of-the-nones",
             "destination": "/writing/why-people-are-leaving-the-church",
+            "permanent": true
+        },
+        {
+            "source": "/writing/the-spirituality-of-doubt",
+            "destination": "/writing/can-you-have-faith-and-doubt",
             "permanent": true
         },
         {
@@ -1882,6 +1892,11 @@
         {
             "source": "/writing/what-render-unto-caesar-actually-means",
             "destination": "/writing/two-kingdoms-faith-and-state",
+            "permanent": true
+        },
+        {
+            "source": "/writing/what-the-bible-says-about-money",
+            "destination": "/writing/what-the-bible-actually-says-about-money-and-wealth",
             "permanent": true
         },
         {

@@ -366,13 +366,13 @@
   "excerptGrade": 6.5
  },
  "can-you-have-faith-and-doubt": {
-  "metaDescription": "You were told real Christians do not have questions. The Hebrew word for faith says the opposite: not certainty, but a steadiness that can carry weight.",
-  "source": "hand",
-  "grade": 5.8,
-  "excerptGrade": 7.1,
+  "metaDescription": "Can a Christian doubt and still believe? What Scripture does with doubters, how doubt differs from unbelief, and why certainty is not the same as faith.",
+  "source": "rewrite",
+  "grade": 5.4,
+  "excerptGrade": 11.4,
   "qa": {
-   "question": "Can You Have Faith and Still Have Doubts?",
-   "answer": "You were told a real Christian does not have questions. The Hebrew word underneath faith says the opposite. Emunah is not certainty, it is weight-bearing steadiness, the word used of Moses hands held up until sunset."
+   "question": "Can You Have Faith and Doubt at the Same Time?",
+   "answer": "Doubt is a question asked from inside trust; unbelief is a settled refusal to trust. The church lost many of its most honest people by confusing the two, and by mistaking a modern demand for certainty for the confidence Scripture actually commends."
   }
  },
  "constantines-bargain": {
@@ -1122,12 +1122,6 @@
   "source": "derived",
   "grade": 12.7,
   "excerptGrade": 11.4
- },
- "what-the-bible-says-about-money": {
-  "metaDescription": "Jesus talked about money more than he talked about heaven or hell. We have made it the one subject the church is most embarrassed to mention.",
-  "source": "derived",
-  "grade": 6.7,
-  "excerptGrade": 5.8
  },
  "your-body-is-not-a-cage": {
   "metaDescription": "We have learned to treat the body as a vehicle the real self drives around, a thing to be optimized, overridden, or escaped.",
@@ -3072,10 +3066,14 @@
   "excerptGrade": 5
  },
  "what-the-bible-actually-says-about-money-and-wealth": {
-  "metaDescription": "A man once told me, after a funeral, that he had spent thirty years building something he could not take into the ground he was about to fill.",
-  "source": "derived",
-  "grade": 10.9,
-  "excerptGrade": 15.9
+  "metaDescription": "What Jesus, Paul, the Old Testament, the church fathers and John Wesley teach about wealth, contentment, debt, generosity and the tithe, read in context.",
+  "source": "rewrite",
+  "grade": 12,
+  "excerptGrade": 8.6,
+  "qa": {
+   "question": "What Does the Bible Say About Money and Wealth?",
+   "answer": "Scripture calls wealth a gift, warns that it is a danger, and names money a rival master that promises the security only God can give. The Christian life with money turns on telling the tool from the master."
+  }
  },
  "is-poverty-political-the-bibles-answer": {
   "metaDescription": "What the Torah, the prophets, Jesus and the early church teach about the poor, how charity, justice and policy differ, and where Christians may disagree.",
@@ -3635,12 +3633,6 @@
    "answer": "The question is not whether Christianity is the only religion with truth in it. The question is whether it makes claims that are unique, claims that matter, and claims that can bear the weight of a life."
   }
  },
- "the-problem-with-certainty": {
-  "metaDescription": "The demand for certainty is not a sign of strong faith. We have made certainty the measure of faith, and it is destroying us.",
-  "source": "derived",
-  "grade": 4.3,
-  "excerptGrade": 7.7
- },
  "how-to-talk-about-faith": {
   "metaDescription": "Most Christians have been trained to share their faith in ways that guarantee nobody wants to hear it. The problem is not the gospel.",
   "source": "derived",
@@ -3676,12 +3668,6 @@
   "source": "rewrite",
   "grade": 12.3,
   "excerptGrade": 10.4
- },
- "the-spirituality-of-doubt": {
-  "metaDescription": "Doubt is not the opposite of faith. It is faith doing its hardest work. And the Christian tradition has always known this, even when the church forgot.",
-  "source": "derived",
-  "grade": 3.7,
-  "excerptGrade": 3.7
  },
  "reconstructing-faith": {
   "metaDescription": "Deconstruction is not the destination. It is the demolition phase of a renovation.",
