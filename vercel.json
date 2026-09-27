@@ -99,11 +99,6 @@
             "permanent": true
         },
         {
-            "source": "/writing/hospitality-not-optional",
-            "destination": "/justice",
-            "permanent": true
-        },
-        {
             "source": "/writing/prophetic-pastor",
             "destination": "/justice",
             "permanent": true

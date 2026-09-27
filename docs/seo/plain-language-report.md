@@ -9,10 +9,10 @@ Search engines and answer engines see a second layer beside every essay: a meta 
 | Essays with a description | 460 |
 | Hand-written descriptions | 3 |
 | Derived from the essay's own sentences | 457 |
-| Essays with question-and-answer data | 85 |
+| Essays with question-and-answer data | 86 |
 | Average reading grade, descriptions | 9.2 |
 | Average reading grade, original standfirsts | 9.9 |
-| Derived descriptions at grade 12 or above (hand-rewrite queue) | 46 |
+| Derived descriptions at grade 12 or above (hand-rewrite queue) | 45 |
 
 ## Hand-rewrite queue
 
@@ -46,7 +46,6 @@ Derived descriptions that still read at college level. Each is true to the essay
 | unreached-people-groups-closest-to-you | 13.9 | Count the apartment complex where recent immigrants from Somalia live in quiet and considerable isolation. |
 | 33-the-case-for-doing-city-wide-church-together-at-least-once-a-year | 13.5 | There is a moment that most pastors who have experienced a genuine city-wide worship gathering can describe with unusual precision. |
 | how-christianity-became-an-empire | 13.5 | The story of how a persecuted Jewish sect became the official religion of the Roman Empire, and what was gained and lost in the transformation. |
-| what-christians-can-learn-from-buddhism | 13.5 | The contemplative traditions of Christianity and Buddhism have been carrying on a quiet conversation for centuries. |
 | 10-its-okay-to-see-a-counselor-why-pastors-resist-and-why-they-shouldnt | 13.4 | Of all the things that are slowly changing in pastoral culture, the stigma around professional counseling may be the most stubbornly persistent. |
 | 44-what-the-church-in-the-global-south-can-teach-the-church-in-america-about-suffering | 13.3 | The American church has developed a sophisticated relationship with comfort. Its buildings are climate controlled. |
 | digital-divide | 13.3 | The resources that enable human flourishing, land, water, shelter, education, are not distributed randomly. They concentrate. |

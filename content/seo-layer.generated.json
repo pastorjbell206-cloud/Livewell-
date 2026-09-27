@@ -1754,10 +1754,10 @@
   }
  },
  "healthcare-moral-issue": {
-  "metaDescription": "A woman in my congregation, I will call her Maria, worked two jobs, both without benefits.",
-  "source": "derived",
-  "grade": 9.1,
-  "excerptGrade": 9.1
+  "metaDescription": "What the Bible and church history say about caring for the sick, whether healthcare is a right, and how Christians weigh single-payer and market plans.",
+  "source": "rewrite",
+  "grade": 11.2,
+  "excerptGrade": 12.9
  },
  "healthy-conflict-marriage": {
   "metaDescription": "What Scripture and marriage research teach about anger, fighting fair, and repair, and why healthy conflict in marriage has to end in reconciliation.",
@@ -1778,10 +1778,10 @@
   "excerptGrade": 5.9
  },
  "hospitality-not-optional": {
-  "metaDescription": "Somewhere in the last century, hospitality became a personality type. It is optional. It is for those who feel called.",
-  "source": "derived",
-  "grade": 8.3,
-  "excerptGrade": 15.5
+  "metaDescription": "What the Bible says about hospitality: philoxenia, Abraham at Mamre, Jesus as guest and host, the early church, and why opening a home is hard now.",
+  "source": "rewrite",
+  "grade": 13.2,
+  "excerptGrade": 9.1
  },
  "human-trafficking-selective-outrage": {
   "metaDescription": "The church mobilizes for human trafficking with a coherence it rarely displays around other forms of exploitation. Conferences fill.",
@@ -2162,10 +2162,10 @@
   }
  },
  "theology-of-enough": {
-  "metaDescription": "The word is found early in the Exodus story, in the episode most preachers move past on their way to more dramatic material.",
-  "source": "derived",
-  "grade": 10.8,
-  "excerptGrade": 10.8
+  "metaDescription": "What the Bible says about contentment and enough: the manna, Agur's prayer, Paul in prison, Burroughs, and what research on money and happiness shows.",
+  "source": "rewrite",
+  "grade": 12,
+  "excerptGrade": 11.2
  },
  "theology-of-protest": {
   "metaDescription": "There is a persistent assumption in large portions of the American church that protest is somehow un-Christian.",
@@ -2192,10 +2192,10 @@
   "excerptGrade": 15
  },
  "truth-in-post-truth-world": {
-  "metaDescription": "Pilate's question has outlasted his empire. \"What is truth?\" (John 18:38).",
-  "source": "derived",
-  "grade": 3.7,
-  "excerptGrade": 3.7
+  "metaDescription": "What is truth? Pilate's question and Jesus's answer read in context, why the post-truth age is a crisis of indifference, and how Christians should speak.",
+  "source": "rewrite",
+  "grade": 6.7,
+  "excerptGrade": 7
  },
  "unity-without-uniformity": {
   "metaDescription": "The night before he died, Jesus prayed for unity. Not for agreement on every doctrinal question.",
@@ -3026,10 +3026,14 @@
   "excerptGrade": 8.4
  },
  "digital-discipleship": {
-  "metaDescription": "The algorithm is not neutral. It is forming you into a particular kind of person, distracted, reactive, shallow, and perpetually outraged.",
-  "source": "derived",
-  "grade": 10.4,
-  "excerptGrade": 8.4
+  "metaDescription": "How phones and algorithms form adults: McLuhan, Postman, Carr, Simone Weil, and Haidt and his critics, read with Romans 12, Philippians 4 and Psalm 46.",
+  "source": "rewrite",
+  "grade": 9.7,
+  "excerptGrade": 9.7,
+  "qa": {
+   "question": "Could You Not Watch One Hour?",
+   "answer": "On the night he was betrayed, Jesus took three of his closest friends into Gethsemane and asked them for one thing: \"My soul is very sorrowful, even to death; remain here, and watch with me\" (Matthew 26:38, ESV). He didn't ask them to fight or to understand. He asked for their attention, their presence awake beside him in the worst hour of his life. He came back and found them asleep, and his question has outlived every technology since: \"So, could you not watch with me one hour?\" (Matthew 26:40, ESV)."
+  }
  },
  "family-and-faith-transitions": {
   "metaDescription": "When family says you've lost your mind over faith: Jesus's family in Mark 3, Matthew 10 in context, honoring parents, and persecution versus your own zeal.",
@@ -3078,10 +3082,10 @@
   "excerptGrade": 10.5
  },
  "what-christians-can-learn-from-buddhism": {
-  "metaDescription": "The contemplative traditions of Christianity and Buddhism have been carrying on a quiet conversation for centuries.",
-  "source": "derived",
-  "grade": 13.5,
-  "excerptGrade": 10.9
+  "metaDescription": "What Buddhism teaches across its schools, what Christians can learn from it, Merton and Thich Nhat Hanh, mindfulness, and where the two faiths differ.",
+  "source": "rewrite",
+  "grade": 9.5,
+  "excerptGrade": 11.7
  },
  "what-christians-can-learn-from-indigenous-spirituality": {
   "metaDescription": "The church that destroyed indigenous traditions in the name of Christ had much to learn from the very people it sought to convert.",
