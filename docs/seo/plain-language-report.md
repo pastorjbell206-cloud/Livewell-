@@ -6,13 +6,13 @@ Search engines and answer engines see a second layer beside every essay: a meta 
 
 | Measure | Value |
 |---|---|
-| Essays with a description | 573 |
+| Essays with a description | 571 |
 | Hand-written descriptions | 13 |
-| Derived from the essay's own sentences | 560 |
+| Derived from the essay's own sentences | 558 |
 | Essays with question-and-answer data | 88 |
 | Average reading grade, descriptions | 8.2 |
 | Average reading grade, original standfirsts | 9.5 |
-| Derived descriptions at grade 12 or above (hand-rewrite queue) | 63 |
+| Derived descriptions at grade 12 or above (hand-rewrite queue) | 62 |
 
 ## Hand-rewrite queue
 
@@ -40,7 +40,6 @@ Derived descriptions that still read at college level. Each is true to the essay
 | 3-treating-sunday-as-the-only-metric | 14.9 | It is easy, especially in a culture that quantifies everything, to measure the health of your ministry by Sunday attendance and sermon reception. |
 | guide-to-every-major-denomination | 14.7 | The existence of denominations embarrasses many Christians and trips up many outsiders. |
 | why-people-fled-to-the-desert | 14.6 | When Christianity stopped being dangerous and became respectable, thousands of people walked out into the Egyptian desert to live alone. |
-| white-churches-diversity-wrong | 14.6 | The conversation about diversity in white evangelical churches usually goes wrong in the same direction. |
 | 50-how-to-lead-when-trust-in-institutions-including-the-church-is-at-an-all-time-low | 14.4 | Trust in government, in media, in healthcare, in universities, in the justice system, all of these have declined to historic lows by multiple measures. |
 | moral-injury-veterans | 14.4 | The word "trauma" has become a general-purpose container, applied to an expanding range of hard experience until it sometimes loses its force. |
 | 7-protecting-your-marriage-when-ministry-demands-everything | 14.3 | Ministry and marriage are both long-term commitments that require sustained, intentional investment to flourish. |

@@ -1900,6 +1900,16 @@
             "permanent": true
         },
         {
+            "source": "/writing/white-churches-diversity",
+            "destination": "/writing/building-the-multiethnic-church",
+            "permanent": true
+        },
+        {
+            "source": "/writing/white-churches-diversity-wrong",
+            "destination": "/writing/building-the-multiethnic-church",
+            "permanent": true
+        },
+        {
             "source": "/writing/whose-kingdom-jesus-and-political-power",
             "destination": "/writing/two-kingdoms-faith-and-state",
             "permanent": true

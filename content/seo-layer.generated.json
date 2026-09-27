@@ -2819,18 +2819,6 @@
   "grade": 12.3,
   "excerptGrade": 12.3
  },
- "white-churches-diversity-wrong": {
-  "metaDescription": "The conversation about diversity in white evangelical churches usually goes wrong in the same direction.",
-  "source": "derived",
-  "grade": 14.6,
-  "excerptGrade": 14.6
- },
- "white-churches-diversity": {
-  "metaDescription": "The diversity initiative started with a conversation in the elder meeting. Someone noted that the neighborhood had changed.",
-  "source": "derived",
-  "grade": 10.9,
-  "excerptGrade": 9.4
- },
  "white-churches-wrong-about-diversity": {
   "metaDescription": "John describes it as a vision of what is coming. I am a white pastor. I lead a predominantly white congregation.",
   "source": "derived",
@@ -3300,10 +3288,10 @@
   "excerptGrade": 10.2
  },
  "building-the-multiethnic-church": {
-  "metaDescription": "A church can put many colors in the room and still leave one culture in charge of everything, and God is not fooled by the photograph.",
-  "source": "derived",
-  "grade": 10.4,
-  "excerptGrade": 10.4
+  "metaDescription": "Why Sunday morning is still segregated, what Ephesians, Galatians and Acts say about the dividing wall, and why real multiethnic churches share power.",
+  "source": "rewrite",
+  "grade": 13.4,
+  "excerptGrade": 11.8
  },
  "what-the-sabbath-is-and-why-you-need-it": {
   "metaDescription": "What the Sabbath is in Scripture, how Jesus and the early church kept it, four Christian views held today, and why rest is trust in God, not a reward.",
