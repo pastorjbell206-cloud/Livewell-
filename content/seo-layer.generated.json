@@ -158,10 +158,14 @@
   "excerptGrade": 5.9
  },
  "christendom-is-ending": {
-  "metaDescription": "For seventeen centuries, being born in the West meant being born Christian. That arrangement is dying, and most of the church is grieving the wrong thing.",
-  "source": "hand",
-  "grade": 5.4,
-  "excerptGrade": 6
+  "metaDescription": "What Christendom was, from Constantine and Theodosius to Westphalia and America's Protestant consensus, why it is ending, and what faith looks like after.",
+  "source": "rewrite",
+  "grade": 13.9,
+  "excerptGrade": 9.8,
+  "qa": {
+   "question": "What Is Christendom, and What Comes After It?",
+   "answer": "Christendom was the settlement that made Christianity the default of Western life, from Constantine to the American Protestant consensus. It is ending. Christianity is not, and confusing the two leaves the church grieving the wrong loss and reaching for the wrong remedies."
+  }
  },
  "exile-is-not-the-end": {
   "metaDescription": "What Jeremiah 29 meant to the exiles of 597 BC, how Peter and Augustine read it, and whether American Christians can honestly call themselves exiles.",
@@ -583,12 +587,6 @@
   "grade": 4.5,
   "excerptGrade": 6
  },
- "reading-the-bible-slowly": {
-  "metaDescription": "We read everything fast now, including Scripture, skimming for the point, the takeaway, the verse to post.",
-  "source": "derived",
-  "grade": 9.1,
-  "excerptGrade": 7.6
- },
  "silence-and-solitude": {
   "metaDescription": "What the desert fathers, Benedict's Rule, Elijah and Jesus teach about silence and solitude, why we flee them, and how solitude differs from loneliness.",
   "source": "rewrite",
@@ -738,14 +736,10 @@
   }
  },
  "faith-and-science": {
-  "metaDescription": "Everyone knows faith and science are at war. Here is where the conflict actually came from, and where it doesn't exist.",
-  "source": "derived",
-  "grade": 3.7,
-  "excerptGrade": 7.6,
-  "qa": {
-   "question": "Do You Have to Choose Between Faith and Science?",
-   "answer": "Everyone knows faith and science are at war. The trouble is that the war is largely a story invented in the nineteenth century, and the man who led the human genome project is a believer. Here is where the conflict actually came from, and where it doesn't exist."
-  }
+  "metaDescription": "How the war between science and Christianity was invented, what historians found about Galileo, Darwin and Scopes, and what science cannot answer.",
+  "source": "rewrite",
+  "grade": 12.8,
+  "excerptGrade": 13.1
  },
  "how-to-read-genesis-one": {
   "metaDescription": "The wall was never the resurrection first. It was the rocks. I rejected Christianity at the creation and never got far enough to reach the cross.",
@@ -764,14 +758,10 @@
   "excerptGrade": 9.7
  },
  "is-faith-irrational": {
-  "metaDescription": "I spent years certain that faith was the enemy of reason and that I had chosen reason.",
-  "source": "derived",
-  "grade": 7,
-  "excerptGrade": 7.3,
-  "qa": {
-   "question": "Is Believing Anything on Faith Irrational?",
-   "answer": "I spent years certain that faith was the enemy of reason and that I had chosen reason. Then I noticed how much of my own position I was holding on trust, and had never once thought to check."
-  }
+  "metaDescription": "What faith means in Scripture, Clifford's charge that it is belief without evidence, and the replies of William James, Plantinga, Aquinas and Pascal.",
+  "source": "rewrite",
+  "grade": 12.4,
+  "excerptGrade": 12.6
  },
  "is-faith-just-wishful-thinking": {
   "metaDescription": "For years I was certain that faith was a comfort weak people reached for because they could not bear the cold.",
@@ -1074,32 +1064,16 @@
   "excerptGrade": 8.9
  },
  "how-do-you-actually-pray": {
-  "metaDescription": "Most people want to pray and have no idea how to begin. The answer is not a formula. It is closer to learning to talk with someone already in the room.",
-  "source": "hand",
-  "grade": 4.4,
-  "excerptGrade": 4.2,
-  "qa": {
-   "question": "How Do You Actually Pray?",
-   "answer": "Most people want to pray and have no idea how to begin. The answer is not a formula. It is closer to learning how to speak with someone who has been in the room the whole time."
-  }
+  "metaDescription": "How to pray: the Lord's Prayer clause by clause, the Psalms and set prayers, and how to keep praying through dryness, lament and unanswered prayer.",
+  "source": "rewrite",
+  "grade": 8.3,
+  "excerptGrade": 9.7
  },
  "praying-the-words-when-you-have-none": {
   "metaDescription": "There are seasons when grief or rage burns the words out of you and prayer goes silent.",
   "source": "derived",
   "grade": 4.2,
   "excerptGrade": 7.5
- },
- "praying-when-you-dont-feel-it": {
-  "metaDescription": "There is a season when prayer goes dry, no warmth, no sense of God, nothing. The modern church treats this as failure.",
-  "source": "derived",
-  "grade": 2.6,
-  "excerptGrade": 3.4
- },
- "the-only-prayer-jesus-taught": {
-  "metaDescription": "Jesus was asked exactly once how to pray, and he answered with a single prayer of around sixty words. We have said it so often we stopped hearing it.",
-  "source": "derived",
-  "grade": 6.7,
-  "excerptGrade": 5.3
  },
  "when-prayer-goes-unanswered": {
   "metaDescription": "You prayed, and the thing you begged God for did not come. Here is the honest version.",
@@ -1124,16 +1098,6 @@
   "source": "derived",
   "grade": 8.4,
   "excerptGrade": 9.1
- },
- "is-your-job-just-a-paycheck": {
-  "metaDescription": "Most of us spend a third of our waking lives at work and assume God is indifferent to all of it. He is not.",
-  "source": "derived",
-  "grade": 3.8,
-  "excerptGrade": 4.5,
-  "qa": {
-   "question": "Is Your Job Just a Paycheck, or Something More?",
-   "answer": "Most of us spend a third of our waking lives at work and assume God is indifferent to all of it. He is not. There is an older, stranger account of what your work is actually for."
-  }
  },
  "the-end-of-home-field-advantage": {
   "metaDescription": "For fifteen centuries the church evangelized a culture that already half believed, the vocabulary pre-taught, the guilt pre-aimed, the God assumed.",
@@ -1239,16 +1203,6 @@
   "grade": 6.3,
   "excerptGrade": 8.4
  },
- "being-filled-with-the-spirit": {
-  "metaDescription": "\"Be filled with the Spirit\" sounds like an invitation to an experience most people are not sure they have ever had.",
-  "source": "derived",
-  "grade": 9.5,
-  "excerptGrade": 9.9,
-  "qa": {
-   "question": "What about Pentecost?",
-   "answer": "Here someone reasonably objects: but what about Acts 2? The wind, the fire, the tongues, the three thousand converted in a day, surely that is what being filled with the Spirit looks like, and surely it is something more than a daily posture."
-  }
- },
  "how-do-you-actually-change": {
   "metaDescription": "Everyone who tries to be better runs into the same wall: willpower works for a while and then it doesn't.",
   "source": "derived",
@@ -1259,16 +1213,6 @@
    "answer": "Everyone who tries to be better runs into the same wall: willpower works for a while and then it doesn't. The Bible's account of real change is stranger and more hopeful, fruit grown, not behavior forced."
   }
  },
- "what-does-the-holy-spirit-do": {
-  "metaDescription": "You can affirm that the Spirit is a person and still have no idea what he is for. Scripture is not vague about it.",
-  "source": "derived",
-  "grade": 3.8,
-  "excerptGrade": 6,
-  "qa": {
-   "question": "What Does the Holy Spirit Actually Do?",
-   "answer": "You can affirm that the Spirit is a person and still have no idea what he is for. Scripture is not vague about it. He convicts, indwells, empowers, comforts, and changes you, and most of it happens where you least expect to find God working."
-  }
- },
  "what-the-bible-says-about-spiritual-gifts": {
   "metaDescription": "Spiritual gifts are where a lot of newcomers get nervous, tongues, prophecy, healing, and a church world that seems split into two armed camps over them.",
   "source": "derived",
@@ -1276,13 +1220,13 @@
   "excerptGrade": 9.2
  },
  "who-is-the-holy-spirit": {
-  "metaDescription": "Most newcomers can picture the Father and the Son. Then there is the third one, a dove, a flame, a feeling, a force.",
-  "source": "derived",
-  "grade": 3.3,
-  "excerptGrade": 5.2,
+  "metaDescription": "Who the Holy Spirit is, what Scripture says he does, what being filled with the Spirit means across the traditions, and why he is not a feeling.",
+  "source": "rewrite",
+  "grade": 10.7,
+  "excerptGrade": 8.5,
   "qa": {
-   "question": "Who Is the Holy Spirit?",
-   "answer": "Most newcomers can picture the Father and the Son. Then there is the third one, a dove, a flame, a feeling, a force. Scripture is insisting on something stranger and far more personal: not an it, but a who."
+   "question": "Who Is the Holy Spirit and What Does He Do?",
+   "answer": "The Holy Spirit is a person, fully God, confessed with the Father and the Son since 381, and his central work is to join us to Christ. Experiences of him are real, but they are the fruit of that union and never its foundation."
   }
  },
  "does-hell-exist": {
@@ -2221,12 +2165,6 @@
   "grade": 4.7,
   "excerptGrade": 5.9
  },
- "holy-spirit-not-feeling": {
-  "metaDescription": "When people talk about being \"moved by the Spirit,\" they mean moved emotionally.",
-  "source": "derived",
-  "grade": 9.4,
-  "excerptGrade": 16.2
- },
  "hope-of-resurrection": {
   "metaDescription": "He was not speaking hypothetically. There is no middle position available.",
   "source": "derived",
@@ -2993,16 +2931,6 @@
    "answer": "The crimes committed under the banner of Christ are real and many, and any honest defense of the faith has to own them before it says anything else."
   }
  },
- "apologetics-isnt-faith-believing-without-evidence": {
-  "metaDescription": "The popular definition of faith as belief without evidence is so common it feels obvious, and it happens to be wrong about what faith has always meant.",
-  "source": "derived",
-  "grade": 12.9,
-  "excerptGrade": 12.9,
-  "qa": {
-   "question": "Isn't Faith Just Believing Without Evidence?",
-   "answer": "The popular definition of faith as belief without evidence is so common it feels obvious, and it happens to be wrong about what faith has always meant."
-  }
- },
  "what-is-the-kingdom-of-god-and-why-it-changes-everything": {
   "metaDescription": "The kingdom of God is not heaven when you die, and not a project you build. Once you see what Jesus meant by it, the rest of the Bible reads differently.",
   "source": "hand",
@@ -3156,10 +3084,10 @@
   "excerptGrade": 6.1
  },
  "how-to-read-the-bible-without-making-it-say-what-you-want": {
-  "metaDescription": "Two honest readers open the same page and find opposite gods. The Bible is not unclear. Nobody reads from nowhere. How to read it without bending it.",
-  "source": "hand",
-  "grade": 4.1,
-  "excerptGrade": 3.6
+  "metaDescription": "How to read the Bible in context: genre, canon, the proof-text habit, how misreadings defended slavery, lectio divina, and why study needs devotion.",
+  "source": "rewrite",
+  "grade": 13.9,
+  "excerptGrade": 9.4
  },
  "what-the-gospel-actually-is": {
   "metaDescription": "The gospel is not advice on how to be good or feel loved. It is news about something God has done, and news asks more of you than advice.",
@@ -3401,23 +3329,11 @@
    "answer": "The Sabbath was given twice, once to creatures and once to freed slaves, and Jesus claimed it rather than cancelled it. Christians still disagree about how it binds us, but every faithful answer rests on one distinction our culture has lost: rest as a reward for work, or rest as trust that God keeps the world running while we stop."
   }
  },
- "prayer-when-you-do-not-feel-like-it": {
-  "metaDescription": "I did not pray for the first twenty years of my life because I did not believe anyone was listening, and that, at least, was honest.",
-  "source": "derived",
-  "grade": 9.5,
-  "excerptGrade": 17.7
- },
  "the-examined-life-practices-that-hold": {
   "metaDescription": "Socrates said the unexamined life is not worth living, and we have repeated it so often that we no longer hear how much it leaves out.",
   "source": "derived",
   "grade": 11.8,
   "excerptGrade": 21.6
- },
- "how-to-read-the-bible-devotionally": {
-  "metaDescription": "I came to the Bible the way a former atheist comes to anything, to master it.",
-  "source": "derived",
-  "grade": 7.6,
-  "excerptGrade": 17.2
  },
  "how-to-build-a-healthy-church-staff-culture": {
   "metaDescription": "The staff culture you actually have is the one you tolerate on a Tuesday, not the one you describe in the elder retreat.",
@@ -3508,10 +3424,10 @@
   "excerptGrade": 10.9
  },
  "what-is-vocation-work-as-calling": {
-  "metaDescription": "Vocation is not the job that makes you feel important, it is the place where God hides himself behind your ordinary work to feed your neighbor.",
-  "source": "derived",
-  "grade": 11.8,
-  "excerptGrade": 11.8
+  "metaDescription": "What vocation means in Scripture and history, from Genesis and Luther to Weber and burnout, and why your work is a calling but never your salvation.",
+  "source": "rewrite",
+  "grade": 12.7,
+  "excerptGrade": 5.5
  },
  "how-to-find-gods-will-for-your-career": {
   "metaDescription": "God is far less concerned with the one perfect job he has hidden from you than with the kind of person you are becoming in whatever work you already hold.",
@@ -3548,12 +3464,6 @@
   "source": "derived",
   "grade": 8.4,
   "excerptGrade": 8.4
- },
- "your-work-was-never-going-to-save-you": {
-  "metaDescription": "We took the holiest word the Reformation gave us, vocation, and turned it into the thing that owns us.",
-  "source": "derived",
-  "grade": 8.6,
-  "excerptGrade": 8.6
  },
  "preaching-is-not-public-speaking": {
   "metaDescription": "The pulpit has been colonized by the conference stage. The preacher who notices is the one with something left to lose.",
@@ -3644,12 +3554,6 @@
   "source": "derived",
   "grade": 18,
   "excerptGrade": 17.1
- },
- "the-death-of-christendom": {
-  "metaDescription": "That era is over. The question is not whether Christendom is dying but whether its death might be the best thing that ever happened to the church.",
-  "source": "derived",
-  "grade": 5.8,
-  "excerptGrade": 10.2
  },
  "three-families-of-christianity": {
   "metaDescription": "Christianity is not one tradition but three great families, each with its own genius and its own blind spots.",
@@ -3747,12 +3651,6 @@
   "grade": 6.5,
   "excerptGrade": 9.4
  },
- "science-and-faith-are-not-at-war": {
-  "metaDescription": "The story is so deeply set in Western culture that it feels like a fact: science and religion have always been at war, and science has been winning.",
-  "source": "derived",
-  "grade": 10.5,
-  "excerptGrade": 16.5
- },
  "evolution-and-genesis": {
   "metaDescription": "The debate over evolution and Genesis has generated more heat than light for over a century.",
   "source": "derived",
@@ -3826,12 +3724,6 @@
   "source": "rewrite",
   "grade": 12.3,
   "excerptGrade": 10.4
- },
- "christianity-after-christendom": {
-  "metaDescription": "The era when Christianity was the cultural default is over. What comes next may be harder, smaller, and more costly.",
-  "source": "derived",
-  "grade": 7.2,
-  "excerptGrade": 7.4
  },
  "the-spirituality-of-doubt": {
   "metaDescription": "Doubt is not the opposite of faith. It is faith doing its hardest work. And the Christian tradition has always known this, even when the church forgot.",

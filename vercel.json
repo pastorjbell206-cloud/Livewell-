@@ -235,7 +235,7 @@
         },
         {
             "source": "/writing/scripture-meditation",
-            "destination": "/writing/reading-the-bible-slowly",
+            "destination": "/writing/how-to-read-the-bible-without-making-it-say-what-you-want",
             "permanent": true
         },
         {
@@ -561,11 +561,6 @@
         {
             "source": "/writing/kingdom-of-god-not-what-you-think",
             "destination": "/theology",
-            "permanent": true
-        },
-        {
-            "source": "/writing/holy-spirit-not-feeling",
-            "destination": "/writing/what-does-the-holy-spirit-do",
             "permanent": true
         },
         {
@@ -1430,6 +1425,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/apologetics-isnt-faith-believing-without-evidence",
+            "destination": "/writing/is-faith-irrational",
+            "permanent": true
+        },
+        {
             "source": "/writing/apologetics-where-does-morality-come-from",
             "destination": "/writing/can-you-be-good-without-god",
             "permanent": true
@@ -1437,6 +1437,11 @@
         {
             "source": "/writing/apologetics-why-does-god-allow-evil",
             "destination": "/writing/if-god-is-good-why-suffering",
+            "permanent": true
+        },
+        {
+            "source": "/writing/being-filled-with-the-spirit",
+            "destination": "/writing/who-is-the-holy-spirit",
             "permanent": true
         },
         {
@@ -1451,6 +1456,11 @@
         },
         {
             "source": "/writing/christendom-is-ending-christianity-is-not",
+            "destination": "/writing/christendom-is-ending",
+            "permanent": true
+        },
+        {
+            "source": "/writing/christianity-after-christendom",
             "destination": "/writing/christendom-is-ending",
             "permanent": true
         },
@@ -1530,8 +1540,18 @@
             "permanent": true
         },
         {
+            "source": "/writing/holy-spirit-not-feeling",
+            "destination": "/writing/who-is-the-holy-spirit",
+            "permanent": true
+        },
+        {
             "source": "/writing/how-to-raise-children-in-the-faith",
             "destination": "/writing/how-to-talk-kids-faith-doubt",
+            "permanent": true
+        },
+        {
+            "source": "/writing/how-to-read-the-bible-devotionally",
+            "destination": "/writing/how-to-read-the-bible-without-making-it-say-what-you-want",
             "permanent": true
         },
         {
@@ -1552,6 +1572,11 @@
         {
             "source": "/writing/individual-sin-systemic-sin-2",
             "destination": "/writing/individual-sin-and-systemic-sin-explained",
+            "permanent": true
+        },
+        {
+            "source": "/writing/is-your-job-just-a-paycheck",
+            "destination": "/writing/what-is-vocation-work-as-calling",
             "permanent": true
         },
         {
@@ -1655,6 +1680,16 @@
             "permanent": true
         },
         {
+            "source": "/writing/prayer-when-you-do-not-feel-like-it",
+            "destination": "/writing/how-do-you-actually-pray",
+            "permanent": true
+        },
+        {
+            "source": "/writing/praying-when-you-dont-feel-it",
+            "destination": "/writing/how-do-you-actually-pray",
+            "permanent": true
+        },
+        {
             "source": "/writing/pro-life-pro-choice-labels",
             "destination": "/writing/christians-and-abortion",
             "permanent": true
@@ -1672,6 +1707,11 @@
         {
             "source": "/writing/protecting-marriage-in-ministry",
             "destination": "/writing/protecting-your-marriage-from-work",
+            "permanent": true
+        },
+        {
+            "source": "/writing/reading-the-bible-slowly",
+            "destination": "/writing/how-to-read-the-bible-without-making-it-say-what-you-want",
             "permanent": true
         },
         {
@@ -1697,6 +1737,11 @@
         {
             "source": "/writing/sabbath-isnt-optional",
             "destination": "/writing/what-the-sabbath-is-and-why-you-need-it",
+            "permanent": true
+        },
+        {
+            "source": "/writing/science-and-faith-are-not-at-war",
+            "destination": "/writing/faith-and-science",
             "permanent": true
         },
         {
@@ -1775,6 +1820,11 @@
             "permanent": true
         },
         {
+            "source": "/writing/the-death-of-christendom",
+            "destination": "/writing/christendom-is-ending",
+            "permanent": true
+        },
+        {
             "source": "/writing/the-early-church-under-rome",
             "destination": "/writing/witness-without-power",
             "permanent": true
@@ -1782,6 +1832,11 @@
         {
             "source": "/writing/the-father-wound-and-the-god-question",
             "destination": "/writing/what-fatherhood-requires",
+            "permanent": true
+        },
+        {
+            "source": "/writing/the-only-prayer-jesus-taught",
+            "destination": "/writing/how-do-you-actually-pray",
             "permanent": true
         },
         {
@@ -1797,6 +1852,11 @@
         {
             "source": "/writing/theology-of-borders",
             "destination": "/writing/what-the-bible-says-about-immigrants-and-refugees-in-depth",
+            "permanent": true
+        },
+        {
+            "source": "/writing/what-does-the-holy-spirit-do",
+            "destination": "/writing/who-is-the-holy-spirit",
             "permanent": true
         },
         {
@@ -1852,6 +1912,11 @@
         {
             "source": "/writing/your-marriage-is-ministry-too",
             "destination": "/writing/protecting-your-marriage-from-work",
+            "permanent": true
+        },
+        {
+            "source": "/writing/your-work-was-never-going-to-save-you",
+            "destination": "/writing/what-is-vocation-work-as-calling",
             "permanent": true
         }
     ],

@@ -6,13 +6,13 @@ Search engines and answer engines see a second layer beside every essay: a meta 
 
 | Measure | Value |
 |---|---|
-| Essays with a description | 591 |
-| Hand-written descriptions | 16 |
-| Derived from the essay's own sentences | 575 |
-| Essays with question-and-answer data | 93 |
-| Average reading grade, descriptions | 8.1 |
+| Essays with a description | 577 |
+| Hand-written descriptions | 13 |
+| Derived from the essay's own sentences | 564 |
+| Essays with question-and-answer data | 87 |
+| Average reading grade, descriptions | 8.2 |
 | Average reading grade, original standfirsts | 9.5 |
-| Derived descriptions at grade 12 or above (hand-rewrite queue) | 64 |
+| Derived descriptions at grade 12 or above (hand-rewrite queue) | 63 |
 
 ## Hand-rewrite queue
 
@@ -60,7 +60,6 @@ Derived descriptions that still read at college level. Each is true to the essay
 | apologetics-what-about-those-who-never-heard | 13.2 | It seems deeply unfair that eternity could hinge on whether you happened to be born where the message reached, and the unfairness is worth facing squarely. |
 | how-to-preach-to-people-who-have-heard-it-all | 13.2 | The hardest congregation is not the hostile one but the one that has already heard your text a hundred times and stopped expecting anything from it. |
 | the-womanhood-they-preached-was-small | 12.9 | The world I was raised in preached a womanhood of shrinkage, modesty as fear of the body, submission as erasure, silence as virtue, Scripture as a leash. |
-| apologetics-isnt-faith-believing-without-evidence | 12.9 | The popular definition of faith as belief without evidence is so common it feels obvious, and it happens to be wrong about what faith has always meant. |
 | the-questions-that-actually-matter | 12.8 | Most defenses of Christianity answer questions skeptics aren't asking. |
 | what-evangelicalism-was-supposed-to-be | 12.8 | That it became something else entirely is one of the great tragedies of modern American religion. |
 | what-a-christian-owes-the-city | 12.7 | The critique of political idolatry is finished only when it builds something. |
