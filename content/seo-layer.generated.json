@@ -606,13 +606,13 @@
   }
  },
  "faith-and-gender-identity": {
-  "metaDescription": "Before it is a debate, it is a person. The church has owed both of them something for a long time, and mostly sent an argument instead.",
-  "source": "derived",
-  "grade": 5.8,
-  "excerptGrade": 7.8,
+  "metaDescription": "A Christian look at gender dysphoria: Genesis, the eunuch of Acts 8, affirming and traditional views, the Cass Review, and what the church owes.",
+  "source": "rewrite",
+  "grade": 12,
+  "excerptGrade": 12.3,
   "qa": {
    "question": "What Does the Church Owe Transgender People?",
-   "answer": "Before it is a debate, it is a person. A teenager who cannot stand to be in the body they woke up in, and a mother in the parking lot who does not know how to keep her child alive and keep her faith at the same time. The church has owed both of them something for a long time, and mostly sent an argument instead."
+   "answer": "Gender dysphoria is real suffering before it is a political argument. This essay states the affirming case and the historic Christian view of the sexed body at full strength, lands with the historic view, and asks what the church owes the people it has too often turned into a cause."
   }
  },
  "faith-and-science": {
@@ -960,10 +960,10 @@
   "excerptGrade": 6.5
  },
  "what-jesus-said-the-good-life-is": {
-  "metaDescription": "Everyone is selling a version of the good life. Walk through any airport bookstore and you will find a hundred versions of the good life for sale.",
-  "source": "derived",
-  "grade": 5.8,
-  "excerptGrade": 10.4
+  "metaDescription": "What the Beatitudes mean: makarios and 'ashrê, Matthew 5 beside Luke 6's woes, Aristotle's good life, and how Augustine, Luther and Willard read them.",
+  "source": "rewrite",
+  "grade": 12,
+  "excerptGrade": 10.2
  },
  "how-do-you-actually-change": {
   "metaDescription": "What sanctification means, why willpower fails, how Reformed, Wesleyan, Keswick and Orthodox Christians explain change, and how the examen forms the heart.",
@@ -1416,12 +1416,6 @@
   "source": "derived",
   "grade": 4.6,
   "excerptGrade": 4.6
- },
- "beatitudes-actually-promising": {
-  "metaDescription": "The Beatitudes are the most domesticated passage in the New Testament. We have managed to read them as a comfort without allowing them to be a claim.",
-  "source": "derived",
-  "grade": 8.5,
-  "excerptGrade": 8.5
  },
  "before-launch-ministry-ask-other-church": {
   "metaDescription": "Before you build the food pantry, ask who already runs one. These are not romantic questions. They are stewardship questions.",
@@ -2820,10 +2814,14 @@
   "excerptGrade": 5.5
  },
  "how-to-find-gods-will-for-your-career": {
-  "metaDescription": "God is far less concerned with the one perfect job he has hidden from you than with the kind of person you are becoming in whatever work you already hold.",
-  "source": "derived",
-  "grade": 12.2,
-  "excerptGrade": 12.2
+  "metaDescription": "What the Bible means by God's will: decree and command, Friesen's wisdom view, Ignatian discernment, Acts 15, and how to choose a job without dread.",
+  "source": "rewrite",
+  "grade": 9.7,
+  "excerptGrade": 8.5,
+  "qa": {
+   "question": "How Do You Know God's Will for Your Life and Career?",
+   "answer": "Scripture never promises a hidden blueprint for your career that you might fail to find. It names God's will plainly, hands you wisdom and counsel, and frees you to choose under a providence your choices cannot wreck."
+  }
  },
  "bivocational-ministry-done-right": {
   "metaDescription": "A man called me late on a Tuesday, ashamed in a way he could barely put into words.",
@@ -2958,10 +2956,10 @@
   "excerptGrade": 10.8
  },
  "liturgical-vs-contemporary-worship": {
-  "metaDescription": "The worship wars of the 1990s were never really about music. Both are Christian worship. Both read Scripture, pray, sing, and preach.",
-  "source": "derived",
-  "grade": 3.4,
-  "excerptGrade": 6.8
+  "metaDescription": "Liturgical or contemporary worship? The history from Justin Martyr and the Reformers to Finney and Willow Creek, and how each way of worship forms us.",
+  "source": "rewrite",
+  "grade": 9.1,
+  "excerptGrade": 10.9
  },
  "charismatic-movement-inside-every-denomination": {
   "metaDescription": "The movement that began in a converted stable in Los Angeles in 1906 has now touched every branch of Christianity on earth.",
@@ -3032,14 +3030,10 @@
   "excerptGrade": 11.5
  },
  "why-christianity": {
-  "metaDescription": "The question is not whether Christianity is the only religion with truth in it.",
-  "source": "derived",
-  "grade": 8.4,
-  "excerptGrade": 7.6,
-  "qa": {
-   "question": "Why Christianity and Not Something Else?",
-   "answer": "The question is not whether Christianity is the only religion with truth in it. The question is whether it makes claims that are unique, claims that matter, and claims that can bear the weight of a life."
-  }
+  "metaDescription": "Why Christianity and not Islam, Buddhism or Hinduism? Hick's pluralism, Newbigin's reply, Prothero on real differences, and what only Christianity claims.",
+  "source": "rewrite",
+  "grade": 11.5,
+  "excerptGrade": 11.3
  },
  "how-to-talk-about-faith": {
   "metaDescription": "How to talk about faith with friends who are nones: who they are, why old methods felt like sales, and what 1 Peter 3 and Acts 17 teach us to do instead.",
@@ -3124,9 +3118,13 @@
   "excerptGrade": 8.4
  },
  "the-christian-mystics": {
-  "metaDescription": "The Christian mystical tradition is not an esoteric footnote to the faith.",
-  "source": "derived",
-  "grade": 9.7,
-  "excerptGrade": 11.7
+  "metaDescription": "Who the Christian mystics were, from Dionysius and Julian of Norwich to Teresa and Edwards, what mystical first meant, and the case for and against them.",
+  "source": "rewrite",
+  "grade": 11.8,
+  "excerptGrade": 9.7,
+  "qa": {
+   "question": "Who Were the Christian Mystics, and What Can They Teach Us?",
+   "answer": "Before mystical meant a private experience, it meant the hidden depth of Scripture and sacrament. Read that way, the great Christian mystics are not an escape from doctrine but its hardest school, and the sternest critics of what our age calls mysticism."
+  }
  }
 }

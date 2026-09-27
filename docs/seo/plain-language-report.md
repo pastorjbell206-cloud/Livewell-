@@ -6,13 +6,13 @@ Search engines and answer engines see a second layer beside every essay: a meta 
 
 | Measure | Value |
 |---|---|
-| Essays with a description | 467 |
+| Essays with a description | 466 |
 | Hand-written descriptions | 4 |
-| Derived from the essay's own sentences | 463 |
-| Essays with question-and-answer data | 82 |
-| Average reading grade, descriptions | 9.0 |
+| Derived from the essay's own sentences | 462 |
+| Essays with question-and-answer data | 83 |
+| Average reading grade, descriptions | 9.1 |
 | Average reading grade, original standfirsts | 9.8 |
-| Derived descriptions at grade 12 or above (hand-rewrite queue) | 48 |
+| Derived descriptions at grade 12 or above (hand-rewrite queue) | 47 |
 
 ## Hand-rewrite queue
 
@@ -67,4 +67,3 @@ Derived descriptions that still read at college level. Each is true to the essay
 | prophetic-pastor | 12.3 | And when they talk about pastoral ministry, they usually mean someone who comes to the bedside, who holds the grieving, who offers presence in the dark. |
 | where-church-was-silent | 12.3 | The church in America has a history that is not primarily the history of courage and faithfulness, though it contains that. |
 | principalities-and-powers-the-bibles-language-for-systems | 12.3 | Paul had a vocabulary for systemic evil two thousand years before the word systemic existed. |
-| how-to-find-gods-will-for-your-career | 12.2 | God is far less concerned with the one perfect job he has hidden from you than with the kind of person you are becoming in whatever work you already hold. |

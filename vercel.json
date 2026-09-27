@@ -119,11 +119,6 @@
             "permanent": true
         },
         {
-            "source": "/writing/beatitudes-actually-promising",
-            "destination": "/writing/what-jesus-said-the-good-life-is",
-            "permanent": true
-        },
-        {
             "source": "/writing/pastoral-care-wealthy-congregant",
             "destination": "/justice",
             "permanent": true
@@ -1322,6 +1317,11 @@
         {
             "source": "/writing/baptism-mode-and-subjects",
             "destination": "/writing/why-baptism",
+            "permanent": true
+        },
+        {
+            "source": "/writing/beatitudes-actually-promising",
+            "destination": "/writing/what-jesus-said-the-good-life-is",
             "permanent": true
         },
         {
