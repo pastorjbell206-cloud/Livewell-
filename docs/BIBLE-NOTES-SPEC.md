@@ -153,7 +153,7 @@ notes accurate but too short and missing whole layers. A version 2 note
 carries `"v": 2` and everything above, deepened, plus the fields below. The
 validator holds any file marked `"v": 2` to these rules.
 
-**Chapter note, version 2** (aim for 3,000 to 4,500 words):
+**Chapter note, version 2** (aim for 3,500 to 6,000 words; the densest chapters may run longer). `client/public/bible/notes/john/1.json` and `john/2.json`, with `john/intro.json`, are the models:
 
 ```json
 {
