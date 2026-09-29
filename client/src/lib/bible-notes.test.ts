@@ -2,7 +2,7 @@ import { describe, it, expect } from "vitest";
 
 import type { BibleBook } from "./bible";
 import type { CatalogueItem } from "./catalogue";
-import { flattenStory, itemsForPassage, paragraphs, refChapters, spreadKinds, storyPlace, translationHref, verseRange, type Story } from "./bible-notes";
+import { flattenStory, itemsForPassage, noteForVerse, paragraphs, refChapters, refHref, spreadKinds, storyPlace, translationHref, verseRange, type Story, type VerseNote } from "./bible-notes";
 
 const BOOKS: BibleBook[] = [
   { code: "Gen", slug: "genesis", name: "Genesis", testament: "OT", chapters: 50 },
@@ -76,5 +76,26 @@ describe("small helpers", () => {
     expect(verseRange("3-9")).toEqual([3, 9]);
     expect(verseRange("12")).toEqual([12, 12]);
     expect(translationHref("1 John", 4, "ESV")).toBe("https://www.biblegateway.com/passage/?search=1%20John%204&version=ESV");
+  });
+});
+
+describe("verse notes", () => {
+  const notes: VerseNote[] = [
+    { v: "1", context: "a" },
+    { v: "2-4", context: "b" },
+    { v: "5", context: "c" },
+  ];
+  it("finds the entry that covers a verse, including inside a range", () => {
+    expect(noteForVerse(notes, 1)?.context).toBe("a");
+    expect(noteForVerse(notes, 3)?.context).toBe("b");
+    expect(noteForVerse(notes, 5)?.context).toBe("c");
+    expect(noteForVerse(notes, 6)).toBeNull();
+  });
+  it("links cross-references to the verse in the Study Bible", () => {
+    expect(refHref("Romans 3:21-26", BOOKS)).toBe("/study/bible/romans/3#v21");
+    expect(refHref("Psalm 23", BOOKS)).toBe("/study/bible/psalms/23");
+    expect(refHref("1 Corinthians 13:4", BOOKS)).toBe("/study/bible/1-corinthians/13#v4");
+    expect(refHref("Song of Solomon 2:1", BOOKS)).toBe("/study/bible/song-of-solomon/2#v1");
+    expect(refHref("Hezekiah 1:1", BOOKS)).toBeNull();
   });
 });

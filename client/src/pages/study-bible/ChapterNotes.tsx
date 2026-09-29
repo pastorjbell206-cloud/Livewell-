@@ -25,9 +25,11 @@ import {
   verseRange,
   type ChapterNote,
   type Doctrine,
+  type VerseNote,
 } from "@/lib/bible-notes";
 import { buildIndex, fetchCatalogue, search, type CatalogueItem } from "@/lib/catalogue";
 import { Prose, RelatedList, card, kicker, quietLink, useLoad } from "@/pages/study-bible/shared";
+import { VerseByVerse } from "@/pages/study-bible/VerseNotes";
 
 const HEB: CSSProperties = { fontFamily: '"SBL Hebrew", "Ezra SIL", "Taamey Frank CLM", "Times New Roman", serif', direction: "rtl" };
 const GRK: CSSProperties = { fontFamily: '"SBL Greek", "Gentium Plus", "Times New Roman", serif' };
@@ -114,10 +116,11 @@ export function ChapterNotesBody(props: {
   note: ChapterNote;
   data: BibleChapter | null;
   place: Place | null | undefined;
+  verseNotes: VerseNote[] | null;
   onWord: (v: BibleVerse, i: number) => void;
   onVerse: (v: BibleVerse) => void;
 }) {
-  const { books, book, chapter, note, data, place, onWord, onVerse } = props;
+  const { books, book, chapter, note, data, place, verseNotes, onWord, onVerse } = props;
   const lang = book.testament === "OT" ? "H" : "G";
   const key = `${book.slug}/${chapter}`;
   const [read, setReadState] = useState(() => readProgress().has(key));
@@ -223,6 +226,11 @@ export function ChapterNotesBody(props: {
           })}
         </div>
       </Section>
+      {verseNotes && verseNotes.length > 0 && (
+        <Section title="Verse by verse: context, language, history, doctrine" id="verse-by-verse">
+          <VerseByVerse notes={verseNotes} book={book} chapter={chapter} books={books} doctrines={doctrines} data={data} onVerse={onVerse} onWord={onWord} />
+        </Section>
+      )}
       <Section title={lang === "H" ? "How it points to Christ" : "What it shows of Christ"}>
         <Prose text={note.christ} />
       </Section>

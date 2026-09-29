@@ -12,6 +12,11 @@
  * language, no exclamation point or em-dash outside quoted Scripture, and every quotation
  * found verbatim in the Berean Standard Bible. It also checks that the story
  * path walks every chapter of the Bible exactly once.
+ *
+ * Verse notes (notes/<slug>/verses/<n>.json) must cover every verse in order,
+ * in entries of at most six verses; ground each grammar note in Strong's
+ * numbers that occur in those verses; tie every doctrine the chapter note names
+ * to at least one verse; and give cross-references that exist.
  */
 import fs from "node:fs";
 import path from "node:path";
@@ -25,6 +30,9 @@ const json = (p) => JSON.parse(fs.readFileSync(path.join(DIR, p), "utf8"));
 
 const books = json("books.json");
 const doctrineIds = new Set(json("doctrines.json").doctrines.map((d) => d.id));
+// Flip to true once every chapter has verse notes; until then a full run
+// checks the verse notes present and reports how many remain.
+const VERSES_COMPLETE = false;
 
 // Every BSB verse, normalized, so a quotation can be checked against the text itself.
 const norm = (s) =>
@@ -158,7 +166,106 @@ function checkChapter(b, c, where) {
   else for (const [i, q] of d.questions.entries()) prose(`${where}.questions[${i}]`, q, 25, 400);
 }
 
-let intros = 0, notes = 0;
+// "John 3:16", "Psalm 23", "1 Kings 8:22-53", "Romans 1:18-3:20" → valid or not.
+const bookByName = new Map(books.map((b) => [b.name.toLowerCase(), b]));
+bookByName.set("psalm", bookByName.get("psalms"));
+function refOk(ref) {
+  const m = String(ref).match(/^((?:[1-3] )?[A-Za-z]+(?: of [A-Za-z]+)?) (\d+)(?::(\d+))?(?:-(\d+)(?::(\d+))?)?$/);
+  if (!m) return false;
+  const b = bookByName.get(m[1].toLowerCase());
+  if (!b) return false;
+  const c = +m[2];
+  const d = chapterData.get(`${b.slug}/${c}`);
+  if (!d) return false;
+  const lastOf = (x) => x.verses[x.verses.length - 1].v;
+  if (m[3] && +m[3] > lastOf(d)) return false;
+  if (m[5]) {
+    const d2 = chapterData.get(`${b.slug}/${m[4]}`);
+    return !!d2 && +m[4] > c && +m[5] <= lastOf(d2);
+  }
+  if (m[4] && m[3]) return +m[4] > +m[3] && +m[4] <= lastOf(d);
+  if (m[4] && !m[3]) return +m[4] > c && chapterData.has(`${b.slug}/${m[4]}`);
+  return true;
+}
+
+function checkVerses(b, c, where) {
+  const d = json(`notes/${b.slug}/verses/${c}.json`);
+  const data = chapterData.get(`${b.slug}/${c}`);
+  const last = data.verses[data.verses.length - 1].v;
+  if (!Array.isArray(d.verses) || d.verses.length === 0) return fail(where, "verses missing");
+  let next = 1, grammar = 0, history = 0;
+  const taught = new Set();
+  for (const [i, e] of d.verses.entries()) {
+    const w = `${where}[${e.v}]`;
+    const m = String(e.v ?? "").match(/^(\d+)(?:-(\d+))?$/);
+    if (!m) { fail(w, `bad range "${e.v}"`); return; }
+    const a = +m[1], z = +(m[2] ?? m[1]);
+    if (a !== next) { fail(w, `starts at ${a}, expected ${next}`); return; }
+    if (z < a) { fail(w, "range runs backward"); return; }
+    if (z - a + 1 > 6) fail(w, "an entry may cover at most six verses");
+    next = z + 1;
+    prose(`${w}.context`, e.context, 60, 1400);
+    const extras = ["grammar", "history", "text"].filter((k) => e[k] != null);
+    if (extras.length === 0 && !(Array.isArray(e.theology) && e.theology.length)) fail(w, "needs grammar, history, theology, or text beyond the context");
+    if (e.grammar != null) {
+      grammar++;
+      prose(`${w}.grammar`, e.grammar, 80, 1600);
+      const here = new Set();
+      for (const v of data.verses) if (v.v >= a && v.v <= z) for (const x of v.w) here.add(x[3]);
+      if (!Array.isArray(e.words) || e.words.length === 0) fail(w, "a grammar note names the Strong's numbers it discusses in \"words\"");
+      else for (const s of e.words) if (!here.has(s)) fail(w, `${s} does not occur in ${b.slug} ${c}:${e.v}`);
+    } else if (e.words != null) fail(w, "\"words\" belongs with a grammar note");
+    if (e.history != null) { history++; prose(`${w}.history`, e.history, 80, 1600); }
+    if (e.text != null) prose(`${w}.text`, e.text, 60, 1200);
+    if (e.theology != null) {
+      if (!Array.isArray(e.theology)) fail(w, "theology must be a list");
+      else for (const [j, t] of e.theology.entries()) {
+        if (!doctrineIds.has(t.id)) fail(`${w}.theology[${j}]`, `unknown doctrine "${t.id}"`);
+        else taught.add(t.id);
+        prose(`${w}.theology[${j}].note`, t.note, 60, 1200);
+      }
+    }
+    if (e.refs != null) {
+      if (!Array.isArray(e.refs)) fail(w, "refs must be a list");
+      else for (const r of e.refs) if (!refOk(r)) fail(w, `cross-reference "${r}" is not a real passage (write "Book 3:16" or "Book 3:16-18")`);
+    }
+  }
+  if (next !== last + 1) fail(where, `ends at ${next - 1}, chapter ends at ${last}`);
+  if (d.verses.length < Math.ceil(last / 3)) fail(where, `only ${d.verses.length} entries for ${last} verses (at least ${Math.ceil(last / 3)})`);
+  const wantGrammar = Math.max(1, Math.round(d.verses.length * 0.3));
+  if (grammar < wantGrammar) fail(where, `${grammar} grammar notes; at least ${wantGrammar} for ${d.verses.length} entries`);
+  if (history < 1) fail(where, "at least one history note");
+  const notePath = path.join(DIR, "notes", b.slug, `${c}.json`);
+  if (fs.existsSync(notePath)) {
+    for (const x of json(`notes/${b.slug}/${c}.json`).doctrines ?? [])
+      if (!taught.has(x.id)) fail(where, `the chapter note's doctrine "${x.id}" is tied to no verse`);
+  }
+}
+
+function checkStudy(id, where) {
+  const d = json(`doctrines/${id}.json`);
+  if (d.id !== id) fail(where, `id is "${d.id}"`);
+  prose(`${where}.definition`, d.definition, 300, 3000);
+  prose(`${where}.ot`, d.ot, 800, 7000);
+  prose(`${where}.nt`, d.nt, 800, 7000);
+  prose(`${where}.history`, d.history, 600, 6000);
+  prose(`${where}.errors`, d.errors, 250, 3000);
+  prose(`${where}.life`, d.life, 250, 3000);
+  if (!Array.isArray(d.keyTexts) || d.keyTexts.length < 8 || d.keyTexts.length > 15) fail(where, "eight to fifteen key texts");
+  else for (const [i, k] of d.keyTexts.entries()) {
+    if (!refOk(k.ref)) fail(`${where}.keyTexts[${i}]`, `"${k.ref}" is not a real passage`);
+    prose(`${where}.keyTexts[${i}].why`, k.why, 60, 700);
+  }
+  if (!Array.isArray(d.differ) || d.differ.length < 2 || d.differ.length > 5) fail(where, "two to five positions in differ");
+  else for (const [i, x] of d.differ.entries()) {
+    if (typeof x.view !== "string" || x.view.length < 3) fail(`${where}.differ[${i}]`, "missing view");
+    prose(`${where}.differ[${i}].body`, x.body, 150, 1800);
+  }
+  if (!Array.isArray(d.questions) || d.questions.length !== 3) fail(where, "exactly three questions");
+  else for (const [i, q] of d.questions.entries()) prose(`${where}.questions[${i}]`, q, 25, 400);
+}
+
+let intros = 0, notes = 0, verseFiles = 0, versesMissing = 0, studies = 0;
 for (const b of books) {
   if (partial && !only.includes(b.slug)) continue;
   const introPath = path.join(DIR, "notes", b.slug, "intro.json");
@@ -169,7 +276,18 @@ for (const b of books) {
     const p = path.join(DIR, "notes", b.slug, `${c}.json`);
     if (!fs.existsSync(p)) { if (!partial) fail(`${b.slug}/${c}`, "missing"); continue; }
     try { checkChapter(b, c, `${b.slug}/${c}`); notes++; } catch (e) { fail(`${b.slug}/${c}`, e.message); }
+    const vp = path.join(DIR, "notes", b.slug, "verses", `${c}.json`);
+    if (!fs.existsSync(vp)) { versesMissing++; if (!partial && VERSES_COMPLETE) fail(`${b.slug}/verses/${c}`, "missing"); continue; }
+    try { checkVerses(b, c, `${b.slug}/verses/${c}`); verseFiles++; } catch (e) { fail(`${b.slug}/verses/${c}`, e.message); }
   }
+}
+
+// Doctrine studies: checked where present; required once STUDIES_COMPLETE.
+const STUDIES_COMPLETE = false;
+for (const id of doctrineIds) {
+  if (partial && !only.includes(id)) continue;
+  if (!fs.existsSync(path.join(DIR, "doctrines", `${id}.json`))) { if (!partial && STUDIES_COMPLETE) fail(`doctrines/${id}`, "missing study"); continue; }
+  try { checkStudy(id, `doctrines/${id}`); studies++; } catch (e) { fail(`doctrines/${id}`, e.message); }
 }
 
 // The story path: eleven acts that walk all 1,189 chapters exactly once.
@@ -196,9 +314,8 @@ if (!partial) {
 
 // The generated index must match the notes it summarizes.
 if (!partial) {
-  const { buildIndex } = await import("./build-bible-notes-index.mjs");
-  const cur = fs.existsSync(path.join(DIR, "notes-index.json")) ? fs.readFileSync(path.join(DIR, "notes-index.json"), "utf8") : "";
-  if (cur !== JSON.stringify(buildIndex()) + "\n") fail("notes-index.json", "stale: run node scripts/build-bible-notes-index.mjs");
+  const { staleFiles } = await import("./build-bible-notes-index.mjs");
+  for (const f of staleFiles()) fail(f, "stale: run node scripts/build-bible-notes-index.mjs");
 }
 
 if (errors.length) {
@@ -206,4 +323,4 @@ if (errors.length) {
   for (const e of errors.slice(0, 200)) console.error("  " + e);
   process.exit(1);
 }
-console.log(`✓ bible notes: ${intros} introductions, ${notes} chapter notes${partial ? " (partial check)" : ", story path covers all 1,189 chapters"}`);
+console.log(`✓ bible notes: ${intros} introductions, ${notes} chapter notes, ${verseFiles} verse-note files, ${studies} doctrine studies${versesMissing && !VERSES_COMPLETE ? ` (${versesMissing} chapters still without verse notes)` : ""}${partial ? " (partial check)" : ", story path covers all 1,189 chapters"}`);

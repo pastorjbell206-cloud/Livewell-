@@ -145,3 +145,108 @@ chapters.
 
 `client/public/bible/notes/genesis/1.json` is the model. Match its depth and
 its tone.
+
+## Verse notes: `client/public/bible/notes/<slug>/verses/<chapter>.json`
+
+The chapter note tells the reader what the chapter is. Verse notes walk
+through it verse by verse, the way a commentary does, in four kinds of
+context: **literary** (what this verse does in its paragraph, argument, or
+poem), **grammatical** (what the Hebrew, Aramaic, or Greek is actually doing),
+**historical** (the background this verse in particular needs), and
+**theological** (the doctrine this verse teaches, tied to the verse itself).
+They are the layer a reader opens by tapping a verse number.
+
+```json
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "Required. One to four sentences: what this verse says and what it does where it stands. Name how it connects to what comes before and after.",
+      "grammar": "What the original language is doing here and why it matters to the meaning: a verb's stem, tense, or mood; word order; a construction; a play on words; a translation choice the grammar forces.",
+      "words": ["H1254A"],
+      "history": "Background this verse needs: a person, place, custom, institution, date, or ancient parallel.",
+      "theology": [{ "id": "creation", "note": "How this verse teaches the doctrine, in one to three sentences." }],
+      "text": "A manuscript difference or translation question, stated fairly.",
+      "refs": ["John 1:1-3", "Hebrews 11:3"]
+    }
+  ]
+}
+```
+
+- **Coverage.** Entries run from verse 1 to the last verse, in order, with no
+  gaps. Most entries cover one or two verses; three is common in narrative;
+  never more than six (a genealogy or list). A chapter needs at least one
+  entry for every three verses.
+- **Every entry** has `context` plus at least one of `grammar`, `history`,
+  `theology`, or `text`. Only include a field when there is something true
+  and worth saying; filler defeats the point.
+- **Grammar.** Roughly a third of entries or more carry a `grammar` note, and
+  the verses that turn on a word or construction must have one. Work from the
+  parsing that `bible-notes-helper.mjs <slug> <ch> --verses` prints, and list
+  in `words` the Strong's numbers you discuss (they must occur in the
+  entry's verses). Explain for a reader who knows no Hebrew or Greek: give the
+  word in transliteration, say what the form is, and say what difference it
+  makes. Avoid the known fallacies: the aorist does not by itself mean
+  "once for all"; a word's etymology is not its meaning; one word does not
+  carry all its possible senses in every place; Hebrew verb forms mark aspect
+  and sequence more than time, so don't hang doctrine on "the perfect tense".
+  When grammarians disagree about a construction, say so.
+- **Theology.** Tie doctrines to the verses that actually teach them. Every
+  doctrine the chapter note lists must appear in at least one verse's
+  `theology`, and verse notes may use any id in `doctrines.json` (the finer
+  ones, such as justification, union, incarnation, or temple, are there for
+  this). Say what the verse contributes to the doctrine, not a general
+  summary of the doctrine. Contested questions keep their positions.
+- **History.** Every chapter needs at least one. Same accuracy rules as the
+  chapter note: never invent, date carefully, name only what you are sure of.
+- **Text.** Use when a verse has a real manuscript question (the Greek
+  editions mark these in the helper's output) or a translation choice a
+  reader would notice between English Bibles. Say what the options are.
+- **Refs.** Up to five cross-references that genuinely illuminate the verse,
+  written "Book 3:16", "Book 3:16-18", or "Book 3". Book names as the site
+  spells them (Psalms or Psalm, Song of Solomon, 1 Corinthians). The
+  validator rejects references that don't exist.
+- Don't repeat the chapter note. Where the chapter note has already said
+  something, the verse note goes further or stays silent.
+- **Quotation marks.** Double quotes are for the BSB only and are checked
+  word for word. Put glosses, literal renderings, and other translations'
+  wording in single curly quotes: ‘day one’, ‘a wind from God’.
+- Everything in "The register" and "Accuracy" above applies.
+
+`client/public/bible/notes/genesis/verses/1.json` is the model.
+
+## Doctrine studies: `client/public/bible/doctrines/<id>.json`
+
+Each doctrine in `doctrines.json` has a study: how the whole Bible teaches
+it, from its first appearance to its last, and how the church has confessed
+it. It is biblical theology first (the doctrine as it unfolds through the
+story) and then the church's reflection on it. The site's systematic pages
+under `/theology/doctrine/` already survey the major views at length; the
+study links there rather than repeating them.
+
+```json
+{
+  "id": "justification",
+  "definition": "One or two paragraphs: what the doctrine is, in plain words, and the biblical vocabulary behind it (the Hebrew and Greek terms, transliterated, with what they mean).",
+  "ot": "Two to five paragraphs: how the Old Testament lays the ground, in canonical and historical order, naming the passages.",
+  "nt": "Two to five paragraphs: how Jesus and the apostles develop or fulfill it, naming the passages.",
+  "keyTexts": [{ "ref": "Genesis 15:6", "why": "One to three sentences: what this text contributes." }],
+  "history": "Two to four paragraphs: how the church has confessed and debated it, with the councils, creeds, confessions, and theologians that actually shaped it, dated.",
+  "differ": [{ "view": "Name of a position", "body": "The position in its strongest form, as its own defenders would put it." }],
+  "errors": "One or two paragraphs: the misunderstandings and distortions the church has rejected, and why.",
+  "life": "One or two paragraphs: what difference the doctrine makes to how a person lives, prays, and hopes. Plain, not a sermon.",
+  "questions": ["Three questions for study or a group."]
+}
+```
+
+- `keyTexts`: eight to fifteen texts spanning both testaments, in Bible
+  order, as validated references ("Romans 3:21-26").
+- `differ`: where faithful Christians genuinely disagree (second- and
+  third-order questions), two to five positions stated with equal care, no
+  winner declared. For a first-order doctrine where the church's confession
+  is settled (the Trinity, the incarnation, the resurrection), `differ` may
+  instead set out the questions Christians still debate within that
+  confession, and `errors` names the positions the creeds rejected.
+- Name only real councils, creeds, confessions, dates, and theologians, and
+  describe their positions accurately. Never quote them; describe.
+- Same register and accuracy rules as everything else in this brief.
