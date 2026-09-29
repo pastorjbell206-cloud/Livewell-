@@ -1,0 +1,178 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "The chapter opens with the problem the promise of chapter 15 has not yet solved: Sarai has borne no children. In the same breath it introduces the solution Sarai will reach for, her Egyptian slave Hagar.",
+      "grammar": "The sentence begins with the subject, veSarai, rather than with the usual narrative verb. Hebrew uses this word order to open a new episode or to give background, so the verse sets the scene before any action. The two halves are balanced: lo yaldah lo, ‘she had not borne to him’, and velah shifchah, ‘but she had a maidservant’. What Sarai lacks and what she owns stand side by side. Shifchah is a female slave attached to a mistress; Genesis 21 will use a different word, amah, for Hagar.",
+      "words": ["H8297", "H3205", "H8198", "H4713", "H1904"],
+      "history": "Genesis 12:16 lists female servants among the gifts Pharaoh gave Abram in Egypt, which is the most natural explanation for an Egyptian slave in his household. The text does not say so directly.",
+      "refs": ["Genesis 11:30", "Genesis 12:16", "Genesis 21:9-10"]
+    },
+    {
+      "v": "2",
+      "context": "Sarai proposes her plan and names the LORD as the reason she needs it. Abram agrees without a word. Neither of them asks God.",
+      "grammar": "Atsarani YHWH, ‘the LORD has restrained me’, uses a verb meaning to hold back or shut up; Genesis 20:18 uses it when the LORD ‘closed’ every womb in Abimelech's house. Sarai reads her barrenness theologically, correctly, but draws her own conclusion from it. Ibbaneh, ‘I will be built up’, is a Niphal of banah, ‘to build’, and sounds like ben, ‘son’: to be given sons is to be built into a house. Rachel uses the same words with her maid Bilhah (30:3). \"Abram listened to the voice of Sarai\" (vayyishma... leqol) is the idiom for obeying.",
+      "words": ["H6113", "H1129", "H0194", "H8085G", "H6963A"],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Sarai's reasoning begins with a true confession, that the LORD governs the womb, and ends with a scheme to get around him. The phrasing of Abram's consent recalls Adam listening to his wife's voice (3:17), and the rest of the chapter shows the cost."
+        }
+      ],
+      "refs": ["Genesis 30:3", "Genesis 20:18", "Genesis 3:17", "1 Samuel 1:5-6"]
+    },
+    {
+      "v": "3",
+      "context": "The narrator dates the decision: ten years after Abram settled in Canaan. The long wait explains the plan without excusing it. Sarai hands Hagar to Abram not merely as a servant but as a wife.",
+      "grammar": "The verse slows to name everyone formally: ‘Sarai, Abram's wife, took Hagar the Egyptian, her maidservant... and gave her to Abram her husband to him as a wife’. The repetition of titles (wife, maidservant, husband) shows the relationships being rearranged. Le'ishah, ‘as a wife’, gives Hagar a secondary but real marital status, though the chapter never lets her forget she is still Sarai's servant (verses 6, 8, 9).",
+      "words": ["H3947G", "H5414G", "H7093", "H0802H", "H0376H"],
+      "theology": [
+        {
+          "id": "family",
+          "note": "Genesis never condemns Abram's second marriage in a sentence, but it shows its fruit: rivalry, blame, and a divided household. The same pattern returns with Jacob's wives and their maids (chapters 29 and 30), and the narrative's picture of such households supports the one-flesh pattern of 2:24."
+        }
+      ],
+      "refs": ["Genesis 12:4", "Genesis 3:6", "Genesis 2:24", "Genesis 30:3-4"]
+    },
+    {
+      "v": "4",
+      "context": "The plan works at once: Hagar conceives. But as soon as she sees it, she looks down on Sarai, and the household begins to come apart.",
+      "grammar": "Vattera ki haratah, ‘she saw that she had conceived’, is the first act of seeing in a chapter full of it; it ends with Hagar naming the God who sees (verse 13). Vatteqal gevirtah be'eineiha means ‘her mistress became light (of little account) in her eyes’. The verb is qalal, ‘to be light’, the root God used in 12:3 for the one who treats Abram's family with contempt. Gevirah, ‘mistress’, is a title of rank, used later for a queen mother (1 Kings 15:13).",
+      "words": ["H2029", "H7200G", "H7043", "H1404"],
+      "refs": ["Proverbs 30:21-23", "Genesis 12:3", "1 Samuel 1:6-7"]
+    },
+    {
+      "v": "5",
+      "context": "Sarai blames Abram for the plan she proposed and appeals to the LORD to judge between them. The unity of verse 2 has become accusation.",
+      "grammar": "Chamasi aleykha, ‘my wrong is upon you’, uses chamas, a strong word for violence or violent injustice; it is the word for the corruption that filled the earth before the flood (6:11). Sarai means that the injury done to her is Abram's responsibility. Becheqekha, ‘in your bosom’, is an intimate phrase for an embrace. \"May the LORD judge between you and me\" is a formula for referring a dispute to God (compare 31:53, 1 Samuel 24:12).",
+      "words": ["H2555", "H2436G", "H7043", "H8199"],
+      "text": "In the standard Hebrew text the word ‘and between you’ (uveinekha) is spelled unusually, and the Masoretes, the scribes who preserved the text, marked a letter in it with a special dot, one of a handful of such dotted words in the Torah. Its meaning is uncertain; later rabbinic interpretation drew lessons from it. It does not change the translation.",
+      "refs": ["Genesis 6:11", "Genesis 31:53", "1 Samuel 24:12"]
+    },
+    {
+      "v": "6",
+      "context": "Abram gives Hagar back to Sarai's control, and Sarai mistreats her until she runs away. The man who fought four kings for Lot will not stand up for the mother of his child.",
+      "grammar": "Abram's reply echoes Sarai's language: asi-lah hattov be'einayikh, ‘do to her what is good in your eyes’, answering Hagar's contempt ‘in her eyes’ (verses 4-5) with Sarai's judgment ‘in your eyes’. Watte'anneha, ‘she afflicted her’, is the Piel of anah, the verb for Egypt's oppression of Israel (15:13, Exodus 1:11-12). Vattivrach, ‘she fled’, is the verb later used of Jacob fleeing Laban (31:21) and Moses fleeing Pharaoh (Exodus 2:15).",
+      "words": ["H3027H", "H2896A", "H6031B", "H1272"],
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "The one with the least power pays for the conflict between those with the most. Scripture names Sarai's treatment with the verb it will use for Egypt's cruelty, so the chosen family stands under the same judgment it will later ask God to bring on Pharaoh."
+        },
+        {
+          "id": "justice-poor",
+          "note": "Israel's law later commands that a runaway slave not be returned to a master or oppressed (Deuteronomy 23:15-16). Hagar's story shows why such a law was needed, even in Abram's own house."
+        }
+      ],
+      "refs": ["Genesis 15:13", "Exodus 1:11-12", "Deuteronomy 23:15-16", "Exodus 2:15"]
+    },
+    {
+      "v": "7",
+      "context": "In the wilderness, on the road toward Egypt, the angel of the LORD finds Hagar at a spring. This is the first appearance of the angel of the LORD in the Bible, and he comes to an Egyptian slave.",
+      "grammar": "Vayyimtsa'ah, ‘and he found her’, makes the angel the seeker. Mal'akh means ‘messenger’; context decides whether a human or heavenly one is meant. The word for ‘spring’, ayin, is the same as the word for ‘eye’, which the chapter has just used three times (verses 4-6). At an ‘eye’ of water, the God who sees finds the woman whom others looked at with contempt.",
+      "words": ["H4672", "H4397H", "H5869M", "H7793"],
+      "history": "Shur means ‘wall’, and names the desert region of the northern Sinai near Egypt's eastern frontier. Israel entered the wilderness of Shur right after crossing the sea (Exodus 15:22), and 1 Samuel 15:7 locates Shur ‘east of Egypt’. The road to Shur was the road home.",
+      "theology": [
+        {
+          "id": "angels",
+          "note": "The angel of the LORD is distinct from the LORD in name yet speaks as the LORD himself (verse 10) and is identified with him (verse 13). Interpreters have understood him as a created messenger bearing God's full authority, as a direct appearance of God, or, as many in the early church held, as the Son before his incarnation."
+        }
+      ],
+      "refs": ["Exodus 15:22", "1 Samuel 15:7", "Genesis 21:17", "Exodus 3:2"]
+    },
+    {
+      "v": "8",
+      "context": "The angel speaks to Hagar by name, the first person in the chapter to do so, and asks two questions. Hagar answers only the first: she is running from Sarai. She does not know where she is going.",
+      "grammar": "The address, ‘Hagar, maidservant of Sarai’, is both kind and exact. It names her and acknowledges her real situation. The questions ei-mizzeh vat ve'anah telekhi, ‘from where have you come, and where are you going’, recall God's questions to Adam and Cain (3:9, 4:9): questions God asks not for information but to draw a person into speech. Hagar's reply uses a participle, borachat, ‘I am fleeing’, describing the state she is still in.",
+      "words": ["H0335", "H0575", "H1272", "H1404"],
+      "refs": ["Genesis 3:9", "Genesis 4:9", "1 Kings 19:9"]
+    },
+    {
+      "v": "9",
+      "context": "The first of three speeches of the angel (verses 9, 10, 11-12), each introduced by the same formula. The command comes first and the promises follow, so that Hagar returns carrying a future of her own.",
+      "grammar": "Shuvi, ‘return’, is followed by vehit'anni, ‘and humble yourself’ or ‘submit’, a Hithpael (reflexive) form of anah, the same root used for Sarai's harsh treatment in verse 6 and for Hagar's ‘affliction’ in verse 11. The wordplay is hard to miss: the one who was afflicted is told to bend under the hand of the one who afflicted her. The chapter note discusses the moral difficulty; the grammar shows the narrator did not hide it.",
+      "words": ["H7725G", "H6031B", "H8478G", "H3027K"],
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "God's word to Hagar does not end her hardship at once but sets it inside a larger promise. The return is survival for a pregnant woman alone in the desert, and the promises that follow belong to her alone."
+        }
+      ],
+      "refs": ["Genesis 21:14-19", "1 Peter 2:18-20"]
+    },
+    {
+      "v": "10",
+      "context": "The second speech gives Hagar a promise of numberless descendants, the kind of promise so far given only to Abram. The angel speaks in the first person, as God.",
+      "grammar": "Harbah arbeh, ‘I will surely multiply’, pairs an infinitive absolute with a finite verb for emphasis, the exact construction God uses to Abraham in 22:17. The next phrase, ‘they will not be counted for multitude’, echoes 13:16 and 15:5. The first-person ‘I will multiply’ on the lips of the angel is one of the details that leads Hagar, in verse 13, to identify the speaker as the LORD.",
+      "words": ["H7235A", "H2233H", "H5608A", "H7230"],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "God's promise of a great people reaches past the covenant line to Hagar's son. Ishmael's twelve princes (25:12-16) show the promise kept, so Genesis presents God as faithful to those outside the chosen family as well as within it."
+        }
+      ],
+      "refs": ["Genesis 22:17", "Genesis 17:20", "Genesis 25:12-16", "Genesis 21:18"]
+    },
+    {
+      "v": "11",
+      "context": "The third speech announces the son's birth and name and explains it: Ishmael, because the LORD has heard Hagar's affliction. The child's name will be a lifelong reminder that God heard her.",
+      "grammar": "The announcement follows a fixed Hebrew pattern: hinnakh harah veyoladt ben veqarat shemo, ‘behold, you are pregnant and will bear a son, and you will call his name’. The same form announces Samson's birth (Judges 13:5) and Immanuel's (Isaiah 7:14), and Gabriel's words to Mary in Luke 1:31 follow it. Yishma'el means ‘God hears’, and the reason given is shama YHWH el-onyekh, ‘the LORD has heard your affliction’. Oni, ‘affliction’, is the noun God uses at the burning bush: ‘I have surely seen the affliction of my people’ (Exodus 3:7).",
+      "words": ["H2030A", "H3458G", "H8085G", "H6040", "H7121H"],
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "The text records no prayer from Hagar, only her affliction, and God is said to hear it. Scripture presents suffering itself as something that reaches God, as Israel's groaning does in Exodus 2:23-25."
+        }
+      ],
+      "refs": ["Judges 13:5", "Isaiah 7:14", "Luke 1:31", "Exodus 3:7", "Exodus 2:23-25"]
+    },
+    {
+      "v": "12",
+      "context": "The angel describes Ishmael's future: untamed, in conflict, living on his own terms beside his kin. For a slave woman, a son who will never be anyone's servant is part of the promise.",
+      "grammar": "Pere adam, ‘a wild donkey of a man’, is a construct phrase in which the first noun describes the second: a man with the character of the onager, the free-roaming desert donkey (Job 39:5-8). The two clauses about hands are exactly balanced: yado vakkol veyad kol bo, ‘his hand against all, and the hand of all against him’. The last clause, ve'al-penei khol-echav yishkon, is debated. Al-penei can mean ‘in defiance of’ (BSB ‘in hostility toward’), ‘in front of’ or ‘alongside’, or, since Hebrew orientation faces east, ‘to the east of’.",
+      "words": ["H6501", "H0120G", "H3027G", "H6440G", "H7931"],
+      "history": "Genesis later locates Ishmael's descendants in the desert between Havilah and Shur (25:18) and pictures Ishmaelites as caravan traders between Gilead and Egypt (37:25). The wild donkey image fits the independent life of such desert peoples.",
+      "text": "Translations divide over the final clause. The BSB and NIV read hostility (‘in hostility toward all his brothers’); the ESV has ‘over against all his kinsmen’; the KJV has ‘in the presence of all his brethren’. Genesis 25:18 uses a similar phrase of Ishmael's descendants, where it is again read both ways.",
+      "refs": ["Job 39:5-8", "Genesis 25:18", "Genesis 37:25", "Hosea 8:9"]
+    },
+    {
+      "v": "13",
+      "context": "Hagar responds by naming the God who spoke to her. She is one of very few people in Scripture who gives God a name, and she names him for what he has done: he saw her.",
+      "grammar": "El ro'i can mean ‘God of seeing’ or ‘God who sees me’; ro'i is vocalized as a noun, ‘seeing’, but it may carry the suffix ‘me’. The narrator says she called the name of YHWH, so the text identifies the angel with the LORD himself. Her explanation, hagam halom ra'iti acharei ro'i, is one of the hardest lines in Genesis. Literally it reads something like ‘Have I really seen here after the one who sees me?’, which may mean she has seen God and survived, or that she has seen the back of the One who sees her. The BSB smooths it into an exclamation.",
+      "words": ["H7210", "H0410G", "H7200G", "H1988", "H0310A"],
+      "theology": [
+        {
+          "id": "names-of-god",
+          "note": "Most divine names in Genesis are given by God or used in worship by the patriarchs. This one is given by an Egyptian slave out of her own encounter, and Scripture keeps it."
+        },
+        {
+          "id": "attributes",
+          "note": "God's knowledge is not presented here as abstract all-knowing but as attention: he sees a particular person in a particular place. Psalm 139 develops the same thought in prayer."
+        }
+      ],
+      "text": "Because the second half of the verse is so difficult, some scholars have proposed a small correction to the Hebrew that would read ‘Have I really seen God and lived after seeing him?’, which fits the Old Testament fear of seeing God (Exodus 33:20, Judges 13:22). The Hebrew as it stands can be translated, and most English versions follow it, but they differ considerably from one another.",
+      "refs": ["Psalm 139:1-7", "Exodus 33:20-23", "Judges 13:22", "Genesis 32:30"]
+    },
+    {
+      "v": "14",
+      "context": "The well takes its name from Hagar's encounter. The place becomes a memorial of what God did there.",
+      "grammar": "Be'er lachai ro'i is usually understood as ‘the well of the Living One who sees me’, joining be'er, ‘well’, to the words of verse 13. Al-ken, ‘therefore’, is the standard formula for a naming note that explains a place's name from an event (compare 21:31, 26:33). The verb qara, ‘one called’, has no expressed subject: the name came into general use.",
+      "words": ["H0883", "H0875", "H6946G", "H1260G"],
+      "history": "Kadesh is the oasis region in the far south of Canaan later known as Kadesh-barnea; the location of Bered is unknown. Isaac later lives near Beer-lahai-roi (24:62, 25:11), so the well where Hagar met God becomes the home of the son of promise.",
+      "refs": ["Genesis 24:62", "Genesis 25:11", "Genesis 21:31"]
+    },
+    {
+      "v": "15-16",
+      "context": "Hagar bears Abram a son, and Abram names him Ishmael, the name the angel gave. The chapter closes with Abram's age, eighty-six, a number that will matter when God appears again thirteen years later (17:1).",
+      "grammar": "The verb yalad, ‘to bear’, appears three times in verse 15 and again in verse 16, closing the chapter with the fact that opened it (lo yaldah, ‘she had not borne’, verse 1). Now a child has been born, but to Hagar. The phrase ‘bore to Abram’ (le'Avram) appears in both verses, and Sarai's name is absent. Abram's naming the child Ishmael implies that Hagar told him of her encounter and that he accepted the angel's word.",
+      "words": ["H3205", "H3458G", "H7121H", "H8084"],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The son is born and named as God said. Even the child of a scheme is received under God's promise, though he will not be the heir of the covenant (17:18-21)."
+        }
+      ],
+      "refs": ["Genesis 17:1", "Genesis 17:18-21", "Genesis 17:25", "Galatians 4:22-23"]
+    }
+  ]
+}

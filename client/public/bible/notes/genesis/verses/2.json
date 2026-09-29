@@ -1,0 +1,423 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "A one-line summary closes the six days: everything named in 1:1, \"the heavens and the earth\", now stands finished and full. The verse looks back over chapter 1 before verses 2 and 3 turn to the day on which nothing is made.",
+      "grammar": "\"Were completed\" is vaykhullu, a Pual, the passive of the verb kalah (to finish or bring to an end). The passive keeps God as the unstated agent and presents the world as a finished product rather than something still being assembled. \"All their vast array\" translates tseva'am, literally ‘their host’. Tsava is the ordinary word for an army, and it is the word inside the divine title ‘LORD of hosts’. Here it gathers up everything that fills sky and land, the lights and birds and animals of days four to six, as though creation were a vast ordered company drawn up in ranks.",
+      "words": [
+        "H3615G",
+        "H6635A"
+      ],
+      "theology": [
+        {
+          "id": "creation",
+          "note": "The verse insists that creation was brought to completion. The world as God made it lacked nothing it needed to be good, which is why later disorder in Genesis is presented as damage to a finished work, not as a stage in an unfinished one."
+        }
+      ],
+      "refs": [
+        "Psalm 33:6",
+        "Nehemiah 9:6",
+        "Isaiah 40:26"
+      ]
+    },
+    {
+      "v": "2",
+      "context": "The seventh day appears, and it is described by what God stops doing. The phrase \"the seventh day\" is said twice in this verse and once more in verse 3, a threefold emphasis matching the three uses of \"created\" in 1:27.",
+      "grammar": "The verb for finishing returns, now as a Piel (vaykhal, \"had finished\"), and the BSB's pluperfect ‘had finished’ resolves a real puzzle: read woodenly, the Hebrew says God finished his work ‘on the seventh day’, which could suggest he worked on it. Most translators take the phrase as ‘by the seventh day’, and others read it to mean that the act of stopping itself completed the week. \"Rested\" is vayyishbot, from shavat, to cease. \"Work\" here is melakhah, the word used for skilled, purposeful labor and the same word the Sabbath command forbids in Exodus 20:9-10, so the link between God's week and Israel's is already built into the vocabulary.",
+      "words": [
+        "H3615G",
+        "H4399",
+        "H7673A",
+        "H7637"
+      ],
+      "text": "Where the standard Hebrew text reads ‘on the seventh day God finished’, the Septuagint (the ancient Greek translation), the Samaritan Pentateuch, and the Syriac version read ‘on the sixth day’. The change removes any hint that God worked on the seventh day, which is probably why it was made; the harder reading of the Hebrew is generally judged original.",
+      "refs": [
+        "Exodus 20:9-11",
+        "Exodus 31:17",
+        "Hebrews 4:4"
+      ]
+    },
+    {
+      "v": "3",
+      "context": "God does two things to the seventh day: he blesses it and he sanctifies it. The verse gives the reason with \"because\": the day is set apart as the day of his rest. Unlike days one to six, the seventh has no evening and morning formula, and the account simply stops.",
+      "grammar": "Both verbs are Piel: vayvarekh (\"blessed\") and vaykaddesh (\"sanctified\", literally ‘made holy’ or ‘set apart’). Blessing so far has been given to living things so that they multiply (1:22, 1:28); here a span of time receives it. The closing phrase is literally ‘which God created to make’, bara with the infinitive la'asot. Grammarians read the infinitive in various ways (‘in making’, ‘so as to make’), but the effect is to gather both of chapter 1's main verbs for God's work into one summary of everything he had done.",
+      "words": [
+        "H1288",
+        "H6942G",
+        "H1254A",
+        "H6213A"
+      ],
+      "theology": [
+        {
+          "id": "holiness",
+          "note": "The first thing Scripture calls holy is a day. Holiness here means belonging to God in a special way, and time is claimed before any place or person is. Israel's sacred calendar, and later the Christian Lord's Day, grow from this root."
+        },
+        {
+          "id": "sabbath",
+          "note": "The Sabbath command in Exodus 20:11 quotes this verse's pairing of blessing and sanctifying as its ground. The weekly day of rest is presented not as a tribal custom but as a pattern set into the created order. Christians differ on how the command applies after Christ (whether the principle transfers to Sunday, or is fulfilled in the rest Christ gives), but all read this verse as its origin."
+        }
+      ],
+      "refs": [
+        "Exodus 20:11",
+        "Mark 2:27",
+        "Hebrews 4:9-10",
+        "Isaiah 58:13-14"
+      ]
+    },
+    {
+      "v": "4",
+      "context": "A new heading opens a new section. This is the first of the \"This is the account of\" headings that divide Genesis (5:1, 6:9, 10:1, 11:10, 11:27, and onward). The first half of the verse faces back toward chapter 1; the second half, with the new name \"the LORD God\", opens the garden story.",
+      "grammar": "Toledot (\"account\") comes from the verb yalad, to bear or beget, and elsewhere in Genesis it introduces what came from a person, usually his descendants. Here it introduces what came from the heavens and the earth. Interpreters debate whether the heading concludes 1:1-2:3 or introduces 2:4-4:26; since every other toledot in Genesis introduces what follows, most read it as a heading for the story ahead. The verse is built as a mirror: \"the heavens and the earth\" in the first half becomes ‘earth and heaven’ in the second. \"In the day that\" is beyom followed by an infinitive, a common Hebrew idiom meaning ‘when’, which is why it can sum up the whole week of chapter 1 as one ‘day’.",
+      "words": [
+        "H8435",
+        "H1254A",
+        "H3117G",
+        "H3068G"
+      ],
+      "history": "The name YHWH, rendered \"the LORD\" in small capitals, appears here for the first time in the Bible. Jewish reverence for the name led readers in time to say ‘Lord’ (Adonai) instead of pronouncing it, and Greek-speaking readers used kyrios, ‘Lord’, the word the New Testament uses. English Bibles continue that practice. The compound ‘the LORD God’ runs through chapters 2 and 3 and is uncommon in the rest of the Pentateuch.",
+      "theology": [
+        {
+          "id": "names-of-god",
+          "note": "The same God who is Elohim, creator of everything, is now called by his personal covenant name. The pairing tells the reader that the maker of the cosmos and the God who later bound himself to Israel are one and the same."
+        }
+      ],
+      "refs": [
+        "Genesis 5:1",
+        "Exodus 3:14-15",
+        "Numbers 3:1"
+      ]
+    },
+    {
+      "v": "5-6",
+      "context": "The story begins with what is missing. There are no field shrubs or field plants yet, for two reasons given together: no rain, and no human being to work the ground. Verse 6 supplies water from below. The scene is set for the forming of the man in verse 7, who is the answer to the second lack.",
+      "grammar": "Terem (\"not yet\") appears twice, and the verbs are imperfects describing a state of affairs rather than a single event. The two named plants, siach hassadeh and esev hassadeh, are specific: esev hassadeh returns in 3:18 as the grain the man will eat by the sweat of his brow, which leads many interpreters to see cultivated crops here rather than all vegetation. \"To cultivate\" is la'avod, from avad, to work or serve, the same verb as in 2:15 and 3:23. In verse 6 the rare word ed (\"springs\") occurs only here and in Job 36:27. Its meaning is uncertain: the Septuagint already read ‘a spring’, the King James tradition ‘a mist’, and many modern scholars connect it with an Akkadian word for underground water or flood. The verbs of verse 6 describe repeated action, water that kept rising and watering.",
+      "words": [
+        "H2962",
+        "H6212",
+        "H5647I",
+        "H0108"
+      ],
+      "text": "English Bibles visibly diverge on ed: the King James Version and the ESV read ‘a mist’, the NIV ‘streams’, and the BSB \"springs\". The difference reflects the uncertainty of a word that appears only twice in the Hebrew Bible.",
+      "theology": [
+        {
+          "id": "work",
+          "note": "The earth's lack is partly a lack of a worker. Before the man exists, the text already defines part of his purpose: the ground is waiting for someone to serve it. Human labor is written into creation's design, not added after the fall."
+        }
+      ],
+      "refs": [
+        "Genesis 3:18-19",
+        "Genesis 3:23",
+        "Job 36:27"
+      ]
+    },
+    {
+      "v": "7",
+      "context": "The LORD God forms the man. The verse has two movements, the shaping of a body from dust and the breathing of life into it, and only when both have happened does the man become \"a living being\". The same dust returns in 3:19, where the man is told he will go back to it.",
+      "grammar": "Vayyitser (\"formed\") is from yatsar, the verb for a potter shaping clay; its participle, yotser, is the ordinary word for ‘potter’ (Jeremiah 18:2-6). The man, ha'adam, is taken from ha'adamah, the ground, a sound-play the English ‘human’ and ‘humus’ only faintly copy. \"Breathed\" is vayyippach, to blow. The breath is neshamah, a word used overwhelmingly of human breath and of God's breath, and less of animals; 7:22 combines it with ruach for all flesh that dies in the flood. The man then \"became\" (vayhi) a living nefesh, the same phrase used of animals in chapter 1. The difference from the animals lies in how life is given: directly, by God's own breath into his nostrils.",
+      "words": [
+        "H3335G",
+        "H0120H",
+        "H0127G",
+        "H6083",
+        "H5397"
+      ],
+      "theology": [
+        {
+          "id": "humanity",
+          "note": "A human being is not a soul housed in a body but a single living creature made of earth and animated by God. The verse holds together frailty and dignity: dust, and yet breathed into by God. Scripture's hope accordingly is bodily resurrection, not escape from the body."
+        },
+        {
+          "id": "resurrection",
+          "note": "Paul reads this verse against the risen Christ: the first Adam received life, the last Adam gives it (1 Corinthians 15:45). The resurrection is pictured as a new act of the creator who first breathed life into dust, and Ezekiel's valley of bones uses the same image of breath entering bodies."
+        }
+      ],
+      "refs": [
+        "1 Corinthians 15:45-49",
+        "Job 33:4",
+        "Ecclesiastes 12:7",
+        "Ezekiel 37:9-10",
+        "John 20:22"
+      ]
+    },
+    {
+      "v": "8-9",
+      "context": "God plants a garden in a region called Eden and puts the man there. Verse 9 fills it with trees that are both beautiful and good to eat, and then singles out two trees in its center: the tree of life and the tree of the knowledge of good and evil. Both will decide the plot of chapter 3.",
+      "grammar": "Gan is an enclosed garden or park; Eden is the region, and the garden is planted in it (verse 10 has the river flow out of Eden to water the garden). The noun eden sounds like the Hebrew root for delight or luxury (Sarah's word for ‘pleasure’ in 18:12 is from it), though Eden here is a place name. Miqqedem can mean ‘in the east’ or ‘from of old’, since qedem covers both what lies eastward and what lies in the distant past. In verse 9, \"pleasing\" is nechmad, a Niphal participle of chamad, to desire, the verb of the tenth commandment's ‘covet’. The same form returns in 3:6, where the woman sees the forbidden tree as \"desirable for obtaining wisdom\": what God made desirable is desired in the wrong way.",
+      "words": [
+        "H1588M",
+        "H5731B",
+        "H6924G",
+        "H2530A",
+        "H1847"
+      ],
+      "text": "The Septuagint rendered gan with paradeisos, a word borrowed from Persian for an enclosed royal park, and through the Latin and later English the garden became ‘paradise’. The Latin Vulgate took miqqedem in its time sense and read that God planted the garden ‘from the beginning’, where most versions read ‘in the east’ or ‘eastward’.",
+      "theology": [
+        {
+          "id": "providence",
+          "note": "God does not only place the man on the earth; he prepares a home for him, supplying beauty and food before any command is given. Provision precedes instruction, the order Scripture keeps in the exodus and the covenant at Sinai."
+        },
+        {
+          "id": "wisdom",
+          "note": "The phrase ‘knowledge of good and evil’ is explained in several ways: moral autonomy (deciding good and evil for oneself), a merism for all knowledge, or the mature judgment that children lack (Deuteronomy 1:39) and the very old lose (2 Samuel 19:35). The text leaves the tree's meaning partly veiled, but the story makes clear that such knowledge was not to be seized apart from God's word."
+        }
+      ],
+      "refs": [
+        "Genesis 3:6",
+        "Genesis 3:22",
+        "Deuteronomy 1:39",
+        "Ezekiel 28:13",
+        "Revelation 2:7"
+      ]
+    },
+    {
+      "v": "10",
+      "context": "A single river flows out of Eden, waters the garden, and then divides into four. The verse pictures Eden as the high source from which the world's water, and therefore its life, flows outward.",
+      "grammar": "Yotse (\"flowed\") is a participle, describing continuing flow rather than a single event. The river then ‘became four heads’ (rashim), the word for ‘head’ here meaning the start of a branch or channel. The Niphal yippared, ‘it divided’ or ‘was parted’, is the same verb used in 10:5 and 10:32 of the nations that spread out from Noah's sons.",
+      "words": [
+        "H3318L",
+        "H6504",
+        "H7218J"
+      ],
+      "theology": [
+        {
+          "id": "temple",
+          "note": "Later Scripture pictures a river flowing from God's dwelling to give life: from the temple in Ezekiel 47, from the city of God in Psalm 46:4, and from the throne of God and the Lamb in Revelation 22:1. That pattern is one of the clues many readers follow in seeing Eden as the first sanctuary, the place where God's presence is the source of life."
+        }
+      ],
+      "refs": [
+        "Psalm 46:4",
+        "Ezekiel 47:1-12",
+        "Revelation 22:1-2",
+        "Zechariah 14:8"
+      ]
+    },
+    {
+      "v": "11-12",
+      "context": "The first river, the Pishon, circles the land of Havilah, and the narrator pauses over that land's wealth: fine gold, bdellium, and onyx. The pause is not idle; these materials matter later in Israel's worship.",
+      "grammar": "Hassovev, \"winds through\", is a participle of savav, to go around or encircle, so the river is pictured as flowing around or through the whole region. Verse 12 calls the gold tov, literally ‘good’, the same word God pronounced over creation; here it means fine or pure.",
+      "words": [
+        "H5437G",
+        "H2896A",
+        "H0916",
+        "H7718"
+      ],
+      "history": "Havilah appears elsewhere as a people descended both from Cush (10:7) and from Joktan (10:29), and as a boundary of the Ishmaelite territory (25:18); most scholars place it in Arabia, though its exact location is unknown, and the Pishon itself has never been securely identified. Bdellium (bedolach) is usually taken to be an aromatic resin; the manna in Numbers 11:7 looked like it. Onyx stones (shoham) were set on the shoulders of the high priest's ephod, engraved with the names of Israel's tribes (Exodus 28:9-12).",
+      "refs": [
+        "Genesis 10:7",
+        "Genesis 25:18",
+        "Numbers 11:7",
+        "Exodus 28:9-12",
+        "Exodus 25:7"
+      ]
+    },
+    {
+      "v": "13-14",
+      "context": "The second, third, and fourth rivers are named: Gihon, Hiddekel, and Euphrates. The list moves from the unknown to the utterly familiar, so that the reader's own world is tied to the garden while the garden itself stays out of reach.",
+      "history": "Hiddekel is the Hebrew name for the Tigris (Daniel 10:4 uses it for the great river where Daniel had a vision), and the Euphrates (Perat) is the great river of Mesopotamia, often simply called ‘the River’ in the Old Testament. Cush usually means the land south of Egypt, though some scholars suggest a Mesopotamian region here. Gihon is also the name of the spring outside Jerusalem where Solomon was anointed king (1 Kings 1:33-38) and whose water Hezekiah later channeled into the city (2 Chronicles 32:30). Whether Genesis intends that echo is debated, but the shared name has led many readers to connect Eden with Zion.",
+      "theology": [
+        {
+          "id": "creation",
+          "note": "By naming rivers that Israel knew, the text insists that Eden belongs to the same real world as Assyria and the Euphrates. The garden story is not set in a mythic nowhere; it is the beginning of human history on this earth."
+        }
+      ],
+      "refs": [
+        "Daniel 10:4",
+        "1 Kings 1:33",
+        "2 Chronicles 32:30",
+        "Genesis 15:18"
+      ]
+    },
+    {
+      "v": "15",
+      "context": "The narrative returns from the rivers to the man. Verse 8 said God put him in the garden; verse 15 restates it with a purpose clause: to cultivate and keep it. The man is given a task before he is given a command.",
+      "grammar": "Two different verbs describe the placing. Verse 8 used sim (put), but here the verb is vayyannichehu, a Hiphil of nuach, to rest, which can mean ‘to set down’ or ‘to settle’ someone in a place. The two infinitives, le'ovdah (\"to cultivate\", from avad, to work or serve) and leshomrah (\"to keep\", from shamar, to guard or keep watch), end with a feminine suffix, ‘it’. Since gan is usually masculine, some interpreters take the object to be the ground (adamah, feminine), so that the man now supplies the worker verse 5 said was missing. Shamar is the verb used in 3:24 for the cherubim who guard the way to the tree of life.",
+      "words": [
+        "H5117",
+        "H5647I",
+        "H8104H"
+      ],
+      "theology": [
+        {
+          "id": "work",
+          "note": "Work is given in the garden, before sin, as part of what it means to live well before God. Avad and shamar also describe priestly service at the tabernacle (Numbers 3:7-8), so ordinary tending of the earth and the service of God are joined from the start."
+        }
+      ],
+      "refs": [
+        "Numbers 3:7-8",
+        "Genesis 3:23-24",
+        "Psalm 104:23",
+        "Colossians 3:23"
+      ]
+    },
+    {
+      "v": "16-17",
+      "context": "The LORD God gives the first command in Scripture. It opens with a vast permission, every tree, and closes with a single prohibition and its penalty. The command is spoken to the man before the woman is made; in 3:2-3 she will repeat it with differences.",
+      "grammar": "The permission and the warning are built alike. \"You may eat freely\" is akhol tokhal, an infinitive absolute followed by the finite verb, a Hebrew construction that intensifies (‘eating you may eat’). \"You will surely die\" is mot tamut, the same construction (‘dying you will die’). The symmetry sets overflowing generosity against a certain consequence. The same phrase, ‘on the day... you will surely die’, is Solomon's warning to Shimei in 1 Kings 2:37, a formula of certain sentence. All the verbs are second person singular, addressed to the man alone at this point.",
+      "words": [
+        "H6680",
+        "H0398",
+        "H4191"
+      ],
+      "theology": [
+        {
+          "id": "law",
+          "note": "The first law is almost entirely permission. Obedience in Eden is not the price of life but the shape of trust: the man is asked to take God's word about good and evil rather than decide it for himself."
+        },
+        {
+          "id": "sin",
+          "note": "Why the man did not die physically on the day he ate is a long-standing question. The main answers are that ‘in the day’ means ‘when’ and the sentence is the onset of mortality; that death here includes separation from God, which happens at once in chapter 3; and that God in mercy delayed the full sentence. Paul treats the death that entered through Adam as both physical and spiritual (Romans 5:12)."
+        }
+      ],
+      "refs": [
+        "Genesis 3:2-3",
+        "1 Kings 2:37",
+        "Romans 5:12",
+        "Romans 6:23"
+      ]
+    },
+    {
+      "v": "18",
+      "context": "For the first time in Genesis something is \"not good\". The world has been declared good seven times in chapter 1, and now God himself names a lack: the man's aloneness. The rest of the chapter answers this sentence.",
+      "grammar": "Lo tov, \"not good\", stands first in the Hebrew sentence, for emphasis. Levaddo (\"alone\") is literally ‘by his separation’, being on his own. God's resolve is a first person singular, e'eseh (\"I will make\"), where 1:26 had the plural. The key phrase is ezer kenegdo, \"a suitable helper\". Kenegdo combines the preposition ke (‘like’, ‘as’) with neged (‘in front of’, ‘opposite’), so it means something like ‘corresponding to him’ or ‘his counterpart facing him’. The phrase occurs only here and in verse 20.",
+      "words": [
+        "H2896A",
+        "H0905H",
+        "H5828",
+        "H5048"
+      ],
+      "theology": [
+        {
+          "id": "humanity",
+          "note": "Even in a perfect garden with God present, human beings are not made to be solitary. Relationship with other people belongs to the goodness of creation, and isolation is a lack God himself names and meets."
+        },
+        {
+          "id": "family",
+          "note": "The woman is introduced as the answer to a problem God identifies, not as an afterthought. Christians who hold that husbands and wives have distinct roles and those who hold that the passage teaches full mutuality both appeal to this verse: the first emphasize that the woman is made as a helper for the man, the second that ezer is used chiefly of God and that kenegdo stresses equality."
+        }
+      ],
+      "refs": [
+        "Ecclesiastes 4:9-12",
+        "Psalm 121:1-2",
+        "Psalm 68:6"
+      ]
+    },
+    {
+      "v": "19-20",
+      "context": "God forms the animals and birds and brings them to the man to see what he will call them. The man names them all, exercising the rule given in 1:28. But the parade ends with a sentence of failure: no suitable helper was found. The animals share his origin in the ground but not his nature.",
+      "grammar": "Vayyitser (\"formed\") repeats verse 7: animals, like the man, are shaped \"out of the ground\". Whether the verb means ‘formed’ in sequence or ‘had formed’ is debated, since grammarians disagree over whether this narrative form can carry a pluperfect sense. \"To see what he would name each one\" uses lir'ot, a purpose infinitive, and the imperfect yiqra, ‘he would call’; the next clause makes the man's choice final: whatever he called it, \"that was its name\". In verse 20 the phrase ‘for Adam’ is le'adam without the article, which can be read as a name or as ‘for a man’.",
+      "words": [
+        "H3335G",
+        "H7121H",
+        "H8034",
+        "H0121G"
+      ],
+      "text": "English translations differ on where the man first gets the proper name Adam. Hebrew writes ha'adam, ‘the man’, through most of chapters 2 and 3, and the form without the article can be read either way. Some versions introduce ‘Adam’ at 2:20, others not until 3:17 or later.",
+      "theology": [
+        {
+          "id": "humanity",
+          "note": "God lets the man's naming stand. Human decisions have real weight in God's world: the dominion of 1:28 is exercised here by speech that orders and classifies, a first picture of human culture and science under God."
+        }
+      ],
+      "refs": [
+        "Genesis 1:28",
+        "Psalm 8:6-8",
+        "Genesis 3:20"
+      ]
+    },
+    {
+      "v": "21-22",
+      "context": "God puts the man into a deep sleep, takes part of his side, closes the place with flesh, and builds a woman from it. Then he brings her to the man. The man contributes nothing but the material; the woman is God's work, and the man does not watch her made.",
+      "grammar": "Tardemah (\"a deep sleep\") is not ordinary sleep but a heavy, God-given sleep; the same word falls on Abram before God's covenant vision (15:12) and on Saul's camp when David approaches (1 Samuel 26:12). \"Ribs\" translates tsela, a word that everywhere else in the Old Testament means ‘side’, as of the ark of the covenant (Exodus 25:12) or the side rooms of the temple (1 Kings 6:5). ‘Rib’ comes through the Greek pleura, which can mean either. Verse 22's verb is vayyiven, \"made\", literally ‘built’ (banah), a construction word used for houses and cities.",
+      "words": [
+        "H8639",
+        "H6763",
+        "H1129",
+        "H0935P"
+      ],
+      "history": "\"Brought her to him\" echoes the ancient practice by which a bride was brought to the groom, usually by her father. God takes that role here, so the first marriage is given, not seized, and God himself presents the bride.",
+      "theology": [
+        {
+          "id": "family",
+          "note": "The woman is made from the man's side, sharing his very substance, which grounds the unity verse 24 describes. Paul appeals to the order of this account in 1 Corinthians 11:8-12, and in the same breath adds that man now comes through woman and all things come from God."
+        }
+      ],
+      "refs": [
+        "Genesis 15:12",
+        "1 Corinthians 11:8-12",
+        "Ephesians 5:28-30"
+      ]
+    },
+    {
+      "v": "23",
+      "context": "The man's first recorded words are a poem. After the parade of animals that were not his match, he recognizes one who is. The poem names her ‘woman’ and gives the reason: she was taken out of man.",
+      "grammar": "The word zot (‘this one’) opens, falls in the middle of, and closes the verse, three times pointing at her with delight. Happa'am, \"now\", means ‘this time’ or ‘at last’, looking back over every creature that failed to answer his need. \"Bone of my bones and flesh of my flesh\" is a kinship formula: Laban uses it of Jacob (29:14) and the tribes use it of David (2 Samuel 5:1). The sound-play ishshah (\"woman\") and ish (\"man\") is audible in Hebrew, though the two words probably come from different roots. The naming formula ‘she shall be called’ is a Niphal (passive). Interpreters debate whether it is an act of authority like the naming of the animals, or a recognition of what she is; the fuller naming formula with shem (‘name’) appears only in 3:20.",
+      "words": [
+        "H2063",
+        "H6471",
+        "H6106G",
+        "H0802G",
+        "H0376G"
+      ],
+      "theology": [
+        {
+          "id": "humanity",
+          "note": "The man recognizes in the woman not a possession but a kinswoman of his own substance. Human sexual difference is presented as correspondence and delight, the first human speech in the Bible a cry of recognition."
+        }
+      ],
+      "refs": [
+        "Genesis 29:14",
+        "2 Samuel 5:1",
+        "Song of Solomon 2:16",
+        "Proverbs 5:18-19"
+      ]
+    },
+    {
+      "v": "24",
+      "context": "The narrator steps out of the story to draw a lasting conclusion: \"For this reason\" a man leaves his parents, holds fast to his wife, and they become one flesh. The one-flesh union answers the not good of verse 18 in every generation.",
+      "grammar": "Al-ken (\"for this reason\") is a formula Genesis uses to link a past event to something still true in the writer's day (compare 10:9, 32:32). The verbs describe what customarily happens: ya'azov, ‘leaves’, an imperfect of habitual action, followed by davak, ‘holds fast’, and hayu, ‘they become’. Basar echad, \"one flesh\", uses the same word for flesh as the man's poem in verse 23, and echad, ‘one’, the word of the Shema (Deuteronomy 6:4), for a unity that is real without erasing the two persons.",
+      "words": [
+        "H5800A",
+        "H1692",
+        "H1320",
+        "H0259"
+      ],
+      "history": "In Israel, as in most of the ancient Near East, it was usually the wife who left her father's household and joined her husband's family. The verse's picture of the man leaving is therefore striking; most interpreters read it as a statement of loyalty rather than of residence: the marriage bond now takes priority over the bond to parents.",
+      "text": "The Septuagint reads ‘and the two shall become one flesh’, adding ‘the two’. Jesus and Paul quote the verse in that form (Matthew 19:5, Ephesians 5:31), which makes explicit what the Hebrew implies.",
+      "theology": [
+        {
+          "id": "family",
+          "note": "Jesus quotes this verse as God's own word from the beginning when he answers the question about divorce, and Paul uses it to warn against union with a prostitute (1 Corinthians 6:16) and to describe Christ and the church (Ephesians 5:31-32). The verse is the Bible's foundational statement of marriage as a new household made by leaving, joining, and becoming one."
+        }
+      ],
+      "refs": [
+        "Matthew 19:4-6",
+        "Mark 10:6-9",
+        "1 Corinthians 6:16",
+        "Ephesians 5:31-32",
+        "Malachi 2:15"
+      ]
+    },
+    {
+      "v": "25",
+      "context": "The chapter ends with the man and his wife naked and unashamed. The sentence looks forward: in 3:7 their eyes are opened, they know they are naked, and they hide. The next verse (3:1) begins with a serpent described as crafty, a word that sounds almost the same as naked.",
+      "grammar": "Arummim (\"naked\") is the plural of arom; the serpent in 3:1 is arum, ‘crafty’. The pun ties the couple's innocence to the cunning that will exploit it. The verb yitboshashu (\"were ashamed\") is a reflexive stem of bosh, to be ashamed, which may suggest shame before one another. The imperfect with the negative describes a continuing condition: they were, as a settled state, not ashamed.",
+      "words": [
+        "H6174",
+        "H0954",
+        "H8147"
+      ],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Shame enters only with sin. Before the fall, exposure brings no fear, which means that shame is not native to being human but a sign of something broken. Scripture's promise of salvation includes the covering and removal of shame (Isaiah 54:4, Hebrews 12:2)."
+        }
+      ],
+      "refs": [
+        "Genesis 3:7",
+        "Genesis 3:10",
+        "Isaiah 54:4",
+        "Hebrews 12:2"
+      ]
+    }
+  ]
+}

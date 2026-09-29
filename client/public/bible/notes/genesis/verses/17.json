@@ -1,0 +1,259 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "Thirteen years after Ishmael's birth (16:16), with no recorded word from God in between, the LORD appears to Abram. He introduces himself by a new name and gives a two-part charge before any promise is repeated.",
+      "grammar": "Vayyera, ‘he appeared’, is a Niphal of ra'ah, ‘to see’, literally ‘he let himself be seen’, continuing the seeing theme of chapter 16. Ani El Shaddai, ‘I am God Almighty’, is the first use of this name in the Bible; Exodus 6:3 says it was the name by which the patriarchs knew God. Hithallekh lefanay, ‘walk before me’, is a Hithpael, the stem for continuing or habitual action: walk about, live your life, before me. Enoch and Noah walked ‘with’ God (5:22, 6:9); Abram walks ‘before’ him, like a servant under a master's eye. Abraham later describes the LORD as the one ‘before whom I have walked’ (24:40). Veheyeh tamim, ‘and be blameless’, is a second imperative. When one Hebrew imperative follows another, the second often expresses the result of the first: ‘walk before me, and so be blameless’.",
+      "words": ["H7200G", "H7706", "H1980I", "H8549H"],
+      "theology": [
+        {
+          "id": "god",
+          "note": "God reveals himself by a name that stresses his power at the moment Abram's body and Sarai's are past hope. The command comes from the same God who will do the impossible, so obedience rests on who he is."
+        },
+        {
+          "id": "names-of-god",
+          "note": "El Shaddai becomes the name of blessing and fruitfulness in Genesis (28:3, 35:11, 48:3, 49:25). The name is given here, at the point where only the power of God can make the promise come true."
+        }
+      ],
+      "refs": ["Exodus 6:3", "Genesis 5:22", "Genesis 24:40", "Genesis 35:11", "Deuteronomy 18:13"]
+    },
+    {
+      "v": "2",
+      "context": "God states what he will do: establish his covenant and multiply Abram greatly. Verses 1 and 2 together form the heading for the rest of the chapter.",
+      "grammar": "Ve'ettenah beriti, ‘and I will give my covenant’, is a cohortative (a first-person form expressing resolve) after the imperatives of verse 1. After an imperative, this form commonly expresses purpose: ‘walk before me... so that I may set my covenant’. Interpreters debate what that means. Some see a condition: the covenant's fulfillment depends on Abraham's walk. Others note that God has already bound himself unconditionally in chapter 15, and read the imperatives as the life the covenant creates rather than the price of it. Here God uses natan, ‘give’, and later heqim, ‘establish’ (verses 7, 19, 21), rather than karat, ‘cut’, the verb of chapter 15; many scholars think these verbs speak of confirming a covenant already begun. Bim'od me'od, ‘exceedingly’, doubles the adverb for emphasis, as in verses 6 and 20.",
+      "words": ["H5414I", "H1285", "H7235A", "H3966"],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "The verse holds together God's initiative (‘my covenant’) and Abram's calling (verse 1). Throughout Scripture the covenant is God's gift, yet it always calls for a life that answers it."
+        }
+      ],
+      "refs": ["Genesis 15:18", "Genesis 12:2", "Genesis 26:5"]
+    },
+    {
+      "v": "3-4",
+      "context": "Abram falls on his face, the posture of reverence before a superior, and God begins the first of three speeches. This one sets out what God will do.",
+      "grammar": "From verse 3 to the end of the chapter the narrator calls God Elohim; the name YHWH appears only in verse 1. Source critics assign the chapter to a priestly source that uses Elohim before Exodus 6; others see the shift as the narrator's choice of the general word for God in a chapter concerned with nations. Verse 4 opens with an emphatic ani, ‘as for me’, which is balanced in verse 9 by ve'attah, ‘and as for you’, dividing God's part from Abraham's. Av hamon goyim, ‘father of a multitude of nations’, uses hamon, a word for a crowd or the roar of a crowd.",
+      "words": ["H5307G", "H6440H", "H0589", "H1995A", "H1471A"],
+      "refs": ["Genesis 17:9", "Leviticus 9:24", "Romans 4:16-17"]
+    },
+    {
+      "v": "5",
+      "context": "God changes Abram's name to Abraham, and ties the new name to the promise of verse 4. From here on the narrator never calls him Abram again.",
+      "grammar": "The explanation is a wordplay, not an etymology. Abram probably means ‘exalted father’. The added syllable of Abraham has no clear meaning in Hebrew, but it sounds like av hamon, ‘father of a multitude’, which the verse quotes. Netattikha, ‘I have made you’, is a perfect: God speaks of the promise as already done, though Abraham has one son and it is not the heir. Paul quotes this line in Romans 4:17 and calls God the one who ‘calls into being things that were not’.",
+      "words": ["H0087", "H0085", "H1995A", "H5414I"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Abraham must now carry a name that announces what he cannot see. Every time someone called him, the name repeated God's promise, and Paul makes this a picture of faith that believes God's word before the evidence (Romans 4:17-21)."
+        }
+      ],
+      "refs": ["Romans 4:17", "Nehemiah 9:7", "Genesis 32:28", "Isaiah 62:2"]
+    },
+    {
+      "v": "6",
+      "context": "God expands the promise: exceeding fruitfulness, nations, and kings. For the first time the promise to Abraham includes royalty.",
+      "grammar": "Vehifreti, ‘I will make fruitful’, is a Hiphil (causative) of parah, the verb of the creation blessing ‘be fruitful’ (1:28) and the blessing after the flood (9:1). What God commanded humanity to do, he now promises to cause in Abraham's line. Umelakhim mimmekha yetse'u, ‘kings will come out from you’, uses yatsa, the same verb as ‘come from your own body’ in 15:4.",
+      "words": ["H6509", "H4428G", "H3318M"],
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The promise of kings points ahead to Israel's monarchy, to David, and through him to the Messiah. It is repeated to Jacob (35:11) and focused on Judah (49:10)."
+        }
+      ],
+      "refs": ["Genesis 1:28", "Genesis 35:11", "Genesis 49:10", "Matthew 1:1"]
+    },
+    {
+      "v": "7",
+      "context": "The center of the first speech: the covenant is everlasting, it reaches Abraham's descendants, and its content is God himself, ‘to be your God’.",
+      "grammar": "Vahaqimoti, ‘I will establish’, is the Hiphil of qum, ‘to stand’, meaning to make something stand firm. It is the verb used of God's covenant with Noah (6:18, 9:9-11). Berit olam, ‘everlasting covenant’, first described that covenant (9:16). Olam means a long, unbounded span of time, ‘perpetuity’; it can mean ‘forever’ in the full sense, and it can mean ‘for as long as the arrangement lasts’, so interpreters weigh its force from context. Lihyot lekha lelohim, ‘to be God to you’, is the covenant formula, which later takes its full two-part form, ‘I will be your God and you will be my people’ (Leviticus 26:12, Jeremiah 31:33).",
+      "words": ["H6965I", "H1285", "H5769G", "H0430G", "H1755"],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "The greatest promise is not land or descendants but God's own commitment to belong to Abraham's family. The formula runs through Scripture to its last chapters: \"They will be His people, and God Himself will be with them as their God\" (Revelation 21:3)."
+        },
+        {
+          "id": "family",
+          "note": "The covenant is made with Abraham ‘and your descendants after you’, reaching through the generations. God's dealings with his people take in their children, a theme on which the church's traditions draw different conclusions about baptism."
+        }
+      ],
+      "refs": ["Genesis 9:16", "Leviticus 26:12", "Jeremiah 31:33", "2 Corinthians 6:16", "Revelation 21:3"]
+    },
+    {
+      "v": "8",
+      "context": "God repeats the land promise, now as an ‘eternal possession’, and closes the speech with the covenant formula again. The land is named with a reminder that Abraham still lives in it as a foreigner.",
+      "grammar": "Erets megureykha, ‘the land of your sojournings’, is the land where Abraham lives as a ger, a resident alien without holdings. Achuzzat olam, ‘an everlasting possession’, uses achuzzah, a legal term for landed property held by title. The irony is deliberate: the land where he is only a guest will be his family's holding. The first piece of it Abraham actually owns is a grave, and Genesis 23 uses this same word for it (23:4, 9, 20).",
+      "words": ["H4033", "H0272", "H5769G", "H3667A"],
+      "theology": [
+        {
+          "id": "hope",
+          "note": "Abraham dies owning only a burial plot. The New Testament reads the gap between promise and possession as teaching the patriarchs to look for a city God builds (Hebrews 11:9-16), and Stephen notes that God gave him ‘not even a foot of ground’ during his life (Acts 7:5)."
+        }
+      ],
+      "refs": ["Genesis 23:4", "Genesis 23:20", "Acts 7:5", "Hebrews 11:9-10"]
+    },
+    {
+      "v": "9-10",
+      "context": "The second speech turns to Abraham's part. He and his descendants must keep the covenant, and verse 10 names what that means in the first place: every male must be circumcised.",
+      "grammar": "Ve'attah... tishmor, ‘as for you... you shall keep’, answers the ‘as for me’ of verse 4. Shamar, ‘to keep’ or ‘guard’, is the verb of 2:15, where the man was set to keep the garden, and of 26:5, where God says Abraham ‘kept my charge’. In verse 10 God calls the rite itself ‘my covenant’, a sign standing for the thing it signifies. The command himmol lakhem, ‘you shall be circumcised’, uses an infinitive in place of an imperative, a compact form Hebrew uses for general rules. The ‘you’ changes from singular to plural: the command binds the whole household.",
+      "words": ["H8104G", "H0859A", "H4135A", "H2145"],
+      "theology": [
+        {
+          "id": "sacraments",
+          "note": "God calls the sign by the name of the covenant it signifies. Christian theology uses the same way of speaking for the sacraments, as when Jesus says of the cup that it is ‘the new covenant in my blood’ (Luke 22:20), and the traditions differ on how closely sign and reality are joined."
+        }
+      ],
+      "refs": ["Genesis 2:15", "Genesis 18:19", "Genesis 26:5", "Luke 22:20"]
+    },
+    {
+      "v": "11",
+      "context": "The rite is defined and named: circumcision is ‘a sign of the covenant’. The chapter's first sign after the rainbow is carried in the body.",
+      "grammar": "Ot berit, ‘a sign of the covenant’, is the phrase used for the rainbow in 9:12-13. The rainbow was a sign God looks on to remember; this one is carried by people in their own flesh. Unemaltem, ‘you shall be circumcised’, is a Niphal consecutive perfect: the plural subject undergoes the act. Basar, ‘flesh’, repeats five times in verses 11-25 and ties the covenant to the body itself.",
+      "words": ["H0226H", "H4135A", "H1320", "H6190H"],
+      "theology": [
+        {
+          "id": "sacraments",
+          "note": "Paul calls circumcision ‘a seal of the righteousness’ Abraham had by faith before he was circumcised (Romans 4:11). The sign confirms a promise already received; it does not create Abraham's standing with God."
+        }
+      ],
+      "refs": ["Genesis 9:12-13", "Romans 4:11", "Exodus 31:13", "Colossians 2:11-12"]
+    },
+    {
+      "v": "12-13",
+      "context": "The law sets the timing (the eighth day), extends the sign to every male of the household including slaves and foreigners, and repeats that the covenant ‘in your flesh’ is everlasting.",
+      "grammar": "Ben-shemonat yamim, ‘a son of eight days’, is the Hebrew idiom for age. Mikhnat-kesef mikkol ben-nekhar, ‘a purchase of silver from any son of foreignness’, includes those who are not physically Abraham's descendants: asher lo mizzar'akha hu, ‘who is not of your offspring’. Himmol yimmol in verse 13 pairs an infinitive absolute with the finite verb for emphasis: ‘he must surely be circumcised’.",
+      "words": ["H8083", "H3211", "H4736", "H5236", "H4135A"],
+      "history": "The eighth day becomes Israel's fixed practice (Leviticus 12:3). John the Baptist and Jesus are both circumcised on the eighth day (Luke 1:59, 2:21), and Paul lists it among his credentials (Philippians 3:5).",
+      "theology": [
+        {
+          "id": "mission",
+          "note": "From the start, the covenant household includes people of foreign birth. Belonging to Abraham's family was marked by the covenant sign, not by bloodline alone, which anticipates the Passover law for foreigners (Exodus 12:48) and the later inclusion of the nations."
+        }
+      ],
+      "refs": ["Leviticus 12:3", "Luke 2:21", "Philippians 3:5", "Exodus 12:44", "Exodus 12:48"]
+    },
+    {
+      "v": "14",
+      "context": "The second speech ends with the penalty for refusing the sign: the uncircumcised male is cut off from his people, because he has broken God's covenant.",
+      "grammar": "Venikhretah hannefesh hahi me'ammeyha, ‘that person shall be cut off from his people’, is the first use of the ‘cutting off’ formula that recurs in the law (Exodus 12:15, 31:14, Leviticus 7:20). Its exact meaning is debated: some take it as execution, others as death at God's hand, exclusion from the community, or the end of a man's family line. It plays on karat berit, ‘cut a covenant’. Heper, ‘he has broken’, is the Hiphil of parar, ‘to annul’, the verb used when Israel ‘broke’ the covenant (Jeremiah 11:10, 31:32).",
+      "words": ["H6189", "H3772I", "H5315J", "H6565A"],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "To refuse the sign is to refuse the covenant. The verse shows that the covenant's grace is not indifferent to a response; the one who rejects the gift is cut off from the people who have it."
+        }
+      ],
+      "text": "The Septuagint and the Samaritan Pentateuch add ‘on the eighth day’ after ‘any male who is not circumcised’. The shorter standard Hebrew text is followed by most English versions.",
+      "refs": ["Exodus 12:15", "Exodus 4:24-26", "Jeremiah 11:10", "Jeremiah 31:32"]
+    },
+    {
+      "v": "15",
+      "context": "The third speech turns to Sarai. She too receives a new name, and in the next verse the promise is attached to her explicitly for the first time.",
+      "grammar": "The syntax puts Sarai first, before the verb, as a topic: ‘Sarai your wife, you shall not call her name Sarai’. Both Sarai and Sarah are generally understood to mean ‘princess’; Sarah is the regular Hebrew form of the word, while Sarai may be an older or dialect form. The change marks a new stage in her life rather than a new meaning.",
+      "words": ["H8297", "H8283", "H7121H"],
+      "refs": ["Isaiah 51:2", "1 Peter 3:6", "Genesis 11:29-30"]
+    },
+    {
+      "v": "16",
+      "context": "God promises to bless Sarah twice, to give Abraham a son by her, and to make her the mother of nations and kings. Until now the promise had named Abraham's body (15:4) but never Sarah's.",
+      "grammar": "Uverakhti otah, ‘I will bless her’, appears twice, once for the son and once for the nations. Vegam natatti mimmennah lekha ben, ‘and also I will give you from her a son’, puts mimmennah, ‘from her’, before the object for emphasis: from her, not from Hagar. Natatti, a perfect, again speaks of the future gift as settled.",
+      "words": ["H1288", "H4480A", "H1121A", "H5971A"],
+      "theology": [
+        {
+          "id": "election",
+          "note": "The promise is now specified: not any son of Abraham, but Sarah's son. God's choice of the line through which his purpose runs is his own, which Paul develops in Romans 9:7-9."
+        }
+      ],
+      "refs": ["Romans 9:7-9", "Isaiah 51:2", "Hebrews 11:11-12", "Genesis 35:11"]
+    },
+    {
+      "v": "17",
+      "context": "Abraham falls on his face again, this time laughing, and asks himself whether a man of a hundred and a woman of ninety can have a child. The laugh gives Isaac his name.",
+      "grammar": "Vayyitschaq, ‘he laughed’, is the root of Yitschaq, Isaac (verse 19). Vayyomer belibbo, ‘he said in his heart’, marks interior speech; Abraham does not say this aloud. The two questions each begin with the interrogative particle ha, expecting the answer no. Ben-me'ah shanah and bat-tish'im shanah, ‘a son of a hundred years’ and ‘a daughter of ninety years’, are the Hebrew idioms for age.",
+      "words": ["H6711", "H3820A", "H3205", "H3967", "H8673"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Faith in Scripture is not the absence of honest astonishment. Abraham's laugh names exactly what makes the promise impossible, and Paul says he ‘faced the fact that his body was as good as dead’ and still did not waver (Romans 4:19-21)."
+        }
+      ],
+      "refs": ["Genesis 18:12", "Genesis 21:6", "Romans 4:19-21", "Hebrews 11:11-12"]
+    },
+    {
+      "v": "18",
+      "context": "Abraham speaks aloud and asks for Ishmael, the son he already has, to live under God's favor. It is a father's prayer, and perhaps a request that God accept the heir already born.",
+      "grammar": "Lu is a particle of wish, ‘if only’ or ‘O that’. Yichyeh lefaneykha, ‘may he live before you’, echoes God's command in verse 1, ‘walk before me’: Abraham asks that his son live under the same gaze and favor.",
+      "words": ["H3863", "H3458G", "H2421", "H6440G"],
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "Abraham's first recorded prayer for another person is for Ishmael. God does not grant it in the form asked, but he hears it (verse 20), and the answer is generous."
+        }
+      ],
+      "refs": ["Genesis 17:20", "Genesis 21:11-13", "Genesis 18:23-25"]
+    },
+    {
+      "v": "19",
+      "context": "God answers firmly: Sarah will bear a son, his name will be Isaac, and the covenant will be established with him and his descendants.",
+      "grammar": "Aval is a particle that can correct (‘no, but’) or affirm (‘truly’, ‘indeed’); English versions divide between ‘No, but’ (ESV) and ‘Yes, but’ (NIV), while the BSB and KJV use ‘indeed’. Either way it redirects Abraham from Ishmael to Sarah. Yoledet, ‘bearing’, is a participle, presenting the birth as imminent. The name Yitschaq, ‘he laughs’, turns Abraham's laugh of verse 17 into the child's permanent name.",
+      "words": ["H0061", "H3205", "H3327", "H6965I"],
+      "text": "Translations render the opening word differently: ‘No, but’ (ESV), ‘Yes, but’ (NIV), and ‘indeed’ (KJV, and the BSB's ‘will indeed’). The difference is whether God is correcting Abraham's request for Ishmael or affirming the promise with emphasis.",
+      "refs": ["Genesis 21:1-3", "Genesis 26:3-5", "Romans 9:7"]
+    },
+    {
+      "v": "20",
+      "context": "God has heard Abraham's prayer for Ishmael and blesses him richly, with fruitfulness, twelve princes, and a great nation. Only the covenant itself is reserved for Isaac.",
+      "grammar": "Shema'tikha, ‘I have heard you’, is another play on Ishmael's name, ‘God hears’ (16:11). The blessing piles up the words of the creation mandate: berakhti, ‘I will bless’; hifreti, ‘I will make fruitful’; hirbeti, ‘I will multiply’ (1:28). Nesi'im are ‘princes’ or ‘chieftains’, tribal leaders.",
+      "words": ["H8085G", "H1288", "H6509", "H5387A"],
+      "history": "The promise is kept in 25:12-16, which lists Ishmael's twelve sons as ‘twelve princes according to their tribes’, a counterpart to the twelve tribes of Israel. Some of their names, such as Kedar and Nebaioth, later appear as Arabian peoples in the prophets (Isaiah 60:7).",
+      "theology": [
+        {
+          "id": "providence",
+          "note": "Ishmael is outside the covenant line but not outside God's blessing. Genesis gives him the blessing of creation in full, which shows that election to a particular task is not a verdict of indifference toward others."
+        }
+      ],
+      "refs": ["Genesis 16:10-11", "Genesis 25:12-16", "Genesis 21:13", "Isaiah 60:7"]
+    },
+    {
+      "v": "21-22",
+      "context": "God restates that the covenant will be established with Isaac and fixes the time: this season next year. Then God goes up, and the vision ends.",
+      "grammar": "The verse begins with ve'et-beriti, ‘but my covenant’, placing the object first for contrast with the blessing of Ishmael in verse 20. Lammo'ed hazzeh, ‘at this appointed time’, uses mo'ed, the word for a set time; it returns in 18:14 and in the birth report, ‘at the appointed time’ (21:2). ‘God went up from Abraham’ closes the appearance with the same kind of phrase as 35:13.",
+      "words": ["H6965I", "H4150G", "H5927G", "H3615G"],
+      "theology": [
+        {
+          "id": "election",
+          "note": "The distinction between Ishmael and Isaac is not about merit; neither is yet born to the covenant line, and one is not yet born at all. Paul reads it as showing that God's purpose rests on promise (Romans 9:7-9, Galatians 4:28)."
+        }
+      ],
+      "refs": ["Genesis 18:14", "Genesis 21:2", "Genesis 35:13", "Galatians 4:28"]
+    },
+    {
+      "v": "23",
+      "context": "Abraham obeys immediately and completely. The verse lists every group God named in verses 12-13 and ends ‘just as God had told him’.",
+      "grammar": "Be'etsem hayyom hazzeh, ‘on that very day’, uses etsem, ‘bone’, in the sense of ‘the very substance’ of the day. The phrase marks momentous days in the Pentateuch: Noah's entry into the ark (7:13) and the exodus (Exodus 12:41, 51). Ka'asher dibber itto Elohim, ‘just as God had spoken with him’, is the language of exact obedience, used of Noah (6:22) and of Moses building the tabernacle.",
+      "words": ["H6106H", "H4135A", "H3211", "H4736"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Abraham has just laughed at the promise, yet he acts on it the same day. His obedience is the form his faith takes, which is the point James makes about Abraham (James 2:21-22)."
+        }
+      ],
+      "refs": ["Genesis 7:13", "Exodus 12:41", "Genesis 6:22", "Hebrews 11:8"]
+    },
+    {
+      "v": "24-27",
+      "context": "The chapter closes by recording the ages of Abraham and Ishmael and repeating that the whole household was circumcised that day. The repetition slows the ending and makes the obedience a matter of record.",
+      "grammar": "Behimmolo, ‘when he was circumcised’, a Niphal infinitive with a suffix, appears in verse 24 for Abraham and verse 25 for Ishmael, putting father and son in matching sentences. Be'etsem hayyom hazzeh returns in verse 26. The final verse repeats the categories of verse 12, born in the house and bought from a foreigner, and ends with itto, ‘with him’: the household entered the covenant together with its head.",
+      "words": ["H4135A", "H8673", "H6106H", "H5236"],
+      "history": "Abraham is circumcised as an adult, a full generation after God counted him righteous in chapter 15. Isaac, born the next year, is the first child in the story circumcised on the eighth day as verse 12 commands (21:4).",
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "Ishmael receives the covenant sign even though the covenant line runs through Isaac. The sign marks membership in Abraham's household under God's promise, not a guarantee of the specific inheritance given to Isaac."
+        }
+      ],
+      "refs": ["Genesis 16:16", "Genesis 21:4", "Romans 4:9-12"]
+    }
+  ]
+}

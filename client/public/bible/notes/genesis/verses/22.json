@@ -1,0 +1,198 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "The chapter opens by telling the reader what Abraham does not know: this is a test. God calls Abraham by name, and Abraham answers with the word of readiness he will speak three times in the chapter, \"Here I am.\"",
+      "grammar": "\"Some time later\" is literally ‘after these things’, a formula that also opens Genesis 15:1 and returns in 22:20, framing the chapter. The next clause puts the subject first, veha'Elohim nissah, ‘and God, he tested’, with the definite article on ‘God’. Placing the subject before the verb breaks the chain of ordinary narrative verbs and marks this as background information for the reader. Nissah is a Piel of nasah, to put to the proof. Hinneni, \"Here I am\", is literally ‘behold me’: not a statement of location but of availability, the answer later given by Moses (Exodus 3:4), Samuel (1 Samuel 3:4), and Isaiah (Isaiah 6:8).",
+      "words": ["H0310A", "H0430G", "H5254G", "H2009"],
+      "text": "The King James Version reads ‘God did tempt Abraham’. In the English of 1611 ‘tempt’ could mean to try or prove, but today it suggests enticing to sin, which Scripture denies of God (James 1:13). Modern translations rightly read ‘tested’. The Hebrew verb is the one used when God tests Israel to see what is in their hearts (Deuteronomy 8:2).",
+      "theology": [
+        {
+          "id": "faith",
+          "note": "A test in Scripture brings into the open what is already there. The verse assumes that faith is not only a belief held but a trust that can be tried, and that God may try it for the sake of the one who has it (Exodus 20:20, James 1:12)."
+        }
+      ],
+      "refs": ["Deuteronomy 8:2", "James 1:12-13", "Exodus 20:20", "Hebrews 11:17", "1 Samuel 3:4"]
+    },
+    {
+      "v": "2",
+      "context": "The command narrows in four steps (your son, your only son, whom you love, Isaac) before it names what is asked. It then echoes Abraham's first call in Genesis 12:1: go, to a place I will show you. The first call cut Abraham off from his past; this one seems to cut him off from his future.",
+      "grammar": "Qach-na, \"Take\", carries the particle na, often rendered ‘please’ or ‘now’. It is rare in a command from God, and many commentators think it acknowledges the enormity of what is asked. This verse contains the first occurrence in the Bible of ahav, \"love\", and it is a father's love for a son. The command to offer uses ha'alehu, a Hiphil of alah, ‘cause him to go up’, and the offering is an olah, literally ‘that which goes up’, the burnt offering entirely consumed on the altar (Leviticus 1:9). Lekh-lekha, \"go\", is the same unusual phrase as Genesis 12:1.",
+      "words": ["H4994", "H3173", "H0157G", "H5927I", "H5930A"],
+      "text": "The name Moriah is read differently by the ancient versions. The Septuagint renders the phrase ‘the high land’, and the Latin Vulgate ‘the land of vision’, linking the name to the verb to see. The Samaritan Pentateuch reads Moreh, the place near Shechem (Genesis 12:6), which fits the Samaritan tradition that located the sacrifice at Mount Gerizim. The standard Hebrew text's Moriah is the name that 2 Chronicles 3:1 uses for the temple mount.",
+      "theology": [
+        {
+          "id": "love",
+          "note": "The Bible's first use of the word love describes a father's love for his only son, and it appears in the command to give that son up. The New Testament echoes the pairing when it speaks of the Father's love for the Son and of God giving his only Son (John 3:16, 3:35)."
+        }
+      ],
+      "refs": ["Genesis 12:1", "2 Chronicles 3:1", "John 3:16", "Leviticus 1:9"]
+    },
+    {
+      "v": "3",
+      "context": "Abraham rises early and prepares without a recorded word. Five actions follow in quick succession, and the narrative gives no window into his mind. He sets out for \"the place God had designated\", a phrase that makes ‘the place’ a key word in the chapter (verses 3, 4, 9, 14).",
+      "grammar": "The narrative uses a chain of consecutive verbs (rose early, saddled, took, split, rose, went) and no speech at all. The order is odd: Abraham splits the wood after taking the servants and his son, as though the narrator were holding back the detail that makes the purpose explicit. Hammaqom, ‘the place’, is an ordinary word that later becomes the standard term in Deuteronomy for the sanctuary God will choose (Deuteronomy 12:5).",
+      "words": ["H7925", "H2280", "H1234", "H4725"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Abraham's obedience is prompt and wordless. Hebrews 11:8 describes his first departure as going out without knowing where he was going, and this departure has the same shape: he goes toward a place he has not yet been shown."
+        }
+      ],
+      "refs": ["Genesis 21:14", "Genesis 12:4", "Deuteronomy 12:5", "Hebrews 11:8"]
+    },
+    {
+      "v": "4-5",
+      "context": "After three days Abraham sees the place from far off and leaves the servants behind. His words to them are the most debated line in the chapter: \"we will return to you.\"",
+      "grammar": "Verse 5 has three first person plural verbs in a row: nelekhah (‘we will go’), venishtachaveh (‘and worship’), and venashuvah (‘and we will return’). The form of the last two can express intention, ‘so that we may worship and come back’. The verb for worship means to bow down and is used of bowing before people as well as God (Genesis 18:2, 23:7). The helper parses it as a Hishtaphel: older grammars treated it as a Hithpael of a root shachah, but texts from Ugarit have led most scholars to analyze it as a rare stem of a root chawah. The meaning is not affected. The servants are told \"Stay here\", with the pronoun lakhem, ‘for yourselves’, which gives the command a note of finality.",
+      "words": ["H7812", "H7725J", "H1980G", "H7350"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Interpreters read \"we will return\" in different ways: as a father concealing the truth from his servants, as words said without knowing how they would come true, or as confidence that God would keep his promise through Isaac even beyond death. Hebrews 11:19 takes the third view, saying Abraham reasoned that God could raise the dead."
+        },
+        {
+          "id": "resurrection",
+          "note": "The hope that God could give Isaac back from death is not stated in Genesis but drawn from it by Hebrews 11:19, which calls Isaac's return a figure of resurrection. The verse contributes a trust in God's promise that reaches past the point where death seems to end it."
+        }
+      ],
+      "refs": ["Hebrews 11:19", "Exodus 19:11", "Hosea 6:2", "Genesis 18:2"]
+    },
+    {
+      "v": "6",
+      "context": "Abraham lays the wood on Isaac and carries the fire and the knife himself. The two walk on together, a phrase that frames the conversation of verses 7-8 and returns at the end in verse 19.",
+      "grammar": "Ma'akhelet, \"sacrificial knife\", is related to the verb akhal, to eat or devour. It is a rare word, used only here, in verse 10, in Judges 19:29, and in Proverbs 30:14. Yachdav, \"together\", can mean simply ‘both of them’, but its repetition in verses 6, 8, and 19 gives it weight: the father and son are united in the walk even as the reader dreads its end.",
+      "words": ["H6086G", "H0784", "H3979", "H3162B"],
+      "history": "Carrying \"the fire\" probably means carrying live coals or embers in a covered vessel, since starting a fire from nothing was laborious.",
+      "refs": ["John 19:17", "Genesis 22:19", "Judges 19:29"]
+    },
+    {
+      "v": "7-8",
+      "context": "The only conversation between Abraham and Isaac recorded anywhere in Genesis. Isaac names what is missing, and Abraham answers with a sentence that is true in a way neither of them can yet see.",
+      "grammar": "Isaac's question uses seh, \"lamb\", a word for any young animal of the flock, sheep or goat, the same word used for the Passover animal in Exodus 12:3-5. Abraham's answer places God first for emphasis: Elohim yir'eh-lo hasseh, literally ‘God will see for himself the lamb’. To see to something is to provide it, and lo, ‘for himself’, makes the offering God's own concern. The last word, beni, \"my son\", is most naturally Abraham addressing Isaac. Some readers, ancient and modern, have noticed that the word order also allows a darker hearing, ‘God will provide the lamb... my son’, with the son as the lamb. The text leaves the ambiguity unresolved until verse 13.",
+      "words": ["H7716", "H7200J", "H1121A", "H0346"],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "Isaac's question, where is the lamb, is the question the whole sacrificial system will keep asking. Abraham's answer, that God will provide it, is taken up by John the Baptist when he names Jesus \"the Lamb of God\" (John 1:29)."
+        },
+        {
+          "id": "providence",
+          "note": "Abraham's answer does not claim to know how God will act, only that he will. Providence in Genesis often works this way: the one who trusts knows who, not how."
+        }
+      ],
+      "refs": ["John 1:29", "Exodus 12:3-5", "1 Peter 1:19-20", "Revelation 5:6"]
+    },
+    {
+      "v": "9-10",
+      "context": "The narrative slows to single actions: he built, he arranged, he bound, he placed, he reached out, he took. No words are spoken and no feelings described. The tension peaks as the knife is raised.",
+      "grammar": "Vayya'aqod, \"He bound\", is the only occurrence of this verb in the Old Testament; a related adjective describes striped or banded animals in Genesis 30:35. From it comes the Jewish name for the chapter, the Akedah. Lishchot, \"to slaughter\", is the technical term for killing a sacrificial animal (Leviticus 1:5, 11). The verbs of verse 9 match the steps of a burnt offering in Leviticus 1:7-8: the altar, the wood arranged in order, the victim placed on top.",
+      "words": ["H6123", "H6186A", "H4196", "H7819A", "H3979"],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The narrator describes Isaac with the vocabulary of an animal sacrifice. The reader is made to feel what a sacrificial death means when the victim is a beloved son. Isaiah 53:7 pictures the servant of the LORD led like a lamb to the slaughter, silent as Isaac is here."
+        }
+      ],
+      "refs": ["Leviticus 1:5-9", "Isaiah 53:7", "Hebrews 11:17", "James 2:21-23"]
+    },
+    {
+      "v": "11-12",
+      "context": "The angel of the LORD calls from heaven, doubling Abraham's name in urgency. The command reverses verse 10 word for word: Abraham reached out his hand; he must not reach out his hand. The test is over, and its result is stated: Abraham fears God.",
+      "grammar": "The doubled name (\"Abraham, Abraham\") appears at moments of divine urgency elsewhere: Jacob (Genesis 46:2), Moses (Exodus 3:4), Samuel (1 Samuel 3:10). Al-tishlach yadekha, ‘do not stretch out your hand’, repeats the verb of verse 10. Yere Elohim, ‘one who fears God’, answers Abraham's own complaint in 20:11 that there was no fear of God in Gerar. Chasakhta, \"you have not withheld\", is the verb God used when he held Abimelech back from sin (20:6). The angel speaks as God himself: \"from me\".",
+      "words": ["H4397H", "H7971K", "H3373", "H2820", "H3045"],
+      "theology": [
+        {
+          "id": "fear-of-god",
+          "note": "The fear of God is defined here by what a person will not withhold from him. It is reverence shown in action, the same quality for which Job is described as one who feared God (Job 1:1)."
+        },
+        {
+          "id": "angels",
+          "note": "The angel of the LORD speaks in God's first person (\"from me\"), as in Genesis 16:10 and 21:18. Many Christian interpreters have seen in this figure an appearance of God himself, some identifying him with the Son before the incarnation; others regard him as a messenger who speaks with his sender's full authority. The text does not settle it."
+        }
+      ],
+      "refs": ["Exodus 3:4", "Genesis 20:11", "Romans 8:32", "Job 1:1"]
+    },
+    {
+      "v": "13",
+      "context": "Abraham looks up, as he did in verse 4, and sees a ram caught by its horns. He offers it in his son's place. What Abraham told Isaac in verse 8 comes true in a way he could not have foreseen.",
+      "grammar": "Vehinneh, ‘and look’, shifts to Abraham's point of view: we see the ram as he sees it. Ne'echaz, \"caught\", is a Niphal (passive): the ram did not choose to be there. The decisive phrase is tachat beno, \"in place of his son\": tachat means ‘under’ and, by extension, ‘instead of’, and it is the language of substitution. The ram (ayil) is not the lamb (seh) Isaac asked about, a difference some interpreters take to mean that the lamb of verse 8 is still to come.",
+      "words": ["H0352A", "H0270", "H8478H", "H5927I"],
+      "text": "The standard Hebrew text reads achar, ‘behind’, so ‘a ram behind (him)’, which the BSB follows. Many Hebrew manuscripts, the Samaritan Pentateuch, the Septuagint, and the Syriac read echad, ‘one’ or ‘a’, so ‘a ram’. The two words differ in Hebrew by one letter that is easily confused (d and r look alike), and some modern translations follow the ancient versions.",
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The ram dies instead of Isaac. The principle of substitution, one life given in place of another, is stated here in its simplest form. The New Testament describes Christ's death with the same logic, the righteous for the unrighteous (1 Peter 3:18) and a ransom for many (Mark 10:45)."
+        }
+      ],
+      "refs": ["Mark 10:45", "1 Peter 3:18", "Leviticus 1:4", "Isaiah 53:5-6"]
+    },
+    {
+      "v": "14",
+      "context": "Abraham names the place for what God did there, and the narrator adds a saying that was still current in his own day. The name is about God, not Abraham: it records God's provision, not Abraham's obedience.",
+      "grammar": "The name YHWH yir'eh uses the active verb, ‘the LORD will see’ or ‘provide’. The proverb that follows uses the passive (Niphal) of the same verb, yera'eh, which can mean ‘it will be seen’, ‘he will be seen’, or ‘it will be provided’. The phrase ‘the mountain of the LORD’ later becomes a name for Zion, the temple hill (Isaiah 2:3, Psalm 24:3).",
+      "words": ["H7200N", "H7200G", "H2022G", "H3068G"],
+      "text": "Translations divide on the proverb. The BSB reads \"it will be provided\"; others read ‘the LORD will be seen’ or ‘he will appear’. The Hebrew allows both, and the play is probably deliberate: the place where God sees to his people's need is the place where he is seen.",
+      "theology": [
+        {
+          "id": "temple",
+          "note": "If Moriah is the temple mount, as 2 Chronicles 3:1 indicates, the place where God provided a substitute for Isaac became the place where Israel's sacrifices were offered for centuries. The verse gives the temple its first meaning: the place where God provides and appears."
+        }
+      ],
+      "refs": ["2 Chronicles 3:1", "Isaiah 2:3", "Psalm 24:3", "Genesis 16:13"]
+    },
+    {
+      "v": "15-16",
+      "context": "The angel calls a second time, and God now does what he has not done before in Genesis: he swears an oath by himself. The reason is stated plainly: because Abraham did not withhold his son.",
+      "grammar": "Bi nishba'ti, \"By Myself I have sworn\", uses the Hebrew perfect for an act performed in the saying of it. Neum YHWH, \"declares the LORD\", is the formula that marks prophetic speech hundreds of times in the prophets, and this is its only appearance in Genesis. Ya'an asher, \"because\", ties the renewed promise to Abraham's act. \"Have not withheld\" and \"your only son\" are repeated from verse 12, a third echo of the command in verse 2.",
+      "words": ["H7650", "H5002", "H3282", "H2820", "H3173"],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "Hebrews 6:13-18 explains the oath: God, having no one greater to swear by, swore by himself so that his people might have strong encouragement. The covenant rests finally not on Abraham's obedience but on God's sworn word, though Abraham's obedience is the occasion of the oath."
+        }
+      ],
+      "refs": ["Hebrews 6:13-18", "Isaiah 45:23", "Jeremiah 22:5", "Luke 1:73"]
+    },
+    {
+      "v": "17-18",
+      "context": "The oath gathers the earlier promises (blessing, countless descendants, victory, blessing for the nations) and seals them. It is the last time God speaks to Abraham in Genesis.",
+      "grammar": "Two emphatic constructions open verse 17: barekh avarekhekha, ‘blessing I will bless you’, and harbah arbeh, ‘multiplying I will multiply’, each an infinitive before its finite verb (\"I will surely bless you\"). Stars (Genesis 15:5) and sand (later 32:12) are combined for the first time. The possession of \"the gates\" means control of cities, since the gate was where a city was defended and governed. The Hebrew says ‘his enemies’: zera, \"offspring\", is a collective singular noun and takes singular pronouns, so the BSB renders \"their enemies\". Paul's argument that the promise speaks of one offspring, Christ (Galatians 3:16), works with this singular noun. In verse 18 vehitbarakhu is a Hithpael, which can mean ‘will be blessed’ or ‘will bless themselves’ (invoking Abraham's offspring as a model of blessing); Genesis 12:3 used a different form (Niphal). The New Testament quotations follow the Greek passive, ‘will be blessed’ (Acts 3:25, Galatians 3:8).",
+      "words": ["H1288", "H7235A", "H8179G", "H0341", "H2233H"],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "The last word God speaks to Abraham is a sworn restatement of the covenant. The blessing of the nations is its goal, and the offspring is its means."
+        },
+        {
+          "id": "mission",
+          "note": "All the nations of the earth are in view at the climax of Abraham's story. Paul calls this promise the gospel announced in advance to Abraham (Galatians 3:8), and Peter applies it to the blessing that comes through Jesus (Acts 3:25-26)."
+        }
+      ],
+      "refs": ["Galatians 3:8", "Galatians 3:16", "Acts 3:25-26", "Genesis 24:60", "Genesis 26:4-5"]
+    },
+    {
+      "v": "19",
+      "context": "Abraham returns to the servants and they go back to Beersheba. The verse says nothing of Isaac. He next appears in person in Genesis 24:62, and interpreters have long noticed the silence.",
+      "grammar": "The verb vayyashov, \"went back\", is singular: Abraham returned. Then yachdav, \"together\", appears for the third time, now of the whole company. Some take Isaac's absence from the sentence as simple narrative economy, since the focus is on Abraham's test; others see a hint that the relationship between father and son was never quite the same. The text itself does not say.",
+      "words": ["H7725G", "H3162B", "H0884"],
+      "refs": ["Genesis 24:62", "Genesis 21:33", "Genesis 23:2"]
+    },
+    {
+      "v": "20-23",
+      "context": "News arrives from Mesopotamia: Abraham's brother Nahor has eight sons by his wife Milcah. The list seems to change the subject, but it ends with the name that matters, Rebekah (verse 23), and so prepares for Genesis 24. Right after God swears to multiply Abraham's offspring through Isaac, the reader learns where Isaac's wife will come from.",
+      "grammar": "The list is introduced with hinneh, ‘look’, and gam hi, ‘she too’: Milcah, like Sarah, has borne sons. The eight names are all grammatical objects of the verb ‘has borne’ in verse 20, marked by the object particle et before each. Verse 23 breaks the pattern: it goes down a generation to name one granddaughter, Rebekah, the only woman in the list.",
+      "words": ["H4435G", "H1571", "H5152H", "H1328A", "H7259"],
+      "history": "Some of these names reappear later as peoples or places. Job lived in the land of Uz (Job 1:1), and Elihu is a Buzite (Job 32:2); Buz is also named among Arabian peoples in Jeremiah 25:23. Kemuel is called the father of Aram, the name of the Aramean peoples of Syria and upper Mesopotamia. Kesed is often connected with the Kasdim, the Chaldeans, though the link is not certain. The list maps Abraham's kin in the lands east and north of Canaan.",
+      "refs": ["Genesis 11:29", "Genesis 24:15", "Job 1:1", "Job 32:2"]
+    },
+    {
+      "v": "24",
+      "context": "Nahor's concubine Reumah bears four more sons, bringing his total to twelve. Ishmael (Genesis 25:13-16) and Jacob (Genesis 35:22-26) will also have twelve sons, and the pattern marks Nahor's family as a people in its own right.",
+      "grammar": "Pilegesh, \"concubine\", is a wife of secondary rank, married but without the full standing of the principal wife, and her sons usually did not inherit equally (Genesis 25:6). The phrase gam hi, ‘she too’, is repeated from verse 20, linking the two mothers.",
+      "words": ["H6370", "H7208", "H4601G"],
+      "history": "Maacah later names a small Aramean kingdom north of the Sea of Galilee, near Mount Hermon. Its king sent troops to fight David alongside the Ammonites (2 Samuel 10:6), and the tribe of Manasseh's territory bordered it (Deuteronomy 3:14).",
+      "refs": ["Genesis 25:13-16", "Genesis 25:6", "2 Samuel 10:6", "Deuteronomy 3:14"]
+    }
+  ]
+}

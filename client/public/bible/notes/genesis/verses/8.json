@@ -1,0 +1,269 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "The turning point of the whole flood narrative. Chapter 7 ended with the waters prevailing and nothing alive outside the ark; this verse names God's remembering before it names anything the water does. The receding that follows in verses 1 to 5 is the answer to that remembering, and the wind over the waters quietly recalls the first verses of the Bible.",
+      "grammar": "Vayyizkor (“remembered”) is a wayyiqtol, the ordinary form for the next event in a Hebrew story, so the text presents God's remembering as an act in the sequence, not a mood. The verb zakar, when God is its subject, regularly leads straight into action on someone's behalf (Genesis 19:29; 30:22; Exodus 2:24). The second verb, vayyaaver, is a Hiphil (causative) of avar, ‘to pass over’: God ‘made a wind pass over’ the earth. The wind is ruach, the same word used in 1:2 for the Spirit or wind of God over the waters, and the verbal echo tells the reader that what follows is a remaking of the world.",
+      "words": [
+        "H2142",
+        "H5674A",
+        "H7307H"
+      ],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "God's care in this verse reaches past Noah to “all the animals and livestock” in the ark. His remembering is not a sudden recollection but the faithful carrying through of the promise of 6:18, and it works through an ordinary means, a wind that dries the waters."
+        },
+        {
+          "id": "creation",
+          "note": "The wind over the waters and the drying land that follows repeat the opening of Genesis 1. Judgment has returned the earth almost to the watery state of 1:2, and God begins again from there, which shows that his purpose for creation outlasts his judgment on it."
+        }
+      ],
+      "refs": [
+        "Genesis 1:2",
+        "Genesis 6:18",
+        "Exodus 2:24",
+        "Exodus 14:21",
+        "1 Samuel 1:19"
+      ]
+    },
+    {
+      "v": "2-3",
+      "context": "The two sources of the flood named in 7:11, the springs of the deep below and the floodgates of the heavens above, are shut. The waters then withdraw gradually, and the 150 days of 7:24 are closed off. The narrative is deliberately reversing the account of the rising waters, detail by detail.",
+      "grammar": "The verbs of closing are both Niphal, a passive form: the springs “were closed” and the rain “was restrained”. No agent is named, but after verse 1 the reader knows who closes them. Verse 3 then uses a construction Hebrew favors for gradual, continuing action: the finite verb is followed by two infinitive absolutes, halokh vashov, literally ‘going and returning’. The BSB renders the effect well with “receded steadily”. The same pattern of paired infinitives returns in verses 5 and 7.",
+      "words": [
+        "H5534",
+        "H3607",
+        "H1980L",
+        "H7725J"
+      ],
+      "refs": [
+        "Genesis 7:11",
+        "Genesis 7:24",
+        "Job 38:8-11",
+        "Psalm 104:6-9"
+      ]
+    },
+    {
+      "v": "4-5",
+      "context": "The ark grounds in the mountains of Ararat, and over the following months the peaks become visible. The dates are given precisely, month and day, as they were when the flood began (7:11), because the narrator is marking the stages of an undoing that runs as carefully as the destruction did.",
+      "grammar": "“Came to rest” is vattanach, from nuach, a verb that sounds like Noah's name. The chapter note traces that wordplay; what the grammar adds is that the ark is the subject, a feminine noun with a feminine verb, drifting to its place without any steering by Noah. In verse 5 the Hebrew says the waters ‘were going and decreasing’, a perfect of hayah (‘to be’) followed again by two infinitive absolutes, and the mountaintops ‘were seen’, a Niphal of raah. Noah does not yet see them from a window; the text simply reports that they appeared.",
+      "words": [
+        "H5117",
+        "H0780",
+        "H2637",
+        "H7200G"
+      ],
+      "history": "The flood's dates are counted in Noah's life (7:11), not in any king's reign, since there are no kings yet. The waters begin on the seventeenth day of the second month, and the ark rests on the seventeenth day of the seventh month, exactly five months later; with thirty-day months that is the 150 days of 7:24 and 8:3. Many commentators take this as evidence that the narrator is working with a schematic calendar of equal months. Which month the year began with (spring, as in Exodus 12:2, or autumn, as in Israel's later civil reckoning) is not stated, and interpreters differ.",
+      "refs": [
+        "Genesis 7:11",
+        "Genesis 7:24",
+        "2 Kings 19:37",
+        "Jeremiah 51:27"
+      ]
+    },
+    {
+      "v": "6-7",
+      "context": "Forty days after the peaks appear, Noah opens a window and sends out a raven. From here Noah acts for the first time since he entered the ark, but he acts by testing and waiting, not by leaving. The raven sets up the contrast with the dove in the verses that follow.",
+      "grammar": "The window here is challon, the ordinary word for a window in a house wall (Joshua 2:15), not the tsohar of 6:16, a rarer word usually taken to mean a roof opening or light. The raven's movement is again described with a finite verb followed by two infinitive absolutes, yatso vashov, ‘going out and returning’, which the BSB renders “kept flying back and forth”. The construction describes restless, repeated movement, which fits a bird that can perch on floating wreckage and has no need to come back inside.",
+      "words": [
+        "H2474",
+        "H6158",
+        "H3318G"
+      ],
+      "history": "The raven, orev, is listed among the unclean birds in Israel's law (Leviticus 11:15), a scavenger that can live on carcasses. Releasing birds to find land was a known practice of ancient seafarers, and the Babylonian flood story in the Epic of Gilgamesh also has its hero send out birds, as the chapter note describes.",
+      "text": "The Hebrew says the raven went ‘out and back’ until the waters dried. The Greek Septuagint and the Latin Vulgate read instead that the raven went out and did not return, a reading that shaped later Christian allegories of the raven as the one who never comes home. English Bibles follow the Hebrew.",
+      "refs": [
+        "Genesis 6:16",
+        "Leviticus 11:15",
+        "1 Kings 17:4-6",
+        "Luke 12:24"
+      ]
+    },
+    {
+      "v": "8-9",
+      "context": "The dove is sent to find out whether the ground is exposed, and it comes back because it has nowhere to land. The narrative slows to describe Noah reaching out his hand and bringing the bird inside, one of the most tender images in Genesis.",
+      "grammar": "The purpose clause “to see if the waters had receded” contains an indirect question marked by the Hebrew interrogative prefix on kallu (‘had they abated’). The dove found no manoach, “place to rest”, for the sole of her foot, a noun from the same root as the ark's resting in verse 4. Verse 9 then uses shalach twice in two stems. In verse 8 it is Piel, ‘sent away’; in verse 9 it is Qal with “his hand”, ‘stretched out’. The same verb that sends the bird away reaches out to bring her back.",
+      "words": [
+        "H3123",
+        "H7043",
+        "H4494",
+        "H7971G",
+        "H7971K"
+      ],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "Noah's knowledge comes slowly, through ordinary means and patient testing. God has promised to keep him alive, but the text shows that trust in that promise does not rule out watching, testing, and waiting before acting."
+        }
+      ],
+      "refs": [
+        "Deuteronomy 28:65",
+        "Lamentations 1:3",
+        "Psalm 55:6",
+        "Matthew 10:16"
+      ]
+    },
+    {
+      "v": "10-12",
+      "context": "Two more waits of seven days. The dove returns in the evening with a fresh olive leaf, and Noah knows the waters have fallen; a week later she does not come back at all. Noah learns the state of the earth in three stages, and even after the last he does not leave until God tells him to (verses 15 and 16).",
+      "grammar": "Verse 11 opens with vehinneh, “And behold”, which moves the reader to Noah's point of view as the bird lands. The leaf is taraf, “freshly plucked”, an adjective from a verb (taraf) usually used of a wild animal tearing prey (Genesis 37:33); the leaf has been torn off a living tree, not picked up from the water. Verse 12 says literally that the dove ‘did not add to return’, using yasaf with an infinitive, the usual Hebrew idiom for ‘did not do again’.",
+      "words": [
+        "H2009",
+        "H5929",
+        "H2132H",
+        "H2965",
+        "H3254G"
+      ],
+      "text": "The verb for Noah's waiting differs slightly between the two verses. In verse 12 it is vayyiyyachel, from yachal, ‘to wait’ or ‘to hope’; in verse 10 the vowels point to a related verb, chul, which can also mean ‘to wait’. Many scholars think verse 10 should be read with yachal as in verse 12, since the sense is the same either way. The phrase “seven more days” in verse 10 implies an earlier seven-day wait that the text does not describe, probably between the raven and the first flight of the dove.",
+      "theology": [
+        {
+          "id": "hope",
+          "note": "The verb yachal, used of Noah's waiting in verse 12, is the same verb Israel later uses for hoping in God (Psalm 130:5; Micah 7:7). Noah's patience between promise and fulfillment is the first long wait in Scripture, and the olive leaf is the first small sign that the promise is holding."
+        }
+      ],
+      "refs": [
+        "Psalm 130:5-6",
+        "Micah 7:7",
+        "Lamentations 3:25-26",
+        "Romans 8:24-25"
+      ]
+    },
+    {
+      "v": "13-14",
+      "context": "The first day of the first month: the new world begins on a new year's day. Noah removes the covering and sees dry ground, but the text waits nearly two months more before it says the earth is fully dry. The two dates mark two stages of drying, the surface and then the whole earth.",
+      "grammar": "Two different verbs describe the drying. Verse 13 uses charav (charevu, ‘were dried up’), which describes water disappearing; verse 14 uses yavesh (yaveshah, ‘was dry’), which describes land that has become solid and usable. The difference is small but real: first the water is gone, then the ground can be walked on. The mikseh, “covering”, that Noah removes is the word used later for the outer coverings of skins over the tabernacle (Exodus 26:14).",
+      "words": [
+        "H2717A",
+        "H3001",
+        "H4372"
+      ],
+      "history": "From the start of the flood (the seventeenth day of the second month of Noah's six hundredth year, 7:11) to the day the earth is dry (the twenty-seventh day of the second month of the following year) is a year and ten days. Several commentators have noted that a lunar year of about 354 days plus eleven days comes close to a solar year of 365 days, so the flood may be pictured as lasting one full solar year. The text does not say which calendar it uses, and others treat the figure simply as the narrative's own reckoning.",
+      "text": "The Hebrew of verse 13 says only ‘in the six hundred and first year’. The words “Noah’s” in the BSB (and similar wording in other English versions) are supplied from 7:11, where the flood's dates are counted by Noah's age.",
+      "refs": [
+        "Genesis 7:11",
+        "Exodus 40:2",
+        "Exodus 26:14"
+      ]
+    },
+    {
+      "v": "15-17",
+      "context": "God speaks to Noah for the first time since the command to enter the ark (7:1-4). Noah entered at God's word and leaves at God's word. The command to bring out the animals so they can swarm, be fruitful, and multiply renews the blessing of the fifth and sixth days of creation.",
+      "grammar": "“Come out” (tse) is a Qal imperative of yatsa; “bring out” (haytse) is the Hiphil, the causative of the same verb, so Noah is told both to go out and to make the animals go out. The three verbs that close verse 17 are consecutive perfects, which here express the result or purpose of the command: ‘and they will swarm on the earth and be fruitful and multiply’. Sharats (‘swarm’) is the verb used of the teeming sea creatures in 1:20-21, and paru and ravu are the ‘be fruitful and multiply’ of 1:22.",
+      "words": [
+        "H3318G",
+        "H3318H",
+        "H8317",
+        "H6509",
+        "H7235A"
+      ],
+      "history": "The order of names in verse 16 (Noah and his wife, his sons and their wives) differs from 7:7 and 8:18, where the men are named together and then the women. Rabbinic interpreters, followed by the medieval commentator Rashi, took the separation in the ark as a time of marital abstinence and the pairing here as permission to resume family life. The text itself does not explain the variation.",
+      "theology": [
+        {
+          "id": "creation",
+          "note": "The blessing that went out to living creatures in Genesis 1 is spoken again over the animals leaving the ark. God's intention for a full and teeming earth was interrupted by judgment but not withdrawn."
+        }
+      ],
+      "refs": [
+        "Genesis 1:20-22",
+        "Genesis 7:1",
+        "Genesis 9:1",
+        "Genesis 9:7"
+      ]
+    },
+    {
+      "v": "18-19",
+      "context": "Noah obeys exactly, and the animals follow. The emptying of the ark mirrors its filling in 7:13-16, and the inventory of creatures echoes the lists of Genesis 1. The world is populated again from what the ark preserved.",
+      "grammar": "“Kind by kind” translates lemishpechotehem, literally ‘by their families’ or ‘clans’. It is not the word min (‘kind’) used in 1:11-25 and 6:20, but mishpachah, the word Genesis 10 will use for the clans of the nations (10:5, 20, 31, 32). The animals leave the ark in family groups, and the vocabulary anticipates the families of humanity spreading out in the next chapters.",
+      "words": [
+        "H4940",
+        "H7430",
+        "H3318G"
+      ],
+      "refs": [
+        "Genesis 7:13-16",
+        "Genesis 10:32",
+        "Genesis 12:3"
+      ]
+    },
+    {
+      "v": "20",
+      "context": "Noah's first act on the new earth is to build an altar and offer burnt offerings from the clean animals and birds. Noah has received no command to do this; the worship is his response to deliverance, and it explains why extra clean animals went into the ark (7:2-3).",
+      "grammar": "This is the first mizbeach, “altar”, in the Bible. The noun comes from the verb zavach, ‘to slaughter for sacrifice’. The offering verb is vayyaal, the Hiphil of alah, ‘to go up’, so Noah literally ‘made go up’ olot, burnt offerings, whose name comes from the same root. Sound and sense agree: the whole offering rises to God in smoke. The name used for God is the LORD (YHWH), the covenant name, which is the name used in the command about clean animals in 7:2.",
+      "words": [
+        "H4196",
+        "H5927I",
+        "H5930A",
+        "H2889"
+      ],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "Noah comes before God on the far side of judgment by way of a sacrifice. The verse does not say what the offering accomplished, but in Israel's law the burnt offering was accepted “to make atonement” for the worshiper (Leviticus 1:4), and the new world's first act of worship takes that shape."
+        }
+      ],
+      "refs": [
+        "Genesis 7:2-3",
+        "Genesis 4:4",
+        "Genesis 12:7",
+        "Leviticus 1:4",
+        "Leviticus 1:9"
+      ]
+    },
+    {
+      "v": "21",
+      "context": "God's response is spoken ‘in his heart’, a resolve made to himself before it is announced as a covenant in 9:8-17. He promises never again to curse the ground on humanity's account or to strike down all life, and he gives as his reason the same evil heart that caused the flood (6:5).",
+      "grammar": "The key word is ki, which the BSB translates “even though”. Ki more often means ‘for’ or ‘because’, and some translations read it that way: God will not repeat the flood because human beings are evil from their youth, so another flood would not cure them. Others read it as concessive, as the BSB does: God will spare the world although humanity has not changed. Both readings are possible grammatically, and both make God's patience, not human improvement, the reason for the promise. “Curse” here is leqallel, the Piel of qalal, a different verb from arar in 3:17 and 4:11; interpreters disagree whether the promise ends the curse of 3:17 or only rules out another flood.",
+      "words": [
+        "H7381",
+        "H5207",
+        "H3820A",
+        "H7043",
+        "H3336"
+      ],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "God's verdict on the human heart is the same after the flood as before it, and it now adds “from his youth”. Sin is not a habit learned late but an inclination present from the start. Judgment removed a generation; it did not change the heart."
+        },
+        {
+          "id": "atonement",
+          "note": "The promise follows directly on the LORD's smelling “the pleasing aroma” of the sacrifice. The verse ties God's decision to bear with the world to an accepted offering, a connection the New Testament uses when it calls Christ's death a fragrant offering to God (Ephesians 5:2)."
+        }
+      ],
+      "refs": [
+        "Genesis 6:5-6",
+        "Genesis 3:17",
+        "Genesis 5:29",
+        "Isaiah 54:9",
+        "Jeremiah 17:9"
+      ]
+    },
+    {
+      "v": "22",
+      "context": "The chapter ends in a short poem. Four pairs of opposites cover the farming year, the weather, and the daily cycle, and God pledges that they will continue as long as the earth lasts. The promise of verse 21 is made concrete in the rhythms every human being lives by.",
+      "grammar": "The opening phrase, od kol yeme haarets, means ‘yet all the days of the earth’: the promise is bounded by the earth's own lifetime, which quietly implies the earth is not eternal. The closing verb is yishbotu, from shavat, ‘to cease’ or ‘to stop’, the verb behind the word Sabbath (2:2-3). The seasons will not ‘stop work’. The four pairs are merisms, pairs of extremes that stand for everything between them.",
+      "words": [
+        "H7673A",
+        "H2233G",
+        "H7105A",
+        "H3117G",
+        "H3915"
+      ],
+      "history": "The pairs fit the agricultural year of the land Israel lived in, with sowing in the autumn rains and harvest in spring and early summer. The Gezer Calendar, a small limestone tablet found at Gezer in 1908 and usually dated to around the tenth century BC, lists the months of such a year by their farm work (ingathering, sowing, late sowing, flax, barley harvest, harvest, pruning, and summer fruit), a reminder of how directly a promise about seedtime and harvest spoke to its first hearers.",
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The regularity of nature is presented here as a promise, not a law that runs on its own. The seasons continue because God has pledged that they will, which is why Paul can point pagan listeners to rain and fruitful seasons as God's witness to himself (Acts 14:17)."
+        }
+      ],
+      "refs": [
+        "Jeremiah 33:20-21",
+        "Jeremiah 33:25-26",
+        "Acts 14:17",
+        "Matthew 5:45",
+        "2 Peter 3:7"
+      ]
+    }
+  ]
+}
