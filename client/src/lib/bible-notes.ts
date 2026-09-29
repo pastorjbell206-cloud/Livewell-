@@ -184,6 +184,21 @@ export const fetchDoctrines = () => cached("/bible/doctrines.json", isDoctrines)
 export const fetchLoci = () => cached("/bible/doctrines.json", isDoctrines).then((d) => d.loci);
 export const fetchVerseNotes = (slug: string, chapter: number) => cached(`/bible/notes/${slug}/verses/${chapter}.json`, isVerses).then((d) => d.verses);
 export const fetchStudy = (id: string) => cached(`/bible/doctrines/${id}.json`, isStudy);
+export interface GuideIndex {
+  groups: { id: string; name: string; intro?: string; guides: { id: string; title: string; summary: string }[] }[];
+}
+
+export interface Guide {
+  id: string;
+  title: string;
+  summary: string;
+  sections: { h: string; body: string; table?: { caption?: string; columns: string[]; rows: string[][] }; refs?: string[] }[];
+}
+
+const isGuideIndex = (x: unknown): x is GuideIndex => obj(x) && Array.isArray(x.groups);
+const isGuide = (x: unknown): x is Guide => obj(x) && typeof x.title === "string" && Array.isArray(x.sections);
+export const fetchGuideIndex = () => cached("/bible/guides/index.json", isGuideIndex);
+export const fetchGuide = (id: string) => cached(`/bible/guides/${id}.json`, isGuide);
 export const fetchDoctrineVerses = (id: string) => cached(`/bible/doctrine-verses/${id}.json`, isDoctrineVerses).then((d) => d.verses);
 
 /** The verse-note entry that covers a verse. */

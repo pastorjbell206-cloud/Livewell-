@@ -151,6 +151,7 @@ function BookIndex({ books }: { books: BibleBook[] }) {
     { href: "/study/bible/story", kicker: "Start here", title: "The Story of the Bible", body: "The whole Bible as one story in eleven acts, from creation to new creation, with the history behind each act and every chapter placed where it happened, as closely as the text allows." },
     { href: "#books", kicker: "Book by book", title: "The Sixty-Six Books", body: "An introduction to every book (who wrote it, when, why, and how it is built), then study notes on each of its chapters." },
     { href: "/study/bible/doctrines", kicker: "What it teaches", title: "The Doctrines", body: "God, creation, sin, covenant, Christ, salvation, the Spirit, the church, and the last things, each traced through every chapter that teaches it." },
+    { href: "/study/bible/guides", kicker: "New to the Bible?", title: "Guides and Tools", body: "What the Bible is, how the books were chosen, how the text reached us, how to read each kind of writing, and tables of the ancient world's money, measures, calendar, and kings." },
   ];
   return (
     <>

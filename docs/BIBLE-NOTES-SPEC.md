@@ -322,3 +322,38 @@ study links there rather than repeating them.
 - Name only real councils, creeds, confessions, dates, and theologians, and
   describe their positions accurately. Never quote them; describe.
 - Same register and accuracy rules as everything else in this brief.
+
+## Guides: `client/public/bible/guides/<id>.json`
+
+The guides are the Study Bible's orientation and reference shelf, listed in
+`guides/index.json`: what the Bible is and how it reached us, how to read
+each kind of writing, and the background of the ancient world. Each is a
+short course for a newcomer that a seminary student would still trust.
+
+```json
+{
+  "id": "weights-measures-money",
+  "title": "Weights, Measures, and Money",
+  "summary": "One or two sentences (60 to 400 characters).",
+  "sections": [
+    {
+      "h": "Section heading",
+      "body": "Paragraphs separated by \n\n.",
+      "table": { "caption": "Optional", "columns": ["Unit", "About", "Where"], "rows": [["cubit", "45 cm (18 in)", "Genesis 6:15"]] },
+      "refs": ["Exodus 30:13", "Matthew 22:19"]
+    }
+  ]
+}
+```
+
+- Three to twelve sections, roughly 2,500 to 6,000 words in all; tables
+  where the material is genuinely tabular (units, kings, months, empires).
+- Where scholars disagree (dates of the exodus or of kings, the order of the
+  Gospels, the formation of the canon), set out the positions fairly, with
+  their defenders named.
+- Every name, date, manuscript, council, and figure must be real and correct;
+  verify with a web search anything you are not certain of. Approximate
+  values say "about".
+- Same register and rules as the notes: plain, warm reference prose; verbatim
+  BSB in double quotes only; no em-dashes or exclamation points outside
+  Scripture (including in table cells); no forbidden words.

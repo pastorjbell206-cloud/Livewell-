@@ -870,6 +870,18 @@ function prerenderStudyBible(template) {
       [`<h1>${escapeHtml(d.name)}</h1>`, para(d.summary), studyBody, links ? section("Chapters that teach it", `<ol>\n${links}\n</ol>`) : ""].join("\n")
     );
   }
+  const gi = read("guides/index.json");
+  for (const g of gi?.groups ?? [])
+    for (const x of g.guides) {
+      const gd = read(`guides/${x.id}.json`);
+      if (!gd) continue;
+      const body = [
+        `<h1>${escapeHtml(gd.title)}</h1>`,
+        `<p>${escapeHtml(gd.summary)}</p>`,
+        ...gd.sections.map((s) => section(s.h, `${para(s.body)}${s.table ? `\n<table>${s.table.caption ? `<caption>${escapeHtml(s.table.caption)}</caption>` : ""}<tr>${s.table.columns.map((c) => `<th>${escapeHtml(c)}</th>`).join("")}</tr>${s.table.rows.map((r) => `<tr>${r.map((c) => `<td>${escapeHtml(c)}</td>`).join("")}</tr>`).join("")}</table>` : ""}`)),
+      ].join("\n");
+      emit(`/study/bible/guides/${x.id}`, gd.title, trim(gd.summary), [root, { name: "Guides", path: "/study/bible/guides" }, { name: gd.title, path: `/study/bible/guides/${x.id}` }], body, "article");
+    }
   return n;
 }
 

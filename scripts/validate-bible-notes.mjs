@@ -351,6 +351,34 @@ for (const id of doctrineIds) {
   try { checkStudy(id, `doctrines/${id}`); studies++; } catch (e) { fail(`doctrines/${id}`, e.message); }
 }
 
+// Guides: every guide listed in guides/index.json that exists is checked.
+let guides = 0;
+if (!partial && fs.existsSync(path.join(DIR, "guides", "index.json"))) {
+  for (const g of json("guides/index.json").groups)
+    for (const x of g.guides) {
+      if (!fs.existsSync(path.join(DIR, "guides", `${x.id}.json`))) continue;
+      const where = `guides/${x.id}`;
+      try {
+        const d = json(`guides/${x.id}.json`);
+        if (d.id !== x.id) fail(where, `id is "${d.id}"`);
+        prose(`${where}.summary`, d.summary, 60, 400);
+        if (!Array.isArray(d.sections) || d.sections.length < 3) fail(where, "at least three sections");
+        else for (const [i, s] of d.sections.entries()) {
+          if (typeof s.h !== "string" || s.h.length < 3) fail(`${where}.sections[${i}]`, "missing heading");
+          prose(`${where}.sections[${i}].body`, s.body, 200, 8000);
+          if (s.table) {
+            const cols = s.table.columns?.length ?? 0;
+            if (cols < 2 || !Array.isArray(s.table.rows) || s.table.rows.length < 2) fail(`${where}.sections[${i}].table`, "a table needs two or more columns and rows");
+            else for (const r of s.table.rows) if (!Array.isArray(r) || r.length !== cols || r.some((c) => typeof c !== "string")) { fail(`${where}.sections[${i}].table`, "every row needs one string per column"); break; }
+            else if (r.some((c) => /\u2014|!/.test(c))) { fail(`${where}.sections[${i}].table`, "no em-dashes or exclamation points in table cells"); break; }
+          }
+          for (const r of s.refs ?? []) if (!refOk(r)) fail(`${where}.sections[${i}]`, `"${r}" is not a real passage`);
+        }
+        guides++;
+      } catch (e) { fail(where, e.message); }
+    }
+}
+
 // The story path: eleven acts that walk all 1,189 chapters exactly once.
 if (!partial) {
   const story = json("story.json");
@@ -384,4 +412,4 @@ if (errors.length) {
   for (const e of errors.slice(0, 200)) console.error("  " + e);
   process.exit(1);
 }
-console.log(`✓ bible notes: ${intros} introductions, ${notes} chapter notes, ${verseFiles} verse-note files, ${studies} doctrine studies${versesMissing && !VERSES_COMPLETE ? ` (${versesMissing} chapters still without verse notes)` : ""}${partial ? " (partial check)" : ", story path covers all 1,189 chapters"}`);
+console.log(`✓ bible notes: ${intros} introductions, ${notes} chapter notes, ${verseFiles} verse-note files, ${studies} doctrine studies, ${guides} guides${versesMissing && !VERSES_COMPLETE ? ` (${versesMissing} chapters still without verse notes)` : ""}${partial ? " (partial check)" : ", story path covers all 1,189 chapters"}`);
