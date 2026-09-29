@@ -356,3 +356,18 @@ export const PILLARS_BY_MOVEMENT: Record<Movement, Pillar[]> = {
 export function pillarUrl(slug: string): string {
   return `/writing?pillar=${slug}`;
 }
+
+const COUNT_WORDS = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve"];
+
+/** A small count as a word ("five"), falling back to digits past twelve. */
+export function countWord(n: number): string {
+  return COUNT_WORDS[n] ?? String(n);
+}
+
+/**
+ * How many pillars the site has, derived from PILLARS_V2. Every visible
+ * "N pillars" reads from here, so merging or adding a pillar can never leave
+ * the nav saying one number and /pillars another.
+ */
+export const PILLAR_COUNT = PILLARS_V2.length;
+export const PILLAR_COUNT_WORD = countWord(PILLAR_COUNT);

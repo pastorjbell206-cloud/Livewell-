@@ -342,12 +342,13 @@ high the numbers.
 | Display (H1) | Cormorant Garamond | 400 | `letter-spacing: -0.02em`. Size carries weight, not boldness. |
 | Section titles (H2) | Cormorant Garamond | 400 | — |
 | Subheadings (H3) | Cormorant Garamond | 500 | — |
-| Body | Inter | 400 | `line-height: 1.7`, `max-width: 68ch` |
+| Long-form body (essays, guides, history; `.article-body`) | Source Serif 4 (`--font-text`) | 400 / 600 | 20px (18px on phones), `line-height: 1.65`, measure `--measure-text` (64ch); curly quotes at render time (`lib/smart-quotes.ts`) |
+| Body (UI copy, cards, forms) | Inter | 400 | `line-height: 1.7`, `max-width: 68ch` |
 | UI / buttons | Inter | 500 | — |
 | Eyebrow labels | Inter | 500 | 0.75rem, uppercase, `letter-spacing: 0.18em`, mustard color |
 | Mono (code, ISBNs) | JetBrains Mono | 400 | Data labels only |
 
-**Justification:** Cormorant Garamond has the editorial gravitas of a hardcover spine and the confidence to carry a 7rem headline without becoming decorative. Inter is the most legible sans-serif at small sizes shipped to the web — it does not call attention to itself, which is exactly what body type should do.
+**Justification:** Source Serif 4 is a text serif drawn for screen reading at body size, where Cormorant is too fine; it carries the long-form prose so an essay reads like a book page (2026 board review). Cormorant Garamond has the editorial gravitas of a hardcover spine and the confidence to carry a 7rem headline without becoming decorative. Inter is the most legible sans-serif at small sizes shipped to the web — it does not call attention to itself, which is exactly what body type should do.
 
 ---
 

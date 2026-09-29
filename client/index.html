@@ -61,6 +61,24 @@
     <meta name="apple-mobile-web-app-title" content="LiveWell" />
     <meta name="format-detection" content="telephone=no" />
     <link rel="apple-touch-icon" href="/pwa-192x192.png" />
+    <!-- Theme before first paint. Follows the OS (prefers-color-scheme) unless
+         the reader chose in the footer toggle; the choice lives under
+         "livewell-theme" (JSON, via lib/storage.ts, read the same way by
+         contexts/ThemeContext.tsx). Setting html.dark here, before any CSS or
+         JS arrives, means a dark-mode reader never sees a cream flash. -->
+    <script>
+      (function () {
+        try {
+          var c = null;
+          try { var raw = localStorage.getItem("livewell-theme"); if (raw) c = JSON.parse(raw); } catch (e) {}
+          if (c !== "light" && c !== "dark") {
+            try { if (localStorage.getItem("theme") === "dark") c = "dark"; } catch (e) {}
+          }
+          var dark = c === "dark" || (c !== "light" && !!(window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches));
+          if (dark) document.documentElement.classList.add("dark");
+        } catch (e) { /* never block the page */ }
+      })();
+    </script>
     <!-- Self-heal. React replaces this static shell the moment the app starts.
          If the page has finished loading and the shell is still here four
          seconds later, the app failed to start in this browser: usually a
@@ -101,7 +119,7 @@
            slow phone shows the masthead instead of blank cream. React replaces
            it on mount. Tokens come from :root in the built CSS. -->
       <div id="lw-shell" style="min-height:100vh;background:var(--bone,#F5F0E6)">
-        <div style="height:58px;display:flex;align-items:center;padding:0 20px;background:rgba(245,240,230,.97);border-bottom:1px solid var(--border,#D9D3C4)">
+        <div style="height:58px;display:flex;align-items:center;padding:0 20px;background:var(--nav-bg,rgba(245,240,230,.97));border-bottom:1px solid var(--border,#D9D3C4)">
           <span style="font-family:var(--F,Georgia,serif);font-size:20px;color:var(--ink,#14110C)">LiveWell</span>
           <span style="font-family:var(--U,sans-serif);font-size:9px;letter-spacing:.18em;color:var(--ink-muted,#5A5448);margin-left:10px">BY JAMES BELL</span>
         </div>

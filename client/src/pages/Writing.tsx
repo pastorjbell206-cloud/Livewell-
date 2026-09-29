@@ -11,7 +11,7 @@
  */
 import { useEffect, useMemo, useState } from "react";
 import { Link, useLocation } from "wouter";
-import { Search, SlidersHorizontal, X } from "lucide-react";
+import { LayoutGrid, List, Search, SlidersHorizontal, X } from "lucide-react";
 
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
@@ -33,6 +33,28 @@ import { SUBPATHWAY_BY_SLUG } from "@/lib/subpathwayMap.generated";
 import { HIDDEN_SLUGS } from "@/lib/hiddenSlugs";
 import { isFullEssay } from "@/lib/essayQuality";
 import { StartHereRow } from "@/components/StartHereRow";
+import { readStoredJSON, writeStoredJSON } from "@/lib/storage";
+import { smartQuotes } from "@/lib/smart-quotes";
+
+/**
+ * A card standfirst, trimmed to `max` characters on a word boundary. Some
+ * stored excerpts carry JSON-escaped quotes (\"like this\"); unescape them and
+ * curl the quotes so a card never shows a backslash.
+ */
+function standfirst(text: string, max: number): string {
+  const clean = smartQuotes(text.replace(/\\(["'])/g, "$1")).trim();
+  // Many stored excerpts are already cut mid-word; only a finished sentence
+  // is shown whole, anything else ends on a whole word and an ellipsis.
+  if (clean.length <= max && /[.!?\u2026\u201D\u2019)]$/.test(clean)) return clean;
+  const cut = clean.slice(0, Math.min(max, clean.length) + 1);
+  const space = cut.lastIndexOf(" ");
+  return (space > cut.length * 0.6 ? cut.slice(0, space) : cut).replace(/[\s,;:.\u2014-]+$/, "") + "\u2026";
+}
+
+/** Card grid or a text-first list; the reader's choice is remembered. */
+type IndexView = "cards" | "list";
+const VIEW_KEY = "livewell-writing-view";
+const isIndexView = (x: unknown): x is IndexView => x === "cards" || x === "list";
 
 const isIndexRow = (x: unknown): x is Record<string, unknown> =>
   !!x && typeof x === "object" && typeof (x as Record<string, unknown>).slug === "string" && typeof (x as Record<string, unknown>).title === "string";
@@ -96,6 +118,11 @@ export default function Writing() {
   const listFailed = staticIndex === "miss" && postsQuery.isError;
   const [search, setSearch] = useState("");
   const [showFilters, setShowFilters] = useState(false);
+  const [view, setView] = useState<IndexView>(() => readStoredJSON(VIEW_KEY, isIndexView, "cards"));
+  const chooseView = (v: IndexView) => {
+    setView(v);
+    writeStoredJSON(VIEW_KEY, v);
+  };
   // Windowed render: hundreds of cards at once is a scroll of soup and a real
   // render cost. Start at 24; the button below the grid grows the window, and
   // any filter change resets it.
@@ -610,6 +637,35 @@ export default function Writing() {
             <SlidersHorizontal size={14} aria-hidden />
             More filters
           </button>
+          <div role="group" aria-label="Show essays as" style={{ display: "inline-flex", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", overflow: "hidden" }}>
+            {(["cards", "list"] as const).map((v) => (
+              <button
+                key={v}
+                type="button"
+                onClick={() => chooseView(v)}
+                aria-pressed={view === v}
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: "6px",
+                  padding: "10px 14px",
+                  minHeight: "44px",
+                  border: "none",
+                  // --ink/--bone flip together, so the chosen view reads as
+                  // selected in both themes (charcoal vanishes on a dark page).
+                  background: view === v ? "var(--ink)" : "transparent",
+                  color: view === v ? "var(--bone)" : "var(--ink-muted)",
+                  fontFamily: "var(--U)",
+                  fontSize: "13px",
+                  fontWeight: 600,
+                  cursor: "pointer",
+                }}
+              >
+                {v === "cards" ? <LayoutGrid size={14} aria-hidden /> : <List size={14} aria-hidden />}
+                {v === "cards" ? "Cards" : "List"}
+              </button>
+            ))}
+          </div>
         </div>
 
         {/* Sub-filters: audience + format */}
@@ -778,7 +834,34 @@ export default function Writing() {
             </p>
           )}
 
-          {rest.length > 0 && (
+          {rest.length > 0 && view === "list" && (
+            // Text-first: the title and the standfirst, no art. For the reader
+            // who knows what they are looking for, or who reads by title.
+            <ol style={{ listStyle: "none", margin: 0, padding: 0, maxWidth: "var(--w-content)", borderTop: "1px solid var(--border)" }}>
+              {rest.slice(0, visibleCount).map(post => (
+                <li key={post.id} style={{ borderBottom: "1px solid var(--border)" }}>
+                  <Link href={`/writing/${post.slug}`} style={{ display: "block", padding: "20px 0", textDecoration: "none", color: "inherit" }}>
+                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: "16px", marginBottom: "6px" }}>
+                      <TrackChip pillarOrTrack={post.pillar} slug={post.slug} asLink={false} />
+                      <span style={{ fontFamily: "var(--U)", fontSize: "12px", color: "var(--ink-muted)", whiteSpace: "nowrap" }}>
+                        {post.readingTimeMinutes ?? 5} min read
+                      </span>
+                    </div>
+                    <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(22px, 2.4vw, 26px)", fontWeight: 500, letterSpacing: "-0.005em", lineHeight: 1.2, color: "var(--ink)", margin: "0 0 6px" }}>
+                      {post.title}
+                    </h2>
+                    {post.excerpt && (
+                      <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.6, color: "var(--ink-muted)", margin: 0, maxWidth: "68ch" }}>
+                        {standfirst(post.excerpt, 180)}
+                      </p>
+                    )}
+                  </Link>
+                </li>
+              ))}
+            </ol>
+          )}
+
+          {rest.length > 0 && view === "cards" && (
             <div
               style={{
                 display: "grid",
@@ -862,8 +945,7 @@ export default function Writing() {
                           flex: 1,
                         }}
                       >
-                        {post.excerpt.slice(0, 140)}
-                        {post.excerpt.length > 140 ? "…" : ""}
+                        {standfirst(post.excerpt, 140)}
                       </p>
                     )}
                     <div

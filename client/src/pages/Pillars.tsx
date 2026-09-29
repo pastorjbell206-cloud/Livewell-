@@ -3,7 +3,7 @@ import { SEOMeta } from "@/components/SEOMeta";
 import { SITE_URL } from "@/lib/site";
 import { ArrowRight } from "lucide-react";
 import { Link } from "wouter";
-import { MOVEMENTS, PILLARS_V2, pillarUrl } from "@/lib/taxonomy";
+import { MOVEMENTS, PILLARS_V2, PILLAR_COUNT_WORD, countWord, pillarUrl } from "@/lib/taxonomy";
 import { ROUTE_FOR_PILLAR } from "@/components/PillarLanding";
 
 /**
@@ -32,6 +32,8 @@ const WINGS = [
   { name: "Integrated Life", href: "/life", blurb: "Marriage, parenting, vocation, and rest." },
 ];
 
+const cap = (w: string) => w.charAt(0).toUpperCase() + w.slice(1);
+
 const linkStyle = {
   fontFamily: "var(--U)",
   fontSize: "0.8rem",
@@ -49,8 +51,8 @@ export default function Pillars() {
   return (
     <Layout>
       <SEOMeta
-        title="The Five Pillars — Diagnosis and Formation | LiveWell"
-        description="Two movements, five pillars: the capture by the right and by the left, Scripture past our politics, the pastoral angle, and living well after Christendom."
+        title="The Pillars — Diagnosis and Formation | LiveWell"
+        description="The site's spine in two movements: the capture by the right and by the left, Scripture past our politics, the pastoral angle, and living well after Christendom."
         url={`${SITE_URL}/pillars`}
       />
 
@@ -59,10 +61,11 @@ export default function Pillars() {
         <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "1.5rem" }}>The spine of the site</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(2.2rem, 4.8vw, 3.2rem)", fontWeight: 400, lineHeight: 1.08, letterSpacing: "-0.02em", color: "var(--charcoal-fg)", marginBottom: "1.2rem" }}>
-            Five pillars, two movements
+            {cap(PILLAR_COUNT_WORD)} pillars, two movements
           </h1>
           <p style={{ color: "var(--charcoal-fg)", opacity: 0.8, fontSize: "1.05rem", lineHeight: 1.7, marginBottom: "1.4rem" }}>
-            Everything on this site hangs on one arc. First the diagnosis — naming what captured the American church and how it happened. Then the formation — how to live well on the other side of it. Four pillars do the naming. The fifth does the building.
+            Everything on this site hangs on one arc. First the diagnosis — naming what captured the American church and how it happened. Then the formation — how to live well on the other side of it. {cap(countWord(diagnosis.length))} pillars do the naming.{" "}
+            {formation.length === 1 ? "The last does the building." : `${cap(countWord(formation.length))} do the building.`}
           </p>
           <Link href="/tools/which-lens" style={linkStyle}>
             Not sure which pillar is yours? Take the diagnostic <ArrowRight size={13} style={{ display: "inline", verticalAlign: "middle" }} />

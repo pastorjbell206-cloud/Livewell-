@@ -4,12 +4,12 @@ import { ArrowRight } from "lucide-react";
 import Layout from "@/components/Layout";
 import { StatementBand } from "@/components/EditorialBlocks";
 import { trpc } from "@/lib/trpc";
-import { PILLAR_BY_ID, pillarForPost, pillarUrl, type Pillar } from "@/lib/taxonomy";
+import { MOVEMENTS, PILLARS_V2, PILLAR_COUNT_WORD, countWord, pillarForPost, pillarUrl, type Pillar } from "@/lib/taxonomy";
 import { getReadingPathBySlug, availableCount } from "@/lib/readingPaths";
 import ToolStrip, { type ToolStripItem } from "@/components/ToolStrip";
 
 /**
- * Shared shell for the six pillar landing pages. Each page supplies its own
+ * Shared shell for the pillar landing pages. Each page supplies its own
  * SEOMeta (string literals, per the prerender contract), its on-voice intro
  * as children, and the one-line statement; this renders the house structure:
  * hero → intro prose → statement → the ordered path + the filtered library →
@@ -25,7 +25,6 @@ export const ROUTE_FOR_PILLAR: Record<string, string> = {
   "living-well-after-christendom": "/living-well",
 };
 
-const NUMBER_WORD: Record<number, string> = { 1: "One", 2: "Two", 3: "Three", 4: "Four", 5: "Five", 6: "Six" };
 
 const goldLink = {
   fontFamily: "var(--U)",
@@ -62,8 +61,14 @@ export default function PillarLanding({
     [postsQuery.data, pillar.id],
   );
   const path = pathSlug ? getReadingPathBySlug(pathSlug) : undefined;
-  const prev = PILLAR_BY_ID.get(pillar.id - 1);
-  const next = PILLAR_BY_ID.get(pillar.id + 1);
+  // Neighbours and the "Pillar N" label come from the pillar's POSITION in
+  // PILLARS_V2, not its id: the ids are non-contiguous keys (id 4 was merged
+  // away), so id arithmetic labelled the fourth pillar "Five" and dropped the
+  // link between the third and fourth.
+  const position = PILLARS_V2.findIndex((p) => p.id === pillar.id);
+  const prev = position > 0 ? PILLARS_V2[position - 1] : undefined;
+  const next = position >= 0 ? PILLARS_V2[position + 1] : undefined;
+  const ordinal = countWord(position + 1);
 
   return (
     <Layout>
@@ -71,7 +76,7 @@ export default function PillarLanding({
       <section style={{ background: "var(--charcoal)", padding: "var(--s-7) var(--s-4) var(--s-6)", color: "var(--charcoal-fg)" }}>
         <div style={{ maxWidth: "var(--w-content)", margin: "0 auto" }}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
-            Diagnosis · Pillar {NUMBER_WORD[pillar.id]}
+            {MOVEMENTS[pillar.movement].title} · Pillar {ordinal.charAt(0).toUpperCase() + ordinal.slice(1)}
           </div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(38px, 6vw, 68px)", fontWeight: 400, lineHeight: 1.02, letterSpacing: "-0.03em", marginBottom: "20px", maxWidth: "16ch" }}>
             {pillar.name}
@@ -149,7 +154,7 @@ export default function PillarLanding({
             )}
           </div>
           <div style={{ flexBasis: "100%", marginTop: "1.2rem" }}>
-            <Link href="/pillars" style={goldLink}>All five pillars</Link>
+            <Link href="/pillars" style={goldLink}>All {PILLAR_COUNT_WORD} pillars</Link>
           </div>
         </div>
       </section>

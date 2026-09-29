@@ -15,10 +15,18 @@
  * seed always produces the same picture, on a card, on the essay page, and in
  * dark mode (every colour is a token, so the art inverts with the theme).
  *
+ * Mustard is punctuation here as everywhere (CLAUDE.md: under 8% of a
+ * viewport): each family draws its mass in charcoal, ink and the bone tones
+ * and keeps gold for one small accent, a dot, a rule, a ribbon, a cap. The
+ * family pool is chosen by the essay's explicitly filed PILLAR when it has one
+ * (lib/pillar-assignments.ts), else by its track, so a page of one pillar's
+ * essays still draws from five or six families instead of repeating four.
+ *
  * A real cover image, when James adds one, always wins over this.
  */
 import React, { useId } from "react";
 import { resolveTrack } from "@/lib/taxonomy";
+import { PILLAR_ASSIGNMENTS } from "@/lib/pillar-assignments";
 
 export const W = 1200;
 export const H = 675;
@@ -65,9 +73,10 @@ const FAMILIES: Family[] = [
     const sr = 150 + r() * 70;
     return (
       <>
-        <circle cx={sx} cy={ground - 20} r={sr} fill={mustard} />
+        <circle cx={sx} cy={ground - 20} r={sr} fill={muted} />
+        <circle cx={sx} cy={ground - 20} r={sr} fill="none" stroke={ink} strokeWidth={3} opacity={0.35} />
         <rect x={0} y={ground} width={W} height={H - ground} fill={charcoal} />
-        <rect x={0} y={ground - 3} width={W} height={3} fill={ink} opacity={0.35} />
+        <rect x={sx - sr} y={ground - 5} width={sr * 2} height={5} fill={mustard} />
       </>
     );
   },
@@ -78,7 +87,9 @@ const FAMILIES: Family[] = [
     return (
       <>
         <circle cx={CX - off} cy={CY} r={rad} fill={ink} opacity={0.92} />
-        <circle cx={CX + off} cy={CY + (r() * 40 - 20)} r={rad} fill={mustard} opacity={0.88} />
+        <circle cx={CX + off} cy={CY} r={rad} fill={muted} opacity={0.9} />
+        <circle cx={CX + off} cy={CY} r={rad} fill="none" stroke={ink} strokeWidth={3} opacity={0.4} />
+        <circle cx={CX} cy={CY + (r() * 60 - 30)} r={18} fill={mustard} />
       </>
     );
   },
@@ -95,8 +106,11 @@ const FAMILIES: Family[] = [
         {Array.from({ length: n }, (_, i) => {
           const hgt = 120 + i * ((H * 0.6) / n);
           return (
-            <rect key={i} x={x0 + i * (bw + gap)} y={H - 60 - hgt} width={bw} height={hgt}
-              fill={i === gold ? mustard : charcoal} opacity={i === gold ? 1 : 0.9 - i * 0.05} />
+            <React.Fragment key={i}>
+              <rect x={x0 + i * (bw + gap)} y={H - 60 - hgt} width={bw} height={hgt}
+                fill={charcoal} opacity={i === gold ? 1 : 0.9 - i * 0.08} />
+              {i === gold && <rect x={x0 + i * (bw + gap)} y={H - 60 - hgt} width={bw} height={12} fill={mustard} />}
+            </React.Fragment>
           );
         })}
       </>
@@ -111,7 +125,7 @@ const FAMILIES: Family[] = [
     return (
       <>
         <rect x={x} y={yTop} width={cw} height={H - yTop - 50} fill={charcoal} />
-        <polygon points={`${x},${cut - 40} ${x + cw},${cut - 90} ${x + cw},${cut - 50} ${x},${cut}`} fill={mustard} />
+        <polygon points={`${x},${cut - 14} ${x + cw},${cut - 64} ${x + cw},${cut - 50} ${x},${cut}`} fill={mustard} />
       </>
     );
   },
@@ -128,7 +142,7 @@ const FAMILIES: Family[] = [
       <>
         <path d={outerPath} fill={charcoal} />
         <path d={innerPath} fill={warm} />
-        <circle cx={x + aw / 2} cy={top + rad + 10} r={rad * 0.42} fill={mustard} />
+        <circle cx={x + aw / 2} cy={top + rad + 10} r={rad * 0.16} fill={mustard} />
       </>
     );
   },
@@ -168,7 +182,7 @@ const FAMILIES: Family[] = [
     return (
       <>
         {Array.from({ length: n }, (_, i) => {
-          const rad = 34 + r() * 70;
+          const rad = i === gold ? 26 + r() * 14 : 34 + r() * 70;
           const cx = 120 + r() * (W - 240);
           const cy = 90 + r() * (H - 180);
           return <circle key={i} cx={cx} cy={cy} r={rad} fill={i === gold ? mustard : fills[i % fills.length]} opacity={i === gold ? 1 : 0.85} />;
@@ -183,7 +197,8 @@ const FAMILIES: Family[] = [
     const a = CX + (r() * 200 - 100);
     return (
       <>
-        <polygon points={p(a + 200, 640, 380 + r() * 100)} fill={mustard} />
+        <polygon points={p(a + 200, 640, 380 + r() * 100)} fill={muted} />
+        <circle cx={a - 330 + r() * 80} cy={110 + r() * 50} r={26} fill={mustard} />
         <polygon points={p(a - 160, 700, 300 + r() * 120)} fill={charcoal} opacity={0.92} />
         <polygon points={p(a + 60, 520, 210 + r() * 90)} fill={ink} />
       </>
@@ -237,7 +252,7 @@ const FAMILIES: Family[] = [
         <rect x={x} y={ty} width={tw} height={36} fill={charcoal} />
         <rect x={x + 40} y={ty + 36} width={26} height={H - ty - 76} fill={charcoal} opacity={0.9} />
         <rect x={x + tw - 66} y={ty + 36} width={26} height={H - ty - 76} fill={charcoal} opacity={0.9} />
-        <circle cx={x + tw * (0.3 + r() * 0.4)} cy={ty - 52} r={52} fill={mustard} />
+        <circle cx={x + tw * (0.3 + r() * 0.4)} cy={ty - 34} r={34} fill={mustard} />
       </>
     );
   },
@@ -245,25 +260,39 @@ const FAMILIES: Family[] = [
 
 export const FAMILY_COUNT = FAMILIES.length;
 
-/** Which families suit which track; the hash picks among them. */
+/**
+ * Which families suit which PILLAR (by PILLARS_V2 id). An explicitly filed
+ * essay draws from its pillar's pool; each pool is seven or eight wide so a
+ * pillar-filtered page does not repeat itself every few cards.
+ */
+const FAMILIES_BY_PILLAR: Record<number, number[]> = {
+  1: [3, 9, 0, 8, 2, 7, 4, 5], // the capture by the right: columns, the grid, horizons
+  2: [9, 7, 2, 5, 3, 1, 10, 0], // the capture by the left: the grid, the scatter, the climb
+  3: [10, 6, 5, 4, 1, 3, 8], // Scripture past our politics: the book, the target, the path
+  5: [4, 11, 1, 7, 5, 0, 10, 2], // the pastoral angle: the arch, the table, the covenant
+  6: [11, 1, 0, 10, 4, 8, 7, 5], // living well: the table, the covenant, the horizon
+};
+
+/** Which families suit which track when an essay has no filed pillar. */
 const FAMILIES_BY_TRACK: Record<string, number[]> = {
-  politics: [0, 3, 8, 9],
-  "american-church": [4, 3, 9],
-  "after-christendom": [0, 4, 8],
-  theology: [6, 10, 4],
-  doubt: [5, 3, 7],
-  marriage: [1, 11, 7],
-  parenting: [7, 11, 2],
-  devotionals: [0, 6, 5],
-  "prophetic-justice": [2, 9, 8],
-  "pastoral-ministry": [4, 11, 1],
+  politics: [0, 3, 8, 9, 2, 7],
+  "american-church": [4, 3, 9, 8, 6],
+  "after-christendom": [0, 4, 8, 10, 5],
+  theology: [6, 10, 4, 1, 5],
+  doubt: [5, 3, 7, 6, 0],
+  marriage: [1, 11, 7, 4, 0],
+  parenting: [7, 11, 2, 1, 5],
+  devotionals: [0, 6, 5, 10, 4],
+  "prophetic-justice": [2, 9, 8, 3, 7],
+  "pastoral-ministry": [4, 11, 1, 10, 6],
 };
 
 /** The family index for an essay — exported so tests can pin determinism and spread. */
 export function familyFor(seed: string, track?: string | null): number {
   const h = hashSeed(seed);
+  const filed = PILLAR_ASSIGNMENTS[seed]?.pillar;
   const slug = resolveTrack(track)?.slug ?? (track && FAMILIES_BY_TRACK[track] ? track : null);
-  const pool = slug ? FAMILIES_BY_TRACK[slug] : undefined;
+  const pool = (filed ? FAMILIES_BY_PILLAR[filed] : undefined) ?? (slug ? FAMILIES_BY_TRACK[slug] : undefined);
   if (pool && pool.length) return pool[h % pool.length];
   return h % FAMILY_COUNT;
 }

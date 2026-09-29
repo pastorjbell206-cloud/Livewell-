@@ -13,6 +13,12 @@ ever contacts a third party for type.
   for UI and labels). Copyright the
   Inter Project Authors; licensed under the SIL Open Font License 1.1.
 
+- **Source Serif 4** — 400 and 600, upright and italic, latin and latin-ext
+  subsets; the long-form text face (`--font-text`, `.article-body`). The 600
+  face is declared for `font-weight: 500 700` so `strong` and `b` use it with
+  no synthetic bold. Taken from the `@fontsource/source-serif-4` package
+  (5.3.0). Copyright Adobe; licensed under the SIL Open Font License 1.1.
+
 The matching `@font-face` rules (with the original `unicode-range` values,
 so latin-ext files download only when a page actually uses those
 characters) live in `client/src/index.css`. The two critical latin files

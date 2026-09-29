@@ -3,6 +3,7 @@ import { ArrowRight } from "lucide-react";
 import { SEOMeta } from "@/components/SEOMeta";
 import { GeneratedCover, coverThemeFor } from "@/components/GeneratedCover";
 import { READING_PATHS as CANONICAL_PATHS, availableCount } from "@/lib/readingPaths";
+import { countWord } from "@/lib/taxonomy";
 
 interface PathArticle {
   title: string;
@@ -398,7 +399,7 @@ export default function ReadingPaths() {
         </div>
       </section>
 
-      {/* THE SIX PILLAR PATHS — the canonical ordered arcs through the library
+      {/* THE PILLAR PATHS — the canonical ordered arcs through the library
           (lib/readingPaths.ts). Each links to its own page at
           /reading-paths/:slug; the themed collections below remain as they are. */}
       <section style={{ background: "var(--charcoal)", padding: "4rem 1.5rem" }}>
@@ -427,10 +428,10 @@ export default function ReadingPaths() {
               marginBottom: "0.9rem",
             }}
           >
-            Six ordered arcs through the whole argument
+            {(() => { const w = countWord(CANONICAL_PATHS.length); return w.charAt(0).toUpperCase() + w.slice(1); })()} ordered arcs through the whole argument
           </h2>
           <p style={{ fontSize: "0.95rem", lineHeight: 1.7, color: "var(--charcoal-fg)", opacity: 0.7, maxWidth: "62ch", marginBottom: "2rem" }}>
-            The themed collections below gather essays by subject. These six are different — each is a sequence, built to be read in order, tracing one pillar of the site's spine from diagnosis to formation.
+            The themed collections below gather essays by subject. These {countWord(CANONICAL_PATHS.length)} are different — each is a sequence, built to be read in order, tracing one pillar of the site's spine from diagnosis to formation.
           </p>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "0.75rem" }}>
             {CANONICAL_PATHS.map((p) => (

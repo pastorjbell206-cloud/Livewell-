@@ -886,9 +886,10 @@ export default function ArticleDetail() {
             style={{
               maxWidth: focus ? "68ch" : "var(--w-prose)",
               margin: "0 auto",
-              fontFamily: "var(--B)",
-              fontSize: focus ? "20px" : "18px",
-              lineHeight: focus ? 1.9 : 1.75,
+              // Face, size, leading and measure come from .article-body in
+              // index.css (the text serif at 20px/1.65, 18px on phones); focus
+              // mode only opens the leading a touch.
+              ...(focus ? { fontSize: "21px", lineHeight: 1.72 } : null),
               color: "var(--ink)",
             }}
           >

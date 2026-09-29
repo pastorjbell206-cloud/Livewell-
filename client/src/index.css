@@ -23,6 +23,15 @@
 @font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/inter-400-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
 @font-face{font-family:"Inter";font-style:normal;font-weight:500 600;font-display:swap;src:url(/fonts/inter-500-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
 @font-face{font-family:"Inter";font-style:normal;font-weight:500 600;font-display:swap;src:url(/fonts/inter-500-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+/* Source Serif 4: the long-form TEXT face (essay and study bodies, --font-text). Cormorant stays the display face; Inter stays UI. */
+@font-face{font-family:"Source Serif 4";font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/source-serif-4-400-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:"Source Serif 4";font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/source-serif-4-400-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:"Source Serif 4";font-style:italic;font-weight:400;font-display:swap;src:url(/fonts/source-serif-4-400-italic-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:"Source Serif 4";font-style:italic;font-weight:400;font-display:swap;src:url(/fonts/source-serif-4-400-italic-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:"Source Serif 4";font-style:normal;font-weight:500 700;font-display:swap;src:url(/fonts/source-serif-4-600-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:"Source Serif 4";font-style:normal;font-weight:500 700;font-display:swap;src:url(/fonts/source-serif-4-600-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:"Source Serif 4";font-style:italic;font-weight:500 700;font-display:swap;src:url(/fonts/source-serif-4-600-italic-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:"Source Serif 4";font-style:italic;font-weight:500 700;font-display:swap;src:url(/fonts/source-serif-4-600-italic-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
 
 /* The site reset lives in the lowest cascade layer so Tailwind utilities can
  * override it. Unlayered, this rule silently beat every layered margin/padding
@@ -112,6 +121,12 @@
   --F:"Cormorant Garamond","EB Garamond",Georgia,serif;
   --B:"Inter",-apple-system,BlinkMacSystemFont,sans-serif;
   --U:"Inter",-apple-system,BlinkMacSystemFont,sans-serif;
+  /* Long-form reading face: essay/guide/history bodies (.article-body). A text
+   * serif built for 18-20px screen reading; Cormorant is too fine at body size. */
+  --font-text:"Source Serif 4","Iowan Old Style","Palatino Linotype",Georgia,serif;
+  /* ~64 characters a line in the text serif (ch is the digit width, wider
+   * than an average letter, so the measure is set in em). */
+  --measure-text:31em;
   --display:"Cormorant Garamond",Georgia,serif;--serif:"Cormorant Garamond","EB Garamond",Georgia,serif;--sans:"Inter",-apple-system,sans-serif;
 
   /*  Shape  */
@@ -130,6 +145,9 @@
 
   /*  Container  */
   --w-prose:680px;--w-content:880px;--w-default:1180px;--w-wide:1440px;
+  /* Side gutter shared by the header row and the footer grid: 16px on a
+   * phone, 32px from ~800px up. */
+  --gutter:clamp(16px,4vw,32px);
 }
 html.dark{
   /* Surface */
@@ -455,8 +473,9 @@ footer{background:var(--charcoal);color:var(--bone);padding:60px 0 40px}
   .hero-ctas{flex-direction:column;align-items:flex-start}
   .grid-4{grid-template-columns:1fr}
   .hero-stats{flex-direction:column;gap:16px;align-items:flex-start}
-  /* Long-form reading at phone width: smaller body, calmer blockquotes. */
-  .article-body{font-size:16px;line-height:1.7}
+  /* Long-form reading at phone width: the serif holds 18px comfortably
+     (~40 characters a line at 390px); calmer blockquotes. */
+  .article-body{font-size:18px;line-height:1.6}
   .article-body blockquote{font-size:19px}
   .article-body blockquote.quote-share .quote-share__text{font-size:21px}
   .article-body h2{font-size:24px}
@@ -491,24 +510,26 @@ h1, h2, h3 { text-wrap: balance; }
 /* ─── EDITORIAL TYPOGRAPHY ────────────────────────────────────────
  * Applies inside .article-body — the scope wrapping the shared Markdown
  * renderer's output (ArticleDetail, BookReader, the libraries). Designed for "the feeling of opening a serious
- * book in a quiet room where the light is good." */
+ * book in a quiet room where the light is good." Body copy is set in the text
+ * serif (--font-text) at 20px/1.65 on a ~64ch measure; Cormorant carries the
+ * headings, quotes and drop cap; Inter stays in the UI around the prose. */
 
-.article-body{font-family:var(--B);font-size:18px;line-height:1.75;color:var(--ink)}
-.article-body > * + *{margin-top:1.25em}
-.article-body h2{font-family:var(--F);font-size:30px;font-weight:500;letter-spacing:-.01em;line-height:1.2;color:var(--ink);margin-top:2.4em;margin-bottom:.6em;position:relative;padding-top:.6em}
+.article-body{font-family:var(--font-text);font-size:20px;line-height:1.65;color:var(--ink);font-kerning:normal;font-variant-ligatures:common-ligatures;font-optical-sizing:auto;hanging-punctuation:first}
+.article-body > * + *{margin-top:1.05em}
+.article-body h2{font-family:var(--F);font-size:32px;font-weight:500;letter-spacing:-.01em;line-height:1.2;color:var(--ink);margin-top:2.4em;margin-bottom:.6em;position:relative;padding-top:.6em}
 .article-body h2::before{content:"";position:absolute;top:0;left:0;width:32px;height:1px;background:var(--mustard)}
-.article-body h3{font-family:var(--F);font-size:22px;font-weight:500;letter-spacing:-.005em;line-height:1.3;color:var(--ink);margin-top:1.8em;margin-bottom:.4em}
-.article-body p{max-width:62ch}
+.article-body h3{font-family:var(--F);font-size:24px;font-weight:500;letter-spacing:-.005em;line-height:1.3;color:var(--ink);margin-top:1.8em;margin-bottom:.4em}
+.article-body p{max-width:var(--measure-text)}
 .article-body p:first-of-type::first-letter{font-family:var(--F);font-size:4.6em;float:left;line-height:.92;padding:.04em .08em 0 0;color:var(--ink);font-weight:400}
 .article-body blockquote{font-family:var(--F);font-size:24px;font-style:italic;font-weight:400;line-height:1.4;color:var(--ink);max-width:60ch;border-left:2px solid var(--mustard);padding:.2em 0 .2em 1.4em;margin:2em 0;letter-spacing:-.005em}
 .article-body blockquote p{max-width:none}
 .article-body a{color:var(--ink);border-bottom:1px solid var(--mustard);transition:background-color .2s}
 .article-body a:hover{background:rgba(212,160,23,.12)}
-.article-body ul,.article-body ol{padding-left:1.6em;max-width:62ch}
+.article-body ul,.article-body ol{padding-left:1.6em;max-width:var(--measure-text)}
 .article-body li{margin-top:.4em}
 .article-body strong{font-weight:600;color:var(--ink)}
 .article-body em{font-style:italic}
-.article-body code{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.92em;background:var(--bone-warm);padding:.12em .35em;border-radius:2px}
+.article-body code{font-variant-ligatures:none;font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.92em;background:var(--bone-warm);padding:.12em .35em;border-radius:2px}
 .article-body hr{border:0;height:1px;background:var(--border);margin:3em auto;max-width:120px}
 .article-body img{margin:2em 0;border-radius:var(--radius-sm);max-width:100%;height:auto}
 /* Anti-overlap: never let the floated drop cap collide with a following
@@ -518,9 +539,19 @@ h1, h2, h3 { text-wrap: balance; }
 /* Shared section prose: same .article-body type system, but the lead-article
    drop cap belongs only to the top of an article, not to every section block. */
 .article-body.prose-section p:first-of-type::first-letter{font-family:inherit;font-size:inherit;float:none;line-height:inherit;padding:0;margin:0;color:inherit;font-weight:inherit}
+/* Phone width. Declared after the base rules above so it actually wins (the
+   older max-width:480px block sits earlier in the file and loses to them). */
+@media(max-width:480px){
+  .article-body{font-size:18px;line-height:1.6}
+  .article-body h2{font-size:26px}
+  .article-body h3{font-size:21px}
+  .article-body blockquote{font-size:20px}
+  .article-body blockquote.quote-share .quote-share__text{font-size:21px}
+  .article-body p:first-of-type::first-letter{font-size:3.6em}
+}
 
 /* Footnotes (when the Markdown renderer emits them via GFM footnotes) */
-.article-body .footnotes{margin-top:4em;padding-top:1.6em;border-top:1px solid var(--border);font-size:14px;line-height:1.7;color:var(--ink-muted)}
+.article-body .footnotes{margin-top:4em;padding-top:1.6em;border-top:1px solid var(--border);font-size:15px;line-height:1.7;color:var(--ink-muted)}
 .article-body .footnotes ol{padding-left:1.4em}
 .article-body sup a{border-bottom:none;color:var(--mustard-text);font-weight:600;padding:0 .15em}
 
@@ -578,3 +609,35 @@ h1, h2, h3 { text-wrap: balance; }
 @media (max-width: 1023px) {
   .persistent-help-tab { display: none !important; }
 }
+
+/* ─── SITE FOOTER ─────────────────────────────────────────────────
+ * Laid out on the page grid (Footer.tsx). One link size everywhere; rows are
+ * 44px tap targets on touch widths and tighten to 32px on a desktop. Colors
+ * are the fixed-dark footer tokens (--charcoal / --charcoal-fg). */
+.site-footer__top{display:grid;grid-template-columns:1fr;gap:40px;padding-bottom:40px;margin-bottom:40px;border-bottom:1px solid var(--charcoal-soft)}
+.site-footer__signup{max-width:440px}
+.site-footer__title{font-family:var(--U);font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.16em;color:var(--charcoal-fg);opacity:.7;margin:0 0 12px}
+.site-footer__list,.site-footer__pillars{list-style:none;margin:0;padding:0}
+.site-footer__pillars{display:flex;flex-wrap:wrap;column-gap:24px}
+.site-footer__link{font-family:var(--U);font-size:14px;line-height:1.35;color:var(--charcoal-fg);opacity:.78;text-decoration:none;display:inline-flex;align-items:center;min-height:44px;transition:opacity .2s}
+.site-footer__link:hover,.site-footer__link:focus-visible{opacity:1;text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:4px}
+.site-footer__grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px 24px}
+.site-footer__bottom{margin-top:48px;border-top:1px solid var(--charcoal-soft);padding-top:12px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px 24px;font-family:var(--U);font-size:13px;color:var(--charcoal-fg)}
+.site-footer__bottom > span{opacity:.6}
+@media (min-width:700px){
+  .site-footer__grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media (min-width:900px){
+  .site-footer__top{grid-template-columns:minmax(0,1fr) minmax(320px,440px);gap:64px;align-items:start}
+}
+@media (min-width:1200px){
+  .site-footer__grid{grid-template-columns:repeat(6,minmax(0,1fr))}
+  .site-footer__link{min-height:32px;padding:4px 0}
+}
+
+/* Study guide: tabs + session jump list stay under the sticky site header.
+ * --sg-offset is how far a #session-N anchor lands below the viewport top. */
+.sg-sticky{position:sticky;top:70px;z-index:150}
+:root{--sg-offset:190px}
+@media(max-width:480px){.sg-sticky{top:60px}:root{--sg-offset:170px}}
+@media print{.sg-sticky{position:static}}

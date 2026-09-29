@@ -240,21 +240,35 @@ export default function MinimalNav() {
           // pushed 32px past a phone viewport (horizontal scroll on every page).
           // Pinned border-box here so 100% includes the padding.
           boxSizing: "border-box",
+          // The legacy `nav.site-nav` rule in index.css caps the bar at 1200px
+          // and pads it; the bar itself is full-bleed, and the inner row below
+          // carries the page grid instead.
+          maxWidth: "none",
+          margin: 0,
+          padding: 0,
+          display: "block",
         }}
       >
+        {/* Same grid as the page content (--w-default plus the side gutter),
+            so the wordmark lines up with the hero's left edge and Subscribe
+            with its right edge instead of floating in a centred cluster. */}
         <div
           style={{
-            maxWidth: "1400px",
+            maxWidth: "calc(var(--w-default) + 2 * var(--gutter))",
             margin: "0 auto",
-            padding: "0 20px",
+            padding: "0 var(--gutter)",
+            boxSizing: "border-box",
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
-            height: "64px",
+            gap: "32px",
+            // Fill the bar's own height (70px, 60px on phones, from the
+            // nav.site-nav rule) so the row sits on its vertical centre.
+            height: "100%",
           }}
         >
-          <Link href="/" style={{ textDecoration: "none" }}>
-            <div>
+          <Link href="/" style={{ textDecoration: "none", flexShrink: 0 }}>
+            <div style={{ display: "inline-block" }}>
               <div
                 style={{
                   fontFamily: "var(--F)",

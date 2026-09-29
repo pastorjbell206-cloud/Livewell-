@@ -14,6 +14,7 @@ import { BookNextSteps } from "@/components/BookNextSteps";
 import { BuyEbookButton } from "@/components/BuyEbookButton";
 import { AUTHOR_BIO, SITE_URL } from "@/lib/site";
 import { STRIPE_PUBLISHABLE_KEY } from "@/lib/stripe";
+import { chapterLabel } from "@/lib/chapter-label";
 
 const COVER = "/books/when-god-bless-america.jpg";
 
@@ -132,7 +133,7 @@ export default function WhenGodBlessAmerica() {
             {CHAPTERS.map(([num, title], i) => (
               <li key={i} style={{ display: "flex", gap: "16px", padding: "12px 0", borderBottom: "1px solid var(--border)" }}>
                 <span style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.12em", color: "var(--mustard-text)", flex: "0 0 96px", paddingTop: "3px" }}>
-                  {/^[A-Z]/.test(num) && num.length > 4 ? num : `Chapter ${num}`}
+                  {chapterLabel(num)}
                 </span>
                 <span style={{ fontFamily: "var(--F)", fontSize: "19px", color: "var(--ink)", lineHeight: 1.3 }}>{title}</span>
               </li>

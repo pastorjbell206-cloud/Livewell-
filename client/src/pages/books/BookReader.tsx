@@ -300,7 +300,7 @@ export default function BookReader() {
                       {ch.summary}
                     </p>
                   )}
-                  <div className="article-body" style={{ fontSize: "calc(1rem * var(--reader-scale, 1))" }}>
+                  <div className="article-body" style={{ fontSize: "calc(clamp(1.125rem, 1rem + 0.5vw, 1.25rem) * var(--reader-scale, 1))" }}>
                     <Markdown>{ch.body}</Markdown>
                   </div>
                   {ch.verdict && <p style={{ fontFamily: "var(--F)", fontSize: "22px", fontStyle: "italic", color: "var(--mustard-text)", margin: "var(--s-4) 0", paddingLeft: "20px", borderLeft: "3px solid var(--mustard)" }}>{ch.verdict}</p>}

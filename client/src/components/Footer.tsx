@@ -1,104 +1,135 @@
 import { Link } from "wouter";
 import { useTheme } from "@/contexts/ThemeContext";
 import { Sun, Moon } from "lucide-react";
-import { SITE_NAV_GROUPS } from "@/lib/siteNav";
+import { SITE_NAV_GROUPS, type SiteNavLink } from "@/lib/siteNav";
+import { PILLARS_V2, PILLAR_COUNT_WORD, pillarUrl } from "@/lib/taxonomy";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 
-// Vertical padding brings each footer link to a ~44px tap target (Apple/Google
-// minimum) so the dense footer is easy to hit on a phone; the padding provides
-// the row separation, so the column gap below is trimmed to compensate.
-const footerLink = { color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "14px", display: "flex", alignItems: "center", minHeight: "44px" } as const;
-// The column's long tail: smaller, dimmer, wrapping inline so a dozen deep
-// cuts cost three rows instead of twelve. Still comfortably tappable.
-const tailLink = { color: "rgba(255,255,255,0.55)", textDecoration: "none", fontSize: "12.5px", display: "inline-flex", alignItems: "center", minHeight: "40px", paddingRight: "14px" } as const;
-const colTitle = { fontSize: "13px", fontWeight: "bold", marginBottom: "16px", color: "var(--charcoal-fg)", textTransform: "uppercase", letterSpacing: "1px" } as const;
-const legalLink = { color: "rgba(255,255,255,0.75)", textDecoration: "none", display: "inline-flex", alignItems: "center", minHeight: "44px" } as const;
-const col = { display: "flex", flexDirection: "column", gap: "0" } as const;
-
 /**
- * Footer mirrors the header's mental model. The five-pillar V2 set is the spine
- * (linked as "All five pillars" → /pillars, per docs/TAXONOMY-PROPOSAL.md); the
- * rich hub pages sit under it. "Resources" appears exactly once in navigation
- * (the Resource Hub, labeled Downloads & Study Guides here).
+ * Footer mirrors the header's mental model: the same groups from
+ * lib/siteNav.ts (Read / Study / Answers / Grow / Books, plus the footer-only
+ * About group), one link size throughout, laid out on the page grid by the
+ * `.site-footer__*` rules in index.css (six columns at desktop, three at
+ * tablet, two on a phone). The brand row carries the pillars, derived from
+ * PILLARS_V2, and the one real signup form on every Layout page.
+ *
+ * The footer stays a dark surface in BOTH themes (--charcoal, not --ink).
  */
 export default function Footer() {
-  const { theme, toggleTheme } = useTheme();
-  return (
-    // charcoal, not --ink: the footer stays a dark surface in BOTH themes (--ink flips light in dark mode)
-    <footer style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "clamp(36px, 7vw, 60px) clamp(16px, 4vw, 20px) 20px", marginTop: "60px", borderTop: "1px solid rgba(255,255,255,0.08)" }}>
-      <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(150px, 100%), 1fr))", gap: "clamp(20px, 4vw, 40px)", marginBottom: "40px" }}>
-          {/* Brand */}
-          <div>
-            <div style={{ fontSize: "22px", fontWeight: "bold", color: "var(--gold)", marginBottom: "12px", fontFamily: "var(--F)" }}>LiveWell</div>
-            <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.75)", lineHeight: "1.7", marginBottom: "16px" }}>Theology that carries the weight of everyday life.</p>
-            <div style={{ display: "flex", gap: "12px" }}>
-              <a href="https://substack.com/@jamesbell333289" target="_blank" rel="noopener noreferrer" style={{ color: "var(--gold)", fontSize: "12px", textDecoration: "none", fontWeight: "600", display: "inline-flex", alignItems: "center", minHeight: "44px" }}>Substack →</a>
-            </div>
-          </div>
+  const { theme, toggleTheme, followsSystem, followSystemTheme } = useTheme();
 
-          {/* The nav groups — one source of truth in lib/siteNav.ts, shared with
-              the header (Read / Topics / Grow / About, plus the footer-only
-              Pastors & Disciple-Makers group). Primary links render full size;
-              the rest wrap as a compact tail, so the footer stays short without
-              losing a single destination. */}
-          {SITE_NAV_GROUPS.map((group) => {
-            const main = group.links.filter((l) => l.primary);
-            const tail = group.links.filter((l) => !l.primary);
-            // A footer-only group has no primary links; its first few links
-            // stand in as the full-size rows so the column is not all tail.
-            const rows = main.length ? main : tail.slice(0, 4);
-            const rest = main.length ? tail : tail.slice(4);
-            const renderLink = (link: (typeof group.links)[number], style: React.CSSProperties) =>
-              link.external ? (
-                <a
-                  key={link.href + link.label}
-                  href={link.href}
-                  target={link.href.startsWith("mailto:") ? undefined : "_blank"}
-                  rel={link.href.startsWith("mailto:") ? undefined : "noopener noreferrer"}
-                  style={style}
-                >
-                  {link.label}
-                </a>
-              ) : (
-                <Link key={link.href + link.label} href={link.href} style={style}>
-                  {link.label}
-                </Link>
-              );
-            return (
+  const renderLink = (link: SiteNavLink) =>
+    link.external ? (
+      <a
+        key={link.href + link.label}
+        href={link.href}
+        target={link.href.startsWith("mailto:") ? undefined : "_blank"}
+        rel={link.href.startsWith("mailto:") ? undefined : "noopener noreferrer"}
+        className="site-footer__link"
+      >
+        {link.label}
+      </a>
+    ) : (
+      <Link key={link.href + link.label} href={link.href} className="site-footer__link">
+        {link.label}
+      </Link>
+    );
+
+  return (
+    <footer
+      className="site-footer"
+      style={{
+        background: "var(--charcoal)",
+        color: "var(--charcoal-fg)",
+        padding: "clamp(40px, 6vw, 64px) 0 20px",
+        marginTop: "60px",
+        borderTop: "1px solid var(--charcoal-soft)",
+      }}
+    >
+      <div
+        style={{
+          maxWidth: "calc(var(--w-default) + 2 * var(--gutter))",
+          margin: "0 auto",
+          padding: "0 var(--gutter)",
+          boxSizing: "border-box",
+        }}
+      >
+        {/* Brand + pillars on the left, the newsletter on the right. */}
+        <div className="site-footer__top">
+          <div>
+            <Link href="/" style={{ textDecoration: "none", color: "var(--charcoal-fg)", display: "inline-block" }}>
+              <span style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, lineHeight: 1, display: "inline-block", paddingBottom: "4px", borderBottom: "2px solid var(--mustard)" }}>
+                LiveWell
+              </span>
+            </Link>
+            <p style={{ fontFamily: "var(--F)", fontStyle: "italic", fontSize: "20px", lineHeight: 1.4, margin: "16px 0 24px", maxWidth: "30ch", opacity: 0.85 }}>
+              Theology that carries the weight of everyday life.
+            </p>
+            <h2 className="site-footer__title">
+              <Link href="/pillars" style={{ color: "inherit", textDecoration: "none" }}>
+                The {PILLAR_COUNT_WORD} pillars
+              </Link>
+            </h2>
+            <ul className="site-footer__pillars">
+              {PILLARS_V2.map((p) => (
+                <li key={p.slug}>
+                  <Link href={pillarUrl(p.slug)} className="site-footer__link">
+                    {p.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="site-footer__signup">
+            <NewsletterSignup variant="footer" source="footer" />
+          </div>
+        </div>
+
+        {/* The nav groups — one source of truth in lib/siteNav.ts, shared with
+            the header. Every destination at one size; no second-class tail. */}
+        <nav aria-label="Site" className="site-footer__grid">
+          {SITE_NAV_GROUPS.map((group) => (
             <div key={group.title}>
               {/* h2, not h3: on a page whose body has only an h1 (notes, the
                   start quiz) an h3 here skips a level (axe heading-order). */}
-              <h2 style={colTitle}>{group.title}</h2>
-              <div style={col}>{rows.map((l) => renderLink(l, footerLink))}</div>
-              {rest.length > 0 && (
-                <div style={{ display: "flex", flexWrap: "wrap", marginTop: "6px" }}>
-                  {rest.map((l) => renderLink(l, tailLink))}
-                </div>
-              )}
-              {/* The one real signup form, on all ~200 Layout pages (QW-25).
-                  Anchored under Connect, as before. */}
-              {group.title === "About" && (
-                <div style={{ marginTop: "18px" }}>
-                  <NewsletterSignup variant="footer" source="footer" />
-                </div>
-              )}
+              <h2 className="site-footer__title">{group.title}</h2>
+              <ul className="site-footer__list">
+                {group.links.map((l) => (
+                  <li key={l.href + l.label}>{renderLink(l)}</li>
+                ))}
+              </ul>
             </div>
-            );
-          })}
-        </div>
+          ))}
+        </nav>
 
-        {/* Bottom Bar */}
-        <div style={{ borderTop: "1px solid rgba(255,255,255,0.08)", paddingTop: "20px", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "12px", fontSize: "12px", color: "rgba(255,255,255,0.75)" }}>
+        {/* Bottom bar */}
+        <div className="site-footer__bottom">
           <span>&copy; 2026 LiveWell by James Bell. All rights reserved.</span>
-          <div style={{ display: "flex", gap: "16px" }}>
-            <a href="/privacy" style={legalLink}>Privacy Policy</a>
-            <a href="/terms" style={legalLink}>Terms of Service</a>
-            <a href="/accessibility" style={legalLink}>Accessibility</a>
+          <div style={{ display: "flex", gap: "20px", flexWrap: "wrap", alignItems: "center" }}>
+            <a href="/privacy" className="site-footer__link">Privacy Policy</a>
+            <a href="/terms" className="site-footer__link">Terms of Service</a>
+            <a href="/accessibility" className="site-footer__link">Accessibility</a>
             {toggleTheme && (
-              <button onClick={toggleTheme} aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"} style={{ color: "rgba(255,255,255,0.75)", display: "flex", alignItems: "center", justifyContent: "center", gap: "4px", fontSize: "13px", minWidth: "44px", minHeight: "44px", background: "transparent", border: "none", cursor: "pointer" }} title={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}>
-                {theme === "dark" ? <Sun size={14} /> : <Moon size={14} />}
+              <button
+                type="button"
+                onClick={toggleTheme}
+                aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
+                title={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
+                className="site-footer__link"
+                style={{ gap: "6px", background: "transparent", border: "none", cursor: "pointer", padding: 0, font: "inherit" }}
+              >
+                {theme === "dark" ? <Sun size={14} aria-hidden /> : <Moon size={14} aria-hidden />}
                 {theme === "dark" ? "Light" : "Dark"}
+              </button>
+            )}
+            {toggleTheme && !followsSystem && (
+              <button
+                type="button"
+                onClick={followSystemTheme}
+                className="site-footer__link"
+                style={{ background: "transparent", border: "none", cursor: "pointer", padding: 0, font: "inherit" }}
+              >
+                Match my device
               </button>
             )}
           </div>

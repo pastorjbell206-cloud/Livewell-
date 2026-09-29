@@ -16,6 +16,8 @@
  * destination is ever lost. Pages that redirect (/explore, /map, /framework,
  * /article-collections) are not listed: a link to a redirect is a detour.
  */
+import { PILLAR_COUNT_WORD } from "@/lib/taxonomy";
+
 export interface SiteNavLink {
   label: string;
   href: string;
@@ -56,7 +58,8 @@ export const SITE_NAV_GROUPS: SiteNavGroup[] = [
       { label: "All the writing", href: "/writing", primary: true },
       { label: "Start with these twelve", href: "/canon", primary: true },
       { label: "Reading paths", href: "/reading-paths", primary: true },
-      { label: "The six pillars", href: "/pillars", primary: true },
+      // Count derived from PILLARS_V2 (lib/taxonomy.ts); never a literal.
+      { label: `The ${PILLAR_COUNT_WORD} pillars`, href: "/pillars", primary: true },
       { label: "When faith has questions", href: "/writing?track=doubt", primary: true },
       { label: "Justice", href: "/justice", primary: true },
       { label: "The church and power", href: "/disruption", primary: true },
@@ -150,7 +153,7 @@ export const SITE_NAV_GROUPS: SiteNavGroup[] = [
       { label: "Work with James", href: "/work-with-james" },
       // The pastors' material now lives with the network it belongs to.
       { label: "Pastors Connection Network", href: "https://pastorsconnectionnetwork.com", external: true },
-      { label: "ENDS", href: "https://endsinitiative.org", external: true },
+      { label: "ENDS: equipping pastors in remote regions", href: "https://endsinitiative.org", external: true },
     ],
   },
 ];
