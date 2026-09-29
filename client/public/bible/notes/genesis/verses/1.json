@@ -238,6 +238,10 @@
       "history": "In the ancient Near East kings were sometimes called the image of a god, and a king's statue stood in conquered territory as a sign of his rule. An Aramaic inscription on a ninth century BC statue from Tell Fekheriye in Syria uses words related to both tselem and demut for the statue of a ruler. Genesis takes that royal language and gives it to humanity as a whole.",
       "theology": [
         {
+          "id": "image",
+          "note": "The verse introduces the image of God: humanity made in God's image and likeness, with rule over the creatures as its first expression. Christian theology has read the image as reason, as royal representation, as relationship, or as a combination; the verse's own emphasis falls on representation and vocation."
+        },
+        {
           "id": "humanity",
           "note": "Humanity alone is made after divine deliberation and in God's image. The verse defines human beings by their relation to God before anything else, and gives them a vocation: to represent God's rule over the world he made."
         },
@@ -264,6 +268,10 @@
         "H5347"
       ],
       "theology": [
+        {
+          "id": "image",
+          "note": "Both male and female bear the image. The verse makes the image the possession of humanity as such, which the New Testament later grounds in Christ, the image of the invisible God into whose likeness believers are renewed (Colossians 1:15, 3:10)."
+        },
         {
           "id": "humanity",
           "note": "Man and woman bear God's image equally. Whatever else the image means, it cannot be restricted to one sex, one people, or one class, and the New Testament grounds respect for every person in it (James 3:9)."

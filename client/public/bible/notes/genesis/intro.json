@@ -1,36 +1,252 @@
 {
+  "v": 2,
   "tagline": "The book of beginnings: God makes a good world, humanity breaks it, and God promises to bless every nation through one family.",
   "overview": "Genesis is the first book of the Bible and the first of the five books of the Torah, the Law of Moses, also called the Pentateuch. Its English name comes through the Septuagint (the Greek translation of the Hebrew Scriptures made from the third century BC onward) and means origin or birth. In Hebrew the book is called Bereshit, its opening word, which means in the beginning. That is exactly what it offers: the beginning of the world, of human beings, of marriage and work, of sin and death, of nations and languages, and of the people of Israel.\n\nThe book moves in two great sweeps. Chapters 1 to 11 tell the story of the whole world: God creates the heavens and the earth and makes humanity in his image; the first couple disobey and are sent out of Eden; Cain murders Abel; violence fills the earth until God sends the flood and starts again with Noah; and humanity gathers at Babel to make a name for itself and is scattered. Chapters 12 to 50 narrow to one family. God calls Abraham, promises him descendants, a land, and a blessing that will reach all the families of the earth, and then follows that promise through Isaac, through Jacob (renamed Israel) and his twelve sons, and finally through Joseph, whose brothers sell him into slavery and who rises to save Egypt and his own family from famine.\n\nThe rest of the Bible stands on this book. Its account of God as sole creator, of every person as bearing his image, of sin as a rupture between people and God, and of God's covenant promise to Abraham is assumed on almost every later page. Genesis ends with the family living in Egypt and Joseph's body in a coffin, waiting to be carried home. The promise is alive, but it is not yet kept, and the reader turns to Exodus to see what God will do.",
-  "author": "Genesis never names its author. Jewish and Christian tradition has long credited the five books of the Torah to Moses, and the New Testament speaks of these books as the law of Moses. Because Genesis describes events centuries before Moses was born, those who hold to his authorship usually say he worked from older records and oral traditions, and some suggest that the book's recurring headings (This is the account of...) mark such earlier sources. A few details show at least some later updating, which many conservative scholars readily accept: Genesis 14:14 mentions the city of Dan, a name the town received only in the period of the judges (Judges 18:29), and Genesis 36:31 lists Edomite kings who reigned before any king reigned over Israel, a remark that assumes Israel's monarchy.\n\nMost critical scholars since the late nineteenth century have seen the Pentateuch as a combination of several sources. The classic form of this theory, the Documentary Hypothesis associated with Julius Wellhausen, identified four documents written at different times and later woven together, three of which were found in Genesis: a strand that prefers the divine name LORD, a strand that prefers the general word God, and a priestly strand concerned with genealogies, covenants, and order. Since the 1970s that model has been heavily revised, and many scholars now speak more simply of priestly and non-priestly material, with debate over how and when they were joined. Other scholars stress the book's unified design and argue that it is better explained as the deliberate work of one author or editor using older material. Readers across these views agree that Genesis as we have it is a carefully shaped whole.",
+  "author": "Genesis never names its author. Jewish and Christian tradition has long credited the five books of the Torah to Moses, and the New Testament speaks of these books as the law of Moses. Because Genesis describes events centuries before Moses was born, those who hold to his authorship usually say he worked from older records and oral traditions, and some suggest that the book's ten recurring headings (‘This is the account of’, Hebrew toledot) mark such earlier sources. A few details show at least some later updating, which many conservative scholars readily accept: Genesis 14:14 mentions the city of Dan, a name the town received only in the period of the judges (Judges 18:29), and Genesis 36:31 lists Edomite kings who reigned before any king reigned over Israel, a remark that assumes Israel's monarchy.\n\nMost critical scholars since the late nineteenth century have seen the Pentateuch as a combination of several sources. The classic form of this theory, the Documentary Hypothesis associated with Julius Wellhausen, identified four documents written at different times and later woven together, three of which were found in Genesis: a strand that prefers the divine name LORD, a strand that prefers the general word God, and a priestly strand concerned with genealogies, covenants, and order. Since the 1970s that model has been heavily revised, and many scholars now speak more simply of priestly and non-priestly material, with debate over how and when they were joined. Other scholars stress the book's unified design and argue that it is better explained as the deliberate work of one author or editor using older material. Readers across these views agree that Genesis as we have it is a carefully shaped whole.",
   "date": "The date of writing depends on the question of authorship. On the traditional view Genesis comes from the time of Moses, which places it in either the fifteenth or the thirteenth century BC, depending on how one dates the exodus (itself a contested question, with some reading 1 Kings 6:1 to place it around 1446 BC and others preferring a thirteenth-century date on archaeological grounds). Critical scholars generally date its sources between the tenth and sixth centuries BC and place the final shaping of the book in the Persian period, after the return from Babylonian exile that followed Cyrus's decree in 539/538 BC.\n\nThe events themselves are a separate question. Chapters 1 to 11 give no dates that can be tied to known history. The stories of Abraham, Isaac, and Jacob have traditionally been placed in the early second millennium BC, and Joseph's rise in Egypt somewhat later, though many scholars doubt the stories can be dated at all. Since the 1970s a number of scholars have argued that the patriarchal stories reflect conditions of the first millennium BC and preserve little reliable memory of an earlier age, while others continue to argue that they fit the earlier period well. The book itself shows more interest in what God promised than in dates.",
   "setting": "Genesis moves across the whole ancient Near East. Its first chapters look toward Mesopotamia, the land between the Tigris and Euphrates rivers, where the Sumerians and later the Babylonians built some of the world's first cities. Abraham's family comes from Ur and Harran in that region. The central chapters take place in Canaan, the land between the Jordan River and the Mediterranean, a patchwork of small city-states where the patriarchs lived as outsiders, moving their flocks between towns, digging wells, and negotiating with local rulers. The last chapters are set in Egypt, the great kingdom of the Nile, whose grain could feed its neighbors when rain failed in Canaan.\n\nThose neighboring cultures had their own stories of beginnings. The Babylonian Enuma Elish tells of creation through a war among the gods. The Atrahasis epic tells of the gods making humans to do their labor and then sending a flood when people became too many and too noisy. The Epic of Gilgamesh includes a flood hero named Utnapishtim who builds a boat and sends out birds. The Sumerian King List names kings who reigned for thousands of years before a flood. Genesis shares some of this world's questions and imagery, but it answers them with one God, a good creation, and human beings made for dignity rather than drudgery. The first readers, whether Israel in the wilderness after Egypt or Israel in the long aftermath of exile in Babylon, needed to hear exactly that difference.",
   "purpose": "Genesis tells Israel who its God is and why it exists. It shows that the LORD who called Abraham is no local deity but the maker of heaven and earth, that the world's brokenness comes from human rebellion rather than from the nature of things, and that God answered that rebellion not by abandoning the world but by choosing one family through whom he would bless all the others. It explains why Israel had a claim to the land of Canaan, why it traced its tribes to twelve brothers, and how it came to be in Egypt, which sets the stage for the exodus. For any later reader, it answers the oldest questions about where we came from, what we are for, what went wrong, and whether God has given up on us.",
   "story": "Genesis is where the story begins, so nothing comes before it except God himself. Everything after it depends on it. Exodus opens with Jacob's descendants multiplying in Egypt, becoming slaves, and being rescued, which is the first great fulfillment of the promise that Abraham's offspring would become a nation. The covenant at Sinai, the entry into the land under Joshua, and the kingdom of David each carry forward the promises of offspring, land, and blessing made in Genesis 12 to 22. The exile seems to undo them, and the prophets look beyond it to a new start. The New Testament presents Jesus as the one in whom those promises are finally kept, and the Bible's last chapters return to images from Genesis 2, a river of life and the tree of life, in a new creation where the curse is gone.",
   "christ": "The New Testament reads Genesis as the opening of the story that Christ completes. After the first sin God tells the serpent that the woman's seed will crush its head (Genesis 3:15). Christian readers since at least the second century, Irenaeus among them, have heard in this the first announcement of the gospel, while many modern interpreters read it first as a promise of humanity's long struggle with evil; Paul echoes it when he writes, “The God of peace will soon crush Satan under your feet” (Romans 16:20). Paul calls Adam “a pattern of the One to come” (Romans 5:14), the first head of humanity whose failure Christ reverses.\n\nThe promise to Abraham is the book's backbone, and Paul says that in it God “foretold the gospel to Abraham” (Galatians 3:8). He reads the promised seed as fulfilled in Christ (Galatians 3:16), and he holds up Abraham, who believed God and was counted righteous (Genesis 15:6), as the model of faith for Jew and Gentile alike (Romans 4). Hebrews finds in Melchizedek, the priest-king of Salem, a pattern for Christ's priesthood (Hebrews 7), and in Abraham's offering of Isaac a faith that expected God to raise the dead (Hebrews 11:17-19). Jacob's blessing of Judah in Genesis 49:10 is of a different kind: a formal oracle about the future, promising that the scepter will not depart from Judah until the one comes to whom it belongs. Its Hebrew is difficult, but Jewish interpreters read it of the Messiah before and alongside the church, in the Dead Sea Scrolls commentary on Genesis (4Q252) and in the Aramaic paraphrase Targum Onqelos. Other links are patterns rather than predictions: Joseph, rejected by his brothers and then raised up to save them, has long been seen as a picture of the rejected and exalted Christ.",
-  "reading": "Genesis is narrative, with poetry at key moments (2:23, 3:14-19, 49) and genealogies that serve as its skeleton rather than filler. Watch for the recurring heading, This is the account of..., which opens each new section, and for the patterns the book repeats: the younger son preferred over the older, barren wives who conceive only by God's intervention, a patriarch passing off his wife as his sister (chapters 12, 20, and 26), and blessings and curses spoken over children. The narrator rarely stops to pass moral judgment, so describing an act is not the same as approving it; the consequences usually do the judging. Two misreadings are common. One treats the patriarchs as moral heroes to copy, when the book presents them as flawed people carried by a faithful God. The other reduces chapters 1 to 11 to a question of science versus myth. Readers differ on how literally to take those chapters, but the book's own concern is who God is, who we are, and how God keeps his word.",
+  "reading": "Genesis is narrative, with poetry at key moments (2:23, 3:14-19, 49) and genealogies that serve as its skeleton rather than filler. Watch for the recurring heading ‘This is the account of’ (toledot), which opens each of the book's ten sections after the prologue and names the starting point whose story follows, and for the patterns the book repeats: the younger son preferred over the older, barren wives who conceive only by God's intervention, a patriarch passing off his wife as his sister (chapters 12, 20, and 26), and blessings and curses spoken over children. The narrator rarely stops to pass moral judgment, so describing an act is not the same as approving it; the consequences usually do the judging. Two misreadings are common. One treats the patriarchs as moral heroes to copy, when the book presents them as flawed people carried by a faithful God. The other reduces chapters 1 to 11 to a question of science versus myth. Readers differ on how literally to take those chapters, but the book's own concern is who God is, who we are, and how God keeps his word.",
   "structure": [
-    { "range": "1:1-2:3", "title": "The seven days of creation", "summary": "God creates the heavens and the earth by his word, makes humanity in his image, calls everything very good, and rests on the seventh day." },
-    { "range": "2:4-11:26", "title": "From Eden to Babel", "summary": "The first couple in the garden, their disobedience and exile, Cain's murder of Abel, the flood and God's covenant with Noah, the table of nations, and the scattering at Babel. Sin spreads, and God keeps preserving and judging." },
-    { "range": "11:27-25:18", "title": "Abraham", "summary": "God calls Abram out of Mesopotamia and promises him offspring, land, and blessing for all nations. Through long waiting, failure, and testing, the promised son Isaac is born and Abraham dies owning only a burial plot in Canaan." },
-    { "range": "25:19-36:43", "title": "Isaac, Jacob, and Esau", "summary": "Jacob grasps the blessing from his brother, flees to Harran, builds a family of twelve sons amid rivalry, wrestles with God and is renamed Israel, and returns to the land. Esau's line becomes Edom." },
-    { "range": "37-50", "title": "Joseph and his brothers", "summary": "Joseph is sold into Egypt by his brothers, rises from prison to rule under Pharaoh, and saves the family from famine. Reconciled, the brothers settle in Egypt, Jacob blesses his sons, and Joseph dies trusting God to bring them home." }
+    {
+      "range": "1:1-2:3",
+      "title": "Prologue: the seven days of creation",
+      "summary": "Before the first heading, God creates the heavens and the earth by his word, makes humanity male and female in his image, calls everything very good, and rests on the seventh day, which he blesses."
+    },
+    {
+      "range": "2:4-4:26",
+      "title": "The account of the heavens and the earth",
+      "summary": "The first heading (2:4) tells what came of the created world: the man and woman in Eden, the command and the fall, exile east of Eden, Cain's murder of Abel, the spread of Cain's line, and the birth of Seth, when people begin to call on the name of the LORD."
+    },
+    {
+      "range": "5:1-6:8",
+      "title": "The book of the generations of Adam",
+      "summary": "Opening with ‘the book of the generations of Adam’ (5:1), a ten-generation genealogy runs from Adam to Noah with its refrain ‘and then he died’, broken by Enoch, who walked with God. It closes with the sons of God and human violence, the LORD's grief, and Noah finding favor."
+    },
+    {
+      "range": "6:9-9:29",
+      "title": "The account of Noah",
+      "summary": "Noah, righteous and blameless, builds the ark; the flood undoes creation and God remembers Noah. Afterward God makes a covenant with Noah and every living creature, sets the rainbow as its sign, and grounds the value of human life in the image of God, and Noah's drunkenness exposes Ham."
+    },
+    {
+      "range": "10:1-11:9",
+      "title": "The account of Noah's sons",
+      "summary": "The Table of Nations (10:1) lists seventy peoples descended from Shem, Ham, and Japheth, spread across the known world. The story of Babel (11:1-9) then tells how humanity, united in language, tried to make a name for itself and was scattered."
+    },
+    {
+      "range": "11:10-26",
+      "title": "The account of Shem",
+      "summary": "A second ten-generation genealogy (11:10) narrows from Shem to Terah and his three sons, Abram, Nahor, and Haran, carrying the line of blessing through the scattered nations toward Abraham."
+    },
+    {
+      "range": "11:27-25:11",
+      "title": "The account of Terah: Abraham",
+      "summary": "Under Terah's heading (11:27) comes the story of his son Abram: the call and the promise of land, offspring, and blessing for all nations; covenant, circumcision, and a new name; the long wait for Isaac; the binding of Isaac; and Abraham's burial in the one piece of land he owned."
+    },
+    {
+      "range": "25:12-18",
+      "title": "The account of Ishmael",
+      "summary": "A short record (25:12) of Ishmael's twelve sons shows God keeping his promise to make Hagar's son a great nation, before the story returns to the chosen line."
+    },
+    {
+      "range": "25:19-35:29",
+      "title": "The account of Isaac: Jacob",
+      "summary": "Under Isaac's heading (25:19) comes the story of his twin sons. Jacob takes Esau's birthright and blessing, flees to Harran, builds a family of twelve sons amid rivalry, wrestles with God and is renamed Israel, returns to the land, and buries his father."
+    },
+    {
+      "range": "36:1-37:1",
+      "title": "The account of Esau",
+      "summary": "Esau's line becomes the nation of Edom. The heading appears twice (36:1 and 36:9, the second locating Esau in the hill country of Seir), and the chapter lists Edom's chiefs and its kings who reigned before any king in Israel, while Jacob settles in Canaan (37:1)."
+    },
+    {
+      "range": "37:2-50:26",
+      "title": "The account of Jacob: Joseph and his brothers",
+      "summary": "The last heading (37:2) introduces the story of Jacob's sons. Joseph is sold into Egypt, rises to rule under Pharaoh, and saves the family from famine; Judah offers himself for Benjamin; the brothers are reconciled; Jacob blesses his sons; and Joseph dies trusting God to bring Israel home."
+    }
   ],
   "themes": [
-    { "title": "Blessing and curse", "body": "God's first word to humanity is a blessing (1:28), and sin brings curse on the serpent and the ground (3:14-17), on Cain (4:11), and on Canaan (9:25). The call of Abraham answers that spread of curse with a fivefold repetition of blessing (12:1-3). The rest of the book traces who receives the blessing, how it is passed on, and how it reaches outsiders such as Laban and Potiphar and finally Pharaoh and all Egypt through Joseph." },
-    { "title": "The promised offspring", "body": "The word seed, or offspring, runs from 3:15 through the promises to Abraham, Isaac, and Jacob. Yet the promise keeps meeting obstacles: barren wives, murdered sons, famine, a father told to sacrifice his heir, brothers who try to kill one of their own. Genesis shows that the line of promise survives because God preserves it, not because the family is strong or good." },
-    { "title": "The land", "body": "God promises Abraham the land of Canaan, but Abraham lives in it as a foreigner and owns only a cave for a grave (chapter 23). Jacob spends twenty years away from it and his sons end the book in Egypt. The land is promised, walked through, and longed for, and Joseph's final request to have his bones carried there leaves the promise pointing forward into Exodus and Joshua." },
-    { "title": "God's choice of the unlikely", "body": "Again and again God passes over the expected heir: Abel and then Seth rather than Cain, Isaac rather than Ishmael, Jacob rather than Esau, Joseph and Judah rather than Reuben, Ephraim rather than Manasseh. The pattern overturns the ancient assumption that the firstborn inherits by right and shows that God's purposes rest on his free choice and grace." },
-    { "title": "Providence through human failure", "body": "The people of Genesis lie, scheme, play favorites, and betray one another, and God works through all of it without excusing any of it. The theme comes to its clearest statement at the end, when Joseph tells his brothers that what they intended for evil God intended for good (50:20). Genesis teaches that God's plan is not derailed by human sin, which is both a comfort and a warning." }
+    {
+      "title": "Blessing and curse",
+      "body": "God's first word to humanity is a blessing (1:28), and sin brings curse on the serpent and the ground (3:14-17), on Cain (4:11), and on Canaan (9:25). The call of Abraham answers that spread of curse with a fivefold repetition of blessing (12:1-3). The rest of the book traces who receives the blessing, how it is passed on, and how it reaches outsiders such as Laban and Potiphar and finally Pharaoh and all Egypt through Joseph."
+    },
+    {
+      "title": "The promised offspring",
+      "body": "The word seed, or offspring, runs from 3:15 through the promises to Abraham, Isaac, and Jacob. Yet the promise keeps meeting obstacles: barren wives, murdered sons, famine, a father told to sacrifice his heir, brothers who try to kill one of their own. Genesis shows that the line of promise survives because God preserves it, not because the family is strong or good."
+    },
+    {
+      "title": "The land",
+      "body": "God promises Abraham the land of Canaan, but Abraham lives in it as a foreigner and owns only a cave for a grave (chapter 23). Jacob spends twenty years away from it and his sons end the book in Egypt. The land is promised, walked through, and longed for, and Joseph's final request to have his bones carried there leaves the promise pointing forward into Exodus and Joshua."
+    },
+    {
+      "title": "God's choice of the unlikely",
+      "body": "Again and again God passes over the expected heir: Abel and then Seth rather than Cain, Isaac rather than Ishmael, Jacob rather than Esau, Joseph and Judah rather than Reuben, Ephraim rather than Manasseh. The pattern overturns the ancient assumption that the firstborn inherits by right and shows that God's purposes rest on his free choice and grace."
+    },
+    {
+      "title": "Providence through human failure",
+      "body": "The people of Genesis lie, scheme, play favorites, and betray one another, and God works through all of it without excusing any of it. The theme comes to its clearest statement at the end, when Joseph tells his brothers that what they intended for evil God intended for good (50:20). Genesis teaches that God's plan is not derailed by human sin, which is both a comfort and a warning."
+    }
   ],
-  "doctrines": ["creation", "humanity", "sin", "covenant", "providence", "faith"],
+  "doctrines": [
+    "creation",
+    "image",
+    "sin",
+    "covenant",
+    "election",
+    "providence",
+    "faith"
+  ],
   "keyChapters": [
-    { "ch": 1, "why": "God creates the world by his word and makes humanity, male and female, in his image. The foundation of the Bible's teaching on God, creation, and human dignity." },
-    { "ch": 3, "why": "The first disobedience, its consequences, and the first hint of hope in the promise about the woman's seed. Everything that goes wrong in the Bible's story traces back here." },
-    { "ch": 9, "why": "After the flood God makes a covenant with Noah and every living creature, promising never again to destroy the earth by flood, and grounds the value of human life in the image of God." },
-    { "ch": 12, "why": "God calls Abram and promises him a great nation, a great name, and blessing for all the families of the earth. The hinge on which the whole Bible turns from the world's story to Israel's." },
-    { "ch": 15, "why": "Abram believes the LORD and it is credited to him as righteousness, and God binds himself by covenant in a strange night ceremony. Paul builds his teaching on faith on this chapter." },
-    { "ch": 22, "why": "God tests Abraham by commanding him to offer Isaac, then provides a ram in his place. One of the most searching and most discussed stories in Scripture." },
-    { "ch": 32, "why": "Jacob wrestles through the night with a mysterious man, is renamed Israel, and walks away limping and blessed. The nation takes its name from this encounter." },
-    { "ch": 50, "why": "Joseph forgives his brothers and names God's providence over their evil, and he dies trusting God to bring Israel back to the promised land." }
+    {
+      "ch": 1,
+      "why": "God creates the world by his word and makes humanity, male and female, in his image. The foundation of the Bible's teaching on God, creation, and human dignity."
+    },
+    {
+      "ch": 3,
+      "why": "The first disobedience, its consequences, and the first hint of hope in the promise about the woman's seed. Everything that goes wrong in the Bible's story traces back here."
+    },
+    {
+      "ch": 9,
+      "why": "After the flood God makes a covenant with Noah and every living creature, promising never again to destroy the earth by flood, and grounds the value of human life in the image of God."
+    },
+    {
+      "ch": 12,
+      "why": "God calls Abram and promises him a great nation, a great name, and blessing for all the families of the earth. The hinge on which the whole Bible turns from the world's story to Israel's."
+    },
+    {
+      "ch": 15,
+      "why": "Abram believes the LORD and it is credited to him as righteousness, and God binds himself by covenant in a strange night ceremony. Paul builds his teaching on faith on this chapter."
+    },
+    {
+      "ch": 22,
+      "why": "God tests Abraham by commanding him to offer Isaac, then provides a ram in his place. One of the most searching and most discussed stories in Scripture."
+    },
+    {
+      "ch": 32,
+      "why": "Jacob wrestles through the night with a mysterious man, is renamed Israel, and walks away limping and blessed. The nation takes its name from this encounter."
+    },
+    {
+      "ch": 50,
+      "why": "Joseph forgives his brothers and names God's providence over their evil, and he dies trusting God to bring Israel back to the promised land."
+    }
+  ],
+  "text": "Genesis is carefully preserved, and English Bibles differ over it far less than over some other books, but the witnesses do diverge in ways a reader will notice.\n\nThe standard Hebrew text is the Masoretic Text, transmitted by Jewish scribes (the Masoretes) who added vowel signs and accents in the early Middle Ages. Its oldest complete manuscript is the Leningrad Codex, copied in 1008 or 1009 and the basis of modern printed Hebrew Bibles; the older Aleppo Codex (tenth century) lost nearly all of the Torah after the anti-Jewish riots in Aleppo in 1947. The Dead Sea Scrolls include about twenty fragmentary copies of Genesis from Qumran and nearby sites, from the second century BC to the first century AD, and they agree closely with the Masoretic Text. Three other witnesses matter most. The Samaritan Pentateuch, preserved by the Samaritan community, differs from the Masoretic Text in thousands of small spellings and in some real readings. The Septuagint, the Greek translation made in Alexandria from the third century BC, was the Bible of most New Testament writers. The Aramaic Targums (Onqelos, Neofiti, and Pseudo-Jonathan), the Syriac Peshitta, and Jerome's Latin Vulgate (translated from the Hebrew around 390 to 405) show how the text was read.\n\nThe largest differences are in the numbers. In the genealogies of chapters 5 and 11 the three main witnesses give different ages at which the fathers had their sons: the Septuagint often adds a hundred years, which lengthens the span from creation to the flood and from the flood to Abraham by several centuries, and it adds a generation, Cainan, between Arphaxad and Shelah (11:12-13), which Luke 3:36 follows. That is one reason chronologies built from Genesis disagree. Other differences surface in translations. At 4:8 the Hebrew says Cain spoke to Abel without reporting what he said; the Samaritan Pentateuch, Septuagint, Syriac, and Vulgate supply ‘Let us go out to the field’, which many modern versions adopt. At 47:31 the same Hebrew consonants can be read as bed (mittah, the Masoretic reading) or staff (matteh, the Septuagint), and Hebrews 11:21 follows the Septuagint's staff. At 2:2 the Septuagint and Samaritan read that God finished his work on the sixth day rather than the seventh.\n\nChapter and verse numbers came later (chapter numbers in the Middle Ages, verse numbers in the sixteenth century, though the Hebrew verse divisions themselves are much older), and at one place the Hebrew and English numbering differ: English 31:55 is Hebrew 32:1, so the verses of chapter 32 are one higher in Hebrew Bibles (English 32:1-32 is Hebrew 32:2-33). The Hebrew tradition divides the book differently, into paragraphs marked by open and closed spaces and into twelve weekly synagogue readings.",
+  "reception": "Genesis has been read more intensively than almost any book in the world. Jewish writers of the Second Temple period retold it: the Book of Jubilees (second century BC) recast it by a calendar of jubilees and made the patriarchs keep the law; the Genesis Apocryphon from Qumran retold the stories of Noah and Abraham in Aramaic; Philo of Alexandria read it as allegory of the soul's ascent; and Josephus retold it in the first book of his Jewish Antiquities (about AD 93 to 94). The rabbis gathered their interpretations in Genesis Rabbah, edited in the land of Israel in the early fifth century, and the Targums paraphrased it in Aramaic for the synagogue. The great medieval commentators wrote on it at length: Rashi (eleventh century), Abraham ibn Ezra, David Kimhi (Radak), and Nahmanides (Ramban, thirteenth century), whose principle that the deeds of the fathers are a sign for the children read the patriarchs' travels as a pattern for Israel's history. In the synagogue Genesis is read in twelve weekly portions each autumn and winter, beginning just after Simchat Torah, and the binding of Isaac (Genesis 22) is read on the second day of Rosh Hashanah.\n\nChristian reading began in the New Testament itself, with Paul's arguments from Adam (Romans 5), from Abraham's faith (Romans 4, Galatians 3), and from Sarah and Hagar read allegorically (Galatians 4:24), and with Hebrews 11's roll of the faithful from Abel to Joseph. The church fathers produced a library on Genesis: Origen's homilies, Basil's nine homilies on the six days (378), John Chrysostom's sixty-seven homilies preached at Antioch, Ambrose's treatises on Abraham, Isaac, Jacob, and Joseph, Ephrem the Syrian's commentary, and Augustine's several works on the opening chapters, capped by The Literal Meaning of Genesis (401 to 415) and books 11 to 16 of the City of God. Medieval readers studied it through the Glossa Ordinaria and Thomas Aquinas's treatise on the six days. Luther's lectures on Genesis (1535 to 1545) were the last great work of his life, and Calvin's commentary appeared in 1554.\n\nModern criticism began largely with Genesis. Spinoza's Theological-Political Treatise (1670) questioned Mosaic authorship, Jean Astruc (1753) noticed that the divine names might mark different sources, and Julius Wellhausen's Prolegomena (1883) gave the Documentary Hypothesis its classic form. Hermann Gunkel's commentary (1901) read the stories as folk sagas; Gerhard von Rad and Claus Westermann wrote the major twentieth-century German commentaries; and Umberto Cassuto, Nahum Sarna, and Robert Alter led Jewish and literary readings of its unity. Genesis has been at the center of every debate about science and Scripture since Darwin.\n\nIts life in culture is enormous. Kierkegaard's Fear and Trembling (1843) meditates on Genesis 22; Erich Auerbach's Mimesis (1946) opens by setting the binding of Isaac beside Homer; Thomas Mann retold the Jacob and Joseph stories in the four novels of Joseph and His Brothers (1933 to 1943). Michelangelo's Sistine ceiling (1508 to 1512) paints its first chapters, Rembrandt painted the sacrifice of Isaac (1635) and Jacob blessing Joseph's sons (1656), Haydn set the creation to music (1798), and Benjamin Britten staged the flood for children in Noye's Fludde (1958).",
+  "furtherReading": [
+    {
+      "tier": "first",
+      "author": "Derek Kidner",
+      "title": "Genesis: An Introduction and Commentary",
+      "series": "Tyndale Old Testament Commentaries",
+      "year": 1967,
+      "note": "A short, clear evangelical commentary that handles the hard questions briefly and wisely; still one of the best first companions to the whole book."
+    },
+    {
+      "tier": "first",
+      "author": "Tremper Longman III",
+      "title": "How to Read Genesis",
+      "year": 2005,
+      "note": "An accessible guide to reading Genesis as literature, history, and theology, including its ancient Near Eastern background and its place in the Bible's story."
+    },
+    {
+      "tier": "first",
+      "author": "Robert Alter",
+      "title": "Genesis: Translation and Commentary",
+      "year": 1996,
+      "note": "A literary scholar's translation that keeps the Hebrew's repetitions and wordplay, with brief notes on how the stories are told."
+    },
+    {
+      "tier": "first",
+      "author": "Walter Brueggemann",
+      "title": "Genesis",
+      "series": "Interpretation: A Bible Commentary for Teaching and Preaching",
+      "year": 1982,
+      "note": "A mainline Protestant commentary written for preachers, strong on the book's theology and its address to faith today."
+    },
+    {
+      "tier": "pastor",
+      "author": "Nahum M. Sarna",
+      "title": "Genesis",
+      "series": "The JPS Torah Commentary",
+      "year": 1989,
+      "note": "A Jewish commentary on the Hebrew text that joins ancient Near Eastern background with classical rabbinic interpretation; excellent on the stories' world."
+    },
+    {
+      "tier": "pastor",
+      "author": "Bruce K. Waltke with Cathi J. Fredricks",
+      "title": "Genesis: A Commentary",
+      "year": 2001,
+      "note": "An evangelical commentary that reads each episode as literature and draws out its theology, with attention to the book's structure."
+    },
+    {
+      "tier": "pastor",
+      "author": "John H. Walton",
+      "title": "Genesis",
+      "series": "The NIV Application Commentary",
+      "year": 2001,
+      "note": "Strong on the ancient Near Eastern setting and on moving from the ancient meaning to preaching and teaching today."
+    },
+    {
+      "tier": "pastor",
+      "author": "Andrew Louth, editor",
+      "title": "Genesis 1-11",
+      "series": "Ancient Christian Commentary on Scripture",
+      "year": 2001,
+      "note": "Selections from the church fathers, Greek, Latin, and Syriac, arranged verse by verse on the opening chapters."
+    },
+    {
+      "tier": "pastor",
+      "author": "R. R. Reno",
+      "title": "Genesis",
+      "series": "Brazos Theological Commentary on the Bible",
+      "year": 2010,
+      "note": "A Catholic theologian's reading of Genesis within the church's doctrinal tradition, in conversation with the fathers."
+    },
+    {
+      "tier": "scholar",
+      "author": "Gordon J. Wenham",
+      "title": "Genesis 1-15",
+      "series": "Word Biblical Commentary",
+      "year": 1987,
+      "note": "A detailed evangelical commentary on the Hebrew text, strong on literary structure and ancient parallels; continued in Genesis 16-50 (1994)."
+    },
+    {
+      "tier": "scholar",
+      "author": "Victor P. Hamilton",
+      "title": "The Book of Genesis: Chapters 1-17",
+      "series": "New International Commentary on the Old Testament",
+      "year": 1990,
+      "note": "A thorough evangelical commentary on the Hebrew, with notes on how the New Testament uses each section; a second volume covers chapters 18 to 50."
+    },
+    {
+      "tier": "scholar",
+      "author": "Claus Westermann",
+      "title": "Genesis 1-11: A Commentary",
+      "year": 1984,
+      "note": "The massive German critical commentary in John Scullion's translation, unmatched in its survey of ancient parallels and earlier scholarship."
+    },
+    {
+      "tier": "scholar",
+      "author": "Umberto Cassuto",
+      "title": "A Commentary on the Book of Genesis, Part I: From Adam to Noah",
+      "year": 1961,
+      "note": "A Jewish scholar's close reading of chapters 1 to 6, arguing for the unity of the text and alert to its numerical and verbal patterns."
+    },
+    {
+      "tier": "scholar",
+      "author": "Gerhard von Rad",
+      "title": "Genesis: A Commentary",
+      "series": "Old Testament Library",
+      "year": 1961,
+      "note": "A classic of twentieth-century German Protestant scholarship, reading the book through its sources and its theology of promise."
+    },
+    {
+      "tier": "scholar",
+      "author": "Ronald Hendel",
+      "title": "The Book of Genesis: A Biography",
+      "year": 2013,
+      "note": "A short history of how Genesis has been read, from ancient Israel through Jewish and Christian interpreters to modern science and literature."
+    }
   ]
 }
