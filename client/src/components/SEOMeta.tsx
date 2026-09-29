@@ -118,6 +118,18 @@ export function SEOMeta({
 
 // ─── Schema helpers ─────────────────────────────────────────────────────
 
+/** James as a schema.org Person: one definition, reused wherever he is the author. */
+export function getAuthorPerson() {
+  return {
+    "@type": "Person",
+    name: AUTHOR_NAME,
+    url: `${SITE_URL}/about`,
+    jobTitle: "Lead Pastor, First Baptist Church of Fenton",
+    worksFor: { "@type": "Organization", name: "First Baptist Church of Fenton" },
+    sameAs: SAME_AS,
+  };
+}
+
 export function getOrganizationSchema() {
   return {
     "@context": "https://schema.org",
@@ -175,11 +187,9 @@ export function getArticleSchema(
     ...(articleSection ? { articleSection } : {}),
     ...(articleBody ? { articleBody } : {}),
     ...(wordCount ? { wordCount } : {}),
-    author: {
-      "@type": "Person",
-      name: authorName ?? AUTHOR_NAME,
-      url: `${SITE_URL}/about`,
-    },
+    author: authorName && authorName !== AUTHOR_NAME
+      ? { "@type": "Person", name: authorName }
+      : getAuthorPerson(),
     publisher: {
       "@type": "Organization",
       name: SITE_NAME,

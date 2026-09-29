@@ -80,6 +80,9 @@ export function Credits() {
         <a href="https://www.STEPBible.org" target="_blank" rel="noopener noreferrer" style={quietLink}>STEPBible.org</a>, CC BY 4.0. Cross-references:{" "}
         <a href="https://www.openbible.info/labs/cross-references/" target="_blank" rel="noopener noreferrer" style={quietLink}>OpenBible.info</a>, CC BY. Study notes, book introductions, and the story path: LiveWell.
       </p>
+      <p style={{ ...wrap, fontFamily: "var(--U)", fontSize: "12px", lineHeight: 1.7, color: "var(--ink-muted)", margin: "8px auto 0" }}>
+        Why two translations: the Study Bible prints every chapter in full, so it uses the Berean Standard Bible, which anyone may publish whole. The essays quote the English Standard Version, and name another translation when they use one.
+      </p>
     </footer>
   );
 }

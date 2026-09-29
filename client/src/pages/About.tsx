@@ -2,7 +2,6 @@ import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
-import { SITE_STATS } from "@/config/siteStats";
 import { SITE_URL, AUTHOR_PORTRAIT } from "@/lib/site";
 import { PullQuote, StatementBand, SectionArt } from "@/components/EditorialBlocks";
 import { Figure } from "@/components/Figure";
@@ -26,7 +25,7 @@ export default function About() {
     <Layout>
       <SEOMeta
         title="About James Bell — Pastor, Author, Writer"
-        description={`Pastor, author, and founder. Twelve years at First Baptist Church of Fenton, the Pastors Connection Network, and ENDS, equipping pastors in remote regions. ${SITE_STATS.bookCount} books on theology, church history, justice, and ordinary life.`}
+        description="Pastor, author, and founder. Twelve years at First Baptist Church of Fenton, the Pastors Connection Network, and ENDS, equipping pastors in remote regions. Books on theology, church history, justice, and ordinary life."
         type="website"
         structuredData={{
           "@context": "https://schema.org",
@@ -34,7 +33,7 @@ export default function About() {
           name: "James Bell",
           url: `${SITE_URL}/about`,
           jobTitle: "Lead Pastor, Author, Founder",
-          description: `Lead Pastor at First Baptist Church of Fenton for twelve years, author of ${SITE_STATS.bookCountWord} books, founder of the Pastors Connection Network (nearly 18,000 pastors) and of ENDS, which equips pastors in remote regions around the world.`,
+          description: `Lead Pastor at First Baptist Church of Fenton for twelve years, author, founder of the Pastors Connection Network (nearly 18,000 pastors) and of ENDS, which equips pastors in remote regions around the world.`,
           worksFor: {
             "@type": "Organization",
             name: "First Baptist Church of Fenton",
@@ -59,7 +58,7 @@ export default function About() {
                 Founder, Pastors Connection Network<br />
                 Founder, ENDS, equipping pastors in remote regions<br />
                 Host, Following the Way<br />
-                Author of {SITE_STATS.bookCount} books
+                Author
               </p>
             </div>
           </div>
@@ -98,7 +97,7 @@ export default function About() {
               I also founded ENDS, which equips pastors in remote regions around the world. Not to send Americans to do their work for them, and not to hand them a translated version of our assumptions. To put real training in the hands of the men already there, who already know the language and the terrain and the cost, and who will still be there long after any visitor has gone home.
             </p>
             <p>
-              The rest of it is writing. {SITE_STATS.bookCount} books so far, on theology, church history, justice, marriage, parenting, and the slow unglamorous business of following Jesus over a long stretch of time. The essays here. The <a href="http://followingthewaypodcast.com/" target="_blank" rel="noopener noreferrer">Following the Way</a> podcast, and the notes I write most days for whoever is reading. It is really all one project: taking the depth of theology and putting it back in contact with the weight of an ordinary life.{" "}
+              The rest of it is writing. Books on theology, church history, justice, marriage, parenting, and the slow unglamorous business of following Jesus over a long stretch of time. The essays here. The <a href="http://followingthewaypodcast.com/" target="_blank" rel="noopener noreferrer">Following the Way</a> podcast, and the notes I write most days for whoever is reading. It is really all one project: taking the depth of theology and putting it back in contact with the weight of an ordinary life.{" "}
               <Link href="/books">The books are here</Link>.
             </p>
           </div>
@@ -161,7 +160,7 @@ export default function About() {
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-3)" }}>
         <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
           <p style={{ fontFamily: "var(--F)", fontSize: "1.125rem", lineHeight: 1.75, color: "var(--ink)" }}>
-            LiveWell is not therapy, and it is not Christian self-help. It is not a place that hands you something to think so you can stop thinking. It is closer to a writing desk — where a pastor with {SITE_STATS.yearsInMinistryWord} years of mistakes behind him and five sons in front of him tries to think honestly, out loud, about what it actually means to follow Jesus in a country that has mostly forgotten what his kingdom was ever about.
+            LiveWell is not therapy, and it is not Christian self-help. It is not a place that hands you something to think so you can stop thinking. It is closer to a writing desk — where a pastor with years of mistakes behind him and five sons in front of him tries to think honestly, out loud, about what it actually means to follow Jesus in a country that has mostly forgotten what his kingdom was ever about.
           </p>
         </div>
       </section>

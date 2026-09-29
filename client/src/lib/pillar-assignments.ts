@@ -1672,5 +1672,15 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
   "the-whole-counsel": { "pillar": 3, "subThemes": [], "confidence": "high" },
   "six-verses-we-memorized": { "pillar": 3, "subThemes": [], "confidence": "high" },
   "what-the-original-audience-heard": { "pillar": 3, "subThemes": [], "confidence": "high" },
-  "reading-in-community": { "pillar": 3, "subThemes": [], "confidence": "high" }
+  "reading-in-community": { "pillar": 3, "subThemes": [], "confidence": "high" },
+  // Filed 2026-09-29: the Left essays in docs/drafts/capture-left were live but
+  // unfiled, so pillar 2 showed two essays against the Right's fifty-nine.
+  "affirmation-is-not-love": { "pillar": 2, "subThemes": [], "confidence": "high" },
+  "authority-we-traded-for-authenticity": { "pillar": 2, "subThemes": [], "confidence": "high" },
+  "cheap-grace-left-hand": { "pillar": 2, "subThemes": [], "confidence": "high" },
+  "conscience-outsourced-to-party": { "pillar": 2, "subThemes": [], "confidence": "high" },
+  "deconstruction-without-reconstruction": { "pillar": 2, "subThemes": [], "confidence": "high" },
+  "right-side-of-history": { "pillar": 2, "subThemes": [], "confidence": "high" },
+  "the-sin-we-stopped-naming": { "pillar": 2, "subThemes": [], "confidence": "high" },
+  "when-justice-becomes-a-gospel": { "pillar": 2, "subThemes": [], "confidence": "high" }
 };

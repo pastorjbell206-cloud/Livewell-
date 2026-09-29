@@ -58,7 +58,7 @@ const STATIC_PAGES = [
   {
     path: "/about",
     title: "About James Bell",
-    description: "James Bell has pastored First Baptist Church of Fenton, Michigan for twelve years. He founded the Pastors Connection Network and ENDS, hosts the Following the Way podcast, and has written twenty-one books.",
+    description: "James Bell has pastored First Baptist Church of Fenton, Michigan for twelve years. He founded the Pastors Connection Network and ENDS, hosts the Following the Way podcast, and writes books on theology, church history, and ordinary life.",
     type: "profile",
     schemas: [personSchema()],
   },
@@ -277,7 +277,7 @@ function personSchema() {
     url: SITE_URL,
     jobTitle: "Lead Pastor, Author, Founder",
     description:
-      "Lead Pastor at First Baptist Church of Fenton, author of twenty-one books, and founder of the Pastors Connection Network.",
+      "Lead Pastor at First Baptist Church of Fenton, author, and founder of the Pastors Connection Network.",
     sameAs: [
       "https://pastorsconnectionnetwork.com",
       "https://substack.com/@jamesbell333289",

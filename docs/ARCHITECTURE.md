@@ -249,13 +249,12 @@ Inter; cream/black with mustard as <8% punctuation. Contract in `CLAUDE.md`.
    `server/api-parity.test.ts` now fails CI if the client calls a procedure prod
    doesn't implement, so new drift can't sneak in. Stage 2 ported the gaps that
    were safe to port (`search.*`, `books.getBySlug`, `posts.listForIndex`,
-   `subscribers.*`). The remaining `KNOWN_PROD_GAPS` are `stripe.*` (a working
-   REST fallback already exists at `/api/checkout`) and — the real blocker —
-   `files.*` and the whole `teamCollab.*` workspace, which need a **per-user
-   identity** (`ctx.user.id`) that production does not have: its auth is a single
-   shared "admin" session, with no multi-user login. Closing those requires
-   giving prod real per-user auth (its own project), or unifying the two runtimes
-   so one real router serves both.
+   `subscribers.*`). Since then the remaining gaps closed: `files.*` and
+   `stripe.createCheckoutSession` are implemented in the production function
+   and the `teamCollab.*` workspace was removed from the client, so
+   `KNOWN_PROD_GAPS` is empty (29 Sept 2026). The structural risk remains: plain
+   endpoints outside tRPC can still drift unseen, and unifying the two runtimes
+   so one real router serves both is the lasting fix.
 2. **`api/index.ts` is a ~2,800-line single file.** It works, but its size is a
    maintainability risk; splitting it into modules (routes, procedures, db,
    auth) would help — ideally as part of resolving #1.

@@ -10,7 +10,7 @@
 
 ## Platform & Founder
 
-**LiveWell by James Bell** is the digital home of James Bell — Lead Pastor of First Baptist Church of Fenton (Michigan), founder of the Pastors Connection Network (PCN), author of 21 books. He came to faith from atheism. He was raised without a father. He has five sons. Those last two facts shape everything he writes.
+**LiveWell by James Bell** is the digital home of James Bell — Lead Pastor of First Baptist Church of Fenton (Michigan), founder of the Pastors Connection Network (PCN), author. (The site states no book count, James's decision of 29 Sept 2026; the books are listed at /books.) He came to faith from atheism. He was raised without a father. He has five sons. Those last two facts shape everything he writes.
 
 **Tagline:** Connecting the depth of theology to the weight of everyday life.
 
@@ -31,7 +31,7 @@
 
 ## Positioning Statement
 
-For the reader whose faith has outgrown the answers they were given — whose marriage needs more than tips, whose doubts deserve more than platitudes, whose calling costs more than anyone told them — LiveWell by James Bell is the theological writing platform that refuses to separate intellectual depth from lived experience, unlike the devotional mills that offer comfort without cost and the academic journals that offer rigor without warmth, because Bell writes from inside the room where people fall apart, not from a safe distance — as a working pastor with 15 years of ministry, five sons, and 21 books that prove theology can carry the weight of a Tuesday afternoon.
+For the reader whose faith has outgrown the answers they were given — whose marriage needs more than tips, whose doubts deserve more than platitudes, whose calling costs more than anyone told them — LiveWell by James Bell is the theological writing platform that refuses to separate intellectual depth from lived experience, unlike the devotional mills that offer comfort without cost and the academic journals that offer rigor without warmth, because Bell writes from inside the room where people fall apart, not from a safe distance — as a working pastor with five sons and books that prove theology can carry the weight of a Tuesday afternoon.
 
 ---
 
@@ -219,7 +219,9 @@ not is worse than one that is plainly true.
 **Scripture.** Verbatim, ESV by default (named only when a translation choice is
 doing work), the reference traveling with the quote so a reader can check it. In
 context, against the proof-text reflex — a verse is not a missile. The whole
-canon, not a favorite shelf.
+canon, not a favorite shelf. The Study Bible is the one exception: it prints the
+whole text, so it uses the public-domain Berean Standard Bible and says so on
+every page (James's decision, 29 Sept 2026). Essays stay ESV.
 
 **Secular sources, tested.** Take the secular account at its strongest (Haidt on
 the anxious generation, Taylor on disenchantment, Putnam on association), name
@@ -366,7 +368,7 @@ Not warm in the coffee-shop sense. Not dark in the luxury-brand sense. The feeli
 - The homepage is strong; inner pages need the same design system applied.
 - Facebook following (facebook.com/james.bell.609252) is the existing audience. Substack is the newsletter channel.
 - Contact forms send to Pastorjbell206@gmail.com.
-- The site has 161+ articles and 21 books in the database. Content is the product.
+- The site has 160+ articles and James's books in the database. Content is the product.
 - All components use inline styles with CSS variable references. Brand changes flow through `:root` tokens in `index.css`.
 
 ---
@@ -426,14 +428,14 @@ There are **two server implementations of the same API**:
   the full tRPC router (`server/routers.ts` + ~13 sub-routers in `server/*-router.ts`
   and `server/routers/`).
 - **Production (Vercel)** — a single, deliberately self-contained serverless
-  function `api/index.ts` (~2,000 lines, no `../server/*` imports) that
+  function `api/index.ts` (~4,000 lines, no `../server/*` imports) that
   re-implements each procedure by hand against pooled MySQL.
 
 A procedure added to `server/routers.ts` **does not exist in production** until
 it is also added to `api/index.ts`. `server/api-parity.test.ts` fails CI if the
-client calls a procedure prod doesn't implement — respect it. Known prod gaps
-(`stripe.*` REST fallback, `files.*`, `teamCollab.*`) are intentional and need
-per-user auth to close.
+client calls a procedure prod doesn't implement — respect it. `KNOWN_PROD_GAPS`
+is empty: `files.*` and `stripe.createCheckoutSession` are implemented in prod,
+and the `teamCollab.*` feature was removed. Keep it empty.
 
 ### Directory map
 

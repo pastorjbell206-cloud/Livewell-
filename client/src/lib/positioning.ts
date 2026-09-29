@@ -32,7 +32,8 @@ export const SUBSTACK_SERIES_URL = "https://jamesbell333289.substack.com/p/the-e
 export const PRIMARY_HEADLINE =
   "Theology that carries the weight of everyday life.";
 
-export const PRIMARY_KICKER = "New essays weekly";
+// No cadence claim (none is verifiable from this repo): name what is here instead.
+export const PRIMARY_KICKER = "Essays, study guides, and a Study Bible";
 
 // Both hero variants and the meta description now carry the same sentence.
 // They stay as named exports so Home.tsx's HERO_VARIANT switch keeps compiling,
