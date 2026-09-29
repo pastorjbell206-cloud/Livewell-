@@ -1,0 +1,280 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "The opening follows the ancient letter form: sender, recipients, greeting. Paul names himself an apostle by God's will, not by human appointment, and addresses the saints, who are also the faithful in Christ Jesus. Whether the letter names Ephesus at all is one of the best-known textual questions in the New Testament.",
+      "grammar": "Dia thelēmatos theou, ‘through the will of God’, a phrase Paul uses in the openings of 1 and 2 Corinthians and Colossians, grounds his authority in God's choice. Tois hagiois tois ousin, ‘to the saints who are’, is followed in most manuscripts by en Ephesō, ‘in Ephesus’. Without those words the Greek reads awkwardly, ‘to the saints who are and faithful in Christ Jesus’, which is part of why scholars debate what stood here. Hagioi, ‘holy ones, saints’, is Paul's normal term for all believers, set apart by God, not a class of especially devout Christians. Pistois, ‘faithful’, can mean ‘believing’ or ‘trustworthy’; here it describes those who believe.",
+      "words": ["G0652", "G2307", "G0040H", "G1510", "G2181", "G4103"],
+      "text": "The words ‘in Ephesus’ are absent from the earliest manuscripts, P46 (about AD 200), and from the first hands of Sinaiticus and Vaticanus, as well as minuscule 1739. Origen, in the third century, knew a text without them and read ‘the saints who are’ as a play on God's name ‘I am’; Basil of Caesarea in the fourth century (Against Eunomius 2.19) reports that older copies lacked the place name. Marcion in the second century, according to Tertullian (Against Marcion 5.11 and 5.17), called the letter ‘to the Laodiceans’. The later manuscripts and all the ancient titles read ‘in Ephesus’. Explanations include a circular letter to several churches in Asia with the place left open, an idea associated with the seventeenth-century Archbishop James Ussher; the letter from Laodicea mentioned in Colossians 4:16; and an original ‘in Ephesus’ that some scribes dropped. The critical editions print the words in brackets or with a note.",
+      "history": "The letter's lack of personal greetings is striking if it was written to Ephesus, where Paul had lived and worked for about three years (Acts 19:10, 20:31), and 1:15 and 3:2 speak as if Paul knew the readers only by report. This fits the circular-letter view. Pauline authorship is also debated: Andrew Lincoln (Word Biblical Commentary, 1990) and many critical scholars regard the letter as written by a disciple of Paul after his death, while Harold Hoehner (Ephesians: An Exegetical Commentary, 2002) and Clinton Arnold defend Paul's authorship, written from prison (3:1, 4:1) probably in Rome in the early 60s.",
+      "refs": ["Colossians 4:16", "Acts 19:8-10", "Acts 20:17-31", "Colossians 1:1-2", "Revelation 2:1-7"]
+    },
+    {
+      "v": "2",
+      "context": "The greeting joins the Greek letter's ‘greeting’ (chairein), reshaped into ‘grace’, with the Jewish ‘peace’ (shalom). Its source is God the Father and the Lord Jesus Christ together, named under one preposition.",
+      "grammar": "Charis humin kai eirēnē, ‘grace to you and peace’, is Paul's standard greeting in every letter. Apo theou patros hēmōn kai kuriou Iēsou Christou, ‘from God our Father and the Lord Jesus Christ’, governs both names with a single apo, ‘from’: the Father and the Son are the one source of grace and peace. This quiet grammatical fact is one of the earliest indications of how Paul places Jesus on the divine side of the relationship between God and his people.",
+      "words": ["G5485", "G1515", "G3962", "G2962G"],
+      "theology": [
+        {
+          "id": "trinity",
+          "note": "Grace and peace come jointly from the Father and from Jesus as Lord. Paul does not argue for Christ's divine status; he assumes it in the greeting, a way of speaking the later creeds made explicit."
+        }
+      ],
+      "refs": ["Romans 1:7", "Numbers 6:24-26", "Colossians 1:2", "2 Thessalonians 1:2"]
+    },
+    {
+      "v": "3",
+      "context": "Verse 3 begins the single long sentence of praise that runs to verse 14. Instead of the thanksgiving that usually follows a greeting in Paul's letters, the letter opens with a blessing of God for every spiritual blessing he has given in Christ. The rest of the sentence lists what those blessings are.",
+      "grammar": "Eulogētos, ‘blessed’, is a verbal adjective with no verb: ‘Blessed (be or is) the God and Father...’. It is the Greek form of the Hebrew barukh, which opens Jewish blessings of God (Psalm 72:18, 1 Kings 8:15). The same wording opens 2 Corinthians 1:3 and 1 Peter 1:3, which suggests a common early Christian prayer form. The verse plays on one root three times: eulogētos, ‘blessed’, eulogēsas, ‘who blessed’, and eulogia, ‘blessing’: God, who is blessed by us in words, has blessed us in deeds. Pneumatikē, ‘spiritual’, most likely means ‘belonging to the Spirit’, the blessings the Spirit gives, rather than ‘immaterial’. En tois epouraniois, ‘in the heavenly places’, occurs only in Ephesians (1:3, 1:20, 2:6, 3:10, 6:12), naming the unseen realm where Christ reigns and where hostile powers are also active.",
+      "words": ["G2128", "G3962", "G2127", "G2129", "G4152", "G2032"],
+      "history": "Verses 3 to 14 are one sentence of about two hundred words in Greek, which English Bibles break into several. The classical scholar Eduard Norden judged it one of the most tangled sentences in Greek, but its style, piling phrase on phrase and relative clause on relative clause, resembles the long blessings of Jewish liturgy and the Qumran hymns, which also pile up praise of God's acts. The Jewish blessing (berakah) was a form of prayer that praised God by naming what he had done, and the sentence follows that pattern.",
+      "theology": [
+        {
+          "id": "worship",
+          "note": "The letter's theology begins as praise. Election, redemption, and the gift of the Spirit are first of all reasons to bless God, and the refrain ‘to the praise of His glory’ (verses 6, 12, 14) keeps the whole sentence pointed toward worship."
+        },
+        {
+          "id": "union",
+          "note": "Every blessing is ‘in Christ’. The phrase ‘in Christ’ or ‘in him’ occurs about eleven times in verses 3 to 14; nothing is given to believers apart from their union with him."
+        }
+      ],
+      "refs": ["2 Corinthians 1:3", "1 Peter 1:3", "Psalm 72:18-19", "Ephesians 2:6", "Ephesians 6:12"]
+    },
+    {
+      "v": "4",
+      "context": "The first blessing is election. God chose us in Christ before the world was founded, with a purpose: that we be holy and blameless before him. The choice precedes history, and its goal is a holy people.",
+      "grammar": "Kathōs, ‘just as’, ties election to verse 3 as its explanation: he has blessed us inasmuch as he chose us. Exelexato is aorist middle of eklegomai: ‘he chose for himself’, the verb used in the Septuagint of God's choosing Israel (Deuteronomy 7:6-7, 14:2). En autō, ‘in him’, locates the choice in Christ. Pro katabolēs kosmou, ‘before the foundation of the world’, a phrase also used in John 17:24 and 1 Peter 1:20. Einai hēmas hagious kai amōmous, ‘for us to be holy and blameless’, is an infinitive of purpose; amōmos, ‘without blemish’, is the Septuagint's word for sacrificial animals fit to offer (Exodus 29:1). En agapē, ‘in love’, at the end of the verse can be read with what precedes, ‘holy and blameless before him in love’, or with verse 5, ‘in love he predestined us’. The Greek has no punctuation, and commentators and editions divide; the BSB prints it at the end of verse 4 but leads it into verse 5.",
+      "words": ["G2531", "G1586", "G2602", "G2889", "G0040G", "G0299", "G2714", "G0026"],
+      "theology": [
+        {
+          "id": "election",
+          "note": "God's choice of his people is in Christ and before creation. The Reformed tradition (Augustine, Calvin's Institutes 3.21-24, the Synod of Dort, 1618-19) reads it as God's unconditional choice of particular persons; the Arminian and Wesleyan traditions read it as choice grounded in God's foreknowledge of faith; Karl Barth (Church Dogmatics II/2, 1942) read Christ himself as the elect one, with humanity chosen in him; and corporate readings, argued by William Klein (The New Chosen People, 1990), stress that ‘us’ is plural, a people chosen in its head. All agree that the verse grounds salvation in God's initiative."
+        },
+        {
+          "id": "holiness",
+          "note": "Election has a moral goal: to be holy and blameless before God. Paul gives no ground for the idea that being chosen makes holiness unnecessary; the choice aims at it."
+        }
+      ],
+      "refs": ["Deuteronomy 7:6-8", "John 17:24", "1 Peter 1:1-2", "Colossians 1:22", "2 Thessalonians 2:13"]
+    },
+    {
+      "v": "5-6",
+      "context": "The second blessing explains the first: God predestined us to be adopted as his sons through Jesus Christ, because he was pleased to do so, and all of it to the praise of his glorious grace, which he gave freely in the Beloved. The first refrain of praise closes the section on the Father's purpose.",
+      "grammar": "Proorisas, ‘having predestined’, is an aorist participle subordinate to ‘he chose’ in verse 4, explaining the manner or ground of the choice. Proorizō, ‘to decide beforehand, mark out in advance’, occurs only six times in the New Testament (Acts 4:28, Romans 8:29-30, 1 Corinthians 2:7, Ephesians 1:5 and 11). Its object here is not only persons but a destiny: eis huiothesian, ‘for adoption as sons’. Kata tēn eudokian tou thelēmatos autou, ‘according to the good pleasure of his will’: eudokia is delight, favor, the word used when the angels sing of God's favor (Luke 2:14). In verse 6, echaritōsen, ‘he graced’, from charis, occurs elsewhere in the New Testament only in Luke 1:28 (Mary as ‘favored one’). En tō ēgapēmenō, ‘in the Beloved’, is a perfect passive participle, ‘the one who has been loved’, used as a title for Christ.",
+      "words": ["G4309", "G5206", "G2107", "G2307", "G1868", "G1391", "G5485", "G5487", "G0025"],
+      "history": "Huiothesia, ‘adoption as sons’, appears in the New Testament only in Paul (Romans 8:15, 8:23, 9:4, Galatians 4:5, Ephesians 1:5). Adoption was not a Jewish legal institution, but it was common in Roman society, especially among the elite, where adult men were adopted to carry on a family name and inheritance; Augustus was adopted by Julius Caesar in his will, and Augustus adopted Tiberius in AD 4. The adopted son received a new father, a new name, and full rights of inheritance, and his old debts were cancelled. The title ‘the Beloved’ echoes the Septuagint, which calls Israel ho ēgapēmenos, ‘the beloved one’ (Deuteronomy 32:15, 33:5, 33:26, rendering the Hebrew Jeshurun), and the voice at Jesus's baptism (Mark 1:11).",
+      "theology": [
+        {
+          "id": "election",
+          "note": "Predestination here is to a family relationship: adoption through Jesus Christ. The contested questions about predestination (see verse 4) should not hide what the verse names as its content and motive: sonship, and God's delight."
+        },
+        {
+          "id": "family",
+          "note": "Believers are adopted children, brought into God's household through the Son who is the Beloved by nature. The Father's love for the Son is the love into which the adopted are received."
+        }
+      ],
+      "refs": ["Romans 8:15-17", "Romans 8:29-30", "Galatians 4:4-7", "Mark 1:11", "Colossians 1:13"]
+    },
+    {
+      "v": "7-8",
+      "context": "The focus moves from the Father's purpose to the Son's work. In him we have redemption through his blood, the forgiveness of trespasses, according to the riches of God's grace, which he poured out on us.",
+      "grammar": "Echomen, ‘we have’, is present tense: redemption is a present possession, though verse 14 will speak of a redemption still to come. Apolutrōsis, ‘redemption’, from lutron, a ransom price, means release by payment. Dia tou haimatos autou, ‘through his blood’, names the price: his sacrificial death. Tēn aphesin tōn paraptōmatōn, ‘the forgiveness of trespasses’, stands in apposition to redemption, defining it; aphesis is ‘release, cancellation’, the word the Septuagint uses for the Jubilee release (Leviticus 25:10). Paraptōma, ‘trespass, false step’, is a stepping aside from the right path. Kata to ploutos, ‘according to the riches’: Ephesians speaks of God's ‘riches’ five times. Hēs eperisseusen, ‘which he lavished’, uses perisseuō, ‘to overflow’. The phrase en pasē sophia kai phronēsei, ‘in all wisdom and insight’, may describe how God lavished grace (wisely) or, joined to verse 9, the wisdom he gives believers to understand his plan.",
+      "words": ["G2192", "G0629", "G0129G", "G0859", "G3900", "G4149", "G4052", "G4678", "G5428"],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "Redemption is ‘through his blood’: Christ's death is the price of release, and forgiveness is what it secures. Colossians 1:14 has almost the same words, one of many close parallels between the two letters."
+        },
+        {
+          "id": "salvation",
+          "note": "Forgiveness is the measure of grace's wealth, not of human worth. Paul describes grace as overflowing, lavished, not rationed to the deserving."
+        }
+      ],
+      "refs": ["Colossians 1:14", "Romans 3:24-25", "1 Peter 1:18-19", "Hebrews 9:12-14", "Mark 10:45"]
+    },
+    {
+      "v": "9-10",
+      "context": "God has revealed the mystery of his will: his plan, formed in Christ, for the fullness of the times, to gather up all things in heaven and on earth in Christ. This is the center of the sentence and the thesis of the letter, which will show the plan at work in reconciling Jews and Gentiles (chapter 2) and in the church (chapter 3).",
+      "grammar": "Gnōrisas, ‘having made known’, is an aorist participle linked to ‘lavished’ in verse 8. To mustērion tou thelēmatos autou, ‘the mystery of his will’: in Paul a mystery is God's plan once hidden and now revealed, not a puzzle. Hēn proetheto en autō, ‘which he purposed in him’, uses protithēmi, ‘to set before oneself’. Eis oikonomian, ‘for an administration’: oikonomia was the management of a household (oikos), a steward's arrangement; the King James Version's ‘dispensation’ gave dispensationalism its name. Tou plērōmatos tōn kairōn, ‘of the fullness of the times’, when the appointed seasons reach their completion. Anakephalaiōsasthai ta panta en tō Christō, ‘to sum up all things in Christ’: anakephalaioō is a rare verb meaning to bring together under one heading, as a speaker sums up an argument; Paul uses it in Romans 13:9 of the commandments being summed up in one. It is built on kephalaion, ‘main point, sum’, not directly on kephalē, ‘head’, though the echo of Christ as head in verse 22 is hard to miss.",
+      "words": ["G1107", "G3466", "G2307", "G2107", "G4388", "G3622", "G4138", "G2540", "G0346"],
+      "history": "The word mustērion translates the Aramaic raz in the Greek version of Daniel 2 (verses 18, 19, 27 to 30), where God reveals to Daniel the secret of Nebuchadnezzar's dream about the kingdoms of history. The Dead Sea Scrolls often speak of the raz nihyeh, ‘the mystery that is to be’, God's hidden plan for history (for example 1QS 11:3-4). Irenaeus of Lyons, about AD 180, made the verb of verse 10 the center of his theology of recapitulation (Against Heresies 3.18.1, 5.21.1): Christ sums up and renews in himself the whole human story that went wrong in Adam.",
+      "theology": [
+        {
+          "id": "new-creation",
+          "note": "God's purpose is cosmic: all things in heaven and on earth brought together in Christ. Salvation in Ephesians is not only the rescue of individuals but the reordering of a divided creation under its rightful head."
+        },
+        {
+          "id": "revelation",
+          "note": "The plan was hidden and is now made known. The gospel is not human speculation about God's purposes but his disclosure of them, which is why Paul can speak of it with certainty (compare 3:3-6)."
+        }
+      ],
+      "refs": ["Colossians 1:19-20", "Galatians 4:4", "Romans 16:25-26", "Ephesians 3:3-10", "Daniel 2:28"]
+    },
+    {
+      "v": "11-12",
+      "context": "The third movement begins with ‘in him’ again. In Christ ‘we’ were claimed as God's portion, predestined by the one who works all things according to his will, so that we who first hoped in Christ might be to the praise of his glory. The second refrain of praise closes it.",
+      "grammar": "Eklērōthēmen is aorist passive of klēroō, ‘to cast lots, to allot’. It can mean ‘we obtained an inheritance’ (King James Version) or, more likely given the passive, ‘we were made a heritage’, claimed as God's own portion, as Israel was the LORD's portion in Deuteronomy 32:9. Prooristhentes, ‘having been predestined’, repeats verse 5. Kata prothesin tou ta panta energountos kata tēn boulēn tou thelēmatos autou, ‘according to the purpose of the one who works all things according to the counsel of his will’, stacks three words for God's intention (prothesis, ‘purpose’; boulē, ‘counsel’; thelēma, ‘will’), a deliberate accumulation. Tous proēlpikotas en tō Christō, ‘who had first hoped in Christ’, uses a perfect participle with pro-, ‘beforehand’. Interpreters divide over who these are: Jewish believers who hoped in the Messiah before the Gentiles (so the ‘we’ of verses 11 and 12 contrasts with the ‘you’ of verse 13), the first generation of believers, or all believers who hope in Christ before his return.",
+      "words": ["G2820", "G4309", "G4286", "G1754", "G1012", "G2307", "G1868", "G1391", "G4276"],
+      "theology": [
+        {
+          "id": "sovereignty",
+          "note": "God ‘works out everything by the counsel of His will’. The phrase is among Scripture's broadest statements of God's rule over history. Christians differ on how it relates to human choice (see verse 4), but Paul says it to assure believers that God's purpose for them is not at the mercy of events."
+        },
+        {
+          "id": "israel",
+          "note": "If ‘we who first hoped’ are Jewish believers, Paul honors Israel's priority in the promise before announcing the Gentiles' inclusion in verse 13. The one people of God has an order of history within it, as Romans 1:16 says: to the Jew first."
+        }
+      ],
+      "refs": ["Deuteronomy 32:9", "Romans 8:28", "Isaiah 46:10", "Romans 1:16", "Acts 4:27-28"]
+    },
+    {
+      "v": "13-14",
+      "context": "Now ‘you’, the Gentile readers, come in. They heard the gospel, believed, and were sealed with the promised Holy Spirit, who is the down payment of the inheritance until God's own possession is fully redeemed. The third refrain closes the sentence.",
+      "grammar": "Kai humeis, ‘you also’, marks the Gentiles' entry into the blessings of verses 3 to 12. Akousantes and pisteusantes, ‘having heard’ and ‘having believed’, are aorist participles; esphragisthēte, ‘you were sealed’, is the main verb. The participles describe what happened at the time of sealing, and the grammar does not require a gap between believing and receiving the Spirit. Tō pneumati tēs epangelias tō hagiō, literally ‘with the Spirit of the promise, the Holy one’, names the Spirit the prophets promised. In verse 14, arrabōn, ‘pledge, down payment’, is a Semitic loanword (Hebrew eravon, the pledge Judah gave Tamar in Genesis 38:17-20); in Greek business papyri it is the first installment that binds the buyer to pay the rest. Eis apolutrōsin tēs peripoiēseōs, ‘until the redemption of the possession’: peripoiēsis, ‘acquisition, possession’, echoes the Septuagint's language for Israel as God's treasured people (Malachi 3:17; compare Exodus 19:5).",
+      "words": ["G0191", "G3056", "G0225", "G2098", "G4991", "G4100", "G4972", "G1860", "G0728", "G2817", "G0629", "G4047"],
+      "text": "The relative pronoun that begins verse 14 is neuter (ho, agreeing with pneuma, ‘Spirit’) in many early manuscripts and in the Nestle-Aland and SBL editions, and masculine (hos, agreeing with arrabōn or treating the Spirit as a person) in others and in the Textus Receptus. The BSB's ‘who’ follows the sense rather than the gender of the Greek word.",
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "The Spirit is both seal (God's mark of ownership and protection) and down payment (the first installment of the life to come). His presence now guarantees the inheritance later. Circumcision had been called a seal (Romans 4:11), and second-century writers such as the Shepherd of Hermas (Similitudes 9.16) spoke of baptism as ‘the seal’; here the seal is the Spirit himself."
+        },
+        {
+          "id": "hope",
+          "note": "Redemption is already possessed (verse 7) and still awaited (verse 14). The Spirit's presence stands between the two as God's pledge that what he has begun he will finish."
+        },
+        {
+          "id": "trinity",
+          "note": "The sentence moves from the Father who chooses (verses 3 to 6), through the Son who redeems (7 to 12), to the Spirit who seals (13 and 14), each section ending in praise of God's glory. The Trinitarian shape is not a formula but the structure of the praise."
+        }
+      ],
+      "refs": ["2 Corinthians 1:21-22", "2 Corinthians 5:5", "Ephesians 4:30", "Romans 8:23", "1 Peter 2:9"]
+    },
+    {
+      "v": "15-16",
+      "context": "The blessing gives way to thanksgiving and prayer. Because of all that God has done (‘for this reason’), and because Paul has heard of their faith and their love for all the saints, he gives thanks for them without ceasing and prays for them.",
+      "grammar": "Dia touto, ‘because of this’, refers back to the whole of verses 3 to 14. Akousas, ‘having heard’, implies Paul knew of them by report, which fits a letter to churches he had not all visited or had not seen for years. Tēn kath' humas pistin, ‘the faith among you’, uses kata with the accusative for ‘the faith that exists among you’. Ou pauomai eucharistōn, ‘I do not stop giving thanks’, uses a present participle with pauomai, ‘to cease’. Mneian poioumenos epi tōn proseuchōn mou, ‘making mention in my prayers’, is a stock phrase of Paul's prayer reports (Romans 1:9, 1 Thessalonians 1:2, Philemon 4).",
+      "words": ["G0191", "G4102G", "G2962G", "G0026", "G0040H", "G3973", "G2168", "G3417", "G4335"],
+      "text": "Some of the oldest manuscripts, including P46 and Vaticanus, lack ‘your love’, reading ‘your faith in the Lord Jesus and toward all the saints’. Most editions print ‘love’, reasoning that a copyist's eye skipped between the two identical articles (tēn... tēn) that stood around it, and because faith ‘toward all the saints’ is an odd phrase. Westcott and Hort omitted it. The same pairing of faith in Christ and love for all the saints appears in Colossians 1:4.",
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "Paul's teaching turns to prayer, and his prayer is shaped by his teaching. He prays not for circumstances but that believers would understand what they already have in Christ."
+        }
+      ],
+      "refs": ["Colossians 1:3-4", "Philemon 1:4-5", "1 Thessalonians 1:2-3", "Romans 1:8-9"]
+    },
+    {
+      "v": "17",
+      "context": "The content of the prayer begins: that God would give the readers a spirit of wisdom and revelation in knowing him. The request is for knowledge of God himself, not for information alone.",
+      "grammar": "Ho theos tou kuriou hēmōn Iēsou Christou, ‘the God of our Lord Jesus Christ’, speaks of the Father as the God of the incarnate Son, as Jesus himself said ‘my God and your God’ (John 20:17). Ho patēr tēs doxēs, ‘the Father of glory’, found only here, may mean ‘the glorious Father’ (as the BSB) or ‘the Father to whom glory belongs’. Dōē, ‘may give’, is a subjunctive (some read it as an optative, a wish). Pneuma sophias kai apokalupseōs, ‘a spirit of wisdom and revelation’, lacks the article, so it could mean a human disposition of wisdom; most commentators think it refers to the Holy Spirit who gives wisdom, recalling Isaiah 11:2, where the Spirit of the LORD rests on the coming king as the Spirit of wisdom and understanding. En epignōsei autou, ‘in the knowledge of him’: epignōsis is personal, relational knowledge.",
+      "words": ["G2316", "G3962", "G1391", "G1325", "G4151G", "G4678", "G0602", "G1922"],
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "The Spirit who sealed believers (verse 13) also gives wisdom and revelation. Knowing God is not only a matter of study but of the Spirit's illumination, which Paul asks for on behalf of others."
+        },
+        {
+          "id": "wisdom",
+          "note": "The wisdom Paul prays for is directed at knowing God. Biblical wisdom begins and ends in relationship to him (Proverbs 1:7), not in cleverness about the world."
+        }
+      ],
+      "refs": ["Isaiah 11:2", "Colossians 1:9-10", "1 Corinthians 2:10-12", "John 20:17", "Proverbs 2:6"]
+    },
+    {
+      "v": "18",
+      "context": "Paul asks that the eyes of their hearts be enlightened so that they may know three things: the hope of God's calling, the riches of his glorious inheritance in the saints, and (verse 19) the greatness of his power.",
+      "grammar": "Pephōtismenous tous ophthalmous tēs kardias humōn, ‘the eyes of your heart having been enlightened’, is a perfect passive participle in the accusative, loosely attached to the sentence: either a further request or a description of what has already happened. In biblical usage the ‘heart’ is the center of thought and will, not only emotion, so ‘eyes of the heart’ is inner perception. Eidenai, ‘to know’, introduces three indirect questions with tis, ‘what’: what is the hope, what the riches, what the greatness. Tēs klēronomias autou en tois hagiois, ‘his inheritance in the saints’, most naturally means God's inheritance, that is, his people as his treasured possession (compare verse 11). Some read en tois hagiois as ‘among the holy ones’, the angels, as the Dead Sea Scrolls sometimes use the term (1QS 11:7-8), so that believers share an inheritance with the heavenly beings.",
+      "words": ["G5461", "G3788", "G2588", "G6063", "G1680", "G2821", "G4149", "G2817", "G0040H"],
+      "text": "The Textus Receptus reads ‘the eyes of your understanding’ (dianoias) instead of ‘the eyes of your heart’ (kardias), which is why the King James Version has ‘understanding’. The earliest and most manuscripts read ‘heart’. The phrase ‘eyes of the heart’ appears again in 1 Clement 36 and 59, written about AD 96. Later, ‘enlightenment’ (phōtismos) became a name for baptism, as in Justin Martyr's First Apology 61 (compare Hebrews 6:4).",
+      "theology": [
+        {
+          "id": "hope",
+          "note": "The hope of God's calling is not a wish but a certainty grounded in what God has called his people to. Paul prays that they would see it, since hope is weakened more by forgetting than by doubt."
+        },
+        {
+          "id": "church",
+          "note": "If ‘his inheritance in the saints’ means God's inheritance, then the church is what God counts as his treasure, as Israel was his portion (Deuteronomy 32:9). The people of God are valuable to God, not only blessed by him."
+        }
+      ],
+      "refs": ["Deuteronomy 32:9", "2 Corinthians 4:6", "Hebrews 6:4", "Colossians 1:12", "Psalm 119:18"]
+    },
+    {
+      "v": "19-20",
+      "context": "The third thing Paul prays they will know is the immeasurable greatness of God's power toward believers. He defines it by its greatest display: the power God exerted when he raised Christ from the dead and seated him at his right hand in the heavenly realms.",
+      "grammar": "To huperballon megethos tēs dunameōs autou, ‘the surpassing greatness of his power’: huperballō, ‘to throw beyond’, means to exceed all measure. Verse 19 then piles four words for power: dunamis, ‘power’, energeia, ‘working’, kratos, ‘might’, and ischus, ‘strength’. The heaping is deliberate, not redundant: human language strains to describe God's power. Eis hēmas tous pisteuontas, ‘toward us who believe’, is present tense: the power is at work now. In verse 20, enērgēsen en tō Christō, ‘he exercised in Christ’, then two aorist participles: egeiras, ‘having raised’, and kathisas, ‘having seated’. Resurrection and enthronement are one act of God's power.",
+      "words": ["G5235", "G3174", "G1411", "G4100", "G1753", "G2904", "G2479", "G1754", "G1453", "G2523", "G1188", "G2032"],
+      "ot": [
+        {
+          "ref": "Psalm 110:1",
+          "note": "‘Seated him at his right hand’ alludes to Psalm 110:1, where the LORD says to David's lord, ‘sit at my right hand until I make your enemies your footstool’. The Septuagint (Psalm 109:1) has kathou ek dexiōn mou. In the psalm the king is enthroned beside God as his vice-regent; Paul reads the resurrection and ascension as that enthronement, as Peter does in Acts 2:34-36 and Hebrews does throughout (1:3, 1:13, 8:1). Verse 22 will add Psalm 8, the same pairing Paul makes in 1 Corinthians 15:25-27."
+        }
+      ],
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "The resurrection is the measure of God's power toward believers. The same power that raised Christ is at work in those who believe, which Ephesians 2:5-6 will apply to their being raised and seated with him."
+        },
+        {
+          "id": "exaltation",
+          "note": "Christ was not only raised but enthroned at God's right hand. The resurrection is not the end of the story but the beginning of his reign."
+        }
+      ],
+      "refs": ["Psalm 110:1", "Acts 2:32-36", "Ephesians 2:5-6", "Philippians 3:10", "Colossians 3:1"]
+    },
+    {
+      "v": "21",
+      "context": "Christ is seated far above every rule, authority, power, and dominion, and every name that is named, in this age and in the age to come. For readers who lived among powers they feared, this is the practical meaning of the resurrection.",
+      "grammar": "Huperanō pasēs archēs kai exousias kai dunameōs kai kuriotētos, ‘far above every rule and authority and power and lordship’: the four nouns are terms for spiritual powers in Jewish and early Christian writing (compare Colossians 1:16, where thrones are added, and Romans 8:38). Paul does not rank them or describe them; he places Christ above all of them. Pantos onomatos onomazomenou, ‘every name that is named’, may refer to the practice of invoking powers by name. Ou monon en tō aiōni toutō alla kai en tō mellonti, ‘not only in this age but also in the one to come’, uses the Jewish scheme of two ages (compare 4 Ezra 7:50, which says the Most High made not one age but two).",
+      "words": ["G5231", "G0746", "G1849", "G1411", "G2963", "G3686", "G3687", "G0165G", "G3195"],
+      "history": "Ephesus had a reputation for magic. Acts 19:19 records that new believers there burned books of magic worth fifty thousand pieces of silver, and ‘Ephesian letters’ (Ephesia grammata) was a name for magical formulas in the ancient world. The Greek magical papyri from Egypt invoke gods, angels, and powers by long lists of names to gain their help. Clinton Arnold (Ephesians: Power and Magic, 1989) argued that this background explains the letter's emphasis on Christ's supremacy over the powers. 1 Enoch 61:10 lists angels of power and of principalities among the heavenly host.",
+      "theology": [
+        {
+          "id": "angels",
+          "note": "The powers are real in Paul's view (6:12 calls them rulers and authorities in the heavenly realms), but they are subject to Christ. Believers need not fear or placate them, since the one they belong to reigns over them all."
+        },
+        {
+          "id": "exaltation",
+          "note": "Christ's authority is universal and permanent, spanning this age and the next. There is no name, invoked or feared, that stands above his."
+        }
+      ],
+      "refs": ["Colossians 1:16", "Colossians 2:15", "Philippians 2:9-11", "Ephesians 6:12", "Acts 19:18-20"]
+    },
+    {
+      "v": "22",
+      "context": "God has put everything under Christ's feet, as Psalm 8 says, and given him as head over all things to the church. The chapter turns from the cosmos to the church, for whose sake Christ rules.",
+      "grammar": "Panta hupetaxen hupo tous podas autou, ‘he put all things under his feet’, is from Psalm 8:6 (8:7 in Hebrew and Greek), in the same form Paul uses in 1 Corinthians 15:27. Kai auton edōken kephalēn huper panta tē ekklēsia, ‘and him he gave as head over all things to the church’: auton, ‘him’, stands first for emphasis; kephalē, ‘head’, is the predicate; tē ekklēsia, ‘to the church’, is a dative of advantage, for the church's benefit. Whether kephalē in Paul means ‘source’ (argued by Stephen Bedale in 1954 and others) or ‘authority, ruler’ (argued by Wayne Grudem and others) is a long-running debate; here, beside ‘under his feet’ and ‘over all things’, the sense of rule is plain, while 4:15-16 shows the head also supplying the body's growth.",
+      "words": ["G5293", "G4228", "G1325", "G2776", "G1577"],
+      "ot": [
+        {
+          "ref": "Psalm 8:6",
+          "note": "The psalm praises God for giving humanity, frail as it is, rule over his works, putting all things under its feet, a poetic echo of Genesis 1:26-28. The Septuagint reads panta hupetaxas hupokatō tōn podōn autou, ‘you put all things beneath his feet’; Paul turns the second person into the third, ‘he put’, as in 1 Corinthians 15:27, and applies the psalm to Christ as the true man in whom humanity's lost rule is restored. Hebrews 2:6-9 makes the same move, adding that we do not yet see everything subject to him, but we see Jesus."
+        }
+      ],
+      "theology": [
+        {
+          "id": "church",
+          "note": "Christ's rule over all things is ‘for the church’. His lordship over the cosmos serves his people, and the church lives under a head who governs everything that could threaten it."
+        }
+      ],
+      "refs": ["Psalm 8:6", "1 Corinthians 15:27", "Hebrews 2:6-9", "Ephesians 4:15-16", "Colossians 1:18"]
+    },
+    {
+      "v": "23",
+      "context": "The church is Christ's body, the fullness of him who fills all in all. The chapter ends on the church's astonishing identity, which chapters 2 to 4 will explain: a community of reconciled Jews and Gentiles in whom Christ's presence fills the world.",
+      "grammar": "Hētis estin to sōma autou, ‘which is his body’: hētis, a qualitative relative, ‘which indeed is’. To plērōma tou ta panta en pasin plēroumenou is among the most debated phrases in the letter. Plērōma, ‘fullness’, can be active (that which fills) or passive (that which is filled); plēroumenou can be middle with active meaning (‘who fills’) or passive (‘who is being filled’). The main readings are: the church is filled by Christ, who fills all things (most modern translations); the church completes Christ, as a body completes a head, a view John Chrysostom proposed in his homilies on Ephesians; or ‘fullness’ refers back to Christ himself (compare Colossians 1:19, 2:9). Ta panta en pasin, ‘all things in all’, echoes 1 Corinthians 15:28 and describes Christ's total presence in the renewed creation.",
+      "words": ["G3748", "G4983", "G4138", "G3956", "G4137"],
+      "history": "Plērōma became a technical term in second-century Valentinian Gnosticism for the divine realm of emanations from the unknown God, as Irenaeus reports (Against Heresies 1.1-2). Some earlier twentieth-century scholars read Ephesians and Colossians against a Gnostic background, but most now judge that the developed Gnostic systems came later and borrowed the term from Paul, and that the letter's usage draws on the Old Testament's language of God filling heaven and earth (Jeremiah 23:24) and the temple with his glory.",
+      "theology": [
+        {
+          "id": "church",
+          "note": "The church is Christ's body, the place where his fullness dwells. It is not an optional association of individual believers but the community in which the risen Christ is present in the world."
+        },
+        {
+          "id": "temple",
+          "note": "The language of filling recalls God's glory filling the tabernacle and temple (Exodus 40:34, 1 Kings 8:11). The church, filled with Christ, is the dwelling of God that 2:21-22 will call a holy temple in the Lord."
+        }
+      ],
+      "refs": ["Colossians 1:18-19", "Colossians 2:9-10", "Ephesians 4:10-13", "Jeremiah 23:24", "1 Corinthians 12:12-27"]
+    }
+  ]
+}
