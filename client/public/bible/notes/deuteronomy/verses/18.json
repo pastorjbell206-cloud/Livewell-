@@ -1,0 +1,226 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "After the judges and the king (chapters 16 and 17), Moses turns to the priests. The whole tribe of Levi receives no share of the land; it lives from what Israel offers to the LORD. The verse states the principle that verses 3 to 8 then apply.",
+      "grammar": "The subject is a chain in apposition: lakkohanim halviyyim kol shevet Levi, ‘to the priests, the Levites, all the tribe of Levi’. Deuteronomy regularly speaks of ‘the Levitical priests’ and treats the whole tribe as eligible for priestly service, while Leviticus and Numbers distinguish priests descended from Aaron from the other Levites who assist them. Julius Wellhausen took the difference as evidence that Deuteronomy reflects an earlier stage before the Levites were demoted (Ezekiel 44:10-16); traditional interpreters read Deuteronomy's phrase as a shorthand that does not deny the distinction made elsewhere. Ishe YHWH, ‘the fire offerings of the LORD’, has traditionally been connected with esh, ‘fire’; some scholars, Jacob Milgrom among them, render it ‘food gifts’. The last clause, venachalato yokhelun, ‘and his inheritance they shall eat’, is ambiguous: ‘his’ may be the LORD's (the offerings that belong to him) or Levi's.",
+      "words": ["H3548", "H3881", "H7626H", "H2506A", "H5159", "H0801"],
+      "theology": [
+        {
+          "id": "offices",
+          "note": "The priesthood is set apart from the ordinary economy of land and inheritance. Those who serve at the altar are meant to depend on God and on the worship of his people, not on estates of their own."
+        }
+      ],
+      "refs": ["Numbers 18:20-24", "Deuteronomy 10:8-9", "Joshua 13:14", "Ezekiel 44:10-16"]
+    },
+    {
+      "v": "2",
+      "context": "The Levites' lack of land is restated and turned into a privilege: the LORD himself is their inheritance, as he promised. The promise referred to is Numbers 18:20, spoken to Aaron, and Deuteronomy 10:9.",
+      "grammar": "YHWH hu nachalato, ‘the LORD, he is his inheritance’, uses the pronoun hu as a copula with emphasis: the LORD and no allotment of land. Nachalah normally means a family's allotted land, held in trust for later generations; to call God one's nachalah is to say that he is the lasting possession that a field would otherwise be. The singular ‘his’ treats the tribe as one person.",
+      "words": ["H5159", "H1931", "H0251I"],
+      "theology": [
+        {
+          "id": "worship",
+          "note": "The phrase that describes the Levites' status becomes, in the Psalms, a prayer any believer can make. Psalm 16:5 and 73:26 call the LORD the speaker's portion, taking the Levites' privilege as a picture of what God is to every faithful person."
+        }
+      ],
+      "refs": ["Numbers 18:20", "Psalm 16:5-6", "Psalm 73:26", "Lamentations 3:24", "Ezekiel 44:28"]
+    },
+    {
+      "v": "3",
+      "context": "The priests' share of the sacrifices brought by the people: the shoulder, the jowls, and the stomach of a bull or sheep. This is their fixed right, not a favor.",
+      "grammar": "Mishpat hakkohanim, ‘the right (or due) of the priests’. Mishpat, usually ‘judgment’ or ‘ordinance’, here means an established entitlement. The same phrase appears in 1 Samuel 2:13, where the sons of Eli abuse ‘the custom of the priests’ by taking meat with a three-pronged fork before the fat was burned. Lechayayim, ‘the two cheeks’, is a dual form; qevah is the fourth stomach of a ruminant (the abomasum).",
+      "words": ["H4941J", "H2220", "H3895H", "H6896"],
+      "history": "Leviticus 7:31-34 gives the priest the breast and the right thigh of a peace offering, a different set of portions. The rabbis reconciled the two laws by reading Deuteronomy 18:3 as applying to ordinary, non-sacrificial slaughter, which Deuteronomy 12 permits: from every such animal the priest received the shoulder, cheeks, and maw, a rule the Mishnah applies inside and outside the land of Israel (m. Chullin 10:1). Critical scholars more often see two traditions of priestly dues from different periods or places.",
+      "refs": ["Leviticus 7:31-34", "1 Samuel 2:13-16", "Numbers 18:8-19"]
+    },
+    {
+      "v": "4-5",
+      "context": "Besides meat, the priests receive the firstfruits of grain, wine, oil, and wool. The reason follows: God chose Levi from all the tribes to stand and serve in his name for all time.",
+      "grammar": "Reshit, ‘first’ or ‘firstfruits’, is the word of Genesis 1:1 (bereshit): the first portion of a harvest stands for the whole and is given to God. The first shearing of wool (reshit gez) is mentioned only here. In verse 5 the object is put first, ki vo bachar, ‘for him the LORD has chosen’, stressing that the choice is God's. La'amod leshare, ‘to stand to minister’, pictures the servant who stands before a master (1 Kings 10:8), the regular Hebrew image for serving a king or God.",
+      "words": ["H7225G", "H1488", "H0977", "H5975G", "H8334"],
+      "theology": [
+        {
+          "id": "election",
+          "note": "God's choice of Levi from all the tribes is an election to service. Deuteronomy uses the same verb, bachar, for God's choice of Israel (7:6) and of the place of worship (12:5): being chosen means being set apart for a task."
+        }
+      ],
+      "refs": ["Numbers 18:12-13", "Deuteronomy 10:8", "Deuteronomy 7:6", "1 Chronicles 23:13"]
+    },
+    {
+      "v": "6-7",
+      "context": "A Levite living in any town who comes willingly to the central sanctuary must be allowed to serve there like the Levites already in attendance. The law protects country Levites from being shut out when worship is centralized at the place God chooses (Deuteronomy 12).",
+      "grammar": "The Levite is one who gar sham, ‘is sojourning there’, using the verb gur for living as a resident without land of one's own, the verb from which ger (sojourner) comes. It is the same word used of the young Levite in Judges 17:7-9 who wanders looking for a place to live. Bekhol avvat nafsho, ‘with all the desire of his soul’, stresses that he comes by his own choice; avvah is strong desire. Hammaqom asher yivchar YHWH, ‘the place the LORD will choose’, is Deuteronomy's recurring formula for the one sanctuary, never named in the book.",
+      "words": ["H1481A", "H0185", "H5315L", "H4725", "H0977"],
+      "history": "When Josiah centralized worship in Jerusalem around 622 BC, 2 Kings 23:9 records that the priests of the high places did not come up to the altar in Jerusalem, though they ate unleavened bread among their fellow priests. Many scholars since Wellhausen have read that verse as a sign that this law was not fully carried out; others think those priests were excluded because they had served at illegitimate shrines, which Ezekiel 44:10-14 also suggests.",
+      "refs": ["Deuteronomy 12:5", "Judges 17:7-9", "2 Kings 23:8-9", "Ezekiel 44:10-14"]
+    },
+    {
+      "v": "8",
+      "context": "The newly arrived Levite eats an equal share with the others, whatever private income he may have. The law guards against a two-tier priesthood in which the incomer is treated as a lesser servant.",
+      "grammar": "Chelek kecheleq, ‘portion like portion’, is an idiom for equal shares. The final phrase, levad mimkarav al haavot, literally ‘besides his sales upon the fathers’, is one of the most obscure in Deuteronomy. The BSB, with most modern translations, takes it as money from selling family property, though Levites had no tribal land; others suggest income from family priestly arrangements or something sold according to ancestral right. The exact sense is uncertain, but the point is clear: other income does not reduce his share.",
+      "words": ["H2506A", "H4465", "H0001G"],
+      "theology": [
+        {
+          "id": "justice-poor",
+          "note": "Even among the priests, the law insists on fair treatment of the outsider who comes in. The newcomer is not to be exploited by those already established."
+        }
+      ],
+      "refs": ["Leviticus 25:32-34", "Jeremiah 32:6-9", "Numbers 35:1-8"]
+    },
+    {
+      "v": "9",
+      "context": "The second half of the chapter begins. Moses warns Israel not to learn the detestable practices of the nations in the land. The practices are listed in verses 10 and 11, and the alternative, a prophet, is given in verse 15.",
+      "grammar": "Lo tilmad laasot, ‘you shall not learn to do’, uses the plain form (Qal) of lamad, ‘to learn’. Deuteronomy repeatedly calls Israel to learn to fear the LORD (4:10; 14:23; 17:19); here the same verb names the wrong kind of education. Toevot, ‘abominations’, is Deuteronomy's strongest word for what God finds repugnant, used for idolatry (7:25), unclean food (14:3), and dishonest weights (25:16).",
+      "words": ["H3925H", "H8441", "H1471A"],
+      "theology": [
+        {
+          "id": "idolatry",
+          "note": "Idolatry is presented as something learned by imitation. Israel will not stumble into it by accident but by adopting the habits of its neighbors."
+        }
+      ],
+      "refs": ["Deuteronomy 12:29-31", "Leviticus 18:24-30", "2 Kings 17:15-17"]
+    },
+    {
+      "v": "10",
+      "context": "The list of forbidden practices begins with the most horrifying, making a son or daughter pass through the fire, and then names four kinds of divination and sorcery. The effect is to set child sacrifice and fortune-telling in one family: both try to secure the future from powers other than the LORD.",
+      "grammar": "Every practice is named by a participle, describing a person by what he habitually does: maavir (one who makes pass through), qosem qesamim (one who divines divinations, a cognate construction), meonen (a soothsayer, perhaps from anan, ‘cloud’, though the derivation is uncertain), menachesh (an augur, the verb used of Joseph's silver cup in Genesis 44:5), and mekhashef (a sorcerer). Mekhashef is related to Akkadian kashapu, ‘to bewitch’, the standard term for hostile magic in Mesopotamia; its feminine appears in Exodus 22:18.",
+      "words": ["H5674A", "H7080", "H7081", "H6049B", "H5172", "H3784"],
+      "history": "Whether ‘making a child pass through the fire’ meant killing the child or a dedication rite in which the child survived is debated. Moshe Weinfeld argued for a dedication rite in a 1972 article in Ugarit-Forschungen; George Heider (The Cult of Molek, 1985) and John Day (Molech, 1989) argued for actual sacrifice, pointing to Deuteronomy 12:31, which speaks of burning sons and daughters. Ezekiel's condemnation of the practice (Ezekiel 16:20-21) describes children slaughtered. The kings Ahaz and Manasseh are said to have done it (2 Kings 16:3; 21:6). Divination by examining sheep's livers and by omens was a learned profession in Mesopotamia; Ezekiel 21:21 pictures the king of Babylon using arrows, household idols, and a liver to decide his route.",
+      "refs": ["Deuteronomy 12:31", "2 Kings 21:6", "Ezekiel 21:21", "Genesis 44:5", "Exodus 22:18"]
+    },
+    {
+      "v": "11",
+      "context": "The list continues with spell-casters and those who seek contact with the dead. Consulting the dead is the most direct attempt to gain hidden knowledge, and it stands last in the list.",
+      "grammar": "Chover chaver, ‘one who binds a binding’, uses a cognate construction for casting spells, probably by tying magical knots. Shoel ov veyiddeoni, ‘one who asks an ov or a yiddeoni’: yiddeoni comes from yada, ‘to know’, a ‘knowing one’; ov can mean a spirit of the dead, the medium who calls it up, or the pit through which it was summoned. Harry Hoffner (1967) connected ov with a Hittite word for a ritual pit used to call up spirits from the underworld. Doresh el hammetim, ‘one who seeks the dead’, uses darash, the ordinary verb for inquiring of God through a prophet (1 Kings 22:8). The choice of verb is pointed: Israel is to seek the living God, not the dead.",
+      "words": ["H2266", "H2267", "H0178", "H3049", "H1875", "H4191"],
+      "history": "Saul, who had expelled the mediums, consulted a woman who was a medium (a baalat ov) at Endor on the night before his death (1 Samuel 28:3-25). Isaiah 8:19 mocks those who tell the people to consult mediums and spiritists, asking why the living should consult the dead instead of their God. Texts from Mesopotamia and Ugarit show that rites for feeding and consulting dead ancestors were practiced across the region.",
+      "refs": ["1 Samuel 28:7-14", "Isaiah 8:19-20", "Leviticus 19:31", "Leviticus 20:27", "2 Kings 23:24"]
+    },
+    {
+      "v": "12-13",
+      "context": "The reason for the ban: these practices are detestable to the LORD, and they are the reason he is driving out the nations. Then a single positive command replaces the whole list: be wholehearted with the LORD your God.",
+      "grammar": "Toavat YHWH kol oseh elleh, ‘an abomination of the LORD is everyone who does these’: the person, not only the practice, is the object of the verdict. Verse 13 has four words: tamim tihyeh im YHWH, ‘whole you shall be with the LORD’. Tamim describes a sacrificial animal without blemish and a person of integrity, like Noah (Genesis 6:9) and the command to Abraham (Genesis 17:1). The preposition im, ‘with’, rather than the more usual ‘before’, frames the command as undivided companionship with God, not hedging bets with other powers.",
+      "words": ["H8441", "H8549H", "H5973A", "H3423H"],
+      "theology": [
+        {
+          "id": "sanctification",
+          "note": "Wholeness before God is defined here as undivided trust. Israel's integrity consists not in moral perfection but in refusing to seek guidance or security from any source God has forbidden."
+        }
+      ],
+      "nt": [
+        {
+          "ref": "Matthew 5:48",
+          "note": "The Septuagint renders tamim in this verse with teleios, ‘complete, perfect’. Matthew uses teleios in Jesus' command to be perfect as the heavenly Father is perfect, and several commentators hear an echo of this verse and of Leviticus 19:2. In both places the wholeness required is an undivided loyalty that reflects God's own character."
+        }
+      ],
+      "refs": ["Genesis 17:1", "Genesis 6:9", "Matthew 5:48", "Psalm 18:23"]
+    },
+    {
+      "v": "14",
+      "context": "The contrast is stated directly. The nations listen to soothsayers and diviners; the LORD has not given Israel that path. Verse 15 will say what he has given instead.",
+      "grammar": "The sentence turns on the fronted pronoun: veattah lo ken natan lekha YHWH, ‘but as for you, not so has the LORD given you’. The verb natan, ‘give’, here means ‘allow’, but it keeps the sense of gift: God has given Israel something different. The nations yishmau, ‘listen’, to diviners, and in verse 15 Israel is told to tishmaun, ‘listen’, to the prophet. The same verb, shama, frames the choice.",
+      "words": ["H0859A", "H3651C", "H5414K", "H8085G"],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "Israel's knowledge of God's will does not come from technique but from God's own speech. The contrast is between reading signs and hearing a word."
+        }
+      ],
+      "refs": ["Isaiah 8:19-20", "Micah 3:6-7", "Numbers 23:23"]
+    },
+    {
+      "v": "15",
+      "context": "The heart of the chapter: God will raise up for Israel a prophet like Moses from among their own people, and they must listen to him. It answers the question the forbidden practices tried to answer, how to know the divine will, and it answers the question of what happens when Moses dies.",
+      "grammar": "The word order puts the prophet first: navi mikkirbekha meachekha kamoni yaqim lekha, ‘a prophet from your midst, from your brothers, like me, will the LORD raise up for you’. Yaqim, ‘he will raise up’, is a Hiphil imperfect of qum, the verb used for God raising up judges (Judges 2:16) and kings. Navi, ‘prophet’, is singular, and interpreters divide over whether it is a generic singular (a prophet in each generation, an office like the judges, king, and priests of chapters 16 to 18) or a single figure. The verse closes elav tishmaun, ‘to him you shall listen’, with the object fronted and the emphatic nun on the verb.",
+      "words": ["H5030", "H7130G", "H0251I", "H3644G", "H6965I", "H8085G"],
+      "history": "Rashi read the promise as a line of prophets, each raised up as Moses was, from generation to generation. The closing verses of Deuteronomy note that no prophet like Moses had arisen (34:10), and by the Second Temple period Jews looked for one: 1 Maccabees 4:46 and 14:41 defer decisions until a trustworthy prophet should arise, the Qumran Community Rule speaks of the coming of a prophet and the messiahs of Aaron and Israel (1QS 9:11), and the Qumran Testimonia (4Q175) quotes verses 18 and 19. The Samaritan Pentateuch inserts verses 18 to 22 into its account of Sinai in Exodus 20, and Samaritans came to expect the Taheb, a restorer like Moses. Some Muslim writers have applied the verse to Muhammad, reading ‘their brothers’ as the Ishmaelites; Jewish and Christian interpreters answer that ‘your brothers’ in Deuteronomy means fellow Israelites (17:15).",
+      "theology": [
+        {
+          "id": "prophecy",
+          "note": "Prophecy is presented as God's continuing provision for his people's guidance, grounded in the pattern of Moses. The prophet's authority is derivative: he speaks because God raises him up."
+        },
+        {
+          "id": "messiah",
+          "note": "Whether first read as one prophet or many, the promise pointed beyond itself once 34:10 said none had equaled Moses. That unfulfilled note is what made the verse a messianic hope by the first century."
+        }
+      ],
+      "nt": [
+        {
+          "ref": "Acts 3:22-23",
+          "note": "Peter quotes verses 15 and 19 in the temple, identifying Jesus as the promised prophet. He adds language from Leviticus 23:29 about being cut off from the people, sharpening the warning of verse 19. Stephen cites the promise in Acts 7:37 as part of his argument that Israel has always resisted those God sent."
+        },
+        {
+          "ref": "John 6:14",
+          "note": "After the feeding of the five thousand, a Moses-like sign of bread in the wilderness, the crowd says Jesus is truly the Prophet who is to come into the world. John 1:21 and 7:40 show that ‘the Prophet’ was a recognized figure of expectation."
+        }
+      ],
+      "refs": ["Deuteronomy 34:10-12", "Acts 3:22-23", "Acts 7:37", "John 1:21", "Matthew 17:5"]
+    },
+    {
+      "v": "16-17",
+      "context": "The promise is grounded in the people's own request at Horeb. Terrified by God's voice and the fire, they asked not to hear it again, and God approved: they had spoken well. The prophet is God's answer to their need for a mediator.",
+      "grammar": "The people's words are quoted in the first person singular: lo osef lishmoa, literally ‘I will not again hear’, a Hiphil of yasaf, ‘to add’, with an infinitive meaning ‘to do again’. The singular voices the whole assembly as one frightened person; the BSB renders it \"Let us not\". Yom haqqahal, ‘the day of the assembly’, is Deuteronomy's name for the day of Sinai (9:10; 10:4). God's reply, hetivu asher dibberu, ‘they have done well in what they spoke’, repeats his verdict in 5:28.",
+      "words": ["H2722", "H6951", "H3254G", "H3190"],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "Revelation through a human mediator is not a lesser form God settled for. He approves it as a mercy suited to people who cannot bear his unmediated presence."
+        }
+      ],
+      "refs": ["Deuteronomy 5:23-28", "Exodus 20:18-21", "Hebrews 12:18-21"]
+    },
+    {
+      "v": "18",
+      "context": "God's own words at Horeb, now reported by Moses. The prophet will be ‘like you’, raised from their brothers, and God will put his words in his mouth. The definition of a prophet in the Old Testament rests on this verse.",
+      "grammar": "The shift from kamoni, ‘like me’ (verse 15, Moses speaking), to kamokha, ‘like you’ (verse 18, God speaking to Moses) is natural, but it frames the prophet on both sides by Moses' pattern. Venatatti devaray befiv, ‘and I will put my words in his mouth’, is the core formula of prophetic commission. Jeremiah's call uses almost the same words (Jeremiah 1:9), and William Holladay argued that Jeremiah saw himself as the prophet like Moses. Vedibber, ‘and he will speak’, and asher atsavvennu, ‘what I command him’, make the prophet a faithful spokesman who adds nothing.",
+      "words": ["H5030", "H3644G", "H5414H", "H6310G", "H6680"],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "The prophet's words are God's words given through a human mouth. This verse lies behind the church's conviction that Scripture is both a human and a divine word."
+        },
+        {
+          "id": "offices",
+          "note": "Christian theology has named prophet as one of Christ's three offices, with priest and king. Jesus' claim in John 12:49-50 that he speaks just what the Father commanded him echoes the language of this verse."
+        }
+      ],
+      "refs": ["Jeremiah 1:9", "John 12:49-50", "Numbers 22:38", "Isaiah 51:16", "Hebrews 1:1-2"]
+    },
+    {
+      "v": "19",
+      "context": "The prophet's words carry God's authority, so ignoring them is ignoring God, and God himself will call the hearer to account.",
+      "grammar": "Anokhi edrosh meimmo, ‘I myself will require it from him’, uses the emphatic pronoun anokhi and the verb darash, ‘to seek, require’. The same verb in verse 11 described one who ‘seeks’ the dead. The chapter plays on it: Israel must not seek the dead, and God will seek an account from anyone who will not hear his prophet. The prophet speaks bishmi, ‘in my name’, meaning with God's authority.",
+      "words": ["H0595", "H1875", "H8034", "H8085G"],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "Accountability follows revelation. Those to whom God has spoken are answerable for whether they listened, a principle the Letter to the Hebrews applies to God's speaking in his Son (Hebrews 2:1-3; 12:25)."
+        }
+      ],
+      "refs": ["Acts 3:23", "Hebrews 12:25", "Hebrews 2:1-3"]
+    },
+    {
+      "v": "20",
+      "context": "The other side of the promise. A prophet who speaks in God's name what God did not command, or who speaks in the name of other gods, must die. False prophecy is treated as a capital crime because it counterfeits the very channel God has given.",
+      "grammar": "Yazid ledabber, ‘acts presumptuously in speaking’, uses a Hiphil of zid, ‘to boil up, act arrogantly’, the root of zadon (‘presumption’) in verse 22. The presumption is claiming God's authority without his commission. The verse opens with akh, ‘but’, a restrictive particle that marks the limit of the promise.",
+      "words": ["H0389", "H2102", "H1697G", "H4191"],
+      "history": "Jeremiah 28 shows the law applied. Hananiah prophesied in the LORD's name that Babylon's yoke would be broken within two years; Jeremiah told him the LORD had not sent him and that he would die that year, and Hananiah died in the seventh month (Jeremiah 28:15-17).",
+      "refs": ["Deuteronomy 13:1-5", "Jeremiah 28:15-17", "Jeremiah 14:14-15", "Ezekiel 13:1-9"]
+    },
+    {
+      "v": "21-22",
+      "context": "The chapter anticipates the listener's question: how can we tell? The answer is a negative test. A word spoken in the LORD's name that does not come to pass was not from him, and the prophet need not be feared. The chapter note discusses the limits of this test and its partner in Deuteronomy 13.",
+      "grammar": "Ekhah neda, ‘how shall we know?’, is spoken bilvavekha, ‘in your heart’, a question Israel might not voice aloud. The test uses two verbs, lo yihyeh hadavar velo yavo, ‘the word does not happen and does not come’. The verdict, bezadon dibbero, ‘in presumption he spoke it’, echoes yazid in verse 20. The last clause, lo tagur mimmennu, ‘do not be afraid of him’, uses a verb gur meaning ‘to fear’, a separate word from the gur ‘to sojourn’ in verse 6, though spelled alike.",
+      "words": ["H3824", "H0349B", "H3045", "H2087", "H1481C"],
+      "history": "Micaiah son of Imlah appeals to this test when he tells King Ahab that if Ahab returns safely from battle, the LORD has not spoken through him (1 Kings 22:28); Ahab was killed. The test works best after the fact, which is why Deuteronomy 13 adds a test that can be applied at once: whether the prophet leads the people toward the LORD or away from him.",
+      "theology": [
+        {
+          "id": "prophecy",
+          "note": "A true prophet's word is borne out by events because it is God's word. The test also frees Israel from fear of those who speak presumptuously; their threats have no power the LORD has not given."
+        }
+      ],
+      "refs": ["1 Kings 22:28", "Jeremiah 28:9", "Deuteronomy 13:1-3", "1 John 4:1"]
+    }
+  ]
+}
