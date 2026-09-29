@@ -141,6 +141,10 @@ describe("every rewrite meets the checkable parts of the standard", () => {
         expect(outsideQuotes).not.toMatch(/!/);
       });
 
+      it("calls James a pastor, not a Baptist pastor (his decision, 29 Sept)", () => {
+        expect(plain).not.toMatch(/\bI(?:'m| am) a Baptist pastor|\bI pastor a Baptist\b|\bwe Baptists\b|\bBaptists like me\b|\bmy own Baptist\b/i);
+      });
+
       it("claims no ministry tenure but the true one", () => {
         expect(plain).not.toMatch(/\b(fifteen|twenty|ten|eleven|thirteen|fourteen|\d+)\s+years\s+(as\s+(a\s+)?pastor|of\s+(pastoral\s+)?ministry|at\s+(First\s+Baptist|Fenton))/i);
       });

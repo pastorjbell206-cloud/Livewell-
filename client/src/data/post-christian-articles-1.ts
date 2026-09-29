@@ -283,7 +283,7 @@ export const ARTICLES_BATCH_1 = [
 
 <p>That evening Conrad Grebel baptized George Blaurock, a grown man who had been baptized as an infant. It looks like a small thing, water on an adult, and it was a revolution. To baptize an adult who had already been baptized was to say that the church was not a territory but a people, not everyone born inside a border but those who had chosen, and that faith could not be inherited, imposed, or assumed. For that they would be hunted, imprisoned, tortured, and killed, and not only by Catholics. The Protestants whose reformation they believed they were finishing killed them too.</p>
 
-<p>I am a Baptist pastor. I baptize people who can answer for themselves, and nothing about it feels dangerous. It once was, and the reason it was dangerous is the reason the Anabaptists matter now, when the American church is arguing again about how close to power it should stand. We have mostly kept their baptism and forgotten their politics. This essay is about the people who paid for both, what they got wrong, and why their vision of a church that refuses to be the state is having a renaissance it did not ask for.</p>
+<p>I am a pastor. I baptize people who can answer for themselves, and nothing about it feels dangerous. It once was, and the reason it was dangerous is the reason the Anabaptists matter now, when the American church is arguing again about how close to power it should stand. We have mostly kept their baptism and forgotten their politics. This essay is about the people who paid for both, what they got wrong, and why their vision of a church that refuses to be the state is having a renaissance it did not ask for.</p>
 
 <h2>The Radical Wing of the Reformation</h2>
 

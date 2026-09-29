@@ -27,10 +27,11 @@ live. A writer's draft reaches the site only after a reviewer sets `reviewed:`.
   confession stays only if a source essay has it. No position in James's mouth
   that the sources didn't take; on a second-order question the essay lands only
   where the sources landed. No tenure but twelve years at First Baptist Church
-  of Fenton. No claim about the church's denominational affiliation: "Baptist
-  pastor" rests on James's own words (the denominations source essay), but
-  nothing may tie him or the church to the SBC or any convention, and no
-  "Baptist" self-identification is added where the essay doesn't need it.
+  of Fenton. No claim about the church's denominational affiliation. James
+  decided (29 Sept) that the essays call him "a pastor", never "a Baptist
+  pastor": no "Baptist" self-identification of him or of "we", and nothing
+  tying him or the church to the SBC or any convention. The church's name,
+  First Baptist Church of Fenton, is a fact and may appear.
 - **Fairness.** Contested positions steelmanned in a form their defenders would
   sign. Right and left judged with the same instrument.
 - **Care.** Crisis-facing topics carry correct help lines (988; National
