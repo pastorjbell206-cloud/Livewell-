@@ -1,0 +1,533 @@
+{
+  "verses": [
+    {
+      "v": "1-2",
+      "context": "Two warnings reach Jacob at once: Laban's sons are complaining that he has grown rich at their father's expense, and Laban's face has changed toward him. The pressure from Laban's household sets up God's command in the next verse.",
+      "grammar": "The sons' complaint ends with et kol-hakkavod hazzeh, \"all this wealth\". Kavod usually means ‘glory’ or ‘honor’, but its root means ‘heavy’, and here it has its concrete sense of weight in possessions, as in 13:2 where Abram was ‘heavy’ in livestock. Verse 2 turns on Laban's face (pene Lavan): Jacob saw that it was ‘not with him as yesterday and the day before’ (kitmol shilshom), an idiom for ‘as it used to be’. Faces become a thread in the next chapters: Jacob will name a place Peniel, ‘face of God’ (32:30), and tell Esau that seeing his face is like seeing the face of God (33:10).",
+      "words": [
+        "H3947G",
+        "H3519",
+        "H6440L",
+        "H8543",
+        "H8032"
+      ],
+      "refs": [
+        "Genesis 30:43",
+        "Genesis 13:2",
+        "Genesis 32:30",
+        "Genesis 33:10"
+      ]
+    },
+    {
+      "v": "3",
+      "context": "The LORD speaks to Jacob for the first time since Bethel. The command to return home and the promise of his presence answer the vow Jacob made when he left (28:20-21), and they turn the story from Haran back toward Canaan.",
+      "grammar": "Shuv, \"Go back\", is the imperative of the verb for returning, the same verb as in God's promise at Bethel, ‘I will bring you back’ (28:15). Ve'ehyeh immakh, \"and I will be with you\", is the phrase God will speak to Moses at the burning bush, where the BSB reads \"I will surely be with you\" (Exodus 3:12). Moledet, \"kindred\", is the word for one's birthplace and family, the word God used when he called Abram to leave his moledet (12:1). Jacob's grandfather was called away from kindred; Jacob is called back to it.",
+      "words": [
+        "H7725G",
+        "H4138",
+        "H1961",
+        "H5973A"
+      ],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "God's word comes when human pressure is already pushing Jacob to leave. The narrator shows both at once, circumstances and command, and the command is what gives Jacob's departure its meaning: he is not only escaping Laban but obeying God."
+        }
+      ],
+      "refs": [
+        "Genesis 28:15",
+        "Genesis 28:20-21",
+        "Genesis 12:1",
+        "Exodus 3:12"
+      ]
+    },
+    {
+      "v": "4-7",
+      "context": "Jacob calls Rachel and Leah out to the field, away from Laban's household, and makes his case. He sets two fathers side by side: their father, whose face has changed, and the God of his father, who has stood by him.",
+      "grammar": "Verse 5 is built on a contrast: ‘your father's face’ is ‘not toward me as before’, but ‘the God of my father has been with me’ (velohe avi hayah immadi). In verse 7 the verb hetel bi, \"he has cheated me\", is a Hiphil of talal, ‘to mock, trifle with’, the word Delilah uses when she says Samson has mocked her (Judges 16:10). \"Ten times\" (aseret monim) is a round number for ‘again and again’, as in Numbers 14:22. The verse ends with velo-netano Elohim leharea immadi, ‘but God did not allow him to do me harm’, the same construction God used when he told Abimelech ‘I did not let you touch her’ (20:6).",
+      "words": [
+        "H6440G",
+        "H0430G",
+        "H3581B",
+        "H2048B",
+        "H2498",
+        "H4489",
+        "H5414K",
+        "H7489A"
+      ],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "Jacob reads his twenty years as God's protection against a stronger man's schemes. God does not stop Laban from changing the wages; he stops the changes from ruining Jacob. The verse describes providence that works through injustice rather than simply preventing it."
+        }
+      ],
+      "refs": [
+        "Judges 16:10",
+        "Numbers 14:22",
+        "Genesis 20:6",
+        "Psalm 105:14"
+      ]
+    },
+    {
+      "v": "8-9",
+      "context": "Jacob explains his wealth as God's doing: whatever pattern Laban named as Jacob's pay, the flocks produced it. Verse 9 gives the conclusion in one sentence, God has taken Laban's livestock and given them to Jacob.",
+      "grammar": "Verse 8 uses two conditional sentences with the imperfect (im koh yomar, ‘if he would say thus’) followed by consecutive perfects (veyaldu, ‘then they would bear’), the Hebrew way of describing repeated past events: this happened every time. In verse 9 vayyatsel Elohim, \"God has taken away\", is a Hiphil of natsal, a verb that usually means ‘rescue’ or ‘deliver’ and here means ‘snatch away, strip’. Rachel and Leah repeat the same verb in verse 16, and the same root describes Israel stripping the Egyptians of their valuables on the way out of Egypt (Exodus 3:22).",
+      "words": [
+        "H0559",
+        "H7939",
+        "H3205",
+        "H6124",
+        "H5337"
+      ],
+      "refs": [
+        "Genesis 30:37-43",
+        "Genesis 31:16",
+        "Exodus 3:22",
+        "Proverbs 13:22"
+      ]
+    },
+    {
+      "v": "10-13",
+      "context": "Jacob tells his wives of a dream in which the angel of God showed him the off-colored males mating with the flock and explained why: God had seen everything Laban was doing. The same speaker then names himself the God of Bethel and orders Jacob home.",
+      "grammar": "Jacob's answer to the angel is hinneni, \"Here I am\", the reply of a servant ready to listen, which Abraham gave at Moriah (22:1, 11) and Moses will give at the bush (Exodus 3:4). The angel's reason, ki ra'iti et kol-asher Lavan oseh lakh, ‘for I have seen all that Laban is doing to you’, uses a participle, ‘is doing’, for an ongoing injustice. In verse 13 the speaker who began as ‘the angel of God’ says ‘I am the God of Bethel’, a shift that runs through Genesis, where the angel of the LORD speaks with God's own voice (16:10-13, 22:11-16). The phrase ha'el bet-el is grammatically odd, literally ‘the God Bethel’: a noun bound to a following noun in this way does not normally take the definite article in Hebrew, yet here it has one.",
+      "words": [
+        "H2472",
+        "H6260",
+        "H4397H",
+        "H2009",
+        "H6213A",
+        "H0410G",
+        "H1008G",
+        "H4886",
+        "H5087"
+      ],
+      "text": "The Greek Septuagint expands the awkward Hebrew of verse 13 to read, in effect, ‘I am the God who appeared to you in the place of God’, making the reference to Jacob's vision explicit. Most English translations keep the shorter Hebrew and render it \"I am the God of Bethel\".",
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "God identifies himself by a place and an event, the pillar Jacob anointed and the vow he made there (28:18-22). The God who speaks now is the same God who spoke then, and he holds Jacob to what was said between them."
+        }
+      ],
+      "refs": [
+        "Genesis 28:18-22",
+        "Genesis 22:11",
+        "Exodus 3:4",
+        "Genesis 16:10-13"
+      ]
+    },
+    {
+      "v": "14-16",
+      "context": "Rachel and Leah answer together, the only time in the story the rival sisters speak with one voice. Their father has treated them as foreigners and sold them, so they have nothing to lose by leaving. They end by telling Jacob to do whatever God has said.",
+      "grammar": "The first verb, vatta'an, ‘and she answered’, is feminine singular though both women are the subject, a common Hebrew pattern when a verb comes before a compound subject; Rachel, named first, leads. Their question uses the pair cheleq venachalah, \"portion or inheritance\", a formula that later expresses a clean break from a family or house (2 Samuel 20:1, where Sheba cries that Israel has no share in David). Nokhriyot, ‘foreigners’, is a hard word: they have been treated like outsiders by their own father. Vayyokhal gam-akhol et-kaspenu, ‘and he has even completely consumed our money’, pairs a finite verb with an infinitive absolute for emphasis.",
+      "words": [
+        "H6030B",
+        "H2506A",
+        "H5159",
+        "H5237",
+        "H4376",
+        "H0398",
+        "H3701G",
+        "H5337"
+      ],
+      "theology": [
+        {
+          "id": "family",
+          "note": "The sisters speak of their father as one who sold them, and they choose their husband and children over their father's house. The verse illustrates what Genesis 2:24 describes, the marriage bond taking precedence over the family of origin, and shows how a father's greed can break the bond with his own daughters."
+        }
+      ],
+      "refs": [
+        "2 Samuel 20:1",
+        "1 Kings 12:16",
+        "Genesis 2:24",
+        "Genesis 29:15"
+      ]
+    },
+    {
+      "v": "17-18",
+      "context": "Jacob acts at once. He loads his family on camels and drives out all his livestock and property, heading for his father Isaac in Canaan. The narrator notes that Isaac, whom Jacob last saw blind and deceived, is still alive.",
+      "grammar": "Verse 18 piles up words for property: miqneh (‘livestock’), rekhush (‘possessions’), qinyan (‘acquisition’). The phrase kol-rekhusho asher rakhash, ‘all his possessions which he had possessed’, repeats one root as noun and verb, and it closely echoes Abram's departure from Haran with ‘all the possessions they had acquired’ (12:5). Jacob leaves Haran as his grandfather did, with wealth, bound for Canaan. \"Paddan-aram\" is the name Genesis uses for the region around Haran (25:20, 28:2).",
+      "words": [
+        "H6965B",
+        "H1581",
+        "H5090A",
+        "H7399",
+        "H7408",
+        "H7075",
+        "H6307"
+      ],
+      "refs": [
+        "Genesis 12:5",
+        "Genesis 28:2",
+        "Genesis 35:27",
+        "Hosea 12:12"
+      ]
+    },
+    {
+      "v": "19-21",
+      "context": "Two thefts happen while Laban is away shearing. Rachel steals her father's household gods, and Jacob ‘steals Laban's heart’ by leaving without a word. Jacob crosses the River and heads for Gilead.",
+      "grammar": "The verb ganav, ‘steal’, appears twice in two verses: vattignov Rachel (‘Rachel stole’) and vayyignov Ya'aqov et-lev Lavan, ‘Jacob stole the heart of Laban’. The second is an idiom for deceiving, since in Hebrew the heart is the seat of thought and knowledge, so ‘stealing the heart’ means taking away someone's awareness (the BSB renders it \"deceived\"). Jacob does not know about Rachel's theft, but the narrator links the two with one verb. Verse 20 uses a participle, boreach hu, ‘that he was fleeing’, and verse 21 the finite vayyivrach, \"he fled\", the verb used when Jacob fled from Esau (27:43). \"The Euphrates\" translates hannahar, ‘the River’, the standard biblical name for it.",
+      "words": [
+        "H1494",
+        "H1589",
+        "H8655",
+        "H3820A",
+        "H0761J",
+        "H1272",
+        "H5104G",
+        "H1568G"
+      ],
+      "history": "Sheep-shearing was a major event in a herding economy, done in spring and often marked by feasting; Nabal is shearing when David's men approach him (1 Samuel 25:2-8), and Absalom holds a shearing feast when he has Amnon killed (2 Samuel 13:23-29). Shearing a large flock took the owner away from home for days, which gave Jacob his opening.",
+      "refs": [
+        "Genesis 27:43",
+        "1 Samuel 25:2",
+        "2 Samuel 13:23",
+        "Joshua 24:2"
+      ]
+    },
+    {
+      "v": "22-25",
+      "context": "Laban learns of the flight on the third day, gathers his kinsmen, and after seven days catches up with Jacob in the hill country of Gilead. But the night before the confrontation God appears to Laban in a dream and warns him off.",
+      "grammar": "Vayyadbeq, \"overtook\", is a Hiphil of davaq, ‘to cling, stick’, so Laban ‘caught up and stuck to’ him. God's warning in verse 24, hishamer lekha pen-tedabber im-Ya'aqov mittov ad-ra, ‘guard yourself lest you speak with Jacob from good to bad’, is a merism, naming two extremes to cover everything between. In context it seems to mean that Laban must not try to force Jacob back by any means, whether persuasion or threat. The same pair appeared on Laban's own lips long before, when he told Abraham's servant that the matter came from the LORD and they could say nothing ‘bad or good’ (24:50, rendered \"we have no choice in the matter\").",
+      "words": [
+        "H5046",
+        "H7291",
+        "H1692",
+        "H2472",
+        "H8104J",
+        "H2896A",
+        "H7451A",
+        "H8628"
+      ],
+      "history": "Haran lay several hundred miles from the hill country of Gilead, a long way for flocks and young children to cover in the ten days the text implies. Interpreters have noted the difficulty; some take the ‘seven days’ of pursuit as a conventional figure for a long chase, others suppose that Laban's household was then located nearer the Euphrates than Haran itself.",
+      "theology": [
+        {
+          "id": "providence",
+          "note": "God speaks to an outsider in a dream to protect his chosen one, as he did with Abimelech (20:3). Laban comes with power to harm, and he admits it (verse 29), but he is bound by a word he did not expect."
+        }
+      ],
+      "refs": [
+        "Genesis 20:3",
+        "Genesis 24:50",
+        "Psalm 105:14-15",
+        "Matthew 2:12"
+      ]
+    },
+    {
+      "v": "26-28",
+      "context": "Laban opens with wounded dignity. He accuses Jacob of deceiving him and carrying off his daughters like prisoners of war, and he claims he would have sent them away with music. The reader, who knows how Laban has behaved for twenty years, can weigh the claim.",
+      "grammar": "Laban repeats the idiom from verse 20, vattignov et-levavi, ‘you stole my heart’, and adds kishvuyot charev, \"like captives of war\", literally ‘like captives of the sword’. His picture of a farewell with simchah (‘joy’), shirim (‘songs’), tof (‘tambourine’), and kinnor (‘lyre’) is lavish. The kinnor was the first instrument named in the Bible (4:21), and later David's instrument. In verse 28 hiskalta asoh, \"you have done a foolish thing\", uses sakhal in the Hiphil, the verb Samuel uses to Saul, \"You have acted foolishly\" (1 Samuel 13:13).",
+      "words": [
+        "H1589",
+        "H3824",
+        "H7617",
+        "H2719",
+        "H8057",
+        "H8596",
+        "H3658",
+        "H5528"
+      ],
+      "refs": [
+        "Genesis 31:20",
+        "Genesis 4:21",
+        "1 Samuel 13:13",
+        "Genesis 31:55"
+      ]
+    },
+    {
+      "v": "29-30",
+      "context": "Laban admits he has the power to harm Jacob but says the God of Jacob's father warned him the night before. He then concedes that Jacob longed for home, and he comes to his real grievance: why steal my gods?",
+      "grammar": "Yesh-le'el yadi, \"I have power\", is an idiom, literally ‘it is to the power of my hand’, found also in Proverbs 3:27 and Micah 2:1. Laban calls God ‘the God of your father’ (the Hebrew ‘your’ is plural, addressing Jacob's household), keeping him at a distance. Verse 30 has two emphatic pairs of infinitive absolute and finite verb: halokh halakhta, ‘you have indeed gone’, and nikhsof nikhsafta, ‘you have deeply longed’. Kasaf in the Niphal is the verb of the psalmist's longing for God's courts (Psalm 84:2). The last word, elohai, \"my gods\", is the chapter's bitter joke: gods that can be stolen.",
+      "words": [
+        "H3426",
+        "H0410L",
+        "H3027H",
+        "H0570",
+        "H1980G",
+        "H3700",
+        "H1589",
+        "H0430J"
+      ],
+      "theology": [
+        {
+          "id": "idolatry",
+          "note": "In one breath Laban describes a God who speaks to him in the night and restrains him, and then complains that his own gods have been carried off. The verse sets the living God who acts beside gods who cannot even keep their place on a shelf, the contrast Isaiah draws between gods that must be carried and the God who carries his people (Isaiah 46:1-4)."
+        }
+      ],
+      "refs": [
+        "Proverbs 3:27",
+        "Micah 2:1",
+        "Psalm 84:2",
+        "Isaiah 46:1-4",
+        "Jeremiah 10:5"
+      ]
+    },
+    {
+      "v": "31-32",
+      "context": "Jacob answers the first charge honestly: he left secretly because he feared Laban would take his daughters by force. To the second charge he answers rashly, pronouncing death on anyone found with the gods. The narrator tells the reader what Jacob does not know: Rachel took them.",
+      "grammar": "Pen-tigzol, ‘lest you tear away’, uses gazal, the verb for seizing by force or robbery, a harsher charge than Laban's ganav, ‘steal’. Jacob's oath, lo yichyeh, \"he shall not live\", has an eerie parallel in the Joseph story, when Jacob's sons, sure of their innocence, tell Joseph's steward that whoever has the silver cup ‘must die’ (44:9), and the cup is in Benjamin's sack, Rachel's other son. The imperative haker-lekha, ‘recognize for yourself’, uses nakar, a verb that runs through the Jacob and Joseph stories: Isaac did not recognize Jacob (27:23), and Jacob's sons will say ‘examine it’ of Joseph's bloodied robe (37:32).",
+      "words": [
+        "H3372G",
+        "H1497",
+        "H4672",
+        "H2421",
+        "H5234A",
+        "H1589"
+      ],
+      "refs": [
+        "Genesis 44:9",
+        "Genesis 27:23",
+        "Genesis 37:32-33",
+        "Genesis 35:16-19"
+      ]
+    },
+    {
+      "v": "33-35",
+      "context": "Laban searches tent after tent, saving Rachel's for last. She has hidden the gods in her camel saddle and sits on them, excusing herself from standing because she is menstruating. Laban feels through everything and finds nothing.",
+      "grammar": "The search is told slowly: Jacob's tent, Leah's tent, the two maidservants' tents, back out of Leah's, into Rachel's. The repetition of ohel, ‘tent’, five times in verse 33 builds suspense. Kar hagamal, \"the saddlebag of her camel\", is a camel saddle, probably a basket-like seat with space beneath. Vaymashesh Lavan, \"Laban searched\", is a Piel of mashash, ‘to feel, grope’, closely related to the verb used when blind Isaac felt Jacob's hands (27:12, 22): once the father groped and was deceived, now the father-in-law gropes and is deceived again. Rachel's excuse, derekh nashim li, ‘the way of women is upon me’, is a polite idiom for menstruation, and she addresses her father as adoni, ‘my lord’, with elaborate courtesy.",
+      "words": [
+        "H0168G",
+        "H0519",
+        "H3733A",
+        "H3427",
+        "H4959",
+        "H0113",
+        "H1870G",
+        "H2664"
+      ],
+      "theology": [
+        {
+          "id": "idolatry",
+          "note": "Laban's gods cannot reveal their own location or defend their own dignity. A woman sits on them, and they are hidden beneath a claim of impurity. The scene mocks idols by showing them helpless, a theme the prophets develop when they describe idols that must be fastened down so they do not topple (Isaiah 41:7)."
+        }
+      ],
+      "refs": [
+        "Genesis 27:21-23",
+        "Isaiah 41:7",
+        "1 Samuel 5:3-4",
+        "Genesis 35:2-4"
+      ]
+    },
+    {
+      "v": "36-37",
+      "context": "After the search fails, Jacob's anger breaks out. He turns the tables and puts Laban on trial, demanding that the stolen goods be laid out before both men's kinsmen for judgment.",
+      "grammar": "Vayyichar leYa'aqov vayyarev beLavan, \"Jacob became incensed and challenged Laban\", uses riv, the Hebrew word for a legal dispute or lawsuit, the term the prophets later use for God's case against his people (Micah 6:2). Jacob's questions use the legal pair pesha (‘transgression, crime’) and chatta'ah (‘sin, offense’). Dalaqta acharai, \"have you so hotly pursued me\", uses dalaq, ‘to burn’, for a hot pursuit. In verse 37 veyokhichu, ‘that they may decide’, is a Hiphil of yakhach, ‘to arbitrate, judge between’; Jacob will use the same verb in verse 42 to say that God has already decided the case (vayyokhach, \"He rendered judgment\").",
+      "words": [
+        "H2734",
+        "H7378",
+        "H6588",
+        "H2403B",
+        "H1814",
+        "H4959",
+        "H3198"
+      ],
+      "refs": [
+        "Micah 6:2",
+        "Job 9:33",
+        "Genesis 31:42"
+      ]
+    },
+    {
+      "v": "38-40",
+      "context": "Jacob recites twenty years of faithful work: no miscarried ewes, no rams eaten, losses to wild beasts and thieves paid out of his own pocket, days of heat and nights of frost and little sleep. It is the most self-revealing speech Jacob makes in Genesis.",
+      "grammar": "Recheleykha, \"your sheep\", is literally ‘your ewes’, the plural of rachel, the word that is also Rachel's name; the man who served for a ewe named Rachel speaks of guarding all of Laban's ewes. Terefah (\"anything torn by wild beasts\") is the word Jacob will cry out over Joseph's robe, ‘torn to pieces’ (37:33). Anokhi achattennah, \"I bore the loss myself\", is a Piel of chata, the ordinary verb for sinning; in the Piel it means ‘make good the loss’ or ‘clear of fault’, and the same stem is used for cleansing from sin (Psalm 51:7, \"Purify me\"). Genuvti yom ugenuvti laylah, \"stolen by day or night\", uses an old form of the participle with an added vowel, a poetic touch in a speech that rises toward poetry in verse 40.",
+      "words": [
+        "H7353",
+        "H7921A",
+        "H0352A",
+        "H2966",
+        "H2398",
+        "H1589",
+        "H2721A",
+        "H7140",
+        "H8142"
+      ],
+      "theology": [
+        {
+          "id": "work",
+          "note": "Jacob's account of his labor is a picture of faithful work done for a master who did not deserve it. Scripture elsewhere commends service done well even to unjust masters (1 Peter 2:18-19), and Jacob's complaint shows that faithful work does not require silence about injustice."
+        }
+      ],
+      "refs": [
+        "Genesis 37:33",
+        "Exodus 22:12-13",
+        "Psalm 121:6",
+        "John 10:11-13",
+        "1 Peter 2:18-19"
+      ]
+    },
+    {
+      "v": "41-42",
+      "context": "Jacob sums up: fourteen years for two daughters, six for the flocks, and wages changed ten times. Then he names the only reason he is not leaving with nothing: the God of his fathers was with him, saw his affliction, and judged between them last night.",
+      "grammar": "Lule, ‘if not’, introduces a contrary-to-fact condition: ‘had not the God of my father been with me, surely now you would have sent me away empty’. Reqam, \"empty-handed\", is the word Israel's law uses when it forbids sending a released slave away with nothing (Deuteronomy 15:13), and the word God uses when he promises that Israel will not leave Egypt empty-handed (Exodus 3:21). Jacob's twenty years are cast in the shape of a slave's service and release. Onyi, \"my affliction\", is the word Leah used at Reuben's birth (29:32) and God uses of Israel in Egypt (Exodus 3:7). Yegia kappai, \"the toil of my hands\", appears again in Psalm 128:2 as the labor God blesses.",
+      "words": [
+        "H3884",
+        "H0430G",
+        "H6343",
+        "H7387",
+        "H7971G",
+        "H6040",
+        "H3018",
+        "H3198"
+      ],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "Jacob confesses that his wealth rests on God's presence, not on his own cleverness with branches. The verse corrects any impression chapter 30 left: God saw, and God acted."
+        },
+        {
+          "id": "suffering",
+          "note": "God is described as the one who sees affliction and toil, the same confession that runs from Leah's naming of Reuben to Israel's cry in Egypt. Suffering that no one else credits is not unseen."
+        }
+      ],
+      "refs": [
+        "Deuteronomy 15:13",
+        "Exodus 3:21",
+        "Exodus 3:7",
+        "Genesis 29:32",
+        "Psalm 128:2"
+      ]
+    },
+    {
+      "v": "43",
+      "context": "Laban answers by claiming everything: the daughters, the children, the flocks are all his. Then, in the same breath, he admits he can do nothing about it and proposes a treaty. His bluster is the sound of a man who has lost the argument.",
+      "grammar": "Laban's sentence is a string of four nominal clauses with repeated possessives: habbanot benotai, habbanim banai, hatstson tsoni, ‘the daughters are my daughters, the sons are my sons, the flock is my flock’, ending with vekhol asher-attah ro'eh li-hu, \"Everything you see is mine\". The rhythm of possession is broken by a question, mah-e'eseh, ‘what can I do’, which concedes the case. Laban calls Jacob's sons ‘my sons’, as he will at his departure (verse 55).",
+      "words": [
+        "H1323G",
+        "H1121A",
+        "H6629G",
+        "H7200G",
+        "H6213A"
+      ],
+      "refs": [
+        "Genesis 31:28",
+        "Genesis 31:55"
+      ]
+    },
+    {
+      "v": "44-46",
+      "context": "Laban proposes a covenant, and Jacob sets up a standing stone as he did at Bethel. The kinsmen heap up stones, and the two parties eat together beside the heap. The meal here anticipates the fuller account of the covenant sacrifice in verse 54.",
+      "grammar": "Nikhretah verit, \"let us make a covenant\", is literally ‘let us cut a covenant’, the standard Hebrew idiom, probably from the practice of cutting animals as part of a treaty ceremony (compare 15:9-18). Vehayah le'ed, \"let it serve as a witness\", makes the covenant itself a witness between the parties. Jacob's stone is a matsevah, \"a pillar\", the same word as the stone he set up and anointed at Bethel (28:18). Gal, \"a mound\" or heap of stones, will give the place its name in verse 47.",
+      "words": [
+        "H3772H",
+        "H1285",
+        "H5707",
+        "H0068G",
+        "H7311A",
+        "H4676",
+        "H3950",
+        "H1530G"
+      ],
+      "text": "Verses 45-54 give two markers (a pillar and a heap), two names, and two accounts of eating, and in verse 51 Laban claims to have set up the pillar that verse 45 says Jacob set up. Source critics have explained these features as the joining of two accounts of the treaty. Other interpreters read the repetitions as the ordinary shape of Hebrew narrative, and Laban's claim in verse 51 as characteristic of a man who takes credit for everything.",
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "A covenant in Genesis is a binding agreement sealed by oath and witness. Here the witness is a pile of stones, set up because neither party trusts the other. Covenants among people protect against the other's betrayal; God's covenant with Jacob rests on God's own faithfulness."
+        }
+      ],
+      "refs": [
+        "Genesis 28:18",
+        "Genesis 15:9-18",
+        "Genesis 26:28-31",
+        "Joshua 24:26-27"
+      ]
+    },
+    {
+      "v": "47-48",
+      "context": "The two men name the heap in their own languages. Laban calls it Jegar-sahadutha, Jacob calls it Galeed, and both mean ‘heap of witness’. Laban declares it a witness between them, and the narrator records that the name Galeed stuck.",
+      "grammar": "Yegar sahaduta is Aramaic, the only Aramaic phrase in Genesis and the first in the Old Testament. Yegar is Aramaic for ‘heap’ and sahaduta for ‘witness’. Gal'ed is its Hebrew equivalent, gal (‘heap’) plus ed (‘witness’). The Hebrew name is also a play on Gilead (gil'ad), the region where the heap stands, so the story explains both the landmark and the land's name by sound.",
+      "words": [
+        "H3026A",
+        "H3026B",
+        "H1567",
+        "H1530G",
+        "H5707"
+      ],
+      "history": "Aramaic was the language of the Arameans of Syria and upper Mesopotamia, and it later became the common language of diplomacy and trade across the Assyrian and Persian empires. Parts of Ezra (4:8-6:18, 7:12-26), Daniel (2:4-7:28), and a verse of Jeremiah (10:11) are written in it. This verse shows a family that has already divided into two peoples with two languages, one Hebrew-speaking and one Aramaic-speaking.",
+      "refs": [
+        "Jeremiah 10:11",
+        "Ezra 4:8",
+        "Daniel 2:4",
+        "Deuteronomy 26:5"
+      ]
+    },
+    {
+      "v": "49-50",
+      "context": "The place gets a third name, Mizpah, from Laban's prayer that the LORD would watch between them when they are apart. He then states his terms: Jacob must not mistreat his daughters or take other wives, and God will witness even where no human sees.",
+      "grammar": "Ki nissater ish mere'ehu, ‘when we are hidden, each from his neighbor’, is a Niphal of satar, ‘to hide’: once they part, neither can see what the other does. In verse 50 im-te'anneh et-benotai, \"If you mistreat my daughters\", is a Piel of anah, ‘to afflict, oppress’, the same root as the ‘affliction’ (oni) God saw in verse 42. Laban warns Jacob against the very thing God saw Laban doing to Jacob. The closing words, re'eh Elohim ed beni uvenekha, ‘see, God is witness between me and you’, make God the guarantor of a promise no one else can check.",
+      "words": [
+        "H4709H",
+        "H6822",
+        "H3068G",
+        "H5641",
+        "H6031B",
+        "H0802H",
+        "H5707"
+      ],
+      "history": "Mizpah (‘watchtower’) was a common place name in Israel, and several different places bore it. The Mizpah of Gilead appears again in the story of Jephthah, who repeated his terms before the LORD there (Judges 10:17, 11:11, 11:29).",
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "Laban's oath invokes God as the witness who sees what no one else can. Scripture repeatedly calls on God in this role (Jeremiah 42:5, 1 Samuel 12:5), which is why a covenant sworn before him was held to bind even in private."
+        }
+      ],
+      "refs": [
+        "Judges 11:11",
+        "Judges 10:17",
+        "Jeremiah 42:5",
+        "1 Samuel 12:5"
+      ]
+    },
+    {
+      "v": "51-53",
+      "context": "Laban defines the heap and pillar as a boundary neither man may cross to harm the other, and invokes the God of Abraham and the God of Nahor to judge. Jacob swears too, but only by the Fear of his father Isaac.",
+      "grammar": "The key terms repeat: hinneh haggal hazzeh vehinneh hammatsevah, ‘look, this heap, and look, the pillar’. Verse 52 states the terms in two parallel clauses, im-ani lo-e'evor, ‘that I will not pass’, and im-attah lo-ta'avor, ‘that you will not pass’, the language of a boundary agreement binding both sides equally. In verse 53 the verb yishpetu, ‘may they judge’, is plural, so Laban may be thinking of the God of Abraham and the God of Nahor as two distinct deities. Jacob's oath by pachad aviv Yitschaq, ‘the Fear of his father Isaac’, pointedly names only the God of his own line.",
+      "words": [
+        "H2009",
+        "H1530G",
+        "H4676",
+        "H3384B",
+        "H5713A",
+        "H5674A",
+        "H8199",
+        "H5152H",
+        "H7650",
+        "H6343"
+      ],
+      "text": "English translations handle the plural verb in verse 53 differently. Most, including the BSB, render it simply \"judge between us\", treating the plural as agreeing with the plural form of Elohim; others note that the plural may reflect Laban's own polytheism.",
+      "history": "Stones set up to mark a boundary and to witness an agreement were common in the ancient Near East, and Israel's law later protected boundary markers (Deuteronomy 19:14). The line agreed here, in Gilead between Israel's ancestor and an Aramean, lay in the region Israel and the Aramean kingdom of Damascus would later fight over.",
+      "refs": [
+        "Deuteronomy 19:14",
+        "Genesis 11:26-29",
+        "Joshua 24:2",
+        "Genesis 31:42"
+      ]
+    },
+    {
+      "v": "54-55",
+      "context": "Jacob offers a sacrifice and hosts a meal on the mountain, sealing the covenant. In the morning Laban kisses his grandchildren and daughters, blesses them, and goes home. With that Laban leaves the story.",
+      "grammar": "Vayyizbach Ya'aqov zevach, \"Jacob offered a sacrifice\", pairs verb and noun from the same root, zavach, the ordinary word for slaughtering an animal in sacrifice; the meat was then eaten by the worshipers. Vayyiqra le'echav le'ekhol-lachem, ‘he called his kinsmen to eat bread’, uses lechem, ‘bread’, for food in general. Verse 55 answers Laban's complaint in verse 28: he had protested that Jacob did not let him kiss his children goodbye, and now he does. Vayyashov Lavan limqomo, ‘and Laban returned to his place’, closes his part in the story.",
+      "words": [
+        "H2076",
+        "H2077",
+        "H0398",
+        "H3899H",
+        "H5401A",
+        "H1288",
+        "H7725G",
+        "H4725"
+      ],
+      "text": "In Hebrew Bibles this final verse is numbered 32:1, and the verses of chapter 32 are numbered one higher than in English Bibles. English versions, including the BSB, keep it as 31:55, so a reader comparing a Hebrew text or commentary should allow for the difference.",
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "The covenant meal completes the treaty. Eating together after a sacrifice was a way of sealing peace, as the elders of Israel later ate and drank in God's presence at Sinai (Exodus 24:11)."
+        }
+      ],
+      "refs": [
+        "Exodus 24:11",
+        "Genesis 26:30",
+        "Genesis 31:28"
+      ]
+    }
+  ]
+}

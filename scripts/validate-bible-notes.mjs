@@ -74,6 +74,8 @@ function prose(where, text, min, max = 4000) {
   const m = `${outside} ${unverified}`.match(forbiddenRe);
   if (m) fail(where, `forbidden word "${m[1]}"`);
   if (outside.includes("!")) fail(where, "exclamation point outside quoted Scripture");
+  // Authoring tools never leak into what readers see.
+  if (/\b(the helper (parses|prints|lists|shows|gives|marks)|helper's (list|output|parsing)|bible-notes-helper|the validator)\b/i.test(outside)) fail(where, "mentions the authoring tools (say \"standard lexicons\" or \"the Hebrew/Greek\" instead)");
   for (const q of quotes) {
     const n = norm(q);
     if (n.split(" ").length >= 3 && !bible.includes(n)) fail(where, `quotation not found verbatim in the BSB: "${q.slice(0, 80)}"`);
