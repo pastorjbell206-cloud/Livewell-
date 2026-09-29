@@ -1,0 +1,187 @@
+{
+  "verses": [
+    {
+      "v": "1-2",
+      "context": "Judah's plea breaks Joseph's composure. He clears the room of Egyptians so that the revelation belongs to the family alone, and then he weeps so loudly that the Egyptians outside hear it and the news reaches Pharaoh's household.",
+      "grammar": "Lehitappeq, \"control himself\", is the verb used when Joseph restrained himself after weeping in 43:31. What he managed then he cannot manage now. Behitvadda, \"when he made himself known\", is a Hithpael of yada, ‘to know’, a reflexive form found elsewhere only in Numbers 12:6, where God says he makes himself known to a prophet in a vision. Vayyitten et-qolo bivkhi, \"he wept so loudly\", is literally ‘he gave his voice in weeping’.",
+      "words": ["H0662", "H5324", "H3045", "H6963A", "H1065"],
+      "theology": [
+        {
+          "id": "love",
+          "note": "Joseph's first act is to protect his brothers from public shame. He sends the Egyptians out before the old crime is named, so that the truth is spoken in private, among the family, where it can be forgiven."
+        }
+      ],
+      "refs": ["Genesis 43:30-31", "Numbers 12:6", "Matthew 18:15"]
+    },
+    {
+      "v": "3",
+      "context": "Two words in Hebrew, ani Yosef, \"I am Joseph\", overturn everything the brothers thought they knew. Joseph's first question is about his father. The brothers cannot answer; they are terrified.",
+      "grammar": "Joseph had already asked whether their father was alive (43:27), but there he said ‘your father’; now he says ‘my father’, abi. The question is the same and the relationship is new. Nivhalu, \"they were terrified\", is a Niphal of bahal, a word for sudden dismay or panic; it describes the chiefs of Edom in the Song of the Sea (Exodus 15:15) and Saul before the medium at Endor (1 Samuel 28:21). The brothers expect vengeance.",
+      "words": ["H0589", "H2416A", "H6030B", "H0926"],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The brothers' terror is the natural response of the guilty before the one they wronged, who now has full power over them. What follows shows judgment giving way to mercy, but the text does not skip the terror."
+        }
+      ],
+      "refs": ["Genesis 43:27", "Exodus 15:15", "Luke 24:36-39"]
+    },
+    {
+      "v": "4",
+      "context": "Joseph calls his brothers close and names himself again, this time with their shared history: \"I am Joseph, your brother,\" and then, \"the one you sold into Egypt\". Forgiveness in this chapter begins by stating the wrong.",
+      "grammar": "Geshu-na elai, ‘come near to me, please’, uses nagash, the verb of Judah's approach in 44:18 (vayyiggash). Judah drew near to plead; now Joseph invites them all near. Asher mekhartem oti mitsrayemah, ‘whom you sold to Egypt’, uses makhar, ‘to sell’, the verb Judah proposed in 37:27. Joseph names himself first by relationship (‘your brother’) and only then by the crime.",
+      "words": ["H5066G", "H4376", "H4714G"],
+      "refs": ["Genesis 37:27-28", "Genesis 44:18", "Acts 7:13"]
+    },
+    {
+      "v": "5",
+      "context": "Immediately after naming their act, Joseph reframes it. They are not to torment themselves or burn with anger at themselves, because God was at work in what they did: God sent him ahead to preserve life.",
+      "grammar": "Al teatsevu, \"do not be distressed\", is a Niphal of atsav, ‘to be pained, grieved’; the related noun itsavon names the pain of labor and toil in 3:16-17. Veal yichar beeinekhem, \"or angry with yourselves\", is literally ‘let it not burn in your eyes’, the same verb of burning anger Judah used when he asked Joseph not to be angry with him (44:18). Verse 5 then sets two verbs against each other: mekhartem oti henah, ‘you sold me here’, and shelachani Elohim, ‘God sent me’. Lemichyah, \"to save lives\", means ‘for the preservation of life’.",
+      "words": ["H6087A", "H2734", "H4376", "H4241", "H7971G"],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "Joseph does not say that God merely permitted the sale or repaired it afterward. He says God sent him, using the same event the brothers caused. Scripture holds both descriptions of one act without resolving how they fit together."
+        }
+      ],
+      "refs": ["Genesis 50:19-21", "Psalm 105:16-17", "Acts 2:23", "2 Corinthians 7:10"]
+    },
+    {
+      "v": "6-7",
+      "context": "Joseph explains God's purpose in terms of the calendar: two years of famine are past and five remain. God sent him ahead so that the family would survive. The whole Joseph story, from the dreams to this room, served that end.",
+      "grammar": "Charish veqatsir, \"plowing or harvesting\", pairs the beginning and end of the farming year; the same pair appears in the sabbath law, which requires rest even in plowing time and harvest (Exodus 34:21). In verse 7 two nouns carry the purpose. Sheerit, \"a remnant\", means what is left after loss. Peletah, \"deliverance\", means an escape and also the group that escapes, the survivors. The prophets later pair these same two words for the survivors of Judah who carry the promise forward (2 Kings 19:30-31; Isaiah 37:31-32). Ulehachayot, ‘to keep alive’, is a Hiphil of chayah, ‘to live’.",
+      "words": ["H8141", "H2758", "H7105A", "H7611", "H2421", "H6413"],
+      "history": "Joseph was thirty when he entered Pharaoh's service (41:46). Seven years of plenty and two years of famine have passed, so he is now about thirty-nine, roughly twenty-two years after his brothers sold him at seventeen (37:2).",
+      "text": "The last phrase of verse 7 is translated in two ways. The BSB and many others read \"by a great deliverance\", taking peletah as an act of rescue. Others (for example the NRSV) read ‘to keep alive for you many survivors’, taking peletah as the surviving group. Both senses are attested for the word.",
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "God's rescue here is physical survival through famine, and it is also the preservation of the line through which the promise to Abraham will come. The vocabulary of remnant and survivors will later carry the hope of rescue through judgment and exile."
+        },
+        {
+          "id": "exile",
+          "note": "The family is saved by going down into a foreign land. The pattern of a remnant preserved outside the land, and brought through it, returns in Israel's later history in Babylon."
+        }
+      ],
+      "refs": ["Genesis 41:46", "Exodus 34:21", "Isaiah 37:31-32", "Ezra 9:8", "Romans 11:5"]
+    },
+    {
+      "v": "8",
+      "context": "The climax of Joseph's speech denies the brothers the last word: it was not they who sent him, but God. Then he lists the three positions God gave him: father to Pharaoh, lord of his house, and ruler over Egypt.",
+      "grammar": "Lo-attem shelachtem oti henah ki haelohim, ‘not you sent me here, but God’, places the pronoun attem, ‘you’, first and negates it, then answers it with haelohim, ‘God’, with the article. Hebrew negation of this kind can be relative rather than absolute: it may mean ‘not so much you as God’, since Joseph has just said plainly that they sold him (vv. 4-5). Av lefaroh, \"a father to Pharaoh\", uses father for a senior counselor; Isaiah 22:21 speaks of a royal steward becoming a father to Jerusalem. Moshel, \"ruler\", is a Qal participle of mashal, ‘to rule’.",
+      "words": ["H7971G", "H0430G", "H0001G", "H0113", "H4910"],
+      "theology": [
+        {
+          "id": "sovereignty",
+          "note": "God's rule extends over human evil without making God the author of it. Joseph's sentence does not erase what the brothers did; it places their act inside a larger purpose that they did not intend and could not defeat."
+        }
+      ],
+      "refs": ["Genesis 41:40-43", "Genesis 50:20", "Isaiah 22:21", "Proverbs 16:9", "Romans 8:28"]
+    },
+    {
+      "v": "9-11",
+      "context": "Joseph turns at once to practical care. He gives the brothers a message for Jacob: God has made Joseph lord of Egypt, so come down quickly, settle in Goshen near me, and I will provide for you through the five years of famine still to come.",
+      "grammar": "Koh amar binkha Yosef, \"This is what your son Joseph says\", is the messenger formula, the same form the prophets use for ‘Thus says the LORD’. Redah elai al taamod, ‘come down to me, do not stand still’, is urgent. Vekhilkalti, \"I will provide for\", is from kul, ‘to sustain, supply’; Joseph uses the same verb in 47:12 and in his final promise to his brothers in 50:21. Pen-tivvaresh, \"come to destitution\", is a Niphal of yarash, usually ‘to possess’ or ‘inherit’: in this passive form it means to be dispossessed, which is the opposite of what God promised Abraham's family.",
+      "words": ["H3541", "H1657G", "H7138", "H3557", "H3423I"],
+      "history": "Goshen lay in the eastern Nile Delta, and many scholars place it around the Wadi Tumilat, a valley running east from the Delta toward the Bitter Lakes. The Septuagint, the ancient Greek translation, calls it ‘Gesem of Arabia’, placing it on the eastern side toward the desert. It was good grazing land, close to the frontier and apart from the Egyptian heartland.",
+      "theology": [
+        {
+          "id": "family",
+          "note": "Joseph's forgiveness takes the form of land, nearness, and food. He wants the whole household, including grandchildren, flocks, and herds, close to him and cared for."
+        }
+      ],
+      "refs": ["Genesis 46:28-34", "Genesis 47:6", "Genesis 47:12", "Genesis 50:21"]
+    },
+    {
+      "v": "12-13",
+      "context": "Joseph appeals to their own eyes and Benjamin's as witnesses that it really is he who is speaking. He charges them to tell his father about his honor in Egypt and to bring him quickly.",
+      "grammar": "Ki fi hamdabber aleikhem, \"that I, Joseph, am the one speaking with you\", is literally ‘that it is my mouth that speaks to you’. The Jewish commentator Rashi took this to mean that Joseph was now speaking Hebrew to them directly, without an interpreter (42:23), a reading many later interpreters have followed. Kevodi, \"my splendor\", is kavod, ‘weight’ or ‘glory’, the standing and wealth that give a man weight.",
+      "words": ["H5869A", "H1144G", "H6310G", "H3519"],
+      "refs": ["Genesis 42:23", "Genesis 41:41-44", "Psalm 105:21-22"]
+    },
+    {
+      "v": "14-15",
+      "context": "Joseph embraces Benjamin, and the two sons of Rachel weep together. Then he kisses all his brothers, weeping over each, and only after that do the brothers speak with him.",
+      "grammar": "Vayyippol al-tsavvrei, ‘he fell on the neck of’, is the embrace of reunion. Esau greeted Jacob this way (33:4), Joseph will greet Jacob this way (46:29), and the father in Jesus' parable runs and embraces his returning son in the same manner (Luke 15:20). The last clause, veacharei khen dibberu echav itto, ‘and after that his brothers spoke with him’, answers 37:4, where the brothers hated Joseph and could not speak peaceably to him. The same verb dabar, ‘to speak’, marks the beginning and the end of the estrangement.",
+      "words": ["H6677A", "H1058", "H5401A", "H1696G"],
+      "theology": [
+        {
+          "id": "family",
+          "note": "The family's wound began with speech that could not happen (37:4). It heals when Joseph's tears and kisses make it possible for his brothers to talk with him again."
+        }
+      ],
+      "refs": ["Genesis 33:4", "Genesis 37:4", "Genesis 46:29", "Luke 15:20"]
+    },
+    {
+      "v": "16-18",
+      "context": "News of the reunion reaches Pharaoh, who is pleased and issues his own invitation. He tells Joseph to have the brothers load their animals, bring the family, and receive the best of Egypt.",
+      "grammar": "Vayyitav beeinei faroh, \"Pharaoh and his servants were pleased\", is literally ‘it was good in Pharaoh's eyes’. Tuv erets mitsrayim, \"the best of the land of Egypt\", and chelev haarets, \"the fat of the land\", are two expressions for the richest produce. Chelev is the word for the fat portions reserved for God in the sacrifices (Leviticus 3:16), and it can mean the best of anything (Numbers 18:12).",
+      "words": ["H3190", "H2943", "H2898", "H2459"],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "Pharaoh's generosity toward Joseph's family is the fruit of Joseph's faithful service. God's care for the family comes through a foreign king's goodwill, as it will be threatened later by another king's fear (Exodus 1:8-10)."
+        }
+      ],
+      "refs": ["Genesis 47:5-6", "Numbers 18:12", "Exodus 1:8-10"]
+    },
+    {
+      "v": "19-20",
+      "context": "Pharaoh adds wagons for the women and children and for Jacob himself, and tells the family not to worry about leaving belongings behind: the best of Egypt is theirs.",
+      "grammar": "Veattah tsuveitah, \"You are also directed\", is a Pual, a passive: Pharaoh is authorizing Joseph to extend the offer in his name. Agalot, \"wagons\", are carts, usually drawn by oxen. \"Pay no regard to your belongings\" is literally ‘let your eye not pity your things’. The verb chus, ‘to pity, spare’, is used in Deuteronomy's commands that the eye must not pity (Deuteronomy 7:16), and here it means: don't grieve over what you leave behind.",
+      "words": ["H6680", "H5699", "H2945", "H2347", "H3627"],
+      "refs": ["Deuteronomy 7:16", "Genesis 46:5-7"]
+    },
+    {
+      "v": "21-23",
+      "context": "The brothers, now called the sons of Israel, prepare to leave. Joseph gives them wagons and food for the road, new clothes for each, and for Benjamin silver and five changes of clothes. For his father he sends twenty loaded donkeys.",
+      "grammar": "Al-pi faroh, \"as Pharaoh had instructed\", is literally ‘according to the mouth of Pharaoh’. Chalifot semalot, \"new garments\", is literally ‘changes of clothing’, festive garments given as gifts or prizes (Judges 14:12-13; 2 Kings 5:5). In verse 23 ten male donkeys carry ‘the good things of Egypt’ and ten female donkeys carry bar valechem umazon, ‘grain, bread, and food’. The three nouns pile up the abundance.",
+      "words": ["H5699", "H6720", "H2487", "H8071", "H3701G", "H0860"],
+      "history": "Garments mark every turn of the Joseph story: the robe his father gave him (37:3), the robe the brothers stripped and dipped in blood (37:23, 31), the garment Potiphar's wife seized (39:12), and the fine linen Pharaoh gave him (41:42). Now Joseph clothes the brothers who stripped him. Three hundred shekels was a large sum, many times the twenty shekels for which Joseph was sold (37:28).",
+      "theology": [
+        {
+          "id": "family",
+          "note": "Benjamin is again singled out, now with five sets of clothes, in front of the brothers who once envied a favored son's garment. Joseph's gift trusts them to bear it, and the text gives no sign of resentment."
+        }
+      ],
+      "refs": ["Genesis 37:3", "Genesis 37:28", "Genesis 41:42", "Genesis 43:34", "Judges 14:12-13"]
+    },
+    {
+      "v": "24",
+      "context": "Joseph sends his brothers off with a parting word, \"Do not quarrel on the way!\" After everything that has come into the open, they will have much to say to one another on the road home.",
+      "grammar": "Al-tirgezu, from ragaz, ‘to tremble, be agitated’, can describe fear (the nations trembling in Exodus 15:14), grief (David shaken by Absalom's death, 2 Samuel 18:33), or anger. The BSB and most versions take it as a warning against quarreling, perhaps over who was to blame for the sale; others take it as ‘don't be afraid on the way’. The context supports either.",
+      "words": ["H7971G", "H7264", "H1870L"],
+      "refs": ["Exodus 15:14", "2 Samuel 18:33", "Genesis 42:22"]
+    },
+    {
+      "v": "25-26",
+      "context": "The brothers reach Jacob in Canaan and blurt out the news: Joseph is alive and rules Egypt. The shock is too great. Jacob's heart goes numb, and he does not believe them.",
+      "grammar": "Od Yosef chai, \"Joseph is still alive\", uses the same words as Joseph's question in verse 3, now as a statement. Vayyafog libbo, \"Jacob was stunned\", is literally ‘his heart grew numb’, from pug, ‘to be cold, feeble’; the same verb describes the law paralyzed in Habakkuk 1:4. Lo heemin lahem, \"he did not believe them\", uses the Hiphil of aman, the verb of Abram's faith in 15:6. The sons who once deceived their father with a bloody robe now find that he cannot believe them when they tell the truth.",
+      "words": ["H2416A", "H4910", "H6313", "H3820A", "H0539"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Jacob's unbelief is not defiance but the numbness of long grief. Scripture often shows faith struggling to accept good news that seems too good, as when the disciples disbelieved for joy at the risen Jesus (Luke 24:41)."
+        }
+      ],
+      "refs": ["Genesis 15:6", "Genesis 37:31-35", "Luke 24:11", "Luke 24:41"]
+    },
+    {
+      "v": "27-28",
+      "context": "Jacob hears Joseph's words and sees the wagons, and his spirit revives. The narrator calls him Israel as he decides: enough, Joseph my son is alive, and I will go to see him before I die.",
+      "grammar": "Vatechi ruach yaaqov, \"the spirit of their father Jacob was revived\", is literally ‘the spirit of Jacob lived’, using the verb chayah that runs through the chapter (vv. 3, 7, 26, 28). A man who had said he would go down to Sheol mourning (37:35) comes back to life. Rav, \"Enough\", is a single word, ‘much’ or ‘it is enough’. Beterem amut, \"before I die\", turns the old refrain about the grave into a goal: he will see his son first.",
+      "words": ["H5699", "H2421", "H7307G", "H7227A", "H3478"],
+      "theology": [
+        {
+          "id": "hope",
+          "note": "The son Jacob mourned as dead is alive, and the father's spirit is revived by the news. The New Testament does not cite this scene, but its shape, grief over a son given up for dead turned into life, is the shape Christian hope takes in the resurrection."
+        },
+        {
+          "id": "israel",
+          "note": "The name Israel marks Jacob as the bearer of the promise at the moment he decides to take the family to Egypt. The descent that begins here will end with a nation brought out in the exodus."
+        }
+      ],
+      "refs": ["Genesis 37:35", "Genesis 46:1-4", "Genesis 46:30", "Luke 15:24", "Luke 15:32"]
+    }
+  ]
+}
