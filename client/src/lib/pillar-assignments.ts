@@ -1682,5 +1682,13 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
   "deconstruction-without-reconstruction": { "pillar": 2, "subThemes": [], "confidence": "high" },
   "right-side-of-history": { "pillar": 2, "subThemes": [], "confidence": "high" },
   "the-sin-we-stopped-naming": { "pillar": 2, "subThemes": [], "confidence": "high" },
-  "when-justice-becomes-a-gospel": { "pillar": 2, "subThemes": [], "confidence": "high" }
+  "when-justice-becomes-a-gospel": { "pillar": 2, "subThemes": [], "confidence": "high" },
+  // Written 2026-09-29 for pillar 2 after the board review (reviewed drafts in
+  // docs/drafts/capture-left).
+  "progressive-christians-and-abortion": { "pillar": 2, "subThemes": [], "confidence": "high" },
+  "cancel-culture-without-absolution": { "pillar": 2, "subThemes": [], "confidence": "high" },
+  "the-respectable-church": { "pillar": 2, "subThemes": [], "confidence": "high" },
+  "social-gospel-kingdom-without-a-king": { "pillar": 2, "subThemes": [], "confidence": "high" },
+  "why-mainline-churches-declined": { "pillar": 2, "subThemes": [], "confidence": "high" },
+  "bible-with-a-scalpel": { "pillar": 2, "subThemes": [], "confidence": "high" }
 };

@@ -178,6 +178,7 @@ export default function Theology() {
               { href: "/theology/creeds", title: "Creeds and confessions", desc: "The historic creeds in full, and the great confessions." },
               { href: "/theology/hermeneutics", title: "How to read the Bible well", desc: "The rules of interpretation and the mistakes to avoid." },
               { href: "/theology/which-view", title: "Which view am I?", desc: "Answer a few questions and see where you lean." },
+              { href: "/scholars", title: "Scholars and witnesses", desc: "Every writer the site cites, A to Z, and where each is discussed." },
             ].map((t) => (
               <Link key={t.href} href={t.href} style={{ ...card, borderTop: "1px solid var(--border)" }}>
                 <div style={{ fontFamily: "var(--F)", fontSize: "18px", fontWeight: 500, color: "var(--ink)", marginBottom: "6px" }}>{t.title}</div>

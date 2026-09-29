@@ -1,67 +1,123 @@
 {
  "affirmation-is-not-love": {
-  "metaDescription": "Therapeutic culture taught us that to love someone is to confirm them.",
-  "source": "derived",
-  "grade": 6.8,
-  "excerptGrade": 5.6,
-  "qa": {
-   "question": "Is Affirmation the Same as Love?",
-   "answer": "Therapeutic culture taught us that to love someone is to confirm them. But real love wills the good of the other, and sometimes that means telling the truth they do not want to hear. A pastor on the difference, and why it costs."
-  }
+  "metaDescription": "Is affirmation the same as love? What Augustine, Aquinas, Lewis, Bonhoeffer and the Gospels teach about a love that wills the good and tells the truth.",
+  "source": "rewrite",
+  "grade": 6.7,
+  "excerptGrade": 11
  },
  "authority-we-traded-for-authenticity": {
-  "metaDescription": "Somewhere in the last few decades a sentence changed shape in the Christian mouth. The old sentence was 'the Bible says.'",
-  "source": "derived",
-  "grade": 9.5,
-  "excerptGrade": 5,
+  "metaDescription": "Is Scripture or lived experience a Christian's final authority? The case for experience at its strongest, and why the church reads the Bible by the creed.",
+  "source": "rewrite",
+  "grade": 7.2,
+  "excerptGrade": 20.2,
   "qa": {
-   "question": "Is the Bible the Final Word, or Am I?",
-   "answer": "Somewhere in the last few decades a sentence changed shape in the Christian mouth. The old sentence was 'the Bible says.' The new one is 'I feel like God is.' We thought we were gaining freedom. We were changing kings."
+   "question": "Is the Bible or My Experience the Final Authority?",
+   "answer": "In a generation the Christian sentence changed from 'the Bible says' to 'I feel like God is.' Experience has corrected the church before, but only as a witness brought to Scripture, never as the judge seated above it, and the right has made the same trade in a louder voice."
+  }
+ },
+ "bible-with-a-scalpel": {
+  "metaDescription": "Red-letter and trajectory readings of the Bible get something right: the canon moves, and Jesus is its center.",
+  "source": "derived",
+  "grade": 11.8,
+  "excerptGrade": 7.4,
+  "qa": {
+   "question": "Can You Pick and Choose Which Parts of the Bible to Follow?",
+   "answer": "Red-letter and trajectory readings of the Bible get something right: the canon moves, and Jesus is its center. But a center that silences the rest of the canon has become a knife, and the right has its own blade in Romans 13. The older way reads the whole."
+  }
+ },
+ "cancel-culture-without-absolution": {
+  "metaDescription": "Call-out culture kept the church's whole grammar of sin, confession and penance and threw away the one word that made it bearable: absolution.",
+  "source": "derived",
+  "grade": 11.8,
+  "excerptGrade": 11.7,
+  "qa": {
+   "question": "Is Cancel Culture a Religion Without Forgiveness?",
+   "answer": "Call-out culture kept the church's whole grammar of sin, confession and penance and threw away the one word that made it bearable: absolution. The progressive church adopted that economy, the right runs its own version, and only the cross has ever been able to close the account."
   }
  },
  "cheap-grace-left-hand": {
-  "metaDescription": "Bonhoeffer's cheap grace is usually aimed at the easy-believism of the right.",
-  "source": "derived",
-  "grade": 9.7,
-  "excerptGrade": 6.6
+  "metaDescription": "What Bonhoeffer meant by cheap grace, how right and left each keep a version of it, and why the cross holds forgiveness and accountability together.",
+  "source": "rewrite",
+  "grade": 12.1,
+  "excerptGrade": 10.2
  },
  "conscience-outsourced-to-party": {
-  "metaDescription": "We talk about the church captured by the political right. A pastor on the conscience we handed our tribe without ever signing the papers.",
-  "source": "derived",
-  "grade": 7.3,
+  "metaDescription": "Can a Christian be loyal to a political party? What Haidt, Niebuhr, Barmen and Daniel teach about partisanship, conscience and where loyalty ends.",
+  "source": "rewrite",
+  "grade": 7.9,
   "excerptGrade": 7,
   "qa": {
-   "question": "Should a Christian Follow a Political Party?",
-   "answer": "We talk about the church captured by the political right. The left's version is harder to see, because the left believes it is the side that thinks for itself. A pastor on the conscience we handed our tribe without ever signing the papers."
+   "question": "Should Christians Be Loyal to a Political Party?",
+   "answer": "We talk constantly about the church captured by the political right. The left's capture is harder to see, because the left believes it is the side that thinks for itself. A Christian may use a party; the danger is letting it keep his conscience."
   }
  },
  "deconstruction-without-reconstruction": {
-  "metaDescription": "The exvangelical wave got the diagnosis right. The wounds are real and the church earned most of them.",
-  "source": "derived",
-  "grade": 4.3,
-  "excerptGrade": 6.7,
+  "metaDescription": "Why progressive Christianity is often where deconstruction lands, what liberal Protestantism's history shows about it, and how the creed rebuilds a faith.",
+  "source": "rewrite",
+  "grade": 14.4,
+  "excerptGrade": 10.1,
   "qa": {
-   "question": "What Happens After You Deconstruct Your Faith?",
-   "answer": "The exvangelical wave got the diagnosis right. The wounds are real and the church earned most of them. But deconstructing your faith and never rebuilding is not freedom, it is an empty house, and empty houses do not stay empty."
+   "question": "Is Progressive Christianity What Comes After Deconstruction?",
+   "answer": "Many who take apart an evangelical faith rebuild it as progressive Christianity. The church ran that experiment once already, and its record shows that a faith rebuilt from our own ideals ends up looking like us."
+  }
+ },
+ "progressive-christians-and-abortion": {
+  "metaDescription": "The progressive Christian conscience was formed by one conviction: no one gets to decide that a weaker human being doesn't count.",
+  "source": "derived",
+  "grade": 10,
+  "excerptGrade": 7.8,
+  "qa": {
+   "question": "Can a Progressive Christian Be Pro-Life?",
+   "answer": "The progressive Christian conscience was formed by one conviction: no one gets to decide that a weaker human being doesn't count. On the unborn, that conscience goes quiet. The oldest Christian ethic, and Bernardin's consistent ethic of life, ask it to finish its own sentence."
   }
  },
  "right-side-of-history": {
-  "metaDescription": "\"The right side of history\" is the most successful piece of secular theology of our age, and the American church swallowed it whole.",
+  "metaDescription": "Where the phrase 'the right side of history' came from, why it carries such moral force, and how Christian hope differs from faith in progress.",
+  "source": "rewrite",
+  "grade": 9.3,
+  "excerptGrade": 8.8,
+  "qa": {
+   "question": "Is 'the Right Side of History' a Christian Idea?",
+   "answer": "The phrase began as a confession that God bends history toward justice. It now means history bends itself and we need only guess its direction, and that is a different faith with a different judge."
+  }
+ },
+ "social-gospel-kingdom-without-a-king": {
+  "metaDescription": "Walter Rauschenbusch recovered something the American church had lost: a kingdom as wide as the world.",
+  "source": "derived",
+  "grade": 11.3,
+  "excerptGrade": 7.9,
+  "qa": {
+   "question": "What Was the Social Gospel, and Where Did It Go Wrong?",
+   "answer": "Walter Rauschenbusch recovered something the American church had lost: a kingdom as wide as the world. Within a generation his heirs kept the kingdom and let go of the King. The way back is not to shrink his kingdom but to set it again on its only foundation."
+  }
+ },
+ "the-respectable-church": {
+  "metaDescription": "The educated progressive congregation kept the ethics its class admires and quietly dropped the offense of the cross.",
   "source": "derived",
   "grade": 12.4,
-  "excerptGrade": 8.4
+  "excerptGrade": 10,
+  "qa": {
+   "question": "Why Is the Church So Middle Class?",
+   "answer": "The educated progressive congregation kept the ethics its class admires and quietly dropped the offense of the cross. The suburban evangelical church kept the doctrine and dropped the class-crossing the doctrine demands. James 2 and 1 Corinthians 1 describe a church neither would recognize."
+  }
  },
  "the-sin-we-stopped-naming": {
-  "metaDescription": "Progressive Christianity recovered structural sin and called it justice.",
-  "source": "derived",
-  "grade": 15.5,
-  "excerptGrade": 11
+  "metaDescription": "Why progressive and conservative churches stopped confessing personal sin, what the tradition knew about the sins of the good, and how confession heals.",
+  "source": "rewrite",
+  "grade": 13.4,
+  "excerptGrade": 12.6
  },
  "when-justice-becomes-a-gospel": {
-  "metaDescription": "Is social justice biblical? Yes, which is exactly why it makes such a convincing god.",
+  "metaDescription": "Is social justice biblical, and can it become a gospel of its own? How a true conviction turns into an idol, and how justice stays rooted in the cross.",
+  "source": "rewrite",
+  "grade": 6.7,
+  "excerptGrade": 8.3
+ },
+ "why-mainline-churches-declined": {
+  "metaDescription": "The mainline's decline has many honest explanations, and birth rates explain more of it than evangelicals like to admit.",
   "source": "derived",
-  "grade": 6.2,
-  "excerptGrade": 6.1
+  "grade": 12.9,
+  "excerptGrade": 10.8
  },
  "nostalgia-is-not-the-kingdom": {
   "metaDescription": "The longing for a lost Christian America feels like faith and works like idolatry.",

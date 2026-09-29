@@ -1834,7 +1834,7 @@ export const SOCIAL_QUOTES: SocialQuote[] = [
     author: "James Bell",
   },
   {
-    text: "Progressive Christianity recovered structural sin, which was a genuine gain, and then lost personal sin, which was a catastrophe — and the recovered half, cut loose from the lost half, has quietly become the most respectable form of self-righteousness the modern church has produced.",
+    text: "The danger in that drift was not only that sinners would stop hearing about sin. It was that reformers would stop hearing about their own.",
     articleSlug: "the-sin-we-stopped-naming",
     articleTitle: "Why the Church Stopped Talking About Sin",
     pillar: "Prophetic Disruption",
@@ -1843,7 +1843,7 @@ export const SOCIAL_QUOTES: SocialQuote[] = [
     author: "James Bell",
   },
   {
-    text: "I get to be against sin without ever being a sinner. It is the most comfortable position in the history of moral thought. We found it. We called it justice.",
+    text: "When sin is only structural, it is never quite mine.",
     articleSlug: "the-sin-we-stopped-naming",
     articleTitle: "Why the Church Stopped Talking About Sin",
     pillar: "Prophetic Disruption",
@@ -1852,7 +1852,7 @@ export const SOCIAL_QUOTES: SocialQuote[] = [
     author: "James Bell",
   },
   {
-    text: "The publican said five words and went home justified. We have written the libraries and gone home certain.",
+    text: "Repentance isn't regret, and it isn't analysis. It's the will turned around, and it's only possible where there's something to turn toward.",
     articleSlug: "the-sin-we-stopped-naming",
     articleTitle: "Why the Church Stopped Talking About Sin",
     pillar: "Prophetic Disruption",
@@ -1861,7 +1861,7 @@ export const SOCIAL_QUOTES: SocialQuote[] = [
     author: "James Bell",
   },
   {
-    text: "The faith was supposed to judge the politics. Now the politics tells the faith what it is allowed to feel.",
+    text: "A Christian may use a party as an instrument. What he may not do is let the party keep his conscience.",
     articleSlug: "conscience-outsourced-to-party",
     articleTitle: "Should a Christian Follow a Political Party?",
     pillar: "Prophetic Disruption",
@@ -1870,7 +1870,7 @@ export const SOCIAL_QUOTES: SocialQuote[] = [
     author: "James Bell",
   },
   {
-    text: "The conscience you outsource for small things will not be there for the large ones. The muscle you never use does not come back when you need it.",
+    text: "A person who has handed his conscience to his tribe does not experience anything being handed over. He experiences himself as finally seeing clearly.",
     articleSlug: "conscience-outsourced-to-party",
     articleTitle: "Should a Christian Follow a Political Party?",
     pillar: "Prophetic Disruption",
@@ -1879,7 +1879,7 @@ export const SOCIAL_QUOTES: SocialQuote[] = [
     author: "James Bell",
   },
   {
-    text: "We have never once disappointed our tribe on a thing that mattered to it, and we have mistaken that perfect record of agreement for integrity, when it is the surest evidence the capture is complete.",
+    text: "If you cannot name one, if your convictions and your tribe's platform lie on top of each other with no daylight anywhere, then on these matters you do not have a conscience. You have a membership.",
     articleSlug: "conscience-outsourced-to-party",
     articleTitle: "Should a Christian Follow a Political Party?",
     pillar: "Prophetic Disruption",
@@ -1888,7 +1888,7 @@ export const SOCIAL_QUOTES: SocialQuote[] = [
     author: "James Bell",
   },
   {
-    text: "A justice that begins as the fruit of the gospel can grow a gospel of its own — its own fall, its own villain, its own salvation — and the one thing it loses in the growing is the only thing that made it Christian: grace for the people it has named the enemy.",
+    text: "A justice that grows from the gospel keeps mercy for the people it opposes. A justice that has become its own gospel can't, because mercy would release the villain, and the villain is holding up the building.",
     articleSlug: "when-justice-becomes-a-gospel",
     articleTitle: "When Justice Becomes a Gospel",
     pillar: "Prophetic Disruption",
@@ -1897,7 +1897,7 @@ export const SOCIAL_QUOTES: SocialQuote[] = [
     author: "James Bell",
   },
   {
-    text: "A Christianity with no passion for justice is not a more spiritual Christianity. It is a lie that has learned to fold its hands.",
+    text: "A Christianity with no passion for justice is no more spiritual for the lack; it's a lie that has learned to fold its hands.",
     articleSlug: "when-justice-becomes-a-gospel",
     articleTitle: "When Justice Becomes a Gospel",
     pillar: "Prophetic Disruption",
@@ -1906,7 +1906,7 @@ export const SOCIAL_QUOTES: SocialQuote[] = [
     author: "James Bell",
   },
   {
-    text: "There is a justice that flows from the gospel like water from a struck rock. And there is a justice that has quietly replaced the rock. They look identical from the outside.",
+    text: "The way back isn't to care less. The way back is to put justice where it belongs: downstream of the cross, not upstream of it.",
     articleSlug: "when-justice-becomes-a-gospel",
     articleTitle: "When Justice Becomes a Gospel",
     pillar: "Prophetic Disruption",
@@ -1915,7 +1915,7 @@ export const SOCIAL_QUOTES: SocialQuote[] = [
     author: "James Bell",
   },
   {
-    text: "Affirmation is not love. It is the cheapest thing we mistake for it — and the church swallowed the mistake whole, baptized it, and started preaching it back to people as grace.",
+    text: "Acceptance of a person is not approval of the path he is on. Jesus offered the first without reserve and withheld the second without apology, and he never once treated them as competing loves.",
     articleSlug: "affirmation-is-not-love",
     articleTitle: "Is Affirmation the Same as Love?",
     pillar: "Prophetic Disruption",
@@ -1924,7 +1924,7 @@ export const SOCIAL_QUOTES: SocialQuote[] = [
     author: "James Bell",
   },
   {
-    text: "Love wills the good of the other. Affirmation wills the comfort of the moment. Most days they wear the same face, which is exactly why almost no one can tell them apart until the bill comes due.",
+    text: "Affirmation wills the comfort of the moment. Love wills the good of the other person.",
     articleSlug: "affirmation-is-not-love",
     articleTitle: "Is Affirmation the Same as Love?",
     pillar: "Prophetic Disruption",
@@ -1933,7 +1933,7 @@ export const SOCIAL_QUOTES: SocialQuote[] = [
     author: "James Bell",
   },
   {
-    text: "A church that loses the power to say no to the people it loves has not become more loving. It has become more afraid, and learned to call the fear kindness.",
+    text: "A love that will not let you walk away is control, and a love that will only let you stay if it never challenges you is flattery. Jesus practiced neither.",
     articleSlug: "affirmation-is-not-love",
     articleTitle: "Is Affirmation the Same as Love?",
     pillar: "Prophetic Disruption",
@@ -1942,7 +1942,7 @@ export const SOCIAL_QUOTES: SocialQuote[] = [
     author: "James Bell",
   },
   {
-    text: "Affirmation meets you in the tomb and brings flowers. Love meets you in the tomb and calls you out of it.",
+    text: "Affirmation meets you in the tomb and brings flowers. Love meets you there too, weeps with you, and calls you out.",
     articleSlug: "affirmation-is-not-love",
     articleTitle: "Is Affirmation the Same as Love?",
     pillar: "Prophetic Disruption",

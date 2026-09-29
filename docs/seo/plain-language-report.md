@@ -6,10 +6,10 @@ Search engines and answer engines see a second layer beside every essay: a meta 
 
 | Measure | Value |
 |---|---|
-| Essays with a description | 455 |
+| Essays with a description | 461 |
 | Hand-written descriptions | 2 |
-| Derived from the essay's own sentences | 453 |
-| Essays with question-and-answer data | 92 |
+| Derived from the essay's own sentences | 459 |
+| Essays with question-and-answer data | 97 |
 | Average reading grade, descriptions | 9.3 |
 | Average reading grade, original standfirsts | 9.9 |
 | Derived descriptions at grade 12 or above (hand-rewrite queue) | 40 |
@@ -28,7 +28,6 @@ Derived descriptions that still read at college level. Each is true to the essay
 | talk-global-missions-moves-congregation | 16.6 | The missions presentation is a reliable feature of the American evangelical calendar. |
 | scandals-teaching-accountability | 15.9 | The names accumulate. Pastors of megachurches. Founders of parachurch organizations. Denominational leaders with decades of respected service. |
 | the-end-of-home-field-advantage | 15.6 | For fifteen centuries the church evangelized a culture that already half believed, the vocabulary pre-taught, the guilt pre-aimed, the God assumed. |
-| the-sin-we-stopped-naming | 15.5 | Progressive Christianity recovered structural sin and called it justice. |
 | 47-engaging-the-nones-what-research-tells-us-about-reaching-the-religiously-unaffiliated | 15.4 | The "nones", people who claim no religious affiliation when surveyed, are the fastest-growing religious demographic in the United States. |
 | bivocational-pastors-get-right | 15.2 | An enormous share of American pastors, in many denominations, most of them, serve their congregations on part-time or bivocational terms. |
 | 3-illustrating-everything-with-success-stories | 15 | It implies that faithful application of biblical truth reliably produces good outcomes in visible, timely ways. |
@@ -46,13 +45,14 @@ Derived descriptions that still read at college level. Each is true to the essay
 | 10-its-okay-to-see-a-counselor-why-pastors-resist-and-why-they-shouldnt | 13.4 | Of all the things that are slowly changing in pastoral culture, the stigma around professional counseling may be the most stubbornly persistent. |
 | 44-what-the-church-in-the-global-south-can-teach-the-church-in-america-about-suffering | 13.3 | The American church has developed a sophisticated relationship with comfort. Its buildings are climate controlled. |
 | how-to-preach-to-people-who-have-heard-it-all | 13.2 | The hardest congregation is not the hostile one but the one that has already heard your text a hundred times and stopped expecting anything from it. |
+| why-mainline-churches-declined | 12.9 | The mainline's decline has many honest explanations, and birth rates explain more of it than evangelicals like to admit. |
 | the-womanhood-they-preached-was-small | 12.9 | The world I was raised in preached a womanhood of shrinkage, modesty as fear of the body, submission as erasure, silence as virtue, Scripture as a leash. |
 | what-evangelicalism-was-supposed-to-be | 12.8 | That it became something else entirely is one of the great tragedies of modern American religion. |
 | what-a-christian-owes-the-city | 12.7 | The critique of political idolatry is finished only when it builds something. |
 | staff-culture-no-burnout | 12.6 | The church staff that cannot keep good people has usually decided, usually without knowing it, that the mission matters more than the people serving it. |
 | calvinism-and-arminianism | 12.6 | The oldest and most consequential debate in Protestant theology is also the most misunderstood. |
 | 21-when-is-it-time-to-revitalize-and-when-is-it-time-to-replant | 12.5 | The language of church revitalization has been one of the most discussed topics in pastoral circles for the past decade, and for good reason. |
-| right-side-of-history | 12.4 | "The right side of history" is the most successful piece of secular theology of our age, and the American church swallowed it whole. |
+| the-respectable-church | 12.4 | The educated progressive congregation kept the ethics its class admires and quietly dropped the offense of the cross. |
 | 14-how-to-preach-the-same-gospel-to-people-who-are-nothing-alike | 12.3 | Walk into almost any established congregation in America and look at the range of people sitting in the pews. |
 | 31-when-a-church-split-happens-surviving-it-learning-from-it-moving-forward | 12.3 | Church splits are among the most painful experiences in ministry, and they are more common than the pastoral culture likes to acknowledge. |
 | give-feedback-changes-behavior | 12.3 | Most feedback conversations accomplish one thing: they make the person giving the feedback feel that they have discharged an obligation. |

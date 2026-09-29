@@ -20,6 +20,8 @@ import Home from "./pages/Home";
 const Toaster = lazy(() =>
   import("@/components/ui/sonner").then((m) => ({ default: m.Toaster }))
 );
+const ScriptureIndex = lazy(() => import("./pages/ScriptureIndex"));
+const Scholars = lazy(() => import("./pages/Scholars"));
 const Writing = lazy(() => import("./pages/Writing"));
 const ArticleDetail = lazy(() => import("./pages/ArticleDetail"));
 const Books = lazy(() => import("./pages/Books"));
@@ -570,6 +572,9 @@ function Router() {
         <Route path="/study/bible/:book/:chapter" component={StudyBible} />
         <Route path="/study/bible/:book" component={StudyBible} />
         <Route path="/study/bible" component={StudyBible} />
+        <Route path="/scripture-index/:book" component={ScriptureIndex} />
+        <Route path="/scripture-index" component={ScriptureIndex} />
+        <Route path="/scholars" component={Scholars} />
         <Route path="/study" component={Study} />
         <Route path="/tools" component={ToolsHub} />
         <Route path="/tools/verse-finder" component={VerseFinder} />
