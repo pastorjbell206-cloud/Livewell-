@@ -25,6 +25,39 @@ function initialSlug(): string {
   return c && c.published ? c.slug : DEFAULT_CASE.slug;
 }
 
+/**
+ * The picker groups cases so twenty-odd questions read as a map, not a wall of
+ * buttons. A case whose slug is not listed here still appears, under "More
+ * questions", so adding a case never hides it.
+ */
+const CASE_GROUPS: { label: string; slugs: string[] }[] = [
+  {
+    label: "God",
+    slugs: ["kalam", "contingency", "fine-tuning", "moral", "consciousness", "reason", "desire", "experience", "science", "meaning", "faith", "wishful"],
+  },
+  {
+    label: "Jesus and history",
+    slugs: ["resurrection", "historical-jesus", "gospels", "jesus", "miracles"],
+  },
+  {
+    label: "Hard questions about Christianity",
+    slugs: ["evil", "hiddenness", "hell", "pluralism", "church", "conquest", "slavery", "atonement"],
+  },
+];
+
+function groupedCases(): { label: string; cases: ArgumentCase[] }[] {
+  const listed = new Set(CASE_GROUPS.flatMap((g) => g.slugs));
+  const groups = CASE_GROUPS.map((g) => ({
+    label: g.label,
+    cases: g.slugs.map((s) => caseBySlug(s)).filter((c): c is ArgumentCase => Boolean(c)),
+  }));
+  const rest = ARGUMENT_CASES.filter((c) => !listed.has(c.slug));
+  if (rest.length) groups.push({ label: "More questions", cases: rest });
+  return groups.filter((g) => g.cases.length > 0);
+}
+
+const GROUPS = groupedCases();
+
 const wrap = { maxWidth: "var(--w-prose)", margin: "0 auto" } as const;
 
 export default function TestTheCase() {
@@ -115,7 +148,7 @@ export default function TestTheCase() {
     <Layout>
       <SEOMeta
         title="Test the Case: Push Back at Every Step"
-        description="An interactive, honest walkthrough of the case for the resurrection. Raise the objection you actually hold at each move and get the real answer, including what it does not prove. No altar call."
+        description="The hardest questions about God, Jesus and the church, from the cause of the universe to the problem of evil, argued one move at a time. Raise the objection you actually hold at each step and get the honest answer, including what it does not prove. No altar call."
         url="https://www.livewellbyjamesbell.co/tools/test-the-case"
       />
 
@@ -134,22 +167,32 @@ export default function TestTheCase() {
 
       {/* CASE PICKER */}
       <section style={{ background: "var(--bone-warm)", padding: "var(--s-4)" }}>
-        <div style={{ ...wrap, display: "flex", flexWrap: "wrap", gap: "10px", alignItems: "center" }}>
-          <span style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", color: "var(--ink-muted)", marginRight: "4px" }}>The cases</span>
-          {ARGUMENT_CASES.map((c) =>
-            c.published ? (
-              <button key={c.slug} type="button" onClick={() => switchCase(c)} aria-pressed={c.slug === active.slug}
-                style={{ ...btn, background: c.slug === active.slug ? "var(--ink)" : "var(--card)", color: c.slug === active.slug ? "var(--bone)" : "var(--ink)", border: "1px solid var(--border)" }}>
-                {c.title}
-              </button>
-            ) : (
-              <span key={c.slug} title="This case is being written"
-                style={{ ...btn, background: "transparent", color: "var(--ink-muted)", border: "1px dashed var(--border)", cursor: "default" }}>
-                {c.title} · In progress
-              </span>
-            )
-          )}
-        </div>
+        <nav aria-labelledby="case-picker-label" style={wrap}>
+          <h2 id="case-picker-label" style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", color: "var(--ink-muted)", margin: "0 0 12px" }}>The cases</h2>
+          {GROUPS.map((g, gi) => {
+            const groupId = `case-group-${gi}`;
+            return (
+              <div key={g.label} role="group" aria-labelledby={groupId} style={{ marginTop: gi === 0 ? 0 : "16px" }}>
+                <h3 id={groupId} style={{ fontFamily: "var(--F)", fontSize: "18px", fontWeight: 500, color: "var(--ink)", margin: "0 0 8px" }}>{g.label}</h3>
+                <div style={{ display: "flex", flexWrap: "wrap", gap: "10px", alignItems: "center" }}>
+                  {g.cases.map((c) =>
+                    c.published ? (
+                      <button key={c.slug} type="button" onClick={() => switchCase(c)} aria-pressed={c.slug === active.slug}
+                        style={{ ...btn, background: c.slug === active.slug ? "var(--ink)" : "var(--card)", color: c.slug === active.slug ? "var(--bone)" : "var(--ink)", border: "1px solid var(--border)" }}>
+                        {c.title}
+                      </button>
+                    ) : (
+                      <span key={c.slug} title="This case is being written"
+                        style={{ ...btn, background: "transparent", color: "var(--ink-muted)", border: "1px dashed var(--border)", cursor: "default" }}>
+                        {c.title} · In progress
+                      </span>
+                    )
+                  )}
+                </div>
+              </div>
+            );
+          })}
+        </nav>
       </section>
 
       {/* THE STEP-THROUGH */}

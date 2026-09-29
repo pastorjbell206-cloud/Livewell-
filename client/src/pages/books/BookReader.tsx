@@ -30,9 +30,6 @@ const eyebrow: React.CSSProperties = {
 interface Chapter { n: number; slug?: string; title: string; summary?: string; verdict?: string; body: string; reflect?: string[] }
 interface Book { title: string; subtitle?: string; blurb?: string; pillar?: string; chapters: Chapter[] }
 
-// Paid ebooks: downloads go through checkout, so the free reader offers no PDF.
-const PAID_BOOK_SLUGS = new Set(["born-again-from-atheism", "the-god-who-is-not-nice"]);
-
 type FontSize = "sm" | "md" | "lg";
 const FONT_SCALE: Record<FontSize, number> = { sm: 0.94, md: 1, lg: 1.12 };
 const FONT_KEY = "livewell-reader-fontsize";
@@ -207,11 +204,6 @@ export default function BookReader() {
                   <button onClick={() => goTo(1)} style={{ padding: "12px 20px", background: "transparent", color: "var(--mustard)", border: "1px solid rgba(245,240,230,0.25)", cursor: "pointer", fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, borderRadius: "var(--radius-sm)" }}>
                     Start from the beginning
                   </button>
-                )}
-                {slug && !PAID_BOOK_SLUGS.has(slug) && (
-                  <a href={`/downloads/books/${slug}.pdf`} style={{ padding: "12px 20px", background: "transparent", color: "rgba(245,240,230,0.82)", border: "1px solid rgba(245,240,230,0.25)", textDecoration: "none", fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, borderRadius: "var(--radius-sm)" }}>
-                    Download the PDF
-                  </a>
                 )}
               </div>
             )}

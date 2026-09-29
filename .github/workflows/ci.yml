@@ -46,6 +46,7 @@ jobs:
           pnpm exec tsx scripts/validate-catalogue.mjs
           node scripts/validate-bible.mjs
           node scripts/validate-bible-notes.mjs
+          node scripts/validate-downloads.mjs
 
       - name: Test
         run: pnpm test

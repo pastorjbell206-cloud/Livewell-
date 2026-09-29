@@ -6,6 +6,7 @@
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { GeneratedCover, coverThemeFor } from "@/components/GeneratedCover";
+import { PrintAndShare } from "@/components/PrintAndShare";
 import { trpc } from "@/lib/trpc";
 import { useMemo, useState } from "react";
 import { Download, Loader2, Search, X } from "lucide-react";
@@ -159,6 +160,9 @@ export default function Resources() {
           </div>
         </div>
       </section>
+
+      {/* PRINT & SHARE: every generated PDF, from /downloads/index.json */}
+      <PrintAndShare />
 
       {/* DOWNLOADS */}
       <section style={{ background: "var(--bone-warm)", padding: "var(--s-5) var(--s-4) var(--s-6)" }}>
