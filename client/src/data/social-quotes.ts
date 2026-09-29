@@ -136,7 +136,7 @@ export const SOCIAL_QUOTES: SocialQuote[] = [
   // 5. Grace Is Not a Feeling
   // ─────────────────────────────────────────────────────────────
   {
-    text: "We have made grace into a mood. A soft light, a warm acceptance, a general sense that everything is fine. And we have called that the heart of Christianity, when it is closer to its anesthetic.",
+    text: "We have made grace into a mood. A soft light, a warm acceptance, a general sense that everything is fine and no one should feel bad about anything. And we have called that the heart of Christianity, when it is closer to its anesthetic.",
     articleSlug: "grace-is-not-a-feeling",
     articleTitle: "Grace Is Not a Feeling",
     pillar: "Theological Depth",
@@ -150,7 +150,7 @@ export const SOCIAL_QUOTES: SocialQuote[] = [
     category: "wisdom",
   },
   {
-    text: "Grace is a father on a road in front of a village, his robe in his hands and his dignity on the ground, reaching a son who deserved none of it.",
+    text: "Grace is not a feeling. It is a father on a road in front of a village, his robe in his hands and his dignity on the ground, reaching a son who deserved none of it.",
     articleSlug: "grace-is-not-a-feeling",
     articleTitle: "Grace Is Not a Feeling",
     pillar: "Theological Depth",
@@ -411,21 +411,21 @@ export const SOCIAL_QUOTES: SocialQuote[] = [
   // 16. What Christian Nationalism Is and What It Is Not
   // ─────────────────────────────────────────────────────────────
   {
-    text: "You can love your country the way you love your family. You cannot love it the way you love your God. The first is commanded. The second is idolatry.",
+    text: "Patriotism loves a country. Christian nationalism marries the country to God and then refuses to let anyone file for divorce.",
     articleSlug: "what-christian-nationalism-is-and-is-not",
     articleTitle: "What Christian Nationalism Is and What It Is Not",
     pillar: "Prophetic Disruption",
     category: "conviction",
   },
   {
-    text: "The cross does not need a flag behind it. The moment you place one there, you have decided which one is the backdrop and which one is the point.",
+    text: "The test is what happens when your country and your Christ command different things. The patriot grieves and obeys Christ.",
     articleSlug: "what-christian-nationalism-is-and-is-not",
     articleTitle: "What Christian Nationalism Is and What It Is Not",
     pillar: "Prophetic Disruption",
     category: "challenge",
   },
   {
-    text: "Patriotism says this is my country and I owe it my service. Nationalism says this is God's country and he owes it his blessing. The distance between the two is everything.",
+    text: "Patriotism is a love with limits, a love that can be criticized, corrected, repented. Nationalism is a love that has become ultimate, that cannot be questioned, because to question the nation has become the same as questioning God.",
     articleSlug: "what-christian-nationalism-is-and-is-not",
     articleTitle: "What Christian Nationalism Is and What It Is Not",
     pillar: "Prophetic Disruption",
@@ -636,71 +636,46 @@ export const SOCIAL_QUOTES: SocialQuote[] = [
   // 25. The Church After Cultural Power
   // ─────────────────────────────────────────────────────────────
   {
-    text: "The store stayed closed on Sunday because the whole town agreed the day belonged to God, and now it does not. The real question is not how to get the terms back.",
+    text: "The church no longer sets the terms. The real question is not how to get the terms back. The real question is whether the church ever knew how to be the church without them.",
     articleSlug: "the-church-after-cultural-power",
     articleTitle: "The Church After Cultural Power",
     pillar: "Prophetic Disruption",
     category: "challenge",
   },
   {
-    text: "The real question is whether the church ever knew how to be the church without the culture doing half its work for free.",
+    text: "A church that can only be the church when the culture agrees with it was never depending on the Spirit. It was depending on the culture.",
     articleSlug: "the-church-after-cultural-power",
     articleTitle: "The Church After Cultural Power",
     pillar: "Prophetic Disruption",
     category: "conviction",
   },
   {
-    text: "A church that needs cultural power to survive has confused the scaffold for the building.",
+    text: "We were never as strong as the consensus made us look. We just could not tell, because the home-field edge hid the weakness.",
     articleSlug: "the-church-after-cultural-power",
     articleTitle: "The Church After Cultural Power",
     pillar: "Prophetic Disruption",
     category: "wisdom",
-  },
-
-  // ─────────────────────────────────────────────────────────────
-  // 26. How to Revitalize a Dying Church
-  // ─────────────────────────────────────────────────────────────
-  {
-    text: "Every revitalization actually begins not with a plan but with a man who has run out of plans.",
-    articleSlug: "how-to-revitalize-a-dying-church",
-    articleTitle: "How to Revitalize a Dying Church",
-    pillar: "Leadership Formation",
-    category: "wisdom",
-  },
-  {
-    text: "Average attendance down a third, the giving following it like a shadow, three funerals and no baptisms. My son asked what was wrong, and I could not answer him.",
-    articleSlug: "how-to-revitalize-a-dying-church",
-    articleTitle: "How to Revitalize a Dying Church",
-    pillar: "Leadership Formation",
-    category: "comfort",
-  },
-  {
-    text: "We ask how to grow the church, as if growth were the thing a dying church needs. The dying church does not need to grow. It needs to repent.",
-    articleSlug: "how-to-revitalize-a-dying-church",
-    articleTitle: "How to Revitalize a Dying Church",
-    pillar: "Leadership Formation",
-    category: "challenge",
   },
 
   // ─────────────────────────────────────────────────────────────
   // 27. Why Churches Close, and What Comes Next
   // ─────────────────────────────────────────────────────────────
   {
-    text: "By the time the door is locked, the dying happened years ago. She had cried years earlier, when she first understood it was over, long before anyone said it aloud.",
+    text: "Not every church should be saved. Some should be buried with honor, hands open, the way you bury a saint who finished the race. The sin is not in dying.",
     articleSlug: "why-churches-close-and-what-comes-next",
     articleTitle: "Why Churches Close, and What Comes Next",
     pillar: "Leadership Formation",
     category: "comfort",
   },
   {
-    text: "A church does not close the day the last member leaves. It closes the day the last member stops expecting anyone new to walk in.",
+    text: "The churches that close having spent themselves on the lost are not the tragedy. The tragedy is the churches that close having spent themselves on staying open.",
     articleSlug: "why-churches-close-and-what-comes-next",
     articleTitle: "Why Churches Close, and What Comes Next",
     pillar: "Leadership Formation",
     category: "conviction",
   },
   {
-    text: "The hymnal was still in the rack. The offering plates were stacked like dishes after the last guest has gone.",
+    text: "The closing of a congregation is not the closing of the kingdom. We grieve the building because we confused the building with the body, and we confused the body with the kingdom, and Christ never made either mistake.",
     articleSlug: "why-churches-close-and-what-comes-next",
     articleTitle: "Why Churches Close, and What Comes Next",
     pillar: "Leadership Formation",
@@ -718,66 +693,16 @@ export const SOCIAL_QUOTES: SocialQuote[] = [
     category: "wisdom",
   },
   {
-    text: "He had been raised on nothing, no church, no catechism, a household where religion was treated the way you treat an old superstition. And he thought it might all be true.",
+    text: "A generation exhausted by performing, by curating, by the relentless labor of authoring its own worth, hears that righteousness is a gift it cannot earn and weeps.",
     articleSlug: "why-gen-z-is-coming-back-to-church",
     articleTitle: "Why Gen Z Is Coming Back to Church",
     pillar: "Leadership Formation",
     category: "comfort",
   },
   {
-    text: "The generation the church wrote off as lost is showing up asking harder questions than the church has heard in decades. The question is whether we have answers or only atmospheres.",
+    text: "The real question is not how to get Gen Z back. The real question is what they are actually hungry for, because if we answer the wrong hunger we will fill the building for a season and empty it for a generation.",
     articleSlug: "why-gen-z-is-coming-back-to-church",
     articleTitle: "Why Gen Z Is Coming Back to Church",
-    pillar: "Leadership Formation",
-    category: "challenge",
-  },
-
-  // ─────────────────────────────────────────────────────────────
-  // 29. Replanting: When a Church Has to Start Over
-  // ─────────────────────────────────────────────────────────────
-  {
-    text: "A woman in her eighties raised her hand for yes with tears running down her face. She said dissolving the church she had given her life to was the only way to keep it from ending.",
-    articleSlug: "replanting-when-a-church-starts-over",
-    articleTitle: "Replanting: When a Church Has to Start Over",
-    pillar: "Leadership Formation",
-    category: "comfort",
-  },
-  {
-    text: "The vote was twenty-three to nine. Twenty-three older members agreed to hand their building, their name, and their Sunday to a replant they would not lead and could barely recognize.",
-    articleSlug: "replanting-when-a-church-starts-over",
-    articleTitle: "Replanting: When a Church Has to Start Over",
-    pillar: "Leadership Formation",
-    category: "challenge",
-  },
-  {
-    text: "Death and resurrection is not just a doctrine the church preaches. Sometimes it is the thing the church has to do.",
-    articleSlug: "replanting-when-a-church-starts-over",
-    articleTitle: "Replanting: When a Church Has to Start Over",
-    pillar: "Leadership Formation",
-    category: "wisdom",
-  },
-
-  // ─────────────────────────────────────────────────────────────
-  // 30. Leading a Church When Trust Is Gone
-  // ─────────────────────────────────────────────────────────────
-  {
-    text: "People listened to me preach with their arms folded, not because they disliked me but because the last man had stood in the same spot and sounded sincere, and look what that was worth.",
-    articleSlug: "leading-a-church-when-trust-is-gone",
-    articleTitle: "Leading a Church When Trust Is Gone",
-    pillar: "Leadership Formation",
-    category: "comfort",
-  },
-  {
-    text: "The wound was not in the budget. It was in the eyes.",
-    articleSlug: "leading-a-church-when-trust-is-gone",
-    articleTitle: "Leading a Church When Trust Is Gone",
-    pillar: "Leadership Formation",
-    category: "wisdom",
-  },
-  {
-    text: "You cannot lead people who do not trust you, and you cannot make them trust you. You can only be trustworthy, for as long as it takes, which is always longer than you want.",
-    articleSlug: "leading-a-church-when-trust-is-gone",
-    articleTitle: "Leading a Church When Trust Is Gone",
     pillar: "Leadership Formation",
     category: "challenge",
   },
@@ -786,21 +711,21 @@ export const SOCIAL_QUOTES: SocialQuote[] = [
   // 31. How Individualism Changed the Way We Read the Bible
   // ─────────────────────────────────────────────────────────────
   {
-    text: "A man tells me God has a plan for his life. He means his life. Singular. He did not learn that sentence from Scripture. He learned it from the air he breathes.",
+    text: "We think we are reading the Bible. We are often reading ourselves into it, and calling the echo revelation.",
     articleSlug: "how-individualism-changed-how-we-read-the-bible",
     articleTitle: "How Individualism Changed the Way We Read the Bible",
     pillar: "Prophetic Disruption",
     category: "conviction",
   },
   {
-    text: "The question is not whether God cares about individuals. The question is whether the individual has become so large that the community has disappeared.",
+    text: "The question is not whether God cares about individuals. He does, down to the hairs of the head. The question is whether the individual has become the only unit we can see, the lens so close to the eye that we no longer recognize it as a lens.",
     articleSlug: "how-individualism-changed-how-we-read-the-bible",
     articleTitle: "How Individualism Changed the Way We Read the Bible",
     pillar: "Prophetic Disruption",
     category: "challenge",
   },
   {
-    text: "Most of the yous in the New Testament are plural. We read them as singular because we cannot hear the difference in English, and because we want to.",
+    text: "The cross is the most personal act in history and the least private. He died, one man, for a people. The pronoun is singular at the nail and plural at the empty tomb.",
     articleSlug: "how-individualism-changed-how-we-read-the-bible",
     articleTitle: "How Individualism Changed the Way We Read the Bible",
     pillar: "Prophetic Disruption",
@@ -811,21 +736,21 @@ export const SOCIAL_QUOTES: SocialQuote[] = [
   // 32. Consumerism Is a Spiritual Formation
   // ─────────────────────────────────────────────────────────────
   {
-    text: "My sons can tell the difference between two phones I cannot see a difference between. They were not taught this in any class. They absorbed it the way I absorbed my father's absence.",
+    text: "We think the danger of consumerism is that it makes us want bad things. The deeper danger is what it does to wanting itself.",
     articleSlug: "consumerism-is-a-spiritual-formation",
     articleTitle: "Consumerism Is a Spiritual Formation",
     pillar: "Prophetic Disruption",
     category: "conviction",
   },
   {
-    text: "We assume that what makes us who we are is what we believe. State the doctrine, win the mind, and the life follows. But we are not brains on sticks. We are bodies trained by repetition.",
+    text: "You are not primarily what you think. You are what you love, and you do not choose your loves the way you choose your beliefs.",
     articleSlug: "consumerism-is-a-spiritual-formation",
     articleTitle: "Consumerism Is a Spiritual Formation",
     pillar: "Prophetic Disruption",
     category: "wisdom",
   },
   {
-    text: "The question that should keep a pastor awake is not whether his people have been formed but by what, and toward what end.",
+    text: "The Sabbath is a refusal to produce or to purchase for one day in seven, a weekly act of treason against an economy that needs you restless.",
     articleSlug: "consumerism-is-a-spiritual-formation",
     articleTitle: "Consumerism Is a Spiritual Formation",
     pillar: "Prophetic Disruption",
@@ -836,21 +761,21 @@ export const SOCIAL_QUOTES: SocialQuote[] = [
   // 33. The Church Held Captive to the Culture War
   // ─────────────────────────────────────────────────────────────
   {
-    text: "A man left my church not over a doctrine but over a vote. When I asked him what he believed about the cross, he answered me with a position on a policy.",
+    text: "We came to save the faith and we let the faith be conscripted, and the proof is that for many of us it now costs more to break with our political side than to break with our Lord.",
     articleSlug: "the-church-captive-to-the-culture-war",
     articleTitle: "The Church Held Captive to the Culture War",
     pillar: "Prophetic Disruption",
     category: "conviction",
   },
   {
-    text: "The grammar had shifted underneath him, and he had not noticed. His deepest loyalty had moved, and he could no longer locate it.",
+    text: "The prophet stands outside the kingdoms and judges them all by a higher throne. The captive stands inside one kingdom and judges the other in its terms, and calls his captivity courage.",
     articleSlug: "the-church-captive-to-the-culture-war",
     articleTitle: "The Church Held Captive to the Culture War",
     pillar: "Prophetic Disruption",
     category: "wisdom",
   },
   {
-    text: "A church captive to a culture war is a church that has forgotten which war it was enlisted to fight.",
+    text: "The test is simple and brutal. When your political tribe does the very thing you condemned in the other tribe, do you say so.",
     articleSlug: "the-church-captive-to-the-culture-war",
     articleTitle: "The Church Held Captive to the Culture War",
     pillar: "Prophetic Disruption",
@@ -886,21 +811,21 @@ export const SOCIAL_QUOTES: SocialQuote[] = [
   // 35. Formed by Screens: Technology and the Soul
   // ─────────────────────────────────────────────────────────────
   {
-    text: "I sit down to read Scripture and my hand reaches for the phone before my mind has settled, and the reaching has stopped feeling like a choice.",
+    text: "The screen is a technology of the wind and the earthquake and the fire, endless spectacle, endless noise, and a God who speaks in a whisper is a God we have engineered ourselves to miss.",
     articleSlug: "formed-by-screens-technology-and-the-soul",
     articleTitle: "Formed by Screens: Technology and the Soul",
     pillar: "Prophetic Disruption",
     category: "conviction",
   },
   {
-    text: "Something is forming us both, my son and me, and it did not ask permission, and we did not notice it happening until it had already happened.",
+    text: "A tool is not only what it does for you. It is what it does to you while you use it, and these two are often opposites.",
     articleSlug: "formed-by-screens-technology-and-the-soul",
     articleTitle: "Formed by Screens: Technology and the Soul",
     pillar: "Prophetic Disruption",
     category: "wisdom",
   },
   {
-    text: "The screen is not a neutral window. It is a liturgy, and it is forming your loves before your theology has a chance to object.",
+    text: "Not a tool we are using. A liturgy that is using us. We can still walk out into the silence, wrap our faces, and listen.",
     articleSlug: "formed-by-screens-technology-and-the-soul",
     articleTitle: "Formed by Screens: Technology and the Soul",
     pillar: "Prophetic Disruption",
@@ -1158,106 +1083,6 @@ export const SOCIAL_QUOTES: SocialQuote[] = [
   },
 
   // ─────────────────────────────────────────────────────────────
-  // 46. Why Pastors Are Leaving Ministry
-  // ─────────────────────────────────────────────────────────────
-  {
-    text: "He said the sentence the way a man says it when he has already cleaned out the office and is only calling to be heard once before he stops being a pastor.",
-    articleSlug: "why-pastors-are-leaving-ministry",
-    articleTitle: "Why Pastors Are Leaving Ministry",
-    pillar: "Leadership Formation",
-    category: "comfort",
-  },
-  {
-    text: "A congregation loved him and exhausted him in roughly equal measure, and he could not name the thing that broke. That is the part that should frighten us.",
-    articleSlug: "why-pastors-are-leaving-ministry",
-    articleTitle: "Why Pastors Are Leaving Ministry",
-    pillar: "Leadership Formation",
-    category: "conviction",
-  },
-  {
-    text: "Not falling, not in scandal, not in doubt about the existence of God. Done. That single word carries more weight than any headline about a pastor's failure.",
-    articleSlug: "why-pastors-are-leaving-ministry",
-    articleTitle: "Why Pastors Are Leaving Ministry",
-    pillar: "Leadership Formation",
-    category: "challenge",
-  },
-
-  // ─────────────────────────────────────────────────────────────
-  // 47. Depression in the Pulpit: A Pastor's Mental Health
-  // ─────────────────────────────────────────────────────────────
-  {
-    text: "I have preached a sermon on the goodness of God on a morning when I could not feel it. I stood in a pulpit with my chest full of lead and told three hundred people about a joy I could not locate in myself.",
-    articleSlug: "depression-in-the-pulpit",
-    articleTitle: "Depression in the Pulpit: A Pastor's Mental Health",
-    pillar: "Leadership Formation",
-    category: "comfort",
-  },
-  {
-    text: "There is a sentence pastors learn to say without believing it. We do not talk about it, and the not talking is part of the sickness.",
-    articleSlug: "depression-in-the-pulpit",
-    articleTitle: "Depression in the Pulpit: A Pastor's Mental Health",
-    pillar: "Leadership Formation",
-    category: "conviction",
-  },
-  {
-    text: "Depression in a pastor is not a failure of faith. It is a wound in a person who happens to carry the faith of others, and the carrying does not protect him from the wound.",
-    articleSlug: "depression-in-the-pulpit",
-    articleTitle: "Depression in the Pulpit: A Pastor's Mental Health",
-    pillar: "Leadership Formation",
-    category: "comfort",
-  },
-
-  // ─────────────────────────────────────────────────────────────
-  // 48. How to Lead Without Losing Your Soul
-  // ─────────────────────────────────────────────────────────────
-  {
-    text: "What does it profit a man to gain the whole world and forfeit his soul. He was not speaking to stockbrokers. He was speaking to disciples.",
-    articleSlug: "how-to-lead-without-losing-your-soul",
-    articleTitle: "How to Lead Without Losing Your Soul",
-    pillar: "Leadership Formation",
-    category: "conviction",
-  },
-  {
-    text: "A pastor can forfeit his soul building a kingdom and call the forfeiture sacrifice.",
-    articleSlug: "how-to-lead-without-losing-your-soul",
-    articleTitle: "How to Lead Without Losing Your Soul",
-    pillar: "Leadership Formation",
-    category: "wisdom",
-  },
-  {
-    text: "There is a way of succeeding in ministry that looks exactly like faithfulness from the outside and is a slow death from the inside.",
-    articleSlug: "how-to-lead-without-losing-your-soul",
-    articleTitle: "How to Lead Without Losing Your Soul",
-    pillar: "Leadership Formation",
-    category: "challenge",
-  },
-
-  // ─────────────────────────────────────────────────────────────
-  // 49. The Interior Life of the Pastor
-  // ─────────────────────────────────────────────────────────────
-  {
-    text: "I had not read a word of Scripture for my own soul in weeks. I had read it for the sermon. I had read it for the funeral. I had not read it for the bread it is.",
-    articleSlug: "the-interior-life-of-the-pastor",
-    articleTitle: "The Interior Life of the Pastor",
-    pillar: "Leadership Formation",
-    category: "conviction",
-  },
-  {
-    text: "There is a particular kind of hunger that only afflicts people who work with food all day. The cook surrounded by meals he never sits down to eat.",
-    articleSlug: "the-interior-life-of-the-pastor",
-    articleTitle: "The Interior Life of the Pastor",
-    pillar: "Leadership Formation",
-    category: "wisdom",
-  },
-  {
-    text: "The interior life is the part of a pastor that no one sees, no one evaluates, and no one will maintain for him. It is also the only part that can keep him alive.",
-    articleSlug: "the-interior-life-of-the-pastor",
-    articleTitle: "The Interior Life of the Pastor",
-    pillar: "Leadership Formation",
-    category: "challenge",
-  },
-
-  // ─────────────────────────────────────────────────────────────
   // 50. Why Your Church Should Require a Sabbatical
   // ─────────────────────────────────────────────────────────────
   {
@@ -1275,7 +1100,7 @@ export const SOCIAL_QUOTES: SocialQuote[] = [
     category: "wisdom",
   },
   {
-    text: "The same church that would never ask a member to work without rest for a decade will ask exactly that of the man who shepherds them, and frame it as a compliment.",
+    text: "The same church that would never ask a member to work without a single sustained rest for a decade will ask exactly that of the man who shepherds them, and it will frame the asking as a compliment.",
     articleSlug: "why-your-church-should-require-a-sabbatical",
     articleTitle: "Why Your Church Should Require a Sabbatical",
     pillar: "Leadership Formation",
@@ -1283,149 +1108,24 @@ export const SOCIAL_QUOTES: SocialQuote[] = [
   },
 
   // ─────────────────────────────────────────────────────────────
-  // 51. How to Preach to People Who Have Heard It All
-  // ─────────────────────────────────────────────────────────────
-  {
-    text: "You announce the text and her face does a small, courteous thing. It closes. Not in anger. In recognition. She knows where this is going.",
-    articleSlug: "how-to-preach-to-people-who-have-heard-it-all",
-    articleTitle: "How to Preach to People Who Have Heard It All",
-    pillar: "Leadership Formation",
-    category: "wisdom",
-  },
-  {
-    text: "The real difficulty of preaching is not reaching the person who has never heard the gospel. It is reaching the one who has heard it so many times she can no longer hear it at all.",
-    articleSlug: "how-to-preach-to-people-who-have-heard-it-all",
-    articleTitle: "How to Preach to People Who Have Heard It All",
-    pillar: "Leadership Formation",
-    category: "challenge",
-  },
-  {
-    text: "Familiarity is the preacher's enemy because it lets the listener predict the landing. A sermon that can be predicted cannot wound or heal.",
-    articleSlug: "how-to-preach-to-people-who-have-heard-it-all",
-    articleTitle: "How to Preach to People Who Have Heard It All",
-    pillar: "Leadership Formation",
-    category: "wisdom",
-  },
-
-  // ─────────────────────────────────────────────────────────────
-  // 52. Preaching Politics Without Losing the Gospel
-  // ─────────────────────────────────────────────────────────────
-  {
-    text: "He stands there with a text in his hand and a country in his pews, and there is no neutral sentence available to him.",
-    articleSlug: "preaching-politics-without-losing-the-gospel",
-    articleTitle: "Preaching Politics Without Losing the Gospel",
-    pillar: "Leadership Formation",
-    category: "wisdom",
-  },
-  {
-    text: "Half the room voted one way. Half voted the other. Both halves are watching his eyes for a sign. Even the weather report would be heard as a verdict.",
-    articleSlug: "preaching-politics-without-losing-the-gospel",
-    articleTitle: "Preaching Politics Without Losing the Gospel",
-    pillar: "Leadership Formation",
-    category: "challenge",
-  },
-  {
-    text: "The gospel is not apolitical. It is political in a way that no party can contain and no election can fulfill.",
-    articleSlug: "preaching-politics-without-losing-the-gospel",
-    articleTitle: "Preaching Politics Without Losing the Gospel",
-    pillar: "Leadership Formation",
-    category: "conviction",
-  },
-
-  // ─────────────────────────────────────────────────────────────
-  // 53. Expository vs. Topical Preaching: Which and When
-  // ─────────────────────────────────────────────────────────────
-  {
-    text: "The first preacher opens his Bible to where he left off. His sermon is decided before he has had a single idea, because the text decided it.",
-    articleSlug: "expository-vs-topical-preaching",
-    articleTitle: "Expository vs. Topical Preaching: Which and When",
-    pillar: "Leadership Formation",
-    category: "wisdom",
-  },
-  {
-    text: "The question the conferences keep arguing about is which of them did it right. The question underneath is which of them let the Word have the first word.",
-    articleSlug: "expository-vs-topical-preaching",
-    articleTitle: "Expository vs. Topical Preaching: Which and When",
-    pillar: "Leadership Formation",
-    category: "challenge",
-  },
-  {
-    text: "A preacher who only follows the text never addresses the room. A preacher who only addresses the room never lets the text surprise him. Both are half a ministry.",
-    articleSlug: "expository-vs-topical-preaching",
-    articleTitle: "Expository vs. Topical Preaching: Which and When",
-    pillar: "Leadership Formation",
-    category: "wisdom",
-  },
-
-  // ─────────────────────────────────────────────────────────────
-  // 54. Five Preaching Habits That Empty a Room
-  // ─────────────────────────────────────────────────────────────
-  {
-    text: "No one walks out in the middle of a sermon. A room empties slowly, over months, through a thousand small decisions made in cars on the way home.",
-    articleSlug: "five-preaching-habits-that-empty-a-room",
-    articleTitle: "Five Preaching Habits That Empty a Room",
-    pillar: "Leadership Formation",
-    category: "conviction",
-  },
-  {
-    text: "The preacher rarely sees the leak because the leak is silent and because he is standing at the exact spot where it begins.",
-    articleSlug: "five-preaching-habits-that-empty-a-room",
-    articleTitle: "Five Preaching Habits That Empty a Room",
-    pillar: "Leadership Formation",
-    category: "wisdom",
-  },
-  {
-    text: "I have emptied rooms. Not with scandal. With habits I could not see in myself because I was the one doing them.",
-    articleSlug: "five-preaching-habits-that-empty-a-room",
-    articleTitle: "Five Preaching Habits That Empty a Room",
-    pillar: "Leadership Formation",
-    category: "challenge",
-  },
-
-  // ─────────────────────────────────────────────────────────────
-  // 55. The Difference Between a Sermon and a Talk
-  // ─────────────────────────────────────────────────────────────
-  {
-    text: "A talk is survivable. You can hear a good talk and remain exactly who you were. A sermon is not supposed to be survivable.",
-    articleSlug: "the-difference-between-a-sermon-and-a-talk",
-    articleTitle: "The Difference Between a Sermon and a Talk",
-    pillar: "Leadership Formation",
-    category: "conviction",
-  },
-  {
-    text: "A man stands up with notes and speaks for thirty minutes about God, and at the end you cannot tell whether what just happened was a sermon or a talk.",
-    articleSlug: "the-difference-between-a-sermon-and-a-talk",
-    articleTitle: "The Difference Between a Sermon and a Talk",
-    pillar: "Leadership Formation",
-    category: "challenge",
-  },
-  {
-    text: "The two can look identical from the outside. The difference is whether the Word was handled as information to be transferred or as fire to be carried into the room.",
-    articleSlug: "the-difference-between-a-sermon-and-a-talk",
-    articleTitle: "The Difference Between a Sermon and a Talk",
-    pillar: "Leadership Formation",
-    category: "wisdom",
-  },
-
-  // ─────────────────────────────────────────────────────────────
   // 56. The Most Segregated Hour
   // ─────────────────────────────────────────────────────────────
   {
-    text: "Eleven o'clock on Sunday morning is the most segregated hour in America. We nod. We put the line on a slide. Then we drive home to the same neighborhood we drove from.",
+    text: "To say the door is open while standing in a building our fathers designed to keep certain people in the balcony is to mistake the absence of a new crime for the presence of repentance. We have not torn down the wall. We have stopped noticing it.",
     articleSlug: "the-most-segregated-hour",
     articleTitle: "The Most Segregated Hour: Why Sunday Morning Is Still Divided",
     pillar: "Prophetic Justice",
     category: "conviction",
   },
   {
-    text: "We have been quoting King ever since as if quoting him were the same as repenting.",
+    text: "King's line was never meant to be a lament we recite. It was meant to be a verdict we answered.",
     articleSlug: "the-most-segregated-hour",
     articleTitle: "The Most Segregated Hour: Why Sunday Morning Is Still Divided",
     pillar: "Prophetic Justice",
     category: "challenge",
   },
   {
-    text: "A congregation counts as multiracial only when no single group makes up more than eighty percent. By that measure, over ninety percent of American churches fail.",
+    text: "Michael Emerson and Christian Smith, in their 2000 study Divided by Faith, found that a congregation counts as multiracial only when no single group exceeds eighty percent of the membership, and by that low bar fewer than one in ten American churches qualified.",
     articleSlug: "the-most-segregated-hour",
     articleTitle: "The Most Segregated Hour: Why Sunday Morning Is Still Divided",
     pillar: "Prophetic Justice",
@@ -1626,7 +1326,7 @@ export const SOCIAL_QUOTES: SocialQuote[] = [
     author: "James Bell",
   },
   {
-    text: "At a hospital bed, no one has ever recited one of my sermon outlines to me. … What surfaces at the end is what was repeated.",
+    text: "The repeated things go down into a person the way rain goes into ground, and they are what remains when everything performed and everything explained has washed away.",
     articleSlug: "the-hour-that-forms-the-week",
     articleTitle: "The Hour That Forms the Week",
     pillar: "Integrated Life",
