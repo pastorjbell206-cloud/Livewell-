@@ -778,6 +778,9 @@ function prerenderStudyBible(template) {
       intro ? section(b.testament === "OT" ? "How it points to Christ" : "What it shows of Christ", para(intro.christ)) : "",
       intro ? section("Themes to follow", intro.themes.map((t) => `<h3>${escapeHtml(t.title)}</h3><p>${escapeHtml(t.body)}</p>`).join("\n")) : "",
       intro ? section("How to read it well", para(intro.reading)) : "",
+      intro?.text ? section(`The text of ${b.name}`, para(intro.text)) : "",
+      intro?.reception ? section(`How ${b.name} has been read`, para(intro.reception)) : "",
+      intro?.furtherReading?.length ? section("Further reading", `<ul>${intro.furtherReading.map((r) => `<li>${escapeHtml(`${r.author}, ${r.title}${r.series ? ` (${r.series}${r.year ? `, ${r.year}` : ""})` : r.year ? ` (${r.year})` : ""}. ${r.note}`)}</li>`).join("")}</ul>`) : "",
     ].join("\n");
     emit(
       `/study/bible/${b.slug}`,
@@ -810,10 +813,14 @@ function prerenderStudyBible(template) {
           e.history ? `<h4>Background</h4>\n${para(e.history)}` : "",
           (e.theology ?? []).map((t) => `<p><a href="/study/bible/doctrines/${escapeHtml(t.id)}">${escapeHtml(doctrines.find((x) => x.id === t.id)?.name ?? t.id)}</a>. ${escapeHtml(t.note)}</p>`).join("\n"),
           e.text ? `<h4>The text</h4>\n${para(e.text)}` : "",
+          ...["ot", "nt"].flatMap((k) => (e[k] ?? []).map((x) => `<p><strong>${escapeHtml(x.ref)}</strong>. ${escapeHtml(x.note)}</p>`)),
         ].filter(Boolean).join("\n")).join("\n")) : "",
         note ? section(b.testament === "OT" ? "How it points to Christ" : "What it shows of Christ", para(note.christ)) : "",
-        note?.hard ? section("A hard question", `<p><em>${escapeHtml(note.hard.q)}</em></p>\n${para(note.hard.a)}`) : "",
-        note ? section("For reflection or a group", `<ol>${note.questions.map((q) => `<li>${escapeHtml(q)}</li>`).join("")}</ol>`) : "",
+        note?.interpretation ? section("How it has been read", para(note.interpretation)) : "",
+        note?.text ? section("The text and translations", para(note.text)) : "",
+        ...(note?.hard == null ? [] : Array.isArray(note.hard) ? note.hard : [note.hard]).map((h) => section("A hard question", `<p><em>${escapeHtml(h.q)}</em></p>\n${para(h.a)}`)),
+        note?.teach ? section("For teaching and preaching", `<p><strong>${escapeHtml(note.teach.big)}</strong></p>\n<ol>${note.teach.outline.map((o) => `<li>${escapeHtml(`${c}:${o.v} ${o.t}`)}</li>`).join("")}</ol>\n${para(note.teach.pitfalls)}${note.teach.pastoral ? `\n${para(note.teach.pastoral)}` : ""}`) : "",
+        note ? section("Questions for study or a group", `<ol>${(Array.isArray(note.questions) ? note.questions : [...note.questions.observe, ...note.questions.interpret, ...note.questions.apply]).map((q) => `<li>${escapeHtml(q)}</li>`).join("")}</ol>`) : "",
         `<nav><a href="/study/bible/${b.slug}">${escapeHtml(b.name)}</a>${c > 1 ? ` · <a href="/study/bible/${b.slug}/${c - 1}">${escapeHtml(`${b.name} ${c - 1}`)}</a>` : ""}${c < b.chapters ? ` · <a href="/study/bible/${b.slug}/${c + 1}">${escapeHtml(`${b.name} ${c + 1}`)}</a>` : ""}</nav>`,
       ].join("\n");
       emit(

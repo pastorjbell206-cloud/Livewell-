@@ -24,7 +24,7 @@ export const LAYERS: { id: Layer; name: string }[] = [
   { id: "grammar", name: "Hebrew and Greek" },
   { id: "history", name: "History" },
   { id: "theology", name: "Doctrine" },
-  { id: "text", name: "The text" },
+  { id: "text", name: "Text and quotations" },
 ];
 
 function Paras({ text }: { text: string }) {
@@ -105,6 +105,35 @@ export function VerseEntry(props: {
           <Paras text={entry.text} />
         </>
       )}
+      {(["ot", "nt"] as const).map((k) =>
+        entry[k] && entry[k]!.length > 0 && (only === "all" || only === "text") ? (
+          <div key={k}>
+            <div style={label}>{k === "ot" ? "The Old Testament behind it" : "Where the New Testament takes it up"}</div>
+            {entry[k]!.map((x) => {
+              const href = refHref(x.ref, books);
+              return (
+                <p key={x.ref} style={body}>
+                  {href ? <Link href={href} style={{ ...quietLink, fontWeight: 600 }}>{x.ref}</Link> : <strong>{x.ref}</strong>}. {x.note}
+                </p>
+              );
+            })}
+          </div>
+        ) : null
+      )}
+      {entry.parallels && entry.parallels.length > 0 && only === "all" && (
+        <p style={{ margin: "8px 0 0", fontFamily: "var(--U)", fontSize: "13px", lineHeight: 1.9, color: "var(--ink-muted)" }}>
+          Parallel accounts:{" "}
+          {entry.parallels.map((r, i) => {
+            const href = refHref(r, books);
+            return (
+              <span key={r}>
+                {href ? <Link href={href} style={quietLink}>{r}</Link> : r}
+                {i < entry.parallels!.length - 1 ? " · " : ""}
+              </span>
+            );
+          })}
+        </p>
+      )}
       {entry.refs && entry.refs.length > 0 && only === "all" && (
         <p style={{ margin: "8px 0 0", fontFamily: "var(--U)", fontSize: "13px", lineHeight: 1.9, color: "var(--ink-muted)" }}>
           See also:{" "}
@@ -124,7 +153,8 @@ export function VerseEntry(props: {
 }
 
 const has = (e: VerseNote, l: Layer) =>
-  l === "all" || (l === "theology" ? (e.theology?.length ?? 0) > 0 : Boolean(e[l]));
+  l === "all" ||
+  (l === "theology" ? (e.theology?.length ?? 0) > 0 : l === "text" ? Boolean(e.text || e.ot?.length || e.nt?.length) : Boolean(e[l]));
 
 /** Every entry in the chapter, with a filter by layer. */
 export function VerseByVerse(props: {

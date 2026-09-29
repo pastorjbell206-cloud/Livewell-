@@ -16,6 +16,7 @@ import {
   fetchStory,
   fetchStoryline,
   flattenStory,
+  hardQuestions,
   itemsForPassage,
   readProgress,
   setRead,
@@ -234,16 +235,58 @@ export function ChapterNotesBody(props: {
       <Section title={lang === "H" ? "How it points to Christ" : "What it shows of Christ"}>
         <Prose text={note.christ} />
       </Section>
-      {note.hard && (
-        <Section title="A hard question">
-          <p style={{ maxWidth: "68ch", fontFamily: "var(--F)", fontSize: "1.2rem", fontStyle: "italic", lineHeight: 1.4, color: "var(--ink)", margin: "0 0 10px" }}>{note.hard.q}</p>
-          <Prose text={note.hard.a} />
+      {note.interpretation && (
+        <Section title="How it has been read">
+          <Prose text={note.interpretation} />
         </Section>
       )}
-      <Section title="For reflection or a group">
-        <ol style={{ margin: 0, paddingLeft: "1.3em", display: "grid", gap: "10px" }}>
-          {note.questions.map((q, i) => <li key={i} style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.65, color: "var(--ink)" }}>{q}</li>)}
-        </ol>
+      {note.text && (
+        <Section title="The text and translations">
+          <Prose text={note.text} />
+        </Section>
+      )}
+      {hardQuestions(note).map((h, i, all) => (
+        <Section key={i} title={all.length > 1 ? `A hard question (${i + 1} of ${all.length})` : "A hard question"}>
+          <p style={{ maxWidth: "68ch", fontFamily: "var(--F)", fontSize: "1.2rem", fontStyle: "italic", lineHeight: 1.4, color: "var(--ink)", margin: "0 0 10px" }}>{h.q}</p>
+          <Prose text={h.a} />
+        </Section>
+      ))}
+      {note.teach && (
+        <Section title="For teaching and preaching">
+          <p style={{ maxWidth: "68ch", fontFamily: "var(--F)", fontSize: "1.25rem", lineHeight: 1.4, color: "var(--ink)", margin: "0 0 12px" }}>{note.teach.big}</p>
+          <ol style={{ listStyle: "none", margin: "0 0 14px", padding: 0, display: "grid", gap: "2px", maxWidth: "68ch" }}>
+            {note.teach.outline.map((o) => (
+              <li key={o.v} style={{ display: "flex", gap: "12px", alignItems: "baseline", padding: "6px 0", borderBottom: "1px solid var(--border)" }}>
+                <span style={{ flex: "0 0 64px", fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--ink)" }}>{chapter}:{o.v.replace("-", "\u2013")}</span>
+                <span style={{ fontFamily: "var(--B)", fontSize: "15.5px", lineHeight: 1.5, color: "var(--ink)" }}>{o.t}</span>
+              </li>
+            ))}
+          </ol>
+          <div style={{ ...kicker, margin: "8px 0 6px" }}>Pitfalls to avoid</div>
+          <Prose text={note.teach.pitfalls} />
+          {note.teach.pastoral && (
+            <>
+              <div style={{ ...kicker, margin: "8px 0 6px" }}>Teaching it with care</div>
+              <Prose text={note.teach.pastoral} />
+            </>
+          )}
+        </Section>
+      )}
+      <Section title={Array.isArray(note.questions) ? "For reflection or a group" : "Questions for study or a group"}>
+        {Array.isArray(note.questions) ? (
+          <ol style={{ margin: 0, paddingLeft: "1.3em", display: "grid", gap: "10px" }}>
+            {note.questions.map((q, i) => <li key={i} style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.65, color: "var(--ink)" }}>{q}</li>)}
+          </ol>
+        ) : (
+          ([["observe", "What does it say?"], ["interpret", "What does it mean?"], ["apply", "What difference does it make?"]] as const).map(([k, h]) => (
+            <div key={k} style={{ marginBottom: "12px" }}>
+              <div style={{ ...kicker, margin: "4px 0 6px" }}>{h}</div>
+              <ol style={{ margin: 0, paddingLeft: "1.3em", display: "grid", gap: "8px" }}>
+                {(note.questions as Record<string, string[]>)[k].map((q, i) => <li key={i} style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.65, color: "var(--ink)" }}>{q}</li>)}
+              </ol>
+            </div>
+          ))
+        )}
       </Section>
 
       {(hasGuide || (related && related.length > 0)) && (

@@ -345,11 +345,52 @@ function BookPage({ books, book }: { books: BibleBook[]; book: BibleBook }) {
               </>
             )}
           </Band>
+          {(intro.text || intro.reception) && (
+            <Band tone="warm">
+              {intro.text && (
+                <>
+                  <H2>The text of {book.name}</H2>
+                  <Prose text={intro.text} />
+                </>
+              )}
+              {intro.reception && (
+                <>
+                  {intro.text && <div style={{ height: "var(--s-4)" }} />}
+                  <H2>How {book.name} has been read</H2>
+                  <Prose text={intro.reception} />
+                </>
+              )}
+            </Band>
+          )}
+          {intro.furtherReading && intro.furtherReading.length > 0 && (
+            <Band tone={intro.text || intro.reception ? "bone" : "warm"}>
+              <H2>Further reading</H2>
+              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "var(--s-4)" }}>
+                {([["first", "To start with"], ["pastor", "For the pastor's shelf"], ["scholar", "For deeper study"]] as const).map(([tier, label]) => {
+                  const list = intro.furtherReading!.filter((r) => r.tier === tier);
+                  if (list.length === 0) return null;
+                  return (
+                    <div key={tier}>
+                      <div style={{ ...kicker, marginBottom: "8px" }}>{label}</div>
+                      <ul style={{ listStyle: "none", margin: 0, padding: 0, display: "grid", gap: "10px" }}>
+                        {list.map((r) => (
+                          <li key={`${r.author}|${r.title}`} style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.55, color: "var(--ink)" }}>
+                            {r.author}, <i>{r.title}</i>{r.series ? ` (${r.series}${r.year ? `, ${r.year}` : ""})` : r.year ? ` (${r.year})` : ""}.{" "}
+                            <span style={{ color: "var(--ink-muted)" }}>{r.note}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  );
+                })}
+              </div>
+            </Band>
+          )}
         </>
       )}
 
       {related && related.length > 0 && (
-        <Band tone={intro ? "warm" : "bone"}>
+        <Band tone={!intro ? "bone" : intro.furtherReading?.length ? (intro.text || intro.reception ? "warm" : "bone") : intro.text || intro.reception ? "bone" : "warm"}>
           <H2>{book.name} on LiveWell</H2>
           <RelatedList items={related} />
         </Band>

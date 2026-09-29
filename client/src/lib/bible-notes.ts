@@ -28,6 +28,11 @@ export interface BookIntro {
   themes: { title: string; body: string }[];
   doctrines: string[];
   keyChapters: { ch: number; why: string }[];
+  /** Version 2: the book's textual history, how it has been read, and graded further reading. */
+  v?: number;
+  text?: string;
+  reception?: string;
+  furtherReading?: { tier: "first" | "pastor" | "scholar"; author: string; title: string; series?: string; year?: number; note: string }[];
 }
 
 export interface ChapterNote {
@@ -41,9 +46,22 @@ export interface ChapterNote {
   doctrines: { id: string; note: string }[];
   words: { s: string; note: string }[];
   christ: string;
-  hard?: { q: string; a: string };
-  questions: string[];
+  hard?: HardQuestion | HardQuestion[];
+  questions: string[] | { observe: string[]; interpret: string[]; apply: string[] };
+  /** Version 2: how the chapter has been read, the text, and help for teaching it. */
+  v?: number;
+  interpretation?: string;
+  text?: string;
+  teach?: { big: string; outline: { v: string; t: string }[]; pitfalls: string; pastoral?: string };
 }
+
+export interface HardQuestion {
+  q: string;
+  a: string;
+}
+
+/** One or two hard questions, whichever shape the note uses. */
+export const hardQuestions = (n: ChapterNote): HardQuestion[] => (n.hard == null ? [] : Array.isArray(n.hard) ? n.hard : [n.hard]);
 
 /** One entry of a chapter's verse-by-verse notes (one to six verses). */
 export interface VerseNote {
@@ -55,6 +73,10 @@ export interface VerseNote {
   theology?: { id: string; note: string }[];
   text?: string;
   refs?: string[];
+  /** A New Testament verse's Old Testament source, or an Old Testament verse's New Testament use. */
+  ot?: { ref: string; note: string }[];
+  nt?: { ref: string; note: string }[];
+  parallels?: string[];
 }
 
 export interface DoctrineStudy {
