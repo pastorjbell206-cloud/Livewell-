@@ -1,0 +1,419 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "The second stanza of the song (53:1-3) opens with a new voice, a ‘we’ who were silent in 52:15 and now confess. Their question is rueful: who could have believed what we heard, and to whom was the LORD's arm revealed in such a man? The arm bared before the nations in 52:10 turns out to have been revealed in the Servant.",
+      "grammar": "Mi heemin lishmuatenu, \"Who has believed our message?\", uses heemin, the Hiphil of aman, the verb of faith in 7:9. Shemuatenu is ‘our report’, a noun from shama, ‘to hear’, and the suffix can mean ‘the report we heard’ or ‘the report we gave’; the first fits speakers who have just learned something they never expected (52:15), the second suits a prophet or messenger. Uzroa YHWH al-mi niglatah, \"to whom has the arm of the LORD been revealed?\", uses the Niphal perfect of galah, the verb of 40:5 (the glory ‘will be revealed’). The arm is the exodus arm of power (40:10, 51:9, 52:10); the scandal the song unfolds is that it was revealed in weakness.",
+      "words": [
+        "H0539",
+        "H8052",
+        "H2220",
+        "H1540H"
+      ],
+      "history": "Who the ‘we’ are is the first interpretive decision in the chapter. The great medieval Jewish commentators Rashi (eleventh century), Abraham Ibn Ezra (twelfth century), and David Kimhi (around 1200) took them to be the kings and nations of 52:15, confessing that they misjudged Israel, God's servant nation, whose suffering they had despised. Origen reports (Against Celsus 1.55) that a Jewish teacher already argued this collective reading with him in the third century. Christian readers have usually taken the ‘we’ as Israel or the prophet's circle, and ultimately as all who come to recognize who Jesus is.",
+      "theology": [
+        {
+          "id": "faith",
+          "note": "The song opens with unbelief, not faith. What God did in his Servant was so unlike what anyone expected that no one believed the report. Faith, when it comes in this chapter, is the confession of people who had been wrong."
+        }
+      ],
+      "nt": [
+        {
+          "ref": "John 12:38",
+          "note": "John quotes the verse from the Septuagint, which adds ‘Lord’ at the beginning (‘Lord, who has believed our report?’), to explain why many did not believe in Jesus despite his signs. He pairs it with Isaiah 6:10 and says Isaiah said these things because he saw Jesus' glory (12:41). Paul quotes the same Greek form in Romans 10:16 to explain Israel's failure to believe the gospel, then draws the conclusion that faith comes from hearing (akoe, the Greek word for the ‘report’), and hearing through the word of Christ (10:17)."
+        }
+      ],
+      "refs": [
+        "Isaiah 52:10",
+        "Isaiah 52:15",
+        "John 12:37-41",
+        "Romans 10:16-17"
+      ]
+    },
+    {
+      "v": "2",
+      "context": "The speakers remember how the Servant grew up: like a sucker from a root in dry ground, with nothing in his form or bearing to draw a second look. The verse explains the unbelief of verse 1: he did not look like the arm of the LORD.",
+      "grammar": "Vayyaal, \"He grew up\", is a consecutive imperfect: the ‘we’ tell the story as past narrative, looking back. Kayyoneq, \"like a tender shoot\", uses yoneq, usually ‘a nursing infant’ (as in 11:8) but here a plant's sucker; Hosea 14:6 uses the related yoneqot for shoots. Keshoresh meerets tsiyyah, \"like a root out of dry ground\", recalls the shoresh, the Root of Jesse, of 11:1 and 11:10. Lefanav, \"before Him\", most likely means before the LORD: he grew under God's eye, unnoticed by others. The last lines deny him toar, ‘form’, hadar, ‘majesty’, and mareh, ‘appearance’, the same words used of him in 52:14 and of kings elsewhere (1 Samuel 16:18 calls David a man of toar). The Masoretic accents divide the lines ‘he had no form or majesty that we should look at him, and no appearance that we should desire him’.",
+      "words": [
+        "H5927G",
+        "H3126",
+        "H8328",
+        "H6723",
+        "H8389",
+        "H1926",
+        "H4758",
+        "H2530A"
+      ],
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "The Servant comes without the appearance of power, from unpromising ground. The Gospels' account of Jesus from Nazareth, a village that prompted the question whether anything good could come from it (John 1:46), matches this picture of a root in dry ground. God's saving arm arrives in ordinary, even unattractive, human form."
+        }
+      ],
+      "refs": [
+        "Isaiah 11:1",
+        "Isaiah 11:10",
+        "Isaiah 52:14",
+        "John 1:46",
+        "1 Samuel 16:7"
+      ]
+    },
+    {
+      "v": "3",
+      "context": "From unimpressive to despised. The Servant is rejected by men, known for pain and sickness, and treated as someone people turn their faces from. The stanza ends on the confession that frames what follows: we did not esteem him.",
+      "grammar": "Nivzeh, \"despised\", a Niphal participle, opens and closes the verse, bracketing it. Chadal ishim, \"rejected by men\", is disputed: chadal means ‘ceasing’ or ‘lacking’, so the phrase may mean ‘shunned by men’ or ‘the frailest of men’, one who has ceased to count. Ish makhovot, \"a man of sorrows\", uses makhovot, ‘pains’, both physical and emotional. Viydua choli, \"acquainted with grief\", is literally ‘known by sickness’, a passive participle of yada: sickness is so familiar to him that it knows him. Ukhemaster panim mimmennu, ‘and like a hiding of faces from him’, pictures people turning away as from a leper (Leviticus 13:45) or a disfigured face. Chashavnuhu, ‘we reckoned him’, with the negative lo, closes the stanza.",
+      "words": [
+        "H0959",
+        "H2310",
+        "H4341",
+        "H3045",
+        "H2483",
+        "H4564",
+        "H2803H"
+      ],
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "The Servant is identified by pain, not merely touched by it. The verse gave the church the title Man of Sorrows, the subject of countless paintings of the suffering Christ, and it assures sufferers that the one Christians call Lord knows sickness and rejection from the inside (Hebrews 4:15)."
+        }
+      ],
+      "refs": [
+        "Psalm 22:6-7",
+        "Psalm 69:8",
+        "John 1:10-11",
+        "Mark 9:12",
+        "Hebrews 4:15"
+      ]
+    },
+    {
+      "v": "4",
+      "context": "The turning point of the song. The speakers see what they missed: the sickness and pain he carried were theirs, not his. They had concluded he was being punished by God. The verse opens the central stanza (verses 4-6), built on the contrast between ‘he’ and ‘we’.",
+      "grammar": "Akhen, \"Surely\", marks a sudden realization, ‘yet in fact’. The objects come first for emphasis: cholayenu hu nasa umakhovenu sevalam, ‘our sicknesses, he bore them, and our pains, he carried them’, with the pronoun hu, ‘he himself’, added. The two nouns repeat choli and makhovot from verse 3: what they thought was his own affliction was theirs. The verbs nasa, ‘lift, bear’, and saval, ‘carry a load’, are the song's key vocabulary for bearing another's burden (compare verses 11 and 12, and Leviticus 16:22, where the goat bears iniquity). Then vaanachnu, ‘but we’, with three passive participles: nagua, \"stricken\", the verb used for a plague of leprosy (Leviticus 13:3, 2 Kings 15:5); mukkeh Elohim, \"struck down\" by God; and meunneh, \"afflicted\". The speakers' error was the logic of Job's friends: suffering proves divine punishment.",
+      "words": [
+        "H0403",
+        "H2483",
+        "H5375H",
+        "H4341",
+        "H5445",
+        "H2803J",
+        "H5060",
+        "H5221",
+        "H6031B"
+      ],
+      "history": "The Babylonian Talmud (Sanhedrin 98b) records a discussion of the Messiah's name in which some rabbis call him ‘the leper scholar’, citing this verse's words ‘surely he has borne our sicknesses ... yet we esteemed him stricken’. It is one of several rabbinic traditions that connect the chapter with a suffering Messiah, alongside the more common medieval reading of the Servant as Israel.",
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The central claim of the song appears here: the Servant bears what belongs to others. The verse speaks first of sicknesses and pains, the effects of sin in human life, before verse 5 names transgressions and iniquities. The New Testament uses both halves: Matthew 8:17 applies this verse to Jesus' healings, and 1 Peter 2:24 applies verse 5 to his death."
+        }
+      ],
+      "nt": [
+        {
+          "ref": "Matthew 8:17",
+          "note": "After Jesus heals many in Capernaum, Matthew quotes this verse in his own translation, close to the Hebrew: he took our weaknesses and bore our diseases. The Septuagint had rendered it ‘he bears our sins and suffers pain for us’, spiritualizing the line; Matthew instead keeps the physical sense of choli and makhovot, reading Jesus' healing ministry as the Servant's bearing of human sickness. Matthew does not separate this from the cross; his Gospel ends with the Servant's death as the ransom for many (20:28)."
+        }
+      ],
+      "refs": [
+        "Matthew 8:16-17",
+        "Leviticus 16:22",
+        "Job 4:7-8",
+        "John 9:2-3",
+        "1 Peter 2:24"
+      ]
+    },
+    {
+      "v": "5",
+      "context": "The confession deepens. The Servant was pierced and crushed not for his own sins but because of ours, and his punishment brought us peace and his wounds our healing. This is the most quoted line of the song in Christian worship.",
+      "grammar": "Vehu, \"But He\", sets him against the ‘we’ of verse 4. Mecholal, \"pierced\", is a Pual (passive) participle of chalal, the root of chalal, ‘one slain’, used for those fatally wounded in battle (Deuteronomy 21:1). Meduka, \"crushed\", is a Pual participle of daka, crush to pieces; it returns in verse 10. The preposition min in mippeshaenu and meavonotenu, \"for our transgressions\" and \"for our iniquities\", is causal: because of them. Musar shelomenu alav, \"the punishment that brought us peace was upon Him\", is literally ‘the discipline of our peace was on him’: musar is correction or chastisement, the word of Proverbs 3:11, and shalom is wholeness. Uvachavurato nirpa-lanu, \"by His stripes we are healed\", uses chabburah, a welt or bruise from a blow (Exodus 21:25), in the singular, and nirpa, an impersonal Niphal, ‘there is healing for us’.",
+      "words": [
+        "H2490A",
+        "H6588",
+        "H1792",
+        "H5771G",
+        "H4148G",
+        "H7965G",
+        "H2250",
+        "H7495"
+      ],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The verse is the classic Old Testament statement of substitution: his suffering is caused by our transgression and produces our peace. Christians agree that the Servant's death is for others; they differ on how best to describe the mechanism. Penal substitution, defended for example by J. I. Packer's lecture What Did the Cross Achieve? (1974), stresses that the chastisement due to us fell on him. Christus Victor, the name Gustaf Aulén gave in 1931 to the patristic emphasis on Christ's victory over sin, death, and the devil, and representative or participatory accounts, stress his conquest and our union with him. Many theologians hold that the verse's language of punishment, healing, and peace needs more than one model to express it."
+        },
+        {
+          "id": "salvation",
+          "note": "Salvation here is healing and peace, wholeness restored, not merely a verdict. The verse joins the legal (punishment) and the medical (healing) in one sentence."
+        }
+      ],
+      "nt": [
+        {
+          "ref": "1 Peter 2:24",
+          "note": "Peter writes to Christian slaves suffering unjustly and holds up Christ as their example and their savior, weaving verses 4 to 9 into his words: he bore our sins in his body on the tree, so that we might die to sin and live to righteousness; by his wounds you were healed (using the Septuagint's molops, ‘bruise’, for chabburah). He applies the healing of verse 5 above all to the forgiveness and new life the cross brings, while writing to people whose own bodies bore the marks of beatings."
+        }
+      ],
+      "refs": [
+        "1 Peter 2:21-25",
+        "Romans 4:25",
+        "2 Corinthians 5:21",
+        "Zechariah 12:10",
+        "John 19:34-37"
+      ]
+    },
+    {
+      "v": "6",
+      "context": "The speakers widen the confession to everyone: all of us strayed like sheep, each to our own way, and the LORD laid on him the iniquity of us all. The central stanza ends with God as the actor: the Servant's burden was placed on him by the LORD.",
+      "grammar": "The verse begins and ends with kullanu, ‘all of us’: kullanu katson tainu, \"We all like sheep have gone astray\", and avon kullanu, \"the iniquity of us all\". The frame puts everyone inside the guilt and everyone inside the provision. Ish ledarko panimu, \"each one has turned to his own way\", adds the individual to the collective. The key verb is hifgia bo, \"has laid upon Him\", a Hiphil of paga, ‘to meet, fall upon, strike’. Paga can describe an attacker falling on someone (1 Kings 2:25, 29, 31, where it means to strike down), so the Hiphil pictures the LORD causing iniquity to strike the Servant. The same verb returns in the last line of the song, where the Servant yafgia, ‘intercedes’, for transgressors (verse 12).",
+      "words": [
+        "H6629G",
+        "H8582",
+        "H1870G",
+        "H6437G",
+        "H6293",
+        "H5771G"
+      ],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Sin is described as wandering, each person choosing his own way, and as universal: ‘all of us’. The self-assessment is the speakers' own; they do not exempt themselves. Paul's catalog in Romans 3:10-12, that all have turned aside, makes the same confession."
+        },
+        {
+          "id": "sovereignty",
+          "note": "The LORD is the subject of the decisive verb. The Servant's suffering is not an accident that God redeems afterward but the means God chose. Verse 10 will say it outright: it was the LORD's will."
+        }
+      ],
+      "refs": [
+        "1 Peter 2:25",
+        "Psalm 119:176",
+        "Romans 3:10-12",
+        "Luke 15:4-7",
+        "Ezekiel 34:6"
+      ]
+    },
+    {
+      "v": "7",
+      "context": "The third stanza (verses 7-9) turns to the Servant's trial and death, and first to his silence. Oppressed and afflicted, he does not open his mouth, like a lamb led to slaughter or a ewe before shearers. The silence frames the verse, stated at its start and its end.",
+      "grammar": "Niggas, \"He was oppressed\", is a Niphal of nagas, the verb for the taskmaster's oppression (9:4, Exodus 3:7). Vehu naaneh, \"and afflicted\", is a Niphal participle of anah, and the Niphal can be read as passive, ‘he was afflicted’, or reflexive, ‘he humbled himself’, ‘he submitted’; the reflexive sense, followed by several modern translations and commentators, stresses that he accepted the suffering. Velo yiftach piv, \"yet He did not open His mouth\", is repeated. The two similes are carefully chosen: kasseh lattevach yuval, ‘like a lamb that is led to slaughter’, uses a Hophal (passive) imperfect of yaval, the verb used of the bride led in procession in Psalm 45:14; and kerachel ... neelamah, ‘like a ewe before her shearers is dumb’, uses a Niphal of alam, ‘to be mute’.",
+      "words": [
+        "H5065",
+        "H6031B",
+        "H6605A",
+        "H6310G",
+        "H7716",
+        "H2874",
+        "H2986",
+        "H7353",
+        "H1494",
+        "H0481"
+      ],
+      "history": "Jeremiah described himself as ‘like a gentle lamb led to the slaughter’ when he discovered plots against his life (Jeremiah 11:19), and the same verse says his enemies wanted to cut him off from the land of the living, the phrase of Isaiah 53:8. The parallels led Saadia Gaon, the tenth century Jewish scholar, to identify the Servant with Jeremiah, a view Ibn Ezra reports in his commentary.",
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The Servant's silence is not weakness but consent. A lamb led to slaughter recalls the sacrificial lambs of Israel's worship, and John the Baptist's words, the Lamb of God who takes away the sin of the world (John 1:29), may draw on this verse as well as the Passover. The Gospels note Jesus' silence before the high priest and Pilate (Mark 14:61, 15:5)."
+        }
+      ],
+      "nt": [
+        {
+          "ref": "Acts 8:32-33",
+          "note": "The Ethiopian treasurer is reading verses 7 and 8 in the Septuagint when Philip meets him, and Luke quotes that Greek text exactly, including its version of verse 8 (‘in his humiliation justice was denied him’). The eunuch's question, whether the prophet speaks of himself or someone else, is still the question of the chapter, and Philip, beginning from this Scripture, tells him the good news about Jesus. First Peter 2:23 also draws on this verse: when he suffered, he did not threaten."
+        }
+      ],
+      "refs": [
+        "Jeremiah 11:19",
+        "John 1:29",
+        "Mark 15:4-5",
+        "1 Peter 2:23",
+        "Revelation 5:6"
+      ]
+    },
+    {
+      "v": "8",
+      "context": "The Servant is taken away by an unjust legal process and cut off from the land of the living, that is, killed. The verse insists the cause was not his own guilt: he was struck for the transgression of God's people. Several of its phrases are among the hardest in the chapter.",
+      "grammar": "Meotser umimmishpat luqqach, \"By oppression and judgment He was taken away\": otser is restraint or arrest, mishpat judgment, and the preposition min can mean ‘by means of’ (a judicial murder), ‘after’ (after arrest and sentence), or ‘without’ (with no protection and no justice). Luqqach, a Pual of laqach, is ‘he was taken’. Veet-doro mi yesocheach is the second crux. Dor usually means ‘generation’: ‘and as for his generation, who considered?’ (the ESV: who among his contemporaries considered that he was cut off), or ‘who will speak of his descendants?’ (the BSB and NIV), or, as some suggest from a related word, ‘his fate’. Nigzar meerets chayyim, \"He was cut off from the land of the living\", means death (compare Psalm 88:5). The last clause, mippesha ammi nega lamo, \"He was stricken for the transgression of My people\", is literally ‘for the transgression of my people, a stroke to lamo’. Lamo is a poetic form that usually means ‘to them’ but can mean ‘to him’: Isaiah 44:15 uses it of a single idol (\"bows down to it\"). Readers who take the Servant as the people read ‘the stroke was theirs’; those who read an individual take lamo as singular.",
+      "words": [
+        "H6115",
+        "H4941G",
+        "H3947G",
+        "H1755",
+        "H7878",
+        "H1504",
+        "H2416A",
+        "H6588",
+        "H5971A",
+        "H5061",
+        "H9038"
+      ],
+      "text": "The Septuagint reads the last word differently: ‘from the lawless deeds of my people he was led to death’ (eis thanaton), apparently reading lammavet, ‘to death’, where the Masoretic Text has lamo; the two differ by one letter. For ‘who will describe his generation?’ (ten genean autou tis diegesetai) the Greek became a favorite text of the church fathers, from Justin Martyr's Dialogue with Trypho onward, for the mystery of the Son's origin, a sense the Hebrew does not carry. Who says ‘my people’ is also debated: God, as in 52:13-15 and 53:11-12, or the prophet speaking for his own nation.",
+      "theology": [
+        {
+          "id": "justice-poor",
+          "note": "The Servant dies through a perversion of justice, arrested and sentenced and taken away. The chapter places God's saving work inside an unjust trial, which the Gospels narrate in detail. God's purpose in the Servant does not make the injustice just; it overrules it."
+        }
+      ],
+      "refs": [
+        "Jeremiah 11:19",
+        "Psalm 88:5",
+        "Daniel 9:26",
+        "Acts 8:33",
+        "Isaiah 44:15"
+      ]
+    },
+    {
+      "v": "9",
+      "context": "The Servant's burial matches his death: he was assigned a grave among the wicked and with a rich man in his death, though he had done no violence and spoken no deceit. His innocence is stated flatly, which is what makes his suffering for others possible.",
+      "grammar": "Vayyitten et-reshaim qivro, ‘and one gave his grave with the wicked’, uses an active verb with no stated subject, so it is impersonal: \"He was assigned a grave\". Veet-ashir bemotav, \"and with a rich man in His death\", is the crux. Ashir, ‘a rich man’, is singular, parallel to plural reshaim, ‘wicked ones’, and the pairing has puzzled readers: the rich may stand for the oppressor, as often in the prophets, making the two lines synonymous; or the lines may contrast a criminal's grave intended for him and a rich man's tomb that he actually received. Many modern scholars emend ashir to osei ra, ‘evildoers’, for a closer parallel, without manuscript support. Bemotav is literally ‘in his deaths’, a plural noun; Ezekiel uses the same plural for violent death (Ezekiel 28:8 and 28:10, the deaths of the slain and of the uncircumcised), so it is best taken as intensive, ‘his violent death’. The last line begins al lo, which normally means ‘because not’ but here must mean ‘although not’, exactly as in Job 16:17, where Job protests his innocence with the same words, al lo chamas, ‘although there is no violence’ in his hands. Chamas, \"violence\", and mirmah, \"deceit\", cover deed and word.",
+      "words": [
+        "H5414H",
+        "H7563",
+        "H6913",
+        "H6223",
+        "H4194",
+        "H2555",
+        "H4820",
+        "H6310G"
+      ],
+      "text": "The Great Isaiah Scroll (1QIsaa) spells the word for ‘in his death’ with an extra letter, and some scholars have read it as bomato or bamato, ‘his burial mound’, a word related to bamah, ‘high place’, which in a few texts may denote a funerary installation. The Septuagint renders the line ‘I will give the wicked for his burial, and the rich for his death’, treating the wicked and rich as those handed over, a reading that has not found many followers.",
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "Only an innocent sufferer can bear the sins of others; one who deserved punishment would bear his own. The verse's plain statement of the Servant's innocence is the ground of verses 10 to 12. The New Testament affirms the same of Jesus: he committed no sin (1 Peter 2:22), he knew no sin (2 Corinthians 5:21)."
+        }
+      ],
+      "nt": [
+        {
+          "ref": "1 Peter 2:22",
+          "note": "Peter quotes the second half of the verse almost exactly from the Septuagint, changing its ‘lawlessness’ (anomia) to ‘sin’ (hamartia): he committed no sin, and no deceit was found in his mouth. The first half has its echo in the Gospels, which record that Jesus was crucified between two criminals (Mark 15:27) and buried in the new tomb of Joseph of Arimathea, whom Matthew alone calls a rich man (Matthew 27:57-60). The Gospels do not cite Isaiah at that point; the correspondence has been noticed by Christian readers since the early church."
+        }
+      ],
+      "refs": [
+        "Matthew 27:57-60",
+        "Mark 15:27",
+        "Job 16:17",
+        "1 Peter 2:22",
+        "Hebrews 4:15"
+      ]
+    },
+    {
+      "v": "10",
+      "context": "The final stanza (verses 10-12) reveals the purpose behind everything. It was the LORD's will to crush the Servant; his life becomes a guilt offering; and beyond it he will see offspring, prolong his days, and carry out the LORD's pleasure. Death is not the end of his story.",
+      "grammar": "VaYHWH chafets dakko hecheli, \"Yet it was the LORD's will to crush Him and to cause Him to suffer\", uses chafets, ‘to delight in, will’, with dakko, a Piel infinitive of daka (the ‘crushed’ of verse 5), and hecheli, a Hiphil perfect of chalah, ‘to make sick’, the root of choli in verses 3 and 4. The next clause is the song's most debated: im tasim asham nafsho. Im can be conditional (‘if’) or temporal (‘when’). Tasim can be second masculine, ‘if you make his soul a guilt offering’, addressed to God or to the reader, or third feminine, with nafsho, ‘his soul’ (a feminine noun), as subject: ‘when his soul makes itself a guilt offering’, which stresses his self-offering. The BSB's passive (\"when His soul is made\") leaves the agent open. Asham is the guilt or reparation offering of Leviticus 5:14 to 6:7, brought when someone had wronged God's holy things or a neighbor, together with restitution. Then the promises: yireh zera, \"He will see His offspring\"; yaarikh yamim, ‘he will lengthen days’, the covenant blessing of long life (Deuteronomy 5:33); and vechefets YHWH beyado yitslach, ‘the pleasure of the LORD will prosper in his hand’. The verb chafets at the start and the noun chefets at the end frame the verse: what the LORD willed in crushing him is the purpose that prospers through him.",
+      "words": [
+        "H2654A",
+        "H1792",
+        "H2470I",
+        "H7760A",
+        "H0817",
+        "H5315G",
+        "H2233H",
+        "H0748",
+        "H2656",
+        "H6743B"
+      ],
+      "theology": [
+        {
+          "id": "sovereignty",
+          "note": "The verse says without qualification that the Servant's suffering was the LORD's will. It does not make God cruel or the Servant's persecutors innocent (verse 8 calls it injustice); it places their act under God's purpose, as Peter would say of the crucifixion: delivered up by God's set plan and foreknowledge, killed by lawless hands (Acts 2:23)."
+        },
+        {
+          "id": "atonement",
+          "note": "The asham was the offering that dealt with a debt owed to God, paid with restitution. By naming the Servant's life an asham, the song interprets his death in the terms of Israel's sacrificial system, the move Hebrews makes at length (Hebrews 9:11-14, 10:10)."
+        },
+        {
+          "id": "resurrection",
+          "note": "After being cut off from the land of the living (verse 8) and buried (verse 9), the Servant sees offspring and prolongs his days. The song does not explain how, but it plainly speaks of life beyond his death. The New Testament reads this vindication as fulfilled in Jesus' resurrection (1 Corinthians 15:3-4, according to the Scriptures)."
+        }
+      ],
+      "refs": [
+        "Leviticus 5:14-19",
+        "Acts 2:23",
+        "Acts 4:27-28",
+        "Hebrews 10:10",
+        "1 Corinthians 15:3-4"
+      ]
+    },
+    {
+      "v": "11",
+      "context": "God speaks again, closing the frame begun in 52:13. After his anguish the Servant will see and be satisfied, and by his knowledge the righteous Servant will make many righteous, bearing their iniquities. The verse gathers the song's two strands, the Servant's righteousness and his burden-bearing, into one sentence.",
+      "grammar": "Meamal nafsho, \"After the anguish of His soul\", uses amal, toil or trouble; min can mean ‘after’ or ‘because of’. Yireh yisba, ‘he will see, he will be satisfied’, has no object for ‘see’ in the Masoretic Text. Bedato, \"By His knowledge\", can mean the knowledge he has (his wise understanding, echoing yaskil in 52:13), the knowledge others have of him, or, on a proposal of D. Winton Thomas from a second Hebrew root, his humiliation or submission. Yatsdiq tsaddiq avdi larabbim, \"My righteous Servant will justify many\", uses the Hiphil of tsadaq. In law the Hiphil means to declare in the right, to acquit (Deuteronomy 25:1; Isaiah 5:23 condemns those who acquit the guilty for a bribe); in Daniel 12:3 the related participle describes the wise who lead many to righteousness. The preposition le before rabbim is unusual and may mean ‘for many’ or ‘to many’. The verse ends with the emphatic pronoun: vaavonotam hu yisbol, ‘and their iniquities, he will carry them’, with saval, the load-bearing verb of verse 4.",
+      "words": [
+        "H5999",
+        "H5315G",
+        "H7200G",
+        "H7646",
+        "H1847",
+        "H6663",
+        "H6662",
+        "H5650",
+        "H7227A",
+        "H5771G",
+        "H5445"
+      ],
+      "text": "The Great Isaiah Scroll (1QIsaa), a second Isaiah scroll from the same cave (1QIsab), a fragment from Cave 4 (4QIsad), and the Septuagint all read ‘he will see light’ (or), supplying the object the Masoretic Text lacks. The BSB and most modern translations follow them (\"He will see the light of life\"). Light here likely means life itself, as in Job 33:28 and Psalm 36:9, and the reading strengthens the sense that the Servant lives beyond death. The Masoretic accents place the main pause after ‘he will be satisfied’, joining ‘by his knowledge’ to what follows.",
+      "history": "Daniel 12:3, written in the second century BC according to most scholars and in the sixth according to traditional dating, promises that the maskilim, ‘the wise’, will shine like the sky and that ‘those who lead many to righteousness’ (matsdiqei harabbim) will shine like stars. H. L. Ginsberg argued in 1953 that this is the oldest surviving interpretation of the Servant: Daniel applies Isaiah's yaskil (52:13) and yatsdiq ... larabbim (53:11) to the faithful teachers of his own day who suffered under Antiochus IV.",
+      "theology": [
+        {
+          "id": "justification",
+          "note": "The Servant makes many righteous by bearing their iniquities. The verse joins the forensic sense of justification (declaring righteous) with its ground (the righteous one carries the guilt of others). Paul's teaching that through one man's obedience the many will be made righteous (Romans 5:19), and that Jesus was delivered over for our trespasses and raised for our justification (Romans 4:25), rests on this verse's logic."
+        },
+        {
+          "id": "messiah",
+          "note": "God calls him tsaddiq avdi, ‘my righteous Servant’. Only a righteous one can make others righteous. The title of the Righteous One is given to Jesus in the early sermons of Acts (3:14, 7:52)."
+        }
+      ],
+      "refs": [
+        "Romans 5:18-19",
+        "Romans 4:25",
+        "Daniel 12:3",
+        "Acts 3:14",
+        "2 Corinthians 5:21"
+      ]
+    },
+    {
+      "v": "12",
+      "context": "The song ends with God's reward for the Servant and the reason for it. He will share the spoils of a victor, because he poured out his life to death, was counted among transgressors, bore the sin of many, and interceded for the transgressors. The last word is prayer for the guilty.",
+      "grammar": "Lakhen, \"Therefore\", grounds the reward in what follows. Achalleq-lo varabbim is ambiguous: ‘I will give him a portion among the great’ (the BSB) or ‘I will give him the many as his portion’, taking the preposition be as marking what is allotted; the second reading makes the justified many of verse 11 his spoil. Similarly veet-atsumim yechalleq shalal can be ‘he will divide spoil with the strong’ or ‘he will divide the strong as spoil’. The reason clause, tachat asher heerah lammavet nafsho, uses heerah, a Hiphil of arah, ‘to lay bare, empty out’, the verb used when Rebekah emptied her jar into the trough (Genesis 24:20): he poured out his life to the last drop. Veet-poshim nimnah, \"He was numbered with the transgressors\", is a Niphal of manah, ‘to count’. Vehu chet-rabbim nasa, ‘and he himself bore the sin of many’, returns to nasa, and velapposhim yafgia, \"made intercession for the transgressors\", uses the Hiphil of paga from verse 6: the one on whom iniquity was made to fall now makes his plea fall on God's ear for the guilty.",
+      "words": [
+        "H3651C",
+        "H2505A",
+        "H7227A",
+        "H6099",
+        "H7998",
+        "H6168",
+        "H4194",
+        "H5315G",
+        "H6586",
+        "H4487",
+        "H2399",
+        "H5375J",
+        "H6293"
+      ],
+      "theology": [
+        {
+          "id": "exaltation",
+          "note": "The song ends as it began (52:13), with the Servant exalted, now as a victor dividing spoil. His exaltation is the reward of his self-emptying: because he poured out his life. Paul's hymn in Philippians 2:7-9 follows the same pattern, and ‘therefore’ in 2:9 answers to ‘therefore’ here."
+        },
+        {
+          "id": "prayer",
+          "note": "The final act of the Servant is intercession for transgressors. Luke records Jesus praying for those crucifying him (Luke 23:34, a verse absent from some early manuscripts), and the New Testament describes the risen Christ as always living to intercede (Romans 8:34, Hebrews 7:25)."
+        }
+      ],
+      "nt": [
+        {
+          "ref": "Luke 22:37",
+          "note": "At the Last Supper Jesus quotes ‘and he was numbered with the transgressors’ and says it must be fulfilled in him, the only direct quotation of Isaiah 53 attributed to Jesus in the Gospels. Luke's wording, meta anomon elogisthe, is closer to the Hebrew preposition ‘with’ than the Septuagint's ‘among the lawless’. The line is fulfilled hours later when he is crucified between two criminals (Luke 23:32-33). Mark 15:28, which cites the same words at the crucifixion, is absent from the earliest manuscripts, including Codex Sinaiticus and Codex Vaticanus, and most modern translations omit it or place it in a note."
+        },
+        {
+          "ref": "Hebrews 9:28",
+          "note": "Hebrews says Christ was offered once to bear the sins of many, using the Septuagint's phrasing of this verse (anenenken hamartias pollon), and joins it to the promise that he will appear a second time for salvation. Jesus' saying that the Son of Man came to give his life as a ransom for many (Mark 10:45) is widely thought to echo the song's ‘many’ as well."
+        }
+      ],
+      "refs": [
+        "Luke 22:37",
+        "Mark 10:45",
+        "Philippians 2:7-9",
+        "Hebrews 9:28",
+        "Luke 23:34"
+      ]
+    }
+  ]
+}

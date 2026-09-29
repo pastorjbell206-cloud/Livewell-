@@ -1,0 +1,216 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "The first oracle. A speaker reports what the LORD has said to the one he calls \"my Lord\": sit at my right hand until I subdue your enemies. The verse sets the psalm's whole order of things: God enthrones, the king sits, and God himself does the subduing. Verses 2 and 3 unfold what that rule looks like on earth.",
+      "grammar": "The verse opens with neum YHWH, \"the LORD said\", more exactly ‘the utterance of the LORD’. The phrase is the prophets' formula, used hundreds of times in the prophetic books (usually rendered ‘declares the LORD’), and this is its only appearance in the Psalms: the psalm presents itself as a prophetic oracle, not a courtier's compliment. The addressee is ladoni, ‘to my lord’. In the Masoretic vowels adoni is the form used for a human superior, a king (1 Samuel 22:12), a master, or occasionally an angel, while the form reserved for God is Adonai, which appears in verse 5. The consonants of the two are identical; the distinction lies in the vowels. So the Hebrew text as read makes \"my Lord\" a royal figure distinct from the LORD who speaks to him. The Septuagint, which could not mark the difference, has kyrios for both: ‘the Lord said to my lord’. Shev, \"sit\", is an imperative: the one addressed is enthroned by God's command. \"Until\" (ad) marks the period of the session, not its end: the king does not rise and leave when the enemies are subdued, as 1 Corinthians 15:25-28 makes clear.",
+      "words": [
+        "H5002",
+        "H3068G",
+        "H0113",
+        "H3427",
+        "H3225G",
+        "H5704",
+        "H1916"
+      ],
+      "history": "In the ancient Near East a king seated at the right hand of a god was a picture of delegated rule, and enemies under the king's feet was a stock image of victory. Among the footstools buried with the Egyptian king Tutankhamun (fourteenth century BC) are ones decorated with bound foreign captives, so that the king literally rested his feet on his enemies. Israel's poem uses the image but puts all the initiative with God: \"until I make\" your enemies a footstool. Jewish readers applied the verse in several ways. Justin Martyr's Dialogue with Trypho (chapters 33 and 83, about AD 155) reports Jewish teachers of his day who referred it to King Hezekiah; the Babylonian Talmud (Nedarim 32b) reads the psalm of Abraham after his victory over the kings in Genesis 14.",
+      "theology": [
+        {
+          "id": "exaltation",
+          "note": "This is the verse behind the creed's line that Christ ‘sits at the right hand’ of the Father. The seat at God's right hand is not a place but a share in God's rule, given by God and exercised until every enemy is subdued."
+        },
+        {
+          "id": "messiah",
+          "note": "Jesus himself drew the question out of this verse: if the Messiah is David's son, how can David call him Lord? The answer the New Testament gives is that David's son is also David's Lord, a king whose authority comes from God's own throne."
+        }
+      ],
+      "nt": [
+        {
+          "ref": "Mark 12:36",
+          "note": "In the temple, after being questioned by his opponents, Jesus asks one of his own: how can the scribes say the Messiah is David's son, when David, speaking by the Holy Spirit, calls him Lord? The argument depends on Davidic authorship and on the distinction between the two lords. Mark and Matthew (22:44) have ‘under your feet’ (hypokato ton podon), probably influenced by Psalm 8:6, where Luke (20:42-43) keeps the Septuagint's ‘footstool of your feet’. The Gospels do not answer the question in the scene; the rest of the story does."
+        },
+        {
+          "ref": "Acts 2:34-35",
+          "note": "Peter's Pentecost sermon quotes the verse from the Septuagint word for word to argue that David did not ascend to heaven, so the one enthroned must be someone else: the risen Jesus, whom God has made both Lord and Christ (Acts 2:36). Psalm 110:1 is the most quoted and alluded to Old Testament verse in the New Testament; beyond the direct quotations (Hebrews 1:13 as well) it stands behind Mark 14:62, Romans 8:34, 1 Corinthians 15:25, Ephesians 1:20, Colossians 3:1, Hebrews 1:3, 8:1, 10:12-13, and 1 Peter 3:22. David M. Hay's Glory at the Right Hand (1973) and Martin Hengel's essay on the verse in his Studies in Early Christology (1995) trace how early and how central this reading was."
+        }
+      ],
+      "parallels": [
+        "Matthew 22:41-46",
+        "Mark 12:35-37",
+        "Luke 20:41-44"
+      ],
+      "refs": [
+        "Mark 14:62",
+        "1 Corinthians 15:25-28",
+        "Hebrews 10:12-13",
+        "Ephesians 1:20-22"
+      ]
+    },
+    {
+      "v": "2",
+      "context": "The first oracle is expanded. The LORD sends out the king's scepter from Zion, and a second command follows: rule in the midst of your enemies. The king does not wait for his enemies to vanish before he reigns; he reigns while they are still around him.",
+      "grammar": "Matteh uzzekha, ‘the rod of your strength’, is the staff of office, the word used for Moses' staff (Exodus 4:20) and Aaron's rod that budded (Numbers 17:8). Yishlach, \"extends\", is an imperfect of shalach, ‘to send out’: the LORD stretches the king's authority outward from Zion. The second line breaks into a direct command, redeh, \"rule\", an imperative of radah, the verb for dominion in Genesis 1:26 and for the king's reign in Psalm 72:8. Beqerev, ‘in the midst of’, is pointed: the reign is exercised not after the enemies are gone but in the middle of them.",
+      "words": [
+        "H4294G",
+        "H5797",
+        "H7971G",
+        "H6726",
+        "H7287A",
+        "H7130G"
+      ],
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The verse describes a reign that is already real while opposition remains. The New Testament's pattern of the kingdom already inaugurated and not yet complete (Christ reigns now, and the last enemy, death, is yet to be destroyed, 1 Corinthians 15:25-26) is built on exactly this picture."
+        }
+      ],
+      "refs": [
+        "Psalm 2:6-9",
+        "Psalm 72:8",
+        "Numbers 17:8",
+        "Isaiah 2:3"
+      ]
+    },
+    {
+      "v": "3",
+      "context": "The king's people rally to him on the day of battle, freely offering themselves, and the second half of the verse describes the king, or his troops, with images of holiness, dawn, dew, and youth. It is the hardest verse in the psalm and one of the hardest in the Psalter, and ancient translators read it very differently.",
+      "grammar": "\"Your people shall be willing\" renders ammekha nedavot, literally ‘your people are freewill offerings’: nedavah is the word for a voluntary sacrifice (Leviticus 7:16), and the related verb describes volunteers who offered themselves for battle in Deborah's day (Judges 5:2, 9). \"Your day of battle\" is beyom cheilekha, ‘the day of your strength’ or ‘of your army’, since chayil means both. Behadrei-qodesh, \"arrayed in holy splendor\", is ‘in the majesties of holiness’, the phrase used for worship in Psalm 29:2. The last line, merechem mishchar lekha tal yaldutekha, is ‘from the womb of the dawn, yours is the dew of your youth’. Mishchar, a form of shachar, ‘dawn’, occurs only here. Most interpreters take the dew as an image of freshness and number (dew appears silently and everywhere at daybreak, as in 2 Samuel 17:12) applied either to the king's young warriors or to the king's own vigor, renewed like the morning.",
+      "words": [
+        "H5071",
+        "H2428G",
+        "H1926",
+        "H6944G",
+        "H7358",
+        "H4891",
+        "H2919",
+        "H3208"
+      ],
+      "text": "The Septuagint reads the same consonants very differently. It takes ammekha (‘your people’) as immekha (‘with you’), nedavot as ‘rule’ or ‘princely power’, and, most importantly, yaldutekha (‘your youth’) as yelidtikha, ‘I have begotten you’, the verb of Psalm 2:7; it also reads mishchar as ‘before the morning star’. The Greek therefore says, in effect, ‘With you is rule in the day of your power, in the splendors of the holy ones; from the womb, before the morning star, I begot you.’ The Latin Vulgate follows it, and many church fathers used it for the Son's eternal generation from the Father. Several Hebrew manuscripts, and Jerome's own translation from the Hebrew, read beharerei-qodesh, ‘on the holy mountains’, instead of behadrei-qodesh; the letters d and r are nearly identical in Hebrew script. English Bibles follow the Masoretic text but differ widely in how they construe it.",
+      "theology": [
+        {
+          "id": "church",
+          "note": "On the Masoretic reading, the king's people come as freewill offerings, volunteers rather than conscripts. Paul's call to present your bodies as a living sacrifice (Romans 12:1) describes the same willing self-offering of a people to their king."
+        }
+      ],
+      "refs": [
+        "Judges 5:2",
+        "Psalm 29:2",
+        "Psalm 2:7",
+        "Romans 12:1",
+        "Hosea 14:5"
+      ]
+    },
+    {
+      "v": "4",
+      "context": "The second oracle, and the one that sets this psalm apart from every other royal psalm. The LORD swears an unbreakable oath: the king is also a priest, forever, after the order of Melchizedek. The oath answers the question verse 1 leaves open, what kind of ruler sits at God's right hand, with the unexpected claim that he mediates as well as rules.",
+      "grammar": "Nishba YHWH velo yinnachem, \"The LORD has sworn and will not change His mind\", pairs a Niphal perfect (the oath already taken) with a negated Niphal imperfect of nacham, ‘to relent, to change course’. The same verb appears in the assurances that God is not a man that he should change his mind (Numbers 23:19, 1 Samuel 15:29): the oath closes every door to revision. Kohen, \"priest\", is the ordinary word for a sanctuary priest. The phrase al-divrati, \"in the order of\", uses an old form of divrah with an archaic connecting vowel; elsewhere al-divrat means ‘on account of’ or ‘concerning’ (Ecclesiastes 3:18, 7:14). Most translators take it here as ‘after the manner of’, meaning a priesthood of Melchizedek's kind. The name Malki-tsedeq can be heard as ‘my king is righteousness’ or ‘king of righteousness’, the sense Hebrews 7:2 draws from it.",
+      "words": [
+        "H7650",
+        "H5162H",
+        "H3548",
+        "H5769G",
+        "H1700",
+        "H4442"
+      ],
+      "history": "Israel's law gave the priesthood to Aaron's line within the tribe of Levi, and the kings of Judah came from Judah; when King Uzziah tried to burn incense in the temple he was struck with leprosy (2 Chronicles 26:16-21). A Davidic king called a priest therefore needed a precedent older than Aaron, and Melchizedek, king of Salem and priest of God Most High (Genesis 14:18-20), provided it. The Babylonian Talmud (Nedarim 32b) reads the verse very differently, taking al-divrati as ‘because of the words of’ Melchizedek: since he blessed Abraham before blessing God, the priesthood passed from him to Abraham's descendants.",
+      "theology": [
+        {
+          "id": "offices",
+          "note": "The verse joins kingship and priesthood in one person by divine oath. The church's teaching that Christ holds the offices of prophet, priest, and king (set out at length by Calvin, Institutes 2.15) finds one of its main Old Testament roots here."
+        },
+        {
+          "id": "atonement",
+          "note": "A priest exists to draw near to God on behalf of others and to offer sacrifice. Hebrews argues from this verse that Christ's priesthood rests on an oath and an indestructible life, not on descent, and that he offered himself once for all (Hebrews 7:16-17, 7:27)."
+        }
+      ],
+      "nt": [
+        {
+          "ref": "Hebrews 7:17",
+          "note": "Hebrews quotes this verse more than any other Old Testament line: in 5:6, 5:10, 6:20, 7:17, and 7:21, where the writer includes the oath formula, following the Septuagint (which renders al-divrati as kata ten taxin, ‘according to the order’). The argument turns on three words of the verse. ‘Forever’ shows that this priesthood, unlike Aaron's, is not ended by death (7:23-25). ‘Sworn’ shows that it rests on an oath, which the Levitical priests never received (7:20-22). ‘Melchizedek’ points to a priesthood outside Levi, which implies that the law under which Levi served has been changed (7:11-12). The writer reads Genesis 14 closely alongside the psalm, noting that Melchizedek appears in Scripture without genealogy (7:3), an argument from the silence of the text rather than a claim about Melchizedek's nature."
+        }
+      ],
+      "refs": [
+        "Genesis 14:18-20",
+        "Hebrews 5:6",
+        "Hebrews 7:20-25",
+        "Zechariah 6:13",
+        "Numbers 23:19"
+      ]
+    },
+    {
+      "v": "5",
+      "context": "The scene turns to the battle. The Lord is at the king's right hand and shatters kings on the day of his wrath. In verse 1 the king sat at God's right; now God stands at the king's right, the position of a protector in battle (Psalm 16:8, 121:5).",
+      "grammar": "Here the title is Adonai, the form used only of God, in deliberate contrast to adoni in verse 1. Grammatically the verses from here to the end are ambiguous about their subject. Most interpreters take Adonai as God, fighting at the king's right hand, and see the subject shifting to the king by verse 7, since it is the king who drinks on the road. Others take Adonai as the king himself, now addressed to God (‘the Lord is at your right hand’, O LORD), which keeps a single subject throughout. Machats, \"will crush\", is a Hebrew perfect with future meaning, often called the prophetic perfect: the victory is announced as settled. The verb is used for shattering the head or loins of an enemy (Numbers 24:17, Deuteronomy 33:11, Habakkuk 3:13).",
+      "words": [
+        "H0136",
+        "H3225G",
+        "H4272",
+        "H0639G",
+        "H4428G"
+      ],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The \"day of His wrath\" is a phrase the prophets use for the day of the LORD's judgment (Zephaniah 1:15). The psalm sets the king's victory within that larger day, which the New Testament applies to Christ's return as judge (Romans 2:5, Revelation 6:17)."
+        }
+      ],
+      "refs": [
+        "Psalm 2:9-12",
+        "Psalm 16:8",
+        "Zephaniah 1:15",
+        "Revelation 6:15-17"
+      ]
+    },
+    {
+      "v": "6",
+      "context": "The judgment is extended to the nations. The picture is the grim aftermath of an ancient battlefield, the dead heaped up and rulers shattered across a wide land. It is the fulfillment of verse 1's promise that the enemies will be made a footstool.",
+      "grammar": "Yadin baggoyim, \"He will judge the nations\", uses din, a word for rendering judgment as a ruler does (Genesis 49:16, Psalm 72:2). Male geviyyot, ‘it is full of corpses’, is a verbless or impersonal clause (the valley or the field is full), which the BSB smooths as \"heaping up the dead\". The last line, machats rosh al-erets rabbah, can be read ‘he shatters the head over the wide earth’ or ‘he shatters the chief of the great land’. Rosh is singular, so some interpreters, from the church fathers onward, have heard a single archenemy, and some have linked the line thematically with the crushed head of Genesis 3:15, though the verbs differ and the connection is one of theme, not wording.",
+      "words": [
+        "H1777",
+        "H1471A",
+        "H1472",
+        "H4272",
+        "H7218H",
+        "H7227A"
+      ],
+      "theology": [
+        {
+          "id": "justice-poor",
+          "note": "The king who judges the nations is the king whose scepter serves justice. Psalm 72 describes the same royal judging as defense of the poor and the needy (Psalm 72:2-4); the violence of verse 6 is aimed at the powers that oppress, the kings and rulers."
+        }
+      ],
+      "refs": [
+        "Psalm 72:2-4",
+        "Habakkuk 3:13",
+        "Genesis 3:15",
+        "Revelation 19:17-21"
+      ]
+    },
+    {
+      "v": "7",
+      "context": "The psalm ends with a small, human image after the vast battle. The king drinks from a stream by the road and lifts his head. Whatever the precise picture, the last word is triumph: the king is refreshed and vindicated.",
+      "grammar": "Minnachal badderekh yishteh, ‘from a wadi on the way he drinks’: a nachal is a streambed that runs in the rainy season. The verbs are imperfects, which here describe the expected outcome. Al-ken, \"therefore\", links the drinking to the lifting of the head. To lift up the head (herim rosh) is a Hebrew idiom for being vindicated, restored, or triumphant (Psalm 3:3, 27:6), the opposite of the bowed head of shame.",
+      "words": [
+        "H5158A",
+        "H1870L",
+        "H8354",
+        "H3651C",
+        "H7311A",
+        "H7218A"
+      ],
+      "history": "Interpreters have proposed three settings for the image. Most read it as the warrior pausing in pursuit to drink, as Gideon's men drank at the spring of Harod (Judges 7:5-6) and Samson after his battle (Judges 15:18-19). Some scholars, noting that Solomon was anointed at the Gihon spring below Jerusalem (1 Kings 1:33-45), suggest a drink from the sacred spring as part of the coronation rite. Augustine, in his Expositions of the Psalms, read the brook as the stream of suffering and mortality that Christ drank on his way, and the lifted head as his resurrection and exaltation, a reading that is figurative rather than grammatical but that shaped much Latin preaching on the verse.",
+      "theology": [
+        {
+          "id": "exaltation",
+          "note": "The psalm that began with enthronement ends with the king's head lifted up. The sequence of humble refreshment on the road and then exaltation is the pattern the New Testament sees in Christ, who humbled himself and was highly exalted (Philippians 2:8-9)."
+        }
+      ],
+      "refs": [
+        "Judges 7:5-6",
+        "Judges 15:18-19",
+        "Psalm 3:3",
+        "Philippians 2:8-9"
+      ]
+    }
+  ]
+}
