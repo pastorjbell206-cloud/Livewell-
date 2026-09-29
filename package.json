@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "NODE_ENV=development tsx watch server/_core/index.ts",
     "build": "tsx scripts/build-catalogue.mjs && vite build && esbuild server/_core/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist",
-    "build:vercel": "rm -rf node_modules/.vite .vite dist && pnpm run pdfs && pnpm run og && pnpm run howtos && pnpm run wisdom && pnpm run sitemap && pnpm run publish:articles && pnpm run llms:full && pnpm run essays:public && pnpm run build && pnpm run prerender",
+    "build:vercel": "rm -rf node_modules/.vite .vite dist && pnpm run pdfs && pnpm run og && pnpm run howtos && pnpm run wisdom && node scripts/build-reference-indexes.mjs && pnpm run sitemap && pnpm run publish:articles && pnpm run llms:full && pnpm run essays:public && pnpm run build && pnpm run prerender",
     "start": "NODE_ENV=production node dist/index.js",
     "check": "tsc --noEmit",
     "lint": "eslint . --max-warnings 0",
@@ -159,7 +159,7 @@
     },
     "overrides": {
       "tailwindcss>nanoid": "3.3.7",
-      "path-to-regexp@<0.1.13": ">=0.1.13",
+      "path-to-regexp@<0.1.13": ">=0.1.13 <0.2.0",
       "mdast-util-to-hast@<13.2.1": ">=13.2.1",
       "qs@<6.16.0": ">=6.16.0",
       "sharp@<0.35.4": ">=0.35.4",
