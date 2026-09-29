@@ -146,6 +146,66 @@ chapters.
 `client/public/bible/notes/genesis/1.json` is the model. Match its depth and
 its tone.
 
+## Version 2: the deepened chapter note and book introduction
+
+The advisory board's audit (`docs/BIBLE-BOARD-AUDIT.md`) found the chapter
+notes accurate but too short and missing whole layers. A version 2 note
+carries `"v": 2` and everything above, deepened, plus the fields below. The
+validator holds any file marked `"v": 2` to these rules.
+
+**Chapter note, version 2** (aim for 3,000 to 4,500 words):
+
+```json
+{
+  "v": 2,
+  "historical": "600+ characters. Cite primary sources by reference, not 'ancient texts': m. Gittin 9:10, 1QS 1:9-10, Josephus, Antiquities 18.116-119, the Nabonidus Chronicle, COS 2.119.",
+  "cultural": "600+ characters, the same standard.",
+  "literary": "500+ characters.",
+  "christ": "500+ characters.",
+  "words": "Four to eight entries, each with frequency and range in the Bible where it matters, and the standard lexicon's sense (BDB, HALOT, BDAG) described, not quoted.",
+  "interpretation": "How this chapter has been read, 800 to 4,000 characters, in historical order: Jewish readers (Targum, Midrash, Talmud, Rashi, Ibn Ezra, Radak, Ramban) where relevant, the church fathers, medieval readers, the Reformers, modern critical and theological scholarship, and the chapter's life in liturgy (the synagogue and church lectionaries), art, music, and literature. Name the interpreter and the work (Augustine, City of God 16.32; Calvin's commentary; Kierkegaard, Fear and Trembling, 1843). Describe; never quote.",
+  "text": "Optional, required when English Bibles visibly differ: manuscript differences (Masoretic Text, Dead Sea Scrolls, Septuagint, Samaritan Pentateuch; for the New Testament the major papyri and codices by name) and Hebrew and English verse-numbering differences, each with what the options mean.",
+  "teach": {
+    "big": "The chapter's main idea in one sentence a teacher can build on.",
+    "outline": [{ "v": "1-5", "t": "A teaching point, not a summary" }],
+    "pitfalls": "The common misreadings and misuses in preaching and teaching, and why they fail the text.",
+    "pastoral": "Optional: who in the room this text will press on (grief, abuse, divorce, doubt, scrupulosity) and how to teach it with care."
+  },
+  "hard": [{ "q": "…", "a": "…" }],
+  "questions": { "observe": ["…", "…"], "interpret": ["…", "…"], "apply": ["…", "…"] }
+}
+```
+
+- `hard` may hold one or two questions. Each answer states the strongest
+  objection first, in its defenders' form and with their names (including
+  non-Christian readers: Jewish interpreters, skeptics, critics), then the
+  responses, also named. No position on a second-order question is declared
+  the winner.
+- `doctrines` uses the finest id that fits (justification, not salvation, in
+  Romans 3; resurrection, not hope, in 1 Corinthians 15; incarnation in John
+  1), one to five of them.
+- `teach.outline` covers the chapter's verses in order like `outline`, but
+  as points to teach rather than a table of contents.
+- `questions`: observation questions ask what the text says; interpretation
+  questions ask what it means; application questions ask what difference it
+  makes.
+
+**Book introduction, version 2** adds `"v": 2` and:
+
+```json
+{
+  "text": "300+ characters: the book's textual history (the witnesses, the major ancient translations, where they diverge, and why English Bibles differ).",
+  "reception": "500+ characters: how the book has been read by Jewish and Christian interpreters across the centuries, and its place in liturgy, art, and culture, with interpreters and works named.",
+  "furtherReading": [{ "tier": "first | pastor | scholar", "author": "Gordon J. Wenham", "title": "Genesis 1-15", "series": "Word Biblical Commentary", "year": 1987, "note": "One sentence on what it is best for." }]
+}
+```
+
+- Six to fifteen `furtherReading` titles across all three tiers and across
+  traditions. Every title must be a real book by that author; verify each
+  with a web search before listing it.
+- A book whose own text marks its structure (the ten "this is the account
+  of" headings in Genesis) is outlined by those markers.
+
 ## Verse notes: `client/public/bible/notes/<slug>/verses/<chapter>.json`
 
 The chapter note tells the reader what the chapter is. Verse notes walk
@@ -202,6 +262,18 @@ They are the layer a reader opens by tapping a verse number.
 - **Text.** Use when a verse has a real manuscript question (the Greek
   editions mark these in the helper's output) or a translation choice a
   reader would notice between English Bibles. Say what the options are.
+- **Old Testament in the New.** In a New Testament verse that quotes or
+  clearly alludes to the Old, add `"ot": [{ "ref": "Psalm 110:1", "note": "…" }]`:
+  what the Hebrew says, what the Septuagint says, what the New Testament
+  wording follows or changes, the original context, and how the author uses
+  it. Do the same in the Old Testament verse that is quoted, pointing
+  forward (`"nt"` with the same shape).
+- **Parallels.** In the Gospels, and in Samuel-Kings and Chronicles, list
+  the parallel passages in `"parallels": ["Mark 1:9-11", "Luke 3:21-22"]`
+  and say in the context or text note what each writer does differently.
+- **Name who holds a view.** "Many interpreters" is not enough where the
+  names are known: name the scholar or tradition and, where you are sure of
+  it, the work.
 - **Refs.** Up to five cross-references that genuinely illuminate the verse,
   written "Book 3:16", "Book 3:16-18", or "Book 3". Book names as the site
   spells them (Psalms or Psalm, Song of Solomon, 1 Corinthians). The

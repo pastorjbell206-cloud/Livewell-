@@ -113,6 +113,21 @@ function checkIntro(b, where) {
   }
   if (!Array.isArray(d.doctrines) || d.doctrines.length < 2) fail(where, "at least two doctrines");
   else for (const id of d.doctrines) if (!doctrineIds.has(id)) fail(where, `unknown doctrine "${id}"`);
+  if (d.v === 2) {
+    field("text", 300, 5000);
+    field("reception", 500, 6000);
+    const fr = d.furtherReading;
+    if (!Array.isArray(fr) || fr.length < 6 || fr.length > 15) fail(where, "six to fifteen furtherReading titles");
+    else {
+      for (const [i, r] of fr.entries()) {
+        if (!["first", "pastor", "scholar"].includes(r.tier)) fail(`${where}.furtherReading[${i}]`, "tier must be first, pastor, or scholar");
+        if (typeof r.author !== "string" || r.author.length < 3 || typeof r.title !== "string" || r.title.length < 3) fail(`${where}.furtherReading[${i}]`, "author and title required");
+        if (r.year != null && !(Number.isInteger(r.year) && r.year > 1000 && r.year <= 2026)) fail(`${where}.furtherReading[${i}]`, `year ${r.year} is not a year`);
+        prose(`${where}.furtherReading[${i}].note`, r.note, 20, 400);
+      }
+      for (const t of ["first", "pastor", "scholar"]) if (!fr.some((r) => r.tier === t)) fail(where, `furtherReading needs a ${t} title`);
+    }
+  }
   if (!Array.isArray(d.keyChapters) || d.keyChapters.length < 1) fail(where, "at least one key chapter");
   else for (const k of d.keyChapters) {
     if (!(k.ch >= 1 && k.ch <= b.chapters)) fail(where, `key chapter ${k.ch} out of range`);
@@ -127,15 +142,40 @@ function checkChapter(b, c, where) {
   let dashes = 0;
   const field = (k, min, max) => (dashes += prose(`${where}.${k}`, d[k], min, max) ?? 0);
   if (typeof d.title !== "string" || d.title.length < 3 || d.title.length > 70) fail(where, "title must be 3 to 70 characters");
+  const v2 = d.v === 2;
   field("summary", 120, 700);
-  field("story", 250, 1800);
-  field("historical", 300, 2600);
-  field("cultural", 250, 2600);
-  field("literary", 180, 1800);
-  field("christ", 180, 1800);
-  if (d.hard != null) {
-    if (typeof d.hard.q !== "string" || d.hard.q.length < 15) fail(where, "hard.q too short");
-    dashes += prose(`${where}.hard.a`, d.hard.a, 250, 2600) ?? 0;
+  field("story", 250, v2 ? 3000 : 1800);
+  field("historical", v2 ? 600 : 300, v2 ? 5000 : 2600);
+  field("cultural", v2 ? 600 : 250, v2 ? 5000 : 2600);
+  field("literary", v2 ? 500 : 180, v2 ? 4000 : 1800);
+  field("christ", v2 ? 500 : 180, v2 ? 4000 : 1800);
+  const hards = d.hard == null ? [] : Array.isArray(d.hard) ? d.hard : [d.hard];
+  if (hards.length > 2) fail(where, "at most two hard questions");
+  for (const [i, h] of hards.entries()) {
+    if (typeof h.q !== "string" || h.q.length < 15) fail(where, `hard[${i}].q too short`);
+    dashes += prose(`${where}.hard[${i}].a`, h.a, 250, v2 ? 5000 : 2600) ?? 0;
+  }
+  if (v2) {
+    prose(`${where}.interpretation`, d.interpretation, 800, 5000);
+    if (d.text != null) prose(`${where}.text`, d.text, 150, 4000);
+    const t = d.teach;
+    if (!t || typeof t !== "object") fail(where, "version 2 needs teach");
+    else {
+      prose(`${where}.teach.big`, t.big, 40, 400);
+      prose(`${where}.teach.pitfalls`, t.pitfalls, 200, 3000);
+      if (t.pastoral != null) prose(`${where}.teach.pastoral`, t.pastoral, 100, 2000);
+      if (!Array.isArray(t.outline) || t.outline.length < 2) fail(where, "teach.outline needs at least two points");
+      else {
+        let nx = 1;
+        for (const [i, o] of t.outline.entries()) {
+          const m = String(o.v ?? "").match(/^(\d+)(?:-(\d+))?$/);
+          if (!m || +m[1] !== nx || +(m[2] ?? m[1]) < +m[1]) { fail(`${where}.teach.outline[${i}]`, `range "${o.v}" out of order (expected to start at ${nx})`); break; }
+          prose(`${where}.teach.outline[${i}].t`, o.t, 15, 400);
+          nx = +(m[2] ?? m[1]) + 1;
+        }
+        if (nx !== last + 1 && !errors.some((e) => e.startsWith(`${where}.teach.outline`))) fail(`${where}.teach.outline`, `ends at ${nx - 1}, chapter ends at ${last}`);
+      }
+    }
   }
   // Outline: contiguous ranges from verse 1 to the last verse.
   if (!Array.isArray(d.outline) || d.outline.length < 1) fail(where, "outline missing");
@@ -152,19 +192,26 @@ function checkChapter(b, c, where) {
     }
     if (next !== last + 1 && !errors.some((e) => e.startsWith(`${where}.outline`))) fail(`${where}.outline`, `ends at ${next - 1}, chapter ends at ${last}`);
   }
-  if (!Array.isArray(d.doctrines) || d.doctrines.length < 1 || d.doctrines.length > 4) fail(where, "one to four doctrines");
+  if (!Array.isArray(d.doctrines) || d.doctrines.length < 1 || d.doctrines.length > (v2 ? 5 : 4)) fail(where, `one to ${v2 ? "five" : "four"} doctrines`);
   else for (const [i, x] of d.doctrines.entries()) {
     if (!doctrineIds.has(x.id)) fail(`${where}.doctrines[${i}]`, `unknown doctrine "${x.id}"`);
     prose(`${where}.doctrines[${i}].note`, x.note, 80, 900);
   }
   const strongs = new Set();
   for (const v of data.verses) for (const w of v.w) strongs.add(w[3]);
-  if (!Array.isArray(d.words) || d.words.length < 1 || d.words.length > 4) fail(where, "one to four key words");
+  if (!Array.isArray(d.words) || d.words.length < (v2 ? 4 : 1) || d.words.length > (v2 ? 8 : 4)) fail(where, v2 ? "four to eight key words" : "one to four key words");
   else for (const [i, w] of d.words.entries()) {
     if (!strongs.has(w.s)) fail(`${where}.words[${i}]`, `${w.s} does not occur in this chapter`);
     prose(`${where}.words[${i}].note`, w.note, 80, 900);
   }
-  if (!Array.isArray(d.questions) || d.questions.length !== 3) fail(where, "exactly three questions");
+  if (v2) {
+    const q = d.questions;
+    if (!q || Array.isArray(q) || typeof q !== "object") fail(where, "version 2 questions are { observe, interpret, apply }");
+    else for (const k of ["observe", "interpret", "apply"]) {
+      if (!Array.isArray(q[k]) || q[k].length < 2 || q[k].length > 3) fail(where, `questions.${k} needs two or three`);
+      else for (const [i, x] of q[k].entries()) prose(`${where}.questions.${k}[${i}]`, x, 25, 400);
+    }
+  } else if (!Array.isArray(d.questions) || d.questions.length !== 3) fail(where, "exactly three questions");
   else for (const [i, q] of d.questions.entries()) prose(`${where}.questions[${i}]`, q, 25, 400);
 }
 
@@ -226,6 +273,18 @@ function checkVerses(b, c, where) {
         else taught.add(t.id);
         prose(`${w}.theology[${j}].note`, t.note, 60, 1200);
       }
+    }
+    for (const k of ["ot", "nt"]) {
+      if (e[k] == null) continue;
+      if (!Array.isArray(e[k])) { fail(w, `${k} must be a list`); continue; }
+      for (const [j, x] of e[k].entries()) {
+        if (!refOk(x.ref)) fail(`${w}.${k}[${j}]`, `"${x.ref}" is not a real passage`);
+        prose(`${w}.${k}[${j}].note`, x.note, 60, 2000);
+      }
+    }
+    if (e.parallels != null) {
+      if (!Array.isArray(e.parallels)) fail(w, "parallels must be a list");
+      else for (const r of e.parallels) if (!refOk(r)) fail(w, `parallel "${r}" is not a real passage`);
     }
     if (e.refs != null) {
       if (!Array.isArray(e.refs)) fail(w, "refs must be a list");
