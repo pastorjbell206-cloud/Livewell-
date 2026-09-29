@@ -60,6 +60,14 @@
       "locus": "scripture"
     },
     {
+      "id": "canon",
+      "name": "Scripture and Canon",
+      "page": "scripture",
+      "summary": "Which books belong in the Bible, and why? The Old Testament canon Jesus and the apostles received, the New Testament books the church recognized as apostolic over the first four centuries, and the Apocrypha that Catholic and Orthodox Bibles include and Protestant Bibles do not. It also covers what Scripture is for the church: its authority, sufficiency, clarity, and necessity.",
+      "terms": "canon of scripture",
+      "locus": "scripture"
+    },
+    {
       "id": "god",
       "name": "Who God Is",
       "page": "god-and-trinity",
@@ -169,6 +177,14 @@
       "page": null,
       "summary": "Humanity was placed in the garden to work it and keep it before sin ever entered the world, so work belongs to creation, not to the curse. The fall made work painful, and the Bible's law and wisdom speak often of honest labor, fair wages, and rest. The New Testament calls believers to do their work as service to the Lord.",
       "terms": "work vocation",
+      "locus": "humanity"
+    },
+    {
+      "id": "image",
+      "name": "The Image of God",
+      "page": null,
+      "summary": "Genesis 1:26-27 says God made humanity in his image and likeness. Christians have understood the image as reason and moral capacity, as a royal calling to represent God's rule, as relationship with God and one another, or as some combination. Whatever else it means, it grounds the worth of every human being, and the New Testament calls Christ the true image into which believers are being renewed.",
+      "terms": "image of god",
       "locus": "humanity"
     },
     {
@@ -333,7 +349,7 @@
     },
     {
       "id": "holiness",
-      "name": "Holiness and Worship",
+      "name": "Holiness",
       "page": null,
       "summary": "God is holy, set apart in his purity and majesty, and he makes a people holy to belong to him. The tabernacle, the temple, the sacrifices, and the feasts all teach how sinful people may live near a holy God. Worship is the right response to who he is, and it reaches beyond ritual into justice and daily obedience.",
       "terms": "worship",
@@ -385,6 +401,14 @@
       "page": null,
       "summary": "From the promise to Abraham that all families of the earth would be blessed, God's purpose reaches every nation. Israel was to be a light to the nations, Jesus sends his disciples to make disciples of all nations, and Revelation ends with every tribe and tongue before the throne.",
       "terms": "mission",
+      "locus": "people"
+    },
+    {
+      "id": "worship",
+      "name": "Worship",
+      "page": null,
+      "summary": "Worship is the whole response of God's people to who he is and what he has done: sacrifice and festival in Israel, psalm and prayer, and in the New Testament the offering of one's whole life, gathered praise, the Word, and the Lord's Supper. Scripture judges worship by its object and its obedience, not only its form.",
+      "terms": "worship",
       "locus": "people"
     },
     {
@@ -452,6 +476,14 @@
       "locus": "life"
     },
     {
+      "id": "state",
+      "name": "Government and the State",
+      "page": "church-and-state",
+      "summary": "Scripture speaks of rulers as servants of God for justice (Romans 13, 1 Peter 2) and also of rulers who become beasts that demand worship (Daniel 7, Revelation 13). Israel's kings stood under the law and the prophets. Christians have held different views of church and state, but every tradition has had to reckon with the claim that Jesus, not Caesar, is Lord.",
+      "terms": "church and state",
+      "locus": "life"
+    },
+    {
       "id": "kingdom",
       "name": "The Kingdom of God",
       "page": null,
@@ -489,6 +521,22 @@
       "page": "last-things",
       "summary": "The Bible's final hope is not escape from the world but its renewal: a new heaven and a new earth where God dwells with his people, death is gone, and every tear is wiped away. The prophets first sounded the promise, and Revelation 21 and 22 close the Bible with it.",
       "terms": "new creation heaven",
+      "locus": "last"
+    },
+    {
+      "id": "intermediate",
+      "name": "Death and the Intermediate State",
+      "page": "last-things",
+      "summary": "What happens between death and the resurrection? The Old Testament speaks of Sheol, the grave or realm of the dead; the New Testament speaks of being with Christ, which is far better, while still awaiting the resurrection of the body. Christians differ on the nature of that waiting, including purgatory and soul sleep, while confessing the resurrection as the final hope.",
+      "terms": "death afterlife",
+      "locus": "last"
+    },
+    {
+      "id": "hell",
+      "name": "Hell and Final Destinies",
+      "page": "last-things",
+      "summary": "Jesus spoke more often than anyone in Scripture about final judgment and Gehenna. The church has most often taught eternal conscious punishment; others within the confessing church hold conditional immortality (the final destruction of the wicked), and a smaller number hope for universal restoration, which most confessions reject. All agree that judgment is real, just, and in the hands of the God revealed in Christ.",
+      "terms": "hell judgment",
       "locus": "last"
     }
   ]

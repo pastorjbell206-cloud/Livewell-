@@ -1,0 +1,307 @@
+{
+  "verses": [
+    {
+      "v": "1-2",
+      "context": "The night at the Jabbok is over, and the four hundred men the messengers reported (32:6) now appear on the horizon. Jacob's first act is another division of his household, like the two camps of 32:7, but this time the order of the ranks tells the reader what he values most.",
+      "grammar": "The verse opens with a stock pair of verbs, vayyissa einav vayyar (‘he lifted his eyes and saw’), followed by vehinneh (‘and look’), a particle that moves the reader behind Jacob's eyes so we see Esau arrive as he does. The same formula opens verse 5 for Esau, so the two brothers take turns looking at each other. In verse 2 the placement is marked by two adjectives, rishonah (‘first’) for the maidservants and acharonim (‘last’, ‘behind’) used twice, once for Leah's group and once for Rachel and Joseph. The Hebrew does not say ‘in the middle’ for Leah; both she and Rachel are simply ‘behind’, and the list's order does the ranking.",
+      "words": [
+        "H5375M",
+        "H2009",
+        "H2673",
+        "H0314"
+      ],
+      "theology": [
+        {
+          "id": "family",
+          "note": "Jacob's lineup puts the most loved at the safest place and the least loved where the danger is greatest. The household of promise is being taught favoritism by its father, and chapter 37 will show what the lesson produced in Joseph's brothers."
+        }
+      ],
+      "refs": [
+        "Genesis 32:6-8",
+        "Genesis 29:30-31",
+        "Genesis 37:3-4"
+      ]
+    },
+    {
+      "v": "3",
+      "context": "For the first time in this whole episode Jacob goes in front. In 32:21 his gifts went on before him while he stayed in camp; now the man himself passes ahead of his family and approaches Esau bowing again and again.",
+      "grammar": "\"Went on ahead\" is avar lifnehem, literally ‘passed before them’, the same verb and preposition used of the droves that ‘passed before’ Jacob in 32:16 and 32:21. The clause begins with the pronoun vehu (‘and he himself’), placed first for emphasis. Vayyishtachu, ‘and he bowed down’, is the ordinary Hebrew verb for prostration, analyzed by most grammarians today as a rare stem called the Hishtaphel; older dictionaries filed it under a different root, and English readers meet the difference only in lexicons. It is the verb of Isaac's blessing in 27:29, where the sons of Jacob's mother are to bow down to him. Here the blessed brother bows to the one he cheated.",
+      "words": [
+        "H5674A",
+        "H7812",
+        "H7651"
+      ],
+      "history": "Prostration seven times was a formal gesture of submission in the second millennium BC. Letters to Pharaoh from the fourteenth century BC, found at Amarna in Egypt, regularly open with the vassal saying he falls at the king's feet seven times and seven times, so Jacob's bowing would have been recognized as the posture of a subject before an overlord.",
+      "refs": [
+        "Genesis 27:29",
+        "Genesis 32:21",
+        "Genesis 42:6"
+      ]
+    },
+    {
+      "v": "4",
+      "context": "Esau's response is told in five quick verbs and is the reverse of everything Jacob has prepared for. The man bowing slowly forward is met by a man running. The final verb is plural: they both wept.",
+      "grammar": "Vayyarots, ‘and he ran’, followed by the infinitive liqrato (‘to meet him’), throws the action to Esau. The idiom vayyippol al tsavvarav, ‘he fell on his neck’, is how Hebrew describes a full embrace, and Genesis reuses it for the reunions of Joseph with Benjamin (45:14) and with Jacob himself (46:29), so the family's healing moments share a single gesture. In the standard Hebrew text the word vayyishshaqehu (‘and he kissed him’) carries a dot over each letter, one of the few places in the Torah marked this way by scribes. The midrash collection Genesis Rabbah records opposing rabbinic readings of the dots, one holding that Esau kissed with his whole heart and another suspecting hostility, playing on the similar-sounding verb for biting. The narrative itself offers no such suspicion.",
+      "words": [
+        "H7323G",
+        "H2263",
+        "H6677A",
+        "H5401A",
+        "H1058"
+      ],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "Nothing in the story explains Esau's change. The four hundred men were a threat on the road in 32:6 and turn out to be an escort. The text leaves the cause unstated, and the reader who remembers Jacob's prayer in 32:9-12 is left to draw the conclusion Genesis draws in 50:20: God rules the hearts that people fear."
+        }
+      ],
+      "refs": [
+        "Genesis 45:14-15",
+        "Genesis 46:29",
+        "Luke 15:20",
+        "Proverbs 16:7"
+      ]
+    },
+    {
+      "v": "5",
+      "context": "Esau lifts his eyes as Jacob did in verse 1 and asks about the crowd. Jacob's answer is the first time he names God in Esau's presence, and he speaks of his children as gifts of grace, not possessions.",
+      "grammar": "Mi elleh lakh, ‘who are these to you’, is a question of relationship rather than identity. Jacob answers with the relative clause asher chanan Elohim et avdekha, literally ‘whom God has graciously given your servant’. Chanan normally means being gracious to someone; here it takes two objects, ‘your servant’ and the children, so the children are the form God's grace took. Jacob calls himself avdekha, ‘your servant’. In 27:37 Isaac told Esau he had made Jacob his master and given him his relatives as servants; Jacob now speaks that blessing in reverse.",
+      "words": [
+        "H2603A",
+        "H5650",
+        "H0430G"
+      ],
+      "theology": [
+        {
+          "id": "family",
+          "note": "The first way Jacob introduces his children is as grace received from God. Scripture's view of children as a gift rather than an achievement (Psalm 127:3) is spoken here by a father whose household is anything but peaceful."
+        }
+      ],
+      "refs": [
+        "Genesis 27:37",
+        "Genesis 48:9",
+        "Psalm 127:3"
+      ]
+    },
+    {
+      "v": "6-7",
+      "context": "The family comes forward in the order Jacob set: maidservants and their children, then Leah and hers, then Rachel with Joseph. Each group repeats Jacob's prostration, so the whole household bows before Esau.",
+      "grammar": "The verbs follow the groups closely. The maidservants' verbs are feminine plural (vattiggashna, vattishtachavena), since the women lead their children. For the last pair the Hebrew changes construction: veachar niggash Yosef veRachel, ‘and afterward Joseph and Rachel drew near’, with the adverb pushed to the front, a Niphal perfect instead of the running narrative form, and Joseph named before his mother. The reversal is unusual, since Hebrew lists normally name the mother first. Rashi and other traditional commentators took it to mean that Joseph stepped in front of Rachel to shield her, while many modern commentators think it simply spotlights the son who will dominate the rest of Genesis.",
+      "words": [
+        "H5066G",
+        "H7812",
+        "H0310A",
+        "H3130G"
+      ],
+      "refs": [
+        "Genesis 37:5-10",
+        "Genesis 42:6"
+      ]
+    },
+    {
+      "v": "8",
+      "context": "Esau asks about the droves he met on the road, and Jacob finally says outright what the gifts were for: to find favor. The question looks back to the camp language of chapter 32.",
+      "grammar": "Esau's question is literally ‘who to you is all this camp that I met’. The noun machaneh (‘camp’, ‘company’) is the key word of chapter 32: the angels' camp at Mahanaim (32:2), Jacob's two camps (32:7-10), and his night in the camp (32:21). It also sounds close to minchah, the word for Jacob's gift, a wordplay the Hebrew narrator seems to enjoy across both chapters. Jacob answers with limtso chen beeinei adoni, ‘to find favor in the eyes of my lord’, the formula of a petitioner before a superior (the same words he told his messengers to use in 32:5).",
+      "words": [
+        "H4264",
+        "H6298",
+        "H2580",
+        "H0113"
+      ],
+      "refs": [
+        "Genesis 32:2",
+        "Genesis 32:5",
+        "Genesis 32:13-16"
+      ]
+    },
+    {
+      "v": "9",
+      "context": "Esau refuses the gift in two short clauses and calls Jacob ‘my brother’. It is the first time either man uses a family term for the other in this meeting; Jacob keeps saying ‘my lord’.",
+      "grammar": "Yesh li rav, ‘there is to me much’, uses the particle of existence yesh with the adjective rav. The word is the same one Isaac's oracle used in 25:23, where the rav, ‘the older’, would serve the younger. Whether the echo is intended is debated, but the irony is hard to miss: the older brother who was to serve now tells the younger that he has plenty. Yehi lekha asher lakh, ‘let what is yours be yours’, uses the jussive of hayah, a courteous refusal that also concedes Jacob's right to what he has.",
+      "words": [
+        "H3426",
+        "H7227A",
+        "H0251G",
+        "H1961"
+      ],
+      "refs": [
+        "Genesis 25:23",
+        "Genesis 27:38",
+        "Genesis 36:6-7"
+      ]
+    },
+    {
+      "v": "10",
+      "context": "Jacob insists, and his reason reaches back to the night before. The face he has now seen is his brother's, and it has turned toward him in welcome; that is the second face he did not expect to survive.",
+      "grammar": "The verse is built on panim, ‘face’. In 32:20 Jacob planned to ‘cover his face’ with the gift (the verb kipper, often used for atonement), then to see his face, hoping Esau would ‘lift my face’, that is, accept him. Now he says raiti fanekha kirot pene Elohim, ‘I have seen your face like seeing the face of God’, just after naming Peniel, ‘face of God’ (32:30). The closing verb, vattirtseni, ‘and you accepted me’, is ratsah, the verb the priestly law uses for God accepting an offering (Leviticus 1:4 uses its passive form). Jacob's gift is also called minchah, the later word for the grain offering. The vocabulary of worship has been carried into a meeting between brothers.",
+      "words": [
+        "H6440H",
+        "H7200G",
+        "H7521",
+        "H4503H"
+      ],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The chapter never calls Jacob's gift a sacrifice, but it borrows the words for one: covering the face, the offering, the acceptance. Between people, as between God and people, the Old Testament knows that a wrong needs more than time to be put right. The chapter's grace, though, runs the other way: Esau's welcome comes before the gift is accepted."
+        },
+        {
+          "id": "love",
+          "note": "Jacob recognizes God's face in his brother's forgiveness. Scripture repeatedly ties the love of God to the love of the brother one can see (1 John 4:20), and this verse is one of its earliest pictures of that tie."
+        }
+      ],
+      "refs": [
+        "Genesis 32:20",
+        "Genesis 32:30",
+        "Matthew 5:23-24",
+        "1 John 4:20"
+      ]
+    },
+    {
+      "v": "11",
+      "context": "Jacob renames the gift and presses it until Esau accepts. His reason answers Esau's in verse 9: Esau has much, but Jacob, by God's grace, has everything.",
+      "grammar": "Qach na et birkhati, ‘please take my blessing’, uses berakhah where verse 10 used minchah. Birkhati asher huvat lakh, ‘my blessing that has been brought to you’, is a Hophal perfect, a passive that keeps Jacob's hand out of sight. The reason clause, yesh li khol, ‘I have everything’, sets kol against Esau's rav in verse 9, and many commentators read the contrast as Jacob's quiet confession of what the covenant gave him. Vayyiftsar bo, ‘he pressed him’, is the verb used when Lot urged the visitors in 19:3, a word for pressing past polite refusal.",
+      "words": [
+        "H1293",
+        "H0935P",
+        "H3605",
+        "H6484"
+      ],
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "Jacob does not say he is sorry, and the text does not put a confession in his mouth. What he does is return, under the name ‘gift’, something called by the very word he stole in chapter 27. The Old Testament's idea of turning back often takes this shape: a wrong not only regretted but repaired in kind."
+        }
+      ],
+      "refs": [
+        "Genesis 27:35-36",
+        "Genesis 19:3",
+        "1 Samuel 25:27"
+      ]
+    },
+    {
+      "v": "12-14",
+      "context": "Esau proposes that they travel together, with himself in the lead. Jacob declines by pointing to the weakest members of his company, the young children and the nursing animals, and promises to come to Esau in Seir at their pace.",
+      "grammar": "Esau's proposal uses two cohortatives, nisah venelekhah, ‘let us set out and let us go’, the grammar of shared plans. Jacob's answer is full of the vocabulary of slowness. Raqqim means tender or frail. Alot, a participle, describes animals with young at the teat. Udephaqum is a rare verb meaning to drive or beat hard (used of men pounding on a door in Judges 19:22). Etnahalah leitti, ‘I will lead on at my own gentle pace’, uses nahal, the verb for a shepherd leading his flock carefully, which Isaiah 40:11 uses of God: \"He gently leads the nursing ewes.\" Leregel hammelakhah is literally ‘at the foot of the property’, meaning at the walking pace of the herds.",
+      "words": [
+        "H7390",
+        "H5763",
+        "H1849",
+        "H5095"
+      ],
+      "history": "Seir is the rugged highland of Edom, south and east of the Dead Sea, which 32:3 already identifies with Esau's country. From the Jabbok valley it lay many days' travel to the south, a hard road for flocks with newborn young. Chapter 36 will describe Esau's household settling there permanently.",
+      "theology": [
+        {
+          "id": "leadership",
+          "note": "Whatever Jacob's motives, his stated principle is sound: a leader sets the pace by the weakest member of the company, not the strongest. Scripture later pictures God himself leading his flock this way (Isaiah 40:11)."
+        }
+      ],
+      "refs": [
+        "Isaiah 40:11",
+        "Psalm 23:2",
+        "Genesis 32:3",
+        "Genesis 36:8"
+      ]
+    },
+    {
+      "v": "15-16",
+      "context": "Esau offers to leave some of his men as an escort. Jacob declines again, in the language of favor, and Esau goes home to Seir the same day.",
+      "grammar": "Atsigah na, ‘let me please set’, is a Hiphil cohortative of a verb meaning to place or station, the word used for posting people in a position. Jacob's reply, lammah zeh, ‘why this?’, is a courteous way of saying it is unnecessary, followed once more by emtsa chen beeinei adoni, ‘let me find favor in the eyes of my lord’. The phrase chen beeinei has now appeared in verses 8, 10, and 15, framing the whole negotiation. Verse 16 is compact: Esau returned ‘on that day to his way toward Seir’, and the story lets him go without comment.",
+      "words": [
+        "H3322",
+        "H2580",
+        "H7725G",
+        "H8165A"
+      ],
+      "refs": [
+        "Genesis 32:5",
+        "Genesis 35:29"
+      ]
+    },
+    {
+      "v": "17",
+      "context": "Jacob turns the other way. Instead of heading south toward Seir he goes to Succoth, builds a house, makes shelters for his livestock, and the place takes its name from the shelters.",
+      "grammar": "The verse opens with the subject first, veYaaqov nasa, ‘but Jacob set out’, a Hebrew construction that sets two actions side by side in contrast: Esau went one way, Jacob another. Sukkot means ‘booths’ or ‘shelters’, temporary structures of branches, and the name is explained by what Jacob made there, as Genesis often explains place names. Jacob also builds bayit, ‘a house’, an unusual detail for a family that has lived in tents, and verse 19 returns to the tent.",
+      "words": [
+        "H5265",
+        "H5523G",
+        "H1004B",
+        "H5521"
+      ],
+      "history": "Succoth lay in the Jordan Valley east of the river, near the mouth of the Jabbok. Many scholars identify it with Tell Deir Alla, where excavators found a plaster inscription of about the eighth century BC mentioning Balaam son of Beor, though the identification of the town is not certain. Later Succoth appears in Gideon's story (Judges 8:5-16) and as a place where Solomon's bronze was cast in the Jordan plain (1 Kings 7:46).",
+      "refs": [
+        "Judges 8:5-16",
+        "1 Kings 7:46",
+        "Psalm 60:6",
+        "Leviticus 23:42-43"
+      ]
+    },
+    {
+      "v": "18",
+      "context": "Jacob crosses into Canaan and reaches Shechem safely. The verse deliberately recalls the start of his exile: he left Canaan for Paddan-aram and has now come back from it, as the Bethel vow asked (28:21).",
+      "grammar": "Shalem is an adjective describing Jacob, ‘whole’, ‘intact’, and the BSB takes it that way: he arrived \"safely\". Vayyichan et pene haIr, ‘he camped before the face of the city’, uses panim once more, and the verb chanah (‘to camp’) is related to machaneh, the camp of verse 8. Jacob stops at the city's edge, not inside it, a detail that sets up chapter 34, where the city's young men come out to him.",
+      "words": [
+        "H8003",
+        "H2583",
+        "H6307"
+      ],
+      "text": "The Septuagint, the Syriac, and older English Bibles such as the King James Version read shalem as a place name: Jacob came to Shalem, a city of Shechem. Most modern translations read it as the adjective ‘safe’, partly because it echoes the related word in Jacob's vow in 28:21. A village called Salim east of modern Nablus has been proposed for the place-name reading, but the adjectival reading has the stronger support.",
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "Jacob asked at Bethel to return safely to his father's house (28:21), and God promised to bring him back to this land (28:15). Arriving safely in Canaan, he stands where the promise said he would, though the vow's full completion waits for Bethel itself in chapter 35."
+        }
+      ],
+      "refs": [
+        "Genesis 28:15",
+        "Genesis 28:21",
+        "Genesis 12:6"
+      ]
+    },
+    {
+      "v": "19",
+      "context": "Jacob buys the ground where his tent stands. Like Abraham's purchase of the cave at Machpelah in chapter 23, it is a small legal holding inside a promised land still owned by others.",
+      "grammar": "Chelqat hassadeh, ‘the portion of the field’, uses a word for an allotted share of land, the kind of word later used for tribal inheritances. The price is meah qesitah, ‘a hundred qesitahs’. Qesitah occurs only here, in Joshua 24:32 (which recalls this purchase), and in Job 42:11, where Job's friends each give him one. Its weight and value are unknown; the Septuagint rendered it as ‘lambs’, perhaps guessing at a unit valued in livestock.",
+      "words": [
+        "H2513A",
+        "H7192",
+        "H2544",
+        "H7069"
+      ],
+      "history": "The sons of Hamor remained attached to Shechem's memory; in the time of the judges a rebel at Shechem calls its men to serve \"the men of Hamor, the father of Shechem\" (Judges 9:28). Hamor means ‘donkey’. In the Mari letters from Syria in the eighteenth century BC, ‘killing a donkey’ is an idiom for concluding a treaty, and some scholars connect the name with covenant customs at Shechem, where Judges 9:4 mentions a temple of Baal-berith, ‘lord of the covenant’. The connection is suggestive, not proven.",
+      "refs": [
+        "Genesis 23:16-20",
+        "Joshua 24:32",
+        "John 4:5",
+        "Acts 7:16"
+      ]
+    },
+    {
+      "v": "20",
+      "context": "On his new ground Jacob raises an altar and names it with the name God gave him at the Jabbok. The chapter that began with fear of a brother ends in worship.",
+      "grammar": "The verb vayyatsev, ‘he set up’, is a Hiphil of natsav, the verb normally used for erecting a standing stone (35:14, 35:20), not for building an altar, where Genesis usually says ‘built’. Some commentators think the wording reflects a monument that combined both; others see only variation. The name El Elohe Yisrael can be read ‘God is the God of Israel’ or ‘El, the God of Israel’. Either way, Jacob uses his new name in a confession: the God who renamed him is his God.",
+      "words": [
+        "H5324",
+        "H4196",
+        "H0410I",
+        "H0430H"
+      ],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "At Bethel Jacob made his worship conditional: if God kept him and brought him back, then the LORD would be his God (28:20-21). Here, back in the land, he confesses God as the God of Israel. The fugitive's bargain has become a declaration."
+        },
+        {
+          "id": "names-of-god",
+          "note": "El was the common Semitic word for God and also the name of the high god in Canaanite religion. By naming the altar El Elohe Israel Jacob claims that El is no distant deity of the region but the God who met and renamed him."
+        }
+      ],
+      "refs": [
+        "Genesis 12:6-7",
+        "Genesis 28:20-22",
+        "Genesis 32:28",
+        "Genesis 35:7"
+      ]
+    }
+  ]
+}
