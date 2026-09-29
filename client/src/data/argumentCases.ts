@@ -346,7 +346,7 @@ const MEANING: ArgumentCase = {
 
 const EVIL: ArgumentCase = {
   slug: "evil",
-  essaySlugs: ["if-god-is-good-why-suffering",],
+  essaySlugs: ["if-god-is-good-why-suffering"],
   title: "If God is good, why is there so much suffering?",
   kicker: "The case, one move at a time",
   intro:
