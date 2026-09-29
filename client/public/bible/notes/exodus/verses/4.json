@@ -1,0 +1,399 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "Moses' third objection concerns the people, not himself or God's name: what if they will not believe him? It directly contradicts what God has just said, that the elders would listen to his voice (3:18).",
+      "grammar": "Vehen, ‘and look’ or ‘what if’, introduces a possibility Moses fears. Lo-ya'aminu li, ‘they will not believe me’, uses the causative (Hiphil) of aman, which with the preposition le means to trust someone's word. Velo yishme'u beqoli, ‘and will not listen to my voice’, is the idiom for heeding or obeying. God said in 3:18 veshame'u leqolekha, ‘they will listen to your voice’; Moses answers with the same words negated.",
+      "words": [
+        "H6030B",
+        "H2005",
+        "H0539",
+        "H8085G",
+        "H6963A"
+      ],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "The chapter's first verse raises the question its last verse answers: will they believe? Faith is presented here as trust in a messenger's report that God has appeared, the same structure the New Testament gives to faith in the apostles' witness to Christ (Romans 10:14-17)."
+        }
+      ],
+      "refs": [
+        "Exodus 3:18",
+        "Exodus 4:31",
+        "Romans 10:14-17"
+      ]
+    },
+    {
+      "v": "2-5",
+      "context": "God answers with the first of three signs, using the ordinary shepherd's staff in Moses' hand. Thrown down, it becomes a snake; grasped by the tail, it becomes a staff again. Verse 5 states the purpose: so that the people will believe the LORD appeared to him.",
+      "grammar": "The question ‘what is this in your hand?’ (mah-zeh, written as one word in the Hebrew) and the answer matteh (‘a staff’) sound alike, a small play that draws attention to the object. The snake is nachash, the word used for the serpent in Genesis 3; when the sign is performed before Pharaoh the word changes to tannin (7:9-10). In verse 4 God says ve'echoz bizenavo, ‘seize it by its tail’, and Moses vayyachazeq bo, ‘took firm hold of it’, a causative form of chazaq, the verb that in verse 21 describes God strengthening Pharaoh's heart. Verse 5 opens with lema'an, ‘so that’, the purpose clause that governs all three signs.",
+      "words": [
+        "H4294G",
+        "H7993",
+        "H5175",
+        "H5127",
+        "H0270",
+        "H2180",
+        "H2388H",
+        "H4616"
+      ],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "God uses what Moses already holds. The staff of a shepherd becomes ‘the staff of God’ (v. 20), and with it Moses will strike the Nile, divide the sea, and bring water from the rock. God's work often begins with the ordinary means already at hand."
+        }
+      ],
+      "refs": [
+        "Exodus 7:9-12",
+        "Exodus 14:16",
+        "Exodus 17:5-6",
+        "Genesis 3:1"
+      ]
+    },
+    {
+      "v": "6-7",
+      "context": "The second sign: Moses' hand, put into his cloak, comes out diseased and white as snow; put in again, it comes out restored. The sign shows power to strike and to heal, and it touches Moses' own body.",
+      "grammar": "Becheqekha is ‘into your bosom’: cheq is the fold of the robe over the chest, used as a pocket. Metsora'at, ‘diseased’, is a passive participle of tsara', the root of tsara'at, the skin disease regulated in Leviticus 13 and 14 (see the chapter note). Kashaleg, ‘like snow’, describes the whiteness, and the same comparison is used of Miriam (Numbers 12:10) and Gehazi (2 Kings 5:27), both struck as a judgment. In verse 7 the hand shavah kivsaro, ‘returned like his flesh’, using shuv, ‘to turn back, return’, for the healing.",
+      "words": [
+        "H2436H",
+        "H3318H",
+        "H6879",
+        "H7950",
+        "H7725H",
+        "H1320"
+      ],
+      "theology": [
+        {
+          "id": "sovereignty",
+          "note": "The same God who brings the disease removes it. The sign anticipates the confession of Deuteronomy 32:39, that the LORD wounds and heals, and prepares Moses to announce plagues that God alone can start and stop."
+        }
+      ],
+      "refs": [
+        "Numbers 12:10-15",
+        "2 Kings 5:27",
+        "Deuteronomy 32:39"
+      ]
+    },
+    {
+      "v": "8-9",
+      "context": "God anticipates that one sign may not be enough and gives a third: Nile water poured on dry ground will become blood. This last sign previews the first plague (7:17-21).",
+      "grammar": "Verse 8 speaks literally of listening ‘to the voice of the first sign’ and believing ‘the voice of the latter sign’ (leqol ha'ot). The signs are pictured as speaking, testifying alongside Moses' words; the BSB renders the idea as “the witness of the first sign”. The dry ground in verse 9 is first yabbashah and then yabbeshet, words from the same root as the dry land that appears at creation (Genesis 1:9) and the dry ground Israel will cross in the sea (14:16).",
+      "words": [
+        "H6963K",
+        "H0226G",
+        "H7223G",
+        "H0314",
+        "H3004",
+        "H1818"
+      ],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "Signs in Scripture do not replace the word; they confirm the messenger who brings it. The pattern continues in the New Testament, where God testifies to the message of salvation by signs and wonders (Hebrews 2:3-4)."
+        }
+      ],
+      "refs": [
+        "Exodus 7:17-21",
+        "Hebrews 2:3-4",
+        "John 20:30-31"
+      ]
+    },
+    {
+      "v": "10",
+      "context": "Moses' fourth objection returns to himself: he is not a man of words. God has just given him three signs, and Moses points to his speech.",
+      "grammar": "Bi adonai, ‘please, my Lord’, combines a particle of polite appeal (bi) with Adonai, a title of respect. Lo ish devarim anokhi is literally ‘not a man of words am I’. Gam mitemol gam mishilshom, ‘either yesterday or the day before’, is the idiom for ‘in the past’, and gam me'az dabberkha, ‘or since you spoke’, adds that the conversation has not changed him. He calls himself kevad-peh ukhevad lashon, ‘heavy of mouth and heavy of tongue’. The adjective kaved (‘heavy’) is the root the plague narratives use for Pharaoh's heart being made ‘heavy’ (7:14; 8:15), so the heavy mouth and the heavy heart face each other.",
+      "words": [
+        "H0994",
+        "H0136",
+        "H1697H",
+        "H8543",
+        "H8032",
+        "H3515",
+        "H6310I",
+        "H3956G"
+      ],
+      "history": "Exodus does not say what Moses' difficulty was. Interpreters have suggested a speech impediment, a lack of fluency or confidence, or a loss of ease in the Egyptian language after decades away. Stephen describes Moses as powerful in speech and action (Acts 7:22), which some take as a later tradition in tension with this verse and others as describing Moses' later ministry or his written words.",
+      "refs": [
+        "Acts 7:22",
+        "Jeremiah 1:6",
+        "1 Corinthians 2:1-5"
+      ]
+    },
+    {
+      "v": "11-12",
+      "context": "God answers with questions about who made the human mouth and who determines whether a person can speak, hear, and see. Then he repeats the command and adds a promise: I will be with your mouth and teach you what to say.",
+      "grammar": "Mi sam peh la'adam, ‘who put a mouth in man?’, uses sim, ‘to set, appoint’, for God's making. The four adjectives form two pairs: illem (‘mute’) and cheresh (‘deaf’), piqqeach (‘seeing’) and 'iver (‘blind’). The answer is emphatic: halo anokhi YHWH, ‘is it not I, the LORD?’ In verse 12 God says ve'anokhi ehyeh im-pikha, ‘and I will be with your mouth’, the verb ehyeh from 3:12 and 3:14 once more. Vehoretikha, ‘I will teach you’, is a Hiphil of yarah, the root from which torah (‘instruction, law’) comes.",
+      "words": [
+        "H4310",
+        "H7760A",
+        "H6310G",
+        "H0483",
+        "H2795",
+        "H6493",
+        "H5787",
+        "H1961",
+        "H3384B"
+      ],
+      "theology": [
+        {
+          "id": "creation",
+          "note": "God claims to be the maker of every human body, including bodies that cannot speak, hear, or see. The verse does not explain why people differ in ability, but it refuses to place any person outside God's making and purpose, a point Jesus makes about the man born blind (John 9:1-3)."
+        },
+        {
+          "id": "revelation",
+          "note": "The promise to teach Moses what to say is the pattern of prophecy: God's word placed in a human mouth. Jesus gives his disciples a similar promise when they must speak before rulers (Matthew 10:19-20)."
+        }
+      ],
+      "refs": [
+        "John 9:1-3",
+        "Matthew 10:19-20",
+        "Isaiah 35:5-6",
+        "Jeremiah 1:9"
+      ]
+    },
+    {
+      "v": "13",
+      "context": "Moses' fifth and last response is no longer a question but a refusal: send someone else. It is the only one of his objections that draws God's anger.",
+      "grammar": "Shelach-na beyad-tishlach is literally ‘send, please, by the hand of whom you will send’, an elliptical and courteous way of saying ‘send anyone but me’. The verb shalach, ‘send’, is the one God used in 3:10 (‘I am sending you’) and 3:14 (‘I AM has sent me’); Moses hands it back. The polite opening bi adonai repeats verse 10, but the request is a refusal wrapped in courtesy.",
+      "words": [
+        "H0994",
+        "H0136",
+        "H7971G",
+        "H3027G"
+      ],
+      "refs": [
+        "Exodus 3:10",
+        "Jonah 1:1-3",
+        "Luke 9:59-62"
+      ]
+    },
+    {
+      "v": "14",
+      "context": "God is angry, but he answers the refusal with provision: Aaron, Moses' brother, who can speak well and is already on his way. The anger does not cancel the call; it adds a partner.",
+      "grammar": "Vayyichar-af YHWH, ‘the anger of the LORD burned’, is literally ‘the LORD's nose grew hot’, the standard Hebrew picture for anger. Dabber yedabber hu, ‘he can surely speak’, uses the infinitive absolute to intensify: Aaron is a speaker. Aaron is called halevi, ‘the Levite’, although Moses is a Levite too; some interpreters think the title already points to the priestly role Aaron's family will hold. Vesamach belibbo, ‘he will be glad in his heart’, describes Aaron's welcome before Moses has even decided to go.",
+      "words": [
+        "H2734",
+        "H0639G",
+        "H0175",
+        "H3881",
+        "H1696G",
+        "H8055"
+      ],
+      "theology": [
+        {
+          "id": "attributes",
+          "note": "God's anger is real, and it is also slow and restrained: he does not reject Moses but provides for his weakness. Later God will describe himself as slow to anger and abounding in steadfast love (34:6), and this scene is an early instance of it."
+        }
+      ],
+      "refs": [
+        "Exodus 34:6",
+        "Exodus 7:1-2",
+        "Numbers 12:1-8"
+      ]
+    },
+    {
+      "v": "15-17",
+      "context": "God defines the partnership. Moses will give Aaron the words, God will be with both their mouths, and Aaron will speak to the people. Moses must still take the staff, the instrument of the signs.",
+      "grammar": "Vesamta et-haddevarim befiv, ‘you shall put the words in his mouth’, is the language God later uses of the prophet like Moses (Deuteronomy 18:18) and of Jeremiah (Jeremiah 1:9). Verse 16 sets two clauses side by side: hu yihyeh-lekha lepeh, ‘he will be to you a mouth’, and attah tihyeh-lo lelohim, ‘you will be to him as God’. The preposition le (‘as’, ‘for’) marks a role, not an identity: Moses stands toward Aaron as God stands toward a prophet, the source of the words. Exodus 7:1 restates the arrangement, calling Aaron Moses' prophet.",
+      "words": [
+        "H7760H",
+        "H1697G",
+        "H6310G",
+        "H1961",
+        "H3384B",
+        "H0430G",
+        "H4294G"
+      ],
+      "theology": [
+        {
+          "id": "prophecy",
+          "note": "These verses define what a prophet is: a mouth for another's words. The relation between Moses and Aaron models the relation between God and his prophets, whose authority lies entirely in speaking what they have been given (2 Peter 1:21)."
+        }
+      ],
+      "refs": [
+        "Exodus 7:1-2",
+        "Deuteronomy 18:18",
+        "Jeremiah 1:9",
+        "2 Peter 1:21"
+      ]
+    },
+    {
+      "v": "18-20",
+      "context": "Moses asks Jethro's leave to return to Egypt, giving a modest reason, and Jethro sends him in peace. God confirms that those who wanted Moses dead are gone. Moses sets out with his family and ‘the staff of God’.",
+      "grammar": "In verse 18 the father-in-law's name is spelled Yeter first and then Yitro, a variation in the same verse that shows the two spellings were interchangeable. Moses' reason, to see whether his brothers are “still alive”, says nothing of the burning bush. Lekh leshalom, “Go in peace”, is a blessing on departure. Verse 19 reads literally ‘all the men seeking your life (nafshekha) have died’. In verse 20 the staff is called matteh ha'elohim, ‘the staff of God’, for the first time: the shepherd's stick now belongs to God's service.",
+      "words": [
+        "H3500L",
+        "H3503",
+        "H7965G",
+        "H1245",
+        "H5315H",
+        "H4294G"
+      ],
+      "history": "Matthew echoes verse 19 when the angel tells Joseph in Egypt that those seeking the child's life are dead (Matthew 2:20), presenting Jesus' return from Egypt in words drawn from Moses' return to Egypt. Verse 20 mentions Moses' ‘sons’, though only Gershom has been named; the second son, Eliezer, is named in 18:4.",
+      "refs": [
+        "Matthew 2:19-21",
+        "Exodus 18:2-4",
+        "Exodus 17:9"
+      ]
+    },
+    {
+      "v": "21",
+      "context": "On the road God tells Moses what will happen: Moses must perform the wonders, and God will harden Pharaoh's heart so that he will not let the people go. The plagues are announced as a contest whose resistance God himself foresees and uses.",
+      "grammar": "The wonders are hammofetim, ‘portents’, a word often paired with ot (‘sign’) for extraordinary acts that demonstrate a message. Asher-samti veyadekha is ‘which I have put in your hand’. Va'ani achazzeq et-libbo, ‘and I will strengthen his heart’, uses the intensive (Piel) of chazaq, ‘to be strong’: God will make Pharaoh's will firm in its resistance. The plague stories use three verbs for Pharaoh's hardness, chazaq (‘strengthen’), kaved (‘make heavy’), and qashah (‘make hard’), and they alternate between God hardening Pharaoh's heart, Pharaoh hardening his own heart, and his heart simply being hard.",
+      "words": [
+        "H4159",
+        "H7760H",
+        "H3027H",
+        "H2388G",
+        "H3820A",
+        "H7971H"
+      ],
+      "theology": [
+        {
+          "id": "sovereignty",
+          "note": "Christians have understood the hardening in different ways. In the Augustinian and Reformed tradition it expresses God's sovereign rule over even a hostile will, as Paul argues in Romans 9:17-18. Others stress that Pharaoh is first said to harden his own heart (8:15) and read God's hardening as a judgment that confirms Pharaoh's own choice. Both agree that Pharaoh acts willingly and is responsible, and that his resistance serves God's purpose to make his name known (9:16)."
+        }
+      ],
+      "refs": [
+        "Romans 9:17-18",
+        "Exodus 7:3",
+        "Exodus 8:15",
+        "Exodus 9:16"
+      ]
+    },
+    {
+      "v": "22-23",
+      "context": "God gives Moses the message that stands behind every later demand: Israel is my firstborn son; let him go to serve me; if you refuse, I will kill your firstborn. The last plague is announced before the first.",
+      "grammar": "Beni vekhori yisra'el, ‘my son, my firstborn, is Israel’, puts the words for son and firstborn first for emphasis. Shallach et-beni veya'avdeni, ‘let my son go that he may serve me’, pairs the book's two key verbs, shalach (‘let go’) and avad (‘serve’): Israel is released from serving Pharaoh to serve God. Vattema'en, ‘you have refused’, is the Piel of ma'en, which becomes Pharaoh's characteristic verb (7:14; 9:2; 10:3). Hinneh anokhi horeg, ‘behold, I am killing’, uses a participle for an action about to happen.",
+      "words": [
+        "H1121A",
+        "H1060",
+        "H7971H",
+        "H5647H",
+        "H3985",
+        "H2026"
+      ],
+      "theology": [
+        {
+          "id": "israel",
+          "note": "Israel's identity is given in family terms before it is given in legal ones: God's firstborn son. Hosea recalls it (Hosea 11:1), and Matthew applies Hosea's line to Jesus returning from Egypt (Matthew 2:15), presenting him as the true Son who embodies Israel."
+        },
+        {
+          "id": "judgment",
+          "note": "The judgment on Egypt's firstborn corresponds to Egypt's attack on God's firstborn. The last plague is presented as just recompense, announced in advance, with every opportunity for Pharaoh to avoid it."
+        }
+      ],
+      "refs": [
+        "Hosea 11:1",
+        "Matthew 2:15",
+        "Exodus 12:29",
+        "Jeremiah 31:9",
+        "Romans 9:4"
+      ]
+    },
+    {
+      "v": "24",
+      "context": "On the road, at a night's lodging place, the LORD meets Moses and seeks to kill him. The abrupt scene, discussed in the chapter note's hard question, comes immediately after the warning about Pharaoh's firstborn.",
+      "grammar": "Vayyifgeshehu YHWH, ‘the LORD met him’, uses pagash, a verb for encountering someone, often in a hostile way. The same verb appears in verse 27 when Aaron meets Moses and kisses him, so the chapter sets two meetings side by side. Vaybaqqesh hamito, ‘and sought to kill him’, echoes the language of those who sought Moses' life (2:15; 4:19). The Hebrew does not name the person threatened: ‘him’ is usually taken as Moses, but some interpreters take it as the son.",
+      "words": [
+        "H1870L",
+        "H4411",
+        "H6298",
+        "H1245",
+        "H4191"
+      ],
+      "text": "The Greek translation reads ‘an angel of the Lord met him’ rather than ‘the LORD met him’, a reading that softens the direct attribution to God. The standard Hebrew text has the divine name, and most translations follow it.",
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "Genesis 17:14 warns that an uncircumcised male is to be cut off from his people, because he has broken the covenant. Most interpreters read the scene against that warning: the man sent to lead God's covenant people has neglected the covenant sign in his own family."
+        }
+      ],
+      "refs": [
+        "Genesis 17:14",
+        "Genesis 32:24-30",
+        "Exodus 12:12-13"
+      ]
+    },
+    {
+      "v": "25-26",
+      "context": "Zipporah acts quickly: she circumcises her son with a flint, touches the foreskin to ‘his feet’, and calls Moses a ‘bridegroom of blood’. The LORD lets him alone, and the narrator adds that the phrase referred to circumcision.",
+      "grammar": "Vattikhrot, ‘she cut off’, is karat, the verb used for ‘cutting’ a covenant and for being ‘cut off’ from one's people in Genesis 17:14. Vattagga' leraglav, ‘she touched his feet’, leaves the owner of the feet unnamed; interpreters have suggested Moses, the child, or the one who attacked, and ‘feet’ may be a euphemism for the genitals, as sometimes elsewhere. Chatan-damim, ‘bridegroom of blood’, is the chapter's most puzzling phrase. Chatan normally means a bridegroom or son-in-law, and some scholars connect it with an Arabic root meaning ‘to circumcise’. Verse 26 explains that she said it lammulot, ‘with reference to the circumcisions’, a plural used as an abstract noun. Vayyiref, ‘he let him alone’, means that God relaxed his hold.",
+      "words": [
+        "H6855",
+        "H6864",
+        "H3772G",
+        "H6190H",
+        "H5060",
+        "H2860",
+        "H1818",
+        "H7503",
+        "H4139"
+      ],
+      "theology": [
+        {
+          "id": "sacraments",
+          "note": "The covenant sign is not treated as optional ceremony. The scene shows that a sign God appoints carries real weight, and Christian readers have often drawn from it the seriousness of the signs God gives his people, whatever their view of how those signs relate to the covenant."
+        },
+        {
+          "id": "atonement",
+          "note": "Blood stands between Moses' family and death, and the scene comes just before the Passover, where the blood on the doorposts will protect Israel's firstborn from the destroyer (12:13). Many interpreters see the night on the road as a small anticipation of that night."
+        }
+      ],
+      "refs": [
+        "Genesis 17:10-14",
+        "Joshua 5:2-9",
+        "Exodus 12:13",
+        "Exodus 12:48"
+      ]
+    },
+    {
+      "v": "27-28",
+      "context": "God sends Aaron into the wilderness, and he meets Moses at the mountain of God and kisses him. Moses tells him everything, the words and the signs. The partnership God announced in verse 14 begins.",
+      "grammar": "Vayyifgeshehu, ‘he met him’, is the same verb used in verse 24 for the LORD meeting Moses to kill him. The two scenes stand side by side: one meeting brings Moses near death, the other brings him his brother's embrace. Vayyishaq-lo, ‘he kissed him’, is the ordinary greeting between family members. Vayyagged, ‘he told’, is a Hiphil of nagad, ‘to make known’: Moses passes on ‘all the words of the LORD’ and ‘all the signs’ he had been commanded.",
+      "words": [
+        "H0175",
+        "H7122G",
+        "H6298",
+        "H5401A",
+        "H5046",
+        "H6680"
+      ],
+      "refs": [
+        "Exodus 3:1",
+        "Exodus 4:14",
+        "Exodus 18:5-7"
+      ]
+    },
+    {
+      "v": "29-31",
+      "context": "Moses and Aaron gather the elders, Aaron speaks, Moses performs the signs, and the people believe. When they hear that the LORD has attended to them, they bow down and worship. Moses' fear in verse 1 is answered.",
+      "grammar": "Vayya'amen ha'am, ‘and the people believed’, uses the same Hiphil of aman as verses 1, 5, 8, and 9, closing the chapter's frame. The message they hear repeats 3:16: paqad YHWH, ‘the LORD has visited’, the word of Joseph's promise (Genesis 50:24). Vayyiqqedu vayyishtachavu, ‘they bowed their heads and prostrated themselves’, pairs qadad (bowing the head) with the verb for lying face down, the ordinary Hebrew idiom of worship.",
+      "words": [
+        "H0622",
+        "H2205G",
+        "H0539",
+        "H6485I",
+        "H6040",
+        "H6915",
+        "H7812"
+      ],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "The people's faith is a response to God's word and the signs that confirm it, and it leads directly to worship. The next chapter will test it hard, and by 6:9 the people cannot listen because of their broken spirit. The pattern of faith given, tested, and renewed runs through the rest of the book (14:31)."
+        },
+        {
+          "id": "prayer",
+          "note": "Worship begins before the rescue. The people bow down on hearing that God has seen their affliction, before a single plague has fallen, trusting the promise as though it were already done."
+        }
+      ],
+      "refs": [
+        "Exodus 3:16-18",
+        "Exodus 12:27",
+        "Exodus 14:31",
+        "Exodus 6:9"
+      ]
+    }
+  ]
+}
