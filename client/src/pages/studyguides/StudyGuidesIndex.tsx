@@ -10,8 +10,12 @@ import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { STUDY_GUIDES, type StudyGuideEntry } from "@/lib/studyguides-index";
 import { GeneratedCover, coverThemeFor } from "@/components/GeneratedCover";
+import { EditorialIndex } from "@/components/editorial/EditorialIndex";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
+
+/** "Audience · sessions", skipping whichever field a guide left blank. */
+const metaOf = (g: StudyGuideEntry) => [g.audience, g.sessionsLabel].filter(Boolean).join(" · ");
 
 export default function StudyGuidesIndex() {
   // Load the generated manifest so new guides appear automatically; fall back
@@ -23,6 +27,7 @@ export default function StudyGuidesIndex() {
       .then((d) => { if (d?.guides?.length) setGuides(d.guides); })
       .catch(() => {});
   }, []);
+  const [lead, ...rest] = guides;
   return (
     <Layout>
       <SEOMeta
@@ -32,7 +37,7 @@ export default function StudyGuidesIndex() {
       />
 
       {/* HERO */}
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>Study Guides · Leader's Toolkits</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(34px, 5.4vw, 58px)", fontWeight: 400, lineHeight: 1.04, letterSpacing: "-0.025em", marginBottom: "18px", maxWidth: "20ch" }}>
@@ -44,42 +49,62 @@ export default function StudyGuidesIndex() {
         </div>
       </section>
 
-      {/* THE GUIDES */}
+      {/* THE GUIDES. One lead given room (the only cover on the page), then the
+          rest as an index. In the built manifest g.eyebrow is each guide's
+          one-line subtitle, so it serves as the dek; the long blurb stays on
+          the toolkit page. The data carries no theme or category field, so
+          there are no filter chips here. */}
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "8px" }}>The collection</div>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px, 3.4vw, 34px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", marginBottom: "var(--s-4)" }}>
             Free guides for groups, classes, and teams
           </h2>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(380px, 100%), 1fr))", gap: "16px" }}>
-            {guides.map((g) => (
-              <Link
-                key={g.slug}
-                href={`/studyguides/${g.slug}`}
-                style={{ display: "flex", gap: "16px", textDecoration: "none", color: "inherit", background: "var(--card)", border: "1px solid rgba(20,17,12,0.08)", borderRadius: "var(--radius-sm)", overflow: "hidden", height: "100%" }}
-              >
-                <div style={{ width: "104px", flexShrink: 0, alignSelf: "flex-start", aspectRatio: "3 / 4", overflow: "hidden" }}>
-                  <GeneratedCover title={g.title} {...coverThemeFor(`${g.title} ${g.eyebrow}`)} style={{ width: "100%", height: "100%" }} />
+          <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "0 0 var(--s-2)" }}>
+            {guides.length} {guides.length === 1 ? "guide" : "guides"}
+          </p>
+
+          {lead && (
+            <Link
+              href={`/studyguides/${lead.slug}`}
+              className="ed-card"
+              style={{ flexDirection: "row", flexWrap: "wrap", alignItems: "center", gap: "var(--s-3) var(--s-4)", marginBottom: "var(--s-5)" }}
+            >
+              <div aria-hidden style={{ flex: "0 0 auto", width: "clamp(120px, 16vw, 176px)" }}>
+                <GeneratedCover title={lead.title} {...coverThemeFor(`${lead.title} ${lead.eyebrow}`)} />
+              </div>
+              <div style={{ flex: "1 1 300px", minWidth: 0, display: "flex", flexDirection: "column", gap: "12px" }}>
+                <h3 className="ed-card-title" style={{ fontSize: "clamp(1.7rem, 1.25rem + 1.4vw, 2.4rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.02em" }}>
+                  {lead.title}
+                </h3>
+                {lead.eyebrow && (
+                  <p className="ed-card-dek" style={{ fontSize: "1.0625rem", lineHeight: 1.65, maxWidth: "60ch" }}>{lead.eyebrow}</p>
+                )}
+                {metaOf(lead) && <div className="ed-meta" style={{ marginTop: 0 }}>{metaOf(lead)}</div>}
+                <div className="ed-card-foot" style={{ justifyContent: "flex-start" }}>
+                  <span>Open the toolkit</span>
+                  <span className="ed-arrow" aria-hidden>→</span>
                 </div>
-                <div style={{ display: "flex", flexDirection: "column", flex: 1, minWidth: 0, padding: "var(--s-4) var(--s-4) var(--s-4) 0" }}>
-                  {/* Simplified card: cover, title, the sessions/audience line, and
-                      the link. The eyebrow descriptor and full blurb live on the
-                      toolkit page (both fields stay in the data, just not rendered
-                      here). g.eyebrow still feeds the cover theme above. */}
-                  <div style={{ fontFamily: "var(--F)", fontSize: "23px", fontWeight: 500, color: "var(--ink)", lineHeight: 1.18, marginBottom: "10px" }}>{g.title}</div>
-                  <div style={{ fontFamily: "var(--U)", fontSize: "12px", color: "var(--ink-muted)", marginBottom: "12px" }}>{g.audience} · {g.sessionsLabel}</div>
-                  <span style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--ink)", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px", alignSelf: "flex-start", marginTop: "auto" }}>
-                    Open the toolkit →
-                  </span>
-                </div>
-              </Link>
-            ))}
-          </div>
+              </div>
+            </Link>
+          )}
+
+          {rest.length > 0 && (
+            <EditorialIndex
+              label="Study guides"
+              items={rest.map((g) => ({
+                href: `/studyguides/${g.slug}`,
+                title: g.title,
+                dek: g.eyebrow || null,
+                meta: metaOf(g),
+              }))}
+            />
+          )}
         </div>
       </section>
 
       {/* CLOSING */}
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--s-4)", color: "var(--bone)", textAlign: "center" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--s-4)", color: "var(--charcoal-fg)", textAlign: "center" }}>
         <div style={{ maxWidth: "560px", margin: "0 auto" }}>
           <p style={{ fontFamily: "var(--F)", fontSize: "17px", fontStyle: "italic", lineHeight: 1.6, color: "rgba(245,240,230,0.85)", marginBottom: "20px" }}>
             More guides are on the way. The booklets, libraries, and tools for leaders live in the wider resource hub.

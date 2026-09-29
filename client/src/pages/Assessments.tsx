@@ -9,6 +9,7 @@
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { Link } from "wouter";
+import { CardGrid } from "@/components/editorial/CardGrid";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
@@ -123,7 +124,7 @@ export default function Assessments() {
       />
 
       {/* HERO */}
-      <section style={{ background: "var(--charcoal)", color: "var(--bone)", padding: "var(--s-7) var(--s-4) var(--s-6)" }}>
+      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-7) var(--s-4) var(--s-6)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>Assessments</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(36px, 6vw, 60px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "20px", maxWidth: "20ch" }}>
@@ -148,44 +149,22 @@ export default function Assessments() {
             <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "62ch", marginBottom: "var(--s-4)" }}>
               {g.blurb}
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(300px, 100%), 1fr))", gap: "16px" }}>
-              {g.items.map(it => (
-                <Link
-                  key={it.href}
-                  href={it.href}
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    background: "var(--card)",
-                    border: "1px solid var(--line)",
-                    borderTop: "2px solid var(--mustard)",
-                    borderRadius: "var(--radius-sm)",
-                    padding: "var(--s-4)",
-                    textDecoration: "none",
-                  }}
-                >
-                  <div style={{ fontFamily: "var(--F)", fontSize: "21px", fontWeight: 500, lineHeight: 1.2, color: "var(--ink)", marginBottom: "10px" }}>
-                    {it.title}
-                  </div>
-                  <p style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.6, color: "var(--ink)", margin: "0 0 8px" }}>
-                    <span style={{ color: "var(--ink-muted)" }}>Take this if </span>
-                    {it.takeIf}
-                  </p>
-                  <p style={{ fontFamily: "var(--B)", fontSize: "13px", lineHeight: 1.6, color: "var(--ink-muted)", margin: "0 0 14px", flex: 1 }}>
-                    {it.gives}
-                  </p>
-                  <span style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--ink)", borderBottom: "1px solid var(--mustard)", alignSelf: "flex-start", paddingBottom: "2px" }}>
-                    Begin →
-                  </span>
-                </Link>
-              ))}
-            </div>
+            <CardGrid
+              label={g.heading}
+              items={g.items.map((it) => ({
+                href: it.href,
+                title: it.title,
+                dek: `Take this if ${it.takeIf}`,
+                meta: <span style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.55 }}>{it.gives}</span>,
+                cta: "Take the assessment",
+              }))}
+            />
           </div>
         </section>
       ))}
 
       {/* CLOSING */}
-      <section style={{ background: "var(--charcoal)", color: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
+      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-6) var(--s-4)" }}>
         <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto", textAlign: "center" }}>
           <p style={{ fontFamily: "var(--F)", fontSize: "clamp(20px, 2.8vw, 28px)", fontStyle: "italic", lineHeight: 1.4, color: "rgba(245,240,230,0.92)", marginBottom: "18px" }}>
             The mirror is not the point. What you do the day after you look is.

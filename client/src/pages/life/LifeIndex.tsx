@@ -8,6 +8,7 @@ import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import LoadFailed from "@/components/LoadFailed";
+import { EditorialIndex } from "@/components/editorial/EditorialIndex";
 import { fetchJson } from "@/lib/fetch-json";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
@@ -60,7 +61,7 @@ export default function LifeIndex() {
         url="https://www.livewellbyjamesbell.co/life"
       />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>Integrated Life · The capstone</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5.2vw, 56px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "18px", maxWidth: "20ch" }}>
@@ -84,23 +85,23 @@ export default function LifeIndex() {
           ) : items.length === 0 ? (
             <p style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }}>The domains are being written. Check back soon.</p>
           ) : (
+            // Each group is a section of the page (h2, with its count, in the
+            // Theology pillar-heading pattern), then its domains as an index.
             grouped.map(([pillar, entries]) => (
               <div key={pillar} style={{ marginBottom: "var(--s-5)" }}>
-                <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(22px, 3vw, 30px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", marginBottom: "6px" }}>{pillar}</h2>
-                <div style={{ width: "36px", height: "2px", background: "var(--mustard)", marginBottom: "var(--s-3)" }} />
-                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(300px, 100%), 1fr))", gap: "var(--s-3)" }}>
-                  {entries.map((e) => (
-                    <Link key={e.slug} href={`/life/${e.slug}`} style={{ display: "block", background: "var(--card)", border: "1px solid var(--border)", borderTop: "2px solid var(--mustard)", padding: "var(--s-3)", textDecoration: "none" }}>
-                      <div style={{ fontFamily: "var(--F)", fontSize: "20px", lineHeight: 1.25, color: "var(--ink)", marginBottom: "8px" }}>{e.title}</div>
-                      <div style={{ fontFamily: "var(--B)", fontSize: "13.5px", lineHeight: 1.55, color: "var(--ink-muted)" }}>{e.blurb}</div>
-                    </Link>
-                  ))}
-                </div>
+                <h2 style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", gap: "12px", fontFamily: "var(--F)", fontSize: "clamp(22px, 3vw, 30px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", margin: "0 0 var(--s-2)" }}>
+                  {pillar}
+                  <span style={{ fontFamily: "var(--U)", fontSize: "13px", letterSpacing: 0, color: "var(--ink-muted)" }}>{" "}{entries.length}</span>
+                </h2>
+                <EditorialIndex
+                  label={pillar}
+                  items={entries.map((e) => ({ href: `/life/${e.slug}`, title: e.title, dek: e.blurb }))}
+                />
               </div>
             ))
           )}
 
-          <div style={{ marginTop: "var(--s-4)", background: "var(--charcoal)", padding: "var(--s-4)", color: "var(--bone)" }}>
+          <div style={{ marginTop: "var(--s-4)", background: "var(--charcoal)", padding: "var(--s-4)", color: "var(--charcoal-fg)" }}>
             <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "10px" }}>Start with an honest look</div>
             <p style={{ fontFamily: "var(--F)", fontSize: "19px", lineHeight: 1.5, marginBottom: "16px", maxWidth: "56ch" }}>
               The Whole-Life Assessment maps where your life is flourishing and where it has gone quiet, then hands you a rule of life for this season. It is not a scorecard. God is not grading you.

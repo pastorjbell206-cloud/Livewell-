@@ -9,10 +9,9 @@
  * topical pages, the tools hub, and the life domains.
  */
 import { useState } from "react";
-import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
-import { BookOpen, ClipboardCheck, Hand, Heart } from "lucide-react";
+import { EditorialIndex } from "@/components/editorial/EditorialIndex";
 import { SKEPTIC_TRACK_LIVE } from "@/lib/skepticTrack";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
@@ -157,11 +156,11 @@ const NEEDS: Need[] = [
   },
 ];
 
-const KIND_META: Record<Help["kind"], { label: string; Icon: typeof BookOpen }> = {
-  read: { label: "Read", Icon: BookOpen },
-  assess: { label: "Assess", Icon: ClipboardCheck },
-  do: { label: "Do", Icon: Hand },
-  pray: { label: "Pray", Icon: Heart },
+const KIND_META: Record<Help["kind"], { label: string }> = {
+  read: { label: "Read" },
+  assess: { label: "Assess" },
+  do: { label: "Do" },
+  pray: { label: "Pray" },
 };
 
 export default function Help() {
@@ -175,7 +174,7 @@ export default function Help() {
         url="https://www.livewellbyjamesbell.co/help"
       />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>Start here</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5.4vw, 56px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "18px", maxWidth: "18ch" }}>
@@ -189,37 +188,49 @@ export default function Help() {
 
       <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-6)" }}>
         <div style={wrap}>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(340px, 100%), 1fr))", gap: "var(--s-3)" }}>
+          {/* Two columns at 900px and up (.ed-split), one below. Each need is a
+              card holding the same accordion as before: the button names the
+              need, and the opened panel is an index of hairline rows, one per
+              place to go, with its kind (Read, Assess, Do, Pray) as the kicker.
+              Cards align to the top so opening one never stretches its
+              neighbor. The button composes .ed-row for its hover and focus
+              answer (title underline, marker color); spans only inside it. */}
+          <div className="ed-split" style={{ gap: "var(--s-3)", alignItems: "start" }}>
             {NEEDS.map((n) => {
               const isOpen = open === n.id;
               return (
-                <div key={n.id} style={{ background: "var(--card)", border: "1px solid rgba(20,17,12,0.08)", borderTop: `2px solid var(--mustard)`, padding: "var(--s-3)" }}>
+                <div key={n.id} style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", padding: "clamp(22px, 2.4vw, 30px)" }}>
                   <button
+                    type="button"
                     onClick={() => setOpen(isOpen ? null : n.id)}
                     aria-expanded={isOpen}
-                    style={{ display: "block", width: "100%", textAlign: "left", background: "none", border: "none", cursor: "pointer", padding: 0 }}
+                    className="ed-row"
+                    style={{ width: "100%", padding: 0, font: "inherit", textAlign: "left", cursor: "pointer" }}
                   >
-                    <div style={{ fontFamily: "var(--F)", fontSize: "22px", lineHeight: 1.2, color: "var(--ink)", marginBottom: "8px" }}>{n.title}</div>
-                    <p style={{ fontFamily: "var(--B)", fontSize: "14.5px", lineHeight: 1.6, color: "var(--ink-muted)", margin: 0 }}>{n.opener}</p>
-                    <div style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, color: "var(--mustard-text)", marginTop: "12px" }}>
-                      {isOpen ? "Close" : "Show me where to start"}
-                    </div>
+                    <span style={{ display: "block", minWidth: 0 }}>
+                      <span className="ed-title" style={{ fontWeight: 400 }}>{n.title}</span>
+                      <span style={{ display: "block", fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.6, color: "var(--ink-muted)", marginTop: "8px", maxWidth: "62ch" }}>{n.opener}</span>
+                      <span style={{ display: "block", fontFamily: "var(--U)", fontSize: "15px", fontWeight: 600, color: "var(--ink)", marginTop: "14px" }}>
+                        {isOpen ? "Close" : "Show me where to start"}
+                      </span>
+                    </span>
+                    <span className="ed-arrow" aria-hidden style={{ fontSize: "22px", transform: "none" }}>{isOpen ? "−" : "+"}</span>
                   </button>
                   {isOpen && (
-                    <div style={{ marginTop: "var(--s-3)", borderTop: "1px solid rgba(20,17,12,0.08)", paddingTop: "var(--s-3)", display: "grid", gap: "10px" }}>
-                      {n.helps.filter((h) => SKEPTIC_TRACK_LIVE || h.href !== "/skeptic-track").map((h) => {
-                        const meta = KIND_META[h.kind];
-                        const Icon = meta.Icon;
-                        return (
-                          <Link key={h.href + h.label} href={h.href} style={{ display: "flex", gap: "10px", alignItems: "flex-start", textDecoration: "none", padding: "8px", borderRadius: "2px" }}>
-                            <span style={{ flexShrink: 0, marginTop: "2px", color: "var(--mustard-text)" }}><Icon size={16} /></span>
-                            <span>
-                              <span style={{ fontFamily: "var(--U)", fontSize: "10.5px", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--ink-muted)", display: "block", marginBottom: "2px" }}>{meta.label}</span>
-                              <span style={{ fontFamily: "var(--B)", fontSize: "14.5px", lineHeight: 1.5, color: "var(--ink)" }}>{h.label.replace(/^(Read|Assess|Do|Pray): /, "")}</span>
-                            </span>
-                          </Link>
-                        );
-                      })}
+                    <div style={{ marginTop: "var(--s-3)" }}>
+                      <EditorialIndex
+                        columns={1}
+                        compact
+                        headingAs="span"
+                        label={n.title}
+                        items={n.helps
+                          .filter((h) => SKEPTIC_TRACK_LIVE || h.href !== "/skeptic-track")
+                          .map((h) => ({
+                            href: h.href,
+                            title: h.label.replace(/^(Read|Assess|Do|Pray): /, ""),
+                            kicker: KIND_META[h.kind].label,
+                          }))}
+                      />
                     </div>
                   )}
                 </div>
@@ -227,7 +238,7 @@ export default function Help() {
             })}
           </div>
 
-          <p style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "64ch", marginTop: "var(--s-4)" }}>
+          <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "64ch", marginTop: "var(--s-4)" }}>
             If you are in crisis or thinking about ending your life, please reach out now. In the US, call or text 988 for the Suicide and Crisis Lifeline, and tell someone who loves you. This site supports the work of doctors, counselors, and pastors. It does not replace them.
           </p>
         </div>

@@ -8,6 +8,8 @@
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { PullQuote, StatementBand } from "@/components/EditorialBlocks";
+import { CardGrid } from "@/components/editorial/CardGrid";
+import { SectionHead } from "@/components/editorial/SectionHead";
 import { useEffect, useState } from "react";
 import { Link } from "wouter";
 
@@ -107,7 +109,7 @@ export default function Wisdom() {
         url="https://www.livewellbyjamesbell.co/wisdom"
       />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>Wisdom · For all of life</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5.2vw, 56px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "18px", maxWidth: "18ch" }}>
@@ -123,7 +125,7 @@ export default function Wisdom() {
             <Link href="/tools/wisdom-finder" style={{ display: "inline-block", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--charcoal)", background: "var(--mustard)", padding: "13px 22px", textDecoration: "none" }}>
               Tell us what you are facing
             </Link>
-            <Link href="/life/wisdom-for-all-of-life" style={{ display: "inline-block", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--bone)", background: "transparent", border: "1px solid rgba(245,240,230,0.4)", padding: "13px 22px", textDecoration: "none" }}>
+            <Link href="/life/wisdom-for-all-of-life" style={{ display: "inline-block", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--charcoal-fg)", background: "transparent", border: "1px solid rgba(245,240,230,0.4)", padding: "13px 22px", textDecoration: "none" }}>
               Read the guide
             </Link>
           </div>
@@ -135,55 +137,52 @@ export default function Wisdom() {
       {/* Wisdom for every arena */}
       <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-5)" }}>
         <div style={wrap}>
-          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(22px, 3vw, 30px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", marginBottom: "6px" }}>Wisdom for every arena</h2>
-          <div style={{ width: "36px", height: "2px", background: "var(--mustard)", marginBottom: "var(--s-2)" }} />
-          <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.65, color: "var(--ink-muted)", maxWidth: "62ch", marginBottom: "var(--s-4)" }}>
-            Pick the part of life you are standing in. Each opens what Scripture actually says, the verses worth knowing by heart, and points you to a deeper guide where one exists.
-          </p>
+          <SectionHead
+            title="Wisdom for every arena"
+            intro="Pick the part of life you are standing in. Each opens what Scripture actually says, the verses worth knowing by heart, and points you to a deeper guide where one exists."
+          />
           <PullQuote>A proverb is a pattern, not a promise. It tells you how the world usually runs, so you can act wisely inside it.</PullQuote>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(260px, 100%), 1fr))", gap: "var(--s-2)" }}>
+          {/* One index row per arena. Two destinations means the row cannot be
+              a single link: the title opens what Scripture says, and the deep
+              guide, where one exists, is a quiet text link beneath it. */}
+          <ul className="ed-index ed-index--2" aria-label="Wisdom by arena">
             {ARENAS.map((a) => (
-              <div key={a.topic} style={{ background: "var(--card)", border: "1px solid rgba(20,17,12,0.08)", borderTop: "2px solid var(--mustard)", padding: "var(--s-3)" }}>
-                <div style={{ fontFamily: "var(--F)", fontSize: "19px", lineHeight: 1.2, color: "var(--ink)", marginBottom: "10px" }}>{a.label}</div>
-                <div style={{ display: "flex", gap: "14px", flexWrap: "wrap" }}>
-                  <Link href={`/tools/bible-on?topic=${a.topic}`} style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--mustard-text)", textDecoration: "none" }}>
-                    What Scripture says
+              <li key={a.topic}>
+                <div style={{ flex: 1, paddingBottom: a.domain ? "24px" : 0 }}>
+                  <Link className="ed-row" href={`/tools/bible-on?topic=${a.topic}`} style={a.domain ? { paddingBottom: 0 } : undefined}>
+                    <h3 className="ed-title">
+                      {a.label}
+                      <span className="sr-only">: what Scripture says</span>
+                    </h3>
+                    <span className="ed-arrow" aria-hidden>→</span>
                   </Link>
                   {a.domain && (
-                    <Link href={`/life/${a.domain}`} style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--ink-muted)", textDecoration: "none" }}>
-                      Read the guide
+                    <Link className="ed-sublink" href={`/life/${a.domain}`}>
+                      Read the guide{" "}<span className="sr-only">on {a.label.toLowerCase()}</span>
                     </Link>
                   )}
                 </div>
-              </div>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
 
       <StatementBand tone="dark" width="30ch">
-        Wisdom is not more rules — it is the skill of living well where no rule reaches.
+        Wisdom is not more rules. It is the skill of living well where no rule reaches.
       </StatementBand>
 
       {/* The three ways in */}
       <section style={{ background: "var(--bone-warm)", padding: "var(--s-5) var(--s-4) var(--s-6)" }}>
         <div style={wrap}>
-          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(22px, 3vw, 30px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", marginBottom: "6px" }}>Three ways in</h2>
-          <div style={{ width: "36px", height: "2px", background: "var(--mustard)", marginBottom: "var(--s-3)" }} />
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(300px, 100%), 1fr))", gap: "var(--s-3)" }}>
-            <Link href="/life/wisdom-for-all-of-life" style={{ display: "block", background: "var(--card)", border: "1px solid rgba(20,17,12,0.08)", borderTop: "2px solid var(--mustard)", padding: "var(--s-3)", textDecoration: "none" }}>
-              <div style={{ fontFamily: "var(--F)", fontSize: "21px", lineHeight: 1.2, color: "var(--ink)", marginBottom: "8px" }}>The deep guide</div>
-              <div style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.55, color: "var(--ink-muted)" }}>An extensive walk through Proverbs, Ecclesiastes, and Job: the fear of the Lord, proverbs as patterns not promises, the honesty of vapor and gift, and Christ as the wisdom of God.</div>
-            </Link>
-            <Link href="/tools/bible-on" style={{ display: "block", background: "var(--card)", border: "1px solid rgba(20,17,12,0.08)", borderTop: "2px solid var(--mustard)", padding: "var(--s-3)", textDecoration: "none" }}>
-              <div style={{ fontFamily: "var(--F)", fontSize: "21px", lineHeight: 1.2, color: "var(--ink)", marginBottom: "8px" }}>What the Bible says about</div>
-              <div style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.55, color: "var(--ink-muted)" }}>A topical guide for the arenas of ordinary life, with the heart of the passages worth knowing by heart, ready to copy and carry.</div>
-            </Link>
-            <Link href="/tools/proverbs-31" style={{ display: "block", background: "var(--card)", border: "1px solid rgba(20,17,12,0.08)", borderTop: "2px solid var(--mustard)", padding: "var(--s-3)", textDecoration: "none" }}>
-              <div style={{ fontFamily: "var(--F)", fontSize: "21px", lineHeight: 1.2, color: "var(--ink)", marginBottom: "8px" }}>Proverbs in 31 days</div>
-              <div style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.55, color: "var(--ink-muted)" }}>A chapter of Proverbs a day, matched to the date, with the theme and the lines worth carrying into the day's decisions.</div>
-            </Link>
-          </div>
+          <SectionHead title="Three ways in" />
+          <CardGrid
+            items={[
+              { href: "/life/wisdom-for-all-of-life", title: "The deep guide", dek: "An extensive walk through Proverbs, Ecclesiastes, and Job: the fear of the Lord, proverbs as patterns not promises, the honesty of vapor and gift, and Christ as the wisdom of God." },
+              { href: "/tools/bible-on", title: "What the Bible says about", dek: "A topical guide for the arenas of ordinary life, with the heart of the passages worth knowing by heart, ready to copy and carry." },
+              { href: "/tools/proverbs-31", title: "Proverbs in 31 days", dek: "A chapter of Proverbs a day, matched to the date, with the theme and the lines worth carrying into the day's decisions." },
+            ]}
+          />
 
           <div style={{ marginTop: "var(--s-4)", display: "flex", gap: "var(--s-4)", flexWrap: "wrap" }}>
             <Link href="/life" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>The Integrated Life</Link>

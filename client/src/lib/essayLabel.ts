@@ -10,13 +10,13 @@
  * Display only; filing still happens in pillar-assignments.ts.
  */
 import { PILLAR_ASSIGNMENTS } from "@/lib/pillar-assignments";
-import { PILLAR_BY_ID, TRACK_BY_SLUG, resolveTrack } from "@/lib/taxonomy";
+import { PILLAR_BY_ID, TRACK_BY_SLUG, resolveTrack, type Pillar } from "@/lib/taxonomy";
 
 export function essaySubjectLabel(post: { slug?: string | null; pillar?: string | null }): string {
   const filed = post.slug ? PILLAR_ASSIGNMENTS[post.slug]?.pillar : undefined;
   if (filed) {
     const pillar = PILLAR_BY_ID.get(filed);
-    if (pillar) return pillar.short;
+    if (pillar) return pillarKicker(pillar);
   }
   const raw = post.pillar?.trim();
   if (raw) {
@@ -24,4 +24,14 @@ export function essaySubjectLabel(post: { slug?: string | null; pillar?: string 
     if (track) return track.kicker;
   }
   return "Essay";
+}
+
+/**
+ * A pillar's label above an essay. The two capture pillars keep their full
+ * names ("Capture by the Right", "Capture by the Left"): their short forms,
+ * "The Right" and "The Left", read as partisan tags out of context, and the
+ * platform diagnoses both captures with the same instrument.
+ */
+export function pillarKicker(pillar: Pillar): string {
+  return pillar.id === 1 || pillar.id === 2 ? pillar.name.replace(/^The /, "") : pillar.short;
 }

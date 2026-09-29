@@ -74,7 +74,7 @@ export function EditorialIndex({
             <div>
               {it.kicker && <span className="ed-kicker">{it.kicker}</span>}
               <Heading className="ed-title">
-                {numbered && <span className="ed-num">{i + 1}</span>}
+                {numbered && <span className="ed-num">{i + 1}</span>}{numbered && " "}
                 {it.title}
               </Heading>
               {it.dek && <p className="ed-dek">{it.dek}</p>}

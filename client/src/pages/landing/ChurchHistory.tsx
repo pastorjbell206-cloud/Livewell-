@@ -6,7 +6,7 @@ import { LandingSignup } from "@/components/LandingSignup";
 
 const TIER_1_ARTICLES = [
   { title: "The Rise and Fall of Christendom", href: "/writing/christendom-is-ending" },
-  { title: "Constantine's Bargain", href: "/writing/constantines-bargain" },
+  { title: "What You're Really Leaving When You Leave the Faith", href: "/writing/constantines-bargain" },
   { title: "When the Church Married Empire", href: "/theology/history/the-constantinian-turn" },
   { title: "The Great Schism", href: "/theology/history/the-east-west-schism" },
   { title: "The Reformation and Its Consequences", href: "/theology/history/the-reformation" },

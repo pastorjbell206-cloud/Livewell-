@@ -1,7 +1,7 @@
 {
   "slug": "marriage",
   "title": "Marriage, Past the Tips",
-  "subtitle": "For a marriage that needs more than technique — four essays, a study, and a book.",
+  "subtitle": "For a marriage that needs more than technique: four essays, a study, and an assessment to take together.",
   "forWhom": "For two people who are not in crisis and not fine either, and who suspect the slow drift is more dangerous than the loud fight.",
   "movements": [
     {
@@ -49,9 +49,9 @@
       "note": "Marriage: Covenant & Roles collects the essays on what marriage actually is and how two people lead and serve each other. Read the whole thing here.",
       "items": [
         {
-          "label": "Marriage: a Bible study on covenant love",
-          "href": "/studyguides/marriage",
-          "blurb": "One flesh, headship and submission read honestly, and the long work of staying. A study to work through together."
+          "label": "The Marriage Health Assessment",
+          "href": "/tools/marriage-assessment",
+          "blurb": "Not a quiz. Fifteen questions across communication, intimacy, trust, shared vision, and conflict, and what to do about what you find."
         },
         {
           "label": "Find James's books in the bookstore",

@@ -7,6 +7,7 @@
 import { Link } from "wouter";
 import { pillarUrl, PILLAR_BY_ID, TRACK_BY_SLUG, resolveTrack, trackUrl } from "@/lib/taxonomy";
 import { PILLAR_ASSIGNMENTS } from "@/lib/pillar-assignments";
+import { pillarKicker } from "@/lib/essayLabel";
 
 interface TrackChipProps {
   /** Legacy `posts.pillar` value (kept for backward compatibility). */
@@ -33,7 +34,7 @@ export function TrackChip({
   const pillar = filedId ? PILLAR_BY_ID.get(filedId) ?? null : null;
   const raw = pillarOrTrack?.trim();
   const track = !pillar && raw ? (TRACK_BY_SLUG.get(raw) ?? resolveTrack(raw)) : null;
-  const kicker = pillar?.short ?? track?.kicker ?? "Essay";
+  const kicker = (pillar ? pillarKicker(pillar) : null) ?? track?.kicker ?? "Essay";
   const href = pillar ? pillarUrl(pillar.slug) : track ? trackUrl(track.slug) : null;
 
   const textColor = inverted ? "var(--mustard)" : "var(--mustard-text)";

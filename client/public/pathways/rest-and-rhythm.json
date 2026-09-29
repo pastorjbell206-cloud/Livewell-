@@ -1,7 +1,7 @@
 {
   "slug": "rest-and-rhythm",
   "title": "Rest, Sabbath, and the Cure for Hurry",
-  "subtitle": "You do not have a time problem. Three essays, a study, and a book on the rhythm the church forgot.",
+  "subtitle": "You do not have a time problem. Three essays, a study, and a rule of life for the rhythm the church forgot.",
   "forWhom": "For the tired — and for the one who cannot tell the difference between tired and done.",
   "movements": [
     {
@@ -44,9 +44,9 @@
       "note": "Read it cover to cover on the site before you ever buy it.",
       "items": [
         {
-          "label": "Sabbath: a Bible study on rest and hurry",
-          "href": "/studyguides/sabbath",
-          "blurb": "The whole case for the hour that reorders the other hundred and sixty-seven, worked into practice."
+          "label": "The Rule of Life Builder",
+          "href": "/tools/rule-of-life",
+          "blurb": "A rule of life is not a performance contract. It is a trellis. Settle on a pattern you can actually keep on an ordinary week."
         }
       ]
     }

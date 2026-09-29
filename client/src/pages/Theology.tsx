@@ -211,7 +211,7 @@ export default function Theology() {
               <div key={pillar} style={{ marginBottom: "var(--s-5)" }}>
                 <h3 style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", gap: "12px", fontFamily: "var(--F)", fontSize: "clamp(20px, 2.6vw, 26px)", fontWeight: 400, color: "var(--ink)", margin: "0 0 var(--s-2)" }}>
                   {label}
-                  <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)" }}>{items.length}</span>
+                  <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)" }}>{" "}{items.length}</span>
                 </h3>
                 <EditorialIndex
                   label={label}

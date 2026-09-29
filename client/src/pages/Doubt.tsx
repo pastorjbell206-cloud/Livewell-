@@ -1,50 +1,50 @@
+import { useState } from "react";
 import { Link } from "wouter";
 import { SEOMeta } from "@/components/SEOMeta";
 import MinimalNav from "@/components/MinimalNav";
 import Footer from "@/components/Footer";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import PillarLeadMagnet from "@/components/PillarLeadMagnet";
+import { EditorialIndex } from "@/components/editorial/EditorialIndex";
+import { CardGrid } from "@/components/editorial/CardGrid";
+import { SectionHead } from "@/components/editorial/SectionHead";
 import SubjectShelf from "@/components/SubjectShelf";
 import { subjectById } from "@/lib/subjects";
+import { getReadEssays } from "@/lib/readProgress";
 
 export default function Doubt() {
+  const [readSlugs] = useState<Set<string>>(() => getReadEssays());
 
   const FEATURED_ARTICLES = [
     {
-      title: "When Fear Rewrites Theology",
+      title: "When Fear Starts Rewriting What You Believe",
       slug: "when-fear-rewrites-theology",
-      topic: "Faith & Doubt",
-      readTime: "10 min read"
+      topic: "Faith & Doubt"
     },
     {
       title: "How Christianity Became an Empire",
       slug: "how-christianity-became-an-empire",
-      topic: "Faith & Doubt",
-      readTime: "12 min read"
+      topic: "Faith & Doubt"
     },
     {
-      title: "When God Doesn't Make Sense",
+      title: "When God Stops Making Sense",
       slug: "when-god-doesnt-make-sense",
-      topic: "Faith & Doubt",
-      readTime: "11 min read"
+      topic: "Faith & Doubt"
     },
     {
-      title: "What If We're Wrong?",
+      title: "What If Christianity Is Wrong?",
       slug: "what-if-we-are-wrong",
-      topic: "Faith & Doubt",
-      readTime: "13 min read"
+      topic: "Faith & Doubt"
     },
     {
-      title: "The Dark Night of the Soul When God Feels Absent",
+      title: "What to Do When God Feels Absent",
       slug: "dark-night-god-feels-absent",
-      topic: "Faith & Doubt",
-      readTime: "14 min read"
+      topic: "Faith & Doubt"
     },
     {
-      title: "Constantine's Bargain",
+      title: "What You're Really Leaving When You Leave the Faith",
       slug: "constantines-bargain",
-      topic: "Faith & Doubt",
-      readTime: "11 min read"
+      topic: "Faith & Doubt"
     }
   ];
 
@@ -113,77 +113,41 @@ export default function Doubt() {
 
       {/* START HERE CARDS */}
       <section style={{ background: "var(--paper)", padding: "80px 20px" }}>
-        <div style={{ maxWidth: "1400px", margin: "0 auto" }}>
-          <h2 style={{ fontSize: "36px", fontWeight: "bold", marginBottom: "48px", fontFamily: "var(--F)", color: "var(--ink)" }}>
-            Start Here
-          </h2>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(300px, 100%), 1fr))", gap: "32px" }}>
-            {START_HERE_PATHS.map((path, i) => (
-              <Link key={i} href={path.href} style={{ textDecoration: "none" }}>
-                <div style={{ background: "var(--card)", padding: "40px", borderRadius: "8px", border: "1px solid var(--border)", cursor: "pointer", height: "100%", display: "flex", flexDirection: "column" }}>
-                  <h3 style={{ fontSize: "18px", fontWeight: "bold", marginBottom: "12px", color: "var(--ink)" }}>
-                    {path.title}
-                  </h3>
-                  <p style={{ fontSize: "14px", lineHeight: "1.6", color: "var(--ink3)", flex: 1 }}>
-                    {path.description}
-                  </p>
-                  <span style={{ color: "var(--gold)", fontSize: "14px", fontWeight: "bold", marginTop: "16px" }}>
-                    Explore path →
-                  </span>
-                </div>
-              </Link>
-            ))}
-          </div>
+        <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
+          <SectionHead title="Start Here" />
+          <CardGrid
+            label="Start Here"
+            items={START_HERE_PATHS.map((path) => ({ href: path.href, title: path.title, dek: path.description }))}
+          />
         </div>
       </section>
 
       {/* FEATURED ARTICLES */}
       <section style={{ background: "var(--paper2)", padding: "80px 20px" }}>
-        <div style={{ maxWidth: "1400px", margin: "0 auto" }}>
-          <h2 style={{ fontSize: "36px", fontWeight: "bold", marginBottom: "48px", fontFamily: "var(--F)", color: "var(--ink)" }}>
-            Deep Theological Reading
-          </h2>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(300px, 100%), 1fr))", gap: "32px" }}>
-            {FEATURED_ARTICLES.map((article, i) => (
-              <Link key={i} href={"/writing/" + article.slug} style={{ textDecoration: "none" }}>
-                <div style={{ background: "var(--card)", padding: "32px", borderRadius: "8px", border: "1px solid var(--border)", cursor: "pointer", height: "100%", display: "flex", flexDirection: "column" }}>
-                  <div style={{ fontSize: "11px", fontWeight: "bold", color: "var(--gold)", marginBottom: "12px", textTransform: "uppercase" }}>
-                    {article.topic}
-                  </div>
-                  <h3 style={{ fontSize: "18px", fontWeight: "bold", marginBottom: "16px", color: "var(--ink)", flex: 1, lineHeight: "1.4" }}>
-                    {article.title}
-                  </h3>
-                  <div style={{ fontSize: "12px", color: "var(--ink3)" }}>
-                    {article.readTime}
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
+        <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
+          <SectionHead title="Deep Theological Reading" />
+          <EditorialIndex
+            label="Deep Theological Reading"
+            items={FEATURED_ARTICLES.map((article) => ({
+              href: `/writing/${article.slug}`,
+              title: article.title,
+              read: readSlugs.has(article.slug),
+            }))}
+          />
         </div>
       </section>
 
       {/* HARD QUESTIONS */}
       <section style={{ background: "var(--paper)", padding: "80px 20px" }}>
-        <div style={{ maxWidth: "1400px", margin: "0 auto" }}>
-          <h2 style={{ fontSize: "36px", fontWeight: "bold", marginBottom: "12px", fontFamily: "var(--F)", color: "var(--ink)" }}>
-            Hard Questions, Honest Answers
-          </h2>
-          <p style={{ fontSize: "16px", color: "var(--ink3)", marginBottom: "48px" }}>
-            The questions that keep people up at night. Each one opens the essay that takes it seriously.
-          </p>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "24px" }}>
-            {HARD_QUESTIONS.map((item, i) => (
-              <Link key={i} href={item.href} style={{ textDecoration: "none" }}>
-                <div style={{ background: "var(--ink)", color: "var(--paper)", padding: "32px", borderRadius: "8px", cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "space-between", minHeight: "100px" }}>
-                  <h3 style={{ fontSize: "16px", fontWeight: "bold", margin: 0 }}>
-                    {item.q}
-                  </h3>
-                  <span style={{ fontSize: "20px", marginLeft: "16px" }}>→</span>
-                </div>
-              </Link>
-            ))}
-          </div>
+        <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
+          <SectionHead
+            title="Hard Questions, Honest Answers"
+            intro="The questions that keep people up at night. Each one opens an honest answer that takes it seriously."
+          />
+          <EditorialIndex
+            label="Hard Questions, Honest Answers"
+            items={HARD_QUESTIONS.map((item) => ({ href: item.href, title: item.q }))}
+          />
         </div>
       </section>
 
@@ -235,7 +199,7 @@ export default function Doubt() {
           <p style={{ fontSize: "16px", lineHeight: "1.8", marginBottom: "32px", color: "var(--ink3)" }}>
             It might be the beginning of the truest faith you'll ever have. Not faith that requires you to stop thinking. Faith that holds up under real questions.
           </p>
-          <Link href="/writing?topic=theology" style={{ textDecoration: "none" }}>
+          <Link href="/writing?track=theology" style={{ textDecoration: "none" }}>
             <button style={{ background: "var(--ink)", color: "var(--paper)", border: "none", padding: "16px 40px", fontSize: "16px", fontWeight: "bold", borderRadius: "4px", cursor: "pointer" }}>
               Browse All Theological Articles
             </button>
@@ -243,8 +207,8 @@ export default function Doubt() {
         </div>
       </section>
 
-      <Footer />
       {subjectById("doubt") && <SubjectShelf subject={subjectById("doubt")!} />}
+      <Footer />
     </div>
   );
 }

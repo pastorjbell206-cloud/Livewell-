@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "wouter";
 import { SEOMeta } from "@/components/SEOMeta";
 import MinimalNav from "@/components/MinimalNav";
@@ -6,47 +7,46 @@ import { NewsletterSignup } from "@/components/NewsletterSignup";
 import PillarLeadMagnet from "@/components/PillarLeadMagnet";
 import { CrisisHelp } from "@/components/CrisisHelp";
 import { StatementBand, SectionArt } from "@/components/EditorialBlocks";
+import { EditorialIndex } from "@/components/editorial/EditorialIndex";
+import { CardGrid } from "@/components/editorial/CardGrid";
+import { SectionHead } from "@/components/editorial/SectionHead";
 import SubjectShelf from "@/components/SubjectShelf";
 import { subjectById } from "@/lib/subjects";
+import { getReadEssays } from "@/lib/readProgress";
 
 export default function Marriage() {
+  const [readSlugs] = useState<Set<string>>(() => getReadEssays());
 
   const FEATURED_ARTICLES = [
     {
       title: "Covenant vs. Contract: What Marriage Actually Is",
       slug: "covenant-vs-contract-what-marriage-is",
-      topic: "Marriage",
-      readTime: "18 min read"
+      topic: "Marriage"
     },
     {
       title: "Communication That Actually Works",
       slug: "marriage-communication-that-works",
-      topic: "Marriage",
-      readTime: "9 min read"
+      topic: "Marriage"
     },
     {
       title: "Fighting Fair: Conflict Without Casualties",
       slug: "marriage-fighting-fair",
-      topic: "Marriage",
-      readTime: "9 min read"
+      topic: "Marriage"
     },
     {
       title: "Forgiveness in Marriage: How to Actually Do It",
       slug: "forgiveness-in-marriage",
-      topic: "Marriage",
-      readTime: "11 min read"
+      topic: "Marriage"
     },
     {
       title: "Money and Marriage",
       slug: "marriage-money-and-marriage",
-      topic: "Marriage",
-      readTime: "9 min read"
+      topic: "Marriage"
     },
     {
       title: "Protecting Your Marriage From the Demands of Work",
       slug: "protecting-your-marriage-from-work",
-      topic: "Marriage",
-      readTime: "12 min read"
+      topic: "Marriage"
     }
   ];
 
@@ -81,7 +81,7 @@ export default function Marriage() {
       <MinimalNav />
 
       {/* HERO SECTION */}
-      <section style={{ background: "var(--ink)", color: "var(--charcoal-fg)", padding: "80px 20px", minHeight: "600px", display: "flex", alignItems: "center" }}>
+      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "80px 20px", minHeight: "600px", display: "flex", alignItems: "center" }}>
         <div style={{ maxWidth: "800px", margin: "0 auto", textAlign: "center" }}>
           <h1 style={{ fontSize: "clamp(36px, 5vw, 56px)", fontWeight: "bold", lineHeight: "1.2", marginBottom: "24px", fontFamily: "var(--F)" }}>
             When Your Marriage Needs More Than Advice
@@ -109,27 +109,16 @@ export default function Marriage() {
 
       {/* FEATURED ARTICLES */}
       <section style={{ background: "var(--bone)", padding: "80px 20px" }}>
-        <div style={{ maxWidth: "1400px", margin: "0 auto" }}>
-          <h2 style={{ fontSize: "36px", fontWeight: "bold", marginBottom: "48px", fontFamily: "var(--F)", color: "var(--ink)" }}>
-            Essential Reading
-          </h2>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(300px, 100%), 1fr))", gap: "32px" }}>
-            {FEATURED_ARTICLES.map((article, i) => (
-              <Link key={i} href={"/writing/" + article.slug} style={{ textDecoration: "none" }}>
-                <div style={{ background: "var(--card)", padding: "32px", borderRadius: "8px", border: "1px solid var(--bone-muted)", cursor: "pointer", height: "100%", display: "flex", flexDirection: "column", transition: "all 0.3s ease" }}>
-                  <div style={{ fontSize: "11px", fontWeight: "bold", color: "var(--gold)", marginBottom: "12px", textTransform: "uppercase" }}>
-                    {article.topic}
-                  </div>
-                  <h3 style={{ fontSize: "18px", fontWeight: "bold", marginBottom: "16px", color: "var(--ink)", flex: 1, lineHeight: "1.4" }}>
-                    {article.title}
-                  </h3>
-                  <div style={{ fontSize: "12px", color: "var(--ink3)" }}>
-                    {article.readTime}
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
+        <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
+          <SectionHead title="Essential Reading" />
+          <EditorialIndex
+            label="Essential Reading"
+            items={FEATURED_ARTICLES.map((article) => ({
+              href: `/writing/${article.slug}`,
+              title: article.title,
+              read: readSlugs.has(article.slug),
+            }))}
+          />
         </div>
       </section>
 
@@ -139,31 +128,16 @@ export default function Marriage() {
 
       {/* READING PATHS */}
       <section style={{ background: "var(--paper2)", padding: "80px 20px" }}>
-        <div style={{ maxWidth: "1400px", margin: "0 auto" }}>
-          <h2 style={{ fontSize: "36px", fontWeight: "bold", marginBottom: "12px", fontFamily: "var(--F)", color: "var(--ink)" }}>
-            Curated Reading Paths
-          </h2>
-          <p style={{ fontSize: "16px", color: "var(--ink3)", marginBottom: "48px" }}>
-            Thematic collections to go deeper on specific areas of your marriage.
-          </p>
+        <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
+          <SectionHead
+            title="Curated Reading Paths"
+            intro="Thematic collections to go deeper on specific areas of your marriage."
+          />
           <SectionArt seed="marriage-paths" />
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(300px, 100%), 1fr))", gap: "32px" }}>
-            {READING_PATHS.map((path, i) => (
-              <Link key={i} href={path.href} style={{ textDecoration: "none" }}>
-                <div style={{ background: "var(--card)", borderRadius: "8px", overflow: "hidden", border: "1px solid var(--bone-muted)", borderLeft: "3px solid var(--gold)", padding: "28px", height: "100%", cursor: "pointer" }}>
-                  <h3 style={{ fontSize: "18px", fontWeight: "bold", marginBottom: "12px", color: "var(--ink)" }}>
-                    {path.title}
-                  </h3>
-                  <p style={{ fontSize: "14px", lineHeight: "1.6", color: "var(--ink3)", marginBottom: "16px" }}>
-                    {path.description}
-                  </p>
-                  <div style={{ fontSize: "12px", fontWeight: "bold", color: "var(--gold)" }}>
-                    Read the essays →
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
+          <CardGrid
+            label="Curated Reading Paths"
+            items={READING_PATHS.map((path) => ({ href: path.href, title: path.title, dek: path.description }))}
+          />
         </div>
       </section>
 
@@ -199,7 +173,7 @@ export default function Marriage() {
             Start with the Marriage Health Assessment. It takes about ten minutes and will show you where your marriage is strongest and where the repair work begins. If what you are carrying is heavier than a questionnaire can hold, a pastor or a counselor is the right next door, and there is no shame in walking through it.
           </p>
           <Link href="/tools/marriage-assessment" style={{ textDecoration: "none" }}>
-            <button style={{ background: "var(--ink)", color: "var(--charcoal-fg)", border: "none", padding: "16px 40px", fontSize: "16px", fontWeight: "bold", borderRadius: "4px", cursor: "pointer" }}>
+            <button style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", border: "none", padding: "16px 40px", fontSize: "16px", fontWeight: "bold", borderRadius: "4px", cursor: "pointer" }}>
               Take the Assessment
             </button>
           </Link>

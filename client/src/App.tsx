@@ -1,10 +1,3 @@
-// The toaster is only ever fed by the admin pages (toast() calls live there),
-// so it loads lazily: sonner and next-themes leave the initial graph every
-// reader downloads. No root TooltipProvider: nothing outside the admin
-// sidebar renders a tooltip, and the sidebar mounts its own provider.
-const Toaster = lazy(() =>
-  import("@/components/ui/sonner").then((m) => ({ default: m.Toaster }))
-);
 import PageTracker from "@/components/PageTracker";
 import WebVitalsBeacon from "@/components/WebVitalsBeacon";
 import ClientErrorReporter from "@/components/ClientErrorReporter";
@@ -13,6 +6,14 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import { Route, Router as WouterRouter, Switch, useLocation } from "wouter";
 import { useBrowserLocation } from "wouter/use-browser-location";
 import { Suspense, lazy, startTransition, useCallback, useEffect } from "react";
+
+// The toaster is only ever fed by the admin pages (toast() calls live there),
+// so it loads lazily: sonner and next-themes leave the initial graph every
+// reader downloads. No root TooltipProvider: nothing outside the admin
+// sidebar renders a tooltip, and the sidebar mounts its own provider.
+const Toaster = lazy(() =>
+  import("@/components/ui/sonner").then((m) => ({ default: m.Toaster }))
+);
 import { trackReturnReaderOnce } from "@/lib/telemetry";
 import { JUSTICE, DISRUPTION } from "./lib/prophetic";
 import ErrorBoundary from "./components/ErrorBoundary";

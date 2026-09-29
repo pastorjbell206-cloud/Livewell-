@@ -133,13 +133,26 @@ every grid of repeated tiles. Its findings are the starting line:
   3.16 MB, loads only inside the admin dashboard, so it is not the reader's
   cost; start with the home page's Largest Contentful Paint instead.)
 
-**Already done (the first wave, on PR #521).** The editorial system in
-Section 5 exists: `components/editorial/EditorialIndex.tsx`,
+**Already done (the first design wave, on PR #521).** The editorial system
+in Section 5 exists: `components/editorial/EditorialIndex.tsx`,
 `CardGrid.tsx`, `SectionHead.tsx`, and the `.ed-*` classes in
-`client/src/index.css`. The shared "More on this" block (`MoreOnThis.tsx`,
-on every hub) and the site directory (`FollowJames.tsx`) were rebuilt on it,
-and the first collection pages were migrated (see the PR for the list).
-Continue from there; do not rebuild what exists.
+`client/src/index.css`. On it: the home page, `/writing`, `/theology`,
+`/theology/history`, `/how-tos`, `/life`, `/wisdom`, the topic hubs
+(`/marriage`, `/parenting`, `/doubt`, `/family`, `/living-well`),
+`/justice` and `/disruption`, `/studyguides`, `/pathways`,
+`/reading-paths`, `/resources`, `/assessments`, `/study`, `/help`, and the
+shared blocks (the reading shelf on nine hubs, "More on this", the site
+directory, the tool strip, the start-here row). Continue from there; do not
+rebuild what exists. Still to do: the essay page (Section 7, surface 3), the
+Study Bible, the tool frame, and the per-surface work in Section 7 that goes
+beyond grids.
+
+**Dark mode is built but switched off.** Every token flips under
+`html.dark`, and the Footer carries a toggle, but `ThemeProvider` in
+`App.tsx` is created without `switchable`, so readers cannot turn it on.
+Turning it on is James's decision. If he wants it, run a full dark pass
+first (the census screenshots in both themes), because pages outside this
+wave have not been checked in dark.
 
 ---
 

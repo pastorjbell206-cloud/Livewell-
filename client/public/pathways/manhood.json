@@ -1,7 +1,7 @@
 {
   "slug": "manhood",
   "title": "Manhood, the Father Wound, and Raising Sons",
-  "subtitle": "Two essays, a study, and a book — from a man raised without a father, raising five sons.",
+  "subtitle": "Two essays, a study, and every essay on manhood, from a man raised without a father, raising five sons.",
   "forWhom": "For the man carrying a wound he never named, and for anyone raising a boy toward a manhood the culture keeps counterfeiting.",
   "movements": [
     {
@@ -39,9 +39,9 @@
       "note": "Read it cover to cover on the site before you ever buy it.",
       "items": [
         {
-          "label": "What Manhood Is For: a Bible study",
-          "href": "/studyguides/manhood",
-          "blurb": "A working study for the man doing the long work of becoming one."
+          "label": "Every essay on manhood",
+          "href": "/writing?track=manhood",
+          "blurb": "The whole shelf, in one place."
         }
       ]
     }
