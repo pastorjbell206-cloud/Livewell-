@@ -423,6 +423,31 @@ function extractReadableText(obj, acc = [], depth = 0) {
   return acc;
 }
 
+/** Some essay bodies are stored as simple HTML (the post-Christian series;
+ *  the client converts them with client/src/lib/htmlToMarkdown.ts). Treated
+ *  as Markdown they would be escaped into one paragraph of visible tags, so
+ *  they pass through here instead, reduced to an allow-list of prose tags
+ *  with no attributes except a safe href. */
+const HTML_BODY_HINT = /<\/?(p|h[1-6]|em|strong|blockquote|ul|ol|li|br|a)\b[^>]*>/i;
+function isHtmlBody(s) {
+  return HTML_BODY_HINT.test(String(s ?? ""));
+}
+function safeProseHtml(html) {
+  const ALLOWED = new Set(["p", "h2", "h3", "h4", "em", "strong", "b", "i", "blockquote", "ul", "ol", "li", "a", "br", "hr"]);
+  return String(html)
+    .replace(/<(script|style|iframe|object|embed)\b[\s\S]*?<\/\1>/gi, "")
+    .replace(/<(\/?)([a-z0-9]+)\b([^>]*)>/gi, (m, close, tag, attrs) => {
+      const t = tag.toLowerCase();
+      const level = t === "h1" ? "h2" : t; // h1 is reserved for the title
+      if (!ALLOWED.has(level)) return "";
+      if (level === "a" && !close) {
+        const href = (attrs.match(/href="([^"]*)"/i) || [])[1] || "";
+        return /^(https?:|\/|#|mailto:)/i.test(href) ? `<a href="${href}">` : "<a>";
+      }
+      return `<${close}${level}>`;
+    });
+}
+
 /** Build the crawlable <article> body block for #root. */
 function renderArticleBody({ title, subtitle, contentHtml, sectionLabel }) {
   const parts = [
@@ -445,7 +470,7 @@ function renderArticleBody({ title, subtitle, contentHtml, sectionLabel }) {
 function bodyFromContent({ title, subtitle, sectionLabel, markdown, contentObj }) {
   let contentHtml = "";
   if (markdown) {
-    contentHtml = mdToHtml(markdown);
+    contentHtml = isHtmlBody(markdown) ? safeProseHtml(markdown) : mdToHtml(markdown);
   } else if (contentObj) {
     const paras = extractReadableText(contentObj);
     contentHtml = paras.map((p) => mdToHtml(p)).filter(Boolean).join("\n");
@@ -455,7 +480,7 @@ function bodyFromContent({ title, subtitle, sectionLabel, markdown, contentObj }
 }
 
 function articleSchema(post, url, image) {
-  const bodyText = markdownToPlainText(post.body);
+  const bodyText = markdownToPlainText(isHtmlBody(post.body) ? String(post.body).replace(/<[^>]+>/g, " ") : post.body);
   return {
     "@context": "https://schema.org",
     "@type": "Article",

@@ -14,6 +14,7 @@ import { createPortal } from "react-dom";
 import { Link, useLocation, useParams } from "wouter";
 import { DISCUSSION_GUIDES } from "@/data/discussion-guides";
 import { Markdown } from "@/components/Markdown";
+import { htmlToMarkdown } from "@/lib/htmlToMarkdown";
 import { recordReadEvent } from "@/components/ReadDepthBeacon";
 import { ArrowLeft, BookOpen, Bookmark, Share2, User } from "lucide-react";
 
@@ -837,7 +838,7 @@ export default function ArticleDetail() {
                   ),
                 }}
               >
-                {post.body.replace(/^\s*#{1,6}\s+.*\r?\n+/, "")}
+                {htmlToMarkdown(post.body).replace(/^\s*#{1,6}\s+.*\r?\n+/, "")}
               </Markdown>
             ) : (
               <p style={{ fontStyle: "italic", color: "var(--ink-muted)" }}>
