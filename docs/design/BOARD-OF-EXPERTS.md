@@ -147,12 +147,13 @@ rebuild what exists. Still to do: the essay page (Section 7, surface 3), the
 Study Bible, the tool frame, and the per-surface work in Section 7 that goes
 beyond grids.
 
-**Dark mode is built but switched off.** Every token flips under
-`html.dark`, and the Footer carries a toggle, but `ThemeProvider` in
-`App.tsx` is created without `switchable`, so readers cannot turn it on.
-Turning it on is James's decision. If he wants it, run a full dark pass
-first (the census screenshots in both themes), because pages outside this
-wave have not been checked in dark.
+**Dark mode.** Every token flips under `html.dark`. On `main` as of this
+writing, `ThemeProvider` in `App.tsx` is created without `switchable`, so
+readers cannot turn it on; PR #459 re-enables the toggle and standardizes
+dark surfaces. Whichever state is live when you run this, check every
+surface you touch in both themes (the census screenshots), because a token
+that flips on a surface that does not (text on charcoal, for example) is the
+most common dark-mode break on this site.
 
 ---
 
