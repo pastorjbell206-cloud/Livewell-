@@ -1,0 +1,270 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "The two visitors who left Abraham in 18:22 reach Sodom at evening. Lot is sitting in the city gate, as Abraham sat at his tent door (18:1), and like Abraham he rises and bows. The parallel invites the reader to compare the two hosts and the two places.",
+      "grammar": "The narrator now calls the visitors hammal'akhim, ‘the angels’ or ‘the messengers’, where chapter 18 called them ‘men’. The word names their errand: they come as God's envoys. Ba'erev, ‘in the evening’, sets the scene at nightfall, in contrast to the midday visit at Mamre. Velot yoshev, ‘and Lot was sitting’, is a participle clause, the same construction used of Abraham in 18:1.",
+      "words": ["H4397H", "H6153", "H3427", "H8179G", "H7812"],
+      "history": "The gate of an ancient town was a complex of chambers and benches where elders sat, business was transacted, and cases were heard (Ruth 4:1-2, Deuteronomy 21:19). Sitting there suggests Lot had become a man of some standing in Sodom since he first pitched his tent near it (13:12).",
+      "refs": ["Genesis 18:1-2", "Ruth 4:1-2", "Genesis 13:12", "Deuteronomy 21:19"]
+    },
+    {
+      "v": "2",
+      "context": "Lot urges the strangers to lodge with him and leave early. They decline, saying they will spend the night in the square, perhaps to test him, perhaps because their errand is to see the city as it is.",
+      "grammar": "Lot's invitation runs in an odd order: ‘spend the night and wash your feet’, where one would expect the washing first. Many readers hear haste in it, a man anxious to get guests off the street. The guests' reply, lo ki varechov nalin, ‘no, but in the square we will lodge’, uses rechov, the open plaza inside the gate.",
+      "words": ["H0113", "H5493I", "H3885A", "H7925", "H7339"],
+      "refs": ["Judges 19:15", "Judges 19:20", "Genesis 18:3-4"]
+    },
+    {
+      "v": "3",
+      "context": "Lot presses them until they agree, and he prepares a meal. The hospitality is real, though simpler and more hurried than Abraham's feast in 18:6-8.",
+      "grammar": "Vayyiftsar-bam me'od, ‘he pressed them hard’, uses patsar, ‘to urge’ or ‘to press’. The same verb returns in verse 9, when the mob presses hard against Lot, so Lot's urgent kindness is answered by the city's urgent violence. Mishteh, ‘feast’, comes from shatah, ‘to drink’, and means a banquet. Matsot are unleavened loaves, bread made quickly without waiting for dough to rise.",
+      "words": ["H6484", "H4960", "H4682", "H0644"],
+      "refs": ["Genesis 18:6-8", "Exodus 12:39", "Judges 19:21"]
+    },
+    {
+      "v": "4",
+      "context": "Before the household can sleep, the men of Sodom surround the house. The narrator stresses that the whole city is there, which answers Abraham's question in chapter 18: there are not ten righteous men.",
+      "grammar": "The verse piles up phrases of totality: anshei ha'ir anshei Sedom, ‘the men of the city, the men of Sodom’; mina'ar ve'ad-zaqen, ‘from young to old’; kol-ha'am mikkatseh, ‘all the people, from every quarter’. Terem yishkavu, ‘before they lay down’, uses terem, ‘not yet’, to show how quickly the threat comes.",
+      "words": ["H2962", "H0582", "H5437H", "H5288", "H2205H"],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The narrator's insistence that every man, young and old, joined the crowd shows the judgment falling on a city whose wrong has become common practice. The investigation of 18:21 is answered by the city's own conduct."
+        }
+      ],
+      "refs": ["Genesis 18:32", "Genesis 13:13", "Jeremiah 5:1"]
+    },
+    {
+      "v": "5",
+      "context": "The crowd demands that Lot bring out his guests so that they can have sex with them. The demand is for the gang rape of strangers under a host's protection.",
+      "grammar": "Vened'ah otam, ‘that we may know them’, uses yada, ‘to know’, which in Genesis often means sexual intercourse (4:1, 4:17). A mid-twentieth-century proposal read it here as ‘get acquainted with’, making the sin a breach of hospitality alone; most scholars reject that reading because verse 8 uses the same verb of Lot's daughters, who ‘have not known a man’. Hotsi'em, ‘bring them out’, is a Hiphil imperative, a command to the host.",
+      "words": ["H3045", "H3318H", "H0582", "H3915"],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Christians read the sin of this verse differently in part. Many interpreters, drawing on Jude 7 and on Levitical law, see same-sex intercourse as part of what the text condemns, alongside violence and inhospitality. Others argue that the story concerns rape and the humiliation of strangers, and that it does not address consensual relationships. All agree that the act demanded is gang rape, and that Scripture names Sodom for pride, cruelty to the vulnerable, and sexual violence together (Ezekiel 16:49-50, Jude 7)."
+        }
+      ],
+      "refs": ["Judges 19:22", "Genesis 4:1", "Jude 1:7", "Ezekiel 16:49-50"]
+    },
+    {
+      "v": "6-7",
+      "context": "Lot goes out to face the crowd, shutting the door behind him to protect his guests, and pleads with them not to do this evil.",
+      "grammar": "The door (delet) becomes the boundary of the scene: Lot shuts it behind him (verse 6), the crowd moves to break it (verse 9), the angels pull Lot back and shut it (verse 10), and the blinded men cannot find it (verse 11). Lot calls the crowd achay, ‘my brothers’, an appeal to fellowship as fellow townsmen. Al-na tare'u, ‘please do not do evil’, is the Hiphil of ra'a, ‘to act wickedly’.",
+      "words": ["H6607", "H1817C", "H5462", "H0251G", "H7489A"],
+      "refs": ["Judges 19:23", "Genesis 19:9-11"]
+    },
+    {
+      "v": "8",
+      "context": "Lot offers his two virgin daughters to the crowd in place of the guests, appealing to the duty of protecting those under his roof. The narrator reports the offer without comment, and the reader is left to feel its horror.",
+      "grammar": "Asher lo-yade'u ish, ‘who have not known a man’, uses yada again, confirming its sexual sense in verse 5. Va'asu lahen kattov be'eineikhem, ‘do to them as is good in your eyes’, echoes Abram's words to Sarai about Hagar (16:6): in both cases a vulnerable woman is handed over to another's will. Ki al-ken ba'u betsel qorati, ‘for this is why they came into the shadow of my roof-beam’, repeats the phrase Abraham used of his guests in 18:5 (‘this is why you have passed by’). Qorah is the beam of a roof, the physical shelter that stands for a host's protection.",
+      "words": ["H3045", "H1323G", "H3318H", "H6738", "H6982"],
+      "theology": [
+        {
+          "id": "family",
+          "note": "Lot's attempt to keep one duty (protecting guests) leads him to betray a deeper one (protecting his children). The same horror returns in Judges 19:24, where it ends in a woman's death. Scripture records such acts to expose them, not to commend them."
+        }
+      ],
+      "refs": ["Judges 19:24", "Genesis 16:6", "Genesis 18:5"]
+    },
+    {
+      "v": "9",
+      "context": "The crowd turns on Lot himself. They mock him as a foreigner who presumes to judge, threaten to do worse to him than to the guests, and rush the door.",
+      "grammar": "Gesh-hal'ah, literally ‘approach further off’, is an idiom for ‘stand back’. Ha'echad ba-lagur, ‘this one came to sojourn’, uses gur, the verb for living as a resident foreigner: after years in Sodom, Lot is still an outsider. Vayyishpot shafot, ‘and he keeps on judging’, pairs a finite verb with the infinitive absolute to express repeated or insistent action. The irony is sharp: they accuse Lot of judging on the very night the Judge of all the earth (18:25) has sent his envoys. Na'ra, ‘we will do harm’, repeats the verb of Lot's plea in verse 7, and vayyiftseru, ‘they pressed hard’, repeats verse 3.",
+      "words": ["H5066G", "H1481A", "H8199", "H7489A", "H6484"],
+      "refs": ["Genesis 18:25", "Genesis 19:3", "Exodus 2:14"]
+    },
+    {
+      "v": "10-11",
+      "context": "The guests reach out, pull Lot inside, shut the door, and strike the crowd with blindness. The ones Lot tried to protect now protect him, and their true identity begins to show.",
+      "grammar": "Vayyishlechu... et-yadam vayyavi'u et-Lot aleihem habbaytah, ‘they stretched out their hand and brought Lot to them into the house’, closely echoes Noah stretching out his hand and bringing the dove to himself into the ark (8:9). Sanverim, ‘blindness’, is a rare word found elsewhere only in 2 Kings 6:18, where Elisha's attackers are struck with it; it seems to mean a sudden bewildering blindness or dazzlement. Vayyil'u limtso happetach, ‘they wore themselves out trying to find the door’, shows the crowd persisting even when blinded.",
+      "words": ["H7971K", "H0935P", "H5575", "H3811", "H6607"],
+      "refs": ["Genesis 8:9", "2 Kings 6:18", "Acts 13:11"]
+    },
+    {
+      "v": "12-13",
+      "context": "The angels reveal their mission. They tell Lot to gather everyone who belongs to him and leave, because the LORD has sent them to destroy the city.",
+      "grammar": "Od mi-lekha fo, ‘who else do you have here’, lists the family members in an order that begins, surprisingly, with chatan, ‘son-in-law’. Mashchitim anachnu, ‘we are destroying’, is a participle of action about to happen, from shachat, the verb of the flood (6:13, 17). Tsa'aqatam, ‘their outcry’, picks up the outcry of 18:20-21: the investigation is over, and the outcry proved true.",
+      "words": ["H2860", "H7843", "H6818", "H7971G"],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The angels say the LORD has sent them to destroy the city, and verse 24 says the LORD rained fire. Scripture often speaks of God's judgments carried out by angels (2 Samuel 24:16, 2 Kings 19:35) while treating them as God's own act."
+        },
+        {
+          "id": "angels",
+          "note": "The same messengers who eat at Abraham's table carry out judgment on Sodom. Angels in Scripture are God's servants for rescue and for judgment alike (Hebrews 1:14, Revelation 16:1)."
+        }
+      ],
+      "refs": ["Genesis 18:20-21", "Genesis 6:13", "2 Samuel 24:16", "2 Peter 2:6-9"]
+    },
+    {
+      "v": "14",
+      "context": "Lot goes out at night to warn his sons-in-law, but they think he is joking. The family's ties to Sodom are stronger than his word.",
+      "grammar": "Chatanav loqechei venotav is literally ‘his sons-in-law, the takers of his daughters’. The participle loqechei can mean ‘those who were to marry’ (BSB ‘pledged in marriage’) or ‘those who had married’. On the second reading Lot had married daughters who stayed and died in the city, and verse 15's ‘your two daughters who are here’ may imply others elsewhere. Kimtsacheq, ‘like one joking’, is a Piel participle of tsachaq, the root of Isaac's name and of Abraham's and Sarah's laughter (17:17, 18:12). In Abraham's tent, laughter met a promise of life; in Sodom, it meets a warning of death.",
+      "words": ["H2860", "H3947I", "H6711", "H7843"],
+      "text": "Translations differ on the sons-in-law. The BSB, ESV, and NIV speak of men ‘pledged to marry’ Lot's daughters; the KJV has ‘which married his daughters’. The Hebrew participle allows both, and ancient interpreters also divided.",
+      "refs": ["Genesis 17:17", "Genesis 18:12", "Luke 17:28-29", "2 Peter 3:3-4"]
+    },
+    {
+      "v": "15",
+      "context": "At dawn the angels urge Lot to take his wife and two daughters and go, or be swept away with the city.",
+      "grammar": "Vayya'itsu, ‘they urged’, is the Hiphil of uts, ‘to press’ or ‘to hasten’. Pen-tissafeh, ‘lest you be swept away’, uses the verb safah that Abraham used in his plea: ‘Will You really sweep away the righteous with the wicked?’ (18:23). Ba'avon ha'ir, ‘in the iniquity of the city’, uses avon, which means both guilt and the punishment that guilt brings; the BSB renders it ‘punishment’.",
+      "words": ["H7837", "H0213", "H5595", "H5771I", "H4672"],
+      "refs": ["Genesis 18:23", "Numbers 16:26", "Revelation 18:4"]
+    },
+    {
+      "v": "16",
+      "context": "Lot hesitates, and the angels take him, his wife, and his daughters by the hand and bring them outside the city. The narrator gives the only reason: the LORD's compassion.",
+      "grammar": "Vayyitmahmah, ‘he lingered’, is a rare reduplicated form of a verb meaning ‘to delay’; the repeated syllable itself suggests dithering. Vayyachaziqu, ‘they seized’, is a Hiphil of chazaq, ‘to be strong’, taking a firm grip. Vayyanichuhu michuts la'ir, ‘they set him down outside the city’, pictures Lot being carried out and deposited like someone who could not have left on his own.",
+      "words": ["H4102", "H2388H", "H2551", "H5117"],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "Lot is not rescued because he runs but because he is seized. The verse is one of the Old Testament's plainest pictures of salvation as God's act of mercy on the undeserving, and 2 Peter 2:7-9 draws the lesson that the Lord knows how to rescue the godly."
+        }
+      ],
+      "refs": ["2 Peter 2:7-9", "Jude 1:23", "Zechariah 3:2", "Titus 3:5"]
+    },
+    {
+      "v": "17",
+      "context": "Once outside, one of the angels gives three commands: flee for your life, do not look back, and do not stop in the plain. The warning against looking back sets up verse 26.",
+      "grammar": "Himmalet al-nafshekha, ‘escape for your life’, uses the Niphal of malat, the verb of escaping, which repeats five times in verses 17-22. Al-tabbit acharekha, ‘do not look behind you’, uses the Hiphil of nabat, ‘to look intently’, the verb God used when he told Abram to look at the stars (15:5). Bekhol-hakkikkar, ‘anywhere in the plain’, names the kikkar, the Jordan plain that Lot chose for himself because it was well watered (13:10-11). The land of his choosing is now the place he must not stop.",
+      "words": ["H4422", "H5315H", "H5027", "H3603H", "H2022G"],
+      "refs": ["Genesis 13:10-11", "Luke 9:62", "Luke 17:31-32", "Philippians 3:13-14"]
+    },
+    {
+      "v": "18-20",
+      "context": "Lot objects. He thanks the angels for sparing him, says he cannot reach the mountains in time, and asks to go to a small town nearby instead. Even in rescue he bargains.",
+      "grammar": "Lot says al-na adonay, ‘oh no, my lords’ (or ‘my Lord’; the Masoretes again pointed it as the divine title), and acknowledges chasdekha, ‘your kindness’, using chesed, the word for faithful, loyal love. Pen-tidbaqani hara'ah, ‘lest the disaster cling to me’, uses davaq, ‘to cling’, the verb of a man clinging to his wife in 2:24. His request turns on a pun: the town is mits'ar, ‘a small thing’, and ‘is it not small?’ anticipates its name, Tso'ar (Zoar), explained in verse 22. Utechi nafshi, ‘so that my life may live’, ends the plea with his own survival.",
+      "words": ["H0136", "H2617A", "H1692", "H4705", "H2421"],
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "Lot's plea echoes Abraham's intercession in form, with its polite formulas and its bargaining, but its subject is only himself. The contrast shows what chapter 18 is about: Abraham asked for others."
+        }
+      ],
+      "refs": ["Genesis 18:24-32", "Genesis 2:24", "Genesis 14:2"]
+    },
+    {
+      "v": "21-22",
+      "context": "The angel grants Lot's request, spares the small town, and urges him to hurry, since nothing can be done until he arrives. The name Zoar is explained from Lot's words.",
+      "grammar": "Nasati faneykha, ‘I have lifted your face’, is an idiom for granting someone's request or showing them favor (1 Samuel 25:35, Job 42:8-9). Levilti hofki, ‘so as not to overthrow’, is the first appearance in the chapter of hafakh, ‘to overthrow’, the key verb of the judgment (verses 25, 29). Lo ukhal la'asot davar, ‘I cannot do anything’, is striking: the judgment itself waits on the rescue of the one man for whom it was delayed. Al-ken qara shem-ha'ir Tso'ar, ‘therefore the name of the city was called Zoar’, is a standard naming formula.",
+      "words": ["H5375Q", "H6440N", "H2015", "H3201", "H6820"],
+      "history": "Zoar, earlier called Bela (14:2), survives the destruction and later appears as a town at the edge of Moab (Isaiah 15:5, Jeremiah 48:34). Deuteronomy 34:3 names it as the southern limit of the view Moses saw from Mount Nebo.",
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "‘I cannot do anything until you reach it’ shows the principle Abraham appealed to in 18:25 at work: the Judge of all the earth will not sweep away the righteous with the wicked. The fire waits until Lot is safe."
+        }
+      ],
+      "refs": ["1 Samuel 25:35", "Job 42:8-9", "Isaiah 15:5", "Deuteronomy 34:3"]
+    },
+    {
+      "v": "23-24",
+      "context": "As the sun rises and Lot enters Zoar, the LORD rains sulfur and fire on Sodom and Gomorrah. The rescue and the judgment happen in the same moment.",
+      "grammar": "Verse 24 opens with the subject, vaYHWH, and the verb himtir, ‘he caused to rain’, a Hiphil of the verb used for rain in the flood (7:4). The divine name then appears a second time: me'et YHWH min-hashshamayim, ‘from the LORD out of the heavens’. Hebrew often repeats a name where English would use a pronoun, and most interpreters read the phrase as emphasis: the fire came from the LORD himself, from heaven. Some early Christian writers, including Justin Martyr in the second century, read the two mentions as distinguishing two divine persons.",
+      "words": ["H4305", "H1614", "H0784", "H3068G", "H8064"],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "Sulfur and fire become Scripture's standard image of divine judgment, from Psalm 11:6 and Ezekiel 38:22 to the lake of fire in Revelation (Revelation 20:10, 21:8). Jesus uses this day to warn of the suddenness of his coming (Luke 17:29-30)."
+        },
+        {
+          "id": "trinity",
+          "note": "The Trinitarian reading of verse 24 has an ancient history in Christian interpretation, but most modern commentators, Christian and Jewish, see a Hebrew stylistic repetition. The doctrine of the Trinity rests on the New Testament, not on this verse."
+        }
+      ],
+      "refs": ["Luke 17:29-30", "Psalm 11:6", "Ezekiel 38:22", "Revelation 20:10", "Deuteronomy 29:23"]
+    },
+    {
+      "v": "25",
+      "context": "The destruction is total: the cities, the whole plain, every inhabitant, and everything that grew. The garden-like valley of 13:10 is gone.",
+      "grammar": "Vayyahafokh, ‘and he overthrew’, uses hafakh, ‘to turn over’. The prophets turn it into a fixed phrase for total ruin, ‘as when God overthrew Sodom and Gomorrah’ (Amos 4:11, Isaiah 13:19, Jeremiah 50:40). Tsemach ha'adamah, ‘the growth of the ground’, answers 13:10, where the plain was ‘well watered, like the garden of the LORD’.",
+      "words": ["H2015", "H3603H", "H3427", "H6780", "H0127G"],
+      "history": "The region at the south end of the Dead Sea is among the most barren places in the Near East, with salt flats and deposits of sulfur and bitumen. Deuteronomy 29:23 describes a land ‘burned out with sulfur and salt, nothing planted, nothing sprouting’ as the example Israel knew.",
+      "refs": ["Genesis 13:10", "Deuteronomy 29:23", "Amos 4:11", "Lamentations 4:6", "Isaiah 13:19"]
+    },
+    {
+      "v": "26",
+      "context": "Lot's wife, walking behind him, looks back and becomes a pillar of salt. She has left the city but not in her heart.",
+      "grammar": "Vattabbet ishto me'acharav, ‘his wife looked from behind him’, uses the verb of the command in verse 17, al-tabbit, ‘do not look’, so the narrator marks her act as disobedience. Me'acharav, ‘from behind him’, places her trailing Lot. Netsiv melach, ‘a pillar of salt’, uses netsiv, a standing post or column.",
+      "words": ["H5027", "H0310A", "H5333", "H4417M"],
+      "history": "Josephus, the first-century Jewish historian, claims to have seen the pillar in his own day. Salt formations on Mount Sedom at the southwest corner of the Dead Sea have long been pointed out to travelers as Lot's wife; no particular formation can be identified with the one in the text.",
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Her look is not curiosity alone but attachment. Jesus's warning, ‘Remember Lot's wife’, is given in the context of not turning back for possessions when the Son of Man comes (Luke 17:31-33)."
+        }
+      ],
+      "refs": ["Luke 17:31-33", "Genesis 19:17", "Luke 9:62"]
+    },
+    {
+      "v": "27-28",
+      "context": "Abraham rises early and goes back to the place where he pleaded with the LORD. He looks down on the plain and sees smoke rising like smoke from a furnace. He learns the answer to his prayer: there were not ten.",
+      "grammar": "Vayyashkem Avraham babboqer, ‘Abraham rose early in the morning’, is the phrase used again when he sets out to sacrifice Isaac (22:3). El-hammaqom asher amad sham, ‘to the place where he had stood’, refers back to 18:22. Vayyashqef, ‘he looked down’, is the verb the visitors used when they looked toward Sodom in 18:16. Qitor hakkivshan, ‘smoke of a kiln’, uses kivshan, a furnace for firing pottery or lime; Exodus 19:18 uses the same word for the smoke on Sinai.",
+      "words": ["H7925", "H4725", "H8259", "H7008", "H3536"],
+      "refs": ["Genesis 18:16", "Genesis 18:22", "Exodus 19:18", "Revelation 9:2", "Revelation 18:9"]
+    },
+    {
+      "v": "29",
+      "context": "The narrator sums up the whole event from God's side: when God destroyed the cities, he remembered Abraham and brought Lot out. Lot's rescue is the answer to Abraham's intercession, though not in the form Abraham asked.",
+      "grammar": "Vayyizkor Elohim et-Avraham, ‘God remembered Abraham’, repeats the exact wording of 8:1, ‘God remembered Noah’, with the name changed. In both stories God's remembering turns the tide of a judgment. Vayshallach, ‘he sent out’, is a Piel of shalach. Mittokh hahafekhah bahafokh, ‘from the midst of the overthrow when he overthrew’, uses both the noun and the verb of hafakh together, a Hebrew way of stressing the event.",
+      "words": ["H2142", "H7843", "H7971G", "H2018", "H2015"],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "Lot is saved for Abraham's sake. The verse shows God's mercy reaching one person because of his covenant with another, a pattern the New Testament fulfills when believers are saved for the sake of Christ."
+        },
+        {
+          "id": "prayer",
+          "note": "Abraham never asked for Lot by name, and ten righteous men were not found. God still answered the heart of the prayer, that the righteous not be swept away with the wicked."
+        }
+      ],
+      "refs": ["Genesis 8:1", "Genesis 18:23", "Exodus 2:24", "2 Peter 2:7"]
+    },
+    {
+      "v": "30",
+      "context": "Lot leaves Zoar out of fear and settles with his daughters in a cave in the mountains, the very mountains he said he could not reach (verse 19). The man who once chose the best land ends in a cave.",
+      "grammar": "Ki yare lashevet beTso'ar, ‘for he was afraid to live in Zoar’, gives the motive with ki and the verb yare, ‘to fear’. Bamme'arah, ‘in the cave’, has the definite article, as if it were a known place. The verb yashav, ‘to dwell’, appears twice in the verse; the Lot who ‘was living in Sodom’ (14:12) now ‘lives in the cave’.",
+      "words": ["H3372G", "H3427", "H4631", "H6820"],
+      "refs": ["Genesis 13:10-11", "Genesis 14:12", "Genesis 19:19"]
+    },
+    {
+      "v": "31-32",
+      "context": "The older daughter proposes that they make their father drunk and conceive by him to preserve his line, since, she says, there is no man in the land for them.",
+      "grammar": "Ve'ish ein ba'arets lavo aleinu, ‘there is no man in the land to come in to us’, may reflect the belief that the whole world had been destroyed, as in the flood, or simply that no one would marry the daughters of a man who fled Sodom. Kederekh kol-ha'arets, ‘as is the way of all the earth’, appeals to ordinary custom. Nashqeh, ‘let us make drink’, is the Hiphil of shaqah, ‘to give drink’. Unechayyeh me'avinu zara, ‘that we may keep offspring alive from our father’, uses zera, the word for offspring that has carried the promise to Abraham.",
+      "words": ["H1067", "H6810", "H8248H", "H2421", "H2233H"],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Lot's daughters use the language of preserving offspring, the language of God's promise, for a plan God later forbids (Leviticus 18:6-7). The scene recalls Noah's drunkenness after the flood (9:20-27): rescue from judgment does not remove the sin within the rescued family."
+        }
+      ],
+      "refs": ["Genesis 9:20-27", "Leviticus 18:6-7", "Genesis 38:14-18"]
+    },
+    {
+      "v": "33-35",
+      "context": "On two successive nights the daughters make their father drunk and each lies with him, and each time he does not know. The narrative repeats the pattern almost word for word.",
+      "grammar": "The refrain velo yada beshikhvah uvequmah, ‘and he did not know when she lay down or when she rose’, uses yada once more. The men of Sodom wanted to ‘know’ the guests (verse 5); Lot ‘did not know’ what his daughters did. The repetition across verses 33 and 35 gives the scene a flat, deliberate rhythm, recording without comment.",
+      "words": ["H8248H", "H1067", "H7901I", "H3045", "H6965B"],
+      "text": "In the standard Hebrew text of verse 33, a letter in uvequmah, ‘and when she rose’, carries a special scribal dot, one of about ten such dotted places in the Torah. Rabbinic interpretation took it to hint that Lot was aware when she rose; the dot's original purpose is uncertain, and it does not affect the translation.",
+      "refs": ["Genesis 9:21", "Proverbs 20:1", "Habakkuk 2:15"]
+    },
+    {
+      "v": "36-38",
+      "context": "Both daughters conceive, and their sons become the ancestors of Moab and Ammon. The narrator writes ‘to this day’, from a time when both were known nations east of the Jordan.",
+      "grammar": "Mo'av sounds like me'av, ‘from father’, and the Septuagint, the ancient Greek translation, adds a line making the explanation explicit. Ben-ammi means ‘son of my kin’ (am here in its sense of ‘paternal relative’), and it anticipates the Ammonites, benei Ammon. Ad-hayyom, ‘to this day’, marks the narrator's own time.",
+      "words": ["H4124H", "H1151", "H5983", "H1067", "H6810"],
+      "history": "Moab lay east of the Dead Sea and Ammon to its northeast, with its capital at Rabbah (modern Amman in Jordan). Israel's relations with both were long and mixed. God gave both peoples their land ‘to the descendants of Lot’ and forbade Israel to take it (Deuteronomy 2:9, 19), yet Moabites and Ammonites were barred from the assembly for their hostility (Deuteronomy 23:3-4). Ruth the Moabite became the great-grandmother of David (Ruth 4:17), and Naamah the Ammonite was the mother of King Rehoboam (1 Kings 14:21).",
+      "theology": [
+        {
+          "id": "providence",
+          "note": "Two nations are born from a shameful act, and God still assigns them lands and limits (Deuteronomy 2:9, 19). The chapter ends with God's rule reaching even the peoples whose beginning Israel remembered with embarrassment."
+        }
+      ],
+      "refs": ["Deuteronomy 2:9", "Deuteronomy 2:19", "Deuteronomy 23:3-4", "Ruth 4:17", "1 Kings 14:21"]
+    }
+  ]
+}

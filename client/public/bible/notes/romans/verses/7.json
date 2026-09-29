@@ -1,0 +1,285 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "Paul picks up 6:14 (‘you are not under law’) and explains how a believer can be released from the law without the law being set aside as bad. He begins with a principle his readers would grant: law governs a person only while he lives. The principle comes straight from 6:7, where death frees from sin's claim.",
+      "grammar": "E agnoeite (‘or do you not know’) links back to 6:3, where the same words introduced baptism into Christ's death; the two arguments run in parallel. Ginoskousin gar nomon lalo, ‘for I speak to those who know law’, has no article, and interpreters divide over whether Paul means the law of Moses, which many Gentile believers in Rome would have learned in the synagogue, or law in general, including Roman law. The example that follows fits both. Kyrieuei (‘has authority over’, ‘lords it over’) is the verb used of sin and death in 6:9 and 6:14, a hint that the law, holy as it is, had become part of the regime from which believers are freed. Anthropou (‘a person’) is general, not ‘a man’ as opposed to a woman.",
+      "words": ["G0050", "G1097", "G3551", "G2961", "G0444"],
+      "theology": [
+        {
+          "id": "law",
+          "note": "The verse limits the law's jurisdiction to this life. Paul will argue that believers died with Christ (verse 4), so the law's claim as a regime over them has ended, though its holiness and goodness remain (verse 12)."
+        }
+      ],
+      "refs": ["Romans 6:14", "Romans 6:7", "Galatians 2:19", "Galatians 3:23-25"]
+    },
+    {
+      "v": "2-3",
+      "context": "The illustration: a wife is legally bound to her husband while he lives; if he dies, she is free to marry another man without being an adulteress. The point is simple, that death changes legal obligation. The analogy is loose, since in the application it is the believer, not the law, who dies, and Paul does not try to make every detail fit.",
+      "grammar": "Hypandros gyne, ‘a woman under a man’, is a legal term for a married woman, found in the Septuagint (Numbers 5:20, 29; Proverbs 6:24). Dedetai (‘is bound’) is a perfect passive: she is in a settled state of obligation. Katergetai apo tou nomou tou andros, ‘she is released from the law of the husband’, uses katargeo, the verb of 6:6 (‘rendered powerless’): the law regarding her husband no longer has effect on her. In verse 3 chrematisei (‘she will be called’) is a verb used of public designation, even of official titles, so ‘adulteress’ is her legal name. The conditions use ean with the aorist subjunctive (ean apothane, ‘if he should die’), the ordinary way of stating a general case.",
+      "words": ["G5220", "G1210", "G2673", "G5537", "G3428"],
+      "history": "Jewish and Roman law agreed that a married woman was bound to her husband for his lifetime. In Jewish law only the husband could issue a divorce (Deuteronomy 24:1-4), and the Mishnah states the principle Paul relies on almost exactly: a woman acquires her freedom in two ways, by a bill of divorce or by her husband's death (m. Qiddushin 1:1). Roman law allowed either spouse to divorce, but Paul's example concerns what death does, not divorce, and his readers in either legal system would have agreed with it.",
+      "theology": [
+        {
+          "id": "family",
+          "note": "Paul uses marriage as an illustration, not to teach about divorce or remarriage, but the example assumes that marriage binds for life and that the death of a spouse frees the other to remarry. He says the same in 1 Corinthians 7:39."
+        }
+      ],
+      "refs": ["1 Corinthians 7:39", "Deuteronomy 24:1-4", "Mark 10:11-12", "Matthew 5:32"]
+    },
+    {
+      "v": "4",
+      "context": "‘Therefore’ applies the illustration. Believers died to the law through the body of Christ, that is, through sharing in his death on the cross. The purpose is not freedom for its own sake but a new marriage: to belong to the risen Christ and bear fruit for God.",
+      "grammar": "Ethanatothete, ‘you were put to death’, is an aorist passive from thanatoo, not the simple ‘you died’; it stresses that the death was done to them in Christ's execution. Dia tou somatos tou Christou (‘through the body of Christ’) most likely refers to his crucified body, the means of their death to the law, not to the church, which Paul calls the body of Christ elsewhere (12:5). Eis to genesthai hymas hetero, ‘so that you might become another's’, uses the language of verse 3, where the widow ‘becomes’ another man's wife. Karpophoresomen (‘that we might bear fruit’), an aorist subjunctive of purpose, extends the marriage picture to offspring; some commentators think Paul means simply the fruit of a transformed life (6:22). The shift from ‘you’ to ‘we’ includes Paul with his readers.",
+      "words": ["G2289", "G4983", "G1096", "G2087", "G2592"],
+      "theology": [
+        {
+          "id": "union",
+          "note": "Union with Christ is pictured as marriage. Believers are joined to the risen Christ as a wife to a husband, a theme Paul develops in 2 Corinthians 11:2 and Ephesians 5:25-32, and which the prophets used for God and Israel (Hosea 2:19-20)."
+        },
+        {
+          "id": "law",
+          "note": "Believers died ‘to the law’, not the law to them. The law is not abolished; the believer's relationship to it as a regime has ended through Christ's death, so that obedience now springs from belonging to Christ."
+        }
+      ],
+      "refs": ["Galatians 2:19-20", "2 Corinthians 11:2", "Ephesians 5:25-32", "Colossians 1:10", "Hosea 2:19-20"]
+    },
+    {
+      "v": "5-6",
+      "context": "These two verses state the argument of the rest of chapters 7 and 8 in miniature. Verse 5 (life ‘in the flesh’ when the law aroused sinful passions) is unfolded in 7:7-25; verse 6 (the new way of the Spirit) is unfolded in 8:1-17. The contrast is between two eras, ‘when we were’ and ‘but now’.",
+      "grammar": "Hote gar hemen en te sarki, ‘when we were in the flesh’, uses sarx not for the physical body but for existence in the old age, human life apart from God's Spirit and dominated by sin; Paul can say in 8:9 that believers are no longer ‘in the flesh’, though they plainly still have bodies. Ta pathemata ton hamartion ta dia tou nomou, ‘the passions of sins that came through the law’, makes the law the channel through which sinful passions were aroused, a claim so bold that verse 7 must defend it. Energeito is an imperfect middle (‘were continually at work’). In verse 6 nyni de (‘but now’) marks the new era. Katergethemen (‘we were released’) repeats the verb of verse 2. The final contrast, en kainoteti pneumatos kai ou palaioteti grammatos, literally ‘in newness of Spirit and not in oldness of letter’, uses two abstract nouns in balance; gramma (‘letter’, ‘written code’) is the law as external, written demand.",
+      "words": ["G4561", "G3804", "G3551", "G1754", "G2673", "G2538", "G4151G", "G3821", "G1121"],
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "The ‘new way of the Spirit’ is the first mention of the Spirit since 5:5, and it announces the theme of chapter 8. The contrast between letter and Spirit echoes 2:29 and 2 Corinthians 3:6, and behind them the promise of a new covenant written on the heart (Jeremiah 31:33, Ezekiel 36:27)."
+        },
+        {
+          "id": "sin",
+          "note": "Paul says the law's command, meeting a person in the flesh, stirred sinful passions rather than curbing them. Sin uses even good commands as fuel, a point verses 7-13 will develop."
+        }
+      ],
+      "text": "The King James Version's ‘that being dead wherein we were held’ follows a reading in which the law, not the believer, has died. The reading followed by modern translations, ‘having died to that by which we were held’, has far stronger support and matches verse 4, where it is the believer who dies.",
+      "refs": ["2 Corinthians 3:6", "Romans 2:29", "Jeremiah 31:33", "Romans 8:8-9", "Galatians 5:16-18"]
+    },
+    {
+      "v": "7",
+      "context": "Verse 5 has invited a charge: if the law aroused sin, is the law itself sin? Paul rejects it and begins a defense of the law that runs to verse 13. The law is not sin, but it made sin known. Here, for the first time, Paul shifts to ‘I’, the first person singular that will dominate the rest of the chapter.",
+      "grammar": "Ho nomos hamartia, ‘the law is sin?’, is a blunt question expecting a strong denial, and me genoito gives it. Alla (‘but’, BSB ‘Indeed’) can be read as strongly adversative (‘on the contrary, I would not have known sin except through the law’) or as concessive (‘yet it is true that...’); the second reading fits Paul's defense of the law better, conceding the law's role while denying it is evil. Ouk egnon, an aorist (‘I would not have come to know’), is paired with ouk edein, a pluperfect of oida (‘I would not have known’); the two verbs are probably not sharply distinguished. The quotation, ouk epithymeseis, is a future indicative used as a prohibition, the standard Septuagint form for the commandments. The noun epithymia (‘desire’, ‘coveting’) is a neutral word in Greek, used of good desires too (Philippians 1:23), but here it names desire turned toward what God has forbidden.",
+      "words": ["G3551", "G0266", "G1097", "G1492I", "G1939", "G1937"],
+      "history": "Jewish writers close to Paul's time also treated the tenth commandment as the root of all the others. 4 Maccabees, a Jewish work probably from the first century AD, argues that reason can master desire and cites the law's command not to covet as proof (4 Maccabees 2:4-6). The Apocalypse of Moses, a Jewish retelling of the story of Adam and Eve, has Eve say that the serpent poured desire into the fruit and that desire is the root of every sin (Apocalypse of Moses 19:3). Philo of Alexandria gives the command against desire extended treatment in On the Decalogue and The Special Laws, book 4. Paul's choice of this commandment belongs to that tradition.",
+      "theology": [
+        {
+          "id": "law",
+          "note": "The law's first work here is revelation: it names sin for what it is. Paul does not say the law creates sin, but that without the command he would not have recognized his desire as sin. This is what Reformation theology called the law's second or theological use, to expose sin and drive the sinner to grace."
+        },
+        {
+          "id": "humanity",
+          "note": "The ‘I’ that begins here is one of the most debated figures in the Bible. The main readings are autobiography (Paul recalling his own experience), Adam (the first man meeting the first command), Israel (the nation receiving the law at Sinai), and a representative ‘I’ standing for anyone under the law. Werner Georg Kümmel's Römer 7 und die Bekehrung des Paulus (1929) argued that the ‘I’ is a rhetorical form and not autobiography, and his view reshaped modern study. Ernst Käsemann heard Adam most clearly in verses 7-13; Douglas Moo, in his commentary (New International Commentary, 1996), reads Paul speaking in solidarity with Israel at Sinai; many hold that Paul's own experience and Adam's story are both present."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Exodus 20:17",
+          "note": "The tenth commandment (repeated in Deuteronomy 5:21). The Hebrew lo tachmod uses chamad, ‘desire’, ‘covet’, and lists the objects: a neighbor's house, wife, servants, ox, donkey, or anything else. The Septuagint renders the verb ouk epithymeseis in both places, and Paul quotes exactly those two Greek words while leaving out every object. The effect is to make the command a ban on wrongful desire as such, which suits his point that the law reaches the inner life, where no outward observance can hide sin. Deuteronomy's version uses a second verb (titavveh, ‘crave’) for the neighbor's house and field, which the Septuagint again renders with epithymeseis."
+        }
+      ],
+      "refs": ["Exodus 20:17", "Deuteronomy 5:21", "Romans 3:20", "Romans 4:15", "Galatians 3:19"]
+    },
+    {
+      "v": "8",
+      "context": "Paul explains how the law revealed sin: not by being evil but by being used. Sin, pictured almost as an active enemy, took the command as its starting point and produced every kind of desire. Without the law sin was ‘dead’, present but dormant and unrecognized.",
+      "grammar": "Aphormen labousa, ‘having taken an opportunity’, uses aphorme, a word for a starting point or base of operations, often in military contexts (a bridgehead); it recurs in verse 11. Sin is the subject, and the command is only the occasion. Kateirgasato (‘produced’, ‘worked out’) is an aorist of katergazomai, a verb Paul uses six times in this chapter for what sin achieves and what the ‘I’ does. Pasan epithymian (‘every kind of desire’) shows the prohibition multiplying the very thing it forbids. Choris gar nomou hamartia nekra has no verb in Greek, as often in maxims: ‘for without law, sin (is or was) dead’. ‘Dead’ here means inactive, not nonexistent (5:13 said sin was in the world before the law).",
+      "words": ["G0874", "G2983", "G1785", "G2716", "G1939", "G3498"],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Paul describes sin as a power that uses what is good for evil ends. The command does not create the desire; it gives a sinful heart the occasion to rebel, the pattern Augustine explored in the stolen pears of his Confessions (book 2), where the thrill lay in the prohibition itself."
+        }
+      ],
+      "refs": ["Romans 5:13", "Romans 5:20", "1 Corinthians 15:56", "James 1:14-15", "Genesis 3:6"]
+    },
+    {
+      "v": "9-10",
+      "context": "Paul tells a short story in the past tense: I was alive once without the law; the command came; sin revived and I died; the command meant for life brought death. The story fits Adam in the garden closely, fits Israel at Sinai, and fits a person's own awakening to God's demand, which is why the identity of the ‘I’ is debated.",
+      "grammar": "Ego de ezon choris nomou pote, ‘I was living once without law’, uses the imperfect ezon for a continuing state. If this is Paul's autobiography, when was a Jewish boy ever ‘without law’? Some answer: before the age of moral responsibility; others take it as a sign that the ‘I’ is Adam, who lived before the command of Genesis 2:17, or Israel before Sinai. Elthouses de tes entoles (‘but when the command came’) is a genitive absolute, marking the moment. Anezesen, from anazao, can mean ‘came back to life’ or simply ‘sprang to life’; if the first, it may hint that sin already lived and now revived. Apethanon (‘I died’) is the verdict. In verse 10 heurethe moi, ‘was found for me’ or ‘proved to be’, introduces the irony: the command eis zoen (‘for life’) proved eis thanaton (‘for death’).",
+      "words": ["G2198", "G4218", "G2064", "G1785", "G0326", "G0599", "G2147"],
+      "theology": [
+        {
+          "id": "humanity",
+          "note": "Read with Adam in view, the verses retell Genesis 2-3: a man alive in God's presence, a single command, sin's entrance, and death. Read as Israel, they tell of Sinai, where the law given for life (Leviticus 18:5) became, through sin, a ministry of death (2 Corinthians 3:7). On any reading the verses show that knowing the command does not give the power to keep it."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Leviticus 18:5",
+          "note": "‘The commandment that was meant to bring life’ echoes the promise of Leviticus 18:5, that the person who does God's statutes will live by them. The Hebrew reads asher yaaseh otam haadam vachai bahem, ‘which a person does and lives by them’; the Septuagint renders it closely with zesetai en autois (‘will live by them’). Paul quotes the verse directly in Romans 10:5 and Galatians 3:12. In Leviticus it is a covenant promise to a redeemed people, and Ezekiel repeats it (Ezekiel 20:11, 13, 21). Paul does not deny the promise; he says sin turned its fulfillment into death for the one who could not keep it."
+        }
+      ],
+      "refs": ["Leviticus 18:5", "Genesis 2:16-17", "2 Corinthians 3:6-7", "Deuteronomy 30:15-20", "Ezekiel 20:11"]
+    },
+    {
+      "v": "11",
+      "context": "‘For’ explains verse 10. The death did not come from the command but from sin, which used the command to deceive and then to kill. Verse 11 repeats the wording of verse 8 and adds deception, the detail that most clearly recalls the serpent in Eden.",
+      "grammar": "The sentence repeats aphormen labousa dia tes entoles (‘seizing an opportunity through the command’) from verse 8 and then adds two aorist verbs: exepatesen me (‘deceived me’) and apekteinen (‘killed’). Exapatao, a strengthened form of apatao, is the word Paul uses for the serpent's deception of Eve (2 Corinthians 11:3, 1 Timothy 2:14). The phrase di autes (‘through it’) repeats that the command was the instrument, not the killer. The word order puts sin first, as the subject that acts on the ‘I’ at every step.",
+      "words": ["G0874", "G1785", "G1818", "G0615"],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Sin works by deception: it takes a good command and makes it look like a threat to life or a withholding of good, as the serpent did with God's word in Genesis 3:1-5. The verse locates the lie in sin, not in the law."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Genesis 3:13",
+          "note": "Eve's words, ‘the serpent deceived me’, use the Hebrew hishshiani, from nasha, ‘deceive’, ‘beguile’. The Septuagint renders it ho ophis epatesen me, and Paul's exepatesen me (‘deceived me’) uses the strengthened compound of the same verb, as he does when he speaks of Eve in 2 Corinthians 11:3. The echo is verbal, not a formal quotation, but together with ‘command’ (Genesis 2:16-17) and ‘death’ it makes Adam's story the most likely backdrop of verses 7-11."
+        }
+      ],
+      "refs": ["Genesis 3:13", "2 Corinthians 11:3", "Hebrews 3:13", "Ephesians 4:22"]
+    },
+    {
+      "v": "12-13",
+      "context": "Verse 12 gives the conclusion of Paul's defense: the law is holy, and the command is holy, righteous, and good. Verse 13 answers the last form of the objection: did the good thing become death to me? No. Sin produced death through what was good, and in doing so exposed itself as utterly sinful.",
+      "grammar": "Verse 12 begins with men (‘on the one hand’) and no answering de (‘on the other hand’); the expected contrast (‘but sin...’) arrives only in verse 13 or in the whole of verses 14-25. Three adjectives describe the command: hagia (holy, belonging to God), dikaia (righteous, just in what it requires), and agathe (good, beneficial in its purpose). In verse 13 hina phane hamartia, ‘in order that sin might appear’ or ‘be exposed’, uses a purpose clause: God's purpose in the law's work was to unmask sin. Kath hyperbolen hamartolos, ‘sinful beyond measure’, uses hyperbole (‘excess’) in an adverbial phrase Paul favors (2 Corinthians 4:17). Sin is so sinful that it uses God's own good gift to kill.",
+      "words": ["G3551", "G0040G", "G1342", "G0018", "G5316", "G5236", "G0268"],
+      "theology": [
+        {
+          "id": "law",
+          "note": "The strongest affirmation of the law in Paul's letters. Whatever Christians conclude about ‘not under law’, this verse forbids treating the law of Moses as defective or bad. The problem Paul diagnoses is sin, not Torah."
+        },
+        {
+          "id": "sin",
+          "note": "The law makes sin visible in its true character. Sin that turns a holy command into an instrument of death shows itself as rebellion against God, not merely a moral failing."
+        }
+      ],
+      "text": "Where most editions read egeneto (‘did it become’, aorist), the Textus Receptus has gegone (perfect, ‘has it become’). The difference does not affect translation.",
+      "refs": ["Psalm 19:7-11", "Psalm 119:137-138", "1 Timothy 1:8", "Romans 5:20", "Galatians 3:21"]
+    },
+    {
+      "v": "14",
+      "context": "The verb tense changes: from here to the end of the chapter Paul speaks in the present. The law is spiritual, from God's Spirit and fit for spiritual people; the ‘I’ is fleshly, sold as a slave under sin. This verse opens the most debated passage in Paul: does he describe himself as a Christian, or life under the law without the Spirit?",
+      "grammar": "Oidamen (‘we know’) introduces something Paul expects his readers to accept. Pneumatikos (‘spiritual’) describes the law as having its origin and character from God's Spirit. Against it stands ego de sarkinos eimi, ‘but I am fleshly’. Sarkinos strictly means ‘made of flesh’, while sarkikos (the Textus Receptus reading here) means ‘fleshly’ in character; Paul does not always keep them apart (1 Corinthians 3:1-3 uses both). Pepramenos hypo ten hamartian, ‘having been sold under sin’, is a perfect passive participle from piprasko, the verb used for selling slaves: a completed transaction whose results remain. This is the phrase on which the pre-conversion reading leans hardest, because 6:17-18 said believers have been set free from sin's slavery.",
+      "words": ["G6063", "G3551", "G4152", "G4560", "G4097"],
+      "theology": [
+        {
+          "id": "humanity",
+          "note": "The question of the present-tense ‘I’ divides faithful readers. The early Greek interpreters, and Augustine in his early work on Romans (the Propositions, about 394), held that Paul spoke for a person under the law, not a Christian. Augustine later changed his mind, in his writings against the Pelagians (Against Two Letters of the Pelagians, about 421) and his Retractations, concluding that ‘I delight in God's law’ (verse 22) could be said only by a renewed person; Luther (Lectures on Romans, 1515-1516), who saw here the believer at once righteous and sinner, and Calvin (commentary, 1540) followed, as did C. E. B. Cranfield and James Dunn, who reads the passage as the tension of a believer living between the ages. Jacobus Arminius wrote a treatise defending the pre-conversion reading; John Wesley saw a person awakened by the law but not yet freed; Kümmel (1929), Moo, and many others read it as life under the law seen in hindsight from faith."
+        }
+      ],
+      "text": "Most editions read sarkinos; the Textus Receptus, and so the King James Version's ‘carnal’, reflects sarkikos. The meanings overlap closely here.",
+      "refs": ["1 Corinthians 3:1-3", "Romans 6:17-18", "1 Kings 21:25", "Galatians 5:17", "Philippians 3:6"]
+    },
+    {
+      "v": "15-16",
+      "context": "Paul describes the inner split: I do not understand my own actions; what I want, I do not do, and what I hate, I do. Verse 16 draws a surprising conclusion from the failure. If I do what I do not want, my own will is agreeing with the law that it is good. Even the conflict vindicates the law.",
+      "grammar": "Ho gar katergazomai ou ginosko, ‘for what I accomplish, I do not know’, likely means ‘I do not approve’ or ‘I do not understand’, since ginosko can carry the sense of acknowledging. Paul uses three verbs for doing with little difference in meaning: katergazomai (‘accomplish’), prasso (‘practice’), and poieo (‘do’). The key contrast is between thelo (‘I want’, ‘I will’) and miso (‘I hate’). In verse 16 symphemi to nomo, ‘I agree with the law’, is a verb of consenting: the ‘I’ sides with the law against its own act. Kalos (‘good’, ‘fine’) is a different word from verse 12's agathos and often has the sense of morally beautiful or noble.",
+      "words": ["G2716", "G1097", "G2309", "G4238", "G3404", "G4160G", "G4852", "G2570G"],
+      "history": "Greek and Roman readers knew this experience well. In Euripides' Medea (lines 1078-1080) Medea says she understands the evil she is about to do but her passion is stronger than her reasoning, and Ovid gives her the famous line about seeing and approving the better course while following the worse (Metamorphoses 7.20-21). The Stoic Epictetus argued that every wrongdoer is caught in a contradiction, since he does not do what he wants and does what he does not want (Discourses 2.26.1-4). Paul's readers would have recognized the theme, but his diagnosis is different: not passion overpowering reason, but sin living in a person and using even God's law.",
+      "theology": [
+        {
+          "id": "humanity",
+          "note": "The verses show a will that genuinely wants the good and is not able to carry it out. Whatever the identity of the ‘I’, Paul denies that right knowledge and good intentions are enough to make a person good."
+        }
+      ],
+      "refs": ["Galatians 5:17", "Romans 2:18", "Psalm 119:97", "Matthew 26:41"]
+    },
+    {
+      "v": "17",
+      "context": "Paul draws the conclusion from verses 15-16: since the ‘I’ agrees with the law, the wrongdoing must come from another source, sin that lives within. He is not denying responsibility; he is identifying the power at work.",
+      "grammar": "Nyni de, ‘but now’ or ‘so then’, is here logical, not temporal as in verse 6. Ouketi ego katergazomai auto, ‘it is no longer I who do it’, uses ouketi (‘no longer’) in a logical sense: given what has been said, the act can no longer be simply attributed to the ‘I’ that wills the good. He oikousa en emoi hamartia, ‘the sin dwelling in me’, uses oikeo (‘dwell’, ‘inhabit’), the same verb Paul uses of the Spirit dwelling in believers in 8:9 and 8:11. Two indwellers, sin and the Spirit, are set against each other across the two chapters.",
+      "words": ["G3570", "G2716", "G3611", "G0266"],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Sin is an indwelling power, not only a series of acts. Paul is not excusing himself; he is explaining why the law, which addresses the will, cannot cure a problem that lies deeper than the will. The cure will be another indweller, the Spirit (8:9-11)."
+        }
+      ],
+      "refs": ["Romans 8:9-11", "Romans 7:20", "Galatians 2:20", "Jeremiah 17:9"]
+    },
+    {
+      "v": "18",
+      "context": "‘For’ explains the sin that dwells within: nothing good dwells in me, that is, in my flesh. Paul immediately qualifies the ‘me’ by ‘my flesh’, leaving room for a better part of the self that wants the good. The problem is the gap between wanting and doing.",
+      "grammar": "Tout estin en te sarki mou, ‘that is, in my flesh’, is a correction: Paul does not say there is nothing good in him at all but nothing good in his flesh. Sarx here is human existence under sin's power, not the physical body as such. To gar thelein parakeitai moi, ‘for to will is present with me’, uses parakeimai (‘lie at hand’, ‘be ready’), repeated in verse 21 of evil lying close by. The final clause, to de katergazesthai to kalon ou, is abrupt: ‘but to accomplish the good, not’. Many manuscripts supply a verb to complete it.",
+      "words": ["G6063", "G3611", "G4561", "G2309", "G3873", "G2716", "G2570G"],
+      "theology": [
+        {
+          "id": "humanity",
+          "note": "‘Nothing good dwells in me, that is, in my flesh’ is a key text for the doctrine that sin affects every part of fallen human nature, which Reformed theology calls total depravity (meaning not that people are as bad as they could be, but that no part of them is untouched). Paul still speaks of a willing self distinct from the flesh."
+        }
+      ],
+      "text": "The King James Version's ‘how to perform that which is good I find not’ follows manuscripts that add the verb heurisko (‘I find’) to complete the sentence. The shorter text, ‘but I cannot carry it out’, is older and was probably filled out by scribes.",
+      "refs": ["Genesis 6:5", "Jeremiah 17:9", "Galatians 5:17", "Philippians 2:13"]
+    },
+    {
+      "v": "19-20",
+      "context": "Paul restates verses 15 and 17 almost word for word, as if the ‘I’ keeps circling the same trap. The good it wants, it does not do; the evil it does not want, it does. The conclusion is repeated as well: the one doing it is sin living within.",
+      "grammar": "Verse 19 reverses verse 15's order and names the objects: ou gar ho thelo poio agathon, alla ho ou thelo kakon touto prasso, ‘for the good I want I do not do, but the evil I do not want, this I practice’. The demonstrative touto (‘this’) points emphatically at the evil. The BSB's ‘I keep on doing’ reflects the present tense of prasso, which suits a continuing pattern, though the present tense alone does not prove repetition. Verse 20 repeats verse 17's formula with the conditional ei de (‘but if’), making the conclusion a logical inference.",
+      "words": ["G2309", "G4160G", "G0018", "G2556G", "G4238", "G3611"],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "The repetition itself teaches: resolve alone produces the same failure again and again. Paul is preparing for the cry of verse 24, which looks for rescue from outside the self."
+        }
+      ],
+      "refs": ["Romans 7:15-17", "Galatians 5:17", "Isaiah 64:6"]
+    },
+    {
+      "v": "21",
+      "context": "Paul sums up what he has found as a rule of experience: when I want to do good, evil is right there. The word ‘law’ now begins to be used in more than one sense, preparing for the contrast of laws in verses 22-23 and 8:2.",
+      "grammar": "Heurisko ara ton nomon, ‘so I find the law’, is disputed. Ton nomon may mean ‘the principle’ or ‘the rule’ (as the BSB takes it, ‘this is the principle I have discovered’), a use of nomos for a regular pattern. Others, including some who read the whole chapter as about the Mosaic law, take ‘the law’ as the law of Moses: ‘I find, with respect to the law, that when I want to do good, evil lies close at hand’. The Greek word order is awkward either way, since to thelonti emoi poiein to kalon (‘to me wanting to do the good’) stands before the hoti clause it belongs to. Parakeitai repeats verse 18: evil ‘lies at hand’ just as willing did.",
+      "words": ["G2147", "G3551", "G2309", "G2570G", "G2556G", "G3873"],
+      "theology": [
+        {
+          "id": "law",
+          "note": "If nomos here is the law of Moses, Paul is saying that even with God's law in hand, evil stands ready. If it means a principle, he is naming a law of experience that competes with God's law. Either way, having God's law does not remove the problem."
+        }
+      ],
+      "refs": ["Romans 8:2", "Genesis 4:7", "Galatians 5:17"]
+    },
+    {
+      "v": "22-23",
+      "context": "The conflict is now named as war. In the inner person, the ‘I’ delights in God's law; in its members, another law fights the law of the mind and takes the ‘I’ prisoner. Two powers claim one person, and the one that holds the body is winning.",
+      "grammar": "Synedomai to nomo tou theou, ‘I rejoice with the law of God’, is a strong verb of delight found only here in the New Testament; it recalls the psalmists' delight in God's law (Psalm 1:2, 119:16). Kata ton eso anthropon, ‘according to the inner person’, is the self as known to God and conscience, used also in 2 Corinthians 4:16 and Ephesians 3:16, both of believers, which the post-conversion reading cites. Verse 23 heaps up military terms: heteron nomon (‘another law’), antistrateuomenon (‘waging war against’), aichmalotizonta (‘taking prisoner’), the word for capturing prisoners of war. To nomo tou noos mou, ‘the law of my mind’, is probably God's law as the mind acknowledges it. To nomo tes hamartias, ‘the law of sin’, is sin exercising authority like a rival law.",
+      "words": ["G4913", "G3551", "G2080", "G0444", "G0497", "G3563", "G0163", "G3196"],
+      "theology": [
+        {
+          "id": "humanity",
+          "note": "The ‘inner person’ who delights in God's law is the strongest evidence for the reading that Paul describes a believer; the captivity to sin's law is the strongest evidence against it. The verses leave the reader in the tension on purpose, so that the cry of verse 24 is felt."
+        },
+        {
+          "id": "sin",
+          "note": "Sin is a rival authority, a ‘law’ that operates in the body and takes the person captive. Paul's picture is of a person not merely tempted but held prisoner."
+        }
+      ],
+      "text": "The Textus Receptus lacks the preposition en before ‘the law of sin’ (‘captive to the law of sin’ rather than ‘captive in the law of sin’). The difference is slight, and English translations render both the same way.",
+      "refs": ["Psalm 1:2", "Psalm 119:16", "2 Corinthians 4:16", "Galatians 5:17", "James 4:1"]
+    },
+    {
+      "v": "24",
+      "context": "The argument breaks into a cry. The ‘I’ names its own condition, wretched, and asks who will rescue it from this body of death. The question asks ‘who’, not ‘how’: rescue must come from a person outside the self.",
+      "grammar": "Talaiporos ego anthropos, ‘wretched man that I am’, uses talaiporos (‘miserable’, ‘distressed’), found elsewhere in the New Testament only in Revelation 3:17. There is no verb in Greek; the words are an exclamation. Tis me rhysetai, ‘who will rescue me’, uses rhyomai, a verb used for God's deliverance in the Psalms and in 11:26 of the Deliverer from Zion. The future tense looks for a rescue not yet complete. Ek tou somatos tou thanatou toutou can be read ‘from this body of death’ (toutou with ‘body’, as the BSB) or ‘from the body of this death’ (toutou with ‘death’, as the King James Version). Either way ‘body’ means bodily existence under sin and death, not the physical body as a prison for the soul, an idea foreign to Paul, who expects the body's redemption (8:23).",
+      "words": ["G5005", "G0444", "G4506", "G4983", "G2288"],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "The cry marks the end of self-help. Salvation here is rescue by another, and the future tense points toward the redemption of the body described in 8:11 and 8:23."
+        }
+      ],
+      "refs": ["Romans 8:23", "Romans 11:26", "2 Corinthians 5:4", "Psalm 116:3-8", "Colossians 1:13"]
+    },
+    {
+      "v": "25",
+      "context": "The answer comes as a thanksgiving before any explanation: rescue comes from God through Jesus Christ. Then, surprisingly, Paul restates the conflict: with the mind I serve God's law, with the flesh the law of sin. The explanation of the thanksgiving waits for chapter 8.",
+      "grammar": "Charis de to theo, ‘but thanks be to God’, is abrupt; the de (‘but’) marks the turn from lament. The sentence has no verb and does not directly answer ‘who?’, though dia Iesou Christou tou kyriou hemon (‘through Jesus Christ our Lord’) implies the answer. Verse 25b begins ara oun, ‘so then’, a strong marker of conclusion, and autos ego, ‘I myself’, stressing the same ‘I’ in both service and captivity. The men... de (‘on the one hand... on the other’) construction balances to noi (‘with the mind’) and te sarki (‘with the flesh’). The order is a puzzle: why restate the conflict after the thanksgiving? Those who read the passage as describing a believer take 25b as the honest summary of Christian life between rescue begun and rescue complete; others read it as a summary of verses 14-24 placed after an anticipatory shout of thanks. Rudolf Bultmann argued in 1947 that 25b was a gloss, but no manuscript omits or moves it.",
+      "words": ["G5485", "G2316", "G3563", "G1398", "G4561", "G3551"],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "Thanksgiving comes before explanation. Paul answers the cry of verse 24 with God's act in Jesus Christ, and chapter 8 will show how: no condemnation, the Spirit's life, and the promised redemption of the body."
+        }
+      ],
+      "text": "The opening words vary in the manuscripts. Modern editions read ‘but thanks be to God’ (charis de to theo); the Textus Receptus reads ‘I thank God’ (eucharisto to theo), as in the King James Version; others have ‘thanks be to God’ without ‘but’, or ‘the grace of God’. All agree that the rescue is credited to God through Jesus Christ.",
+      "refs": ["1 Corinthians 15:57", "2 Corinthians 2:14", "Romans 8:1-4", "Galatians 5:16-17", "Romans 6:17"]
+    }
+  ]
+}

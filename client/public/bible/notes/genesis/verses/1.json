@@ -1,0 +1,369 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "The Bible's first sentence names the actor, the act, and the whole scope of it before anything else happens. \"The heavens and the earth\" is a Hebrew way of saying everything, the way English says \"from top to bottom\". The rest of the chapter unfolds how God made this everything livable and full.",
+      "grammar": "The first word, bereshit (\"in the beginning\"), has no definite article in Hebrew, and that small fact produces the chapter's most famous translation question. Most English Bibles read the verse as a complete statement. Some Jewish interpreters, notably the medieval commentator Rashi, and some modern translations (the Jewish Publication Society's 1985 version and the NRSV) read it as a time clause, ‘When God began to create the heavens and the earth’, leading into verse 2 or 3. The missing article does not decide the question by itself, since time phrases of this kind commonly lack it (Isaiah 46:10 has mereshit, ‘from the beginning’, with none). The real issue is whether reshit is in the construct form, ‘the beginning of’, standing before a finite verb, which is unusual but attested (Hosea 1:2 opens with techillat dibber, literally ‘the beginning of the LORD spoke’, meaning ‘when the LORD first spoke’). On the other side, every ancient version (the Greek Septuagint, the Aramaic Targums, and the Latin Vulgate) reads verse 1 as an independent sentence, and so does the Masoretic text, whose accent on the first word is a disjunctive mark that sets it apart rather than binding it to what follows. Both readings remain grammatically defensible. The subject, Elohim, is plural in form, but the verb bara (\"created\") is singular: when Elohim means Israel's God, the Hebrew consistently pairs it with singular verbs, so the plural is usually explained as a plural of majesty or fullness, not a plurality of gods.",
+      "words": [
+        "H7225G",
+        "H1254A",
+        "H0430G"
+      ],
+      "theology": [
+        {
+          "id": "creation",
+          "note": "The verse puts God before and outside everything that exists. Read as a full sentence, it says the universe has a beginning and that God is its cause; read as a time clause, it still makes God the one who acts on the world. Either way nothing in heaven or earth shares his status."
+        },
+        {
+          "id": "god",
+          "note": "Scripture opens without an argument for God's existence. It introduces him by what he does, which is how the whole Bible will go on to make him known."
+        }
+      ],
+      "refs": [
+        "John 1:1-3",
+        "Hebrews 11:3",
+        "Psalm 33:6",
+        "Revelation 4:11"
+      ]
+    },
+    {
+      "v": "2",
+      "context": "Verse 2 describes the condition before God's first word: an earth not yet shaped for life, in darkness, under deep water. It sets up the two problems the six days answer, emptiness and lack of form, and it puts God's Spirit already present over the waters before the first command.",
+      "grammar": "\"Formless and void\" translates tohu wavohu, a rhyming pair. Tohu elsewhere describes a trackless wasteland (Deuteronomy 32:10), and the pair returns in Jeremiah 4:23, where Jeremiah sees the land after judgment as creation undone. The verb for the Spirit's movement, merachefet (\"hovering\"), is a Piel participle, describing ongoing action; the same verb pictures an eagle hovering over its young in Deuteronomy 32:11. Ruach can mean spirit, wind, or breath, so some translations read ‘a wind from God’. The participle and the phrase \"of God\" fit a personal presence better than a passing storm, which is why most translations read \"the Spirit of God\".",
+      "words": [
+        "H8414",
+        "H0922",
+        "H7363B",
+        "H7307G"
+      ],
+      "history": "The word for \"the deep\", tehom, is related to the Akkadian word for the sea, tiamtu, which also gives the name of the sea goddess Tiamat in the Babylonian Enuma Elish. Most scholars now think the two words share a common Semitic root rather than Genesis borrowing the Babylonian name. The difference in use is plain: in Babylon the sea was a goddess to be killed; here it is water, with no personality and no power to resist.",
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "The Spirit's first appearance in Scripture is at creation, present and active over what is not yet ordered. The Old Testament later speaks of the Spirit giving life (Psalm 104:30), a thread the New Testament picks up when it speaks of the Spirit's work of new creation."
+        }
+      ],
+      "refs": [
+        "Jeremiah 4:23",
+        "Deuteronomy 32:11",
+        "Psalm 104:30",
+        "Job 33:4"
+      ]
+    },
+    {
+      "v": "3-5",
+      "context": "The first day. God speaks, light exists, God evaluates it as good, divides it from darkness, and names both. That sequence (speech, fulfillment, evaluation, separation, naming) sets the pattern the rest of the chapter repeats with variations.",
+      "grammar": "\"Let there be light, and there was light\" uses the same verb twice, first as a jussive command (yehi, \"let it be\") and then as a narrative past (vayehi, \"and it was\"). The echo is the point: the fulfillment matches the command word for word, with nothing between them. Verse 5 closes with yom echad, literally \"day one\", using the cardinal number, where the following days use ordinals (second, third). Many commentators think the cardinal marks this as the first day of all.",
+      "words": [
+        "H1961",
+        "H0216",
+        "H0259"
+      ],
+      "history": "Readers from the earliest centuries noticed that light appears on the first day and the sun only on the fourth. Some ancient and modern interpreters take this as a sign that the chapter arranges God's works by theme rather than strict sequence; others see light created apart from its later sources. The chapter itself is plainly more interested in who gives light than in how light works.",
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "God creates by speaking. The first thing Scripture shows about God's word is that it is effective: it does what it says. That conviction stands behind the prophets' \"Thus says the LORD\" and John's description of Christ as the Word."
+        },
+        {
+          "id": "creation",
+          "note": "God names the day and the night. In the ancient world naming expressed authority, so even darkness, which neighboring peoples feared, has its name and place from God."
+        }
+      ],
+      "refs": [
+        "2 Corinthians 4:6",
+        "Psalm 33:9",
+        "John 1:4-5",
+        "Isaiah 45:7"
+      ]
+    },
+    {
+      "v": "6-8",
+      "context": "The second day. God separates the waters above from the waters below by an expanse and names it sky. This is the only day on which the text does not say that God saw it was good, perhaps because the work of dividing the waters is only finished on day three.",
+      "grammar": "The expanse is raqia, from a verb (raqa) used for hammering metal into thin sheets (Exodus 39:3) and for spreading out the ground (Isaiah 42:5). Scholars disagree about what the image implies. Some argue it reflects the ancient picture of a solid dome holding back waters above; others hold that the language describes the sky as it appears to an observer, as people still speak of the sun rising. The word does not settle the debate on its own, since etymology does not fix a word's meaning in use.",
+      "words": [
+        "H7549",
+        "H0914"
+      ],
+      "history": "Peoples across the ancient Near East pictured the cosmos with waters above the sky and below the earth. Genesis speaks within that picture, and later Hebrew poetry keeps it (Psalm 148:4 calls on the waters above the heavens to praise God). The teaching of the chapter is not the shape of the sky but its maker.",
+      "refs": [
+        "Psalm 148:4",
+        "Psalm 19:1",
+        "Isaiah 42:5"
+      ],
+      "text": "The standard Hebrew text has no \"God saw that it was good\" for the second day. The Septuagint, the ancient Greek translation, includes it after verse 8, probably to make the pattern complete. The shorter Hebrew is almost certainly original, since a scribe was far more likely to add the refrain than to remove it."
+    },
+    {
+      "v": "9-10",
+      "context": "The third day, first part. God gathers the waters so that dry land appears, and names the land and the seas. The waters, which neighboring stories personified as chaos, are simply moved to the place God assigns.",
+      "grammar": "The verbs are passive (Niphal): the waters \"be gathered\" and the dry land \"appear\". The waters do nothing on their own initiative; they are acted on. The same idea of God setting a boundary for the sea is developed in Job 38:8-11 and Psalm 104:6-9.",
+      "words": [
+        "H6960B",
+        "H7200G",
+        "H3004"
+      ],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The sea stays within the limits God sets. Later Scripture uses this as a picture of God's continuing rule over every power that threatens life (Psalm 104:9, Jeremiah 5:22), and the Gospels show Jesus rebuking the wind and the sea."
+        }
+      ],
+      "refs": [
+        "Job 38:8-11",
+        "Psalm 104:6-9",
+        "Jeremiah 5:22",
+        "Mark 4:39-41"
+      ]
+    },
+    {
+      "v": "11-13",
+      "context": "The third day, second part. The land produces plants and fruit trees, each carrying seed. The day ends with God's approval and the evening and morning refrain. Life that can reproduce itself is now built into the earth.",
+      "grammar": "The earth is the grammatical subject of the growing: \"let the earth bring forth\" is a Hiphil, a causative form, so the land is made to produce. The earth is not divine, but it is given a real role under God's command. The phrase lemino, \"according to its kind\", appears ten times in the chapter, beginning here, stressing order and distinction within the living world. It returns in the flood story (Genesis 6:20) and the food laws (Leviticus 11).",
+      "words": [
+        "H1876",
+        "H3318M",
+        "H4327"
+      ],
+      "theology": [
+        {
+          "id": "creation",
+          "note": "God does not make a finished, static world but a fruitful one, with seed carrying life forward. Creation has its own God-given capacities, which is why Scripture can praise God both for making the world and for sustaining its seasons."
+        }
+      ],
+      "refs": [
+        "Genesis 8:22",
+        "Psalm 104:14",
+        "Acts 14:17"
+      ]
+    },
+    {
+      "v": "14-15",
+      "context": "The fourth day begins by stating the lights' purposes before they are made: to divide day from night, to mark time, and to give light on the earth. Day four fills the realm formed on day one.",
+      "grammar": "The word for lights, meorot, is the ordinary word for a lamp or light source; elsewhere the same word names the light of the tabernacle lampstand (Exodus 25:6). \"Seasons\" translates moadim, which usually means appointed times, especially Israel's festivals (Leviticus 23:2). So the sky is set up, among other things, as a calendar for worship.",
+      "words": [
+        "H3974",
+        "H4150G"
+      ],
+      "history": "In Babylon and Egypt the heavenly bodies were gods and their movements were read as omens. Genesis gives them jobs: to shine and to keep time. Israel's law later forbids worshiping the sun, moon, and stars (Deuteronomy 4:19), and the prophets condemn it when it happens (2 Kings 23:5, Jeremiah 8:2).",
+      "theology": [
+        {
+          "id": "idolatry",
+          "note": "By describing the lights as tools that serve the earth, the verse removes them from the list of things to be feared or worshiped. The first lesson against idolatry comes before any command against it."
+        }
+      ],
+      "refs": [
+        "Deuteronomy 4:19",
+        "Leviticus 23:2",
+        "Psalm 104:19",
+        "Jeremiah 31:35"
+      ]
+    },
+    {
+      "v": "16-19",
+      "context": "God makes the two great lights and the stars, sets them in the sky, and gives them their tasks. The fourth day closes with approval and the refrain.",
+      "grammar": "The sun and moon are called only \"the greater light\" and \"the lesser light\". The ordinary Hebrew words for sun and moon, shemesh and yareach, were also names or near names of gods in the region, and the text avoids them. Their task is expressed with memshalah (\"to rule\", or \"dominion\") and in verse 18 the verb mashal: they govern day and night, a delegated rule that anticipates the rule given to humanity in verse 26. The stars get two Hebrew words, almost an afterthought.",
+      "words": [
+        "H3974",
+        "H4475",
+        "H4910",
+        "H3556"
+      ],
+      "theology": [
+        {
+          "id": "sovereignty",
+          "note": "The great lights rule, but only because God set them in place and assigned them their work. Throughout Scripture authority in creation is derived authority, given by God and answerable to him."
+        }
+      ],
+      "refs": [
+        "Psalm 136:7-9",
+        "Psalm 8:3",
+        "Isaiah 40:26"
+      ]
+    },
+    {
+      "v": "20-23",
+      "context": "The fifth day fills the sea and the sky formed on day two. For the first time creatures are blessed and told to multiply. The day ends with the refrain.",
+      "grammar": "Verse 21 uses bara (\"created\") for the first time since verse 1, with the great sea creatures, the tanninim, as its object. Elsewhere tannin can name a sea monster that stands for chaos or a hostile power (Psalm 74:13, Isaiah 27:1). Here the text uses the heavier verb precisely for the creatures others feared, to say that God made them too. The phrase nefesh chayyah, \"living creature\", first appears here for animals; Genesis 2:7 will use the same phrase of the man.",
+      "words": [
+        "H1254A",
+        "H8577N",
+        "H5315K"
+      ],
+      "history": "Canaanite texts from Ugarit (on the coast of modern Syria, written down around the thirteenth century BC) tell of the god Baal defeating the sea god and a sea monster called Lotan, the name that corresponds to the Hebrew Leviathan. Old Testament poetry sometimes borrows that imagery to celebrate God's power (Psalm 74:13-14). Genesis 1 does not stage a battle at all: the monster is a creature God makes and blesses.",
+      "theology": [
+        {
+          "id": "creation",
+          "note": "God's blessing on animals shows that his care reaches beyond humanity. Scripture later has the sea creatures praising God (Psalm 148:7) and Jesus saying that not one sparrow falls apart from the Father (Matthew 10:29)."
+        }
+      ],
+      "refs": [
+        "Psalm 74:13-14",
+        "Psalm 104:25-26",
+        "Psalm 148:7",
+        "Job 41:1"
+      ]
+    },
+    {
+      "v": "24-25",
+      "context": "The sixth day begins with land animals: livestock, creeping things, and wild animals, each after its kind. God approves them before turning to humanity, which the text will treat differently.",
+      "grammar": "As with the plants, the land is told to \"bring forth\" (a Hiphil of yatsa) the animals, and then verse 25 says God made them. The two statements belong together: the earth produces, and God is the maker. The three categories (behemah, domestic animals; remes, creeping things; chayyat haarets, wild animals) cover the land creatures an Israelite farmer knew.",
+      "words": [
+        "H3318M",
+        "H0929",
+        "H7431",
+        "H2416C"
+      ],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "Creation works through secondary causes, the earth bringing forth, without ceasing to be God's direct work. The Bible sees no rivalry between saying that the land produces life and saying that God makes it."
+        }
+      ],
+      "refs": [
+        "Psalm 104:24",
+        "Job 12:7-10"
+      ]
+    },
+    {
+      "v": "26",
+      "context": "The rhythm changes. Instead of \"Let there be\" or \"Let the earth\", God speaks in the first person plural, decides to make humanity in his image and likeness, and states their purpose in the same breath: to rule over the other creatures.",
+      "grammar": "Naaseh (\"let us make\") is a first person plural. Interpreters have explained it in four main ways: a plural of majesty, though Hebrew kings don't clearly speak this way elsewhere; God addressing his heavenly court, as in 1 Kings 22:19-22 and Isaiah 6:8; a plural of self-deliberation, as a person might say \"let's see\"; and, from the early church onward, a first hint of plurality within God, read in light of the Trinity. Verse 27 switches back to the singular (\"He created\"), so the one God remains the only creator. Tselem (\"image\") and demut (\"likeness\") overlap in meaning; most scholars think the pair reinforces one idea rather than naming two different things. The verb for rule, radah, is used for a king's reign (1 Kings 4:24) and is limited by the law, which forbids ruling over another harshly (Leviticus 25:43).",
+      "words": [
+        "H6213H",
+        "H0120G",
+        "H6754",
+        "H1823",
+        "H7287A"
+      ],
+      "history": "In the ancient Near East kings were sometimes called the image of a god, and a king's statue stood in conquered territory as a sign of his rule. An Aramaic inscription on a ninth century BC statue from Tell Fekheriye in Syria uses words related to both tselem and demut for the statue of a ruler. Genesis takes that royal language and gives it to humanity as a whole.",
+      "theology": [
+        {
+          "id": "image",
+          "note": "The verse introduces the image of God: humanity made in God's image and likeness, with rule over the creatures as its first expression. Christian theology has read the image as reason, as royal representation, as relationship, or as a combination; the verse's own emphasis falls on representation and vocation."
+        },
+        {
+          "id": "humanity",
+          "note": "Humanity alone is made after divine deliberation and in God's image. The verse defines human beings by their relation to God before anything else, and gives them a vocation: to represent God's rule over the world he made."
+        },
+        {
+          "id": "trinity",
+          "note": "The church fathers often read \"Let Us\" as a first glimpse of the Trinity. Most interpreters today agree the first readers would not have heard it that way, but many still think it fitting that the fuller revelation of Father, Son, and Spirit makes sense of the plural. The verse does not prove the doctrine; the doctrine rests on the New Testament."
+        }
+      ],
+      "refs": [
+        "Psalm 8:4-8",
+        "1 Kings 22:19-22",
+        "Isaiah 6:8",
+        "James 3:9"
+      ]
+    },
+    {
+      "v": "27",
+      "context": "The narrative breaks into poetry for the only time in the chapter. Three lines repeat the verb \"created\" and move from humanity as a whole to the image of God to male and female, stressing that both sexes equally bear God's image.",
+      "grammar": "Bara appears three times in this one verse, more than anywhere else in the chapter, and the lines are built as a tricolon with the key terms repeated and rearranged. Haadam here is collective, humankind, which is why the verse can say \"him\" in one line and \"them\" in the next. Zakhar and neqevah, \"male\" and \"female\", are the terms used of animals too, so the verse locates humanity's sexual difference in the created order, while placing the image of God in both.",
+      "words": [
+        "H1254A",
+        "H6754",
+        "H2145",
+        "H5347"
+      ],
+      "theology": [
+        {
+          "id": "image",
+          "note": "Both male and female bear the image. The verse makes the image the possession of humanity as such, which the New Testament later grounds in Christ, the image of the invisible God into whose likeness believers are renewed (Colossians 1:15, 3:10)."
+        },
+        {
+          "id": "humanity",
+          "note": "Man and woman bear God's image equally. Whatever else the image means, it cannot be restricted to one sex, one people, or one class, and the New Testament grounds respect for every person in it (James 3:9)."
+        },
+        {
+          "id": "family",
+          "note": "The distinction of male and female belongs to creation's goodness. Jesus quotes this verse, with Genesis 2:24, when he teaches on marriage (Matthew 19:4-6)."
+        }
+      ],
+      "refs": [
+        "Genesis 5:1-2",
+        "Matthew 19:4-6",
+        "Galatians 3:28",
+        "Colossians 3:10"
+      ]
+    },
+    {
+      "v": "28",
+      "context": "God blesses the humans and speaks to them directly. The sea creatures were blessed with commands in verse 22, but only here does the text add that God said this ‘to them’, marking humanity as the one creature God addresses as a partner. The blessing repeats the animals' command to multiply and adds the charge to subdue the earth and rule the living creatures.",
+      "grammar": "Five imperatives run in a row: be fruitful, multiply, fill, subdue, rule. Kavash (\"subdue\") is a strong verb, used for bringing land under control (Numbers 32:22, Joshua 18:1) and in other contexts for forcible subjection. Paired with radah and set under God's blessing, it describes bringing the earth into ordered, fruitful use, not permission to ruin it. The command is plural, given to both the man and the woman.",
+      "words": [
+        "H1288",
+        "H6509",
+        "H3533",
+        "H7287A"
+      ],
+      "theology": [
+        {
+          "id": "work",
+          "note": "Humanity's first commission is work: filling, cultivating, and ordering the earth. Work comes from the blessing before the fall, not from the curse after it. Genesis 2:15 restates it as working and keeping the garden."
+        },
+        {
+          "id": "humanity",
+          "note": "Dominion is exercised as God's image-bearers, so it has to reflect his character. Psalm 8 marvels at this calling, and Hebrews 2:5-9 says it finds its true fulfillment in Jesus."
+        }
+      ],
+      "refs": [
+        "Genesis 2:15",
+        "Genesis 9:1-2",
+        "Psalm 8:5-8",
+        "Hebrews 2:6-9"
+      ]
+    },
+    {
+      "v": "29-30",
+      "context": "God provides food: seed-bearing plants and fruit for humanity, green plants for the animals. The provision ends the sixth day's speech with generosity and describes a world without killing for food.",
+      "grammar": "Natati (\"I have given\") is a Hebrew perfect used, as grammarians call it, performatively: the speaking is the giving, like ‘I hereby give’. It opens with hinneh (\"behold\"), which draws attention to the gift. Verse 30 extends the phrase nefesh chayyah (\"the breath of life\" in the BSB) to every animal that receives food.",
+      "words": [
+        "H5414G",
+        "H2009",
+        "H0402"
+      ],
+      "history": "The first permission to eat meat comes after the flood (Genesis 9:3). Interpreters differ on whether Genesis 1 describes a world with no animal death at all or simply God's provision for humanity and beasts without addressing predation. Isaiah's pictures of the wolf living with the lamb (Isaiah 11:6-9, 65:25) echo this peaceable scene as a hope for the future.",
+      "theology": [
+        {
+          "id": "providence",
+          "note": "Before humanity does anything, God gives. The first word of provision in the Bible establishes that life is received as gift, the pattern Jesus teaches in the prayer for daily bread."
+        }
+      ],
+      "refs": [
+        "Genesis 9:3",
+        "Isaiah 11:6-9",
+        "Psalm 145:15-16",
+        "Matthew 6:11"
+      ]
+    },
+    {
+      "v": "31",
+      "context": "God surveys everything he has made and pronounces it very good. The sixth day ends, and the week's work stands complete, ready for the rest of the seventh day in Genesis 2:1-3.",
+      "grammar": "Vehinneh (\"and indeed\", literally \"and behold\") shifts the reader to God's point of view, as if seeing through his eyes. Tov meod, \"very good\", intensifies the refrain that has sounded six times before. The day is also marked differently: \"the sixth day\" has the definite article in Hebrew (yom hashishi), which days two to five lack, setting it apart as the climax, as the seventh day will be in 2:3.",
+      "words": [
+        "H2009",
+        "H2896A",
+        "H3966",
+        "H8345"
+      ],
+      "theology": [
+        {
+          "id": "creation",
+          "note": "The whole created order, material and embodied, is very good in God's sight. Paul draws on this when he rejects teachers who forbid marriage and foods, saying everything God created is good (1 Timothy 4:4)."
+        },
+        {
+          "id": "sin",
+          "note": "Because the world is declared very good, evil is not part of its original design. Genesis 3 will present sin and death as an intrusion, which is why the Bible's hope is for the healing of creation rather than escape from it."
+        }
+      ],
+      "refs": [
+        "1 Timothy 4:4",
+        "Genesis 2:1-3",
+        "Psalm 104:31",
+        "Revelation 21:5"
+      ]
+    }
+  ]
+}

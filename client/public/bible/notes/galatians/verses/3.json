@@ -1,0 +1,406 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "Paul turns from his own story (1:11-2:21) to the Galatians' experience with an outburst of alarm. They had seen Christ crucified set before them as plainly as a public notice, and yet someone has put them under a spell. The chapter's argument begins from the cross just proclaimed in 2:20-21.",
+      "grammar": "Ō anoētoi Galatai, ‘O foolish Galatians’: anoētos means lacking sense or understanding, not lacking intelligence; Paul uses the word again in verse 3. Tis humas ebaskanen, ‘who bewitched you?’, uses baskainō, the verb of the evil eye, the belief that an envious glance could harm or enchant. Proegraphē, aorist passive of prographō, can mean ‘written beforehand’ (Romans 15:4 uses it that way) or ‘publicly posted’, as a notice was displayed in the marketplace; kat' ophthalmous, ‘before your eyes’, favors the second. Estaurōmenos, ‘crucified’, is a perfect participle: Christ is proclaimed as the crucified one, whose death has lasting effect (compare 1 Corinthians 2:2).",
+      "words": ["G0453", "G1052", "G0940", "G3788", "G4270", "G4717"],
+      "history": "The name Galatians comes from Celtic tribes (Galatai, the Greek name for Gauls) who crossed into Asia Minor in the 270s BC and settled in the central highlands around Ancyra (modern Ankara). After the death of their last king, Amyntas, in 25 BC, Rome made their territory the core of a larger province of Galatia that also included southern cities such as Pisidian Antioch, Iconium, Lystra, and Derbe. Paul's address could fit either ethnic Galatians in the north or all the people of the province, which is why the North and South Galatian theories both remain in play.",
+      "text": "The Textus Receptus adds two phrases: ‘that ye should not obey the truth’ after ‘bewitched you’, and ‘among you’ after ‘before your eyes’, which is why the King James Version reads both. The earliest manuscripts lack them, and modern editions omit them; the first probably came in from 5:7.",
+      "refs": ["1 Corinthians 2:2", "Galatians 5:7", "Galatians 2:20-21", "Acts 16:6", "1 Corinthians 1:23"]
+    },
+    {
+      "v": "2",
+      "context": "Paul asks one decisive question. The Galatians received the Spirit at the start of their Christian life: did that happen because they did what the law requires, or because they heard the message and believed? The answer is obvious, since they were Gentiles who had not kept the law at all.",
+      "grammar": "Touto monon thelō mathein aph' humōn, ‘this only I want to learn from you’, frames a single question that settles the case. Ex ergōn nomou, ‘from works of the law’, repeats the phrase of 2:16. Ex akoēs pisteōs is compressed: akoē can mean the act of hearing or the thing heard, the message (as in Romans 10:16-17, quoting Isaiah 53:1), and pistis can be the hearers' faith or the faith proclaimed. So it can be ‘hearing with faith’, ‘the message of faith’, or, as Richard Hays proposed, ‘the proclamation that evokes faith’. In every reading the Spirit came through the gospel heard, not the law performed. Elabete, ‘you received’, is aorist: a definite past event they could remember.",
+      "words": ["G3129", "G2041", "G3551", "G4151G", "G2983", "G0189", "G4102G"],
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "The Spirit is the mark of belonging to God's people. Paul assumes the Galatians knew when they received the Spirit, and he makes that experience the evidence that they were already fully accepted before any law was imposed on them."
+        },
+        {
+          "id": "faith",
+          "note": "Faith comes by hearing. The Spirit was not a reward for religious achievement but the gift that came with believing the message about the crucified Christ."
+        }
+      ],
+      "refs": ["Romans 10:16-17", "Acts 10:44-47", "Acts 15:8-9", "Ephesians 1:13", "Galatians 4:6"]
+    },
+    {
+      "v": "3-4",
+      "context": "Two more questions press the point. Having begun by the Spirit, will they now try to reach completion by the flesh, that is, by circumcision and law-keeping? And have they experienced so much for nothing?",
+      "grammar": "Enarxamenoi pneumati nun sarki epiteleisthe, ‘having begun in (the) Spirit, are you now being completed in (the) flesh?’, sets two datives against each other, pneumati and sarki, and two verbs of beginning and completing. Epiteleisthe may be middle (‘are you finishing?’) or passive (‘are you being perfected?’). ‘Flesh’ here points to circumcision, a rite in the flesh (6:12-13), and to human effort generally. In verse 4 tosauta epathete eikē, ‘did you suffer so many things in vain?’: paschō usually means ‘to suffer’, but it can mean simply ‘to experience’, and some interpreters, noting the good experiences of verses 2 and 5, translate ‘have you experienced so much for nothing?’. Ei ge kai eikē, ‘if indeed it was in vain’, leaves room for hope.",
+      "words": ["G0453", "G1728", "G4151G", "G4561", "G2005", "G3958", "G1500"],
+      "history": "If the Galatian churches are the southern cities of Acts 13 and 14, their early suffering is documented: Paul and Barnabas were driven out of Pisidian Antioch (Acts 13:50), threatened in Iconium (14:5), and Paul was stoned at Lystra (14:19), after which he told the new disciples that through many hardships they must enter God's kingdom (14:22).",
+      "theology": [
+        {
+          "id": "sanctification",
+          "note": "The Christian life continues as it began. The Spirit who started the work is the one who completes it (Philippians 1:6), and growth does not switch to a different power source once a person is converted."
+        }
+      ],
+      "refs": ["Philippians 1:6", "Galatians 5:16-25", "Galatians 6:12-13", "Acts 14:19-22", "Hebrews 10:32-35"]
+    },
+    {
+      "v": "5",
+      "context": "The last question moves from past to present. God is still supplying the Spirit and working miracles among them: is that because of works of the law or the hearing of faith? The repeated phrase from verse 2 closes the series and prepares for Abraham.",
+      "grammar": "Oun, ‘so then’, resumes the question of verse 2. The two present participles, epichorēgōn, ‘the one who supplies’, and energōn, ‘the one who works’, describe God's ongoing action. Epichorēgeō originally referred to a wealthy citizen who funded the chorus for a public festival, and came to mean supplying generously. Dunameis, ‘powers’, is the usual New Testament word for miracles. The verse has no main verb; the Greek simply sets God's present work beside the two alternatives.",
+      "words": ["G3767", "G2023", "G4151G", "G1754", "G1411", "G0189", "G4102G"],
+      "theology": [
+        {
+          "id": "gifts",
+          "note": "Miracles were a present reality in the Galatian churches, and Paul attributes them to God's continuing supply of the Spirit to people of faith. The gifts are not earned by law-keeping; they flow from the same grace that justifies."
+        }
+      ],
+      "refs": ["Acts 14:3", "Acts 14:8-10", "1 Corinthians 12:10", "Philippians 1:19", "2 Corinthians 12:12"]
+    },
+    {
+      "v": "6",
+      "context": "Paul moves from the Galatians' experience to Scripture, and to the figure his opponents surely appealed to: Abraham. The Spirit came to the Galatians by faith, just as Abraham was counted righteous by believing God.",
+      "grammar": "Kathōs, ‘just as’, links the verse tightly to verse 5: God deals with the Galatians exactly as he dealt with Abraham. Episteusen tō theō, ‘he believed God’, is aorist with the dative: he trusted God's word. Elogisthē autō eis dikaiosunēn, ‘it was reckoned to him as righteousness’, uses logizomai, the verb for crediting an account, in the passive, God being the one who reckons.",
+      "words": ["G2531", "G0011", "G4100", "G3049", "G1343"],
+      "ot": [
+        {
+          "ref": "Genesis 15:6",
+          "note": "Paul quotes the Septuagint exactly, except for using the later name Abraham for the Abram of Genesis 15. The Hebrew, vehe'emin bYHWH vayyachsheveha lo tsedaqah, says Abram believed the LORD and he counted it to him as righteousness. In Genesis the setting is the promise of offspring as many as the stars, given to a childless old man, and it precedes both circumcision (Genesis 17) and the binding of Isaac (Genesis 22). The phrase ‘reckoned as righteousness’ also appears in Psalm 106:31 of Phinehas's zeal and, near the end of the Qumran text 4QMMT, of keeping the community's legal rulings; Paul's opponents probably read Abraham as the model of faithful obedience, circumcision included (compare Sirach 44:19-21, 1 Maccabees 2:52). Paul reads the verse in its own place in the story, before any of those deeds."
+        }
+      ],
+      "theology": [
+        {
+          "id": "justification",
+          "note": "Abraham is the proof that righteousness is reckoned, not achieved. What God counted to him was not a work but trust in God's promise, and that pattern, set before the law existed, becomes the pattern for Jew and Gentile alike."
+        }
+      ],
+      "refs": ["Genesis 15:5-6", "Romans 4:3", "Romans 4:9-12", "James 2:21-24", "Psalm 106:30-31"]
+    },
+    {
+      "v": "7",
+      "context": "Paul draws the first conclusion: the people of faith are Abraham's sons. The opponents likely told the Galatians that to become Abraham's children they must be circumcised as he was; Paul defines the family by faith.",
+      "grammar": "Ginōskete ara, ‘know then’, may be an imperative (‘understand, then’) or an indicative (‘you know, then’); the form is the same. Hoi ek pisteōs, literally ‘those of faith’, is a phrase Paul coins for people whose identity comes from faith, parallel to hoi ek peritomēs, ‘those of the circumcision’ (2:12). Houtoi, ‘these’, is emphatic: these, and not others, are Abraham's sons.",
+      "words": ["G1097", "G0686", "G4102G", "G5207", "G0011"],
+      "theology": [
+        {
+          "id": "israel",
+          "note": "Paul redefines Abraham's family around faith, as John the Baptist warned that God could raise children for Abraham from stones (Matthew 3:9). In Romans 4:11-12 and 9 to 11 he makes clear this does not cancel God's commitment to ethnic Israel; it opens Abraham's family to the nations."
+        }
+      ],
+      "refs": ["Romans 4:11-16", "Matthew 3:9", "John 8:39", "Romans 9:6-8", "Galatians 3:29"]
+    },
+    {
+      "v": "8-9",
+      "context": "Scripture itself foresaw that God would justify the Gentiles by faith, and so it announced the gospel in advance to Abraham in the promise that all nations would be blessed in him. So the people of faith are blessed with Abraham, the believer.",
+      "grammar": "Proidousa de hē graphē, ‘the Scripture, having foreseen’, personifies Scripture as a prophet who sees ahead, a way of speaking that treats the written word as God's own voice. Dikaioi, ‘justifies’, is present tense: God's way of justifying the Gentiles is a standing principle. Proeuēngelisato, ‘preached the gospel beforehand’, is a word found nowhere else in the New Testament; the gospel was already announced in Genesis. Eneulogēthēsontai, ‘will be blessed’, is future passive. In verse 9 sun tō pistō Abraam, ‘with believing Abraham’: pistos can mean ‘faithful’ or ‘believing’, and in context it means Abraham as the one who believed.",
+      "words": ["G4308", "G1124", "G1344", "G1484", "G4283", "G1757", "G2127", "G4103"],
+      "ot": [
+        {
+          "ref": "Genesis 12:3",
+          "note": "Paul's quotation combines two promises. ‘In you’ comes from Genesis 12:3, where the Septuagint reads ‘in you all the tribes of the earth will be blessed’, and ‘all the nations’ comes from Genesis 18:18 (compare 22:18, 26:4), where the Septuagint has panta ta ethnē. The Hebrew verb in 12:3 and 18:18, nivrekhu, is a Niphal, which can be read as passive (‘will be blessed’) or reflexive (‘will bless themselves’, that is, invoke Abraham's name in blessing); the Septuagint and Paul take it as passive, and so do most modern translations. In Genesis the promise answers the scattering of the nations at Babel (Genesis 11) by making one family the channel of blessing for all. Paul reads the Gentile mission as that promise being kept."
+        }
+      ],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "The covenant with Abraham was aimed at the nations from the start. Paul reads the promise of blessing for ‘all nations’ as the gospel in its first form, so that the inclusion of Gentiles is not a change of plan but the plan."
+        },
+        {
+          "id": "mission",
+          "note": "The mission to the Gentiles is rooted in God's first promise to Abraham, not invented by the church. The Scripture that foresaw the nations' blessing sets the direction for the whole story."
+        }
+      ],
+      "refs": ["Genesis 12:1-3", "Genesis 18:18", "Genesis 22:18", "Acts 3:25-26", "Romans 4:16-17"]
+    },
+    {
+      "v": "10",
+      "context": "The ‘for’ explains why only those of faith are blessed: those who rely on works of the law are under a curse. The law itself pronounces the curse on everyone who does not keep all that it commands.",
+      "grammar": "Hosoi ex ergōn nomou eisin, ‘as many as are of works of the law’, is the opposite of hoi ek pisteōs in verses 7 and 9: people whose standing rests on the law. Hupo kataran, ‘under a curse’, a phrase of power, like ‘under sin’ (verse 22) and ‘under the law’ (verse 23). Epikataratos, ‘cursed’, is the Septuagint's form for the curse formula of Deuteronomy. Emmenei, ‘remains in, continues in’, and pasin, ‘all things’, carry the weight: the curse falls on everyone who does not continue in all. The argument has an unstated premise, and interpreters supply it differently. The traditional reading, held by Luther, Calvin, and modern writers such as Thomas Schreiner, is that no one does keep all of it. N. T. Wright and James M. Scott argue that Israel as a nation was still under the covenant curse of exile announced in Deuteronomy 27 to 30. James Dunn reads the curse as falling on those who narrow the covenant to Jewish identity markers.",
+      "words": ["G2041", "G3551", "G2671", "G1125", "G1944", "G1696", "G0975", "G4160G"],
+      "ot": [
+        {
+          "ref": "Deuteronomy 27:26",
+          "note": "The Hebrew reads ‘cursed is he who does not confirm the words of this law by doing them’. The Septuagint adds ‘everyone’ (pas) and ‘all’ (pasin), ‘cursed is every person who does not remain in all the words of this law to do them’, and Paul follows that fuller form. He then replaces ‘the words of this law’ with ‘all things written in the book of the law’, a phrase from Deuteronomy 28:58 and 29:20 (29:19 in the Septuagint), where the curses of disobedience are spelled out. In Deuteronomy 27 the line is the last of twelve curses the Levites pronounce at Mount Ebal, to which the people answer amen; it sums up the whole law. Paul reads it as the law's own verdict on anyone who stands on it."
+        }
+      ],
+      "theology": [
+        {
+          "id": "law",
+          "note": "The law blesses obedience and curses disobedience, and it demands complete obedience. Paul's point is that the law, taken as the ground of standing before God, cannot deliver the blessing it promises to people who do not keep it."
+        }
+      ],
+      "refs": ["Deuteronomy 27:26", "Deuteronomy 28:15", "James 2:10", "Romans 3:19-20", "Galatians 5:3"]
+    },
+    {
+      "v": "11",
+      "context": "Paul adds a second proof from the Prophets. No one is justified before God by the law, as Habakkuk shows: the righteous one will live by faith. Verse 12 will explain why the law belongs to a different principle.",
+      "grammar": "En nomō oudeis dikaioutai para tō theō, ‘by the law no one is justified before God’: para with the dative means ‘in the judgment of’ God. Dēlon, ‘evident’, comes before or after the first hoti clause depending on punctuation, which yields either ‘that no one is justified... is evident, because the righteous will live by faith’ or ‘because no one is justified... it is evident that the righteous will live by faith’. In the quotation, ek pisteōs may go with ho dikaios, ‘the one who is righteous by faith will live’, a reading Anders Nygren and some modern translations have taken, or with zēsetai, ‘the righteous will live by faith’, which most follow. Zēsetai, ‘will live’, is future: life in the full sense God promises.",
+      "words": ["G3551", "G1344", "G3844", "G1212", "G1342", "G4102G", "G2198"],
+      "ot": [
+        {
+          "ref": "Habakkuk 2:4",
+          "note": "The Hebrew reads vetsaddiq be'emunato yichyeh, ‘but the righteous by his faithfulness shall live’: emunah means firmness, faithfulness, steady trust, and ‘his’ refers to the righteous person. The Septuagint reads ho de dikaios ek pisteōs mou zēsetai, ‘the righteous will live by my faithfulness’, God's own; some Septuagint manuscripts put ‘my’ with ‘righteous’. Paul, here and in Romans 1:17, gives the words without any pronoun, leaving faith as the principle. In Habakkuk the line answers the prophet's complaint about the coming Babylonian invasion: the vision will come, and meanwhile the righteous live by steadfast trust in God. The Qumran commentary on Habakkuk (1QpHab 7:17-8:3) applies it to those in Judah who keep the law, whom God will rescue because of their toil and their faithfulness to the Teacher of Righteousness. Hebrews 10:37-38 uses the verse again, following the Septuagint."
+        }
+      ],
+      "theology": [
+        {
+          "id": "justification",
+          "note": "Justification is ‘before God’, in his court, and Scripture itself says that life comes by faith. Paul reads Habakkuk's word to the faithful in a crisis as the principle of the whole relationship between God and his people."
+        }
+      ],
+      "refs": ["Habakkuk 2:2-4", "Romans 1:17", "Hebrews 10:37-39", "Romans 3:20", "Philippians 3:9"]
+    },
+    {
+      "v": "12",
+      "context": "The law operates on a different basis from faith. It says that the one who does its commands will live by them. Its principle is doing, and therefore it cannot be the way of justification by faith that Habakkuk describes.",
+      "grammar": "Ho de nomos ouk estin ek pisteōs, ‘the law is not of faith’: the law as a system does not rest on the principle of faith. This does not mean Paul thought faithful Israelites had no faith (he says the opposite of Abraham and David in Romans 4); it contrasts two ways of stating how life is obtained. All' ho poiēsas auta zēsetai en autois, ‘but the one who does them will live by them’: poiēsas is an aorist participle, ‘the one who has done’, and en autois can mean ‘by means of them’ or ‘in the sphere of them’.",
+      "words": ["G3551", "G4102G", "G4160G", "G2198"],
+      "ot": [
+        {
+          "ref": "Leviticus 18:5",
+          "note": "The Hebrew says that Israel is to keep God's statutes and rules, which if a person does, he shall live by them (vachay bahem). The Septuagint reads ha poiēsas anthrōpos zēsetai en autois, ‘which if a person does, he will live by them’; Paul drops ‘person’ and uses the same wording in Romans 10:5. In Leviticus 18 the promise introduces laws of sexual holiness that set Israel apart from Egypt and Canaan, and ‘live’ means a long and blessed life in the land. The line became a watchword in later Scripture (Nehemiah 9:29, Ezekiel 20:11, 13, 21), and the Damascus Document (CD 3:15-16) alludes to it. Interpreters differ on how Paul uses it: as a statement of the law's own terms, which no sinner meets, or as the way of life proper to the covenant under the law, now superseded by the coming of faith."
+        }
+      ],
+      "theology": [
+        {
+          "id": "law",
+          "note": "Paul contrasts the principle of the law (do and live) with the principle of faith (believe and live). The law's promise was real, but it rested on doing, and verse 10 has shown where that leaves those who fail to do."
+        }
+      ],
+      "refs": ["Leviticus 18:5", "Romans 10:5-6", "Nehemiah 9:29", "Ezekiel 20:11", "Luke 10:28"]
+    },
+    {
+      "v": "13",
+      "context": "The answer to the curse. Christ redeemed us from the law's curse by becoming a curse on our behalf, as Deuteronomy says of anyone hanged on a tree. The curse of verse 10 falls on Christ, so the blessing of verse 8 can reach the nations.",
+      "grammar": "Christos, ‘Christ’, stands first with no connecting particle, a deliberate abruptness. Exēgorasen, ‘he bought out, redeemed’, is the verb of buying something (or someone) out of another's possession; the same verb appears in 4:5. Genomenos huper hēmōn katara, ‘having become a curse for us’: the noun katara, ‘curse’, rather than the adjective ‘cursed’, is strong, as 2 Corinthians 5:21 says Christ was ‘made sin’. Huper hēmōn, ‘for us’, on our behalf. Whether ‘us’ means Jewish believers who were under the law, or all people, is debated; verse 14 extends the result to Gentiles.",
+      "words": ["G1805", "G2671", "G1096", "G5228", "G1944", "G2910", "G3586"],
+      "ot": [
+        {
+          "ref": "Deuteronomy 21:23",
+          "note": "The Hebrew says of an executed criminal whose body is hung on a tree that he must be buried the same day, ki qilelat elohim talui, ‘for a hanged man is a curse of God’ (either cursed by God or an affront to God). The Septuagint reads kekatēramenos hupo theou pas kremamenos epi xulou, ‘cursed by God is everyone hanging on a tree’. Paul changes the participle to epikataratos to match the curse of verse 10 and leaves out ‘by God’. In Deuteronomy the hanging followed death, but by Paul's day the text was applied to crucifixion: the Temple Scroll from Qumran (11QTemple 64:6-13) orders that a traitor be hanged on the tree so that he dies, and repeats that one hanged on a tree is cursed of God and men; the Nahum commentary (4QpNah 3-4 i 7-8) speaks with horror of hanging men alive, apparently the crucifixions by the Hasmonean king Alexander Jannaeus that Josephus reports (Antiquities 13.380). Acts 5:30 and 10:39 and 1 Peter 2:24 speak of Jesus hanged on a tree."
+        }
+      ],
+      "history": "The crucifixion of a messiah was an offense to Jewish hearers precisely because of this verse. In Justin Martyr's Dialogue with Trypho (chapters 89 and 90), written in the mid-second century, the Jewish Trypho grants that Scripture predicts a suffering Messiah but balks at one who died a death cursed in the law. Paul, a former persecutor, may once have used the same verse against the church; here he turns it into the heart of the gospel.",
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The curse that belonged to the law's transgressors fell on Christ, and he bore it ‘for us’. This is one of the plainest statements of substitution in Paul: the cross was an exchange of curse for blessing (verse 14)."
+        },
+        {
+          "id": "salvation",
+          "note": "Redemption is liberation by payment: Christ bought his people out of the curse. Paul's language of buying back (4:5) sets salvation in the vocabulary of freedom from slavery."
+        }
+      ],
+      "refs": ["2 Corinthians 5:21", "Acts 5:30", "1 Peter 2:24", "Galatians 4:4-5", "Deuteronomy 21:22-23"]
+    },
+    {
+      "v": "14",
+      "context": "The purpose of Christ's redeeming death is stated in two parallel clauses: that Abraham's blessing might reach the Gentiles in Christ Jesus, and that we might receive the promised Spirit through faith. The argument returns to where it began, the Spirit (verse 2).",
+      "grammar": "Two hina, ‘in order that’, clauses stand side by side; the second may explain the first (the blessing is the Spirit) or add to it. Eis ta ethnē, ‘to the Gentiles’, is placed early for emphasis. En Christō Iēsou, ‘in Christ Jesus’, is the sphere in which the blessing is given. Tēn epangelian tou pneumatos, ‘the promise of the Spirit’, is most naturally ‘the promised Spirit’, the Spirit who was promised (Joel 2:28, Ezekiel 36:26-27). Labōmen, ‘we might receive’, shifts to the first person plural, joining Jewish and Gentile believers.",
+      "words": ["G1484", "G2129", "G0011", "G1860", "G4151G", "G2983", "G4102G"],
+      "text": "A few Western manuscripts, among them P46 and Codex Claromontanus, read ‘the blessing of the Spirit’ instead of ‘the promise of the Spirit’, making the second clause echo the first. Most manuscripts and all modern editions read ‘promise’.",
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "The blessing promised to Abraham finds its content in the gift of the Spirit. The Spirit promised by the prophets for the last days comes to Gentiles as well as Jews, through faith, as the fruit of Christ's death."
+        },
+        {
+          "id": "covenant",
+          "note": "The Abrahamic blessing and the new-covenant Spirit (Ezekiel 36:26-27, Jeremiah 31:31-34) meet in Christ. Paul sees the covenants as one story, fulfilled in the same act."
+        }
+      ],
+      "refs": ["Ezekiel 36:26-27", "Joel 2:28-29", "Acts 2:33", "Ephesians 1:13-14", "Galatians 4:6"]
+    },
+    {
+      "v": "15",
+      "context": "Paul begins a new argument with a human analogy. Even a human covenant, once ratified, cannot be annulled or added to by anyone else. How much less can God's covenant with Abraham be changed by a law that came later.",
+      "grammar": "Kata anthrōpon legō, ‘I speak according to human practice’, marks an illustration from ordinary life. Homōs, usually ‘nevertheless’, here likely means ‘likewise’ or ‘even’. Diathēkē is the key word: in Greek it ordinarily meant a will or testament, but the Septuagint used it for God's covenant (Hebrew berit). Paul plays on both senses, as Hebrews 9:16-17 does. Kekurōmenēn, ‘ratified’, is a perfect passive participle; atheteō, ‘set aside’, returns from 2:21; epidiatassetai, ‘adds provisions’, found only here in the New Testament, means adding a codicil.",
+      "words": ["G0080", "G0444", "G2964", "G1242", "G0114", "G1928"],
+      "history": "Greek and Roman wills could in fact be changed by their makers, so interpreters ask what legal practice Paul had in mind. One suggestion is that he means that no third party can alter a will once it takes effect. Ernst Bammel proposed a Jewish legal form, a gift that took effect in the giver's lifetime and could not be revoked; others think Paul is simply drawing on the general principle that a ratified agreement binds. The illustration does not need to be exact to make his point: God's promise, once given and confirmed, is not amended by later legislation.",
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "God's covenant with Abraham was a ratified commitment. Paul argues from the character of such an arrangement that God does not revise his promises by adding new conditions after the fact."
+        }
+      ],
+      "refs": ["Hebrews 9:15-17", "Hebrews 6:13-18", "Genesis 15:17-18", "Romans 11:29"]
+    },
+    {
+      "v": "16",
+      "context": "The promises were made to Abraham and to his seed. Paul notes that Scripture says ‘seed’, not ‘seeds’, and identifies the one seed as Christ. The promise found its true recipient in the Messiah, and through him in all who belong to him (verse 29).",
+      "grammar": "Errethēsan hai epangeliai, ‘the promises were spoken’, plural: God repeated his promise to Abraham several times. Kai tō spermati autou, ‘and to his seed’, uses the dative singular of sperma. Ou legei kai tois spermasin... all' hōs eph' henos, ‘it does not say “and to seeds”, as of many, but as of one’. Paul knows sperma is a collective noun that can mean many descendants, and uses it that way in verse 29 and in Romans 4:18. His argument is not a grammatical mistake but a reading in which the collective ‘seed’ is summed up in one representative. Hos estin Christos, ‘who is Christ’: the relative pronoun is masculine, attracted to ‘Christ’, though sperma is neuter.",
+      "words": ["G0011", "G2046", "G1860", "G4690G", "G4183", "G1520", "G5547"],
+      "ot": [
+        {
+          "ref": "Genesis 22:17-18",
+          "note": "The phrase ‘and to your seed’ (Septuagint kai tō spermati sou) appears in the promises of Genesis 13:15, 17:8, and 24:7, and Genesis 22:18 promises that in Abraham's seed all nations will be blessed. The Hebrew zera, like the English ‘offspring’, is a collective singular. Some Old Testament scholars, T. Desmond Alexander among them, have noted that in Genesis 22:17b-18 the pronoun following ‘seed’ can be read as singular (‘his enemies’), pointing to one individual descendant, and that the promise of a royal seed to David (2 Samuel 7:12) narrows the line to one king. Paul's reasoning from the singular noun resembles Jewish interpretive practice that drew meaning from the exact form of a word, and his larger claim is that the promised family is gathered in its single representative, the Messiah."
+        }
+      ],
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "Christ is the heir of the promises to Abraham. The whole line of promise, from Isaac to David's house, reaches its goal in one descendant, and all who belong to him share his inheritance (verse 29)."
+        },
+        {
+          "id": "union",
+          "note": "The one seed becomes many by incorporation. Those who are ‘in Christ’ are counted in the singular seed, which is how Paul can say both that the seed is Christ and that believers are the seed."
+        }
+      ],
+      "refs": ["Genesis 13:15", "Genesis 17:7-8", "Genesis 22:18", "2 Samuel 7:12-14", "Galatians 3:29"]
+    },
+    {
+      "v": "17-18",
+      "context": "Paul applies the analogy. The law, which came 430 years after the promise, cannot annul a covenant God had already ratified, so as to cancel the promise. If the inheritance came by law, it would no longer come by promise; but God gave it to Abraham as a free gift by promise.",
+      "grammar": "Touto de legō, ‘this is what I mean’, introduces the application. Prokekurōmenēn, ‘previously ratified’, and akuroi, ‘makes invalid’, come from the same root (kuros, ‘authority, validity’): the later law cannot un-ratify what was ratified. Katargēsai, ‘to nullify’, is Paul's verb for rendering inoperative. In verse 18, klēronomia, ‘inheritance’, introduces a theme that runs through 4:1-7. Kecharistai, ‘has graciously given’, is the perfect of charizomai, from the root of charis, ‘grace’: God gave the inheritance as a gift, and the gift stands.",
+      "words": ["G1242", "G4300", "G5071", "G5144", "G2094", "G3551", "G0208", "G2673", "G1860", "G2817", "G5483"],
+      "history": "The chapter note explains the 430 years and the textual difference in Exodus 12:40. Josephus (Antiquities 2.318) likewise counts 430 years from Abraham's arrival in Canaan to the exodus, of which only 215 were spent in Egypt, showing that Paul's reckoning follows a known Jewish chronology. Stephen, in Acts 7:6, uses the round 400 years of Genesis 15:13.",
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "The Mosaic covenant came later than the Abrahamic and did not replace it. Paul's reading of the story gives priority to the promise: the law was an addition within the story of promise, not a new basis for inheritance."
+        },
+        {
+          "id": "salvation",
+          "note": "Inheritance by promise and inheritance by law are mutually exclusive. What God gives as a gift cannot at the same time be earned by keeping commands, and Paul insists the inheritance was a gift from the start."
+        }
+      ],
+      "refs": ["Exodus 12:40-41", "Genesis 15:13", "Romans 4:13-16", "Acts 7:6", "Hebrews 6:17"]
+    },
+    {
+      "v": "19",
+      "context": "The obvious question follows: why then was the law given? Paul answers that it was added because of transgressions, for a limited time, until the promised seed came, and it was given through angels by a mediator. Each phrase marks the law as secondary to the promise.",
+      "grammar": "Ti oun ho nomos, ‘why then the law?’, a verbless question. Tōn parabaseōn charin, ‘for the sake of transgressions’: charin with the genitive can mean ‘because of’ (to restrain them), or ‘for the sake of’ (to define sins as transgressions of a stated command, compare Romans 4:15), or even to increase them (Romans 5:20). Commentators divide among these, and the phrase may carry more than one. Prosetethē, ‘it was added’, implies it came alongside something already there. Achris hou elthē to sperma, ‘until the seed should come’, sets the law's term. Diatageis di' angelōn en cheiri mesitou, ‘ordained through angels by the hand of a mediator’, uses a Hebrew idiom, ‘by the hand of’ (beyad), for agency.",
+      "words": ["G3551", "G3847", "G5484", "G4369", "G0891", "G4690G", "G1861", "G1299", "G0032G", "G5495", "G3316"],
+      "history": "The chapter note mentions the tradition, drawn from the Septuagint of Deuteronomy 33:2, that angels took part in the giving of the law. Jubilees (1:27-2:1) has an angel of the presence dictate the law's history to Moses, and Josephus (Antiquities 15.136) has Herod say that the Jews learned their holiest laws from God through angels, though some read ‘angels’ there as prophets. The mediator is Moses, who stood between the LORD and Israel at Sinai (Deuteronomy 5:5). Philo calls Moses a mediator (mesitēs) and reconciler (On the Life of Moses 2.166).",
+      "theology": [
+        {
+          "id": "law",
+          "note": "The law had a real but limited purpose: it dealt with transgression and lasted until the seed came. Paul gives it a place in God's plan without allowing it to rival the promise, which came directly from God."
+        },
+        {
+          "id": "angels",
+          "note": "Jewish tradition honored angels as present at Sinai. Paul uses the tradition to show the law's indirectness: it came through intermediaries, while the promise came from God himself."
+        }
+      ],
+      "refs": ["Acts 7:53", "Hebrews 2:2", "Deuteronomy 33:2", "Deuteronomy 5:5", "Romans 5:20"]
+    },
+    {
+      "v": "20",
+      "context": "One of the most obscure sentences in Paul. A mediator implies more than one party, but God is one. Most readers take it to mean that the law, which came through a go-between, is less direct than the promise, which God gave by himself alone.",
+      "grammar": "The verse is two short clauses: ho de mesitēs henos ouk estin, ‘but the mediator is not of one’, and ho de theos heis estin, ‘but God is one’. The first states a general truth: a mediator stands between two or more parties. The second echoes the Shema, Israel's confession that the LORD is one (Deuteronomy 6:4). The main readings are these: the law involved two parties, God and Israel, with conditions on both sides, while the promise was God's unilateral act; or the law came through many (angels and Moses), while the promise came from the one God; or, as Romans 3:29-30 argues, the one God is God of Jews and Gentiles alike, so a law that divides them cannot be his final word. J. B. Lightfoot, in his commentary on Galatians (1865), remarked that the number of interpretations of this verse was said to run to 250 or 300.",
+      "words": ["G3316", "G1520", "G2316"],
+      "theology": [
+        {
+          "id": "god",
+          "note": "Paul appeals to the oneness of God, the heart of Israel's confession. The promise rests on God alone, and because God is one, he is the God of all nations (Romans 3:29-30), which is where Paul's argument is heading."
+        }
+      ],
+      "refs": ["Deuteronomy 6:4", "Romans 3:29-30", "1 Timothy 2:5", "Genesis 15:17-18", "Hebrews 8:6"]
+    },
+    {
+      "v": "21-22",
+      "context": "Is the law then against God's promises? No. The law was never meant to give life; if it could, righteousness would indeed come by law. Instead Scripture shut everything up under sin, so that the promise might be given, through faith in Jesus Christ, to those who believe.",
+      "grammar": "Mē genoito, ‘may it never be’, the same strong denial as 2:17. Ei gar edothē nomos ho dunamenos zōopoiēsai, ontōs ek nomou an ēn hē dikaiosunē, ‘for if a law had been given that was able to make alive, righteousness would really be from the law’, is a contrary-to-fact condition, marked by an: it was not so. Zōopoieō, ‘to make alive’, is the Spirit's work (2 Corinthians 3:6). In verse 22, sunekleisen hē graphē ta panta hupo hamartian, ‘the Scripture locked up all things under sin’: sunkleiō means to shut in on all sides, as fish in a net (Luke 5:6) or prisoners in a cell, and ta panta, neuter, includes everyone and everything. Ek pisteōs Iēsou Christou repeats the debated phrase of 2:16. Supporters of the reading ‘the faithfulness of Jesus Christ’ note that tois pisteuousin, ‘to those who believe’, would otherwise seem redundant; others answer that Paul often stresses faith twice.",
+      "words": ["G3551", "G1860", "G1096", "G2227", "G1343", "G4788", "G1124", "G0266", "G4102G", "G4100"],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Scripture's verdict is that all are confined under sin. The law did not create the human condition but exposed it, and Romans 11:32 uses the same verb: God has shut up all in disobedience so that he may have mercy on all."
+        },
+        {
+          "id": "law",
+          "note": "The law is not against the promises; it serves them by showing that no one can be made alive by keeping it. It was never God's instrument for giving life, which belongs to the Spirit."
+        }
+      ],
+      "refs": ["Romans 11:32", "Romans 3:9-20", "Romans 7:10-12", "2 Corinthians 3:6", "Romans 8:3"]
+    },
+    {
+      "v": "23-24",
+      "context": "Paul describes the time before faith came. ‘We’, Jews under the law, were held in custody, confined until the coming faith was revealed. The law was a guardian until Christ, so that we might be justified by faith.",
+      "grammar": "Pro tou de elthein tēn pistin, ‘before the faith came’: the article marks faith as a new era in history, not only an individual's trust. Ephrouroumetha, ‘we were being guarded’, is an imperfect passive of phroureō, a military verb used for guarding a city (2 Corinthians 11:32) or keeping someone safe (Philippians 4:7); it can mean protection or custody, and here it is probably both. Sunkleiomenoi, ‘being confined’, repeats the verb of verse 22. Eis tēn mellousan pistin apokaluphthēnai, ‘for the faith about to be revealed’. In verse 24, paidagōgos hēmōn gegonen eis Christon: eis can be temporal, ‘until Christ’, or directional, ‘to lead us to Christ’. The King James Version's ‘to bring us unto Christ’ supplies words not in the Greek. Many recent commentators prefer the temporal sense because verses 23 and 25 are about time.",
+      "words": ["G4102G", "G3551", "G5432", "G4788", "G0601", "G3807", "G5547", "G1344"],
+      "theology": [
+        {
+          "id": "law",
+          "note": "The law's role was real but temporary, like a guardian's charge over a child. Luther drew from this passage the law's ‘theological use’, driving sinners to Christ by showing them their sin; Calvin added its role of restraining evil and guiding believers. Many modern interpreters emphasize instead the historical sense: the law governed Israel until the coming of Christ."
+        },
+        {
+          "id": "justification",
+          "note": "The goal of the law's custody was justification by faith. Even the period of the law pointed beyond itself to the righteousness that would be given in Christ."
+        }
+      ],
+      "refs": ["Romans 10:4", "Romans 7:6", "Galatians 4:1-5", "Romans 3:21-22", "2 Corinthians 11:32"]
+    },
+    {
+      "v": "25-26",
+      "context": "Now that faith has come, believers are no longer under the guardian. They are sons of God, all of them, through faith in Christ Jesus. The shift from ‘we’ to ‘you all’ brings the Gentile Galatians fully into the family.",
+      "grammar": "Elthousēs de tēs pisteōs, ‘but faith having come’, is a genitive absolute: a new situation has arrived. Ouketi, ‘no longer’, closes the era of the paidagōgos. Pantes gar huioi theou este, ‘for you are all sons of God’: pantes, ‘all’, stands first; ‘you’ now includes the Gentile readers. Dia tēs pisteōs en Christō Iēsou can be read ‘through faith in Christ Jesus’ or as two phrases, ‘through faith, in Christ Jesus’, locating their sonship in union with Christ. Huioi, ‘sons’, is used for the heirs of an estate; in verse 28 it includes women, as the sonship is about inheritance rights, not gender.",
+      "words": ["G2064", "G4102G", "G3807", "G5207", "G2316", "G5547"],
+      "theology": [
+        {
+          "id": "family",
+          "note": "The people of God are a family of sons and heirs. Gentile believers are not guests or servants in the house but children with full rights, which 4:4-7 develops as adoption."
+        },
+        {
+          "id": "union",
+          "note": "Sonship is ‘in Christ Jesus’. Believers are God's children because they are joined to the Son, and they share his status as heir."
+        }
+      ],
+      "refs": ["Galatians 4:4-7", "Romans 8:14-17", "John 1:12", "1 John 3:1-2", "Ephesians 1:5"]
+    },
+    {
+      "v": "27",
+      "context": "The ‘for’ explains how they became sons: all who were baptized into Christ have put on Christ like a garment. Baptism marks the moment of union with him.",
+      "grammar": "Hosoi gar eis Christon ebaptisthēte, ‘for as many of you as were baptized into Christ’: eis, ‘into’, expresses union or incorporation, as in Romans 6:3. Christon enedusasthe, ‘you put on Christ’, is an aorist middle of enduō, ‘to clothe oneself’. The image of clothing with virtues or righteousness is common in the Old Testament (Job 29:14, Isaiah 61:10), and Paul uses it for putting on the new self (Colossians 3:10) and for putting on the Lord Jesus Christ (Romans 13:14). Some interpreters connect it with the Roman custom in which a boy put on the adult toga when he came of age and left his guardian behind, which would fit verses 24 to 26; it is a suggestive picture, but Paul does not make the link explicit.",
+      "words": ["G5547", "G0907", "G1746"],
+      "theology": [
+        {
+          "id": "sacraments",
+          "note": "Baptism into Christ is tied to union with him. Catholic, Orthodox, and Lutheran theology read the verse as baptism effecting that union; Reformed and Baptist traditions read it as baptism signifying and sealing a union received by faith. All agree that for Paul baptism and faith belong together, and that baptism is not a work of the law."
+        },
+        {
+          "id": "union",
+          "note": "To be clothed with Christ is to be so identified with him that God sees his children in his Son. The image goes beyond imitation: believers wear Christ's identity."
+        }
+      ],
+      "refs": ["Romans 6:3-4", "Romans 13:14", "Colossians 3:9-11", "1 Corinthians 12:13", "Isaiah 61:10"]
+    },
+    {
+      "v": "28",
+      "context": "In Christ the old divisions no longer determine standing: neither Jew nor Greek, slave nor free, male and female, for all are one in Christ Jesus. The verse is the social result of the gospel of verses 26 and 27, and it answers the table division at Antioch in 2:11-14.",
+      "grammar": "Ouk eni is an emphatic form, ‘there is not (in this sphere)’, repeated three times. The first two pairs use oude, ‘nor’: ‘neither Jew nor Greek, neither slave nor free’. The third breaks the pattern: ouk eni arsen kai thēlu, ‘there is no male and female’, using kai, ‘and’, not oude, and the neuter adjectives of the Septuagint's Genesis 1:27, arsen kai thēlu epoiēsen autous, ‘male and female he made them’. The break signals that Paul is thinking of creation as well as society: the created pairing is not removed, but it is not the ground of standing in the new creation. Pantes heis este, ‘you are all one’, uses the masculine heis, ‘one person’, not the neuter hen, ‘one thing’: a single new humanity in Christ (compare ‘one new man’ in Ephesians 2:15).",
+      "words": ["G1762", "G2453", "G1672", "G1401", "G1658", "G0730", "G2338", "G1520"],
+      "history": "The three pairs match a formula found in ancient thanksgivings. The Tosefta (Berakhot 6:18) records Rabbi Judah's teaching that a man should bless God daily for not making him a Gentile, a woman, or an uneducated man, and the Babylonian Talmud (Menachot 43b) gives a version with a slave. A Greek saying attributed to Thales or Socrates (Diogenes Laertius, Lives 1.33) gives thanks for being born human and not a beast, a man and not a woman, a Greek and not a barbarian. The similar lists in 1 Corinthians 12:13 and Colossians 3:11 have led many scholars, including Wayne Meeks, to think Paul is quoting a formula spoken at baptism in the early churches.",
+      "ot": [
+        {
+          "ref": "Genesis 1:27",
+          "note": "The Hebrew says God created humanity in his image, zakhar unqevah, ‘male and female’, he created them. The Septuagint reads arsen kai thēlu epoiēsen autous, and Paul reproduces arsen kai thēlu exactly, with its unusual kai. The allusion places the male and female pair in the order of creation, where both equally bear God's image, and Paul's phrase announces that in Christ, where there is a new creation (6:15), neither sex has a different standing before God."
+        }
+      ],
+      "theology": [
+        {
+          "id": "church",
+          "note": "The church is one body in which ethnicity, legal status, and sex do not rank members before God. Egalitarian readers take this as a principle extending to all roles in church and home; complementarian readers take it as equal standing in salvation, with other texts governing roles. Both agree it forbids second-class membership."
+        },
+        {
+          "id": "image",
+          "note": "By echoing Genesis 1:27, Paul ties the unity of the new humanity to the original creation in which both male and female bear God's image. The new creation restores rather than erases that shared dignity."
+        }
+      ],
+      "refs": ["Genesis 1:27", "1 Corinthians 12:13", "Colossians 3:11", "Ephesians 2:14-16", "Galatians 6:15"]
+    },
+    {
+      "v": "29",
+      "context": "The chapter's conclusion: if you belong to Christ, you are Abraham's seed and heirs according to the promise. The single seed of verse 16 now includes all who are Christ's. The answer to the Galatians' question about how to become Abraham's children is complete, and 4:1-7 will explain what heirs are.",
+      "grammar": "Ei de humeis Christou, ‘and if you are Christ's’, uses the genitive of belonging: you are his. Ara, ‘then’, draws the conclusion. Tou Abraam sperma este, ‘you are Abraham's seed’: sperma is singular, now used collectively, the one seed of verse 16 containing the many. Kat' epangelian klēronomoi, ‘heirs according to promise’, closes the chapter with the words it has been building toward: promise (verses 14 to 22) and inheritance (verse 18).",
+      "words": ["G5547", "G0011", "G4690G", "G1860", "G2818"],
+      "theology": [
+        {
+          "id": "israel",
+          "note": "Gentile believers are counted as Abraham's descendants by belonging to Christ. Paul does not say the church replaces Israel; he says the promise to Abraham's seed is shared by all who are in the Messiah, a theme he develops with care for ethnic Israel in Romans 9 to 11."
+        },
+        {
+          "id": "covenant",
+          "note": "The covenant with Abraham finds its heirs in all who belong to Christ. The chapter began with Abraham's faith and ends with Abraham's family, gathered by faith from every nation."
+        }
+      ],
+      "refs": ["Romans 4:13-16", "Romans 8:17", "Galatians 4:7", "Ephesians 3:6", "Romans 9:6-8"]
+    }
+  ]
+}

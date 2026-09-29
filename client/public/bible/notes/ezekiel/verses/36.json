@@ -1,0 +1,318 @@
+{
+  "verses": [
+    {
+      "v": "1-2",
+      "context": "Ezekiel is told to prophesy to the mountains of Israel, the same audience he had addressed with judgment in chapter 6. The first thing God quotes is the enemy's gloating claim over the land. The chapter answers Edom's boast in 35:10 (“These two nations and countries will be ours”) by speaking to the land Edom wanted.",
+      "grammar": "“Son of man” is ben-’adam, ‘son of humankind’, Ezekiel's standard title (over ninety times in the book), stressing his frail humanity before the God who speaks. Hinnave’, “prophesy”, is a Niphal imperative; prophecy in Hebrew is grammatically something that happens to and through the prophet. The enemy's cry he’ach (\"Aha\") is the gloat of someone watching a rival fall (Ezekiel 25:3; 26:2; Psalm 35:21). Bamot ‘olam, “the ancient heights”, uses bamah, a word that can mean a physical height or a cultic ‘high place’. Here it is the ancestral hill country, the land held since the patriarchs, now claimed as morashah, ‘a possession’, the word God had used for giving the land to Israel (Exodus 6:8).",
+      "words": ["H0120G", "H5012", "H2022G", "H1889", "H1116", "H5769J", "H4181"],
+      "refs": ["Ezekiel 6:1-3", "Ezekiel 35:10", "Exodus 6:8", "Psalm 35:21"]
+    },
+    {
+      "v": "3",
+      "context": "The first ‘therefore’ restates the charge at greater length: the land has been made desolate, trampled from every side, turned into property for other nations and gossip for their talkers. The prophet is repeating the accusations of the nations so that God's answer, when it comes, answers each one.",
+      "grammar": "The verse opens with a doubled cause, ya‘an beya‘an, ‘because, yes because’, a rare intensification. Two infinitives absolute follow: shammot, ‘making desolate’, and sha’of, which can mean ‘trampling’ or ‘panting after’, the eagerness of an animal chasing prey (the BSB reads “trampled”). The desolation root shamem runs through chapters 35 and 36 like a drumbeat; Mount Seir is promised desolation (35:3-4) because it rejoiced over Israel's. The last clause, literally ‘you were taken up on the lip of the tongue and the whispering of the people’, describes a nation turned into a byword.",
+      "words": ["H3282", "H8074G", "H7602B", "H4181", "H8193H", "H3956G", "H1681"],
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "God's word begins by naming the humiliation exactly: desolation, trampling, slander. Before he promises anything, he shows he has heard the insults. The pattern of lament first and answer second runs through the Psalms and here shapes a prophecy of hope."
+        }
+      ],
+      "refs": ["Ezekiel 35:3-4", "Deuteronomy 28:37", "Psalm 44:13-14", "Lamentations 2:15-16"]
+    },
+    {
+      "v": "4-5",
+      "context": "God now speaks to every feature of the ruined land: mountains, hills, ravines, valleys, ruins, and abandoned towns. He names the nations, and Edom above all, who seized his land with glee and contempt. The land is called “My land”, which is the root of God's anger: Edom has plundered what belongs to him.",
+      "grammar": "The fourfold list of mountains, hills, ravines (’afiqim, stream channels), and valleys covers the whole relief of the country, a merism for all of it, as in 6:3. ’Im-lo’ be’esh qin’ati, ‘if not in the fire of my jealousy’, is an oath formula; ’im-lo’ in an oath means ‘surely’. Qin’ah (\"burning zeal\", often ‘jealousy’) is the passion of a husband or owner whose rightful claim is violated; it is the word of the second commandment (‘a jealous God’, Exodus 20:5). ’Artsi, ‘my land’, puts the land in God's possession, not Israel's, echoing Leviticus 25:23 (‘the land is mine’).",
+      "words": ["H0650", "H1516R", "H2723", "H7068", "H0123G", "H4181", "H7589"],
+      "history": "Edom lay south and east of the Dead Sea. When Babylon destroyed Jerusalem, Edom was remembered for joining in and taking advantage (Obadiah 10-14; Psalm 137:7; Lamentations 4:21-22). Hebrew ostraca from the fortress of Arad in the Negev, from the last years of the kingdom of Judah, already warn of danger from Edom (Arad ostracon 24). In the following centuries Edomites settled in southern Judah, and the region around Hebron came to be called Idumea; Herod the Great's family came from there.",
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "God's judgment on Edom is not favoritism toward Israel but the defense of what is his. The land is ‘My land’ (verse 5), and the jealousy that judged Israel for idolatry now burns against those who treat his judgment of Israel as their opportunity."
+        }
+      ],
+      "refs": ["Obadiah 1:10-14", "Psalm 137:7", "Lamentations 4:21-22", "Leviticus 25:23", "Ezekiel 35:10-15"]
+    },
+    {
+      "v": "6-7",
+      "context": "The third ‘therefore’ swears an oath. The land has borne the nations' insults; now the nations will bear their own. The verb ‘bear’ links the two verses: what Israel bore, the nations will bear.",
+      "grammar": "“I have sworn with an uplifted hand” is literally ’ani nasa’ti ’et-yadi, ‘I, I have lifted my hand’, the gesture of an oath. God used it when he promised the land to the patriarchs (Exodus 6:8) and Ezekiel repeats it in his history of Israel (20:5-6, 15, 23, 28). Here the same gesture that once gave the land now guarantees its restoration. The verb nasa’, ‘lift’ or ‘bear’, is played on: God lifts his hand, and the nations will ‘bear’ (yissa’u) their reproach, as Israel ‘bore’ (nesa’tem) theirs in verse 6.",
+      "words": ["H7068", "H2534", "H3639", "H5375H", "H5375P", "H3027S"],
+      "theology": [
+        {
+          "id": "justice-poor",
+          "note": "God takes the side of a humiliated people against those who mock them. The reversal promised here, the mockers bearing reproach and the mocked restored, is a pattern Scripture carries forward to Mary's song (Luke 1:51-53)."
+        }
+      ],
+      "refs": ["Exodus 6:8", "Ezekiel 20:5-6", "Deuteronomy 32:40", "Luke 1:51-53"]
+    },
+    {
+      "v": "8-9",
+      "context": "The turn. After seven verses about the enemy, God speaks tenderly to the land itself: grow branches and fruit, because my people are about to come home. The mountains that were condemned in chapter 6 for their idolatrous shrines are now promised life.",
+      "grammar": "Ki qerevu lavo’, “for they will soon come”, is literally ‘for they have drawn near to come’, a perfect that makes the return imminent. In verse 9 hineni ’alekhem, ‘behold, I am toward you’, uses exactly the construction with which God had declared hostility to Mount Seir in 35:3, hineni ’elekha, ‘behold, I am against you’. The preposition ’el can mean ‘against’ or ‘toward’; context flips it, and the BSB rightly renders “I am on your side”. Ufaniti, ‘I will turn’, is the reverse of God turning his face away (7:22). Ne‘evadtem, ‘you will be worked’, is a Niphal of ‘avad, the verb used when God put the man in the garden ‘to work it’ (Genesis 2:15).",
+      "words": ["H6057", "H6529", "H7126G", "H0413", "H6437G", "H5647I", "H2232"],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The land's fertility is tied to God's turning toward it. Scripture does not treat nature and history as separate spheres; the same God who scattered his people prepares the ground for their return."
+        }
+      ],
+      "refs": ["Ezekiel 35:3", "Ezekiel 6:13", "Genesis 2:15", "Leviticus 26:9", "Isaiah 55:12-13"]
+    },
+    {
+      "v": "10-11",
+      "context": "The promise widens from fields to people: cities inhabited, ruins rebuilt, humans and animals multiplying. The restored land will be better than it was at the start. The recognition formula ends the section: then you will know that I am the LORD.",
+      "grammar": "Verse 11 uses the pair from the creation blessing, ‘be fruitful and multiply’ (Genesis 1:28), but in reverse order: veravu ufaru, ‘they will multiply and be fruitful’. The blessing given to humanity at creation is restored to a land emptied by judgment. Heitivoti mere’shotekhem, ‘I will do better than your beginnings’, promises more than a return to the old days. Vida‘tem ki-’ani YHWH, “Then you will know that I am the LORD”, is the formula Walther Zimmerli, in his commentary on Ezekiel, called the recognition formula; it occurs dozens of times in the book, and here, unusually, it is spoken to the land.",
+      "words": ["H7235A", "H6509", "H3190", "H7221", "H3045"],
+      "theology": [
+        {
+          "id": "new-creation",
+          "note": "The language of Genesis 1:28 marks restoration as a new beginning. The book's hope is not only return but creation renewed, a theme that climaxes in the Eden picture of verse 35 and in the river of chapter 47."
+        }
+      ],
+      "refs": ["Genesis 1:28", "Leviticus 26:9", "Ezekiel 47:9-12", "Job 42:12"]
+    },
+    {
+      "v": "12",
+      "context": "God will lead his people back to walk on these mountains, and the land will become their inheritance again. The last line introduces the accusation of the next verses: the land had a reputation for bereaving its people.",
+      "grammar": "Vireshukha, ‘they will possess you’, is the verb of conquest in Deuteronomy and Joshua, applied again as if a second conquest were taking place. Nachalah (\"inheritance\") is land held by a family as God's grant, not for sale (1 Kings 21:3). The final verb, leshakkelam, ‘to bereave them’, is a Piel of shakal, the verb for losing children (Genesis 27:45; 43:14). The land is personified as a mother that loses her children.",
+      "words": ["H1980I", "H3423G", "H5159", "H7921A"],
+      "refs": ["Numbers 13:32", "1 Kings 21:3", "Joshua 11:23", "Genesis 43:14"]
+    },
+    {
+      "v": "13-15",
+      "context": "People said the land devoured men and bereaved its nation. God promises that it will do so no more, and that the nations' taunts will end. The charge echoes the spies' old report, a land that devours its inhabitants (Numbers 13:32), and the history of famine, war, and exile that seemed to confirm it.",
+      "grammar": "The land is addressed with feminine singular forms (’at, ‘you’; tokhli, ‘you will devour’), as a woman or mother. ’Okhelet ’adam, ‘devourer of humans’, is a participle used as a title, the phrase of Numbers 13:32. Two verbs with the same consonants rearranged play against each other through these verses: shakal, ‘to bereave’, and kashal, ‘to stumble’. In verse 14 the written Hebrew text has a form of kashal while the Masoretes' reading note directs a form of shakal (“deprive your nation of its children”), and in verse 15 the text reads kashal (“cause your nation to stumble”). The ambiguity is old and makes little difference to the sense: the land will stop destroying its people.",
+      "words": ["H0398", "H7921A", "H1471A", "H3639", "H2781", "H3782"],
+      "text": "Besides the reading notes on the verbs, the Hebrew margin in verses 13-15 wavers between ‘your nation’ (singular) and ‘your nations’ (plural). English Bibles follow the singular, since the land is addressed as the mother of one people.",
+      "refs": ["Numbers 13:32", "Leviticus 26:38", "Ezekiel 5:17", "Isaiah 62:4"]
+    },
+    {
+      "v": "16-17",
+      "context": "A new oracle begins with the word-event formula. God now explains the past: Israel defiled its own land by its conduct. The comparison is to menstrual impurity, which in Israel's law required separation from holy things, not moral guilt.",
+      "grammar": "Vayetamme’u ’otah, ‘they made it unclean’, is a Piel of tame’, the priestly verb for defiling. Ezekiel, himself a priest (1:3), thinks in priestly categories: sin is not only guilt but pollution that makes a place unfit for God's presence. Ketum’at hanniddah, “like the uncleanness of a woman's impurity”, uses niddah, the technical term for menstruation (Leviticus 15:19-24). The simile speaks of the separation that impurity required: as that impurity barred contact with the holy for a time, so Israel's conduct made the land unable to hold God's presence. Darkam and ‘alilotam, ‘their way’ and ‘their deeds’, recur in verse 19 as the measure of the judgment.",
+      "words": ["H2930A", "H1870G", "H5949", "H2932", "H5079"],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Sin here defiles a place, not only a person. Leviticus had warned that the land would vomit out people who defiled it (Leviticus 18:24-28), and Numbers that bloodshed pollutes the land (Numbers 35:33-34). Ezekiel shows that the exile was that warning carried out."
+        }
+      ],
+      "refs": ["Leviticus 18:24-28", "Numbers 35:33-34", "Leviticus 15:19-24", "Jeremiah 2:7"]
+    },
+    {
+      "v": "18-19",
+      "context": "The judgment matched the crime. Israel poured out blood and worshiped idols; God poured out his wrath and scattered them among the nations according to their conduct.",
+      "grammar": "The same verb, shafakh, ‘to pour out’, appears twice: va’eshpokh chamati, ‘I poured out my wrath’, because of hadam ’asher-shafekhu, ‘the blood which they poured out’. The judgment answers the sin in its own vocabulary. Gillulim (\"idols\") is Ezekiel's favorite word for idols, used almost forty times in the book and rarely elsewhere. Many scholars connect it with gel, ‘dung’, and hear a deliberate insult, something like ‘dung-gods’, though the derivation is debated. Shefattim, ‘I judged them’, closes verse 19: the scattering was a judicial sentence, not an accident of politics.",
+      "words": ["H8210G", "H8210H", "H1818", "H1544", "H6327A", "H2219", "H8199"],
+      "theology": [
+        {
+          "id": "exile",
+          "note": "Exile is God's judgment carried out through Babylon's armies. The verse names both causes the prophets gave for it, violence (blood) and idolatry, and insists that God, not Nebuchadnezzar, is the one who scattered."
+        }
+      ],
+      "refs": ["2 Kings 21:16", "2 Kings 24:3-4", "Ezekiel 22:3-4", "Leviticus 26:33"]
+    },
+    {
+      "v": "20-21",
+      "context": "The exile created a new problem. Wherever the exiles went, the nations drew a conclusion about Israel's God: these are the LORD's people, and he could not keep them in his land. So Israel profaned God's name not only by sinning at home but by their very presence abroad. God's response is concern for his name.",
+      "grammar": "Vayechallelu ’et-shem qodshi, ‘they profaned my holy name’, uses chalal, to make common what is holy. The phrase shem qodshi, literally ‘the name of my holiness’, is a Hebrew way of saying ‘my holy name’. The nations' taunt is quoted in a short nominal sentence: ‘am-YHWH ’elleh, ‘the people of the LORD, these’. In verse 21 va’echmol, “I had concern”, is the verb chamal, ‘to spare’ or ‘to pity’. Ezekiel had used it repeatedly in the negative, ‘my eye will not spare and I will not pity’ (5:11; 7:4; 8:18; 9:10). God's pity, withheld from the city, now turns toward his own name.",
+      "words": ["H2490H", "H8034", "H6944G", "H2550"],
+      "history": "In the ancient Near East a people's defeat was usually read as its god's weakness or anger. The Moabite Stone of King Mesha (about 840 BC) explains that Moab had been oppressed by Israel's King Omri because the god Chemosh was angry with his land. Assyria's envoy mocked Hezekiah with the same logic, asking which gods of the nations had saved their lands (2 Kings 18:33-35). The exile of Judah invited exactly that verdict about the LORD.",
+      "text": "The Septuagint renders verse 21 ‘I spared them for the sake of my holy name’, making Israel the object of God's pity. The Hebrew says God had pity on, or concern for, his name itself, which is more striking and fits the argument of verse 22.",
+      "refs": ["Ezekiel 20:9", "2 Kings 18:33-35", "Numbers 14:15-16", "Romans 2:24"]
+    },
+    {
+      "v": "22",
+      "context": "The central statement of motive, repeated at verse 32 to frame the promise: God will act not for Israel's sake but for his holy name. It is meant to humble, not to wound: the restoration that follows is undeserved, and therefore it cannot be undone by Israel's future failure either.",
+      "grammar": "Lo’ lema‘ankhem ’ani ‘oseh, ‘not for your sake am I acting’, puts the negative first for emphasis and uses a participle, ‘oseh, ‘about to act’, for action already set in motion. The contrast ki ’im-leshem-qodshi, ‘but only for my holy name’, uses the strong adversative ki ’im. The phrase ‘for my name's sake’ is the logic of Ezekiel's review of Israel's history, where three times God held back his wrath ‘for the sake of My name’ (20:9, 14, 22).",
+      "words": ["H4616", "H6213A", "H8034", "H6944G", "H2490H"],
+      "theology": [
+        {
+          "id": "glory",
+          "note": "God's concern for his name is not vanity; his name is his revealed character, and the nations' knowledge of the true God depends on it. Isaiah 48:9-11 and Psalm 106:8 make the same point. Because God's glory is the motive, his grace rests on something steadier than the recipients' worth."
+        },
+        {
+          "id": "holiness",
+          "note": "The holiness God defends is not a remote purity but his standing as the true God before the watching nations. Israel's restoration is God's self-vindication."
+        }
+      ],
+      "refs": ["Ezekiel 20:9", "Isaiah 48:9-11", "Psalm 106:8", "Deuteronomy 9:5-6", "Ephesians 2:8-9"]
+    },
+    {
+      "v": "23",
+      "context": "The goal of the whole program: God will show the holiness of his great name, and the nations will know that he is the LORD when he shows himself holy through Israel before their eyes. The next verses describe how.",
+      "grammar": "Veqiddashti ’et-shemi haggadol, ‘I will sanctify my great name’, is a Piel of qadash with the sense ‘treat as holy’ or ‘show to be holy’. The verse ends with behiqqadeshi vakhem, ‘when I show myself holy in you’, a Niphal with reflexive force: God demonstrates his holiness by what he does with and in his people. Leviticus uses the same form (‘I will be sanctified among the Israelites’, Leviticus 22:32).",
+      "words": ["H6942K", "H8034", "H1419A", "H2490H", "H3045"],
+      "text": "The oldest Greek manuscript of Ezekiel, Papyrus 967 (from about the second or third century AD), lacks everything from the middle of this verse to the end of the chapter, and so does the Old Latin Codex Wirceburgensis. The same papyrus also places chapter 37 after chapters 38-39. Johan Lust argued that the passage was a late addition to the Hebrew book; others, among them Daniel Block in his commentary, argue that it is original and that the Greek omission is accidental, perhaps a lost page or a scribe's eye skipping. All other Hebrew and Greek witnesses include it.",
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "In the Greek Bible God says ‘I will sanctify (hagiasō) my great name’. Jesus teaches his disciples to pray ‘hallowed (hagiasthētō) be your name’ (Matthew 6:9), a prayer that God do what Ezekiel promised. The Jewish Kaddish, which opens by asking that God's great name be magnified and sanctified, takes its wording from the similar promise in Ezekiel 38:23."
+        }
+      ],
+      "refs": ["Leviticus 22:32", "Ezekiel 38:23", "Ezekiel 39:27", "Matthew 6:9", "Isaiah 5:16"]
+    },
+    {
+      "v": "24",
+      "context": "The first act of restoration is the gathering: from the nations, from every land, back to Israel's own soil. This is the new exodus the prophets promised, and it comes first because it is the most visible vindication before the nations.",
+      "grammar": "The verbs from here to verse 30 are a chain of consecutive perfects with God as subject: velaqachti (I will take), veqibbatsti (I will gather), vehevetti (I will bring). The form marks a sequence of future acts following from verse 23's purpose. The three verbs reverse the scattering of verse 19 and reproduce the vocabulary of Deuteronomy's promise of return (Deuteronomy 30:3-5).",
+      "words": ["H3947G", "H6908", "H0935P", "H0127G"],
+      "theology": [
+        {
+          "id": "exile",
+          "note": "Exile is not God's last word. The gathering of Israel from the nations is promised in the law itself (Deuteronomy 30:3-5) and throughout the prophets, and the return under Cyrus after 539 BC was its first installment."
+        }
+      ],
+      "refs": ["Deuteronomy 30:3-5", "Ezekiel 11:17", "Ezekiel 37:21", "Isaiah 43:5-6", "Jeremiah 23:3"]
+    },
+    {
+      "v": "25",
+      "context": "Before the new heart comes cleansing. God will sprinkle clean water on his people and purify them from all their impurities and idols. The priestly imagery answers the priestly diagnosis of verse 17: a people who defiled the land must be made clean.",
+      "grammar": "Vezaraqti ‘alekhem mayim tehorim, ‘I will sprinkle on you clean water’, uses zaraq, the verb for the priest splashing sacrificial blood against the altar (Leviticus 1:5) and for the water of purification for those defiled by a corpse (Numbers 19:13, 20). Ezekiel combines the two ideas: purification water, splashed with priestly authority. The verb taher, ‘be clean’, appears twice, first as the result (‘you will be clean’) and then as God's act (’ataher ’etkhem, ‘I will cleanse you’, Piel). The objects are tum’ot and gillulim, impurities and idols, the two words of verses 17-18.",
+      "words": ["H2236", "H4325G", "H2889", "H2891", "H2932", "H1544"],
+      "history": "The Dead Sea Scrolls take up this image. The Community Rule (1QS 4:20-22) says that at the appointed time God will cleanse a person by a holy spirit and sprinkle on him a spirit of truth like purifying water, a clear echo of this passage combining water and spirit in the purification of the last days.",
+      "theology": [
+        {
+          "id": "regeneration",
+          "note": "Cleansing comes first, and it is God's act: I will sprinkle, I will cleanse. Psalm 51:7 had prayed for exactly this. The verse joins forgiveness (removal of defilement) and renewal (the heart and spirit that follow) as two sides of one work."
+        },
+        {
+          "id": "sacraments",
+          "note": "Christians have long connected this verse with baptism. Those who hold a sacramental view (Catholic, Orthodox, Lutheran, and many Anglican and Reformed) see in baptism the sign and instrument of the cleansing Ezekiel promised. Those who hold a symbolic or ordinance view (Baptists and many free churches) see baptism as the public witness to a cleansing the Spirit has already done. Both read Ezekiel's water as God's own act of purification."
+        }
+      ],
+      "nt": [
+        {
+          "ref": "Hebrews 10:22",
+          "note": "Hebrews urges believers to draw near “having our hearts sprinkled to cleanse us from a guilty conscience and our bodies washed with pure water”. The phrase ‘pure water’ (hydati katharō) matches the Septuagint of this verse (hydōr katharon), and the sprinkling of hearts fits Ezekiel's promise of a new heart. The author applies the promise to the new covenant opened by Christ's blood."
+        }
+      ],
+      "refs": ["Numbers 19:13", "Psalm 51:7", "Zechariah 13:1", "Titus 3:5", "Hebrews 10:22"]
+    },
+    {
+      "v": "26",
+      "context": "The heart of the chapter. God will give a new heart and a new spirit, removing the heart of stone and giving a heart of flesh. Ezekiel had earlier commanded Israel to make themselves a new heart and spirit (18:31); here God promises to do it.",
+      "grammar": "Lev chadash (\"a new heart\") and ruach chadashah (\"a new spirit\") use the same adjective in masculine and feminine forms, and the verb natan, ‘give’, frames the verse (venatatti... venatatti): heart and spirit are gifts. The heart (lev) is the center of thought and will, and ‘a heart of stone’, lev ha’even, is a mind that cannot receive God's word (compare Zechariah 7:12, hearts like flint). Its replacement is lev basar, ‘a heart of flesh’, a living organ. Basar is ordinarily neutral or weak in the Old Testament, the frail human body; here the living softness of flesh is the point, not its moral weakness as in Paul's use of ‘flesh’. The parallel promise in 11:19 has ‘one heart’ (lev ’echad), which the Septuagint read as ‘another heart’.",
+      "words": ["H5414G", "H3820A", "H2319H", "H7307G", "H7130G", "H5493G", "H0068G", "H1320"],
+      "theology": [
+        {
+          "id": "regeneration",
+          "note": "This verse is one of the main Old Testament foundations of the doctrine of regeneration, God's giving new life to the inner person. The command of 18:31 (‘make yourselves a new heart’) and the promise here are both Scripture: the obligation is real, and God himself supplies what he commands. Augustine's prayer in the Confessions (10.29), asking God to give what he commands, states the same logic."
+        },
+        {
+          "id": "humanity",
+          "note": "Ezekiel's diagnosis is that the problem is inward and total: not a few bad acts but a heart turned to stone. The remedy has to be as deep as the problem, which is why the promise speaks of a transplant rather than a treatment."
+        }
+      ],
+      "refs": ["Ezekiel 11:19", "Ezekiel 18:31", "Jeremiah 24:7", "Zechariah 7:12", "2 Corinthians 3:3"]
+    },
+    {
+      "v": "27",
+      "context": "The new spirit of verse 26 is now named as God's own Spirit. His presence within will cause his people to walk in his statutes and keep his ordinances. The obedience that Israel failed to give under the old arrangement is promised as the fruit of the Spirit's indwelling.",
+      "grammar": "Ve’et-ruchi ’etten beqirbekhem, ‘and my Spirit I will put within you’, fronts the object for emphasis: not merely a new spirit but my Spirit. The following clause is unusual Hebrew: ve‘asiti ’et ’asher-bechuqqai telekhu, literally ‘I will make that you walk in my statutes’. The verb ‘asah, ‘make’ or ‘do’, with ’et ’asher governs a whole clause as its object. God does not only command obedience; he brings it about, and the people still ‘walk’ and ‘keep’ and ‘do’ (the three human verbs that follow). Choq and mishpat, statutes and ordinances, are the ordinary terms for the law of Moses.",
+      "words": ["H7307G", "H5414H", "H7130G", "H6213A", "H2706G", "H4941G", "H8104J"],
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "The Old Testament knew the Spirit coming on judges, prophets, and kings for particular tasks. Here the Spirit is promised to the whole people, permanently, within, and for ordinary obedience. That promise is what Joel 2:28-29 announces and what Peter declares fulfilled at Pentecost (Acts 2:16-18, 33)."
+        },
+        {
+          "id": "sanctification",
+          "note": "The Spirit's work does not replace obedience; it produces it. Paul's teaching that the law's requirement is fulfilled in those who walk by the Spirit (Romans 8:4) and his call to walk by the Spirit (Galatians 5:16) stand on this verse's logic. How divine enabling and human action relate is debated between Augustinian, Reformed, Wesleyan, and other traditions, but all hold both."
+        }
+      ],
+      "nt": [
+        {
+          "ref": "John 3:5-10",
+          "note": "Jesus tells Nicodemus that no one can enter God's kingdom without being born ‘of water and the Spirit’ and then asks how Israel's teacher can fail to understand this (John 3:10). Ezekiel 36:25-27 is the Old Testament passage that most plainly joins water and spirit in a promise of inner renewal, and many interpreters hold it is what Jesus expected Nicodemus to know. In the Greek of John 3:5 a single preposition governs both nouns (ex hydatos kai pneumatos), which D. A. Carson (The Gospel According to John, 1991) and others take as describing one birth, cleansing and renewal together, as in Ezekiel. Others read the water as Christian baptism, a reading as old as Justin Martyr (First Apology 61) and held across the sacramental traditions, and some as physical birth. Jesus' image of the wind (pneuma) blowing where it wishes (John 3:8) plays on the same double meaning as Hebrew ruach."
+        },
+        {
+          "ref": "1 Thessalonians 4:8",
+          "note": "Paul calls God the one ‘who gives you His Holy Spirit’, and his Greek (didonta to pneuma autou to hagion eis hymas) echoes the Septuagint of Ezekiel 36:27 and 37:14, ‘I will give my Spirit into you’. The context is holiness of life, the same purpose Ezekiel gives the Spirit: walking in God's ways."
+        }
+      ],
+      "refs": ["Ezekiel 37:14", "Ezekiel 39:29", "Joel 2:28-29", "Romans 8:4", "Galatians 5:16"]
+    },
+    {
+      "v": "28",
+      "context": "The goal of the whole sequence is covenant life in the land: you will live in the land I gave your fathers, you will be my people, and I will be your God. Gathering, cleansing, heart, and Spirit exist for this relationship.",
+      "grammar": "The covenant formula appears in the order people first, God second: vihyitem li le‘am ve’anokhi ’ehyeh lakhem le’lohim. The emphatic pronoun ’anokhi, ‘and I myself’, strengthens God's half. The land is described as ‘the land I gave your fathers’ with a plain perfect (natatti), so the promise is anchored in a past gift, not a new grant.",
+      "words": ["H3427", "H5414G", "H0001G", "H1961", "H0595", "H0430G"],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "The covenant formula, broken under Sinai, is promised again and this time secured from within by the new heart and the Spirit. Ezekiel's new covenant is the same as Jeremiah's in substance (Jeremiah 31:33), though Ezekiel names the Spirit as its means where Jeremiah names the law written on the heart."
+        }
+      ],
+      "refs": ["Jeremiah 31:33", "Ezekiel 11:20", "Ezekiel 37:27", "Revelation 21:3"]
+    },
+    {
+      "v": "29-30",
+      "context": "Salvation is described in two directions: God saves his people from their uncleanness, and he blesses their land with grain and fruit so that the reproach of famine never falls on them again. Holiness and harvest belong together.",
+      "grammar": "Vehosha‘ti ’etkhem mikkol tum’otekhem, ‘I will save you from all your uncleanness’, uses yasha‘ with the preposition min for rescue from a power; the impurities are treated as a captor. Veqara’ti ’el-haddagan, “I will summon the grain”, pictures God calling grain like a servant; elsewhere God ‘called for a famine’ (2 Kings 8:1; Psalm 105:16). The verb that summoned famine now summons harvest. Cherpat ra‘av, ‘the reproach of famine’, links the land's fertility to God's reputation: a famished people seemed abandoned by their God.",
+      "words": ["H3467", "H2932", "H7121G", "H1715", "H7458", "H6529", "H2781"],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "Salvation in this verse is rescue from uncleanness, not only from enemies or exile. Matthew's Gospel says the child will be called Jesus ‘because He will save His people from their sins’ (Matthew 1:21), the same kind of rescue: from the inward captor, not the outward one."
+        }
+      ],
+      "refs": ["2 Kings 8:1", "Psalm 105:16", "Joel 2:19", "Matthew 1:21"]
+    },
+    {
+      "v": "31-32",
+      "context": "Grace produces repentance. Once restored, the people will remember their evil ways and loathe themselves. The section closes as it began (verse 22): not for your sake, so be ashamed. Shame here is the clear sight of undeserved mercy, not despair.",
+      "grammar": "Uzekhartem, ‘you will remember’, is the fruit of restoration, not its condition; the order is grace, then remembrance. Unqottem bifnekhem, ‘you will loathe yourselves’, literally ‘you will feel loathing in your own faces’, is an expression Ezekiel uses of the survivors in exile (6:9) and of the restored people (20:43). The imperatives boshu vehikkalemu, ‘be ashamed and humiliated’, are not a curse but a call to see truly. Yivvada‘ lakhem, ‘let it be known to you’, a Niphal jussive, insists the point not be missed.",
+      "words": ["H2142", "H7451H", "H6962", "H8441", "H4616", "H0954", "H3637"],
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "In this passage repentance follows the gift of a new heart; it does not earn it. The sequence is found also in Ezekiel 16:62-63, where God's atonement leads his people to remember and be silent from shame. Christian theology has debated whether repentance precedes or follows regeneration; this text places deep repentance after renewal."
+        }
+      ],
+      "refs": ["Ezekiel 6:9", "Ezekiel 20:43", "Ezekiel 16:62-63", "Romans 6:21", "Romans 2:4"]
+    },
+    {
+      "v": "33-35",
+      "context": "The day of cleansing is the day of rebuilding. Passersby who once saw only desolation will say the land has become like the garden of Eden, and the ruined cities are fortified and inhabited. The inner renewal of verses 25-27 has an outer, visible counterpart.",
+      "grammar": "Beyom tahari ’etkhem, ‘on the day of my cleansing you’, ties the date of rebuilding to the moral event: restoration of the land waits on purification of the people. In verse 35 the people's words begin with a rare demonstrative, hallezu, ‘this very land’, which draws attention to the land as though pointing at it. The comparison ‘like the garden of Eden’ (kegan-‘eden) reverses Joel's picture of an army that finds the land ‘like the garden of Eden’ and leaves it a desert (Joel 2:3).",
+      "words": ["H2891", "H5771G", "H8074G", "H5647I", "H1977", "H1588M", "H5731B", "H1219"],
+      "theology": [
+        {
+          "id": "new-creation",
+          "note": "Eden is the Bible's picture of the world as God meant it, with God and people together. Isaiah 51:3 promises the same for Zion. The hope of a restored Eden runs through Ezekiel's temple river (47:1-12) to Revelation's tree of life (Revelation 22:1-2)."
+        }
+      ],
+      "refs": ["Joel 2:3", "Isaiah 51:3", "Genesis 2:8-10", "Revelation 22:1-2"]
+    },
+    {
+      "v": "36",
+      "context": "The surviving nations will draw the right conclusion from the rebuilt land: the LORD did this. The verse closes with the guarantee that seals several of Ezekiel's oracles, “I, the LORD, have spoken, and I will do it.”",
+      "grammar": "Baniti and nata‘ti, ‘I have rebuilt’ and ‘I have planted’, are perfects spoken from the vantage of the nations looking back on a finished work. They are the two constructive verbs of Jeremiah's call (Jeremiah 1:10). The closing formula, ’ani YHWH dibbarti ve‘asiti, ‘I, the LORD, have spoken and will do it’, joins the word and the deed; it appears also in 17:24, 22:14, and 37:14.",
+      "words": ["H1129", "H2040", "H5193", "H1696G", "H6213A"],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "God's word is the guarantee of his act. The nations will know the LORD not by argument but by seeing that what he said came to pass, the Bible's own test of true prophecy (Deuteronomy 18:22)."
+        }
+      ],
+      "refs": ["Ezekiel 17:24", "Ezekiel 37:14", "Jeremiah 1:10", "Deuteronomy 18:22"]
+    },
+    {
+      "v": "37-38",
+      "context": "One more surprise. God, who had refused to be consulted by the elders of Israel, will now let himself be sought by them, and he will multiply the people like the crowds of sacrificial flocks that filled Jerusalem at the festivals.",
+      "grammar": "’Iddaresh, ‘I will let myself be sought’, is a Niphal with a tolerative sense, God allowing himself to be inquired of. The same form, negated, was God's answer to the idolatrous elders: ‘As surely as I live, I will not be consulted by you’ (Ezekiel 20:3, 31; compare 14:3). The door to prayer that judgment closed is opened again. Verse 38 compares the people to tson qodashim, ‘flocks of holy things’, the animals consecrated for sacrifice.",
+      "words": ["H1875", "H7235A", "H6629G", "H6944G", "H4150H", "H3045"],
+      "history": "At the great festivals Jerusalem filled with flocks brought for sacrifice. The historical books record extraordinary numbers: 120,000 sheep at the dedication of Solomon's temple (1 Kings 8:63), and 30,000 lambs and kids given by Josiah for the Passover (2 Chronicles 35:7). Ezekiel, a priest who had known the temple courts before 597 BC, uses the memory of those festival crowds as a picture of a repopulated land.",
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "Restoration includes the restoration of prayer. A God who had said ‘I will not be consulted’ now invites Israel to ask, and promises to answer. The New Testament's confidence that believers may approach God boldly (Hebrews 4:16) rests on the same reopened access."
+        }
+      ],
+      "refs": ["Ezekiel 20:3", "Ezekiel 14:3", "1 Kings 8:63", "2 Chronicles 35:7", "Hebrews 4:16"]
+    }
+  ]
+}

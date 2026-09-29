@@ -1,0 +1,243 @@
+{
+  "verses": [
+    {
+      "v": "1-2",
+      "context": "The setting for all three parables. Tax collectors and sinners keep coming to hear Jesus, and the Pharisees and scribes keep complaining that he welcomes such people and eats with them. The complaint repeats the one made at Levi's banquet (5:30) and anticipates the one at Zacchaeus's house (19:7); everything that follows in the chapter answers it.",
+      "grammar": "Ēsan engizontes is a periphrastic imperfect (‘were drawing near’), describing a habit rather than one occasion, and pantes (‘all’) is Luke's emphatic generalization. Diegonguzon, also imperfect, is a compound of gonguzō, ‘to grumble’, with dia- adding intensity or spreading it among them: ‘they grumbled among themselves’. The Septuagint uses the same compound for Israel murmuring in the wilderness (Exodus 16:2, 16:7; Numbers 14:2), and Luke uses it again at 19:7. The charge has two present-tense verbs, prosdechetai (‘he receives, welcomes’) and sunesthiei (‘he eats with’): Jesus is accused of a practice, and houtos (‘this fellow’) is dismissive.",
+      "words": ["G1448", "G5057", "G0268", "G0191", "G1234", "G5330", "G1122", "G4327", "G4906"],
+      "history": "E. P. Sanders (Jesus and Judaism, 1985, chapter 6) argued that ‘sinners’ in the Gospels translates the Hebrew reshaim, ‘the wicked’, people who flagrantly and persistently broke the Law, such as moneylenders and collaborating tax farmers, and not ordinary people who were careless about the Pharisees' purity rules. On his reading, the scandal was that Jesus offered such people a place in the kingdom without first requiring the recognized marks of repentance, restitution and sacrifice. James D. G. Dunn (‘Pharisees, Sinners, and Jesus’, reprinted in Jesus, Paul and the Law, 1990) replied that ‘sinners’ was also a factional term, used by one Jewish group of others whose practice it judged unfaithful, as in the Psalms of Solomon, so that Pharisaic criticism could reach people other Jews thought observant enough. Both agree that sharing a table meant accepting the other person.",
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "Luke's summary is that the people furthest from the Law's standard are the ones drawing near to Jesus. Salvation in Luke moves toward the outsider first, and the verse sets up a chapter in which God's search for the lost is the explanation for Jesus' company."
+        }
+      ],
+      "refs": ["Luke 5:29-32", "Luke 7:34", "Luke 19:7", "Acts 11:3", "Exodus 16:2"]
+    },
+    {
+      "v": "3",
+      "context": "Jesus answers the grumbling with ‘this parable’, singular, though three stories follow. Luke treats the lost sheep, the lost coin, and the lost sons as one reply in three movements, each building on the last.",
+      "grammar": "Parabolē (‘parable’) in the Gospels covers a range from a one-line comparison to a full story; the word translates the Hebrew mashal, used of proverbs, riddles, and taunts as well as stories. The singular tautēn (‘this’) groups what follows as a unit. Pros autous (‘to them’) has the grumblers of verse 2 as its nearest reference, so the parables are addressed chiefly to the critics, with the tax collectors and sinners listening.",
+      "words": ["G2036", "G3850", "G3778"],
+      "refs": ["Luke 5:36", "Luke 14:7", "Luke 18:9", "Ezekiel 17:2"]
+    },
+    {
+      "v": "4",
+      "context": "The first story asks the listeners to imagine themselves as a shepherd: which of you would not go after a lost sheep? The question expects agreement, and by getting it Jesus makes the critics defend his own conduct before they notice.",
+      "grammar": "The question opens tis anthrōpos ex humōn, ‘what man among you’, a form Jesus uses to draw hearers into agreement (11:5, 14:28). Ou kataleipei (‘does he not leave?’) expects the answer yes. Apolesas (aorist participle) and to apolōlos (perfect participle, ‘the one that has been lost’) use apollumi, the chapter's key verb. Heōs heurē, ‘until he finds it’, is a temporal clause with the aorist subjunctive: the search has no set limit. Matthew's form of the story says ‘if he finds it’ (Matthew 18:13), leaving the result uncertain; Luke's wording assumes success. En tē erēmō, ‘in the open country’ or ‘wilderness’, names the uninhabited grazing land beyond the villages.",
+      "words": ["G0444", "G1540", "G4263", "G0622", "G2641", "G2048", "G2193", "G2147"],
+      "ot": [
+        {
+          "ref": "Ezekiel 34:11-16",
+          "note": "The story does not quote the Old Testament, but its picture is that of Ezekiel 34, where God, having condemned Israel's shepherds who did not seek the lost (34:4), declares that he himself will search for his sheep, seek the lost, and bring back the strayed. The Septuagint uses to apolōlos zētēsō, ‘the lost I will seek’ (34:16), the same participle as Luke. Luke's summary of Jesus' mission, that the Son of Man came to seek and to save the lost (19:10), uses the same vocabulary. By telling the story to religious leaders, Jesus sets them in the place of the shepherds Ezekiel indicted and himself in the place of the seeking God."
+        }
+      ],
+      "parallels": ["Matthew 18:12-14"],
+      "refs": ["Ezekiel 34:11-16", "Luke 19:10", "Psalm 119:176", "Isaiah 53:6", "John 10:11"]
+    },
+    {
+      "v": "5-6",
+      "context": "Finding the sheep leads straight to joy, and the joy is not kept private. The shepherd carries the animal home and calls his friends and neighbors to celebrate with him, the pattern the coin and the son will repeat.",
+      "grammar": "Chairōn (‘rejoicing’) is a present participle attached to the act of lifting the sheep: the carrying and the joy happen together. Sugkalei (‘he calls together’) and the imperative sugcharēte moi (‘rejoice with me’) both carry the prefix sun-, ‘with’: the finder's joy seeks company. Heuron to probaton mou to apolōlos, ‘I have found my sheep, the lost one’, puts the perfect participle in the emphatic final position.",
+      "words": ["G2147", "G2007", "G5606", "G5463", "G4779", "G5384", "G1069", "G4796", "G0622"],
+      "history": "Shepherds carried a sheep that was exhausted, frightened, or injured across the shoulders with its legs held in front, a posture shown in ancient art from Greek figures of a man carrying a calf or ram to the early Christian images of the Good Shepherd in the Roman catacombs. A lost sheep often lies down and refuses to move, which is why it has to be carried. The Gospel of Thomas, saying 107, tells a version in which the lost sheep is the largest of the flock and the shepherd says he loves it more than the ninety-nine, a change that turns the story toward the worth of the sheep rather than the shepherd's search.",
+      "refs": ["Isaiah 40:11", "Psalm 23:1-4", "John 10:11-14", "1 Peter 2:25"]
+    },
+    {
+      "v": "7",
+      "context": "Jesus draws the conclusion: heaven rejoices more over one repenting sinner than over ninety-nine righteous who need no repentance. The critics are left to decide which group they belong to.",
+      "grammar": "Houtōs (‘in the same way’) applies the story. Chara en tō ouranō, ‘joy in heaven’, is a reverent way of speaking of God's own joy, avoiding the divine name. Estai (‘there will be’) may be a logical future (‘there is bound to be’) or look to the final judgment. The phrase dikaiois hoitines ou chreian echousin metanoias, ‘righteous people who have no need of repentance’, is read two ways. Many take it as irony, since the grumblers only think themselves in no need; others read it straight, as in 5:31-32, where the healthy do not need a doctor, and hear Jesus granting the Pharisees their observance while insisting that heaven's greatest joy is over the lost.",
+      "words": ["G3779", "G5479", "G3772", "G0268", "G3340", "G1342", "G5532", "G3341"],
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "In the story the sheep does nothing but get found; in the application the found one is ‘one sinner who repents’. Luke's point is that repentance is the human side of being found by God. Amy-Jill Levine (Short Stories by Jesus, 2014) argues that neither sheep nor coin can repent and that Luke's applications in verses 7 and 10 narrow the stories; others answer that Luke never claims the sheep repents, only that the joy over finding it is the joy over a returning sinner."
+        }
+      ],
+      "refs": ["Luke 5:31-32", "Luke 18:9-14", "Ezekiel 18:23", "2 Peter 3:9"]
+    },
+    {
+      "v": "8",
+      "context": "The second story sets a woman beside the male shepherd. She has ten silver coins, loses one, and turns her house upside down to find it. The proportion narrows from one in a hundred to one in ten.",
+      "grammar": "The drachmē (‘drachma’) was a Greek silver coin, in this period roughly equal in value to the Roman denarius, a day's wage for a laborer (Matthew 20:2). Ouchi, a strengthened negative, again expects the answer ‘of course she does’. Three present-tense verbs follow in quick succession, haptei luchnon, saroi tēn oikian, zētei epimelōs (‘she lights a lamp, sweeps the house, searches carefully’), making the search vivid. Heōs hou heurē, ‘until she finds’, repeats verse 4.",
+      "words": ["G1135G", "G1406", "G1176", "G0622", "G3780", "G0681", "G3088", "G4563", "G3614G", "G2212", "G1960", "G2147"],
+      "history": "Village houses in Galilee and Judea had small windows or none, and floors of beaten earth or rough stone where a coin could lodge in a crack. Joachim Jeremias (The Parables of Jesus) suggested that the ten coins might have been her dowry, worn on a headdress, which would explain the urgency; the text does not say so, and others see simply the savings of a poor household. The woman is a figure for God's seeking love set in parallel with the shepherd, which Christian readers from the early church onward have noticed.",
+      "theology": [
+        {
+          "id": "god",
+          "note": "Jesus pictures God's search through a woman sweeping her house as readily as through a shepherd or a father. The seeking belongs to God's character, not to any one image of him."
+        }
+      ],
+      "refs": ["Matthew 20:2", "Isaiah 49:15", "Isaiah 66:13"]
+    },
+    {
+      "v": "9-10",
+      "context": "The woman calls her friends to celebrate, and Jesus applies the story in the same words as before: there is joy before God's angels over one sinner who repents. The second application is shorter, and it drops the comparison with the ninety-nine.",
+      "grammar": "Philas and geitonas are feminine forms (‘women friends and neighbors’), keeping the scene in the woman's world. Enōpion tōn angelōn tou theou, ‘in the presence of God's angels’, does not mean the angels are the ones rejoicing so much as that the joy takes place before them in heaven; like ‘in heaven’ in verse 7, it is a reverent way of speaking of God's own joy. Ginetai (‘there is, there comes to be’) is present tense, where verse 7 had the future: the joy is already happening whenever a sinner turns.",
+      "words": ["G2147", "G4779", "G5384", "G1069", "G4796", "G1406", "G0622", "G5479", "G1799", "G0032G", "G0268", "G3340"],
+      "theology": [
+        {
+          "id": "angels",
+          "note": "Angels are witnesses of what God does in human lives. Scripture elsewhere pictures them attending to the salvation of God's people (1 Peter 1:12, Hebrews 1:14); here they stand in the presence where heaven's joy over one person is expressed."
+        }
+      ],
+      "refs": ["Zephaniah 3:17", "1 Peter 1:12", "Hebrews 1:14", "Luke 15:7"]
+    },
+    {
+      "v": "11-12",
+      "context": "The third and longest story begins with a man and two sons. The younger asks for his share of the estate now, and the father divides his property between them. The second clause matters for the ending: the older son has received his share too (verse 31).",
+      "grammar": "Anthrōpos tis eichen duo huious, ‘a certain man had two sons’, opens the way many biblical stories of rival brothers do (Cain and Abel, Ishmael and Isaac, Esau and Jacob), and in most of them the younger is the one through whom the story moves. The son's request, dos moi to epiballon meros tēs ousias, ‘give me the share of the property that falls to me’, uses ousia (‘property, estate’). The narrator then says the father dieilen autois ton bion, ‘divided his living between them’: bios means livelihood, the means of life, and autois (‘to them’) includes both sons.",
+      "words": ["G0444", "G2192", "G1417", "G5207", "G3501", "G3962", "G1325", "G1911", "G3313", "G3776", "G1244", "G0979"],
+      "history": "Under the Law the firstborn received a double share (Deuteronomy 21:17), so with two sons the younger's share was a third. Jewish law allowed a father to give property during his lifetime while keeping its use and produce until death (m. Bava Batra 8:7 prescribes the formula ‘from today and after my death’), and Sirach 33:20-24 warns fathers not to hand over property while they live. Kenneth Bailey (Poet and Peasant, 1976; Finding the Lost, 1992) argued from long experience of Middle Eastern villages that such a request meant wishing the father dead. Amy-Jill Levine (Short Stories by Jesus, 2014) replies that no ancient source shows this, that the practice of dividing property early is attested, and that painting the father's world as harsh often serves to make Jesus look good at Judaism's expense.",
+      "refs": ["Deuteronomy 21:15-17", "Genesis 25:5-6", "Genesis 25:29-34", "Luke 12:13-15"]
+    },
+    {
+      "v": "13",
+      "context": "Within days the younger son turns everything into cash, travels to a far country, and scatters his wealth. Luke says only that he lived wastefully; the charge of prostitutes comes later from his brother (verse 30), not from the narrator.",
+      "grammar": "Sunagagōn panta, ‘having gathered everything together’, probably means converting his share into money, which would put the land beyond the family's reach. Apedēmēsen eis chōran makran, ‘he went abroad to a distant country’, implies Gentile territory. Dieskorpisen, ‘he scattered’, is the verb for winnowing grain, a vivid word for wasting money. Asōtōs, ‘wastefully’ or ‘recklessly’, is related to asōtia, the word Paul uses for the debauchery of drunkenness (Ephesians 5:18); the adverb itself says wasteful rather than specifically immoral.",
+      "words": ["G4863", "G3501", "G5207", "G0589", "G5561", "G3117", "G1287", "G3776", "G2198", "G0811"],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Sin in this story is first a departure: taking what the father gives and going as far from him as possible to spend it. The loss of the property follows from the loss of the relationship, which is the order of the Bible's first story of sin as well."
+        }
+      ],
+      "refs": ["Proverbs 29:3", "Ephesians 5:18", "Luke 16:1", "Genesis 3:23-24"]
+    },
+    {
+      "v": "14-16",
+      "context": "Everything is gone, famine strikes, and the son hires himself out to a local citizen who sends him to feed pigs. He would gladly eat the pigs' pods, and no one gives him anything. For a Jewish listener this is as low as a son of Israel can sink.",
+      "grammar": "Ekollēthē (‘he joined himself’, literally ‘was glued to’) describes attaching himself as a dependent to someone who did not want him. Boskein choirous, ‘to feed pigs’, makes his employer a Gentile. Epethumei is imperfect, ‘he kept longing’, and oudeis edidou autō, ‘no one was giving him anything’, also imperfect, describes an ongoing neglect: nobody fed him, so he looked at the pigs' food. Keratia (‘pods’) were the pods of the carob tree.",
+      "words": ["G1159", "G3042", "G5561", "G5302", "G2853", "G4177", "G1006", "G5519", "G1937", "G5526", "G2769", "G2068", "G3762", "G1325"],
+      "history": "The Law counted pigs unclean (Leviticus 11:7, Deuteronomy 14:8), and the Mishnah forbids Jews to raise them anywhere (m. Bava Kamma 7:7). Carob pods were fodder for animals and food for the very poor. A saying attributed to Rabbi Acha in Leviticus Rabbah 13:4 holds that when Israel is reduced to eating carobs, they repent, and the Talmud remembers the poverty of the holy man Hanina ben Dosa, who lived on a measure of carobs from one Sabbath eve to the next (b. Berakhot 17b).",
+      "text": "Most early manuscripts, followed by the modern critical editions, read chortasthēnai ek, ‘to be fed with’. Codex Alexandrinus and the later Byzantine copies read gemisai tēn koilian autou apo, ‘to fill his belly with’, which the King James Version follows and the BSB also reflects. The meaning is the same; the second is the blunter phrase.",
+      "refs": ["Leviticus 11:7", "Deuteronomy 14:8", "Deuteronomy 28:47-48", "Proverbs 23:21"]
+    },
+    {
+      "v": "17",
+      "context": "The turning point. The son comes to his senses and compares his hunger with the plenty in his father's house, where even the hired laborers have bread to spare.",
+      "grammar": "Eis heauton de elthōn, ‘coming to himself’, is an idiom for coming to one's senses. It has a Hebrew counterpart in 1 Kings 8:47, where the exiles ‘come to their senses’ (literally ‘return to their heart’) in the land of their captivity and repent. The misthioi are day laborers, hired and paid by the day, lower than household slaves because they had no place in the family. Perisseuontai artōn, ‘have bread in abundance’, answers limō apollumai, ‘I am perishing with hunger’: the verb is apollumi again, so he is ‘lost’ in both senses.",
+      "words": ["G1438", "G2064", "G5346", "G3407", "G3962", "G4052", "G0740", "G3042", "G0622"],
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "Interpreters disagree about how pure the son's motive is. Many readers from the church fathers on see here the beginning of true repentance. Others, including Kenneth Bailey and Amy-Jill Levine, hear a hungry man calculating how to eat. The story may intend both: repentance often begins in need, and the father's welcome does not wait to test the motive."
+        }
+      ],
+      "refs": ["1 Kings 8:47-48", "Psalm 119:59", "Lamentations 3:40", "Deuteronomy 24:14-15"]
+    },
+    {
+      "v": "18-19",
+      "context": "He rehearses a speech: a confession of sin against heaven and against his father, an admission that he is no longer worthy to be called a son, and a request to be taken on as a hired worker.",
+      "grammar": "Anastas poreusomai, ‘rising, I will go’, uses anistēmi, the verb Luke also uses for resurrection; verse 24 will call him dead and alive again. Hēmarton eis ton ouranon kai enōpion sou, ‘I have sinned against heaven and before you’, uses ‘heaven’ as a reverent substitute for God and distinguishes the two offenses. Poiēson me hōs hena tōn misthiōn sou, ‘make me like one of your hired workers’, is an aorist imperative: he proposes to earn his keep and repay, not to be restored as a son.",
+      "words": ["G0450", "G4198", "G3962", "G0264", "G3772", "G1799", "G0514", "G2564G", "G5207", "G4160G", "G3407"],
+      "ot": [
+        {
+          "ref": "Exodus 10:16",
+          "note": "The son's confession closely resembles Pharaoh's words to Moses and Aaron during the plague of locusts. The Hebrew reads ‘I have sinned against the LORD your God and against you’, and the Septuagint renders it hēmartēka enantion kuriou tou theou humōn kai eis humas. Pharaoh's confession was a bargain to end a plague, and he hardened his heart again as soon as it lifted. Kenneth Bailey argued that the echo marks the rehearsed speech as a tactic to get food; others take the words simply as the natural biblical form of confession and note that the father's welcome makes the question of motive moot."
+        }
+      ],
+      "refs": ["Exodus 10:16", "Psalm 51:4", "1 John 1:9", "Hosea 14:1-2"]
+    },
+    {
+      "v": "20",
+      "context": "The father sees him far off, is moved with compassion, runs, throws his arms around him, and kisses him, all before the son says a word. This is the emotional center of the chapter.",
+      "grammar": "Eti de autou makran apechontos, ‘while he was still far off’, is a genitive absolute, and it implies that the father had been watching the road. Esplagchnisthē, from splagchnizomai, ‘to be moved in one's inner parts’, is the verb Luke uses for Jesus at Nain (7:13) and for the Samaritan (10:33). Then come three verbs in rapid sequence: dramōn (‘running’), epepesen epi ton trachēlon autou (‘he fell on his neck’), and katephilēsen, a compound of phileō that is often intensive, ‘he kissed him warmly’ or ‘again and again’.",
+      "words": ["G0450", "G2064", "G3112", "G0568", "G1492H", "G3962", "G4697", "G5143", "G1968", "G5137", "G2705"],
+      "history": "Kenneth Bailey argued that a village patriarch would never run, since it meant hitching up his robes and exposing his legs, and that the father ran to reach his son before the village could shame him, perhaps through a ceremony called the kezazah, a breaking of a jar to cut someone off from the community. Levine and others object that the kezazah is described only in a later rabbinic text (y. Ketubbot 2:10) whose relevance to a first-century Galilean audience is doubtful, and that the parable itself hints at no such danger. The Pesikta Rabbati, a later rabbinic collection, has a parable of a king who tells his estranged son to return as far as he can and the king will come the rest of the way, which shows the same picture of a father going out to meet a son within Jewish tradition.",
+      "ot": [
+        {
+          "ref": "Genesis 33:4",
+          "note": "The Septuagint describes Esau's meeting with Jacob in words very close to Luke's: Esau ran (prosedramen) to meet him, embraced him, fell on his neck (epepesen epi ton trachēlon autou), and kissed him. The Hebrew likewise says he ran, embraced him, fell on his neck, and kissed him. In Genesis the brother who had been wronged runs to the brother who wronged him, and the feared encounter becomes a reconciliation. Joseph's reunions with his brothers and with Jacob use the same gesture (Genesis 45:14-15, 46:29). Luke's audience would have heard the father's welcome in the language of Israel's great family reconciliations."
+        }
+      ],
+      "theology": [
+        {
+          "id": "love",
+          "note": "The father's compassion moves before the confession. Love in this story is not a reward for repentance but the thing the returning son runs into, which is how the New Testament speaks of God's love coming first (Romans 5:8, 1 John 4:10)."
+        },
+        {
+          "id": "god",
+          "note": "The father who runs is Jesus' picture of the God he represents. He is neither indifferent to the son's sin nor waiting to punish it; he is watching for the son to come home."
+        }
+      ],
+      "refs": ["Genesis 33:4", "Genesis 45:14-15", "Luke 7:13", "Romans 5:8", "1 John 4:10"]
+    },
+    {
+      "v": "21",
+      "context": "The son begins his rehearsed speech, confessing his sin and unworthiness. He never reaches the request to be made a hired worker; the father interrupts with orders to his servants.",
+      "grammar": "The confession repeats verse 18 word for word through ouketi eimi axios klēthēnai huios sou, ‘I am no longer worthy to be called your son’. The present eimi (‘I am’) states how he sees himself now. He still addresses the father as pater, ‘Father’, the one title he does not surrender.",
+      "words": ["G5207", "G3962", "G0264", "G3772", "G1799", "G0514", "G2564G"],
+      "text": "Codex Sinaiticus, Codex Vaticanus, and Codex Bezae, among others, add the rest of the rehearsed speech, ‘make me like one of your hired workers’, so that the son finishes it. Most editors, including the committee behind the United Bible Societies' text as explained by Bruce Metzger, judge the words to be a scribal harmonization with verse 19, since copyists tended to make repeated speeches match. Without them, the story makes its point by the interruption: the father will not hear the son propose to become a servant.",
+      "refs": ["Luke 15:18-19", "Psalm 32:5"]
+    },
+    {
+      "v": "22-24",
+      "context": "The father restores the son with the best robe, a ring, and sandals, orders the fattened calf killed, and calls for a feast. His reason becomes the chapter's refrain: this son of mine was dead and is alive again, was lost and is found.",
+      "grammar": "The orders are a string of aorist imperatives, exenegkate, endusate, dote, thusate (‘bring out, clothe, give, kill’), with tachu (‘quickly’) in the best manuscripts at the head. Stolēn tēn prōtēn is ‘the first robe’, the finest. Euphranthōmen (‘let us celebrate’) is a hortatory subjunctive. The refrain pairs nekros ēn kai anezēsen (‘he was dead and has come back to life’) with ēn apolōlōs kai heurethē (‘he was lost and has been found’). The aorist passive heurethē leaves the finder unnamed. Ērxanto euphrainesthai, ‘they began to celebrate’, leaves room for the interruption that follows.",
+      "words": ["G3962", "G1401", "G5036", "G1627", "G4749", "G4413J", "G1746", "G1146", "G5266", "G3448", "G4618", "G2380", "G2165", "G3498", "G0326", "G0622", "G2147"],
+      "history": "The three gifts are signs of status. Pharaoh gave Joseph his signet ring, fine linen robes, and a gold chain when he raised him over Egypt (Genesis 41:42), and the returning son receives the first two. Sandals marked a free member of the household; slaves commonly went barefoot. A fattened calf was kept for a great occasion, and it provided far more meat than one family could eat, so the feast would include the neighbors.",
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "The son is restored to sonship, not hired as a worker. The robe, ring, and sandals are given, not earned, and they answer the request he never finished making. Salvation in this story is a status bestowed by the father."
+        },
+        {
+          "id": "regeneration",
+          "note": "‘Dead’ and ‘alive again’ are the father's words for estrangement and return, not literal death. The New Testament letters take up the same language for new birth: God made us alive together with Christ even when we were dead in our trespasses (Ephesians 2:4-5)."
+        }
+      ],
+      "refs": ["Genesis 41:42", "Zechariah 3:3-5", "Ephesians 2:4-5", "Galatians 4:6-7", "Isaiah 61:10"]
+    },
+    {
+      "v": "25-27",
+      "context": "The second act begins. The older son, coming in from the field, hears music and dancing, asks a servant what is happening, and learns that his brother is home and the fattened calf has been killed because his father has him back safe and sound.",
+      "grammar": "Sumphōnias kai chorōn, ‘music and dancing’, uses sumphōnia, literally ‘sounding together’. The same word, borrowed into Aramaic, names one of Nebuchadnezzar's instruments in Daniel 3:5, where translators have rendered it ‘bagpipe’ or ‘dulcimer’; interpreters differ whether here it means an instrument or simply music played together. Epunthaneto ti an eiē tauta, ‘he asked what these things might be’, uses the optative eiē, a polite and rather distant form of indirect question. The servant's answer reports the father's reason in his own terms: hugiainonta auton apelaben, ‘he has received him back healthy’. Nothing is said of repentance.",
+      "words": ["G5207", "G4245H", "G0068G", "G1448", "G3614G", "G0191", "G4858", "G5525", "G4341", "G3816", "G4441", "G1510", "G0080", "G2240", "G3448", "G4618", "G5198", "G0618"],
+      "refs": ["Daniel 3:5", "Exodus 15:20", "Psalm 150:4", "Jeremiah 31:13"]
+    },
+    {
+      "v": "28",
+      "context": "The older son is angry and refuses to go in. The father comes out to him too, as he went out to the younger, and pleads with him.",
+      "grammar": "Ōrgisthē (‘he became angry’) is an aorist, the onset of anger. Ouk ēthelen eiselthein is an imperfect, ‘he was unwilling to go in’, a settled refusal. Parekalei, also imperfect, means the father ‘kept urging’ or ‘kept pleading with him’. The father exelthōn (‘going out’) leaves his own feast, just as he left his dignity to run in verse 20. Both sons receive a father who comes out to meet them.",
+      "words": ["G3710", "G2309", "G1525", "G3962", "G1831", "G3870"],
+      "theology": [
+        {
+          "id": "god",
+          "note": "The father goes out to both sons. God's seeking love reaches the resentful and religious as surely as the reckless, and the parable pictures him pleading with the one who stands outside the celebration."
+        }
+      ],
+      "refs": ["Jonah 4:1-4", "Luke 7:29-30", "Luke 14:21-23", "Romans 10:21"]
+    },
+    {
+      "v": "29-30",
+      "context": "The older son's complaint: years of service, never a disobeyed command, never a goat to feast with friends, and now a calf for the one who wasted the father's property on prostitutes. His words mirror the Pharisees' grumbling of verse 2.",
+      "grammar": "He opens with idou (‘look’), not pater (‘Father’), the only speech by a son in the story without that address. Douleuō soi, ‘I have been slaving for you’, is a present tense of a continuing state (English uses the perfect), and douleuō is the verb for serving as a slave: he describes his sonship as bondage. Oudepote (‘never’) appears twice, once for his obedience and once for his father's gifts. Ho huios sou houtos, ‘this son of yours’, refuses to say ‘my brother’. Kataphagōn sou ton bion, ‘having devoured your living’, uses bios as in verse 12.",
+      "words": ["G2400", "G5118", "G2094", "G1398", "G3763", "G1785", "G3928", "G2056", "G5384", "G2165", "G5207", "G2719", "G0979", "G4204", "G3448", "G4618"],
+      "theology": [
+        {
+          "id": "justification",
+          "note": "The older son counts his standing by years of service and commands kept, which is why his father's generosity to his brother feels like injustice to him. The parable does not deny his obedience; it shows that obedience reckoned as wages cannot share the father's joy. Paul's contrast between a gift and wages (Romans 4:4-5) names the same difference."
+        }
+      ],
+      "refs": ["Luke 15:2", "Luke 18:11-12", "Matthew 20:10-15", "Romans 4:4-5"]
+    },
+    {
+      "v": "31-32",
+      "context": "The father answers gently: the older son is always with him and everything the father has is his, but celebration was the only fitting response, because this brother of his was dead and is alive, was lost and is found. The story ends without saying whether he goes in.",
+      "grammar": "Teknon, ‘child’, is warmer than huios, ‘son’, the word the older son used; the father answers coldness with affection. Panta ta ema sa estin, ‘all that is mine is yours’, reminds him that the property was already divided (verse 12). Edei, an imperfect of the impersonal dei, ‘it was necessary’, is the word Luke uses for God's necessity (2:49, 9:22, 24:26, 24:44): celebration was not optional. The refrain returns with one change: ho adelphos sou houtos, ‘this brother of yours’, answering ‘this son of yours’ in verse 30.",
+      "words": ["G5043", "G3842", "G1473", "G2165", "G5463", "G1163", "G0080", "G3498", "G2198", "G0622", "G2147"],
+      "theology": [
+        {
+          "id": "church",
+          "note": "The father's last word is ‘your brother’. The open ending asks whether the faithful son will accept his returned brother at the same table, the very issue Luke's churches faced with tax collectors, sinners, and Gentiles (Acts 11:1-18), and which every congregation faces when the prodigal comes home."
+        },
+        {
+          "id": "love",
+          "note": "The father's love for the older son is as patient as his love for the younger; he gives him the same assurance of belonging and the same invitation. The parable ends with an invitation left open, not a verdict."
+        }
+      ],
+      "refs": ["Luke 2:49", "Luke 19:10", "Acts 11:1-18", "Romans 15:7", "John 17:10"]
+    }
+  ]
+}

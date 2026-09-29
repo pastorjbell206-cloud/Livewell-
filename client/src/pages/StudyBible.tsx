@@ -46,15 +46,20 @@ import {
   fetchNotesIndex,
   fetchStory,
   fetchStoryline,
+  fetchVerseNotes,
   flattenStory,
   itemsForPassage,
+  noteForVerse,
   readProgress,
   spreadKinds,
   type BookIntro,
   type ChapterNote,
+  type Doctrine,
+  type VerseNote,
 } from "@/lib/bible-notes";
 import { Band, Credits, H2, H3, Pill, Prose, RelatedList, card, kicker, useLoad } from "@/pages/study-bible/shared";
 import { ChapterHead, ChapterNotesBody, OutlinePanel, useStoryPlace } from "@/pages/study-bible/ChapterNotes";
+import { VerseEntry } from "@/pages/study-bible/VerseNotes";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 const HEB: CSSProperties = { fontFamily: '"SBL Hebrew", "Ezra SIL", "Taamey Frank CLM", "Times New Roman", serif', direction: "rtl" };
@@ -143,9 +148,10 @@ function BookIndex({ books }: { books: BibleBook[] }) {
   );
   const nameOf = (slug: string) => books.find((b) => b.slug === slug)?.name ?? slug;
   const doors: { href: string; kicker: string; title: string; body: string }[] = [
-    { href: "/study/bible/story", kicker: "Start here", title: "The Story of the Bible", body: "The whole Bible as one story in eleven acts, from creation to new creation, with the history behind each act and every chapter in the order it happened." },
+    { href: "/study/bible/story", kicker: "Start here", title: "The Story of the Bible", body: "The whole Bible as one story in eleven acts, from creation to new creation, with the history behind each act and every chapter placed where it happened, as closely as the text allows." },
     { href: "#books", kicker: "Book by book", title: "The Sixty-Six Books", body: "An introduction to every book (who wrote it, when, why, and how it is built), then study notes on each of its chapters." },
     { href: "/study/bible/doctrines", kicker: "What it teaches", title: "The Doctrines", body: "God, creation, sin, covenant, Christ, salvation, the Spirit, the church, and the last things, each traced through every chapter that teaches it." },
+    { href: "/study/bible/guides", kicker: "New to the Bible?", title: "Guides and Tools", body: "What the Bible is, how the books were chosen, how the text reached us, how to read each kind of writing, and tables of the ancient world's money, measures, calendar, and kings." },
   ];
   return (
     <>
@@ -340,11 +346,52 @@ function BookPage({ books, book }: { books: BibleBook[]; book: BibleBook }) {
               </>
             )}
           </Band>
+          {(intro.text || intro.reception) && (
+            <Band tone="warm">
+              {intro.text && (
+                <>
+                  <H2>The text of {book.name}</H2>
+                  <Prose text={intro.text} />
+                </>
+              )}
+              {intro.reception && (
+                <>
+                  {intro.text && <div style={{ height: "var(--s-4)" }} />}
+                  <H2>How {book.name} has been read</H2>
+                  <Prose text={intro.reception} />
+                </>
+              )}
+            </Band>
+          )}
+          {intro.furtherReading && intro.furtherReading.length > 0 && (
+            <Band tone={intro.text || intro.reception ? "bone" : "warm"}>
+              <H2>Further reading</H2>
+              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "var(--s-4)" }}>
+                {([["first", "To start with"], ["pastor", "For the pastor's shelf"], ["scholar", "For deeper study"]] as const).map(([tier, label]) => {
+                  const list = intro.furtherReading!.filter((r) => r.tier === tier);
+                  if (list.length === 0) return null;
+                  return (
+                    <div key={tier}>
+                      <div style={{ ...kicker, marginBottom: "8px" }}>{label}</div>
+                      <ul style={{ listStyle: "none", margin: 0, padding: 0, display: "grid", gap: "10px" }}>
+                        {list.map((r) => (
+                          <li key={`${r.author}|${r.title}`} style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.55, color: "var(--ink)" }}>
+                            {r.author}, <i>{r.title}</i>{r.series ? ` (${r.series}${r.year ? `, ${r.year}` : ""})` : r.year ? ` (${r.year})` : ""}.{" "}
+                            <span style={{ color: "var(--ink-muted)" }}>{r.note}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  );
+                })}
+              </div>
+            </Band>
+          )}
         </>
       )}
 
       {related && related.length > 0 && (
-        <Band tone={intro ? "warm" : "bone"}>
+        <Band tone={!intro ? "bone" : intro.furtherReading?.length ? (intro.text || intro.reception ? "warm" : "bone") : intro.text || intro.reception ? "bone" : "warm"}>
           <H2>{book.name} on LiveWell</H2>
           <RelatedList items={related} />
         </Band>
@@ -383,6 +430,9 @@ function Reader({ books, book, chapter }: { books: BibleBook[]; book: BibleBook;
   const valid = chapter >= 1 && chapter <= book.chapters;
   const { data: note } = useLoad<ChapterNote>(valid ? `note-${book.slug}/${chapter}` : null, () => fetchNote(book.slug, chapter));
   const place = useStoryPlace(book.slug, chapter);
+  const { data: index } = useLoad("notes-index", fetchNotesIndex);
+  const hasVerseNotes = valid && (index?.withVerses ?? []).includes(key);
+  const { data: verseNotes } = useLoad<VerseNote[]>(hasVerseNotes ? `verse-notes-${key}` : null, () => fetchVerseNotes(book.slug, chapter));
   const data = loaded?.key === key ? loaded.data : null;
   const failed = failedKey === key;
 
@@ -432,7 +482,7 @@ function Reader({ books, book, chapter }: { books: BibleBook[]; book: BibleBook;
     );
   }
 
-  const panel = sel && data ? <StudyPanel books={books} book={book} chapter={chapter} sel={sel} setSel={setSel} lang={lang} onClose={() => setSel(null)} /> : null;
+  const panel = sel && data ? <StudyPanel books={books} book={book} chapter={chapter} sel={sel} setSel={setSel} lang={lang} data={data} verseNotes={verseNotes ?? null} onClose={() => setSel(null)} /> : null;
   const onVerse = (v: BibleVerse) => setSel({ kind: "verse", verse: v });
   const onWord = (v: BibleVerse, i: number) => setSel({ kind: "word", verse: v, index: i });
 
@@ -488,7 +538,7 @@ function Reader({ books, book, chapter }: { books: BibleBook[]; book: BibleBook;
                 Tap a verse number to study the verse{mode === "interlinear" ? ", or any word to study the word" : `. Switch to ${lang === "H" ? "Hebrew" : "Greek"} to see every word beneath the English`}.
               </p>
             )}
-            {note && <ChapterNotesBody books={books} book={book} chapter={chapter} note={note} data={data} place={place} onWord={onWord} onVerse={onVerse} />}
+            {note && <ChapterNotesBody books={books} book={book} chapter={chapter} note={note} data={data} place={place} verseNotes={verseNotes ?? null} onWord={onWord} onVerse={onVerse} />}
           </div>
           {wide && (
             <aside aria-label="Study panel" style={{ flex: "0 0 380px", position: "sticky", top: "88px", maxHeight: "calc(100vh - 110px)", overflowY: "auto", background: "var(--card)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", padding: "var(--s-4)" }}>
@@ -585,7 +635,7 @@ function Interlinear({ data, lang, sel, onVerse, onWord }: { data: BibleChapter;
 const panelH = { fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, letterSpacing: "0.16em", textTransform: "uppercase" as const, color: "var(--mustard-text)", margin: "var(--s-4) 0 8px" };
 const quietLink: CSSProperties = { color: "var(--ink)", textDecoration: "underline", textDecorationColor: "var(--mustard)", textUnderlineOffset: "3px", backgroundImage: "none" };
 
-function StudyPanel(props: { books: BibleBook[]; book: BibleBook; chapter: number; sel: NonNullable<Selection>; setSel: (s: Selection) => void; lang: "H" | "G"; onClose: () => void }) {
+function StudyPanel(props: { books: BibleBook[]; book: BibleBook; chapter: number; sel: NonNullable<Selection>; setSel: (s: Selection) => void; lang: "H" | "G"; data: BibleChapter; verseNotes: VerseNote[] | null; onClose: () => void }) {
   const { sel, onClose } = props;
   return (
     <div>
@@ -690,8 +740,10 @@ function WordStudy({ books, lang, word, sel, setSel }: { books: BibleBook[]; lan
   );
 }
 
-function VerseStudy({ books, book, chapter, verse, lang, setSel }: { books: BibleBook[]; book: BibleBook; chapter: number; verse: BibleVerse; lang: "H" | "G"; setSel: (s: Selection) => void }) {
+function VerseStudy({ books, book, chapter, verse, lang, setSel, data, verseNotes }: { books: BibleBook[]; book: BibleBook; chapter: number; verse: BibleVerse; lang: "H" | "G"; setSel: (s: Selection) => void; data: BibleChapter; verseNotes: VerseNote[] | null }) {
   const [related, setRelated] = useState<CatalogueItem[] | null>(null);
+  const { data: doctrines } = useLoad<Doctrine[]>("doctrines", fetchDoctrines);
+  const entry = verseNotes ? noteForVerse(verseNotes, verse.v) : null;
   useEffect(() => {
     let stale = false;
     fetchCatalogue()
@@ -707,6 +759,13 @@ function VerseStudy({ books, book, chapter, verse, lang, setSel }: { books: Bibl
   return (
     <div>
       <p style={{ margin: "10px 0 0", fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink)" }}>{verse.t || <i style={{ color: "var(--ink-muted)" }}>{LATER_NOTE}</i>}</p>
+
+      {entry && (
+        <>
+          <div style={panelH}>Study notes{entry.v.includes("-") ? ` on ${chapter}:${entry.v.replace("-", "–")}` : ""}</div>
+          <VerseEntry entry={entry} books={books} doctrines={doctrines} data={data} lang={lang} onWord={(v, i) => setSel({ kind: "word", verse: v, index: i })} />
+        </>
+      )}
 
       {verse.w.length > 0 && (
         <>

@@ -1,0 +1,185 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "‘Therefore’ draws the consequence of chapters 3-4, and especially of 4:25: since believers have been justified by faith, they have peace with God through Christ. Verses 1-11 describe what justification brings now and guarantees for the future, and the chapter as a whole opens the second main section of the letter (chapters 5-8).",
+      "grammar": "Dikaiōthentes, ‘having been justified’, is an aorist passive participle: the verdict has already been given, and God is its unnamed giver. Ek pisteōs, ‘by faith’, repeats the phrase of 1:17 and 3:26. Eirēnēn echomen pros ton theon, ‘we have peace toward God’, describes a changed relationship, the end of hostility (verse 10 calls the former state enmity), not first of all an inner feeling. Pros with the accusative here means ‘in relation to’. Dia tou kyriou hēmōn Iēsou Christou, ‘through our Lord Jesus Christ’, a phrase that recurs at the closing points of chapters 5-8 (5:11, 5:21, 6:23, 7:25, 8:39), marks Christ as the mediator of every blessing in this section.",
+      "words": ["G1344", "G4102G", "G1515", "G2192", "G2962G"],
+      "text": "The verb is one of the best-known variants in the New Testament. Most early manuscripts, including the first hands of Sinaiticus and Vaticanus, Alexandrinus, and Bezae, read echōmen, the subjunctive, ‘let us have peace’, and the Tyndale House edition, Westcott and Hort, and Tregelles print it. The Nestle-Aland and SBL editions and the Byzantine text read echomen, the indicative, ‘we have peace’. The two words were pronounced alike in Paul's day, so a scribe or the secretary taking dictation could easily write either. Editors who prefer the indicative argue that Paul is stating what justification has accomplished, not urging readers to obtain it; Stanley Porter (Journal of Biblical Literature, 1991) defended the subjunctive as an exhortation to enjoy the peace already given.",
+      "theology": [
+        { "id": "justification", "note": "Justification is a completed verdict with present results. The first result Paul names is peace with God: the objective end of estrangement, which is why the feelings of the believer do not determine whether it is real." },
+        { "id": "salvation", "note": "Peace with God is Israel's prophetic hope fulfilled. Isaiah promised that the servant's punishment would bring peace (Isaiah 53:5) and announced good news of peace (Isaiah 52:7); Paul says it has arrived through Christ." }
+      ],
+      "refs": ["Isaiah 53:5", "Isaiah 52:7", "Ephesians 2:14-17", "Colossians 1:20", "John 14:27"]
+    },
+    {
+      "v": "2",
+      "context": "Through Christ believers have been brought into the grace in which they now stand, and they boast in the hope of God's glory. The boasting that 3:27 excluded returns in a new form: not boasting in oneself but in what God will do. The glory humanity lacked (3:23) is now its hope.",
+      "grammar": "Prosagōgēn, ‘access’ or ‘introduction’, pictures being brought into the presence of a king or into the sanctuary (the verb prosagō is the Septuagint's word for bringing near an offering or a priest, Exodus 29:4). Eschēkamen, ‘we have obtained’, and hestēkamen, ‘we stand’, are both perfects: the access was gained and continues, the standing is settled. Kauchōmetha, ‘we boast’ or ‘we rejoice’, is the verb of 2:17 and 2:23, where the Jewish teacher boasted in God and the law. Ep' elpidi tēs doxēs tou theou, ‘in hope of the glory of God’, uses epi with the dative for the ground of the boast. Grammatically kauchōmetha could also be subjunctive, ‘let us boast’, the same ambiguity as echomen in verse 1, but the context favors the indicative.",
+      "words": ["G4318", "G2192", "G4102G", "G5485", "G2476", "G2744", "G1680", "G1391"],
+      "theology": [
+        { "id": "hope", "note": "The goal of justification is glory: the restoration of what humanity lost (3:23) and the sharing of God's own glory (8:18, 8:30). Christian hope looks to that future, and its certainty is the ground for present rejoicing." },
+        { "id": "glory", "note": "The glory of God is the believer's destiny, not only God's possession. Paul will say that those God justified he also glorified (8:30), as if the future were already done." }
+      ],
+      "refs": ["Ephesians 2:18", "Ephesians 3:12", "Hebrews 10:19-22", "Romans 8:18", "1 Peter 5:12"]
+    },
+    {
+      "v": "3-4",
+      "context": "Believers rejoice not only in future glory but in present sufferings, because suffering produces a chain of results that ends in hope. The argument circles back: hope was where verse 2 began, and verse 5 will say why it cannot fail.",
+      "grammar": "Ou monon de, alla kai, ‘not only so, but also’, is a phrase Paul uses three times in this chapter's first half (verses 3, 11) and in 8:23, 9:10. Kauchōmetha en tais thlipsesin, ‘we boast in the afflictions’, uses thlipsis, pressure or tribulation, a word the Septuagint uses for the distress of the last days (Daniel 12:1). Eidotes, ‘knowing’, a perfect participle, gives the reason. The chain uses katergazetai, ‘produces’, the same verb used in 4:15 of the law producing wrath. Hypomonē is endurance under pressure, not passive waiting. Dokimē, ‘proven character’, is the quality of something that has been tested and approved, like metal from the fire; in the New Testament the word occurs only in Paul. The rhetorical figure, in which each term picks up the last, is called a climax or sorites.",
+      "words": ["G2744", "G2347", "G6063", "G5281", "G2716", "G1382", "G1680"],
+      "history": "Chains of this kind were a teaching form in both Jewish and Greek writing. The Wisdom of Solomon (6:17-20) builds a chain from desire for instruction to love, to keeping laws, to incorruption, to nearness to God, to a kingdom. The New Testament has close parallels to Paul's chain in James 1:2-4 and 1 Peter 1:6-7, both of which say that the testing of faith produces endurance or proves faith genuine. The shared pattern suggests the early church taught this conviction widely.",
+      "theology": [
+        { "id": "suffering", "note": "Suffering is not a sign that hope has failed but one of its instruments. Paul does not say suffering is good in itself, but that God uses it to produce endurance and tested character, so that hope is strengthened rather than destroyed." },
+        { "id": "sanctification", "note": "The chain describes growth in holiness through testing. Character is formed under pressure, and the believer's endurance is itself evidence of God's work." }
+      ],
+      "refs": ["James 1:2-4", "1 Peter 1:6-7", "2 Corinthians 4:16-18", "Romans 8:18", "Hebrews 12:10-11"]
+    },
+    {
+      "v": "5",
+      "context": "Hope does not put to shame, because God's love has been poured into believers' hearts through the Holy Spirit. The verse joins hope, love, and the Spirit and prepares for verses 6-8, which show where God's love was demonstrated. It is the first mention of the Spirit in the letter since 2:29, and it anticipates chapter 8.",
+      "grammar": "Ou kataischynei, ‘does not put to shame’, echoes the Psalms' prayers that those who hope in God will not be ashamed (Psalm 22:5, 25:3, 20) and Isaiah 28:16, which Paul quotes in 9:33 and 10:11: hope will be vindicated at the judgment. Hē agapē tou theou, ‘the love of God’, is almost certainly a subjective genitive, God's love for us, since verse 8 defines it that way; Augustine, in On the Spirit and the Letter, read it as the love for God that the Spirit pours into believers, a reading that shaped medieval theology. Ekkechytai, ‘has been poured out’, is perfect passive: poured and still filling. The verb ekcheō is the Septuagint's word in Joel 2:28-29 for pouring out God's Spirit, which Peter quotes at Pentecost (Acts 2:17-18, 33). Dothentos, ‘given’, is aorist: the Spirit was given at a definite point, when believers came to faith.",
+      "words": ["G1680", "G2617", "G0026", "G1632", "G2588", "G4151G", "G0040G", "G1325"],
+      "theology": [
+        { "id": "spirit", "note": "The Holy Spirit is God's gift to every believer, and his work here is to make God's love known in the heart. The Spirit does not add a second love to God's love in Christ; he pours that love in, so that it is known by experience as well as by report." },
+        { "id": "love", "note": "Hope rests on love. The believer's confidence that hope will not disappoint is grounded not in the strength of the hope but in the love of God, already given and experienced." }
+      ],
+      "refs": ["Joel 2:28-29", "Acts 2:33", "Psalm 22:5", "Romans 8:15-16", "Galatians 4:6"]
+    },
+    {
+      "v": "6-7",
+      "context": "The ‘for’ explains how God's love was shown: Christ died for the ungodly when we were helpless, at the appointed time. Verse 7 makes the point by comparison with ordinary human love, which will rarely die even for the upright.",
+      "grammar": "The sentence begins and ends with eti, ‘still’: ‘while we were still weak, still at the right time’, a doubling some take as emphatic and others as an early scribal awkwardness. Asthenōn, ‘weak’ or ‘helpless’, describes inability, not merely frailty. Kata kairon, ‘at the right time’, echoes Galatians 4:4. Hyper asebōn apethanen, ‘he died for the ungodly’, uses hyper, ‘on behalf of’, which in contexts of dying for another carries the sense of substitution, and asebōn, the word of 4:5: God justifies the ungodly because Christ died for them. In verse 7 Paul distinguishes dikaios, ‘righteous’, from agathos, ‘good’ (with the article, tou agathou, ‘the good man’). Molis, ‘scarcely’, and tacha, ‘perhaps’, hedge each case.",
+      "words": ["G2089", "G0772G", "G2540", "G5228", "G0765", "G0599", "G3433", "G1342", "G0018", "G5111"],
+      "history": "Dying for another was honored in the Greek world. Plato's Symposium (179b) says only lovers are willing to die for others, citing Alcestis, who died in place of her husband. Andrew Clarke (Tyndale Bulletin, 1990) argued that ‘the good man’ of verse 7 is a benefactor, the patron whose generosity bound clients and cities to him; in the Roman world someone might dare to die for such a man, out of obligation and gratitude. Paul's contrast is then sharp: people might die for a benefactor, but Christ died for those who had been his enemies.",
+      "text": "Vaticanus reads ei ge, ‘if indeed’, instead of the first eti gar, ‘for still’, and Westcott and Hort printed it. The Textus Receptus and Byzantine text lack the second eti. The variation reflects scribes' efforts to smooth the doubled ‘still’.",
+      "theology": [
+        { "id": "atonement", "note": "Christ died on behalf of the ungodly. The phrase ‘for the ungodly’ explains how the God of 4:5 can justify them: the one who died took their place, at the time God appointed." }
+      ],
+      "refs": ["Galatians 4:4", "Romans 4:5", "1 Peter 3:18", "John 15:13", "2 Corinthians 5:14-15"]
+    },
+    {
+      "v": "8",
+      "context": "The contrast is completed: God demonstrates his own love in that while we were still sinners, Christ died for us. The death of Christ is presented as the proof of God's love, which means the cross is not something Christ does to change God's mind but something God does to show his heart.",
+      "grammar": "Synistēsin, ‘demonstrates’ or ‘proves’, is present tense: the cross goes on demonstrating God's love wherever it is proclaimed. The same verb in 3:5 described human wrong showing God's righteousness. Tēn heautou agapēn, ‘his own love’, places the reflexive pronoun first for emphasis: not ours, his. Eti hamartōlōn ontōn hēmōn, ‘while we were still sinners’, is a genitive absolute, describing the condition of the beneficiaries at the time. The logic assumes that Christ's death is God's own act of love; Paul does not separate the Father's love from the Son's death.",
+      "words": ["G4921", "G0026", "G2089", "G0268", "G5228", "G0599"],
+      "theology": [
+        { "id": "love", "note": "God's love precedes any change in the ones loved. It is not a response to human goodness but the cause of human reconciliation, as 1 John 4:10 says in similar terms." },
+        { "id": "atonement", "note": "Because the cross demonstrates God's own love, no account of the atonement can set a loving Son against an unwilling Father. The Father gave, and the Son gave himself (8:32, Galatians 2:20)." }
+      ],
+      "refs": ["1 John 4:9-10", "John 3:16", "Romans 8:32", "Galatians 2:20", "Ephesians 2:4-5"]
+    },
+    {
+      "v": "9",
+      "context": "The first ‘how much more’: if believers have now been justified by Christ's blood, they will much more be saved through him from the coming wrath. The argument runs from the greater to the lesser. Justifying sinners was the hard thing; keeping the justified safe at the judgment follows from it.",
+      "grammar": "Pollō oun mallon, ‘much more then’, introduces an argument from the greater to the lesser, which rabbinic interpreters called qal wachomer and listed first among Hillel's rules. Dikaiōthentes nyn en tō haimati autou, ‘having now been justified by his blood’, joins justification directly to Christ's death, as 3:25 did. Sōthēsometha, ‘we will be saved’, is future passive: salvation here means rescue at the last judgment, apo tēs orgēs, ‘from the wrath’, the wrath of 1:18 and 2:5. Paul uses ‘saved’ of the future more often than of the past, and here the future rests on the past act of justification.",
+      "words": ["G4183", "G3123G", "G1344", "G3568", "G0129G", "G4982", "G3709"],
+      "theology": [
+        { "id": "salvation", "note": "Salvation in Paul has past, present, and future tenses. Believers have been justified; they will be saved from wrath. The future is certain because it rests on what God has already done." },
+        { "id": "perseverance", "note": "If God justified sinners at the cost of his Son's blood, he will not abandon the justified. Paul's argument grounds the believer's security in God's completed work, a theme 8:31-39 develops." }
+      ],
+      "refs": ["1 Thessalonians 1:10", "1 Thessalonians 5:9", "Romans 8:31-34", "Romans 3:25", "Hebrews 9:14"]
+    },
+    {
+      "v": "10",
+      "context": "The second ‘how much more’ restates verse 9 in relational terms. If God reconciled his enemies through his Son's death, he will much more save the reconciled through his Son's life. The death reconciles; the risen life saves.",
+      "grammar": "Echthroi ontes, ‘being enemies’, may be active (we were hostile to God, 8:7) or passive (we were objects of God's hostility, the sense of the same word in 11:28); many interpreters think both are in view, given the wrath of 1:18. Katēllagēmen tō theō, ‘we were reconciled to God’, is aorist passive: God is the one who reconciles, and people are reconciled, never the reverse in Paul (2 Corinthians 5:18-20). Dia tou thanatou tou huiou autou, ‘through the death of his Son’, makes the Son's death the means. En tē zōē autou, ‘in his life’, can be instrumental (by his life) or locative (in union with his life); the second fits Paul's teaching on union with Christ in chapter 6.",
+      "words": ["G2190", "G2644", "G2288", "G5207", "G4183", "G4982", "G2222"],
+      "theology": [
+        { "id": "atonement", "note": "Reconciliation was accomplished through the Son's death while people were still enemies. God did not wait for his enemies to seek peace; he made it from his side, at his own cost." },
+        { "id": "union", "note": "Believers are saved ‘in his life’: the risen Christ's life is the sphere in which they live and the power that keeps them. Paul will develop this in 6:4-11, where the baptized share Christ's death and resurrection life." }
+      ],
+      "refs": ["2 Corinthians 5:18-21", "Colossians 1:21-22", "Romans 11:28", "Hebrews 7:25", "Romans 6:4-8"]
+    },
+    {
+      "v": "11",
+      "context": "The paragraph ends where it began, with boasting, now boasting in God himself through Christ, through whom believers have received reconciliation. The progression of boasts in this paragraph runs from hope (verse 2) to sufferings (verse 3) to God (verse 11).",
+      "grammar": "Kauchōmenoi, ‘boasting’, is a participle where a finite verb is expected, a loose construction that continues the thought of verse 10: ‘and not only reconciled, but boasting’. Kauchōmenoi en tō theō, ‘boasting in God’, is exactly what the Jewish teacher did in 2:17, now given its true ground. Katallagēn elabomen, ‘we received reconciliation’, uses the noun katallagē and the verb ‘received’, stressing that reconciliation is a gift taken, not a treaty negotiated. Nyn, ‘now’, marks the present reality, in contrast to the future salvation of verses 9-10.",
+      "words": ["G2744", "G2316", "G3568", "G2643", "G2983"],
+      "theology": [
+        { "id": "worship", "note": "The end of reconciliation is joy in God himself, not only in his gifts. The boast that was excluded in 3:27 is restored, redirected from self to God." },
+        { "id": "atonement", "note": "Reconciliation is received as a gift. The believer contributes nothing to the peace except receiving it, which is why boasting now rests in God alone." }
+      ],
+      "refs": ["Romans 2:17", "Jeremiah 9:23-24", "1 Corinthians 1:31", "Philippians 3:3", "Psalm 34:2"]
+    },
+    {
+      "v": "12",
+      "context": "‘Therefore’ introduces a comparison between Adam and Christ that explains how the one death of Christ can reach all. Sin entered the world through one man, death through sin, and death spread to all because all sinned. Paul begins the comparison (‘just as’) but breaks it off; verses 13-17 explain, and verse 18 finally completes it.",
+      "grammar": "Dia touto, ‘because of this’, may link to verses 1-11 or to the whole argument from 1:18. Hōsper, ‘just as’, opens a comparison, but the expected ‘so also’ never comes: kai houtōs, ‘and so’, introduces the next step of the Adam side, not the Christ side, and Paul interrupts himself at verse 13. The final phrase eph' hō pantes hēmarton is the most debated in the chapter. Most modern commentators (Cranfield, Dunn, Moo) take eph' hō as a conjunction, ‘because’, meaning ‘because all sinned’. The Latin Bible Augustine used rendered it in quo, ‘in whom’, taking the relative as referring to Adam, which grammar makes unlikely, since Adam is far back in the sentence and eph' does not mean ‘in’. Joseph Fitzmyer (New Testament Studies, 1993) argued for a consecutive sense, ‘with the result that all sinned’. John Meyendorff (Byzantine Theology, 1974) presented a reading he found in the Greek fathers, which takes the relative as ‘death’: ‘because of which (death) all sinned’, so that mortality, inherited from Adam, drives humanity into sin. Hēmarton is aorist, a constative that sums up all human sinning, or, as Augustinian readers take it, points to all sinning in Adam's one act.",
+      "words": ["G5618", "G0444", "G0266", "G1525", "G2889", "G2288", "G1330", "G1909", "G0264"],
+      "history": "Jewish writers before and around Paul reflected on the origin of death. The Wisdom of Solomon (2:23-24) says God created humans for incorruption but through the devil's envy death entered the world, using the same verb and phrase (eisēlthen eis ton kosmon) as Paul. Sirach (25:24) traces sin's beginning and death to the woman. Fourth Ezra (7:118), from about AD 100, laments that Adam's fall was not his alone but his descendants' also. In the church, Ambrosiaster (a Latin commentator of the late fourth century) and then Augustine in his writings against the Pelagians read in quo as ‘in Adam’, and the Council of Carthage (418) cited the verse against Pelagius. Erasmus, in his notes on the Greek New Testament (1516), pointed out that the Greek means ‘because’.",
+      "theology": [
+        { "id": "sin", "note": "Traditions read the verse differently. The Augustinian tradition, followed by Catholic teaching (Council of Trent, 1546) and the Reformers, sees all humanity involved in Adam's sin, whether by realism (all were present in Adam, the view of W. G. T. Shedd) or by federal headship (Adam as appointed representative, the view of Charles Hodge). Eastern Orthodox theology speaks of inherited mortality and corruption rather than inherited guilt, with each person sinning personally. Others stress that ‘because all sinned’ makes each person answerable for his own sins. All agree that humanity shares a condition it did not choose to begin and cannot end." },
+        { "id": "humanity", "note": "Humanity is one, bound together in its origin and its condition. Paul's thought depends on solidarity: the act of one representative can shape the destiny of many, which is exactly what makes Christ's act for the many intelligible." }
+      ],
+      "refs": ["Genesis 2:17", "Genesis 3:17-19", "1 Corinthians 15:21-22", "Romans 6:23"]
+    },
+    {
+      "v": "13-14",
+      "context": "Paul interrupts to support ‘all sinned’. Sin was in the world before the law of Moses, though sin is not formally charged where there is no law. Yet death reigned from Adam to Moses, even over those whose sin was not a transgression of an explicit command like Adam's. Adam is a pattern of the one to come.",
+      "grammar": "Achri gar nomou, ‘for until the law’, means until Sinai. Ellogeitai, ‘is charged to account’, is a rare commercial word, used in Philemon 18 of charging a debt to someone's account; sin without law is not entered in the ledger as transgression. Yet all' ebasileusen ho thanatos, ‘but death reigned’, personifies death as a king, the first of five uses of the verb ‘reign’ in verses 14-21. Epi tous mē hamartēsantas epi tō homoiōmati tēs parabaseōs Adam, ‘over those who did not sin in the likeness of Adam's transgression’, distinguishes sin in general from parabasis, the breaking of a known command (4:15). The generation between Adam and Moses died without such a command, which shows that death's reign rests on something beyond each person's own transgression. Hos estin typos tou mellontos, ‘who is a type of the one to come’, uses typos, an impression or pattern: Adam's role as head of humanity prefigures Christ's.",
+      "words": ["G3551", "G0266", "G1677", "G0936", "G2288", "G0076", "G3475", "G3667", "G3847", "G5179", "G3195"],
+      "history": "Readers have drawn different conclusions from ‘those who did not sin in the likeness of Adam's transgression’. Augustine applied the phrase to infants, who die though they have committed no personal sin, and used it to argue for original sin. Others think Paul means simply the generations before Sinai, who sinned but had no explicit commandment. The idea of Adam as a pattern for Christ was developed by Irenaeus of Lyons (Against Heresies 3.18 and 3.22, about AD 180), whose teaching of recapitulation presents Christ as reliving and reversing Adam's story at every point.",
+      "theology": [
+        { "id": "sin", "note": "Death's reign before the law shows that sin is more than breaking rules. Humanity is under a power that precedes and exceeds individual transgression, a power the law exposes but did not create." },
+        { "id": "messiah", "note": "Adam is a type of the coming one. The first man's role as head of a humanity prefigures Christ's role as head of a new humanity, with opposite results, which 1 Corinthians 15:45 names by calling Christ the last Adam." }
+      ],
+      "refs": ["Philemon 1:18", "Romans 4:15", "1 Corinthians 15:45-49", "Hosea 6:7", "Genesis 5:5"]
+    },
+    {
+      "v": "15",
+      "context": "Before completing the comparison, Paul insists on the difference: the gift is not like the trespass. If the many died by one man's trespass, much more has God's grace and gift overflowed to the many through the one man Jesus Christ. The comparison is never equal; grace exceeds.",
+      "grammar": "All' ouch hōs to paraptōma, houtōs kai to charisma, ‘but not as the trespass, so also the gift’, is a denial of simple equivalence. Paraptōma, ‘false step’ or ‘trespass’, and charisma, ‘gift of grace’, are set as rhymed opposites. Hoi polloi, ‘the many’, means all, as in the Semitic usage of Isaiah 53:11-12, where the servant bears the sin of ‘the many’; Joachim Jeremias argued that this inclusive sense stands behind Paul's use. Pollō mallon, ‘much more’, is the third such phrase in the chapter. Hē dōrea en chariti tē tou henos anthrōpou Iēsou Christou, ‘the gift by the grace of the one man Jesus Christ’, calls Christ ‘man’ to match Adam, and speaks of his own grace, a remarkable description of a man. Eperisseusen, ‘overflowed’, anticipates the ‘superabounded’ of verse 20.",
+      "words": ["G3900", "G5486", "G1520", "G4183", "G0599", "G3123G", "G5485", "G1431", "G0444", "G4052"],
+      "theology": [
+        { "id": "incarnation", "note": "Jesus Christ is ‘the one man’ set beside Adam. His true humanity is essential to Paul's argument: a new head of humanity must be human, yet the grace that flows from him is ‘the grace of God’." },
+        { "id": "salvation", "note": "Grace is not merely equal to the damage of sin; it overflows it. Whatever was lost in Adam, more is given in Christ." }
+      ],
+      "refs": ["Isaiah 53:11-12", "1 Corinthians 15:21-22", "1 Timothy 2:5", "2 Corinthians 9:15", "Ephesians 2:7"]
+    },
+    {
+      "v": "16-17",
+      "context": "Two more differences. First, one sin led to a verdict of condemnation, but the gift followed many trespasses and led to a verdict of acquittal. Second, death reigned through the one, but those who receive grace and the gift of righteousness will themselves reign in life through Jesus Christ.",
+      "grammar": "Verse 16 contrasts krima ex henos eis katakrima, ‘judgment from one (sin) resulting in condemnation’, with charisma ek pollōn paraptōmatōn eis dikaiōma, ‘the gift from many trespasses resulting in justification’. Dikaiōma here means a verdict of acquittal, balancing katakrima, ‘condemnation’; in verse 18 the same word will mean a righteous act. In verse 17 the parallel is broken deliberately. Death ebasileusen, ‘reigned’, but the other side is not ‘life will reign’; it is hoi... lambanontes... en zōē basileusousin, ‘those who receive will reign in life’. The redeemed are not merely freed from a tyrant; they share Christ's rule. The present participle lambanontes, ‘receiving’, and the phrase tēs dōreas tēs dikaiosynēs, ‘the gift of righteousness’, describe righteousness as a gift received, which bears on the meaning of ‘righteousness of God’ in 1:17.",
+      "words": ["G2917", "G2631", "G5486", "G3900", "G1345", "G0936", "G4050", "G1431", "G1343", "G2983", "G2222"],
+      "theology": [
+        { "id": "justification", "note": "Righteousness is called a gift, received. Whatever the nuances of ‘the righteousness of God’, this verse shows it includes a status given to believers, a point on which traditions that differ elsewhere largely agree." },
+        { "id": "kingdom", "note": "Those who receive grace will reign in life. Humanity's lost vocation to rule (Genesis 1:28) is restored in Christ, and the redeemed share his reign (2 Timothy 2:12, Revelation 5:10)." }
+      ],
+      "refs": ["Genesis 1:28", "2 Timothy 2:12", "Revelation 5:10", "Romans 8:1", "Romans 3:24"]
+    },
+    {
+      "v": "18",
+      "context": "‘So then’ completes the comparison begun in verse 12. One trespass led to condemnation for all people; one righteous act leads to justification and life for all people. The balanced sentence is the center of the passage.",
+      "grammar": "Ara oun, ‘so then’, is Paul's strongest inferential phrase. The sentence has no verbs; it is built of prepositional phrases in exact balance: di' henos paraptōmatos, ‘through one trespass’, and di' henos dikaiōmatos, ‘through one righteous act’. Henos is neuter here, ‘one trespass’, not ‘one man's trespass’ as in the King James Version, though the difference is slight. Dikaiōma, which meant a verdict in verse 16, here means a righteous deed, Christ's obedience in going to the cross (Philippians 2:8), or, as Reformed theology has argued, his whole life of obedience together with his death. Dikaiōsin zōēs, ‘justification of life’, uses a genitive of result: justification that brings life.",
+      "words": ["G0686", "G3767", "G3900", "G0444", "G2631", "G1345", "G1347", "G2222"],
+      "theology": [
+        { "id": "salvation", "note": "‘All men’ appears on both sides. Most interpreters, across traditions, read the second ‘all’ as all who are in Christ, as verse 17's ‘those who receive’ indicates, or as describing the scope of the offer; Christian universalists, from some early readers to David Bentley Hart (That All Shall Be Saved, 2019), take it as a promise that all will finally be saved. Paul's argument insists at least that Christ's act is as wide in its reach as Adam's." },
+        { "id": "atonement", "note": "One righteous act undoes the effects of one trespass. The atonement is not only the removal of guilt but the reversal of Adam's story by a second head of humanity whose obedience brings life." }
+      ],
+      "refs": ["Philippians 2:8", "1 Corinthians 15:22", "Romans 5:17", "2 Corinthians 5:14-15", "Colossians 1:20"]
+    },
+    {
+      "v": "19",
+      "context": "The ‘for’ explains verse 18 in terms of disobedience and obedience. Through one man's disobedience the many were constituted sinners; through one man's obedience the many will be constituted righteous. The contrast of Adam and Christ reaches its most concise form.",
+      "grammar": "Parakoē, ‘disobedience’, is literally a failure to hear, the opposite of hypakoē, ‘obedience’, literally hearing under; both words are built on akouō, ‘hear’. The key verb is kathistēmi, ‘to appoint’ or ‘to constitute’: katestathēsan, ‘they were made’ (aorist passive), and katastathēsontai, ‘they will be made’ (future passive). The verb elsewhere means to appoint to an office or to put someone into a condition (Acts 7:27, 2 Peter 1:8). Reformed interpreters read it forensically, constituted righteous in God's sight by imputation; Catholic interpreters, and others, read it as actually made righteous, a real transformation. The future may be logical (whoever will believe) or eschatological (at the last judgment).",
+      "words": ["G5618", "G3876", "G0444", "G0268", "G2525", "G5218", "G1342", "G4183"],
+      "theology": [
+        { "id": "justification", "note": "The many are constituted righteous through the obedience of one. Whether the verse describes a legal verdict, a real renewal, or both, it roots the believer's righteousness in Christ's obedience rather than in his own." },
+        { "id": "union", "note": "People belong to one of two heads. What each head did determines the standing of those who belong to him, which is why being ‘in Christ’, the theme of chapters 6-8, is everything for Paul." }
+      ],
+      "refs": ["Philippians 2:8", "Hebrews 5:8-9", "Isaiah 53:11", "2 Corinthians 5:21", "Genesis 3:6"]
+    },
+    {
+      "v": "20-21",
+      "context": "Where does the law fit in this story of two men? It came in so that the trespass would increase. But where sin increased, grace overflowed beyond it, so that as sin reigned in death, grace might reign through righteousness to eternal life. The chapter ends with Christ's name, as each of chapters 5-8 does, and its last line raises the objection 6:1 will answer.",
+      "grammar": "Pareisēlthen, ‘came in alongside’, is a double compound of erchomai with para and eis, suggesting that the law entered as a secondary factor in a drama whose main actors are Adam and Christ (a related word describes false brothers ‘slipping in’ in Galatians 2:4). Hina pleonasē to paraptōma, ‘so that the trespass might increase’, can express purpose (God intended the law to expose and multiply transgression) or result; Paul's argument in 7:7-13 supports purpose, in the sense that the law turns sin into conscious transgression. Hypereperisseusen, ‘superabounded’, is one of Paul's hyper- compounds, found elsewhere in the New Testament only in 2 Corinthians 7:4. In verse 21 sin and grace are two rulers: sin reigned en tō thanatō, ‘in death’, and grace basileusē dia dikaiosynēs, ‘may reign through righteousness’.",
+      "words": ["G3551", "G3922", "G4121", "G3900", "G0266", "G5248", "G5485", "G0936", "G2288", "G1343", "G2222", "G0166"],
+      "theology": [
+        { "id": "law", "note": "The law was never the solution; it entered to make sin's full extent visible. The Reformers called this its pedagogical use, driving people to grace. Paul will defend the law's goodness in chapter 7 while insisting it could not give life." },
+        { "id": "hope", "note": "Grace reigns to eternal life. The story that began with death entering the world ends, in Paul's telling, with life that has no end, and grace, not sin, has the last word." }
+      ],
+      "refs": ["Romans 6:1", "Romans 7:7-13", "Galatians 3:19", "1 Timothy 1:14", "Romans 6:23"]
+    }
+  ]
+}

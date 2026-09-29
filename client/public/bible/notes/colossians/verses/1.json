@@ -1,0 +1,657 @@
+{
+  "verses": [
+    {
+      "v": "1-2",
+      "context": "The letter opens in the standard ancient form: senders, recipients, greeting. Paul names himself an apostle by God's will and includes Timothy as a brother. The readers are called saints and faithful brothers in Christ, a description that already hints at the letter's concern that they remain faithful.",
+      "grammar": "Tois en Kolossais hagiois kai pistois adelphois can be read as two groups (‘to the saints and the faithful brothers’) or, more likely, as one group described twice, since a single article governs both adjectives: ‘to the holy and faithful brothers’. Pistos can mean ‘believing’ or ‘faithful’, and both senses may be heard. The greeting charis humin kai eirēnē (‘grace to you and peace’) joins a Christian adaptation of the ordinary Greek greeting chairein with the Hebrew blessing shalom.",
+      "words": [
+        "G0652",
+        "G2857G",
+        "G0040H",
+        "G4103",
+        "G5485",
+        "G1515"
+      ],
+      "text": "Many later manuscripts, followed by the King James Version, add ‘and the Lord Jesus Christ’ after ‘God our Father’, matching Paul's usual greeting. The earlier witnesses lack it, and modern editions print the shorter form, which is unusual among Paul's letters. The city's name also appears in some manuscripts as Kolassai, a spelling found in later Byzantine sources.",
+      "history": "Colossae lay in the Lycus valley in Phrygia, about 16 kilometers (10 miles) from Laodicea and a little farther from Hierapolis (4:13). Herodotus (7.30) calls it a great city of Phrygia in the fifth century BC, and Xenophon (Anabasis 1.2.6) describes it as populous and prosperous, but by Roman times it had been overshadowed by Laodicea on the main road. Tacitus (Annals 14.27) records that Laodicea was destroyed by an earthquake in AD 60 and rebuilt without Roman help; the later historian Orosius says Colossae and Hierapolis were struck too. If Colossians was written after that date, it does not mention the disaster, which some scholars take as a clue to its date.",
+      "refs": [
+        "Colossians 4:13-16",
+        "Philemon 1:1-2",
+        "Ephesians 1:1-2",
+        "Acts 19:10"
+      ]
+    },
+    {
+      "v": "3-4",
+      "context": "Paul's thanksgiving is prompted by news of the Colossians' faith in Christ and love for all the saints. He has not met them (2:1), so everything he knows he has heard, probably from Epaphras (verse 7).",
+      "grammar": "Eucharistoumen (‘we give thanks’) is a present tense of habitual action, and the participle proseuchomenoi (‘praying’) states when it happens. Pantote (‘always’) may attach to ‘we give thanks’ or to ‘praying’; the Greek allows either. Akousantes (‘having heard’) is causal: the report of their faith and love is the reason for thanks. The preposition in tēn pistin humōn en Christō Iēsou (‘your faith in Christ Jesus’) may describe the object of faith or the sphere in which faith lives; Paul usually uses eis or a genitive for the object of faith, so some read ‘your faith, which you have in Christ’.",
+      "words": [
+        "G2168",
+        "G3842",
+        "G4336",
+        "G0191",
+        "G4102G",
+        "G0026"
+      ],
+      "text": "Editions differ between peri humōn and huper humōn (‘concerning you’ or ‘on behalf of you’) in verse 3, and in verse 4 some manuscripts read tēn agapēn tēn eis (‘the love for’) instead of tēn agapēn hēn echete eis (‘the love which you have for’). Neither changes the sense.",
+      "refs": [
+        "Ephesians 1:15-16",
+        "Philemon 1:4-5",
+        "1 Thessalonians 1:2-3",
+        "Colossians 2:1"
+      ]
+    },
+    {
+      "v": "5-6",
+      "context": "Faith and love spring from the hope stored up in heaven, which the Colossians heard about in the gospel. That gospel is bearing fruit and growing all over the world, as it has among them. Paul stresses the gospel they already have, because the letter will warn against a teaching that claims to add to it.",
+      "grammar": "Dia tēn elpida, ‘because of the hope’, makes hope the ground of faith and love, an unusual order compared with 1 Corinthians 13:13. Elpis here is not the act of hoping but its object, the hope ‘laid up’ (apokeimenēn), a verb used of goods stored away or of a reward reserved. Proēkousate (‘you heard before’) means they heard it before the new teaching arrived. In verse 6 karpophoroumenon kai auxanomenon (‘bearing fruit and growing’) echoes the creation command of Genesis 1:28 (‘be fruitful and increase’), a pairing that will return in verse 10. Epegnōte (‘you came to know’) is the verb behind epignōsis, full knowledge, which is prominent in this letter.",
+      "words": [
+        "G1680",
+        "G0606",
+        "G4257",
+        "G2592",
+        "G0837",
+        "G1921",
+        "G0225"
+      ],
+      "text": "The Textus Receptus and the King James Version lack ‘and growing’ in verse 6 and add ‘and’ earlier in the sentence; the older manuscripts and modern editions have both participles.",
+      "theology": [
+        {
+          "id": "hope",
+          "note": "Hope is described as something objective and secure, kept in heaven, not a feeling that rises and falls. Faith and love are what that secure hope produces in the present."
+        },
+        {
+          "id": "mission",
+          "note": "The gospel's growth ‘in all the world’ echoes the creation blessing of fruitfulness. The spread of the message is presented as God's new creation filling the earth."
+        }
+      ],
+      "refs": [
+        "1 Peter 1:3-5",
+        "Genesis 1:28",
+        "Mark 4:8",
+        "Acts 12:24",
+        "1 Corinthians 13:13"
+      ]
+    },
+    {
+      "v": "7-8",
+      "context": "The Colossians learned the gospel from Epaphras, whom Paul calls a beloved fellow servant and a faithful minister of Christ. By commending him, Paul confirms that what they heard was the true gospel, not a lesser first stage to be completed by newer teachers. Epaphras has also brought Paul news of their love in the Spirit.",
+      "grammar": "Emathete (‘you learned’) is the verb for learning as a disciple, which makes Epaphras their teacher. Sundoulou (‘fellow slave’) puts Epaphras on the same level as Paul as a slave of Christ. Diakonos (‘minister’ or ‘servant’) is the word from which ‘deacon’ comes, but here it means a servant of Christ in general. En pneumati (‘in the Spirit’) is Colossians' only explicit mention of the Holy Spirit, and it describes love the Spirit creates.",
+      "words": [
+        "G3129",
+        "G1889",
+        "G4889",
+        "G1249",
+        "G4151G"
+      ],
+      "text": "The manuscripts divide between ‘on our behalf’ (huper hēmōn) and ‘on your behalf’ (huper humōn). ‘Our’ has strong early support and is followed by the BSB: Epaphras represented Paul in preaching at Colossae. ‘Your’ would mean he served Christ for the Colossians' sake.",
+      "history": "Epaphras was himself a Colossian (4:12) and seems to have evangelized the other cities of the Lycus valley as well (4:13). He was with Paul when this letter and Philemon were written, and Philemon 1:23 calls him Paul's fellow prisoner. His name may be a shortened form of Epaphroditus, but he is not to be identified with the Philippian messenger of that name.",
+      "refs": [
+        "Colossians 4:12-13",
+        "Philemon 1:23",
+        "Acts 19:10",
+        "Romans 15:30"
+      ]
+    },
+    {
+      "v": "9",
+      "context": "“For this reason” turns thanksgiving into intercession. Since the day he heard, Paul has prayed that they be filled with the knowledge of God's will in all spiritual wisdom and understanding. The words knowledge, wisdom, and fullness were probably also prized by the teachers the letter opposes (2:3, 2:8-10, 2:23), and Paul claims them for the gospel.",
+      "grammar": "Hina plērōthēte tēn epignōsin, ‘that you may be filled with the knowledge’, uses an aorist passive of plēroō, the verb of fullness that runs through the letter (1:19, 1:25, 2:9-10). The accusative epignōsin after a passive verb of filling is a normal Greek construction. Epignōsis is often translated ‘full knowledge’; the prefix epi may intensify it, though scholars debate how much it adds to gnōsis. Sophia (‘wisdom’) and sunesis (‘understanding’) are paired in the Septuagint, including the description of the Spirit resting on the Messiah in Isaiah 11:2. Pneumatikē (‘spiritual’) probably means given by the Spirit, not merely inward.",
+      "words": [
+        "G4137",
+        "G1922",
+        "G2307",
+        "G4678",
+        "G4907",
+        "G4152"
+      ],
+      "theology": [
+        {
+          "id": "wisdom",
+          "note": "Wisdom here is knowledge of God's will aimed at a way of life (verse 10). Against teachers who promised higher knowledge, Paul prays for a knowledge that issues in faithful conduct, not in esoteric experience."
+        },
+        {
+          "id": "prayer",
+          "note": "Paul's first request for the church is not for circumstances but for knowledge of God's will leading to a worthy life. The prayer is a pattern for intercession, asking for character and understanding before comfort."
+        }
+      ],
+      "refs": [
+        "Ephesians 1:16-17",
+        "Philippians 1:9-11",
+        "Isaiah 11:2",
+        "Colossians 2:2-3",
+        "James 1:5"
+      ]
+    },
+    {
+      "v": "10",
+      "context": "The purpose of the knowledge Paul prays for is a life worthy of the Lord and pleasing to him. Four participles in verses 10 to 12 describe it: bearing fruit, growing, being strengthened, and giving thanks.",
+      "grammar": "Peripatēsai axiōs tou kuriou, ‘to walk worthily of the Lord’, uses an infinitive of result: filling with knowledge leads to worthy walking. Areskeia (‘pleasing’) is found only here in the New Testament; in secular Greek it often meant obsequiousness toward people, but Paul turns it toward pleasing God. The phrase karpophorountes kai auxanomenoi repeats verse 6 exactly, now applied to believers: what the gospel does in the world, it does in them. Tē epignōsei tou theou may mean growing ‘by’ the knowledge of God (instrumental) or ‘in’ it; most prefer ‘in’.",
+      "words": [
+        "G4043",
+        "G0516",
+        "G0699",
+        "G2592",
+        "G0837",
+        "G1922"
+      ],
+      "theology": [
+        {
+          "id": "sanctification",
+          "note": "Knowledge of God and a changed life belong together in both directions: knowledge leads to fruit, and fruitful living deepens knowledge. The Christian life is pictured as growth, not a fixed state."
+        }
+      ],
+      "refs": [
+        "Ephesians 4:1",
+        "1 Thessalonians 2:12",
+        "Philippians 1:27",
+        "John 15:8",
+        "2 Peter 3:18"
+      ]
+    },
+    {
+      "v": "11-12",
+      "context": "Paul prays that they will be strengthened with God's power for endurance and patience, and that they will give thanks joyfully to the Father who qualified them for a share in the inheritance of the saints in light. The thanksgiving moves directly into the confession of verses 13 and 14.",
+      "grammar": "En pasē dunamei dunamoumenoi, ‘being empowered with all power’, is a cognate construction that doubles the idea of strength. Kata to kratos tēs doxēs autou, literally ‘according to the might of his glory’, is rendered by the BSB as ‘his glorious might’, but the genitive may also mean the might that belongs to his glory. The power is for hupomonē (endurance under pressure) and makrothumia (patience with people), not for spectacular displays. Meta charas (‘with joy’) may go with endurance or with giving thanks; the Greek punctuation is not fixed. Hikanōsanti (‘who qualified’) means made fit or sufficient. Merida tou klērou, ‘the portion of the lot’, uses the Septuagint language of Israel's allotment in Canaan, where the Levites had no ‘portion or inheritance’ among their brothers (Deuteronomy 10:9).",
+      "words": [
+        "G1411",
+        "G1412",
+        "G2904",
+        "G5281",
+        "G3115",
+        "G2427",
+        "G3310",
+        "G2819",
+        "G5457"
+      ],
+      "text": "Manuscripts differ between ‘qualified you’ and ‘qualified us’. A few manuscripts read ‘called’ instead of ‘qualified’, and at least one combines the two.",
+      "history": "The phrase ‘the lot of the saints in light’ has a close parallel in the Dead Sea Scrolls. The Community Rule (1QS 11:7-8) says God has given the chosen a share in the lot of the holy ones, and the scrolls frequently divide humanity into sons of light and sons of darkness (1QS 3:13-4:26). In the scrolls the holy ones are often angels; in Colossians the saints may be God's people or may include the angels, but the inheritance is received by grace, not by strict observance.",
+      "refs": [
+        "Deuteronomy 10:9",
+        "Acts 26:18",
+        "Ephesians 1:18",
+        "Ephesians 3:16",
+        "1 Peter 1:4"
+      ]
+    },
+    {
+      "v": "13",
+      "context": "God has rescued us from the domain of darkness and transferred us into the kingdom of his beloved Son. The language of rescue and transfer retells the exodus, and verse 14 completes it with redemption and forgiveness. These verses lead directly into the hymn to the Son (verses 15 to 20).",
+      "grammar": "Errusato (‘he rescued’) is the verb the Septuagint uses when God promises to rescue Israel from slavery in Egypt (Exodus 6:6, rhusomai). Exousia tou skotous, ‘the authority of darkness’, pictures darkness as a ruling power; the same phrase appears in Luke 22:53 at Jesus' arrest. Metestēsen (‘he transferred’) was used for moving whole populations from one land to another, as ancient empires resettled conquered peoples. Both verbs are aorist, describing a completed act. Tou huiou tēs agapēs autou, ‘the Son of his love’, is a Semitic way of saying ‘his beloved Son’, echoing the voice at Jesus' baptism.",
+      "words": [
+        "G4506",
+        "G1849",
+        "G4655",
+        "G3179",
+        "G0932",
+        "G5207",
+        "G0026"
+      ],
+      "history": "Josephus (Antiquities 12.147-153) reports that Antiochus III, about 200 BC, moved two thousand Jewish families from Mesopotamia and Babylonia into Lydia and Phrygia to secure the region. That settlement is one reason the Lycus valley had a notable Jewish population in Paul's day, and the verb for transfer in this verse would have called such resettlements to mind.",
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "‘The Son of his love’ recalls the royal Son of 2 Samuel 7:14 and Psalm 2:7 and the voice at Jesus' baptism. The kingdom believers enter is the messianic kingdom promised to David's heir, now ruled by the Son whom the hymn will describe as creator and head of all."
+        },
+        {
+          "id": "kingdom",
+          "note": "The kingdom is described as the kingdom of the Son, a present reality into which believers have already been moved. It is not only a future hope but a change of rule that has already happened."
+        },
+        {
+          "id": "salvation",
+          "note": "Salvation is pictured as a new exodus: rescue from one power and transfer under another. It is not self-improvement within the old domain but a change of lord."
+        }
+      ],
+      "refs": [
+        "Exodus 6:6",
+        "Luke 22:53",
+        "Acts 26:18",
+        "1 Peter 2:9",
+        "Mark 1:11"
+      ]
+    },
+    {
+      "v": "14",
+      "context": "In the Son, believers have redemption, which Paul defines as the forgiveness of sins. The exodus language of rescue (verse 13) is given its heart: the deepest slavery is guilt, and the deepest freedom is being forgiven.",
+      "grammar": "Echomen (‘we have’) is present tense: redemption is a present possession. Apolutrōsis originally meant release by payment of a ransom, as for a prisoner or slave; in the Septuagint the related verb describes God redeeming Israel from Egypt. The apposition tēn aphesin tōn hamartiōn (‘the forgiveness of sins’) explains redemption. Aphesis means release or cancellation, and was used of debts; the Septuagint uses it for the year of release in Leviticus 25.",
+      "words": [
+        "G2192",
+        "G0629",
+        "G0859",
+        "G0266"
+      ],
+      "text": "Some late manuscripts, followed by the King James Version, add ‘through his blood’, borrowed from the parallel in Ephesians 1:7. The earlier manuscripts lack it.",
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "Redemption is located in the Son (‘in whom’) and defined as forgiveness. The blood is not named here, but verse 20 and the parallel in Ephesians 1:7 connect this redemption to Christ's death."
+        }
+      ],
+      "refs": [
+        "Ephesians 1:7",
+        "Romans 3:24",
+        "Leviticus 25:10",
+        "Mark 10:45",
+        "Hebrews 9:15"
+      ]
+    },
+    {
+      "v": "15",
+      "context": "The hymn to Christ begins. Its first stanza (verses 15 to 17) celebrates the Son as the image of the invisible God and the firstborn of all creation, the one in whom, through whom, and for whom everything was made. The second stanza (verses 18 to 20) will mirror it with the Son as firstborn from the dead.",
+      "grammar": "Hos estin (‘who is’) opens the hymn with a relative pronoun, as in Philippians 2:6. Eikōn tou theou tou aoratou, ‘the image of the invisible God’, uses a present tense: the Son is, not merely was, the image. The paradox is deliberate, since an image makes visible, and the God who cannot be seen is seen in the Son. Prōtotokos pasēs ktiseōs, ‘firstborn of all creation’, is the verse's crux. The genitive can be partitive (‘the first of creation’, as if he were part of it) or a genitive of relationship or comparison (‘firstborn over all creation’, the BSB's rendering, or ‘before all creation’). Verse 16 immediately explains it with hoti (‘for’ or ‘because’): he is firstborn because all things were created in him, which places him on the Creator's side of the line. In the Septuagint prōtotokos often carries the sense of rank and heirship rather than birth order (see the Old Testament note).",
+      "words": [
+        "G1504",
+        "G0517",
+        "G4416",
+        "G3956",
+        "G2937"
+      ],
+      "ot": [
+        {
+          "ref": "Psalm 89:27",
+          "note": "God says of David's heir, in the Hebrew, ‘I will make him the firstborn (bekhor), the highest of the kings of the earth’; the Septuagint (Psalm 88:28) uses prōtotokos. The second line explains the first: firstborn means supreme rank. Israel as a nation is likewise called God's firstborn son (Exodus 4:22), a title of privilege, not of origin. Colossians uses the royal title for the Son who is heir and ruler of creation."
+        },
+        {
+          "ref": "Proverbs 8:22-31",
+          "note": "Personified Wisdom says the LORD possessed (or created) her at the beginning of his way, before the earth, and that she was beside him as a master workman. Jewish writers developed the image: the Wisdom of Solomon (7:26) calls Wisdom an image (eikōn) of God's goodness, and Philo calls the divine Word both image and firstborn. C. F. Burney (1926) argued that the hymn works through the senses of the Hebrew reshit, ‘beginning’, in Genesis 1:1 and Proverbs 8:22. Colossians takes the language used of Wisdom and applies it to a person, but where Proverbs 8:22 can say Wisdom was ‘created’, the hymn says all things were created in him."
+        }
+      ],
+      "history": "In the fourth century Arius and his supporters cited this verse to argue that the Son was the first and greatest of God's creatures. Athanasius replied in his Orations against the Arians (book 2) that ‘firstborn of creation’ describes the Son's relation to creation, not his origin, since the same passage says all things were made through him, and he distinguished ‘firstborn’ from ‘only begotten’ (John 1:18). The Council of Nicaea (325) confessed the Son as begotten, not made. In modern times the Jehovah's Witnesses' New World Translation inserts ‘other’ in verses 16 and 17 (‘all other things’), a word not in the Greek.",
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "The invisible God is made known in the Son, his image. The verse is one of the New Testament's plainest statements that to know Christ is to know God, which John 14:9 puts in Jesus' own words."
+        },
+        {
+          "id": "image",
+          "note": "Humanity was made in God's image (Genesis 1:26-27); the Son is the image of God. Paul elsewhere says believers are renewed after the image of their Creator (3:10), so the Son is both the original of which humanity is a copy and the pattern to which it is restored."
+        }
+      ],
+      "refs": [
+        "2 Corinthians 4:4",
+        "Hebrews 1:3",
+        "John 1:18",
+        "John 14:9",
+        "Romans 8:29"
+      ]
+    },
+    {
+      "v": "16",
+      "context": "The reason the Son is firstborn over creation: all things were created in him, visible and invisible, including every heavenly power. The verse ends by naming him as the agent and goal of all creation. For readers tempted to honor angelic powers (2:18), the list of thrones and authorities is pointed: every power they might fear or revere was made through Christ and for him.",
+      "grammar": "Hoti (‘for’) gives the reason for verse 15. The verse is framed by two statements with ta panta (‘all things’): ektisthē (‘were created’, aorist, the event of creation) and ektistai (‘have been created’, perfect, the continuing result). Three prepositions trace Christ's relation to creation: en autō (‘in him’, the sphere or plan of creation), di' autou (‘through him’, the agent), and eis auton (‘for him’, the goal). In Jewish thought the goal of creation was God himself (Romans 11:36), so eis auton places the Son where only God stood. Thronoi, kuriotētes, archai, exousiai (‘thrones, dominions, rulers, authorities’) are four ranks of spiritual powers; archai and exousiai return in 2:10 and 2:15, where Christ is their head and disarms them.",
+      "words": [
+        "G2936",
+        "G3707",
+        "G0517",
+        "G2362",
+        "G2963",
+        "G0746",
+        "G1849"
+      ],
+      "history": "What the ‘philosophy’ of 2:8 was remains debated, and this verse is part of the evidence. J. B. Lightfoot (1875) saw a Jewish teaching with ascetic and proto-Gnostic features; Martin Dibelius compared it with pagan mystery initiations; Fred Francis (1962) argued for a Jewish mysticism seeking visions of angelic worship; Morna Hooker (1973) questioned whether there were organized false teachers at all, seeing general pressures to conform; Clinton Arnold (The Colossian Syncretism, 1995) argued for local folk religion that invoked angels for protection. The list of powers in verse 16 fits any view that gave spiritual beings too large a place. A close parallel to the prepositions comes from the Stoic emperor Marcus Aurelius, who addresses Nature as the one from whom, in whom, and to whom are all things (Meditations 4.23).",
+      "theology": [
+        {
+          "id": "creation",
+          "note": "The Son is creation's origin, agent, and purpose. The verse names both the visible and invisible realms, so nothing in heaven or earth, including angels and spiritual rulers, exists independently of him."
+        },
+        {
+          "id": "angels",
+          "note": "Angelic and spiritual powers are creatures of Christ. Whatever rank they hold, they owe their existence to him, which is why the letter warns against the worship of angels (2:18)."
+        }
+      ],
+      "refs": [
+        "John 1:3",
+        "1 Corinthians 8:6",
+        "Hebrews 1:2",
+        "Romans 11:36",
+        "Ephesians 1:21"
+      ]
+    },
+    {
+      "v": "17",
+      "context": "The first stanza closes by stating the Son's priority and his continuing role: he is before all things, and in him all things hold together. Creation did not only begin through him; it continues through him.",
+      "grammar": "Kai autos estin pro pantōn, ‘and he is before all things’, uses the emphatic autos (‘he himself’) and the present tense estin, not ‘was’, much as John 8:58 has Jesus say ‘before Abraham was born, I am’. Pro may mean before in time or above in rank; both fit. Sunestēken (‘hold together’) is a perfect tense, stressing a continuing state: all things have their coherence in him. The verb was used by philosophers for the principle that keeps the universe a unified whole.",
+      "words": [
+        "G0846",
+        "G4253",
+        "G4921"
+      ],
+      "history": "Jewish wisdom writing had already spoken of what holds all things together. The Wisdom of Solomon (1:7) says the Spirit of the Lord has filled the world and that which holds all things together knows every voice, and Sirach 43:26 says that by God's word all things hold together. Philo describes the divine Word as the bond of the universe. Colossians gives this role to a person who lived and died in Judea.",
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The Son is not only creator but sustainer. The order and coherence of the world are ascribed to him, so that providence, God's continuing care of creation, is exercised through Christ."
+        }
+      ],
+      "refs": [
+        "Hebrews 1:3",
+        "John 8:58",
+        "Revelation 22:13",
+        "Acts 17:28"
+      ]
+    },
+    {
+      "v": "18",
+      "context": "The second stanza begins. The Son who is head over creation is also head of the body, the church. He is the beginning, the firstborn from the dead, so that he might be first in everything. Creation and new creation now meet in one person.",
+      "grammar": "Kai autos estin hē kephalē, ‘and he is the head’, continues the emphatic autos of verse 17. Tou sōmatos tēs ekklēsias, ‘of the body, the church’, puts the church in apposition to body. Scholars such as Ernst Käsemann and Eduard Lohse suggested that an earlier hymn called the cosmos Christ's body and that the author added ‘the church’; others, including N. T. Wright in The Climax of the Covenant (1991), argue the hymn was composed as a Christian poem and never had a cosmic body. Archē (‘beginning’) can mean origin, first principle, or ruler; with prōtotokos ek tōn nekrōn (‘firstborn from the dead’) it presents the resurrection as the start of new creation. Hina genētai en pasin autos prōteuōn, ‘that he might become first in all things’, uses genētai (‘become’): the resurrection makes his supremacy in the new creation actual. Prōteuōn (‘holding first place’) appears only here in the New Testament.",
+      "words": [
+        "G2776",
+        "G4983",
+        "G1577",
+        "G0746",
+        "G4416",
+        "G3498",
+        "G4409"
+      ],
+      "theology": [
+        {
+          "id": "church",
+          "note": "The one who rules creation is the head of the church. The church's life depends on its connection to him (2:19), and his headship over it anticipates his rule over everything."
+        },
+        {
+          "id": "resurrection",
+          "note": "Christ is the firstborn from the dead, the first to rise into the life of the age to come. The title implies others will follow, as Paul says in 1 Corinthians 15:20-23 with the image of firstfruits."
+        }
+      ],
+      "refs": [
+        "Ephesians 1:22-23",
+        "1 Corinthians 15:20-23",
+        "Revelation 1:5",
+        "Colossians 2:19",
+        "Romans 8:29"
+      ]
+    },
+    {
+      "v": "19",
+      "context": "The reason Christ holds first place: all the fullness was pleased to dwell in him. Paul will repeat and sharpen the claim in 2:9: in him the whole fullness of deity dwells bodily.",
+      "grammar": "The subject of eudokēsen (‘was pleased’) is uncertain. The Greek can mean ‘all the fullness was pleased to dwell in him’, with ‘fullness’ (plērōma) as a way of speaking of God himself, or ‘God was pleased to have all the fullness dwell in him’, with God understood as the subject (as the BSB supplies). Both readings come to the same claim: the fullness of God dwells in Christ. Katoikēsai (‘to dwell’) is the verb for permanent residence, not a temporary visit. Plērōma means the full content of something; in 2:9 Paul defines it as ‘the fullness of the Deity’.",
+      "words": [
+        "G2106",
+        "G4138",
+        "G2730"
+      ],
+      "ot": [
+        {
+          "ref": "Psalm 68:16",
+          "note": "The psalm pictures other mountains looking with envy at the mountain God desired for his dwelling (Hebrew chamad Elohim leshivto). The Septuagint (Psalm 67:17) reads ‘the mountain in which God was pleased (eudokēsen) to dwell (katoikein)’, the same two verbs as Colossians 1:19. Where the psalm has Zion, the hymn has Christ: God's chosen dwelling is now a person."
+        }
+      ],
+      "history": "In the second century, Valentinian Gnostic teachers made plērōma a technical term for the realm of divine emanations from which the lower world had fallen. That usage came after Colossians, and there is no firm evidence that the Colossian teachers used it; but Irenaeus (Against Heresies, book 1) shows how the word was later filled with meanings Paul's claim excludes, since Colossians puts the whole fullness in one person.",
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "God's whole fullness dwells in Christ, and 2:9 adds ‘bodily’. There is no part of God lacking in him and no need to seek divine fullness through other powers or practices."
+        },
+        {
+          "id": "temple",
+          "note": "The Septuagint wording of Psalm 68:16 makes Christ the new place of God's dwelling, as Zion and its temple were. John 1:14 and 2:21 make the same move with different images."
+        }
+      ],
+      "refs": [
+        "Colossians 2:9",
+        "John 1:14",
+        "John 1:16",
+        "Psalm 68:16",
+        "Ephesians 1:23"
+      ]
+    },
+    {
+      "v": "20",
+      "context": "The hymn's climax: through Christ God reconciles all things to himself, things on earth and in heaven, making peace through the blood of his cross. The creation made through him (verse 16) is restored through him, and the stanza that began with resurrection ends at the cross.",
+      "grammar": "Apokatallaxai (‘to reconcile’) depends on ‘was pleased’ in verse 19: God was pleased to reconcile. It is the same rare compound as Ephesians 2:16. Ta panta (‘all things’) matches the ‘all things’ of verse 16, so the scope of reconciliation is the scope of creation. Eis auton (‘to himself’) most likely means to God, though it could mean ‘to him’, the Son, as in verse 16. Eirēnopoiēsas (‘having made peace’) is found only here in the New Testament, and dia tou haimatos tou staurou autou, ‘through the blood of his cross’, grounds cosmic peace in a bloody execution. Many think this phrase was the author's addition to an existing hymn, anchoring its cosmic language in history.",
+      "words": [
+        "G0604",
+        "G1517",
+        "G0129G",
+        "G4716",
+        "G1093G",
+        "G3772"
+      ],
+      "text": "Some important manuscripts omit the second ‘through him’ (di' autou), which the major editions print; the repetition is emphatic but does not change the sense.",
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The cross is the means of reconciling not only individuals but ‘all things’. Christian readings differ on the scope. Origen and later universalists took it as the eventual restoration of all, including fallen powers; most interpreters, noting 2:15, read it as the pacification of the powers, brought back under God's rule by defeat rather than by salvation. All agree the verse ties the whole creation's healing to the cross."
+        },
+        {
+          "id": "new-creation",
+          "note": "The same ‘all things’ created through Christ are reconciled through him. Redemption is the restoration of creation, not escape from it, which is why Romans 8:19-21 can speak of creation itself set free."
+        }
+      ],
+      "refs": [
+        "Ephesians 1:10",
+        "Ephesians 2:14-16",
+        "2 Corinthians 5:18-19",
+        "Romans 8:19-21",
+        "Colossians 2:15"
+      ]
+    },
+    {
+      "v": "21",
+      "context": "Paul applies the hymn to the Colossians. The cosmic reconciliation has a personal history: they were once alienated and hostile in mind, shown in evil deeds. Verse 22 will give the ‘but now’.",
+      "grammar": "Kai humas (‘and you’) moves from ‘all things’ to the readers. Pote ontas (‘once being’) contrasts with nuni de (‘but now’) in verse 22. Apēllotriōmenous (‘alienated’) is a perfect participle of settled estrangement, the same word as Ephesians 2:12. Echthrous (‘enemies’ or ‘hostile’) is active, not merely distant. Tē dianoia (‘in mind’) locates the hostility in the thinking, a point relevant to a church being offered a new philosophy. En tois ergois tois ponērois (‘in evil works’) shows where the hostile mind is expressed.",
+      "words": [
+        "G4218",
+        "G0526",
+        "G2190",
+        "G1271",
+        "G4190"
+      ],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Sin is described as alienation and hostility toward God, expressed in the mind and in deeds. Reconciliation is needed because the relationship itself is broken, not only because rules have been broken."
+        }
+      ],
+      "refs": [
+        "Ephesians 2:12",
+        "Ephesians 4:18",
+        "Romans 5:10",
+        "Romans 8:7"
+      ]
+    },
+    {
+      "v": "22",
+      "context": "“But now” God has reconciled them through Christ's physical body by his death, to present them holy, unblemished, and blameless before him. The emphasis on his ‘body of flesh’ answers any teaching that downplayed the physical or sought reconciliation through spiritual beings.",
+      "grammar": "Apokatēllaxen (‘he reconciled’) is aorist active, God being the subject. En tō sōmati tēs sarkos autou, ‘in the body of his flesh’, is a heavy phrase that distinguishes Christ's physical body from his body the church (verse 18). The same Hebrew-sounding phrase appears in the Dead Sea Scrolls (1QpHab 9:2) for the physical body. Parastēsai (‘to present’) can be sacrificial (presenting an offering) or legal (presenting before a judge). Hagious, amōmous, anegklētous (‘holy, unblemished, blameless’) mix both: amōmos is used of unblemished sacrificial animals, and anegklētos of those against whom no charge can be brought.",
+      "words": [
+        "G0604",
+        "G4983",
+        "G4561",
+        "G2288",
+        "G3936",
+        "G0040G",
+        "G0299",
+        "G0410"
+      ],
+      "text": "Several early manuscripts, including Papyrus 46 and Codex Vaticanus, read a passive, apokatēllagēte (‘you were reconciled’), which leaves the sentence grammatically broken, since ‘you’ was accusative in verse 21. Some scholars prefer it as the harder reading that scribes smoothed; most editions print the active.",
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "Reconciliation happens in Christ's body of flesh through death. The physical, historical death of Jesus, not a spiritual ascent or an angelic mediator, is where God made peace."
+        },
+        {
+          "id": "sanctification",
+          "note": "The goal of reconciliation is a people presented holy and blameless before God. Holiness is both the result of Christ's work and the condition in which God intends to present his people."
+        }
+      ],
+      "refs": [
+        "Ephesians 5:27",
+        "Ephesians 1:4",
+        "Romans 5:10",
+        "Jude 1:24",
+        "Hebrews 10:10"
+      ]
+    },
+    {
+      "v": "23",
+      "context": "The condition: if they continue in the faith, stable and not shifted from the hope of the gospel they heard. That gospel has been proclaimed to all creation, and Paul is its servant. The warning prepares for chapter 2.",
+      "grammar": "Ei ge (‘if indeed’) introduces a condition that Paul expects to be fulfilled; ge adds emphasis. Epimenete (‘you continue’) is present tense, ongoing perseverance. Tethemeliōmenoi (‘founded’) and hedraioi (‘firm’) use building images, and mē metakinoumenoi (‘not being moved away’) pictures something shifted from its base. En pasē ktisei tē hupo ton ouranon, ‘in all creation under heaven’, is hyperbole for the gospel's wide reach, echoing verse 6. Egenomēn egō Paulos diakonos, ‘I, Paul, became a servant’, puts his own name emphatically.",
+      "words": [
+        "G1961",
+        "G2311",
+        "G1476",
+        "G3334",
+        "G2937",
+        "G1249"
+      ],
+      "theology": [
+        {
+          "id": "perseverance",
+          "note": "Reconciliation is presented as sure, but its enjoyment is tied to continuing in the faith. Reformed readers take the condition as the evidence of genuine faith; Arminian and Wesleyan readers take it as a real possibility of falling away. Both read it as a real warning with a confident tone."
+        }
+      ],
+      "refs": [
+        "Colossians 2:6-7",
+        "Hebrews 3:14",
+        "1 Corinthians 15:1-2",
+        "Ephesians 3:7",
+        "Mark 16:15"
+      ]
+    },
+    {
+      "v": "24",
+      "context": "Paul rejoices in his sufferings for the Colossians and describes them as filling up in his flesh what is lacking in Christ's afflictions for the sake of his body, the church. The chapter note sets out the main readings of this difficult verse; the grammar below adds what the words themselves allow.",
+      "grammar": "Antanaplērō (‘I fill up in turn’) is found only here in the New Testament. The prefix anti may suggest filling up in place of another or in response. Husterēmata (‘what is lacking’, plural) are the remaining shortfalls. Tōn thlipseōn tou Christou, ‘of the afflictions of Christ’, uses thlipsis, a word the New Testament never uses for Christ's atoning death, but often for the tribulations of God's people. That observation, made by many commentators, is a strong reason against reading the verse as a supplement to the cross. The genitive ‘of Christ’ may mean afflictions Christ suffers in his people or afflictions that belong to the messianic age. Huper tou sōmatos autou, ho estin hē ekklēsia, ‘for his body, which is the church’, plays on ‘in my flesh’: Paul suffers in his body for Christ's body.",
+      "words": [
+        "G3804",
+        "G0466",
+        "G5303",
+        "G2347",
+        "G4561",
+        "G4983",
+        "G1577"
+      ],
+      "history": "Roman Catholic teaching has drawn on this verse for the idea that believers' sufferings, united with Christ's, can be offered for the good of the church; Pope John Paul II's apostolic letter Salvifici Doloris (1984) develops it at length. Protestant interpreters have generally read it of the apostle's share in the sufferings that come with spreading the gospel, and some connect it with the Jewish expectation of a measure of suffering before the end.",
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "Paul does not merely endure his sufferings; he rejoices in them, because they are for the church and are joined to Christ's own afflictions. Suffering for others is part of the church's union with its head."
+        },
+        {
+          "id": "union",
+          "note": "Christ is so joined to his people that their afflictions can be called his (Acts 9:4). The verse assumes the union with Christ that the hymn has just described."
+        }
+      ],
+      "refs": [
+        "2 Corinthians 1:5-7",
+        "Philippians 3:10",
+        "Acts 9:4",
+        "2 Timothy 2:10",
+        "1 Peter 4:13"
+      ]
+    },
+    {
+      "v": "25",
+      "context": "Paul became a servant of the church by the stewardship God gave him: to bring the word of God to completion among the Gentiles. His suffering in verse 24 is part of that commission.",
+      "grammar": "Oikonomia (‘stewardship’ or ‘commission’) originally meant household management, the job of a steward who administered an estate for its owner. Paul is God's steward. Plērōsai ton logon tou theou, ‘to fulfill the word of God’, may mean to preach it fully (the BSB's ‘fully proclaim’) or to bring it to its intended completion by carrying it to the Gentiles, as in Romans 15:19, where Paul says he has ‘fully proclaimed’ (peplērōkenai) the gospel from Jerusalem to Illyricum.",
+      "words": [
+        "G1249",
+        "G3622",
+        "G4137",
+        "G3056"
+      ],
+      "theology": [
+        {
+          "id": "offices",
+          "note": "Ministry is described as stewardship, a trust given by God and exercised for the sake of the church. Paul's authority is derivative: he administers what belongs to God."
+        }
+      ],
+      "refs": [
+        "1 Corinthians 4:1-2",
+        "Ephesians 3:2",
+        "Romans 15:19",
+        "1 Corinthians 9:17"
+      ]
+    },
+    {
+      "v": "26",
+      "context": "The word Paul serves is a mystery: hidden for ages and generations but now revealed to God's saints. The mystery is not an initiation secret for a few but a revelation now made open.",
+      "grammar": "Mustērion in the mystery cults meant secret rites revealed only to initiates. In the Greek of Daniel (2:18-19, 2:27-30) it translates the Aramaic raz, a divine secret about the future revealed by God, and in the Dead Sea Scrolls raz names God's hidden plans made known to the community's teacher (1QpHab 7:4-5). Paul's usage comes from the Jewish sense. Apokekrummenon (‘hidden’) is a perfect participle of long concealment, and ephanerōthē (‘has been revealed’) is aorist, a definite disclosure. The phrase moves from ‘ages and generations’ to ‘now’, marking the turn of history.",
+      "words": [
+        "G3466",
+        "G0613",
+        "G0165G",
+        "G1074",
+        "G5319"
+      ],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "The mystery is open to all God's people, not a secret for spiritual elites. That claim quietly undercuts any teaching that promised hidden knowledge to the initiated."
+        }
+      ],
+      "refs": [
+        "Daniel 2:27-28",
+        "Romans 16:25-26",
+        "Ephesians 3:4-6",
+        "1 Corinthians 2:7-10"
+      ]
+    },
+    {
+      "v": "27",
+      "context": "God chose to make known among the Gentiles the riches of the mystery, which is “Christ in you, the hope of glory”. The content of the secret is a person dwelling among and within the Gentiles.",
+      "grammar": "Ēthelēsen (‘he willed’) stresses God's free choice. En tois ethnesin (‘among the Gentiles’) names where the mystery is disclosed. Christos en humin can mean ‘Christ in you’ (dwelling in each believer) or ‘Christ among you’ (present among the Gentile nations); since humin is plural and the context is the Gentiles, many prefer ‘among you’, though both senses may be intended. Hē elpis tēs doxēs, ‘the hope of glory’, calls Christ's presence the pledge of future glory: what they have now guarantees what is coming.",
+      "words": [
+        "G2309",
+        "G1107",
+        "G4149",
+        "G3466",
+        "G1484",
+        "G1680",
+        "G1391"
+      ],
+      "text": "Manuscripts divide between ‘what is (ti) the riches’ and ‘who is (tis) the riches’, and between ‘which is’ (ho) and ‘who is’ (hos) Christ. The neuter forms, printed by most editions, refer to the mystery; the masculine refers to Christ directly.",
+      "theology": [
+        {
+          "id": "hope",
+          "note": "The hope of glory is anchored in Christ's present indwelling. Christian hope rests not on speculation about the future but on who is already present."
+        },
+        {
+          "id": "mission",
+          "note": "The mystery is Gentile inclusion in Christ. What Israel's prophets glimpsed (Isaiah 49:6) is now the content of the proclamation."
+        }
+      ],
+      "refs": [
+        "Romans 8:10-11",
+        "Ephesians 3:6",
+        "Galatians 2:20",
+        "Romans 5:2",
+        "Isaiah 49:6"
+      ]
+    },
+    {
+      "v": "28-29",
+      "context": "Paul describes his ministry: proclaiming Christ, warning and teaching everyone with all wisdom, so as to present everyone mature in Christ. For this he labors and struggles, but by God's energy working powerfully in him.",
+      "grammar": "Katangellomen (‘we proclaim’) takes a personal object, ‘whom’: the message is a person. Nouthetountes (‘admonishing’, putting sense into someone) and didaskontes (‘teaching’) are the negative and positive sides of pastoral care. The triple panta anthrōpon (‘every man’) is emphatic, perhaps against teachers who offered perfection to a select few. Teleios can mean perfect, complete, or mature; in the mystery religions it could name the fully initiated, but here it describes maturity in Christ. In verse 29 kopiō (‘I toil’) is the verb for exhausting labor, and agōnizomenos (‘striving’) the athlete's struggle; kata tēn energeian autou tēn energoumenēn, ‘according to his energy that energizes’, is a cognate construction repeating the root, as in Philippians 2:13.",
+      "words": [
+        "G2605",
+        "G3560",
+        "G1321",
+        "G0444",
+        "G5046",
+        "G2872",
+        "G0075",
+        "G1753"
+      ],
+      "text": "Some later manuscripts, followed by the King James Version, read ‘in Christ Jesus’ at the end of verse 28; the earlier manuscripts have ‘in Christ’.",
+      "theology": [
+        {
+          "id": "sanctification",
+          "note": "The goal of ministry is maturity for every believer, reached by teaching and admonition centered on Christ. No inner circle holds a higher perfection."
+        },
+        {
+          "id": "leadership",
+          "note": "Paul's labor is real and exhausting, yet the power in it is God's. The pattern for Christian leadership is hard work that depends entirely on God's working."
+        }
+      ],
+      "refs": [
+        "Ephesians 4:13",
+        "1 Corinthians 15:10",
+        "Philippians 2:13",
+        "Colossians 3:16",
+        "Acts 20:31"
+      ]
+    }
+  ]
+}

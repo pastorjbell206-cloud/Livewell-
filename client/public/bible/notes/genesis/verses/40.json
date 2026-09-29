@@ -1,0 +1,158 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "A new episode begins with two royal servants who have offended the king. The verse brings Pharaoh's court into the story for the first time and, without Joseph's knowing it, begins to build the road that will lead him out of prison.",
+      "grammar": "The verb for the officials' offense is chateu, ‘they sinned’, a Qal of chata, the same verb Joseph used in 39:9 when he refused to ‘sin against God’. The contrast is deliberate: Joseph is in prison for refusing to sin, and these men will join him because they did. The two titles are participles used as nouns: mashqeh, ‘the one who gives drink’ (from shaqah, a Hiphil form), and ofeh, ‘the one who bakes’. The phrase acher haddevarim haelleh, ‘after these things’, is the same formula that introduced the temptation in 39:7.",
+      "words": ["H2398", "H4945A", "H0644", "H1697I"],
+      "history": "The cupbearer was a high court office in the ancient Near East, held by men close enough to the king to be trusted with what he drank. The Assyrian official called the Rabshakeh in 2 Kings 18:17 bears a title usually explained as ‘chief cupbearer’, and Nehemiah served the Persian king Artaxerxes in the same role.",
+      "refs": ["Genesis 39:9", "Nehemiah 1:11", "2 Kings 18:17"]
+    },
+    {
+      "v": "2-3",
+      "context": "Pharaoh's anger falls on both officials, and they are confined in the prison attached to the house of the captain of the guard, the same place where Joseph is held. The narrator names the place carefully so the reader sees the three men brought together.",
+      "grammar": "Vayyiqtsof, ‘he was angry’, from qatsaf, is a strong word for wrath, often used of God's anger against Israel (Deuteronomy 9:19). The two men are called his sarisim, the same title given to Potiphar in 39:1, and each is sar, ‘chief’, over his department: sar hammashqim and sar haofim. They were heads of the king's drink and bread services, not ordinary servants. Bemishmar, ‘in custody’, is a word for guard or confinement, used again of the brothers held under guard in 42:17.",
+      "words": ["H7107", "H5631", "H8269", "H4929"],
+      "refs": ["Genesis 39:1", "Genesis 39:20", "Genesis 42:17", "Proverbs 16:14"]
+    },
+    {
+      "v": "4",
+      "context": "The captain of the guard assigns Joseph to the two officials, and Joseph serves them. He has been trusted with the whole prison (39:22), and now he is attending two men of the court for a long stretch of time.",
+      "grammar": "Vayyifqod ... et yosef ittam, ‘he appointed Joseph with them’, uses paqad, the verb of appointment from 39:4-5, and it can be read as assigning Joseph to them or putting them under Joseph's charge. Vayshaaret otam, ‘he attended them’, repeats the Piel of sharat used in 39:4 when Joseph became Potiphar's attendant. The final phrase vayyihyu yamim bemishmar, literally ‘and they were days in custody’, means an indefinite period.",
+      "words": ["H6485J", "H8334", "H3117G"],
+      "text": "Interpreters differ on whether ‘the captain of the guard’ here is Potiphar himself, who holds that title in 37:36 and 39:1. If so, Potiphar is now entrusting the prisoner he jailed with the care of two royal officials, which some read as evidence that he never fully believed his wife. Others think the title belonged to more than one man over time, and the text does not settle it.",
+      "refs": ["Genesis 39:4", "Genesis 39:22", "Genesis 37:36"]
+    },
+    {
+      "v": "5",
+      "context": "On one night both men dream, and each dream has its own meaning. Genesis tells its dreams in pairs: Joseph's two dreams in chapter 37, these two, and Pharaoh's two in chapter 41. Each pair is a signal that something is settled.",
+      "grammar": "The verse is emphatic about both unity and difference: the dreams come balailah echad, ‘in one night’, yet each man dreams ish kefitron chalomo, ‘each according to the interpretation of his dream’. The phrase means that each dream fitted its own meaning, which Joseph will show is quite different for the two men. Pitron, ‘interpretation’, appears here for the first time in the Bible.",
+      "words": ["H2472", "H2492B", "H6623", "H0259"],
+      "refs": ["Genesis 37:5-10", "Genesis 41:1-7", "Genesis 41:32"]
+    },
+    {
+      "v": "6-7",
+      "context": "In the morning Joseph notices that the two men are troubled and asks them why. A prisoner who has been wronged still pays attention to the faces of the men he serves, and that attentiveness opens the scene.",
+      "grammar": "Vehinnam zoafim, ‘and behold, they were troubled’, uses a short form of hinneh, ‘behold’, with a pronoun attached, to put the reader in Joseph's eyes as he sees their faces. Zoafim, a participle of zaaf, describes a face marked by distress or vexation; the same word describes the faces the palace official fears will look worse in Daniel 1:10. Joseph's question, maddua penekhem raim hayyom, literally ‘why are your faces bad today’, uses ra, the ordinary word for bad or evil, in its sense of downcast. The Persian king uses almost the same words to his cupbearer Nehemiah: “Why is your face sad” (Nehemiah 2:2).",
+      "words": ["H2196", "H2005", "H7451A", "H6440H"],
+      "refs": ["Nehemiah 2:2", "Daniel 1:10", "Proverbs 15:13"]
+    },
+    {
+      "v": "8",
+      "context": "The officials explain that they have dreamed and have no interpreter. Joseph answers with a question that states the chapter's theology, and then asks them to tell him the dreams. He claims no skill of his own, and yet he offers himself as the one through whom God will speak.",
+      "grammar": "The officials' complaint is ufoter en oto, ‘and one interpreting it, there is none’, a participle of patar used as a noun: they lack a professional. Joseph's answer, halo lelohim pitronim, is a rhetorical question introduced by halo (‘is it not’), which expects the answer yes: interpretations belong to God. The plural pitronim makes the claim general, not only about these dreams. He follows immediately with sapperu na li, a Piel imperative with the polite particle na, ‘tell me, please’. The two statements belong together: the interpretation belongs to God, and God gives it through a servant.",
+      "words": ["H6622", "H6623", "H0430G", "H5608A"],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "Joseph denies that dream interpretation is a human technique and says it belongs to God. Revelation in Scripture is God's gift, not the product of expertise, and Daniel will make the same claim before Nebuchadnezzar (Daniel 2:27-28)."
+        }
+      ],
+      "refs": ["Genesis 41:16", "Daniel 2:27-28", "Amos 3:7", "Deuteronomy 29:29"]
+    },
+    {
+      "v": "9-11",
+      "context": "The cupbearer tells his dream: a vine with three branches that buds, blossoms, and ripens in a moment, and his own hands pressing the grapes into Pharaoh's cup and giving it to the king. The dream is full of his normal work, done freely.",
+      "grammar": "The growth is compressed into one breath: vehi kheforachat, ‘and as it was budding’ (a participle), then three perfects, alatah nitsah, hivshilu ashkelotehah anavim, ‘its blossom came up, its clusters ripened grapes’. A season's growth happens in a sentence, which suits a dream whose meaning is ‘soon’. The cupbearer then uses a string of first person verbs: vaeqqach (‘I took’), vaeschat (‘I squeezed’), vaetten (‘I put’). The verb sachat, ‘to squeeze’, occurs only here in the Old Testament. The cupbearer is the active subject of his own dream, a detail that will contrast with the baker's.",
+      "words": ["H1612", "H6524A", "H7818", "H3563A"],
+      "history": "Grapes were grown in Egypt, especially in the Nile Delta and the oases, and wine was a drink of the wealthy and the court. Paintings in tombs at Thebes, such as the tomb of Nakht, show grapes being picked from arbors and trodden in vats. The dream's direct squeezing of grapes into the king's cup is dream logic, collapsing the long work of the winepress into a single act.",
+      "refs": ["Genesis 49:11", "Psalm 80:8", "John 15:1"]
+    },
+    {
+      "v": "12-13",
+      "context": "Joseph gives the interpretation at once and without hesitation. The three branches are three days, and within three days Pharaoh will restore the cupbearer to his post.",
+      "grammar": "Zeh pitrono, ‘this is its interpretation’, is a flat, confident formula that Joseph will repeat to the baker in verse 18. The key idiom is yissa ... et roshekha, ‘he will lift up your head’. The expression can mean to take a count (a census is literally ‘lifting the head’ in Numbers 1:2) or to restore someone to favor, as when the Babylonian king released Jehoiachin (2 Kings 25:27, where the Hebrew uses the same phrase). Vahashivekha al kannekha, ‘and he will return you to your stand’, uses ken, ‘place’ or ‘office’, and kammishpat harishon, ‘according to the former custom’, promises a return to things exactly as they were.",
+      "words": ["H6623", "H5375G", "H7218A", "H3653"],
+      "refs": ["Numbers 1:2", "2 Kings 25:27", "Psalm 3:3"]
+    },
+    {
+      "v": "14",
+      "context": "Joseph turns from interpretation to request. For the first time in the story Joseph asks for something for himself, and what he asks is to be remembered and mentioned to Pharaoh.",
+      "grammar": "The request opens with ki im zekhartani, an unusual construction in which ki im introduces a strong plea, ‘only remember me’, and the verb is a perfect used for a request, sometimes called a precative perfect. The consecutive perfects that follow continue the plea: veasita na immadi chesed, ‘and please do kindness with me’, and vehizkartani, a Hiphil of zakar, ‘and cause me to be remembered’, that is, mention me. Joseph asks the cupbearer for chesed, the loyal kindness the LORD showed him in 39:21. The chapter will show whose chesed he can depend on.",
+      "words": ["H2142", "H2617A"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Joseph's trust in God does not keep him from asking for human help. The Bible does not treat faith and ordinary requests as rivals: Paul, too, appealed to Caesar (Acts 25:11) while confessing that his life was in God's hands."
+        }
+      ],
+      "refs": ["Genesis 39:21", "1 Samuel 25:31", "Luke 23:42", "Acts 25:11"]
+    },
+    {
+      "v": "15",
+      "context": "Joseph explains why he should be released. He was stolen from his homeland, and in Egypt he has done nothing to deserve prison. He names the injustice plainly, and he does not name his brothers or Potiphar's wife.",
+      "grammar": "Gunnov gunnavti, ‘I was surely stolen’, pairs an infinitive absolute with a finite verb of the same root, a Hebrew way of adding emphasis. Both are Pual, a passive stem: Joseph describes what was done to him without naming who did it. Ganav means to steal, and when its object is a person, to kidnap. The phrase ‘the land of the Hebrews’ appears nowhere else in the Bible; it is how Joseph describes his homeland to an Egyptian.",
+      "words": ["H1589", "H5680", "H0953A"],
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "Joseph neither pretends he deserves his suffering nor pours out accusation. The verse gives a pattern for speaking honestly about wrong done to oneself while leaving room for judgment and restraint about the wrongdoers."
+        },
+        {
+          "id": "law",
+          "note": "What Joseph's brothers did was later named a capital crime in Israel's law: “Whoever kidnaps another man must be put to death” (Exodus 21:16, see also Deuteronomy 24:7). Joseph's word ‘stolen’ is the law's word."
+        }
+      ],
+      "refs": ["Exodus 21:16", "Deuteronomy 24:7", "Genesis 37:28", "1 Peter 2:19-20"]
+    },
+    {
+      "v": "16-17",
+      "context": "The baker, encouraged by the good interpretation, tells his own dream. It mirrors the cupbearer's (three items, the king's food, the dreamer's own body) but with a disturbing difference: birds are eating Pharaoh's food off his head.",
+      "grammar": "The narrator notes that the baker spoke only when he saw ki tov patar, ‘that he had interpreted well’. His opening, af ani, ‘I also’, assumes his dream will mean the same thing. The contrast in verbs is striking. The cupbearer did everything himself; the baker does nothing. The only active verb in his dream is a participle describing the birds: vehaof okhel, ‘and the birds were eating’. He carries the king's food and cannot protect it.",
+      "words": ["H6622", "H5536", "H2751", "H5775"],
+      "history": "Carrying loads on the head was a familiar sight in Egypt. The Greek historian Herodotus, writing in the fifth century BC, remarked that in Egypt men carried burdens on their heads. Egyptian bakeries produced many kinds of bread and cakes, and the phrase ‘all food of Pharaoh, the work of a baker’ fits a royal kitchen with specialized products.",
+      "text": "The word chori in verse 16 occurs only here, and translators have understood it in different ways. The BSB, following one common view, reads ‘baskets of white bread’, connecting it with a root meaning white. Others render ‘cake baskets’, and some older translations read ‘white baskets’ or ‘baskets with holes’, that is, wicker baskets. The meaning of the dream does not depend on the choice.",
+      "refs": ["Genesis 40:9-11", "Genesis 41:17-24"]
+    },
+    {
+      "v": "18-19",
+      "context": "Joseph gives the second interpretation in the same words as the first, and then the words turn. In three days Pharaoh will lift the baker's head, but off his body, and the birds of the dream will eat his flesh.",
+      "grammar": "The formula is identical to verse 12 (zeh pitrono), and verse 19 begins exactly like verse 13: yissa pharaoh et roshekha, ‘Pharaoh will lift your head’. Then Joseph adds one word, meaalekha, ‘from upon you’, and the idiom of restoration becomes a sentence of death. Vetalah otekha al ets, ‘and he will hang you on a tree’, uses talah, the verb of Deuteronomy 21:22, where it describes hanging the body of an executed criminal for public display. The order of clauses suggests the baker is beheaded and his body displayed afterward.",
+      "words": ["H7218A", "H5375G", "H8518", "H6086H"],
+      "history": "Exposing an executed body was a mark of disgrace across the ancient Near East. Israel's law allowed a criminal's body to be hung on a tree but required burial the same day (Deuteronomy 21:22-23), and Paul later quotes that law in describing Christ's death as bearing the curse (Galatians 3:13).",
+      "refs": ["Deuteronomy 21:22-23", "Galatians 3:13", "2 Samuel 4:12", "Joshua 10:26"]
+    },
+    {
+      "v": "20",
+      "context": "The third day is Pharaoh's birthday. At a feast for all his servants, Pharaoh lifts up the heads of both officials in public. The narrator uses the same phrase for both men before their fates divide.",
+      "grammar": "The phrase yom hulledet et paroh, ‘the day of Pharaoh's being born’, uses a passive (Hophal) infinitive followed, unusually, by the object marker et. Grammarians treat this as an impersonal passive, ‘the day one bore Pharaoh’. The idiom vayyissa et rosh, ‘and he lifted up the head’, now describes a public review: Pharaoh brings both men out betokh avadav, ‘in the midst of his servants’, to render judgment before the whole court.",
+      "words": ["H3205", "H4960", "H5375G", "H8432"],
+      "history": "This is one of only two birthday celebrations the Bible explicitly names, and both belong to rulers. The other is Herod Antipas's birthday feast, at which John the Baptist is beheaded (Mark 6:21-28). Royal birthdays in Egypt were occasions for celebration and acts of royal favor; the Rosetta Stone (196 BC) records honors for Ptolemy V's birthday, a much later example of the custom.",
+      "refs": ["Mark 6:21-28", "Matthew 14:6-10", "Esther 1:3"]
+    },
+    {
+      "v": "21-22",
+      "context": "Both interpretations come true exactly. The cupbearer returns to his post and hands Pharaoh the cup; the baker is hanged. The narrator adds that it happened just as Joseph had interpreted.",
+      "grammar": "Verse 21 repeats the language of the dream and its interpretation almost word for word: vayyitten hakkos al kaf paroh, ‘and he put the cup on Pharaoh's palm’, the words of verse 11. The fulfillment matches the dream exactly. Verse 22 puts the object first (veet sar haofim talah, ‘but the chief baker he hanged’), a word order that sets the baker's fate against the cupbearer's. The closing clause, kaasher patar lahem yosef, ‘as Joseph had interpreted to them’, is the narrator's confirmation.",
+      "words": ["H7725H", "H3709G", "H8518", "H6622"],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The precise fulfillment establishes Joseph as a true interpreter before a witness at court. What looks like one more prison episode places the knowledge of Joseph's gift where Pharaoh will one day need it."
+        },
+        {
+          "id": "revelation",
+          "note": "The narrator's confirmation follows the test later given for a true prophet: what he says comes to pass (Deuteronomy 18:22). Joseph's words prove to be God's."
+        }
+      ],
+      "refs": ["Genesis 40:11", "Genesis 41:13", "Deuteronomy 18:22"]
+    },
+    {
+      "v": "23",
+      "context": "The chapter ends in silence. The restored cupbearer does not remember Joseph. Joseph has done everything right and is left in prison, and the next chapter opens two full years later.",
+      "grammar": "The verse says the same thing twice, first negatively and then positively: velo zakhar, ‘and he did not remember’, and vayyishkachehu, ‘and he forgot him’. The doubling makes the forgetting complete. Zakhar is the verb Joseph used in his plea (verse 14), and it is the verb Genesis uses when God remembers Noah (8:1) and Rachel (30:22). When the cupbearer finally speaks in 41:9, he says, “Today I recall my failures”, using the Hiphil of the same verb and a noun from chata, the root of his offense in 40:1.",
+      "words": ["H2142", "H7911"],
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "Joseph's suffering is extended by an ordinary human failing: someone he helped forgets him. The Bible does not make such delays meaningless or pretend they do not hurt; the next chapter shows God working through the delay without excusing the man who caused it."
+        },
+        {
+          "id": "providence",
+          "note": "Had the cupbearer spoken at once, Joseph might have been freed as an obscure slave. Remembered two years later, he is brought before Pharaoh at the moment Pharaoh needs him. The delay is part of the plan, though no one in the story can see it."
+        }
+      ],
+      "refs": ["Genesis 8:1", "Genesis 41:1", "Genesis 41:9", "Ecclesiastes 9:15", "Psalm 13:1"]
+    }
+  ]
+}

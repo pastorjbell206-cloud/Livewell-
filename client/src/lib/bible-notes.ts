@@ -4,8 +4,10 @@
  * vocabulary, plus the helpers that tie them to the rest of LiveWell.
  *
  * Files live in /bible/: notes/<slug>/intro.json, notes/<slug>/<n>.json,
- * story.json, doctrines.json, and notes-index.json (chapter titles, doctrine
- * lists, passage guides; built by scripts/build-bible-notes-index.mjs).
+ * notes/<slug>/verses/<n>.json (verse by verse), story.json, doctrines.json,
+ * doctrines/<id>.json (the doctrine studies), and the generated
+ * notes-index.json and doctrine-verses/<id>.json (built by
+ * scripts/build-bible-notes-index.mjs).
  */
 import { fetchJson } from "@/lib/fetch-json";
 import { readStoredJSON, writeStoredJSON } from "@/lib/storage";
@@ -26,6 +28,11 @@ export interface BookIntro {
   themes: { title: string; body: string }[];
   doctrines: string[];
   keyChapters: { ch: number; why: string }[];
+  /** Version 2: the book's textual history, how it has been read, and graded further reading. */
+  v?: number;
+  text?: string;
+  reception?: string;
+  furtherReading?: { tier: "first" | "pastor" | "scholar"; author: string; title: string; series?: string; year?: number; note: string }[];
 }
 
 export interface ChapterNote {
@@ -39,8 +46,57 @@ export interface ChapterNote {
   doctrines: { id: string; note: string }[];
   words: { s: string; note: string }[];
   christ: string;
-  hard?: { q: string; a: string };
+  hard?: HardQuestion | HardQuestion[];
+  questions: string[] | { observe: string[]; interpret: string[]; apply: string[] };
+  /** Version 2: how the chapter has been read, the text, and help for teaching it. */
+  v?: number;
+  interpretation?: string;
+  text?: string;
+  teach?: { big: string; outline: { v: string; t: string }[]; pitfalls: string; pastoral?: string };
+}
+
+export interface HardQuestion {
+  q: string;
+  a: string;
+}
+
+/** One or two hard questions, whichever shape the note uses. */
+export const hardQuestions = (n: ChapterNote): HardQuestion[] => (n.hard == null ? [] : Array.isArray(n.hard) ? n.hard : [n.hard]);
+
+/** One entry of a chapter's verse-by-verse notes (one to six verses). */
+export interface VerseNote {
+  v: string;
+  context: string;
+  grammar?: string;
+  words?: string[];
+  history?: string;
+  theology?: { id: string; note: string }[];
+  text?: string;
+  refs?: string[];
+  /** A New Testament verse's Old Testament source, or an Old Testament verse's New Testament use. */
+  ot?: { ref: string; note: string }[];
+  nt?: { ref: string; note: string }[];
+  parallels?: string[];
+}
+
+export interface DoctrineStudy {
+  id: string;
+  definition: string;
+  ot: string;
+  nt: string;
+  keyTexts: { ref: string; why: string }[];
+  history: string;
+  differ: { view: string; body: string }[];
+  errors: string;
+  life: string;
   questions: string[];
+}
+
+/** A verse note that teaches a doctrine, from doctrine-verses/<id>.json. */
+export interface DoctrineVerse {
+  k: string;
+  v: string;
+  note: string;
 }
 
 export interface StoryAct {
@@ -74,6 +130,12 @@ export interface Doctrine {
   page: string | null;
   summary: string;
   terms: string;
+  locus: string;
+}
+
+export interface Locus {
+  id: string;
+  name: string;
 }
 
 export interface NotesIndex {
@@ -82,6 +144,10 @@ export interface NotesIndex {
   taglines: Record<string, string>;
   /** Doctrine id → "slug/chapter" keys, in canonical order. */
   doctrines: Record<string, string[]>;
+  /** Doctrine id → how many verse notes teach it. */
+  doctrineVerses: Record<string, number>;
+  /** "slug/chapter" keys that have verse-by-verse notes. */
+  withVerses: string[];
   /** "slug/chapter" keys that have a passage guide at /theology/passage. */
   passages: string[];
 }
@@ -91,7 +157,10 @@ const isIntro = (x: unknown): x is BookIntro => obj(x) && typeof x.overview === 
 const isNote = (x: unknown): x is ChapterNote => obj(x) && typeof x.title === "string" && Array.isArray(x.outline);
 const isStory = (x: unknown): x is Story => obj(x) && Array.isArray(x.acts);
 const isStoryline = (x: unknown): x is { acts: StorylineAct[] } => obj(x) && Array.isArray(x.acts);
-const isDoctrines = (x: unknown): x is { doctrines: Doctrine[] } => obj(x) && Array.isArray(x.doctrines);
+const isDoctrines = (x: unknown): x is { doctrines: Doctrine[]; loci: Locus[] } => obj(x) && Array.isArray(x.doctrines) && Array.isArray(x.loci);
+const isVerses = (x: unknown): x is { verses: VerseNote[] } => obj(x) && Array.isArray(x.verses);
+const isStudy = (x: unknown): x is DoctrineStudy => obj(x) && typeof x.definition === "string" && Array.isArray(x.keyTexts);
+const isDoctrineVerses = (x: unknown): x is { verses: DoctrineVerse[] } => obj(x) && Array.isArray(x.verses);
 const isIndex = (x: unknown): x is NotesIndex => obj(x) && obj(x.titles) && obj(x.doctrines);
 
 const cache = new Map<string, Promise<unknown>>();
@@ -112,6 +181,42 @@ export const fetchNote = (slug: string, chapter: number) => cached(`/bible/notes
 export const fetchStory = () => cached("/bible/story.json", isStory);
 export const fetchStoryline = () => cached("/theology/biblical-theology-storyline.json", isStoryline).then((s) => s.acts);
 export const fetchDoctrines = () => cached("/bible/doctrines.json", isDoctrines).then((d) => d.doctrines);
+export const fetchLoci = () => cached("/bible/doctrines.json", isDoctrines).then((d) => d.loci);
+export const fetchVerseNotes = (slug: string, chapter: number) => cached(`/bible/notes/${slug}/verses/${chapter}.json`, isVerses).then((d) => d.verses);
+export const fetchStudy = (id: string) => cached(`/bible/doctrines/${id}.json`, isStudy);
+export interface GuideIndex {
+  groups: { id: string; name: string; intro?: string; guides: { id: string; title: string; summary: string }[] }[];
+}
+
+export interface Guide {
+  id: string;
+  title: string;
+  summary: string;
+  sections: { h: string; body: string; table?: { caption?: string; columns: string[]; rows: string[][] }; refs?: string[] }[];
+}
+
+const isGuideIndex = (x: unknown): x is GuideIndex => obj(x) && Array.isArray(x.groups);
+const isGuide = (x: unknown): x is Guide => obj(x) && typeof x.title === "string" && Array.isArray(x.sections);
+export const fetchGuideIndex = () => cached("/bible/guides/index.json", isGuideIndex);
+export const fetchGuide = (id: string) => cached(`/bible/guides/${id}.json`, isGuide);
+export const fetchDoctrineVerses = (id: string) => cached(`/bible/doctrine-verses/${id}.json`, isDoctrineVerses).then((d) => d.verses);
+
+/** The verse-note entry that covers a verse. */
+export function noteForVerse(notes: VerseNote[], verse: number): VerseNote | null {
+  return notes.find((n) => {
+    const [a, z] = verseRange(n.v);
+    return verse >= a && verse <= z;
+  }) ?? null;
+}
+
+/** "John 3:16", "Psalm 23", "Romans 1:18-3:20" → a Study Bible link, or null. */
+export function refHref(ref: string, books: BibleBook[]): string | null {
+  const m = ref.match(/^((?:[1-3] )?[A-Za-z]+(?: of [A-Za-z]+)?) (\d+)(?::(\d+))?/);
+  if (!m) return null;
+  const name = m[1].toLowerCase() === "psalm" ? "psalms" : m[1].toLowerCase();
+  const b = books.find((x) => x.name.toLowerCase() === name);
+  return b ? `/study/bible/${b.slug}/${m[2]}${m[3] ? `#v${m[3]}` : ""}` : null;
+}
 export const fetchNotesIndex = () => cached("/bible/notes-index.json", isIndex);
 
 // ── the story path ───────────────────────────────────────────────────────────

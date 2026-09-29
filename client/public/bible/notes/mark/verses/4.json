@@ -1,0 +1,731 @@
+{
+  "verses": [
+    {
+      "v": "1-2",
+      "context": "Mark returns Jesus to the lakeshore (compare 2:13 and 3:7-9) and gives the setting for the Gospel's first long block of teaching. The boat prepared in 3:9 is now used as a pulpit, with the crowd on the land and Jesus on the water, a picture of the division between hearers that the chapter will explore. Verse 2 announces the form of all that follows: teaching \"in parables\".",
+      "grammar": "Ērxato didaskein, ‘he began to teach’, is one of Mark's favorite ways of opening a scene, and the imperfects that follow (edidasken, ‘he was teaching’; elegen, ‘he was saying’) present the parables as a sample of an extended session, not a single speech. Sunagetai is a historic present, ‘is gathered’, which pulls the reader into the scene. The crowd is ochlos pleistos, a superlative, ‘a very large crowd’, the largest Mark has yet described. The Greek says literally that Jesus got into a boat ‘to sit in the sea’ (kathēsthai en tē thalassē); sitting was the posture of a Jewish teacher (compare Matthew 5:1, Luke 4:20). Mark always calls the lake thalassa, ‘sea’, following the Septuagint's use of the word for inland waters, while Luke, more exact, calls it limnē, ‘lake’ (Luke 5:1, 8:22).",
+      "words": [
+        "G0757",
+        "G1321",
+        "G4863",
+        "G4118",
+        "G2521",
+        "G2281",
+        "G3850"
+      ],
+      "parallels": [
+        "Matthew 13:1-3",
+        "Luke 8:4"
+      ],
+      "history": "A cove between Capernaum and Tabgha on the northwest shore forms a natural amphitheater. In a study published in the Biblical Archaeologist in 1976, B. Cobbey Crisler reported acoustic tests there showing that a speaker on the water could be heard by several thousand people on the slope. The test does not identify the spot of this sermon, but it shows that Mark's picture of a teacher in a boat addressing a crowd on the shore is physically plausible. Matthew adds that Jesus had come out of a house that day (13:1); Luke has no boat here and describes crowds gathering from town after town (8:4).",
+      "refs": [
+        "Mark 3:9",
+        "Mark 2:13",
+        "Luke 5:1-3",
+        "Matthew 13:1-2"
+      ]
+    },
+    {
+      "v": "3-4",
+      "context": "The parable opens with a double call to attention and a scene every Galilean had watched: a farmer broadcasting seed by hand. The first seed falls along the path, and birds take it before it can sprout. The story has four soils, three failures and one success, and it ends with an unexpected harvest.",
+      "grammar": "Akouete, ‘listen’, is a present imperative plural, and it is followed at once by idou, ‘look’. A Jewish hearer could scarcely miss the echo of the Shema, ‘Hear, O Israel’ (Deuteronomy 6:4, where the Septuagint has akoue), and the chapter will end the parable with the same verb (verse 9). Birger Gerhardsson argued in a 1968 article in New Testament Studies that the whole parable and its interpretation are shaped by the Shema's call to love God with heart, soul, and strength. Exēlthen ho speirōn speirai, ‘the sower went out to sow’, uses the cognate participle and infinitive of speirō, and the article with speirōn presents ‘the sower’ as a type, as English says ‘the farmer’. Ho men ... kai allo ... kai allo sets up a sequence of singular portions, each a handful of seed.",
+      "words": [
+        "G0191",
+        "G2400",
+        "G4687",
+        "G4098",
+        "G3598",
+        "G4071",
+        "G2719"
+      ],
+      "parallels": [
+        "Matthew 13:3-4",
+        "Luke 8:5"
+      ],
+      "history": "Joachim Jeremias argued in The Parables of Jesus that in Palestine the seed was sown first and then plowed in, so that sowing on the path was not careless: the path would be plowed under. He pointed to the order of the forbidden Sabbath labors in m. Shabbat 7:2, which lists sowing before plowing. K. D. White and others replied that the evidence points both ways and that fields were often plowed before sowing too. The birds have a sharper background: the Book of Jubilees (11:11), a second-century BC retelling of Genesis, says that Mastema, the prince of evil spirits, sent ravens and birds to eat the seed before it could be plowed in. Mark's own interpretation will say that the birds are Satan (verse 15). Luke adds that the seed on the path was also trampled (8:5).",
+      "refs": [
+        "Deuteronomy 6:4",
+        "Isaiah 55:10-11",
+        "Mark 4:15",
+        "Jeremiah 4:3"
+      ]
+    },
+    {
+      "v": "5-7",
+      "context": "The second and third soils fail more slowly than the first. On rocky ground the seed springs up at once and dies as quickly; among thorns it grows but is choked. Mark alone adds, at the end of verse 7, that it gave no fruit, which makes explicit that all three failures are failures to bear a crop.",
+      "grammar": "Petrōdes, ‘rocky ground’, describes not a field full of loose stones but a place where bedrock lies just under a thin layer of soil, which is why the seed sprouts fast (the soil warms quickly) and then withers (the roots cannot reach water). Mark gives two causal clauses built the same way, dia to mē echein bathos gēs, ‘because it had no depth of soil’, and dia to mē echein rhizan, ‘because it had no root’, and the repeated construction ties the quick growth and the quick death to the same cause. Euthus, ‘immediately’, is Mark's signature adverb; here it describes the shallow seed's sprouting, and verse 16 will use it again of the shallow hearer's joy and verse 17 of his falling away. Sunepnixan, ‘choked’, has the sense of strangling, and karpon ouk edōken, ‘it gave no fruit’, closes the three failures on a flat negative.",
+      "words": [
+        "G4075",
+        "G2112",
+        "G0899",
+        "G4491",
+        "G3583",
+        "G0173",
+        "G4846",
+        "G2590"
+      ],
+      "parallels": [
+        "Matthew 13:5-7",
+        "Luke 8:6-7"
+      ],
+      "text": "Luke abbreviates the rocky soil, saying only that the seed withered because it had no moisture (8:6). Matthew follows Mark closely but, like Luke, drops Mark's closing clause that the choked seed yielded no crop.",
+      "refs": [
+        "Jeremiah 4:3",
+        "Hosea 10:12",
+        "Genesis 3:17-18",
+        "Mark 4:16-19"
+      ]
+    },
+    {
+      "v": "8-9",
+      "context": "The last seed falls on good soil and yields thirty, sixty, and a hundred times what was sown. The parable's weight falls here: whatever is lost along the way, the sowing ends in an abundant harvest. Verse 9 is a summons to the hearer, not a closing formula.",
+      "grammar": "Mark shifts from the singular (allo, ‘another portion’) to the plural alla, ‘other seeds’, for the good soil, and from aorists to imperfects: edidou karpon, ‘it kept giving fruit’, and epheren, ‘it kept bearing’. The present participles anabainonta kai auxanomena, ‘coming up and growing’, describe continuous growth, the one soil where the story does not stop. In verse 9 hos echei ōta akouein akouetō, ‘whoever has ears to hear, let him hear’, uses a third person imperative, a form English lacks, which is why translations use ‘let him’. The call is as much a warning as an invitation, since the parable has just shown that hearing can fail in three ways.",
+      "words": [
+        "G0243",
+        "G1325",
+        "G0305",
+        "G0837",
+        "G5342",
+        "G1520",
+        "G1540",
+        "G3775",
+        "G0191"
+      ],
+      "parallels": [
+        "Matthew 13:8-9",
+        "Luke 8:8"
+      ],
+      "history": "How extraordinary was a hundredfold? The Roman writer Varro (On Agriculture 1.44) says that in some parts of Italy seed returned ten or fifteen for one, and that a hundred for one was claimed for the land around Gadara in Syria and for Byzacium in Africa. Gadara lay just southeast of the Sea of Galilee. So the numbers are not fantasy, but they belong to the best land known; Isaac's hundredfold harvest in Genesis 26:12 is a sign of God's blessing. Matthew reverses the order (a hundred, sixty, thirty) and Luke gives only the hundredfold.",
+      "text": "Ancient manuscripts were written without accents or breathing marks, so the Greek letters EN before each number can be read as hen, ‘one’ (one seed bore thirty, one sixty), or as en, ‘in’ (it bore in thirties, in sixties), and some manuscripts read eis. The Nestle-Aland text prints hen, ‘one’, and most English versions follow. The meaning is not affected.",
+      "refs": [
+        "Genesis 26:12",
+        "Deuteronomy 29:4",
+        "Jeremiah 5:21",
+        "Ezekiel 12:2",
+        "Revelation 2:7"
+      ]
+    },
+    {
+      "v": "10",
+      "context": "The scene shifts to a private setting, though Mark does not say when; the boat scene resumes only at verse 35. The questioners are not only the Twelve but \"those around Him\", a phrase that recalls 3:34, where Jesus looked at those sitting around him and called them his family. The insiders are defined by drawing near and asking.",
+      "grammar": "Kata monas, ‘alone’, is an idiom (monas agrees with an understood feminine noun). Ērōtōn, an imperfect, ‘they kept asking’, again suggests persistence. The phrase hoi peri auton sun tois dōdeka, ‘those around him with the Twelve’, is unusual; it makes the circle of disciples wider than the twelve apostles.",
+      "words": [
+        "G3441",
+        "G2065",
+        "G1427",
+        "G3850"
+      ],
+      "parallels": [
+        "Matthew 13:10",
+        "Luke 8:9"
+      ],
+      "text": "The earliest manuscripts read tas parabolas, ‘the parables’ (plural), and this is the reading of the Nestle-Aland text; later manuscripts, followed by the King James Version, read ‘the parable’, which fits the question to the one parable just told. The plural suggests the disciples were asking about Jesus' parables in general, which is how Matthew frames it: they ask why he speaks in parables at all (13:10). Luke has them ask what this parable means (8:9).",
+      "refs": [
+        "Mark 3:34",
+        "Mark 3:14",
+        "Mark 7:17",
+        "Mark 9:28"
+      ]
+    },
+    {
+      "v": "11",
+      "context": "Jesus answers by dividing his hearers into two groups: those to whom the mystery of the kingdom has been given, and \"those on the outside\". The word \"outside\" has just been used of Jesus' mother and brothers standing outside the house (3:31-32), so the line is drawn not by family or status but by response to Jesus.",
+      "grammar": "Humin to mustērion dedotai, ‘to you the mystery has been given’, puts ‘to you’ first for emphasis. Dedotai is a perfect passive with God as the implied giver (a construction grammarians call the divine passive), and the perfect presents the gift as standing. Mark's singular ‘the mystery’ is plainer than Matthew's and Luke's ‘to know the mysteries’ (Matthew 13:11, Luke 8:10): in Mark the mystery is one thing, the arrival of God's reign in Jesus himself. Ekeinois de tois exō, ‘but to those outside’, answers it, and en parabolais ta panta ginetai means literally ‘everything happens in parables’; parabolē can translate the Hebrew mashal, which includes the riddle, so the sense may be ‘everything comes as a riddle’.",
+      "words": [
+        "G3466",
+        "G1325",
+        "G0932",
+        "G1854",
+        "G3850",
+        "G1096"
+      ],
+      "parallels": [
+        "Matthew 13:11",
+        "Luke 8:10"
+      ],
+      "history": "The word mustērion enters the Greek Bible in Daniel 2, where it translates the Aramaic raz, the secret of God's purposes for the kingdoms of the world that only God can reveal (Daniel 2:18-19, 27-30, 47). The Dead Sea Scrolls use raz in the same way: the Habakkuk commentary says that God made known to the Teacher of Righteousness all the mysteries of the words of his servants the prophets (1QpHab 7:4-5). A Jewish hearer would take the mystery of the kingdom as God's hidden plan now disclosed, not as a secret rite, which is how Paul also uses the word (Romans 16:25-26, Colossians 1:26-27).",
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "The mystery of the kingdom is given, not discovered. The verse makes understanding Jesus a gift of God received by those who come near to him, which is why the same words can be light to one hearer and riddle to another."
+        },
+        {
+          "id": "kingdom",
+          "note": "What has been given is the secret that God's reign has arrived in a form no one expected: in a Galilean teacher and a handful of followers, hidden as seed is hidden. The parables that follow all describe that hiddenness."
+        }
+      ],
+      "refs": [
+        "Daniel 2:27-28",
+        "Mark 3:31-35",
+        "1 Corinthians 2:7-10",
+        "Colossians 1:26-27",
+        "Romans 16:25-26"
+      ]
+    },
+    {
+      "v": "12",
+      "context": "Jesus explains the outsiders' situation with words from Isaiah's call. The verse is one of the hardest in the Gospels, and the chapter note sets out the main readings. What follows looks at the Greek and at how Mark handles Isaiah. The context matters: the next verses show the insiders failing to understand too (verse 13), and the chapter insists that what is hidden is meant to come to light (verse 22).",
+      "grammar": "The quotation opens with hina, normally ‘in order that’, and the debate turns on that word and on mēpote, ‘lest’. Four readings have serious defenders. The first takes hina as purpose: the parables are God's judgment on those who have already refused, as in Isaiah; Calvin, in his commentary on the Gospel harmony, read the parallel in this way. The second takes hina as a shortened fulfillment formula, ‘so that the Scripture might be fulfilled’, as Matthew makes explicit (13:14); Joachim Jeremias argued for this and also proposed that mēpote reflects an Aramaic word (dilma) that could mean ‘unless’, giving ‘unless they turn and are forgiven’. The third, T. W. Manson's in The Teaching of Jesus (1931), held that hina mistranslates an Aramaic particle that meant ‘who’. The fourth reads hina as result, ‘with the result that’. The repeated forms blepontes blepōsin, ‘seeing they may see’, and akouontes akouōsin, ‘hearing they may hear’, reproduce a Hebrew idiom that pairs a verb with its own infinitive for emphasis, which is why the BSB has \"ever seeing\" and \"ever hearing\". Suniōsin, ‘understand’, will return with force in 6:52 and 8:17, where it is the disciples who do not understand.",
+      "words": [
+        "G2443",
+        "G0991",
+        "G1492G",
+        "G0191",
+        "G4920",
+        "G3361",
+        "G1994",
+        "G0863H"
+      ],
+      "parallels": [
+        "Matthew 13:13-15",
+        "Luke 8:10"
+      ],
+      "ot": [
+        {
+          "ref": "Isaiah 6:9-10",
+          "note": "In Isaiah 6 the prophet, just cleansed and sent, is told what his preaching will do to a people already set against God. The Hebrew (the Masoretic Text) uses imperatives: ‘hear indeed, but do not understand; see indeed, but do not perceive’, then commands the prophet to make the people's heart fat, ‘lest they see with their eyes ... and turn, and one heal them’ (werapha lo). The Septuagint turns the commands into statements, ‘you will hear and not understand’, and says ‘the heart of this people has grown fat’, which places the hardening in the people rather than in the prophet's commission; it ends ‘and I would heal them’. Mark's short form differs from both in three ways: it puts seeing before hearing, it speaks of ‘them’ in the third person, and it ends ‘and it be forgiven them’ rather than ‘healed’. The Aramaic paraphrase of Isaiah (the Targum) has exactly those two features, third person and forgiveness, a link noted by T. W. Manson and studied by Bruce Chilton, which suggests Mark preserves a form of the text read in Aramaic-speaking synagogues. Matthew replaces hina with ‘because’ (hoti, 13:13) and then quotes the Septuagint in full (13:14-15); Luke keeps hina but drops the clause about turning and forgiveness (8:10). John 12:39-40 and Acts 28:26-27 use the same text to explain Israel's unbelief."
+        }
+      ],
+      "text": "Later manuscripts, followed by the King James Version, add ‘their sins’ at the end (‘and their sins be forgiven them’), filling out the short phrase. The earliest witnesses have only ‘it be forgiven them’.",
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The verse shows judgment working through revelation itself. The same parables that open the kingdom to those who ask become, to those who keep their distance, a confirmation of a refusal already made. Christians disagree on how far this is God's active judgment and how far the natural consequence of refusal, and the text holds both God's purpose and human responsibility in view."
+        },
+        {
+          "id": "sovereignty",
+          "note": "Reformed interpreters read the hina as God's sovereign purpose in hardening those who reject him; Arminian and many Catholic and Orthodox interpreters stress that the outsiders are outside by their own choice and that the call to hear (verses 9, 23) is real. The verse itself sets God's purpose and the hearer's responsibility side by side without resolving them."
+        }
+      ],
+      "refs": [
+        "John 12:39-41",
+        "Acts 28:25-28",
+        "Romans 11:7-10",
+        "Mark 8:17-18",
+        "2 Corinthians 4:3-4"
+      ]
+    },
+    {
+      "v": "13",
+      "context": "The insiders are not spared. Jesus' two questions expose that the disciples, who have been given the mystery, do not yet understand the parable that holds the key to the rest. The line between insiders and outsiders is real, but it does not run between those who understand and those who do not; it runs between those who stay and ask and those who walk away.",
+      "grammar": "Ouk oidate tēn parabolēn tautēn, ‘do you not know this parable?’, uses ouk, which in a question expects the answer ‘yes, we should’; the question is a rebuke. Kai pōs pasas tas parabolas gnōsesthe, ‘and how will you know all the parables?’, uses a future: the sower parable is the key to the others because it is about hearing itself.",
+      "words": [
+        "G6063",
+        "G3850",
+        "G4459",
+        "G1097"
+      ],
+      "parallels": [
+        "Matthew 13:16-18",
+        "Luke 8:11"
+      ],
+      "text": "This is one of the clearest places where Matthew and Luke soften Mark's portrait of the disciples. Matthew replaces the rebuke with a blessing, ‘blessed are your eyes, because they see’ (13:16), and Luke simply moves to the explanation (8:11). Mark's honesty about the disciples' slowness runs through the whole Gospel (6:52, 7:18, 8:17-21, 9:32).",
+      "refs": [
+        "Mark 7:18",
+        "Mark 8:17-21",
+        "Mark 9:32",
+        "Matthew 13:16-17"
+      ]
+    },
+    {
+      "v": "14-15",
+      "context": "The interpretation begins. The seed is \"the word\", and the first hearers are like the path, where the word never gets beneath the surface: Satan snatches it at once. Each soil in the interpretation is a kind of hearer, and each is described by what happens after hearing.",
+      "grammar": "Ho speirōn ton logon speirei, ‘the sower sows the word’: ho logos, used absolutely, is Mark's term for the message of the kingdom (1:45, 2:2, 4:33), and it will become early Christianity's word for the gospel (Acts 4:4, 8:4). The grammar of the interpretation is loose: the hearers are ‘the ones along the path’, as if they were the seed, and then the word is sown ‘in them’, as if they were the soil. Ancient interpretation of this kind did not keep images tidy. Euthus erchetai ho satanas, ‘at once Satan comes’, and airei, ‘takes away’, are presents that make the snatching vivid, and esparmenon, a perfect passive participle, is ‘the word that has been sown’.",
+      "words": [
+        "G4687",
+        "G3056",
+        "G3598",
+        "G0191",
+        "G2112",
+        "G4567",
+        "G0142"
+      ],
+      "parallels": [
+        "Matthew 13:18-19",
+        "Luke 8:11-12"
+      ],
+      "history": "Since Adolf Jülicher's study of the parables at the end of the nineteenth century, many scholars have held that Jesus told parables with a single point and that allegorical interpretations like this one came from the early church. Jeremias argued that the vocabulary of verses 14 to 20 is that of the later church. Others, including Gerhardsson and Craig Blomberg (Interpreting the Parables, 1990), reply that Jewish parables often came with interpretations and allegorical details, so an explanation of this kind fits Jesus' setting. Matthew calls Satan ‘the evil one’ and says the hearer does not understand (13:19); Luke calls him ‘the devil’ and adds his purpose, that they may not believe and be saved (8:12).",
+      "theology": [
+        {
+          "id": "angels",
+          "note": "The verse names Satan as an active opponent of the word, working at the moment of hearing. Scripture treats unbelief as more than an intellectual failure; there is an enemy who wants the word forgotten (compare 2 Corinthians 4:4)."
+        }
+      ],
+      "refs": [
+        "2 Corinthians 4:4",
+        "1 Peter 5:8",
+        "Mark 1:13",
+        "Mark 3:23-27"
+      ]
+    },
+    {
+      "v": "16-17",
+      "context": "The rocky-ground hearers respond at once and with joy, but the word never roots in them. When trouble comes because of the word, they fall away. The seed parable's \"at once\" (verse 5) returns twice, for the joy and for the collapse.",
+      "grammar": "Proskairoi eisin, ‘they are temporary’, uses an adjective built on kairos, ‘season’: they last for a season. Thlipsis, ‘pressure, affliction’, and diōgmos, ‘persecution’, are named as coming dia ton logon, ‘on account of the word’, so the trouble is the price of hearing, not bad luck. Skandalizontai, ‘they are caused to stumble’, is the verb Jesus will use when he predicts that all the disciples will fall away (14:27, 29). Mark's first readers would hear this as a description of what they had seen happen.",
+      "words": [
+        "G4075",
+        "G5479",
+        "G2983",
+        "G4491",
+        "G4340",
+        "G2347",
+        "G1375",
+        "G4624"
+      ],
+      "parallels": [
+        "Matthew 13:20-21",
+        "Luke 8:13"
+      ],
+      "history": "Early tradition, recorded by Papias and later by Irenaeus and Clement of Alexandria, connects Mark with Peter and places the Gospel's writing in Rome, where Christians suffered under Nero after the fire of AD 64 (Tacitus, Annals 15.44). Not all scholars accept the Roman setting; some argue for Syria or Galilee. On any view, the Gospel was written for readers for whom persecution because of the word was a live danger. Luke replaces persecution with ‘a time of testing’ and ‘fall away’ with ‘depart’ (8:13).",
+      "theology": [
+        {
+          "id": "perseverance",
+          "note": "Joyful first reception is not the same as rooted faith. The verse does not settle the doctrinal debate over whether true believers can finally fall away, and traditions read it differently: Reformed readers see here faith that was never rooted, Arminian and Wesleyan readers a real faith that was abandoned. Both agree that the test of hearing is what it does under pressure."
+        }
+      ],
+      "refs": [
+        "Mark 14:27-31",
+        "Mark 13:9-13",
+        "Matthew 10:22",
+        "Hebrews 10:32-39",
+        "John 6:66"
+      ]
+    },
+    {
+      "v": "18-19",
+      "context": "The thorny-ground hearers receive the word, but other growths share the soil and choke it. Mark names three: the worries of this age, the deceit of wealth, and desires for everything else. None is described as scandalous sin; all are ordinary.",
+      "grammar": "Hai merimnai tou aiōnos, ‘the worries of the age’: aiōn is ‘the age’, the present order of things, contrasted in Jewish thought with the age to come (10:30). Hē apatē tou ploutou, ‘the deceitfulness of wealth’, makes wealth an active deceiver. Hai peri ta loipa epithumiai, ‘the desires concerning the rest’, is found only in Mark. Eisporeuomenai, ‘coming in’, pictures these things entering from outside, and sumpnigousin, ‘they choke together’, is a compound of the verb used in verse 7. Akarpos ginetai, ‘it becomes fruitless’, is a process, not a sudden event.",
+      "words": [
+        "G3308",
+        "G0165G",
+        "G0539",
+        "G4149",
+        "G1939",
+        "G1531",
+        "G4846",
+        "G0175"
+      ],
+      "parallels": [
+        "Matthew 13:22",
+        "Luke 8:14"
+      ],
+      "text": "Matthew keeps the first two thorns and drops Mark's third. Luke has ‘worries, riches, and pleasures of life’ and adds that such hearers ‘do not mature’ (8:14).",
+      "theology": [
+        {
+          "id": "wealth",
+          "note": "Wealth is named as one of the forces that choke the word, and Mark's word for it, apatē, calls it deceitful: it promises what it cannot give. The story of the rich man in 10:17-27 shows this thorn at work."
+        }
+      ],
+      "refs": [
+        "Mark 10:21-25",
+        "1 Timothy 6:9-10",
+        "Matthew 6:25-34",
+        "Luke 12:15-21"
+      ]
+    },
+    {
+      "v": "20",
+      "context": "The good-soil hearers hear, receive, and bear fruit in differing measures. The chapter's emphasis on hearing reaches its goal: real hearing is shown in welcome and fruit, not in the first moment of response.",
+      "grammar": "The contrast is marked by the pronoun: the first three groups were houtoi, ‘these’; the last are ekeinoi, ‘those’, set apart. The earlier hearers were described with aorists (akousōsin, akousantes), a hearing that happened; these are described with three presents, akouousin, paradechontai, karpophorousin, ‘they hear, welcome, and bear fruit’, as an ongoing pattern. Paradechomai means to receive with approval, to welcome, stronger than lambanō, ‘receive’, in verse 16.",
+      "words": [
+        "G1565",
+        "G0191",
+        "G3858",
+        "G2592"
+      ],
+      "parallels": [
+        "Matthew 13:23",
+        "Luke 8:15"
+      ],
+      "text": "Each Gospel names the good hearers' mark differently. Matthew says they understand the word (13:23), Luke that they hold it fast in an honest and good heart and bear fruit with perseverance (8:15), Mark that they welcome it.",
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Faith in the sense this parable teaches is a hearing that welcomes and keeps bearing fruit. The differing yields suggest that fruitfulness is not uniform, and the verse makes no ranking of believers by it."
+        }
+      ],
+      "refs": [
+        "John 15:5-8",
+        "Colossians 1:6",
+        "James 1:21-22",
+        "Galatians 5:22-23"
+      ]
+    },
+    {
+      "v": "21-23",
+      "context": "A new set of sayings, joined to the parable by the image of hiding and revealing. A lamp is not lit to be covered. What is hidden now, the kingdom in its seed form and the parables' meaning, is hidden for the sake of being revealed. The saying answers the hard word of verse 12: concealment is not the end of the story.",
+      "grammar": "Mēti erchetai ho luchnos, literally ‘the lamp does not come, does it?’: the question expects ‘no’, and the verb is odd, since lamps are brought, not ‘come’. Several commentators, Joel Marcus among them, take the odd verb as a hint that the lamp stands for Jesus, who ‘has come’ (1:24, 2:17, 10:45). Verse 22 turns on two purpose clauses: nothing is hidden ean mē hina phanerōthē, ‘except in order that it be made known’, and nothing became secret all' hina elthē eis phaneron, ‘but in order that it come to light’. The same hina that governed verse 12 now states the goal of hiddenness: disclosure.",
+      "words": [
+        "G3385",
+        "G2064",
+        "G3088",
+        "G3426",
+        "G2825",
+        "G3087",
+        "G2927",
+        "G2443",
+        "G5319",
+        "G0614",
+        "G5318"
+      ],
+      "parallels": [
+        "Luke 8:16-17",
+        "Matthew 5:15",
+        "Matthew 10:26",
+        "Luke 11:33",
+        "Luke 12:2"
+      ],
+      "history": "The household lamp was a small clay vessel holding olive oil and a wick, set on a stand to light a one-room house (Matthew 5:15). The modios, ‘basket’, is the Roman grain measure (Latin modius), a vessel of a little under nine liters, which could be turned over to cover a flame. The klinē, ‘bed’, may be the dining couch on which people reclined. These sayings appear in different settings in Matthew and Luke, which suggests Jesus used them more than once, and the Gospel of Thomas, a second-century collection of sayings, has versions of both (sayings 5 and 33).",
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "The verses state the purpose of all concealment in God's dealings: disclosure. The hidden kingdom and the veiled parables are temporary, for the sake of a light that will be set on a stand."
+        }
+      ],
+      "refs": [
+        "Matthew 5:14-16",
+        "Luke 12:2-3",
+        "1 Corinthians 4:5",
+        "Mark 13:26"
+      ]
+    },
+    {
+      "v": "24-25",
+      "context": "Two more sayings press the same point: take care how you hear. The measure of attention a hearer gives is the measure of understanding he receives, and more besides. Whoever holds on to what he has been given receives more; whoever does not loses even what he has.",
+      "grammar": "Blepete ti akouete, ‘see what you hear’, joins the two senses of verse 12: the hearers must look to their hearing. En hō metrō metreite metrēthēsetai humin, ‘with the measure you measure it will be measured to you’, uses two future passives, metrēthēsetai and prostethēsetai, ‘it will be added’, with God as the implied actor. Verse 25 opens with gar, ‘for’, so it explains verse 24: the law of the measure is that possession grows by use.",
+      "words": [
+        "G0991",
+        "G0191",
+        "G3358",
+        "G3354",
+        "G4369",
+        "G1325",
+        "G0142"
+      ],
+      "parallels": [
+        "Luke 8:18",
+        "Matthew 7:2",
+        "Matthew 13:12",
+        "Luke 6:38"
+      ],
+      "history": "The saying about the measure was a Jewish proverb. The Mishnah states the same principle, that by the measure with which a person measures it is measured to him, and illustrates it from the stories of Samson and Absalom (m. Sotah 1:7-8). Jesus uses it in different settings: of judging others (Matthew 7:2), of generosity (Luke 6:38), and here of hearing. Luke's parallel sharpens verse 25: even what he ‘thinks’ he has will be taken (8:18).",
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "Receiving revelation is not passive. The verse ties understanding to attention and response: those who act on what they hear are given more, while neglected light is lost."
+        }
+      ],
+      "refs": [
+        "Matthew 25:29",
+        "Luke 19:26",
+        "James 1:22-25",
+        "Hebrews 2:1"
+      ]
+    },
+    {
+      "v": "26-27",
+      "context": "A parable found only in Mark. A man scatters seed and then goes about his life, sleeping and rising, while the seed grows by a process he does not understand. The point falls not on the man's effort but on the growth that happens without him.",
+      "grammar": "Houtōs estin hē basileia tou theou hōs anthrōpos balē, ‘so is the kingdom of God, as if a man should cast seed’, pairs hōs with a subjunctive, an unusual construction that makes the whole scene hypothetical and general. The subjunctives continue: katheudē kai egeirētai, ‘he sleeps and rises’, blasta kai mēkunētai, ‘it sprouts and lengthens’. Nukta kai hēmeran, ‘night and day’, follows the Jewish reckoning in which the day begins at sunset. Hōs ouk oiden autos, ‘how, he himself does not know’, puts the pronoun last for emphasis: the sower is the one person you would expect to know.",
+      "words": [
+        "G0932",
+        "G0906I",
+        "G4703",
+        "G2518",
+        "G1453",
+        "G3571",
+        "G0985",
+        "G3373",
+        "G6063"
+      ],
+      "history": "This is the only parable in the Synoptic Gospels (Matthew, Mark, and Luke) that appears in Mark alone. Matthew has in its place the parable of the weeds among the wheat (13:24-30), which also concerns what happens between sowing and harvest, and some scholars think Matthew reworked Mark's story; others think the two parables are independent.",
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The kingdom grows by God's power, not by human anxiety or technique. The sower's part is to sow and to wait; the growth is given. Paul says the same of his own ministry: one plants, another waters, God gives the growth (1 Corinthians 3:6-7)."
+        }
+      ],
+      "refs": [
+        "1 Corinthians 3:6-7",
+        "James 5:7-8",
+        "Ecclesiastes 11:5-6",
+        "Isaiah 55:10-11"
+      ]
+    },
+    {
+      "v": "28-29",
+      "context": "The earth yields its crop in stages, blade, head, and full grain, and when the grain is ripe the sower sends in the sickle, because the harvest has come. The parable moves from hidden growth to decisive harvest, from the present age to the end.",
+      "grammar": "Automatē, ‘by itself’, stands first in the sentence for emphasis; the English word ‘automatic’ comes from it. The Septuagint uses the same word for what grows of itself in the sabbatical year without human sowing (Leviticus 25:5, 11), and Acts 12:10 uses it of a prison gate that opened on its own, where God's hand is plainly at work. The adjective describes growth that does not depend on the farmer, not growth without God. The sequence prōton ... eita ... eita, ‘first ... then ... then’, describes an order that cannot be hurried. Paradoi ho karpos, ‘when the fruit permits’, and parestēken ho therismos, ‘the harvest has arrived’, a perfect: the moment has come and stands.",
+      "words": [
+        "G0844",
+        "G1093I",
+        "G2592",
+        "G5528",
+        "G4719",
+        "G4621",
+        "G3860",
+        "G0649",
+        "G1407",
+        "G3936",
+        "G2326"
+      ],
+      "ot": [
+        {
+          "ref": "Joel 3:13",
+          "note": "Verse 29 echoes Joel 3:13 (4:13 in the Hebrew). Joel's Hebrew reads shilchu maggal ki vashal qatsir, ‘send in the sickle, for the harvest is ripe’, and the Septuagint has exaposteilate drepana hoti parestēken trugētos, ‘send out sickles, for the vintage has come’. Mark's apostellei to drepanon, hoti parestēken ho therismos shares the verb ‘send’, the noun ‘sickle’, and the perfect parestēken with the Greek of Joel. In Joel the harvest is God's judgment on the nations in the valley of decision. Mark uses the image for the kingdom's final ingathering, and Revelation 14:14-20 develops the same text for both the gathering of the saved and the judgment of the wicked."
+        }
+      ],
+      "theology": [
+        {
+          "id": "return",
+          "note": "The harvest points to the end of the age, when the hidden growth of the kingdom will be gathered in. The time between sowing and harvest is not empty; the kingdom is growing, and the harvest will come at God's appointed moment."
+        }
+      ],
+      "refs": [
+        "Revelation 14:14-16",
+        "Matthew 13:39",
+        "John 4:35-38",
+        "Leviticus 25:5"
+      ]
+    },
+    {
+      "v": "30-32",
+      "context": "The last parable of the chapter compares the kingdom to a mustard seed: smallest at the sowing, greatest among garden plants at the end, with birds sheltering in its shade. Like the preceding parable it moves from small beginning to large ending, but the emphasis now falls on the contrast of size.",
+      "grammar": "Jesus opens with a double deliberative question in the first person plural, pōs homoiōsōmen ... ē en tini autēn parabolē thōmen, ‘how shall we liken ... or in what parable shall we set it?’, a teacher's rhetorical ‘let us’ that invites the hearers into the search; it recalls Isaiah 40:18, ‘to whom will you liken God?’. The Greek of verses 31-32 is famously rough, with a dative (kokkō, ‘to a grain’) followed by a nominative relative and a neuter participle (on) that do not agree with it, as if the sentence were spoken rather than composed. Mark says the grown plant becomes meizon pantōn tōn lachanōn, ‘greater than all the garden plants’, and makes kladous megalous, ‘great branches’; Matthew and Luke both say it becomes a tree (dendron). Kataskēnoun, ‘to nest’ or ‘settle’, is the verb used in the Greek versions of Daniel 4 of the birds in Nebuchadnezzar's tree.",
+      "words": [
+        "G3666",
+        "G0932",
+        "G3850",
+        "G2848",
+        "G4615",
+        "G3398",
+        "G4690G",
+        "G3173",
+        "G3001",
+        "G2798",
+        "G4639",
+        "G4071",
+        "G2681"
+      ],
+      "parallels": [
+        "Matthew 13:31-32",
+        "Luke 13:18-19"
+      ],
+      "history": "The plant is probably black mustard (Brassica nigra), which grows wild around the Sea of Galilee and can reach two or three meters in a season. Its seed was proverbial for smallness (Matthew 17:20); ‘smallest of all seeds’ is the language of the proverb, not of botany. The Roman naturalist Pliny the Elder (Natural History 19.170) notes that once mustard has been sown it is hard to rid a place of it, because the fallen seed sprouts at once. Some interpreters, John Dominic Crossan among them, have drawn on this to suggest that Jesus chose a stubborn, spreading plant rather than a noble tree like the cedar on purpose. Luke places the parable in a different setting (13:18-19) and has the seed sown in a garden.",
+      "ot": [
+        {
+          "ref": "Ezekiel 17:23",
+          "note": "The birds nesting in the shade of the branches echo Old Testament images of a great kingdom sheltering the nations. In Ezekiel 17:22-24 God plants a sprig of cedar on Israel's mountain, and it becomes a noble cedar under which ‘birds of every kind’ nest; in Ezekiel 31:6 and Daniel 4:12, 21 the great tree stands for a world empire (Assyria, Babylon) with birds in its branches and beasts in its shade. The Septuagint and the Greek versions of Daniel use kataskēnoō for the birds' nesting, the verb Mark uses. Mark's image is deliberately humble by comparison: not a cedar but a garden plant. The kingdom will shelter the nations, but it begins as the smallest of seeds."
+        }
+      ],
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The kingdom's end is out of all proportion to its beginning. The parable asked Jesus' first hearers to believe that a teacher with a few disciples in Galilee was the beginning of God's reign over the nations."
+        }
+      ],
+      "refs": [
+        "Daniel 4:12",
+        "Ezekiel 31:6",
+        "Matthew 17:20",
+        "Isaiah 40:18"
+      ]
+    },
+    {
+      "v": "33-34",
+      "context": "Mark closes the parable section with a summary. Jesus taught the crowds in parables, as much as they were able to hear, and explained everything privately to his disciples. The summary answers verse 11: the parables were not meant to shut people out but were suited to what hearers could take in.",
+      "grammar": "Kathōs ēdunanto akouein, ‘just as they were able to hear’, uses an imperfect: the parables were fitted to their capacity. Chōris de parabolēs ouk elalei autois, ‘without a parable he did not speak to them’, is a double negative for emphasis. Kat' idian de tois idiois mathētais epeluen panta, ‘privately to his own disciples he explained everything’, plays on idios, ‘own’ or ‘private’, used twice. Epiluō means to loosen or untie, and in Greek it was used for solving a riddle; 2 Peter 1:20 uses its noun of the interpretation of prophecy.",
+      "words": [
+        "G5108",
+        "G3850",
+        "G2980",
+        "G3056",
+        "G1410",
+        "G2398",
+        "G1956"
+      ],
+      "parallels": [
+        "Matthew 13:34-35"
+      ],
+      "text": "Matthew keeps this summary and adds a fulfillment quotation from Psalm 78:2, where the psalmist announces that he will open his mouth in a parable and utter hidden things from of old (Matthew 13:35). Luke has no parallel here.",
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "Jesus' teaching was graduated to his hearers' capacity. Revelation comes as people can receive it, and the fuller explanation is given to those who stay with him."
+        }
+      ],
+      "refs": [
+        "Psalm 78:2",
+        "John 16:12",
+        "1 Corinthians 3:1-2",
+        "Mark 7:17"
+      ]
+    },
+    {
+      "v": "35-36",
+      "context": "The day of parables ends with a command to cross to the other side of the lake, toward Gentile territory (5:1). The disciples take Jesus \"just as He was\", still in the boat from which he taught. The story that follows puts the parables' question, who hears and who trusts, to the test in the disciples themselves.",
+      "grammar": "Opsias genomenēs, ‘evening having come’, is a genitive absolute, Mark's usual way of setting a scene. Dielthōmen eis to peran, ‘let us go across to the other side’, is a hortatory subjunctive, an invitation that includes Jesus with them. Paralambanousin, a historic present, ‘they take him along’, and hōs ēn en tō ploiō, ‘as he was, in the boat’, are the details of someone remembering the scene.",
+      "words": [
+        "G3798",
+        "G1096",
+        "G1330",
+        "G4008",
+        "G0863G",
+        "G3880",
+        "G4143"
+      ],
+      "parallels": [
+        "Matthew 8:18",
+        "Matthew 8:23",
+        "Luke 8:22"
+      ],
+      "text": "Only Mark mentions that other boats were with him, a detail that has no role in the story and is often taken as a trace of eyewitness memory. Matthew places the storm much earlier, after the Sermon on the Mount and a series of healings (8:23-27), and Luke places it on ‘one day’ after the parables (8:22).",
+      "theology": [
+        {
+          "id": "sovereignty",
+          "note": "The crossing is at Jesus' command. The storm that follows does not interrupt a plan that has gone wrong; the disciples are in the storm because they obeyed him."
+        }
+      ],
+      "refs": [
+        "Mark 5:1",
+        "Mark 6:45",
+        "Mark 1:38"
+      ]
+    },
+    {
+      "v": "37-38",
+      "context": "A violent storm swamps the boat while Jesus sleeps in the stern. The disciples wake him with a reproach rather than a request. The scene recalls the story of Jonah, who slept in a ship during a storm the LORD had sent, but Jesus' sleep comes from the opposite place: not flight from God but trust in him.",
+      "grammar": "Lailaps megalē anemou, ‘a great whirlwind of wind’: lailaps is a squall, a sudden storm. Epeballen, an imperfect, ‘kept breaking into’, and gemizesthai, a present infinitive, ‘was filling’, describe the danger as ongoing. Kai autos ēn en tē prumnē, ‘and he himself was in the stern’, sets Jesus against the chaos with an emphatic pronoun. The article in epi to proskephalaion, ‘on the cushion’, points to a particular piece of the boat's gear. The disciples' question, ou melei soi hoti apollumetha, ‘is it no concern to you that we are perishing?’, uses ou, which expects the answer ‘yes, it concerns me’, so it is a reproach wrapped in a question. Matthew turns it into a prayer (‘Lord, save us’) and Luke into a cry (‘Master, Master’).",
+      "words": [
+        "G2978",
+        "G0417",
+        "G2949",
+        "G1911",
+        "G1072",
+        "G4403",
+        "G4344",
+        "G2518",
+        "G1320",
+        "G3199",
+        "G0622"
+      ],
+      "parallels": [
+        "Matthew 8:24-25",
+        "Luke 8:23-24"
+      ],
+      "history": "The boat found in the mud of the lake's northwest shore in 1986 (described in the chapter note) has a stern platform, and Shelley Wachsmann, who led its excavation, suggested that the cushion was a ballast sandbag. Fishermen on the lake within living memory used such sacks to trim their boats under sail and stored them under the stern deck, where they served as pillows. The suggestion fits Mark's definite article (‘the cushion’, part of the boat's equipment), though it cannot be proved.",
+      "ot": [
+        {
+          "ref": "Jonah 1:4-6",
+          "note": "The Hebrew says the LORD hurled a great wind on the sea and there was a great storm (saar gadol), and that Jonah went down into the ship and fell into a deep sleep (wayyeradam). The captain wakes him with a rebuke and a plea, so that ‘we may not perish’; the Septuagint has mē apolōmetha, the same verb as the disciples' apollumetha. Mark's scene shares the storm, the sleeper, the waking, the fear of perishing, and (in verse 41) the sailors' great fear. The differences are the point: Jonah sleeps in flight from God, Jesus in trust; Jonah must be thrown into the sea to calm it, Jesus commands the sea himself. Jesus will later speak of ‘the sign of Jonah’ (Matthew 12:39-41), and Matthew adds that one greater than Jonah is here."
+        }
+      ],
+      "refs": [
+        "Psalm 4:8",
+        "Psalm 121:3-4",
+        "Psalm 44:23-26",
+        "Matthew 12:41"
+      ]
+    },
+    {
+      "v": "39",
+      "context": "Jesus rises and rebukes the wind and speaks to the sea as if they were persons, and there is a great calm. He addresses the storm in the words he used for a demon in the synagogue at Capernaum (1:25). For Israel's Scriptures, stilling the sea is something only God does.",
+      "grammar": "Diegertheis, ‘having been awakened’, is an aorist passive participle. Epetimēsen tō anemō, ‘he rebuked the wind’, is the verb used of Jesus rebuking demons (1:25, 9:25). He speaks two imperatives to the sea: siōpa, a present imperative, ‘be silent’, and pephimōso, a perfect passive imperative, ‘be muzzled’, from phimoō, to muzzle an animal (1 Corinthians 9:9 uses it of the ox). A perfect imperative is very rare in the New Testament; it commands a state to be reached and to stay: be muzzled, and stay muzzled. In 1:25 Jesus told the demon phimōthēti, the same verb. Ekopasen ho anemos, ‘the wind grew tired’, and egeneto galēnē megalē, ‘there was a great calm’, answering the ‘great storm’ of verse 37.",
+      "words": [
+        "G1326",
+        "G2008",
+        "G0417",
+        "G2281",
+        "G4623",
+        "G5392",
+        "G2869",
+        "G1055",
+        "G3173"
+      ],
+      "parallels": [
+        "Matthew 8:26",
+        "Luke 8:24"
+      ],
+      "ot": [
+        {
+          "ref": "Psalm 107:28-29",
+          "note": "Psalm 107:23-32 describes sailors in a storm the LORD raised, who cry to him in their trouble and are saved: \"He calmed the storm to a whisper, and the waves of the sea were hushed.\" The Hebrew says he made the storm stand still into a whisper (yaqem se'arah lidmamah); the Septuagint (numbered Psalm 106:29) says the storm settled into a breeze (eis auran) and its waves fell silent (esigēsan). Psalm 106:9 says God rebuked the Red Sea, and the Septuagint uses epetimēsen, Mark's verb. Mark does not quote either psalm, but the actions he gives Jesus are the actions these psalms give to the LORD alone."
+        }
+      ],
+      "theology": [
+        {
+          "id": "creation",
+          "note": "The sea, which Scripture uses as the image of chaos (Genesis 1:2, Psalm 74:13), obeys Jesus as it obeys its Creator. The verse shows the Creator's authority exercised by a man who a moment before was asleep."
+        },
+        {
+          "id": "incarnation",
+          "note": "The same person sleeps from exhaustion and commands the storm. Mark puts the full humanity and the divine authority of Jesus side by side in two consecutive verses without explaining how they belong together, which is the question the church's confession of Christ as fully God and fully man later answered."
+        }
+      ],
+      "refs": [
+        "Psalm 89:9",
+        "Psalm 65:7",
+        "Mark 1:25",
+        "Genesis 1:2"
+      ]
+    },
+    {
+      "v": "40",
+      "context": "Only after the calm does Jesus address the disciples, with two questions about fear and faith. The rebuke is not that they woke him, but that they thought he did not care and that they would perish with him in the boat.",
+      "grammar": "Deiloi, ‘cowardly’ or ‘fearful’, is a strong word, used in Revelation 21:8 of the cowardly who shrink back from faith. Oupō echete pistin, ‘do you not yet have faith?’, looks back over all they have seen since chapter 1: after so much, still not.",
+      "words": [
+        "G1169",
+        "G3768",
+        "G2192",
+        "G4102G"
+      ],
+      "parallels": [
+        "Matthew 8:26",
+        "Luke 8:25"
+      ],
+      "text": "The earliest manuscripts read oupō, ‘not yet’; later manuscripts, followed by the King James Version, read pōs ouk, ‘how is it that you have no faith?’. The Gospels differ in how hard the rebuke falls. In Matthew, Jesus calls them oligopistoi, ‘you of little faith’, and speaks before calming the storm (8:26); in Luke he asks, ‘where is your faith?’ (8:25). Mark's ‘no faith yet’ is the sharpest of the three.",
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Faith here is trust in Jesus' care and presence in danger, not confidence that no danger will come. Fear and faith are set against each other, and the question oupō, ‘not yet’, implies that faith is expected to grow from what the disciples have already seen."
+        }
+      ],
+      "refs": [
+        "Mark 5:36",
+        "Mark 8:17-21",
+        "Isaiah 43:2",
+        "Revelation 21:8"
+      ]
+    },
+    {
+      "v": "41",
+      "context": "The disciples' fear changes object: from the storm to the one who stilled it. Their question, \"Who is this?\", is the question the whole first half of Mark raises and that Peter will answer in 8:29.",
+      "grammar": "Ephobēthēsan phobon megan, ‘they feared a great fear’, is a cognate accusative, a Semitic way of intensifying a verb with its own noun, and it is the exact phrase of the Septuagint in Jonah 1:10 and 1:16, where the sailors fear the LORD after the sea grows calm. Elegon pros allēlous, an imperfect, ‘they kept saying to one another’. Tis ara houtos estin, ‘who then is this?’: ara draws a conclusion from what has happened. Hupakouei, ‘obeys’, is singular in the best manuscripts though it has two subjects, the wind and the sea treated as one.",
+      "words": [
+        "G5399",
+        "G5401",
+        "G3173",
+        "G5101",
+        "G0686",
+        "G0417",
+        "G2281",
+        "G5219"
+      ],
+      "parallels": [
+        "Matthew 8:27",
+        "Luke 8:25"
+      ],
+      "theology": [
+        {
+          "id": "god",
+          "note": "In Jonah the sailors' great fear is directed to the LORD, who calmed the sea. Mark uses the same words for the disciples' fear of Jesus. The question \"Who is this?\" is left open, but the Scriptures behind the story point to only one answer."
+        }
+      ],
+      "refs": [
+        "Jonah 1:16",
+        "Mark 8:27-29",
+        "Psalm 89:8-9",
+        "Mark 1:27"
+      ]
+    }
+  ]
+}

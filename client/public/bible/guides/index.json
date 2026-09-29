@@ -1,0 +1,145 @@
+{
+  "groups": [
+    {
+      "id": "start",
+      "name": "Start here",
+      "intro": "If you have never read the Bible, or never been told how it came to be, begin with these.",
+      "guides": [
+        {
+          "id": "what-is-the-bible",
+          "title": "What the Bible Is",
+          "summary": "A library of sixty-six books in two testaments and three languages: what is in it, how it is arranged, and how Jewish, Protestant, Catholic, and Orthodox Bibles differ."
+        },
+        {
+          "id": "canon",
+          "title": "How the Books Were Chosen",
+          "summary": "How the Old and New Testaments came to contain the books they do, why some Bibles include the Apocrypha, and what the early church looked for in a book."
+        },
+        {
+          "id": "how-we-got-the-old-testament",
+          "title": "How We Got the Old Testament",
+          "summary": "From scribes to the Masoretes, the Dead Sea Scrolls, the Septuagint, and the other ancient witnesses: how the Hebrew Bible reached us and how reliable it is."
+        },
+        {
+          "id": "how-we-got-the-new-testament",
+          "title": "How We Got the New Testament",
+          "summary": "Papyri, great codices, thousands of manuscripts, and the editions behind modern Bibles: what the differences are and what they do and do not change."
+        },
+        {
+          "id": "translations",
+          "title": "Why Translations Differ",
+          "summary": "Word-for-word and thought-for-thought, the history of the English Bible, and how to read small capitals, brackets, and footnotes."
+        },
+        {
+          "id": "chapters-and-verses",
+          "title": "Chapters, Verses, and References",
+          "summary": "Who added chapter and verse numbers, how to read a reference, and where Hebrew and English Bibles number verses differently."
+        }
+      ]
+    },
+    {
+      "id": "reading",
+      "name": "How to read each kind of writing",
+      "intro": "Much misreading of the Bible is reading one kind of writing as if it were another. These guides show how each works.",
+      "guides": [
+        {
+          "id": "reading-narrative",
+          "title": "Reading the Stories",
+          "summary": "How biblical narrative works: the narrator's restraint, repetition, type-scenes, and why the heroes are rarely models."
+        },
+        {
+          "id": "reading-law",
+          "title": "Reading the Law",
+          "summary": "Case law and command, the covenant setting, the ancient law codes around Israel, and how Christians have related the Law to Christ."
+        },
+        {
+          "id": "reading-poetry",
+          "title": "Reading Hebrew Poetry",
+          "summary": "Parallelism, imagery, acrostics, the kinds of psalms, and a glossary of the psalm headings."
+        },
+        {
+          "id": "reading-wisdom",
+          "title": "Reading the Wisdom Books",
+          "summary": "Proverbs, Job, and Ecclesiastes: what a proverb is and is not, and how the three books argue with each other."
+        },
+        {
+          "id": "reading-prophets",
+          "title": "Reading the Prophets",
+          "summary": "Who the prophets were, the forms they used, prediction and fulfillment, and how to read an oracle in its own time."
+        },
+        {
+          "id": "reading-apocalyptic",
+          "title": "Reading Apocalyptic",
+          "summary": "Daniel and Revelation in the family of ancient apocalypses: visions, symbols, numbers, and the main schools of interpretation."
+        },
+        {
+          "id": "reading-gospels",
+          "title": "Reading the Gospels",
+          "summary": "Ancient biography, four portraits of one Jesus, how the first three Gospels relate, and how John differs."
+        },
+        {
+          "id": "reading-parables",
+          "title": "Reading the Parables",
+          "summary": "What a parable is, how Jesus used them, and the history of reading them from allegory to the present."
+        },
+        {
+          "id": "reading-letters",
+          "title": "Reading the Letters",
+          "summary": "The ancient letter, rhetoric and diatribe, reading someone else's mail, and household codes."
+        },
+        {
+          "id": "reading-genealogies",
+          "title": "Reading Genealogies and Lists",
+          "summary": "Why the Bible keeps records of names and numbers, what they did for their first readers, and what they teach now."
+        }
+      ]
+    },
+    {
+      "id": "world",
+      "name": "The world of the Bible",
+      "intro": "Reference tables and background the biblical writers took for granted.",
+      "guides": [
+        {
+          "id": "between-the-testaments",
+          "title": "Between the Testaments",
+          "summary": "From Nehemiah to Jesus: Persians, Alexander, the Ptolemies and Seleucids, the Maccabees, the Hasmoneans, Rome, and Herod."
+        },
+        {
+          "id": "jewish-groups",
+          "title": "Pharisees, Sadducees, and Others",
+          "summary": "The Jewish groups and institutions of Jesus' day: Pharisees, Sadducees, Essenes, Zealots, Samaritans, scribes, the Sanhedrin, the temple, and the synagogue."
+        },
+        {
+          "id": "kings-of-israel-and-judah",
+          "title": "The Kings of Israel and Judah",
+          "summary": "Every king of the united and divided kingdoms with approximate dates, the prophets who spoke to them, and the empires around them."
+        },
+        {
+          "id": "empires",
+          "title": "The Empires Around Israel",
+          "summary": "Egypt, Assyria, Babylon, Persia, Greece, and Rome: when each ruled and where each touches the biblical story."
+        },
+        {
+          "id": "herods-and-governors",
+          "title": "The Herods and the Roman Governors",
+          "summary": "The Herodian family and the Roman officials who governed Judea in the New Testament era."
+        },
+        {
+          "id": "weights-measures-money",
+          "title": "Weights, Measures, and Money",
+          "summary": "Cubits, shekels, talents, denarii, and the rest, with modern equivalents and what they meant in daily life."
+        },
+        {
+          "id": "calendar-and-festivals",
+          "title": "The Calendar and Festivals",
+          "summary": "The Hebrew months, the Sabbath and the pilgrim festivals, the Day of Atonement, and the later feasts of Purim and Hanukkah."
+        },
+        {
+          "id": "offerings-and-purity",
+          "title": "Offerings, Priests, and Purity",
+          "summary": "The five offerings of Leviticus, the priesthood, clean and unclean, and why the sacrificial system matters for reading the New Testament."
+        }
+      ]
+    }
+  ]
+}

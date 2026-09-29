@@ -1,0 +1,234 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "The birth is introduced with a double statement of God's faithfulness before the child is even mentioned. After the danger of chapter 20, the reader is told at once that nothing Abraham did could cancel what the LORD had said.",
+      "grammar": "The verse is built as two matching lines: ‘the LORD visited Sarah as he had said, and the LORD did for Sarah as he had spoken’. The subject, YHWH, is named in both, and the two verbs of speech (amar, \"said\", and dibber, \"promised\") point back to Genesis 17:16-21 and 18:10-14. The first line opens with the subject before the verb, an order Hebrew narrative uses to mark a new turn or to set a scene apart from what precedes it. Here it sets the LORD's act against the human failure of the previous chapter.",
+      "words": ["H3068G", "H6485I", "H0559", "H1696I"],
+      "theology": [
+        {
+          "id": "attributes",
+          "note": "God's faithfulness is shown here as the exact match between what he says and what he does. The verse repeats the point twice so that no reader can miss that the birth is the keeping of a word."
+        }
+      ],
+      "refs": ["Genesis 18:10-14", "Genesis 17:19", "1 Samuel 2:21", "Numbers 23:19"]
+    },
+    {
+      "v": "2",
+      "context": "Sarah conceives and bears a son to Abraham in his old age, at the time God appointed. The verse gathers three things the promise had specified: the mother, the father, and the time.",
+      "grammar": "\"At the very time\" translates lammo'ed, ‘at the appointed time’, the same word God used when he fixed the date a year ahead (Genesis 17:21, 18:14). Mo'ed is the word for an appointed meeting or festival (Genesis 1:14), so the birth is presented as a date God kept. \"In his old age\" is literally ‘to his old ages’, a plural that Hebrew uses for abstract states; it will be used again of Joseph as the son of Jacob's old age (Genesis 37:3).",
+      "words": ["H4150G", "H2208", "H2029"],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The promise was kept not only in substance but on schedule. God governs the timing of what he promises, the same conviction Paul expresses when he says God sent his Son when the time had fully come (Galatians 4:4)."
+        }
+      ],
+      "refs": ["Genesis 17:21", "Genesis 18:14", "Galatians 4:4", "Hebrews 11:11"]
+    },
+    {
+      "v": "3-5",
+      "context": "Abraham does the two things God had told him to do: he names the boy Isaac (Genesis 17:19) and circumcises him on the eighth day (Genesis 17:12). The note of his age, a hundred, closes the birth report and underlines what Romans 4:19 calls a body as good as dead.",
+      "grammar": "Verse 3 is deliberately full: literally ‘his son who was born to him, whom Sarah bore to him’. The two relative clauses stress that this son is born to Abraham and from Sarah, the combination the promise required and Ishmael lacked. Verse 4 ends with ka'asher tsivvah, \"as God had commanded him\", the phrase Genesis and Exodus use for exact obedience (Genesis 6:22, Exodus 39:43). Abraham's obedience here is quiet and precise.",
+      "words": ["H3205", "H3327", "H6680", "H8083"],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "Isaac is the first child to receive the covenant sign on the eighth day as Genesis 17:12 required; Ishmael was circumcised at thirteen (Genesis 17:25). The sign of the covenant marks the child of promise from his first week."
+        },
+        {
+          "id": "sacraments",
+          "note": "Christians have long connected circumcision with baptism because Colossians 2:11-12 links the two. Those who baptize infants see in Isaac's eighth-day circumcision a covenant sign given to a child before he could believe; those who baptize believers only hold that the New Testament sign follows faith and that the link in Colossians is spiritual rather than a pattern for infants. Both positions are held by faithful churches."
+        }
+      ],
+      "refs": ["Genesis 17:12", "Genesis 17:19", "Romans 4:19", "Acts 7:8", "Luke 1:59"]
+    },
+    {
+      "v": "6-7",
+      "context": "Sarah speaks for the first time since she laughed in disbelief behind the tent flap (Genesis 18:12-15). Her two sayings have the ring of a short song: God has turned her laughter into joy, and she marvels that anyone could have predicted this.",
+      "grammar": "The first word of verse 6 is tsechoq, ‘laughter’, placed first for emphasis: ‘Laughter God has made for me’. The next line, kol-hashomea yitsachaq-li, is ambiguous, because the preposition li can mean ‘with me’ or ‘at me’. The BSB, like most translations, reads \"will laugh with me\", a shared joy; others hear a hint that people may laugh at an old woman nursing a baby. In verse 7 Sarah uses millel, a rare verb for speaking found mostly in poetry, which gives her words an elevated tone. The plural banim, \"children\", is a general plural (‘nurse children at all’), not a claim to many sons.",
+      "words": ["H6712", "H6711", "H4448A", "H3243H"],
+      "text": "English versions divide on verse 6. Most read ‘will laugh with me’; a few, including some older versions and commentators, render ‘will laugh at me’ or ‘over me’. The Hebrew allows both, and it is possible the narrator intends the play: laughter of disbelief (Genesis 17:17, 18:12) has become laughter of delight.",
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Sarah laughed in doubt and now laughs in joy. Hebrews 11:11 still counts her among the faithful, which shows that Scripture measures faith by where it rests at last, not by whether it ever wavered."
+        }
+      ],
+      "refs": ["Genesis 18:12-15", "Genesis 17:17", "Psalm 126:2", "Hebrews 11:11", "Isaiah 54:1"]
+    },
+    {
+      "v": "8",
+      "context": "Years pass in one verse. The boy grows and is weaned, and Abraham marks the day with a great feast. The celebration becomes the setting for the conflict that follows.",
+      "grammar": "Mishteh, \"feast\", comes from shatah, to drink, and names a banquet with wine rather than an ordinary meal; the same word is used for Laban's wedding feast (Genesis 29:22) and Pharaoh's birthday feast (Genesis 40:20). Gadal, \"grew\", and gamal, \"was weaned\", sound alike in Hebrew, and the Niphal of gamal appears twice, marking the weaning as the event of the verse.",
+      "words": ["H1431", "H1580", "H4960"],
+      "history": "Weaning is a milestone elsewhere in Scripture too: Hannah keeps Samuel with her until he is weaned and then brings him to the sanctuary at Shiloh (1 Samuel 1:22-24). In a world of high infant mortality, a weaned child had survived the most dangerous years, and a family could begin to count on him as its future.",
+      "refs": ["1 Samuel 1:22-24", "Genesis 29:22", "Genesis 40:20"]
+    },
+    {
+      "v": "9",
+      "context": "The trouble begins with what Sarah sees. The narrator refuses to name Ishmael here or anywhere in the scene that follows (verses 9-21): he is ‘the son of Hagar the Egyptian’, ‘the boy’, ‘the lad’. The name that means God hears will be implied, not spoken, when God hears him in verse 17.",
+      "grammar": "Metsacheq is a Piel participle of tsachaq, the root of Isaac's name. Its meaning depends on context, and it has a wide range in Genesis: Lot's sons-in-law think he is joking (19:14), Isaac is seen caressing Rebekah (26:8), Potiphar's wife says the Hebrew slave came to make sport of her (39:14), and the people rise up to revel before the golden calf (Exodus 32:6). So interpreters divide: some read innocent play, perhaps Ishmael ‘Isaac-ing’, acting as though he were the son of laughter; others read mockery or bullying, as the BSB does. The word play is certain even where the sense is not.",
+      "words": ["H6711", "H7200G", "H1904", "H4713"],
+      "text": "The Hebrew ends with the participle, literally ‘Sarah saw the son of Hagar... laughing’, without an object. The Septuagint (the ancient Greek translation) and the Latin Vulgate add ‘with Isaac her son’. The BSB supplies \"her son\" to make the sense clear. Paul, drawing on a reading of the scene found in Jewish interpretation, says the son born according to the flesh persecuted the one born according to the Spirit (Galatians 4:29), which supports the hostile sense.",
+      "refs": ["Galatians 4:29", "Genesis 19:14", "Genesis 26:8", "Genesis 16:1"]
+    },
+    {
+      "v": "10",
+      "context": "Sarah demands that Hagar and her son be expelled so that Ishmael cannot share Isaac's inheritance. She does not name either of them; Hagar is ‘this slave woman’ twice. Paul quotes the verse as Scripture in Galatians 4:30.",
+      "grammar": "Garesh, \"expel\" or ‘drive out’, is a Piel imperative of garash, the verb used when God drove the man out of Eden (Genesis 3:24) and when Cain complains he is driven from the land (Genesis 4:14). The legal heart of the demand is yarash, \"share in the inheritance\", the verb that becomes the Bible's word for inheriting the promised land. The question of who will be Abraham's heir (Genesis 15:3-4) is being settled.",
+      "words": ["H1644H", "H0519", "H3423G"],
+      "theology": [
+        {
+          "id": "election",
+          "note": "The inheritance runs through one son, not both. The verse is the human side of what God will confirm in verse 12, and Paul later builds on it to show that the promise, not natural descent, determines who belongs to God's people (Romans 9:7-8)."
+        }
+      ],
+      "refs": ["Galatians 4:30", "Genesis 15:3-4", "Genesis 25:5-6", "Genesis 3:24"]
+    },
+    {
+      "v": "11-13",
+      "context": "Abraham is deeply grieved because the boy is his son, and God answers his grief directly. God tells him to do as Sarah says, but for God's own reasons: Isaac carries the line of promise, and Ishmael too will become a nation because he is Abraham's offspring.",
+      "grammar": "Verse 11 says literally ‘the matter was very evil in Abraham's eyes’, and God's reply in verse 12 uses the same idiom, ‘let it not be evil in your eyes’, meeting Abraham's distress in its own words. God then says shema beqolah, literally ‘listen to her voice’. The idiom is loaded in Genesis: Adam was judged for listening to his wife's voice (Genesis 3:17), and Abram listened to Sarai's voice when she gave him Hagar (Genesis 16:2). This time God himself tells him to listen. The promise uses a Niphal of qara, ‘will be called’ or \"will be reckoned\": in Isaac Abraham's zera, \"offspring\", will bear his name. Verse 13 applies the same word zera to Ishmael, so both sons are Abraham's seed, though only one line carries the covenant.",
+      "words": ["H7489A", "H8085H", "H6963A", "H7121H", "H2233H"],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "The covenant line is defined by God's word, \"through Isaac\", not by birth order or a father's affection. Romans 9:7 and Hebrews 11:18 quote this sentence for exactly that reason."
+        },
+        {
+          "id": "providence",
+          "note": "God's promise to make Ishmael a nation (verse 13, repeating Genesis 17:20) shows that being outside the covenant line does not mean being outside God's care."
+        }
+      ],
+      "refs": ["Romans 9:7-8", "Hebrews 11:18", "Genesis 17:20", "Genesis 16:2", "Genesis 3:17"]
+    },
+    {
+      "v": "14",
+      "context": "Abraham obeys at dawn, the same prompt obedience he shows in Genesis 22:3. He gives Hagar bread and a skin of water and sends her away with the boy, and she wanders in the wilderness near Beersheba.",
+      "grammar": "Vayshallecheha, \"sent her away\", is a Piel of shalach, the stem used for dismissal, including the release of slaves (Deuteronomy 15:12-13) and divorce (Deuteronomy 24:1). Hagar leaves as a released woman, not a sold one. The syntax of the middle clause is awkward in Hebrew: ‘placing on her shoulder, and the boy’, which can mean either that he put the provisions on her shoulder and gave her the boy, or that he put the boy on her shoulder as well. Her wandering uses ta'ah, the same verb Abraham used of himself in Genesis 20:13, ‘God made me wander’.",
+      "words": ["H7971I", "H2573", "H7926", "H8582"],
+      "history": "Chemet, the \"skin\", was a goatskin sewn into a water bag, standard equipment for desert travel and still used by Bedouin in modern times. What one person could carry did not last long in the heat of the Negev, which is why the crisis comes so quickly in verse 15.",
+      "refs": ["Genesis 22:3", "Deuteronomy 15:12-13", "Genesis 16:7", "Genesis 20:13"]
+    },
+    {
+      "v": "15-16",
+      "context": "The water runs out, and Hagar puts the boy under a bush and sits at a distance so she will not have to watch him die. The scene slows to a series of small actions, each more desperate than the last, and ends in weeping.",
+      "grammar": "Vattashlekh, \"she left\" in the BSB, is literally ‘she cast’ or ‘threw’, a Hiphil of shalak; the same verb is used when Joseph's brothers throw him into the pit (Genesis 37:24). It conveys her helplessness more than roughness: she lays him down because there is nothing else to do. The distance, \"about a bowshot\", is literally ‘like shooters of a bow’, an image that anticipates what the boy will become (verse 20). Her words use al with the imperfect, ‘let me not look on the death of the boy’, a wish, not a statement.",
+      "words": ["H7993", "H2909", "H7198", "H1058"],
+      "text": "In the Hebrew text Hagar lifts up her voice and weeps. The Septuagint reads that the child cried out and wept, which fits verse 17's statement that God heard the boy's voice, and the RSV followed the Greek at this point. Most modern translations keep the Hebrew, and the two readings together make the point that God heard both mother and child.",
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "Genesis gives a slave woman's grief its full weight, told from her side. Scripture does not hurry past the suffering of people on the margins of the story."
+        }
+      ],
+      "refs": ["Genesis 37:24", "Jeremiah 31:15", "Genesis 16:6-7"]
+    },
+    {
+      "v": "17-18",
+      "context": "God hears the boy, and the angel of God calls to Hagar from heaven. The questions and commands are tender: what is wrong, do not be afraid, get up, take hold of him. The promise of a great nation, first given to Abraham in verse 13, is now given to Hagar herself.",
+      "grammar": "Vayyishma Elohim, ‘and God heard’, spells out the meaning of the name Ishmael, ‘God hears’, given at his birth announcement (Genesis 16:11), without using the name. The phrase ba'asher hu sham, \"where he lies\", literally ‘where he is there’, stresses that God hears him in his present condition, under the bush. The angel calls \"from heaven\", as the angel of the LORD will call to Abraham from heaven over Isaac in Genesis 22:11. Hachaziqi yadekh bo, \"take him by the hand\", is literally ‘make your hand strong on him’, a Hiphil of chazaq: she is told to hold him firmly, as someone who now has a future to hold on to.",
+      "words": ["H8085G", "H4397H", "H8064", "H2388H"],
+      "theology": [
+        {
+          "id": "angels",
+          "note": "The angel of God speaks as God, promising in the first person, \"I will make him into a great nation\". In Genesis this messenger often speaks with God's own voice (16:10, 22:11-12), which is why interpreters ask whether he is a created messenger or a form of God's own presence."
+        },
+        {
+          "id": "prayer",
+          "note": "No prayer is recorded, only a voice, and God hears it. The verse gives the ground for every cry that has no words: God listens where the one crying lies."
+        }
+      ],
+      "refs": ["Genesis 16:11", "Genesis 22:11", "Exodus 2:24", "Psalm 34:6"]
+    },
+    {
+      "v": "19",
+      "context": "God opens Hagar's eyes and she sees a well. Nothing new is created; she is shown what was there. She fills the skin and gives the boy a drink, and the danger passes.",
+      "grammar": "Paqach, \"opened\", is used for opening eyes to see what was hidden: the eyes of Elisha's servant to see the hills full of horses and chariots (2 Kings 6:17), and in the Greek of Luke, the disciples at Emmaus, whose eyes were opened to recognize Jesus (Luke 24:31). Be'er, \"well\", introduces the word that dominates the rest of the chapter: the well that saves Ishmael is followed by the well that Abraham secures at Beersheba.",
+      "words": ["H6491", "H5869A", "H0875", "H8248H"],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "God's help comes through ordinary means: a well, a skin, water. Provision in Scripture often lies close at hand and needs only to be seen."
+        }
+      ],
+      "refs": ["2 Kings 6:17", "Genesis 16:13-14", "Luke 24:31", "Isaiah 41:17-18"]
+    },
+    {
+      "v": "20-21",
+      "context": "A short summary closes Ishmael's story in this chapter: God is with him, he grows up in the wilderness, becomes an archer, and settles in Paran, and his mother finds him an Egyptian wife. His line now runs away from Canaan toward the desert and Egypt.",
+      "grammar": "\"God was with the boy\" uses the phrase that Genesis will use of Isaac (26:3, 26:24), Jacob (28:15), and Joseph (39:2), and that Abimelech applies to Abraham in the very next verse. The phrase for archer, roveh qashshat, is two nouns side by side, ‘a shooter, a bowman’; the first word is sometimes derived from a verb meaning to grow, giving ‘he grew up as an archer’, and translations vary slightly for that reason. In verse 21 it is Hagar who takes a wife for him, the role a father normally played (compare Genesis 24:4). She chooses from her own people.",
+      "words": ["H7235B", "H7199", "H6290G", "H4714G"],
+      "history": "Genesis 25:12-18 lists twelve tribal leaders descended from Ishmael, living from Havilah to Shur, east of Egypt. Later Scripture associates Ishmaelites with desert caravans and trade (Genesis 37:25-28) and lists them among Israel's neighbors (Psalm 83:6). The Wilderness of Paran is also where Israel camped after Sinai (Numbers 10:12).",
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The same presence of God promised to the covenant line accompanies the son outside it. God's care for Ishmael fulfills his word to both Abraham (verse 13) and Hagar (verse 18)."
+        }
+      ],
+      "refs": ["Genesis 25:12-18", "Genesis 16:12", "Genesis 37:25", "Numbers 10:12"]
+    },
+    {
+      "v": "22-24",
+      "context": "The scene shifts to Abimelech, the king of chapter 20, who comes with his army commander to ask for a treaty. His reason is what he has seen: \"God is with you in all that you do.\" Abraham agrees to swear.",
+      "grammar": "Elohim immekha, ‘God is with you’, repeats the language of verse 20 about Ishmael, now spoken of Abraham by a foreigner. Hishave'ah, \"swear\", is a Niphal imperative with an added -ah ending that makes the request more urgent. The oath clause starts with im, \"if\", in a form Hebrew oaths often use: the curse is left unspoken (‘may God do so to me if...’), so im functions as ‘that you will not’. Nin and nekhed, \"children\" and \"descendants\", are a rhyming pair used together elsewhere for a man's whole posterity (Job 18:19, Isaiah 14:22). Abimelech asks for chesed, \"kindness\", the same covenant loyalty Abraham invoked in 20:13. Abraham's answer in verse 24 is an emphatic anokhi ishave'a, ‘I, I will swear’.",
+      "words": ["H5973A", "H7650", "H8266", "H5209", "H5220", "H2617A"],
+      "history": "Phicol reappears with an Abimelech in Isaac's time (Genesis 26:26), which suggests either long careers or, as some interpreters propose, names or titles that recurred in the ruling house of Gerar. Treaties between a local ruler and a powerful herding clan secured grazing and water for one and peace for the other.",
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "Covenants in Genesis are not only between God and people. A sworn agreement between two households, made before God, shows the same structure on a human scale: commitment, oath, witnesses, and kindness pledged to future generations."
+        }
+      ],
+      "refs": ["Genesis 26:26-31", "Genesis 26:28", "Joshua 2:12", "Genesis 39:2-3"]
+    },
+    {
+      "v": "25-26",
+      "context": "Before the treaty is sealed, Abraham raises a grievance: Abimelech's servants seized a well Abraham had dug. Abimelech pleads ignorance. The agreement will have to settle this dispute to be worth anything.",
+      "grammar": "Vehokhiach, \"complained\", is a Hiphil of yakach, a legal verb for arguing a case or reproving someone; it is the same root that declared Sarah vindicated in 20:16. Abraham, who had been cross-examined by Abimelech in chapter 20, now brings his own case. Gazelu, \"had seized\", is from gazal, to seize by force or rob, the word the law uses for robbery (Leviticus 6:2, 19:13). Abimelech's reply is three short denials with emphatic pronouns, ‘I do not know... you did not tell me... I did not hear’, clearing himself personally without denying that the well was taken.",
+      "words": ["H3198", "H1497", "H0875", "H5046"],
+      "history": "In the dry Negev, rainfall was too low for regular farming, and herds depended on wells dug through to groundwater. A well was a capital investment, and control of it amounted to a right to the grazing around it. Genesis 26:15-22 records a series of well disputes between Isaac's herdsmen and the men of Gerar.",
+      "refs": ["Genesis 26:15-22", "Leviticus 19:13", "Genesis 13:7"]
+    },
+    {
+      "v": "27-30",
+      "context": "Abraham gives flocks and herds, and the two men make a covenant. Then Abraham sets aside seven ewe lambs, and when Abimelech asks why, he explains: accepting them will be a witness that the well is his. The treaty now carries legal proof of ownership.",
+      "grammar": "Vayyikhretu... berit is literally ‘they cut a covenant’, the standard Hebrew idiom, probably from the practice of cutting animals in ratifying a covenant (Genesis 15:9-10, Jeremiah 34:18). Ledah, \"as my witness\", uses a feminine noun meaning a testimony or witness; the lambs themselves become evidence, as a heap of stones will serve as witness between Jacob and Laban (Genesis 31:44-48). Sheva, \"seven\", appears three times in verses 28-30, preparing the wordplay of verse 31.",
+      "words": ["H3772H", "H1285", "H7651", "H3535", "H5713A"],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "The lambs make the agreement visible and public. Covenants in Scripture are routinely tied to physical witnesses (a heap of stones, a pillar, a sign), because promises between parties need to be remembered and checked."
+        }
+      ],
+      "refs": ["Genesis 31:44-48", "Genesis 15:9-10", "Jeremiah 34:18", "Joshua 24:27"]
+    },
+    {
+      "v": "31-32",
+      "context": "The place is named Beersheba because the two swore an oath there, and Abimelech and Phicol go home. Abraham now has a recognized claim to a well in the land promised to his descendants.",
+      "grammar": "Al-ken, \"so\" or ‘therefore’, introduces the name explanation, a formula Genesis uses often (Genesis 2:24, 11:9). The verb nishbe'u, \"swore an oath\", is a Niphal plural: both men swore. Genesis 26:33 gives a second account of the name, when Isaac's servants find water on the day of his oath with Abimelech and Isaac names the well Shibah. Some read the two as competing explanations of the name; others as a renaming that renewed Abraham's claim after the wells had been stopped (Genesis 26:18).",
+      "words": ["H0884", "H7650", "H3651C"],
+      "history": "Beersheba became the southern landmark of Israel's settled territory, so that the whole land could be described as \"from Dan to Beersheba\" (Judges 20:1, 1 Samuel 3:20). Isaac and Jacob both worshiped there (Genesis 26:23-25, 46:1).",
+      "refs": ["Genesis 26:33", "Genesis 26:18", "Judges 20:1", "Genesis 46:1"]
+    },
+    {
+      "v": "33-34",
+      "context": "Abraham plants a tamarisk at Beersheba and calls on the name of the LORD, the Eternal God. The chapter ends with worship and with a reminder that Abraham, though he now has a well, is still a sojourner in the land.",
+      "grammar": "Vayyiqra beshem YHWH, \"called upon the name of the LORD\", is the phrase for public worship that runs from Genesis 4:26 through Abraham's altars (12:8, 13:4). The title El Olam, \"the Eternal God\", joins El, God, with olam, lasting time. Isaiah 40:28 uses a closely related title, ‘the everlasting God’, of the one who does not grow weary. The last verse returns to the verb gur, ‘to sojourn’ (compare 20:1): yamim rabbim, ‘many days’, Abraham lived as a resident alien in the land he had been promised.",
+      "words": ["H0815", "H7121H", "H0410G", "H5769H", "H1481A"],
+      "history": "The tamarisk is a hardy tree that can survive in dry, salty soil and provides shade in the desert. Later Scripture mentions tamarisks at important places: Saul holds court under one at Gibeah (1 Samuel 22:6), and the men of Jabesh-gilead bury Saul's bones under one (1 Samuel 31:13).",
+      "theology": [
+        {
+          "id": "god",
+          "note": "Abraham names God by what the chapter has shown: a God who kept a promise across twenty-five years and will keep it for generations yet unborn. The title fits a man who owns one well and expects an everlasting inheritance."
+        },
+        {
+          "id": "names-of-god",
+          "note": "El Olam joins El Elyon (Genesis 14:19), El Roi (16:13), and El Shaddai (17:1) among the names by which the patriarchs knew God, each drawn from an experience of him."
+        }
+      ],
+      "refs": ["Isaiah 40:28", "Psalm 90:2", "Genesis 12:8", "Hebrews 11:9", "1 Samuel 22:6"]
+    }
+  ]
+}

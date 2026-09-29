@@ -1,0 +1,520 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "The Gospel's first sentence has three clauses, and each adds a claim. The Word already existed when the beginning began; the Word was with God, distinct from him; and the Word was God, sharing what God is. Verse 2 gathers the first two claims again, and verse 3 names what the Word did.",
+      "grammar": "En archē, ‘in the beginning’, are the first two words of Genesis in the Greek Septuagint, the translation Greek-speaking Jews read. Genesis continues with a past act (‘God made’); John continues with ēn, ‘was’, an imperfect that describes an existing state, not an event. The prologue keeps this contrast carefully: the Word ‘was’ (verses 1, 2, 4, 9, 10), while everything else, including John the Baptist and the Word's own flesh, ‘came to be’ (egeneto, verses 3, 6, 14). Pros ton theon uses pros with the accusative, which in Koine often means simply ‘with’ (Mark 6:3 uses it for Jesus' sisters being ‘here with us’), though some interpreters hear a hint of facing toward, a relationship rather than a location. The third clause, kai theos ēn ho logos, puts theos first for emphasis and without the article, while ho logos keeps the article and so is the subject. Greek grammarians set out three ways to read an anarthrous predicate noun: definite (‘the God’), indefinite (‘a god’), or qualitative (‘what God is’). With the article on both nouns the clause would say that the Word and God are interchangeable, leaving no room for the Word to be ‘with God’; without it the clause gives the Word the full nature of God while keeping the distinction the second clause drew. Philo of Alexandria had made much of the article, saying that Scripture calls the supreme being ho theos and uses theos without it for his Logos (On Dreams 1.229-230). John does not follow that scheme: he uses theos without the article for the one God in verses 6, 12, 13, and 18.",
+      "words": ["G0746", "G1510", "G4314", "G2316", "G3056"],
+      "theology": [
+        {
+          "id": "trinity",
+          "note": "The verse holds two truths together that the church would later spell out as the doctrine of the Trinity: the Word is personally distinct from God the Father (with God) and shares the one divine nature (was God). Either claim without the other would deny what John says."
+        },
+        {
+          "id": "incarnation",
+          "note": "The one who becomes flesh in verse 14 is introduced first as eternal. The incarnation in John is not a man raised to divine status but the Word who already was God taking on flesh."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Genesis 1:1",
+          "note": "The Hebrew opens bereshit bara elohim, ‘in the beginning God created’, and the Septuagint renders it en archē epoiēsen ho theos. John copies the Septuagint's first two words exactly and then swaps the verb: where Genesis narrates the first act, John reaches behind it to one who already existed when that act took place. The echo continues through the prologue with creation, life, light, and darkness (Genesis 1:3-5), so that the coming of Christ is presented as a new beginning by the same Creator. The Aramaic Targums, the synagogue paraphrases, often speak of the Memra, ‘Word’, of the LORD where the Hebrew speaks of God acting; Targum Onkelos, for example, has the man and woman hear the voice of the Memra of the LORD in the garden (Genesis 3:8). Scholars debate whether this usage is as old as John and whether it names anything more than a reverent way of speaking of God himself."
+        },
+        {
+          "ref": "Proverbs 8:22-31",
+          "note": "Wisdom speaks in Proverbs 8 of being with the LORD before the world, beside him as he marked out the heavens. The Hebrew verb in verse 22, qanani, can mean ‘possessed me’ or ‘brought me forth’; the Septuagint chose ektisen me, ‘created me’, and verse 23 in the Greek says Wisdom was established en archē, ‘in the beginning’. Later Jewish writings developed the figure: the Wisdom of Solomon sets God's word and wisdom side by side as agents of creation (9:1-2) and calls Wisdom a reflection of eternal light (7:26). John borrows the pattern of a divine agent present at creation, but chooses logos rather than sophia and says the Word ‘was’, never that it was created, a distinction that became decisive when Arius appealed to Proverbs 8:22 in the fourth century."
+        }
+      ],
+      "history": "Logos also had a long life in Greek philosophy. Heraclitus of Ephesus (around 500 BC) used it for the reason or account that orders all things, and the Stoics made the Logos the rational principle pervading the universe. Philo, a Jewish philosopher in Alexandria who died around AD 50, combined these ideas with Scripture and called the Logos God's image and instrument in creation. John's Greek readers in Ephesus, if the tradition that places the Gospel there is right, would have recognized the word; none of these writers said that the Logos was a person who became flesh.",
+      "refs": ["1 John 1:1-2", "Revelation 19:13", "John 17:5", "Colossians 1:17", "Psalm 33:6"]
+    },
+    {
+      "v": "2",
+      "context": "Verse 2 restates the first two clauses of verse 1 in a single line, as if to fix them before moving on. Its point is the eternal, personal relationship of the Word with God, which verse 18 returns to at the end of the prologue.",
+      "grammar": "Houtos, ‘this one’, is a demonstrative pronoun that sums up the subject of verse 1 and stresses it: this very Word, the one just called God, was with God. The repetition of en archē and pros ton theon is not padding; it turns the three clauses of verse 1 into a frame around the claim ‘and the Word was God’, so that the Word's deity is always held with his distinction from the Father.",
+      "words": ["G3778", "G0746", "G4314"],
+      "theology": [
+        {
+          "id": "trinity",
+          "note": "The relationship between the Word and God did not begin at the incarnation. It was there in the beginning, which is why the church confessed that the Son's relation to the Father is eternal, not a role he took on for a time."
+        }
+      ],
+      "refs": ["John 17:24", "1 John 1:2", "John 8:58"]
+    },
+    {
+      "v": "3",
+      "context": "The Word's first act is creation, and it is stated twice, positively and negatively: all things came to be through him, and not one thing came to be without him. The double statement closes every loophole, so that the Word stands on the Creator's side of the line between God and everything made.",
+      "grammar": "Dia with the genitive, di' autou, names the agent through whom something is done. The New Testament regularly speaks of creation as from the Father and through the Son (1 Corinthians 8:6, Hebrews 1:2), so the preposition marks the Word's role without making him a lesser tool. The verb egeneto, ‘came into being’, is used for all created things, in contrast to the ēn, ‘was’, of the Word in verses 1 and 2. Oude hen, ‘not even one thing’, is stronger than the ordinary ouden, ‘nothing’. The last words, ho gegonen, are a perfect, ‘what has come into being’, describing created things as they now stand.",
+      "words": ["G1223", "G1096", "G3761", "G1520"],
+      "theology": [
+        {
+          "id": "creation",
+          "note": "Everything that exists owes its existence to the Word. That leaves no room for the idea that matter or any power is outside his making, and it grounds John's later claim that the world which rejected him was his own."
+        }
+      ],
+      "text": "The earliest manuscripts have no punctuation, so editors must decide whether ho gegonen, ‘that has come into being’, ends verse 3 or begins verse 4. The Nestle-Aland and United Bible Societies editions print it with verse 4 (‘what has come into being in him was life’), following most second-century writers; Bruce Metzger's Textual Commentary records that a minority of the editorial committee, Metzger among them, preferred the traditional punctuation, which the BSB and most English Bibles keep. Metzger's point was that the other reading leaves verse 4 awkward, since a perfect ‘has come into being’ would lead one to expect ‘is life’ rather than ‘was life’. On the traditional reading the verse stresses the totality of creation; on the other it says that created things had their life in the Word.",
+      "refs": ["1 Corinthians 8:6", "Colossians 1:16", "Hebrews 1:2", "Genesis 1:1"]
+    },
+    {
+      "v": "4",
+      "context": "From creation John moves to life and light, the two gifts God gave first in Genesis 1. The Word is the source of life, and that life is the light by which human beings see. The pair will run through the whole Gospel, from the light of the world (8:12) to the resurrection and the life (11:25).",
+      "grammar": "Zōē, ‘life’, occurs thirty-six times in John, more than in any other New Testament book, and seventeen of those are the phrase zōē aiōnios, ‘eternal life’. Here it is life in the fullest sense, the life of God that the Word has in himself (5:26). The sentence climbs step by step: the word that ends one clause (life) begins the next, and the same happens with light in verse 5. To phōs tōn anthrōpōn is ‘the light of men’, a genitive of the people who receive it: the Word's life lights up human beings.",
+      "words": ["G2222", "G5457", "G0444"],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "Light is John's image for revelation: what the Word gives is not information alone but the life of God made visible, which is why the same Gospel can say that eternal life is to know the only true God and Jesus Christ (17:3)."
+        }
+      ],
+      "refs": ["Psalm 36:9", "John 5:26", "John 8:12", "John 11:25", "1 John 5:11-12"]
+    },
+    {
+      "v": "5",
+      "context": "The first present tense in the prologue: the light shines now. Darkness is introduced as something hostile, and its failure against the light is announced before the story of the rejection (verses 10-11) and the cross is told.",
+      "grammar": "Phainei, ‘shines’, is a present, while katelaben, ‘overcame’, is an aorist: the light keeps shining, and the darkness did not seize it. Katalambanō can mean to grasp with the mind (‘comprehend’, the King James Version, following the Latin Vulgate's comprehenderunt) or to seize and overpower. John uses it in 12:35 for darkness overtaking a traveler, which is why most modern translations prefer ‘overcome’. Several commentators think John intends a play on both senses: the darkness neither understood the light nor mastered it.",
+      "words": ["G5316", "G4653", "G2638"],
+      "refs": ["John 12:35", "John 3:19", "1 John 2:8", "Genesis 1:2-3"]
+    },
+    {
+      "v": "6-8",
+      "context": "The poetry breaks into plain narrative prose: a man, sent from God, named John. He is introduced only by his task, to testify, and verse 8 says pointedly what he was not. The Baptist enters the Gospel as the first witness, and the chapter's second half (verses 19-36) shows his testimony in action.",
+      "grammar": "Egeneto anthrōpos, ‘there came a man’, deliberately contrasts with the ‘was’ of the Word: John came to be, the Word already was. Apestalmenos para theou is a perfect passive participle of apostellō, the verb for sending a messenger with authority, used of prophets and of Jesus himself; John's mission comes from God. The two purpose clauses (hina, ‘in order that’) set out his work: to testify, and so that all might believe di' autou, ‘through him’, meaning through John as the witness, not in John. Verse 8 puts ekeinos, ‘that man’, emphatically: he was not the light.",
+      "words": ["G1096", "G0649", "G3141", "G3140", "G1565"],
+      "history": "The Gospel's insistence that John was not the light may answer people who thought otherwise. Luke 3:15 reports that crowds wondered whether John was the Christ, and Acts 19:1-7 finds disciples in Ephesus who knew only John's baptism. A much later Christian work, the Pseudo-Clementine Recognitions (1.54 and 1.60, from a third- or fourth-century source), describes some of John's disciples claiming that their master was the Christ. How widespread such claims were in John's day is unknown.",
+      "parallels": ["Mark 1:4", "Matthew 3:1-2", "Luke 3:2-3"],
+      "refs": ["Luke 1:13-17", "Luke 3:15", "Acts 19:1-4", "John 5:33-35"]
+    },
+    {
+      "v": "9",
+      "context": "The prologue returns to the Light and announces its arrival: the true Light was coming into the world. Verse 9 hinges the section on eternity (1-5) to the section on the Light's reception in the world (10-13).",
+      "grammar": "The participle erchomenon, ‘coming’, is the puzzle. It can agree with anthrōpon, ‘every man coming into the world’ (the King James Version's reading), or with phōs, ‘the Light was coming into the world’ (most modern versions, reading ēn ... erchomenon together). The first matches a Hebrew idiom in which ‘those who come into the world’ simply means all human beings (m. Rosh Hashanah 1:2 says that at the New Year all who come into the world pass before God like sheep). The second fits John's habit of speaking of Jesus as the one who comes into the world (3:19, 6:14, 12:46). Alēthinon, ‘true’, means genuine or real, as opposed to partial or preliminary, the same word used of the true bread (6:32) and the true vine (15:1).",
+      "words": ["G0228", "G5461", "G2064", "G2889"],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "The Light ‘gives light to every man’. The Quaker tradition from George Fox onward read this as an inward light in every person; most interpreters read it as the light that falls on everyone, revealing and exposing, since 3:19-21 describes people fleeing the light. Either way, no one stands outside its reach."
+        }
+      ],
+      "refs": ["John 3:19-21", "John 8:12", "John 12:46", "1 John 2:8"]
+    },
+    {
+      "v": "10-11",
+      "context": "Two parallel statements of rejection. The world, made through him, did not know him; and his own, the people who belonged to him, did not receive him. The second sentence narrows the first, from humanity to Israel, and prepares for the contrast of verse 12.",
+      "grammar": "Kosmos appears three times in verse 10 and nearly eighty times in the Gospel. Here it moves from the created world (‘was made through Him’) to humanity in its turning away (‘did not recognize Him’). Egnō, ‘know’ or ‘recognize’, in John means more than awareness; it is acknowledgment. Verse 11 uses the same adjective twice with different genders: eis ta idia, neuter, ‘to his own things’ or ‘his own home’ (the same phrase is used in 19:27 when the beloved disciple takes Mary eis ta idia, into his home), and hoi idioi, masculine, ‘his own people’. Parelabon, ‘received’, is the verb for welcoming a guest or accepting something handed on.",
+      "words": ["G2889", "G1097", "G2398", "G3880"],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "The world's sin is described as a failure to recognize its maker. The verse locates sin in the relationship between creature and Creator before it names any particular wrong."
+        },
+        {
+          "id": "israel",
+          "note": "His own people are Israel, the nation God had prepared. The Gospel's first readers were largely Jewish believers, so the rejection described here is not a Gentile verdict on Jews but grief within the family, as Isaiah had grieved that Israel did not know its owner (Isaiah 1:3)."
+        }
+      ],
+      "refs": ["Isaiah 1:3", "John 19:27", "John 12:37-40", "Romans 9:1-5"]
+    },
+    {
+      "v": "12-13",
+      "context": "The turn of the prologue. Against the general rejection, some did receive him, and to them he gave the right to become God's children. Verse 13 explains that this sonship is a birth from God, not from any human source, and so prepares for Jesus' words about being born from above in 3:3-8.",
+      "grammar": "Hosoi de elabon, ‘but as many as received him’, uses de to mark the contrast with verse 11 and a simple verb (lambanō) for what verse 11 called welcoming. Believing is then named as the same act: tois pisteuousin eis to onoma autou. Pisteuō eis, ‘believe into’, is a construction John uses about thirty-six times, rarely found outside Christian writing, and it expresses trust directed toward a person. Exousian is ‘right’ or ‘authority’, not ‘power’ as older versions have it: a status conferred, not an ability. John calls believers tekna theou, ‘children of God’, and keeps huios, ‘son’, for Jesus alone. Verse 13 then negates three human sources: ex haimatōn, literally ‘from bloods’, reflecting the ancient belief that a child was formed from blood (Wisdom of Solomon 7:2 describes an infant compacted in blood from a man's seed); ‘the will of the flesh’; and ‘the will of a man’, anēr, the husband. Egennēthēsan, an aorist passive, has God as its source: born ek theou.",
+      "words": ["G2983", "G4100", "G1849", "G5043", "G0129G", "G0435G", "G1080"],
+      "theology": [
+        {
+          "id": "regeneration",
+          "note": "Verse 13 is the Bible's clearest statement that new birth is God's work. It rules out three routes a first-century reader might trust: ancestry, natural desire, and human decision. Faith receives the gift (verse 12); God is the one who begets (verse 13)."
+        },
+        {
+          "id": "faith",
+          "note": "Receiving Christ and believing in his name are the same act described twice. Faith in John is not assent to a list but welcome of a person, the one whose name, meaning his identity, has just been revealed."
+        }
+      ],
+      "text": "Every Greek manuscript has the plural, ‘who were born’. Tertullian (On the Flesh of Christ 19) and a few Old Latin witnesses read a singular, ‘who was born’, which turns the verse into a statement about the virgin birth of Jesus. The plural is certainly original; the singular shows how early readers connected the new birth of believers with Christ's own birth.",
+      "refs": ["John 3:3-8", "1 John 3:1-2", "1 John 5:1", "James 1:18", "Galatians 3:26"]
+    },
+    {
+      "v": "14",
+      "context": "The center of the prologue. The Word of verse 1 became flesh and lived among us, and eyewitnesses saw his glory. The verse joins the eternal (verse 1) to the historical (verse 6), and every later scene in the Gospel shows glory in flesh.",
+      "grammar": "Kai ho logos sarx egeneto uses egeneto, ‘became’, the verb John has kept for created things, of the Word himself: the Word entered the order of what comes to be, without ceasing to be what he was. Sarx, ‘flesh’, is blunter than sōma, ‘body’, or anthrōpos, ‘man’; it names human nature in its weakness and mortality, and it cuts against any claim that Christ only seemed human (1 John 4:2 makes confession of Christ come in the flesh a test). Eskēnōsen, from skēnē, ‘tent’, means ‘pitched his tent’. Its consonants s-k-n resemble the Hebrew root sh-k-n, ‘dwell’, from which the tabernacle (mishkan) and the later rabbinic word Shekhinah, God's dwelling presence, come; the resemblance is a sound, not an etymology, but readers who knew both languages could hear it. Etheasametha, ‘we have seen’ (an aorist of theaomai, to behold), is plural and first person: the writer includes himself among eyewitnesses. Hōs monogenous para patros has no article and could be rendered ‘glory as of an only son from a father’, a comparison, though the context makes clear which Son and which Father. Plērēs, ‘full’, is often indeclinable in the Greek of the period, so it may describe the Word, the glory, or the Son; the sense is the same.",
+      "words": ["G4561", "G1096", "G4637", "G2300", "G1391", "G3439", "G4134"],
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "The Word did not put on a disguise or come to live inside a man; he became flesh. The Council of Chalcedon (451) confessed one person in two natures, truly God and truly human, as a guard on exactly this sentence."
+        },
+        {
+          "id": "temple",
+          "note": "God's dwelling with Israel in the tabernacle and temple now takes a human form. John will later have Jesus speak of his body as the temple (2:19-21), and Revelation 21:3 uses the same verb for God's final dwelling with his people."
+        },
+        {
+          "id": "glory",
+          "note": "Glory, God's visible weight and splendor, was seen in the tabernacle cloud. Here it is seen in a person, and the Gospel will show it chiefly at the cross, where Jesus says the hour has come for the Son of Man to be glorified (12:23)."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Exodus 34:6",
+          "note": "After Moses asks to see God's glory (Exodus 33:18), God passes by proclaiming himself rav chesed ve'emet, ‘abounding in loving devotion and faithfulness’. The Septuagint renders the pair polyeleos kai alēthinos, ‘very merciful and true’. John's ‘full of grace and truth’ does not follow the Septuagint's wording; charis is not its usual word for chesed. Many commentators think John renders the Hebrew pair afresh, and the link is supported by the setting: verse 17 names Moses, and verse 18 answers Exodus 33:20. What Moses asked to see is now seen in the Son."
+        },
+        {
+          "ref": "Exodus 40:34-35",
+          "note": "When the tabernacle was finished, the cloud covered the tent and the glory of the LORD filled it, so that Moses could not enter. The Septuagint calls the tabernacle hē skēnē, ‘the tent’, the noun behind John's verb. By joining ‘tented’ and ‘glory’ in one sentence, John presents the incarnate Word as the place where God's presence now dwells."
+        }
+      ],
+      "refs": ["1 John 1:1-3", "1 John 4:2", "Revelation 21:3", "John 2:19-21", "Philippians 2:6-7"]
+    },
+    {
+      "v": "15",
+      "context": "A second prose interruption about the Baptist, this time in his own voice. He testifies ahead of time to what the prologue has just said: the one coming after him outranks him because he existed before him. John will repeat the saying in verse 30 when he sees Jesus.",
+      "grammar": "Marturei is present, ‘testifies’, and kekragen a perfect with present force, ‘has cried out’, so the Baptist's witness is presented as still sounding. The saying turns on three words of position and time: opisō mou erchomenos, ‘coming after me’ (the language of a follower); emprosthen mou gegonen, ‘has come to be ahead of me’ in rank; and hoti prōtos mou ēn, ‘because he was first of me’. Prōtos with the genitive here serves as a comparative, ‘before me’. Since Luke 1:36 places John's birth about six months before Jesus', ‘before me’ cannot mean older in years; it points back to verse 1.",
+      "words": ["G3140", "G2896", "G3694", "G1715", "G4413H"],
+      "parallels": ["Mark 1:7", "Matthew 3:11", "Luke 3:16"],
+      "refs": ["John 1:30", "John 8:58", "Luke 1:36"]
+    },
+    {
+      "v": "16-17",
+      "context": "The eyewitness ‘we’ of verse 14 widens to all believers: from the fullness of the Word made flesh we have all received grace upon grace. Verse 17 explains how, by setting two gifts side by side: the law given through Moses, and grace and truth come through Jesus Christ, named here for the first time in the Gospel.",
+      "grammar": "Both verses begin with hoti, ‘because’, so they give reasons: verse 16 grounds the claim that the Word was full of grace (verse 14), and verse 17 grounds verse 16. Plērōma, ‘fullness’, picks up plērēs in verse 14. The phrase charin anti charitos is the main puzzle. Anti normally means ‘in place of’ or ‘instead of’, and Ruth Edwards (Journal for the Study of the New Testament 32, 1988) argued that John means one grace, the gift of the law, replaced by another, the grace and truth of Christ, which verse 17 then spells out. Others read it as accumulation, one grace following another, and point to Philo's language about God sending new favors in place of earlier ones (On the Posterity of Cain 145). The older reading ‘grace corresponding to grace’ has little support in Greek usage. In verse 17 there is no ‘but’ between the clauses; the Greek sets them side by side. Edothē, ‘was given’, makes the law a gift too, while egeneto, ‘came’, says grace and truth came into being in a person.",
+      "words": ["G3754H", "G4138", "G5485", "G0473", "G3551", "G1325", "G0225"],
+      "theology": [
+        {
+          "id": "law",
+          "note": "The law is called a gift given through Moses, not a mistake corrected by Christ. The contrast is between a servant who delivered God's word and the Son in whom God's faithful love arrives in person, which is how John can later say that Moses wrote about Jesus (5:46)."
+        },
+        {
+          "id": "covenant",
+          "note": "Grace and truth recall the covenant name proclaimed to Moses (Exodus 34:6). The new covenant does not abolish that name but shows its fullest meaning in Jesus Christ."
+        }
+      ],
+      "text": "In verse 16 the earliest manuscripts read hoti, ‘because’; later manuscripts and the King James Version read kai, ‘and’, which loosens the link to verse 14.",
+      "refs": ["John 5:46", "Colossians 2:9", "Hebrews 3:5-6", "Romans 10:4", "Ephesians 1:7-8"]
+    },
+    {
+      "v": "18",
+      "context": "The prologue ends where it began, with the Word at God's side, now called the one and only Son. No one has seen God, but the Son has made him known. The rest of the Gospel is the account of how he did so.",
+      "grammar": "Theon comes first and without the article: ‘God no one has ever seen’. The perfect heōraken states a settled fact. The subject is monogenēs theos (in the earliest manuscripts), which can be read three ways: ‘the only begotten God’; ‘the only one, himself God’, taking the two words in apposition (the BSB's ‘the one and only Son, who is Himself God’); or ‘God the only Son’ (ESV). Ho ōn eis ton kolpon tou patros is literally ‘the one being into the bosom of the Father’; kolpos is the lap or chest, the place of closest fellowship, the word used in 13:23 for the beloved disciple reclining next to Jesus. The preposition eis, ‘into’, often simply means ‘in’ in Koine. The final verb, exēgēsato, has no object in Greek; ‘Him’ is supplied. It means to lead out, relate, or explain, and it closes the prologue: Jesus is God's own account of himself.",
+      "words": ["G2316", "G3708", "G3439", "G2859", "G1834"],
+      "theology": [
+        {
+          "id": "trinity",
+          "note": "The verse begins and ends the prologue's frame: the Son is God and is at the Father's side, as the Word was God and with God in verse 1. Distinction and oneness are held together at the close exactly as at the opening."
+        },
+        {
+          "id": "revelation",
+          "note": "God is known because the Son makes him known. The verse does not deny the Old Testament's visions of God but says that no one has seen God as he is; the full disclosure of God comes in the one who shares his nature (14:9)."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Exodus 33:20",
+          "note": "God tells Moses, in the Hebrew, that no human may see his face and live, and the Septuagint keeps the sense. Moses sees God's back as the divine name is proclaimed (Exodus 34:5-7). John's opening words in verse 18 answer this: what was withheld from the greatest prophet is now made known by the Son, who does not glimpse God from outside but comes from the Father's side."
+        }
+      ],
+      "text": "The Greek witnesses divide three ways. The papyrus P66 (about AD 200), the first hand of Codex Sinaiticus, Codex Vaticanus, and the first hand of Codex Ephraemi read monogenēs theos without the article; P75 (late second or early third century) and a corrector of Sinaiticus read ho monogenēs theos, with it; Codex Alexandrinus and most later manuscripts read ho monogenēs huios, ‘the only begotten Son’. The editors of the critical editions, and Bruce Metzger's Textual Commentary, prefer theos as the older and harder reading. Bart Ehrman (The Orthodox Corruption of Scripture, 1993) argued the reverse, that scribes wrote theos to counter those who denied Christ's deity and that huios, matching 3:16 and 3:18, is original. Most English Bibles now follow the theos reading.",
+      "refs": ["John 14:9", "John 6:46", "1 John 4:12", "John 13:23", "Colossians 1:15"]
+    },
+    {
+      "v": "19",
+      "context": "The narrative proper begins with a formal inquiry. The authorities in Jerusalem send priests and Levites to ask John who he is. The chapter note calls the section a trial; the first question sets its terms.",
+      "grammar": "Hautē estin hē marturia, ‘this is the testimony’, is a heading for verses 19 to 34. Hoi Ioudaioi, ‘the Jews’, occurs about seventy times in John. Its sense varies: sometimes the Jewish people, sometimes Judeans, and often, as here, the religious authorities in Jerusalem who send an official delegation. Readers should not hear it as a label for Jews in general. The question su tis ei puts su, ‘you’, first: ‘You, who are you?’",
+      "words": ["G3141", "G2453", "G2409", "G3019", "G4771"],
+      "history": "Priests served at the temple in rotating divisions; Levites assisted them as singers, gatekeepers, and teachers. Sending both to question a man who was performing a washing rite makes sense, since matters of purity were their business. John himself was of priestly descent through his father Zechariah (Luke 1:5), which made his ministry in the wilderness rather than the temple all the more striking.",
+      "refs": ["Luke 1:5", "Luke 3:15", "John 5:33"]
+    },
+    {
+      "v": "20",
+      "context": "John's first answer is a flat denial that he is the Christ, the anointed king Israel hoped for. The narrator introduces it with unusual emphasis.",
+      "grammar": "The verse says the same thing three times: he confessed, he did not deny, he confessed. Hōmologēsen kai ouk ērnēsato is the language of a witness in court, and ‘did not deny’ is litotes, an understatement for emphasis. The answer puts egō first: egō ouk eimi ho christos, ‘I am not the Christ’. Readers of John will later hear Jesus' own egō eimi, ‘I am’, sayings; the Baptist's first words in the story are the negative counterpart.",
+      "words": ["G3670", "G0720", "G1473", "G5547"],
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "The Christ is a title, not a surname: the anointed one, the king from David's line. The first thing John's testimony does is clear the title for the one it belongs to."
+        }
+      ],
+      "parallels": ["Luke 3:15-16"],
+      "refs": ["John 3:28", "Acts 13:25", "Luke 3:15"]
+    },
+    {
+      "v": "21",
+      "context": "The questioners try two more figures of hope, Elijah and the Prophet, and John's answers grow shorter: ‘I am not’, then simply ‘No’. The shrinking replies prepare for his positive self-description in verse 23.",
+      "grammar": "The question ti oun, ‘what then?’, uses oun to draw an inference: if not the Christ, then who? Ho prophētēs has the article, ‘the Prophet’, a particular expected figure, not any prophet. John's answer ouk eimi, ‘I am not’, and finally the single word ou, ‘no’, are a narrator's way of showing John making himself smaller with each reply.",
+      "words": ["G2243", "G4396", "G3756", "G3767"],
+      "ot": [
+        {
+          "ref": "Malachi 4:5",
+          "note": "The last paragraph of the Christian Old Testament promises that God will send Elijah the prophet before the great and dreadful day of the LORD (Hebrew 3:23, where Malachi has three chapters). The Septuagint names him ‘Elijah the Tishbite’. Sirach 48:10 adds that Elijah would restore the tribes of Jacob. John denies being Elijah returned in person, while the other Gospels present his ministry as Elijah's (Luke 1:17, Matthew 11:14)."
+        },
+        {
+          "ref": "Deuteronomy 18:15",
+          "note": "Moses promises that God will raise up a prophet like him from among the people, and the Septuagint follows the Hebrew closely. By the first century some Jews expected a single end-time Prophet on the basis of this passage, as the Qumran Testimonia (4Q175) shows. John 6:14 and 7:40 show crowds applying the title to Jesus, and Peter does so explicitly in Acts 3:22."
+        }
+      ],
+      "refs": ["Matthew 11:14", "Luke 1:17", "John 6:14", "Acts 3:22"]
+    },
+    {
+      "v": "22-23",
+      "context": "Pressed for a positive answer, John describes himself with Isaiah's words: a voice in the wilderness calling for the Lord's way to be made straight. He claims no title at all, only a task.",
+      "grammar": "Egō phōnē, ‘I am a voice’, is the Baptist's one ‘I am’ saying, and it names him by what he does, not what he is. Euthunate, an aorist imperative, ‘make straight’, compresses Isaiah's two lines (‘prepare the way ... make straight a highway’) into one verb. Kuriou, ‘of the Lord’, stands where the Hebrew has the divine name, YHWH; applied to the coming of Jesus, it identifies his arrival with the LORD's own return.",
+      "words": ["G5456G", "G0994", "G2048", "G2116", "G2962G"],
+      "ot": [
+        {
+          "ref": "Isaiah 40:3",
+          "note": "In Isaiah the verse opens the message of comfort to exiles: a voice calls for a road through the desert for the LORD's return to Zion. The Hebrew accents join ‘in the wilderness’ to the command (‘in the wilderness prepare the way’), matching the parallel line ‘make straight in the desert’. The Septuagint reads phōnē boōntos en tē erēmō, ‘a voice of one crying in the wilderness’, attaching the place to the voice, and all four Gospels follow that wording. Matthew, Mark, and Luke quote the Septuagint's hetoimasate, ‘prepare’, and its second line; John alone has euthunate and gives the words to the Baptist himself. The Community Rule from Qumran (1QS 8:13-14) applied the same verse to its own withdrawal into the desert."
+        }
+      ],
+      "parallels": ["Mark 1:2-3", "Matthew 3:3", "Luke 3:4-6"],
+      "refs": ["Isaiah 40:1-5", "Malachi 3:1", "Luke 1:76"]
+    },
+    {
+      "v": "24-25",
+      "context": "The narrator adds that the delegation came from the Pharisees, which sharpens the next question: if John is none of the expected figures, what authority does he have to baptize?",
+      "grammar": "Apestalmenoi ēsan ek tōn Pharisaiōn can be read two ways. Taking ek as ‘from’, the men had been sent by the Pharisees. Taking it as partitive, ‘some of the Pharisees had been sent’, it describes a second group among the questioners. The perfect participle with ēsan is a pluperfect periphrasis, ‘had been sent’. In verse 25 the logic is conditional: ei su ouk ei, ‘if you are not’, followed by three titles joined by oude, ‘nor ... nor’. The questioners assume that baptism of this kind needs end-time authority.",
+      "words": ["G0649", "G5330", "G0907", "G1487G", "G3761"],
+      "history": "The Pharisees were a lay movement devoted to careful keeping of the law, including purity rules, and Josephus counts about six thousand of them in Herod's time (Antiquities 17.42). Jews immersed themselves regularly for ritual purity, and many stepped pools (mikvaot) from this period have been excavated in Jerusalem and Judea. What was unusual about John was that he immersed others, once, as a sign of repentance. The prophets had spoken of God cleansing his people with water in the last days (Ezekiel 36:25, Zechariah 13:1), which may explain why the delegation connects baptizing with the Christ, Elijah, and the Prophet.",
+      "refs": ["Ezekiel 36:25", "Zechariah 13:1", "Mark 1:4-5", "Mark 11:30"]
+    },
+    {
+      "v": "26-27",
+      "context": "John answers by pointing away from himself. His baptism is only water; the one who matters is already standing among them unrecognized, and John is not worthy even to untie his sandal. The contrast with baptism in the Spirit, which the other Gospels place here, is held back until verse 33.",
+      "grammar": "Egō baptizō en hudati puts egō first, ‘I, for my part, baptize with water’, but the expected ‘he will baptize with the Spirit’ does not follow; instead comes mesos humōn hestēken, ‘in your midst has taken his stand’. Hestēken is a perfect with present sense: he is standing there now. Hon humeis ouk oidate, ‘whom you do not know’, uses the emphatic humeis. In verse 27, axios hina lusō, ‘worthy that I should untie’, uses a purpose clause where classical Greek would use an infinitive, a common feature of New Testament Greek.",
+      "words": ["G0907", "G5204", "G2476", "G6063", "G0514", "G3089", "G5266"],
+      "history": "The idea that the Messiah might be present but unknown appears in Justin Martyr's Dialogue with Trypho (8.4, around AD 160), where the Jewish speaker says the Christ, if born, is unknown and has no power until Elijah comes to anoint him and make him manifest. John 7:27 reflects a similar expectation about the Messiah's hidden origin. Justin's book is a century later than John, but it shows a Jewish belief close to what the Baptist's words assume.",
+      "parallels": ["Mark 1:7-8", "Matthew 3:11", "Luke 3:16"],
+      "text": "Each Gospel phrases the sandal saying slightly differently: Mark has John stoop to untie the strap, Matthew speaks of carrying the sandals, and Luke and John of untying them. The differences show the saying passed on in more than one form, with the same point: the lowest service is too high for John.",
+      "refs": ["John 7:27", "John 8:19", "Acts 13:25"]
+    },
+    {
+      "v": "28",
+      "context": "A note of place closes the first day's scene: all this happened at Bethany beyond the Jordan, where John was baptizing. The precise location gives the testimony the weight of a public event that could be checked.",
+      "history": "The site was remembered by pilgrims from an early date. The Madaba Map, a sixth-century floor mosaic of the Holy Land in a church at Madaba in Jordan, marks ‘Bethabara, the place of the baptism of Saint John’ near the Jordan crossing opposite Jericho, drawing on the Bethabara reading that Origen had proposed. The site's modern identification and the scholarly alternatives are discussed in the chapter note. John's Gospel names the place again in 10:40, when Jesus withdraws there near the end of his ministry.",
+      "refs": ["John 10:40-42", "John 3:23", "Joshua 3:14-17"]
+    },
+    {
+      "v": "29",
+      "context": "The second day. John sees Jesus and gives his first positive testimony: this is the Lamb of God who takes away the sin of the world. The title stands at the start of the Gospel as the cross stands at its end, where Jesus dies as the Passover lambs are slaughtered.",
+      "grammar": "Ide, ‘look’, is an interjection calling for attention. Ho amnos tou theou, ‘the Lamb of God’, has a genitive that can mean the lamb God provides (compare Genesis 22:8) or the lamb that belongs to God. Ho airōn tēn hamartian is a present participle used as a title, ‘the one who takes away’. Airō means to lift and carry off; 1 John 3:5 uses it the same way (‘He appeared to take away sins’). Hamartian is singular: not a list of sins but sin as a whole, and its reach is tou kosmou, the world, not Israel only.",
+      "words": ["G2396", "G0286", "G0142", "G0266", "G2889"],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "John's words say that Jesus deals with sin by removing it, and that he does so as a lamb, an animal of sacrifice. The verse does not spell out a theory of how the removal happens; the Gospel's account of the cross at Passover and Isaiah's servant who bears sins supply that."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Isaiah 53:7",
+          "note": "Isaiah's servant is led like a sheep to slaughter and is silent like a lamb before its shearers. The Septuagint uses amnos, John's word, in the second line. Isaiah 53:12 adds that the servant bore the sin of many; the Septuagint there uses a different verb, anapherō, but the thought of a figure who carries away sin is close to John's. Acts 8:32 quotes this passage and applies it to Jesus."
+        },
+        {
+          "ref": "Exodus 12:3-13",
+          "note": "The Passover animal was a lamb or young goat, and the Septuagint calls it probaton, ‘sheep’, not amnos. John's Gospel nevertheless makes the Passover link plain at the cross: Jesus is condemned at the hour the lambs were prepared (19:14), and his bones are not broken (19:36, citing Exodus 12:46). The Passover blood protected rather than atoned, so readers who hear Passover here also hear the other sacrificial strands."
+        },
+        {
+          "ref": "Exodus 29:38-42",
+          "note": "The daily burnt offering at the tabernacle and temple was two year-old lambs, one each morning and evening, and the Septuagint calls them amnous. Some interpreters see this regular offering behind the title, since it was the sacrifice every Israelite knew."
+        }
+      ],
+      "history": "C. H. Dodd (The Interpretation of the Fourth Gospel, 1953) proposed another background: in Jewish apocalyptic writing, a horned lamb or ram leads the flock of God to victory (1 Enoch 89-90 pictures Israel's leaders as sheep and rams). On that reading the Baptist, who expected a figure of judgment, meant a conquering leader, and the evangelist deepened it to a sacrifice. Revelation's Lamb, slain and yet conquering, holds both ideas together.",
+      "refs": ["1 John 3:5", "1 Peter 1:18-19", "Revelation 5:6-9", "Genesis 22:8", "John 19:36"]
+    },
+    {
+      "v": "30-31",
+      "context": "John identifies Jesus as the one of whom he spoke in verse 15 and explains his own purpose: he came baptizing so that the coming one might be revealed to Israel. Even John did not know who it would be until God showed him.",
+      "grammar": "Verse 30 repeats verse 15 with one change: anēr, ‘a man’, in place of the simple participle, a word that stresses Jesus' real manhood just after the title Lamb of God. Kagō ouk ēdein auton, ‘and I did not know him’, uses the pluperfect of oida, which functions as a simple past. The phrase must mean that John did not know Jesus as the coming one, since Luke 1:36 makes them relatives. Hina phanerōthē tō Israēl is a purpose clause with an aorist passive subjunctive: John's baptism existed so that the coming one would be made manifest to Israel.",
+      "words": ["G0435G", "G1492I", "G5319", "G2474"],
+      "theology": [
+        {
+          "id": "israel",
+          "note": "John's whole ministry is aimed at Israel's recognition of its Messiah. The Gospel presents the revelation of Jesus as God keeping faith with his people before it goes out to the world."
+        }
+      ],
+      "text": "In Matthew 3:14 John hesitates to baptize Jesus, which seems to imply recognition. Interpreters reconcile the accounts in different ways: John knew Jesus as a righteous man but not yet as the Spirit-bearer until the sign; or Matthew and John report different stages of John's understanding.",
+      "refs": ["John 1:15", "Matthew 3:14", "John 2:11", "John 17:6"]
+    },
+    {
+      "v": "32-33",
+      "context": "John's testimony reaches its center. He saw the Spirit descend like a dove and remain on Jesus, the sign God had given him to identify the one who would baptize with the Holy Spirit. The Gospel never narrates Jesus' baptism itself; it gives only John's report of what he saw.",
+      "grammar": "Tetheamai is a perfect, ‘I have seen’, with lasting effect: John is a witness still. Katabainon, a present participle, pictures the descent as it happens. The key verb is menō, ‘remain’: emeinen (aorist) in verse 32 and menon (present participle) in verse 33. The Spirit's coming on Old Testament figures was often temporary; on Jesus it rests. Ho baptizōn en pneumati hagiō is another participle used as a title, ‘the one who baptizes in the Holy Spirit’. En can mean ‘with’ (instrument) or ‘in’ (element), matching the water John uses.",
+      "words": ["G2300", "G4151G", "G2597", "G4058", "G3306", "G0907"],
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "The Spirit rests on Jesus so that Jesus can give the Spirit to others. The Gospel keeps that promise when the risen Jesus breathes on the disciples and says ‘Receive the Holy Spirit’ (20:22); Acts 2 tells of the outpouring at Pentecost."
+        },
+        {
+          "id": "trinity",
+          "note": "The Father who sent John speaks, the Spirit descends, and the Son is identified. The scene is one of the passages from which the church learned to confess one God in three persons."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Isaiah 11:2",
+          "note": "Isaiah promises that the Spirit of the LORD will rest on the shoot from Jesse's stump. The Hebrew verb, nachah, means to settle or rest; the Septuagint has anapausetai ep' auton, ‘will rest upon him’. John's emphasis on the Spirit remaining on Jesus fits this royal promise, and Isaiah 42:1 and 61:1 speak of the Spirit put upon God's servant and anointed messenger."
+        }
+      ],
+      "history": "Why a dove is not explained. The Babylonian Talmud (Hagigah 15a) records Ben Zoma comparing the Spirit hovering over the waters in Genesis 1:2 to a dove hovering over its young, and many commentators see a hint of new creation. Others recall the dove sent out by Noah after the flood (Genesis 8:8-12). Neither link is stated in the text.",
+      "parallels": ["Mark 1:9-11", "Matthew 3:16-17", "Luke 3:21-22"],
+      "refs": ["John 20:22", "Acts 1:5", "Acts 2:33", "Isaiah 61:1", "Genesis 1:2"]
+    },
+    {
+      "v": "34",
+      "context": "John sums up his witness: he has seen and he has testified that this is the Son of God. It is the high point of the Baptist's testimony and the first time the title appears in the Gospel, which ends by saying it was written so that readers may believe Jesus is the Son of God (20:31).",
+      "grammar": "Heōraka kai memarturēka are both perfects, ‘I have seen and I have borne witness’: the seeing and the testimony stand as a completed and lasting record, the form a witness uses in court. Houtos estin, ‘this is’, points to Jesus as the identified person.",
+      "words": ["G3708", "G3140", "G5207"],
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "Whether the original reading is ‘Son of God’ or ‘God's Chosen One’, the title is royal and messianic, identifying Jesus as the one God has set apart and anointed with the Spirit."
+        }
+      ],
+      "text": "Most manuscripts read ho huios tou theou, ‘the Son of God’. The first hand of Codex Sinaiticus reads ho eklektos tou theou, ‘the Chosen One of God’, as do some Old Latin manuscripts and the Old Syriac; two third-century papyri, P5 and P106, probably had it as well, though both are damaged at this point and scholars dispute how much of the word can be read. A few Latin witnesses combine the two as ‘the chosen Son’. The SBL Greek New Testament and the NIV (2011) print ‘Chosen One’, reasoning that scribes would change a rarer title to the familiar one; Nestle-Aland, the ESV, and the BSB keep ‘Son of God’.",
+      "ot": [
+        {
+          "ref": "Isaiah 42:1",
+          "note": "God introduces his servant: ‘my chosen one’ (bechiri) in whom he delights, on whom he has put his Spirit. The Septuagint reads Israēl ho eklektos mou, adding the names Jacob and Israel to the verse. If John 1:34 originally said ‘the Chosen One of God’, the Baptist is echoing this verse, which also joins the Spirit to the chosen servant, as verses 32-33 do. If it said ‘Son of God’, the closer echo is Psalm 2:7, where God addresses his anointed king as his son. The voice from heaven in the other Gospels combines both passages."
+        }
+      ],
+      "refs": ["John 20:31", "Luke 9:35", "Luke 23:35", "Psalm 2:7", "Mark 1:11"]
+    },
+    {
+      "v": "35-37",
+      "context": "The third day. John repeats his testimony to two of his own disciples, and they leave him to follow Jesus. The witness's purpose is fulfilled the moment his followers walk away from him, an attitude John will put into words in 3:30.",
+      "grammar": "Heistēkei, a pluperfect of histēmi, pictures John already standing there. Emblepsas is an aorist participle of emblepō, to look intently, the same verb used when Jesus looks at Simon in verse 42. The two disciples heard him lalountos, ‘speaking’, and ēkolouthēsan, ‘followed’. Akoloutheō is ordinary Greek for walking behind someone, and the Gospels use it for discipleship; here, as often in John, the literal act and the deeper meaning coincide.",
+      "words": ["G2476", "G1689", "G0286", "G0191", "G0190"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Faith in John begins with hearing a witness and acting on it. The two disciples have seen no sign yet; they follow on the strength of testimony, the way the Gospel's readers are meant to (20:29-31)."
+        }
+      ],
+      "refs": ["John 3:30", "John 20:29-31", "John 10:27"]
+    },
+    {
+      "v": "38-39",
+      "context": "Jesus' first words in the Gospel are a question, ‘What do you want?’, and his first invitation is ‘Come and see’. The disciples ask where he is staying, and they stay with him that day. The scene is simple and full of John's key words: seeking, staying, seeing.",
+      "grammar": "Ti zēteite, literally ‘what are you seeking?’, uses zēteō, a verb that recurs at crucial moments (18:4, to the arresting soldiers; 20:15, to Mary Magdalene at the tomb). The disciples answer with a title, Rabbi, which the narrator translates as didaskale, ‘teacher’, for Greek readers. Pou meneis, ‘where are you staying?’, and emeinan, ‘they stayed’, use menō, the same verb used of the Spirit remaining on Jesus. Erchesthe kai opsesthe, ‘come and you will see’, pairs a present imperative with a future: the seeing follows the coming.",
+      "words": ["G2212", "G4461", "G1320", "G3306", "G2064", "G3700G"],
+      "history": "The tenth hour, counting from sunrise as Jews and Romans commonly did, was about four in the afternoon. B. F. Westcott argued that John counts hours from midnight, which would make it ten in the morning, but the ordinary reckoning is more likely, and it would mean the two disciples stayed the night. In Jesus' day rabbi was a respectful form of address for a teacher; it became a formal title for ordained scholars only after AD 70.",
+      "text": "The earliest manuscripts read opsesthe, ‘you will see’; later manuscripts, followed by the King James Version, read the imperative idete, ‘see’.",
+      "refs": ["John 18:4", "John 20:15", "John 15:4", "John 1:46"]
+    },
+    {
+      "v": "40-42",
+      "context": "One of the two is named: Andrew, Simon Peter's brother. The other remains unnamed, and many readers since the early church have identified him with the beloved disciple who stands behind the Gospel (21:24), though the text does not say so. Andrew finds Simon and brings him, and Jesus gives Simon a new name.",
+      "grammar": "Heuriskei, ‘he finds’, is a historical present, making the scene vivid; the verb ‘find’ becomes a chain through the chapter (verses 41, 43, 45). Heurēkamen ton Messian, ‘we have found the Messiah’, is a perfect: the discovery stands. Messias, a Greek form of the Aramaic meshicha, appears in the New Testament only here and in 4:25, and each time John translates it as christos. In verse 42 emblepsas, ‘looking intently’, describes Jesus' searching look, and klēthēsē, a future passive, ‘you will be called’, announces a name Simon will grow into. Kēphas is the Aramaic kepha, ‘rock’, which the narrator renders Petros.",
+      "words": ["G0406", "G2147", "G3323", "G5547", "G1689", "G2564G", "G2786", "G4074G"],
+      "parallels": ["Mark 1:16-18", "Matthew 4:18-20", "Matthew 16:17-18", "Mark 3:16"],
+      "text": "The other Gospels place the call of Andrew and Simon beside the Sea of Galilee (Mark 1:16-18) and the naming of Peter either in the list of the Twelve (Mark 3:16) or at Caesarea Philippi (Matthew 16:18). John's account is set earlier, in Judea, among John the Baptist's followers. Many interpreters take John's scene as a first meeting and the Synoptic scene as a later call to leave their nets; others think the Gospels arrange the tradition differently. In verse 41 the earliest manuscripts read prōton, ‘first’, while the first hand of Sinaiticus and later manuscripts read prōtos, ‘Andrew was the first to find’, which could imply the unnamed disciple later found his own brother too.",
+      "refs": ["John 21:15-17", "1 Corinthians 15:5", "Galatians 2:9", "Genesis 17:5", "Genesis 32:28"]
+    },
+    {
+      "v": "43-44",
+      "context": "The fourth day. Jesus decides to go to Galilee and calls Philip directly with the classic summons, ‘Follow Me’. The narrator notes that Philip came from the same town as Andrew and Peter, which explains how the chain of finding continues.",
+      "grammar": "Akolouthei moi is a present imperative, ‘keep following me’, the call to an ongoing life rather than a single step. Heuriskei is again a historical present, and here Jesus is the one who finds; in the rest of the chain disciples find others. Philippos is a Greek name, meaning ‘lover of horses’, borne by the Herodian tetrarch Philip who ruled the region east and north of the Sea of Galilee.",
+      "words": ["G1831", "G1056G", "G2147", "G5376G", "G0190", "G0966"],
+      "history": "Bethsaida stood near the northern shore of the Sea of Galilee, in the territory of Philip the tetrarch rather than Herod Antipas's Galilee. Its Greek-speaking setting may explain why Greeks later approach Philip, and why Philip takes them to Andrew, when they want to see Jesus (12:20-22).",
+      "refs": ["John 12:20-22", "John 6:5-7", "John 14:8-9", "Mark 2:14"]
+    },
+    {
+      "v": "45-46",
+      "context": "Philip finds Nathanael and describes Jesus as the fulfillment of the Law and the Prophets. Nathanael's scorn for Nazareth draws Philip's answer, ‘Come and see’, the words Jesus used in verse 39.",
+      "grammar": "Hon egrapsen Mōusēs en tō nomō kai hoi prophētai, ‘the one Moses wrote about in the Law, and the prophets’, sums up the whole Scripture of Israel as pointing to one person. Heurēkamen, ‘we have found’, repeats Andrew's perfect. Philip's description of Jesus as huion tou Iōsēph ton apo Nazaret, ‘son of Joseph, from Nazareth’, is true as far as it goes, and the reader, who knows from verses 14 and 18 whose Son he is, hears the irony. In verse 46 dunatai ti agathon einai, ‘can anything good be?’, is a real question expecting a dismissive answer.",
+      "words": ["G3482", "G1125", "G3551", "G4396", "G2147", "G3478", "G0018"],
+      "history": "Nathanael means ‘God has given’, a Hebrew name borne by several men in the Old Testament (Numbers 1:8). He appears only in John, who later says he came from Cana in Galilee (21:2). The identification of Nathanael with Bartholomew, who is paired with Philip in the lists of the Twelve (Matthew 10:3), is a later guess, not a statement of Scripture.",
+      "ot": [
+        {
+          "ref": "Deuteronomy 18:15-18",
+          "note": "‘The one Moses wrote about’ most naturally points to the promised prophet like Moses, whose words God would put in his mouth. The Hebrew and the Septuagint agree closely here. John makes the claim explicit in 5:46, where Jesus says that Moses wrote about him, and in 6:14 the crowd calls him the Prophet."
+        }
+      ],
+      "refs": ["John 5:46", "Luke 24:27", "John 7:41-42", "John 7:52", "John 21:2"]
+    },
+    {
+      "v": "47",
+      "context": "Before Nathanael says anything, Jesus describes him: a true Israelite, without deceit. The compliment is also a sign of Jesus' knowledge, which Nathanael questions in the next verse.",
+      "grammar": "Alēthōs Israēlitēs is an adverb with a noun, ‘truly an Israelite’, someone who lives up to the name Israel. Dolos, ‘deceit’ or ‘guile’, is the key word. Ide, ‘look’, is the same interjection John the Baptist used of the Lamb (verses 29 and 36).",
+      "words": ["G0230", "G2475", "G1388", "G2396"],
+      "ot": [
+        {
+          "ref": "Genesis 27:35",
+          "note": "Isaac tells Esau that his brother came ‘deceitfully’ and took the blessing. The Septuagint renders the Hebrew bemirmah with meta dolou, ‘with deceit’, the same noun Jesus uses. Jacob, the deceiver, was renamed Israel (Genesis 32:28); Nathanael is an Israel without Jacob's guile. The contrast prepares for verse 51, where Jesus alludes to Jacob's dream."
+        },
+        {
+          "ref": "Psalm 32:2",
+          "note": "The psalm blesses the one whom the LORD does not charge with iniquity and in whose spirit is no deceit. The Hebrew has remiyyah; the Septuagint again uses dolos, though it says ‘in whose mouth’. Some commentators hear the psalm behind Jesus' words as well as Genesis."
+        }
+      ],
+      "refs": ["Genesis 32:28", "Romans 9:6", "Revelation 14:5"]
+    },
+    {
+      "v": "48",
+      "context": "Nathanael asks how Jesus knows him, and Jesus answers that he saw him under the fig tree before Philip called him. The Gospel does not say what happened under the tree; the point is that Jesus saw what no one else did.",
+      "grammar": "Pothen me ginōskeis, ‘from where do you know me?’, asks for the source of Jesus' knowledge. Jesus' reply is carefully ordered: pro tou se Philippon phōnēsai, ‘before Philip called you’, then onta hupo tēn sukēn, ‘being under the fig tree’, then eidon se, ‘I saw you’. The participle onta could describe where Nathanael was or where he was when Philip called; either way, Jesus saw him when he was out of sight.",
+      "words": ["G4159", "G1097", "G5455", "G4808", "G1492H"],
+      "theology": [
+        {
+          "id": "attributes",
+          "note": "Jesus' knowledge of Nathanael is the first instance of a pattern in John: he knows what is in people (2:24-25) and knows the Samaritan woman's life (4:17-18). The Gospel presents this as a divine prerogative, since Scripture ascribes such knowledge to God (Psalm 139:1-4)."
+        }
+      ],
+      "refs": ["John 2:24-25", "John 4:17-19", "Psalm 139:1-4", "Micah 4:4"]
+    },
+    {
+      "v": "49",
+      "context": "Nathanael's skepticism collapses into confession: Rabbi, Son of God, King of Israel. The two titles belong together as royal titles, and they close the list of names the first disciples give Jesus.",
+      "grammar": "The confession has two matching clauses, each beginning su ei, ‘you are’: su ei ho huios tou theou, su basileus ei tou Israēl. In the first line huios has the article; in the second basileus does not, and the verb falls after it, the same order as theos in verse 1c, so ‘King of Israel’ is definite in sense without the article.",
+      "words": ["G4461", "G5207", "G0935", "G2474"],
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "Son of God and King of Israel together are the language of Psalm 2, where God installs his king on Zion and calls him his son. Nathanael confesses Jesus as the Davidic king; the Gospel will show that he is also more, and the same title returns ironically on the cross (19:19)."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Psalm 2:6-7",
+          "note": "God says he has installed his king on Zion and declares ‘You are My Son’. In the Hebrew the psalm belongs to a royal coronation; the Septuagint follows it closely. Jewish readers before Jesus connected the psalm with the hoped-for anointed king (Psalms of Solomon 17:23-24 echoes Psalm 2:9), and Nathanael's pairing of Son of God with King of Israel draws on this royal use."
+        }
+      ],
+      "refs": ["John 12:13", "John 19:19", "Zephaniah 3:15", "John 20:31"]
+    },
+    {
+      "v": "50",
+      "context": "Jesus responds to Nathanael's confession with a promise: he has believed on the basis of one sign of knowledge, and he will see greater things. The verse turns the chapter from what the disciples have said to what they will see.",
+      "grammar": "Pisteueis, ‘you believe’, can be punctuated as a question (‘Do you believe because I said...?’) or as a statement (‘You believe because I said...’). The Greek manuscripts have no punctuation, and the sense is similar either way: Nathanael's faith is real but has only begun. Meizō toutōn opsē, ‘greater things than these you will see’, uses a future of horaō, the verb of the chapter's repeated invitation to come and see.",
+      "words": ["G4100", "G3173", "G3708"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Jesus neither rejects faith based on a sign nor treats it as complete. In John, faith grows through seeing more of who Jesus is, from the first signs to the cross and resurrection."
+        }
+      ],
+      "refs": ["John 2:11", "John 14:12", "John 20:29"]
+    },
+    {
+      "v": "51",
+      "context": "The chapter ends with Jesus' own title for himself, Son of Man, and a promise that the disciples will see heaven opened and angels ascending and descending on him. After a series of titles from others, Jesus defines himself as the place where heaven and earth meet.",
+      "grammar": "Amēn amēn legō humin, ‘truly, truly, I tell you’, is the first of twenty-five such sayings in John; the doubled Hebrew word, placed before the statement rather than after it as in ordinary Jewish usage, marks Jesus' own authority. Humin, ‘to you’, and opsesthe, ‘you will see’, are plural, though Jesus has been speaking to Nathanael alone: the promise extends to all the disciples. Aneōgota is a perfect participle, ‘opened’ and standing open. The angels are ‘ascending and descending’, in that order, as in Genesis 28:12.",
+      "words": ["G0281", "G4771", "G3700G", "G0455", "G0305", "G2597", "G5207"],
+      "theology": [
+        {
+          "id": "temple",
+          "note": "Jacob called the place of his dream Bethel, the house of God and the gate of heaven. Jesus places that meeting point in himself, preparing for his later claim that his body is the temple (2:21)."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Genesis 28:12",
+          "note": "In Jacob's dream the angels ascend and descend bo, a Hebrew word that can mean ‘on it’ (the stairway) or ‘on him’ (Jacob). The Septuagint resolves it with a feminine pronoun, ep' autēs, ‘on it’, the ladder. The rabbis kept the question open (Genesis Rabbah 68:12 records both views). Jesus' saying puts the Son of Man in the place of the ladder: the connection between heaven and earth is a person."
+        },
+        {
+          "ref": "Daniel 7:13-14",
+          "note": "In Daniel's vision one like a son of man comes with the clouds of heaven to the Ancient of Days and receives everlasting dominion. The Aramaic kevar enash means simply ‘one like a human being’, and the Septuagint renders it hōs huios anthrōpou. Jesus uses the phrase as his own self-designation throughout the Gospels, and in John it is linked with heaven opened, descent and ascent (3:13), and glorification (12:23)."
+        }
+      ],
+      "text": "Later manuscripts and the King James Version add ap' arti, ‘hereafter’ or ‘from now on’, which the earliest manuscripts lack; it probably came in from Matthew 26:64.",
+      "refs": ["Genesis 28:16-17", "John 3:13", "John 2:19-21", "Matthew 26:64", "Acts 7:56"]
+    }
+  ]
+}

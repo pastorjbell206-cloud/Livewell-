@@ -1,0 +1,329 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "The chapter opens by measuring the silence since the cupbearer forgot Joseph: two whole years. Then, without transition, Pharaoh is dreaming, and he is standing by the river on which all of Egypt's life depends.",
+      "grammar": "Miqqets shenatayim yamim, literally ‘at the end of two years, days’, adds yamim (‘days’) to stress that the time was complete, which the BSB renders “two full years”. The same expression is used of Jeremiah's opponent Hananiah's promise of ‘two full years’ in Jeremiah 28:3. Pharaoh is described with a participle, cholem, ‘dreaming’, and then vehinneh omed, ‘and behold, standing’, which places the reader inside the dream as it unfolds. The word for the river, yeor, is borrowed from Egyptian and in the Old Testament almost always means the Nile.",
+      "words": ["H7093", "H2492B", "H2975G"],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The two years of waiting end not with Joseph's effort or the cupbearer's conscience but with a dream God sends to a king. The timing of Joseph's release lies wholly outside Joseph's control, and the narrator makes that the first fact of the chapter."
+        }
+      ],
+      "refs": ["Genesis 40:23", "Jeremiah 28:3", "Psalm 105:19"]
+    },
+    {
+      "v": "2-4",
+      "context": "In the first dream seven fine, fat cows come up out of the Nile and graze in the reeds; then seven ugly, thin cows come up after them and eat them. The dream is simple and grotesque: cattle eating cattle.",
+      "grammar": "The fat cows are yefot mareh uveriot basar, ‘beautiful of appearance and fat of flesh’; the thin ones are raot mareh vedaqqot basar, ‘bad of appearance and thin of flesh’. The two descriptions are built in exact opposition, word for word. Yefeh mareh is the same phrase used of Joseph in 39:6. The reeds are achu, a word borrowed from Egyptian for marsh grass, which appears again in Job 8:11. The final verb, vattokhalnah, ‘and they ate’, is the ordinary word for eating, used of cows for whom eating flesh is unnatural.",
+      "words": ["H6510", "H1277", "H1851", "H0260"],
+      "history": "Cattle were a principal form of wealth in Egypt, pastured on the rich land near the river, and the cow was a familiar religious image (the goddess Hathor was often shown as a cow). A dream of cows coming out of the Nile would have spoken directly to an Egyptian about the fertility of the land.",
+      "refs": ["Genesis 39:6", "Job 8:11"]
+    },
+    {
+      "v": "5-7",
+      "context": "Pharaoh sleeps again and dreams a second time: seven full ears of grain on one stalk, then seven thin ears scorched by the east wind that swallow them. When he wakes, the dream was so real that he has to tell himself it was a dream.",
+      "grammar": "The scorched ears are shedufot qadim, ‘blighted by the east wind’, a passive participle. Qadim is the hot, dry wind from the desert that withers crops, which in the Old Testament becomes an image of God's judgment (Exodus 10:13, Hosea 13:15). The thin ears ‘swallowed’ the full ones (vattivlanah, from bala), a stronger verb than eating. Verse 7 ends with vehinneh chalom, ‘and behold, a dream’: the particle hinneh gives Pharaoh's own moment of realization as he wakes.",
+      "words": ["H7710", "H6921", "H1104"],
+      "refs": ["Exodus 10:13", "Hosea 13:15", "Ezekiel 17:10"]
+    },
+    {
+      "v": "8",
+      "context": "Pharaoh is disturbed and calls the specialists of his court, but none can interpret the dreams. The failure of Egypt's learned men prepares the stage for the Hebrew prisoner.",
+      "grammar": "Vattippaem rucho, ‘his spirit was troubled’, uses the verb paam, which is used of Nebuchadnezzar's troubled spirit after his dreams (Daniel 2:1, 2:3). The specialists are chartummim, a word most scholars derive from an Egyptian title for a chief lector priest, the learned reader of sacred and magical texts; the same word names the magicians who oppose Moses (Exodus 7:11) and Babylon's experts in Daniel. The verse says Pharaoh told them ‘his dream’ (singular, chalomo), but that no one could interpret ‘them’ (otam). The shift anticipates Joseph's point in verse 25 that the two dreams are one.",
+      "words": ["H6470", "H7307G", "H2748"],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "Egypt's most learned men, with their manuals and training, cannot read a message God has sent. Scripture repeatedly sets divine revelation against the wisdom of the empires, as Isaiah mocks Pharaoh's senseless counselors (Isaiah 19:11) and Paul asks where the wise man of this age has gone (1 Corinthians 1:20)."
+        }
+      ],
+      "refs": ["Daniel 2:1-11", "Exodus 7:11", "Isaiah 19:11", "1 Corinthians 1:20"]
+    },
+    {
+      "v": "9-10",
+      "context": "The cupbearer finally speaks. He begins by confessing his faults, then recounts with careful courtesy how Pharaoh was angry and imprisoned him with the baker. Two years of forgetting end in a moment of remembering.",
+      "grammar": "His opening words are chataai ani mazkir hayyom, ‘my sins I am bringing to remembrance today’. Mazkir is a Hiphil participle of zakar, the verb Joseph used in his plea (40:14) and the one that described the cupbearer's forgetting (40:23). Chataai, ‘my sins’, comes from the same root as his original offense against Pharaoh in 40:1. He may mean that offense, or his failure to remember Joseph, or both; the Hebrew does not specify. In verse 10 he speaks of Pharaoh in the third person (‘Pharaoh was angry with his servants’), the formal deference of a courtier recalling his master's displeasure.",
+      "words": ["H2399", "H2142"],
+      "refs": ["Genesis 40:1", "Genesis 40:14", "Genesis 40:23"]
+    },
+    {
+      "v": "11-13",
+      "context": "The cupbearer tells how he and the baker dreamed on one night and how a young Hebrew slave interpreted both dreams, which came true exactly. His recommendation is accurate and grudging at once.",
+      "grammar": "He describes Joseph with three labels: naar ivri eved, ‘a young man, a Hebrew, a slave’. Each word lowers Joseph's standing in Egyptian eyes, and Jewish interpreters since antiquity have noticed how the cupbearer recommends him while belittling him. In verse 13 the subject of heshiv (‘he restored’) and talah (‘he hanged’) is not stated. Pharaoh did both, but the grammar lets the sentence be read as though the interpreter's word brought each result about, which may be the cupbearer's point: what Joseph said happened.",
+      "words": ["H5288", "H5680", "H5650"],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The cupbearer's two years of forgetfulness now serve Joseph better than an early memory would have. He is remembered at the one moment when Pharaoh needs exactly what Joseph can give."
+        }
+      ],
+      "refs": ["Genesis 40:12-22", "Genesis 39:14", "Ecclesiastes 9:15"]
+    },
+    {
+      "v": "14",
+      "context": "Everything now moves fast. Pharaoh sends, Joseph is rushed out of the dungeon, he shaves, changes his clothes, and enters Pharaoh's presence, all in one verse after two years of waiting.",
+      "grammar": "Five verbs follow in quick succession: vayyishlach (‘he sent’), vayyiqra (‘he summoned’), vayritsuhu (‘they rushed him’, a Hiphil of ruts, ‘to run’), vaygallach (‘he shaved’) and vaychallef simlotav (‘he changed his clothes’), and then vayyavo, ‘he came in’. The place he leaves is habbor, ‘the pit’, the word used for the cistern his brothers threw him into (37:24) and the dungeon of 40:15. Joseph's rise begins where his fall began.",
+      "words": ["H7323G", "H0953A", "H1548", "H2498"],
+      "refs": ["Genesis 37:24", "Genesis 40:15", "Psalm 105:20", "1 Samuel 2:8"]
+    },
+    {
+      "v": "15-16",
+      "context": "Pharaoh tells Joseph that he has heard of his skill. Joseph's first words to the king of Egypt deny the skill and give the credit to God, the central statement of the chapter.",
+      "grammar": "Pharaoh's phrase tishma chalom liftor oto, literally ‘you hear a dream to interpret it’, uses shama, ‘hear’, in the sense of understand. Joseph's reply begins with a single word, biladay, ‘apart from me’ or ‘not I’. It is abrupt, almost rude before a king, and that is the point. He continues with Elohim yaaneh et shelom paroh, ‘God will answer the welfare of Pharaoh’, where shalom means peace, well-being, or a favorable outcome.",
+      "words": ["H8085G", "H1107", "H6030B", "H7965G"],
+      "text": "English Bibles render the last clause differently: ‘an answer of peace’ (KJV), ‘a favorable answer’ (ESV), ‘the answer he desires’ (NIV), and the BSB's “a sound answer”. The Hebrew shalom can carry all these senses, and Joseph promises that God will speak to Pharaoh's good before he knows what the dreams mean.",
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "Joseph insists that the power to interpret belongs to God alone and that God is willing to speak to a pagan king. Daniel will say nearly the same before Nebuchadnezzar (Daniel 2:27-28, 2:30)."
+        },
+        {
+          "id": "glory",
+          "note": "Joseph has the one opportunity of his life to impress Pharaoh, and he begins by denying his own ability and directing the king's attention to God. His later authority rests on that refusal to take the credit that belongs to God."
+        }
+      ],
+      "refs": ["Genesis 40:8", "Daniel 2:27-30", "2 Corinthians 3:5"]
+    },
+    {
+      "v": "17-19",
+      "context": "Pharaoh retells the first dream to Joseph. The retelling follows the narrator's version closely but adds Pharaoh's own reaction: he has never seen such wretched cows in all Egypt.",
+      "grammar": "Pharaoh adds a word, dallot, ‘poor’ or ‘weak’, the adjective the law uses for the poor (Exodus 23:3), and he intensifies the ugliness with meod, ‘very’. His exclamation lo raiti khahennah bekhol erets mitsrayim laroa, ‘I have not seen their like in all the land of Egypt for badness’, reveals his pride in the land and his shock at seeing its opposite. Retelling a dream with small changes is a way Hebrew narrative shows a character's perspective.",
+      "words": ["H1803B", "H7455"],
+      "refs": ["Genesis 41:1-4", "Exodus 23:3"]
+    },
+    {
+      "v": "20-21",
+      "context": "Pharaoh's retelling adds a detail the narrator had not given: after the thin cows ate the fat ones, they looked no different. The plenty disappeared without a trace.",
+      "grammar": "The new clause is velo noda ki vau el qirbenah, ‘and it was not known that they had gone into their insides’. Noda is a Niphal (passive) of yada, ‘to know’. Joseph will use the same verb when he interprets: the plenty ‘will not be known’ (lo yivvada, verse 31, rendered “will not be remembered”). The detail Pharaoh found most unsettling becomes the heart of the interpretation. The phrase kaasher battechillah, ‘as at the beginning’, stresses that nothing changed.",
+      "words": ["H3045", "H7130G", "H8462"],
+      "refs": ["Genesis 41:31", "Haggai 1:6"]
+    },
+    {
+      "v": "22-24",
+      "context": "Pharaoh retells the second dream and reports that the magicians could not explain it. Again he adds a word, and again the report ends in a confession of failure.",
+      "grammar": "Pharaoh describes the thin ears as tsenumot, ‘withered’, a word found only here in the Old Testament. His last clause, veen maggid li, ‘and there was no one telling me’, uses maggid, a Hiphil participle of nagad, ‘to tell’ or ‘make known’. In the next verse Joseph answers with the same verb: what God is about to do, higgid lefaroh, ‘he has told Pharaoh’. No one in Egypt could tell him; God has already told him.",
+      "words": ["H6798", "H5046"],
+      "refs": ["Genesis 41:25", "Daniel 2:10-11"]
+    },
+    {
+      "v": "25",
+      "context": "Joseph's interpretation begins with its two main claims: the two dreams are one message, and God has told Pharaoh what he is about to do.",
+      "grammar": "Chalom paroh echad hu, ‘the dream of Pharaoh is one’, uses the singular ‘dream’ for both, settling the question raised in verse 8. Ha'elohim, ‘God’, carries the article here and in verses 28 and 32, a form sometimes used for the one true God in contrast to gods in general, though the article with Elohim is common enough that its force here should not be pressed. Oseh, ‘is about to do’, is a participle describing action already on its way, and higgid, ‘he has told’, is a perfect: the announcement is complete before the events arrive.",
+      "words": ["H2472", "H0259", "H0430G", "H5046"],
+      "theology": [
+        {
+          "id": "sovereignty",
+          "note": "Joseph speaks of the coming harvests and famine as something God is doing. Rain, river, and grain are not independent forces or rival gods; they are in God's hand, and he can announce his plans in advance."
+        },
+        {
+          "id": "revelation",
+          "note": "God reveals his purposes even to those outside his covenant people, and he does so for their good and the world's. The prophet Amos says the Lord does nothing without revealing his plan to his servants the prophets (Amos 3:7); here the servant is Joseph and the hearer is Pharaoh."
+        }
+      ],
+      "refs": ["Amos 3:7", "Isaiah 46:9-10", "Daniel 2:28"]
+    },
+    {
+      "v": "26-27",
+      "context": "Joseph decodes the images one by one. The good cows and good ears are seven years; the thin cows and empty ears are seven years of famine. The explanation is short, direct, and repeated for each dream.",
+      "grammar": "The sentences are equations closed by a pronoun: sheva shanim hennah, ‘seven years they are’. Hebrew uses the pronoun to link subject and predicate where English uses ‘are’. In verse 27 Joseph describes the thin ears with a new word, reqot, ‘empty’, instead of Pharaoh's ‘thin’, which makes the point that they held no grain at all. The final phrase is the first mention of the key term of the next chapters, ra'av, ‘famine’.",
+      "words": ["H2007", "H7386", "H7458"],
+      "history": "Egypt depended on the annual flood of the Nile, and a series of low floods could bring years of hunger. Tomb inscriptions of provincial governors from the late third millennium BC, such as Ankhtifi of Moalla, boast of feeding their districts when others were starving. The Famine Stela on Sehel Island, cited in the chapter note, preserves a later tradition of seven lean years.",
+      "refs": ["Genesis 12:10", "Genesis 26:1", "Ruth 1:1"]
+    },
+    {
+      "v": "28",
+      "context": "Joseph repeats the governing claim of verse 25 in slightly different words. The repetition anchors the interpretation: this is not his opinion but God's disclosure.",
+      "grammar": "Hu haddavar asher dibbarti, ‘that is the word I spoke’, points back to verse 25. The verb for God's action has changed from higgid, ‘he has told’, to herah, a Hiphil of raah, ‘he has shown’ or ‘caused to see’. Pharaoh ‘saw’ in his dreams (verses 19 and 22); Joseph says that God was the one who made him see.",
+      "words": ["H1697I", "H7200G"],
+      "refs": ["Genesis 41:25", "Genesis 41:22", "Amos 7:1"]
+    },
+    {
+      "v": "29-31",
+      "context": "Joseph describes the coming years: great plenty throughout Egypt, then a famine so severe that the plenty will be forgotten. The sequence of the dream becomes a sequence of history.",
+      "grammar": "Hinneh sheva shanim baot, ‘behold, seven years are coming’, uses hinneh with a participle, a common Hebrew way of announcing something imminent. In verse 30 the plenty venishkach, ‘will be forgotten’, the verb the narrator used of the cupbearer who ‘forgot’ Joseph (40:23). The famine vekhillah, ‘will finish off’ (Piel of kalah), the land. In verse 31 the famine is kaved, ‘heavy’, the same word used of the famine that first drove Abram down to Egypt (12:10).",
+      "words": ["H7647", "H7911", "H3615H", "H3515"],
+      "refs": ["Genesis 12:10", "Genesis 40:23", "Genesis 47:13"]
+    },
+    {
+      "v": "32",
+      "context": "Joseph explains why there were two dreams: the repetition means the matter is fixed by God and will happen soon. The verse speaks directly to Pharaoh and, for the reader, casts light back on Joseph's own two dreams in chapter 37.",
+      "grammar": "Hishanot hachalom paamayim, ‘the repeating of the dream twice’, uses a Niphal infinitive of shanah, ‘to be doubled’. The reason is given in two participles: nakhon haddavar, ‘the matter is established’ (a Niphal of kun, ‘to be firm’), and memaher ha'elohim laasoto, ‘God is hurrying to do it’ (a Piel of mahar). The first gives certainty, the second urgency.",
+      "words": ["H8138B", "H6471", "H3559H", "H4116A"],
+      "theology": [
+        {
+          "id": "sovereignty",
+          "note": "What God has decreed is certain and will come in his time. The verse also answers the question of Joseph's own doubled dreams (37:5-9): if a repeated dream means God has fixed the matter, then Joseph's boyhood dreams, still unfulfilled after thirteen years, are fixed as well."
+        },
+        {
+          "id": "revelation",
+          "note": "Repetition in revelation is a mark of confirmation, a principle that later appears in the law's requirement of two or three witnesses (Deuteronomy 19:15) and in Paul's use of it (2 Corinthians 13:1)."
+        }
+      ],
+      "refs": ["Genesis 37:5-9", "Deuteronomy 19:15", "Isaiah 46:10", "Habakkuk 2:3"]
+    },
+    {
+      "v": "33",
+      "context": "Joseph moves from interpretation to counsel without being asked. He advises Pharaoh to find a discerning and wise man and put him over Egypt.",
+      "grammar": "Veattah, ‘and now’, is the Hebrew hinge from explanation to action, often used to introduce what must be done in light of what has been said. Yere, ‘let him see’, is a jussive of raah, used here in the sense of ‘look for’ or ‘provide’. Navon vechakham, ‘discerning and wise’, joins a Niphal participle of bin (to understand, to see into things) with the adjective chakham (skilled, wise). Moses asks Israel to choose leaders who are “wise, understanding” in Deuteronomy 1:13.",
+      "words": ["H6258", "H7200J", "H0995", "H2450"],
+      "theology": [
+        {
+          "id": "wisdom",
+          "note": "Joseph does not treat revelation as a reason for passivity. Knowing what God will do calls for planning, administration, and the right person to carry it out. Biblical wisdom is practical skill in living under God's rule."
+        }
+      ],
+      "refs": ["Deuteronomy 1:13", "1 Kings 3:12", "Proverbs 6:6-8", "Proverbs 22:3"]
+    },
+    {
+      "v": "34-36",
+      "context": "Joseph outlines the plan: appoint overseers, take a fifth of the harvest during the good years, store the grain in the cities under Pharaoh's authority, and keep it as a reserve so the land will not perish.",
+      "grammar": "The root paqad, ‘to appoint’ or ‘to oversee’, runs through the plan: veyafqed peqidim, ‘let him appoint appointees’ (verse 34), and piqqadon, ‘a deposit’ or ‘reserve’ (verse 36). It is the same root used of Joseph's own appointments in 39:4-5 and 40:4. Chimmesh, ‘to take a fifth’, is a Piel verb formed from the number five and found only here. The purpose clause at the end, velo tikkaret haarets, ‘and the land will not be cut off’, uses karat, the verb for destruction and for cutting a covenant.",
+      "words": ["H6485J", "H6496", "H2567", "H6487", "H3772I"],
+      "history": "Egypt stored grain on a large scale in state and temple granaries. Wooden tomb models from the Middle Kingdom, such as those found in the tomb of the official Meketre at Thebes, show granaries with scribes recording the grain as it is poured in. The one-fifth Joseph proposes here will later become a permanent tax on Egypt's harvest (47:24-26).",
+      "refs": ["Genesis 39:4-5", "Genesis 47:24-26", "Proverbs 6:6-8", "Proverbs 21:20"]
+    },
+    {
+      "v": "37-38",
+      "context": "Pharaoh and his servants approve the plan, and Pharaoh asks whether anyone could be found like this man. Before Joseph is appointed, Pharaoh names the reason: the Spirit of God is in him.",
+      "grammar": "Vayyitav haddavar beene faroh, ‘the word was good in Pharaoh's eyes’, is a common idiom for approval. Pharaoh's question, hanimtsa khazeh, ‘can we find one like this’, begins with the interrogative ha and expects the answer no. The phrase ruach Elohim bo, ‘the Spirit of God is in him’, is the first time the Bible says of a person that God's Spirit is in him. Later the same kind of language describes Bezalel's skill (Exodus 31:3) and Joshua's fitness to lead (Numbers 27:18).",
+      "words": ["H3190", "H4672", "H7307G"],
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "In the Old Testament the Spirit of God gives wisdom, skill, and capacity to lead, not only prophecy. Pharaoh likely meant something within his own religion, but the narrator lets his words point to the true source of Joseph's gifts, as Nebuchadnezzar's words about Daniel will later do (Daniel 4:8)."
+        }
+      ],
+      "refs": ["Exodus 31:3", "Numbers 27:18", "Daniel 4:8", "Daniel 5:11"]
+    },
+    {
+      "v": "39-40",
+      "context": "Pharaoh turns to Joseph and appoints him over his house and his people, keeping only the throne above him. Joseph's own advice in verse 33 has described himself.",
+      "grammar": "Acharei hodia Elohim otkha, ‘since God has made known to you’, uses a Hiphil infinitive of yada. Pharaoh now speaks of God as the source of Joseph's knowledge. His words en navon vechakham kamokha, ‘there is none discerning and wise like you’, repeat Joseph's phrase from verse 33 exactly. In verse 40 the phrase raq hakkisse egdal mimmekka, ‘only in the throne will I be greater than you’, is an accusative of respect: in that one respect only.",
+      "words": ["H3045", "H0995", "H2450", "H3678G"],
+      "text": "The clause rendered “all my people are to obey your commands” reads literally ‘on your mouth all my people shall kiss’. Some take ‘kiss’ as a gesture of submission (compare “Kiss the Son” in Psalm 2:12), so that the people pay homage at his word. Others derive the verb from a different root meaning to order or arm, giving ‘shall be governed by your word’. The general sense, that Joseph's word will be law, is clear either way.",
+      "refs": ["Genesis 41:33", "Psalm 2:12", "Psalm 105:21-22", "Genesis 45:8"]
+    },
+    {
+      "v": "41-42",
+      "context": "Pharaoh formally installs Joseph and invests him with the signs of office: the signet ring, fine linen, and a gold chain. The man who came in wearing borrowed clothes from prison now wears the king's authority.",
+      "grammar": "Reeh natatti otkha, ‘See, I have set you’, uses the perfect performatively: the words accomplish the appointment, which is why the BSB says “I hereby place you”. Several of the objects carry Egyptian words: shesh, ‘fine linen’, is an Egyptian loan, and tabbaat, ‘signet ring’, is probably another. Vayyalbesh, ‘he clothed him’, is a Hiphil of lavash, the verb used when Tamar ‘put on’ her widow's garments (38:19). In Joseph's story clothing marks each change of status, from the robe his brothers stripped off (37:23) to the garment left in Potiphar's house (39:12) to this linen.",
+      "words": ["H5414H", "H2885", "H8336B", "H7242", "H3847"],
+      "refs": ["Esther 3:10", "Esther 8:2", "Daniel 5:29", "Luke 15:22"]
+    },
+    {
+      "v": "43",
+      "context": "Pharaoh has Joseph ride in his second chariot, with heralds calling out before him. The public procession displays Joseph's new rank to the whole land.",
+      "grammar": "Mirkevet hammishneh, ‘the chariot of the second’, can mean Pharaoh's second chariot or the chariot of the second in command. The herald's cry, avrekh, is one of the most discussed words in Genesis. The BSB's “Bow the knee” connects it with the Hebrew berekh, ‘knee’. Others propose an Egyptian expression, perhaps meaning ‘attention’ or ‘make way’, and others the Akkadian abarakku, the title of a high steward. The verse closes with an infinitive absolute, venaton, ‘and setting him over’, used in place of a finite verb to sum up the scene.",
+      "words": ["H4818", "H4932H", "H0086"],
+      "history": "The horse-drawn chariot came into general use in Egypt around the Hyksos period (seventeenth to sixteenth centuries BC) and became a mark of royal and military rank in the New Kingdom that followed. Those who date Joseph earlier note that the story may describe his honors in terms familiar to later readers; those who favor a Hyksos-era Joseph see the chariot as fitting that time.",
+      "refs": ["Esther 6:9", "Philippians 2:9-10", "Genesis 46:29"]
+    },
+    {
+      "v": "44",
+      "context": "Pharaoh confirms Joseph's authority with a solemn declaration. No one in Egypt may act without Joseph's word.",
+      "grammar": "Ani faroh, ‘I am Pharaoh’, is a self-identification that guarantees what follows, as a king's name seals a decree. The phrase uviladekha, ‘and apart from you’, uses the same word Joseph used in verse 16 (biladay, ‘apart from me’). Joseph said nothing could happen apart from God; Pharaoh now says nothing will happen apart from Joseph. The expression ‘lift his hand or his foot’ is a merism, two extremes naming every kind of action.",
+      "words": ["H1107", "H7311A", "H7272"],
+      "refs": ["Genesis 41:16", "Genesis 45:8", "Acts 7:10"]
+    },
+    {
+      "v": "45",
+      "context": "Pharaoh gives Joseph an Egyptian name and an Egyptian wife from a leading priestly family, drawing him fully into Egyptian society. Joseph then goes out over the land.",
+      "history": "Zaphenath-paneah is an Egyptian name whose meaning is debated; a common proposal is ‘God speaks and he lives’, and ancient Jewish interpreters understood it as ‘revealer of hidden things’. Asenath is usually explained as ‘belonging to (the goddess) Neith’. On was the Egyptian city later called Heliopolis, near modern Cairo, the great center of sun worship; Jeremiah calls its temple the “temple of the sun” (Jeremiah 43:13), and Ezekiel names it among Egypt's cities under judgment (Ezekiel 30:17). A Jewish work written around the turn of the era, Joseph and Aseneth, later tried to explain how Joseph could marry a priest's daughter by telling of her conversion.",
+      "theology": [
+        {
+          "id": "idolatry",
+          "note": "Joseph receives an Egyptian name and marries into the priesthood of the sun god, yet the story shows him still naming God as the source of his gifts (verses 16, 51, 52). Living fully in a foreign culture, even under its names, does not require worshiping its gods, a pattern Daniel will repeat in Babylon (Daniel 1:7-8)."
+        }
+      ],
+      "refs": ["Genesis 46:20", "Jeremiah 43:13", "Ezekiel 30:17", "Daniel 1:7-8"]
+    },
+    {
+      "v": "46",
+      "context": "The narrator pauses to give Joseph's age: thirty. He was seventeen when sold (37:2), so thirteen years lie between the pit and the palace. He then leaves Pharaoh and travels through the land to begin his work.",
+      "grammar": "Beamdo lifne faroh, ‘when he stood before Pharaoh’, uses ‘stand before’ as an idiom for entering a king's service, as when David ‘entered the service’ of Saul (1 Samuel 16:21). The BSB's “entered the service of Pharaoh” reflects the idiom. Vayyaavor bekhol erets mitsrayim, ‘and he passed through all the land of Egypt’, uses avar, ‘to cross over’, for a tour of inspection.",
+      "words": ["H5975H", "H6440G", "H5674A"],
+      "history": "Thirty was an age associated with full maturity and public responsibility. The Levites began their service at thirty (Numbers 4:3), David became king at thirty (2 Samuel 5:4), and Luke notes that Jesus was about thirty when he began his ministry (Luke 3:23). These are parallels of age, not a code.",
+      "refs": ["Genesis 37:2", "1 Samuel 16:21", "Numbers 4:3", "2 Samuel 5:4", "Luke 3:23"]
+    },
+    {
+      "v": "47-49",
+      "context": "The seven good years come as Joseph said, and he gathers grain into the cities, each city storing the harvest of its own fields. The amount grows until it can no longer be counted.",
+      "grammar": "Verse 47 says the land produced likmatsim, ‘by handfuls’, an image of abundance in which grain is scooped up in fistfuls. Verse 49 compares the grain to chol hayyam, ‘the sand of the sea’, and says Joseph stopped lispor, ‘counting’, ki en mispar, ‘for there was no number’. Both images come from God's promises to Abraham and Jacob: offspring like the sand of the sea (22:17, 32:12) and like stars no one can count (15:5, with the same verb safar). The grain that will save Abraham's family is described in the language of the promise itself.",
+      "words": ["H7062", "H2344", "H5608A", "H4557"],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "The echoes of the promise are not accidental decoration. God is keeping his word to multiply Abraham's family, and the countless grain in Egypt is the means by which that family will survive the famine to become countless itself."
+        }
+      ],
+      "refs": ["Genesis 22:17", "Genesis 32:12", "Genesis 15:5", "Genesis 47:27"]
+    },
+    {
+      "v": "50-51",
+      "context": "Before the famine comes, Asenath bears Joseph two sons. He names the first Manasseh, saying God has made him forget his hardship and his father's house.",
+      "grammar": "The name Menashsheh is explained by the verb nashshani, a Piel of nashah, ‘he has made me forget’. The object is striking: kol amali veet kol bet avi, ‘all my toil and all my father's house’. Amal is labor that wears a person down. The phrase ‘made me forget my father's house’ probably means that God has eased the pain of loss, not that Joseph has renounced his family, and the story soon shows he has not forgotten: in 42:9 “Joseph remembered his dreams about them”.",
+      "words": ["H4519G", "H5382", "H5999"],
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "Joseph credits God with healing the memory of his suffering, not with erasing it. The next chapters show that true healing will require facing his brothers, not only forgetting them."
+        }
+      ],
+      "refs": ["Genesis 42:9", "Genesis 48:5", "Isaiah 54:4", "Philippians 3:13"]
+    },
+    {
+      "v": "52",
+      "context": "Joseph names his second son Ephraim, because God has made him fruitful in the land of his affliction. The two names together tell Joseph's story: loss eased, and life given where he suffered.",
+      "grammar": "Hifrani, ‘he has made me fruitful’, is a Hiphil of parah, the verb of the creation blessing (1:28) and of God's promise to the patriarchs (17:6, 35:11). The name Ephraim sounds like the verb. The place of fruitfulness is erets onyi, ‘the land of my affliction’. Oni is the word God will use of Israel's suffering in this same land: “I have indeed seen the affliction of My people in Egypt” (Exodus 3:7).",
+      "words": ["H0669G", "H6509", "H6040"],
+      "theology": [
+        {
+          "id": "israel",
+          "note": "Ephraim and Manasseh, sons of an Egyptian mother, will be adopted by Jacob as his own (48:5) and become tribes of Israel. Ephraim grows into the leading tribe of the north, so much that the prophets use its name for the northern kingdom (Hosea 11:8). The people of God included Egyptian descent from the start."
+        }
+      ],
+      "refs": ["Genesis 1:28", "Genesis 35:11", "Exodus 3:7", "Genesis 48:5", "Hosea 11:8"]
+    },
+    {
+      "v": "53-54",
+      "context": "The years of plenty end, and the years of famine begin exactly as Joseph said. Famine strikes every land, but Egypt has bread.",
+      "grammar": "Two similar sounding verbs mark the turn: vattikhlenah, ‘and they came to an end’ (from kalah), and vattechillenah, ‘and they began’ (a Hiphil of chalal). The sound play binds the end of one period to the beginning of the next. Kaasher amar yosef, ‘just as Joseph had said’, is the narrator's confirmation, as in 40:22. The contrast in verse 54 is set out with word order: famine ‘in all the lands’, but ‘in all the land of Egypt there was bread’.",
+      "words": ["H3615G", "H2490C", "H3899H"],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The famine is universal, and God's provision is prepared in one place, through one man, before the need arrives. Providence here includes foresight: the remedy exists before the disaster."
+        }
+      ],
+      "refs": ["Genesis 40:22", "Genesis 45:5-7", "Psalm 33:18-19"]
+    },
+    {
+      "v": "55",
+      "context": "When Egypt itself goes hungry, the people cry out to Pharaoh, and Pharaoh sends them to Joseph with the instruction to do whatever he says. The king's authority now runs through the Hebrew.",
+      "grammar": "The land vattirav, ‘was hungry’, and vayyitsaq haam, ‘the people cried out’. The second verb, tsaaq, names a cry of distress, and its root will name Israel's cry under a later Pharaoh, which God hears (Exodus 3:7, where the related noun is used). Pharaoh's command places the object first for emphasis: asher yomar lakhem taasu, ‘what he says to you, you shall do’.",
+      "words": ["H7456", "H6817"],
+      "history": "The scene will be reversed at the start of Exodus. There “a new king, who did not know Joseph, came to power in Egypt” (Exodus 1:8), and the descendants of the man who fed Egypt become its slaves. The contrast is part of how the Pentateuch tells its story.",
+      "refs": ["John 2:5", "Exodus 1:8", "Exodus 3:7", "Acts 7:11-12"]
+    },
+    {
+      "v": "56-57",
+      "context": "The famine spreads over the whole land, and Joseph opens the stores and sells grain to the Egyptians. Then the whole world comes to Egypt to buy from Joseph, and the stage is set for his brothers to arrive.",
+      "grammar": "The verb shavar serves both sides of the trade in this story: in verse 56 Joseph vayyishbor, ‘sold grain’, and in verse 57 the nations come lishbor, ‘to buy grain’. The word is related to the noun shever, ‘grain’, and the same verb will send Jacob's sons to Egypt in 42:2-3. In verse 57 kol haarets, ‘all the earth’, takes a plural verb (bau, ‘they came’), so that ‘the earth’ means its peoples.",
+      "words": ["H7666", "H0935G"],
+      "text": "The Hebrew of verse 56 says literally that Joseph ‘opened all that was in them’, without naming what ‘them’ refers to. English versions supply “storehouses” (BSB) or ‘storehouses’ and ‘granaries’ from context, and the Septuagint also supplies the word ‘granaries’.",
+      "theology": [
+        {
+          "id": "mission",
+          "note": "God promised Abraham that all the families of the earth would be blessed through his offspring (12:3, 28:14). Here, in a physical and partial way, the whole earth comes to one of Abraham's descendants for bread. The blessing reaches the nations before it reaches Joseph's own family."
+        },
+        {
+          "id": "covenant",
+          "note": "The universal famine is the means that will bring Jacob's family to Egypt, where God will make them a great nation, as he told Jacob in 46:3. The chapter's last verse opens the door to the story of reconciliation that follows."
+        }
+      ],
+      "refs": ["Genesis 12:3", "Genesis 28:14", "Genesis 42:1-3", "Genesis 46:3"]
+    }
+  ]
+}

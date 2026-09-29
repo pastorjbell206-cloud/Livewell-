@@ -1,0 +1,114 @@
+{
+  "verses": [
+    {
+      "v": "1-2",
+      "context": "Sarah's death is reported with her full age and the place, Kiriath-arba, which the narrator identifies for later readers as Hebron. Abraham comes to mourn and weep. The chapter will turn to legal business, but it begins with grief.",
+      "grammar": "Verse 1 opens vayyihyu chayye Sarah, ‘and the life of Sarah was’, and ends with shene chayye Sarah, ‘the years of the life of Sarah’, framing the number. The Hebrew repeats the word ‘year’ after each part of the number (a hundred year, and twenty year, and seven years), a style that dwells on the length of her life. In Jewish lectionaries this whole section is named Chayyei Sarah, ‘the life of Sarah’, although it tells of her death. In verse 2, vayyavo, literally ‘and he came’, may mean Abraham came from elsewhere (he was last at Beersheba, 22:19) or simply that he went in to where she lay. Two verbs describe his grief: safad, the formal lament for the dead, often with beating the breast (1 Kings 13:30), and bakhah, to weep.",
+      "words": ["H2416E", "H8141", "H0935G", "H5594", "H1058"],
+      "history": "Kiriath-arba means ‘town of Arba’ or ‘town of four’. Joshua 14:15 explains that Arba was the greatest man among the Anakim, and Joshua 15:13 calls him the father of Anak. The older name survived beside Hebron into Israel's later history (Nehemiah 11:25).",
+      "text": "In the traditional Hebrew text the letter kaf in the word for ‘to weep for her’ is written smaller than the surrounding letters. It is one of several enlarged or reduced letters the scribes preserved, and later Jewish interpreters offered different explanations; it does not change the meaning.",
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "The man God called his friend (Isaiah 41:8) weeps at his wife's death. The verse gives grief a place in the life of faith rather than treating it as a lapse; Jesus himself weeps at a friend's grave (John 11:35)."
+        }
+      ],
+      "refs": ["Joshua 14:15", "Genesis 13:18", "John 11:35", "1 Thessalonians 4:13"]
+    },
+    {
+      "v": "3-4",
+      "context": "Abraham rises from beside Sarah's body and addresses the Hittites, the local community whose consent he needs. He names his status plainly: a resident alien. What he asks for is not just a grave but a grave he owns.",
+      "grammar": "Me'al pene meto, ‘from upon the face of his dead’, pictures Abraham bent over her body until this moment. His self-description, ger vetoshav, pairs two terms for outsiders: ger, the resident foreigner, and toshav, one who settles among a people without being one of them. God later applies the same pair to Israel: the land is God's, and \"you are but foreigners and residents with Me\" (Leviticus 25:23). David uses it of himself before God in prayer (1 Chronicles 29:15, Psalm 39:12). The request is for achuzzat qever, ‘a possession of a grave’: not permission to use a tomb, but property.",
+      "words": ["H1616", "H8453A", "H0272", "H6913", "H4191"],
+      "theology": [
+        {
+          "id": "hope",
+          "note": "Abraham is a stranger in the land God promised him. The Old Testament later makes this the posture of all God's people, and the New Testament calls believers foreigners and exiles (1 Peter 2:11), living now in a world whose final shape is still promised."
+        }
+      ],
+      "refs": ["Leviticus 25:23", "1 Chronicles 29:15", "Psalm 39:12", "Hebrews 11:13", "1 Peter 2:11"]
+    },
+    {
+      "v": "5-6",
+      "context": "The Hittites answer with honor and generosity: Abraham may bury Sarah in the best of their tombs, and no one will refuse him. The offer is gracious, but it quietly sidesteps what Abraham asked for. They offer the use of a tomb, not ownership of land.",
+      "grammar": "They address him as adoni, \"sir\" or ‘my lord’, a courtesy title, and call him nesi Elohim, literally ‘a prince of God’. Hebrew sometimes attaches ‘of God’ to a noun to express the highest degree, as in Jonah 3:3, where Nineveh is literally ‘a great city to God’, that is, an exceedingly great city. So the phrase can mean ‘a mighty prince’, and translations vary between that and the BSB's \"God's chosen one\". Mivchar, \"the finest\", means the choicest; and lo-yikhleh, \"will withhold\", uses kala, to hold back or refuse.",
+      "words": ["H0113", "H5387A", "H0430G", "H4005", "H3607"],
+      "refs": ["Jonah 3:3", "Genesis 21:22", "Genesis 14:22-24"]
+    },
+    {
+      "v": "7-9",
+      "context": "Abraham bows to the assembly and makes his request specific: he wants the cave of Machpelah at the end of Ephron's field, and he wants to pay its full price. He asks the community to approach Ephron for him, so the transaction will have their backing.",
+      "grammar": "Im-yesh et-nafshekhem, literally ‘if it is with your soul’, uses nefesh in the sense of will or desire: ‘if you are willing’. Pig'u-li, ‘approach for me’ (BSB \"approach Ephron son of Zohar on my behalf\"), is from paga, to meet or to intercede, the verb later used for the servant of the LORD who intercedes for transgressors (Isaiah 53:12). The key phrase is bekhesef male, ‘for full silver’, \"for full price\". David uses the same phrase when he insists on paying for the threshing floor that became the site of the temple (1 Chronicles 21:22, 24). In both places the buyer refuses a gift because he wants undisputed ownership of a sacred place.",
+      "words": ["H5315L", "H6293", "H4631", "H4375", "H4392"],
+      "text": "Machpelah always has the definite article in Hebrew, ‘the Machpelah’, which suggests it was a descriptive name before it was a proper noun. It is usually connected with a root meaning ‘to double’, and the Septuagint translates it as ‘the double cave’. Whether the name described a cave with two chambers is uncertain.",
+      "refs": ["1 Chronicles 21:22-24", "2 Samuel 24:24", "Isaiah 53:12"]
+    },
+    {
+      "v": "10-11",
+      "context": "Ephron is present in the assembly and answers at once, in public. He offers the field and the cave as a gift, three times over. Whatever his intent, his offer is made in front of the whole town.",
+      "grammar": "The narrator stresses publicity: be'ozne, \"in the presence\" (literally ‘in the ears’) of the Hittites, and lekhol ba'e sha'ar iro, those ‘entering the gate of his city’, which probably means the full members of the city's assembly. The same kind of phrase describes the men of Shechem's gate in Genesis 34:24. Ephron's natatti, \"I give\", appears three times; it is a perfect used for an act performed by speaking, ‘I hereby give’. Commentators debate whether he meant a real gift, a courteous opening before naming a price, or a move to keep Abraham dependent on his generosity. The narrative does not tell us his motive.",
+      "words": ["H6085G", "H0241H", "H8179G", "H5414G", "H3427"],
+      "history": "The city gate was where public business was done: elders sat, disputes were judged, and property changed hands before witnesses. Ruth 4:1-11 describes a land transaction at Bethlehem's gate in similar terms, with the elders and people declaring themselves witnesses.",
+      "refs": ["Ruth 4:1-11", "Genesis 34:20-24", "Deuteronomy 21:19"]
+    },
+    {
+      "v": "12-13",
+      "context": "Abraham bows again and answers Ephron in front of the people of the land. He refuses the gift and insists on paying, using Ephron's own words to do it.",
+      "grammar": "Abraham's reply begins with a cluster of particles, akh im-attah lu shema'eni, roughly ‘only, if you, oh that you would listen to me’. The broken syntax sounds halting and deferential, the speech of a guest pressing a point with great courtesy, and the BSB smooths it to \"If you will please listen to me\". Then he borrows Ephron's verb: natatti kesef hassadeh, ‘I give the silver for the field’. Ephron said ‘I give the field’; Abraham answers ‘I give the silver’. Qach mimmeni, \"Accept it from me\", is a plain imperative.",
+      "words": ["H0389", "H3863", "H5414N", "H3701H", "H3947H"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Abraham could have taken the land as a gift. He insists on paying so that no one can later question his title. Faith in God's promise does not make him careless in human dealings; it makes him scrupulous."
+        }
+      ],
+      "refs": ["2 Samuel 24:24", "Genesis 14:23", "Romans 12:17"]
+    },
+    {
+      "v": "14-15",
+      "context": "Ephron names his price, but as if it were a trifle: land worth four hundred shekels, and what is that between friends. The polite form hides a firm figure.",
+      "grammar": "Ephron does not say ‘the price is four hundred shekels’. He says literally ‘a land of four hundred shekels of silver, between me and you, what is it?’ The price is tucked into a descriptive phrase, and the rhetorical question \"what is that between you and me?\" makes it sound negligible. His repeated \"Listen to me\" and \"Bury your dead\" keep the conversation on the level of courtesy while the number is now public.",
+      "words": ["H0776G", "H0702", "H8255", "H3701G", "H0996G"],
+      "history": "Comparisons with other biblical land purchases suggest the price was high. Omri bought the whole hill on which he built Samaria, the capital of the northern kingdom, for two talents of silver, about six thousand shekels (1 Kings 16:24). David's purchase of Araunah's threshing floor is given as fifty shekels of silver in 2 Samuel 24:24 and six hundred shekels of gold for the site in 1 Chronicles 21:25, a difference interpreters explain in various ways.",
+      "refs": ["1 Kings 16:24", "Jeremiah 32:9", "2 Samuel 24:24"]
+    },
+    {
+      "v": "16",
+      "context": "Abraham does not bargain. He hears the figure and weighs out the silver in front of the assembly, in money acceptable to merchants.",
+      "grammar": "Vayyishma, \"agreed\", is literally ‘and he listened’: after all the courteous calls to ‘listen to me’, Abraham finally does, by paying. Vayyishqol, \"weighed out\", comes from shaqal, to weigh, the root of sheqel: a shekel was first a weight, not a coin. Over lassocher, literally ‘passing to the merchant’, means silver that would pass in trade, in accepted weight and purity.",
+      "words": ["H8085G", "H8254", "H8255", "H5674A", "H5503"],
+      "history": "Before coinage (which began in Lydia in western Anatolia around the seventh century BC), payment was made by weighing silver on balance scales against stone or metal weights. Archaeologists have found such weights at many sites in Israel, and later biblical law demands honest ones (Deuteronomy 25:13-15, Proverbs 11:1), since a buyer or seller could cheat with a false weight.",
+      "refs": ["Deuteronomy 25:13-15", "Proverbs 11:1", "Jeremiah 32:9-10"]
+    },
+    {
+      "v": "17-18",
+      "context": "The narrator records the transfer in the language of a deed: the field, its location, the cave, every tree within its boundaries, and the witnesses. The long, precise sentence is the point: this land is now Abraham's beyond dispute.",
+      "grammar": "Vayyaqom, \"were deeded over\", is literally ‘and it stood’, a legal use of qum meaning a transaction is confirmed or valid; the law uses the same verb for a vow or a sale that ‘stands’ (Numbers 30:4, Leviticus 27:19). Every element of the property is listed, down to the trees ‘in all its border round about’, a thoroughness typical of ancient sale records. Miqnah, \"possession\", is from qanah, to acquire or buy: this possession was purchased, not conquered or received as a gift. The witness phrase from verse 10 returns exactly: \"all the Hittites who had come to the gate of his city\".",
+      "words": ["H6965I", "H6086H", "H1366H", "H4736", "H4471G"],
+      "theology": [
+        {
+          "id": "hope",
+          "note": "The first piece of the promised land that Abraham legally owns is a grave. Jeremiah will later buy a field during the Babylonian siege as a sign that fields would again be bought in the land (Jeremiah 32:9-15). Both purchases are acts of hope, deeds signed in expectation of a future God has promised."
+        }
+      ],
+      "refs": ["Jeremiah 32:9-15", "Ruth 4:9-10", "Leviticus 27:19", "Genesis 17:8"]
+    },
+    {
+      "v": "19-20",
+      "context": "Abraham buries Sarah in the cave, and the narrator states the result a second time: the field and cave were made over to Abraham as a burial possession by the Hittites. The chapter ends where Abraham's request began in verse 4.",
+      "grammar": "Verse 20 closes with la'achuzzat qever, \"as a burial site\", literally ‘as a possession of a grave’, the exact phrase Abraham used in verse 4. The request has become a fact, and the verse repeats vayyaqom, ‘and it stood’, from verse 17. Me'et bene Chet, ‘from the sons of Heth’, names the legal source of the title, so that no one could later claim Abraham had simply taken it.",
+      "words": ["H6912", "H6965I", "H0272", "H6913", "H2845"],
+      "theology": [
+        {
+          "id": "hope",
+          "note": "Sarah is buried in the land, not taken back to Mesopotamia. Abraham, Isaac, Rebekah, Leah, and Jacob will follow her into this cave (Genesis 49:29-32), and Joseph asks that his bones be carried up from Egypt (Genesis 50:25). Hebrews 11:13-16 reads their deaths as faith looking toward a better, heavenly country."
+        },
+        {
+          "id": "resurrection",
+          "note": "Jesus appeals to the God of Abraham, Isaac, and Jacob, all eventually laid in this cave, to argue that God is the God of the living (Matthew 22:31-32). The grave at Machpelah becomes part of the Bible's case for resurrection."
+        }
+      ],
+      "refs": ["Genesis 49:29-32", "Genesis 50:13", "Hebrews 11:13-16", "Matthew 22:31-32"]
+    }
+  ]
+}

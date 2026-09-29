@@ -1,0 +1,235 @@
+{
+  "verses": [
+    {
+      "v": "1-2",
+      "context": "The fifth and last controversy (2:1 to 3:6) returns to the Sabbath, this time in a synagogue. Jesus has just claimed to be lord of the Sabbath (2:28), and now his opponents watch to see whether he will act on the claim.",
+      "grammar": "Exērammenēn echōn tēn cheira, ‘having the hand withered’: the perfect passive participle describes a condition that had set in and stayed, and in verse 3 the adjective xēros, ‘dry’, repeats it. Paretēroun, an imperfect, ‘they kept watching closely’, is the verb for spying on someone with hostile intent (Luke 14:1 and 20:20 use it the same way). The indirect question ei ... therapeusei, ‘whether he will heal’, uses the future indicative. Hina katēgorēsōsin autou, ‘so that they might accuse him’, states the watchers' purpose: they came for evidence, not for help.",
+      "words": ["G4864", "G3583", "G5495", "G3906", "G4521", "G2323", "G2723"],
+      "parallels": ["Matthew 12:9-14", "Luke 6:6-11"],
+      "history": "The Mishnah (m. Yoma 8:6) states the principle that any doubt about danger to life overrides the Sabbath, and rabbinic law allowed treatment in emergencies. A withered hand was not an emergency; the healing could have waited until the next day, which is why the case was a test. The Damascus Document from Qumran was stricter than the Pharisees: it forbade lifting an animal out of a pit on the Sabbath (CD 11:13-14). Matthew's version has Jesus appeal to exactly that case, a sheep fallen into a pit (12:11-12), and Luke adds that it was the man's right hand (6:6).",
+      "refs": ["Luke 14:1-6", "Luke 13:10-17", "Matthew 12:11-12", "John 5:16", "Mark 2:28"]
+    },
+    {
+      "v": "3-4",
+      "context": "Jesus brings the man into the middle of the room and puts a question to his critics. The question moves the issue from what counts as work to what the Sabbath is for.",
+      "grammar": "Egeire eis to meson, ‘rise into the middle’: Jesus makes the man and the question visible to all. The question is built as two pairs of aorist infinitives: agathon poiēsai ē kakopoiēsai, ‘to do good or to do harm?’, and psuchēn sōsai ē apokteinai, ‘to save a life or to kill?’ The second pair raises the stakes. By refusing to heal, one does harm; and the Pharisees, as verse 6 will show, are already considering killing on the Sabbath. Esiōpōn, an imperfect, ‘they kept silent’, describes a deliberate refusal to answer.",
+      "words": ["G1453", "G3319", "G1832", "G0018", "G2554", "G5590H", "G4982", "G0615", "G4623"],
+      "theology": [
+        {
+          "id": "sabbath",
+          "note": "Jesus defines the Sabbath by its purpose: it is a day for doing good and saving life. Failing to do good when it lies in one's power is not neutral rest but a kind of harm."
+        }
+      ],
+      "refs": ["Hosea 6:6", "Micah 6:8", "James 4:17", "Luke 6:9"]
+    },
+    {
+      "v": "5",
+      "context": "Mark alone records Jesus' anger and grief in this scene. The healing itself is told in a few words; the emotional center is Jesus' response to hearts that would rather see a man stay crippled than see a rule bent.",
+      "grammar": "Periblepsamenos, an aorist participle, ‘having looked around’, is a favorite Markan word for Jesus' searching gaze (3:34, 10:23). Met' orgēs, ‘with anger’, and sullupoumenos, ‘being deeply grieved’, sit side by side, one in an aorist and one in a present form: a flash of anger and a continuing grief. The compound sul-lupeomai may mean grief together with someone, or intensified grief. Epi tē pōrōsei tēs kardias autōn, ‘at the hardness of their heart’: pōrōsis comes from a word for a callus or hardened skin. The healing comes by obedience: ekteinon, ‘stretch out’, and exeteinen, ‘he stretched out’, and then apekatestathē, a passive, ‘was restored’, with God as the implied agent.",
+      "words": ["G4017", "G3709", "G4818", "G4457", "G2588", "G1614", "G0600"],
+      "text": "Matthew leaves out Jesus' anger altogether, and Luke keeps the look around the room but not the anger or the grief (6:10). Mark's fuller account of Jesus' emotions is one of the features that distinguish his Gospel.",
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "Jesus feels real anger and real grief, and both are directed at the same hardness. The verse shows the Son of God's full humanity, and it shows anger that is holy because it is joined to sorrow for the people who provoke it."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "1 Kings 13:4-6",
+          "note": "When King Jeroboam stretched out his hand against the man of God at Bethel, it withered; at the prophet's prayer the LORD restored it. The Hebrew uses yavash, ‘to dry up’, and the Septuagint has exēranthē, from the same root as Mark's word for the withered hand. The echo is not a quotation, but a Jewish hearer might recall that restoring a withered hand was God's work, done in the Old Testament only at a prophet's prayer."
+        }
+      ],
+      "refs": ["Ephesians 4:26", "Mark 10:14", "Mark 6:52", "Mark 8:17", "Ephesians 4:18"]
+    },
+    {
+      "v": "6",
+      "context": "The controversy series ends with a plot. The Pharisees, who have lost every argument, go out and take counsel with the Herodians to destroy Jesus. From here on, the cross is on the horizon of the Gospel.",
+      "grammar": "Euthus, ‘immediately’, Mark's favorite adverb, stresses how quickly the plot follows the healing. Sumboulion edidoun, ‘they were giving counsel’, is an unusual phrase for plotting, and the imperfect suggests a process rather than a single decision. Hopōs auton apolesōsin, ‘how they might destroy him’, uses apollumi, the verb Jesus used for the opposite of saving life in the question of verse 4. The irony is sharp: they answer his question about killing on the Sabbath by planning to kill.",
+      "words": ["G5330", "G2112", "G2265", "G4824", "G0622"],
+      "history": "The Herodians were supporters of the Herodian dynasty, which in Galilee meant Herod Antipas, who had already imprisoned John the Baptist (1:14; 6:17). Pharisees and Herod's partisans had little in common, and their alliance shows how widely Jesus was now seen as a threat. The same pairing appears again in Jerusalem, where they try to trap Jesus over taxes to Caesar (12:13).",
+      "refs": ["Mark 12:13", "Mark 8:15", "Mark 6:17-18", "Mark 11:18", "Mark 14:1"]
+    },
+    {
+      "v": "7-8",
+      "context": "Jesus withdraws to the sea, and crowds follow from nearly every direction. The list of regions shows how far word of him has spread, in deliberate contrast with the plot of verse 6.",
+      "grammar": "Anechōrēsen, ‘withdrew’, often describes retreat from danger (Matthew uses it when Jesus learns of John's arrest, 4:12). Polu plēthos, ‘a great multitude’, appears twice, once for the Galileans in verse 7 and again for those from farther away in verse 8, framing the list. Akouontes hosa epoiei, ‘hearing how much he was doing’: the imperfect epoiei describes continuing activity, which is what drew them.",
+      "words": ["G0402", "G2281", "G4128", "G1056G", "G2449", "G2414", "G2401", "G5184", "G4605", "G0191"],
+      "parallels": ["Matthew 12:15-16", "Matthew 4:24-25", "Luke 6:17-19"],
+      "history": "The regions form a map of the old land of Israel and its neighbors. Idumea, named only here in the New Testament, was the region south of Judea, the Edom of earlier times; its people had been forcibly converted to Judaism by the Hasmonean ruler John Hyrcanus around 125 BC (Josephus, Antiquities 13.257-258), and Herod the Great's family came from there. ‘Beyond the Jordan’ refers to Perea, east of the river, also ruled by Antipas. Tyre and Sidon were Phoenician cities on the coast, largely Gentile, so the crowd included people from outside Israel.",
+      "refs": ["Matthew 4:24-25", "Matthew 12:15-21", "Mark 7:24-31", "Luke 6:17-19"]
+    },
+    {
+      "v": "9-10",
+      "context": "The crowd's need becomes a physical danger. Jesus asks for a boat to be kept ready, and the reason is that the sick were pushing forward to touch him.",
+      "grammar": "Hina ploiarion proskarterē autō, ‘that a small boat should wait on him’: proskartereō means to stand by or be constantly ready. Hina mē thlibōsin auton, ‘so that they would not crush him’: thlibō, to press or squeeze, is the root of thlipsis, ‘affliction’. In verse 10, epipiptein autō, ‘to fall upon him’, is a strong word for the press of the crowd. Mastigas, ‘diseases’, literally means ‘whips’ or ‘scourges’, a vivid term for suffering that Mark uses again in 5:29 and 5:34.",
+      "words": ["G4142", "G4342", "G2346", "G2323", "G1968", "G0681", "G3148"],
+      "history": "In 1986, during a drought that lowered the Sea of Galilee, a fishing boat about 8 meters long was found in the mud near Ginosar, on the northwest shore. Dated by pottery and radiocarbon to roughly the first century BC or the first century AD, it gives a good picture of the kind of boat the disciples used. Mark's word here, ploiarion, is a diminutive, ‘a small boat’.",
+      "refs": ["Mark 4:1", "Mark 5:27-30", "Mark 6:56", "Luke 8:45"]
+    },
+    {
+      "v": "11-12",
+      "context": "Unclean spirits recognize Jesus as Son of God, and he silences them. The crowd does not yet know who he is; the demons do, and they are the ones he forbids to say it.",
+      "grammar": "Hotan auton etheōroun, ‘whenever they saw him’: hotan with an imperfect indicative is unusual Greek, and it marks repeated action, ‘every time’. The verbs that follow are imperfect as well: prosepipton, ‘they would fall down’, and ekrazon, ‘they would cry out’. Su ei ho huios tou theou, ‘you are the Son of God’, puts the pronoun su first for emphasis. Polla epetima, ‘he rebuked them strongly’, uses the verb with which Jesus rebukes the wind (4:39).",
+      "words": ["G4151G", "G0169", "G2334", "G4363", "G2896", "G5207", "G2316", "G2008", "G5318"],
+      "history": "William Wrede, in The Messianic Secret in the Gospels (1901), argued that Jesus' commands to silence were a device of Mark or his tradition to explain why Jesus had not been recognized as Messiah during his lifetime. Many later scholars have kept his observation while rejecting his explanation, reading the commands as Jesus' own refusal to be proclaimed by demons, or to be known as Messiah before the cross defined what his messiahship meant.",
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "The spirits' confession is true but unwanted. The verse shows that correct words about Jesus are not the same as faith, and that he wants his identity learned in the way that leads to the cross, not shouted by his enemies."
+        }
+      ],
+      "refs": ["Mark 1:24-25", "Mark 1:34", "Mark 5:7", "Mark 8:29-31", "James 2:19"]
+    },
+    {
+      "v": "13-15",
+      "context": "On a mountain, Jesus calls those he chooses and appoints twelve. The purposes are named in order: first to be with him, then to be sent to preach and to have authority over demons.",
+      "grammar": "Proskaleitai hous ēthelen autos, ‘he calls those whom he himself wanted’: the pronoun autos stresses that the choice is his. Epoiēsen dōdeka, literally ‘he made twelve’, uses poieō in the sense of appointing, as the Septuagint of 1 Samuel 12:6 speaks of the LORD who ‘made’ (appointed) Moses and Aaron. Two purpose clauses follow: hina ōsin met' autou, ‘that they might be with him’, and hina apostellē autous, ‘that he might send them’, the verb from which apostolos comes.",
+      "words": ["G3735", "G4341", "G2309", "G4160I", "G1427", "G0652", "G0649", "G2784", "G1849", "G1544", "G1140"],
+      "parallels": ["Matthew 10:1-4", "Luke 6:12-16"],
+      "text": "The clause \"whom He designated as apostles\" is in Codex Sinaiticus and Codex Vaticanus but is missing from many other manuscripts. Westcott and Hort and the 27th edition of Nestle-Aland print it; some editors suspect it was added from Luke 6:13, where it certainly belongs. Luke also says Jesus spent the night before in prayer (6:12).",
+      "theology": [
+        {
+          "id": "church",
+          "note": "The Twelve are called first to presence and then to mission. The order matters: those who are sent must first have been with him, and the authority they carry is his, not their own."
+        },
+        {
+          "id": "election",
+          "note": "Jesus calls those he wants. The initiative is entirely his, as the choice of Israel was God's (Deuteronomy 7:6-8), and the chosen include a tax collector, fishermen, and the one who will betray him."
+        }
+      ],
+      "refs": ["Exodus 24:12-13", "Luke 6:12-13", "John 15:16", "Acts 1:21-22", "Mark 6:7-13"]
+    },
+    {
+      "v": "16-19",
+      "context": "Mark lists the Twelve. The list begins with Simon and his new name and ends with Judas and his betrayal, so that the whole company is framed by who they will become.",
+      "grammar": "Epethēken onoma tō Simōni Petron, ‘he put on Simon the name Peter’: Petros is the Greek for the Aramaic kepha, ‘rock’ (John 1:42). Boanērges is Mark's transliteration of an Aramaic phrase he translates huioi brontēs, ‘sons of thunder’; the first element is clearly bene, ‘sons of’, but the second is uncertain, perhaps regesh, ‘tumult’. Kananaios, applied to the second Simon, is not ‘Canaanite’ (as the King James Version has it) but a Greek form of the Aramaic qanana, ‘zealous’, which Luke translates as zēlōtēs (6:15). Hos kai paredōken auton, ‘who also handed him over’: paradidōmi, ‘to hand over’, becomes Mark's key verb for the passion (9:31, 10:33, 14:10).",
+      "words": ["G2007", "G3686", "G4613O", "G4074G", "G0993", "G1027", "G3156", "G0256", "G2280", "G2581", "G2469", "G3860"],
+      "history": "The four lists of the Twelve (here, Matthew 10:2-4, Luke 6:14-16, and Acts 1:13) always begin with Peter and, where he is listed, end with Judas. Thaddaeus here and in Matthew corresponds to ‘Judas son of James’ in Luke and Acts, and some manuscripts of Mark read Lebbaeus instead. Iscariot is most often explained as Hebrew ish Qeriyyot, ‘man of Kerioth’, a town in southern Judah (Joshua 15:25), which would make Judas the one Judean among Galileans; other suggestions, such as a link with the Latin sicarius, ‘dagger man’, are less likely.",
+      "theology": [
+        {
+          "id": "leadership",
+          "note": "Jesus gives new names that point to new roles, as God renamed Abram and Jacob. The list includes a tax collector who served Rome's client ruler and a man called the zealous one, so the Twelve held together people whose politics would have kept them apart anywhere else."
+        }
+      ],
+      "refs": ["John 1:42", "Matthew 16:18", "Luke 9:54", "Luke 6:14-16", "Acts 1:13"]
+    },
+    {
+      "v": "20-21",
+      "context": "Back in the house, the crowd is so thick that there is no chance to eat, and Jesus' family sets out to take him in hand, saying he is out of his mind. Mark then interrupts their story with the scribes' accusation (verses 22 to 30) and returns to the family in verse 31.",
+      "grammar": "Hoi par' autou, literally ‘those from beside him’, is an idiom for a person's family or household, and verse 31 confirms that his mother and brothers are meant. The King James Version renders it ‘his friends’. Kratēsai auton, ‘to seize him’, is the verb later used for his arrest (14:1, 14:46). Elegon gar hoti exestē, ‘for they were saying, he is beside himself’: the subject of elegon could be the family or could be impersonal, ‘people were saying’, and interpreters divide on which. Existēmi means to be out of one's senses; in 2:12 the same verb described the crowd's amazement.",
+      "words": ["G3624G", "G3793", "G0740", "G5315", "G0191", "G3844", "G2902", "G1839"],
+      "text": "Some manuscripts, including Codex Bezae, soften the verse so that the scribes and others, not Jesus' own family, set out to seize him. The harder reading, that his family thought him out of his mind, is certainly original, and Matthew and Luke leave the incident out altogether.",
+      "theology": [
+        {
+          "id": "family",
+          "note": "Jesus' closest relatives misread him. The verse is honest that faithfulness to God's calling can look like madness to one's own family, a pattern Jesus will name in 6:4 and 10:29-30."
+        }
+      ],
+      "refs": ["Mark 6:3-4", "John 7:5", "John 10:20", "Acts 1:14", "2 Corinthians 5:13"]
+    },
+    {
+      "v": "22",
+      "context": "Scribes from Jerusalem make the more dangerous charge: Jesus is possessed by Beelzebul and casts out demons by the power of their ruler. They cannot deny the exorcisms, so they explain them.",
+      "grammar": "The two charges are introduced by hoti and stand side by side: Beelzeboul echei, ‘he has Beelzebul’, a charge of possession, and en tō archonti tōn daimoniōn ekballei ta daimonia, ‘by the ruler of the demons he casts out the demons’, a charge of collusion. Katabantes, ‘having come down’, is the regular idiom for travel from Jerusalem, which stands in the hills, and it signals that the capital's authorities are now involved.",
+      "words": ["G1122", "G2414", "G2597", "G0954", "G0758", "G1140", "G1544"],
+      "parallels": ["Matthew 12:22-24", "Luke 11:14-16"],
+      "text": "Codex Sinaiticus and Codex Vaticanus spell the name Beezeboul. The form Beelzebub found in the King James Version comes from the Latin Vulgate and the Syriac, which assimilated it to Baal-zebub, the god of Ekron in 2 Kings 1:2.",
+      "history": "Baal-zebub, ‘lord of flies’ in Hebrew, may be a mocking distortion of a Canaanite title. Beelzebul probably preserves the older form: zbl appears in texts from Ugarit as an honorific meaning ‘prince’ or ‘exalted one’, so Baal-zebul would mean ‘Prince Baal’ or ‘lord of the lofty dwelling’. By Jesus' time the name had become a title for the chief of demons.",
+      "refs": ["2 Kings 1:2-3", "Matthew 9:34", "Matthew 10:25", "John 8:48", "John 10:20-21"]
+    },
+    {
+      "v": "23-26",
+      "context": "Jesus answers the scribes in parables, the first time Mark uses the word. The first argument is from absurdity: if Satan were casting out Satan, his kingdom would be divided and finished.",
+      "grammar": "Proskalesamenos, ‘having called them to him’, shows Jesus addressing his accusers directly. En parabolais, ‘in parables’, means here ‘in comparisons’, short analogies rather than stories. The question pōs dunatai Satanas Satanan ekballein, ‘how can Satan cast out Satan?’, sets the name twice in a row. Verses 24 and 25 are parallel conditions with ean and the aorist subjunctive meristhē, ‘if it should be divided’. Verse 26 shifts to ei with the aorist indicatives anestē and emeristhē, ‘if Satan has risen up and been divided’, treating the case as fact for the sake of argument. The conclusion alla telos echei, ‘but he has an end’, is a blunt idiom: he is finished.",
+      "words": ["G4341", "G3850", "G4567", "G1544", "G0932", "G3307", "G2476", "G3614H", "G0450", "G5056"],
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The argument assumes that Satan has a kingdom, an organized dominion, and that Jesus' exorcisms are invading it. The kingdom of God announced in 1:15 comes as a conflict of kingdoms."
+        }
+      ],
+      "refs": ["Matthew 12:25-26", "Luke 11:17-18", "Mark 1:15", "Mark 4:2", "John 12:31"]
+    },
+    {
+      "v": "27",
+      "context": "The second argument explains what is actually happening. No one can plunder a strong man's house without first tying him up; Jesus' exorcisms show that the strong man has been bound and his goods are being taken back.",
+      "grammar": "All' ou dunatai oudeis, ‘but no one can’, uses a double negative for emphasis. Ta skeuē autou, ‘his goods’, are the people Satan holds. Ean mē prōton ton ischuron dēsē, ‘unless he first binds the strong man’: prōton, ‘first’, sets the order, and dēsē is an aorist subjunctive of deō, the verb used in Revelation 20:2 for binding the dragon. Kai tote tēn oikian autou diarpasei, ‘and then he will plunder his house’. The word ischuros links back to John's announcement of ‘one more powerful’ (ho ischuroteros) in 1:7: Jesus is the stronger one.",
+      "words": ["G3614G", "G2478", "G4632", "G1283", "G4413G", "G1210"],
+      "history": "Jewish expectation linked the Messiah or the end time with the binding of evil powers. The Testament of Levi, part of the Testaments of the Twelve Patriarchs (a work with a complex history of Jewish and Christian editing), says of the coming priest that Beliar will be bound by him (18:12). Jesus claims that this binding is happening in his ministry.",
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "Jesus' exorcisms are the first signs of a victory completed at the cross, where, as Colossians 2:15 puts it, God disarmed the powers. Amillennial and postmillennial readers connect this binding with Revelation 20:2; premillennial readers see a fuller binding still to come."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Isaiah 49:24-25",
+          "note": "Isaiah asks whether prey can be taken from the mighty, and God answers that the captives of the mighty will be taken and the prey of the tyrant rescued, for he will contend with Israel's oppressor. The Hebrew word is gibbor, ‘mighty man’; the Septuagint renders it gigas, ‘giant’. Isaiah 53:12 in the Septuagint then promises that the servant will divide the spoils of the strong (tōn ischurōn), the adjective Mark uses. Jesus' parable takes up the promise that God himself will rescue captives from a stronger power."
+        }
+      ],
+      "refs": ["Isaiah 49:24-25", "Isaiah 53:12", "Luke 11:21-22", "Colossians 2:15", "Revelation 20:2"]
+    },
+    {
+      "v": "28-29",
+      "context": "Jesus makes a solemn pronouncement: every sin and blasphemy can be forgiven, except blasphemy against the Holy Spirit. The first half is the widest promise of forgiveness in the Gospel; the second is its one warning, spoken to people calling the Spirit's work Satan's.",
+      "grammar": "Amēn legō humin, ‘truly I tell you’, is Jesus' distinctive way of opening a saying; elsewhere in Jewish usage amen answers a prayer or statement, but Jesus puts it first, as a mark of his own authority. Panta aphethēsetai, ‘all will be forgiven’, is a future passive, the divine passive again, and tois huiois tōn anthrōpōn, ‘to the sons of men’, is a Hebraic phrase for human beings in general. In verse 29 the construction hos d' an blasphēmēsē, ‘whoever blasphemes’, describes a type of action. Ouk echei aphesin eis ton aiōna, ‘has no forgiveness to the age’, is an idiom for ‘never’. Enochos estin aiōniou hamartēmatos, ‘is liable for an eternal sin’: enochos is a legal term, ‘answerable’ or ‘guilty’.",
+      "words": ["G0281", "G0863H", "G0265", "G0988", "G0987", "G4151G", "G0040G", "G0859", "G0165H", "G1777", "G0166"],
+      "parallels": ["Matthew 12:31-32", "Luke 12:10"],
+      "text": "Where modern editions read ‘an eternal sin’ (hamartēmatos), the manuscripts behind the King James Version read ‘eternal judgment’ (kriseōs), which the KJV renders ‘eternal damnation’. The harder word ‘sin’ is better attested. Matthew adds that a word spoken against the Son of Man will be forgiven, and Luke places the saying in a different setting, about confessing Jesus before others.",
+      "history": "The saying had a long afterlife. The Didache (11:7) applies it to testing prophets: one must not judge a prophet speaking in the Spirit, since every sin will be forgiven but not this one. Augustine, in a sermon devoted to the question (Sermon 71), concluded that the sin is final impenitence, a hardness that refuses forgiveness until death. Thomas Aquinas (Summa Theologiae II-II, question 14) gathered the various patristic readings. John Bunyan, in Grace Abounding to the Chief of Sinners (1666), described years of terror that he had committed this sin and his slow discovery that he had not.",
+      "theology": [
+        {
+          "id": "sin",
+          "note": "The unforgivable sin is defined by its context (verse 30): looking at the Spirit's plain work of liberation and calling it demonic. It is not a word blurted out in anger, a doubt, or a single failure, but a settled refusal of the one through whom forgiveness comes."
+        },
+        {
+          "id": "spirit",
+          "note": "The Spirit who came on Jesus at his baptism (1:10) is the power at work in his exorcisms. To call that power unclean is to reject God's own presence in Jesus, which is why the sin is named as against the Spirit."
+        }
+      ],
+      "refs": ["Matthew 12:31-32", "Luke 12:10", "Hebrews 6:4-6", "1 John 5:16", "Isaiah 63:10"]
+    },
+    {
+      "v": "30",
+      "context": "Mark adds his own explanation. Jesus spoke the warning because the scribes were saying he had an unclean spirit, and this verse is the key to reading verses 28 and 29.",
+      "grammar": "Hoti elegon, ‘because they were saying’: the imperfect elegon describes a repeated, continuing claim, not a single remark. Pneuma akatharton echei, ‘he has an unclean spirit’, sets their charge against the Holy Spirit of verse 29 in exactly parallel wording: holy spirit, unclean spirit. The scribes looked at the Holy Spirit's work and named it its opposite.",
+      "words": ["G3754H", "G3004G", "G4151G", "G0169", "G2192"],
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "Pastors have long pointed out, with Augustine and Bunyan, that those who fear they have committed this sin show by their very fear and longing for God that they have not; the sin described here does not grieve over itself. The warning is aimed at hardened opponents, not the anxious. Anyone tormented by this fear should not carry it alone but speak with a pastor or trusted believer, and, if the fear has become obsessive or crushing, with a counselor or doctor as well."
+        }
+      ],
+      "refs": ["Mark 3:22", "Mark 1:10", "Matthew 12:28", "Luke 11:20", "1 John 1:9"]
+    },
+    {
+      "v": "31-32",
+      "context": "The family story resumes. Jesus' mother and brothers arrive, stand outside, and send for him. The crowd sits around him inside, and the physical arrangement (outside and inside) becomes the image of the next verses.",
+      "grammar": "Exō stēkontes, ‘standing outside’, is emphatic by position; exō, ‘outside’, is repeated in verse 32. Apesteilan pros auton kalountes auton, ‘they sent to him, calling him’: they summon rather than come in. Ekathēto peri auton ochlos, ‘a crowd was sitting around him’, the posture of disciples before a teacher. The report idou hē mētēr sou kai hoi adelphoi sou, ‘look, your mother and your brothers’, repeats what verse 31 has told, and Jesus' reply will reinterpret each word.",
+      "words": ["G3384", "G0080", "G1854", "G4739", "G0649", "G2564G", "G2521", "G3793", "G2212"],
+      "parallels": ["Matthew 12:46-50", "Luke 8:19-21"],
+      "text": "Some manuscripts add ‘and your sisters’ in verse 32 (Codex Alexandrinus and Codex Bezae among them), while Sinaiticus, Vaticanus, and others lack it. The 27th edition of Nestle-Aland printed the words; the 28th and the SBL edition leave them out. The addition may come from verse 35, where Jesus names sisters.",
+      "history": "Mark names Jesus' brothers in 6:3: James, Joses, Judas, and Simon. James later led the church in Jerusalem (Galatians 1:19; Acts 15:13), and Josephus reports his execution in AD 62 (Antiquities 20.200). The relationship of these brothers to Jesus has been understood in different ways, as the chapter note explains.",
+      "refs": ["Mark 6:3", "John 7:3-5", "Acts 1:14", "Galatians 1:19", "1 Corinthians 15:7"]
+    },
+    {
+      "v": "33-35",
+      "context": "Jesus asks who his mother and brothers are, looks at those sitting around him, and names them his family. The conclusion widens the circle to anyone who does God's will.",
+      "grammar": "Tis estin hē mētēr mou, ‘who is my mother?’, uses the singular verb for a compound subject, which Greek allows. Periblepsamenos, the same participle as in verse 5, shows Jesus' searching look, this time not in anger but in recognition. Ide, ‘look’, points at the circle of hearers kuklō, ‘all around’. Verse 35 is a general relative clause: hos an poiēsē to thelēma tou theou, ‘whoever does the will of God’. Houtos, ‘this one’, then gathers the whole class into a single person: that one is my brother and sister and mother. Sister appears here for the first time. Father is not named, and many commentators think the omission is deliberate: in this new family that place belongs to God.",
+      "words": ["G0611", "G3384", "G0080", "G4017", "G2945", "G2521", "G2396", "G2307", "G2316", "G0079"],
+      "theology": [
+        {
+          "id": "church",
+          "note": "The new family of Jesus is formed around him and defined by doing God's will. The verse gives the church its first name for itself as a household of brothers and sisters, a name the New Testament letters use constantly."
+        },
+        {
+          "id": "family",
+          "note": "Jesus does not despise his natural family; his mother appears at the cross in John 19:25-27 and his brothers in the church in Acts 1:14. He sets a higher bond beside it, one that includes those who have no family, and in Mark 10:29-30 he promises such people brothers, sisters, and mothers a hundredfold."
+        }
+      ],
+      "refs": ["Mark 10:29-30", "Matthew 12:49-50", "Luke 8:21", "Romans 8:29", "Hebrews 2:11"]
+    }
+  ]
+}
