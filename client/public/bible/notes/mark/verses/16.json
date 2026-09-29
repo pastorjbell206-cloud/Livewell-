@@ -1,0 +1,242 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "The three women who watched Jesus die from a distance (15:40) and saw where he was laid (15:47) now act as soon as the law allows. Mark has made them the thread of witness across crucifixion, burial, and empty tomb, the only people present at all three.",
+      "grammar": "Diagenomenou tou sabbatou is a genitive absolute, a Greek construction that sets the time frame apart from the main clause: ‘the Sabbath having passed’. The main verb, ēgorasan (‘they bought’), is a plain aorist, and the purpose clause hina elthousai aleipsōsin auton (‘so that, having come, they might anoint him’) uses aleiphō, the ordinary verb for rubbing oil or perfume on a body. The women intend care for a corpse. Mark has already told the reader, through Jesus' words at Bethany, that his body was anointed beforehand for burial (14:8), so their errand is loving and also, as the reader knows, too late in a way they cannot yet imagine.",
+      "words": ["G1230", "G4521", "G0059", "G0759", "G0218"],
+      "history": "The Sabbath ended at sundown on Saturday, and buying and selling were forbidden until then, so the purchase would have been made on Saturday evening. The Mishnah allows the body of the dead to be washed and anointed even on the Sabbath (m. Shabbat 23:5), but the spices had to be bought first. The four Gospels handle the spices differently: Luke has the women prepare them before the Sabbath began (Luke 23:56); Matthew says only that the women came to look at the tomb (Matthew 28:1), perhaps because in his account it was sealed and guarded; and John has Nicodemus bring about seventy-five pounds of myrrh and aloes at the burial itself (John 19:39), with Mary Magdalene coming to the tomb alone.",
+      "parallels": ["Matthew 28:1", "Luke 23:56-24:1", "John 20:1"],
+      "refs": ["Mark 15:40-41", "Mark 15:47", "Mark 14:3-9", "Luke 8:2-3"]
+    },
+    {
+      "v": "2",
+      "context": "The time notice places the discovery on Sunday, the day after the Sabbath. This first day of the week became the day the church gathered for worship, because this is when the tomb was found empty.",
+      "grammar": "‘On the first day of the week’ renders tē mia tōn sabbatōn, literally ‘on day one of the sabbaths’: Greek-speaking Jews used the cardinal ‘one’ for ‘first’ (as Hebrew does in Genesis 1:5) and ‘sabbaths’ for the week counted from Sabbath to Sabbath. Mark then stacks two time marks that sit awkwardly together, lian prōi (‘very early’, a phrase that normally means before full daylight) and anateilantos tou hēliou, an aorist participle in a genitive absolute, ‘the sun having risen’. The Gospels' own phrases vary: Matthew 28:1 says ‘as it was dawning’, Luke 24:1 ‘at early dawn’, and John 20:1 ‘while it was still dark’. Most commentators take Mark's pair as describing first light, when the women set out in darkness and arrived as the sun came up.",
+      "words": ["G3029", "G4404", "G1520", "G4521", "G0393", "G2246"],
+      "theology": [
+        {
+          "id": "worship",
+          "note": "By the time of Paul and Luke, Christians gathered and collected gifts on ‘the first day of the week’ (1 Corinthians 16:2, Acts 20:7), and John calls it ‘the Lord's day’ (Revelation 1:10). The verse is where that practice begins: Christian worship moved to Sunday because of what the women found on it."
+        }
+      ],
+      "parallels": ["Matthew 28:1", "Luke 24:1", "John 20:1"],
+      "refs": ["Acts 20:7", "1 Corinthians 16:2", "Revelation 1:10"]
+    },
+    {
+      "v": "3-4",
+      "context": "The women's worried question on the road is answered before they reach the tomb: the stone is already moved. Mark gives no agent and no earthquake (contrast Matthew 28:2); he simply shows the obstacle gone and adds, almost as an afterthought, how large it was.",
+      "grammar": "Elegon is an imperfect, ‘they kept saying to one another’, a worry repeated on the way. The future apokulisei (‘who will roll away?’) becomes, in verse 4, the perfect passive apokekulistai, ‘it has been rolled away’, a finished act with lasting result and no stated subject; the passive leaves the reader to supply who did it. The last clause, ēn gar megas sphodra (‘for it was extremely large’), is placed after the discovery rather than before it. This habit of adding a short explanatory gar (‘for’) clause at the end of a sentence runs through Mark (1:16, 5:42, 11:13) and matters for how verse 8 ends.",
+      "words": ["G3004G", "G0617", "G3037", "G2374", "G1063", "G3173", "G4970"],
+      "history": "Most tombs of this period around Jerusalem were closed with a squared stone block pushed into the doorway. Round stones rolled in a channel were far less common, and Amos Kloner's survey of Jerusalem's Second Temple period tombs, published in 1999, found them mainly in wealthy family tombs; one can still be seen at the so-called tomb of Herod's family west of the Old City. That fits the Gospels' description of Joseph of Arimathea as a prominent and wealthy man (15:43, Matthew 27:57), though the Greek verb for rolling could also describe moving a heavy block.",
+      "text": "The Old Latin Codex Bobiensis, copied in North Africa in the fourth or fifth century, adds a sentence between verses 3 and 4 found in no Greek manuscript: at the third hour darkness fell over the whole earth, angels came down from heaven, and as Jesus rose in the glory of the living God they ascended with him, and at once it was light. It is plainly a later expansion, but it shows how early some readers wanted Mark to narrate the resurrection itself, which no canonical Gospel does.",
+      "parallels": ["Matthew 28:2-4", "Luke 24:2", "John 20:1"],
+      "refs": ["Mark 15:46", "Matthew 27:57-60", "Matthew 27:66"]
+    },
+    {
+      "v": "5",
+      "context": "Inside the tomb the women meet a young man in white, seated on the right. Mark calls him only a young man; the white robe and the message he gives mark him as a messenger from God, as Matthew makes explicit.",
+      "grammar": "Neaniskos (‘young man’) occurs in Mark only here and at 14:51-52, where a young man ‘clothed’ (peribeblēmenos, the same perfect participle used here) in a linen cloth flees naked from Gethsemane. Some interpreters see a deliberate pairing, the shame of flight reversed by a figure clothed in white; most take the echo as verbal only and the young man here as an angel. The verb exethambēthēsan, from ekthambeomai, ‘to be utterly astonished or alarmed’, is found in the New Testament only in Mark (9:15, 14:33, 16:5-6), and at 14:33 it describes Jesus' own distress in Gethsemane.",
+      "words": ["G3495", "G2521", "G1188", "G4016", "G4749", "G3022", "G1568"],
+      "history": "Jewish writings of the period describe heavenly messengers as young men. In 2 Maccabees 3:26 and 3:33, two young men of great strength and splendid dress appear to flog Heliodorus, who had come to plunder the temple, and Josephus (Antiquities 5.277) describes the angel who appeared to Manoah's wife as looking like a handsome young man. The other Gospels differ in the number and position of the messengers: Matthew has one angel who comes down, rolls back the stone, and sits on it outside (Matthew 28:2); Luke has two men in dazzling clothes who suddenly stand beside the women (Luke 24:4); John has two angels in white seated where the body had lain, one at the head and one at the feet, seen by Mary Magdalene after the others have gone (John 20:12).",
+      "theology": [
+        {
+          "id": "angels",
+          "note": "The angel's role is to interpret, not to perform. He does not raise Jesus or display him; he announces what God has done and sends the women on. In Scripture angels serve God's word to people, and the proper response is fear before God, not attention to the messenger."
+        }
+      ],
+      "parallels": ["Matthew 28:2-5", "Luke 24:3-5", "John 20:11-12"],
+      "refs": ["Mark 14:51-52", "Mark 9:3", "Acts 1:10", "Daniel 10:5-6"]
+    },
+    {
+      "v": "6",
+      "context": "The announcement at the center of the chapter. The young man names the one they seek by his hometown and by his death, declares that he is risen, and points to the empty place as evidence. The three predictions of the passion (8:31, 9:31, 10:33-34) are now fulfilled in their last clause.",
+      "grammar": "Mē ekthambeisthe is a present imperative with the negative, which often means ‘stop being alarmed’. Ton estaurōmenon, ‘the crucified one’, is a perfect passive participle: the perfect presents the crucifixion as a completed act whose result still defines him. Paul uses the same form when he preaches ‘Christ crucified’ (1 Corinthians 1:23, 2:2). The risen Jesus is still the crucified one. Then come three short sentences with no connecting words (a style called asyndeton): ēgerthē, ouk estin hōde, ide ho topos, ‘he has been raised; he is not here; look, the place’. The bare sequence is the proclamation's force. Ēgerthē is an aorist passive of egeirō, discussed in the chapter note; here it may be added that Jesus' own predictions in Mark used the active anastēsetai, ‘he will rise’, while the angel's word uses the verb that also speaks of God raising him.",
+      "words": ["G1568", "G3479", "G4717", "G1453", "G5117", "G5087"],
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "The verse joins identity and event: the same Jesus of Nazareth who was crucified has been raised, and the place where his body lay is empty. The church's confession of Christ's bodily resurrection rests on exactly this pairing, the continuity of the person and the reality of the body."
+        },
+        {
+          "id": "messiah",
+          "note": "Jesus had told his disciples three times that the Son of Man would be killed and after three days rise (8:31, 9:31, 10:34). The angel's announcement is God's confirmation that the rejected one is the Messiah, and that the cross did not refute his claim but carried it out."
+        }
+      ],
+      "parallels": ["Matthew 28:5-6", "Luke 24:5-7", "John 20:13"],
+      "refs": ["Mark 8:31", "Mark 10:33-34", "1 Corinthians 1:23", "1 Corinthians 15:3-4", "Acts 2:23-24"]
+    },
+    {
+      "v": "7",
+      "context": "The women are given a commission: tell the disciples, and Peter, that Jesus goes ahead to Galilee. It fulfills his promise at the Last Supper (14:28), spoken right after he predicted that all of them would fall away and just before he predicted Peter's denial.",
+      "grammar": "Kai tō Petrō, ‘and to Peter’, singles out the one disciple who denied Jesus three times (14:66-72). Only Mark has it; Matthew's form of the message (Matthew 28:7) omits Peter's name. Proagei is present tense, ‘he is going ahead of you’, the same verb used when Jesus walked ahead of the frightened disciples on the road to Jerusalem (10:32). Opsesthe (‘you will see’) is future, and kathōs eipen humin (‘just as he told you’) points back to 14:28. Ernst Lohmeyer (Galiläa und Jerusalem, 1936) and Willi Marxsen (Mark the Evangelist, 1956) argued that the promised seeing in Galilee meant the Son of Man's return at the end, since Mark uses ‘you will see’ of that event (13:26, 14:62). Most interpreters take it as a promise of resurrection appearances, as Matthew 28:16-17 understood it.",
+      "words": ["G5217", "G4074G", "G4254", "G1056G", "G3700G", "G2531"],
+      "ot": [
+        {
+          "ref": "Zechariah 13:7",
+          "note": "The promise repeated here was first given in 14:27-28, right after Jesus quoted Zechariah 13:7. The Hebrew is an imperative addressed to a sword, ‘Strike the shepherd, and the sheep will be scattered’. Greek manuscripts of the Septuagint differ at this point, some with a plural ‘strike the shepherds’. Mark's form, pataxō, ‘I will strike’, makes God himself the one who strikes. In Zechariah the scattering is followed by the refining of a remnant who call on God's name and whom he calls his people (13:8-9). Mark's promise in 16:7 is that second movement: the scattered flock is gathered again by the shepherd who was struck and now goes ahead of them."
+        }
+      ],
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "Peter is not summoned because he has repented; the message goes to him before he has said a word. Mark's Gospel shows restoration beginning with the risen Lord's initiative toward the one who failed worst, which is why the way back for failed disciples is always an invitation before it is a demand."
+        }
+      ],
+      "parallels": ["Matthew 28:7", "Luke 24:6-7"],
+      "refs": ["Mark 14:27-28", "Mark 14:66-72", "Matthew 28:16-17", "John 21:15-19", "1 Corinthians 15:5"]
+    },
+    {
+      "v": "8",
+      "context": "The women run from the tomb and, overcome with fear, say nothing to anyone. In the two oldest complete manuscripts the Gospel ends here. Throughout Mark people told to be silent have talked (1:44-45, 7:36); now people told to talk are silent. Whether this was Mark's last line is the most debated question in the book.",
+      "grammar": "The verse closes with ephobounto gar, ‘they were afraid, for’, a sentence that ends on the particle gar. Sentences ending in gar are common in Greek (Mark 16:4 has a near example), and the Septuagint has short ones: Genesis 18:15 closes Sarah's denial with ephobēthē gar, ‘for she was afraid’, and Genesis 45:3 ends with ‘for they were terrified’. Whole books ending this way are rare, though the treatise of the philosopher Plotinus numbered Ennead 5.5 ends with gar. The imperfect ephobounto describes an ongoing state, not a single moment of fright. Oudeni ouden eipan (‘to no one nothing they said’) is a double negative that in Greek intensifies. Tromos kai ekstasis (‘trembling and astonishment’) uses ekstasis, the word for the amazement at the raising of Jairus's daughter (5:42): the fear of people who have met the power of God.",
+      "words": ["G5343", "G1063", "G5156", "G1611", "G3762", "G5399"],
+      "history": "Three readings of this ending have serious defenders. That Mark meant to stop here was argued by R. H. Lightfoot (The Gospel Message of St. Mark, 1950), J. Lee Magness (Sense and Absence, 1986), and Andrew Lincoln (Journal of Biblical Literature, 1989): the promise of verse 7 stands and the reader must answer the call the women failed to carry. That the original ending was lost, or never written, was judged most probable by Bruce Metzger (A Textual Commentary on the Greek New Testament) and argued by Robert Gundry (Mark, 1993), N. Clayton Croy (The Mutilation of Mark's Gospel, 2003), and N. T. Wright, often pointing out that a codex's outer leaf is the one most easily lost and that Matthew and Luke both continue past this point. That verses 9 to 20 are Mark's own was defended by John Burgon (The Last Twelve Verses of the Gospel According to S. Mark, 1871), William Farmer (1974), Maurice Robinson (in Perspectives on the Ending of Mark, 2008), and Nicholas Lunn (The Original Ending of Mark, 2014).",
+      "text": "Codex Sinaiticus and Codex Vaticanus, both copied in the fourth century, end Mark at verse 8 and follow it with a decorated close and the book's title. In Sinaiticus the leaves carrying the end of Mark were rewritten by one of the manuscript's own scribes, and the replacement still stops at verse 8. In Vaticanus the scribe left a full column blank after verse 8, the only such gap in its New Testament; some read it as a sign he knew more text, others as simply a gap. The Sinaitic Syriac, one Sahidic Coptic copy, and the oldest Armenian and Georgian manuscripts also end here. Eusebius of Caesarea, answering a question from Marinus about how Mark's timing fits Matthew's, reported that the accurate copies ended with the women's fear. Jerome repeated this in his Letter 120 to Hedibia (about AD 407), saying that almost all Greek copies lacked the passage, yet he kept it in the Latin Vulgate.",
+      "theology": [
+        {
+          "id": "fear-of-god",
+          "note": "The women's trembling is the awe of creatures before God's direct act, the same response that met Jesus' stilling of the storm (4:41) and the transfiguration (9:6). Mark does not treat their fear as simple unbelief; he treats it as what happens to human beings when God does what only God can do."
+        }
+      ],
+      "parallels": ["Matthew 28:8", "Luke 24:8-11", "John 20:2"],
+      "refs": ["Mark 4:41", "Mark 9:6", "Mark 1:44-45", "Genesis 18:15"]
+    },
+    {
+      "v": "9",
+      "context": "The longer ending begins. It restarts the morning (‘early on the first day of the week’) as though verses 1 to 8 had not happened, and introduces Mary Magdalene as if for the first time, although she has been named three times in the last two dozen verses (15:40, 15:47, 16:1). Its account of the first appearance matches John 20:11-18.",
+      "grammar": "The opening participle anastas (‘having risen’) is masculine singular, but the nearest subject is the women of verse 8, and the Greek of these verses does not name Jesus until ‘the Lord’ of verse 19. The seam is visible in the Greek. The time phrase prōi prōtē sabbatou uses a different expression for Sunday from verse 2 (tē mia tōn sabbatōn). Ephanē, the aorist passive of phainō, ‘he appeared’, is never used elsewhere in the New Testament for a resurrection appearance, and in the rest of Mark phainō occurs only at 14:64 in the sense ‘how does it seem to you’. The pluperfect ekbeblēkei (‘he had cast out’) with ‘seven demons’ repeats information from Luke 8:2, not from Mark.",
+      "words": ["G0450", "G4404", "G4413G", "G4521", "G5316", "G3094", "G1544"],
+      "text": "Verses 9 to 20 are found in the great majority of Greek manuscripts, including Codex Alexandrinus (fifth century), Codex Ephraemi (fifth century), Codex Bezae (about 400), and Codex Washingtonianus, and in most Latin and Syriac copies. They were known by the late second century: Irenaeus, about AD 180, quotes verse 19 as from the end of Mark's Gospel (Against Heresies 3.10), and Tatian wove them into his Diatessaron, a single narrative made from the four Gospels. Justin Martyr's First Apology 45 may echo verse 20. Their vocabulary and style differ from the rest of Mark, and James Kelhoffer (Miracle and Mission, 2000) argued they were composed in the first half of the second century from the other Gospels and Acts. Modern editions print them in double brackets or with a note.",
+      "theology": [
+        {
+          "id": "canon",
+          "note": "The church received these verses in its lectionaries and translations for centuries, and the Council of Trent (1546) declared the biblical books canonical with all their parts as read in the church and the Latin Vulgate, which includes them. Christians agree on what the passage says; they differ on whether it is Mark's, and most Protestant and Catholic scholars now build no doctrine on it alone."
+        }
+      ],
+      "parallels": ["John 20:11-18", "Matthew 28:9-10"],
+      "refs": ["Luke 8:2", "John 20:1", "John 20:14-18"]
+    },
+    {
+      "v": "10-11",
+      "context": "Mary Magdalene reports to Jesus' followers, who are mourning, and they refuse to believe her. The longer ending returns to the theme of unbelief three times in four verses (11, 13, 14), preparing for the rebuke of verse 14.",
+      "grammar": "Poreutheisa (‘having gone’) is from poreuomai, a common verb in the other Gospels that appears three times in these few verses (10, 12, 15) and nowhere in Mark 1:1-16:8. Ēpistēsan (‘they disbelieved’), from apisteō, also appears only in the longer ending in Mark (here and verse 16). In verse 11, zē (‘he is alive’) is present tense and etheathē hup' autēs (‘he was seen by her’) uses theaomai, ‘to look at, behold’, again a verb Mark does not use before verse 11. Word counts alone prove little, but the cluster of new vocabulary in a short passage is one of the main arguments that another writer composed it.",
+      "words": ["G4198", "G0518", "G3996", "G2799", "G2198", "G2300", "G0569"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "The first proclamation of the risen Jesus is met with disbelief by his closest followers. The passage makes no attempt to present the apostles as credulous; faith in the resurrection came to them against their expectation and through testimony they at first rejected."
+        }
+      ],
+      "parallels": ["Luke 24:10-11", "John 20:18"],
+      "refs": ["Luke 24:11", "John 20:18", "Matthew 28:17"]
+    },
+    {
+      "v": "12-13",
+      "context": "A two-verse summary of the appearance to two disciples on a country road, told at length in Luke 24:13-35. The two report back, and again they are not believed.",
+      "grammar": "En hetera morphē, ‘in a different form’, uses morphē, the word Paul uses of Christ's ‘form’ in Philippians 2:6-7. Here it explains why the two did not at first recognize him, the same fact Luke expresses differently when he says their eyes were kept from recognizing him (Luke 24:16). Ephanerōthē (‘he was made manifest’, from phaneroō) is the verb John uses for the resurrection appearances (John 21:1, 21:14). Oude ekeinois episteusan (‘not even them did they believe’) intensifies the refusal.",
+      "words": ["G4043", "G5319", "G2087", "G3444", "G0068G", "G3761", "G4100"],
+      "history": "The two accounts differ on the result. In Luke the Eleven greet the returning pair with the news that the Lord has risen and appeared to Simon (Luke 24:33-35); here the rest do not believe them. Harmonizers have suggested that some believed and others did not, as Matthew 28:17 says of a later appearance, while others take the difference as evidence that the longer ending summarized Luke's story from memory and bent it toward its theme of unbelief.",
+      "parallels": ["Luke 24:13-35"],
+      "refs": ["Luke 24:16", "Luke 24:31", "Luke 24:33-35", "John 21:1"]
+    },
+    {
+      "v": "14",
+      "context": "Jesus appears to the Eleven at a meal and rebukes their unbelief and hardness of heart before commissioning them. The scene corresponds to Luke 24:36-43 and John 20:19-23, where the appearance is on the evening of the same day.",
+      "grammar": "Husteron (‘afterward, later’) is another word found in Mark only here. Anakeimenois (‘reclining’) describes guests at a meal, lying on couches. Ōneidisen, ‘he reproached’, is a strong verb; the objects are apistia (‘unbelief’), the word Mark used when Jesus marveled at Nazareth's unbelief (6:6), and sklērokardia (‘hardness of heart’), which Jesus used of the reason for Moses' divorce law (10:5). Mark's earlier chapters describe the disciples' hearts as hardened (6:52, 8:17); the longer ending brings that thread to a close.",
+      "words": ["G5306", "G0345", "G1733", "G5319", "G3679", "G0570", "G4641", "G2300", "G1453"],
+      "text": "Codex Washingtonianus (W), a Greek Gospel manuscript of the late fourth or fifth century bought in Egypt by Charles Lang Freer in 1906 and now in the Smithsonian's Freer Gallery in Washington, adds a dialogue after this verse known as the Freer Logion. The disciples excuse themselves: this age of lawlessness and unbelief is under Satan, who does not allow the truth and power of God to prevail, so let your righteousness be revealed now. Christ answers that the term of Satan's years of power is fulfilled, though other terrors draw near, and that he was handed over to death for sinners so that they might return to the truth and inherit the spiritual and imperishable glory of righteousness in heaven. Jerome knew part of it in Greek copies (Against the Pelagians 2.15). No other Greek manuscript has it, and it is universally judged a later addition.",
+      "parallels": ["Luke 24:36-43", "John 20:19-23"],
+      "refs": ["Mark 6:52", "Mark 8:17", "Mark 6:6", "1 Corinthians 15:5"]
+    },
+    {
+      "v": "15",
+      "context": "The commission. The Eleven are sent into all the world with the gospel. Mark's earlier chapters had already said the gospel must first be preached to all nations (13:10) and that the woman's anointing would be told wherever the gospel went in the whole world (14:9).",
+      "grammar": "Poreuthentes (‘having gone’) is an aorist participle attached to the aorist imperative kēruxate (‘proclaim’); in Greek such a participle usually takes on the force of the main command, so ‘go and proclaim’ is a fair rendering. Pasē tē ktisei means ‘to all creation’: ktisis is the word for the whole created order, and the phrase is closer to Colossians 1:23 (‘proclaimed to every creature under heaven’) than to Matthew's ‘all nations’. The object, to euangelion, ‘the good news’, is the word Mark put in his opening line (1:1).",
+      "words": ["G4198", "G2889", "G0537", "G2784", "G2098", "G2937"],
+      "theology": [
+        {
+          "id": "mission",
+          "note": "The risen Jesus sends the disciples who have just been rebuked. The commission does not wait for them to prove themselves; it is given to failed men and extends to the whole creation, which is the scope of the gospel from Mark's first line."
+        }
+      ],
+      "parallels": ["Matthew 28:18-20", "Luke 24:46-49", "John 20:21", "Acts 1:8"],
+      "refs": ["Mark 1:1", "Mark 13:10", "Mark 14:9", "Colossians 1:23"]
+    },
+    {
+      "v": "16",
+      "context": "The commission's consequences: salvation for the one who believes and is baptized, condemnation for the one who does not believe. The wording echoes the preaching of Acts, where believing and baptism go together (Acts 2:38-41, 16:31-33).",
+      "grammar": "Ho pisteusas kai baptistheis joins two aorist participles under one article, describing a single person who has believed and been baptized. The second half has ho de apistēsas katakrithēsetai, ‘but the one who has disbelieved will be condemned’, with no mention of baptism. The asymmetry is often noticed: condemnation is tied to unbelief, not to lack of baptism. Both main verbs are future passives (sōthēsetai, ‘will be saved’; katakrithēsetai, ‘will be condemned’), pointing to God's verdict at the judgment.",
+      "words": ["G4100", "G0907", "G4982", "G0569", "G2632"],
+      "theology": [
+        {
+          "id": "sacraments",
+          "note": "Christians read the verse differently. Catholic, Orthodox, and Lutheran theology, citing it with John 3:5 and Acts 2:38, teaches that God ordinarily gives new birth through baptism received in faith. Baptist and many Reformed and evangelical Christians read baptism as the expected public confession of a faith already given, and point to the verse's own second half, which condemns unbelief alone. All sides should remember that the verse belongs to the disputed ending."
+        },
+        {
+          "id": "judgment",
+          "note": "The verse sets the proclamation of the gospel within the horizon of final judgment. The message is not a suggestion among others; how a person answers it has eternal consequence."
+        }
+      ],
+      "parallels": ["Matthew 28:19", "John 3:18"],
+      "refs": ["John 3:18", "Acts 2:38", "Acts 16:31-33", "1 Peter 3:21"]
+    },
+    {
+      "v": "17-18",
+      "context": "Five signs are promised to those who believe. Four have counterparts in Acts: demons cast out (Acts 16:18), speaking in tongues (Acts 2:4, 10:46), a snakebite survived (Acts 28:3-6), and healing by laying on of hands (Acts 28:8). Drinking poison has no New Testament example.",
+      "grammar": "The signs ‘will accompany’ (parakolouthēsei, future) those who believe, but the verb names what God will do alongside the preaching, not a test believers should set. The emphatic negation ou mē with blaptō, ‘it will certainly not harm them’, promises protection; it does not command drinking poison. Glōssais lalēsousin kainais (‘they will speak in new tongues’) uses kainos, ‘new’, which is missing from some manuscripts; the phrase ‘with their hands’ in verse 18 is also missing from many. Kalōs hexousin, literally ‘they will have it well’, is an idiom for recovering.",
+      "words": ["G4592", "G3877", "G1140", "G1544", "G1100", "G2537", "G3789", "G0142", "G2286", "G0984", "G0732", "G2007"],
+      "history": "Papias of Hierapolis, writing in the early second century and quoted by Eusebius (Church History 3.39.9), told of Justus Barsabbas, the disciple of Acts 1:23, drinking a deadly poison and suffering no harm, a story that may lie behind this promise. In the modern era, serpent handling as worship began in the Appalachian holiness movement with George Went Hensley in Tennessee around 1910; Hensley died of a snakebite in 1955. The practice continues in a small number of congregations and has caused a number of deaths.",
+      "theology": [
+        {
+          "id": "gifts",
+          "note": "Christians disagree about whether such signs continue. Cessationists, following B. B. Warfield (Counterfeit Miracles, 1918), hold that miraculous gifts marked the apostolic age and ceased with it; Pentecostal and charismatic Christians hold that the gifts continue. Both sides agree that the signs serve the word and are never a way of forcing God to act, and that a promise of protection is not a command to seek danger (Matthew 4:7)."
+        }
+      ],
+      "refs": ["Acts 2:4", "Acts 28:3-6", "Acts 28:8", "Luke 10:19", "Matthew 4:7"]
+    },
+    {
+      "v": "19",
+      "context": "The ascension and enthronement of Jesus, told in one sentence. The verse joins Luke's account of Jesus being taken up (Luke 24:51, Acts 1:9-11) to the confession, drawn from Psalm 110, that he sits at God's right hand.",
+      "grammar": "Ho men oun kurios Iēsous, ‘so then the Lord Jesus’, uses kurios as the narrator's title for Jesus, which Mark never does in 1:1-16:8. The men oun (‘so then, on the one hand’) is answered by ekeinoi de (‘and they, on the other hand’) in verse 20, tying Christ's enthronement to the disciples' going out. Anelēmphthē (‘he was taken up’) is the aorist passive of analambanō, the verb used of Elijah in the Septuagint and of Jesus in Acts 1:2, 1:11, 1:22 and 1 Timothy 3:16. Ekathisen ek dexiōn tou theou (‘he sat down at the right hand of God’) is the language of Psalm 110:1 in its Greek form.",
+      "words": ["G2962G", "G2424G", "G0353", "G3772", "G2523", "G1188", "G2316"],
+      "history": "This is the verse Irenaeus quotes around AD 180 as coming ‘at the end of the Gospel’ of Mark (Against Heresies 3.10), which is the strongest evidence that the longer ending existed by the late second century. The verse gives no place or interval for the ascension. Luke sets it near Bethany (Luke 24:50-51) and Acts on the Mount of Olives after forty days of appearances (Acts 1:3, 1:12); Matthew and John do not narrate it.",
+      "ot": [
+        {
+          "ref": "Psalm 110:1",
+          "note": "The Hebrew reads ‘The LORD says to my Lord, Sit at my right hand, until I make your enemies a footstool for your feet’. The Septuagint (Psalm 109:1) renders the command kathou ek dexiōn mou, ‘sit at my right’, and the phrase ek dexiōn is exactly what this verse uses. In its original setting the psalm installs Israel's king beside God as his vice-regent. Jesus used it in Mark 12:35-37 to ask how the Messiah could be David's lord, and before the high priest in 14:62 to say he would be seen seated at the right hand of Power. This verse states the fulfillment as narrative: he sat down."
+        },
+        {
+          "ref": "2 Kings 2:11",
+          "note": "The Hebrew says Elijah ‘went up’ (vayyaal) in a whirlwind into heaven; the Septuagint renders it with the passive anelēmphthē, ‘he was taken up’, the same form used here. Elijah's taking up left Elisha with a double portion of his spirit to carry on his work. The New Testament ascension language draws on this vocabulary, and the sequence here, taken up and then the disciples working with the Lord's power, follows a similar pattern."
+        }
+      ],
+      "theology": [
+        {
+          "id": "exaltation",
+          "note": "Sitting at God's right hand means sharing God's rule. The crucified one now reigns, which is why the next verse can speak of the Lord working with his messengers from heaven."
+        }
+      ],
+      "parallels": ["Luke 24:50-51", "Acts 1:9-11"],
+      "refs": ["Mark 14:62", "Acts 2:33-35", "Ephesians 1:20-22", "Hebrews 1:3"]
+    },
+    {
+      "v": "20",
+      "context": "The disciples go out and preach everywhere, and the ascended Lord works with them, confirming the message by the signs that follow. The book closes not with the women's silence but with the gospel spreading, a one-sentence summary of Acts.",
+      "grammar": "Tou kuriou sunergountos kai ton logon bebaiountos is a genitive absolute: ‘the Lord working with them and confirming the word’. Both participles are present, describing ongoing activity. Sunergeō (‘to work together with’) and bebaioō (‘to confirm, make firm’) are both absent from the rest of Mark; Hebrews 2:3-4 expresses the same idea in similar terms, saying the message was confirmed to us by those who heard, while God testified with signs and wonders. Epakolouthountōn (‘following upon’) echoes parakolouthēsei in verse 17.",
+      "words": ["G1831", "G2784", "G3837", "G4903", "G0950", "G1872", "G4592"],
+      "text": "A second, much shorter ending also circulated. In its usual form it says that the women reported briefly to Peter and those with him all they had been told, and that afterward Jesus himself sent out through them, from east to west, the sacred and imperishable proclamation of eternal salvation. The Old Latin Codex Bobiensis has this shorter ending alone after verse 8. Several Greek manuscripts have both endings, the shorter first and then verses 9 to 20, among them Codex Regius (L, eighth century), Codex Athous Lavrensis (Ψ), 083, 099, and 579, as do many Ethiopic copies. Its vocabulary is unlike Mark's, and no one defends it as original. The closing ‘Amen’ appears in the later Byzantine copies and the King James Version.",
+      "theology": [
+        {
+          "id": "mission",
+          "note": "The mission is not left to the disciples alone. The one who sits at God's right hand works with them, and the message they carry is his word, confirmed by him."
+        },
+        {
+          "id": "hope",
+          "note": "Whichever ending is original, the Gospel ends with the risen Lord still at work. The hope Mark proclaims is not only that Jesus rose once but that he lives and reigns, and that his rising opens a future the church now lives toward."
+        }
+      ],
+      "refs": ["Hebrews 2:3-4", "Acts 14:3", "Romans 15:18-19", "Mark 13:10"]
+    }
+  ]
+}

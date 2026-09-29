@@ -1,0 +1,369 @@
+{
+  "verses": [
+    {
+      "v": "1-2",
+      "context": "Jesus sees the crowds that gathered at the end of chapter 4, goes up the mountain, and sits down; his disciples come to him and he teaches. The sermon is addressed to the disciples with the crowds listening, which is how 7:28-29 closes it. Readers who know Exodus will think of Moses going up Sinai to receive the law.",
+      "grammar": "Anebē eis to oros, ‘he went up on the mountain’, uses the article: ‘the mountain’, not a named peak, a phrase the Septuagint uses repeatedly of Moses at Sinai (Exodus 19:3, 12; 24:12-13). Kathisantos autou, ‘when he sat down’, describes the posture of a teacher (compare 23:2, where the scribes ‘sit on Moses' seat’). Anoixas to stoma autou, ‘opening his mouth’, is a solemn Semitic formula for beginning weighty speech (Job 3:1; Acts 8:35). Edidasken is imperfect, ‘he began to teach’ or ‘he was teaching’, framing what follows as extended instruction.",
+      "words": ["G0305", "G3735", "G2523", "G0455", "G4750", "G1321"],
+      "history": "The sermon is the first of five long discourses in Matthew, each closed by a similar formula (7:28; 11:1; 13:53; 19:1; 26:1). Tradition places it on the hill above Tabgha near Capernaum, where the Church of the Beatitudes stands, but the Gospel does not name the site. Luke's shorter parallel is set ‘on a level place’ after Jesus comes down from a mountain (Luke 6:17).",
+      "parallels": ["Luke 6:17-20"],
+      "refs": ["Exodus 19:3", "Exodus 24:12-13", "Matthew 7:28-29", "Matthew 23:2"]
+    },
+    {
+      "v": "3",
+      "context": "The first beatitude names the people the kingdom belongs to: the poor in spirit. It shares its promise, ‘theirs is the kingdom of heaven’, with the eighth beatitude (verse 10), so the two frame the whole set and the six between them spell out what life under God's rule looks like.",
+      "grammar": "Makarioi, ‘blessed’, opens a verbless declaration, the form of Old Testament blessings such as Psalm 1:1 and Psalm 32:1 (ashrei in Hebrew). It announces a state rather than commanding a quality. Ptōchoi means the destitute, those who must beg, rather than the merely less well off (penēs). Tō pneumati, ‘in spirit’, is a dative of respect, locating the poverty in a person's stance before God. The promise is in the present tense, estin, ‘theirs is’, while beatitudes 2 to 7 are future; only the framing beatitudes speak of possession now. ‘Kingdom of heaven’ is Matthew's usual phrase (about thirty times) where Mark and Luke say ‘kingdom of God’, following the Jewish reverent habit of speaking of God indirectly.",
+      "words": ["G3107", "G4434", "G4151G", "G0932", "G3772"],
+      "history": "The Dead Sea Scrolls contain the same Hebrew phrase: the War Scroll (1QM 14:7) speaks of the ‘poor in spirit’ ('anvei ruach) among the faithful who will stand in the final battle. The phrase describes the humble poor who depend on God, the 'anavim of the Psalms and Isaiah, rather than a mood of low self-esteem.",
+      "ot": [
+        { "ref": "Isaiah 61:1", "note": "The first beatitudes draw on Isaiah 61, where the anointed one is sent “to preach good news to the poor” (Hebrew 'anavim, ‘afflicted, humble’; Septuagint euangelisasthai ptōchois). Matthew's ptōchoi is the Septuagint's word. Jesus answers John the Baptist's question with the same text (Matthew 11:5), and in Luke reads it in the Nazareth synagogue as fulfilled (Luke 4:18-21). By echoing it here Jesus presents himself as the herald of Isaiah 61 and the poor as those to whom the promised good news has come." }
+      ],
+      "parallels": ["Luke 6:20"],
+      "text": "Luke's form is “Blessed are you who are poor” (Luke 6:20), second person and without ‘in spirit’, and it is followed by woes on the rich (6:24). Many interpreters think Luke keeps the economic sharpness and Matthew the religious sense; others note that in the Psalms and Isaiah the poor and the humble were already the same people.",
+      "theology": [
+        { "id": "kingdom", "note": "The kingdom is given, not achieved, and it is given first to those who come with nothing. The beatitude reverses the world's judgment of who is fortunate by making dependence on God, not strength, the mark of the kingdom's people." }
+      ],
+      "refs": ["Isaiah 66:2", "Psalm 34:18", "Isaiah 57:15", "Matthew 11:5"]
+    },
+    {
+      "v": "4",
+      "context": "Those who mourn will be comforted. The beatitude continues the Isaiah 61 pattern, where the anointed one comes ‘to comfort all who mourn’. The mourning includes grief over loss and grief over sin and the ruin of God's people.",
+      "grammar": "Penthountes is a present participle, ‘those who are mourning’, an ongoing condition. Paraklēthēsontai, ‘they will be comforted’, is a future passive. Grammarians call such passives with God as the unnamed agent ‘divine passives’: God is the one who will comfort. The verb parakaleō is the same one the Septuagint uses in Isaiah 40:1 (‘Comfort, comfort my people’) and 61:2.",
+      "words": ["G3996", "G3870"],
+      "text": "Some manuscripts, including Codex Bezae (D) and some Latin and Syriac witnesses, place this beatitude after the one on the meek, perhaps to put ‘poor’ and ‘meek’ together or ‘kingdom of heaven’ and ‘earth’ side by side. The major editions keep the order printed in English Bibles.",
+      "ot": [
+        { "ref": "Isaiah 61:2", "note": "The Hebrew of Isaiah 61:2 has lenachem kol-avelim, ‘to comfort all mourners’, and the Septuagint parakalesai pantas tous penthountas, which supplies both of Matthew's words (penthountes, paraklēthēsontai). In Isaiah the mourners are ‘the mourners in Zion’ (61:3), grieving the ruin of Jerusalem. Jesus announces that the promised comfort now reaches them through him." }
+      ],
+      "parallels": ["Luke 6:21"],
+      "refs": ["Isaiah 61:3", "Isaiah 40:1", "Revelation 21:4", "2 Corinthians 1:3-4"]
+    },
+    {
+      "v": "5",
+      "context": "The meek will inherit the earth. The beatitude is nearly a direct quotation of Psalm 37:11, a psalm that urges the faithful not to fret over the wicked, because the land will belong to those who wait for the LORD.",
+      "grammar": "Praeis, ‘meek’ or ‘gentle’, describes those who do not grasp or retaliate. It is the word Matthew uses of Jesus (11:29; 21:5, quoting Zechariah 9:9). Klēronomēsousin, ‘they will inherit’, is the language of Israel receiving Canaan as an inheritance, and tēn gēn can mean ‘the land’ or ‘the earth’. In Psalm 37 it is the land of Israel; in Matthew's usage the promise seems to widen to the renewed world (19:28).",
+      "words": ["G4235", "G2816", "G1093G"],
+      "ot": [
+        { "ref": "Psalm 37:11", "note": "The Hebrew reads va'anavim yirshu-arets, “But the meek will inherit the land” (Psalm 37:11), and the Septuagint (Psalm 36:11) hoi de praeis klēronomēsousin gēn. Matthew follows the Greek almost word for word, adding the article. The psalm contrasts the wicked, who seem to prosper and will be cut off, with the humble who wait for God (37:9, 11, 22, 29, 34). At Qumran the Psalm pesher (4Q171) applied the verse to the community it called the congregation of the poor. Jesus applies it to those who belong to his kingdom." }
+      ],
+      "theology": [
+        { "id": "new-creation", "note": "The promised inheritance is not escape from the world but the earth itself. Read with 19:28 (‘the renewal of all things’) and Romans 4:13, the beatitude points to a renewed creation given to the humble." }
+      ],
+      "refs": ["Psalm 37:9", "Matthew 11:29", "Matthew 19:28", "Romans 4:13"]
+    },
+    {
+      "v": "6",
+      "context": "Those who hunger and thirst for righteousness will be filled. The image of hunger continues Isaiah's invitations to the thirsty, and the object, righteousness, introduces Matthew's key word, which returns in verses 10 and 20 and in 6:1 and 6:33.",
+      "grammar": "Peinōntes kai dipsōntes are present participles, a continuing desire rather than a single craving. Unusually, the verbs take a direct object in the accusative (tēn dikaiosynēn) rather than the more common genitive, which some grammarians take to mean a desire for the whole of righteousness. Dikaiosynē is debated. Many Protestant interpreters, following Luther, read it as the righteousness God gives; most recent commentators, including Benno Przybylski (Righteousness in Matthew and His World of Thought, 1980) and Ulrich Luz, argue that in Matthew it means conduct that accords with God's will, while others include God's saving justice being set right in the world. Chortasthēsontai, ‘they will be filled’, is used of animals fed to the full, and again it is a divine passive.",
+      "words": ["G3983", "G1372", "G1343", "G5526"],
+      "parallels": ["Luke 6:21"],
+      "theology": [
+        { "id": "sanctification", "note": "The desire for righteousness is itself blessed, and the filling is God's work. The verse keeps together a longing for a right life and the promise that God will satisfy it, which is why it has served both as a comfort to the guilty and a spur to the complacent." }
+      ],
+      "refs": ["Isaiah 55:1-2", "Psalm 107:9", "Psalm 42:1-2", "Matthew 6:33"]
+    },
+    {
+      "v": "7-8",
+      "context": "The merciful will receive mercy, and the pure in heart will see God. The first ties the disciple's conduct to God's treatment of him, a theme the Lord's Prayer (6:12, 14-15) and the parable of the unforgiving servant (18:21-35) develop. The second promises the highest gift of all, the vision of God.",
+      "grammar": "Eleēmones, ‘merciful’, and eleēthēsontai, ‘they will be shown mercy’, repeat the same root, a reciprocity also stated in James 2:13. Katharoi tē kardia, ‘pure in heart’, uses the same dative of respect as ‘poor in spirit’: purity located in the heart, the center of will and thought in biblical anthropology, not merely in ritual. Opsontai, ‘they will see’, is future; in the Old Testament no one could see God and live (Exodus 33:20), and the promise looks to the age to come.",
+      "words": ["G1655", "G1653", "G2513", "G2588", "G3700G"],
+      "ot": [
+        { "ref": "Psalm 24:4", "note": "Psalm 24 asks who may ascend the LORD's hill and stand in his holy place, and answers: “He who has clean hands and a pure heart” (Psalm 24:4). The Septuagint (Psalm 23:4) has katharos tē kardia, Matthew's exact phrase in the singular. Where the psalm speaks of entering the temple, the beatitude promises seeing God himself. Psalm 73:1 also speaks of God's goodness to ‘the pure in heart’." }
+      ],
+      "theology": [
+        { "id": "hope", "note": "Seeing God is the goal of human life in the biblical hope (Revelation 22:4; 1 John 3:2). The church later called it the beatific vision, a name taken from this beatitude's promise." }
+      ],
+      "refs": ["James 2:13", "Matthew 18:33", "Psalm 73:1", "1 John 3:2", "Hebrews 12:14"]
+    },
+    {
+      "v": "9",
+      "context": "Peacemakers will be called sons of God. The beatitude blesses not those who love peace but those who make it, and it anticipates verse 45, where loving enemies makes disciples sons of the Father.",
+      "grammar": "Eirēnopoioi, ‘peacemakers’, occurs only here in the New Testament; the related verb appears in Colossians 1:20 of Christ making peace through the blood of his cross. Klēthēsontai, ‘they will be called’, is another divine passive: God will name them his sons. In the Old Testament Israel is God's son (Exodus 4:22; Hosea 11:1), and Hosea 1:10 promises that those called ‘not my people’ will be called sons of the living God.",
+      "words": ["G1518", "G5207", "G2564G"],
+      "theology": [
+        { "id": "image", "note": "The title ‘sons of God’ is given to those who share God's own work of reconciliation. Sonship here is shown in likeness: those who make peace resemble the God of peace." }
+      ],
+      "refs": ["Colossians 1:20", "Hosea 1:10", "Romans 12:18", "James 3:18"]
+    },
+    {
+      "v": "10-12",
+      "context": "The eighth beatitude closes the frame with the same promise as the first, the kingdom of heaven. Then Jesus turns to ‘you’: the disciples will be insulted and persecuted because of him, and should rejoice, since the prophets were treated the same way.",
+      "grammar": "Dediōgmenoi is a perfect passive participle, ‘those who have been persecuted’, which may reflect the experience of Matthew's church looking back. Heneka dikaiosynēs, ‘because of righteousness’ (verse 10), becomes heneken emou, ‘because of Me’ (verse 11): loyalty to righteousness and loyalty to Jesus are treated as the same cause, a claim the prophets reserved for God. The shift from third person (verses 3-10) to second person (verses 11-12) applies the blessings directly to the listeners. Chairete kai agalliasthe, ‘rejoice and be glad’, are present imperatives; agalliaomai is exultant joy.",
+      "words": ["G1377", "G1343", "G1752", "G3679", "G5463", "G0021", "G3408"],
+      "text": "Pseudomenoi, ‘falsely’ (verse 11), is missing from Codex Bezae and some Latin and Syriac witnesses but is in the great majority of manuscripts, and the major editions print it. The qualification matters: the blessing is for those slandered falsely, not for those rightly accused.",
+      "history": "The persecution of prophets was a familiar theme in Jewish tradition: Jeremiah beaten and put in stocks (Jeremiah 20:2), Zechariah son of Jehoiada stoned in the temple court (2 Chronicles 24:20-22), and Uriah killed by King Jehoiakim (Jeremiah 26:20-23). Jesus returns to the theme in his woes on the scribes and Pharisees (Matthew 23:29-37).",
+      "parallels": ["Luke 6:22-23"],
+      "theology": [
+        { "id": "suffering", "note": "Suffering for Christ is not a sign of God's absence but a mark of belonging to the prophets' company, with a reward held in heaven. Joy is commanded in the middle of it, not only after it." },
+        { "id": "kingdom", "note": "The repeated promise ‘theirs is the kingdom of heaven’ brackets all eight beatitudes, so every quality between them describes the kingdom's people." }
+      ],
+      "refs": ["2 Chronicles 24:20-22", "Matthew 23:34-37", "Acts 5:41", "1 Peter 4:13-14"]
+    },
+    {
+      "v": "13",
+      "context": "Jesus moves from who the disciples are to what they are for. ‘You are the salt of the earth’ is a statement, not an exhortation, and it is followed at once by a warning: salt that has lost its savor is useless.",
+      "grammar": "Hymeis este, ‘you are’, puts the pronoun first for emphasis: you, these poor and persecuted people. Mōranthē, ‘loses its savor’, is from mōrainō, which ordinarily means ‘to become foolish’ (Romans 1:22). Many scholars think the saying reflects a Hebrew or Aramaic word (tafel) that could mean both ‘tasteless’ and ‘foolish’, so that tasteless salt and foolish disciples are one image. Halisthēsetai, ‘will it be salted’, is future passive, and the answer implied is ‘by nothing’.",
+      "words": ["G0217", "G3471", "G0233", "G2662"],
+      "history": "Pure sodium chloride cannot lose its saltiness, but the salt gathered from the Dead Sea region was mixed with other minerals, and when damp the salt could leach out, leaving a useless residue that was thrown on paths. A rabbinic story in the Talmud (b. Bekhorot 8b) has Rabbi Joshua ben Hananiah asked what salt that has lost its savor is salted with, a sign that the riddle was proverbial.",
+      "parallels": ["Mark 9:50", "Luke 14:34-35"],
+      "theology": [
+        { "id": "mission", "note": "The disciples' role in the world is given with their identity. Salt preserves and seasons only by contact, and a people that loses its distinctiveness loses its usefulness." }
+      ],
+      "refs": ["Leviticus 2:13", "Colossians 4:6", "Mark 9:49-50"]
+    },
+    {
+      "v": "14-16",
+      "context": "The second image: the disciples are the light of the world, a city on a hill, a lamp on its stand. The point is visibility, and verse 16 names the purpose: that others may see their good works and glorify the Father in heaven.",
+      "grammar": "Again hymeis este, ‘you are’. The light is not the disciples' own; their works are to cause people to glorify ‘your Father’, the first time in Matthew that Jesus calls God the disciples' Father. Modios, ‘basket’, is a Latin loanword (modius) for a grain measure of about nine liters, which could be turned over a lamp to put it out. Lampsatō is an aorist imperative in the third person, ‘let it shine’. Kala erga, ‘good works’, uses kalos, good in the sense of attractive or noble.",
+      "words": ["G5457", "G2889", "G4172", "G3426", "G3087", "G2989", "G2570G", "G1392"],
+      "history": "Isaiah called the Servant and Israel ‘a light to the nations’ (Isaiah 42:6; 49:6) and pictured Zion raised above the hills with the nations streaming to it (Isaiah 2:2). The phrase ‘city on a hill’ entered American history through John Winthrop's sermon ‘A Model of Christian Charity’ (1630), preached to Puritan colonists bound for Massachusetts, who applied it to their settlement; later politicians took it up as a national image, far from its sense here.",
+      "parallels": ["Mark 4:21", "Luke 8:16", "Luke 11:33"],
+      "theology": [
+        { "id": "mission", "note": "What Isaiah said of Israel and the Servant, Jesus says of his disciples. Their visible life is meant to bring glory to God, not to themselves, a purpose 6:1-18 guards against by forbidding religion performed to be seen." },
+        { "id": "israel", "note": "The disciples take up Israel's calling to be light to the nations. Jesus, whom John calls the light of the world (John 8:12), makes his followers bearers of the same light." }
+      ],
+      "refs": ["Isaiah 42:6", "Isaiah 49:6", "Isaiah 2:2", "John 8:12", "Philippians 2:15"]
+    },
+    {
+      "v": "17",
+      "context": "The thesis of the sermon's central section. Jesus heads off a misunderstanding: he has not come to abolish the Law or the Prophets, but to fulfill them. Verses 18-20 explain, and the six antitheses of verses 21-48 show what fulfilling looks like.",
+      "grammar": "Mē nomisēte, ‘do not think’, uses an aorist subjunctive for a prohibition that forestalls an idea not yet held. Ēlthon, ‘I have come’, speaks of Jesus' mission as a coming, language that implies he was sent (compare 10:34; 20:28). Katalysai, ‘to abolish’, means to tear down or annul; Matthew uses it of destroying the temple (24:2; 26:61). Plērōsai, ‘to fulfill’, is Matthew's word for prophecy coming true (1:22; 2:15), and many interpreters think that sense governs here: the Law and the Prophets together point forward, and Jesus is what they point to. Others stress that he fulfills the law by obeying it perfectly, or by teaching its full intent, as the antitheses do. The readings are not exclusive, and commentators such as W. D. Davies and Dale Allison (International Critical Commentary, 1988) hold several together.",
+      "words": ["G3543", "G2064", "G2647", "G4137", "G3551", "G4396"],
+      "history": "Augustine devoted much of his reply to Faustus the Manichean (Against Faustus, books 17-19) to this verse, since Faustus argued that it could not be a genuine saying of Jesus. The Babylonian Talmud (b. Shabbat 116a-b) contains a satirical story in which a Christian judge cites a saying from ‘the gospel’ that he came neither to take away from the law of Moses nor to add to it, a rare echo of Matthew in rabbinic literature.",
+      "theology": [
+        { "id": "law", "note": "Jesus places himself as the goal of the whole Old Testament, ‘the Law or the Prophets’. The law is neither discarded nor left unchanged: it is brought to what it was always aiming at, in his teaching and in his person." }
+      ],
+      "refs": ["Romans 3:31", "Romans 10:4", "Luke 24:44", "Matthew 11:13"]
+    },
+    {
+      "v": "18",
+      "context": "Jesus backs the thesis with a solemn oath: not the smallest letter or stroke of the law will pass away until heaven and earth pass and everything happens. The verse rules out any reading of verse 17 that treats the law as disposable.",
+      "grammar": "Amēn legō hymin, ‘truly I tell you’, is characteristic of Jesus: he puts ‘amen’ at the start of a statement, where Jewish usage put it at the end to affirm another's words, so that he vouches for his own words. Iōta hen ē mia keraia: the iota, the smallest Greek letter, stands for the Hebrew yod, the smallest letter of the square script, and keraia, ‘little horn’, the small stroke that distinguishes letters such as bet and kaf. Ou mē parelthē uses the double negative with the aorist subjunctive, the strongest form of denial in Greek. Two ‘until’ clauses (heōs an) set the limit: until heaven and earth pass away, and until all things take place (genētai). Interpreters differ on the second: some take it as the end of the age, others as the accomplishment of Jesus' mission in his death and resurrection (compare 24:34-35; 28:18-20).",
+      "words": ["G0281", "G2503", "G2762", "G3928", "G1096"],
+      "parallels": ["Luke 16:17"],
+      "theology": [
+        { "id": "revelation", "note": "The verse gives the Scriptures of Israel lasting authority down to their smallest part. Whatever changes the coming of Christ brings to how the law is kept, it comes through fulfillment, never by treating any of it as mistaken." }
+      ],
+      "refs": ["Luke 16:17", "Matthew 24:35", "Isaiah 40:8", "Psalm 119:89"]
+    },
+    {
+      "v": "19",
+      "context": "The consequence for teachers: whoever loosens even the least commandment and teaches others to do so will be least in the kingdom; whoever does and teaches them will be great. The standing of teachers is measured by their practice.",
+      "grammar": "Oun, ‘so then’, draws the conclusion from verse 18. Lysē, ‘loosens’ or ‘annuls’, is the root of katalysai in verse 17; to relax a command in teaching is a small version of abolishing the law. Elachistōn, ‘least’, is picked up in elachistos, ‘least’, in the kingdom: the punishment fits the offense. Poiēsē kai didaxē, ‘does and teaches’, puts doing first.",
+      "words": ["G3089", "G1785", "G1646", "G4160G", "G1321"],
+      "history": "Jewish teachers distinguished between ‘light’ and ‘heavy’ commandments, and the Mishnah urges care over a light commandment as over a weighty one, since the reward of each is unknown (m. Avot 2:1, attributed to Rabbi Judah the Prince). Jesus uses the same distinction and reaches a similar conclusion, while elsewhere naming justice, mercy, and faithfulness as the weightier matters (Matthew 23:23).",
+      "refs": ["Matthew 23:23", "James 2:10", "James 3:1", "Matthew 28:20"]
+    },
+    {
+      "v": "20",
+      "context": "The demand that governs the rest of the chapter: unless the disciples' righteousness exceeds that of the scribes and Pharisees, they will never enter the kingdom. The antitheses that follow show what ‘exceeding’ means: not more rules, but righteousness that reaches the heart.",
+      "grammar": "Perisseusē... pleion, ‘abounds... more than’, doubles the idea of excess; the same root returns in verse 47 (ti perisson poieite, ‘what are you doing more?’), which frames the antitheses. Ou mē eiselthēte, ‘you will certainly not enter’, is the emphatic negation again. Dikaiosynē here clearly refers to the disciples' own conduct, since it is compared with that of the scribes and Pharisees.",
+      "words": ["G4052", "G4119", "G1343", "G1122", "G5330", "G1525"],
+      "history": "The scribes were experts in the law, and the Pharisees were a lay movement known, according to Josephus (Antiquities 13.297), for keeping traditions of the fathers beyond the written law. They were widely respected for their piety, which is why the demand to exceed their righteousness would have startled Jesus' hearers.",
+      "theology": [
+        { "id": "justification", "note": "Protestant interpreters have often read the verse as showing that only a righteousness given by God (imputed righteousness) can meet the standard, while Catholic and many recent interpreters stress that Matthew means a transformed life. Both sides agree that Jesus requires more than outward observance; they differ on how that righteousness comes to be and how it relates to Paul's teaching (Romans 3:21-26; Philippians 3:9)." }
+      ],
+      "refs": ["Matthew 23:23-28", "Philippians 3:9", "Romans 10:3", "Matthew 6:1"]
+    },
+    {
+      "v": "21",
+      "context": "The first antithesis. Jesus quotes the sixth commandment and a summary of its penalty, then (verse 22) traces murder back to anger and contempt. Each antithesis follows the same pattern: what was said, then ‘but I tell you’.",
+      "grammar": "Ēkousate, ‘you have heard’, points to hearing the law read aloud in the synagogue. Errethē tois archaiois is ‘it was said to the ancients’, with a dative of the persons addressed, the Sinai generation; the KJV's ‘by them of old time’ misreads the dative. The passive errethē may be a divine passive, God having said it at Sinai. Ou phoneuseis, ‘you shall not murder’, is a future indicative used as a command, the Septuagint's way of rendering Hebrew prohibitions. Enochos, ‘liable’, is a legal term. Krisis, ‘judgment’, probably means a local court (Deuteronomy 16:18).",
+      "words": ["G0191", "G2046", "G0744", "G5407", "G1777", "G2920"],
+      "ot": [
+        { "ref": "Exodus 20:13", "note": "The Hebrew lo tirtsach, “You shall not murder,” uses ratsach, the verb for unlawful killing, and the Septuagint renders it ou phoneuseis, the form Matthew quotes (also Deuteronomy 5:17). Codex Vaticanus of the Septuagint puts the command against adultery before this one, an order Luke 18:20, Romans 13:9, and James 2:11 also reflect; Matthew follows the Hebrew order, murder then adultery, as in 5:21-30 and 19:18. The second clause, ‘anyone who murders will be subject to judgment’, is not a quotation but a summary of the penalties in Exodus 21:12, Leviticus 24:17, and Numbers 35:12." }
+      ],
+      "theology": [
+        { "id": "law", "note": "Jesus does not quote the commandment in order to loosen it but to trace it to its root. The antithesis contrasts not Moses and Jesus but a reading of the law that stops at the outward act and one that reaches the heart." }
+      ],
+      "refs": ["Exodus 20:13", "Deuteronomy 5:17", "Numbers 35:12", "1 John 3:15"]
+    },
+    {
+      "v": "22",
+      "context": "Anger toward a brother already stands under judgment, and insulting words bring a sentence from the highest court and finally the fire of Gehenna. The escalation is rhetorical: from local court to Sanhedrin to hell, the stakes of contempt rise to the ultimate.",
+      "grammar": "Orgizomenos, ‘being angry’, is a present participle, anger held and nursed. Rhaka transliterates an Aramaic word, probably reqa, ‘empty one’, ‘empty-head’. Mōre, ‘fool’, is Greek. Some have suggested it echoes the Hebrew moreh, ‘rebel’ (compare Numbers 20:10), but most take it as the ordinary Greek insult. Gehenna tou pyros, ‘the Gehenna of fire’, names the Valley of Hinnom, where children had been burned in sacrifice (Jeremiah 7:31), which became the name for the place of final judgment. The three-step structure (anger, Raca, fool; judgment, Sanhedrin, Gehenna) may be deliberately exaggerated to show that no degree of contempt is trivial.",
+      "words": ["G3710", "G0080", "G4469", "G4892", "G3474", "G1067", "G4442"],
+      "text": "Most later manuscripts, and so the KJV, read ‘angry with his brother without a cause’ (eikē). The word is absent from Codex Sinaiticus in its original hand, Codex Vaticanus, and probably the early papyrus P64 (with P67), and Jerome noted that it was missing from the better manuscripts. Most modern editors judge it a scribal softening. Some defenders of the longer reading argue that it was removed because it seemed to permit anger. The difference matters: with ‘without a cause’ the saying condemns unjustified anger; without it, it warns against anger toward a brother as such, while Jesus' own anger (Mark 3:5) shows that not every anger is sin.",
+      "theology": [
+        { "id": "judgment", "note": "Jesus locates murder in the heart, so that contempt is already guilty before God. The warning of Gehenna is attached not to killing but to insult, which shows how seriously he treats words spoken to diminish a person." }
+      ],
+      "refs": ["1 John 3:15", "James 3:6", "Ephesians 4:26", "Mark 3:5", "Jeremiah 7:31"]
+    },
+    {
+      "v": "23-24",
+      "context": "The first of two illustrations: if you are at the altar and remember that your brother has something against you, leave the offering, be reconciled, then come back. Worship waits for reconciliation.",
+      "grammar": "Oun, ‘so’, applies verse 22. Prospherēs is present subjunctive, ‘if you are in the act of offering’. The grievance is the brother's: ‘your brother has something against you’, not the reverse, so the worshiper is to take the initiative even when he is the one accused. Diallagēthi, ‘be reconciled’, an aorist passive imperative, occurs only here in the New Testament. Prōton, ‘first’, sets the order: the brother, then the altar.",
+      "words": ["G4374", "G1435", "G2379", "G3403", "G0863G", "G1259", "G4413G"],
+      "history": "The scene assumes the Jerusalem temple still stands. For a Galilean, the altar was several days' walk away, which makes the command to leave the gift and go home first deliberately dramatic. The Mishnah teaches the same priority: the Day of Atonement atones for sins between a person and God, but for sins between a person and his neighbor it does not atone until he has made peace with his neighbor (m. Yoma 8:9).",
+      "theology": [
+        { "id": "worship", "note": "Worship offered while a brother's grievance is ignored is out of order. Jesus stands in the prophets' tradition that God does not want sacrifice without justice and mercy (Hosea 6:6; Amos 5:21-24), which Matthew quotes twice (9:13; 12:7)." }
+      ],
+      "refs": ["Hosea 6:6", "Matthew 9:13", "Amos 5:21-24", "Mark 11:25"]
+    },
+    {
+      "v": "25-26",
+      "context": "The second illustration: settle quickly with your legal opponent on the road to court, or you may be handed to the judge, the officer, and prison, with no release until the last coin is paid. The urgency of reconciliation is also an image of standing before God's judgment.",
+      "grammar": "Isthi eunoōn, ‘be well-disposed’, is a present imperative with a participle, ‘come to terms’, ‘make friends’. Antidikos is the opponent in a lawsuit (1 Peter 5:8 uses it of the devil). Tacheu, ‘quickly’, and heōs hotou, ‘while’, press the time limit. The sequence of handing over (paradō... ho kritēs tō hypēretē) builds momentum. Ou mē exelthēs, ‘you will certainly not come out’, is again the emphatic negation.",
+      "words": ["G2132", "G0476", "G5036", "G2923", "G5257", "G5438G", "G2835"],
+      "history": "Imprisonment for debt was a Greek and Roman practice rather than a provision of Jewish law, so the scene reflects the courts of the Roman world. The kodrantēs is the Latin quadrans, the smallest Roman bronze coin, a quarter of an as and one sixty-fourth of a denarius; Mark 12:42 says the widow's two small coins made a quadrans. Luke's parallel uses the even smaller lepton (Luke 12:59). Tertullian (On the Soul 58) read the prison as the place of the dead and the last coin as small faults, an early instance of the verse being drawn into the discussion that later produced the doctrine of purgatory; most Protestant and many Catholic commentators take the saying as a parable of urgency rather than a teaching about the afterlife.",
+      "parallels": ["Luke 12:57-59"],
+      "refs": ["Luke 12:58-59", "Matthew 18:34-35", "Proverbs 25:8", "2 Corinthians 6:2"]
+    },
+    {
+      "v": "27-28",
+      "context": "The second antithesis. Jesus quotes the seventh commandment, then locates adultery in the look that desires. The next two verses show how drastically the desire must be resisted.",
+      "grammar": "Ou moicheuseis, ‘you shall not commit adultery’, is the Septuagint's future used as a command (Exodus 20:14). Pas ho blepōn gynaika pros to epithymēsai autēn uses pros with the infinitive to express purpose: ‘everyone who looks at a woman in order to desire her’. The look is not a glance but a look aimed at possessing. Epithymeō is the verb of the tenth commandment in the Septuagint, ‘you shall not covet (ouk epithymēseis) your neighbor's wife’ (Exodus 20:17), so Jesus joins the seventh and tenth commandments. Ēdē emoicheusen, ‘has already committed adultery’, is an aorist: the act is complete in the heart.",
+      "words": ["G3431", "G0991", "G1135G", "G1937", "G2235", "G2588"],
+      "ot": [
+        { "ref": "Exodus 20:14", "note": "The Hebrew lo tin'af, “You shall not commit adultery,” is rendered ou moicheuseis in the Septuagint, the words Matthew quotes (also Deuteronomy 5:18). Jesus reads it together with Exodus 20:17, “You shall not covet your neighbor's wife”, whose Greek verb, epithymeō, reappears in verse 28. Job had already made a covenant with his eyes not to gaze with desire (Job 31:1), so Jesus' teaching draws out a direction already present in the Old Testament." }
+      ],
+      "theology": [
+        { "id": "sin", "note": "Sin begins in the heart before it reaches the act. The verse does not condemn attraction as such but the look directed toward taking what belongs to another, and it applies to men the responsibility that ancient societies often placed on women." }
+      ],
+      "refs": ["Exodus 20:17", "Job 31:1", "Proverbs 6:25", "James 1:14-15"]
+    },
+    {
+      "v": "29-30",
+      "context": "Two shocking commands: if your right eye or right hand causes you to sin, tear it out or cut it off, because losing a part is better than losing the whole body in Gehenna. The eye picks up the look of verse 28; the hand, the act.",
+      "grammar": "Skandalizei, ‘causes to stumble’, comes from skandalon, the trigger stick of a trap: the eye or hand becomes the snare. The imperatives exele and ekkopson, ‘tear out’ and ‘cut off’, are aorists demanding decisive action. Sympherei gar soi hina, ‘it is better for you that’, weighs loss against loss. ‘Right’ eye and hand are the more valued, making the cost as high as possible. Nearly all interpreters since the early church take the language as hyperbole, a vivid demand to remove whatever leads to sin, not as a command to self-mutilation.",
+      "words": ["G3788", "G1188", "G4624", "G1807", "G1581", "G4851", "G1067"],
+      "history": "Hyperbole about cutting off a hand was also used by Jewish teachers: the Mishnah says of a man's hand that often touches below the belt that it should be cut off (m. Niddah 2:1). Matthew repeats the saying in a different setting, about causing little ones to stumble (Matthew 18:8-9), as does Mark 9:43-47.",
+      "parallels": ["Matthew 18:8-9", "Mark 9:43-47"],
+      "theology": [
+        { "id": "sanctification", "note": "Holiness requires decisive action against whatever leads to sin, even when it costs something precious. The warning is grounded in the reality of final judgment, which Jesus treats as serious enough to justify any loss." }
+      ],
+      "refs": ["Matthew 18:8-9", "Colossians 3:5", "Romans 8:13", "Hebrews 12:1"]
+    },
+    {
+      "v": "31-32",
+      "context": "The third antithesis, shorter than the others and closely tied to the second. Jesus cites the Mosaic provision for a certificate of divorce, then declares that divorce, except for sexual immorality, makes the woman an adulteress, and that marrying a divorced woman is adultery. Matthew 19:3-9 returns to the subject at length.",
+      "grammar": "Errethē de, ‘it was also said’, is the shortened form of the introduction. Apostasion, ‘certificate of divorce’, is the Septuagint's word (Deuteronomy 24:1). Parektos logou porneias, ‘except for a matter of sexual immorality’, echoes, in reversed order, the Hebrew ervat davar, ‘a matter of indecency’, in Deuteronomy 24:1, so Jesus is taking a side in the contemporary debate over that phrase. Porneia is a broad word for sexual immorality. Poiei autēn moicheuthēnai, ‘makes her commit adultery’ or ‘makes her an adulteress’, uses a passive infinitive: in a world where a divorced woman would normally remarry to survive, the husband who divorces her is responsible for what follows.",
+      "words": ["G0630H", "G0647", "G3924", "G4202", "G3431", "G0620", "G1060"],
+      "history": "The Mishnah records the debate (m. Gittin 9:10): the school of Shammai allowed divorce only for sexual unchastity, reading Deuteronomy 24:1 as ‘a matter of indecency’; the school of Hillel allowed it even if she spoiled his food; and Rabbi Akiva allowed it if he found another woman more beautiful. The Damascus Document from Qumran (CD 4:20-21) condemns taking a second wife while the first lives.",
+      "ot": [
+        { "ref": "Deuteronomy 24:1", "note": "Deuteronomy 24:1-4 does not command divorce; it regulates it, requiring a written certificate and forbidding a man to remarry a wife he divorced who has since married another. The certificate protected the woman by proving she was free. The Septuagint's biblion apostasiou gives Matthew his term. Jesus treats the provision as a concession to hardness of heart (19:8) and appeals behind it to creation (Genesis 1:27; 2:24)." }
+      ],
+      "parallels": ["Matthew 19:9", "Mark 10:11-12", "Luke 16:18"],
+      "text": "Mark and Luke give the saying without an exception, and Paul cites the Lord's command without one (1 Corinthians 7:10-11). Codex Bezae and some other witnesses omit the last clause of verse 32 (‘and he who marries a divorced woman commits adultery’), but the major editions include it.",
+      "theology": [
+        { "id": "family", "note": "Christians differ on the exception. Most Protestants, following Erasmus and the Reformers (Westminster Confession 24.5), read porneia as adultery and allow divorce and remarriage in that case. Others limit porneia to unlawful marriages within forbidden degrees (Leviticus 18; Acts 15:20), a view argued by Joseph Fitzmyer and common in Catholic interpretation, or to unfaithfulness during betrothal. The early church largely permitted separation but not remarriage; the Orthodox churches allow remarriage by pastoral concession. All agree that Jesus treats marriage as a lifelong bond and divorce as a breach of God's design." }
+      ],
+      "refs": ["Genesis 2:24", "Malachi 2:14-16", "Matthew 19:3-9", "1 Corinthians 7:10-15"]
+    },
+    {
+      "v": "33",
+      "context": "The fourth antithesis begins with the full formula again (‘again, you have heard that it was said to the ancients’), marking the start of the second set of three. The quoted command summarizes the law on oaths and vows: do not swear falsely, and keep what you swear to the Lord.",
+      "grammar": "Ouk epiorkēseis means ‘you shall not swear falsely’ or ‘you shall not break your oath’; epiorkeō covers both perjury and failure to keep a sworn promise. Apodōseis... tous horkous sou, ‘you shall pay your oaths’, uses the language of paying a debt, as in the Septuagint of Psalm 50:14 (apodos tō hypsistō tas euchas sou, ‘pay your vows to the Most High’).",
+      "words": ["G1964", "G0591", "G3727", "G2962G"],
+      "ot": [
+        { "ref": "Leviticus 19:12", "note": "The quotation is a summary rather than a single verse. Leviticus 19:12 says, “You must not swear falsely by My name and so profane the name of your God.” Numbers 30:2 requires a man who makes a vow to the LORD not to break his word, and Deuteronomy 23:21 not to be slow to keep a vow. Matthew's wording combines these with the Septuagint's language of paying vows (Psalm 50:14)." }
+      ],
+      "refs": ["Numbers 30:2", "Deuteronomy 23:21", "Psalm 50:14", "Ecclesiastes 5:4-5"]
+    },
+    {
+      "v": "34-36",
+      "context": "Jesus forbids swearing at all, and then names the substitutes people used to make an oath seem less binding: heaven, earth, Jerusalem, one's own head. Each belongs to God, so swearing by it is swearing by God, and none is in the swearer's control.",
+      "grammar": "Mē omosai holōs, ‘not to swear at all’, uses an aorist infinitive with the emphatic adverb holōs. The oaths are introduced with en, ‘by’, and eis Hierosolyma, ‘toward Jerusalem’, perhaps reflecting a practice of swearing while facing the city. Each is followed by hoti, ‘because’, giving the reason it cannot be a lesser oath. The last reason is homely: you cannot make one hair white or black, so your head is not yours to pledge.",
+      "words": ["G3660", "G3654", "G2362", "G5286", "G2414", "G0935", "G2359"],
+      "history": "Jewish law distinguished binding from nonbinding oath formulas. The Mishnah (m. Shevuot 4:13) says that one who adjures by heaven and earth is not liable, and the tractate Nedarim discusses substitute words for vows. Jesus condemns the same evasions in 23:16-22, where the scribes rule that swearing by the temple is nothing but swearing by its gold is binding.",
+      "ot": [
+        { "ref": "Isaiah 66:1", "note": "“Heaven is My throne, and earth is My footstool” (Isaiah 66:1) supplies the first two reasons; the Septuagint's thronos and hypopodion are Matthew's words. The third, ‘the city of the great King’, comes from Psalm 48:2, where Mount Zion is “the city of the great King” (Septuagint Psalm 47:3, polis tou basileōs tou megalou). The great King is God, not an earthly ruler." }
+      ],
+      "refs": ["Isaiah 66:1", "Psalm 48:2", "Matthew 23:16-22", "Acts 7:49"]
+    },
+    {
+      "v": "37",
+      "context": "The positive command: let your word be simply yes or no. Anything more comes from evil. Honest speech makes oaths unnecessary.",
+      "grammar": "Estō de ho logos hymōn, ‘let your word be’, is a present imperative. The doubled nai nai, ou ou, ‘yes, yes; no, no’, means a plain yes and a plain no. To perisson toutōn, ‘what is more than these’, is the same word of excess as in verses 20 and 47, now used negatively. Ek tou ponērou is ambiguous, since the genitive can be masculine, ‘from the evil one’ (BSB), or neuter, ‘from evil’, the same ambiguity found in the Lord's Prayer (6:13).",
+      "words": ["G3483", "G4053", "G4190"],
+      "theology": [
+        { "id": "church", "note": "Christians have applied this command differently. The Anabaptist Schleitheim Confession (1527, article 7) and later the Quakers refused all oaths. Augustine, the Reformers, and most churches (Thirty-Nine Articles, article 39; Westminster Confession 22) permit solemn oaths before a magistrate, noting that God swears (Hebrews 6:13-17) and Paul calls God as witness (Romans 1:9; Galatians 1:20), and read Jesus as forbidding the careless and evasive swearing of daily speech." }
+      ],
+      "refs": ["James 5:12", "2 Corinthians 1:17-20", "Hebrews 6:16-17", "Matthew 6:13"]
+    },
+    {
+      "v": "38",
+      "context": "The fifth antithesis quotes the law of retaliation, ‘eye for eye and tooth for tooth’. In the law it was a principle for judges, limiting punishment to what fit the injury.",
+      "grammar": "Ophthalmon anti ophthalmou, ‘eye for eye’, uses anti, ‘in place of’, the preposition of exchange, in the accusative as in the Septuagint of Exodus 21:24. The quotation is compressed to its most famous phrase.",
+      "words": ["G3788", "G0473", "G3599"],
+      "history": "The principle of proportionate penalty is older than Israel's law: the Code of Hammurabi (about 1750 BC, sections 196-197) prescribes that one who destroys the eye of a free man shall lose his own eye. In Israel the rule was given to judges (Deuteronomy 19:18-21) and so restrained private revenge. By Jesus' day Jewish law generally applied it through monetary compensation; the Mishnah lists five payments for bodily injury (m. Bava Qamma 8:1), and the Talmud argues that ‘eye for eye’ means money (b. Bava Qamma 83b-84a).",
+      "ot": [
+        { "ref": "Exodus 21:24", "note": "The phrase appears three times in the law: Exodus 21:24 (“eye for eye, tooth for tooth, hand for hand, foot for foot”), Leviticus 24:20, and Deuteronomy 19:21. Each is set in the context of courts and penalties, not personal response. Jesus does not deny that courts must do justice; he addresses the disciple who is tempted to use the principle to justify personal retaliation." }
+      ],
+      "refs": ["Exodus 21:23-25", "Leviticus 24:19-20", "Deuteronomy 19:21", "Romans 12:17-19"]
+    },
+    {
+      "v": "39",
+      "context": "Jesus forbids resisting the evil person and gives the first example: if struck on the right cheek, turn the other also. The examples that follow (verses 40-42) all involve personal wrongs and personal rights.",
+      "grammar": "Mē antistēnai tō ponērō, ‘not to resist the evil one’, has a dative that can be masculine (‘the evil person’, BSB) or neuter (‘evil’, KJV). The masculine fits the examples that follow, and the rest of the New Testament tells believers to resist the devil (James 4:7; Ephesians 6:13), so the command is not a general call to passivity before evil. Antistēmi can have a legal sense, ‘to oppose in court’, and a military sense. Walter Wink argued that it means ‘do not resist violently’, and that the examples are forms of creative, nonviolent protest; others see them as simply renouncing one's right to retaliate. Rhapizei, ‘slaps’, is a blow with the hand. A right-handed blow to the right cheek would be backhanded.",
+      "words": ["G0436", "G4190", "G4474", "G1188", "G4600", "G4762"],
+      "history": "The Mishnah (m. Bava Qamma 8:6) sets a fine for slapping a person and doubles it for a blow with the back of the hand, showing that a backhanded slap was treated as a grave insult rather than an injury. When Jesus himself was struck before the high priest, he protested the injustice (John 18:22-23), which suggests that turning the cheek is not silent consent to wrong.",
+      "parallels": ["Luke 6:29"],
+      "theology": [
+        { "id": "state", "note": "Christians have read the command in different ways: as forbidding all use of force (Anabaptists, Mennonites, and many early Christian writers), as governing personal relations but not the magistrate's duty to restrain evil (Augustine, Luther's two kingdoms, and the Reformed tradition, citing Romans 13:4), or as calling for active nonviolent resistance (Wink, Martin Luther King Jr.). All agree it forbids personal revenge." }
+      ],
+      "refs": ["Isaiah 50:6", "Lamentations 3:30", "John 18:22-23", "Romans 12:17-21", "1 Peter 2:23"]
+    },
+    {
+      "v": "40-42",
+      "context": "Three more examples: give the cloak to the one who sues for your tunic; go two miles with the one who forces you to go one; give to the one who asks and do not turn away the borrower. Each goes beyond what is demanded.",
+      "grammar": "Tō thelonti soi krithēnai, ‘the one who wants to go to law with you’, sets the scene in court. The chitōn was the inner garment and the himation the outer cloak. Angareusei, ‘will compel’, is a loanword from Persian, where the angaroi were the royal couriers who could requisition men and animals; the same verb describes Simon of Cyrene being forced to carry Jesus' cross (27:32). Milion is the Roman mile, a thousand paces, about 1,480 meters. Apostraphēs, ‘turn away’, is an aorist subjunctive with mē, forbidding it.",
+      "words": ["G2919", "G5509", "G2440", "G0029", "G3400", "G0154", "G1155"],
+      "history": "The law forbade a creditor to keep a poor man's cloak overnight as a pledge, since it was his blanket (Exodus 22:26-27; Deuteronomy 24:12-13), so to hand over the cloak is to yield what the law protected. Roman authorities and soldiers could requisition civilians and animals for transport; an inscription from Sagalassos in Pisidia, an edict of the governor Sextus Sotidius Strabo from the reign of Tiberius, regulated such demands, showing how routine and resented they were. Luke's parallel reverses the garments (cloak, then tunic), suggesting robbery rather than a lawsuit.",
+      "parallels": ["Luke 6:29-30"],
+      "theology": [
+        { "id": "love", "note": "Each example turns an imposition into an occasion of freely given service. The disciple is not defined by what others take but by what he chooses to give." },
+        { "id": "justice-poor", "note": "The command to give and lend echoes Deuteronomy 15:7-11, where Israel is told to open its hand to the needy. Generosity to those in need is part of the righteousness that exceeds that of the scribes." }
+      ],
+      "refs": ["Exodus 22:26-27", "Deuteronomy 15:7-11", "Matthew 27:32", "Luke 6:34-35"]
+    },
+    {
+      "v": "43",
+      "context": "The sixth and climactic antithesis quotes the command to love one's neighbor together with an added line, ‘hate your enemy’, which the law does not contain. Jesus addresses how the command was commonly understood.",
+      "grammar": "Agapēseis ton plēsion sou, ‘you shall love your neighbor’, is the Septuagint of Leviticus 19:18, but Matthew omits ‘as yourself’, which he includes when Jesus quotes the verse in 19:19 and 22:39. Kai misēseis ton echthron sou, ‘and you shall hate your enemy’, is phrased like a command but has no source in the Old Testament. In Semitic idiom ‘hate’ can mean ‘love less’ or ‘not choose’ (Genesis 29:31; Luke 14:26), so the line may express a popular inference: love for the neighbor, the fellow Israelite, does not extend to the outsider.",
+      "words": ["G0025", "G4139", "G3404", "G2190"],
+      "history": "The Community Rule from Qumran commands members to love all the sons of light and hate all the sons of darkness (1QS 1:9-10), the closest known parallel to the added line. The Psalms include prayers of hatred toward God's enemies (Psalm 139:21-22), but the law itself commands help for an enemy's stray animal (Exodus 23:4-5) and Proverbs says to feed a hungry enemy (Proverbs 25:21).",
+      "ot": [
+        { "ref": "Leviticus 19:18", "note": "The Hebrew ve'ahavta lere'akha kamokha, “love your neighbor as yourself,” appears in a chapter that forbids revenge and grudges against ‘any of your people’ (Leviticus 19:18). The Septuagint's agapēseis ton plēsion sou is Matthew's wording. In context the neighbor is a fellow Israelite, but Leviticus 19:34 immediately extends the same love to the foreigner living in the land. Jesus pushes the command past every boundary, as the parable of the Good Samaritan does in Luke 10:29-37." }
+      ],
+      "refs": ["Leviticus 19:18", "Leviticus 19:34", "Exodus 23:4-5", "Proverbs 25:21", "Luke 10:29"]
+    },
+    {
+      "v": "44-45",
+      "context": "Jesus commands love for enemies and prayer for persecutors, so that the disciples may be sons of their Father, who sends sun and rain on evil and good alike. The command is grounded in God's own character.",
+      "grammar": "Agapate and proseuchesthe are present imperatives, ongoing practices. Hyper tōn diōkontōn hymas, ‘for those who persecute you’, echoes the persecution of verses 10-12. Hopōs genēsthe, ‘so that you may become’, uses an aorist subjunctive: sonship is shown and realized in likeness to the Father. Ton hēlion autou, ‘his sun’, stresses that the sun belongs to God. Anatellei and brechei are present tense, God's ongoing generosity.",
+      "words": ["G0025", "G2190", "G4336", "G1377", "G1096", "G2246", "G0393", "G1026"],
+      "text": "The KJV, following most later manuscripts, has a longer verse 44: ‘bless them that curse you, do good to them that hate you, and pray for them which despitefully use you, and persecute you’. Codex Sinaiticus, Codex Vaticanus, some early versions, and several early church writers have only ‘love your enemies and pray for those who persecute you’. Most scholars think the longer text was filled in from Luke 6:27-28 by scribes harmonizing the Gospels.",
+      "history": "The observation that the sun shines on the wicked was known outside Judaism: the Roman philosopher Seneca, a contemporary of Jesus, told those who would imitate the gods to give benefits even to the ungrateful, since the sun also rises on the wicked (On Benefits 4.26). The early Christian manual called the Didache (1:3) repeats the command to pray for enemies and adds fasting for persecutors.",
+      "parallels": ["Luke 6:27-28", "Luke 6:35"],
+      "theology": [
+        { "id": "providence", "note": "God's gifts of sun and rain reach the evil and the good without distinction. Reformed theologians call this common grace (Abraham Kuyper wrote on it at length), God's goodness to all people as distinct from saving grace." },
+        { "id": "love", "note": "Love for enemies is not a strategy but a family likeness. Jesus prayed for those who crucified him (Luke 23:34) and Stephen for those who stoned him (Acts 7:60)." }
+      ],
+      "refs": ["Luke 23:34", "Acts 7:60", "Romans 5:10", "Romans 12:14", "Acts 14:17"]
+    },
+    {
+      "v": "46-47",
+      "context": "Two questions: if you love those who love you and greet only your brothers, what reward do you have, and what are you doing more than others? Tax collectors and Gentiles do the same. Ordinary reciprocity is not the righteousness of the kingdom.",
+      "grammar": "Ti perisson poieite, ‘what are you doing more?’, uses perisson, the word of excess that framed the antitheses in verse 20: the ‘more’ Jesus demanded there is love beyond reciprocity. Aspasēsthe, ‘greet’, refers to the greeting of peace (shalom), which carried a blessing and was often withheld from outsiders. Telōnai were toll and tax collectors, local agents who collected taxes for Herod Antipas or Rome and were widely despised. Ethnikoi, ‘Gentiles’, reflects a Jewish-Christian perspective (compare 6:7; 18:17).",
+      "words": ["G0025", "G3408", "G5057", "G0782", "G4053", "G1482"],
+      "text": "In verse 47 most later manuscripts, followed by the KJV, read ‘tax collectors’ (telōnai) again instead of ‘Gentiles’ (ethnikoi); the earlier manuscripts have ‘Gentiles’, and the repetition is best explained as scribes copying from verse 46. Luke's parallel uses ‘sinners’ and speaks of ‘credit’ (charis) rather than reward (Luke 6:32-34).",
+      "parallels": ["Luke 6:32-34"],
+      "refs": ["Luke 6:32-34", "Matthew 9:10-11", "Matthew 18:17", "Matthew 5:20"]
+    },
+    {
+      "v": "48",
+      "context": "The summary of the antitheses: be perfect, as your heavenly Father is perfect. Coming directly after the command to love enemies, it defines perfection as the Father's undivided, unbounded love.",
+      "grammar": "Esesthe oun hymeis teleioi is a future indicative used as a command, the form of Leviticus 19:2 in the Septuagint (hagioi esesthe, ‘you shall be holy’). Oun, ‘therefore’, gathers up the whole section. Teleios means complete, whole, mature, lacking nothing. It translates the Hebrew tamim, ‘blameless, whole’, used of Noah (Genesis 6:9) and required of Abraham (Genesis 17:1). The comparison hōs, ‘as’, sets the Father as the pattern rather than a measure to be matched exactly.",
+      "words": ["G5046", "G3767", "G3770", "G3962"],
+      "ot": [
+        { "ref": "Deuteronomy 18:13", "note": "The Hebrew tamim tihyeh, “You must be blameless before the LORD your God” (Deuteronomy 18:13), is rendered in the Septuagint teleios esē, ‘you shall be perfect’, the closest verbal source of Matthew's wording. The form of the command echoes Leviticus 19:2, “Be holy because I, the LORD your God, am holy.” Matthew's ‘perfect’ stands where Luke has “Be merciful, just as your Father is merciful” (Luke 6:36). Both Gospels tie the command to imitation of God's kindness to the undeserving." }
+      ],
+      "parallels": ["Luke 6:36"],
+      "theology": [
+        { "id": "holiness", "note": "The call to be perfect restates Leviticus's call to holiness in terms of love. God's perfection in this context is his indiscriminate generosity, and the disciple's perfection is to share it." },
+        { "id": "sanctification", "note": "Christians have understood the command in different ways: the medieval distinction between precepts for all and counsels of perfection for some; Luther's view that it exposes the need for grace; John Wesley's teaching on Christian perfection (A Plain Account of Christian Perfection, 1766) as wholehearted love made possible by grace; and the common view that it names the goal of maturity toward which disciples grow." }
+      ],
+      "refs": ["Leviticus 19:2", "Deuteronomy 18:13", "Genesis 17:1", "Matthew 19:21", "1 Peter 1:15-16"]
+    }
+  ]
+}

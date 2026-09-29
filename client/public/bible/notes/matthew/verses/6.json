@@ -1,0 +1,402 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "This verse is the heading for the first half of the chapter. Chapter 5 closed by demanding a righteousness greater than the scribes' and Pharisees' (5:20) and a love that imitates the Father (5:48); now Jesus warns that even real righteousness can be spoiled by the wish for an audience. Verses 2 to 18 apply the rule to three cases: giving, prayer, and fasting.",
+      "grammar": "Prosechete is a present imperative, ‘keep watching out’, a standing caution rather than a one-time warning. The purpose clause pros to theathēnai autois uses theaomai, the verb from which the Greek word for a theater comes: righteousness done ‘in order to be watched’ turns piety into a performance. The noun dikaiosunē (‘righteousness’) is the word Matthew has used for the whole life God requires (5:6, 5:10, 5:20), so verse 1 names the category and verses 2 to 18 give three examples of it. The Greek ei de mē ge, ‘otherwise indeed’, is emphatic: if the audience is the aim, there is no reward left to collect from the Father.",
+      "words": ["G4337", "G1343", "G2300", "G3408"],
+      "text": "The later Byzantine manuscripts, followed by the Textus Receptus and the King James Version, read eleēmosunē, ‘alms’, in place of dikaiosunē, ‘righteousness’. The earliest witnesses, including the first hand of Codex Sinaiticus, Codex Vaticanus, and Codex Bezae, read ‘righteousness’. Scribes probably narrowed the general heading to match the first example that follows in verse 2.",
+      "theology": [
+        {
+          "id": "worship",
+          "note": "The verse locates the value of devotion in the one it is offered to. The same act of prayer or giving can be worship of God or a bid for human praise, and the difference is invisible from outside."
+        },
+        {
+          "id": "judgment",
+          "note": "Jesus speaks without embarrassment of reward from the Father. The reward is not wages earned but the Father's own approval, and it is lost precisely when a person seeks human applause in its place."
+        }
+      ],
+      "refs": ["Matthew 5:16", "Matthew 5:20", "Matthew 23:5", "1 Samuel 16:7"]
+    },
+    {
+      "v": "2",
+      "context": "The first case is almsgiving, gifts of money or food to the poor. Jesus assumes his disciples give (‘when you give’, not ‘if’), and attacks only the advertising of it. The pattern set here (a warning, a description of the hypocrites, and the verdict that they already have their reward) repeats in verses 5 and 16.",
+      "grammar": "Eleēmosunē (‘giving to the needy’, older English ‘alms’) comes from eleos, ‘mercy’, so it names an act of mercy before it names a sum of money. Hupokritēs was the ordinary Greek word for a stage actor, one who spoke a part. The verdict apechousin ton misthon autōn uses a verb that the papyri show was a business term for giving a receipt, ‘paid in full’; Adolf Deissmann drew attention to this usage in Light from the Ancient East. The hypocrites have been paid, and the account is closed.",
+      "words": ["G1654", "G5273", "G0568", "G4537"],
+      "history": "No ancient source describes givers literally blowing a trumpet, and most commentators take the phrase as a vivid figure for self-advertisement. Some connect it with the thirteen offering chests in the temple courts that the Mishnah calls shofarot, ‘trumpets’, because of their flared shape (m. Shekalim 6:1, 6:5), but the saying speaks of synagogues and streets, not the temple, so the link remains uncertain.",
+      "theology": [
+        {
+          "id": "justice-poor",
+          "note": "Giving to the poor is treated as an expected part of discipleship, in line with the law's command to open the hand to the needy (Deuteronomy 15:7-11). Jesus' concern is that the poor not be turned into props for the giver's reputation."
+        }
+      ],
+      "refs": ["Deuteronomy 15:7-11", "Proverbs 19:17", "Luke 18:11-12", "Acts 10:2"]
+    },
+    {
+      "v": "3-4",
+      "context": "The positive counterpart to verse 2. The giving should be so unself-conscious that one hand hardly knows what the other is doing, and the only witness that matters is the Father, who sees what is hidden. The refrain about the Father who sees in secret will close each of the three sections (verses 4, 6, 18).",
+      "grammar": "Mē gnōtō is a third-person imperative, ‘let your left hand not know’, a proverbial overstatement: Jesus is not describing a technique but a disposition that stops watching itself give. In verse 4 the phrase en tō kruptō, ‘in the secret place’, is used both of the gift and of the Father who sees it, so secrecy is not merely hiding from people but acting where God is. The future apodōsei, ‘he will repay’, is left without a time; many interpreters take it to point to the final judgment, as in 16:27.",
+      "words": ["G1097", "G2927", "G0591"],
+      "text": "The Byzantine manuscripts and the King James Version add en tō phanerō, ‘openly’, so that the Father ‘shall reward thee openly’. The phrase is missing from the earliest manuscripts (Sinaiticus, Vaticanus, Bezae) here and in verses 6 and 18, and it was probably added to sharpen the contrast between secret giving and public reward.",
+      "theology": [
+        {
+          "id": "attributes",
+          "note": "The Father ‘sees what is done in secret’. God's knowledge reaches what no human observer can, and Jesus turns that truth from a threat into an encouragement: nothing given quietly for him goes unseen."
+        }
+      ],
+      "refs": ["Psalm 139:1-4", "Hebrews 4:13", "Matthew 25:37-40", "Matthew 16:27"]
+    },
+    {
+      "v": "5",
+      "context": "The second case, prayer, begins with the same contrast. Jesus does not criticize public prayer as such (he prays publicly in 11:25 and 14:19), but prayer timed and placed so that others will notice.",
+      "grammar": "The hypocrites ‘love to pray standing’: the perfect participle hestōtes describes their posture, and philousin, ‘they love’, exposes the motive. The purpose clause hopōs phanōsin tois anthrōpois, ‘so that they may appear to people’, uses phainō, the same verb that returns in verses 16 and 18 around fasting. In the Greek, verse 5 addresses the disciples in the plural, and verse 6 switches to the singular su, ‘you’, as though Jesus turns to each listener alone.",
+      "words": ["G2476", "G5368", "G5316", "G1137"],
+      "history": "Standing was the normal Jewish posture for prayer (1 Samuel 1:26, Luke 18:11-13). The central prayer of the synagogue, the series of blessings later called the Amidah, literally ‘the standing’, was recited at fixed times of day, and the Mishnah discusses how late each of these prayers may be said (m. Berakhot 4:1). A man who arranged to be at a busy corner when the hour of prayer came would be seen by everyone as he stood.",
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "Prayer is speech addressed to God, and the verse exposes prayer that is really addressed to the onlookers. The warning applies to any setting where praying well earns a reputation."
+        }
+      ],
+      "refs": ["1 Samuel 1:26", "Luke 18:10-14", "Mark 12:38-40"]
+    },
+    {
+      "v": "6",
+      "context": "The positive instruction for prayer: go into the most private room, shut the door, and pray to the Father who is there in secret. The verse does not forbid praying together, which Jesus commends in 18:19-20; it describes where prayer's audience is.",
+      "grammar": "The tameion was the inner storeroom of a house, usually without windows, the one room that could be closed off. The commands come in quick succession: eiselthe, ‘go in’, kleisas, ‘having shut’, and proseuxai, ‘pray’, all aorists that picture the action as a single decisive step. The phrase tō patri sou tō en tō kruptō, ‘your Father who is in the secret place’, says the Father is present in the hidden room before the one who prays arrives.",
+      "words": ["G5009", "G2808", "G4336", "G2927"],
+      "ot": [
+        {
+          "ref": "Isaiah 26:20",
+          "note": "Isaiah tells God's people, ‘go into your rooms and shut your doors behind you’ until the time of wrath passes. The Hebrew uses cheder, an inner room, and the Septuagint renders the line with the same words Matthew uses here, eiselthe eis ta tameia sou, apokleison tēn thuran sou. In Isaiah the closed room is a shelter in judgment; in Matthew it is the place of prayer. The verbal overlap is close enough that commentators such as W. D. Davies and Dale Allison count it as a deliberate echo, though Matthew does not mark it as a quotation. Elisha's shutting the door before praying for the Shunammite's son (2 Kings 4:33) supplies a similar picture."
+        }
+      ],
+      "refs": ["2 Kings 4:33", "Matthew 14:23", "Mark 1:35", "Matthew 18:19-20"]
+    },
+    {
+      "v": "7-8",
+      "context": "A second warning about prayer, this time drawn from pagan rather than Jewish practice. The problem here is not an audience but a view of God: the belief that the deity must be worn down with words. Verse 8 gives the reason for the whole approach and prepares for the model prayer that follows.",
+      "grammar": "Battalogeō, rendered ‘babble on’ by the BSB, appears nowhere in Greek before this passage and the parallel tradition that depends on it. Its origin is uncertain: some connect it with an Aramaic word for ‘idle’ or ‘empty’, others take it as imitative, like English ‘blah-blah’. The companion noun polulogia, ‘much speaking’, makes the meaning clear enough. The future passive eisakousthēsontai, ‘they will be heard’, states the pagans' assumption. In verse 8 the perfect oiden, ‘knows’, describes the Father's settled knowledge, and pro tou humas aitēsai, ‘before you ask’, places that knowledge ahead of any request.",
+      "words": ["G0945", "G4180", "G1522", "G6063"],
+      "history": "Greek and Roman prayers often piled up a god's names and titles to be sure of addressing the right power and obtaining a hearing. The Old Testament shows the same instinct in the prophets of Baal, who called on their god from morning until noon (1 Kings 18:26-29). Ecclesiastes had already counseled that a person's words before God should be few (Ecclesiastes 5:2).",
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "If the Father already knows what his children need, prayer is not information or persuasion but the trust of children speaking to a father. The verse removes the reason for anxious repetition without removing the command to ask, which 7:7-11 will press."
+        },
+        {
+          "id": "attributes",
+          "note": "God's knowledge of our needs precedes our asking. Jesus draws a practical conclusion from God's omniscience: it makes prayer simple, not pointless."
+        }
+      ],
+      "refs": ["1 Kings 18:26-29", "Ecclesiastes 5:2", "Isaiah 65:24", "Matthew 6:32"]
+    },
+    {
+      "v": "9",
+      "context": "The Lord's Prayer begins. ‘So then’ (oun) ties it to verse 8: because the Father knows, disciples may pray briefly and directly. The address and first petition turn attention first to God himself, his name, before any request for ourselves.",
+      "grammar": "The pronoun humeis, ‘you’, is emphatic: you, unlike the pagans of verse 7. Pater hēmōn, ‘our Father’, is plural throughout the prayer, so even a disciple praying alone in the inner room prays as one of a family. Hagiasthētō, ‘let it be hallowed’, is an aorist passive imperative in the third person. Hebrew and Greek prayers often use such passives with God as the unstated actor, so the petition asks above all that God act to make his name holy, and secondarily that people honor it. Scholars debate how distinctive the address ‘Father’ was. Joachim Jeremias argued that Jesus' Aramaic Abba (Mark 14:36) was an unprecedented intimacy; James Barr answered, in a 1988 article titled ‘Abba Isn't Daddy’, that the word was an adult's respectful address too. Both agree that Jesus shares with his disciples his own way of speaking to God.",
+      "words": ["G3962", "G0037", "G3686", "G4771"],
+      "parallels": ["Luke 11:2"],
+      "ot": [
+        {
+          "ref": "Ezekiel 36:23",
+          "note": "In Ezekiel God promises, ‘I will show the holiness of My great name, which has been profaned among the nations’. The Hebrew verb is qiddashti, from qadash, and the Septuagint renders it with hagiasō, the same verb as the prayer's hagiasthētō. In Ezekiel God hallows his name by gathering Israel from exile, cleansing them, and giving them a new heart and spirit (36:24-27). The petition is not a quotation, but it asks for exactly what Ezekiel promised: that God act in history to vindicate his name."
+        }
+      ],
+      "history": "Luke's shorter version (Luke 11:2-4) addresses God simply as ‘Father’ and has five petitions. Jewish prayers of the period also addressed God as Father (Isaiah 63:16 already does), and the Kaddish, an Aramaic synagogue prayer whose first-century form is uncertain, begins by asking that God's great name be magnified and sanctified. The Didache, an early Christian manual probably from the late first or early second century, gives Matthew's form of the prayer and tells believers to pray it three times a day (Didache 8.2-3).",
+      "theology": [
+        {
+          "id": "names-of-god",
+          "note": "God's ‘name’ is his revealed character and reputation. The first petition asks that God make himself known as holy, which is why it comes before any request for bread."
+        },
+        {
+          "id": "prayer",
+          "note": "The prayer teaches the order of desire: God's glory first, then human need. The plural ‘our’ makes every disciple's private prayer an act of the whole family of God."
+        }
+      ],
+      "refs": ["Isaiah 63:16", "Ezekiel 36:23", "Mark 14:36", "Romans 8:15", "John 17:11"]
+    },
+    {
+      "v": "10",
+      "context": "The second and third petitions continue the concern for God's cause. The kingdom Jesus has been announcing (4:17) is asked for, and God's will is asked to be done on earth as it already is in heaven.",
+      "grammar": "Two more third-person aorist imperatives, elthetō, ‘let it come’, and genēthētō, ‘let it be done’, match the first petition, so the prayer opens with three parallel lines about ‘your name’, ‘your kingdom’, and ‘your will’. The closing phrase hōs en ouranō kai epi gēs, ‘as in heaven, also on earth’, may qualify only the third line or all three together; grammatically either is possible, and the parallel structure makes the wider reading attractive. The words genēthētō to thelēma sou return verbatim on Jesus' lips in Gethsemane (26:42), where praying for the Father's will means accepting the cup.",
+      "words": ["G2064", "G0932", "G1096", "G2307"],
+      "parallels": ["Luke 11:2"],
+      "text": "Luke's form of the prayer, in the best manuscripts, has no petition for God's will. Later manuscripts of Luke add it from Matthew, which is why the King James Version's Luke 11:2 matches Matthew here.",
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "To pray ‘Your kingdom come’ is to ask for God's reign, already present in Jesus, to arrive in its fullness. The petition keeps disciples looking forward to the day when earth fully obeys, as heaven does now."
+        },
+        {
+          "id": "sovereignty",
+          "note": "God's will is already done in heaven; the petition asks that it be done on earth. Scripture holds together that God rules all things and that his will is resisted by human sin, and this prayer lives in that tension."
+        }
+      ],
+      "refs": ["Matthew 4:17", "Matthew 26:39-42", "Daniel 7:14", "Revelation 11:15"]
+    },
+    {
+      "v": "11",
+      "context": "The prayer turns to our needs with its fourth petition, for bread. After the three great requests for God's name, kingdom, and will, the most ordinary need of the body is brought before him.",
+      "grammar": "The adjective epiousios, translated \"daily\", is one of the great puzzles of New Testament Greek. Origen, in his treatise On Prayer (27.7), remarked that the word occurs in no Greek writer and seemed to have been coined by the Gospel writers. A papyrus once cited as another example was later shown by Bruce Metzger to rest on a doubtful reading of a document now lost. Proposed derivations include epi plus ousia, ‘bread for existence’ or ‘needed’, and hē epiousa hēmera, ‘the coming day’ (the phrase used in Acts 16:11 for ‘the next day’), giving ‘bread for tomorrow’. Jerome reports that the Gospel according to the Hebrews had mahar, ‘tomorrow's’; he himself rendered the word supersubstantialem in Matthew and cotidianum in Luke, which fed a eucharistic reading in the Latin church. Sēmeron, ‘today’, keeps the request modest whichever sense is chosen. Dos, ‘give’, is an aorist imperative, a direct and simple request.",
+      "words": ["G1967", "G0740", "G4594", "G1325"],
+      "parallels": ["Luke 11:3"],
+      "ot": [
+        {
+          "ref": "Exodus 16:4",
+          "note": "The manna came with the instruction that the people gather each day a day's portion (Hebrew devar-yom beyomo, ‘the matter of a day in its day’). Those who stored it found it rotten (16:20). The petition is not a quotation, but many interpreters hear the wilderness pattern behind it: bread received from God one day at a time, a lesson Deuteronomy 8:3 says was meant to teach dependence on his word."
+        }
+      ],
+      "text": "Luke 11:3 reads ‘give us each day’ (to kath' hēmeran, with a present imperative, didou), making the request a continuing one, where Matthew has ‘give us today’ with the aorist dos.",
+      "theology": [
+        {
+          "id": "providence",
+          "note": "Ordinary food is received as a gift from the Father. The petition trains disciples to ask for enough for now, which the chapter's close (verses 25 to 34) turns into freedom from anxiety about tomorrow."
+        }
+      ],
+      "refs": ["Exodus 16:4", "Proverbs 30:8", "Deuteronomy 8:3", "John 6:31-35"]
+    },
+    {
+      "v": "12",
+      "context": "The fifth petition asks for forgiveness and ties it to our forgiving of others. It is the only petition Jesus comments on afterward (verses 14 and 15), which shows its weight.",
+      "grammar": "Opheilēma is a commercial word, ‘what is owed’, and opheiletēs is a ‘debtor’. In the Aramaic Jesus probably spoke, the word chova could mean both a debt and a sin, which explains why Luke's version has ‘sins’ in the first half but keeps ‘everyone who is indebted to us’ in the second (Luke 11:4). The verb aphiēmi means to release, cancel, or let go. In the best manuscripts the second clause uses the aorist aphēkamen, ‘as we have forgiven’, which presents the disciples' forgiving as already done when they come to ask. It does not make human forgiveness the price of divine forgiveness; it describes the kind of person who prays this prayer.",
+      "words": ["G3783", "G3781", "G0863H"],
+      "parallels": ["Luke 11:4"],
+      "text": "The later manuscripts and the King James Version read the present tense aphiemen, ‘as we forgive’, which matches Luke 11:4. The earliest witnesses of Matthew, including Sinaiticus and Vaticanus, have the aorist.",
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Sin is pictured as a debt owed to God that the debtor cannot pay. The parable of the unforgiving servant (18:23-35), where the debt is ten thousand talents, develops the image."
+        },
+        {
+          "id": "atonement",
+          "note": "The prayer asks God to cancel the debt; the Gospel later says how, when Jesus calls his blood poured out for many for the forgiveness of sins (26:28)."
+        }
+      ],
+      "refs": ["Matthew 18:21-35", "Luke 7:41-48", "Colossians 2:13-14", "Matthew 26:28"]
+    },
+    {
+      "v": "13",
+      "context": "The final petition asks for protection in testing and rescue from evil. The prayer ends, in the earliest manuscripts, on this note of need rather than praise.",
+      "grammar": "Mē eisenegkēs, ‘do not bring’, is an aorist subjunctive used for a negative request, the normal Greek way to say ‘don't’. Peirasmos means a test, trial, or temptation, and the context decides which. Since James 1:13 says God tempts no one to sin, most interpreters read the petition as ‘do not let us be brought into a trial that overcomes us’, or as asking to be spared the final great test. The last words, apo tou ponērou, are grammatically ambiguous: the genitive can be neuter, ‘from evil’, or masculine, ‘from the evil one’. Greek fathers such as John Chrysostom generally took it as the devil, and Matthew does use ho ponēros for Satan (13:19, 13:38); the Latin a malo let Western readers hear evil in general, as in the traditional English ‘deliver us from evil’. The BSB chooses ‘the evil one’.",
+      "words": ["G1533", "G3986G", "G4506", "G4190"],
+      "parallels": ["Luke 11:4"],
+      "text": "The familiar doxology, ‘For thine is the kingdom, and the power, and the glory, for ever. Amen’ (King James Version), is not in the earliest manuscripts of Matthew: it is absent from Codex Sinaiticus, Codex Vaticanus, and Codex Bezae, and from the commentaries of Tertullian, Origen, and Cyprian on the prayer. The oldest form of it appears in the Didache (8.2), with two members only, ‘for yours is the power and the glory forever’. Later manuscripts, beginning with witnesses such as Codex Washingtonianus, carry a three-part form, and that fuller text passed into the Byzantine tradition and the Textus Receptus. Its wording draws on David's prayer in 1 Chronicles 29:11. Most scholars conclude that the doxology grew up as the church's liturgical response when the prayer was said aloud, which is why modern translations print it in a footnote. It has remained in use: Protestant churches commonly say it, and since 1970 the Roman Catholic Mass has used it as a separate acclamation after the priest's prayer that follows the Lord's Prayer.",
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "The prayer ends with an admission of weakness. Disciples who have asked for God's kingdom still need to be kept from falling, and they say so."
+        },
+        {
+          "id": "suffering",
+          "note": "The petition assumes that trials will come and that there is a personal enemy behind evil. Jesus himself was led into testing (4:1) and taught his disciples in Gethsemane to pray that they not enter it (26:41)."
+        }
+      ],
+      "refs": ["James 1:13-14", "1 Corinthians 10:13", "Matthew 26:41", "1 Chronicles 29:11", "John 17:15"]
+    },
+    {
+      "v": "14-15",
+      "context": "Jesus returns to the fifth petition and states it both ways, positively and negatively. The ‘for’ (gar) connects the comment directly to the prayer: of all its lines, this is the one disciples are most tempted to say without meaning.",
+      "grammar": "The two conditions (ean aphēte, ‘if you forgive’, and ean mē aphēte, ‘if you do not forgive’) are exact mirrors, and the future aphēsei, ‘he will forgive’, answers each. Here the word for sins shifts to paraptōma, literally a false step or trespass, a stepping aside from the path. The parallel structure makes the negative half as firm as the positive; Jesus leaves no escape clause.",
+      "words": ["G0863H", "G3900", "G3770"],
+      "parallels": ["Mark 11:25"],
+      "history": "The link between forgiving others and being forgiven was known in Jewish wisdom before Jesus. Ben Sira, writing in Jerusalem around 180 BC, told his readers to forgive a neighbor's wrong so that their own sins would be pardoned when they prayed (Sirach 28:2). Jesus gives the teaching the authority of his own word and places it at the heart of the prayer he teaches.",
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "Receiving God's forgiveness and extending it belong together. The Reformed and Lutheran traditions stress that forgiving others is the fruit and evidence of forgiveness received; Catholic and Orthodox teaching speaks of it as part of the cooperation with grace that forgiveness requires. All treat the warning as real."
+        }
+      ],
+      "refs": ["Matthew 18:35", "Mark 11:25", "Ephesians 4:32", "Colossians 3:13"]
+    },
+    {
+      "v": "16",
+      "context": "The third case, fasting, follows the pattern of the first two. The chapter note has described the customs of mourning that went with fasting; here the focus is Jesus' wordplay on what the hypocrites do with their faces.",
+      "grammar": "Skuthrōpos means gloomy-faced; Luke uses it of the two disciples on the Emmaus road (Luke 24:17). The sharpest point is a pun that English cannot keep: the hypocrites aphanizousin, ‘make unseen’ or ‘disfigure’, their faces, hopōs phanōsin, ‘so that they may be seen’. They hide their faces in order to be looked at. The same verb aphanizō returns in verses 19 and 20 for what moth and rust do to treasure, a quiet link between spoiled faces and spoiled wealth.",
+      "words": ["G4659", "G0853", "G5316", "G3522"],
+      "history": "Pious Jews of the period fasted beyond the Day of Atonement, and Luke 18:12 has a Pharisee say he fasts twice a week. The Didache (8.1) tells Christians not to fast with ‘the hypocrites’ on the second and fifth days of the week (Monday and Thursday) but on the fourth and the day of preparation (Wednesday and Friday), which shows both that Monday and Thursday were known Jewish fast days and that the early church read this verse as practical instruction.",
+      "theology": [
+        {
+          "id": "worship",
+          "note": "Fasting is presented as a normal part of devotion to God (‘when you fast’), not an optional extra; Jesus later says his disciples will fast when the bridegroom is taken away (9:15). Its value lies in being directed to the Father."
+        }
+      ],
+      "refs": ["Isaiah 58:3-7", "Joel 2:12-13", "Matthew 9:14-15", "Zechariah 7:5"]
+    },
+    {
+      "v": "17-18",
+      "context": "The disciple who fasts should look like anyone on an ordinary day: head oiled, face washed. The section closes with the refrain of the Father who sees in secret and repays.",
+      "grammar": "Aleipsai and nipsai are aorist middle imperatives, ‘anoint yourself’ and ‘wash yourself’, the middle voice fitting actions done to one's own body. In verse 18 the best manuscripts use kruphaios, a rarer word for ‘hidden’, in place of the kruptos of verses 4 and 6; the meaning is the same, but the variation may be Matthew's own stylistic touch.",
+      "words": ["G0218", "G3538", "G6058", "G0591"],
+      "history": "Anointing the head with olive oil and washing were ordinary grooming, signs of normal life and even gladness (Psalm 104:15, Ecclesiastes 9:8). Abstaining from them was a mark of mourning or penitence: after his child died, David washed and anointed himself to show that his fast was over (2 Samuel 12:20), and the Mishnah lists washing and anointing among the things forbidden on the Day of Atonement (m. Yoma 8:1).",
+      "theology": [
+        {
+          "id": "fear-of-god",
+          "note": "The whole section assumes that God's regard matters more than anyone else's. Living before the Father who sees in secret frees disciples from managing their image."
+        }
+      ],
+      "refs": ["2 Samuel 12:20", "Ecclesiastes 9:8", "Psalm 104:15", "Colossians 3:23-24"]
+    },
+    {
+      "v": "19-21",
+      "context": "The second half of the chapter begins. The subject shifts from religious practice to possessions, but the logic is the same: what is done for God, or stored with him, lasts; what is done or stored for show on earth does not. Verse 21 gives the reason in a single proverb.",
+      "grammar": "Mē thēsaurizete humin thēsaurous is a deliberate echo, ‘do not treasure up treasures for yourselves’, verb and noun from the same root. Sēs is the clothes moth, and brōsis literally means ‘eating’, so the phrase may mean ‘moth and eating’ (by vermin or corrosion); ‘rust’ is a traditional rendering that the context allows but does not require. Diorussō means ‘dig through’, the way a thief entered a house with mud-brick or rubble walls. Verse 21 switches from the plural ‘you’ to the singular sou, ‘your treasure... your heart’, pressing the saying on each hearer.",
+      "words": ["G2343", "G2344", "G4597", "G1035", "G1358", "G2588"],
+      "parallels": ["Luke 12:33-34"],
+      "text": "The Byzantine manuscripts read the plural ‘your’ (humōn) in verse 21, matching verses 19 and 20; the earliest manuscripts have the singular sou. Luke 12:34 has the plural, which probably influenced the later copies of Matthew.",
+      "theology": [
+        {
+          "id": "wealth",
+          "note": "Jesus does not condemn possessions as such but storing them as a person's security. Wealth kept on earth is exposed to decay and loss; ‘treasure in heaven’ is what is given and done for God, which he keeps."
+        },
+        {
+          "id": "hope",
+          "note": "The saying assumes a future with God that is more real than present wealth. Where the treasure is, the heart goes, so hope is shaped by what a person invests in."
+        }
+      ],
+      "refs": ["Luke 12:16-21", "James 5:1-3", "1 Timothy 6:17-19", "Matthew 19:21"]
+    },
+    {
+      "v": "22-23",
+      "context": "A short parable about the eye stands between the sayings on treasure and on masters. In context it concerns how a person looks at money: the generous eye fills life with light, the grasping eye darkens it.",
+      "grammar": "Haplous means ‘single’ or ‘simple’, and in moral use ‘sincere’ or ‘generous’; the related noun haplotēs means generosity in Romans 12:8 and 2 Corinthians 8:2. Its opposite here is ponēros, ‘bad’ or ‘evil’. Behind the pair stands a Hebrew idiom: a ‘good eye’ is generous (Proverbs 22:9, tov-ayin) and an ‘evil eye’ is stingy or grudging (Deuteronomy 15:9, Proverbs 28:22). Matthew uses the same idiom in 20:15, where the vineyard owner asks, literally, ‘is your eye evil because I am good’. The final clause, ei oun to phōs to en soi skotos estin, to skotos poson, ‘if the light in you is darkness, how great the darkness’, turns on the idea that the eye itself gives light.",
+      "words": ["G0573", "G4190", "G3088", "G3788", "G4655"],
+      "parallels": ["Luke 11:34-36"],
+      "history": "Many ancient writers, from Plato onward, held a theory of vision in which the eye sends out light to see, rather than only receiving it. Dale Allison argued in a 1987 study that this is the picture behind Jesus' saying: the eye is a lamp that shines from the body's inner light, so a darkened interior produces a blind eye. Others read the saying more simply, with the eye as the window through which light enters. Both readings arrive at the same point about generosity.",
+      "theology": [
+        {
+          "id": "wealth",
+          "note": "The saying treats generosity as a matter of sight: the way a person looks at money reveals and shapes the whole self. Greed is not only a wrong act but a darkness that spreads."
+        }
+      ],
+      "refs": ["Deuteronomy 15:9", "Proverbs 22:9", "Proverbs 28:22", "Matthew 20:15"]
+    },
+    {
+      "v": "24",
+      "context": "The section on possessions reaches its verdict. After treasure and the eye, the image is service: money is a master that demands loyalty, and no one can belong to two masters at once.",
+      "grammar": "Douleuein means to serve as a slave, not merely to work for, and kurios is an owner. The two balanced clauses (hate one and love the other, or be devoted to one and despise the other) use ‘hate’ and ‘love’ in the Semitic sense of choosing and rejecting, as in Malachi 1:2-3, rather than as descriptions of feeling. Mamōnas is an Aramaic loanword (mamona) for wealth or property; its use as the name of a rival master is Jesus' own personification, not the name of a known deity. The final sentence is general: ou dunasthe, ‘you are not able’, states an impossibility, not only a prohibition.",
+      "words": ["G1398", "G2962H", "G3126", "G0472", "G3404"],
+      "parallels": ["Luke 16:13"],
+      "theology": [
+        {
+          "id": "idolatry",
+          "note": "Money is named as a rival lord, which puts the love of wealth in the same category as the worship of other gods. Paul calls greed idolatry (Colossians 3:5), and this verse is the ground of that judgment."
+        },
+        {
+          "id": "wealth",
+          "note": "Luke sets the saying after the parable of the shrewd manager and adds that the lovers of money scoffed (Luke 16:13-14). The issue in both Gospels is allegiance, not the amount a person owns."
+        }
+      ],
+      "refs": ["Luke 16:13-14", "Colossians 3:5", "1 Timothy 6:9-10", "Joshua 24:15", "Hebrews 13:5"]
+    },
+    {
+      "v": "25",
+      "context": "‘Therefore’ (dia touto) links the teaching on worry to the verdict of verse 24. Because disciples serve God and not money, they are free from the anxiety that money's service produces. The first argument is from greater to lesser: God has given life and body, the greater gifts, so he can be trusted for food and clothes.",
+      "grammar": "Mē merimnate is a present imperative, which in prohibitions often means ‘stop worrying’ or ‘do not keep worrying’. Merimnaō appears six times in verses 25 to 34 and ties the whole paragraph together. Psuchē here means ‘life’, the physical life that food sustains, not ‘soul’ in a philosophical sense; it is paired with sōma, ‘body’, which clothing covers. The question introduced by ouchi expects the answer yes: of course life is more than food.",
+      "words": ["G3309", "G5590H", "G4983", "G5160", "G1742"],
+      "parallels": ["Luke 12:22-23"],
+      "text": "The words ‘or what you will drink’ (ē ti piēte) are missing from some early manuscripts, including Codex Sinaiticus, and appear in slightly different forms in others. The phrase may have been added to match verse 31, or dropped by accident. Editions differ, and the meaning is unaffected.",
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The Creator who gave life is the one who sustains it. Jesus argues from the gift already given to the care that will follow, which grounds trust in what God has already done."
+        }
+      ],
+      "refs": ["Luke 12:22-23", "Philippians 4:6", "1 Peter 5:7", "Psalm 55:22"]
+    },
+    {
+      "v": "26-27",
+      "context": "The first illustration from nature. Birds neither sow nor reap nor store, yet the Father feeds them, and disciples are worth far more. Verse 27 adds a second, practical argument: worry does not work.",
+      "grammar": "The argument in verse 26 is the ‘how much more’ reasoning that later rabbis called qal wachomer, from light to heavy, the first of the rules of interpretation attributed to Hillel. The three verbs of farming, speirousin, therizousin, sunagousin, ‘sow, reap, gather’, describe the whole agricultural year in a phrase, precisely the labor by which people secure food. In verse 27 hēlikia can mean either ‘span of life’ or ‘stature’, and pēchus is a cubit, a forearm's length of about eighteen inches. The King James Version reads ‘add one cubit unto his stature’; most modern versions take it as adding a small span to one's lifetime, which fits the subject of worry better, since no one worries about growing a foot and a half.",
+      "words": ["G4687", "G2325", "G4863", "G5142", "G2244", "G4083"],
+      "parallels": ["Luke 12:24-26"],
+      "text": "Luke 12:24 names ‘ravens’ where Matthew has ‘the birds of the air’. Ravens were unclean under the law (Leviticus 11:15), which gives Luke's version an extra edge: God feeds even these.",
+      "theology": [
+        {
+          "id": "providence",
+          "note": "God's care reaches the smallest creatures he has made, and the verse draws the conclusion for his children. The disciples are not told to stop working; the birds do not farm, but humans do (Genesis 2:15). They are told that their worth to the Father does not depend on the harvest."
+        },
+        {
+          "id": "humanity",
+          "note": "‘Are you not much more valuable than they?’ assumes a distinct human worth under God, echoing the image of God in Genesis 1:26-28."
+        }
+      ],
+      "refs": ["Psalm 147:9", "Job 38:41", "Psalm 104:27-28", "Matthew 10:29-31", "Psalm 39:5"]
+    },
+    {
+      "v": "28-30",
+      "context": "The second illustration turns from food to clothing. The wildflowers do nothing to dress themselves, yet not even Solomon was so splendid, and if God so clothes grass that is burned tomorrow, he will much more clothe his people. The rebuke ‘O you of little faith’ names the problem behind worry.",
+      "grammar": "Katamathete, ‘consider carefully’, is a strong compound of the verb for learning, ‘learn thoroughly from’. Krina is a general word for flowers, and scholars do not agree on which Galilean wildflower, if any single one, is meant. The verbs kopiōsin, ‘toil’, and nēthousin, ‘spin’, describe the work of making cloth, often the work of women, as sowing and reaping in verse 26 describe the work of men: the two illustrations together cover the household. Oligopistos, ‘of little faith’, is almost a Matthean signature, appearing four times in Matthew (6:30, 8:26, 14:31, 16:8) and once in Luke; it is addressed to disciples, people with real but weak faith.",
+      "words": ["G2648", "G2918", "G2872", "G3514", "G3640", "G2823"],
+      "parallels": ["Luke 12:27-28"],
+      "text": "Codex Sinaiticus, in its original hand, appears to have read ou xainousin, ‘they do not card wool’, at verse 28, a reading T. C. Skeat identified under the manuscript's corrections in a 1938 article titled ‘The Lilies of the Field’. Some scholars have argued it preserves an early form of the saying; most editors keep the reading of the other manuscripts. Among the major editions, the verbs are plural in some and singular in others, without change to the sense.",
+      "history": "Solomon's splendor was proverbial: 1 Kings 10 describes his gold, ivory throne, and the visit of the queen of Sheba, who was left breathless by it. The ‘furnace’ (klibanos) was the small clay oven of a household, heated with dried grass, weeds, and brush because wood was scarce, which is why wildflowers blooming today could be fuel tomorrow.",
+      "theology": [
+        {
+          "id": "providence",
+          "note": "God's care is extravagant even toward what lasts a day. Jesus' ‘how much more’ makes God's generosity in creation a pledge of his generosity toward those he calls his children."
+        },
+        {
+          "id": "faith",
+          "note": "Worry is traced to little faith, not to lack of information. The remedy Jesus offers is not reassurance about outcomes but a truer view of the Father."
+        }
+      ],
+      "refs": ["1 Kings 10:4-7", "Isaiah 40:6-8", "Psalm 103:15-16", "Matthew 8:26", "James 1:10-11"]
+    },
+    {
+      "v": "31-32",
+      "context": "‘Therefore’ gathers the argument into a command and states the three anxious questions in the disciples' own voice. Verse 32 gives two reasons: this striving is what the nations do, and the Father already knows.",
+      "grammar": "Merimnēsēte here is an aorist subjunctive with mē, the standard way to forbid an action from starting, ‘do not begin to worry’, a slightly different shade from the present imperative of verse 25. The three deliberative subjunctives, phagōmen, piōmen, peribalōmetha, ‘what shall we eat, drink, wear’, put the anxious questions on stage. In verse 32 epizētousin, ‘they seek after’, is a strengthened form of the verb that will return, unstrengthened, in verse 33: the nations seek food and clothing; disciples seek the kingdom.",
+      "words": ["G3309", "G5315", "G4095", "G4016", "G1934", "G1484"],
+      "parallels": ["Luke 12:29-30"],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The same reason given for simple prayer in verse 8 is given here for freedom from worry: the Father knows. God's knowledge is presented as care, not surveillance."
+        },
+        {
+          "id": "idolatry",
+          "note": "Ta ethnē, ‘the nations’ or ‘Gentiles’, is Matthew's term for those who do not know Israel's God. Anxious striving for provisions is described as the way of life of people without a Father in heaven."
+        }
+      ],
+      "refs": ["Matthew 6:8", "Luke 12:29-30", "1 Thessalonians 4:5", "Psalm 23:1"]
+    },
+    {
+      "v": "33",
+      "context": "The positive command at the center of the paragraph, and in many readers' judgment the key to the whole chapter. Instead of the nations' striving, disciples seek God's kingdom and righteousness first, and the rest is added.",
+      "grammar": "Zēteite, a present imperative, calls for continuing, habitual seeking. Prōton, ‘first’, can mean first in time or first in rank; most interpreters take it as priority. Prostethēsetai, ‘will be added’, is a future passive with God as the implied giver, the same verb as ‘add’ in verse 27: what worry cannot add, the Father adds. ‘His righteousness’ has been read in two ways. One reading, common in the Lutheran tradition, takes it as the righteousness God gives; many recent Matthew scholars, such as Benno Przybylski in Righteousness in Matthew and His World of Thought (1980), hold that in Matthew dikaiosunē means the conduct God requires, as in 5:20 and 6:1.",
+      "words": ["G2212", "G4413G", "G0932", "G1343", "G4369"],
+      "parallels": ["Luke 12:31"],
+      "text": "Codex Sinaiticus and Codex Vaticanus lack ‘of God’, reading ‘seek first the kingdom and his righteousness’, and Vaticanus reverses the order: ‘the righteousness and his kingdom’. The fuller reading ‘the kingdom of God’ appears in most manuscripts; editors are divided on whether the words were added or dropped, but the meaning is the same, since ‘his’ refers to the Father of verse 32.",
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The kingdom is not only prayed for (verse 10) but actively sought. Seeking it first puts every other good in its place without despising it."
+        },
+        {
+          "id": "providence",
+          "note": "The promise is that the necessities will be added, not that the seeker will become rich. Paul echoes the same trust in Philippians 4:19."
+        }
+      ],
+      "refs": ["Matthew 5:6", "Matthew 5:20", "1 Kings 3:11-13", "Romans 14:17", "Philippians 4:19"]
+    },
+    {
+      "v": "34",
+      "context": "The chapter ends with a proverb of practical realism. Tomorrow will bring its own worries, and today already has enough trouble. Jesus does not promise a trouble-free life; he limits the load to one day at a time, which returns the reader to the ‘today’ of the bread petition in verse 11.",
+      "grammar": "Tomorrow is personified: hē aurion merimnēsei heautēs, ‘tomorrow will worry about itself’. Kakia usually means evil or wickedness, but here it has its sense of trouble or hardship; the King James Version's ‘Sufficient unto the day is the evil thereof’ keeps the older sense of ‘evil’. Arketon, ‘enough’, is neuter, so the sentence reads almost as a proverb: sufficient for the day is its trouble.",
+      "words": ["G0839", "G3309", "G0713", "G2549"],
+      "history": "A similar proverb circulated in Jewish tradition. The Babylonian Talmud (b. Berakhot 9b) has a saying to the effect that trouble is enough in its own hour, and later rabbinic texts repeat it. Jesus' version is part of that shared stock of wisdom, set here within his teaching about the Father's care.",
+      "theology": [
+        {
+          "id": "wisdom",
+          "note": "The verse is wisdom teaching in the tradition of Proverbs 27:1, which warns against boasting about tomorrow. Faith does not deny trouble; it declines to borrow tomorrow's."
+        },
+        {
+          "id": "providence",
+          "note": "The Father who gives daily bread gives the grace for each day. Lamentations 3:22-23 speaks of mercies new every morning, and this verse assumes the same rhythm."
+        }
+      ],
+      "refs": ["Proverbs 27:1", "Lamentations 3:22-23", "James 4:13-15", "Matthew 6:11"]
+    }
+  ]
+}

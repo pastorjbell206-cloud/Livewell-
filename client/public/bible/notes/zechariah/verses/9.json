@@ -1,0 +1,140 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "A new heading opens the second half of Zechariah. The LORD's word comes against Hadrach and settles on Damascus, the first stop on a march of judgment that will run south along the coast to Philistia and end at God's own house (verse 8).",
+      "grammar": "Massa, ‘burden’ or ‘oracle’, comes from nasa, ‘to lift, carry’: a weighty pronouncement laid on the prophet. It heads Zechariah 9:1, 12:1, and Malachi 1:1, three oracles that close the Book of the Twelve. Menuchato, ‘its resting place’, pictures the word of the LORD settling on Damascus as a place to stay, a strange and ominous image of rest. The second half of the verse is hard. The Hebrew reads literally ‘for to the LORD is the eye of man and all the tribes of Israel’, which the BSB renders as the eyes of all being on the LORD; others take it as the LORD's eye being on all people.",
+      "words": ["H4853B", "H2317", "H1834", "H4496H", "H5869A", "H0120G"],
+      "text": "Because ‘the eye of man’ is awkward, some scholars change one letter and a vowel to read ‘the cities of Aram’ ('arei aram for 'ein adam). The NRSV adopts this and renders the line ‘For to the LORD belongs the capital of Aram, as do all the tribes of Israel’. The BSB, ESV, and NIV keep the Hebrew.",
+      "history": "Hadrach appears in Assyrian records as Hatarikka and in the Aramaic inscription of Zakkur, king of Hamath and Lu'ash (about 800 BC, found at Tell Afis in Syria), where it is spelled Hazrak and is besieged by a coalition led by Bar-Hadad of Damascus. When chapters 9 to 14 were written is disputed. The seventeenth-century English scholar Joseph Mede first questioned whether Zechariah wrote them, partly because Matthew 27:9 attributes a quotation from Zechariah 11 to Jeremiah; many modern scholars date them to the late Persian or early Greek period, while others defend Zechariah's authorship.",
+      "refs": ["Zechariah 12:1", "Malachi 1:1", "Amos 1:3-5", "Isaiah 17:1"]
+    },
+    {
+      "v": "2-4",
+      "context": "Judgment reaches Hamath and then the Phoenician coast. Tyre is singled out for its wisdom, its fortress, and its wealth, and God announces that he will dispossess it and burn it. The confidence of the richest city on the coast is turned into its epitaph.",
+      "grammar": "Verse 3 turns on a pun: Tsor, ‘Tyre’, built itself a matsor, ‘fortress’. Silver heaped ‘like dust’ and gold ‘like the mud of the streets’ is a picture of wealth so abundant it is common as dirt. In verse 4 yorishennah is the Hiphil of yarash, ‘to dispossess’, the verb of the conquest of Canaan. Vehikkah vayyam cheilah can mean ‘he will strike her wealth into the sea’ or ‘strike down her power on the sea’ (ESV), since cheil means strength, army, or wealth; for a sea power the three were the same thing.",
+      "words": ["H6865", "H4692", "H2449", "H3423H", "H2428G"],
+      "history": "Tyre stood partly on an island about half a mile off the coast, and it had resisted Nebuchadnezzar for about thirteen years in the sixth century BC. In 332 BC Alexander the Great built a causeway from the mainland to the island, took the city after a siege of about seven months, and burned and sold much of its population, as Arrian describes in the second book of his Anabasis of Alexander. Ezekiel had already mocked Tyre's wisdom and wealth in almost the same terms (Ezekiel 28:3-5).",
+      "theology": [
+        { "id": "judgment", "note": "Tyre's wisdom and walls cannot protect it, because the city's security rested on wealth rather than on God. The oracle applies to a pagan city the principle Scripture applies everywhere: what is heaped up in pride will be scattered." }
+      ],
+      "refs": ["Ezekiel 28:3-5", "Ezekiel 26:3-5", "Isaiah 23:8-9", "Amos 1:9-10"]
+    },
+    {
+      "v": "5-6",
+      "context": "The Philistine cities watch Tyre fall and fear. Gaza loses its king, Ashkelon is emptied, and a mixed people settles in Ashdod. The pride of the Philistines, Israel's old enemy, is cut off.",
+      "grammar": "Ki hovish mevattah, ‘for her hope will wither’, is literally ‘her object of trust is put to shame’: Ekron trusted Tyre, and Tyre has fallen. Mamzer, ‘a mixed race’, occurs only here and in Deuteronomy 23:2, where it names a person excluded from the assembly, often understood as one born of a forbidden union. Here it describes Ashdod repopulated by outsiders, a city losing its identity.",
+      "words": ["H0954", "H4007", "H4464", "H1347"],
+      "history": "Gaza, the last strong city on the road to Egypt, resisted Alexander for about two months after Tyre fell in 332 BC. The Roman historian Quintus Curtius Rufus (History of Alexander 4.6) says its commander Batis was put to death after its capture. Many interpreters read ‘a king will perish from Gaza’ against that background, while those who date the chapter earlier point out that the Philistine cities had suffered repeatedly under Assyria and Babylon.",
+      "refs": ["Amos 1:6-8", "Zephaniah 2:4-7", "Deuteronomy 23:2", "Jeremiah 47:4-5"]
+    },
+    {
+      "v": "7",
+      "context": "The judgment on the Philistines becomes a conversion. God removes their unclean food and idolatrous meals, and a remnant of them belongs to Israel's God, like a clan in Judah. Ekron will be like the Jebusites, the Canaanites of Jerusalem who were absorbed into Israel.",
+      "grammar": "Damav mippiv, ‘his blood from his mouth’, uses plural ‘bloods’ for blood shed or eaten, and shiqqutsav, ‘his abominations’, is the word for detestable things tied to idol worship. Venish'ar gam hu leloheinu, ‘and he too will be left for our God’, turns the language of the remnant, usually reserved for Israel, toward a Philistine city. Ke'alluf biYhudah can be read ‘like a chief in Judah’ or, by different vowels, ‘like a clan (elef) in Judah’, the same pair of words that stands behind the difference between Micah 5:2 and Matthew 2:6.",
+      "words": ["H1818", "H8251", "H7604", "H0441B", "H2983G"],
+      "theology": [
+        { "id": "mission", "note": "The oracle that began with judgment on the nations contains an inclusion of former enemies within God's people. The Philistines are not merely defeated; they are cleansed and counted among Judah's clans, a hope that the New Testament sees widening when the gospel reaches Gaza and Azotus, the Greek name for Ashdod (Acts 8:26-40)." }
+      ],
+      "refs": ["Leviticus 17:10-14", "2 Samuel 5:6-9", "Acts 8:40", "Isaiah 19:24-25"]
+    },
+    {
+      "v": "8",
+      "context": "The march of judgment stops at Jerusalem. God himself will camp around his house as a guard against armies passing to and fro, and no oppressor will overrun his people again, because he now sees with his own eyes.",
+      "grammar": "Nogesh, ‘oppressor’ or ‘taskmaster’, is the word used for Israel's Egyptian slave drivers (Exodus 3:7; 5:6), and ra'iti, ‘I have seen’, recalls God's words at the burning bush that he had seen the affliction of his people (Exodus 3:7). The verse presents God's guarding of Jerusalem as a new exodus. Me'over umishav, ‘from one who passes through and one who returns’, describes armies moving back and forth across the land, which was the lot of Judah between Egypt and the northern powers.",
+      "words": ["H2583", "H4675", "H5065", "H7200G", "H5869A"],
+      "theology": [
+        { "id": "providence", "note": "God's attention is the guarantee of his people's safety: ‘now I keep watch with My own eyes’. The verse does not promise that armies will not pass, but that they will not overrun those whom God watches." }
+      ],
+      "refs": ["Exodus 3:7", "Zechariah 2:5", "Psalm 125:2", "Isaiah 52:4"]
+    },
+    {
+      "v": "9",
+      "context": "The center of the chapter. After God clears the land and guards his house, Zion is called to rejoice at the arrival of her king. He is righteous and saved, humble, and riding not a war horse but a donkey. The next verse explains why: he comes to end war.",
+      "grammar": "The two imperatives gili and hari'i, ‘rejoice’ and ‘shout’, echo Zephaniah 3:14-15, where Zion rejoices because the LORD is king in her midst. Tsaddiq venosha hu, ‘righteous and saved is he’: nosha is a Niphal participle, literally ‘saved’ or ‘delivered’, so the king is victorious as one whom God has delivered, as in Psalm 33:16, where no king is saved by his army. The Septuagint turns it into an active participle, sōzōn, ‘saving’. 'Ani, ‘humble’, is the ordinary word for the poor and afflicted; the Septuagint renders it praus, ‘gentle, meek’. The final line is Hebrew parallelism: ‘on a donkey, and on a colt, the foal of donkeys’ describes one animal in two ways, with ‘and’ meaning ‘that is’. Genesis 49:11, Jacob's blessing on Judah, already pictured the ruler's donkey and colt.",
+      "words": ["H1523", "H7321", "H6662", "H3467", "H6041", "H2543", "H5895"],
+      "history": "Rulers of the ancient Near East normally rode horses or chariots in war, but kings and nobles also rode donkeys and mules in peacetime, and Solomon rode David's mule to his coronation (1 Kings 1:33-38). The rabbis read the verse as messianic. The Babylonian Talmud (b. Sanhedrin 98a) records the saying that if Israel is worthy the Messiah will come with the clouds of heaven (Daniel 7:13), and if not, lowly and riding on a donkey.",
+      "nt": [
+        { "ref": "Matthew 21:5", "note": "Matthew quotes the verse at Jesus' entry into Jerusalem: “Say to the Daughter of Zion, ‘See, your King comes to you, gentle and riding on a donkey, on a colt, the foal of a donkey.’” The opening line comes from Isaiah 62:11, not Zechariah. Matthew follows the Septuagint's ‘gentle’ (praus) and omits ‘righteous and victorious’, putting all the weight on the king's lowliness. Only Matthew mentions two animals, a donkey and her colt (21:2, 7), and says Jesus sat ‘on them’. Critics since the nineteenth century, David Friedrich Strauss among them, argued that Matthew misunderstood the parallelism and invented a second animal. Others reply that a Jewish writer steeped in the Psalms would know parallelism, that an unbroken colt (Mark 11:2) would naturally be led beside its mother, and that ‘them’ most naturally refers to the cloaks." },
+        { "ref": "John 12:15", "note": "John gives a shorter form: “Do not be afraid, O Daughter of Zion. See, your King is coming, seated on the colt of a donkey.” The words ‘do not be afraid’ come from elsewhere, possibly Zephaniah 3:16 or Isaiah 40:9, replacing Zechariah's call to rejoice. John adds that the disciples understood the connection only after Jesus was glorified (John 12:16), an honest note that the fulfillment was recognized in hindsight. Mark and Luke tell the story without quoting Zechariah, though Luke's crowd praises God for ‘peace in heaven’ (Luke 19:38), close to Zechariah's king of peace." }
+      ],
+      "parallels": ["Matthew 21:1-11", "Mark 11:1-11", "Luke 19:28-40", "John 12:12-19"],
+      "theology": [
+        { "id": "messiah", "note": "The king is righteous, delivered by God, and humble. Zechariah joins royal authority to lowliness in one figure, a union the New Testament sees in Jesus, who calls himself gentle and humble in heart (Matthew 11:29) and uses the same Greek word, praus." }
+      ],
+      "refs": ["Zephaniah 3:14-15", "Genesis 49:10-11", "1 Kings 1:33-38", "Psalm 33:16-17", "Isaiah 62:11"]
+    },
+    {
+      "v": "10",
+      "context": "The king's arrival brings disarmament. God cuts off the chariot and war horse from Ephraim and Jerusalem, north and south alike, and breaks the battle bow; the king speaks peace to the nations, and his rule runs from sea to sea.",
+      "grammar": "Vehikhratti, ‘I will cut off’, is first person: God disarms his own people. The subject then shifts to the king: vedibber shalom lagoyim, ‘and he will speak peace to the nations’. The last line, ‘from sea to sea, and from the River to the ends of the earth’, is almost word for word Psalm 72:8, the royal psalm's prayer for the ideal king, which the BSB there renders “May he rule from sea to sea, and from the Euphrates to the ends of the earth.” Zechariah turns the psalm's prayer into a promise.",
+      "words": ["H3772I", "H7393G", "H7198", "H7965G", "H4915B", "H5104G"],
+      "theology": [
+        { "id": "kingdom", "note": "The king's rule is universal, but it spreads by proclamation of peace, not by chariots. Zechariah pictures a kingdom that removes the tools of war first from God's own people." },
+        { "id": "new-creation", "note": "The breaking of the bow joins a line of prophetic promises in which God ends war itself (Isaiah 2:4; Hosea 2:18; Micah 4:3), a peace the New Testament grounds in Christ, who came and proclaimed peace to those far off and those near (Ephesians 2:17)." }
+      ],
+      "refs": ["Psalm 72:8", "Micah 5:10", "Hosea 2:18", "Isaiah 2:4", "Ephesians 2:17"]
+    },
+    {
+      "v": "11",
+      "context": "God turns to Zion directly: because of the blood of the covenant he will release her prisoners from the waterless pit. The deliverance promised is grounded in God's covenant, not in the prisoners' deserving.",
+      "grammar": "Gam at, ‘as for you also’, is feminine, addressing Daughter Zion. Bedam beritekh is literally ‘by the blood of your covenant’, the covenant made with you; the BSB's ‘My covenant’ interprets it as God's covenant with Zion. Shillachti is a Piel perfect, ‘I have set free’ or ‘I will set free’; the prophetic perfect can present a future act as already settled. ‘A pit with no water in it’ repeats the wording of Joseph's pit (Genesis 37:24) and Jeremiah's cistern (Jeremiah 38:6), stock images of helpless captivity.",
+      "words": ["H1818", "H1285", "H7971H", "H0615", "H0953A"],
+      "nt": [
+        { "ref": "Mark 14:24", "note": "At the Last Supper Jesus says, “This is My blood of the covenant, which is poured out for many.” The phrase ‘blood of the covenant’ goes back first to Exodus 24:8, where Moses sprinkles the people at Sinai, and in the prophets appears only here in Zechariah 9:11. Matthew's account of the Supper follows closely on his quotation of Zechariah 9:9 at the entry, and Hebrews speaks of the ‘blood of the eternal covenant’ by which God brought Jesus back from the dead (Hebrews 13:20). Many interpreters therefore see the entry and the Supper as a deliberate enactment of Zechariah 9 by the humble king who secures his people's release by covenant blood." }
+      ],
+      "theology": [
+        { "id": "covenant", "note": "The prisoners are freed ‘because of the blood’, that is, because God bound himself by a covenant sealed in sacrifice. Release rests on God's commitment, not the captives' strength." }
+      ],
+      "refs": ["Exodus 24:8", "Genesis 37:24", "Jeremiah 38:6", "Isaiah 42:7", "Hebrews 13:20"]
+    },
+    {
+      "v": "12",
+      "context": "The released prisoners are called home to their stronghold and promised a double restoration. Verse 12 turns the release of verse 11 into an invitation.",
+      "grammar": "Asirei hattiqvah, ‘prisoners of the hope’, is one of the Bible's most striking phrases: those in captivity are defined not by the pit but by the hope that holds them. Bitstsaron, ‘stronghold’, occurs only here and may be chosen for its sound, close to Tsiyyon, ‘Zion’. Mishneh, ‘double’, recalls the double portion of the firstborn (Deuteronomy 21:17) and the promise that Zion, having received double for her sins, will receive a double share of joy (Isaiah 40:2; 61:7).",
+      "words": ["H7725G", "H1225", "H0615", "H8615B", "H4932H"],
+      "theology": [
+        { "id": "hope", "note": "Hope here is not a feeling the prisoners manufacture but a bond that holds them to God's promise. They are addressed as people who belong to hope while still in captivity." }
+      ],
+      "refs": ["Isaiah 61:7", "Isaiah 40:2", "Job 42:10", "Hebrews 6:18-19"]
+    },
+    {
+      "v": "13",
+      "context": "The imagery turns to battle. God bends Judah as his bow and loads it with Ephraim as the arrow, and rouses Zion's sons against the sons of Greece. North and south, reunited, become weapons in God's own hand.",
+      "grammar": "Darakhti li Yehudah qeshet, ‘I bend for myself Judah as a bow’, uses the verb for treading a bow to string it. Milleti Efrayim, ‘I fill with Ephraim’, means fitting the arrow to the bow. The metaphor makes the people instruments and God the archer. Yavan is the Hebrew name for the Ionian Greeks, the Greeks of the Aegean coast and islands (Genesis 10:2, 4).",
+      "words": ["H1869", "H7198", "H4390", "H5782", "H3120H"],
+      "history": "The mention of Greece is central to the dating debate. Those who date these chapters to the late fourth century or later read it against Alexander's conquest or the Greek kingdoms that followed; some older critics went as late as the Maccabean wars against the Seleucids in the 160s BC. Those who hold that Zechariah wrote the chapters in the late sixth or early fifth century note that Greeks were already a major power in the eastern Mediterranean then, and that Persia fought Greece in 490 and 480 BC. Ezekiel 27:13 and Joel 3:6 already mention Yavan as a trading people.",
+      "refs": ["Genesis 10:2-4", "Joel 3:6", "Ezekiel 27:13", "Daniel 8:21"]
+    },
+    {
+      "v": "14",
+      "context": "The LORD appears over his people as a warrior in a storm: arrows like lightning, the ram's horn, and whirlwinds from the south. The battle of verse 13 is really God's battle.",
+      "grammar": "Yera'eh, ‘he will appear’, is a Niphal of ra'ah, the verb used of God's appearances to the patriarchs and at Sinai. The imagery is that of a theophany, God's visible coming, drawn from the storm: lightning as his arrows (Psalm 18:14; Habakkuk 3:11), the shofar blast of Sinai (Exodus 19:16, 19), and sa'arot Teman, ‘storm winds of the south’, which recall God's march from Teman in Habakkuk 3:3. Adonai YHWH, ‘the Lord GOD’, pairs the title and the name.",
+      "words": ["H7200G", "H1300B", "H2671", "H7782", "H5591B", "H8486"],
+      "theology": [
+        { "id": "glory", "note": "God's saving intervention is described with the imagery of Sinai and the storm. The one who gave the covenant in thunder is the one who comes to defend the covenant people." }
+      ],
+      "refs": ["Psalm 18:14", "Habakkuk 3:3-11", "Exodus 19:16-19", "1 Thessalonians 4:16"]
+    },
+    {
+      "v": "15",
+      "context": "The LORD of Hosts shields his people. They overcome their enemies and are filled like the temple's sprinkling bowls and drenched like the corners of the altar. Battle imagery and sacrificial imagery merge.",
+      "grammar": "The verse is difficult. Ve'akhelu vekhavshu avnei-qela is literally ‘they will devour and tread down sling stones’, which may mean they trample the enemy's slingstones underfoot or overcome with slingstones. Shatu hamu kemo yayin, ‘they will drink, they will roar as with wine’, describes the noise of victory celebration. The final lines compare them to the mizraq, the bowl used to catch sacrificial blood for dashing on the altar, and to the zaviyyot, the corners of the altar, which were smeared with blood (Leviticus 4:7). Zechariah 14:20 uses the same bowls as a picture of holiness spread through the whole city.",
+      "words": ["H1598", "H3533", "H7050A", "H4219", "H2106", "H4196"],
+      "theology": [
+        { "id": "holiness", "note": "The victory is pictured in the language of the altar. The people God defends become like the temple's holy vessels, a picture that anticipates Zechariah 14:20-21, where even ordinary cooking pots in Jerusalem become holy to the LORD." }
+      ],
+      "refs": ["Zechariah 14:20-21", "Leviticus 4:7", "Exodus 27:3", "Zechariah 12:8"]
+    },
+    {
+      "v": "16-17",
+      "context": "The chapter ends in peace and abundance. The LORD saves his people as a shepherd saves a flock; they sparkle like jewels in a crown on his land; grain and new wine make young men and women flourish. The warrior of verses 13-15 turns out to be a shepherd.",
+      "grammar": "Avnei-nezer, ‘stones of a crown’, uses nezer, the word for the high priest's consecrated diadem (Exodus 29:6) and the king's crown (2 Samuel 1:10). Mitnosesot, ‘sparkling’ or ‘raised up’, is from a root related to nes, ‘banner’, so the jewels may be lifted up like a signal over the land. In verse 17 tuvo and yofyo, ‘his goodness’ and ‘his beauty’, have an ambiguous ‘his’: it may be God's goodness and beauty, or the land's or the people's (the BSB's ‘they’). Dagan and tirosh, ‘grain’ and ‘new wine’, are the covenant blessings of Deuteronomy 7:13.",
+      "words": ["H3467", "H6629G", "H5145H", "H5264", "H2898", "H3308", "H1715", "H8492"],
+      "theology": [
+        { "id": "kingdom", "note": "God's rule ends in a flourishing people on a fruitful land. The chapter's movement from judgment to a humble king to a festive harvest shows that the kingdom's goal is abundant life, not conquest for its own sake." }
+      ],
+      "refs": ["Ezekiel 34:11-12", "Isaiah 62:3", "Deuteronomy 7:13", "Joel 2:19", "Psalm 23:1"]
+    }
+  ]
+}

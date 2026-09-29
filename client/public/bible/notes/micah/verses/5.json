@@ -1,0 +1,125 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "The chapter opens in the present crisis: Jerusalem under siege, its ruler publicly humiliated. The verse belongs with the end of chapter 4 (in the Hebrew Bible it is 4:14), and it sets up the sharpest contrast in the book: the judge of Israel struck on the cheek now, and a ruler from Bethlehem to come.",
+      "grammar": "The first line is a wordplay. Titgodedi bat-gedud uses the Hithpael of gadad, which elsewhere means ‘to gash oneself’ in mourning (Jeremiah 16:6; 47:5) or in frenzied ritual (1 Kings 18:28), beside gedud, ‘a raiding band, troop’. The BSB takes the verb in its other sense, ‘gather in troops’ (‘mobilize your troops’); others render ‘gash yourself, daughter of a raiding band’, a call to mourning. A second play follows: they strike with the shevet, ‘rod’, the cheek of the shofet, ‘judge’. The title ‘judge’ rather than ‘king’ may be deliberate, a ruler reduced to an older, smaller office, and it prepares for the new ‘ruler’ (moshel) of verse 2.",
+      "words": ["H1413", "H1416", "H4692", "H7626G", "H3895H", "H8199"],
+      "history": "Micah's generation saw Sennacherib of Assyria invade Judah in 701 BC. His own annals, preserved on clay prisms (among them the Taylor Prism and the Chicago Prism), claim that he took 46 of Hezekiah's fortified towns and shut Hezekiah up in Jerusalem like a caged bird, and the stone reliefs of his palace at Nineveh show the siege of Lachish near Micah's hometown. A siege ‘laid against us’ fits that campaign, though the humiliated ruler also fits Zedekiah in the Babylonian siege of 587 or 586 BC, who was captured, blinded, and taken to Babylon (2 Kings 25:4-7).",
+      "text": "The Greek Septuagint read the verse differently: it has the daughter being hemmed in by a wall, apparently reading a similar Hebrew root for ‘wall’, and it has them strike ‘the tribes of Israel’ on the cheek, reading shivtei, ‘tribes’, for shofet, ‘judge’. The consonants of the two words are close. The Hebrew as it stands, followed by English translations, has ‘the judge of Israel’.",
+      "refs": ["Micah 4:9-10", "1 Kings 22:24", "Lamentations 3:30", "Matthew 27:30", "John 18:22"]
+    },
+    {
+      "v": "2",
+      "context": "The turn of the chapter. Against the besieged capital and its struck judge, God addresses a village: Bethlehem, too small to count among Judah's clans, will produce the ruler God has chosen, one whose origins reach back to ancient days. The promise does not repair the present dynasty in Jerusalem; it goes back to where David began.",
+      "grammar": "Verse 1 opened with 'attah, ‘now’; verse 2 opens with ve'attah, ‘but you’, a near homophone that sets the two scenes against each other. Tsa'ir lihyot be'alfei Yehudah is literally ‘small to be among the thousands of Judah’, meaning too small to be reckoned among them; elef, ‘thousand’, also names a clan or a military unit. Mimmekha li yetse, ‘from you for me will go out’, puts the dative li, ‘for me’, in the middle: the ruler comes out for God's purpose, as God told Samuel he had chosen a king ‘for Myself’ from Jesse of Bethlehem (1 Samuel 16:1). The title is moshel, ‘ruler’, not melekh, ‘king’. The last line plays on the same root: the one who ‘goes out’ (yetse) has ‘goings out’ (motsa'otav, plural) from qedem, ‘antiquity’, and yemei 'olam, ‘days of old’ or ‘days of eternity’. Elsewhere in Micah and Amos, yemei 'olam and qedem mean the distant past, the age of the patriarchs or David (Micah 7:14, 20; Amos 9:11), which is why most modern commentators read the line as the ruler's ancient Davidic roots. Many Christian interpreters, from the church fathers onward, read it as pointing beyond human ancestry to the eternal existence of the Son; the words allow it, though they do not require it.",
+      "words": ["H1035G", "H0672G", "H6810", "H0505H", "H4910", "H4163", "H6924H", "H5769J"],
+      "history": "Bethlehem lies about six miles south of Jerusalem. Ephrathah was the name of the clan or district around it (Ruth 1:2; 4:11; 1 Samuel 17:12), and the double name marks it off from Bethlehem in Zebulun (Joshua 19:15). The Aramaic Targum of the Prophets, the synagogue paraphrase, renders the verse as a promise that the Messiah will come forth from Bethlehem. Among early Christian writers Justin Martyr quoted the verse as a prophecy of Jesus' birthplace (First Apology 34; Dialogue with Trypho 78), and the Gospel of John records ordinary people in Jerusalem assuming that the Christ would come from David's village (John 7:42).",
+      "nt": [
+        { "ref": "Matthew 2:6", "note": "When Herod asks where the Christ is to be born, the chief priests and scribes answer with this verse, so the quotation is placed on the lips of Israel's own scholars. Matthew's form reads: “‘But you, Bethlehem, in the land of Judah, are by no means least among the rulers of Judah, for out of you will come a ruler who will be the shepherd of My people Israel.’” It follows neither the Hebrew nor the Septuagint exactly. It replaces ‘Ephrathah’ with ‘land of Judah’. It turns ‘small’ into ‘by no means least’, reading the prophecy from its fulfillment: the village is no longer insignificant because of who has come from it. It has ‘rulers’ (hēgemosin) where the Hebrew has ‘thousands’, reading the same consonants as alufei, ‘chiefs’, instead of alfei, ‘clans’. It omits the line about ancient origins. And it closes with words from God's charge to David, ‘You will shepherd My people Israel’ (2 Samuel 5:2), so that Micah's Bethlehem ruler is explicitly identified as the new David. The Septuagint of Micah is close to the Hebrew here, so Matthew's changes are deliberate interpretation, combining two texts in the manner of Jewish exegesis of the period." },
+        { "ref": "John 7:42", "note": "In John some in the crowd object that Jesus comes from Galilee, while Scripture says the Christ comes from David's line and from Bethlehem, David's village. The objection shows that Micah 5:2 was a common messianic expectation in the first century. John, who expects his readers to know that Jesus was of David's line, lets the irony stand: the crowd is right about the prophecy and wrong about Jesus." }
+      ],
+      "theology": [
+        { "id": "messiah", "note": "The coming ruler is defined by his origin in David's town and by God's choosing (‘for Me’). The messianic hope here is not merely that the Davidic line will continue but that God will begin it again from its small beginning." },
+        { "id": "incarnation", "note": "Christians have read the ruler's ‘origins... from the days of eternity’ alongside his birth in Bethlehem as a pairing of eternal origin and human birth. The Hebrew phrase can mean the remote past, so the verse is a support for the doctrine rather than its proof; the doctrine itself rests on texts such as John 1:1-14." }
+      ],
+      "refs": ["1 Samuel 16:1", "2 Samuel 5:2", "Ruth 4:11", "Amos 9:11", "Luke 2:4-7"]
+    },
+    {
+      "v": "3",
+      "context": "‘Therefore’ links the present abandonment to the promise: because the true ruler must come from Bethlehem, Israel will be given up until a woman in labor gives birth. Then the scattered remnant of the ruler's brothers will return. The image of labor picks up 4:9-10, where Zion writhes like a woman giving birth.",
+      "grammar": "Yittenem, ‘he will give them up’, has God as its implied subject: the present suffering is a handing over for a limited time (‘until’). Yoledah yaladah, ‘she who bears has borne’, sets a participle beside a perfect: the one who is in labor has delivered. Who she is has been read in two main ways. Some take her as Zion herself, in labor in 4:9-10, bringing forth a restored people. Others, noting that Micah prophesied in the same years as Isaiah, hear an echo of Isaiah 7:14, where a young woman gives birth to Immanuel, and take her as the ruler's mother. ‘The rest of his brothers’ (yeter echav) are the ruler's kin, the scattered Israelites, who return ‘to’ or ‘with’ the children of Israel, possibly a reunion of north and south.",
+      "words": ["H3651C", "H5414G", "H3205", "H3499A", "H0251I"],
+      "theology": [
+        { "id": "providence", "note": "The abandonment has a limit set by God: ‘until’ the birth. The verse holds judgment and promise in a single sentence, treating the dark interval as part of God's plan rather than its failure." }
+      ],
+      "refs": ["Micah 4:9-10", "Isaiah 7:14", "Revelation 12:1-5", "Isaiah 66:7-9"]
+    },
+    {
+      "v": "4",
+      "context": "The ruler's reign in one sentence: he stands and shepherds in the LORD's strength and in the majesty of the LORD's name, his people live securely, and his greatness reaches the ends of the earth. The small beginning of verse 2 ends in a worldwide rule.",
+      "grammar": "The verbs ve'amad vera'ah, ‘and he will stand and shepherd’, are consecutive perfects, the Hebrew form that carries a sequence into the future. ‘Stand’ suggests a ruler who holds his post firmly, and ra'ah, ‘to pasture, shepherd’, is the standard royal verb (2 Samuel 5:2; Ezekiel 34:23). The ruler acts be'oz YHWH, ‘in the strength of the LORD’, and big'on shem YHWH Elohav, ‘in the majesty of the name of the LORD his God’: his power is derived, and God is ‘his God’. ‘Then’ translates ki 'attah, ‘for now’, the third 'attah in the chapter: the ‘now’ of siege in verse 1 is answered by the ‘now’ of the ruler's greatness.",
+      "words": ["H5975G", "H7462B", "H5797", "H1347", "H1431", "H0657A"],
+      "theology": [
+        { "id": "kingdom", "note": "The ruler's shepherding produces security for his people and extends to the ends of the earth. The kingdom joins care for a particular flock with universal reach, the pattern of Psalm 2:8 and Psalm 72:8." },
+        { "id": "messiah", "note": "The ruler is distinct from the LORD (‘the LORD his God’) and yet acts in the LORD's own strength and name. The New Testament presents Jesus as the good shepherd who fulfills this role (John 10:11-16; Hebrews 13:20)." }
+      ],
+      "refs": ["Ezekiel 34:23-24", "Psalm 2:8", "Psalm 72:8", "John 10:11", "Isaiah 40:11"]
+    },
+    {
+      "v": "5",
+      "context": "The ruler himself will be his people's peace when Assyria invades. The second half of the verse shifts to the people's own voice: they will raise up more than enough leaders against the invader.",
+      "grammar": "Vehayah zeh shalom can be read ‘and this one will be peace’, with zeh pointing back to the ruler, or ‘and this will be peace’, referring to the situation just described. Most translations, including the BSB, take the personal reading, which suits the flow from verse 4. ‘Seven shepherds, even eight leaders’ is a numerical saying of the pattern x, then x plus one (Amos 1:3; Proverbs 30:18; Ecclesiastes 11:2), meaning ‘as many as are needed and more’. Nesikhei adam, ‘princes of men’, uses a rare word for installed leaders (Joshua 13:21; Psalm 83:11).",
+      "words": ["H7965G", "H0804G", "H0759G", "H7462B", "H5257B"],
+      "history": "For Micah's hearers, Assyria was not a symbol but the empire that had destroyed Samaria in 722 BC and whose armies marched through Judah in 701 BC (2 Kings 18:13-19:37). The promise speaks to people who had seen Assyrian troops tramp through their towns. Later readers, long after Assyria's fall in 612 to 609 BC, took Assyria as a type of every empire that threatens God's people.",
+      "theology": [
+        { "id": "messiah", "note": "Peace is identified with a person: the ruler does not merely bring peace, he is peace. Isaiah names the coming child ‘Prince of Peace’ (Isaiah 9:6), and Paul says of Christ that he is our peace (Ephesians 2:14), though Paul does not cite Micah directly." }
+      ],
+      "refs": ["Isaiah 9:6-7", "Ephesians 2:14", "Amos 1:3", "2 Kings 18:13"]
+    },
+    {
+      "v": "6",
+      "context": "The leaders raised up will rule Assyria, the land of Nimrod, with the sword, and the ruler will deliver his people when Assyria invades. The roles reverse: the land that invaded Judah is itself brought under Judah's rule.",
+      "grammar": "Vera'u, ‘and they will shepherd’, is the same verb used of the ruler's gentle rule in verse 4, now applied to ruling a hostile land ‘with the sword’. The irony is intended: shepherding here means subduing. Psalm 2:9 has a similar double sense, where the Hebrew ‘you will break them’ (a verb spelled much like ‘shepherd’) was read by the Septuagint as ‘you will shepherd them’, the reading taken up in Revelation 2:27. Vehitsil, ‘and he will deliver’, returns to the singular: the deliverance is the ruler's work.",
+      "words": ["H7462B", "H2719", "H5248", "H6607", "H5337"],
+      "text": "The Hebrew bifthacheiha reads ‘in its entrances’ or ‘at its gates’ (KJV, ‘in the entrances thereof’). Many scholars repoint it as bappetichah, ‘with the drawn sword’ (compare Psalm 55:21, where a related word means drawn swords), which gives a closer parallel to ‘with the sword’ in the first line. The BSB's ‘with the blade drawn’ follows that reading.",
+      "refs": ["Genesis 10:8-12", "Psalm 2:9", "Revelation 2:27", "Isaiah 14:25"]
+    },
+    {
+      "v": "7",
+      "context": "The first of two pictures of the remnant among the nations: like dew and showers from the LORD, which come without waiting for any human being. The next verse gives the opposite picture, the lion. Both begin with the same words, so the reader is meant to hold them together.",
+      "grammar": "The relative clause ‘which do not wait for man or linger for mankind’ uses the two main Hebrew verbs of hope, qavah (Piel yeqavveh) and yachal (Piel yeyachel). Elsewhere these are the verbs of Israel's waiting for God, and Micah uses yachal in exactly that sense in 7:7, ‘I will wait for the God of my salvation’. Here the dew waits for no human: its coming depends on God alone. Mei'et YHWH, ‘from the LORD’, makes the source explicit.",
+      "words": ["H7611", "H2919", "H7241", "H6960A", "H3176G"],
+      "history": "In the land of Israel almost no rain falls from about May to September, and in those months heavy night dew, especially on the coastal plain and the western hills, sustains crops and pasture. Dew was therefore a sign of blessing (Genesis 27:28; Deuteronomy 33:28) and its withholding a sign of judgment (Haggai 1:10). Dew can also picture overwhelming numbers settling on everything, as in Hushai's advice to fall on David's men as dew falls on the ground (2 Samuel 17:12).",
+      "theology": [
+        { "id": "mission", "note": "The remnant scattered among many peoples is described as a blessing that comes from God and refreshes where it falls. Israel's dispersion is not only punishment; it places God's people among the nations as a means of his blessing, the promise to Abraham (Genesis 12:3) worked out in exile." }
+      ],
+      "refs": ["Hosea 14:5", "Genesis 27:28", "Deuteronomy 32:2", "2 Samuel 17:12", "Micah 7:7"]
+    },
+    {
+      "v": "8-9",
+      "context": "The second picture: the same remnant among the same peoples is like a lion among forest animals and a young lion among sheep, tearing with no one to rescue. Verse 9 turns the picture into a cry or promise that Israel's hand will be raised over its enemies, and they will be cut off.",
+      "grammar": "The two similes (lion, young lion) and the verbs 'avar, ramas, taraf (‘pass through, trample, tear’) echo the lion of Judah in Genesis 49:9 and Balaam's oracles (Numbers 23:24; 24:9). Ve'en matsil, ‘with no one to rescue’, is a phrase Hosea used of God himself as a lion against Israel (Hosea 5:14): what God once was to his unfaithful people, the remnant will be to its oppressors. In verse 9, tarom yadekha, ‘your hand will be lifted’, is an imperfect that can be read as a promise (‘will be lifted’) or a wish (‘may it be lifted’); some take the ‘you’ as the remnant, others as the LORD, making the line a short prayer. Yikkaretu, ‘they will be cut off’, introduces the verb karat that the next verses repeat four times.",
+      "words": ["H0738B", "H3715A", "H2963", "H5337", "H7311A", "H3772I"],
+      "theology": [
+        { "id": "israel", "note": "Set beside verse 7, the lion image shows the remnant's double role among the nations: life-giving for some and irresistible against those who oppose God. Both pictures depend on God, not on the remnant's own numbers or arms." }
+      ],
+      "refs": ["Genesis 49:9", "Numbers 24:9", "Hosea 5:14", "Isaiah 26:11"]
+    },
+    {
+      "v": "10-11",
+      "context": "‘In that day’ opens the chapter's last oracle. The ‘cutting off’ promised against Israel's enemies in verse 9 now turns on Israel itself: God will cut off its horses, chariots, cities, and fortresses. The things Judah trusted for security will be removed.",
+      "grammar": "Vehikhratti, ‘and I will cut off’, begins verses 10, 11, 12, and 13, a hammer-blow repetition. The same verb just promised the cutting off of Israel's enemies (verse 9), so the wordplay is pointed: before God cuts off Israel's enemies, he cuts off Israel's false securities. The verbs are first person: God himself does the removing.",
+      "words": ["H3772I", "H5483M", "H4818", "H4013", "H2040"],
+      "history": "Horses and chariots were the costliest weapons of the age, and Israel's law warned its king not to multiply horses or return to Egypt to get them (Deuteronomy 17:16). Isaiah, Micah's contemporary, condemns the same list of silver, gold, horses, chariots, and idols (Isaiah 2:7-8) and warns against relying on Egypt's cavalry (Isaiah 31:1). Hezekiah's reign saw heavy investment in fortification (2 Chronicles 32:5), and Sennacherib's own claim to have taken 46 walled towns shows how many strongholds Judah had.",
+      "theology": [
+        { "id": "faith", "note": "God's future for his people includes taking away what they relied on in place of him. Micah treats military power as a rival object of trust, the point of Psalm 20:7 and Hosea 14:3." }
+      ],
+      "refs": ["Deuteronomy 17:16", "Isaiah 2:7", "Isaiah 31:1", "Psalm 20:7", "Hosea 14:3"]
+    },
+    {
+      "v": "12-13",
+      "context": "The removal moves from military defenses to religious ones: sorcery, fortune-tellers, carved images, and standing stones. The purpose clause names the goal: Judah will no longer bow down to the work of its own hands.",
+      "grammar": "Keshafim, ‘sorceries’, and me'onenim, ‘soothsayers’, are two of the practices banned in Deuteronomy 18:10-14. Pesilim are carved images and matstsevot are standing stones. The final clause, velo tishtachaveh 'od lema'aseh yadekha, uses the regular verb for bowing in worship (the form grammarians call the Hishtaphel of chavah) with 'od, ‘any longer’: the promise is not only removal but a changed people.",
+      "words": ["H3785", "H6049B", "H6456", "H4676", "H7812", "H4639G"],
+      "history": "Standing stones were common in Canaanite and early Israelite worship. Archaeologists found one set within the Iron Age sanctuary of the royal fortress at Arad in the Negev, and 2 Kings 18:4 credits Hezekiah with smashing the sacred pillars and removing the high places. Micah's oracle assumes that such objects survived or returned; Isaiah 2:6-8 lists the same practices.",
+      "theology": [
+        { "id": "idolatry", "note": "The phrase ‘the work of your own hands’ names the root of idolatry: worshiping what humans have made. Micah sets occult practice and carved images in the same list as horses and fortresses, since all are ways of securing the future without God." }
+      ],
+      "refs": ["Deuteronomy 18:10-14", "2 Kings 18:4", "Isaiah 2:6-8", "Hosea 14:3"]
+    },
+    {
+      "v": "14-15",
+      "context": "The purge ends with the Asherah poles and the cities, and then, in the last verse, turns outward: God will take vengeance on the nations that have not obeyed. The chapter closes where it began, with the nations, but now as those who refused to listen.",
+      "grammar": "Venatashti, ‘I will root out’, is the verb of uprooting in Jeremiah's commission to uproot and to plant (Jeremiah 1:10). In verse 15, naqam, ‘vengeance’, in the Old Testament is the retribution of a rightful authority rather than private revenge (Deuteronomy 32:35, 41, 43). The nations are described as those who lo shame'u, ‘did not listen’, the same verb used of Israel's failure throughout the prophets. Since Micah 4:1-5 pictured the nations streaming to Zion to learn God's ways, these are the nations that heard and refused.",
+      "words": ["H5428", "H0842", "H5359", "H8085H"],
+      "text": "Because the cities were already named in verse 11, some commentators suspect that the word ‘your cities’ in verse 14 originally named idols or another cult object, which would parallel ‘Asherah poles’ more closely. The Hebrew as it stands, followed by English versions, reads ‘your cities’.",
+      "history": "Asherah was a Canaanite goddess, and her symbol was a wooden pole or stylized tree set up at shrines. Inscriptions of about 800 BC from Kuntillet Ajrud in the Sinai bless in the name of Yahweh and his asherah, showing that some Israelites paired the LORD with the goddess or her symbol. Micah and the other prophets treat such pairing as unfaithfulness, not as an acceptable variety of worship.",
+      "theology": [
+        { "id": "judgment", "note": "Judgment falls first on God's own people and then on the nations, and in both cases the charge is refusing to listen. The same standard applies inside and outside the covenant people." },
+        { "id": "kingdom", "note": "The oracle ends by setting the ruler's peace of verses 4-5 against judgment on the disobedient. God's kingdom brings security to those who listen and justice against those who do not." }
+      ],
+      "refs": ["Deuteronomy 16:21", "Jeremiah 1:10", "Micah 4:1-3", "Deuteronomy 32:43", "Romans 12:19"]
+    }
+  ]
+}
