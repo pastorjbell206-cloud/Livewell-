@@ -163,7 +163,7 @@ export function VerseByVerse(props: {
             <li key={e.v} style={{ borderTop: "1px solid var(--border)", paddingTop: "var(--s-3)" }}>
               <h3 style={{ margin: "0 0 6px", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 700 }}>
                 {verse ? (
-                  <a href={`#v${a}`} onClick={() => onVerse(verse)} style={quietLink}>{book.name} {chapter}:{e.v.replace("-", "–")}</a>
+                  <a href={`#v${a}`} onClick={() => onVerse(verse)} style={{ ...quietLink, fontFamily: "var(--U)", fontSize: "14px", fontWeight: 700 }}>{book.name} {chapter}:{e.v.replace("-", "–")}</a>
                 ) : `${book.name} ${chapter}:${e.v.replace("-", "–")}`}
               </h3>
               <VerseEntry entry={e} books={props.books} doctrines={props.doctrines} data={data} lang={lang} only={layer} onWord={props.onWord} />
