@@ -7,6 +7,7 @@
 import { useEffect, useState } from "react";
 import { Link, useRoute } from "wouter";
 import Layout from "@/components/Layout";
+import MoreOnThis from "@/components/MoreOnThis";
 import { Prose } from "@/lib/prose";
 import { SEOMeta } from "@/components/SEOMeta";
 import PageEndNav from "@/components/PageEndNav";
@@ -126,6 +127,7 @@ export default function ContextGuide() {
         </div>
       </section>
 
+      {data && slug && <MoreOnThis href={`/resources/context/${slug}`} />}
       {data && <PageEndNav back={{ href: "/resources/context", label: "Reading Scripture in Context" }} />}
     </Layout>
   );

@@ -276,3 +276,65 @@ export function search(index: SearchIndex, query: string): SearchResult {
   );
   return { results: pool.map((s) => s.item), corrected, partial: !full.length && pool.length > 0 };
 }
+
+// ── related items ("More on this") ──────────────────────────────────────────
+
+const WEAK = new Set([
+  ...Array.from(STOPWORDS),
+  "about", "after", "again", "against", "being", "between", "christian", "christians",
+  "church", "does", "every", "faith", "from", "have", "into", "life", "more", "other",
+  "their", "there", "these", "they", "this", "those", "through", "under", "what",
+  "when", "which", "while", "with", "would", "your",
+]);
+
+/** Significant words of a text: normalized, 4+ letters, not weak. */
+function keywords(text: string): Set<string> {
+  return new Set(
+    normalize(text)
+      .split(" ")
+      .filter((w) => w.length >= 4 && !/^\d/.test(w) && !WEAK.has(w))
+  );
+}
+
+/** "Romans 8:18-28" → "romans 8": a reference's book and chapter. */
+function chapterOf(ref: string): string {
+  const m = normalize(ref).match(/^((?:\d )?[a-z]+(?: [a-z]+)?) (\d+)/);
+  return m ? `${m[1]} ${m[2]}` : "";
+}
+
+/**
+ * Up to `max` items most related to the one at `href` (and `title`, when
+ * several items share an href): shared Scripture chapters count most, then a
+ * shared subject, then shared title words. At most two per kind, so a study
+ * guide surfaces an essay, a wisdom topic, and a how-to rather than four of
+ * one shelf.
+ */
+export function relatedItems(items: CatalogueItem[], href: string, title?: string, max = 4): CatalogueItem[] {
+  const self =
+    items.find((i) => i.href === href && (!title || i.title === title)) ??
+    items.find((i) => i.href === href);
+  if (!self) return [];
+  const selfWords = keywords(`${self.title} ${self.group ?? ""}`);
+  const selfChapters = new Set((self.scripture ?? []).map(chapterOf).filter(Boolean));
+  const scored: { item: CatalogueItem; score: number }[] = [];
+  for (const it of items) {
+    if (it === self || it.href === self.href) continue;
+    let score = 0;
+    for (const ref of it.scripture ?? []) if (selfChapters.has(chapterOf(ref))) score += 3;
+    if (self.group && it.group === self.group) score += 2;
+    const words = keywords(`${it.title} ${it.group ?? ""}`);
+    Array.from(words).forEach((w) => { if (selfWords.has(w)) score += 2; });
+    if (score >= 2) scored.push({ item: it, score });
+  }
+  scored.sort((a, b) => b.score - a.score || (b.item.date ?? "").localeCompare(a.item.date ?? "") || a.item.title.localeCompare(b.item.title));
+  const perKind = new Map<string, number>();
+  const out: CatalogueItem[] = [];
+  for (const { item } of scored) {
+    const n = perKind.get(item.kind) ?? 0;
+    if (n >= 2) continue;
+    perKind.set(item.kind, n + 1);
+    out.push(item);
+    if (out.length >= max) break;
+  }
+  return out;
+}

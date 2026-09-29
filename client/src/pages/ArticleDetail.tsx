@@ -22,6 +22,7 @@ import PageEndNav from "@/components/PageEndNav";
 import ReadingProgressBar from "@/components/ReadingProgressBar";
 import { SEOMeta, getArticleSchema, getBreadcrumbSchema, getQAPageSchema } from "@/components/SEOMeta";
 import { AuthorBio } from "@/components/AuthorBio";
+import ChannelLine from "@/components/ChannelLine";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { CitationCopy } from "@/components/CitationCopy";
 import { AudienceShare } from "@/components/AudienceShare";
@@ -993,6 +994,7 @@ export default function ArticleDetail() {
 
             {/* AUTHOR BIO */}
             <AuthorBio author={author} />
+            <ChannelLine />
 
             {/* REPLY — one link that opens a mail client with the essay's
                 title as the subject. An invitation to disagree, not an ask. */}

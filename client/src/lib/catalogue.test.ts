@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 
-import { buildIndex, formatBytes, lengthBand, normalize, queryTokens, search, type CatalogueItem } from "./catalogue";
+import { buildIndex, formatBytes, lengthBand, normalize, queryTokens, relatedItems, search, type CatalogueItem } from "./catalogue";
 
 const ITEMS: CatalogueItem[] = [
   { kind: "Essay", title: "The Slow Drift That Ends Marriages", href: "/writing/the-slow-drift-that-ends-marriages", summary: "No one signs the papers over a single argument.", group: "Living Well", minutes: 10, date: "2026-05-01" },
@@ -72,5 +72,28 @@ describe("catalogue helpers", () => {
     expect(lengthBand(15)).toBe("medium");
     expect(lengthBand(25)).toBe("long");
     expect(lengthBand(undefined)).toBeUndefined();
+  });
+});
+
+describe("related items", () => {
+  const items: CatalogueItem[] = [
+    { kind: "Study guide", title: "Anxiety", href: "/studyguides/anxiety", scripture: ["Philippians 4:6-7"] },
+    { kind: "Wisdom", title: "Worry", href: "/wisdom/worry", scripture: ["Philippians 4:4-9", "Matthew 6:25"] },
+    { kind: "Essay", title: "Why Anxiety Is Not a Lack of Faith", href: "/writing/the-slow-drift-that-ends-marriages" },
+    { kind: "Essay", title: "Anxiety and the Sovereignty of God", href: "/writing/what-silence-costs-a-marriage" },
+    { kind: "Essay", title: "Anxiety at Midnight", href: "/writing/the-resentment-in-your-marriage" },
+    { kind: "How-to", title: "Budgeting for a Family", href: "/how-tos/budget" },
+  ];
+
+  it("ranks shared Scripture first, keeps at most two per kind, and skips the unrelated", () => {
+    const r = relatedItems(items, "/studyguides/anxiety");
+    expect(r[0].href).toBe("/wisdom/worry");
+    expect(r.filter((i) => i.kind === "Essay").length).toBe(2);
+    expect(r.some((i) => i.href === "/how-tos/budget")).toBe(false);
+    expect(r.some((i) => i.href === "/studyguides/anxiety")).toBe(false);
+  });
+
+  it("returns nothing for an unknown page", () => {
+    expect(relatedItems(items, "/nowhere")).toEqual([]);
   });
 });

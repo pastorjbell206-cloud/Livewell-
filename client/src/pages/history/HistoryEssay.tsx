@@ -5,6 +5,7 @@
 import { useEffect, useState } from "react";
 import { Link, useRoute } from "wouter";
 import Layout from "@/components/Layout";
+import MoreOnThis from "@/components/MoreOnThis";
 import { Prose } from "@/lib/prose";
 import { SEOMeta } from "@/components/SEOMeta";
 import PageEndNav from "@/components/PageEndNav";
@@ -92,6 +93,7 @@ export default function HistoryEssay() {
         </div>
       </section>
 
+      {data && slug && <MoreOnThis href={`/theology/history/${slug}`} />}
       {data && <PageEndNav back={{ href: "/theology/history", label: "Church History" }} />}
     </Layout>
   );
