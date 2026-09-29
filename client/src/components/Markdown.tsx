@@ -7,9 +7,15 @@
  * content uses without dragging shiki, KaTeX, and mermaid into the bundle.
  * Typography comes from the surrounding scope (.article-body, .book-prose,
  * .prose), never from this component.
+ *
+ * Straight quotes are curled at render time (lib/smart-quotes.ts): prose text
+ * only, never inline code, code blocks, raw HTML or link URLs.
  */
 import ReactMarkdown, { type Components } from "react-markdown";
 import remarkGfm from "remark-gfm";
+import { remarkSmartQuotes } from "@/lib/smart-quotes";
+
+const PLUGINS = [remarkGfm, remarkSmartQuotes];
 
 export function Markdown({
   children,
@@ -20,7 +26,7 @@ export function Markdown({
   components?: Components;
 }) {
   return (
-    <ReactMarkdown remarkPlugins={[remarkGfm]} components={components}>
+    <ReactMarkdown remarkPlugins={PLUGINS} components={components}>
       {children}
     </ReactMarkdown>
   );

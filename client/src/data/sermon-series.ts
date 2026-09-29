@@ -61,7 +61,7 @@ export const SERMON_SERIES: SermonSeriesData[] = [
           "The moment a small-town pastor realizes the high school football game has been moved to Sunday morning and nobody from the school board thought to call him. Not hostility — irrelevance. That silence is the sound of Christendom ending.",
         applicationQuestion:
           "Where have you been relying on the culture to do the work of faith for you — and what would it look like to do that work yourself?",
-        relatedArticle: "the-death-of-christendom",
+        relatedArticle: "christendom-is-ending",
       },
       {
         week: 2,
@@ -86,7 +86,7 @@ export const SERMON_SERIES: SermonSeriesData[] = [
           "The underground church in China, which has grown from roughly one million believers in 1949 to an estimated 100 million today — without a single megachurch, a single tax exemption, or a single seat at the table of power.",
         applicationQuestion:
           "If your church lost its building, its tax-exempt status, and its place in the community calendar, what would be left?",
-        relatedArticle: "christianity-after-christendom",
+        relatedArticle: "christendom-is-ending",
       },
       {
         week: 3,
@@ -136,7 +136,7 @@ export const SERMON_SERIES: SermonSeriesData[] = [
           "The barista with a tattoo of the Tree of Life, a copy of Thich Nhat Hanh on the counter, and a grandmother who still prays for him every night. He has not stopped searching. He has stopped searching in church. The question is why.",
         applicationQuestion:
           "Do you know someone who identifies as 'spiritual but not religious'? What are they actually looking for — and where have we failed to offer it?",
-        relatedArticle: "the-rise-of-the-nones",
+        relatedArticle: "why-people-are-leaving-the-church",
       },
       {
         week: 5,
@@ -186,7 +186,7 @@ export const SERMON_SERIES: SermonSeriesData[] = [
           "A church in Portland that meets in a brewery on Tuesday nights. No stage, no band, no fog machine. Forty people around tables, eating together, reading Scripture together, arguing about it honestly. Most of them had left other churches. They did not leave the faith — they rebuilt it, smaller and stranger and closer to the ground.",
         applicationQuestion:
           "If you were planting a church from scratch tomorrow — with no model, no denomination, no budget — what would you build?",
-        relatedArticle: "reconstructing-faith",
+        relatedArticle: "deconstruction-is-not-destruction",
       },
     ],
   },
@@ -350,7 +350,7 @@ export const SERMON_SERIES: SermonSeriesData[] = [
           "A pastor in rural New England whose church went from 200 members to 35 in twenty years. He could have left. Instead, he planted a garden on the unused parking lot, started a community meal on Wednesdays, and opened the building to AA meetings. He said: 'We stopped being a church for Christians and started being a church for the neighborhood. It turns out that is what we should have been all along.'",
         applicationQuestion:
           "What part of your faith depends on cultural support — and what would survive if that support disappeared entirely?",
-        relatedArticle: "the-death-of-christendom",
+        relatedArticle: "christendom-is-ending",
       },
     ],
   },
@@ -414,7 +414,7 @@ export const SERMON_SERIES: SermonSeriesData[] = [
           "When Rabbi Harold Kushner's three-year-old son was diagnosed with progeria (rapid aging syndrome) and died at fourteen, Kushner wrote 'When Bad Things Happen to Good People.' His answer — that God is good but not omnipotent — is honest but incomplete. The Christian claim is stranger: God is omnipotent and chose the cross. Power expressed as suffering. That is harder to believe — and harder to dismiss.",
         applicationQuestion:
           "Has suffering drawn you closer to God or pushed you further away? What does that tell you about your image of who God is?",
-        relatedArticle: "why-does-god-allow-suffering",
+        relatedArticle: "if-god-is-good-why-suffering",
       },
       {
         week: 3,
@@ -439,7 +439,7 @@ export const SERMON_SERIES: SermonSeriesData[] = [
           "A seminary student in her first textual-criticism class discovers that the ending of Mark (16:9-20) was not in the earliest manuscripts. She feels the ground shift beneath her. Her professor says: 'If your faith depends on every comma being original, your faith is in the wrong thing. The question is not whether the Bible is perfect. The question is whether it is true.' She did not lose her Bible that day. She found it.",
         applicationQuestion:
           "Has your understanding of biblical authority been stretched or challenged? What are you afraid of finding — and what might you gain?",
-        relatedArticle: "can-you-trust-the-bible",
+        relatedArticle: "why-trust-the-bible",
       },
       {
         week: 4,
@@ -489,7 +489,7 @@ export const SERMON_SERIES: SermonSeriesData[] = [
           "Georges Lemaitre, a Belgian priest and physicist, proposed the Big Bang theory in 1927. When Pope Pius XII tried to use it as proof of creation, Lemaitre objected — not because he lacked faith but because he understood that using science to prove theology cheapens both. He wanted the science to stand on its own evidence and the faith to stand on its own grounds. That is intellectual integrity.",
         applicationQuestion:
           "Where has the supposed conflict between science and faith caused you to suppress either honest inquiry or genuine belief? What would it look like to hold both?",
-        relatedArticle: "science-and-faith-are-not-at-war",
+        relatedArticle: "faith-and-science",
       },
       {
         week: 6,
@@ -539,7 +539,7 @@ export const SERMON_SERIES: SermonSeriesData[] = [
           "Mother Teresa's private letters, published after her death, revealed that she spent nearly fifty years experiencing what she called 'the darkness' — the complete absence of any felt sense of God's presence. She went to daily Mass, she served the dying, she built an order of thousands of nuns — all without feeling. When asked how, she said: 'I have faith.' Not certainty. Faith. The difference is everything.",
         applicationQuestion:
           "Where are you holding on to certainty because you are afraid of what faith without it would require?",
-        relatedArticle: "the-problem-with-certainty",
+        relatedArticle: "can-you-have-faith-and-doubt",
       },
       {
         week: 8,
@@ -628,7 +628,7 @@ export const SERMON_SERIES: SermonSeriesData[] = [
           "Mars Hill Church in Seattle grew to 15,000 members under Mark Driscoll's leadership before collapsing in 2014 under the weight of well-documented allegations of bullying, plagiarism, and authoritarian governance. The elders who tried to raise concerns were fired. The members who asked questions were disciplined. The structure did not fail — it worked exactly as designed. It was designed to protect the leader, not the people.",
         applicationQuestion:
           "Does your church have structures in place that would catch a leader who was abusing power? If the answer is 'We trust our pastor,' that is not a structure — it is a vulnerability.",
-        relatedArticle: "spiritual-abuse-how-good-theology-gets-weaponized",
+        relatedArticle: "religious-trauma-is-real",
       },
       {
         week: 3,
@@ -653,7 +653,7 @@ export const SERMON_SERIES: SermonSeriesData[] = [
           "A pastor's wife sits in the car in the church parking lot every Sunday for ten minutes before going inside, trying to stop crying. She has clinical depression. She cannot tell anyone because her husband's job depends on their family looking healthy. She smiles in the foyer, teaches Sunday school, and goes home and lies in the dark. The church does not know. The church has made it impossible for her to tell them.",
         applicationQuestion:
           "If someone in your congregation said, 'I am on antidepressants,' would the first response be compassion or concern? What does that response reveal about your theology of the body?",
-        relatedArticle: "church-and-mental-health",
+        relatedArticle: "mental-health-and-the-church-beyond-pray-about-it",
       },
       {
         week: 4,
@@ -678,7 +678,7 @@ export const SERMON_SERIES: SermonSeriesData[] = [
           "A small church in a Midwest college town lost half its congregation during a denominational split. The remaining fifty people had a choice: close the doors or reimagine. They chose to reimagine. They put their finances online for anyone to see. They created an elder board with term limits and external accountability. They started a relationship with a local therapist who attends for free. Ten years later, they are still fifty people — and every one of them chose to be there.",
         applicationQuestion:
           "If you were describing the healthiest church you can imagine — not the biggest, not the most exciting, but the healthiest — what would it look like? Are you building that?",
-        relatedArticle: "finding-a-good-church",
+        relatedArticle: "how-to-find-a-church-worth-joining",
       },
     ],
   },
@@ -767,7 +767,7 @@ export const SERMON_SERIES: SermonSeriesData[] = [
           "Asaph, the psalmist, wrote Psalm 73 about nearly losing his faith when he saw the wicked prosper and the righteous suffer. He was honest: 'My feet had almost stumbled.' But he did not stop there. He went to the temple — he stayed in community — and his perspective shifted. The doubt was real. The faith was real. Both lived in the same person at the same time. That is what you are teaching your children is possible.",
         applicationQuestion:
           "When your child expresses doubt, does your first instinct point toward correction or toward companionship? Which one builds a faith that lasts?",
-        relatedArticle: "the-spirituality-of-doubt",
+        relatedArticle: "can-you-have-faith-and-doubt",
       },
       {
         week: 4,
@@ -881,7 +881,7 @@ export const SERMON_SERIES: SermonSeriesData[] = [
           "Nicholas Wolterstorff, the Yale philosopher, lost his twenty-five-year-old son Eric in a mountain-climbing accident. In 'Lament for a Son,' he wrote: 'I shall look at the world through tears. Perhaps I shall see things that dry-eyed I could not see.' He did not find an answer. He found a God who weeps. That is what the Bible actually says about suffering: not an answer but a companion.",
         applicationQuestion:
           "When you suffer, do you need an explanation or a presence? And which one does the church tend to offer?",
-        relatedArticle: "why-does-god-allow-suffering",
+        relatedArticle: "if-god-is-good-why-suffering",
       },
       {
         week: 3,
@@ -931,7 +931,7 @@ export const SERMON_SERIES: SermonSeriesData[] = [
           "Frederick Buechner wrote: 'Of the Seven Deadly Sins, anger is possibly the most fun. To lick your wounds, to smack your lips over grievances long past, to roll over your tongue the prospect of bitter confrontations still to come, to savor to the last toothsome morsel both the pain you are given and the pain you are giving back — in many ways it is a feast fit for a king. The chief drawback is that what you are wolfing down is yourself.' That is the difference: righteous anger seeks justice. Toxic anger eats the one who holds it.",
         applicationQuestion:
           "What makes you angry? Is your anger aimed at the right target — and are you willing to let it go before it becomes bitterness?",
-        relatedArticle: "when-politics-replaced-theology",
+        relatedArticle: "how-the-religious-right-was-built",
       },
       {
         week: 5,
@@ -956,7 +956,7 @@ export const SERMON_SERIES: SermonSeriesData[] = [
           "Abraham Joshua Heschel wrote that the Sabbath is 'a palace in time.' Six days a week we build in space — houses, offices, cities. On the seventh, we build in time — rest, prayer, presence, gratitude. The Sabbath is not what you do when the work is done. It is the work — the hardest kind, because it requires you to trust that the world will not collapse if you stop holding it up.",
         applicationQuestion:
           "When was the last time you rested — truly rested, not collapsed from exhaustion? What would it take to build one day of genuine Sabbath into your week?",
-        relatedArticle: "faith-at-work",
+        relatedArticle: "what-is-vocation-work-as-calling",
       },
       {
         week: 6,

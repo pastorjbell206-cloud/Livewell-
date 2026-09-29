@@ -28,7 +28,7 @@ export default function PropheticPosture({ config }: { config: SectionConfig }) 
     <Layout>
       <SEOMeta title={`${m?.title ?? "Start here"} — ${config.label}`} description={m?.subtitle ?? "Before the questions, the ground rules."} url={`https://www.livewellbyjamesbell.co${config.base}/posture`} />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
             <Link href={config.base} style={{ color: "inherit" }}>{config.label}</Link> · Start here
@@ -53,10 +53,10 @@ export default function PropheticPosture({ config }: { config: SectionConfig }) 
           ))}
 
           {m.justiceTerms?.length > 0 && (
-            <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4)", color: "var(--bone)" }}>
+            <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4)", color: "var(--charcoal-fg)" }}>
               <div style={wrap}>
                 <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "10px" }}>The words underneath</div>
-                <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px, 3.4vw, 32px)", fontWeight: 400, color: "var(--bone)", marginBottom: "var(--s-4)" }}>The vocabulary of biblical justice</h2>
+                <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px, 3.4vw, 32px)", fontWeight: 400, color: "var(--charcoal-fg)", marginBottom: "var(--s-4)" }}>The vocabulary of biblical justice</h2>
                 <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "14px" }}>
                   {m.justiceTerms.map((t) => (
                     <div key={t.term} style={{ background: "rgba(245,240,230,0.06)", border: "1px solid rgba(245,240,230,0.14)", borderRadius: "var(--radius-sm)", padding: "16px" }}>

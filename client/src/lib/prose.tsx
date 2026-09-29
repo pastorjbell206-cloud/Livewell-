@@ -9,6 +9,7 @@
  * breaks, else grouping sentences); pass `markdown` to render Markdown instead.
  */
 import { Markdown } from "@/components/Markdown";
+import { smartQuotes } from "@/lib/smart-quotes";
 
 /**
  * Turn a prose field into readable paragraphs. Honors explicit blank-line
@@ -48,7 +49,7 @@ export function Prose({
     <div className={`article-body prose-section ${className}`.trim()}>
       {markdown
         ? <Markdown>{text}</Markdown>
-        : toParagraphs(text).map((p, i) => <p key={i}>{p}</p>)}
+        : toParagraphs(text).map((p, i) => <p key={i}>{smartQuotes(p)}</p>)}
     </div>
   );
 }

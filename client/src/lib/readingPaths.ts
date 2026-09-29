@@ -78,13 +78,6 @@ export const READING_PATHS: ReadingPath[] = [
       "Where the church has merged the cross with the flag — Christian nationalism, the gospel of patriotism, and fear dressed up as theology. The aim is not caricature. It is to name the fusion and trace it to its root.",
     entries: [
       {
-        title: "When God Bless America Replaces Thy Kingdom Come",
-        slug: "when-god-bless-america-replaces-thy-kingdom-come",
-        blurb:
-          "How patriotism became the practical savior of American Christianity.",
-        available: true,
-      },
-      {
         title:
           "When the Church Becomes a Political Brand — and How to Step Back",
         slug: "church-political-brand-step-back",
@@ -92,7 +85,7 @@ export const READING_PATHS: ReadingPath[] = [
         available: true,
       },
       {
-        title: "The Flag in the Sanctuary: How It Got There",
+        title: "Should Churches Have an American Flag in the Sanctuary?",
         slug: "the-flag-in-the-sanctuary",
         blurb:
           "The historical arc from Constantine's bargain through 1950s civil religion to now.",
@@ -170,14 +163,14 @@ export const READING_PATHS: ReadingPath[] = [
       "The quieter idolatries of the progressive church, named with the same honesty — justice severed from love, the confidence of being on the right side of history mistaken for the right side of Scripture. The harder essay to write for this audience, which is exactly why it matters.",
     entries: [
       {
-        title: "Justice Without Love Is Ideology",
-        slug: "justice-without-love-ideology",
+        title: "What Is Solidarity? Why Justice Without Love Becomes Ideology",
+        slug: "solidarity-theological-virtue",
         blurb: "What happens when a good thing takes God's place.",
         available: true,
       },
       {
-        title: "Why Racial Reconciliation Without Repentance Is Just Branding",
-        slug: "racial-reconciliation-without-repentance",
+        title: "What Does the Bible Say About Race and Racial Reconciliation?",
+        slug: "the-image-of-god-and-the-lie-of-race",
         blurb: "The cost of a reconciliation that skips confession.",
         available: true,
       },
@@ -244,85 +237,56 @@ export const READING_PATHS: ReadingPath[] = [
       "How translation, tradition, and tribe edit the text we claim to believe. This is the method under the whole project — learning to see the lenses before you read, and what the Bible actually says about power, empire, justice, and allegiance.",
     entries: [
       {
-        title: "Justice Is Not a Political Category: It Is a Theological One",
+        title: "Is Biblical Justice Political? What Scripture Means by Justice",
         slug: "justice-not-political-theological",
         blurb:
           "How a word that appears hundreds of times in Scripture became a partisan signal.",
         available: true,
       },
       {
-        title: "Mishpat and Tsedaqah",
-        slug: "mishpat-tsedaqah",
-        blurb: "Two Hebrew words the church has flattened.",
-        available: true,
-      },
-      {
-        title: "What Micah 6:8 Actually Demands",
+        title: "What Does Micah 6:8 Mean? Justice, Kindness and a Humble Walk",
         slug: "micah-6-8-demands",
         available: true,
       },
       {
-        title: "What Leviticus 19 Demands in a Border Crisis",
-        slug: "leviticus-19-border-crisis",
+        title: "What Does the Bible Say About Immigration and Refugees?",
+        slug: "what-the-bible-says-about-immigrants-and-refugees-in-depth",
         available: true,
       },
       {
-        title: "What the Good Samaritan Is Actually Arguing",
-        slug: "good-samaritan-arguing",
+        title: "What Is the Parable of the Good Samaritan Really About?",
+        slug: "good-samaritan-actually-arguing",
         available: true,
       },
       {
-        title: "What the Jubilee Means",
-        slug: "what-jubilee-means",
+        title: "What Is the Year of Jubilee? The Bible on Land and Debt",
+        slug: "jubilee-debt-and-the-economy-god-commanded",
         available: true,
       },
       {
-        title: "The Widow, the Orphan, the Stranger",
+        title: "What Does the Bible Say About Widows, Orphans and Strangers?",
         slug: "widow-orphan-stranger",
         available: true,
       },
       {
-        title: "What the Greek Actually Says: Why Original Language Matters",
-        slug: "greek-original-language-matters",
+        title: "How to Read the Bible in Context, and Let It Read You",
+        slug: "how-to-read-the-bible-without-making-it-say-what-you-want",
         available: true,
       },
       {
-        title: "The Kingdom of God Is Not What You Think It Is",
-        slug: "kingdom-of-god-not-what-you-think",
+        title: "What Is the Kingdom of God? What Jesus Meant by It",
+        slug: "what-is-the-kingdom-of-god-and-why-it-changes-everything",
         available: true,
       },
       {
-        title: "Sin Is Not Just What You Do — It's What You Are",
-        slug: "sin-not-just-what-you-do",
+        title: "What Is Sin? What the Bible Says Went Wrong With the World",
+        slug: "what-went-wrong",
         available: true,
       },
       {
         title: "Six Lenses That Distort the Bible Before You Read a Word",
         slug: "six-lenses-that-distort-the-bible",
         blurb: "The cultural-lenses spine, made into a standalone.",
-        available: true,
-      },
-      {
-        title: "Proof-Texting Is How Both Sides Win and the Text Loses",
-        slug: "proof-texting",
-        available: true,
-      },
-      {
-        title: "What the Original Audience Heard",
-        slug: "what-the-original-audience-heard",
-        blurb: "And why it wasn't addressed to you first.",
-        available: true,
-      },
-      {
-        title: "The Whole Counsel",
-        slug: "the-whole-counsel",
-        blurb: "Why cherry-picking is the American hermeneutic.",
-        available: true,
-      },
-      {
-        title: "Reading in Community, Not in a Tribe",
-        slug: "reading-in-community",
-        blurb: "The difference, and why it's not the same as your group chat.",
         available: true,
       },
     ],
@@ -334,7 +298,7 @@ export const READING_PATHS: ReadingPath[] = [
       "The civilizational shift under everything else — why your faith feels different now. The collapse of cultural Christianity and what faithfulness looks like on the other side of cultural power, held without nostalgia.",
     entries: [
       {
-        title: "The Church Has a Credibility Problem",
+        title: "Why Don't People Trust the Church Anymore? The Credibility Crisis",
         slug: "church-credibility-problem",
         blurb: "Why the watching world stopped believing us.",
         available: true,
@@ -346,15 +310,14 @@ export const READING_PATHS: ReadingPath[] = [
         available: true,
       },
       {
-        title: "Complicity Is Not Innocence",
-        slug: "complicity-not-innocence",
+        title: "Is Sin Only Personal? What the Bible Says About Systemic Sin",
+        slug: "individual-sin-and-systemic-sin-explained",
         blurb: "What silence costs the witness.",
         available: true,
       },
       {
-        title:
-          "Engaging the 'Nones' — What Research Tells Us About Reaching the Unaffiliated",
-        slug: "engaging-nones-religiously-unaffiliated",
+        title: "How to Talk About Your Faith Without Being Weird or Pushy",
+        slug: "how-to-talk-about-faith",
         available: true,
       },
       {
@@ -369,13 +332,13 @@ export const READING_PATHS: ReadingPath[] = [
         available: true,
       },
       {
-        title: "Christendom: A 1,700-Year Story That Is Ending",
+        title: "What Is Christendom, and What Comes After It?",
         slug: "christendom-is-ending",
         blurb: "From Theodosius to the present, the arc named.",
         available: true,
       },
       {
-        title: "Exile Is Not the End",
+        title: "Are Christians Exiles? Jeremiah 29 and the Welfare of the City",
         slug: "exile-is-not-the-end",
         blurb: "Jeremiah 29 and the work of a displaced church.",
         available: true,

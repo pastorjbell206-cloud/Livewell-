@@ -4,12 +4,14 @@ import react from "@vitejs/plugin-react";
 import path from "node:path";
 import { defineConfig } from "vite";
 import { VitePWA } from "vite-plugin-pwa";
+import { paintFirstPlugin } from "./vite-paint-first";
 
 const isDev = process.env.NODE_ENV !== "production" && !process.env.VERCEL;
 
 const plugins = [
   react(),
   tailwindcss(),
+  paintFirstPlugin(),
   // Dev-only debug plugin: it stamps data-loc attributes on every JSX element
   // (10,613 of them were shipping to production).
   ...(isDev ? [jsxLocPlugin()] : []),

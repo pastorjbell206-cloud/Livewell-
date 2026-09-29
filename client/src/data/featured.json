@@ -1,0 +1,11 @@
+{
+  "_comment": "The essays the front page leads with, in order. Edit here; scripts/build-public-essays.mjs emits /essays/featured.json from it so the front page never downloads the whole index.",
+  "flagship": [
+    "what-the-gospel-actually-is",
+    "what-is-the-kingdom-of-god-and-why-it-changes-everything",
+    "what-christian-nationalism-is-and-is-not",
+    "how-to-read-the-bible-without-making-it-say-what-you-want",
+    "already-and-not-yet-living-between-two-worlds",
+    "why-there-are-so-many-christian-denominations"
+  ]
+}

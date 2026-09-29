@@ -226,7 +226,7 @@ export function ArticleCollections() {
       <section
         style={{
           background: "var(--charcoal)",
-          color: "var(--bone)",
+          color: "var(--charcoal-fg)",
           padding: "var(--s-6) var(--s-4) var(--s-5)",
         }}
       >
@@ -434,7 +434,7 @@ export function ArticleCollections() {
                       gap: "8px",
                       padding: "0.8rem 1rem",
                       background: "var(--charcoal)",
-                      color: "var(--bone)",
+                      color: "var(--charcoal-fg)",
                       fontFamily: "var(--U)",
                       fontSize: "13px",
                       fontWeight: 500,

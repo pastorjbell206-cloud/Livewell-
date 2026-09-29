@@ -110,6 +110,9 @@ export default function MinimalNav() {
 
   return (
     <>
+      {/* Skip link — first focusable element on every page (the nav renders on
+          all of them, including the pages that bypass Layout). Targets #main. */}
+      <a href="#main" className="skip-link">Skip to content</a>
       {/* Search Overlay */}
       {searchOpen && (
         <div
@@ -166,7 +169,7 @@ export default function MinimalNav() {
                   border: "none",
                   borderBottom: "2px solid var(--mustard)",
                   fontSize: "clamp(28px, 4vw, 48px)",
-                  color: "var(--bone)",
+                  color: "var(--charcoal-fg)",
                   outline: "none",
                   padding: "8px 0 16px",
                   caretColor: "var(--mustard)",
@@ -223,7 +226,7 @@ export default function MinimalNav() {
       )}
 
       {/* Main Nav */}
-      <nav
+      <nav className="site-nav"
         style={{
           position: "sticky",
           top: 0,
@@ -237,21 +240,35 @@ export default function MinimalNav() {
           // pushed 32px past a phone viewport (horizontal scroll on every page).
           // Pinned border-box here so 100% includes the padding.
           boxSizing: "border-box",
+          // The legacy `nav.site-nav` rule in index.css caps the bar at 1200px
+          // and pads it; the bar itself is full-bleed, and the inner row below
+          // carries the page grid instead.
+          maxWidth: "none",
+          margin: 0,
+          padding: 0,
+          display: "block",
         }}
       >
+        {/* Same grid as the page content (--w-default plus the side gutter),
+            so the wordmark lines up with the hero's left edge and Subscribe
+            with its right edge instead of floating in a centred cluster. */}
         <div
           style={{
-            maxWidth: "1400px",
+            maxWidth: "calc(var(--w-default) + 2 * var(--gutter))",
             margin: "0 auto",
-            padding: "0 20px",
+            padding: "0 var(--gutter)",
+            boxSizing: "border-box",
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
-            height: "64px",
+            gap: "32px",
+            // Fill the bar's own height (70px, 60px on phones, from the
+            // nav.site-nav rule) so the row sits on its vertical centre.
+            height: "100%",
           }}
         >
-          <Link href="/" style={{ textDecoration: "none" }}>
-            <div>
+          <Link href="/" style={{ textDecoration: "none", flexShrink: 0 }}>
+            <div style={{ display: "inline-block" }}>
               <div
                 style={{
                   fontFamily: "var(--F)",
@@ -439,8 +456,8 @@ export default function MinimalNav() {
               <button
                 type="button"
                 style={{
-                  background: "var(--ink)",
-                  color: "var(--bone)",
+                  background: "var(--charcoal)",
+                  color: "var(--charcoal-fg)",
                   border: "none",
                   borderBottom: "2px solid var(--mustard)",
                   padding: "9px 20px",
@@ -642,8 +659,8 @@ export default function MinimalNav() {
                   flex: 1,
                   textDecoration: "none",
                   textAlign: "center",
-                  background: "var(--ink)",
-                  color: "var(--bone)",
+                  background: "var(--charcoal)",
+                  color: "var(--charcoal-fg)",
                   borderBottom: "2px solid var(--mustard)",
                   padding: "14px 24px",
                   fontFamily: "var(--U)",
@@ -653,25 +670,6 @@ export default function MinimalNav() {
                 }}
               >
                 Subscribe
-              </Link>
-              <Link
-                href="/membership"
-                onClick={() => setMobileOpen(false)}
-                style={{
-                  flex: 1,
-                  textDecoration: "none",
-                  textAlign: "center",
-                  background: "transparent",
-                  color: "var(--ink)",
-                  border: "1px solid var(--ink)",
-                  padding: "13px 24px",
-                  fontFamily: "var(--U)",
-                  fontSize: "14px",
-                  fontWeight: 600,
-                  borderRadius: "var(--radius-sm)",
-                }}
-              >
-                Membership
               </Link>
             </div>
           </div>

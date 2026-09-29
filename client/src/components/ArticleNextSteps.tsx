@@ -23,11 +23,12 @@
  * All styles are inline, referencing CSS variables from index.css.
  */
 
-import { useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Link } from "wouter";
 import { READING_PATHS } from "@/data/reading-paths-post-christian";
 import { pillarForPost } from "@/lib/taxonomy";
-import { caseForEssay } from "@/data/argumentCases";
+import type { ArgumentCase } from "@/data/argumentCases";
+import { ARGUMENT_CASE_SLUGS } from "@/data/argument-case-slugs";
 
 // ─── Tool mapping ────────────────────────────────────────────────────
 
@@ -255,8 +256,15 @@ export default function ArticleNextSteps({
   const pillar = pillarForPost({ slug: articleSlug, pillar: articlePillar });
   const pillarSlug = pillar?.slug;
 
-  // The Test the Case flow built from this essay, when there is one.
-  const argumentCase = useMemo(() => caseForEssay(articleSlug), [articleSlug]);
+  // The Test the Case flow built from this essay, when there is one. Only the
+  // twelve essays a case is built on download the 60 KB of case data.
+  const [argumentCase, setArgumentCase] = useState<ArgumentCase | undefined>(undefined);
+  useEffect(() => {
+    let stale = false;
+    if (!ARGUMENT_CASE_SLUGS.has(articleSlug)) return;
+    import("@/data/argumentCases").then(m => { if (!stale) setArgumentCase(m.caseForEssay(articleSlug)); }).catch(() => {});
+    return () => { stale = true; };
+  }, [articleSlug]);
 
   const tool = useMemo(
     () => getToolForArticle(articleSlug, pillarSlug),

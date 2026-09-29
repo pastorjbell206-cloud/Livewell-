@@ -45,18 +45,13 @@
     },
     {
       "kind": "book",
-      "heading": "Then read the book, free",
-      "note": "Born Again From Atheism is the whole account of a man who left unbelief slowly, against his preference, and did not trade it for a god that small. Read it free; buy the ebook if it is worth keeping.",
+      "heading": "Then read the book",
+      "note": "The book takes the hardest questions a skeptic asks and answers them at length, written by a pastor who asked them himself as an atheist.",
       "items": [
         {
-          "label": "Born Again From Atheism — read free",
-          "href": "/read/born-again-from-atheism",
-          "blurb": "Twelve chapters, written toward the reader still on the other side. The complete book, free to read."
-        },
-        {
-          "label": "Read a sample and buy the ebook",
-          "href": "/born-again-from-atheism",
-          "blurb": "The book's own page, with a free excerpt and the purchase."
+          "label": "Believe: The Rational Case for Christian Faith",
+          "href": "/books/believe",
+          "blurb": "Answers to the hardest questions skeptics ask about God, the Bible, the resurrection, suffering, and hell, from a pastor who was once an atheist."
         }
       ]
     }

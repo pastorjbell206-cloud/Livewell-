@@ -28,7 +28,7 @@ export default function PropheticWitnesses({ config }: { config: SectionConfig }
     <Layout>
       <SEOMeta title={`The Witnesses — ${config.label}`} description="The people who told the church costly truth, or did justice at real cost, across history. Hopeful, concrete, and honest about their flaws." url={`https://www.livewellbyjamesbell.co${config.base}/witnesses`} />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
             <Link href={config.base} style={{ color: "inherit" }}>{config.label}</Link> · The witnesses

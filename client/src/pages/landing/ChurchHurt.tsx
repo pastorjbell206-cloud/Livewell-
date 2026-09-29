@@ -5,13 +5,12 @@ import { SEOMeta } from "@/components/SEOMeta";
 import { LandingSignup } from "@/components/LandingSignup";
 
 const ARTICLES = [
-  { title: "Religious Trauma Is Real", slug: "religious-trauma-is-real" },
-  { title: "Spiritual Abuse in the Church", slug: "spiritual-abuse-how-good-theology-gets-weaponized" },
-  { title: "The Church and Mental Health", slug: "church-and-mental-health" },
-  { title: "The Wreckage of Purity Culture", slug: "purity-culture-and-its-wreckage" },
-  { title: "The Sexual Abuse Crisis in the Church", slug: "sexual-abuse-crisis-in-the-church" },
-  { title: "How to Find a Church That Won't Hurt You", slug: "finding-a-good-church" },
-  { title: "Reconstructing Faith After Deconstruction", slug: "reconstructing-faith" },
+  { title: "What Is Religious Trauma? Signs of Spiritual Abuse in the Church", slug: "religious-trauma-is-real" },
+  { title: "Is Depression a Lack of Faith? Why 'Just Pray About It' Fails", slug: "mental-health-and-the-church-beyond-pray-about-it" },
+  { title: "What Is Purity Culture? History, Harm, and What the Bible Says", slug: "purity-culture-and-its-wreckage" },
+  { title: "Sexual Abuse in the Church and How Churches Should Respond", slug: "sexual-abuse-crisis-in-the-church" },
+  { title: "How to Find a Good Church: What to Look For and What to Avoid", slug: "how-to-find-a-church-worth-joining" },
+  { title: "What Is Faith Deconstruction, and What Does Exvangelical Mean?", slug: "deconstruction-is-not-destruction" },
 ];
 
 const EXTERNAL_RESOURCES = [

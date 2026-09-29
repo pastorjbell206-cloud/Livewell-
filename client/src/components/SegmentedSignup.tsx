@@ -1,13 +1,15 @@
 /**
  * SegmentedSignup — captures email AND audience self-selection in one step.
  *
- * The highest-leverage email move per the audit: segment-on-signup. New
- * subscribers pick "I'm a skeptic / Christian / pastor / just exploring";
- * each segment lands in a different welcome sequence.
+ * The audience choice is stored on the subscriber row via the same
+ * subscribers.subscribe mutation, so the readership and its self-described
+ * segments belong to the author, not to a platform. Nothing is promised on the
+ * strength of the choice: no sender or welcome sequence exists yet (roadmap
+ * LT-4), so the helpers describe the reader, not what they will receive. The
+ * essays themselves arrive via the Substack handoff.
  *
- * The audience choice is stored as the audience_type on the subscriber row
- * via the same subscribers.subscribe mutation; the welcome-sequence picker
- * lives server-side (server/email-sequences.ts).
+ * The pitch is SUBSTACK_PITCH from positioning.ts — the one paragraph used on
+ * /substack, /subscribe, and in the footer.
  */
 import { useState } from "react";
 
@@ -15,6 +17,7 @@ import { trpc } from "@/lib/trpc";
 import { useToast } from "@/contexts/ToastContext";
 import { substackSubscribeUrl } from "@/lib/site";
 import { trackNewsletterSignup } from "@/lib/telemetry";
+import { SUBSTACK_PITCH } from "@/lib/positioning";
 
 type Audience = "skeptic" | "christian" | "pastor" | "exploring";
 
@@ -32,12 +35,12 @@ const AUDIENCES: { value: Audience; label: string; helper: string }[] = [
   {
     value: "pastor",
     label: "I'm a pastor",
-    helper: "Send the pastoral letter and the resources for the work.",
+    helper: "I read for my people as well as for myself.",
   },
   {
     value: "exploring",
     label: "I'm just exploring",
-    helper: "Surprise me. Start me at the beginning.",
+    helper: "I do not know where I stand yet.",
   },
 ];
 
@@ -50,8 +53,8 @@ interface SegmentedSignupProps {
 }
 
 export function SegmentedSignup({
-  title = "Subscribe — and choose what you'll get",
-  description = "One essay a week. Different lead essay depending on who you are.",
+  title = "Subscribe",
+  description = SUBSTACK_PITCH,
   variant = "card",
   source,
 }: SegmentedSignupProps) {
@@ -96,7 +99,7 @@ export function SegmentedSignup({
     // 3. Hand off to Substack to complete the real subscription. Opened inside
     //    the click gesture so it isn't blocked; the success panel keeps a
     //    manual link in case the popup is suppressed.
-    const url = substackSubscribeUrl(email, audience);
+    const url = substackSubscribeUrl(email, source ?? "segmented-signup", audience);
     if (typeof window !== "undefined") {
       window.open(url, "_blank", "noopener,noreferrer");
     }
@@ -116,7 +119,7 @@ export function SegmentedSignup({
       <div
         style={{
           background: isPanel ? "var(--charcoal)" : "var(--card)",
-          color: isPanel ? "var(--bone)" : "var(--ink)",
+          color: isPanel ? "var(--charcoal-fg)" : "var(--ink)",
           border: isPanel ? "none" : "1px solid var(--border)",
           borderLeft: isPanel ? "none" : "2px solid var(--mustard)",
           padding: isPanel ? "var(--s-6) var(--s-5)" : "var(--s-4)",
@@ -130,7 +133,7 @@ export function SegmentedSignup({
             fontWeight: 500,
             letterSpacing: "-0.01em",
             marginBottom: "10px",
-            color: isPanel ? "var(--bone)" : "var(--ink)",
+            color: isPanel ? "var(--charcoal-fg)" : "var(--ink)",
           }}
         >
           One more step
@@ -140,7 +143,7 @@ export function SegmentedSignup({
             fontFamily: "var(--B)",
             fontSize: "14px",
             lineHeight: 1.65,
-            color: isPanel ? "rgba(245,240,230,0.7)" : "var(--ink-muted)",
+            color: isPanel ? "color-mix(in srgb, var(--charcoal-fg) 70%, transparent)" : "var(--ink-muted)",
             marginBottom: "18px",
             maxWidth: "55ch",
           }}
@@ -174,7 +177,7 @@ export function SegmentedSignup({
     <div
       style={{
         background: isPanel ? "var(--charcoal)" : "var(--card)",
-        color: isPanel ? "var(--bone)" : "var(--ink)",
+        color: isPanel ? "var(--charcoal-fg)" : "var(--ink)",
         border: isPanel ? "none" : "1px solid var(--border)",
         borderLeft: isPanel ? "none" : "2px solid var(--mustard)",
         padding: isPanel ? "var(--s-6) var(--s-5)" : "var(--s-4)",
@@ -188,7 +191,7 @@ export function SegmentedSignup({
           fontWeight: 500,
           letterSpacing: "-0.01em",
           marginBottom: "10px",
-          color: isPanel ? "var(--bone)" : "var(--ink)",
+          color: isPanel ? "var(--charcoal-fg)" : "var(--ink)",
         }}
       >
         {title}
@@ -198,7 +201,7 @@ export function SegmentedSignup({
           fontFamily: "var(--B)",
           fontSize: "14px",
           lineHeight: 1.65,
-          color: isPanel ? "rgba(245,240,230,0.7)" : "var(--ink-muted)",
+          color: isPanel ? "color-mix(in srgb, var(--charcoal-fg) 70%, transparent)" : "var(--ink-muted)",
           marginBottom: "20px",
           maxWidth: "55ch",
         }}
@@ -230,10 +233,10 @@ export function SegmentedSignup({
                   gap: "4px",
                   padding: "12px 14px",
                   borderRadius: "var(--radius-sm)",
-                  border: `1px solid ${selected ? "var(--mustard)" : isPanel ? "rgba(245,240,230,0.18)" : "var(--border)"}`,
+                  border: `1px solid ${selected ? "var(--mustard)" : isPanel ? "color-mix(in srgb, var(--charcoal-fg) 18%, transparent)" : "var(--border)"}`,
                   background: selected
                     ? isPanel
-                      ? "rgba(212,160,23,0.12)"
+                      ? "color-mix(in srgb, var(--mustard) 12%, transparent)"
                       : "var(--bone-warm)"
                     : "transparent",
                   cursor: "pointer",
@@ -253,7 +256,7 @@ export function SegmentedSignup({
                     fontFamily: "var(--U)",
                     fontSize: "13px",
                     fontWeight: 600,
-                    color: isPanel ? "var(--bone)" : "var(--ink)",
+                    color: isPanel ? "var(--charcoal-fg)" : "var(--ink)",
                   }}
                 >
                   {opt.label}
@@ -264,7 +267,7 @@ export function SegmentedSignup({
                     fontSize: "12px",
                     lineHeight: 1.4,
                     color: isPanel
-                      ? "rgba(245,240,230,0.6)"
+                      ? "color-mix(in srgb, var(--charcoal-fg) 60%, transparent)"
                       : "var(--ink-muted)",
                   }}
                 >
@@ -286,12 +289,12 @@ export function SegmentedSignup({
             style={{
               flex: "1 1 220px",
               padding: "12px 14px",
-              background: isPanel ? "rgba(245,240,230,0.08)" : "var(--bone)",
-              border: `1px solid ${isPanel ? "rgba(245,240,230,0.18)" : "var(--border)"}`,
+              background: isPanel ? "color-mix(in srgb, var(--charcoal-fg) 8%, transparent)" : "var(--bone)",
+              border: `1px solid ${isPanel ? "color-mix(in srgb, var(--charcoal-fg) 18%, transparent)" : "var(--border)"}`,
               borderRadius: "var(--radius-sm)",
               fontFamily: "var(--B)",
               fontSize: "16px",
-              color: isPanel ? "var(--bone)" : "var(--ink)",
+              color: isPanel ? "var(--charcoal-fg)" : "var(--ink)",
               outline: "none",
             }}
           />

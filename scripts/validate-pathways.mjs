@@ -53,7 +53,12 @@ for (const file of files) {
 
   const movements = Array.isArray(d.movements) ? d.movements : [];
   if (movements.length < 2) fail(file, `needs >= 2 movements (has ${movements.length})`);
-  if (!movements.some((m) => m?.kind === "book")) fail(file, `needs at least one movement of kind "book"`);
+  // A "book" movement is optional since the catalog became James's three books
+  // (Sept 2026): a path with no honest match carries none rather than point at a
+  // retired generated book. When present, it must point at a real book page.
+  movements.filter((m) => m?.kind === "book").forEach((m) => {
+    for (const it of m.items || []) if (!/^\/books(\/|$)/.test(String(it?.href || ""))) fail(file, `book movement links outside /books (${it?.href})`);
+  });
 
   movements.forEach((m, i) => {
     const where = `movement ${i + 1}`;

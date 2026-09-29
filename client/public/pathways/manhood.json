@@ -32,18 +32,6 @@
           "blurb": "A full facilitator toolkit — the answer behind every question."
         }
       ]
-    },
-    {
-      "kind": "book",
-      "heading": "Then read the book — free, then buy",
-      "note": "Read it cover to cover on the site before you ever buy it.",
-      "items": [
-        {
-          "label": "Essays on Manhood",
-          "href": "/read/essays-manhood",
-          "blurb": "The gathered volume, for the man doing the long work of becoming one."
-        }
-      ]
     }
   ]
 }

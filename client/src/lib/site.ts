@@ -4,6 +4,13 @@
 export const SITE_URL = "https://www.livewellbyjamesbell.co";
 export const SITE_NAME = "LiveWell by James Bell";
 export const AUTHOR_NAME = "James Bell";
+/**
+ * The one photograph of James on the site. It still lives on a third-party
+ * CDN: this session could not fetch it (the proxy refused the host). When the
+ * file is saved to client/public/images/james-bell.jpg, point this at
+ * "/images/james-bell.jpg" and every surface follows.
+ */
+export const AUTHOR_PORTRAIT = "https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/IMG_4533_137f3486.jpeg";
 
 // The canonical author bio for book/funnel pages. One sentence pair, one
 // register — every page that carries a bio renders this constant, so the
@@ -23,13 +30,20 @@ export const SUBSTACK_URL = `https://${SUBSTACK_HANDLE}.substack.com`;
 
 // Substack subscribe handoff. Substack has no public signup API, so the
 // genuine subscription has to complete on Substack. We prefill the email and
-// tag the source so the segment carries through.
-export function substackSubscribeUrl(email?: string, source?: string): string {
+// tag the source so attribution carries through.
+//
+// One convention for every placement: utm_medium is WHERE the form sat
+// (footer, subscribe-page, substack-page, essay-series-note) and utm_content
+// is the reader's self-selected audience, when they chose one. The two used to
+// be mixed — one component put the audience in utm_medium — which muddied
+// Substack's source reporting.
+export function substackSubscribeUrl(email?: string, source?: string, audience?: string): string {
   const params = new URLSearchParams();
   if (email) params.set("email", email);
   // Substack reads utm_source/medium on the subscribe page.
   params.set("utm_source", "livewell");
   if (source) params.set("utm_medium", source);
+  if (audience) params.set("utm_content", audience);
   const qs = params.toString();
   return `${SUBSTACK_URL}/subscribe${qs ? `?${qs}` : ""}`;
 }

@@ -1,5 +1,5 @@
 /**
- * Per-essay pillar assignments under the two-movement / six-pillar taxonomy.
+ * Per-essay pillar assignments under the two-movement pillar taxonomy.
  * Generated from scripts/classify-pillars.mjs (uses each essay's current pillar
  * as a prior, with keyword overrides). Edit freely to correct a filing — the
  * resolver in taxonomy.ts reads this first, then falls back to the legacy map.
@@ -48,12 +48,12 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
     "confidence": "high"
   },
   "the-atheist-in-the-pulpit": {
-    "pillar": 4,
+    "pillar": 6,
     "subThemes": [],
     "confidence": "high"
   },
   "excavation-not-demolition": {
-    "pillar": 4,
+    "pillar": 6,
     "subThemes": [],
     "confidence": "high"
   },
@@ -72,7 +72,7 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
     "confidence": "high"
   },
   "the-end-of-home-field-advantage": {
-    "pillar": 4,
+    "pillar": 6,
     "subThemes": [],
     "confidence": "high"
   },
@@ -87,7 +87,7 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
     "confidence": "high"
   },
   "not-persecuted-seduced-crisis-american-christianity": {
-    "pillar": 4,
+    "pillar": 6,
     "subThemes": [],
     "confidence": "med"
   },
@@ -389,7 +389,7 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
     "confidence": "high"
   },
   "engaging-nones-religiously-unaffiliated": {
-    "pillar": 4,
+    "pillar": 6,
     "subThemes": [],
     "confidence": "med"
   },
@@ -792,42 +792,42 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
     "confidence": "high"
   },
   "unity-without-uniformity": {
-    "pillar": 4,
+    "pillar": 6,
     "subThemes": [],
     "confidence": "med"
   },
   "courage-to-be-different": {
-    "pillar": 4,
+    "pillar": 6,
     "subThemes": [],
     "confidence": "med"
   },
   "collaboration-across-denominations": {
-    "pillar": 4,
+    "pillar": 6,
     "subThemes": [],
     "confidence": "med"
   },
   "global-church-is-your-church": {
-    "pillar": 4,
+    "pillar": 6,
     "subThemes": [],
     "confidence": "med"
   },
   "mission-is-not-optional": {
-    "pillar": 4,
+    "pillar": 6,
     "subThemes": [],
     "confidence": "med"
   },
   "your-city-is-mission-field": {
-    "pillar": 4,
+    "pillar": 6,
     "subThemes": [],
     "confidence": "med"
   },
   "church-response-to-culture": {
-    "pillar": 4,
+    "pillar": 6,
     "subThemes": [],
     "confidence": "med"
   },
   "truth-in-post-truth-world": {
-    "pillar": 4,
+    "pillar": 6,
     "subThemes": [],
     "confidence": "med"
   },
@@ -986,7 +986,7 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
     "confidence": "med"
   },
   "christendom-is-ending-christianity-is-not": {
-    "pillar": 4,
+    "pillar": 6,
     "subThemes": [],
     "confidence": "high"
   },
@@ -996,7 +996,7 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
     "confidence": "med"
   },
   "two-kingdoms-faith-and-state": {
-    "pillar": 4,
+    "pillar": 6,
     "subThemes": [],
     "confidence": "high"
   },
@@ -1011,7 +1011,7 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
     "confidence": "high"
   },
   "why-churches-close-and-what-comes-next": {
-    "pillar": 4,
+    "pillar": 6,
     "subThemes": [],
     "confidence": "med"
   },
@@ -1663,5 +1663,64 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
       "practices"
     ],
     "confidence": "high"
-  }
+  },
+  // Filed 2026-09: unfiled Scripture-reading essays that defaulted to the pastoral
+  // pillar. Each excerpt was read before filing; all six are about how the Bible
+  // is read past the tribe, which is what pillar 3 is.
+  "proof-texting": { "pillar": 3, "subThemes": [], "confidence": "high" },
+  "six-lenses-that-distort-the-bible": { "pillar": 3, "subThemes": [], "confidence": "high" },
+  "the-whole-counsel": { "pillar": 3, "subThemes": [], "confidence": "high" },
+  "six-verses-we-memorized": { "pillar": 3, "subThemes": [], "confidence": "high" },
+  "what-the-original-audience-heard": { "pillar": 3, "subThemes": [], "confidence": "high" },
+  "reading-in-community": { "pillar": 3, "subThemes": [], "confidence": "high" },
+  // Filed 2026-09-29: the Left essays in docs/drafts/capture-left were live but
+  // unfiled, so pillar 2 showed two essays against the Right's fifty-nine.
+  "affirmation-is-not-love": { "pillar": 2, "subThemes": [], "confidence": "high" },
+  "authority-we-traded-for-authenticity": { "pillar": 2, "subThemes": [], "confidence": "high" },
+  "cheap-grace-left-hand": { "pillar": 2, "subThemes": [], "confidence": "high" },
+  "conscience-outsourced-to-party": { "pillar": 2, "subThemes": [], "confidence": "high" },
+  "deconstruction-without-reconstruction": { "pillar": 2, "subThemes": [], "confidence": "high" },
+  "right-side-of-history": { "pillar": 2, "subThemes": [], "confidence": "high" },
+  "the-sin-we-stopped-naming": { "pillar": 2, "subThemes": [], "confidence": "high" },
+  "when-justice-becomes-a-gospel": { "pillar": 2, "subThemes": [], "confidence": "high" },
+  // Written 2026-09-29 for pillar 2 after the board review (reviewed drafts in
+  // docs/drafts/capture-left).
+  "progressive-christians-and-abortion": { "pillar": 2, "subThemes": [], "confidence": "high" },
+  "cancel-culture-without-absolution": { "pillar": 2, "subThemes": [], "confidence": "high" },
+  "the-respectable-church": { "pillar": 2, "subThemes": [], "confidence": "high" },
+  "social-gospel-kingdom-without-a-king": { "pillar": 2, "subThemes": [], "confidence": "high" },
+  "why-mainline-churches-declined": { "pillar": 2, "subThemes": [], "confidence": "high" },
+  "bible-with-a-scalpel": { "pillar": 2, "subThemes": [], "confidence": "high" },
+  // The family curriculum, written 2026-09-29 after the board review (reviewed
+  // drafts in content/drafts/marriage and content/drafts/parenting).
+  "abuse-in-a-christian-marriage": { "pillar": 6, "subThemes": ["marriage-covenant", "family-household"], "confidence": "high" },
+  "blended-family-stepparenting": { "pillar": 6, "subThemes": ["marriage-covenant", "family-household"], "confidence": "high" },
+  "can-a-marriage-survive-an-affair": { "pillar": 6, "subThemes": ["marriage-covenant", "family-household"], "confidence": "high" },
+  "caring-for-a-spouse-with-dementia": { "pillar": 6, "subThemes": ["marriage-covenant", "family-household"], "confidence": "high" },
+  "empty-nest-marriage": { "pillar": 6, "subThemes": ["marriage-covenant", "family-household"], "confidence": "high" },
+  "in-laws-leave-and-cleave": { "pillar": 6, "subThemes": ["marriage-covenant", "family-household"], "confidence": "high" },
+  "infertility-and-marriage": { "pillar": 6, "subThemes": ["marriage-covenant", "family-household"], "confidence": "high" },
+  "marriage-after-kids-co-managers": { "pillar": 6, "subThemes": ["marriage-covenant", "family-household"], "confidence": "high" },
+  "midlife-crisis-in-marriage": { "pillar": 6, "subThemes": ["marriage-covenant", "family-household"], "confidence": "high" },
+  "mismatched-desire-in-marriage": { "pillar": 6, "subThemes": ["marriage-covenant", "family-household"], "confidence": "high" },
+  "what-engaged-couples-should-talk-about": { "pillar": 6, "subThemes": ["marriage-covenant", "family-household"], "confidence": "high" },
+  "why-the-first-year-of-marriage-is-hard": { "pillar": 6, "subThemes": ["marriage-covenant", "family-household"], "confidence": "high" },
+  "widowhood-grief-and-remarriage": { "pillar": 6, "subThemes": ["marriage-covenant", "family-household"], "confidence": "high" },
+  "adoption-and-foster-care-the-cost": { "pillar": 6, "subThemes": ["parenting", "family-household"], "confidence": "high" },
+  "christian-school-public-school-or-homeschool": { "pillar": 6, "subThemes": ["parenting", "family-household"], "confidence": "high" },
+  "family-worship-toddlers-and-teenagers": { "pillar": 6, "subThemes": ["parenting", "family-household"], "confidence": "high" },
+  "gender-roles-at-home-boys-and-girls": { "pillar": 6, "subThemes": ["parenting", "family-household"], "confidence": "high" },
+  "grandparents-and-the-faith-of-grandchildren": { "pillar": 6, "subThemes": ["parenting", "family-household"], "confidence": "high" },
+  "helping-children-grieve": { "pillar": 6, "subThemes": ["parenting", "family-household"], "confidence": "high" },
+  "hospitality-open-table-family": { "pillar": 6, "subThemes": ["parenting", "family-household"], "confidence": "high" },
+  "raising-a-child-with-special-needs": { "pillar": 6, "subThemes": ["parenting", "family-household"], "confidence": "high" },
+  "sabbath-at-home-family-rest": { "pillar": 6, "subThemes": ["parenting", "family-household"], "confidence": "high" },
+  "sibling-rivalry-cain-and-abel": { "pillar": 6, "subThemes": ["parenting", "family-household"], "confidence": "high" },
+  "single-parenting-and-the-church": { "pillar": 6, "subThemes": ["parenting", "family-household"], "confidence": "high" },
+  "teaching-kids-money-and-generosity": { "pillar": 6, "subThemes": ["parenting", "family-household"], "confidence": "high" },
+  "teenager-identity-who-am-i": { "pillar": 6, "subThemes": ["parenting", "family-household"], "confidence": "high" },
+  "the-first-year-with-a-baby": { "pillar": 6, "subThemes": ["parenting", "family-household"], "confidence": "high" },
+  "the-over-scheduled-family": { "pillar": 6, "subThemes": ["parenting", "family-household"], "confidence": "high" },
+  "toddler-tantrums-and-the-will": { "pillar": 6, "subThemes": ["parenting", "family-household"], "confidence": "high" },
+  "when-your-adult-child-leaves-the-faith": { "pillar": 6, "subThemes": ["parenting", "family-household"], "confidence": "high" }
 };

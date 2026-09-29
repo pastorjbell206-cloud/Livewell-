@@ -6,9 +6,9 @@ source: fill-1500
 words: 1690
 ---
 
-The pastors' lunch happens four times a year in my city. Twenty, sometimes thirty ministers around tables in a church fellowship hall, eating catered food and doing something that looks like community but mostly is not. Everybody is a little bit on. The questions are pastoral questions — how is your congregation, how is the building project, what are you preaching through right now. Nobody asks the other question. Nobody says: how are you, actually, and is anyone allowed to know?
+In most towns of any size there is a pastors' lunch a few times a year. Twenty, sometimes thirty ministers around tables in a church fellowship hall, eating catered food and doing something that looks like community but mostly is not. Everybody is a little bit on. The questions are pastoral questions — how is your congregation, how is the building project, what are you preaching through right now. Nobody asks the other question. Nobody says: how are you, actually, and is anyone allowed to know?
 
-I have been going to lunches like that for fifteen years. I have made exactly three real friends from them. The three I made did not come from the lunches. They came from what happened when the lunch ended and I kept the conversation going because something in it had touched something real, and I was willing to follow that thread even though following it required more than I was accustomed to giving at a professional gathering.
+A pastor can go to lunches like that for years and come away with only a handful of real friends, and even those will not have come from the lunches. They come from what happens when the lunch ends and someone keeps the conversation going because something in it touched something real, and he is willing to follow that thread even though following it requires more than he is accustomed to giving at a professional gathering.
 
 Real friendship among pastors is rare and it is essential, and the gap between those two realities is the quiet crisis underneath every other pastoral crisis I know about.
 
@@ -42,7 +42,7 @@ Be willing to receive, not just give. Many pastors are structurally incapable of
 
 What you are building, slowly and through the accumulated weight of honest conversation, is what Bonhoeffer called *Gemeinde* — community that is a foretaste of the kingdom rather than a professional association [cite — confirm]. The pastor is not exempt from the need for this. He is, because of the isolation of the role, among those who need it most.
 
-I have three real friends from fifteen years of pastors' lunches and deliberate effort and more failed attempts at genuine connection than I can count. Three is enough. Three is more than most pastors have. Three men who know what is actually happening in my life and my ministry and my soul, who will tell me the truth when I am drifting, who are present in the specific darkness of the specific seasons when the engine runs low.
+Real friends in this vocation are usually counted on one hand, and they come from years of lunches and deliberate effort and more failed attempts at genuine connection than anyone can count. Three is enough. Three is more than most pastors have. Three men who know what is actually happening in your life and your ministry and your soul, who will tell you the truth when you are drifting, who are present in the specific darkness of the specific seasons when the engine runs low.
 
 Find one. Then two. Then three. Not by attending more lunches — though you may have to attend them to find what you're looking for. By following the thread when you feel it, by asking the second question, by being willing to be the first one in the room to set the armor down.
 

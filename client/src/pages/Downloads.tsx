@@ -3,8 +3,7 @@
  *
  * Reads the Library catalogue (/catalogue/index.json, built on every deploy by
  * scripts/build-catalogue.mjs), so the shelf lists exactly what the Library
- * lists and neither can drift: the free Hard Issues booklets (PDF + EPUB), a
- * leader's guide and participant handout for every study, a printable for
+ * lists and neither can drift: a leader's guide and participant handout for every study, a printable for
  * every Reading Scripture in Context guide, each with its file size once the
  * deploy has built it. The books themselves are sold, so they appear last as
  * links to their pages, never as files.
@@ -21,10 +20,6 @@ const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
 /** Section copy for each kind that carries files; wording from the pages that own them. */
 const SHELVES: Record<string, { label: string; blurb: string }> = {
-  Booklet: {
-    label: "The Hard Issues booklets",
-    blurb: "Ten free booklets for the men who lead the church: five on eldership and five on governing the local church. Each as a PDF and an EPUB.",
-  },
   "Study guide": {
     label: "Study guides and curriculum",
     blurb: "Every study ships two printables: a leader's guide with the full teaching and the reasoning behind each question, and a participant handout for the room.",

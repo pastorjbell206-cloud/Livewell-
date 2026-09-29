@@ -89,7 +89,7 @@ export default function TopicPathway() {
       />
 
       {/* HERO */}
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div style={{ ...eyebrow, color: "var(--mustard)", marginBottom: "14px" }}>
             <Link href="/pathways" style={{ color: "inherit", textDecoration: "none" }}>Topic Pathways</Link>

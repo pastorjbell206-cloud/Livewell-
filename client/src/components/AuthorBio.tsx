@@ -5,7 +5,7 @@
  * no "journey," no therapy-speak. Self-implicating, weighted, unhurried.
  */
 import { Link } from "wouter";
-import { SITE_STATS } from "@/config/siteStats";
+import { AUTHOR_PORTRAIT } from "@/lib/site";
 
 interface AuthorBioProps {
   author?: string;
@@ -15,10 +15,9 @@ interface AuthorBioProps {
 }
 
 const JAMES_BELL_BIO =
-  `James Bell has pastored First Baptist Church of Fenton, Michigan, for twelve years. He founded the Pastors Connection Network, now close to eighteen thousand pastors, and ENDS, which equips pastors in remote regions around the world. He was an atheist before he was a Christian. He and Susanna have five sons. He hosts the Following the Way podcast and has written ${SITE_STATS.bookCountWord} books.`;
+  `James Bell has pastored First Baptist Church of Fenton, Michigan, for twelve years. He founded the Pastors Connection Network, now close to eighteen thousand pastors, and ENDS, which equips pastors in remote regions around the world. He was an atheist before he was a Christian. He and Susanna have five sons. He hosts the Following the Way podcast and writes books on theology, church history, and ordinary life.`;
 
-const JAMES_BELL_IMAGE =
-  "https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/IMG_4533_137f3486.jpeg";
+const JAMES_BELL_IMAGE = AUTHOR_PORTRAIT;
 
 const SUSANNA_BELL_BIO =
   "Susanna Bell is married to James Bell and the mother of their five sons. She writes on motherhood and womanhood — out of a fundamentalist girlhood that preached rules as gospel, and the long work of reading for herself the book that world weaponized.";

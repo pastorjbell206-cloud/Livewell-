@@ -191,6 +191,10 @@ export const appRouter = router({
         excerpt: z.string().optional(),
         pillar: z.string().optional(),
         readTime: z.string().optional(),
+        // The admin editor has always had a cover-image field and the posts
+        // table has always had the column, but it was missing here — so Zod
+        // stripped it on every save and the value was silently discarded.
+        coverImage: z.string().optional(),
         featured: z.boolean().optional(),
         published: z.boolean().optional(),
         publishedAt: z.date().optional(),
@@ -201,6 +205,7 @@ export const appRouter = router({
           excerpt: input.excerpt ?? null,
           pillar: input.pillar ?? null,
           readTime: input.readTime ?? null,
+          coverImage: input.coverImage ?? null,
           featured: input.featured ?? false,
           published: input.published ?? false,
           publishedAt: input.publishedAt ?? new Date(),
@@ -217,6 +222,7 @@ export const appRouter = router({
         excerpt: z.string().optional(),
         pillar: z.string().optional(),
         readTime: z.string().optional(),
+        coverImage: z.string().optional(),
         featured: z.boolean().optional(),
         published: z.boolean().optional(),
         publishedAt: z.date().optional(),

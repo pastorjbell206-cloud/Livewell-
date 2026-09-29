@@ -5,11 +5,10 @@ import CrisisFaq, { faqPageSchema } from "@/components/CrisisFaq";
 import { LandingSignup } from "@/components/LandingSignup";
 
 const ARTICLES = [
-  { title: "When God Is Silent and the Room Is Empty", slug: "when-god-is-silent-and-the-room-is-empty" },
-  { title: "The Theology of Saturday", slug: "the-theology-of-saturday" },
-  { title: "What the Psalms Teach About Anger at God", slug: "what-psalms-teach-about-anger-at-god" },
-  { title: "Suffering Without Explanation", slug: "suffering-without-explanation" },
-  { title: "The Weight That Stays", slug: "the-weight-that-stays" },
+  { title: "Why Does God Feel Silent? Faith When God Seems Absent", slug: "when-god-is-silent-and-the-room-is-empty" },
+  { title: "Is It Okay to Be Angry at God? What the Psalms of Lament Teach", slug: "lament-the-prayer-the-church-forgot" },
+  { title: "If God Is Good, Why Is There Suffering? An Honest Answer", slug: "if-god-is-good-why-suffering" },
+  { title: "When Grief Doesn't Go Away: A Christian View of Lasting Grief", slug: "the-weight-that-stays" },
 ];
 
 const FAQ_ITEMS = [

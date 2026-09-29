@@ -35,7 +35,7 @@ export default function PropheticQuestions({ config }: { config: SectionConfig }
     <Layout>
       <SEOMeta title={`Hard Questions — ${config.label}`} description="Is the gospel political? Is Christianity left or right? What even is social justice? Honest answers that take the suspicion seriously from every direction." url={`https://www.livewellbyjamesbell.co${config.base}/questions`} />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
             <Link href={config.base} style={{ color: "inherit" }}>{config.label}</Link> · Hard questions

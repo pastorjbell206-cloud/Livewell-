@@ -13,13 +13,16 @@ import { readStoredJSON, writeStoredJSON } from "@/lib/storage";
 const STORE_KEY = "livewell-announce-dismissed";
 const SEVEN_DAYS = 7 * 24 * 60 * 60 * 1000;
 
-/** The current announcement. Change here; keep it to one line. */
-const ANNOUNCEMENT = {
-  id: "three-books-2026",
-  text: "The shelf is down to three books — each one written by hand.",
-  cta: "See them",
-  href: "/books",
-};
+interface Announcement { id: string; text: string; cta: string; href: string }
+
+/**
+ * The current announcement, or null for none. Keep it to one line, and keep
+ * it news a reader wants (a new book, a new series), never housekeeping: "the
+ * shelf is down to three books" sat above the masthead on every page for
+ * weeks and read as an apology. Example:
+ *   { id: "believe-2026", text: "Believe is out.", cta: "Read the opening", href: "/books/believe" }
+ */
+const ANNOUNCEMENT: Announcement | null = null;
 
 const isDismissRecord = (x: unknown): x is { id: string; at: number } =>
   typeof x === "object" && x !== null &&
@@ -28,11 +31,12 @@ const isDismissRecord = (x: unknown): x is { id: string; at: number } =>
 
 export default function AnnouncementBar() {
   const [hidden, setHidden] = useState(() => {
+    if (!ANNOUNCEMENT) return true;
     const rec = readStoredJSON<{ id: string; at: number } | null>(STORE_KEY, (x): x is { id: string; at: number } | null => x === null || isDismissRecord(x), null);
     return !!rec && rec.id === ANNOUNCEMENT.id && Date.now() - rec.at < SEVEN_DAYS;
   });
 
-  if (hidden) return null;
+  if (hidden || !ANNOUNCEMENT) return null;
 
   return (
     <div

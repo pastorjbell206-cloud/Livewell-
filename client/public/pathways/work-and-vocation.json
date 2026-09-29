@@ -37,18 +37,6 @@
           "blurb": "A full facilitator toolkit — the answer behind every question."
         }
       ]
-    },
-    {
-      "kind": "book",
-      "heading": "Then read the book — free, then buy",
-      "note": "Read it cover to cover on the site before you ever buy it.",
-      "items": [
-        {
-          "label": "The Undivided Life",
-          "href": "/read/the-undivided-life",
-          "blurb": "The case against a faith that lives in the religious corner while the job runs on its own logic."
-        }
-      ]
     }
   ]
 }
