@@ -686,7 +686,7 @@ export const SOCIAL_QUOTES: SocialQuote[] = [
   // 28. Why Gen Z Is Coming Back to Church
   // ─────────────────────────────────────────────────────────────
   {
-    text: "He was not looking for a welcome. He had welcomes everywhere. He was looking for someone who would not lie to him.",
+    text: "He is not looking for a welcome. He has welcomes everywhere. He is looking for someone who will not lie to him.",
     articleSlug: "why-gen-z-is-coming-back-to-church",
     articleTitle: "Why Gen Z Is Coming Back to Church",
     pillar: "Leadership Formation",
@@ -1407,7 +1407,7 @@ export const SOCIAL_QUOTES: SocialQuote[] = [
     author: "James Bell",
   },
   {
-    text: "I had been preaching to my own kitchen for fifteen years and calling it application.",
+    text: "I have been preaching to my own kitchen for twelve years and calling it application.",
     articleSlug: "a-whole-life",
     articleTitle: "A Whole Life",
     pillar: "Integrated Life",

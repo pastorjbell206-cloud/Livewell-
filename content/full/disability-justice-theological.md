@@ -6,7 +6,7 @@ source: fill-1500
 words: 1820
 ---
 
-There is a man in my congregation who has worshiped God in a wheelchair for twenty years. He comes early, parks in the accessible spot, enters through the side door that the rest of the congregation does not use, and sits in the space we have designated near the back. He does not complain. He is generous with his presence and quieter than most about what his Sunday morning costs him.
+Picture a man who has worshiped God from a wheelchair in the same congregation for twenty years. He comes early, parks in the accessible spot, enters through the side door that the rest of the congregation does not use, and sits in the space the church has designated near the back. He does not complain. He is generous with his presence and quieter than most about what his Sunday morning costs him.
 
 I have never preached a sermon on disability justice. That is a confession, not a preamble.
 

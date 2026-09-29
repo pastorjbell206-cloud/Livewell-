@@ -6,13 +6,13 @@ Search engines and answer engines see a second layer beside every essay: a meta 
 
 | Measure | Value |
 |---|---|
-| Essays with a description | 461 |
+| Essays with a description | 491 |
 | Hand-written descriptions | 2 |
-| Derived from the essay's own sentences | 459 |
-| Essays with question-and-answer data | 97 |
-| Average reading grade, descriptions | 9.3 |
+| Derived from the essay's own sentences | 489 |
+| Essays with question-and-answer data | 117 |
+| Average reading grade, descriptions | 9.2 |
 | Average reading grade, original standfirsts | 9.9 |
-| Derived descriptions at grade 12 or above (hand-rewrite queue) | 40 |
+| Derived descriptions at grade 12 or above (hand-rewrite queue) | 41 |
 
 ## Hand-rewrite queue
 
@@ -35,6 +35,7 @@ Derived descriptions that still read at college level. Each is true to the essay
 | 42-the-unreached-people-groups-closest-to-you-that-youve-never-considered | 15 | When the church talks about unreached people groups, the conversation almost always faces outward and away, toward the ethnic and linguistic communities. |
 | 3-treating-sunday-as-the-only-metric | 14.9 | It is easy, especially in a culture that quantifies everything, to measure the health of your ministry by Sunday attendance and sermon reception. |
 | guide-to-every-major-denomination | 14.7 | The existence of denominations embarrasses many Christians and trips up many outsiders. |
+| what-engaged-couples-should-talk-about | 14.6 | Most engaged couples use their conversations to test compatibility, and compatibility is the wrong test. |
 | 50-how-to-lead-when-trust-in-institutions-including-the-church-is-at-an-all-time-low | 14.4 | Trust in government, in media, in healthcare, in universities, in the justice system, all of these have declined to historic lows by multiple measures. |
 | 7-protecting-your-marriage-when-ministry-demands-everything | 14.3 | Ministry and marriage are both long-term commitments that require sustained, intentional investment to flourish. |
 | revitalize-or-replant | 14.1 | The distinction matters because the strategies are completely different. |

@@ -291,6 +291,42 @@
   "grade": 5.3,
   "excerptGrade": 4.1
  },
+ "abuse-in-a-christian-marriage": {
+  "metaDescription": "No verse in Scripture requires anyone to stay where they are being harmed.",
+  "source": "derived",
+  "grade": 5.8,
+  "excerptGrade": 10.4,
+  "qa": {
+   "question": "Does the Bible Require Me to Stay in an Abusive Marriage?",
+   "answer": "No verse in Scripture requires anyone to stay where they are being harmed. The passages most often used to keep a victim at home say something very different when they are read in context, and the church owes an honest account of how it has used them."
+  }
+ },
+ "blended-family-stepparenting": {
+  "metaDescription": "Every stepfamily is born out of a loss, and the stepparent who tries to fill the empty place usually makes it wider.",
+  "source": "derived",
+  "grade": 11.2,
+  "excerptGrade": 10.4
+ },
+ "can-a-marriage-survive-an-affair": {
+  "metaDescription": "An affair forces two questions that people usually ask as one: can this marriage survive, and should it.",
+  "source": "derived",
+  "grade": 8.5,
+  "excerptGrade": 9.1,
+  "qa": {
+   "question": "Can a Marriage Survive an Affair, and Should It?",
+   "answer": "An affair forces two questions that people usually ask as one: can this marriage survive, and should it. Scripture answers the second with more freedom than the church has often allowed, and the first with more hope than the culture expects."
+  }
+ },
+ "caring-for-a-spouse-with-dementia": {
+  "metaDescription": "Our culture quietly believes that a person is their memory, so dementia looks like the end of the person and the end of the marriage.",
+  "source": "derived",
+  "grade": 11.2,
+  "excerptGrade": 10.7,
+  "qa": {
+   "question": "Caring for a Spouse With Dementia: What Do Our Vows Still Ask?",
+   "answer": "Our culture quietly believes that a person is their memory, so dementia looks like the end of the person and the end of the marriage. The Christian faith says we are held in God's memory, and the vow asks for faithfulness, which is not the same as doing everything alone."
+  }
+ },
  "emotional-labor-in-marriage": {
   "metaDescription": "What emotional labor and the mental load really are, why one spouse ends up carrying them, why children deepen the gap, and what Scripture asks of both.",
   "source": "rewrite",
@@ -300,6 +336,58 @@
    "question": "Why Does One Spouse Carry the Whole Mental Load in Marriage?",
    "answer": "The heaviest work in many marriages is not the chores but the watch: the anticipating and remembering that leaves no trace when it is done well. Children multiply it, and Scripture has always called it work that both spouses owe."
   }
+ },
+ "empty-nest-marriage": {
+  "metaDescription": "The empty nest doesn't create the question of who a couple is without the children.",
+  "source": "derived",
+  "grade": 6,
+  "excerptGrade": 9.5,
+  "qa": {
+   "question": "Empty Nest Marriage: Who Are We Now That the Kids Are Gone?",
+   "answer": "The empty nest doesn't create the question of who a couple is without the children. It reveals whether the marriage was a union of two people or a partnership in a project, and Scripture planned for the leaving long before we dreaded it."
+  }
+ },
+ "in-laws-leave-and-cleave": {
+  "metaDescription": "Genesis 2:24 does not tell married children to stop honoring their parents. It moves their first loyalty, and it asks the parents to let it move.",
+  "source": "derived",
+  "grade": 5.4,
+  "excerptGrade": 7.3,
+  "qa": {
+   "question": "What Does 'Leave and Cleave' Mean When In-Laws Interfere?",
+   "answer": "Genesis 2:24 does not tell married children to stop honoring their parents. It moves their first loyalty, and it asks the parents to let it move. Most in-law trouble comes from confusing honor with allegiance, on one side of the family or the other."
+  }
+ },
+ "infertility-and-marriage": {
+  "metaDescription": "Scripture does not hurry this grief, and neither should the church. Inside, the pastor will ask the mothers to stand.",
+  "source": "derived",
+  "grade": 3.7,
+  "excerptGrade": 11.1,
+  "qa": {
+   "question": "How Do Couples Survive Infertility Without Losing Each Other?",
+   "answer": "Infertility is a grief without a funeral, and it strains a marriage because two people mourn it on different schedules while quietly wondering whether they are enough for each other. Scripture does not hurry this grief, and neither should the church."
+  }
+ },
+ "marriage-after-kids-co-managers": {
+  "metaDescription": "Young children turn most couples into a good team, and a team is not the same thing as a marriage.",
+  "source": "derived",
+  "grade": 6.4,
+  "excerptGrade": 9,
+  "qa": {
+   "question": "Why Does Marriage Feel Like a Business Partnership After Kids?",
+   "answer": "Young children turn most couples into a good team, and a team is not the same thing as a marriage. The danger of the early parenting years is not partnership but a partnership that quietly replaces the friendship it was meant to serve."
+  }
+ },
+ "midlife-crisis-in-marriage": {
+  "metaDescription": "The midlife ache is usually honest about something, but it is rarely honest about the marriage.",
+  "source": "derived",
+  "grade": 11.3,
+  "excerptGrade": 11.3
+ },
+ "mismatched-desire-in-marriage": {
+  "metaDescription": "A difference in desire is not a defect in either spouse. Picture a married couple in bed on an ordinary weeknight.",
+  "source": "derived",
+  "grade": 7,
+  "excerptGrade": 9.3
  },
  "the-resentment-in-your-marriage": {
   "metaDescription": "What resentment in marriage means, when a grievance is fair and when it turns to bitterness, and how Scripture moves from honest speech to forgiveness.",
@@ -312,6 +400,16 @@
   "source": "rewrite",
   "grade": 12.3,
   "excerptGrade": 6.9
+ },
+ "what-engaged-couples-should-talk-about": {
+  "metaDescription": "Most engaged couples use their conversations to test compatibility, and compatibility is the wrong test.",
+  "source": "derived",
+  "grade": 14.6,
+  "excerptGrade": 10.5,
+  "qa": {
+   "question": "What Should Engaged Couples Talk About Before Marriage?",
+   "answer": "Most engaged couples use their conversations to test compatibility, and compatibility is the wrong test. The talks that matter teach two people how to keep a promise to someone they cannot yet fully know."
+  }
  },
  "what-silence-costs-a-marriage": {
   "metaDescription": "Why the silent treatment wounds a marriage, when silence protects or listens instead, and what Scripture, Bonhoeffer and Gottman teach about talking again.",
@@ -343,6 +441,42 @@
    "answer": "The stranger across the table is not proof the marriage failed. Both of you changed, as every vow assumed you would, and the question is whether you will learn the person who is actually there, including the one in the mirror."
   }
  },
+ "why-the-first-year-of-marriage-is-hard": {
+  "metaDescription": "The Law of Moses set that year apart for a reason. He loads it one way. She loads it another.",
+  "source": "derived",
+  "grade": 1.8,
+  "excerptGrade": 8.3,
+  "qa": {
+   "question": "Why Is the First Year of Marriage So Hard?",
+   "answer": "The first year of marriage is hard because two people are building one shared world out of two, and because each must lose the spouse they imagined to find the one they married. The Law of Moses set that year apart for a reason."
+  }
+ },
+ "widowhood-grief-and-remarriage": {
+  "metaDescription": "The death of a husband or wife takes away a person and a self at the same time.",
+  "source": "derived",
+  "grade": 5.9,
+  "excerptGrade": 9.4
+ },
+ "adoption-and-foster-care-the-cost": {
+  "metaDescription": "Paul made adoption the name of salvation, and the church has been tempted ever since to cast adoptive parents as the saviors in the story.",
+  "source": "derived",
+  "grade": 11.2,
+  "excerptGrade": 11.7,
+  "qa": {
+   "question": "Should Christians Adopt or Become Foster Parents?",
+   "answer": "Paul made adoption the name of salvation, and the church has been tempted ever since to cast adoptive parents as the saviors in the story. Read in context, Romans 8 and Ephesians 1 give that role to God alone, and ask the families who take a child in to count a cost the recruitment video leaves out."
+  }
+ },
+ "christian-school-public-school-or-homeschool": {
+  "metaDescription": "Faithful Christians choose public school, Christian school and homeschool, and each choice has a serious case behind it.",
+  "source": "derived",
+  "grade": 8.5,
+  "excerptGrade": 7.2,
+  "qa": {
+   "question": "Christian School, Public School or Homeschool: How Do We Choose?",
+   "answer": "Faithful Christians choose public school, Christian school and homeschool, and each choice has a serious case behind it. What Scripture binds is that parents answer for their children's formation. How they school them is a second-order question, and the church should stop treating it as a test of faith."
+  }
+ },
  "discipline-without-domination": {
   "metaDescription": "What biblical discipline means: paideia in Ephesians and Hebrews, the rod in Proverbs read as wisdom, the spanking debate, and correcting without anger.",
   "source": "rewrite",
@@ -355,11 +489,59 @@
   "grade": 11.6,
   "excerptGrade": 10.8
  },
+ "family-worship-toddlers-and-teenagers": {
+  "metaDescription": "We assume worship has to be pitched at a child's level to form him. It's seven-thirty in the evening, and a family is trying to pray together.",
+  "source": "derived",
+  "grade": 7.2,
+  "excerptGrade": 9.1
+ },
+ "gender-roles-at-home-boys-and-girls": {
+  "metaDescription": "Only the first is settled, and only the second is a real doctrinal dispute. Children need their parents to know the difference.",
+  "source": "derived",
+  "grade": 6.4,
+  "excerptGrade": 9.3,
+  "qa": {
+   "question": "Gender Roles in a Christian Home: What Should We Teach Our Kids?",
+   "answer": "Three different questions hide under the phrase gender roles: whether male and female are real and good, whether Scripture gives a husband a distinct headship, and who does the dishes. Only the first is settled, and only the second is a real doctrinal dispute. Children need their parents to know the difference."
+  }
+ },
+ "grandparents-and-the-faith-of-grandchildren": {
+  "metaDescription": "Lois appears in one verse of the Bible, and her whole record is that her faith was sincere and it lived on.",
+  "source": "derived",
+  "grade": 8,
+  "excerptGrade": 10,
+  "qa": {
+   "question": "How Can Grandparents Pass On Their Faith to Grandchildren?",
+   "answer": "Lois appears in one verse of the Bible, and her whole record is that her faith was sincere and it lived on. Grandparents cannot believe for their grandchildren, but the faith of a grandmother has a way of outlasting the generation that set it down."
+  }
+ },
+ "helping-children-grieve": {
+  "metaDescription": "They need honest words, adults who grieve in front of them, and a hope that doesn't lie about the enemy it defeats.",
+  "source": "derived",
+  "grade": 8,
+  "excerptGrade": 10
+ },
+ "hospitality-open-table-family": {
+  "metaDescription": "The modern family was built to be a haven, and a haven is a good thing.",
+  "source": "derived",
+  "grade": 6.1,
+  "excerptGrade": 9.3,
+  "qa": {
+   "question": "How Do We Practice Hospitality as a Family With Kids at Home?",
+   "answer": "The modern family was built to be a haven, and a haven is a good thing. But a haven that only ever shelters its own becomes a fortress, and children raised in a fortress learn a smaller gospel than the one that fed them."
+  }
+ },
  "how-to-talk-kids-faith-doubt": {
   "metaDescription": "How to pass on faith to your kids when you have doubts: what Scripture says, what research on handing down faith found, and why honesty outlasts theater.",
   "source": "rewrite",
   "grade": 9.8,
   "excerptGrade": 7.4
+ },
+ "raising-a-child-with-special-needs": {
+  "metaDescription": "Every parent receives a child they didn't design. The father in Mark 9 prayed 'help us,' and the church is supposed to be part of the answer.",
+  "source": "derived",
+  "grade": 5.4,
+  "excerptGrade": 7.1
  },
  "raising-kids-who-think": {
   "metaDescription": "How to answer kids' hard questions about God: why Scripture expects children to ask, what the catechisms knew, and why owned questions outlast recitation.",
@@ -373,11 +555,73 @@
   "grade": 13.5,
   "excerptGrade": 10.5
  },
+ "sabbath-at-home-family-rest": {
+  "metaDescription": "A day off is rest one person buys, often with someone else's work. A Sabbath is rest a whole household receives together.",
+  "source": "derived",
+  "grade": 6.9,
+  "excerptGrade": 8.3,
+  "qa": {
+   "question": "How Do You Keep the Sabbath as a Family With Young Kids?",
+   "answer": "A day off is rest one person buys, often with someone else's work. A Sabbath is rest a whole household receives together. For a family, keeping one is less about rules than about refusing, one day in seven, the anxious logic that runs the other six."
+  }
+ },
+ "sibling-rivalry-cain-and-abel": {
+  "metaDescription": "The first murder in the Bible is between brothers, and Genesis keeps returning to the same wound through Jacob and Esau and Joseph and his brothers.",
+  "source": "derived",
+  "grade": 11.8,
+  "excerptGrade": 7.6,
+  "qa": {
+   "question": "Am I my brother's keeper?",
+   "answer": "What does this mean for the parent in the minivan? It doesn't mean every squabble is a spiritual crisis, and it doesn't mean children should be lectured on Genesis every time they fight over a seat. Much sibling conflict really is small, and some of it resolves best when parents stay out of it. But it does mean the home is doing something more important than keeping the peace. It is teaching children how to live with the people they didn't choose, whom God has placed beside them, and whom they will know longer than almost anyone else in their lives."
+  }
+ },
+ "single-parenting-and-the-church": {
+  "metaDescription": "The church is right that children flourish with two parents, and wrong to build its life as though every household had them.",
+  "source": "derived",
+  "grade": 8.5,
+  "excerptGrade": 7.8,
+  "qa": {
+   "question": "Why Do Single Parents Feel Invisible at Church?",
+   "answer": "The church is right that children flourish with two parents, and wrong to build its life as though every household had them. Scripture's answer to the parent raising children alone is not a lesser ministry. It is a family, the one Jesus arranged from the cross."
+  }
+ },
+ "teaching-kids-money-and-generosity": {
+  "metaDescription": "Children learn about money less from what we tell them than from what they watch us fear, want and give away.",
+  "source": "derived",
+  "grade": 6.6,
+  "excerptGrade": 8.2,
+  "qa": {
+   "question": "How Do I Teach My Kids About Money and Generosity?",
+   "answer": "Children learn about money less from what we tell them than from what they watch us fear, want and give away. Augustine's distinction between things to be used and things to be enjoyed is still the clearest map a parent has."
+  }
+ },
+ "teenager-identity-who-am-i": {
+  "metaDescription": "Every teenager asks who am I, and our culture tells them to answer by choosing and performing a self.",
+  "source": "derived",
+  "grade": 9.2,
+  "excerptGrade": 9.5
+ },
  "teenager-losing-faith": {
   "metaDescription": "Your first instinct will be to win the argument. The argument is not the thing your teenager is testing. You are.",
   "source": "derived",
   "grade": 3.4,
   "excerptGrade": 4.6
+ },
+ "the-first-year-with-a-baby": {
+  "metaDescription": "The first year with a baby strains the body, the marriage and the soul at once, and most new parents face it more alone than any generation before them.",
+  "source": "derived",
+  "grade": 11.6,
+  "excerptGrade": 6,
+  "qa": {
+   "question": "Why Is the First Year With a Baby So Hard on a Marriage?",
+   "answer": "The first year with a baby strains the body, the marriage and the soul at once, and most new parents face it more alone than any generation before them. The exhaustion is not a verdict on your love or your faith. It is a place God has been before you."
+  }
+ },
+ "the-over-scheduled-family": {
+  "metaDescription": "Youth sports are a real good, and the over-scheduled family is rarely a lazy or worldly one. It is usually an anxious one.",
+  "source": "derived",
+  "grade": 7.4,
+  "excerptGrade": 7.8
  },
  "the-pastors-kids-are-watching": {
   "metaDescription": "Your congregation hears your sermons. Your children watch the drive home.",
@@ -397,6 +641,22 @@
   "grade": 5.5,
   "excerptGrade": 6.5
  },
+ "toddler-tantrums-and-the-will": {
+  "metaDescription": "A toddler's tantrum is where a human will first meets the world's refusal, and the parent's temper usually meets it there too.",
+  "source": "derived",
+  "grade": 9.6,
+  "excerptGrade": 5.8
+ },
+ "when-your-adult-child-leaves-the-faith": {
+  "metaDescription": "When a grown son or daughter leaves the faith, parents reach for guilt and then for strategy. The parable of the prodigal, read carefully, offers neither.",
+  "source": "derived",
+  "grade": 7.6,
+  "excerptGrade": 7.1,
+  "qa": {
+   "question": "My Adult Child Left the Faith. What Do I Do Now?",
+   "answer": "When a grown son or daughter leaves the faith, parents reach for guilt and then for strategy. The parable of the prodigal, read carefully, offers neither. It offers a father who let go, kept watching, ran when he saw the boy, and then went out to plead with the son who never left."
+  }
+ },
  "can-you-have-faith-and-doubt": {
   "metaDescription": "Can a Christian doubt and still believe? What Scripture does with doubters, how doubt differs from unbelief, and why certainty is not the same as faith.",
   "source": "rewrite",
@@ -414,9 +674,9 @@
   "excerptGrade": 5.1
  },
  "depression-or-the-dark-night": {
-  "metaDescription": "On depression, the dark night of the soul, and the line no one should have to find alone. Fifteen years of pastoring keeps sending me the same two people.",
+  "metaDescription": "On depression, the dark night of the soul, and the line no one should have to find alone.",
   "source": "derived",
-  "grade": 5.1,
+  "grade": 5.2,
   "excerptGrade": 10
  },
  "excavation-not-demolition": {
@@ -1474,10 +1734,10 @@
   "excerptGrade": 15.2
  },
  "build-real-friendships-other-pastors": {
-  "metaDescription": "The pastors' lunch happens four times a year in my city. Everybody is a little bit on.",
+  "metaDescription": "In most towns of any size there is a pastors' lunch a few times a year.",
   "source": "derived",
-  "grade": 5.8,
-  "excerptGrade": 15.7
+  "grade": 4.7,
+  "excerptGrade": 4.7
  },
  "building-leadership-team": {
   "metaDescription": "Look at how Paul planted a church and you will notice what he did before he left. He appointed elders.",
@@ -1678,10 +1938,10 @@
   "excerptGrade": 13.2
  },
  "disability-justice-theological": {
-  "metaDescription": "There is a man in my congregation who has worshiped God in a wheelchair for twenty years.",
+  "metaDescription": "Picture a man who has worshiped God from a wheelchair in the same congregation for twenty years.",
   "source": "derived",
-  "grade": 7.7,
-  "excerptGrade": 7.7
+  "grade": 8.4,
+  "excerptGrade": 8.4
  },
  "doctrine-of-discovery": {
   "metaDescription": "What the Doctrine of Discovery is: the papal bulls behind it, Johnson v. M'Intosh, the Vatican's 2023 repudiation, and what Christians owe now.",
@@ -2486,9 +2746,9 @@
   "excerptGrade": 10.5
  },
  "formed-by-screens-technology-and-the-soul": {
-  "metaDescription": "The screen does not only fill our time, it slowly remakes the kind of soul we have time for. My youngest can find a video faster than I can find my keys.",
+  "metaDescription": "The screen does not only fill our time, it slowly remakes the kind of soul we have time for.",
   "source": "derived",
-  "grade": 5,
+  "grade": 6.1,
   "excerptGrade": 6.1
  },
  "how-to-read-the-bible-without-making-it-say-what-you-want": {
