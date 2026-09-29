@@ -10,7 +10,8 @@
  * library does, without gating the share.
  */
 import { useEffect } from "react";
-import { Link, useParams } from "wouter";
+import { Link, useLocation, useParams } from "wouter";
+import MERGED_ESSAYS from "@/data/merged-essays.json";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
@@ -77,12 +78,20 @@ function Prayer({ text }: { text: string }) {
 export default function GroupGuide() {
   const { slug = "" } = useParams();
   const guide = DISCUSSION_GUIDES[slug];
+  const [, navigate] = useLocation();
+  // A guide shared under an essay that has since merged into another follows
+  // it, as the essay page itself does (ArticleDetail), when that one has a guide.
+  const mergedInto = guide ? undefined : (MERGED_ESSAYS as Record<string, string>)[slug];
+  const followTo = mergedInto && DISCUSSION_GUIDES[mergedInto] ? mergedInto : undefined;
 
   // Which essays pastors actually take to a group: the PCN distribution signal.
   // Declared before the not-found early return so the hook order stays stable.
   useEffect(() => {
     if (guide) trackGroupGuideView(slug);
   }, [slug, guide]);
+  useEffect(() => {
+    if (followTo) navigate(`/group-guide/${followTo}`, { replace: true });
+  }, [followTo, navigate]);
 
   if (!guide) {
     return (

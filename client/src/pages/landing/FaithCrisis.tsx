@@ -6,9 +6,8 @@ import { LandingSignup } from "@/components/LandingSignup";
 
 const ARTICLES = [
   { title: "When Fear Rewrites Theology", slug: "when-fear-rewrites-theology" },
-  { title: "When God Doesn't Make Sense", slug: "when-god-doesnt-make-sense" },
+  { title: "Why Does God Feel Silent? Faith When God Seems Absent", slug: "when-god-is-silent-and-the-room-is-empty" },
   { title: "What If We're Wrong?", slug: "what-if-we-are-wrong" },
-  { title: "The Dark Night of the Soul When God Feels Absent", slug: "dark-night-god-feels-absent" },
   { title: "Constantine's Bargain", slug: "constantines-bargain" },
 ];
 

@@ -49,11 +49,11 @@ const READING_PATHS: ReadingPath[] = [
         readTime: "10 min read",
       },
       {
-        title: "How Do You Forgive Without Pretending It Didn't Happen?",
-        slug: "forgiveness-without-pretending",
+        title: "How to Forgive Your Spouse, and Why Forgiveness Isn't Trust",
+        slug: "forgiveness-in-marriage",
         description:
           "Most of what we call forgiveness in marriage is pretending.",
-        readTime: "10 min read",
+        readTime: "19 min read",
       },
     ],
   },
@@ -72,18 +72,11 @@ const READING_PATHS: ReadingPath[] = [
         readTime: "10 min read",
       },
       {
-        title: "When God Stops Making Sense",
-        slug: "when-god-doesnt-make-sense",
+        title: "Why Does God Feel Silent? Faith When God Seems Absent",
+        slug: "when-god-is-silent-and-the-room-is-empty",
         description:
           "We were sold a God who would add up.",
-        readTime: "10 min read",
-      },
-      {
-        title: "What to Do When God Feels Absent",
-        slug: "dark-night-god-feels-absent",
-        description:
-          "The silence is not punishment and it is not your failure.",
-        readTime: "10 min read",
+        readTime: "20 min read",
       },
       {
         title: "How Does the Church Tell the Truth in a Post-Truth Age?",
@@ -130,11 +123,11 @@ const READING_PATHS: ReadingPath[] = [
         readTime: "10 min read",
       },
       {
-        title: "When Ministry Is Quietly Killing Your Marriage",
-        slug: "protecting-marriage-in-ministry",
+        title: "When Work Is Hurting Your Marriage and You Can't Just Quit",
+        slug: "protecting-your-marriage-from-work",
         description:
           "The work that destroys a pastor's marriage looks exactly like faithfulness.",
-        readTime: "10 min read",
+        readTime: "19 min read",
       },
     ],
   },
@@ -153,13 +146,6 @@ const READING_PATHS: ReadingPath[] = [
         readTime: "10 min read",
       },
       {
-        title: "How Do You Talk to Your Kids About Doubt?",
-        slug: "teaching-kids-about-doubt",
-        description:
-          "You are waiting for your child to bring you their doubts.",
-        readTime: "10 min read",
-      },
-      {
         title: "When Your Teenager Says They Don't Believe Anymore",
         slug: "teenager-losing-faith",
         description:
@@ -167,11 +153,11 @@ const READING_PATHS: ReadingPath[] = [
         readTime: "11 min read",
       },
       {
-        title: "How a Father Shapes the Way a Child Sees God",
-        slug: "the-father-wound-and-the-god-question",
+        title: "What Does the Bible Say About Fathers and the Father Wound?",
+        slug: "what-fatherhood-requires",
         description:
           "Before your child can hear the word Father about God, they will have learned what the word means from you.",
-        readTime: "11 min read",
+        readTime: "19 min read",
       },
     ],
   },
@@ -197,25 +183,25 @@ const READING_PATHS: ReadingPath[] = [
         readTime: "10 min read",
       },
       {
-        title: "What Does the Bible Say About the Church and the Poor?",
-        slug: "poor-not-ministry-category",
+        title: "What Does the Bible Say About Poverty, and Is It Political?",
+        slug: "is-poverty-political-the-bibles-answer",
         description:
           "James grades the worship service at the door, Isaiah grades the fast by the hungry, and the one requirement Jerusalem attached to Paul's gospel was the poor.",
-        readTime: "12 min read",
+        readTime: "19 min read",
       },
       {
-        title: "Why Does Charity Treat Symptoms and Not Causes?",
-        slug: "symptoms-without-causes-charity",
+        title: "Charity vs. Justice: What's the Difference for Christians?",
+        slug: "charity-is-not-justice-the-difference",
         description:
           "We are good at the Saturday.",
-        readTime: "12 min read",
+        readTime: "20 min read",
       },
       {
-        title: "Can a System Sin?",
-        slug: "individual-sin-systemic-sin-2",
+        title: "Is Sin Only Personal? What the Bible Says About Systemic Sin",
+        slug: "individual-sin-and-systemic-sin-explained",
         description:
           "Say \"systemic sin\" in a deacons' meeting and count to three.",
-        readTime: "12 min read",
+        readTime: "20 min read",
       },
     ],
   },

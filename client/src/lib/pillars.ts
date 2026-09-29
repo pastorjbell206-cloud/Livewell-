@@ -73,7 +73,7 @@ export const PILLARS: Pillar[] = [
       "authority-we-traded-for-authenticity",
       "conscience-outsourced-to-party",
       // Earlier live essays
-      "racial-reconciliation-without-repentance",
+      "the-image-of-god-and-the-lie-of-race",
       // Blind Spots (reserved slug — live once imported)
       "the-progressive-blind-spot",
     ],

@@ -6,9 +6,8 @@ import { LandingSignup } from "@/components/LandingSignup";
 
 const ARTICLES = [
   { title: "When God Is Silent and the Room Is Empty", slug: "when-god-is-silent-and-the-room-is-empty" },
-  { title: "The Theology of Saturday", slug: "the-theology-of-saturday" },
-  { title: "What the Psalms Teach About Anger at God", slug: "what-psalms-teach-about-anger-at-god" },
-  { title: "Suffering Without Explanation", slug: "suffering-without-explanation" },
+  { title: "Is It Okay to Be Angry at God? What the Psalms of Lament Teach", slug: "lament-the-prayer-the-church-forgot" },
+  { title: "If God Is Good, Why Is There Suffering? An Honest Answer", slug: "if-god-is-good-why-suffering" },
   { title: "The Weight That Stays", slug: "the-weight-that-stays" },
 ];
 

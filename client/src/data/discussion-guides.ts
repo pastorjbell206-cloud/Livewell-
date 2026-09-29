@@ -35,7 +35,7 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     openingPrayer: "God of the catacombs and the cathedral, we come to you carrying the weight of a history we did not choose but cannot ignore. Open our eyes to see what was gained and what was lost when your church traded the margins for the throne. Give us the honesty to name what we find.",
     closingPrayer: "Lord, we leave this conversation without easy answers, and we do not ask for them. We ask instead for the courage to follow you into whatever faithfulness looks like when the empire's approval is no longer the goal. Hold us steady in the tension.",
     suggestedReading: [
-      "the-death-of-christendom",
+      "christendom-is-ending",
       "the-anabaptist-option",
       "Resident Aliens by Stanley Hauerwas and William Willimon"
     ]
@@ -105,7 +105,7 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     closingPrayer: "Lord, the Anabaptists chose the cross over the crown, and they paid for it with their lives. We do not know if we would have that courage. But we ask you to form it in us — slowly, honestly, without pretense.",
     suggestedReading: [
       "how-christianity-became-an-empire",
-      "christianity-after-christendom",
+      "christendom-is-ending",
       "The Politics of Jesus by John Howard Yoder"
     ]
   },
@@ -127,7 +127,7 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     openingPrayer: "God who is not American, we confess that we have confused your kingdom with our nation, your gospel with our culture, your voice with our preferences. Strip away what does not belong to you. Leave us with what does.",
     closingPrayer: "Lord, we cannot un-American ourselves. But we can stop mistaking our culture for your kingdom. Give us eyes to see the difference, and the integrity to act on what we see.",
     suggestedReading: [
-      "when-politics-replaced-theology",
+      "how-the-religious-right-was-built",
       "prosperity-gospel-is-not-the-gospel",
       "megachurch-model"
     ]
@@ -152,7 +152,7 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     suggestedReading: [
       "what-evangelicalism-was-supposed-to-be",
       "why-people-are-leaving-the-church",
-      "christianity-after-christendom"
+      "christendom-is-ending"
     ]
   },
 
@@ -173,7 +173,7 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     openingPrayer: "God of truth, we grieve what evangelicalism was supposed to be and what it became. We are not certain we can recover the original vision. But we ask you to show us what faithfulness looks like when the label has been lost.",
     closingPrayer: "Lord, the movement that was meant to rescue the church from anti-intellectualism and cultural withdrawal delivered the church into both. We do not know the way forward. We trust that you do.",
     suggestedReading: [
-      "when-politics-replaced-theology",
+      "how-the-religious-right-was-built",
       "how-american-christianity-became-american",
       "why-the-church-lost-the-culture-war"
     ]
@@ -243,7 +243,7 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     closingPrayer: "Lord, Christendom is dying, and we are afraid. But you were never Christendom. You were before it, and you will be after it. Help us to trust that the faith is stronger than the structures we built around it.",
     suggestedReading: [
       "how-christianity-became-an-empire",
-      "christianity-after-christendom",
+      "christendom-is-ending",
       "the-anabaptist-option"
     ]
   },
@@ -293,7 +293,7 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     closingPrayer: "Lord, the landscape is wider than we imagined. Help us to walk it with curiosity instead of suspicion, and to recognize your image in traditions that worship differently than we do.",
     suggestedReading: [
       "three-families-of-christianity",
-      "non-denominational-doesnt-mean-no-tradition",
+      "why-there-are-so-many-christian-denominations",
       "liturgical-vs-contemporary-worship"
     ]
   },
@@ -317,7 +317,7 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     suggestedReading: [
       "guide-to-every-major-denomination",
       "megachurch-model",
-      "finding-a-good-church"
+      "how-to-find-a-church-worth-joining"
     ]
   },
 
@@ -338,7 +338,7 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     openingPrayer: "Sovereign God and loving Father, we come to a debate that has divided your church for centuries. We do not expect to resolve it tonight. We ask instead for the humility to hold your sovereignty and your justice together, even when our minds cannot reconcile them.",
     closingPrayer: "Lord, you are larger than any system we construct to contain you. Keep us from the arrogance of certainty and the paralysis of agnosticism. Teach us to trust what we cannot fully understand.",
     suggestedReading: [
-      "the-problem-with-certainty",
+      "can-you-have-faith-and-doubt",
       "three-families-of-christianity",
       "what-the-reformation-actually-changed"
     ]
@@ -361,9 +361,9 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     openingPrayer: "God who speaks in the whirlwind and in the still small voice, we confess that we have sometimes confused worship with entertainment, preference with faithfulness, and emotional intensity with your presence. Form us through our worship into the people you intend us to be.",
     closingPrayer: "Lord, we want worship that forms us, not just worship that moves us. Show us what we have gained and what we have lost, and give us the courage to recover what formation requires — even if it means letting go of what we prefer.",
     suggestedReading: [
-      "creeds-confessions-statements-of-faith",
+      "the-faith-once-delivered",
       "the-christian-mystics",
-      "non-denominational-doesnt-mean-no-tradition"
+      "why-there-are-so-many-christian-denominations"
     ]
   },
 
@@ -386,7 +386,7 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     suggestedReading: [
       "the-great-schism",
       "three-families-of-christianity",
-      "the-problem-with-certainty"
+      "can-you-have-faith-and-doubt"
     ]
   },
 
@@ -435,8 +435,8 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     closingPrayer: "Lord, the exodus is not a mystery. The data is clear. Give us the courage to stop explaining away the departure and start examining the behavior that caused it. And be gentle with us in the reckoning.",
     suggestedReading: [
       "deconstruction-is-not-destruction",
-      "the-rise-of-the-nones",
-      "finding-a-good-church"
+      "why-people-are-leaving-the-church",
+      "how-to-find-a-church-worth-joining"
     ]
   },
 
@@ -457,9 +457,8 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     openingPrayer: "God of Jacob — the God who is wrestled with and who does not let go — we come to you with questions we have been told not to ask. Receive them. Meet us in the wrestling. And do not leave us unchanged.",
     closingPrayer: "Lord, we do not want a faith that cannot survive examination. We want a faith tested in fire and refined by honesty. Give us the courage to ask the questions and the patience to wait for answers that may take years to arrive.",
     suggestedReading: [
-      "the-spirituality-of-doubt",
-      "reconstructing-faith",
-      "exvangelical-when-leaving-isnt-losing-faith"
+      "can-you-have-faith-and-doubt",
+      "deconstruction-is-not-destruction",
     ]
   },
 
@@ -481,8 +480,7 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     closingPrayer: "Lord, the nones are not our enemies. They may be our most honest mirror. Give us the courage to look at what they reflect, and the humility to change what needs changing.",
     suggestedReading: [
       "why-people-are-leaving-the-church",
-      "why-young-adults-arent-coming-back",
-      "christianity-after-christendom"
+      "christendom-is-ending"
     ]
   },
 
@@ -505,7 +503,6 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     suggestedReading: [
       "deconstruction-is-not-destruction",
       "why-people-are-leaving-the-church",
-      "reconstructing-faith"
     ]
   },
 
@@ -527,7 +524,7 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     closingPrayer: "Lord, we cannot undo the damage of purity culture with a single conversation. But we can stop repeating the damage. Give us a sexual theology worthy of the gospel — one that begins with dignity, not shame.",
     suggestedReading: [
       "religious-trauma-is-real",
-      "toxic-masculinity-in-the-pulpit",
+      "church-domestic-violence",
       "women-in-ministry"
     ]
   },
@@ -551,7 +548,7 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     suggestedReading: [
       "how-american-christianity-became-american",
       "megachurch-model",
-      "why-does-god-allow-suffering"
+      "if-god-is-good-why-suffering"
     ]
   },
 
@@ -595,9 +592,9 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     openingPrayer: "God who was crucified by religious authority, we come before you aware that harm has been done in your name — not by accidents but by systems, not by strangers but by shepherds. We do not ask you to fix this quickly. We ask you to sit with us in the wreckage.",
     closingPrayer: "Lord, religious trauma is real, and the church's denial of it is part of the wound. Give us the courage to stop denying and start listening. And where we have caused harm, give us the integrity to say so — without qualification, without defense.",
     suggestedReading: [
-      "spiritual-abuse-how-good-theology-gets-weaponized",
+      "religious-trauma-is-real",
       "purity-culture-and-its-wreckage",
-      "church-and-mental-health"
+      "mental-health-and-the-church-beyond-pray-about-it"
     ]
   },
 
@@ -619,7 +616,7 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     closingPrayer: "Lord, protect us from becoming communities where good theology becomes a weapon and where dissent is treated as sin. Build structures of accountability that do not depend on the goodness of the people in power.",
     suggestedReading: [
       "religious-trauma-is-real",
-      "finding-a-good-church",
+      "how-to-find-a-church-worth-joining",
       "sexual-abuse-crisis-in-the-church"
     ]
   },
@@ -642,7 +639,6 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     closingPrayer: "Lord, the young adults who have left are not coming back to the church they left. They might come to a different church — one more honest, more just, more willing to say 'I was wrong.' Help us become that church.",
     suggestedReading: [
       "why-people-are-leaving-the-church",
-      "the-rise-of-the-nones",
       "raising-kids-post-christian"
     ]
   },
@@ -668,9 +664,9 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     openingPrayer: "God — if you are there — we come to this question not with the certainty of people who have settled it but with the honesty of people who are still settling it. Meet us in the gap between the evidence and the conclusion. That gap is where we live.",
     closingPrayer: "Lord, we do not have proof. We have trust. We hold that trust with the full awareness that we could be wrong — and we believe that willingness is not the enemy of faith but its condition. Hold us in the uncertainty.",
     suggestedReading: [
-      "why-does-god-allow-suffering",
-      "the-problem-with-certainty",
-      "science-and-faith-are-not-at-war"
+      "if-god-is-good-why-suffering",
+      "can-you-have-faith-and-doubt",
+      "faith-and-science"
     ]
   },
 
@@ -692,8 +688,8 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     closingPrayer: "Lord, we do not have an answer to suffering. We have a response: that you are good, that the world is broken, that you entered the brokenness, and that suffering is not the final word. Hold us inside that response until it becomes enough.",
     suggestedReading: [
       "is-god-real",
-      "the-spirituality-of-doubt",
-      "church-and-mental-health"
+      "can-you-have-faith-and-doubt",
+      "mental-health-and-the-church-beyond-pray-about-it"
     ]
   },
 
@@ -714,8 +710,8 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     openingPrayer: "God who speaks through human words in human languages to human communities across human centuries — we come to your book aware that it is stranger, more honest, and more demanding than we have allowed it to be. Open it to us again, as if for the first time.",
     closingPrayer: "Lord, we trust the Bible not because it is simple but because it is honest. Give us the courage to read it honestly in return — to sit with its tensions, to respect its genres, and to let it read us as much as we read it.",
     suggestedReading: [
-      "evolution-and-genesis",
-      "creeds-confessions-statements-of-faith",
+      "how-to-read-genesis-one",
+      "the-faith-once-delivered",
       "the-historical-jesus"
     ]
   },
@@ -739,7 +735,7 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     suggestedReading: [
       "is-god-real",
       "why-christianity",
-      "the-problem-with-certainty"
+      "can-you-have-faith-and-doubt"
     ]
   },
 
@@ -760,9 +756,9 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     openingPrayer: "God of quarks and quasars, of double helixes and deep time — we worship you as the source of every truth, whether discovered in a laboratory or encountered in prayer. Free us from the false war between the telescope and the cross.",
     closingPrayer: "Lord, you gave us minds that could comprehend the universe and hearts that could worship its maker. Help us to honor both — to pursue truth wherever it leads and to worship you in whatever we find.",
     suggestedReading: [
-      "evolution-and-genesis",
+      "how-to-read-genesis-one",
       "is-god-real",
-      "the-problem-with-certainty"
+      "can-you-have-faith-and-doubt"
     ]
   },
 
@@ -783,9 +779,9 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     openingPrayer: "Creator God, you spoke and the universe was. We do not understand how. We are not certain we need to. What we know is that you are behind it, within it, and ahead of it. Give us the freedom to hold the how with open hands while gripping the who with everything we have.",
     closingPrayer: "Lord, Genesis is not a science textbook, and the laboratory is not a temple. But both point to you. Help us to read your word with humility and to study your world with reverence, knowing that all truth is yours.",
     suggestedReading: [
-      "science-and-faith-are-not-at-war",
-      "can-you-trust-the-bible",
-      "the-problem-with-certainty"
+      "faith-and-science",
+      "why-trust-the-bible",
+      "can-you-have-faith-and-doubt"
     ]
   },
 
@@ -807,7 +803,7 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     closingPrayer: "Lord, the historical Jesus is not safe, not predictable, and not ours to control. He is a first-century Jewish rabbi who overturned tables and washed feet. Help us to follow that person, not the domesticated version our culture prefers.",
     suggestedReading: [
       "why-christianity",
-      "can-you-trust-the-bible",
+      "why-trust-the-bible",
       "what-christians-can-learn-from-judaism"
     ]
   },
@@ -875,7 +871,7 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     openingPrayer: "God who is larger than our categories, we confess that we have sometimes worshipped our certainty more than we have worshipped you. Loosen our grip on what we think we know, so that we can hold more firmly to who you are.",
     closingPrayer: "Lord, faith is not the absence of doubt. It is trust that persists through doubt. Teach us to live in that trust — not comfortably, not confidently, but honestly. And let that honesty be enough.",
     suggestedReading: [
-      "the-spirituality-of-doubt",
+      "can-you-have-faith-and-doubt",
       "is-god-real",
       "deconstruction-is-not-destruction"
     ]
@@ -902,7 +898,7 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     openingPrayer: "God who became a neighbor before becoming a savior, we confess that we have sometimes treated people as targets rather than as image-bearers. Teach us to love without agenda. And if the conversation comes, make us worthy of it.",
     closingPrayer: "Lord, the most powerful witness is not a presentation but a life. Form us into people whose patience, honesty, and care make others curious about the source. Then give us the words — briefly, gently — when they ask.",
     suggestedReading: [
-      "faith-at-work",
+      "what-is-vocation-work-as-calling",
       "interfaith-marriage",
       "raising-kids-post-christian"
     ]
@@ -926,8 +922,8 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     closingPrayer: "Lord, we release our children's faith into your hands. We will model. We will pray. We will create space for their questions. And we will trust that you are at work in them, even when we cannot see it.",
     suggestedReading: [
       "how-to-talk-about-faith",
-      "the-spirituality-of-doubt",
-      "why-young-adults-arent-coming-back"
+      "can-you-have-faith-and-doubt",
+      "why-people-are-leaving-the-church"
     ]
   },
 
@@ -949,7 +945,7 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     closingPrayer: "Lord, our work is our primary arena of witness. Not what we say about you at work, but how we treat people, how we handle conflict, how we tell the truth when lying would be easier. Make the work itself the sermon.",
     suggestedReading: [
       "how-to-talk-about-faith",
-      "christianity-after-christendom",
+      "christendom-is-ending",
       "digital-discipleship"
     ]
   },
@@ -973,7 +969,7 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     suggestedReading: [
       "how-to-talk-about-faith",
       "family-and-faith-transitions",
-      "the-spirituality-of-doubt"
+      "can-you-have-faith-and-doubt"
     ]
   },
 
@@ -996,7 +992,7 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     suggestedReading: [
       "the-christian-mystics",
       "liturgical-vs-contemporary-worship",
-      "faith-at-work"
+      "what-is-vocation-work-as-calling"
     ]
   },
 
@@ -1017,8 +1013,8 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     openingPrayer: "Good Shepherd, we come to you carrying wounds inflicted by shepherds who did not protect us. We are wary. We are tired. But we have not given up on the possibility that your church can be a place of healing. Show us where to look.",
     closingPrayer: "Lord, we deserve a community that challenges us without crushing us, that speaks truth without weaponizing it, and that treats the vulnerable as the point of the whole enterprise. Lead us to that community. And make us worthy members of it.",
     suggestedReading: [
-      "spiritual-abuse-how-good-theology-gets-weaponized",
-      "non-denominational-doesnt-mean-no-tradition",
+      "religious-trauma-is-real",
+      "why-there-are-so-many-christian-denominations",
       "megachurch-model"
     ]
   },
@@ -1063,7 +1059,7 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     openingPrayer: "God of the mustard seed and the leaven in the dough, we live in a world where Christianity is no longer the default. We do not know how to be small. Teach us. And show us that small is not the same as insignificant.",
     closingPrayer: "Lord, Christendom gave us buildings and budgets and influence. It also gave us the Crusades and the confusion of your gospel with Western civilization. Help us to build something different — smaller, poorer, and closer to the faith you described.",
     suggestedReading: [
-      "the-death-of-christendom",
+      "christendom-is-ending",
       "the-anabaptist-option",
       "how-christianity-became-an-empire"
     ]
@@ -1087,7 +1083,7 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     closingPrayer: "Lord, doubt is not our enemy. It is faith doing its hardest work. Give us the courage to stay in the dark night when it comes, to trust that you are there even when we cannot feel you, and to keep walking.",
     suggestedReading: [
       "deconstruction-is-not-destruction",
-      "the-problem-with-certainty",
+      "can-you-have-faith-and-doubt",
       "the-christian-mystics"
     ]
   },
@@ -1110,8 +1106,8 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     closingPrayer: "Lord, reconstruction is slower than deconstruction and harder than either of us expected. Give us patience with the process, companions for the road, and the assurance that what emerges — even if it looks different from what we started with — can still be genuine faith.",
     suggestedReading: [
       "deconstruction-is-not-destruction",
-      "the-spirituality-of-doubt",
-      "christianity-after-christendom"
+      "can-you-have-faith-and-doubt",
+      "christendom-is-ending"
     ]
   },
 
@@ -1136,7 +1132,7 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     openingPrayer: "God who placed a child in the center of the circle and said 'whoever receives one of these receives me' — we have failed to protect the ones you placed in our care. We do not come with excuses. We come with grief, with anger, and with the determination that this will not continue.",
     closingPrayer: "Lord, the reckoning is not optional. Give us the courage to face what we have done and what we have allowed. And build in us the structures that make children safer — not because the culture demands it, but because you do.",
     suggestedReading: [
-      "spiritual-abuse-how-good-theology-gets-weaponized",
+      "religious-trauma-is-real",
       "megachurch-model",
       "women-in-ministry"
     ]
@@ -1159,8 +1155,8 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     openingPrayer: "God who refused the kingdoms of the world when they were offered to you in the wilderness, we confess that we accepted them when they were offered to us. We confused political power with prophetic witness, and we lost both. Forgive us. And show us another way.",
     closingPrayer: "Lord, the culture war is over. We did not win it. But you never asked us to. You asked us to be faithful, to be witnesses, to be the kind of community that makes the world ask questions. Help us to become that community.",
     suggestedReading: [
-      "when-politics-replaced-theology",
-      "christianity-after-christendom",
+      "how-the-religious-right-was-built",
+      "christendom-is-ending",
       "what-evangelicalism-was-supposed-to-be"
     ]
   },
@@ -1184,7 +1180,7 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     suggestedReading: [
       "the-black-church-in-america",
       "colonialism-and-missions",
-      "when-politics-replaced-theology"
+      "how-the-religious-right-was-built"
     ]
   },
 
@@ -1205,8 +1201,8 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     openingPrayer: "God who measures greatness by service, not by size — we confess that we have been impressed by the wrong things. Numbers, buildings, budgets, celebrity. Strip us back to what matters: depth, integrity, and the slow formation of people who look like Jesus.",
     closingPrayer: "Lord, the megachurch taught us that growth is not the same as health and efficiency is not the same as faithfulness. Help us to build something smaller, deeper, and more accountable — even if it never makes the news.",
     suggestedReading: [
-      "non-denominational-doesnt-mean-no-tradition",
-      "finding-a-good-church",
+      "why-there-are-so-many-christian-denominations",
+      "how-to-find-a-church-worth-joining",
       "prosperity-gospel-is-not-the-gospel"
     ]
   },
@@ -1229,8 +1225,8 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     closingPrayer: "Lord, the Bible is full of women who led, taught, prophesied, and served. The tradition that ignored them does not change what the text says. Help us to read it fully, and to follow where it leads — even when it leads to repentance.",
     suggestedReading: [
       "purity-culture-and-its-wreckage",
-      "toxic-masculinity-in-the-pulpit",
-      "spiritual-abuse-how-good-theology-gets-weaponized"
+      "church-domestic-violence",
+      "religious-trauma-is-real"
     ]
   },
 
@@ -1252,8 +1248,8 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     closingPrayer: "Lord, the whole response for the whole person — spiritual and clinical, prayer and treatment, community and competence. That is not compromise. It is faith doing what faith is for. Give us the courage and the competence to offer it.",
     suggestedReading: [
       "religious-trauma-is-real",
-      "why-does-god-allow-suffering",
-      "finding-a-good-church"
+      "if-god-is-good-why-suffering",
+      "how-to-find-a-church-worth-joining"
     ]
   },
 
@@ -1325,8 +1321,8 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     closingPrayer: "Lord, we are branches grafted into a tree that is not our own. We do not support the root — the root supports us. Help us to remember that. And help us to treat the tradition that carried your covenant for two thousand years with the honor it deserves.",
     suggestedReading: [
       "the-historical-jesus",
-      "can-you-trust-the-bible",
-      "what-christians-can-learn-from-islam"
+      "why-trust-the-bible",
+      "christianity-and-islam"
     ]
   },
 
@@ -1416,7 +1412,7 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     openingPrayer: "God beyond all knowing, God who waits in the silence beneath our noise — we come to you aware that we have been talking about you far more than we have been listening to you. Teach us unknowing. Teach us the prayer that happens when words stop.",
     closingPrayer: "Lord, the mystics knew something we have forgotten: that you are found not in the noise but in the silence, not in the argument but in the love, not in the knowing but in the unknowing. Lead us into that silence. We are not afraid. Or if we are, lead us anyway.",
     suggestedReading: [
-      "the-spirituality-of-doubt",
+      "can-you-have-faith-and-doubt",
       "what-christians-can-learn-from-buddhism",
       "liturgical-vs-contemporary-worship"
     ]
@@ -1443,7 +1439,7 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     openingPrayer: "God who came near enough to touch, we come carrying a claim that has been used as a weapon and was first spoken by men on trial. Teach us the difference. Give us the honesty to hold what is true without holding it over anyone.",
     closingPrayer: "Lord, we do not know what you will do with the ones we love who never called on your name, and we will not pretend to. We know what you were willing to spend. Let that be enough to steady us, and send us back to the people you put in front of us.",
     suggestedReading: [
-      "what-about-those-who-never-heard",
+      "is-jesus-really-the-only-way",
       "christianity-and-islam",
       "did-the-resurrection-happen"
     ]
@@ -1727,7 +1723,6 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     closingPrayer: "Lord, we hold what we believe as confession and not as a weapon, and we do not hold it lightly. Give us the honesty to name the real differences and the love to keep the person in front of us more real than the argument.",
     suggestedReading: [
       "is-jesus-really-the-only-way",
-      "what-about-those-who-never-heard",
       "did-the-resurrection-happen"
     ]
   },
@@ -1796,7 +1791,7 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     closingPrayer: "Lord, we do not need a flashlight when the sun has come up. Fix our hope on the tomb that was opened in public, and give us gentleness with everyone still holding a smaller light.",
     suggestedReading: [
       "did-the-resurrection-happen",
-      "is-there-life-after-death",
+      "what-is-heaven-actually-like",
       "are-miracles-believable"
     ]
   },
@@ -1819,8 +1814,8 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     closingPrayer: "Lord, you were sorrowful to the point of death in a garden, and you were not failing. Sit with the anxious among us. Give them rest, and give the rest of us the sense to stop offering verses when what is needed is a meal, a doctor, and a friend who stays.",
     suggestedReading: [
       "if-god-is-good-why-suffering",
-      "when-prayer-goes-unanswered",
-      "dark-night-god-feels-absent"
+      "how-do-you-actually-pray",
+      "when-god-is-silent-and-the-room-is-empty"
     ]
   },
 
@@ -1888,8 +1883,7 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     closingPrayer: "Lord, whichever way we came, we are here. Keep us from boasting and from despairing, since neither belongs to people who were saved by grace. Let us leave holding our conviction and our brother at the same time.",
     suggestedReading: [
       "can-you-lose-your-salvation",
-      "what-about-those-who-never-heard",
-      "is-jesus-really-the-only-way"
+      "is-jesus-really-the-only-way",
     ]
   },
 
@@ -1911,8 +1905,7 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     closingPrayer: "Lord, we do not enjoy this and we do not want to. Let the weight of it drive us toward people rather than away from them, and let no one ever hear us describe your judgment with anything but grief.",
     suggestedReading: [
       "does-hell-exist",
-      "what-about-those-who-never-heard",
-      "is-jesus-really-the-only-way"
+      "is-jesus-really-the-only-way",
     ]
   },
 
@@ -1934,7 +1927,7 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     closingPrayer: "Lord, you said you would not lose what the Father gave you, and you warned us not to drift. Give us the grip of a child and the seriousness of a disciple, and keep us until the end.",
     suggestedReading: [
       "predestination-and-free-will",
-      "anxiety-and-faith",
+      "mental-health-and-the-church-beyond-pray-about-it",
       "is-jesus-really-the-only-way"
     ]
   },
@@ -1980,7 +1973,6 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     closingPrayer: "Lord, we would rather be a people who test everything and hold fast to what is good than a people who are safe by refusing to want anything. Make us both careful and open, and forgive us where we have been only one.",
     suggestedReading: [
       "who-is-the-holy-spirit",
-      "what-does-the-holy-spirit-do",
       "are-miracles-believable"
     ]
   },
@@ -2003,7 +1995,7 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     closingPrayer: "Lord, we have been arguing about the depth of the water while both of us are already wet. Keep the sign from becoming a wall, and keep our eyes on the cross it points to.",
     suggestedReading: [
       "why-baptism",
-      "what-happens-at-communion",
+      "why-faith-uses-physical-things",
       "predestination-and-free-will"
     ]
   }
@@ -2060,7 +2052,7 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     suggestedReading: [
       "christian-sexual-ethic",
       "personhood-in-the-age-of-ai",
-      "anxiety-and-faith"
+      "mental-health-and-the-church-beyond-pray-about-it"
     ]
   },
 
@@ -2081,7 +2073,7 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     openingPrayer: "God who knits us together in secret, we come to a subject that has produced more shouting than care. There are wounds in this room we cannot see. Let nothing be said tonight that makes anyone smaller.",
     closingPrayer: "Lord, you have never once dealt with any of us according to our clean history. Make this church safer than the argument. Give us the courage to speak for those who cannot speak, and the tenderness to stay with the ones who are still carrying it.",
     suggestedReading: [
-      "natural-evil-and-animal-suffering",
+      "if-god-is-good-why-suffering",
       "the-cost-of-following",
       "is-jesus-really-the-only-way"
     ]
@@ -2106,7 +2098,7 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     suggestedReading: [
       "the-slow-drift-that-ends-marriages",
       "what-silence-costs-a-marriage",
-      "anxiety-and-faith"
+      "mental-health-and-the-church-beyond-pray-about-it"
     ]
   },
 
@@ -2128,8 +2120,8 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     closingPrayer: "God, whether we live or whether we die, we are yours. Be near the people in this room who are closer to that sentence than the rest of us. Give them doctors who tell the truth, families who stay, and a church that shows up more than once.",
     suggestedReading: [
       "how-to-die-well",
-      "is-there-life-after-death",
-      "natural-evil-and-animal-suffering"
+      "what-is-heaven-actually-like",
+      "if-god-is-good-why-suffering"
     ]
   }
 

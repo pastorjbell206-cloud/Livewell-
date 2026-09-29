@@ -5,11 +5,11 @@ import CrisisFaq, { faqPageSchema } from "@/components/CrisisFaq";
 import { LandingSignup } from "@/components/LandingSignup";
 
 const ARTICLES = [
-  { title: "When Marriage Becomes a Mirror", slug: "when-marriage-becomes-a-mirror" },
-  { title: "The Covenant You Didn't Understand When You Made It", slug: "the-covenant-you-didnt-understand" },
-  { title: "Fighting Fair Is Not Enough", slug: "fighting-fair-is-not-enough" },
+  { title: "I Don't Recognize My Spouse Anymore. Is the Marriage Over?", slug: "when-you-married-someone-you-no-longer-recognize" },
+  { title: "What Is Covenant Marriage? Why Marriage Is Not a Contract", slug: "covenant-vs-contract-what-marriage-is" },
+  { title: "Healthy Conflict in Marriage Is More Than Fighting Fair", slug: "healthy-conflict-marriage" },
   { title: "What Silence Actually Costs a Marriage", slug: "what-silence-costs-a-marriage" },
-  { title: "Forgiveness Without Pretending", slug: "forgiveness-without-pretending" },
+  { title: "How to Forgive Your Spouse, and Why Forgiveness Isn't Trust", slug: "forgiveness-in-marriage" },
 ];
 
 const FAQ_ITEMS = [

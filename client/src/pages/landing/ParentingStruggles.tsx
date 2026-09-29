@@ -6,8 +6,7 @@ import { LandingSignup } from "@/components/LandingSignup";
 const ARTICLES = [
   { title: "The Weight of What You Model", slug: "the-weight-of-what-you-model" },
   { title: "Raising Kids Who Think Instead of Perform", slug: "raising-kids-who-think" },
-  { title: "When Your Child Asks a Question You Cannot Answer", slug: "when-your-child-asks-a-question" },
-  { title: "The Father Wound and the God Question", slug: "the-father-wound-and-the-god-question" },
+  { title: "What Does the Bible Say About Fathers and the Father Wound?", slug: "what-fatherhood-requires" },
   { title: "Discipline Without Domination", slug: "discipline-without-domination" },
 ];
 

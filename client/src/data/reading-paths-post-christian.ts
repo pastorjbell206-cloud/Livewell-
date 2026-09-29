@@ -102,11 +102,11 @@ export const READING_PATHS: ReadingPath[] = [
         readTime: "12 min read",
       },
       {
-        title: "The Death of Christendom",
-        slug: "the-death-of-christendom",
+        title: "What Is Christendom, and What Comes After It?",
+        slug: "christendom-is-ending",
         description:
           "The era in which Christianity and Western civilization were fused is over. The question is whether its death might be the best thing that ever happened to the church.",
-        readTime: "14 min read",
+        readTime: "21 min read",
       },
     ],
   },
@@ -135,11 +135,11 @@ export const READING_PATHS: ReadingPath[] = [
         readTime: "16 min read",
       },
       {
-        title: "Non-Denominational Doesn't Mean No Tradition",
-        slug: "non-denominational-doesnt-mean-no-tradition",
+        title: "Why Are There So Many Christian Denominations?",
+        slug: "why-there-are-so-many-christian-denominations",
         description:
           "The fastest-growing segment of American Christianity claims no label. But every church has a theology, a tradition, and a set of assumptions — whether it names them or not.",
-        readTime: "10 min read",
+        readTime: "20 min read",
       },
       {
         title: "What Calvinism and Arminianism Actually Argue About",
@@ -156,11 +156,11 @@ export const READING_PATHS: ReadingPath[] = [
         readTime: "11 min read",
       },
       {
-        title: "Creeds, Confessions, and Statements of Faith",
-        slug: "creeds-confessions-statements-of-faith",
+        title: "What Is Historic Christianity? The Faith Older Than America",
+        slug: "the-faith-once-delivered",
         description:
           "The ancient creeds were not bureaucratic exercises. They were battle lines drawn against heresies that threatened to gut the faith from within.",
-        readTime: "11 min read",
+        readTime: "20 min read",
       },
       {
         title: "The Charismatic Movement Inside Every Denomination",
@@ -196,39 +196,11 @@ export const READING_PATHS: ReadingPath[] = [
         readTime: "12 min read",
       },
       {
-        title: "The Rise of the Nones",
-        slug: "the-rise-of-the-nones",
-        description:
-          "They are the fastest-growing religious group in America, and most of them are not atheists. Understanding the nones requires abandoning nearly everything the church assumes about unbelief.",
-        readTime: "12 min read",
-      },
-      {
-        title: "Exvangelical: When Leaving Isn't Losing Faith",
-        slug: "exvangelical-when-leaving-isnt-losing-faith",
-        description:
-          "A growing movement of former evangelicals is redefining what it means to leave a tradition without leaving the faith that tradition claimed to own.",
-        readTime: "11 min read",
-      },
-      {
-        title: "The Spirituality of Doubt",
-        slug: "the-spirituality-of-doubt",
+        title: "Can You Have Faith and Doubt at the Same Time?",
+        slug: "can-you-have-faith-and-doubt",
         description:
           "Doubt is not the enemy of faith. It is faith's most demanding companion — the one that refuses to let you settle for answers too small for the questions you carry.",
-        readTime: "11 min read",
-      },
-      {
-        title: "The Problem with Certainty",
-        slug: "the-problem-with-certainty",
-        description:
-          "The demand for certainty is not a sign of strong faith. It is a sign of a faith too fragile to survive contact with the world as it actually is.",
-        readTime: "11 min read",
-      },
-      {
-        title: "Reconstructing Faith: What Comes After Deconstruction",
-        slug: "reconstructing-faith",
-        description:
-          "The faith that emerges on the other side of honest questioning is not a lesser faith. It is a faith that has been tested in the fire and refined.",
-        readTime: "12 min read",
+        readTime: "20 min read",
       },
     ],
   },
@@ -250,18 +222,18 @@ export const READING_PATHS: ReadingPath[] = [
         readTime: "14 min read",
       },
       {
-        title: "Why Does God Allow Suffering?",
-        slug: "why-does-god-allow-suffering",
+        title: "If God Is Good, Why Is There Suffering? An Honest Answer",
+        slug: "if-god-is-good-why-suffering",
         description:
           "The problem of suffering is not an intellectual puzzle to be solved. It is a wound that demands not explanation but presence.",
-        readTime: "14 min read",
+        readTime: "21 min read",
       },
       {
-        title: "Can You Trust the Bible?",
-        slug: "can-you-trust-the-bible",
+        title: "Can You Trust the Bible? What the Historical Evidence Shows",
+        slug: "why-trust-the-bible",
         description:
           "The Bible is not what most people think it is. It is stranger, more varied, more honest, and more resilient than either the fundamentalist or the skeptic imagines.",
-        readTime: "13 min read",
+        readTime: "21 min read",
       },
       {
         title: "What Happened to the Historical Jesus",
@@ -271,18 +243,18 @@ export const READING_PATHS: ReadingPath[] = [
         readTime: "14 min read",
       },
       {
-        title: "Science and Faith Are Not at War",
-        slug: "science-and-faith-are-not-at-war",
+        title: "Does Science Disprove God? The History of Faith and Science",
+        slug: "faith-and-science",
         description:
           "The supposed war between science and religion is not a historical fact but a nineteenth-century invention. The real history is far more interesting.",
-        readTime: "12 min read",
+        readTime: "20 min read",
       },
       {
-        title: "Evolution and Genesis: A Pastor's Guide",
-        slug: "evolution-and-genesis",
+        title: "How Should Christians Read Genesis 1? Creation and Evolution",
+        slug: "how-to-read-genesis-one",
         description:
           "The path forward requires understanding what Genesis actually says, what science actually shows, and what is genuinely at stake theologically.",
-        readTime: "13 min read",
+        readTime: "21 min read",
       },
       {
         title: "Miracles: Do They Still Happen?",
@@ -311,11 +283,11 @@ export const READING_PATHS: ReadingPath[] = [
     audience: "Christians learning to hold faith in a world that no longer assumes it",
     articles: [
       {
-        title: "Christianity After Christendom",
-        slug: "christianity-after-christendom",
+        title: "What Is Christendom, and What Comes After It?",
+        slug: "christendom-is-ending",
         description:
           "The end of cultural Christianity is not the end of Christianity. It may be the beginning of a faith worth choosing rather than inheriting.",
-        readTime: "13 min read",
+        readTime: "21 min read",
       },
       {
         title: "How to Talk About Faith Without Being Weird",
@@ -325,11 +297,11 @@ export const READING_PATHS: ReadingPath[] = [
         readTime: "10 min read",
       },
       {
-        title: "Faith at Work When Nobody Shares It",
-        slug: "faith-at-work",
+        title: "What Is Vocation? A Christian View of Work and Calling",
+        slug: "what-is-vocation-work-as-calling",
         description:
           "The office is not a mission field. It is a place where how you work is already saying everything about what you believe.",
-        readTime: "10 min read",
+        readTime: "20 min read",
       },
       {
         title: "Raising Kids in a Post-Christian Culture",
@@ -353,11 +325,11 @@ export const READING_PATHS: ReadingPath[] = [
         readTime: "12 min read",
       },
       {
-        title: "How to Find a Church That Won't Hurt You",
-        slug: "finding-a-good-church",
+        title: "How to Find a Good Church: What to Look For and What to Avoid",
+        slug: "how-to-find-a-church-worth-joining",
         description:
           "The search for a good church is about learning to distinguish between a community that will challenge you toward growth and one that will damage you in the name of God.",
-        readTime: "11 min read",
+        readTime: "20 min read",
       },
     ],
   },
@@ -386,11 +358,11 @@ export const READING_PATHS: ReadingPath[] = [
         readTime: "12 min read",
       },
       {
-        title: "When Politics Replaced Theology",
-        slug: "when-politics-replaced-theology",
+        title: "History of the Religious Right: How Evangelicals Became Political",
+        slug: "how-the-religious-right-was-built",
         description:
           "The Religious Right did not emerge from a moral awakening. It was constructed for reasons that had far more to do with racial segregation than with abortion.",
-        readTime: "14 min read",
+        readTime: "19 min read",
       },
       {
         title: "The Sexual Abuse Crisis: A Reckoning the Church Cannot Avoid",
@@ -414,11 +386,11 @@ export const READING_PATHS: ReadingPath[] = [
         readTime: "12 min read",
       },
       {
-        title: "Toxic Masculinity in the Pulpit",
-        slug: "toxic-masculinity-in-the-pulpit",
+        title: "Domestic Abuse and the Church: What Christians Must Do",
+        slug: "church-domestic-violence",
         description:
           "The church that confuses aggression with authority and domination with leadership has baptized the very thing the gospel came to crucify.",
-        readTime: "12 min read",
+        readTime: "20 min read",
       },
       {
         title: "Colonialism and Missions",
@@ -454,18 +426,11 @@ export const READING_PATHS: ReadingPath[] = [
         readTime: "12 min read",
       },
       {
-        title: "Spiritual Abuse: How Good Theology Gets Weaponized",
-        slug: "spiritual-abuse-how-good-theology-gets-weaponized",
-        description:
-          "Spiritual abuse is not a failure of theology but its perversion — the deliberate use of scriptural authority to control, isolate, and silence.",
-        readTime: "12 min read",
-      },
-      {
-        title: "How the Church Handles Mental Health (Badly)",
-        slug: "church-and-mental-health",
+        title: "Is Depression a Lack of Faith? Why 'Just Pray About It' Fails",
+        slug: "mental-health-and-the-church-beyond-pray-about-it",
         description:
           "The church that tells a depressed person to pray harder is not offering spiritual counsel. It is practicing spiritual malpractice.",
-        readTime: "12 min read",
+        readTime: "20 min read",
       },
       {
         title: "Women in Ministry: The Biblical Case the Church Keeps Ignoring",
@@ -475,25 +440,25 @@ export const READING_PATHS: ReadingPath[] = [
         readTime: "13 min read",
       },
       {
-        title: "Why Young Adults Aren't Coming Back",
-        slug: "why-young-adults-arent-coming-back",
+        title: "Why Are People Leaving the Church? The Rise of the Nones",
+        slug: "why-people-are-leaving-the-church",
         description:
           "The exodus of 18-to-35-year-olds is not about worship style. It is about credibility — and the church is losing on every front that matters to this generation.",
-        readTime: "12 min read",
+        readTime: "19 min read",
       },
       {
-        title: "How to Find a Church That Won't Hurt You",
-        slug: "finding-a-good-church",
+        title: "How to Find a Good Church: What to Look For and What to Avoid",
+        slug: "how-to-find-a-church-worth-joining",
         description:
           "The search for a good church is about learning to distinguish between a community that will challenge you toward growth and one that will damage you in the name of God.",
-        readTime: "11 min read",
+        readTime: "20 min read",
       },
       {
-        title: "Reconstructing Faith: What Comes After Deconstruction",
-        slug: "reconstructing-faith",
+        title: "What Is Faith Deconstruction, and What Does Exvangelical Mean?",
+        slug: "deconstruction-is-not-destruction",
         description:
           "The faith that emerges on the other side of honest questioning is not a lesser faith. It is a faith that has been tested in the fire and refined.",
-        readTime: "12 min read",
+        readTime: "19 min read",
       },
     ],
   },
@@ -515,11 +480,11 @@ export const READING_PATHS: ReadingPath[] = [
         readTime: "12 min read",
       },
       {
-        title: "What Christians Can Learn From Islam",
-        slug: "what-christians-can-learn-from-islam",
+        title: "Christianity vs Islam: What Is the Real Difference?",
+        slug: "christianity-and-islam",
         description:
           "Islam is the faith Christians know least and fear most. The common ground between them is deeper than either side typically admits.",
-        readTime: "11 min read",
+        readTime: "20 min read",
       },
       {
         title: "What Christians Can Learn From Buddhism",
@@ -543,11 +508,11 @@ export const READING_PATHS: ReadingPath[] = [
         readTime: "12 min read",
       },
       {
-        title: "The Spirituality of Doubt",
-        slug: "the-spirituality-of-doubt",
+        title: "Can You Have Faith and Doubt at the Same Time?",
+        slug: "can-you-have-faith-and-doubt",
         description:
           "Doubt is not the enemy of faith. It is faith's most demanding companion — the one that refuses to let you settle for answers too small for the questions you carry.",
-        readTime: "11 min read",
+        readTime: "20 min read",
       },
     ],
   },

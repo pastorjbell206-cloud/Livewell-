@@ -9,7 +9,6 @@ export const ARGUMENT_CASE_SLUGS = new Set<string>([
   "is-hell-eternal",
   "meaning-without-god",
   "if-god-is-good-why-suffering",
-  "natural-evil-and-animal-suffering",
   "why-trust-the-bible",
   "was-jesus-just-a-good-teacher",
   "who-did-jesus-claim-to-be",

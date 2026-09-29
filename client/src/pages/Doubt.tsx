@@ -23,22 +23,16 @@ export default function Doubt() {
       readTime: "12 min read"
     },
     {
-      title: "When God Doesn't Make Sense",
-      slug: "when-god-doesnt-make-sense",
+      title: "Why Does God Feel Silent? Faith When God Seems Absent",
+      slug: "when-god-is-silent-and-the-room-is-empty",
       topic: "Faith & Doubt",
-      readTime: "11 min read"
+      readTime: "20 min read"
     },
     {
       title: "What If We're Wrong?",
       slug: "what-if-we-are-wrong",
       topic: "Faith & Doubt",
       readTime: "13 min read"
-    },
-    {
-      title: "The Dark Night of the Soul When God Feels Absent",
-      slug: "dark-night-god-feels-absent",
-      topic: "Faith & Doubt",
-      readTime: "14 min read"
     },
     {
       title: "Constantine's Bargain",
@@ -52,7 +46,7 @@ export default function Doubt() {
     {
       title: "I used to believe, but now I'm not sure",
       description: "For those who had faith and are now questioning. You're not alone. And this might be the most honest part of what you are walking through.",
-      href: "/writing/dark-night-god-feels-absent"
+      href: "/writing/when-god-is-silent-and-the-room-is-empty"
     },
     {
       title: "Someone I love is questioning their faith",

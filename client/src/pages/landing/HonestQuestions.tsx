@@ -6,9 +6,9 @@ import { LandingSignup } from "@/components/LandingSignup";
 
 const ARTICLES = [
   { title: "Is God Real?", href: "/faq/does-god-exist" },
-  { title: "Why Does God Allow Suffering?", href: "/writing/apologetics-why-does-god-allow-evil" },
+  { title: "Why Does God Allow Suffering?", href: "/writing/if-god-is-good-why-suffering" },
   { title: "Is the Bible Reliable?", href: "/faq/is-the-bible-historically-accurate" },
-  { title: "What About Other Religions?", href: "/writing/apologetics-what-about-those-who-never-heard" },
+  { title: "What About Other Religions?", href: "/writing/is-jesus-really-the-only-way" },
   { title: "Has Science Disproved God?", href: "/faq/can-science-and-faith-coexist" },
   { title: "Why Is the Church So Hypocritical?", href: "/writing/apologetics-hasnt-the-church-done-terrible-things" },
   { title: "Is Hell Real?", href: "/faq/what-do-christians-believe-about-hell" },

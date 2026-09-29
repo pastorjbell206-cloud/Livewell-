@@ -29,9 +29,9 @@ interface RelatedItem {
 const CORNERSTONES: Record<number, RelatedItem[]> = {
   1: [
     { slug: "what-christian-nationalism-is-and-is-not", title: "What Christian Nationalism Is and What It Is Not", blurb: "The phrase has become a weapon thrown in both directions, and almost nobody using it has stopped to ask what it actually names." },
-    { slug: "flags-in-the-sanctuary", title: "Flags in the Sanctuary: A Theology of the Nation", blurb: "The flag stands on most American platforms because nobody put it there on purpose, and that is precisely the problem." },
-    { slug: "whose-kingdom-jesus-and-political-power", title: "Whose Kingdom? Jesus and Political Power", blurb: "Jesus was offered every kingdom of the world by someone who actually had them to give, and what he did with the offer settles the question we keep reopening." },
-    { slug: "silence-abuse-church", title: "The Silence About Abuse in the Church", blurb: "The church's institutional protection of abusers and silencing of victims is one of its most serious failures and most urgent moral crises." },
+    { slug: "the-flag-in-the-sanctuary", title: "Should Churches Have an American Flag in the Sanctuary?", blurb: "The flag stands on most American platforms because nobody put it there on purpose, and that is precisely the problem." },
+    { slug: "two-kingdoms-faith-and-state", title: "What Does Render Unto Caesar Mean for Church and State?", blurb: "Jesus was offered every kingdom of the world by someone who actually had them to give, and what he did with the offer settles the question we keep reopening." },
+    { slug: "sexual-abuse-crisis-in-the-church", title: "Sexual Abuse in the Church and How Churches Should Respond", blurb: "The church's institutional protection of abusers and silencing of victims is one of its most serious failures and most urgent moral crises." },
   ],
   2: [
     { slug: "is-poverty-political-the-bibles-answer", title: "Is Poverty Political? The Bible's Uncomfortable Answer", blurb: "The question assumes poverty is either a private misfortune or a partisan football, and the prophets refuse both with a word our politics has no translation for." },
@@ -41,13 +41,13 @@ const CORNERSTONES: Record<number, RelatedItem[]> = {
     { slug: "what-the-gospel-actually-is", title: "What the Gospel Actually Is", blurb: "The gospel is not advice about how to be good or how to feel loved." },
     { slug: "the-trinity-is-not-optional", title: "The Trinity Is Not Optional", blurb: "We treat the Trinity as the church's embarrassing arithmetic." },
     { slug: "the-council-of-nicaea-what-was-decided-in-325", title: "The Council of Nicaea: What Was Actually Decided in 325", blurb: "Nicaea did not invent the divinity of Jesus or pick the books of the Bible." },
-    { slug: "what-is-biblical-justice-mishpat-and-tsedaqah", title: "What Is Biblical Justice? Mishpat and Tsedaqah", blurb: "Biblical justice is two Hebrew words held together, and the church keeps tearing them apart." },
+    { slug: "justice-not-political-theological", title: "Is Biblical Justice Political? What Scripture Means by Justice", blurb: "Biblical justice is two Hebrew words held together, and the church keeps tearing them apart." },
     { slug: "the-image-of-god-and-the-lie-of-race", title: "The Image of God and the Lie of Race", blurb: "Race is a recent invention dressed up as an ancient fact, and the church helped sew the costume." },
   ],
   4: [
     { slug: "the-atheist-in-the-pulpit", title: "The Atheist in the Pulpit", blurb: "I was not a lapsed churchgoer who wandered back." },
     { slug: "excavation-not-demolition", title: "Excavation, Not Demolition", blurb: "Demolition and excavation use the same tools — the pry bar, the shovel, the refusal to respect a wall just because it is standing." },
-    { slug: "christendom-is-ending-christianity-is-not", title: "Christendom Is Ending. Christianity Is Not.", blurb: "The arrangement that made Christianity the default religion of the West is dying, and many believers are grieving the wrong thing." },
+    { slug: "christendom-is-ending", title: "What Is Christendom, and What Comes After It?", blurb: "The arrangement that made Christianity the default religion of the West is dying, and many believers are grieving the wrong thing." },
     { slug: "the-end-of-home-field-advantage", title: "The End of Home-Field Advantage", blurb: "For fifteen centuries the church evangelized a culture that already half believed — the vocabulary pre-taught, the guilt pre-aimed, the God assumed." },
     { slug: "two-kingdoms-faith-and-state", title: "Two Kingdoms: How Christians Relate Faith and State", blurb: "The old teaching that there are two kingdoms has been used both to silence the church and to baptize the state, and it was meant to do neither." },
   ],
@@ -59,7 +59,7 @@ const CORNERSTONES: Record<number, RelatedItem[]> = {
     { slug: "the-machine-that-forms-you", title: "The Machine That Forms You", blurb: "Everyone is arguing about what the machines will do to our jobs, our schools, our elections." },
     { slug: "the-hour-that-forms-the-week", title: "The Hour That Forms the Week", blurb: "Every church has a liturgy, including the church that says it does not." },
     { slug: "covenant-vs-contract-what-marriage-is", title: "Covenant vs. Contract: What Marriage Actually Is", blurb: "A contract protects you from the person across the table, and a covenant binds you to them, which is why the modern wedding is a contract dressed in the language of a covenant it no longer believes." },
-    { slug: "how-to-raise-children-in-the-faith", title: "How to Raise Children in the Faith Without Crushing Them", blurb: "The opposite of crushing a child into the faith is not letting them choose freely from a neutral distance, because there is no neutral distance, and the home is forming them whether you intend it or not." },
+    { slug: "how-to-talk-kids-faith-doubt", title: "How to Raise Kids in the Faith When You Have Doubts Yourself", blurb: "The opposite of crushing a child into the faith is not letting them choose freely from a neutral distance, because there is no neutral distance, and the home is forming them whether you intend it or not." },
     { slug: "what-fatherhood-requires", title: "What Fatherhood Requires", blurb: "We have spent a generation telling fathers to be present, and presence is necessary and nowhere near sufficient, because a man can be in the room and still hand his children nothing." },
     { slug: "what-the-sabbath-is-and-why-you-need-it", title: "What the Sabbath Is and Why You Need It", blurb: "" },
   ],
@@ -68,7 +68,7 @@ const CORNERSTONES: Record<number, RelatedItem[]> = {
 const FALLBACK: RelatedItem[] = [
     { slug: "the-atheist-in-the-pulpit", title: "The Atheist in the Pulpit", blurb: "I was not a lapsed churchgoer who wandered back." },
     { slug: "how-to-read-the-bible-without-making-it-say-what-you-want", title: "How to Read the Bible Without Making It Say What You Want", blurb: "Two sincere readers open the same page and find opposite gods." },
-    { slug: "christendom-is-ending-christianity-is-not", title: "Christendom Is Ending. Christianity Is Not.", blurb: "The arrangement that made Christianity the default religion of the West is dying, and many believers are grieving the wrong thing." },
+    { slug: "christendom-is-ending", title: "What Is Christendom, and What Comes After It?", blurb: "The arrangement that made Christianity the default religion of the West is dying, and many believers are grieving the wrong thing." },
     { slug: "covenant-vs-contract-what-marriage-is", title: "Covenant vs. Contract: What Marriage Actually Is", blurb: "A contract protects you from the person across the table, and a covenant binds you to them, which is why the modern wedding is a contract dressed in the language of a covenant it no longer believes." },
 ];
 

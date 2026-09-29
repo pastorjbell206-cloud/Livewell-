@@ -6,11 +6,8 @@ import { LandingSignup } from "@/components/LandingSignup";
 
 const ARTICLES = [
   { title: "Deconstruction Is Not Destruction", slug: "deconstruction-is-not-destruction" },
-  { title: "The Rise of the Nones", slug: "the-rise-of-the-nones" },
-  { title: "The Exvangelical Movement", slug: "exvangelical-when-leaving-isnt-losing-faith" },
-  { title: "Reconstructing Faith After Deconstruction", slug: "reconstructing-faith" },
-  { title: "The Spirituality of Doubt", slug: "the-spirituality-of-doubt" },
-  { title: "The Problem with Certainty", slug: "the-problem-with-certainty" },
+  { title: "Why Are People Leaving the Church? The Rise of the Nones", slug: "why-people-are-leaving-the-church" },
+  { title: "Can You Have Faith and Doubt at the Same Time?", slug: "can-you-have-faith-and-doubt" },
 ];
 
 const FAQ_ITEMS = [
@@ -123,14 +120,14 @@ export default function Deconstruction() {
                 <p style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted, #5A5448)", lineHeight: 1.6 }}>For the person in the middle of it. The thing that feels like falling apart might be the thing that puts you back together.</p>
               </div>
             </Link>
-            <Link href="/writing/reconstructing-faith" style={{ textDecoration: "none" }}>
+            <Link href="/writing/excavation-not-demolition" style={{ textDecoration: "none" }}>
               <div style={{ background: "var(--card)", padding: "24px", borderRadius: "3px", border: "1px solid rgba(0,0,0,0.06)" }}>
                 <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "8px" }}>I AM REBUILDING</p>
-                <p style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 400, color: "var(--ink)", marginBottom: "8px" }}>Reconstructing Faith After Deconstruction</p>
+                <p style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 400, color: "var(--ink)", marginBottom: "8px" }}>Excavation, Not Demolition</p>
                 <p style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted, #5A5448)", lineHeight: 1.6 }}>For the person who has taken the old structure down and wants to know if anything worth building remains.</p>
               </div>
             </Link>
-            <Link href="/writing/engaging-nones-religiously-unaffiliated" style={{ textDecoration: "none" }}>
+            <Link href="/writing/why-people-are-leaving-the-church" style={{ textDecoration: "none" }}>
               <div style={{ background: "var(--card)", padding: "24px", borderRadius: "3px", border: "1px solid rgba(0,0,0,0.06)" }}>
                 <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "8px" }}>I LEFT AND I AM NOT GOING BACK</p>
                 <p style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 400, color: "var(--ink)", marginBottom: "8px" }}>The Rise of the Nones</p>

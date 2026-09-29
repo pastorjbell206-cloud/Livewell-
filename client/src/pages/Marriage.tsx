@@ -19,16 +19,16 @@ export default function Marriage() {
       readTime: "18 min read"
     },
     {
-      title: "Communication That Actually Works",
-      slug: "marriage-communication-that-works",
+      title: "The Silent Treatment in Marriage and How to Start Talking Again",
+      slug: "what-silence-costs-a-marriage",
       topic: "Marriage",
-      readTime: "9 min read"
+      readTime: "20 min read"
     },
     {
-      title: "Fighting Fair: Conflict Without Casualties",
-      slug: "marriage-fighting-fair",
+      title: "Healthy Conflict in Marriage Is More Than Fighting Fair",
+      slug: "healthy-conflict-marriage",
       topic: "Marriage",
-      readTime: "9 min read"
+      readTime: "19 min read"
     },
     {
       title: "Forgiveness in Marriage: How to Actually Do It",

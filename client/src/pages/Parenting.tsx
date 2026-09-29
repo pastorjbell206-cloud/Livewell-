@@ -12,10 +12,10 @@ export default function Parenting() {
 
   const FEATURED_ARTICLES = [
     {
-      title: "How to Raise Children in the Faith Without Crushing Them",
-      slug: "how-to-raise-children-in-the-faith",
+      title: "How to Raise Kids in the Faith When You Have Doubts Yourself",
+      slug: "how-to-talk-kids-faith-doubt",
       topic: "Parenting",
-      readTime: "12 min read"
+      readTime: "19 min read"
     },
     {
       title: "What Fatherhood Requires",
@@ -24,10 +24,10 @@ export default function Parenting() {
       readTime: "12 min read"
     },
     {
-      title: "Discipline That Forms the Heart, Not Just the Behavior",
-      slug: "parenting-discipline-that-forms-the-heart",
+      title: "How to Discipline a Child Biblically, Without Anger",
+      slug: "discipline-without-domination",
       topic: "Parenting",
-      readTime: "9 min read"
+      readTime: "19 min read"
     },
     {
       title: "Raising Kids in a Screen and Phone Age",
@@ -36,10 +36,10 @@ export default function Parenting() {
       readTime: "10 min read"
     },
         {
-      title: "Teaching Your Kids to Pray and Read the Bible",
-      slug: "parenting-teaching-kids-to-pray-and-read-scripture",
+      title: "How to Do Family Devotions and Teach Your Kids to Pray",
+      slug: "family-devotions-authentic",
       topic: "Parenting",
-      readTime: "9 min read"
+      readTime: "20 min read"
     }
   ];
 

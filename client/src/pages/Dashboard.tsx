@@ -25,7 +25,7 @@ const READING_PATHS: ReadingPath[] = [
       { title: "Why Do Married Couples Slowly Drift Apart?", slug: "the-slow-drift-that-ends-marriages" },
       { title: "What Silence Actually Costs a Marriage", slug: "what-silence-costs-a-marriage" },
       { title: "What the Resentment in Your Marriage Is Telling You", slug: "the-resentment-in-your-marriage" },
-      { title: "How Do You Forgive Without Pretending It Didn't Happen?", slug: "forgiveness-without-pretending" },
+      { title: "How to Forgive Your Spouse, and Why Forgiveness Isn't Trust", slug: "forgiveness-in-marriage" },
     ],
   },
   {
@@ -33,8 +33,7 @@ const READING_PATHS: ReadingPath[] = [
     title: "Faith in Crisis — A Path Through Doubt",
     articles: [
       { title: "What If Christianity Is Wrong?", slug: "what-if-we-are-wrong" },
-      { title: "When God Stops Making Sense", slug: "when-god-doesnt-make-sense" },
-      { title: "What to Do When God Feels Absent", slug: "dark-night-god-feels-absent" },
+      { title: "Why Does God Feel Silent? Faith When God Seems Absent", slug: "when-god-is-silent-and-the-room-is-empty" },
       { title: "How Does the Church Tell the Truth in a Post-Truth Age?", slug: "truth-in-post-truth-world" },
       { title: "What Comes After Deconstruction of Your Faith?", slug: "excavation-not-demolition" },
     ],
@@ -46,7 +45,7 @@ const READING_PATHS: ReadingPath[] = [
       { title: "Why Are Pastors So Lonely in a Full Church?", slug: "the-loneliest-room-in-the-church" },
       { title: "Who Pastors the Pastor When No One Checks In?", slug: "the-pastor-nobody-checks-on" },
       { title: "Why Do Pastors Treat Exhaustion as Faithfulness?", slug: "burnout-is-not-a-badge" },
-      { title: "When Ministry Is Quietly Killing Your Marriage", slug: "protecting-marriage-in-ministry" },
+      { title: "When Work Is Hurting Your Marriage and You Can't Just Quit", slug: "protecting-your-marriage-from-work" },
     ],
   },
   {
@@ -54,9 +53,8 @@ const READING_PATHS: ReadingPath[] = [
     title: "Raising Children Who Think Theologically",
     articles: [
       { title: "How Do You Raise Kids Who Think About Their Faith?", slug: "raising-kids-who-think" },
-      { title: "How Do You Talk to Your Kids About Doubt?", slug: "teaching-kids-about-doubt" },
       { title: "When Your Teenager Says They Don't Believe Anymore", slug: "teenager-losing-faith" },
-      { title: "How a Father Shapes the Way a Child Sees God", slug: "the-father-wound-and-the-god-question" },
+      { title: "What Does the Bible Say About Fathers and the Father Wound?", slug: "what-fatherhood-requires" },
     ],
   },
   {
@@ -65,9 +63,9 @@ const READING_PATHS: ReadingPath[] = [
     articles: [
       { title: "Where the Church Was Silent", slug: "where-church-was-silent" },
       { title: "Is Justice a Political Issue or a Theological One?", slug: "justice-not-political-theological" },
-      { title: "What Does the Bible Say About the Church and the Poor?", slug: "poor-not-ministry-category" },
-      { title: "Why Does Charity Treat Symptoms and Not Causes?", slug: "symptoms-without-causes-charity" },
-      { title: "Can a System Sin?", slug: "individual-sin-systemic-sin-2" },
+      { title: "What Does the Bible Say About Poverty, and Is It Political?", slug: "is-poverty-political-the-bibles-answer" },
+      { title: "Charity vs. Justice: What's the Difference for Christians?", slug: "charity-is-not-justice-the-difference" },
+      { title: "Is Sin Only Personal? What the Bible Says About Systemic Sin", slug: "individual-sin-and-systemic-sin-explained" },
     ],
   },
 ];
@@ -85,7 +83,7 @@ const SUGGESTED_ARTICLES = [
   { slug: "excavation-not-demolition", title: "What Comes After Deconstruction of Your Faith?", href: "/writing/excavation-not-demolition" },
   { slug: "what-if-we-are-wrong", title: "What If Christianity Is Wrong?", href: "/writing/what-if-we-are-wrong" },
   { slug: "the-slow-drift-that-ends-marriages", title: "Why Do Married Couples Slowly Drift Apart?", href: "/writing/the-slow-drift-that-ends-marriages" },
-  { slug: "the-father-wound-and-the-god-question", title: "How a Father Shapes the Way a Child Sees God", href: "/writing/the-father-wound-and-the-god-question" },
+  { slug: "what-fatherhood-requires", title: "What Does the Bible Say About Fathers and the Father Wound?", href: "/writing/what-fatherhood-requires" },
   { slug: "the-loneliest-room-in-the-church", title: "Why Are Pastors So Lonely in a Full Church?", href: "/writing/the-loneliest-room-in-the-church" },
 ];
 
