@@ -1,0 +1,670 @@
+{
+  "verses": [
+    {
+      "v": "1-2",
+      "context": "Chapter 2 ended by defining the true Jew inwardly, which raises the obvious objection: then what advantage is there in being a Jew, and what use is circumcision? The ‘then’ (oun) draws the question out of 2:28-29. Paul's answer is emphatic, ‘much in every way’, and he names the first advantage: Israel was entrusted with God's words.",
+      "grammar": "To perisson, ‘the advantage’ (literally ‘the surplus’), and hē ōpheleia, ‘the benefit’, pick up the verb ōphelei of 2:25. Prōton men, ‘first’, again is never followed by a ‘second’; Paul will finish the list in 9:4-5. Episteuthēsan, ‘they were entrusted’, is an aorist passive of pisteuō, the verb ‘believe’, used in its sense of entrusting something to someone; the word prepares the pun of verse 3, where some of those entrusted (episteuthēsan) proved faithless (ēpistēsan). Ta logia tou theou, ‘the oracles of God’, is the Septuagint's term for divine utterances (Numbers 24:4, Psalm 12:6) and here means the Scriptures as God's spoken promises, especially the promises Paul has in view.",
+      "words": [
+        "G4053",
+        "G5622",
+        "G4413I",
+        "G4100",
+        "G3051"
+      ],
+      "theology": [
+        {
+          "id": "israel",
+          "note": "Paul does not answer the question by denying Israel's advantage. To receive God's words was a real privilege, and the privilege remains even when Israel was unfaithful to it, because it rests on what God said, not on Israel's response."
+        },
+        {
+          "id": "revelation",
+          "note": "God's words were given in trust to a particular people. Revelation in Scripture is not an idea floating free of history; it was spoken to Israel and kept by Israel, and Paul will call the church's Scriptures by the name Israel received them under."
+        }
+      ],
+      "refs": [
+        "Romans 9:4-5",
+        "Deuteronomy 4:7-8",
+        "Psalm 147:19-20",
+        "Acts 7:38",
+        "Hebrews 5:12"
+      ]
+    },
+    {
+      "v": "3-4",
+      "context": "A second objection follows: if some Jews were unfaithful, does their unfaithfulness cancel God's faithfulness to his promises? Paul answers with his strongest negative and a citation from David's psalm of repentance, in which David confesses that God is right in his verdict. The theme of chapters 9-11, God's faithfulness to Israel despite unbelief, is announced here in miniature.",
+      "grammar": "The verse plays on the pist- root: ēpistēsan, ‘they were unfaithful’ or ‘disbelieved’, apistia, ‘unfaithfulness’, and tēn pistin tou theou, ‘the faithfulness of God’. Here pistis plainly means God's faithfulness, a subjective genitive, which bears on the debate about ‘faith of Jesus Christ’ in verse 22. Katargēsei, ‘will it nullify’, is a word Paul uses for making something ineffective (3:31, 4:14). Mē genoito, ‘may it not be’, uses the rare optative mood, and Paul uses the formula ten times in Romans to reject a false inference with horror. Ginesthō ho theos alēthēs, ‘let God be true’, is an imperative of the verb ‘become’: let God be shown to be true, even if every person is shown a liar.",
+      "words": [
+        "G0569",
+        "G0570",
+        "G4102H",
+        "G2673",
+        "G1096",
+        "G0227",
+        "G5583",
+        "G1344",
+        "G3528"
+      ],
+      "ot": [
+        {
+          "ref": "Psalm 51:4",
+          "note": "Paul quotes the Septuagint of Psalm 51:4 (50:6 in its numbering) exactly: hopōs an dikaiōthēs en tois logois sou kai nikēseis en tō krinesthai se. In the Hebrew, David confesses his sin with Bathsheba so that God may be in the right when he speaks and blameless (tizkeh) when he judges. The Septuagint turns the second verb into ‘prevail’ or ‘win’, and its infinitive krinesthai can be middle, ‘when you go to law’, so that God appears as a party in a lawsuit who is vindicated. That suits Paul exactly: human unfaithfulness puts God on trial, and God wins the case. The words ‘every man a liar’ echo Psalm 116:11. The point of the psalm is that a sinner's confession vindicates God's verdict, and Paul will make the whole world's silence (verse 19) do the same thing."
+        }
+      ],
+      "text": "Editions divide on the last verb: the critical editions print the future indicative nikēseis, ‘you will prevail’, while the Tyndale House edition, the Textus Receptus, and the Byzantine text print the subjunctive nikēsēs, ‘that you may prevail’. The Septuagint manuscripts divide in the same way, and the sense is the same.",
+      "theology": [
+        {
+          "id": "attributes",
+          "note": "God's faithfulness does not depend on the faithfulness of his people. His truthfulness is the fixed point by which everything else is measured, so that even human unbelief ends by demonstrating that God keeps his word (2 Timothy 2:13)."
+        },
+        {
+          "id": "covenant",
+          "note": "The promises entrusted to Israel stand. Paul's question anticipates Romans 9-11, where he argues that God has not rejected his people and that the word of God has not failed (9:6)."
+        }
+      ],
+      "refs": [
+        "Psalm 51:4",
+        "Psalm 116:11",
+        "2 Timothy 2:13",
+        "Romans 9:6",
+        "Numbers 23:19"
+      ]
+    },
+    {
+      "v": "5-6",
+      "context": "The objection presses further: if human unrighteousness makes God's righteousness shine, is God unjust to punish it? Paul flags the question as a merely human way of speaking and answers with another ‘certainly not’: if that were true, God could not judge the world at all, which every Jew affirmed he would.",
+      "grammar": "Synistēsin, ‘shows’ or ‘demonstrates’, is the verb Paul uses in 5:8 of God demonstrating his love. Here dikaiosynē theou, ‘God's righteousness’, must mean God's own righteousness, his justice and faithfulness as judge, since human wrong is said to set it off. The question mē adikos ho theos, introduced by mē, expects the answer no: ‘God is not unjust, is he?’ Kata anthrōpon legō, ‘I speak in a human way’, is Paul's apology for putting such a question in words (compare Galatians 3:15). The future krinei, ‘will judge’, points to the last day, and the argument depends on a shared premise: God will judge the world (Genesis 18:25).",
+      "words": [
+        "G0093",
+        "G1343",
+        "G4921",
+        "G0094",
+        "G2018",
+        "G3709",
+        "G2919",
+        "G2889"
+      ],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "That God will judge the world is treated as settled and non-negotiable. Any theory that makes God's justice depend on human sin, or that excuses sin because it serves God's glory, collapses before that fact."
+        },
+        {
+          "id": "attributes",
+          "note": "The verse is important for the meaning of God's righteousness in Romans: here it is his character as the just judge, not a gift given to believers. Readers weighing 1:17 and 3:21 must reckon with this usage."
+        }
+      ],
+      "refs": [
+        "Genesis 18:25",
+        "Romans 5:8",
+        "Psalm 96:13",
+        "Galatians 3:15",
+        "Acts 17:31"
+      ]
+    },
+    {
+      "v": "7-8",
+      "context": "The objection is taken to its absurd end: if my lie makes God's truth abound to his glory, why am I condemned, and why not do evil that good may come? Paul reveals that this is not a hypothetical charge; some were accusing him of teaching it. He does not argue the point here, only pronounces such reasoning condemned. He will answer it fully in 6:1-2.",
+      "grammar": "Verse 7 uses the first person, kagō, ‘I also’, as the diatribe's voice of the objector. En tō emō pseusmati, ‘by my lie’, sets pseusma against alētheia, ‘truth’, as verse 5 set unrighteousness against righteousness. Verse 8 is broken in syntax: the question ‘why not say’ is interrupted by an aside, kathōs blasphēmoumetha, ‘as we are slandered’, and kathōs phasin tines, ‘as some claim’. The slogan poiēsōmen ta kaka hina elthē ta agatha, ‘let us do evil that good may come’, is an aorist subjunctive of exhortation. Endikon, ‘just’ or ‘deserved’, closes the unit tersely.",
+      "words": [
+        "G0225",
+        "G5582",
+        "G4052",
+        "G0268",
+        "G0987",
+        "G5346",
+        "G4160G",
+        "G2917",
+        "G1738"
+      ],
+      "history": "The charge that Paul's gospel encouraged sin followed him through his ministry. Acts 21:21 reports the rumor in Jerusalem that he taught Jews to abandon the law, and Galatians 2:17 answers a similar objection. The accusation shows how radical his preaching of grace sounded to devout ears. It also shows that his opponents understood him to be teaching that God accepts sinners without prior obedience, which is why the charge could be made at all.",
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Evil is never justified by the good God brings out of it. Paul refuses every calculation that treats sin as useful to God's purposes, a refusal he will ground in union with Christ in 6:1-4."
+        }
+      ],
+      "refs": [
+        "Romans 6:1-2",
+        "Romans 6:15",
+        "Acts 21:21",
+        "Galatians 2:17",
+        "Jude 1:4"
+      ]
+    },
+    {
+      "v": "9",
+      "context": "Paul gathers the argument from 1:18 onward into a verdict: Jews and Greeks alike are all under sin. The ‘for’ looks back to what he has already charged. The catena of Scriptures in verses 10-18 will support the verdict from Israel's own writings.",
+      "grammar": "Proechometha is among the hardest words in the letter. It can be middle with an active meaning, ‘are we better off?’ or ‘do we have an advantage?’ (most translations, including the BSB), though the active proechō would be expected for that sense. It can be passive, ‘are we surpassed?’ or ‘are we worse off?’. Or it can be a true middle, ‘are we putting up a defense?’ or ‘are we making excuses?’, a reading some commentators prefer because Paul's argument is about the Jewish plea of privilege. The answer ou pantōs can mean ‘not at all’ or ‘not altogether’, and the context favors ‘not at all’. Who ‘we’ are is also debated: Jews (Paul identifying with his people) or Paul and his Christian readers. Proētiasametha, ‘we have already charged’, is a legal word, found only here in the New Testament. Hyph' hamartian, ‘under sin’, is the first time Romans pictures sin as a power, a master people are under, not only acts they commit.",
+      "words": [
+        "G4284",
+        "G3843",
+        "G4256",
+        "G2453",
+        "G1672",
+        "G5259H",
+        "G0266"
+      ],
+      "text": "Some Western manuscripts rephrase the question, reading ‘what advantage then do we possess?’. The change shows that early copyists already found proechometha difficult. The shorter, harder reading is almost certainly original.",
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Sin is a power that holds all humanity, Jew and Gentile, in subjection. This is why the solution cannot be moral improvement alone: people need liberation from a master, which is what chapter 6 describes."
+        }
+      ],
+      "refs": [
+        "Galatians 3:22",
+        "Romans 6:14",
+        "Romans 7:14",
+        "Romans 11:32",
+        "Romans 1:16"
+      ]
+    },
+    {
+      "v": "10-12",
+      "context": "The catena, a chain of Scripture quotations, begins. Verses 10-12 state the universal verdict in general terms: no one is righteous, understands, or seeks God; all have turned aside. Verses 13-18 will move through the body, from throat to feet to eyes.",
+      "grammar": "The repeated ouk estin, ‘there is not’, appears six times in verses 10-12, a hammering negative. Oude heis and heōs henos, ‘not even one’, close the section as they open it. In verse 11 the participles syniōn, ‘one who understands’, and ekzētōn, ‘one who seeks’, describe the absence of the right response to God that 1:21 described. In verse 12, exeklinan, ‘they turned away’, and ēchreōthēsan, ‘they became useless’, are aorists summing up the human story. Chrēstotēs, ‘goodness’ or ‘kindness’, is the very quality God showed in 2:4.",
+      "words": [
+        "G1342",
+        "G1520",
+        "G4920",
+        "G1567",
+        "G1578",
+        "G0260",
+        "G0889",
+        "G5544"
+      ],
+      "ot": [
+        {
+          "ref": "Psalm 14:1-3",
+          "note": "Verses 11-12 follow the Septuagint of Psalm 14:2-3 (13:2-3 in its numbering) almost word for word; the same lines appear in Psalm 53:1-3, a near duplicate. In the Hebrew, the LORD looks down from heaven to see whether any understand and seek God, and finds that all have turned aside and together become corrupt (ne'elachu, a verb used for going sour); the Septuagint renders it ‘become useless’. The psalm's first line says there is none who does good. Paul's opening line, ‘There is no one righteous, not even one’, adapts that line, substituting ‘righteous’ (dikaios), perhaps under the influence of Ecclesiastes 7:20, which says in the Septuagint that there is no righteous man on earth who does good and does not sin. The psalm originally describes the fool who says there is no God and the evildoers who devour God's people; Paul takes its sweeping language, ‘all’ and ‘not even one’, at full strength and applies it to Israel as well as the nations."
+        },
+        {
+          "ref": "Ecclesiastes 7:20",
+          "note": "The Preacher's observation that there is not a righteous man on earth who always does good and never sins is the closest Old Testament statement of universal sinfulness using the word ‘righteous’. If Paul has it in mind in verse 10, he combines a wisdom saying with a psalm, using the word ‘righteous’ that is at the center of his argument. Solomon's prayer in 1 Kings 8:46 says similarly that there is no one who does not sin."
+        }
+      ],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "The failure is not only in deeds but in understanding and seeking: no one naturally seeks God. Augustinian and Reformed theology has drawn from these verses the doctrine that sin affects the whole person, including the will's orientation toward God, while other traditions stress that God's grace precedes and enables every human seeking."
+        }
+      ],
+      "refs": [
+        "Psalm 14:1-3",
+        "Psalm 53:1-3",
+        "Ecclesiastes 7:20",
+        "1 Kings 8:46",
+        "Isaiah 53:6"
+      ]
+    },
+    {
+      "v": "13-14",
+      "context": "The catena turns to the organs of speech: throat, tongue, lips, and mouth. The emphasis on speech is fitting for readers who had the oracles of God (verse 2), and it prepares for verse 19, where every mouth is stopped.",
+      "grammar": "Taphos aneōgmenos, ‘an opened grave’, uses a perfect passive participle: the throat stands permanently open like a tomb, releasing the stench of death. Edoliousan, ‘they were deceiving’, is an imperfect of repeated action, with an unusual ending (-osan) found in the Septuagint. Ios aspidōn, ‘venom of asps’, pictures poison hidden under the lips. In verse 14, gemei, ‘is full’, pairs ara, ‘cursing’, with pikria, ‘bitterness’.",
+      "words": [
+        "G5028",
+        "G0455",
+        "G2995",
+        "G1100",
+        "G1387",
+        "G2447",
+        "G0785",
+        "G5491",
+        "G0685",
+        "G4088",
+        "G1073"
+      ],
+      "ot": [
+        {
+          "ref": "Psalm 5:9",
+          "note": "Verse 13a quotes the Septuagint of Psalm 5:9 (5:10 in its numbering) exactly. In the psalm, David prays for guidance against enemies whose inward part is destruction and whose throat is an open grave, who flatter with their tongue. Paul applies to all humanity what David said of his enemies."
+        },
+        {
+          "ref": "Psalm 140:3",
+          "note": "Verse 13b quotes Psalm 140:3 (139:4 in the Septuagint), where David asks rescue from violent men whose tongues are sharp as a serpent's and who have the poison of vipers under their lips. The Septuagint wording is taken over exactly."
+        },
+        {
+          "ref": "Psalm 10:7",
+          "note": "Verse 14 adapts Psalm 10:7 (9:28 in the Septuagint), which describes the wicked man whose mouth is full of cursing, deceit, and oppression. Paul changes the singular to the plural to fit his chain and omits ‘deceit’, which he has already covered in verse 13."
+        }
+      ],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Speech exposes the heart (Matthew 12:34). Paul's catena treats words as the first evidence of the human condition, the organ by which people were meant to praise God and instead curse, deceive, and wound."
+        }
+      ],
+      "refs": [
+        "Psalm 5:9",
+        "Psalm 140:3",
+        "Psalm 10:7",
+        "James 3:6-10",
+        "Matthew 12:34-37"
+      ]
+    },
+    {
+      "v": "15-18",
+      "context": "The catena moves from speech to action, feet swift to shed blood and paths marked by ruin, and ends where it began, with God: there is no fear of God before their eyes. The fear of God, the beginning of wisdom in Israel's Scriptures, is the thing whose absence explains all the rest.",
+      "grammar": "Oxeis, ‘swift’, stands first for emphasis. Syntrimma kai talaipōria, ‘ruin and misery’, are what people leave on their roads (hodois). Hodon eirēnēs ouk egnōsan, ‘the way of peace they have not known’, uses egnōsan, ‘they knew’, in the biblical sense of knowing by experience and commitment. In verse 18 phobos theou, ‘fear of God’, is an objective genitive, reverence directed toward God, and apenanti tōn ophthalmōn autōn, ‘before their eyes’, pictures God as absent from the field of vision that governs conduct.",
+      "words": [
+        "G3691",
+        "G1632",
+        "G4938",
+        "G5004",
+        "G3598",
+        "G1515",
+        "G1097",
+        "G5401",
+        "G0561"
+      ],
+      "ot": [
+        {
+          "ref": "Isaiah 59:7-8",
+          "note": "Verses 15-17 abbreviate the Septuagint of Isaiah 59:7-8. In Isaiah the words are not about Gentiles but about Israel: the prophet explains that the LORD's arm is not too short to save, but Israel's iniquities have separated them from God, and he describes Jerusalem's violence and injustice. The chapter goes on to say that the LORD saw there was no justice, put on righteousness as a breastplate, and came as Redeemer to Zion (59:15-20), a passage Paul quotes in 11:26. Proverbs 1:16 has a similar line about feet running to evil and hastening to shed blood."
+        },
+        {
+          "ref": "Psalm 36:1",
+          "note": "Verse 18 quotes Psalm 36:1 (35:2 in the Septuagint), changing ‘his eyes’ to ‘their eyes’. In the psalm, transgression speaks to the wicked deep in his heart, and there is no dread of God before his eyes; the psalmist then turns to celebrate God's steadfast love, which reaches to the heavens (36:5). The chain that began with ‘no one righteous’ ends with ‘no fear of God’, framing the whole with the relationship to God."
+        }
+      ],
+      "history": "Chains of Scripture texts were a Jewish practice before Paul. The Qumran document known as 4QTestimonia (4Q175) strings together passages from Deuteronomy, Numbers, and Joshua without comment. A later history shows how influential Paul's catena became: some manuscripts of the Septuagint inserted Romans 3:13-18 into Psalm 14 (13 in the Greek), and the addition passed into the Latin psalter. It survives in English in the Coverdale Psalter of the Book of Common Prayer, where Psalm 14 has three extra verses beginning with the open sepulchre of the throat.",
+      "theology": [
+        {
+          "id": "fear-of-god",
+          "note": "The fear of God is the beginning of wisdom (Proverbs 1:7, 9:10), and its absence is the end of Paul's diagnosis. Everything wrong in speech and action flows from a life lived as if God were not watching."
+        },
+        {
+          "id": "sin",
+          "note": "Paul chooses texts about Israel's own sin (Isaiah 59) and about the wicked in Israel's psalms to prove universal guilt. The Scriptures entrusted to Israel (verse 2) now bear witness against all."
+        }
+      ],
+      "refs": [
+        "Isaiah 59:7-8",
+        "Psalm 36:1",
+        "Proverbs 1:16",
+        "Proverbs 1:7",
+        "Luke 19:42"
+      ]
+    },
+    {
+      "v": "19",
+      "context": "Paul explains the purpose of the catena. What the law says, it says to those under it, so the quotations cannot be deflected onto the Gentiles alone. The result is universal silence and accountability: every mouth stopped, the whole world answerable to God.",
+      "grammar": "Oidamen, ‘we know’, again marks shared ground. Ho nomos, ‘the law’, here covers the whole Old Testament, since the texts just quoted come from the Psalms and Isaiah; Paul uses ‘law’ this way in 1 Corinthians 14:21 as well. The two verbs legei and lalei, ‘says’ and ‘speaks’, are nearly synonymous. Hina, ‘so that’, states purpose: the law speaks in order to silence. Phragē, ‘may be stopped’, pictures a mouth shut in court, with no defense left (the same image as Psalm 107:42). Hypodikos, ‘accountable’ or ‘liable to judgment’, is a legal term found only here in the New Testament.",
+      "words": [
+        "G6063",
+        "G3551",
+        "G3004G",
+        "G2980",
+        "G4750",
+        "G5420",
+        "G5267",
+        "G2889"
+      ],
+      "theology": [
+        {
+          "id": "law",
+          "note": "One purpose of the law is to silence self-justification. Before God's law, every human defense falls away, which the Reformation called the law's first use: to reveal sin and drive the sinner to seek grace."
+        },
+        {
+          "id": "judgment",
+          "note": "The whole world stands accountable. The Jew, who had the law, is included in the verdict rather than exempted by it, and so the ground is level for the gift announced in verse 21."
+        }
+      ],
+      "refs": [
+        "Psalm 107:42",
+        "Job 40:4-5",
+        "Galatians 3:22-23",
+        "1 Corinthians 14:21",
+        "Romans 11:32"
+      ]
+    },
+    {
+      "v": "20",
+      "context": "The verdict of the first main section (1:18-3:20): no one will be justified before God by works of the law, because through the law comes knowledge of sin. The next verse will announce the alternative God has provided.",
+      "grammar": "Dioti, ‘because’ or ‘therefore’, explains why every mouth is stopped. Ex ergōn nomou, ‘by works of the law’, is the phrase at the center of the debate between the Reformation reading and the New Perspective (summarized in the chapter note). Ou dikaiōthēsetai pasa sarx, literally ‘all flesh will not be justified’, is a Hebraic way of saying ‘no one will be justified’; sarx, ‘flesh’, stresses human frailty. The future tense may be logical or may look to the last judgment, recalling 2:13. The second clause, dia gar nomou epignōsis hamartias, ‘for through the law comes knowledge of sin’, has no verb: the law's function is to expose, a thought Paul develops in 5:20 and 7:7.",
+      "words": [
+        "G1360",
+        "G2041",
+        "G3551",
+        "G1344",
+        "G4561",
+        "G1799",
+        "G1922",
+        "G0266"
+      ],
+      "ot": [
+        {
+          "ref": "Psalm 143:2",
+          "note": "Paul alludes to Psalm 143:2, where David pleads with God not to enter into judgment with his servant, because no one living is righteous before him. The Septuagint (142:2) reads ou dikaiōthēsetai enōpion sou pas zōn, ‘no one living will be justified before you’. Paul keeps the verb and ‘before him’, changes ‘every living one’ to ‘all flesh’, and adds ‘by works of the law’, the same adaptation he makes in Galatians 2:16. The psalm's setting is a plea for mercy that does not appeal to the psalmist's own righteousness but to God's faithfulness and righteousness (143:1), which is the turn Paul is about to make in verse 21."
+        }
+      ],
+      "history": "The Hebrew equivalent of ‘works of the law’ appears in a Qumran document known as 4QMMT, a letter setting out legal rulings that separated the sect from others, which speaks of ‘some of the works of the law’ and promises that keeping them will be reckoned as righteousness. Martin Abegg's 1994 article in Biblical Archaeology Review and James Dunn's writing drew attention to it. Dunn took it as support for reading the phrase as practices that marked out a group; Simon Gathercole (Where Is Boasting?, 2002) and others argued that Second Temple Jews also expected final vindication on the basis of obedience, so Paul's denial is broader than boundary markers.",
+      "theology": [
+        {
+          "id": "justification",
+          "note": "No one is declared righteous by doing the law, because the law's function is to expose sin, not to remove it. The verse shuts the door that 3:21 opens in another place."
+        },
+        {
+          "id": "law",
+          "note": "The law is not evil, but it cannot justify; it brings knowledge of sin. Paul's later chapters show the law holy and good (7:12) yet powerless to give life because of the flesh (8:3)."
+        }
+      ],
+      "refs": [
+        "Psalm 143:2",
+        "Galatians 2:16",
+        "Romans 7:7",
+        "Romans 5:20",
+        "Galatians 3:10-11"
+      ]
+    },
+    {
+      "v": "21",
+      "context": "‘But now’ marks the letter's great turn from diagnosis to remedy. The righteousness of God announced in 1:17 is now said to have been manifested apart from the law, yet attested by the Law and the Prophets. Verses 21-26 are a single dense statement that the rest of the letter explains.",
+      "grammar": "Nyni de, ‘but now’, is both logical and temporal: it contrasts with the verdict just given, and it marks a new moment in history, the arrival of what the Scriptures promised. Chōris nomou, ‘apart from law’, stands first for emphasis and probably modifies the verb: God's righteousness has been revealed without the law as its means. Pephanerōtai, ‘has been manifested’, is perfect, a completed event with continuing effect, set beside the present apokalyptetai of 1:17 (the event in Christ and its continuing proclamation). Martyroumenē hypo tou nomou kai tōn prophētōn, ‘being witnessed by the Law and the Prophets’, is a present participle: the Scriptures continue to testify, as chapter 4 will show from Genesis and the Psalms.",
+      "words": [
+        "G3570",
+        "G5565",
+        "G3551",
+        "G1343",
+        "G5319",
+        "G3140",
+        "G4396"
+      ],
+      "theology": [
+        {
+          "id": "justification",
+          "note": "God's saving righteousness has appeared in history, apart from the law as the means of attaining it, yet in continuity with the law's own witness. The phrase ‘righteousness of God’ carries the same debate as in 1:17, and verses 25-26 show it includes God's own justice."
+        },
+        {
+          "id": "revelation",
+          "note": "The gospel is not a departure from Israel's Scriptures but their fulfillment. The Law and the Prophets bear witness to what is now revealed, which is how Jesus read them on the Emmaus road (Luke 24:27)."
+        }
+      ],
+      "refs": [
+        "Romans 1:17",
+        "Romans 16:25-26",
+        "Luke 24:27",
+        "Galatians 4:4",
+        "Hebrews 1:1-2"
+      ]
+    },
+    {
+      "v": "22",
+      "context": "The righteousness of God comes through faith and reaches all who believe, with no distinction between Jew and Gentile. The ‘for’ at the end introduces the reason in verse 23: all have sinned.",
+      "grammar": "Dia pisteōs Iēsou Christou is one of the most debated phrases in Paul. Read as an objective genitive, it means ‘through faith in Jesus Christ’, the believer's trust (the BSB, most translations, and the Reformation tradition, defended by James Dunn, Douglas Moo, and others). Read as a subjective genitive, it means ‘through the faithfulness of Jesus Christ’, his faithful obedience to death (argued by Richard Hays in The Faith of Jesus Christ, 1983, Morna Hooker in a 1989 New Testament Studies article, Douglas Campbell, and N. T. Wright). The subjective reading notes that verse 3 used pistis theou for God's faithfulness and 4:16 uses ‘the faith of Abraham’ for Abraham's own faith, and that the objective reading makes ‘to all who believe’ redundant. The objective reading replies that Paul repeats for emphasis (compare Galatians 2:16, where ‘we have believed in Christ Jesus’ stands between two such phrases), that Mark 11:22 uses pistin theou for faith in God, and that Paul nowhere else speaks plainly of Christ's faith. Ou gar estin diastolē, ‘for there is no distinction’, returns in 10:12.",
+      "words": [
+        "G1343",
+        "G4102G",
+        "G2424G",
+        "G5547",
+        "G4100",
+        "G1293"
+      ],
+      "text": "The Textus Receptus and Byzantine text read ‘unto all and upon all them that believe’ (King James Version), adding ‘and upon all’. The earliest manuscripts, including Sinaiticus and Vaticanus, have only ‘to all who believe’. The longer text probably combines two early readings.",
+      "theology": [
+        {
+          "id": "faith",
+          "note": "On either reading of the genitive, righteousness reaches people by faith: the phrase ‘to all who believe’ makes human trust the means of receiving it. The subjective reading adds that the ground is Christ's own faithful obedience, a thought Paul states outright in 5:19."
+        },
+        {
+          "id": "justification",
+          "note": "Righteousness is given ‘to all who believe’ without distinction. The same God, the same gift, and the same means for Jew and Gentile make justification by faith the foundation of one people of God."
+        }
+      ],
+      "refs": [
+        "Galatians 2:16",
+        "Philippians 3:9",
+        "Romans 10:12",
+        "Romans 5:19",
+        "Mark 11:22"
+      ]
+    },
+    {
+      "v": "23",
+      "context": "The reason there is no distinction: all have sinned and lack God's glory. The verse summarizes 1:18-3:20 in a single line and recalls 1:23, where humanity exchanged God's glory for images.",
+      "grammar": "Hēmarton, ‘sinned’, is aorist, summing up every human life as a whole from the standpoint of God's verdict; it does not by itself point to a single moment in Adam, though Paul will make that connection in 5:12, where the same form appears. Hysterountai, ‘they lack’ or ‘fall short’, is present: the lack continues. The verb means to be deficient or to come too late, and with the genitive doxēs tou theou it means to be without God's glory. Many interpreters understand glory here as the reflected glory humanity was made to bear as God's image, a glory believers are promised again (5:2, 8:30).",
+      "words": [
+        "G0264",
+        "G5302",
+        "G1391"
+      ],
+      "history": "Jewish writings of the period speak of the glory Adam lost. The Greek Life of Adam and Eve (also called the Apocalypse of Moses, of uncertain date) has Adam accuse Eve of estranging him from God's glory (21:6). The Qumran Community Rule promises the faithful all the glory of Adam (1QS 4:23), as does the Damascus Document (CD 3:20). Paul shares the idea that humanity was made for glory and lost it, and he locates its restoration in Christ.",
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Sin is universal and it has a positive loss as its result: humanity lacks the glory it was created to reflect. The verse is not only about breaking rules but about falling short of what humans were made to be."
+        },
+        {
+          "id": "glory",
+          "note": "The glory humanity lacks is God's own, shared with his image-bearers. Paul's hope is its restoration: believers rejoice in hope of the glory of God (5:2) and are being transformed from glory to glory (2 Corinthians 3:18)."
+        }
+      ],
+      "refs": [
+        "Romans 1:23",
+        "Romans 5:2",
+        "Romans 8:30",
+        "2 Corinthians 3:18",
+        "Psalm 8:5"
+      ]
+    },
+    {
+      "v": "24",
+      "context": "Those who have all sinned are justified as a gift, by God's grace, through the redemption in Christ Jesus. The participle links this verse to verse 23 so tightly that the justified and the sinners are the same people.",
+      "grammar": "Dikaioumenoi, ‘being justified’, is a present passive participle, and its grammatical connection is awkward: it seems to continue the subject of verse 23 (‘all have sinned... being justified’). Rudolf Bultmann and Ernst Käsemann argued that verses 24-26a quote an early Christian formula, which would explain the rough joint and the unusual vocabulary. Dōrean, ‘freely’, means ‘as a gift’ or ‘without payment’; the same word in John 15:25 means ‘without cause’. Tē autou chariti, ‘by his grace’, adds the source to the manner. Apolytrōsis, ‘redemption’, is the release of a slave or captive by payment, and in the Septuagint the related verb describes God's rescue of Israel from Egypt (Exodus 6:6, Deuteronomy 7:8). Tēs en Christō Iēsou, ‘which is in Christ Jesus’, locates the redemption in a person.",
+      "words": [
+        "G1344",
+        "G1432",
+        "G5485",
+        "G0629",
+        "G5547"
+      ],
+      "theology": [
+        {
+          "id": "justification",
+          "note": "Justification is God's gift, entirely free, and it comes to people who have sinned without their first improving. The redundancy of ‘freely by his grace’ is deliberate: nothing in the recipient pays for it."
+        },
+        {
+          "id": "atonement",
+          "note": "Redemption is a costly release. Paul does not say here to whom a price is paid; the image stresses freedom from bondage at a cost, which Mark 10:45 and 1 Peter 1:18-19 connect with Christ's life and blood."
+        },
+        {
+          "id": "salvation",
+          "note": "Salvation is described as a new exodus: as God redeemed Israel from slavery in Egypt, he redeems sinners from the power of sin in Christ Jesus."
+        }
+      ],
+      "refs": [
+        "Ephesians 1:7",
+        "Titus 3:7",
+        "Mark 10:45",
+        "1 Peter 1:18-19",
+        "Exodus 6:6"
+      ]
+    },
+    {
+      "v": "25",
+      "context": "God publicly presented Christ as the hilastērion, the place or means of atonement, through faith, by his blood. The purpose was to demonstrate God's righteousness, because in his forbearance he had passed over sins committed before. The verse answers the problem 2:4 and 3:5-6 raised: how can a just God tolerate sin?",
+      "grammar": "Proetheto can mean ‘publicly displayed’ or ‘purposed’; Paul used the same verb in 1:13 for ‘I planned’. The first sense suits the contrast with the mercy seat hidden in the inner sanctuary; the second suits God's eternal purpose. Dia pisteōs en tō autou haimati, ‘through faith, in his blood’, can be read as the King James Version reads it, ‘faith in his blood’, but most interpreters take ‘in his blood’ with hilastērion: the atoning sacrifice by his blood, received through faith. Eis endeixin, ‘for a demonstration’, gives the purpose. Dia tēn paresin, ‘because of the passing over’, uses paresis, not the ordinary word for forgiveness, aphesis. R. C. Trench (Synonyms of the New Testament) distinguished them: aphesis is release from guilt, paresis a letting go unpunished for a time. W. G. Kümmel argued that the two could overlap and that Paul means forgiveness. Most commentators accept the distinction here, since the problem is sins not yet dealt with, in God's anochē, ‘forbearance’ (2:4).",
+      "words": [
+        "G4388",
+        "G2435",
+        "G4102G",
+        "G0129G",
+        "G1732",
+        "G3929",
+        "G4266",
+        "G0265",
+        "G0463"
+      ],
+      "history": "The word hilastērion is the Septuagint's regular term for the kapporet, the gold lid of the ark of the covenant (Exodus 25:17-22), where the high priest sprinkled blood on the Day of Atonement (Leviticus 16:14-15). Hebrews 9:5 uses it in that sense, the only other New Testament occurrence. Fourth Maccabees (17:22), a Jewish work probably of the first century AD, uses the same word of the deaths of the Maccabean martyrs, through which God preserved Israel. Luther rendered it Gnadenstuhl, and William Tyndale coined the English ‘mercy seat’ from it.",
+      "ot": [
+        {
+          "ref": "Leviticus 16:14-15",
+          "note": "On the Day of Atonement the high priest entered the Most Holy Place once a year, sprinkled the blood of the bull and then of the goat on and before the mercy seat, and so made atonement for himself, his household, and the people (Leviticus 16:15-17, 30). The Hebrew kapporet is related to the verb kipper, ‘make atonement’. In the Septuagint it is to hilastērion. If Paul means the mercy seat, he says that God set forth Christ publicly as the place where sin is covered and God meets his people, fulfilling what was hidden behind the veil."
+        }
+      ],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "Three readings of hilastērion are held. Propitiation, the turning away of God's wrath, was defended by Leon Morris (The Apostolic Preaching of the Cross, 1955) and Roger Nicole, who point to the wrath of 1:18 and 2:5. Expiation, the cleansing or covering of sin, was argued by C. H. Dodd (The Bible and the Greeks, 1935) from Septuagint usage. The mercy seat reading, argued by Daniel Bailey and others, sees the place of atonement itself. Many interpreters hold that Paul's image includes both the removal of sin and the satisfaction of God's justice, since verse 26 names the problem as God's own righteousness."
+        }
+      ],
+      "refs": [
+        "Leviticus 16:14-15",
+        "Hebrews 9:5",
+        "1 John 2:2",
+        "Acts 17:30",
+        "Hebrews 9:15"
+      ]
+    },
+    {
+      "v": "26",
+      "context": "Paul restates and completes the purpose: God demonstrates his righteousness in the present time, so that he is both just and the one who justifies the one who has faith in Jesus. The verse resolves the tension of the whole letter so far: how the God who judges according to truth can declare sinners righteous.",
+      "grammar": "Pros tēn endeixin, ‘for the demonstration’, repeats the purpose of verse 25 with a different preposition, now stressing en tō nyn kairō, ‘in the present time’, the new era that ‘but now’ in verse 21 announced. Eis to einai auton dikaion kai dikaiounta, ‘so that he is just and justifying’, joins the adjective and the participle of the same root. The kai can be simple ‘and’ or concessive, ‘just even as he justifies’: God does not suspend his justice to justify, he displays it. Ton ek pisteōs Iēsou, ‘the one of faith in Jesus’ or ‘of the faithfulness of Jesus’, repeats the genitive debated in verse 22.",
+      "words": [
+        "G1732",
+        "G1343",
+        "G3568",
+        "G2540",
+        "G1342",
+        "G1344",
+        "G4102G",
+        "G2424G"
+      ],
+      "theology": [
+        {
+          "id": "justification",
+          "note": "This is the heart of Paul's doctrine: God is just and the justifier. Anselm's Why God Became Man (about 1098) and the Reformers' teaching on satisfaction both set out from the problem this verse solves, that forgiveness must not make God unjust."
+        },
+        {
+          "id": "atonement",
+          "note": "The cross is where God's justice and mercy meet. Christians describe how in different ways (penal substitution, satisfaction, the victory of Christ, the demonstration of love), and the chapter note sets them out; the verse insists that whatever happened there, it vindicated God's righteousness."
+        }
+      ],
+      "refs": [
+        "Isaiah 45:21",
+        "Romans 8:33-34",
+        "2 Corinthians 5:21",
+        "1 Peter 3:18",
+        "Psalm 85:10"
+      ]
+    },
+    {
+      "v": "27",
+      "context": "The first consequence of 3:21-26: boasting is excluded. If righteousness is a gift received by faith, no one, Jew or Gentile, has grounds to boast before God. The question picks up 2:17 and 2:23, where the Jewish teacher boasted in God and in the law.",
+      "grammar": "Pou oun hē kauchēsis, ‘where then is the boasting?’, uses the article: the boasting just discussed. Exekleisthē, ‘it was shut out’, is aorist passive, as if a door were closed on it once and for all by the event of the cross. Dia poiou nomou, ‘by what kind of law?’, uses nomos in a phrase that could mean ‘principle’ (BSB) or the law of Moses viewed in a particular way. James Dunn and others argue that ‘the law of faith’ is the Torah itself rightly understood through faith, which fits 3:31; many others take nomos here as ‘rule’ or ‘principle’, a common Greek use.",
+      "words": [
+        "G2746",
+        "G1576",
+        "G3551",
+        "G2041",
+        "G4102G"
+      ],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Faith excludes boasting because it receives rather than achieves. What boasting is excluded is debated: boasting in ethnic privilege (the New Perspective's emphasis) or boasting in one's own obedience. Simon Gathercole (Where Is Boasting?, 2002) argued that Jewish boasting included confidence in obedience as the ground of final vindication, and that 4:2-5 shows Paul has both in view."
+        }
+      ],
+      "refs": [
+        "Romans 2:17",
+        "Romans 2:23",
+        "Romans 4:2",
+        "Ephesians 2:8-9",
+        "1 Corinthians 1:29-31"
+      ]
+    },
+    {
+      "v": "28",
+      "context": "The ‘for’ gives the reason boasting is excluded, in a sentence that became the watchword of the Reformation: a person is justified by faith apart from works of the law. The general word anthrōpos, ‘a person’, rather than ‘a Jew’, shows that the principle covers all humanity, as verses 29-30 immediately argue.",
+      "grammar": "Logizometha, ‘we reckon’ or ‘we hold’, is the verb of 2:26 and chapter 4, here used of a settled conclusion. Dikaiousthai pistei, ‘to be justified by faith’, uses the dative of means. Chōris ergōn nomou, ‘apart from works of the law’, sets faith and works as alternatives, not partners, in justification. Anthrōpon, ‘a person’, is deliberately universal.",
+      "words": [
+        "G3049",
+        "G1344",
+        "G4102G",
+        "G0444",
+        "G5565",
+        "G2041",
+        "G3551"
+      ],
+      "history": "In his 1522 German New Testament, Martin Luther translated this verse with the word allein, ‘alone’: justified by faith alone. Critics accused him of adding to Scripture, and in his Open Letter on Translating (1530) he defended it as the natural German idiom for Paul's ‘apart from works’. The phrase ‘by faith alone’ was not new: Joseph Fitzmyer's Anchor Bible commentary on Romans (1993) lists church fathers and medieval writers, among them Origen and Thomas Aquinas, who used it of Paul's teaching.",
+      "text": "Manuscripts divide between gar, ‘for’ (Sinaiticus, Alexandrinus, and the critical editions), and oun, ‘therefore’ (Vaticanus, the Textus Receptus, and the Byzantine text, hence the King James Version's ‘Therefore we conclude’). With gar the verse grounds verse 27; with oun it draws a conclusion from it.",
+      "theology": [
+        {
+          "id": "justification",
+          "note": "Justification comes by faith, without works of the law as its ground. Protestant, Catholic, and Orthodox traditions all confess that justification is by grace; the Council of Trent (1547) rejected the formula ‘faith alone’ as it understood it, while the Joint Declaration on the Doctrine of Justification (1999) between the Lutheran World Federation and the Catholic Church stated a shared understanding that justification is by grace alone through faith, not on the basis of merit."
+        }
+      ],
+      "refs": [
+        "Galatians 2:16",
+        "Romans 4:5",
+        "Ephesians 2:8-9",
+        "Philippians 3:9",
+        "James 2:24"
+      ]
+    },
+    {
+      "v": "29-30",
+      "context": "A second consequence, drawn from Israel's own confession: if God is one, he is the God of Gentiles as well as Jews, and he will justify both on the same basis. Justification by faith is not only about individual salvation; it is how the one God creates one people.",
+      "grammar": "The question ē Ioudaiōn ho theos monon, ‘or is God of Jews only?’, is answered by nai, ‘yes’, a rare Pauline affirmative. Eiper, ‘since indeed’, grounds the answer in the confession heis ho theos, ‘God is one’, the words of the Shema. Dikaiōsei, ‘will justify’, is future, either logical or looking to the last judgment. The prepositions differ, ek pisteōs for the circumcised and dia tēs pisteōs for the uncircumcised. Stanley Stowers (Journal of Biblical Literature, 1989) argued that the change carries meaning, but most interpreters see stylistic variation, with the article in the second phrase pointing back: ‘through the same faith’.",
+      "words": [
+        "G2453",
+        "G1484",
+        "G3483",
+        "G1520",
+        "G1344",
+        "G4061",
+        "G0203",
+        "G4102G"
+      ],
+      "ot": [
+        {
+          "ref": "Deuteronomy 6:4",
+          "note": "The Shema, recited by devout Jews morning and evening, confesses that the LORD our God, the LORD is one. The Septuagint reads kyrios heis estin. Paul draws from Israel's most basic confession a conclusion Israel had not always drawn: the one God cannot be the God of one nation only. Zechariah 14:9 had already foreseen the day when the LORD will be king over all the earth and his name one. Paul's argument makes monotheism the ground of the Gentile mission."
+        }
+      ],
+      "text": "The Textus Receptus reads epeiper, ‘seeing that’, instead of eiper, ‘since indeed’. The meaning is the same.",
+      "theology": [
+        {
+          "id": "god",
+          "note": "The oneness of God is not only a claim about how many gods exist but about God's universal claim on all peoples. If there is one God, there is one way into his favor for all, which is grace received by faith."
+        },
+        {
+          "id": "mission",
+          "note": "Because God is one, the gospel must go to every nation on equal terms. Paul's mission to the Gentiles is here grounded not in strategy but in the Shema."
+        }
+      ],
+      "refs": [
+        "Deuteronomy 6:4",
+        "Zechariah 14:9",
+        "Romans 10:12",
+        "Galatians 3:20",
+        "1 Timothy 2:5"
+      ]
+    },
+    {
+      "v": "31",
+      "context": "The last objection of the chapter: does faith nullify the law? Paul says no; faith establishes it. He does not explain how here. Chapter 4, which proves justification by faith from the law itself (Genesis 15:6), is the first part of the answer, and 8:4 is another.",
+      "grammar": "Katargoumen, ‘do we nullify’, repeats the verb of verse 3 (God's faithfulness is not nullified) and anticipates 4:14. Histanomen, ‘we establish’ or ‘we uphold’, is its opposite. How faith upholds the law is debated: by fulfilling the law's own witness to justification by faith (the Law and the Prophets of verse 21, shown in chapter 4), by bringing about the obedience the law aimed at through the Spirit (8:4), or by upholding the law's verdict of death, borne in Christ. The three are compatible, and Paul develops each in turn.",
+      "words": [
+        "G3551",
+        "G2673",
+        "G4102G",
+        "G1096",
+        "G2476"
+      ],
+      "theology": [
+        {
+          "id": "law",
+          "note": "Faith does not abolish God's law but upholds it. Justification apart from works of the law is not lawlessness; it is the fulfillment of what the law itself testified, and it produces the obedience the law could not."
+        }
+      ],
+      "refs": [
+        "Romans 8:4",
+        "Romans 13:8-10",
+        "Matthew 5:17",
+        "Galatians 5:14",
+        "Romans 4:3"
+      ]
+    }
+  ]
+}
