@@ -51,7 +51,7 @@ export default function StudyBibleStory() {
       {!actParams && (
         <SEOMeta
           title="The Story of the Bible, From Creation to New Creation"
-          description="The whole Bible as one story in eleven acts, with the history behind each act and every chapter in the order it happened. Start here if you have never read the Bible."
+          description="The whole Bible as one story in eleven acts, with the history behind each act and every chapter placed where it happened. Start here if you have never read the Bible."
           url="https://www.livewellbyjamesbell.co/study/bible/story"
         />
       )}
