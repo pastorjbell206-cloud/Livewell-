@@ -1,0 +1,406 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "Jesus leaves Galilee for the last time. From here the Gospel moves steadily south toward Jerusalem, and the teaching that follows (on marriage, children, wealth, and greatness) is given on the road that ends at the cross. Mark notes that crowds gather again and that Jesus teaches them as he usually did, so the controversy of verse 2 happens in public.",
+      "grammar": "Kai ekeithen anastas, literally ‘and rising up from there’, uses the participle of anistēmi in a Semitic way for setting out on a trip, not for standing up. The main verb erchetai, ‘he comes’, is a historical present, Mark's habit of telling past events in the present to give them immediacy. The last clause pairs a pluperfect, hōs eiōthei, ‘as he had been accustomed’, with an imperfect, edidasken, ‘he was teaching’: teaching was Jesus' settled practice, and it continued here.",
+      "words": ["G0450", "G2064", "G1486", "G1321"],
+      "text": "The critical editions read ‘into the region of Judea and beyond the Jordan’, naming two areas. The Textus Receptus and most later manuscripts read ‘by the far side of the Jordan’ (dia tou peran), which the King James Version follows, describing the route rather than a second region. Matthew 19:1 has ‘the region of Judea beyond the Jordan’.",
+      "history": "Beyond the Jordan lay Perea, governed by Herod Antipas. Josephus (Antiquities 18.116-119) says Antipas imprisoned John the Baptist at Machaerus, his fortress east of the Dead Sea in this same territory, and executed him there. Jesus is now teaching in the country where John died for speaking about a ruler's marriage (6:17-18).",
+      "parallels": ["Matthew 19:1-2"],
+      "refs": ["Mark 6:17-18", "Mark 1:21-22", "Mark 9:30", "Luke 9:51"]
+    },
+    {
+      "v": "2",
+      "context": "Pharisees come to test Jesus with a question about divorce. Mark frames the question as whether divorce is lawful at all, which is surprising, since the law of Moses assumed divorce happened. The word ‘testing’ tells the reader the question is a trap, as with the demand for a sign in 8:11.",
+      "grammar": "Ei exestin andri gunaika apolusai, ‘whether it is lawful for a husband to dismiss a wife’, uses ei to introduce a direct question, a use found in the Septuagint and later Greek. Apolusai is the aorist infinitive of apoluō, ‘release’ or ‘send away’, the ordinary word for a husband ending a marriage. Peirazontes, ‘testing’, is a present participle placed at the end of the sentence, where it stands out: the purpose is not instruction but entrapment. Epērōtōn, ‘they were asking’, is an imperfect, a question pressed rather than tossed off.",
+      "words": ["G1832", "G0435G", "G1135H", "G0630H", "G3985H", "G1905"],
+      "history": "The Mishnah records the debate the Pharisees' question sits inside (m. Gittin 9:10). The school of Shammai held that a man may divorce his wife only if he finds in her a matter of unchastity, reading the ervat davar of Deuteronomy 24:1 with the stress on ervah, ‘nakedness’. The school of Hillel allowed divorce even if she spoiled his food, stressing davar, ‘a thing’. Rabbi Akiva, a generation after Jesus, went further: even if the husband found another woman more beautiful. Josephus, himself divorced, paraphrases the law as permitting divorce for any cause (Antiquities 4.253). Matthew's version of the question, ‘for any reason’ (Matthew 19:3), matches the Hillelite position, as David Instone-Brewer argued (Divorce and Remarriage in the Bible, 2002). Mark's starker form, whether divorce is allowed at all, may reflect the danger of the question in Antipas's territory.",
+      "text": "The words ‘Pharisees came’ (proselthontes Pharisaioi) are missing from a group of Western witnesses, and the SBL Greek New Testament leaves them out, reading simply ‘they were asking him’. Most editions and English Bibles keep them, and Matthew 19:3 names the Pharisees.",
+      "parallels": ["Matthew 19:3"],
+      "refs": ["Deuteronomy 24:1", "Mark 8:11", "Mark 12:13-15", "Malachi 2:16"]
+    },
+    {
+      "v": "3-4",
+      "context": "Jesus answers with a question that sends them to Moses, and they cite the certificate of divorce. The exchange sets the terms of the argument: what Moses commanded, what Moses allowed, and (in verse 6) what God intended from the beginning.",
+      "grammar": "Jesus asks what Moses eneteilato, ‘commanded’ (aorist of entellomai). They answer that Moses epetrepsen, ‘permitted’. The shift of verb is the hinge of the debate: Jesus asks for a command and they produce a permission, conceding without noticing that Deuteronomy regulates divorce rather than requiring it. Biblion apostasiou, ‘a document of divorce’, is the Septuagint's phrase in Deuteronomy 24:1; apostasion comes from aphistēmi, ‘to stand away’, and in legal Greek meant a release or relinquishing of a claim.",
+      "words": ["G1781", "G3475", "G2010", "G0975", "G0647", "G1125"],
+      "ot": [
+        {
+          "ref": "Deuteronomy 24:1-4",
+          "note": "The Hebrew is a single long case law. Its conditions run through verses 1 to 3 (if a man marries a woman and finds in her ervat davar, literally ‘the nakedness of a thing’, and writes her a sefer keritut, ‘a document of cutting off’, and she marries another who also divorces her or dies), and its only command comes in verse 4: the first husband may not take her back. The law therefore assumes divorce, requires a written document, and forbids a particular remarriage; it nowhere commands a man to divorce. The Septuagint renders the grounds as aschēmon pragma, ‘a shameful matter’, and the document as biblion apostasiou, the phrase the Pharisees use. Jesus accepts that Moses wrote this, but in verse 5 he reads the law as a limit placed on a practice already happening, and the certificate gave the dismissed woman proof that she was free to marry, which protected her from the charge of adultery."
+        }
+      ],
+      "history": "The Mishnah gives the essential words of a Jewish bill of divorce as ‘behold, you are permitted to any man’ (m. Gittin 9:3). The document's purpose was to release the woman, so that a second marriage would not be adultery.",
+      "parallels": ["Matthew 19:7"],
+      "refs": ["Deuteronomy 24:1-4", "Jeremiah 3:8", "Isaiah 50:1"]
+    },
+    {
+      "v": "5",
+      "context": "Jesus explains the Mosaic provision. It was written because of human hardness of heart, a provision for a broken situation, not a declaration of what God wants. The next verses supply what God wants.",
+      "grammar": "Pros tēn sklērokardian humōn, ‘with reference to your hardness of heart’: pros with the accusative here gives the occasion or reason for the law. Sklērokardia, a compound of ‘hard’ and ‘heart’, occurs in the Septuagint at Deuteronomy 10:16 and Jeremiah 4:4, both calls to circumcise the heart. The pronoun is humōn, ‘your’, not ‘their’: Jesus places his questioners inside the stubbornness the law had to accommodate. Egrapsen humin, ‘he wrote for you’, makes the same point.",
+      "words": ["G4314", "G4641", "G1125", "G1785"],
+      "theology": [
+        {
+          "id": "law",
+          "note": "The verse distinguishes within the law between what reveals God's will and what restrains human sin. Some commands accommodate a fallen people to limit harm. Jesus does not set Moses aside; he reads one provision by the purpose of the Creator, a principle the church later used in distinguishing the law's abiding moral core from its concessions."
+        }
+      ],
+      "parallels": ["Matthew 19:8"],
+      "refs": ["Deuteronomy 10:16", "Jeremiah 4:4", "Ezekiel 36:26", "Mark 3:5"]
+    },
+    {
+      "v": "6-8",
+      "context": "Jesus goes behind Deuteronomy to Genesis, joining a line from the first creation account (Genesis 1:27) with the charter of marriage from the second (Genesis 2:24). He then draws his own conclusion: they are no longer two, but one flesh. Creation, not concession, is the standard.",
+      "grammar": "Apo de archēs ktiseōs, ‘but from the beginning of creation’, opens with an adversative de: against Moses' concession stands the Creator's design. Arsen kai thēlu epoiēsen autous, ‘male and female he made them’, matches the Septuagint of Genesis 1:27 word for word. Heneken toutou, ‘for this reason’, is the Septuagint's rendering of Genesis 2:24. Esontai hoi duo eis sarka mian, ‘the two will become one flesh’, uses eis with the accusative for the result of a change, a Semitic construction taken over from the Hebrew preposition le. Jesus' own inference follows with hōste, ‘so that’, and a present tense: ouketi eisin duo alla mia sarx, ‘they are no longer two but one flesh’. The union is a present reality, not only an ideal.",
+      "words": ["G0746", "G2937", "G0730", "G2338", "G4160G", "G1752", "G2641", "G1510", "G1417", "G4561", "G5620"],
+      "ot": [
+        {
+          "ref": "Genesis 1:27",
+          "note": "The Hebrew reads zakhar un-qevah bara otam, ‘male and female he created them’, the climax of the creation of humankind in God's image. The Septuagint has arsen kai thēlu epoiēsen autous, and Mark reproduces it exactly. The Damascus Document from the Dead Sea community (CD 4:20-21) also cites this line as the foundation principle of creation, against taking two wives in a man's lifetime. Jesus uses it to show that the two sexes were made for each other by God's intent, before any law of divorce existed."
+        },
+        {
+          "ref": "Genesis 2:24",
+          "note": "The Hebrew says a man will leave father and mother, cling (davaq) to his wife, vehayu levasar echad, ‘and they will become one flesh’. The Hebrew has no ‘the two’; the Septuagint and the Samaritan Pentateuch add hoi duo, and Mark, like Matthew and Paul (1 Corinthians 6:16, Ephesians 5:31), follows the Greek. The addition sharpens the point Jesus draws: two become one. In Genesis the verse is the narrator's comment on the woman's creation; Jesus treats it as the Creator's word (Matthew 19:4-5 says so explicitly)."
+        }
+      ],
+      "text": "The clause ‘and be united to his wife’ in verse 7 is absent from Codex Sinaiticus and Codex Vaticanus, and Westcott and Hort omitted it; most modern editions keep it, since a scribe's eye could easily skip from one ‘and’ to the next, and it is needed for ‘the two’ in verse 8 to make sense.",
+      "theology": [
+        {
+          "id": "family",
+          "note": "Jesus grounds marriage in creation rather than in custom or statute: God made humanity male and female, and marriage joins a man and a woman into a single new unit that takes priority even over the bond with parents. The verses teach that marriage is God's institution before it is any society's."
+        },
+        {
+          "id": "image",
+          "note": "By quoting Genesis 1:27, the verse on humanity made in God's image, Jesus ties the question of marriage to what human beings are. The difference and union of male and female belong to the created order that God called very good."
+        }
+      ],
+      "parallels": ["Matthew 19:4-6"],
+      "refs": ["Genesis 1:27", "Genesis 2:24", "1 Corinthians 6:16", "Ephesians 5:31-32"]
+    },
+    {
+      "v": "9",
+      "context": "The conclusion of the public answer. If God is the one who joins, no human being has the authority to undo the joining. The verse answers the Pharisees' question at the level of God's will, not of legal permission.",
+      "grammar": "Ho oun ho theos sunezeuxen, ‘what therefore God yoked together’: suzeugnumi is the verb for putting two animals under one yoke, and it was used in Greek for marriage. The relative pronoun is neuter, ho, ‘what’, not ‘those whom’: the object is the union itself. Chōrizetō is a present imperative in the third person, ‘let man not be separating’. The subject anthrōpos, ‘man’ or ‘a human being’, stands against ho theos, ‘God’: the contrast is between divine and human authority, which may include the husband who dismisses, a court, or anyone else.",
+      "words": ["G3767", "G2316", "G4801", "G0444", "G5563"],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "Marriage is presented as a bond God himself makes, which is why the prophets could speak of divorce as faithlessness to a covenant (Malachi 2:14-16). The verse makes divorce a question of what God has done, not only what spouses have agreed."
+        }
+      ],
+      "parallels": ["Matthew 19:6"],
+      "refs": ["Malachi 2:14-16", "1 Corinthians 7:10-11", "Proverbs 2:17"]
+    },
+    {
+      "v": "10-12",
+      "context": "In the house the disciples ask again, a pattern in Mark where public teaching is explained in private (4:10, 7:17, 9:28). Jesus now states the consequence plainly: to divorce and remarry is adultery, whether the husband or the wife initiates it. Matthew's parallels add an exception for sexual immorality (Matthew 5:32, 19:9), and Paul adds the case of a believer deserted by an unbelieving spouse (1 Corinthians 7:15).",
+      "grammar": "Hos an apolusē ... kai gamēsē allēn, ‘whoever divorces ... and marries another’, uses two aorist subjunctives in an indefinite relative clause: the offense is the combined act of dismissal and remarriage. Moichatai ep' autēn, ‘commits adultery against her’: most interpreters take ‘her’ to be the first wife. This was new. In Jewish law adultery was an offense against a husband, committed by a wife or by a man with another man's wife; Jesus says a husband can wrong his own wife by adultery. Verse 12 applies the same rule to a woman who divorces her husband, using a participle, apolusasa, ‘having divorced’.",
+      "words": ["G3614G", "G3101", "G1905", "G0630H", "G1060", "G0243", "G3429", "G1909", "G0435H"],
+      "text": "Manuscripts word verse 12 differently. The critical text has the wife divorcing her husband and marrying another. The Textus Receptus has ‘if a woman puts away her husband and is married to another’, and some Western witnesses describe the wife as leaving her husband, a form closer to Jewish practice, where a wife could not formally divorce.",
+      "theology": [
+        {
+          "id": "family",
+          "note": "Jesus' words make marriage a lifelong union and refuse the idea that divorce is a morally neutral option. Christians read these verses alongside Matthew's exception and Paul's teaching in different ways. The Roman Catholic Church holds a sacramental marriage indissoluble while both spouses live. Many Protestant confessions, such as the Westminster Confession (24.5-6), allow divorce for adultery and willful desertion, with remarriage for the innocent party. Others include abuse among the ways a marriage covenant is broken. All agree divorce always tears what God joined. These words were spoken to men who dismissed wives freely, and they protected women; a person abandoned, betrayed, or abused did not choose that tearing, and the church should never treat the divorced as second-class members. Anyone in danger at home should seek safety and help from their church and from qualified professionals; this note is not legal advice."
+        }
+      ],
+      "parallels": ["Matthew 19:9-12", "Matthew 5:31-32", "Luke 16:18"],
+      "refs": ["Mark 4:10", "Mark 7:17", "1 Corinthians 7:10-15", "Romans 7:2-3"]
+    },
+    {
+      "v": "13-14",
+      "context": "People bring little children for Jesus to touch, and the disciples rebuke them, echoing their failure in 9:33-37 to understand that welcoming a child is welcoming Jesus. Jesus is indignant, the only place the Gospels use that word of him, and he says the kingdom belongs to such as these.",
+      "grammar": "Prosepheron, ‘they were bringing’, is an imperfect: a stream of parents, not one visit. Hina autōn hapsētai, ‘that he might touch them’, shows what they wanted, a blessing by touch. Ēganaktēsen, ‘he was indignant’, is a strong word of anger at wrong done. Jesus gives an aorist imperative, aphete, ‘let them come’, and then a present prohibition, mē kōluete, which commonly means ‘stop hindering’. Tōn gar toioutōn estin hē basileia, ‘for of such ones is the kingdom’: the genitive marks possession, and toioutōn means those like the children, not children only.",
+      "words": ["G4374", "G3813", "G0681", "G2008", "G0023", "G0863I", "G2967", "G5108", "G0932"],
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The kingdom belongs to those who, like little children, have no status to bring and no claim to press. The verse turns the disciples' sense of who deserves Jesus' time upside down, as the whole chapter will turn the order of first and last (verse 31)."
+        },
+        {
+          "id": "sacraments",
+          "note": "The passage has been central in the debate over infant baptism, though it does not mention baptism. Calvin (Institutes 4.16.7) argued that if Christ embraced infants and declared the kingdom theirs, they should not be kept from the sign of the covenant; Oscar Cullmann (Baptism in the New Testament, 1950) noted that ‘hinder’ appears in baptismal settings (Acts 8:36, 10:47). Baptists reply that the children are blessed, not baptized, and that the kingdom belongs to all who receive it like a child, which calls for faith. Tertullian (On Baptism 18) knew the verse and still counseled delaying baptism. Christians remain divided on this second-order question."
+        }
+      ],
+      "parallels": ["Matthew 19:13-14", "Luke 18:15-16"],
+      "text": "Luke calls the children brephē, ‘infants’ (Luke 18:15), which strengthens the picture of those who can do nothing for themselves. Matthew adds that they came so that Jesus would lay hands on them and pray (Matthew 19:13).",
+      "refs": ["Mark 9:36-37", "Acts 8:36", "Psalm 131:2", "1 Corinthians 14:20"]
+    },
+    {
+      "v": "15-16",
+      "context": "Jesus turns the scene into a solemn saying: whoever does not receive the kingdom like a child will never enter it. Then he acts it out, taking the children in his arms and blessing them. The saying prepares for the rich man, who wants to know what to do to inherit.",
+      "grammar": "Hōs paidion is ambiguous, because paidion has the same form in the nominative and the accusative. As a nominative it means ‘receive the kingdom as a child receives it’, the usual reading; as an accusative it could mean ‘receive the kingdom as one receives a child’, that is, welcome it as Jesus has just told them to welcome children (9:37). Most commentators prefer the first. Ou mē eiselthē, ‘will certainly not enter’, is the emphatic double negative. In verse 16 Mark uses enagkalisamenos, ‘taking in his arms’, found only in Mark in the New Testament (also 9:36), and kateulogei, an intensive compound of ‘bless’ that occurs only here in the Greek Bible, in the imperfect: he went on blessing them one by one.",
+      "words": ["G0281", "G1209", "G5613", "G3813", "G1525", "G1723", "G6050", "G5087", "G5495"],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "The kingdom is received, not achieved. A small child brings nothing and simply accepts what is given, and Jesus makes that posture the condition of entry. The verse is the key to the next scene, where a man who has kept the commandments asks what he must do."
+        }
+      ],
+      "parallels": ["Matthew 19:15", "Luke 18:17", "Matthew 18:3"],
+      "refs": ["Mark 9:36-37", "John 3:3-5", "Matthew 18:3-4", "Psalm 131:2"]
+    },
+    {
+      "v": "17",
+      "context": "As Jesus sets out on the road, a man runs up, kneels, and asks what he must do to inherit eternal life. His eagerness and respect are real. Mark calls him only ‘one’; Matthew says he was young (Matthew 19:20) and Luke that he was a ruler (Luke 18:18), which is where the familiar name ‘the rich young ruler’ comes from.",
+      "grammar": "Ekporeuomenou autou eis hodon, ‘as he was going out on the road’, is a genitive absolute; ‘the road’ is Mark's thread through this section (8:27, 9:33, 10:32, 10:52). Two participles, prosdramōn, ‘running up’, and gonupetēsas, ‘kneeling’, show urgency and deference. Didaskale agathe, ‘good Teacher’, is an unusual address. Ti poiēsō hina zōēn aiōnion klēronomēsō, ‘what shall I do that I may inherit eternal life’: the aorist subjunctive poiēsō asks for one decisive deed, and klēronomeō, ‘inherit’, is covenant language for receiving the land and later the age to come. Zōē aiōnios, ‘eternal life’ or ‘the life of the age’, appears first in the Septuagint of Daniel 12:2.",
+      "words": ["G1607", "G3598", "G4370", "G1120", "G1320", "G0018", "G4160G", "G2222", "G0166", "G2816"],
+      "parallels": ["Matthew 19:16", "Luke 18:18"],
+      "refs": ["Daniel 12:2", "Luke 10:25", "Mark 1:40", "Mark 10:32"]
+    },
+    {
+      "v": "18",
+      "context": "Jesus questions the title before he answers the question. No one is good but God alone. The reply presses the man to consider what he is saying, and it prepares the ground for Jesus' claim in verse 21 that the one thing lacking is to follow him.",
+      "grammar": "Ti me legeis agathon, ‘why do you call me good’, puts me, ‘me’, early for emphasis. The answer, oudeis agathos ei mē heis ho theos, ‘no one is good except one, God’, uses heis, ‘one’, the same word as the Shema quoted in 12:29 (kurios heis estin). Jesus is not denying his own goodness in so many words; the grammar is a question, and it forces the man either to lower his estimate of Jesus or to raise it.",
+      "words": ["G5101", "G3004H", "G0018", "G3762", "G1520", "G2316"],
+      "theology": [
+        {
+          "id": "attributes",
+          "note": "Goodness in the full sense belongs to God alone; every other goodness is derived. The saying has been read in two ways: as Jesus deflecting praise in humility, or as a veiled invitation to recognize that the one addressed as good stands on God's side of that line. The church has generally read it in the second way, in light of Mark's portrait of Jesus as the one who forgives sins, which only God can do (2:7)."
+        }
+      ],
+      "parallels": ["Matthew 19:17", "Luke 18:19"],
+      "text": "Matthew words the exchange differently: ‘Why do you ask me about what is good? There is only one who is good’ (Matthew 19:17, paraphrased). Many scholars think Matthew reworded Mark to avoid the suggestion that Jesus disclaimed goodness; Luke keeps Mark's form.",
+      "refs": ["Mark 2:7", "Psalm 106:1", "James 1:17", "Mark 12:29"]
+    },
+    {
+      "v": "19",
+      "context": "Jesus points the man to the commandments he already knows, choosing those of the second table of the Ten Commandments that concern one's neighbor. The list prepares for the test Jesus will apply: the man's relation to his possessions and to the poor.",
+      "grammar": "The prohibitions use mē with the aorist subjunctive (mē phoneusēs, ‘do not murder’), the standard Greek form for a prohibition of a specific act. The list includes mē aposterēsēs, ‘do not defraud’, which is not one of the Ten. It may stand in for the tenth commandment against coveting, or it may come from Deuteronomy 24:14, where the Septuagint uses the same verb for withholding a poor laborer's wages. The positive command, tima ton patera sou kai tēn mētera, ‘honor your father and mother’, is placed last, perhaps for emphasis.",
+      "words": ["G1785", "G6063", "G5407", "G3431", "G2813", "G5576", "G0650", "G5091"],
+      "text": "Manuscripts and editions differ in the order of the first two commands. The critical text has ‘do not murder, do not commit adultery’; the Textus Receptus and Byzantine text put adultery first, as the Septuagint of Deuteronomy 5 does in some manuscripts. Matthew omits ‘do not defraud’ and adds ‘love your neighbor as yourself’ (Matthew 19:19); Luke also omits ‘do not defraud’.",
+      "parallels": ["Matthew 19:18-19", "Luke 18:20"],
+      "refs": ["Exodus 20:12-16", "Deuteronomy 24:14-15", "Malachi 3:5", "James 5:4"]
+    },
+    {
+      "v": "20-21",
+      "context": "The man says he has kept all these since his youth, and Jesus does not dispute it. Instead Jesus looks at him, loves him, and names the one thing lacking: sell what you have, give to the poor, and come follow me. The demand is personal and total, and it comes with a promise of treasure in heaven.",
+      "grammar": "Ephulaxamēn, ‘I have kept’, is an aorist middle of phulassō, ‘guard’, the verb used in the Septuagint for keeping commandments. Emblepsas autō ēgapēsen auton, ‘looking at him, he loved him’: emblepō is an intent look, and this is the only place in the first three Gospels where Jesus is said to love a particular person. Hen se husterei, ‘one thing is lacking to you’, is followed by five imperatives: hupage, ‘go’, pōlēson, ‘sell’, dos, ‘give’, deuro, ‘come’, and akolouthei, ‘follow’. The first three are single acts (aorist), but the last is a present imperative: follow and keep following. Thēsauron en ouranō, ‘treasure in heaven’, was a Jewish way of speaking of reward stored with God.",
+      "words": ["G1320", "G5442G", "G3503", "G1689", "G0025", "G5302", "G5217", "G4453", "G1325", "G4434", "G2344", "G3772", "G1204", "G0190"],
+      "theology": [
+        {
+          "id": "wealth",
+          "note": "Jesus does not make selling everything a universal rule in Mark (Levi keeps a house in 2:15), but he identifies what stands between this man and following him and asks for it. Wealth here is not neutral; it can be the thing a person cannot give up, and the command to give to the poor ties discipleship to justice for them. Clement of Alexandria's sermon Who Is the Rich Man That Shall Be Saved? read the command as renouncing the passions attached to wealth; Antony of Egypt, according to Athanasius's Life of Antony (2), heard it literally and gave his property away."
+        }
+      ],
+      "text": "The Textus Receptus adds ‘take up the cross’ before ‘follow me’, a phrase from Mark 8:34 that appears in later manuscripts and the King James Version but not in the earliest witnesses.",
+      "parallels": ["Matthew 19:20-21", "Luke 18:21-22"],
+      "refs": ["Mark 8:34", "Matthew 6:19-21", "Luke 12:33", "Philippians 3:6-8"]
+    },
+    {
+      "v": "22",
+      "context": "The man's face falls and he goes away grieving, because he had many possessions. It is the only call to follow Jesus in Mark that is refused. Mark does not say what became of him.",
+      "grammar": "Stugnasas, ‘his face fell’ or ‘becoming gloomy’, is used in Matthew 16:3 of a lowering sky; the change is visible. Apēlthen lupoumenos, ‘he went away grieving’, joins an aorist of departure with a present participle of continuing sorrow. The explanation is a periphrastic construction, ēn gar echōn ktēmata polla, ‘for he was one who had many properties’. Ktēmata can mean possessions generally, but it often referred to landed property, fields and estates.",
+      "words": ["G4768", "G3056", "G0565", "G3076", "G2192", "G2933", "G4183"],
+      "parallels": ["Matthew 19:22", "Luke 18:23"],
+      "refs": ["Luke 12:15", "Matthew 6:24", "1 Timothy 6:9-10", "Mark 4:18-19"]
+    },
+    {
+      "v": "23-25",
+      "context": "Jesus turns to the disciples and draws the lesson: how hard it is for the wealthy to enter the kingdom. The disciples are stunned, Jesus repeats the point more broadly, and then gives the image of the camel and the needle's eye. The sequence of saying, amazement, and stronger saying drives the point home.",
+      "grammar": "Pōs duskolōs, ‘with what difficulty’, uses an adverb that means hard to satisfy or hard to manage. Ethambounto, ‘they were amazed’, is an imperfect passive. Jesus addresses them as tekna, ‘children’, the only time he calls the disciples this in Mark, and the word links the scene to the children of verses 13 to 16. Verse 24 generalizes: pōs duskolon estin eis tēn basileian tou theou eiselthein, ‘how hard it is to enter the kingdom of God’, for anyone. Verse 25 uses a comparative, eukopōteron, ‘easier’, with kamēlon, ‘a camel’, and trumalias rhaphidos, ‘the eye of a needle’: the largest animal of the region through the smallest opening.",
+      "words": ["G4017", "G4459", "G1423", "G5536", "G2284", "G5043", "G1422", "G2123", "G2574", "G5168", "G4476", "G4145"],
+      "text": "The Textus Receptus adds in verse 24 ‘for those who trust in riches’, which softens the saying into a statement about attitude; it is absent from the earliest manuscripts. A few late manuscripts read kamilos, ‘rope’, for kamēlos, ‘camel’, another softening. Both are best explained as attempts to ease a hard saying.",
+      "history": "Later Jewish sources use the same kind of image for the impossible. The Babylonian Talmud speaks of an elephant going through the eye of a needle as something no one dreams (b. Berakhot 55b) and uses the phrase for an impossible argument (b. Bava Metzia 38b). The hyperbole was a recognizable way of speaking, not a reference to a gate or a rope.",
+      "theology": [
+        {
+          "id": "wealth",
+          "note": "Jesus does not say riches are sinful, but that they make entry into the kingdom humanly impossible, because they supply the security that the kingdom asks a person to give up. The disciples' shock shows how deeply they assumed wealth meant God's favor."
+        }
+      ],
+      "parallels": ["Matthew 19:23-24", "Luke 18:24-25"],
+      "refs": ["Luke 6:24", "1 Timothy 6:17", "James 2:5", "Psalm 49:6-7"]
+    },
+    {
+      "v": "26-27",
+      "context": "The disciples ask the obvious question: then who can be saved? Jesus answers that with human beings it is impossible, but not with God. The whole passage turns on this verse, which moves salvation from human achievement to divine power.",
+      "grammar": "Perissōs exeplēssonto, ‘they were exceedingly astonished’, intensifies verse 24. Kai tis dunatai sōthēnai, ‘then who can be saved’: kai at the start of a question can mean ‘then’ or ‘in that case’. Sōthēnai is an aorist passive infinitive; being saved is something done to a person. Jesus' answer is balanced: para anthrōpois adunaton, all' ou para theō, ‘with people impossible, but not with God’, then the reason, panta gar dunata para tō theō, ‘for all things are possible with God’.",
+      "words": ["G4057", "G1605", "G1410", "G4982", "G1689", "G0102", "G1415", "G2316"],
+      "ot": [
+        {
+          "ref": "Genesis 18:14",
+          "note": "The Hebrew asks hayippale meYHWH davar, ‘is anything too wonderful (or too hard) for the LORD?’, when Sarah laughs at the promise of a son in her old age. The Septuagint renders it mē adunatei para tō theō rhēma, ‘is any word impossible with God?’, with the same para tō theō and the same root adunat-. Jesus' saying echoes the phrasing that became a byword for God's power to do what nature cannot (compare Job 42:2, Zechariah 8:6, Luke 1:37). Salvation, like Isaac's birth, is God's doing where human capacity has ended."
+        }
+      ],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "The verse is one of the Gospels' clearest statements that salvation is God's work. The rich man's question was what to do; Jesus' answer is that the entry he seeks is impossible for anyone by their own resources and possible only by God's power."
+        }
+      ],
+      "parallels": ["Matthew 19:25-26", "Luke 18:26-27"],
+      "refs": ["Genesis 18:14", "Jeremiah 32:17", "Luke 1:37", "Ephesians 2:8-9"]
+    },
+    {
+      "v": "28",
+      "context": "Peter points out that the disciples have done what the rich man would not: left everything and followed. The remark is part protest and part question about reward, which Jesus answers in the next verses.",
+      "grammar": "Idou hēmeis aphēkamen panta, ‘look, we have left everything’: the pronoun hēmeis is emphatic, ‘we’ in contrast to the man who went away. Aphēkamen is an aorist, the decisive act of leaving (1:18, 1:20). NA27, Westcott and Hort, and the SBL edition then read the perfect ēkolouthēkamen, ‘we have followed and still follow’; other editions print an aorist. Ērxato legein, ‘began to say’, is Mark's frequent idiom and may suggest Peter was cut off by Jesus' reply.",
+      "words": ["G0757", "G4074G", "G2400", "G0863G", "G3956", "G0190"],
+      "parallels": ["Matthew 19:27", "Luke 18:28"],
+      "refs": ["Mark 1:18", "Mark 1:20", "Luke 5:11", "Philippians 3:8"]
+    },
+    {
+      "v": "29-31",
+      "context": "Jesus promises that no one who leaves home or family or fields for his sake and the gospel's will fail to receive a hundredfold now, with persecutions, and eternal life in the age to come. He closes with a reversal that sums up the chapter: many who are first will be last, and the last first.",
+      "grammar": "Oudeis estin hos aphēken ... ean mē labē, ‘there is no one who has left ... who will not receive’, is a double negative construction amounting to a strong promise. Heneken emou kai heneken tou euangeliou, ‘for my sake and for the sake of the gospel’, pairs Jesus with the message about him, as only Mark does (also 8:35). Verse 30 contrasts nun en tō kairō toutō, ‘now in this time’, with en tō aiōni tō erchomenō, ‘in the age to come’, the two-age scheme of Jewish hope. Meta diōgmōn, ‘with persecutions’, is found only in Mark. The list of what is received repeats what was left, but ‘father’ is missing from the second list.",
+      "words": ["G0281", "G3762", "G0863G", "G3614G", "G0080", "G0079", "G3384", "G3962", "G5043", "G0068G", "G2098", "G1542", "G2540", "G1375", "G0165G", "G2222", "G4413G", "G2078"],
+      "text": "The Textus Receptus adds ‘or wife’ to the list of what is left in verse 29, as Luke 18:29 has; the earliest manuscripts of Mark lack it.",
+      "theology": [
+        {
+          "id": "church",
+          "note": "The hundredfold houses and brothers and sisters and mothers and children are received in this age, which points to the new family of Jesus' followers (3:34-35). Many commentators note that fathers do not appear among what is received: in this family God alone is Father (11:25), and no one takes the place of patriarch."
+        },
+        {
+          "id": "suffering",
+          "note": "The promise includes persecutions. Mark's first readers, likely under pressure, are told that loss for Christ is repaid within a community that is itself hated, and fully only in the age to come."
+        }
+      ],
+      "parallels": ["Matthew 19:28-30", "Luke 18:29-30"],
+      "refs": ["Mark 3:34-35", "Mark 8:35", "Matthew 23:9", "Acts 2:44-45", "Mark 9:35"]
+    },
+    {
+      "v": "32",
+      "context": "The road now climbs to Jerusalem, and Jesus walks ahead of the group. Mark notes amazement and fear among those following, and then Jesus takes the Twelve aside for the third and fullest prediction of his death. His lead on the road is the posture of the whole passion: he goes to his death, he is not dragged.",
+      "grammar": "Ēsan de en tē hodō anabainontes, ‘they were on the road going up’, and ēn proagōn autous ho Iēsous, ‘Jesus was going ahead of them’, are both periphrastic imperfects, painting a continuing scene. Anabainō, ‘go up’, is the standard word for pilgrimage to Jerusalem, which sits high in the hills. The next clauses, kai ethambounto, hoi de akolouthountes ephobounto, ‘and they were amazed, and those following were afraid’, may describe one group or two (the Twelve amazed, other followers afraid); grammarians disagree. Ta mellonta autō sumbainein, ‘the things about to happen to him’, uses mellō for what is certain and near.",
+      "words": ["G3598", "G0305", "G2414", "G4254", "G2284", "G0190", "G5399", "G3880", "G1427", "G3195", "G4819"],
+      "history": "Pilgrims from Galilee going up for Passover often traveled down the Jordan valley and then climbed from Jericho, about 250 meters below sea level, to Jerusalem at roughly 750 meters, a steep road of about 25 kilometers (15 miles). The Psalms of Ascents (Psalms 120 to 134) were probably sung on such pilgrimages.",
+      "parallels": ["Matthew 20:17", "Luke 18:31"],
+      "refs": ["Luke 9:51", "Psalm 122:1-4", "Mark 16:7", "John 11:16"]
+    },
+    {
+      "v": "33-34",
+      "context": "The third prediction is the most detailed: handed over to the chief priests and scribes, condemned to death, handed over to the Gentiles, mocked, spat on, flogged, killed, and raised after three days. Each item will be fulfilled in Mark's passion narrative: condemnation (14:64), handing over to Pilate (15:1), flogging (15:15), mockery and spitting (14:65, 15:19-20), death (15:37), and resurrection (16:6).",
+      "grammar": "The prediction is a chain of future indicatives. Paradothēsetai, ‘will be handed over’, is passive; the same verb covers Judas's betrayal (14:10), the council's handing over to Pilate (15:1), and Pilate's to the soldiers (15:15), and many interpreters also hear God's purpose behind it, as in Isaiah 53:6 and 12 in the Septuagint, where the servant is handed over for sins. The subjects then change from the Jewish leaders (katakrinousin, ‘they will condemn’) to the Gentiles (empaixousin, ‘they will mock’). Anastēsetai, ‘he will rise’, is future middle: he will rise, not only be raised.",
+      "words": ["G2400", "G0305", "G5207", "G0444", "G3860", "G0749", "G1122", "G2632", "G2288", "G1484", "G1702", "G1716", "G3146", "G0615", "G5140", "G2250", "G0450"],
+      "text": "Mark's ‘after three days’ (meta treis hēmeras) is the earliest form; the Textus Receptus has ‘on the third day’, the wording of Matthew 20:19 and Luke 18:33. The two expressions were interchangeable in Jewish reckoning, where part of a day counted as a day.",
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "Every prediction of the passion in Mark ends with the resurrection (8:31, 9:31, 10:34). Jesus' death is never announced as the end; the one who will be killed is the one who will rise."
+        }
+      ],
+      "parallels": ["Matthew 20:18-19", "Luke 18:31-33"],
+      "refs": ["Mark 8:31", "Mark 9:31", "Isaiah 50:6", "Mark 14:64-65", "Mark 15:15-20"]
+    },
+    {
+      "v": "35-37",
+      "context": "Right after the prediction, James and John ask for the places of honor at Jesus' right and left in his glory. The request shows they believe he will reign, and have missed how. The answer Jesus gives is the heart of the chapter.",
+      "grammar": "Thelomen hina ho ean aitēsōmen se poiēsēs hēmin, ‘we want you to do for us whatever we ask you’, is an open-ended request, almost a demand for a blank check. Jesus answers with a question, ti thelete me poiēsō humin, ‘what do you want me to do for you’, which he will repeat word for word to Bartimaeus (verse 51). Dos hēmin, ‘grant us’, is an aorist imperative. Ek dexiōn and ex aristerōn, ‘at the right’ and ‘at the left’, are the seats beside a king; en tē doxē sou, ‘in your glory’, recalls 8:38 and the transfiguration.",
+      "words": ["G2385G", "G2491H", "G2199G", "G2309", "G0154", "G4160G", "G1325", "G1188", "G0710", "G2523", "G1391"],
+      "parallels": ["Matthew 20:20-21"],
+      "text": "In Matthew the request comes from the brothers' mother (Matthew 20:20-21), though Jesus answers the brothers. Luke omits the episode but places the dispute about greatness at the Last Supper (Luke 22:24).",
+      "refs": ["Mark 8:38", "Mark 9:2-3", "Mark 15:27", "Matthew 19:28", "Mark 9:34"]
+    },
+    {
+      "v": "38-40",
+      "context": "Jesus tells them they don't know what they are asking. Can they drink his cup and undergo his baptism? They say they can, and Jesus says they will, but the seats at his right and left are not his to give; they belong to those for whom they are prepared. In Mark the only people at Jesus' right and left in the hour of his kingship are the two bandits crucified with him (15:27).",
+      "grammar": "To potērion ho egō pinō, ‘the cup that I drink’, and to baptisma ho egō baptizomai, ‘the baptism I am baptized with’, use present tenses: the cup and the baptism are already under way on the road to Jerusalem. The emphatic egō, ‘I’, sets Jesus' path against their ambition. Baptizō in ordinary Greek could mean to be plunged or overwhelmed, as by disaster. In verse 40 hois hētoimastai, ‘for whom it has been prepared’, is a perfect passive with God as the implied agent, which Matthew 20:23 makes explicit: ‘by my Father’.",
+      "words": ["G6063", "G0154", "G1410", "G4095", "G4221", "G0908", "G0907", "G2523", "G1188", "G2176", "G1325", "G2090"],
+      "ot": [
+        {
+          "ref": "Isaiah 51:17",
+          "note": "The Hebrew speaks of Jerusalem drinking from the LORD's hand kos chamato, ‘the cup of his wrath’, and the Septuagint has to potērion tou thumou. The cup was a common prophetic image for God's judgment poured out (Psalm 75:8, Jeremiah 25:15). Jesus takes the image for his own suffering, and in Gethsemane he will pray that this cup pass from him (14:36). The waters of overwhelming distress (Psalm 69:1-2) stand behind the baptism image."
+        }
+      ],
+      "history": "The prediction came true for James, whom Herod Agrippa I executed with the sword about AD 44 (Acts 12:2), the first of the Twelve to die. For John, Irenaeus (Against Heresies 3.3.4) reports a long life at Ephesus into the reign of Trajan; a few late sources claim Papias said John was killed by Jews, but that report is disputed.",
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "Sharing in Christ's glory comes by sharing his cup. The disciples' confident ‘we can’ is naive, yet Jesus accepts it and says they will indeed suffer. The verse makes suffering for Christ part of the path of discipleship, not a sign that something has gone wrong."
+        }
+      ],
+      "parallels": ["Matthew 20:22-23"],
+      "refs": ["Mark 14:36", "Luke 12:50", "Psalm 75:8", "Acts 12:2", "Mark 15:27"]
+    },
+    {
+      "v": "41-44",
+      "context": "The other ten are indignant, and Jesus gathers them all. The rulers of the nations dominate their subjects, but among his followers the great must be servants and the first must be slaves of all. The teaching repeats 9:35 with sharper words.",
+      "grammar": "Aganaktein, ‘to be indignant’, is the verb used of Jesus in verse 14; the ten's indignation is jealousy, not zeal. Hoi dokountes archein tōn ethnōn, ‘those who are recognized as ruling the Gentiles’, uses dokeō, which can mean ‘those regarded as’ or hint ‘those who seem’ to rule; interpreters differ on whether irony is intended. Two compound verbs follow: katakurieuousin, ‘they lord it over’, and katexousiazousin, ‘they exercise authority over’; the prefix kata- adds the sense of pressing down. Ouch houtōs de estin en humin, ‘but it is not so among you’, is a present tense, stating what the community is. Diakonos, ‘servant’, and doulos pantōn, ‘slave of all’, escalate.",
+      "words": ["G0191", "G1176", "G0023", "G4341", "G1380", "G0757", "G1484", "G2634", "G3173", "G2715", "G1249", "G4413G", "G1401"],
+      "text": "Where the critical editions read estin, ‘it is not so among you’, the Textus Receptus and many later manuscripts read estai, ‘it shall not be so’, turning a statement into a command.",
+      "theology": [
+        {
+          "id": "leadership",
+          "note": "Jesus defines leadership among his people against the pattern of political power. Authority in the church is real, but it is exercised as service, and the one who wants to be first must make himself the slave of all. 1 Peter 5:3 repeats the same verb in warning elders against lording it over the flock."
+        }
+      ],
+      "parallels": ["Matthew 20:24-27", "Luke 22:24-26"],
+      "refs": ["Mark 9:35", "1 Peter 5:3", "John 13:14-15", "2 Corinthians 4:5"]
+    },
+    {
+      "v": "45",
+      "context": "The reason for the new order of greatness: even the Son of Man came not to be served but to serve and to give his life as a ransom for many. This is Mark's clearest statement of why Jesus came and what his death accomplishes, and it gives the passion narrative its meaning in advance.",
+      "grammar": "Kai gar, ‘for even’, grounds the command in Jesus' own example. Ouk ēlthen diakonēthēnai alla diakonēsai, ‘he came not to be served but to serve’, sets a passive and an active infinitive side by side; ēlthen, ‘came’, speaks of his whole mission (1:38, 2:17). Kai dounai tēn psuchēn autou lutron anti pollōn: psuchē here means ‘life’; lutron is the price paid to release a slave, a prisoner, or a forfeited life (Exodus 21:30, Numbers 35:31 in the Septuagint); anti usually means ‘in place of’, as when Archelaus reigned anti Hērōdou, ‘in place of Herod’ (Matthew 2:22). Pollōn, ‘many’, is a Semitic way of speaking of a great multitude; Joachim Jeremias argued it is inclusive, meaning all, and 1 Timothy 2:6 has ‘for all’.",
+      "words": ["G5207", "G0444", "G2064", "G1247", "G1325", "G5590H", "G3083", "G0473", "G4183"],
+      "ot": [
+        {
+          "ref": "Isaiah 53:10-12",
+          "note": "The Hebrew says the servant's nefesh, ‘life’ or ‘soul’, is made an asham, a guilt offering (53:10), that he will justify harabbim, ‘the many’ (53:11), that he poured out his nefesh to death and bore the sin of rabbim, ‘many’ (53:12). The Septuagint has paredothē eis thanaton hē psuchē autou, ‘his life was handed over to death’, and hamartias pollōn anēnegken, ‘he bore the sins of many’. Mark shares key terms (psuchē, polloi, the idea of a life given for others) but not the Septuagint's wording, and lutron never appears in Isaiah 53. C. K. Barrett and Morna Hooker (Jesus and the Servant, 1959) therefore doubted a direct allusion; Joachim Jeremias, Peter Stuhlmacher, and Rikki Watts have argued that the concept of a life given in place of many, with the guilt offering as its payment, is exactly Isaiah 53's. Either way, the saying explains Jesus' death as a substitutionary gift of his life for others."
+        },
+        {
+          "ref": "Daniel 7:13-14",
+          "note": "In Daniel the one like a son of man receives dominion so that all peoples, nations, and languages will serve him. Jesus takes the title and reverses the expectation: the Son of Man came not to be served but to serve. The service Daniel foresaw will come, but by way of the cross."
+        }
+      ],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The verse teaches that Jesus' death was the purpose of his coming and that it was a ransom given in place of many. Christians have drawn on it for several models of the atonement: the fathers who spoke of a ransom paid to free humanity from bondage (Origen and Gregory of Nyssa pressed the question of to whom), and later theologians who stressed substitution and satisfaction. The text itself names the price (his life), the beneficiaries (many), and the relation (in their place), without saying to whom the price was paid."
+        }
+      ],
+      "parallels": ["Matthew 20:28", "Luke 22:27"],
+      "refs": ["Isaiah 53:10-12", "1 Timothy 2:6", "Mark 14:24", "Isaiah 43:3", "Titus 2:14"]
+    },
+    {
+      "v": "46",
+      "context": "At Jericho, the last stop before the climb to Jerusalem, a blind beggar named Bartimaeus sits beside the road. The section of Mark that began with the gradual healing of a blind man at Bethsaida (8:22-26) ends with this one, and between them lie the three passion predictions and the disciples' blindness about them.",
+      "grammar": "Mark gives the name in an unusual order: ho huios Timaiou Bartimaios, ‘the son of Timaeus, Bartimaeus’. Bar is Aramaic for ‘son’, so Mark first translates the name and then gives it. Prosaitēs, ‘beggar’, is rare in the New Testament (also John 9:8). Ekathēto para tēn hodon, ‘was sitting beside the road’: he is beside the road; by verse 52 he will be following on it.",
+      "words": ["G2064", "G2410", "G1607", "G3101", "G3793", "G2425", "G5207", "G5090", "G0924", "G5185", "G6075", "G2521", "G3844", "G3598"],
+      "history": "New Testament Jericho was the city Herod the Great had developed with palaces and gardens, lying just south of the ancient mound of Old Testament Jericho (Tell es-Sultan). Mark places the healing as Jesus leaves Jericho, Luke as he approaches it (Luke 18:35); some interpreters harmonize the two by the existence of the two sites. Bartimaeus is the only person healed in Mark whose name is given, and Richard Bauckham (Jesus and the Eyewitnesses, 2006) has argued that such names may preserve people known to the early churches.",
+      "parallels": ["Matthew 20:29-30", "Luke 18:35"],
+      "text": "Matthew has two blind men (Matthew 20:30), as he does elsewhere with pairs (Matthew 8:28, 9:27). Luke has one blind man, unnamed, as Jesus draws near to Jericho.",
+      "refs": ["Mark 8:22-26", "John 9:8", "Joshua 6:26", "Luke 19:1"]
+    },
+    {
+      "v": "47-48",
+      "context": "Hearing that Jesus of Nazareth is passing, Bartimaeus cries out to him as Son of David and asks for mercy. The crowd tries to silence him and he shouts all the louder. He is the first person in Mark to call Jesus by the royal title, just before Jesus enters David's city.",
+      "grammar": "Ērxato krazein, ‘he began to cry out’, then the imperfects epetimōn, ‘many kept rebuking him’, and ekrazen, ‘he kept crying out’, with pollō mallon, ‘much more’: a contest of voices. Huie Dauid Iēsou, eleēson me, ‘Son of David, Jesus, have mercy on me’, is a vocative address followed by an aorist imperative of eleeō. The cry is close to the Psalms' prayers for mercy (Psalm 51:1), and it is the root, with Luke 18:13, of the Kyrie eleison of Christian worship and the Jesus Prayer of the Eastern churches.",
+      "words": ["G0191", "G3479", "G0757", "G2896", "G5207", "G1138", "G1653", "G2008", "G4623", "G3123G"],
+      "history": "Psalms of Solomon 17:21, written in the first century BC, prays that God will raise up for Israel its king, the son of David, to purge Jerusalem of Gentiles. Son of David was a messianic title of hope for a royal deliverer. Josephus (Antiquities 8.45-49) also records a tradition of Solomon, David's son, as a healer and exorcist, which some scholars think lies behind blind men addressing a healer by this title.",
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "Bartimaeus names Jesus with the title of the promised king, and Jesus does not silence him, unlike earlier in Mark (1:34, 8:30). The time for concealment is ending as Jesus approaches Jerusalem, but the Son of David will be crowned on a cross."
+        }
+      ],
+      "parallels": ["Matthew 20:30-31", "Luke 18:36-39"],
+      "refs": ["2 Samuel 7:12-16", "Psalm 51:1", "Matthew 9:27", "Mark 12:35-37"]
+    },
+    {
+      "v": "49-50",
+      "context": "Jesus stops and says to call him. The crowd that rebuked him now encourages him, and Bartimaeus throws off his cloak, leaps up, and comes. Mark tells the scene with vivid detail, the kind that suggests an eyewitness.",
+      "grammar": "Stas, ‘standing still’, from histēmi: the one who has been going ahead on the road (verse 32) halts for a beggar. The verb phōneō, ‘call’, appears three times: phōnēsate auton, ‘call him’, phōnousin ton tuphlon, ‘they call the blind man’, phōnei se, ‘he is calling you’. The crowd's words are two present imperatives, tharsei, ‘take heart’, and egeire, ‘get up’, the verb Mark also uses for rising from sickness and death. Apobalōn to himation, ‘throwing off his cloak’, and anapēdēsas, ‘leaping up’, a word found only here in the New Testament.",
+      "words": ["G2476", "G5455", "G5185", "G2293", "G1453", "G0577", "G2440", "G6008"],
+      "refs": ["Mark 2:11", "Mark 5:41", "Mark 6:50", "John 16:33"]
+    },
+    {
+      "v": "51-52",
+      "context": "Jesus asks Bartimaeus the question he asked James and John (verse 36). The brothers asked for glory; the beggar asks to see. Jesus sends him away healed by his faith, and at once he sees and follows Jesus on the road, the road that leads to Jerusalem and the cross.",
+      "grammar": "Rabbouni, ‘my master’, is a heightened form of rabbi; the only other New Testament use is Mary Magdalene's in John 20:16. Hina anablepsō can mean ‘that I may see again’ or ‘look up’, which may suggest he had once seen. Hē pistis sou sesōken se, ‘your faith has saved you’, uses a perfect of sōzō, which covers both healing and salvation; Jesus says the same to the woman in 5:34. Jesus says hupage, ‘go’, but Bartimaeus uses his freedom to follow: ēkolouthei autō en tē hodō, ‘he was following him on the road’, an imperfect that leaves him following as the chapter ends.",
+      "words": ["G2309", "G4160G", "G5185", "G4462", "G0308", "G5217", "G4102G", "G4982", "G2112", "G0190", "G3598"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Faith here is persistent, personal trust in Jesus as the one who can give sight. It is credited as the channel of the healing, not its power, and it issues in following. Bartimaeus is Mark's picture of the disciple the Twelve were meant to be."
+        },
+        {
+          "id": "salvation",
+          "note": "The same verb means healed and saved. The physical healing is a sign of the larger deliverance Jesus brings, and the healed man joins him on the road."
+        }
+      ],
+      "text": "The Textus Receptus says he followed ‘Jesus’ rather than ‘him’, a common clarifying change.",
+      "parallels": ["Matthew 20:32-34", "Luke 18:40-43"],
+      "refs": ["Mark 10:36", "Mark 5:34", "John 20:16", "Mark 8:22-26", "Isaiah 35:5"]
+    }
+  ]
+}
