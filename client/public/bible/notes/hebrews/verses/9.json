@@ -1,0 +1,300 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "Having shown from Jeremiah that the first covenant is aging (8:13), the author describes what it had: regulations for worship and an earthly sanctuary. Verses 1-10 treat those two items, the sanctuary (verses 2-5) and the worship (verses 6-10), in order.",
+      "grammar": "Eichen men oun, ‘now it had’, an imperfect, speaks of the first covenant in the past tense, as something whose time has run. The men looks ahead to a de in verse 11 (‘but when Christ came’), so verses 1-10 and 11-14 are one balanced contrast. Dikaiōmata latreias are ‘regulations of worship’, ordinances that governed priestly service. To hagion kosmikon, ‘the worldly sanctuary’, uses kosmikos in the sense of belonging to this created world, the opposite of the tent ‘not of this creation’ in verse 11.",
+      "words": ["G2192", "G4413G", "G1345", "G2999", "G0039G", "G2886"],
+      "theology": [
+        {
+          "id": "worship",
+          "note": "The first covenant's worship was God-given, regulated in detail. Hebrews does not treat it as human invention to be despised but as a divinely ordered pattern whose meaning is now disclosed."
+        }
+      ],
+      "refs": ["Exodus 25:8-9", "Hebrews 8:5", "Hebrews 9:11", "Hebrews 9:24"]
+    },
+    {
+      "v": "2",
+      "context": "The first room of the tent, called the Holy Place, held the lampstand, the table, and the bread of the Presence. The author describes the tabernacle of the wilderness, not the Jerusalem temple, because his argument is built on Scripture's own pattern.",
+      "grammar": "Skēnē gar kateskeuasthē hē prōtē, ‘for a tent was prepared, the first one’: prōtē here is spatial, the front room, though the word ‘first’ will take on a temporal sense in verse 8. The furnishings are listed with the article (hē luchnia, hē trapeza), as things the readers know. Hē prothesis tōn artōn, literally ‘the setting out of the loaves’, is the Septuagint's phrase for the bread of the Presence (Exodus 40:23), the twelve loaves renewed each Sabbath. Hētis legetai Hagia, ‘which is called Holy’, uses a neuter plural as a name for the room.",
+      "words": ["G4633", "G2680", "G4413G", "G3087", "G5132", "G4286", "G0740", "G0039G"],
+      "history": "The lampstand (Exodus 25:31-40) was a seven-branched stand of hammered gold, tended every evening and morning (Exodus 27:20-21). The table (Exodus 25:23-30) held twelve loaves, one for each tribe, replaced every Sabbath and eaten by the priests (Leviticus 24:5-9). Josephus describes the same three objects in the Holy Place of Herod's temple (Jewish War 5.216-218), and the lampstand and table appear among the spoils carried in triumph on the Arch of Titus in Rome.",
+      "refs": ["Exodus 25:23-40", "Leviticus 24:5-9", "Exodus 40:22-25", "1 Samuel 21:6"]
+    },
+    {
+      "v": "3-4",
+      "context": "Behind the second curtain lay the Most Holy Place. The author lists what belonged to it: the golden incense altar and the ark of the covenant, covered with gold, containing the jar of manna, Aaron's staff that budded, and the tablets of the covenant.",
+      "grammar": "Meta to deuteron katapetasma, ‘after the second curtain’: the first curtain was the screen at the entrance to the tent (Exodus 26:36), the second the veil before the inner room (Exodus 26:31-33). Hagia hagiōn, ‘Holy of Holies’, renders the Hebrew superlative qodesh haqqodashim, ‘the holiest place’. Verse 4 begins chrusoun echousa thumiatērion, ‘having a golden incense altar’. Two questions meet here. Thumiatērion can mean a censer (its usual sense in the Septuagint, as in 2 Chronicles 26:19) or the incense altar (as in Josephus, Jewish War 5.218). And echousa (‘having’) is not the en hē (‘in which’) used for the furnishings of the outer room in verse 2 and for the ark's contents in verse 4. Many interpreters therefore take the phrase to mean that the altar belonged to the inner room in function, as 1 Kings 6:22 says the altar ‘belonged to the inner sanctuary’, while standing just outside the curtain. Stamnos chrusē, ‘a golden jar’, follows the Septuagint of Exodus 16:33, which adds ‘golden’ to the Hebrew's plain ‘jar’.",
+      "words": ["G1208", "G2665", "G4633", "G0039H", "G5552", "G2192", "G2369", "G2787G", "G1242", "G5553", "G4713", "G3131", "G4464", "G0002", "G0985", "G4109"],
+      "history": "The ark vanished with the Babylonian destruction of 587 or 586 BC, or earlier, and the Second Temple's inner room stood empty. The Mishnah says a stone called the Foundation Stone stood where the ark had been, and the high priest set the censer on it (m. Yoma 5:2). When Pompey forced his way into the sanctuary in 63 BC, he found it empty, as the Roman historian Tacitus reports (Histories 5.9), and Josephus says the inner room held nothing at all (Jewish War 5.219). The contents of the ark listed here come from Exodus 16:33-34, Numbers 17:10, and Deuteronomy 10:1-5; 1 Kings 8:9 says that by Solomon's day only the tablets remained inside.",
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "The ark held the tablets of the covenant with memorials of God's provision (manna) and his choice of a priesthood (Aaron's staff). The inner room was a museum of the first covenant, and Hebrews will show a new covenant inaugurated by a different priest."
+        }
+      ],
+      "refs": ["Exodus 26:31-33", "Exodus 30:1-10", "1 Kings 6:22", "Exodus 16:33-34", "Numbers 17:10"]
+    },
+    {
+      "v": "5",
+      "context": "Above the ark were the cherubim of glory overshadowing the mercy seat. Then the author stops himself: this is not the time to explain each item. His concern is not the furniture but what the arrangement means.",
+      "grammar": "Cheroubin doxēs, ‘cherubim of glory’, may mean glorious cherubim or cherubim associated with God's glory, the kavod that appeared above the ark (Exodus 25:22, Leviticus 16:2). Kataskiazonta (‘overshadowing’) is a present participle. To hilastērion is the Septuagint's word for the kapporet, the gold lid of the ark on which the blood was sprinkled on the Day of Atonement (Exodus 25:17-22, Leviticus 16:14-15). The English ‘mercy seat’ goes back to William Tyndale's rendering of Luther's Gnadenstuhl. Paul uses the same word of Christ in Romans 3:25. Peri hōn ouk estin nun legein kata meros, ‘about which it is not now possible to speak in detail’, is a rhetorical signal of restraint.",
+      "words": ["G5502", "G1391", "G2683", "G2435", "G3568", "G3313"],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The hilastērion was the place where atonement was made, the meeting point of God's presence above and the covenant tablets below. Paul applies the word to Christ (Romans 3:25), and Hebrews will show Christ fulfilling the rite performed there."
+        },
+        {
+          "id": "glory",
+          "note": "The cherubim ‘of glory’ marked the place where God's glory dwelt among his people (Exodus 25:22). The New Testament locates that glory in the Son (John 1:14, Hebrews 1:3)."
+        }
+      ],
+      "refs": ["Exodus 25:17-22", "Leviticus 16:14-15", "Romans 3:25", "1 Samuel 4:4", "Hebrews 1:3"]
+    },
+    {
+      "v": "6-7",
+      "context": "The worship matched the building. Priests went into the first room continually to perform their duties; into the second only the high priest went, once a year, never without blood, which he offered for himself and for the people's sins of ignorance.",
+      "grammar": "Verses 6-7 are built on men… de: into the first tent the priests go dia pantos (‘continually’), into the second only the high priest, hapax tou eniautou (‘once a year’). The present tenses eisiasin (‘they go in’) and prospherei (‘he offers’) describe the ritual as Scripture presents it. Ou chōris haimatos, ‘not without blood’, is litotes: blood was indispensable. Agnoēmata (‘sins of ignorance’) recalls 5:2 and the law's distinction between unintentional sins and defiant ones (Numbers 15:27-31). Hebrews focuses on the order of the rite: huper heautou kai tōn tou laou, ‘for himself and for the people's’.",
+      "words": ["G2680", "G4413G", "G4633", "G2409", "G2999", "G2005", "G1208", "G0530", "G1763", "G0749", "G0129G", "G4374", "G0051"],
+      "history": "The priests' daily service in the Holy Place included burning incense morning and evening and tending the lamps (Exodus 30:7-8); Luke 1:8-10 shows the priest Zechariah chosen by lot to burn incense. On the Day of Atonement (Leviticus 16) the high priest passed the curtain with incense, then with the blood of his bull, then with the blood of the people's goat, so ‘once a year’ means on one day a year. The Mishnah says he kept his prayer in the inner room short so as not to alarm the waiting people (m. Yoma 5:1).",
+      "theology": [
+        {
+          "id": "holiness",
+          "note": "Graded access (priests to the outer room, the high priest alone to the inner, once a year, with blood) taught Israel that God's holiness cannot be approached casually. The whole arrangement was a lesson in distance, which the next verse interprets."
+        }
+      ],
+      "refs": ["Leviticus 16:2", "Leviticus 16:11-16", "Leviticus 16:34", "Exodus 30:7-10", "Luke 1:8-10"]
+    },
+    {
+      "v": "8",
+      "context": "The author reads the layout as the Holy Spirit's teaching: as long as the first tent stood, the way into the true sanctuary had not yet been disclosed. The architecture itself said ‘not yet’.",
+      "grammar": "Touto dēlountos tou pneumatos tou hagiou is a genitive absolute, ‘the Holy Spirit making this clear’. The Spirit is presented as the interpreter of the ritual, as he speaks through Scripture in 3:7 and 10:15. Mēpō pephanerōsthai, ‘not yet to have been revealed’, is a perfect infinitive. Tēn tōn hagiōn hodon means ‘the way into the sanctuary’, here the true, heavenly one. The key phrase is eti tēs prōtēs skēnēs echousēs stasin, ‘while the first tent still has standing’. ‘First tent’ can be spatial (the outer room, which stood as a barrier before the inner) or temporal (the first, Mosaic tabernacle as a whole, as opposed to the new order). The temporal sense fits the argument of 8:7-13 and 9:9-10, and stasis can mean ‘standing’ in the sense of legal validity as well as physical existence.",
+      "words": ["G1213", "G4151G", "G0040G", "G5319", "G0039G", "G3598", "G4413G", "G4633", "G4714"],
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "The Holy Spirit not only inspired Scripture but also taught through the structures God commanded. The verse gives the Spirit the role of disclosing what the old order meant, which is how Hebrews reads the Old Testament throughout."
+        },
+        {
+          "id": "revelation",
+          "note": "Revelation unfolds in history. The way into God's presence was hidden while the first tent stood and has been disclosed in Christ, whose death tore the curtain (Mark 15:38)."
+        }
+      ],
+      "refs": ["Hebrews 10:19-20", "Mark 15:38", "Hebrews 3:7", "John 14:6", "Ephesians 2:18"]
+    },
+    {
+      "v": "9-10",
+      "context": "The first tent is a parable for the present time. Its gifts and sacrifices could not perfect the worshiper's conscience; they dealt with food, drink, and washings, regulations for the body in force until the time of setting things right.",
+      "grammar": "Hētis parabolē, ‘which is a parable’, uses parabolē in the sense of a figure or symbol, the word Hebrews uses again of Abraham receiving Isaac back ‘figuratively’ (11:19). Eis ton kairon ton enestēkota, ‘for the time now present’, uses the perfect participle of enistēmi: either the author's present, in which the symbol can at last be read, or the time when the first tent was in force. Kata suneidēsin teleiōsai ton latreuonta, ‘to perfect the worshiper as to conscience’, names what the sacrifices could not do. Dikaiōmata sarkos, ‘regulations of the flesh’, contrasts outward rules with the inner conscience. Mechri kairou diorthōseōs, ‘until a time of correction’: diorthōsis was used for setting a broken limb straight and for amending laws, and here names the new order.",
+      "words": ["G3850", "G2540", "G1764", "G1435", "G2378", "G4374", "G4893", "G5048", "G3000", "G1033", "G4188", "G0909", "G1345", "G4561", "G1357"],
+      "text": "Most editions read dikaiōmata sarkos, ‘regulations of the flesh’, in apposition to the gifts and sacrifices. The Textus Receptus reads kai dikaiōmasin sarkos, ‘and fleshly ordinances’, adding them to the list of food, drink, and washings; the King James Version follows it. The sense is similar.",
+      "theology": [
+        {
+          "id": "sanctification",
+          "note": "The old rites could make the body ritually clean but could not reach the conscience. The verse locates the human problem in the conscience, the inner awareness of guilt before God, which only Christ's blood reaches (verse 14)."
+        },
+        {
+          "id": "law",
+          "note": "The food laws and washings were ‘imposed until the time of reform’. Hebrews treats them as temporary by design, which is how Mark 7:19 and Colossians 2:16-17 treat them as well."
+        }
+      ],
+      "refs": ["Hebrews 10:1-4", "Leviticus 11:1-47", "Mark 7:4", "Colossians 2:16-17", "Hebrews 13:9"]
+    },
+    {
+      "v": "11",
+      "context": "The turn of the chapter: ‘But when Christ came.’ The de answers the men of verse 1. He arrived as high priest of the good things, and he went through the greater and more perfect tent, not made by hands, not of this creation.",
+      "grammar": "Christos de paragenomenos archiereus, ‘but Christ, having arrived as high priest’, uses an aorist participle of paraginomai, a word for a public arrival. Tōn genomenōn agathōn, ‘of the good things that have come’, puts the blessings in the past: they are already present. Dia tēs meizonos kai teleioteras skēnēs is debated. Dia can be local (‘through’, passing through the heavens as in 4:14) or instrumental (‘by means of’). The tent itself has been identified as the heavenly regions through which he passed, the heavenly sanctuary, or his own body; Calvin favored the last, on the model of John 2:21. Cheiropoiētos (‘made by hands’) is the word Stephen uses for the temple in Acts 7:48 and Jesus' accusers in Mark 14:58.",
+      "words": ["G5547", "G3854", "G0749", "G1096", "G0018", "G3173", "G5046", "G4633", "G5499", "G2937"],
+      "text": "The earliest witnesses, the papyrus P46 and Codex Vaticanus, read genomenōn, ‘the good things that have come’; Codex Sinaiticus, Codex Alexandrinus, and most later manuscripts read mellontōn, ‘the good things to come’, perhaps under the influence of 10:1. The King James Version follows mellontōn. The first reading stresses that the new age has already arrived in Christ; the second, that its blessings are still ahead.",
+      "theology": [
+        {
+          "id": "temple",
+          "note": "The true tent is not part of this created order. Christ's priestly work takes place in the reality that the tabernacle copied, and the church's worship is joined to it there."
+        }
+      ],
+      "refs": ["Hebrews 4:14", "Hebrews 8:2", "Acts 7:48", "Mark 14:58", "John 2:19-21"]
+    },
+    {
+      "v": "12",
+      "context": "Christ entered the sanctuary not by means of the blood of goats and calves but by means of his own blood, once for all, having obtained eternal redemption. Every element contrasts with the Day of Atonement: the blood, the frequency, and the result.",
+      "grammar": "Dia haimatos… dia de tou idiou haimatos, ‘through blood… but through his own blood’, uses dia with the genitive for means. The phrase does not require the picture of Christ carrying blood into heaven, a picture some interpreters have drawn from the rite; most take ‘by his own blood’ as the ground of his entry, his death as the sacrifice that opens the way. Tragōn kai moschōn, ‘goats and calves’, names the Day of Atonement victims (the bull for the priest, the goat for the people). Ephapax, ‘once for all’, stands against ‘once a year’ in verse 7. Aiōnian lutrōsin heuramenos, ‘having obtained eternal redemption’, uses an aorist middle participle: ‘having found or secured for himself’. Whether the redemption was secured before the entry (on the cross) or in the act of entering is debated; the aorist participle allows either, and the letter as a whole ties the two together.",
+      "words": ["G0129G", "G5131", "G3448", "G2398", "G1525", "G2178", "G0039G", "G0166", "G3085", "G2147"],
+      "history": "Lutrōsis and its word family were used for the ransom of prisoners and slaves, and in the Septuagint for God's redemption of Israel from Egypt (Psalm 111:9; compare Exodus 6:6). By the first century the redemption of Israel was a standing hope (Luke 1:68, 2:38, 24:21).",
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "Christ's offering is his own life, not an animal's, and its effect is ‘eternal’. The Day of Atonement had to be repeated every year; the redemption Christ secured does not expire."
+        }
+      ],
+      "refs": ["Leviticus 16:14-15", "Hebrews 9:7", "Hebrews 10:10", "1 Peter 1:18-19", "Luke 1:68"]
+    },
+    {
+      "v": "13-14",
+      "context": "The argument moves from lesser to greater. If animal blood and the ashes of a heifer made the defiled outwardly clean, how much more will Christ's blood, offered through the eternal Spirit, cleanse the conscience from dead works to serve the living God.",
+      "grammar": "Ei gar… posō mallon, ‘for if… how much more’, is the Jewish argument from lesser to greater, known to the rabbis as qal vachomer and counted the first of Hillel's seven rules of interpretation (t. Sanhedrin 7:11). Rhantizousa tous kekoinōmenous, ‘sprinkling those who have been defiled’, uses a perfect participle of koinoō, ‘to make common’, for ritual impurity. Pros tēn tēs sarkos katharotēta, ‘for the cleansing of the flesh’. In verse 14 hos dia pneumatos aiōniou heauton prosēnegken amōmon tō theō, ‘who through the eternal Spirit offered himself unblemished to God’: ‘eternal Spirit’ is most often read as the Holy Spirit, by whom the Servant of Isaiah 42:1 was empowered, though some take it as Christ's own divine spirit. Amōmos (‘unblemished’) is the technical word for an acceptable sacrificial animal; the Septuagint uses it of the red heifer itself (Numbers 19:2). Kathariei is future: the cleansing is what Christ's blood will do for every worshiper. Apo nekrōn ergōn repeats 6:1, and eis to latreuein theō zōnti gives the purpose: priestly service to the living God.",
+      "words": ["G0129G", "G5131", "G5022", "G4700", "G1151", "G4472", "G2840", "G0037", "G2514", "G4214", "G3123G", "G4151G", "G0166", "G4374", "G0299", "G2511", "G4893", "G3498", "G2041", "G3000", "G2198"],
+      "text": "Most editions read hēmōn, ‘our conscience’; other editions, including the Textus Receptus, read humōn, ‘your conscience’. The two pronouns sounded alike in later Greek and are often confused in manuscripts. A few manuscripts read ‘holy Spirit’ instead of ‘eternal Spirit’, an early interpretation of the phrase.",
+      "history": "The rite of the red heifer (Numbers 19) produced ashes that, mixed with water, purified anyone who had touched a corpse. It was performed rarely: the Mishnah recalls only a small number of red heifers ever burned, the first by Moses and the second by Ezra (m. Parah 3:5). The rite dealt with contact with death; Hebrews says Christ cleanses from ‘works of death’.",
+      "theology": [
+        {
+          "id": "trinity",
+          "note": "The verse is one of the New Testament's clearest trinitarian sentences: Christ offers himself, through the eternal Spirit, to God. The whole Godhead acts in the atonement, the Son as priest and victim, the Spirit empowering, the Father receiving."
+        },
+        {
+          "id": "atonement",
+          "note": "Christ's blood cleanses the conscience, the inner place the old sacrifices could not reach (verse 9). The atonement deals with guilt before God, not only with ritual status."
+        },
+        {
+          "id": "worship",
+          "note": "The goal of cleansing is service: ‘to serve the living God’. Forgiveness is not an end in itself but admission to the priestly worship that Israel's priests alone once offered."
+        }
+      ],
+      "refs": ["Numbers 19:2-9", "Isaiah 42:1", "1 Peter 1:19", "1 John 1:7", "Romans 12:1"]
+    },
+    {
+      "v": "15",
+      "context": "Because Christ's blood cleanses the conscience, he is the mediator of a new covenant. His death redeemed people from transgressions committed under the first covenant, so that those who are called may receive the promised eternal inheritance. ‘Inheritance’ prepares the analogy of verses 16-17.",
+      "grammar": "Kai dia touto, ‘and for this reason’, draws the consequence from verse 14. Diathēkēs kainēs mesitēs, ‘mediator of a new covenant’, repeats 8:6. The purpose clause is interrupted by a genitive absolute: thanatou genomenou, ‘a death having taken place’. Eis apolutrōsin tōn epi tē prōtē diathēkē parabaseōn, ‘for the redemption of the transgressions under the first covenant’, is striking: Christ's death reaches back to sins committed under the old arrangement, which the animal sacrifices had only covered provisionally. Hoi keklēmenoi (‘those who have been called’) is a perfect passive participle, the letter's language for believers (3:1). Klēronomia (‘inheritance’) links to the ‘heirs of the promise’ of 6:17.",
+      "words": ["G1242", "G2537", "G3316", "G2288", "G0629", "G4413G", "G3847", "G1860", "G2983", "G2564G", "G0166", "G2817"],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "Christ mediates the new covenant by his death. The covenant is not only announced by him but established through his blood, which answers the promise of forgiveness in Jeremiah 31:34."
+        },
+        {
+          "id": "atonement",
+          "note": "Christ's death covers sins committed before it. The saints of the old covenant were forgiven on the credit of a sacrifice still to come, which is how Paul speaks of God passing over former sins in Romans 3:25."
+        }
+      ],
+      "refs": ["Hebrews 8:6", "Romans 3:25-26", "Hebrews 11:39-40", "1 Peter 1:3-4", "Galatians 3:18"]
+    },
+    {
+      "v": "16-17",
+      "context": "The author plays on the word diathēkē, which meant ‘covenant’ in the Greek Bible and ‘will’ in everyday Greek. Where there is a diathēkē, the death of the one who made it must be established; it takes effect only at death. The analogy explains why the new covenant required Christ's death.",
+      "grammar": "Hopou gar diathēkē, ‘for where there is a diathēkē’. Thanaton anagkē pheresthai tou diathemenou, ‘it is necessary for the death of the one who made it to be brought forward’: pheresthai is often taken in a legal sense, ‘to be registered’ or ‘to be proved’. Tou diathemenou is an aorist middle participle of diatithēmi, used both for making a will and for making a covenant (8:10). Verse 17 adds diathēkē gar epi nekrois bebaia, ‘for a diathēkē is valid over the dead’: the plural nekrois (‘dead ones’) is odd for a single testator and fits sacrificial victims better. Bebaia and ischuei (‘is valid’, ‘is in force’) are legal terms. Epei mēpote ischuei hote zē ho diathemenos may be a statement (‘since it is never in force while the maker lives’) or a question (‘is it ever in force…?’).",
+      "words": ["G1242", "G2288", "G0318", "G5342", "G1303", "G3498", "G0949", "G2480", "G2198"],
+      "text": "English translations visibly divide. The BSB, NIV, ESV, and NRSV translate diathēkē as ‘will’ in these verses and ‘covenant’ around them; the NASB keeps ‘covenant’ throughout. The ‘will’ reading, defended by most modern commentators, holds that the author makes a brief wordplay from a familiar legal fact: a testament takes effect only at the testator's death. The ‘covenant’ reading, defended by B. F. Westcott and William Lane and more recently by Scott Hahn (2004), objects that Greek and Roman wills did take legal effect before death in some respects, that covenant is the word's meaning in every other use in Hebrews, and that the ‘death of the one who made it’ refers to the covenant-maker represented by slain animals, as in Genesis 15:9-17 and Jeremiah 34:18-20, where those who break a covenant invoke on themselves the fate of the divided victims. On that view Christ dies as the covenant-breaker's substitute, bearing the covenant curse.",
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "On either reading the point is that the new covenant comes into force through a death. Christ's death is not an accident that interrupted his work but the act that gives the covenant legal force and opens the inheritance to the heirs."
+        },
+        {
+          "id": "atonement",
+          "note": "The ‘covenant’ reading adds a strong substitutionary note: the death required is the death that the covenant curse demands of those who broke it, borne by Christ on their behalf."
+        }
+      ],
+      "refs": ["Galatians 3:15-18", "Genesis 15:9-17", "Jeremiah 34:18-20", "Hebrews 9:15", "Luke 22:20"]
+    },
+    {
+      "v": "18-20",
+      "context": "The principle is confirmed from Sinai: even the first covenant was not inaugurated without blood. When Moses had spoken every commandment to the people, he sprinkled the book and the people with blood and said, ‘This is the blood of the covenant.’",
+      "grammar": "Hothen, ‘therefore’, applies the principle of verses 16-17. Enkekainistai (‘has been inaugurated’) is the perfect passive of enkainizō, the Septuagint's word for dedicating a house or the temple (Deuteronomy 20:5, 1 Kings 8:63); the feast of Hanukkah, the rededication of the temple, is called ta enkainia in John 10:22. Lalētheisēs… pasēs entolēs, ‘every command having been spoken’, is a genitive absolute summarizing Exodus 24:3. The list of materials is fuller than Exodus: water, scarlet wool, and hyssop come from other purification rites (Leviticus 14:4-7, Numbers 19:6, 18), and the sprinkling of the book itself is not mentioned in Exodus. Hebrews gathers the purification rites of the law into one picture.",
+      "words": ["G4413G", "G0129G", "G1457", "G2980", "G1785", "G3551", "G3475", "G2992", "G3448", "G5131", "G5204", "G2053", "G2847", "G5301", "G0975", "G4472", "G2316", "G1781"],
+      "text": "Some important witnesses, including the papyrus P46, lack ‘and goats’ (kai tōn tragōn), and the SBL edition omits the words; most editions keep them. Exodus 24 mentions only young bulls, so a scribe might have added goats from 9:12 or removed them to match Exodus.",
+      "ot": [
+        {
+          "ref": "Exodus 24:8",
+          "note": "The Hebrew hinneh dam habberit asher karat YHWH immakhem, ‘behold the blood of the covenant that the LORD has made with you’, is rendered in the Septuagint idou to haima tēs diathēkēs hēs dietheto kurios pros humas. Hebrews changes three things: touto (‘this’) for idou (‘behold’), eneteilato (‘commanded’) for dietheto (‘made’), and ho theos for kurios. The first change matches Jesus' words at the Last Supper, touto estin to haima mou tēs diathēkēs (Mark 14:24), and many interpreters think the author heard the Sinai ceremony through the words of institution. In Exodus the blood binds the people to the covenant they have just sworn to keep (24:7)."
+        }
+      ],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "Covenants in Scripture are sealed with blood because they bind life to life. The Sinai ceremony is the pattern for the new covenant, which Jesus sealed with his own blood."
+        },
+        {
+          "id": "sacraments",
+          "note": "The phrase ‘blood of the covenant’ links Sinai to the Lord's Supper, where Jesus spoke of the cup as the new covenant in his blood. Christian traditions differ on how Christ is present in the Supper, but all read it as the covenant meal of the new covenant."
+        }
+      ],
+      "refs": ["Exodus 24:3-8", "Mark 14:24", "Matthew 26:28", "1 Peter 1:2", "Leviticus 14:4-7"]
+    },
+    {
+      "v": "21-22",
+      "context": "Moses likewise sprinkled the tabernacle and its vessels with blood. The law requires cleansing with blood for almost everything, and without the shedding of blood there is no forgiveness. The general principle closes the section and prepares for verse 23.",
+      "grammar": "Homoiōs errantisen, ‘he likewise sprinkled’, repeats the verb of verse 19. Schedon, ‘almost’, is a careful qualification: the law allowed flour for the poor (Leviticus 5:11-13) and purification of metal by fire and water (Numbers 31:22-23). Haimatekchusia (‘shedding of blood’) is not found in Greek before Hebrews and may have been coined here, from haima (‘blood’) and ekchusis (‘pouring out’). It may refer to the slaughter of the victim or to the pouring of its blood at the base of the altar (Leviticus 4:7, 18, 25), and interpreters differ on which. Aphesis (‘forgiveness’) stands without an object, as an absolute: ‘there is no forgiveness’.",
+      "words": ["G4633", "G4632", "G3009", "G0129G", "G3668", "G4472", "G4975", "G2511", "G3551", "G0130", "G0859"],
+      "history": "The Pentateuch speaks of anointing the tabernacle and its vessels with oil (Exodus 40:9-11, Leviticus 8:10) and of blood applied to the altar (Leviticus 8:15, 16:16-19), but not of blood sprinkled on the tent and all its vessels at the dedication. Josephus, however, describes the tabernacle and its vessels consecrated with oil and with the blood of bulls and rams (Antiquities 3.206), which shows that Hebrews reflects a Jewish tradition of the period.",
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "‘Without the shedding of blood there is no forgiveness’ states the logic of the whole sacrificial system: life for life, as Leviticus 17:11 teaches. Hebrews does not say God is bound by the rite but that the rite taught a truth about sin that Christ's death fulfills."
+        }
+      ],
+      "refs": ["Leviticus 17:11", "Leviticus 8:15", "Leviticus 16:16-19", "Leviticus 5:11-13", "Matthew 26:28"]
+    },
+    {
+      "v": "23",
+      "context": "The conclusion is drawn with ‘therefore’: the copies of the heavenly things had to be purified with such rites, but the heavenly things themselves with better sacrifices. The idea that heaven needs purifying is one of the letter's puzzles.",
+      "grammar": "Anagkē oun, ‘it was necessary, then’. Ta hupodeigmata, ‘the copies’, repeats the language of 8:5. Toutois, ‘with these’, points back to the blood rites. Auta de ta epourania, ‘but the heavenly things themselves’, is the object of the same infinitive, katharizesthai (‘to be purified’). Kreittosin thusiais, ‘with better sacrifices’, is a plural although Hebrews insists on one sacrifice; it is best read as a generalizing plural matching the plural of the copies. The puzzle is what purifying heavenly things means. Some take it as consecration, the inauguration of the heavenly sanctuary for use, as the tabernacle was dedicated. Others take it as cleansing from the defilement of human sin, as Leviticus 16:16 says the earthly sanctuary was cleansed ‘because of the impurities of the Israelites’. Others read ‘the heavenly things’ as the people of God themselves, whose consciences are cleansed.",
+      "words": ["G0318", "G5262", "G3772", "G2511", "G2032", "G2908", "G2378"],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "Christ's sacrifice reaches beyond the individual conscience to the whole order of access to God. Whatever the precise sense, the verse makes his offering the ground on which heaven itself is opened to sinners."
+        }
+      ],
+      "refs": ["Leviticus 16:16", "Hebrews 8:5", "Colossians 1:20", "Revelation 12:7-9", "Hebrews 12:22-24"]
+    },
+    {
+      "v": "24",
+      "context": "Christ did not enter a sanctuary made with hands, a copy of the true one, but heaven itself, now to appear in the presence of God on our behalf. The Day of Atonement's entry into the Most Holy Place finds its reality here.",
+      "grammar": "Cheiropoiēta… hagia, ‘a hand-made sanctuary’, recalls verse 11. Antitupa tōn alēthinōn, ‘antitypes of the true things’: here antitupos means a copy made from a model, the reverse of later Christian usage, in which the ‘antitype’ is the fulfillment. Eis auton ton ouranon, ‘into heaven itself’, uses the intensive autos. Nun emphanisthēnai tō prosōpō tou theou huper hēmōn, ‘now to appear before the face of God for us’: emphanizō means to be made visible, to present oneself. The high priest entered shrouded in a cloud of incense so that he would not die (Leviticus 16:13); Christ appears openly before God's face. Nun (‘now’) makes the appearance present and continuing.",
+      "words": ["G5499", "G1525", "G0039G", "G5547", "G0499", "G0228", "G3772", "G3568", "G1718", "G4383", "G2316"],
+      "theology": [
+        {
+          "id": "exaltation",
+          "note": "Christ's entry into heaven is his ascension read as priestly entry. He is present before the Father ‘for us’, so the ascension is not his absence from his people but his representation of them."
+        },
+        {
+          "id": "prayer",
+          "note": "Because Christ now appears before God on our behalf, believers pray as those represented at the throne. His presence there grounds the confidence of 4:16 and the intercession of 7:25."
+        }
+      ],
+      "refs": ["Hebrews 7:25", "Leviticus 16:13", "Romans 8:34", "1 John 2:1", "Acts 1:9-11"]
+    },
+    {
+      "v": "25-26",
+      "context": "Christ did not enter to offer himself repeatedly, as the high priest entered every year with blood not his own. If he had, he would have had to suffer many times since the world's foundation. Instead he has appeared once for all at the climax of the ages to put away sin by the sacrifice of himself.",
+      "grammar": "Oud' hina pollakis prospherē heauton, ‘nor in order to offer himself often’. En haimati allotriō, ‘with blood belonging to another’, contrasts with ‘his own blood’ in verse 12. Verse 26 is a reduction to absurdity: epei edei auton pollakis pathein, ‘since then he would have had to suffer often’, an imperfect of necessity in a contrary-to-fact sense. Nuni de hapax, ‘but now once’, turns to the fact. Epi sunteleia tōn aiōnōn, ‘at the consummation of the ages’, uses the phrase Matthew uses for the end of the age (Matthew 13:39, 28:20); Hebrews places the cross at the turning point of history. Eis athetēsin tēs hamartias, ‘for the setting aside of sin’, uses the legal word of 7:18 (annulment): sin is annulled like a cancelled decree. Pephanerōtai (‘he has been manifested’) is a perfect passive.",
+      "words": ["G4178", "G4374", "G1438", "G0749", "G1525", "G1763", "G0129G", "G0245", "G3958", "G2602", "G2889", "G0530", "G4930", "G0165G", "G0115", "G0266", "G2378", "G5319"],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The sufficiency of Christ's sacrifice is measured by its singularity. A sacrifice that had to be repeated would be proved inadequate by its repetition; one offering at the climax of history is enough for sin from the foundation of the world."
+        }
+      ],
+      "refs": ["Hebrews 9:12", "Hebrews 10:10-14", "1 Peter 3:18", "1 Peter 1:20", "Galatians 4:4"]
+    },
+    {
+      "v": "27-28",
+      "context": "The chapter closes with an analogy. As human beings die once and then face judgment, so Christ was offered once to bear the sins of many, and he will appear a second time, not to deal with sin but to bring salvation to those who eagerly await him.",
+      "grammar": "Kath' hoson… houtōs kai, ‘just as… so also’, sets human destiny beside Christ's. Apokeitai tois anthrōpois, ‘it is laid up for men’, uses a verb for what is reserved or appointed (the crown ‘laid up’ in 2 Timothy 4:8). Hapax apothanein, meta de touto krisis, ‘to die once, and after this judgment’. Prosenechtheis (‘having been offered’) is an aorist passive: Christ is the offering as well as the offerer. Eis to pollōn anenenkein hamartias, ‘to bear the sins of many’, reproduces Isaiah 53:12. Ek deuterou… ophthēsetai, ‘he will appear a second time’, uses the future passive of horaō, the verb for appearances of God and of the risen Christ. Chōris hamartias, ‘apart from sin’, means not to deal with sin again. Tois auton apekdechomenois, ‘to those eagerly awaiting him’, is the word Paul uses for eager expectation of the Lord's return (Philippians 3:20).",
+      "words": ["G3745", "G0606", "G0444", "G0530", "G0599", "G2920", "G5547", "G4374", "G4183", "G0399", "G0266", "G1208", "G3700H", "G0553", "G4991"],
+      "ot": [
+        {
+          "ref": "Isaiah 53:12",
+          "note": "The Hebrew vehu chet rabbim nasa, ‘he bore the sin of many’, is rendered in the Septuagint kai autos hamartias pollōn anēnenken, and Hebrews uses the same verb and object, anenenkein hamartias pollōn. In Isaiah the Servant of the LORD bears the sins of the many and intercedes for the transgressors; Hebrews joins that portrait to the high priest who bears the people's sins before God. 1 Peter 2:24 uses the same Isaiah wording."
+        }
+      ],
+      "history": "On the Day of Atonement the people waited outside while the high priest was in the inner room, and his return was greeted with relief and joy. Ben Sira describes Simon the high priest, about 200 BC, as glorious when he came out from behind the curtain (Sirach 50:5-7), and the Mishnah says the high priest made a feast for his friends when he came out of the sanctuary safely (m. Yoma 7:4). Luke 1:21 shows the people waiting and wondering when the priest Zechariah was slow to come out. Hebrews pictures Christ's return as that emergence: the high priest coming out to bless the waiting people.",
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "Death comes once, and judgment follows. The verse rules out any second chance through repeated lives and presents the human story as linear, moving toward accountability before God."
+        },
+        {
+          "id": "return",
+          "note": "Christ ‘will appear a second time’. His first coming dealt with sin; his second will bring salvation to completion for those who wait for him, so the church lives between the two appearances."
+        },
+        {
+          "id": "hope",
+          "note": "Believers are defined as ‘those who eagerly await Him’. Christian hope is not an abstraction but the expectation of a person who has gone into the sanctuary and will come out again."
+        }
+      ],
+      "refs": ["Isaiah 53:12", "1 Peter 2:24", "Philippians 3:20", "Titus 2:13", "Luke 1:21"]
+    }
+  ]
+}
