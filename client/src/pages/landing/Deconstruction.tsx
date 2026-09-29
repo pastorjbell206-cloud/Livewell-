@@ -5,7 +5,7 @@ import { SEOMeta } from "@/components/SEOMeta";
 import { LandingSignup } from "@/components/LandingSignup";
 
 const ARTICLES = [
-  { title: "Deconstruction Is Not Destruction", slug: "deconstruction-is-not-destruction" },
+  { title: "What Is Faith Deconstruction, and What Does Exvangelical Mean?", slug: "deconstruction-is-not-destruction" },
   { title: "Why Are People Leaving the Church? The Rise of the Nones", slug: "why-people-are-leaving-the-church" },
   { title: "Can You Have Faith and Doubt at the Same Time?", slug: "can-you-have-faith-and-doubt" },
 ];

@@ -88,11 +88,11 @@ export const READING_PATHS: ReadingPath[] = [
         readTime: "14 min read",
       },
       {
-        title: "The Black Church: The Most Important Institution in American Christianity",
+        title: "The History of the Black Church in America and Why It Matters",
         slug: "the-black-church-in-america",
         description:
           "Born in the crucible of enslavement, sustained through Jim Crow, and central to the most significant moral movement in American history.",
-        readTime: "15 min read",
+        readTime: "20 min read",
       },
       {
         title: "Pentecostalism and the Global South",
@@ -149,11 +149,11 @@ export const READING_PATHS: ReadingPath[] = [
         readTime: "12 min read",
       },
       {
-        title: "Liturgical vs. Contemporary Worship: What We Gained and What We Lost",
+        title: "Liturgical vs. Contemporary Worship: What We Gained and Lost",
         slug: "liturgical-vs-contemporary-worship",
         description:
           "The worship wars were never really about music. They were about what worship is for — and the answer shapes what kind of Christians we become.",
-        readTime: "11 min read",
+        readTime: "20 min read",
       },
       {
         title: "What Is Historic Christianity? The Faith Older Than America",
@@ -182,18 +182,18 @@ export const READING_PATHS: ReadingPath[] = [
     audience: "Someone deconstructing or questioning inherited beliefs",
     articles: [
       {
-        title: "Why People Are Leaving the Church",
+        title: "Why Are People Leaving the Church? The Rise of the Nones",
         slug: "why-people-are-leaving-the-church",
         description:
           "The exodus from American churches is not a mystery. The data is clear, the reasons are documented, and the church's refusal to listen is accelerating the departure.",
-        readTime: "13 min read",
+        readTime: "19 min read",
       },
       {
-        title: "Deconstruction Is Not Destruction",
+        title: "What Is Faith Deconstruction, and What Does Exvangelical Mean?",
         slug: "deconstruction-is-not-destruction",
         description:
           "The impulse to question inherited beliefs is as old as Scripture itself — and it may be the only path to a faith worth keeping.",
-        readTime: "12 min read",
+        readTime: "19 min read",
       },
       {
         title: "Can You Have Faith and Doubt at the Same Time?",
@@ -257,18 +257,18 @@ export const READING_PATHS: ReadingPath[] = [
         readTime: "21 min read",
       },
       {
-        title: "Miracles: Do They Still Happen?",
+        title: "Do Miracles Still Happen Today? What Christians Actually Believe",
         slug: "do-miracles-still-happen",
         description:
           "The question of miracles sits at the intersection of philosophy, science, personal experience, and the nature of the God Christians claim to worship.",
-        readTime: "11 min read",
+        readTime: "20 min read",
       },
       {
-        title: "Why Christianity and Not Something Else?",
+        title: "Why Christianity and Not Another Religion? An Honest Answer",
         slug: "why-christianity",
         description:
           "In a world of competing truth claims, the case for Christianity rests not on its exclusivity but on the particular story it tells about who God is and what God has done.",
-        readTime: "12 min read",
+        readTime: "19 min read",
       },
     ],
   },
@@ -290,11 +290,11 @@ export const READING_PATHS: ReadingPath[] = [
         readTime: "21 min read",
       },
       {
-        title: "How to Talk About Faith Without Being Weird",
+        title: "How to Talk About Your Faith Without Being Weird or Pushy",
         slug: "how-to-talk-about-faith",
         description:
           "Most Christians have been trained to share their faith in ways that guarantee nobody wants to hear it. The problem is not the gospel. The problem is us.",
-        readTime: "10 min read",
+        readTime: "20 min read",
       },
       {
         title: "What Is Vocation? A Christian View of Work and Calling",
@@ -304,25 +304,25 @@ export const READING_PATHS: ReadingPath[] = [
         readTime: "20 min read",
       },
       {
-        title: "Raising Kids in a Post-Christian Culture",
+        title: "Raising Christian Kids in a Secular Culture: Exile, Not Siege",
         slug: "raising-kids-post-christian",
         description:
           "Your children will not inherit your faith by osmosis. They will inherit it only if it is real enough to survive contact with a world that no longer assumes it is true.",
-        readTime: "12 min read",
+        readTime: "19 min read",
       },
       {
-        title: "Digital Discipleship: Spiritual Formation in the Age of Algorithms",
+        title: "Is Your Phone Shaping Your Soul? Faith in the Age of Algorithms",
         slug: "digital-discipleship",
         description:
           "The algorithm is not neutral. It is forming you into a particular kind of person. The question is whether your faith is strong enough to resist it.",
-        readTime: "11 min read",
+        readTime: "21 min read",
       },
       {
-        title: "Interfaith Marriage: When You Love Someone Who Doesn't Believe",
+        title: "Married to an Unbeliever, or Thinking of It? What the Bible Says",
         slug: "interfaith-marriage",
         description:
           "The most intimate theological divide is the one that runs through your own bed. No amount of pretending it is not there will make it go away.",
-        readTime: "12 min read",
+        readTime: "20 min read",
       },
       {
         title: "How to Find a Good Church: What to Look For and What to Avoid",
@@ -344,18 +344,18 @@ export const READING_PATHS: ReadingPath[] = [
     audience: "Those wrestling with institutional failure in the church",
     articles: [
       {
-        title: "Purity Culture and Its Wreckage",
+        title: "What Is Purity Culture? History, Harm, and What the Bible Says",
         slug: "purity-culture-and-its-wreckage",
         description:
           "A generation was taught that their sexual worth was a commodity to be preserved. The theology was thin, the damage was deep, and the reckoning is long overdue.",
-        readTime: "13 min read",
+        readTime: "19 min read",
       },
       {
-        title: "The Prosperity Gospel Is Not the Gospel",
+        title: "What Is the Prosperity Gospel, and Is It Biblical?",
         slug: "prosperity-gospel-is-not-the-gospel",
         description:
           "The theology that promises health and wealth in exchange for faith and financial gifts is among the most destructive heresies in modern Christianity.",
-        readTime: "12 min read",
+        readTime: "19 min read",
       },
       {
         title: "History of the Religious Right: How Evangelicals Became Political",
@@ -365,11 +365,11 @@ export const READING_PATHS: ReadingPath[] = [
         readTime: "19 min read",
       },
       {
-        title: "The Sexual Abuse Crisis: A Reckoning the Church Cannot Avoid",
+        title: "Sexual Abuse in the Church and How Churches Should Respond",
         slug: "sexual-abuse-crisis-in-the-church",
         description:
           "The abuse crisis is not a Catholic problem or a Protestant problem. It is a power problem — and until the church names the structural conditions, it will keep producing them.",
-        readTime: "14 min read",
+        readTime: "21 min read",
       },
       {
         title: "White Evangelicalism and Race",
@@ -379,11 +379,11 @@ export const READING_PATHS: ReadingPath[] = [
         readTime: "14 min read",
       },
       {
-        title: "The Megachurch Model: What Worked, What Didn't, What's Next",
+        title: "Are Megachurches Good for Christianity? What Worked, What Didn't",
         slug: "megachurch-model",
         description:
           "The megachurch reached millions and revealed something important about American Christianity's hunger for accessibility — and what happens when the church mistakes growth for faithfulness.",
-        readTime: "12 min read",
+        readTime: "19 min read",
       },
       {
         title: "Domestic Abuse and the Church: What Christians Must Do",
@@ -393,18 +393,18 @@ export const READING_PATHS: ReadingPath[] = [
         readTime: "20 min read",
       },
       {
-        title: "Colonialism and Missions",
+        title: "Were Christian Missions Just Colonialism? An Honest History",
         slug: "colonialism-and-missions",
         description:
           "The cross arrived in the colonies alongside the sword. The church has spent centuries celebrating the gospel's spread while refusing to examine the wreckage it left behind.",
-        readTime: "13 min read",
+        readTime: "20 min read",
       },
       {
-        title: "Why the Church Lost the Culture War",
+        title: "Why Did Christians Lose the Culture War? What the Defeat Revealed",
         slug: "why-the-church-lost-the-culture-war",
         description:
           "The church spent forty years trying to win a culture war it was never meant to fight. The cost was the loss of the one thing it cannot function without: moral credibility.",
-        readTime: "12 min read",
+        readTime: "19 min read",
       },
     ],
   },
@@ -419,11 +419,11 @@ export const READING_PATHS: ReadingPath[] = [
     audience: "Survivors of church harm seeking understanding and a way forward",
     articles: [
       {
-        title: "Religious Trauma Is Real",
+        title: "What Is Religious Trauma? Signs of Spiritual Abuse in the Church",
         slug: "religious-trauma-is-real",
         description:
           "The psychological damage inflicted by authoritarian religion is not a failure of individual faith. It is a predictable consequence of theological systems designed to control through fear.",
-        readTime: "12 min read",
+        readTime: "20 min read",
       },
       {
         title: "Is Depression a Lack of Faith? Why 'Just Pray About It' Fails",
@@ -433,11 +433,11 @@ export const READING_PATHS: ReadingPath[] = [
         readTime: "20 min read",
       },
       {
-        title: "Women in Ministry: The Biblical Case the Church Keeps Ignoring",
+        title: "Can Women Be Pastors? What the Bible Says About Women in Ministry",
         slug: "women-in-ministry",
         description:
           "The Bible contains a robust record of women exercising leadership and authority. The church's refusal to see it says more about the church than about the Bible.",
-        readTime: "13 min read",
+        readTime: "20 min read",
       },
       {
         title: "Why Are People Leaving the Church? The Rise of the Nones",
@@ -473,11 +473,11 @@ export const READING_PATHS: ReadingPath[] = [
     audience: "Those exploring wisdom across spiritual traditions",
     articles: [
       {
-        title: "What Christians Can Learn From Judaism",
+        title: "The Jewish Roots of Christianity: What Christians Owe Judaism",
         slug: "what-christians-can-learn-from-judaism",
         description:
           "Christianity emerged from Judaism and then spent two millennia pretending it had outgrown its parent. The cost has been theological impoverishment and moral blindness.",
-        readTime: "12 min read",
+        readTime: "21 min read",
       },
       {
         title: "Christianity vs Islam: What Is the Real Difference?",
@@ -487,25 +487,25 @@ export const READING_PATHS: ReadingPath[] = [
         readTime: "20 min read",
       },
       {
-        title: "What Christians Can Learn From Buddhism",
+        title: "What Christians Can Learn From Buddhism, and Where They Differ",
         slug: "what-christians-can-learn-from-buddhism",
         description:
           "The contemplative traditions of Christianity and Buddhism have been carrying on a quiet conversation for centuries. The church has much to gain from listening.",
-        readTime: "11 min read",
+        readTime: "19 min read",
       },
       {
-        title: "What Christians Can Learn From Indigenous Spirituality",
+        title: "What Can Christians Learn From Native American Faith Traditions?",
         slug: "what-christians-can-learn-from-indigenous-spirituality",
         description:
           "The church that destroyed indigenous traditions in the name of Christ had much to learn from the very people it sought to convert. The wisdom it burned is the wisdom it now needs.",
-        readTime: "11 min read",
+        readTime: "20 min read",
       },
       {
-        title: "The Mystics: Christianity's Best-Kept Secret",
+        title: "Who Were the Christian Mystics, and What Can They Teach Us?",
         slug: "the-christian-mystics",
         description:
           "The Christian mystical tradition is the faith's deepest current — where theology becomes experience, doctrine becomes encounter, and God is known not by argument but by love.",
-        readTime: "12 min read",
+        readTime: "20 min read",
       },
       {
         title: "Can You Have Faith and Doubt at the Same Time?",

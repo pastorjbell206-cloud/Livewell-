@@ -4,10 +4,10 @@ import { SEOMeta } from "@/components/SEOMeta";
 import { LandingSignup } from "@/components/LandingSignup";
 
 const ARTICLES = [
-  { title: "The Weight of What You Model", slug: "the-weight-of-what-you-model" },
-  { title: "Raising Kids Who Think Instead of Perform", slug: "raising-kids-who-think" },
+  { title: "How Parents Pass On Faith: Kids Learn From Your Example", slug: "the-weight-of-what-you-model" },
+  { title: "How to Answer Your Kids' Hard Questions About God and Doubt", slug: "raising-kids-who-think" },
   { title: "What Does the Bible Say About Fathers and the Father Wound?", slug: "what-fatherhood-requires" },
-  { title: "Discipline Without Domination", slug: "discipline-without-domination" },
+  { title: "How to Discipline a Child Biblically, Without Anger", slug: "discipline-without-domination" },
 ];
 
 const CLAIMS = [

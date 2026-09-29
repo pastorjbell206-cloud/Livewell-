@@ -85,7 +85,7 @@ export const READING_PATHS: ReadingPath[] = [
         available: true,
       },
       {
-        title: "The Flag in the Sanctuary: How It Got There",
+        title: "Should Churches Have an American Flag in the Sanctuary?",
         slug: "the-flag-in-the-sanctuary",
         blurb:
           "The historical arc from Constantine's bargain through 1950s civil religion to now.",
@@ -237,14 +237,14 @@ export const READING_PATHS: ReadingPath[] = [
       "How translation, tradition, and tribe edit the text we claim to believe. This is the method under the whole project — learning to see the lenses before you read, and what the Bible actually says about power, empire, justice, and allegiance.",
     entries: [
       {
-        title: "Justice Is Not a Political Category: It Is a Theological One",
+        title: "Is Biblical Justice Political? What Scripture Means by Justice",
         slug: "justice-not-political-theological",
         blurb:
           "How a word that appears hundreds of times in Scripture became a partisan signal.",
         available: true,
       },
       {
-        title: "What Micah 6:8 Actually Demands",
+        title: "What Does Micah 6:8 Mean? Justice, Kindness and a Humble Walk",
         slug: "micah-6-8-demands",
         available: true,
       },
@@ -264,7 +264,7 @@ export const READING_PATHS: ReadingPath[] = [
         available: true,
       },
       {
-        title: "The Widow, the Orphan, the Stranger",
+        title: "What Does the Bible Say About Widows, Orphans and Strangers?",
         slug: "widow-orphan-stranger",
         available: true,
       },
@@ -298,7 +298,7 @@ export const READING_PATHS: ReadingPath[] = [
       "The civilizational shift under everything else — why your faith feels different now. The collapse of cultural Christianity and what faithfulness looks like on the other side of cultural power, held without nostalgia.",
     entries: [
       {
-        title: "The Church Has a Credibility Problem",
+        title: "Why Don't People Trust the Church Anymore? The Credibility Crisis",
         slug: "church-credibility-problem",
         blurb: "Why the watching world stopped believing us.",
         available: true,
@@ -332,13 +332,13 @@ export const READING_PATHS: ReadingPath[] = [
         available: true,
       },
       {
-        title: "Christendom: A 1,700-Year Story That Is Ending",
+        title: "What Is Christendom, and What Comes After It?",
         slug: "christendom-is-ending",
         blurb: "From Theodosius to the present, the arc named.",
         available: true,
       },
       {
-        title: "Exile Is Not the End",
+        title: "Are Christians Exiles? Jeremiah 29 and the Welfare of the City",
         slug: "exile-is-not-the-end",
         blurb: "Jeremiah 29 and the work of a displaced church.",
         available: true,

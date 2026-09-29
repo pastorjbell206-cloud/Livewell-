@@ -28,25 +28,25 @@ const READING_PATHS: ReadingPath[] = [
     estimatedTime: "45 minutes of reading, for the marriage you have not given up on",
     articles: [
       {
-        title: "Why Do Married Couples Slowly Drift Apart?",
+        title: "Why Married Couples Drift Apart and End Up Feeling Like Roommates",
         slug: "the-slow-drift-that-ends-marriages",
         description:
           "No one signs the divorce papers because of a single Tuesday.",
-        readTime: "10 min read",
+        readTime: "20 min read",
       },
       {
-        title: "What Silence Actually Costs a Marriage",
+        title: "The Silent Treatment in Marriage and How to Start Talking Again",
         slug: "what-silence-costs-a-marriage",
         description:
           "The marriage rarely dies in the fight.",
-        readTime: "11 min read",
+        readTime: "20 min read",
       },
       {
-        title: "What the Resentment in Your Marriage Is Telling You",
+        title: "Resentment in Marriage and How to Stop Resenting Your Spouse",
         slug: "the-resentment-in-your-marriage",
         description:
           "Resentment is not the rot in your marriage.",
-        readTime: "10 min read",
+        readTime: "20 min read",
       },
       {
         title: "How to Forgive Your Spouse, and Why Forgiveness Isn't Trust",
@@ -65,11 +65,11 @@ const READING_PATHS: ReadingPath[] = [
     estimatedTime: "50 minutes that take the questions seriously",
     articles: [
       {
-        title: "What If Christianity Is Wrong?",
+        title: "What If Christianity Is Wrong? Living Honestly With the Question",
         slug: "what-if-we-are-wrong",
         description:
           "The question arrives uninvited, usually at night: what if the whole thing is a story we told ourselves?",
-        readTime: "10 min read",
+        readTime: "19 min read",
       },
       {
         title: "Why Does God Feel Silent? Faith When God Seems Absent",
@@ -79,11 +79,11 @@ const READING_PATHS: ReadingPath[] = [
         readTime: "20 min read",
       },
       {
-        title: "How Does the Church Tell the Truth in a Post-Truth Age?",
+        title: "What Is Truth? A Christian Answer in a Post-Truth Age",
         slug: "truth-in-post-truth-world",
         description:
           "Two members of the same church now carry two contradictory sets of facts about the same week.",
-        readTime: "11 min read",
+        readTime: "20 min read",
       },
       {
         title: "What Comes After Deconstruction of Your Faith?",
@@ -139,11 +139,11 @@ const READING_PATHS: ReadingPath[] = [
     estimatedTime: "35 minutes for the parent who prays more than they plan",
     articles: [
       {
-        title: "How Do You Raise Kids Who Think About Their Faith?",
+        title: "How to Answer Your Kids' Hard Questions About God and Doubt",
         slug: "raising-kids-who-think",
         description:
           "We trained a generation to give the right answer and called it faith.",
-        readTime: "10 min read",
+        readTime: "19 min read",
       },
       {
         title: "When Your Teenager Says They Don't Believe Anymore",
@@ -176,11 +176,11 @@ const READING_PATHS: ReadingPath[] = [
         readTime: "11 min read",
       },
       {
-        title: "Is Justice a Political Issue or a Theological One?",
+        title: "Is Biblical Justice Political? What Scripture Means by Justice",
         slug: "justice-not-political-theological",
         description:
           "Say the word \"justice\" in a mixed room and both tribes reach for it before anyone thinks about God.",
-        readTime: "10 min read",
+        readTime: "21 min read",
       },
       {
         title: "What Does the Bible Say About Poverty, and Is It Political?",

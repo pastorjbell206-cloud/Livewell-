@@ -27,10 +27,10 @@ const TIER_2 = {
     { title: "A Guide to Every Major Denomination", slug: "guide-to-every-major-denomination" },
     { title: "Why Are There So Many Christian Denominations?", slug: "why-there-are-so-many-christian-denominations" },
     { title: "What Calvinism and Arminianism Actually Argue About", slug: "calvinism-and-arminianism" },
-    { title: "Liturgical vs. Contemporary Worship: What We Gained and What We Lost", slug: "liturgical-vs-contemporary-worship" },
+    { title: "Liturgical vs. Contemporary Worship: What We Gained and Lost", slug: "liturgical-vs-contemporary-worship" },
     { title: "What Is Historic Christianity? The Faith Older Than America", slug: "the-faith-once-delivered" },
     { title: "The Charismatic Movement Inside Every Denomination", slug: "charismatic-movement-inside-every-denomination" },
-    { title: "The Black Church: The Most Important Institution in American Christianity", slug: "the-black-church-in-america" },
+    { title: "The History of the Black Church in America and Why It Matters", slug: "the-black-church-in-america" },
     { title: "Pentecostalism and the Global South", slug: "pentecostalism-and-the-global-south" },
   ],
 };
@@ -40,13 +40,13 @@ const TIER_3 = {
   desc: "How Christianity became a brand, a weapon, and a voting bloc.",
   articles: [
     { title: "History of the Religious Right: How Evangelicals Became Political", slug: "how-the-religious-right-was-built" },
-    { title: "The Prosperity Gospel Is Not the Gospel", slug: "prosperity-gospel-is-not-the-gospel" },
-    { title: "Purity Culture and Its Wreckage", slug: "purity-culture-and-its-wreckage" },
+    { title: "What Is the Prosperity Gospel, and Is It Biblical?", slug: "prosperity-gospel-is-not-the-gospel" },
+    { title: "What Is Purity Culture? History, Harm, and What the Bible Says", slug: "purity-culture-and-its-wreckage" },
     { title: "White Evangelicalism and Race", slug: "white-evangelicalism-and-race" },
-    { title: "The Megachurch Model: What Worked, What Didn't, What's Next", slug: "megachurch-model" },
+    { title: "Are Megachurches Good for Christianity? What Worked, What Didn't", slug: "megachurch-model" },
     { title: "Domestic Abuse and the Church: What Christians Must Do", slug: "church-domestic-violence" },
-    { title: "Why the Church Lost the Culture War", slug: "why-the-church-lost-the-culture-war" },
-    { title: "Colonialism and Missions", slug: "colonialism-and-missions" },
+    { title: "Why Did Christians Lose the Culture War? What the Defeat Revealed", slug: "why-the-church-lost-the-culture-war" },
+    { title: "Were Christian Missions Just Colonialism? An Honest History", slug: "colonialism-and-missions" },
   ],
 };
 
@@ -61,8 +61,8 @@ const TIER_4 = {
     { title: "Does Science Disprove God? The History of Faith and Science", slug: "faith-and-science" },
     { title: "How Should Christians Read Genesis 1? Creation and Evolution", slug: "how-to-read-genesis-one" },
     { title: "What Happened to the Historical Jesus", slug: "the-historical-jesus" },
-    { title: "Miracles: Do They Still Happen?", slug: "do-miracles-still-happen" },
-    { title: "Why Christianity and Not Something Else?", slug: "why-christianity" },
+    { title: "Do Miracles Still Happen Today? What Christians Actually Believe", slug: "do-miracles-still-happen" },
+    { title: "Why Christianity and Not Another Religion? An Honest Answer", slug: "why-christianity" },
   ],
 };
 
@@ -70,11 +70,11 @@ const TIER_5 = {
   label: "Tier 5: The Deconstruction",
   desc: "For anyone taking their faith apart to see what holds — and anyone the church has hurt.",
   articles: [
-    { title: "Why People Are Leaving the Church", slug: "why-people-are-leaving-the-church" },
-    { title: "Deconstruction Is Not Destruction", slug: "deconstruction-is-not-destruction" },
+    { title: "Why Are People Leaving the Church? The Rise of the Nones", slug: "why-people-are-leaving-the-church" },
+    { title: "What Is Faith Deconstruction, and What Does Exvangelical Mean?", slug: "deconstruction-is-not-destruction" },
     { title: "Can You Have Faith and Doubt at the Same Time?", slug: "can-you-have-faith-and-doubt" },
-    { title: "Religious Trauma Is Real", slug: "religious-trauma-is-real" },
-    { title: "The Sexual Abuse Crisis: A Reckoning the Church Cannot Avoid", slug: "sexual-abuse-crisis-in-the-church" },
+    { title: "What Is Religious Trauma? Signs of Spiritual Abuse in the Church", slug: "religious-trauma-is-real" },
+    { title: "Sexual Abuse in the Church and How Churches Should Respond", slug: "sexual-abuse-crisis-in-the-church" },
     { title: "Is Depression a Lack of Faith? Why 'Just Pray About It' Fails", slug: "mental-health-and-the-church-beyond-pray-about-it" },
   ],
 };
@@ -83,14 +83,14 @@ const TIER_6 = {
   label: "Tier 6: Living After Christendom",
   desc: "Faith worked out in the ordinary rooms once the culture stopped assuming it.",
   articles: [
-    { title: "How to Talk About Faith Without Being Weird", slug: "how-to-talk-about-faith" },
-    { title: "Raising Kids in a Post-Christian Culture", slug: "raising-kids-post-christian" },
+    { title: "How to Talk About Your Faith Without Being Weird or Pushy", slug: "how-to-talk-about-faith" },
+    { title: "Raising Christian Kids in a Secular Culture: Exile, Not Siege", slug: "raising-kids-post-christian" },
     { title: "What Is Vocation? A Christian View of Work and Calling", slug: "what-is-vocation-work-as-calling" },
-    { title: "Interfaith Marriage: When You Love Someone Who Doesn't Believe", slug: "interfaith-marriage" },
-    { title: "Digital Discipleship: Spiritual Formation in the Age of Algorithms", slug: "digital-discipleship" },
+    { title: "Married to an Unbeliever, or Thinking of It? What the Bible Says", slug: "interfaith-marriage" },
+    { title: "Is Your Phone Shaping Your Soul? Faith in the Age of Algorithms", slug: "digital-discipleship" },
     { title: "How to Find a Good Church: What to Look For and What to Avoid", slug: "how-to-find-a-church-worth-joining" },
-    { title: "When Your Family Thinks You've Lost Your Mind", slug: "family-and-faith-transitions" },
-    { title: "Women in Ministry: The Biblical Case the Church Keeps Ignoring", slug: "women-in-ministry" },
+    { title: "When Your Family Thinks You've Lost Your Mind Over Your Faith", slug: "family-and-faith-transitions" },
+    { title: "Can Women Be Pastors? What the Bible Says About Women in Ministry", slug: "women-in-ministry" },
   ],
 };
 
@@ -100,11 +100,11 @@ const TIER_7 = {
   articles: [
     { title: "What Is Christendom, and What Comes After It?", slug: "christendom-is-ending" },
     { title: "What Is Faith Deconstruction, and What Does Exvangelical Mean?", slug: "deconstruction-is-not-destruction" },
-    { title: "What Christians Can Learn From Judaism", slug: "what-christians-can-learn-from-judaism" },
+    { title: "The Jewish Roots of Christianity: What Christians Owe Judaism", slug: "what-christians-can-learn-from-judaism" },
     { title: "Christianity vs Islam: What Is the Real Difference?", slug: "christianity-and-islam" },
-    { title: "What Christians Can Learn From Buddhism", slug: "what-christians-can-learn-from-buddhism" },
-    { title: "What Christians Can Learn From Indigenous Spirituality", slug: "what-christians-can-learn-from-indigenous-spirituality" },
-    { title: "The Mystics: Christianity's Best-Kept Secret", slug: "the-christian-mystics" },
+    { title: "What Christians Can Learn From Buddhism, and Where They Differ", slug: "what-christians-can-learn-from-buddhism" },
+    { title: "What Can Christians Learn From Native American Faith Traditions?", slug: "what-christians-can-learn-from-indigenous-spirituality" },
+    { title: "Who Were the Christian Mystics, and What Can They Teach Us?", slug: "the-christian-mystics" },
   ],
 };
 

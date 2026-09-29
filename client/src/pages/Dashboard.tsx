@@ -22,9 +22,9 @@ const READING_PATHS: ReadingPath[] = [
     slug: "marriage-drifting",
     title: "When Your Marriage Is Drifting",
     articles: [
-      { title: "Why Do Married Couples Slowly Drift Apart?", slug: "the-slow-drift-that-ends-marriages" },
-      { title: "What Silence Actually Costs a Marriage", slug: "what-silence-costs-a-marriage" },
-      { title: "What the Resentment in Your Marriage Is Telling You", slug: "the-resentment-in-your-marriage" },
+      { title: "Why Married Couples Drift Apart and End Up Feeling Like Roommates", slug: "the-slow-drift-that-ends-marriages" },
+      { title: "The Silent Treatment in Marriage and How to Start Talking Again", slug: "what-silence-costs-a-marriage" },
+      { title: "Resentment in Marriage and How to Stop Resenting Your Spouse", slug: "the-resentment-in-your-marriage" },
       { title: "How to Forgive Your Spouse, and Why Forgiveness Isn't Trust", slug: "forgiveness-in-marriage" },
     ],
   },
@@ -32,9 +32,9 @@ const READING_PATHS: ReadingPath[] = [
     slug: "faith-crisis",
     title: "Faith in Crisis — A Path Through Doubt",
     articles: [
-      { title: "What If Christianity Is Wrong?", slug: "what-if-we-are-wrong" },
+      { title: "What If Christianity Is Wrong? Living Honestly With the Question", slug: "what-if-we-are-wrong" },
       { title: "Why Does God Feel Silent? Faith When God Seems Absent", slug: "when-god-is-silent-and-the-room-is-empty" },
-      { title: "How Does the Church Tell the Truth in a Post-Truth Age?", slug: "truth-in-post-truth-world" },
+      { title: "What Is Truth? A Christian Answer in a Post-Truth Age", slug: "truth-in-post-truth-world" },
       { title: "What Comes After Deconstruction of Your Faith?", slug: "excavation-not-demolition" },
     ],
   },
@@ -52,7 +52,7 @@ const READING_PATHS: ReadingPath[] = [
     slug: "raising-children",
     title: "Raising Children Who Think Theologically",
     articles: [
-      { title: "How Do You Raise Kids Who Think About Their Faith?", slug: "raising-kids-who-think" },
+      { title: "How to Answer Your Kids' Hard Questions About God and Doubt", slug: "raising-kids-who-think" },
       { title: "When Your Teenager Says They Don't Believe Anymore", slug: "teenager-losing-faith" },
       { title: "What Does the Bible Say About Fathers and the Father Wound?", slug: "what-fatherhood-requires" },
     ],
@@ -62,7 +62,7 @@ const READING_PATHS: ReadingPath[] = [
     title: "Justice and the Kingdom — Where Faith Meets the World",
     articles: [
       { title: "Where the Church Was Silent", slug: "where-church-was-silent" },
-      { title: "Is Justice a Political Issue or a Theological One?", slug: "justice-not-political-theological" },
+      { title: "Is Biblical Justice Political? What Scripture Means by Justice", slug: "justice-not-political-theological" },
       { title: "What Does the Bible Say About Poverty, and Is It Political?", slug: "is-poverty-political-the-bibles-answer" },
       { title: "Charity vs. Justice: What's the Difference for Christians?", slug: "charity-is-not-justice-the-difference" },
       { title: "Is Sin Only Personal? What the Bible Says About Systemic Sin", slug: "individual-sin-and-systemic-sin-explained" },
@@ -81,8 +81,8 @@ const SUGGESTED_TOOLS = [
 
 const SUGGESTED_ARTICLES = [
   { slug: "excavation-not-demolition", title: "What Comes After Deconstruction of Your Faith?", href: "/writing/excavation-not-demolition" },
-  { slug: "what-if-we-are-wrong", title: "What If Christianity Is Wrong?", href: "/writing/what-if-we-are-wrong" },
-  { slug: "the-slow-drift-that-ends-marriages", title: "Why Do Married Couples Slowly Drift Apart?", href: "/writing/the-slow-drift-that-ends-marriages" },
+  { slug: "what-if-we-are-wrong", title: "What If Christianity Is Wrong? Living Honestly With the Question", href: "/writing/what-if-we-are-wrong" },
+  { slug: "the-slow-drift-that-ends-marriages", title: "Why Married Couples Drift Apart and End Up Feeling Like Roommates", href: "/writing/the-slow-drift-that-ends-marriages" },
   { slug: "what-fatherhood-requires", title: "What Does the Bible Say About Fathers and the Father Wound?", href: "/writing/what-fatherhood-requires" },
   { slug: "the-loneliest-room-in-the-church", title: "Why Are Pastors So Lonely in a Full Church?", href: "/writing/the-loneliest-room-in-the-church" },
 ];

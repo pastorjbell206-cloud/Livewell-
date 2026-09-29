@@ -5,9 +5,9 @@ import CrisisFaq, { faqPageSchema } from "@/components/CrisisFaq";
 import { LandingSignup } from "@/components/LandingSignup";
 
 const ARTICLES = [
-  { title: "When Fear Rewrites Theology", slug: "when-fear-rewrites-theology" },
+  { title: "Is My Faith Driven by Fear? How Anxiety Rewrites What You Believe", slug: "when-fear-rewrites-theology" },
   { title: "Why Does God Feel Silent? Faith When God Seems Absent", slug: "when-god-is-silent-and-the-room-is-empty" },
-  { title: "What If We're Wrong?", slug: "what-if-we-are-wrong" },
+  { title: "What If Christianity Is Wrong? Living Honestly With the Question", slug: "what-if-we-are-wrong" },
   { title: "Constantine's Bargain", slug: "constantines-bargain" },
 ];
 

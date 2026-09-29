@@ -11,10 +11,10 @@ export default function Doubt() {
 
   const FEATURED_ARTICLES = [
     {
-      title: "When Fear Rewrites Theology",
+      title: "Is My Faith Driven by Fear? How Anxiety Rewrites What You Believe",
       slug: "when-fear-rewrites-theology",
       topic: "Faith & Doubt",
-      readTime: "10 min read"
+      readTime: "19 min read"
     },
     {
       title: "When the Church Married Empire",
@@ -29,10 +29,10 @@ export default function Doubt() {
       readTime: "20 min read"
     },
     {
-      title: "What If We're Wrong?",
+      title: "What If Christianity Is Wrong? Living Honestly With the Question",
       slug: "what-if-we-are-wrong",
       topic: "Faith & Doubt",
-      readTime: "13 min read"
+      readTime: "19 min read"
     },
     {
       title: "Constantine's Bargain",

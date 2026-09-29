@@ -8,7 +8,7 @@ const ARTICLES = [
   { title: "I Don't Recognize My Spouse Anymore. Is the Marriage Over?", slug: "when-you-married-someone-you-no-longer-recognize" },
   { title: "What Is Covenant Marriage? Why Marriage Is Not a Contract", slug: "covenant-vs-contract-what-marriage-is" },
   { title: "Healthy Conflict in Marriage Is More Than Fighting Fair", slug: "healthy-conflict-marriage" },
-  { title: "What Silence Actually Costs a Marriage", slug: "what-silence-costs-a-marriage" },
+  { title: "The Silent Treatment in Marriage and How to Start Talking Again", slug: "what-silence-costs-a-marriage" },
   { title: "How to Forgive Your Spouse, and Why Forgiveness Isn't Trust", slug: "forgiveness-in-marriage" },
 ];
 

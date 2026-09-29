@@ -13,10 +13,10 @@ export default function Marriage() {
 
   const FEATURED_ARTICLES = [
     {
-      title: "Covenant vs. Contract: What Marriage Actually Is",
+      title: "What Is Covenant Marriage? Why Marriage Is Not a Contract",
       slug: "covenant-vs-contract-what-marriage-is",
       topic: "Marriage",
-      readTime: "18 min read"
+      readTime: "20 min read"
     },
     {
       title: "The Silent Treatment in Marriage and How to Start Talking Again",
@@ -31,22 +31,22 @@ export default function Marriage() {
       readTime: "19 min read"
     },
     {
-      title: "Forgiveness in Marriage: How to Actually Do It",
+      title: "How to Forgive Your Spouse, and Why Forgiveness Isn't Trust",
       slug: "forgiveness-in-marriage",
       topic: "Marriage",
-      readTime: "11 min read"
+      readTime: "19 min read"
     },
     {
-      title: "Money and Marriage",
+      title: "Why Married Couples Fight About Money, and What the Bible Says",
       slug: "marriage-money-and-marriage",
       topic: "Marriage",
-      readTime: "9 min read"
+      readTime: "19 min read"
     },
     {
-      title: "Protecting Your Marriage From the Demands of Work",
+      title: "When Work Is Hurting Your Marriage and You Can't Just Quit",
       slug: "protecting-your-marriage-from-work",
       topic: "Marriage",
-      readTime: "12 min read"
+      readTime: "19 min read"
     }
   ];
 

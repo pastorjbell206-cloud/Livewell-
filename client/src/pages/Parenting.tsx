@@ -18,10 +18,10 @@ export default function Parenting() {
       readTime: "19 min read"
     },
     {
-      title: "What Fatherhood Requires",
+      title: "What Does the Bible Say About Fathers and the Father Wound?",
       slug: "what-fatherhood-requires",
       topic: "Fatherhood",
-      readTime: "12 min read"
+      readTime: "19 min read"
     },
     {
       title: "How to Discipline a Child Biblically, Without Anger",
@@ -30,10 +30,10 @@ export default function Parenting() {
       readTime: "19 min read"
     },
     {
-      title: "Raising Kids in a Screen and Phone Age",
+      title: "When Should My Child Get a Smartphone? A Christian Answer",
       slug: "parenting-raising-kids-in-a-screen-age",
       topic: "Parenting",
-      readTime: "10 min read"
+      readTime: "19 min read"
     },
         {
       title: "How to Do Family Devotions and Teach Your Kids to Pray",
