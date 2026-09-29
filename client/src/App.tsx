@@ -176,6 +176,9 @@ const QuoteLibrary = lazy(() => import("./pages/tools/QuoteLibrary"));
 const Dashboard = lazy(() => import("./pages/Dashboard"));
 const WorkWithJames = lazy(() => import("./pages/WorkWithJames"));
 const Connect = lazy(() => import("./pages/Connect"));
+const StudyBible = lazy(() => import("./pages/StudyBible"));
+const StudyBibleStory = lazy(() => import("./pages/StudyBibleStory"));
+const StudyBibleDoctrines = lazy(() => import("./pages/StudyBibleDoctrines"));
 const FaithCrisis = lazy(() => import("./pages/landing/FaithCrisis"));
 const MarriageCrisis = lazy(() => import("./pages/landing/MarriageCrisis"));
 const GriefLanding = lazy(() => import("./pages/landing/Grief"));
@@ -562,6 +565,13 @@ function Router() {
         <Route path="/explore" component={Explore} />
         <Route path="/library" component={Library} />
         <Route path="/diagnostic" component={Diagnostic} />
+        <Route path="/study/bible/story/:act" component={StudyBibleStory} />
+        <Route path="/study/bible/story" component={StudyBibleStory} />
+        <Route path="/study/bible/doctrines/:id" component={StudyBibleDoctrines} />
+        <Route path="/study/bible/doctrines" component={StudyBibleDoctrines} />
+        <Route path="/study/bible/:book/:chapter" component={StudyBible} />
+        <Route path="/study/bible/:book" component={StudyBible} />
+        <Route path="/study/bible" component={StudyBible} />
         <Route path="/study" component={Study} />
         <Route path="/tools" component={ToolsHub} />
         <Route path="/tools/verse-finder" component={VerseFinder} />

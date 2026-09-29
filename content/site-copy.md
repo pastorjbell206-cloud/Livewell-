@@ -36,3 +36,13 @@
 | End of every essay | James also writes elsewhere: {channels} · Everywhere James is | awaiting |
 | Library page, closing block heading | Everywhere else James writes | awaiting |
 | Footer, About column | Connect: everywhere James is | awaiting |
+
+## The Study Bible (`/study/bible`)
+
+| Where | New wording | Status |
+|---|---|---|
+| Study page card | New · The Study Bible — "Every chapter, with the Hebrew and Greek beneath every word" — "Read the whole Bible and open any word to its dictionary meaning, its grammar in plain English, and everywhere else it appears. Open any verse to its cross-references and the guides that set it in its world." · Open the Study Bible | awaiting |
+| Study Bible index | Read it the way scholars do — "Every chapter of Scripture, with the Hebrew and Greek beneath every word. Tap a word for its dictionary meaning, its grammar in plain English, and everywhere else it appears. Tap a verse for its cross-references and the guides that open its world." | awaiting |
+| Reader | Reading / Hebrew / Greek · the tap hint · panel headings: Grammar, Dictionary, Where else it appears, Greek editions, Word by word, Cross-references, On LiveWell, Go deeper | awaiting |
+| Omitted verses (e.g. Acts 8:37) | "The earliest Greek manuscripts do not include this verse, and the Berean Standard Bible leaves it out. Later manuscripts, and translations such as the King James Version, include it." | awaiting |
+| Header, Study menu | The Study Bible: Hebrew and Greek | awaiting |
