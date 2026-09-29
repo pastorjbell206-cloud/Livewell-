@@ -1,0 +1,310 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "The narrator introduces the Decalogue as speech from God himself, spoken to the assembled people at the foot of Sinai after the preparations of chapter 19. Everything else in the Sinai laws comes through Moses; these words alone are presented as heard directly by all Israel (verse 19; Deuteronomy 5:4, 22).",
+      "grammar": "Vaydabber Elohim et kol-haddevarim ha'elleh, ‘and God spoke all these words’, uses dabar, ‘word’, not mitsvah, ‘commandment’. The Bible's own name for the set is aseret haddevarim, ‘the ten words’ (Exodus 34:28; Deuteronomy 4:13; 10:4), which the Greek-speaking church rendered as the Decalogue, from deka logoi. The verb is a Piel of dabar, the ordinary verb for speaking at length, and the phrase kol-haddevarim, ‘all the words’, marks the speech as complete in itself: Deuteronomy 5:22 adds that God spoke these words ‘and He added nothing more’.",
+      "words": ["H1696G", "H1697G", "H0430G"],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "The law begins as speech from God to a people who hear him. Israel's knowledge of God's will does not come from discovering the moral order by reflection but from being addressed, which is why Deuteronomy 4:12 stresses that they heard a voice and saw no form."
+        }
+      ],
+      "refs": ["Deuteronomy 5:4-5", "Deuteronomy 5:22", "Deuteronomy 4:12-13", "Exodus 34:28"]
+    },
+    {
+      "v": "2",
+      "context": "The first word is not a command but a self-introduction and a reminder of rescue. God names himself, says what he has done, and only then says what Israel must do. The order, grace before demand, governs the whole Decalogue.",
+      "grammar": "Anokhi, ‘I’, is the longer and more solemn of the two Hebrew forms of the first person pronoun (the other is ani). Anokhi YHWH Elohekha is grammatically ambiguous: it can be read ‘I am the LORD your God, who brought you out’ or ‘I, the LORD, am your God, who brought you out’. The second reading makes the claim relational: the LORD is the God who belongs to this people because he freed them. The suffix on Elohekha, ‘your God’, and on hotsetikha, ‘I brought you out’, is second person masculine singular. The whole people is addressed as one ‘you’, and each Israelite is addressed individually. Mibbeit avadim, ‘from a house of slaves’, names Egypt as a slave-house, the phrase Deuteronomy repeats (Deuteronomy 5:6; 6:12).",
+      "words": ["H0595", "H3068G", "H0430G", "H3318H", "H1004B", "H5650"],
+      "history": "Jewish tradition counts this verse as the first of the ten words, and Maimonides listed belief in God as the first positive commandment of the Torah on its basis (Sefer HaMitzvot, positive commandment 1). Christian traditions treat the verse as a preface. The shape of the verse, a ruler's name, then his past benefits, then his stipulations, is the feature George Mendenhall compared with Hittite vassal treaties. Philo of Alexandria, in On the Decalogue, asked why the commandments were addressed to thousands in the singular and answered that each hearer was to take them as addressed to himself.",
+      "theology": [
+        {
+          "id": "law",
+          "note": "The commands rest on a completed act of deliverance. Obedience is the response of the freed, not the price of freedom, and the Reformers took this verse as a key to the right use of the law among the redeemed."
+        },
+        {
+          "id": "names-of-god",
+          "note": "God identifies himself by his personal name, YHWH, revealed to Moses at the bush (3:14-15), and by an event: the one who brought Israel out. The name and the history interpret each other."
+        }
+      ],
+      "refs": ["Deuteronomy 5:6", "Exodus 3:14-15", "Leviticus 26:13", "Hosea 13:4", "Psalm 81:10"]
+    },
+    {
+      "v": "3",
+      "context": "The first command forbids Israel to have any other god. It does not argue that no other gods exist; it forbids Israel to treat any other power as a god. The claim is exclusive loyalty within a relationship already established in verse 2.",
+      "grammar": "Lo yihyeh lekha, literally ‘there shall not be to you’, is the Hebrew idiom for possession: ‘you shall not have’. The negative lo with the imperfect is the form of permanent prohibition, stronger than al with the jussive, which forbids a particular act; so ‘you shall never’ is closer than ‘do not’. The phrase al-panay, ‘before My face’, is disputed. It can mean ‘in addition to Me’, ‘in preference to Me’, ‘in My presence’ (with the picture of rival images set up in God's sanctuary), or even ‘against Me’ (the same preposition carries hostile sense in Genesis 16:12). All the readings exclude rivals; they differ over whether the image is of rank, addition, or presence.",
+      "words": ["H0430J", "H0312", "H6440G", "H9031", "H1961"],
+      "theology": [
+        {
+          "id": "idolatry",
+          "note": "The first command defines idolatry not as a wrong belief about how many gods there are but as misplaced allegiance. Anything given the trust and devotion owed to the LORD becomes an ‘other god’, which is how the prophets and the New Testament widen the idea to greed (Colossians 3:5)."
+        },
+        {
+          "id": "god",
+          "note": "The command presupposes that the God who spoke in verse 2 is unique in claim and in fact. Deuteronomy 6:4 and Isaiah 45:5 later state openly what this command implies: there is no other."
+        }
+      ],
+      "refs": ["Deuteronomy 6:4-5", "Isaiah 45:5-6", "Matthew 4:10", "1 Corinthians 8:5-6", "Colossians 3:5"]
+    },
+    {
+      "v": "4",
+      "context": "The second command forbids making an image, whether of anything in the heavens, on the earth, or in the waters under the earth. The three zones repeat the whole created order of Genesis 1: nothing God made may be used to represent him or to stand as a god.",
+      "grammar": "Pesel, ‘idol’ or ‘carved image’, comes from pasal, to hew or carve, and names a shaped cult object of wood or stone (later also metal). Vekhol-temunah, ‘or any likeness’, widens the ban to any form. Temunah is the word Deuteronomy 4:12, 15 uses when it reminds Israel that they saw no form on the day God spoke from the fire, and Deuteronomy 4:16-19 lists the forms forbidden, man or woman, beast, bird, creeping thing, fish, sun, moon, and stars, roughly reversing the order of Genesis 1. Whether the verse is a separate command or part of the first is exactly where the traditions of numbering divide.",
+      "words": ["H6459", "H8544", "H8064", "H4605", "H8478G", "H4325G"],
+      "history": "Archaeology has recovered many small images from Iron Age Israel, especially pillar figurines of a female figure found in Judahite houses of the eighth and seventh centuries BC, and bull figurines such as one found at a hilltop site in the hills of Samaria. They show that the command was not self-evident even within Israel. No certain image of Israel's God has been found; interpreters differ over whether that absence reflects the command or the accidents of discovery.",
+      "text": "Christian traditions divide the commandments differently. Catholic and Lutheran churches, following Augustine, treat verses 3 to 6 as one commandment and divide verse 17 into two. The Orthodox and Reformed churches, following Philo, Josephus, and many early church writers, count verse 4 as a separate second commandment. Jewish tradition counts verse 2 as the first word and verses 3 to 6 as the second. The words are the same in every tradition; only the count differs.",
+      "refs": ["Deuteronomy 4:15-19", "Deuteronomy 5:8", "Isaiah 40:18-20", "Romans 1:22-23", "Acts 17:29"]
+    },
+    {
+      "v": "5-6",
+      "context": "The image command is extended to worship: Israel must not bow to images or serve them. The reason is God's jealousy, which is then described in its two directions: iniquity visited to the third and fourth generation of those who hate him, and loving devotion to thousands of those who love him and keep his commandments.",
+      "grammar": "Lo-tishtachaveh, ‘you shall not bow down’, and velo ta'ovdem, ‘nor serve them’, pair the posture and the service of worship. The second verb is vocalized unusually in the Masoretic Text, in a form some grammarians classify as a passive causative (‘be brought to serve them’) and others treat as an irregular vocalization of the ordinary verb. El qanna, ‘a jealous God’, uses an adjective found only of God. Poqed avon, ‘visiting iniquity’, uses paqad, which means to attend to or inspect, for good or ill; it is the verb Joseph used when he promised that God would ‘visit’ Israel to bring them out (Genesis 50:24). In verse 6, la'alafim, ‘to thousands’, stands against shilleshim and ribbe'im, ‘third and fourth generations’. The BSB's ‘a thousand generations’ follows Deuteronomy 7:9, which says le'elef dor, ‘to a thousand generations’, explicitly. Lesone'ay and le'ohavay, ‘those who hate Me’ and ‘those who love Me’, are participles, describing a settled disposition, and hate and love here are covenant terms for disloyalty and loyalty.",
+      "words": ["H7812", "H5647H", "H0410G", "H7067H", "H6485I", "H5771G", "H0505G", "H2617A"],
+      "theology": [
+        {
+          "id": "attributes",
+          "note": "God's jealousy is the zeal of a covenant partner for an exclusive relationship. It is inseparable from his loving devotion: the same God who will not share his people with idols keeps faith with them for a thousand generations. The proportion of the two clauses is itself a statement about his character."
+        },
+        {
+          "id": "sin",
+          "note": "The verse recognizes that a generation's idolatry does not stay with that generation. Iniquity is ‘visited’ on those who continue in it, and the damage of turning from God spreads through the households and generations that live together."
+        }
+      ],
+      "refs": ["Deuteronomy 7:9-10", "Exodus 34:6-7", "Ezekiel 18:19-20", "Joshua 24:19", "Numbers 14:18"]
+    },
+    {
+      "v": "7",
+      "context": "The third command concerns God's name. It forbids using the name of the LORD for anything empty or false, and it adds a warning: God himself will not treat the offender as innocent, whatever human courts may do.",
+      "grammar": "Lo tissa et-shem-YHWH, literally ‘you shall not lift up the name of the LORD’, uses nasa, to lift or carry. Lifting up the name was the gesture of invoking it, especially in an oath (compare Psalm 16:4, where lifting names to the lips means invoking other gods). Lashshav, ‘for emptiness’, uses shav, a word for what is worthless, vain, or false. Psalm 24:4 uses the same idiom of the one who does not lift up his soul lashshav or swear deceitfully, which supports the view that false oaths are the core of the command. Lo yenaqqeh, ‘He will not leave unpunished’, is a Piel of naqah, to be clean or innocent, so the phrase is literally ‘He will not declare clean’, a legal verdict.",
+      "words": ["H5375G", "H8034", "H7723H", "H5352"],
+      "theology": [
+        {
+          "id": "names-of-god",
+          "note": "God's name stands for God himself as he has made himself known. To use it to back a lie, to manipulate, or to cover one's own purposes treats God as a tool. The command protects the name because it protects the God who gave it."
+        }
+      ],
+      "refs": ["Leviticus 19:12", "Psalm 24:4", "Matthew 5:33-37", "Leviticus 24:11-16", "James 5:12"]
+    },
+    {
+      "v": "8",
+      "context": "The fourth command begins with ‘remember’. The Sabbath is not introduced here for the first time; Israel has already received it with the manna (16:23-30). The command asks Israel to hold the day in mind and treat it as holy.",
+      "grammar": "Zakhor, ‘remember’, is an infinitive absolute used as a command, a form that states the action in its bare and emphatic form rather than addressing a particular moment. Deuteronomy 5:12 has shamor, ‘keep’ or ‘observe’, in the same position. The rabbis held that God spoke both words in one utterance (b. Shevuot 20b), and the Sabbath hymn Lekha Dodi, written by Solomon Alkabetz in sixteenth century Safed, opens with that idea. Leqaddesho, ‘to keep it holy’, is a Piel infinitive of qadash with a purpose sense: remembrance is carried out by treating the day as set apart.",
+      "words": ["H2142", "H7676", "H6942G"],
+      "theology": [
+        {
+          "id": "sabbath",
+          "note": "The Sabbath is remembered, not invented, by Israel. The verb places the weekly day within Israel's memory of creation and redemption, and making it holy is something done to time rather than to a place or object."
+        }
+      ],
+      "refs": ["Exodus 16:23-30", "Deuteronomy 5:12", "Genesis 2:3", "Isaiah 58:13-14"]
+    },
+    {
+      "v": "9-10",
+      "context": "The command grants six days of work and claims the seventh for the LORD. The rest reaches the whole household: sons and daughters, male and female slaves, animals, and the resident foreigner. The list is longer than for any other command, because the Sabbath was most likely to be denied to those under someone else's authority.",
+      "grammar": "Ta'avod, ‘you shall labor’, is avad, the verb of service used for Israel's slavery in Egypt (1:13-14). Six days of avad are permitted, but the seventh is shabbat laYHWH, ‘a Sabbath belonging to the LORD’. Melakhah, ‘work’, is the word for skilled and productive work, the same word used for God's work in Genesis 2:2-3, and the word the tabernacle chapters use for the craftsmen's work (35:2 repeats the Sabbath law at the head of those chapters). The list ends with gerekha asher bish'arekha, ‘your sojourner who is within your gates’, the gate being the town's place of business and justice.",
+      "words": ["H5647I", "H4399", "H7676", "H5650", "H0519", "H1616", "H8179G"],
+      "theology": [
+        {
+          "id": "justice-poor",
+          "note": "The Sabbath is a law of rest for those who could not claim it. Deuteronomy 5:14-15 makes the point explicit, grounding the day in Israel's memory of slavery so that servants may rest as their masters do. No worker, animal, or foreigner is outside its protection."
+        }
+      ],
+      "refs": ["Deuteronomy 5:13-15", "Exodus 23:12", "Exodus 35:2", "Nehemiah 13:15-22", "Mark 2:27"]
+    },
+    {
+      "v": "11",
+      "context": "The reason for the Sabbath is creation: God made everything in six days and rested on the seventh, and so he blessed and hallowed the day. Israel's week is patterned on God's week.",
+      "grammar": "Ki, ‘for’, gives the ground of the command. Vayyanach, ‘and He rested’, is from nuach, to settle down or be at rest, a different verb from the shavat of Genesis 2:2-3; Exodus 31:17 adds vayyinnafash, ‘and was refreshed’. Al-ken, ‘therefore’, draws the consequence. Berakh... vayqaddeshehu, ‘He blessed... and made it holy’, repeats the two verbs of Genesis 2:3 in the same order, so that the Sabbath command quotes the creation account.",
+      "words": ["H5117", "H3651C", "H1288", "H6942G", "H6213H"],
+      "text": "Deuteronomy 5:15 gives a different reason for the same command: ‘remember that you were a slave in Egypt’. Source critics have taken the difference as evidence of different traditions, with Exodus reflecting the priestly creation account. Others note that Deuteronomy is presented as Moses' later preaching of the law and naturally stresses the exodus. The two grounds are complementary: the Sabbath rests on God's work in creation and on his work in redemption.",
+      "theology": [
+        {
+          "id": "creation",
+          "note": "The world was made with a rhythm of work and rest built in. By keeping the Sabbath, Israel imitates the Creator and confesses that the world and its time belong to him."
+        },
+        {
+          "id": "sabbath",
+          "note": "The weekly rest is grounded in God's own rest, which gives it a meaning beyond recovery from work. Hebrews 4:9-10 develops the idea of God's rest as the goal toward which his people are headed."
+        }
+      ],
+      "refs": ["Genesis 2:2-3", "Exodus 31:17", "Deuteronomy 5:15", "Hebrews 4:4-10"]
+    },
+    {
+      "v": "12",
+      "context": "The fifth command turns from God to the household and is the first to carry a promise. It stands at the hinge of the Decalogue: parents are honored as those through whom God gives life and passes on the covenant, and the promise ties the household to Israel's future in the land.",
+      "grammar": "Kabbed, ‘honor’, is a Piel imperative of kaved, to be heavy. The Piel means ‘give weight to’, treat as weighty, and the same root gives kavod, ‘glory’, the word used for God's glory on Sinai (24:16). Honoring parents is the same kind of act, on a human scale, as glorifying God. Lema'an ya'arikhun yamekha, ‘so that your days may be long’, has a Hiphil imperfect with a final nun (called paragogic nun), an older and fuller form. Ha'adamah, ‘the land’ or ‘the ground’, is the soil of the promised land. Deuteronomy 5:16 adds ‘and that it may go well with you’.",
+      "words": ["H3513G", "H0001G", "H0517", "H4616", "H0748", "H0127G"],
+      "theology": [
+        {
+          "id": "family",
+          "note": "The command includes both father and mother and, for adults, meant care in old age as well as respect. Jesus used it against teachers who let a man declare his support for his parents a gift to God (Mark 7:9-13), and Paul calls it the first commandment with a promise (Ephesians 6:2-3)."
+        }
+      ],
+      "refs": ["Deuteronomy 5:16", "Leviticus 19:3", "Mark 7:9-13", "Ephesians 6:1-3", "Proverbs 23:22"]
+    },
+    {
+      "v": "13",
+      "context": "The sixth command is two words in Hebrew. With the next three it forms a run of brief, unconditional prohibitions that protect the neighbor's life, marriage, freedom and property, and reputation.",
+      "grammar": "Lo tirtsach uses ratsach, which in the Old Testament refers to killing a human being, never an animal, and is never used for killing in war. It is used for deliberate murder (1 Kings 21:19) and for accidental manslaughter in the laws on cities of refuge (Numbers 35:11). Surprisingly, Numbers 35:27 also uses it for the avenger of blood who lawfully kills the manslayer outside the city, which shows that the verb names the act of killing a person, with the context supplying its moral quality. The Septuagint renders ou phoneuseis, and English Bibles differ: ‘kill’ in the King James Version, ‘murder’ in most modern versions.",
+      "words": ["H7523"],
+      "theology": [
+        {
+          "id": "image",
+          "note": "Human life is protected because human beings bear God's image (Genesis 9:6). Jesus extended the command to anger and contempt (Matthew 5:21-22), treating it as a guard over the neighbor's worth, not only a ban on the final act."
+        }
+      ],
+      "text": "The order of verses 13 to 15 varies in ancient witnesses. The Nash Papyrus, a Hebrew fragment of the second or first century BC containing the Decalogue and the Shema, has adultery, murder, stealing, and some Septuagint manuscripts also put adultery first. Jesus in Luke 18:20 and Paul in Romans 13:9 list adultery before murder, as does James 2:11. The Masoretic Text also carries two systems of accents in the Decalogue, one dividing it into verses of normal length and the other making each commandment a verse, and some Hebrew editions and Jewish translations follow a verse division in which the chapter's numbering from here on differs slightly from English Bibles.",
+      "refs": ["Genesis 9:6", "Numbers 35:11", "Numbers 35:27", "Matthew 5:21-22", "1 John 3:15"]
+    },
+    {
+      "v": "14",
+      "context": "The seventh command protects marriage. In the Decalogue's order it stands between the protection of life and the protection of property, marking the marriage bond as one of the goods a neighbor must not take.",
+      "grammar": "Na'af, ‘commit adultery’, in biblical law refers to sexual relations between a man and a woman who is married or betrothed to another man (Leviticus 20:10; Deuteronomy 22:22-24). The verb is also used by the prophets for Israel's idolatry, when the people's covenant with God is pictured as a marriage (Jeremiah 3:8-9; Hosea 4:13-14), so the sixth and seventh commands echo the first two. The command is addressed in the masculine singular, but the law elsewhere holds both parties responsible (Leviticus 20:10).",
+      "words": ["H5003"],
+      "theology": [
+        {
+          "id": "family",
+          "note": "Marriage is placed under God's direct protection in the Decalogue itself. Jesus traced the command back to the look of desire (Matthew 5:27-28), and the New Testament keeps it as a standard for the whole church (Hebrews 13:4)."
+        }
+      ],
+      "refs": ["Leviticus 20:10", "Deuteronomy 22:22", "Hosea 4:13-14", "Matthew 5:27-28", "Hebrews 13:4"]
+    },
+    {
+      "v": "15",
+      "context": "The eighth command forbids stealing. It has no object in Hebrew, so its scope has been debated: whether it is a general ban on theft or aimed especially at the stealing of persons.",
+      "grammar": "Lo tignov uses ganav, the general verb for taking by stealth. The absence of an object means the command covers any theft. The rabbinic tradition, however, read it as kidnapping, reasoning that it stands among capital offenses (murder and adultery), and that kidnapping is the one theft punished by death (21:16); property theft was then covered by Leviticus 19:11, which uses the same verb in the plural. The Talmud (b. Sanhedrin 86a) and Rashi on this verse give that reading, and in the twentieth century Albrecht Alt argued for it on critical grounds. Most interpreters take the command in its plain breadth while granting that kidnapping is its gravest case.",
+      "words": ["H1589"],
+      "theology": [
+        {
+          "id": "justice-poor",
+          "note": "The command guards what a neighbor needs to live, whether his goods or his own freedom. Paul turns it around into a positive duty: the thief should work so that he can give to those in need (Ephesians 4:28)."
+        }
+      ],
+      "refs": ["Exodus 21:16", "Leviticus 19:11", "Deuteronomy 24:7", "Ephesians 4:28", "1 Timothy 1:10"]
+    },
+    {
+      "v": "16",
+      "context": "The ninth command forbids false testimony against a neighbor. Its first setting is the town gate, where cases were heard and a false witness could take a man's life or land.",
+      "grammar": "Lo-ta'aneh vere'akha ed shaqer is literally ‘you shall not answer against your neighbor as a false witness’. Anah, ‘to answer’, is a technical term for giving testimony in court, and the preposition be means ‘against’. Ed shaqer, ‘a witness of falsehood’, uses sheqer, deliberate lie. Rea, ‘neighbor’, means anyone one lives among, and it is the same word as in Leviticus 19:18, ‘love your neighbor as yourself’.",
+      "words": ["H6030B", "H7453", "H5707", "H8267"],
+      "history": "Ancient Near Eastern law took false witness seriously. The Code of Hammurabi opens its laws with cases of false accusation, and its third law says that a man who bears false witness in a capital case is to be put to death. Israel's law matched the penalty to the harm intended: the false witness receives what he meant to bring on his neighbor (Deuteronomy 19:16-19). The trial of Naboth (1 Kings 21:10-13) shows how two false witnesses could destroy an innocent man and seize his land.",
+      "text": "Deuteronomy 5:20 has ed shav, ‘an empty (or worthless) witness’, instead of Exodus's ed shaqer, ‘a false witness’. Shav is the word of the third commandment (verse 7), and some interpreters take Deuteronomy's wording to widen the command from outright lies in court to testimony that is misleading or groundless.",
+      "refs": ["Deuteronomy 19:16-19", "1 Kings 21:10-13", "Proverbs 19:5", "Matthew 26:59-61", "Leviticus 19:16-18"]
+    },
+    {
+      "v": "17",
+      "context": "The tenth command reaches from acts to the desire that produces them. It names the neighbor's house first and then what the house contains: wife, servants, ox, donkey, and anything that belongs to him.",
+      "grammar": "Lo tachmod uses chamad, to desire or take pleasure in. The verb can describe desire alone, but several passages join it closely to taking: Achan ‘coveted... and took’ (Joshua 7:21), and Micah condemns those who ‘covet fields and seize them’ (Micah 2:2). Some scholars have therefore argued that chamad includes scheming to acquire. Maimonides distinguished this verb from the one in Deuteronomy 5:21 (titavveh, ‘desire’), holding that the Exodus command is broken when desire leads to action to acquire, and the Deuteronomy command by the desire itself. Beit, ‘house’, can mean the whole household, which is how the list that follows reads it.",
+      "words": ["H2530A", "H1004B", "H0802H", "H7453", "H7794", "H2543"],
+      "nt": [
+        {
+          "ref": "Romans 7:7",
+          "note": "Paul quotes the tenth command in the Septuagint's wording, ouk epithymēseis, ‘you shall not desire’, as the commandment that showed him his own sin. The Greek verb names desire in itself, which suits Paul's point: this command could not be kept by outward behavior, and in exposing desire it exposed the heart. Paul does not blame the law; he says the law is holy and the commandment holy, righteous, and good (Romans 7:12)."
+        }
+      ],
+      "text": "The order of the list differs between the Decalogue's two versions. Exodus names the house first and then the wife; Deuteronomy 5:21 names the wife first, gives her a separate verb, and adds the field. The Septuagint of Exodus follows Deuteronomy's order. Catholic and Lutheran numbering, which divides this command in two, follows Deuteronomy's order for the ninth and tenth commandments. The Samaritan Pentateuch adds after this verse a further command to build an altar on Mount Gerizim, the Samaritans' holy mountain, drawing on Deuteronomy 27.",
+      "theology": [
+        {
+          "id": "law",
+          "note": "The last command shows that the law aims at the heart. No court could enforce it, so it lays bare the root from which the other offenses grow and anticipates Jesus' teaching that evil acts come from within (Mark 7:21-23)."
+        }
+      ],
+      "refs": ["Deuteronomy 5:21", "Joshua 7:21", "Micah 2:2", "Romans 7:7-12", "Luke 12:15"]
+    },
+    {
+      "v": "18",
+      "context": "The narrative returns to the scene of chapter 19. Thunder, lightning, the horn, and smoke surround the mountain, and the people, seeing it, tremble and stand back. The verse steps back in time to describe the people's experience of the voice they have just heard.",
+      "grammar": "Vekhol-ha'am ro'im et-haqqolot, ‘and all the people were seeing the thunderings’, uses a participle for ongoing perception and the verb ‘see’ with qolot, which means ‘voices’ as well as ‘thunders’ (19:16, 19). The pairing of seeing with sounds is deliberate. The Mekhilta, the early rabbinic commentary on Exodus, records Rabbi Akiva's view that the people saw what is ordinarily heard. Lappidim, ‘lightning’, is literally ‘torches’, the word for the flaming torch in Abraham's covenant vision (Genesis 15:17). Vayyanu'u, ‘they trembled’, can mean to shake or to move away, and the next clause says they stood merachoq, ‘at a distance’.",
+      "words": ["H7200G", "H6963I", "H3940", "H7782", "H6226", "H5128", "H7350"],
+      "theology": [
+        {
+          "id": "holiness",
+          "note": "The people cannot stay close to the place where God speaks. Their distance is not simply fear but a right perception of the gulf between the holy God and sinful people, which the following verses address with a mediator."
+        }
+      ],
+      "refs": ["Exodus 19:16-19", "Deuteronomy 4:11-12", "Genesis 15:17", "Hebrews 12:18-21"]
+    },
+    {
+      "v": "19",
+      "context": "The people ask Moses to speak to them in God's place, promising to listen, because they fear that if God speaks to them directly they will die. The request establishes Moses' role as mediator for all the laws that follow.",
+      "grammar": "Dabber-attah immanu, ‘speak you with us’, uses an imperative with an emphatic pronoun, ‘you yourself’. Venishma'ah, ‘and we will listen’, is a cohortative expressing resolve; shama, to hear, also means to obey, so the phrase is a promise of obedience. Ve'al-yedabber immanu Elohim pen-namut, ‘and let not God speak with us, lest we die’, uses al with the jussive for a specific request and pen, ‘lest’, for the feared result.",
+      "words": ["H1696G", "H0859A", "H8085G", "H6435", "H4191"],
+      "theology": [
+        {
+          "id": "offices",
+          "note": "Moses stands between God and the people as prophet, speaking God's words to them. Deuteronomy 18:15-18 remembers this request as the origin of the prophetic office and promises a prophet like Moses, whom the New Testament identifies with Jesus (Acts 3:22-23)."
+        }
+      ],
+      "refs": ["Deuteronomy 5:23-27", "Deuteronomy 18:15-18", "Acts 3:22-23", "1 Timothy 2:5", "Hebrews 12:19"]
+    },
+    {
+      "v": "20",
+      "context": "Moses' reply sounds contradictory: do not be afraid, because God has come so that the fear of him may be with you. He distinguishes panic that drives people away from God from reverent fear that keeps them from sin.",
+      "grammar": "Al-tira'u, ‘do not fear’, and yir'ato, ‘His fear’, use the same root yare, turning it in two directions within one verse. Lema'an... nassot, ‘in order to test’, uses a Piel of nasah, the verb for God testing Abraham (Genesis 22:1) and Israel in the wilderness (16:4; Deuteronomy 8:2). The test here is not a trap but a proving: the experience at Sinai is meant to form a lasting disposition. Levilti techeta'u, ‘so that you may not sin’, uses the negative purpose particle bilti with the imperfect.",
+      "words": ["H3372G", "H5254G", "H3374", "H2398", "H1115"],
+      "theology": [
+        {
+          "id": "fear-of-god",
+          "note": "The fear of God that Scripture commends is not terror that flees but reverence that stays and obeys. This verse is one of the clearest statements of the difference: the fear that Moses forbids and the fear he commends are named side by side."
+        }
+      ],
+      "refs": ["Genesis 22:1", "Deuteronomy 8:2", "Proverbs 1:7", "1 John 4:18", "Hebrews 12:28-29"]
+    },
+    {
+      "v": "21",
+      "context": "The people stay at a distance while Moses approaches the thick darkness where God is. The verse sets the pattern for the chapters that follow: Moses goes near, and the people hear God's words through him.",
+      "grammar": "Niggash, ‘he drew near’, is a Niphal of nagash, used for approaching a person of rank or God. Ha'arafel, ‘the thick darkness’, is a word for deep cloud, used with the other terms for storm and darkness of God's appearing (Deuteronomy 4:11; 5:22). The clause asher-sham ha'Elohim, ‘where God was’, locates God within the darkness, not beyond it.",
+      "words": ["H5975G", "H7350", "H5066G", "H6205"],
+      "history": "The thick darkness of this verse became a central image in Christian mystical theology. Gregory of Nyssa, in his Life of Moses (late fourth century), read Moses' entry into the darkness as the soul's advance into a knowledge of God beyond sight and concept, and the writer known as Dionysius the Areopagite built on the same passage in his Mystical Theology. Solomon's prayer at the temple's dedication recalls that the LORD said he would dwell in thick darkness (1 Kings 8:12).",
+      "refs": ["1 Kings 8:12", "Psalm 97:2", "Deuteronomy 4:11", "Deuteronomy 5:22-23"]
+    },
+    {
+      "v": "22-23",
+      "context": "God now speaks to Moses alone, beginning the collection of laws that 24:7 calls the Book of the Covenant (20:22 to 23:33). The first law repeats the ban on idols: the people have heard God speak from heaven and seen no form, so they must make no gods of silver or gold alongside him.",
+      "grammar": "Attem re'item, ‘you yourselves have seen’, puts the pronoun first, appealing to what the people know firsthand. Min-hashamayim dibbarti, ‘from heaven I have spoken’, sits alongside 19:20, where the LORD descended on the mountain; Deuteronomy 4:36 holds both together, saying God let Israel hear his voice from heaven and see his fire on earth. Verse 23 is difficult to divide: lo ta'asun itti elohei khesef can mean ‘you shall not make [gods] with Me; gods of silver... you shall not make’ or ‘you shall not make gods of silver alongside Me’. The first ta'asun has a final nun (paragogic nun), an emphatic form. Itti, ‘with Me’, means beside or in addition to God, the same idea as al-panay in verse 3.",
+      "words": ["H7200G", "H8064", "H1696G", "H6213H", "H0854", "H3701G", "H2091"],
+      "theology": [
+        {
+          "id": "idolatry",
+          "note": "The ban on images is justified by the way God revealed himself: by voice, not by form. Israel meets God in his word, and gods of silver and gold, however splendid, add nothing to that meeting. Chapter 32 shows the people breaking this command within weeks."
+        },
+        {
+          "id": "revelation",
+          "note": "‘You have seen that I have spoken’ joins two senses: Israel experienced God's speech as an event it witnessed. Revelation here is both something heard and a public event in history."
+        }
+      ],
+      "refs": ["Deuteronomy 4:36", "Exodus 24:7", "Exodus 32:1-4", "Deuteronomy 4:15-16"]
+    },
+    {
+      "v": "24",
+      "context": "In place of images, God prescribes a simple altar of earth on which Israel may offer burnt offerings and peace offerings. He adds a promise: wherever he causes his name to be remembered, he will come and bless his people.",
+      "grammar": "Mizbach adamah, ‘an altar of earth’, uses adamah, the ground, the same word as in verse 12. Olotekha, ‘your burnt offerings’, and shelamekha, ‘your peace offerings’, are the two main kinds of sacrifice: the burnt offering given entirely to God, and the peace or fellowship offering whose meat was shared in a meal. Bekhol-hammaqom asher azkir et-shemi, ‘in every place where I cause My name to be remembered’, uses a Hiphil (causative) of zakhar: God is the one who chooses where his name is proclaimed. Avo elekha uverakhtikha, ‘I will come to you and bless you’, is a promise of presence and blessing, the purpose of the altar.",
+      "words": ["H4196", "H0127G", "H5930A", "H8002", "H4725", "H2142", "H1288"],
+      "history": "The law assumes more than one place of worship, and Israel's early history shows altars at several sites (Joshua 8:30-31; 1 Samuel 7:17). Deuteronomy 12 later limits sacrifice to ‘the place the LORD your God will choose’. Scholars since Julius Wellhausen have seen this law as older than Deuteronomy's centralization. Others read the two as compatible, with this law governing Israel's worship before the choice of one place, or legitimate altars wherever God authorized them.",
+      "text": "The Masoretic Text reads azkir, ‘where I will cause My name to be remembered’, a future or open-ended form. The Samaritan Pentateuch reads a past form, ‘where I have caused My name to be remembered’, which suits its claim that God had already chosen Mount Gerizim.",
+      "theology": [
+        {
+          "id": "worship",
+          "note": "Worship is placed where God chooses to make his name known, and its goal is his coming to bless. The altar is not a way to summon God but a place where he promises to meet his people."
+        }
+      ],
+      "refs": ["Deuteronomy 12:5", "Joshua 8:30-31", "1 Samuel 7:17", "1 Kings 18:30-32", "John 4:21-24"]
+    },
+    {
+      "v": "25-26",
+      "context": "If Israel builds an altar of stones, the stones must be uncut, because using a tool on them would defile the altar. The altar must also have no steps, so that the priest's body is not exposed on it. Both rules keep Israel's worship plain and distinct from the ornate altars of its neighbors.",
+      "grammar": "Gazit, ‘hewn stone’, means stone dressed with tools, the building stone of palaces and later of the temple (1 Kings 5:17). Charbekha, ‘your tool’, is literally ‘your sword’ (cherev), the word for a blade. Henafta, ‘you have wielded’, is a Hiphil of nuf, to wave or brandish. Vattechalleleha, ‘and you have profaned it’, is a Piel of chalal, to make common, the opposite of holy. In verse 26, bema'alot, ‘by steps’, and ervatekha, ‘your nakedness’, explain the second rule; the verb tiggaleh, ‘be uncovered’, is a Niphal (passive).",
+      "words": ["H0068G", "H1496", "H2719", "H5130B", "H2490H", "H4609B", "H1540I", "H6172"],
+      "history": "The altar Joshua built on Mount Ebal was made of uncut stones ‘on which no iron tool had been used’ (Joshua 8:31), in obedience to this law and Deuteronomy 27:5-6. When the Maccabees rebuilt the altar in 164 BC they used whole stones according to the law (1 Maccabees 4:47). The Mishnah says the altar's stones were not touched by iron, because iron shortens human life and the altar lengthens it (m. Middot 3:4), and the Second Temple altar was approached by a ramp rather than steps (m. Middot 3:3). The priestly garments later included linen undergarments for the same reason as verse 26 (28:42-43).",
+      "theology": [
+        {
+          "id": "holiness",
+          "note": "Holiness here means keeping human craft and human exposure away from the place where God meets his people. The altar is to be something God gives rather than something humans display their skill in, and worship is to be free of the sexual display that marked some neighboring cults."
+        }
+      ],
+      "refs": ["Deuteronomy 27:5-6", "Joshua 8:30-31", "Exodus 28:42-43", "1 Kings 6:7", "Ezekiel 43:17"]
+    }
+  ]
+}
