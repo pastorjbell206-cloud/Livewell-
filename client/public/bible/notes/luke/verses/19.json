@@ -1,0 +1,332 @@
+{
+  "verses": [
+    {
+      "v": "1-2",
+      "context": "The last town on the road to Jerusalem. Jesus has just healed a blind beggar outside Jericho (18:35-43), and now inside it he meets a rich man. Luke introduces him with three facts that pull against each other in his first readers' minds: a name that means clean or innocent, a job that made him a byword for extortion, and great wealth, which a chapter earlier made salvation look impossible (18:24-25).",
+      "grammar": "Kai idou, ‘and look’, is Luke's Septuagint-style way of bringing a new character on stage, and the sentence then stacks two clauses each beginning kai autos, ‘and he himself’: he was a chief tax collector, and he was rich. The repeated pronoun lays the weight on the man, as if to say this particular man, of all people. Architelōnēs, ‘chief tax collector’, occurs nowhere else in the New Testament; the prefix arch- (as in archiereus, ‘chief priest’) marks him as the head of an operation, not a man at a booth like Levi (5:27). Plousios, ‘rich’, is the word Luke used of the ruler who went away sad (18:23) and of the rich man in the camel saying (18:25).",
+      "words": ["G2400", "G0754", "G4145"],
+      "history": "Zacchaeus is the Greek form of the Hebrew name Zakkai, which appears among the families that returned from exile (Ezra 2:9, Nehemiah 7:14). It stayed in use: the most famous rabbi of the generation after Jesus, Yohanan ben Zakkai, who led the reconstitution of Jewish learning at Yavneh after AD 70, was a ‘son of Zakkai’. The name comes from a root meaning pure or clean, which gives Luke's story an irony a Jewish reader would hear: the man called Clean was counted a sinner (verse 7).",
+      "theology": [
+        { "id": "wealth", "note": "Luke has just recorded Jesus saying it is easier for a camel to go through the eye of a needle than for a rich man to enter the kingdom (18:25). Verse 2 deliberately sets up the test case: this man is not merely rich but the head of the trade most associated with ill-gotten wealth." }
+      ],
+      "refs": ["Luke 18:24-27", "Luke 5:27-32", "Luke 3:12-13", "Ezra 2:9"]
+    },
+    {
+      "v": "3-4",
+      "context": "Zacchaeus wants to see Jesus, cannot, and does something undignified about it. The verbs of seeking and seeing that run through the story start here, and they will be turned around in verse 5, when it is Jesus who looks up and sees him, and in verse 10, when it is the Son of Man who has come to seek.",
+      "grammar": "Ezētei idein, ‘he was seeking to see’, is imperfect: he kept trying. The object is an indirect question, tis estin, ‘who he is’, which suggests more than curiosity about a celebrity's face; Luke uses the same kind of question of Herod Antipas, who also sought to see Jesus (9:9) and whose wish ends very differently (23:8). Hēlikia can mean either age or bodily size. In 2:52 and 12:25 it is often taken of age or lifespan, but here the words ‘because of the crowd’ settle it: Zacchaeus was short. Prodramōn eis to emprosthen, ‘running ahead to the front’, uses a compound verb found in the Gospels only here and in John 20:4. Sukomorea, ‘sycamore-fig’, also occurs only here in the New Testament.",
+      "words": ["G2212", "G1492H", "G2244", "G4390", "G4809"],
+      "history": "The sycamore-fig was not the sycamore or plane tree of Europe and North America but Ficus sycomorus, a fig with a thick trunk and spreading lower branches. Because its roots spread wide, the Mishnah required that it be planted fifty cubits from a town, twice the distance for an ordinary tree (m. Bava Batra 2:7), and fifty cubits from a neighbor's cistern (m. Bava Batra 2:11). A sycamore-fig was therefore a tree of the outskirts and the roadside, which is where a man running ahead of a procession leaving Jericho would find one. Grown men of standing did not run in public in that culture; the run and the climb together made Zacchaeus a spectacle.",
+      "refs": ["Luke 9:9", "Luke 23:8", "Amos 7:14", "1 Kings 10:27"]
+    },
+    {
+      "v": "5-6",
+      "context": "The turn of the story. Jesus stops under the tree, calls Zacchaeus by name, and announces that he must stay at his house today. Zacchaeus comes down at once and receives him with joy, the response Luke's parables of the lost have taught the reader to expect when the lost are found (15:5-7, 15:32).",
+      "grammar": "Speusas katabēthi, ‘hurry and come down’, pairs an aorist participle with an aorist imperative, a brisk command, and verse 6 repeats both verbs in the narrative, speusas katebē, ‘hurrying, he came down’: the obedience matches the command word for word. The key word is dei, ‘it is necessary’, Luke's word for the divine plan that governs Jesus' life, from the boy in his Father's house (2:49) to preaching in other towns (4:43), the passion predictions (9:22, 17:25), and the risen Lord's ‘Was it not necessary’ (24:26). A stay in a tax collector's house is placed under that same necessity. Sēmeron, ‘today’, stands first in its clause for emphasis. Hupedexato, ‘he welcomed’, is the verb used of Martha receiving Jesus (10:38), and chairōn, ‘rejoicing’, is the shepherd's joy in 15:5.",
+      "words": ["G4692", "G2597", "G4594", "G1163", "G3306", "G5264", "G5463"],
+      "theology": [
+        { "id": "salvation", "note": "Jesus speaks first, names the man, and invites himself before Zacchaeus has promised anything. The word dei puts the visit under God's purpose: grace here is not a reward for Zacchaeus's effort to see Jesus but the prior action of the one who came to seek (verse 10)." }
+      ],
+      "refs": ["Luke 2:49", "Luke 4:43", "Luke 10:38", "Luke 15:5-7", "Luke 24:26"]
+    },
+    {
+      "v": "7",
+      "context": "The crowd, which had blocked Zacchaeus's view, now voices its verdict on Jesus. The grumbling repeats the complaints at Levi's banquet (5:30) and before the parables of the lost (15:2), and this time Luke says ‘all’ joined in, not only Pharisees and scribes.",
+      "grammar": "Diegonguzon is the imperfect of diagonguzō, ‘to grumble among one another’, the compound Luke used in 15:2 and the Greek Old Testament uses for Israel murmuring in the wilderness (Exodus 16:2). Katalusai, ‘to lodge’, literally ‘to unloose’ the pack animals for the night, is the verb the disciples used when they wanted the crowds sent off to find lodging (9:12). The complaint sets para hamartōlō andri, ‘with a sinful man’, at the front of its clause: the scandal is the host, not the meal.",
+      "words": ["G1234", "G0268", "G2647"],
+      "theology": [
+        { "id": "sin", "note": "The crowd names Zacchaeus a sinner and is not wrong about his past (verse 8 admits fraud). What Luke disputes is the conclusion drawn from it, that Jesus should keep his distance. In this Gospel the label ‘sinner’ marks exactly the people Jesus has come for (5:32)." }
+      ],
+      "refs": ["Luke 5:30-32", "Luke 15:1-2", "Luke 7:34", "Exodus 16:2"]
+    },
+    {
+      "v": "8",
+      "context": "Zacchaeus stands and speaks to Jesus as Lord, announcing half his goods for the poor and fourfold repayment of anything he took by extortion. It answers the grumbling of verse 7 with deeds rather than argument, and it is the practical repentance John the Baptist asked of tax collectors (3:12-13).",
+      "grammar": "Two points in this verse are argued over. First, the verbs didōmi, ‘I give’, and apodidōmi, ‘I give back’, are present tense. Most translations, with Dennis Hamm (Journal of Biblical Literature, 1988), read them as a futuristic present, a resolve made on the spot: ‘I will give’. Joseph Fitzmyer (Anchor Bible, 1985), Alan Mitchell (Biblica, 1990), and Joel Green (New International Commentary, 1997) read them as customary presents, ‘I give’, a defense of what Zacchaeus already does, so that the story becomes one of vindication. Greek allows both; the context of repentance in Luke inclines most readers to the first. Second, ei tinos ti esukophantēsa, ‘if I have extorted anything from anyone’, is a condition with an aorist indicative that assumes the case is real for argument's sake: it is an admission, not a denial. Statheis, ‘standing’, is the participle used of the Pharisee who stood to pray in 18:11, a contrast Luke may intend.",
+      "words": ["G2476", "G2962G", "G2255", "G5225", "G1325", "G4811", "G0591", "G5073"],
+      "theology": [
+        { "id": "repentance", "note": "Luke never uses the word repent in this story, but the verse shows its shape: a turning that reaches into the purse, repairs harm done to particular people, and turns toward the poor. On the resolve reading, it is the response to Jesus' welcome; on the customary reading, it is the practice of a man the crowd had misjudged. Either way, Jesus answers it with the word salvation." },
+        { "id": "wealth", "note": "Zacchaeus keeps half his goods, and Jesus does not ask him to sell everything as he asked the ruler (18:22). Luke does not make one rule for all the rich; what he shows is money released from its grip on a man and put to work for justice and the poor." }
+      ],
+      "ot": [
+        { "ref": "Exodus 22:1", "note": "Zacchaeus measures himself by the Law's scale of restitution. Exodus 22:1 (21:37 in the Hebrew numbering) required a thief who had slaughtered or sold a stolen sheep to repay four sheep, and five oxen for an ox; the Septuagint's word for fourfold there is tetraplasiōs, close to Luke's tetraploun. For goods gained by fraud or false oath, where the wrongdoer confessed, the Law asked only the principal plus a fifth (Leviticus 6:5, Numbers 5:7). Zacchaeus applies to himself the heaviest penalty for theft, the one David pronounced on the rich man of Nathan's parable (2 Samuel 12:6), though the Law would have let him off with a fifth." }
+      ],
+      "refs": ["Luke 3:12-14", "Leviticus 6:5", "Numbers 5:7", "2 Samuel 12:6", "Luke 18:22"]
+    },
+    {
+      "v": "9",
+      "context": "Jesus answers with a pronouncement about the house and about the man. Salvation has come today, and the reason given is not Zacchaeus's generosity but his identity: he too is a son of Abraham. The crowd had placed him outside Israel; Jesus places him back inside.",
+      "grammar": "Eipen pros auton, ‘he said to him’, is followed by a sentence that speaks of Zacchaeus in the third person (‘this man too is a son of Abraham’), so the words are addressed to him and overheard by the grumblers. Sēmeron stands first again, echoing verse 5: the day Jesus came to the house is the day salvation came. Kathoti, ‘because, inasmuch as’, is a formal conjunction found in the New Testament only in Luke and Acts. Kai autos, ‘he also’, answers the kai autos of verse 2: the man who was himself a chief tax collector and himself rich is himself a son of Abraham.",
+      "words": ["G4594", "G4991", "G3624G", "G2530", "G5207", "G0011"],
+      "theology": [
+        { "id": "salvation", "note": "Salvation here arrives at a house on a particular day, with the person of Jesus. Oikos can mean the building or the household, and Luke's Acts will tell of whole households saved (Acts 11:14, 16:31). The verse joins the present tense of salvation in Luke, today, to its covenant root, the promise to Abraham that Mary and Zechariah sang about (1:55, 1:73)." },
+        { "id": "israel", "note": "Luke has a woman bent double called a daughter of Abraham (13:16) and a rich man who calls Abraham father in vain (16:24). John warned that descent from Abraham saves no one who does not bear fruit (3:8). Zacchaeus shows the other side: a despised Israelite restored to his place among Abraham's children by the one who came to gather the lost of Israel." }
+      ],
+      "refs": ["Luke 13:16", "Luke 3:8", "Luke 1:54-55", "Acts 16:31", "Galatians 3:7"]
+    },
+    {
+      "v": "10",
+      "context": "The explanation of the whole scene and a summary of Jesus' mission in Luke. The verb seek links it to Zacchaeus seeking to see Jesus (verse 3), and the phrase ‘the lost’ gathers up the lost sheep, coin, and son of chapter 15.",
+      "grammar": "Ēlthen, ‘came’, with two aorist infinitives of purpose, zētēsai kai sōsai, ‘to seek and to save’, states the reason for the Son of Man's coming as a single purpose with two acts. The object, to apolōlos, is a neuter perfect participle, ‘that which has been lost’, the neuter giving it a collective sense: whatever and whoever is lost. The perfect describes a state, lost and remaining so, until someone finds it.",
+      "words": ["G2064", "G5207", "G0444", "G2212", "G4982", "G0622"],
+      "theology": [
+        { "id": "salvation", "note": "The verse locates salvation's origin in the Son of Man's initiative, not the seeker's. It is the closest Luke comes to a mission statement after the Nazareth sermon (4:18-19), and it defines salvation as rescue of what is lost rather than reward for what is found worthy." },
+        { "id": "messiah", "note": "By taking to himself the role God claimed in Ezekiel 34, the seeker of the lost, Jesus speaks of the Son of Man doing what the prophets said God himself would do for his scattered flock." }
+      ],
+      "ot": [
+        { "ref": "Ezekiel 34:16", "note": "After condemning the shepherds of Israel who did not seek the lost (34:4), God says he himself will search for his sheep, and in the Septuagint of 34:16 he promises to apolōlos zētēsō, ‘the lost I will seek’. The Hebrew is et ha'ovedet avaqqesh, the same pairing of the lost and seeking. Luke 19:10 uses the same participle and the same verb. The New Testament does not cite Ezekiel here by name, but the vocabulary is close enough that most commentators hear the echo, and Luke 15:4 has already drawn on the same picture." }
+      ],
+      "text": "The King James Version has the same saying at Matthew 18:11, ‘For the Son of man is come to save that which was lost’. That verse is absent from the earliest manuscripts of Matthew, including Codex Sinaiticus and Codex Vaticanus, and most editors think copyists added it there from this verse; modern Bibles print it in a note or brackets. In Luke 19:10 the saying is secure.",
+      "refs": ["Ezekiel 34:11-16", "Luke 15:4-7", "Luke 5:32", "1 Timothy 1:15", "Matthew 18:11"]
+    },
+    {
+      "v": "11",
+      "context": "Luke explains why the next parable was told: Jesus was near Jerusalem, and the listeners supposed that the kingdom of God was about to appear at once. The parable that follows is a correction of that timetable, and it connects the Zacchaeus scene (‘while they were listening to these things’) to the entry into the city.",
+      "grammar": "Prostheis eipen, ‘adding, he said’, is a Hebrew idiom carried into Greek through the Septuagint, where the verb for adding (Hebrew yasaf) means ‘went on to’ or ‘did again’; Luke uses the same idiom in the parable of the tenants (20:11-12). Two causes are given with dia to plus infinitives: because he was near Jerusalem, and because they thought (dokein). Parachrēma, ‘immediately’, is a word Luke uses far more than any other New Testament writer, usually for the instant result of a healing (4:39, 5:25, 18:43); here it names the expectation the parable denies. Anaphainesthai, ‘to appear, to come into view’, pictures the kingdom suddenly shown like land sighted from a ship (compare Acts 21:3).",
+      "words": ["G4369", "G3850", "G1451", "G3916", "G0932", "G0398"],
+      "theology": [
+        { "id": "kingdom", "note": "Luke does not deny that the kingdom is near (10:9, 21:31) or already present in Jesus (17:21). He denies that it would appear at once in the form the crowd imagined, a public restoration triggered by Jesus' arrival in Jerusalem. The disciples ask the same question after the resurrection (Acts 1:6), and they receive the same kind of answer." }
+      ],
+      "refs": ["Luke 17:20-21", "Acts 1:6-8", "Luke 24:21", "Luke 21:8-9"]
+    },
+    {
+      "v": "12",
+      "context": "The parable opens with a nobleman who must go far away to receive a kingdom and then come back. That frame, found only in Luke, carries the correction of verse 11: before the kingdom appears, the king must leave and return.",
+      "grammar": "Labein heautō basileian, ‘to receive for himself a kingdom’, uses basileia in its first sense of royal rule or kingship, not a territory, which is why the BSB renders ‘to lay claim to his kingship’. The two infinitives of purpose, labein and hupostrepsai, ‘to receive’ and ‘to return’, frame the whole story: everything that follows happens between the departure and the return. Eugenēs, ‘well-born’, is used elsewhere in the New Testament only of the Bereans, in the sense of noble-minded (Acts 17:11), and of the noble-born in 1 Corinthians 1:26.",
+      "words": ["G2104", "G5561", "G3117", "G2983", "G0932", "G5290"],
+      "history": "Client kings of the Roman world received their thrones from Rome. Herod the Great went to Rome in 40 BC and was named king of Judea by the Senate at the proposal of Antony and Octavian (Josephus, Antiquities 14.381-389). At his death in 4 BC, Archelaus sailed to Rome to have his father's will confirmed, and his brother Herod Antipas went too, to argue that an earlier will had named him king instead (Antiquities 17.219-227). The chapter note tells the rest of the story: the Jewish embassy against Archelaus, Augustus's compromise, and Archelaus's deposition in AD 6. A parable about a nobleman going to a distant country to receive a kingdom described how kingship in Judea actually worked.",
+      "theology": [
+        { "id": "return", "note": "The nobleman goes, receives the kingdom, and comes back. Luke's readers knew the shape: Jesus goes to the Father, is exalted to the right hand of God (Acts 2:33-36), and will come again (Acts 1:11). The parable puts the whole time of the church inside the words ‘and then return’." },
+        { "id": "exaltation", "note": "The kingdom is received elsewhere, not seized in Jerusalem. In Daniel 7:13-14 the Son of Man comes to the Ancient of Days to be given dominion, and Luke's Jesus receives his kingship in the same way, by going to the Father." }
+      ],
+      "parallels": ["Matthew 25:14-15"],
+      "refs": ["Daniel 7:13-14", "Acts 2:33-36", "Acts 1:9-11", "Matthew 2:22"]
+    },
+    {
+      "v": "13",
+      "context": "Before leaving, the nobleman gives ten servants one mina each and tells them to trade with it until he comes. Ten are called, but only three will report (verses 16-21); the rest of the ten drop out of the story, which focuses on representative cases.",
+      "grammar": "Pragmateusasthe, ‘do business’, an aorist imperative from pragma, ‘business, affair’, occurs only here in the New Testament; the related noun pragmateia appears in 2 Timothy 2:4 for the ‘civilian affairs’ a soldier leaves behind. The critical text reads en hō erchomai, literally ‘while I am coming’, with a present tense that looks at the whole period of absence as the time of his coming. The Textus Receptus reads heōs erchomai, ‘until I come’, behind the King James Version's ‘Occupy till I come’. Each servant receives the same sum, one mina (mna), where Matthew's master gives five, two, and one talents ‘each according to his own ability’ (Matthew 25:15).",
+      "words": ["G2564G", "G1401", "G3414", "G4231", "G2064"],
+      "theology": [
+        { "id": "wealth", "note": "The money is the master's (‘your mina’, verses 16, 18, 20), and each servant receives the same modest sum. Possessions and opportunities in the time of waiting are held in trust, and what distinguishes one servant from another is not what he was given but what he did with it." }
+      ],
+      "parallels": ["Matthew 25:14-15"],
+      "refs": ["Matthew 25:15", "Luke 12:42-44", "Luke 16:10-12", "1 Peter 4:10"]
+    },
+    {
+      "v": "14",
+      "context": "The second plot line: the nobleman's own citizens hate him and send an embassy after him to protest his rule. Jesus' hearers would recognize the Archelaus affair, and Luke's readers would hear the rejection of Jesus by the leaders of his own city, which begins in earnest in the next chapters.",
+      "grammar": "Emisoun, ‘they were hating’, is imperfect, a settled hostility. Presbeia, ‘embassy, delegation’, occurs in the New Testament only here and in 14:32, where a weaker king sends an embassy to ask for terms of peace; here the embassy asks for the king's removal. The message, ou thelomen touton basileusai eph' hēmas, ‘we do not want this man to reign over us’, uses touton, ‘this man’, with a note of contempt, as the crowd will cry before Pilate, ‘Away with this man’ (23:18). The citizens are politai, the same word used of the citizens of the far country in the parable of the lost son (15:15).",
+      "words": ["G4177", "G3404", "G4242", "G2309", "G0936"],
+      "history": "Josephus reports that when Archelaus went to Rome, a Jewish embassy of fifty men followed, joined by more than eight thousand Jews living in Rome, and asked Augustus to abolish the Herodian kingship and attach Judea to the province of Syria (Antiquities 17.299-314; Jewish War 2.80-92). Augustus refused them the kingship's abolition but gave Archelaus only the title of ethnarch. The parable's embassy mirrors that event almost exactly.",
+      "theology": [
+        { "id": "kingdom", "note": "The kingdom in this parable is resisted before it is fully revealed. Luke does not present rejection of Jesus as a surprise to God's plan but as part of what the king foresaw, and the refrain ‘we do not want this man’ anticipates the choice of Barabbas over Jesus (23:18-25)." }
+      ],
+      "refs": ["Luke 14:32", "Luke 23:18", "John 19:15", "Psalm 2:2-3"]
+    },
+    {
+      "v": "15",
+      "context": "The king returns with his kingship secured and calls the servants to account. The accounting, which occupies verses 15 to 26, is the heart of the parable for disciples; the fate of the citizens waits until verse 27.",
+      "grammar": "Kai egeneto en tō epanelthein auton, ‘and it happened, when he returned’, is the Septuagint-style ‘and it came to pass’ followed by an articular infinitive, one of Luke's most characteristic constructions (compare 2:6, 9:51). Labonta tēn basileian, ‘having received the kingship’, confirms that the purpose of verse 12 was achieved. Dedōkei is pluperfect, ‘had given’, looking back to the beginning. Diepragmateusanto, ‘what they had gained by trading’, is a compound of the verb in verse 13 with dia-, suggesting business carried through to its result; it occurs only here in the New Testament.",
+      "words": ["G1880", "G2983", "G0932", "G5455", "G1401", "G0694", "G1281"],
+      "theology": [
+        { "id": "judgment", "note": "The king's first act on return is to ask his own servants what they did with what he entrusted to them. In Luke, judgment begins with those who belong to the household (12:42-48), and the disciples' accountability is the parable's first lesson." }
+      ],
+      "parallels": ["Matthew 25:19"],
+      "refs": ["Luke 12:42-48", "Romans 14:12", "2 Corinthians 5:10", "1 Peter 4:17"]
+    },
+    {
+      "v": "16-19",
+      "context": "The first two servants report tenfold and fivefold gains and are rewarded with authority over ten and five cities. The reward is proportionate to faithfulness and takes the form of greater responsibility in the king's realm, which fits the parable's royal frame better than Matthew's ‘enter into the joy of your master’ (Matthew 25:21).",
+      "grammar": "The first servant's words are careful: hē mna sou, ‘your mina’, has produced ten more. He credits the master's money, not his own skill. Prosērgasato, ‘has earned in addition’, occurs only here in the New Testament. The master's reply opens with euge, ‘well done’, and gives the reason with hoti en elachistō pistos egenou, ‘because in a very small thing you proved faithful’, using the superlative elachistos, ‘least’, as in the saying of 16:10. Isthi exousian echōn, ‘be having authority’, is a present imperative with a participle, installing him in a continuing office. The second servant is not called good and receives no ‘well done’ in the Greek; he is simply given five cities, a reticence commentators have long noticed.",
+      "words": ["G3414", "G4333", "G1646", "G4103", "G1849", "G4172"],
+      "text": "In verse 17 the critical editions read euge, ‘well done’, while the Textus Receptus has the shorter eu, ‘well’, with the same meaning. Matthew 25:21 has eu in all texts.",
+      "theology": [
+        { "id": "return", "note": "Faithfulness during the king's absence is what the returning king rewards, and the reward is a share in his rule. The New Testament elsewhere speaks of disciples reigning with Christ (Luke 22:29-30, 2 Timothy 2:12), and this parable pictures that reign as responsibility, not retirement." }
+      ],
+      "parallels": ["Matthew 25:20-23"],
+      "refs": ["Luke 16:10", "Luke 22:28-30", "Luke 12:43-44", "2 Timothy 2:12"]
+    },
+    {
+      "v": "20-21",
+      "context": "The third servant returns the mina untouched, wrapped in a cloth, and explains that he was afraid of the master's harshness. The story slows here, as parables do at the case that carries the warning.",
+      "grammar": "Heteros, ‘the other’, marks him as different from the two before. Eichon apokeimenēn, ‘I kept it laid away’, uses an imperfect with a present participle for a continuous state: the money lay idle the whole time. Soudarion is a Latin loanword (sudarium, a cloth for wiping sweat), used also of the face-cloth on Lazarus and on Jesus in the tomb (John 11:44, 20:7). Ephoboumēn, ‘I was afraid’, is imperfect, a fear that lasted through the absence. Austēros, ‘severe, exacting’, occurs only in these verses in the New Testament. Airō ho ouk ethēkas, ‘you take up what you did not lay down’, reverses a Greek legal maxim: Plato, in the Laws (913c), cites as a law that one should not take up what one did not lay down.",
+      "words": ["G2087", "G0606", "G4676", "G5399", "G0840", "G0142", "G5087", "G2325"],
+      "theology": [
+        { "id": "fear-of-god", "note": "The servant's fear is not the fear of the LORD that Scripture calls the beginning of wisdom (Proverbs 9:10) but a dread that paralyzes. His picture of his master as harsh and grasping produced the inaction the master condemns. The parable shows how a false view of the one we serve distorts our service." }
+      ],
+      "parallels": ["Matthew 25:24-25"],
+      "refs": ["Matthew 25:24-25", "John 11:44", "1 John 4:18", "Proverbs 9:10"]
+    },
+    {
+      "v": "22-23",
+      "context": "The master condemns the servant from his own mouth. Even on the servant's own account of him, the least he could have done was put the money with the bankers. The judgment is not for losing money but for doing nothing with it.",
+      "grammar": "Ek tou stomatos sou krinō se, ‘out of your mouth I will judge you’, uses the future of krinō. Ponēre doule, ‘wicked servant’, answers agathe doule, ‘good servant’, in verse 17. The next clause, ēdeis hoti, ‘you knew that’, can be read as a question (BSB, ‘So you knew?’) or as a concession (‘You knew, did you, that’); either way the master does not accept the description but argues from it. Verse 23 is an unreal condition: kagō elthōn sun tokō an auto epraxa, ‘and I, coming, would have collected it with interest’, with an and an aorist indicative for what would have happened but did not. Trapeza is the money-changer's table, and tokos, ‘interest’, literally means offspring, money born from money.",
+      "words": ["G4750", "G2919", "G4190", "G1492I", "G5132", "G5110", "G4238"],
+      "history": "Deposit banking was common in the Greek and Roman world, and bankers paid interest on deposits they lent out. The Law of Moses forbade Israelites to charge interest to fellow Israelites but allowed it with foreigners (Deuteronomy 23:19-20), and later Jewish practice developed legal forms to allow commercial partnership. A deposit with the bankers was the minimum a steward could do; Jewish law held that burying money was the safe course for a trustee (b. Bava Metzia 42a), which makes the third servant's cloth careless by the standards of either culture.",
+      "theology": [
+        { "id": "judgment", "note": "The servant is judged by the standard he himself professed. Jesus said elsewhere that by your words you will be justified or condemned (Matthew 12:37). The parable does not endorse the servant's picture of the master; it shows that even that picture should have produced action." }
+      ],
+      "parallels": ["Matthew 25:26-27"],
+      "refs": ["Matthew 12:37", "Job 15:6", "Deuteronomy 23:19-20", "Luke 12:47-48"]
+    },
+    {
+      "v": "24-26",
+      "context": "The unused mina is taken away and given to the servant who has ten. The bystanders protest, and the king answers with a principle Jesus has stated before (8:18): to the one who has, more will be given; from the one who has not, even what he has will be taken.",
+      "grammar": "Tois parestōsin, ‘to those standing by’, perfect participle, are the king's attendants, as in royal courts (compare 1:19, where Gabriel ‘stands’ before God). Arate and dote are aorist imperatives, sharp commands. In verse 26 the passives dothēsetai, ‘will be given’, and arthēsetai, ‘will be taken away’, leave the agent unstated; in a saying about the kingdom most interpreters take them as divine passives, describing what God does. The paradox ‘even what he has’ plays on echō: the man who does not truly ‘have’ in the sense of using and bearing fruit loses what he merely held.",
+      "words": ["G3936", "G0142", "G1325", "G3414", "G2192", "G0142"],
+      "text": "Verse 25, the bystanders' objection, is missing from Codex Bezae, most Old Latin manuscripts, the Sinaitic and Curetonian Syriac, and the Bohairic Coptic. It is present in the great majority of Greek manuscripts, including Sinaiticus and Vaticanus, and editors keep it. Without it the king's words in verse 26 follow directly on his command in verse 24; with it, verse 26 answers an objection, which fits the parable's dialogue form.",
+      "theology": [
+        { "id": "wealth", "note": "What God entrusts grows by being used and withers by being hoarded. The principle is not an endorsement of the rich getting richer; in 8:18 the same saying concerns how one hears the word, and here it concerns what one does with the master's goods." }
+      ],
+      "parallels": ["Matthew 25:28-29"],
+      "refs": ["Luke 8:18", "Matthew 13:12", "Mark 4:25", "Matthew 25:28-29"]
+    },
+    {
+      "v": "27",
+      "context": "The parable ends with the second plot line: the citizens who refused the king's rule are brought and executed before him. The chapter note's first hard question discusses how this verse relates to Jesus; here the verse's connection to what follows matters most, since within twenty verses Jesus weeps over the city that will not have him as king (verses 41-44).",
+      "grammar": "Plēn, ‘but, however’, turns from the servants to the enemies. Tous echthrous mou toutous, ‘these enemies of mine’, identifies them explicitly with the citizens of verse 14 through the repeated phrase mē thelēsantas me basileusai ep' autous, ‘those who did not want me to reign over them’. Katasphaxate, ‘slaughter’, an aorist imperative, occurs only here in the New Testament. Emprosthen mou, ‘before me’, keeps the courtroom frame of an ancient king dispensing judgment in person.",
+      "words": ["G4133", "G2190", "G2309", "G0936", "G0071", "G2695", "G1715"],
+      "theology": [
+        { "id": "judgment", "note": "The verse ties judgment to the refusal of a king, not to ignorance or weakness. Luke will shortly place Jesus' grief beside that judgment (verse 41), and he gives no disciple the right to carry it out: the king himself judges, and his servants are only summoned to give account." }
+      ],
+      "refs": ["Luke 19:14", "Luke 19:41-44", "Luke 20:16", "Acts 17:31"]
+    },
+    {
+      "v": "28",
+      "context": "A transition that closes the road section begun at 9:51. Jesus goes on ahead, up to Jerusalem, the city toward which Luke's whole travel narrative has been moving.",
+      "grammar": "Eporeueto emprosthen, ‘he was going on ahead’, is imperfect, picturing the procession in motion with Jesus leading, as in Mark 10:32. Anabainōn, ‘going up’, is the usual verb for travel to Jerusalem, which stood on high ground; from Jericho the climb was literal, well over a thousand meters. The verse echoes 9:51, where he set his face to go to Jerusalem, and 18:31, ‘we are going up to Jerusalem’, where he foretold his suffering there.",
+      "words": ["G4198", "G1715", "G0305", "G2414"],
+      "theology": [
+        { "id": "atonement", "note": "Luke has told the reader three times what waits in Jerusalem (9:22, 9:44, 18:31-33). Jesus going ‘ahead’ is not led there by events but leads the way, walking into the suffering he foretold." }
+      ],
+      "refs": ["Luke 9:51", "Luke 18:31-33", "Mark 10:32", "Luke 13:33"]
+    },
+    {
+      "v": "29-31",
+      "context": "At Bethphage and Bethany on the eastern slope of the Mount of Olives, Jesus sends two disciples for a colt, telling them exactly what they will find and what to say. The detailed instructions show him in control of events as they near their climax, as in the preparation of the Passover (22:8-13).",
+      "grammar": "Pros to oros to kaloumenon Elaiōn, ‘at the mount called Olivet’, contains a small puzzle: Elaiōn can be accented as the genitive plural of elaia, ‘of olives’, or as a noun Elaiōn, ‘olive grove, Olivet’, which Luke clearly uses in Acts 1:12. Editors differ over which form stands here and in 21:37; the meaning is the same. Pōlon dedemenon, ‘a colt tied’, uses a perfect participle, and eph' hon oudeis pōpote anthrōpōn ekathisen, ‘on which no one of men has ever yet sat’, stresses the animal's newness, in words close to Luke's description of the tomb ‘where no one had yet been laid’ (23:53).",
+      "words": ["G0967", "G0963", "G1638", "G4454", "G1210", "G4455", "G2523"],
+      "history": "Luke, like Mark, calls the animal simply pōlos, ‘colt’, without saying what kind. Walter Bauer (Journal of Biblical Literature, 1953) argued that in ordinary Greek pōlos by itself meant a young horse. Most scholars reply that in the Greek Old Testament's key texts the word means a donkey's foal (Genesis 49:11, Zechariah 9:9), that Matthew and John identify it as a donkey, and that the Gospel writers are evoking those passages. An animal not yet ridden was fit for sacred use, as the unyoked heifer and the new cart that carried the ark (Numbers 19:2, 1 Samuel 6:7).",
+      "parallels": ["Mark 11:1-3", "Matthew 21:1-3", "John 12:14-15"],
+      "refs": ["Luke 22:8-13", "Genesis 49:11", "Numbers 19:2", "1 Samuel 6:7", "Luke 23:53"]
+    },
+    {
+      "v": "32-34",
+      "context": "Everything happens as Jesus said. Luke alone mentions that it was the colt's owners who asked why it was being untied, and the disciples' answer, word for word as Jesus gave it, satisfies them.",
+      "grammar": "Luke builds a play on kurios. The owners are hoi kurioi autou, ‘its masters’ (verse 33), and the answer is ho kurios autou chreian echei, ‘its Lord needs it’ (verses 31, 34). The plural owners yield to the one Lord. Kathōs eipen autois, ‘just as he had told them’, is Luke's fulfillment formula for Jesus' words, used again at the Passover preparation (22:13). Luontōn autōn is a genitive absolute, ‘as they were untying’, catching the owners' question mid-action.",
+      "words": ["G0649", "G2147", "G2531", "G3089", "G2962H", "G2962G", "G5532"],
+      "theology": [
+        { "id": "providence", "note": "The fulfilled instructions show Jesus knowing and arranging what lies ahead. Whether the owners were prepared disciples or the knowledge was supernatural, Luke does not say; his point is that the entry happens on Jesus' terms, not by accident." }
+      ],
+      "parallels": ["Mark 11:4-6", "Matthew 21:6"],
+      "refs": ["Luke 22:10-13", "Luke 24:44", "John 13:19"]
+    },
+    {
+      "v": "35-36",
+      "context": "The disciples put their cloaks on the colt and set Jesus on it, and as he rides, people spread their cloaks on the road. Luke says nothing of branches, which Mark, Matthew, and John mention; the cloaks alone carry the royal meaning.",
+      "grammar": "Epebibasan ton Iēsoun, ‘they set Jesus on it’, uses a causative verb, ‘to cause to mount’, the same verb the Greek of 1 Kings 1:33 uses when David orders his servants to set Solomon on the king's own mule for his anointing. The disciples do not merely lend an animal; they seat Jesus as the king's servants seated David's heir. Hupestrōnnuon, ‘they were spreading underneath’, is imperfect, picturing cloaks laid one after another along the way; it occurs only here in the New Testament.",
+      "words": ["G0071", "G1977", "G2440", "G1913", "G5291", "G3598"],
+      "history": "Spreading garments before a new king appears when Jehu is proclaimed (2 Kings 9:13). Mark's verse notes describe the palm branches of Maccabean victories (1 Maccabees 13:51); Luke's omission of branches, and of the Hebrew cry Hosanna in verse 38, keeps his scene within the symbols a Gentile reader would grasp.",
+      "theology": [
+        { "id": "messiah", "note": "Luke never quotes Zechariah 9:9, but the act of seating Jesus on a colt, told in the language of Solomon's accession, presents him as the son of David coming to his city as king. The humility of the mount is as deliberate as the royalty of the homage." }
+      ],
+      "ot": [
+        { "ref": "Zechariah 9:9", "note": "Zechariah calls Zion to rejoice because her king comes, in the Hebrew tsaddiq venosha hu, ‘righteous and saved (or victorious)’, ani, ‘humble’, riding on a donkey, on a colt the foal of she-donkeys. The next verse says he will cut off the chariot and war horse from Jerusalem and speak peace to the nations. The Septuagint renders the animals as hupozugion kai pōlon neon, ‘a beast of burden and a young colt’. Matthew 21:5 and John 12:15 quote the verse; Mark and Luke only enact it, and Luke's language of peace in verses 38 and 42 draws on the same oracle's promise of a king who brings peace." },
+        { "ref": "1 Kings 1:33", "note": "David, to settle the succession, orders that Solomon be set on the king's own mule and brought down to Gihon to be anointed, and the people then proclaim him king with rejoicing (1:38-40). The Septuagint uses epibibazō, the verb of Luke 19:35. The echo is verbal and slight, but it matches Luke's emphasis on Jesus as David's son (1:32, 18:38)." }
+      ],
+      "parallels": ["Mark 11:7-8", "Matthew 21:7-8", "John 12:14"],
+      "refs": ["Zechariah 9:9-10", "1 Kings 1:33-40", "2 Kings 9:13", "Matthew 21:5"]
+    },
+    {
+      "v": "37",
+      "context": "At the point where the road starts down the western slope of the Mount of Olives, and the city comes into view, the whole crowd of disciples begins to praise God loudly for the mighty works they have seen. Luke specifies the place and the singers: this is the praise of disciples, not the city.",
+      "grammar": "Engizontos autou ēdē pros tē katabasei, ‘as he was now drawing near, at the descent’, is a genitive absolute with the precise topographical detail only Luke gives. Hapan to plēthos tōn mathētōn, ‘the whole multitude of the disciples’, uses Luke's word plēthos, frequent in Acts for the believing community (Acts 4:32, 6:2). Chairontes ainein ton theon, ‘rejoicing, to praise God’, is the response of the shepherds (2:20) and of the crowd after the Jericho healing (18:43). Peri pasōn hōn eidon dunameōn, ‘for all the mighty works they had seen’, uses dunamis, ‘power’, Luke's word for miracles as displays of God's power.",
+      "words": ["G1448", "G2600", "G4128", "G3101", "G5463", "G0134", "G1411"],
+      "theology": [
+        { "id": "worship", "note": "The disciples' praise is directed to God for what he has done through Jesus. Luke's Gospel is framed by such praise, from the angels and shepherds at the birth (2:13, 2:20) to the disciples blessing God in the temple at the end (24:53)." }
+      ],
+      "refs": ["Luke 2:13", "Luke 2:20", "Luke 18:43", "Luke 24:52-53", "Zechariah 14:4"]
+    },
+    {
+      "v": "38",
+      "context": "The disciples' song. Its first line is the pilgrim blessing of Psalm 118:26 with the word ‘King’ added; its second line echoes the angels at the birth, but places the peace in heaven. At the beginning of the Gospel heaven announced peace on earth; now, as the king approaches the city that will reject him, the disciples sing of peace in heaven.",
+      "grammar": "Eulogēmenos, ‘blessed’, is a perfect passive participle, the regular Septuagint rendering of the Hebrew barukh: one who stands under God's blessing. Luke places ho basileus, ‘the King’, after ho erchomenos, ‘the one who comes’, so that the phrase reads ‘Blessed is the one coming, the King’. The second line, en ouranō eirēnē kai doxa en hupsistois, ‘in heaven peace and glory in the highest’, has no verb and sets two parallel phrases side by side, as the angels' song did (2:14).",
+      "words": ["G2127", "G2064", "G0935", "G3686", "G2962G", "G3772", "G1515", "G1391", "G5310"],
+      "text": "The Greek manuscripts differ in how they attach ‘the King’. The critical editions read ho erchomenos ho basileus, with a second article, while the Byzantine text reads ho erchomenos basileus, ‘the coming King’. The difference is slight in meaning. Luke's form of the acclamation differs from each of the other Gospels: Mark adds ‘Blessed is the coming kingdom of our father David’ (Mark 11:10), Matthew ‘Hosanna to the Son of David’ (Matthew 21:9), and John ‘the King of Israel’ (John 12:13).",
+      "theology": [
+        { "id": "messiah", "note": "By inserting ‘the King’ into the psalm, the disciples name Jesus as the royal Messiah openly for the first time in Luke's narrative. The angel had promised Mary that God would give her son the throne of David (1:32-33), and the charge at his trial will be that he claims to be Christ, a king (23:2)." }
+      ],
+      "ot": [
+        { "ref": "Psalm 118:26", "note": "The Hebrew reads barukh habba beshem YHWH, ‘blessed is the one who comes in the name of the LORD’, and continues ‘we bless you from the house of the LORD’. In the psalm, priests welcome the pilgrim or king arriving at the temple after God has rescued him. The Septuagint (Psalm 117:26) renders it eulogēmenos ho erchomenos en onomati kuriou, which Luke keeps exactly while inserting ho basileus. Jesus had quoted the same verse in his lament over Jerusalem, saying the city would not see him until it said these words (13:35); the disciples say them now, and the city does not. The same psalm supplies the rejected stone of 20:17." }
+      ],
+      "parallels": ["Mark 11:9-10", "Matthew 21:9", "John 12:13"],
+      "refs": ["Luke 2:14", "Luke 13:35", "Luke 1:32-33", "Luke 23:2-3"]
+    },
+    {
+      "v": "39-40",
+      "context": "Some Pharisees in the crowd tell Jesus to rebuke his disciples, presumably for calling him King. Jesus refuses: if these were silent, the stones would shout. The exchange is found only in Luke, and it is the last time the Pharisees appear in his Gospel.",
+      "grammar": "Epitimēson, ‘rebuke’, is an aorist imperative, the verb Jesus uses of rebuking demons and fever (4:35, 4:39); the Pharisees want him to silence the praise. His answer is a condition of an unusual form. Ean normally takes the subjunctive, but the critical text reads ean houtoi siōpēsousin, with a future indicative, ‘if these will be silent’, a construction found in later Greek that makes the case more vivid. The main clause, hoi lithoi kraxousin, ‘the stones will cry out’, uses krazō, a verb of loud shouting. The Textus Receptus reads the expected subjunctive siōpēsōsin and a future perfect form of the second verb, kekraxontai, which the King James Version renders ‘would immediately cry out’.",
+      "words": ["G5330", "G3793", "G1320", "G2008", "G3101", "G4623", "G3037", "G2896"],
+      "theology": [
+        { "id": "creation", "note": "Jesus claims that creation itself would acknowledge him if human beings refused. Scripture elsewhere pictures the nonhuman world praising God (Psalm 96:11-13, Psalm 98:8) and groaning for its redemption (Romans 8:19-22); here that witness is focused on the king entering his city." }
+      ],
+      "ot": [
+        { "ref": "Habakkuk 2:11", "note": "In a woe against a plundering power that builds its house by unjust gain, Habakkuk says the stone will cry out from the wall and the beam will answer from the woodwork. The Hebrew uses za'aq, ‘cry out’; the Septuagint has lithos ek toichou boēsetai. The wording differs from Luke's, and the likeness may be thematic, but in Habakkuk the stones testify against injustice, and in Luke's next verses Jesus pronounces judgment on a city that will be left with no stone on another (verse 44)." }
+      ],
+      "refs": ["Habakkuk 2:11", "Psalm 98:8", "Luke 3:8", "Romans 8:19-22"]
+    },
+    {
+      "v": "41-42",
+      "context": "As the city comes into full view, Jesus weeps over it. The disciples have just sung of peace; he mourns that Jerusalem did not recognize what would bring it peace. Only Luke records this lament, and it turns the triumphal entry into a scene of grief.",
+      "grammar": "Eklausen ep' autēn, ‘he wept over it’, uses klaiō, the loud weeping of mourning, with epi, ‘over’, the preposition of grief for someone (23:28). Verse 42 begins ei egnōs, ‘if you had known’, a condition contrary to fact whose second half is never spoken. Grammarians call the device aposiopesis, breaking off a sentence under emotion; English translations supply ‘if only’. Kai su, ‘even you’ or ‘you too’, suggests that Jerusalem, of all places, should have known. Ta pros eirēnēn, ‘the things that make for peace’, is an idiom for terms of peace (compare 14:32, ta pros eirēnēn, with the same words). Ekrubē, ‘it was hidden’, is an aorist passive; many interpreters read it as a divine passive, as in 18:34, where the meaning of the passion was hidden from the disciples.",
+      "words": ["G4172", "G2799", "G1097", "G2250", "G1515", "G3568", "G2928", "G3788"],
+      "theology": [
+        { "id": "judgment", "note": "The coming judgment is announced with tears. Jesus grieves over the city's blindness rather than celebrating its punishment, and the hiddenness is itself part of the judgment, as in the prophets' warning that a people who would not see would be left unable to see (Isaiah 6:9-10)." },
+        { "id": "love", "note": "The weeping of Jesus over those who reject him shows the heart of God toward the rebellious. The prophets had spoken of God's grief over his people (Jeremiah 9:1, Hosea 11:8), and here that grief has a human face." }
+      ],
+      "refs": ["Luke 13:34-35", "Jeremiah 9:1", "Luke 14:32", "Luke 18:34", "Isaiah 6:9-10"]
+    },
+    {
+      "v": "43-44",
+      "context": "The sentence follows the lament. Days are coming when enemies will encircle Jerusalem, raze it with its children, and leave no stone on another, because it did not recognize the time of its visitation. The oracle moves from the siege to the destruction to its cause, in the classic order of prophetic judgment.",
+      "grammar": "Hoti hēxousin hēmerai epi se, ‘for days will come upon you’, is prophetic idiom (Jeremiah 7:32, Amos 4:2 in the Greek). Five future verbs follow, each with se, ‘you’, as object, hammering on the city: parembalousin, ‘they will set up’, a barricade; perikuklōsousin, ‘they will encircle’; sunexousin, ‘they will hem in’; edaphiousin, ‘they will dash to the ground’; ouk aphēsousin, ‘they will not leave’. Charax is a palisade or siege rampart of stakes and earth, found only here in the New Testament. Edaphizō means both to level a building and to dash a person to the ground, and it has both objects here, the city and its children. Anth' hōn, ‘because’, introduces the cause: ouk egnōs ton kairon tēs episkopēs sou, ‘you did not recognize the time of your visitation’.",
+      "words": ["G2240", "G2190", "G6070", "G5482", "G4033", "G4912", "G1474", "G5043", "G3037", "G0473", "G1097", "G2540", "G1984"],
+      "history": "In AD 70 the Roman army under Titus first raised earthworks against the walls of Jerusalem, and when the defenders destroyed them, built a wall of circumvallation around the entire city, which Josephus says was finished in three days, so that no one could escape (Jewish War 5.499-511). After the city fell, Titus ordered it and the temple razed, leaving only three towers and part of the western wall to show what Roman power had overcome (Jewish War 7.1-3). The chapter note discusses whether the wording depends on that event or on the Old Testament's language of sieges.",
+      "text": "In verse 43 the critical editions read parembalousin, ‘they will throw up’, while the Byzantine text has peribalousin, ‘they will throw around’. Both describe building a siege work around the city.",
+      "theology": [
+        { "id": "judgment", "note": "The cause of judgment is named as a failure to recognize God's visitation. In Luke 1:68 and 7:16 people praise God for visiting his people in Jesus; here the same visit, unrecognized, becomes the ground of judgment. Judgment in this verse is the consequence of refusing the one who came to bring peace." }
+      ],
+      "ot": [
+        { "ref": "Isaiah 29:3", "note": "Isaiah's oracle against Ariel, a name for Jerusalem, has God say he will encamp against the city all around and lay siege to it with works. The Septuagint reads kai balō peri se charaka, ‘and I will throw a rampart around you’, the same noun Luke uses. Ezekiel 4:2 has the prophet act out a siege of Jerusalem with a rampart and camps. Luke's words echo those prophecies of the Babylonian siege, and Psalm 137:9 and Hosea 10:14 in the Greek use edaphizō of children dashed to the ground. Jesus speaks of Jerusalem's second destruction in the language of its first." }
+      ],
+      "refs": ["Luke 21:6", "Luke 21:20-24", "Luke 1:68", "Jeremiah 6:15", "Ezekiel 4:2"]
+    },
+    {
+      "v": "45-46",
+      "context": "Jesus enters the temple courts and begins to drive out the sellers, citing Isaiah and Jeremiah. Luke tells it in two verses, far more briefly than Mark, and omits the money changers, the dove sellers, and the ban on carrying goods through. The emphasis falls on the words, not the act, and on the temple becoming the place of Jesus' teaching (verse 47).",
+      "grammar": "Ērxato ekballein, ‘he began to drive out’, uses Luke's frequent ‘began to’ with a present infinitive. Gegraptai, ‘it stands written’, is a perfect passive, Scripture as a standing authority. The quotation reads kai estai ho oikos mou oikos proseuchēs, ‘and my house will be a house of prayer’, with the future estai, ‘will be’, where Isaiah's Greek has klēthēsetai, ‘will be called’. The contrast is sharp: humeis de auton epoiēsate, ‘but you have made it’, with the emphatic pronoun humeis, ‘you yourselves’. Spēlaion lēstōn, ‘a cave of bandits’, uses lēstēs, the word Luke uses of the robbers in the parable of the Samaritan (10:30) and of the kind of man the arresting party took Jesus for (22:52).",
+      "words": ["G2411", "G0757", "G1544", "G4453", "G1125", "G3624G", "G4335", "G4693", "G3027"],
+      "theology": [
+        { "id": "temple", "note": "Jesus calls the temple ‘My house’, in words where God speaks in Isaiah, and acts to restore its purpose as a house of prayer. In Luke the temple is where the Gospel begins (1:8-10) and ends (24:53), and Jesus does not abandon it but occupies it as its rightful teacher until the end." }
+      ],
+      "ot": [
+        { "ref": "Isaiah 56:7", "note": "In Isaiah 56 God promises that foreigners and eunuchs who hold fast his covenant will be brought to his holy mountain, for his house will be called a house of prayer for all the peoples (Hebrew beit-tefillah yiqqare lekhol ha'ammim). The Septuagint has pasin tois ethnesin, ‘for all the nations’, which Mark keeps (Mark 11:17) and Luke and Matthew omit. The chapter note sets out the explanations for Luke's shorter form." },
+        { "ref": "Jeremiah 7:11", "note": "In his temple sermon Jeremiah asks whether the house called by God's name has become a cave of robbers in the people's eyes, since they commit crimes and then take refuge in the temple as if it made them safe. The Hebrew is me'arat paritsim, ‘a cave of violent men’, and the Septuagint's spēlaion lēstōn is Luke's phrase. Jeremiah went on to warn that God would do to this house what he had done to Shiloh (7:12-14), so the quotation carries the threat of verses 43-44 into the temple itself." }
+      ],
+      "parallels": ["Mark 11:15-17", "Matthew 21:12-13", "John 2:13-17"],
+      "refs": ["Isaiah 56:6-8", "Jeremiah 7:9-14", "Malachi 3:1", "Luke 2:49"]
+    },
+    {
+      "v": "47-48",
+      "context": "A summary that opens the frame of Jesus' last days: he teaches daily in the temple, the leaders seek to destroy him, and the people's devotion prevents them. The same frame closes at 21:37-38, and between the two notices come the debates of chapter 20 and the discourse of chapter 21.",
+      "grammar": "Ēn didaskōn, ‘he was teaching’, is a periphrastic imperfect, a continuing practice; to kath' hēmeran, ‘day by day’. The leaders ezētoun auton apolesai, ‘were seeking to destroy him’, and the verbs are pointed: in verse 10 the Son of Man came zētēsai kai sōsai to apolōlos, ‘to seek and to save the lost’; here the leaders seek to destroy (apollumi) the one who seeks the lost. Hoi prōtoi tou laou, ‘the first men of the people’, are the lay notables alongside the priests and scribes. Exekremato autou akouōn, ‘was hanging on him, listening’, uses ekkremannumi, found only here in the New Testament; in the Greek of Genesis 44:30 it describes Jacob's life as bound up with Benjamin's.",
+      "words": ["G1321", "G2250", "G2411", "G0749", "G1122", "G2212", "G0622", "G4413J", "G2992", "G1582", "G0191"],
+      "theology": [
+        { "id": "salvation", "note": "The verbal irony of seeking and destroying sets the leaders against the purpose of Jesus stated in verse 10. Those who should have been shepherds seek to destroy the shepherd who seeks the lost, and Luke's passion story will show God turning their destruction of him into the salvation of many (Acts 2:23-24)." }
+      ],
+      "parallels": ["Mark 11:18"],
+      "refs": ["Luke 21:37-38", "Luke 20:19", "Luke 22:2", "Genesis 44:30"]
+    }
+  ]
+}
