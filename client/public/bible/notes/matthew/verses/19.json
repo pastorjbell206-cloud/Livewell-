@@ -1,0 +1,323 @@
+{
+  "verses": [
+    {
+      "v": "1-2",
+      "context": "The formula that closes each of Matthew's five discourses ends the teaching on the community (chapter 18) and turns the story south. Jesus leaves Galilee, crosses into the territory east of the Jordan, and the crowds follow him. Where Mark says he taught them (Mark 10:1), Matthew says he healed them, and the controversy that follows is set against a scene of mercy.",
+      "grammar": "Etelesen tous logous toutous, ‘he finished these words’, is the fixed wording Matthew uses at 7:28, 11:1, 13:53, and 26:1, each time with an aorist of teleō, ‘complete’. The verb for leaving, metēren (from metairō, ‘move away’), occurs in the New Testament only here and at 13:53, both times right after a discourse closes. The phrase ta horia tēs Ioudaias peran tou Iordanou, ‘the regions of Judea beyond the Jordan’, is compressed: Perea was not part of Roman Judea, and Matthew seems to name the whole southern territory Jesus is heading into, reached by the road east of the river.",
+      "words": ["G5055", "G3332", "G3725", "G4008", "G2323"],
+      "history": "Galilean pilgrims going south for Passover could cross Samaria, which Josephus says was their custom (Antiquities 20.118), or cross the Jordan, walk down its eastern side, and recross near Jericho, which is the route Jesus takes (20:29). Matthew has already said that crowds came to Jesus from beyond the Jordan early in his ministry (4:25), so he now enters a region where he was known.",
+      "parallels": ["Mark 10:1"],
+      "refs": ["Matthew 7:28", "Matthew 13:53", "Matthew 26:1", "Matthew 4:25"]
+    },
+    {
+      "v": "3",
+      "context": "The Pharisees open a test with the most divisive legal question of the day. Matthew alone gives the question its full wording, ‘for any reason’, which names one side of a live dispute over Deuteronomy 24:1 and invites Jesus to choose between the schools.",
+      "grammar": "Peirazontes, ‘testing’, is the participle Matthew used of the devil in the wilderness (4:1, 3) and will use again of the Pharisees in 22:35: the question is a trap. Ei exestin, ‘is it lawful’, introduces a direct question with ei, a usage found in the Septuagint. Kata pasan aitian, ‘according to every cause’, uses kata with the accusative for the ground of an action; aitia can mean a cause, a charge, or a legal ground. David Instone-Brewer (Divorce and Remarriage in the Bible, 2002) argued that ‘any cause’ was a recognized label for the Hillelite form of divorce, much as ‘no-fault’ is a label today; the chapter note sets out that debate. The disciples will pick up the same noun in verse 10.",
+      "words": ["G3985H", "G1832", "G0630H", "G0156", "G2596"],
+      "history": "Easy divorce was not only a rabbinic position. Ben Sira, writing in Jerusalem around 180 BC, advised a husband whose wife would not do as he directed to cut her off from his flesh (Sirach 25:26), language that stands in pointed contrast to the ‘one flesh’ Jesus is about to quote. At the other end, Malachi had condemned men who broke faith with the wife of their youth (Malachi 2:14-16). The question therefore asked Jesus to place himself within a spectrum that ran from casual dismissal to near prohibition.",
+      "text": "Westcott and Hort print the question without ‘for a man’ (anthrōpō); most editions and English Bibles include it. The sense does not change, since only a husband could divorce under Jewish law.",
+      "parallels": ["Mark 10:2"],
+      "refs": ["Deuteronomy 24:1", "Malachi 2:14-16", "Matthew 22:35"]
+    },
+    {
+      "v": "4-5",
+      "context": "Jesus answers the question about a husband's rights by going behind Moses to creation. He joins two texts from the first chapters of Genesis, the making of humanity as male and female and the leaving and joining of marriage, and in Matthew he treats both as the Creator's own words.",
+      "grammar": "Ouk anegnōte, ‘have you not read’, is Jesus' reproach to experts in Scripture, repeated at 12:3, 12:5, 21:16, 21:42, and 22:31. Ho ktisas, ‘the one who created’, is an aorist participle naming God by his act. The next clause makes the same subject speak: kai eipen, ‘and said’. In Genesis 2:24 the words about leaving father and mother are the narrator's comment, but Matthew's sentence makes the Creator their speaker, so the definition of marriage carries God's authority, not only Moses'. The future verbs (kataleipsei, ‘will leave’; kollēthēsetai, ‘will be joined’; esontai, ‘will be’) are the Septuagint's rendering of the Hebrew and describe what marriage is, not a single prediction. Esontai eis sarka mian uses eis with the accusative for what something becomes, a construction taken over from the Hebrew preposition le.",
+      "words": ["G0314", "G2936", "G2036", "G2641", "G2853", "G4561"],
+      "text": "The critical editions read ho ktisas, ‘the Creator’; later manuscripts read ho poiēsas, ‘he who made’, perhaps under the influence of the next verb (epoiēsen), which gives the King James Version ‘he which made them’. In verse 5 the critical text has kollēthēsetai tē gunaiki, ‘will be joined to his wife’; the Textus Receptus has proskollēthēsetai, the Septuagint's compound verb, a change that brings the quotation closer to Genesis.",
+      "ot": [
+        {
+          "ref": "Genesis 1:27",
+          "note": "The Hebrew zakhar uneqevah bara otam, ‘male and female he created them’, closes the account of humankind made in God's image. Matthew's arsen kai thēlu epoiēsen autous is the Septuagint's wording. The Damascus Document from the Dead Sea community cites the same line as the principle of creation against a man taking a second wife in his lifetime (CD 4:20-21). Jesus uses it to show that the pairing of man and woman comes from the Creator's design before any law of divorce was given."
+        },
+        {
+          "ref": "Genesis 2:24",
+          "note": "The Hebrew says a man leaves father and mother, clings (davaq) to his wife, and they become basar echad, ‘one flesh’. The Hebrew has no ‘the two’; the Septuagint and the Samaritan Pentateuch add hoi duo, and Matthew, Mark, and Paul (1 Corinthians 6:16, Ephesians 5:31) follow the Greek. In Genesis the verse comments on the woman's creation from the man's side; ‘one flesh’ names a bond of kinship as real as blood, a new family. By adding ‘the two’ and then drawing the inference in verse 6, Jesus stresses that two persons have become one unit that no one may cut in half."
+        }
+      ],
+      "theology": [
+        {
+          "id": "creation",
+          "note": "Jesus makes creation, not later legislation, the measure of marriage. The order God made ‘from the beginning’ still binds, which is why he can use Genesis to judge a practice the law had tolerated."
+        }
+      ],
+      "parallels": ["Mark 10:6-8"],
+      "refs": ["Genesis 1:27", "Genesis 2:24", "1 Corinthians 6:16", "Ephesians 5:31"]
+    },
+    {
+      "v": "6",
+      "context": "Jesus draws his own conclusion from Genesis and turns it into a command. The marriage is a union God has made, so no human being has authority to undo it. The sentence answers the Pharisees' question without taking either school's side.",
+      "grammar": "Hōste, ‘so that’, introduces the inference with a present tense: ouketi eisin duo alla sarx mia, ‘they are no longer two but one flesh’. The union is a present state, not an aspiration. Ho oun ho theos sunezeuxen uses the neuter relative ho, ‘what’, not ‘those whom’: the object is the union itself. Suzeugnumi means to yoke together, the picture of two animals under one yoke, and it was a common Greek word for marriage. Chōrizetō is a present imperative in the third person, ‘let no human being be separating’. The contrast of ho theos, ‘God’, and anthrōpos, ‘a human being’, sets divine authority against every human one, including the husband who held the power of dismissal.",
+      "words": ["G5620", "G4561", "G4801", "G5563", "G2316"],
+      "theology": [
+        {
+          "id": "family",
+          "note": "The verse locates the permanence of marriage in God's act, not in the couple's feelings or a contract's terms. It is the text the 1662 Book of Common Prayer places in the marriage service, and every Christian tradition reads it as teaching that marriage is meant to be lifelong, whatever else they conclude about divorce."
+        }
+      ],
+      "parallels": ["Mark 10:8-9"],
+      "refs": ["Malachi 2:15", "1 Corinthians 7:10-11", "Ephesians 5:31-32"]
+    },
+    {
+      "v": "7-8",
+      "context": "The Pharisees counter with Moses: if God forbids separation, why does the law provide a certificate of divorce? Jesus replies that Moses permitted divorce because of hard hearts, and he repeats his appeal to ‘the beginning’. The law regulated a broken practice; it did not define God's will for marriage.",
+      "grammar": "The verbs carry the argument. The Pharisees say Moses eneteilato, ‘commanded’; Jesus answers that Moses epetrepsen, ‘permitted’. In Mark the order is reversed, with Jesus asking what Moses commanded and the Pharisees answering with what he permitted (Mark 10:3-4); either way, the debate turns on the difference between a command and a concession. Pros tēn sklērokardian humōn, ‘in view of your hardness of heart’, uses pros for the occasion of the law, and the pronoun is ‘your’, not ‘their’: Jesus includes his hearers in the stubbornness the law had to accommodate. Ap' archēs de ou gegonen houtōs, ‘but from the beginning it has not been so’, uses a perfect, gegonen, for a state that holds from creation until now; the concession never changed the design.",
+      "words": ["G1781", "G0647", "G2010", "G4641", "G0746", "G1096"],
+      "ot": [
+        {
+          "ref": "Deuteronomy 24:1-4",
+          "note": "The Hebrew is one long case law whose conditions run through verses 1 to 3 (a man finds in his wife ervat davar, ‘something indecent’, writes her a sefer keritut, ‘a document of cutting off’, and she marries another) and whose only command is verse 4: the first husband may not take her back. The Septuagint renders the grounds aschēmon pragma, ‘a shameful matter’, and the document biblion apostasiou, the phrase the Pharisees use. The law assumes divorce and limits it; it nowhere commands it. The prophets later used the certificate as an image of God's own grief, picturing him handing faithless Israel a bill of divorce (Jeremiah 3:8, compare Isaiah 50:1), which shows how the institution was felt: as the record of a covenant broken."
+        }
+      ],
+      "theology": [
+        {
+          "id": "law",
+          "note": "Jesus distinguishes within the law between what reveals God's design and what restrains human sin. The certificate was a real part of Moses' law, given by God, yet it was fitted to hard hearts; reading Deuteronomy through Genesis is how Jesus fulfills the law rather than abolishing it (5:17)."
+        }
+      ],
+      "parallels": ["Mark 10:3-5"],
+      "refs": ["Deuteronomy 24:1-4", "Jeremiah 3:8", "Ezekiel 36:26", "Matthew 5:17"]
+    },
+    {
+      "v": "9",
+      "context": "Jesus gives his ruling with the solemn ‘I tell you’ of the Sermon on the Mount (5:32). A man who divorces his wife and marries another commits adultery, except where the divorce is for sexual immorality. The sentence binds the husband, the one who held the power to end the marriage, to the same standard he applied to his wife.",
+      "grammar": "Legō de humin, ‘but I say to you’, is the formula of the antitheses in chapter 5. The main clause joins two aorist subjunctives in an indefinite relative clause, hos an apolusē ... kai gamēsē allēn, ‘whoever divorces ... and marries another’, and ends with a present, moichatai, ‘commits adultery’. The exception, mē epi porneia, is terse: literally ‘not on the ground of porneia’, with mē doing the work of ‘except’. In 5:32 Matthew wrote parektos logou porneias, ‘apart from a matter of porneia’, which mirrors the Hebrew ervat davar of Deuteronomy 24:1. Most grammarians read mē epi here as a true exception. Bruce Vawter, in a 1954 article in the Catholic Biblical Quarterly, argued for a ‘preteritive’ reading, ‘setting aside the matter of porneia’, as if Jesus declined to address that case; Vawter later abandoned the view, and few now hold it. What the word porneia covers (adultery, sexual sin more broadly, unfaithfulness during betrothal, or marriage within forbidden kinship) is the question the traditions answer differently, as the chapter note explains.",
+      "words": ["G3004G", "G0630H", "G4202", "G1060", "G3429"],
+      "text": "The saying circulated in three forms. The text of most modern Bibles, found in Codex Sinaiticus among others, reads ‘except for sexual immorality, and marries another woman, commits adultery’. Codex Vaticanus and a few others give the exception in the wording of 5:32, ‘except on the ground of sexual immorality, makes her commit adultery’. Many manuscripts, including Vaticanus and the Byzantine majority, then add ‘and whoever marries a divorced woman commits adultery’, which the King James Version prints; editors judge it an addition from 5:32, and it is absent from Sinaiticus and Codex Bezae.",
+      "theology": [
+        {
+          "id": "family",
+          "note": "Christians read the exception differently. The Catholic Church holds a valid sacramental marriage indissoluble, reading the clause as permitting separation or as concerning unions that were never lawful (the kinship reading Joseph Fitzmyer supported); the Orthodox churches permit a second marriage by economy, in penitence; most Protestants, following Erasmus and the Reformers, allow the wronged spouse to divorce and remarry after adultery, and many add desertion (1 Corinthians 7:15) and abuse; some evangelicals, John Piper among them, read porneia as unfaithfulness during betrothal. All agree the verse refuses to treat a wife as disposable. It never requires anyone to remain where they or their children are in danger. People facing these questions should seek the counsel of their own church and qualified professionals; this note is not legal advice."
+        }
+      ],
+      "parallels": ["Mark 10:11-12", "Luke 16:18", "Matthew 5:32"],
+      "refs": ["Matthew 1:19", "1 Corinthians 7:10-15", "Leviticus 18:6-18"]
+    },
+    {
+      "v": "10-11",
+      "context": "The disciples, found only in Matthew here, react with alarm: if marriage binds a man this tightly, it would be better not to marry at all. Jesus neither retracts his teaching nor mocks their fear. He says that not everyone can receive ‘this word’, only those to whom it has been given, and the next verse explains.",
+      "grammar": "Ei houtōs estin hē aitia tou anthrōpou meta tēs gunaikos, ‘if such is the case of the man with the wife’, reuses aitia, the Pharisees' word for a legal ground in verse 3: the disciples use it for a man's situation, as if to say that a husband's case is now a hard one. Ou sumpherei gamēsai, ‘it is not advantageous to marry’, weighs marriage as a matter of profit and loss. Jesus answers with chōrousin, from chōreō, ‘to make room for’, used of a vessel's capacity (John 2:6) and then of a mind that can take something in. Hois dedotai, ‘to whom it has been given’, is a perfect passive with God as the implied giver, the same form Jesus used of the secrets of the kingdom (13:11). Whether ‘this word’ points back to Jesus' ruling or forward from the disciples' remark is disputed.",
+      "words": ["G0156", "G4851", "G1060", "G5562", "G1325"],
+      "theology": [
+        {
+          "id": "family",
+          "note": "Jesus treats the capacity to live unmarried for the kingdom as a gift God gives, not an achievement or a duty laid on all. Paul says the same of his own singleness, that each has his own gift from God (1 Corinthians 7:7), so neither marriage nor celibacy is ranked as the higher way here."
+        }
+      ],
+      "refs": ["1 Corinthians 7:7", "1 Corinthians 7:32-35", "Matthew 13:11"]
+    },
+    {
+      "v": "12",
+      "context": "Jesus names three kinds of eunuchs: those born so, those made so by others, and those who have made themselves eunuchs for the kingdom of heaven. The first two are literal; the third, as the disciples' remark about not marrying shows, describes people who forgo marriage and children for the kingdom's sake. The verse ends with a call to receive the saying if one can.",
+      "grammar": "Three parallel clauses begin eisin eunouchoi hoitines, ‘there are eunuchs who’, and the verbs move from passive to active. Egennēthēsan houtōs, ‘were born so’, and eunouchisthēsan hupo tōn anthrōpōn, ‘were made eunuchs by men’, are aorist passives; eunouchisan heautous, ‘made themselves eunuchs’, is an aorist active with a reflexive pronoun, a deliberate choice. Dia tēn basileian tōn ouranōn, ‘because of the kingdom of heaven’, gives the reason. The closing ho dunamenos chōrein chōreitō, ‘let the one able to receive it receive it’, uses a present imperative in the third person, like the formula ‘he who has ears, let him hear’ (11:15, 13:9): an invitation to the one who is given the capacity, not a command to all.",
+      "words": ["G2135", "G1080", "G2134", "G0932", "G5562"],
+      "ot": [
+        {
+          "ref": "Isaiah 56:3-5",
+          "note": "Deuteronomy 23:1 barred a castrated man from the assembly of the LORD. Isaiah 56 reverses the exclusion for faithful eunuchs: the Hebrew saris, rendered eunouchos in the Septuagint, is promised yad vashem, ‘a memorial and a name’, within God's house and walls, better than sons and daughters, an everlasting name that will not be cut off. Matthew does not cite the passage, but it is the Old Testament's one great promise to men without descendants, and Jesus' honor for those who give up offspring for the kingdom stands in its line. The same chapter supplies the line Jesus will quote in the temple (Isaiah 56:7, Matthew 21:13)."
+        }
+      ],
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The kingdom of heaven can claim what Israel's life most prized, marriage and children, and it offers the one who gives them up a place and a name. The verse makes singleness for the kingdom an honored calling, not a lesser life."
+        }
+      ],
+      "refs": ["Isaiah 56:3-5", "Deuteronomy 23:1", "Acts 8:27", "1 Corinthians 7:7-8"]
+    },
+    {
+      "v": "13-15",
+      "context": "From marriage the chapter turns to children. People bring little children for Jesus to lay hands on them and pray, the disciples rebuke them, and Jesus overrules his disciples: the kingdom belongs to such as these. He lays his hands on them and moves on. Matthew omits Mark's note that Jesus was indignant and took the children in his arms, and he omits the saying about receiving the kingdom like a child, which he gave at 18:3.",
+      "grammar": "Prosēnechthēsan, ‘were brought’, is an aorist passive; the purpose clause hina tas cheiras epithē autois kai proseuxētai, ‘that he might lay his hands on them and pray’, is Matthew's addition and names a blessing. Jesus' command pairs an aorist imperative, aphete, ‘let’, with a present prohibition, mē kōluete, which commonly means ‘stop hindering’: the disciples are already in the way. Tōn gar toioutōn estin hē basileia, ‘for of such ones is the kingdom’, uses a genitive of possession, and toioutōn means those who are like them, not only children.",
+      "words": ["G4374", "G2007", "G4336", "G2967", "G5108"],
+      "history": "Early Christian debate over baptism drew on this scene. Tertullian (On Baptism 18, about 200) cited Jesus' ‘do not hinder them’ while urging that children be baptized when they could know Christ, and Calvin (Institutes 4.16.7) cited Jesus' blessing of the children in defense of infant baptism. Churches that baptize infants and churches that baptize believers both read the passage as Jesus' welcome of children, and they differ over what that welcome implies for the sacrament.",
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The kingdom belongs to those who, like children in the ancient world, have no standing and nothing to offer. The disciples act as gatekeepers of Jesus' time; Jesus rebukes them, so the verse judges any community that keeps the smallest from him."
+        }
+      ],
+      "parallels": ["Mark 10:13-16", "Luke 18:15-17"],
+      "refs": ["Matthew 18:3-5", "Genesis 48:14", "Matthew 11:25"]
+    },
+    {
+      "v": "16-17",
+      "context": "A man asks what good thing he must do to have eternal life. Jesus redirects the question from a good deed to the One who is good, and then answers it at the level the man asked: if you want to enter life, keep the commandments. The exchange sets up the command in verse 21 that will show what the man lacks.",
+      "grammar": "Heis, ‘one’, used for ‘a certain man’, is a Semitic habit. Ti agathon poiēsō, ‘what good thing shall I do’, uses a deliberative aorist subjunctive, asking for one deed; hina schō zōēn aiōnion, ‘that I may have eternal life’, has ‘have’ where Mark and Luke have ‘inherit’. Jesus' reply turns on a shift of gender: ti me erōtas peri tou agathou, ‘why do you ask me about the good’, uses the neuter (the good thing), and heis estin ho agathos, ‘one is the good one’, uses the masculine (the Good One). The man asked about a what; Jesus answers with a who. Then eis tēn zōēn eiselthein, ‘to enter into life’, equates life with the kingdom (compare 18:8-9 and 19:23), and tērēson tas entolas is an aorist imperative, ‘keep the commandments’.",
+      "words": ["G1520", "G0018", "G2065", "G2222", "G5083G", "G1785"],
+      "text": "The earliest manuscripts, including Sinaiticus and Vaticanus, read ‘Teacher, what good thing’ and ‘Why do you ask Me about what is good? There is only One who is good’. Later manuscripts assimilated Matthew to Mark and Luke, reading ‘Good Teacher’ and ‘Why callest thou me good? there is none good but one, that is, God’, the form in the King James Version. Bruce Metzger's Textual Commentary explains the later reading as a harmonization; the earlier is the harder reading.",
+      "ot": [
+        {
+          "ref": "Leviticus 18:5",
+          "note": "The Hebrew says that the person who does God's statutes and judgments vachai bahem, ‘will live by them’, and the Septuagint has ha poiēsas anthrōpos zēsetai en autois, ‘the man who does them will live by them’. Jesus' ‘if you want to enter life, keep the commandments’ answers in the same terms, and the lawyer in Luke 10:28 hears nearly the same reply. Paul will quote Leviticus 18:5 in a different argument (Romans 10:5, Galatians 3:12). Here the promise of life through the commandments is sincere, and the following verses reveal what keeping them would actually require of this man."
+        }
+      ],
+      "theology": [
+        {
+          "id": "attributes",
+          "note": "‘There is only One who is good’ echoes the Shema's confession that the LORD is one (Deuteronomy 6:4) and makes God's goodness the standard of all goodness. The good the man seeks cannot be separated from the good God, which is why the answer ends in a call to follow Jesus (verse 21)."
+        }
+      ],
+      "parallels": ["Mark 10:17-18", "Luke 18:18-19"],
+      "refs": ["Deuteronomy 6:4", "Psalm 119:68", "Luke 10:25-28", "Matthew 18:8-9"]
+    },
+    {
+      "v": "18-19",
+      "context": "The man asks which commandments, and Jesus lists five from the second table of the Ten Commandments, the ones about the neighbor, then adds the command to love one's neighbor as oneself. Matthew alone includes that last command, which later sums up half the law (22:39-40). The list sets up the question of what the man still lacks.",
+      "grammar": "Poias, ‘what sort?’, may ask which kind of commandments, as if some mattered more than others, a question rabbis also debated. Jesus answers with the neuter article to, which marks what follows as a quotation (‘the “you shall not murder”’), and then the commandments in the Septuagint's form: ou with the future indicative (ou phoneuseis, ‘you shall not murder’), the Greek way of rendering the Hebrew lo with the imperfect. Mark and Luke use mē with the subjunctive instead. Matthew keeps the Hebrew order of murder, adultery, theft, and false witness, puts the positive tima, ‘honor’, a present imperative, after them, and closes with agapēseis, a future used as a command. He omits Mark's ‘do not defraud’, which is not one of the Ten.",
+      "words": ["G4169", "G5407", "G3431", "G2813", "G5576", "G5091", "G0025", "G4139"],
+      "ot": [
+        {
+          "ref": "Leviticus 19:18",
+          "note": "The Hebrew ve'ahavta lere'akha kamokha, ‘love your neighbor as yourself’, closes a paragraph forbidding revenge and grudges, and the Septuagint's agapēseis ton plēsion sou hōs seauton is Matthew's wording exactly. Matthew alone adds it to the list here, and he has Jesus call it the second great commandment (22:39) and quote it again at 5:43 without ‘as yourself’. Placed after the commandments about the neighbor, it gathers them into one and prepares for Jesus' next words: to love the neighbor as himself, this man would have to give to the poor."
+        },
+        {
+          "ref": "Exodus 20:12-16",
+          "note": "The five commandments come from the Decalogue (Exodus 20:12-16, Deuteronomy 5:16-20). The Hebrew order is murder, adultery, theft, false witness, which Matthew follows; some Septuagint manuscripts and Luke 18:20 put adultery first. Honoring parents, the fifth commandment, is placed last, after the prohibitions."
+        }
+      ],
+      "theology": [
+        {
+          "id": "law",
+          "note": "Jesus affirms the commandments as the way of life and joins them to the love command, so that the law's prohibitions are read as forms of love. Matthew's addition makes the man's claim in verse 20 a claim to have loved his neighbor as himself, which the call to give to the poor will test."
+        }
+      ],
+      "parallels": ["Mark 10:19", "Luke 18:20"],
+      "refs": ["Exodus 20:12-16", "Deuteronomy 5:16-20", "Matthew 22:37-40", "Romans 13:9"]
+    },
+    {
+      "v": "20",
+      "context": "The man claims to have kept them all, and asks what he still lacks. Only Matthew calls him young, here and in verse 22. His question is honest and restless: keeping the commandments has not given him the assurance he seeks.",
+      "grammar": "Neaniskos, ‘young man’, describes a man in the prime of life, not a boy. Panta tauta ephulaxa, ‘all these I have kept’, uses an aorist of phulassō, ‘guard, keep’, the Septuagint's verb for keeping commandments, summing up his life. Ti eti husterō, ‘what do I still lack?’, uses the present of hustereō, ‘to fall short, be lacking’, the verb Paul uses when he says all have sinned and fall short of God's glory (Romans 3:23). The man senses a gap his record has not closed.",
+      "words": ["G3495", "G5442G", "G2089", "G5302"],
+      "text": "The King James Version adds ‘from my youth up’, which comes from Mark 10:20 and Luke 18:21 and is absent from the earliest manuscripts of Matthew. Matthew's earliest text has him say only that he has kept them all, and Matthew alone describes him as a young man.",
+      "parallels": ["Mark 10:20", "Luke 18:21"],
+      "refs": ["Philippians 3:6", "Romans 3:23"]
+    },
+    {
+      "v": "21",
+      "context": "Jesus answers the question the man asked. If he wants to be perfect, he must sell his possessions, give to the poor, and follow Jesus, and he will have treasure in heaven. The command is aimed at the one thing this man cannot give up, and it ends not with a deed but with a person to follow.",
+      "grammar": "Ei theleis teleios einai, ‘if you wish to be perfect’, echoes the man's own ‘if you want to enter life’ from verse 17, and teleios recalls 5:48, ‘Be perfect, as your heavenly Father is perfect’, which followed the command to love enemies. The sequence of imperatives is telling. Hupage, ‘go’, is present; pōlēson, ‘sell’, and dos, ‘give’, are aorists, single decisive acts; deuro, ‘come here’, is an adverb used as a command; and akolouthei, ‘follow’, is present, a life of continuing to follow. Ta huparchonta, ‘the things belonging to you’, is a participle used as a noun for possessions. Hexeis thēsauron en ouranois, ‘you will have treasure in heaven’, repeats the language of 6:19-21.",
+      "words": ["G5046", "G5217", "G4453", "G5225", "G4434", "G2344", "G1204", "G0190"],
+      "theology": [
+        {
+          "id": "wealth",
+          "note": "The command to sell exposes what the man's wealth has become: a rival for the loyalty that belongs to God. Christians have read it as a counsel for some (Thomas Aquinas), as a test that exposes an idol (the Reformers), and as a call to inner freedom from possessions (Clement of Alexandria); in each reading, following Jesus reorders what a person owns."
+        },
+        {
+          "id": "love",
+          "note": "Giving to the poor is the concrete form of loving the neighbor as oneself, which the man claimed to have kept (verses 19 and 20). The command does not add a new law; it shows what the old one requires of a rich man."
+        }
+      ],
+      "parallels": ["Mark 10:21", "Luke 18:22"],
+      "refs": ["Matthew 5:48", "Matthew 6:19-21", "Matthew 13:44-46", "Luke 12:33"]
+    },
+    {
+      "v": "22",
+      "context": "The young man goes away grieving, because he has much property. He is the only person Matthew shows hearing Jesus' call to follow and walking away from it. Matthew leaves him there without comment and turns to the disciples.",
+      "grammar": "Akousas ... ton logon, ‘having heard the word’, uses logos, the same noun as ‘this word’ in verse 11: Jesus' words again prove hard to receive. Apēlthen lupoumenos pairs an aorist of departure with a present participle of continuing grief, ‘he went away, grieving’. The reason is a periphrastic imperfect, ēn gar echōn ktēmata polla, ‘for he was one having many possessions’. Ktēmata often meant landed property, estates and fields, and Matthew uses it only here.",
+      "words": ["G3056", "G0565", "G3076", "G2192", "G2933"],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "The man's sorrow shows that he knows what he is refusing. Sin here is not a broken commandment but a divided heart, a good thing held in the place of God, which Jesus had warned of in saying that no one can serve both God and money (6:24)."
+        }
+      ],
+      "parallels": ["Mark 10:22", "Luke 18:23"],
+      "refs": ["Matthew 6:24", "Matthew 13:22", "1 Timothy 6:9-10"]
+    },
+    {
+      "v": "23-24",
+      "context": "Jesus turns the man's departure into teaching. It is hard for a rich person to enter the kingdom of heaven, and he sharpens it with an image: a camel through a needle's eye. The second saying moves from difficulty to impossibility, which is why the disciples react as they do in verse 25.",
+      "grammar": "Amēn legō humin, ‘truly I tell you’, marks a solemn saying, and the future eiseleusetai, ‘will enter’, speaks of the final kingdom. Duskolōs, ‘with difficulty’, is an adverb meaning hard to manage. Palin de legō, ‘and again I say’, introduces a comparison, eukopōteron estin ... ē, ‘it is easier ... than’. Kamēlon dia trupēmatos rhaphidos dielthein, ‘a camel to go through the eye of a needle’, sets the largest familiar animal beside the smallest opening in daily use. Matthew's word for the eye, trupēma, differs from Mark's trumalia and Luke's trēma, and editions differ slightly over the wording. In verse 24 Matthew writes ‘the kingdom of God’ rather than his usual ‘kingdom of heaven’, one of only a handful of times (12:28, 21:31, 21:43).",
+      "words": ["G1423", "G4145", "G2123", "G2574", "G5169", "G4476"],
+      "history": "The image of a large animal passing through a needle's eye was a stock figure for the impossible. The Babylonian Talmud uses an elephant (b. Berakhot 55b, b. Bava Metzia 38b), and the Qur'an uses the camel and the needle's eye for the impossibility of the proud entering Paradise (Surah 7:40). The later explanations of a small gate called the needle's eye or of kamilos, ‘rope’, have no ancient support; the chapter note gives their history.",
+      "theology": [
+        {
+          "id": "wealth",
+          "note": "Jesus generalizes from one man to the rich as a class: wealth does not merely distract, it makes entry into the kingdom humanly impossible, because it offers a security that competes with trust in God."
+        },
+        {
+          "id": "kingdom",
+          "note": "Entry into the kingdom is not a matter of degree, a little harder for some, but a matter of what only God can do. The saying prepares for verse 26 and for the reversal of rank in verse 30."
+        }
+      ],
+      "text": "A few late manuscripts read kamilon, ‘rope’, for kamēlon, ‘camel’. The editions also vary over the word for ‘eye’ and over whether the second ‘to enter’ is expressed; none of these changes the sense.",
+      "parallels": ["Mark 10:23-25", "Luke 18:24-25"],
+      "refs": ["Matthew 23:24", "1 Timothy 6:17-19", "James 5:1-3"]
+    },
+    {
+      "v": "25-26",
+      "context": "The disciples are astonished: if the rich, whom many took to be God's favored, cannot enter, who can be saved? Jesus looks at them and says that with man it is impossible, but with God all things are possible. The chapter's turning point is here: salvation is God's work.",
+      "grammar": "Exeplēssonto sphodra, ‘they were exceedingly astonished’, is an imperfect of a strong verb of shock. Tis ara dunatai sōthēnai, ‘who then can be saved?’, uses the inferential ara and an aorist passive infinitive: being saved is something done to a person. Emblepsas, ‘looking intently’, is the verb of a steady gaze. The answer is balanced, para anthrōpois touto adunaton estin, para de theō panta dunata, ‘with men this is impossible, but with God all things are possible’, with para in the sense of ‘in the power of’.",
+      "words": ["G1605", "G4982", "G1689", "G0102", "G1415"],
+      "ot": [
+        {
+          "ref": "Genesis 18:14",
+          "note": "When Sarah laughs at the promise of a son, the Hebrew asks hayippale meYHWH davar, ‘is anything too wonderful (or too hard) for the LORD?’ The Septuagint renders it mē adunatei para tō theō rhēma, ‘is any word impossible with God?’, with the same para tō theō and the same root adunat- that Jesus uses. Job confesses in the Septuagint that God can do all things (Job 42:2), and the angel repeats the thought to Mary (Luke 1:37). Salvation, like Isaac's birth, is what God does where human ability has ended."
+        }
+      ],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "The verse answers the young man's question ‘what good thing must I do?’ from the other side: no one, rich or poor, can do what salvation requires, and God can. Grace here does not lower the demand of verse 21; it names the only power that can meet it."
+        }
+      ],
+      "parallels": ["Mark 10:26-27", "Luke 18:26-27"],
+      "refs": ["Genesis 18:14", "Job 42:2", "Luke 1:37", "Ephesians 2:8-9"]
+    },
+    {
+      "v": "27",
+      "context": "Peter speaks for the Twelve, contrasting them with the man who went away: they have left everything and followed. Matthew alone adds Peter's blunt question, what then will there be for us, which Jesus answers with a promise in verses 28 and 29 and a warning in verse 30 and the parable of 20:1-16.",
+      "grammar": "Idou hēmeis, ‘look, we’, puts the pronoun first for emphasis: we, unlike him. Aphēkamen panta kai ēkolouthēsamen soi, ‘we left everything and followed you’, uses two aorists for the decisive acts of their call (4:20, 22; 9:9). Ti ara estai hēmin, ‘what then will there be for us?’, uses the same inferential ara as the disciples' question in verse 25. The question is fair, and Jesus answers it, but its form, a reckoning of what is owed, is the attitude the vineyard parable will address.",
+      "words": ["G2400", "G0863G", "G0190", "G0686"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Leaving everything to follow Jesus is faith in action, the opposite of the young man's choice. Peter's question shows that genuine faith can still carry a merchant's arithmetic, which Jesus does not scold but reshapes."
+        }
+      ],
+      "parallels": ["Mark 10:28", "Luke 18:28"],
+      "refs": ["Matthew 4:20-22", "Matthew 9:9", "Philippians 3:7-8"]
+    },
+    {
+      "v": "28",
+      "context": "Jesus promises the Twelve that in the renewal of all things, when the Son of Man sits on his glorious throne, they will sit on twelve thrones judging the twelve tribes of Israel. The promise, found only in Matthew in this setting, joins the disciples' reward to the restoration of Israel and the renewal of the world.",
+      "grammar": "Humeis hoi akolouthēsantes moi, ‘you who have followed me’, is an aorist participle naming the Twelve by what they have done. En tē palingenesia, ‘in the renewal’, is a dative of time; palingenesia, literally ‘becoming again’, occurs elsewhere in the New Testament only in Titus 3:5. Hotan kathisē ... epi thronou doxēs autou, ‘when he sits on the throne of his glory’, uses an aorist subjunctive for a future event, and ‘throne of glory’ is a Semitic genitive for ‘glorious throne’. Kathēsesthe kai humeis, ‘you also will sit’, makes the Twelve share the Son of Man's session. Krinontes, ‘judging’, may mean passing judgment or, as the judges of the book of Judges did, governing and delivering; interpreters differ, and the Old Testament sense of ruling is at least included.",
+      "words": ["G3824", "G2523", "G2362", "G1391", "G1427", "G2919", "G5443"],
+      "ot": [
+        {
+          "ref": "Daniel 7:9-14",
+          "note": "In Daniel's vision thrones are set in place (Aramaic korsavan remiv, ‘thrones were placed’), the Ancient of Days takes his seat, and one like a son of man receives dominion, glory, and a kingdom; later in the chapter judgment is given for the saints of the Most High and they receive the kingdom (7:22, 27). Jesus draws on the scene: the Son of Man on a throne of glory, and plural thrones for those who share his rule. Matthew returns to the image at 25:31, where the Son of Man sits on his glorious throne to judge the nations."
+        }
+      ],
+      "theology": [
+        {
+          "id": "new-creation",
+          "note": "The palingenesia is the world made new, not an escape from it. Jesus uses a word Philo applied to the earth after the flood and Josephus to the land restored after exile, and gives it its fullest sense: God's renewal of all things at the end of the age, the hope Paul describes as creation set free (Romans 8:21)."
+        },
+        {
+          "id": "kingdom",
+          "note": "The twelve thrones for the twelve tribes show that the kingdom Jesus brings is the fulfillment of God's promises to Israel, not their replacement. Those who followed a crucified Messiah will share the reign of the Son of Man."
+        }
+      ],
+      "parallels": ["Luke 22:28-30"],
+      "refs": ["Matthew 25:31", "Titus 3:5", "Revelation 3:21", "1 Corinthians 6:2", "Romans 8:19-21"]
+    },
+    {
+      "v": "29-30",
+      "context": "The promise widens from the Twelve to everyone who has left house, family, or fields for Jesus' name: they will receive a hundredfold and inherit eternal life. Then comes the warning that many first will be last and the last first, which the parable of the vineyard will illustrate and repeat in reverse (20:16).",
+      "grammar": "Pas hostis aphēken, ‘everyone who has left’, is an aorist in a general relative clause. Heneka tou onomatos mou, ‘for the sake of my name’, puts Jesus' name where Mark has ‘for my sake and for the gospel’ and Luke ‘for the sake of the kingdom of God’. Hekatontaplasiona lēmpsetai, ‘will receive a hundredfold’, and zōēn aiōnion klēronomēsei, ‘will inherit eternal life’, are futures, and ‘inherit’ is the Old Testament language of receiving the land. Verse 30 is a chiasm, first, last, last, first, with de, ‘but’, setting a limit on the promise: reward in the kingdom is real but no ground for ranking.",
+      "words": ["G0863G", "G3686", "G1542", "G2816", "G4413G", "G2078"],
+      "text": "Manuscripts differ over the list of what is left. ‘Or wife’, which the BSB and King James Version include, stands in Sinaiticus and the majority of manuscripts but is absent from Vaticanus and some Western witnesses, and the critical editions (NA28, SBL) omit it as a borrowing from Luke 18:29. Vaticanus and a few others read ‘many times as much’ (pollaplasiona), as in Luke 18:30, where most manuscripts have ‘a hundredfold’; Westcott and Hort print the Vaticanus reading.",
+      "theology": [
+        {
+          "id": "new-creation",
+          "note": "What is left behind is not lost but received again in the age to come along with eternal life. The promise that those who give up houses and fields will receive them a hundredfold fits the hope of a renewed earth in verse 28, not a purely spiritual reward, and it gives no warrant for teaching that gifts to God return as money in this life."
+        }
+      ],
+      "parallels": ["Mark 10:29-31", "Luke 18:29-30"],
+      "refs": ["Matthew 10:37-39", "Matthew 20:16", "Matthew 13:8", "Luke 13:30"]
+    }
+  ]
+}
