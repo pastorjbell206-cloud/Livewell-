@@ -1,0 +1,789 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "Verse 1 is a hinge. The words that open it pick up 5:1, where Jesus went up the mountain, so the Sermon on the Mount is closed off as one block and the deeds of chapters 8 and 9 begin. The crowds who were astonished at his authority in 7:28-29 now follow him down, and the stories that follow show that authority at work on bodies, weather, and spirits.",
+      "grammar": "Katabantos de autou apo tou orous, ‘as he came down from the mountain’, is a genitive absolute, the Greek construction for a scene-setting clause whose subject stands apart from the main verb. It mirrors anabē eis to oros, ‘he went up on the mountain’ (5:1), so that the sermon is bracketed by an ascent and a descent. The main verb, ēkolouthēsan, ‘followed’, is the first of five uses of akoloutheō in the chapter (verses 1, 10, 19, 22, 23). Here it has its plain sense of walking behind; by verse 22 it will be Jesus' command to become a disciple.",
+      "words": [
+        "G2597",
+        "G3735",
+        "G0190",
+        "G3793"
+      ],
+      "text": "The Byzantine text and the Textus Receptus read katabanti de autō, a dative participle with a dative pronoun, where the earlier manuscripts have the genitive absolute. The meaning is identical; the later form is smoother Greek, since the pronoun then matches the ‘him’ that follows.",
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "Matthew has presented Jesus giving the Law's true meaning on a mountain, as Moses received it on one. His coming down with crowds behind him introduces the second half of the portrait: the teacher whose words carried authority now shows the same authority in deeds (11:2-5)."
+        }
+      ],
+      "refs": [
+        "Matthew 5:1",
+        "Matthew 7:28-29",
+        "Exodus 34:29",
+        "Matthew 4:25"
+      ]
+    },
+    {
+      "v": "2",
+      "context": "The first person to meet Jesus off the mountain is a man whom the Law kept at a distance from everyone. He kneels and states his faith as a conditional: Jesus' power is certain, his willingness is the open question. Matthew's version is the shortest of the three and moves straight from request to cure.",
+      "grammar": "Prosekunei, ‘he was kneeling’ or ‘worshiping’, is an imperfect of proskuneō, a verb Matthew uses far more often than Mark or Luke, sometimes of homage to a king (2:2, 2:11) and sometimes of worship due to God alone (4:10). Here, with kurie, ‘Lord’, it describes reverent prostration; Matthew's readers could hear more. The request is a third-class condition, ean thelēs, ‘if you are willing’ (present subjunctive), followed by an indicative, dunasai, ‘you are able’: the ability is asserted as fact, the will is left open. Katharisai, ‘to cleanse’, is the Septuagint's verb for a priest pronouncing a person clean in Leviticus 13, so the man asks for more than a cure; he asks to be restored to the community of the clean.",
+      "words": [
+        "G4352",
+        "G2962G",
+        "G2309",
+        "G1410",
+        "G2511",
+        "G3015"
+      ],
+      "history": "Leviticus 13 sets out how a priest was to examine swellings, rashes, and spots, isolate a doubtful case for seven days, and pronounce the person clean or unclean; a confirmed case wore torn clothes, left the hair loose, covered the upper lip, and cried ‘Unclean, unclean’ (13:45). The Mishnah devotes a whole tractate, Negaim (‘Plagues’), to these diagnoses, which shows how much care later Jewish law gave them. Cure was not a priestly function: the priest could only recognize that God had healed.",
+      "parallels": [
+        "Mark 1:40",
+        "Luke 5:12"
+      ],
+      "refs": [
+        "Leviticus 13:45-46",
+        "Numbers 12:12",
+        "2 Kings 5:7",
+        "Matthew 11:5"
+      ]
+    },
+    {
+      "v": "3",
+      "context": "Jesus answers the man's ‘if you are willing’ with ‘I am willing’, and the touch comes before the word. Matthew keeps both details from Mark but drops Mark's note of emotion, so the scene turns on the will and the hand of Jesus. The cure is immediate.",
+      "grammar": "Jesus' reply takes up the man's own words: thelō, ‘I am willing’, answers thelēs, and the command katharisthēti, an aorist passive imperative, ‘be cleansed’, answers katharisai. The narrator then reports ekatharisthē, ‘was cleansed’, in the same verb. Command and fulfillment match, as when God speaks in Genesis 1. The passive leaves the agent unnamed in grammar, but the scene names him: the one who stretches out his hand and speaks. Hēpsato, ‘he touched’, an aorist middle of haptomai, is the verb that recurs in the next chapters for contact that heals (8:15, 9:20-21, 9:29, 14:36).",
+      "words": [
+        "G1614",
+        "G0681",
+        "G2309",
+        "G2511",
+        "G2112",
+        "G3014"
+      ],
+      "theology": [
+        {
+          "id": "holiness",
+          "note": "Under Leviticus, uncleanness spread by contact and holiness had to be guarded from it (Leviticus 5:3, 13:45-46). Here the flow runs the other way: Jesus touches and the unclean man becomes clean. The verse shows holiness not as fragile purity needing protection but as a power that overcomes what defiles, which is how the prophets pictured God's own holiness in the age to come (Zechariah 14:20-21)."
+        }
+      ],
+      "text": "Matthew and Luke both omit the emotion Mark ascribes to Jesus at this point (Mark 1:41), where most manuscripts read ‘moved with compassion’ and a few read ‘angry’. Matthew's omission is sometimes counted as evidence for the harder reading in Mark, though it may simply reflect his habit of trimming Mark's descriptive detail.",
+      "parallels": [
+        "Mark 1:41-42",
+        "Luke 5:13"
+      ],
+      "refs": [
+        "Leviticus 5:3",
+        "Zechariah 14:20-21",
+        "Genesis 1:3",
+        "Matthew 9:20-22"
+      ]
+    },
+    {
+      "v": "4",
+      "context": "Jesus sends the cleansed man into the procedure the Law laid down and forbids him to talk about the cure. Matthew ends the story here; he omits Mark's report that the man spread the news so widely that Jesus could no longer enter a town openly (Mark 1:45). The last words, ‘as a testimony to them’, point the story outward.",
+      "grammar": "Hora mēdeni eipēs, ‘see that you tell no one’, joins a present imperative of horaō (‘see, take care’) with an aorist subjunctive, the ordinary Greek form of a prohibition. Three imperatives follow: hupage, ‘go’ (a present), then deixon, ‘show’, and prosenegkon, ‘offer’ (aorists). To dōron, ‘the gift’, is Matthew's word for a sacrificial offering (5:23-24, 23:18-19). Eis marturion autois, ‘as a testimony to them’, is ambiguous: autois may mean the priests, who will certify the cure, or the people generally. Matthew uses the same phrase twice more, when the disciples will stand before governors and kings (10:18) and when the gospel is preached to all nations (24:14), which suggests a witness to Jesus and not only a certificate of health.",
+      "words": [
+        "G3708",
+        "G3367",
+        "G1166",
+        "G2409",
+        "G4374",
+        "G1435",
+        "G3475",
+        "G3142"
+      ],
+      "ot": [
+        {
+          "ref": "Leviticus 14:2-4",
+          "note": "The Hebrew opens with “This is the law for the one afflicted with a skin disease on the day of his cleansing, when he is brought to the priest.” The priest goes outside the camp, examines him, and has two clean birds, cedar wood, scarlet yarn, and hyssop brought; one bird is killed over running water and the other released into the open field. After seven days of washing and shaving, the eighth day brings lambs, flour, and oil (14:10-20), with a lesser offering allowed for the poor (14:21-22). The Septuagint uses katharizō for ‘cleanse’ throughout, and prospherō and dōron for the offering, the vocabulary Matthew uses here. The rite presupposes a healing already done by God; it restores the person to the camp and to worship. Jesus sends the man to the priest so that the Law's own officers will certify what has happened."
+        }
+      ],
+      "theology": [
+        {
+          "id": "law",
+          "note": "Jesus has just said that he came not to abolish the Law but to fulfill it (5:17), and the first deed after the sermon puts that into practice: the healed man is sent to obey what Moses commanded. The cure is new; the obedience is the old one."
+        }
+      ],
+      "parallels": [
+        "Mark 1:43-45",
+        "Luke 5:14-16"
+      ],
+      "refs": [
+        "Leviticus 14:10-20",
+        "Matthew 5:17",
+        "Matthew 10:18",
+        "Matthew 24:14"
+      ]
+    },
+    {
+      "v": "5-6",
+      "context": "The second healing moves from the margins of Israel to outside it altogether. A centurion, a Gentile officer, meets Jesus as he enters Capernaum and describes a servant at home, paralyzed and suffering. Matthew has the officer come in person; Luke tells the same story with two delegations, Jewish elders and then friends, carrying his words (Luke 7:3-6).",
+      "grammar": "Prosēlthen ... parakalōn, ‘came to him, pleading’, uses a present participle for a plea that continues. The officer's description is carefully built: ho pais mou beblētai, ‘my servant has been laid low’, is a perfect passive of ballō, ‘to throw’, describing a state that resulted from being struck down; the same participle, beblēmenos, describes Peter's mother-in-law in 8:14 and the paralytic in 9:2, a verbal thread through the healing stories. Paralutikos, ‘paralyzed’, and deinōs basanizomenos, ‘terribly tormented’, a present passive participle, add the pain. Notice that the officer makes no request at all. He states the need and leaves it with Jesus.",
+      "words": [
+        "G1543",
+        "G3870",
+        "G3816",
+        "G0906H",
+        "G3885",
+        "G1171",
+        "G0928H"
+      ],
+      "history": "Josephus says Antipas's army was destroyed by the Nabatean king Aretas IV around AD 36 (Antiquities 18.113-115), which confirms that the tetrarch kept soldiers of his own. Centurions in Roman service were career officers, often promoted from the ranks and paid considerably more than ordinary soldiers, so a man of this rank could keep a household of servants and, in Luke's account, give the town its synagogue (Luke 7:5).",
+      "parallels": [
+        "Luke 7:1-3",
+        "John 4:46-47"
+      ],
+      "refs": [
+        "Luke 7:2-5",
+        "Acts 10:1-2",
+        "Matthew 4:13"
+      ]
+    },
+    {
+      "v": "7-8",
+      "context": "Jesus' reply and the officer's answer form the center of the story. The centurion refuses a visit he feels he has no standing to receive and asks for a word instead. His sentence became one of the church's most repeated prayers.",
+      "grammar": "Jesus' words, egō elthōn therapeusō auton, can be punctuated as a statement, ‘I will come and heal him’ (so the BSB, ESV, and KJV), or as a question, ‘Shall I come and heal him?’ (so the current NIV). The Greek manuscripts had no question marks, so the choice rests on context. The emphatic egō, ‘I’, which Greek does not need with a first-person verb, suits a question expressing surprise that a Jew should enter a Gentile's house, and the Canaanite woman's story (15:21-28) shows Jesus testing a Gentile's request in a similar way. A statement fits Jesus' readiness everywhere else in these chapters. In the officer's reply, ouk eimi hikanos, ‘I am not fit’, uses the adjective John the Baptist used of himself (3:11). Monon eipe logō, literally ‘only say with a word’, is an aorist imperative with a dative of means, and iathēsetai, a future passive, ‘will be healed’, states the result with confidence.",
+      "words": [
+        "G2323",
+        "G1473",
+        "G2425",
+        "G4721",
+        "G3441",
+        "G3056",
+        "G2390"
+      ],
+      "text": "In Luke's version (7:7) the best text reads an imperative, ‘let my servant be healed’, while most later manuscripts of Luke have the future found here in Matthew. In Matthew the future iathēsetai is secure.",
+      "theology": [
+        {
+          "id": "faith",
+          "note": "The centurion's faith is trust in the power of Jesus' spoken word, without sight, touch, or presence. Matthew sets it at the head of the chapter's teaching on faith, and it is the pattern for readers who will never see Jesus in the flesh (compare John 20:29)."
+        }
+      ],
+      "parallels": [
+        "Luke 7:6-7"
+      ],
+      "refs": [
+        "Matthew 3:11",
+        "Matthew 15:22-28",
+        "Psalm 107:20",
+        "John 20:29"
+      ]
+    },
+    {
+      "v": "9",
+      "context": "The officer explains his confidence from his own work. He lives inside a chain of command: he obeys those above him and is obeyed by those below. He reasons that Jesus stands in a chain of command too, with authority over sickness, so that his order will be carried out without his presence.",
+      "grammar": "Kai gar egō anthrōpos eimi hupo exousian, ‘for I too am a man under authority’: kai gar, ‘for also’, draws the comparison with Jesus. The logic is from the lesser to the greater. The officer's authority is derived, received from above; he assumes that Jesus' authority is likewise given from above, from God, and therefore reaches further than his own. Three short orders follow, poreuthēti, erchou, poiēson (‘go’, ‘come’, ‘do this’), each an aorist or present imperative followed at once by the matching indicative (poreuetai, erchetai, poiei). The grammar enacts obedience: command and deed follow without a gap. Exousia, ‘authority’, is the word the crowds used of Jesus' teaching (7:29), and the officer applies it to his healing.",
+      "words": [
+        "G1849",
+        "G4757",
+        "G4198",
+        "G2064",
+        "G1401",
+        "G4160G"
+      ],
+      "theology": [
+        {
+          "id": "sovereignty",
+          "note": "The officer's picture assumes that sickness can be commanded, that it is not an independent force but something under an authority higher than it. The chapter goes on to show winds, sea, and demons obeying the same word (8:27, 8:32), so that the soldier's instinct turns out to be a small confession of God's rule over creation exercised by Jesus."
+        }
+      ],
+      "parallels": [
+        "Luke 7:8"
+      ],
+      "refs": [
+        "Matthew 7:29",
+        "Matthew 28:18",
+        "Psalm 33:9",
+        "Psalm 147:15"
+      ]
+    },
+    {
+      "v": "10",
+      "context": "Jesus is amazed, one of only two places in the Gospels where he is said to marvel (the other is at unbelief, Mark 6:6). He turns to those following him and makes the officer an example to them: such faith he has not found in Israel.",
+      "grammar": "Ethaumasen, ‘he marveled’, is an aorist of thaumazō, the verb Matthew uses of crowds and disciples amazed at Jesus (8:27, 9:33); here the direction is reversed. Amēn legō humin, ‘truly I tell you’, transliterates the Hebrew amen; placed before a saying rather than after a prayer, it is a mark of Jesus' own speech, which Joachim Jeremias argued had no real precedent in Jewish usage. Par' oudeni tosautēn pistin en tō Israēl heuron, ‘with no one in Israel have I found such faith’, puts the negative first for emphasis. Tosautēn, ‘so great’, measures faith by degree, the opposite of the disciples' oligopistia in verse 26.",
+      "words": [
+        "G2296",
+        "G0190",
+        "G0281",
+        "G3762",
+        "G5118",
+        "G4102G",
+        "G2474",
+        "G2147"
+      ],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Faith here is not membership but response. Jesus measures it and finds the largest example in someone with no covenant standing, which prepares for the chapter's warning that belonging to the kingdom is not inherited."
+        }
+      ],
+      "parallels": [
+        "Luke 7:9"
+      ],
+      "refs": [
+        "Mark 6:6",
+        "Matthew 15:28",
+        "Matthew 8:26"
+      ]
+    },
+    {
+      "v": "11",
+      "context": "Matthew places here a saying that Luke gives in a different setting, a warning about the narrow door (Luke 13:28-29). Set after the centurion's faith, it widens the scene from one Gentile to many: people will come from the ends of the earth to sit at the patriarchs' table in the kingdom.",
+      "grammar": "Polloi apo anatolōn kai dusmōn hēxousin, ‘many will come from east and west’: anatolai and dusmai, literally ‘risings’ and ‘settings’ (of the sun), are plural nouns used idiomatically for the two horizons. Anaklithēsontai, a future passive of anaklinō, means ‘they will recline’, the posture of guests at a formal banquet, so the kingdom is pictured as a feast. Meta Abraam kai Isaak kai Iakōb, ‘with Abraham, Isaac, and Jacob’, puts the newcomers at the same table as Israel's fathers, not at a separate one.",
+      "words": [
+        "G4183",
+        "G0395",
+        "G1424",
+        "G2240",
+        "G0347",
+        "G0011",
+        "G2464",
+        "G2384H",
+        "G0932"
+      ],
+      "ot": [
+        {
+          "ref": "Isaiah 25:6",
+          "note": "Isaiah promises that “On this mountain the LORD of Hosts will prepare a banquet for all the peoples”. The Hebrew describes a mishteh shemanim, a feast of rich food, with wine aged on its lees, and the next verses promise that God will swallow up death and wipe away tears (25:7-8). The Septuagint turns the menu into drinking: the Lord will make a feast for all the nations, and on this mountain they will drink gladness and drink wine. Jesus does not quote the passage, but his ‘recline’ at a banquet in God's kingdom is Isaiah's picture, and Jewish writings of the period developed it into the hope of a feast with the Messiah (1 Enoch 62:14 has the righteous eating with the Son of Man; the Qumran Rule of the Congregation, 1QSa 2:11-22, orders the seating for a meal at which the Messiah of Israel is present)."
+        },
+        {
+          "ref": "Psalm 107:3",
+          "note": "The psalm gives thanks to the LORD who redeemed his people “and gathered from the lands, from east and west, from north and south.” The Hebrew's last pair is literally ‘from the north and from the sea’; the Septuagint (Psalm 106:3) renders the line apo anatolōn kai dusmōn kai borra kai thalassēs, and Matthew's apo anatolōn kai dusmōn is word for word its first half. Luke's form of the saying keeps all four directions (Luke 13:29). Isaiah 43:5-6 uses the same pairs for God bringing Israel's scattered children home. In the psalm the gathered are Israel's exiles, which is why Dale Allison argued that the saying originally meant diaspora Jews; Matthew's setting, after a Gentile's faith, points most readers to the nations as well. The same psalm supplies the word that heals (107:20) and the storm stilled (107:29), both of which appear in this chapter."
+        }
+      ],
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The verse pictures the kingdom's future as a feast already set, with the patriarchs as hosts. It joins the kingdom Jesus announces to the promise made to Abraham that all the families of the earth would be blessed through him (Genesis 12:3)."
+        },
+        {
+          "id": "mission",
+          "note": "The Gentile centurion is the first of the many. The verse looks ahead to the command to make disciples of all nations (28:19), and it frames that mission as the fulfillment of Israel's own hope, not a departure from it."
+        }
+      ],
+      "parallels": [
+        "Luke 13:28-29"
+      ],
+      "refs": [
+        "Isaiah 25:6-8",
+        "Isaiah 43:5-6",
+        "Malachi 1:11",
+        "Genesis 12:3",
+        "Revelation 19:9"
+      ]
+    },
+    {
+      "v": "12",
+      "context": "The reverse follows. Those who seemed to have the best claim to the table are shut outside it. The verse is a warning against presumption, the same warning John the Baptist gave (3:9), and Matthew uses its closing words six times as his signature phrase for final loss.",
+      "grammar": "Hoi huioi tēs basileias, ‘the sons of the kingdom’, uses ‘sons of’ in the Semitic sense of those who belong to something, here the natural heirs. Ekblēthēsontai, a future passive of ekballō, ‘will be thrown out’, is probably a divine passive: God is the one who excludes. To skotos to exōteron, ‘the outer darkness’, uses a comparative adjective, literally ‘the darkness further out’, which fits the banquet picture: outside the lit hall, in the night. Ho klauthmos kai ho brugmos tōn odontōn, ‘the weeping and the gnashing of teeth’, has the definite article on both nouns, as if naming something already known. Gnashing the teeth in the Psalms is a sign of rage (Psalm 112:10), and here it may mean anguish, anger, or both.",
+      "words": [
+        "G5207",
+        "G0932",
+        "G1544",
+        "G4655",
+        "G1857",
+        "G2805",
+        "G1030",
+        "G3599"
+      ],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The verse insists that final judgment reverses human expectations: those who assumed a place find themselves outside. It speaks of a real and final exclusion while describing it in images (darkness, weeping) rather than a map."
+        },
+        {
+          "id": "israel",
+          "note": "The warning is spoken by a Jew to Jews and echoes their own prophets (Amos 3:2, Jeremiah 7:4). It does not declare Israel replaced; the table is Abraham's, Isaac's, and Jacob's, and Paul's conclusion that God's gifts and calling are irrevocable (Romans 11:29) stands against any reading of the verse as a rejection of the Jewish people."
+        }
+      ],
+      "refs": [
+        "Matthew 3:9",
+        "Matthew 13:38",
+        "Matthew 22:13",
+        "Psalm 112:10",
+        "Romans 11:29"
+      ]
+    },
+    {
+      "v": "13",
+      "context": "Jesus dismisses the officer with a word that is also the cure, and Matthew notes that the healing happened at that very hour. The distance between Jesus and the sick man is part of the point: his word does not need his presence.",
+      "grammar": "Hōs episteusas genēthētō soi, ‘as you have believed, let it be done for you’: genēthētō is an aorist passive imperative of ginomai, the exact form of the Lord's Prayer, ‘your will be done’ (6:10). Jesus uses it again to the blind men (9:29) and the Canaanite woman (15:28). The request and the prayer share a grammar: a command addressed to what is not yet, trusting God to bring it about. En tē hōra ekeinē, ‘in that hour’, is Matthew's formula for an immediate cure at a distance or by a word (9:22, 15:28, 17:18).",
+      "words": [
+        "G5217",
+        "G5613",
+        "G4100",
+        "G1096",
+        "G2390",
+        "G3816",
+        "G5610"
+      ],
+      "text": "Codex Sinaiticus, Codex Ephraemi, and a few other witnesses add at the end of the verse that the centurion returned to his house in that hour and found the servant well, an expansion shaped by Luke 7:10. No modern edition prints it.",
+      "parallels": [
+        "Luke 7:10",
+        "John 4:50-53"
+      ],
+      "refs": [
+        "Matthew 6:10",
+        "Matthew 9:29",
+        "Matthew 15:28"
+      ]
+    },
+    {
+      "v": "14-15",
+      "context": "The third healing takes place inside a Jewish home, Peter's, and the patient is a woman. Matthew tells it in two verses and changes Mark's version in small ways that matter: Jesus sees her without being told, touches her hand, and she rises and serves him.",
+      "grammar": "Eiden ... beblēmenēn kai puressousan, ‘he saw her lying down and burning with fever’: the perfect passive participle beblēmenēn repeats the verb used of the centurion's servant (verse 6), and puressō is ‘to be feverish’. In Mark the disciples tell Jesus about her (Mark 1:30); in Matthew he sees, and the initiative is his. Hēpsato tēs cheiros autēs, ‘he touched her hand’, uses the same verb as the leper's cleansing. Aphēken autēn ho puretos, ‘the fever left her’, uses aphiēmi, the verb that means ‘forgive’ in 9:2-6. Ēgerthē, an aorist passive of egeirō, ‘she was raised’, is the verb Matthew uses for resurrection (27:52, 28:6-7). Diēkonei autō, ‘she began to serve him’, is an inceptive imperfect; the singular ‘him’ keeps the focus on Jesus.",
+      "words": [
+        "G3614G",
+        "G4074G",
+        "G3994",
+        "G0906H",
+        "G4445",
+        "G0681",
+        "G0863G",
+        "G4446",
+        "G1453",
+        "G1247"
+      ],
+      "history": "The first-century house under the octagonal church at Capernaum, with Christian graffiti invoking Jesus and Peter on its replastered walls, is the site the pilgrim tradition from the fourth century identified as Peter's. Paul confirms that Cephas was married and traveled with his wife (1 Corinthians 9:5). The Gospels do not say whether the mother-in-law was a widow living with her daughter's family, but that arrangement was common.",
+      "text": "Where the earliest manuscripts read autō, ‘served him’, the Textus Receptus reads autois, ‘served them’, which is Mark's and Luke's wording (Mark 1:31, Luke 4:39); the King James Version accordingly has ‘ministered unto them’.",
+      "theology": [
+        {
+          "id": "sanctification",
+          "note": "The healed woman rises and serves, and the verb is diakoneō, the word Jesus uses for his own mission (20:28). Matthew's compression makes her the first person in his Gospel whose restoration issues at once in service to Jesus, the pattern of a life that is healed in order to serve."
+        }
+      ],
+      "parallels": [
+        "Mark 1:29-31",
+        "Luke 4:38-39"
+      ],
+      "refs": [
+        "1 Corinthians 9:5",
+        "Matthew 20:28",
+        "Matthew 27:55",
+        "Leviticus 26:16"
+      ]
+    },
+    {
+      "v": "16",
+      "context": "Evening brings the whole town. Matthew summarizes: many demon-possessed people brought, spirits driven out ‘with a word’, all the sick healed. The summary prepares for the fulfillment quotation that explains what these healings mean.",
+      "grammar": "Opsias de genomenēs, ‘when evening had come’, is a genitive absolute; Matthew keeps only the first of Mark's two time notes (Mark 1:32 adds ‘when the sun set’), and with it the hint that the Sabbath had ended. Exebalen ta pneumata logō, ‘he cast out the spirits with a word’: logō, a dative of means, repeats the centurion's request (verse 8) and is Matthew's addition to Mark. Pantas tous kakōs echontas etherapeusen, ‘he healed all who were ill’: Mark says he healed ‘many’; Matthew says ‘all’, a small change that stresses the completeness of what follows in verse 17.",
+      "words": [
+        "G3798",
+        "G1139",
+        "G1544",
+        "G4151G",
+        "G3056",
+        "G3956",
+        "G2560",
+        "G2323"
+      ],
+      "theology": [
+        {
+          "id": "angels",
+          "note": "The demons are expelled by speech alone. Matthew's addition of ‘with a word’ puts spiritual powers in the same category as the sickness of the centurion's servant: both yield to the word of Jesus, which shows the demons as real but subordinate."
+        }
+      ],
+      "parallels": [
+        "Mark 1:32-34",
+        "Luke 4:40-41"
+      ],
+      "refs": [
+        "Matthew 8:8",
+        "Psalm 107:20",
+        "Matthew 4:24"
+      ]
+    },
+    {
+      "v": "17",
+      "context": "Matthew's fulfillment formula reads the healings through the Servant Song of Isaiah 53. It is the chapter's theological key: what Jesus does for the sick of Capernaum is what Isaiah said the servant of the LORD would do, carry the burdens of others.",
+      "grammar": "Hopōs plērōthē to rhēthen dia Ēsaiou tou prophētou, ‘so that what was spoken through Isaiah the prophet might be fulfilled’, is Matthew's standard formula, with hopōs and an aorist passive subjunctive (compare 1:22, 2:15, 2:23). The quotation follows neither the Septuagint nor any known Greek version; Matthew translates the Hebrew himself. Autos, ‘he himself’, stands first for emphasis. Elaben, ‘took’, and ebastasen, ‘carried’, render the Hebrew nasa and sabal, the two verbs of lifting and bearing loads. Tas astheneias hēmōn, ‘our weaknesses’, and tas nosous, ‘the diseases’, render holi, ‘sickness’, and makob, ‘pain’, keeping the Hebrew's physical sense.",
+      "words": [
+        "G3704",
+        "G4137",
+        "G2268",
+        "G4396",
+        "G0769H",
+        "G2983",
+        "G3554",
+        "G0941"
+      ],
+      "ot": [
+        {
+          "ref": "Isaiah 53:4",
+          "note": "The Hebrew reads akhen holayenu hu nasa umakhovenu sevalam, literally ‘surely our sicknesses he bore, and our pains he carried them’; the BSB renders it “Surely He took on our infirmities and carried our sorrows”. The Septuagint spiritualizes the line: houtos tas hamartias hēmōn pherei kai peri hēmōn odunatai, ‘this one bears our sins and suffers pain for us’. The Aramaic Targum of Isaiah goes further and has the Messiah pray for Israel's sins so that they are forgiven for his sake. Matthew stands closest to the Hebrew: he keeps sickness as sickness. In Isaiah the line opens the song's central confession, in which the speakers realize that the servant they despised was bearing what belonged to them, and it moves at once to transgression and iniquity (53:5-6). Matthew applies the first, physical half to Jesus' healings; 1 Peter 2:24 applies the same chapter to his death for sins. Together they show the early church reading Isaiah 53 as the servant's whole work, from Galilee to the cross."
+        }
+      ],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "Matthew does not say that Jesus' healings were the atonement, and he does not say that bodily healing was purchased at the cross to be claimed on demand; he says the healings fulfill a text whose context is substitutionary suffering. Christians who teach healing in the atonement (as in the holiness and Pentecostal traditions) and those who reply that the verse describes the earthly ministry as a sign of what the cross and resurrection secure for the end both appeal to this verse. What is common ground is that Isaiah's servant carries what is ours, and that Matthew sees the carrying begin in Capernaum."
+        },
+        {
+          "id": "messiah",
+          "note": "By identifying Jesus with Isaiah's servant, Matthew defines his messiahship through service and burden-bearing rather than conquest. He returns to the servant songs at 12:17-21 (Isaiah 42:1-4)."
+        },
+        {
+          "id": "suffering",
+          "note": "The verb bastazō means to carry a weight that is not one's own. The servant does not only remove suffering from outside it; he takes it up, which is how the New Testament will speak of Christ sharing human weakness (Hebrews 4:15)."
+        }
+      ],
+      "parallels": [
+        "Mark 1:34",
+        "Luke 4:40-41"
+      ],
+      "refs": [
+        "Isaiah 53:4-6",
+        "1 Peter 2:24",
+        "Matthew 12:17-21",
+        "Hebrews 4:15"
+      ]
+    },
+    {
+      "v": "18-19",
+      "context": "The first interlude on discipleship begins. Jesus orders a crossing to escape the crowd, and a scribe volunteers to follow him anywhere. Luke sets this exchange on the road to Jerusalem, with a third would-be follower (Luke 9:57-62); Matthew places it just before the storm, so that the cost of following is tested at once in the boat.",
+      "grammar": "Ekeleusen apelthein eis to peran, ‘he gave orders to go to the other side’: keleuō is a strong verb of command, and Jesus is presented as the one who orders the crossing that leads into the storm. Heis grammateus, literally ‘one scribe’, uses the numeral heis like an indefinite article, ‘a certain scribe’, a common feature of Koine Greek with Semitic roots. His address, didaskale, ‘Teacher’, is the way outsiders and opponents address Jesus in Matthew (12:38, 22:16, 22:36). Akolouthēsō soi hopou ean aperchē, ‘I will follow you wherever you go’, is an open-ended future with an indefinite relative clause; he promises everything without knowing what it includes.",
+      "words": [
+        "G3793",
+        "G2753",
+        "G0565",
+        "G4008",
+        "G1520",
+        "G1122",
+        "G1320",
+        "G0190"
+      ],
+      "history": "Scribes were trained in the writing and interpretation of the law of Moses; Jewish teachers of the period were usually chosen by disciples, who attached themselves to a master of their own choosing. Martin Hengel (The Charismatic Leader and His Followers) argued that Jesus reversed this pattern, calling disciples himself and testing volunteers, and that this was closer to a prophet's call than a rabbi's school. The scribe's offer follows the usual pattern; Jesus' reply refuses to accept it on the usual terms.",
+      "parallels": [
+        "Mark 4:35",
+        "Luke 9:57"
+      ],
+      "refs": [
+        "Luke 9:57-62",
+        "Matthew 23:34",
+        "Matthew 13:52"
+      ]
+    },
+    {
+      "v": "20",
+      "context": "Jesus answers the scribe's promise with a picture of what following him means. Wild animals have a place to rest; he does not. The saying is the first time in Matthew that Jesus calls himself the Son of Man, and the title arrives with homelessness attached.",
+      "grammar": "Hai alōpekes phōleous echousin, ‘foxes have dens’: phōleos is a hole or lair. Ta peteina tou ouranou kataskēnōseis, ‘the birds of the air have roosts’: kataskēnōsis is from kataskēnoō, ‘to settle, to pitch a tent’, the verb used of birds nesting in the mustard tree in 13:32, so the word means a place to settle more than a built nest. Ho de huios tou anthrōpou ouk echei pou tēn kephalēn klinē, ‘but the Son of Man has nowhere to lay his head’: pou with the subjunctive klinē is a deliberative construction, ‘no place where he might lay it’. The contrast is structured, two creatures with a shelter set against one man without.",
+      "words": [
+        "G0258",
+        "G5454",
+        "G4071",
+        "G2682",
+        "G5207",
+        "G0444",
+        "G2776",
+        "G2827"
+      ],
+      "ot": [
+        {
+          "ref": "Daniel 7:13-14",
+          "note": "In Daniel's Aramaic vision one kevar enash, ‘like a son of man’, comes with the clouds to the Ancient of Days and is given “dominion, glory, and kingship, that the people of every nation and language should serve Him.” Matthew uses the title about thirty times, and its Danielic sense becomes explicit at 24:30 and 26:64. Its first use sets the figure destined to receive universal dominion beside the most exposed of human conditions. Scholars debate whether the Aramaic phrase could also serve as a modest way of saying ‘I’ or ‘a man like me’ (Geza Vermes argued so); Matthew's usage, reaching to the throne of glory (19:28, 25:31), points to Daniel's figure."
+        }
+      ],
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "The one who will receive all authority in heaven and on earth (28:18) has no home. The verse holds together the two strands of the title in Matthew: the Son of Man who suffers and the Son of Man who comes in glory."
+        },
+        {
+          "id": "incarnation",
+          "note": "The saying describes a human condition shared, not observed from a distance. The Son of Man is poorer than foxes and birds, which gives concrete shape to Paul's statement that he became poor for our sake (2 Corinthians 8:9)."
+        }
+      ],
+      "parallels": [
+        "Luke 9:58"
+      ],
+      "refs": [
+        "Daniel 7:13-14",
+        "Matthew 13:32",
+        "2 Corinthians 8:9",
+        "Matthew 25:31"
+      ]
+    },
+    {
+      "v": "21-22",
+      "context": "A second man, this time already counted among the disciples, asks for time to bury his father. Jesus refuses in the chapter's hardest saying. The man calls Jesus Lord and asks leave; Jesus answers with a command, ‘Follow me’. Matthew does not say what the man did.",
+      "grammar": "Heteros de tōn mathētōn, ‘another of the disciples’, may imply that the scribe of verse 19 was also counted a disciple, or simply that this man already belonged to the wider group. Epitrepson moi prōton, ‘allow me first’: prōton, ‘first’, is the word the saying turns on, since Jesus has just taught ‘seek first the kingdom’ (6:33). Jesus' reply joins a present imperative, akolouthei moi, ‘keep following me’, with an aorist imperative, aphes, ‘leave’ or ‘let’, the verb of release and forgiveness. Tous nekrous thapsai tous heautōn nekrous, ‘the dead to bury their own dead’, uses nekros twice in different senses: the first dead are the living who do not follow, the second are the physically dead. The play on words is the saying's force.",
+      "words": [
+        "G2087",
+        "G3101",
+        "G2962G",
+        "G2010",
+        "G4413G",
+        "G2290",
+        "G3962",
+        "G0190",
+        "G0863G",
+        "G3498"
+      ],
+      "theology": [
+        {
+          "id": "family",
+          "note": "The saying does not cancel the command to honor father and mother, which Jesus defends against evasion in 15:3-6. It ranks it. No family duty, not even the most sacred, can stand above the call of Jesus, and Matthew will give the principle in general form: whoever loves father or mother more than me is not worthy of me (10:37)."
+        },
+        {
+          "id": "kingdom",
+          "note": "In Luke's version the command continues, “You, however, go and proclaim the kingdom of God” (Luke 9:60). The urgency comes from the kingdom's arrival: the time of decision has come, and those who do not answer are, in the saying's hard language, dead."
+        }
+      ],
+      "parallels": [
+        "Luke 9:59-60"
+      ],
+      "refs": [
+        "Matthew 10:37",
+        "Matthew 15:3-6",
+        "1 Kings 19:19-21",
+        "Luke 9:60",
+        "Matthew 6:33"
+      ]
+    },
+    {
+      "v": "23-24",
+      "context": "The disciples follow Jesus into the boat, and at once the sea rises. Matthew's wording ties the storm to the sayings just spoken: following Jesus leads into danger, and the one who has nowhere to lay his head is asleep in the stern.",
+      "grammar": "Embanti autō eis to ploion ēkolouthēsan autō hoi mathētai autou, ‘when he got into the boat his disciples followed him’: Matthew alone uses akoloutheō here, the discipleship verb of verses 19 and 22. Kai idou seismos megas egeneto, ‘and behold, a great shaking arose’: seismos is the word for an earthquake, used by Matthew for the upheavals of the last days and of Jesus' death and resurrection. Hōste to ploion kaluptesthai hupo tōn kumatōn, ‘so that the boat was being covered by the waves’, uses a present infinitive for an ongoing result. Autos de ekatheuden, ‘but he himself was sleeping’: the emphatic autos and the imperfect set Jesus' continuing sleep against the violence around him.",
+      "words": [
+        "G1684",
+        "G4143",
+        "G0190",
+        "G3101",
+        "G4578",
+        "G3173",
+        "G2281",
+        "G2572",
+        "G2949",
+        "G2518"
+      ],
+      "history": "The lake lies some seven hundred feet below sea level, and when cooler air pours down through the gorges from the Golan heights on the east or the hills on the west it can whip the surface into steep, short waves within minutes. Fishermen on the lake still speak of such squalls, especially in the afternoons and evenings. Mark alone mentions the cushion in the stern and the other boats (Mark 4:36-38).",
+      "ot": [
+        {
+          "ref": "Jonah 1:4-6",
+          "note": "The Hebrew says the LORD hurled a great wind on the sea and the ship threatened to break up, while Jonah lay fast asleep below. The captain wakes him: “Get up and call upon your God. Perhaps this God will consider us, so that we may not perish.” The Septuagint's mē apolōmetha, ‘that we may not perish’, uses the verb of the disciples' cry in verse 25. Matthew's order sharpens the likeness: storm, sleeper, waking, plea, calm, and men who marvel. The contrast is as plain as the likeness: Jonah sleeps in flight from God and must be thrown overboard; Jesus sleeps in trust and commands the sea. Matthew will make the comparison explicit: something greater than Jonah is here (12:41)."
+        }
+      ],
+      "parallels": [
+        "Mark 4:36-38",
+        "Luke 8:22-23"
+      ],
+      "refs": [
+        "Jonah 1:4-6",
+        "Psalm 4:8",
+        "Psalm 44:23",
+        "Matthew 12:41"
+      ]
+    },
+    {
+      "v": "25-26",
+      "context": "The disciples wake Jesus with a prayer of three words. In Matthew he rebukes their fear before he rebukes the storm, reversing Mark's order, so that the lesson about faith comes first and the calm is its demonstration.",
+      "grammar": "Kurie, sōson, apollumetha, ‘Lord, save, we are perishing’, is a prayer without connectives, an asyndeton that sounds like panic; Mark has a reproach (‘Teacher, don't you care?’) and Luke a double cry (‘Master, Master’). Matthew's is the language of worship, and sōzō is the verb of 1:21. Jesus' reply, ti deiloi este, oligopistoi, ‘why are you afraid, you of little faith?’, uses deilos, ‘cowardly, fearful’, with oligopistos, Matthew's word for real but insufficient trust. Egertheis, ‘having risen’, then epetimēsen, ‘he rebuked’, the verb used for rebuking demons (17:18). Egeneto galēnē megalē, ‘there was a great calm’, answers seismos megas in verse 24.",
+      "words": [
+        "G2962G",
+        "G4982",
+        "G0622",
+        "G1169",
+        "G3640",
+        "G1453",
+        "G2008",
+        "G0417",
+        "G1055",
+        "G3173"
+      ],
+      "ot": [
+        {
+          "ref": "Psalm 107:23-30",
+          "note": "The psalm's fourth scene describes those who go to sea: “For He spoke and raised a tempest that lifted the waves of the sea” (107:25); they cry to the LORD in their trouble, and “He calmed the storm to a whisper, and the waves of the sea were hushed” (107:29); “They rejoiced in the silence, and He guided them to the harbor they desired” (107:30). The Hebrew speaks of the storm made still as a whisper (demamah); the Septuagint (Psalm 106) speaks of the waves, ta kumata, the word Matthew uses in verse 24, and says they fell silent. The sequence of the psalm is the sequence of Matthew's scene: danger at sea, a cry to the Lord, a word, a calm, and wonder. What the psalm ascribes to the LORD, Matthew shows Jesus doing, and the disciples' prayer, ‘Lord, save’, is the psalm's cry addressed to him."
+        }
+      ],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "The disciples have enough faith to wake Jesus and pray to him, and not enough to be unafraid while he sleeps. Oligopistia names that condition. Jesus rebukes it and then saves them anyway, so the verse teaches both that fear in his presence is a failure of faith and that his help does not wait for great faith."
+        },
+        {
+          "id": "prayer",
+          "note": "‘Lord, save us’ became one of the church's shortest prayers. Matthew shapes the disciples' cry as a prayer addressed to Jesus as Lord, which is how Psalm 107 addresses the LORD in the same danger."
+        }
+      ],
+      "parallels": [
+        "Mark 4:38-40",
+        "Luke 8:24-25"
+      ],
+      "refs": [
+        "Psalm 107:28-29",
+        "Psalm 89:9",
+        "Psalm 65:7",
+        "Matthew 14:30-31",
+        "Matthew 6:30"
+      ]
+    },
+    {
+      "v": "27",
+      "context": "The episode ends with a question rather than an explanation. The men who have just watched the wind and sea fall quiet ask what kind of man this is, and Matthew leaves the question for the rest of the Gospel, and the reader, to answer.",
+      "grammar": "Hoi de anthrōpoi ethaumasan, ‘the men marveled’: Matthew calls them anthrōpoi, ‘men’, not disciples, perhaps to widen the circle to anyone who hears the story, perhaps to set human beings over against the one they are asking about. Potapos estin houtos, ‘what sort of person is this?’: potapos asks about kind or quality rather than identity (Mark and Luke have tis, ‘who’). Hoti kai hoi anemoi kai hē thalassa autō hupakouousin, ‘that even the winds and the sea obey him’: hupakouō is the verb for a servant's or child's obedience, applied to the elements.",
+      "words": [
+        "G0444",
+        "G2296",
+        "G4217",
+        "G0417",
+        "G2281",
+        "G5219"
+      ],
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "In Israel's Scriptures only God rules the sea (Psalm 89:9, Job 38:8-11). The disciples' question is not answered in words here, but the psalms have already answered it, and the Gospel will answer it on another night at sea, when those in the boat worship him as the Son of God (14:33)."
+        },
+        {
+          "id": "creation",
+          "note": "The winds and sea obey Jesus as creatures obey their maker. The verse shows the created order responding to his word as it responded to God's word in Genesis 1."
+        }
+      ],
+      "parallels": [
+        "Mark 4:41",
+        "Luke 8:25"
+      ],
+      "refs": [
+        "Psalm 89:9",
+        "Job 38:8-11",
+        "Matthew 14:33",
+        "Psalm 104:7"
+      ]
+    },
+    {
+      "v": "28",
+      "context": "On the far shore Jesus meets two men possessed by demons, living among the tombs and so violent that the road was closed. Matthew tells the story in seven verses where Mark uses twenty; he has two men instead of one, and he names the district after Gadara, not Gerasa.",
+      "grammar": "Eis tēn chōran tōn Gadarēnōn, ‘into the region of the Gadarenes’: chōra is territory, the lands belonging to a city, not the city itself, which matters because Gadara stood about six miles from the lake. Hupēntēsan autō duo daimonizomenoi, ‘two demon-possessed men met him’: daimonizomai is a verb, ‘to be demonized’, describing a condition rather than naming a kind of person. Ek tōn mnēmeiōn exerchomenoi, ‘coming out of the tombs’. Chalepoi lian, ‘extremely dangerous’: chalepos means hard to deal with or fierce, and 2 Timothy 3:1 uses it of ‘difficult’ times.",
+      "words": [
+        "G4008",
+        "G5561",
+        "G1046",
+        "G5221",
+        "G1417",
+        "G1139",
+        "G3419",
+        "G5467",
+        "G3029",
+        "G3598"
+      ],
+      "text": "The place name varies in the manuscripts of all three Gospels. In Matthew the best manuscripts, led by Codex Vaticanus and supported by the Syriac versions, read ‘Gadarenes’, which modern editions and versions print; the original hand of Codex Sinaiticus has ‘Gazarenes’, another spelling of the same name. A corrector of Sinaiticus, Codex Washingtonianus, and most later Greek manuscripts read ‘Gergesenes’, the name Origen preferred (Commentary on John 6.41), and that is the reading of the Textus Receptus and so of the King James Version, which has ‘Gergesenes’ here but ‘Gadarenes’ in Mark 5:1 and Luke 8:26. Much of the Latin tradition reads ‘Gerasenes’, as the best text of Mark and Luke does. Scribes plainly tried to correct the geography or harmonize the Gospels; each Gospel's best reading probably names the district by a different city.",
+      "history": "The eastern shore belonged to the Decapolis, the league of Greek cities that Pompey had detached from Jewish rule in 63 BC. Gadara (modern Umm Qais) stood on a ridge about six miles southeast of the lake, and its lands probably reached the shore. Tombs cut into the limestone hillsides lined the shore; Jewish law made them places of corpse impurity (Numbers 19:16), and in popular belief they were haunts of spirits.",
+      "parallels": [
+        "Mark 5:1-5",
+        "Luke 8:26-27"
+      ],
+      "refs": [
+        "Numbers 19:16",
+        "Isaiah 65:3-4",
+        "Matthew 9:27",
+        "Matthew 20:30"
+      ]
+    },
+    {
+      "v": "29",
+      "context": "The demons speak first and speak correctly. They name Jesus Son of God and ask whether he has come to torment them before the appointed time. The only people in the chapter who identify him by that title are his enemies.",
+      "grammar": "Ti hēmin kai soi, literally ‘what to us and to you?’, is a Semitic idiom (Hebrew mah li walakh, Judges 11:12, 2 Samuel 16:10) that pushes another away: ‘what do we have to do with each other?’ Huie tou theou, ‘Son of God’, is a vocative. Ēlthes hōde pro kairou basanisai hēmas, ‘have you come here before the time to torment us?’: pro kairou, ‘before the time’, is Matthew's own addition and assumes an appointed moment of judgment. The aorist infinitive basanisai, from basanizō, ‘to torment’, is the language of punishment for evil powers.",
+      "words": [
+        "G2896",
+        "G5207",
+        "G2316",
+        "G2064",
+        "G5602",
+        "G4253",
+        "G2540",
+        "G0928G"
+      ],
+      "history": "Jewish writings of the Second Temple period taught that evil spirits were permitted to act until a fixed day of judgment. In Jubilees 10:7-9 God orders the spirits bound, but when Mastema, their chief, pleads, a tenth of them are left free to act until the judgment; in 1 Enoch 16:1 the spirits of the giants destroy without judgment until the day of the great consummation. The demons' question assumes that timetable and recognizes that in Jesus the judge has appeared early.",
+      "theology": [
+        {
+          "id": "angels",
+          "note": "The demons know who Jesus is and know their end; their knowledge is accurate and useless to them. The verse teaches that evil powers are real, personal in their speech, and already doomed, and that the coming of Jesus brings their judgment forward into the present."
+        },
+        {
+          "id": "judgment",
+          "note": "‘Before the time’ presupposes a set day of judgment for spiritual powers (25:41). Jesus' ministry is a preview of that day, which is how he will explain his exorcisms: the kingdom of God has come upon you (12:28)."
+        }
+      ],
+      "parallels": [
+        "Mark 5:6-8",
+        "Luke 8:28-29"
+      ],
+      "refs": [
+        "Matthew 25:41",
+        "Matthew 12:28-29",
+        "James 2:19",
+        "Revelation 20:10",
+        "Judges 11:12"
+      ]
+    },
+    {
+      "v": "30-32",
+      "context": "The demons, knowing they must leave, ask to be sent into a herd of pigs grazing at a distance. Jesus answers with one word, ‘Go’, and the herd rushes into the sea and dies. Matthew gives no number for the pigs and no conversation about names; the story is reduced to request and command.",
+      "grammar": "Ei ekballeis hēmas, ‘if you cast us out’, is a first-class condition, a form that assumes the premise for the sake of argument: the demons take their expulsion for granted. Aposteilon hēmas eis tēn agelēn tōn choirōn, ‘send us into the herd of pigs’, is an aorist imperative. Jesus' reply is a single word, hupagete, a present imperative plural, ‘go’, the same verb he used to dismiss the centurion (verse 13). Hōrmēsen pasa hē agelē kata tou krēmnou, ‘the whole herd rushed down the steep bank’: hormaō means to charge or stampede. Apethanon en tois hudasin, ‘they died in the waters’, uses the plural, a Semitic idiom for a body of water.",
+      "words": [
+        "G3112",
+        "G0034",
+        "G5519",
+        "G1142",
+        "G3870",
+        "G1544",
+        "G0649",
+        "G5217",
+        "G3729",
+        "G2911",
+        "G2281",
+        "G0599"
+      ],
+      "text": "Instead of aposteilon hēmas, ‘send us’, the Byzantine text and the Textus Receptus read epitrepson hēmin apelthein, ‘permit us to go away’, which the King James Version renders ‘suffer us to go away into the herd of swine’. The later reading probably came from Luke 8:32 and Mark 5:13, where Jesus ‘permitted’ them. In verse 32 the earlier manuscripts read ‘into the pigs’ where later ones read ‘into the herd of pigs’.",
+      "theology": [
+        {
+          "id": "angels",
+          "note": "A single word, ‘Go’, is enough. The demons can ask but cannot act without leave, which is the picture of evil powers the Bible gives from Job 1 onward: destructive, but on a leash held by God."
+        }
+      ],
+      "parallels": [
+        "Mark 5:11-13",
+        "Luke 8:32-33"
+      ],
+      "refs": [
+        "Job 1:12",
+        "Leviticus 11:7",
+        "Matthew 12:43-45"
+      ]
+    },
+    {
+      "v": "33-34",
+      "context": "The herdsmen report everything, and the whole town comes out, sees Jesus, and asks him to leave. Matthew ends the story here. He omits the healed man's request to go with Jesus and his commission to tell what God had done (Mark 5:18-20), so the chapter closes on refusal.",
+      "grammar": "Hoi de boskontes ephugon, ‘those tending them fled’, is the same verb as the fleeing disciples of 26:56. Apēngeilan panta kai ta tōn daimonizomenōn, ‘they reported everything, including the matter of the demoniacs’: the neuter plural article ta, ‘the things concerning’, makes the healed men an item in the report, added after the loss of the herd. Kai idou pasa hē polis exēlthen eis hupantēsin tō Iēsou, ‘and behold, the whole town went out to meet Jesus’: hupantēsis is the word for a formal meeting, used in 25:1 for going out to meet the bridegroom. Here the town goes out in formal procession to ask him to go away. Hopōs metabē apo tōn horiōn autōn, ‘that he might depart from their borders’.",
+      "words": [
+        "G1006",
+        "G5343",
+        "G4172",
+        "G0518",
+        "G1139",
+        "G1831",
+        "G5222",
+        "G3870",
+        "G3327",
+        "G3725"
+      ],
+      "theology": [
+        {
+          "id": "mission",
+          "note": "Jesus crosses into Gentile territory and brings freedom there, but the first Gentile town to meet him asks him to leave. The verse is an honest note in the mission theme of the chapter: the nations will come, but the gospel is also refused, and the loss of property can weigh more than two neighbors restored."
+        }
+      ],
+      "parallels": [
+        "Mark 5:14-17",
+        "Luke 8:34-37"
+      ],
+      "refs": [
+        "Matthew 25:1",
+        "Mark 5:18-20",
+        "Luke 8:37",
+        "John 1:11"
+      ]
+    }
+  ]
+}

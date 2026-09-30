@@ -1,0 +1,932 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "Jesus leaves the region that asked him to go and returns to Capernaum, which Matthew calls ‘his own town’. The verse closes the Gadarene episode and opens the third story of the second group of miracles. Mark and Luke set the healing of the paralytic much earlier, before the storm; Matthew has moved it here to follow the lake stories.",
+      "grammar": "Embas eis ploion dieperasen, ‘having got into a boat, he crossed over’: the aorist participle and aorist verb move the scene briskly, and dieperasen is the ordinary word for crossing water. Ēlthen eis tēn idian polin, ‘he came to his own town’: idios, ‘one's own’, marks Capernaum as the home Jesus adopted after leaving Nazareth (4:13). Nazareth is his patris, ‘hometown’, in 13:54; Capernaum is the town he chose.",
+      "words": [
+        "G1684",
+        "G4143",
+        "G1276",
+        "G2398",
+        "G4172"
+      ],
+      "history": "Capernaum's excavated remains show a town of basalt houses built around shared courtyards, with a main street running inland from the shore. The white limestone synagogue now visible there dates from the fourth or fifth century, but beneath its floor excavators found basalt foundations of an earlier building, which many identify with the synagogue of Jesus' day (Mark 1:21).",
+      "parallels": [
+        "Mark 2:1",
+        "Luke 5:17"
+      ],
+      "refs": [
+        "Matthew 4:13",
+        "Matthew 13:54",
+        "Mark 5:18-21"
+      ]
+    },
+    {
+      "v": "2",
+      "context": "Men bring a paralyzed man on a bed. Matthew omits the crowded house and the opened roof; what remains is faith seen, a word of courage, and a word of forgiveness. Jesus' first response to a man who cannot walk is to deal with his sins.",
+      "grammar": "Idōn ho Iēsous tēn pistin autōn, ‘Jesus, seeing their faith’: autōn, ‘their’, includes the carriers, so faith is visible in what they do. Beblēmenon, ‘lying’, is the perfect passive participle already used of the centurion's servant and Peter's mother-in-law (8:6, 8:14). Tharsei, teknon, ‘take courage, child’: tharsei is a present imperative that Matthew alone adds here, and Jesus speaks it again to the bleeding woman (9:22) and the disciples on the water (14:27). Teknon is an affectionate address, not a statement of age. Aphientai sou hai hamartiai, ‘your sins are forgiven’, is a present passive indicative: the forgiveness is granted as the words are spoken.",
+      "words": [
+        "G4374",
+        "G3885",
+        "G2825",
+        "G0906H",
+        "G4102G",
+        "G2293",
+        "G5043",
+        "G0863H",
+        "G0266"
+      ],
+      "text": "The earliest manuscripts read the present aphientai; later manuscripts behind the King James Version read the perfect apheōntai, ‘have been forgiven’ (‘be forgiven thee’), the form Luke uses (Luke 5:20).",
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "The man says nothing and no repentance is recorded; forgiveness comes first, spoken to a man who was carried in. Matthew's story shows that the need for forgiveness is deeper than the visible need, and that it is met by Jesus' word before any reform is required."
+        },
+        {
+          "id": "faith",
+          "note": "The faith Jesus sees belongs to the carriers as well as the man. The verse gives a place to faith exercised on another's behalf, which is part of why the church has read it in connection with intercessory prayer."
+        },
+        {
+          "id": "sin",
+          "note": "Jesus addresses sin first without saying the paralysis was its punishment. The verse assumes that every person, whatever their condition, stands in need of forgiveness, while elsewhere Jesus rejects a simple link between a particular illness and a particular sin (John 9:2-3)."
+        }
+      ],
+      "parallels": [
+        "Mark 2:3-5",
+        "Luke 5:18-20"
+      ],
+      "refs": [
+        "Isaiah 43:25",
+        "Psalm 32:1-5",
+        "John 9:2-3",
+        "Matthew 14:27"
+      ]
+    },
+    {
+      "v": "3",
+      "context": "Some scribes say among themselves that Jesus is blaspheming. Matthew compresses their objection to two words and drops the reasoning Mark and Luke give, ‘who can forgive sins but God alone?’, but the charge assumes it. The same accusation will be made at his trial (26:65).",
+      "grammar": "Idou tines tōn grammateōn eipan en heautois, ‘behold, some of the scribes said within themselves’: en heautois can mean ‘among themselves’ or ‘to themselves’, but verse 4 shows that Jesus perceived their thoughts, so the inward sense fits. Houtos blasphēmei, ‘this man blasphemes’: houtos, ‘this fellow’, can carry contempt, and the present tense describes what he is doing as he speaks.",
+      "words": [
+        "G2400",
+        "G1122",
+        "G1438",
+        "G3778",
+        "G0987"
+      ],
+      "history": "Scribes were the trained interpreters and copyists of the law of Moses. Blasphemy in Leviticus 24:15-16 was cursing God's name and carried the death penalty; the Mishnah later restricted the capital offense to pronouncing the divine name itself (m. Sanhedrin 7:5). Israel's Scriptures reserve forgiveness of sins to God (Exodus 34:6-7, Isaiah 43:25), and priests declared it only through the sacrifices God appointed. For a man to pronounce forgiveness on his own word, with no sacrifice and no temple, was to take God's place, which is why the scribes use the strongest word available.",
+      "theology": [
+        {
+          "id": "god",
+          "note": "The scribes' objection rests on a true premise: forgiveness belongs to the one who is sinned against, and every sin is finally against God (Psalm 51:4). Matthew does not dispute the premise; the story turns on who Jesus is."
+        }
+      ],
+      "parallels": [
+        "Mark 2:6-7",
+        "Luke 5:21"
+      ],
+      "refs": [
+        "Leviticus 24:15-16",
+        "Matthew 26:65",
+        "Psalm 51:4",
+        "Exodus 34:6-7"
+      ]
+    },
+    {
+      "v": "4-5",
+      "context": "Jesus answers thoughts no one has spoken and puts a question to the scribes. Which is easier to say: a word whose result no one can check, or a word whose result everyone will see at once? The question sets up the proof that follows.",
+      "grammar": "Idōn ho Iēsous tas enthumēseis autōn, ‘Jesus, seeing their thoughts’, uses the verb of sight for inner perception. Hinati enthumeisthe ponēra, ‘why do you ponder evil things?’: hinati is a contracted ‘for what purpose’, and enthumeomai, ‘to reflect on, turn over in the mind’, is cognate with the noun enthumēseis just used. Ti gar estin eukopōteron, ‘for which is easier?’: eukopōteros is a comparative of eukopos, ‘requiring little labor’. The comparison is between two sayings (eipein, ‘to say’, twice), not two acts: forgiveness cannot be seen, healing can.",
+      "words": [
+        "G1492I",
+        "G1761",
+        "G2443",
+        "G1760",
+        "G4190",
+        "G2588",
+        "G2123",
+        "G2036",
+        "G1453",
+        "G4043"
+      ],
+      "text": "The editions divide over the first participle of verse 4. Nestle-Aland and the Byzantine text read idōn, ‘seeing’; Westcott and Hort, Tregelles, and the SBL edition read eidōs, ‘knowing’, which the King James Version follows (‘Jesus knowing their thoughts’). The two words differ by one letter in Greek, and the sense is nearly the same: Jesus perceives what is hidden.",
+      "theology": [
+        {
+          "id": "attributes",
+          "note": "Knowing the heart is God's prerogative in Israel's Scriptures (1 Samuel 16:7, Jeremiah 17:10, Psalm 139:1-4). Before Jesus claims authority to forgive, Matthew shows him doing what God alone does: reading the thoughts of those who judge him."
+        }
+      ],
+      "parallels": [
+        "Mark 2:8-9",
+        "Luke 5:22-23"
+      ],
+      "refs": [
+        "1 Samuel 16:7",
+        "Jeremiah 17:10",
+        "Psalm 139:1-4",
+        "Matthew 12:25"
+      ]
+    },
+    {
+      "v": "6",
+      "context": "Jesus gives his answer as a purpose clause that breaks off, and he completes it with a command to the paralyzed man. The visible healing is offered as evidence for the invisible forgiveness.",
+      "grammar": "Hina de eidēte, ‘but so that you may know’, begins a sentence addressed to the scribes that never reaches its main verb; tote legei tō paralutikō, ‘then he says to the paralytic’, completes it with an action. Grammarians call this an anacoluthon, a sentence that changes course, and Matthew keeps it from Mark, so all three Gospels preserve the broken syntax. Exousian echei ho huios tou anthrōpou epi tēs gēs aphienai hamartias, ‘the Son of Man has authority on earth to forgive sins’: epi tēs gēs, ‘on earth’, implies a contrast with heaven, where forgiveness belongs. Three imperatives follow: egertheis (a participle, ‘rising’), aron, ‘take up’, and hupage, ‘go’.",
+      "words": [
+        "G2443",
+        "G1849",
+        "G2192",
+        "G5207",
+        "G0444",
+        "G1093G",
+        "G0863H",
+        "G0266",
+        "G0142",
+        "G5217"
+      ],
+      "ot": [
+        {
+          "ref": "Daniel 7:13-14",
+          "note": "In Daniel's vision one like a son of man is given dominion and kingship by the Ancient of Days, and the Septuagint says exousia, ‘authority’, was given to him. Jesus' pairing of ‘Son of Man’ with exousia draws on this text. In Daniel the figure receives authority in heaven; here the Son of Man exercises it on earth, and Matthew's Gospel ends with the risen Jesus saying, “All authority in heaven and on earth has been given to Me” (28:18), the same two spheres and the same noun."
+        }
+      ],
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "Jesus does not say that he announces God's forgiveness, as a priest or prophet might; he says the Son of Man has authority to forgive. The claim identifies him with the divine prerogative the scribes named, and the healing is offered as its public confirmation."
+        },
+        {
+          "id": "exaltation",
+          "note": "‘On earth’ anticipates the risen Christ's ‘in heaven and on earth’ (28:18). The authority he exercises in Capernaum is the authority he will hold as the exalted Son of Man."
+        }
+      ],
+      "parallels": [
+        "Mark 2:10-11",
+        "Luke 5:24"
+      ],
+      "refs": [
+        "Daniel 7:13-14",
+        "Matthew 28:18",
+        "Matthew 16:19",
+        "John 5:27"
+      ]
+    },
+    {
+      "v": "7-8",
+      "context": "The man gets up and goes home, doing exactly what he was told. The crowd's response is the last word of the story: fear and praise to God for giving such authority to human beings.",
+      "grammar": "Egertheis apēlthen eis ton oikon autou, ‘rising, he went away to his house’, repeats the command's words as the narrative of its fulfillment. In verse 8 ephobēthēsan, ‘they were afraid’, is fear before the holy, the reaction of the disciples after the storm in Mark (4:41). Edoxasan ton theon ton donta exousian toiautēn tois anthrōpois, ‘they glorified God, who had given such authority to men’: donta is an aorist participle, ‘the one who gave’, and tois anthrōpois is plural. The plural may be a general statement, God giving such authority to humankind in the person of this man, or it may look ahead to the authority Jesus will give his disciples to bind and loose and to forgive (16:19, 18:18).",
+      "words": [
+        "G1453",
+        "G0565",
+        "G3624G",
+        "G3793",
+        "G5399",
+        "G1392",
+        "G2316",
+        "G1325",
+        "G1849",
+        "G5108",
+        "G0444"
+      ],
+      "text": "The earliest manuscripts read ephobēthēsan, ‘they were afraid’ or ‘filled with awe’; the Byzantine text and the Textus Receptus read ethaumasan, ‘they marveled’, which the King James Version translates ‘they marvelled’.",
+      "theology": [
+        {
+          "id": "church",
+          "note": "Matthew's crowd praises God for giving authority ‘to men’, plural. Many interpreters read the phrase as Matthew's pointer to the church, to which the risen Jesus entrusts the ministry of forgiveness (16:19, 18:18, John 20:23). Traditions differ on how that authority is exercised, through ordained ministers in confession and absolution, through the preaching of the gospel, or through the whole community's discipline, but all find its source in the Son of Man's own authority."
+        }
+      ],
+      "parallels": [
+        "Mark 2:12",
+        "Luke 5:25-26"
+      ],
+      "refs": [
+        "Matthew 16:19",
+        "Matthew 18:18",
+        "John 20:23",
+        "Matthew 15:31"
+      ]
+    },
+    {
+      "v": "9",
+      "context": "Passing the toll booth, Jesus calls a tax collector with the same two words he spoke to the hesitating disciple in 8:22, ‘Follow me’. Matthew obeys at once. The call is the hinge of the second discipleship interlude, and it shows the authority to forgive at work in a life, not only in a pronouncement.",
+      "grammar": "Paragōn ekeithen, ‘passing on from there’, is the participle used for the call of the first disciples in Mark (1:16). Anthrōpon kathēmenon epi to telōnion, Maththaion legomenon, ‘a man sitting at the toll office, called Matthew’: telōnion is the booth or office where tolls were paid. Akolouthei moi, ‘follow me’, is a present imperative, a call to go on following. Anastas ēkolouthēsen autō, ‘rising, he followed him’: the aorist participle of anistēmi, ‘to rise’, uses a verb that can also describe resurrection, and his rising follows the paralytic's (verse 7).",
+      "words": [
+        "G3855",
+        "G1564",
+        "G2521",
+        "G5058",
+        "G3156",
+        "G3004H",
+        "G0190",
+        "G0450"
+      ],
+      "history": "Mark and Luke call the man Levi (Mark 2:14, Luke 5:27), and Mark adds ‘son of Alphaeus’; this Gospel calls him Matthew and alone labels him ‘the tax collector’ in the list of the Twelve (10:3). A Jew bearing two Semitic names is not unusual, but it is also possible that Matthew was the name he came to be known by among the disciples, as Simon became Peter. The toll office at Capernaum collected duties on goods moving between Antipas's Galilee and Philip's territory across the Jordan, and on goods landed from the lake.",
+      "theology": [
+        {
+          "id": "election",
+          "note": "Matthew does not seek Jesus; Jesus sees him and calls him. Bede's homily on the verse, read on Matthew's feast, fixed the point in the phrase ‘by showing mercy and choosing’: the call rests on Jesus' merciful choice, not on the tax collector's merit."
+        }
+      ],
+      "parallels": [
+        "Mark 2:13-14",
+        "Luke 5:27-28"
+      ],
+      "refs": [
+        "Matthew 10:3",
+        "Matthew 4:18-22",
+        "Luke 19:1-10",
+        "Matthew 8:22"
+      ]
+    },
+    {
+      "v": "10",
+      "context": "Jesus reclines at table, and many tax collectors and sinners come and eat with him and his disciples. Matthew's Greek does not say whose house it was; Luke says Levi gave a great banquet in his own house (Luke 5:29). What matters to the story is the company at the table.",
+      "grammar": "Kai egeneto autou anakeimenou en tē oikia, ‘and it happened, as he was reclining in the house’: kai egeneto, ‘and it came to pass’, is a Septuagint idiom for opening a scene, and anakeimai means to recline at a meal. En tē oikia, ‘in the house’, has only the article; Mark's autou, ‘his’, is itself ambiguous, and Matthew uses ‘the house’ elsewhere for the house where Jesus stays in Capernaum (9:28, 13:1, 13:36, 17:25), so some interpreters think Jesus himself is the host. The BSB's ‘at Matthew's house’ follows Luke. Kai idou polloi telōnai kai hamartōloi, ‘and behold, many tax collectors and sinners’: idou marks the surprise, and sunanekeinto, ‘they were reclining with’, a compound imperfect, puts them on the same couches.",
+      "words": [
+        "G1096",
+        "G0345",
+        "G3614G",
+        "G5057",
+        "G0268",
+        "G4873",
+        "G3101"
+      ],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "Sharing a meal was a sign of acceptance. Jesus' table with sinners enacts the forgiveness just pronounced on the paralytic: the welcome comes before the reform, and it is a foretaste of the banquet with Abraham, Isaac, and Jacob (8:11)."
+        }
+      ],
+      "parallels": [
+        "Mark 2:15",
+        "Luke 5:29"
+      ],
+      "refs": [
+        "Luke 5:29",
+        "Matthew 11:19",
+        "Luke 15:1-2",
+        "Matthew 8:11"
+      ]
+    },
+    {
+      "v": "11",
+      "context": "The Pharisees do not confront Jesus directly; they put their question to his disciples. It is an honest question from observant men: why would a teacher eat with people whose way of life put them outside the Law's discipline?",
+      "grammar": "Elegon, ‘they were saying’, is an imperfect, suggesting a repeated complaint. Dia ti meta tōn telōnōn kai hamartōlōn esthiei ho didaskalos humōn, ‘why does your teacher eat with the tax collectors and sinners?’: the single article governs both nouns, treating them as one group, and ho didaskalos humōn, ‘your teacher’, keeps the Pharisees at a distance from Jesus. In Matthew opponents call Jesus ‘Teacher’, while disciples call him ‘Lord’.",
+      "words": [
+        "G5330",
+        "G3101",
+        "G5057",
+        "G0268",
+        "G2068",
+        "G1320"
+      ],
+      "history": "Tax collectors were suspect for dishonesty and for handling Gentile money on behalf of the ruling house. ‘Sinners’ were Jews regarded as living outside the Law, whether through open wrongdoing or through trades and habits the observant avoided. The Pharisees' concern for tithing and purity made the question of shared food a real one: food at such a table might not have been tithed or kept clean, and sharing it implied acceptance. The later Mishnah rules that a house becomes unclean if toll collectors enter it (m. Tohorot 7:6), which shows how the association was felt.",
+      "parallels": [
+        "Mark 2:16",
+        "Luke 5:30"
+      ],
+      "refs": [
+        "Luke 15:1-2",
+        "Luke 18:11",
+        "Matthew 21:31-32"
+      ]
+    },
+    {
+      "v": "12-13",
+      "context": "Jesus answers with a proverb, a text, and a statement of his mission. Physicians go to the sick; God wants mercy; Jesus came to call sinners. Matthew alone adds the quotation from Hosea, and he will use it again in 12:7, so that it frames two of Jesus' disputes with the Pharisees.",
+      "grammar": "Ou chreian echousin hoi ischuontes iatrou, ‘those who are strong have no need of a physician’: ischuontes, ‘the strong’, is Mark's word; Luke has hugiainontes, ‘the healthy’. Poreuthentes de mathete ti estin, ‘go and learn what this means’, echoes a formula of Jewish teaching, ‘go out and learn’, familiar from the Passover Haggadah's call to go and learn from the story of Laban. The quotation, eleos thelō kai ou thusian, is followed by gar, ‘for’, introducing the reason: ou gar ēlthon kalesai dikaious alla hamartōlous, ‘for I did not come to call the righteous but sinners’. Kaleō, ‘to call’, is also the verb for inviting guests to a banquet (22:3-9), and the table setting makes that sense close to the surface.",
+      "words": [
+        "G5532",
+        "G2480",
+        "G2395",
+        "G2560",
+        "G4198",
+        "G3129",
+        "G1656",
+        "G2309",
+        "G2378",
+        "G2564G",
+        "G1342",
+        "G0268"
+      ],
+      "ot": [
+        {
+          "ref": "Hosea 6:6",
+          "note": "The Hebrew reads ki hesed hafatsti welo zavah weda‘at elohim me‘olot: “For I desire mercy, not sacrifice, and the knowledge of God rather than burnt offerings.” The second line's ‘rather than’ (the Hebrew preposition min) shows that the first ‘not’ is comparative: Hosea does not abolish sacrifice but ranks it below hesed, the loyal covenant love that Israel's worship lacked; two verses earlier God complains that Israel's loyalty is “like a morning mist, like the early dew that vanishes” (6:4). The Septuagint renders hesed by eleos, ‘mercy’, and Matthew's six Greek words, eleos thelō kai ou thusian, match its wording of the line, which renders the Hebrew exactly (some Greek witnesses of Hosea read ē, ‘rather than’). In Hosea, hesed is Israel's faithfulness to God; Jesus applies it to mercy shown to sinners, which fits the word's range, since hesed toward God and kindness toward neighbor belong together in the prophets (Micah 6:8). He uses the verse against critics who would protect ritual purity at the cost of mercy, as the prophets used it against worship without justice."
+        }
+      ],
+      "theology": [
+        {
+          "id": "law",
+          "note": "Jesus answers a question about purity by sending his critics to Scripture: ‘go and learn’. The Law and the Prophets are read by their own priorities, and Hosea supplies the ranking: God desires mercy above sacrifice. This is not the Law set aside but the Law's own aim, the same principle Jesus will call the weightier matters (23:23)."
+        },
+        {
+          "id": "repentance",
+          "note": "‘I have not come to call the righteous, but sinners’ does not mean some people need no call; it means the call reaches those who know they are sick. Repentance is the answer to the physician's visit, not the qualification for it."
+        }
+      ],
+      "parallels": [
+        "Mark 2:17",
+        "Luke 5:31-32"
+      ],
+      "refs": [
+        "Hosea 6:4-6",
+        "Matthew 12:7",
+        "Matthew 23:23",
+        "1 Samuel 15:22",
+        "Micah 6:8"
+      ]
+    },
+    {
+      "v": "14",
+      "context": "A second question comes from a different group: the disciples of John the Baptist. They fast, the Pharisees fast, and Jesus' disciples do not. In Matthew the question comes from John's disciples themselves; Mark leaves the questioners unnamed (Mark 2:18), and Luke gives the question to Jesus' Pharisee critics (Luke 5:33).",
+      "grammar": "Tote proserchontai autō, ‘then they come to him’: tote, ‘then’, is Matthew's favorite connective, and the present proserchontai is a historical present that brings the scene forward. Dia ti hēmeis kai hoi Pharisaioi nēsteuomen, ‘why do we and the Pharisees fast?’, uses the emphatic pronoun hēmeis, ‘we’. Polla, literally ‘much’, is used as an adverb, ‘often’. The contrast hoi de mathētai sou ou nēsteuousin, ‘but your disciples do not fast’, holds Jesus responsible for his disciples' practice, as a teacher was.",
+      "words": [
+        "G5119",
+        "G4334",
+        "G2491G",
+        "G5330",
+        "G3522",
+        "G4183"
+      ],
+      "history": "The Law required fasting only on the Day of Atonement (Leviticus 16:29-31), and fasts marking the fall of Jerusalem were added after the exile (Zechariah 8:19). The devout fasted more. The Pharisee in Luke's parable fasts twice a week (Luke 18:12), and the Didache (8:1) tells Christians not to fast on Mondays and Thursdays as ‘the hypocrites’ do, but on Wednesdays and Fridays. John's disciples, whose teacher was in prison (4:12, 11:2), may have fasted in mourning as well as in repentance.",
+      "text": "The word polla, ‘often’, is missing from the original hand of Codex Sinaiticus and from Codex Vaticanus; most manuscripts have it, and modern editions print it, some in brackets.",
+      "parallels": [
+        "Mark 2:18",
+        "Luke 5:33"
+      ],
+      "refs": [
+        "Leviticus 16:29-31",
+        "Zechariah 8:19",
+        "Luke 18:12",
+        "Matthew 6:16-18"
+      ]
+    },
+    {
+      "v": "15",
+      "context": "Jesus answers with a wedding. Guests do not mourn while the bridegroom is present; they will fast when he is taken away. The saying contains, in Jesus' own words, the first hint of his violent death.",
+      "grammar": "Mē dunantai hoi huioi tou numphōnos penthein, ‘the sons of the bridal chamber cannot mourn, can they?’: mē introduces a question expecting the answer no, and huioi tou numphōnos is a Semitic idiom for the groom's attendants. Matthew changes Mark's ‘fast’ to penthein, ‘to mourn’, the verb of the beatitude ‘blessed are those who mourn’ (5:4), which makes explicit that fasting expressed grief. Hotan aparthē ap' autōn ho numphios, ‘when the bridegroom is taken from them’: aparthē is an aorist passive subjunctive of apairō, used in the New Testament only in this saying and its parallels. The passive suggests removal by force. Tote nēsteusousin, ‘then they will fast’, is a simple future, a prediction and not a prohibition.",
+      "words": [
+        "G1410",
+        "G5207",
+        "G3567",
+        "G3996",
+        "G3566",
+        "G2250",
+        "G0522",
+        "G3522"
+      ],
+      "ot": [
+        {
+          "ref": "Isaiah 62:5",
+          "note": "Isaiah promises Zion that “as a bridegroom rejoices over his bride, so your God will rejoice over you.” The prophets repeatedly picture the LORD as Israel's husband (Hosea 2:19-20, Isaiah 54:5), and the returning joy of the bridegroom's voice is one of Jeremiah's images of restoration (Jeremiah 33:10-11). Jesus does not quote these passages, but by calling himself the bridegroom he takes the role they give to God, and he makes his presence the reason for joy. The Septuagint of Isaiah 53:8 says of the servant that his life ‘is taken away (airetai) from the earth’, using the simple form of the verb Jesus uses here; the words are not the same, but some readers hear the servant's fate behind ‘taken away’."
+        }
+      ],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "‘Taken from them’ is the first word from Jesus himself about his coming removal. Placed beside the wedding, it tells the disciples that the joy of his presence will be interrupted by a loss, and that the church's fasting will belong to the time between his going and his return."
+        },
+        {
+          "id": "worship",
+          "note": "Jesus does not abolish fasting; he times it. His disciples will fast ‘then’, and the early church did (Acts 13:2-3, 14:23). Christian fasting is shaped by the bridegroom's absence and the longing for his return, not by merit."
+        }
+      ],
+      "parallels": [
+        "Mark 2:19-20",
+        "Luke 5:34-35"
+      ],
+      "refs": [
+        "Isaiah 62:5",
+        "John 3:29",
+        "Matthew 25:1-13",
+        "Acts 13:2-3",
+        "Revelation 19:7-9"
+      ]
+    },
+    {
+      "v": "16",
+      "context": "The first of two images from daily life. A patch of new, unshrunk cloth sewn onto an old garment will shrink when washed and tear it worse. The image continues the answer about fasting: the new thing Jesus brings cannot simply be added to the old patterns as a repair.",
+      "grammar": "Oudeis de epiballei epiblēma rhakous agnaphou epi himatiō palaiō, ‘no one puts a patch of unshrunk cloth on an old garment’: epiballō and epiblēma, ‘put on’ and ‘what is put on’, are cognate, and agnaphos means ‘not fulled’, cloth not yet washed and shrunk by the fuller. Airei gar to plērōma autou apo tou himatiou, ‘for its patch pulls away from the garment’: plērōma, ‘that which fills’, is the patch filling the hole. Cheiron schisma ginetai, ‘a worse tear results’: schisma is a tear or split, the word later used for divisions in a community (1 Corinthians 1:10).",
+      "words": [
+        "G1911",
+        "G1915",
+        "G4470",
+        "G0046",
+        "G2440",
+        "G3820",
+        "G0142",
+        "G4138",
+        "G5501",
+        "G4978"
+      ],
+      "history": "New wool was fulled, washed and beaten in water, often with clay or other agents, to shrink and thicken it before use; the fuller's field outside Jerusalem is mentioned in Isaiah 7:3. An unfulled patch sewn onto an old, already shrunk garment would contract at the first washing and tear the weakened cloth around it.",
+      "parallels": [
+        "Mark 2:21",
+        "Luke 5:36"
+      ],
+      "refs": [
+        "Isaiah 7:3",
+        "Mark 2:21",
+        "Luke 5:36"
+      ]
+    },
+    {
+      "v": "17",
+      "context": "The second image is wine and wineskins. New wine still fermenting will burst old, stiff skins, and both are lost; it must go into new skins. Matthew alone ends with ‘and both are preserved’, a phrase that has shaped how his Gospel is read on the relation of old and new.",
+      "grammar": "Oude ballousin oinon neon eis askous palaious, ‘nor do they put new wine into old wineskins’: the impersonal third plural means ‘people do not’. Ei de mē ge, ‘otherwise’, is an idiom for ‘if they do’. Three present passives follow: rhēgnuntai hoi askoi, ‘the skins burst’, ho oinos ekcheitai, ‘the wine is poured out’, and hoi askoi apolluntai, ‘the skins are destroyed’. Two Greek words for ‘new’ are used: neos for the wine, new in age, still young and fermenting; kainos for the skins, new in kind, fresh and unused. Kai amphoteroi suntērountai, ‘and both are preserved’: amphoteroi, ‘both’, most naturally refers to the wine and the new skins, though interpreters have long asked whether Matthew means the old as well.",
+      "words": [
+        "G3631",
+        "G3501",
+        "G0779",
+        "G3820",
+        "G4486",
+        "G1632",
+        "G0622",
+        "G2537",
+        "G0297",
+        "G4933"
+      ],
+      "text": "Some manuscripts of Luke 5:38 add ‘and both are preserved’, copied from this verse; the phrase belongs to Matthew alone.",
+      "theology": [
+        {
+          "id": "law",
+          "note": "The new wine is the presence of the bridegroom and the kingdom he brings, and it requires new forms. Matthew's ‘both are preserved’, alongside his saying that every scribe trained for the kingdom brings out of his treasure what is new and what is old (13:52), shows his concern that the new not destroy what God gave before. Interpreters differ on how much of the Law's practice continues and how much is fulfilled and ended in Christ, a second-order question this verse opens rather than settles."
+        },
+        {
+          "id": "new-creation",
+          "note": "Wine was one of the prophets' images of the age to come (Amos 9:13, Joel 3:18), and Jesus promises to drink it new in his Father's kingdom (26:29). The new wine that bursts old skins belongs to that picture: the new age cannot be contained by the old."
+        }
+      ],
+      "parallels": [
+        "Mark 2:22",
+        "Luke 5:37-39"
+      ],
+      "refs": [
+        "Matthew 13:52",
+        "Matthew 5:17",
+        "Amos 9:13",
+        "Matthew 26:29"
+      ]
+    },
+    {
+      "v": "18",
+      "context": "While Jesus is still speaking, a ruler comes, kneels, and says his daughter has just died. The interruption begins the third group of miracles and the Gospel's first raising of the dead. In Matthew the father asks from the start for a resurrection, not a cure.",
+      "grammar": "Tauta autou lalountos autois, ‘while he was saying these things to them’, is a genitive absolute that ties the new scene directly to the conversation about the bridegroom. Archōn heis, ‘a ruler’, uses heis, ‘one’, as an indefinite article. Prosekunei, ‘he knelt’, the imperfect of proskuneō, is the posture of the leper (8:2). Hē thugatēr mou arti eteleutēsen, ‘my daughter has just now died’: arti, ‘just now’, with the aorist, marks a death moments old. Alla elthōn epithes tēn cheira sou ep' autēn, kai zēsetai, ‘but come, lay your hand on her, and she will live’: the aorist imperative and the future indicative are a request followed by a certainty.",
+      "words": [
+        "G2980",
+        "G0758",
+        "G1520",
+        "G4352",
+        "G2364",
+        "G0737",
+        "G5053",
+        "G2007",
+        "G5495",
+        "G2198"
+      ],
+      "text": "Matthew's Greek calls the man only archōn, ‘a ruler’; the BSB's ‘a synagogue leader’ draws on Mark and Luke, who call him archisynagōgos and name him Jairus (Mark 5:22, Luke 8:41), and the ESV and KJV keep ‘ruler’. The opening words are unusually tangled in the manuscripts, which read either ‘one ruler came’ (archōn heis elthōn) or ‘a ruler came in’ (archōn eiselthōn), with several mixtures; the sense is not affected. On the difference from Mark and Luke, where the girl is dying when the father comes, see the chapter's hard question.",
+      "theology": [
+        {
+          "id": "faith",
+          "note": "The father believes that Jesus' touch can restore a life already ended. His faith asks more than any request so far in these chapters, and Jesus goes with him without a word of testing."
+        }
+      ],
+      "parallels": [
+        "Mark 5:21-23",
+        "Luke 8:40-42"
+      ],
+      "refs": [
+        "1 Kings 17:17-24",
+        "2 Kings 4:32-35",
+        "Matthew 8:2",
+        "John 11:25-26"
+      ]
+    },
+    {
+      "v": "19",
+      "context": "Jesus gets up from the table and goes with the ruler, his disciples coming after. Matthew's verse is brief, but its verb is striking: Jesus ‘follows’ the grieving father.",
+      "grammar": "Egertheis ho Iēsous ēkolouthēsen autō, ‘Jesus, rising, followed him’: akoloutheō, the verb that has run through these chapters for disciples following Jesus (8:19, 8:22, 8:23, 9:9), now has Jesus as its subject. The one whom disciples follow walks behind a desperate father. Kai hoi mathētai autou, ‘and his disciples’, follow in turn.",
+      "words": [
+        "G1453",
+        "G0190",
+        "G3101"
+      ],
+      "parallels": [
+        "Mark 5:24",
+        "Luke 8:42"
+      ],
+      "refs": [
+        "Matthew 8:19",
+        "Matthew 9:9",
+        "Philippians 2:7"
+      ]
+    },
+    {
+      "v": "20-21",
+      "context": "On the way, a woman who has suffered bleeding for twelve years comes up from behind and touches the tassel of Jesus' cloak, saying to herself that touching his cloak will be enough. Matthew tells her story in three verses and gives her thoughts, not her history with physicians.",
+      "grammar": "Gunē haimorroousa dōdeka etē, ‘a woman bleeding for twelve years’: haimorroeō is a compound of ‘blood’ and ‘flow’, the verb the Septuagint uses in Leviticus 15:33 for a woman with a discharge. Proselthousa opisthen, ‘coming from behind’, conveys concealment. Hēpsato tou kraspedou tou himatiou autou, ‘she touched the tassel of his cloak’: kraspedon is the Septuagint's word for the tassels of Numbers 15:38. Elegen gar en heautē, ‘for she was saying to herself’, uses gar to give the reason for her act, and the imperfect suggests a thought repeated. Ean monon hapsōmai tou himatiou autou sōthēsomai, ‘if only I touch his cloak I will be saved’: a third-class condition with a future passive of sōzō, the verb of rescue, healing, and salvation.",
+      "words": [
+        "G1135G",
+        "G0131",
+        "G1427",
+        "G2094",
+        "G3693",
+        "G0681",
+        "G2899",
+        "G2440",
+        "G3441",
+        "G4982"
+      ],
+      "history": "Leviticus 15:25-27 makes a woman with a prolonged discharge ritually unclean for as long as it lasts, along with the bed and seat she uses, and those who touch those things are unclean until evening. Purity rules governed approach to the temple and its holy things and certain kinds of contact; they did not make such a woman an outcast barred from her town, and Susan Haber and Amy-Jill Levine have cautioned against reading that assumption into the story. Matthew says nothing about her impurity at all. What he records is twelve years of illness and a woman approaching quietly, from behind. The tassels (Hebrew tsitsit) were worn by observant Jewish men at the four corners of the outer garment as a reminder of the commandments (Numbers 15:37-41, Deuteronomy 22:12).",
+      "ot": [
+        {
+          "ref": "Numbers 15:38",
+          "note": "The LORD tells Moses that Israelites are “to make for themselves tassels for the corners of their garments, with a blue cord on each tassel”, so that seeing them they will remember and do the commandments (15:39-40). The Hebrew kenaf, ‘corner’ or ‘wing’, becomes kraspedon in the Septuagint. The woman takes hold of the part of Jesus' clothing that marked him as a keeper of God's law. Zechariah 8:23 pictures men from the nations grasping the kenaf of a Jew because God is with him, the Septuagint again using kraspedon; the woman's grasp fits that picture of reaching for the one in whom God is present. Readers who connect the ‘wings’ of the garment to the sun of righteousness rising with healing in its wings (Malachi 4:2) go beyond what the text says."
+        }
+      ],
+      "parallels": [
+        "Mark 5:25-28",
+        "Luke 8:43-44"
+      ],
+      "refs": [
+        "Leviticus 15:25-27",
+        "Numbers 15:37-41",
+        "Deuteronomy 22:12",
+        "Matthew 14:36",
+        "Matthew 23:5"
+      ]
+    },
+    {
+      "v": "22",
+      "context": "Jesus turns, sees her, and speaks. In Matthew there is no search through the crowd and no disciples' objection, and the healing follows his word: she is well ‘from that hour’. The story that Mark tells as a touch that draws power becomes in Matthew an encounter of faith and word.",
+      "grammar": "Strapheis kai idōn autēn, ‘turning and seeing her’: two aorist participles give Jesus' response without delay. Tharsei, thugater, ‘take courage, daughter’, repeats the tharsei spoken to the paralytic (verse 2), and thugater, ‘daughter’, gives her a family name in public. Hē pistis sou sesōken se, ‘your faith has saved you’, uses the perfect of sōzō, a rescue that stands. The narrator then uses the same verb a third time, esōthē hē gunē apo tēs hōras ekeinēs, ‘the woman was saved from that hour’. Sōzō appears three times in verses 21 and 22 (rendered ‘healed’ and ‘cured’ in the BSB); Matthew's readers had heard its first use in 1:21, where Jesus will save his people from their sins.",
+      "words": [
+        "G4762",
+        "G2293",
+        "G2364",
+        "G4102G",
+        "G4982",
+        "G5610"
+      ],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "The verb for her healing is the Gospel's verb for salvation, and Matthew uses it three times in two verses. The verse shows salvation reaching the body and a person's place among others, and Jesus' ‘daughter’ gives her a standing no cure alone could."
+        },
+        {
+          "id": "faith",
+          "note": "Jesus credits her faith, not the cloth. Her faith was imperfect in its understanding, perhaps close to magic, but it reached for Jesus, and he honored it and corrected nothing but her hiding."
+        }
+      ],
+      "parallels": [
+        "Mark 5:29-34",
+        "Luke 8:44-48"
+      ],
+      "refs": [
+        "Matthew 1:21",
+        "Matthew 9:2",
+        "Luke 7:50",
+        "Luke 17:19"
+      ]
+    },
+    {
+      "v": "23-24",
+      "context": "At the ruler's house the mourning has already begun, with flute players and a noisy crowd. Jesus sends them out, saying the girl is not dead but asleep, and they laugh at him. Their laughter shows they know she is dead.",
+      "grammar": "Idōn tous aulētas kai ton ochlon thoruboumenon, ‘seeing the flute players and the crowd in uproar’: aulētēs is a player of the aulos, a double reed pipe, and thorubeō, ‘to be in uproar’, is a present passive participle. Matthew alone mentions the flute players. Anachōreite, ‘withdraw’, a present imperative, is courteous but firm. Ou gar apethanen to korasion alla katheudei, ‘for the girl did not die but is sleeping’: the aorist apethanen and the present katheudei set a finished event against an ongoing state. Korasion, ‘little girl’, is a diminutive of korē. Kategelōn autou, ‘they were laughing at him’, an imperfect of scorn.",
+      "words": [
+        "G0834",
+        "G3793",
+        "G2350",
+        "G0402",
+        "G0599",
+        "G2877",
+        "G2518",
+        "G2606"
+      ],
+      "history": "Mourning began as soon as a death occurred, and burial usually followed the same day. Flute players and wailing women were expected even at the funerals of the poor; the Mishnah rules that a husband, however poor, must provide at least two flutes and one wailing woman for his wife's funeral (m. Ketubbot 4:4), and Josephus says that when a false report of his death reached Jerusalem in AD 67 many hired flute players to lead their laments (Jewish War 3.437).",
+      "ot": [
+        {
+          "ref": "Daniel 12:2",
+          "note": "Daniel's vision of the end says that “many who sleep in the dust of the earth will awake”, some to everlasting life. The Hebrew calls the dead yeshenei, ‘sleepers’, and the Greek versions use katheudō, the verb Jesus uses. His ‘not dead but asleep’ does not deny the death; it names it in the language of resurrection hope, as Paul does for believers who have died (1 Thessalonians 4:13-14)."
+        }
+      ],
+      "parallels": [
+        "Mark 5:38-40",
+        "Luke 8:51-53"
+      ],
+      "refs": [
+        "Daniel 12:2",
+        "John 11:11-14",
+        "1 Thessalonians 4:13-14",
+        "Jeremiah 9:17-18"
+      ]
+    },
+    {
+      "v": "25-26",
+      "context": "With the crowd put out, Jesus takes the girl by the hand and she rises. Matthew records no words, no Aramaic, no command to feed her, and no order of silence; only the touch, the rising, and the news spreading through the region.",
+      "grammar": "Hote de exeblēthē ho ochlos, ‘when the crowd had been put out’: ekballō, ‘to throw out’, is the verb of casting out demons, and it is used of the mourners. Ekratēsen tēs cheiros autēs, ‘he took hold of her hand’, the grip of a man lifting someone up, as with Peter's mother-in-law (Mark 1:31). Kai ēgerthē to korasion, ‘and the girl was raised’: ēgerthē, an aorist passive of egeirō, is Matthew's verb for resurrection, used of the saints raised at Jesus' death (27:52) and of Jesus himself (28:6-7). Exēlthen hē phēmē hautē eis holēn tēn gēn ekeinēn, ‘this report went out into all that land’: phēmē is a report or rumor, a word the New Testament uses only here and in Luke 4:14.",
+      "words": [
+        "G1544",
+        "G3793",
+        "G1525",
+        "G2902",
+        "G5495",
+        "G1453",
+        "G2877",
+        "G1831",
+        "G5345",
+        "G3650",
+        "G1093H"
+      ],
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "Matthew narrates the girl's rising with the verb he will use of Jesus' own resurrection. The raising is a return to mortal life, not the resurrection body of the age to come, but it is a sign of that age, and it answers Isaiah's promise, “Your dead will live; their bodies will rise” (Isaiah 26:19)."
+        }
+      ],
+      "parallels": [
+        "Mark 5:40-43",
+        "Luke 8:54-56"
+      ],
+      "refs": [
+        "Isaiah 26:19",
+        "Matthew 11:5",
+        "Matthew 27:52",
+        "Matthew 28:6-7"
+      ]
+    },
+    {
+      "v": "27",
+      "context": "Two blind men follow Jesus, calling for mercy and naming him Son of David. It is the first time anyone in Matthew addresses Jesus by that title, which the Gospel's first verse gave him (1:1). Those who cannot see him recognize the king.",
+      "grammar": "Paragonti ekeithen tō Iēsou ēkolouthēsan, ‘as Jesus passed on from there, they followed’: the dative participle paragonti is loosely attached, a common Koine construction, and akoloutheō appears again, this time of men who cannot see the way. Krazontes kai legontes, ‘crying out and saying’, present participles of continued shouting. Eleēson hēmas, ‘have mercy on us’, an aorist imperative of eleeō, is the cry of the Psalms (Psalm 51:1, 123:3) and of the church's Kyrie eleison. Huios Dauid, ‘Son of David’, is in the nominative in the best manuscripts, used as a form of address.",
+      "words": [
+        "G3855",
+        "G0190",
+        "G1417",
+        "G5185",
+        "G2896",
+        "G1653",
+        "G5207",
+        "G1138"
+      ],
+      "text": "Nestle-Aland prints the nominative huios Dauid, ‘Son of David’, as the form of address; other editions and the Byzantine text read the vocative huie Dauid. The meaning is the same; Koine Greek often used the nominative for direct address.",
+      "history": "Matthew uses the title Son of David more than any other Gospel: of Jesus in his genealogy (1:1), in the cries of the blind and of a Canaanite mother (9:27, 15:22, 20:30-31), in the crowd's question (12:23), and in the hosannas at his entry to Jerusalem (21:9, 21:15). Most often it is on the lips of the sick and the marginal asking for mercy. Psalms of Solomon 17, from the first century BC, prays for God to raise up the son of David as king to purge Jerusalem of Gentiles and sinners; Matthew's Son of David heals.",
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "The blind men give Jesus the royal title of the promised heir of David (2 Samuel 7:12-16). Matthew shows that the king's first work is mercy to the helpless, which matches Ezekiel's promise of David as a shepherd who binds up the broken (Ezekiel 34:16, 23)."
+        }
+      ],
+      "parallels": [
+        "Matthew 20:29-34",
+        "Mark 10:46-47"
+      ],
+      "refs": [
+        "Matthew 1:1",
+        "2 Samuel 7:12-16",
+        "Matthew 20:30",
+        "Psalm 51:1",
+        "Matthew 12:23"
+      ]
+    },
+    {
+      "v": "28-29",
+      "context": "Jesus does not answer in the street. When he is inside, the blind men come to him and he asks whether they believe he is able. They answer ‘Yes, Lord’, and he touches their eyes with a word that measures the result by their faith.",
+      "grammar": "Elthonti de eis tēn oikian, ‘when he had come into the house’, another loosely attached dative participle. Pisteuete hoti dunamai touto poiēsai, ‘do you believe that I am able to do this?’: dunamai, ‘I am able’, echoes the leper's dunasai (8:2). Nai, kurie, ‘yes, Lord’: the one who was Son of David in the street is Lord in the house. Kata tēn pistin humōn genēthētō humin, ‘according to your faith let it be done to you’: genēthētō, the aorist passive imperative of the Lord's Prayer and of 8:13. Kata, ‘according to’, can mean ‘in proportion to’ or ‘in keeping with’; the second fits better, since the men have already confessed full confidence.",
+      "words": [
+        "G3614G",
+        "G4334",
+        "G5185",
+        "G4100",
+        "G1410",
+        "G4160G",
+        "G3483",
+        "G2962G",
+        "G0681",
+        "G3788",
+        "G4102G",
+        "G1096"
+      ],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Jesus draws out an explicit confession before he heals. The faith he asks for is not confidence in a result but trust in him, ‘that I am able’, and the healing is given ‘according to’ that trust, not as a reward for its size."
+        }
+      ],
+      "parallels": [
+        "Matthew 20:32-34",
+        "Mark 10:51-52"
+      ],
+      "refs": [
+        "Matthew 8:13",
+        "Matthew 8:2",
+        "Matthew 6:10",
+        "Mark 9:23-24"
+      ]
+    },
+    {
+      "v": "30-31",
+      "context": "Their eyes are opened, and Jesus sternly orders them to tell no one. They go out and spread the news through the whole region. Matthew records the disobedience without comment.",
+      "grammar": "Ēneōchthēsan autōn hoi ophthalmoi, ‘their eyes were opened’, an aorist passive of anoigō, is the phrase of Isaiah 35:5. Enebrimēthē autois, ‘he sternly warned them’: embrimaomai originally described a horse snorting and conveys strong feeling; it is the verb Mark uses when Jesus sends away the cleansed leper (Mark 1:43) and John uses of Jesus at Lazarus's tomb (John 11:33, 38). Horate mēdeis ginōsketō, ‘see that no one knows’, a present imperative with a third-person imperative. Diephēmisan auton, ‘they spread his fame’: diaphēmizō is from phēmē, the ‘report’ of verse 26.",
+      "words": [
+        "G0455",
+        "G3788",
+        "G1690",
+        "G3708",
+        "G3367",
+        "G1097",
+        "G1831",
+        "G1310"
+      ],
+      "ot": [
+        {
+          "ref": "Isaiah 35:5",
+          "note": "Isaiah's picture of God's coming to save his people includes “Then the eyes of the blind will be opened and the ears of the deaf unstopped.” The Septuagint reads tote anoichthēsontai ophthalmoi tuphlōn, the verb and noun Matthew uses. The next verse promises that the lame will leap and “the mute tongue will shout for joy” (35:6), which Matthew's next story fulfills. Jesus will cite these signs to John the Baptist (11:5). Isaiah 29:18 has a similar promise, that the eyes of the blind will see out of deep darkness."
+        }
+      ],
+      "parallels": [
+        "Matthew 20:34"
+      ],
+      "refs": [
+        "Isaiah 35:5-6",
+        "Isaiah 29:18",
+        "Matthew 8:4",
+        "Mark 1:43-45"
+      ]
+    },
+    {
+      "v": "32-33",
+      "context": "As the two men leave, a man who cannot speak is brought, his muteness caused by a demon. The demon is cast out, the man speaks, and the crowds say nothing like this has ever been seen in Israel. It is the tenth miracle of chapters 8 and 9.",
+      "grammar": "Autōn de exerchomenōn, ‘as they were going out’, a genitive absolute, joins this scene to the last. Anthrōpon kōphon daimonizomenon, ‘a mute man, demon-possessed’: kōphos means blunted, and so deaf, mute, or both; here it means unable to speak, since the cure is that he spoke. Ekblēthentos tou daimoniou, ‘the demon having been cast out’, another genitive absolute, with a passive that leaves Jesus unnamed as the actor. Oudepote ephanē houtōs en tō Israēl, ‘never has it appeared like this in Israel’: ephanē, ‘appeared’, is an aorist passive of phainō, and the crowd's comparison sets Jesus' deeds against the whole history of Israel's prophets.",
+      "words": [
+        "G1831",
+        "G2400",
+        "G4374",
+        "G2974",
+        "G1139",
+        "G1544",
+        "G1140",
+        "G2980",
+        "G2296",
+        "G3763",
+        "G5316",
+        "G2474"
+      ],
+      "theology": [
+        {
+          "id": "israel",
+          "note": "The crowd measures what Jesus has done against the whole of Israel's history and finds nothing like it. Matthew lets Israel's own people give the verdict that he is more than the prophets, which answers the question whether the one to come has come (11:3-5)."
+        }
+      ],
+      "parallels": [
+        "Matthew 12:22-23",
+        "Luke 11:14"
+      ],
+      "refs": [
+        "Isaiah 35:6",
+        "Matthew 12:22-23",
+        "Matthew 11:3-5",
+        "Mark 7:37"
+      ]
+    },
+    {
+      "v": "34",
+      "context": "The Pharisees give the other verdict: Jesus drives out demons by the prince of demons. The chapter ends its miracle stories with the same deed producing wonder in some and accusation in others, and the charge will return in fuller form in 10:25 and 12:24.",
+      "grammar": "Elegon, ‘they were saying’, an imperfect, suggests the accusation was repeated. En tō archonti tōn daimoniōn ekballei ta daimonia, ‘by the ruler of the demons he casts out the demons’: en here is instrumental, ‘by means of’ or ‘in league with’. Archōn, ‘ruler’, is the same word used of the father in verse 18, a pairing that sets a ruler who kneels to Jesus beside a ruler whom his enemies say he serves.",
+      "words": [
+        "G5330",
+        "G3004G",
+        "G0758",
+        "G1140",
+        "G1544"
+      ],
+      "text": "Codex Bezae, some Old Latin manuscripts, and the text Hilary of Poitiers used lack this verse, and some scholars have suspected it was added from 12:24. The great majority of manuscripts include it, it prepares for 10:25 and 12:24, and modern editions print it.",
+      "theology": [
+        {
+          "id": "angels",
+          "note": "The accusation assumes a real kingdom of demons with a ruler; the Pharisees do not deny Jesus' power over it, only its source. Jesus will answer that a kingdom divided cannot stand and that his exorcisms mean the strong man is being bound (12:25-29)."
+        }
+      ],
+      "parallels": [
+        "Matthew 12:24",
+        "Mark 3:22"
+      ],
+      "refs": [
+        "Matthew 10:25",
+        "Matthew 12:24-29",
+        "John 8:48"
+      ]
+    },
+    {
+      "v": "35",
+      "context": "The summary repeats 4:23 almost word for word and closes the frame around the Sermon on the Mount and the ten miracles. Jesus' work is threefold: teaching in synagogues, preaching the kingdom, and healing every disease.",
+      "grammar": "Periēgen, ‘he was going around’, an imperfect, describes a continuing circuit. Three present participles, didaskōn, kērussōn, therapeuōn, ‘teaching, preaching, healing’, give the three strands of the work, the same three as in 4:23. Tas poleis pasas kai tas kōmas, ‘all the towns and the villages’, extends 4:23's ‘all Galilee’. Pasan noson kai pasan malakian, ‘every disease and every sickness’: nosos is disease, malakia weakness or infirmity, and the pair recurs when Jesus gives the Twelve the same authority (10:1).",
+      "words": [
+        "G4013",
+        "G4172",
+        "G2968",
+        "G1321",
+        "G4864",
+        "G2784",
+        "G2098",
+        "G0932",
+        "G2323",
+        "G3554",
+        "G3119"
+      ],
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The ‘gospel of the kingdom’ is the announcement that God's reign has arrived in Jesus, and the healings are its evidence. By repeating 4:23 Matthew makes chapters 5 to 9 one portrait of the kingdom's coming, in word and in deed."
+        }
+      ],
+      "parallels": [
+        "Matthew 4:23",
+        "Mark 6:6"
+      ],
+      "refs": [
+        "Matthew 4:23",
+        "Matthew 10:1",
+        "Matthew 11:5",
+        "Acts 10:38"
+      ]
+    },
+    {
+      "v": "36",
+      "context": "Seeing the crowds, Jesus is moved with compassion. They are harassed and helpless, like sheep without a shepherd. Matthew uses the image from Mark's feeding story (Mark 6:34) here, as the reason for the prayer and the mission that follow.",
+      "grammar": "Esplagchnisthē peri autōn, ‘he was moved with compassion for them’, an aorist passive of splagchnizomai, the verb of feeling in the inner organs. Hoti ēsan eskulmenoi kai errimmenoi, ‘because they were harassed and helpless’: both are perfect passive participles, describing a state that has resulted from what was done to them. Skullō first meant to flay or mangle and came to mean harass or trouble; rhiptō means to throw down, and errimmenoi pictures sheep lying exhausted or cast aside. Hōsei probata mē echonta poimena, ‘like sheep not having a shepherd’.",
+      "words": [
+        "G3793",
+        "G4697",
+        "G4660",
+        "G4496",
+        "G4263",
+        "G4166"
+      ],
+      "text": "The earliest manuscripts read eskulmenoi, ‘harassed’; later manuscripts, followed by the King James Version, read eklelumenoi, ‘they fainted’.",
+      "ot": [
+        {
+          "ref": "Numbers 27:17",
+          "note": "As Moses' death approaches, he prays that the LORD will appoint a leader “who will go out and come in before them, and who will lead them out and bring them in, so that the congregation of the LORD will not be like sheep without a shepherd.” The Hebrew is katson asher en lahem ro‘eh; the Septuagint's hōsei probata hois ouk estin poimēn is very close to Matthew's wording. The LORD answers by naming Joshua, whose name in Greek is Iēsous. Micaiah uses the same image for Israel after Ahab's death, “I saw all Israel scattered on the hills like sheep without a shepherd” (1 Kings 22:17)."
+        },
+        {
+          "ref": "Ezekiel 34:5",
+          "note": "Ezekiel condemns Israel's rulers who fed themselves instead of the flock: “They were scattered for lack of a shepherd, and when they were scattered they became food for all the wild beasts.” The Hebrew mibbeli ro‘eh, ‘for lack of a shepherd’, describes a flock abandoned by its leaders. God answers that he himself will seek the lost and “bind up the broken, and strengthen the weak” (34:16), and then that he will set over them “one shepherd, My servant David” (34:23). Jesus' compassion for crowds without a shepherd, just after he has been called Son of David (verse 27), takes up both halves of Ezekiel's promise: God shepherding his people himself, and David's son as their shepherd."
+        }
+      ],
+      "theology": [
+        {
+          "id": "leadership",
+          "note": "The crowds are harassed because those responsible for them have failed, the charge Ezekiel brought against Israel's shepherds. Jesus' compassion is the standard for all leadership among God's people, and the next chapter sends the Twelve to the lost sheep of Israel (10:6)."
+        }
+      ],
+      "parallels": [
+        "Mark 6:34"
+      ],
+      "refs": [
+        "Numbers 27:15-18",
+        "Ezekiel 34:11-16",
+        "1 Kings 22:17",
+        "Zechariah 10:2",
+        "John 10:11"
+      ]
+    },
+    {
+      "v": "37-38",
+      "context": "Jesus turns from the crowds to his disciples with a new image. The harvest is large and the workers few, so they are to pray to the Lord of the harvest to send workers into it. In the next chapter the ones who pray are sent.",
+      "grammar": "Ho men therismos polus, hoi de ergatai oligoi, ‘the harvest is great, but the workers few’: a balanced contrast marked by men ... de, with no verb, like a proverb. Deēthēte oun, ‘pray therefore’: deomai is to ask or beg, and the aorist imperative with oun, ‘therefore’, draws the command from the observation. Tou kuriou tou therismou, ‘the Lord of the harvest’, is God, the owner who decides when to reap. Hopōs ekbalē ergatas, ‘that he may send out workers’: ekballō, the verb for casting out demons in verses 33 and 34, here means to thrust out or send forth urgently.",
+      "words": [
+        "G2326",
+        "G4183",
+        "G2040",
+        "G3641",
+        "G1189",
+        "G2962G",
+        "G1544"
+      ],
+      "theology": [
+        {
+          "id": "mission",
+          "note": "The mission begins with Jesus' compassion and with prayer, and the harvest belongs to its Lord, not to the workers. The disciples are told to ask God to send workers, and in 10:1-5 they become the workers sent, so prayer for mission is the first form of taking part in it."
+        },
+        {
+          "id": "prayer",
+          "note": "Jesus commands prayer for a specific need, workers for the harvest. The verse teaches that God's purposes are carried out through the prayers of his people, and that those who pray are often the answer to their own request."
+        },
+        {
+          "id": "judgment",
+          "note": "Harvest is the prophets' image for God's final gathering (Joel 3:13, Isaiah 27:12), and Jesus will use it for the end of the age (13:39). Here the harvest is already ripe, so the time of decision has come near in Jesus' ministry."
+        }
+      ],
+      "parallels": [
+        "Luke 10:2"
+      ],
+      "refs": [
+        "Luke 10:2",
+        "John 4:35",
+        "Matthew 10:1-5",
+        "Joel 3:13",
+        "Matthew 13:39"
+      ]
+    }
+  ]
+}
