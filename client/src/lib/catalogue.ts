@@ -82,6 +82,7 @@ export const KIND_ORDER = [
   "Church and power",
   "Nation",
   "Pathway",
+  "Care page",
   "Care plan",
   "Group guide",
   "Argument",

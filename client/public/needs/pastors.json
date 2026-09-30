@@ -1,0 +1,52 @@
+{
+  "slug": "pastors",
+  "page": false,
+  "rank": 22,
+  "title": "I'm a pastor and I'm running on empty",
+  "summary": "For pastors near the end of themselves. Seeking help is faith, not failure.",
+  "askedAs": [
+    "pastor burnout",
+    "pastor depression",
+    "thinking about quitting ministry",
+    "pastor loneliness",
+    "ministry burnout",
+    "pastor's wife"
+  ],
+  "states": [
+    "carrying",
+    "leading"
+  ],
+  "sensitivity": "high",
+  "crisisTopics": [
+    "suicide"
+  ],
+  "kit": {
+    "read": [
+      {
+        "href": "/studyguides/pastoral-health",
+        "label": "Pastoral Health: A Study for Leaders and Those Who Love Them",
+        "kind": "Study guide"
+      },
+      {
+        "href": "/wisdom/exhaustion",
+        "label": "Exhaustion and Burnout",
+        "kind": "Wisdom"
+      },
+      {
+        "href": "/life/ambition-and-rest",
+        "label": "Is Ambition a Sin? Drive, Hustle, and Rest",
+        "kind": "Life"
+      },
+      {
+        "href": "/life/rest-and-the-sabbath",
+        "label": "What Is Sabbath Rest, and How Do You Keep It?",
+        "kind": "Life"
+      },
+      {
+        "href": "https://pastorsconnectionnetwork.com",
+        "label": "The Pastors Connection Network, where the pastors' material now lives",
+        "kind": "Page"
+      }
+    ]
+  }
+}

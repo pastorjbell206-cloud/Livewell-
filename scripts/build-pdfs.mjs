@@ -20,6 +20,12 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import PDFDocument from "pdfkit";
+import { buildHelpPrintables, buildSeasonalPacks, studyGuideHelpBox } from "./lib/help-printables.mjs";
+import { passage } from "./lib/bsb.mjs";
+
+// Study guides on heavy subjects carry the help box (client/src/data/sensitive-pages.json).
+const SENSITIVE_GUIDES = new Set(JSON.parse(fs.readFileSync(new URL("../client/src/data/sensitive-pages.json", import.meta.url), "utf8")).studyguides);
+const CRISIS = JSON.parse(fs.readFileSync(new URL("../client/src/data/crisis-resources.json", import.meta.url), "utf8"));
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const GUIDES_DIR = path.join(ROOT, "client/public/context/guides");
@@ -196,6 +202,7 @@ async function buildStudyGuideLeader(g) {
     coverPage(doc, { kicker: "Leader's Guide · " + g.sessionsLabel, title: g.title, subtitle: g.subtitle || g.audience + "." });
     sectionHeading(doc, { kicker: "About this study", title: g.title });
     bodyParagraphs(doc, g.summary);
+    if (SENSITIVE_GUIDES.has(g.slug)) studyGuideHelpBox(doc, CRISIS, "leader");
 
     if (g.leaderPrimer) {
       doc.addPage();
@@ -276,6 +283,7 @@ async function buildStudyGuideParticipant(g) {
     coverPage(doc, { kicker: "Participant Handout · " + g.sessionsLabel, title: g.title, subtitle: g.subtitle || g.audience + "." }, false);
     for (const s of g.sessions) {
       doc.addPage();
+      if (s.n === g.sessions[0].n && SENSITIVE_GUIDES.has(g.slug)) studyGuideHelpBox(doc, CRISIS, "participant");
       sectionHeading(doc, { kicker: "Session " + s.n, title: s.title });
       bodyParagraphs(doc, s.summary);
       labelBody(doc, "Key Scripture", s.keyScripture.ref);
@@ -601,6 +609,13 @@ async function main() {
       written.push(await buildSermonSeries(series, seriesData.intro));
     }
   }
+
+  // Find Help kits: a one-page guide, prayer cards, Scripture cards, and a
+  // worksheet for every care page, in Letter and A4 (scripts/lib/help-printables.mjs).
+  written.push(...(await buildHelpPrintables(ROOT)));
+  // Seasonal family packs (Advent, Holy Week) from family-seasonal.json, with
+  // each day's passage printed verbatim from the BSB.
+  written.push(...(await buildSeasonalPacks(ROOT, (ref) => passage(ref).text)));
 
   let total = 0;
   let smallest = Infinity;

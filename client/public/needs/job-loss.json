@@ -1,0 +1,49 @@
+{
+  "slug": "job-loss",
+  "page": false,
+  "rank": 42,
+  "title": "I lost my job",
+  "summary": "When the work is gone: worth, provision, and the next honest step.",
+  "askedAs": [
+    "lost my job",
+    "unemployed",
+    "laid off",
+    "fired",
+    "job loss",
+    "can't find work",
+    "career change"
+  ],
+  "states": [
+    "carrying"
+  ],
+  "sensitivity": "ordinary",
+  "kit": {
+    "read": [
+      {
+        "href": "/life/unemployment-and-the-lost-job",
+        "label": "When the Work Is Gone: Unemployment and Worth",
+        "kind": "Life"
+      },
+      {
+        "href": "/wisdom/job-loss",
+        "label": "Job Loss",
+        "kind": "Wisdom"
+      },
+      {
+        "href": "/life/debt-and-provision",
+        "label": "What Does the Bible Say About Debt and Daily Bread?",
+        "kind": "Life"
+      },
+      {
+        "href": "/life/identity-and-worth",
+        "label": "Where Does Your Identity and Worth Come From?",
+        "kind": "Life"
+      },
+      {
+        "href": "/wisdom/career-change",
+        "label": "Changing Careers",
+        "kind": "Wisdom"
+      }
+    ]
+  }
+}

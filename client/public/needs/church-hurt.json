@@ -1,0 +1,54 @@
+{
+  "slug": "church-hurt",
+  "page": false,
+  "rank": 24,
+  "title": "The church hurt me",
+  "summary": "When the people who spoke for God did the wounding: naming it honestly, and what can be rebuilt.",
+  "askedAs": [
+    "church hurt",
+    "hurt by the church",
+    "spiritual abuse",
+    "I'm done with church",
+    "church trauma",
+    "my pastor hurt me",
+    "religious trauma",
+    "leaving church"
+  ],
+  "states": [
+    "carrying",
+    "helping"
+  ],
+  "sensitivity": "high",
+  "crisisTopics": [
+    "abuse"
+  ],
+  "kit": {
+    "read": [
+      {
+        "href": "/church-hurt",
+        "label": "When the church itself did the wounding",
+        "kind": "Page"
+      },
+      {
+        "href": "/wisdom/church-hurt",
+        "label": "Church Hurt",
+        "kind": "Wisdom"
+      },
+      {
+        "href": "/deconstruction",
+        "label": "Deconstruction named honestly",
+        "kind": "Page"
+      },
+      {
+        "href": "/plans/deconstruction",
+        "label": "Eight Weeks of Taking Your Questions Seriously",
+        "kind": "Plan"
+      },
+      {
+        "href": "/wisdom/finding-a-church",
+        "label": "Finding a Church",
+        "kind": "Wisdom"
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "divorce",
+  "page": false,
+  "rank": 39,
+  "title": "My marriage has ended",
+  "summary": "For the one whose marriage has ended or is ending: the grief, the children, and the life after.",
+  "askedAs": [
+    "divorce",
+    "going through a divorce",
+    "life after divorce",
+    "divorced Christian",
+    "co-parenting",
+    "my spouse left",
+    "remarriage"
+  ],
+  "states": [
+    "carrying",
+    "helping"
+  ],
+  "sensitivity": "high",
+  "crisisTopics": [
+    "suicide",
+    "abuse"
+  ],
+  "kit": {
+    "read": [
+      {
+        "href": "/life/divorce-and-its-aftermath",
+        "label": "How Do You Live as a Christian After Divorce?",
+        "kind": "Life"
+      },
+      {
+        "href": "/life/betrayal-and-broken-trust",
+        "label": "How Do You Heal After Betrayal by Someone Close?",
+        "kind": "Life"
+      },
+      {
+        "href": "/life/the-blended-family",
+        "label": "Blended Family Struggles: How Do You Make It Work?",
+        "kind": "Life"
+      },
+      {
+        "href": "/wisdom/cheating",
+        "label": "Cheating and Betrayal of Trust",
+        "kind": "Wisdom"
+      }
+    ]
+  }
+}

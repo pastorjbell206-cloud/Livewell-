@@ -593,7 +593,8 @@ These govern every word in the section. They extend "Care for the reader in
 the hard places" and "Inform; do not pose as the professional" in `CLAUDE.md`.
 
 - **The crisis block.** One shared component, fed by one data file of verified
-  resources (`client/public/needs/crisis-resources.json`), each entry carrying
+  resources (`client/src/data/crisis-resources.json`, bundled with the code so
+  the block can never fail to load), each entry carrying
   the exact number or text code, the wording from the official source, the
   source URL, and the date it was verified. Tap-to-call and tap-to-text on
   phones. Re-verify every entry before each release; a stale number is a

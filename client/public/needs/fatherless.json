@@ -1,0 +1,45 @@
+{
+  "slug": "fatherless",
+  "page": false,
+  "rank": 16,
+  "title": "How do I be a dad when I never had one?",
+  "summary": "For men raising children without a blueprint, from a pastor who was raised without a father.",
+  "askedAs": [
+    "father wound",
+    "growing up without a dad",
+    "how to be a good dad",
+    "fatherless",
+    "absent father",
+    "I never had a father",
+    "how to be a father"
+  ],
+  "states": [
+    "carrying",
+    "grow"
+  ],
+  "sensitivity": "ordinary",
+  "kit": {
+    "read": [
+      {
+        "href": "/studyguides/fatherhood",
+        "label": "Fatherhood: A Bible Study for Men Without a Blueprint",
+        "kind": "Study guide"
+      },
+      {
+        "href": "/pathways/manhood",
+        "label": "Manhood, the Father Wound, and Raising Sons",
+        "kind": "Pathway"
+      },
+      {
+        "href": "/studyguides/manhood",
+        "label": "What Manhood Is For",
+        "kind": "Study guide"
+      },
+      {
+        "href": "/life/identity-and-worth",
+        "label": "Where Does Your Identity and Worth Come From?",
+        "kind": "Life"
+      }
+    ]
+  }
+}

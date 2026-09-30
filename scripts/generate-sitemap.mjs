@@ -95,6 +95,7 @@ const STATIC_PAGES = [
   { url: "/resources/context", priority: "0.9", changefreq: "weekly" },
   { url: "/resources/creeds", priority: "0.8", changefreq: "monthly" },
   { url: "/help", priority: "0.9", changefreq: "monthly" },
+  { url: "/plans", priority: "0.8", changefreq: "monthly" },
   { url: "/plans/marriage", priority: "0.8", changefreq: "monthly" },
   { url: "/plans/anxiety", priority: "0.8", changefreq: "monthly" },
   { url: "/plans/grief", priority: "0.8", changefreq: "monthly" },
@@ -278,12 +279,18 @@ function manifestPages() {
     // The Topic Pathways (/pathways/:slug) — guided reading routes. Their
     // manifest is a bare array, handled by the Array.isArray fallback below.
     { file: "client/public/pathways/index.json", prefix: "/pathways/" },
+    // Care plans (/plans/:slug), so a new plan is listed without an edit here,
+    // and the Find Help care pages (/help/:slug): only registry entries with a
+    // written page are routes.
+    { file: "client/public/plans/plans-index.json", key: "plans", prefix: "/plans/" },
+    { file: "client/public/needs/index.json", key: "needs", prefix: "/help/", filter: (e) => e.page === true },
   ];
   for (const s of sources) {
     try {
       const data = JSON.parse(fs.readFileSync(s.file, "utf8"));
       const items = Array.isArray(data) ? data : data[s.key] || [];
       for (const entry of items) {
+        if (s.filter && !s.filter(entry)) continue;
         const slug = entry.slug || (s.slugField ? entry[s.slugField] : undefined);
         if (slug) pages.push({ url: `${s.prefix}${slug}`, priority: "0.75", changefreq: "monthly" });
       }

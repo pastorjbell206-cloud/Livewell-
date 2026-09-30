@@ -69,6 +69,10 @@ const builtFrom = (href) => {
   if (m) return fs.existsSync(path.join(PUB, `studyguides/${m[1]}.json`));
   m = href.match(/^\/downloads\/context\/(.+)\.pdf$/);
   if (m) return fs.existsSync(path.join(PUB, `context/guides/${m[1]}.json`));
+  // Find Help printables and the seasonal family booklets (scripts/lib/help-printables.mjs).
+  m = href.match(/^\/downloads\/help\/(.+)-(guide|prayer|scripture|week)-(letter|a4)\.pdf$/);
+  if (m) return fs.existsSync(path.join(PUB, `needs/${m[1]}.json`));
+  if (/^\/downloads\/seasonal\/(advent|holy-week)-family-(letter|a4)\.pdf$/.test(href)) return fs.existsSync(path.join(PUB, "family-seasonal.json"));
   return false;
 };
 for (const it of catalogue.items) {

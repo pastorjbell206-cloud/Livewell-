@@ -1,0 +1,62 @@
+{
+  "slug": "parenting",
+  "page": false,
+  "rank": 14,
+  "title": "Parenting is harder than anyone said",
+  "summary": "From a father of five sons who was raised without a father: formation over performance.",
+  "askedAs": [
+    "parenting",
+    "my teen won't talk to me",
+    "my child left the faith",
+    "discipline",
+    "raising kids in faith",
+    "Christian parenting",
+    "worried about my kids",
+    "family devotions"
+  ],
+  "states": [
+    "carrying",
+    "grow",
+    "helping"
+  ],
+  "sensitivity": "ordinary",
+  "kit": {
+    "read": [
+      {
+        "href": "/parenting-help",
+        "label": "For the stretch of parenting nobody warned you about",
+        "kind": "Page"
+      },
+      {
+        "href": "/tools/parenting-guide",
+        "label": "Parenting Stage Guide",
+        "kind": "Tool"
+      },
+      {
+        "href": "/tools/family-devotions",
+        "label": "Family Devotion Builder",
+        "kind": "Tool"
+      },
+      {
+        "href": "/life/raising-children-in-grace",
+        "label": "How Do You Discipline Children With Grace?",
+        "kind": "Life"
+      },
+      {
+        "href": "/life/the-wayward-child",
+        "label": "What Do You Do When Your Child Leaves the Faith?",
+        "kind": "Life"
+      },
+      {
+        "href": "/studyguides/parenting-formation",
+        "label": "Parenting: A Bible Study on Forming a Child's Faith",
+        "kind": "Study guide"
+      },
+      {
+        "href": "/pathways/parenting",
+        "label": "Raising Kids Who Keep the Faith",
+        "kind": "Pathway"
+      }
+    ]
+  }
+}

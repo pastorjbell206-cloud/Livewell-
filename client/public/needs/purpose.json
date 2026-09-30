@@ -1,0 +1,50 @@
+{
+  "slug": "purpose",
+  "page": false,
+  "rank": 17,
+  "title": "What's the point of my life?",
+  "summary": "For anyone, and especially young men, asking who they are and what they are for.",
+  "askedAs": [
+    "purpose",
+    "what's the point",
+    "identity crisis",
+    "who am I",
+    "meaning of life",
+    "calling",
+    "young men"
+  ],
+  "states": [
+    "carrying",
+    "grow"
+  ],
+  "sensitivity": "ordinary",
+  "kit": {
+    "read": [
+      {
+        "href": "/studyguides/identity",
+        "label": "Identity: A Bible Study on Who You Actually Are",
+        "kind": "Study guide"
+      },
+      {
+        "href": "/studyguides/manhood",
+        "label": "What Manhood Is For",
+        "kind": "Study guide"
+      },
+      {
+        "href": "/pathways/manhood",
+        "label": "Manhood, the Father Wound, and Raising Sons",
+        "kind": "Pathway"
+      },
+      {
+        "href": "/life/identity-and-worth",
+        "label": "Where Does Your Identity and Worth Come From?",
+        "kind": "Life"
+      },
+      {
+        "href": "/wisdom/calling-and-purpose",
+        "label": "Calling and Purpose",
+        "kind": "Wisdom"
+      }
+    ]
+  }
+}

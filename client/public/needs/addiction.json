@@ -1,0 +1,56 @@
+{
+  "slug": "addiction",
+  "page": false,
+  "rank": 27,
+  "title": "I can't stop drinking or using",
+  "summary": "For the one caught and the family watching: the long road back, and where treatment starts.",
+  "askedAs": [
+    "addiction",
+    "alcoholism",
+    "drinking too much",
+    "drug addiction",
+    "my spouse drinks too much",
+    "recovery",
+    "relapse",
+    "how to quit drinking",
+    "sobriety"
+  ],
+  "states": [
+    "carrying",
+    "helping"
+  ],
+  "sensitivity": "high",
+  "crisisTopics": [
+    "substance",
+    "suicide"
+  ],
+  "kit": {
+    "read": [
+      {
+        "href": "/life/addiction-and-the-long-road-back",
+        "label": "Why Can't Willpower Alone Break an Addiction?",
+        "kind": "Life"
+      },
+      {
+        "href": "/wisdom/addiction",
+        "label": "When You Are Trapped by Addiction",
+        "kind": "Wisdom"
+      },
+      {
+        "href": "/wisdom/alcohol-and-drinking",
+        "label": "Alcohol and Drinking",
+        "kind": "Wisdom"
+      },
+      {
+        "href": "/wisdom/breaking-bad-habits",
+        "label": "Breaking Bad Habits",
+        "kind": "Wisdom"
+      },
+      {
+        "href": "/life/desire-and-temptation",
+        "label": "How Do You Fight Temptation and Disordered Desire?",
+        "kind": "Life"
+      }
+    ]
+  }
+}

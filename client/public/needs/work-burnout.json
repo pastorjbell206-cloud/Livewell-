@@ -1,0 +1,55 @@
+{
+  "slug": "work-burnout",
+  "page": false,
+  "rank": 21,
+  "title": "I'm burned out at work",
+  "summary": "When work has taken more than it should: rest, limits, and what work is actually for.",
+  "askedAs": [
+    "burnout",
+    "burned out",
+    "work stress",
+    "exhausted",
+    "I hate my job",
+    "overworked",
+    "hustle culture",
+    "Sabbath rest"
+  ],
+  "states": [
+    "carrying"
+  ],
+  "sensitivity": "ordinary",
+  "kit": {
+    "read": [
+      {
+        "href": "/wisdom/exhaustion",
+        "label": "Exhaustion and Burnout",
+        "kind": "Wisdom"
+      },
+      {
+        "href": "/life/ambition-and-rest",
+        "label": "Is Ambition a Sin? Drive, Hustle, and Rest",
+        "kind": "Life"
+      },
+      {
+        "href": "/life/rest-and-the-sabbath",
+        "label": "What Is Sabbath Rest, and How Do You Keep It?",
+        "kind": "Life"
+      },
+      {
+        "href": "/life/work-as-worship",
+        "label": "What Does the Bible Say About Work and Calling?",
+        "kind": "Life"
+      },
+      {
+        "href": "/studyguides/sabbath",
+        "label": "Sabbath: A Bible Study on Rest and Hurry",
+        "kind": "Study guide"
+      },
+      {
+        "href": "/pathways/rest-and-rhythm",
+        "label": "Rest, Sabbath, and the Cure for Hurry",
+        "kind": "Pathway"
+      }
+    ]
+  }
+}

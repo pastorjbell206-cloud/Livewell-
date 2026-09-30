@@ -1,0 +1,50 @@
+{
+  "slug": "caregiving",
+  "page": false,
+  "rank": 20,
+  "title": "Caring for my parent is wearing me out",
+  "summary": "For the one caring for an aging parent: honoring them without losing yourself.",
+  "askedAs": [
+    "caregiver burnout",
+    "caring for aging parents",
+    "my mom has dementia",
+    "elderly parent",
+    "caregiver stress",
+    "honor your father and mother",
+    "nursing home guilt"
+  ],
+  "states": [
+    "carrying",
+    "helping"
+  ],
+  "sensitivity": "ordinary",
+  "kit": {
+    "read": [
+      {
+        "href": "/life/caring-for-aging-parents",
+        "label": "How Do You Honor Aging Parents Who Need Care?",
+        "kind": "Life"
+      },
+      {
+        "href": "/wisdom/caregiving",
+        "label": "Caring for Aging Parents",
+        "kind": "Wisdom"
+      },
+      {
+        "href": "/life/caring-for-the-dying",
+        "label": "How Do You Sit With Someone Who Is Dying?",
+        "kind": "Life"
+      },
+      {
+        "href": "/life/rest-and-the-sabbath",
+        "label": "What Is Sabbath Rest, and How Do You Keep It?",
+        "kind": "Life"
+      },
+      {
+        "href": "/studyguides/aging-and-legacy",
+        "label": "Aging and Legacy: A Bible Study on Finishing Well",
+        "kind": "Study guide"
+      }
+    ]
+  }
+}

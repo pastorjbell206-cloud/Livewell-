@@ -114,6 +114,8 @@ const Parenting = lazy(() => import("./pages/Parenting"));
 const Doubt = lazy(() => import("./pages/Doubt"));
 const Help = lazy(() => import("./pages/Help"));
 const CarePlan = lazy(() => import("./pages/plans/CarePlan"));
+const PlansIndex = lazy(() => import("./pages/plans/PlansIndex"));
+const CarePage = lazy(() => import("./pages/help/CarePage"));
 const StartHereQuiz = lazy(() => import("./pages/StartHereQuiz"));
 const Privacy = lazy(() => import("./pages/Privacy"));
 const Accessibility = lazy(() => import("./pages/Accessibility"));
@@ -431,6 +433,8 @@ function Router() {
         <Route path="/theology" component={Theology} />
         <Route path="/doubt" component={Doubt} />
         <Route path="/help" component={Help} />
+        <Route path="/help/:slug">{(p) => <CarePage key={p.slug} />}</Route>
+        <Route path="/plans" component={PlansIndex} />
         <Route path="/plans/:slug">{(p) => <CarePlan key={p.slug} />}</Route>
         <Route path="/start" component={StartHereQuiz} />
         <Route path="/start-here" component={ToStartRedirect} />

@@ -1,0 +1,48 @@
+{
+  "slug": "deconstructing",
+  "page": false,
+  "rank": 44,
+  "title": "I'm deconstructing my faith",
+  "summary": "No panic and no shame: take the questions seriously, take your time, and dig for what is older.",
+  "askedAs": [
+    "deconstruction",
+    "deconstructing my faith",
+    "exvangelical",
+    "leaving evangelicalism",
+    "questioning everything",
+    "faith crisis"
+  ],
+  "states": [
+    "carrying"
+  ],
+  "sensitivity": "ordinary",
+  "kit": {
+    "read": [
+      {
+        "href": "/deconstruction",
+        "label": "Deconstruction named honestly",
+        "kind": "Page"
+      },
+      {
+        "href": "/church-hurt",
+        "label": "When the church itself did the wounding",
+        "kind": "Page"
+      },
+      {
+        "href": "/plans/deconstruction",
+        "label": "Eight Weeks of Taking Your Questions Seriously",
+        "kind": "Plan"
+      },
+      {
+        "href": "/studyguides/deconstruction",
+        "label": "When It All Comes Apart",
+        "kind": "Study guide"
+      },
+      {
+        "href": "/pathways/doubt-and-deconstruction",
+        "label": "When Faith Has Questions",
+        "kind": "Pathway"
+      }
+    ]
+  }
+}

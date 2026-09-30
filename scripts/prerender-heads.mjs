@@ -553,6 +553,7 @@ const SECTION_BY_ROUTE = {
   "/justice/topic/": { name: "Prophetic Justice", path: "/justice" },
   "/disruption/topic/": { name: "Prophetic Disruption", path: "/disruption" },
   "/wisdom/": { name: "Wisdom", path: "/wisdom" },
+  "/help/": { name: "Find Help", path: "/help" },
 };
 
 // ---------------------------------------------------------------------------
@@ -970,6 +971,17 @@ async function main() {
     // table extractor skips them by design and only a manifest pass reaches
     // them; the sitemap has listed both families all along.
     { file: "client/public/pathways/index.json", route: "/pathways/", ogPrefix: "pathways", desc: "subtitle" },
+    // Find Help care pages (/help/:slug) from the needs registry
+    // (scripts/build-needs-index.mjs). Only needs with a written page are
+    // routes; starter entries live on /help itself. The head carries the
+    // search title, not the reader's-words H1, plus the FAQ as structured
+    // data; registry and review fields stay out of the crawlable body.
+    {
+      file: "client/public/needs/index.json", key: "needs", route: "/help/", ogPrefix: "help", desc: "description",
+      contentDir: "client/public/needs", titleField: "seoTitle", preferTitleField: true, faq: true,
+      filter: (e) => e.page === true,
+      omitKeys: ["slug", "page", "rank", "seoTitle", "description", "summary", "askedAs", "states", "sensitivity", "crisisTopics", "kit", "related", "slots", "sources", "reviewed"],
+    },
   ];
   let withBody = 0;
   for (const src of LIBRARY_SOURCES) {
@@ -980,10 +992,11 @@ async function main() {
     // Most manifests are `{ key: [...] }`; a couple (pathways) are a bare array.
     const entries = Array.isArray(data) ? data : data[src.key] || [];
     for (const e of entries) {
+      if (src.filter && !src.filter(e)) continue;
       // Most manifests key by slug/title; a few (e.g. the whole-Bible sermons)
       // key by id/name, so allow a per-source field alias.
       const slug = e.slug || (src.slugField ? e[src.slugField] : undefined);
-      const rawTitle = e.title || (src.titleField ? e[src.titleField] : undefined);
+      const rawTitle = (src.preferTitleField && e[src.titleField]) || e.title || (src.titleField ? e[src.titleField] : undefined);
       if (!slug || !rawTitle) continue;
       const title = src.titleTemplate ? src.titleTemplate.replace(/\{title\}/g, rawTitle) : rawTitle;
       const url = `${SITE_URL}${src.route}${slug}`;
@@ -1004,6 +1017,8 @@ async function main() {
           catch { /* leave head-only */ }
         }
       }
+      const faqEntries = src.faq && Array.isArray(contentObj?.faq) ? contentObj.faq : [];
+      if (contentObj && src.omitKeys) for (const k of src.omitKeys) delete contentObj[k];
       // Books get a subtitle-enriched <title> (matching the client SEOMeta) and
       // a Book JSON-LD carrying every chapter as a hasPart node, so search can
       // deep-link the exact chapter that answers a reader's question.
@@ -1014,6 +1029,17 @@ async function main() {
       if (section) crumbs.push(section);
       crumbs.push({ name: title, path: `${src.route}${slug}` });
       const schemas = [breadcrumbSchema(crumbs)];
+      if (faqEntries.length) {
+        schemas.push({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqEntries.map((f) => ({
+            "@type": "Question",
+            name: f.q,
+            acceptedAnswer: { "@type": "Answer", text: String(f.a).replace(/[*_]/g, "") },
+          })),
+        });
+      }
       if (src.type === "book") {
         const chapters = Array.isArray(contentObj?.chapters) ? contentObj.chapters : [];
         schemas.push({

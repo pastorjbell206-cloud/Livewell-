@@ -1,0 +1,45 @@
+{
+  "slug": "dating",
+  "page": false,
+  "rank": 30,
+  "title": "Should we get married?",
+  "summary": "Dating, singleness, and discerning a spouse, for people who take marriage seriously.",
+  "askedAs": [
+    "Christian dating",
+    "should we get married",
+    "singleness",
+    "dating advice",
+    "waiting for a spouse",
+    "premarital",
+    "is singleness a calling"
+  ],
+  "states": [
+    "grow",
+    "carrying"
+  ],
+  "sensitivity": "ordinary",
+  "kit": {
+    "read": [
+      {
+        "href": "/life/dating-and-discernment",
+        "label": "How Do You Date Wisely and Choose a Spouse?",
+        "kind": "Life"
+      },
+      {
+        "href": "/life/singleness-and-the-full-life",
+        "label": "Is Singleness a Calling or a Waiting Room?",
+        "kind": "Life"
+      },
+      {
+        "href": "/studyguides/singleness",
+        "label": "Singleness: A Bible Study for the Unmarried",
+        "kind": "Study guide"
+      },
+      {
+        "href": "/wisdom/dating",
+        "label": "Dating and Discernment",
+        "kind": "Wisdom"
+      }
+    ]
+  }
+}

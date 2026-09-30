@@ -1,0 +1,50 @@
+{
+  "slug": "pornography",
+  "page": false,
+  "rank": 18,
+  "title": "I can't stop looking at porn",
+  "summary": "For the one who keeps going back and the spouse who found out: shame named, and a real way out.",
+  "askedAs": [
+    "pornography",
+    "porn addiction",
+    "how to stop watching porn",
+    "my husband watches porn",
+    "lust",
+    "sexual purity",
+    "I keep relapsing"
+  ],
+  "states": [
+    "carrying",
+    "helping"
+  ],
+  "sensitivity": "ordinary",
+  "kit": {
+    "read": [
+      {
+        "href": "/wisdom/pornography",
+        "label": "Pornography and Its Grip",
+        "kind": "Wisdom"
+      },
+      {
+        "href": "/wisdom/lust",
+        "label": "Lust and the Wandering Eye",
+        "kind": "Wisdom"
+      },
+      {
+        "href": "/life/desire-and-temptation",
+        "label": "How Do You Fight Temptation and Disordered Desire?",
+        "kind": "Life"
+      },
+      {
+        "href": "/life/shame-and-the-hiding-self",
+        "label": "What Is the Difference Between Guilt and Shame?",
+        "kind": "Life"
+      },
+      {
+        "href": "/life/sex-and-the-body",
+        "label": "What Does Christianity Actually Teach About Sex?",
+        "kind": "Life"
+      }
+    ]
+  }
+}

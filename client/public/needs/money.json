@@ -1,0 +1,56 @@
+{
+  "slug": "money",
+  "page": false,
+  "rank": 19,
+  "title": "Money is a weight on me",
+  "summary": "Debt, fear, and the never-enough: the heart first, then the budget.",
+  "askedAs": [
+    "debt",
+    "money problems",
+    "financial stress",
+    "budget",
+    "tithing",
+    "how to get out of debt",
+    "financial hardship",
+    "Bible verses about money"
+  ],
+  "states": [
+    "carrying",
+    "grow"
+  ],
+  "sensitivity": "ordinary",
+  "kit": {
+    "read": [
+      {
+        "href": "/tools/financial-health",
+        "label": "The Financial Health Check",
+        "kind": "Self-check"
+      },
+      {
+        "href": "/life/money-and-the-heart",
+        "label": "Why Did Jesus Treat Money as a Rival God?",
+        "kind": "Life"
+      },
+      {
+        "href": "/life/debt-and-provision",
+        "label": "What Does the Bible Say About Debt and Daily Bread?",
+        "kind": "Life"
+      },
+      {
+        "href": "/wisdom/financial-hardship",
+        "label": "Financial Hardship",
+        "kind": "Wisdom"
+      },
+      {
+        "href": "/studyguides/money",
+        "label": "Where Your Treasure Is",
+        "kind": "Study guide"
+      },
+      {
+        "href": "/pathways/money",
+        "label": "Money and the Heart",
+        "kind": "Pathway"
+      }
+    ]
+  }
+}
