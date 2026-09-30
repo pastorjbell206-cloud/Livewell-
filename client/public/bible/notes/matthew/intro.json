@@ -1,38 +1,233 @@
 {
+  "v": 2,
   "tagline": "The story of Jesus the Messiah, son of David and son of Abraham, told for readers steeped in Israel's Scriptures, from his birth to his command to make disciples of all nations.",
   "overview": "Matthew is the first book of the New Testament and the Gospel the early church quoted most. A Gospel (from an old English word for good news) is an account of the life, teaching, death, and resurrection of Jesus. Matthew tells that story with Israel's Scriptures always in view. It opens with a genealogy tracing Jesus back through King David to Abraham, and it repeatedly pauses to say that something happened to fulfill what the Lord had spoken through the prophet. Its Jesus is the promised Messiah (in Greek, Christ, the anointed king), the teacher greater than Moses, and Immanuel, God with us.\n\nThe book follows Jesus from his birth in Bethlehem under King Herod, through his baptism by John and his ministry of teaching and healing in Galilee, to his final week in Jerusalem, his crucifixion under the Roman governor Pontius Pilate, and his resurrection. Woven through the story are five long blocks of teaching, beginning with the Sermon on the Mount, which make Matthew the fullest collection of Jesus' words among the Gospels. The Gospel is also marked by conflict with the religious leaders of Jesus' day and by a widening horizon: it begins with Magi from the east worshiping the child and ends with the risen Jesus sending his disciples to all nations.\n\nMatthew matters because it answers two questions at once. For Jewish readers it shows that Jesus is the fulfillment of Israel's hope, not a break from it. For readers from the nations it shows that the God of Israel has opened his kingdom to the whole world. It has shaped Christian prayer (the Lord's Prayer), ethics (the Beatitudes), and mission (the Great Commission) more than almost any other book.",
-  "author": "The Gospel itself is anonymous; no sentence in it names its author. The title According to Matthew appears on the earliest manuscripts that preserve a title, and the church from the second century onward attributed the book to Matthew, the tax collector whom Jesus called to follow him (9:9) and who was one of the twelve apostles (10:3). Papias, a bishop in Asia Minor in the early second century whose words are preserved by the historian Eusebius, reported that Matthew arranged the sayings of Jesus in the Hebrew language (which may mean Hebrew or Aramaic, or a Hebrew style), and Irenaeus later in the second century repeated the tradition.\n\nMany modern scholars doubt that the apostle wrote the Greek Gospel we have. Most hold that Matthew used the Gospel of Mark as a source, reproducing much of it closely, and they think it unlikely that an eyewitness apostle would depend so heavily on the account of someone who was not. They also note that the Greek does not read like a translation from Hebrew. On this view the author was an anonymous Jewish Christian, deeply learned in the Scriptures, writing for a mostly Jewish-Christian community, and the name Matthew may have been attached because some of the material, perhaps a collection of sayings, came from him. Scholars who defend apostolic authorship answer that an apostle could reasonably use a trusted account such as Mark's, tied by tradition to Peter, that the unanimous early attribution is hard to explain if it was a guess, and that the detail about tax and money in the Gospel suits a former tax collector. Some also hold that Matthew was written first and that Mark used it, a minority view today.",
-  "date": "Matthew does not state when it was written, and dates proposed range from the 50s or 60s to the 80s AD, with a few scholars going later. Those who date it before AD 70 point to passages that seem to assume the temple is still standing, such as offering a gift at the altar (5:23-24) and paying the temple tax (17:24-27), and to the early church's tradition that Matthew was the first Gospel written. Many who hold that Matthew used Mark, usually dated to the late 60s, place Matthew around AD 80 to 90. They point to the parable of the wedding banquet, where the king sends troops to burn the city (22:7), which they read as reflecting Jerusalem's destruction by Rome in AD 70, and to the Gospel's sharp distance from their synagogues, which they connect with the growing separation between church and synagogue after the war. Defenders of an earlier date reply that predicting the fall of Jerusalem needs no hindsight, since the prophets had spoken of such judgment before. Where it was written is also unknown; Antioch in Syria is the most common suggestion, with Galilee or elsewhere in Syria and Palestine also proposed.",
-  "setting": "Jesus was born near the end of the reign of Herod the Great, the king whom Rome appointed over Judea and who ruled from 37 to 4 BC. After Herod's death his kingdom was divided among his sons: Archelaus received Judea and Samaria until Rome removed him in AD 6 and placed Judea under Roman governors (Pontius Pilate governed from about AD 26 to 36), while Herod Antipas ruled Galilee, where Jesus grew up and spent most of his ministry. Galilee was a fertile, largely Jewish region of villages and fishing towns around its lake, with Greek-speaking cities nearby.\n\nThe Judaism of this period, called Second Temple Judaism because it centered on the temple rebuilt after the exile and greatly enlarged by Herod, was varied. The Pharisees, a lay movement devoted to careful keeping of the law and its traditions, had wide popular influence. The Sadducees were an aristocratic, priestly party connected with the temple. Scribes were experts in the law. Many Jews longed for God to fulfill his promises, drive out the Romans, and restore the kingdom to Israel, and several would-be messiahs and prophets arose in the first century. Matthew's first readers, a generation or more later, likely lived in a mixed community of Jewish and Gentile Christians, in tension with the synagogues around them, working out how faith in Jesus related to the law of Moses and to Israel's hope.",
-  "purpose": "Matthew wrote to show that Jesus is the Messiah promised in Israel's Scriptures, the son of David and son of Abraham, and that in him the kingdom of heaven has come near. He wrote to teach disciples how to live in that kingdom, gathering Jesus' teaching into blocks that could be learned and passed on, and ending with the command to teach all nations to obey what Jesus commanded (28:20). He also wrote to explain a painful reality for his readers: why many of Israel's leaders rejected their Messiah, and why the Gentiles were now streaming into the people of God. The Gospel reads like a handbook for a community of disciples, a church (Matthew is the only Gospel to use that word, in 16:18 and 18:17), learning to live under the authority of its risen Lord.",
+  "author": "The Gospel is anonymous; no sentence in it names its author. Every manuscript that preserves a title calls it According to Matthew, and from the second century the church ascribed it to Matthew, one of the Twelve. Only this Gospel calls the man Jesus summoned from the tax booth Matthew (9:9) and lists him as Matthew the tax collector (10:3); Mark 2:14 and Luke 5:27 call him Levi, and most readers take the two names to belong to one man.\n\nThe earliest testimony is Papias, bishop of Hierapolis in Asia Minor early in the second century, whose words Eusebius preserves (Church History 3.39.16): Matthew arranged the logia in a Hebrew dialect (Hebraidi dialektō), and each person interpreted or translated them as he was able. Every key term is disputed. Logia may mean sayings of Jesus, scriptural oracles, or an account of his words and deeds; the Hebrew dialect is usually taken as Hebrew or Aramaic, but Josef Kürzinger (Biblische Zeitschrift, 1960) argued that it means a Hebrew style of arrangement. Irenaeus (Against Heresies 3.1.1, around 180) says Matthew issued a written Gospel among the Hebrews in their own language; Origen (in Eusebius, Church History 6.25.4) calls it the first Gospel, written by the former tax collector for believers from Judaism; Jerome (On Illustrious Men 3, around 392) says a Hebrew Matthew was kept in the library at Caesarea.\n\nOur Greek Matthew does not read like a translation, and most scholars think it follows Mark's Greek closely. So the positions divide. Many (W. D. Davies and Dale Allison, Ulrich Luz) think the author was an unnamed Jewish-Christian scribe, one “who has been discipled in the kingdom of heaven” (13:52), and that the apostle's name came to the book because some of its tradition went back to him. Others (Robert Gundry, D. A. Carson, Craig Blomberg) defend the apostle's authorship, arguing that an eyewitness could use Mark's account and that a unanimous early title is hard to explain as a guess. All agree the writer was a Jewish Christian steeped in Israel's Scriptures.",
+  "date": "Matthew gives no date. The earliest possible date depends on the Synoptic question (see How to read it); the latest is set by the Didache and Ignatius of Antioch (around 110), who appear to know this Gospel.\n\nA date before AD 70 is defended by John A. T. Robinson (Redating the New Testament, 1976), Robert Gundry (before about 63), and John Wenham (Redating Matthew, Mark and Luke, 1991), and many evangelical commentators place the book in the 60s. They point to passages that seem to assume the temple is still standing (the gift at the altar, 5:23-24; the temple tax, 17:24-27; swearing by the temple, 23:16-22), to the absence of any note that Jesus' prophecy of its fall (24:2) had come true, and to the early tradition that Matthew wrote first.\n\nThe majority view places Matthew between about 80 and 95; Davies and Allison judge it almost certainly written between 70 and 100, most probably between 80 and 95. The reasons are Matthew's use of Mark, usually dated to the late 60s or about 70; the king in the wedding parable who sends troops to destroy the murderers and burn their city (22:7), which many read as looking back on AD 70; the phrase “to this very day” (28:15, compare 27:8), which implies distance from the events; and the sharp conflict with synagogues Matthew calls theirs (4:23, 10:17), which fits the decades when Judaism was being rebuilt after the war. Defenders of the early date answer that a burned city was a stock picture of judgment, that Jesus could foretell the temple's fall, and that the post-70 reconstruction is itself uncertain.",
+  "setting": "The story is set in Judea and Galilee under Roman rule, from the last years of Herod the Great (king from 37 BC, died about 4 BC) to the governorship of Pontius Pilate (about AD 26 to 36). Herod's son Archelaus ruled Judea until Rome removed him in AD 6; another son, Herod Antipas, ruled Galilee, where Jesus grew up and did most of his work.\n\nOn the majority dating, the first readers lived after Rome burned the temple in AD 70, when Jewish life was being rebuilt without it. The Sadducees lost their base with the temple; the heirs of the Pharisees, the sages gathered at Yavneh under Yohanan ben Zakkai, began to shape what became rabbinic Judaism. Many scholars (J. Andrew Overman, Matthew's Gospel and Formative Judaism, 1990; Anthony Saldarini, Matthew's Christian-Jewish Community, 1994) read Matthew as a rival claim to Israel's heritage in that same moment, a community of Jewish believers in Jesus arguing with nearby synagogues over who rightly interprets Moses. Others (Graham Stanton, A Gospel for a New People, 1992) think the break had already come and Matthew's church now stood apart. The synagogue prayer against heretics (the Birkat ha-Minim) is often cited, but Reuven Kimelman (1981) showed how little evidence there is that it targeted Christians this early.\n\nThe place of writing is unknown. Antioch in Syria, where disciples were first called Christians (Acts 11:26), is the most common proposal (B. H. Streeter, The Four Gospels, 1924; Davies and Allison): a Greek-speaking city with a large Jewish population, whose bishop Ignatius knew Matthew early. G. D. Kilpatrick (1946) proposed a Phoenician port such as Tyre or Sidon; Overman favored Galilee, Aaron Gale (Redefining Ancient Borders, 2005) Sepphoris, and Saldarini Galilee or southern Syria. On any view the readers spoke Greek, were largely Jewish by heritage, and were increasingly joined by Gentiles.",
+  "purpose": "Matthew wrote to show that Jesus is the Messiah promised in Israel's Scriptures, the son of David and son of Abraham, and that in him the kingdom of heaven has come near. He wrote to teach disciples how to live in that kingdom, gathering Jesus' teaching into blocks that could be learned and passed on, and ending with the command to teach all nations to obey what Jesus commanded (28:20). He also wrote to explain a painful reality for his readers: why many of Israel's leaders rejected their Messiah, and why Gentiles were now streaming into the people of God. The Gospel reads like a handbook for a community of disciples, a church (Matthew is the only Gospel to use that word, in 16:18 and 18:17), learning to live under the authority of its risen Lord, and it seems written by and for teachers: Krister Stendahl (The School of St. Matthew, 1954) argued that it grew from a school of Christian scribes studying the Scriptures, and its orderly groupings of sayings, parables, and miracles suit memorizing and catechesis.",
   "story": "Matthew stands at the turning point of the Bible's story. The Old Testament ends with Israel back in the land but still waiting: no king on David's throne, the nations still ruling, and Malachi's promise of a messenger and an Elijah still unfulfilled. Around four centuries of Persian, Greek, and Roman rule pass. Matthew picks up exactly there, with a genealogy that runs from Abraham through David and the exile to the Messiah, and with John the Baptist appearing in the wilderness as the promised forerunner. The story Matthew tells, of Jesus' life, death, and resurrection, is the center toward which the Old Testament leads, and it launches the mission to the nations that the book of Acts and the rest of the New Testament go on to describe.",
   "christ": "Matthew presents Jesus through the categories of Israel's hope. He is the son of David, the rightful king, born in David's town and hailed by that title again and again. He is the son of Abraham, through whom the nations will be blessed. He relives Israel's history, coming out of Egypt, passing through the waters, and being tested in the wilderness, and he succeeds where Israel failed. He teaches on a mountain with an authority greater than Moses, saying, you have heard that it was said, but I tell you. He is the servant who bears sickness and suffering, the shepherd of Israel, and the Son of Man who will come in glory.\n\nAbove all, he is Immanuel, God with us. The Gospel opens with that name (1:23) and closes with the risen Jesus promising to be with his disciples always, to the end of the age (28:20). Between those two bookends Matthew shows him receiving worship, forgiving sins, and sharing the one divine name with the Father and the Spirit (28:19). Matthew's Jesus is fully the Messiah of Israel and truly God with his people, and his death is the giving of his life as a ransom for many (20:28) and his blood poured out for the forgiveness of sins (26:28).",
-  "reading": "Read Matthew as a Gospel: a form of ancient biography, centered on its subject's teaching, deeds, and death, written to call readers to faith and discipleship. It is not a modern chronological biography; Matthew often arranges material by theme, grouping teaching into discourses and miracles into clusters (chapters 8 and 9). Watch for three features. First, the fulfillment formulas, about ten times the narrator says this happened to fulfill what was spoken through the prophet, and the Old Testament passage in its own context usually enriches the connection. Second, the five discourses, each ending with a phrase like when Jesus had finished saying these things (7:28; 11:1; 13:53; 19:1; 26:1). Third, the Jewish setting: Matthew assumes knowledge of the law, the Pharisees, the temple, and the Sabbath, and uses the reverent phrase kingdom of heaven where Mark and Luke usually say kingdom of God. Compare the parallel accounts in Mark and Luke to see Matthew's emphases. Avoid reading the Gospel's sharp words against the Pharisees and scribes as a condemnation of the Jewish people; Jesus, his disciples, and Matthew himself were Jews, and the conflict is presented as a dispute within Israel about the meaning of Israel's own Scriptures.",
+  "reading": "Read Matthew as an ancient biography built for teaching. It alternates story and speech, and five long discourses (chapters 5 to 7, 10, 13, 18, and 23 to 25) each close with a formula like “When Jesus had finished saying these things” (7:28; 11:1, 13:53, 19:1, 26:1). B. W. Bacon (The Expositor, 1918; Studies in Matthew, 1930) argued that the five books answer the five books of Moses; most scholars now see a real Moses pattern in Matthew (Dale Allison, The New Moses, 1993) but doubt a strict new Pentateuch. Watch also the ten or so fulfillment formulas, and read each quoted passage in its own context.\n\nMatthew shares most of Mark and much of Luke, which raises the Synoptic problem. The Two-Source view (Weisse 1838, Holtzmann 1863, Streeter 1924), still the majority, holds that Matthew used Mark, taking over about nine-tenths of it, and a lost sayings source called Q. The Farrer view (Austin Farrer 1955; Michael Goulder; Mark Goodacre 2002) keeps Mark first but has Luke use Matthew, with no Q. The Griesbach or Two-Gospel view (1789; William Farmer 1964) puts Matthew first and Mark last, and the Augustinian order, Matthew, Mark, Luke, was defended by B. C. Butler (1951) and John Wenham (1991).\n\nMatthew's sharp words against scribes and Pharisees (chapter 23) belong to an argument among Jews about Israel's Scriptures. Reading them as a verdict on the Jewish people has a long and grievous history (see How it has been read).",
   "structure": [
-    { "range": "1-2", "title": "The birth and childhood of the Messiah", "summary": "Jesus' genealogy, his conception by the Holy Spirit, the visit of the Magi, the flight to Egypt, and the settling in Nazareth, each tied to Israel's Scriptures." },
-    { "range": "3-4", "title": "Preparation and the beginning of ministry", "summary": "John the Baptist prepares the way, Jesus is baptized and tested in the wilderness, and he begins preaching the kingdom and calling disciples in Galilee." },
-    { "range": "5-7", "title": "First discourse: the Sermon on the Mount", "summary": "Jesus teaches the life of the kingdom: the Beatitudes, the fulfillment of the law, true piety, trust in the Father, and the call to hear and do his words." },
-    { "range": "8-10", "title": "Deeds of power and the mission discourse", "summary": "A cluster of healings and miracles displays Jesus' authority, and he sends out the twelve with instructions for their mission." },
-    { "range": "11-13", "title": "Growing opposition and the parables of the kingdom", "summary": "Doubt and rejection mount, and Jesus teaches in parables about the hidden growth of the kingdom." },
-    { "range": "14-18", "title": "Who is Jesus? The confession and the community", "summary": "Feedings, the walk on the water, Peter's confession that Jesus is the Christ, the first predictions of his death, the transfiguration, and teaching on life together in the church." },
-    { "range": "19-25", "title": "To Jerusalem, conflict, and the end of the age", "summary": "Jesus travels to Jerusalem, enters as king, clears the temple, debates the leaders, pronounces woes, and teaches about the temple's fall and his return." },
-    { "range": "26-28", "title": "Death and resurrection", "summary": "The Last Supper, arrest, trials, crucifixion, and burial, followed by the empty tomb and the risen Jesus commissioning his disciples to make disciples of all nations." }
+    {
+      "range": "1:1-4:16",
+      "title": "The origins of the Messiah",
+      "summary": "Opening with “the record of the genealogy” (1:1), literally the book of the genesis, this section answers who Jesus is and where he comes from: his descent from Abraham and David, his conception by the Spirit, the Magi and the flight to Egypt, John's preaching, the baptism, the testing in the wilderness, and the move to Capernaum."
+    },
+    {
+      "range": "4:17-7:29",
+      "title": "The kingdom announced: the Sermon on the Mount",
+      "summary": "Marked by “From that time on Jesus began to preach” (4:17), Jesus calls disciples and teaches the first discourse (chapters 5 to 7), which closes with the first ending formula and the crowds' astonishment at his authority (7:28-29)."
+    },
+    {
+      "range": "8:1-11:1",
+      "title": "Deeds of the Messiah and the mission discourse",
+      "summary": "Ten miracles in chapters 8 and 9 show the authority of the one who taught on the mountain; he then sends the Twelve with the second discourse (chapter 10), which ends with the formula at 11:1."
+    },
+    {
+      "range": "11:2-13:53",
+      "title": "Rejection and the parables of the kingdom",
+      "summary": "John's question from prison opens a section of mounting doubt and opposition, and Jesus answers in the third discourse, the parables of chapter 13, closed by the formula at 13:53."
+    },
+    {
+      "range": "13:54-16:20",
+      "title": "Who is he?",
+      "summary": "Rejected at Nazareth, Jesus feeds great crowds, walks on the sea, and meets a Canaanite woman's faith, until Peter confesses him as the Christ, the Son of the living God, and Jesus speaks of building his church (16:16-18)."
+    },
+    {
+      "range": "16:21-18:35",
+      "title": "The way of the cross and the life of the community",
+      "summary": "A second “From that time on Jesus began” (16:21) turns the story toward Jerusalem and the cross. After the transfiguration comes the fourth discourse (chapter 18), on humility, straying sheep, and forgiveness."
+    },
+    {
+      "range": "19:1-25:46",
+      "title": "To Jerusalem, and the end of the age",
+      "summary": "Leaving Galilee (19:1), Jesus goes up to Jerusalem, enters as king, clears the temple, and confounds his questioners. The fifth discourse, the woes of chapter 23 and the teaching on the Mount of Olives (chapters 24 and 25), speaks of the temple's fall, his coming, and the last judgment."
+    },
+    {
+      "range": "26:1-28:20",
+      "title": "Passion and resurrection",
+      "summary": "The last ending formula (26:1) opens the passion: the anointing, the last supper, Gethsemane, the trials, the crucifixion, and the burial, then the empty tomb and the risen Jesus sending his disciples to all nations with the promise to be with them always."
+    }
   ],
   "themes": [
-    { "title": "Fulfillment", "body": "Matthew sees Jesus as the goal of Israel's Scriptures. The fulfillment formulas, the genealogy, the patterns that echo Moses and the exodus, and Jesus' own claim that he came not to abolish the Law and the Prophets but to fulfill them (5:17) all present the story of Jesus as the completion of the story of Israel." },
-    { "title": "The kingdom of heaven", "body": "The central message of John and Jesus is that the kingdom of heaven is near. The phrase means God's reign, arriving in Jesus' own person and work. It is present in his healings and teaching, hidden and growing like a mustard seed, and yet to come in fullness when the Son of Man returns." },
-    { "title": "Discipleship and righteousness", "body": "Matthew is concerned with what it means to follow Jesus. Disciples are called to a righteousness that exceeds that of the scribes and Pharisees, not by adding rules but by a heart transformed toward God and neighbor, shown in mercy, forgiveness, humility, and doing the Father's will." },
-    { "title": "Jesus as teacher with authority", "body": "Matthew gathers Jesus' teaching into five great discourses and repeatedly stresses his authority. He interprets the law, forgives sins, and at the end claims all authority in heaven and on earth (28:18). Many readers have seen in the five discourses a deliberate echo of the five books of Moses." },
-    { "title": "Israel and the nations", "body": "Jesus is sent first to the lost sheep of Israel (10:6; 15:24), yet Gentiles appear throughout: women in the genealogy, the Magi, a Roman centurion, a Canaanite woman. The Gospel ends with the command to make disciples of all nations, fulfilling the promise to Abraham." }
+    {
+      "title": "Fulfillment",
+      "body": "Matthew sees Jesus as the goal of Israel's Scriptures. The fulfillment formulas, the genealogy, the patterns that echo Moses and the exodus, and Jesus' own claim that he came not to abolish the Law and the Prophets but to fulfill them (5:17) all present the story of Jesus as the completion of the story of Israel."
+    },
+    {
+      "title": "The kingdom of heaven",
+      "body": "The central message of John and Jesus is that the kingdom of heaven is near. The phrase means God's reign, arriving in Jesus' own person and work. It is present in his healings and teaching, hidden and growing like a mustard seed, and yet to come in fullness when the Son of Man returns."
+    },
+    {
+      "title": "Discipleship and righteousness",
+      "body": "Matthew is concerned with what it means to follow Jesus. Disciples are called to a righteousness that exceeds that of the scribes and Pharisees, not by adding rules but by a heart transformed toward God and neighbor, shown in mercy, forgiveness, humility, and doing the Father's will."
+    },
+    {
+      "title": "Jesus as teacher with authority",
+      "body": "Matthew gathers Jesus' teaching into five great discourses and repeatedly stresses his authority. He interprets the law, forgives sins, and at the end claims all authority in heaven and on earth (28:18). Since B. W. Bacon (1918), many readers have heard in the five discourses an echo of the five books of Moses, and the Sermon on the Mount, delivered from a mountain, invites comparison with Sinai; yet Jesus is presented as more than a new Moses, since he speaks in his own name, “but I tell you” (5:22)."
+    },
+    {
+      "title": "Israel and the nations",
+      "body": "Jesus is sent first to the lost sheep of Israel (10:6; 15:24), yet Gentiles appear throughout: women in the genealogy, the Magi, a Roman centurion, a Canaanite woman. The Gospel ends with the command to make disciples of all nations, fulfilling the promise to Abraham."
+    }
   ],
-  "doctrines": ["messiah", "kingdom", "trinity", "atonement", "law", "church"],
+  "doctrines": [
+    "messiah",
+    "prophecy",
+    "kingdom",
+    "law",
+    "church",
+    "israel",
+    "trinity",
+    "atonement"
+  ],
   "keyChapters": [
-    { "ch": 1, "why": "The genealogy and the virgin birth introduce Jesus as son of David, son of Abraham, and Immanuel, God with us." },
-    { "ch": 5, "why": "The Beatitudes and Jesus' teaching on fulfilling the law open the Sermon on the Mount, among the most influential moral teaching in history." },
-    { "ch": 6, "why": "The Lord's Prayer and Jesus' teaching on secret piety, treasure, and worry show the inner life of the kingdom." },
-    { "ch": 13, "why": "The parables of the kingdom show how God's reign comes quietly, meets mixed responses, and grows toward a final harvest." },
-    { "ch": 16, "why": "Peter confesses Jesus as the Christ, Jesus speaks of building his church, and he begins to teach that he must suffer, die, and rise." },
-    { "ch": 26, "why": "The Last Supper and Gethsemane show Jesus giving his body and blood for the forgiveness of sins and submitting to his Father's will." },
-    { "ch": 28, "why": "The resurrection and the Great Commission complete the Gospel, with the risen Jesus claiming all authority and promising to be with his disciples always." }
+    {
+      "ch": 1,
+      "why": "The genealogy and the virgin birth introduce Jesus as son of David, son of Abraham, and Immanuel, God with us."
+    },
+    {
+      "ch": 5,
+      "why": "The Beatitudes and Jesus' teaching on fulfilling the law open the Sermon on the Mount, among the most influential moral teaching in history."
+    },
+    {
+      "ch": 6,
+      "why": "The Lord's Prayer and Jesus' teaching on secret piety, treasure, and worry show the inner life of the kingdom."
+    },
+    {
+      "ch": 13,
+      "why": "The parables of the kingdom show how God's reign comes quietly, meets mixed responses, and grows toward a final harvest."
+    },
+    {
+      "ch": 16,
+      "why": "Peter confesses Jesus as the Christ, Jesus speaks of building his church, and he begins to teach that he must suffer, die, and rise."
+    },
+    {
+      "ch": 26,
+      "why": "The Last Supper and Gethsemane show Jesus giving his body and blood for the forgiveness of sins and submitting to his Father's will."
+    },
+    {
+      "ch": 28,
+      "why": "The resurrection and the Great Commission complete the Gospel, with the risen Jesus claiming all authority and promising to be with his disciples always."
+    }
+  ],
+  "text": "Matthew was the most copied Gospel in the early church, and its text is well attested. The earliest papyri are fragments. P104 (P.Oxy. 4404, in Oxford), a scrap of Matthew 21 from Oxyrhynchus in Egypt, is usually dated to the second century. P64 (the Magdalen papyrus, Oxford) and P67 (Barcelona), fragments of Matthew 3, 5, and 26 from one codex, date to around AD 200; Carsten Thiede's claim (1994) that they were first-century copies was answered by Peter Head (Tyndale Bulletin, 1995) and others and is not accepted. P1 (P.Oxy. 2, in the University of Pennsylvania Museum), from the early third century, preserves much of chapter 1 in a text close to Codex Vaticanus, and P45 (the Chester Beatty codex, third century) has parts of chapters 20, 21, 25, and 26. The complete text comes from the fourth-century codices Sinaiticus and Vaticanus and the fifth-century Bezae, Washingtonianus, and Ephraemi Rescriptus; Codex Alexandrinus has lost Matthew before 25:6. Old Latin, Old Syriac (the Sinaitic and Curetonian manuscripts), and Coptic translations are also early.\n\nPapias's report of a Hebrew Matthew raises the question of a Semitic original. No Hebrew or Aramaic manuscript of such a book survives. Jewish-Christian gospels known only from quotations in the church fathers (the Gospels of the Hebrews, the Nazarenes, and the Ebionites, in Epiphanius and Jerome) were related to Matthew in some way, and Jerome's claim to have seen a Hebrew Matthew is debated. A Hebrew text of Matthew in the Even Bohan (The Touchstone), a polemical work by the Spanish Jewish scholar Shem-Tob ben Shaprut completed in 1380, was argued by George Howard (1987; revised 1995) to preserve an early Hebrew form, but most scholars think it a medieval translation and adaptation.\n\nEnglish Bibles differ at places where the King James Version followed the Textus Receptus, a printed Greek text descended from Erasmus's editions (from 1516) and based on late manuscripts. The doxology to the Lord's Prayer (6:13, ‘for thine is the kingdom’) is absent from Sinaiticus, Vaticanus, and Bezae, though a shorter form appears in the Didache (8.2). Verses 17:21, 18:11, and 23:14 are missing from the earliest manuscripts and appear to have been drawn from Mark and Luke; modern Bibles move them to footnotes. At 1:25 the King James Version reads ‘her firstborn son’ from later manuscripts. At 27:16-17 a few manuscripts call the prisoner ‘Jesus Barabbas’, a reading the NRSV adopts. At 27:49 Sinaiticus and Vaticanus add a sentence about a spear piercing Jesus' side, which editors judge a very early insertion from John 19:34.",
+  "reception": "Matthew was the church's first Gospel in use as well as in order. Édouard Massaux (1950) showed that it is the Gospel most clearly used by Christian writers before Irenaeus: the Didache gives its form of the Lord's Prayer (8.2), and Ignatius of Antioch (To the Smyrnaeans 1.1) knows that Jesus was baptized by John to fulfill all righteousness, a detail only Matthew records. Irenaeus (Against Heresies 3.11.8) and Jerome (preface to his Commentary on Matthew, 398) gave Matthew the man among the four living creatures, because he begins with a human genealogy; the winged man marks him in the Book of Kells. Origen's Commentary on Matthew, written at Caesarea in the 240s, survives in part. Hilary of Poitiers wrote the earliest surviving Latin commentary on it around 355, John Chrysostom preached ninety homilies on it at Antioch around 390, and Augustine's Our Lord's Sermon on the Mount (around 394) began a long tradition of reading chapters 5 to 7 as the pattern of the Christian life. Thomas Aquinas opened his Catena Aurea with Matthew and lectured on it at Paris.\n\nAt the Reformation the Sermon on the Mount became a battleground. Luther preached on it (published 1532) against both monastic perfectionism and Anabaptist literalism; the Anabaptist Schleitheim Confession (1527) drew from Matthew 5 its refusal of oaths and the sword; Calvin wove Matthew into his Harmony of the Gospels (1555). Leo Tolstoy (The Kingdom of God Is Within You, 1894) and Dietrich Bonhoeffer (Discipleship, 1937) made the Sermon's demands central again. Modern criticism read Matthew as a careful editor of Mark: Krister Stendahl (1954) and Günther Bornkamm, Gerhard Barth, and Heinz Joachim Held (Tradition and Interpretation in Matthew, German 1960) founded redaction criticism of the book, Jack Dean Kingsbury (1975) proposed its threefold outline at 4:17 and 16:21, and Ulrich Luz's commentary (German from 1985; Hermeneia, 2001 to 2007) traced its effects across the centuries.\n\nThat history includes grave harm. The crowd's cry, “His blood be on us and on our children” (27:25), was read by Christian writers from the patristic period on as a curse on the whole Jewish people, and together with the woes of chapter 23 it was used for centuries to justify contempt, expulsion, and violence. The Oberammergau passion play spoke the line from 1750 until it was cut for the 2000 season. The Second Vatican Council's declaration Nostra Aetate (1965) taught that Christ's passion cannot be charged against all Jews then living or against Jews today, and that Jews should not be presented as rejected or accursed as if this followed from Scripture; many Protestant bodies have said the same. Jewish scholars now read Matthew as a Jewish text from a quarrel inside Israel: Aaron Gale annotated it for The Jewish Annotated New Testament (2011), and Amy-Jill Levine has written widely on it.\n\nIn worship Matthew supplies the Lord's Prayer and the Beatitudes, the Magi of Epiphany, and the words of the Great Commission used at baptisms. The three-year Roman Catholic lectionary (1969) and the Revised Common Lectionary (1992) read it through Year A. Johann Sebastian Bach's St Matthew Passion was first performed in Leipzig on Good Friday 1727 and revived by Felix Mendelssohn in Berlin in 1829, a landmark in the rediscovery of Bach. Caravaggio's Calling of Saint Matthew (1599 to 1600, in the Contarelli Chapel of San Luigi dei Francesi, Rome) shows the tax collector at his table under a shaft of light, and Pier Paolo Pasolini's film The Gospel According to St. Matthew (1964) took its dialogue from the Gospel's own text.",
+  "furtherReading": [
+    {
+      "tier": "first",
+      "author": "N. T. Wright",
+      "title": "Matthew for Everyone",
+      "series": "The New Testament for Everyone",
+      "year": 2002,
+      "note": "Short passages with Wright's own translation and brief, historically informed reflections, in two parts; an easy first companion."
+    },
+    {
+      "tier": "first",
+      "author": "Michael Green",
+      "title": "The Message of Matthew",
+      "series": "The Bible Speaks Today",
+      "year": 2000,
+      "note": "A clear evangelical exposition by an Anglican evangelist, attentive to Matthew's Jewish setting and to preaching."
+    },
+    {
+      "tier": "first",
+      "author": "Amy-Jill Levine and Marc Zvi Brettler, editors",
+      "title": "The Jewish Annotated New Testament",
+      "year": 2011,
+      "note": "Jewish scholars annotate the New Testament; Aaron Gale's notes on Matthew explain its Jewish world and its hardest passages (second edition 2017)."
+    },
+    {
+      "tier": "pastor",
+      "author": "R. T. France",
+      "title": "The Gospel of Matthew",
+      "series": "New International Commentary on the New Testament",
+      "year": 2007,
+      "note": "A careful evangelical commentary on what Matthew meant in its first-century setting; the best single volume for most preachers."
+    },
+    {
+      "tier": "pastor",
+      "author": "Craig S. Keener",
+      "title": "The Gospel of Matthew: A Socio-Rhetorical Commentary",
+      "year": 2009,
+      "note": "Gathers Jewish and Greco-Roman background for nearly every passage, with judicious treatment of historical questions."
+    },
+    {
+      "tier": "pastor",
+      "author": "Daniel J. Harrington",
+      "title": "The Gospel of Matthew",
+      "series": "Sacra Pagina",
+      "year": 1991,
+      "note": "A Roman Catholic commentary that reads Matthew in the setting of Judaism after AD 70."
+    },
+    {
+      "tier": "pastor",
+      "author": "Frederick Dale Bruner",
+      "title": "Matthew: A Commentary",
+      "year": 2004,
+      "note": "Two volumes (The Christbook and The Churchbook) by a Presbyterian theologian, rich in the history of interpretation and written for preachers."
+    },
+    {
+      "tier": "pastor",
+      "author": "Manlio Simonetti, editor",
+      "title": "Matthew 1-13",
+      "series": "Ancient Christian Commentary on Scripture",
+      "year": 2001,
+      "note": "Selections from the church fathers arranged passage by passage, with a second volume on chapters 14 to 28."
+    },
+    {
+      "tier": "pastor",
+      "author": "Stanley Hauerwas",
+      "title": "Matthew",
+      "series": "Brazos Theological Commentary on the Bible",
+      "year": 2006,
+      "note": "A theologian's reading of Matthew as a call to discipleship and a church formed by the Sermon on the Mount."
+    },
+    {
+      "tier": "scholar",
+      "author": "W. D. Davies and Dale C. Allison",
+      "title": "The Gospel according to Saint Matthew",
+      "series": "International Critical Commentary",
+      "year": 1988,
+      "note": "Three volumes (1988 to 1997), the fullest critical commentary in English, exhaustive on Jewish background and the history of interpretation."
+    },
+    {
+      "tier": "scholar",
+      "author": "Ulrich Luz",
+      "title": "Matthew 1-7",
+      "series": "Hermeneia",
+      "year": 2007,
+      "note": "A Swiss Reformed scholar's three-volume commentary (with Matthew 8-20, 2001, and 21-28, 2005), unique for tracing how each passage has been read and used."
+    },
+    {
+      "tier": "scholar",
+      "author": "Raymond E. Brown",
+      "title": "The Birth of the Messiah",
+      "year": 1977,
+      "note": "The standard study of the infancy narratives of Matthew and Luke, updated in 1993; indispensable for chapters 1 and 2."
+    },
+    {
+      "tier": "scholar",
+      "author": "Dale C. Allison",
+      "title": "The New Moses: A Matthean Typology",
+      "year": 1993,
+      "note": "Shows how Matthew patterns Jesus on Moses from the infancy narrative to the mountain of the Great Commission."
+    },
+    {
+      "tier": "scholar",
+      "author": "Anthony J. Saldarini",
+      "title": "Matthew's Christian-Jewish Community",
+      "year": 1994,
+      "note": "Reads Matthew's community as a group of Jewish believers in Jesus still arguing within the wider Jewish world after AD 70."
+    },
+    {
+      "tier": "scholar",
+      "author": "Graham N. Stanton",
+      "title": "A Gospel for a New People: Studies in Matthew",
+      "year": 1992,
+      "note": "Essays arguing that Matthew was written after the parting of the ways, including studies of the Sermon on the Mount and Matthew's use of Scripture."
+    }
   ]
 }
