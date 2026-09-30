@@ -1,0 +1,384 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "Some months have passed since the Passover of chapter 6. Jesus keeps to Galilee because the authorities in Judea are seeking to kill him, the threat first stated in 5:18. The verse sets the danger that hangs over the whole visit to Jerusalem that follows.",
+      "grammar": "Periepatei, an imperfect of peripateō, ‘he kept walking about’, describes a period of travel and teaching in Galilee, not one trip. Ou gar ēthelen en tē Ioudaia peripatein, ‘for he did not wish to walk in Judea’, gives his reason, and hoti ezētoun auton hoi Ioudaioi apokteinai, ‘because the Jews were seeking to kill him’, gives the reason for the reason. Here hoi Ioudaioi means the Judean authorities, set against Galilee; the word shifts its reference with the setting.",
+      "words": ["G4043", "G1056G", "G2309", "G2449", "G2212", "G2453", "G0615"],
+      "text": "Codex Washingtonianus (W), several Old Latin manuscripts, and the Curetonian Syriac read ‘for he had no authority to walk in Judea’ in place of ‘he did not wish’. The reading may have arisen to explain Jesus' absence as a matter of circumstance rather than choice; almost all manuscripts have ‘he did not wish’.",
+      "refs": ["John 5:18", "John 11:53-54", "John 6:66"]
+    },
+    {
+      "v": "2",
+      "context": "The Feast of Tabernacles is near. John names the feast that will frame chapters 7 to 9, and its customs of water and light supply the images Jesus uses in 7:37-39 and 8:12.",
+      "grammar": "Hē heortē tōn Ioudaiōn hē skēnopēgia, ‘the feast of the Jews, the Tabernacles’, uses the same explanatory phrase John attaches to each festival (compare 6:4). Engus, ‘near’, places the dialogue with the brothers some days before the feast began on the fifteenth of Tishri.",
+      "words": ["G1451", "G1859", "G2453", "G4634"],
+      "history": "Leviticus 23:40 commands Israel to take on the first day the fruit of majestic trees, palm branches, leafy boughs, and willows, and to rejoice before the LORD seven days. In practice this became the lulav, a bundle of palm, myrtle, and willow waved during the Hallel psalms, and the etrog, a citron, carried in the other hand (m. Sukkah 3). Josephus records that when the Hasmonean king Alexander Jannaeus stood at the altar to sacrifice at this feast, the people pelted him with their citrons (Antiquities 13.372). The feast was crowded, joyful, and politically charged.",
+      "refs": ["Leviticus 23:33-43", "Deuteronomy 16:13-15", "Nehemiah 8:14-18", "Zechariah 14:16-19"]
+    },
+    {
+      "v": "3-5",
+      "context": "Jesus' brothers urge him to go to Judea and show his works publicly, and John explains that they did not believe in him. Their advice sounds like support, but it treats his signs as a campaign for recognition.",
+      "grammar": "Metabēthi enteuthen kai hupage eis tēn Ioudaian, ‘leave here and go to Judea’, uses two imperatives, the first aorist (a decisive move), the second present. Hina kai hoi mathētai sou theōrēsousin, ‘so that your disciples also will see’, assumes followers in Judea (2:23, 4:1). Verse 4 contrasts en kruptō, ‘in secret’, with en parrēsia, ‘in public’ or ‘openly’, a word that runs through these chapters (7:13, 26; 10:24; 11:14; 18:20). Ei tauta poieis, ‘if you do these things’, is a condition assumed true for argument's sake, but in the brothers' mouths it carries a taunt. Phanerōson seauton tō kosmō, ‘show yourself to the world’, is ironic: Jesus will be revealed to the world, but on the cross and not on their terms. Verse 5 uses an imperfect, oude gar hoi adelphoi autou episteuon eis auton, ‘for not even his brothers were believing in him’.",
+      "words": ["G0080", "G3327", "G5217", "G2334", "G2927", "G3954", "G5319", "G4100"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "The brothers know Jesus' works and still do not believe. John shows that nearness and familiarity do not produce faith; the same brothers appear among the believers after the resurrection (Acts 1:14), so unbelief here is not the end of their story."
+        }
+      ],
+      "parallels": ["Mark 3:21", "Mark 3:31-35", "Mark 6:3-4"],
+      "refs": ["Acts 1:14", "1 Corinthians 15:7", "John 2:11", "John 18:20"]
+    },
+    {
+      "v": "6-7",
+      "context": "Jesus answers that his time has not yet come, while theirs is always at hand. The world cannot hate them, because they belong to it; it hates him because he testifies that its works are evil.",
+      "grammar": "Ho kairos ho emos oupō parestin, ‘my time is not yet present’, sets emos, ‘my’, against humeteros, ‘your’: ho de kairos ho humeteros pantote estin hetoimos, ‘but your time is always ready’. Any moment will do for people who move with the world; Jesus moves by the Father's appointment. In verse 7 ou dunatai ho kosmos misein humas, ‘the world cannot hate you’, speaks of impossibility, not unlikelihood. Hoti egō marturō peri autou hoti ta erga autou ponēra estin, ‘because I testify about it that its works are evil’, repeats the judgment of 3:19-20.",
+      "words": ["G2540", "G3918", "G2092", "G2889", "G3404", "G3140", "G4190"],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "The world in John is humanity organized apart from God, and its hatred of Jesus is a response to his exposure of its works. Sin here is not only wrongdoing but a resistance to having it named, which is why light provokes hostility (3:19-20)."
+        }
+      ],
+      "refs": ["John 3:19-20", "John 15:18-19", "John 17:14", "John 2:4"]
+    },
+    {
+      "v": "8-9",
+      "context": "Jesus tells his brothers to go up to the feast without him, because his time has not yet been fulfilled, and he stays in Galilee. Verse 10 will show him going up after all, which has made these verses a famous difficulty.",
+      "grammar": "Egō ouk anabainō eis tēn heortēn tautēn, ‘I am not going up to this feast’, uses the present tense, which can refer to the immediate future: ‘I am not going up now’, or ‘not in the way you propose’. The verb anabainō, ‘go up’, is the ordinary word for the pilgrim's ascent to Jerusalem, but John also uses it of Jesus' ascent to the Father (3:13, 6:62, 20:17), so ‘I am not going up’ may also mean that his final going up is not yet. The reason given, hoti ho emos kairos oupō peplērōtai, ‘because my time has not yet been fulfilled’, uses a perfect passive of plēroō, the language of fulfillment: his time is filled up by the Father, not chosen by him or his brothers.",
+      "words": ["G0305", "G1859", "G2540", "G4137", "G3306"],
+      "text": "The oldest papyri, Papyri 66 and 75, with Codex Vaticanus and most later manuscripts, read oupō, ‘not yet’, which the King James Version follows (‘I go not up yet’). Codex Sinaiticus, Codex Bezae, and others read ouk, ‘not’. Most editors print ‘not’, judging ‘not yet’ an early softening; the chapter note's hard question sets out the debate.",
+      "refs": ["John 2:4", "John 3:13", "John 20:17", "John 7:30"]
+    },
+    {
+      "v": "10",
+      "context": "After the brothers leave, Jesus also goes up, not publicly but as it were in secret. He does not travel with the pilgrim caravan, and he does not make the display the brothers urged.",
+      "grammar": "Ou phanerōs all' hōs en kruptō, ‘not openly but as in secret’, answers the brothers' words directly: they said no one acts en kruptō who wants to be known and told him to show himself (phanerōson, 7:4). Jesus goes en kruptō, the very way they said a public figure never goes. Tote kai autos anebē, ‘then he too went up’, uses the same verb he had used in verse 8, which is why interpreters look for a difference in how or when he goes rather than whether.",
+      "words": ["G0305", "G5320", "G2927"],
+      "refs": ["John 7:4", "John 7:14", "John 11:54", "Luke 9:51"]
+    },
+    {
+      "v": "11-13",
+      "context": "In Jerusalem people look for Jesus, and the crowds murmur about him, some calling him good and others a deceiver. No one speaks openly, for fear of the authorities. The scene prepares for his sudden appearance in the temple.",
+      "grammar": "Pou estin ekeinos, ‘where is that man?’, uses ekeinos, ‘that one’, which can sound distant or contemptuous. Gongusmos, ‘murmuring’, is the noun of the verb used in 6:41. Hoi men elegon ... alloi elegon, ‘some were saying ... others were saying’, uses imperfects for talk that went back and forth. Planā ton ochlon, ‘he leads the crowd astray’, uses planaō in the present: an ongoing charge that he is a deceiver. Verse 13 closes with parrēsia again: no one spoke openly dia ton phobon tōn Ioudaiōn, ‘because of the fear of the Jews’, though the speakers were themselves Jews, so the phrase must mean the authorities.",
+      "words": ["G2212", "G1565", "G1112", "G3793", "G0018", "G4105", "G3954", "G5401"],
+      "history": "To call Jesus one who leads the people astray was more than an insult. Deuteronomy 13:1-5 commands death for a prophet who works signs and wonders but leads Israel away from the LORD, and the charge of being a deceiver follows Jesus to the end (Matthew 27:63). John uses the same fear of the Jews to explain secret discipleship (9:22, 19:38) and the disciples' locked doors after the crucifixion (20:19).",
+      "refs": ["Deuteronomy 13:1-5", "Matthew 27:63", "John 9:22", "John 19:38", "John 20:19"]
+    },
+    {
+      "v": "14-15",
+      "context": "Midway through the feast Jesus goes up to the temple and teaches openly. The people are amazed that he knows so much without having studied under a teacher.",
+      "grammar": "Tēs heortēs mesousēs is a genitive absolute, ‘the feast being at its middle’, around the fourth day of the seven. Edidasken, ‘he began teaching’, is an ingressive imperfect. In verse 15 pōs houtos grammata oiden mē memathēkōs, literally ‘how does this man know letters, not having learned?’, uses grammata, ‘letters’, for learning in the Scriptures (2 Timothy 3:15 calls them the sacred writings, hiera grammata), and memathēkōs, a perfect participle of manthanō, for having been a pupil. The objection is not that he is illiterate but that he has no recognized teacher.",
+      "words": ["G1859", "G3322", "G0305", "G2411", "G1321", "G2296", "G1121", "G3129"],
+      "history": "A teacher's authority in Jewish learning came from the teacher under whom he had trained. The Mishnah tractate Avot opens with a chain of transmission from Moses through the prophets and the men of the great assembly to the sages (m. Avot 1:1), and Joshua ben Perahiah is remembered for the counsel to provide oneself with a teacher (m. Avot 1:6). Paul describes himself as trained at the feet of Gamaliel (Acts 22:3). The council later marvels in the same way at Peter and John, who were unschooled (Acts 4:13).",
+      "refs": ["Acts 4:13", "Acts 22:3", "Mark 1:22", "Luke 2:46-47", "Mark 6:2"]
+    },
+    {
+      "v": "16-18",
+      "context": "Jesus answers that his teaching is not his own but from the one who sent him. Anyone willing to do God's will can test this, and a speaker who seeks the sender's glory rather than his own is shown to be true.",
+      "grammar": "Hē emē didachē ouk estin emē, ‘my teaching is not mine’, is a deliberate paradox. In verse 17 ean tis thelē to thelēma autou poiein, ‘if anyone wills to do his will’, plays on thelō and thelēma, ‘want’ and ‘will’: the condition is a settled desire to obey, not a single act. Gnōsetai peri tēs didachēs, ‘he will know about the teaching’, promises knowledge that follows willingness. Verse 18 contrasts ho aph' heautou lalōn, ‘the one who speaks from himself’, with ho zētōn tēn doxan tou pempsantos auton, ‘the one who seeks the glory of the one who sent him’, and calls the second alēthēs, ‘true’. Adikia, usually ‘unrighteousness’, here means falseness, the opposite of alēthēs, and answers the charge that he deceives (7:12).",
+      "words": ["G1322", "G2309", "G2307", "G1097", "G2980", "G1391", "G2212", "G0227", "G0093"],
+      "history": "The pattern of sender and sent was familiar from Jewish law, which held that a person's agent is as the person himself (m. Berakhot 5:5). An agent who spoke on his own account forfeited that authority; one who sought his sender's honor carried it fully. Jesus' claim rests on this principle, raised to the highest degree: his words are the Father's because he seeks only the Father's glory.",
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "Jesus places the recognition of revelation in the will as well as the mind. Knowing whether his teaching is from God is promised to the one who wants to do God's will; this is an invitation to test his teaching by obedience, not a charge that every doubter is unwilling."
+        }
+      ],
+      "refs": ["John 5:30", "John 5:44", "John 8:28", "John 12:49-50", "John 14:10"]
+    },
+    {
+      "v": "19-20",
+      "context": "Jesus turns the argument: Moses gave them the law, yet none of them keeps it, and they are trying to kill him. The crowd, apparently unaware of the plot, accuses him of having a demon.",
+      "grammar": "Ou Mōusēs dedōken humin ton nomon, ‘has not Moses given you the law?’, with ou, expects the answer yes; the perfect dedōken describes a gift that still stands. Kai oudeis ex humōn poiei ton nomon, ‘and none of you does the law’, uses poieō, ‘do’, rather than a word for knowing: the problem is practice. Ti me zēteite apokteinai, ‘why do you seek to kill me?’, links the breach of the law to the plan against him. The crowd's answer, daimonion echeis, ‘you have a demon’, means ‘you are out of your mind’ or ‘you are possessed’, a charge repeated in 8:48 and 10:20.",
+      "words": ["G3475", "G1325", "G3551", "G4160G", "G2212", "G0615", "G1140"],
+      "theology": [
+        {
+          "id": "law",
+          "note": "Jesus appeals to the law against those who think they defend it. The law given through Moses forbids murder, and to plot the death of an innocent man in the name of the Sabbath law is to break the law one claims to guard, as 5:45-47 already warned."
+        }
+      ],
+      "refs": ["John 5:16-18", "John 5:45-47", "John 8:48", "John 10:20", "Mark 3:22"]
+    },
+    {
+      "v": "21-23",
+      "context": "Jesus defends the healing at Bethesda (5:1-9) with an argument from the law's own practice. If circumcision is performed on the Sabbath so that the law of Moses may not be broken, he cannot be condemned for making a whole man well on the Sabbath.",
+      "grammar": "Hen ergon epoiēsa kai pantes thaumazete, ‘I did one work and you all marvel’. The next words, dia touto, ‘because of this’, can end verse 21 (‘you all marvel because of this’) or begin verse 22 (‘for this reason Moses gave you circumcision’); ancient and modern editors divide it both ways. The parenthesis ouch hoti ek tou Mōuseōs estin all' ek tōn paterōn, ‘not that it is from Moses but from the fathers’, notes that circumcision began with Abraham. In verse 23 hina mē luthē ho nomos Mōuseōs, ‘so that the law of Moses may not be broken’, uses luō, the verb used in 5:18 of Jesus ‘breaking’ the Sabbath. Holon anthrōpon hugiē epoiēsa, ‘I made a whole man well’, sets holon, ‘whole’, against the one part touched in circumcision; hugiēs, ‘well’, is the word used five times of the same man in chapter 5.",
+      "words": ["G2041", "G2296", "G4061", "G3962", "G4521", "G4059", "G3089", "G3551", "G3650", "G5199"],
+      "history": "Circumcision on the eighth day (Leviticus 12:3) was performed even when that day was a Sabbath, and the Mishnah allows all that is needed for it (m. Shabbat 18:3, 19:2). Jesus' reasoning is the argument from the lesser to the greater, called qal wahomer, ‘light and heavy’, the first of the seven rules of interpretation that tradition ascribes to Hillel (t. Sanhedrin 7:11). The Babylonian Talmud records the same kind of argument from circumcision for saving life on the Sabbath (b. Yoma 85b).",
+      "theology": [
+        {
+          "id": "sabbath",
+          "note": "The law itself allows a work of wholeness on the Sabbath, so restoring a whole man honors the day rather than violating it. Jesus does not set the Sabbath aside; he shows that healing belongs to its purpose, as the Synoptic sayings about doing good on the Sabbath also teach (Mark 3:4)."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Leviticus 12:3",
+          "note": "The law commands that a boy be circumcised on the eighth day (Hebrew uvayom hashmini yimmol), and the Greek Old Testament renders it closely. The command does not mention the Sabbath, and Jewish practice resolved the conflict by holding that circumcision overrides the Sabbath. Jesus uses that settled practice as common ground: both sides agree the Sabbath gives way to circumcision."
+        }
+      ],
+      "refs": ["John 5:8-9", "Genesis 17:10-12", "Mark 3:4", "Luke 14:5"]
+    },
+    {
+      "v": "24",
+      "context": "Jesus closes the argument with a command: stop judging by appearances and judge with right judgment. The verse forbids superficial judgment, not judgment itself.",
+      "grammar": "Mē krinete kat' opsin, a present imperative with the negative, ‘stop judging by appearance’. Opsis means sight, appearance, or face (it means ‘face’ in 11:44). Alla tēn dikaian krisin krinete, ‘but judge the just judgment’, has an article that points to the right verdict, the one that sees what is really there. The Textus Receptus reads an aorist imperative, krinate, in place of the present.",
+      "words": ["G2919", "G2596", "G3799", "G1342", "G2920"],
+      "ot": [
+        {
+          "ref": "Isaiah 11:3-4",
+          "note": "Of the coming shoot from Jesse, Isaiah says he will not judge by what his eyes see (Hebrew lo-lemar'eh einav yishpot) but with righteousness. The Greek Old Testament has ou kata tēn doxan krinei, ‘he will not judge by reputation’. Jesus demands of his hearers the judgment Isaiah promised of the Messiah. Deuteronomy 16:18, where judges are to judge the people with righteous judgment (Greek krisin dikaian), supplies the phrase."
+        }
+      ],
+      "refs": ["Deuteronomy 16:18-19", "1 Samuel 16:7", "Zechariah 7:9", "John 8:15"]
+    },
+    {
+      "v": "25-27",
+      "context": "Some people of Jerusalem, who know of the plot, wonder why the rulers let Jesus speak openly. Might they have recognized him as the Christ? But they dismiss the thought: they know where he is from, and no one will know where the Christ comes from.",
+      "grammar": "Tines ek tōn Hierosolumitōn, ‘some of the Jerusalemites’, are distinguished from the pilgrim crowd of verse 20, which is why these know of the plot. Mēpote alēthōs egnōsan hoi archontes, ‘can it be that the rulers truly know?’, uses mēpote, which introduces a hesitant question expecting doubt. Pothen, ‘from where’, occurs twice in verse 27 and becomes the chapter's question: alla touton oidamen pothen estin, ‘but this man, we know where he is from’, and oudeis ginōskei pothen estin, ‘no one knows where he is from’.",
+      "words": ["G2415", "G0615", "G3954", "G0758", "G5547", "G6063", "G4159"],
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "The objection rests on a belief that the Messiah's origin would be hidden until his appearing. John's irony is that the objection is true of Jesus in a way the speakers miss: they know his hometown, but his true origin, the Father, is hidden from them, as verses 28-29 say."
+        }
+      ],
+      "refs": ["John 6:42", "John 8:14", "John 9:29-30", "John 1:26"]
+    },
+    {
+      "v": "28-29",
+      "context": "Jesus cries out in the temple courts. They know him and where he is from, and yet they do not know the one who sent him, whom he knows because he is from him.",
+      "grammar": "Ekraxen, ‘he cried out’, is used in John for solemn public declaration (1:15, 7:37, 12:44), not for shouting in anger. Kame oidate kai oidate pothen eimi can be read as a statement, ‘you know me and you know where I am from’, spoken with irony, or as a question, ‘do you know me and where I am from?’ Ap' emautou ouk elēlutha, ‘I have not come of myself’, uses a perfect for his coming and its standing result. Estin alēthinos ho pempsas me, ‘the one who sent me is true’, uses alēthinos, ‘real, genuine’. Verse 29 answers with three clauses: egō oida auton, ‘I know him’, hoti par' autou eimi, ‘because I am from him’, kakeinos me apesteilen, ‘and he sent me’.",
+      "words": ["G2896", "G2411", "G1321", "G6063", "G4159", "G0228", "G3844", "G0649"],
+      "theology": [
+        {
+          "id": "trinity",
+          "note": "Jesus' knowledge of the Father rests on his origin from the Father: ‘I am from him’. John distinguishes the Son's coming from the Father, which belongs to who he is, from his being sent, which is his mission, and the church's later confession of the Son as eternally from the Father builds on texts like this."
+        }
+      ],
+      "refs": ["John 8:14", "John 8:19", "John 17:25", "John 1:18", "John 16:28"]
+    },
+    {
+      "v": "30",
+      "context": "They try to seize him, but no one lays a hand on him, because his hour had not yet come. The attempt fails for a reason the officers cannot see.",
+      "grammar": "Ezētoun oun auton piasai, ‘so they were seeking to seize him’, uses piazō, a colloquial word for arrest found eight times in John. Hoti oupō elēluthei hē hōra autou, ‘because his hour had not yet come’, uses a pluperfect: his hour had not yet arrived. The hour in John is the appointed time of his death and glorification, announced as ‘not yet’ in 2:4 and arriving in 12:23 and 13:1.",
+      "words": ["G2212", "G4084", "G1911", "G5495", "G3768", "G5610"],
+      "theology": [
+        {
+          "id": "sovereignty",
+          "note": "The narrator explains the failed arrest by the Father's timing, not by the crowd's mood or the officers' caution. Jesus' death will come at the hour God appoints, and until then he cannot be taken; when it comes, he lays down his life of his own accord (10:18)."
+        }
+      ],
+      "refs": ["John 2:4", "John 8:20", "John 12:23", "John 13:1", "John 10:18"]
+    },
+    {
+      "v": "31",
+      "context": "Many in the crowd believe in him and reason that the Christ, when he comes, will not do more signs than this man has done.",
+      "grammar": "Ek tou ochlou de polloi episteusan eis auton, ‘many from the crowd believed in him’, uses the phrase for real faith in John, though as in 2:23 and 8:30-31 it may still be faith that needs testing. The question mē pleiona sēmeia poiēsei, with mē, expects the answer no: ‘he will not do more signs than this man has done, will he?’",
+      "words": ["G3793", "G4100", "G5547", "G4119", "G4592"],
+      "history": "Jewish texts of the period rarely describe the Davidic Messiah as a worker of wonders; signs were expected more of prophets like Moses, and Josephus describes several men who promised such signs to crowds (Antiquities 20.97-98, 20.168-172). One fragment from Qumran, the so-called Messianic Apocalypse (4Q521), speaks of heaven and earth listening to God's messiah and of the Lord healing the wounded and raising the dead in that time. The crowd's question fits this varied expectation.",
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Some believe because of the signs, and John counts it as belief. The chapter also shows how quickly such belief can divide and waver (7:43), which is why the Gospel keeps pointing from the signs to the one they signify (20:30-31)."
+        }
+      ],
+      "refs": ["John 2:23", "John 8:30-31", "John 10:41-42", "John 20:30-31"]
+    },
+    {
+      "v": "32",
+      "context": "The Pharisees hear the crowd murmuring and, together with the chief priests, send officers to arrest him. The two groups act together, as they will again in 7:45, 11:47, 11:57, and 18:3.",
+      "grammar": "Ēkousan hoi Pharisaioi tou ochlou gonguzontos, ‘the Pharisees heard the crowd murmuring’, uses a genitive with the verb of hearing and a present participle for talk in progress. Hoi archiereis kai hoi Pharisaioi, ‘the chief priests and the Pharisees’, pairs the priestly leadership, mostly Sadducean, with the lay Pharisees; the plural ‘chief priests’ covers the high priest, former high priests, and leading priestly families. Hupēretas, ‘officers’ or ‘attendants’, are the temple police (18:3, 18:12).",
+      "words": ["G5330", "G3793", "G1111", "G0749", "G5257", "G4084"],
+      "refs": ["John 7:45", "John 11:47", "John 11:57", "John 18:3", "Acts 5:26"]
+    },
+    {
+      "v": "33-34",
+      "context": "Jesus says he will be with them a little while and then go to the one who sent him. They will seek him and not find him, and where he is they cannot come.",
+      "grammar": "Eti chronon mikron meth' humōn eimi, ‘yet a little time I am with you’, introduces the ‘little while’ sayings of John (12:35, 13:33, 14:19, 16:16-19). Hupagō pros ton pempsanta me, ‘I am going to the one who sent me’, uses the present of hupagō for a departure already under way. Hopou eimi egō humeis ou dunasthe elthein, ‘where I am, you cannot come’, has the present eimi, not ‘where I will be’: Jesus speaks of his permanent place with the Father (17:24).",
+      "words": ["G5550", "G3398", "G5217", "G3992", "G2212", "G2147", "G1410"],
+      "ot": [
+        {
+          "ref": "Proverbs 1:28",
+          "note": "Wisdom, rejected by the simple, warns that they will call on her and she will not answer, that they will seek her diligently and not find her (Hebrew yeshacharuneni velo yimtsa'uneni). The Greek Old Testament uses the same pair of verbs as John 7:34, seek and find. Jesus speaks as rejected Wisdom speaks: a time of opportunity is closing. Hosea 5:6 and Amos 8:12 use the same pattern of seeking and not finding the LORD."
+        }
+      ],
+      "refs": ["John 8:21", "John 13:33", "John 17:24", "Hosea 5:6"]
+    },
+    {
+      "v": "35-36",
+      "context": "The hearers misunderstand. Is he going to the Jews scattered among the Greeks, to teach the Greeks? They mean it as ridicule, but John's readers know that the message did go to the Greeks.",
+      "grammar": "Pou houtos mellei poreuesthai, ‘where is this man about to go?’ The second question, mē eis tēn diasporan tōn Hellēnōn mellei poreuesthai kai didaskein tous Hellēnas, begins with mē and expects no: ‘he is not going to the dispersion among the Greeks to teach the Greeks, is he?’ Hē diaspora tōn Hellēnōn means the Jewish communities scattered among Greek-speaking Gentiles; Hellēnes here means Gentiles, not Greek-speaking Jews, whom Acts calls Hellēnistai (Acts 6:1). Verse 36 repeats Jesus' words exactly, a sign that they cannot let the saying go.",
+      "words": ["G2212", "G2147", "G1290", "G1672", "G1321", "G3056"],
+      "theology": [
+        {
+          "id": "mission",
+          "note": "The sarcasm is an unconscious prophecy, like Caiaphas's word in 11:50-52. Jesus will be sought by Greeks (12:20-23), and after his going to the Father his message will reach the dispersion and the nations. John lets the scoffers name the church's mission before it begins."
+        }
+      ],
+      "refs": ["John 11:51-52", "John 12:20-23", "John 10:16", "Acts 11:20", "James 1:1"]
+    },
+    {
+      "v": "37",
+      "context": "On the last and greatest day of the feast Jesus stands and cries out: if anyone is thirsty, let him come to him and drink. At a festival that prayed for rain and poured water at the altar each morning, he offers himself as the source of water.",
+      "grammar": "Heistēkei ho Iēsous kai ekraxen, ‘Jesus stood and cried out’: teachers normally sat (6:3, 8:2), so standing marks a public proclamation. The pluperfect heistēkei describes the stance he had taken. Ean tis dipsa, erchesthō pros me kai pinetō, ‘if anyone thirsts, let him come to me and drink’, uses two third-person present imperatives, an open invitation to anyone who meets the condition. The invitation echoes Isaiah 55:1, where everyone who thirsts is called to come to the waters.",
+      "words": ["G2078", "G2250", "G3173", "G2476", "G2896", "G1372", "G2064", "G4095"],
+      "history": "Which day is meant is disputed. The seven days of Tabernacles were followed by an eighth day of solemn assembly (Leviticus 23:36, Numbers 29:35), and the Mishnah itself counts the Hallel and the rejoicing for eight days (m. Sukkah 4:1). But it says the water libation was performed on seven days (m. Sukkah 4:1), and it describes a priest filling a golden flask at Siloam and pouring it at the altar (m. Sukkah 4:9). It also tells of a priest who once poured the water over his feet instead of on the altar, and the people pelted him with their citrons. If Jesus spoke on the seventh day, he spoke at the climax of the water rite; if on the eighth, he spoke on the day it was no longer performed, offering what the rite had prayed for.",
+      "refs": ["Isaiah 55:1", "Isaiah 12:3", "John 4:13-14", "Revelation 22:17", "Leviticus 23:36"]
+    },
+    {
+      "v": "38",
+      "context": "The invitation continues with a Scripture that no Old Testament verse matches exactly: rivers of living water will flow from within. Whether the rivers flow from the believer or from Christ depends on punctuation that the earliest manuscripts do not supply.",
+      "grammar": "Ho pisteuōn eis eme, ‘the one who believes in me’, can end the previous sentence (‘let him come to me, and let him drink who believes in me’) or begin a new one as a hanging nominative (‘whoever believes in me ... from within him’), a construction John uses often. Kathōs eipen hē graphē, ‘as the Scripture said’, introduces a composite reference rather than a quotation. Potamoi ek tēs koilias autou rheusousin hudatos zōntos, ‘rivers of living water will flow from his belly’: koilia is the belly or womb, the inner parts, and hudōr zōn, ‘living water’, means flowing spring water as opposed to standing water, the phrase used in 4:10.",
+      "words": ["G4100", "G1124", "G4215", "G2836", "G4482", "G5204", "G2198"],
+      "text": "The punctuation question divides both ancient and modern readers. Origen and most Greek fathers put a stop after ‘drink’, making the believer the source; D. A. Carson (The Gospel According to John, 1991) defends this reading and notes that the earliest witnesses that mark punctuation here support it. Justin, Irenaeus, and other Western writers, followed in modern times by Raymond Brown (The Gospel According to John I-XII, 1966), join ‘whoever believes in me’ to ‘drink’, making Christ the source, which fits the water from his side (19:34). Brown granted that the traditional division matches John's habit of opening a sentence with ‘the one who believes’. The BSB prints the traditional punctuation; many versions note the other.",
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "On either punctuation the water is the Spirit (7:39), and its source is Jesus. If the believer is the channel, the Spirit received from Christ overflows through the believer to others; if Christ is the fountain, the verse fixes the eye on him. The two readings differ in emphasis, not in substance."
+        },
+        {
+          "id": "temple",
+          "note": "The prophets pictured living water flowing from the temple (Ezekiel 47:1-12) and from Jerusalem (Zechariah 14:8), and those passages were tied to this feast. Jesus claims that the river of the temple now flows from him, the true temple (2:19-21)."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Zechariah 14:8",
+          "note": "On the day of the LORD, living waters (Hebrew mayim chayyim; Greek Old Testament hudōr zōn) will flow out from Jerusalem, half to the eastern sea and half to the western, in summer and winter. The chapter goes on to describe the nations coming up yearly to keep the Feast of Tabernacles (14:16-19), which made it a reading associated with the feast. John's ‘living water’ matches Zechariah's phrase."
+        },
+        {
+          "ref": "Ezekiel 47:1-12",
+          "note": "Ezekiel sees water flowing from under the threshold of the temple, deepening into a river that brings life wherever it goes and heals the Dead Sea. The Tosefta ties these temple waters to the water rite of the feast (t. Sukkah 3:3). If Christ is the new temple, the river flows from him."
+        },
+        {
+          "ref": "Psalm 78:15-16",
+          "note": "God split the rocks in the wilderness and brought streams out of the rock, making waters flow down like rivers (Greek Old Testament hōs potamous, ‘like rivers’). The wilderness setting of Tabernacles makes this memory apt, and Paul later says the rock was Christ (1 Corinthians 10:4). Isaiah 58:11, where the one who serves God becomes a spring whose waters do not fail, supports the believer reading."
+        }
+      ],
+      "refs": ["John 4:10-14", "John 19:34", "Isaiah 58:11", "Revelation 22:1", "1 Corinthians 10:4"]
+    },
+    {
+      "v": "39",
+      "context": "John explains the saying: Jesus spoke of the Spirit, whom believers were later to receive. The Spirit had not yet been given, because Jesus had not yet been glorified. The aside tells readers to hear the living water as the gift of Pentecost and Easter.",
+      "grammar": "Touto de eipen peri tou pneumatos, ‘now this he said about the Spirit’, is one of John's explanatory asides (compare 2:21, 12:33). Hou emellon lambanein hoi pisteusantes eis auton, ‘whom those who believed in him were going to receive’, uses emellon, ‘were about to’, looking ahead from the story's time. Oupō gar ēn pneuma, literally ‘for Spirit was not yet’, cannot deny the Spirit's existence, since the Spirit descended on Jesus at his baptism (1:32-33); it means the Spirit was not yet present in the promised way. Hoti Iēsous oudepō edoxasthē, ‘because Jesus was not yet glorified’, uses doxazō for Jesus' death, resurrection, and exaltation together (12:16, 12:23, 13:31).",
+      "words": ["G4151G", "G3195", "G2983", "G4100", "G3768", "G1392"],
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "The Spirit's coming depends on Jesus' glorification. The gift is not a separate blessing apart from the cross but its fruit, which is why Jesus breathes the Spirit on the disciples only after his resurrection (20:22) and why Peter at Pentecost ties the outpouring to the exalted Christ (Acts 2:33)."
+        },
+        {
+          "id": "glory",
+          "note": "In John, being glorified is not escape from the cross but the cross itself as the place where God's glory is shown, completed in resurrection and return to the Father. The Spirit flows from that glory."
+        }
+      ],
+      "text": "Because ‘the Spirit was not yet’ sounded strange, copyists added words. Some manuscripts read ‘the Holy Spirit was not yet’; others, with some Latin and Syriac witnesses, add ‘given’; some combine both, and Codex Bezae has ‘the Holy Spirit was not yet upon them’. The short reading is printed by the critical editions; the BSB, like most versions, supplies “given” in translation.",
+      "refs": ["John 1:32-33", "John 16:7", "John 20:22", "Acts 2:33", "Joel 2:28"]
+    },
+    {
+      "v": "40-41",
+      "context": "The crowd divides again over what Jesus' words mean. Some say he is the Prophet, others the Christ, and others object that the Christ cannot come from Galilee.",
+      "grammar": "Houtos estin alēthōs ho prophētēs, ‘this is truly the Prophet’, repeats the crowd's words after the feeding (6:14). Alloi elegon, houtos estin ho Christos, ‘others were saying, this is the Christ’, shows that some distinguished the two figures, as the questions put to John the Baptist also did (1:20-21). The objection mē gar ek tēs Galilaias ho Christos erchetai, with mē, expects the answer no: ‘surely the Christ does not come from Galilee?’ The gar gives the reason for doubting the second opinion.",
+      "words": ["G3793", "G0191", "G3056", "G0230", "G4396", "G5547", "G1056G"],
+      "history": "The Dead Sea Scrolls show that some Jews expected more than one figure at the end: the Community Rule speaks of a coming prophet and the messiahs of Aaron and Israel (1QS 9:11). The crowd's division between the Prophet and the Christ reflects that variety. Galilee, on the other hand, carried no messianic expectation in the texts that survive.",
+      "theology": [
+        {
+          "id": "offices",
+          "note": "The titles in the crowd's debate, Prophet and Christ, name two of the offices that Christians later saw united in Jesus. The crowd treats them as alternatives; the Gospel shows him to be both, and more."
+        }
+      ],
+      "refs": ["John 1:20-21", "John 6:14", "Deuteronomy 18:15", "John 1:46"]
+    },
+    {
+      "v": "42",
+      "context": "The objectors cite Scripture: the Christ comes from David's line and from Bethlehem, David's village. John reports the objection without correcting it, and his readers, who knew the tradition of Jesus' birth in Bethlehem, hear irony.",
+      "grammar": "Ouch hē graphē eipen, ‘has not the Scripture said?’, expects yes. Ek tou spermatos Dauid, ‘from the seed of David’, echoes 2 Samuel 7:12, and apo Bēthleem tēs kōmēs hopou ēn Dauid, ‘from Bethlehem, the village where David was’, recalls David's home (1 Samuel 16:1, 17:12). Erchetai ho Christos, ‘the Christ comes’, uses the present for a fixed expectation.",
+      "words": ["G1124", "G4690G", "G1138", "G0965", "G2968", "G5547"],
+      "ot": [
+        {
+          "ref": "Micah 5:2",
+          "note": "The prophet addresses Bethlehem Ephrathah, too small to count among the clans of Judah, and says that from it will come one who will rule Israel, whose origins are from of old (Hebrew 5:1, umotsa'otav miqqedem). The Greek Old Testament has ‘Bethlehem, house of Ephrathah’. Matthew quotes the verse in the story of the magi (Matthew 2:6). The objectors apply it correctly and draw the wrong conclusion, and Micah's own line about origins ‘from of old’ answers the question of where Jesus is from better than they know."
+        },
+        {
+          "ref": "2 Samuel 7:12-16",
+          "note": "God promises David, ‘I will raise up your descendant after you’ (Hebrew zar'akha, ‘your seed’; Greek Old Testament to sperma sou), and establish his kingdom forever. By the first century the promise was read of the Messiah as son of David; the Psalms of Solomon pray for God to raise up the son of David as king (Psalms of Solomon 17:21). John's ‘from the seed of David’ draws on this line of promise."
+        }
+      ],
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "The objection holds the true marks of the Messiah, David's line and Bethlehem, and John lets the reader see that Jesus meets them. The deeper irony is that his origin is not finally Bethlehem either, but the Father (7:28-29)."
+        }
+      ],
+      "refs": ["Matthew 2:5-6", "Luke 2:4-7", "Psalm 89:3-4", "Romans 1:3", "John 7:27"]
+    },
+    {
+      "v": "43-44",
+      "context": "The crowd splits because of Jesus. Some want to seize him, but no one lays hands on him.",
+      "grammar": "Schisma oun egeneto en tō ochlō di' auton, ‘so a division came about in the crowd because of him’: schisma, a tear, is the word for the split Jesus causes (9:16, 10:19). Di' auton with the accusative means ‘on his account’. Verse 44 repeats the language of verse 30 without the explanation, ēthelon piasai auton, ‘they wanted to seize him’, all' oudeis epebalen ep' auton tas cheiras, ‘but no one laid hands on him’; the reader already knows why.",
+      "words": ["G4978", "G3793", "G1223", "G2309", "G4084", "G1911", "G5495"],
+      "refs": ["John 9:16", "John 10:19", "John 7:30", "Luke 12:51"]
+    },
+    {
+      "v": "45-46",
+      "context": "The officers return empty-handed, and the chief priests and Pharisees demand to know why. The officers' answer is the chapter's most striking testimony: no one ever spoke like this man.",
+      "grammar": "Dia ti ouk ēgagete auton, ‘why did you not bring him?’, is the rulers' first question. Oudepote elalēsen houtōs anthrōpos, ‘never did a man speak like this’, puts anthrōpos last. The officers mean ‘no human being’, and John's readers know that this speaker is more than a man. The adverb houtōs, ‘thus’, points to the manner of his speech, not only its content.",
+      "words": ["G5257", "G0749", "G5330", "G0071", "G3763", "G2980", "G3779", "G0444"],
+      "text": "Several manuscripts, including the first hand of Papyrus 66 and Codex Sinaiticus, expand the officers' words to ‘as this man speaks’; the shorter text is found in Papyrus 75, Codex Vaticanus, and others, and is printed by most editions.",
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "The men sent to silence Jesus are silenced by his words. John presents Jesus' speech as itself a revelation that carries its own authority, confirming what Jesus said in 7:16-17 and what the prologue meant by calling him the Word."
+        }
+      ],
+      "refs": ["Matthew 7:28-29", "Mark 1:22", "John 6:68", "John 18:6"]
+    },
+    {
+      "v": "47-49",
+      "context": "The Pharisees rebuke the officers: have they too been deceived? None of the rulers or Pharisees has believed in him; only the crowd, ignorant of the law, is taken in, and it is under a curse.",
+      "grammar": "Mē kai humeis peplanēsthe, ‘you have not been deceived too, have you?’, uses mē expecting no and a perfect passive of planaō, the word of the charge in 7:12: to believe Jesus is to have been led astray. Mē tis ek tōn archontōn episteusen eis auton ē ek tōn Pharisaiōn, ‘none of the rulers or Pharisees has believed in him, have they?’, again expects no, and Nicodemus answers it in the next verse. Ho ochlos houtos ho mē ginōskōn ton nomon, ‘this crowd that does not know the law’, uses mē with the participle for a class, and eparatoi eisin, ‘they are accursed’, uses a word found only here in the New Testament.",
+      "words": ["G4105", "G0758", "G4100", "G5330", "G3793", "G1097", "G3551", "G6035"],
+      "history": "The rabbis later called the unlearned common people am ha-aretz, ‘people of the land’, and Hillel is remembered as saying that such a person cannot be truly pious (m. Avot 2:5). The Pharisees' curse draws on the law's own curse on anyone who does not keep its words (Deuteronomy 27:26, which Paul cites in Galatians 3:10). Their contempt is the other side of their confidence: learning in the law has become a wall between them and the crowd.",
+      "theology": [
+        {
+          "id": "law",
+          "note": "The rulers use knowledge of the law to exclude and to curse, but they are about to be shown breaking it (7:51). The chapter turns the charge around: it is not the crowd's ignorance but the leaders' misuse of the law that stands under judgment."
+        }
+      ],
+      "text": "The critical editions read eparatoi, ‘accursed’; the Textus Receptus has epikataratoi, a compound of the same meaning, which is the word the Greek Old Testament uses in Deuteronomy 27:26.",
+      "refs": ["Deuteronomy 27:26", "Galatians 3:10", "John 12:42", "1 Corinthians 1:26-27"]
+    },
+    {
+      "v": "50-51",
+      "context": "Nicodemus, who came to Jesus by night and was one of the rulers, answers his colleagues with the law: does our law condemn a man without first hearing him and learning what he does? One of the rulers has, it seems, begun to believe, or at least refuses to condemn.",
+      "grammar": "Ho elthōn pros auton proteron, heis ōn ex autōn, ‘the one who had come to him earlier, being one of them’, reminds the reader of 3:1-2 and answers 7:48 directly. Mē ho nomos hēmōn krinei ton anthrōpon, ‘our law does not judge a man, does it?’, expects no and personifies the law as a judge. Ean mē akousē prōton par' autou kai gnō ti poiei, ‘unless it first hears from him and knows what he does’, uses two aorist subjunctives: hearing the accused and establishing the facts.",
+      "words": ["G3530", "G4387", "G1520", "G3551", "G2919", "G0191", "G4413G", "G1097"],
+      "history": "The law required judges to hear both sides and investigate carefully (Deuteronomy 1:16-17, 17:4, 19:18). Josephus reports that when the young Herod killed a band of Galilean rebels around 47 BC, leaders in Jerusalem complained that he had broken the law, which forbids putting a man to death, even a wicked one, unless the council has first condemned him (Antiquities 14.167). Nicodemus appeals to a principle his colleagues knew well.",
+      "theology": [
+        {
+          "id": "law",
+          "note": "Nicodemus's question shows that the law, rightly used, protects the accused. The rulers who pride themselves on knowing the law are rebuked from within it by one of their own."
+        }
+      ],
+      "refs": ["John 3:1-2", "John 19:39", "Deuteronomy 1:16-17", "Deuteronomy 19:18", "Exodus 23:1"]
+    },
+    {
+      "v": "52",
+      "context": "The council answers Nicodemus with a sneer and a challenge: is he a Galilean too? Let him search and see that no prophet arises from Galilee. The rulers who demand that the Scriptures be searched have not searched them well.",
+      "grammar": "Mē kai su ek tēs Galilaias ei, ‘you are not from Galilee too, are you?’, uses mē to mock. Eraunēson kai ide, ‘search and see’, uses the same verb as 5:39, where Jesus told the leaders they search the Scriptures but refuse to come to him. Ek tēs Galilaias prophētēs ouk egeiretai, ‘a prophet does not arise from Galilee’, uses a present passive, a general claim. The Textus Receptus reads the perfect egēgertai, ‘has not arisen’, a historical claim.",
+      "words": ["G1056G", "G2045", "G1492H", "G4396", "G1453"],
+      "history": "The claim was not accurate: 2 Kings 14:25 names the prophet Jonah son of Amittai from Gath-hepher, a town in Lower Galilee a few miles from Nazareth. Isaiah had also promised that Galilee of the nations, humbled in the past, would see a great light (Isaiah 9:1-2), a promise Matthew applies to Jesus (Matthew 4:13-16).",
+      "text": "The first hand of Papyrus 66 reads ho prophētēs, ‘the Prophet’, with the article. With that reading the leaders deny not that any prophet has come from Galilee but that the Prophet like Moses could, which removes the factual difficulty. Most editors regard the reading without the article as original, and the article as an early correction or an attempt to ease the problem.",
+      "refs": ["John 5:39", "2 Kings 14:25", "Isaiah 9:1-2", "Matthew 4:13-16", "John 1:46"]
+    },
+    {
+      "v": "53",
+      "context": "‘Then each went to his own home.’ The verse is the opening of the story of the woman caught in adultery (7:53-8:11), which is not part of John in the earliest manuscripts. Without it, the council's sneer in 7:52 is followed by Jesus' next words in the temple, ‘I am the light of the world’ (8:12).",
+      "text": "The passage is absent from Papyrus 66 (about AD 200) and Papyrus 75 (early third century), from Codex Sinaiticus and Codex Vaticanus (fourth century), and from Codices Alexandrinus and Ephraemi, whose missing leaves here are too few to have held it. Codex Washingtonianus, Codex Regius (L), and others also lack it; L and Codex Sangallensis (Δ) leave blank space or show the scribe knew it from elsewhere. The earliest Greek manuscript that contains it is Codex Bezae, around AD 400. Where it does appear it wanders: after 7:36 in one manuscript, after 7:44 in some Georgian copies, after 21:25 in family 1, and after Luke 21:38 in family 13. No Greek writer before the twelfth century comments on it as part of John, though Papias apparently knew a story of a woman accused before Jesus (Eusebius, Church History 3.39.17), Jerome kept it in the Vulgate, and Augustine suggested some had removed it for fear it would excuse adultery. Most scholars regard it as an early account of Jesus that was not part of John's original text; the chapter 8 note gives the full history.",
+      "refs": ["John 8:1", "John 8:12", "Luke 21:37-38"]
+    }
+  ]
+}
