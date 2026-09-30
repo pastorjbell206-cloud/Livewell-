@@ -46,17 +46,17 @@
     {
       "kind": "book",
       "heading": "Then work it through",
-      "note": "Come to the Table recovers Jesus's method for people with no training: disciple-making in ordinary homes. By the last chapter you will have set your first table. Free to read.",
+      "note": "Disciple-making starts at your own table, in an ordinary home, with people who have no training.",
       "items": [
         {
           "label": "Build a devotion path for your home",
-          "href": "/tools/family-devotion-builder",
+          "href": "/tools/family-devotions",
           "blurb": "Disciple making starts at your own table. Build a plan your household can actually keep."
         },
         {
           "label": "Find James's books in the bookstore",
           "href": "/books",
-          "blurb": "Print and ebook editions of the full library."
+          "blurb": "The books James has written."
         }
       ]
     }
