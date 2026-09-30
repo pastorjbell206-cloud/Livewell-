@@ -1,0 +1,177 @@
+{
+  "id": "chapters-and-verses",
+  "title": "Chapters, Verses, and References",
+  "summary": "Who added chapter and verse numbers and when, how to read a Bible reference, where the numbering helps and where it misleads, and where Hebrew, Greek, Latin, and English Bibles number chapters and verses differently.",
+  "sections": [
+    {
+      "h": "The books were written without numbers",
+      "body": "None of the biblical writers divided their books into chapters and verses. The Hebrew books were written on scrolls in columns of consonants; Greek manuscripts of the New Testament were written in capitals with no spaces between words, little punctuation, and no numbered divisions. The chapter and verse numbers in every modern Bible were added long afterward, the chapters in the thirteenth century and the verses, in the form we use, in the sixteenth. They are among the most useful inventions in the history of the book, and they are also the source of some of the most common misreadings of the Bible.\n\nThat does not mean the ancient texts had no divisions at all. Hebrew scribes marked the end of each verse long before the verses were numbered. Jewish tradition treated the verse (pasuq) as a fixed unit: the Mishnah (Megillah 4:4) directs that in the synagogue the reader of the Torah should give the Aramaic translator one verse at a time, and from the Prophets up to three. The Masoretes of the early Middle Ages marked the end of each verse with a sign called sof pasuq and divided the text into paragraphs of two kinds, ‘open’ (petuchah), where the rest of the line was left blank, and ‘closed’ (setumah), where a gap was left within the line. For public reading, the Torah was divided into weekly portions: the Babylonian practice, which became standard, reads the whole Torah in fifty-four portions over one year, while the older practice in the land of Israel spread it over about three years.\n\nGreek manuscripts had their own systems. Many divide the Gospels into chapters called kephalaia, each with a title summarizing its contents. In the fourth century Eusebius of Caesarea divided the Gospels into numbered sections and drew up ten tables (the Eusebian canons) showing which sections are parallel in which Gospels, a tool copied in thousands of manuscripts, as he explains in his letter to a man named Carpianus. Codex Vaticanus has its own section numbers. None of these systems is the one we use, but they show that readers have always needed ways to find their place.",
+      "refs": ["Nehemiah 8:8", "Luke 4:16-20", "Acts 13:15"]
+    },
+    {
+      "h": "Chapters: Stephen Langton and the Paris Bible",
+      "body": "Several systems of chapters were used in medieval Latin Bibles, which made it hard to cite a passage in a way another reader could find. The system that prevailed is credited to Stephen Langton, an English theologian who taught at the University of Paris and later became Archbishop of Canterbury (from 1207) and one of the churchmen behind Magna Carta in 1215. Langton worked out his chapters around the first decade of the thirteenth century, while lecturing on the Bible in Paris. They were adopted in the one-volume Latin Bibles produced in great numbers for students and friars in Paris in the following decades, called Paris Bibles, and spread across Europe with them.\n\nLangton's chapters were designed for teaching and reference, not as an analysis of each book's structure, and in some places they fall awkwardly. Genesis 1 ends before the seventh day of creation, which belongs to Genesis 2:1-3. The fourth Servant Song of Isaiah begins at Isaiah 52:13, three verses before chapter 53. In the Gospels, Mark 9:1 and Matthew 16:28 are sayings that belong with what follows, the transfiguration. Paul's instruction about mutual submission in Ephesians 5:21 introduces the household code that runs into chapter 6, and the list of witnesses in Hebrews 11 leads directly into the “great cloud of witnesses” (Hebrews 12:1). A reader who treats a chapter break as the end of a thought will sometimes cut an argument in half.\n\nFor finding passages within chapters, the Dominican friars of Saint-Jacques in Paris, under Hugh of Saint-Cher in the 1230s, produced a concordance, a list of every occurrence of every important word, in which each chapter was divided into lettered sections, a to g. Such concordances helped fix Langton's chapters as the standard. Jewish scholars adopted the Christian chapter numbers in the fourteenth and fifteenth centuries, partly to answer Christian disputants who cited the Hebrew Bible by chapter; chapter numbers appear in Hebrew manuscripts around 1330, and in printed Hebrew Bibles from Daniel Bomberg's Rabbinic Bibles in Venice in the early sixteenth century.",
+      "refs": ["Genesis 2:1-3", "Isaiah 52:13-15", "Mark 9:1-2", "Ephesians 5:21-22", "Hebrews 12:1"]
+    },
+    {
+      "h": "Verses: from Pagnini to Stephanus",
+      "body": "Numbered verses came with printing. The Italian Dominican Santes Pagnini's Latin translation of the whole Bible from Hebrew and Greek (1528) was apparently the first to number verses within chapters; his Old Testament numbers followed the Hebrew verse divisions, but his New Testament verses were longer than ours and did not last. The system we use in the New Testament comes from Robert Estienne, the Paris printer known by his Latin name Stephanus, who had become a Protestant and moved to Geneva. In his 1551 edition of the Greek New Testament, printed with Latin versions alongside, he divided each chapter into numbered verses. By 1555 he had published a Latin Bible with verse numbers throughout, taking the Old Testament verses from the Hebrew divisions already marked by the Masoretes and numbered by Pagnini. His son Henri later wrote that his father had divided the New Testament while travelling between Paris and Lyon; whether that means in the saddle, as is often said, or at inns along the way, is not clear, and the story is sometimes used to explain the places where the verses break oddly.\n\nThe new system spread quickly because it made precise citation possible. The Geneva New Testament of 1557 was the first English New Testament printed with verse numbers, and the complete Geneva Bible of 1560 the first English Bible; the King James Version of 1611 followed suit. Jewish printers adopted verse numbers later: the Hebrew Bible printed in Amsterdam by Joseph Athias in 1661, edited by Johannes Leusden, was the first Hebrew edition with numbered verses usable by Jews.\n\nVerse numbers are a reference system, and they have the strengths and weaknesses of one. They let a reader in Lagos and a reader in Seoul find the same sentence in seconds. But they break text into units shorter than a thought: Ephesians 1:3-14 is one long sentence in Greek, divided into twelve verses; Luke 1:1-4 is a single sentence in four. Printing each verse as its own paragraph, as many Bibles did from the Geneva Bible until the twentieth century, encouraged readers to treat each verse as a freestanding saying, and so to quote verses out of context. Most modern Bibles, including the one in this Study Bible, print the text in paragraphs with small verse numbers, which is closer to how the books were written.",
+      "refs": ["Ephesians 1:3-14", "Luke 1:1-4"]
+    },
+    {
+      "h": "How to read a reference",
+      "body": "A Bible reference names the book, then the chapter, then the verse, with a colon between chapter and verse in American usage (John 3:16) and often a full stop in British usage (John 3.16). A hyphen or dash joins a range within one chapter (Romans 8:28-39) or across chapters (Genesis 1:1-2:3, which runs from the first verse of chapter 1 to the third verse of chapter 2). A reference without a verse means the whole chapter (Psalm 23). Commas separate verses within the same chapter (Matthew 5:3, 10), semicolons separate references to different chapters or books (Isaiah 53:5; 1 Peter 2:24). Books with a number, such as 1 Samuel or 2 Corinthians, are the first and second books by that name, not the first and second chapters.\n\nFive books are so short that they have only one chapter: Obadiah, Philemon, 2 John, 3 John, and Jude. They are often cited by verse alone (Jude 3, Philemon 10) and sometimes with a chapter 1 (Jude 1:3), which means the same thing; this Study Bible uses the second form in its cross-references. The book of Psalms is usually cited in the singular for one psalm (Psalm 23) and in the plural for the book (the Psalms), and the Song of Solomon is also called the Song of Songs and, in older Catholic Bibles, the Canticle of Canticles.\n\nStudy Bibles, commentaries, and footnotes use a few further conventions. The letters a and b (sometimes c) mark the first and second half of a verse: Daniel 2:4b means the second part of verse 4, where the Aramaic section begins. The abbreviation ff. (‘and following’) points to the verses after the one cited, and cf. (Latin confer, ‘compare’) asks the reader to compare another passage. Two parallel lines (∥) mark parallel passages, as when the same saying appears in more than one Gospel. Scholarly works abbreviate book names in standard ways (Gen, Exod, Deut, 1 Sam, Ps or Pss, Isa, Matt, Rom, 1 Cor, Rev), and they cite non-biblical sources in their own systems: Josephus's Antiquities by book and section (Antiquities 18.116), the Mishnah by tractate, chapter, and paragraph (m. Megillah 4:4), and the Dead Sea Scrolls by cave, site, and document (1QIsa-a is the first Isaiah scroll from Qumran Cave 1; 4QSam-a a Samuel scroll from Cave 4).",
+      "table": {
+        "caption": "Reading a reference",
+        "columns": ["Form", "Example", "Meaning"],
+        "rows": [
+          ["Book chapter:verse", "John 3:16", "Gospel of John, chapter 3, verse 16"],
+          ["Range in one chapter", "Romans 8:28-39", "Verses 28 through 39 of chapter 8"],
+          ["Range across chapters", "Genesis 1:1-2:3", "From 1:1 to 2:3"],
+          ["Whole chapter", "Psalm 23", "All of Psalm 23"],
+          ["Several verses", "Matthew 5:3, 10", "Verses 3 and 10 only"],
+          ["Several passages", "Isaiah 53:5; 1 Peter 2:24", "Two separate passages"],
+          ["Part of a verse", "Daniel 2:4b", "The second half of verse 4"],
+          ["And following", "Luke 15:11ff.", "Verse 11 and the verses after it"],
+          ["Compare", "cf. Mark 10:45", "Compare this passage"],
+          ["One-chapter book", "Jude 3 or Jude 1:3", "Verse 3 of Jude"]
+        ]
+      },
+      "refs": ["John 3:16", "Romans 8:28-39", "Genesis 1:1-2:3", "Daniel 2:4", "Jude 1:3"]
+    },
+    {
+      "h": "Where Hebrew and English numbering differ",
+      "body": "When the Hebrew Bible and the English Bible both use chapter and verse numbers, why do they sometimes disagree? Because the English numbering descends from the Latin Vulgate's chapters, fixed by Langton, while the Hebrew Bible took over those chapters two centuries later and adjusted some of the boundaries to fit Jewish reading tradition and the Masoretic paragraphs. The result is that in a few dozen places a chapter begins a verse or more earlier or later in Hebrew than in English, and every verse after the boundary is numbered differently until the chapter ends. The words are the same; only the numbers differ.\n\nThis matters whenever a reader moves between an English Bible and a Hebrew Bible, a Jewish translation such as the Jewish Publication Society's Tanakh, some Catholic translations such as the New American Bible (which follows the Hebrew numbering in many of these places), or a commentary that cites the Hebrew. Examples a reader is likely to meet: Malachi has four chapters in English but three in Hebrew, so the promise of Elijah's coming, English Malachi 4:5, is Hebrew Malachi 3:23. Joel has three chapters in English and four in Hebrew, so the promise that God will pour out his Spirit on all flesh, quoted by Peter at Pentecost (Acts 2:17-21), is English Joel 2:28-32 and Hebrew Joel 3:1-5. Isaiah's promise of a light for Galilee of the nations, English Isaiah 9:1, is the last verse of chapter 8 in Hebrew (8:23), so the famous ‘For unto us a child is born’ passage is English 9:6 and Hebrew 9:5. Jonah is swallowed by the fish in English 1:17 and Hebrew 2:1. Genesis 31:55 in English, Laban's farewell, is Genesis 32:1 in Hebrew, and the whole of English Genesis 32, including Jacob's wrestling at the Jabbok, is one verse higher in Hebrew.\n\nThe table lists the main differences outside the Psalms, verified against a standard tagged Hebrew text with dual numbering. In a handful of further places the two traditions divide a single verse differently, so that the numbering shifts by only part of a verse for a line or two: 1 Kings 18:33-34, 20:2-3, and 22:21-22, and the boundary between Numbers 25 and 26, where English 26:1a is Hebrew 25:19. Nehemiah 7:68 in English is absent from most Hebrew manuscripts, so English 7:69-73 are Hebrew 7:68-72.",
+      "table": {
+        "caption": "English and Hebrew chapter and verse numbers (outside the Psalms)",
+        "columns": ["English", "Hebrew", "Contents"],
+        "rows": [
+          ["Genesis 31:55", "Genesis 32:1", "Laban's farewell"],
+          ["Genesis 32:1-32", "Genesis 32:2-33", "Jacob prepares to meet Esau; wrestles at the Jabbok"],
+          ["Exodus 8:1-4", "Exodus 7:26-29", "Second plague announced (frogs)"],
+          ["Exodus 8:5-32", "Exodus 8:1-28", "Frogs, gnats, flies"],
+          ["Exodus 22:1", "Exodus 21:37", "Restitution for stolen animals"],
+          ["Exodus 22:2-31", "Exodus 22:1-30", "Laws on property and conduct"],
+          ["Leviticus 6:1-7", "Leviticus 5:20-26", "Guilt offering for wrongs against a neighbor"],
+          ["Leviticus 6:8-30", "Leviticus 6:1-23", "Instructions for the priests"],
+          ["Numbers 16:36-50", "Numbers 17:1-15", "Censers hammered into plating; plague stopped"],
+          ["Numbers 17:1-13", "Numbers 17:16-28", "Aaron's staff buds"],
+          ["Numbers 29:40", "Numbers 30:1", "Close of the festival offerings"],
+          ["Numbers 30:1-16", "Numbers 30:2-17", "Laws on vows"],
+          ["Deuteronomy 12:32", "Deuteronomy 13:1", "Do not add to or take away from the commands"],
+          ["Deuteronomy 13:1-18", "Deuteronomy 13:2-19", "False prophets and enticers"],
+          ["Deuteronomy 22:30", "Deuteronomy 23:1", "Forbidden marriage"],
+          ["Deuteronomy 23:1-25", "Deuteronomy 23:2-26", "Assembly of the LORD and other laws"],
+          ["Deuteronomy 29:1", "Deuteronomy 28:69", "Heading of the covenant in Moab"],
+          ["Deuteronomy 29:2-29", "Deuteronomy 29:1-28", "Covenant renewal in Moab"],
+          ["1 Samuel 20:42 (second half)", "1 Samuel 21:1", "David and Jonathan part"],
+          ["1 Samuel 21:1-15", "1 Samuel 21:2-16", "David at Nob and Gath"],
+          ["1 Samuel 23:29", "1 Samuel 24:1", "David at En-gedi"],
+          ["1 Samuel 24:1-22", "1 Samuel 24:2-23", "David spares Saul in the cave"],
+          ["2 Samuel 18:33", "2 Samuel 19:1", "David's lament for Absalom"],
+          ["2 Samuel 19:1-43", "2 Samuel 19:2-44", "David's return to Jerusalem"],
+          ["1 Kings 4:21-34", "1 Kings 5:1-14", "Solomon's rule and wisdom"],
+          ["1 Kings 5:1-18", "1 Kings 5:15-32", "Preparations for the temple"],
+          ["1 Kings 22:43b-53", "1 Kings 22:44-54", "End of Jehoshaphat; Ahaziah of Israel"],
+          ["2 Kings 11:21", "2 Kings 12:1", "Joash becomes king at seven"],
+          ["2 Kings 12:1-21", "2 Kings 12:2-22", "Joash repairs the temple"],
+          ["1 Chronicles 6:1-15", "1 Chronicles 5:27-41", "Levi's descendants; the high priests"],
+          ["1 Chronicles 6:16-81", "1 Chronicles 6:1-66", "Levites, singers, and Levitical towns"],
+          ["1 Chronicles 12:4b-40", "1 Chronicles 12:5-41", "David's supporters"],
+          ["2 Chronicles 2:1", "2 Chronicles 1:18", "Solomon decides to build"],
+          ["2 Chronicles 2:2-18", "2 Chronicles 2:1-17", "Agreement with Hiram of Tyre"],
+          ["2 Chronicles 14:1", "2 Chronicles 13:23", "Death of Abijah"],
+          ["2 Chronicles 14:2-15", "2 Chronicles 14:1-14", "Asa's reforms and victory"],
+          ["Nehemiah 4:1-6", "Nehemiah 3:33-38", "Sanballat's mockery"],
+          ["Nehemiah 4:7-23", "Nehemiah 4:1-17", "Building with sword in hand"],
+          ["Nehemiah 9:38", "Nehemiah 10:1", "The sealed agreement"],
+          ["Nehemiah 10:1-39", "Nehemiah 10:2-40", "Signatories and pledges"],
+          ["Job 41:1-8", "Job 40:25-32", "Can you draw out Leviathan?"],
+          ["Job 41:9-34", "Job 41:1-26", "Leviathan described"],
+          ["Ecclesiastes 5:1", "Ecclesiastes 4:17", "Guard your steps in the house of God"],
+          ["Ecclesiastes 5:2-20", "Ecclesiastes 5:1-19", "Vows, wealth, and enjoyment"],
+          ["Song of Solomon 6:13", "Song of Solomon 7:1", "Come back, O Shulammite"],
+          ["Song of Solomon 7:1-13", "Song of Solomon 7:2-14", "Praise of the beloved"],
+          ["Isaiah 9:1", "Isaiah 8:23", "Galilee of the nations"],
+          ["Isaiah 9:2-21", "Isaiah 9:1-20", "A great light; a child is born"],
+          ["Isaiah 64:1", "Isaiah 63:19 (second half)", "Oh, that You would rend the heavens"],
+          ["Isaiah 64:2-12", "Isaiah 64:1-11", "Prayer for mercy"],
+          ["Jeremiah 9:1", "Jeremiah 8:23", "Oh, that my head were a spring of water"],
+          ["Jeremiah 9:2-26", "Jeremiah 9:1-25", "Lament and warning"],
+          ["Ezekiel 20:45-49", "Ezekiel 21:1-5", "Fire in the southern forest"],
+          ["Ezekiel 21:1-32", "Ezekiel 21:6-37", "The sword of the LORD"],
+          ["Daniel 4:1-3", "Daniel 3:31-33", "Nebuchadnezzar's proclamation"],
+          ["Daniel 4:4-37", "Daniel 4:1-34", "The dream of the great tree"],
+          ["Daniel 5:31", "Daniel 6:1", "Darius the Mede receives the kingdom"],
+          ["Daniel 6:1-28", "Daniel 6:2-29", "Daniel in the lions' den"],
+          ["Hosea 1:10-11", "Hosea 2:1-2", "Children of the living God"],
+          ["Hosea 2:1-23", "Hosea 2:3-25", "Unfaithful wife; betrothal renewed"],
+          ["Hosea 11:12", "Hosea 12:1", "Ephraim's lies"],
+          ["Hosea 12:1-14", "Hosea 12:2-15", "Jacob and Ephraim"],
+          ["Hosea 13:16", "Hosea 14:1", "Samaria's guilt"],
+          ["Hosea 14:1-9", "Hosea 14:2-10", "Return, O Israel"],
+          ["Joel 2:28-32", "Joel 3:1-5", "The Spirit poured out on all flesh"],
+          ["Joel 3:1-21", "Joel 4:1-21", "Judgment of the nations"],
+          ["Jonah 1:17", "Jonah 2:1", "The great fish"],
+          ["Jonah 2:1-10", "Jonah 2:2-11", "Jonah's prayer"],
+          ["Micah 5:1", "Micah 4:14", "They strike Israel's judge"],
+          ["Micah 5:2-15", "Micah 5:1-14", "Bethlehem Ephrathah"],
+          ["Nahum 1:15", "Nahum 2:1", "The feet of one bringing good news"],
+          ["Nahum 2:1-13", "Nahum 2:2-14", "The fall of Nineveh"],
+          ["Zechariah 1:18-21", "Zechariah 2:1-4", "Four horns and four craftsmen"],
+          ["Zechariah 2:1-13", "Zechariah 2:5-17", "The man with a measuring line"],
+          ["Malachi 4:1-6", "Malachi 3:19-24", "The day of the LORD; Elijah"]
+        ]
+      },
+      "refs": ["Malachi 4:5-6", "Joel 2:28-32", "Acts 2:17-21", "Isaiah 9:1-7", "Jonah 1:17", "Genesis 31:55", "Genesis 32:22-32"]
+    },
+    {
+      "h": "The Psalms: headings and a second numbering",
+      "body": "The Psalms differ in two ways. First, many psalms have a heading or superscription, such as ‘A Psalm of David’ or a longer note about the tune, the instruments, or the occasion. The Hebrew Bible counts these headings as verse 1 (or, when long, verses 1 and 2), while English Bibles print them above the psalm, or with its first verse, without a number of their own. So in more than sixty psalms the Hebrew verse numbers run one higher than the English, and in four psalms with long headings (51, 52, 54, and 60) two higher. Psalm 51, David's prayer of repentance after Nathan confronted him, begins at English 51:1 and Hebrew 51:3. Psalm 22, whose opening cry Jesus prayed from the cross (Mark 15:34), begins at English 22:1 and Hebrew 22:2, and the disputed words about hands and feet are English 22:16 and Hebrew 22:17. Where a heading is short and joined to the first line in Hebrew, as in Psalm 23, the numbers agree.\n\nSecond, the Greek Septuagint and the Latin Vulgate number most psalms differently, because they join and divide some psalms differently from the Hebrew. They count Psalms 9 and 10 as one psalm (and in fact the two together form a single broken acrostic, so there is a good case for the Greek), and Psalms 114 and 115 as one; they divide Psalm 116 into two, and Psalm 147 into two. For most of the Psalter, therefore, the Greek and Latin number is one lower than the Hebrew and English. Older Catholic Bibles such as the Douay-Rheims, Orthodox liturgical books, and much of the Christian tradition before the Reformation use this numbering, which is why the church's name for Psalm 51, the Miserere, belongs to Psalm 50 in the Vulgate, and why Psalm 23 is Psalm 22 in the Latin tradition. Modern Catholic Bibles use the Hebrew numbers, often with the Greek in brackets.\n\nThe Septuagint also contains a Psalm 151, a short psalm about David's anointing and his victory over Goliath, which is canonical in the Orthodox churches and printed in the Apocrypha of some Protestant Bibles. A Hebrew form of it was found among the Dead Sea Scrolls in the great Psalms scroll from Cave 11 (11QPs-a).",
+      "table": {
+        "caption": "Psalm numbers in the Hebrew and English Bibles and in the Greek and Latin",
+        "columns": ["Hebrew and English", "Greek (Septuagint) and Latin (Vulgate)"],
+        "rows": [
+          ["1 to 8", "1 to 8"],
+          ["9 and 10", "9"],
+          ["11 to 113", "10 to 112"],
+          ["114 and 115", "113"],
+          ["116", "114 and 115"],
+          ["117 to 146", "116 to 145"],
+          ["147", "146 and 147"],
+          ["148 to 150", "148 to 150"],
+          ["None", "151 (Septuagint only)"]
+        ]
+      },
+      "refs": ["Psalms 51:1-4", "Psalms 22:1", "Mark 15:34", "Psalms 23:1", "Psalms 9:1"]
+    },
+    {
+      "h": "Missing verses and other New Testament differences",
+      "body": "Readers who move from the King James Version to a modern Bible sometimes think verses have been deleted, because the numbering skips. In the BSB, as in most modern translations, sixteen verse numbers have no text in the body of the page: Matthew 17:21, 18:11, and 23:14; Mark 7:16, 9:44, 9:46, 11:26, and 15:28; Luke 17:36 and 23:17; John 5:4; Acts 8:37, 15:34, 24:7, and 28:29; and Romans 16:24. Each of these verses is found in the Textus Receptus, the Greek text behind the KJV, but is absent from the earliest manuscripts, and most were added by scribes who harmonized one passage with another (Mark 9:44 and 9:46 repeat 9:48, for instance, and Matthew 18:11 echoes Luke 19:10). Because Stephanus had already numbered them in 1551, modern editors keep the numbers so that references in older books still work, and give the words in a footnote. The reasons are explained in How We Got the New Testament.\n\nA few New Testament passages are divided differently in different editions. The last verse of 3 John is divided into two in the Nestle-Aland Greek text and in several translations, including the ESV and NRSV, so that 3 John has fifteen verses there and fourteen in the KJV and BSB. The closing greetings of 2 Corinthians are numbered 13:12-14 in the KJV, ESV, and BSB, but 13:12-13 in the Greek critical editions and the NRSV. The sentence about the dragon standing on the seashore is Revelation 12:18 in some Bibles, joined to 12:17 in others (including the BSB), and read as ‘I stood’ at the start of 13:1 in the KJV, following a different Greek reading. The doxology that ends Romans (16:25-27) stands after 14:23 or 15:33 in some manuscripts, which is why some editions repeat or relocate it.",
+      "refs": ["Mark 9:48", "Luke 19:10", "3 John 1:14", "2 Corinthians 13:12-14", "Revelation 12:17", "Romans 16:25-27"]
+    },
+    {
+      "h": "The Greek additions to Esther and Daniel, and the Ten Commandments",
+      "body": "Catholic and Orthodox Bibles include the Greek additions to Esther and Daniel (see How the Books Were Chosen), and this produces further differences in numbering. In Daniel, the Prayer of Azariah and the Song of the Three Young Men are inserted after Daniel 3:23, as Daniel 3:24-90 in Catholic Bibles, so that the rest of English Daniel 3 (3:24-30) is numbered 3:91-97 there. The stories of Susanna and of Bel and the Dragon become Daniel 13 and 14. In Esther, the six Greek additions were gathered by Jerome at the end of the book, and so appear in the Vulgate and the Douay-Rheims as Esther 10:4 through 16:24; modern Catholic translations such as the New American Bible place them in their narrative positions and label them with letters, A through F, a system also used in the Apocrypha of the NRSV.\n\nThe Ten Commandments (Exodus 20:1-17 and Deuteronomy 5:6-21) are not numbered in the text, and traditions divide them differently, which is a related source of confusion. Jewish tradition counts God's self-introduction (‘I am the LORD your God, who brought you out of the land of Egypt’) as the first word and the prohibition of other gods and images together as the second. Catholic and Lutheran tradition, following Augustine, joins the prohibitions of other gods and of images as the first commandment and divides the prohibition of coveting into two (the neighbor's wife, and the neighbor's goods). Orthodox and Reformed Protestant tradition, following an older division known from Philo and Josephus, counts other gods as the first and images as the second. So the command about the Sabbath is the fourth commandment for most Protestants and the Orthodox and the third for Catholics and Lutherans. The words are identical in all three; the arrangement reflects how each tradition reads the structure of the covenant.\n\nNone of these differences touches the text itself. They are the price of an indispensable reference system laid over ancient books by later hands, and once a reader knows where they fall, they cease to be puzzling. When the notes in this Study Bible refer to a Hebrew verse number, they say so, and the English number used throughout is that of the BSB.",
+      "table": {
+        "caption": "Numbering the Ten Commandments",
+        "columns": ["Command", "Jewish", "Catholic and Lutheran", "Orthodox and Reformed"],
+        "rows": [
+          ["I am the LORD your God who brought you out of Egypt", "1", "Part of 1", "Preface"],
+          ["No other gods", "2", "1", "1"],
+          ["No carved images", "Part of 2", "Part of 1", "2"],
+          ["Not misuse the name of the LORD", "3", "2", "3"],
+          ["Remember the Sabbath", "4", "3", "4"],
+          ["Honor father and mother", "5", "4", "5"],
+          ["No murder", "6", "5", "6"],
+          ["No adultery", "7", "6", "7"],
+          ["No stealing", "8", "7", "8"],
+          ["No false witness", "9", "8", "9"],
+          ["No coveting the neighbor's wife", "10", "9", "10"],
+          ["No coveting the neighbor's house and goods", "Part of 10", "10", "Part of 10"]
+        ]
+      },
+      "refs": ["Daniel 3:23-25", "Exodus 20:1-17", "Deuteronomy 5:6-21"]
+    }
+  ]
+}

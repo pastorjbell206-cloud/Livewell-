@@ -1,0 +1,356 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "The hinge between the darkness that closes chapter 8 and the light of chapter 9. The northern territories that suffered first under Assyria, Zebulun and Naphtali in Galilee, are promised honor in the latter time. The verse names the places so that the light of verse 2 has an address.",
+      "grammar": "The verse contrasts two times and two verbs: kaet harishon heqal, ‘as the former time he treated lightly’, and vehaacharon hikhbid, ‘and the latter he made heavy’. Heqal (Hiphil of qalal, ‘to be light’) means to treat with contempt; hikhbid (Hiphil of kaved, ‘to be heavy’) can mean either to honor or to make grievous. Most modern translations, the BSB among them, read an antithesis: once humbled, later honored. The King James Version took both verbs as affliction, a lighter blow and then a heavier one (‘afterward did more grievously afflict her’). The antithesis fits the flow into verse 2 better and is the majority view. Gelil haggoyim, \"Galilee of the nations\", is literally ‘the district (galil, ring or circuit) of the nations’: the region was ethnically mixed and, after 732 BC, an Assyrian province.",
+      "words": [
+        "H6256",
+        "H7043",
+        "H3513G",
+        "H2074",
+        "H5321G",
+        "H1551",
+        "H1471A"
+      ],
+      "text": "Hebrew Bibles number this verse 8:23, so that 9:2-21 in English are 9:1-20 in Hebrew. The first clause, ki lo muaf, \"Nevertheless, there will be no more gloom\", links back to 8:22 and is often printed with chapter 8. The Septuagint diverges widely in this verse, and Matthew's quotation follows neither the Greek nor the Hebrew exactly.",
+      "history": "The three regions correspond to three Assyrian provinces created by Tiglath-pileser III after his campaign of 733 to 732 BC: the Way of the Sea (the coastal strip, with its capital at Dor), Galilee (the province of Megiddo), and the land beyond the Jordan (Gilead). Second Kings 15:29 lists Gilead, Galilee, and all the land of Naphtali among his conquests and records the deportations. The road called the Way of the Sea ran through this region from Egypt toward Damascus.",
+      "nt": [
+        {
+          "ref": "Matthew 4:15-16",
+          "note": "When Jesus settles in Capernaum, by the Sea of Galilee in the region of Zebulun and Naphtali, Matthew quotes verses 1 and 2 as fulfilled. His wording is an abbreviated form that follows neither the Hebrew nor the Septuagint exactly, and he changes the verb: the people ‘sitting’ in darkness, rather than walking, have seen a great light. Matthew's point is geographical as well as theological. The region that first fell to Assyria, and that Jerusalem's elite later despised as half-Gentile (compare John 7:52), is where the Messiah's light first shines, and his mission to ‘the nations’ is foreshadowed in the verse's own phrase."
+        }
+      ],
+      "refs": [
+        "Isaiah 8:21-22",
+        "2 Kings 15:29",
+        "Matthew 4:12-16",
+        "John 7:52"
+      ]
+    },
+    {
+      "v": "2",
+      "context": "The poem proper begins with its master image: a people walking in darkness sees a great light. The verbs present the rescue as already done, though Isaiah's hearers still sat in the Assyrian shadow. Verses 3 to 7 will give the joy that follows and the reasons for it.",
+      "grammar": "Rau, \"have seen\", and nagah, \"has dawned\", are Hebrew perfects. In prophecy the perfect often presents a future act of God as certain, as if already complete, and grammarians call this the prophetic perfect; the sense is not that Isaiah saw it happen but that God's word has settled it. Tsalmavet, \"the shadow of death\", has long been debated. The Masoretes vocalized it as a compound, tsel (‘shadow’) plus mavet (‘death’), and the Greek translators read it the same way (skia thanatou). Many modern scholars derive it instead from a root tslm, ‘to be dark’, with an abstract ending, giving ‘deep darkness’ (so the NRSV and ESV). Either way, it names the darkest darkness, the kind Psalm 23:4 walks through.",
+      "words": [
+        "H1980I",
+        "H2822",
+        "H7200G",
+        "H0216",
+        "H6757",
+        "H5050"
+      ],
+      "theology": [
+        {
+          "id": "hope",
+          "note": "Hope in Isaiah is not optimism about circumstances; it is light given to people who cannot produce it. The people walking in darkness do nothing but see. The light comes from outside, as the reasons in verses 4 to 6 will show: God breaks the yoke, God ends the war, God gives the child."
+        }
+      ],
+      "nt": [
+        {
+          "ref": "Luke 1:79",
+          "note": "Zechariah's song at the birth of John the Baptist says that the dawn from on high will visit us to give light to those sitting in darkness and the shadow of death, joining this verse's language to the image of a rising light (compare Malachi 4:2). Luke thus applies the image to the coming of the Messiah whose way John prepares, as Matthew applies it to the start of Jesus' ministry."
+        }
+      ],
+      "refs": [
+        "Psalm 23:4",
+        "Isaiah 60:1-3",
+        "John 8:12",
+        "2 Corinthians 4:6"
+      ]
+    },
+    {
+      "v": "3",
+      "context": "The light brings joy, compared to the two great celebrations of an agricultural and warrior society: bringing in the harvest and dividing the spoils after a victory. The address turns to God, \"before You\": the joy is worship. The next verses give three reasons, each introduced by ‘for’.",
+      "grammar": "Hirbita haggoy, \"You have enlarged the nation\", and higdalta hassimchah, \"increased its joy\", are Hiphil perfects, causative: God is the one who makes the nation many and the joy great. The rejoicing is compared with kesimchat baqatsir, ‘as the joy at harvest’, and with the gladness of men bechalleqam shalal, ‘when they divide plunder’ (a Piel infinitive of chalaq). Both similes picture joy after labor or danger is over.",
+      "words": [
+        "H7235A",
+        "H1431",
+        "H8057",
+        "H7105A",
+        "H2505A",
+        "H7998"
+      ],
+      "text": "The written Hebrew text (the ketiv) reads lo with an aleph, ‘not’: ‘you have multiplied the nation, you have not increased the joy’, which the King James Version translated. The Masoretes' marginal reading (the qere) is lo with a waw, ‘to it’: ‘you have increased its joy’. The two words sound the same, and the context of rejoicing favors the qere, which almost all modern translations follow. Some scholars propose dividing the letters differently to read haggilah, ‘the rejoicing’, with the same result.",
+      "refs": [
+        "Psalm 4:7",
+        "Psalm 126:5-6",
+        "Judges 5:30"
+      ]
+    },
+    {
+      "v": "4-5",
+      "context": "The first two reasons for joy. God has shattered the yoke of the oppressor, as he did on the day of Midian, and every soldier's boot and blood-soaked cloak will be burned. Liberation is followed by the end of war itself: the equipment of battle becomes fuel.",
+      "grammar": "Verse 4 heaps up three images of forced labor: ol subbolo, ‘the yoke of his burden’; matteh shikhmo, ‘the staff (or bar) on his shoulder’; and shevet hannoges bo, ‘the rod of the one oppressing him’. Noges is the word for the Egyptian taskmasters of Exodus 3:7 and 5:6, so the language recalls the exodus. Hachittota, \"You have shattered\", is a Hiphil perfect. In verse 5 seon, \"boot\", occurs only here; it is generally explained as a loanword from Akkadian shenu, ‘sandal, shoe’, fitting for the hobnailed footwear of the Assyrian army, and the participle soen, ‘tramping’, is formed from the same word. Simlah megolalah vedamim, ‘a cloak rolled in blood’, uses a Pual participle.",
+      "words": [
+        "H5923",
+        "H5448",
+        "H7926",
+        "H5065",
+        "H2865",
+        "H4080H",
+        "H5430",
+        "H5431",
+        "H1556"
+      ],
+      "history": "The day of Midian recalls Gideon's victory (Judges 7), when God reduced Gideon's army to three hundred so that Israel could not boast that its own hand had saved it. Isaiah returns to the same event in 10:26. The allusion sets the pattern for the deliverance Isaiah promises: not by Judah's alliances or arms, the policy of Ahaz in chapter 7, but by God.",
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "God's reign ends oppression first and war second. The burning of boots and bloodied cloaks anticipates Isaiah's picture of swords beaten into plowshares (2:4) and Psalm 46:9's God who burns the chariots. The kingdom Isaiah hopes for is not a better-armed Judah but a world where the equipment of war has no further use."
+        }
+      ],
+      "refs": [
+        "Judges 7:19-25",
+        "Isaiah 10:26-27",
+        "Exodus 5:6",
+        "Isaiah 2:4",
+        "Psalm 46:9"
+      ]
+    },
+    {
+      "v": "6",
+      "context": "The third and deepest reason: a child has been born, a son given, and the government rests on his shoulder. Where verse 4 spoke of a yoke on the people's shoulder, the child now carries the burden of rule. His four-part name crowns the poem, and verse 7 describes his reign. The child is the ground of the light, the joy, the freedom, and the peace.",
+      "grammar": "The verbs are again perfects and consecutives: yullad, \"is born\" (Pual perfect, a passive), nittan, \"is given\" (Niphal perfect), vattehi hammisrah, ‘and the government has come to be’, and vayyiqra shemo, literally ‘and he has called his name’. The last verb is active with no stated subject, so it is usually read impersonally (‘his name is called’), though some take God as the one who names. The misrah, \"government\", is a rare noun found only here and in verse 7. The names are four pairs. Pele yoets, \"Wonderful Counselor\", is a construct phrase, ‘a wonder of a counselor’; pele is used of God's own wonders (Exodus 15:11), and 28:29 says the LORD is wonderful in counsel. El gibbor, \"Mighty God\", recurs in 10:21 for the LORD himself, and El with gibbor names God in Deuteronomy 10:17 and Jeremiah 32:18; those who read ‘mighty hero’ or ‘godlike warrior’ point to Ezekiel 32:21, where the plural phrase is used of human warriors. Avi-ad, \"Everlasting Father\", is ‘father of perpetuity’: a king could be a father to his people (22:21 says Eliakim will be a father to Jerusalem), but ad, ‘forever’, is a word most at home with God. Sar-shalom, \"Prince of Peace\", uses sar, an official or commander, the title of an honored servant rather than of a king.",
+      "words": [
+        "H3206",
+        "H3205",
+        "H5414G",
+        "H4951",
+        "H7926",
+        "H7121H",
+        "H6382",
+        "H3289",
+        "H0410G",
+        "H1368",
+        "H0001G",
+        "H8269",
+        "H7965G"
+      ],
+      "text": "Hebrew Bibles number this verse 9:5. The Septuagint does not give the four titles; it reads ‘his name is called Messenger of great counsel, for I will bring peace upon the rulers, and health to him’. That phrase, magni consilii Angelus, entered the Latin liturgy in the introit for the Christmas Day Mass, Puer natus est nobis. Later Greek revisions and the Latin Vulgate restore the full titles; Jerome's Latin reads them as six (Admirabilis, Consiliarius, Deus, Fortis, Pater futuri saeculi, Princeps pacis). The 1917 Jewish Publication Society version transliterates the whole as a single sentence-name, Pele-joez-el-gibbor-Abi-ad-sar-shalom, as with the symbolic names of Isaiah's own children.",
+      "history": "Readings of the name divide along lines that go back to antiquity. The Targum of Isaiah identifies the child as the Messiah, in whose days peace will increase. Rashi identifies him with Hezekiah and takes the first titles as names of God, who calls the child ‘Prince of Peace’, while Ibn Ezra, also reading of Hezekiah, gives all the names to the child; modern Jewish translations render the whole as a sentence about God (‘the Mighty God is planning grace’). In twentieth century critical scholarship Gerhard von Rad and Albrecht Alt compared the names with the throne names given to an Egyptian pharaoh at his accession, and read the poem as an accession oracle for a Judean king. Christian interpreters from the second century onward, and Handel's Messiah (1742) in the church's memory, read the titles as describing the divine Son.",
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "The verse fuses a real birth and real kingship with titles that belong to God. Whatever the first occasion, the promise refuses to fit any king of Judah: El Gibbor is the LORD's own title eleven verses later (10:21), and no Davidic king brought peace without end. The church reads the child and the given son as Jesus, born of David's line and given by the Father (John 3:16)."
+        },
+        {
+          "id": "incarnation",
+          "note": "A child is born and a son is given: Christian interpreters have long heard in the pair both the human birth and the divine gift, the one who is truly a child of a human mother and the Son sent from God (Galatians 4:4). The title Mighty God, on the same child, is one of the Old Testament's strongest witnesses to the confession that the Messiah is God come among us."
+        }
+      ],
+      "refs": [
+        "Isaiah 10:21",
+        "Isaiah 22:21-22",
+        "Isaiah 7:14",
+        "Galatians 4:4",
+        "Ephesians 2:14"
+      ]
+    },
+    {
+      "v": "7",
+      "context": "The child's reign described. It grows without end, sits on David's throne, rests on justice and righteousness, and lasts forever. The poem ends by naming who will bring it about: not Judah's policy but the zeal of the LORD of Hosts. The oracle of hope stops here, and the judgment on the northern kingdom begins in verse 8.",
+      "grammar": "Lemarbeh hammisrah ulshalom ein-qets, ‘of the increase of the government and of peace there is no end’. The infinitives lehakhin, ‘to establish’ (Hiphil of kun, the verb of 2 Samuel 7:12-13), and lesaadah, ‘to sustain it’, describe the king's work. Bemishpat uvitsdaqah, \"with justice and righteousness\", is the pair Isaiah uses for what God looked for in his vineyard and did not find (5:7). The final sentence, qinat YHWH tsevaot taaseh zot, recurs word for word in Isaiah 37:32 (and 2 Kings 19:31), where it guarantees the survival of a remnant from Jerusalem. Qinah, \"zeal\", is jealous, burning commitment, the passion of God for what is his.",
+      "words": [
+        "H4766",
+        "H4951",
+        "H7093",
+        "H3678G",
+        "H3559H",
+        "H5582",
+        "H4941H",
+        "H6666",
+        "H7068"
+      ],
+      "text": "The first word, lemarbeh, is written in the Masoretic text with a closed final mem in the middle of a word, a unique scribal oddity. The Babylonian Talmud (Sanhedrin 94a) explains it with the tradition that God wished to make Hezekiah the Messiah but the purpose was closed off. Modern scholars usually explain it as a trace of an earlier division of the letters, perhaps a dittography of the final m of the previous word, shalom; some reconstruct lahem rabbah, ‘great is the government to them’.",
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The reign on David's throne is defined by justice and righteousness, the very qualities Israel's kings failed to deliver (5:7). God's kingdom is not simply God's power but God's right order established on earth, and verse 7 makes it everlasting and ever growing."
+        },
+        {
+          "id": "hope",
+          "note": "The guarantee is not the child's lineage or Judah's strength but the zeal of the LORD of Hosts. The hope Isaiah offers rests on God's jealous commitment to finish what he has promised."
+        }
+      ],
+      "nt": [
+        {
+          "ref": "Luke 1:32-33",
+          "note": "Gabriel tells Mary that her son will be great, will be called Son of the Most High, will be given the throne of his father David, and that his kingdom will have no end. The wording draws on 2 Samuel 7:12-16 and this verse together: David's throne, an everlasting reign, and a kingdom without end. Luke does not quote Isaiah formally, but the promise to Mary gathers exactly the elements of verse 7."
+        }
+      ],
+      "refs": [
+        "2 Samuel 7:12-16",
+        "Isaiah 37:32",
+        "Isaiah 11:3-5",
+        "Luke 1:32-33",
+        "Revelation 11:15"
+      ]
+    },
+    {
+      "v": "8-10",
+      "context": "The poem changes key completely. God has sent a word against Jacob, the northern kingdom, and the people answer their first losses with bravado: bricks have fallen, so we will build with dressed stone; sycamores are cut down, so we will plant cedars. This is the first of three stanzas (8-12, 13-17, 18-21), each closing with the same refrain, which continue into 10:1-4.",
+      "grammar": "Davar shalach Adonai beYaaqov, ‘a word the Lord has sent into Jacob’, puts the word first for emphasis: God's word is a projectile that lands (venafal, ‘and it falls’) on Israel. Begaavah uvegodel levav, \"With pride and arrogance of heart\", describes the attitude, and the quoted boast in verse 10 is built as two exact parallels, each with a loss (Qal perfect or Pual perfect, \"have fallen\", \"have been felled\") followed by a plan (imperfects, niveneh, ‘we will build’, nachalif, ‘we will substitute’). The upgrade is precise: from mudbrick to gazit, cut ashlar masonry, and from the common sycamore-fig to cedar.",
+      "words": [
+        "H1697G",
+        "H7971G",
+        "H5307G",
+        "H1346",
+        "H3843",
+        "H1496",
+        "H8256",
+        "H0730",
+        "H2498"
+      ],
+      "history": "Sycamore-figs were cheap, common timber in the lowlands, and cedar the costly imported wood of palaces and temples; 1 Kings 10:27 measures Solomon's wealth by saying cedar became as plentiful as sycamores. Finely dressed ashlar stone of the kind the boast names has been excavated in the royal quarter of Samaria, the northern capital, from the ninth and eighth centuries BC.",
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The first judgment is a warning, and the people treat it as an opportunity to build bigger. Pride that reads disaster as a chance for self-improvement rather than a call to return is the sin the stanzas expose, and the refrain says God's hand stays raised because the lesson is refused."
+        }
+      ],
+      "refs": [
+        "1 Kings 10:27",
+        "Amos 3:15",
+        "Isaiah 5:25",
+        "Proverbs 16:18"
+      ]
+    },
+    {
+      "v": "11-12",
+      "context": "The judgment arrives from every side. God raises Rezin's foes, Assyria, and stirs up Israel's enemies, Aram in the east and the Philistines in the west, who devour Israel with open mouths. The refrain closes the first stanza.",
+      "grammar": "Aram miqqedem uFelishtim meachor uses the Hebrew orientation, in which a person faces east: qedem, ‘front’, is the east, and achor, ‘behind’, is the west. Vayyokhelu et-Yisrael bekhol peh, ‘they devoured Israel with the whole mouth’, pictures wild animals feeding. The refrain, bekhol-zot lo-shav appo veod yado netuyah, uses a passive participle (netuyah, ‘stretched out’) for the hand: the stretched-out hand that once rescued Israel from Egypt (Deuteronomy 26:8) is now raised against it.",
+      "words": [
+        "H7682",
+        "H7526G",
+        "H6924G",
+        "H6430G",
+        "H0268",
+        "H0398",
+        "H0639G",
+        "H5186"
+      ],
+      "text": "\"The foes of Rezin\" is odd, since Rezin was Israel's ally in 734 BC. Many scholars emend to ‘his foes’. As it stands, the text most likely means Assyria, Rezin's great adversary, which destroyed Damascus and then turned on Israel. The Septuagint paraphrases the line.",
+      "refs": [
+        "Deuteronomy 26:8",
+        "Isaiah 5:25",
+        "Isaiah 10:4",
+        "2 Kings 16:9"
+      ]
+    },
+    {
+      "v": "13-14",
+      "context": "The second stanza names the root failure: the people did not turn back to the God who struck them. So in a single day God cuts off Israel's head and tail, the high and the low. The blows were meant to bring them home, and they did not.",
+      "grammar": "Lo-shav ad-hammakkehu, ‘did not return all the way to the one striking him’, uses the preposition ad, ‘as far as’, suggesting a turning that stops short. The line echoes Amos's refrain after each disaster, ‘yet you did not return to me’ (Amos 4:6-11), spoken to the same kingdom a generation earlier. Rosh vezanav, \"head and tail\", and kippah veagmon, \"palm branch and reed\", are merisms, pairs of opposites naming the whole: the lofty palm frond and the lowly marsh rush. Isaiah 19:15 uses the same pair of Egypt.",
+      "words": [
+        "H7725I",
+        "H5221",
+        "H1875",
+        "H7218A",
+        "H2180",
+        "H3712",
+        "H0100"
+      ],
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "Suffering is presented as God's call to return, and the tragedy is that the call is not heard. The verse links repentance with seeking (darash) the LORD: turning away from sin is turning toward a person."
+        }
+      ],
+      "refs": [
+        "Amos 4:6-11",
+        "Isaiah 19:15",
+        "Jeremiah 5:3",
+        "Hosea 7:10"
+      ]
+    },
+    {
+      "v": "15-17",
+      "context": "Verse 15 interprets the head and the tail of verse 14: the elders and dignitaries are the head, the lying prophet the tail. Verse 16 blames the leaders for misleading the people, and verse 17 draws the terrible conclusion that God will not spare even the young men, orphans, and widows, because the rot has reached everyone. The refrain closes the second stanza.",
+      "grammar": "Verse 15 reads like a prose explanation of the poetic image, and many commentators take it as an early scribal comment. Verse 16 is a wordplay on ashar: meashshrei haam hazzeh matim umeushshar mevullaim, ‘the guides of this people lead astray, and those guided by them are swallowed up’; the Piel participle ‘guides’ and Pual participle ‘guided’ come from one root, the same pairing Isaiah uses in 3:12. In verse 17 chanef, \"godless\", means profane or polluted rather than ‘hypocrite’, the older rendering; nevalah, \"folly\", is not silliness but moral outrage, the word used for gross sin in Israel (Genesis 34:7, 2 Samuel 13:12).",
+      "words": [
+        "H2205G",
+        "H5030",
+        "H3384B",
+        "H8267",
+        "H0833",
+        "H8582",
+        "H1104",
+        "H3490",
+        "H0490",
+        "H2611",
+        "H5039"
+      ],
+      "theology": [
+        {
+          "id": "leadership",
+          "note": "The stanza places special blame on those who guide. Leaders and prophets who tell comfortable lies do not only fall themselves; they swallow up those who follow. Scripture holds teachers to a stricter judgment (James 3:1) for this reason."
+        },
+        {
+          "id": "judgment",
+          "note": "The God who defends the fatherless and the widow (Deuteronomy 10:18) withholds compassion even from them. The shock of the line measures how complete Israel's corruption had become, not a change in God's character; the text grounds it in \"every one of them is godless and wicked\"."
+        }
+      ],
+      "refs": [
+        "Isaiah 3:12",
+        "Jeremiah 23:16-17",
+        "Deuteronomy 10:18",
+        "James 3:1",
+        "Matthew 15:14"
+      ]
+    },
+    {
+      "v": "18-19",
+      "context": "The third stanza turns from outside enemies to the fire within. Wickedness itself burns like a brush fire that catches the forest thickets, and God's wrath scorches the land. The people become fuel, and no one spares even his brother.",
+      "grammar": "The first verb has wickedness (rishah) as its subject: bara khaesh, ‘it burns like fire’. Sin is its own fire; God's wrath in verse 19 (bevrat YHWH) and the self-consuming wickedness of verse 18 are two descriptions of one judgment. Shamir vashayit, \"thorns and briers\", is Isaiah's recurring pair for the overgrown, judged land (5:6, 7:23-25). Vayyitabbekhu geut ashan, ‘and they swirl up in a column of smoke’, uses a verb found only here. Netam, \"is scorched\", in verse 19 is another rare word; the ancient versions guessed at its meaning.",
+      "words": [
+        "H1197A",
+        "H7564",
+        "H8068",
+        "H7898",
+        "H0055",
+        "H5678",
+        "H6272",
+        "H3980",
+        "H2550"
+      ],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "The stanza describes sin as self-destructive: wickedness catches fire and consumes the society that feeds it. Judgment here is less an outside penalty than God handing a people over to the logic of what they have chosen, the pattern Paul traces in Romans 1:24-28."
+        }
+      ],
+      "refs": [
+        "Isaiah 5:6",
+        "Isaiah 1:31",
+        "Romans 1:24-28",
+        "James 3:6"
+      ]
+    },
+    {
+      "v": "20-21",
+      "context": "The fire becomes famine and civil war. People snatch food on the right and the left and are never full; they devour their own. Manasseh and Ephraim, the two brother tribes of Joseph, turn on each other, and both turn on Judah. The refrain closes the stanza and the poem continues in 10:1-4.",
+      "grammar": "The verbs of verse 20 are consecutive forms that narrate what happens as a sequence: vayyigzor, ‘he cut off (meat)’; veraev, ‘and was hungry’; vayyokhal, ‘and ate’; velo savu, ‘and they were not satisfied’. The pair yamin and semol, right and left, means ‘in every direction’. Besar-zeroo yokhelu, literally ‘they eat the flesh of his own arm’, is a picture of self-destruction; the BSB's \"own offspring\" follows a slight change of vowels (zaro, ‘his seed’). Yachdav hemmah al-Yehudah, ‘together they are against Judah’, recalls the alliance of chapter 7.",
+      "words": [
+        "H1504",
+        "H3225G",
+        "H7456",
+        "H8040G",
+        "H7646",
+        "H1320",
+        "H2220",
+        "H4519G",
+        "H0669G",
+        "H3162B"
+      ],
+      "text": "Some scholars emend zeroo, ‘his arm’, to reeho, ‘his neighbor’. English Bibles vary: ‘his own arm’ (KJV, ESV), ‘his neighbor’ (RSV), ‘his own offspring’ (BSB, following the ‘seed’ reading). All three express the same horror of a society consuming itself.",
+      "history": "The northern kingdom's last decades were a succession of coups. Zechariah was assassinated by Shallum, Shallum by Menahem, and Menahem's son Pekahiah by Pekah, who struck with fifty men of Gilead, the region east of the Jordan settled in part by Manasseh (2 Kings 15:10-25). Pekah was in turn killed by Hoshea (15:30). The strife of Manasseh against Ephraim in verse 21 fits this history closely, as does the joint attack on Judah by Pekah and Rezin.",
+      "refs": [
+        "2 Kings 15:10-30",
+        "Isaiah 7:1-2",
+        "Isaiah 10:1-4",
+        "Galatians 5:15"
+      ]
+    }
+  ]
+}

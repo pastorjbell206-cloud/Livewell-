@@ -1,0 +1,162 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "The “for” (gar) ties this verse to 4:14-16: the readers have a great high priest who sympathizes with them, and now the author explains what any high priest is. Verses 1-4 give a job description in three parts (taken from among people, gentle with the erring, called by God), which verses 5-10 will match to Christ.",
+      "grammar": "Two passive verbs frame the sentence. Lambanomenos (‘being taken’) is a present passive participle: nobody takes this office, he is taken from among men. Kathistatai (‘is appointed’) is also passive, and the agent is left unstated, though verse 4 will name God. Ta pros ton theon, ‘the things toward God’, is an idiom for everything that concerns a person's standing with God; Hebrews used it already in 2:17. The purpose clause pairs dōra te kai thusias, ‘both gifts and sacrifices’. Interpreters debate whether the pair distinguishes grain offerings from animal sacrifices or simply means offerings of every kind, as it seems to in 8:3 and 9:9. The phrase huper hamartiōn (‘for sins’) most naturally attaches to both nouns.",
+      "words": ["G0749", "G2983", "G2525", "G1435", "G2378"],
+      "theology": [
+        {
+          "id": "offices",
+          "note": "The verse defines priesthood by solidarity and representation: a priest must be one of the people and act for them. That is why Hebrews insists on the full humanity of the Son (2:14-17). Only one who shares human nature can hold this office on humanity's behalf."
+        }
+      ],
+      "refs": ["Hebrews 2:17", "Hebrews 8:3", "Exodus 28:1", "Leviticus 9:7"]
+    },
+    {
+      "v": "2-3",
+      "context": "The second qualification is gentleness born of shared weakness. The high priest can bear with sinners because he is one; for the same reason he must first offer sacrifice for himself. Verse 3 anticipates the contrast of 7:27, where Christ needs no sacrifice for his own sins.",
+      "grammar": "Metriopathein (‘to deal gently’) is a rare verb, found only here in the New Testament. It comes from the vocabulary of Greek moral philosophy for keeping one's emotions within measure, neither cold indifference nor unchecked anger; Philo of Alexandria, in the third book of his Allegorical Interpretation, uses this word family for Aaron, who moderates his passions, as opposed to Moses, who is free of them. Here it means a measured patience with offenders. The two dative participles, agnoousin kai planōmenois (‘those who are ignorant and going astray’), may name two groups or form one idea: people who sin through ignorance and so wander. Perikeitai (‘is beset’) literally means ‘is lying around’ or ‘is clothed with’, as a chain is laid around a prisoner in Acts 28:20: weakness wraps the priest like a garment. Opheilei (‘he is obligated’) expresses a duty laid on him by the law.",
+      "words": ["G3356", "G0050", "G4105", "G4029", "G0769G", "G3784"],
+      "history": "The law provided sacrifices for sins committed unintentionally or in ignorance (Leviticus 4:2, Numbers 15:22-29) and none for sins done ‘with a high hand’, in open defiance (Numbers 15:30-31). The high priest's own sin offering came first on the Day of Atonement: a bull for himself and his household before the goat for the people (Leviticus 16:6, 11, 15). The Mishnah preserves the confession he spoke over his bull, for himself and his house (m. Yoma 3:8, 4:2).",
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The whole Levitical system assumed that the mediator himself needed atonement. That fact becomes the author's argument: a priest who must offer for his own sins cannot finally deal with anyone else's, and Hebrews will present Christ as the priest who offers for others alone."
+        }
+      ],
+      "refs": ["Leviticus 16:6", "Numbers 15:27-31", "Hebrews 4:15", "Hebrews 7:27"]
+    },
+    {
+      "v": "4",
+      "context": "The third qualification: nobody seizes this honor. The high priest must be called, as Aaron was. The verse prepares for verse 5, where the same principle is applied to Christ.",
+      "grammar": "The sentence sets heautō (‘for himself’) early for emphasis, and then the contrast turns on alla kaloumenos, ‘but being called’. The present tense lambanei states a general rule. Timē (‘honor’) is the office viewed as a dignity. The verb kaleō for divine appointment links this verse to the letter's language of the readers' ‘heavenly calling’ (3:1).",
+      "words": ["G5092", "G2564G", "G0002"],
+      "history": "Aaron's appointment comes in Exodus 28:1, and Numbers 16-17 records Korah's rebellion against it and the budding of Aaron's staff that confirmed it. King Uzziah was struck with leprosy when he burned incense in the temple, a priestly act he had no right to perform (2 Chronicles 26:16-21). By the first century the ideal had worn thin: Josephus counts twenty-eight high priests from the reign of Herod to the temple's destruction, most of them installed and removed by Herod, his heirs, or Roman officials (Antiquities 20.247-251).",
+      "refs": ["Exodus 28:1", "Numbers 16:1-11", "Numbers 17:5", "2 Chronicles 26:18"]
+    },
+    {
+      "v": "5",
+      "context": "The comparison now turns to Christ, and the author answers verse 4 first: Christ did not glorify himself. The one who appointed him is identified by what he said to him, Psalm 2:7, already quoted in 1:5 to prove the Son's superiority to angels.",
+      "grammar": "Ouch heauton edoxasen, ‘he did not glorify himself’, uses the verb of glory, not merely of taking an office, and echoes the ‘honor’ of verse 4. The subject is ho Christos, with the article, ‘the Christ’, the Messiah as the anointed one. The participle ho lalēsas (‘the one who said’) stands in for God without naming him, so that God's identity is given by his speech. Gegennēka (‘I have begotten’) is a perfect: the declaration stands in effect. The juxtaposition matters: the author does not quote a priestly text first but a royal and filial one, grounding the priesthood in the Sonship.",
+      "words": ["G1392", "G5547", "G1080", "G4594"],
+      "ot": [
+        {
+          "ref": "Psalm 2:7",
+          "note": "The Hebrew beni attah ani hayyom yelidtikha is rendered word for word by the Septuagint (Psalm 2:7 in both numberings), and Hebrews follows it exactly. In the psalm the LORD addresses the Davidic king on his enthronement. Hebrews quoted it in 1:5 to show the Son above the angels; here it is used to show who appointed the high priest. Setting Psalm 2 beside Psalm 110 (verse 6) is deliberate: both are royal psalms addressed by God to his king, and together they make the Son a king-priest."
+        }
+      ],
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "The verse roots Christ's priesthood in his identity as Son. He is priest because he is the royal Son God addressed, not by ancestry or self-promotion, which is why Hebrews can treat his priesthood as permanent."
+        }
+      ],
+      "refs": ["Hebrews 1:5", "John 8:54", "Acts 13:33", "Philippians 2:8-9"]
+    },
+    {
+      "v": "6",
+      "context": "A second divine word completes the appointment: Psalm 110:4, the only Old Testament text that joins a royal figure to a priesthood ‘in the order of Melchizedek’. The quotation introduces the name that will govern chapters 5-7, though the author will delay explaining it until 7:1.",
+      "grammar": "Kathōs kai en heterō legei, ‘as he also says in another place’: the subject of legei is God, the same speaker as verse 5, and the present tense treats Scripture as God's speech now. Eis ton aiōna, ‘forever’, is the phrase the author will press in 7:16-25. Kata tēn taxin Melchisedek, ‘according to the order of Melchizedek’, uses taxis, which can mean a rank, an arrangement, or a kind. Hebrews 7:15 paraphrases it as kata tēn homoiotēta, ‘according to the likeness’, which shows how the author understood it: a priesthood of Melchizedek's type, not a succession from him.",
+      "words": ["G2409", "G0165H", "G5010", "G3198"],
+      "ot": [
+        {
+          "ref": "Psalm 110:4",
+          "note": "The Hebrew reads attah kohen leolam al divrati malki-tsedeq. Al divrati is unusual: the old ending -i on divrah can mean ‘according to the manner of’ or ‘for the sake of’, and some modern scholars have suggested taking malki-tsedeq as a title, ‘my righteous king’, rather than a name. The Septuagint (Psalm 109:4) reads su ei hiereus eis ton aiōna kata tēn taxin Melchisedek, and Hebrews follows it, dropping only the verb ei (‘are’). In the psalm, God swears this to the king whom the LORD seats at his right hand (110:1), probably in a Jerusalem enthronement setting that claimed for David's line the heritage of Salem's ancient priest-king (Genesis 14:18). Hebrews reads the oath as spoken to the risen Christ, the same figure whose session at God's right hand it has already proclaimed from 110:1."
+        }
+      ],
+      "refs": ["Psalm 110:1-4", "Genesis 14:18", "Hebrews 6:20", "Hebrews 7:17"]
+    },
+    {
+      "v": "7",
+      "context": "The author now answers the second qualification (verses 2-3): Christ knows weakness from the inside. A relative clause (‘who, in the days of his flesh’) moves straight from the heavenly appointment to the earthly anguish, most likely Gethsemane, though the language may gather the whole passion into one scene.",
+      "grammar": "The main verb of verses 7-10 is emathen (‘he learned’) in verse 8; verse 7 is built from participles that lead up to it. Deēseis te kai hiketērias (‘prayers and supplications’) pairs an ordinary word for requests with a rare one, hiketēria, originally the olive branch a suppliant held out, then any earnest plea. Meta kraugēs ischuras kai dakruōn, ‘with a strong cry and tears’, stresses intensity. Prosenegkas (‘having offered’) is the verb Hebrews uses for sacrifice (5:1, 3), so the prayers are presented as priestly offering. The phrase apo tēs eulabeias is the crux. Most read it as ‘heard because of his reverence’, taking eulabeia as godly fear or reverent submission, its sense in 12:28. Others read it as ‘heard and delivered from his fear’, since eulabeia can mean anxiety, though that sense is rare in this letter. Adolf von Harnack in 1929 even proposed that a ‘not’ had dropped out (‘he was not heard’), a conjecture without manuscript support that most editors reject.",
+      "words": ["G4561", "G1162", "G2428", "G2906", "G1144", "G4374", "G1522", "G2124"],
+      "history": "The Gospels place Jesus' anguished prayer in Gethsemane (Mark 14:32-36, Luke 22:41-44) and record a loud cry from the cross (Mark 15:34, 37). None uses Hebrews' vocabulary exactly, which suggests the author knew the tradition of Jesus' agony independently of the written Gospels, or shaped it in the language of the lament psalms, where the righteous sufferer cries out and is heard (Psalm 22:24, Psalm 116:1-8).",
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "Jesus' prayer was real struggle, voiced aloud and with tears, and the verse calls it ‘heard’. It gives the church a model of prayer that is honest about fear and yet yielded to God, and it grounds the invitation of 4:16 to approach the throne of grace in time of need."
+        },
+        {
+          "id": "incarnation",
+          "note": "‘The days of his flesh’ names the whole span of the Son's earthly life in the vulnerability of human nature. The verse forbids any picture of Christ's humanity as a costume; he feared death and cried out to the Father."
+        }
+      ],
+      "parallels": ["Mark 14:32-36", "Matthew 26:36-44", "Luke 22:41-44"],
+      "refs": ["Psalm 22:24", "John 12:27", "Hebrews 4:15-16"]
+    },
+    {
+      "v": "8",
+      "context": "The paradox of the Son learning is the heart of the paragraph. His status as Son did not exempt him from suffering; it was through suffering that his obedience was tested and proven.",
+      "grammar": "Kaiper ōn huios, ‘although being a Son’, is concessive: one might expect a son, above all this Son, to be spared. The main clause plays on sound, emathen aph' hōn epathen, ‘he learned from what he suffered’. The pairing of mathein and pathein was proverbial in Greek: Aeschylus has Zeus lay down the law of learning by suffering (Agamemnon 177), and Herodotus has Croesus say his sufferings had been his lessons (Histories 1.207). The author uses the familiar jingle for something new. Tēn hupakoēn has the article: ‘the obedience’, the specific obedience required of him. Learning here is not moving from disobedience to obedience but acquiring the experience of obeying at full cost, as 10:5-10 will describe.",
+      "words": ["G2539", "G5207", "G3129", "G3958", "G5218"],
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "The eternal Son did not cease to be Son, yet in his human nature he grew in the experience of obedience (compare Luke 2:52). The church's confession at Chalcedon (451) that Christ is fully God and fully human makes room for exactly this: real human learning in one who is truly the Son."
+        },
+        {
+          "id": "suffering",
+          "note": "If even the Son learned through suffering, the readers' hardships are not signs of God's absence. Hebrews 12:5-11 will draw the same line from the Son's training to theirs."
+        }
+      ],
+      "refs": ["Philippians 2:8", "Luke 2:52", "Hebrews 2:10", "Hebrews 12:7"]
+    },
+    {
+      "v": "9-10",
+      "context": "Now the third point: the one who suffered became the source of salvation. Verse 10 closes the section by returning to the title of verse 6, forming a frame around 5:5-10, and it leads into the digression that begins in verse 11.",
+      "grammar": "Teleiōtheis (‘having been made perfect’) is an aorist passive participle of teleioō, a key verb in Hebrews (2:10, 7:28). It does not imply moral imperfection. In the Greek Old Testament the same verb translates the idiom ‘to fill the hands’, the ordination of a priest (Exodus 29:9, Leviticus 8:33, Leviticus 21:10), so ‘perfected’ carries the sense of being fully qualified and installed, a point developed by David Peterson in Hebrews and Perfection (1982). Aitios sōtērias aiōniou, ‘cause of eternal salvation’, uses aitios, the one responsible for an outcome. The phrase ‘eternal salvation’ echoes Isaiah 45:17, where the Septuagint says Israel is saved with sōtērian aiōnion. Tois hupakouousin (‘those who obey’) matches the Son's obedience in verse 8. Prosagoreutheis (‘having been designated’) is a formal term for being named or hailed with a title.",
+      "words": ["G5048", "G0159", "G4991", "G0166", "G5219", "G4316"],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The salvation Christ causes is ‘eternal’ because the priest who secures it has completed his work and holds office forever. Hebrews will spell out what that completed work was in 9:12, 9:14, and 10:14."
+        },
+        {
+          "id": "messiah",
+          "note": "Verse 10 fuses two titles: the Son of Psalm 2 is also the high priest of Psalm 110. God himself hails him as high priest, which grounds his office in divine appointment rather than descent."
+        }
+      ],
+      "refs": ["Hebrews 2:10", "Hebrews 7:28", "Isaiah 45:17", "Romans 5:19"]
+    },
+    {
+      "v": "11",
+      "context": "The author breaks off. He has much to say about Melchizedek, but the readers' dullness makes it hard to explain. The rebuke that begins here runs to 6:12, where the word ‘sluggish’ returns and closes the frame.",
+      "grammar": "Peri hou can mean ‘about whom’ (Melchizedek or Christ) or ‘about which’ (this subject); the Greek allows both. Dusermēneutos means ‘hard to interpret’ or ‘hard to explain’. The cause clause, epei nōthroi gegonate tais akoais, is pointed: gegonate is a perfect, ‘you have become’, so the dullness is a condition they have drifted into, not their native capacity. Nōthros means sluggish or lazy; it appears in the New Testament only here and in 6:12, where the author hopes they will not be nōthroi. The frame shows that 5:11-6:12 is one unit of exhortation.",
+      "words": ["G1421", "G3576", "G1096", "G0189"],
+      "theology": [
+        {
+          "id": "sanctification",
+          "note": "Spiritual understanding can decline. The readers had once heard well (2:3) and had become dull, which is why the letter treats hearing God's word as something to be guarded (3:7, 4:7)."
+        }
+      ],
+      "refs": ["Hebrews 6:12", "Hebrews 2:1", "Matthew 13:15", "Hebrews 3:15"]
+    },
+    {
+      "v": "12",
+      "context": "By this time the readers should be teachers, but they need to relearn the ABCs. The rebuke implies they have been believers for some time (compare 10:32).",
+      "grammar": "Dia ton chronon, ‘because of the time’, means ‘given how long it has been’. Ta stoicheia tēs archēs, ‘the elements of the beginning’, uses stoicheia, a word for the letters of the alphabet and so for first principles; the sense here is basic instruction, unlike the ‘elemental powers’ debated in Galatians 4:3 and Colossians 2:8. Tōn logiōn tou theou, ‘the oracles of God’, is the term Romans 3:2 uses for Israel's Scriptures. There is also a small accent question: tina can be read as tina, ‘someone’ (‘you need someone to teach you’), or as tína, ‘what’ (‘you need to be taught what the elements are’). Early manuscripts had no accents, so editors must choose; the BSB takes the first. The milk and solid food contrast is the image Paul uses in 1 Corinthians 3:1-2.",
+      "words": ["G5550", "G1320", "G5100", "G4747", "G3051", "G1051", "G4731"],
+      "text": "Some editions print tina with the interrogative accent (tína, ‘what are the elements’), while others print it as the indefinite pronoun (‘someone’). The meaning of the verse is not changed much: either way the readers need basic teaching again.",
+      "refs": ["1 Corinthians 3:1-2", "1 Peter 2:2", "Romans 3:2", "Acts 7:38"]
+    },
+    {
+      "v": "13-14",
+      "context": "Two explanatory sentences contrast the infant and the mature. The infant is unskilled in the word of righteousness; the mature have trained faculties that tell good from evil. Chapter 6 will draw the conclusion: let us go on to maturity.",
+      "grammar": "Apeiros logou dikaiosunēs, ‘inexperienced in the word of righteousness’, is disputed. Some read it as the message about righteousness, the teaching of how God makes people right; others, following an ordinary Greek sense, as ‘right speech’, the adult competence infants lack; a third view takes it as moral instruction, the teaching that trains in righteous living, which fits verse 14's concern with good and evil. Verse 14 is thick with athletic vocabulary. Hexis is a settled habit or state; aisthētēria are the faculties of perception; gegumnasmena is a perfect passive participle of gumnazō, ‘to train’ (compare gymnasium), used again in 12:11. Diakrisis is discernment. Teleios (‘mature’) belongs to the same word family as ‘made perfect’ in verse 9.",
+      "words": ["G3516", "G0552", "G1343", "G5046", "G1838", "G0145", "G1128", "G1253"],
+      "theology": [
+        {
+          "id": "wisdom",
+          "note": "Maturity is described not as more information but as trained perception: the ability to tell good from evil, formed by practice. The verse ties doctrine to discernment, the way Proverbs ties the fear of the LORD to skill in living."
+        },
+        {
+          "id": "sanctification",
+          "note": "Growth takes practice over time. The perfect participle pictures faculties that have been exercised and now stand ready, which is the goal of the teaching Hebrews wants to give."
+        }
+      ],
+      "refs": ["1 Corinthians 2:6", "Philippians 1:9-10", "Hebrews 12:11", "1 Kings 3:9"]
+    }
+  ]
+}

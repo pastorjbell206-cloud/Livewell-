@@ -1,0 +1,309 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "Chapter 1 closed with God's power raising Christ from the dead and seating him above every ruler (1:19-23). Chapter 2 opens by turning that power toward the readers, but it begins with their condition before God acted: “And you were dead in your trespasses and sins”. The sentence that starts here has no main verb until verse 5; Paul describes the death at length before he names the God who gives life.",
+      "grammar": "The Greek begins kai humas ontas nekrous, ‘and you, being dead’. The pronoun is in the accusative case because it is the object of a verb that does not arrive until verse 5 (sunezōopoiēsen, ‘made alive with’), and the long delay is a deliberate break in construction (grammarians call it an anacoluthon). English Bibles have to supply a verb early (the BSB's ‘were’) or the reader loses the thread. Nekros is the ordinary word for a corpse, and Paul means it as a description of relation to God, not of moral weakness: the dead cannot help themselves. The two datives, paraptōmasin and hamartiais, are best taken as ‘in’ or ‘because of’ trespasses and sins. Paraptōma pictures a false step or a fall beside the path, hamartia a missing of the mark; the pair is probably meant to cover the whole ground rather than to name two different kinds of wrong.",
+      "words": ["G3498", "G3900", "G0266"],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Paul does not say the readers were sick or struggling but dead. This verse is the root of the classic Christian teaching that sin leaves a person unable to turn to God unaided, which Augustine pressed against Pelagius and which the Reformers repeated. The point is not that sinners cannot act, since verse 2 says they walked, but that they had no life toward God."
+        }
+      ],
+      "refs": ["Colossians 2:13", "Romans 5:12", "Luke 15:24", "John 5:24"]
+    },
+    {
+      "v": "2",
+      "context": "Paul describes the dead as walking. Their conduct was shaped by three forces: the age of this world, the ruler of the power of the air, and a spirit at work in the disobedient. The word “walk” here and in verse 10 frames the whole paragraph: the chapter begins with a walk in sins and ends with a walk in good works.",
+      "grammar": "Periepatēsate (‘you walked’) is the Hebrew idiom for a way of life (halakhah, from halakh, ‘to walk’), carried into Greek. Kata ton aiōna tou kosmou toutou is literally ‘according to the age of this world’. Aiōn usually means an age or era, and most interpreters take it that way here (‘the course of this world’). A few, noting the parallel with ‘the ruler’ that follows, have argued that Aiōn is a personal power, a name used in the period for a god of time, but the usual temporal sense fits Paul's contrast between this age and the age to come (1:21). The spirit (pneumatos, genitive) that is ‘now at work’ stands in apposition either to ‘the ruler’ or to ‘the air’; the grammar is awkward either way, but the sense is clear: a personal power is actively working (energountos, a present participle, the same verb used of God's power in 1:19-20). ‘Sons of disobedience’ is a Semitic idiom meaning people characterized by disobedience.",
+      "words": ["G4043", "G0165G", "G0758", "G0109", "G1754", "G5207"],
+      "history": "Ancient cosmology commonly placed the air (aēr) between the earth and the higher heavens, and both Greek and Jewish writers peopled it with spirits. The Testament of Benjamin (3:4) speaks of the aerial spirit of Beliar, and Ephesus itself was known for magic: Acts 19:19 describes the burning of magic books worth fifty thousand pieces of silver, and the so-called Ephesian letters (Ephesia grammata) were famous as protective charms. Clinton Arnold, in Ephesians: Power and Magic (1989), argued that this background explains the letter's unusual attention to spiritual powers.",
+      "refs": ["Ephesians 6:12", "John 12:31", "2 Corinthians 4:4", "Acts 19:18-19", "1 John 5:19"]
+    },
+    {
+      "v": "3",
+      "context": "Paul now says “All of us”, including himself and his fellow Jewish believers. The first two verses spoke of ‘you’ Gentiles; verse 3 refuses to let anyone stand outside the diagnosis. The flesh, its desires, and God's wrath complete the picture of the old life before the great turn in verse 4.",
+      "grammar": "Anestraphēmen (‘we lived’, literally ‘we conducted ourselves’) is a synonym for walking. The phrase tekna phusei orgēs, ‘children by nature of wrath’, is the verse's weightiest. ‘Children of wrath’ is another Semitic idiom, like ‘sons of disobedience’ in verse 2, meaning people who are destined for or deserving of God's wrath, not people who are angry. Phusei, ‘by nature’, is a dative describing what they were in themselves, apart from grace, the same word Paul uses in Galatians 2:15 for Jews ‘by birth’. Interpreters divide over how much the word carries. Augustine and the Western tradition after him read it as evidence of inherited guilt from Adam; others, including many Eastern Orthodox theologians, read it as describing a condition that is universal and actual but not a guilt inherited from birth. The verb ēmetha (‘we were’) is imperfect, describing an ongoing state in the past, now ended.",
+      "words": ["G0390", "G5043", "G5449", "G3709", "G4561"],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "The verse locates sin both in desire (the flesh and the mind) and in standing before God (under wrath). Paul includes himself: the Jewish people, with the law and the covenants, were not exempt. The Christian doctrine of original sin draws heavily on this verse, though how it is framed (inherited guilt or inherited corruption) differs between the Western and Eastern churches."
+        }
+      ],
+      "refs": ["Romans 1:18", "Romans 3:9-10", "Galatians 5:16-17", "Titus 3:3", "Psalm 51:5"]
+    },
+    {
+      "v": "4",
+      "context": "“But because of His great love for us, God, who is rich in mercy” is the hinge of the chapter. After three verses about human death, God becomes the subject. Paul names two things in God (mercy and great love) as the only reason for what follows; nothing in the readers is mentioned.",
+      "grammar": "The small conjunction de (‘but’) carries enormous weight. God (ho theos) is the subject at last, and the participle plousios ōn en eleei (‘being rich in mercy’) describes what God is, not merely what he did. The phrase dia tēn pollēn agapēn autou hēn ēgapēsen hēmas is literally ‘because of his great love with which he loved us’, a cognate construction (noun and verb from the same root, agapē and agapaō) that doubles the emphasis. Eleos (mercy) is the Septuagint's usual word for the Hebrew chesed, God's steadfast covenant love, so a Jewish reader would hear Israel's God in the phrase.",
+      "words": ["G1161", "G4145", "G1656", "G0026", "G0025"],
+      "theology": [
+        {
+          "id": "love",
+          "note": "The cause of salvation is placed entirely in God's character: rich mercy and great love. The love is aimed at people just described as dead and under wrath, which is why Paul elsewhere says God showed his love while we were still sinners (Romans 5:8)."
+        }
+      ],
+      "refs": ["Romans 5:8", "Exodus 34:6", "Titus 3:4-5", "1 John 4:10"]
+    },
+    {
+      "v": "5",
+      "context": "The main verb finally arrives: God “made us alive with Christ even when we were dead in our trespasses”. Paul repeats the description from verse 1 on purpose, so the reader sees that life came while the death was still in force. Then he breaks off with an exclamation of grace, which verse 8 will take up and explain.",
+      "grammar": "Sunezōopoiēsen is a compound verb (sun, ‘with’, plus zōopoieō, ‘make alive’) that appears only here and in Colossians 2:13. It is the first of three sun- verbs (made alive with, raised with, seated with) that tie believers to what God did for Christ in 1:20. The parenthesis chariti este sesōsmenoi, ‘by grace you have been saved’, uses a periphrastic perfect (the verb ‘to be’ with a perfect passive participle). The construction stresses a present state resulting from a past act: you stand saved. That is unusual for Paul, who in his undisputed letters mostly speaks of salvation as future (Romans 5:9-10) and of justification as past; interpreters who question Pauline authorship often point to it, while others note that Paul can speak of salvation as already received (Romans 8:24). Chariti is placed first in its clause for emphasis.",
+      "words": ["G4806", "G5485", "G4982", "G3498"],
+      "text": "A few early manuscripts read ‘in Christ’ (en tō Christō) instead of ‘with Christ’ (tō Christō). The shorter reading fits the sun- compound and most editions print it; the meaning changes little.",
+      "theology": [
+        {
+          "id": "regeneration",
+          "note": "New life is God's act on the dead, not their response to an offer. The verse joins the believer's rebirth to Christ's resurrection: the life given is his risen life shared."
+        },
+        {
+          "id": "salvation",
+          "note": "The perfect tense presents salvation as a secure present possession already given, not only a hope. Verse 8 will restate the same words with ‘through faith’ added."
+        }
+      ],
+      "refs": ["Colossians 2:13", "Romans 6:4-11", "John 5:21", "Romans 8:24"]
+    },
+    {
+      "v": "6-7",
+      "context": "God did not stop at giving life. He raised believers with Christ and seated them with him in the heavenly realms, exactly where 1:20 placed Christ himself. Verse 7 gives the purpose: God intends to display his grace through them for all the ages to come.",
+      "grammar": "Sunēgeiren and sunekathisen (‘raised together’, ‘seated together’) are aorists, the simple past, which present these as accomplished facts, not future hopes. In Romans 6:5 Paul speaks of sharing Christ's resurrection in the future; here the emphasis falls on what is already true in Christ, a difference scholars often cite in the debate over authorship and which others explain by the letter's focus on union with the exalted Christ. En tois epouraniois (‘in the heavenly realms’) is a phrase found only in Ephesians (1:3, 1:20, 2:6, 3:10, 6:12); it names the unseen realm where both Christ reigns and hostile powers still operate. In verse 7 the purpose clause hina endeixētai (‘so that he might display’) uses a middle voice, suggesting God displays his own grace for his own glory. Huperballon, ‘surpassing’, is a favorite word of this letter (1:19, 3:19).",
+      "words": ["G4891", "G4776", "G2032", "G1731", "G5235", "G5544"],
+      "theology": [
+        {
+          "id": "union",
+          "note": "The repeated ‘with Christ’ and ‘in Christ Jesus’ make union with Christ the ground of salvation. What happened to him (resurrection and enthronement) is counted as having happened to those joined to him, so their standing is as secure as his."
+        },
+        {
+          "id": "exaltation",
+          "note": "Christ's enthronement at God's right hand (1:20) is not only his; believers share his seat. The New Testament picture of the saints reigning with Christ (2 Timothy 2:12, Revelation 3:21) is here described as already true in principle."
+        }
+      ],
+      "refs": ["Ephesians 1:20-21", "Colossians 3:1-4", "Romans 6:5", "Revelation 3:21", "Ephesians 3:10"]
+    },
+    {
+      "v": "8",
+      "context": "Paul explains the exclamation of verse 5 (“For it is by grace you have been saved”) and adds the means: “through faith”. He then insists that the whole thing is not from the readers but is God's gift. Verses 8 to 10 are among the most quoted in the Bible on how a person is saved.",
+      "grammar": "The famous question is what touto (‘this’) refers to in kai touto ouk ex humōn, ‘and this not from yourselves’. Touto is neuter, while both charis (‘grace’) and pistis (‘faith’) are feminine, so it cannot refer grammatically to either noun alone. Greek often uses a neuter demonstrative to refer back to a whole idea, as in Philippians 1:28 (kai touto apo theou, ‘and this is from God’). Most modern commentators therefore take ‘this’ as the whole event of being saved by grace through faith. Many of the church fathers, including John Chrysostom in his homilies on Ephesians, took it to include faith itself: even faith is not from ourselves. John Calvin, in his commentary, held that Paul's point was that salvation is the gift, though he taught elsewhere that faith is also God's gift, while Theodore Beza followed the fathers in applying it to faith. The grammar supports the whole-event reading, which includes faith within the gift without making faith alone the antecedent. Dia pisteōs (‘through faith’) names the means, not the ground: faith receives what grace gives.",
+      "words": ["G5485", "G4982", "G4102G", "G3778", "G1435"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "The verse makes grace the source, faith the channel, and God the giver. Whether faith is itself named as the gift here or included within the larger gift, the verse leaves nothing in salvation that originates in the person saved."
+        },
+        {
+          "id": "salvation",
+          "note": "This verse became a banner text of the Reformation. The Council of Trent (1547, session 6, chapter 8) also affirmed that nothing preceding justification, whether faith or works, merits the grace of it, and the Lutheran-Catholic Joint Declaration on the Doctrine of Justification (1999) could affirm together that salvation is by grace alone. The traditions still differ on how faith, works, and the sacraments relate after that first grace."
+        }
+      ],
+      "refs": ["Romans 3:24", "Romans 4:16", "Philippians 1:28-29", "Acts 18:27", "Titus 3:5"]
+    },
+    {
+      "v": "9",
+      "context": "The negative side of verse 8: salvation is “not by works, so that no one can boast”. The purpose clause shows God's intention: a salvation that leaves no human ground for pride. Verse 10 will immediately show that works still have a place, but after salvation and as its fruit.",
+      "grammar": "Ouk ex ergōn, ‘not from works’, balances ouk ex humōn in verse 8. In Romans and Galatians Paul usually says ‘works of the law’ (erga nomou), phrasing that is at the center of the modern debate about whether he mainly meant the Jewish boundary markers (circumcision, food laws, Sabbath), as scholars of the ‘New Perspective’ such as James Dunn and N. T. Wright have emphasized, or human performance in general. Ephesians says simply ‘works’, and scholars on several sides, including Andrew Lincoln in his Word Biblical Commentary (1990), have noted that here the contrast is between God's grace and any human doing. The verb kauchēsētai (‘might boast’) is an aorist subjunctive in a purpose clause introduced by hina mē: God designed salvation so that boasting would have no place.",
+      "words": ["G2041", "G2744"],
+      "theology": [
+        {
+          "id": "justification",
+          "note": "Though Ephesians uses ‘saved’ rather than ‘justified’, verses 8 and 9 state the same principle Paul applies to justification in Romans 3:27-28 and 4:2-5: human works cannot be the ground of standing before God, and so boasting is excluded."
+        }
+      ],
+      "refs": ["Romans 3:27-28", "Romans 4:2-5", "1 Corinthians 1:29-31", "2 Timothy 1:9"]
+    },
+    {
+      "v": "10",
+      "context": "Paul gives the reason boasting is excluded: the saved are God's handiwork, newly created in Christ. Good works are the purpose of the new creation, not its cause. The walk that began in sins (verse 2) now becomes a walk in works God has prepared.",
+      "grammar": "Autou gar esmen poiēma, literally ‘for his we are workmanship’, puts ‘his’ first for emphasis: we are God's doing, not our own. Poiēma is used only here and in Romans 1:20, where it refers to the created world, so the word hints at a new creation parallel to the first. Ktisthentes (‘created’) is the verb for God's creative act, and epi ergois agathois (‘for good works’) states the goal. The relative clause hois proētoimasen ho theos, ‘which God prepared beforehand’, uses a compound verb (pro-, ‘before’, plus hetoimazō, ‘prepare’); the relative pronoun has been attracted into the dative case of its antecedent, a common Greek pattern. The final clause, hina en autois peripatēsōmen, ‘that we should walk in them’, returns to the walk of verse 2 and reverses it.",
+      "words": ["G4161", "G2936", "G2041", "G0018", "G4282", "G4043"],
+      "theology": [
+        {
+          "id": "sanctification",
+          "note": "Good works are neither the root of salvation nor an optional extra. God created the new life for them and prepared them in advance, so a life of good works is the expected shape of salvation, the evidence of God's workmanship."
+        },
+        {
+          "id": "new-creation",
+          "note": "The language of creation (poiēma, ktisthentes) makes conversion a new act of the Creator. Paul says the same outright in 2 Corinthians 5:17 and Galatians 6:15, and 4:24 of this letter speaks of the new self created to be like God."
+        }
+      ],
+      "refs": ["2 Corinthians 5:17", "Ephesians 4:24", "Titus 2:14", "James 2:17-18", "Philippians 2:12-13"]
+    },
+    {
+      "v": "11",
+      "context": "“Therefore remember” opens the second half of the chapter. Verses 1 to 10 told the story of every sinner; verses 11 to 22 tell the story of the Gentiles in particular, once outsiders to Israel's hope. Paul asks the Gentile readers to remember what they were, so they will value what they have become.",
+      "grammar": "Dio (‘therefore’) ties the second half to the first: because God has made the dead alive by grace, the Gentiles should recall their former exclusion. Mnēmoneuete is a present imperative, ‘keep remembering’. Paul uses the passive participle legomenoi twice: Gentiles are ‘called’ uncircumcision by those ‘called’ circumcision. The repetition distances Paul from the labels; they are what people say. The circumcision is described as cheiropoiētou, ‘made by hands’. In the Septuagint that adjective describes idols (Leviticus 26:1, Isaiah 46:6), and in the New Testament it is used for the temple made with hands (Mark 14:58, Acts 7:48). The word does not deny that circumcision was God's command, but it puts physical circumcision on the side of the merely human, set against the circumcision of the heart that God performs (Colossians 2:11).",
+      "words": ["G1352", "G3421", "G1484", "G0203", "G4061", "G5499"],
+      "text": "The manuscripts differ over where the word ‘formerly’ (pote) stands in the sentence; the major editions place it right after ‘that’, the Byzantine text later. The meaning is unaffected.",
+      "refs": ["Colossians 2:11", "Romans 2:28-29", "Galatians 6:15", "Acts 7:48"]
+    },
+    {
+      "v": "12",
+      "context": "Paul lists five losses of the Gentiles' former state: without Christ (the Messiah), excluded from Israel's commonwealth, strangers to the covenants of promise, without hope, and without God. The list moves from the Messiah to God himself, from particular to ultimate.",
+      "grammar": "Chōris Christou (‘without Christ’) here probably means ‘without the Messiah’, the one Israel hoped for, since it heads a list of Israel's privileges. Apēllotriōmenoi (‘alienated’) is a perfect passive participle describing a settled condition of estrangement. Politeia can mean citizenship (the right to belong) or commonwealth (the community itself); either sense fits. The phrase tōn diathēkōn tēs epangelias, ‘the covenants of the promise’, uses the plural covenants (with Abraham, at Sinai, with David, and the new covenant of Jeremiah 31) and the singular promise, the one promise that runs through them all. Atheoi, ‘without God’, gives English its word atheist, though here it means not a denial of God but having no relationship to the true God.",
+      "words": ["G5565", "G0526", "G4174", "G1242", "G1860", "G0112", "G1680"],
+      "history": "Atheoi was a charge that pagans later threw at Christians, who refused to honor the gods of the city. In the Martyrdom of Polycarp (9.2), written about the middle of the second century, the crowd in Smyrna shouts for the removal of the atheists, and Justin Martyr answers the same charge in his First Apology (chapters 5 and 6). Paul turns the word the other way: the Gentiles with their many gods were the ones truly without God.",
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "The Gentiles' plight is defined by exclusion from Israel's covenants. Salvation for the Gentiles, in this chapter, means being brought into the promises God made to Israel, not the replacement of them."
+        },
+        {
+          "id": "israel",
+          "note": "Paul describes the privileges of Israel without a trace of contempt: the commonwealth, the covenants, the promise, and the Messiah were Israel's, as Romans 9:4-5 also says. Gentile believers are joined to this people's hope, not given a different one."
+        }
+      ],
+      "refs": ["Romans 9:4-5", "Galatians 3:16-18", "1 Thessalonians 4:13", "Jeremiah 31:31-33", "Galatians 4:8"]
+    },
+    {
+      "v": "13",
+      "context": "“But now in Christ Jesus” answers “remember that formerly”. The far-off have been brought near, and Paul names the means at once: the blood of Christ. Verse 17 will draw the language of far and near from Isaiah.",
+      "grammar": "Nuni de (‘but now’) is an emphatic form of ‘now’, marking the turn of the ages, as in Romans 3:21. Makran and engus (‘far’ and ‘near’) are adverbs used as nouns. In Jewish usage ‘to bring near’ could describe making a proselyte, a Gentile convert to Judaism, and ‘the near’ could describe Israel (Psalm 148:14 calls Israel the people near to God). Egenēthēte (‘you have become’, aorist passive) presents it as God's act. En tō haimati, ‘by the blood’, is instrumental: the death of Christ, understood as a sacrifice, is the means of bringing near.",
+      "words": ["G3570", "G3112", "G1451", "G1096", "G0129G"],
+      "ot": [
+        {
+          "ref": "Isaiah 57:19",
+          "note": "The far and the near come from Isaiah 57:19, which Paul quotes more fully in verse 17. Here the phrase is only an allusion, but it already sets up Paul's reading: the ‘far’ of the prophecy, originally scattered Israelites and perhaps foreigners, are now the Gentiles, brought near through Christ's blood."
+        }
+      ],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "Nearness to God is achieved by blood, the language of sacrifice. What the temple sacrifices symbolized, access to God's presence, Christ's death accomplishes for those who had no right to approach the temple at all."
+        }
+      ],
+      "refs": ["Romans 3:21-25", "Hebrews 10:19-22", "Acts 2:39", "Psalm 148:14", "Colossians 1:20"]
+    },
+    {
+      "v": "14",
+      "context": "Paul explains how the far were brought near: Christ himself is our peace. He made Jew and Gentile one and destroyed the dividing wall of hostility. The word peace appears four times in verses 14 to 17, making it the key word of the paragraph.",
+      "grammar": "Autos gar estin hē eirēnē hēmōn puts the emphatic pronoun first: ‘for he himself is our peace’, not merely the maker of peace. Ta amphotera hen (‘both one’) uses neuter forms, which treats Jew and Gentile as two groups or entities rather than two persons; verse 15 will switch to masculine forms (tous duo, ‘the two men’). To mesotoichon tou phragmou, literally ‘the middle wall of the fence’, is an unusual double expression: mesotoichon (found only here in the New Testament) is a dividing wall, and phragmos a fence or barrier. Lusas (‘having destroyed’) is an aorist participle, the act complete. Grammarians divide over where to join tēn echthran (‘the hostility’): as further explaining the wall (the wall, that is, the hostility) or as the object of katargēsas in verse 15 (‘abolishing in his flesh the hostility, the law’). The BSB follows the first.",
+      "words": ["G1515", "G0297", "G1520", "G3320", "G5418", "G3089", "G2189"],
+      "history": "Herod's temple in Jerusalem had a low stone barrier, called the soreg in the Mishnah (m. Middot 2:3), separating the outer court open to Gentiles from the inner courts. Josephus describes pillars along it carrying warnings in Greek and Latin that no foreigner could pass on pain of death (Jewish War 5.193-194; Antiquities 15.417), and Philo mentions the death penalty as well (Embassy to Gaius 212). In 1871 Charles Clermont-Ganneau found a complete Greek copy of the warning, now in the Istanbul Archaeology Museums, and a fragment of another was found in 1935. Acts 21:28-29 says Paul was nearly killed because he was thought to have brought a Gentile beyond that barrier. Interpreters also connect the image with the law as a fence around Israel: the Letter of Aristeas (139-142) says Moses surrounded the Jews with unbroken palisades and iron walls so they would not mix with other nations. Heinrich Schlier proposed a heavenly wall from Gnostic myth, a view now rarely held.",
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "Peace with God and peace between peoples are one work. Christ is the peace, so reconciliation is not a program the church adds to the gospel but part of what the cross accomplished."
+        }
+      ],
+      "refs": ["Acts 21:28-29", "Micah 5:5", "Isaiah 9:6", "Galatians 3:28", "Colossians 3:11"]
+    },
+    {
+      "v": "15",
+      "context": "Paul names the barrier more precisely: “the law of commandments and decrees”, set aside in Christ's flesh. The purpose was to create one new humanity from the two, which is how he makes peace.",
+      "grammar": "Ton nomon tōn entolōn en dogmasin katargēsas is literally ‘having nullified the law of the commandments in decrees’. The piling up of terms (law, commandments, decrees) points to the law in its regulations, especially those that set Israel apart. Katargeō means to render ineffective or inoperative, the same verb Paul uses in Romans 3:31, where he denies that faith nullifies the law; the tension between the two verses is one reason interpreters distinguish between the law as a dividing code and the law's moral witness (see the chapter note). The purpose clause hina tous duo ktisē en autō eis hena kainon anthrōpon, ‘that he might create the two in himself into one new man’, uses the creation verb ktizō again (as in verse 10). Kainos means new in kind, not merely recent: the result is not Gentiles turned into Jews or Jews into Gentiles but a new humanity. Poiōn eirēnēn (‘making peace’) is a present participle describing the result.",
+      "words": ["G3551", "G1785", "G1378", "G2673", "G2936", "G2537", "G0444"],
+      "text": "Editions differ between en autō (‘in him’) and en heautō (‘in himself’); the Westcott and Hort and SBL editions print the reflexive. In a Greek text originally written without breathing marks the two can be spelled the same way, and the meaning is the same.",
+      "history": "Early Christians soon described themselves as a new kind of people. The Preaching of Peter, a second-century work quoted by Clement of Alexandria (Stromata 6.5.41), calls Christians those who worship God in a new way as a third race, alongside Greeks and Jews, and the Epistle to Diognetus (chapter 1) speaks of Christians as a new race. The phrase ‘one new man’ stands at the root of that self-understanding, though Ephesians itself speaks of the Gentiles joining Israel's hope rather than leaving Israel behind.",
+      "theology": [
+        {
+          "id": "law",
+          "note": "The law as a set of commandments separating Jew from Gentile no longer defines membership in God's people. Christian traditions explain the scope differently (the ceremonial law only, or the Mosaic covenant as a whole), but all agree the verse removes the law as a wall."
+        },
+        {
+          "id": "church",
+          "note": "The church is not a merger of two existing groups but a new creation, one humanity made in Christ. Its unity across the deepest division of the ancient world is itself a creation of God."
+        }
+      ],
+      "refs": ["Colossians 2:14", "Romans 3:31", "Romans 10:4", "Galatians 3:28", "2 Corinthians 5:17"]
+    },
+    {
+      "v": "16",
+      "context": "The purpose continues: Christ reconciles both groups to God in one body through the cross. The horizontal peace of verse 15 rests on this vertical peace. The cross that killed Christ also killed the hostility.",
+      "grammar": "Apokatallaxē (‘he might reconcile’) is a double compound (apo, kata, allassō) found only here and in Colossians 1:20, 22; it may intensify the ordinary word for reconciliation. En heni sōmati (‘in one body’) can mean Christ's physical body on the cross or the church as his body (1:23, 4:4); many interpreters think Paul means the church, created through the crucified body. Apokteinas tēn echthran en autō, ‘having killed the hostility in it (or in him)’, is a vivid play: the one who was put to death put hostility to death. En autō can refer to the cross or to Christ himself.",
+      "words": ["G0604", "G0297", "G4983", "G4716", "G0615", "G2189"],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The verse says reconciliation is ‘to God’ first. Hostility between people and God (verse 3's wrath) is dealt with at the cross, and because both groups are reconciled to the same God, they are reconciled to each other."
+        }
+      ],
+      "refs": ["Colossians 1:20-22", "2 Corinthians 5:18-19", "Romans 5:10", "1 Corinthians 12:13"]
+    },
+    {
+      "v": "17",
+      "context": "Christ came and announced peace to the far and to the near, in words taken from Isaiah. Paul probably means the proclamation of the risen Christ through his apostles, since the Gentile mission followed the resurrection, though some think of Jesus' earthly ministry.",
+      "grammar": "Elthōn euēngelisato eirēnēn, ‘having come he preached peace’, uses euangelizomai, the verb for announcing good news, which echoes Isaiah 52:7, where the messenger on the mountains announces peace. The repetition of eirēnēn (‘peace ... and peace’) follows the Hebrew of Isaiah 57:19, which doubles the word. The order ‘far’ then ‘near’ puts the Gentiles first.",
+      "words": ["G2064", "G2097", "G1515", "G3112", "G1451"],
+      "ot": [
+        {
+          "ref": "Isaiah 57:19",
+          "note": "The Hebrew reads shalom shalom larachoq velaqqarov, ‘peace, peace to the far and to the near’, the doubled word expressing complete peace; the LORD speaks it to his contrite people after judgment. The Septuagint renders it ‘peace upon peace to those far and those near’. In Isaiah the far are most likely Israelites scattered in exile and the near those in the land, and the Babylonian Talmud (Berakhot 34b) records Rabbi Abbahu reading the far as penitents. Paul keeps the doubled ‘peace’ but applies the far to Gentiles, a move prepared by Isaiah 56:3-8, where foreigners are gathered to the LORD's house of prayer for all peoples."
+        },
+        {
+          "ref": "Isaiah 52:7",
+          "note": "Isaiah pictures a herald running over the mountains to announce peace and salvation to Zion, and the Septuagint uses the verb euangelizomai for the herald's news. Paul's ‘preached peace’ echoes the same verb, presenting Christ as the herald of Isaiah's good news. Paul quotes Isaiah 52:7 directly in Romans 10:15 and alludes to it again in Ephesians 6:15."
+        }
+      ],
+      "refs": ["Isaiah 57:19", "Isaiah 52:7", "Acts 10:36", "Ephesians 6:15", "Isaiah 56:6-8"]
+    },
+    {
+      "v": "18",
+      "context": "The result of Christ's work: Jew and Gentile together have access to the Father through Christ by one Spirit. The verse is one of the New Testament's compact Trinitarian statements, woven into the argument rather than set out as doctrine.",
+      "grammar": "Hoti (‘for’) gives the evidence that peace has been made: common access. Prosagōgē (‘access’ or ‘introduction’) was used for being brought into a ruler's presence and, in worship, for approaching God; its cognate verb prosagō is the Septuagint's regular word for bringing an offering near. Echomen is present tense: the access is a present possession. The prepositions trace the shape of the Christian approach to God: di' autou (‘through him’, the Son), en heni pneumati (‘in one Spirit’), pros ton patera (‘to the Father’).",
+      "words": ["G4318", "G2192", "G4151G", "G3962"],
+      "theology": [
+        {
+          "id": "trinity",
+          "note": "Access to God is through the Son, in the Spirit, to the Father. The verse does not define the Trinity, but it shows that Christian prayer and worship are shaped by all three, which is part of the ground from which the doctrine grew."
+        },
+        {
+          "id": "worship",
+          "note": "What the temple barrier prevented, Gentiles approaching God, is now open to both groups equally. Worship is defined by access through Christ, not by a place or an ethnic boundary."
+        }
+      ],
+      "refs": ["Romans 5:2", "Ephesians 3:12", "Hebrews 10:19-22", "1 Peter 3:18", "1 Corinthians 12:13"]
+    },
+    {
+      "v": "19",
+      "context": "“Therefore” draws the conclusion. The Gentile believers are no longer strangers and resident aliens but fellow citizens with the saints and members of God's household. Paul answers each loss in verse 12 with a gain.",
+      "grammar": "Ara oun (‘so then’) is a doubled inferential particle, a strong ‘therefore’. Xenoi are foreigners without rights; paroikoi are resident aliens, people who live in a place without citizenship. In the Septuagint Abraham calls himself paroikos kai parepidēmos, ‘a sojourner and stranger’, among the Hittites (Genesis 23:4). Sumpolitai (‘fellow citizens’) and oikeioi (‘members of the household’) move from civic to family language. ‘The saints’ (tōn hagiōn) most likely means God's people as a whole, Israel's faithful and the church, though some take it as the Jewish Christians or even the angels.",
+      "words": ["G3581", "G3941", "G4847", "G0040H", "G3609"],
+      "history": "Greek cities sharply distinguished citizens from resident foreigners (called metoikoi in Athens, paroikoi in many other cities), who paid taxes but had no vote and could not own land in some places. In the Septuagint paroikos is the ordinary word for the resident alien (the Hebrew ger) whom Israel was commanded to protect (Leviticus 19:33-34). First Peter uses the same words to describe Christians as exiles in the world (1 Peter 2:11), the reverse image: members of God's household can still be strangers in society.",
+      "theology": [
+        {
+          "id": "church",
+          "note": "The church is both a commonwealth and a household. The Gentiles are not guests but full citizens and family, with the same standing before God as the people of Israel who believe."
+        }
+      ],
+      "refs": ["Genesis 23:4", "Philippians 3:20", "Galatians 6:10", "1 Peter 2:11", "Hebrews 12:22-23"]
+    },
+    {
+      "v": "20",
+      "context": "The household becomes a building. Its foundation is the apostles and prophets, and Christ Jesus himself is the cornerstone. Paul moves from family to architecture to prepare for the climax: a temple.",
+      "grammar": "Epoikodomēthentes (‘having been built upon’) is an aorist passive participle: God is the builder. Tōn apostolōn kai prophētōn has one article covering both nouns, which has led to three readings: two groups (apostles and New Testament prophets), one group described two ways (apostles who are prophets, argued by Wayne Grudem in The Gift of Prophecy in the New Testament and Today, 1988), or apostles with the Old Testament prophets. The word order (apostles first) and 3:5 and 4:11, where prophets are church figures, favor New Testament prophets. Akrogōniaios (‘cornerstone’) could mean the corner foundation stone that set the building's alignment or, as Joachim Jeremias argued, a capstone at the top of an arch; the word's origin in Isaiah 28:16, where the stone is laid in the foundations, favors the first.",
+      "words": ["G2026", "G2310", "G0652", "G4396", "G0204"],
+      "ot": [
+        {
+          "ref": "Isaiah 28:16",
+          "note": "The Hebrew speaks of the LORD laying in Zion a tested stone, a precious cornerstone (pinnat yiqrat), a sure foundation, set against the rulers in Jerusalem who trusted in a covenant with death. The Septuagint renders the corner stone with akrogōniaios, the word Ephesians uses, and adds ‘into its foundations’. The Qumran community applied the same verse to itself as the tested wall and precious cornerstone (1QS 8:7-8), and 1 Peter 2:6 and Romans 9:33 apply it to Christ. Ephesians joins the image to the church built on him."
+        }
+      ],
+      "theology": [
+        {
+          "id": "church",
+          "note": "The church's foundation is apostolic and prophetic testimony, with Christ as the stone that fixes everything. Traditions differ on whether the foundation is laid once (the apostolic witness preserved in Scripture) or continues in an apostolic office, but all agree Christ is the stone on which it rests."
+        }
+      ],
+      "refs": ["Isaiah 28:16", "1 Peter 2:4-7", "Psalm 118:22", "1 Corinthians 3:10-11", "Revelation 21:14"]
+    },
+    {
+      "v": "21-22",
+      "context": "The building grows into a holy temple in the Lord, and the readers are being built together into God's dwelling by the Spirit. The chapter that began with the dead ends with the living God making his home among Jews and Gentiles together.",
+      "grammar": "Pasa oikodomē (without the article) would normally mean ‘every building’, which some have taken to mean each local congregation; most read it as ‘the whole building’, a sense attested in Hellenistic Greek, and some manuscripts add the article to make that explicit. Sunarmologoumenē (‘being fitted together’) is a present passive participle describing a building still under construction, and auxei (‘grows’) mixes the organic image of the body with the image of a building. Naos is the word for the inner sanctuary, the place of God's presence, not the wider temple precincts (hieron). Katoikētērion (‘dwelling place’) is used in the Septuagint for God's dwelling in heaven or in the temple (1 Kings 8:39, 43). En pneumati (‘in the Spirit’) can mean ‘by the Spirit’ or ‘spiritually’; either way, God dwells among his people through his Spirit.",
+      "words": ["G3619", "G4883", "G0837", "G3485", "G2732", "G4925"],
+      "history": "The Qumran community also described itself as a temple: the Community Rule speaks of the council of the community as a holy house for Israel (1QS 8:5-6), a people who saw the Jerusalem priesthood as corrupt. Ephesians shares the idea of a living temple but differs in who belongs: not a separated priestly community but Jews and Gentiles together.",
+      "theology": [
+        {
+          "id": "temple",
+          "note": "The temple, the place where God's presence dwelt in Israel, becomes a people. The Gentiles who were shut out by the temple's barrier are now built into the sanctuary itself. The same idea appears in 1 Corinthians 3:16 and 1 Peter 2:5."
+        },
+        {
+          "id": "spirit",
+          "note": "God's dwelling among his people is by the Spirit. The chapter ends Trinitarian, as verse 18 did: in the Lord Jesus, a dwelling for God, by the Spirit."
+        }
+      ],
+      "refs": ["1 Corinthians 3:16-17", "1 Peter 2:5", "2 Corinthians 6:16", "Ephesians 4:15-16", "1 Kings 8:27"]
+    }
+  ]
+}

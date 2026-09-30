@@ -1,0 +1,407 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "The final movement of the argument (10:1-18) begins with “for”, grounding what chapter 9 said about the once-for-all offering. The law has only a shadow of the good things to come, not their very form, and so its sacrifices, repeated every year, can never perfect those who draw near.",
+      "grammar": "Skian gar echōn ho nomos, ‘for the law, having a shadow’, puts ‘shadow’ first for emphasis. Tōn mellontōn agathōn, ‘of the good things to come’, is future from the standpoint of the law. Ouk autēn tēn eikona tōn pragmatōn, ‘not the very image of the realities’: eikōn here is not a copy but the real form or embodiment, as in Colossians 1:15, where Christ is the eikōn of God; the contrast is between a shadow and the substance itself. Kat' eniauton, ‘year by year’, points to the Day of Atonement. Eis to diēnekes (‘perpetually’) can go with ‘offer’ (they offer continually) or with ‘can never’ (they can never at any time); both fit. Teleiōsai (‘to perfect’) repeats the chapter 9 theme.",
+      "words": ["G4639", "G3551", "G3195", "G0018", "G1504", "G4229", "G1763", "G2378", "G4374", "G1336", "G3763", "G1410", "G4334", "G5048"],
+      "text": "Most editions read dunatai, ‘it (the law) can never’; other editions read dunantai, ‘they (the priests) can never’, which several important manuscripts support. The early papyrus P46 also reads ‘a shadow and the image’ instead of ‘not the very image’, a reading most editors regard as a scribal slip. The main sense is unaffected.",
+      "theology": [
+        {
+          "id": "law",
+          "note": "The law is called a shadow cast by the good things to come. It pointed truly to Christ's work and so was not false, but it could not supply the reality it pictured."
+        }
+      ],
+      "refs": ["Colossians 2:16-17", "Hebrews 8:5", "Hebrews 9:9", "Hebrews 9:11", "Galatians 3:24"]
+    },
+    {
+      "v": "2-3",
+      "context": "If the sacrifices could perfect the worshipers, they would have stopped, since worshipers cleansed once would have no more consciousness of sins. Instead, the annual sacrifices brought sins to mind every year.",
+      "grammar": "Epei ouk an epausanto prospheromenai; is a rhetorical question: ‘otherwise would they not have ceased being offered?’ The reasoning is that repetition proves inadequacy. Dia to mēdemian echein eti suneidēsin hamartiōn, ‘because of having no longer any consciousness of sins’, uses suneidēsis in the sense of an awareness of guilt that burdens the conscience. Hapax kekatharismenous, ‘once cleansed’, is a perfect participle: a cleansing with lasting effect. Anamnēsis hamartiōn, ‘a reminder of sins’, is the noun Jesus uses at the Supper, ‘in remembrance of Me’ (Luke 22:19); the old rite kept sins in memory, the new meal keeps Christ's sacrifice in memory.",
+      "words": ["G3973", "G4374", "G4893", "G0266", "G3000", "G0530", "G2511", "G0364", "G1763"],
+      "history": "The Day of Atonement opened with the high priest's confession over his bull and then over the goat for the people, naming the iniquities, transgressions, and sins of Israel (Leviticus 16:21; m. Yoma 3:8, 4:2, 6:2). The ritual was, as Hebrews says, an annual public remembrance of sin.",
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "A sacrifice that has to be repeated leaves the conscience unresolved. Christ's single offering makes possible a conscience no longer burdened with the question of whether sin has been dealt with."
+        }
+      ],
+      "refs": ["Leviticus 16:21", "Leviticus 16:34", "Hebrews 9:9", "Hebrews 9:14", "Luke 22:19"]
+    },
+    {
+      "v": "4",
+      "context": "The reason is stated bluntly: it is impossible for the blood of bulls and goats to take away sins. The verse is the ground for the psalm quotation that follows, which shows that God himself said so.",
+      "grammar": "Adunaton gar, ‘for it is impossible’, uses the word of 6:4, 6:18, and 11:6. Aphairein hamartias, ‘to take away sins’, is the verb of lifting something off, the language of removing guilt (Exodus 34:7 and Numbers 14:18 in the Septuagint speak of God ‘taking away’ lawlessness). Taurōn kai tragōn, ‘bulls and goats’, names the Day of Atonement victims again.",
+      "words": ["G0102", "G0129G", "G5022", "G5131", "G0851", "G0266"],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "Animal blood could not take away human sin. The sacrifices were God's appointed signs, effective for ritual cleansing and the covenant's ongoing life, but the reality of atonement required a human offering and a perfect one."
+        }
+      ],
+      "refs": ["Psalm 51:16-17", "Micah 6:6-7", "Isaiah 1:11", "Hebrews 9:13-14"]
+    },
+    {
+      "v": "5",
+      "context": "“Therefore” introduces Psalm 40 as the words of Christ as he came into the world. The psalm says God did not desire sacrifice and offering but prepared a body; the author will build his argument on that body in verse 10.",
+      "grammar": "Eiserchomenos eis ton kosmon, ‘coming into the world’, is a present participle, the speech set at the moment of the incarnation (compare John 1:9, 18:37). Legei (‘he says’) is present, as Hebrews treats Scripture as living speech. Thusian kai prosphoran ouk ēthelēsas, ‘sacrifice and offering you did not want’. Sōma de katērtisō moi, ‘but a body you prepared for me’, uses katartizō, ‘to fit out, equip, make complete’, the verb of 11:3 for the worlds framed by God's word. The aorist middle suggests God preparing the body for his own purpose.",
+      "words": ["G1525", "G2889", "G3004G", "G2378", "G4376", "G2309", "G4983", "G2675"],
+      "ot": [
+        {
+          "ref": "Psalm 40:6",
+          "note": "The Hebrew reads zevach uminchah lo chafatsta oznayim karita li, ‘sacrifice and offering you did not delight in; ears you have dug for me’, a vivid way of saying God opened the psalmist's ears to hear and obey. The major Greek manuscripts of the Psalms (Psalm 39:7 in the Septuagint) read sōma de katērtisō moi, ‘a body you prepared for me’, and Hebrews follows them. Alfred Rahlfs, in the Göttingen edition of the Septuagint Psalms (1931), printed ōtia, ‘ears’, which matches the Hebrew, judging sōma a later reading. Scholars divide on how sōma arose: some think it came from a copying error in which the last letter of the preceding word and the letters of ōtia were misread as sōma; some that Christian scribes brought the Psalter into line with Hebrews; others that the translator himself interpreted the part (ears) by the whole (the body that obeys). Either way the Greek preserves the psalm's point, that God wants an obedient person rather than ritual, and Hebrews finds in the word ‘body’ the incarnation through which that obedience was offered."
+        }
+      ],
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "The Son's coming into the world is described as God preparing a body for him. The incarnation is the means of the atonement: the obedience God desired had to be offered in a human body, and the Son took one for that purpose."
+        }
+      ],
+      "refs": ["Psalm 40:6-8", "John 1:9", "Galatians 4:4", "Philippians 2:7", "1 Samuel 15:22"]
+    },
+    {
+      "v": "6-7",
+      "context": "The quotation continues: burnt offerings and sin offerings gave God no pleasure. Then the speaker said, ‘Here I am, I have come to do your will, as it is written of me in the scroll.’ The psalm's contrast is between sacrifice and obedience.",
+      "grammar": "Holokautōmata kai peri hamartias, ‘whole burnt offerings and sin offerings’: peri hamartias (‘concerning sin’) is the Septuagint's standard phrase for the sin offering. Ouk eudokēsas, ‘you took no pleasure’, where the Septuagint has ouk ētēsas, ‘you did not ask’. Tote eipon, ‘then I said’, marks the turn. Idou hēkō, ‘behold, I have come’, uses hēkō, a present with perfect meaning: ‘I am here’. En kephalidi bibliou gegraptai peri emou, ‘in the roll of the book it is written of me’: kephalis was the knob at the end of the rod around which a scroll was wound, and so the scroll itself. Tou poiēsai… to thelēma sou, ‘to do your will’, is an articular infinitive of purpose; Hebrews moves it to the end and drops the psalm's ēboulēthēn (‘I desired’), so that the sentence reads ‘I have come to do your will’.",
+      "words": ["G3646", "G0266", "G2106", "G5119", "G2036", "G2400", "G2240", "G2777", "G0975", "G1125", "G4160G", "G2316", "G2307"],
+      "ot": [
+        {
+          "ref": "Psalm 40:7-8",
+          "note": "The Hebrew continues olah vachataah lo shaalta, az amarti hinneh vati bimgillat sefer katuv alai, laasot retsonkha elohai chafatsti vetoratkha betokh meai: ‘burnt offering and sin offering you did not ask; then I said, Here I come; in the scroll of the book it is written of me; I delight to do your will, my God, and your law is within my heart.’ The Septuagint follows the Hebrew closely. Hebrews changes ‘did not ask’ to ‘took no pleasure’, reorders the last line, and stops before ‘your law is within my heart’. In the psalm David, delivered from trouble, offers himself in obedience rather than only in sacrifice, a theme shared with 1 Samuel 15:22 and Psalm 51:16-17. Hebrews hears the psalm spoken by David's greater Son, whose obedience fulfilled what the psalmist could only offer in part. The omitted line about the law on the heart may be deliberate, since 10:16 will quote Jeremiah's promise of the law written on hearts."
+        }
+      ],
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "The ‘scroll of the book’ in which Christ is written is, for Hebrews, Scripture as a whole. Christ comes as the one of whom it speaks, the same conviction Jesus expresses in Luke 24:27 and John 5:39."
+        }
+      ],
+      "refs": ["Psalm 40:7-8", "Luke 24:27", "John 5:39", "John 4:34", "John 6:38"]
+    },
+    {
+      "v": "8-9",
+      "context": "The author interprets the quotation phrase by phrase. First the psalm rejects the sacrifices the law prescribes; then it says ‘I have come to do your will’. The conclusion: he takes away the first to establish the second.",
+      "grammar": "Anōteron legōn, ‘saying above’, means ‘saying first’, in the earlier part of the quotation. The author combines the psalm's four terms into one list: thusias kai prosphoras kai holokautōmata kai peri hamartias, ‘sacrifices and offerings and burnt offerings and sin offerings’. The parenthesis aitines kata nomon prospherontai, ‘which are offered according to the law’, is the sting: the psalm rejects offerings the law itself required. Tote eirēken, ‘then he has said’, is a perfect: the second statement stands. Anairei to prōton hina to deuteron stēsē, ‘he takes away the first in order to establish the second’: anaireō means to abolish or even to kill, and histēmi (‘to establish’) is the language of setting up a covenant (compare 8:13).",
+      "words": ["G0511", "G3004G", "G2378", "G4376", "G3646", "G2309", "G2106", "G3551", "G4374", "G5119", "G2046", "G2400", "G2240", "G2307", "G0337", "G4413G", "G1208", "G2476"],
+      "theology": [
+        {
+          "id": "law",
+          "note": "The psalm's own words show that the sacrificial system was never God's final aim. The ‘first’ (the offerings of the law) gives way to the ‘second’ (the will of God done in obedience), a change made by God and announced in Israel's Scriptures."
+        },
+        {
+          "id": "covenant",
+          "note": "‘He takes away the first to establish the second’ restates the covenant argument of 8:13 in terms of sacrifice. The new covenant rests on the fulfilled will of God, not on repeated offerings."
+        }
+      ],
+      "refs": ["Hebrews 8:13", "1 Samuel 15:22", "Hosea 6:6", "Matthew 9:13", "Hebrews 7:18-19"]
+    },
+    {
+      "v": "10",
+      "context": "The psalm's ‘will’ is now identified: by that will believers have been sanctified, through the offering of the body of Jesus Christ once for all. The ‘body’ of verse 5 has become the sacrifice.",
+      "grammar": "En hō thelēmati, ‘by which will’, refers to the will of God that Christ came to do. Hēgiasmenoi esmen, ‘we have been sanctified’, is a periphrastic perfect passive: a completed consecration that remains in force. In Hebrews hagiazō means to consecrate, to make fit for God's presence (2:11, 10:14, 10:29, 13:12), as priests and vessels were consecrated for service. Dia tēs prosphoras tou sōmatos Iēsou Christou, ‘through the offering of the body of Jesus Christ’, uses the full name, rare in Hebrews (13:8, 13:21). Ephapax (‘once for all’) stands at the end for emphasis.",
+      "words": ["G2307", "G0037", "G4376", "G4983", "G2424G", "G5547", "G2178"],
+      "theology": [
+        {
+          "id": "sanctification",
+          "note": "Believers ‘have been sanctified’ by Christ's offering: consecrated to God once and for all, the sense the Reformed theologian John Murray called definitive sanctification. Hebrews also speaks of the ongoing pursuit of holiness (12:14); the two belong together, the first as the ground of the second."
+        },
+        {
+          "id": "atonement",
+          "note": "The offering of Christ's body fulfills the will of God that sacrifices could not. The atonement is at once an act of obedience and an act of sacrifice, the obedient Son giving his body."
+        }
+      ],
+      "refs": ["Hebrews 2:11", "Hebrews 13:12", "Ephesians 5:2", "1 Peter 2:24", "John 17:19"]
+    },
+    {
+      "v": "11-12",
+      "context": "A picture sums up the contrast. Every priest stands day after day offering the same sacrifices that can never take away sins; Christ, having offered one sacrifice for sins, sat down at God's right hand.",
+      "grammar": "Hestēken (‘stands’) is a perfect with present meaning, and it carries the image: priests never sat in the sanctuary, which had no seat for them, because their work was never done. Kath' hēmeran (‘daily’), pollakis (‘often’), and tas autas (‘the same’) pile up the repetition. Perielein hamartias, ‘to strip away sins’, is a stronger compound than aphairein in verse 4, like removing a garment entirely. In verse 12 houtos de, ‘but this one’, turns to Christ. Mian… thusian, ‘one sacrifice’, stands against ‘the same sacrifices often’. The phrase eis to diēnekes can go with what precedes (‘offered one sacrifice for all time’, as the BSB takes it) or with what follows (‘sat down in perpetuity’); Greek manuscripts had no punctuation, and editors divide. Ekathisen en dexia tou theou (‘sat down at the right hand of God’) is Psalm 110:1 again.",
+      "words": ["G2409", "G2476", "G2250", "G3008", "G4178", "G4374", "G2378", "G3763", "G1410", "G4014", "G0266", "G1520", "G1336", "G2523", "G1188"],
+      "text": "Most editions read houtos, ‘this one’; the Textus Receptus reads autos, ‘he’. The meaning is the same.",
+      "theology": [
+        {
+          "id": "exaltation",
+          "note": "Christ's sitting down is the sign that his sacrifice is finished. His exaltation is not only a reward but a statement about the completeness of the atonement."
+        },
+        {
+          "id": "atonement",
+          "note": "The contrast of standing and sitting makes the letter's argument visible: many sacrifices that never finish, one sacrifice that is complete."
+        }
+      ],
+      "refs": ["Psalm 110:1", "Hebrews 1:3", "Hebrews 8:1", "John 19:30", "Numbers 28:3-4"]
+    },
+    {
+      "v": "13-14",
+      "context": "Christ now waits for his enemies to be made his footstool, the second half of Psalm 110:1. The reason he can wait at rest: by one offering he has perfected for all time those who are being sanctified.",
+      "grammar": "To loipon ekdechomenos, ‘for the rest (of the time) waiting’, pictures the interval between Christ's session and the final subjugation of his enemies. Heōs tethōsin hoi echthroi autou hupopodion tōn podōn autou, ‘until his enemies are placed as a footstool for his feet’, is an aorist passive subjunctive: God will do it. Mia gar prosphora teteleiōken, ‘for by one offering he has perfected’, uses a perfect active: the perfecting is complete and its effect remains. Tous hagiazomenous (‘those being sanctified’) is a present passive participle. It may describe people in the process of being made holy, or, as a timeless present, simply ‘the sanctified’, the class of people for whom he offered himself; interpreters divide, and the combination with the perfect ‘has perfected’ is the verse's paradox.",
+      "words": ["G3063", "G1551", "G5087", "G2190", "G5286", "G4228", "G1520", "G4376", "G5048", "G1336", "G0037"],
+      "theology": [
+        {
+          "id": "sanctification",
+          "note": "A completed perfection and an ongoing sanctification stand side by side. Believers' standing before God is settled by Christ's offering, while their growth in holiness continues, and the first secures the second."
+        },
+        {
+          "id": "kingdom",
+          "note": "Christ reigns now and waits for the full subjection of his enemies. The verse places the church in that interval: the decisive work is done, the final victory is certain and still to come (1 Corinthians 15:25)."
+        }
+      ],
+      "refs": ["Psalm 110:1", "1 Corinthians 15:25-28", "Hebrews 2:8", "Hebrews 10:10", "Hebrews 12:14"]
+    },
+    {
+      "v": "15-17",
+      "context": "The Holy Spirit testifies to the same point through Jeremiah, quoted again from 8:10-12 in shortened form. The author keeps two promises: the law written on hearts and minds, and sins and lawless deeds remembered no more.",
+      "grammar": "Marturei de hēmin kai to pneuma to hagion, ‘and the Holy Spirit also testifies to us’: the present tense makes the prophecy the Spirit's present witness to the church. Meta gar to eirēkenai, ‘for after having said’, begins a sentence whose second half is left implicit before verse 17; the BSB supplies ‘Then He adds’. Pros autous (‘with them’) replaces ‘with the house of Israel’ in 8:10. Epi kardias autōn kai epi tēn dianoian autōn reverses the order of 8:10 (hearts, then minds). In verse 17 kai tōn anomiōn autōn (‘and their lawless deeds’) is added to ‘their sins’, and ou mē mnēsthēsomai eti uses a future passive where 8:12 had the aorist subjunctive, with the same emphatic sense.",
+      "words": ["G3140", "G4151G", "G0040G", "G2046", "G1242", "G1303", "G2250", "G1325", "G3551", "G2588", "G1271", "G1924", "G0266", "G0458", "G3403"],
+      "text": "A few late manuscripts insert ‘afterward he says’ (husteron legei) before verse 17 to make the sentence complete, which English translations imitate with ‘then he adds’. The Textus Receptus reads proeirēkenai (‘having said before’) in verse 15, and mnēsthō in verse 17, matching 8:12. None of these changes the sense.",
+      "ot": [
+        {
+          "ref": "Jeremiah 31:33-34",
+          "note": "The Hebrew and Septuagint forms were compared at 8:8-12. Here Hebrews quotes selectively, keeping only the inner law and the forgiveness of sins and leaving out the promise that no one will need to teach his neighbor. The selection serves the argument of 10:1-18: the new covenant's promised forgiveness is now real, so the sacrifices that kept sins in remembrance (verse 3) are answered by God's promise to remember them no more."
+        }
+      ],
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "The Holy Spirit is presented as the one who speaks in Scripture and bears witness now. Hebrews ties the Spirit's testimony to the new covenant, whose promise of an inward law the Spirit fulfills (Ezekiel 36:26-27)."
+        },
+        {
+          "id": "covenant",
+          "note": "The new covenant's forgiveness is the conclusion of the whole argument of chapters 7-10. God's forgetting of sins is not indifference but a covenant promise kept through the sacrifice of Christ."
+        }
+      ],
+      "refs": ["Hebrews 8:10-12", "Jeremiah 31:33-34", "Hebrews 3:7", "Ezekiel 36:26-27", "Isaiah 43:25"]
+    },
+    {
+      "v": "18",
+      "context": "The doctrinal section of the letter ends in a single sentence: where these sins have been forgiven, there is no longer any offering for sin. Everything from 4:14 has been leading here, and the exhortations of verse 19 onward rest on it.",
+      "grammar": "Hopou de aphesis toutōn, ‘and where there is forgiveness of these’, with toutōn referring back to the sins and lawless deeds of verse 17. Ouketi prosphora peri hamartias, ‘no longer an offering for sin’, has no verb; the ellipsis gives it the force of a verdict. Aphesis (‘forgiveness’, ‘release’) was used for the release of debts and slaves in the jubilee (Leviticus 25:10 in the Septuagint).",
+      "words": ["G0859", "G3778", "G3756", "G4376", "G0266"],
+      "history": "The verse became a focal text in the sixteenth-century debate over the Mass. The Council of Trent (Session 22, 1562) taught that the Mass is a true propitiatory sacrifice, the same sacrifice as the cross offered in an unbloody manner, and not a repetition of it. The Reformers, notably Calvin (Institutes 4.18), cited Hebrews 10 against any continuing sacrifice for sin. Catholic theology answers that the Mass re-presents the one sacrifice rather than adding to it; Protestant traditions hold that the Supper remembers and proclaims a sacrifice complete in itself.",
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "Complete forgiveness ends the need for further offering. The finality of Christ's sacrifice is the ground of assurance: nothing remains to be paid."
+        },
+        {
+          "id": "sacraments",
+          "note": "Christians disagree on how the Lord's Supper relates to Christ's sacrifice, as the Trent and Reformation debate shows, but all historic traditions affirm that the cross itself is unrepeatable and sufficient."
+        }
+      ],
+      "refs": ["Hebrews 9:25-28", "Hebrews 10:14", "Romans 6:10", "1 Corinthians 11:26", "Leviticus 25:10"]
+    },
+    {
+      "v": "19-20",
+      "context": "The letter turns from teaching to exhortation. Verses 19-25 are one long Greek sentence: since we have confidence to enter the sanctuary by Jesus' blood, through the new and living way he opened through the curtain, that is, his flesh, and a great priest over God's house, let us draw near, hold fast, and consider one another.",
+      "grammar": "Echontes oun, ‘having therefore’, draws the practical conclusion from 4:14-10:18, and matches ‘since we have’ in 4:14. Parrēsian eis tēn eisodon tōn hagiōn, ‘confidence for the entrance into the sanctuary’, gives to every believer the access that belonged to the high priest once a year. Enekainisen (‘he inaugurated’) is the verb used of the first covenant's inauguration in 9:18. Hodon prosphaton kai zōsan, ‘a new and living way’: prosphatos originally meant ‘freshly slaughtered’, but in the Greek of this period it simply means ‘new’ or ‘recent’, and to press the etymology would be a mistake. Dia tou katapetasmatos, tout' estin tēs sarkos autou, ‘through the curtain, that is, his flesh’, is debated. Most take ‘flesh’ in apposition to ‘curtain’: his flesh, torn in death, is the curtain through which the way now lies (compare Mark 15:38). Others, uneasy with making Christ's body a barrier, connect ‘flesh’ with ‘way’ or read dia as instrumental, ‘by means of his flesh’.",
+      "words": ["G2192", "G0080", "G3954", "G1529", "G0039G", "G0129G", "G2424G", "G1457", "G3598", "G4372", "G2198", "G2665", "G4561"],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "Christ's death opens a way into God's presence for all his people. The access once limited to one man, one day a year, now belongs to every believer, by the blood of Jesus."
+        },
+        {
+          "id": "union",
+          "note": "The way into God's presence is Christ himself, his flesh given in death and his life as the ‘living’ way. To draw near to God is to go where he has gone, through him."
+        }
+      ],
+      "refs": ["Hebrews 4:14-16", "Hebrews 6:19-20", "Mark 15:38", "John 14:6", "Ephesians 2:18"]
+    },
+    {
+      "v": "21-22",
+      "context": "The second ground is that we have a great priest over the house of God. The first exhortation follows: let us draw near with a true heart in full assurance of faith, hearts sprinkled clean from an evil conscience and bodies washed with pure water.",
+      "grammar": "Hierea megan, ‘a great priest’, echoes the Septuagint's phrase for the high priest, ho hiereus ho megas (Leviticus 21:10, Numbers 35:25, Zechariah 6:11). Epi ton oikon tou theou, ‘over the house of God’, recalls 3:6, where believers are his house. Proserchōmetha (‘let us draw near’) is a present hortatory subjunctive: a continuing approach. Meta alēthinēs kardias, ‘with a true heart’, sincere and undivided. En plērophoria pisteōs, ‘in full assurance of faith’. The two perfect participles, rherantismenoi tas kardias (‘having had our hearts sprinkled’) and lelousmenoi to sōma (‘having had our body washed’), describe a completed cleansing, inward and outward. The language recalls the ordination of priests, who were washed with water and sprinkled with blood (Exodus 29:4, 29:21; Leviticus 8:6, 8:30), and Ezekiel 36:25, where God promises to sprinkle clean water on his people. Most interpreters take the washing of the body as a reference to baptism.",
+      "words": ["G2409", "G3173", "G3624G", "G2316", "G4334", "G0228", "G2588", "G4136", "G4102G", "G4472", "G4893", "G4190", "G3068", "G4983", "G5204", "G2513"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Faith here is the confidence with which a cleansed person draws near to God. Its ‘full assurance’ rests on the priest and the cleansing just described, not on the worshiper's feelings."
+        },
+        {
+          "id": "sacraments",
+          "note": "The pairing of hearts sprinkled and bodies washed joins inner cleansing to baptism, as Titus 3:5 and 1 Peter 3:21 do. Traditions differ on how baptism and inner cleansing are related, but the verse holds them together as the believer's entry into priestly access."
+        }
+      ],
+      "refs": ["Hebrews 3:6", "Ezekiel 36:25-26", "Exodus 29:4", "Titus 3:5", "1 Peter 3:21"]
+    },
+    {
+      "v": "23",
+      "context": "The second exhortation: let us hold fast the confession of our hope without wavering, for the one who promised is faithful. The readers' temptation was to let go; the ground for holding on lies in God's faithfulness.",
+      "grammar": "Katechōmen (‘let us hold fast’) is a present subjunctive, a continuing grip; the same verb appears in 3:6 and 3:14. Tēn homologian tēs elpidos, ‘the confession of the hope’, uses homologia, the public confession of faith (3:1, 4:14), perhaps the confession made at baptism, which verse 22 has just evoked. Aklinē (‘without bending’, ‘unwavering’) is an adjective describing the confession held firm. Pistos gar ho epangeilamenos, ‘for faithful is the one who promised’, puts ‘faithful’ first for emphasis.",
+      "words": ["G2722", "G3671", "G1680", "G0186", "G4103", "G1861"],
+      "theology": [
+        {
+          "id": "perseverance",
+          "note": "Holding fast is the believer's part, but the reason given is God's faithfulness, not the believer's strength. Perseverance rests on the promise-keeper (compare 1 Corinthians 1:9, 1 Thessalonians 5:24)."
+        },
+        {
+          "id": "hope",
+          "note": "Hope is something confessed, spoken aloud in the congregation. Its content is the promise of God, and its security is his faithfulness."
+        }
+      ],
+      "refs": ["Hebrews 4:14", "Hebrews 3:6", "1 Corinthians 1:9", "1 Thessalonians 5:24", "Hebrews 11:11"]
+    },
+    {
+      "v": "24-25",
+      "context": "The third exhortation: let us consider one another, to stir each other up to love and good works, not abandoning our own assembling, as some do, but encouraging one another, and all the more as the Day approaches.",
+      "grammar": "Katanoōmen allēlous, ‘let us consider one another’, uses the verb of 3:1 (‘consider Jesus’): attention now turns to fellow believers. Eis paroxusmon agapēs kai kalōn ergōn, ‘for a provoking of love and good works’: paroxusmos usually has a negative sense, a sharp irritation or dispute (the ‘sharp disagreement’ between Paul and Barnabas in Acts 15:39), and the author deliberately uses it for a good provocation. Mē enkataleipontes tēn episunagōgēn heautōn, ‘not forsaking our own gathering together’: enkataleipō means to abandon or leave behind (13:5, ‘I will never forsake you’), and episunagōgē, a double compound, is used in 2 Thessalonians 2:1 for being gathered to the Lord at his coming. Kathōs ethos tisin, ‘as is the habit of some’, shows that absence had become a pattern. Tēn hēmeran, ‘the Day’, with the article and no qualifier, is the Day of the Lord.",
+      "words": ["G2657", "G0240", "G3948", "G0026", "G2570G", "G2041", "G1459", "G1997", "G1485", "G3870", "G1448", "G2250"],
+      "history": "The early Christians met in homes, and gathering for worship was a visible act that could draw hostility, which may explain why ‘some’ had stopped coming (compare 10:32-34 and 13:3). Most interpreters take ‘the Day’ as the day of Christ's return and judgment (Romans 13:12, 1 Corinthians 3:13); some, noting the letter's possible date before AD 70, have connected it with the approaching destruction of Jerusalem.",
+      "theology": [
+        {
+          "id": "church",
+          "note": "Perseverance is not a private achievement. The gathered church is the setting in which believers stir one another up and encourage one another, and abandoning it is treated as a step toward the drift the letter warns against."
+        },
+        {
+          "id": "love",
+          "note": "Love is something believers can provoke in one another. The verse gives the church a duty of mutual attention: to think about how to move one another toward love and good works."
+        }
+      ],
+      "refs": ["Hebrews 3:13", "Acts 2:42", "2 Thessalonians 2:1", "Romans 13:11-12", "Hebrews 13:1-3"]
+    },
+    {
+      "v": "26-27",
+      "context": "The fourth warning of the letter follows, grounded with “for”: if we go on sinning deliberately after receiving the knowledge of the truth, no sacrifice for sins remains, only a fearful expectation of judgment and a fury of fire that will consume the adversaries. The warning is the reverse side of verse 18: if Christ's offering is the only one, to reject it is to have none.",
+      "grammar": "Hekousiōs (‘willfully’, ‘deliberately’) stands first in the sentence for emphasis. Hamartanontōn hēmōn is a genitive absolute with a present participle: ‘while we go on sinning’, a continuing course, not a single lapse. The author includes himself (‘we’). Meta to labein tēn epignōsin tēs alētheias, ‘after receiving the full knowledge of the truth’, describes people who have understood the gospel. Ouketi… apoleipetai thusia, ‘there no longer remains a sacrifice’, echoes ouketi prosphora in verse 18. Phobera de tis ekdochē kriseōs, ‘but a certain fearful expectation of judgment’: the indefinite tis (‘a certain’) adds menace by leaving the thing undescribed. Puros zēlos, ‘zeal of fire’, pictures God's jealous anger as fire, and esthiein mellontos, ‘about to devour’, makes the fire the subject.",
+      "words": ["G1596", "G0264", "G2983", "G1922", "G0225", "G0620", "G2378", "G5398", "G1561", "G2920", "G4442", "G2205", "G2068", "G5227"],
+      "ot": [
+        {
+          "ref": "Isaiah 26:11",
+          "note": "The Hebrew says of God's enemies that ‘the fire of your adversaries will consume them’ (esh tsarekha tokhlem). The Septuagint reads zēlos lēmpsetai laon apaideuton kai nun pur tous hupenantious edetai, ‘jealousy will seize an untaught people, and now fire will devour the adversaries’. Hebrews borrows the Septuagint's zēlos, pur, and tous hupenantious and fuses them into one phrase. In Isaiah the fire falls on the enemies of God's people; Hebrews warns that those who turn against Christ from within the community place themselves among the adversaries."
+        }
+      ],
+      "history": "The law distinguished unintentional sin, for which sacrifice was provided, from sin done ‘with a high hand’, which had no sacrifice (Numbers 15:27-31). The Mishnah applies the same principle to the Day of Atonement: one who says ‘I will sin and the Day of Atonement will atone’ receives no atonement from it (m. Yoma 8:9). The community at Qumran expelled permanently anyone who deliberately transgressed a word of the law of Moses (1QS 8:21-23).",
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "Judgment awaits those who knowingly reject the only sacrifice for sin. The verse does not describe every sin a believer commits after conversion, but a deliberate and continuing repudiation, as verse 29 makes clear."
+        },
+        {
+          "id": "perseverance",
+          "note": "The same frameworks apply as in 6:4-8. Reformed interpreters read the warning as describing those who knew the truth without being regenerate; Arminian interpreters as a real possibility for believers; others as the means by which God keeps believers from apostasy, or as loss of reward. The author's own verdict on his readers comes in verse 39."
+        }
+      ],
+      "refs": ["Numbers 15:30-31", "Hebrews 6:4-8", "Hebrews 12:29", "Zephaniah 1:18", "2 Peter 2:20-21"]
+    },
+    {
+      "v": "28-29",
+      "context": "An argument from lesser to greater supports the warning. Anyone who rejected the law of Moses died without mercy on the testimony of two or three witnesses. How much worse will be the punishment of one who has trampled the Son of God, treated the covenant blood as common, and insulted the Spirit of grace?",
+      "grammar": "Athetēsas tis nomon Mōuseōs, ‘anyone who has set aside the law of Moses’, uses atheteō, a word for annulling or rejecting (compare athetēsis in 7:18). Chōris oiktirmōn, ‘without mercies’, recalls Deuteronomy's command not to pity the idolater (Deuteronomy 13:8). Posō dokeite cheironos axiōthēsetai timōrias, ‘how much worse punishment do you think he will be counted worthy of’, is the qal vachomer again (compare 2:2-3, 9:13-14), and the question invites the readers to judge. Three aorist participles describe the offense: katapatēsas (‘having trampled’), koinon hēgēsamenos (‘having counted common’, that is, unholy), and enubrisas (‘having insulted’, from the word family of hubris). En hō hēgiasthē, ‘by which he was sanctified’: most take the subject to be the apostate, who had been set apart by the covenant blood; John Owen argued that the subject is Christ, consecrated as priest by his own blood (compare John 17:19).",
+      "words": ["G0114", "G3551", "G3475", "G3628", "G1417", "G5140", "G3144", "G0599", "G4214", "G1380", "G5501", "G0515", "G5098", "G5207", "G2662", "G0129G", "G1242", "G2839G", "G2233", "G0037", "G4151G", "G5485", "G1796"],
+      "ot": [
+        {
+          "ref": "Deuteronomy 17:6",
+          "note": "The Hebrew al pi shenayim edim o sheloshah edim, ‘on the testimony of two witnesses or three witnesses’, is rendered closely by the Septuagint, epi dusin martusin ē epi trisin martusin, and Hebrews condenses it to epi dusin ē trisin martusin. In Deuteronomy 17 the rule governs the execution of a person who has served other gods; Hebrews chooses the case of covenant apostasy under Moses to set beside apostasy from Christ."
+        }
+      ],
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "The Holy Spirit is called ‘the Spirit of grace’, a phrase that echoes Zechariah 12:10, where God pours out a spirit of grace and supplication. To reject Christ is not only to spurn a doctrine but to insult the gracious Spirit who brought the gospel home."
+        },
+        {
+          "id": "judgment",
+          "note": "Greater privilege brings greater accountability. Those who have known the Son and the blood of the new covenant stand under a weightier judgment than those who rejected Moses, the principle Jesus states in Luke 12:48."
+        }
+      ],
+      "refs": ["Deuteronomy 17:6", "Hebrews 2:2-3", "Zechariah 12:10", "Luke 12:48", "Matthew 12:31-32"]
+    },
+    {
+      "v": "30-31",
+      "context": "The warning is sealed with two lines from the Song of Moses: vengeance belongs to God, and the Lord will judge his people. The conclusion follows in verse 31: it is a fearful thing to fall into the hands of the living God.",
+      "grammar": "Oidamen gar ton eiponta, ‘for we know the one who said’: the point is not only the text but the character of the God who spoke it. Emoi ekdikēsis, egō antapodōsō, ‘vengeance is mine, I will repay’, places the pronouns first for emphasis. Krinei kurios ton laon autou, ‘the Lord will judge his people’, uses the future of krinō. In verse 31 phoberon to empesein eis cheiras theou zōntos, ‘fearful is the falling into the hands of the living God’, puts ‘fearful’ first; empesein is an aorist infinitive, the act of falling. ‘The living God’ is the letter's recurring title (3:12, 9:14, 12:22).",
+      "words": ["G6063", "G2036", "G1557", "G0467", "G3825", "G2919", "G2962G", "G2992", "G5398", "G1706", "G5495", "G2198"],
+      "text": "The Textus Receptus adds ‘says the Lord’ (legei kurios) after ‘I will repay’, which the King James Version renders ‘saith the Lord’. It is absent from the earliest manuscripts and was probably added from Romans 12:19, where the same quotation carries those words.",
+      "ot": [
+        {
+          "ref": "Deuteronomy 32:35-36",
+          "note": "The Hebrew of 32:35 reads li naqam veshillem, ‘vengeance is mine, and recompense’. The Septuagint reads differently: en hēmera ekdikēseōs antapodōsō, ‘in the day of vengeance I will repay’. Hebrews' wording, emoi ekdikēsis, egō antapodōsō, is closer to the Hebrew and is identical to Paul's in Romans 12:19, which suggests both writers knew a Greek form of the verse in circulation that differed from the standard Septuagint. Verse 36 in Hebrew, ki yadin YHWH ammo, means ‘the LORD will vindicate his people’, as the next line (‘and have compassion on his servants’) shows; the Septuagint's krinei and Hebrews' use of it give the word its sense of judging. In the Song, God acts on behalf of his people against their enemies; Hebrews applies it to the people themselves, warning that God judges within his household too (compare 1 Peter 4:17)."
+        }
+      ],
+      "theology": [
+        {
+          "id": "fear-of-god",
+          "note": "‘The living God’ is not a doctrine to be managed but a person to be met. David once chose to fall into God's hand rather than human hands because God's mercies are great (2 Samuel 24:14); the same hands are fearful to one who has spurned that mercy."
+        },
+        {
+          "id": "judgment",
+          "note": "Vengeance belongs to God, not to human beings, which is why Paul uses the same verse to forbid personal revenge (Romans 12:19). Hebrews uses it to remind the church that God's judgment also reaches his own people."
+        }
+      ],
+      "refs": ["Deuteronomy 32:35-36", "Romans 12:19", "2 Samuel 24:14", "1 Peter 4:17", "Hebrews 12:29"]
+    },
+    {
+      "v": "32-34",
+      "context": "The tone turns, as in 6:9-12, from warning to remembrance. The readers are to recall the early days after they were enlightened, when they endured a hard contest of sufferings: some were publicly shamed, some stood with those who were, they sympathized with prisoners, and they accepted the plundering of their property with joy, knowing they had a better and lasting possession.",
+      "grammar": "Anamimnēskesthe (‘remember’) is a present imperative, a continuing act of memory. Phōtisthentes (‘having been enlightened’) is the verb of 6:4, here used of the readers' own conversion. Athlēsis (‘contest’) is athletic language, the struggle of the arena, which 12:1-4 will develop. Touto men… touto de, ‘partly… partly’, divides the experiences. Theatrizomenoi, ‘being made a public spectacle’, comes from theatron, the theater where crowds gathered, and where sometimes they gathered against Christians (Acts 19:29). Tois desmiois sunepathēsate, ‘you sympathized with the prisoners’, uses sumpatheō, the verb of 4:15 for Jesus sympathizing with our weaknesses: the readers once did for others what Christ does for them. Tēn harpagēn tōn huparchontōn humōn, ‘the seizure of your possessions’, plays on huparchonta (‘possessions’) and huparxis (‘possession’) in the next clause: they lost what they had and knew they had something better.",
+      "words": ["G0363", "G4386", "G2250", "G5461", "G0119", "G5278", "G3804", "G3680", "G2347", "G2301", "G2844", "G1198", "G4834", "G0724", "G5225", "G5479", "G4327", "G1097", "G2908", "G5223", "G3306"],
+      "text": "Most editions read tois desmiois, ‘with the prisoners’. The Textus Receptus reads tois desmois mou, ‘with my bonds’, which the King James Version renders ‘ye had compassion of me in my bonds’ and which was once used to argue for Pauline authorship. The Textus Receptus also reads ‘in yourselves’ and adds ‘in heaven’ to the ‘better possession’. The earliest witnesses support the shorter readings.",
+      "history": "Prisoners in the Roman world depended on friends and family for food and care, and visiting them could expose visitors to suspicion. The satirist Lucian describes Christians rallying around the imprisoned Peregrinus with food and money (The Passing of Peregrinus 12-13). If the letter was sent to Rome, as the greeting from ‘those from Italy’ (13:24) may suggest, the earlier troubles may be those surrounding Claudius's expulsion of Jews from Rome (about AD 49; Acts 18:2), and the remark in 12:4 that the readers had not yet resisted to the point of blood would place the letter before Nero's persecution of AD 64 (Tacitus, Annals 15.44).",
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "The readers' past suffering is offered as evidence of real faith and as a resource for the present. Remembering how God sustained them before is part of how they will endure now."
+        },
+        {
+          "id": "wealth",
+          "note": "They accepted the loss of property with joy because they knew they had a better and lasting possession. The verse relativizes earthly goods not by despising them but by setting them beside what cannot be taken."
+        }
+      ],
+      "refs": ["Hebrews 6:4", "Hebrews 13:3", "Matthew 5:11-12", "Matthew 6:19-20", "1 Peter 1:4"]
+    },
+    {
+      "v": "35-36",
+      "context": "The conclusion from their history: do not throw away your confidence, which has a great reward. What they need is endurance, so that having done God's will they may receive the promise.",
+      "grammar": "Mē apobalēte oun tēn parrēsian humōn, ‘do not throw away, then, your confidence’: apoballō means to cast off, as a soldier might throw away his shield in flight, and the aorist subjunctive with mē forbids beginning to do so. Parrēsia is the same confidence of 10:19. Hētis echei megalēn misthapodosian, ‘which has a great reward’: misthapodosia means repayment, used of just punishment in 2:2 and of reward in 11:26. Hupomonēs gar echete chreian, ‘for you have need of endurance’, places hupomonē first. To thelēma tou theou poiēsantes, ‘having done the will of God’, echoes Christ's ‘I have come to do your will’ in verses 7 and 9: the readers are to walk the path he walked. Komisēsthe tēn epangelian, ‘you may receive the promise’, uses komizō, ‘to carry off, obtain’, a word that returns in 11:13, 19, and 39.",
+      "words": ["G0577", "G3954", "G3173", "G3405", "G5281", "G5532", "G2307", "G2316", "G4160G", "G2865", "G1860"],
+      "theology": [
+        {
+          "id": "perseverance",
+          "note": "Endurance is the believer's need, and doing God's will is its content. The reward is not earned wages but the promised inheritance, received by those who keep trusting until it comes."
+        }
+      ],
+      "refs": ["Hebrews 10:19", "Hebrews 11:26", "Hebrews 12:1", "James 1:12", "Luke 21:19"]
+    },
+    {
+      "v": "37-38",
+      "context": "A combined quotation from Isaiah and Habakkuk supports the call to endurance: in a very little while the coming one will come and not delay, and God's righteous one will live by faith, but if he shrinks back, God takes no pleasure in him. The words ‘by faith’ prepare for chapter 11.",
+      "grammar": "Eti gar mikron hoson hoson, literally ‘for yet a little, how very little’, is a Hebraic intensive borrowed from the Septuagint of Isaiah 26:20. Ho erchomenos hēxei kai ou chronisei, ‘the coming one will come and will not delay’: with the article ho, ‘the coming one’ is a title (compare Matthew 11:3). Ho de dikaios mou ek pisteōs zēsetai, ‘but my righteous one will live by faith’: the position of mou (‘my’) is textually uncertain. Kai ean huposteilētai, ‘and if he shrinks back’, uses hupostellō, a verb for drawing back in fear, the word Paul uses of Peter's withdrawal from Gentile believers (Galatians 2:12). Ouk eudokei hē psuchē mou en autō, ‘my soul takes no pleasure in him’, is God speaking.",
+      "words": ["G3398", "G3745", "G2064", "G2240", "G5549", "G1342", "G4102G", "G2198", "G5288", "G2106", "G5590I"],
+      "text": "Most editions read ho de dikaios mou ek pisteōs, ‘my righteous one will live by faith’, with the earliest manuscripts. Some manuscripts place mou after pisteōs, ‘will live by my faith(fulness)’, as the Septuagint of Habakkuk has it; the Textus Receptus omits mou altogether, as Paul does in Romans 1:17 and Galatians 3:11.",
+      "ot": [
+        {
+          "ref": "Habakkuk 2:3-4",
+          "note": "In Habakkuk the subject of ‘it will surely come; it will not delay’ (bo yavo lo yeacher) is the vision of God's coming deliverance, and 2:4 reads ‘behold, his soul is puffed up, not upright in him; but the righteous shall live by his faith (or faithfulness)’, beemunato. The Septuagint changes much: it renders the vision's coming with a masculine participle, erchomenos hēxei, which could refer to a person; it translates 2:4a as ean huposteilētai, ouk eudokei hē psuchē mou en autō, ‘if he shrinks back, my soul has no pleasure in him’; and it reads ek pisteōs mou, ‘by my faithfulness’, God's rather than the righteous person's. Hebrews adds the article to make ‘the coming one’ the Messiah, moves mou so that it reads ‘my righteous one’, and reverses the order of the two clauses, so that the one who might shrink back is the righteous person himself. The effect is a warning to believers: the righteous live by faith, and shrinking back is the opposite of faith. Isaiah 26:20, the source of ‘a little while’, is a call to God's people to hide briefly until his wrath has passed."
+        }
+      ],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Hebrews uses Habakkuk 2:4 differently from Paul. Paul stresses faith as the way one is counted righteous (Romans 1:17); Hebrews stresses faith as the way the righteous keep living, enduring until the promise comes. The two uses are complementary, and chapter 11 will illustrate the second."
+        },
+        {
+          "id": "return",
+          "note": "‘The coming one will come and will not delay.’ The return of Christ is presented as near and certain, the horizon that makes endurance reasonable."
+        }
+      ],
+      "refs": ["Habakkuk 2:3-4", "Isaiah 26:20", "Romans 1:17", "Galatians 3:11", "Matthew 11:3"]
+    },
+    {
+      "v": "39",
+      "context": "The author ends with confidence, as in 6:9: we are not of those who shrink back to destruction, but of those who have faith to the preserving of the soul. The last word, faith, leads straight into chapter 11's portrait of faith.",
+      "grammar": "Hēmeis de ouk esmen hupostolēs… alla pisteōs, ‘but we are not of shrinking back… but of faith’, uses genitives of characteristic: we belong to the class marked by faith, not by retreat. Hupostolē picks up the verb huposteilētai from verse 38. The two outcomes are balanced: eis apōleian, ‘to destruction’, and eis peripoiēsin psuchēs, ‘to the preserving of the soul’. Peripoiēsis means acquiring or keeping safe (1 Thessalonians 5:9, 1 Peter 2:9), and psuchē here means one's life or self.",
+      "words": ["G1510", "G5289", "G0684", "G4102G", "G4047", "G5590G"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Faith is defined by its opposite: not shrinking back. It is the persevering trust that keeps going toward the promise, and it is the subject of the whole next chapter."
+        },
+        {
+          "id": "salvation",
+          "note": "The outcomes of shrinking back and of faith are destruction and the preservation of life. The author includes himself with the readers among those who believe, a pastoral verdict that answers the warnings of verses 26-31."
+        }
+      ],
+      "refs": ["Hebrews 6:9", "Hebrews 11:1", "1 Peter 1:5", "1 Thessalonians 5:9", "Hebrews 3:14"]
+    }
+  ]
+}

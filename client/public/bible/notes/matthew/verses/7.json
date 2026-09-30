@@ -1,0 +1,274 @@
+{
+  "verses": [
+    {
+      "v": "1-2",
+      "context": "The last chapter of the sermon opens with a command about how disciples treat one another. After chapter 6 warned against performing righteousness for others, chapter 7 warns against measuring others by it. Verse 2 gives the reason: the standard used on others will be used on oneself.",
+      "grammar": "Mē krinete is a present imperative, forbidding a habit: ‘do not be judging’. The purpose clause hina mē krithēte uses an aorist passive with no agent named, and the future passives in verse 2 (krithēsesthe, metrēthēsetai) are best read as ‘divine passives’, with God as the one who will judge and measure. The warning is about God's verdict, not merely about other people returning the criticism. Krinō covers a range from ‘discern’ to ‘condemn’; since verse 6 and verses 15 to 20 require careful discernment, the context shows that the forbidden judging is the censorious condemnation that sets oneself above a brother.",
+      "words": ["G2919", "G2917", "G3358", "G3354"],
+      "parallels": ["Luke 6:37-38", "Mark 4:24"],
+      "history": "The measure saying was proverbial in Jewish teaching. The Mishnah states the principle that with the measure a person uses, it will be measured to him, and illustrates it from the punishments in Scripture (m. Sotah 1:7). Mark places the saying in a different setting, about how disciples hear Jesus' word (Mark 4:24), and Luke sets it within a call to give generously (Luke 6:38), which shows that Jesus' sayings were remembered and applied in more than one context.",
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "Final judgment stands behind the verse. The disciple who condemns others without mercy invites God's judgment on the same terms, which is the logic of 6:14-15 and of James 2:13."
+        }
+      ],
+      "refs": ["Romans 2:1-3", "James 2:13", "James 4:11-12", "1 Corinthians 4:5"]
+    },
+    {
+      "v": "3-5",
+      "context": "A comic picture enforces the command. A man with a roof beam sticking out of his eye offers to remove a speck of sawdust from his brother's. Verse 5 does not forbid helping the brother; it sets the order: first your own eye, then you will see clearly enough to help.",
+      "grammar": "Karphos is a speck or splinter, and dokos a load-bearing beam; the contrast is deliberately absurd. The verb in verse 3 shifts from blepeis, ‘you look at’, for the speck, to ou katanoeis, ‘you do not notice’ or ‘do not consider’, for the beam: the critic sees small things in others and does not reflect on large things in himself. Hupokrita, ‘hypocrite’, now addressed to the listener, applies the word used of others in chapter 6. The future diablepseis in verse 5 means ‘you will see clearly’, and the infinitive ekbalein, ‘to take out’, shows that the goal remains the brother's good.",
+      "words": ["G2595", "G1385", "G2657", "G5273", "G1227"],
+      "parallels": ["Luke 6:41-42"],
+      "history": "The same comic image appears in the Babylonian Talmud (b. Arakhin 16b), where a teacher complains that his generation cannot take reproof, because if one says ‘remove the splinter from your eye’, the answer comes back, ‘remove the beam from yours’. Whether this reflects a common proverb or an independent saying is uncertain, but it shows the picture was at home in Jewish discussion of rebuke.",
+      "theology": [
+        {
+          "id": "sin",
+          "note": "The passage assumes that self-deception is the normal human condition: people see others' faults easily and their own hardly at all. Honest self-examination is the first step of any correction."
+        },
+        {
+          "id": "love",
+          "note": "Jesus does not forbid correcting a brother; he commands it to be done from humility. Galatians 6:1 applies the same pattern: restore the one caught in sin, watching yourself."
+        }
+      ],
+      "refs": ["Galatians 6:1", "Matthew 18:15", "Psalm 19:12", "2 Samuel 12:1-7"]
+    },
+    {
+      "v": "6",
+      "context": "A short, puzzling saying that balances the warning against judging. Disciples must not condemn, but they must discern: some people will treat what is holy with contempt and turn on those who offer it. Matthew gives no explanation, and the saying has been applied in many ways.",
+      "grammar": "The verse is built as a chiasm, an A-B-B-A pattern: dogs (A), pigs (B), then the pigs trample (B) and the dogs turn and tear (A). The ‘holy’ thing (to hagion) is most naturally sacrificial meat, which the law restricted to priests (Exodus 29:33-34, Leviticus 22:10-16); throwing it to scavenging dogs would profane it. Pearls were among the costliest goods of the ancient world (13:45-46). Mēpote with the future indicative katapatēsousin, ‘lest they trample’, states the likely outcome.",
+      "words": ["G0040G", "G2965", "G3135", "G5519", "G2662"],
+      "history": "The earliest known application is in the Didache (9.5), which cites ‘do not give what is holy to the dogs’ as the reason why only the baptized may share the Eucharist. Later interpreters applied it to preaching to the openly hostile or to exposing sacred things to ridicule. In Jewish usage ‘dogs’ and ‘pigs’ could be terms of contempt for Gentiles, but Matthew's Gospel ends with a mission to all nations (28:19), so most interpreters read the verse as about a hardened response to the gospel, not about any ethnic group.",
+      "theology": [
+        {
+          "id": "holiness",
+          "note": "Holy things are to be treated as holy. The verse guards against casualness with what belongs to God, the same concern as the laws about sacrificial food."
+        },
+        {
+          "id": "wisdom",
+          "note": "The saying requires the discernment that verses 1 to 5 might seem to rule out. Jesus himself told the disciples to shake the dust off their feet where they were not received (10:14)."
+        }
+      ],
+      "refs": ["Proverbs 9:7-8", "Proverbs 23:9", "Matthew 10:14", "2 Peter 2:22", "Leviticus 22:10"]
+    },
+    {
+      "v": "7-8",
+      "context": "The sermon returns to prayer, echoing the teaching of 6:5-15. Three commands, ask, seek, knock, are each met with a promise, and verse 8 restates the promises as a general rule. After the demands of the sermon, this is the encouragement that makes them possible: the Father gives.",
+      "grammar": "The three verbs aiteite, zēteite, krouete are present imperatives, which here suggest persistence: ‘keep asking, keep seeking, keep knocking’. Luke sets the same saying directly after the parable of the friend who knocks at midnight until he is answered (Luke 11:5-10), making the point about persistence explicit. The passives dothēsetai, ‘it will be given’, and anoigēsetai, ‘it will be opened’, are divine passives: God is the giver and the opener. Verse 8 changes the verbs to present participles, pas ho aitōn, ‘everyone who asks’, which widens the promise to every asker.",
+      "words": ["G0154", "G2212", "G2925", "G1325", "G0455"],
+      "parallels": ["Luke 11:9-10"],
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "Prayer is described as asking, seeking, and knocking, and each is promised an answer. The promise does not guarantee the thing asked for in the form asked; verses 9 to 11 will show that the Father gives what is good."
+        }
+      ],
+      "refs": ["Luke 11:5-10", "Jeremiah 29:12-13", "James 1:5", "John 16:24"]
+    },
+    {
+      "v": "9-11",
+      "context": "Two questions drawn from family life ground the promise of verses 7 and 8. No human father would hand his son a stone for bread or a snake for a fish, and if flawed fathers give good gifts, the Father in heaven will give far more.",
+      "grammar": "Both questions are introduced by mē, which in Greek signals that the expected answer is no: ‘He will not give him a stone, will he?’ Verse 11 is a conditional that argues from lesser to greater with posō mallon, ‘how much more’. Its first clause, ponēroi ontes, ‘being evil’, is a present participle stated as fact: Jesus assumes the sinfulness of his hearers, even loving parents, in passing. Domata agatha, ‘good gifts’, and agatha, ‘good things’, keep the focus on the goodness of what the Father gives.",
+      "words": ["G0740", "G3037", "G2486", "G3789", "G4190", "G0018", "G1390"],
+      "parallels": ["Luke 11:11-13"],
+      "text": "Luke's version adds a third pair, an egg and a scorpion, and concludes that the Father will give ‘the Holy Spirit’ to those who ask (Luke 11:13), where Matthew has ‘good things’. Luke names the best of the good gifts; Matthew keeps the general promise.",
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "Prayer rests on the character of the one addressed. The argument does not claim that asking earns anything; it claims that the Father is better than the best human parent."
+        },
+        {
+          "id": "sin",
+          "note": "‘You who are evil’ is one of the plainest statements in the Gospels that human nature, even at its most loving, is not simply good. Jesus says it without drama, as a premise everyone can grant."
+        }
+      ],
+      "refs": ["Luke 11:11-13", "Psalm 103:13", "James 1:17", "Romans 8:32"]
+    },
+    {
+      "v": "12",
+      "context": "The Golden Rule sums up the ethical teaching of the sermon. The words ‘the Law and the Prophets’ repeat 5:17, where the body of the sermon began, and so frame everything between as Jesus' fulfilling interpretation of the Scriptures.",
+      "grammar": "Oun, ‘then’ or ‘therefore’, draws the conclusion from the whole preceding section, not only from the saying about the Father's gifts. Panta hosa ean thelēte, ‘all things whatever you wish’, is as broad as Greek can make it. The rule is stated positively, with the present imperative poieite, ‘keep doing’, which requires active good rather than only refraining from harm. The final clause, houtos gar estin ho nomos kai hoi prophētai, ‘for this is the Law and the Prophets’, states that the rule captures what the Scriptures intend; Matthew 22:40 will say the same of the two great commandments.",
+      "words": ["G2309", "G4160G", "G3551", "G4396"],
+      "parallels": ["Luke 6:31"],
+      "history": "Negative forms of the rule were known in Judaism and beyond. Tobit 4:15, from about the third or second century BC, says not to do to anyone what you hate. The Babylonian Talmud tells how Hillel, asked to teach the whole Torah while a would-be convert stood on one foot, said that what is hateful to you you should not do to your neighbor, that this is the whole Torah and the rest is commentary (b. Shabbat 31a). Confucius, in the Analects, gives a negative form as well. The positive wording in Jesus' mouth is less common in surviving texts, though the difference should not be overstated, since Leviticus 19:18 already commands love.",
+      "theology": [
+        {
+          "id": "law",
+          "note": "Jesus claims to state the heart of the law, not to replace it. The Golden Rule is Leviticus 19:18 turned into a practical test: imagine yourself in the other's place and act accordingly."
+        },
+        {
+          "id": "love",
+          "note": "Paul says the same when he writes that love is the fulfilling of the law (Romans 13:8-10). The rule makes love active and specific."
+        }
+      ],
+      "refs": ["Leviticus 19:18", "Matthew 5:17", "Matthew 22:37-40", "Romans 13:8-10", "Galatians 5:14"]
+    },
+    {
+      "v": "13-14",
+      "context": "The sermon's conclusion begins with the first of four contrasting pairs: two gates and two roads. The chapter note has named the two-ways tradition; here the emphasis falls on the few and the many, and on the difficulty of the road to life.",
+      "grammar": "Eiselthate, an aorist imperative, calls for a decisive entry. Stenos means narrow, and in verse 14 the road is tethlimmenē, a perfect passive participle of thlibō, ‘to press’ or ‘to crowd’, the verb behind thlipsis, ‘tribulation’. The narrow road is not only small but hemmed in, a road of pressure, which fits the persecution Jesus promised in 5:10-12. Its opposites are plateia, ‘wide’, and euruchōros, ‘roomy’. The present participle heuriskontes, ‘those who find it’, implies that the road must be found, not stumbled upon.",
+      "words": ["G4728", "G4439", "G2346", "G2149", "G0684", "G2222"],
+      "parallels": ["Luke 13:23-24"],
+      "text": "Two small variants affect the sense. In verse 13 the original hand of Codex Sinaiticus and some Old Latin witnesses lack the word ‘gate’ in the second clause, reading ‘wide and broad is the way’. In verse 14 the manuscripts divide between hoti, ‘because’ or ‘for’, and ti, an exclamation, ‘how narrow is the gate’; the major editions differ, and the BSB's rendering stays close to the first.",
+      "history": "The image of the two ways runs from Deuteronomy 30:15-19 and Jeremiah 21:8 through Psalm 1 to the opening of the Didache (1.1), which begins with the declaration that there are two ways, one of life and one of death. The Jewish apocalypse 4 Ezra, written around AD 100, pictures a city whose entrance is so narrow that only one person at a time can pass (4 Ezra 7:6-9).",
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "Life is entered through a gate that must be chosen and a road that must be walked. The verse does not teach salvation by effort, but it does say that following Jesus runs against the current of the crowd."
+        },
+        {
+          "id": "hell",
+          "note": "Apōleia, ‘destruction’, names the end of the wide road. Jesus speaks of it soberly and without detail, as a real outcome that makes the choice urgent."
+        }
+      ],
+      "refs": ["Deuteronomy 30:15-19", "Jeremiah 21:8", "Psalm 1:6", "Luke 13:23-24", "Acts 14:22"]
+    },
+    {
+      "v": "15",
+      "context": "The second contrast concerns teachers. Some who come to the flock look like sheep but are wolves. The command to beware sits naturally after the narrow road, since false guides are one reason many miss it.",
+      "grammar": "Prosechete apo, ‘beware of’, is the same verb that opened chapter 6 (‘be careful’), now aimed outward. Pseudoprophētēs combines pseudo-, ‘false’, with prophētēs; the fault may be false claims to speak for God, false teaching, or both. The contrast is spatial: en endumasin probatōn, ‘in sheep's clothing’, against esōthen, ‘inwardly’. Harpax, ‘ravenous’, means greedy for plunder, the word Paul uses for ‘swindlers’ in 1 Corinthians 5:10.",
+      "words": ["G4337", "G5578", "G1742", "G4263", "G2081", "G0727"],
+      "ot": [
+        {
+          "ref": "Ezekiel 22:27",
+          "note": "Ezekiel accuses Jerusalem's officials of being ‘like wolves tearing their prey’, shedding blood for gain, and in the next verse its prophets of whitewashing with false visions (22:28). The Septuagint describes them as lukoi harpazontes, the same image and root as Matthew's lukoi harpages. The saying is not a quotation, but it stands in the prophetic tradition that compared corrupt leaders of God's people to predators."
+        }
+      ],
+      "history": "The test of a prophet was a live issue in Deuteronomy (13:1-5, 18:20-22) and again in the first century. Josephus names figures such as Theudas (Antiquities 20.97-98) and a prophet from Egypt (Antiquities 20.169-172, mentioned also in Acts 21:38) who gathered followers with promises of miraculous deliverance. The early church met traveling prophets of its own, and the Didache (11.8-12) says a prophet is known by his conduct, for example if he asks for money.",
+      "theology": [
+        {
+          "id": "prophecy",
+          "note": "Jesus assumes that prophecy will continue among his people and that it must be tested. The warning is not against prophecy but against those who use it as a disguise."
+        }
+      ],
+      "refs": ["Deuteronomy 13:1-5", "Jeremiah 23:16", "Acts 20:29-30", "1 John 4:1", "Matthew 24:11"]
+    },
+    {
+      "v": "16-18",
+      "context": "The test for false prophets is their fruit. Two images make the point: thornbushes do not produce grapes, and a tree bears fruit that matches its nature. The saying looks both at the teacher's conduct and at the effects of his teaching.",
+      "grammar": "Epignōsesthe, ‘you will recognize’, is a compound of ginōskō that often means to know fully or accurately. The question in verse 16 begins with mēti, which expects a firm no. Verse 17 contrasts agathon, ‘good’, and kalos, ‘fine’ or ‘sound’, with sapros, a word used for rotten or worthless things (13:48 uses it of bad fish). Verse 18 moves from what happens to what can happen: ou dunatai, ‘is not able’. A tree's fruit reveals what it is.",
+      "words": ["G1921", "G2590", "G1186", "G4550", "G2570G"],
+      "parallels": ["Luke 6:43-44"],
+      "theology": [
+        {
+          "id": "regeneration",
+          "note": "Good fruit comes from a good tree. The image teaches that conduct flows from what a person is, which is why Jesus elsewhere says the tree itself must be made good (12:33)."
+        },
+        {
+          "id": "faith",
+          "note": "Genuine faith is recognized by its fruit. James makes the same argument when he says faith without works is dead (James 2:17-18)."
+        }
+      ],
+      "refs": ["Matthew 12:33-35", "Luke 6:43-45", "Galatians 5:19-23", "James 3:12"]
+    },
+    {
+      "v": "19-20",
+      "context": "The image of the tree ends in judgment, and verse 20 closes the paragraph by repeating verse 16, a frame that marks off verses 16 to 20 as a unit.",
+      "grammar": "Verse 19 repeats, word for word in Greek, the warning of John the Baptist in 3:10: pan oun dendron mē poioun karpon kalon ekkoptetai kai eis pur balletai. The present tenses ekkoptetai and balletai are ‘futuristic presents’, describing the certain outcome as if it were already happening. Jesus takes up John's words and makes them his own. The particle combination ara ge in verse 20 means ‘so then’, drawing a firm conclusion.",
+      "words": ["G1581", "G4442", "G0686", "G1921"],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The fruitless tree is cut down and burned. The verse links Jesus' teaching to John's preaching of coming judgment and anticipates the fire of the final judgment in 13:40-42."
+        }
+      ],
+      "refs": ["Matthew 3:10", "Luke 13:6-9", "John 15:2-6", "Matthew 13:40-42"]
+    },
+    {
+      "v": "21",
+      "context": "The third contrast turns from false teachers to false disciples. Calling Jesus ‘Lord’ is not enough; entry into the kingdom belongs to those who do the Father's will. The saying applies the tree test to everyone who hears.",
+      "grammar": "Kurie kurie, ‘Lord, Lord’, doubles the address, a form of earnest or urgent appeal (compare 25:11). Legōn and poiōn are present participles, ‘the one who keeps saying’ and ‘the one who keeps doing’, contrasting two ways of life, not single acts. The future eiseleusetai, ‘will enter’, looks ahead to the final judgment. For the first time in the sermon Jesus speaks of ‘My Father’ (tou patros mou), not ‘your Father’, which prepares for the claim of verses 22 and 23.",
+      "words": ["G2962G", "G1525", "G2307", "G3962"],
+      "parallels": ["Luke 6:46"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Confession of Jesus as Lord is essential (Romans 10:9), but a confession that never becomes obedience is empty. The verse joins what the lips say to what the life does."
+        },
+        {
+          "id": "kingdom",
+          "note": "Entering the kingdom of heaven is tied to doing the Father's will, the very will disciples pray to see done on earth in 6:10."
+        }
+      ],
+      "refs": ["Luke 6:46", "Romans 10:9", "James 1:22", "Matthew 12:50", "Matthew 25:11-12"]
+    },
+    {
+      "v": "22-23",
+      "context": "Jesus pictures the final judgment. Many appeal to prophecy, exorcism, and miracles done in his name, and he answers that he never knew them. The chapter note discusses what this means for assurance; the verse note's focus is the startling role Jesus claims.",
+      "grammar": "En ekeinē tē hēmera, ‘on that day’, is the prophets' phrase for the day of the Lord's judgment (Isaiah 2:11, Zechariah 14:4). The threefold tō sō onomati, ‘in your name’, stands first in each clause for emphasis. The questions begin with ou, expecting yes: they did do these things. Homologēsō, ‘I will declare’, is the ordinary word for confessing or declaring publicly, here with the solemnity of a verdict. Oudepote egnōn humas, ‘I never knew you’, uses ‘know’ in the Old Testament sense of a relationship God initiates (Amos 3:2, where the Hebrew yada has that force). Ergazomenoi tēn anomian names the fault: ‘those who work lawlessness’.",
+      "words": ["G2250", "G3686", "G3670", "G1097", "G0672", "G0458"],
+      "parallels": ["Luke 13:25-27"],
+      "ot": [
+        {
+          "ref": "Psalm 6:8",
+          "note": "The words of dismissal come from Psalm 6, verse 9 in the Hebrew numbering: ‘Depart from me, all you workers of iniquity’, suru mimmenni kol-poale aven. The Septuagint (Psalm 6:9) reads apostēte ap' emou pantes hoi ergazomenoi tēn anomian. Matthew keeps the Septuagint's ergazomenoi tēn anomian but has a different verb for ‘depart’, apochōreite; Luke 13:27 has apostēte and ‘workers of unrighteousness’. In the psalm, a sufferer vindicated by God tells his enemies to leave him. On Jesus' lips the words become the judge's sentence, spoken by the one who once suffered at the hands of such workers."
+        }
+      ],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "Jesus places himself at the center of the last judgment: people appeal to him, and his word decides. In the Old Testament that role belongs to God as judge of all the earth (Genesis 18:25)."
+        },
+        {
+          "id": "gifts",
+          "note": "Spiritual gifts, even real ones, are not proof of a saving relationship with Christ. Paul says the same of prophecy and miracles without love (1 Corinthians 13:1-3)."
+        }
+      ],
+      "refs": ["Luke 13:25-27", "Amos 3:2", "Matthew 25:31-46", "1 Corinthians 13:1-3", "2 Timothy 2:19"]
+    },
+    {
+      "v": "24-25",
+      "context": "The last contrast begins. The ‘therefore’ (oun) draws the conclusion from the whole sermon: the one who hears Jesus' words and does them is like a wise builder whose house stands in the storm.",
+      "grammar": "Mou tous logous toutous, ‘these words of mine’, refers to the whole sermon, and the phrase is striking: the foundation is Jesus' own words, as the Law was Israel's. Homoiōthēsetai, a future passive, ‘will be compared’ or ‘will prove to be like’, looks toward the test to come. Phronimos means prudent or sensible, the practical wisdom of Proverbs. The storm comes in three short clauses, rain, rivers, winds, and in verse 25 the pluperfect passive tethemeliōto, ‘it had been founded’, explains why the house stands: its foundation had been laid on rock before the storm arrived.",
+      "words": ["G3056", "G3666", "G5429", "G4073", "G2311"],
+      "parallels": ["Luke 6:47-48"],
+      "text": "The Byzantine manuscripts and the King James Version read homoiōsō auton, ‘I will liken him’, instead of the passive ‘he will be like’. The difference is small, but the earlier reading keeps the focus on what the hearer proves to be.",
+      "history": "Luke's version has the builder dig deep to lay a foundation on rock, and a single river bursting against the house (Luke 6:48), which suits a lowland setting, while Matthew's rain, torrents, and winds fit the flash floods of the Judean and Galilean hills. Rabbinic tradition used similar building parables: the Mishnah compares one whose wisdom exceeds his deeds to a tree with many branches and few roots, uprooted by the wind (m. Avot 3:17).",
+      "theology": [
+        {
+          "id": "wisdom",
+          "note": "Wisdom in the Bible is not cleverness but doing what is right and true. Jesus defines the wise person as the one who acts on his words, which makes his teaching the new measure of wisdom."
+        },
+        {
+          "id": "revelation",
+          "note": "The foundation is ‘these words of Mine’. Jesus claims for his own teaching the authority the Old Testament gives to God's word (Isaiah 40:8)."
+        }
+      ],
+      "refs": ["Luke 6:47-48", "Proverbs 10:25", "Isaiah 28:16-17", "James 1:22-25", "1 Corinthians 3:10-11"]
+    },
+    {
+      "v": "26-27",
+      "context": "The foolish builder hears the same words but does not act on them. The storm is described in exactly the same words; the only difference is the foundation. The sermon ends not with comfort but with a crash.",
+      "grammar": "Mōros, ‘foolish’, is the opposite of phronimos, and in the wisdom tradition the fool is not unintelligent but morally careless. Verse 27 repeats verse 25 phrase for phrase, except that prosekopsan, ‘they struck against’, replaces prosepesan, ‘they fell against’, and the ending is reversed: kai epesen, ‘and it fell’. The final clause, kai ēn hē ptōsis autēs megalē, ‘and its fall was great’, places the adjective megalē last for weight. The repetition is the point: the same storm tests every life.",
+      "words": ["G3474", "G0285", "G4350", "G4098", "G4431"],
+      "parallels": ["Luke 6:49"],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The storm is most naturally read as the final judgment, though it also fits any crisis that tests what a life is built on. Ezekiel 13:10-14 pictures the wall of false prophets collapsing under God's storm."
+        },
+        {
+          "id": "wisdom",
+          "note": "The Sermon on the Mount ends where Proverbs begins: with two ways of life and their outcomes. Hearing without doing is the fool's path."
+        }
+      ],
+      "refs": ["Ezekiel 13:10-14", "Proverbs 12:7", "Proverbs 14:11", "Hebrews 12:26-27"]
+    },
+    {
+      "v": "28-29",
+      "context": "The narrator closes the first of Jesus' five discourses in Matthew. The crowds, who were listening at the edges (5:1), are astonished, and the reason given is the authority with which he taught.",
+      "grammar": "Kai egeneto hote etelesen ho Iēsous tous logous toutous, ‘and it happened when Jesus finished these words’, is the formula that closes each of Matthew's five discourses (11:1, 13:53, 19:1, 26:1). The phrase echoes the Old Testament's notices that Moses finished speaking (Deuteronomy 31:24, 32:45), and Dale Allison, in The New Moses: A Matthean Typology (1993), argued that Matthew shaped such details to present Jesus as a new and greater Moses. The imperfect exeplēssonto, ‘they were amazed’, describes lasting astonishment. The periphrastic ēn didaskōn, ‘he was teaching’, and hōs exousian echōn, ‘as one having authority’, describe his habitual manner. Matthew's grammateis autōn, ‘their scribes’, adds a possessive that Mark 1:22 lacks, one of several places where Matthew speaks of ‘their’ synagogues and scribes (4:23, 9:35).",
+      "words": ["G5055", "G1605", "G1321", "G1849", "G1122"],
+      "parallels": ["Mark 1:22", "Luke 4:32"],
+      "text": "The earliest manuscripts read ‘their scribes’; many later ones add ‘and the Pharisees’ or omit ‘their’. The King James Version reads simply ‘the scribes’.",
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "Jesus teaches not by citing earlier authorities but on his own authority, ‘but I tell you’ (5:22, 5:28). The crowds sense what the rest of the Gospel makes plain, that the one speaking has the right to interpret God's law because of who he is (28:18)."
+        }
+      ],
+      "refs": ["Mark 1:22", "Matthew 5:21-22", "Matthew 28:18", "Deuteronomy 18:15-18", "John 7:46"]
+    }
+  ]
+}

@@ -1,0 +1,210 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "The ‘then’ (oun) connects the chapter to 3:27-31: if boasting is excluded and faith upholds the law, what about Abraham, the father of Israel and the great example of Jewish piety? Paul now proves from the law itself, the book of Genesis, what he claimed in 3:21 and 3:31.",
+      "grammar": "The sentence is awkward in Greek, and the translation depends on where the infinitive heurēkenai, ‘to have found’, is placed and what kata sarka, ‘according to the flesh’, modifies. The usual reading is ‘What shall we say that Abraham, our forefather according to the flesh, has found?’, taking ‘according to the flesh’ with ‘forefather’. Richard Hays (Novum Testamentum, 1985) proposed punctuating after ‘What shall we say?’ and reading ‘Have we found Abraham to be our forefather according to the flesh?’, a question about whether Jewish and Gentile believers belong to Abraham's family by physical descent; the expected answer, no, is then developed through verse 18. Propatora, ‘forefather’, is found only here in the New Testament. Ti oun eroumen, ‘what then shall we say?’, is Paul's regular formula for introducing an objection or next step (6:1, 7:7, 8:31, 9:14, 9:30).",
+      "words": ["G4483", "G2147", "G0011", "G6074", "G4561"],
+      "text": "The manuscripts are unsettled. Vaticanus lacks ‘to have found’ altogether, which Westcott and Hort followed; the Textus Receptus and Byzantine text place it after ‘our father’ and read patera, ‘father’, instead of the rarer propatora, ‘forefather’, hence the King James Version's ‘Abraham our father, as pertaining to the flesh, hath found’. The critical editions print ‘to have found’ early in the sentence with ‘forefather’.",
+      "theology": [
+        { "id": "israel", "note": "Abraham is ‘our forefather’ for Paul and his Jewish kin. By going back to Abraham, Paul shows that justification by faith is not a Gentile innovation but the pattern at Israel's root, and he will argue that the family of Abraham is defined by faith, not by flesh alone." }
+      ],
+      "refs": ["Genesis 12:1-3", "Isaiah 51:1-2", "Matthew 3:9", "John 8:39", "Galatians 3:7"]
+    },
+    {
+      "v": "2",
+      "context": "If Abraham had been justified by works, he would have grounds for boasting, the very boasting 3:27 excluded. Paul concedes the hypothesis for a moment and immediately denies its conclusion: not before God. Verse 3 gives the reason from Scripture.",
+      "grammar": "Ei... edikaiōthē, ‘if he was justified’, is a first-class condition, assuming the premise for argument's sake, which Paul's Jewish contemporaries did hold. Echei kauchēma, ‘he has a ground for boasting’, uses kauchēma, the thing one boasts in, rather than kauchēsis, the act of boasting (3:27). The final phrase all' ou pros theon, ‘but not toward God’, is compressed; it may mean ‘but he has no boast before God’ (because he was not justified by works) or ‘he might boast before people, but not before God’.",
+      "words": ["G0011", "G2041", "G1344", "G2745", "G2316"],
+      "history": "Paul's opponent is not a straw man. Jewish tradition honored Abraham as the model of obedience. Sirach (44:19-21), from about 180 BC, says he kept the law of the Most High and was found faithful when tested, and therefore God promised to bless the nations through him. Jubilees (23:10) says Abraham was perfect in all his deeds with the Lord. The Mishnah (Kiddushin 4:14), compiled about AD 200 but preserving earlier tradition, says Abraham kept the whole law before it was given. Paul reads the same Genesis but begins from a different verse.",
+      "theology": [
+        { "id": "justification", "note": "If justification were by works, the one justified would have something to boast about before God. That God excludes all such boasting is, for Paul, evidence that justification is not by works. Even the greatest of the patriarchs stands before God with nothing to claim." }
+      ],
+      "refs": ["Romans 3:27", "Ephesians 2:8-9", "James 2:21-24", "1 Corinthians 1:29-31", "Genesis 26:5"]
+    },
+    {
+      "v": "3",
+      "context": "The ‘for’ introduces the proof, and the proof is Scripture: Genesis 15:6. Abraham believed God, and his faith was credited as righteousness. The rest of the chapter is a commentary on this verse, returning to it in verses 9, 22, and 23.",
+      "grammar": "Ti gar hē graphē legei, ‘what does the Scripture say?’, personifies Scripture as speaking, a common Jewish idiom. Episteusen tō theō, ‘he believed God’, uses the dative: trusted God, relied on what God said. Elogisthē autō eis dikaiosynēn, ‘it was reckoned to him as righteousness’, uses the aorist passive of logizomai with eis, ‘as’ or ‘for’. What ‘it’ is and how faith relates to the righteousness are the questions the construction raises. Some read it as God counting faith itself as righteousness, a position Robert Gundry defended in a 2004 essay on the non-imputation of Christ's righteousness; others read faith as the means by which a righteousness not one's own is received, as John Piper argued in Counted Righteous in Christ (2002). The verb logizomai in commercial Greek meant to enter a sum in an account.",
+      "words": ["G1124", "G4100", "G2316", "G3049", "G1343"],
+      "ot": [
+        { "ref": "Genesis 15:6", "note": "The Hebrew reads vehe'emin bYHWH vayyachsheveha lo tsedaqah: ‘and he believed in the LORD, and he counted it to him as righteousness’. The first verb is a Hiphil of the root 'mn, ‘to be firm’, and its unusual form (perfect with ‘and’) has led some grammarians to read it as continuing trust. The Hebrew leaves open who counted what to whom: Rashi took it that God counted Abraham's faith to him as merit, while Ramban suggested that Abraham counted God's promise as righteousness on God's part. The Septuagint makes God the implied actor with a passive, kai elogisthē autō eis dikaiosynēn, and Paul quotes it exactly. In Genesis 15 the context is God's promise of an heir from Abraham's own body and descendants like the stars, given when Abraham was childless; the covenant ceremony of the rest of the chapter follows. The verse comes before the birth of Ishmael (Genesis 16), before circumcision (Genesis 17), and long before the binding of Isaac (Genesis 22)." }
+      ],
+      "history": "Genesis 15:6 was read differently by Paul's contemporaries. First Maccabees 2:52, in the dying speech of the priest Mattathias (about 166 BC), asks whether Abraham was not found faithful when tested, and it was reckoned to him as righteousness, joining Genesis 15:6 to the testing of Genesis 22. The same formula is used of Phinehas's zeal in Psalm 106:30-31 and in Jubilees 30:17 of Levi's zeal. James 2:21-23 connects the verse to the offering of Isaac as its fulfillment. Paul reads it in its own place in Genesis, before any of Abraham's deeds, a point of chronology he makes explicit in verse 10.",
+      "theology": [
+        { "id": "faith", "note": "Abraham's faith was trust in God's promise when there was nothing to see. What was credited to him was not his achievement but his reliance on God's word, which is why Paul can make him the model for every believer." },
+        { "id": "justification", "note": "God reckons righteousness to the one who believes. Protestant, Catholic, and Orthodox theology differ over how this reckoning relates to inward renewal, but all read the verse as God's gracious verdict received by faith, and Paul's argument makes it the pattern for Jew and Gentile alike." }
+      ],
+      "refs": ["Genesis 15:6", "Galatians 3:6-9", "James 2:23", "Hebrews 11:8-12", "Psalm 106:30-31"]
+    },
+    {
+      "v": "4-5",
+      "context": "Paul explains the meaning of ‘credited’ with an everyday example. A worker's wages are not a gift but a debt paid. But to the one who does not work and trusts the God who justifies the ungodly, faith is credited as righteousness. Verse 5 contains one of the most startling descriptions of God in the Bible.",
+      "grammar": "Tō ergazomenō, ‘to the one who works’, and tō mē ergazomenō, ‘to the one who does not work’, are matching present participles. Misthos, ‘wage’, is logizetai kata opheilēma, ‘reckoned as a debt’, not kata charin, ‘as a gift’. In verse 5, the object of faith is ton dikaiounta ton asebē, ‘the one who justifies the ungodly’. The Septuagint of Exodus 23:7 commands judges ou dikaiōseis ton asebē, ‘you shall not justify the ungodly’, with the same verb and the same noun, and Isaiah 5:23 and Proverbs 17:15 condemn it. Paul says God does what the law forbids human judges to do, which is only just because of what 3:25-26 describes. Asebēs, ‘ungodly’, returns in 5:6: Christ died for the ungodly.",
+      "words": ["G2038", "G3408", "G3049", "G5485", "G3783", "G4100", "G1344", "G0765", "G4102G"],
+      "theology": [
+        { "id": "justification", "note": "God justifies the ungodly, not the godly. The verse rules out any view in which God first requires people to become righteous and then declares them so; the verdict comes to people who have nothing to offer. That is why Paul grounds it in the atonement." },
+        { "id": "salvation", "note": "Grace and debt are opposites. If righteousness were paid as wages, God would owe it; because it is credited as a gift, God owes no one, and no one can claim it." }
+      ],
+      "refs": ["Exodus 23:7", "Proverbs 17:15", "Romans 5:6", "Romans 11:6", "Luke 18:13-14"]
+    },
+    {
+      "v": "6-8",
+      "context": "A second witness from Scripture, David, supports Genesis: he pronounces blessed the one to whom God credits righteousness apart from works. Paul quotes Psalm 32:1-2, where the blessing is forgiveness. Two witnesses establish the matter, as the law required (Deuteronomy 19:15).",
+      "grammar": "Kathaper, ‘just as’, links David to Abraham. Makarismos, ‘pronouncement of blessing’, is the act of calling someone blessed. The psalm's verbs are aorist passives: aphethēsan, ‘were forgiven’ (from aphiēmi, the verb behind aphesis, full forgiveness), and epekalyphthēsan, ‘were covered’. In verse 8, ou mē logisētai, ‘will certainly not reckon’, uses ou mē with the subjunctive, the strongest negation in Greek. Paul's argument connects the two texts by the shared verb logizomai: Genesis says righteousness was reckoned; Psalm 32 says sin is not reckoned. Reading one passage by another that shares a key word was a recognized Jewish method, later listed among the rules attributed to Hillel.",
+      "words": ["G1138", "G3108", "G3049", "G3107", "G0863H", "G0458", "G1943", "G0266", "G2962G"],
+      "ot": [
+        { "ref": "Psalm 32:1-2", "note": "The Hebrew reads ashre nesui-pesha kesui chata'ah, ‘blessed is the one whose transgression is lifted, whose sin is covered’, and ‘blessed is the man to whom the LORD does not reckon (lo yachshov) iniquity’. The verb chashav is the same verb used in Genesis 15:6, which makes the link Paul draws native to the Hebrew as well as to the Greek. The Septuagint (Psalm 31:1-2) is quoted exactly. The psalm is titled a psalm of David, and it tells of a man who kept silent about his sin until his strength dried up, then confessed and was forgiven (32:3-5). Jewish tradition connected it with David's sin with Bathsheba, for which the law provided no sacrifice. That David, the king after God's own heart, needed his sin not counted is Paul's point: righteousness apart from works means forgiveness." }
+      ],
+      "text": "In verse 8 the critical editions read hou, ‘whose (sin)’, while the Textus Receptus reads hō, ‘to whom’. Manuscripts of the Septuagint divide the same way, and the meaning is unaffected.",
+      "theology": [
+        { "id": "justification", "note": "Paul equates having righteousness credited with having sins forgiven and not counted. Justification includes forgiveness at its core, whatever else it includes, and it is received as a blessing pronounced, not a reward earned." }
+      ],
+      "refs": ["Psalm 32:1-5", "2 Corinthians 5:19", "Psalm 130:3-4", "Micah 7:18-19", "Deuteronomy 19:15"]
+    },
+    {
+      "v": "9-10",
+      "context": "The blessing David described: is it only for the circumcised? Paul answers by chronology. Abraham's faith was credited as righteousness in Genesis 15, while he was uncircumcised; circumcision came in Genesis 17. So the blessing cannot be restricted to the circumcised.",
+      "grammar": "Makarismos oun houtos, ‘this blessing then’, uses oun to draw the Psalm into the argument about Abraham. Epi tēn peritomēn ē kai epi tēn akrobystian, ‘upon the circumcision or also upon the uncircumcision’, uses the abstract nouns for the groups, as in 3:30. Legomen gar, ‘for we say’, restates Genesis 15:6 as agreed ground. Pōs oun elogisthē, ‘how then was it credited?’, asks under what circumstances. En peritomē onti ē en akrobystia, ‘being in circumcision or in uncircumcision’, uses a participle for Abraham's state at the time. The answer is emphatic: ouk en peritomē all' en akrobystia, ‘not in circumcision but in uncircumcision’.",
+      "words": ["G3108", "G4061", "G0203", "G3004G", "G3049", "G4102G", "G1343"],
+      "history": "The interval is significant on Genesis's own timeline. When Ishmael was born, after the events of Genesis 15, Abraham was eighty-six (Genesis 16:16), and he was circumcised at ninety-nine (Genesis 17:24). So at least thirteen years, and probably more, separate the crediting of righteousness from the sign of circumcision. Rabbinic tradition knew the order of events; its conclusions differed from Paul's.",
+      "theology": [
+        { "id": "covenant", "note": "The covenant blessing was given to faith before it was marked by a rite. Paul does not deny the value of circumcision but locates it after and under the promise received by faith." }
+      ],
+      "refs": ["Genesis 15:6", "Genesis 16:16", "Genesis 17:24", "Galatians 3:8", "Acts 10:45"]
+    },
+    {
+      "v": "11",
+      "context": "Paul describes circumcision's role: Abraham received it as a sign and seal of the righteousness he already had by faith while uncircumcised. The purpose was that he should be the father of all who believe without being circumcised, so that righteousness is credited to them too. The Gentile believers in Rome are Abraham's children.",
+      "grammar": "Sēmeion elaben peritomēs, ‘he received the sign of circumcision’, uses peritomēs as a genitive of apposition: the sign that consists in circumcision (Genesis 17:11 calls it ‘a sign of the covenant’). Sphragida, ‘a seal’, was the impression in wax or clay that authenticated a document or marked ownership. A seal confirms what already exists; it does not create it. Tēs dikaiosynēs tēs pisteōs tēs en tē akrobystia, ‘of the righteousness of the faith which was in uncircumcision’, piles up articles to be precise about timing. Eis to einai auton patera, ‘so that he might be father’, expresses God's purpose. Di' akrobystias, ‘through uncircumcision’, uses dia with the genitive of attendant circumstance, ‘while uncircumcised’.",
+      "words": ["G4592", "G2983", "G4061", "G4973", "G1343", "G4102G", "G3962", "G0203", "G3049"],
+      "history": "The language of sealing for circumcision appears in later Jewish sources: the blessing at a circumcision recorded in the Babylonian Talmud (Shabbat 137b) speaks of God sealing Abraham's offspring with the sign of the holy covenant. Early Christians came to speak of baptism as a seal; the Shepherd of Hermas (Similitudes 9.16), from the second century, calls the water of baptism the seal.",
+      "theology": [
+        { "id": "sacraments", "note": "A sign and seal confirms a reality already given; it does not produce it. Reformed covenant theology, noting Colossians 2:11-12, has drawn a line from circumcision to baptism and used it to support infant baptism as a sign of the covenant; Baptist interpreters reply that the new covenant sign belongs to those who themselves believe, as Abraham believed before he received the seal. Both appeal to this verse." },
+        { "id": "faith", "note": "Abraham's fatherhood extends to all who believe, Gentiles included. Faith, not ethnicity or ritual, is the family resemblance of Abraham's children." }
+      ],
+      "refs": ["Genesis 17:9-14", "Colossians 2:11-12", "Galatians 3:7-9", "Ephesians 1:13", "2 Corinthians 1:22"]
+    },
+    {
+      "v": "12",
+      "context": "Abraham is also the father of the circumcised, but only of those who not only are circumcised but also follow the faith Abraham had before his circumcision. He is father of both Jews and Gentiles who believe, and the order of verses 11-12 (Gentiles first) mirrors the chronology Paul has argued.",
+      "grammar": "Patera peritomēs, ‘father of circumcision’, parallels the fatherhood of verse 11. The Greek repeats the article in a way that seems to describe two groups: tois ouk ek peritomēs monon alla kai tois stoichousin, ‘to those not of circumcision only, but also to those who walk’. The second tois is grammatically awkward, since Paul means one group, circumcised people who also believe; many commentators, among them Cranfield, regard it as a slip in dictation or an early scribal error. Stoichousin tois ichnesin, ‘walking in the footsteps’, uses a verb for walking in line, as soldiers in rank (compare Galatians 5:25).",
+      "words": ["G3962", "G4061", "G3441", "G4748", "G2487", "G0203", "G4102G"],
+      "theology": [
+        { "id": "israel", "note": "Abraham remains the father of the circumcised, but the relationship that counts is shared faith. Paul neither erases Israel nor makes physical descent sufficient; chapters 9-11 develop the same balance." }
+      ],
+      "refs": ["Galatians 5:25", "Romans 9:6-8", "John 8:39", "1 Peter 2:21", "Philippians 3:3"]
+    },
+    {
+      "v": "13",
+      "context": "The ‘for’ grounds Abraham's universal fatherhood in the nature of the promise itself. The promise that he and his offspring would inherit the world came not through the law but through the righteousness of faith. Paul moves from circumcision to the law of Moses, which came 430 years after the promise (Galatians 3:17).",
+      "grammar": "Ou gar dia nomou, ‘for not through law’, stands first for emphasis. Hē epangelia, ‘the promise’, is the first occurrence of a word that dominates verses 13-21. Tō spermati autou, ‘to his seed’, is singular and collective, which Paul exploits in Galatians 3:16 but not here. To klēronomon auton einai kosmou, ‘that he would be heir of the world’, uses an infinitive to state the content of the promise. Dia dikaiosynēs pisteōs, ‘through the righteousness of faith’, is a genitive of source or means: righteousness that comes by faith.",
+      "words": ["G3551", "G1860", "G0011", "G4690G", "G2818", "G2889", "G1343", "G4102G"],
+      "history": "Genesis promises Abraham the land of Canaan (Genesis 12:7, 15:18-21, 17:8), not the world in so many words. But Jewish interpretation had already widened it. Sirach 44:21 says God promised to give Abraham's descendants an inheritance from sea to sea and from the River to the ends of the earth, echoing the royal hope of Psalm 72:8, and Jubilees 22:14 has Abraham bless Jacob to inherit all the earth. Paul shares the enlarged reading and connects it with the promise that all nations would be blessed in Abraham (Genesis 12:3, 22:17-18).",
+      "theology": [
+        { "id": "covenant", "note": "The promise to Abraham was always larger than a strip of land. Its heirs are all who share Abraham's faith, and its inheritance is the renewed world (8:17-21), which is why Jesus could say the meek will inherit the earth." },
+        { "id": "new-creation", "note": "Abraham as heir of the world anticipates the renewed creation in which God's children share Christ's inheritance (Romans 8:17-21). The land promise opens onto a cosmic hope." }
+      ],
+      "refs": ["Genesis 22:17-18", "Galatians 3:16-18", "Romans 8:17", "Matthew 5:5", "Hebrews 11:9-10"]
+    },
+    {
+      "v": "14-15",
+      "context": "The ‘for’ explains why the promise cannot come through the law. If the heirs were those of the law, faith would be emptied and the promise voided. The reason is that the law works wrath, since where there is law there is transgression. The law exposes and condemns; it does not deliver a promise.",
+      "grammar": "Hoi ek nomou, ‘those of the law’, describes people whose identity and hope rest on the law. The two perfect passive verbs, kekenōtai, ‘has been emptied’, and katērgētai, ‘has been nullified’, describe a permanent result: if the law were the basis, faith would be emptied of meaning and the promise cancelled. In verse 15, ho nomos orgēn katergazetai, ‘the law produces wrath’, uses a verb Paul uses of what sin and the law work in 7:8-13. Parabasis, ‘transgression’, is the breaking of a known command, distinct from hamartia, ‘sin’: where there is no law, there may be sin (5:13), but not transgression in the strict sense.",
+      "words": ["G3551", "G2818", "G2758", "G4102G", "G2673", "G1860", "G3709", "G2716", "G3847"],
+      "text": "The critical editions read de, ‘but’ or ‘and’, in verse 15b; the Textus Receptus and Byzantine text read gar, ‘for’, which the King James Version follows (‘for where no law is’). The logic is similar either way.",
+      "theology": [
+        { "id": "law", "note": "The law works wrath because, meeting sinful people, it turns sin into conscious transgression and so exposes them to judgment. Paul will say in chapter 7 that the law is holy and good, yet it could not give life; its role is to reveal, not to rescue." },
+        { "id": "salvation", "note": "A promise that depended on law-keeping would be as uncertain as human obedience. Only a promise resting on grace can be sure, which is the point verse 16 draws." }
+      ],
+      "refs": ["Romans 5:13", "Romans 5:20", "Romans 7:7-13", "Galatians 3:18", "Galatians 3:10"]
+    },
+    {
+      "v": "16",
+      "context": "‘For this reason’ draws the conclusion: the promise is by faith so that it may rest on grace and be secure for all Abraham's offspring, both those of the law and those of Abraham's faith. Paul ends with a statement that includes himself and every reader: Abraham is the father of us all.",
+      "grammar": "Dia touto ek pisteōs, ‘therefore by faith’, has no verb; ‘it is’ must be supplied, with ‘it’ meaning the promise or the inheritance. Hina kata charin, ‘so that according to grace’, states God's purpose. Bebaian, ‘secure’ or ‘guaranteed’, was a legal term: the related noun bebaiōsis appears in commercial papyri for a seller's guarantee of title, as Adolf Deissmann showed in his studies of the papyri. Panti tō spermati, ‘to all the offspring’, is inclusive. The two groups are tō ek tou nomou, ‘the one of the law’ (Jewish believers), and tō ek pisteōs Abraam, ‘the one of the faith of Abraham’. The phrase ‘faith of Abraham’ is a subjective genitive, Abraham's own faith, which bears on the debate over ‘faith of Christ’ in 3:22.",
+      "words": ["G4102G", "G5485", "G0949", "G1860", "G4690G", "G3551", "G0011", "G3962"],
+      "theology": [
+        { "id": "salvation", "note": "Only grace makes the promise sure. If it depended on the recipients, it would be as unstable as they are; because it depends on God's giving, it holds for every heir." },
+        { "id": "perseverance", "note": "Paul's word ‘guaranteed’ points to the security that grace gives. The promise is certain not because believers hold on well but because God holds it, a theme Paul develops in 8:28-39." }
+      ],
+      "refs": ["Galatians 3:29", "Romans 8:28-39", "Hebrews 6:17-18", "2 Corinthians 1:20", "Ephesians 2:8"]
+    },
+    {
+      "v": "17",
+      "context": "Scripture confirms Abraham's universal fatherhood: God made him a father of many nations. Paul then describes the God Abraham believed: the one who gives life to the dead and calls into being what does not exist. That description prepares for the story of Isaac's birth (verses 18-21) and for the resurrection of Jesus (verse 24).",
+      "grammar": "The quotation's verb tetheika, ‘I have made’, is perfect: God speaks of the promise as already accomplished. Katenanti hou episteusen theou, ‘before the God in whom he believed’, is compressed by attraction of the relative pronoun into the case of its antecedent. The two participles describe God: zōopoiountos tous nekrous, ‘giving life to the dead’, and kalountos ta mē onta hōs onta, ‘calling the things that are not as being’. The second phrase may mean that God creates from nothing, or that God speaks of nonexistent descendants as though they already existed, as the perfect tetheika has just done. Both senses may be intended.",
+      "words": ["G3962", "G1484", "G5087", "G2713", "G4100", "G2227", "G3498", "G2564G", "G1510"],
+      "ot": [
+        { "ref": "Genesis 17:5", "note": "In Genesis 17:5 God changes Abram's name to Abraham, explaining it as av hamon goyim, ‘father of a multitude of nations’, and adds netatikha, ‘I have made you’, a perfect that speaks of the future as settled. The Septuagint renders it patera pollōn ethnōn tetheika se, which Paul quotes exactly. In Genesis the ‘nations’ include the peoples descended from Abraham through Ishmael, Keturah's sons, and Esau; Paul reads it, in light of Genesis 12:3, as the Gentile nations who share Abraham's faith. The name change comes in the same chapter as circumcision, so Paul draws the promise of universal fatherhood from the very context that gave the sign of the covenant." }
+      ],
+      "history": "The description of God as the one who gives life to the dead echoes the second blessing of the Amidah, the central Jewish prayer recited daily, which praises God as the one who makes the dead live. Its earliest written forms are later than Paul, but the phrase reflects Pharisaic belief in resurrection that Paul shared. The idea that God calls into being what does not exist appears in 2 Maccabees 7:28, where a mother urges her son to recognize that God did not make heaven and earth out of things that existed.",
+      "theology": [
+        { "id": "creation", "note": "The God of Abraham creates by his word, calling into existence what did not exist. The faith that justifies is faith in the Creator, the reverse of the refusal in 1:20-25 to honor him as Creator." },
+        { "id": "resurrection", "note": "God gives life to the dead: Abraham trusted this about God before the resurrection of Jesus revealed it fully. The same God acted in Isaac's birth from a ‘dead’ body and womb and in raising Jesus." }
+      ],
+      "refs": ["Genesis 17:5", "Hebrews 11:3", "Hebrews 11:17-19", "2 Corinthians 1:9", "Isaiah 48:13"]
+    },
+    {
+      "v": "18",
+      "context": "Paul describes Abraham's faith: hoping against hope, he believed, and so became the father of many nations according to what had been spoken. The promise ‘so shall your offspring be’ comes from Genesis 15:5, the verse just before the one Paul has been expounding.",
+      "grammar": "Par' elpida ep' elpidi, ‘against hope, in hope’, is a wordplay on the preposition: para with the accusative means ‘beyond’ or ‘contrary to’ (all human expectation), and epi with the dative means ‘upon’ or ‘on the basis of’ (a hope grounded in God). Episteusen eis to genesthai auton patera, ‘he believed so that he became father’, expresses result, or perhaps purpose: God's purpose in Abraham's faith. Kata to eirēmenon, ‘according to what had been spoken’, uses a perfect passive participle for the standing word of God. Houtōs estai to sperma sou, ‘so shall your offspring be’, quotes the Septuagint of Genesis 15:5 exactly.",
+      "words": ["G1680", "G4100", "G1096", "G3962", "G1484", "G2046", "G4690G"],
+      "ot": [
+        { "ref": "Genesis 15:5", "note": "God brought Abram outside, told him to count the stars if he could, and said ‘so shall your offspring be’. The Hebrew koh yihyeh zar'ekha is rendered in the Septuagint houtōs estai to sperma sou, which Paul quotes. The next verse is Genesis 15:6, so the content of Abraham's faith was precisely this promise of innumerable descendants, made to a childless old man. Paul keeps the focus on the promise believed, not on Abraham's virtue." }
+      ],
+      "theology": [
+        { "id": "hope", "note": "Christian hope is not optimism based on circumstances; Abraham's circumstances offered none. It is confidence resting on God's word and God's power, hope ‘upon’ God when every human hope has failed." }
+      ],
+      "refs": ["Genesis 15:5", "Hebrews 11:11-12", "Romans 8:24-25", "Hebrews 6:13-15"]
+    },
+    {
+      "v": "19",
+      "context": "Abraham's faith did not ignore the facts. He considered his own body, as good as dead at about a hundred years old, and Sarah's barren womb, and he did not weaken in faith. Paul's portrait is of trust that looks straight at impossibility and still relies on God.",
+      "grammar": "Mē asthenēsas tē pistei, ‘not having become weak in faith’, uses an aorist participle. Katenoēsen, ‘he considered’ or ‘he took note of’, is aorist: he faced the reality. To heautou sōma nenekrōmenon, ‘his own body having been made dead’, uses a perfect passive participle, as does Hebrews 11:12 of the same body. Hekatontaetēs pou, ‘about a hundred years old’ (Genesis 17:17), and tēn nekrōsin tēs mētras Sarras, ‘the deadness of Sarah's womb’, use nekrōsis, a word from the same root as ‘dead’ in verse 17: the God who gives life to the dead is exactly the God Abraham needed.",
+      "words": ["G0770G", "G4102G", "G2657", "G4983", "G3499", "G1541", "G3500", "G3388", "G4564"],
+      "text": "The Textus Receptus and Byzantine text add ou, ‘not’: ‘he considered not his own body’ (King James Version), meaning Abraham did not dwell on his body's condition. The earliest manuscripts lack the negative, so that Abraham did consider it and believed anyway. The two readings express different pictures of faith, and the shorter reading is preferred by modern editors. Vaticanus also lacks ēdē, ‘already’ (as good as dead).",
+      "theology": [
+        { "id": "faith", "note": "Faith in Romans 4 is not denial of reality but trust in God in the face of it. Abraham took full account of his body and Sarah's womb and still relied on God's power, which is faith of a different kind from wishful thinking." }
+      ],
+      "refs": ["Genesis 17:17", "Genesis 18:11-14", "Hebrews 11:11-12", "Genesis 21:1-7"]
+    },
+    {
+      "v": "20-21",
+      "context": "Abraham did not waver in unbelief concerning God's promise; he grew strong in faith and gave glory to God, fully convinced that God could do what he had promised. The phrase ‘gave glory to God’ reverses 1:21, where humanity knew God but did not glorify him.",
+      "grammar": "Eis de tēn epangelian, ‘with respect to the promise’, stands first for emphasis. Ou diekrithē tē apistia, ‘he did not waver in unbelief’, uses the passive of diakrinō, which in the New Testament often means to doubt or be divided in mind (James 1:6, Mark 11:23). Enedynamōthē tē pistei, ‘he was strengthened in faith’, is also passive and may imply that God strengthened him. Dous doxan tō theō, ‘giving glory to God’, is an aorist participle describing what his faith did. Plērophorētheis, ‘being fully convinced’, is a vivid word for full assurance (14:5, Colossians 4:12). Epēngeltai, ‘he has promised’, is perfect, and dynatos, ‘able’, puts the weight on God's power.",
+      "words": ["G1860", "G1252", "G0570", "G1743", "G4102G", "G1325", "G1391", "G4135", "G1861", "G1415"],
+      "theology": [
+        { "id": "faith", "note": "Faith glorifies God by taking him at his word. The contrast with 1:18-32 is deliberate: where humanity refused God glory and exchanged the Creator for creatures, Abraham gave glory to the God who creates and raises the dead." },
+        { "id": "worship", "note": "Trust is itself worship. To believe that God is able to do what he promised is to give him the glory the rest of humanity withheld." }
+      ],
+      "refs": ["Romans 1:21", "James 1:6", "Mark 11:23", "Hebrews 11:11", "Luke 1:37"]
+    },
+    {
+      "v": "22-24",
+      "context": "Paul returns to Genesis 15:6 once more: that is why it was credited to him as righteousness. Then he applies it. The words were not written for Abraham alone but for us, to whom righteousness will be credited: those who believe in the God who raised Jesus from the dead.",
+      "grammar": "Dio kai, ‘therefore also’, links Abraham's faith to its crediting. Ouk egraphē di' auton monon, ‘it was not written for his sake only’, states a principle of interpretation Paul uses elsewhere (15:4, 1 Corinthians 9:10, 10:11): Scripture was written for later readers too. Hois mellei logizesthai, ‘to whom it is going to be credited’, uses mellō with an infinitive, which can mean ‘destined to be’ or can point to a future crediting at the last judgment. Tois pisteuousin epi ton egeiranta Iēsoun, ‘to those who believe in the one who raised Jesus’, makes God the object of faith, described by his act in raising Jesus, as verse 17 described him by his power over the dead.",
+      "words": ["G1352", "G3049", "G1125", "G3195", "G4100", "G1453", "G3498"],
+      "theology": [
+        { "id": "faith", "note": "Christian faith has the same object as Abraham's: the God who gives life to the dead. Abraham believed God would bring life from dead bodies; believers trust the God who has done that in raising Jesus." },
+        { "id": "revelation", "note": "Scripture speaks to later generations. The account of Abraham was written with Christian readers in view, which grounds the church's reading of the Old Testament as its own Scripture (15:4)." }
+      ],
+      "refs": ["Romans 15:4", "1 Corinthians 10:11", "1 Corinthians 9:10", "1 Peter 1:21", "Acts 2:24"]
+    },
+    {
+      "v": "25",
+      "context": "The chapter ends with a two-line confession, almost certainly shaped for memory and perhaps older than the letter: Jesus was handed over for our trespasses and raised for our justification. It gathers the whole of 3:21-4:24 into a sentence and prepares for 5:1, ‘therefore, since we have been justified’.",
+      "grammar": "Paredothē, ‘he was handed over’, is the aorist passive of paradidōmi, the verb used three times in 1:24-28 of God handing humanity over; now God hands over his Son (compare 8:32). The two lines are parallel: dia ta paraptōmata hēmōn, ‘because of our trespasses’, and dia tēn dikaiōsin hēmōn, ‘for the sake of our justification’. The same preposition dia with the accusative seems to look backward in the first line (the trespasses caused his death) and forward in the second (the resurrection aimed at justification). Some commentators read both as causal: he was raised because our justification had been secured by his death. Dikaiōsis, ‘justification’, the act of justifying, occurs only here and in 5:18 in the New Testament.",
+      "words": ["G3860", "G3900", "G1453", "G1347"],
+      "ot": [
+        { "ref": "Isaiah 53:12", "note": "The Septuagint of Isaiah 53 uses Paul's verb for the servant: kyrios paredōken auton tais hamartiais hēmōn, ‘the Lord handed him over for our sins’ (53:6), and dia tas hamartias autōn paredothē, ‘because of their sins he was handed over’ (53:12). The Hebrew of 53:12 says he bore the sin of many and interceded for the transgressors. Isaiah 53:11 also speaks of the servant justifying many (yatsdiq tsaddiq avdi larabbim), and the servant who is cut off in 53:8 sees his offspring and prolongs his days in 53:10. Paul's two lines trace the same pattern: handed over for sins, raised to bring justification." }
+      ],
+      "theology": [
+        { "id": "atonement", "note": "Christ's death dealt with our trespasses. The passive verb leaves God as the one who handed him over, as 8:32 says outright, so that the cross is God's own saving act, not an event forced on him." },
+        { "id": "resurrection", "note": "The resurrection is not an afterthought to justification. It is God's public vindication of the one who died for sinners, and so the declaration that his death has done its work; justification is bound to the risen Christ." },
+        { "id": "justification", "note": "Justification is anchored in two historical events, the cross and the empty tomb. It rests on what God has done in Christ, which is why Paul can move at once to peace with God in 5:1." }
+      ],
+      "refs": ["Isaiah 53:5-12", "Romans 8:32-34", "1 Corinthians 15:3-4", "Galatians 1:4", "1 Peter 1:21"]
+    }
+  ]
+}

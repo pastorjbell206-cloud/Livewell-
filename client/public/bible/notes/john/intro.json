@@ -1,4 +1,5 @@
 {
+  "v": 2,
   "tagline": "The fourth Gospel: the story of Jesus told as the eternal Word made flesh, written so that readers may believe and have life in his name.",
   "overview": "John is the fourth of the four Gospels, the books that tell the life, death, and resurrection of Jesus. It covers the same ground as Matthew, Mark, and Luke, from John the Baptist to the empty tomb, but it tells the story from a different height. Before Jesus is born in Bethlehem or baptized in the Jordan, John takes the reader back to the beginning of everything and names Jesus as the Word who was with God and was God, through whom all things were made, who then became flesh and lived among us.\n\nThe first half of the book (chapters 1 to 12) is built around a series of signs, miracles that point beyond themselves to who Jesus is: water turned to wine, a boy healed at a distance, a man lame for thirty-eight years made to walk, five thousand fed, a man born blind given sight, and Lazarus raised from the dead. Around the signs come long conversations and arguments, with Nicodemus at night, a Samaritan woman at a well, and crowds and leaders at the Jerusalem feasts. The second half (chapters 13 to 21) slows almost to a stop. Five chapters are given to one evening, Jesus' last meal with his disciples, where he washes their feet, promises the Holy Spirit, and prays for them. Then come the arrest, the trial before Pilate, the crucifixion, the empty tomb, and the risen Jesus meeting Mary Magdalene, Thomas, and Peter.\n\nThe book matters because it says most plainly what the other Gospels also claim: that in Jesus the God of Israel has come in person. It is also one of the simplest books in the New Testament to read and one of the deepest to study. Its vocabulary is small (light, life, truth, love, world, believe, abide, glory) and its thought is inexhaustible. Many people have come to faith by reading it first, and it says openly that this is why it was written (20:31).",
   "author": "The Gospel does not name its author. Its closing verses point to a figure it calls the disciple whom Jesus loved, who reclines beside Jesus at the Last Supper (13:23), stands at the cross (19:26), runs to the empty tomb (20:2-8), and is identified as the witness behind the book: “This is the disciple who testifies to these things and who has written them down. And we know that his testimony is true.” (21:24). The we in that verse suggests that others around the witness helped bring the book to its final form.\n\nFrom the late second century the church identified this disciple as John the son of Zebedee, one of the Twelve and the brother of James. Irenaeus of Lyon, writing around AD 180, said that John the disciple of the Lord, who leaned on his breast, published the Gospel while living at Ephesus, and Irenaeus claimed a link to that generation through Polycarp of Smyrna. Many scholars still hold this view, pointing to the author's detailed knowledge of Jerusalem and Palestinian geography and to the curious fact that John son of Zebedee is never named in the Gospel.\n\nOthers think the beloved disciple was a follower of Jesus who was not one of the Twelve, perhaps a Jerusalem disciple, which would explain his access to the high priest's house (18:15-16). Papias, an early second-century bishop whose words survive through the historian Eusebius, mentions a John the Elder, and some (Richard Bauckham among them) identify the beloved disciple with this elder rather than with the son of Zebedee. A third approach, influential in the second half of the twentieth century and associated with Raymond Brown and J. Louis Martyn, reads the Gospel as the product of a Johannine community, a circle of churches shaped by the beloved disciple's testimony, whose own experience (including conflict with synagogue leaders) left its mark on the text as it was written and revised in stages. These views overlap more than they seem: nearly all agree that the book rests on the testimony of a remembered eyewitness and that it came to its final form among his followers.",
@@ -9,29 +10,217 @@
   "christ": "Every Gospel is about Jesus, but John makes his identity the explicit subject of nearly every page. He is the Word who was God (1:1), the one and only Son who has made the Father known (1:18), the Lamb of God (1:29), and the Son of Man on whom heaven opens (1:51). Seven times he says I am with a picture attached: “I am the bread of life” (6:35), the light of the world (8:12), the gate for the sheep (10:7), the good shepherd (10:11), “I am the resurrection and the life” (11:25), “I am the way and the truth and the life” (14:6), and the true vine (15:1). Elsewhere he says I am with nothing after it, most strikingly “before Abraham was born, I am” (8:58), words his hearers take as a claim to the divine name, since they pick up stones. Yet John also shows the Son's full humanity more tenderly than any other Gospel: Jesus is tired at a well, weeps at a friend's tomb, and thirsts on the cross. The Word became flesh, and his glory is seen most fully when he is lifted up on the cross.",
   "reading": "Read John slowly and listen for its double meanings. Words like born again or from above (3:3), living water (4:10), and lifted up (3:14, 12:32) carry two senses at once, and characters regularly hear the lower one while Jesus means the higher. Watch the misunderstandings, the signs, the feasts, and the hour that is not yet come and then arrives. Watch the characters too, who often stand for different responses to Jesus: Nicodemus, the Samaritan woman, the man born blind, Martha and Mary, Thomas, and Peter.\n\nTwo cautions help. First, John's language about the Jews has been misused to justify contempt for Jewish people, a grave misreading of a book written largely by and about Jews; the term usually names the Jerusalem authorities in their opposition. Second, the story of the woman caught in adultery (7:53-8:11) is not found in the earliest manuscripts and is printed in brackets in most modern Bibles, though many think it preserves a true memory of Jesus. Readers comparing John with the other Gospels will also notice differences in order and emphasis, such as the temple cleansing near the start rather than the end. Scholars debate whether John knew the other Gospels or wrote independently; either way, John writes with his own purpose and arranges his material to serve it.",
   "structure": [
-    { "range": "1:1-18", "title": "Prologue: the Word made flesh", "summary": "A poem-like opening presents Jesus as the eternal Word, the agent of creation, the light rejected by his own and received by those who become children of God, and the one who has made the unseen Father known." },
-    { "range": "1:19-4:54", "title": "First witnesses and first signs", "summary": "John the Baptist points to Jesus, the first disciples follow, and Jesus turns water into wine, clears the temple, and speaks with Nicodemus and a Samaritan woman before healing an official's son." },
-    { "range": "5-10", "title": "Signs and conflict at the feasts", "summary": "At a series of Jewish festivals Jesus heals, feeds the crowds, and declares himself bread, light, and shepherd, while opposition from the Jerusalem authorities hardens." },
-    { "range": "11-12", "title": "Lazarus raised and the hour arrives", "summary": "The raising of Lazarus, the greatest sign, leads the council to plot Jesus' death. He is anointed at Bethany, enters Jerusalem, and announces that his hour has come." },
-    { "range": "13-17", "title": "The farewell at the table", "summary": "On his last night Jesus washes his disciples' feet, gives the new command to love, promises the Holy Spirit, speaks of the vine and branches, and prays for his followers." },
-    { "range": "18-20", "title": "Arrest, cross, and resurrection", "summary": "Jesus is arrested, tried before Annas and Pilate, crucified as King of the Jews, and buried. On the third day Mary Magdalene finds the tomb empty and the risen Jesus appears to her, to the disciples, and to Thomas." },
-    { "range": "21", "title": "Epilogue by the sea", "summary": "The risen Jesus provides a great catch of fish in Galilee, restores Peter with a threefold question of love, and speaks of the beloved disciple, whose testimony stands behind the book." }
+    {
+      "range": "1:1-1:18",
+      "title": "Prologue: the Word made flesh",
+      "summary": "A poem-like opening presents Jesus as the eternal Word, the agent of creation, the light rejected by his own and received by those who become children of God, and the one who has made the unseen Father known."
+    },
+    {
+      "range": "1:19-1:51",
+      "title": "The testimony of John and the first disciples",
+      "summary": "Opening with the marker “And this was John’s testimony” (1:19), a sequence of days shows the Baptist pointing to Jesus as the Lamb of God and the first disciples following him and naming him Messiah, Son of God, and King of Israel."
+    },
+    {
+      "range": "2:1-4:54",
+      "title": "From Cana to Cana",
+      "summary": "The Gospel numbers its first two signs, both done at Cana in Galilee (2:11, 4:54), and between them Jesus clears the temple, speaks with Nicodemus at night and a Samaritan woman at a well, and is received by Samaritans as Savior of the world."
+    },
+    {
+      "range": "5:1-10:42",
+      "title": "Signs and conflict at the feasts",
+      "summary": "The narrative is marked by Jewish festivals: an unnamed feast (5:1), Passover (6:4), Tabernacles (7:2), and Dedication (10:22). Jesus heals, feeds the crowds, and declares himself bread, light, and shepherd, and the section closes where the Gospel began, beyond the Jordan where John had first baptized (10:40-42)."
+    },
+    {
+      "range": "11:1-12:50",
+      "title": "Lazarus raised and the hour arrives",
+      "summary": "The raising of Lazarus leads the council to plot Jesus' death. He is anointed at Bethany, enters Jerusalem, and announces that his hour has come (12:23). The public ministry closes with the narrator's verdict that despite so many signs many did not believe (12:37), and with Jesus' last public appeal."
+    },
+    {
+      "range": "13:1-17:26",
+      "title": "The farewell at the table",
+      "summary": "Marked by the words that Jesus knew his hour had come (13:1), this section gives one evening five chapters: the foot washing, the new command to love, the promise of the Holy Spirit, the vine and the branches, and Jesus' prayer for his followers."
+    },
+    {
+      "range": "18:1-20:31",
+      "title": "Arrest, cross, and resurrection",
+      "summary": "Jesus is arrested, tried before Annas and Pilate, crucified as King of the Jews, and buried. The risen Jesus appears to Mary Magdalene, to the disciples, and to Thomas, and the section closes with the Gospel's own statement of its purpose (20:30-31)."
+    },
+    {
+      "range": "21",
+      "title": "Epilogue by the sea",
+      "summary": "After the purpose statement, a further chapter tells of a great catch of fish in Galilee, the restoration of Peter with a threefold question of love, and the beloved disciple, whose testimony stands behind the book (21:24). Many scholars regard it as an epilogue added in the final edition; it is found in every surviving manuscript."
+    }
   ],
   "themes": [
-    { "title": "Believing and life", "body": "The verb believe appears in John far more often than in any other Gospel, yet the noun faith never does. For John, believing is an act, a coming to Jesus, receiving him, and continuing in his word. Its result is life, eternal life, which John describes not only as endless existence after death but as a present sharing in the life of God that begins now and is completed in the resurrection." },
-    { "title": "Signs and glory", "body": "John calls Jesus' miracles signs because they point beyond themselves. Each reveals something of his glory, the visible weight and brightness of God's presence that Israel saw in the tabernacle and temple. The signs provoke both faith and opposition, and the Gospel suggests that faith resting only on miracles is fragile. The fullest display of glory comes, paradoxically, at the cross, when the Son is lifted up." },
-    { "title": "Light and darkness, truth and the world", "body": "John uses stark pairs: light and darkness, truth and falsehood, above and below, life and death. The world in John is God's creation, loved by him (3:16), but also humanity organized against him. These contrasts are not a dualism of two equal powers; the light shines in the darkness, and the darkness has not overcome it. They describe a crisis of decision that Jesus' coming brings." },
-    { "title": "The Father, the Son, and the Spirit", "body": "No Gospel says more about the relationship between the Father and the Son, who are one (10:30) and yet distinct, the Son sent by the Father and doing only what he sees the Father doing. In the farewell chapters Jesus promises another helper, the Holy Spirit, who will teach, remind, testify, and convict. The later church's doctrine of the Trinity drew heavily on this Gospel." },
-    { "title": "Love and abiding", "body": "The Father loves the Son, the Son loves his own to the end, and he commands his disciples to love one another as he has loved them. John's word for remaining or abiding describes a continuing, dependent union with Jesus, pictured as branches in a vine. Love for one another is the sign by which the world will know who his disciples are." }
+    {
+      "title": "Believing and life",
+      "body": "The verb believe appears in John far more often than in any other Gospel, yet the noun faith never does. For John, believing is an act, a coming to Jesus, receiving him, and continuing in his word. Its result is life, eternal life, which John describes not only as endless existence after death but as a present sharing in the life of God that begins now and is completed in the resurrection."
+    },
+    {
+      "title": "Signs and glory",
+      "body": "John calls Jesus' miracles signs because they point beyond themselves. Each reveals something of his glory, the visible weight and brightness of God's presence that Israel saw in the tabernacle and temple. The signs provoke both faith and opposition, and the Gospel suggests that faith resting only on miracles is fragile. The fullest display of glory comes, paradoxically, at the cross, when the Son is lifted up."
+    },
+    {
+      "title": "Light and darkness, truth and the world",
+      "body": "John uses stark pairs: light and darkness, truth and falsehood, above and below, life and death. The world in John is God's creation, loved by him (3:16), but also humanity organized against him. These contrasts are not a dualism of two equal powers; the light shines in the darkness, and the darkness has not overcome it. They describe a crisis of decision that Jesus' coming brings."
+    },
+    {
+      "title": "The Father, the Son, and the Spirit",
+      "body": "No Gospel says more about the relationship between the Father and the Son, who are one (10:30) and yet distinct, the Son sent by the Father and doing only what he sees the Father doing. In the farewell chapters Jesus promises another helper, the Holy Spirit, who will teach, remind, testify, and convict. The later church's doctrine of the Trinity drew heavily on this Gospel."
+    },
+    {
+      "title": "Love and abiding",
+      "body": "The Father loves the Son, the Son loves his own to the end, and he commands his disciples to love one another as he has loved them. John's word for remaining or abiding describes a continuing, dependent union with Jesus, pictured as branches in a vine. Love for one another is the sign by which the world will know who his disciples are."
+    }
   ],
-  "doctrines": ["trinity", "messiah", "salvation", "faith", "spirit", "atonement"],
+  "doctrines": [
+    "incarnation",
+    "trinity",
+    "messiah",
+    "glory",
+    "regeneration",
+    "faith",
+    "spirit",
+    "atonement",
+    "resurrection"
+  ],
   "keyChapters": [
-    { "ch": 1, "why": "The prologue presents Jesus as the eternal Word made flesh, and the first witnesses name him Lamb of God, Messiah, and Son of God." },
-    { "ch": 3, "why": "Jesus tells Nicodemus that one must be born from above, and the chapter contains the Bible's most quoted summary of the gospel, John 3:16." },
-    { "ch": 6, "why": "After feeding five thousand, Jesus declares himself the bread of life, and many disciples turn away while Peter confesses that Jesus has the words of eternal life." },
-    { "ch": 11, "why": "Jesus raises Lazarus after declaring himself the resurrection and the life, the sign that sets the plot to kill him in motion." },
-    { "ch": 13, "why": "At his last meal Jesus washes his disciples' feet and gives the new command to love one another as he has loved them." },
-    { "ch": 17, "why": "Jesus prays for himself, his disciples, and all who will believe through their word, that they may be one." },
-    { "ch": 20, "why": "The empty tomb, the risen Jesus with Mary Magdalene and Thomas, and the Gospel's statement of its own purpose." }
+    {
+      "ch": 1,
+      "why": "The prologue presents Jesus as the eternal Word made flesh, and the first witnesses name him Lamb of God, Messiah, and Son of God."
+    },
+    {
+      "ch": 3,
+      "why": "Jesus tells Nicodemus that one must be born from above, and the chapter contains the Bible's most quoted summary of the gospel, John 3:16."
+    },
+    {
+      "ch": 6,
+      "why": "After feeding five thousand, Jesus declares himself the bread of life, and many disciples turn away while Peter confesses that Jesus has the words of eternal life."
+    },
+    {
+      "ch": 11,
+      "why": "Jesus raises Lazarus after declaring himself the resurrection and the life, the sign that sets the plot to kill him in motion."
+    },
+    {
+      "ch": 13,
+      "why": "At his last meal Jesus washes his disciples' feet and gives the new command to love one another as he has loved them."
+    },
+    {
+      "ch": 17,
+      "why": "Jesus prays for himself, his disciples, and all who will believe through their word, that they may be one."
+    },
+    {
+      "ch": 20,
+      "why": "The empty tomb, the risen Jesus with Mary Magdalene and Thomas, and the Gospel's statement of its own purpose."
+    }
+  ],
+  "text": "John is one of the best attested books of the ancient world. The earliest surviving fragment of any New Testament book is usually thought to be P52, a scrap from a codex of John 18 in the John Rylands Library in Manchester, published by C. H. Roberts in 1935 and dated by most papyrologists to the second century, though Brent Nongbri (Harvard Theological Review, 2005) has shown how uncertain such dating is. Two papyrus codices from around AD 200 or somewhat later preserve much of the Gospel: P66 (Papyrus Bodmer II, in Geneva) and P75 (Papyrus Bodmer XIV-XV, which also contains Luke and has been in the Vatican Library since 2007). P75's text is strikingly close to that of Codex Vaticanus, copied about 150 years later, which shows how carefully one line of the text was transmitted. The great fourth-century codices Sinaiticus and Vaticanus, the fifth-century Alexandrinus and Bezae, and early translations into Latin, Syriac (including the Sinaitic palimpsest), and Coptic fill out the picture.\n\nEnglish Bibles differ at a handful of places. The King James Version was translated from the Textus Receptus, a printed Greek text descended from Erasmus's editions (from 1516) and based on late medieval manuscripts; modern versions follow critical editions built on the earliest witnesses. So the KJV includes the angel who stirred the water at the pool (5:3b-4), which is absent from P66, P75, Sinaiticus, and Vaticanus, and it reads ‘only begotten Son’ at 1:18 where the earliest manuscripts read ‘only begotten God’ or ‘one and only God’. The story of the woman caught in adultery (7:53-8:11) is absent from P66, P75, Sinaiticus, and Vaticanus, first appears in Codex Bezae, and in one family of later manuscripts (family 13) stands after Luke 21:38; modern Bibles print it in brackets with a note. At 1:34 some early witnesses read ‘the Chosen One of God’ for ‘the Son of God’, and at 20:31 the manuscripts divide between a present tense (that you may continue to believe) and an aorist (that you may come to believe). Chapter 21 is found in every manuscript, though many scholars think it was added in the final edition of the book.",
+  "reception": "John shaped Christian faith early and deeply. Its first known commentator was Heracleon, a Valentinian teacher around AD 170, and Gnostic teachers valued it, which may have made some church leaders wary of it for a time, though how much is debated; Epiphanius later reported a group he called the Alogi who rejected it. Irenaeus of Lyon (Against Heresies 3.1.1 and 3.11.8, around 180) defended the fourfold Gospel with John as a pillar, and Clement of Alexandria, as quoted by Eusebius (Ecclesiastical History 6.14.7), called it a spiritual Gospel written after the others had set down the outward facts. Origen's Commentary on John, Chrysostom's eighty-eight homilies, Augustine's 124 tractates, Cyril of Alexandria's commentary, and Theodore of Mopsuestia's commentary (preserved in Syriac) made it the Gospel of the great Trinitarian and Christological debates, from Nicaea (325) to Chalcedon (451). Augustine (Harmony of the Gospels 1.6) gave John the eagle as his emblem because he soars highest, and the eagle marks John in manuscripts such as the Book of Kells and the Lindisfarne Gospels and on countless lecterns.\n\nMedieval readers treated John as the summit of Scripture: Thomas Aquinas lectured on it at Paris around 1270, and Meister Eckhart wrote a mystical commentary on it. Luther's 1522 Preface to the New Testament called John the chief Gospel, to be preferred to the others for its record of Christ's words, and Calvin's commentary (1553) called it the key that opens the others. In liturgy the prologue became the Gospel of Christmas Day in the West and of Easter in the East, and John's passion narrative is read on Good Friday in the Roman Rite. Johann Sebastian Bach set it in the St John Passion (first performed in Leipzig in 1724), and Arvo Pärt set it in his Passio (1982).\n\nModern criticism moved John from the center to the margin and partly back. Friedrich Schleiermacher preferred it as a source for Jesus, but David Friedrich Strauss (1835) treated it as largely mythical, and Ferdinand Christian Baur dated it to around 170. The publication of P52 in 1935 made so late a date impossible. Rudolf Bultmann's commentary (1941) read it through Gnostic myth; C. H. Dodd (1953 and 1963), Raymond Brown (1966-1970), and J. Louis Martyn (1968) turned attention to its Jewish setting and to the community behind it; and Richard Bauckham (Jesus and the Eyewitnesses, 2006) argued for its eyewitness basis. Jewish readers have pressed hard questions about the Gospel's language concerning the Jews, which was used for centuries to justify contempt and violence. The Second Vatican Council's declaration Nostra Aetate (1965) rejected the charge that Jews then or now bear collective guilt for Christ's death, and Jewish scholars such as Adele Reinhartz have made John's portrayal of Jews a central question of modern study.",
+  "furtherReading": [
+    {
+      "tier": "first",
+      "author": "N. T. Wright",
+      "title": "John for Everyone",
+      "series": "The New Testament for Everyone",
+      "year": 2002,
+      "note": "Short passages with a fresh translation and warm, historically informed reflection, in two parts; the best place for a newcomer to begin."
+    },
+    {
+      "tier": "first",
+      "author": "Bruce Milne",
+      "title": "The Message of John",
+      "series": "The Bible Speaks Today",
+      "year": 1993,
+      "note": "A clear evangelical exposition by a pastor and theologian, written with preaching and personal study in mind."
+    },
+    {
+      "tier": "first",
+      "author": "Amy-Jill Levine and Marc Zvi Brettler, editors",
+      "title": "The Jewish Annotated New Testament",
+      "year": 2011,
+      "note": "Jewish scholars annotate the whole New Testament; Adele Reinhartz's notes on John explain its Jewish background and its language about the Jews (second edition 2017)."
+    },
+    {
+      "tier": "pastor",
+      "author": "D. A. Carson",
+      "title": "The Gospel according to John",
+      "series": "Pillar New Testament Commentary",
+      "year": 1991,
+      "note": "A thorough evangelical commentary, strong on theology, the Greek text, and the case for the Gospel's historical reliability."
+    },
+    {
+      "tier": "pastor",
+      "author": "Marianne Meye Thompson",
+      "title": "John: A Commentary",
+      "series": "New Testament Library",
+      "year": 2015,
+      "note": "A balanced, readable mainline commentary with its own translation, especially good on John's picture of God."
+    },
+    {
+      "tier": "pastor",
+      "author": "Francis J. Moloney",
+      "title": "The Gospel of John",
+      "series": "Sacra Pagina",
+      "year": 1998,
+      "note": "A Roman Catholic commentary that follows the Gospel as a story, with close attention to its narrative design."
+    },
+    {
+      "tier": "pastor",
+      "author": "Joel C. Elowsky, editor",
+      "title": "John 1-10",
+      "series": "Ancient Christian Commentary on Scripture",
+      "year": 2006,
+      "note": "Selections from the church fathers, among them Origen, Chrysostom, Augustine, and Cyril, arranged verse by verse; a second volume covers chapters 11 to 21."
+    },
+    {
+      "tier": "pastor",
+      "author": "Thomas Aquinas",
+      "title": "Commentary on the Gospel of John",
+      "year": 2010,
+      "note": "Aquinas's thirteenth-century lectures on John in the translation by Fabian Larcher and James Weisheipl, reissued in three volumes by the Catholic University of America Press."
+    },
+    {
+      "tier": "scholar",
+      "author": "Raymond E. Brown",
+      "title": "The Gospel according to John",
+      "series": "Anchor Bible",
+      "year": 1966,
+      "note": "A landmark two-volume commentary (1966 and 1970) by a Catholic scholar, rich in Jewish background and in the history of the text's composition."
+    },
+    {
+      "tier": "scholar",
+      "author": "Craig S. Keener",
+      "title": "The Gospel of John: A Commentary",
+      "year": 2003,
+      "note": "Two large volumes that gather the Jewish and Greco-Roman parallels to nearly every verse; the fullest guide to the Gospel's ancient setting."
+    },
+    {
+      "tier": "scholar",
+      "author": "C. H. Dodd",
+      "title": "The Interpretation of the Fourth Gospel",
+      "year": 1953,
+      "note": "A classic study of the Gospel's background in Judaism, Hellenistic thought, and early Christianity, followed by Historical Tradition in the Fourth Gospel (1963)."
+    },
+    {
+      "tier": "scholar",
+      "author": "Rudolf Bultmann",
+      "title": "The Gospel of John: A Commentary",
+      "year": 1971,
+      "note": "The English translation of the most influential twentieth-century critical commentary (German original 1941), important for understanding the debates it provoked."
+    },
+    {
+      "tier": "scholar",
+      "author": "Richard Bauckham",
+      "title": "Jesus and the Eyewitnesses",
+      "year": 2006,
+      "note": "Argues that the Gospels rest on named eyewitness testimony and that John is the testimony of the beloved disciple, whom Bauckham identifies with John the Elder (second edition 2017)."
+    },
+    {
+      "tier": "scholar",
+      "author": "Adele Reinhartz",
+      "title": "Cast Out of the Covenant: Jews and Anti-Judaism in the Gospel of John",
+      "year": 2018,
+      "note": "A Jewish New Testament scholar's sustained reading of how John presents Jews and Judaism, and a challenge to the expulsion theory of the Gospel's origin."
+    }
   ]
 }

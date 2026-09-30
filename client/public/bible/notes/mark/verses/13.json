@@ -1,0 +1,832 @@
+{
+  "verses": [
+    {
+      "v": "1-2",
+      "context": "Jesus leaves the temple for the last time in Mark. A disciple admires the building, and Jesus answers with a flat prediction of its total destruction. The exchange sets up the whole discourse, which begins as an answer to the question this prediction raises.",
+      "grammar": "The disciple's exclamation uses potapoi and potapai, ‘what sort of’, twice: ‘what stones, what buildings’. Jesus' answer uses the strongest negation Greek has, ou mē with the aorist subjunctive, twice: ou mē aphethē, ‘there will certainly not be left’, and ou mē kataluthē, ‘that will certainly not be thrown down’. Kataluō, ‘to tear down’ or ‘destroy’, is the verb of the false charge at Jesus' trial that he said he would destroy the temple (14:58) and of the mockery at the cross (15:29).",
+      "words": [
+        "G2411",
+        "G4217",
+        "G3037",
+        "G3619",
+        "G2647"
+      ],
+      "parallels": [
+        "Matthew 24:1-2",
+        "Luke 21:5-6"
+      ],
+      "history": "Herod the Great began rebuilding the temple around 20 or 19 BC, and work on the complex continued into the 60s AD. Josephus describes the gold plates on its facade that flashed in the sun (Jewish War 5.222-224) and stones of enormous size (Antiquities 15.392), and the Babylonian Talmud says that one who has not seen Herod's building has never seen a beautiful building (b. Bava Batra 4a). In AD 70, after the temple burned, Titus ordered the city and temple razed, leaving only a few towers and part of the western wall (Josephus, Jewish War 7.1-3). Excavations begun in 1968 along the southern and western walls of the temple mount uncovered heaps of Herodian stones thrown down onto the street below, still lying where they fell.",
+      "theology": [
+        {
+          "id": "temple",
+          "note": "The temple, God's appointed place of meeting with Israel, will be destroyed. Mark has just shown Jesus judging it (11:15-17) and will soon report the claim that he would build another not made with hands (14:58). The Gospel points to Jesus himself as the new center of God's presence."
+        },
+        {
+          "id": "judgment",
+          "note": "Jesus stands in the line of Jeremiah and Micah, who announced the destruction of the first temple for Israel's unfaithfulness (Jeremiah 7:12-14, Micah 3:12)."
+        }
+      ],
+      "refs": [
+        "Jeremiah 7:12-14",
+        "Micah 3:12",
+        "Mark 11:15-17",
+        "Mark 14:58",
+        "Luke 19:41-44"
+      ]
+    },
+    {
+      "v": "3-4",
+      "context": "The setting moves to the Mount of Olives, facing the temple across the Kidron Valley. Four disciples ask privately about timing and signs. Their two-part question shapes the rest of the chapter, and how to read it is the key to the chapter's interpretation.",
+      "grammar": "Kat' idian, ‘privately’, marks this as teaching for insiders, as in 4:34 and 9:28. The first question, pote tauta estai, ‘when will these things be’, refers to what Jesus has just said about the temple. The second, ti to sēmeion hotan mellē tauta sunteleisthai panta, ‘what is the sign when all these things are about to be accomplished’, uses sunteleō, ‘to bring to completion’, which in apocalyptic writing suggests the consummation of history. The question thus moves from the temple toward the end, and interpreters differ on whether the disciples are asking about one event or two.",
+      "words": [
+        "G1638",
+        "G2398",
+        "G4592",
+        "G4931"
+      ],
+      "parallels": [
+        "Matthew 24:3",
+        "Luke 21:7"
+      ],
+      "ot": [
+        {
+          "ref": "Daniel 12:7",
+          "note": "At the end of Daniel, a heavenly figure swears that after a time, times, and half a time, when the power of the holy people is shattered, ‘all these things will be completed’. The Hebrew is tikleynah khol-elleh; the Greek versions render it with sunteleō and panta tauta, the same words as the disciples' question. Mark's ‘all these things’ with ‘accomplished’ appears to echo Daniel, which fits the chapter's heavy use of Daniel later (verses 14, 19, 26)."
+        }
+      ],
+      "history": "Zechariah 14:4 pictures the LORD standing on the Mount of Olives on the day of his coming, when the mountain will split. Josephus records that a prophet from Egypt led followers to the Mount of Olives in the 50s AD, promising that the walls of Jerusalem would fall at his command (Antiquities 20.169-172). The place carried expectations of final deliverance.",
+      "text": "Matthew 24:3 turns the second question into ‘what will be the sign of Your coming and of the end of the age’, making explicit the link to Jesus' return. Luke 21:7 keeps the focus on the temple. Mark stands between them.",
+      "theology": [
+        {
+          "id": "prophecy",
+          "note": "The disciples ask for a timetable and signs, and Jesus answers mainly with warnings. The chapter treats prophecy as preparation for faithful living, not as a code for calculating dates."
+        }
+      ],
+      "refs": [
+        "Zechariah 14:4",
+        "Daniel 12:6-7",
+        "Matthew 24:3",
+        "Acts 1:6-7"
+      ]
+    },
+    {
+      "v": "5-6",
+      "context": "Jesus' first word is not a sign but a warning: do not be deceived. The first danger is false claimants who come in his name.",
+      "grammar": "Blepete, ‘watch out’ or ‘see to it’, is the first of several commands with this verb (verses 5, 9, 23, 33) that give the discourse its structure. Planaō, ‘lead astray’, appears in verses 5, 6, and 22 (with a compound, apoplanaō). The claim egō eimi, ‘I am’, can mean ‘I am he’, that is, the Messiah, or can echo the divine name of Exodus 3:14 and Isaiah 43:10, where the Septuagint has God say egō eimi. Jesus uses the same words at his trial (14:62).",
+      "words": [
+        "G0991",
+        "G4105",
+        "G3686",
+        "G1473",
+        "G1510"
+      ],
+      "parallels": [
+        "Matthew 24:4-5",
+        "Luke 21:8"
+      ],
+      "history": "Josephus describes several figures in the decades before AD 70 who drew crowds with promises of divine signs. Theudas, under the governor Fadus around AD 44 to 46, claimed he would part the Jordan (Antiquities 20.97-98); others led people into the wilderness promising signs of freedom (Jewish War 2.259-263). Whether any claimed to be the Messiah in Jesus' name is less clear, but the pattern Jesus warns about was real in the generation that followed.",
+      "theology": [
+        {
+          "id": "wisdom",
+          "note": "The first mark of a faithful disciple in a time of crisis is discernment. Jesus warns against believing anyone who claims his authority simply because the claim is dramatic."
+        }
+      ],
+      "refs": [
+        "Exodus 3:14",
+        "Isaiah 43:10",
+        "Mark 14:62",
+        "Acts 5:36",
+        "1 John 2:18"
+      ]
+    },
+    {
+      "v": "7-8",
+      "context": "Wars, earthquakes, and famines will come, but they are not yet the end. They are the beginning of birth pains, which means they are both painful and pointed toward something new.",
+      "grammar": "Mē throeisthe, ‘do not be alarmed’, a present imperative, forbids a continuing state of panic. Dei genesthai, ‘it must happen’, uses dei, the word of divine necessity found in Jesus' passion predictions (8:31). All' oupō to telos, ‘but not yet the end’, is terse in Greek. The phrase archē ōdinōn, ‘beginning of birth pains’, uses a common image for suffering that comes before a new age: labor is agony, but it ends in a birth.",
+      "words": [
+        "G2360",
+        "G1163",
+        "G5056",
+        "G4578",
+        "G3042",
+        "G5604"
+      ],
+      "parallels": [
+        "Matthew 24:6-8",
+        "Luke 21:9-11"
+      ],
+      "ot": [
+        {
+          "ref": "Daniel 2:28",
+          "note": "Daniel tells Nebuchadnezzar that God has made known ‘what will happen in the last days’. The Aramaic is mah di lehevei, ‘what will be’; the Septuagint renders it ha dei genesthai, ‘what must happen’. Mark's dei genesthai uses the same phrase. The echo sets the troubles within God's plan, as Daniel's kingdoms were: they are not signs that history has slipped out of God's hands."
+        }
+      ],
+      "history": "The decades after Jesus saw exactly such events. Acts 11:28 mentions a widespread famine under Claudius, and Josephus describes famine in Judea under the governor Tiberius Alexander, around AD 46 to 48 (Antiquities 20.101). Tacitus reports an earthquake that destroyed Laodicea in AD 60 (Annals 14.27), and Pompeii was badly damaged by an earthquake in AD 62. Rome's civil war of AD 68 to 69, the year of four emperors, overlapped the Jewish War.",
+      "theology": [
+        {
+          "id": "providence",
+          "note": "‘These things must happen’ places even war and disaster within God's governance. The point is not that God approves of suffering but that it does not surprise him or derail his purpose."
+        },
+        {
+          "id": "hope",
+          "note": "Birth pains are pain with a future. Paul uses the same image for the whole creation groaning toward redemption (Romans 8:22)."
+        }
+      ],
+      "refs": [
+        "Isaiah 26:17-18",
+        "Isaiah 66:7-9",
+        "Romans 8:22",
+        "1 Thessalonians 5:3",
+        "Daniel 2:28"
+      ]
+    },
+    {
+      "v": "9",
+      "context": "The focus turns to the disciples themselves. They will be handed over, beaten, and put on trial, but their trials will become occasions of witness.",
+      "grammar": "Blepete humeis heautous, ‘watch yourselves’, with an emphatic pronoun, shifts attention from world events to the disciples. Paradōsousin, ‘they will hand over’, is the verb of John's arrest (1:14) and Jesus' betrayal (14:10), so the disciples will walk the same path. Sunedria, ‘councils’, are local Jewish courts, and eis sunagōgas darēsesthe means ‘you will be beaten in synagogues’, where local discipline was carried out. Eis marturion autois, ‘as a witness to them’, is the same phrase Jesus used for the leper's testimony to the priests (1:44).",
+      "words": [
+        "G3860",
+        "G4892",
+        "G1194",
+        "G2232",
+        "G3142"
+      ],
+      "parallels": [
+        "Matthew 10:17-18",
+        "Luke 21:12-13"
+      ],
+      "history": "Deuteronomy 25:2-3 limits a flogging to forty lashes, and Jewish practice stopped at thirty-nine to avoid exceeding the limit by mistake. Paul says he received that punishment from Jewish authorities five times (2 Corinthians 11:24). Acts records apostles before the Sanhedrin (Acts 4:5-7, 5:27-28) and Paul before the governors Felix and Festus and before King Agrippa II (Acts 24 to 26), which is the sequence of councils, governors, and kings Jesus describes.",
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "Persecution is ‘on My account’. Suffering for Christ is not a detour from the gospel but one of the ways it reaches those who would not otherwise hear it."
+        }
+      ],
+      "refs": [
+        "2 Corinthians 11:24",
+        "Acts 5:40-41",
+        "Acts 26:1-2",
+        "Deuteronomy 25:2-3"
+      ]
+    },
+    {
+      "v": "10",
+      "context": "In the middle of the warnings stands a statement of purpose: before the end, the gospel must be preached to all nations. The persecution of verse 9 serves that mission.",
+      "grammar": "Prōton, ‘first’, means before the end of verse 7. Dei, ‘it is necessary’, returns: the worldwide mission is as much part of God's plan as the troubles. The aorist passive infinitive kēruchthēnai, ‘to be proclaimed’, does not name the proclaimers, but the context implies the disciples. The phrase eis panta ta ethnē, ‘to all the nations’, comes first in the Greek sentence for emphasis. Some interpreters attach it to the end of verse 9 (‘as a witness to them and to all the nations’), but most editions and translations keep it with verse 10.",
+      "words": [
+        "G1484",
+        "G4413G",
+        "G1163",
+        "G2784",
+        "G2098"
+      ],
+      "parallels": [
+        "Matthew 24:14"
+      ],
+      "theology": [
+        {
+          "id": "mission",
+          "note": "The gospel to all nations is a divine necessity, not an afterthought. Mark, written in all likelihood for a church that included Gentiles, puts the worldwide mission into the heart of Jesus' teaching about the future."
+        }
+      ],
+      "refs": [
+        "Matthew 24:14",
+        "Matthew 28:19-20",
+        "Mark 14:9",
+        "Romans 15:19",
+        "Colossians 1:23"
+      ]
+    },
+    {
+      "v": "11",
+      "context": "When disciples are arrested, they are not to worry beforehand about their defense. The Holy Spirit will give them words.",
+      "grammar": "Mē promerimnate, ‘do not worry in advance’, is a compound of the verb for anxiety used in Matthew 6:25-34. The present imperative forbids a habit of rehearsing fears. The relative clause ho ean dothē humin, ‘whatever is given to you’, uses a divine passive. The contrast ou gar este humeis hoi lalountes, ‘for it is not you who are speaking’, puts humeis in an emphatic position, and the alla, ‘but’, points to the real speaker: to pneuma to hagion, ‘the Holy Spirit’.",
+      "words": [
+        "G4305",
+        "G2980",
+        "G1325",
+        "G4151G"
+      ],
+      "parallels": [
+        "Matthew 10:19-20",
+        "Luke 21:14-15",
+        "Luke 12:11-12"
+      ],
+      "text": "Luke's version reads ‘I will give you speech and wisdom’ (Luke 21:15), attributing the gift to Jesus himself; Matthew and Mark attribute it to the Spirit, and Matthew calls it ‘the Spirit of your Father’ (10:20).",
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "The Spirit who came upon Jesus at his baptism (1:10) will speak through his followers on trial. Acts shows it happening with Peter before the council (Acts 4:8)."
+        }
+      ],
+      "refs": [
+        "Acts 4:8-13",
+        "Exodus 4:12",
+        "Luke 21:14-15",
+        "Acts 6:10"
+      ]
+    },
+    {
+      "v": "12-13",
+      "context": "The persecution will reach inside families. Yet the one who endures to the end will be saved. The promise closes the first section of the discourse.",
+      "grammar": "Paradōsei, ‘will betray’, returns for the third time in four verses (9, 11, 12). Epanastēsontai, ‘they will rise up against’, is a future of a compound verb meaning to rise in revolt. Esesthe misoumenoi, ‘you will be hated’, is a periphrastic future with a present participle, describing a continuing condition. The promise uses an aorist participle, ho hupomeinas eis telos, ‘the one who has endured to the end’, with the future passive sōthēsetai, ‘will be saved’. Eis telos can mean ‘to the end’ (of life or of the crisis) or ‘completely’.",
+      "words": [
+        "G3860",
+        "G1881",
+        "G2289",
+        "G3404",
+        "G5278",
+        "G4982"
+      ],
+      "parallels": [
+        "Matthew 10:21-22",
+        "Luke 21:16-19"
+      ],
+      "ot": [
+        {
+          "ref": "Micah 7:6",
+          "note": "Micah laments a society so corrupt that ‘a son dishonors his father, a daughter rises against her mother’, and a man's enemies are the members of his own household. The Hebrew uses qum, ‘rise up’, and the Septuagint epanistēmi, the same verb as Mark's epanastēsontai. Matthew 10:35-36 quotes Micah directly; Mark only alludes. In Micah the family's breakdown is a sign of judgment on a corrupt society. In Jesus' words it becomes the cost of loyalty to him, and the next verse in Micah (7:7) turns to waiting for God, as Mark 13:13 turns to endurance."
+        }
+      ],
+      "theology": [
+        {
+          "id": "perseverance",
+          "note": "Salvation is promised to the one who endures. Traditions differ on how this relates to assurance: Reformed readers see endurance as the mark of those God keeps; Wesleyan and Arminian readers see a real call to remain faithful that could be refused. All agree that the verse commands endurance."
+        },
+        {
+          "id": "family",
+          "note": "Loyalty to Jesus can divide even the closest bonds. The warning is not permission to break families but a sober word about the price some believers pay."
+        }
+      ],
+      "refs": [
+        "Micah 7:6-7",
+        "Matthew 10:34-36",
+        "Luke 12:52-53",
+        "Revelation 2:10",
+        "Hebrews 10:36-39"
+      ]
+    },
+    {
+      "v": "14",
+      "context": "The second section begins with the chapter's hardest phrase: the ‘abomination of desolation’ standing where it should not. When it appears, those in Judea must flee at once. The chapter note explains the phrase's roots in Daniel and Antiochus IV; the verse note takes up the grammar and the options for what Mark meant.",
+      "grammar": "Bdelugma, ‘abomination’, is a neuter noun, but the participle that describes it, hestēkota, ‘standing’, is masculine. The mismatch is almost certainly deliberate: Mark signals that the abomination is a person, or stands for one. The parenthesis ho anaginōskōn noeitō, ‘let the reader understand’, may be Mark's word to the person reading his Gospel aloud in church, or Jesus' word to readers of Daniel. The present imperative pheugetōsan, ‘let them flee’, calls for immediate action. Hopou ou dei, ‘where it must not’, is a veiled way of saying ‘in the holy place’, which Matthew spells out (24:15).",
+      "words": [
+        "G0946",
+        "G2050",
+        "G2476",
+        "G0314",
+        "G3539",
+        "G5343"
+      ],
+      "parallels": [
+        "Matthew 24:15-16",
+        "Luke 21:20-21"
+      ],
+      "ot": [
+        {
+          "ref": "Daniel 9:27",
+          "note": "Daniel speaks three times of an abomination that makes desolate (9:27, 11:31, 12:11). The Hebrew shiqqutz meshomem, roughly ‘a detestable thing that appalls’, is often thought to be a wordplay on Baal Shamem, ‘lord of heaven’, the god honored by the altar Antiochus IV set up in the temple. The Septuagint of Daniel 12:11 and 1 Maccabees 1:54 use bdelugma erēmōseōs, exactly Mark's phrase, and 1 Maccabees dates the desecration to the fifteenth of Kislev in the 145th year of the Seleucid era, December 167 BC. In Daniel the abomination stands in the temple before God's deliverance; Mark uses Daniel's words for a new desecration that would come before another destruction."
+        }
+      ],
+      "history": "Interpreters identify the abomination in four main ways. Some point to the emperor Gaius's order in AD 40 to set up his statue in the temple, which was never carried out. Others point to the Zealots' seizure of the temple during the war and their appointment of a high priest by lot, Phanni (Jewish War 4.147-157), which Josephus describes as a profanation. Others point to the Roman army itself: Luke 21:20 reads ‘when you see Jerusalem surrounded by armies’, and Josephus says the soldiers offered sacrifice to their standards in the temple court after it fell (Jewish War 6.316). A fourth view, held by many futurist interpreters, takes it as a figure still to come, the ‘man of lawlessness’ who sets himself up in God's temple (2 Thessalonians 2:3-4). Eusebius records the tradition that Jerusalem's Christians fled to Pella, east of the Jordan, before the siege (Ecclesiastical History 3.5.3).",
+      "text": "The Byzantine manuscripts and the King James Version add ‘spoken of by Daniel the prophet’, from Matthew 24:15, and change the masculine participle to a neuter to agree with ‘abomination’. Both are later smoothings.",
+      "theology": [
+        {
+          "id": "temple",
+          "note": "Desecration of the temple signals the end of that temple's role. The chapter's movement from admiring the stones (verse 1) to fleeing the city (verse 14) shows the old center of worship giving way."
+        },
+        {
+          "id": "prophecy",
+          "note": "Jesus reads Daniel as still speaking. A prophecy fulfilled once under Antiochus IV could find a further fulfillment, a pattern of repeated fulfillment common in the New Testament's use of the Old."
+        }
+      ],
+      "refs": [
+        "Daniel 11:31",
+        "Daniel 12:11",
+        "Luke 21:20-24",
+        "2 Thessalonians 2:3-4",
+        "Matthew 24:15"
+      ]
+    },
+    {
+      "v": "15-16",
+      "context": "The flight must be immediate. A man on his roof should not go into the house for belongings, and a worker in the field should not go back for his cloak. The details fit a local crisis in Judea.",
+      "grammar": "The four prohibitions are third-person imperatives: mē katabatō, ‘let him not come down’, mēde eiselthatō, ‘nor go in’, mē epistrepsatō, ‘let him not turn back’. The aorist infinitive arai, ‘to take’, gives the purpose each would have. The aorist imperatives picture single, decisive acts: no stopping, no turning.",
+      "words": [
+        "G1430",
+        "G2597",
+        "G1994",
+        "G2440"
+      ],
+      "parallels": [
+        "Matthew 24:17-18",
+        "Luke 17:31"
+      ],
+      "history": "Houses in Judea had flat roofs used for work, rest, and prayer (Acts 10:9), often reached by an outside stairway, so a man could come down and leave without entering the house. The himation was the outer cloak, which also served as a blanket at night; the law required a creditor to return it before dark (Exodus 22:26-27). Leaving it behind meant fleeing with only the tunic one worked in.",
+      "text": "Luke uses the same instructions in a different context, about the day the Son of Man is revealed (Luke 17:31), and adds ‘remember Lot's wife’. Luke's own version of this discourse (Luke 21:21) speaks instead of leaving the city and not entering it from the countryside.",
+      "theology": [
+        {
+          "id": "wisdom",
+          "note": "Jesus' warnings are practical. Faith does not mean staying put and waiting for rescue; it can mean fleeing when the time comes, without clinging to possessions."
+        }
+      ],
+      "refs": [
+        "Genesis 19:17",
+        "Luke 17:31-32",
+        "Exodus 22:26-27",
+        "Acts 10:9"
+      ]
+    },
+    {
+      "v": "17-18",
+      "context": "Jesus expresses grief for those who will suffer most in the flight, pregnant women and nursing mothers, and tells the disciples to pray that it will not happen in winter.",
+      "grammar": "Ouai, ‘woe’ or ‘alas’, can express judgment or lament; here it is lament. The phrase tais en gastri echousais, ‘those having in the womb’, is the ordinary Greek idiom for pregnancy. Proseuchesthe, a present imperative, asks for continuing prayer, and hina mē genētai cheimōnos uses the genitive of time, ‘during winter’.",
+      "words": [
+        "G3759",
+        "G1064",
+        "G2337",
+        "G4336",
+        "G5494"
+      ],
+      "parallels": [
+        "Matthew 24:19-20",
+        "Luke 21:23"
+      ],
+      "history": "In Judea the winter is the rainy season, when the wadis can flood suddenly and cold rain makes travel on foot miserable. Josephus describes a band of refugees from Gadara in the spring of AD 68 trapped at the flooded Jordan and cut down by Roman troops (Jewish War 4.433-436). Titus's siege of Jerusalem itself began in the spring of AD 70, near Passover. Matthew adds ‘or on the Sabbath’ (24:20), a concern for his Jewish-Christian readers who would hesitate to travel far on the Sabbath.",
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "Even within God's plan for history, Jesus tells his disciples to pray about the conditions of their suffering. Prayer is not resignation to what must happen; it asks for mercy within it."
+        }
+      ],
+      "refs": [
+        "Luke 23:28-29",
+        "Matthew 24:20",
+        "Lamentations 4:10",
+        "Hosea 13:16"
+      ]
+    },
+    {
+      "v": "19",
+      "context": "The suffering of those days will be unmatched in history. The verse gives the reason for the urgency of verses 14 to 18.",
+      "grammar": "The sentence is heavy with repetition: ap' archēs ktiseōs hēn ektisen ho theos, ‘from the beginning of the creation which God created’, repeats the root ktiz- twice, a Semitic style of emphasis. Thlipsis, ‘tribulation’ or ‘distress’, is the chapter's word for this crisis. Kai ou mē genētai, ‘and will never be’, uses the emphatic negation again.",
+      "words": [
+        "G2347",
+        "G0746",
+        "G2937",
+        "G2936",
+        "G1096"
+      ],
+      "parallels": [
+        "Matthew 24:21"
+      ],
+      "ot": [
+        {
+          "ref": "Daniel 12:1",
+          "note": "Daniel 12:1 promises ‘a time of distress unequaled from the time the nations came into being until that time’, when Michael arises and God's people are delivered. The Hebrew is et tsarah; the Greek versions use thlipsis, and the Theodotion version, like Mark, says such distress has not been ‘from’ a beginning ‘until’ now. Mark widens Daniel's ‘since nations came into being’ to ‘since the beginning of God's creation’. The echo ties the crisis to Daniel's final vision, where the distress ends in deliverance and resurrection (12:2)."
+        }
+      ],
+      "history": "Josephus, writing in Rome after the war, claims in the preface to his Jewish War (1.12) that the misfortunes of all nations from the beginning of the world fall short of those the Jews suffered in it. He describes famine, massacre, and fire in the besieged city. Jesus' words need not be read as a historical measurement, but Josephus shows how the war was felt by those who survived it.",
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The severity of the distress corresponds to the seriousness of the judgment. Jesus speaks of it with grief, as he wept over the city (Luke 19:41-44)."
+        }
+      ],
+      "refs": [
+        "Daniel 12:1",
+        "Joel 2:2",
+        "Jeremiah 30:7",
+        "Revelation 7:14"
+      ]
+    },
+    {
+      "v": "20",
+      "context": "God himself sets a limit on the suffering. For the sake of those he has chosen, he has shortened those days, so that some survive.",
+      "grammar": "The verse is a contrary-to-fact condition with the aorist indicative: ei mē ekolobōsen, ‘if he had not shortened’, and ouk an esōthē, ‘would not have been saved’. The aorists present God's decision as already taken. Kurios, ‘the Lord’, used without the article, refers to God, as in the Septuagint. The phrase tous eklektous hous exelexato, ‘the elect whom he elected’, repeats the root for choosing, a strong emphasis on God's initiative. Pasa sarx, ‘all flesh’, is a Hebrew idiom (kol-basar) for every living person.",
+      "words": [
+        "G2856",
+        "G4982",
+        "G4561",
+        "G1588",
+        "G1586"
+      ],
+      "parallels": [
+        "Matthew 24:22"
+      ],
+      "theology": [
+        {
+          "id": "election",
+          "note": "God's choosing is here a source of protection: he limits the suffering for the sake of his chosen people. Christians differ on the grounds of election (God's free decision or his foreknowledge of faith), but the verse's own point is God's care for those who are his."
+        },
+        {
+          "id": "sovereignty",
+          "note": "Even the worst days are measured by God. Their length is in his hands, not in the hands of armies."
+        }
+      ],
+      "refs": [
+        "Isaiah 65:8-9",
+        "Romans 11:5",
+        "1 Peter 1:1-2",
+        "Revelation 12:12"
+      ]
+    },
+    {
+      "v": "21-23",
+      "context": "The warning against deceivers returns, now sharpened. In the crisis, people will point to a Messiah here or there, and false Christs will even perform signs. Verse 23 ends the second section with ‘be on your guard’.",
+      "grammar": "Pseudochristoi, ‘false Christs’, occurs only here and in Matthew 24:24. The purpose phrase pros to apoplanan, ‘in order to lead astray’, uses a strengthened compound of planaō. The condition ei dunaton, ‘if possible’, expresses doubt, implying that God's elect will not in the end be misled. Proeirēka, ‘I have told you beforehand’, is a perfect: Jesus' warning stands as a permanent record.",
+      "words": [
+        "G5580",
+        "G5578",
+        "G4592",
+        "G5059",
+        "G0635",
+        "G4280"
+      ],
+      "parallels": [
+        "Matthew 24:23-25"
+      ],
+      "ot": [
+        {
+          "ref": "Deuteronomy 13:1-3",
+          "note": "Moses warns that if a prophet gives a sign or wonder (Hebrew ot o mofet, Septuagint sēmeion ē teras) and then urges Israel to follow other gods, the people must not listen, because the LORD is testing them. Mark's sēmeia kai terata, ‘signs and wonders’, echoes the same pair. Deuteronomy teaches that miracles do not validate a message that turns people away from God; Jesus applies the principle to false Messiahs."
+        }
+      ],
+      "theology": [
+        {
+          "id": "perseverance",
+          "note": "The phrase ‘if possible’ suggests that God will keep his elect from final deception. The warning and the promise work together: Jesus warns so that the elect will be kept."
+        },
+        {
+          "id": "revelation",
+          "note": "Jesus has told them everything in advance. His word is the standard by which claims and signs are tested, which is why the disciples must remember it."
+        }
+      ],
+      "refs": [
+        "Deuteronomy 13:1-3",
+        "2 Thessalonians 2:9-10",
+        "1 John 4:1",
+        "Matthew 24:24",
+        "John 16:4"
+      ]
+    },
+    {
+      "v": "24-25",
+      "context": "The third section shifts to cosmic language: sun and moon darkened, stars falling, powers of heaven shaken. The phrase ‘after that tribulation’ marks a sequence, and how far that sequence reaches is one of the chapter's main questions.",
+      "grammar": "All' en ekeinais tais hēmerais, ‘but in those days’, links the cosmic signs closely to what precedes. Meta tēn thlipsin ekeinēn, ‘after that distress’, places them after the crisis of verses 14 to 23. Esontai piptontes, ‘will be falling’, is a periphrastic future with a present participle, picturing a continuing process. The words are almost entirely drawn from the prophets.",
+      "words": [
+        "G2347",
+        "G4654",
+        "G5338",
+        "G0792",
+        "G4098",
+        "G4531"
+      ],
+      "parallels": [
+        "Matthew 24:29",
+        "Luke 21:25-26"
+      ],
+      "ot": [
+        {
+          "ref": "Isaiah 13:10",
+          "note": "Isaiah 13 is an oracle against Babylon. Its Hebrew says the stars will not give their light and the sun will be dark at its rising. The Septuagint reads skotisthēsetai, ‘will be darkened’, and ‘the moon will not give its light’, ou dōsei to phōs autēs; Mark follows it closely but has phengos, ‘brightness’, for phōs. In Isaiah this language describes the fall of a particular empire as if the universe were collapsing."
+        },
+        {
+          "ref": "Isaiah 34:4",
+          "note": "Isaiah 34 is an oracle against Edom and the nations. The Hebrew speaks of the host of heaven rotting away and the heavens rolled up like a scroll. The Septuagint adds that all the powers of the heavens will melt and the stars will fall. Mark's ‘the stars will fall’ and ‘the powers in the heavens will be shaken’ draw on this passage. Joel 2:10 and 3:15 use similar images for the day of the LORD. Because the prophets used these images for historical judgments, preterist interpreters read Mark's words as prophetic language for the fall of Jerusalem; futurist interpreters read them as describing a literal cosmic upheaval at the end."
+        }
+      ],
+      "theology": [
+        {
+          "id": "return",
+          "note": "The cosmic signs prepare for the coming of the Son of Man in verse 26. Whether they describe the end of the world or the end of an age, they announce that God is acting decisively."
+        }
+      ],
+      "refs": [
+        "Isaiah 13:9-10",
+        "Isaiah 34:4",
+        "Joel 2:10",
+        "Ezekiel 32:7-8",
+        "Revelation 6:12-14"
+      ]
+    },
+    {
+      "v": "26",
+      "context": "The high point of the discourse: the Son of Man seen coming in clouds with great power and glory. Here the interpretive schools divide most sharply.",
+      "grammar": "Tote opsontai, ‘then they will see’, has an unspecified subject, ‘they’, perhaps all people or the persecutors. Erchomenon, ‘coming’, a present participle, pictures the Son of Man in motion. En nephelais, ‘in clouds’, and meta dunameōs pollēs kai doxēs, ‘with great power and glory’, describe the manner of his coming. The verb does not say in which direction the Son of Man moves, toward earth or toward God, and that silence is part of the interpretive debate.",
+      "words": [
+        "G3700G",
+        "G5207",
+        "G2064",
+        "G3507",
+        "G1411",
+        "G1391"
+      ],
+      "parallels": [
+        "Matthew 24:30",
+        "Luke 21:27"
+      ],
+      "ot": [
+        {
+          "ref": "Daniel 7:13",
+          "note": "In Daniel's vision, after the beasts are judged, ‘one like a son of man’ comes ‘with the clouds of heaven’ to the Ancient of Days and receives an everlasting kingdom. The Aramaic is im ananei shemayya, ‘with the clouds of heaven’; the Old Greek has epi, ‘on’ the clouds, and Theodotion meta, ‘with’. Mark's en nephelais, ‘in clouds’, matches neither exactly. In Daniel the figure comes to God to receive authority, and N. T. Wright (Jesus and the Victory of God, 1996) and R. T. France (The Gospel of Mark, 2002) argue that Mark's scene therefore describes Jesus' vindication and enthronement, made visible in the judgment on the temple. Most interpreters, from the early church onward, read it as Jesus' return to earth, the sense Acts 1:11 and 1 Thessalonians 4:16-17 give to his coming with the clouds. Jesus uses the same text at his trial (14:62)."
+        }
+      ],
+      "theology": [
+        {
+          "id": "return",
+          "note": "On the majority reading, the verse describes the visible, personal return of Christ in glory, the hope the Nicene Creed confesses when it says that Christ will come again in glory to judge the living and the dead."
+        },
+        {
+          "id": "exaltation",
+          "note": "On any reading, the verse presents Jesus as the Son of Man who receives God's kingdom and glory. The one about to be handed over and killed (14:41) will be seen in power."
+        }
+      ],
+      "refs": [
+        "Daniel 7:13-14",
+        "Mark 14:62",
+        "Acts 1:11",
+        "1 Thessalonians 4:16-17",
+        "Revelation 1:7"
+      ]
+    },
+    {
+      "v": "27",
+      "context": "The Son of Man sends his angels to gather his chosen people from everywhere. The gathering is the purpose of his coming.",
+      "grammar": "Apostelei, ‘he will send’, and episunaxei, ‘he will gather together’, are futures with the Son of Man as subject. The angels are his and the elect are his (tous eklektous autou), which gives Jesus the role God has in the prophets. Ek tōn tessarōn anemōn, ‘from the four winds’, means from every direction. The phrase ap' akrou gēs heōs akrou ouranou, ‘from the end of the earth to the end of heaven’, combines two Old Testament expressions for the farthest horizon.",
+      "words": [
+        "G0649",
+        "G0032G",
+        "G1996",
+        "G1588",
+        "G0417",
+        "G0206"
+      ],
+      "parallels": [
+        "Matthew 24:31"
+      ],
+      "ot": [
+        {
+          "ref": "Zechariah 2:6",
+          "note": "Zechariah calls the exiles to flee from the north, since God scattered them ‘like the four winds of heaven’ (Zechariah 2:6, 2:10 in the Septuagint). The Septuagint reads that God will gather them from the four winds (ek tōn tessarōn anemōn tou ouranou sunaxō). Deuteronomy 30:4 promises that even if Israel is banished to ‘the farthest horizon’ (Hebrew biqtseh hashamayim, ‘the end of the heavens’), the LORD will gather them. In both texts God gathers his scattered people. In Mark the Son of Man sends his angels to do the gathering, taking the role of Israel's God."
+        }
+      ],
+      "theology": [
+        {
+          "id": "election",
+          "note": "The elect are gathered by the Son of Man and belong to him. Election in this chapter ends in gathering, not only in protection."
+        },
+        {
+          "id": "angels",
+          "note": "The angels serve the Son of Man as they serve God, a detail that places Jesus above them (Mark 8:38, Hebrews 1:6)."
+        }
+      ],
+      "refs": [
+        "Deuteronomy 30:4",
+        "Isaiah 11:12",
+        "Isaiah 27:12-13",
+        "Matthew 13:41",
+        "1 Thessalonians 4:17"
+      ]
+    },
+    {
+      "v": "28-29",
+      "context": "The final section begins with a parable from the fig tree. Just as new leaves signal that summer is near, ‘these things’ will signal that ‘he’ or ‘it’ is at the door.",
+      "grammar": "Mathete tēn parabolēn, ‘learn the parable’, is an aorist imperative, ‘grasp this lesson’. The fig tree loses its leaves in the Judean winter and puts them out late, in spring, so its leaves mean that summer is close. Engus estin epi thurais, ‘it is near, at the doors’, has no expressed subject: the BSB reads ‘He is near’, meaning the Son of Man; others read ‘it is near’, meaning the event, the end, or the kingdom. The ‘these things’ (tauta) that the disciples ‘see’ must be the signs of verses 5 to 23, since the coming itself cannot be a sign that the coming is near. That observation bears directly on verse 30.",
+      "words": [
+        "G4808",
+        "G3850",
+        "G2330",
+        "G1451",
+        "G2374"
+      ],
+      "parallels": [
+        "Matthew 24:32-33",
+        "Luke 21:29-31"
+      ],
+      "history": "A wordplay may lie behind the parable. In Amos 8:1-2 God shows the prophet a basket of summer fruit (Hebrew qayits) and says the end (qets) has come upon Israel. The two words sound alike in Hebrew. Mark's fig tree also recalls the barren fig tree that Jesus cursed on the way to the temple (11:12-14, 11:20-21), an acted parable of judgment on the temple.",
+      "theology": [
+        {
+          "id": "hope",
+          "note": "The parable turns fearful signs into signs of approaching summer. The events that bring suffering also mean that the time of harvest and fulfillment is close."
+        }
+      ],
+      "refs": [
+        "Amos 8:1-2",
+        "Mark 11:12-14",
+        "Mark 11:20-21",
+        "Song of Solomon 2:11-13",
+        "James 5:8-9"
+      ]
+    },
+    {
+      "v": "30",
+      "context": "Jesus solemnly states that ‘this generation’ will not pass away before ‘all these things’ happen. C. S. Lewis, in his 1952 essay ‘The World's Last Night’, called it the most embarrassing verse in the Bible, and he was not alone in feeling its weight. How it is read depends on what ‘this generation’ and ‘all these things’ mean.",
+      "grammar": "Amēn legō humin, ‘Truly I tell you’, marks the saying as solemn. Ou mē parelthē, ‘will certainly not pass away’, is the emphatic negation again, and mechris hou, ‘until’, sets a limit. Genea usually means the people living at one time. Every other time Mark uses genea (8:12, twice, 8:38, and 9:19) he means Jesus' contemporaries, and most scholars agree that the phrase has that sense here. The more open question is the reference of tauta panta, ‘all these things’. It echoes the disciples' question in verse 4 (‘when will these things happen’) and the ‘these things’ of verse 29, which are signs seen before the end, not the end itself.",
+      "words": [
+        "G0281",
+        "G3928",
+        "G1074",
+        "G3778",
+        "G3956"
+      ],
+      "parallels": [
+        "Matthew 24:34",
+        "Luke 21:32"
+      ],
+      "history": "The temple fell in AD 70, about forty years after Jesus spoke, and forty years was a standard biblical span for a generation (Numbers 32:13, Psalm 95:10). The difficulty is still plain: Jesus sets a time limit, and the church has waited nearly two thousand years for his return. Four main readings have been offered. A critical reading, argued by Albert Schweitzer in The Quest of the Historical Jesus (1906) and used by Bertrand Russell in Why I Am Not a Christian (1927), holds that Jesus expected the end within his hearers' lifetimes and was mistaken. The preterist reading of R. T. France (The Gospel of Mark, 2002) and N. T. Wright (Jesus and the Victory of God, 1996) holds that verses 5 to 27, including the Son of Man's coming read in Daniel's sense of vindication, were fulfilled in AD 70, with verses 32 to 37 turning to the final return. The futurist reading places much of the chapter still ahead and reads genea differently: the Scofield Reference Bible (1909), on Matthew 24:34, took it as ‘race’, the Jewish people; others take it as the generation that sees the signs. A mixed reading, defended by Robert H. Stein in Jesus, the Temple and the Coming Son of Man (2014), limits ‘all these things’ to the signs and the temple's fall in verses 5 to 23, while the coming in verses 24 to 27 belongs to the undated ‘that day’ of verse 32.",
+      "theology": [
+        {
+          "id": "hope",
+          "note": "Each reading has to explain something. The critical view must explain why Mark kept a saying he supposedly knew had failed; the futurist must answer Mark's own use of genea for contemporaries; the preterist and mixed views must account for how closely verse 30 follows verses 24 to 27. The timing is a second-order question on which faithful Christians differ; the return itself is confessed by all the creeds."
+        },
+        {
+          "id": "prophecy",
+          "note": "The prediction of the temple's fall within a generation came true in AD 70. Whatever else the verse means, that fulfillment was one reason the early church trusted Jesus' words about what remained."
+        },
+        {
+          "id": "return",
+          "note": "The creeds confess that Christ will come again but set no date, following verse 32. The difficulty of verse 30 has pressed the church to read the chapter carefully rather than to speculate."
+        }
+      ],
+      "refs": [
+        "Mark 8:12",
+        "Mark 8:38",
+        "Mark 9:1",
+        "Matthew 23:36",
+        "2 Peter 3:3-9"
+      ]
+    },
+    {
+      "v": "31",
+      "context": "Jesus sets his words above the created order. Heaven and earth will pass away, but his words will never pass away. The verse guarantees the prediction just made.",
+      "grammar": "The verse repeats the verb parerchomai, ‘pass away’, from verse 30. Pareleusontai, the future, is used first for heaven and earth and then, with the emphatic negation ou mē, for Jesus' words. Hoi logoi mou, ‘my words’, puts Jesus' teaching in the place the Old Testament gives to God's word.",
+      "words": [
+        "G3772",
+        "G1093G",
+        "G3928",
+        "G3056"
+      ],
+      "parallels": [
+        "Matthew 24:35",
+        "Luke 21:33"
+      ],
+      "ot": [
+        {
+          "ref": "Isaiah 40:8",
+          "note": "Isaiah says ‘The grass withers and the flowers fall, but the word of our God stands forever’. The Hebrew uses qum, ‘stand’, and the Septuagint menei eis ton aiōna, ‘remains forever’. Psalm 102:25-27 says the heavens and earth will perish but God remains. Jesus does not quote either text, but he claims for his own words the permanence they give to God and his word."
+        }
+      ],
+      "text": "Some editions read ou pareleusontai, ‘will not pass away’, without the emphatic mē. The difference is one of emphasis only.",
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "The words of Jesus carry the authority of God's own word. The verse is a claim about who he is, not only about the reliability of his predictions."
+        },
+        {
+          "id": "new-creation",
+          "note": "Heaven and earth as they now are will pass away. The New Testament hope is not that the world simply continues but that God makes a new heaven and earth (2 Peter 3:13, Revelation 21:1)."
+        }
+      ],
+      "refs": [
+        "Isaiah 40:8",
+        "Psalm 102:25-27",
+        "Matthew 5:18",
+        "1 Peter 1:24-25",
+        "Revelation 21:1"
+      ]
+    },
+    {
+      "v": "32",
+      "context": "The turning point of the final section. ‘That day or hour’ is known to no one, not even the angels or the Son, but only the Father. Whatever the relation to verse 30, this verse rules out every attempt to set a date for Christ's return.",
+      "grammar": "Peri de tēs hēmeras ekeinēs, ‘but concerning that day’, uses de to mark a contrast with verse 30, and the singular ‘that day’ differs from the plural ‘those days’ of verses 17, 19, and 24; ‘that day’ is the prophets' phrase for the day of the LORD. The negatives are cumulative: oudeis, ‘no one’, oude hoi angeloi, ‘not even the angels’, oude ho huios, ‘not even the Son’, ei mē ho patēr, ‘except the Father’. Ho huios, ‘the Son’, used absolutely, is rare in Mark and sets the Son beside the Father in a way that implies a unique relation, even while stating a limit.",
+      "words": [
+        "G2250",
+        "G5610",
+        "G6063",
+        "G0032G",
+        "G5207",
+        "G3962"
+      ],
+      "parallels": [
+        "Matthew 24:36"
+      ],
+      "text": "The words ‘nor the Son’ are firmly in Mark's text. In the parallel at Matthew 24:36, many later manuscripts leave them out, probably because scribes found the admission theologically troubling, though Codex Sinaiticus and Vaticanus include them there too.",
+      "history": "The verse was central in the fourth-century debate over Christ's divinity. Followers of Arius cited it as proof that the Son was less than the Father. Athanasius, in his third Oration against the Arians, answered that the Son spoke of ignorance according to his human nature, which he truly took on, not according to his divine nature. Later theologians have explained it in different ways, including accounts of the Son's voluntary self-limitation in becoming human (Philippians 2:7).",
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "The Son shares the limits of human knowledge in his earthly life. The church has confessed that he is truly God and truly man, and verses like this one guard the full reality of his humanity."
+        },
+        {
+          "id": "return",
+          "note": "The return of Christ is certain in fact and uncertain in date. Every date-setter in the church's history has run against this verse."
+        }
+      ],
+      "refs": [
+        "Acts 1:7",
+        "Philippians 2:6-8",
+        "Zechariah 14:7",
+        "1 Thessalonians 5:1-2",
+        "Luke 2:52"
+      ]
+    },
+    {
+      "v": "33",
+      "context": "Because the time is unknown, the only fitting response is vigilance. The command ‘be on your guard’ appears for the last time and is joined by ‘stay alert’.",
+      "grammar": "Blepete, ‘watch’, repeats the discourse's key command (verses 5, 9, 23). Agrupneite, ‘stay awake’, comes from a word meaning ‘sleepless’; it means alert watchfulness. Ouk oidate gar pote ho kairos estin, ‘for you do not know when the time is’, gives the reason. Kairos, ‘the appointed time’, returns from 1:15, where Jesus announced that ‘the time is fulfilled’: the Gospel's first kairos has come, and its final kairos is still ahead.",
+      "words": [
+        "G0991",
+        "G0069",
+        "G6063",
+        "G2540"
+      ],
+      "parallels": [
+        "Luke 21:34-36"
+      ],
+      "text": "Many later manuscripts, followed by the King James Version (‘watch and pray’), add kai proseuchesthe, ‘and pray’. It is missing from Codex Vaticanus and Codex Bezae, and most editors think it was added from 14:38, where Jesus tells the sleeping disciples in Gethsemane to watch and pray.",
+      "theology": [
+        {
+          "id": "hope",
+          "note": "Christian hope is not calculation but readiness. Not knowing the time is a reason for watchfulness, not for indifference."
+        }
+      ],
+      "refs": [
+        "Luke 21:34-36",
+        "Mark 14:38",
+        "Ephesians 6:18",
+        "1 Peter 4:7",
+        "Mark 1:15"
+      ]
+    },
+    {
+      "v": "34",
+      "context": "A short parable illustrates what watching means. A man leaves home, gives each servant authority and a task, and tells the doorkeeper to keep watch. Watching is faithfulness in assigned work, not idle waiting.",
+      "grammar": "Apodēmos, ‘away from home’, is an adjective describing the man. The participles apheis, ‘leaving’, and dous, ‘giving’, describe what he does before departing. Tēn exousian, ‘the authority’, is given to the servants, and hekastō to ergon autou, ‘to each his work’, stresses that each has a particular task. The doorkeeper receives a special command: hina grēgorē, ‘that he keep watch’, the key verb of the closing verses.",
+      "words": [
+        "G0590",
+        "G1401",
+        "G1849",
+        "G2041",
+        "G2377",
+        "G1127"
+      ],
+      "parallels": [
+        "Luke 12:36-38",
+        "Matthew 25:14-15",
+        "Luke 19:12-13"
+      ],
+      "theology": [
+        {
+          "id": "work",
+          "note": "The master gives authority and work to every servant. The time of waiting is a time of assigned responsibility, which gives ordinary faithfulness its dignity."
+        },
+        {
+          "id": "church",
+          "note": "The household with its servants and doorkeeper has often been read as a picture of the church in the time between Christ's going and his return, with every member given a task."
+        }
+      ],
+      "refs": [
+        "Matthew 25:14-15",
+        "Luke 12:42-44",
+        "1 Corinthians 4:1-2",
+        "1 Peter 4:10"
+      ]
+    },
+    {
+      "v": "35-37",
+      "context": "The discourse ends with the application of the parable and a final command to everyone. The master may come at any watch of the night, and he must not find his servants asleep. What Jesus says to the four, he says to all.",
+      "grammar": "Grēgoreite oun, ‘keep watch therefore’, a present imperative, calls for continuing vigilance. The four times named, opse, mesonuktion, alektorophōnias, and prōi (evening, midnight, cockcrow, and early morning), are the Roman divisions of the night into four watches. Katheudontas, ‘sleeping’, anticipates Gethsemane: Jesus comes and heuriskei autous katheudontas, ‘finds them sleeping’ (14:37, 40), the same words used in verse 36. The final sentence, ho de humin legō pasin legō, ‘what I say to you I say to all’, extends the command from the four disciples to every reader.",
+      "words": [
+        "G1127",
+        "G3796",
+        "G3317",
+        "G0219",
+        "G4404",
+        "G2518"
+      ],
+      "parallels": [
+        "Matthew 24:42",
+        "Luke 12:38"
+      ],
+      "history": "R. H. Lightfoot, in The Gospel Message of St. Mark (1950), drew attention to the connection between this chapter and the passion narrative that follows. The four watches match the times of Jesus' last night: evening, when he eats the Passover with the disciples (14:17); the night in Gethsemane; cockcrow, when Peter denies him (14:72); and early morning, when he is handed over to Pilate (15:1). The disciples fail to watch in exactly the hours the parable names.",
+      "theology": [
+        {
+          "id": "return",
+          "note": "The master will come, and his coming will be sudden. Readiness for Christ's return is expressed in wakefulness now."
+        },
+        {
+          "id": "perseverance",
+          "note": "The last word of Jesus' teaching in Mark before the passion is a command to keep watch. The disciples' failure in Gethsemane shows how hard the command is, and Jesus' restoration of them after the resurrection (16:7) shows that failure is not the end."
+        }
+      ],
+      "refs": [
+        "Mark 14:37-41",
+        "Mark 14:72",
+        "Luke 12:35-40",
+        "Romans 13:11-12",
+        "Revelation 16:15"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,219 @@
+{
+  "verses": [
+    {
+      "v": "1-2",
+      "context": "After the leper's healing drove Jesus into lonely places (1:45), he returns to Capernaum, and the crowds find him at once. The house fills to the door, and he is speaking ‘the word’, which sets the scene for the first of five controversies (2:1 to 3:6).",
+      "grammar": "Di' hēmerōn, literally ‘through days’, means ‘after some days’. Ēkousthē hoti en oikō estin, ‘it was heard that he is at home’, keeps the report in the present tense as it was spoken. En oikō, without an article, is the idiom for ‘at home’, and in context it most likely means the house of Simon and Andrew (1:29), which served as Jesus' base in the town. Elalei autois ton logon, ‘he was speaking the word to them’: the imperfect describes ongoing teaching, and ho logos, ‘the word’, is already on its way to becoming the early church's term for the gospel message (4:14; Acts 4:31).",
+      "words": ["G2584", "G3624G", "G5562", "G2980", "G3056"],
+      "parallels": ["Matthew 9:1-8", "Luke 5:17-26"],
+      "history": "Excavations at Capernaum by the Franciscan archaeologists Virgilio Corbo and Stanislao Loffreda, beginning in 1968, uncovered a modest first-century house of basalt stone beneath an octagonal church of the fifth century. The room had been plastered and marked with Christian graffiti by the later Roman period, and the pilgrim Egeria, at the end of the fourth century, reported that Peter's house in Capernaum had been made into a church. Many archaeologists think this is the house tradition connected with Peter, though the identification cannot be proven.",
+      "refs": ["Mark 1:29-33", "Mark 1:45", "Mark 4:14", "Acts 4:31"]
+    },
+    {
+      "v": "3-4",
+      "context": "Four men bring a paralyzed man, cannot get through the crowd, and dig through the roof. Their persistence is what verse 5 will call faith.",
+      "grammar": "Erchontai pherontes, ‘they come bringing’, is Mark's characteristic historical present, which makes the scene vivid. Airomenon hupo tessarōn, ‘carried by four’, is a present passive participle. Verse 4 piles up concrete verbs: apestegasan tēn stegēn, ‘they unroofed the roof’, a play on the same root; exoruxantes, ‘having dug through’; and chalōsi, ‘they lower’, another historical present. Krabattos, ‘mat’ or ‘pallet’, was a colloquial word for a poor person's bedroll, and it recurs four times in the story (verses 4, 9, 11, 12).",
+      "words": ["G5342", "G3885", "G0648", "G4721", "G1846", "G5465", "G2895"],
+      "text": "Luke's version (5:19) says the friends let the man down ‘through the tiles’, describing a tiled roof of the kind common in Greek and Roman towns. Mark's verb for digging fits a Galilean roof of beams, brush, and packed earth. Each writer describes a roof his readers would picture.",
+      "refs": ["Luke 5:19", "Mark 1:32", "Mark 6:55"]
+    },
+    {
+      "v": "5",
+      "context": "Jesus sees the friends' faith and speaks to the man, not about his legs but about his sins. The unexpected word sets up the controversy of verses 6 to 10.",
+      "grammar": "Idōn ho Iēsous tēn pistin autōn, ‘Jesus, seeing their faith’: ‘their’ includes at least the four carriers, and faith here is something visible, shown in action. Teknon, ‘child’ (the BSB's \"Son\"), is an affectionate address. Aphientai sou hai hamartiai, ‘your sins are forgiven’, is a present passive indicative: the forgiveness happens as Jesus speaks. The passive leaves the forgiver unnamed, a way Jewish speech often referred to God's action, and the scribes' objection in verse 7 shows they understood it as a claim to act on God's behalf.",
+      "words": ["G4102G", "G5043", "G0863H", "G0266"],
+      "text": "Some manuscripts read apheōntai, a perfect, ‘have been forgiven’, the form Luke uses (5:20). The present aphientai is the better-attested reading in Mark and describes forgiveness granted in the act of speaking.",
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "Jesus addresses the man's sin before his paralysis. The verse does not say the illness was caused by his sin; it says the deeper need is forgiveness, and that Jesus grants it on the basis of faith."
+        },
+        {
+          "id": "faith",
+          "note": "The faith Jesus sees belongs to the friends as well as the man. The verse gives a picture of faith that carries another person to Jesus when he cannot come himself."
+        }
+      ],
+      "refs": ["Psalm 103:2-3", "Isaiah 33:24", "Luke 7:48-50", "James 5:15"]
+    },
+    {
+      "v": "6-7",
+      "context": "The scribes do not speak aloud; they reason silently. Their objection is theologically correct: only God forgives sins. That is exactly why Jesus' words are either blasphemy or a revelation of who he is.",
+      "grammar": "Dialogizomenoi en tais kardiais autōn, ‘reasoning in their hearts’: the heart in biblical language is the place of thought and will, not only feeling. Their question has three parts in Greek: ti houtos houtōs lalei, ‘why does this fellow speak like this?’, where houtos can carry contempt; blasphēmei, ‘he blasphemes’; and tis dunatai aphienai hamartias ei mē heis ho theos, ‘who can forgive sins except one, God?’ The phrase heis ho theos, ‘God alone’, echoes the Shema of Deuteronomy 6:4 (‘the LORD is one’), the confession Jesus himself will quote in 12:29.",
+      "words": ["G1122", "G1260", "G2588", "G0987", "G0863H", "G1520", "G2316"],
+      "history": "Scribes were trained experts in the law of Moses, who copied, taught, and applied it. Blasphemy in the law (Leviticus 24:15-16) was speaking against God's name, and it carried the death penalty; the Mishnah (m. Sanhedrin 7:5) later narrowed the offense to pronouncing the divine name itself. The scribes here use the word more broadly, for claiming a prerogative that belongs to God. The same charge returns at Jesus' trial (14:64), where it leads to his condemnation.",
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "The scribes' premise is sound: forgiveness of sins against God is God's prerogative (Isaiah 43:25). Mark does not correct the premise; he lets it stand so that the reader draws the conclusion about Jesus that the scribes refuse."
+        }
+      ],
+      "refs": ["Isaiah 43:25", "Exodus 34:6-7", "Deuteronomy 6:4", "Mark 14:64", "Leviticus 24:15-16"]
+    },
+    {
+      "v": "8-9",
+      "context": "Jesus answers thoughts no one has spoken, then asks a question that turns their objection into a test. He is about to give visible evidence for an invisible claim.",
+      "grammar": "Epignous ... tō pneumati autou, ‘knowing in his spirit’, uses a compound verb (epiginōskō) for full, immediate recognition. The question ti estin eukopōteron, ‘which is easier?’, compares two sayings, not two acts. To say ‘your sins are forgiven’ is easier because no one can check it; to say ‘get up and walk’ is harder because the result is visible at once. Egeire is a present imperative, ‘get up’, and aron, an aorist, ‘pick up’; peripatei, another present, ‘walk’, describes an ongoing activity the man has never been able to do.",
+      "words": ["G1921", "G4151G", "G1260", "G2123", "G1453", "G0142", "G4043"],
+      "theology": [
+        {
+          "id": "attributes",
+          "note": "Jesus knows what the scribes are thinking without being told, the knowledge of hearts that Scripture ascribes to God (1 Samuel 16:7; Jeremiah 17:10). Mark presents it without comment, as another sign of who stands in the room."
+        }
+      ],
+      "refs": ["1 Samuel 16:7", "Jeremiah 17:10", "John 2:24-25", "Hebrews 4:12-13"]
+    },
+    {
+      "v": "10-12",
+      "context": "Jesus breaks off his sentence to the scribes and turns to the paralyzed man, whose healing becomes the proof. The crowd's amazement ends the scene, but the scribes' silence hangs over the rest of the controversy series.",
+      "grammar": "Hina de eidēte, ‘but so that you may know’, begins a purpose clause that never gets its main verb: the sentence breaks off, and legei tō paralutikō, ‘he says to the paralytic’, completes it with an action instead of words. Some commentators take the whole clause as Mark's own aside to his readers. Ho huios tou anthrōpou, ‘the Son of Man’, appears here for the first of fourteen times in Mark, always on Jesus' own lips. Exousian echei ... epi tēs gēs, ‘has authority on earth’, implies that the authority to forgive, which belongs in heaven, is now exercised on earth by him. Verse 12 answers verse 11 word for word: egeire, aron, hupage become ēgerthē, aras, exēlthen, command matched by fulfillment.",
+      "words": ["G6063", "G1849", "G5207", "G0444", "G1093G", "G1839", "G1392"],
+      "parallels": ["Matthew 9:6-8", "Luke 5:24-26"],
+      "history": "Scholars have long debated what ‘son of man’ would have meant in Aramaic. Geza Vermes (Jesus the Jew, 1973) argued that bar nasha could serve as a modest way of saying ‘I’; Maurice Casey argued that it was a general statement about human beings that included the speaker. Others hold that in Jesus' usage it carried the sense of Daniel 7. Mark's use, joining the phrase with ‘authority’ as Daniel 7:14 does, points to the Danielic figure.",
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "The Son of Man exercises on earth the authority to forgive that the scribes rightly reserve for God. The healing is not a separate display but the visible seal on the invisible word of forgiveness."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Daniel 7:13-14",
+          "note": "In Daniel's Aramaic, one like a son of man, kevar enash, comes with the clouds of heaven to the Ancient of Days and is given dominion, glory, and a kingdom that all peoples serve. The Septuagint of 7:14 says kai edothē autō exousia, ‘and authority was given to him’, the same word Jesus uses here. Daniel's figure receives authority in heaven; Mark shows the Son of Man exercising it on earth, and 14:62 will bring the Daniel text into the open at the trial."
+        }
+      ],
+      "refs": ["Daniel 7:13-14", "Mark 8:31", "Mark 14:62", "John 5:27", "Acts 5:31"]
+    },
+    {
+      "v": "13-14",
+      "context": "Beside the sea, Jesus calls a tax collector, and Levi leaves his booth as the four fishermen left their nets (1:16-20). The call story is told in the same spare form, which makes the choice of a toll collector more startling.",
+      "grammar": "Paragōn, ‘passing by’, is the same participle used for the call of Simon and Andrew (1:16). Kathēmenon epi to telōnion, ‘sitting at the toll office’: the telōnion was the booth where duties were collected. Akolouthei moi, ‘follow me’, is a present imperative, a call to continuing discipleship, not a single step. Anastas ēkolouthēsen, ‘having got up, he followed’: anistēmi is also a resurrection verb in Mark, and the one-word obedience mirrors the paralytic's rising.",
+      "words": ["G2281", "G1321", "G3855", "G3017I", "G0256", "G5058", "G0190", "G0450"],
+      "parallels": ["Matthew 9:9", "Luke 5:27-28"],
+      "text": "Matthew's Gospel names the tax collector Matthew (9:9), and Mark's list of the Twelve has Matthew but no Levi (3:18), so the church has usually taken them as one man with two names. Some manuscripts of Mark, including Codex Bezae, read ‘James son of Alphaeus’ here, probably because a scribe noticed that Mark's list of apostles has a James son of Alphaeus and no Levi.",
+      "history": "Capernaum lay in Herod Antipas's territory near the Jordan crossing into the lands of his brother Philip, so goods moving between the two would pay duty there. Tolls were farmed out to contractors who paid in advance and collected what they could, and local agents like Levi were suspected of extortion; Luke 3:12-13 has John the Baptist telling tax collectors to collect no more than their due.",
+      "refs": ["Mark 1:16-20", "Mark 3:18", "Matthew 9:9", "Luke 3:12-13", "Luke 19:2-8"]
+    },
+    {
+      "v": "15",
+      "context": "A meal follows the call, and the guests are tax collectors and sinners reclining with Jesus and his disciples. Mark adds that many such people were following him, so the scene is not a one-off.",
+      "grammar": "Katakeisthai and sunanekeinto both mean ‘to recline’ at a meal, the posture of a banquet rather than an ordinary meal. En tē oikia autou, ‘in his house’, is ambiguous in Greek: autou could refer to Levi or to Jesus. The BSB reads \"at Levi’s house\", following Luke 5:29, which says Levi gave a great banquet in his own house. The explanatory clause ēsan gar polloi kai ēkolouthoun autō, ‘for there were many, and they were following him’, uses ēkolouthoun, the verb of discipleship from verse 14.",
+      "words": ["G2621", "G3614G", "G5057", "G0268", "G4873", "G3101", "G0190"],
+      "parallels": ["Matthew 9:10", "Luke 5:29"],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "Jesus' table is open to those whom the observant kept at a distance. The meal enacts what the next verses will explain: acceptance into Jesus' company comes before, and as the ground of, a changed life."
+        }
+      ],
+      "refs": ["Luke 5:29", "Luke 15:1-2", "Luke 19:5-7", "Matthew 11:19"]
+    },
+    {
+      "v": "16-17",
+      "context": "Scribes of the Pharisees' party question the disciples about Jesus' table companions, and Jesus answers with a proverb and a statement of his mission. The second controversy ends with one of the Gospel's summary sayings.",
+      "grammar": "Hoi grammateis tōn Pharisaiōn, ‘the scribes of the Pharisees’, is an unusual phrase that identifies scribes belonging to the Pharisaic movement; not every scribe was a Pharisee. Their question can be read as ‘why does he eat?’ or, taking hoti as introducing a statement, as a scandalized report, ‘he eats with tax collectors and sinners’. Jesus' answer has two parts. The proverb contrasts hoi ischuontes, ‘the strong’, with hoi kakōs echontes, ‘those who are ill’. Then ouk ēlthon kalesai dikaious alla hamartōlous, ‘I did not come to call the righteous but sinners’: ēlthon, ‘I came’, speaks of his mission as a purpose that brought him, one of several ‘I came’ sayings in Mark (1:38, 10:45).",
+      "words": ["G1122", "G5330", "G2068", "G5057", "G0268", "G2480", "G2395", "G2560", "G2564G", "G1342"],
+      "parallels": ["Matthew 9:11-13", "Luke 5:30-32"],
+      "text": "The text behind the King James Version reads ‘the scribes and Pharisees’, a smoother phrase. The earlier manuscripts read ‘the scribes of the Pharisees’, the more unusual expression, which is probably original. Matthew adds a quotation of Hosea 6:6, ‘I desire mercy, not sacrifice’ (9:13), and Luke adds ‘to repentance’ at the end of the saying (5:32).",
+      "history": "A similar retort was told of Greek philosophers. Diogenes Laertius (Lives of the Philosophers 6.6) reports that Antisthenes, when criticized for keeping company with bad people, replied that physicians also attend the sick without catching their fever. Jesus' saying would have sounded like common wisdom; what was new was whom he applied it to and the claim that he came to call.",
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "Jesus calls sinners, and the call assumes they need a physician. The verse joins mercy and diagnosis: no one is too sick to be called, and no one is healed who insists he is well."
+        }
+      ],
+      "refs": ["Hosea 6:6", "Luke 15:1-7", "Luke 19:10", "1 Timothy 1:15", "Mark 10:45"]
+    },
+    {
+      "v": "18",
+      "context": "The third controversy moves from eating with sinners to not fasting. The questioners set Jesus' disciples beside two other devout groups, John's disciples and the Pharisees, and find them wanting.",
+      "grammar": "Ēsan ... nēsteuontes, ‘were fasting’, is a periphrastic imperfect (the verb ‘to be’ with a participle), which describes an ongoing practice, perhaps in progress on that very day. Erchontai kai legousin, ‘they come and say’, has no stated subject, a common Markan way of saying ‘people came’. Their question sets the three groups side by side with the verb nēsteuō three times.",
+      "words": ["G3101", "G2491G", "G5330", "G3522"],
+      "parallels": ["Matthew 9:14-15", "Luke 5:33-35"],
+      "history": "The law required fasting only on the Day of Atonement (Leviticus 16:29-31). Voluntary fasts were common among the devout, and the early Christian manual called the Didache (8:1), probably from the late first century, tells believers not to fast on Monday and Thursday with ‘the hypocrites’ but on Wednesday and Friday, which suggests that twice-weekly fasting on Monday and Thursday was a known Jewish custom. John's disciples, whose teacher was now in prison (1:14), may have been fasting in mourning or in expectation.",
+      "refs": ["Leviticus 16:29-31", "Zechariah 8:19", "Luke 18:12", "Matthew 6:16-18", "Mark 1:14"]
+    },
+    {
+      "v": "19-20",
+      "context": "Jesus answers with an image: guests do not fast at a wedding while the bridegroom is present. Then comes the chapter's first shadow of the cross: the bridegroom will be taken away, and then they will fast.",
+      "grammar": "Hoi huioi tou numphōnos, literally ‘the sons of the bridal chamber’, is a Semitic idiom for the bridegroom's attendants or wedding guests. Mē dunantai, ‘are they able?’, expects the answer no. In verse 20, aparthē, an aorist passive subjunctive of apairō, ‘be taken away’, is used in the New Testament only in this saying and its parallels; the passive hints at a violent removal. Tote nēsteusousin en ekeinē tē hēmera, ‘then they will fast on that day’: the switch from ‘days’ to the singular ‘that day’ points to a particular day of loss.",
+      "words": ["G5207", "G3567", "G3566", "G3522", "G0522", "G2250"],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "Only a few pages into the Gospel, Jesus speaks of his own removal. The verse sets his death inside his mission from the start and makes the church's fasting a way of remembering that the bridegroom was taken, as early Christians did by fasting on Friday."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Isaiah 62:5",
+          "note": "Isaiah promises that as a bridegroom rejoices over his bride, so God will rejoice over Zion; Hosea 2:19-20 has God betrothing Israel to himself in faithfulness. In the Old Testament the bridegroom of Israel is God himself. Jesus' image does not quote these texts, but it takes the role that the prophets gave to the LORD, which is why the saying is more than a comment on table manners."
+        }
+      ],
+      "refs": ["Isaiah 62:5", "Hosea 2:19-20", "John 3:29", "Mark 14:7", "Revelation 19:7"]
+    },
+    {
+      "v": "21-22",
+      "context": "Two short parables close the fasting controversy. New cloth and new wine cannot be contained by the old: what Jesus brings is not a patch on existing practice but something that needs new forms.",
+      "grammar": "Rhakous agnaphou, ‘unshrunk cloth’: agnaphos means ‘not treated by the fuller’, the worker who washed and shrank new wool. To plērōma, ‘the fill’ or ‘the patch’, is the piece that fills the hole, and it tears away to kainon tou palaiou, ‘the new from the old’. Two words for ‘new’ appear: neos, new in time (young wine, still fermenting), and kainos, new in kind (fresh skins). Rhēxei, ‘will burst’, and apollutai, ‘is destroyed’, describe the loss of both wine and skins.",
+      "words": ["G1915", "G0046", "G2440", "G3820", "G4138", "G2537", "G3631", "G3501", "G0779", "G4486", "G0622"],
+      "text": "The last clause of verse 22, \"Instead, new wine is poured into new wineskins\", is missing from Codex Bezae and some Old Latin manuscripts, probably by accident. Luke's version (5:36-39) differs in two ways: the patch is torn from a new garment, so both are ruined, and he adds that no one who has drunk old wine wants the new.",
+      "refs": ["Luke 5:36-39", "Matthew 9:16-17", "2 Corinthians 5:17", "Hebrews 8:13"]
+    },
+    {
+      "v": "23-24",
+      "context": "The fourth controversy concerns the Sabbath. The disciples pluck heads of grain while walking, and the Pharisees object, not to the plucking, which the law allowed, but to its being done on the Sabbath.",
+      "grammar": "En tois sabbasin, ‘on the Sabbath’, uses the plural form, which is common for a single Sabbath and reflects the Aramaic word's ending. Ērxanto hodon poiein tillontes tous stachuas is literally ‘they began to make a way plucking the heads of grain’. Most translations take hodon poiein as ‘to go along’, though the phrase can mean ‘to make a path’, and a few interpreters have suggested the disciples were clearing a way. Ide, ‘look’, and ho ouk exestin, ‘what is not lawful’, frame the charge.",
+      "words": ["G4521", "G3899", "G4702", "G3598", "G5089", "G4719", "G1832"],
+      "parallels": ["Matthew 12:1-2", "Luke 6:1-2"],
+      "history": "Deuteronomy 23:25 allowed a traveler to pluck grain by hand from a neighbor's field. The Mishnah (m. Shabbat 7:2) lists thirty-nine main categories of work forbidden on the Sabbath, including reaping and threshing, and plucking and rubbing grain could be classed under them. Luke adds that the disciples rubbed the grain in their hands (6:1), and Matthew that they were hungry (12:1).",
+      "refs": ["Deuteronomy 23:25", "Exodus 20:8-11", "Exodus 34:21", "Matthew 12:1-2", "Luke 6:1-2"]
+    },
+    {
+      "v": "25-26",
+      "context": "Jesus answers with a precedent from Scripture: David and his companions ate the consecrated bread that only priests were permitted to eat. The argument is that Scripture itself records an occasion when human need took precedence over a ceremonial rule, and that David, the anointed king, did so without condemnation.",
+      "grammar": "Oudepote anegnōte, ‘have you never read?’, is Jesus' challenge to experts in Scripture, used again in 12:10 and 12:26. Epi Abiathar archiereōs is the phrase at issue. Epi with the genitive of a person normally means ‘in the time of’, as in Luke 3:2 (epi archiereōs Hanna) and Luke 4:27 (epi Elisaiou, ‘in the time of Elisha’). Tous artous tēs protheseōs, ‘the loaves of presentation’, is the Septuagint's name for the bread set out before the LORD (Exodus 40:23 and elsewhere).",
+      "words": ["G0314", "G1138", "G5532", "G3983", "G0008", "G0749", "G0740", "G4286", "G5315", "G2409"],
+      "parallels": ["Matthew 12:3-4", "Luke 6:3-4"],
+      "text": "The phrase ‘in the days of Abiathar the high priest’ is missing from Codex Bezae, Codex Washingtonianus, and some Latin and Syriac manuscripts, which may show that ancient copyists felt the problem. Matthew and Luke also leave the name out. The best manuscripts include it, and all modern editions print it.",
+      "history": "1 Samuel 21:1-6 names the priest at Nob who gave David the bread as Ahimelech. His son Abiathar escaped the massacre that followed (1 Samuel 22:20) and became David's high priest. The answers offered are these. John Wenham, in a 1950 note in the Journal of Theological Studies, argued that epi here means ‘at the passage about’, as Mark 12:26 uses epi tou batou, ‘at the passage about the bush’, so that Jesus names the section of Samuel associated with Abiathar. Others read ‘in the days of Abiathar’, who was present and later the better-known high priest, not as a claim that he officiated that day. Others note that the Old Testament itself swaps the two names (2 Samuel 8:17; 1 Chronicles 18:16; 24:6). Some scholars conclude that Mark or his source made an error; Bart Ehrman, in Misquoting Jesus (2005), recounts how this verse unsettled his own belief in the Bible's inerrancy. The Talmud (b. Menahot 95b) reasons that David's visit took place on a Sabbath, since the bread was changed on that day (Leviticus 24:8), which would make the precedent even closer.",
+      "ot": [
+        {
+          "ref": "1 Samuel 21:1-6",
+          "note": "David, fleeing Saul, asks Ahimelech the priest at Nob for bread; the only bread on hand is the holy bread, lechem happanim, ‘bread of the Presence’, and Ahimelech gives it after asking whether the young men have kept themselves from women. The Septuagint calls it artoi tou prosōpou. The story says nothing of a Sabbath or of any rebuke; Jesus uses it to show that Scripture allowed the priest to meet David's need with bread reserved for priests."
+        }
+      ],
+      "refs": ["1 Samuel 21:1-6", "1 Samuel 22:20", "Leviticus 24:5-9", "Mark 12:26", "2 Samuel 8:17"]
+    },
+    {
+      "v": "27",
+      "context": "Jesus states the principle behind the precedent. The Sabbath is a gift, created for human good; people were not created to serve it. Only Mark records this saying.",
+      "grammar": "To sabbaton dia ton anthrōpon egeneto, ‘the Sabbath came into being for the sake of man’: egeneto, the aorist of ginomai, points back to creation, when the seventh day was set apart (Genesis 2:2-3). Dia with the accusative gives the purpose, ‘for the sake of’. The saying is a chiasm, an A-B-B-A pattern: Sabbath, man; man, Sabbath.",
+      "words": ["G4521", "G1223", "G0444", "G1096"],
+      "history": "A close parallel appears in Jewish tradition. The Mekhilta, an early rabbinic commentary on Exodus, records Rabbi Simeon ben Menasya's comment on Exodus 31:14, that the Sabbath is handed over to you, and you are not handed over to the Sabbath; the Talmud repeats it (b. Yoma 85b) in a discussion of saving life on the Sabbath. Jesus' principle would have been familiar; his claim in the next verse was not.",
+      "theology": [
+        {
+          "id": "sabbath",
+          "note": "The Sabbath is a gift for human flourishing, rooted in creation. Jesus does not abolish it; he restores its purpose against a use that made it a burden."
+        }
+      ],
+      "refs": ["Genesis 2:2-3", "Exodus 20:8-11", "Deuteronomy 5:12-15", "Isaiah 58:13-14"]
+    },
+    {
+      "v": "28",
+      "context": "The conclusion goes beyond the principle. If the Sabbath was made for humanity, then the Son of Man, who represents humanity before God, has authority over it. The chapter ends on this claim, and the next scene (3:1-6) puts it to the test.",
+      "grammar": "Hōste, ‘so then’, draws a conclusion from verse 27. Kurios estin ho huios tou anthrōpou kai tou sabbatou, ‘the Son of Man is lord even of the Sabbath’: kai here means ‘even’, and kurios stands first for emphasis. Some scholars, Maurice Casey among them, have argued that in Aramaic ‘son of man’ here meant humanity in general, so that people are masters of the Sabbath. Mark's use of the title in 2:10 and throughout the Gospel makes it a claim about Jesus.",
+      "words": ["G5620", "G2962G", "G5207", "G0444", "G4521"],
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "The Sabbath was God's own institution, the sign of his covenant (Exodus 31:13). To be its lord is to claim the authority of the one who gave it."
+        },
+        {
+          "id": "law",
+          "note": "Jesus interprets the law as its master, not as a rival rabbi. Christians have drawn different conclusions from this for Sunday worship and Sabbath keeping, but all agree the verse makes Jesus the one who defines the day's meaning."
+        }
+      ],
+      "refs": ["Exodus 31:13", "Matthew 12:6-8", "Luke 6:5", "Hebrews 4:9-10", "Colossians 2:16-17"]
+    }
+  ]
+}

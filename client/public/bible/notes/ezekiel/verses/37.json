@@ -1,0 +1,270 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "The vision opens with the formulas of Ezekiel's great visions: the LORD's hand on the prophet, and the Spirit carrying him to a place. The place is ‘the valley’, with the definite article, and it is full of bones. The chapter's key word, ruach, appears in its first verse as the Spirit that moves the prophet.",
+      "grammar": "“The hand of the LORD was upon me” (hayetah ‘alai yad-YHWH) marks the onset of prophetic experience throughout Ezekiel (1:3; 3:22; 8:1; 40:1). Beruach YHWH, “by His Spirit” (literally ‘by the Spirit of the LORD’), describes being carried in vision, as in 3:12-14, 8:3, and 11:1, 24. Habbiq‘ah, ‘the valley’ or ‘the plain’, is the same word, with the article, as the plain where Ezekiel had seen God's glory and been struck mute at the start of his ministry (3:22-23; compare 8:4). The place of his commissioning becomes the place of a people's resurrection. The verse ends bluntly: vehi’ mele’ah ‘atsamot, ‘and it was full of bones’.",
+      "words": ["H3027H", "H3318H", "H7307G", "H5117", "H1237K", "H4392", "H6106G"],
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "The Spirit who will give life to the bones in verse 14 is first the Spirit who brings the prophet into the valley. The chapter begins and ends with God's Spirit acting: carrying the messenger, then raising the dead."
+        }
+      ],
+      "refs": ["Ezekiel 3:22-23", "Ezekiel 8:3", "Ezekiel 11:24", "1 Kings 18:12"]
+    },
+    {
+      "v": "2",
+      "context": "God leads the prophet all around among the bones so that he sees their number and their condition. The tour is deliberate: the prophet must take in the full extent of the death before he hears the question in verse 3.",
+      "grammar": "Vehe‘eviranni, ‘he made me pass’, is a causative (Hiphil): God is guiding Ezekiel's movement, as the guide will in the temple vision (47:2-4). The phrase saviv saviv, ‘around, around’, repeats for completeness. Two exclamations follow with vehinneh, ‘and look’: rabbot me’od, ‘very many’, and yeveshot me’od, ‘very dry’. The doubled me’od marks both quantity and condition as extreme; these are not the recently dead but the long dead.",
+      "words": ["H5674A", "H5439G", "H2009", "H7227A", "H3002", "H3966"],
+      "history": "For a priest, being led among bones was a serious matter: contact with human bones made a person unclean for seven days (Numbers 19:16). Ezekiel had protested at the prospect of defilement before (4:14). Here he simply reports it, perhaps because the vision itself is under God's direction, perhaps because the whole land has become a place of death.",
+      "refs": ["Numbers 19:16", "Ezekiel 4:14", "Jeremiah 8:1-2", "Psalm 141:7"]
+    },
+    {
+      "v": "3",
+      "context": "God asks the question on which the chapter turns: can these bones live? Ezekiel's answer neither affirms nor denies. He hands the question back to the only one who can answer it.",
+      "grammar": "Hatichyenah, ‘will they live?’, is an imperfect with the interrogative prefix; the BSB's “can these bones come to life?” brings out the sense of possibility. The verb chayah, ‘live’, becomes one of the chapter's refrains (verses 5, 6, 9, 10, 14). Ezekiel's reply puts the pronoun first: ’Adonai YHWH ’attah yada‘ta, ‘Lord GOD, you, you know’. The emphatic ’attah makes the answer a confession that the matter lies in God's knowledge and power, not the prophet's.",
+      "words": ["H2421", "H6106G", "H0136", "H3045"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Ezekiel's answer is a model of faith that does not presume. He does not say the bones will live, since nothing he sees suggests it; nor does he say they cannot, since God is asking. Faith here is trust placed in God's knowledge where human sight fails."
+        }
+      ],
+      "refs": ["Genesis 18:14", "Deuteronomy 32:39", "1 Samuel 2:6", "Romans 4:17"]
+    },
+    {
+      "v": "4-6",
+      "context": "Ezekiel is told to preach to the bones. The message is God's promise to rebuild the body in stages, tendons, flesh, skin, and then to put breath into it. Its goal is the recognition formula: then you will know that I am the LORD.",
+      "grammar": "The command is absurd on purpose: ha‘atsamot hayyeveshot shim‘u devar-YHWH, “Dry bones, hear the word of the LORD!” The dead are addressed as though they can hear, which is the point: God's word does not depend on its hearers' capacity. Hineh ’ani mevi’ vakhem ruach, ‘look, I am bringing breath into you’, uses a participle for an act about to begin. Verse 6 lists the stages as consecutive perfects, venatatti... veha‘aleti... veqaramti... venatatti, ‘I will put... bring up... cover... put’, reversing the order of decay. Ruach here is ‘breath’, the physical sign of life, though the same word will be ‘winds’ in verse 9 and ‘My Spirit’ in verse 14.",
+      "words": ["H5012", "H6106G", "H3002", "H8085G", "H0935G", "H7307H", "H1517", "H1320", "H7159", "H5785", "H2421"],
+      "text": "The Septuagint makes the theological thread explicit: in verse 5 it has ‘the breath of life’ (pneuma zōēs), and in verse 6 ‘I will give my Spirit (pneuma mou) into you’, anticipating verse 14.",
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "God's word creates what it commands. Preaching to the dead is not a futile act when God has promised to act through it. The chapter is the Old Testament's most vivid picture of the effective word, the same conviction as Isaiah 55:10-11."
+        }
+      ],
+      "refs": ["Job 10:11", "Psalm 139:13-16", "Isaiah 55:10-11", "Genesis 2:7"]
+    },
+    {
+      "v": "7-8",
+      "context": "Ezekiel obeys, and the first stage happens: a noise, a rattling, the bones joining, the tendons, flesh, and skin forming. But the verse ends with the vision's great pause: “there was no breath in them.” Rebuilt bodies are still corpses.",
+      "grammar": "Qol, ‘a sound’, and ra‘ash, ‘a rattling’, are the words used for the thunderous noise of the living creatures and the wheels in Ezekiel's first vision (3:12-13), and ra‘ash elsewhere means an earthquake (Amos 1:1). The Septuagint translates it seismos, ‘earthquake’. The bones come together ‘etsem ’el-‘atsmo, ‘bone to its bone’, each to its proper place. The last clause is disjunctive: veruach ’ein bahem, ‘but breath there was none in them’. The Hebrew fronts ruach, placing all the weight on what is missing.",
+      "words": ["H5012", "H6963H", "H7494", "H7126G", "H6106G", "H1517", "H1320", "H5785", "H7307H", "H0369"],
+      "theology": [
+        {
+          "id": "humanity",
+          "note": "The vision follows the order of Genesis 2:7, where God first forms the man from dust and then breathes life into him. A body without God's breath is not yet a living person. Scripture treats human life as body and breath together, both from God."
+        }
+      ],
+      "refs": ["Genesis 2:7", "Ezekiel 3:12-13", "Amos 1:1", "Ecclesiastes 12:7"]
+    },
+    {
+      "v": "9-10",
+      "context": "The second prophecy is addressed to the breath itself. Ezekiel calls it from the four winds to breathe into the slain, and they live and stand up, a vast army. The phrase ‘these slain’ shows that the valley is a battlefield where an army fell.",
+      "grammar": "Here the chapter plays its ruach wordplay at full strength. Hinnave’ ’el-haruach, ‘prophesy to the breath’; me’arba‘ ruchot, ‘from the four winds’ (the four directions, as in 42:20 and Daniel 7:2); bo’i haruach, ‘come, O breath’, a feminine imperative since ruach is usually feminine. The next verb, fechi, ‘breathe’ or ‘blow’, is from nafach, the verb of Genesis 2:7, where God ‘breathed’ into the man's nostrils. Baharugim, ‘into the slain’, is a passive participle of harag, ‘kill’: these died by violence. In verse 10 the army is chayil gadol me’od me’od, ‘a very, very great army’; me’od is doubled for the only time in the chapter.",
+      "words": ["H5012", "H7307H", "H0702", "H0935G", "H5301", "H2026", "H2421", "H5975G", "H2428A", "H3966"],
+      "history": "The vision became central to Jewish liturgy and art. Ezekiel 37:1-14 is the synagogue's prophetic reading (haftarah) for the Sabbath during Passover, joining the exodus to the hope of resurrection. The wall paintings of the third-century AD synagogue at Dura-Europos in Syria give it an extended panel. Among the Dead Sea Scrolls, a work scholars call Pseudo-Ezekiel (4Q385) retells the vision in answer to a question about how the righteous will be rewarded, reading it as bodily resurrection.",
+      "nt": [
+        {
+          "ref": "John 20:22",
+          "note": "On the evening of his resurrection Jesus ‘breathed on’ the disciples and said ‘Receive the Holy Spirit’. John's verb, enephysēsen, is the verb the Septuagint uses in Genesis 2:7 for God breathing life into Adam, and the Septuagint of Ezekiel 37:9 uses the same verb for the breath entering the slain (emphysēson). John presents the risen Christ doing what God does in both texts: giving the Spirit that makes a new people live."
+        },
+        {
+          "ref": "Revelation 11:11",
+          "note": "After the two witnesses lie dead, ‘the breath of life from God entered them, and they stood on their feet’. The wording follows the Septuagint of Ezekiel 37:5 and 37:10 (breath of life, entered them, stood on their feet), so that the vindication of God's witnesses is pictured as a new valley of dry bones."
+        }
+      ],
+      "refs": ["Genesis 2:7", "Psalm 104:29-30", "Job 33:4", "Daniel 7:2"]
+    },
+    {
+      "v": "11",
+      "context": "God explains the vision. The bones are the whole house of Israel, and he quotes the exiles' own lament back to Ezekiel: our bones are dried up, our hope has perished, we are cut off. The vision is God's answer to a proverb of despair.",
+      "grammar": "The people's saying is three short clauses, each with a first-person plural: yaveshu ‘atsmotenu, ‘our bones are dry’; ve’avedah tiqvatenu, ‘our hope is lost’; nigzarnu lanu, ‘we are cut off, as for us’. ’Avedah is the verb ’avad, ‘perish’ or ‘be lost’. Nigzar, ‘cut off’, is used of the dead in lament: the one ‘cut off from the land of the living’ (Isaiah 53:8), ‘cut off from your hand’ (Psalm 88:5), ‘I am cut off’ (Lamentations 3:54). The phrase ‘the whole house of Israel’ (kol-beit Yisra’el) includes north and south, the dead of 722 BC and of 586 BC, which prepares for the two sticks of verses 15-28.",
+      "words": ["H6106G", "H1004M", "H3001", "H0006", "H8615B", "H1504"],
+      "history": "Israel's national anthem, Hatikvah (‘The Hope’), written as a poem by Naftali Herz Imber in the late nineteenth century, answers this verse directly: its refrain declares that ‘our hope is not yet lost’, using the words of the exiles' lament, ’avedah tiqvatenu, in the negative.",
+      "theology": [
+        {
+          "id": "hope",
+          "note": "God takes the people's despair seriously enough to quote it exactly. Hope in the chapter is not the denial of the lament but God's answer to it: the bones really are dry, and God will raise them anyway."
+        }
+      ],
+      "refs": ["Isaiah 53:8", "Psalm 88:5", "Lamentations 3:54", "Ezekiel 33:10", "Isaiah 49:14"]
+    },
+    {
+      "v": "12-13",
+      "context": "The image shifts from a battlefield to a cemetery. God promises to open the graves of his people, bring them up, and bring them home. The address ‘My people’ appears twice, a word of belonging spoken to those who thought they were cut off.",
+      "grammar": "Hineh ’ani fotea‘, ‘look, I am opening’, is a participle for an imminent act, the same form as ‘I am bringing’ in verse 5. Qivrotekhem, ‘your graves’, is repeated four times across the two verses. The verb for bringing up, he‘elah (Hiphil of ‘alah), is the verb of the exodus, ‘I brought you up out of Egypt’ (Exodus 3:17; Amos 2:10), so the opened graves are a second exodus. ‘Ammi, ‘My people’, stands at the end of the clause in both verses, where it lands with weight.",
+      "words": ["H6605A", "H6913", "H5927H", "H5971A", "H0935P", "H0127G"],
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "In context the graves are the exile and the resurrection is the return. But the metaphor depends on the conviction that God can raise the dead, and it prepared the way for the explicit hope of Isaiah 26:19 and Daniel 12:2. Irenaeus (Against Heresies 5.15.1) and Tertullian (On the Resurrection of the Flesh) cited this passage against those who denied the body's resurrection. The Talmud (Sanhedrin 92b) records rabbis debating whether the dead of Ezekiel's valley were actually raised, one sage calling the vision a parable and others insisting it happened."
+        }
+      ],
+      "nt": [
+        {
+          "ref": "Matthew 27:52-53",
+          "note": "At Jesus' death, Matthew says, the tombs were opened and many bodies of the saints were raised, and after his resurrection they came out of the tombs. Many commentators hear this chapter behind the scene: the Septuagint of verse 12 reads ‘I am opening your tombs (mnēmata)’. Matthew presents Jesus' death and resurrection as the moment Ezekiel's promise begins to come true."
+        },
+        {
+          "ref": "John 5:28-29",
+          "note": "Jesus speaks of the hour when all who are in the tombs will hear his voice and come out. In Ezekiel the dead live when they hear the prophet speak God's word; in John they rise at the voice of the Son."
+        }
+      ],
+      "refs": ["Isaiah 26:19", "Daniel 12:2", "Hosea 13:14", "Exodus 3:17"]
+    },
+    {
+      "v": "14",
+      "context": "The interpretation closes by naming the breath: ‘I will put My Spirit in you, and you will live.’ The Spirit promised in 36:27 is now shown as the power of resurrection. The seal of the promise is God's word itself: I have spoken, and I will do it.",
+      "grammar": "Venatatti ruchi vakhem, ‘I will put my Spirit in you’, repeats verse 6 (‘I will put breath in you’) with one change, the suffix ‘my’. The ruach that was breath from the four winds is now identified as God's own Spirit. Vehinnachti, ‘I will settle you’ (a Hiphil of nuach, ‘rest’), is the verb that opened the chapter when the Spirit ‘set’ Ezekiel down in the valley (verse 1): the Spirit that set the prophet among the dead will set the living in the land. The closing formula, dibbarti ve‘asiti, joins speech and act, as in 36:36.",
+      "words": ["H5414H", "H7307G", "H2421", "H5117", "H1696G", "H6213A"],
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "The Spirit is here the giver of life, the role the Nicene Creed confesses when it names the Holy Spirit as Lord and giver of life. Ezekiel ties the Spirit to both the new heart (36:26-27) and the raising of the dead, the two works Paul joins when he says the Spirit who raised Jesus will give life to believers' mortal bodies (Romans 8:11)."
+        }
+      ],
+      "nt": [
+        {
+          "ref": "Romans 8:11",
+          "note": "Paul promises that the Spirit of the one who raised Jesus from the dead, dwelling in believers, will also give life to their mortal bodies. Ezekiel's sequence, the Spirit put within and then life for the dead, is Paul's sequence, now anchored in Christ's resurrection as the first instance."
+        }
+      ],
+      "refs": ["Ezekiel 36:27", "Ezekiel 39:29", "Romans 8:11", "2 Corinthians 3:6"]
+    },
+    {
+      "v": "15-17",
+      "context": "A new word from God begins a sign-act. Ezekiel is to take two sticks, write ‘Judah’ on one and ‘Joseph’ (the stick of Ephraim) on the other, and hold them together so they become one in his hand. The resurrection of the nation includes the healing of its oldest division.",
+      "grammar": "‘Ets means wood, and here a stick, rod, or perhaps a wooden writing board. Each receives a label with the preposition le, ‘belonging to’: liYhudah, ‘for Judah’, and leYosef, ‘for Joseph’. Chaverav, “associated with him”, is ‘his companions’, the other tribes that belonged with each kingdom (Benjamin, for example, with Judah, as 1 Kings 12:21 shows). Verse 17 repeats ’echad, ‘one’, four times: bring them ‘one to one’, into ‘one stick’, so they become la’achadim, a plural of ‘one’ (literally ‘into ones’), which may mean ‘united’ or ‘as one’.",
+      "words": ["H6086I", "H0259", "H3789", "H3063G", "H3130G", "H0669G", "H2270", "H7126G"],
+      "history": "Writing names on staffs has a precedent in Numbers 17:2-3, where Moses wrote the name of each tribal leader on his staff. Some scholars suggest the ‘sticks’ were wooden writing boards; hinged boards of wood and ivory, once coated with wax, were found in a well at Nimrud in Assyria in the 1950s. Either way the sign is simple and visual: two labeled pieces made to look like one in the prophet's fist. The Septuagint uses rhabdos, ‘rod’, the word of Numbers 17.",
+      "refs": ["Numbers 17:2-3", "Ezekiel 4:1-3", "Isaiah 11:13", "Hosea 1:11"]
+    },
+    {
+      "v": "18-20",
+      "context": "As with Ezekiel's other sign-acts, the people's question is part of the design (compare 12:9; 24:19). God's answer restates the sign as his own act: the stick of Joseph joined to the stick of Judah, one in God's hand.",
+      "grammar": "Halo’-taggid lanu, ‘will you not tell us?’, is the people's question, and it is the same form they used in 24:19. In God's explanation the joined stick becomes one ‘in My hand’ (beyadi), where verse 17 had said ‘in your hand’. The prophet's hand is the visible sign; God's hand is the reality. The participle loqeach, ‘I am taking’, again marks an act about to begin.",
+      "words": ["H5046", "H3947G", "H6086I", "H3130G", "H0669G", "H7626H", "H3027G", "H0259"],
+      "text": "The Septuagint reads verse 19 differently: ‘I will take the tribe of Joseph... and put them with the tribe of Judah, and they will become one rod in the hand of Judah’. Where the Hebrew has ‘in My hand’, the Greek puts the united people in Judah's hand, stressing the Davidic line of verses 24-25.",
+      "theology": [
+        {
+          "id": "church",
+          "note": "The unity promised is God's work, done in his hand, not a negotiated merger. The New Testament speaks the same way of the church: Christ has made Jew and Gentile one new people, breaking down the dividing wall (Ephesians 2:14-16), and Jesus prays that his people may be one (John 17:21)."
+        }
+      ],
+      "refs": ["Ezekiel 12:9", "Ezekiel 24:19", "John 11:52", "Ephesians 2:14-16", "John 17:21"]
+    },
+    {
+      "v": "21-22",
+      "context": "The meaning of the sign: God will gather Israel from the nations, bring them home, and make them one nation with one king. The division that began after Solomon will not happen again.",
+      "grammar": "The verbs repeat the gathering vocabulary of 36:24 (take, gather, bring). Verse 22 turns on ’echad, ‘one’, three times: goy ’echad, ‘one nation’; melekh ’echad, ‘one king’; and the negation ‘no longer two nations’ (lishnei goyim) and ‘no longer divided into two kingdoms’ (lishtei mamlakhot). Yechatsu, ‘they will be divided’, is a Niphal of chatsah, the verb for splitting something in two.",
+      "words": ["H3947G", "H6908", "H0935P", "H1471A", "H0259", "H4428G", "H8147", "H2673", "H4467"],
+      "history": "The kingdom divided around 930 BC, when the northern tribes rejected Rehoboam and made Jeroboam king (1 Kings 12:16-20). The two kingdoms then lived side by side for about two centuries, sometimes allied and often at war, until Assyria ended the north in 722 BC. Ezekiel, writing more than a century later, promises the restoration of both. The Septuagint, here and in verse 24, calls the future ruler archōn, ‘ruler’, rather than ‘king’, bringing it into line with Ezekiel's usual title nasi’ (verse 25).",
+      "theology": [
+        {
+          "id": "israel",
+          "note": "The prophets never gave up on the whole of Israel, north and south. Jesus' choice of twelve apostles (Matthew 19:28) and James's letter ‘to the twelve tribes’ (James 1:1) show the New Testament still thinking in terms of all Israel restored."
+        }
+      ],
+      "refs": ["1 Kings 12:16-20", "Jeremiah 3:18", "Hosea 1:11", "Isaiah 11:12-13", "Matthew 19:28"]
+    },
+    {
+      "v": "23",
+      "context": "The reunited people will be cleansed. They will no longer defile themselves with idols, God will save them from their sins and purify them, and the covenant formula will describe their relationship.",
+      "grammar": "Three words for what defiled them: gillulim (idols, Ezekiel's scornful term), shiqquts (detestable things, a word for idols and their rites), and pesha‘ (rebellion or transgression). Vehosha‘ti, ‘I will save’, is followed by vetiharti, ‘I will cleanse’, the same pair as 36:25, 29. The covenant formula here puts ‘they will be My people’ first, the order of 36:28.",
+      "words": ["H2930A", "H1544", "H8251", "H6588", "H3467", "H4186", "H2398", "H2891"],
+      "text": "The standard Hebrew text reads ‘from all their dwelling places (moshevotehem) in which they sinned’, which is awkward. Many scholars, and translations including the BSB (“from all their apostasies”), read meshuvotehem, ‘their backslidings’, a word that differs by the order of two letters and fits the context; Ezekiel's fellow prophet Jeremiah uses it often (Jeremiah 2:19; 3:22). The Septuagint has ‘from all their lawless deeds’, which supports a word for sin rather than for places.",
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "The rescue promised is from sins, not only from enemies. Restoration to the land is not enough; the people must be saved from what brought the exile in the first place."
+        }
+      ],
+      "refs": ["Ezekiel 36:25", "Ezekiel 36:29", "Jeremiah 3:22", "Titus 2:14"]
+    },
+    {
+      "v": "24",
+      "context": "God names the king of verse 22: ‘My servant David’. There will be one shepherd over all of them, and they will keep God's laws. The promise picks up Ezekiel 34:23-24, where the same David is the one shepherd who replaces Israel's failed rulers.",
+      "grammar": "‘Avdi David, ‘my servant David’, uses the title God gave David in 2 Samuel 7:5, 8, the chapter of the Davidic covenant. Ro‘eh ’echad, “one shepherd”, is a participle used as a noun; in the ancient Near East kings were commonly called shepherds of their people. The second half of the verse repeats the language of 36:27 (walk in my ordinances, keep my statutes, do them), so the obedience produced by the Spirit and the reign of David belong together.",
+      "words": ["H5650", "H1732", "H4428G", "H7462B", "H0259", "H4941G", "H2708", "H8104J"],
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "Ezekiel does not mean David himself returned from the dead but a king of David's line who will be what David was meant to be; Jeremiah 30:9 and Hosea 3:5 use the name the same way. Jewish tradition has commonly read these verses of the messianic king. The New Testament identifies him as Jesus, the Son of David (Luke 1:32-33), and Jesus takes up the ‘one shepherd’ language for himself (John 10:16)."
+        }
+      ],
+      "refs": ["Ezekiel 34:23-24", "2 Samuel 7:8", "Jeremiah 30:9", "Hosea 3:5", "John 10:16"]
+    },
+    {
+      "v": "25",
+      "context": "The land promise is restated with its oldest roots: the land God gave to Jacob, where the fathers lived. The people and their children and grandchildren will live there forever, and David will be their prince forever.",
+      "grammar": "The land is described as ‘given to my servant Jacob’, reaching back past the kingdoms to the patriarch whose name became the nation's name. The word ‘olam, ‘forever’, appears twice in this verse (‘ad-‘olam, le‘olam) and three more times by verse 28, five in all, marking the permanence of land, prince, covenant, and sanctuary. Here David is nasi’, “prince”, rather than melekh, ‘king’, as in verse 24. Nasi’ is Ezekiel's favored title for Israel's ruler (34:24; 44:3; 45:7), perhaps chosen to avoid the abuses associated with the monarchy while keeping David's line.",
+      "words": ["H3427", "H5650", "H3290", "H0001G", "H1121A", "H5769G", "H1732", "H5387A"],
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The permanence promised to David's line in 2 Samuel 7:16 is here renewed after the monarchy had collapsed. The Old Testament's hope for God's kingdom is tied to a ruler of David's line who reigns forever, the hope announced to Mary in Luke 1:32-33."
+        }
+      ],
+      "refs": ["2 Samuel 7:16", "Ezekiel 34:24", "Ezekiel 45:7-8", "Luke 1:32-33"]
+    },
+    {
+      "v": "26",
+      "context": "God will make a covenant of peace, an everlasting covenant, and set his sanctuary among them forever. The promise gathers up the covenant language of Ezekiel 34 and 36 and points ahead to the temple vision of chapters 40-48.",
+      "grammar": "Berit shalom, ‘covenant of peace’, recurs in 34:25 and Isaiah 54:10, and first appears in Numbers 25:12, God's covenant with the priest Phinehas. Shalom is wholeness and security, not merely the absence of war. Berit ‘olam, ‘everlasting covenant’, is used of God's covenants with Noah (Genesis 9:16), Abraham (Genesis 17:7), and David (2 Samuel 23:5). Venatatti ’et-miqdashi betokham, ‘I will set my sanctuary in their midst’, uses miqdash, ‘holy place’, from the root qadash, and points to the temple Ezekiel will see in chapters 40-48.",
+      "words": ["H3772H", "H1285", "H7965G", "H5769G", "H5414H", "H7235A", "H4720", "H8432"],
+      "text": "The phrase “I will establish them and multiply them” is literally ‘I will give them and I will multiply them’, an awkward Hebrew clause that translations smooth in different ways. The Septuagint lacks it, passing directly from the everlasting covenant to the sanctuary.",
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "Ezekiel's covenant of peace is the same future covenant Jeremiah calls new (Jeremiah 31:31). The two prophets name different sides of it: Jeremiah the law on the heart and forgiveness, Ezekiel the Spirit, peace, and God's dwelling."
+        },
+        {
+          "id": "temple",
+          "note": "The climax of restoration is not the land or the king but God's sanctuary among his people. The book will end with the city's new name, ‘The LORD Is There’ (48:35)."
+        }
+      ],
+      "refs": ["Ezekiel 34:25", "Isaiah 54:10", "Numbers 25:12", "Genesis 17:7", "Ezekiel 48:35"]
+    },
+    {
+      "v": "27",
+      "context": "God's dwelling will be with them, and the covenant formula is spoken one last time in the chapter. The goal of everything in chapters 36-37 is God living with his people.",
+      "grammar": "Mishkani, ‘my dwelling place’, is the word for the tabernacle (Exodus 25:9), the tent in which God lived among Israel in the wilderness. ‘Alehem can mean ‘with them’ or ‘over them’; some interpreters hear the cloud of glory that rested over the tabernacle (Exodus 40:34-38). The covenant formula here puts God first: ‘I will be their God, and they will be My people’, the order of Leviticus 26:12. The Septuagint renders mishkan with kataskēnōsis, ‘encampment’ or ‘tenting’, from the same family as skēnē, ‘tent’.",
+      "words": ["H4908", "H0430G", "H5971A", "H1961"],
+      "theology": [
+        {
+          "id": "temple",
+          "note": "The tabernacle word announces that God's presence will again be among his people as it was in the wilderness, now forever. The New Testament uses the same tent language for the incarnation, the church, and the new creation."
+        }
+      ],
+      "nt": [
+        {
+          "ref": "2 Corinthians 6:16",
+          "note": "Paul quotes a combination of this verse and Leviticus 26:12: ‘I will dwell with them and walk among them, and I will be their God, and they will be My people’. He applies it to the church: ‘we are the temple of the living God’. The sanctuary Ezekiel promised is fulfilled in a community in whom God lives by his Spirit, so Paul calls them to separate from idols (6:16-7:1), the same demand as Ezekiel 37:23."
+        },
+        {
+          "ref": "Revelation 21:3",
+          "note": "The voice from the throne announces that ‘the dwelling place (skēnē) of God is with man, and He will dwell with them. They will be His people’. John uses the Greek word family the Septuagint used here and the covenant formula of this verse to describe the final fulfillment. John 1:14, ‘the Word became flesh and dwelt (eskēnōsen) among us’, uses the same verb for the incarnation."
+        }
+      ],
+      "refs": ["Exodus 25:8-9", "Leviticus 26:11-12", "John 1:14", "Zechariah 2:10-11"]
+    },
+    {
+      "v": "28",
+      "context": "The chapter's last word addresses the nations: they will know that the LORD is the one who sanctifies Israel, when his sanctuary is among them forever. The profaned name of chapter 36 is vindicated by a holy people with God at their center.",
+      "grammar": "’Ani YHWH meqaddesh ’et-Yisra’el, ‘I the LORD am the one who sanctifies Israel’, uses a Piel participle as a title. The phrase comes from the Holiness Code, ‘I am the LORD who sanctifies you’ (Leviticus 20:8; 21:8; 22:32), and from the Sabbath law (Exodus 31:13). Israel's holiness is God's doing, and the sign of it will be the sanctuary in their midst. Bihyot, ‘when it is’, ties the nations' recognition to the permanent presence (le‘olam, ‘forever’, the fifth use in four verses).",
+      "words": ["H3045", "H1471A", "H6942G", "H4720", "H8432", "H5769G"],
+      "history": "The second half of this chapter, verses 15-28, is the synagogue's prophetic reading (haftarah) for the Torah portion Vayigash (Genesis 44:18-47:27), in which Judah and Joseph, estranged brothers, are reconciled. The rabbis paired the story of the two brothers with the prophecy of the two sticks labeled with their names.",
+      "theology": [
+        {
+          "id": "holiness",
+          "note": "Holiness in this verse is something God gives, not something Israel achieves. The same God who is profaned by his people's sin (36:20) is displayed as holy by his presence in a people he has cleansed."
+        }
+      ],
+      "refs": ["Leviticus 20:8", "Exodus 31:13", "Ezekiel 36:23", "1 Thessalonians 5:23"]
+    }
+  ]
+}

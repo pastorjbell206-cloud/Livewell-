@@ -1,0 +1,501 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "The promised day arrives. Luke has told the reader that the disciples were to wait in Jerusalem for the Father's promise (1:4-5), and that about a hundred and twenty of them were praying together (1:14-15). Now they are all together in one place on the day of the feast.",
+      "grammar": "En tō sumplērousthai tēn hēmeran tēs pentēkostēs is literally ‘when the day of Pentecost was being fulfilled’. Sumplēroō is the verb Luke used in Luke 9:51 for the days of Jesus' being taken up being fulfilled, and it suggests an appointed time reaching its completion, not merely a date on a calendar. The construction en tō with an infinitive is a favorite of Luke's for setting a scene. Homou epi to auto, ‘together in the same place’, doubles the idea of unity; epi to auto becomes almost a technical phrase for the gathered church in these chapters (1:15, 2:44, 2:47).",
+      "words": ["G4845", "G2250", "G4005", "G3674"],
+      "history": "Pentecost, Greek for ‘fiftieth’, is the Feast of Weeks, counted seven weeks from the offering of the first sheaf at Passover (Leviticus 23:15-16). Greek-speaking Jews already called it Pentecost before Acts (Tobit 2:1, 2 Maccabees 12:32). The Book of Jubilees, from the second century BC, makes the Feast of Weeks the annual renewal of God's covenant (Jubilees 6:17-21), and the Babylonian Talmud records the view that it is the day the Torah was given at Sinai (b. Pesachim 68b), since Exodus 19:1 places Israel's arrival at Sinai in the third month. How widely the Sinai link was made in the first century is uncertain, but Luke's account of a heavenly sound and fire gathering many nations has led many readers to hear an echo of Sinai.",
+      "ot": [
+        {
+          "ref": "Leviticus 23:15-21",
+          "note": "The Law commands Israel to count fifty days from the day after the Sabbath of the Passover offering and then bring a new grain offering, two loaves baked with leaven, as firstfruits to the LORD. The Septuagint follows the Hebrew and speaks of counting ‘fifty days’. Luke does not quote the passage, but the feast's character as a firstfruits offering from the new harvest gives weight to the three thousand gathered at the end of the chapter."
+        }
+      ],
+      "refs": ["Acts 1:4-5", "Acts 1:14", "Leviticus 23:15-16", "Deuteronomy 16:9-12", "Exodus 19:1"]
+    },
+    {
+      "v": "2-3",
+      "context": "Two signs come from heaven: a sound like a violent wind that fills the house, and what look like tongues of fire that divide and rest on each person. Luke carefully says ‘like’ both times; he describes what was heard and seen without claiming that a literal wind blew or literal fire burned.",
+      "grammar": "Ēchos, ‘sound’ or ‘roar’, comes ek tou ouranou, ‘from heaven’, the marker of divine origin. Hōsper pheromenēs pnoēs biaias, ‘as of a violent wind being borne along’, uses pnoē, ‘breath’ or ‘wind’, a word related to pneuma, so the sign already hints at the Spirit it announces. In verse 3 ōphthēsan, an aorist passive, ‘appeared’, is the verb used in the Septuagint for appearances of God (Genesis 12:7). Diamerizomenai, ‘being distributed’, describes the fire dividing so that a tongue rests on each one; ekathisen, ‘sat’, is singular, one tongue on each person.",
+      "words": ["G2279", "G4157", "G0972", "G3624G", "G3700H", "G1266", "G1100", "G4442"],
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "Wind and fire are Old Testament signs of God's presence (Exodus 3:2, 19:18; Ezekiel 37:9). Their coming on each person, not on the group as a whole or on the apostles alone, says that the Spirit now rests on every member of the community, as he rested on Jesus at his baptism."
+        }
+      ],
+      "history": "Philo of Alexandria, writing earlier in the first century, describes the giving of the Ten Commandments as a voice from heaven out of fire, the flame becoming articulate speech in the language of the hearers (On the Decalogue 46). A later rabbinic tradition says that each word from Sinai divided into seventy languages, the traditional number of the nations (b. Shabbat 88b). Luke does not mention Sinai, but readers who knew such traditions would have heard the resemblance: heavenly sound, fire, and speech that reaches every language.",
+      "refs": ["Luke 3:16", "Exodus 19:16-19", "Ezekiel 37:9-10", "John 3:8", "Isaiah 5:24"]
+    },
+    {
+      "v": "4",
+      "context": "The event itself: all are filled with the Holy Spirit and begin to speak in other languages as the Spirit enables them. The following verses make clear that these are real languages, recognized by people who speak them.",
+      "grammar": "Eplēsthēsan, an aorist passive of pimplēmi, ‘they were filled’, is the verb Luke uses for the Spirit's coming on someone for a moment of inspired speech (Luke 1:41, 1:67; Acts 4:8, 4:31). He uses a different word, plērēs, ‘full’, for a lasting quality of character (Acts 6:3, 6:5, 11:24). Ērxanto lalein, ‘began to speak’, marks a beginning. Heterais glōssais, ‘in other tongues’, means languages other than their own. Kathōs to pneuma edidou apophthengesthai autois, ‘as the Spirit kept giving them to speak out’, has an imperfect, edidou, for the Spirit's continuing enabling, and apophthengomai, a word for solemn or inspired utterance, which Luke uses again for Peter's sermon in verse 14.",
+      "words": ["G4130", "G4151G", "G0757", "G2087", "G1100", "G1325", "G0669"],
+      "theology": [
+        {
+          "id": "gifts",
+          "note": "The first gift of the Spirit in Acts is speech about God's works in languages the speakers did not know. Christians differ on whether the tongues of 1 Corinthians 12-14, which needed interpretation, are the same gift, and on whether such gifts continue today; the chapter note sets out the main positions."
+        },
+        {
+          "id": "spirit",
+          "note": "The Spirit is the giver of the speech. The disciples do not produce the gift and then ascribe it to God; Luke says the Spirit kept giving them the words."
+        }
+      ],
+      "refs": ["Acts 1:8", "Acts 10:44-46", "Acts 19:6", "1 Corinthians 14:21", "Luke 24:49"]
+    },
+    {
+      "v": "5-6",
+      "context": "Luke turns to the audience. Devout Jews from every nation were living in Jerusalem, and when the sound occurred a crowd gathered, confused because each heard the believers speaking in his own language.",
+      "grammar": "Katoikountes, ‘dwelling’, usually means settled residents, in contrast to epidēmountes, ‘visiting’, in verse 10; many in the crowd were diaspora Jews who had moved to Jerusalem, as well as pilgrims. Eulabeis, ‘devout’ or ‘reverent’, is Luke's word for pious Jews (Luke 2:25 of Simeon). Apo pantos ethnous tōn hupo ton ouranon, ‘from every nation under heaven’, is deliberate hyperbole. In verse 6 sunechuthē, ‘was confounded’, is from suncheō, the verb the Septuagint uses at Babel, where God confused the language of the whole earth (Genesis 11:7, 11:9). Dialektos means a spoken language or dialect.",
+      "words": ["G2730", "G2126", "G1484", "G5456H", "G4797", "G1258"],
+      "ot": [
+        {
+          "ref": "Genesis 11:7-9",
+          "note": "At Babel God confuses the people's language so that they cannot understand one another, and scatters them. The Hebrew verb is balal, ‘mix, confuse’, and the Septuagint renders it with suncheō, the verb Luke uses for the crowd's confusion here. Luke does not cite Babel, but the echo is widely noticed: at Babel one language became many and understanding failed; at Pentecost many languages carry one message and understanding returns. The Spirit does not undo the variety of languages but makes each of them a vehicle for God's praise."
+        }
+      ],
+      "text": "Codex Sinaiticus lacks the word Ioudaioi, ‘Jews’, in verse 5. Some interpreters have argued that the shorter text is original and that Luke meant devout people of every nation, Gentiles included; most editors keep ‘Jews’, which is in nearly all manuscripts and fits verse 11, where the crowd is described as Jews and proselytes.",
+      "refs": ["Genesis 11:7-9", "Luke 2:25", "Deuteronomy 2:25", "Acts 8:2"]
+    },
+    {
+      "v": "7-8",
+      "context": "The crowd's amazement is put into words: these speakers are Galileans, yet each hearer hears his native language. The question introduces the list of nations that follows.",
+      "grammar": "Existanto and ethaumazon are imperfects, ‘they were beside themselves and kept marveling’. The question begins with ouch, which expects a yes: ‘Aren't all these who are speaking Galileans?’ Hapantes, a strengthened form of pantes, ‘all of them’, is one of Luke's favorite words. Verse 8 puts hēmeis, ‘we’, first, and describes the language as hē idia dialektos hēmōn en hē egennēthēmen, ‘our own language in which we were born’, a mother tongue.",
+      "words": ["G1839", "G2296", "G1057", "G1258", "G1080"],
+      "history": "Galileans were known by their speech. Matthew 26:73 has bystanders recognize Peter by his accent, and later rabbinic texts poke fun at Galileans for confusing guttural sounds (b. Eruvin 53b). A Galilean fisherman would have spoken Aramaic and probably some Greek; he would not be expected to speak Parthian or Coptic.",
+      "refs": ["Matthew 26:73", "Acts 1:11", "Acts 4:13"]
+    },
+    {
+      "v": "9-11",
+      "context": "The list of peoples is the crowd's own summary of where they come from. It sweeps from the east (Parthia, Media, Elam, Mesopotamia), through Judea and Asia Minor, to Egypt and Libya in the south and Rome in the west, and ends with Cretans and Arabs. Its point is the whole Jewish world, and through it the nations, hearing ‘the wonders of God’ in their own languages.",
+      "grammar": "The grammar shifts partway through: first the peoples are named (Parthoi, Mēdoi, Elamitai), then katoikountes, ‘residents of’, is followed by a string of regions in the accusative, and finally the Romans are hoi epidēmountes, ‘the visiting ones’. Ioudaioi te kai prosēlutoi, ‘both Jews and proselytes’, may describe all the groups or only the Romans; it names the two kinds of people who belonged to Israel, those born Jewish and Gentile converts. The object of their hearing is ta megaleia tou theou, ‘the great deeds of God’, the language of praise for God's mighty acts (Psalm 71:19 in the Septuagint, and Mary's ‘great things’ in Luke 1:49).",
+      "words": ["G3934", "G3370", "G1639", "G2730", "G1927", "G4514", "G4339", "G3167"],
+      "history": "Several names on the list are notable. The Parthians ruled an empire east of the Euphrates that Rome never conquered, and many Jews had lived in Babylonia since the exile. Elam had ceased to exist as a kingdom centuries earlier; the name is biblical (Isaiah 11:11 lists Elam among the places from which God will gather his people). Cyrene in Libya had a large Jewish community (Mark 15:21, Acts 6:9, 11:20), and Josephus quotes Strabo on the Jews of Cyrene (Antiquities 14.115). Philo, in a letter he presents as King Agrippa's to the emperor Gaius, lists Jewish settlements across the Mediterranean world, including Egypt, Pamphylia, Asia, Bithynia, and Pontus (On the Embassy to Gaius 281-282), a list that overlaps with Luke's. ‘Arabs’ probably means the Nabataeans, whose kingdom lay east and south of Judea.",
+      "text": "‘Judea’ in verse 9 is surprising in a list of foreign peoples, and it breaks the geographical order. Some early Christian writers read another name (Tertullian has Armenia), and modern scholars have proposed several emendations. No Greek manuscript supports them, and many interpreters take Judea in its wider sense, the land from Egypt to Syria, or read it as the center from which the list radiates.",
+      "refs": ["Genesis 10:32", "Isaiah 11:11", "Isaiah 66:18-19", "Acts 6:9", "Luke 1:49"]
+    },
+    {
+      "v": "12-13",
+      "context": "The crowd divides. Some ask what this means; others mock and say the speakers are drunk. The two reactions set up Peter's speech, which answers both.",
+      "grammar": "Diēporoun, ‘they were at a loss’, is an imperfect of continuing perplexity. Ti thelei touto einai is literally ‘what does this want to be?’, an idiom for ‘what does this mean?’. The mockers use gleukos, ‘sweet wine’ or ‘new wine’, and the perfect passive participle memestōmenoi, ‘they have been filled up’, a sardonic counterpart to ‘filled with the Holy Spirit’ in verse 4.",
+      "words": ["G1839", "G1280", "G2309", "G6017", "G1098", "G3325"],
+      "history": "The grape harvest came in late summer, so at Pentecost, in May or June, there was no newly pressed wine; gleukos may simply mean sweet wine, which could be kept for a time. The taunt was a way of dismissing ecstatic speech, and Paul uses the same contrast in Ephesians 5:18: not drunk with wine, but filled with the Spirit.",
+      "refs": ["Ephesians 5:18", "1 Samuel 1:13-15", "Acts 17:32"]
+    },
+    {
+      "v": "14-15",
+      "context": "Peter stands with the Eleven and addresses the crowd. He first answers the mockers: these men are not drunk, since it is only nine in the morning. The man who denied Jesus in a courtyard now speaks for him before thousands.",
+      "grammar": "Statheis, an aorist passive participle of histēmi, ‘standing up’, suggests the formal posture of a speaker. Epēren tēn phōnēn autou, ‘lifted up his voice’, and apephthegxato, ‘declared’, the same verb used of the Spirit-given speech in verse 4, present Peter's sermon as inspired utterance too. Gnōston estō, ‘let it be known’, is a third person imperative, and enōtisasthe, ‘give ear to’, is a Septuagint word formed from ous, ‘ear’, used in calls to hear (Joel 1:2).",
+      "words": ["G2476", "G1733", "G1869", "G0669", "G1110", "G1801", "G5154", "G5610"],
+      "history": "The third hour, counting from sunrise, was about nine in the morning, the time of the morning offering and prayer at the temple. A festival crowd would not ordinarily be drinking so early; Peter treats the suggestion as absurd rather than arguing it at length.",
+      "refs": ["Luke 22:54-62", "Acts 1:26", "Joel 1:2", "Acts 3:1"]
+    },
+    {
+      "v": "16",
+      "context": "Peter's thesis: ‘this is what was spoken by the prophet Joel’. What the crowd sees and hears is the fulfillment of Scripture, and the long quotation that follows explains it.",
+      "grammar": "Touto estin to eirēmenon, ‘this is what has been spoken’, uses a perfect passive participle: the prophecy stands on record, and ‘this’ (the event before them) is its fulfillment. The formula ‘this is that’ resembles the way the Dead Sea Scrolls' commentaries apply prophecy to their own time, with a phrase meaning ‘its interpretation concerns’ (pishro, in the Habakkuk Commentary, 1QpHab). Both treat ancient prophecy as speaking directly to the interpreter's present.",
+      "words": ["G3778", "G2046", "G4396", "G2493"],
+      "history": "Joel's date is disputed because the book names no king. Many scholars place it after the exile, in the Persian period, on the grounds that it mentions no king and assumes the temple is standing; others date it earlier. Its central theme is the Day of the LORD, announced through a locust plague, followed by a call to return to God and promises of restoration, of which the outpouring of the Spirit is the climax.",
+      "refs": ["Joel 2:28-32", "Luke 24:44", "Acts 3:18", "1 Peter 1:10-12"]
+    },
+    {
+      "v": "17-18",
+      "context": "The quotation begins. God promises to pour out his Spirit on all people: sons and daughters, young and old, and even servants, men and women, and they will prophesy. Peter applies the promise to the believers on whom the Spirit has just come.",
+      "grammar": "Ekcheō, ‘I will pour out’, is a future of the verb for pouring liquid, a picture of abundance. Apo tou pneumatos mou, ‘from my Spirit’, follows the Septuagint's partitive ‘from’ (the Hebrew has simply ‘my Spirit’), which suggests that each receives a share of the one Spirit. Epi pasan sarka, ‘on all flesh’, means all people. The list of those who receive uses parallel pairs, and the verb prophēteusousin, ‘they will prophesy’, frames it. In verse 18 the particle ge, ‘even’, and the repeated mou, ‘my’, stress the surprising inclusion of servants.",
+      "words": ["G2078", "G1632", "G4151G", "G4561", "G4395", "G2364", "G3495", "G4245H", "G1401"],
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "In the Old Testament the Spirit came on particular people: prophets, judges, kings, craftsmen. Joel promised a day when the Spirit would come on all God's people without distinction of sex, age, or status, and Peter says that day has come."
+        },
+        {
+          "id": "gifts",
+          "note": "The gift named is prophecy, speech from God, given to daughters and maidservants as well as sons and menservants. Luke shows women prophesying (Luke 2:36, Acts 21:9). How this bears on women's roles in the church's offices is a second-order question on which faithful churches differ."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Joel 2:28-29",
+          "note": "In the Hebrew Bible these verses open chapter 3 (Joel 3:1-2), and the Septuagint follows that numbering. The Hebrew begins ‘and afterward’ (acharei chen), the Septuagint ‘after these things’ (meta tauta); Peter's wording is ‘in the last days’ (en tais eschatais hēmerais), a phrase from Isaiah 2:2 in the Septuagint, which identifies the time of fulfillment as the final age. Codex Vaticanus of Acts keeps Joel's ‘after these things’, but nearly all other witnesses read ‘in the last days’. Peter adds ‘God says’ to mark the words as God's, reverses the order of old men and young men so that visions come before dreams, adds ‘my’ to the servants (the Hebrew and Septuagint have simply ‘the servants’), which makes them God's servants, and adds at the end of verse 18 ‘and they will prophesy’, underlining the gift he is explaining. In Joel ‘all flesh’ is Israel (‘your sons and your daughters’); Peter's closing words in verse 39 extend it to those far off."
+        },
+        {
+          "ref": "Numbers 11:29",
+          "note": "When two elders prophesy in the camp, Moses says he wishes all the LORD's people were prophets and that the LORD would put his Spirit on them. Joel's promise answers Moses' wish, and Pentecost is Luke's account of its fulfillment."
+        }
+      ],
+      "refs": ["Isaiah 2:2", "Numbers 11:29", "Isaiah 44:3", "Ezekiel 39:29", "Acts 21:9"]
+    },
+    {
+      "v": "19-21",
+      "context": "The quotation continues with cosmic signs before the Day of the Lord, and ends with the promise that gives the sermon its direction: everyone who calls on the name of the Lord will be saved. The rest of the speech identifies the Lord on whose name they must call.",
+      "grammar": "Dōsō terata, ‘I will give wonders’, uses didōmi in the Hebrew sense of ‘set’ or ‘show’. Peter's text pairs terata en tō ouranō anō, ‘wonders in the heaven above’, with sēmeia epi tēs gēs katō, ‘signs on the earth below’; the words anō, sēmeia, and katō are not in Joel. Atmida kapnou, ‘vapor of smoke’, is the Septuagint's rendering of the Hebrew ‘columns of smoke’. In verse 21 pas hos an epikalesētai, ‘everyone who calls’, is an indefinite relative clause with an aorist subjunctive, open to any person, and sōthēsetai, a future passive, ‘will be saved’, names God as the savior.",
+      "words": ["G1325", "G5059", "G0507", "G4592", "G2736", "G0822", "G2016", "G1941", "G2962G", "G4982"],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "The promise is universal in form, ‘everyone who calls’, and specific in object, the name of the Lord. Peter's sermon will show that the Lord in question is Jesus (verse 36), and Paul quotes the same verse to the same effect (Romans 10:13)."
+        },
+        {
+          "id": "judgment",
+          "note": "The Day of the Lord is the day of God's final judgment and rescue. Peter sets his hearers within the last days, between the Spirit's outpouring and that day, as the time in which to call on the Lord."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Joel 2:30-32",
+          "note": "In the Hebrew these are Joel 3:3-5. The Hebrew calls the Day of the LORD ‘great and awesome’ (hannora); the Septuagint has ‘great and manifest’ (epiphanē), probably reading the Hebrew consonants as a form of ‘to see’ (nirah), and Acts follows the Septuagint. Peter adds ‘above’ and ‘below’ and the word ‘signs’, pairing wonders and signs, which he then uses for Jesus' miracles in verse 22 and which Luke uses for the apostles' miracles in verse 43. In Joel ‘the LORD’ is the divine name, YHWH; Peter applies the call on that name to Jesus. He stops before the rest of Joel 2:32, which promises deliverance on Mount Zion ‘among the survivors whom the LORD calls’, but echoes those words in verse 39. Interpreters differ on the cosmic signs: some link them to the darkness at the crucifixion (Luke 23:44-45), others place them before the final day, and others read them as the stock imagery of prophetic poetry for God's intervention."
+        }
+      ],
+      "refs": ["Romans 10:13", "Luke 23:44-45", "Luke 21:25-27", "Acts 2:43", "Zephaniah 1:14-15"]
+    },
+    {
+      "v": "22",
+      "context": "The second part of the sermon begins with a new address, ‘Men of Israel’, and a summary of Jesus' ministry: a man accredited by God through miracles, wonders, and signs that God did through him in their midst, as they themselves know.",
+      "grammar": "Iēsoun ton Nazōraion, ‘Jesus the Nazarene’, is the name by which he was known and crucified (John 19:19). Andra apodedeigmenon apo tou theou, ‘a man attested by God’, uses a perfect passive participle of apodeiknumi, ‘to show, demonstrate, publicly appoint’: God himself had given his credentials. The three nouns dunamesin, terasin, sēmeiois, ‘powers, wonders, signs’, pick up Joel's ‘wonders’ and ‘signs’ from verse 19. The relative clause says God did them di' autou, ‘through him’: Peter begins with Jesus as a man through whom God acted, and ends (verse 36) with him as Lord.",
+      "words": ["G2475", "G3480", "G0584", "G1411", "G5059", "G4592", "G6063"],
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "Peter's first description of Jesus is ‘a man’. The church's confession of Jesus' deity, which the sermon reaches in verses 34-36, never removes the plain fact of his humanity that the first witnesses knew."
+        }
+      ],
+      "refs": ["Acts 10:38", "Luke 24:19", "John 3:2", "Hebrews 2:4", "Luke 4:18"]
+    },
+    {
+      "v": "23",
+      "context": "Peter names the crucifixion and holds two truths together: Jesus was handed over by God's fixed plan and foreknowledge, and the hearers killed him by the hands of lawless men. Neither truth cancels the other.",
+      "grammar": "Tē hōrismenē boulē kai prognōsei tou theou, ‘by the determined plan and foreknowledge of God’, puts the two nouns under one article, presenting them as one divine purpose. Hōrismenē, a perfect passive participle of horizō, ‘to fix a boundary, determine’, stresses that the plan was settled. Ekdoton, ‘handed over’, is a verbal adjective found only here in the New Testament. Dia cheiros anomōn, ‘by the hand of lawless men’, means people outside the law of Moses, the Roman soldiers who carried out the execution. Prospēxantes, ‘fastening’ (to the cross), also occurs only here, and aneilate, ‘you killed’, is the second person plural: the charge is addressed to the hearers.",
+      "words": ["G3724", "G1012", "G4268", "G1560", "G0459", "G4362", "G0337"],
+      "theology": [
+        {
+          "id": "sovereignty",
+          "note": "The cross happened by God's settled plan, and the people who brought it about are still guilty. The verse does not explain how divine purpose and human responsibility fit together, and Christian traditions explain it differently; it simply refuses to let either be denied."
+        },
+        {
+          "id": "atonement",
+          "note": "By saying the crucifixion was planned by God, Peter tells the crowd that Jesus' death was not a failure or accident but the center of God's saving purpose, as Luke 24:26 had said: the Messiah had to suffer."
+        }
+      ],
+      "refs": ["Acts 4:27-28", "Luke 22:22", "Luke 24:26", "1 Peter 1:20", "Isaiah 53:10"]
+    },
+    {
+      "v": "24",
+      "context": "The turn: God raised him. Peter's first proclamation of the resurrection in Acts gives a reason: it was impossible for death to keep hold of him. The quotation of Psalm 16 that follows explains why.",
+      "grammar": "Hon ho theos anestēsen, ‘whom God raised’, answers the hearers' ‘you killed’ in verse 23: human verdict, divine reversal. Lusas tas ōdinas tou thanatou, ‘loosing the pangs of death’, mixes images: ōdines are the pains of childbirth, and ‘loosing’ fits bonds. The mixture comes from the Old Testament phrase behind it (see below). Kathoti ouk ēn dunaton krateisthai auton hup' autou, ‘because it was not possible for him to be held by it’, uses krateō, ‘to hold fast, overpower’. The impossibility is grounded in who Jesus is and in the Scripture that follows.",
+      "words": ["G0450", "G3089", "G5604", "G2288", "G1415", "G2902"],
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "The resurrection is God's act (‘God raised’) and God's verdict on the one the court condemned. Death's hold on Jesus is described as something that could not last."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Psalm 18:4-5",
+          "note": "David says the cords of death entangled him and the cords of Sheol surrounded him. The Hebrew chevlei mavet can be read as ‘cords of death’ or ‘pangs of death’, since the consonants chbl serve both chevel, ‘cord’, and chevel, ‘birth pang’. The Septuagint chose ōdines thanatou, ‘pangs of death’, here and in Psalm 116:3, and Peter's phrase follows it, which explains the mixed image of loosing pangs."
+        }
+      ],
+      "text": "Codex Bezae and some Latin and Syriac witnesses read ‘the pangs of Hades’ instead of ‘the pangs of death’, probably under the influence of Hades in verse 27.",
+      "refs": ["Psalm 116:3", "Acts 3:15", "Acts 13:30", "Romans 6:9", "Revelation 1:18"]
+    },
+    {
+      "v": "25-26",
+      "context": "Peter quotes Psalm 16 as David's words ‘about him’, the Messiah. The psalmist speaks of keeping the Lord before him, of the Lord at his right hand, and of a heart and tongue that rejoice and a body that rests in hope.",
+      "grammar": "Dauid gar legei eis auton, ‘for David says with reference to him’: eis marks the psalm as speaking about Jesus. Proorōmēn, an imperfect middle, ‘I kept seeing before me’, describes a steady fixing of attention on the Lord. Hina mē saleuthō, ‘so that I may not be shaken’, is a purpose clause with an aorist passive subjunctive. In verse 26, the verbs ēuphranthē and ēgalliasato, ‘was glad’ and ‘rejoiced’, are aorists, and hē sarx mou kataskēnōsei ep' elpidi, ‘my flesh will dwell in hope’, uses kataskēnoō, to pitch a tent or settle, a picture of the body resting securely.",
+      "words": ["G1138", "G4308", "G2962G", "G1188", "G4531", "G1100", "G4561", "G2681", "G1680"],
+      "ot": [
+        {
+          "ref": "Psalm 16:8-9",
+          "note": "In the Hebrew the psalmist says ‘I have set the LORD always before me’ (shiviti, a perfect: a settled choice); the Septuagint (Psalm 15 in its numbering) has proorōmēn, ‘I saw beforehand’, and Acts follows it word for word. In verse 9 the Hebrew says ‘my glory rejoices’ (kevodi), which may mean the psalmist's inner self; the Septuagint has ‘my tongue’, and Acts follows. The Hebrew ends the verse ‘my flesh will dwell securely’ (lavetach); the Septuagint has ep' elpidi, ‘in hope’. In its original setting the psalm is a prayer of trust in which the psalmist refuses other gods and finds his refuge in the LORD. Peter reads its confidence in the LORD's presence as the voice of the Messiah."
+        }
+      ],
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "Peter reads David's psalm as spoken by or about the Messiah, David's descendant. He does not treat the psalm as a general expression of piety but as a prophecy that finds its full meaning only in Jesus."
+        }
+      ],
+      "refs": ["Psalm 16:8-11", "Acts 13:35", "Psalm 110:5", "Luke 24:44"]
+    },
+    {
+      "v": "27-28",
+      "context": "The heart of the quotation: God will not abandon the speaker's soul to Hades or let his Holy One see decay, and he has made known the paths of life. Peter's argument in verses 29-31 rests on these lines.",
+      "grammar": "Ouk enkataleipseis tēn psuchēn mou eis hadēn, ‘you will not abandon my soul to Hades’: eis with Hades can mean ‘into’ or simply ‘in’, abandoned there. Psuchē here means the person or life, not a detached soul, the Hebrew nefesh. Oude dōseis ton hosion sou idein diaphthoran, ‘nor will you give your Holy One to see decay’, uses dōseis in the Hebrew sense of ‘allow’. Hosios, ‘holy one’ or ‘faithful one’, renders the Hebrew chasid, a person bound to God in covenant loyalty. In verse 28 egnōrisas, an aorist, ‘you made known’, and plērōseis, a future, ‘you will fill’, hold past assurance and future joy together.",
+      "words": ["G1459", "G5590G", "G0086", "G3741", "G1312", "G1107", "G2222", "G4137", "G2167"],
+      "ot": [
+        {
+          "ref": "Psalm 16:10-11",
+          "note": "The Hebrew says ‘you will not abandon my soul to Sheol’ and ‘you will not let your faithful one see shachat’. Shachat means ‘the pit’, the grave, in parallel with Sheol, though some Hebrew lexicons allow a sense ‘corruption’; the Septuagint renders it diaphthora, ‘decay’, and Peter's argument that David's body decayed while Jesus' did not leans on that wording. The Hebrew consonants for ‘your faithful one’ are written as a plural, ‘your faithful ones’, while the Masoretic scribes' reading tradition (the qere) is singular; the Septuagint and Acts are singular. In verse 11 the Hebrew todi'eni, ‘you make known to me’, is imperfect, the path (singular) of life; the Septuagint and Acts have an aorist and the plural ‘paths’. Acts ends the quotation before the psalm's last line, ‘pleasures at your right hand forevermore’, perhaps because Psalm 110 will supply the right hand in verse 34."
+        }
+      ],
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "The psalm's hope that God would not abandon his faithful one to the grave is read as a promise of bodily resurrection: not escape from death but rescue from its decay. Peter's argument is about the body in the tomb."
+        }
+      ],
+      "refs": ["Acts 13:34-37", "Job 19:25-26", "Psalm 49:15", "Luke 23:43", "Psalm 16:11"]
+    },
+    {
+      "v": "29-31",
+      "context": "Peter argues from the psalm. David died, was buried, and his tomb is still in Jerusalem, so the psalm cannot be fulfilled in him. David was a prophet who knew God's oath to set one of his descendants on his throne, and he foresaw and spoke of the Messiah's resurrection.",
+      "grammar": "Exon eipein meta parrēsias, ‘it is permitted to say with boldness’, introduces a plain statement of fact. Parrēsia, ‘boldness’ or ‘frankness of speech’, becomes a mark of the apostles' preaching in Acts (4:13, 4:29, 4:31). Ton patriarchēn, ‘the patriarch’, is an honorific not otherwise used of David in Scripture. Verse 30 grounds David's prophecy in knowledge: prophētēs huparchōn kai eidōs, ‘being a prophet and knowing’. Horkō ōmosen, ‘swore with an oath’, is a Hebrew-style emphatic construction, a verb with its own noun. In verse 31 proidōn, ‘foreseeing’, and elalēsen peri tēs anastaseōs tou Christou, ‘he spoke about the resurrection of the Christ’, make the psalm prophecy, not coincidence; ‘Christ’ here is a title, ‘the Messiah’.",
+      "words": ["G3954", "G3966", "G3418", "G4396", "G3727", "G3660", "G2590", "G3751", "G4308", "G0386"],
+      "history": "The tomb of David was shown in Jerusalem. Nehemiah 3:16 mentions the tombs of David near the Pool of Siloam, in the City of David. Josephus says that the Hasmonean high priest John Hyrcanus opened one chamber of David's tomb and took three thousand talents of silver (Antiquities 7.393, 13.249), and that Herod the Great later entered it looking for more treasure (Antiquities 16.179-183). The traditional ‘Tomb of David’ on the modern Mount Zion dates from the Middle Ages and is not the tomb Peter meant. Jewish tradition before Peter already called David a prophet: the Psalms Scroll from Qumran says David composed his many songs through prophecy given him by the Most High (11Q5 27:11).",
+      "ot": [
+        {
+          "ref": "Psalm 132:11",
+          "note": "The LORD swore an oath to David that he would set one from the fruit of David's body on his throne. The Hebrew mipri vitnekha, ‘of the fruit of your womb’, becomes in the Septuagint (Psalm 131:11) ek karpou tēs koilias sou. Acts has ek karpou tēs osphuos autou, ‘of the fruit of his loins’, close to the psalm but not a quotation, and it draws also on God's promise through Nathan in 2 Samuel 7:12-13 to raise up David's offspring and establish his throne forever. Peter's point is that the oath required a descendant who would reign forever, which a dead king could not do."
+        }
+      ],
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "The Messiah is David's heir to whom God swore an everlasting throne. Peter argues that the resurrection is the way that oath is kept: an eternal throne requires a king who does not stay dead."
+        }
+      ],
+      "text": "Later manuscripts, followed by the King James Version, add in verse 30 ‘according to the flesh, he would raise up Christ’, spelling out the reference to the Messiah. The earliest manuscripts lack the words. In verse 31 the same later witnesses read ‘his soul was not left in hell’, harmonizing with verse 27.",
+      "refs": ["2 Samuel 7:12-16", "Nehemiah 3:16", "1 Kings 2:10", "Acts 13:36-37", "Luke 1:32-33"]
+    },
+    {
+      "v": "32",
+      "context": "The conclusion of the first argument, stated plainly: God raised this Jesus, and the apostles are all witnesses of it. Scripture and eyewitness testimony now stand together.",
+      "grammar": "Touton ton Iēsoun, ‘this Jesus’, comes first for emphasis, pointing back to the man of verse 22. Hou pantes hēmeis esmen martures, ‘of which we all are witnesses’, uses the relative hou, which can refer to Jesus (‘of whom’) or to the fact of the resurrection (‘of which’). Martus, ‘witness’, is Luke's key word for the apostles (1:8, 1:22), who must be able to testify to the risen Jesus from personal knowledge.",
+      "words": ["G0450", "G3144"],
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "The resurrection is presented as an event with witnesses, not as a private experience or a symbol. The apostles' authority in Acts rests on their being witnesses of it (1:22)."
+        }
+      ],
+      "refs": ["Acts 1:8", "Acts 1:22", "Acts 3:15", "1 Corinthians 15:3-8", "Luke 24:48"]
+    },
+    {
+      "v": "33",
+      "context": "The second step: the risen Jesus has been exalted to God's right hand, has received the promised Spirit from the Father, and has poured out what the crowd now sees and hears. The event they are witnessing is the proof of his enthronement.",
+      "grammar": "Tē dexia oun tou theou hupsōtheis can be read ‘exalted to the right hand of God’ (a dative of place, pointing forward to Psalm 110) or ‘exalted by the right hand of God’ (a dative of means, as in Psalm 118:16 in the Septuagint, ‘the right hand of the Lord exalted me’). Both are grammatically possible, and the next verses support the first. Tēn te epangelian tou pneumatos tou hagiou, ‘the promise of the Holy Spirit’, is a genitive of content: the promise consists in the Spirit (1:4). Labōn para tou patros, ‘having received from the Father’, and execheen, ‘he poured out’, the same verb Joel used of God, give to Jesus the act that Joel ascribed to God. Blepete kai akouete, ‘you see and hear’, appeals to the crowd's own senses.",
+      "words": ["G1188", "G5312", "G1860", "G2983", "G3962", "G1632", "G0991", "G0191"],
+      "theology": [
+        {
+          "id": "exaltation",
+          "note": "Jesus is exalted to the place of shared rule with God. Luke will narrate the same scene from heaven in Stephen's vision of the Son of Man standing at God's right hand (7:55-56)."
+        },
+        {
+          "id": "trinity",
+          "note": "The Father gives the promised Spirit to the exalted Son, and the Son pours the Spirit out on his people. The verse names all three persons and their distinct roles in a single act, which later theology would describe as the Spirit sent by the Father through the Son."
+        },
+        {
+          "id": "spirit",
+          "note": "The Spirit's coming is the exalted Christ's gift. The Spirit does not replace Jesus but comes from him and testifies to his reign."
+        }
+      ],
+      "refs": ["Acts 1:4", "Acts 5:31", "Acts 7:55-56", "John 15:26", "John 16:7"]
+    },
+    {
+      "v": "34-35",
+      "context": "The third scriptural proof: David did not ascend to heaven, yet he says, ‘The Lord said to my Lord, Sit at My right hand.’ The one who ascended and sits at God's right hand must be someone other than David, David's Lord.",
+      "grammar": "Ou gar Dauid anebē eis tous ouranous, ‘for David did not ascend into the heavens’, contrasts David with the one who did (verse 33). Legei de autos, ‘but he himself says’, stresses that David is the speaker. In the quotation eipen ho kurios tō kuriō mou, ‘the Lord said to my Lord’, the same Greek word renders two different Hebrew words. Kathou, ‘sit’, is a present imperative; heōs an thō, ‘until I set’, uses an aorist subjunctive with an for an indefinite future. Hupopodion tōn podōn sou, ‘a footstool for your feet’, is the image of complete victory.",
+      "words": ["G1138", "G0305", "G2962G", "G2521", "G1188", "G5087", "G2190", "G5286"],
+      "ot": [
+        {
+          "ref": "Psalm 110:1",
+          "note": "The Hebrew reads neum YHWH ladoni, ‘the declaration of the LORD to my lord’: the divine name for the first Lord, and adon, ‘master’ or ‘lord’, a title used of kings and of God, for the second. The Septuagint (Psalm 109:1) renders both with kurios, eipen ho kurios tō kuriō mou, and Acts follows the Septuagint exactly. In its original setting the psalm is a royal oracle in which God enthrones the Davidic king at his right hand and promises victory over his enemies. Jesus himself used the verse to ask how the Messiah could be both David's son and David's Lord (Luke 20:41-44). It is the Old Testament text most often quoted or echoed in the New Testament, as David Hay showed in Glory at the Right Hand (1973)."
+        }
+      ],
+      "theology": [
+        {
+          "id": "exaltation",
+          "note": "Sitting at God's right hand is not rest from work but the place of rule. The enemies are still being subdued, so the church lives in the time between enthronement and final victory (1 Corinthians 15:25)."
+        }
+      ],
+      "refs": ["Luke 20:41-44", "Hebrews 1:13", "1 Corinthians 15:25", "Ephesians 1:20-22", "Mark 14:62"]
+    },
+    {
+      "v": "36",
+      "context": "The sermon's conclusion, addressed to all Israel: God has made this Jesus, whom you crucified, both Lord and Christ. The final words, ‘whom you crucified’, return the charge to the hearers and set up their response.",
+      "grammar": "Asphalōs oun ginōsketō, ‘therefore let it be known with certainty’: oun, ‘therefore’, draws the conclusion from the three Scriptures; asphalōs, ‘assuredly’, recalls Luke's stated aim in Luke 1:4, that Theophilus might know the asphaleia, the certainty, of what he was taught. Pas oikos Israēl, ‘all the house of Israel’, is a Septuagint phrase (Ezekiel 37:11). Kai kurion auton kai christon epoiēsen ho theos, ‘God has made him both Lord and Christ’, puts the titles first for emphasis. ‘Made’ here does not mean Jesus became Lord or Messiah only at the resurrection, since Luke's own Gospel calls him ‘Christ the Lord’ at his birth (Luke 2:11); it means God has installed and publicly declared him in these offices. The sentence ends with hon humeis estaurōsate, ‘whom you crucified’, the emphatic humeis placing the hearers inside the story.",
+      "words": ["G0806", "G1097", "G3624H", "G2474", "G2962G", "G5547", "G4160G", "G4717"],
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "Jesus is the Christ, the anointed king promised to David. The crucified man is God's chosen king, which overturns the expectation that the Messiah could not be crucified."
+        },
+        {
+          "id": "exaltation",
+          "note": "‘Lord’ in this sermon is the title of the one on whom Joel said all must call (verse 21). By applying it to the exalted Jesus, Peter places him where Israel's Scripture placed God, while still distinguishing him from the God who made him Lord."
+        }
+      ],
+      "refs": ["Luke 1:4", "Luke 2:11", "Philippians 2:9-11", "Romans 1:4", "Acts 10:36"]
+    },
+    {
+      "v": "37",
+      "context": "The hearers are cut to the heart and ask Peter and the apostles what they should do. The question marks the turn from proclamation to response.",
+      "grammar": "Katenugēsan tēn kardian, ‘they were pierced in the heart’, uses katanussō, a verb found only here in the New Testament, meaning to stab or pierce, and the accusative of respect, ‘as to the heart’. The Septuagint uses the same verb for the brokenhearted (Psalm 109:16). Ti poiēsōmen, ‘what shall we do?’, is a deliberative subjunctive, and it is the question the crowds asked John the Baptist (Luke 3:10). Andres adelphoi, ‘brothers’, shows that the hearers now address the apostles as kin.",
+      "words": ["G2660", "G2588", "G0652", "G4160G"],
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "Repentance begins with the recognition of guilt that the truth produces, not with self-improvement. The crowd's question comes from conviction, and the answer Peter gives is not a program but a turn toward God."
+        }
+      ],
+      "refs": ["Luke 3:10-14", "Acts 16:30", "Zechariah 12:10", "Acts 5:33"]
+    },
+    {
+      "v": "38",
+      "context": "Peter's answer: repent, and let each of you be baptized in the name of Jesus Christ for the forgiveness of your sins, and you will receive the gift of the Holy Spirit. The verse gathers the sermon's threads: calling on the name (verse 21), the Spirit poured out (verse 33), and the crucified Jesus as Lord (verse 36).",
+      "grammar": "Metanoēsate is an aorist imperative in the second person plural, ‘repent, all of you’. Baptisthētō hekastos humōn is an aorist passive imperative in the third person singular, ‘let each of you be baptized’, which personalizes the command. Epi tō onomati Iēsou Christou, ‘upon the name of Jesus Christ’, identifies the one into whose authority and allegiance the person is baptized (Westcott and Hort, following Codex Vaticanus, read en, ‘in the name’). The phrase eis aphesin tōn hamartiōn humōn, ‘for the forgiveness of your sins’, is the center of a long debate. Eis ordinarily expresses purpose or goal, ‘with a view to’. Julius Mantey argued in the Journal of Biblical Literature (1951) that eis can be causal, ‘because of’, and Ralph Marcus replied in the same journal (1951-1952) that none of his examples held; most grammarians side with Marcus. Others note the shift in person and number: ‘repent’ and ‘your sins’ are plural, ‘be baptized’ singular, so some attach forgiveness chiefly to repentance, while others answer that the commands are joined by kai and belong together. The same phrase eis aphesin hamartiōn is used of John's baptism of repentance (Luke 3:3) and of Jesus' blood (Matthew 26:28). The final clause, lēmpsesthe tēn dōrean tou hagiou pneumatos, is a future indicative, a promise, and the genitive is appositional: the gift that is the Holy Spirit.",
+      "words": ["G3340", "G0907", "G1538", "G3686", "G0859", "G0266", "G2983", "G1431", "G4151G"],
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "Repentance is the first word of the church's first call. Metanoia in the New Testament is a change of mind that turns the whole person, rooted in the prophets' call to return (shuv) to the LORD."
+        },
+        {
+          "id": "sacraments",
+          "note": "The verse ties baptism to forgiveness and to the Spirit, and the traditions read the tie differently: as the means through which God grants both (Catholic, Orthodox, Lutheran), as the appointed moment of forgiveness for a penitent believer (Stone-Campbell churches), as the sign and seal joined to what it signifies (Reformed), or as the commanded public sign of a forgiveness received by repentance and faith (Baptist and many evangelicals). The chapter note sets these out; each tradition affirms that forgiveness is God's free gift through Christ."
+        },
+        {
+          "id": "salvation",
+          "note": "Forgiveness of sins and the gift of the Spirit are the two blessings Peter promises. The same pair runs through the prophets' picture of the new covenant (Jeremiah 31:34, Ezekiel 36:25-27)."
+        }
+      ],
+      "refs": ["Luke 3:3", "Luke 24:47", "Acts 3:19", "Acts 10:43-48", "Acts 22:16"]
+    },
+    {
+      "v": "39",
+      "context": "The promise of the Spirit is for the hearers, their children, and all who are far away, as many as the Lord our God will call. Peter's horizon reaches beyond the crowd in front of him, though he himself will need the vision of Acts 10 to see how far it extends.",
+      "grammar": "Humin gar estin hē epangelia, ‘for to you is the promise’: gar grounds the command of verse 38 in God's promise, the same word used in verse 33 for the promised Spirit. Tois teknois humōn means ‘your children’ or ‘your descendants’. Pasin tois eis makran, ‘to all those far off’, uses the adverb makran as a noun. Hosous an proskalesētai, ‘as many as he may call’, is an indefinite relative clause with an aorist subjunctive; proskaleomai, ‘to summon to oneself’, names God's initiative.",
+      "words": ["G1860", "G5043", "G3112", "G4341", "G2962G"],
+      "ot": [
+        {
+          "ref": "Joel 2:32",
+          "note": "Joel's sentence ends ‘among the survivors whom the LORD calls’ (Hebrew 3:5, uvasserydim asher YHWH qore). The Septuagint has hous kurios proskeklētai, ‘whom the Lord has called’, using the verb Peter uses here. Peter had stopped his quotation at ‘will be saved’ in verse 21; now he completes Joel's thought, so that God's call answers the human calling on the Lord's name."
+        },
+        {
+          "ref": "Isaiah 57:19",
+          "note": "God proclaims peace ‘to those far and near’. The Hebrew larachoq velaqqarov becomes in the Septuagint tois makran kai tois engus, and Peter's ‘those far off’ uses the same adverb. Paul applies the same verse to Gentiles brought near through Christ (Ephesians 2:13, 2:17). Whether Peter already has Gentiles in view or Jews of the dispersion is debated; Luke's story will show the promise reaching both."
+        }
+      ],
+      "theology": [
+        {
+          "id": "election",
+          "note": "The promise is universal in reach and rests on God's call. Christians differ on how that call relates to human response, but the verse places God's summons at the source of the church's growth."
+        },
+        {
+          "id": "covenant",
+          "note": "‘You and your children’ echoes the covenant language God used with Abraham (Genesis 17:7). Churches that baptize infants see here the continuity of the covenant's family shape; churches that baptize believers only note that the promise is joined to God's call and to repentance."
+        }
+      ],
+      "refs": ["Genesis 17:7", "Ephesians 2:13-17", "Acts 10:45", "Romans 8:30", "Acts 3:25-26"]
+    },
+    {
+      "v": "40",
+      "context": "Luke summarizes: Peter said much more, testifying and urging them to be saved from this crooked generation. The speech recorded is a summary, not a transcript.",
+      "grammar": "Heterois te logois pleiosin, ‘with many other words’, signals that Luke has given the core of a longer address. Diemarturato, ‘he solemnly testified’, is a strengthened form of martureō. Parekalei, an imperfect, ‘he kept exhorting’. Sōthēte is an aorist passive imperative, ‘be saved’: the command is to let oneself be rescued, since the saving is God's act. Apo tēs geneas tēs skolias tautēs, ‘from this crooked generation’, uses skolios, ‘crooked’, the opposite of the straight way.",
+      "words": ["G1263", "G3870", "G4982", "G1074", "G4646"],
+      "ot": [
+        {
+          "ref": "Deuteronomy 32:5",
+          "note": "In the Song of Moses, Israel is called a ‘crooked and twisted generation’; the Hebrew dor iqqesh uftaltol becomes in the Septuagint genea skolia kai diestrammenē. Peter borrows skolia. The echo places Peter's generation alongside the wilderness generation that grieved God, and it offers a way out of that generation's judgment. Paul uses the same phrase in Philippians 2:15."
+        }
+      ],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "Salvation is described as rescue from a generation, a whole way of life under judgment, not only from individual sins. The passive voice makes it something received."
+        }
+      ],
+      "refs": ["Deuteronomy 32:5", "Philippians 2:15", "Luke 9:41", "Psalm 78:8"]
+    },
+    {
+      "v": "41",
+      "context": "Those who received Peter's word were baptized, and about three thousand persons were added that day. The first harvest of the church is gathered on the feast of the firstfruits.",
+      "grammar": "Hoi men oun apodexamenoi ton logon autou, ‘so those who welcomed his word’, uses apodechomai, ‘to receive gladly’, a verb found in the New Testament only in Luke and Acts. Ebaptisthēsan and prosetethēsan, ‘were baptized’ and ‘were added’, are aorist passives; the second is a divine passive, since verse 47 says the Lord did the adding. Psuchai, ‘souls’, means persons, in the Hebrew sense of nefesh. Hōsei trischiliai, ‘about three thousand’, is an approximate number.",
+      "words": ["G0588", "G3056", "G0907", "G4369", "G5590J", "G5153"],
+      "history": "Excavations around the southern and western sides of the Temple Mount and in the City of David have uncovered many stepped ritual immersion pools from the Second Temple period, and the Pool of Siloam, reexcavated from 2004, was a large public pool with steps. Jerusalem had the water for mass immersion at festival time. Some interpreters note that at Sinai, after the golden calf, about three thousand people died (Exodus 32:28), and see a deliberate contrast with three thousand given life on the feast later linked with the law; Luke does not draw the connection himself.",
+      "theology": [
+        {
+          "id": "church",
+          "note": "The church is formed by people who receive the word and are baptized into the community. From its first day, belonging to Christ and belonging to his people go together."
+        }
+      ],
+      "refs": ["Acts 4:4", "Acts 8:12", "Exodus 32:28", "1 Thessalonians 2:13"]
+    },
+    {
+      "v": "42",
+      "context": "The first of Luke's summaries of the church's life. The new believers devoted themselves to four things: the apostles' teaching, the fellowship, the breaking of bread, and the prayers.",
+      "grammar": "Ēsan de proskarterountes, ‘they were devoting themselves’, is a periphrastic imperfect describing persistent, ongoing practice; proskartereō is used of the disciples' persistence in prayer in 1:14. Each of the four nouns has the article: tē didachē tōn apostolōn, tē koinōnia, tē klasei tou artou, tais proseuchais. The definite articles suggest particular, recognizable practices: the apostles' teaching, the common life, the breaking of the bread, and ‘the prayers’, which may include the set Jewish prayers at the temple, since the apostles go up at the hour of prayer in 3:1. Some read the four as two pairs, teaching with fellowship and bread with prayers.",
+      "words": ["G4342", "G1322", "G0652", "G2842", "G2800", "G0740", "G4335"],
+      "theology": [
+        {
+          "id": "church",
+          "note": "The church's life is built on apostolic teaching, shared life, the breaking of bread, and prayer. The list describes what the Spirit-filled community did, and it has served churches of every tradition as a picture of their own gatherings."
+        },
+        {
+          "id": "sacraments",
+          "note": "‘The breaking of the bread’ may mean the Lord's Supper, the common meal, or both, since in the earliest church the Supper was eaten within a meal (1 Corinthians 11:20-26). Luke used the phrase for the risen Jesus being known in the breaking of bread (Luke 24:35)."
+        },
+        {
+          "id": "prayer",
+          "note": "Prayer is not an addition to the church's life but one of its four foundations, continuing the prayer that preceded Pentecost (1:14)."
+        }
+      ],
+      "refs": ["Acts 1:14", "Acts 20:7", "Luke 24:30-35", "1 Corinthians 10:16-17", "1 John 1:3"]
+    },
+    {
+      "v": "43",
+      "context": "Awe came on everyone, and many wonders and signs were done through the apostles. The ‘wonders and signs’ Joel promised (verse 19), which God did through Jesus (verse 22), now continue through his apostles.",
+      "grammar": "Egineto, an imperfect, ‘kept coming’, describes a continuing sense of awe. Pasē psuchē, ‘every soul’, means everyone. Phobos in Luke-Acts often means reverent awe at God's action (Luke 5:26, 7:16). Terata kai sēmeia, ‘wonders and signs’, repeats the pair from verses 19 and 22, and dia tōn apostolōn, ‘through the apostles’, marks them as the instruments, not the source.",
+      "words": ["G1096", "G5590J", "G5401", "G5059", "G4592", "G0652"],
+      "theology": [
+        {
+          "id": "fear-of-god",
+          "note": "The fear here is awe before God's evident presence. It is the fitting response to the holy, the same response the crowds had to Jesus' miracles (Luke 5:26)."
+        }
+      ],
+      "refs": ["Acts 5:11-12", "Luke 5:26", "Acts 4:30", "Hebrews 2:4"]
+    },
+    {
+      "v": "44-45",
+      "context": "The believers were together and held everything in common, selling possessions and distributing to anyone in need. Luke returns to the practice in 4:32-37 and shows its abuse in 5:1-11.",
+      "grammar": "Eichon hapanta koina, ‘they had all things common’, uses the imperfect for a continuing practice. In verse 45 epipraskon and diemerizon, ‘they were selling’ and ‘they were distributing’, are also imperfects, and kathoti an tis chreian eichen, ‘as anyone had need’, makes the distribution depend on need as it arose. The grammar describes repeated sales over time, not a single liquidation of all property; 4:34-37 and 12:12 show believers still owning houses.",
+      "words": ["G4100", "G2192", "G0537", "G2839H", "G2933", "G5223", "G4097", "G1266", "G5532"],
+      "history": "Greek writers had a proverb that friends have all things in common, which Aristotle quotes (Nicomachean Ethics 8.9), and Luke's wording would have sounded to Greek readers like the ideal friendship of the philosophers realized. Among Jews, the Community Rule from Qumran required members to hand their property over to the community (1QS 6:19-22). The Jerusalem church's practice seems to have been voluntary (5:4). Deuteronomy's hope that there would be no poor among God's people (Deuteronomy 15:4) is echoed directly in Acts 4:34.",
+      "theology": [
+        {
+          "id": "justice-poor",
+          "note": "The Spirit's first effects in Acts include material generosity. Care for the needy is not an optional outgrowth of the church but part of its common life from the beginning."
+        },
+        {
+          "id": "wealth",
+          "note": "Possessions are held for the sake of others' need. Luke does not command a single economic system, but he shows the Spirit loosening believers' grip on property."
+        }
+      ],
+      "refs": ["Acts 4:32-35", "Acts 5:4", "Deuteronomy 15:4", "Luke 12:33", "2 Corinthians 8:13-15"]
+    },
+    {
+      "v": "46-47",
+      "context": "The summary ends with the church's daily rhythm: in the temple courts together, breaking bread in homes, eating with gladness and simplicity of heart, praising God, and having favor with all the people. The Lord added to their number daily those being saved.",
+      "grammar": "Kath' hēmeran, ‘day by day’, frames the two verses (it recurs in verse 47). Homothumadon, ‘with one mind’, is almost entirely a word of Acts, where it occurs ten of its eleven New Testament times. En tō hierō, ‘in the temple’, and kat' oikon, ‘house by house’, name the two settings of the church's life. Aphelotēti kardias, ‘simplicity of heart’, uses a noun found only here in the New Testament, meaning singleness or sincerity. In verse 47, echontes charin pros holon ton laon, ‘having favor with all the people’, uses charis in the sense of goodwill. Ho de kurios prosetithei, an imperfect, ‘the Lord kept adding’, and tous sōzomenous, a present passive participle, ‘those being saved’, describe salvation as God's ongoing work in people.",
+      "words": ["G4342", "G3661", "G2411", "G2806", "G0740", "G0020", "G0858", "G0134", "G5485", "G4369", "G4982"],
+      "theology": [
+        {
+          "id": "worship",
+          "note": "The first believers kept worshiping at the temple and ate together at home. Their praise of God is joyful and daily, tied to ordinary meals as well as to the temple's hours of prayer."
+        },
+        {
+          "id": "church",
+          "note": "The church grows because the Lord adds to it. Luke credits the growth to Christ, not to the apostles' strategy, and describes the saved as those being added to the community."
+        },
+        {
+          "id": "salvation",
+          "note": "The present participle ‘being saved’ presents salvation as God's continuing work in those who have believed, from forgiveness now to rescue on the Day of the Lord."
+        }
+      ],
+      "text": "In place of epi to auto, ‘together’, at the end of verse 47, the later Byzantine manuscripts read tē ekklēsia, ‘to the church’, and move epi to auto to the start of 3:1; the King James Version follows them (‘the Lord added to the church daily such as should be saved’). The earliest manuscripts do not use the word church here; Luke first uses ekklēsia for the believers in 5:11.",
+      "refs": ["Acts 3:1", "Acts 5:42", "Acts 5:11", "Luke 24:52-53", "1 Corinthians 1:18"]
+    }
+  ]
+}

@@ -1,0 +1,302 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "The chapter is dated by an event: the death of Nadab and Abihu, Aaron's two eldest sons, who died when they approached the LORD with fire he had not commanded (10:1-2). Chapters 11 to 15 on clean and unclean intervene, and now the story resumes with the question their deaths raised: how can anyone come near the holy God and live?",
+      "grammar": "Acharey mot, ‘after the death of’, gives the chapter's name in Jewish tradition, since the synagogue reading that begins here is called Acharei Mot. Beqorvatam lifney-YHWH, ‘when they drew near before the LORD’, uses qarav, the verb of approach that runs through Leviticus for bringing offerings (the noun qorban, ‘offering’, comes from it). The same verb describes both legitimate worship and the fatal approach of Aaron's sons, so the whole chapter is about the right way to do what they did wrongly.",
+      "words": ["H4194", "H7126G", "H4191", "H6440G"],
+      "text": "The Masoretic Text says simply that Aaron's sons died ‘when they drew near before the LORD’. The Septuagint reads ‘when they offered strange fire before the Lord’, supplying the detail from 10:1, and some Aramaic Targums expand the verse in the same direction. The shorter Hebrew is almost certainly original, with the Greek clarifying the reference.",
+      "refs": ["Leviticus 10:1-3", "Numbers 3:4", "Exodus 19:21-22", "Hebrews 12:28-29"]
+    },
+    {
+      "v": "2",
+      "context": "God's first word is a prohibition: Aaron may not enter the Most Holy Place whenever he wishes, or he will die, because God appears in the cloud above the mercy seat. Only after the warning does the chapter say how and when he may enter.",
+      "grammar": "Ve'al-yavo vekhol-et, ‘and let him not come at any time’, uses al with the jussive, a direct prohibition, and bekhol-et, ‘at every time’, meaning at will. The BSB's ‘freely’ captures the sense. Mibbeit lapparokhet, ‘within the curtain’, uses parokhet, the heavy woven curtain that screened the inner room (Exodus 26:31-33). El-peney hakkapporet, ‘before the mercy seat’, names the gold lid of the ark (see the chapter note on kapporet). Ki be'anan era'eh, ‘for in the cloud I appear’, is a Niphal (‘I let Myself be seen’) of ra'ah. The cloud may be the cloud of God's glory that filled the tabernacle (Exodus 40:34-35) or the cloud of incense Aaron is to raise (verse 13), and the difference became the subject of a famous dispute (see verses 12 and 13).",
+      "words": ["H0408", "H6256", "H6532", "H3727", "H6051", "H7200G"],
+      "history": "Jacob Milgrom argued in his Leviticus commentary that verses 2 to 28 once described a purification rite the high priest could perform when the sanctuary needed it, and that verses 29 to 34 fixed it to one day a year. Others read the chapter as a unity from the start. On either view, the canonical chapter restricts entry to the tenth day of the seventh month (verse 29), and verse 34 insists on ‘once a year’.",
+      "theology": [
+        {
+          "id": "temple",
+          "note": "The inner room is the place where God's presence is focused on earth, above the ark. The verse makes the tabernacle a real meeting place between God and Israel, dangerous because real, and it explains why the way into that room is so carefully controlled."
+        }
+      ],
+      "refs": ["Exodus 25:21-22", "Exodus 26:33-34", "Exodus 40:34-35", "Hebrews 9:3-7", "Hebrews 10:19-20"]
+    },
+    {
+      "v": "3-5",
+      "context": "Aaron's preparations: a young bull for his own sin offering and a ram for his burnt offering; plain linen garments, put on after bathing; and from the people, two male goats for a sin offering and a ram for their burnt offering. The high priest brings his own animals and receives the people's, so that he stands both as sinner and as representative.",
+      "grammar": "Bezot yavo Aharon el-haqqodesh, ‘with this Aaron shall come into the holy place’, puts ‘with this’ first: the right offerings are the condition of entry. The four garments are the kutonet, a tunic; the mikhnesey-vad, linen undergarments; the avnet, a sash; and the mitsnefet, a turban. Each is described as bad, ‘linen’, a word repeated four times in one verse. Bigdey-qodesh hem, ‘they are holy garments’, is a verbless clause with the pronoun at the end for emphasis. In verse 5 se'irey izzim, ‘male goats of the goats’, uses sa'ir, a hairy one, the common word for a buck goat.",
+      "words": ["H2063", "H6499", "H2403H", "H5930A", "H0906", "H3801", "H4370", "H8163B"],
+      "history": "The Mishnah's account of the day (tractate Yoma) says the high priest immersed his whole body five times and washed his hands and feet ten times during the service (m. Yoma 3:3), and that he wore garments of fine linen from Pelusium in Egypt in the morning and of Indian linen in the afternoon (m. Yoma 3:7). White linen was the clothing of heavenly figures in Israel's visions: the man clothed in linen in Ezekiel 9:2 and Daniel 10:5.",
+      "theology": [
+        {
+          "id": "offices",
+          "note": "On this one day the high priest sets aside the gold and jewels of his office (Exodus 28) and enters in plain linen. His representative role is most complete when his personal splendor is removed, and he must first deal with his own sin before he can act for others."
+        }
+      ],
+      "refs": ["Exodus 28:39-43", "Ezekiel 9:2", "Daniel 10:5", "Hebrews 5:1-3", "Leviticus 9:7"]
+    },
+    {
+      "v": "6",
+      "context": "The rite is summarized before it is described in full. Aaron first presents his own bull and makes atonement for himself and his household, which includes the other priests. The high priest's own need is dealt with before he acts for the people.",
+      "grammar": "Vekhipper ba'ado uve'ad beyto, ‘and he shall make atonement on his own behalf and on behalf of his house’, is the first of sixteen uses of kipper in the chapter. The preposition be'ad, ‘on behalf of’ or ‘for the benefit of’, is used when the beneficiary is a person. When the object is a place, as in verses 16, 18, and 33, the verb takes al or a direct object, which is one of the grammatical grounds for the view that kipper means purging when it is done to things and ransoming or covering when it is done for people.",
+      "words": ["H7126H", "H6499", "H2403H", "H3722A", "H1157", "H1004M"],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "Even the one who mediates atonement needs it. The priest's own sin offering comes first, a feature Hebrews singles out when it contrasts Aaron with a high priest who had no need to offer for himself (Hebrews 7:27)."
+        }
+      ],
+      "refs": ["Hebrews 5:3", "Hebrews 7:26-27", "Leviticus 9:7", "Leviticus 4:3"]
+    },
+    {
+      "v": "7-10",
+      "context": "The two goats stand before the LORD at the tent's entrance, and Aaron casts lots: one for the LORD, one for Azazel. The first becomes the people's sin offering; the second is kept alive and will be sent into the wilderness. The summary names both movements of the day before the text describes them.",
+      "grammar": "Goralot, ‘lots’, were marked stones or tokens drawn to let God decide (Proverbs 16:33). The lots read la-YHWH, ‘for the LORD’, and la-Aza'zel, ‘for Azazel’, with the same preposition. The parallel is the strongest argument that Azazel is a proper name for a being or a place, since the other lot names a person. In verse 10, ya'omad-chay, ‘it shall be stationed alive’, is a Hophal (passive causative) of amad. The phrase lekhapper alav, literally ‘to make atonement upon it’, is unusual, since kipper is not elsewhere done to the animal itself. Interpreters take it as ‘to make atonement by means of it’ (the BSB's reading) or ‘to perform the rite of atonement over it’, anticipating the confession of verse 21. Leshallach oto la'aza'zel hammidbarah, ‘to send it away to Azazel, into the wilderness’, puts Azazel and the wilderness in parallel.",
+      "words": ["H8163B", "H1486", "H5799", "H5975H", "H2416A", "H3722A", "H7971G", "H4057B"],
+      "history": "Four main explanations of Azazel have been offered. The Septuagint's apopompaios, ‘the one sent away’, and the Vulgate's caper emissarius, ‘the goat sent out’, take it as a description of the goat, a reading behind Tyndale's ‘scapegoat’. The Talmud (b. Yoma 67b) and Rashi take it as a hard or rugged place, and G. R. Driver argued from Arabic for a word meaning rugged ground. Others take it as an abstract term, ‘for complete removal’. A fourth view, found in 1 Enoch (8:1; 10:4-8), where Azazel is a fallen angel bound in the desert, reads it as the name of a wilderness demon; many modern scholars, Milgrom among them, hold a version of this view while stressing that the text offers nothing to Azazel. The Mishnah describes the lots as drawn from an urn, later of gold, with the high priest's hands placing them on the goats' heads (m. Yoma 3:9; 4:1).",
+      "refs": ["Proverbs 16:33", "Leviticus 17:7", "Isaiah 34:14", "Leviticus 14:4-7", "Acts 1:26"]
+    },
+    {
+      "v": "11",
+      "context": "The detailed account begins. Aaron slaughters the bull for his own sin offering. The verse repeats the phrase of verse 6 and then advances the action, a common pattern in Hebrew ritual instruction, which restates the frame before adding the next step.",
+      "grammar": "Veshachat et-par hachatta't asher-lo, ‘and he shall slaughter the bull of the sin offering which is his’, uses shachat, the verb for ritual slaughter, cutting the throat so that the blood drains and can be collected. The possessive asher-lo, ‘which is his’, is repeated in the full text to distinguish the priest's offering from the people's.",
+      "words": ["H7126H", "H7819A", "H6499", "H2403H", "H3722A"],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "The ritual begins with the priest's own sin. Leviticus never suggests that holiness of office makes a person sinless; the priest's garments are holy, but the priest himself still needs cleansing."
+        }
+      ],
+      "refs": ["Leviticus 4:3-12", "Leviticus 9:8", "Hebrews 9:7"]
+    },
+    {
+      "v": "12-13",
+      "context": "Before any blood enters the inner room, Aaron takes a censer of coals from the altar and two handfuls of fine incense inside the curtain, and puts the incense on the fire so that its cloud covers the mercy seat. The cloud is a protection: without it, he would die.",
+      "grammar": "Melo-hammachtah, ‘the fullness of the fire pan’, uses machtah, a pan for carrying coals. Melo chofnav, ‘the fullness of his two hands’, has chofen in the dual, cupped hands: two double handfuls. Qetoret sammim daqqah, ‘incense of spices, fine’, is the special incense of Exodus 30:34-38, ground fine for this day. In verse 13, venatan et-haqqetoret al-ha'esh lifney YHWH, ‘and he shall put the incense on the fire before the LORD’, places the lighting of the incense inside the inner room. Vekhissah, ‘and it shall cover’, is a Piel of kasah. Ha'edut, ‘the Testimony’, is the name for the tablets of the covenant kept in the ark.",
+      "words": ["H4289", "H1513", "H2651", "H7004", "H5561", "H1851", "H3680", "H5715"],
+      "history": "The Second Temple period saw a dispute over this verse. According to rabbinic sources, the Sadducees held that the high priest should put the incense on the coals before entering, so that he entered already hidden in its cloud, taking verse 2 (‘in the cloud I appear’) to require it. The Pharisees held that he should light it inside, as verse 13 says ‘before the LORD’. The Mishnah records that the elders made the high priest swear before the day that he would change nothing in the rite (m. Yoma 1:5), and the Talmud connects the oath with this dispute (b. Yoma 19b).",
+      "theology": [
+        {
+          "id": "holiness",
+          "note": "Even the high priest, on the appointed day, in the right clothing, cannot look on the place of God's presence. The incense cloud screens him from a sight that would kill him, as Moses was hidden in the rock when God's glory passed (Exodus 33:20-22)."
+        }
+      ],
+      "refs": ["Exodus 30:34-38", "Exodus 33:20-22", "Numbers 16:46-48", "Revelation 8:3-4", "Psalm 141:2"]
+    },
+    {
+      "v": "14",
+      "context": "Aaron takes some of the bull's blood and sprinkles it with his finger on the front of the mercy seat, and seven times before it. For the first time in the ritual, blood is brought into the place of God's presence.",
+      "grammar": "Vehizzah, ‘and he shall sprinkle’, is a Hiphil of nazah, to spatter; it names a flicking of drops rather than pouring or smearing. Al-peney hakkapporet qedmah, ‘on the face of the mercy seat, eastward’, locates the first sprinkling on the east side, the side facing the entrance. Then velifney hakkapporet yazzeh sheva-pe'amim, ‘and before the mercy seat he shall sprinkle seven times’, uses the imperfect for the second action and puts the number last. Seven, the number of completion, recurs in the blood rites of Leviticus (4:6, 17; 14:7).",
+      "words": ["H1818", "H6499", "H5137A", "H0676", "H6924B", "H7651", "H6471"],
+      "history": "The Mishnah preserves the high priest's counting: he sprinkled once upward and seven times downward, counting aloud ‘one, one and one, one and two’ up to ‘one and seven’, so that the first sprinkling was never lost in the count (m. Yoma 5:3). In the Second Temple the ark was gone, and the Mishnah says the high priest sprinkled toward the place where it had stood, on a stone called the foundation stone (m. Yoma 5:2).",
+      "nt": [
+        {
+          "ref": "Romans 3:25",
+          "note": "The Septuagint regularly renders kapporet, the mercy seat, with hilastērion, ‘place (or means) of atonement’ (Exodus 25:17; Leviticus 16:14). Paul says God ‘displayed publicly’ Christ Jesus as a hilastērion through faith in his blood. Interpreters differ over whether Paul means the mercy seat itself, presenting Christ as the place where the Day of Atonement's blood was applied, now set out in public rather than hidden behind a curtain, or more generally an atoning sacrifice, as the BSB renders it. Hebrews 9:5 uses the same Greek word plainly for the mercy seat. William Tyndale coined the English ‘mercy seat’, following Luther's German Gnadenstuhl."
+        }
+      ],
+      "refs": ["Romans 3:25", "Hebrews 9:5", "Leviticus 4:6", "Exodus 25:17-22", "Hebrews 12:24"]
+    },
+    {
+      "v": "15",
+      "context": "Aaron slaughters the people's goat and repeats inside the curtain what he did with the bull's blood. The two offerings, the priest's and the people's, are now both applied in the inner room.",
+      "grammar": "Se'ir hachatta't asher la'am, ‘the goat of the sin offering which is for the people’, matches the phrase used of Aaron's own bull in verse 11. Ve'asah et-damo ka'asher asah ledam happar, ‘and he shall do with its blood as he did with the blood of the bull’, compresses the instruction by cross-reference; ritual texts across the ancient Near East shorten repeated procedures in the same way.",
+      "words": ["H7819A", "H8163B", "H2403H", "H5971A", "H1818", "H5137A", "H3727"],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The people's sin is dealt with by the same means as the priest's: blood brought before God. No one enters with the blood but the high priest, but the benefit belongs to the whole assembly (verse 17)."
+        }
+      ],
+      "refs": ["Leviticus 4:13-21", "Hebrews 9:12", "Hebrews 9:22"]
+    },
+    {
+      "v": "16",
+      "context": "The verse states the purpose of the blood: to make atonement for the holy place because of Israel's impurities and rebellions. The same is done for the tent, which dwells with Israel in the midst of its impurities. The sanctuary, not only the people, needs cleansing.",
+      "grammar": "Vekhipper al-haqqodesh, ‘and he shall make atonement for the holy place’, has a place as its object. The causes follow with the preposition min, ‘from’ or ‘because of’: mittum'ot beney Yisra'el, ‘from the impurities of the Israelites’, and mippish'eyhem lekhol-chattotam, ‘and from their rebellions, all their sins’. Tum'ah is ritual impurity (from childbirth, disease, death, or bodily discharges, Leviticus 12 to 15), and pesha is deliberate rebellion. The verse includes both, so the rite reaches deliberate sin as well as ritual defilement, which the ordinary sin offering did not. The last clause, hashokhen ittam betokh tum'otam, ‘which dwells with them in the midst of their impurities’, uses shakhan, the verb behind mishkan, ‘tabernacle’.",
+      "words": ["H3722A", "H6944J", "H2932", "H6588", "H2403B", "H7931", "H8432"],
+      "history": "Jacob Milgrom, in an article titled ‘Israel's Sanctuary: The Priestly Picture of Dorian Gray’ (1976), argued that in Leviticus sin and impurity pollute the sanctuary from a distance, the way the portrait in Oscar Wilde's novel records its owner's corruption. Deliberate sins reach the inner room, which is why only this annual rite, with blood brought inside the curtain, can cleanse it. Not every scholar accepts the whole theory, but it has shaped modern reading of this verse.",
+      "theology": [
+        {
+          "id": "temple",
+          "note": "God's dwelling is among an impure people, and their sin does not leave it untouched. The verse holds together the wonder that God lives among sinners and the cost of that nearness: his house must be cleansed of what they bring into it."
+        },
+        {
+          "id": "sin",
+          "note": "Sin has effects beyond the sinner. The verse pictures it accumulating in the place of worship, a communal pollution that the whole people shares and that God himself provides the means to remove."
+        }
+      ],
+      "refs": ["Leviticus 15:31", "Numbers 19:13", "Ezekiel 5:11", "Hebrews 9:23", "John 1:14"]
+    },
+    {
+      "v": "17",
+      "context": "While Aaron is inside, no one may be in the tent. The high priest acts alone from the time he enters until he comes out, having made atonement for himself, his household, and the whole assembly.",
+      "grammar": "Vekhol-adam lo-yihyeh be'ohel mo'ed, ‘and no human being shall be in the tent of meeting’, uses adam, the general word for a person, not ish, a man; no one of any rank may be present. The three beneficiaries are named in widening circles with repeated be'ad, ‘on behalf of’: himself, his house, and kol-qehal Yisra'el, ‘the whole assembly of Israel’.",
+      "words": ["H0120G", "H0168G", "H3722A", "H1157", "H6951"],
+      "theology": [
+        {
+          "id": "offices",
+          "note": "The mediator acts alone, unseen, on behalf of all. Hebrews reads Christ's work in these terms: he entered the true sanctuary alone and appears there on our behalf (Hebrews 9:24)."
+        }
+      ],
+      "refs": ["Hebrews 9:24", "Luke 1:8-10", "Isaiah 63:3"]
+    },
+    {
+      "v": "18-19",
+      "context": "Aaron goes out to ‘the altar that is before the LORD’ and makes atonement for it with the blood of both animals, putting it on the altar's horns and sprinkling it seven times. The blood that cleansed the inner room now cleanses the altar, which is purified and consecrated anew.",
+      "grammar": "Which altar is meant is disputed. ‘Before the LORD’ and the instruction in Exodus 30:10 that atonement be made on the horns of the incense altar once a year led the Mishnah to identify it as the golden incense altar in the Holy Place (m. Yoma 5:5). The verb veyatsa, ‘and he shall go out’, and the order of the rite (inner room, tent, then altar in verse 20) lead many modern scholars to identify it as the bronze altar of burnt offering in the courtyard. Qarnot, ‘horns’, are the projections at the four corners of an altar. In verse 19, vetiharo veqiddesho, ‘and he shall cleanse it and consecrate it’, are two Piel perfects: tahar, to make clean, and qadash, to make holy. The first removes the defilement; the second restores the altar to God's use.",
+      "words": ["H4196", "H3722A", "H7161A", "H5137A", "H2891", "H6942G", "H2932"],
+      "history": "Horned altars have been found in excavations in Israel. A large horned altar of dressed stones was found dismantled and reused in a later wall at Beersheba, and smaller four-horned incense altars have come from sites such as Megiddo and Tel Miqne (Ekron). They show what the text's ‘horns of the altar’ looked like.",
+      "refs": ["Exodus 30:10", "Exodus 29:36-37", "Leviticus 4:7", "Leviticus 8:15", "Ezekiel 43:20"]
+    },
+    {
+      "v": "20",
+      "context": "With the inner room, the tent, and the altar cleansed, the first movement of the day is complete. Aaron now brings forward the live goat, and the second movement begins.",
+      "grammar": "Vekhillah mikkapper, ‘and when he has finished atoning’, uses kalah, to complete, with min and the infinitive. The three objects of the atonement are listed without prepositions: haqqodesh, ‘the holy place’; ohel mo'ed, ‘the tent of meeting’; and hammizbeach, ‘the altar’. The order moves from the inside out. Hassa'ir hechay, ‘the living goat’, repeats the adjective of verse 10 to distinguish it from the goat just killed.",
+      "words": ["H3615G", "H3722A", "H6944J", "H4196", "H2416A"],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The day's work is double. The blood rite cleanses God's house; the live goat removes the people's guilt. Both are needed for God to go on dwelling among them, and the verse marks the hinge between them."
+        }
+      ],
+      "refs": ["Leviticus 16:10", "Leviticus 16:16", "Leviticus 16:33"]
+    },
+    {
+      "v": "21",
+      "context": "Aaron lays both hands on the live goat's head and confesses over it all Israel's iniquities, rebellions, and sins, putting them on its head. A man appointed for the task then leads it into the wilderness. No other rite in the Bible has sins confessed aloud over an animal and laid on its head.",
+      "grammar": "Vesamakh Aharon et-shtey yadav, ‘and Aaron shall lean both his hands’, uses samakh, to lean or press, the gesture made with one hand in the ordinary sacrifices (Leviticus 1:4; 4:4). Here both hands are used, and the verse spells out what the gesture means: venatan otam al-rosh hassa'ir, ‘and he shall put them on the head of the goat’. Vehitvaddah, ‘and he shall confess’, is a Hithpael of yadah, the reflexive form used for confession of sin. The three nouns are avonot, ‘iniquities’; pish'eyhem, ‘their rebellions’; and chattotam, ‘their sins’, the full vocabulary of wrong found also in Exodus 34:7. Ish itti, ‘a timely man’ or ‘a man at hand’, uses itti, an adjective from et, ‘time’, which occurs only here: someone ready for the moment, appointed in advance.",
+      "words": ["H5564", "H3027G", "H3034", "H5771G", "H6588", "H2403B", "H6261", "H7971G"],
+      "history": "The Mishnah gives the words of the high priest's confession over the goat, a prayer beginning ‘O Name’ that asks forgiveness for the iniquities, transgressions, and sins of the house of Israel and quotes verse 30. When the priests and people in the courtyard heard him pronounce the divine name, they knelt, prostrated themselves, and responded with a blessing of God's kingdom (m. Yoma 6:2). Early Christian writers read the two goats as a figure of Christ: the Epistle of Barnabas (chapter 7) and Justin Martyr (Dialogue with Trypho 40) both take the two goats as pictures of Christ's suffering and his coming again.",
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "The rite requires spoken confession. The goat does not carry away sins no one has named. Confession is built into the heart of Israel's most solemn ritual, which is why later Jewish teaching could insist that the day does not atone without repentance."
+        },
+        {
+          "id": "atonement",
+          "note": "Sin is transferred and removed. The live goat is not killed; it carries guilt away where it can no longer touch the people. Psalm 103:12 and Micah 7:19 use similar pictures of distance and removal for God's forgiveness."
+        }
+      ],
+      "refs": ["Leviticus 1:4", "Leviticus 5:5", "Psalm 32:5", "Psalm 103:12", "Micah 7:18-19"]
+    },
+    {
+      "v": "22",
+      "context": "The goat carries all their iniquities to a solitary place, and the man releases it in the wilderness. The verse states the result of verse 21 in a single picture: guilt borne away into land where no one lives.",
+      "grammar": "Venasa hassa'ir alav et-kol-avonotam, ‘and the goat shall bear on itself all their iniquities’, uses nasa, ‘lift’ or ‘carry’, the verb of Exodus 34:7, where God is nose avon, ‘forgiving (bearing) iniquity’. In Leviticus the phrase nasa avon usually means to bear the guilt of one's own sin (5:1; 17:16); here the goat bears the guilt of others. Erets gezerah, ‘a cut-off land’, uses gezerah, from gazar, ‘to cut’, found only here in this sense: a region cut off from the inhabited world, from which the goat will not return.",
+      "words": ["H5375J", "H5771G", "H0776G", "H1509", "H7971H", "H4057B"],
+      "history": "By the Second Temple period the goat was led to a ravine in the Judean desert and pushed backward over a cliff, so that it could not wander back (m. Yoma 6:6). The Mishnah also says that a strip of scarlet wool tied at the site was said to turn white when the goat reached the wilderness, recalling Isaiah 1:18 (m. Yoma 6:8), and the Talmud adds a tradition that for the last forty years before the temple's destruction it no longer turned white (b. Yoma 39b).",
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The goat bears the guilt of others. Isaiah 53 uses the same verb of the servant who bore the sin of many (Isaiah 53:12), and although the New Testament does not quote this chapter's goat directly, the language of one who carries away sin runs through its presentation of Christ (John 1:29; 1 Peter 2:24)."
+        }
+      ],
+      "refs": ["Isaiah 53:11-12", "John 1:29", "1 Peter 2:24", "Psalm 103:12", "Isaiah 1:18"]
+    },
+    {
+      "v": "23-25",
+      "context": "Aaron returns to the tent, takes off the linen garments and leaves them there, bathes in a holy place, and puts on his regular high priestly clothing. Then he offers the two burnt offerings, his own and the people's, and burns the fat of the sin offerings on the altar.",
+      "grammar": "Ufashat et-bigdey habbad, ‘and he shall strip off the linen garments’, uses pashat, to take off, and vehinnicham sham, ‘and leave them there’, a Hiphil of nuach with a suffix, ‘set them down to rest’. The garments are not taken back out. Berachats... bemaqom qadosh, ‘he shall bathe... in a holy place’, requires even the washing to be done within the sanctuary precincts. Bigdav, ‘his garments’, in verse 24, means the regular golden vestments of Exodus 28, in contrast to the linen. In verse 25, yaqtir, ‘he shall turn to smoke’, is a Hiphil of qatar, the verb for burning the fat so that it rises as smoke to God.",
+      "words": ["H6584", "H0899B", "H0906", "H5117", "H7364", "H3847", "H5930A", "H6999A"],
+      "theology": [
+        {
+          "id": "worship",
+          "note": "The day ends not with the removal of sin but with burnt offerings, the gift of the whole animal to God. Cleansing opens the way to renewed worship, and the priest returns to his ordinary service in his ordinary robes."
+        }
+      ],
+      "refs": ["Exodus 28:2-4", "Ezekiel 44:19", "Leviticus 1:9", "Leviticus 4:8-10"]
+    },
+    {
+      "v": "26-28",
+      "context": "Two men must wash before rejoining the camp: the one who led the goat to Azazel, and the one who burned the remains of the sin offerings outside the camp. The bull and goat whose blood entered the Most Holy Place are not eaten by the priests but burned entire, hide, flesh, and dung, outside the camp.",
+      "grammar": "Hamshalleach et-hassa'ir la'aza'zel, ‘the one who sent the goat to Azazel’, uses a Piel participle of shalach as a noun. Yekhabbes begadav, ‘he shall wash his garments’, uses kabas, the verb for washing cloth by treading or beating, distinct from rachats, ‘bathe’, used for the body. In verse 27, asher huva et-damam, ‘whose blood was brought in’, is a Hophal (passive causative) of bo. Yotsi el-michuts lammachaneh, ‘one shall bring out outside the camp’, uses an impersonal third person, ‘someone shall bring out’. Pirsham, ‘their dung’, refers to the contents of the entrails.",
+      "words": ["H7971H", "H5799", "H3526H", "H7364", "H0935P", "H2351", "H4264", "H8313", "H6569"],
+      "nt": [
+        {
+          "ref": "Hebrews 13:11-12",
+          "note": "Hebrews observes that the bodies of the animals whose blood the high priest brings into the holy place are burned outside the camp, and draws the parallel: Jesus also suffered outside the city gate to sanctify the people by his own blood. The writer then calls his readers to go out to him outside the camp, bearing his disgrace (13:13). The detail of verse 27, that the sin offerings of this day were not eaten but destroyed outside the camp, becomes a picture both of Christ's rejection and of the believer's willingness to share it."
+        }
+      ],
+      "theology": [
+        {
+          "id": "holiness",
+          "note": "The things that carried impurity away also pass impurity to those who handle them, so the men who serve in the rite must wash before returning. The same paradox appears with the ashes of the red heifer (Numbers 19:7-10): what cleanses the community leaves those who administer it needing cleansing."
+        }
+      ],
+      "refs": ["Hebrews 13:11-13", "Leviticus 4:11-12", "Leviticus 6:30", "Numbers 19:7-10", "John 19:17-20"]
+    },
+    {
+      "v": "29",
+      "context": "The chapter now turns from the priest to the people and fixes the date: the tenth day of the seventh month, every year, as a permanent statute. On that day all Israel, native and foreigner alike, is to humble itself and do no work.",
+      "grammar": "Te'annu et-nafshotekhem, ‘you shall humble (or afflict) your souls’, uses a Piel of anah, to be low or bowed down. The idiom is used with fasting in Isaiah 58:3, 5 and Psalm 35:13, and ancient Jewish interpretation took it to mean fasting. Nefesh here means the whole living self, including the appetite, so the humbling is bodily as well as inward. The command addresses both ha'ezrach, ‘the native’, and hagger haggar betokhekhem, ‘the sojourner who sojourns among you’, the same pair as in Exodus 12:19, 49.",
+      "words": ["H2708", "H2320G", "H7637", "H6218", "H6031B", "H5315I", "H4399", "H1616"],
+      "history": "The Mishnah lists five afflictions for the day: abstaining from eating and drinking, from bathing, from anointing with oil, from wearing sandals, and from marital relations (m. Yoma 8:1). The book of Jubilees (34:12-19) connects the date with the day Joseph's brothers deceived Jacob with a goat's blood, making the day one of grief for sin. At Qumran the Habakkuk commentary records that the Wicked Priest pursued the Teacher of Righteousness on the Teacher's Day of Atonement (1QpHab 11:4-8), a sign that the community kept the day on a different calendar from the temple.",
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "The people are not spectators of the priest's work. They fast and humble themselves while the rite is performed, so that God's provision is received by a people who acknowledge their need. Isaiah 58 later insists that such humbling must be joined to justice."
+        }
+      ],
+      "refs": ["Leviticus 23:26-32", "Numbers 29:7-11", "Isaiah 58:3-7", "Psalm 35:13", "Acts 27:9"]
+    },
+    {
+      "v": "30",
+      "context": "The reason for the day is stated plainly: on it atonement is made to cleanse the people, and they will be clean from all their sins before the LORD. The verse is the promise at the center of the chapter.",
+      "grammar": "Ki-vayyom hazzeh yekhapper aleykhem, ‘for on this day he shall make atonement for you’, uses a Piel imperfect of kipper with an unexpressed subject; ‘atonement will be made’ (BSB) renders it as an impersonal passive. Letaher etkhem, ‘to cleanse you’, is a Piel infinitive of tahar. The final clause, mikkol chattoteykhem lifney YHWH tit'haru, ‘from all your sins before the LORD you shall be clean’, can be divided in two ways: ‘you shall be clean from all your sins, before the LORD’, or ‘from all your sins before the LORD you shall be clean’, that is, from the sins that are against God.",
+      "words": ["H3722A", "H2891", "H2403B", "H6440G"],
+      "history": "The second division underlies a famous teaching in the Mishnah. Rabbi Eleazar ben Azariah expounded the verse to mean that the Day of Atonement atones for sins between a person and God, but not for wrongs done to a neighbor until the neighbor has been reconciled (m. Yoma 8:9). The same passage records Rabbi Akiva's saying that Israel is blessed, since its Father in heaven cleanses it, citing Ezekiel 36:25. The verse is recited in the synagogue liturgy of the day.",
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The day's result is cleansing ‘from all your sins’. Leviticus presents it as a real and complete provision for Israel's life with God in its time; Hebrews 10:1-4 and 10:11-14 argue that its yearly repetition showed it pointed beyond itself to a sacrifice that would need no repeating."
+        },
+        {
+          "id": "justification",
+          "note": "‘You will be clean before the LORD’ describes a status God gives, not a condition the people achieve. The New Testament's language of being declared righteous before God builds on this Old Testament picture of cleansing received by God's appointment."
+        }
+      ],
+      "refs": ["Ezekiel 36:25", "Psalm 51:2", "Hebrews 10:1-4", "Hebrews 10:11-14", "Matthew 5:23-24"]
+    },
+    {
+      "v": "31",
+      "context": "The day is a Sabbath of complete rest, joined to the command to humble oneself, and it is repeated as a permanent statute. The rest is the setting of the fast.",
+      "grammar": "Shabbat shabbaton, ‘a Sabbath of Sabbath rest’, repeats the root to form a superlative, like ‘the holy of holies’. The same phrase is used for the weekly Sabbath (Exodus 31:15; Leviticus 23:3) and for this day (Leviticus 23:32), and for no other festival. Ve'innitem, ‘and you shall humble’, a consecutive perfect, repeats the command of verse 29.",
+      "words": ["H7676", "H7677", "H6031B", "H5315I", "H2708"],
+      "theology": [
+        {
+          "id": "sabbath",
+          "note": "Rest and repentance are joined. Israel stops its work on the day God does the work of cleansing, as on the weekly Sabbath it rests from work in recognition of God's work of creation."
+        }
+      ],
+      "refs": ["Exodus 31:15", "Leviticus 23:3", "Leviticus 23:32", "Hebrews 4:9-10"]
+    },
+    {
+      "v": "32-33",
+      "context": "The rite does not end with Aaron. Whoever is anointed and ordained to succeed his father as high priest will perform it, wearing the holy linen garments, and make atonement for the sanctuary, tent, altar, priests, and people.",
+      "grammar": "Asher yimshach oto va'asher yemalle et-yado, ‘whom one anoints and whose hand one fills’, uses two impersonal verbs. Mashach, ‘anoint’, is the root of mashiach, ‘anointed one’ or messiah, and here the anointed one is the high priest (compare 4:3, hakkohen hammashiach, ‘the anointed priest’). ‘Fill the hand’ (mille yad) is the Hebrew idiom for ordaining a priest, perhaps from placing the portions of the ordination offering in his hands (Exodus 29:24). Lekhahen tachat aviv, ‘to serve as priest in place of his father’, assumes hereditary succession. Verse 33 lists five objects of atonement: miqdash haqqodesh, ‘the holy sanctuary’, the tent, the altar, the priests, and kol-am haqqahal, ‘all the people of the assembly’, with kipper three times.",
+      "words": ["H3722A", "H4886", "H4390", "H3547", "H8478H", "H4720", "H3548"],
+      "theology": [
+        {
+          "id": "offices",
+          "note": "The high priest's office passes from father to son, and each dies in turn. Hebrews builds its argument on this: the former priests were many because death prevented them from continuing, but Jesus holds his priesthood permanently because he lives forever (Hebrews 7:23-25)."
+        }
+      ],
+      "refs": ["Leviticus 4:3", "Exodus 29:29-30", "Numbers 20:25-28", "Hebrews 7:23-25", "Leviticus 8:33"]
+    },
+    {
+      "v": "34",
+      "context": "The chapter closes by restating the principle, once a year for all Israel's sins, and with a note of obedience: it was done as the LORD commanded Moses. The ending contrasts with the disobedience of Nadab and Abihu that opened the chapter.",
+      "grammar": "Achat bashanah, ‘once in the year’, is placed near the end for emphasis, answering the ‘not at any time’ of verse 2. The final clause, vayya'as ka'asher tsivvah YHWH et-Mosheh, is literally ‘and he did as the LORD had commanded Moses’. The verb is singular and its subject is not named. Most interpreters take it as Aaron, and read it as a narrative notice that Aaron carried out the rite (at its first performance, whenever that fell); the BSB turns it into a passive, ‘all this was done’. The compliance formula echoes the building of the tabernacle (Exodus 39 and 40) and the ordination of the priests (Leviticus 8).",
+      "words": ["H2708", "H3722A", "H2403B", "H0259", "H6213A", "H6680"],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The day's power lay in God's appointment and in its annual return. Hebrews contrasts ‘once a year’ with ‘once for all’: the yearly rite recalled sins every year (Hebrews 10:3), while Christ appeared ‘once for all at the end of the ages to do away with sin by the sacrifice of Himself’ (Hebrews 9:26)."
+        }
+      ],
+      "refs": ["Hebrews 9:7", "Hebrews 9:25-26", "Hebrews 10:3", "Exodus 30:10", "Leviticus 8:36"]
+    }
+  ]
+}

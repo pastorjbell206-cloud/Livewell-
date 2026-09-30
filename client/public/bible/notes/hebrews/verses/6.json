@@ -1,0 +1,199 @@
+{
+  "verses": [
+    {
+      "v": "1-2",
+      "context": "“Therefore” draws the conclusion from 5:11-14: since solid food belongs to the mature, the author will not wait for the readers to catch up but will carry them on. He names six foundation stones in three pairs (repentance and faith, washings and laying on of hands, resurrection and judgment) that he does not intend to lay again.",
+      "grammar": "Aphentes (‘leaving’) is an aorist participle: not abandoning the basics but moving past them, as a builder leaves a foundation to raise the walls. Ton tēs archēs tou Christou logon, literally ‘the word of the beginning of Christ’, means the elementary teaching about Christ, picking up ‘the beginning’ of 5:12. The main verb is striking: pherōmetha is a present passive subjunctive, ‘let us be carried along’ toward maturity (teleiotēs). The passive suggests being borne by God's power rather than straining by effort alone; the same verb describes the prophets ‘carried along’ by the Spirit in 2 Peter 1:21. Themelion kataballomenoi (‘laying a foundation’) continues the building image. Baptismōn is plural and is the word for washings (as in Mark 7:4 and Hebrews 9:10), not the usual word baptisma used for Christian baptism, so the author probably means instruction that distinguishes Christian baptism from other purification rites.",
+      "words": ["G0863G", "G0746", "G5047", "G5342", "G2310", "G3341", "G3498", "G0909", "G1936", "G0386", "G2917"],
+      "text": "Most editions read didachēs (‘of instruction’), a genitive in the chain of genitives. Westcott and Hort and the SBL edition read didachēn, an accusative with the support of the early papyrus P46 and Codex Vaticanus, which makes ‘instruction’ stand in apposition to ‘foundation’: ‘a foundation of repentance and faith, a teaching about washings…’. The sense is close either way.",
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "Repentance ‘from dead works’ stands first among the foundations, paired with faith toward God. The phrase returns in 9:14, where Christ's blood cleanses the conscience from dead works: the repentance the gospel begins with is made possible by the sacrifice it proclaims."
+        },
+        {
+          "id": "resurrection",
+          "note": "The resurrection of the dead and eternal judgment belong to the ABCs of the faith, shared ground with Pharisaic Judaism. The letter assumes them as the horizon of everything else (9:27, 11:35)."
+        }
+      ],
+      "refs": ["Hebrews 5:12", "Hebrews 9:14", "Acts 20:21", "Acts 8:17", "Acts 24:15"]
+    },
+    {
+      "v": "3",
+      "context": "A short sentence of dependence: the author will carry the readers forward, if God permits. It sets the warning that follows under God's sovereignty. Progress in understanding is God's gift, not a technique.",
+      "grammar": "Eanper epitrepē ho theos, ‘if indeed God permits’, uses the intensive eanper (as in 3:6 and 3:14). The phrase is a conventional expression of dependence, like ‘if the Lord wills’ in James 4:15 and 1 Corinthians 16:7, but in this context it carries weight, since the next verses describe a case in which renewal is impossible.",
+      "words": ["G4160G", "G1437", "G2010"],
+      "text": "Most editions read poiēsomen, a future (‘this we will do’). The Byzantine text and some important manuscripts read poiēsōmen, a subjunctive (‘let us do this’), which would continue the exhortation of verse 1. The two forms differ by a single vowel that sounded alike in later Greek, so the confusion is easy to explain.",
+      "theology": [
+        {
+          "id": "providence",
+          "note": "Even the progress of a congregation in understanding lies under God's permission. The author will teach, but only God can make teaching take hold."
+        }
+      ],
+      "refs": ["James 4:15", "1 Corinthians 16:7", "Acts 18:21"]
+    },
+    {
+      "v": "4",
+      "context": "The warning begins. The sentence of verses 4-6 is one long construction: ‘It is impossible for those who…’, then five descriptions, then the verb it governs, ‘to renew again to repentance’. Verse 4 gives the first three descriptions: enlightened, tasted the heavenly gift, shared in the Holy Spirit.",
+      "grammar": "Adunaton (‘impossible’) stands first for emphasis and governs the infinitive anakainizein in verse 6. A single article (tous) governs all five participles in verses 4-6, so they describe one group seen from different sides. Hapax phōtisthentas, ‘once enlightened’, uses the verb Hebrews uses of the readers' own conversion in 10:32. Geusamenous (‘having tasted’) is the verb at the center of the debate. Some Reformed interpreters have taken it as sampling without full reception. Others point out that in 2:9 Jesus ‘tastes death’, which was no mere sampling, and that 1 Peter 2:3 uses the same verb for real experience of the Lord's goodness. Here the object is in the genitive (tēs dōreas), while in verse 5 it is accusative (kalon rhēma); a few grammarians have suggested a difference of sense, but most find no firm distinction in Koine. Metochous genēthentas pneumatos hagiou, ‘having become sharers of the Holy Spirit’, uses metochos, the word of 3:1 (‘partakers of the heavenly calling’) and 3:14 (‘we have come to share in Christ, if…’).",
+      "words": ["G0102", "G0530", "G5461", "G1089", "G1431", "G2032", "G3353", "G4151G"],
+      "history": "In the second century Justin Martyr called baptism phōtismos, ‘illumination’, and the baptized ‘the enlightened’ (First Apology 61), so many early readers heard ‘once enlightened’ as a reference to baptism. That reading shaped the view of Chrysostom (Homilies on Hebrews 9) and Ambrose that the ‘impossible’ renewal meant a second baptism, which the church does not give, rather than a denial that the lapsed could ever repent.",
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "The descriptions include sharing in the Holy Spirit, the gift poured out in the community's life (2:4). Whatever else the verse means, it places the people it describes inside the church's experience of the Spirit, not outside it."
+        }
+      ],
+      "refs": ["Hebrews 10:32", "Hebrews 2:9", "Hebrews 3:14", "1 Peter 2:3"]
+    },
+    {
+      "v": "5",
+      "context": "Two more descriptions complete the portrait: they have tasted the goodness of God's word and the powers of the age to come. The language points to the miracles and gifts by which the gospel was confirmed to them (2:3-4).",
+      "grammar": "Kalon geusamenous theou rhēma is best taken ‘having tasted that the word of God is good’, with kalon as a predicate, echoing Psalm 34:8 (‘taste and see that the LORD is good’). Rhēma is the spoken word, the message as proclaimed. Dunameis te mellontos aiōnos, ‘powers of the coming age’, uses dunameis, the word for miracles in 2:4. The phrase ‘the coming age’ is Jewish eschatological language for the new world God will bring; for Hebrews that age has already broken into the present through Christ (compare ‘in these last days’ in 1:2).",
+      "words": ["G2570G", "G1089", "G4487", "G1411", "G3195", "G0165G"],
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The powers of the age to come are already at work in the church. The verse shows the overlap of the ages: the future world is tasted now, in the word and in works of power, before it arrives in full."
+        }
+      ],
+      "refs": ["Hebrews 2:3-4", "Psalm 34:8", "Hebrews 1:2", "Hebrews 2:5"]
+    },
+    {
+      "v": "6",
+      "context": "The fifth participle is the turn: ‘and then have fallen away’. Then comes the infinitive the whole sentence has been waiting for: it is impossible to renew them again to repentance, because they are crucifying the Son of God for themselves and holding him up to contempt. Verses 7-8 will illustrate the point, and verse 9 will soften it for the readers.",
+      "grammar": "Parapesontas (‘having fallen away’) is an aorist participle under the same article as the others, the final item in one portrait. The verb occurs only here in the New Testament and in the Greek Old Testament often describes unfaithfulness toward God (Ezekiel 14:13, 18:24). Palin anakainizein (‘to renew again’) is an active infinitive with no subject named, so it is unclear whether the author means that no human teacher can bring them back or that God will not. The last two participles are present tense, anastaurountas and paradeigmatizontas. They can be causal (‘since they are crucifying’, the reading of the BSB) or temporal (‘while they are crucifying’). The temporal reading limits the impossibility to the time the person continues in repudiation; the causal reading gives the reason repentance is impossible. Anastauroō in ordinary Greek, including Josephus, simply means ‘to crucify’, but the Greek fathers and the Latin Vulgate (rursum crucifigentes) took the prefix as ‘again’, and the context of renewing ‘again’ favors that. Heautois (‘to themselves’) may mean ‘to their own harm’ or ‘as far as they are concerned’. Paradeigmatizō means to make a public example of someone, to expose him to disgrace.",
+      "words": ["G3895", "G3825", "G0340", "G3341", "G0388", "G1438", "G3856"],
+      "history": "The verse has one of the most troubled histories of any in the New Testament. Tertullian, who knew Hebrews as a letter of Barnabas, cited 6:4-8 against readmitting serious sinners to communion (On Modesty 20). Luther, in his 1522 preface to Hebrews, judged that this passage and 10:26 and 12:17 seemed to deny repentance after baptism, against the Gospels and Paul, and he placed Hebrews near the end of his New Testament. Calvin answered that God gives the reprobate a taste of his grace and a passing faith without the Spirit's sealing (in his commentary on Hebrews, 1549, and Institutes 3.2.11), a reading John Owen developed at length in his commentary on Hebrews.",
+      "theology": [
+        {
+          "id": "perseverance",
+          "note": "Four main readings are held. The Reformed reading (Calvin, Owen, and Wayne Grudem's 1995 essay on this text) holds that the people described shared deeply in the church's life without being regenerate, and that their falling away reveals it. The Arminian and Wesleyan reading (I. Howard Marshall, Kept by the Power of God, 1969; Scot McKnight's 1992 study of the warning passages) holds that true believers are in view and that persistent, deliberate apostasy can end in their loss. A hypothetical reading takes the warning as describing what would follow if a believer fell away, to show that it must not and in fact does not happen. A loss-of-rewards reading (Zane Hodges; Joseph Dillow, The Reign of the Servant Kings, 1992) holds that genuine believers are in view but that what is lost is reward or usefulness, not eternal life. Thomas Schreiner and Ardel Caneday (The Race Set Before Us, 2001) add a means-of-grace view: the warnings are addressed to believers as the very instrument God uses to keep them."
+        },
+        {
+          "id": "repentance",
+          "note": "The verse speaks not of a single sin but of a settled turning away from the only sacrifice there is. Repentance is impossible here because the one who renounces Christ has renounced the ground of forgiveness itself; the author will say the same in 10:26-29."
+        }
+      ],
+      "refs": ["Hebrews 10:26-29", "Hebrews 3:12", "Hebrews 12:17", "2 Peter 2:20-22", "1 John 2:19"]
+    },
+    {
+      "v": "7-8",
+      "context": "A farming parable illustrates verses 4-6. Two kinds of land receive the same rain; one yields a useful crop and is blessed, the other bears thorns and thistles and ends in burning. The illustration puts the weight on fruitfulness after receiving God's gifts, the point of the preceding verses.",
+      "grammar": "Hē piousa, ‘the land that drank’, is an aorist participle: the rain has been received. Tiktousa (‘bearing’) and ekpherousa (‘producing’) are present participles describing what each soil habitually yields. Adokimos means ‘failing the test’ or ‘worthless’, the word Paul uses of himself in 1 Corinthians 9:27. Kataras engus, ‘near to a curse’, stops short of saying the land is already cursed. Hēs to telos eis kausin, ‘whose end is for burning’, has a relative pronoun that could refer back to the curse or to the land; either way the outcome is fire. The picture fits the practice of burning off a worthless field.",
+      "words": ["G1093H", "G4095", "G5205", "G5088", "G1008", "G2129", "G0173", "G5146", "G0096", "G2671", "G2740"],
+      "ot": [
+        {
+          "ref": "Genesis 3:17-18",
+          "note": "The Hebrew qots vedardar, ‘thorn and thistle’, is rendered in the Septuagint akanthas kai tribolous, the exact pair Hebrews uses. In Genesis the thorns are the sign of the ground cursed because of Adam's sin. Hebrews applies the image to people who received God's rain and yielded thorns: they stand on the side of the curse, not the blessing. The parable also recalls Isaiah 5:1-7, where God's vineyard, lavishly tended, produces worthless grapes."
+        }
+      ],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "Judgment falls according to what grows from what has been received. The same rain falls on both lands; the difference lies in the fruit, which is why the author presses the readers toward diligence in verses 11-12."
+        }
+      ],
+      "refs": ["Isaiah 5:1-7", "Deuteronomy 11:11-12", "Matthew 13:3-8", "John 15:6"]
+    },
+    {
+      "v": "9",
+      "context": "The tone changes at once. The author calls the readers ‘beloved’ and says he is persuaded of better things in their case, things that belong to salvation. The warning of verses 4-8 is real, but it is not a verdict on them.",
+      "grammar": "Pepeismetha (‘we are persuaded’) is a perfect passive: a settled conviction. Agapētoi, ‘beloved’, is a vocative found only here in Hebrews. Ta kreissona kai echomena sōtērias, ‘the better things, and things that hold on to salvation’, uses echomai with a genitive, an idiom for things that belong to or accompany something. Reformed interpreters read the phrase as distinguishing the readers, whose lives show the marks of salvation, from the fruitless land of verse 8; Arminian interpreters read it as the author's confidence that the readers have not fallen and need not. Ei kai houtōs laloumen, ‘even if we speak this way’, admits the severity of what has just been said.",
+      "words": ["G3982", "G0027", "G2908", "G2192", "G4991", "G2980"],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "Salvation is accompanied by things that can be seen: the work and love of verse 10. The author's confidence about his readers rests on those marks and, finally, on God's own faithfulness (verse 10)."
+        }
+      ],
+      "refs": ["Hebrews 10:39", "Philippians 1:6", "Hebrews 3:6"]
+    },
+    {
+      "v": "10",
+      "context": "The ground of the author's confidence: God is not unjust, and he will not forget the readers' work and love, shown in serving the saints, past and present. The chapter will return to such service in 10:32-34 and 13:1-3.",
+      "grammar": "Ou gar adikos ho theos, ‘for God is not unjust’, is litotes, understatement for emphasis: God is scrupulously just. The infinitive epilathesthai (‘to forget’) depends on it: it would be unjust of God to forget. Diakonēsantes kai diakonountes pairs an aorist and a present participle of the same verb, ‘having served and still serving’, which shows that their service is not only a memory. Eis to onoma autou, ‘toward his name’, means their love for fellow believers was love directed to God himself.",
+      "words": ["G0094", "G1950", "G2041", "G0026", "G1731", "G3686", "G1247", "G0040H"],
+      "theology": [
+        {
+          "id": "love",
+          "note": "Love for God takes the concrete form of serving his people. The verse counts care for the saints as love shown ‘to his name’, the same logic as Jesus' words that what is done for the least of his brothers is done for him."
+        }
+      ],
+      "refs": ["Hebrews 10:32-34", "Hebrews 13:16", "Matthew 25:40", "Galatians 6:9-10"]
+    },
+    {
+      "v": "11-12",
+      "context": "The author states his desire: that each of them show the same diligence to the end, for the full assurance of hope, so that they will not become sluggish but imitate those who inherit the promises. ‘Sluggish’ repeats 5:11 and closes the section of exhortation that began there, and ‘imitate’ prepares for Abraham in verses 13-15 and for chapter 11.",
+      "grammar": "Epithumoumen (‘we desire’) is strong, a longing rather than a wish. Hekaston humōn, ‘each one of you’, individualizes the appeal. Pros tēn plērophorian tēs elpidos, ‘toward the full assurance of the hope’, uses plērophoria, a word for fullness or certainty, which 10:22 applies to faith. Achri telous, ‘until the end’, echoes 3:6 and 3:14. Nōthroi genēsthe, ‘become sluggish’, is an aorist subjunctive after hina mē: the author hopes the dullness of 5:11 will not settle into their conduct. Klēronomountōn (‘inheriting’) is a present participle, describing the class of heirs, and dia pisteōs kai makrothumias names the two ways they inherit, faith and patient endurance.",
+      "words": ["G1937", "G1538", "G4710", "G4136", "G1680", "G5056", "G3576", "G3402", "G3115", "G2816", "G1860"],
+      "theology": [
+        {
+          "id": "hope",
+          "note": "Hope has a ‘full assurance’ that is reached by diligence over time. The verses link assurance to perseverance: confidence grows as the believer keeps going, not apart from it."
+        },
+        {
+          "id": "faith",
+          "note": "Faith and patience together inherit the promises. The pairing anticipates chapter 11, where faith is shown by people who waited, often without seeing the promise fulfilled."
+        }
+      ],
+      "refs": ["Hebrews 5:11", "Hebrews 10:22", "Hebrews 10:36", "Hebrews 11:13", "Hebrews 13:7"]
+    },
+    {
+      "v": "13-15",
+      "context": "Abraham is the model of the patient heir. When God made him a promise, having no one greater to swear by, he swore by himself; and Abraham, after waiting patiently, obtained the promise. The oath of Genesis 22 is the anchor of the chapter's final argument.",
+      "grammar": "Epangeilamenos (‘having promised’) and ōmosen (‘he swore’) frame the sentence around God's two acts, promise and oath. Kat' oudenos eichen meizonos omosai, ‘he had no one greater by whom to swear’, explains the self-oath. The quotation ei mēn eulogōn eulogēsō se kai plēthunōn plēthunō se reproduces a Hebrew idiom: the Hebrew infinitive absolute (barekh avarekhkha, ‘blessing I will bless you’) intensifies the verb, and the Greek imitates it with a participle beside the finite verb. The sense is ‘I will surely bless you’. Makrothumēsas (‘having waited patiently’) picks up makrothumia in verse 12. Epetuchen (‘he obtained’) is best taken of the promise as given and confirmed to Abraham in his lifetime, especially the birth and return of Isaac, since 11:13 and 11:39 say the patriarchs died without receiving the promises in their fullness.",
+      "words": ["G0011", "G1861", "G3173", "G3660", "G3375", "G2127", "G4129", "G3114", "G2013"],
+      "text": "Most editions read ei mēn, a form of the oath formula found in ordinary Koine documents; the Textus Receptus and the Byzantine text read ē mēn, the spelling in the Septuagint of Genesis 22:17. The words mean the same, ‘surely’.",
+      "ot": [
+        {
+          "ref": "Genesis 22:16-17",
+          "note": "After Abraham's willingness to offer Isaac, the angel of the LORD says ‘By Myself I have sworn’ (bi nishbati) and promises blessing and countless offspring. The Septuagint renders the oath kat' emautou ōmosa and the promise ē mēn eulogōn eulogēsō se kai plēthunōn plēthunō to sperma sou. Hebrews shortens the second clause to plēthunō se, ‘I will multiply you’, keeping the focus on Abraham himself as the one who waited and received. Genesis 22 is the only place in the Abraham story where God swears, and the author chooses it because it adds an oath to the promise, the two unchangeable things of verse 18."
+        }
+      ],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "God's covenant with Abraham rests finally on God's own self-commitment. He binds himself by his own name, so the promise depends on his character rather than on Abraham's strength."
+        }
+      ],
+      "refs": ["Genesis 22:16-17", "Genesis 12:2-3", "Romans 4:20-21", "Luke 1:73"]
+    },
+    {
+      "v": "16-18",
+      "context": "The author explains why the oath matters. Among people an oath ends all dispute; God, wanting to show the heirs the unchangeable character of his purpose, added an oath to his promise, so that two unchangeable things would give strong encouragement to those who have fled to take hold of the hope set before them.",
+      "grammar": "Pasēs antilogias peras eis bebaiōsin ho horkos, ‘the oath is for confirmation an end of every dispute’, uses legal language: bebaiōsis is a technical term for a legal guarantee in the papyri, and peras antilogias is the end of a controversy. Perissoteron boulomenos, ‘wanting all the more’, shows God going beyond what was needed. To ametatheton tēs boulēs autou, ‘the unchangeableness of his purpose’, makes an adjective into a noun: the very immovability of God's plan. Emesiteusen horkō, ‘he mediated with an oath’ or ‘he guaranteed it with an oath’, is from mesiteuō, related to mesitēs, ‘mediator’: God stepped between himself and the heirs as his own guarantor. The two unchangeable things are most naturally the promise and the oath; some interpreters take them as the oath to Abraham and the oath of Psalm 110:4. Hoi kataphugontes (‘we who have fled for refuge’) is an aorist participle; many commentators hear an echo of the cities of refuge, where a manslayer fled for safety (Numbers 35, Deuteronomy 19).",
+      "words": ["G3660", "G0485", "G4009", "G0951", "G3727", "G4054", "G0276", "G1012", "G3315", "G1417", "G0102", "G5574", "G3874", "G2703", "G2902", "G4295", "G1680"],
+      "history": "Oaths were the ordinary way to settle disputes in the ancient world, and a person swore by a god or something greater than himself (compare Exodus 22:10-11, where an oath by the LORD settles a dispute over property). Jewish interpreters asked how God could swear at all, since there is nothing greater than he; Philo of Alexandria discusses God's oath of Genesis 22:16 in the third book of his Allegorical Interpretation and concludes that God swears by himself because only he can confirm his word. Hebrews shares the observation and turns it into pastoral assurance.",
+      "theology": [
+        {
+          "id": "attributes",
+          "note": "It is ‘impossible for God to lie’. The verse grounds Christian hope in God's truthfulness and the unchangeableness of his purpose, the same attributes Numbers 23:19 and Titus 1:2 affirm."
+        },
+        {
+          "id": "hope",
+          "note": "Hope is ‘set before’ believers as something objective, like a refuge or a prize, which they seize by fleeing to it. Its security lies not in the one who flees but in the place he flees to."
+        }
+      ],
+      "refs": ["Numbers 23:19", "Titus 1:2", "Exodus 22:10-11", "Numbers 35:11-12", "Hebrews 12:1-2"]
+    },
+    {
+      "v": "19-20",
+      "context": "The chapter ends by gathering images: hope is an anchor, sure and firm, that enters the inner sanctuary behind the curtain, where Jesus has gone ahead as forerunner. The last words return to Psalm 110:4 and hand the argument to chapter 7.",
+      "grammar": "Hēn hōs agkuran echomen, ‘which we have as an anchor’, has hope as its antecedent. Asphalē te kai bebaian, ‘safe and firm’, is a pair used of secure foundations and reliable guarantees. The participle eiserchomenēn (‘entering’) agrees with ‘anchor’ (or with ‘hope’, both feminine), so the image shifts in midsentence from the sea to the sanctuary. Eis to esōteron tou katapetasmatos, ‘into the inner side of the curtain’, is the phrase the Greek Old Testament uses in Leviticus 16:2, 12, and 15 for the high priest's entry into the Most Holy Place on the Day of Atonement. Prodromos (‘forerunner’) was used of scouts and advance parties and implies that others will follow. Archiereus genomenos, ‘having become high priest’, is an aorist participle placed at the end with eis ton aiōna for emphasis.",
+      "words": ["G0045", "G5590G", "G0804", "G0949", "G1525", "G2082", "G2665", "G4274", "G2424G", "G5010", "G3198", "G0749", "G0165H"],
+      "history": "The anchor appears as a Christian symbol in the Roman catacombs, sometimes combined with a cross or fish. In the Septuagint the ‘inner side of the curtain’ is the Day of Atonement language of Leviticus 16, the only day the high priest passed the curtain; Hebrews will develop that ritual in chapter 9.",
+      "theology": [
+        {
+          "id": "hope",
+          "note": "Christian hope is fastened not in the believer's feelings but in heaven, where Jesus already is. Because he entered ‘on our behalf’ as forerunner, his presence behind the curtain is the pledge that his people will follow."
+        },
+        {
+          "id": "exaltation",
+          "note": "Jesus' entry into the heavenly sanctuary is his exaltation seen in priestly terms. The one seated at God's right hand (1:3) is also the high priest who has passed the curtain."
+        }
+      ],
+      "refs": ["Leviticus 16:2", "Hebrews 4:14", "Hebrews 10:19-20", "Hebrews 9:24", "John 14:2-3"]
+    }
+  ]
+}

@@ -804,6 +804,9 @@ function prerenderStudyBible(template) {
       intro ? section(b.testament === "OT" ? "How it points to Christ" : "What it shows of Christ", para(intro.christ)) : "",
       intro ? section("Themes to follow", intro.themes.map((t) => `<h3>${escapeHtml(t.title)}</h3><p>${escapeHtml(t.body)}</p>`).join("\n")) : "",
       intro ? section("How to read it well", para(intro.reading)) : "",
+      intro?.text ? section(`The text of ${b.name}`, para(intro.text)) : "",
+      intro?.reception ? section(`How ${b.name} has been read`, para(intro.reception)) : "",
+      intro?.furtherReading?.length ? section("Further reading", `<ul>${intro.furtherReading.map((r) => `<li>${escapeHtml(`${r.author}, ${r.title}${r.series ? ` (${r.series}${r.year ? `, ${r.year}` : ""})` : r.year ? ` (${r.year})` : ""}. ${r.note}`)}</li>`).join("")}</ul>`) : "",
     ].join("\n");
     emit(
       `/study/bible/${b.slug}`,
@@ -815,6 +818,7 @@ function prerenderStudyBible(template) {
 
     for (let c = 1; c <= b.chapters; c++) {
       const note = read(`notes/${b.slug}/${c}.json`);
+      const vnotes = read(`notes/${b.slug}/verses/${c}.json`)?.verses ?? [];
       const text = read(`ch/${b.slug}/${c}.json`);
       const verses = (text?.verses ?? []).filter((v) => v.t).map((v) => `<li value="${v.v}">${escapeHtml(v.t)}</li>`).join("\n");
       const lang = b.testament === "OT" ? "Hebrew" : "Greek";
@@ -828,9 +832,21 @@ function prerenderStudyBible(template) {
         note ? section("How the chapter is built", `${para(note.literary)}\n<ol>${note.outline.map((o) => `<li>${escapeHtml(`${c}:${o.v} ${o.t}`)}</li>`).join("")}</ol>`) : "",
         note ? section("What it teaches", note.doctrines.map((d) => `<p><a href="/study/bible/doctrines/${escapeHtml(d.id)}">${escapeHtml(doctrines.find((x) => x.id === d.id)?.name ?? d.id)}</a>. ${escapeHtml(d.note)}</p>`).join("\n")) : "",
         note ? section(`Key ${lang} words`, note.words.map((w) => `<p>${escapeHtml(w.note)}</p>`).join("\n")) : "",
+        vnotes.length ? section("Verse by verse", vnotes.map((e) => [
+          `<h3>${escapeHtml(`${b.name} ${c}:${e.v}`)}</h3>`,
+          para(e.context),
+          e.grammar ? `<h4>The ${lang}</h4>\n${para(e.grammar)}` : "",
+          e.history ? `<h4>Background</h4>\n${para(e.history)}` : "",
+          (e.theology ?? []).map((t) => `<p><a href="/study/bible/doctrines/${escapeHtml(t.id)}">${escapeHtml(doctrines.find((x) => x.id === t.id)?.name ?? t.id)}</a>. ${escapeHtml(t.note)}</p>`).join("\n"),
+          e.text ? `<h4>The text</h4>\n${para(e.text)}` : "",
+          ...["ot", "nt"].flatMap((k) => (e[k] ?? []).map((x) => `<p><strong>${escapeHtml(x.ref)}</strong>. ${escapeHtml(x.note)}</p>`)),
+        ].filter(Boolean).join("\n")).join("\n")) : "",
         note ? section(b.testament === "OT" ? "How it points to Christ" : "What it shows of Christ", para(note.christ)) : "",
-        note?.hard ? section("A hard question", `<p><em>${escapeHtml(note.hard.q)}</em></p>\n${para(note.hard.a)}`) : "",
-        note ? section("For reflection or a group", `<ol>${note.questions.map((q) => `<li>${escapeHtml(q)}</li>`).join("")}</ol>`) : "",
+        note?.interpretation ? section("How it has been read", para(note.interpretation)) : "",
+        note?.text ? section("The text and translations", para(note.text)) : "",
+        ...(note?.hard == null ? [] : Array.isArray(note.hard) ? note.hard : [note.hard]).map((h) => section("A hard question", `<p><em>${escapeHtml(h.q)}</em></p>\n${para(h.a)}`)),
+        note?.teach ? section("For teaching and preaching", `<p><strong>${escapeHtml(note.teach.big)}</strong></p>\n<ol>${note.teach.outline.map((o) => `<li>${escapeHtml(`${c}:${o.v} ${o.t}`)}</li>`).join("")}</ol>\n${para(note.teach.pitfalls)}${note.teach.pastoral ? `\n${para(note.teach.pastoral)}` : ""}`) : "",
+        note ? section("Questions for study or a group", `<ol>${(Array.isArray(note.questions) ? note.questions : [...note.questions.observe, ...note.questions.interpret, ...note.questions.apply]).map((q) => `<li>${escapeHtml(q)}</li>`).join("")}</ol>`) : "",
         `<nav><a href="/study/bible/${b.slug}">${escapeHtml(b.name)}</a>${c > 1 ? ` · <a href="/study/bible/${b.slug}/${c - 1}">${escapeHtml(`${b.name} ${c - 1}`)}</a>` : ""}${c < b.chapters ? ` · <a href="/study/bible/${b.slug}/${c + 1}">${escapeHtml(`${b.name} ${c + 1}`)}</a>` : ""}</nav>`,
       ].join("\n");
       emit(
@@ -860,15 +876,38 @@ function prerenderStudyBible(template) {
 
   for (const d of doctrines) {
     const keys = index.doctrines?.[d.id] ?? [];
+    const st = read(`doctrines/${d.id}.json`);
+    const studyBody = st ? [
+      section("What it is", para(st.definition)),
+      section("In the Old Testament", para(st.ot)),
+      section("In the New Testament", para(st.nt)),
+      section("Key texts", `<ol>${st.keyTexts.map((k) => `<li><strong>${escapeHtml(k.ref)}</strong>. ${escapeHtml(k.why)}</li>`).join("\n")}</ol>`),
+      section("How the church has confessed it", para(st.history)),
+      section("Where Christians differ", st.differ.map((x) => `<h3>${escapeHtml(x.view)}</h3>\n${para(x.body)}`).join("\n")),
+      section("Misunderstandings the church has rejected", para(st.errors)),
+      section("Why it matters", para(st.life)),
+    ].join("\n") : "";
     const links = keys.map((k) => { const [slug, c] = k.split("/"); return `<li><a href="/study/bible/${slug}/${c}">${escapeHtml(`${bookName(slug)} ${c}`)}${titleOf(slug, +c) ? `: ${escapeHtml(titleOf(slug, +c))}` : ""}</a></li>`; }).join("\n");
     emit(
       `/study/bible/doctrines/${d.id}`,
       `${d.name}: What the Bible Teaches`,
       trim(d.summary),
       [root, { name: "The Doctrines of the Bible", path: "/study/bible/doctrines" }, { name: d.name, path: `/study/bible/doctrines/${d.id}` }],
-      [`<h1>${escapeHtml(d.name)}</h1>`, para(d.summary), links ? section("Where the Bible teaches it", `<ol>\n${links}\n</ol>`) : ""].join("\n")
+      [`<h1>${escapeHtml(d.name)}</h1>`, para(d.summary), studyBody, links ? section("Chapters that teach it", `<ol>\n${links}\n</ol>`) : ""].join("\n")
     );
   }
+  const gi = read("guides/index.json");
+  for (const g of gi?.groups ?? [])
+    for (const x of g.guides) {
+      const gd = read(`guides/${x.id}.json`);
+      if (!gd) continue;
+      const body = [
+        `<h1>${escapeHtml(gd.title)}</h1>`,
+        `<p>${escapeHtml(gd.summary)}</p>`,
+        ...gd.sections.map((s) => section(s.h, `${para(s.body)}${s.table ? `\n<table>${s.table.caption ? `<caption>${escapeHtml(s.table.caption)}</caption>` : ""}<tr>${s.table.columns.map((c) => `<th>${escapeHtml(c)}</th>`).join("")}</tr>${s.table.rows.map((r) => `<tr>${r.map((c) => `<td>${escapeHtml(c)}</td>`).join("")}</tr>`).join("")}</table>` : ""}`)),
+      ].join("\n");
+      emit(`/study/bible/guides/${x.id}`, gd.title, trim(gd.summary), [root, { name: "Guides", path: "/study/bible/guides" }, { name: gd.title, path: `/study/bible/guides/${x.id}` }], body, "article");
+    }
   return n;
 }
 

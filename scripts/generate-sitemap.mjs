@@ -310,6 +310,10 @@ function manifestPages() {
     for (const a of JSON.parse(fs.readFileSync("client/public/bible/story.json", "utf8")).acts)
       pages.push({ url: `/study/bible/story/${a.id}`, priority: "0.8", changefreq: "monthly" });
     pages.push({ url: "/study/bible/doctrines", priority: "0.8", changefreq: "monthly" });
+    pages.push({ url: "/study/bible/guides", priority: "0.8", changefreq: "monthly" });
+    if (fs.existsSync("client/public/bible/guides/index.json"))
+      for (const g of JSON.parse(fs.readFileSync("client/public/bible/guides/index.json", "utf8")).groups)
+        for (const x of g.guides) if (fs.existsSync(`client/public/bible/guides/${x.id}.json`)) pages.push({ url: `/study/bible/guides/${x.id}`, priority: "0.7", changefreq: "monthly" });
     for (const d of JSON.parse(fs.readFileSync("client/public/bible/doctrines.json", "utf8")).doctrines)
       pages.push({ url: `/study/bible/doctrines/${d.id}`, priority: "0.7", changefreq: "monthly" });
   } catch (err) {

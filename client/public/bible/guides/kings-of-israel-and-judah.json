@@ -1,0 +1,661 @@
+{
+  "id": "kings-of-israel-and-judah",
+  "title": "The Kings of Israel and Judah",
+  "summary": "Every king of the united and divided kingdoms with approximate dates (Thiele's scheme, with where other chronologies differ), the prophets who spoke to them, the empires around them, and how Kings and Chronicles tell their story.",
+  "sections": [
+    {
+      "h": "Why the kings matter",
+      "body": "For about four hundred years, from Saul in the late eleventh century BC to Zedekiah in the early sixth, Israel lived under kings. Much of the Old Testament was written in those centuries or about them. The books of Samuel and Kings tell the story from the rise of the monarchy to the fall of Jerusalem; Chronicles retells it for a later generation; and most of the prophets date their words by the reigns of kings. Isaiah's book opens with its setting: “This is the vision concerning Judah and Jerusalem that Isaiah son of Amoz saw during the reigns of Uzziah, Jotham, Ahaz, and Hezekiah, kings of Judah.” (Isaiah 1:1). A reader who knows roughly when Uzziah and Hezekiah reigned, and what Assyria was doing at the time, can read Isaiah as words spoken into real crises rather than as floating oracles.\n\nThe story has three stages. First comes the united kingdom under Saul, David, and Solomon, when all twelve tribes shared one king. At Solomon's death, around 931 BC, the kingdom split. The ten northern tribes followed Jeroboam and kept the name Israel (the prophets often call it Ephraim, after its largest tribe, or Samaria, after its capital). The south, Judah with most of Benjamin, stayed with David's grandson Rehoboam and kept Jerusalem and its temple. Israel lasted about two hundred years, until Assyria took Samaria in 722 BC. Judah lasted about a century and a half longer, until Babylon destroyed Jerusalem in 587 or 586 BC.\n\nThe two kingdoms were very different. Judah had one dynasty from start to finish: every king who reigned in Jerusalem, apart from the usurping queen Athaliah, was a descendant of David, which is why the promise of 2 Samuel 7 could keep its shape through four centuries. Israel had nine dynasties in two hundred years, and eight of its nineteen kings lost the throne to a coup. Judah was smaller, poorer, and more isolated in its hills; Israel was larger, richer, more open to the trade routes and to the powers that used them, and so more exposed.\n\nThis guide gives the dates for each king, explains how those dates are worked out and where scholars differ, lists the prophets who spoke in each reign, and sets the kings among the empires around them. The dates follow the scheme of Edwin R. Thiele, the most widely used chronology in study Bibles, with the main alternatives noted. Every date before the sixth century carries some uncertainty, usually a few years either way, and the guide says so where it matters.",
+      "refs": [
+        "Isaiah 1:1",
+        "2 Samuel 7:12-16",
+        "1 Kings 12:16-20",
+        "2 Kings 17:6",
+        "2 Kings 25:8-10"
+      ]
+    },
+    {
+      "h": "How the dates are worked out",
+      "body": "The books of Kings give two kinds of numbers for almost every king: the length of his reign, and a synchronism tying his accession to the reign of the king in the other kingdom (for example, 1 Kings 15:33 dates Baasha's accession in Israel to the third year of Asa of Judah). Added up naively, these numbers do not agree with each other, and they do not agree with the dates known from Assyria and Babylon. For centuries this looked like a hopeless tangle.\n\nThe tangle comes largely from the ways ancient scribes counted. Some kingdoms used accession-year reckoning: the months between a king's accession and the next new year were his ‘accession year’, and his first year began at the following new year. Others used non-accession reckoning, counting that partial year as year one, so that the same stretch of months was counted twice, once for the dead king and once for the new one. Kingdoms also started their years at different times, some in the spring month of Nisan and some in the autumn month of Tishri. And in Judah especially a son was often made co-regent while his father still lived, so that the two reigns overlap; a reign length may count from the start of the co-regency or from the start of sole rule.\n\nEdwin R. Thiele, an American scholar, worked through these possibilities systematically in The Mysterious Numbers of the Hebrew Kings (first published in 1951, with a third edition in 1983). He argued that Judah counted its regnal years from Tishri and Israel from Nisan, that Israel used non-accession reckoning at first and Judah accession reckoning (with a period when Judah borrowed the northern method), and that several co-regencies explain the overlaps. With these rules nearly all the biblical numbers fit together and with the fixed points from Assyria. Thiele placed the division of the kingdom in 931 or 930 BC. His system has been refined by Leslie McFall (Bibliotheca Sacra, 1991) and Rodger Young, and it underlies most evangelical study Bibles.\n\nThe fixed points come from outside the Bible. Assyrian scribes named each year after an official (the eponym lists), and one list records an eclipse of the sun in the eponymy of Bur-Sagale, which astronomers date to 15 June 763 BC. That anchors the Assyrian chronology. From it: the Kurkh Monolith of Shalmaneser III names ‘Ahab the Israelite’ among the kings who fought him at Qarqar in 853 BC; the Black Obelisk of the same king, found at Nimrud by Austen Henry Layard in 1846, shows Jehu or his envoy bowing with tribute in 841 BC; Sennacherib's annals date his campaign against Hezekiah to 701 BC; and the Babylonian Chronicle records Nebuchadnezzar taking Jerusalem on the second day of Adar in his seventh year, which is 16 March 597 BC. The twelve years between Ahab at Qarqar and Jehu's tribute are exactly filled, on Thiele's reckoning, by Ahab's last year and the reigns of Ahaziah and Joram.\n\nOther scholars count differently. William F. Albright, working before Thiele's book, put the division in 922 BC by treating some of the biblical numbers as corrupt and adjusting them; John Bright's widely read History of Israel followed his dates. John H. Hayes and Paul K. Hooker (A New Chronology for the Kings of Israel and Judah, 1988) put it in 927. Gershon Galil's The Chronology of the Kings of Israel and Judah (1996) agrees with Thiele on many points but differs on Hezekiah. The differences are rarely more than a decade, and the order of events is not in dispute.\n\nThe hardest single problem is Hezekiah. 2 Kings 18:10 dates the fall of Samaria (722) to his sixth year, which would put his accession around 727. But 2 Kings 18:13 says Sennacherib attacked in his fourteenth year, and that attack is fixed at 701, which puts his accession around 715. Thiele took 715 as the true date and judged the synchronisms of 2 Kings 18:1 and 18:9-10 to be the work of a later editor who misunderstood a co-regency. Others, including Galil (who dates Hezekiah from 726), take the earlier date and explain the fourteenth year differently, for example as a scribal slip or as a reference to an earlier Assyrian campaign. Still others propose a co-regency of Hezekiah with Ahaz. No solution has won everyone.\n\nThe table below gives Thiele's dates, written as he wrote them: a date such as 931/930 means the regnal year that began in the autumn or spring of 931 and ended in 930. Where a king began as co-regent, the co-regency is given first.",
+      "table": {
+        "caption": "Where the main chronologies differ (all dates BC)",
+        "columns": [
+          "Event",
+          "Thiele",
+          "Other reckonings"
+        ],
+        "rows": [
+          [
+            "Division of the kingdom",
+            "931/930",
+            "Albright 922; Hayes and Hooker 927"
+          ],
+          [
+            "Ahab's reign",
+            "874/873 to 853",
+            "Albright 869 to 850"
+          ],
+          [
+            "Jehu's accession",
+            "841",
+            "Albright 842"
+          ],
+          [
+            "Rehoboam's reign",
+            "931/930 to 913",
+            "Albright 922 to 915; Galil 931 to 914"
+          ],
+          [
+            "Hezekiah's reign",
+            "716/715 to 687/686",
+            "Albright 715 to 687; Galil 726 to 697"
+          ],
+          [
+            "Fall of Samaria",
+            "723/722",
+            "722 or 721 in most histories; the city fell at the end of Shalmaneser V's reign and Sargon II completed the deportation"
+          ],
+          [
+            "Fall of Jerusalem",
+            "586",
+            "Many historians prefer 587; the difference turns on how Zedekiah's years are counted"
+          ]
+        ]
+      },
+      "refs": [
+        "1 Kings 15:33",
+        "2 Kings 18:1",
+        "2 Kings 18:9-13",
+        "1 Kings 22:51",
+        "2 Kings 3:1"
+      ]
+    },
+    {
+      "h": "The united kingdom",
+      "body": "Israel's first kings reigned before the fixed points begin, so their dates are counted backward from the division and are approximate. Saul's reign is the least certain. The Hebrew text of 1 Samuel 13:1 is damaged: it literally says that Saul was ‘a year old’ when he began to reign and reigned ‘two years’, and English translations fill the gaps in different ways, some from later Greek manuscripts and some by estimate. Paul's sermon in Acts 13:21 gives Saul forty years, which may be a round number or may include the years of his son Ish-bosheth. Most study Bibles place Saul around 1050 to 1010 BC.\n\nDavid reigned forty years, seven and a half at Hebron over Judah alone and thirty-three at Jerusalem over all Israel (2 Samuel 5:4-5). During the Hebron years Saul's son Ish-bosheth (Eshbaal in 1 Chronicles 8:33) reigned over the northern tribes for two years (2 Samuel 2:10). Solomon then reigned forty years (1 Kings 11:42). Counting back from 931 gives David about 1010 to 970 and Solomon about 970 to 931. The round forties may be approximate, as forty often is in the Bible, but the overall span fits what archaeology shows of the tenth century.\n\nDavid's existence as founder of a dynasty is attested outside the Bible. The Tel Dan inscription, found in 1993 and 1994, is an Aramean king's victory stele from the ninth century that mentions the ‘house of David’, the same phrase the Bible uses for Judah's royal line. The extent and wealth of David's and Solomon's kingdom are debated among archaeologists: some, such as Israel Finkelstein, argue for a modest chiefdom and would redate some monumental buildings to the ninth century; others, such as Amihai Mazar and the excavators of Khirbet Qeiyafa, argue for a real, if small, tenth-century state.\n\nProphets stood beside the first kings from the start. Samuel anointed both Saul and David and pronounced Saul's rejection. Nathan brought David the promise of an everlasting house (2 Samuel 7) and then the rebuke over Bathsheba (2 Samuel 12). Gad advised David in the wilderness and after the census (1 Samuel 22:5; 2 Samuel 24:11). Ahijah of Shiloh tore his cloak into twelve pieces and gave ten to Jeroboam, announcing the division before Solomon died (1 Kings 11:29-39). This pattern runs through the whole period: the king holds power, and a prophet speaks the word of God to him, often at great cost.",
+      "table": {
+        "caption": "The united kingdom (dates approximate, BC)",
+        "columns": [
+          "King",
+          "About",
+          "Years in the text",
+          "Prophets",
+          "Where to read"
+        ],
+        "rows": [
+          [
+            "Saul",
+            "1050 to 1010",
+            "Hebrew text damaged (1 Samuel 13:1); forty in Acts 13:21",
+            "Samuel",
+            "1 Samuel 9 to 31"
+          ],
+          [
+            "Ish-bosheth (Eshbaal), over the north",
+            "About 1010 to 1008",
+            "2 (2 Samuel 2:10)",
+            "None named",
+            "2 Samuel 2 to 4"
+          ],
+          [
+            "David",
+            "1010 to 970",
+            "40: 7 1/2 in Hebron, 33 in Jerusalem",
+            "Samuel, Gad, Nathan",
+            "1 Samuel 16 to 1 Kings 2; 1 Chronicles 11 to 29"
+          ],
+          [
+            "Solomon",
+            "970 to 931",
+            "40",
+            "Nathan, Ahijah",
+            "1 Kings 1 to 11; 2 Chronicles 1 to 9"
+          ]
+        ]
+      },
+      "refs": [
+        "1 Samuel 13:1",
+        "Acts 13:21",
+        "2 Samuel 5:4-5",
+        "2 Samuel 7:12-16",
+        "1 Kings 11:29-39"
+      ]
+    },
+    {
+      "h": "The kings of Judah",
+      "body": "Judah's twenty rulers (nineteen kings and one queen) reigned from Rehoboam's accession around 931 BC to Zedekiah's capture in 586. The table gives Thiele's dates, the reign lengths the Bible gives, and the prophets active in each reign, whether they are named in Kings and Chronicles or date their own books by that king. Kings and Chronicles judge each king by his faithfulness to the LORD and his worship: eight kings of Judah are said to have done what was right, though most of them left the ‘high places’ (local shrines) standing; only Hezekiah and Josiah are praised without reserve (2 Kings 18:5; 23:25).\n\nA few features of the list deserve notice. The co-regencies cluster in the eighth century, when Uzziah's skin disease forced him to hand public duties to his son Jotham (2 Kings 15:5) and when Assyrian pressure made a smooth succession urgent. Athaliah, daughter of Ahab and Jezebel, seized the throne after her son Ahaziah died and tried to wipe out the royal family; the infant Joash was hidden in the temple for six years until the priest Jehoiada crowned him (2 Kings 11). The last four kings were puppets of foreign powers: Pharaoh Neco deposed Jehoahaz and installed Jehoiakim, and Nebuchadnezzar deported Jehoiachin and installed Zedekiah, renaming him as a sign of vassalage. Several kings are known by two names: Abijah is Abijam in Kings, Uzziah is also Azariah, Jehoahaz is Shallum in Jeremiah 22:11, and Jehoiachin is Jeconiah or Coniah.\n\nArchaeology touches several of these reigns. Shishak's raid in Rehoboam's fifth year appears on the Bubastite Portal at Karnak, where Pharaoh Shoshenq I listed the places he claimed in the land. A clay seal impression reading ‘belonging to Hezekiah son of Ahaz, king of Judah’ was found in Jerusalem in 2015. The Siloam tunnel inscription, found in 1880, records the cutting of the water channel usually tied to Hezekiah's preparations against Assyria (2 Kings 20:20). Sennacherib's annals and the reliefs of the siege of Lachish from his palace at Nineveh tell the Assyrian side of 701. Ration tablets from Babylon, published in 1939, list oil allotted to ‘Jehoiachin king of Judah’ and his sons in exile.",
+      "table": {
+        "caption": "Kings of Judah (Thiele's dates, BC)",
+        "columns": [
+          "Ruler",
+          "Reign (Thiele)",
+          "Years in the text",
+          "Prophets active",
+          "Where to read"
+        ],
+        "rows": [
+          [
+            "Rehoboam",
+            "931/930 to 913",
+            "17",
+            "Shemaiah; Iddo the seer",
+            "1 Kings 12:1 to 14:31; 2 Chronicles 10 to 12"
+          ],
+          [
+            "Abijah (Abijam)",
+            "913 to 911/910",
+            "3",
+            "Iddo (his records, 2 Chronicles 13:22)",
+            "1 Kings 15:1-8; 2 Chronicles 13"
+          ],
+          [
+            "Asa",
+            "911/910 to 870/869",
+            "41",
+            "Azariah son of Oded; Hanani the seer",
+            "1 Kings 15:9-24; 2 Chronicles 14 to 16"
+          ],
+          [
+            "Jehoshaphat",
+            "872/871 (with Asa); alone 870/869 to 848",
+            "25",
+            "Jehu son of Hanani; Micaiah; Jahaziel; Eliezer son of Dodavahu; Elijah in the north",
+            "1 Kings 22; 2 Chronicles 17 to 20"
+          ],
+          [
+            "Jehoram (Joram)",
+            "853 (with Jehoshaphat); alone 848 to 841",
+            "8",
+            "Elijah (a letter, 2 Chronicles 21:12); Elisha in the north",
+            "2 Kings 8:16-24; 2 Chronicles 21"
+          ],
+          [
+            "Ahaziah",
+            "841",
+            "1",
+            "Elisha in the north",
+            "2 Kings 8:25-29; 9:27-29; 2 Chronicles 22:1-9"
+          ],
+          [
+            "Athaliah (queen)",
+            "841 to 835",
+            "6",
+            "None named; the priest Jehoiada led the restoration",
+            "2 Kings 11; 2 Chronicles 22:10 to 23:21"
+          ],
+          [
+            "Joash (Jehoash)",
+            "835 to 796",
+            "40",
+            "Zechariah son of Jehoiada, stoned in the temple court",
+            "2 Kings 12; 2 Chronicles 24"
+          ],
+          [
+            "Amaziah",
+            "796 to 767",
+            "29",
+            "An unnamed man of God and an unnamed prophet (2 Chronicles 25)",
+            "2 Kings 14:1-22; 2 Chronicles 25"
+          ],
+          [
+            "Uzziah (Azariah)",
+            "792/791 (with Amaziah); alone 767 to 740/739",
+            "52",
+            "Zechariah (2 Chronicles 26:5); Amos; Hosea; Isaiah (called in the year Uzziah died)",
+            "2 Kings 15:1-7; 2 Chronicles 26; Isaiah 6"
+          ],
+          [
+            "Jotham",
+            "750 (regent for Uzziah); alone 740/739; lost power 735; died 732/731",
+            "16",
+            "Isaiah; Hosea; Micah",
+            "2 Kings 15:32-38; 2 Chronicles 27"
+          ],
+          [
+            "Ahaz",
+            "735 (with Jotham) to 716/715",
+            "16",
+            "Isaiah; Hosea; Micah; Oded in Samaria",
+            "2 Kings 16; 2 Chronicles 28; Isaiah 7"
+          ],
+          [
+            "Hezekiah",
+            "716/715 to 687/686",
+            "29",
+            "Isaiah; Micah",
+            "2 Kings 18 to 20; 2 Chronicles 29 to 32; Isaiah 36 to 39"
+          ],
+          [
+            "Manasseh",
+            "697/696 (with Hezekiah) to 643/642",
+            "55",
+            "Unnamed prophets (2 Kings 21:10)",
+            "2 Kings 21:1-18; 2 Chronicles 33:1-20"
+          ],
+          [
+            "Amon",
+            "643/642 to 641/640",
+            "2",
+            "None named",
+            "2 Kings 21:19-26; 2 Chronicles 33:21-25"
+          ],
+          [
+            "Josiah",
+            "641/640 to 609",
+            "31",
+            "Jeremiah (from his 13th year); Zephaniah; Huldah; probably Nahum",
+            "2 Kings 22 to 23; 2 Chronicles 34 to 35"
+          ],
+          [
+            "Jehoahaz (Shallum)",
+            "609",
+            "3 months",
+            "Jeremiah",
+            "2 Kings 23:31-34; Jeremiah 22:10-12"
+          ],
+          [
+            "Jehoiakim (Eliakim)",
+            "609 to 598",
+            "11",
+            "Jeremiah; Uriah son of Shemaiah; probably Habakkuk; Daniel taken to Babylon in 605",
+            "2 Kings 23:34 to 24:7; Jeremiah 26; 36"
+          ],
+          [
+            "Jehoiachin (Jeconiah)",
+            "598 to 597",
+            "3 months",
+            "Jeremiah; Ezekiel, deported with him",
+            "2 Kings 24:8-17; 25:27-30"
+          ],
+          [
+            "Zedekiah (Mattaniah)",
+            "597 to 586",
+            "11",
+            "Jeremiah; Ezekiel in Babylon (from 593); Hananiah, a false prophet",
+            "2 Kings 24:18 to 25:7; Jeremiah 37 to 39; 52"
+          ]
+        ]
+      },
+      "refs": [
+        "2 Kings 18:5",
+        "2 Kings 23:25",
+        "2 Kings 15:5",
+        "2 Kings 11:1-3",
+        "2 Kings 20:20"
+      ]
+    },
+    {
+      "h": "The kings of Israel",
+      "body": "The northern kingdom began in revolt. When Rehoboam refused to lighten the forced labor his father had imposed, the northern tribes answered, “What portion do we have in David, and what inheritance in the son of Jesse? To your tents, O Israel! Look now to your own house, O David!” (1 Kings 12:16). Jeroboam, a former overseer of Solomon's labor gangs, became king. To keep his people from going up to Jerusalem to worship, he set up golden calves at Bethel and Dan with their own priests and festival calendar (1 Kings 12:26-33). Every later northern king is measured against this act: each one is said to have done evil in the sight of the LORD and to have kept to the sins of Jeroboam son of Nebat, even Jehu, who destroyed Baal worship.\n\nIsrael's history is a sequence of dynasties that rose by violence and fell the same way. Baasha killed Jeroboam's son Nadab; Zimri killed Baasha's son Elah and lasted seven days; Omri, the army commander, defeated Zimri and then a rival named Tibni. The dynasty of Omri (Omri, Ahab, Ahaziah, Joram) made Israel a regional power. Omri built Samaria as a new capital, and Assyrian records went on calling Israel ‘the house of Omri’ long after his line had ended. The Mesha Stele, found at Dhiban in 1868, records Moab's revolt against Omri's successors (compare 2 Kings 3). Ahab's marriage to Jezebel, a princess of Sidon, brought the worship of Baal into the court and set up the contest with Elijah.\n\nJehu, anointed at Elisha's command, wiped out Ahab's house in 841 and founded the longest northern dynasty, five kings over nearly a century. God promised him descendants on the throne to the fourth generation (2 Kings 10:30), and the text notes the fulfillment when Zechariah, the fourth, was murdered (2 Kings 15:12). Under Jeroboam II Israel reached its greatest extent and wealth, the prosperity that Amos and Hosea exposed as rotten underneath. After him the kingdom fell apart in twenty-five years: four kings were assassinated, Menahem paid a thousand talents of silver to the Assyrian king Tiglath-pileser III (called Pul in 2 Kings 15:19), and Pekah's alliance with Damascus against Assyria brought the Assyrians down on Galilee in 733 or 732. Hoshea, Assyria's appointee, withheld tribute and looked to Egypt; Shalmaneser V besieged Samaria for three years, and it fell in 722.\n\nThiele's reconstruction of Pekah's reign is one of his more debated proposals. The Bible gives Pekah twenty years (2 Kings 15:27), but he cannot have reigned alone in Samaria for that long between Pekahiah and Hoshea. Thiele proposed that Pekah claimed the throne in Gilead, east of the Jordan, from 752, as a rival to Menahem and Pekahiah, and counted his years from then. Other chronologers reject the rival reign and treat the twenty years as a textual or editorial problem.",
+      "table": {
+        "caption": "Kings of Israel (Thiele's dates, BC)",
+        "columns": [
+          "King",
+          "Reign (Thiele)",
+          "Years in the text",
+          "Prophets active",
+          "Where to read"
+        ],
+        "rows": [
+          [
+            "Jeroboam I",
+            "931/930 to 910/909",
+            "22",
+            "Ahijah of Shiloh; the man of God from Judah (1 Kings 13)",
+            "1 Kings 11:26 to 14:20"
+          ],
+          [
+            "Nadab",
+            "910/909 to 909/908",
+            "2",
+            "None named",
+            "1 Kings 15:25-31"
+          ],
+          [
+            "Baasha",
+            "909/908 to 886/885",
+            "24",
+            "Jehu son of Hanani",
+            "1 Kings 15:27 to 16:7"
+          ],
+          [
+            "Elah",
+            "886/885 to 885/884",
+            "2",
+            "None named",
+            "1 Kings 16:8-14"
+          ],
+          [
+            "Zimri",
+            "885/884",
+            "7 days",
+            "None named",
+            "1 Kings 16:9-20"
+          ],
+          [
+            "Tibni (rival to Omri)",
+            "885/884 to 880",
+            "Not given",
+            "None named",
+            "1 Kings 16:21-22"
+          ],
+          [
+            "Omri",
+            "885/884 to 874/873 (alone from 880)",
+            "12",
+            "None named",
+            "1 Kings 16:15-28"
+          ],
+          [
+            "Ahab",
+            "874/873 to 853",
+            "22",
+            "Elijah; Micaiah son of Imlah; unnamed prophets (1 Kings 20)",
+            "1 Kings 16:29 to 22:40"
+          ],
+          [
+            "Ahaziah",
+            "853 to 852",
+            "2",
+            "Elijah",
+            "1 Kings 22:51 to 2 Kings 1:18"
+          ],
+          [
+            "Joram (Jehoram)",
+            "852 to 841",
+            "12",
+            "Elisha",
+            "2 Kings 3 to 9"
+          ],
+          [
+            "Jehu",
+            "841 to 814/813",
+            "28",
+            "Elisha",
+            "2 Kings 9 to 10"
+          ],
+          [
+            "Jehoahaz",
+            "814/813 to 798",
+            "17",
+            "Elisha",
+            "2 Kings 13:1-9"
+          ],
+          [
+            "Jehoash (Joash)",
+            "798 to 782/781",
+            "16",
+            "Elisha, who died in his reign",
+            "2 Kings 13:10-25; 14:8-16"
+          ],
+          [
+            "Jeroboam II",
+            "793/792 (with Jehoash) to 753",
+            "41",
+            "Jonah son of Amittai; Amos; Hosea",
+            "2 Kings 14:23-29"
+          ],
+          [
+            "Zechariah",
+            "753",
+            "6 months",
+            "Hosea",
+            "2 Kings 15:8-12"
+          ],
+          [
+            "Shallum",
+            "752",
+            "1 month",
+            "Hosea",
+            "2 Kings 15:13-15"
+          ],
+          [
+            "Menahem",
+            "752 to 742/741",
+            "10",
+            "Hosea",
+            "2 Kings 15:16-22"
+          ],
+          [
+            "Pekahiah",
+            "742/741 to 740/739",
+            "2",
+            "Hosea",
+            "2 Kings 15:23-26"
+          ],
+          [
+            "Pekah",
+            "752 (rival, in Thiele's view) to 732/731",
+            "20",
+            "Hosea; Oded (2 Chronicles 28:9)",
+            "2 Kings 15:27-31; Isaiah 7"
+          ],
+          [
+            "Hoshea",
+            "732/731 to 723/722",
+            "9",
+            "Hosea",
+            "2 Kings 17:1-6"
+          ]
+        ]
+      },
+      "refs": [
+        "1 Kings 12:16",
+        "1 Kings 12:26-33",
+        "2 Kings 10:30",
+        "2 Kings 15:12",
+        "2 Kings 15:19-20"
+      ]
+    },
+    {
+      "h": "The empires around the kings",
+      "body": "The kings of Israel and Judah never reigned in isolation. For the first century after the division their main enemies were near neighbors: Egypt's raid under Shishak around 925, the Arameans of Damascus, Moab, Edom, and each other (Israel and Judah fought repeatedly until the house of Omri made peace by marriage). Ben-hadad and Hazael of Damascus pressed Israel hard in the ninth century; Hazael, over whom Elisha wept because he foresaw what Hazael would do to Israel (2 Kings 8:7-15), reduced Jehoahaz's army to a remnant (2 Kings 13:7).\n\nFrom the middle of the ninth century the great power was Assyria. Shalmaneser III fought a coalition that included Ahab at Qarqar in 853 and took tribute from Jehu in 841, though the Bible mentions neither event. Assyria's grip loosened for several decades, which is the window in which Jeroboam II and Uzziah prospered. Then Tiglath-pileser III (745 to 727) began a policy of annexing rebel states and deporting their populations. His successors Shalmaneser V (727 to 722) and Sargon II (722 to 705) ended the northern kingdom and resettled its territory with people from elsewhere (2 Kings 17:24). Sennacherib (705 to 681) devastated Judah in 701, took Lachish, and shut Hezekiah up in Jerusalem, but did not take the city. His own annals boast of the tribute he received and do not claim a capture; the Bible attributes the deliverance to the angel of the LORD (2 Kings 19:35-36).\n\nAssyria fell quickly at the end of the seventh century: Nineveh was taken by the Babylonians and Medes in 612. Pharaoh Neco II marched north to support the last Assyrian forces, and Josiah died trying to stop him at Megiddo in 609. In 605 Nebuchadnezzar defeated the Egyptians at Carchemish, and Judah became a Babylonian vassal. Jehoiakim's rebellion brought the first deportation in 597; Zedekiah's rebellion, encouraged by Egypt, brought the siege that ended in the burning of the temple. The Guide to the empires in this series tells the story of each power at more length.",
+      "table": {
+        "caption": "Where the kings meet the empires",
+        "columns": [
+          "Date BC (about)",
+          "Event",
+          "Kings involved",
+          "Sources"
+        ],
+        "rows": [
+          [
+            "925",
+            "Shishak (Shoshenq I) raids Judah and Israel",
+            "Rehoboam; Jeroboam I",
+            "1 Kings 14:25-26; Karnak relief"
+          ],
+          [
+            "853",
+            "Battle of Qarqar against Shalmaneser III",
+            "Ahab",
+            "Kurkh Monolith"
+          ],
+          [
+            "841",
+            "Jehu pays tribute to Shalmaneser III",
+            "Jehu",
+            "Black Obelisk"
+          ],
+          [
+            "about 740",
+            "Menahem pays tribute to Tiglath-pileser III",
+            "Menahem",
+            "2 Kings 15:19-20; Assyrian annals"
+          ],
+          [
+            "734 to 732",
+            "Syro-Ephraimite war; Assyria takes Damascus and Galilee",
+            "Ahaz; Pekah; Hoshea",
+            "2 Kings 16:5-9; Isaiah 7; Assyrian annals"
+          ],
+          [
+            "722",
+            "Samaria falls after a three-year siege",
+            "Hoshea",
+            "2 Kings 17:5-6; Babylonian Chronicle; Sargon's inscriptions"
+          ],
+          [
+            "701",
+            "Sennacherib invades Judah, takes Lachish, besieges Jerusalem",
+            "Hezekiah",
+            "2 Kings 18 to 19; Sennacherib's annals; Lachish reliefs"
+          ],
+          [
+            "609",
+            "Josiah killed at Megiddo opposing Neco II",
+            "Josiah; Jehoahaz",
+            "2 Kings 23:29-34"
+          ],
+          [
+            "605",
+            "Battle of Carchemish; Judah becomes Babylon's vassal",
+            "Jehoiakim",
+            "Jeremiah 46:2; Babylonian Chronicle"
+          ],
+          [
+            "597",
+            "Jerusalem surrenders; Jehoiachin deported",
+            "Jehoiachin; Zedekiah",
+            "2 Kings 24:10-17; Babylonian Chronicle"
+          ],
+          [
+            "586",
+            "Jerusalem and the temple destroyed",
+            "Zedekiah",
+            "2 Kings 25; Jeremiah 39; 52"
+          ]
+        ]
+      },
+      "refs": [
+        "2 Kings 8:7-15",
+        "2 Kings 17:24",
+        "2 Kings 19:35-36",
+        "2 Kings 23:29",
+        "Jeremiah 46:2"
+      ]
+    },
+    {
+      "h": "The prophets and the kings",
+      "body": "Prophecy in Israel grew up alongside the monarchy, and the two institutions defined each other. The king held the sword, the treasury, and the army; the prophet held nothing but a word he claimed came from God. Nathan confronted David, Elijah confronted Ahab, Isaiah confronted Ahaz, and Jeremiah confronted Jehoiakim, who cut his scroll to pieces and burned it (Jeremiah 36). Some prophets served at court and some were hunted by it. Micaiah son of Imlah stood alone against four hundred court prophets who promised Ahab victory (1 Kings 22). Zechariah son of Jehoiada was stoned in the temple court at the order of King Joash (2 Chronicles 24:20-22), and Uriah son of Shemaiah was brought back from Egypt and executed by Jehoiakim (Jeremiah 26:20-23).\n\nThe ninth century was the age of prophets whose stories are told but whose words were not collected into books: Elijah and Elisha above all, whose ministries ran from Ahab to Jehoash, a span of about sixty years. The eighth century brought the first prophets whose words survive as books. Amos, a herdsman from Judah, preached at Bethel under Jeroboam II “two years before the earthquake” (Amos 1:1), an earthquake whose traces archaeologists have identified at Hazor and other sites around 760. Hosea preached in the north through its last decades. Isaiah and Micah preached in Judah through the Assyrian crisis. Jonah is dated by 2 Kings 14:25 to Jeroboam II's reign, though the book that bears his name tells only of his mission to Nineveh.\n\nThe seventh and early sixth centuries brought the prophets of Judah's end. Zephaniah preached under Josiah; Nahum announced the fall of Nineveh, and since he refers to the sack of Thebes in 663 as past (Nahum 3:8) and Nineveh fell in 612, his book belongs between those dates. Habakkuk saw the Chaldeans (Babylonians) rising, which places him most likely under Jehoiakim. Jeremiah preached for forty years, from Josiah's thirteenth year (627 or 626) through the fall of the city, and Ezekiel prophesied among the exiles in Babylon from 593. Daniel's ministry is set at the Babylonian and Persian courts from 605 onward. Joel and Obadiah give no king's name, and their dates are disputed: Obadiah's oracle against Edom is usually tied to Edom's conduct when Jerusalem fell in 586, while Joel has been dated by different scholars anywhere from the ninth century to the Persian period.",
+      "table": {
+        "caption": "The writing prophets and the reigns they name (dates BC, approximate)",
+        "columns": [
+          "Prophet",
+          "Kings named or implied",
+          "About",
+          "Main audience"
+        ],
+        "rows": [
+          [
+            "Jonah",
+            "Jeroboam II (2 Kings 14:25)",
+            "within 793 to 753",
+            "Israel; Nineveh"
+          ],
+          [
+            "Amos",
+            "Uzziah; Jeroboam II",
+            "about 760",
+            "Israel"
+          ],
+          [
+            "Hosea",
+            "Uzziah to Hezekiah; Jeroboam II",
+            "755 to 715",
+            "Israel"
+          ],
+          [
+            "Isaiah",
+            "Uzziah, Jotham, Ahaz, Hezekiah",
+            "740 to 700 and after",
+            "Judah"
+          ],
+          [
+            "Micah",
+            "Jotham, Ahaz, Hezekiah",
+            "735 to 700",
+            "Judah and Samaria"
+          ],
+          [
+            "Zephaniah",
+            "Josiah",
+            "640 to 609",
+            "Judah"
+          ],
+          [
+            "Nahum",
+            "None named",
+            "between 663 and 612",
+            "Nineveh; Judah"
+          ],
+          [
+            "Habakkuk",
+            "None named; the Babylonians rising",
+            "about 609 to 598",
+            "Judah"
+          ],
+          [
+            "Jeremiah",
+            "Josiah to Zedekiah",
+            "627 to after 586",
+            "Judah; the exiles"
+          ],
+          [
+            "Ezekiel",
+            "Dated by Jehoiachin's exile",
+            "593 to 571",
+            "The exiles in Babylon"
+          ],
+          [
+            "Daniel",
+            "Jehoiakim; Nebuchadnezzar to Cyrus",
+            "605 to about 536",
+            "The exiles"
+          ],
+          [
+            "Obadiah",
+            "None named",
+            "probably soon after 586",
+            "Edom; Judah"
+          ],
+          [
+            "Joel",
+            "None named",
+            "disputed, from the 9th century to the Persian period",
+            "Judah"
+          ]
+        ]
+      },
+      "refs": [
+        "Amos 1:1",
+        "Hosea 1:1",
+        "Micah 1:1",
+        "Zephaniah 1:1",
+        "Jeremiah 1:2-3"
+      ]
+    },
+    {
+      "h": "How Kings and Chronicles tell the story",
+      "body": "Kings and Chronicles are not royal annals. Both writers had annals (Kings refers again and again to ‘the Book of the Chronicles of the Kings of Israel’ and ‘of Judah’, sources now lost) and both used them selectively to answer a theological question. Kings, written in its final form during the exile (its last event is Jehoiachin's release in 561 or 560), asks why the kingdoms fell. Its answer is that the kings broke covenant with the LORD, above all by worshiping other gods and by worshiping at places other than the one he chose. The German scholar Martin Noth argued in 1943 that Joshua through Kings form one ‘Deuteronomistic History’, shaped by the theology of Deuteronomy; Frank Moore Cross later argued (1973) for a first edition under Josiah and a second in the exile. Scholars still debate the stages, but the kinship with Deuteronomy is plain.\n\nThis is why Kings can pass over a powerful king in a few verses and give a weak one several chapters. Omri, whom the Assyrians remembered for a century and a half, gets eight verses (1 Kings 16:21-28). Jeroboam II, under whom Israel was at its height, gets seven. Ahab, Hezekiah, and Josiah get long treatment because their reigns turned on faithfulness to God. A reader who wants a political history must supplement Kings with the Assyrian and Babylonian records; a reader who wants to know what the kings meant for Israel's life with God is reading exactly the right book.\n\nChronicles, written after the return from exile (probably in the fourth century BC), retells the story for a community without a king but with a rebuilt temple. It follows only Judah, mentioning northern kings only where they touch Judah's story. It gives far more space to worship: David's preparations for the temple, Hezekiah's Passover, Josiah's reforms. It often draws a close line between a king's faithfulness and his fortunes, and it includes material Kings leaves out, most famously Manasseh's captivity in Babylon and his repentance (2 Chronicles 33:10-17). Readers have long asked whether that account is history or theology; some scholars regard it as the Chronicler's own lesson, while others point out that it may preserve a real tradition, since Assyrian records do list Manasseh among the vassal kings who served Esarhaddon and Ashurbanipal. For the parallel accounts, the verse notes in this Study Bible mark where Kings and Chronicles tell the same event and what each does differently.",
+      "refs": [
+        "1 Kings 14:19",
+        "1 Kings 16:21-28",
+        "2 Kings 14:23-29",
+        "2 Chronicles 33:10-17",
+        "2 Kings 25:27-30"
+      ]
+    },
+    {
+      "h": "After the kings",
+      "body": "Kings ends not with the burning of the temple but with a small scene thirty-seven years later: Evil-merodach (Amel-Marduk), Nebuchadnezzar's son, released Jehoiachin from prison, gave him a seat above the other captive kings, and fed him at the royal table for the rest of his life (2 Kings 25:27-30). The Babylonian ration tablets confirm that Jehoiachin was alive and supported at court. The writer does not explain why he ends there, but readers have long seen in it a flicker of hope: David's line had not been cut off.\n\nNo descendant of David reigned again as king. Jehoiachin's grandson Zerubbabel led the first returning exiles and served as governor of Judah under Persia, and the prophets Haggai and Zechariah spoke of him in royal language (Haggai 2:20-23). After him the line disappears from public life. What remained was the promise: that God would raise up a shoot from the stump of Jesse (Isaiah 11:1), a righteous Branch for David (Jeremiah 23:5), a shepherd who would be David's servant (Ezekiel 34:23).\n\nThe New Testament opens by picking up exactly this thread. Matthew's genealogy runs through the kings of Judah by name, from David and Solomon through Hezekiah, Josiah, and Jeconiah, to Zerubbabel and on to Joseph (Matthew 1:6-16), and it is arranged around the monarchy's rise and its fall into exile. Matthew leaves out four kings (Ahaziah, Joash, and Amaziah between Joram and Uzziah, and Jehoiakim between Josiah and Jeconiah) to fit his three sets of fourteen, a practice common in ancient genealogies. The point of the list is that the long history of the kings, with its few faithful reigns and its many failures, had been leading somewhere. The Gospels present Jesus as the son of David the kings were not.",
+      "refs": [
+        "2 Kings 25:27-30",
+        "Haggai 2:20-23",
+        "Isaiah 11:1",
+        "Jeremiah 23:5",
+        "Matthew 1:6-16"
+      ]
+    }
+  ]
+}

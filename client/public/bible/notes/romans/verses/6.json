@@ -1,0 +1,245 @@
+{
+  "verses": [
+    {
+      "v": "1-2",
+      "context": "Paul turns 5:20 into an objection: if grace increased where sin increased, why not keep sinning so that grace can keep growing? He had already reported that some slandered his gospel this way (3:8). His answer is not to shrink grace but to show what grace has done: the believer has died to sin, and a dead person does not go on living in the realm he has left.",
+      "grammar": "Ti oun eroumen (‘what then shall we say?’) is Paul's regular signal in Romans that he is about to test a conclusion someone might draw (4:1, 6:1, 7:7, 8:31, 9:14, 9:30). Epimenomen, a present subjunctive, asks whether we should ‘stay on’ or ‘persist’ in sin, the same verb used of remaining in a place or state. The reply me genoito, an optative (the Greek mood of wishes), literally ‘may it not be’, is Paul's strongest rejection and appears ten times in Romans. Then comes the reason: hoitines apethanomen te hamartia, ‘we who are such as died to sin’. Hoitines is a qualitative relative (‘people of the kind who’), and apethanomen is an aorist, pointing to a definite event in the past, which verses 3-6 identify as union with Christ in his death. The dative te hamartia (‘to sin’) is a dative of relation or disadvantage: death has ended a relationship, not removed every temptation.",
+      "words": ["G1961", "G1096", "G3748", "G0599"],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "The objection only makes sense if Paul's gospel really is free grace; a gospel of earned acceptance would never be accused of encouraging sin. Paul keeps the grace and answers the objection by showing that grace does not merely pardon, it also relocates the person out of sin's territory."
+        }
+      ],
+      "text": "Most Greek editions read epimenomen, a deliberative subjunctive (‘shall we continue?’); the Textus Receptus behind the King James Version has the future indicative epimenoumen (‘shall we continue?’ as a question about what will happen). The English is the same either way, and the sense barely changes.",
+      "refs": ["Romans 3:8", "Romans 5:20-21", "Galatians 2:17", "Jude 1:4", "1 Peter 2:16"]
+    },
+    {
+      "v": "3",
+      "context": "Paul appeals to what every believer in Rome already knew from their own entry into the church. Baptism was the common experience of every Christian, and Paul says its meaning is union with Christ, and specifically with his death. This is the first half of the argument of verses 3-5: baptized into his death (verse 3), buried with him (verse 4), united with him in death and resurrection (verse 5).",
+      "grammar": "E agnoeite (‘or are you unaware’) assumes the answer: they do know, or should. Ebaptisthemen eis Christon Iesoun, ‘we were baptized into Christ Jesus’, is an aorist passive: something done to them, at a point in time. The preposition eis (‘into’) is the crux. Some take it in a local sense, being plunged into Christ as into a new sphere of existence; others read it as a shortened form of ‘baptized into the name of’ (Matthew 28:19, Acts 8:16, 1 Corinthians 1:13), meaning placed under Christ's ownership. Paul's parallel in 1 Corinthians 10:2, where Israel was ‘baptized into Moses’ in the cloud and the sea, suggests the idea of being bound to a leader and sharing his destiny. The second clause narrows it sharply: eis ton thanaton autou ebaptisthemen, ‘into his death we were baptized’, with the phrase fronted for emphasis. Baptizo in ordinary Greek could mean to dip, plunge, or drench, and the image of immersion lies close to Paul's language of burial in the next verse.",
+      "words": ["G0050", "G0907", "G2288"],
+      "history": "Baptism in water was already the church's rite of entry within a few years of Jesus' death (Acts 2:38-41, 8:36-38), which is why Paul, writing to a church he had never visited, can assume it. The Didache, a Christian manual usually dated to the late first or early second century, prescribes baptism in running water, allows other water if that is lacking, and permits pouring water three times on the head if there is not enough for immersion (Didache 7:1-3). That text shows that immersion was the norm and that the church also allowed other modes early on. Jewish ritual immersion (tevilah) in a miqveh, well attested by stepped pools found at Jerusalem, Qumran, and elsewhere, was a familiar background, but Christian baptism differed in being received once and in the name of Jesus.",
+      "theology": [
+        {
+          "id": "sacraments",
+          "note": "This verse is one of the central texts in every tradition's account of baptism, and the positions divide over what the word ‘into’ says about how baptism relates to union with Christ. Roman Catholic teaching (the Council of Trent, Session 5 on original sin and Session 7 on baptism) and the Orthodox churches hold that God unites the person to Christ and washes away sin through the rite itself; Luther's Small Catechism (1529) cites Romans 6:4 to explain what baptism signifies, the daily drowning of the old Adam, while holding that baptism works forgiveness. Reformed confessions call baptism a sign and seal of engrafting into Christ (Westminster Confession 28.1), effective by the Spirit to those who receive it in faith. Baptists and many other evangelicals read the verse as describing what baptism pictures and publicly confesses, a union already made by faith; the Baptist scholar G. R. Beasley-Murray, in Baptism in the New Testament (1962), argued that Paul does speak of the water rite here, as the occasion where faith and God's act meet. Some interpreters take the verse to refer to baptism by the Spirit (1 Corinthians 12:13) rather than water."
+        },
+        {
+          "id": "union",
+          "note": "‘Into Christ Jesus’ is the language of union with Christ, the idea that runs beneath the whole chapter. What happened to Christ is counted as having happened to those joined to him, which is why his death to sin can be called theirs."
+        }
+      ],
+      "refs": ["Galatians 3:27", "1 Corinthians 10:2", "1 Corinthians 12:13", "Colossians 2:12", "Mark 10:38-39"]
+    },
+    {
+      "v": "4",
+      "context": "‘Therefore’ draws out the consequence of verse 3. If baptism joins believers to Christ's death, it also joins them to his burial, the seal that a death is real. But burial is not the goal. The purpose clause turns to resurrection: as Christ was raised by the Father's glory, believers are to walk in a new kind of life now.",
+      "grammar": "Synetaphemen (‘we were buried with’) is one of Paul's many compound verbs built with syn- (‘with’), which run through this chapter: buried with, united with, crucified with, live with (verses 4, 5, 6, 8). The compounds carry the argument: whatever the believer undergoes, he undergoes with Christ. Dia tou baptismatos eis ton thanaton can be read ‘through baptism into death’ (joining ‘into death’ to baptism, as in verse 3) or ‘buried through baptism into death’ (joining it to the burial); the first matches verse 3 and is preferred by most. The purpose clause is carefully unbalanced. Christ ‘was raised’ (egerthe, aorist passive), but believers are not said to have been raised; instead, hina peripatesomen, ‘that we might walk’, an ethical verb Paul uses for a way of life. En kainoteti zoes, literally ‘in newness of life’, uses a noun rather than an adjective, stressing the quality of the life as new in kind. The Father is the agent of the resurrection, and ‘through the glory’ uses doxa for God's power displayed.",
+      "words": ["G4916", "G0908", "G1453", "G1391", "G2538", "G4043"],
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "Christ's resurrection is here both the pattern and the power for believers' present life. Paul holds back from saying believers have already been raised (contrast Colossians 2:12 and Ephesians 2:6); in Romans the full share in resurrection is still future (verse 5, 8:11), while its life already shapes how they walk."
+        },
+        {
+          "id": "sanctification",
+          "note": "‘Walk in newness of life’ names the goal of union with Christ in ordinary behavior. Holiness is not an addition to the gospel but its purpose: the believer dies with Christ so that he can live a different life."
+        }
+      ],
+      "refs": ["Colossians 2:12", "Colossians 3:1-4", "2 Corinthians 5:17", "Ephesians 4:22-24", "Romans 7:6"]
+    },
+    {
+      "v": "5",
+      "context": "‘For’ gives the ground for the hope of verse 4. If believers have been joined to Christ in a death like his, they will also be joined to him in a resurrection like his. The logic is the same one Paul used in 5:9-10: if the harder thing has happened, the rest will surely follow.",
+      "grammar": "Symphytoi, used only here in the New Testament, means ‘grown together’ or ‘united’; in ordinary Greek it described plants grown together or the edges of a wound knitting. It is paired with gegonamen, a perfect (‘we have become’), which stresses a union begun in the past that still holds. To homoiomati tou thanatou autou (‘the likeness of his death’) is the difficult phrase. Some interpreters take the likeness to be baptism itself, the rite that represents Christ's death, so that believers are joined to that likeness; others supply ‘with him’ (as the BSB does) and read ‘united with him in a death like his’, stressing that believers' death to sin resembles but is not identical with his death on the cross. The second clause is elliptical: alla kai tes anastaseos esometha, literally ‘but also of the resurrection we will be’, and the reader must supply ‘in the likeness’. Whether the future esometha is temporal, looking to the bodily resurrection at the end, or logical, stating what follows now, is debated; the parallel future in verse 8 and Paul's reserve in verse 4 lead most, including Douglas Moo and James Dunn, to see at least a reference to the final resurrection.",
+      "words": ["G4854", "G1096", "G3667", "G0386", "G1510"],
+      "theology": [
+        {
+          "id": "union",
+          "note": "‘United’ (literally ‘grown together’) is one of Paul's strongest images of union with Christ. The believer's life is organically joined to his, so that his death and resurrection become the shape of theirs."
+        },
+        {
+          "id": "hope",
+          "note": "The future ‘we will be’ keeps the believer's resurrection ahead. The Christian lives between a death already shared and a resurrection not yet complete, which is the pattern chapter 8 will develop."
+        }
+      ],
+      "refs": ["Philippians 3:10-11", "Romans 8:11", "2 Timothy 2:11", "John 15:5", "Romans 11:17"]
+    },
+    {
+      "v": "6",
+      "context": "Paul states what believers ‘know’ about the death they share: the old self was crucified with Christ. The purpose is spelled out in two steps: the body under sin's rule is put out of action, and the result is that believers no longer serve sin as slaves. The slavery image introduced here will dominate verses 15-23.",
+      "grammar": "Ho palaios hemon anthropos, literally ‘our old man’, is the person one was in Adam (5:12-21), not a part of the personality. It appears again in Ephesians 4:22 and Colossians 3:9. Synestaurothe (‘was crucified with’) is an aorist passive: done to us, once, in Christ's crucifixion. Katargethe, from katargeo, does not mean ‘destroyed’ in the sense of annihilated (as the King James Version's ‘destroyed’ can suggest) but ‘rendered ineffective’, ‘put out of action’, the same verb used in 7:2 of a wife released from the law. To soma tes hamartias, ‘the body of sin’, is most likely the person in bodily existence as dominated by sin, not a claim that the body is sinful in itself. The final clause, tou meketi douleuein hemas te hamartia, uses an articular infinitive of result or purpose: ‘so that we no longer serve sin as slaves’, where the present infinitive douleuein describes an ongoing state now ended.",
+      "words": ["G3820", "G0444", "G4957", "G2673", "G4983", "G1398"],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Sin here is a master, and the problem is slavery, not only guilt. The verse says the old self was crucified so that sin's grip on the body would be broken; it does not say sin itself has died, which is why verse 12 can still command believers not to let it reign."
+        },
+        {
+          "id": "sanctification",
+          "note": "Holiness begins from something God has done, not something believers achieve: the old self ‘was crucified’. Reformed and Lutheran readers stress that this is a change of dominion with sin still present; Wesleyan readers take it as the basis for a real and growing freedom from willful sin. Both read the verse as the ground of the commands that follow."
+        }
+      ],
+      "refs": ["Galatians 2:20", "Galatians 5:24", "Ephesians 4:22-24", "Colossians 3:9-10", "Romans 7:24"]
+    },
+    {
+      "v": "7",
+      "context": "‘For’ supports verse 6 with a general principle: death ends sin's claim. A master has no rights over a dead slave. The principle is applied at once to believers, who have died with Christ.",
+      "grammar": "The verb is surprising. The BSB's ‘has been freed’ translates dedikaiotai, the perfect passive of dikaioo, the verb Paul uses throughout Romans for ‘justify’ (3:24, 3:28, 5:1). Literally the clause says ‘the one who has died has been justified from sin’. Some interpreters hear the full forensic sense: death pays the debt, so the dead man is acquitted, and the believer who died with Christ is declared free of sin's charge. Most modern translations (NIV, ESV, BSB) take it as ‘freed’, a legal release from a claim, since the context is about dominion rather than guilt, and the construction with apo (‘from’) appears with this verb in Acts 13:38-39 in a similar sense. The two readings are closer than they look: in Paul the verdict of acquittal is also the end of sin's legal right to rule.",
+      "words": ["G0599", "G1344", "G0266"],
+      "history": "Paul's principle echoes a maxim known in later Jewish law. The Babylonian Talmud (Niddah 61b) records Rabbi Yohanan's ruling, drawn from Psalm 88:5 (‘free among the dead’), that once a person dies he is free from the commandments. The ruling is later than Paul, but it shows that the idea of death as release from legal obligation was at home in Jewish thought, which is how Paul will use it in 7:1-3.",
+      "refs": ["Acts 13:38-39", "Romans 7:1-3", "1 Peter 4:1", "Psalm 88:5"]
+    },
+    {
+      "v": "8-10",
+      "context": "Verse 8 restates verse 5 in plainer words: dying with Christ means living with him. Verses 9-10 give the reason for confidence. Christ's resurrection was not a return to mortal life like Lazarus's but a final victory, so death has no more claim on him, and those who share his life share a life that death cannot reclaim.",
+      "grammar": "Pisteuomen hoti kai syzesomen auto, ‘we believe that we will also live with him’, puts the shared life in the future tense, which again points at least partly to the final resurrection. Verse 9 uses kyrieuei (‘rules’, ‘lords it over’), the verb that returns in verse 14 and 7:1: death once had lordship over Christ, as the one who entered sin's realm for others, and no longer does. Verse 10 is built as a balanced pair: ho apethanen... ho de ze, ‘the death he died... the life he lives’. The adverb ephapax, ‘once for all’, is the one point where the text itself, not the aorist tense, supplies finality. Te hamartia apethanen, ‘he died to sin’, cannot mean Christ turned from his own sin; it means he died in relation to sin's power, bearing it and ending its claim, as his life is now lived te theo, ‘to God’, in relation to God.",
+      "words": ["G4100", "G4800", "G2961", "G2178", "G2198"],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "‘Once for all’ marks Christ's death as unrepeatable and complete. Hebrews uses the same word for his single offering (Hebrews 7:27, 9:12, 10:10). Believers do not re-enact his death; they share in its effect."
+        },
+        {
+          "id": "resurrection",
+          "note": "Christ ‘cannot die again’: his resurrection is the start of the life of the age to come, not a temporary restoration. That quality of life is what believers are joined to, which is why their hope is secure."
+        }
+      ],
+      "refs": ["Hebrews 9:26-28", "Hebrews 10:10", "Revelation 1:18", "Acts 13:34", "2 Timothy 2:11"]
+    },
+    {
+      "v": "11",
+      "context": "Here the chapter turns from what has happened (verses 3-10) to what believers must do in light of it. The first command is not to do anything but to count something as true: what is true of Christ, dead to sin and alive to God, is true of them ‘in Christ Jesus’.",
+      "grammar": "Logizesthe is a present imperative of logizomai, ‘reckon’ or ‘count’, the accounting verb Paul used eleven times in Romans 4 for God counting faith as righteousness. The believer is now told to reckon as God reckons. The command is not to pretend or to feel dead to sin but to judge the situation as it truly is and act on that judgment; the present tense makes it an ongoing habit. Houtos kai hymeis (‘so you too’) ties the believer to the pattern of Christ just described in verse 10. The phrase en Christo Iesou, ‘in Christ Jesus’, appears here for the first time in the chapter and names the sphere in which both statements are true.",
+      "words": ["G3049", "G3779", "G3498", "G2198"],
+      "theology": [
+        {
+          "id": "union",
+          "note": "‘In Christ Jesus’ is the heart of Paul's account of salvation. The believer is dead to sin and alive to God not in himself but in Christ, which is why the reckoning rests on fact rather than feeling."
+        },
+        {
+          "id": "faith",
+          "note": "The first act of Christian obedience here is an act of faith: to count as true what God says is true. The command comes before any effort, and it governs every effort that follows."
+        }
+      ],
+      "text": "At the end of the verse the Textus Receptus adds ‘our Lord’ (the King James Version reads ‘alive unto God through Jesus Christ our Lord’). The shorter reading, ending with ‘in Christ Jesus’, has the stronger and earlier support, and the addition is probably an echo of verse 23. The Greek editions also differ slightly over where to place the infinitive einai (‘to be’), which does not affect the meaning.",
+      "refs": ["Galatians 2:19-20", "Colossians 3:3", "2 Corinthians 5:14-15", "Romans 4:3"]
+    },
+    {
+      "v": "12-13",
+      "context": "‘Therefore’ applies verse 11 to the body. Sin is pictured as a would-be king, and the parts of the body as weapons that can be handed to one side or the other. The commands assume a real change of allegiance: believers are ‘brought from death to life’, and so they must act like it.",
+      "grammar": "Me basileueto, a present imperative with me, is naturally read ‘stop letting sin reign’ or ‘do not go on letting it reign’; the verb picks up 5:21, where sin ‘reigned in death’. The body is thneto, ‘mortal’, a reminder that the believer still lives in a body subject to death. In verse 13 the verb paristemi (‘present’, ‘put at the disposal of’) appears twice with a telling change of tense: the negative command is present (paristanete, ‘do not keep presenting’), the positive command is aorist (parastesate, ‘present’), which many grammarians read as a decisive act of dedication set against a continuing habit, though aspect alone should not be pressed. Hopla can mean ‘tools’ or ‘instruments’, but in Paul it usually means ‘weapons’ (13:12, 2 Corinthians 6:7, 10:4), and the military frame fits the language of reigning. Hosei ek nekron zontas means ‘as those alive from the dead’.",
+      "words": ["G0936", "G2349", "G3936", "G3196", "G3696"],
+      "theology": [
+        {
+          "id": "holiness",
+          "note": "Paul locates holiness in the body: hands, eyes, tongue, and every member are to be placed at God's disposal. Christian holiness is not a retreat from bodily life but its reassignment to a new master."
+        },
+        {
+          "id": "sanctification",
+          "note": "The command not to let sin reign shows that its power is broken but its pressure is not gone. Sanctification is the believer, freed from sin's dominion, actively and repeatedly handing himself to God."
+        }
+      ],
+      "text": "Where modern editions read ‘so that you obey its desires’, the Textus Receptus has a longer form (the King James Version's ‘that ye should obey it in the lusts thereof’), which conflates two ancient readings, one with ‘obey it’ and one with ‘obey its desires’. The sense is unaffected.",
+      "refs": ["Romans 12:1", "Romans 13:12-14", "2 Corinthians 10:4", "Ephesians 6:13-17", "1 Corinthians 6:19-20"]
+    },
+    {
+      "v": "14",
+      "context": "‘For’ grounds the commands of verses 12-13 in a promise: sin will not be master. The reason is a change of regime, from law to grace. This short sentence sets up the next objection (verse 15) and the discussion of the law in chapter 7.",
+      "grammar": "Ou kyrieusei is a future indicative, ‘will not rule’. Grammarians debate whether it is a promise (‘sin will not be your master’) or a command in future form, as in the Ten Commandments (‘you shall not’); the causal clause that follows (‘because you are not under law’) fits a promise better, and most take it that way. Hypo nomon and hypo charin, ‘under law’ and ‘under grace’, name two regimes or powers under which a person lives. ‘Under law’ in Paul (1 Corinthians 9:20, Galatians 4:4-5, 5:18) describes the situation of Israel under the Mosaic covenant, which Paul has already said increased the trespass (5:20). Nomon has no article, and interpreters debate whether Paul means the law of Moses specifically, as most hold, or any law as a system of demand.",
+      "words": ["G2961", "G3551", "G5485"],
+      "theology": [
+        {
+          "id": "law",
+          "note": "The verse implies that the law, good as it is, did not free anyone from sin's rule; chapter 7 will explain why. Christians have long disagreed over what ‘not under law’ means for the moral commands of the Old Testament: Reformed teaching distinguishes the law as a covenant of works, from which believers are freed, from the law as a rule of life, which still guides them; Lutheran teaching stresses the law's accusing role; many recent interpreters read ‘law’ here as the Mosaic covenant as an era of salvation history, now superseded in Christ."
+        },
+        {
+          "id": "salvation",
+          "note": "Grace here is not only a favorable verdict but a power under which a person lives. That is why grace is the answer to sin's dominion rather than its excuse."
+        }
+      ],
+      "refs": ["Galatians 5:18", "Galatians 4:4-5", "Romans 7:4-6", "1 Corinthians 9:20-21", "Romans 5:20-21"]
+    },
+    {
+      "v": "15-16",
+      "context": "The second objection echoes the first. If believers are not under law, why not sin? Paul answers with a truth from everyday life in the empire: whoever you put yourself at the disposal of as a slave, you belong to. There is no neutral freedom; there are only two masters, sin and obedience, and two outcomes, death and righteousness.",
+      "grammar": "Hamartesomen is an aorist subjunctive (‘shall we sin?’), a different question from verse 1's present tense (‘shall we continue in sin?’). Some grammarians see the shift as moving from a settled life of sin to individual acts of sin, justified by being ‘not under law’; the difference should not be pressed too hard, but the second question is the more practical. Ouk oidate (‘do you not know’) appeals to common knowledge. The sentence is heavy with the language of slavery: doulous eis hypakoen (‘slaves for obedience’), douloi este (‘you are slaves’). Eis thanaton and eis dikaiosynen are phrases of result: sin leads to death, obedience leads to righteousness. Paul surprisingly pairs sin not with ‘righteousness’ but with ‘obedience’ (hypakoe), the word he used for the obedience of faith (1:5) and for Christ's obedience (5:19).",
+      "words": ["G0264", "G3936", "G1401", "G5218", "G1343"],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Sin is a master who pays in death. The verse denies that anyone is simply autonomous: to refuse God is not to become free but to serve sin."
+        },
+        {
+          "id": "justification",
+          "note": "‘Righteousness’ here is the outcome of obedience, which has led some to see a moral sense (righteous living) and others a reference to final vindication at the judgment. Either way it is not the ground of acceptance; Paul has already made that ground Christ's obedience (5:19)."
+        }
+      ],
+      "text": "Some later manuscripts, followed by the Textus Receptus, read the future indicative hamartesomen (‘shall we sin?’) instead of the aorist subjunctive. The meaning is the same.",
+      "refs": ["John 8:34", "Matthew 6:24", "2 Peter 2:19", "Romans 1:5", "Romans 5:19"]
+    },
+    {
+      "v": "17-18",
+      "context": "Paul breaks into thanksgiving, not for what the Romans did on their own but for what God did in them. They were slaves of sin; they obeyed from the heart the teaching they were handed over to; they were freed from sin and enslaved to righteousness. Freedom from sin is not independence but a new ownership.",
+      "grammar": "The contrast turns on tenses: ete douloi, imperfect (‘you were slaves’, a continuing state in the past), against hypekousate, aorist (‘you obeyed’), the moment of conversion. Ek kardias (‘from the heart’) makes the obedience inward, the thing the law could not produce (2:29). The relative clause is compressed: eis hon paredothete typon didaches, literally ‘to which pattern of teaching you were handed over’. One might expect the teaching to be handed over to the converts (as in 1 Corinthians 15:3); Paul reverses it. The converts were handed over, like slaves transferred to a new master, to the gospel's teaching. Typos means a mold, pattern, or form. Rudolf Bultmann argued in 1947 that verse 17b is a later gloss, but no manuscript omits it and most scholars regard it as Paul's own. In verse 18, eleutherothentes and edoulothete, both aorist passives, put freedom and new slavery in a single act.",
+      "words": ["G1510", "G5219", "G2588", "G3860", "G5179", "G1322", "G1659", "G1402"],
+      "history": "Freed slaves were common in Rome, and a slave's freedom was often purchased or granted in a legal ceremony. At Delphi, hundreds of inscriptions record a form of manumission in which a slave was sold to the god Apollo and thereby became free, while sometimes remaining bound to serve his former master for a time. Adolf Deissmann, in Light from the Ancient East (English translation 1910), drew attention to these inscriptions as background to Paul's language of freedom and belonging. Paul's picture differs, since the freed person here becomes a slave of righteousness and of God, but his readers would have understood a change of master as a real legal event.",
+      "theology": [
+        {
+          "id": "regeneration",
+          "note": "‘From the heart’ and ‘thanks be to God’ together say that genuine obedience was God's work in them, the new heart promised in Ezekiel 36:26-27. Paul does not thank the Romans for obeying; he thanks God."
+        }
+      ],
+      "refs": ["Ezekiel 36:26-27", "1 Corinthians 15:3", "John 8:32-36", "1 Corinthians 7:22-23", "Romans 2:29"]
+    },
+    {
+      "v": "19",
+      "context": "Paul apologizes for the slavery image, which he knows is imperfect: God is not a master in the way a Roman slave owner was. He uses it because his readers are weak in understanding. Then he returns to the command of verse 13, now framed as a contrast between their past and their present.",
+      "grammar": "Anthropinon lego, ‘I speak in human terms’, marks an analogy borrowed from ordinary life. The phrase dia ten astheneian tes sarkos hymon (‘because of the weakness of your flesh’) probably means limited understanding rather than moral weakness. The sentence then balances past and present with hosper... houtos nyn (‘just as... so now’). The past verb parestesate is an aorist indicative (‘you presented’), the command parastesate an aorist imperative with the same form in the second person, a neat play. Eis ten anomian (‘to escalating wickedness’, literally ‘lawlessness leading to lawlessness’) describes sin as self-multiplying. The goal of the new slavery is eis hagiasmon, ‘leading to holiness’ or ‘to sanctification’, a noun describing both the process of being made holy and its result.",
+      "words": ["G0442", "G0769G", "G4561", "G3936", "G0458", "G0038"],
+      "theology": [
+        {
+          "id": "sanctification",
+          "note": "Hagiasmos, holiness or sanctification, appears here and in verse 22 as the direction of the new life. Paul presents it as a road with a destination: slavery to righteousness leads to holiness, as slavery to impurity led to more lawlessness."
+        }
+      ],
+      "refs": ["1 Thessalonians 4:3-7", "Romans 12:1-2", "Hebrews 12:14", "Galatians 3:15"]
+    },
+    {
+      "v": "20-21",
+      "context": "Paul looks back at the readers' former life. They were ‘free’ only in the sense that righteousness had no claim on them. He then asks them to weigh the fruit of that freedom honestly: it produced things they are now ashamed of, and its end was death.",
+      "grammar": "Eleutheroi ete te dikaiosyne is ironic: ‘you were free with respect to righteousness’. The dative expresses relation, and the irony is that freedom from righteousness was slavery to sin. The punctuation of verse 21 is disputed. The BSB and most modern translations read the question as ‘What fruit did you reap... from the things of which you are now ashamed?’ with the implied answer ‘none’. Others, including the King James Version, place the question after ‘then’ (‘What fruit had ye then in those things whereof ye are now ashamed?’), and a few read ‘What fruit did you have then? Things of which you are now ashamed’. The difference changes only the shape of the sentence. Telos (‘outcome’, ‘end’) can mean both the final result and the goal toward which something tends.",
+      "words": ["G1658", "G1343", "G2590", "G1870", "G5056"],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "Death is the telos, the end point, of sin: not only physical death but the final exclusion from life that Paul contrasts with eternal life in verse 22. Shame here is the believer's honest judgment on his past, the beginning of seeing it as God does."
+        }
+      ],
+      "refs": ["Romans 7:5", "Galatians 6:7-8", "James 1:15", "Ezekiel 16:63"]
+    },
+    {
+      "v": "22-23",
+      "context": "‘But now’ turns to the present. Freed from sin and enslaved to God, believers bear fruit leading to holiness, and the end is eternal life. Verse 23 then gives the chapter's summary in two perfectly balanced lines: sin pays wages, and they are death; God gives a gift, and it is eternal life in Christ Jesus.",
+      "grammar": "Nyni de (‘but now’) is Paul's marker for the new situation in Christ (3:21, 7:6). The two aorist participles, eleutherothentes and doulothentes, again join freedom and new slavery as one event. In verse 23 the structure is deliberate. Opsonia (plural, ‘wages’) is the term for a soldier's pay or rations, what is owed for service rendered. Charisma, from charis (‘grace’), is a free gift. Paul could have written ‘the wages of God is eternal life’ to keep the balance; he refuses. Death is earned; life is never earned. The final phrase, en Christo Iesou to kyrio hemon, ‘in Christ Jesus our Lord’, closes the chapter as similar phrases closed chapter 5 (5:21) and will close chapter 7 (7:25) and chapter 8 (8:39).",
+      "words": ["G1659", "G1402", "G0038", "G3800", "G5486", "G2222", "G0166"],
+      "history": "Opsonion was the ordinary word for a soldier's pay, which in the Roman army included rations and was issued at regular intervals. Luke uses it when John the Baptist tells soldiers to be content with their wages (Luke 3:14), and Paul uses it for a soldier's support in 1 Corinthians 9:7. The picture completes the military language of verse 13: sin enlists the members of the body as weapons and pays its soldiers in death.",
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "Eternal life is a gift, not a wage, and it is ‘in Christ Jesus’. The verse compresses Romans 1-6 into one line: sin earns death, and God gives life freely in his Son."
+        },
+        {
+          "id": "sin",
+          "note": "Sin is pictured as a paymaster who always pays exactly what is due. The verse does not treat death as an arbitrary penalty but as the fitting outcome of serving sin."
+        },
+        {
+          "id": "hope",
+          "note": "‘Eternal life’ is the end toward which the new life runs. It is already begun in those who are in Christ (verse 22's ‘fruit’) and is completed in the age to come."
+        }
+      ],
+      "refs": ["Luke 3:14", "1 Corinthians 9:7", "Ephesians 2:8-9", "John 3:16", "Romans 5:21"]
+    }
+  ]
+}

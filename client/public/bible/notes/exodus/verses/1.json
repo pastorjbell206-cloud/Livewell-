@@ -1,0 +1,320 @@
+{
+  "verses": [
+    {
+      "v": "1-4",
+      "context": "Exodus opens by naming the eleven sons of Jacob who came down to Egypt, picking up the thread of Genesis 46 as if no book had ended. The order is not the order of birth but of mothers: Leah's six sons first, then Rachel's Benjamin (Joseph is missing because he was already there), then the sons of Bilhah and Zilpah, the same grouping Genesis 35:23-26 uses. Before the story tells what Egypt did to this family, it reminds the reader who they are.",
+      "grammar": "The book begins with a conjunction: we'elleh shemot, ‘and these are the names’. A book that starts with ‘and’ announces itself as a continuation, and the wording repeats Genesis 46:8 almost exactly. The second Hebrew word, shemot (‘names’), became the book's Hebrew title; the English title comes from the Greek Exodos, ‘going out’. The closing phrase is literally ‘a man and his house came’: ish uveito, where bayit (‘house’) means a household, wives, children, and servants included. The book that will speak of a nation begins with households.",
+      "words": [
+        "H0428",
+        "H8034",
+        "H1004M",
+        "H0935G"
+      ],
+      "theology": [
+        {
+          "id": "israel",
+          "note": "Israel begins as a family with names, not as an abstract nation. Every later list of the tribes (Numbers 1, Revelation 7) grows out of this one, and the God who will call himself the God of Abraham, Isaac, and Jacob (3:6) is the God of a particular family before he is the God of a people."
+        }
+      ],
+      "refs": [
+        "Genesis 46:8-27",
+        "Genesis 35:23-26",
+        "Numbers 1:5-15"
+      ]
+    },
+    {
+      "v": "5",
+      "context": "The whole family numbers seventy, counting Joseph and his sons already in Egypt. The small number is the point: the next verses will turn seventy people into a multitude that fills the land.",
+      "grammar": "The Hebrew for descendants is vivid: kol-nefesh yotse'ei yerekh-ya'aqov, literally ‘every person going out of the thigh of Jacob’. Yerekh (‘thigh’) is a euphemism for the loins, the source of offspring, as in Genesis 46:26. Nefesh here means simply ‘person’, the ordinary counting word for human beings, not a soul distinct from the body.",
+      "words": [
+        "H5315J",
+        "H3318M",
+        "H3409",
+        "H7657"
+      ],
+      "text": "The standard Hebrew text reads seventy, matching Genesis 46:27. The Septuagint, the ancient Greek translation, reads seventy-five here and in Genesis 46:27, counting additional descendants of Joseph, and a Hebrew manuscript of Exodus from the Dead Sea Scrolls also reads seventy-five. Stephen follows the seventy-five figure in his speech (Acts 7:14), which shows that both traditions circulated in the first century. Neither number changes the story; they count the family differently.",
+      "refs": [
+        "Genesis 46:26-27",
+        "Acts 7:14",
+        "Deuteronomy 10:22"
+      ]
+    },
+    {
+      "v": "6-7",
+      "context": "One generation dies and the story moves on without it, closing the book on Joseph (Genesis 50:26). Verse 7 answers the death with life: the family grows beyond counting. The contrast between the two verses is the chapter's first statement of its theme, that God's promise outlives the people who first received it.",
+      "grammar": "Verse 7 stacks verbs of increase: paru (‘were fruitful’), vayyishretsu (‘swarmed’, BSB “increased rapidly”), vayyirbu (‘multiplied’), vayya'atsmu (‘grew strong’). Three of them come from God's blessing in Genesis 1:28 and 9:1-7, and sharats, ‘to swarm’, is the verb used for the teeming creatures of the waters on the fifth day (Genesis 1:20-21), a startling word for a human family. The intensifier bim'od me'od, ‘very very much’, is the phrase God used when he promised to multiply Abraham (Genesis 17:2). The last clause, “the land was filled with them”, uses the verb male, the same verb as the command to “fill the earth”.",
+      "words": [
+        "H6509",
+        "H8317",
+        "H7235A",
+        "H6105A",
+        "H3966",
+        "H4390"
+      ],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "The vocabulary is chosen to show God keeping his word to Abraham (Genesis 17:2) and Jacob (Genesis 35:11). The covenant promise of a great nation is being fulfilled in the least likely place, a foreign land where the family has no rights."
+        },
+        {
+          "id": "creation",
+          "note": "By echoing Genesis 1:28, the verse presents Israel as the place where God's original blessing on humanity is being carried forward. What God intended for the whole human race takes shape first in one family."
+        }
+      ],
+      "refs": [
+        "Genesis 1:28",
+        "Genesis 17:2",
+        "Genesis 35:11",
+        "Genesis 50:26",
+        "Psalm 105:24"
+      ]
+    },
+    {
+      "v": "8",
+      "context": "A new king arises who did not know Joseph. With one sentence the story changes from blessing to threat. The phrase sets up a contest of knowing that runs through the early chapters: Pharaoh does not know Joseph, will soon say he does not know the LORD (5:2), and God, by contrast, sees and knows his people's suffering (2:25; 3:7).",
+      "grammar": "Vayyaqom, ‘and he arose’, is the ordinary verb for someone coming to power (compare Deuteronomy 34:10). The verb yada, ‘to know’, carries more than awareness in Hebrew; it includes acknowledgment and a relationship of regard. The king may well have heard of Joseph; what he refuses is any obligation to Joseph's memory or Joseph's people. Judges 2:10 uses the same construction for a generation that did not know the LORD.",
+      "words": [
+        "H6965B",
+        "H4428G",
+        "H2319H",
+        "H3045"
+      ],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Forgetting is where the oppression begins. The Old Testament treats refusing to acknowledge what God has done, and the people through whom he did it, as the root of injustice, which is why Israel's own law will command it again and again to remember that it was a slave in Egypt."
+        }
+      ],
+      "refs": [
+        "Exodus 5:2",
+        "Exodus 2:25",
+        "Judges 2:10",
+        "Acts 7:18"
+      ]
+    },
+    {
+      "v": "9-10",
+      "context": "The king's first speech. He names Israel as a threat, proposes cunning, and lists his fears: more growth, alliance with an enemy in war, and departure. Each fear is ironic. Israel will keep growing, and it will leave, exactly as he feared, but because God brings it out, not because it joined an enemy.",
+      "grammar": "Pharaoh's phrase “the Israelites” is literally ‘the people of the sons of Israel’ ('am bene yisra'el), the first time that expression appears in the Bible, and it is their enemy who first calls them a people. Havah (“Come”) is an imperative of a verb meaning ‘give’, used idiomatically as ‘come on’, the same word the builders of Babel used (Genesis 11:3-4). Nitchakkemah, “let us deal shrewdly”, is a reflexive form (Hithpael) of chakham, the root of the Bible's word for wisdom: Pharaoh proposes to make himself clever. Pen yirbeh, ‘lest it multiply’, uses the verb of God's blessing (rabah) as the thing to be prevented. The final phrase, ve'alah min-ha'arets, ‘go up from the land’, uses alah, the standard verb for leaving Egypt (Genesis 13:1; Exodus 13:18).",
+      "words": [
+        "H5971A",
+        "H3051",
+        "H2449",
+        "H6435",
+        "H7235A",
+        "H5927G"
+      ],
+      "theology": [
+        {
+          "id": "wisdom",
+          "note": "The king's wisdom is calculation in the service of fear. Scripture sets it against the wisdom that begins with the fear of God, which the midwives will show in verse 17, and Paul later says God makes foolish the wisdom of the world (1 Corinthians 1:19-20)."
+        }
+      ],
+      "refs": [
+        "Genesis 11:3-4",
+        "Psalm 105:25",
+        "Acts 7:19",
+        "1 Corinthians 1:19-20"
+      ]
+    },
+    {
+      "v": "11",
+      "context": "Pharaoh's first measure is forced labor under overseers, aimed not only at production but at breaking the people. The verse names the building projects, grounding the story in real places in the eastern Nile Delta.",
+      "grammar": "Sare missim are ‘chiefs of labor gangs’: mas is the word for conscripted work crews, later used of the crews Solomon raised (1 Kings 5:13). The purpose clause lema'an 'annoto, ‘in order to afflict him’, uses the Piel of 'anah (‘to oppress, humble, afflict’), the verb God used when he told Abraham his descendants would be afflicted four hundred years (Genesis 15:13). The word for the forced labor, sivlot (‘burdens’), returns when God promises to bring Israel out from under the burdens of the Egyptians (6:6). Miskenot, ‘storage’, describes supply depots for grain and provisions.",
+      "words": [
+        "H8269",
+        "H4522",
+        "H6031B",
+        "H5450",
+        "H4543"
+      ],
+      "history": "Pharaoh is not a personal name but a title. It comes from the Egyptian per-aa, ‘great house’, which first referred to the royal palace and came to be used for the king himself during the New Kingdom, the period of the Eighteenth and Nineteenth Dynasties. Store cities appear elsewhere in the Old Testament under Solomon (1 Kings 9:19) and Hezekiah (2 Chronicles 32:28), fortified depots that held the state's supplies.",
+      "theology": [
+        {
+          "id": "justice-poor",
+          "note": "The narrative names forced labor as affliction, not as ordinary economics. Israel's law will draw directly on this memory in forbidding the oppression of foreigners and workers (Exodus 22:21; 23:9), since Israel knows from the inside what it is to be the stranger under another's power."
+        }
+      ],
+      "text": "After Rameses the Septuagint adds a third city, ‘and On, which is Heliopolis’, a place known from Genesis 41:45. The shorter Hebrew text is generally preferred.",
+      "refs": [
+        "Genesis 15:13",
+        "Exodus 6:6",
+        "1 Kings 9:19",
+        "Exodus 22:21"
+      ]
+    },
+    {
+      "v": "12",
+      "context": "The policy fails at once. Oppression produces growth, and Egypt's contempt turns to dread. The verse is the chapter's hinge: every tool Pharaoh uses from here on is an escalation because the last one did not work.",
+      "grammar": "The construction ka'asher... ken... vekhen is a correlative, ‘just as... so... and so’, which English renders ‘the more... the more’. The verbs are imperfects expressing repeated action: they kept afflicting, and Israel kept multiplying and spreading. Yifrots, ‘spread, break out’, is the verb God used when he promised Jacob that his offspring would spread out to the west, east, north, and south (Genesis 28:14). Vayyaqutsu (“came to dread”) mixes fear with loathing; the same phrase describes Moab's reaction to Israel in Numbers 22:3.",
+      "words": [
+        "H0834D",
+        "H6031B",
+        "H7235A",
+        "H6555",
+        "H6973"
+      ],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The verse does not name God, but it shows his hand: the measures meant to shrink Israel make it grow. The chapter teaches providence by result rather than by announcement, and it will not name God directly until verse 17."
+        }
+      ],
+      "refs": [
+        "Genesis 28:14",
+        "Numbers 22:3",
+        "Acts 7:17"
+      ]
+    },
+    {
+      "v": "13-14",
+      "context": "The labor intensifies into brick making and field work, and the narrator describes it with deliberate heaviness. These verses give the substance behind the later cry of 2:23: this is the bondage God will hear.",
+      "grammar": "Befarekh, “ruthlessly” or ‘with harshness’, frames the two verses, opening verse 13 and closing verse 14. The word is rare, and its other uses are in Leviticus 25:43, 46, and 53, where Israel is forbidden to rule a fellow Israelite befarekh: the law remembers the exact word for what Egypt did. Vaymareru, “made their lives bitter”, is a Piel of marar (‘to be bitter’), the root of the bitter herbs, merorim, eaten at the Passover (12:8). Chomer (‘mortar’) and levenim (‘bricks’) are the materials of the Babel builders (Genesis 11:3).",
+      "words": [
+        "H5647G",
+        "H6531",
+        "H4843",
+        "H2563A",
+        "H3843",
+        "H5656G"
+      ],
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "Scripture does not rush past the suffering to the rescue. It names the bitterness precisely, and Israel will taste it every Passover in the bitter herbs, so that the memory of affliction becomes part of worship rather than something to be forgotten."
+        },
+        {
+          "id": "law",
+          "note": "Leviticus 25 takes the word befarekh from this verse and forbids it among God's people. Israel's law is shaped by its history: what was done to them in Egypt defines what they may not do to one another."
+        }
+      ],
+      "refs": [
+        "Leviticus 25:43",
+        "Exodus 12:8",
+        "Deuteronomy 26:6",
+        "Genesis 11:3"
+      ]
+    },
+    {
+      "v": "15-16",
+      "context": "The second measure moves from exhaustion to murder, and from public policy to a secret order given to two midwives. The king speaks to them himself, and the narrator gives their names, which the king never receives.",
+      "grammar": "The midwives are hamyalledot, a Piel participle of yalad (‘to bear’), so literally ‘those who help to bear’. The word ha'ivriyyot can be read as an adjective (“the Hebrew midwives”) or as describing the women they serve (‘the midwives of the Hebrew women’), which is why their nationality is debated. Ha'ovnayim (“the birthstools”) is a dual form, ‘the two stones’; the same word names a potter's wheel in Jeremiah 18:3. The commands are given with consecutive perfects that read like a procedure: you will look, you will kill, she will live. The order spares girls, probably because Pharaoh's fear is of fighting men (v. 10).",
+      "words": [
+        "H3205",
+        "H5680",
+        "H8236",
+        "H6326",
+        "H0070",
+        "H4191"
+      ],
+      "history": "A list of household servants in an Egyptian papyrus of the late Middle Kingdom, now in the Brooklyn Museum (Papyrus Brooklyn 35.1446), includes many Semitic names, one of which is usually read as a form of Shiphrah. It does not refer to the midwife of Exodus, but it shows the name was in use among Semites living in Egypt. Shiphrah is generally connected with a Hebrew root meaning ‘to be beautiful’; the meaning of Puah is uncertain.",
+      "refs": [
+        "Jeremiah 18:3",
+        "Matthew 2:16"
+      ]
+    },
+    {
+      "v": "17",
+      "context": "The midwives quietly refuse. This is the first time God appears in Exodus, and he appears as the one the midwives fear. Their fear of God is set directly against the king's command, and it wins.",
+      "grammar": "Vattirena... et-ha'elohim, ‘they feared the God’, has the definite article, which in Hebrew narrative often points to the true God as opposed to any other. The clause “did not do as the king of Egypt had instructed” uses the formula ka'asher dibber (‘just as he spoke’), which elsewhere in Exodus describes obedience to the LORD (for example 7:6, 10). The midwives reserve that obedience for God. Vattechayyena, “they let the boys live”, is the Piel of chayah (‘to keep alive, preserve’), answering the Qal the king used for the girls in verse 16: he allowed the girls to live; they kept the boys alive.",
+      "words": [
+        "H3372H",
+        "H0430G",
+        "H6213A",
+        "H1696G",
+        "H2421"
+      ],
+      "theology": [
+        {
+          "id": "fear-of-god",
+          "note": "The verse defines the fear of God by what it does: it refuses to take innocent life at a king's command. Fear of God here is not terror but a reverence that removes the fear of man."
+        },
+        {
+          "id": "faith",
+          "note": "The midwives act without any promise of protection. Their faith is shown as obedience to God against the most powerful authority they know, the pattern the apostles follow when they tell the council they must obey God rather than men (Acts 5:29)."
+        }
+      ],
+      "refs": [
+        "Acts 5:29",
+        "Daniel 3:16-18",
+        "Proverbs 9:10",
+        "Hebrews 11:23"
+      ]
+    },
+    {
+      "v": "18-19",
+      "context": "Summoned and questioned, the midwives answer with an explanation Pharaoh cannot check: Hebrew women give birth before a midwife arrives. The king who planned to deal shrewdly with Israel is outmaneuvered by two women.",
+      "grammar": "Pharaoh's questions begin with madua', ‘why?’, and repeat his charge with the same verb the narrator used for their act: “Why have you let the boys live?” The midwives reply that the Hebrew women are chayot, “vigorous”, an adjective from the same root as ‘live’ (chayah), so their answer plays on the very word Pharaoh used: the babies live because their mothers are so full of life. An old Jewish reading also heard in chayot a pun on chayyah, ‘animal’, as if the midwives were saying these women give birth as easily as animals do. Beterem tavo, ‘before she comes’, puts the midwife's arrival after the birth.",
+      "words": [
+        "H4069",
+        "H2421",
+        "H2422",
+        "H2962",
+        "H0935G"
+      ],
+      "theology": [
+        {
+          "id": "sovereignty",
+          "note": "The king who holds all visible power cannot see into birthing rooms or verify two women's word. The scene begins a pattern that the rest of Exodus develops on a larger scale: Pharaoh's power is real but limited, and God works through people Pharaoh overlooks."
+        }
+      ],
+      "refs": [
+        "Joshua 2:4-6",
+        "1 Corinthians 1:27"
+      ]
+    },
+    {
+      "v": "20-21",
+      "context": "God answers the midwives' fear of him with his own goodness, and the people keep growing. Verse 21 repeats the reason, that the midwives feared God, and states the reward: families of their own. Those who preserved other women's households are given households.",
+      "grammar": "Vayyetev, ‘and he did good’, is a Hiphil of yatav, God actively dealing well with them. In verse 21, vayya'as lahem battim is literally ‘he made for them houses’. Bayit (‘house’) often means a family line, as when God promises to make David a house (2 Samuel 7:11). The pronoun lahem is masculine in form though it refers to women, which is not unusual in Hebrew plurals; most interpreters take it of the midwives, though a few have read ‘them’ as Israel. The verse repeats the phrase “the midwives feared God” from verse 17, so that the fear of God begins and ends the scene.",
+      "words": [
+        "H3190",
+        "H3372H",
+        "H6213I",
+        "H1004M",
+        "H6105A"
+      ],
+      "theology": [
+        {
+          "id": "family",
+          "note": "The gift of families is the reward for protecting families. Scripture treats children and a household as God's blessing (Psalm 127:3), and this verse ties that blessing to the fear of God."
+        },
+        {
+          "id": "providence",
+          "note": "The narrator says in plain words what verse 12 implied: God was at work. Growth that Pharaoh could not stop and a reward for the midwives both come from God's hand."
+        }
+      ],
+      "refs": [
+        "2 Samuel 7:11",
+        "Psalm 127:1-3",
+        "1 Samuel 2:30"
+      ]
+    },
+    {
+      "v": "22",
+      "context": "Having failed with labor and with secret murder, Pharaoh makes infanticide public policy and enlists all his people in it. The chapter ends on this order, unresolved, and the next chapter opens with a Levite couple and a baby boy born under it.",
+      "grammar": "Vayetsav, “commanded”, is the Piel of tsavah, the verb Exodus uses constantly for God's commands; here it is Pharaoh's. The river is hay'orah, ‘to the Nile’: ye'or is a loanword from Egyptian and in the Old Testament usually means the Nile specifically. Tashlikhuhu, ‘you shall throw him’, is a Hiphil of shalakh, ‘to cast’. The final verb, techayyun, carries an extra final nun, an emphatic ending: the daughters, and only the daughters, you shall let live.",
+      "words": [
+        "H6680",
+        "H2975G",
+        "H7993",
+        "H2421",
+        "H3209"
+      ],
+      "history": "The Nile was Egypt's life. Its yearly flood watered and fertilized the fields, and Egyptians honored the flood as the god Hapi. The river Pharaoh chooses for murder becomes the river of the first plague, when its water turns to blood (7:20), and the Egyptian army will later perish in the sea (14:28).",
+      "text": "The BSB's “born to the Hebrews” follows the Samaritan Pentateuch and the Septuagint, which add ‘to the Hebrews’. The standard Hebrew text has only ‘every son that is born’, which taken literally would include Egyptian boys. Most translations supply the phrase or put it in italics, since the context makes the meaning clear.",
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The order sets up a pattern of just recompense that runs through the book: the king who throws Israel's sons into the water loses his own firstborn son (12:29) and sees his army thrown into the sea (15:1, 4)."
+        }
+      ],
+      "refs": [
+        "Exodus 2:3",
+        "Exodus 7:20",
+        "Matthew 2:16",
+        "Acts 7:19"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,470 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "Jacob, called Israel here as the head of the whole clan, sets out from Hebron (37:14) and stops at Beersheba, the last settled place of the south before the desert road to Egypt. Before he crosses the border he worships, and he worships the God of Isaac in particular, the father who had been told never to go down to Egypt (26:2).",
+      "grammar": "The verse is three quick wayyiqtol verbs, the Hebrew narrative chain: vayyissa (\"set out\", the verb for pulling up tent pegs and breaking camp), vayyavo (\"came\"), vayyizbach zevachim (\"offered sacrifices\"). The last pairs a verb with its own noun, zavach zevachim, ‘sacrificed sacrifices’. Zevach usually names a sacrifice in which the worshipers share the meat in a meal, as distinct from the whole burnt offering (olah). The only other zevach in the patriarchal stories is the meal that sealed Jacob's covenant with Laban (31:54), so the sacrifice here may carry a sense of communion with the God of his fathers before a new stage begins.",
+      "words": [
+        "H5265",
+        "H2076",
+        "H2077"
+      ],
+      "history": "Beersheba lies in the northern Negev, at the southern edge of the land Israel later settled, which is why the phrase ‘from Dan to Beersheba’ became Israel's way of saying the whole country (Judges 20:1). Jacob had left from the same town when he fled to Haran decades earlier (28:10), so he leaves the land for the second time from the same place.",
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "Jacob does not treat the move as a merely practical decision, though Joseph's invitation and Pharaoh's wagons have already settled it. He brings it to God first, at a place where God had spoken to his father, and God answers that night."
+        }
+      ],
+      "refs": [
+        "Genesis 21:33",
+        "Genesis 26:23-25",
+        "Genesis 28:10",
+        "Judges 20:1"
+      ]
+    },
+    {
+      "v": "2",
+      "context": "God speaks for the last time in Genesis, and he speaks at night, as he did to Jacob at Bethel when he first left the land (28:11-15). The doubled name and Jacob's reply follow the pattern of the great call scenes of Scripture.",
+      "grammar": "The narrator calls him Israel (\"God spoke to Israel\") but God calls him by his birth name, \"Jacob, Jacob\". The doubled vocative marks urgency and intimacy; Scripture uses it at turning points (Abraham, Abraham at 22:11; Moses, Moses at Exodus 3:4; Samuel, Samuel at 1 Samuel 3:10). The reply hinneni (\"here I am\") is an interjection with a first person suffix, the answer of a servant ready to hear. \"In a vision\" is literally ‘in visions of the night’, a plural that probably describes the kind of experience rather than several separate visions.",
+      "words": [
+        "H4759A",
+        "H3915",
+        "H3290",
+        "H2009"
+      ],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "God's final recorded speech in Genesis comes to a man at the edge of the promised land, about to leave it. The next time God speaks in the biblical story, from the burning bush, he speaks to the people this family becomes, still in Egypt (Exodus 3:4-10)."
+        }
+      ],
+      "refs": [
+        "Genesis 22:11",
+        "Exodus 3:4",
+        "1 Samuel 3:10",
+        "Genesis 28:12-15"
+      ]
+    },
+    {
+      "v": "3",
+      "context": "God identifies himself, names the fear Jacob has not voiced, and gives the reason not to fear: Egypt is where God will make Jacob a great nation. The promise first given to Abraham (12:2) and repeated to Jacob at Bethel (35:11) is now given an address.",
+      "grammar": "Anokhi ha'el elohei avikha is literally ‘I am the El, the God of your father’. The definite article on El (‘the God’) makes it a title, recalling the altar Jacob named El-Elohe-Israel at Shechem (33:20). The prohibition uses al with the imperfect (al tira, \"do not be afraid\"), the form for an immediate, specific command rather than a permanent law. The fear is specifically of \"going down\" (the infinitive meredah), yarad being the regular verb for travel to Egypt.",
+      "words": [
+        "H0410G",
+        "H3372G",
+        "H3381",
+        "H1471A"
+      ],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "The verse locates the growth of the covenant people outside the covenant land. God's promise of nationhood is not suspended by the move but fulfilled through it, which is exactly what Exodus 1:7 reports."
+        },
+        {
+          "id": "fear-of-god",
+          "note": "\"Do not be afraid\" is God's word to each patriarch in turn (15:1 to Abram, 26:24 to Isaac, here to Jacob). The command rests entirely on who is speaking and what he promises, not on any change in Jacob's circumstances."
+        }
+      ],
+      "refs": [
+        "Genesis 12:2",
+        "Genesis 35:11",
+        "Genesis 26:24",
+        "Exodus 1:7"
+      ]
+    },
+    {
+      "v": "4",
+      "context": "The promise has three parts: God's presence on the road down, God's power to bring Jacob up again, and a personal kindness, that Joseph will be with him when he dies. The last clause answers the grief Jacob has carried since chapter 37.",
+      "grammar": "The pronoun anokhi (\"I\") is written out twice, though Hebrew verbs already contain their subject, so the stress falls on God himself: ‘I, I will go down; and I, I will bring you up’. The verbs are the pair yarad and alah, down and up, the vocabulary of the exodus (Exodus 3:8 uses the same pair when God comes down to bring Israel up). A'alkha gam aloh combines a finite verb with an infinitive absolute, the Hebrew way of adding certainty, rendered \"I will surely bring you back\". The \"you\" is singular: Jacob himself will be carried back for burial (50:13), and in him the nation that bears his name.",
+      "words": [
+        "H0595",
+        "H3381",
+        "H5927H",
+        "H7896H"
+      ],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "God does not only permit Jacob's move; he binds himself to it. The one who sends the family down promises to bring it up, so the four centuries in Egypt fall inside God's plan from the start."
+        },
+        {
+          "id": "hope",
+          "note": "The promise looks past Jacob's death. He will die in Egypt, but the promise of return is fulfilled first at his burial in Canaan and then in the exodus, teaching his descendants to read their own stay in Egypt as temporary."
+        }
+      ],
+      "refs": [
+        "Exodus 3:8",
+        "Genesis 50:13",
+        "Genesis 28:15",
+        "Genesis 15:13-16"
+      ]
+    },
+    {
+      "v": "5",
+      "context": "After the vision the move proceeds. Jacob, now old, is carried in the wagons Pharaoh sent, the same wagons whose sight revived him when he first heard the news (45:27).",
+      "grammar": "Vayyaqom (\"departed\", literally ‘arose’) shows Jacob acting, but the next verb puts his sons in charge: they \"carried\" (vayyis'u) their father. The infinitive lase't (\"to carry him\") repeats the same verb, nasa. The word for wagons, agalot, names wheeled carts, and the narrator mentions them for the third time (45:19, 45:27), because they were the visible proof that Joseph's invitation was real.",
+      "words": [
+        "H6965B",
+        "H5375H",
+        "H5699"
+      ],
+      "text": "Genesis 45:19-21 says Pharaoh ordered wagons and Joseph provided them, and 45:27 calls them the wagons Joseph had sent. Here they are \"the wagons Pharaoh had sent\". The two descriptions agree: Pharaoh authorized them and Joseph gave them.",
+      "refs": [
+        "Genesis 45:19-21",
+        "Genesis 45:27"
+      ]
+    },
+    {
+      "v": "6-7",
+      "context": "The family takes all its livestock and goods, though Pharaoh had told them not to worry about their belongings (45:20). Verse 7 then gathers everyone in a single sentence, stressing that the whole family, all four generations, went.",
+      "grammar": "Rekhusham asher rakhashu (\"possessions they had acquired\") pairs a noun with the verb from the same root. Rekhush is the word for Abram's goods brought from Haran (12:5) and for the \"many possessions\" Israel will carry out of Egypt (15:14): the family goes down with goods and will come up with more. In verse 7 the object comes first (\"his sons and grandsons, and his daughters and granddaughters, all his offspring\") and the verb, the Hiphil hevi (\"brought\"), comes at the end, so the sentence builds toward the one action.",
+      "words": [
+        "H7399",
+        "H7408",
+        "H2233H",
+        "H0935P"
+      ],
+      "history": "The plural \"daughters\" is notable, since the list names only one daughter of Jacob (Dinah) and one granddaughter (Serah). Interpreters have explained it either as a standard formula for a family's women or as including the sons' wives, who were counted as daughters of the household but left out of the total in verse 26.",
+      "refs": [
+        "Genesis 12:5",
+        "Genesis 15:14",
+        "Genesis 45:20"
+      ]
+    },
+    {
+      "v": "8",
+      "context": "The genealogy begins with a formal heading and with Reuben, named as Jacob's firstborn. The list runs by mothers: Leah's line, then Zilpah's, Rachel's, and Bilhah's.",
+      "grammar": "Ve'elleh shemot benei yisra'el (\"Now these are the names of the sons of Israel\") is word for word the opening of Exodus. In Jewish tradition the book of Exodus is called Shemot, ‘Names’, from this phrase. The participle habba'im (\"who went\") marks the list as a record of those who came into Egypt, and the parenthesis \"Jacob and his descendants\" shows the list counts Jacob himself.",
+      "words": [
+        "H8034",
+        "H0935G",
+        "H1060"
+      ],
+      "theology": [
+        {
+          "id": "israel",
+          "note": "\"The sons of Israel\" here means twelve brothers; by Exodus 1:7 it means a people. The phrase itself carries the story's claim that the nation is this family grown large."
+        }
+      ],
+      "refs": [
+        "Exodus 1:1-5",
+        "Exodus 6:14",
+        "Genesis 35:23"
+      ]
+    },
+    {
+      "v": "9",
+      "context": "Reuben's four sons. Reuben is still called firstborn, though he has already forfeited the rights of that position by sleeping with Bilhah (35:22), a loss Jacob will announce in 49:3-4.",
+      "history": "The same four names reappear as clan heads of Reuben in Exodus 6:14, Numbers 26:5-6, and 1 Chronicles 5:3, so the list here serves as the root of Israel's later tribal registers. Hanoch is the same Hebrew name as Enoch (chanokh), and Hezron recurs among Judah's descendants in verse 12, a reminder that names were shared across the clans.",
+      "refs": [
+        "Numbers 26:5-6",
+        "1 Chronicles 5:3",
+        "Genesis 35:22",
+        "Genesis 49:3-4"
+      ]
+    },
+    {
+      "v": "10",
+      "context": "Simeon's six sons, with one unusual note: Shaul was the son of a Canaanite woman. The narrator does not comment, but Abraham and Isaac had both insisted their sons not marry Canaanites (24:3, 28:1).",
+      "grammar": "Ben hakkena'anit, literally ‘son of the Canaanite woman’, uses a feminine gentilic (a word naming someone by their people) with the article. Judah's wife was also Canaanite (38:2), but only here does the list flag it, perhaps because Shaul's mother was not a wife of the usual standing.",
+      "words": [
+        "H3669G",
+        "H7586H"
+      ],
+      "history": "Exodus 6:15 repeats this list exactly. Numbers 26:12-13 lists Simeon's clans as Nemuel, Jamin, Jachin, Zerah, and Shaul: Jemuel appears as Nemuel, Zohar as Zerah, and Ohad is missing, probably because his line did not survive as a separate clan by the time of the census.",
+      "refs": [
+        "Exodus 6:15",
+        "Numbers 26:12-13",
+        "Genesis 24:3",
+        "Genesis 28:1"
+      ]
+    },
+    {
+      "v": "11",
+      "context": "Levi's three sons, each of whom becomes the ancestor of one of the three Levite clans that later carried and served the tabernacle.",
+      "history": "Gershon, Kohath, and Merari give their names to the Gershonites, Kohathites, and Merarites (Numbers 3:17-37), whose duties in the wilderness were divided among the tabernacle's curtains, its holy furnishings, and its frames. Kohath was the grandfather of Moses, Aaron, and Miriam (Exodus 6:18-20), so this bare line of names holds Israel's future priesthood.",
+      "theology": [
+        {
+          "id": "temple",
+          "note": "The family that will serve at God's dwelling first appears as three boys going down to Egypt. Israel's worship grows out of a family's history, not out of an institution founded from nothing."
+        }
+      ],
+      "refs": [
+        "Numbers 3:17",
+        "Exodus 6:16-20",
+        "1 Chronicles 6:1"
+      ]
+    },
+    {
+      "v": "12",
+      "context": "Judah's line gets the most detail, recalling the story of chapter 38: Er and Onan died in Canaan, and Perez and Zerah were Tamar's twins. Perez's two sons carry the line forward.",
+      "grammar": "The clause vayyamot er ve'onan (\"but Er and Onan died\") is a narrative verb inside a list, a small story in the middle of the names. It explains why they are named but not counted. The singular verb with two subjects is ordinary Hebrew when the verb comes first.",
+      "words": [
+        "H4191",
+        "H6147G",
+        "H0209",
+        "H6557"
+      ],
+      "history": "Hezron and Hamul pose a chronological question. Judah's sons were born after the sale of Joseph, and Perez was born later still, so for Perez to have two sons twenty-two years after Joseph was sold is very tight. Many interpreters conclude that the list includes some descendants born in Egypt but counted as clan heads of the generation that went down, since Numbers 26:21 names the Hezronite and Hamulite clans. Others think the timeline can be compressed to fit. The list's aim is a complete family, not a travel manifest.",
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "Perez and Hezron stand in the line that leads to David (Ruth 4:18-22) and on to Jesus (Matthew 1:3). The kingly line runs straight through the most disordered story in Judah's family."
+        }
+      ],
+      "refs": [
+        "Genesis 38:6-10",
+        "Genesis 38:27-30",
+        "Ruth 4:18-22",
+        "Matthew 1:3"
+      ]
+    },
+    {
+      "v": "13-14",
+      "context": "Issachar's four sons and Zebulun's three, the last of Leah's own sons, who were born fifth and sixth (30:17-20).",
+      "history": "Tola and Puvah (Puah) recur centuries later as family names in Issachar: the judge Tola was \"son of Puah\" and \"a man of Issachar\" (Judges 10:1). Issachar's third son, Job (Hebrew Yov), is called Jashub in Numbers 26:24 and 1 Chronicles 7:1. Zebulun's sons match Numbers 26:26 exactly.",
+      "refs": [
+        "Numbers 26:23-26",
+        "1 Chronicles 7:1",
+        "Judges 10:1",
+        "Genesis 30:17-20"
+      ]
+    },
+    {
+      "v": "15",
+      "context": "The total for Leah's line: thirty-three, including Dinah. The summary uses Paddan-aram as the birthplace, though Perez's sons and some grandsons were born in Canaan, because the list is organized by the mother and the place where her family began.",
+      "grammar": "Kol nefesh banav uvenotav (\"the total number of sons and daughters\") is literally ‘every soul of his sons and his daughters’. Nefesh here means a living person, the ordinary Hebrew way of counting people (compare 12:5, \"people they had acquired\"). The noun is singular and collective, so ‘every soul’ means each individual counted.",
+      "words": [
+        "H5315J",
+        "H1783",
+        "H6307"
+      ],
+      "history": "The names in verses 8-14 add up to thirty-two: six sons, twenty-three grandsons, two great-grandsons, and Dinah. The total of thirty-three evidently includes Jacob, who heads the list in verse 8.",
+      "refs": [
+        "Genesis 12:5",
+        "Genesis 34:1"
+      ]
+    },
+    {
+      "v": "16",
+      "context": "Gad's seven sons open the list of Zilpah's descendants. Gad and Asher were born to Leah's servant and counted as Leah's through her (30:9-13).",
+      "history": "Numbers 26:15-17 lists Gad's clans with slight differences in spelling: Ziphion appears as Zephon, Ezbon as Ozni, Arodi as Arod. Variations like these are common when the same names were copied in different lists over centuries and pronounced differently in different periods.",
+      "refs": [
+        "Numbers 26:15-17",
+        "Genesis 30:9-11"
+      ]
+    },
+    {
+      "v": "17-18",
+      "context": "Asher's children include a daughter, Serah, one of only two women named among the descendants, and two grandsons through Beriah. Verse 18 totals Zilpah's line at sixteen and reminds the reader that Laban gave her to Leah (29:24).",
+      "grammar": "\"Sixteen\" is shesh esreh nafesh, literally ‘six-ten soul’: Hebrew counts the teens as unit plus ten, and after numbers above ten the counted noun is regularly singular. The clause \"whom Laban gave to his daughter Leah\" uses the perfect natan for the earlier event, the gift at Leah's wedding, reaching back into the story of chapter 29.",
+      "words": [
+        "H8294",
+        "H5414G",
+        "H5315J"
+      ],
+      "history": "Numbers 26:46 names Serah again among Asher's descendants in the census taken in the wilderness. Because she is named in both lists, later Jewish tradition told many stories about her, including that she lived through the whole sojourn in Egypt. The text itself says only that she was Asher's daughter.",
+      "refs": [
+        "Numbers 26:44-46",
+        "1 Chronicles 7:30",
+        "Genesis 29:24"
+      ]
+    },
+    {
+      "v": "19-20",
+      "context": "Rachel's sons, Joseph and Benjamin, with Joseph's two sons born in Egypt. The Egyptian names in verse 20 stand out in a list of Hebrew names, recalling that part of this family has already been in Egypt for years.",
+      "grammar": "Only Rachel is introduced as eshet ya'aqov (\"Jacob's wife\"); Leah, Zilpah, and Bilhah are simply named. The phrase quietly reflects Jacob's own view of his household (compare 44:27, where he calls Rachel ‘my wife’ as though she were his only one). Verse 20 opens with a passive verb, vayyivvaled (\"were born\", Niphal), and names the mother, Asenath, and her father.",
+      "words": [
+        "H7354",
+        "H0802H",
+        "H3205",
+        "H0621"
+      ],
+      "history": "On is the city the Greeks called Heliopolis, just northeast of modern Cairo, the chief center of the worship of the sun god Ra. Potiphera is usually explained as an Egyptian name meaning ‘he whom Ra has given’. Joseph's marriage into a priestly family of On (41:45) placed him in the Egyptian elite.",
+      "text": "The Septuagint, the ancient Greek translation, adds after this verse five more descendants of Manasseh and Ephraim. That addition is how the Greek text reaches seventy-five in verse 27, the number Stephen uses in Acts 7:14.",
+      "refs": [
+        "Genesis 41:45",
+        "Genesis 41:50-52",
+        "Genesis 44:27",
+        "Acts 7:14"
+      ]
+    },
+    {
+      "v": "21-22",
+      "context": "Benjamin's ten sons, and the total of Rachel's line: fourteen. Benjamin had been treated as the vulnerable youngest in chapters 42 to 44, yet here he heads a large family.",
+      "history": "The list raises questions when set beside later lists. Numbers 26:38-40 names Bela, Ashbel, Ahiram, Shupham, and Hupham as Benjamin's sons and makes Ard and Naaman sons of Bela, and 1 Chronicles 8:1-5 differs again. Interpreters commonly explain Genesis 46 as including descendants who later became heads of Benjamite clans, counted with the generation that went down, since Benjamin, whom Judah called \"the boy\" (44:30-34), is unlikely to have had ten sons before the move. The lists preserve clan structure, and clans could be reckoned from grandsons as well as sons.",
+      "grammar": "Verse 22 uses the Pual perfect yullad (\"born\", literally ‘who was born’) with a singular verb for a plural group, treating the fourteen as one collective, and closes with kol nefesh arba'ah asar, ‘every soul, fourteen’.",
+      "words": [
+        "H3205",
+        "H5315J",
+        "H1106A",
+        "H0714G"
+      ],
+      "refs": [
+        "Numbers 26:38-41",
+        "1 Chronicles 8:1-5",
+        "Genesis 35:18"
+      ]
+    },
+    {
+      "v": "23-25",
+      "context": "The shortest group, Bilhah's descendants: Dan with one son and Naphtali with four, seven in all. Verse 25 recalls Laban's gift of Bilhah to Rachel (29:29).",
+      "grammar": "Verse 23 reads \"the son of Dan\" in the BSB, but the Hebrew has the plural construct benei (‘the sons of Dan’) followed by one name. The plural is the list's fixed heading formula, kept even when only one son is named.",
+      "words": [
+        "H1121A",
+        "H1835H",
+        "H2366B"
+      ],
+      "history": "Dan's single son Hushim appears as Shuham in Numbers 26:42, where Dan's whole tribe is counted as the Shuhamite clans and numbers 64,400, second only to Judah. The tribe that starts with the fewest names grows into one of the largest, a small illustration of Exodus 1:7.",
+      "refs": [
+        "Numbers 26:42-43",
+        "Numbers 26:48-49",
+        "Genesis 29:29"
+      ]
+    },
+    {
+      "v": "26",
+      "context": "The first total, sixty-six, counts only Jacob's own descendants who traveled, excluding the sons' wives, Jacob himself, and Joseph's household already in Egypt.",
+      "grammar": "\"His direct descendants\" renders yotse'ei yerekho, literally ‘those who came out of his thigh’. Yarekh, thigh, is used in Hebrew for the seat of a man's procreative power; the same phrase describes Jacob's offspring in Exodus 1:5, and the thigh is where an oath touching descendants is sworn (24:2, 47:29). The expression makes the count strictly one of blood descent.",
+      "words": [
+        "H3318M",
+        "H3409",
+        "H0802H"
+      ],
+      "refs": [
+        "Exodus 1:5",
+        "Genesis 24:2",
+        "Genesis 47:29"
+      ]
+    },
+    {
+      "v": "27",
+      "context": "The second total adds Joseph's two sons (and, implicitly, Joseph and Jacob) to reach seventy, \"the members of Jacob's family\". The number is repeated in Exodus 1:5 and Deuteronomy 10:22, where Moses sets it against a people now as numerous as the stars.",
+      "grammar": "The subject shifts from ‘persons who came out of his thigh’ in verse 26 to kol hannefesh leveit ya'aqov, ‘every person of the house of Jacob’. Bayit (\"house\") is the word for a household and, later, for a dynasty and a people (\"the house of Jacob\" in Isaiah 2:5). The change in phrase explains the change in number: verse 26 counts travelers descended from Jacob, verse 27 the whole household as reckoned in Egypt.",
+      "words": [
+        "H1004M",
+        "H7657",
+        "H5315J"
+      ],
+      "theology": [
+        {
+          "id": "election",
+          "note": "Seventy people are all the chosen family amounts to at this point. Deuteronomy 10:22 looks back on the number to make the point that Israel's growth was God's doing, not its own strength (compare Deuteronomy 7:7)."
+        }
+      ],
+      "refs": [
+        "Exodus 1:5",
+        "Deuteronomy 10:22",
+        "Deuteronomy 7:7",
+        "Acts 7:14"
+      ],
+      "nt": [
+        {
+          "ref": "Acts 7:14",
+          "note": "Stephen, recounting Israel's history before the council in Jerusalem, says Joseph summoned Jacob and all his relatives, seventy-five in all. The Hebrew of this verse (and of Exodus 1:5) reads seventy; the Septuagint reads seventy-five here and in Exodus 1:5, having added five descendants of Joseph's sons at verse 20, and a Hebrew copy of Exodus from Qumran also reads seventy-five. Stephen follows the Greek form of the text his hearers knew. His point is not the arithmetic but the smallness of the family God later multiplied and rescued."
+        }
+      ]
+    },
+    {
+      "v": "28",
+      "context": "Judah is sent ahead. The brother who once proposed selling Joseph (37:26-27) and later offered himself in Benjamin's place (44:33) is now the one Jacob trusts as his forerunner.",
+      "grammar": "Lehorot lefanav goshnah is literally ‘to point the way before him to Goshen’. Horot is a Hiphil infinitive of yarah, a verb meaning to point, show, or instruct; the noun torah comes from the same root. The BSB's \"get directions\" takes the subject of the infinitive to be Judah receiving guidance from Joseph; others read it as Joseph showing the way, or Judah preparing the way before Jacob. The Hebrew allows each.",
+      "words": [
+        "H3384B",
+        "H3063G",
+        "H1657G"
+      ],
+      "text": "The Septuagint reads that Judah was sent to meet Joseph ‘at Heroonpolis, in the land of Rameses’, identifying the meeting place with a city in the eastern Delta known in the Greek period. The Hebrew simply says Goshen. The Greek reflects how translators in Egypt located the district in their own day.",
+      "history": "Goshen is not named in Egyptian sources, but the biblical references place it in the eastern Nile Delta, near the frontier with Sinai and Canaan (47:11 calls it the land of Rameses). It was grazing land within reach of Joseph at court yet apart from the main Egyptian population.",
+      "refs": [
+        "Genesis 37:26-27",
+        "Genesis 44:33",
+        "Genesis 47:11"
+      ]
+    },
+    {
+      "v": "29",
+      "context": "The reunion. Joseph drives out in his chariot, the sign of his Egyptian rank (41:43), and the moment he reaches his father rank disappears: he falls on his neck and weeps.",
+      "grammar": "Vayye'sor merkavto is literally ‘he bound his chariot’, the verb asar used for harnessing. Vayyera elav (\"presented himself to him\") is a Niphal of ra'ah, ‘he let himself be seen’; the same form describes God appearing to the patriarchs (12:7, 26:24, 35:9). The final word, od (\"still\", ‘again’ or ‘a long time’), makes the weeping prolonged, and the Hebrew does not say whether Joseph wept alone or both men wept together, since the subject is only implied.",
+      "words": [
+        "H0631",
+        "H4818",
+        "H7200G",
+        "H5750"
+      ],
+      "theology": [
+        {
+          "id": "family",
+          "note": "Twenty-two years of loss end not in speeches but in an embrace. Scripture treats the restoration of a father and son as a real good, worth a verse of its own."
+        }
+      ],
+      "refs": [
+        "Genesis 41:43",
+        "Genesis 45:14-15",
+        "Luke 15:20",
+        "Genesis 33:4"
+      ]
+    },
+    {
+      "v": "30",
+      "context": "Jacob's first words to Joseph turn his long complaint inside out. He had said he would go down to Sheol mourning (37:35) and that losing Benjamin would bring his gray hair down in sorrow (42:38). Now he is ready to die in peace.",
+      "grammar": "Amutah happa'am is a cohortative, ‘let me die this time’ or ‘now I may die’. It expresses readiness rather than a wish for death: the thing he waited for has happened. The reason clause picks up the key word of chapter 45, od, \"still\": \"you are still alive\" (odkha chai), echoing the brothers' report in 45:26 and Jacob's cry in 45:28.",
+      "words": [
+        "H4191",
+        "H6471",
+        "H5750",
+        "H2416A"
+      ],
+      "theology": [
+        {
+          "id": "hope",
+          "note": "Jacob can face death because what he feared lost has been given back. Luke's Simeon voices the same readiness when he sees what God had promised (Luke 2:29-30), which is a thematic parallel, not a prediction."
+        }
+      ],
+      "refs": [
+        "Genesis 37:35",
+        "Genesis 42:38",
+        "Genesis 45:28",
+        "Luke 2:29-30"
+      ]
+    },
+    {
+      "v": "31-32",
+      "context": "Joseph turns at once to the practical question of where his family will live. He will speak to Pharaoh first and describe them plainly as shepherds with their flocks.",
+      "grammar": "E'eleh (\"I will go up\") uses alah, the verb of going up; here it describes going to the royal court, perhaps also up from the lowlands of Goshen. The two descriptions in verse 32 differ slightly: ro'ei tson, ‘shepherds of flocks’, and anshei miqneh, ‘men of livestock’, the second a broader term for owners of animals. The ki clause (‘for they have been men of livestock’) explains why they brought their animals.",
+      "words": [
+        "H5927G",
+        "H7462B",
+        "H4735"
+      ],
+      "refs": [
+        "Genesis 47:1-4",
+        "Genesis 37:12-13"
+      ]
+    },
+    {
+      "v": "33-34",
+      "context": "Joseph prepares his brothers for Pharaoh's question. Their honest answer will secure Goshen, because Egyptian distaste for shepherds will keep them at a distance. In the event (47:3) the brothers say simply \"Your servants are shepherds\".",
+      "grammar": "Joseph tells them to answer anshei miqneh (‘men of livestock’) rather than ro'ei tson (‘shepherds’). The broader term may be meant to soften the unwelcome word, though in the event the brothers use the plain one before Pharaoh. To'evah (\"detestable\") is the same word used for the Egyptians' refusal to eat with Hebrews (43:32); it names something a group finds repugnant, and in the law it later describes what is repugnant to God. The purpose clause ba'avur teshvu (\"then you will be allowed to settle\") shows Joseph's aim: a separate place for the family.",
+      "words": [
+        "H4735",
+        "H8441",
+        "H5668",
+        "H3427"
+      ],
+      "history": "Egypt's economy rested on farming the irrigated Nile valley, and Egyptian writings often looked down on the pastoral peoples beyond its eastern border. An Egyptian wisdom text, the Instruction for Merikare, speaks disparagingly of the Asiatic who wanders without a settled home. The narrator's remark fits that gulf between settled farmers and herding outsiders.",
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The same contempt that humbles the family also protects it. Settled apart in Goshen, Jacob's descendants keep their identity instead of dissolving into Egypt, so a social slight becomes the means by which God keeps the family distinct."
+        }
+      ],
+      "refs": [
+        "Genesis 43:32",
+        "Genesis 47:3-6",
+        "Exodus 8:26"
+      ]
+    }
+  ]
+}

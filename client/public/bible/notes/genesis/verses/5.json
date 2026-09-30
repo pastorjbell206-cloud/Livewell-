@@ -1,0 +1,280 @@
+{
+  "verses": [
+    {
+      "v": "1-2",
+      "context": "The second toledot heading opens a new section, and before listing a single descendant it looks back to creation. Humanity was made in God's likeness, male and female, blessed, and named by God. The genealogy that follows is the unfolding of that blessing in a world now under the sentence of death.",
+      "grammar": "Sefer toledot adam, \"the book of the generations of Adam\", is the only toledot heading that includes sefer, ‘document’ or ‘written record’. Verse 1 uses only demut, \"likeness\", where 1:26 paired it with tselem, image; verse 3 will use both. In verse 2, adam first means humankind and is the name God gives them (\"He called them ‘man’\"), so the same word serves as the race's name and, in verse 3, as the name of its first father. \"In the day\" is again beyom with an infinitive, ‘when’.",
+      "words": [
+        "H5612H",
+        "H8435",
+        "H1823",
+        "H0120G",
+        "H1288"
+      ],
+      "theology": [
+        {
+          "id": "humanity",
+          "note": "Genesis restates human dignity at the head of a list of deaths. The fall has not revoked the likeness of God or the blessing of 1:28; the genealogy is how the blessing to multiply goes on working."
+        },
+        {
+          "id": "names-of-god",
+          "note": "God names humanity as he named day, night, sky, land, and seas in chapter 1. Naming expresses his authority over what he has made, and human beings, for all their rule over the animals, receive their own name from him."
+        }
+      ],
+      "refs": [
+        "Genesis 1:26-28",
+        "Genesis 2:4",
+        "Matthew 1:1",
+        "Luke 3:38"
+      ]
+    },
+    {
+      "v": "3",
+      "context": "Adam fathers Seth in his own likeness and image. What God did for Adam in chapter 1, Adam now passes on to his son. Cain and Abel are passed over; the line runs through Seth.",
+      "grammar": "The two nouns of 1:26 return in reverse order and with their prepositions exchanged. God made humanity betsalmenu kidmutenu, ‘in our image, according to our likeness’; Adam fathers a son bidmuto ketsalmo, ‘in his likeness, according to his image’. The reversal signals that the two words mean nearly the same thing and that the phrase is being deliberately echoed. \"He had a son\" is not in the Hebrew as a separate noun; the verb is vayyoled, a Hiphil (causative) of yalad, ‘he caused to be born’, the regular verb for a father's part in this chapter.",
+      "words": [
+        "H1823",
+        "H6754",
+        "H3205",
+        "H8352"
+      ],
+      "text": "The numbers in this chapter differ in the three main ancient witnesses. The standard Hebrew text gives Adam 130 years at Seth's birth and 800 afterward. The Septuagint usually adds a hundred years to a father's age at the birth of his son and subtracts a hundred from the rest of his life (230 and 700 for Adam), so lifespans stay nearly the same while the total time before the flood grows. The Samaritan Pentateuch agrees with the Hebrew here but lowers several later figures.",
+      "theology": [
+        {
+          "id": "humanity",
+          "note": "The image of God is passed on through ordinary human birth, which is why Genesis 9:6 and James 3:9 can treat every later person as bearing it. Many interpreters add that Adam also passes on the fallen condition of chapter 3, a point Christian traditions develop differently in their teaching on original sin."
+        }
+      ],
+      "refs": [
+        "Genesis 1:26",
+        "Genesis 9:6",
+        "James 3:9",
+        "1 Corinthians 15:49"
+      ]
+    },
+    {
+      "v": "4-5",
+      "context": "The pattern of the chapter appears in full for the first time: years after the son's birth, other sons and daughters, total years, and death. Adam lives 930 years and dies. The death threatened in 2:17 and pronounced in 3:19 has come.",
+      "grammar": "\"And then he died\" is a single Hebrew word, vayyamot, ‘and he died’. It closes each man's entry except Enoch's, eight times in all, so that the chapter's most repeated word is death. \"Lived a total of\" renders ‘all the days of Adam which he lived were...’, a full summary formula that makes each life a completed sum.",
+      "words": [
+        "H4191",
+        "H2421",
+        "H1323G",
+        "H1121A"
+      ],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Adam's death fulfills God's word in the garden, however long delayed. Paul reads this list's refrain as evidence that death reigned from Adam onward (Romans 5:14), because sin had entered the world through one man."
+        },
+        {
+          "id": "family",
+          "note": "\"Other sons and daughters\" appears for every father. The genealogy names only one son in each generation, the line of promise, but it records that the blessing of fruitfulness was working in whole families, which also answers the question of where Cain's wife came from."
+        }
+      ],
+      "refs": [
+        "Genesis 2:17",
+        "Genesis 3:19",
+        "Romans 5:12-14",
+        "Hebrews 9:27"
+      ]
+    },
+    {
+      "v": "6-8",
+      "context": "Seth fathers Enosh and dies at 912. The second entry fixes the formula, and its sameness is the point. Seth's son Enosh was already named in 4:26 as the generation in which people began to call on the LORD.",
+      "grammar": "The age at fatherhood is given with a Hebrew word order that puts the smaller unit first (literally ‘five years and a hundred years’), a common way of stating numbers in Genesis. After the birth, \"he had become the father\" is holido, a Hiphil infinitive with a pronoun, ‘his fathering’, dating the rest of each man's life from the birth of his heir.",
+      "words": [
+        "H3205",
+        "H2568",
+        "H3967",
+        "H0583"
+      ],
+      "refs": [
+        "Genesis 4:25-26",
+        "1 Chronicles 1:1-4"
+      ]
+    },
+    {
+      "v": "9-11",
+      "context": "Enosh fathers Kenan and dies at 905. Enosh, whose name means ‘man’ or ‘mortal’, lives the shortest life of the first four generations, though still far beyond any later span.",
+      "history": "Kenan (Qenan) is very close in form to Cain (Qayin), one of several resemblances between this list and Cain's line in chapter 4. The name appears again in the opening genealogy of 1 Chronicles, which copies this chapter's names from Adam to Noah without the ages (1 Chronicles 1:1-4), showing how later Israel kept the list as the start of its own family record.",
+      "theology": [
+        {
+          "id": "hope",
+          "note": "The line that began to call on the LORD in 4:26 continues. Nothing remarkable is said of Enosh or Kenan, and that is itself part of the chapter's teaching: God's purpose moves forward through ordinary, unrecorded faithfulness from one generation to the next."
+        }
+      ],
+      "refs": [
+        "1 Chronicles 1:1-2",
+        "Luke 3:37-38",
+        "Psalm 90:10"
+      ]
+    },
+    {
+      "v": "12-14",
+      "context": "Kenan fathers Mahalalel and dies at 910. The name Mahalalel, like Methushael and Mehujael in Cain's line, ends with el, ‘God’.",
+      "grammar": "Mahalalel is usually understood as ‘praise of God’ or ‘God is praised’, from the verb halal, to praise (the root of hallelujah). Names built with el were common across the ancient Semitic world, and the meaning of a name does not tell us the bearer's faith, but in a list that follows 4:26 the name fits the line that calls on God.",
+      "words": [
+        "H4111G",
+        "H7018",
+        "H7657"
+      ],
+      "refs": [
+        "Genesis 4:18",
+        "Luke 3:37"
+      ]
+    },
+    {
+      "v": "15-17",
+      "context": "Mahalalel fathers Jared and dies at 895. The formula runs on unchanged. The reader is being prepared for the break that comes with Jared's son.",
+      "history": "The name Jared (Yered) sounds like the Hebrew verb yarad, ‘to go down’. The Book of Enoch, a Jewish writing composed in stages over the last centuries BC, connected the name with its story of heavenly beings who came down to earth in Jared's days. That tradition is later interpretation, but it shows how ancient readers already linked this chapter with the strange episode of 6:1-4.",
+      "refs": [
+        "Genesis 6:1-4",
+        "Jude 1:6",
+        "1 Chronicles 1:2"
+      ]
+    },
+    {
+      "v": "18-20",
+      "context": "Jared fathers Enoch and lives 962 years, the second longest life in the list. His son Enoch will be the one exception to the refrain of death.",
+      "grammar": "This Enoch (Chanokh) has the same name as Cain's son in 4:17, but the two are different men in different lines. The name is often connected with the verb chanakh, to dedicate or train, as in Proverbs 22:6, though its origin is uncertain.",
+      "words": [
+        "H2585H",
+        "H3382G",
+        "H8346"
+      ],
+      "refs": [
+        "Genesis 4:17",
+        "Jude 1:14",
+        "Proverbs 22:6"
+      ]
+    },
+    {
+      "v": "21-23",
+      "context": "Enoch fathers Methuselah, and for the first time the formula changes: instead of ‘Enoch lived’, the text says \"Enoch walked with God\". His total years, 365, are the shortest in the list, but the chapter presents them as the fullest.",
+      "grammar": "\"Walked\" is vayyithallekh, a Hithpael of halakh, the reflexive form that means to walk about, to go to and fro, to live one's life in a place. It is the same stem used of God walking in the garden (3:8). ‘With God’ is et-ha'elohim, with the definite article, ‘with the God’; the article may simply mark the true God, and the phrase is used only here and of Noah in 6:9. Later Scripture uses the related expression ‘walk before God’ of Abraham (17:1).",
+      "words": [
+        "H1980I",
+        "H0854",
+        "H0430G",
+        "H4968"
+      ],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Enoch's walk with God is set in the middle of ordinary life: it began after Methuselah's birth and continued while he had other sons and daughters. Hebrews 11:5-6 reads it as faith that pleased God, adding that without faith it is impossible to please him."
+        }
+      ],
+      "refs": [
+        "Genesis 6:9",
+        "Genesis 17:1",
+        "Micah 6:8",
+        "Hebrews 11:5-6",
+        "Amos 3:3"
+      ]
+    },
+    {
+      "v": "24",
+      "context": "The refrain is broken. Instead of ‘and he died’, Enoch's entry ends: he walked with God, and he was no more, because God had taken him. The only man in the chapter who does not die is the one who walked with God.",
+      "grammar": "\"He was no more\" is ve'enennu, literally ‘and he was not’, a phrase that marks absence rather than death; it is used of Joseph when his brothers think him lost (42:13, 36). \"Had taken him\" is laqach, the ordinary verb to take, which is used again of Elijah's being taken up (2 Kings 2:3, 5, 9-10). Two psalms use the same verb to express hope beyond death: God will redeem me from Sheol, for he will take me (Psalm 49:15), and afterward you will take me into glory (Psalm 73:24).",
+      "words": [
+        "H0369",
+        "H3947G",
+        "H1980I"
+      ],
+      "history": "Enoch became a major figure in later Jewish writing. The Book of Enoch, a collection written in stages over the last centuries BC and preserved complete in the Ethiopic language, presents him as a seer of heavenly secrets. The Letter of Jude quotes a prophecy from it attributed to Enoch (Jude 14-15). The Septuagint rendered this verse ‘he was not found, because God transferred him’, the wording Hebrews 11:5 follows.",
+      "theology": [
+        {
+          "id": "hope",
+          "note": "In a chapter where every life ends in death, one ends in God's presence. The text does not explain where Enoch went, but it shows that death is not the final word for a person who walks with God. Later Scripture turns this hope into the promise of resurrection."
+        }
+      ],
+      "refs": [
+        "2 Kings 2:11",
+        "Psalm 49:15",
+        "Psalm 73:24",
+        "Hebrews 11:5",
+        "Jude 1:14-15"
+      ]
+    },
+    {
+      "v": "25-27",
+      "context": "Methuselah fathers Lamech and lives 969 years, the longest life recorded in the Bible. Even the longest life ends with the same words: \"and then he died\".",
+      "history": "By the figures of the standard Hebrew text, Methuselah dies in the year of the flood: he was 187 at Lamech's birth, Lamech was 182 at Noah's birth, and the flood came in Noah's six hundredth year (7:6), a total of 969. Genesis does not say how he died, and it draws no conclusion from the date. The meaning of his name is uncertain; ‘man of the javelin’ and ‘man of Shelah’ are the usual proposals.",
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The longest life in Scripture still ends in death, and it ends at the threshold of the flood. Length of days is a blessing, but it does not escape the sentence on sin. Psalm 90:4 sets even a thousand years beside God's eternity as a day that has passed."
+        }
+      ],
+      "refs": [
+        "Genesis 7:6",
+        "Psalm 90:4",
+        "2 Peter 3:8"
+      ]
+    },
+    {
+      "v": "28-29",
+      "context": "Lamech has a son, and the formula stops again, this time for a speech. Lamech names the boy Noah and gives the reason: he hopes this son will bring comfort from the painful labor of farming the ground the LORD cursed. It is the only use of the name ‘the LORD’ in the chapter, and it comes in a quotation of 3:17.",
+      "grammar": "The name Noach sounds like nuach, ‘rest’, but Lamech's explanation uses a different verb, yenachamenu, from nacham, \"comfort\" (a Piel imperfect, ‘he will comfort us’). Hebrew name explanations often work by sound rather than strict derivation. \"Toil\" is itsavon, the word of 3:16-17, and \"has cursed\" is erarah, a Piel of arar, the curse of 3:17. Lamech names his son in the exact vocabulary of the fall.",
+      "words": [
+        "H5146",
+        "H5162G",
+        "H6093",
+        "H0779"
+      ],
+      "text": "The Septuagint reads ‘this one will give us rest’, which matches the name Noah more closely and may reflect a Hebrew text reading a form of nuach. The standard Hebrew text's ‘comfort’ is the reading of most translations and sets up the wordplay with 6:6-7, where the same verb describes the LORD's regret.",
+      "theology": [
+        {
+          "id": "hope",
+          "note": "Lamech's hope is aimed at the curse on the ground. After the flood God promises never again to curse the ground because of man (8:21), and Noah becomes a man of the soil who plants a vineyard (9:20). Scripture's fuller answer is the removal of the curse itself (Revelation 22:3)."
+        }
+      ],
+      "refs": [
+        "Genesis 3:17",
+        "Genesis 6:6-8",
+        "Genesis 8:21",
+        "Revelation 22:3",
+        "Matthew 11:28"
+      ]
+    },
+    {
+      "v": "30-31",
+      "context": "Lamech lives 595 more years and dies at 777. The chapter's Lamech, a man who hoped for comfort, stands in contrast to the Lamech of 4:23-24 who boasted of seventy-sevenfold vengeance.",
+      "grammar": "Lamech's total is written sheva veshiv'im shanah ushva me'ot shanah, ‘seven and seventy years and seven hundred years’, the sevens repeated. Many interpreters see the number as a deliberate answer to the other Lamech's seventy-seven. The formula closes, as usual, with vayyamot.",
+      "words": [
+        "H7651",
+        "H7657",
+        "H4191",
+        "H3929H"
+      ],
+      "refs": [
+        "Genesis 4:23-24",
+        "Matthew 18:21-22"
+      ]
+    },
+    {
+      "v": "32",
+      "context": "The list ends not with Noah's death but with his three sons, Shem, Ham, and Japheth. Noah's entry is left open and is completed only in 9:28-29, after the flood. The genealogy hands the story to the man through whom humanity will be carried through judgment.",
+      "grammar": "\"Was 500 years old\" is literally ‘was a son of five hundred years’ (ben chamesh me'ot shanah), the regular Hebrew idiom for age. Unlike the earlier entries, three sons are named at once. The order Shem, Ham, Japheth is not necessarily the order of birth: 9:24 calls Ham the youngest, and 10:21 describes Shem as the older brother of Japheth, a phrase whose Hebrew can also be read to make Japheth the elder.",
+      "words": [
+        "H1121L",
+        "H8035",
+        "H2526G",
+        "H3315"
+      ],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The three sons are the ancestors of the nations listed in chapter 10. By naming them before the flood narrative begins, Genesis shows that God is already preparing the future of the whole human family, not only rescuing one man."
+        }
+      ],
+      "refs": [
+        "Genesis 9:18-19",
+        "Genesis 9:28-29",
+        "Genesis 10:1",
+        "Genesis 10:32"
+      ]
+    }
+  ]
+}

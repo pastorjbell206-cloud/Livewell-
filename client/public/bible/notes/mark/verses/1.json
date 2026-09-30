@@ -1,0 +1,491 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "Mark's first line works as a title for what follows. It has no verb in Greek: ‘Beginning of the gospel of Jesus Christ, Son of God’. It tells the reader at the start what no human character in the story will fully grasp until the centurion speaks at the cross (15:39).",
+      "grammar": "Archē, ‘beginning’, without the article, echoes the opening of Genesis in the Septuagint, en archē, and may mean either that the whole book is the beginning of the gospel (the good news that continues in the church's preaching) or that verses 1 to 13 are its starting point. The genitive Iēsou Christou, ‘of Jesus Christ’, can be objective, the good news about Jesus, or subjective, the good news Jesus proclaims (as in 1:14). Mark probably intends both: Jesus announces the gospel and is its content. Christos is still a title here, ‘the Messiah’, the anointed king, not yet merely a surname.",
+      "words": ["G0746", "G2098", "G5547", "G5207"],
+      "history": "Euangelion was a political word in the Roman world. The calendar inscription from Priene in Asia Minor, from 9 BC, honors the emperor Augustus and says that his birthday was for the world the beginning of the good news (euangelia) that came through him. Mark's first sentence uses the same vocabulary for a different king, and a first-century reader in a Roman city could hardly miss the contrast.",
+      "text": "The words ‘the Son of God’ (huiou theou) are missing from the original hand of Codex Sinaiticus, from Codex Koridethi (Θ) and a few other manuscripts, and from quotations of the verse by Origen. They are present in Codex Vaticanus, Codex Bezae, Codex Washingtonianus, a corrector of Sinaiticus, and most later manuscripts. The Nestle-Aland edition prints them in brackets; the SBL Greek New Testament and Westcott and Hort leave them out. Bart Ehrman argued that the words were added by scribes eager to affirm Christ's divinity; Tommy Wasserman, in a 2011 study, argued that they are original and were lost by accident, since a scribe copying a series of abbreviated sacred names could easily skip one. The title appears elsewhere in Mark at key points (1:11, 9:7, 15:39), so the book's teaching does not depend on this verse.",
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "Before a single scene, Mark names Jesus as the Christ. The rest of the book shows what kind of Messiah he is: one who serves, suffers, and dies (8:31, 10:45)."
+        },
+        {
+          "id": "incarnation",
+          "note": "If ‘Son of God’ is original here, the book opens and closes (15:39) with the same confession. Even without it, the prologue's voice from heaven (1:11) gives Jesus that identity."
+        }
+      ],
+      "refs": ["Genesis 1:1", "Isaiah 52:7", "Mark 15:39", "Romans 1:1-4"]
+    },
+    {
+      "v": "2-3",
+      "context": "The first thing Mark does is reach back to the prophets. The story of Jesus does not start from nothing; it is the arrival of what God promised. The quotation introduces John in verse 4 as the messenger who prepares the way.",
+      "grammar": "Gegraptai, ‘it has been written’, is a perfect passive, the standard formula for citing Scripture, whose force is ‘it stands written’. The quotation changes one small word that matters a great deal: where Malachi has God say the messenger will prepare the way ‘before Me’, Mark has hodon sou, ‘your way’, and where Isaiah's Greek has ‘the paths of our God’, Mark has tas tribous autou, ‘his paths’. In both cases the one whose way is prepared is now Jesus. Kuriou, ‘of the Lord’, in Isaiah stands for the divine name YHWH, and Mark applies it to Jesus.",
+      "words": ["G1125", "G0032H", "G2680", "G3598", "G2962G", "G5147"],
+      "parallels": ["Matthew 3:3", "Luke 3:4-6", "John 1:23"],
+      "ot": [
+        {
+          "ref": "Malachi 3:1",
+          "note": "The first line combines two texts. Exodus 23:20 in the Septuagint reads idou egō apostellō ton angelon mou pro prosōpou sou, ‘behold, I send my messenger before your face’, promising an angel to guard Israel on the road to the land; Mark's first words follow it closely. The second half comes from Malachi 3:1, where the Hebrew reads ‘he will prepare the way before me’ (u-phinnah derek lefanai), promising a messenger before the LORD himself comes to his temple in judgment. Malachi 4:5 identifies the messenger as Elijah. Mark changes ‘before me’ to ‘your way’, so that the one who comes after the messenger is Jesus. Matthew (11:10) and Luke (7:27) use the same combined form in a different place, which suggests it was a known Christian reading."
+        },
+        {
+          "ref": "Isaiah 40:3",
+          "note": "Isaiah 40 opens the prophecies of comfort for exiles in Babylon: God himself will lead his people home through the desert. In the Hebrew, ‘in the wilderness’ belongs with ‘prepare’ (‘in the wilderness prepare the way of the LORD’); the Septuagint, which Mark follows, attaches it to ‘a voice’ (‘a voice of one crying in the wilderness’). Mark keeps the Septuagint wording but ends with ‘his paths’ rather than ‘the paths of our God’. The community at Qumran used the same verse to explain its own withdrawal to the desert to study the law (1QS 8:12-16). Mark applies it instead to John, preaching in the wilderness, and to Jesus, whose coming is the coming of the Lord."
+        }
+      ],
+      "text": "The earliest manuscripts, including Sinaiticus and Vaticanus, read ‘in Isaiah the prophet’, though the first line comes from Exodus and Malachi. Later manuscripts, followed by the King James Version, read ‘in the prophets’, a correction that removes the difficulty. Ancient writers commonly cited a combined quotation under the name of its most important source, and Isaiah's text is the one Mark goes on to develop. Some later manuscripts also add ‘before you’ at the end of verse 2, from Matthew and Luke.",
+      "theology": [
+        {
+          "id": "prophecy",
+          "note": "Mark presents the gospel as the fulfillment of what the prophets promised. The story begins in Scripture before it begins in the Jordan valley."
+        },
+        {
+          "id": "incarnation",
+          "note": "By applying to Jesus a text about the coming of the LORD, Mark identifies Jesus' coming with the coming of Israel's God. This is one of the earliest and most striking ways the New Testament says who Jesus is."
+        }
+      ],
+      "refs": ["Exodus 23:20", "Malachi 4:5", "Isaiah 40:9-11", "Matthew 11:10"]
+    },
+    {
+      "v": "4",
+      "context": "John appears as the fulfillment of verses 2 and 3: the voice in the wilderness. His message is a baptism tied to repentance and forgiveness, a call to Israel to turn back to God before he comes.",
+      "grammar": "Egeneto, ‘there came’ or ‘appeared’, marks a new figure entering the story. The participle ho baptizōn, ‘the one baptizing’, works as a title, ‘the Baptizer’, the only name Mark uses for John besides his own (6:14, 6:24). The phrase baptisma metanoias, ‘a baptism of repentance’, uses a descriptive genitive: the baptism expressed and sealed a repentance. Metanoia means a change of mind and direction, a turning back to God, not just regret. Eis aphesin hamartiōn, ‘for the forgiveness of sins’, states the goal the repentance looked toward.",
+      "words": ["G0907", "G0908", "G3341", "G0859", "G0266"],
+      "parallels": ["Matthew 3:1-2", "Luke 3:2-3"],
+      "history": "Josephus describes John in Antiquities 18.116-119 as a good man who called Jews to practice virtue and righteousness and to come together in baptism. He adds that John's baptism was not meant to gain pardon for sins but to purify the body, the soul having already been cleansed by righteousness. The difference from Mark is often noted: Josephus writes for Roman readers and describes John in moral terms; Mark ties the baptism to repentance and forgiveness. Both agree that John's baptism required a changed life, not only a rite.",
+      "text": "The manuscripts differ on the opening words. Some read ‘John the Baptizer appeared in the wilderness preaching’, others ‘John appeared, baptizing in the wilderness and preaching’. The major editions divide, and the sense is the same.",
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "John's preaching makes repentance the doorway to the gospel. It is a turning of the whole person, publicly marked, and it looks toward forgiveness that God gives."
+        }
+      ],
+      "refs": ["Acts 13:24", "Acts 19:4", "Luke 3:3", "Isaiah 1:16-18"]
+    },
+    {
+      "v": "5",
+      "context": "The response to John is enormous. Crowds leave Jerusalem and the Judean countryside to go out to the wilderness, confess their sins, and be baptized in the Jordan. The movement is outward, from the city and its temple to the desert where Israel had once met God.",
+      "grammar": "Exeporeueto and ebaptizonto are imperfects, picturing a continuing stream of people rather than one event. ‘All’ (pasa, pantes) is a deliberate overstatement to stress the scale. Exomologoumenoi, a present middle participle, ‘confessing openly’, shows that the baptism was accompanied by spoken confession of sin. Hup' autou, ‘by him’, marks John as the one who baptized, unlike Jewish self-immersions for purity, which a person performed alone.",
+      "words": ["G1607", "G0907", "G1843", "G2446"],
+      "history": "The Jordan runs from the Sea of Galilee to the Dead Sea through a hot, deep valley. Its crossing was one of Israel's founding memories (Joshua 3 to 4), and Elijah and Elisha crossed it just before Elijah was taken up (2 Kings 2:6-14). The traditional site of John's baptizing is near Jericho, not far from where Israel crossed into the land; Christian pilgrims visited both sides of the river from the fourth century. A people coming out to the Jordan to repent could hardly miss the symbolism of starting over at the border of the land.",
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "Confession of sin is spoken and public. The people do not only feel sorry; they say what they have done, which is the biblical shape of repentance from Leviticus 26:40 to 1 John 1:9."
+        }
+      ],
+      "refs": ["Joshua 3:14-17", "2 Kings 2:6-14", "1 John 1:9", "Proverbs 28:13"]
+    },
+    {
+      "v": "6",
+      "context": "Mark pauses to describe John's clothing and food, which is unusual for Mark, who describes few people. The detail matters because it identifies John with Elijah, the messenger promised in Malachi, which Jesus will make explicit in 9:11-13.",
+      "grammar": "Ēn endedumenos, a periphrastic construction with a perfect participle, describes John's habitual appearance: ‘he was clothed’. Zōnē dermatinē peri tēn osphun autou, ‘a leather belt around his waist’, matches almost exactly the Septuagint of 2 Kings 1:8, where Elijah is described as a hairy man girded with a leather belt. Esthiōn, a present participle, describes his regular diet.",
+      "words": ["G1746", "G2359", "G2223", "G1193", "G0200", "G0066"],
+      "parallels": ["Matthew 3:4"],
+      "history": "Locusts were among the few insects the law allowed Israelites to eat (Leviticus 11:21-22), and the Damascus Document found at Qumran even gives rules for how to cook them (CD 12:14-15). Wild honey was honey from wild bees or possibly the sweet sap of trees. A hairy cloak was the recognized garb of a prophet (Zechariah 13:4). John's diet and clothing mark him as a man of the wilderness who depends on what God provides there, outside the economy of the towns.",
+      "theology": [
+        {
+          "id": "prophecy",
+          "note": "John's appearance declares that prophecy, silent for generations, has returned, and specifically the Elijah Malachi promised. Jesus later confirms that Elijah has come (9:13)."
+        }
+      ],
+      "refs": ["2 Kings 1:8", "Zechariah 13:4", "Malachi 4:5-6", "Mark 9:11-13"]
+    },
+    {
+      "v": "7-8",
+      "context": "John's only recorded message in Mark points away from himself. Someone stronger is coming, so great that John is not worthy to do a slave's task for him, and his baptism will be with the Holy Spirit, not water.",
+      "grammar": "Ischuroteros, ‘stronger’, is a comparative that Mark will pick up in 3:27, where Jesus binds the ‘strong man’ (Satan) and plunders his house: the stronger one has come. The contrast in verse 8 sets the aorist ebaptisa, ‘I baptized’, against the future baptisei, ‘he will baptize’. Egō and autos, ‘I’ and ‘he’, are both emphatic pronouns. Hudati, ‘with water’, is a plain dative; en pneumati hagiō, ‘in’ or ‘with the Holy Spirit’, uses a preposition that can suggest being immersed in the Spirit as in water.",
+      "words": ["G2478", "G2425", "G2438", "G0907", "G4151G"],
+      "parallels": ["Matthew 3:11-12", "Luke 3:15-17", "John 1:26-27"],
+      "history": "Loosening a master's sandals was among the lowest tasks of household slaves. The Babylonian Talmud records a saying that a disciple should do for his teacher every service a slave does for his master except untying his sandal (b. Ketubot 96a), which shows how humiliating the task was felt to be. John claims to be unworthy even of what a disciple would refuse.",
+      "text": "Matthew and Luke add ‘and with fire’ and include John's warnings of judgment (the axe, the winnowing fork). Mark gives only the promise of the Spirit, keeping the focus on the one who comes.",
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "The prophets promised that God would pour out his Spirit on his people (Joel 2:28-29, Ezekiel 36:25-27). John says the coming one will do this, which assigns to Jesus a work the Old Testament reserves for God."
+        },
+        {
+          "id": "trinity",
+          "note": "Before the baptism scene, John already links the coming Son to the Spirit whom he will give. Mark's prologue introduces all three persons before Jesus says a word."
+        }
+      ],
+      "refs": ["Joel 2:28-29", "Ezekiel 36:25-27", "Isaiah 44:3", "Acts 1:5", "Mark 3:27"]
+    },
+    {
+      "v": "9",
+      "context": "Jesus enters the story with no introduction except his hometown. He comes like everyone else to John's baptism, which raises a question Matthew addresses (3:14-15) and Mark leaves silent: why would the stronger one receive a baptism of repentance.",
+      "grammar": "Kai egeneto en ekeinais tais hēmerais, ‘and it happened in those days’, is a Septuagint-style formula that gives the moment biblical weight. Ebaptisthē eis ton Iordanēn, ‘he was baptized into the Jordan’, uses eis, ‘into’, the only place in the Gospels with this wording, which suggests immersion. The passive with hupo Iōannou, ‘by John’, is the plainest statement in the Gospels that John baptized Jesus.",
+      "words": ["G2064", "G3478", "G1056G", "G0907", "G2446"],
+      "parallels": ["Matthew 3:13-15", "Luke 3:21"],
+      "history": "Nazareth was a small village in the hills of lower Galilee, never mentioned in the Old Testament, Josephus, or the Mishnah. The earliest non-Christian mention is a Hebrew inscription found at Caesarea in 1962, listing the priestly courses and their towns, usually dated to the third or fourth century AD. The obscurity explains Nathanael's question in John 1:46.",
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "Jesus, who has no sin to confess, stands in the water with sinners. The early church read the baptism as the first step of his identification with those he came to save, which the cross completes (Isaiah 53:12, 2 Corinthians 5:21)."
+        }
+      ],
+      "refs": ["Matthew 3:13-15", "John 1:46", "Isaiah 53:12", "2 Corinthians 5:21"]
+    },
+    {
+      "v": "10",
+      "context": "As Jesus rises from the water, he sees heaven torn open and the Spirit coming down like a dove. Mark tells it from Jesus' point of view (‘He saw’), as a vision given to him.",
+      "grammar": "Schizomenous, ‘being torn’, is a present passive participle of a violent verb; Matthew and Luke use the milder anoigō, ‘open’. Mark uses schizō only here and at 15:38, when the temple curtain is torn from top to bottom. The heavens split open at the start, and the curtain that hid God's presence splits at the end. Hōs peristeran, ‘like a dove’, describes the Spirit's manner of coming, not necessarily a bird. The phrase eis auton, ‘into him’ or ‘upon him’, is the best-attested reading; later manuscripts have ep' auton, ‘upon him’, from Matthew and Luke.",
+      "words": ["G4977", "G3772", "G4151G", "G4058", "G2597"],
+      "parallels": ["Matthew 3:16", "Luke 3:22", "John 1:32-34"],
+      "ot": [
+        {
+          "ref": "Isaiah 64:1",
+          "note": "Isaiah's prayer, ‘Oh, that You would rend the heavens and come down’, is 63:19 in the Hebrew numbering. The Hebrew verb qara means ‘tear’, as one tears a garment in grief. The Septuagint softens it to ‘open’ (anoixēs). Mark's schizō is closer to the Hebrew than to the Greek. In Isaiah the people ask God to break open the sky and come to save them, as he did at Sinai; many interpreters hear in Mark's torn heavens the answer to that prayer, with God coming down in the Spirit upon his Son."
+        }
+      ],
+      "history": "Rabbinic tradition also connected the Spirit with a dove. The Babylonian Talmud records Ben Zoma comparing the Spirit of God hovering over the waters in Genesis 1:2 to a dove hovering over its young (b. Hagigah 15a). The dove sent out by Noah after the flood (Genesis 8:8-12) is another image many interpreters have heard here, a sign of new creation after judgment, though Mark does not make the link himself.",
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "The Spirit comes upon Jesus to equip him as the anointed one, in line with Isaiah 42:1 and 61:1. The one who will baptize with the Spirit first receives the Spirit."
+        },
+        {
+          "id": "trinity",
+          "note": "The Son rises from the water, the Spirit descends, and in the next verse the Father speaks. The church fathers pointed to this scene when they confessed one God in three persons."
+        }
+      ],
+      "refs": ["Isaiah 64:1", "Mark 15:38", "Genesis 1:2", "Isaiah 61:1"]
+    },
+    {
+      "v": "11",
+      "context": "The voice from heaven speaks directly to Jesus, confirming what Mark's first verse told the reader. In Mark only Jesus is said to see the heavens tear, and the voice addresses him alone (‘You are’), where Matthew has ‘This is’, addressed to the bystanders.",
+      "grammar": "Su ei ho huios mou, ‘You are my Son’, puts the pronoun su first. Ho agapētos, ‘the beloved’, can mean ‘dear’ but in the Septuagint often means ‘only’ or ‘unique’, especially of an only son (Genesis 22:2, 12, 16). Eudokēsa, ‘I am well pleased’, is an aorist, which here does not locate God's pleasure in a past moment. Grammarians describe it as a timeless or constative aorist, perhaps reflecting a Hebrew stative verb: ‘in you I take delight’.",
+      "words": ["G5207", "G0027", "G2106", "G5456G"],
+      "parallels": ["Matthew 3:17", "Luke 3:22"],
+      "ot": [
+        {
+          "ref": "Psalm 2:7",
+          "note": "In Psalm 2, a royal psalm used at the enthronement of Israel's kings, God says to his king, ‘You are My Son; today I have become Your Father’. The Hebrew is beni attah, the Septuagint huios mou ei su. Mark's ‘You are my Son’ uses the same words in a different order. The voice identifies Jesus as the royal Son, the Messiah of David's line. In Codex Bezae and some Old Latin witnesses, Luke 3:22 gives the psalm's whole line, including ‘today I have begotten you’."
+        },
+        {
+          "ref": "Isaiah 42:1",
+          "note": "Isaiah's first servant song begins, ‘Here is My Servant, whom I uphold, My Chosen One, in whom My soul delights. I will put My Spirit on Him’. The Hebrew ratsetah nafshi, ‘my soul delights’, stands behind Mark's ‘in you I am well pleased’; Matthew 12:18 translates Isaiah 42:1 with the same verb eudokeō. The Spirit's descent in verse 10 matches the servant's anointing. So the voice joins the royal Son of Psalm 2 to the Servant of Isaiah, whose calling leads through suffering (Isaiah 53)."
+        },
+        {
+          "ref": "Genesis 22:2",
+          "note": "When God tells Abraham to offer Isaac, the Septuagint calls him ton huion sou ton agapēton, ‘your beloved son’, translating the Hebrew yechidkha, ‘your only one’. Many interpreters hear an echo in Mark's ho huios mou ho agapētos. The echo is verbal rather than explicit, but Mark's parable of the vineyard later speaks of the owner's one beloved son whom the tenants kill (12:6), which strengthens it."
+        }
+      ],
+      "theology": [
+        {
+          "id": "trinity",
+          "note": "The Father speaks to the Son on whom the Spirit has come. The New Testament does not yet use the word Trinity, but this scene became one of the church's principal witnesses to the three persons."
+        },
+        {
+          "id": "messiah",
+          "note": "The voice combines the king's title from Psalm 2 with the servant's description from Isaiah 42. From the start, Jesus is the Messiah who serves."
+        }
+      ],
+      "refs": ["Psalm 2:7", "Isaiah 42:1", "Mark 9:7", "Mark 12:6", "2 Peter 1:17"]
+    },
+    {
+      "v": "12-13",
+      "context": "The Son on whom the Spirit has rested is immediately driven by the same Spirit into the wilderness to be tested. Mark gives no temptations and no dialogue, only four facts: forty days, Satan's testing, the wild animals, and the angels' service.",
+      "grammar": "Ekballei is a historic present, ‘the Spirit drives him out’, vivid and forceful. It is the same verb Mark uses for Jesus casting out demons (1:34, 1:39), so the Spirit's action is strong. The participle peirazomenos, ‘being tested’, is present, suggesting testing throughout the forty days rather than only at the end, as in Matthew and Luke. The imperfect diēkonoun, ‘they were serving’, pictures continuing care; it is the verb used of Simon's mother-in-law in verse 31 and of the Son of Man, who came not to be served but to serve (10:45).",
+      "words": ["G1544", "G2048", "G3985G", "G4567", "G2342", "G1247"],
+      "parallels": ["Matthew 4:1-11", "Luke 4:1-13"],
+      "history": "Forty recalls Israel's forty years of testing in the wilderness (Deuteronomy 8:2), Moses' forty days on the mountain (Exodus 34:28), and Elijah's forty days' walk to Horeb, when an angel fed him (1 Kings 19:5-8). The wild animals have been read two ways. Some see them as a threat, the wilderness as a place of danger where God protects his servant (Psalm 91:11-13). Others, including Richard Bauckham in a 1994 essay on Jesus and the wild animals, read the phrase ‘with the wild animals’ as a picture of peace, the harmony of Eden and of Isaiah's promised age (Isaiah 11:6-9) restored in the new Adam.",
+      "theology": [
+        {
+          "id": "angels",
+          "note": "Angels serve Jesus in the wilderness. Scripture presents them as ministering spirits sent to serve (Hebrews 1:14), and here their service marks Jesus as the one God upholds."
+        },
+        {
+          "id": "suffering",
+          "note": "The Spirit leads Jesus into testing, not away from it. The Son's obedience is proved where Israel's faltered, which Hebrews reads as part of his fitness to help those who are tested (Hebrews 2:18)."
+        }
+      ],
+      "refs": ["Deuteronomy 8:2", "1 Kings 19:5-8", "Psalm 91:11-13", "Isaiah 11:6-9", "Hebrews 4:15"]
+    },
+    {
+      "v": "14",
+      "context": "The prologue ends and Jesus' public work begins, marked by a turning point: John has been ‘handed over’. Jesus goes north to Galilee and announces the gospel of God.",
+      "grammar": "Paradothēnai, ‘to be handed over’, is an aorist passive infinitive of paradidōmi, the verb Mark uses for Jesus' betrayal and delivery to death (9:31, 10:33, 14:41) and for the disciples' persecution (13:9-12). John's fate foreshadows Jesus', and Jesus' foreshadows his followers'. Kērussōn, ‘proclaiming’, is the herald's verb: announcing news on someone else's authority. To euangelion tou theou, ‘the gospel of God’, means the good news that comes from God.",
+      "words": ["G3860", "G2784", "G2098", "G1056G"],
+      "parallels": ["Matthew 4:12", "Luke 4:14-15"],
+      "text": "The Byzantine manuscripts and the King James Version read ‘the gospel of the kingdom of God’, apparently drawing the phrase from verse 15. The earlier manuscripts read ‘the gospel of God’.",
+      "theology": [
+        {
+          "id": "mission",
+          "note": "Jesus' first act of public ministry is proclamation. The gospel is announced before it is explained, as news that calls for a response."
+        }
+      ],
+      "refs": ["Mark 6:17-18", "Mark 9:31", "Romans 1:1", "1 Thessalonians 2:9"]
+    },
+    {
+      "v": "15",
+      "context": "Mark summarizes Jesus' message in two statements and two commands: the time is fulfilled, the kingdom has come near; repent and believe. Everything that follows in the Gospel unfolds these words.",
+      "grammar": "Both statements use perfect tenses. Peplērōtai ho kairos, ‘the appointed time has been fulfilled’, says the period of waiting is complete; kairos is a decisive moment, not simply chronological time. Ēngiken hē basileia tou theou, ‘the kingdom of God has come near’, is disputed: C. H. Dodd argued in The Parables of the Kingdom (1935) that it means the kingdom ‘has arrived’, while most scholars hold that it means ‘has drawn near’, present in Jesus' ministry but not yet complete. The commands metanoeite and pisteuete are present imperatives, calling for continuing repentance and belief. Pisteuete en tō euangeliō, ‘believe in the gospel’, uses the preposition en after ‘believe’, rare in the New Testament and probably reflecting the Hebrew idiom he'emin be-, ‘trust in’.",
+      "words": ["G4137", "G2540", "G1448", "G0932", "G3340", "G4100"],
+      "parallels": ["Matthew 4:17"],
+      "ot": [
+        {
+          "ref": "Isaiah 52:7",
+          "note": "Isaiah pictures a herald running over the mountains who proclaims good news (Hebrew mevasser, Septuagint euangelizomenos) and says to Zion, ‘Your God reigns’. The words are not quoted, but Mark's ‘gospel’ and ‘kingdom of God’ bring the two halves of Isaiah's announcement together. Jewish readers in the period understood such texts as promises of God's return to reign; the Aramaic Targum of Isaiah renders ‘your God reigns’ as ‘the kingdom of your God is revealed’."
+        }
+      ],
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The kingdom of God is his reign breaking into history in Jesus. The healings and exorcisms in the rest of the chapter show what that reign looks like when it arrives."
+        },
+        {
+          "id": "repentance",
+          "note": "Repentance and faith are joined as one response. To turn from sin and to trust the good news are two sides of the same turning toward God."
+        },
+        {
+          "id": "faith",
+          "note": "The object of faith is the gospel, the announcement of what God is doing. Faith in Mark is trust in God's action in Jesus, which later scenes show can be small and yet real (9:24)."
+        }
+      ],
+      "refs": ["Isaiah 52:7", "Daniel 7:22", "Galatians 4:4", "Acts 20:21", "Mark 9:24"]
+    },
+    {
+      "v": "16",
+      "context": "The first scene of the ministry is a call to followers. Before Jesus teaches or heals, he gathers disciples. Mark sets it by the lake, with Simon and Andrew at their work.",
+      "grammar": "Paragōn para tēn thalassan, ‘passing along beside the sea’, repeats the preposition, a small wordplay. Amphiballontas, ‘casting around’, describes throwing a circular cast net, which a fisherman standing in shallow water would fling so that it spread and sank over fish. The explanation ēsan gar halieis, ‘for they were fishermen’, uses gar, a characteristic Markan aside for readers unfamiliar with the setting.",
+      "words": ["G3855", "G2281", "G6006", "G0231"],
+      "parallels": ["Matthew 4:18", "Luke 5:1-3"],
+      "history": "The Sea of Galilee is a freshwater lake, and Luke, writing more precisely for Greek readers, calls it a lake (limnē). Fishing was a major industry around it: Magdala, on its western shore, was known in Greek as Taricheae, from the word for salted fish. The fishermen who worked there paid tolls and taxes and could run family businesses with hired workers, as verse 20 shows.",
+      "theology": [
+        {
+          "id": "election",
+          "note": "Jesus sees and calls. The initiative is entirely his; the disciples do not apply. The pattern matches God's calling of prophets and of Israel itself."
+        }
+      ],
+      "refs": ["Matthew 4:18-20", "Luke 5:1-11", "John 1:40-42", "John 15:16"]
+    },
+    {
+      "v": "17-18",
+      "context": "Jesus' call is personal (‘follow Me’) and carries a promise: he will make them fishers of people. The brothers leave their nets at once.",
+      "grammar": "Deute opisō mou, literally ‘come behind me’, is the language of a disciple walking behind a teacher. Poiēsō humas genesthai, ‘I will make you to become’, stresses that the disciples' new vocation is something Jesus will do in them. The aorist participle aphentes, ‘having left’, and the aorist ēkolouthēsan, ‘they followed’, describe decisive acts, and euthus, ‘at once’, underlines the immediacy.",
+      "words": ["G1205", "G3694", "G4160G", "G0231", "G0863G", "G0190"],
+      "parallels": ["Matthew 4:19-20"],
+      "ot": [
+        {
+          "ref": "Jeremiah 16:16",
+          "note": "In Jeremiah God says, ‘I will send for many fishermen, and they will catch them’, followed by hunters who will hunt them from every mountain. In context the fishermen gather Israel for judgment on their sins (16:17-18), though the preceding verse (16:15) promises restoration. Amos 4:2 and Habakkuk 1:14-17 also use fishing hooks and nets as images of judgment. Jesus' phrase is not a quotation, and interpreters differ on whether he is echoing Jeremiah. If he is, he reshapes the image: the disciples will gather people for the kingdom rather than for punishment."
+        }
+      ],
+      "history": "Rabbinic disciples usually chose their teacher and asked to follow him. Jesus reverses the pattern by calling his disciples himself. The closest biblical model is Elijah's call of Elisha, who was plowing when Elijah threw his cloak over him; Elisha asked first to kiss his parents goodbye (1 Kings 19:19-21). The brothers in Mark ask for nothing.",
+      "theology": [
+        {
+          "id": "mission",
+          "note": "The call to follow includes the call to gather others. Discipleship and mission begin in the same sentence."
+        }
+      ],
+      "refs": ["1 Kings 19:19-21", "Mark 8:34", "Mark 10:28", "Luke 9:59-62"]
+    },
+    {
+      "v": "19-20",
+      "context": "A second pair of brothers, James and John, is called in the same way. Mark adds a painful detail: they leave their father in the boat with the hired men.",
+      "grammar": "Katartizontas ta diktua, ‘mending’ or ‘putting in order the nets’, uses a verb that means restoring or equipping (Paul uses it in Galatians 6:1 of restoring a fallen brother). Ekalesen, ‘he called’, gives the call no content, since the pattern of verse 17 is assumed. Apēlthon opisō autou, ‘they went away after him’, repeats the language of following behind.",
+      "words": ["G2675", "G1350", "G2564G", "G3411", "G2199G"],
+      "parallels": ["Matthew 4:21-22"],
+      "history": "The mention of hired men (misthōtoi) shows that Zebedee's business was substantial enough to employ workers. A fishing boat of this period was found in the mud of the Sea of Galilee near Kibbutz Ginosar in 1986; it is about eight meters long and could hold a crew of several men, the kind of boat the Gospels describe. Fishing families like Zebedee's were not destitute, which makes the sons' leaving more costly.",
+      "theology": [
+        {
+          "id": "family",
+          "note": "Following Jesus relativizes even the bond with a father. Jesus later promises that those who leave home and family for his sake will receive a hundredfold, with persecutions (10:29-30)."
+        }
+      ],
+      "refs": ["Mark 10:28-30", "Matthew 10:37", "Luke 14:26", "Mark 3:17"]
+    },
+    {
+      "v": "21-22",
+      "context": "Mark begins a sample day in Capernaum. On the Sabbath Jesus teaches in the synagogue, and the people are struck by his authority. Mark does not report the content of the teaching, only its effect.",
+      "grammar": "Eisporeuontai, ‘they go into’, is a historic present that moves the scene forward. The imperfects edidasken, ‘he began to teach’, and exeplēssonto, ‘they were astonished’, describe action in progress. The explanation in verse 22 uses a periphrastic imperfect, ēn didaskōn, ‘he was teaching’, and hōs exousian echōn, ‘as one having authority’. Exousia means the right and power to act, and it is the key word of this scene, returning in verse 27.",
+      "words": ["G2584", "G4521", "G1321", "G1605", "G1849", "G1122"],
+      "parallels": ["Luke 4:31-32", "Matthew 7:28-29"],
+      "history": "Synagogues served as meeting places for reading and teaching the Scriptures on the Sabbath, and a visiting teacher could be invited to speak (Luke 4:16-17, Acts 13:15). The Theodotus inscription from Jerusalem, usually dated before AD 70, describes a synagogue built for the reading of the law and teaching of the commandments, confirming this purpose. The scribes taught by passing on the interpretations of earlier teachers; the later Mishnah shows the method, with rulings attributed to named sages.",
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "Jesus teaches on his own authority, not by citing earlier interpreters. His words carry the weight of God's own word, which is why the crowd's amazement is the right response."
+        }
+      ],
+      "refs": ["Luke 4:16-17", "Matthew 7:28-29", "John 7:46", "Mark 11:27-33"]
+    },
+    {
+      "v": "23-24",
+      "context": "In the synagogue a man with an unclean spirit cries out. The first person in Mark's story to name Jesus' identity is a demon, and it does so in fear.",
+      "grammar": "Ti hēmin kai soi is a Hebrew idiom, literally ‘what to us and to you’, found in Judges 11:12, 2 Samuel 16:10, and 1 Kings 17:18. It means ‘what do we have in common’ or ‘why are you interfering with us’. The spirit uses the plural hēmin, ‘us’, speaking for the demonic powers as a whole, and then the singular oida, ‘I know’. Knowing and naming the opponent was thought in the ancient world to give power over him, and some commentators read the demon's words as a defensive move. Ho hagios tou theou, ‘the Holy One of God’, is a title used in Psalm 106:16 of Aaron and in 2 Kings 4:9 of Elisha as ‘a holy man of God’; here it marks Jesus as set apart and full of God's holiness, the opposite of the ‘unclean’ spirit.",
+      "words": ["G0169", "G0349", "G0622", "G6063", "G0040G"],
+      "parallels": ["Luke 4:33-34"],
+      "theology": [
+        {
+          "id": "holiness",
+          "note": "The encounter is between the Holy One of God and an unclean spirit. Holiness is not fragile in Jesus: it does not retreat from uncleanness but drives it out."
+        },
+        {
+          "id": "kingdom",
+          "note": "The demon asks whether Jesus has come to destroy them, and the answer implied by the story is yes. The arrival of God's kingdom means the end of the powers that hold people captive."
+        }
+      ],
+      "refs": ["1 Kings 17:18", "Mark 5:7", "James 2:19", "Luke 4:34", "1 John 3:8"]
+    },
+    {
+      "v": "25-26",
+      "context": "Jesus silences the spirit and orders it out. The spirit leaves violently, but it leaves. The first miracle in Mark is an exorcism, which sets the tone for Jesus' conflict with evil.",
+      "grammar": "Epetimēsen, ‘he rebuked’, is the verb used in the Septuagint for God's rebuke of hostile powers (Psalm 106:9, Zechariah 3:2); Mark uses it again when Jesus rebukes the wind and sea (4:39). Phimōthēti, an aorist passive imperative, literally means ‘be muzzled’, the same command Jesus gives to the sea in 4:39 (pephimōso). The spirit's exit is described with two participles, sparaxan, ‘convulsing’, and phōnēsan, ‘crying out’, before the main verb exēlthen, ‘it came out’.",
+      "words": ["G2008", "G5392", "G1831", "G4682"],
+      "parallels": ["Luke 4:35"],
+      "theology": [
+        {
+          "id": "sovereignty",
+          "note": "Jesus commands evil spirits with a word, without incantations or appeals to another name. Ancient exorcists typically invoked powerful names; Jesus acts in his own authority."
+        }
+      ],
+      "refs": ["Zechariah 3:2", "Mark 4:39", "Mark 3:11-12", "Acts 19:13-16"]
+    },
+    {
+      "v": "27-28",
+      "context": "The crowd's response ties together the teaching and the exorcism as one act of authority. News of Jesus spreads through Galilee, the first of many notes in Mark about his growing fame.",
+      "grammar": "The crowd's words can be punctuated in two ways. Didachē kainē kat' exousian may mean ‘a new teaching with authority’, as the BSB reads, or ‘a new teaching. With authority he commands even the unclean spirits’. The Greek manuscripts have no punctuation, and both readings make the same point: word and deed are one in Jesus. Kainē, ‘new’, means new in kind, not only recent. Epitassei, ‘he commands’, and hupakouousin, ‘they obey’, are present tenses stating what is now the case.",
+      "words": ["G2284", "G1322", "G2537", "G1849", "G2004", "G5219"],
+      "parallels": ["Luke 4:36-37"],
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The authority of Jesus' teaching is shown by the authority of his action. In Mark the kingdom is not only announced but demonstrated."
+        }
+      ],
+      "refs": ["Luke 4:36", "Matthew 9:33", "Mark 2:12", "Luke 11:20"]
+    },
+    {
+      "v": "29-31",
+      "context": "The scene moves from the public synagogue to a private house. Jesus heals Simon's mother-in-law, and she immediately begins to serve them. The healing is quiet, personal, and complete.",
+      "grammar": "Katekeito puressousa, ‘she was lying down, burning with fever’, describes her condition with an imperfect and a present participle. Jesus' actions come in three steps: proselthōn, ‘coming near’, kratēsas tēs cheiros, ‘taking hold of her hand’, and ēgeiren, ‘he raised her’. The verb egeirō is the ordinary word for helping someone up, but it is also Mark's word for resurrection (5:41, 16:6). Diēkonei, ‘she began to serve’, is an imperfect of the same verb used of the angels in verse 13 and of Jesus in 10:45.",
+      "words": ["G3994", "G4445", "G2902", "G1453", "G4446", "G1247"],
+      "parallels": ["Matthew 8:14-15", "Luke 4:38-39"],
+      "history": "Excavations in Capernaum have uncovered a house near the synagogue that was converted into a place of Christian gathering in the early centuries, later enlarged, and in the fifth century replaced by an octagonal church. Pilgrim accounts from the fourth century identify it as Peter's house. The identification is not certain, but it is among the best-supported traditions of its kind. The mention of Simon's mother-in-law fits Paul's remark that Peter traveled with a wife (1 Corinthians 9:5).",
+      "text": "Matthew says Jesus touched her hand and she rose (8:15); Luke says he stood over her and rebuked the fever (4:39), treating the illness like a hostile power. Mark's version is the simplest: he took her hand and raised her.",
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "Mark's verb ‘raised’ quietly anticipates later scenes. Jesus raises the sick, raises Jairus's daughter (5:41-42), and is himself raised (16:6)."
+        }
+      ],
+      "refs": ["1 Corinthians 9:5", "Mark 5:41", "Mark 10:45", "Luke 4:38-39"]
+    },
+    {
+      "v": "32-34",
+      "context": "When the Sabbath ends at sunset, the whole town arrives at the door with its sick and demon-possessed. Jesus heals many and silences the demons, because they know who he is.",
+      "grammar": "Opsias de genomenēs, hote edu ho hēlios, ‘when evening came, when the sun set’, is one of Mark's characteristic double time notes, where the second phrase sharpens the first; Frans Neirynck's study Duality in Mark (1972) catalogued this habit. Here the second phrase matters, since the Sabbath ended at sunset. The pluperfect ēdeisan, ‘they had known’, describes the demons' settled knowledge. Ouk ēphien, ‘he would not allow’, is an imperfect: he kept refusing.",
+      "words": ["G3798", "G1416", "G1139", "G2323", "G0863I", "G1492I"],
+      "parallels": ["Matthew 8:16-17", "Luke 4:40-41"],
+      "history": "Carrying burdens from one place to another was forbidden on the Sabbath (Jeremiah 17:21-22), and the Mishnah lists carrying out from one domain to another among the thirty-nine kinds of forbidden work (m. Shabbat 7:2). The townspeople wait until sunset, when the Sabbath ends, to carry their sick to the door.",
+      "text": "Several manuscripts, including Codex Vaticanus, add at the end of verse 34 that the demons knew him ‘to be the Christ’. The words probably came from Luke 4:41, which has that explanation. Matthew's parallel (8:17) adds a quotation of Isaiah 53:4, ‘He took up our infirmities and carried our diseases’, which Mark does not use.",
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "The demons' knowledge is correct but unwelcome. Jesus refuses testimony from them, and Mark's pattern of commanded silence suggests that his identity must be understood through the cross, not proclaimed by his enemies."
+        }
+      ],
+      "refs": ["Matthew 8:16-17", "Luke 4:40-41", "Mark 3:11-12", "Jeremiah 17:21-22"]
+    },
+    {
+      "v": "35-37",
+      "context": "After the crowded evening Jesus rises before dawn and goes to a deserted place to pray. Simon and the others hunt him down to bring him back to the waiting crowds.",
+      "grammar": "Three time words pile up: prōi ennucha lian, ‘early, while still night, very’. The imperfect prosēucheto, ‘he was praying’, pictures prayer in progress when the disciples arrive. Katediōxen, ‘they hunted him down’, is a strong compound found only here in the New Testament; in the Septuagint it often means pursuit by an enemy, though Psalm 23:6 uses it for goodness and mercy following the psalmist. Its force here suggests the disciples' urgency and their misunderstanding of Jesus' purpose. The present zētousin, ‘they are seeking’, reports what the crowd is doing even now.",
+      "words": ["G4404", "G1773", "G2048", "G4336", "G2614", "G2212"],
+      "parallels": ["Luke 4:42"],
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "Mark shows Jesus praying at three moments, each at night and each at a turning point: here after his first success, after feeding the five thousand (6:46), and in Gethsemane (14:32-39). Prayer comes before decisions about what to do next."
+        }
+      ],
+      "refs": ["Mark 6:46", "Mark 14:32-39", "Luke 5:16", "Psalm 5:3"]
+    },
+    {
+      "v": "38-39",
+      "context": "Jesus declines to return to Capernaum's crowds and presses on to other towns. His reason is his purpose: he came to proclaim. Verse 39 summarizes a wider tour of Galilee.",
+      "grammar": "Agōmen, ‘let us go’, a hortatory subjunctive, includes the disciples in the mission. Kōmopoleis is a rare compound, ‘village-towns’, market towns larger than villages but without the status of a city. The key phrase eis touto gar exēlthon, ‘for this is why I came out’, is ambiguous: it may mean ‘why I came out’ from Capernaum that morning, or ‘why I came forth’ from God. Luke's parallel reads ‘this is why I was sent’ (Luke 4:43), taking it in the second sense.",
+      "words": ["G0071", "G2969", "G2784", "G1831", "G4864"],
+      "parallels": ["Luke 4:43-44", "Matthew 4:23"],
+      "theology": [
+        {
+          "id": "mission",
+          "note": "Jesus puts proclamation above popularity. The crowds want healing; he goes where the message has not yet been heard."
+        }
+      ],
+      "refs": ["Luke 4:43", "John 16:28", "Mark 10:45", "Romans 10:14-15"]
+    },
+    {
+      "v": "40",
+      "context": "A man with a skin disease comes to Jesus, kneeling and begging. His words show confidence in Jesus' power and uncertainty about his willingness.",
+      "grammar": "Parakalōn, ‘begging’, and gonupetōn, ‘kneeling’, are present participles, picturing the man's plea as it happens. His words form a conditional: ean thelēs, ‘if you are willing’, a present subjunctive, and dunasai, ‘you are able’, an indicative, stated as a certainty. Katharisai, ‘to cleanse’, is the language of ritual purity, not only of healing. The man asks to be made clean, which would restore him to the community.",
+      "words": ["G3015", "G3870", "G1120", "G2309", "G1410", "G2511"],
+      "parallels": ["Matthew 8:2", "Luke 5:12"],
+      "history": "Leviticus 13 describes the diagnosis of skin diseases (Hebrew tsara'at) by priests, and 13:45-46 requires a person with the disease to wear torn clothes, cover the lower face, cry ‘Unclean’, and live outside the camp. The term covers various conditions, not only modern leprosy (Hansen's disease). The Old Testament treats cleansing from it as God's work: when Naaman came to Israel's king, the king asked whether he was God, to kill and to make alive (2 Kings 5:7).",
+      "theology": [
+        {
+          "id": "faith",
+          "note": "The man's faith is real but incomplete: he believes Jesus can, and wonders whether he will. Jesus answers the question he did not quite ask."
+        }
+      ],
+      "refs": ["Leviticus 13:45-46", "2 Kings 5:7", "Numbers 12:10-15", "Luke 17:12-14"]
+    },
+    {
+      "v": "41-42",
+      "context": "Jesus reaches out and touches the man and says he is willing. The disease leaves immediately. In touching an unclean person, Jesus does not become unclean; the cleanness moves the other way.",
+      "grammar": "The verb hēpsato, ‘he touched’, carries the force of the scene: touching a person with such a disease was forbidden by custom and made the toucher unclean under the law's logic. Thelō, ‘I am willing’, answers the man's ean thelēs exactly. The aorist passive imperative katharisthēti, ‘be cleansed’, is a command with God's action implied, and the aorist passive ekatharisthē, ‘he was cleansed’, reports its fulfillment in the same words. Command and result match, as in Genesis 1:3.",
+      "words": ["G4697", "G1614", "G0681", "G2309", "G2511", "G3014"],
+      "parallels": ["Matthew 8:3", "Luke 5:13"],
+      "text": "Most manuscripts say Jesus was splanchnistheis, ‘moved with compassion’. Codex Bezae and several Old Latin manuscripts read orgistheis, ‘becoming angry’, and the SBL Greek New Testament prints that reading, as does the NIV (2011), which renders it ‘indignant’. The case for ‘angry’ is that it is the harder reading, that a scribe would more likely soften anger to compassion than the reverse, and that Matthew and Luke both omit any emotion here, which would be odd if they had read ‘compassion’ in Mark but natural if they had read ‘anger’. Bart Ehrman argued for ‘angry’ in an essay on Jesus and the leper. Peter J. Williams, in a 2012 article in Novum Testamentum, answered that an original ‘compassion’ could have been changed to ‘anger’ by accident, since the two words look alike in some scripts, and that the witnesses for ‘anger’ are few and closely related. If ‘anger’ is original, the anger is most likely at the disease and the suffering it caused, or at the man's exclusion, not at the man; Jesus is also angry in 3:5 and indignant in 10:14.",
+      "theology": [
+        {
+          "id": "holiness",
+          "note": "Under the law, uncleanness spreads by touch. In Jesus, holiness spreads instead. The touch shows a purity that is contagious, reversing the old direction."
+        },
+        {
+          "id": "love",
+          "note": "Jesus could have healed with a word, as he does elsewhere. He chooses to touch a man who may not have been touched in years, which makes the healing an act of restoration and not only of power."
+        }
+      ],
+      "refs": ["Leviticus 5:3", "Mark 3:5", "Mark 5:27-29", "Hebrews 4:15"]
+    },
+    {
+      "v": "43-44",
+      "context": "Jesus sends the man away sternly and tells him to say nothing but to go to the priest and make the offering the law requires. The command respects the law and turns the healing into public evidence.",
+      "grammar": "Embrimēsamenos, ‘warning sternly’, is a strong verb that originally described a horse snorting; in the New Testament it expresses strong emotion (14:5, John 11:33, 38). Exebalen, ‘he drove him out’ or ‘sent him away’, is the same verb used of expelling demons, an abrupt dismissal. The double negative mēdeni mēden eipēs, ‘say nothing to anyone’, is emphatic in Greek. Eis marturion autois, ‘as a testimony to them’, may mean evidence for the priests of the man's cleansing, or evidence against them, a witness that God's power is at work in Jesus.",
+      "words": ["G1690", "G1544", "G2409", "G2512", "G3475", "G3142"],
+      "parallels": ["Matthew 8:4", "Luke 5:14"],
+      "ot": [
+        {
+          "ref": "Leviticus 14:2",
+          "note": "‘The offering Moses prescribed’ refers to Leviticus 14:1-32, which sets out the ritual for a person cleansed of skin disease: examination by a priest outside the camp, an offering of two birds, washing, shaving, and after eight days a sacrifice of lambs (or doves for the poor). The law does not cure; it declares clean one who has been healed. Jesus sends the man into that process, so that the priests themselves will certify what God has done. This is an allusion to a legal text, not a quotation, and it shows Jesus honoring the law of Moses in his healing."
+        }
+      ],
+      "theology": [
+        {
+          "id": "law",
+          "note": "Jesus does not bypass the law. He fulfills its purpose by making a man clean and then sends him to have that cleanness recognized according to the law."
+        }
+      ],
+      "refs": ["Leviticus 14:2-32", "Luke 17:14", "Matthew 5:17", "Mark 3:12"]
+    },
+    {
+      "v": "45",
+      "context": "The man disobeys and spreads the news everywhere, and the result reverses the situation: Jesus can no longer enter towns openly and must stay in deserted places. Yet people still come to him from everywhere.",
+      "grammar": "The healed man ērxato kērussein, ‘began to proclaim’, using the verb for preaching that Mark uses of John and Jesus. He also spreads ton logon, ‘the word’, which elsewhere in Mark means the message itself (2:2, 4:14). The result clause with hōste, ‘so that’, and mēketi, ‘no longer’, describes the consequence. Exō ep' erēmois topois, ‘outside in deserted places’, places Jesus where the man had lived: outside the towns.",
+      "words": ["G2784", "G1310", "G3056", "G5320", "G2048"],
+      "parallels": ["Luke 5:15-16"],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The cleansed man returns to the town, and Jesus is pushed outside to the places where the unclean lived. Many interpreters see in this exchange a small picture of what the cross will do: Jesus takes the outsider's place so that the outsider can come in (Hebrews 13:12-13)."
+        }
+      ],
+      "refs": ["Hebrews 13:12-13", "Mark 7:36", "Luke 5:15-16", "Mark 2:1-2"]
+    }
+  ]
+}

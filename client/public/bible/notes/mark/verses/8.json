@@ -1,0 +1,282 @@
+{
+  "verses": [
+    {
+      "v": "1-3",
+      "context": "Still in the Decapolis (7:31), a large crowd has stayed with Jesus three days and has run out of food. This time Jesus raises the problem himself, before the disciples do, and he speaks of his own compassion, which in the first feeding only the narrator reported (6:34).",
+      "grammar": "Splagchnizomai, ‘I have compassion’, comes from splagchna, the inner organs, felt as the seat of deep feeling. In the Gospels the verb is used almost only of Jesus, and this is the one place in Mark where he says it of himself. The motive differs from 6:34, where he pitied the crowd as sheep without a shepherd and taught them; here the need is bodily hunger after three days. Nēsteis, ‘hungry’, literally ‘fasting’, and ekluthēsontai, ‘they will faint’ (future passive, ‘be undone’), make the danger concrete. Tines autōn apo makrothen hēkasin, ‘some of them have come from far away’: the perfect hēkasin, ‘have come and are here’, marks the length of the trip already made.",
+      "words": ["G4697", "G3793", "G3523", "G1590", "G3113", "G2240"],
+      "theology": [
+        {
+          "id": "attributes",
+          "note": "Jesus' compassion reaches to ordinary physical need and to people with no claim on him, a Gentile crowd far from home. The verse shows God's mercy in the concrete form of worry that people will collapse on the road."
+        }
+      ],
+      "parallels": ["Matthew 15:32"],
+      "text": "Luke has no second feeding; it falls within the long section of Mark (6:45 to 8:26) that Luke does not use. Matthew keeps it and sets it after a summary of healings on a mountain beside the sea (Matthew 15:29-31).",
+      "refs": ["Mark 6:34", "Matthew 9:36", "Psalm 145:15-16", "Isaiah 49:10"]
+    },
+    {
+      "v": "4-5",
+      "context": "The disciples ask where anyone could find bread in this desolate place, as if the feeding of the five thousand had never happened. Jesus answers with a question about what they have, as he did before (6:38), and they have seven loaves.",
+      "grammar": "Pothen, ‘from where?’, is the disciples' key word, and it echoes the complaints of Israel in the wilderness. Erēmia, ‘desolate place’ or ‘wilderness’, keeps the exodus setting in view: in the wilderness God fed Israel with manna. Their question uses dunēsetai, ‘will anyone be able?’, a question about capacity in the face of which Jesus' power in the previous chapters is the obvious answer. Readers of both feedings have long felt the disciples' question as a sign of their dullness, which is the theme Mark develops in verses 14 to 21.",
+      "words": ["G4159", "G2047", "G1410", "G5526", "G0740", "G2033"],
+      "ot": [
+        {
+          "ref": "Numbers 11:13",
+          "note": "In the wilderness Moses asks the LORD where he is to get meat for all these people (Hebrew meayin, ‘from where?’; the Septuagint has pothen, the same word as Mark 8:4). God answers by sending quail. The disciples repeat Moses' question of despair, and Jesus answers as God answered then, by providing for the crowd in the desert."
+        }
+      ],
+      "parallels": ["Matthew 15:33-34"],
+      "refs": ["Mark 6:35-38", "Exodus 16:3-4", "Psalm 78:19-20", "2 Kings 4:42-44"]
+    },
+    {
+      "v": "6-7",
+      "context": "Jesus seats the crowd on the ground, gives thanks, breaks the seven loaves, and gives them to the disciples to distribute. He blesses the few small fish as well. The sequence of verbs closely follows the first feeding and anticipates the Last Supper.",
+      "grammar": "In the first feeding Jesus blessed (eulogēsen, 6:41) the bread; here he eucharistēsas, ‘having given thanks’, and then over the fish eulogēsas, ‘having blessed’. The two verbs are equivalent, both rendering the Jewish blessing said over food. The sequence labōn ... eucharistēsas eklasen kai edidou, ‘taking, giving thanks, he broke and kept giving’, matches Mark 14:22-23, where Jesus takes bread, blesses, breaks, and gives, and takes the cup having given thanks (eucharistēsas). The imperfect edidou, ‘he kept giving’, suggests the bread multiplied as it was handed out. Anapesein epi tēs gēs, ‘to recline on the ground’, uses the verb for reclining at a meal.",
+      "words": ["G3853", "G0377", "G2168", "G2806", "G1325", "G3908", "G2127", "G2485"],
+      "theology": [
+        {
+          "id": "sacraments",
+          "note": "The verbs of this meal are the verbs of the Lord's Supper, and the church has long read the feedings with the Eucharist in view. Christians differ on how much sacramental meaning Mark intends: some see the feedings as anticipations of the church's meal, others as signs of Jesus' provision that the Supper later takes up. The shared vocabulary is not in doubt."
+        }
+      ],
+      "parallels": ["Matthew 15:35-36"],
+      "refs": ["Mark 6:41", "Mark 14:22-23", "1 Corinthians 11:23-24", "John 6:11"]
+    },
+    {
+      "v": "8-9",
+      "context": "Everyone eats and is satisfied, and seven baskets of broken pieces remain. About four thousand were there. Then Jesus sends the crowd away.",
+      "grammar": "Echortasthēsan, ‘they were satisfied’, repeats the verb of 6:42 and of the Syrophoenician's saying in 7:27, where the children must first be filled. In the region where she pleaded for crumbs, Gentiles are now filled, and there are leftovers. Perisseumata klasmatōn, ‘abundance of broken pieces’, stresses surplus. The basket here is spuris; in the first feeding it was kophinos (6:43), and Jesus keeps the two words distinct when he recalls both feedings in verses 19 and 20.",
+      "words": ["G5526", "G4051", "G2801", "G4711", "G5070"],
+      "history": "The kophinos of the first feeding was associated with Jews in Roman eyes: the satirist Juvenal twice mocks Jews in Rome for their basket (cophinus) and hay (Satires 3.14 and 6.542). The spuris could be large; it was in a spuris that Paul was let down over the wall of Damascus (Acts 9:25). Whether the difference in baskets and numbers carries symbolic weight (twelve for Israel, seven for the nations) is debated; the chapter note mentions the suggestion, and Mark himself draws attention only to the numbers.",
+      "parallels": ["Matthew 15:37-38"],
+      "refs": ["Mark 6:42-44", "Acts 9:25", "Mark 7:27-28"]
+    },
+    {
+      "v": "10",
+      "context": "Jesus immediately crosses by boat to a place Mark calls Dalmanutha, apparently on the western shore, back in Jewish territory. The shift of setting brings the Pharisees back into the story.",
+      "grammar": "Ta merē Dalmanoutha, ‘the district of Dalmanutha’, uses meros, ‘part’, in the plural for a region, as Matthew does for ‘the district of Tyre and Sidon’ (Matthew 15:21). Euthus, ‘immediately’, Mark's favorite link, keeps the pace.",
+      "words": ["G2112", "G4143", "G3313", "G1148"],
+      "history": "No place called Dalmanutha is known from any other ancient source, and its location is uncertain. Matthew's parallel has Magadan (Matthew 15:39), also otherwise unknown, and many later manuscripts of both Gospels change the name to Magdala, the fishing town on the western shore that was the home of Mary Magdalene. Some scholars have tried to explain Dalmanutha as a garbled Aramaic phrase; none of the explanations has won general agreement.",
+      "text": "The name was so puzzling that copyists substituted others in Mark: some manuscripts read Magdala, Magada, or other forms. The BSB follows the oldest witnesses.",
+      "parallels": ["Matthew 15:39"],
+      "refs": ["Mark 5:21", "Mark 6:45", "Luke 8:2"]
+    },
+    {
+      "v": "11-13",
+      "context": "The Pharisees come out to argue and demand a sign from heaven, a public proof from God. Jesus groans, refuses outright, and leaves by boat. After a Gentile crowd has just been fed in the wilderness, the request for a sign shows that the problem is not a lack of evidence.",
+      "grammar": "Peirazontes, ‘testing’, is the verb used of Satan tempting Jesus in the wilderness (1:13), and Mark will use it of the Pharisees' questions again (10:2, 12:15). Anastenaxas tō pneumati autou, ‘groaning deeply in his spirit’, strengthens the sigh of 7:34 with a prefix. The refusal is phrased as a Hebrew oath formula: amēn legō humin, ei dothēsetai tē genea tautē sēmeion, literally ‘truly I tell you, if a sign will be given to this generation’, with the implied end ‘may God do so to me’. In Hebrew idiom the ‘if’ clause of an oath is a solemn denial. The Septuagint uses the same construction in Psalm 95:11 (Psalm 94:11 in Greek numbering), ‘if they will enter my rest’, meaning they will not.",
+      "words": ["G4802", "G4592", "G3772", "G3985H", "G0389", "G1074", "G0281", "G1325"],
+      "ot": [
+        {
+          "ref": "Psalm 95:10-11",
+          "note": "The psalm recalls the generation in the wilderness that tested God though they had seen his works, and God's oath that they would not enter his rest. The Septuagint renders the oath with ei, ‘if’, exactly as Jesus' refusal does, and uses genea, ‘generation’, for the people God loathed forty years. Deuteronomy 32:5 and 32:20 likewise speak of a crooked and faithless generation. Jesus' phrase this generation places his opponents in the line of the wilderness generation that demanded proof after the manna."
+        }
+      ],
+      "parallels": ["Matthew 16:1-4", "Matthew 12:38-39", "Luke 11:16", "Luke 11:29"],
+      "text": "In Matthew and Luke, Jesus adds that no sign will be given except the sign of Jonah (Matthew 12:39, 16:4; Luke 11:29). Mark has only the flat refusal.",
+      "refs": ["Mark 1:13", "Deuteronomy 32:5", "1 Corinthians 1:22-23", "John 6:30"]
+    },
+    {
+      "v": "14-15",
+      "context": "In the boat the disciples realize they have brought only one loaf. Jesus warns them against the leaven of the Pharisees and of Herod, and they hear only a comment about bread. The scene is the third boat scene in Mark (4:35-41, 6:45-52), and in each the disciples fail to understand.",
+      "grammar": "Ei mē hena arton ouk eichon, ‘except one loaf they did not have’: Mark specifies the single loaf, a detail with no role in the plot. Some interpreters take it as a hint that the one loaf in the boat is Jesus himself, who is sufficient for them, though Mark does not say so. Horate, blepete, ‘watch, beware’, doubles the warning, both verbs present imperatives calling for continual watchfulness. Zumē, ‘leaven’, was the fermented dough kept from the previous batch; its power to spread through the whole lump made it an image for a pervasive influence, usually a corrupting one (1 Corinthians 5:6-8, Galatians 5:9).",
+      "words": ["G1950", "G1520", "G0740", "G3708", "G0991", "G2219", "G2264H"],
+      "text": "Some early manuscripts, including the papyrus P45 and Codex Washingtonianus, read ‘the leaven of the Herodians’, matching 3:6 and 12:13. Matthew has ‘the Pharisees and Sadducees’ (Matthew 16:6), and Luke 12:1 ‘the leaven of the Pharisees, which is hypocrisy’.",
+      "history": "Herod here is Herod Antipas, tetrarch of Galilee and Perea from 4 BC to AD 39, whose execution of John the Baptist Mark has just told (6:14-29). The Pharisees and the Herodians had already plotted together against Jesus (3:6). What their leaven shares is left to the reader: an unbelief that demands signs and a power that silences prophets.",
+      "parallels": ["Matthew 16:5-6", "Luke 12:1"],
+      "refs": ["Mark 3:6", "Mark 6:14-29", "1 Corinthians 5:6-8", "Galatians 5:9"]
+    },
+    {
+      "v": "16-18",
+      "context": "The disciples argue about having no bread, and Jesus answers with a volley of questions, the sharpest rebuke of the disciples in Mark. He describes them in the words once used of the outsiders who hear parables without understanding (4:11-12).",
+      "grammar": "The questions stack up in the present tense: ou noeite oude suniete, ‘do you not yet perceive or understand?’ Then pepōrōmenēn echete tēn kardian humōn, ‘do you have your heart hardened?’ The perfect passive participle describes a settled condition. Mark has used pōrōsis of the Pharisees (3:5) and pōroō of the disciples after the walk on the sea (6:52), so the disciples now share their opponents' condition. Ophthalmous echontes ou blepete, ‘having eyes, do you not see?’, echoes the prophets. Mnēmoneuete, ‘do you remember?’, leads into the recital of the feedings.",
+      "words": ["G1260", "G3539", "G4920", "G4456", "G2588", "G3788", "G0991", "G3775", "G0191", "G3421"],
+      "ot": [
+        {
+          "ref": "Jeremiah 5:21",
+          "note": "Jeremiah calls Judah a foolish and senseless people who have eyes but do not see and ears but do not hear; Ezekiel 12:2 says the same of rebellious Israel in exile. The Septuagint of Jeremiah uses ophthalmoi and ōta with blepousin and akouousin, the words Jesus uses. In the prophets the charge was aimed at Israel's idolatry; Jesus turns it on his own disciples, in the same language Mark connected to Isaiah 6:9-10 in 4:12."
+        }
+      ],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "The disciples have seen both feedings and still fret about bread. Their failure shows that faith is not produced by exposure to miracles; understanding who Jesus is requires a sight he gives, as the two-stage healing that follows will picture."
+        }
+      ],
+      "parallels": ["Matthew 16:7-11"],
+      "refs": ["Ezekiel 12:2", "Isaiah 6:9-10", "Mark 4:11-12", "Mark 6:52"]
+    },
+    {
+      "v": "19-21",
+      "context": "Jesus quizzes the disciples on the two feedings, and they give the right numbers: twelve baskets, seven baskets. They can recite the facts and still miss the meaning. The section ends with a question Mark does not answer: ‘Do you still not understand?’",
+      "grammar": "Jesus keeps the two basket words distinct: kophinous for the five thousand, spuridōn for the four thousand, confirming that Mark tells of two separate events. Plērōmata klasmatōn, ‘fullnesses of pieces’, uses plērōma, ‘fullness’, an unusual word for leftovers that stresses abundance. The closing oupō suniete, ‘not yet do you understand?’, uses oupō, ‘not yet’, which holds open the hope that they will.",
+      "words": ["G2806", "G2894", "G4711", "G4138", "G2801", "G4920"],
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "The feedings point to who Jesus is: the one who does in the wilderness what God did for Israel. Matthew makes the lesson explicit (Matthew 16:12); Mark leaves the question hanging so that Peter's confession in verse 29 answers it."
+        }
+      ],
+      "parallels": ["Matthew 16:9-12"],
+      "refs": ["Mark 6:43", "Mark 8:8", "John 6:26-35"]
+    },
+    {
+      "v": "22-24",
+      "context": "At Bethsaida, people bring a blind man and ask Jesus to touch him. Jesus leads him out of the village, spits on his eyes, lays hands on him, and asks what he sees. The answer is partial sight: people who look like walking trees. The miracle, found only in Mark, stands between the disciples' blindness (8:18) and Peter's partial sight (8:29-33).",
+      "grammar": "Epilabomenos tēs cheiros, ‘taking hold of his hand’, and exēnegken, ‘led him out’, show Jesus guiding the blind man himself. Jesus' question ei ti blepeis, ‘do you see anything?’, invites the man to report what has happened, and his answer shows it is not yet finished. The man's answer is awkward in Greek, blepō tous anthrōpous hoti hōs dendra horō peripatountas, literally ‘I see the people, that as trees I see them walking’. The grammar stumbles in the same way the man's sight does, and Mark does not smooth it.",
+      "words": ["G5185", "G1949", "G5495", "G2968", "G4429", "G3659", "G0991", "G1186", "G4043"],
+      "history": "Bethsaida lay near where the Jordan enters the Sea of Galilee, in the territory of Philip the tetrarch. Josephus says Philip raised the village to the rank of a city and named it Julias after Augustus' daughter (Antiquities 18.28), which may be why Mark calls it a village. Its site is disputed between et-Tell, excavated since 1987 under Rami Arav, and el-Araj nearer the shore, excavated since 2016 under Mordechai Aviam and others.",
+      "refs": ["Mark 7:33", "John 9:1-7", "Mark 10:46-52", "Isaiah 35:5"]
+    },
+    {
+      "v": "25-26",
+      "context": "Jesus lays hands on the man's eyes a second time, and he sees everything clearly. Jesus sends him home and tells him not to enter the village. The only healing in the Gospels that takes two stages becomes a picture of the disciples, who see Jesus partly and need a second touch.",
+      "grammar": "Mark uses three different verbs of sight in quick succession. Dieblepsen, an aorist, ‘he looked intently’ or ‘saw through’; apekatestē, ‘he was restored’, the verb for returning something to its proper state; and eneblepen tēlaugōs hapanta, ‘he kept seeing everything clearly’, an imperfect for continuing sight, with tēlaugōs, ‘far-shining’, meaning clear at a distance. The pile of verbs insists that the cure is complete.",
+      "words": ["G2007", "G1227", "G0600", "G1689", "G5081", "G0537"],
+      "text": "Many later manuscripts, followed by the King James Version, expand the ending: ‘Neither go into the village, nor tell it to anyone in the village.’ The shorter text is found in Codex Sinaiticus and Codex Vaticanus, and the additions look like attempts to make it match the other commands to silence.",
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Faith in Mark is a sight Jesus gives, and it can come in stages. The man was not less healed for needing two touches; the disciples, who see Jesus as Messiah but not yet as the crucified one, are in the middle of the same healing."
+        }
+      ],
+      "refs": ["Mark 8:18", "Mark 10:51-52", "Ephesians 1:18", "1 Corinthians 13:12"]
+    },
+    {
+      "v": "27-28",
+      "context": "On the road to the villages around Caesarea Philippi, Jesus asks who people say he is. The disciples report the popular answers, the same ones Herod's court was hearing in 6:14-15: John raised, Elijah, one of the prophets.",
+      "grammar": "En tē hodō, ‘on the way’, begins a motif that runs through the next section: Jesus teaches his disciples on the way (9:33-34, 10:32, 10:52) as he goes up to Jerusalem, and the way in Mark recalls the way of the Lord announced in 1:2-3. Epērōta, an imperfect, ‘he was asking’, and legousin hoi anthrōpoi einai, ‘do men say (me) to be?’, set up the contrast with the disciples' own answer.",
+      "words": ["G2968", "G2542G", "G5376K", "G3598", "G1905", "G2491G", "G2243", "G4396"],
+      "history": "The town stood at the spring of Banias at the foot of Mount Hermon, where a cave shrine to the god Pan (hence the older name Paneas) stood. Josephus says Herod the Great built a white marble temple to Augustus there (Jewish War 1.404-406) and that his son Philip enlarged the town and named it Caesarea (Antiquities 18.28). Luke gives no location and sets the question after Jesus has been praying alone (Luke 9:18).",
+      "parallels": ["Matthew 16:13-14", "Luke 9:18-19"],
+      "refs": ["Mark 6:14-15", "Mark 1:2-3", "Malachi 4:5", "Deuteronomy 18:15"]
+    },
+    {
+      "v": "29-30",
+      "context": "Jesus turns the question to the disciples, and Peter answers for them: ‘You are the Christ.’ It is the first time a human being in Mark names Jesus with the title from the book's opening line (1:1). Jesus immediately charges them to tell no one.",
+      "grammar": "Humeis de, ‘but you’, is emphatic in Greek, setting the disciples against the people of verse 27. Peter's answer is four words, su ei ho christos, with no qualification. Jesus' response uses epetimēsen, ‘he rebuked’ or ‘sternly charged’, the verb Mark uses for silencing demons (1:25, 3:12) and that he will use twice more in the next three verses, once of Peter rebuking Jesus and once of Jesus rebuking Peter.",
+      "words": ["G1905", "G5547", "G4074G", "G2008", "G3367"],
+      "history": "In the first century BC the Psalms of Solomon (Psalm of Solomon 17) described a coming son of David, the Lord's anointed, who would drive out the Gentiles from Jerusalem, purge the city, and gather a holy people. Hopes varied, and the Dead Sea Scrolls speak of more than one anointed figure, but a victorious king was the dominant picture. Peter's title is right; the content he pours into it is what Jesus must correct.",
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "Jesus accepts the title Christ but will not let it be announced yet, because the meaning of it has not yet been shown. The command to silence protects the title from being heard as a call to national revolt before the cross defines it."
+        }
+      ],
+      "parallels": ["Matthew 16:15-20", "Luke 9:20-21"],
+      "text": "Matthew expands Peter's confession to ‘the Christ, the Son of the living God’ and adds Jesus' blessing of Peter and the saying about the rock and the keys (Matthew 16:16-19). Luke has ‘the Christ of God’ (Luke 9:20). Mark, whose Gospel early tradition links to Peter's preaching, has neither the blessing nor the rock, but keeps the rebuke that follows.",
+      "refs": ["Mark 1:1", "John 6:68-69", "Psalm 2:2", "Mark 14:61-62"]
+    },
+    {
+      "v": "31",
+      "context": "From here the teaching changes. For the first time Jesus speaks openly of what awaits him: suffering, rejection by Jerusalem's leaders, death, and resurrection after three days. The prediction will be repeated in 9:31 and 10:33-34, each time more detailed.",
+      "grammar": "Ērxato didaskein, ‘he began to teach’, marks a new stage. Dei, ‘it is necessary’, governs four infinitives: pathein, ‘to suffer’; apodokimasthēnai, ‘to be rejected’; apoktanthēnai, ‘to be killed’; and anastēnai, ‘to rise’. The necessity is not fate but the will of God disclosed in Scripture. Apodokimazō means to reject after scrutiny, as builders reject a stone that fails inspection, and it is the verb of Psalm 118:22 in the Septuagint, which Jesus will quote in 12:10. The three groups, elders, chief priests, and scribes, made up the Sanhedrin, the council that will condemn him (14:53). Meta treis hēmeras, ‘after three days’, is Mark's form; Matthew and Luke have ‘on the third day’. The two expressions were equivalent in Jewish reckoning (compare Matthew 27:63-64).",
+      "words": ["G1321", "G1163", "G5207", "G0444", "G3958", "G0593", "G4245G", "G0749", "G1122", "G0615", "G0450"],
+      "ot": [
+        {
+          "ref": "Psalm 118:22",
+          "note": "The Hebrew speaks of the stone the builders rejected (maasu) becoming the chief cornerstone; the Septuagint's apedokimasan is the verb Mark uses here. In the psalm the rejected stone is vindicated by the LORD in a song of thanksgiving at the temple. Jesus quotes the verse outright in 12:10-11, and the early church preached it of his rejection and resurrection (Acts 4:11, 1 Peter 2:7)."
+        },
+        {
+          "ref": "Hosea 6:2",
+          "note": "Hosea's people hope that after two days God will revive them and on the third day raise them up. Many interpreters hear the pattern behind the three days of the passion predictions and of Paul's statement that Christ was raised on the third day according to the Scriptures (1 Corinthians 15:4), though no Gospel quotes Hosea."
+        }
+      ],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The word must places Jesus' death inside God's purpose from the start of the passion teaching. The verse does not yet say why he must die; Mark answers that in 10:45 and 14:24. What it establishes is that the cross is not an interruption of his mission but its path."
+        }
+      ],
+      "parallels": ["Matthew 16:21", "Luke 9:22"],
+      "refs": ["Mark 9:31", "Mark 10:33-34", "Mark 10:45", "Luke 24:26", "Isaiah 53:3"]
+    },
+    {
+      "v": "32-33",
+      "context": "Jesus says this plainly, and Peter takes him aside to rebuke him. Jesus turns, looks at the disciples, and rebukes Peter in front of them, calling him Satan. The one who named him Christ is now speaking the tempter's lines.",
+      "grammar": "Parrēsia ton logon elalei, ‘he spoke the word openly’: after chapters of parables and commands to silence, parrēsia marks unveiled speech. Proslabomenos, ‘taking him aside’, makes the rebuke private; Jesus makes his answer public. Jesus' reply hupage opisō mou, satana, ‘get behind me, Satan’, uses opisō mou, ‘behind me’, the phrase of the first call, deute opisō mou, ‘come after me’ (1:17), and of 8:34. Peter is sent back to his place as a follower. Phroneis ta tou theou, ‘you are minding the things of God’, uses phroneō for a settled way of thinking, not a single thought.",
+      "words": ["G3954", "G4355", "G2008", "G1994", "G5217", "G4567", "G5426"],
+      "parallels": ["Matthew 16:22-23"],
+      "text": "Matthew gives Peter's words, ‘Far be it from you, Lord’, and adds Jesus' word that Peter is a skandalon, a stumbling block (Matthew 16:22-23). Luke omits Peter's protest and the rebuke altogether. Mark adds a detail found nowhere else: Jesus looked at his disciples before he spoke, so that the rebuke is for them too.",
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Satan's temptation in Mark 1:13 returns through a loyal disciple's affection. Opposition to the way of the cross can come in the form of well-meant concern, and Jesus names it for what it is: thinking as humans think rather than as God does."
+        }
+      ],
+      "refs": ["Mark 1:13", "Mark 1:17", "Matthew 4:10", "Isaiah 55:8-9"]
+    },
+    {
+      "v": "34",
+      "context": "Jesus calls the crowd along with the disciples and makes the cost public: whoever wants to follow him must deny himself, take up his cross, and follow. The teaching is not for a spiritual elite; it is the terms for everyone.",
+      "grammar": "The condition ei tis thelei, ‘if anyone wants’, frames following as an act of will. Then three imperatives, two aorist and one present: aparnēsasthō heauton, ‘let him deny himself’; aratō ton stauron autou, ‘let him take up his cross’; akoloutheitō moi, ‘let him keep following me’. The shift from aorist to present is a matter of aspect, not of once-for-all versus repeated: the first two present the actions as wholes, decisive steps, and the third presents following as an ongoing course. Aparneomai is the verb of Peter's denial (14:30, 14:72); the disciple must say of himself what Peter will say of Jesus, ‘I do not know the man’.",
+      "words": ["G4341", "G3793", "G2309", "G0533", "G1438", "G0142", "G4716", "G0190"],
+      "text": "In the phrase ‘to come after me’, some manuscripts read elthein, ‘to come’, and others akolouthein, ‘to follow’. The Nestle-Aland editions print akolouthein; Westcott and Hort and the SBL Greek New Testament print elthein. The sense is the same.",
+      "history": "A person condemned to crucifixion was usually made to carry the crossbeam to the place of execution, as Simon of Cyrene was forced to carry Jesus' cross (15:21). Plutarch mentions the practice in passing, saying that each criminal who is punished carries out his own cross (On the Delays of the Divine Vengeance 9, Moralia 554B). Jesus' hearers would picture a man on the way to a certain and shameful death.",
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The call to the cross follows directly on Jesus' own. The disciple's road is shaped by the master's: the kingdom is entered by those who give up the claim to rule their own lives, and the cross they carry is theirs, not a metaphor for ordinary hardship."
+        }
+      ],
+      "parallels": ["Matthew 16:24", "Luke 9:23"],
+      "refs": ["Mark 15:21", "Luke 14:27", "Galatians 2:20", "Matthew 10:38"]
+    },
+    {
+      "v": "35",
+      "context": "The first reason for taking up the cross is a paradox: the person who tries to secure his life loses it, and the one who loses it for Jesus and the gospel saves it. The gar, ‘for’, links it directly to the command in verse 34.",
+      "grammar": "The saying is built as a chiasm: save, lose, lose, save. Psuchē, ‘life’ or ‘soul’, is the same word in both halves and in verses 36 and 37, as the chapter note explains; the saying plays on physical life and the self that lives beyond death. Hos gar ean thelē, ‘whoever wants’, looks back to thelei in verse 34. Heneken emou kai tou euangeliou, ‘for my sake and the gospel's’: the words and the gospel's are found only in Mark (also in 10:29). For Mark's readers, to lose one's life for the gospel was not abstract; they could lose it for proclaiming the message.",
+      "words": ["G2309", "G5590H", "G4982", "G0622", "G2098"],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "Salvation here is the saving of the whole person beyond death, and it comes by a surrender that looks like loss. The verse ties that surrender to Jesus himself and to the gospel, the message of what he has done, rather than to self-denial as a technique."
+        }
+      ],
+      "parallels": ["Matthew 16:25", "Luke 9:24"],
+      "refs": ["John 12:25", "Matthew 10:39", "Luke 17:33", "Mark 10:29-30"]
+    },
+    {
+      "v": "36-37",
+      "context": "Two questions from the language of trade press the point. No profit is worth the loss of oneself, and nothing a person owns can buy the self back once it is lost.",
+      "grammar": "The verbs are a merchant's: kerdēsai, ‘to gain’ or ‘make a profit on’, and zēmiōthēnai, ‘to suffer loss’, a word for forfeiting money or goods (Paul uses both in Philippians 3:7-8). Antallagma, ‘something given in exchange’, is a price paid to get something back. The question ti gar doi, ‘for what could he give?’, uses the rare subjunctive form doi, and its answer is ‘nothing’.",
+      "words": ["G5623", "G2770", "G2889", "G2210", "G5590G", "G1325", "G0465"],
+      "ot": [
+        {
+          "ref": "Psalm 49:7-8",
+          "note": "The psalm says no one can ransom his brother or give God a ransom for him, for the redemption of a life is costly. The Septuagint (Psalm 48:8-9 in its numbering) speaks of the price of the ransom of the soul (psuchē). Jesus' question takes up the same theme: no human payment redeems a forfeited life. Mark's readers will learn in 10:45 that the Son of Man gives his own life as a ransom for many."
+        }
+      ],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "If a person has nothing to give in exchange for his soul, redemption must come from outside him. The question prepares for 10:45, where Jesus gives his life as the ransom no one else could pay."
+        }
+      ],
+      "parallels": ["Matthew 16:26", "Luke 9:25"],
+      "refs": ["Psalm 49:7-9", "Mark 10:45", "Philippians 3:7-8", "Luke 12:20"]
+    },
+    {
+      "v": "38",
+      "context": "The last reason looks to the end. Whoever is ashamed of Jesus and his words now, in a faithless generation, will find the Son of Man ashamed of him when he comes in glory. The saying joins the suffering Son of Man of verse 31 to the glorious Son of Man of Daniel 7.",
+      "grammar": "Epaischunthē, ‘be ashamed of’, and epaischunthēsetai, ‘will be ashamed of’, match the present choice with the future verdict. The generation is moichalidi kai hamartōlō, ‘adulterous and sinful’: adultery is the prophets' image for Israel's unfaithfulness to God (Hosea 2:2, Jeremiah 3:8-9), so the word is theological, not only moral. En tē doxē tou patros autou, ‘in the glory of his Father’, is the first time in Mark that Jesus speaks of God as his Father, and he does so while speaking of himself as the Son of Man.",
+      "words": ["G1870", "G3056", "G1074", "G3428", "G0268", "G5207", "G1391", "G3962", "G0032G"],
+      "ot": [
+        {
+          "ref": "Daniel 7:13-14",
+          "note": "In Daniel's vision one like a son of man comes with the clouds of heaven to the Ancient of Days and receives dominion, glory, and a kingdom that will not pass away. The Aramaic kebar enash means ‘one like a human being’. Jesus draws the title from this scene and adds the holy angels, who stand around the throne in Daniel 7:10. He will cite the same vision before the high priest (14:62)."
+        }
+      ],
+      "text": "A few witnesses, including Codex Washingtonianus, lack the word ‘words’, giving ‘whoever is ashamed of me and of mine’, meaning Jesus' followers. The longer text is far better attested and printed in all major editions.",
+      "theology": [
+        {
+          "id": "return",
+          "note": "Jesus speaks of his coming in the Father's glory with the angels as judge, and he makes the present stance of a person toward him decisive for that day. The verse holds together the lowly one who will be rejected and the coming one who will judge."
+        }
+      ],
+      "parallels": ["Matthew 16:27", "Luke 9:26", "Matthew 10:33"],
+      "refs": ["Daniel 7:13-14", "Mark 13:26", "Mark 14:62", "2 Timothy 2:12", "Romans 1:16"]
+    }
+  ]
+}

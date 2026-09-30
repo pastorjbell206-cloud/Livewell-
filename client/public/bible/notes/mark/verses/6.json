@@ -1,0 +1,1140 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "After a series of mighty works on both shores of the lake (4:35 to 5:43), Jesus goes to his hometown with his disciples. The chapter opens with rejection by those who knew him best, and it will go on to the sending of the Twelve, the death of John, and two revelations on the lake and in the wilderness that the disciples do not understand.",
+      "grammar": "Exēlthen ekeithen, ‘he went out from there’, and then the historic present erchetai, ‘he comes’, into his patris. Patris means one's native place, hometown or homeland, and Mark does not name it; 1:9 has already told us Jesus came from Nazareth of Galilee. Akolouthousin autō hoi mathētai autou, ‘his disciples follow him’, another present: the disciples are there to watch what happens, which matters because they are about to be sent out and will meet the same rejection (verse 11).",
+      "words": [
+        "G1831",
+        "G1564",
+        "G2064",
+        "G3968",
+        "G0190",
+        "G3101"
+      ],
+      "parallels": [
+        "Matthew 13:53-54",
+        "Luke 4:16"
+      ],
+      "history": "Nazareth was a small farming village in the hills of lower Galilee, perhaps a few hundred people. It is not mentioned in the Old Testament, in Josephus, or in the Mishnah, and the earliest non-Christian reference to it is an inscription found at Caesarea in 1962, dated to around the third or fourth century AD, listing the towns where the priestly courses settled after AD 70. The large city of Sepphoris, which Herod Antipas rebuilt as his capital after 4 BC (Josephus, Antiquities 18.27), stood about six kilometers to the north. Luke places this visit at the very start of Jesus' public ministry and expands it into the sermon on Isaiah 61 (Luke 4:16-30); Matthew, like Mark, puts it after the parables (13:53-58).",
+      "refs": [
+        "Mark 1:9",
+        "Luke 4:16-30",
+        "John 1:46",
+        "Matthew 2:23"
+      ]
+    },
+    {
+      "v": "2",
+      "context": "On the Sabbath Jesus teaches in the synagogue, as he did at Capernaum (1:21-22), and the response begins the same way, with astonishment. But this time the astonishment turns to suspicion. The questions of the townspeople are the right questions (where does this come from, what is this wisdom), asked in the wrong spirit.",
+      "grammar": "Exeplēssonto, ‘they were struck with amazement’, is the verb used at Capernaum (1:22), an imperfect that describes a growing reaction. Their questions are clipped and contemptuous in Greek: pothen toutō tauta, literally ‘from where to this fellow these things?’, with the demonstrative houtos, ‘this one’, used dismissively, as English says ‘this fellow’. Hē sophia hē dotheisa toutō, ‘the wisdom given to this one’, uses a passive participle that raises the question of the giver: the scribes from Jerusalem have already given their answer, Beelzebul (3:22). Dunameis dia tōn cheirōn autou ginomenai, ‘such mighty works done through his hands’, acknowledges the miracles while suspecting their source.",
+      "words": [
+        "G4521",
+        "G1321",
+        "G4864",
+        "G1605",
+        "G4159",
+        "G4678",
+        "G1325",
+        "G1411",
+        "G5495"
+      ],
+      "parallels": [
+        "Matthew 13:54",
+        "Luke 4:22"
+      ],
+      "history": "Synagogue buildings from before AD 70 have been excavated at Gamla in the Golan, at Magdala on the lake's western shore (discovered in 2009), and elsewhere; they were rooms with benches along the walls, where Scripture was read and explained on the Sabbath. No first-century synagogue has been found at Nazareth, and in a village of that size the gathering may have met in a modest building or a house. A visiting teacher could be invited to read and speak (Luke 4:16-17, Acts 13:15).",
+      "theology": [
+        {
+          "id": "wisdom",
+          "note": "The townspeople ask where Jesus' wisdom comes from and assume that because they know his family and trade, they know its limits. The verse sets up the Gospels' claim that the wisdom of God has come in a person, and it shows that familiarity can blind as easily as hostility."
+        }
+      ],
+      "refs": [
+        "Mark 1:21-22",
+        "Mark 3:22",
+        "John 7:15",
+        "1 Corinthians 1:24"
+      ]
+    },
+    {
+      "v": "3",
+      "context": "The townspeople answer their own questions by listing what they know: his trade, his mother, his brothers by name, his sisters. The list is meant to settle the matter. It ends with the verdict that they \"took offense at Him\", the word Jesus used in 4:17 for those who fall away.",
+      "grammar": "Ouch houtos estin ho tektōn, ‘is this not the craftsman?’, uses ouch in a question expecting ‘yes’. Tektōn means a builder or craftsman, most often in wood but also in stone; the chapter note explains the word. Ho huios tēs Marias, ‘the son of Mary’, is unusual, since a man was normally identified by his father. Eskandalizonto en autō, ‘they were scandalized at him’, is an imperfect of skandalizō, to trip over something; Jesus himself is the stumbling block.",
+      "words": [
+        "G5045",
+        "G5207",
+        "G3137G",
+        "G0080",
+        "G2385I",
+        "G2500G",
+        "G2455I",
+        "G4613H",
+        "G0079",
+        "G4624"
+      ],
+      "parallels": [
+        "Matthew 13:55-57",
+        "Luke 4:22",
+        "John 6:42"
+      ],
+      "text": "A few manuscripts, probably including the early papyrus P45 and some later Greek and Old Latin witnesses, read ‘the son of the carpenter and of Mary’, which agrees with Matthew 13:55. The church father Origen told the pagan critic Celsus that nowhere in the Gospels used in the churches is Jesus himself called a carpenter (Against Celsus 6.36), which suggests that his copy of Mark had this reading or that he had forgotten the verse. Nearly all manuscripts, and all modern editions, read ‘the carpenter, the son of Mary’, and the change to ‘son of the carpenter’ is easily explained as a scribe's attempt to avoid a lowly title for Jesus and to match Matthew. Luke has ‘Joseph's son’ (4:22), and John has the crowd say they know his father and mother (6:42).",
+      "history": "Justin Martyr, writing in Rome around AD 155, says that Jesus made ploughs and yokes as a carpenter (Dialogue with Trypho 88). Two of the brothers named here are known elsewhere. James became the leader of the Jerusalem church (Galatians 1:19, Acts 15:13), and Josephus records his stoning in Jerusalem in AD 62 on the order of the high priest Ananus, calling him the brother of Jesus who was called Christ (Antiquities 20.200). Judas is traditionally the author of the Letter of Jude, and Eusebius (Church History 3.20), citing the second-century writer Hegesippus, tells of his grandsons, farmers questioned under the emperor Domitian. The relationship of these brothers and sisters to Jesus has been understood in three ways: as later children of Joseph and Mary (argued by Helvidius in the fourth century and held by most Protestants), as children of Joseph by an earlier marriage (Epiphanius, and the Eastern Orthodox tradition, following the second-century Protevangelium of James), or as cousins (Jerome, Against Helvidius, around 383, and much of the Western Catholic tradition).",
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "The Son of God had a trade, a mother, brothers and sisters with ordinary names, and neighbors who thought they knew all about him. The verse shows how completely he entered ordinary human life, so completely that those closest to it could not see past it."
+        }
+      ],
+      "refs": [
+        "Matthew 13:55",
+        "Galatians 1:19",
+        "Jude 1:1",
+        "John 7:5",
+        "1 Corinthians 15:7"
+      ]
+    },
+    {
+      "v": "4",
+      "context": "Jesus answers with a proverb that places him among the prophets whom Israel rejected. He does not deny what they know about him; he says that knowing a man's origins is what keeps people from hearing him.",
+      "grammar": "Ouk estin prophētēs atimos ei mē, ‘a prophet is not without honor except’, is a negative with an exception, which is how Greek expresses ‘only’. Mark alone lists three widening circles of rejection, en tē patridi, ‘in his hometown’, en tois sungeneusin, ‘among his relatives’, and en tē oikia, ‘in his household’, recalling his family's attempt to take charge of him (3:21, 31-35). Matthew keeps hometown and household (13:57), Luke only hometown (4:24).",
+      "words": [
+        "G4396",
+        "G0820",
+        "G1487H",
+        "G3968",
+        "G4773",
+        "G3614H"
+      ],
+      "parallels": [
+        "Matthew 13:57",
+        "Luke 4:24",
+        "John 4:44"
+      ],
+      "history": "The proverb circulated widely. All four Gospels have a form of it, and the Gospel of Thomas (saying 31) and the Oxyrhynchus papyrus 1, an early Greek fragment of Thomas, pair it with a second line, that no physician heals those who know him, which is close to Luke's ‘Physician, heal yourself’ (4:23).",
+      "ot": [
+        {
+          "ref": "Jeremiah 11:21",
+          "note": "The men of Anathoth, Jeremiah's own town, threatened to kill him if he went on prophesying in the LORD's name (Jeremiah 11:21-23, 12:6, where even his brothers and his father's house betray him). Jesus does not quote Jeremiah, but his proverb sums up a pattern the Scriptures record often: prophets rejected by their own people (compare 1 Kings 19:10, 2 Chronicles 36:15-16). By using it, Jesus claims the prophet's role and anticipates the prophet's fate, as he will say plainly in Luke 13:33-34."
+        }
+      ],
+      "theology": [
+        {
+          "id": "offices",
+          "note": "Jesus calls himself a prophet. Christian theology has spoken of Christ as prophet, priest, and king (the threefold office set out by Calvin, Institutes 2.15); this verse is one of the places the prophetic office is claimed, together with its cost."
+        }
+      ],
+      "refs": [
+        "Mark 3:21",
+        "Luke 13:33-34",
+        "John 1:11",
+        "Acts 7:52"
+      ]
+    },
+    {
+      "v": "5-6",
+      "context": "Jesus could do no mighty work in Nazareth beyond healing a few sick people, and he marveled at their unbelief. He then turns to the surrounding villages and keeps teaching. The chapter note discusses the hard question the verse raises; the grammar shows how Mark frames it.",
+      "grammar": "Ouk edunato ekei poiēsai oudemian dunamin, ‘he was not able there to do any mighty work’, plays on two words from the same root: edunato, ‘he was able’, and dunamin, ‘mighty work’ or ‘power’. The power that went out to the woman who trusted (5:30) did not go out in a town that did not. The exception, ei mē oligois arrōstois epitheis tas cheiras etherapeusen, ‘except that he laid his hands on a few sick people and healed them’, keeps the statement from being absolute. Ethaumazen dia tēn apistian autōn, ‘he was amazed because of their unbelief’, is the only time Mark says Jesus marveled. In Luke 7:9 and Matthew 8:10 Jesus marvels at the faith of a Gentile centurion; here he marvels at the unbelief of his own town. Periēgen tas kōmas kuklō, ‘he went around the villages in a circle’, is an imperfect of continuing ministry.",
+      "words": [
+        "G1410",
+        "G4160G",
+        "G3762",
+        "G1411",
+        "G3641",
+        "G0732",
+        "G2007",
+        "G2323",
+        "G2296",
+        "G0570",
+        "G4013",
+        "G2968",
+        "G1321"
+      ],
+      "parallels": [
+        "Matthew 13:58",
+        "Matthew 9:35"
+      ],
+      "text": "Matthew softens the statement: ‘he did not do many miracles there because of their unbelief’ (13:58), changing ‘could not’ to ‘did not’ and dropping Jesus' amazement. Luke's longer account ends instead with an attempt to throw Jesus off a cliff (4:28-30).",
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Mark uses the word apistia, unbelief, for the first time here. The verse links Jesus' mighty works with faith in those who receive them (compare 5:34, 9:23-24): not because faith is a force that makes miracles happen, but because Jesus' works are personal acts of rescue offered to those who come to him."
+        }
+      ],
+      "refs": [
+        "Mark 9:23-24",
+        "Mark 5:34",
+        "Matthew 8:10",
+        "Hebrews 3:19"
+      ]
+    },
+    {
+      "v": "7",
+      "context": "Rejected in his hometown, Jesus widens his mission by sending out the Twelve, whom he had appointed for this purpose (3:14-15). They go in pairs, with his authority over unclean spirits. What they will do is what he has been doing.",
+      "grammar": "Proskaleitai, ‘he summons’, is a historic present. Ērxato autous apostellein, ‘he began to send them’, uses a present infinitive, perhaps sending the pairs out one after another. Duo duo, ‘two two’, is a distributive idiom (‘two by two’) found in the Septuagint (Genesis 7:9) and in everyday Greek of the period; Mark uses the same doubling for the groups at the feeding (verses 39-40). Edidou autois exousian, ‘he was giving them authority’, is an imperfect, and exousia, the delegated right to act, is the word the crowds used of Jesus' own teaching and exorcisms (1:22, 27).",
+      "words": [
+        "G4341",
+        "G1427",
+        "G0757",
+        "G0649",
+        "G1417",
+        "G1325",
+        "G1849",
+        "G4151G",
+        "G0169"
+      ],
+      "parallels": [
+        "Matthew 10:1",
+        "Matthew 10:5",
+        "Luke 9:1-2"
+      ],
+      "history": "The law required two witnesses to establish a matter (Deuteronomy 19:15), and the practice of traveling in pairs continued in the early church: Barnabas and Saul (Acts 13:2), Paul and Silas, Barnabas and Mark (Acts 15:39-40). Luke also has the seventy-two sent two by two (10:1). Matthew places the mission charge in a long discourse (chapter 10) and gives the list of the Twelve there; Luke adds that Jesus gave them power to heal and sent them to proclaim the kingdom (9:1-2).",
+      "theology": [
+        {
+          "id": "mission",
+          "note": "Mission begins with being called to Jesus and is carried out in his authority. The Twelve do not invent their message or their power; they extend his. Sending them in pairs builds companionship and witness into the work from the start."
+        }
+      ],
+      "refs": [
+        "Mark 3:14-15",
+        "Deuteronomy 19:15",
+        "Luke 10:1",
+        "Acts 13:2-3"
+      ]
+    },
+    {
+      "v": "8-9",
+      "context": "Jesus tells the Twelve what to take: a staff and sandals, and nothing else. No bread, no bag, no money, no extra tunic. They are to travel as people dependent on God and on the hospitality of those who receive them.",
+      "grammar": "The instructions begin in indirect speech, parēngeilen autois hina mēden airōsin eis hodon, ‘he commanded them that they take nothing for the road’, and end in direct speech, mē endusēsthe duo chitōnas, ‘do not put on two tunics’. The shift mid-sentence (grammarians call it anacoluthon) is typical of Mark's spoken style. Ei mē rhabdon monon, ‘except a staff only’, gives the one exception, and hupodedemenous sandalia, ‘having sandals bound on’, is a perfect participle in the accusative that does not fit the sentence's grammar exactly. Chalkos, literally ‘copper’ or ‘bronze’, means small change, the coins a traveler kept in the folds of his belt (zōnē).",
+      "words": [
+        "G3853",
+        "G0142",
+        "G3598",
+        "G4464",
+        "G0740",
+        "G4082",
+        "G2223",
+        "G5475",
+        "G5265",
+        "G4547",
+        "G1746",
+        "G5509"
+      ],
+      "parallels": [
+        "Matthew 10:9-10",
+        "Luke 9:3",
+        "Luke 10:4"
+      ],
+      "text": "The Gospels differ in the details. Mark allows a staff and sandals. Matthew forbids both a staff and sandals (10:10), and Luke forbids a staff (9:3) and, in the mission of the seventy-two, sandals (10:4). Interpreters have explained the difference as variation in the oral tradition, as a distinction between taking a staff and acquiring an extra one (Matthew's verb is ktaomai, ‘acquire’, 10:9), or as each writer's emphasis: Matthew and Luke stress total dependence, while Mark's permitted items match the dress of the first Passover.",
+      "history": "The Passover was to be eaten with belt fastened, sandals on the feet, and staff in hand (Exodus 12:11), and several commentators suggest that Mark's list deliberately equips the Twelve as a people ready for a new exodus. The forbidden pēra, ‘bag’, was the traveler's or beggar's pouch; Diogenes Laertius (Lives of the Philosophers 6.13) says the Cynic philosopher Antisthenes was the first to double his cloak and carry a staff and a wallet, which became the Cynics' badge. The Twelve are forbidden the beggar's bag: they are not to beg but to receive hospitality. Josephus says the Essenes traveled carrying nothing except weapons against bandits, because members of their community in every town took them in (Jewish War 2.124-125).",
+      "refs": [
+        "Exodus 12:11",
+        "Luke 22:35-36",
+        "1 Corinthians 9:14",
+        "Matthew 6:31-33"
+      ]
+    },
+    {
+      "v": "10-11",
+      "context": "The Twelve are to stay in the first house that receives them until they leave the area, and where they are rejected they are to shake the dust off their feet as a testimony. The instructions describe a mission carried by hospitality, and they give rejection a formal, public meaning.",
+      "grammar": "Hopou ean eiselthēte eis oikian, ekei menete, ‘wherever you enter a house, there remain’: the present imperative menete means to stay put, not to move to better lodgings. In verse 11 the subject is a place, hos an topos mē dexētai humas, ‘whatever place does not receive you’, so that the town itself is treated as responsible. Ektinaxate ton choun ton hupokatō tōn podōn humōn, ‘shake off the dust under your feet’, is an aorist imperative, a single decisive act. Eis marturion autois, ‘for a testimony to them’, is the phrase used in 1:44 and 13:9; the dative autois can mean ‘to them’ or ‘against them’, and the context of rejection makes the BSB's \"against them\" natural, though the gesture is also a final warning that might still be heeded.",
+      "words": [
+        "G3699",
+        "G1525",
+        "G3614G",
+        "G3306",
+        "G5117",
+        "G1209",
+        "G0191",
+        "G1621",
+        "G5522",
+        "G4228",
+        "G3142"
+      ],
+      "parallels": [
+        "Matthew 10:11-14",
+        "Luke 9:4-5"
+      ],
+      "text": "Later manuscripts, followed by the King James Version, add a sentence here: it will be more tolerable for Sodom and Gomorrah on the day of judgment than for that city. It is borrowed from Matthew 10:15 and is absent from the earliest witnesses.",
+      "history": "Nehemiah shook out the fold of his garment as a sign that God would shake out anyone who broke their oath (Nehemiah 5:13), and Paul and Barnabas shook the dust off their feet at Pisidian Antioch (Acts 13:51; compare 18:6). The Didache, an early Christian manual probably from the late first or early second century, shows how such a mission could be abused: it says a traveling apostle should stay one day, or two if necessary, and that one who stays three days or asks for money is a false prophet (Didache 11.4-6).",
+      "refs": [
+        "Nehemiah 5:13",
+        "Acts 13:51",
+        "Acts 18:6",
+        "Matthew 10:15"
+      ]
+    },
+    {
+      "v": "12-13",
+      "context": "The Twelve go out and do what Jesus has done: they preach repentance, cast out many demons, and anoint and heal many sick people. Their mission is framed by the story of John's death (verses 14-29) and their return (verse 30), so that the cost of proclamation is set right beside its success.",
+      "grammar": "Ekēruxan hina metanoōsin, ‘they proclaimed that people should repent’, uses hina to give the content of the preaching, the same message as John's (1:4) and Jesus' (1:15). The three verbs of verse 13 are imperfects, exeballon, ēleiphon, etherapeuon, ‘they kept casting out, anointing, healing’, describing continued activity. Ēleiphon elaiō, ‘they were anointing with oil’, uses aleiphō, the everyday verb for rubbing on oil, not chriō, the verb of consecration from which ‘Christ’ comes.",
+      "words": [
+        "G1831",
+        "G2784",
+        "G3340",
+        "G1140",
+        "G1544",
+        "G0218",
+        "G1637",
+        "G0732",
+        "G2323"
+      ],
+      "parallels": [
+        "Luke 9:6"
+      ],
+      "history": "Olive oil was the ordinary medicine of the ancient Mediterranean for wounds and sickness (Isaiah 1:6, Luke 10:34). Only Mark mentions the Twelve anointing the sick, and James 5:14 later tells church elders to anoint the sick with oil in the name of the Lord. The Council of Trent (Session 14, 1551) taught that the sacrament of anointing of the sick was hinted at in this verse and promulgated in James; Protestant interpreters generally read the oil as medicine joined to prayer, or as a sign of God's healing presence, rather than as a sacrament.",
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "The apostles' first message is the call to repent, a turning of the whole life toward God. The verse places repentance at the center of Christian proclamation from its beginning, alongside acts of deliverance and healing that show what the turning is toward."
+        },
+        {
+          "id": "mission",
+          "note": "The Twelve's mission is word and deed together: proclamation, exorcism, and healing. It is the pattern of Jesus' own ministry, handed on."
+        }
+      ],
+      "refs": [
+        "James 5:14-15",
+        "Mark 1:15",
+        "Mark 3:14-15",
+        "Luke 10:17"
+      ]
+    },
+    {
+      "v": "14",
+      "context": "News of Jesus reaches Herod Antipas, and people explain Jesus' power by saying that John the Baptist has been raised from the dead. Mark uses this report to open the only story in his Gospel not centered on Jesus: the account of John's death, told in flashback.",
+      "grammar": "Ho basileus Hērōdēs, ‘King Herod’, gives Antipas a title Rome never granted him; the chapter note discusses it. Phaneron gar egeneto to onoma autou, ‘for his name had become known’, explains how Herod heard. Egēgertai ek nekrōn, ‘he has been raised from the dead’, is a perfect passive (the raising stands), and dia touto energousin hai dunameis en autō, ‘for this reason the powers are at work in him’, makes the miracles the evidence. Iōannēs ho baptizōn, ‘John the baptizing one’, uses a participle as a title; Mark also uses the noun baptistēs (verse 25).",
+      "words": [
+        "G0191",
+        "G0935",
+        "G2264H",
+        "G5318",
+        "G3686",
+        "G2491G",
+        "G0907",
+        "G1453",
+        "G3498",
+        "G1754",
+        "G1411"
+      ],
+      "parallels": [
+        "Matthew 14:1-2",
+        "Luke 9:7"
+      ],
+      "text": "The earliest manuscripts (Vaticanus, Bezae, and some Old Latin) read elegon, ‘they were saying’, so the opinion that John was raised belongs to people generally and Herod adopts it in verse 16. Most later manuscripts, followed by the King James Version, read elegen, ‘he was saying’, making it Herod's own view from the start. The Nestle-Aland text prints elegon. Matthew and Luke both call Antipas ‘the tetrarch’ (Matthew 14:1, Luke 9:7), the correct title, though Matthew also calls him ‘the king’ in the story (14:9).",
+      "refs": [
+        "Mark 8:28",
+        "Luke 9:7-9",
+        "Luke 23:8",
+        "Mark 1:14"
+      ]
+    },
+    {
+      "v": "15-16",
+      "context": "Popular opinion offers two more explanations of Jesus, Elijah or a prophet like those of old, but Herod settles on the first: John, whom he beheaded, has been raised. The same three answers return when Jesus asks his disciples who people say he is (8:28), and Peter's confession replaces them all.",
+      "grammar": "Alloi de elegon ... alloi de elegon, ‘others were saying ... others were saying’, sets the opinions side by side. Prophētēs hōs heis tōn prophētōn, ‘a prophet like one of the prophets’, places Jesus in the line of the old prophets. In verse 16 Herod's words put the relative clause first for emphasis: hon egō apekephalisa Iōannēn, houtos ēgerthē, ‘the one I beheaded, John, this one has been raised’. The emphatic egō, ‘I myself’, shows a guilty conscience: Herod names himself as the killer before he names John.",
+      "words": [
+        "G0243",
+        "G3004G",
+        "G2243",
+        "G4396",
+        "G2264H",
+        "G1473",
+        "G0607",
+        "G2491G",
+        "G1453"
+      ],
+      "parallels": [
+        "Matthew 14:2",
+        "Luke 9:8-9"
+      ],
+      "text": "Luke's Herod is perplexed rather than certain: he says, ‘I beheaded John, so who is this I hear such things about?’, and keeps trying to see Jesus (9:9), a wish finally granted at Jesus' trial (23:8-12).",
+      "ot": [
+        {
+          "ref": "Malachi 4:5",
+          "note": "Malachi ends the prophets (in the Christian order of the Old Testament) with the promise that God will send Elijah before the great and dreadful day of the LORD (Malachi 4:5-6, 3:23-24 in the Hebrew). The Septuagint calls him ‘Elijah the Tishbite’. By the first century many Jews expected Elijah's return to prepare for God's coming (Sirach 48:10 develops the same hope). Mark's readers know from 1:2-6 and will hear again in 9:11-13 that the Elijah figure is John himself, so the crowd's guess that Jesus is Elijah confuses the forerunner with the one he prepared for."
+        }
+      ],
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "Every popular answer puts Jesus among the prophets, and every one falls short. The verses keep the question of Jesus' identity open for the reader until Peter answers it in 8:29, and they show that high regard for Jesus is not the same as knowing who he is."
+        }
+      ],
+      "refs": [
+        "Mark 8:27-29",
+        "Mark 9:11-13",
+        "Deuteronomy 18:15",
+        "Matthew 16:14"
+      ]
+    },
+    {
+      "v": "17-18",
+      "context": "Mark goes back in time to explain how John died. Herod had arrested John because John kept telling him that his marriage to Herodias, his brother's wife, was unlawful. This is the only flashback in Mark, and the narrative stays away from Jesus for thirteen verses.",
+      "grammar": "Autos gar ho Hērōdēs, ‘for Herod himself’, opens the flashback with gar, ‘for’, explaining verse 16. Aposteilas ekratēsen ... kai edēsen, ‘having sent, he seized ... and bound’, three verbs of arrest. Elegen gar ho Iōannēs, ‘for John had been saying’, is an imperfect: John's rebuke was repeated, not a single outburst. Ouk exestin soi, ‘it is not lawful for you’, uses exestin, the word Jesus' opponents used about Sabbath law (2:24, 3:4). John applied the law to the ruler as plainly as the Pharisees applied it to the poor.",
+      "words": [
+        "G1063",
+        "G2264H",
+        "G0649",
+        "G2902",
+        "G2491G",
+        "G1210",
+        "G5438G",
+        "G2266G",
+        "G1135H",
+        "G5376H",
+        "G0080",
+        "G1060",
+        "G1832",
+        "G2192"
+      ],
+      "parallels": [
+        "Matthew 14:3-4",
+        "Luke 3:19-20"
+      ],
+      "history": "Josephus (Antiquities 18.109-110) says that Antipas, on a trip to Rome, stayed with his half-brother Herod, son of Herod the Great by Mariamne the high priest's daughter, and fell in love with his wife Herodias, who was also the granddaughter of Herod the Great and so Antipas's own niece. They agreed that she would leave her husband and that Antipas would divorce his Nabatean wife, the daughter of King Aretas IV. Josephus later says that Herodias, in defiance of the ancestral laws, divorced her living husband to marry Antipas (Antiquities 18.136). Mark calls the first husband Philip; Josephus calls him Herod and says that Philip the tetrarch married Herodias's daughter Salome. Some scholars conclude that Mark confused two brothers; others suggest the first husband bore both names, as Herodian princes often shared the family name Herod alongside another. Luke mentions John's rebuke and imprisonment early (3:19-20), adding that John also rebuked Herod for all the evil things he had done.",
+      "ot": [
+        {
+          "ref": "Leviticus 18:16",
+          "note": "The Holiness Code forbids a man to uncover the nakedness of his brother's wife (Hebrew ervat eshet achikha lo tegalleh; the Septuagint renders it closely), and Leviticus 20:21 calls such a union impurity and pronounces it childless. The one exception was levirate marriage, when a brother died without a son and his brother married the widow to raise up an heir (Deuteronomy 25:5-10). Herodias's first husband was alive, and she had a daughter, so the exception did not apply. John's charge, ‘it is not lawful for you to have your brother's wife’, is a direct application of Leviticus 18:16 to the ruler of Galilee."
+        }
+      ],
+      "refs": [
+        "Leviticus 20:21",
+        "Deuteronomy 25:5-6",
+        "Luke 3:19-20",
+        "Matthew 11:2"
+      ]
+    },
+    {
+      "v": "19-20",
+      "context": "Herodias wants John dead but cannot kill him, because Herod fears John, knows him to be righteous and holy, and protects him. Herod listens to John gladly and is left deeply troubled. Mark's portrait of the ruler is complex: fascinated, afraid, divided.",
+      "grammar": "Eneichen autō, ‘she had it in for him’, uses enechō, to hold a grudge (the same verb describes the scribes' hostility in Luke 11:53). Ēthelen and ouk ēdunato, ‘she wanted’ and ‘she was not able’, are imperfects of a long frustration. In verse 20 Herod ephobeito ton Iōannēn, ‘kept fearing John’, eidōs auton andra dikaion kai hagion, ‘knowing him to be a righteous and holy man’, and sunetērei auton, ‘kept him safe’. Hēdeōs autou ēkouen, ‘he gladly heard him’, is the imperfect of a habit: Herod kept sending for his prisoner.",
+      "words": [
+        "G2266G",
+        "G1758",
+        "G2309",
+        "G0615",
+        "G1410",
+        "G2264H",
+        "G5399",
+        "G6063",
+        "G1342",
+        "G0040G",
+        "G4933",
+        "G0639",
+        "G2234",
+        "G0191"
+      ],
+      "parallels": [
+        "Matthew 14:5"
+      ],
+      "text": "The earliest manuscripts (Sinaiticus, Vaticanus, and a few others) read polla ēporei, ‘he was greatly perplexed’; most later manuscripts, followed by the King James Version (‘he did many things’), read polla epoiei. The two words differ by a few letters. Modern editions prefer ēporei, which fits the picture of a man torn between conscience and pride. Matthew tells the story differently: in his account Herod himself wanted to kill John but feared the crowd, who regarded John as a prophet (14:5).",
+      "history": "Josephus gives a different motive. John, he says, was a good man who exhorted the Jews to practice virtue, justice toward one another, and piety toward God, and to come together for baptism; Herod feared that John's great influence over the people might lead to a revolt, and decided to strike first by putting him to death (Antiquities 18.117-118). Mark gives a personal and domestic motive, Josephus a political one. They need not conflict: a prophet who publicly condemned the ruler's marriage, a marriage that had already provoked Nabatea by the divorce of Aretas's daughter, was both a moral and a political threat.",
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "Herod hears John gladly and is troubled, but never acts on what he hears. The verses show that being moved by the word, even enjoying it, is not repentance; the parable of the soils (4:16-19) has already described such hearing."
+        }
+      ],
+      "refs": [
+        "Matthew 14:5",
+        "Acts 24:24-26",
+        "Mark 4:16-19",
+        "Ezekiel 33:31-32"
+      ]
+    },
+    {
+      "v": "21",
+      "context": "Herodias's opportunity comes at Herod's birthday banquet for the leading men of his realm. Mark names three groups of guests: court officials, military commanders, and the leading men of Galilee. It is a royal feast, and it will end with a prophet's head on a dish.",
+      "grammar": "Genomenēs hēmeras eukairou, ‘an opportune day having come’, uses eukairos, ‘well-timed’, from Herodias's point of view; Mark uses the related adverb when Judas seeks an opportunity to betray Jesus (14:11). Tois genesiois autou, ‘on his birthday festivities’, is plural, as festival names often are in Greek. Deipnon, ‘dinner’, is the main evening meal. The guests are hoi megistanes, ‘the great men’, hoi chiliarchoi, literally ‘commanders of a thousand’ (the Greek term for a Roman military tribune), and hoi prōtoi tēs Galilaias, ‘the first men of Galilee’.",
+      "words": [
+        "G2250",
+        "G2121",
+        "G2264H",
+        "G1077",
+        "G1173",
+        "G3175",
+        "G5506",
+        "G4413I",
+        "G1056G"
+      ],
+      "parallels": [
+        "Matthew 14:6"
+      ],
+      "history": "Josephus says John was sent in chains to Machaerus and killed there (Antiquities 18.119). Machaerus was a fortress-palace built by Herod the Great on a hilltop east of the Dead Sea, in Perea, which belonged to Antipas's territory. Excavations there by a Hungarian team led by Győző Vörös, beginning in 2009, have exposed the palace, and in 2020 Vörös identified a niche in its peristyle courtyard as the setting for a royal throne, suggesting that this was the kind of room in which such a banquet was held. Mark does not name the place, and his list of guests, ‘the leading men of Galilee’, has led some to place the banquet at Antipas's Galilean capital Tiberias, which he founded around AD 20 partly on the site of old tombs (Antiquities 18.36-38). Others think the Galilean nobles attended their ruler at Machaerus. The difference affects only the setting, not the event.",
+      "refs": [
+        "Esther 1:3",
+        "Genesis 40:20-22",
+        "Mark 14:11",
+        "Daniel 5:1-4"
+      ]
+    },
+    {
+      "v": "22-23",
+      "context": "Herodias's daughter comes in and dances, pleasing Herod and his guests, and the king makes a rash public promise: whatever she asks, up to half his kingdom. The scene deliberately echoes a royal banquet in the book of Esther, with a very different outcome.",
+      "grammar": "Eiselthousēs ... kai orchēsamenēs, ‘having come in and danced’, are genitive absolutes. Ēresen tō Hērōdē, ‘she pleased Herod’, uses areskō, which can mean simply ‘gratify’. The king's words, aitēson me ho ean thelēs, kai dōsō soi, ‘ask me whatever you wish and I will give it to you’, are followed by an oath, ōmosen autē, ‘he swore to her’, and a repetition. Korasion, ‘little girl’, is the word used of Jairus's twelve-year-old daughter (5:41-42): one girl is given back her life, the other asks for a man's death.",
+      "words": [
+        "G1525",
+        "G2364",
+        "G2266G",
+        "G3738",
+        "G0700",
+        "G4873",
+        "G0935",
+        "G2877",
+        "G0154",
+        "G2309",
+        "G1325",
+        "G3660",
+        "G2255",
+        "G0932"
+      ],
+      "parallels": [
+        "Matthew 14:6-7"
+      ],
+      "text": "Here the manuscripts divide in a way that changes who the girl is. Codex Sinaiticus, Codex Vaticanus, and Codex Bezae read tēs thugatros autou Hērōdiados, ‘his daughter Herodias’, which would make the girl Antipas's own daughter, named after her mother. Most later manuscripts read tēs thugatros autēs tēs Hērōdiados, ‘the daughter of Herodias herself’. The Nestle-Aland text has printed ‘his daughter Herodias’ since its twenty-sixth edition (1979), and the NRSV follows it; the BSB and most other versions keep ‘the daughter of Herodias’, which agrees with Josephus, who says Herodias's daughter was Salome, by her first husband (Antiquities 18.136). The harder reading may be original and reflect confusion in the popular tradition, or it may be an early scribal slip. Matthew has ‘the daughter of Herodias’ (14:6).",
+      "ot": [
+        {
+          "ref": "Esther 5:3",
+          "note": "King Ahasuerus three times offers Esther whatever she asks, \"Even up to half the kingdom\" (Esther 5:3, 5:6, 7:2). The Hebrew is ad-chatsi hammalkhut, and the Septuagint renders it heōs tou hēmisous tēs basileias mou, ‘up to half of my kingdom’, the same phrase Mark gives Herod. Both scenes are royal banquets where a woman's request, made to a king who has bound himself by his word, decides a man's life. In Esther the request saves a people and brings down the villain; in Mark it kills a prophet. There is irony too in the promise itself: Antipas was a tetrarch who ruled by Rome's permission and had no kingdom to divide."
+        }
+      ],
+      "refs": [
+        "Esther 5:6",
+        "Esther 7:2",
+        "Mark 5:41-42",
+        "Judges 11:30-35"
+      ]
+    },
+    {
+      "v": "24-25",
+      "context": "The girl goes out to ask her mother, and Herodias names her price: the head of John the Baptist. The girl hurries back and adds her own touches, \"immediately\" and \"on a platter\". The grudge of verse 19 finds its opportunity.",
+      "grammar": "Ti aitēsōmai, ‘what shall I ask?’, is a deliberative subjunctive in the middle voice. The king had used the active (aitēson, verse 22), and some grammarians think the girl's middle means ‘ask for myself’; others doubt that the distinction held firmly in Mark's Greek. Herodias's answer calls John ho baptizōn, ‘the baptizer’, and the girl's request calls him ho baptistēs, ‘the Baptist’. The haste is marked three times: euthus, ‘immediately’, meta spoudēs, ‘with haste’, and exautēs, ‘at once’. Epi pinaki, ‘on a platter’, uses the word for a serving dish, which turns the request into a grotesque course at the banquet.",
+      "words": [
+        "G1831",
+        "G3384",
+        "G0154",
+        "G2776",
+        "G2491G",
+        "G0907",
+        "G1525",
+        "G2112",
+        "G4710",
+        "G0935",
+        "G2309",
+        "G1824",
+        "G1325",
+        "G4094",
+        "G0910"
+      ],
+      "parallels": [
+        "Matthew 14:8"
+      ],
+      "history": "The ancient historians knew similar scenes. Livy (History of Rome 39.42-43) tells how the Roman consul Lucius Flamininus had a condemned man executed at a banquet to gratify a companion, and Cato the Elder expelled him from the Senate for it. Such stories were told as the mark of a tyrant's decadence. Matthew says the girl had been prompted by her mother, and omits her going out to ask (14:8).",
+      "refs": [
+        "1 Kings 21:5-10",
+        "1 Kings 19:1-2",
+        "Matthew 14:8",
+        "Proverbs 6:16-19"
+      ]
+    },
+    {
+      "v": "26-28",
+      "context": "Herod is grieved but will not break his oath before his guests. He sends an executioner, who beheads John in the prison and brings the head on a platter to the girl, who gives it to her mother. Mark tells it with terrible brevity.",
+      "grammar": "Perilupos genomenos, ‘becoming deeply grieved’, uses the word Jesus will use of himself in Gethsemane, \"My soul is consumed with sorrow\" (14:34). Dia tous horkous kai tous anakeimenous, ‘because of the oaths and those reclining at table’: honor before his guests outweighs justice. Ouk ēthelēsen athetēsai autēn, ‘he did not want to reject her’, uses atheteō, to set aside or break faith with. Spekoulatōra is a Latin loanword (speculator), originally a scout, in this period a soldier of a commander's guard who could serve as an executioner. Apekephalisen, ‘beheaded’, echoes Herod's own word in verse 16. The two verbs edōken ... edōken, ‘he gave ... she gave’, pass the head from hand to hand.",
+      "words": [
+        "G4036",
+        "G0935",
+        "G3727",
+        "G0345",
+        "G2309",
+        "G0114",
+        "G0649",
+        "G4688",
+        "G2004",
+        "G5342",
+        "G2776",
+        "G0607",
+        "G5438G",
+        "G4094",
+        "G1325",
+        "G2877",
+        "G3384"
+      ],
+      "parallels": [
+        "Matthew 14:9-11"
+      ],
+      "history": "Josephus (Antiquities 18.116-119) and Mark agree on the essentials: Antipas imprisoned and executed John, who was a righteous man with a large following. Josephus adds that the execution took place at Machaerus and that some Jews saw Antipas's defeat by Aretas, around AD 36, as God's just punishment for killing John. Nearly all scholars accept the passage in Josephus as genuine, since it shows no sign of Christian editing and describes John's baptism differently from the Gospels (as a purification of the body for those whose souls had already been cleansed by righteousness). Gerd Theissen (The Gospels in Context) has argued that Mark's version reflects a popular account that circulated in Palestine not long after the events. Luke mentions two people close to Antipas's court who followed Jesus, Joanna, wife of Herod's steward Chuza (Luke 8:3), and Manaen, who had been brought up with Herod the tetrarch (Acts 13:1), a possible channel for such stories.",
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "John dies not in battle or by public trial but as a party favor, because of a grudge, an oath, and a ruler's fear of losing face. Mark does not soften the senselessness of it. The prophet who prepared the way for Jesus goes before him in rejection and death too, as Jesus will say (9:13)."
+        }
+      ],
+      "refs": [
+        "Mark 14:34",
+        "Mark 9:12-13",
+        "Matthew 14:9-11",
+        "Hebrews 11:36-38"
+      ]
+    },
+    {
+      "v": "29",
+      "context": "John's disciples come, take his body, and lay it in a tomb. The flashback ends here, on burial. The sentence anticipates Jesus' own burial in chapter 15, with one difference the reader will notice: John's disciples came for their teacher, while Jesus' disciples will have fled.",
+      "grammar": "Ēran to ptōma autou, ‘they took up his corpse’: ptōma, literally ‘what has fallen’, is the blunt word for a dead body, and Mark uses it again only when Pilate grants Jesus' body to Joseph of Arimathea (15:45). Ethēkan auto en mnēmeiō, ‘they laid it in a tomb’, uses the verb and noun of Jesus' burial (15:46).",
+      "words": [
+        "G0191",
+        "G3101",
+        "G2064",
+        "G0142",
+        "G4430",
+        "G5087",
+        "G3419"
+      ],
+      "parallels": [
+        "Matthew 14:12"
+      ],
+      "history": "By the fourth century a tomb of John the Baptist was venerated at Sebaste, the old city of Samaria; Jerome mentions it in his account of Paula's pilgrimage (Letter 108). Matthew adds that John's disciples went and told Jesus (14:12), which links the news of John's death to Jesus' withdrawal to a solitary place.",
+      "refs": [
+        "Mark 15:45-46",
+        "Matthew 14:12",
+        "Acts 8:2",
+        "Mark 14:50"
+      ]
+    },
+    {
+      "v": "30-31",
+      "context": "The apostles return and report everything they have done and taught. Jesus invites them to come away to a solitary place and rest, because so many people are coming and going that they have no time even to eat. The story of John's death stands between their sending and their return.",
+      "grammar": "Hoi apostoloi, ‘the apostles’, meaning ‘those sent’, is Mark's only use of the noun apart from 3:14 (where some manuscripts lack it), and it comes fittingly at the moment they return from being sent. Hosa epoiēsan kai hosa edidaxan, ‘all that they did and all that they taught’, puts deeds and words side by side. Deute humeis autoi kat' idian, ‘come, you yourselves, privately’, and anapausasthe oligon, ‘rest a little’, an aorist middle imperative. The gar clause explains: ouk eukairoun oude phagein, ‘they had no opportunity even to eat’, using eukaireō, the verb related to the ‘opportune’ day of Herod's feast (verse 21). Herod had leisure for a banquet; the apostles have none even for bread.",
+      "words": [
+        "G4863",
+        "G0652",
+        "G0518",
+        "G4160G",
+        "G1321",
+        "G1205",
+        "G2398",
+        "G2048",
+        "G5117",
+        "G0373",
+        "G3641",
+        "G2064",
+        "G5217",
+        "G5315",
+        "G2119"
+      ],
+      "parallels": [
+        "Luke 9:10"
+      ],
+      "theology": [
+        {
+          "id": "sabbath",
+          "note": "Jesus commands rest for those worn out by ministry. The Sabbath principle that God's people are not made for ceaseless work (2:27) applies to the work of the kingdom too; rest here is received from Jesus in his company."
+        }
+      ],
+      "refs": [
+        "Mark 3:20",
+        "Matthew 11:28-29",
+        "Psalm 23:2",
+        "Mark 2:27"
+      ]
+    },
+    {
+      "v": "32-33",
+      "context": "They cross by boat to a solitary place, but the crowds see them go, run around the shore on foot from all the towns, and get there first. The plan for rest is overtaken by need.",
+      "grammar": "Eis erēmon topon, ‘to a solitary place’, repeats verse 31, and verse 35 will use the phrase a third time. The erēmos, ‘wilderness’, is where Israel was fed with manna, and the repetition prepares for what happens there. Pezē, ‘on foot’, contrasts with the boat. Sunedramon, ‘they ran together’, and proēlthon autous, ‘they arrived ahead of them’, show the crowd's eagerness.",
+      "words": [
+        "G0565",
+        "G4143",
+        "G2048",
+        "G5117",
+        "G2398",
+        "G1492H",
+        "G5217",
+        "G1921",
+        "G3979",
+        "G4172",
+        "G4936",
+        "G4281"
+      ],
+      "parallels": [
+        "Matthew 14:13",
+        "Luke 9:10-11",
+        "John 6:1-2"
+      ],
+      "text": "Luke says Jesus withdrew with the apostles to a town called Bethsaida (9:10), though he goes on to describe a desolate place (9:12). John says Jesus crossed to the far side of the Sea of Galilee and went up a mountain (6:1-3), and that the crowd followed because they had seen his signs on the sick. Later manuscripts of Mark expand the end of verse 33 with words such as ‘and came together to him’.",
+      "refs": [
+        "Exodus 16:1-4",
+        "Mark 1:35-37",
+        "Mark 1:45"
+      ]
+    },
+    {
+      "v": "34",
+      "context": "When Jesus lands and sees the crowd, he is moved with compassion, because they are like sheep without a shepherd, and he begins to teach them many things. His first gift in the wilderness is teaching; the bread comes afterward.",
+      "grammar": "Esplagchnisthē ep' autous, ‘he was moved with compassion for them’, is an aorist passive deponent of splagchnizomai, discussed in the chapter note. Hoti ēsan hōs probata mē echonta poimena, ‘because they were like sheep not having a shepherd’, uses a present participle, a continuing condition. Ērxato didaskein autous polla, ‘he began to teach them many things’, repeats the phrase that opened the parables (4:1-2).",
+      "words": [
+        "G1831",
+        "G4183",
+        "G3793",
+        "G4697",
+        "G4263",
+        "G2192",
+        "G4166",
+        "G0757",
+        "G1321"
+      ],
+      "parallels": [
+        "Matthew 14:14",
+        "Luke 9:11",
+        "Matthew 9:36"
+      ],
+      "text": "The Gospels differ in what Jesus does for the crowd. Mark says he taught them; Matthew says he healed their sick (14:14) and uses the shepherd image elsewhere (9:36); Luke says he welcomed them, spoke about the kingdom of God, and healed those who needed it (9:11).",
+      "ot": [
+        {
+          "ref": "Numbers 27:17",
+          "note": "Moses asks God to appoint a leader after him \"so that the congregation of the LORD will not be like sheep without a shepherd\". The Hebrew is katson asher en-lahem roeh, and the Septuagint's hōsei probata hois ouk estin poimēn is close to Mark's words. God answers by appointing Joshua, whose name in Greek is Iēsous, Jesus. The image returns when the prophet Micaiah sees Israel scattered on the hills like sheep without a shepherd (1 Kings 22:17), and in Ezekiel 34, where God condemns Israel's false shepherds, promises to shepherd his people himself, and then promises to set over them one shepherd, \"My servant David\" (Ezekiel 34:23). Mark's phrase draws on the whole thread: Jesus is the new Joshua and the promised shepherd, and in the next verses he will make the people lie down on green grass and feed them."
+        }
+      ],
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "Jesus acts as the shepherd God promised to send (Ezekiel 34:23-24): he sees the people's lack of leadership, has compassion, and feeds them with teaching and then with bread. The shepherd image is one of the Old Testament's pictures of the Davidic king, and Mark shows it fulfilled in Jesus."
+        }
+      ],
+      "refs": [
+        "Ezekiel 34:5",
+        "Ezekiel 34:23-24",
+        "1 Kings 22:17",
+        "John 10:11",
+        "Psalm 23:1"
+      ]
+    },
+    {
+      "v": "35-36",
+      "context": "As the day ends, the disciples point out the obvious: this is a desolate place, it is late, and the crowd should be sent to the nearby farms and villages to buy food. Their suggestion is sensible and compassionate in its way, and it assumes that feeding the crowd is not their problem.",
+      "grammar": "Ēdē hōras pollēs genomenēs, literally ‘much hour already having come’, is an idiom for ‘late in the day’, and the disciples repeat it in their own words, ēdē hōra pollē. Erēmos estin ho topos, ‘the place is desolate’, puts erēmos first, the wilderness again. Apoluson autous, ‘dismiss them’, is an aorist imperative addressed to Jesus. Hina ... agorasōsin heautois ti phagōsin, ‘that they may buy themselves something to eat’: the disciples' plan is the marketplace.",
+      "words": [
+        "G2235",
+        "G5610",
+        "G1096",
+        "G4334",
+        "G3101",
+        "G2048",
+        "G5117",
+        "G0630G",
+        "G2945",
+        "G0068G",
+        "G2968",
+        "G0059",
+        "G5315"
+      ],
+      "parallels": [
+        "Matthew 14:15",
+        "Luke 9:12",
+        "John 6:5"
+      ],
+      "text": "In John the initiative is Jesus', who asks Philip where they are to buy bread, to test him (6:5-6). In the Synoptic Gospels the disciples raise the problem.",
+      "refs": [
+        "Exodus 16:3",
+        "Numbers 11:13",
+        "Psalm 78:19-20",
+        "Mark 8:1-4"
+      ]
+    },
+    {
+      "v": "37-38",
+      "context": "Jesus hands the problem back: \"You give them something to eat.\" The disciples calculate the cost, two hundred denarii, and Jesus sends them to find out what they have. Five loaves and two fish. The story sets human resources against divine provision without despising either.",
+      "grammar": "Dote autois humeis phagein, ‘you give them to eat’: the pronoun humeis, ‘you’, is emphatic, since Greek does not need it. The disciples' question, apelthontes agorasōmen dēnariōn diakosiōn artous kai dōsomen autois phagein, ‘shall we go and buy two hundred denarii worth of bread and give it to them to eat?’, begins with a deliberative subjunctive (agorasōmen) and ends with a future indicative (dōsomen), a mixture that gives the question an edge of disbelief. Jesus' reply is two quick imperatives, hupagete idete, ‘go, look’. Pente kai duo ichthuas, ‘five, and two fish’, is their report, clipped.",
+      "words": [
+        "G0611",
+        "G1325",
+        "G5315",
+        "G0565",
+        "G0059",
+        "G1220",
+        "G1250",
+        "G0740",
+        "G4214",
+        "G2192",
+        "G5217",
+        "G1492H",
+        "G1097",
+        "G4002",
+        "G1417",
+        "G2486"
+      ],
+      "parallels": [
+        "Matthew 14:16-17",
+        "Luke 9:13",
+        "John 6:7-9"
+      ],
+      "history": "A denarius was a silver coin, the usual day's wage for a laborer (Matthew 20:2), so two hundred denarii was most of a year's earnings. John names the disciples involved: Philip says two hundred denarii would not buy enough for each to have a little, and Andrew mentions a boy with five barley loaves and two fish (6:7-9). Barley bread was the food of the poor, and the fish were probably dried or salted, the staple relish of the lake's fishing towns.",
+      "ot": [
+        {
+          "ref": "2 Kings 4:42-44",
+          "note": "A man brings Elisha twenty barley loaves from the firstfruits, and Elisha says, \"Give it to the people to eat\" (the Septuagint has dote tō laō kai esthietōsan). His servant objects that it cannot feed a hundred men, but Elisha repeats the command with the LORD's word, \"They will eat and have some left over\", and it happens. Mark's story follows the same pattern: a command to give, an objection from the servant, the command repeated, a meal, and leftovers. John makes the link clearer by specifying barley loaves (6:9). The difference is in scale, a hundred men against five thousand, and in the one who acts: Elisha relies on the LORD's word, Jesus blesses and breaks the bread himself."
+        },
+        {
+          "ref": "Numbers 11:13",
+          "note": "In the wilderness Moses asks the LORD where he can get meat for all the people and later says that even if all the flocks and fish of the sea were gathered, it would not be enough (Numbers 11:13, 22). The disciples' calculation echoes Moses' despair, and the answer in both stories is that the LORD provides in the wilderness."
+        }
+      ],
+      "refs": [
+        "Matthew 20:2",
+        "John 6:7-9",
+        "Mark 8:4-5",
+        "Philippians 4:19"
+      ]
+    },
+    {
+      "v": "39-40",
+      "context": "Jesus has the people recline in groups on the green grass, and they sit down in companies of hundreds and fifties. The details turn a crowd in the wilderness into an ordered people at a meal, the way Israel was ordered in the desert.",
+      "grammar": "Anaklinai pantas, ‘to make them all recline’, uses the verb for reclining at a festive meal, not merely sitting. Sumposia sumposia, ‘in companies, companies’, and prasiai prasiai, ‘in plots, plots’, use the distributive doubling of verse 7. A sumposion was a dinner party or drinking company; a prasia was a garden bed, and the image is of the groups laid out on the grass like rows of a garden, perhaps with the colors of their clothes. Epi tō chlōrō chortō, ‘on the green grass’, is a detail only Mark gives, and grass is green in Galilee only in the spring. Kata hekaton kai kata pentēkonta, ‘by hundreds and by fifties’.",
+      "words": [
+        "G2004",
+        "G0347",
+        "G3956",
+        "G4849",
+        "G5515",
+        "G5528",
+        "G0377",
+        "G4237",
+        "G1540",
+        "G4004"
+      ],
+      "parallels": [
+        "Matthew 14:19",
+        "Luke 9:14-15",
+        "John 6:10"
+      ],
+      "history": "The green grass fits John's note that the Passover was near (John 6:4), in early spring, and John also says there was much grass in the place (6:10). The groups of hundreds and fifties recall Moses' organization of Israel in the wilderness under leaders of thousands, hundreds, fifties, and tens (Exodus 18:21, 25). The community at Qumran used the same divisions for its assemblies and for the ordering of Israel at the end of days (1QS 2:21-22, 1QSa 1:14-15). Luke has the groups in fifties only (9:14).",
+      "ot": [
+        {
+          "ref": "Psalm 23:2",
+          "note": "The LORD as shepherd makes his sheep lie down in green pastures and leads them beside quiet waters. The Hebrew is binot deshe, ‘pastures of fresh grass’, and the Septuagint has eis topon chloēs, ‘in a place of green grass’, and ‘beside the water of rest’ (anapauseōs). Mark's scene has the shepherd with compassion for shepherdless sheep (verse 34), the invitation to rest (anapausasthe, verse 31), and the people made to lie down on green grass (verse 39). Mark does not quote the psalm, but the cluster of images presents Jesus doing what the psalm says the LORD does."
+        }
+      ],
+      "refs": [
+        "Exodus 18:21",
+        "Exodus 18:25",
+        "John 6:4",
+        "John 6:10"
+      ]
+    },
+    {
+      "v": "41",
+      "context": "Jesus takes the loaves and fish, looks up to heaven, blesses, breaks the loaves, and keeps giving them to the disciples to set before the people, and divides the fish among all. The disciples who were told to give the crowd food (verse 37) now do so, with what Jesus hands them.",
+      "grammar": "The sequence of verbs is the heart of the verse: labōn, ‘having taken’, anablepsas, ‘having looked up’, eulogēsen, ‘he blessed’, kateklasen, ‘he broke’, and edidou, ‘he kept giving’. The last is an imperfect, and many commentators observe that Mark locates the miracle in the continued giving rather than in a single moment. The same sequence, take, bless, break, give, appears at the second feeding (8:6) and at the Last Supper (14:22), where Mark has labōn, eulogēsas, eklasen, edōken. Eulogēsen has no object in Greek; in Jewish practice one blessed God for the bread rather than blessing the bread itself.",
+      "words": [
+        "G2983",
+        "G4002",
+        "G0740",
+        "G1417",
+        "G2486",
+        "G0308",
+        "G3772",
+        "G2127",
+        "G2622",
+        "G1325",
+        "G3101",
+        "G3908",
+        "G3307"
+      ],
+      "parallels": [
+        "Matthew 14:19",
+        "Luke 9:16",
+        "John 6:11"
+      ],
+      "history": "Jewish meals began with the head of the household saying a blessing over bread, and the Mishnah prescribes the form for bread as a blessing of God ‘who brings forth bread from the earth’ (m. Berakhot 6:1). He then broke the loaf and shared it. Looking up to heaven was a posture of prayer (Psalm 123:1, John 11:41, 17:1). The Rule of the Congregation from Qumran (1QSa 2:11-22) describes a meal at the end of days at which the priest blesses the bread first and then the Messiah of Israel stretches out his hand to the bread, which shows that some Jews expected the Messiah to preside at a banquet.",
+      "theology": [
+        {
+          "id": "sacraments",
+          "note": "The verbs of this meal are the verbs of the Last Supper (14:22), and early Christians, reading Mark, would have heard them together; John's feeding story leads directly into the discourse on the bread of life (John 6:35-58). Interpreters differ on how far the feeding itself is meant to point to the Lord's Supper: many see a deliberate foreshadowing, while others caution that the take, bless, break, give sequence was simply the shape of every Jewish meal. Either way, Jesus is shown as the host who feeds God's people from his own hands."
+        }
+      ],
+      "refs": [
+        "Mark 14:22",
+        "Mark 8:6-7",
+        "Luke 24:30-31",
+        "John 6:11",
+        "Isaiah 25:6"
+      ]
+    },
+    {
+      "v": "42-44",
+      "context": "Everyone eats and is satisfied, twelve baskets of pieces are collected, and the men alone number five thousand. The abundance is stated in three plain sentences, with no reaction from the crowd, because the story's real question is what the disciples will understand (verse 52).",
+      "grammar": "Ephagon pantes kai echortasthēsan, ‘they all ate and were filled’: chortazō means to be fed to satisfaction, and the Septuagint uses it of Israel filled with manna and quail (Psalm 78:29, numbered 77:29 in the Greek, uses a close synonym). Klasmata, ‘broken pieces’, are the fragments left from the breaking. Dōdeka kophinōn plērōmata, ‘fillings of twelve baskets’: kophinos is a particular kind of basket. Pentakischilioi andres, ‘five thousand men’, uses anēr, a male, rather than anthrōpos, a person.",
+      "words": [
+        "G5315",
+        "G3956",
+        "G5526",
+        "G0142",
+        "G2801",
+        "G1427",
+        "G2894",
+        "G4138",
+        "G2486",
+        "G0740",
+        "G4000",
+        "G0435G"
+      ],
+      "parallels": [
+        "Matthew 14:20-21",
+        "Luke 9:17",
+        "John 6:12-13"
+      ],
+      "history": "The kophinos was a stiff wicker basket that the Roman satirist Juvenal twice associates with Jews (Satires 3.14 and 6.542), perhaps because Jewish travelers carried their own food to keep the food laws. At the second feeding Mark uses a different word, spuris, a larger basket (8:8), and Jesus later reminds the disciples of both numbers and both kinds of basket (8:19-20). Matthew adds that the five thousand did not include women and children (14:21). John adds that Jesus told the disciples to gather the pieces so that nothing would be lost (6:12).",
+      "theology": [
+        {
+          "id": "providence",
+          "note": "God feeds his people in the wilderness, and there is more than enough. The twelve baskets, one for each apostle and perhaps for each tribe of Israel, show abundance left over, as in the Elisha story (2 Kings 4:44)."
+        },
+        {
+          "id": "messiah",
+          "note": "Jewish hope pictured the age to come as a great feast (Isaiah 25:6), and some expected the manna to return in the days of the Messiah. Mark shows Jesus feeding Israel in the wilderness as God did through Moses. John reports that the crowd drew the conclusion and wanted to make him king by force (John 6:14-15)."
+        }
+      ],
+      "refs": [
+        "Psalm 78:24-29",
+        "Isaiah 25:6",
+        "Mark 8:19-20",
+        "John 6:14-15",
+        "2 Kings 4:44"
+      ]
+    },
+    {
+      "v": "45-46",
+      "context": "Immediately Jesus compels the disciples to get into the boat and go ahead to Bethsaida while he dismisses the crowd. Then he goes up the mountain to pray. The haste suggests that something about the crowd's mood needed to be stopped, which John states outright.",
+      "grammar": "Ēnagkasen tous mathētas, ‘he compelled the disciples’, is a strong verb, to force or constrain. Proagein eis to peran pros Bēthsaidan, ‘to go ahead to the other side, toward Bethsaida’. Heōs autos apoluei ton ochlon, ‘while he himself dismisses the crowd’, uses the present indicative after heōs, as the thing Jesus is doing while they go. Apotaxamenos autois, ‘having said farewell to them’, and apēlthen eis to oros proseuxasthai, ‘he went off into the mountain to pray’. Mark shows Jesus praying alone three times, each at night: after his first day of healing (1:35), here, and in Gethsemane (14:32-39), each time at a moment of pressure.",
+      "words": [
+        "G2112",
+        "G0315",
+        "G3101",
+        "G1684",
+        "G4143",
+        "G4254",
+        "G4008",
+        "G0966",
+        "G0630G",
+        "G3793",
+        "G0657",
+        "G0565",
+        "G3735",
+        "G4336"
+      ],
+      "parallels": [
+        "Matthew 14:22-23",
+        "John 6:15-17"
+      ],
+      "history": "John explains the urgency: after the feeding the people were about to come and take Jesus by force to make him king, so he withdrew to the mountain alone (6:15). Bethsaida lay near where the Jordan enters the lake from the north, in the territory of Philip the tetrarch, who refounded it as a city named Julias (Josephus, Antiquities 18.28). Its site is disputed between et-Tell, excavated by Rami Arav from 1987, and el-Araj nearer the shore, excavated since 2016 by a team led by Mordechai Aviam and R. Steven Notley. The boat is sent toward Bethsaida but lands at Gennesaret (verse 53); some explain this by the contrary wind (verse 48), others by reading pros Bēthsaidan as ‘facing Bethsaida’. John says they set out for Capernaum (6:17).",
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "After his greatest public miracle, when the crowd would have made him king, Jesus goes alone to pray. The verse shows prayer as the place where Jesus' mission is kept on the Father's course rather than the crowd's."
+        }
+      ],
+      "refs": [
+        "Mark 1:35",
+        "Mark 14:32-39",
+        "John 6:15",
+        "Luke 6:12",
+        "Mark 8:22"
+      ]
+    },
+    {
+      "v": "47-48",
+      "context": "By evening the boat is in the middle of the lake and Jesus is alone on land. He sees the disciples straining at the oars against the wind, and in the last watch of the night he comes to them walking on the sea, and he means to pass by them. The last clause is the puzzle of the story.",
+      "grammar": "Idōn autous basanizomenous en tō elaunein, ‘seeing them tormented in the rowing’: basanizō is the verb the demon used, ‘do not torment me’ (5:7), here for the misery of rowing all night against the wind. Ēn gar ho anemos enantios, ‘for the wind was against them’. Peri tetartēn phulakēn tēs nuktos, ‘about the fourth watch of the night’. Erchetai pros autous peripatōn epi tēs thalassēs, ‘he comes to them walking on the sea’: epi with the genitive means ‘upon’ the surface. Kai ēthelen parelthein autous, ‘and he wanted to pass by them’. Readers have taken this in three ways: that Jesus meant to go on ahead of them to the shore; that he wished to test their faith; or, as John Paul Heil argued in Jesus Walking on the Sea (1981), that parerchomai here carries the sense it has in the Old Testament, where God ‘passes by’ in order to reveal himself.",
+      "words": [
+        "G3798",
+        "G4143",
+        "G3319",
+        "G2281",
+        "G3441",
+        "G1093H",
+        "G1492H",
+        "G0928H",
+        "G1643",
+        "G0417",
+        "G1727",
+        "G5067",
+        "G5438H",
+        "G3571",
+        "G2064",
+        "G4043",
+        "G2309",
+        "G3928"
+      ],
+      "parallels": [
+        "Matthew 14:24-25",
+        "John 6:16-19"
+      ],
+      "history": "The Romans divided the night into four watches; the fourth ran from about 3 to 6 in the morning. Older Jewish reckoning used three watches (Judges 7:19 speaks of the middle watch). The disciples had been rowing most of the night. John says they had rowed about twenty-five or thirty stadia, roughly five or six kilometers (6:19).",
+      "ot": [
+        {
+          "ref": "Job 9:8",
+          "note": "Job says God alone stretches out the heavens and treads on the waves of the sea. The Hebrew is doreikh al-bamotei yam, ‘treading on the back of the sea’, and the Septuagint renders it peripatōn hōs ep' edaphous epi thalassēs, ‘walking on the sea as on dry ground’, with peripateō, Mark's verb. Three verses later Job adds that God passes by him and he does not see him (9:11, where the Hebrew verb is avar, ‘pass by’). In Exodus 33:19-22 the LORD tells Moses that he will make his goodness pass by and will cover him until he has passed by, and in 1 Kings 19:11 the LORD passes by Elijah; the Septuagint uses parerchomai in both places. Read against these texts, Jesus' walking on the sea and wishing to pass by are not a whim but an appearance of God in the language of the Old Testament."
+        }
+      ],
+      "refs": [
+        "Exodus 33:19-22",
+        "1 Kings 19:11",
+        "Psalm 77:19",
+        "Isaiah 43:16"
+      ]
+    },
+    {
+      "v": "49-50",
+      "context": "The disciples see him walking on the sea, think he is a ghost, and cry out in terror. Jesus speaks at once: \"Take courage! It is I. Do not be afraid.\" The words of comfort are also words of revelation.",
+      "grammar": "Edoxan hoti phantasma estin, ‘they thought it was a ghost’: phantasma is an apparition. Anekraxan, ‘they cried out’, and etarachthēsan, ‘they were troubled’, an aorist passive. Pantes gar auton eidon, ‘for they all saw him’, rules out one man's imagination. Jesus' reply has three parts: tharseite, a present imperative, ‘take courage’; egō eimi, ‘I am’; mē phobeisthe, ‘stop being afraid’. Egō eimi can simply mean ‘It is I’, a way of identifying oneself, which is how most translations render it. But it is also the form in which Israel's God names himself in the Greek of Exodus 3:14 and Isaiah, and walking on the sea is something the Old Testament attributes to God alone, so many interpreters hear both senses at once.",
+      "words": [
+        "G1492H",
+        "G2281",
+        "G4043",
+        "G1380",
+        "G5326",
+        "G0349",
+        "G3956",
+        "G5015",
+        "G2980",
+        "G2293",
+        "G1473",
+        "G1510",
+        "G5399"
+      ],
+      "parallels": [
+        "Matthew 14:26-27",
+        "John 6:19-20"
+      ],
+      "ot": [
+        {
+          "ref": "Isaiah 43:10",
+          "note": "In Isaiah 43 the LORD tells Israel not to fear, promises to be with them when they pass through the waters (43:1-2), and says they are his witnesses so that they may know and believe and understand that ‘I am he’ (Hebrew ani hu; the Septuagint has egō eimi). The Greek of 43:10 joins egō eimi to the verb suniēmi, ‘understand’, which Mark will use in verse 52 when he says the disciples did not understand. Isaiah 43:16 also speaks of the LORD who makes a way in the sea and a path through the mighty waters. Mark's ‘Take courage, I am, do not fear’ gathers these elements: the command not to fear, God's presence in the waters, and his self-naming."
+        }
+      ],
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "Jesus does what Scripture says God alone does, walking on the waves, and names himself with words God uses of himself. Mark does not explain; he shows, and leaves the disciples and the reader to reckon with who this is."
+        }
+      ],
+      "refs": [
+        "Exodus 3:14",
+        "Isaiah 43:1-2",
+        "John 8:58",
+        "Mark 14:62",
+        "Isaiah 41:10"
+      ]
+    },
+    {
+      "v": "51-52",
+      "context": "Jesus climbs into the boat, the wind stops, and the disciples are utterly astonished, because they had not understood about the loaves: their hearts were hardened. Mark ends the scene not with worship but with a diagnosis of the disciples, the harshest yet.",
+      "grammar": "Lian ek perissou en heautois existanto, literally ‘exceedingly, beyond measure, within themselves they were astonished’, piles up intensifiers. The gar clause gives the reason: ou gar sunēkan epi tois artois, ‘for they had not understood about the loaves’. Suniēmi is the verb of Isaiah 6:9 in 4:12, ‘never understanding’, now applied to the insiders. All' ēn autōn hē kardia pepōrōmenē, ‘but their heart was hardened’, is a periphrastic pluperfect built on a perfect passive participle, describing a settled condition. Pōroō and its noun were used of the Pharisees' hardness in 3:5. The logic is that the feeding should have shown them who Jesus is; had they understood it, his mastery of the sea would not have astonished them.",
+      "words": [
+        "G0305",
+        "G4143",
+        "G2869",
+        "G0417",
+        "G3029",
+        "G4053",
+        "G1438",
+        "G1839",
+        "G4920",
+        "G0740",
+        "G2588",
+        "G4456"
+      ],
+      "parallels": [
+        "Matthew 14:32-33",
+        "John 6:21"
+      ],
+      "text": "The ending is one of the sharpest differences among the Gospels. In Matthew, Peter first walks on the water toward Jesus and begins to sink (14:28-31), and when they climb into the boat the disciples worship Jesus and say, ‘Truly you are the Son of God’ (14:33). In John the boat reaches the shore immediately (6:21). Mark alone ends with incomprehension and hardened hearts.",
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Mark is candid that even the disciples, who have seen the feeding with their own eyes, can have hardened hearts. Faith is not the automatic result of seeing miracles; it requires understanding who Jesus is, which Mark presents as a gift the disciples have not yet fully received (8:17-21)."
+        },
+        {
+          "id": "revelation",
+          "note": "The loaves were a revelation, and the disciples missed it. The verse shows that revelation must be understood as well as witnessed, and that the problem lies in the heart, not in the evidence."
+        }
+      ],
+      "refs": [
+        "Mark 8:17-21",
+        "Mark 3:5",
+        "Mark 4:12",
+        "Isaiah 6:9-10",
+        "Matthew 14:33"
+      ]
+    },
+    {
+      "v": "53-54",
+      "context": "They cross over and land at Gennesaret, on the western shore, and moor the boat. As soon as they step out, the people recognize Jesus. The storm and the revelation on the lake give way to a scene of ordinary need.",
+      "grammar": "Diaperasantes epi tēn gēn, ‘having crossed over to the land’. Prosōrmisthēsan, ‘they moored’, is a nautical term, found only here in the New Testament, for bringing a ship to anchor. Exelthontōn autōn ek tou ploiou, ‘as they came out of the boat’, is a genitive absolute, and euthus epignontes auton, ‘at once recognizing him’, uses epiginōskō, to recognize or know fully. The crowd knows his face; the disciples, in verse 52, did not understand who he is.",
+      "words": [
+        "G1276",
+        "G1093H",
+        "G1082",
+        "G4358",
+        "G1831",
+        "G4143",
+        "G2112",
+        "G1921"
+      ],
+      "parallels": [
+        "Matthew 14:34-35",
+        "John 6:22-25"
+      ],
+      "history": "Gennesaret was the fertile plain on the lake's northwest shore, between Magdala and Capernaum, which gave the lake one of its names (Luke 5:1, ‘the lake of Gennesaret’). Josephus praises it as a place where the soil and climate allow walnuts, palms, figs, olives, and grapes to grow together, and fruit to be harvested nearly all year (Jewish War 3.516-521). The modern Kibbutz Ginosar, where the first-century boat was found in 1986, preserves the name.",
+      "refs": [
+        "Luke 5:1",
+        "Mark 1:32-34",
+        "Mark 3:7-10"
+      ]
+    },
+    {
+      "v": "55-56",
+      "context": "The people run through the whole region, carrying the sick on mats to wherever they hear Jesus is. In villages, towns, and farms they lay the sick in the marketplaces and beg to touch even the fringe of his cloak, and all who touch him are made well. The chapter that began with unbelief in Nazareth ends with a whole region reaching out to him.",
+      "grammar": "Periedramon holēn tēn chōran ekeinēn, ‘they ran around that whole region’, and ērxanto ... peripherein, ‘they began to carry about’. Krabattoi, ‘mats’, is the word for the paralyzed man's pallet (2:4). The imperfects of verse 56, eiseporeueto, ‘he would enter’, etithesan, ‘they would lay’, parekaloun, ‘they would beg’, describe a repeated pattern, with an, ‘wherever’, marking it as general. Kan tou kraspedou tou himatiou autou hapsōntai, ‘that they might touch even the fringe of his cloak’, echoes the woman's hope in 5:28. Hosoi an hēpsanto auton esōzonto, ‘as many as touched him were being made well’, uses sōzō again, the word for saving and healing.",
+      "words": [
+        "G4063",
+        "G3650",
+        "G5561",
+        "G0757",
+        "G2895",
+        "G2560",
+        "G4064",
+        "G1531",
+        "G2968",
+        "G4172",
+        "G0068G",
+        "G0058",
+        "G5087",
+        "G0770H",
+        "G3870",
+        "G2899",
+        "G2440",
+        "G0681",
+        "G4982"
+      ],
+      "parallels": [
+        "Matthew 14:35-36"
+      ],
+      "history": "The kraspedon was the tassel that the law told Israelite men to wear on the four corners of the outer garment, with a blue cord, to remember the commandments (Numbers 15:38-40, Deuteronomy 22:12). The marketplace, agora, was the open square of a town or village, the most public place in it, where the sick could be laid where Jesus would pass.",
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "The chapter ends with sōzō, the word for healing and saving, used of everyone who touched Jesus. The woman's lone, secret touch in 5:27-28 has become the hope of a whole region, and the verse shows Jesus' saving power as generous and freely received."
+        }
+      ],
+      "refs": [
+        "Mark 5:27-28",
+        "Numbers 15:38-40",
+        "Mark 3:10",
+        "Acts 5:15"
+      ]
+    }
+  ]
+}

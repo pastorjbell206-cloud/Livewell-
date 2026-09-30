@@ -1,0 +1,503 @@
+{
+  "verses": [
+    {
+      "v": "1-2",
+      "context": "Mark sets a clock running: two days to Passover. The last public day in the temple (11:27 to 13:37) is over, and the opposition that began in 3:6 now takes the form of a plan. The leaders want Jesus dead but fear the pilgrim crowds, so they rule out the festival itself. The irony, which Mark lets the reader see, is that events will overrule them: he dies at the feast after all.",
+      "grammar": "Ezētoun (\"were looking\") is an imperfect, a continuing search rather than a single decision, and en dolō, ‘by deceit’ or ‘by stealth’, names the method. Verse 2 opens with elegon gar, ‘for they were saying’: the gar explains why stealth was needed. Mē en tē heortē can mean ‘not during the feast’ (a time) or, as Joachim Jeremias argued, ‘not in the festival crowd’ (a place), since heortē could stand for the gathered festival assembly. The second reading removes the apparent contradiction with what follows, because the arrest in the end happens at night, away from the crowd.",
+      "words": ["G2212", "G1388", "G1859", "G2351"],
+      "history": "Pascha is the Greek form of the Aramaic name for Passover (Hebrew pesach). Passover proper was the evening of 14 to 15 Nisan (March or April), and the seven-day Feast of Unleavened Bread followed it (Leviticus 23:5-6), so that by the first century the two names were used for the whole festival; Josephus can speak of the feast of unleavened bread ‘which we call Passover’ (Antiquities 14.21). The fear of a thorubos, an uproar, was well founded. Josephus records a riot at Passover under the governor Cumanus (about AD 48 to 52) in which a soldier's obscene gesture set off panic and, by his count, thousands died (Jewish War 2.224-227; Antiquities 20.105-112).",
+      "parallels": ["Matthew 26:1-5", "Luke 22:1-2", "John 11:47-53"],
+      "refs": ["Mark 3:6", "Mark 11:18", "Mark 12:12", "Exodus 12:1-14"]
+    },
+    {
+      "v": "3",
+      "context": "The scene moves to Bethany, where Jesus has been lodging (11:11). Between the plot and Judas's offer Mark places an unnamed woman who anoints Jesus' head. The placement is deliberate: extravagant devotion is framed on both sides by calculated hostility.",
+      "grammar": "Two genitive absolutes open the verse (ontos autou, ‘while he was’, and katakeimenou autou, ‘while he was reclining’), a typical Markan way of setting a scene before the main verb, ēlthen gunē, ‘a woman came’. The perfume is described in a heap of genitives: muron nardou pistikēs polutelous, ‘ointment of nard, pistikēs, very costly’. Pistikos is rare and its meaning is debated. Most take it from pistos, ‘faithful’, so ‘genuine’ or ‘unadulterated’ (hence \"pure nard\"); others connect it with the pistachio or with a place name. Suntripsasa, ‘having shattered’, says she broke the jar, so the whole contents went out at once.",
+      "words": ["G2621", "G3464", "G3487", "G4101", "G4185", "G4937"],
+      "history": "Nard came from a plant of the Himalayan region (Nardostachys jatamansi) and reached the Mediterranean through India. Pliny the Elder treats it among the most prized aromatics and discusses its prices and adulteration (Natural History 12.42-43). Anointing a head recalls the anointing of kings (1 Samuel 10:1, 2 Kings 9:6), though a woman at a dinner could also pour perfume as simple hospitality and honor (Psalm 23:5).",
+      "parallels": ["Matthew 26:6-13", "John 12:1-8", "Luke 7:36-50"],
+      "text": "The four Gospels tell of a woman anointing Jesus, and they differ. Matthew follows Mark closely. John sets the event six days before Passover rather than two, names the woman as Mary of Bethany, has her anoint Jesus' feet and wipe them with her hair, and names Judas as the objector. Luke tells of a sinful woman in the house of Simon the Pharisee, in Galilee and much earlier, who weeps on Jesus' feet. Most scholars think Luke's story is a separate event, while Mark, Matthew, and John describe the same one with different details; Augustine, in his Harmony of the Gospels, already weighed whether the same woman acted on two occasions.",
+      "refs": ["Mark 11:11", "1 Samuel 10:1", "Psalm 23:5"]
+    },
+    {
+      "v": "4-5",
+      "context": "Some present object that the perfume could have been sold for the poor. Mark leaves the objectors vague (\"some of those present\"); Matthew says the disciples, John says Judas. The complaint sounds pious, and in Jewish piety at Passover it was: almsgiving to the poor was a festival duty. That is what makes Jesus' answer striking.",
+      "grammar": "Apōleia means ‘destruction’ or ‘loss’, the same word used elsewhere for perdition (Matthew 7:13, Philippians 1:28). To the objectors the perfume has been ‘ruined’. The verb enebrimōnto, \"they scolded\", is a strong one; it describes snorting with anger, and Mark used it of Jesus' stern charge to the healed leper (1:43). The imperfect pictures a continuing rebuke.",
+      "words": ["G0023", "G0684", "G1220", "G1690"],
+      "history": "Three hundred denarii was roughly a year's wages for a day laborer, since a denarius was the standard day's pay (Matthew 20:2). The giving of alms to the poor on Passover evening is later reflected in the Mishnah's rule that even the poorest Israelite must be given enough for four cups of wine at the meal (m. Pesachim 10:1).",
+      "refs": ["Matthew 20:2", "John 12:4-6", "Mark 1:43"]
+    },
+    {
+      "v": "6-7",
+      "context": "Jesus defends the woman. Her act is a ‘beautiful work’, and it fits a moment that will not come again. He is not setting devotion against care for the poor; he assumes his followers will keep caring for them.",
+      "grammar": "Kalon ergon is a ‘good’ or ‘beautiful work’, and in Jewish usage ‘good works’ could mean acts of loving kindness beyond what the law required, such as burying the dead. Jesus places her act in that category. Verse 7 contrasts pantote (\"always\") twice with the emphatic eme de ou pantote, ‘but me not always’. The phrase \"whenever you want\" (hotan thelēte) puts responsibility on the hearers: the opportunity to help the poor never runs out, so the duty never does.",
+      "words": ["G2570G", "G2041", "G3842", "G4434"],
+      "ot": [
+        {
+          "ref": "Deuteronomy 15:11",
+          "note": "The saying echoes Deuteronomy 15:11, where the Hebrew reads ki lo-yechdal evyon miqqerev haarets, ‘for the poor will never cease from the land’, and the Septuagint has ou gar mē eklipē endeēs apo tēs gēs. In Deuteronomy the sentence is not resignation but the ground of a command: therefore open your hand to your brother. Jesus' words assume that context. Using the saying to excuse indifference to the poor reverses its meaning in both places."
+        }
+      ],
+      "refs": ["Deuteronomy 15:7-11", "Galatians 2:10", "John 12:8"]
+    },
+    {
+      "v": "8-9",
+      "context": "Jesus interprets the act as an anointing for burial, done in advance. This is the only anointing his body receives: the women who come with spices on Sunday (16:1) find the tomb empty. He then promises that her deed will be told wherever the gospel goes, which is fulfilled in the telling itself, though her name is not given.",
+      "grammar": "Ho eschen epoiēsen is terse, literally ‘what she had, she did’, meaning she did what was in her power. Proelaben murisai is an idiom: the verb means ‘to take beforehand’, so ‘she anticipated anointing’, that is, she anointed ahead of time. Entaphiasmos is the preparation of a body for burial (John 12:7 and 19:40 use the related word). In verse 9 the future passive lalēthēsetai, ‘will be spoken’, and eis mnēmosunon autēs, ‘for a memorial of her’, use the word the Septuagint uses for things kept before God as a memorial (Exodus 12:14, of Passover itself).",
+      "words": ["G4301", "G3462", "G1780", "G2098", "G3422"],
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "Messiah means ‘anointed one’, and this is the only time in Mark that Jesus is anointed. He himself connects the anointing to his burial, so his messiahship is marked, from the start of the passion, as one that goes through death."
+        },
+        {
+          "id": "mission",
+          "note": "Jesus speaks of the gospel preached ‘in the whole world’ on the eve of his death, as he did in 13:10. The mission to the nations is not an afterthought to the cross but part of what he expects it to set in motion."
+        }
+      ],
+      "refs": ["Mark 16:1", "Mark 13:10", "John 19:39-40"]
+    },
+    {
+      "v": "10-11",
+      "context": "Judas goes to the chief priests. Mark places his offer right after the woman's gift and gives no motive except the promise of money, which comes from the priests, not from Judas's asking. The priests' problem in verse 1 (how to seize him quietly) is now solved by an insider.",
+      "grammar": "\"One of the Twelve\" (ho heis tōn dōdeka) has the article in the best manuscripts, ‘the one of the Twelve’, which sharpens the horror. Paradoi, from paradidōmi, ‘to hand over’, is the key verb of the passion: John the Baptist was handed over (1:14), Jesus predicted that he would be handed over (9:31, 10:33), and now Judas seeks eukairōs, ‘a good opportunity’, to do it. The priests echarēsan, ‘rejoiced’, and ‘promised’ money; Mark does not name a sum.",
+      "words": ["G2469", "G1427", "G3860", "G5463", "G0694", "G2122"],
+      "history": "The meaning of Iscariot is uncertain. The most common explanation is Hebrew ish Qeriyyot, ‘man of Kerioth’, a town in southern Judea (Joshua 15:25), which would make Judas the only Judean among the Galilean Twelve; John calls his father Simon Iscariot (John 6:71). Others have linked the name to the Latin sicarius, ‘dagger man’, a term for violent rebels in the 50s and 60s, but that usage is later than Jesus' day. Matthew adds the thirty pieces of silver (Matthew 26:15, echoing Zechariah 11:12), and John calls Judas a thief (John 12:6).",
+      "parallels": ["Matthew 26:14-16", "Luke 22:3-6"],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Mark offers no explanation that excuses Judas, and no demon (Luke 22:3 says Satan entered him). Betrayal comes from within the circle closest to Jesus, which is why every disciple will ask ‘Is it I?’ in verse 19."
+        }
+      ],
+      "refs": ["Mark 3:19", "Mark 9:31", "Zechariah 11:12"]
+    },
+    {
+      "v": "12",
+      "context": "The day of preparation begins. The disciples take for granted that Jesus will keep the Passover and ask where. Mark's time note identifies the meal that follows as a Passover meal, which is where the Synoptic Gospels and John's Gospel appear to differ.",
+      "grammar": "Tē prōtē hēmera tōn azumōn, ‘on the first day of unleavened bread’, is followed by an explanatory clause, hote to pascha ethuon, ‘when they used to sacrifice the Passover’. The imperfect ethuon describes customary practice, and pascha here means the lamb, as in Exodus 12:21. Strictly the lambs were killed on the afternoon of 14 Nisan and the Feast of Unleavened Bread began that evening, but because all leaven was cleared away on the 14th (m. Pesachim 1:1 describes the search for leaven by lamplight on the night beginning the 14th), Jews could loosely call the 14th the first day of unleavened bread.",
+      "words": ["G4413G", "G0106", "G3957", "G2380", "G2090"],
+      "history": "The Synoptic Gospels present the Last Supper as a Passover meal on the evening beginning 15 Nisan, with the crucifixion the next afternoon. John places the trial on the morning before the Jewish leaders had eaten the Passover (John 18:28) and the crucifixion on ‘the day of Preparation of the Passover’ (John 19:14), when the lambs were killed. Proposals include Annie Jaubert's thesis (La date de la Cène, 1957) that Jesus followed the priestly solar calendar known from Jubilees and Qumran and ate the meal on Tuesday evening; the argument that John's ‘Passover’ in 18:28 means the festival's other sacrificial meals; and the view that one tradition has shaped the date for theological reasons. Joachim Jeremias (The Eucharistic Words of Jesus) set out the case that the meal had Passover features; others, noting John and the Babylonian Talmud's tradition that Jesus was executed on the eve of Passover (b. Sanhedrin 43a), think the meal came a day before. Paul, independently, calls Christ ‘our Passover lamb’ (1 Corinthians 5:7).",
+      "parallels": ["Matthew 26:17", "Luke 22:7-9", "John 13:1"],
+      "refs": ["Exodus 12:6-8", "John 18:28", "John 19:14", "1 Corinthians 5:7"]
+    },
+    {
+      "v": "13-16",
+      "context": "Jesus sends two disciples with instructions that play out exactly as he said, just as the finding of the colt did in 11:1-6. The repetition shows Jesus in control of the events that lead to his death; he is not trapped but arranging.",
+      "grammar": "The verbs are vivid presents (apostellei, ‘he sends’; legei, ‘he says’), a Markan habit. The man is carrying a keramion hudatos, an earthenware jar of water. Kataluma, \"guest room\", is the word Luke uses for the lodging that had no room at Jesus' birth (Luke 2:7). The room is anagaion mega estrōmenon hetoimon, ‘a large upstairs room, spread (with couches) and ready’: the perfect participle estrōmenon suggests couches or carpets already laid for reclining. Verse 16 closes with the formula heuron kathōs eipen, ‘they found it just as he had told them’.",
+      "words": ["G2765", "G2646", "G0508", "G4766", "G2147"],
+      "history": "Pilgrims had to eat the Passover within Jerusalem, and householders were expected to make rooms available; the city could not have held the crowds otherwise. Carrying water was usually women's work, so a man with a jar would be easy to spot, though men without wives or servants also carried water. Whether the arrangement had been made in advance or Mark means it as foreknowledge, he does not say. The later tradition that the house was that of Mary, John Mark's mother (Acts 12:12), is a guess, not a report.",
+      "parallels": ["Matthew 26:18-19", "Luke 22:8-13"],
+      "refs": ["Mark 11:1-6", "Luke 2:7", "Acts 1:13"]
+    },
+    {
+      "v": "17-18",
+      "context": "Evening falls and the meal begins. Jesus' first recorded words at the table announce betrayal by someone sharing it. Sharing bread made a bond of loyalty, which is what makes the betrayal so grave.",
+      "grammar": "Anakeimenōn autōn kai esthiontōn, ‘as they reclined and ate’, is another genitive absolute; reclining (anakeimai) was the posture of a festive meal, and the Mishnah requires even the poorest to recline at Passover (m. Pesachim 10:1). The phrase ho esthiōn met' emou, ‘the one eating with me’, is placed at the end of Jesus' sentence for weight.",
+      "words": ["G3798", "G0345", "G2068", "G3860"],
+      "ot": [
+        {
+          "ref": "Psalm 41:9",
+          "note": "‘The one eating with me’ echoes Psalm 41:9 (41:10 in Hebrew), where a sick man complains that even his close friend, ‘who ate my bread’ (okhel lachmi), has lifted his heel against him. The Septuagint reads ho esthiōn artous mou. Mark alludes without citing; John quotes the psalm outright at this point (John 13:18). The psalm is a righteous sufferer's lament that ends in trust, one of several such psalms (22, 69) that shape the passion narrative."
+        }
+      ],
+      "parallels": ["Matthew 26:20-21", "Luke 22:14", "Luke 22:21", "John 13:21"],
+      "refs": ["Psalm 55:12-14", "John 13:18"]
+    },
+    {
+      "v": "19-21",
+      "context": "The Twelve respond not with accusations but with grief and self-doubt, one by one. Jesus does not name the betrayer. He says instead that the Son of Man goes as Scripture says, while pronouncing woe on the one who betrays him. Divine purpose and human guilt stand side by side without either cancelling the other.",
+      "grammar": "Mēti egō expects the answer no: ‘Surely not I?’ Yet the question is asked, which shows each man cannot be sure of himself. Heis kata heis (\"one after another\") is colloquial Greek. In verse 21 men and de balance two clauses: the Son of Man goes (hupagei, present tense, already on his way) kathōs gegraptai, ‘as it stands written’, but woe to that man through whom he is handed over. Kalon autō ei ouk egennēthē is literally ‘good for him if he had not been born’, a Semitic way of saying ‘better’.",
+      "words": ["G3076", "G3385", "G5165", "G5217", "G1125", "G3759"],
+      "history": "A similar formula appears in 1 Enoch, a Jewish apocalyptic book composed in stages before and around the time of Jesus, which says of sinners that it would have been better for them not to have been born (1 Enoch 38:2). At a Passover meal the ‘bowl’ could be the dish of sauce into which bread and bitter herbs were dipped (m. Pesachim 10:3 mentions the dipping).",
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The Son of Man goes ‘as it is written’, and still the betrayer is fully responsible. The verse holds God's purpose and human freedom together as Acts 2:23 will: Jesus was handed over by God's set plan and killed by lawless hands."
+        }
+      ],
+      "parallels": ["Matthew 26:22-25", "Luke 22:21-23", "John 13:22-30"],
+      "refs": ["Acts 2:23", "Isaiah 53:6", "Matthew 26:24"]
+    },
+    {
+      "v": "22",
+      "context": "In the middle of the meal Jesus takes bread and gives it a new meaning. The actions (took, blessed, broke, gave) are those of the feeding miracles (6:41, 8:6), so the meal gathers up what those feedings pointed to. His word over the bread interprets the death he has predicted.",
+      "grammar": "The four verbs follow a Jewish host's pattern: labōn (‘having taken’), eulogēsas (‘having blessed’, that is, having said the blessing to God over the bread), eklasen (‘he broke’), edōken (‘he gave’). The blessing is addressed to God, not to the bread. Touto estin to sōma mou: ‘this is my body’. Touto is neuter, while artos (‘bread’) is masculine, so ‘this’ most naturally refers to the whole action or the thing given, not only the word ‘bread’. Aramaic would need no verb ‘is’ here, which is why the dispute over estin (‘is’, ‘represents’, ‘signifies’) cannot be settled from grammar alone. At the Marburg Colloquy in 1529, Martin Luther held to the plain ‘is’ and Huldrych Zwingli read it as ‘signifies’, and the Reformation divided over the point.",
+      "words": ["G2983", "G0740", "G2127", "G2806", "G4983"],
+      "theology": [
+        {
+          "id": "sacraments",
+          "note": "The words of institution in Mark are the shortest of the four accounts and lack Paul's and Luke's command, ‘Do this in remembrance of me’. Churches read ‘this is my body’ as real change, real presence, spiritual presence, or memorial sign; all agree that Jesus gives himself to his followers in the act and that the church repeats it at his word."
+        }
+      ],
+      "parallels": ["Matthew 26:26", "Luke 22:19", "1 Corinthians 11:23-24"],
+      "refs": ["Mark 6:41", "Mark 8:6", "Luke 24:30-31", "1 Corinthians 10:16-17"]
+    },
+    {
+      "v": "23-24",
+      "context": "Jesus takes the cup, and all drink before he explains it. His word over the cup is the richest statement in Mark of what his death means: it is covenant blood, poured out, for many.",
+      "grammar": "Eucharistēsas, \"gave thanks\", the root of ‘Eucharist’, alternates with eulogēsas in verse 22 with no difference in meaning. \"My blood of the covenant\" (to haima mou tēs diathēkēs) places mou awkwardly between ‘blood’ and ‘of the covenant’, as if Jesus has inserted himself into the old formula. To ekchunnomenon, ‘being poured out’, is a present passive participle; the present is vivid, the pouring treated as already under way. Huper pollōn, ‘on behalf of many’, uses huper, the preposition of representation and benefit. In Semitic idiom ‘the many’ is not a limit set against ‘all’ but an inclusive term for the great number, as in Isaiah 53:11-12; Jeremias argued this at length.",
+      "words": ["G4221", "G2168", "G0129G", "G1242", "G1632", "G5228", "G4183"],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "Poured-out blood is sacrificial language (Leviticus 4:7), and ‘for many’ recalls the servant who ‘bore the sin of many’ (Isaiah 53:12). The verse joins the ransom saying of 10:45 with the covenant: Jesus' death is the sacrifice by which a people is bound to God and its sin borne."
+        },
+        {
+          "id": "covenant",
+          "note": "Jesus presents his coming death as a covenant-making act. Matthew adds ‘for the forgiveness of sins’, and Luke and Paul say ‘the new covenant in my blood’, making explicit what Mark's echo of Sinai implies."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Exodus 24:8",
+          "note": "At Sinai Moses sprinkled the people with sacrificial blood and said, in Hebrew, hinneh dam-habberit, ‘behold the blood of the covenant’, and in the Septuagint idou to haima tēs diathēkēs. Mark's to haima mou tēs diathēkēs reproduces the phrase with ‘my’ added: the blood that seals this covenant is Jesus' own. Hebrews 9:20 quotes Exodus 24:8 in a form close to the Supper words, and Zechariah 9:11 had already spoken of ‘the blood of your covenant’ as the ground of release for prisoners."
+        },
+        {
+          "ref": "Jeremiah 31:31-34",
+          "note": "Jeremiah promised a berit chadashah, ‘new covenant’ (Septuagint 38:31, diathēkē kainē), in which God would write his law on hearts and ‘remember their sin no more’. Mark's text does not say ‘new’, but Luke 22:20 and 1 Corinthians 11:25 do, and Mark 14:25 speaks of drinking the cup kainon, ‘new’, in the kingdom. The cup word stands where Sinai and Jeremiah's promise meet."
+        },
+        {
+          "ref": "Isaiah 53:12",
+          "note": "The Hebrew says the servant ‘poured out his soul to death’ (heerah lammavet nafsho) and ‘bore the sin of many’ (chet-rabbim nasa). Both the pouring out and ‘the many’ appear in Jesus' cup saying, and the ransom ‘for many’ of Mark 10:45 draws on the same passage."
+        }
+      ],
+      "text": "Some manuscripts, including Codex Alexandrinus and the later Byzantine text followed by the King James Version, read ‘my blood of the new covenant’, probably assimilated from Luke and Paul; the earliest witnesses, including Sinaiticus and Vaticanus, lack ‘new’. The Byzantine text also has peri (‘concerning’) for huper, with no real change of sense.",
+      "parallels": ["Matthew 26:27-28", "Luke 22:17", "Luke 22:20", "1 Corinthians 11:25"],
+      "refs": ["Mark 10:45", "Hebrews 9:18-22", "Zechariah 9:11", "Leviticus 17:11"]
+    },
+    {
+      "v": "25",
+      "context": "Jesus ends the table words with a vow and a promise. He will not drink wine again until the kingdom of God comes in fullness. The Supper looks backward to the exodus and forward to the feast of the age to come.",
+      "grammar": "Ouketi ou mē piō stacks negatives, ‘no longer, certainly not, shall I drink’; ou mē with the aorist subjunctive is the strongest way Greek denies a future possibility. \"The fruit of the vine\" (tou genēmatos tēs ampelou) is the phrase of the Jewish blessing over wine, ‘who creates the fruit of the vine’ (m. Berakhot 6:1). Kainon, \"anew\", describes the quality of the wine and the drinking, new in kind rather than simply again.",
+      "words": ["G6013", "G0288", "G2537", "G0932"],
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "Even on the night of betrayal Jesus speaks with certainty of ‘that day’ in the kingdom of God. The Lord's Supper therefore carries a forward look, which Paul states as proclaiming the Lord's death ‘until he comes’ (1 Corinthians 11:26)."
+        },
+        {
+          "id": "hope",
+          "note": "The promise draws on the prophets' picture of a banquet of rich food and aged wine for all peoples on God's mountain, when death is swallowed up (Isaiah 25:6-8). The meal before his death is a pledge of the meal after it."
+        }
+      ],
+      "parallels": ["Matthew 26:29", "Luke 22:16-18"],
+      "refs": ["Isaiah 25:6-8", "1 Corinthians 11:26", "Revelation 19:9"]
+    },
+    {
+      "v": "26",
+      "context": "The meal ends with singing, and the group goes out to the Mount of Olives, east of the city across the Kidron valley. The same mountain was the setting of Jesus' teaching on the end in chapter 13 and of Zechariah's picture of the LORD standing there on the day of the LORD (Zechariah 14:4).",
+      "grammar": "Humnēsantes is an aorist participle, ‘having sung a hymn’ or ‘having sung the Hallel’. The verb can mean singing psalms, and there is no need to think of a new composition.",
+      "words": ["G5214", "G3735", "G1638"],
+      "history": "The Mishnah prescribes the Hallel psalms (Psalms 113 to 118) at the Passover meal, divided in two, with the second part sung over the final cup (m. Pesachim 10:6-7). If Mark's hymn is the second half, Jesus went out to Gethsemane having sung Psalm 118, with its lines about the rejected stone and \"Blessed is he who comes in the name of the LORD\" (118:26), words the crowd shouted at his entry (Mark 11:9).",
+      "parallels": ["Matthew 26:30", "Luke 22:39", "John 18:1"],
+      "refs": ["Psalm 118:22-26", "Zechariah 14:4", "Mark 13:3"]
+    },
+    {
+      "v": "27",
+      "context": "On the way Jesus predicts that all the disciples will fall away, and he grounds the prediction in Scripture. Their failure will not take him by surprise; it is written into what he is about to undergo.",
+      "grammar": "Skandalisthēsesthe is a future passive of skandalizō, ‘to cause to stumble’, used in Mark for falling away under pressure (4:17, the seed on rocky ground). Pantes, ‘all’, comes first for emphasis. The quotation begins with pataxō, a first person singular future, ‘I will strike’: God is the one who strikes.",
+      "words": ["G4624", "G3960", "G4166", "G4263", "G1287"],
+      "ot": [
+        {
+          "ref": "Zechariah 13:7",
+          "note": "The Hebrew is an imperative addressed to a sword: ‘Awake, O sword, against my shepherd... strike (hak) the shepherd, and the sheep will be scattered.’ The Septuagint manuscripts vary: Vaticanus has the plural ‘strike the shepherds’, while Alexandrinus is closer to Mark. Mark's pataxō, ‘I will strike’, turns the command into a first person statement by God, making explicit that behind the human agents stands God's own purpose. In Zechariah the striking of the shepherd leads to refining and then to a restored people who call on God's name (13:8-9). The Damascus Document from Qumran also applies this verse to the last days (CD-B 19:7-9)."
+        }
+      ],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "‘I will strike’ puts the cross within God's own action. The New Testament will say God did not spare his own Son but delivered him up for us all (Romans 8:32); the striking of the shepherd is for the sake of the flock."
+        }
+      ],
+      "parallels": ["Matthew 26:31", "John 16:32"],
+      "refs": ["Zechariah 13:7-9", "Mark 4:17", "John 10:11"]
+    },
+    {
+      "v": "28",
+      "context": "In the same breath as the prediction of desertion, Jesus promises reunion. The shepherd who is struck will rise and go ahead of the scattered sheep. The young man at the tomb repeats this promise in 16:7, adding ‘and Peter’.",
+      "grammar": "Meta to egerthēnai me, ‘after my being raised’, uses an aorist passive infinitive of egeirō; Mark regularly speaks of Jesus ‘being raised’, with God as the implied agent. Proaxō, ‘I will go before’, is a shepherd's word, the leading of a flock, which fits the image of verse 27.",
+      "words": ["G1453", "G4254", "G1056G"],
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "Jesus predicts his resurrection before his arrest and makes it the ground of restoring those who will fail him. Resurrection in Mark is not only vindication of Jesus but the reconstitution of his scattered flock."
+        }
+      ],
+      "refs": ["Mark 16:7", "Matthew 28:16-20", "John 21:15-17"]
+    },
+    {
+      "v": "29-31",
+      "context": "Peter protests that he, at least, will not fall. Jesus answers with the most specific prediction in the Gospel: tonight, before the rooster crows twice, three denials. Peter doubles down, and all the others say the same. The scene sets up verses 66 to 72.",
+      "grammar": "Ei kai pantes... all' ouk egō, ‘even if all... yet not I’, sets Peter apart from the others, the very thing verse 27 said no one could claim. Jesus' reply begins with an emphatic su, ‘you’, and piles up time words: sēmeron tautē tē nukti, ‘today, this night’ (the Jewish day began at sunset, so the night belongs to ‘today’). Aparnēsē is future middle of aparneomai, ‘to disown’, the verb Jesus used in 8:34 for denying oneself. Verse 31's ekperissōs, ‘excessively’, and the imperfect elalei, ‘he kept saying’, show Peter's insistence; ou mē se aparnēsomai is the strongest negation available.",
+      "words": ["G4624", "G1364", "G0220", "G5151", "G0533", "G4880"],
+      "text": "Only Mark has ‘twice’. Some manuscripts, among them Codex Sinaiticus, lack ‘twice’ here and in verse 72, and several also lack the first cockcrow of verse 68,, which brings Mark into line with Matthew, Luke, and John. Most editors think the longer text is original and that the omissions harmonize. The difference in the Gospels is not a contradiction: Mark gives the detail of two crowings, the others the single decisive one.",
+      "parallels": ["Matthew 26:33-35", "Luke 22:31-34", "John 13:36-38"],
+      "refs": ["Mark 8:34", "Mark 14:66-72", "Luke 22:31-32"]
+    },
+    {
+      "v": "32-34",
+      "context": "At Gethsemane Jesus leaves most of the disciples and takes the three who saw his glory on the mountain (9:2) and heard his teaching about the end (13:3). Now they will see his anguish. He tells them the weight of it plainly and asks them to stay awake.",
+      "grammar": "Mark uses two strong infinitives: ekthambeisthai, ‘to be utterly dismayed’ (a word Mark alone uses in the New Testament, also at 9:15 and 16:5-6), and adēmonein, ‘to be in anguish’, a word for distress so great one cannot settle. Perilupos, ‘very sorrowful’, is intensified with heōs thanatou, ‘to the point of death’, which may mean sorrow so great it could kill, or sorrow that longs for death. Grēgoreite, ‘keep watch’, is the command that closed the teaching on the end (13:35, 37).",
+      "words": ["G1068", "G1568", "G0085", "G4036", "G5590I", "G1127"],
+      "history": "Gethsemani transliterates an Aramaic or Hebrew phrase meaning ‘oil press’ (gat shemanim), a place where olives were crushed. John calls it a garden across the Kidron (John 18:1) and says Jesus often met there with his disciples (18:2), which is how Judas knew where to find him. The traditional site at the foot of the Mount of Olives, beside the Church of All Nations, still has ancient olive trees.",
+      "ot": [
+        {
+          "ref": "Psalm 42:5",
+          "note": "Perilupos estin hē psuchē mou echoes the refrain of Psalms 42 and 43 in the Septuagint, hina ti perilupos ei, psuchē, ‘why are you very sorrowful, my soul?’ (Psalm 41:6, 12 and 42:5 in the Greek numbering), where the Hebrew is mah-tishtochachi nafshi, ‘why are you cast down, my soul?’ The psalmist, far from the temple and taunted by enemies, speaks to his own soul and ends with hope in God. ‘To death’ recalls Jonah 4:9, where the Septuagint has Jonah say he is grieved heōs thanatou."
+        }
+      ],
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "The church appealed to Gethsemane against any view in which Christ's humanity was only apparent. Jesus has a human soul (psuchē) that is ‘consumed with sorrow’, and the Council of Chalcedon (451) and later the Third Council of Constantinople (681), which affirmed a human will in Christ, drew on this scene."
+        }
+      ],
+      "parallels": ["Matthew 26:36-38", "Luke 22:39-40", "John 18:1-2"],
+      "refs": ["Mark 9:2", "Hebrews 5:7-8", "Psalm 43:5"]
+    },
+    {
+      "v": "35-36",
+      "context": "Jesus prays first in Mark's narrative summary (verse 35) and then in his own words (verse 36). He asks that the hour pass and the cup be taken away, and in the same prayer submits to the Father's will. Nothing in the Gospels shows more clearly both the cost of the cross to Jesus and his freedom in accepting it.",
+      "grammar": "Epipten and prosēucheto are imperfects: he kept falling to the ground and praying, a repeated or drawn-out action. Hina... parelthē... hē hōra, ‘that the hour might pass’, uses hōra for the appointed time of suffering, as in verse 41. Abba ho patēr gives the Aramaic word with its Greek equivalent, as Paul does in Romans 8:15 and Galatians 4:6, which suggests the phrase was remembered in the early church's prayer. The request parenegke, an aorist imperative, is direct: ‘take away this cup’. Then all' ou ti egō thelō alla ti su, ‘but not what I will, but what you will’, sets two wills side by side.",
+      "words": ["G4098", "G4336", "G5610", "G0005", "G3962", "G4221", "G2309"],
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "The prayer joins complete trust (Abba, all things are possible for you), honest request (take this cup), and surrender (not what I will). It gives the church permission to ask God plainly for what it wants while submitting to what he wills."
+        },
+        {
+          "id": "atonement",
+          "note": "In the prophets the cup is the cup of God's wrath poured out on the nations and on Jerusalem (Isaiah 51:17, Jeremiah 25:15). Jesus' dread is not only of pain but of drinking that cup, the judgment he takes in his people's place."
+        },
+        {
+          "id": "trinity",
+          "note": "The Son addresses the Father as another, and yields his will to the Father's. The church confessed from this text that the Son is distinct from the Father and fully shares our humanity, including a human will, while one in being with the Father."
+        }
+      ],
+      "text": "Luke's account adds an angel strengthening Jesus and sweat like drops of blood (Luke 22:43-44), verses missing from several early witnesses, including P75 and Vaticanus; Mark has neither. Matthew softens Mark's ‘all things are possible for you’ to ‘if it is possible’ (Matthew 26:39).",
+      "parallels": ["Matthew 26:39", "Luke 22:41-44"],
+      "refs": ["Romans 8:15", "Galatians 4:6", "Isaiah 51:17", "Hebrews 5:7", "John 12:27"]
+    },
+    {
+      "v": "37-38",
+      "context": "Jesus returns and finds the three asleep. He addresses Peter by his old name, Simon, the name he bore before the call. The rebuke turns into instruction: watch and pray, because good intentions are not enough.",
+      "grammar": "Simōn, katheudeis? ‘Simon, are you sleeping?’ The use of Simon, not Peter, may hint that he is not living up to the name Jesus gave him (3:16). The next question uses a singular verb, ouk ischusas, ‘were you not strong enough’, but the command in verse 38 is plural. Peirasmos can mean a test or a temptation; here it names the trial of loyalty that is about to break over them. To men pneuma prothumon, hē de sarx asthenēs, ‘the spirit is eager, but the flesh is weak’: men and de balance two true statements about one person.",
+      "words": ["G2518", "G2480", "G1127", "G3986G", "G4151G", "G4289", "G4561", "G0772G"],
+      "theology": [
+        {
+          "id": "sanctification",
+          "note": "The contrast of willing spirit and weak flesh does not excuse failure; it explains why prayer is necessary. Readiness of heart does not carry a person through trial without dependence on God, which is what Jesus himself models in the same scene."
+        }
+      ],
+      "parallels": ["Matthew 26:40-41", "Luke 22:45-46"],
+      "refs": ["Mark 3:16", "Matthew 6:13", "Galatians 5:17", "Mark 13:33-37"]
+    },
+    {
+      "v": "39-40",
+      "context": "Jesus prays a second time with the same words, and again finds them asleep. Their inability to answer echoes Peter's confusion on the mountain, when he did not know what to say (9:6).",
+      "grammar": "Ton auton logon eipōn, ‘saying the same word’: repetition is not presented as vain repetition but as persistence. Katabarunomenoi is a present passive participle, ‘being weighed down’, of heavy eyelids. Ouk ēdeisan ti apokrithōsin autō, ‘they did not know what to answer him’, uses the same construction as 9:6.",
+      "words": ["G3056", "G3788", "G6046", "G1492I"],
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "Jesus prays the same prayer twice, then a third time (Matthew 26:44). Returning to the same request in anguish is part of faithful prayer, as Paul's threefold plea in 2 Corinthians 12:8 also shows."
+        }
+      ],
+      "parallels": ["Matthew 26:42-43"],
+      "refs": ["Mark 9:6", "2 Corinthians 12:8", "Luke 18:1"]
+    },
+    {
+      "v": "41-42",
+      "context": "The third return ends the waiting. The hour has come, and Jesus rises to meet it. The three sessions of prayer and sleep correspond to the three denials to come: the disciples fail three times, and so will Peter.",
+      "grammar": "Katheudete to loipon kai anapauesthe may be a question (‘Are you still sleeping and resting?’) or an ironic command (‘Sleep on now and take your rest’); Greek punctuation cannot decide. Apechei is one of the hardest words in Mark. Its common meanings are ‘it is enough’ (hence the BSB), ‘it is far off’, and, in commercial papyri, ‘he has received payment’, which some scholars apply to Judas and his money. Paradidotai, a present passive, ‘is being handed over’, and eis tas cheiras tōn hamartōlōn, ‘into the hands of sinners’, echo the passion predictions (9:31). Egeiresthe agōmen, ‘rise, let us go’, is not flight but advance.",
+      "words": ["G2518", "G0373", "G0568", "G5610", "G3860", "G0268", "G0071", "G1448"],
+      "text": "Codex Bezae and some other witnesses add to telos after apechei, reading ‘the end has come’ or ‘the end is at hand’. The addition probably tries to clarify an obscure word; most editors keep the shorter text.",
+      "parallels": ["Matthew 26:45-46", "John 14:31", "John 18:4"],
+      "refs": ["Mark 9:31", "Mark 10:33", "John 12:23"]
+    },
+    {
+      "v": "43-45",
+      "context": "Judas arrives while Jesus is still speaking. Mark calls him again ‘one of the Twelve’ and lists the three groups of the council who sent the crowd, the same three Jesus named in his first passion prediction (8:31). The signal is a kiss, the greeting of a disciple for a teacher.",
+      "grammar": "Euthus eti autou lalountos, ‘immediately, while he was still speaking’, joins the arrest tightly to Jesus' words. Sussēmon, ‘a prearranged sign’, and the pluperfect dedōkei, ‘had given’, show planning. Judas's instruction ends with asphalōs, ‘securely’, a surprising concern that has prompted speculation about whether he feared escape. Verse 44 uses philēsō, ‘I will kiss’, but verse 45 uses the compound katephilēsen, which can mean to kiss warmly or repeatedly; many commentators think the change is deliberate.",
+      "words": ["G3162", "G3586", "G4953", "G5368", "G0806", "G4461", "G2705"],
+      "history": "Disciples greeted their teachers with a kiss, as later rabbinic texts attest, and Paul's letters speak of greeting fellow believers with a holy kiss (Romans 16:16). ‘Rabbi’, literally ‘my great one’, was a respectful address for a teacher, not yet the formal title it became after AD 70. Scripture's memory of a treacherous kiss is Joab's, who took Amasa by the beard to kiss him and stabbed him (2 Samuel 20:9-10).",
+      "parallels": ["Matthew 26:47-50", "Luke 22:47-48", "John 18:2-9"],
+      "refs": ["Mark 8:31", "2 Samuel 20:9-10", "Proverbs 27:6"]
+    },
+    {
+      "v": "46-47",
+      "context": "The arrest happens in a sentence. One bystander draws a sword and cuts off the ear of the high priest's slave. Mark leaves the swordsman unnamed and Jesus does not respond to him; the act changes nothing.",
+      "grammar": "Epebalon tas cheiras autō, ‘they laid hands on him’, is a standard phrase for arrest. Heis de tis tōn parestēkotōn, ‘a certain one of the bystanders’, is vague, perhaps deliberately. Mark uses the diminutive ōtarion, but diminutives in Koine often lost their force, and the BSB's \"ear\" is right.",
+      "words": ["G1911", "G2902", "G3936", "G4685", "G3162", "G6090"],
+      "history": "John names the swordsman as Peter and the slave as Malchus and says it was the right ear (John 18:10); Luke adds that Jesus healed it (Luke 22:51); Matthew adds Jesus' saying that those who take the sword will perish by it (Matthew 26:52). Mutilation could disqualify a man from priestly functions (Leviticus 21:17-23); Josephus reports that Antigonus cut off the ears of his uncle Hyrcanus so that he could never again be high priest (Antiquities 14.366). Some have wondered whether the blow was aimed at the high priest's standing, but a slave was not a priest, and the text suggests only a clumsy strike.",
+      "parallels": ["Matthew 26:50-54", "Luke 22:49-51", "John 18:10-11"],
+      "refs": ["John 18:10", "Luke 22:51", "Matthew 26:52"]
+    },
+    {
+      "v": "48-50",
+      "context": "Jesus speaks only to protest the manner of the arrest and to name its meaning: it fulfills the Scriptures. Then everyone flees, fulfilling verse 27 at once. The disciples who left everything to follow him (10:28) now leave him.",
+      "grammar": "Hōs epi lēstēn, ‘as against a bandit’: lēstēs is the word Josephus uses for violent insurgents and brigands, not simply a thief, and it is the word for the men crucified beside Jesus (15:27). Hina plērōthōsin hai graphai is elliptical, ‘but (this has happened) so that the Scriptures may be fulfilled’. In verse 50 aphentes, ‘having left’, is the verb used when the first disciples left their nets to follow him (1:18).",
+      "words": ["G3027", "G2411", "G4137", "G1124", "G0863G", "G5343"],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "Jesus appeals to ‘the Scriptures’ in general, not a single verse, as the key to what is happening. The whole shape of Israel's Scriptures, the rejected righteous one, the struck shepherd, the servant ‘numbered with the transgressors’ (Isaiah 53:12, quoted at this point in Luke 22:37), is the lens through which the arrest is to be understood."
+        }
+      ],
+      "parallels": ["Matthew 26:55-56", "Luke 22:52-53", "John 18:19-21"],
+      "refs": ["Mark 1:18", "Mark 10:28", "Isaiah 53:12", "Mark 15:27"]
+    },
+    {
+      "v": "51-52",
+      "context": "Only Mark tells of a young man who followed, was seized, and fled naked, leaving his linen garment behind. The episode caps the desertion: even the last follower flees, and flees in shame.",
+      "grammar": "Neaniskos tis, ‘a certain young man’, is anonymous. Peribeblēmenos sindona epi gumnou, ‘wrapped in a linen cloth over his naked body’, uses sindōn, the same word as the linen in which Joseph wraps Jesus' body (15:46), and neaniskos is the word for the young man in white at the tomb (16:5). Mark's repetition of words invites comparison: the fleeing young man leaves his linen behind in shame; Jesus is wrapped in linen in death; a young man clothed in white announces the resurrection.",
+      "words": ["G3495", "G4870", "G4616", "G1131", "G5343"],
+      "history": "Who the young man was is unknown. A suggestion popular since at least the nineteenth century is that he was Mark himself, signing the account as an eyewitness; others see an echo of Amos 2:16, where on the day of judgment even the bravest warriors flee naked. The text gives no name. Linen was relatively costly, which may suggest a person of some means.",
+      "refs": ["Amos 2:16", "Mark 15:46", "Mark 16:5", "Genesis 39:12"]
+    },
+    {
+      "v": "53-54",
+      "context": "Jesus is taken to the high priest, and the council gathers. Peter follows, but ‘at a distance’, and sits among the high priest's officers, warming himself. Mark here opens his last sandwich: Peter outside (54), Jesus inside (55 to 65), Peter outside (66 to 72).",
+      "grammar": "Apo makrothen, ‘from a distance’, is the same phrase used of the women at the cross (15:40): both follow, but from afar. Sugkathēmenos meta tōn hupēretōn, ‘sitting together with the attendants’, places Peter among the very men who will strike Jesus (verse 65). Thermainomenos pros to phōs is literally ‘warming himself at the light’: phōs, ‘light’, is an unusual word for a fire and may prepare for his being recognized in its glow.",
+      "words": ["G0520", "G3113", "G0833", "G4775", "G5257", "G2328", "G5457"],
+      "history": "Mark does not name the high priest; Matthew and John name Caiaphas. Josephus says Joseph called Caiaphas was appointed by the prefect Valerius Gratus (Antiquities 18.35) and removed by the Syrian legate Vitellius in about AD 36 or 37 (Antiquities 18.95), a very long tenure that implies good relations with Pilate. In 1990 a family tomb in south Jerusalem yielded an ornate ossuary inscribed with the name Joseph son of Caiaphas, which many scholars identify as his. John reports a preliminary hearing before Annas, Caiaphas's father-in-law and a former high priest (John 18:13).",
+      "parallels": ["Matthew 26:57-58", "Luke 22:54-55", "John 18:12-18"],
+      "refs": ["Mark 15:40", "John 18:13-14", "John 11:49-50"]
+    },
+    {
+      "v": "55-56",
+      "context": "The council looks for testimony to justify a death sentence and cannot find any that holds together. Mark presents the outcome as decided before the evidence: they were ‘seeking testimony... to put Him to death’.",
+      "grammar": "Ezētoun and ouch hēuriskon are imperfects, a continuing and unsuccessful search. Eis to thanatōsai auton, ‘in order to put him to death’, states the purpose of the search. In verse 56 isai hai marturiai ouk ēsan is literally ‘the testimonies were not equal’, that is, they did not agree; isos is the word for equality or consistency.",
+      "words": ["G4892", "G3141", "G2289", "G5576", "G2470"],
+      "history": "The Law required two or three agreeing witnesses for a capital case (Deuteronomy 17:6, 19:15). The Mishnah's tractate Sanhedrin, compiled around AD 200, rules that if witnesses contradict each other on details their evidence is void (m. Sanhedrin 5:2). It also requires capital cases to be tried by day, allows a verdict of guilt only on the day after the trial, and so forbids such trials on the eve of a Sabbath or festival (m. Sanhedrin 4:1). Measured against these rules, Mark's night hearing breaks several. Herbert Danby (Journal of Theological Studies, 1919) and later Raymond Brown (The Death of the Messiah, 1994) argued that the Mishnah's code reflects rabbinic ideals from after AD 70, not the practice of a Sadducean priestly council in the 30s, so it cannot simply be used to test the Gospels; others, including many older harmonizers and some Jewish scholars, think at least some of the rules were older and see the trial as irregular or a travesty. Mark's point does not depend on either answer: even by the court's own standard, the evidence failed.",
+      "parallels": ["Matthew 26:59-60", "Luke 22:66", "John 18:19-24"],
+      "refs": ["Deuteronomy 17:6", "Deuteronomy 19:15-19", "Psalm 27:12", "Psalm 35:11"]
+    },
+    {
+      "v": "57-59",
+      "context": "Some witnesses finally quote Jesus about the temple, but even they cannot agree. The saying, destroy this temple and build another in three days, will return as mockery at the cross (15:29), and Mark treats it as false in the form given but true in a way the witnesses cannot see.",
+      "grammar": "The contrast is between cheiropoiēton, ‘made with hands’, and acheiropoiēton, ‘not made with hands’. In the Septuagint cheiropoiētos is a word for idols (Leviticus 26:1, Isaiah 46:6), so to call the temple ‘handmade’ sounds like an accusation that it had become an idol. Dia triōn hēmerōn, ‘within three days’, uses dia with the genitive for time within which something happens, echoing the passion predictions (8:31).",
+      "words": ["G5576", "G2647", "G3485", "G5499", "G0886", "G3618", "G2470"],
+      "history": "Mark never records Jesus saying these words, though he predicted the temple's destruction (13:2). John gives a version at the temple cleansing, ‘Destroy this temple, and I will raise it again in three days’, and explains that he spoke of his body (John 2:19-21). Acts 6:14 has the same charge brought against Stephen. A threat against the temple was a serious charge in Jerusalem: Josephus tells of a later prophet, Jesus son of Ananias, who cried woes against the temple from about AD 62 and was beaten by the Jewish authorities and handed to the Roman governor (Jewish War 6.300-309).",
+      "theology": [
+        {
+          "id": "temple",
+          "note": "The false witnesses speak more truth than they know. Jesus' death and resurrection bring the old temple's role to an end and raise a new one ‘not made with hands’: his risen body and the community gathered in him (John 2:21, 1 Corinthians 3:16, Hebrews 9:11)."
+        }
+      ],
+      "parallels": ["Matthew 26:60-61", "John 2:19-21"],
+      "refs": ["Mark 13:2", "Mark 15:29", "Acts 6:13-14", "Acts 7:48", "Hebrews 9:11"]
+    },
+    {
+      "v": "60-61",
+      "context": "The high priest stands and demands an answer, but Jesus is silent, as he will be before Pilate (15:5). Then comes the question on which the trial turns: is he the Christ, the Son of the Blessed One? It is the Gospel's first line (1:1) put as an accusation.",
+      "grammar": "Esiōpa is an imperfect, ‘he kept silent’, and it is reinforced by ouk apekrinato ouden, a double negative, ‘he answered nothing at all’. The question begins with an emphatic su, ‘You, are you the Christ?’ Ho eulogētos, ‘the Blessed One’, is a reverent substitute for God's name, of the kind Jewish speech used to avoid saying it; Mark is the only Gospel to use it here (Matthew has ‘the Son of God’).",
+      "words": ["G4623", "G0611", "G5547", "G2128"],
+      "ot": [
+        {
+          "ref": "Isaiah 53:7",
+          "note": "The servant of Isaiah 53 was oppressed and ‘did not open his mouth’, like a sheep before its shearers (Hebrew velo yiftach piv; Septuagint ouk anoigei to stoma). Mark does not quote the verse, but the silence before the high priest and before Pilate matches it, and early Christians read it this way (Acts 8:32-35, 1 Peter 2:23)."
+        }
+      ],
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "The high priest joins ‘Christ’ and ‘Son of the Blessed’, the two titles of Mark 1:1. Messiah and Son of God were not identical in Jewish expectation, but Psalm 2:7 and 2 Samuel 7:14 had called David's heir God's son, so the high priest's pairing is intelligible."
+        }
+      ],
+      "parallels": ["Matthew 26:62-63", "Luke 22:67", "John 18:19-21"],
+      "refs": ["Mark 1:1", "Mark 15:5", "Psalm 2:7", "1 Peter 2:23"]
+    },
+    {
+      "v": "62",
+      "context": "Jesus breaks his silence with the clearest self-disclosure in Mark. He accepts the title and then redefines it: the one on trial is the Son of Man who will be seen enthroned beside God and coming with the clouds. The judge is told that he is himself under judgment.",
+      "grammar": "Egō eimi, \"I am\", is a direct affirmative, unlike the answers in Matthew (‘You have said so’) and Luke (‘You say that I am’). The phrase is the ordinary Greek for ‘I am he’, but Mark has used it before in the mouth of Jesus walking on the sea (6:50), where it echoes God's self-naming, and readers have heard both senses here. Opsesthe, ‘you will see’, is plural and future: the judges themselves will see. Kathēmenon, ‘sitting’, and erchomenon, ‘coming’, are present participles describing the figure they will see. Ek dexiōn tēs dunameōs, ‘at the right hand of the Power’, uses ‘the Power’ as another reverent name for God, one later found in rabbinic texts as ha-Gevurah.",
+      "words": ["G1473", "G1510", "G3700G", "G1188", "G2521", "G1411", "G2064", "G3507"],
+      "ot": [
+        {
+          "ref": "Psalm 110:1",
+          "note": "‘The LORD says to my Lord: Sit at my right hand until I make your enemies a footstool for your feet.’ The Hebrew is shev limini; the Septuagint (Psalm 109:1) kathou ek dexiōn mou. Jesus had already puzzled the scribes with this verse (Mark 12:35-37). Here ‘sitting at the right hand’ claims the place of shared rule beside God that the psalm gives to David's Lord. It became the Old Testament verse most often quoted or echoed in the New (Acts 2:34-35, Hebrews 1:13)."
+        },
+        {
+          "ref": "Daniel 7:13",
+          "note": "In Daniel's vision, after the beasts are judged, ‘one like a son of man’ comes ‘with the clouds of heaven’ (Aramaic im-ananei shemayya) to the Ancient of Days and receives everlasting dominion. The Old Greek translation has ‘on the clouds’ (epi tōn nephelōn), while the version associated with Theodotion has ‘with the clouds’ (meta tōn nephelōn), the wording Mark uses. Interpreters differ on direction: in Daniel the figure comes to God to be enthroned, and many (N. T. Wright among them) read Jesus' words as vindication and enthronement, while others take them of his return to earth in judgment (as Mark 13:26 is usually read). Either way, Jesus claims the role of the one who receives God's kingdom."
+        }
+      ],
+      "text": "A small group of manuscripts, including Codex Koridethi (Θ), reads ‘You have said that I am’, a form that brings Mark closer to Matthew and Luke. Nearly all editors accept the plain ‘I am’ as Mark's text.",
+      "theology": [
+        {
+          "id": "exaltation",
+          "note": "Jesus combines Psalm 110 and Daniel 7 to describe his vindication after rejection. The one about to be condemned claims God's right hand, which is where the apostles proclaim him after the resurrection (Acts 2:33-36, 7:56)."
+        }
+      ],
+      "parallels": ["Matthew 26:64", "Luke 22:67-70"],
+      "refs": ["Mark 12:35-37", "Mark 13:26", "Acts 7:56", "Revelation 1:7"]
+    },
+    {
+      "v": "63-64",
+      "context": "The high priest tears his garments and calls the answer blasphemy, and the council condemns Jesus as deserving death. The verdict rests not on the witnesses, who failed, but on Jesus' own confession.",
+      "grammar": "Diarrēxas tous chitōnas, ‘tearing his tunics’, uses the plural, which may reflect the undergarments worn by people of rank. \"What is your verdict?\" renders ti humin phainetai, literally ‘how does it appear to you?’, a formula for calling a vote. Katekrinan... enochon einai thanatou, ‘they condemned him to be liable to death’: enochos is a legal term for being subject to a penalty. Pantes, ‘all’, is Mark's emphasis, though Luke says Joseph of Arimathea had not agreed (Luke 23:50-51).",
+      "words": ["G1284", "G5509", "G0988", "G2632", "G1777", "G2288"],
+      "history": "The Mishnah rules that judges who hear blasphemy must stand and tear their garments, and not mend them (m. Sanhedrin 7:5). The same passage defines blasphemy narrowly as pronouncing the divine name, which Jesus did not do. Leviticus 21:10 forbids the high priest to tear his garments, though that law concerns mourning. Why Jesus' words counted as blasphemy is debated: Darrell Bock (Blasphemy and Exaltation in Judaism and the Final Examination of Jesus, 1998) argued that claiming to sit at God's right hand and to come as judge was a blasphemous claim to share God's honor, and Adela Yarbro Collins has argued similarly that the claim to divine status was the offense; others think the charge was a pretext. Under Leviticus 24:16 the penalty was stoning, but the council would hand Jesus to Rome instead.",
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "Jesus is condemned for telling the truth about himself. The Gospel's secret is now public, and it is exactly this confession that sends him to the cross."
+        }
+      ],
+      "parallels": ["Matthew 26:65-66", "Luke 22:71", "John 19:7"],
+      "refs": ["Leviticus 24:16", "Leviticus 21:10", "John 10:33", "Luke 23:50-51"]
+    },
+    {
+      "v": "65",
+      "context": "Some council members and then the officers abuse Jesus, mocking him as a prophet. The irony is exact: at that very moment, in the courtyard below, his prophecy about Peter is coming true.",
+      "grammar": "Ērxanto, ‘they began’, governs a series of present infinitives: emptuein (‘to spit on’), perikaluptein (‘to cover’ his face), kolaphizein (‘to strike with fists’), and legein (‘to say’). Prophēteuson, an aorist imperative, is the taunt: ‘Prophesy.’ Luke and Matthew add ‘Who is it that struck you?’ which explains the blindfold. Rhapismasin elabon, literally ‘they received him with blows’, is colloquial.",
+      "words": ["G1716", "G4028", "G2852", "G4395", "G5257", "G4475"],
+      "ot": [
+        {
+          "ref": "Isaiah 50:6",
+          "note": "The servant of Isaiah 50 says, ‘I offered my back to those who strike and my cheeks to those who tear out my beard; I did not hide my face from scorn and spittle.’ The Septuagint uses rhapismata, ‘blows’, and emptusmatōn, ‘spitting’, words close to Mark's. The servant is the obedient disciple who trusts God to vindicate him (50:7-9). Jesus predicted the spitting in 10:34."
+        }
+      ],
+      "parallels": ["Matthew 26:67-68", "Luke 22:63-65"],
+      "refs": ["Mark 10:34", "Isaiah 50:6-9", "1 Peter 2:23"]
+    },
+    {
+      "v": "66-68",
+      "context": "The first denial. A servant girl, the lowest-ranking accuser possible, recognizes Peter. He answers with evasion and moves away to the entrance. Peter, who swore he would die with Jesus, cannot stand up to a slave girl's question.",
+      "grammar": "Emblepsasa, ‘looking intently at’, is the verb of a searching look. She calls Jesus tou Nazarēnou, ‘the Nazarene’, which may carry scorn. Peter's reply, oute oida oute epistamai su ti legeis, ‘I neither know nor understand what you are saying’, uses two verbs of knowing to feign bafflement, a common form of legal denial. Ērnēsato, ‘he denied’, is the simple verb arneomai. Proaulion is the forecourt or gateway, so Peter moves toward the exit.",
+      "words": ["G3814", "G1689", "G3479", "G0720", "G1987", "G4259", "G0220"],
+      "text": "‘And the rooster crowed’ at the end of verse 68 is missing in Sinaiticus, Vaticanus, and some other witnesses, and present in many others, including Codex Alexandrinus and Bezae. If it is original, it is the first of the two crowings Jesus predicted (verse 30). Most modern editions print it, though Westcott and Hort omitted it.",
+      "parallels": ["Matthew 26:69-70", "Luke 22:56-57", "John 18:15-17"],
+      "refs": ["Mark 14:29-31", "Mark 8:38"]
+    },
+    {
+      "v": "69-70",
+      "context": "The second and third accusations grow in number and pressure: the girl tells the bystanders, and the bystanders confront Peter. His Galilean origin gives him away.",
+      "grammar": "Ērneito, ‘he kept denying’, shifts to the imperfect: the second denial is ongoing, not a single word. Alēthōs ex autōn ei, ‘truly you are one of them’, is followed by the reason kai gar Galilaios ei, ‘for you too are a Galilean’. Matthew explains that his speech betrayed him (Matthew 26:73).",
+      "words": ["G3814", "G3936", "G0720", "G0230", "G1057"],
+      "history": "Galileans spoke Aramaic with a recognizable accent. The Babylonian Talmud preserves stories mocking Galileans for not distinguishing guttural sounds, so that a request to buy something could be misheard as something else (b. Eruvin 53a-b). John adds that one accuser was a relative of the man whose ear had been cut off (John 18:26).",
+      "parallels": ["Matthew 26:71-73", "Luke 22:58-59", "John 18:25-26"],
+      "refs": ["Matthew 26:73", "John 18:26", "Acts 2:7"]
+    },
+    {
+      "v": "71-72",
+      "context": "The third denial is the strongest: Peter calls down curses and swears an oath. The rooster crows a second time, Peter remembers Jesus' words exactly, and he breaks down weeping. Mark ends the scene there. Peter's story does not end, for the angel will name him in 16:7.",
+      "grammar": "Anathematizein means to invoke a curse, and it has no object in Mark's Greek. Most take it as Peter cursing himself if he is lying; some have suggested that he cursed Jesus, which would make the denial even darker, but the text does not say so. Omnunai, ‘to swear an oath’, is what Jesus had warned against. Peter says ouk oida ton anthrōpon touton, ‘I do not know this man’, refusing even to use Jesus' name. The final clause, epibalōn eklaien, is a famous puzzle: epiballō means ‘to throw upon’ or ‘to set to’, and proposals include ‘thinking of it, he wept’, ‘covering his head, he wept’, ‘he broke down and wept’, and ‘he began to weep’. The imperfect eklaien shows continuing weeping.",
+      "words": ["G0332", "G3660", "G6063", "G0363", "G4487", "G1911", "G2799"],
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "Peter's tears are the beginning of repentance, not its end. Mark shows the leading apostle at his worst and does not soften it, and the risen Jesus names him in the message of 16:7. The church has seen in Peter's restoration (John 21:15-19) the proof that grave failure is not beyond grace."
+        },
+        {
+          "id": "perseverance",
+          "note": "Jesus predicted the denial, and also promised to go ahead of the disciples after rising (verse 28). Peter's faith failed in the moment; the Lord's hold on him did not, which is how Luke frames it in Jesus' prayer that Peter's faith would not fail (Luke 22:32)."
+        }
+      ],
+      "parallels": ["Matthew 26:74-75", "Luke 22:60-62", "John 18:27"],
+      "refs": ["Mark 16:7", "Luke 22:32", "Luke 22:61-62", "John 21:15-19", "Matthew 5:34"]
+    }
+  ]
+}

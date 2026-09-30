@@ -1,0 +1,382 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "God answers Moses' complaint (5:22-23) without rebuke. The word ‘now’ turns from what Pharaoh has done to what God will do: Pharaoh will not only let Israel go but drive them out.",
+      "grammar": "Attah tir'eh, ‘now you will see’, answers Moses' ‘why?’ with a promise of sight rather than an explanation. The verse is built as two parallel lines: beyad chazaqah yeshallechem, ‘with a strong hand he will let them go’, and beyad chazaqah yegareshem, ‘with a strong hand he will drive them out’. Garash, ‘drive out’, goes further than shalach, ‘let go’, and is fulfilled when the Egyptians urge Israel to leave in haste (12:33, 39). The Hebrew does not say whose hand: it can be read as God's hand compelling Pharaoh, which the BSB supplies with “My mighty hand”, or as Pharaoh's own forceful hand driving Israel out, which is how some interpreters take it.",
+      "words": [
+        "H6258",
+        "H7200G",
+        "H3027H",
+        "H2389",
+        "H7971G",
+        "H1644G"
+      ],
+      "theology": [
+        {
+          "id": "sovereignty",
+          "note": "The king who refused to let Israel go will end up forcing them out. God's control of the outcome is complete: Pharaoh's will is not overridden but turned, so that his own hand carries out God's purpose."
+        }
+      ],
+      "refs": [
+        "Exodus 3:19-20",
+        "Exodus 11:1",
+        "Exodus 12:31-33",
+        "Exodus 12:39"
+      ]
+    },
+    {
+      "v": "2-3",
+      "context": "God begins again with his name: I am the LORD. He appeared to the patriarchs as El Shaddai, but by his name the LORD he did not make himself known to them. The chapter note's hard question sets out how interpreters relate this to Genesis.",
+      "grammar": "Ani YHWH, ‘I am the LORD’, is a formula of self-presentation, like a king opening a decree with his name; it frames this speech (vv. 2, 6, 8) and recurs as a signature at the end of laws in Leviticus 18 and 19. Va'era, ‘I appeared’, is the passive (Niphal) of ra'ah, ‘I let myself be seen’; Jewish tradition names the weekly Torah reading that begins here after this word. Be'el shaddai, ‘as God Almighty’, uses the preposition be in a sense grammarians call ‘essence’: ‘in the character of’. Many interpreters take the second clause the same way: ushemi YHWH lo noda'ti lahem, ‘but in the character of my name the LORD I was not made known to them’. Noda'ti is the passive (Niphal) of yada, ‘to know’.",
+      "words": [
+        "H0589",
+        "H3068G",
+        "H7200G",
+        "H0410G",
+        "H7706",
+        "H8034",
+        "H3045"
+      ],
+      "theology": [
+        {
+          "id": "god",
+          "note": "God makes himself known progressively. The patriarchs knew him as the God who promised; Israel will know him as the God who keeps the promise. The verse teaches that knowing God's name means knowing his character through what he does."
+        },
+        {
+          "id": "names-of-god",
+          "note": "El Shaddai was the name tied to promises of offspring and land (Genesis 17:1; 28:3; 35:11). The name YHWH will now be tied to redemption, so that every later use of it recalls the God who brought Israel out of Egypt (20:2)."
+        }
+      ],
+      "refs": [
+        "Genesis 17:1",
+        "Genesis 35:11",
+        "Ezekiel 20:5",
+        "Exodus 20:2"
+      ]
+    },
+    {
+      "v": "4-5",
+      "context": "God recalls the covenant he established with the patriarchs, the promise of the land where they lived as foreigners, and states again that he has heard Israel's groaning and remembered his covenant. Verse 5 repeats the language of 2:24 almost word for word.",
+      "grammar": "Hakimoti et-beriti, ‘I established my covenant’, uses the causative of qum, ‘to stand’, the verb Genesis uses for God setting up his covenants with Noah (Genesis 9:9, 11) and Abraham (Genesis 17:7, 19). Erets megurehem asher-garu vah, ‘the land of their sojournings, in which they sojourned’, repeats the root gur, the root of ger, ‘foreigner’ (2:22); the phrase is taken from Genesis 17:8. In verse 5, vegam ani, ‘and also I myself’, is emphatic. The Egyptians are ma'avidim otam, ‘making them serve’, a causative participle of avad.",
+      "words": [
+        "H6965I",
+        "H1285",
+        "H4033",
+        "H1481A",
+        "H5009",
+        "H5647G",
+        "H2142"
+      ],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "The whole rescue rests on a covenant already made. God does not respond to Israel's suffering with a new idea but with an old commitment, and his remembering it is the reason he acts."
+        }
+      ],
+      "refs": [
+        "Genesis 17:7-8",
+        "Genesis 9:9-11",
+        "Exodus 2:24",
+        "Psalm 105:8-11"
+      ]
+    },
+    {
+      "v": "6",
+      "context": "God gives Moses a message for Israel, opening and closing with his name. Three promises describe the rescue from three angles: bringing out, delivering, and redeeming. The next verses add taking them as his people and bringing them into the land.",
+      "grammar": "Lakhen, ‘therefore’, draws the conclusion from verses 2 to 5: because God has remembered, he will act. The three verbs are consecutive perfects, a Hebrew form that states future actions as certain: vehotseti (‘I will bring out’, a causative of yatsa), vehitsalti (‘I will deliver’, natsal), and vega'alti (‘I will redeem’, ga'al; see the chapter note on the go'el). Mittachat sivlot, ‘from under the burdens’, pictures the people crushed under loads (1:11; 5:4). Bizroa netuyah, ‘with an outstretched arm’, appears here for the first time and becomes a fixed phrase for the exodus in Deuteronomy (4:34; 5:15; 26:8). Shefatim gedolim, ‘great judgments’, anticipates 12:12, where God executes judgments on all the gods of Egypt.",
+      "words": [
+        "H3651C",
+        "H3318H",
+        "H8478G",
+        "H5450",
+        "H5337",
+        "H1350A",
+        "H2220",
+        "H5186",
+        "H8201"
+      ],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "The verse gives the Bible's basic vocabulary of salvation: God brings out from bondage, delivers from a hostile power, and redeems as next of kin at his own cost. The New Testament uses the same language of redemption for what Christ does (Galatians 4:4-5; 1 Peter 1:18-19)."
+        }
+      ],
+      "refs": [
+        "Deuteronomy 26:8",
+        "Exodus 12:12",
+        "Leviticus 25:47-49",
+        "1 Peter 1:18-19",
+        "Galatians 4:4-5"
+      ]
+    },
+    {
+      "v": "7",
+      "context": "The purpose of the rescue is relationship: God will take Israel as his people and be their God, and they will know him as the LORD who brought them out. Freedom from Egypt is for belonging to God.",
+      "grammar": "Velaqachti etkhem li le'am vehayiti lakhem lelohim, ‘I will take you to myself as a people and I will be to you God’, is the covenant formula in its full two-sided form. Laqach, ‘take’, is the verb used for taking a wife (2:1), and the pattern of the sentence resembles marriage language. Vida'tem ki ani YHWH, ‘you will know that I am the LORD’, is the recognition formula that runs through the plague narrative; here it is addressed first to Israel. Hammotsi, ‘the one who brings out’, is a participle used as a title, the identity God claims at the head of the Ten Commandments (20:2).",
+      "words": [
+        "H3947G",
+        "H5971A",
+        "H1961",
+        "H0430G",
+        "H3045",
+        "H3318H"
+      ],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "The formula ‘my people, your God’ returns throughout Scripture (Leviticus 26:12; Jeremiah 31:33; Ezekiel 36:28) and reaches its final form in the vision of the new creation, where God dwells with his people and they are his people (Revelation 21:3)."
+        },
+        {
+          "id": "church",
+          "note": "Paul quotes the formula in its Leviticus form for the church, the temple of the living God (2 Corinthians 6:16). The people God forms by redemption are defined by belonging to him, not by ethnicity or achievement."
+        }
+      ],
+      "refs": [
+        "Leviticus 26:12",
+        "Jeremiah 31:33",
+        "2 Corinthians 6:16",
+        "Revelation 21:3",
+        "Exodus 20:2"
+      ]
+    },
+    {
+      "v": "8",
+      "context": "The final promise is the land, sworn to Abraham, Isaac, and Jacob, now to be given to their descendants as a possession. The speech ends as it began: I am the LORD.",
+      "grammar": "Nasati et-yadi, literally ‘I lifted my hand’, is the gesture of swearing an oath, as Abram lifted his hand to God Most High (Genesis 14:22) and God speaks of lifting his hand in Deuteronomy 32:40 and Ezekiel 20:5-6. The BSB renders the idiom “I swore”. Morashah, ‘possession’, is a rare word for property received as an inheritance; Deuteronomy 33:4 uses it of the law itself as the possession of Jacob's assembly. Vehevet, ‘I will bring’, is the causative of bo, ‘come’, completing the movement from ‘bring out’ (v. 6) to ‘bring in’.",
+      "words": [
+        "H0935P",
+        "H5375P",
+        "H3027S",
+        "H4181",
+        "H0589"
+      ],
+      "theology": [
+        {
+          "id": "hope",
+          "note": "The patriarchs died without receiving the land; the promise passes to their descendants intact. Hebrews reads their waiting as faith that looked for a better country (Hebrews 11:13-16), so the land promise becomes a pattern of hope that reaches past Canaan."
+        }
+      ],
+      "refs": [
+        "Genesis 14:22",
+        "Ezekiel 20:5-6",
+        "Deuteronomy 33:4",
+        "Hebrews 11:13-16"
+      ]
+    },
+    {
+      "v": "9",
+      "context": "Moses delivers the message, but the people do not listen. The same people who believed and worshiped in 4:31 are now too crushed to hear. The verse explains their failure rather than condemning it.",
+      "grammar": "Mikotser ruach, ‘from shortness of spirit’, is literally ‘shortness of breath’: ruach is breath, wind, or spirit. The phrase describes a person worn down to impatience and despair, as in Job 21:4. The BSB's “their broken spirit” captures the sense. Avodah qashah, ‘hard labor’, is the phrase used in 1:14. Velo shame'u, ‘and they did not listen’, repeats the verb of Moses' first fear (4:1), which had seemed answered in 4:31.",
+      "words": [
+        "H8085G",
+        "H7115",
+        "H7307G",
+        "H5656G",
+        "H7186"
+      ],
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "Suffering can make people unable to hear good news. The text does not blame Israel here; it names the reason, and God does not withdraw the promise because they could not receive it. He keeps acting until they can."
+        }
+      ],
+      "refs": [
+        "Exodus 4:31",
+        "Exodus 5:21",
+        "Job 21:4",
+        "Isaiah 42:3"
+      ]
+    },
+    {
+      "v": "10-13",
+      "context": "God sends Moses back to Pharaoh. Moses objects that if Israel would not listen, Pharaoh certainly will not, since he is ‘unskilled in speech’. God does not argue; he gives Moses and Aaron a charge concerning both Israel and Pharaoh.",
+      "grammar": "Moses' objection is an argument from the lesser to the greater, a form later Jewish interpreters called qal vachomer: hen bene-yisra'el lo-shame'u elai, ve'ekh yishma'eni far'oh, ‘look, the Israelites have not listened to me; how then will Pharaoh listen to me?’ He calls himself aral sefatayim, ‘uncircumcised of lips’ (see the chapter note on arel). Verse 13 answers with vaytsavvem, ‘he commanded them’, a Piel of tsavah: the reply to an objection is a charge. The charge runs in two directions, el-bene yisra'el ve'el-par'oh, ‘to the Israelites and to Pharaoh’.",
+      "words": [
+        "H7971H",
+        "H2005",
+        "H0349A",
+        "H6189",
+        "H8193G",
+        "H6680"
+      ],
+      "theology": [
+        {
+          "id": "leadership",
+          "note": "Moses' authority does not rest on his eloquence or on the people's response. God's answer to discouragement is to repeat the commission, which is where a leader's confidence has to be grounded."
+        }
+      ],
+      "refs": [
+        "Exodus 4:10-12",
+        "Exodus 6:30",
+        "2 Corinthians 3:5-6"
+      ]
+    },
+    {
+      "v": "14-16",
+      "context": "The story pauses for a genealogy. It begins with Reuben and Simeon, Jacob's first two sons, then slows at Levi, the family of Moses and Aaron. The list answers the question Moses has just raised about himself by showing where he comes from.",
+      "grammar": "Rashe vet-avotam, ‘the heads of their fathers' houses’, uses bet av, ‘father's house’, the extended family unit under a living head, which is the basic building block of Israel's clans (mishpachot) and tribes. Reuben is called bekhor yisra'el, ‘Israel's firstborn’, a title Genesis 49:3-4 and 1 Chronicles 5:1 show he forfeited. Letoledotam, ‘according to their generations’, uses toledot, the word that structures Genesis (‘these are the generations of’).",
+      "words": [
+        "H7218H",
+        "H1004M",
+        "H4940",
+        "H1060",
+        "H3669G",
+        "H8435"
+      ],
+      "history": "The sons of Reuben match Genesis 46:9 and Numbers 26:5-6. The list of Simeon's sons matches Genesis 46:10, including the note that Shaul was the son of a Canaanite woman; Numbers 26:12-13, a later census, has Nemuel for Jemuel, Zerah for Zohar, and omits Ohad, perhaps because his line did not survive as a separate clan. The list gives lifespans only for Levi, Kohath, and Amram, the three links in the line that leads to Moses and Aaron.",
+      "refs": [
+        "Genesis 46:9-11",
+        "Numbers 26:5-14",
+        "Genesis 49:3-7",
+        "1 Chronicles 5:1"
+      ]
+    },
+    {
+      "v": "17-19",
+      "context": "The three sons of Levi and their sons are listed: Gershon, Kohath, and Merari, the heads of the Levite clans. Kohath's line, the one leading to Moses and Aaron, gets a lifespan.",
+      "history": "The three families listed here became the three divisions of the Levites with separate duties at the tabernacle (Numbers 3 and 4). The Kohathites carried the most holy objects, the ark, table, lampstand, and altars, once the priests had covered them; the Gershonites carried the curtains and coverings; the Merarites carried the frames, bars, posts, and bases. The names Libni, Shimei, Mahli, and Mushi recur as clan names in the Levite lists of Numbers 3 and 1 Chronicles 6.",
+      "theology": [
+        {
+          "id": "temple",
+          "note": "A list of names in Egypt looks forward to the service of God's dwelling in the wilderness. Before the tabernacle is built, the families who will carry and guard it are already named."
+        }
+      ],
+      "refs": [
+        "Numbers 3:17-37",
+        "Numbers 4:1-33",
+        "1 Chronicles 6:16-19"
+      ]
+    },
+    {
+      "v": "20",
+      "context": "Amram, son of Kohath, marries Jochebed, and she bears Aaron and Moses. Aaron is named first, as the older brother (7:7). The parents unnamed in 2:1 are named here.",
+      "grammar": "Dodato, ‘his father's sister’, is the feminine of dod, ‘uncle’, so Jochebed was Amram's aunt, which fits Numbers 26:59, where she is called a daughter of Levi. The chapter note observes that the later law forbids such a marriage (Leviticus 18:12). Jochebed's name, Yokheved, is often explained as ‘the LORD is glory’, beginning with a short form of the divine name. If so, it is the first personal name in the Bible built on YHWH, belonging to the mother of the man to whom the name is revealed.",
+      "words": [
+        "H3947I",
+        "H6019G",
+        "H3115",
+        "H1733",
+        "H0175",
+        "H4872"
+      ],
+      "text": "The Greek translation describes Jochebed as the daughter of Amram's father's brother, making her his cousin rather than his aunt. The standard Hebrew reading, followed by most English versions, is ‘his father's sister’.",
+      "refs": [
+        "Numbers 26:59",
+        "Exodus 2:1-2",
+        "Leviticus 18:12"
+      ]
+    },
+    {
+      "v": "21-22",
+      "context": "The sons of Izhar and Uzziel, Amram's brothers, are listed. These are Moses' and Aaron's first cousins, and two of the names will matter later.",
+      "history": "Korah, son of Izhar, is Moses' first cousin, which helps explain the edge of his later challenge to Moses and Aaron's leadership (Numbers 16:1-3). Elzaphan, son of Uzziel, is named in Numbers 3:30 (as Elizaphan) as the leader of the Kohathite clans, and with Mishael he carried the bodies of Nadab and Abihu out of the camp (Leviticus 10:4). A genealogy that seems like a list of names lays groundwork for stories still to come.",
+      "theology": [
+        {
+          "id": "family",
+          "note": "The same family produces the leaders and their challengers. Scripture does not idealize the household of Levi; it records the rebel alongside the priest, all within one family tree."
+        }
+      ],
+      "refs": [
+        "Numbers 16:1-3",
+        "Numbers 3:30",
+        "Leviticus 10:4"
+      ]
+    },
+    {
+      "v": "23",
+      "context": "Aaron's marriage and four sons are recorded. The wife's family ties Aaron's priestly house to the leading family of Judah, and the four sons will be the first priests after Aaron.",
+      "grammar": "Elisheva, Aaron's wife, has a name usually explained as ‘my God is an oath’ (el, ‘God’, and a noun from the root of shava', ‘to swear’). Its Greek form, Elisabet, is the name of Elizabeth, the wife of the priest Zechariah and herself ‘of the daughters of Aaron’ (Luke 1:5). Her father Amminadab and brother Nahshon belong to Judah: Nahshon is the leader of Judah's tribe in the wilderness (Numbers 1:7; 2:3). Of the four sons, Nadab and Abihu die at the tabernacle's dedication (Leviticus 10:1-2), and Eleazar and Ithamar continue the priesthood.",
+      "words": [
+        "H0472",
+        "H5992G",
+        "H5177",
+        "H5070G",
+        "H0030",
+        "H0499G",
+        "H0385"
+      ],
+      "theology": [
+        {
+          "id": "offices",
+          "note": "Aaron's marriage joins the priestly line to the house of Nahshon, whose descendant David will found Israel's royal line (Ruth 4:20-22; Matthew 1:4-6). The Old Testament keeps the offices of priest and king separate, but the two families are joined here; the New Testament presents Jesus as fulfilling both offices (Hebrews 7:14-17)."
+        }
+      ],
+      "refs": [
+        "Numbers 2:3",
+        "Ruth 4:19-22",
+        "Luke 1:5",
+        "Leviticus 10:1-2"
+      ]
+    },
+    {
+      "v": "24-25",
+      "context": "The list names Korah's sons and then Aaron's grandson Phinehas, son of Eleazar. It closes with a summary: these are the heads of the Levite families.",
+      "grammar": "Mishpechot hakorchi, ‘the clans of the Korahite’, uses a collective singular for the whole clan. Eleazar lakach-lo mibbenot puti'el, ‘took for himself one of the daughters of Putiel’, uses the same verb for marriage as verses 20 and 23. Pinechas (‘Phinehas’) is an Egyptian name, from a word meaning ‘the Nubian’, attested as a personal name in Egypt. Putiel may likewise combine an Egyptian element with the Hebrew el, ‘God’.",
+      "words": [
+        "H0617G",
+        "H0511G",
+        "H0023",
+        "H7145",
+        "H6317",
+        "H6372G"
+      ],
+      "history": "The Korahite line survived Korah's rebellion (Numbers 26:11), and ‘the sons of Korah’ appear in the headings of Psalms 42, 44 to 49, 84, 85, 87, and 88. Phinehas's Egyptian name is one of several in the Levite family, Moses' own name among them, that fit a family living in Egypt. Phinehas later receives a covenant of lasting priesthood for his zeal (Numbers 25:10-13).",
+      "refs": [
+        "Numbers 26:11",
+        "Psalm 42:1",
+        "Numbers 25:10-13",
+        "1 Chronicles 6:1-4"
+      ]
+    },
+    {
+      "v": "26-27",
+      "context": "Two verses of summary point the genealogy's purpose. These are the Aaron and Moses to whom the LORD spoke, and these are the men who spoke to Pharaoh. The reader now knows exactly who they are.",
+      "grammar": "Both verses use an emphatic pronoun: hu aharon umosheh, ‘that is the Aaron and Moses’ (v. 26), and hem hammedabberim... hu moshe ve'aharon, ‘they are the ones who spoke... that is Moses and Aaron’ (v. 27). The order of names reverses between the verses (see the chapter note). Al-tsiv'otam, ‘by their hosts’, uses tsava', a military word for an army in formation. Israel is pictured leaving Egypt not as a mob of runaway slaves but as ordered companies, ‘the hosts of the LORD’ (12:41).",
+      "words": [
+        "H0175",
+        "H4872",
+        "H3318H",
+        "H6635A",
+        "H1696G",
+        "H1992"
+      ],
+      "theology": [
+        {
+          "id": "israel",
+          "note": "The genealogy and the military term together recast Israel's identity. They are not merely an enslaved labor force but ordered families with names and histories, the LORD's hosts, about to march out under his command."
+        }
+      ],
+      "refs": [
+        "Exodus 12:41",
+        "Exodus 12:51",
+        "Numbers 1:3"
+      ]
+    },
+    {
+      "v": "28-30",
+      "context": "The narrative resumes where it paused in verses 10 to 12. God again says ‘I am the LORD’ and commands Moses to tell Pharaoh everything; Moses again objects that he is unskilled in speech. Chapter 7 gives God's answer.",
+      "grammar": "Vayhi beyom dibber, ‘and it was on the day the LORD spoke’, is a resumptive opening that picks up the thread before the genealogy. God's command ends with a participle: et kol-asher ani dover elekha, ‘all that I am speaking to you’, stressing that the words are God's, spoken in the present. Moses' reply repeats verse 12 in reverse order, putting his lips first: hen ani aral sefatayim, ‘look, I am uncircumcised of lips’, ve'ekh yishma elai par'oh, ‘and how will Pharaoh listen to me?’",
+      "words": [
+        "H3117G",
+        "H1696G",
+        "H0589",
+        "H6189",
+        "H8193G",
+        "H0349A"
+      ],
+      "theology": [
+        {
+          "id": "prophecy",
+          "note": "The prophet's task is to say everything God says, no more and no less. The command anticipates the arrangement in 7:1-2, where Moses speaks all that God commands and Aaron carries it to Pharaoh, and it is the standard Jeremiah is held to (Jeremiah 1:7)."
+        }
+      ],
+      "refs": [
+        "Exodus 6:12",
+        "Exodus 7:1-2",
+        "Jeremiah 1:7",
+        "Deuteronomy 18:18"
+      ]
+    }
+  ]
+}

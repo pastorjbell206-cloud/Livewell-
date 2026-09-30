@@ -1,0 +1,283 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "After the long work of building, God speaks again. The command is short: go into the ark with your household. The reason is Noah's standing before God, which repeats in God's own words what the narrator said in 6:9.",
+      "grammar": "Bo, \"Go\", is the ordinary imperative of the verb that means both ‘come’ and ‘go’, depending on where the speaker stands; the King James Version reads ‘Come thou and all thy house into the ark’, which some readers take to picture God as already present in the place of safety. Beitekha, ‘your house’, means household, the family under Noah's care. \"I have found you righteous\" is literally ‘you I have seen righteous before me’ (otekha ra'iti tsaddiq lefanai), with the pronoun placed first for emphasis. God's seeing here answers his seeing of the corrupt earth in 6:12.",
+      "words": [
+        "H0935G",
+        "H1004M",
+        "H7200G",
+        "H6662"
+      ],
+      "text": "The flood account alternates between God (Elohim) and the LORD (YHWH): 6:9-22 speaks of God, while 7:1-5 uses the LORD. Many critical scholars take this, with repetitions such as the two sets of animal instructions, as evidence that two flood accounts were woven together. Others read the alternation as deliberate: the LORD, the covenant name, is used where God acts in personal care, as in commanding Noah into the ark and shutting him in (verse 16).",
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "Noah's whole household is brought in because of his standing before God. Hebrews 11:7 says Noah built the ark for the saving of his household, and the pattern of God's rescue reaching a family through one person recurs throughout Scripture."
+        }
+      ],
+      "refs": [
+        "Genesis 6:9",
+        "Hebrews 11:7",
+        "Ezekiel 14:14",
+        "Acts 16:31"
+      ]
+    },
+    {
+      "v": "2-3",
+      "context": "The animal instructions are now more specific than in 6:19-20: seven of each clean kind, a pair of each unclean kind, and seven of each kind of bird. The extra clean animals will be needed for sacrifice (8:20) and, after the flood, for food (9:3).",
+      "grammar": "Shiv'ah shiv'ah, literally ‘seven seven’, is the Hebrew way of expressing a distributive number; it can mean ‘by sevens’ (seven of each) or ‘seven pairs’, and translations divide. Unusually, the clean and unclean animals are described as ish ve'ishto, ‘a man and his wife’, the words normally used of human beings; in verse 3 the text returns to the ordinary animal terms zakhar uneqevah, ‘male and female’. The purpose clause lechayyot zera, \"to preserve their offspring\", uses zera, ‘seed’, the key word of 3:15: the flood is about keeping seed alive.",
+      "words": [
+        "H2889",
+        "H7651",
+        "H0376G",
+        "H2233H",
+        "H2421"
+      ],
+      "history": "The distinction between clean and unclean animals is given in detail only at Sinai (Leviticus 11, Deuteronomy 14), yet Genesis assumes Noah knows it. Interpreters take this either as evidence that the distinction was older than Moses' law, or as the narrator describing the past in the categories his readers used. Either way, the clean animals point ahead to Noah's burnt offering on leaving the ark.",
+      "refs": [
+        "Genesis 6:19-20",
+        "Genesis 8:20",
+        "Leviticus 11:1-8",
+        "Genesis 9:3"
+      ]
+    },
+    {
+      "v": "4-5",
+      "context": "God gives the timetable: seven more days, then forty days and nights of rain, and the wiping out of every living thing. Noah's response is told in one sentence, repeating 6:22 but now with the name the LORD.",
+      "grammar": "Anokhi mamtir, ‘I am about to send rain’, uses the emphatic pronoun and a Hiphil participle of matar, the same verb as 2:5, where the LORD God ‘had not yet sent rain’. The God who withheld rain until there was a man to work the ground now sends it in judgment. Yequm, \"every living thing\", is a rare word for everything that stands or exists, found only here, in verse 23, and in Deuteronomy 11:6. \"I will wipe\" (umachiti) is machah, the verb God used in 6:7.",
+      "words": [
+        "H4305",
+        "H3351",
+        "H4229A",
+        "H0705",
+        "H6680"
+      ],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "Even at this point God gives seven days' notice. The delay does not change the verdict, but it shows judgment arriving on a stated schedule after warning, which Peter reads as God's patience while the ark was prepared (1 Peter 3:20)."
+        }
+      ],
+      "refs": [
+        "Genesis 2:5",
+        "Genesis 6:7",
+        "Genesis 6:22",
+        "1 Peter 3:20",
+        "Exodus 24:18"
+      ]
+    },
+    {
+      "v": "6-9",
+      "context": "The narrator dates the flood to Noah's six hundredth year and then describes the boarding: Noah's family goes in because of the waters, and the animals come to Noah two by two, as God commanded. The flood is announced here in summary before verse 11 gives its exact date.",
+      "grammar": "\"Was 600 years old\" is literally ‘a son of six hundred years’, the Hebrew idiom for age. \"To escape\" is mippenei, ‘from before the face of’, the waters. \"Two by two\" is shenayim shenayim, the same doubling idiom as ‘seven seven’ in verse 2, meaning ‘in twos’. The verb in verse 9, ba'u, \"came\", has the animals as its subject, as in 6:20: Noah receives the creatures that are brought to him.",
+      "words": [
+        "H1121L",
+        "H3999",
+        "H6440G",
+        "H8147"
+      ],
+      "text": "Readers have long asked how the ‘two by two’ of verse 9 fits the ‘seven pairs’ of clean animals in verse 2. Many critical scholars assign the two instructions to two interwoven sources. Others read 6:19-20 and 7:9 as the general rule (animals came in pairs, male and female) and 7:2-3 as the more detailed instruction for clean animals and birds, so that ‘two by two’ describes the manner of boarding rather than the total number.",
+      "refs": [
+        "Genesis 6:19-20",
+        "Genesis 5:32",
+        "Matthew 24:38-39"
+      ]
+    },
+    {
+      "v": "10-12",
+      "context": "After seven days the flood begins, and the narrator gives the date with the precision of a record: the six hundredth year, the second month, the seventeenth day. Water comes from below and from above at once, and rain falls for forty days and nights.",
+      "grammar": "\"Burst forth\" is nivqe'u, a Niphal of baqa, to split or cleave, the verb used when God splits the sea at the exodus (Exodus 14:21) and the rock in the wilderness (Psalm 78:15). The fountains of \"the great deep\" (tehom rabbah) are the waters beneath, the phrase Isaiah 51:10 uses of the sea God dried up for Israel to cross. \"Were opened\" (niftachu) is also Niphal: both reservoirs are acted upon, not bursting on their own. Verse 12 uses geshem, the ordinary word for heavy rain.",
+      "words": [
+        "H1234",
+        "H4599",
+        "H8415",
+        "H0699",
+        "H1653"
+      ],
+      "history": "Ancient Israel used a calendar of months, but whether the new year was counted from the spring or the autumn changed over time, so the season of ‘the second month’ is uncertain; ancient Jewish interpreters already debated whether the flood began in the autumn or the spring. The dated framework continues in 7:24 and 8:3-5, where five months after this date correspond to 150 days, which suggests months counted as thirty days each.",
+      "theology": [
+        {
+          "id": "creation",
+          "note": "On the second day God separated the waters above from the waters below; on the third he gathered the seas so that dry land appeared. Verse 11 releases both at once. The flood is creation running backward, and it shows that the world's order holds only because God holds it (Psalm 104:9, Jeremiah 5:22)."
+        }
+      ],
+      "refs": [
+        "Genesis 1:6-10",
+        "Isaiah 51:10",
+        "Psalm 104:6-9",
+        "2 Peter 3:5-6",
+        "Malachi 3:10"
+      ]
+    },
+    {
+      "v": "13-14",
+      "context": "The boarding is told again, this time with every family member named: Noah, Shem, Ham, Japheth, Noah's wife, and the three wives. Then the animals are listed by kind, in the language of Genesis 1. The repetition slows the story at its threshold.",
+      "grammar": "\"On that very day\" is be'etsem hayyom hazzeh, literally ‘on the bone of this day’, a Hebrew idiom for ‘on this exact day’. It marks momentous dates elsewhere: Abraham's circumcision of his household (17:23), Israel's departure from Egypt (Exodus 12:41, 51), and the day Moses is told to climb the mountain to die (Deuteronomy 32:48). Leminah and leminehu, ‘according to its kind’, repeat four times in verse 14, the refrain of 1:11-25, and the list ends with an expansive phrase, tsippor kol-kanaf, ‘every bird, every winged thing’.",
+      "words": [
+        "H6106H",
+        "H4327",
+        "H6833",
+        "H3671"
+      ],
+      "theology": [
+        {
+          "id": "creation",
+          "note": "The ark is a small creation carried through the collapse of the large one. The same categories God created ‘according to their kinds’ are preserved by kind, so that the world after the flood will be a continuation of the first creation, not a replacement."
+        }
+      ],
+      "refs": [
+        "Genesis 17:23",
+        "Exodus 12:41",
+        "Genesis 1:21-25",
+        "1 Peter 3:20"
+      ]
+    },
+    {
+      "v": "15-16",
+      "context": "The animals come two by two, every creature with the breath of life. Then, in a three-word sentence in Hebrew, the LORD shuts Noah in. The same verse moves from \"as God had commanded\" to \"Then the LORD shut him in\", as if the covenant name belongs to this act of personal care.",
+      "grammar": "Ruach chayyim, \"the breath of life\", is the phrase of 6:17, used there of the creatures to be destroyed and here of those preserved. The final clause is vayyisgor YHWH ba'ado. Sagar is to shut or close, and ba'ado means ‘behind him’ or ‘around him’, the same expression used when Elisha tells the widow to shut the door behind her and her sons before the oil is multiplied (2 Kings 4:4-5). God himself closes the door, so Noah's safety is God's doing and not his own.",
+      "words": [
+        "H7307H",
+        "H2416E",
+        "H5462",
+        "H1157"
+      ],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "The one who is saved does not seal his own safety; God shuts him in. The same act also marks the end of the time for entering. Jesus' parable of the ten virgins ends with the same image, the door shut when the bridegroom has come (Matthew 25:10)."
+        },
+        {
+          "id": "perseverance",
+          "note": "Noah is kept by God's action rather than by his own grip on the door. Christians have often drawn from this image the assurance that those whom God brings to safety are kept by his power (John 10:28-29, 1 Peter 1:5)."
+        }
+      ],
+      "refs": [
+        "Matthew 25:10",
+        "John 10:28-29",
+        "1 Peter 1:5",
+        "2 Kings 4:4-5"
+      ]
+    },
+    {
+      "v": "17-18",
+      "context": "The waters increase for forty days, lift the ark, and carry it above the earth. The verbs build on one another, and the ark, which has no sail or rudder, simply rides on the surface.",
+      "grammar": "The waters \"rose\" (vayyirbu, from ravah, ‘to become many’, the verb of ‘multiply’ in 1:22 and 1:28) and \"lifted\" (vayyis'u) the ark. In verse 18 a stronger verb enters, vayyigberu, from gavar, to prevail or be mighty, often used of a warrior or an army. \"Floated\" is vattelekh, literally ‘and it went’ or ‘moved about’, the ordinary verb halakh: the ark drifts where the water takes it.",
+      "words": [
+        "H7235A",
+        "H5375H",
+        "H1396",
+        "H1980I"
+      ],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The same water that destroys lifts the ark. Peter says Noah's family was brought safely through water (1 Peter 3:20), and the image of God's people carried above the waters of judgment recurs in the Psalms (Psalm 46:1-3, Psalm 93:3-4)."
+        }
+      ],
+      "refs": [
+        "1 Peter 3:20",
+        "Psalm 46:1-3",
+        "Psalm 93:3-4",
+        "Isaiah 43:2"
+      ]
+    },
+    {
+      "v": "19-20",
+      "context": "The waters reach their height. All the high mountains under the whole heaven are covered, with fifteen cubits of water above them. Nothing is left of dry land.",
+      "grammar": "The intensifying continues: gaveru me'od me'od, ‘prevailed exceedingly, exceedingly’, the doubled adverb being one of Hebrew's strongest ways of saying ‘very’. \"Were covered\" (vaykhussu) is a Pual, a passive of kasah, to cover. Fifteen cubits is about 22 feet (7 meters). Since the ark was 30 cubits high (6:15), some interpreters suggest the figure reflects half the ark's height, the depth it would need to clear the peaks, though the text does not say so.",
+      "words": [
+        "H1396",
+        "H3966",
+        "H3680",
+        "H2022G",
+        "H0520A"
+      ],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The mountains, Scripture's image of what is stable and lasting (Psalm 90:2), are covered. Psalm 104:6 describes the waters standing above the mountains at creation before God's rebuke drove them back; here the rebuke is withdrawn and the waters return."
+        }
+      ],
+      "refs": [
+        "Psalm 104:6-9",
+        "Psalm 90:2",
+        "2 Peter 3:6",
+        "Genesis 8:5"
+      ]
+    },
+    {
+      "v": "21-22",
+      "context": "Death is recorded twice, first by a list of creatures and then by a summary. Everything on dry land that breathed perished, from birds to all mankind. The chapter does not describe the dying; it records the result.",
+      "grammar": "\"Perished\" is vayyigva, the verb announced in 6:17. The list in verse 21 uses the categories of Genesis 1, including sherets hashorets, ‘the swarming thing that swarms’ (compare 1:20), and ends with ‘all mankind’, as creation ended with humanity. Verse 22 combines two phrases, nishmat-ruach chayyim, ‘the breath of the spirit of life’, and be'appav, ‘in its nostrils’. Nishmat chayyim and ‘nostrils’ are the words of 2:7, where God breathed life into the man. \"Dry land\" here is charavah, the word used when God turns the sea into dry ground at the exodus (Exodus 14:21).",
+      "words": [
+        "H1478",
+        "H8318",
+        "H5397",
+        "H0639H",
+        "H2724"
+      ],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The breath God gave in 2:7 is withdrawn. Death is presented not as nature taking its course but as the Giver of life taking back what he gave (Job 34:14-15). Jesus uses these days as the pattern for the suddenness of final judgment (Luke 17:26-27)."
+        }
+      ],
+      "refs": [
+        "Genesis 2:7",
+        "Genesis 6:17",
+        "Job 34:14-15",
+        "Luke 17:26-27",
+        "Exodus 14:21"
+      ]
+    },
+    {
+      "v": "23",
+      "context": "The judgment of 6:7 is carried out in the same words, the list of man, livestock, creeping things, and birds repeated from that verse. Then comes the chapter's quiet center: only Noah was left, and those with him in the ark.",
+      "grammar": "\"Was destroyed\" renders vayyimach, from machah, ‘to wipe out’, the verb of 6:7 and 7:4; as pointed in the standard Hebrew text it is active, ‘he wiped out’, with God as the implied subject, though some read it as passive. \"They were blotted out\" repeats the verb in the passive sense. \"Remained\" is vayyisha'er, a Niphal of sha'ar, to be left over, the root of she'ar and she'erit, ‘remnant’. The word akh, ‘only’, isolates Noah against everything else.",
+      "words": [
+        "H4229A",
+        "H3351",
+        "H7604",
+        "H0389"
+      ],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "This is the first remnant in Scripture: a small group preserved through judgment to carry God's purposes forward. The prophets develop the idea (Isaiah 10:20-22), and Paul applies it to the people of God saved by grace (Romans 9:27, 11:5)."
+        }
+      ],
+      "refs": [
+        "Genesis 6:7",
+        "Isaiah 10:20-22",
+        "Romans 11:5",
+        "1 Peter 3:20",
+        "2 Peter 2:5"
+      ]
+    },
+    {
+      "v": "24",
+      "context": "The waters prevail on the earth for 150 days. The chapter ends at the height of the flood, with nothing said of Noah; the next verse, 8:1, will open with God remembering him.",
+      "grammar": "Vayyigberu, \"prevailed\", is the fourth use of gavar in seven verses (verses 18, 19, 20, 24). The sentence closes the rising half of the flood story on its strongest verb, with the waters in full command of the earth.",
+      "words": [
+        "H1396",
+        "H4325G",
+        "H2572"
+      ],
+      "history": "The 150 days link this verse to 8:3-4: the flood began on the seventeenth day of the second month (7:11), and the ark came to rest on the seventeenth day of the seventh month (8:4), exactly five months later. The equation of five months with 150 days implies a calendar of thirty-day months, a common way of reckoning in the ancient Near East, though actual lunar months run about 29 or 30 days.",
+      "theology": [
+        {
+          "id": "hope",
+          "note": "The chapter ends with the waters prevailing and no word from God. The silence is deliberate. The turn of the story in 8:1, \"But God remembered Noah\", shows that the hope of the ark never rested on the water's height but on God's faithfulness."
+        }
+      ],
+      "refs": [
+        "Genesis 8:1-4",
+        "Psalm 29:10",
+        "Isaiah 54:9-10"
+      ]
+    }
+  ]
+}
