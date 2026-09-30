@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { Link } from "wouter";
-import { BookOpen, Heart, Users, Search, HeartHandshake, DollarSign, Baby, Brain, Mic, BookMarked, MessageCircle, Shield, Target, Church } from "lucide-react";
+import { BookOpen, Heart, Users, Search, HeartHandshake, DollarSign, Baby, Brain, BookMarked, MessageCircle, Shield, Target, Church } from "lucide-react";
 import { useFavorites } from "@/hooks/useFavorites";
 
 export const TOOLS = [
@@ -32,6 +32,13 @@ export const TOOLS = [
     href: "/tools/theology-quiz",
     icon: Brain,
     color: "var(--goldlt)",
+  },
+  {
+    title: "The Diagnostic",
+    description: "Eight honest questions across four dimensions: where you are with God right now, without the church answer. Ends with a specific essay, a book, and what to do next.",
+    href: "/diagnostic",
+    icon: Search,
+    color: "var(--ink)",
   },
     {
     title: "The Whole-Life Assessment",
@@ -74,6 +81,13 @@ export const TOOLS = [
     href: "/tools/proverbs-31",
     icon: BookMarked,
     color: "var(--goldlt)",
+  },
+  {
+    title: "Reading Scripture in Context",
+    description: "Background guides to the Ancient Near Eastern, Second Temple Jewish, and Greco-Roman worlds of the Bible, and how to read Scripture apart from American politics.",
+    href: "/resources/context",
+    icon: BookOpen,
+    color: "var(--ink)",
   },
   {
     title: "Passage Context Tool",
@@ -212,11 +226,11 @@ export const TOOLS = [
 
 /** Display groups for the hub, ordered by need. Every TOOLS href appears exactly once. */
 export const TOOL_GROUPS = [
-  { title: "Start with an honest reading", tools: TOOLS.filter((t) => ["/diagnostic","/tools/life-audit","/assessments","/tools/emotional-health","/life/assessment"].includes(t.href)) },
+  { title: "Start with an honest reading", tools: TOOLS.filter((t) => ["/diagnostic","/tools/life-audit","/tools/emotional-health","/life/assessment"].includes(t.href)) },
   { title: "Scripture and theology", tools: TOOLS.filter((t) => ["/tools/deep-bible","/tools/bible-study","/resources/context","/theology/passage","/tools/verse-finder","/tools/bible-says","/tools/bible-on","/tools/theology-quiz","/tools/glossary","/tools/test-the-case","/tools/which-lens","/tools/scripture-memory"].includes(t.href)) },
   { title: "Wisdom for a real situation", tools: TOOLS.filter((t) => ["/wisdom","/tools/wisdom-finder","/tools/proverbs-31","/tools/quotes","/tools/conflict-guide","/tools/prayer-generator"].includes(t.href)) },
   { title: "Family, marriage, and the household", tools: TOOLS.filter((t) => ["/tools/family-devotions","/tools/marriage-assessment","/tools/parenting-guide","/tools/parenting-verses","/tools/financial-health","/tools/rule-of-life"].includes(t.href)) },
-  { title: "The church and the public square", tools: TOOLS.filter((t) => ["/disruption/consistency","/tools/party-scorecard","/nation/biblical-government","/nation/scorecard","/nation/policy"].includes(t.href)) },
+  { title: "The church and the public square", tools: TOOLS.filter((t) => ["/disruption/consistency","/nation/scorecard","/nation/policy"].includes(t.href)) },
 ];
 
 

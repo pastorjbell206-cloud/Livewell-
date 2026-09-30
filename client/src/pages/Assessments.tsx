@@ -32,17 +32,17 @@ const GROUPS: Group[] = [
     eyebrow: "Start here",
     heading: "Where are you, actually?",
     blurb:
-      "Not where you say you are on Sunday. Where you are. These take an honest reading of the whole picture — one quick, one thorough, one to hand you a starting place.",
+      "Not where you say you are on Sunday. Where you are. These take an honest reading of the whole picture: one quick, one thorough, one to hand you a starting place.",
     items: [
       {
         title: "The Diagnostic",
-        takeIf: "you want the honest check-in — where are you with God right now, without the church answer.",
+        takeIf: "you want the honest check-in: where you are with God right now, without the church answer.",
         gives: "A straight reading of your season, and where to go from it.",
         href: "/diagnostic",
       },
       {
         title: "The Whole-Life Assessment",
-        takeIf: "you are willing to look at all of it — the inner life, the body, the home, work and money, the world.",
+        takeIf: "you are willing to look at all of it: the inner life, the body, the home, work and money, the world.",
         gives: "A map of where your life is flourishing and where it has gone quiet, plus a rule of life for this season.",
         href: "/life/assessment",
       },
@@ -67,6 +67,18 @@ const GROUPS: Group[] = [
         href: "/tools/marriage-assessment",
       },
       {
+        title: "The Emotional Health Assessment",
+        takeIf: "you are running on empty, or something inside feels off and you cannot name it.",
+        gives: "A read on self-awareness, boundaries, grief, forgiveness, and rest, with practical steps.",
+        href: "/tools/emotional-health",
+      },
+      {
+        title: "The Financial Health Check",
+        takeIf: "money is a weight, a worry, or a quiet rival for your heart.",
+        gives: "Where you stand on generosity, contentment, stewardship, and provision, with Scripture-grounded steps.",
+        href: "/tools/financial-health",
+      },
+      {
         title: "The Life Audit",
         takeIf: "the life you are living and the life you say you want have quietly diverged.",
         gives: "A structured look at the gap, without shame.",
@@ -78,7 +90,7 @@ const GROUPS: Group[] = [
     eyebrow: "For what you believe",
     heading: "The convictions under the surface.",
     blurb:
-      "What you actually believe, and whether you hold it evenly, is measurable. These two take that measure.",
+      "What you actually believe, and whether you hold it evenly, is measurable. These take that measure.",
     items: [
       {
         title: "The Theology Quiz",
@@ -87,8 +99,20 @@ const GROUPS: Group[] = [
         href: "/tools/theology-quiz",
       },
       {
+        title: "Which View Am I?",
+        takeIf: "you want to see which position you lean toward on a contested doctrine, and why faithful Christians differ.",
+        gives: "A starting point for understanding yourself, never a verdict.",
+        href: "/theology/which-view",
+      },
+      {
+        title: "Which Lens Has You?",
+        takeIf: "you suspect the flag, the cause, the marketplace, or nostalgia is doing your thinking before you do.",
+        gives: "Thirteen honest choices, five lenses named, then dismantled.",
+        href: "/tools/which-lens",
+      },
+      {
         title: "The Consistency Check",
-        takeIf: "you suspect you defend truth selectively — one standard for your side, another for theirs.",
+        takeIf: "you suspect you defend truth selectively: one standard for your side, another for theirs.",
         gives: "Where your standard bends, laid out plainly.",
         href: "/disruption/consistency",
       },
@@ -103,7 +127,7 @@ const assessmentsSchema = {
   "@type": "ItemList",
   name: "Assessments",
   description:
-    "Honest instruments for spiritual, whole-life, marriage, burnout, theology, and consistency self-examination.",
+    "Honest instruments for self-examination: the spiritual check-in, the whole-life map, marriage, emotional and financial health, the life audit, theology, and consistency.",
   url: "https://www.livewellbyjamesbell.co/assessments",
   itemListElement: GROUPS.flatMap((g) => g.items).map((item, i) => ({
     "@type": "ListItem",
@@ -118,7 +142,7 @@ export default function Assessments() {
     <Layout>
       <SEOMeta
         title="Assessments — Where Are You, Actually?"
-        description="Every honest instrument on the site in one place: the spiritual check-in, the whole-life map, marriage, the life audit, theology, and consistency. None of them grades you, and each one tells you what to read next."
+        description="Every self-check on the site in one place: faith, the whole of life, marriage, emotional and financial health, and belief. None of them grades you."
         url="https://www.livewellbyjamesbell.co/assessments"
         structuredData={assessmentsSchema}
       />
@@ -132,7 +156,7 @@ export default function Assessments() {
           </h1>
           <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.75)", maxWidth: "60ch" }}>
             Every instrument on the site, in one place, sorted by the question you
-            are actually asking. None of them grades you. Each one is a mirror —
+            are actually asking. None of them grades you. Each one is a mirror,
             and whatever it shows, the writing here was built to meet it.
           </p>
         </div>

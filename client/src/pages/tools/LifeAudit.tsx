@@ -7,6 +7,8 @@ import { Link } from "wouter";
 import { ArrowLeft, ArrowRight, ChevronRight, Printer } from "lucide-react";
 import { EmailResults } from "@/components/EmailResults";
 import { readStoredJSON, removeStoredJSON, writeStoredJSON } from "@/lib/storage";
+import { SafetyCheck } from "@/components/SafetyCheck";
+import { SelfCheckHistory } from "@/components/SelfCheckHistory";
 
 /* ── Types ─────────────────────────────────────────────────────── */
 
@@ -391,8 +393,8 @@ const CATEGORIES: Category[] = [
       ],
     },
     relatedLink: {
-      title: "Explore the Pastors Connection Network",
-      href: "/pastors",
+      title: "Read why it is so hard to make real friends as an adult",
+      href: "/life/friendship-against-isolation",
     },
   },
 ];
@@ -1052,6 +1054,13 @@ export default function LifeAudit() {
         >
           <div className="wrap" style={{ maxWidth: "800px" }}>
             <ToolActions toolName="Life Audit" onStartOver={handleRestart} />
+            <SafetyCheck />
+            <SelfCheckHistory
+              id="life-audit"
+              total={totalScore / (CATEGORIES.reduce((n, c) => n + c.questions.length, 0) * 5)}
+              areas={Object.fromEntries(CATEGORIES.map((c) => [c.name, getCategoryScore(c) / (c.questions.length * 5)]))}
+              answersKey={JSON.stringify(answers)}
+            />
             {persistFailed && (
               <p
                 style={{

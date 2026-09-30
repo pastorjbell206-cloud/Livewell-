@@ -7,6 +7,8 @@ import { useState } from "react";
 import { Link } from "wouter";
 import { ArrowLeft, ChevronRight } from "lucide-react";
 import { readStoredJSON, removeStoredJSON, writeStoredJSON } from "@/lib/storage";
+import { SafetyCheck } from "@/components/SafetyCheck";
+import { SelfCheckHistory } from "@/components/SelfCheckHistory";
 
 interface Statement {
   text: string;
@@ -237,7 +239,7 @@ function getOverallInterpretation(totalScore: number): {
     return {
       label: "Under Significant Strain",
       description:
-        "Your results suggest that your inner life is carrying more weight than it was built to hold. This is not a character indictment. It is a diagnostic. Many faithful people live in this zone for years because the church rewards productivity and punishes vulnerability. But the cost compounds. The areas where you scored lowest are not weaknesses to be ashamed of. They are the places where God is inviting you to do the most important work of your life.",
+        "Your results suggest that your inner life is carrying more weight than it was built to hold. This is not a character indictment, and it is not a diagnosis. It is a mirror. Many faithful people live in this zone for years because the church rewards productivity and punishes vulnerability. But the cost compounds. The areas where you scored lowest are not weaknesses to be ashamed of. They are the places where God is inviting you to do the most important work of your life.",
     };
   }
   return {
@@ -339,15 +341,15 @@ export default function EmotionalHealth() {
   return (
     <Layout>
       <SEOMeta
-        title="Emotional Health Assessment -- Diagnose Your Inner Life"
-        description="A 15-question diagnostic for emotional and spiritual health across self-awareness, boundaries, grief, forgiveness, and rest. Honest results, practical steps."
+        title="Emotional Health Self-Check: An Honest Look at Your Inner Life"
+        description="A 15-question self-check on emotional and spiritual health: self-awareness, boundaries, grief, forgiveness, and rest. Not a diagnosis. Honest results, practical steps."
         keywords="emotional health assessment, spiritual health test, self-awareness, boundaries, grief, forgiveness, sabbath rest, Christian mental health"
         structuredData={{
           "@context": "https://schema.org",
           "@type": "WebApplication",
           name: "Emotional Health Assessment",
           description:
-            "A 15-question diagnostic for emotional and spiritual health. Honest results, Scripture, and practical steps for each category.",
+            "A 15-question self-check on emotional and spiritual health, not a diagnosis. Honest results, Scripture, and practical steps for each category.",
           url: "https://www.livewellbyjamesbell.co/tools/emotional-health",
           applicationCategory: "HealthApplication",
           offers: { "@type": "Offer", price: "0" },
@@ -589,6 +591,13 @@ export default function EmotionalHealth() {
             <>
               {/* Results */}
               <ToolActions toolName="Emotional Health Assessment" onStartOver={handleReset} />
+              <SafetyCheck />
+              <SelfCheckHistory
+                id="emotional-health"
+                total={totalScore / 75}
+                areas={Object.fromEntries(categoryResults.map((c) => [c.name, c.score / c.maxScore]))}
+                answersKey={JSON.stringify(answers)}
+              />
               {persistFailed && (
                 <p
                   style={{

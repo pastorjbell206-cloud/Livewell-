@@ -7,6 +7,8 @@ import { Link } from "wouter";
 import { ArrowLeft, ArrowRight, ChevronRight, Printer } from "lucide-react";
 import { EmailResults } from "@/components/EmailResults";
 import { readStoredJSON, removeStoredJSON, writeStoredJSON } from "@/lib/storage";
+import { SafetyCheck } from "@/components/SafetyCheck";
+import { SelfCheckHistory } from "@/components/SelfCheckHistory";
 
 /* ── Types ─────────────────────────────────────────────────────── */
 
@@ -864,6 +866,13 @@ export default function MarriageAssessment() {
         >
           <div className="wrap" style={{ maxWidth: "800px" }}>
             <ToolActions toolName="Marriage Health Assessment" onStartOver={handleRestart} />
+            <SafetyCheck />
+            <SelfCheckHistory
+              id="marriage"
+              total={totalScore / (CATEGORIES.reduce((n, c) => n + c.questions.length, 0) * 5)}
+              areas={Object.fromEntries(CATEGORIES.map((c) => [c.name, getCategoryScore(c) / (c.questions.length * 5)]))}
+              answersKey={JSON.stringify(answers)}
+            />
             {persistFailed && (
               <p
                 style={{
@@ -1395,10 +1404,10 @@ export default function MarriageAssessment() {
         <div style={{ maxWidth: "680px", margin: "0 auto", textAlign: "center" }}>
           <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "16px" }}>GO DEEPER</p>
           <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.75, color: "var(--ink)", maxWidth: "56ch", margin: "0 auto 22px" }}>
-            If this assessment named something you already knew was there, the book goes further. <em>Covenant</em> is the long form of everything this tool measures — why marriage is a promise, not a deal.
+            If this assessment named something you already knew was there, the long read goes further. <em>Why Do Marriages Drift Apart, and How Do You Stop It?</em> works through covenant, conflict, money, and desire, and why marriage is a promise, not a deal.
           </p>
           <div style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
-            <a href="/covenant" style={{ display: "inline-block", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--bone)", background: "var(--ink)", padding: "12px 22px", borderRadius: "3px", textDecoration: "none" }}>Read about Covenant</a>
+            <a href="/life/marriage-the-long-covenant" style={{ display: "inline-block", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--bone)", background: "var(--ink)", padding: "12px 22px", borderRadius: "3px", textDecoration: "none" }}>Read about marriage as covenant</a>
           </div>
         </div>
       </section>

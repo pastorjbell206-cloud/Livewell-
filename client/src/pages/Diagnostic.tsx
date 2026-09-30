@@ -16,6 +16,8 @@ import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { SegmentedSignup } from "@/components/SegmentedSignup";
 import { readStoredJSON, removeStoredJSON, writeStoredJSON } from "@/lib/storage";
+import { SafetyCheck } from "@/components/SafetyCheck";
+import { SelfCheckHistory } from "@/components/SelfCheckHistory";
 
 type Dim = "relational" | "intellectual" | "vocational" | "devotional";
 
@@ -392,6 +394,7 @@ export default function Diagnostic() {
             </div>
           ) : (
             <div>
+              <SafetyCheck />
               <div className="eyebrow" style={{ marginBottom: "12px" }}>
                 Results
               </div>
@@ -513,6 +516,15 @@ export default function Diagnostic() {
                 ))}
               </div>
 
+              {results && (
+                <SelfCheckHistory
+                  id="diagnostic"
+                  total={results.reduce((n, r) => n + r.score, 0) / results.reduce((n, r) => n + r.max, 0)}
+                  areas={Object.fromEntries(results.map((r) => [r.label, r.score / r.max]))}
+                  answersKey={JSON.stringify(answers)}
+                />
+              )}
+
               <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", marginBottom: "var(--s-5)" }}>
                 <button
                   type="button"
@@ -533,6 +545,23 @@ export default function Diagnostic() {
                   }}
                 >
                   Change my answers
+                </button>
+                <button
+                  type="button"
+                  onClick={() => window.print()}
+                  style={{
+                    background: "transparent",
+                    border: "1px solid var(--border)",
+                    padding: "10px 18px",
+                    fontFamily: "var(--U)",
+                    fontSize: "13px",
+                    fontWeight: 600,
+                    color: "var(--ink)",
+                    borderRadius: "var(--radius-sm)",
+                    cursor: "pointer",
+                  }}
+                >
+                  Print your results
                 </button>
                 <button
                   type="button"

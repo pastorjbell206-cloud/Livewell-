@@ -15,6 +15,7 @@ import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { writeStoredJSON } from "@/lib/storage";
+import { SafetyCheck } from "@/components/SafetyCheck";
 
 /* ------------------------------------------------------------------ */
 /* Data                                                                */
@@ -1103,6 +1104,7 @@ export default function WholeLifeAssessment() {
             {/* Verdict */}
             <section className="wla-screen" style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4)" }}>
               <div style={wrap}>
+                <SafetyCheck />
                 <div style={{ background: "var(--charcoal)", color: "var(--bone)", borderRadius: "var(--radius-sm)", padding: "var(--s-5)", borderTop: "3px solid var(--mustard)" }}>
                   <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "10px" }}>What the map says</div>
                   <p style={{ fontFamily: "var(--F)", fontSize: "clamp(20px, 2.8vw, 26px)", fontWeight: 500, lineHeight: 1.45, color: "var(--bone)" }}>

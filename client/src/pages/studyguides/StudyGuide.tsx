@@ -9,6 +9,8 @@ import { useEffect, useMemo, useState } from "react";
 import { Link, useRoute } from "wouter";
 import Layout from "@/components/Layout";
 import MoreOnThis from "@/components/MoreOnThis";
+import { CrisisBlock } from "@/components/CrisisBlock";
+import { SENSITIVE_GUIDES } from "@/lib/needs";
 import { SEOMeta } from "@/components/SEOMeta";
 import GatedDownload from "@/components/GatedDownload";
 import PageEndNav from "@/components/PageEndNav";
@@ -330,6 +332,7 @@ export default function StudyGuide() {
             </div>
           </section>
 
+          {slug && SENSITIVE_GUIDES.has(slug) && <CrisisBlock variant="compact" />}
           {slug && <MoreOnThis href={`/studyguides/${slug}`} />}
           <PageEndNav back={{ href: "/studyguides", label: "All study guides" }} />
         </>

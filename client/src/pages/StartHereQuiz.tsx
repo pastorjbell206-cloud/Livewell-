@@ -4,6 +4,7 @@ import { SEOMeta } from "@/components/SEOMeta";
 import MinimalNav from "@/components/MinimalNav";
 import Footer from "@/components/Footer";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
+import { CrisisBlock } from "@/components/CrisisBlock";
 import { readStoredJSON, removeStoredJSON, writeStoredJSON } from "@/lib/storage";
 
 const QUESTIONS = [
@@ -40,6 +41,20 @@ const QUESTIONS = [
     ]
   }
 ];
+
+/* The third question used to change nothing: every combination fell through
+ * to an essay list. FIRST_STEPS answers it. "Practical Tools" leads with the
+ * tool or self-check for the concern, "Devotionals" with a daily path, and
+ * "Books" moves the book ahead of the essays. `help` is where "In Crisis"
+ * sends the reader first, before any reading. */
+const FIRST_STEPS: Record<string, { help: { href: string; label: string }; tool: { href: string; label: string }; daily: { href: string; label: string } }> = {
+  marriage: { help: { href: "/help/marriage", label: "My marriage is falling apart" }, tool: { href: "/tools/marriage-assessment", label: "The Marriage Assessment" }, daily: { href: "/plans/marriage", label: "Eight Weeks Toward Each Other" } },
+  parenting: { help: { href: "/help", label: "Find help for what you are facing" }, tool: { href: "/tools/parenting-guide", label: "The Parenting Stage Guide" }, daily: { href: "/tools/family-devotions", label: "The Family Devotion Builder" } },
+  doubt: { help: { href: "/help/doubt", label: "I'm not sure I believe anymore" }, tool: { href: "/tools/test-the-case", label: "Test the Case: Push Back at Every Step" }, daily: { href: "/plans/deconstruction", label: "Eight Weeks of Taking Your Questions Seriously" } },
+  calling: { help: { href: "/help/decisions", label: "How do I know what God wants me to do?" }, tool: { href: "/life/assessment", label: "The Whole-Life Assessment" }, daily: { href: "/plans/whole-life", label: "Eight Weeks Toward One Undivided Life" } },
+  justice: { help: { href: "/help", label: "Find help for what you are facing" }, tool: { href: "/disruption/consistency", label: "The Consistency Check" }, daily: { href: "/plans/whole-life", label: "Eight Weeks Toward One Undivided Life" } },
+  pastoral: { help: { href: "/help", label: "Find help for what you are facing" }, tool: { href: "/tools/emotional-health", label: "The Emotional Health Assessment" }, daily: { href: "/plans/whole-life", label: "Eight Weeks Toward One Undivided Life" } },
+};
 
 /* Session mirror (roadmap HS-5). One-sitting entry flow: answers, step, and
  * the submitted flag survive an accidental refresh via sessionStorage, and
@@ -199,6 +214,24 @@ export default function StartHereQuiz() {
   };
 
   const readingPath = getReadingPath();
+  const first = FIRST_STEPS[answers.concern] ?? FIRST_STEPS.pastoral;
+  // The book recommendation leads when the reader asked for books.
+  const bookBlock = (
+    <div style={{ background: "var(--paper2)", padding: "32px", borderRadius: "8px", marginBottom: "48px", textAlign: "center" }}>
+      <p style={{ fontSize: "12px", fontWeight: "bold", color: "var(--gold)", marginBottom: "8px", textTransform: "uppercase" }}>
+        {answers.format === "books" ? "Begin with this book" : "Then read this book"}
+      </p>
+      <h3 style={{ fontSize: "20px", fontWeight: "bold", color: "var(--ink)", marginBottom: "12px" }}>
+        {readingPath.book}
+      </h3>
+      <p style={{ fontSize: "14px", color: "var(--ink3)", marginBottom: "16px" }}>
+        A book from the same desk, longer than an essay and slower to finish, for when three pieces are not enough.
+      </p>
+      <Link href="/books" style={{ display: "inline-block", background: "var(--ink)", color: "var(--paper)", padding: "14px 24px", minHeight: "44px", lineHeight: "16px", fontSize: "14px", fontWeight: "bold", borderRadius: "4px", textDecoration: "none", boxSizing: "border-box" }}>
+        View Books
+      </Link>
+    </div>
+  );
   const allAnswered = Object.keys(answers).length === QUESTIONS.length;
   const isComplete = allAnswered && submitted;
 
@@ -231,7 +264,7 @@ export default function StartHereQuiz() {
                   { label: "Doubt", href: "/doubt" },
                   { label: "Disciple someone", href: "/studyguides" },
                   { label: "Grief", href: "/plans/grief" },
-                  { label: "Pastoring", href: "/for-pastors" },
+                  { label: "Pastoring", href: "/studyguides/pastoral-health" },
                   { label: "The essays", href: "/writing" },
                 ].map((c) => (
                   <Link key={c.href} href={c.href} style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink)", textDecoration: "none", background: "var(--card)", border: "1px solid var(--border)", borderRadius: "999px", padding: "8px 16px" }}>
@@ -342,17 +375,42 @@ export default function StartHereQuiz() {
         ) : (
           <>
             {/* RESULTS PAGE */}
+            {answers.situation === "crisis" && (
+              <div style={{ marginBottom: "40px", textAlign: "left" }}>
+                <CrisisBlock heading="Before anything else" topics={["suicide", "abuse"]} />
+                <p style={{ fontSize: "16px", lineHeight: 1.6, color: "var(--ink)", margin: "20px 0 0" }}>
+                  A reading list is not enough on its own in a crisis. Start here instead:{" "}
+                  <Link href={first.help.href} style={{ color: "var(--mustard-text)", fontWeight: 600 }}>{first.help.label} →</Link>
+                </p>
+              </div>
+            )}
             <div style={{ textAlign: "center", marginBottom: "48px" }}>
               <h1 style={{ fontSize: "36px", fontWeight: "bold", color: "var(--ink)", marginBottom: "16px", fontFamily: "var(--F)" }}>
                 Where to start
               </h1>
               <p style={{ fontSize: "16px", color: "var(--ink3)", marginBottom: "24px" }}>
-                Three essays for what you said is weighing on you, and one book after them. If what you named is a crisis, a reading list is not enough on its own. The Care Plans under Help are built for that, and a real person is better than any page here.
+                {answers.format === "tools" || answers.format === "devotionals"
+                  ? "One place to begin in the form you asked for, then three essays for what you said is weighing on you, and a book after them."
+                  : "Three essays for what you said is weighing on you, and one book after them."}{" "}
+                A real person is better than any page here, and <Link href="/help" style={{ color: "var(--mustard-text)", fontWeight: 600 }}>Find help</Link> starts from your own words.
               </p>
               <h2 style={{ fontSize: "24px", fontWeight: "bold", color: "var(--ink)", marginBottom: "32px", fontFamily: "var(--F)" }}>
                 {readingPath.title}
               </h2>
             </div>
+
+            {(answers.format === "tools" || answers.format === "devotionals") && (
+              <div style={{ background: "var(--card)", border: "1px solid var(--border)", borderLeft: "3px solid var(--mustard)", borderRadius: "8px", padding: "24px", marginBottom: "40px" }}>
+                <p style={{ fontSize: "12px", fontWeight: "bold", color: "var(--mustard-text)", margin: "0 0 8px", textTransform: "uppercase", letterSpacing: "0.12em" }}>
+                  {answers.format === "tools" ? "Begin with this tool" : "Begin with a daily path"}
+                </p>
+                <Link href={answers.format === "tools" ? first.tool.href : first.daily.href} style={{ fontFamily: "var(--F)", fontSize: "22px", color: "var(--ink)", textDecoration: "none" }}>
+                  {answers.format === "tools" ? first.tool.label : first.daily.label} →
+                </Link>
+              </div>
+            )}
+
+            {answers.format === "books" && bookBlock}
 
             {/* ARTICLES */}
             <div style={{ marginBottom: "48px" }}>
@@ -380,21 +438,7 @@ export default function StartHereQuiz() {
               </div>
             </div>
 
-            {/* BOOK RECOMMENDATION */}
-            <div style={{ background: "var(--paper2)", padding: "32px", borderRadius: "8px", marginBottom: "48px", textAlign: "center" }}>
-              <p style={{ fontSize: "12px", fontWeight: "bold", color: "var(--gold)", marginBottom: "8px", textTransform: "uppercase" }}>
-                Then read this book
-              </p>
-              <h3 style={{ fontSize: "20px", fontWeight: "bold", color: "var(--ink)", marginBottom: "12px" }}>
-                {readingPath.book}
-              </h3>
-              <p style={{ fontSize: "14px", color: "var(--ink3)", marginBottom: "16px" }}>
-                A book from the same desk, longer than an essay and slower to finish, for when three pieces are not enough.
-              </p>
-              <Link href="/books" style={{ display: "inline-block", background: "var(--ink)", color: "var(--paper)", padding: "14px 24px", minHeight: "44px", lineHeight: "16px", fontSize: "14px", fontWeight: "bold", borderRadius: "4px", textDecoration: "none", boxSizing: "border-box" }}>
-                View Books
-              </Link>
-            </div>
+            {answers.format !== "books" && bookBlock}
 
             {/* EMAIL CAPTURE — real subscribe (was: setEmailSubmitted no-op) */}
             <div>

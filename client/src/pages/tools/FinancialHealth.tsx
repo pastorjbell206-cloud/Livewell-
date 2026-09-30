@@ -7,6 +7,8 @@ import { ToolActions } from "@/components/ToolActions";
 import { useState, useRef } from "react";
 import { ArrowLeft, ArrowRight, ChevronRight, Printer } from "lucide-react";
 import { readStoredJSON, removeStoredJSON, writeStoredJSON } from "@/lib/storage";
+import { SafetyCheck } from "@/components/SafetyCheck";
+import { SelfCheckHistory } from "@/components/SelfCheckHistory";
 
 /* ── Types ─────────────────────────────────────────────────────── */
 
@@ -854,6 +856,13 @@ export default function FinancialHealth() {
         >
           <div className="wrap" style={{ maxWidth: "800px" }}>
             <ToolActions toolName="Financial Health Check" onStartOver={handleRestart} />
+            <SafetyCheck askAboutHome={false} />
+            <SelfCheckHistory
+              id="financial-health"
+              total={totalScore / (CATEGORIES.reduce((n, c) => n + c.questions.length, 0) * 5)}
+              areas={Object.fromEntries(CATEGORIES.map((c) => [c.name, getCategoryScore(c) / (c.questions.length * 5)]))}
+              answersKey={JSON.stringify(answers)}
+            />
             {persistFailed && (
               <p
                 style={{

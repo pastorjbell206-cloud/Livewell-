@@ -1,4 +1,4 @@
-import { useState, useCallback, useRef, useEffect } from "react";
+import { useState, useCallback, useRef, useEffect, type ReactNode } from "react";
 import { scrollBehavior } from "@/lib/motion";
 import { Link } from "wouter";
 import { SEOMeta } from "@/components/SEOMeta";
@@ -148,7 +148,7 @@ const RESULTS: Record<ResultKey, ResultProfile> = {
     primaryCta: { label: "Begin the Skeptic's Path", href: "/honest-questions" },
     secondarySuggestions: [
       { label: "Theology Diagnostic", href: "/theology/which-view", note: "Map where you actually land on the big questions" },
-      { label: "The Full Story of Christianity", href: "/church-history", note: "Understand how the tradition arrived at this moment" },
+      { label: "The Full Story of Christianity", href: "/theology/history", note: "Understand how the tradition arrived at this moment" },
       { label: "Deep Bible Companion", href: "/tools/deep-bible", note: "Study Scripture with tools that respect your intelligence" },
     ],
   },
@@ -171,11 +171,11 @@ const RESULTS: Record<ResultKey, ResultProfile> = {
     tagline: "Someone ought to be pastoring the pastor",
     description:
       "You preach rest and practice exhaustion. You carry confessions you cannot repeat and doubts you cannot voice. This path is built for pastors who need someone to minister to them for once — not with platitudes, but with the honesty you give everyone else and rarely receive.",
-    primaryCta: { label: "Access Pastor Resources", href: "/pastoral-burnout" },
+    primaryCta: { label: "Begin the Pastoral Health Study", href: "/studyguides/pastoral-health" },
     secondarySuggestions: [
-      { label: "Sermon Preparation Workbench", href: "/leadership/sermon-prep", note: "Tools to lighten the weekly load" },
-      { label: "Leadership Formation", href: "/leadership/formation", note: "Character before competence, depth before strategy" },
-      { label: "Pastors Connection Network", href: "/pastors", note: "You were not meant to carry this alone" },
+      { label: "Deep Bible Companion", href: "/tools/deep-bible", note: "Study the week's text in six layers, from its historical setting to the scholarly views" },
+      { label: "Character Before Competence", href: "/studyguides/character-before-competence", note: "A church leadership study on leading without losing your soul" },
+      { label: "Pastors Connection Network", href: "https://pastorsconnectionnetwork.com", note: "Where the pastors' library moved. You were not meant to carry this alone" },
     ],
   },
   "deep-study": {
@@ -188,7 +188,7 @@ const RESULTS: Record<ResultKey, ResultProfile> = {
     secondarySuggestions: [
       { label: "Theology Hub", href: "/theology", note: "Doctrine, creeds, hermeneutics, and the contested questions" },
       { label: "Study Guides", href: "/studyguides", note: "Structured walks through specific books and themes" },
-      { label: "The Full Story", href: "/church-history", note: "The history that shaped how we read the text today" },
+      { label: "The Full Story", href: "/theology/history", note: "The history that shaped how we read the text today" },
     ],
   },
   "full-story": {
@@ -197,7 +197,7 @@ const RESULTS: Record<ResultKey, ResultProfile> = {
     tagline: "Two thousand years did not happen by accident",
     description:
       "Christianity did not drop from the sky. It was forged in Roman courts and desert monasteries, split by emperors and reformers, carried across oceans by missionaries and colonizers. If you want to understand the faith, you need the full story — the parts the Sunday sermon skips.",
-    primaryCta: { label: "Read the Story of Christianity", href: "/church-history" },
+    primaryCta: { label: "Read the Story of Christianity", href: "/theology/history" },
     secondarySuggestions: [
       { label: "Theology History Essays", href: "/theology/history", note: "The turning points, one at a time, with the history behind each" },
       { label: "Creeds and Confessions", href: "/resources/creeds", note: "The words the church fought over and died for" },
@@ -302,6 +302,16 @@ function ensureKeyframes() {
     }
   `;
   document.head.appendChild(style);
+}
+
+/** A suggestion's link: site routes go through wouter; an off-site address
+ *  (the Pastors Connection Network) is a plain anchor in a new tab, since
+ *  wouter would try to push it onto this site's history. */
+function SuggestionLink({ href, children }: { href: string; children: ReactNode }) {
+  if (/^https?:\/\//.test(href)) {
+    return <a href={href} target="_blank" rel="noopener noreferrer">{children}</a>;
+  }
+  return <Link href={href}>{children}</Link>;
 }
 
 /* ── Component ───────────────────────────────────────────────────── */
@@ -725,7 +735,7 @@ export default function StartHereDiagnostic() {
 
                 <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
                   {result.secondarySuggestions.map((s) => (
-                    <Link key={s.href} href={s.href}>
+                    <SuggestionLink key={s.href} href={s.href}>
                       <div
                         style={{
                           background: "var(--card)",
@@ -768,7 +778,7 @@ export default function StartHereDiagnostic() {
                           {s.note}
                         </p>
                       </div>
-                    </Link>
+                    </SuggestionLink>
                   ))}
                 </div>
               </div>
