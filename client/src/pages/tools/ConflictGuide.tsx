@@ -799,7 +799,7 @@ const CONFLICT_TYPES: ConflictType[] = [
     ],
     relatedArticles: [
       { title: "Read essays on trust and faithfulness", href: "/writing?track=marriage" },
-      { title: "Take the Marriage Health Assessment", href: "/tools/marriage-assessment" },
+      { title: "Take the Marriage Health Self-Check", href: "/tools/marriage-assessment" },
     ],
   },
 ];

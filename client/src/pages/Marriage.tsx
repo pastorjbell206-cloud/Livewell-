@@ -91,7 +91,7 @@ export default function Marriage() {
           </p>
           <Link href="/tools/marriage-assessment" style={{ textDecoration: "none" }}>
             <button style={{ background: "var(--gold)", color: "var(--ink)", border: "none", padding: "16px 40px", fontSize: "16px", fontWeight: "bold", borderRadius: "4px", cursor: "pointer" }}>
-              Marriage Health Assessment
+              Marriage Health Self-Check
             </button>
           </Link>
         </div>
@@ -170,18 +170,18 @@ export default function Marriage() {
             Start with an honest reading of where you are.
           </h2>
           <p style={{ fontSize: "16px", lineHeight: "1.8", marginBottom: "32px", color: "var(--ink3)" }}>
-            Start with the Marriage Health Assessment. It takes about ten minutes and will show you where your marriage is strongest and where the repair work begins. If what you are carrying is heavier than a questionnaire can hold, a pastor or a counselor is the right next door, and there is no shame in walking through it.
+            Start with the Marriage Health Self-Check. It takes about ten minutes and will show you where your marriage is strongest and where the repair work begins. If what you are carrying is heavier than a questionnaire can hold, a pastor or a counselor is the right next door, and there is no shame in walking through it.
           </p>
           <Link href="/tools/marriage-assessment" style={{ textDecoration: "none" }}>
             <button style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", border: "none", padding: "16px 40px", fontSize: "16px", fontWeight: "bold", borderRadius: "4px", cursor: "pointer" }}>
-              Take the Assessment
+              Take the Self-Check
             </button>
           </Link>
           <div style={{ marginTop: "20px" }}>
             <Link href="/life/marriage-the-long-covenant" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)", textDecoration: "none" }}>Or read the deep guide: Marriage, the Long Covenant</Link>
           </div>
           <div style={{ marginTop: "12px" }}>
-            <Link href="/diagnostic" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)", textDecoration: "none" }}>If the trouble is bigger than the marriage: take the Life Diagnostic</Link>
+            <Link href="/diagnostic" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)", textDecoration: "none" }}>If the trouble is bigger than the marriage: eight questions on where you are with God</Link>
           </div>
         </div>
       </section>

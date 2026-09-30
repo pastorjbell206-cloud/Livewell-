@@ -178,7 +178,10 @@
         "grow",
         "helping"
       ],
-      "sensitivity": "ordinary",
+      "sensitivity": "high",
+      "crisisTopics": [
+        "suicide"
+      ],
       "page": true,
       "rank": 5,
       "seoTitle": "Why Does God Allow Suffering? An Honest Christian Answer",
@@ -297,6 +300,8 @@
       "related": [
         "reading-the-bible",
         "doubt",
+        "new-believer",
+        "curious",
         "anxiety"
       ]
     },
@@ -337,7 +342,9 @@
       "related": [
         "cant-forgive",
         "loneliness",
-        "anxiety"
+        "anxiety",
+        "divorce",
+        "pornography"
       ]
     },
     {
@@ -443,7 +450,10 @@
       "related": [
         "marriage",
         "grief",
-        "loneliness"
+        "loneliness",
+        "church-hurt",
+        "anger",
+        "fatherless"
       ]
     },
     {

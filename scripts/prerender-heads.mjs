@@ -140,8 +140,8 @@ const STATIC_PAGES = [
   },
   {
     path: "/diagnostic",
-    title: "Diagnostic — Where are you with God right now?",
-    description: "Eight questions across four dimensions. Honest answers. A specific essay, a book, and an email track for what to do next.",
+    title: "Where Are You With God Right Now? An Honest Self-Check",
+    description: "Eight questions in four areas, for reflection, not a test: how you treat people, handle doubt, work and rest, and pray. Your answers stay on your device.",
     type: "website",
   },
   // ── Shared-component routes (NationEssay slug=…, Prophetic* config=…,

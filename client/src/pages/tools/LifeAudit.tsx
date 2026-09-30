@@ -129,7 +129,7 @@ const CATEGORIES: Category[] = [
       ],
     },
     relatedLink: {
-      title: "Take the Marriage Health Assessment",
+      title: "Take the Marriage Health Self-Check",
       href: "/tools/marriage-assessment",
     },
   },
@@ -305,7 +305,7 @@ const CATEGORIES: Category[] = [
       ],
     },
     relatedLink: {
-      title: "Take the Emotional Health Assessment",
+      title: "Take the Emotional Health Self-Check",
       href: "/tools/emotional-health",
     },
   },

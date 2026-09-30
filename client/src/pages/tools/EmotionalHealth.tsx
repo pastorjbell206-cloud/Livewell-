@@ -15,14 +15,36 @@ interface Statement {
   category: string;
 }
 
-interface CategoryResult {
+type Level = "Strong" | "Developing" | "Struggling" | "Critical";
+
+/** A live page on this site, named by its own title. */
+interface NextStep {
+  kind: string;
+  title: string;
+  href: string;
+}
+
+/** What one level of one area means, and what to do about it. */
+interface LevelGuide {
+  /** 80 to 150 words, specific to this area at this level. */
+  interpretation: string;
+  /** Two or three concrete steps. */
+  steps: string[];
+  next: NextStep[];
+}
+
+interface AreaGuide {
+  /** Berean Standard Bible, verbatim from `node scripts/bsb.mjs "<ref>"`. */
+  scripture: { ref: string; text: string };
+  levels: Record<Level, LevelGuide>;
+}
+
+interface CategoryResult extends LevelGuide {
   name: string;
   score: number;
   maxScore: number;
-  level: string;
+  level: Level;
   scripture: { ref: string; text: string };
-  steps: string[];
-  articleLink: { title: string; href: string };
 }
 
 const CATEGORIES = [
@@ -40,11 +62,11 @@ const STATEMENTS: Statement[] = [
     category: "Self-Awareness",
   },
   {
-    text: "I understand which situations or people trigger strong emotional reactions in me, and I know why.",
+    text: "I understand why certain situations or people stir up strong reactions in me.",
     category: "Self-Awareness",
   },
   {
-    text: "When someone asks me how I am doing, I can give an honest answer -- not a performance.",
+    text: "When someone asks me how I am doing, I can give an honest answer, not a performance.",
     category: "Self-Awareness",
   },
   // Boundaries
@@ -66,7 +88,7 @@ const STATEMENTS: Statement[] = [
     category: "Grief & Lament",
   },
   {
-    text: "I can sit with sadness -- my own or someone else's -- without immediately trying to fix it.",
+    text: "I can sit with my own sadness without immediately trying to fix it.",
     category: "Grief & Lament",
   },
   {
@@ -79,11 +101,11 @@ const STATEMENTS: Statement[] = [
     category: "Forgiveness",
   },
   {
-    text: "I do not keep a mental scoreboard of what others owe me -- in my marriage, friendships, or work.",
+    text: "I do not keep a mental scoreboard of what others owe me, whether in marriage, friendship, or work.",
     category: "Forgiveness",
   },
   {
-    text: "I understand that forgiving someone does not mean trusting them again, and I can hold both realities.",
+    text: "I can forgive someone without feeling I have to trust them again right away.",
     category: "Forgiveness",
   },
   // Rest & Sabbath
@@ -110,143 +132,421 @@ const RATING_LABELS = [
   "Consistently true",
 ];
 
+/**
+ * Every level of every area has its own reading, its own steps, and its own
+ * next steps (docs/grow/GROW-PROMPT.md 7.2). Words a reader might say or
+ * think are marked *like this* and set in italics; double quotation marks
+ * belong to Scripture alone.
+ */
+const AREA_GUIDES: Record<string, AreaGuide> = {
+  "Self-Awareness": {
+    scripture: {
+      ref: "Psalm 139:23-24",
+      text: "Search me, O God, and know my heart; test me and know my concerns. See if there is any offensive way in me; lead me in the way everlasting.",
+    },
+    levels: {
+      Strong: {
+        interpretation:
+          "You can usually tell what you're feeling while it's happening, you understand a good deal about why certain people and moments stir you up, and you can answer *how are you?* honestly. That's a real capacity. It makes you easier to love and harder to fool, yourself included. You don't see everything, of course; every self has blind spots, and the people closest to you can see some of yours. Nor does every feeling need to be announced. The next step is to do something with what you notice: bring it to God in prayer and to one or two people who know you, instead of only understanding it on your own.",
+        steps: [
+          "Pray Psalm 139:23-24 slowly each morning this week. After the first line, stop and listen for a minute before going on, and write down anything that surprises you.",
+          "Ask someone who knows you well which feeling they think you avoid most. Don't explain or defend yourself; thank them, and think about it for a few days.",
+          "Use what you see for someone else. The next time a friend says *fine* and you can tell it isn't, ask once more, gently, and wait for the answer.",
+        ],
+        next: [
+          { kind: "How-to", title: "How to Practice Silence and Solitude", href: "/how-tos/sf-how-to-practice-silence-and-solitude" },
+          { kind: "Study guide", title: "The Psalms: A Bible Study on Honest Prayer", href: "/studyguides/the-psalms" },
+        ],
+      },
+      Developing: {
+        interpretation:
+          "You have real awareness of your inner life, but it tends to arrive late. You often understand what you felt after the moment has passed, or you can name the feeling but not what set it off, or you give the easy answer when someone asks how you are and admit the true one only to yourself. That's an ordinary place to be and a good place to grow from. It doesn't mean you're out of touch or dishonest. Most of us learned to manage our feelings long before anyone taught us to name them, and a full life rarely leaves time to notice. The gap to close is time: moving the noticing closer to the moment, and letting at least one other person hear the true answer.",
+        steps: [
+          "Three times a day this week, stop and name what you're feeling in one word more exact than *fine* or *busy*: irritated, lonely, relieved, afraid, grateful. Write the word down. Naming comes before understanding.",
+          "Each evening, finish this sentence in a notebook: *Today I felt ___ when ___.* At the end of the week, read all seven and look for what repeats.",
+          "Choose one safe person, and the next time they ask how you are, give them the true answer instead of the easy one.",
+        ],
+        next: [
+          { kind: "How-to", title: "How to Examine Your Day (the Daily Examen)", href: "/how-tos/sf-how-to-examine-your-day-the-daily-examen" },
+          { kind: "Study guide", title: "The Psalms: A Bible Study on Honest Prayer", href: "/studyguides/the-psalms" },
+        ],
+      },
+      Struggling: {
+        interpretation:
+          "Much of what you feel seems to go unnamed, even to yourself. You may notice feelings mostly through their side effects: a short temper, a tight chest, a sudden need to scroll, a day that goes flat for no reason you can find. When someone asks how you are, the answer that comes out is probably the one that keeps things moving. This isn't a character flaw. Many people learned early that feelings were unsafe, inconvenient, or unspiritual, and became very good at managing them out of sight. That skill kept you going. But what we don't name still steers us, and it tends to come out sideways, in our bodies, our tempers, and our closest relationships.",
+        steps: [
+          "Start with your body, which often notices first. Twice a day, check your jaw, shoulders, and stomach for tension, and ask what feeling might be underneath it. One word is enough.",
+          "Pray Psalm 139:23-24 each morning. It's a prayer for someone who can't see all of their own heart, so you don't have to find everything by yourself.",
+          "Tell one person you trust that you're trying to notice your feelings better, and ask them to tell you when they see something in you that you haven't mentioned.",
+        ],
+        next: [
+          { kind: "How-to", title: "How to Examine Your Day (the Daily Examen)", href: "/how-tos/sf-how-to-examine-your-day-the-daily-examen" },
+          { kind: "Life", title: "What Is the Difference Between Guilt and Shame?", href: "/life/shame-and-the-hiding-self" },
+        ],
+      },
+      Critical: {
+        interpretation:
+          "It may be hard right now to know what you feel at all. You may feel mostly numb or flat, or feelings may arrive all at once without a clear source, and answering *how are you?* honestly may feel impossible or unsafe. That doesn't mean something is wrong with your soul, and it doesn't mean you can't feel. Going numb is often how a person braces against more than they can hold. If the flatness has lasted more than two weeks, or has spread to your sleep, your appetite, or the things you used to enjoy, please talk with your doctor or a licensed counselor. A pattern like that deserves a real conversation, not only a practice, and asking for help is not a failure of faith.",
+        steps: [
+          "Make an appointment with your doctor or a licensed counselor. You can say, *I've had trouble feeling much of anything for a while, and I'd like to be seen.*",
+          "Tell one person you trust, *I'm not doing well, and I don't fully know why.* That sentence is enough to start with.",
+          "Once a day, write down one thing you noticed with your senses: a sound, a taste, the light at a certain hour. You're not forcing feelings to return, only practicing attention, and attention is a place to start.",
+        ],
+        next: [
+          { kind: "Find help", title: "I feel empty, and I don't know why", href: "/help/empty" },
+          { kind: "Wisdom", title: "Numbness and Feeling Nothing", href: "/wisdom/numbness" },
+        ],
+      },
+    },
+  },
+  Boundaries: {
+    scripture: {
+      ref: "Mark 1:35-38",
+      text: "Early in the morning, while it was still dark, Jesus got up and slipped out to a solitary place to pray. Simon and his companions went to look for Him, and when they found Him, they said, “Everyone is looking for You!” But Jesus answered, “Let us go on to the neighboring towns so I can preach there as well, for that is why I have come.”",
+    },
+    levels: {
+      Strong: {
+        interpretation:
+          "Most of the time you can say no without guilt running the rest of your day, you protect some time for rest, and your sense of worth doesn't swing hard with your output or other people's approval. Those are hard-won, and they make your yes worth more, because people can trust that you mean it. None of that makes you immune to pressure. Limits tend to erode quietly, in a new job, a family crisis, or a season when someone you love needs a great deal. The question worth asking now is what your limits are for. Kept only to protect your comfort, they harden; kept to protect what God has actually given you to do, they make room for it.",
+        steps: [
+          "Look at the coming month and name the one commitment most likely to crowd out rest or prayer. Decide now what you'll say if it grows.",
+          "Read Mark 1:35-38 and notice what Jesus says yes to when he doesn't go back to the crowd that is looking for him. Write one sentence about what your own yes is for in this season.",
+          "If someone near you can't say no, help them practice. Offer to be the person they call after they've said it.",
+        ],
+        next: [
+          { kind: "Wisdom", title: "Setting Boundaries", href: "/wisdom/setting-boundaries" },
+          { kind: "How-to", title: "How to Build a Rule of Life", href: "/how-tos/sf-how-to-build-a-rule-of-life" },
+        ],
+      },
+      Developing: {
+        interpretation:
+          "Some of the time you hold a line, and it costs you more than it should. You may say no and then spend hours replaying it, protect your rest until someone needs something, or feel your worth rise on a productive day and sink on a slow one. That usually means you believe in limits but haven't yet made peace with disappointing people. Wanting limits doesn't make you selfish, and struggling to keep them doesn't make you weak. The step in front of you is to practice small, clear refusals and let the guilt pass without obeying it. Guilt after a right no is real, but it isn't proof that you did wrong.",
+        steps: [
+          "This week, say no to one small request you'd normally accept out of guilt. Keep it short and kind, without a long explanation. Afterward, notice how long the guilt lasts and what actually happened.",
+          "Block two hours this week for rest or prayer, and treat them like an appointment you can't move. If someone asks, *I have a commitment* is true.",
+          "When you catch yourself grading the day by what you got done, read Genesis 1:26-31. God called everything he had made very good, people included, on the day they were made and before they had done a thing.",
+        ],
+        next: [
+          { kind: "Wisdom", title: "Saying No", href: "/wisdom/saying-no" },
+          { kind: "Life", title: "Where Does Your Identity and Worth Come From?", href: "/life/identity-and-worth" },
+        ],
+      },
+      Struggling: {
+        interpretation:
+          "From your answers, other people's needs and opinions are setting most of the terms of your life. Saying no probably brings guilt that lingers, rest gives way whenever someone needs something, and your sense of worth rises and falls with how much you produce and how others see you. People often land here because they were praised for being dependable, grew up keeping the peace, or work where the needs never end, and ministry can be exactly that kind of work. None of this makes you a bad person; often it's love that got bent by fear. Proverbs 29:25 calls the fear of man a snare, and in the same verse names the way out, which is trusting the Lord.",
+        steps: [
+          "Read Mark 1:35-38. Everyone was looking for Jesus, and he went on to other towns because he knew what he had come to do. Write down one demand you've been treating as a command, and ask whether it really is one.",
+          "Practice one sentence until it comes easily: *I can't take that on right now.* Use it once this week without adding a reason.",
+          "Tell a friend or your pastor where you're overextended, and ask them to check on you in two weeks.",
+        ],
+        next: [
+          { kind: "Wisdom", title: "People-Pleasing and the Fear of Man", href: "/wisdom/people-pleasing" },
+          { kind: "Life", title: "Where Does Your Identity and Worth Come From?", href: "/life/identity-and-worth" },
+        ],
+      },
+      Critical: {
+        interpretation:
+          "Your answers suggest you have very little room of your own right now. Saying no may feel close to impossible, rest disappears whenever anyone needs anything, and your worth may feel tied almost entirely to being useful or approved of. That's an exhausting way to live, and it's rarely chosen; it grows out of years of being needed, or of learning that love had to be earned. It doesn't mean you're failing at being a Christian. Laying down your life is not the same as having no life left to lay down. If the person you can't refuse is someone you're afraid of, that's a matter of safety before it's a matter of boundaries, and the question at the top of this page is the place to start.",
+        steps: [
+          "Tell one person you trust how stretched you are: a friend, a pastor, or a licensed counselor. Ask them to help you decide which commitments can wait.",
+          "Choose one hour this week that belongs to no one else, and keep it even if you spend it sitting quietly. It's a small way of practicing the truth that the world does not rest on you.",
+        ],
+        next: [
+          { kind: "Wisdom", title: "Codependency and Losing Yourself", href: "/wisdom/codependency" },
+          { kind: "Wisdom", title: "Toxic and Harmful Relationships", href: "/wisdom/toxic-relationships" },
+        ],
+      },
+    },
+  },
+  "Grief & Lament": {
+    scripture: {
+      ref: "Psalm 34:18",
+      text: "The LORD is near to the brokenhearted; He saves the contrite in spirit.",
+    },
+    levels: {
+      Strong: {
+        interpretation:
+          "You let loss be loss. You can grieve without rushing to the lesson, stay with your own sadness without forcing it away, and sit with someone else's pain without reaching for a quick answer. That's a gift, and it makes you a safe person to have nearby in someone's worst week. It doesn't mean grief is easy for you, or that you've finished grieving what you've lost. Grief comes in waves, and a steady score today doesn't promise calm water later. Growth here often turns outward: learning the Bible's prayers of lament well enough to lend them to others, and staying close after the funeral, when most people have gone back to normal.",
+        steps: [
+          "Think of someone who has lost a person they love in the past year. Contact them this week without an agenda, and say the name of the one they lost.",
+          "Read Psalm 88, which ends in darkness with no turn to praise, and notice that it's in the Bible anyway. Keep it in mind for the next time someone tells you they can't pray.",
+        ],
+        next: [
+          { kind: "Study guide", title: "Lament: A Bible Study on Praying Your Pain", href: "/studyguides/lament" },
+          { kind: "How-to", title: "How to Help a Friend Through Loss", href: "/how-tos/ss-how-to-help-a-friend-through-loss" },
+        ],
+      },
+      Developing: {
+        interpretation:
+          "You can grieve, but something in you hurries it. You may move quickly to what the loss taught you, let yourself be sad only for a while before getting back to business, or offer comfort a little too soon when someone else is hurting. That's understandable. Many of us were taught, at home or at church, that sadness should be brief and faith should look cheerful. None of this makes you cold, or your faith shallow. It means lament, the kind of prayer that tells God plainly what hurts, may still feel unfamiliar. The Psalms are full of it, and it's a prayer you can learn.",
+        steps: [
+          "Name one loss you haven't fully grieved: a person, a relationship, a hope, a season of life. Write it down, then tell God about it in your own words, out loud if you can. It doesn't need to be tidy.",
+          "Read Psalm 13 aloud. In six verses it moves from asking God how long to trusting him, and it's a pattern you can borrow for your own prayer.",
+          "The next time someone you love is grieving, try saying only, *I'm so sorry. I'm here.* Then stay, and let the silence be.",
+        ],
+        next: [
+          { kind: "How-to", title: "How to Practice Lament", href: "/how-tos/ss-how-to-practice-lament" },
+          { kind: "Study guide", title: "Lament: A Bible Study on Praying Your Pain", href: "/studyguides/lament" },
+        ],
+      },
+      Struggling: {
+        interpretation:
+          "Grief doesn't seem to have much room in your life right now. You may move on from losses quickly, keep sadness at a distance, or feel pressure to fix other people's pain because sitting in it is too hard. Often that's because there's more grief underneath than feels safe to open, or because you've been the strong one for so long that no one expects you to fall apart. It doesn't mean you didn't love what you lost. But grief that isn't grieved doesn't disappear. It tends to come out as irritability, tiredness, numbness, or sadness that arrives without warning. If the loss is a death, the Find Help page on grief was written for exactly where you are.",
+        steps: [
+          "Set aside twenty minutes this week to write about one loss you've kept at a distance: what you miss, what you're angry about, what you wish you'd said. Then read it to God as a prayer.",
+          "Read Psalm 34:18 each morning this week. It doesn't promise the pain will leave soon. It promises that God is near to the brokenhearted while the pain is here.",
+          "Tell one person about the loss, someone who will listen without trying to fix it.",
+        ],
+        next: [
+          { kind: "Find help", title: "Someone I love has died", href: "/help/grief" },
+          { kind: "How-to", title: "How to Practice Lament", href: "/how-tos/ss-how-to-practice-lament" },
+        ],
+      },
+      Critical: {
+        interpretation:
+          "Grief may be very close to the surface for you, or buried so deep it has gone quiet. You may be avoiding sadness entirely, unable to cry or unable to stop, and other people's pain may feel almost unbearable to be near. If your loss is recent, much of this is simply what grief does, and it doesn't mean you're grieving wrong. If it has gone on a long time, or it's keeping you from sleeping, eating, working, or caring for the people who depend on you, please talk with a doctor, a licensed counselor, or a pastor. Grief this heavy is too much to carry alone, and getting help is not a sign of weak faith.",
+        steps: [
+          "Tell one person this week what you've lost and how hard it has been. If no one comes to mind, start with a pastor, or ask your doctor where to find grief support near you.",
+          "Let yourself pray without having to sound faithful. Psalm 88 says only how dark it is, and God kept it in Scripture.",
+        ],
+        next: [
+          { kind: "Find help", title: "Someone I love has died", href: "/help/grief" },
+          { kind: "Care plan", title: "Eight Weeks of Walking With Loss", href: "/plans/grief" },
+        ],
+      },
+    },
+  },
+  Forgiveness: {
+    scripture: {
+      ref: "Colossians 3:13",
+      text: "Bear with one another and forgive any complaint you may have against someone else. Forgive as the Lord forgave you.",
+    },
+    levels: {
+      Strong: {
+        interpretation:
+          "You don't seem to be carrying much resentment. You've let go of old injuries rather than replaying them, you don't keep a running tally of what people owe you, and you can forgive without feeling you have to trust again right away. That's real freedom, and it follows the order of Colossians 3:13, where forgiving others rests on having been forgiven by the Lord. It isn't a sign you've never been badly hurt, or a promise that the next wound will be easy. Some injuries take years, and a new one can reopen old ones. The harder half may be asking forgiveness as readily as you give it, and staying patient with someone who is still stuck.",
+        steps: [
+          "Ask whether there's anyone you need to ask forgiveness from. If a name comes to mind, write down what you did, without excuses, and decide when you'll talk to them.",
+          "If a friend is struggling to forgive, don't hurry them. Hear the whole story first, and remind them that forgiving is not the same as pretending it didn't happen.",
+        ],
+        next: [
+          { kind: "Life", title: "How Do You Forgive Someone Who Really Hurt You?", href: "/life/forgiveness-the-hardest-grace" },
+          { kind: "How-to", title: "How to Confess Sin and Walk in Repentance", href: "/how-tos/sf-how-to-confess-sin-and-walk-in-repentance" },
+        ],
+      },
+      Developing: {
+        interpretation:
+          "There are things you've truly forgiven, and a few that haven't let go of you yet. One or two injuries may still replay at odd moments, a quiet tally may be running in a close relationship, or you may be unsure whether forgiving someone means you have to trust them again. This isn't bitterness. It means forgiveness is doing what it usually does, which is taking longer than one decision. Forgiving is a choice to release a debt, often made again each time the memory returns. Trust is something else. It's rebuilt slowly by changed behavior, and you can forgive someone without handing it back.",
+        steps: [
+          "Write down the one injury that replays most often, and next to it, what it cost you. You can't release a debt you won't admit was taken.",
+          "When the memory returns this week, pray Colossians 3:13 as a decision rather than a feeling. Expect to make that decision more than once.",
+          "Notice the tally you keep in your closest relationship. For one week, do one kind thing a day without recording it anywhere, even in your head.",
+        ],
+        next: [
+          { kind: "Life", title: "How Do You Forgive Someone Who Really Hurt You?", href: "/life/forgiveness-the-hardest-grace" },
+          { kind: "How-to", title: "How to Forgive Someone Who Has Not Apologized", href: "/how-tos/rel-how-to-forgive-someone-who-has-not-apologized" },
+        ],
+      },
+      Struggling: {
+        interpretation:
+          "By your own account, you're carrying real resentment, and it's costing you energy every day. An old hurt may play on a loop, you may be keeping careful track of what others owe you, and forgiveness may feel impossible because it seems to mean letting someone off the hook or trusting them again. It means neither. You can forgive someone and still call what they did wrong, still want justice, and still keep your distance. Struggling here doesn't make you less of a Christian. Often it means you were truly wronged, and no one has helped you sort out what forgiveness asks of you and what it doesn't. That help exists, and it's worth finding.",
+        steps: [
+          "Write a letter you won't send to the person who hurt you. Say exactly what they did and what it cost. If you can, end it with one line handing the debt to God; if you can't write that line yet, leave it blank for now.",
+          "Talk with a pastor or a licensed counselor about this injury, especially if it involves abuse or betrayal. Forgiving someone never requires putting yourself back within their reach.",
+        ],
+        next: [
+          { kind: "Find help", title: "I can't forgive them", href: "/help/cant-forgive" },
+          { kind: "Life", title: "How Do You Forgive Someone Who Really Hurt You?", href: "/life/forgiveness-the-hardest-grace" },
+        ],
+      },
+      Critical: {
+        interpretation:
+          "Resentment seems to have a strong hold on you right now. A hurt may replay constantly, the tally of what you're owed may feel like the only fair response, and forgiving may feel like betraying yourself or the truth. If someone did you serious harm, that reaction makes sense, and nothing here asks you to call it small. Forgiving doesn't mean excusing, forgetting, reconciling, or keeping quiet. If the person who hurt you could still hurt you, your safety comes first, before any conversation about forgiveness, and the question at the top of this page can connect you with help. When resentment is this heavy, a pastor or a licensed counselor can walk through it with you.",
+        steps: [
+          "Find one person, a pastor or a licensed counselor, and tell them the story from the beginning. You don't need to be ready to forgive to start.",
+          "Pray honestly about the injury, even angrily. Psalm 55 is a prayer about betrayal by a close friend, and bringing your anger to God is where letting go of it can begin.",
+        ],
+        next: [
+          { kind: "Find help", title: "I can't forgive them", href: "/help/cant-forgive" },
+          { kind: "Care plan", title: "Eight Weeks Toward Setting Down the Debt", href: "/plans/forgiveness" },
+        ],
+      },
+    },
+  },
+  "Rest & Sabbath": {
+    scripture: {
+      ref: "Deuteronomy 5:15",
+      text: "Remember that you were a slave in the land of Egypt, and that the LORD your God brought you out of there with a mighty hand and an outstretched arm. That is why the LORD your God has commanded you to keep the Sabbath day.",
+    },
+    levels: {
+      Strong: {
+        interpretation:
+          "You have a real rhythm of rest. You stop on purpose rather than only when you collapse, you can put your phone away without much pull, and you can call a workday finished while the list is still long. That's harder than it sounds in a culture that treats busyness as a sign of importance, and it says something about what you trust. Your rest isn't safe for good, though; a new job, a new baby, or a crisis can take it quickly. Guard the rhythm, and make it generous. In Deuteronomy 5:14 the Sabbath reaches servants, animals, and foreigners too, so that others can rest as you do.",
+        steps: [
+          "Read Deuteronomy 5:12-15 and notice who else the Sabbath is for. Ask whose rest depends on yours, whether a spouse, a coworker, or someone you supervise, and make one change this month that gives them more of it.",
+          "Write down what your weekly rest actually includes, so you'll notice when it starts to slip.",
+        ],
+        next: [
+          { kind: "Life", title: "What Is Sabbath Rest, and How Do You Keep It?", href: "/life/rest-and-the-sabbath" },
+          { kind: "Study guide", title: "Sabbath: A Bible Study on Rest and Hurry", href: "/studyguides/sabbath" },
+        ],
+      },
+      Developing: {
+        interpretation:
+          "Rest is part of your life, though not yet a dependable part. Some weeks have a real stop in them and others run straight through, your phone pulls at you more than you'd like, and ending a workday with tasks undone may still leave you uneasy. A full season makes this easy to fall into. Resting doesn't make you lazy, and missing a week doesn't make you faithless. It means rest hasn't yet become a rhythm you keep regardless of how the week goes. That's what the Sabbath was given to be: a stop built into every week, because the work is never finished and you were never meant to be its slave.",
+        steps: [
+          "Choose one block of time this week, half a day if a whole day is impossible, with no work, no email, and no errands. Plan it ahead and tell someone, so it's harder to give away.",
+          "Put your phone in another room for two hours one evening. Notice the pull to check it, and what you do with the time instead.",
+          "At the end of each workday, write down the one thing that must happen tomorrow, then close the list and stop.",
+        ],
+        next: [
+          { kind: "How-to", title: "How to Keep a Sabbath", href: "/how-tos/sf-how-to-keep-a-sabbath" },
+          { kind: "Life", title: "What Is Sabbath Rest, and How Do You Keep It?", href: "/life/rest-and-the-sabbath" },
+          { kind: "How-to", title: "How to Unhook From Your Screens", href: "/how-tos/body-how-to-unhook-from-your-screens" },
+        ],
+      },
+      Struggling: {
+        interpretation:
+          "Rest mostly comes when you run out, not when you choose it. You may push until you collapse, feel uneasy away from your phone, and find it hard to stop while anything is undone. That isn't a lack of discipline. People land here for real reasons: demanding work, small children, caring for someone, money pressure, or a sense that your worth depends on being useful. Some of those pressures won't change this month. But Deuteronomy 5:15 ties the Sabbath to the memory of slavery: people who had been worked without mercy in Egypt were commanded to stop. A life with no stop in it is not the life God gave his people, and the first step back can be small.",
+        steps: [
+          "Read Deuteronomy 5:15 and ask what in your life is acting like a taskmaster: an inbox, an expectation, a fear. Name it on paper.",
+          "This week, choose two hours with no work and no phone, and protect them the way you'd protect an appointment with your doctor.",
+          "Go to bed thirty minutes earlier three nights this week, and leave the phone outside the bedroom.",
+        ],
+        next: [
+          { kind: "How-to", title: "How to Rest When You Feel You Cannot Stop", href: "/how-tos/wm-how-to-rest-when-you-feel-you-cannot-stop" },
+          { kind: "Life", title: "What Is Sabbath Rest, and How Do You Keep It?", href: "/life/rest-and-the-sabbath" },
+        ],
+      },
+      Critical: {
+        interpretation:
+          "From what you've described, you're getting almost no rest right now. You may be running until you drop, anxious whenever the phone is out of reach, and unable to stop while anything is unfinished, which in most lives means never. A pace like this wears a person down, and your body may already be telling you so. You're not weak, and you haven't failed God. The likelier story is that you've carried too much for too long. Before you try to build a Sabbath, talk to your doctor about how tired you are, and tell someone close how little rest you're getting. At this point rest isn't a discipline to master. It's something to receive, and you'll likely need help to receive it.",
+        steps: [
+          "Talk to your doctor this month about your exhaustion, and be specific about your sleep, your energy, and how long it has been like this.",
+          "Tonight, stop an hour earlier than usual. Put the phone in another room, and leave something unfinished on purpose.",
+          "Ask one person to carry something for you this week: a meal, a ride, an hour of childcare, a task at work. Receiving help is part of rest.",
+        ],
+        next: [
+          { kind: "Find help", title: "I feel empty, and I don't know why", href: "/help/empty" },
+          { kind: "Life", title: "What Is Sabbath Rest, and How Do You Keep It?", href: "/life/rest-and-the-sabbath" },
+        ],
+      },
+    },
+  },
+};
+
 function getCategoryResult(name: string, score: number): CategoryResult {
   const maxScore = 15;
   const pct = score / maxScore;
 
-  let level: string;
+  let level: Level;
   if (pct >= 0.8) level = "Strong";
   else if (pct >= 0.6) level = "Developing";
   else if (pct >= 0.4) level = "Struggling";
   else level = "Critical";
 
-  const data: Record<
-    string,
-    {
-      scripture: { ref: string; text: string };
-      steps: string[];
-      articleLink: { title: string; href: string };
-    }
-  > = {
-    "Self-Awareness": {
-      scripture: {
-        ref: "Psalm 139:23--24",
-        text: "Search me, God, and know my heart; test me and know my anxious thoughts. See if there is any offensive way in me, and lead me in the way everlasting.",
-      },
-      steps: [
-        "Three times today, stop and name what you are feeling in one word. Not 'fine.' Not 'busy.' An actual emotion: frustrated, grateful, anxious, content, angry, hopeful. Write it down. The act of naming is the beginning of self-awareness -- you cannot steward what you have not identified.",
-        "At the end of each day this week, write two sentences: 'Today I felt _______ when _______.' Do not analyze. Do not moralize. Just record. After seven days, read them all. The patterns will teach you things about yourself that years of ignoring your inner life never could.",
-        "Ask one person who knows you well: 'What emotion do you see me avoid most often?' Listen to their answer without defending yourself. Their observation may be more accurate than your self-assessment, because the things we avoid are precisely the things we cannot see.",
-      ],
-      articleLink: {
-        title: "Essays on the inner life",
-        href: "/writing?pillar=living-well-after-christendom",
-      },
-    },
-    Boundaries: {
-      scripture: {
-        ref: "Matthew 11:28--30",
-        text: "Come to me, all you who are weary and burdened, and I will give you rest. Take my yoke upon you and learn from me, for I am gentle and humble in heart, and you will find rest for your souls.",
-      },
-      steps: [
-        "Identify one recurring request you consistently say yes to that costs you more than anyone knows. This week, say no to it. Not 'maybe later.' No. You will feel guilty. That guilt is not the voice of God. It is the voice of a pattern that has been running your life unchecked.",
-        "Write down the sentence: 'I am not responsible for other people's emotions.' Put it where you will see it daily. This is not selfishness. It is the theological recognition that you are not the savior. There is one Savior, and He is not asking you to destroy yourself on behalf of everyone else's comfort.",
-        "Block two hours this week that belong to you -- not to your family, not to your job, not to your church. Guard those hours the way you would guard a meeting with your boss. Your refusal to rest is not faithfulness. It is a functional denial that God can run the world without you.",
-      ],
-      articleLink: {
-        title: "Essays on limits, boundaries, and rest",
-        href: "/writing?pillar=living-well-after-christendom",
-      },
-    },
-    "Grief & Lament": {
-      scripture: {
-        ref: "Psalm 34:18",
-        text: "The Lord is close to the brokenhearted and saves those who are crushed in spirit.",
-      },
-      steps: [
-        "Name one loss you have never fully grieved -- a relationship, a dream, a season of life, a person. Write it down. Then tell God about it, out loud, in your own words. Not a polished prayer. A real one. Lament is not weakness. It is the form of worship the Psalms use more than any other.",
-        "The next time someone you love is grieving, resist the instinct to explain, comfort, or quote Scripture. Instead, say: 'I am here. I am not going anywhere.' Then be quiet. Presence without commentary is the rarest gift in the modern church, and it is the one grieving people actually need.",
-        "Read Psalm 88 -- the only Psalm that ends in darkness, with no resolution. Sit with it. Do not rush to Psalm 89. Let the darkness of 88 do its work. The Bible includes a prayer that God does not answer, which means your unanswered prayers belong in the canon of faith too.",
-      ],
-      articleLink: {
-        title: "Writing for grief — essays and real help",
-        href: "/grief",
-      },
-    },
-    Forgiveness: {
-      scripture: {
-        ref: "Colossians 3:13",
-        text: "Bear with each other and forgive one another if any of you has a grievance against someone. Forgive as the Lord forgave you.",
-      },
-      steps: [
-        "Write the name of the person you resent most. Not someone who inconvenienced you. The person whose face surfaces when you are trying to sleep. Write what they did. Then write this sentence: 'Holding this costs me more than releasing it.' You are not excusing them. You are freeing yourself from the prison of rehearsal.",
-        "Practice the distinction between forgiveness and trust. Forgiveness is a decision you make before God. Trust is earned over time through changed behavior. You can forgive someone completely and still not give them access to the parts of you they damaged. Both are true. Neither cancels the other.",
-        "Ask God to show you where you are keeping score -- in your marriage, your friendships, your work. The mental ledger of who owes you what is exhausting to maintain, and it poisons every relationship it touches. Lay the ledger down. Not because the debts are not real. Because carrying them is killing you.",
-      ],
-      articleLink: {
-        title: "Essays on forgiveness and repair",
-        href: "/writing?track=marriage",
-      },
-    },
-    "Rest & Sabbath": {
-      scripture: {
-        ref: "Exodus 20:8--10",
-        text: "Remember the Sabbath day by keeping it holy. Six days you shall labor and do all your work, but the seventh day is a sabbath to the Lord your God.",
-      },
-      steps: [
-        "Choose one day this week -- or even half a day -- and declare it sabbath. No email. No work. No productivity. Do something that replenishes you: walk outside, cook a meal slowly, read a book that has nothing to do with your job. If this feels impossible, that is precisely the evidence that you need it.",
-        "Put your phone in another room for two hours. Not on silent -- in another room. Notice what happens in your body when you cannot check it. That anxious pull is not a sign that you are needed. It is a sign of how thoroughly the phone has trained you to reach for it. Reclaim the quiet. God speaks in it.",
-        "At the end of today, before you go to bed, say out loud: 'It is enough.' The work is not finished. The inbox is not empty. The house is not clean. And it is enough. God rested on the seventh day not because the work of creation was perfect but because it was finished for that day. Stopping at the end of a day is not quitting; it is keeping the pattern he set.",
-      ],
-      articleLink: {
-        title: "Essays on sabbath and rest",
-        href: "/writing?pillar=living-well-after-christendom",
-      },
-    },
-  };
-
+  const guide = AREA_GUIDES[name];
   return {
     name,
     score,
     maxScore,
     level,
-    ...data[name],
+    scripture: guide.scripture,
+    ...guide.levels[level],
   };
 }
 
-function getOverallInterpretation(totalScore: number): {
+interface OverallBand {
   label: string;
-  description: string;
-} {
+  /** 150 to 300 words: what this usually means, what it doesn't, why people land here, what to do first. */
+  paragraphs: string[];
+  /** The two lower bands show the talk-to-a-person block before anything else. */
+  seekHelp: boolean;
+  /** The one next step this band leads with. */
+  next: { lead: string; cta: string; href: string };
+  /** A slower step for later, when there is one. */
+  later?: { lead: string; title: string; href: string };
+}
+
+function getOverallInterpretation(totalScore: number): OverallBand {
   const maxTotal = 75;
   const pct = totalScore / maxTotal;
 
   if (pct >= 0.8) {
     return {
       label: "Emotionally Grounded",
-      description:
-        "Your inner life shows the marks of sustained attention. You have developed practices and postures that keep you rooted, even when the ground shifts. This does not mean you are without struggle -- it means you have learned to bring your struggles into the light rather than burying them. The ongoing work is maintenance: continuing the disciplines that brought you here, and watching for the slow drift that happens when we assume we have arrived.",
+      paragraphs: [
+        "Your answers describe an inner life that is getting real attention. Most of the time you can name what you feel while you're feeling it, say no without guilt running the rest of your day, let sorrow be sorrow, set down old debts, and stop when the day is done. A result like this usually means some habits have been doing quiet work for a long time: a way of praying, resting, or telling the truth that has held long enough to shape you.",
+        "It doesn't mean you're finished, and it doesn't promise that hard seasons won't come. It also doesn't make you a measuring stick for anyone else. Fifteen statements can't see everything, and a strong score can reflect a calm stretch of life as much as deep roots. People usually land here for one of a few reasons: they've come through something hard and learned from it, someone taught them these habits early, or life is lighter right now than it has been. It's worth knowing which is true of you.",
+        "Start with your lowest area below, even if it still scored well, because drift usually begins wherever we stop paying attention. Keep the practices that brought you here, and ask one person who knows you well whether they see what these answers describe. Then look around you. Steady people are often the first ones a grieving or exhausted friend turns to, and some of the steps below are about being that kind of friend without taking over.",
+      ],
+      seekHelp: false,
+      next: {
+        lead: "If you'd like a way to keep what's working and strengthen what isn't, there's an eight-week plan that gives each part of life its own week, from the inner life and rest to friendship, work, and the local church, and ends with a simple rule of life you can keep.",
+        cta: "Eight Weeks Toward One Undivided Life",
+        href: "/plans/whole-life",
+      },
     };
   }
   if (pct >= 0.6) {
     return {
       label: "Growing but Uneven",
-      description:
-        "You have real strength in some areas and significant gaps in others. This is normal and human. Most of us overdevelop the emotional skills that come naturally and neglect the ones that cost us. The invitation is not to feel guilty about the gaps but to name them honestly and begin the slow work of growth. That work is never finished in this life, and it does not need to be. It needs to be started.",
+      paragraphs: [
+        "Your answers show real strength in some areas and real strain in others. Most of us grow the capacities that come naturally and neglect the ones that cost us something, so a person who reads their own feelings well may still be unable to say no, and a person who rests well may still be replaying an old injury every night. The scores below show where your own strength and strain sit.",
+        "This result doesn't mean you're failing, and it doesn't mean your faith is weak. It means the weight of your life isn't carried evenly, and the weakest place is holding more than it can hold for long. The reasons are usually ordinary: a demanding season at work or at home, a loss that never got grieved, a family that taught some of these things and not others, or a church culture that praised busyness more than rest. Many of us helped build that culture by admiring the people who never stopped.",
+        "Begin with the one or two areas below that scored lowest, and read what each says about your level. Don't try to fix all five at once. Choose one step in your lowest area, give it two weeks, and tell one person which step you chose, so it doesn't become a private resolution that quietly fades. If your lowest area involves an old grief or a deep injury, a conversation with a pastor or a licensed counselor may do more than any practice on this page. Your strong areas are real, and they're what will carry you while you tend the weak one.",
+      ],
+      seekHelp: false,
+      next: {
+        lead: "When some parts of life are strong and others are running on leftovers, it helps to give each part its own attention. This eight-week plan does that one week at a time, starting with an honest look and ending with a rule of life that holds the parts together.",
+        cta: "Eight Weeks Toward One Undivided Life",
+        href: "/plans/whole-life",
+      },
     };
   }
   if (pct >= 0.4) {
     return {
       label: "Under Significant Strain",
-      description:
-        "Your results suggest that your inner life is carrying more weight than it was built to hold. This is not a character indictment, and it is not a diagnosis. It is a mirror. Many faithful people live in this zone for years because the church rewards productivity and punishes vulnerability. But the cost compounds. The areas where you scored lowest are not weaknesses to be ashamed of. They are the places where God is inviting you to do the most important work of your life.",
+      paragraphs: [
+        "Your answers suggest your inner life is carrying more than it was built to carry. Across several areas, the things that usually keep a person steady (knowing what you feel, protecting some rest, grieving what you've lost, letting go of old wrongs) are thin right now. You may be functioning well on the outside while running on less and less inside, and the people around you may not know.",
+        "This isn't a verdict on your character or your faith, and it isn't a diagnosis. A self-check can't tell you why you're depleted, only that your answers describe depletion. A result like this tends to follow a long season of giving more than you receive: caring for someone, carrying a hard job, leading others, absorbing a loss, or living for years under an unspoken rule to keep going and not complain. Churches can teach that rule without meaning to, and many of us have praised it in others while it wore them down.",
+        "Before you add any new discipline, tell one person the truth about how you are, someone who will listen before they try to fix anything: a friend, your pastor, or a licensed counselor. If the strain has lasted more than a few weeks, or it's changing your sleep, your appetite, or your ability to work, see your doctor too, since exhaustion and low mood can have physical causes worth checking. Then choose the lowest area below and take one small step there. The goal for now isn't to fix everything. It's to stop carrying all of it alone.",
+      ],
+      seekHelp: true,
+      next: {
+        lead: "For a season like this, there's an eight-week plan that starts where God started with Elijah, with bread and sleep, then moves to telling one person, letting a doctor look, and praying in the dark. Walking it alongside a counselor is wisdom, not weakness.",
+        cta: "Eight Weeks of Small Mercies",
+        href: "/plans/empty",
+      },
     };
   }
   return {
-    label: "Approaching Burnout",
-    description:
-      "These results point to a level of emotional and spiritual depletion that requires immediate attention -- not more effort, but a fundamental reorientation of how you are living. You cannot give what you do not have. The patterns that brought you here -- the overwork, the suppressed grief, the inability to rest, the unforgiven wounds -- are not sustainable. That is not a verdict on you; it is the reason this page will point you to a real person before it points you to a practice. The God who commands rest is not disappointed in you for needing it. He built it into the fabric of creation because He knew you would need it.",
+    label: "Running on Empty",
+    paragraphs: [
+      "Your answers describe someone running on very little. In most of these areas, what normally keeps a person steady is hard to reach right now: naming what you feel, saying no, grieving, letting go, and resting. That's a heavy place to be, and it took honesty to answer the way you did.",
+      "Before any practice on this page, please talk with a real person this week. Your doctor is a good first call, because exhaustion and emptiness can have physical causes worth checking. A licensed counselor can help you understand what's happening and what would help, and a pastor you trust can walk with you through it. You don't need the right words; you can print this page and bring it with you. Nothing here is medical advice.",
+      "This result isn't a diagnosis, and it isn't a verdict on your faith or your worth. These answers can show that you're depleted, but not why. It usually follows a long stretch of carrying too much: grief that never had room, a job or a household or a ministry with no off switch, years of saying yes, or an old hurt that still takes energy every day. It can change. Rest, help, and time will do more here than effort.",
+      "The page on feeling empty, linked below, says what to do tonight and when to get more help. If any of this has turned into thoughts of not wanting to be alive, call or text 988 now, at any hour.",
+    ],
+    seekHelp: true,
+    next: {
+      lead: "Before any plan or practice, read the page for when you feel empty. It says what to do tonight, when to see a doctor, and how to find a counselor.",
+      cta: "I feel empty, and I don't know why",
+      href: "/help/empty",
+    },
+    later: {
+      lead: "Later, when you're ready for something slower, there's an eight-week plan for this season:",
+      title: "Eight Weeks of Small Mercies",
+      href: "/plans/empty",
+    },
   };
+}
+
+/** Words a reader might say or think are marked *like this* in the copy above; set them in italics. */
+function withItalics(text: string) {
+  return text
+    .split(/\*([^*]+)\*/g)
+    .map((part, i) => (i % 2 === 1 ? <em key={i}>{part}</em> : part));
 }
 
 /* ── Saved progress (HS-5): survive a refresh mid-assessment ───── */
@@ -343,11 +643,11 @@ export default function EmotionalHealth() {
       <SEOMeta
         title="Emotional Health Self-Check: An Honest Look at Your Inner Life"
         description="A 15-question self-check on emotional and spiritual health: self-awareness, boundaries, grief, forgiveness, and rest. Not a diagnosis. Honest results, practical steps."
-        keywords="emotional health assessment, spiritual health test, self-awareness, boundaries, grief, forgiveness, sabbath rest, Christian mental health"
+        keywords="emotional health assessment, emotional health self-check, spiritual health check, self-awareness, boundaries, grief, forgiveness, sabbath rest, Christian mental health"
         structuredData={{
           "@context": "https://schema.org",
           "@type": "WebApplication",
-          name: "Emotional Health Assessment",
+          name: "Emotional Health Self-Check",
           description:
             "A 15-question self-check on emotional and spiritual health, not a diagnosis. Honest results, Scripture, and practical steps for each category.",
           url: "https://www.livewellbyjamesbell.co/tools/emotional-health",
@@ -389,7 +689,7 @@ export default function EmotionalHealth() {
           >
             Emotional Health{" "}
             <em style={{ fontStyle: "italic", color: "var(--mustard)" }}>
-              Assessment
+              Self-Check
             </em>
           </h1>
           <p
@@ -400,8 +700,21 @@ export default function EmotionalHealth() {
               fontFamily: "var(--B)",
             }}
           >
-            Fifteen statements. Five categories. An honest look at the inner
-            life that shapes everything else.
+            Fifteen statements about five parts of the inner life:
+            self-awareness, boundaries, grief, forgiveness, and rest. It takes a
+            few minutes. Answer for how things have really been lately, not how
+            you wish they were.
+          </p>
+          <p
+            style={{
+              fontSize: "17px",
+              lineHeight: 1.7,
+              fontFamily: "var(--B)",
+              margin: "12px 0 0",
+            }}
+          >
+            This is a self-check for reflection, not a test or a diagnosis, and
+            your answers stay on this device.
           </p>
         </div>
       </section>
@@ -549,7 +862,7 @@ export default function EmotionalHealth() {
                                   whiteSpace: "nowrap",
                                 }}
                               >
-                                {val} -- {RATING_LABELS[val]}
+                                {val}: {RATING_LABELS[val]}
                               </button>
                             ))}
                           </div>
@@ -590,7 +903,7 @@ export default function EmotionalHealth() {
           ) : (
             <>
               {/* Results */}
-              <ToolActions toolName="Emotional Health Assessment" onStartOver={handleReset} />
+              <ToolActions toolName="Emotional Health Self-Check" onStartOver={handleReset} />
               <SafetyCheck />
               <SelfCheckHistory
                 id="emotional-health"
@@ -659,7 +972,7 @@ export default function EmotionalHealth() {
                     opacity: 0.7,
                   }}
                 >
-                  Take Assessment Again
+                  Take the self-check again
                 </button>
               </div>
 
@@ -728,21 +1041,23 @@ export default function EmotionalHealth() {
                 >
                   {overall.label}
                 </h2>
-                <p
-                  style={{
-                    fontSize: "16px",
-                    lineHeight: 1.8,
-                    color: "var(--ink)",
-                    fontFamily: "var(--B)",
-                    maxWidth: "68ch",
-                    margin: 0,
-                  }}
-                >
-                  {overall.description}
-                </p>
+                {overall.paragraphs.map((para, i) => (
+                  <p
+                    key={i}
+                    style={{
+                      fontSize: "16px",
+                      lineHeight: 1.8,
+                      color: "var(--ink)",
+                      fontFamily: "var(--B)",
+                      maxWidth: "68ch",
+                      margin: i === 0 ? 0 : "16px 0 0",
+                    }}
+                  >
+                    {withItalics(para)}
+                  </p>
+                ))}
 
-                {(overall.label === "Under Significant Strain" ||
-                  overall.label === "Approaching Burnout") && (
+                {overall.seekHelp && (
                   <div
                     style={{
                       marginTop: "24px",
@@ -766,7 +1081,7 @@ export default function EmotionalHealth() {
                     </p>
                     <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
                       <a href="tel:988" style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--ink)", textDecoration: "none" }}>
-                        988 Suicide &amp; Crisis Lifeline — call or text 988, any hour →
+                        988 Suicide &amp; Crisis Lifeline: call or text 988, any hour →
                       </a>
                       <a href="https://www.psychologytoday.com/us/therapists" target="_blank" rel="noopener noreferrer" style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--ink)", textDecoration: "none" }}>
                         Find a licensed counselor near you →
@@ -797,7 +1112,7 @@ export default function EmotionalHealth() {
                 </div>
               </div>
 
-              {/* Eight-Week Plan CTA */}
+              {/* The next step this band leads with */}
               <div
                 style={{
                   background: "var(--card)",
@@ -829,12 +1144,10 @@ export default function EmotionalHealth() {
                     margin: "0 0 20px",
                   }}
                 >
-                  If anxiety or heaviness showed up in these answers, there is
-                  an eight-week plan toward a quieter mind. And walking it
-                  while seeing a counselor is wisdom, not weakness.
+                  {overall.next.lead}
                 </p>
                 <Link
-                  href="/plans/anxiety"
+                  href={overall.next.href}
                   style={{
                     display: "inline-flex",
                     alignItems: "center",
@@ -850,9 +1163,34 @@ export default function EmotionalHealth() {
                     textDecoration: "none",
                   }}
                 >
-                  Start the eight-week plan
+                  {overall.next.cta}
                   <ChevronRight size={16} />
                 </Link>
+                {overall.later && (
+                  <p
+                    style={{
+                      fontSize: "15px",
+                      lineHeight: 1.7,
+                      color: "var(--ink-muted)",
+                      fontFamily: "var(--B)",
+                      maxWidth: "68ch",
+                      margin: "20px 0 0",
+                    }}
+                  >
+                    {overall.later.lead}{" "}
+                    <Link
+                      href={overall.later.href}
+                      style={{
+                        color: "var(--ink)",
+                        fontWeight: 600,
+                        textDecoration: "none",
+                        borderBottom: "1px solid var(--mustard)",
+                      }}
+                    >
+                      {overall.later.title}
+                    </Link>
+                  </p>
+                )}
               </div>
 
               {/* Category Breakdown */}
@@ -967,6 +1305,20 @@ export default function EmotionalHealth() {
                       />
                     </div>
 
+                    {/* What this level means in this area */}
+                    <p
+                      style={{
+                        fontSize: "16px",
+                        lineHeight: 1.75,
+                        color: "var(--ink)",
+                        fontFamily: "var(--B)",
+                        maxWidth: "68ch",
+                        margin: "0 0 24px",
+                      }}
+                    >
+                      {withItalics(cat.interpretation)}
+                    </p>
+
                     {/* Scripture */}
                     <div
                       style={{
@@ -1001,9 +1353,9 @@ export default function EmotionalHealth() {
                           paddingBottom: "1px",
                         }}
                       >
-                        {cat.scripture.ref} — read the full passage
+                        Read {cat.scripture.ref} in context
                       </Link>
-                      <ScriptureNote rendering="unverified" />
+                      <ScriptureNote rendering="bsb" />
                     </div>
 
                     {/* Practical steps */}
@@ -1052,70 +1404,94 @@ export default function EmotionalHealth() {
                               margin: 0,
                             }}
                           >
-                            {step}
+                            {withItalics(step)}
                           </p>
                         </div>
                       ))}
                     </div>
 
-                    {/* Article link */}
-                    <a
-                      href={cat.articleLink.href}
+                    {/* Next steps for this area at this level */}
+                    <h4
                       style={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "space-between",
-                        padding: "14px 20px",
-                        background: "var(--bone)",
-                        borderRadius: "6px",
-                        textDecoration: "none",
-                        transition: "background 0.2s",
-                      }}
-                      onMouseEnter={(e) => {
-                        e.currentTarget.style.background = "var(--bone-warm)";
-                      }}
-                      onMouseLeave={(e) => {
-                        e.currentTarget.style.background = "var(--bone)";
+                        fontSize: "12px",
+                        fontWeight: 700,
+                        letterSpacing: "0.12em",
+                        color: "var(--ink-muted)",
+                        fontFamily: "var(--U)",
+                        marginBottom: "12px",
                       }}
                     >
-                      <div>
-                        <span
+                      WHERE TO GO NEXT
+                    </h4>
+                    <div
+                      style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        gap: "8px",
+                      }}
+                    >
+                      {cat.next.map((n) => (
+                        <Link
+                          key={n.href}
+                          href={n.href}
                           style={{
-                            fontSize: "10px",
-                            fontWeight: 700,
-                            letterSpacing: "0.15em",
-                            color: "var(--mustard-text)",
-                            fontFamily: "var(--U)",
-                            display: "block",
-                            marginBottom: "4px",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "space-between",
+                            gap: "12px",
+                            padding: "14px 20px",
+                            background: "var(--bone)",
+                            borderRadius: "6px",
+                            textDecoration: "none",
+                            transition: "background 0.2s",
+                          }}
+                          onMouseEnter={(e) => {
+                            e.currentTarget.style.background = "var(--bone-warm)";
+                          }}
+                          onMouseLeave={(e) => {
+                            e.currentTarget.style.background = "var(--bone)";
                           }}
                         >
-                          RELATED READING
-                        </span>
-                        <span
-                          style={{
-                            fontSize: "15px",
-                            fontFamily: "var(--F)",
-                            fontWeight: 400,
-                            fontStyle: "italic",
-                            color: "var(--ink)",
-                          }}
-                        >
-                          {cat.articleLink.title}
-                        </span>
-                      </div>
-                      <ChevronRight
-                        size={16}
-                        style={{ opacity: 0.4, flexShrink: 0 }}
-                      />
-                    </a>
+                          <div>
+                            <span
+                              style={{
+                                fontSize: "10px",
+                                fontWeight: 700,
+                                letterSpacing: "0.15em",
+                                color: "var(--mustard-text)",
+                                fontFamily: "var(--U)",
+                                display: "block",
+                                marginBottom: "4px",
+                              }}
+                            >
+                              {n.kind.toUpperCase()}
+                            </span>
+                            <span
+                              style={{
+                                fontSize: "15px",
+                                fontFamily: "var(--F)",
+                                fontWeight: 400,
+                                fontStyle: "italic",
+                                color: "var(--ink)",
+                              }}
+                            >
+                              {n.title}
+                            </span>
+                          </div>
+                          <ChevronRight
+                            size={16}
+                            style={{ opacity: 0.4, flexShrink: 0 }}
+                          />
+                        </Link>
+                      ))}
+                    </div>
                   </div>
                 ))}
               </div>
 
               {/* Bottom CTA */}
               <a
-                href="/writing"
+                href="/help"
                 style={{
                   display: "flex",
                   alignItems: "center",
@@ -1146,7 +1522,7 @@ export default function EmotionalHealth() {
                       marginBottom: "6px",
                     }}
                   >
-                    KEEP READING
+                    FIND HELP
                   </div>
                   <span
                     style={{
@@ -1156,7 +1532,7 @@ export default function EmotionalHealth() {
                       fontStyle: "italic",
                     }}
                   >
-                    Essays on the Inner Life That Shapes Everything Else
+                    Start from what you are facing, in your own words
                   </span>
                 </div>
                 <ChevronRight

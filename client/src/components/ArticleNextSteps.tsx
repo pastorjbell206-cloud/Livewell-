@@ -57,7 +57,7 @@ const TOOL_MAP: Record<string, ToolRec> = {
     href: "/tools/marriage-assessment",
   },
   "emotional-health": {
-    name: "Emotional Health Assessment",
+    name: "Emotional Health Self-Check",
     description:
       "An honest read of the weight you are carrying, and whether the pace you keep is sustainable.",
     href: "/tools/emotional-health",

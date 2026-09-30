@@ -4,6 +4,8 @@
  *
  *   node scripts/validate-needs.mjs           every need, the index, the crisis data (CI gate)
  *   node scripts/validate-needs.mjs anxiety   only the named needs (while writing)
+ *   node scripts/validate-needs.mjs --drafts  the pages held in docs/grow/drafts/
+ *                                             for James's approval (not served)
  *
  * Enforces docs/grow/CARE-PAGE-SPEC.md: required fields and word ranges for
  * every section, every Scripture passage verbatim from the Berean Standard
@@ -22,7 +24,11 @@ import { resolveHref } from "./lib/site-routes.mjs";
 import { buildNeedsIndex, serialize } from "./build-needs-index.mjs";
 
 const ROOT = new URL("..", import.meta.url).pathname;
-const DIR = join(ROOT, "client/public/needs");
+const NEEDS = join(ROOT, "client/public/needs");
+// Crisis pages wait in docs/grow/drafts/ until James approves their tone
+// (GROW-PROMPT Section 12); they are checked by the same rules, never served.
+const DRAFTS = process.argv.includes("--drafts");
+const DIR = DRAFTS ? join(ROOT, "docs/grow/drafts") : NEEDS;
 const only = process.argv.slice(2).filter((a) => !a.startsWith("-"));
 const errors = [];
 const fail = (where, msg) => errors.push(`${where}: ${msg}`);
@@ -188,7 +194,7 @@ function checkPage(n, where) {
   if (words(n.title) + answer > 200) fail(where, "title and answer run past the first screen");
 
   // A partial run may be checking one page before its neighbors exist.
-  if (n.related && !only.length) for (const r of n.related) if (!existsSync(join(DIR, `${r}.json`))) fail(`${where}.related`, `no need "${r}"`);
+  if (n.related && !only.length) for (const r of n.related) if (!existsSync(join(NEEDS, `${r}.json`))) fail(`${where}.related`, `no need "${r}"`);
   if (n.sources) list(`${where}.sources`, n.sources, 0, 20, (w, src) => {
     if (!src?.claim || !src?.cite || !/^https:\/\//.test(src?.url || "")) fail(w, "needs claim, cite, and an https url");
   });
@@ -197,7 +203,7 @@ function checkPage(n, where) {
 }
 
 // --- the need files -------------------------------------------------------
-const files = readdirSync(DIR).filter((f) => f.endsWith(".json") && f !== "index.json");
+const files = existsSync(DIR) ? readdirSync(DIR).filter((f) => f.endsWith(".json") && f !== "index.json") : [];
 const counted = [];
 for (const f of files) {
   const slug = f.replace(/\.json$/, "");
@@ -210,7 +216,7 @@ for (const f of files) {
 }
 
 // --- the index and the crisis data (full runs only) -----------------------
-if (!only.length) {
+if (!only.length && !DRAFTS) {
   const committed = existsSync(join(DIR, "index.json")) ? readFileSync(join(DIR, "index.json"), "utf8") : "";
   if (committed !== serialize(buildNeedsIndex())) fail("index.json", "out of date: run node scripts/build-needs-index.mjs");
 

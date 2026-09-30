@@ -35,7 +35,7 @@ const GROUPS: Group[] = [
       "Not where you say you are on Sunday. Where you are. These take an honest reading of the whole picture: one quick, one thorough, one to hand you a starting place.",
     items: [
       {
-        title: "The Diagnostic",
+        title: "Where Are You With God? A Self-Check",
         takeIf: "you want the honest check-in: where you are with God right now, without the church answer.",
         gives: "A straight reading of your season, and where to go from it.",
         href: "/diagnostic",
@@ -61,13 +61,13 @@ const GROUPS: Group[] = [
       "Instruments for the specific thing that is heavy right now. Each one ends with an honest reading of where you stand and a place to start reading.",
     items: [
       {
-        title: "The Marriage Assessment",
+        title: "The Marriage Health Self-Check",
         takeIf: "the marriage is drifting, tense, or quiet, and you want an honest read instead of tips.",
         gives: "Where the covenant actually stands, and what to read next.",
         href: "/tools/marriage-assessment",
       },
       {
-        title: "The Emotional Health Assessment",
+        title: "The Emotional Health Self-Check",
         takeIf: "you are running on empty, or something inside feels off and you cannot name it.",
         gives: "A read on self-awareness, boundaries, grief, forgiveness, and rest, with practical steps.",
         href: "/tools/emotional-health",

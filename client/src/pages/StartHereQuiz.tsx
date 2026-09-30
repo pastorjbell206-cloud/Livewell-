@@ -53,7 +53,7 @@ const FIRST_STEPS: Record<string, { help: { href: string; label: string }; tool:
   doubt: { help: { href: "/help/doubt", label: "I'm not sure I believe anymore" }, tool: { href: "/tools/test-the-case", label: "Test the Case: Push Back at Every Step" }, daily: { href: "/plans/deconstruction", label: "Eight Weeks of Taking Your Questions Seriously" } },
   calling: { help: { href: "/help/decisions", label: "How do I know what God wants me to do?" }, tool: { href: "/life/assessment", label: "The Whole-Life Assessment" }, daily: { href: "/plans/whole-life", label: "Eight Weeks Toward One Undivided Life" } },
   justice: { help: { href: "/help", label: "Find help for what you are facing" }, tool: { href: "/disruption/consistency", label: "The Consistency Check" }, daily: { href: "/plans/whole-life", label: "Eight Weeks Toward One Undivided Life" } },
-  pastoral: { help: { href: "/help", label: "Find help for what you are facing" }, tool: { href: "/tools/emotional-health", label: "The Emotional Health Assessment" }, daily: { href: "/plans/whole-life", label: "Eight Weeks Toward One Undivided Life" } },
+  pastoral: { help: { href: "/help", label: "Find help for what you are facing" }, tool: { href: "/tools/emotional-health", label: "The Emotional Health Self-Check" }, daily: { href: "/plans/whole-life", label: "Eight Weeks Toward One Undivided Life" } },
 };
 
 /* Session mirror (roadmap HS-5). One-sitting entry flow: answers, step, and

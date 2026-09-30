@@ -34,8 +34,8 @@ export const TOOLS = [
     color: "var(--goldlt)",
   },
   {
-    title: "The Diagnostic",
-    description: "Eight honest questions across four dimensions: where you are with God right now, without the church answer. Ends with a specific essay, a book, and what to do next.",
+    title: "Where Are You With God? A Self-Check",
+    description: "Eight honest questions across four areas: where you are with God right now, without the church answer. Ends with a reading of your season and where to start.",
     href: "/diagnostic",
     icon: Search,
     color: "var(--ink)",
@@ -125,8 +125,8 @@ export const TOOLS = [
     color: "var(--ink)",
   },
   {
-    title: "Marriage Health Assessment",
-    description: "Not a quiz. Fifteen questions across communication, intimacy, trust, shared vision, and conflict — and what to do about what you find.",
+    title: "Marriage Health Self-Check",
+    description: "Not a quiz. Fifteen questions across communication, intimacy, trust, shared vision, and conflict, and what to do about what you find.",
     href: "/tools/marriage-assessment",
     icon: HeartHandshake,
     color: "var(--goldlt)",
@@ -153,8 +153,8 @@ export const TOOLS = [
     color: "var(--ink)",
   },
   {
-    title: "Emotional Health Assessment",
-    description: "Fifteen questions across self-awareness, boundaries, grief, forgiveness, and rest — and where Scripture meets each one.",
+    title: "Emotional Health Self-Check",
+    description: "Fifteen questions across self-awareness, boundaries, grief, forgiveness, and rest, and where Scripture meets each one.",
     href: "/tools/emotional-health",
     icon: Brain,
     color: "var(--goldlt)",
