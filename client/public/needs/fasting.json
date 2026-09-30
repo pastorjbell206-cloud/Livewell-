@@ -1,0 +1,52 @@
+{
+  "slug": "fasting",
+  "page": false,
+  "rank": 36,
+  "title": "How do I fast, and what is Lent for?",
+  "summary": "Fasting as the church has practiced it: what it is for, how to begin safely, and how to keep Lent.",
+  "askedAs": [
+    "fasting",
+    "how to fast",
+    "Bible verses about fasting",
+    "Lent",
+    "what to give up for Lent",
+    "Ash Wednesday",
+    "is fasting required",
+    "fasting and prayer",
+    "how long should I fast",
+    "Daniel fast"
+  ],
+  "states": [
+    "grow"
+  ],
+  "sensitivity": "ordinary",
+  "kit": {
+    "read": [
+      {
+        "href": "/how-tos/sf-how-to-fast",
+        "label": "How to Fast",
+        "kind": "How-to"
+      },
+      {
+        "href": "/writing/why-christians-fast",
+        "label": "Why Christians Fast (and Why You Probably Stopped)",
+        "kind": "Essay"
+      },
+      {
+        "href": "/writing/why-lent",
+        "label": "Why Would Anyone Give Something Up for Lent?",
+        "kind": "Essay"
+      },
+      {
+        "href": "/how-tos/fam-how-to-keep-lent-and-easter-as-a-family",
+        "label": "How to Keep Lent and Easter as a Family",
+        "kind": "How-to"
+      },
+      {
+        "href": "/wisdom/food-and-eating",
+        "label": "Food and Eating",
+        "kind": "Wisdom"
+      }
+    ]
+  }
+}

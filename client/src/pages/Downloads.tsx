@@ -33,6 +33,14 @@ const SHELVES: Record<string, { label: string; blurb: string }> = {
     label: "Find Help printables",
     blurb: "For every care page: a one-page guide, prayer cards, Scripture cards, and a worksheet for the week, in US Letter and A4.",
   },
+  "Care plan": {
+    label: "Eight-week plans, as booklets",
+    blurb: "Every care plan printed as a booklet, one week to a page with room to write, in US Letter and A4.",
+  },
+  "Reading plan": {
+    label: "Bible reading plans",
+    blurb: "From a month in the Psalms to the whole Bible in a year, each day balanced by length, to print and keep in your Bible.",
+  },
   Family: {
     label: "For families",
     blurb: "The Advent and Holy Week family devotions as printable booklets, one day to a page.",

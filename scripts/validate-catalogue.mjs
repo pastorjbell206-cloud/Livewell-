@@ -19,6 +19,7 @@ import path from "node:path";
 import zlib from "node:zlib";
 import { fileURLToPath } from "node:url";
 import { assemble, KIND_ORDER } from "./build-catalogue.mjs";
+import { builtFrom } from "./lib/built-files.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const PUB = path.join(ROOT, "client/public");
@@ -63,18 +64,7 @@ for (const it of catalogue.items) {
 }
 for (const u of unrouted) fail(`no route for ${u}`);
 
-// 4. every file exists or is built from an existing source
-const builtFrom = (href) => {
-  let m = href.match(/^\/downloads\/studyguides\/(.+)-(leader|participant)\.pdf$/);
-  if (m) return fs.existsSync(path.join(PUB, `studyguides/${m[1]}.json`));
-  m = href.match(/^\/downloads\/context\/(.+)\.pdf$/);
-  if (m) return fs.existsSync(path.join(PUB, `context/guides/${m[1]}.json`));
-  // Find Help printables and the seasonal family booklets (scripts/lib/help-printables.mjs).
-  m = href.match(/^\/downloads\/help\/(.+)-(guide|prayer|scripture|week)-(letter|a4)\.pdf$/);
-  if (m) return fs.existsSync(path.join(PUB, `needs/${m[1]}.json`));
-  if (/^\/downloads\/seasonal\/(advent|holy-week)-family-(letter|a4)\.pdf$/.test(href)) return fs.existsSync(path.join(PUB, "family-seasonal.json"));
-  return false;
-};
+// 4. every file exists or is built from an existing source (scripts/lib/built-files.mjs)
 for (const it of catalogue.items) {
   for (const f of it.files ?? []) {
     if (!fs.existsSync(path.join(PUB, f.href.replace(/^\//, ""))) && !builtFrom(f.href)) {

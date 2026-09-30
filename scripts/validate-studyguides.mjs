@@ -24,6 +24,8 @@ const ARR_FIELDS = [
   ["furtherReading", 1], ["glossary", 1], ["scriptureIndex", 1],
 ];
 const OBJ_FIELDS = ["facilitatorScript", "promoKit"];
+// Every guide sits on one shelf of the /studyguides filter.
+const THEMES = new Set(JSON.parse(fs.readFileSync("client/src/data/studyguide-themes.json", "utf8")).themes.map((t) => t.id));
 
 // Per-session requirements. (essaySlug and memoryVerse are present in the schema
 // but allowed to be empty — the PDF renderer treats both as optional.)
@@ -58,6 +60,7 @@ for (const file of files) {
   for (const k of STR_FIELDS) if (!isStr(d[k])) fail(file, `missing/empty string field "${k}"`);
   for (const [k, n] of ARR_FIELDS) if (!isArr(d[k], n)) fail(file, `"${k}" must be an array of >= ${n}`);
   for (const k of OBJ_FIELDS) if (!d[k] || typeof d[k] !== "object") fail(file, `missing object field "${k}"`);
+  if (!THEMES.has(d.theme)) fail(file, `"theme" must be one of ${[...THEMES].join(", ")} (client/src/data/studyguide-themes.json)`);
 
   // faq + bibliography + glossary item shapes
   for (const q of d.faq || []) if (!isStr(q?.q) || !isStr(q?.a)) fail(file, `faq item needs q + a: ${JSON.stringify(q).slice(0, 60)}`);

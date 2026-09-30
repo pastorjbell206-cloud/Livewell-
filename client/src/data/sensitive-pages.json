@@ -11,5 +11,33 @@
   "studyguides": [
     "grief", "lament", "anxiety", "mental-health", "suffering", "doubt", "deconstruction",
     "marriage", "anger", "forgiveness", "alone-in-a-crowded-church", "pastoral-health"
-  ]
+  ],
+  "wisdom": {
+    "lead": {
+      "suicidal-thoughts": ["suicide"],
+      "depression": ["suicide"],
+      "despair-and-hope": ["suicide"],
+      "self-hatred": ["suicide"],
+      "toxic-relationships": ["abuse", "sexual-assault"]
+    },
+    "end": {
+      "addiction": ["substance", "suicide"],
+      "alcohol-and-drinking": ["substance"],
+      "marriage-conflict": ["abuse"],
+      "betrayal": ["abuse"],
+      "church-hurt": ["abuse", "sexual-assault"],
+      "pornography": ["suicide"],
+      "grief": ["suicide"],
+      "losing-a-child": ["suicide"],
+      "losing-a-parent": ["suicide"],
+      "losing-a-spouse": ["suicide"],
+      "sudden-loss": ["suicide"],
+      "miscarriage": ["suicide"],
+      "infertility": ["suicide"],
+      "wayward-child": ["suicide"],
+      "terminal-diagnosis": ["suicide"],
+      "facing-death": ["suicide"],
+      "serious-illness": ["suicide"]
+    }
+  }
 }

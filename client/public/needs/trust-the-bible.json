@@ -1,0 +1,53 @@
+{
+  "slug": "trust-the-bible",
+  "page": false,
+  "rank": 35,
+  "title": "Can I trust the Bible?",
+  "summary": "How the Bible came to us, what the manuscripts show, and what trusting it does and does not mean.",
+  "askedAs": [
+    "can I trust the Bible",
+    "is the Bible reliable",
+    "who wrote the Bible",
+    "Bible contradictions",
+    "how was the Bible put together",
+    "is the Bible true",
+    "biblical manuscripts",
+    "was the Bible changed",
+    "inerrancy",
+    "historical evidence for the Bible"
+  ],
+  "states": [
+    "grow",
+    "carrying"
+  ],
+  "sensitivity": "ordinary",
+  "kit": {
+    "read": [
+      {
+        "href": "/writing/why-trust-the-bible",
+        "label": "Why Would Anyone Trust the Bible?",
+        "kind": "Essay"
+      },
+      {
+        "href": "/writing/can-you-trust-the-bible",
+        "label": "Can You Trust the Bible?",
+        "kind": "Essay"
+      },
+      {
+        "href": "/writing/inerrancy-infallibility-and-the-word-you-can-trust",
+        "label": "Inerrancy, Infallibility, and the Word You Can Trust",
+        "kind": "Essay"
+      },
+      {
+        "href": "/theology/doctrine/revelation",
+        "label": "How God Speaks",
+        "kind": "Page"
+      },
+      {
+        "href": "/studyguides/the-story-of-the-bible",
+        "label": "The Story of the Bible: A Study of the Whole Canon",
+        "kind": "Study guide"
+      }
+    ]
+  }
+}

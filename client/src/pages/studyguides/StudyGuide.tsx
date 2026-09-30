@@ -10,6 +10,7 @@ import { Link, useRoute } from "wouter";
 import Layout from "@/components/Layout";
 import MoreOnThis from "@/components/MoreOnThis";
 import { CrisisBlock } from "@/components/CrisisBlock";
+import { HelpForThisGuide } from "@/components/HelpForThisGuide";
 import { SENSITIVE_GUIDES } from "@/lib/needs";
 import { SEOMeta } from "@/components/SEOMeta";
 import GatedDownload from "@/components/GatedDownload";
@@ -333,6 +334,7 @@ export default function StudyGuide() {
           </section>
 
           {slug && SENSITIVE_GUIDES.has(slug) && <CrisisBlock variant="compact" />}
+          {slug && <HelpForThisGuide slug={slug} />}
           {slug && <MoreOnThis href={`/studyguides/${slug}`} />}
           <PageEndNav back={{ href: "/studyguides", label: "All study guides" }} />
         </>

@@ -11,7 +11,7 @@ import { Link, useRoute } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { CrisisHelp } from "@/components/CrisisHelp";
-import { BookOpen, Wrench, PenLine, Check, RotateCcw } from "lucide-react";
+import { BookOpen, Wrench, PenLine, Check, RotateCcw, Printer } from "lucide-react";
 
 const wrap = { maxWidth: "var(--w-content)", margin: "0 auto" } as const;
 
@@ -192,6 +192,16 @@ export default function CarePlan() {
             {data.careNote && (
               <p style={{ ...body, color: "var(--ink-muted)", maxWidth: "68ch", marginTop: "var(--s-3)" }}>{data.careNote}</p>
             )}
+
+            {/* The booklet is built by scripts/lib/help-printables.mjs inside `pnpm pdfs`. */}
+            <p style={{ fontFamily: "var(--U)", fontSize: "14px", lineHeight: 1.6, color: "var(--ink-muted)", marginTop: "var(--s-3)" }}>
+              <Printer size={14} style={{ verticalAlign: "-2px", marginRight: "6px" }} aria-hidden="true" />
+              Print the whole plan as a booklet, one week to a page with room to write:{" "}
+              <a href={`/downloads/plans/${data.slug}-booklet-letter.pdf`} style={{ color: "var(--mustard-text)", fontWeight: 600 }}>US Letter</a>
+              {" · "}
+              <a href={`/downloads/plans/${data.slug}-booklet-a4.pdf`} style={{ color: "var(--mustard-text)", fontWeight: 600 }}>A4</a>
+              {" "}(PDF)
+            </p>
 
             <CrisisHelp />
 

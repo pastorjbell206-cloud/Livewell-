@@ -84,6 +84,7 @@ export const KIND_ORDER = [
   "Pathway",
   "Care page",
   "Care plan",
+  "Reading plan",
   "Group guide",
   "Argument",
   "Family",

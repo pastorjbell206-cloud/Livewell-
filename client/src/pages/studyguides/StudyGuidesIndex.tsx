@@ -3,14 +3,32 @@
  * Toolkit. Each guide is a full small-group suite (leader's guide, participant
  * handout, facilitator script, promo kit) with email-gated PDF downloads on the
  * guide's own page. Card metadata is in client/src/lib/studyguides-index.ts.
+ *
+ * Every guide sits on one shelf (its `theme`, from
+ * client/src/data/studyguide-themes.json), and the chips filter by shelf.
+ * The choice rides in the address (?theme=grief) so a pastor can send a
+ * link to exactly the shelf they mean.
  */
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { STUDY_GUIDES, type StudyGuideEntry } from "@/lib/studyguides-index";
 import { GeneratedCover, coverThemeFor } from "@/components/GeneratedCover";
 import { EditorialIndex } from "@/components/editorial/EditorialIndex";
+import THEME_DATA from "@/data/studyguide-themes.json";
+
+const THEMES: { id: string; label: string }[] = THEME_DATA.themes;
+
+/** The shelf named in ?theme=, when it is one we have. */
+function themeFromUrl(): string {
+  try {
+    const t = new URLSearchParams(window.location.search).get("theme");
+    return t && THEMES.some((x) => x.id === t) ? t : "all";
+  } catch {
+    return "all";
+  }
+}
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
@@ -27,7 +45,26 @@ export default function StudyGuidesIndex() {
       .then((d) => { if (d?.guides?.length) setGuides(d.guides); })
       .catch(() => {});
   }, []);
-  const [lead, ...rest] = guides;
+  const [active, setActive] = useState<string>(themeFromUrl);
+  const choose = (t: string) => {
+    setActive(t);
+    try {
+      const url = new URL(window.location.href);
+      if (t === "all") url.searchParams.delete("theme");
+      else url.searchParams.set("theme", t);
+      window.history.replaceState(window.history.state, "", url.pathname + url.search + url.hash);
+    } catch {
+      /* the filter still works without the address */
+    }
+  };
+  // The bundled fallback list carries no shelves; chips appear with the manifest.
+  const themed = guides.some((g) => g.theme);
+  const shown = useMemo(
+    () => (!themed || active === "all" ? guides : guides.filter((g) => g.theme === active)),
+    [guides, active, themed]
+  );
+  const countFor = (t: string) => guides.filter((g) => g.theme === t).length;
+  const [lead, ...rest] = shown;
   return (
     <Layout>
       <SEOMeta
@@ -44,24 +81,35 @@ export default function StudyGuidesIndex() {
             Teach the hard things well
           </h1>
           <p style={{ fontFamily: "var(--B)", fontSize: "17.5px", lineHeight: 1.75, color: "rgba(245,240,230,0.82)", maxWidth: "62ch" }}>
-            Each guide is a full toolkit for the person at the front of the room: a leader's guide with the answer behind every question, a participant handout, a facilitator script, and printable PDFs. Run a class on Sunday with no prep. Every guide is free, and the PDFs download right here.
+            Each guide is a full toolkit for the person at the front of the room: a leader's guide with the answer behind every question, a participant handout, a facilitator script, and printable PDFs. Run a class on Sunday with no prep. Every guide runs as four, five, or eight weeks, for a group or for one person reading alone. Every guide is free, and the PDFs download right here.
           </p>
         </div>
       </section>
 
-      {/* THE GUIDES. One lead given room (the only cover on the page), then the
-          rest as an index. In the built manifest g.eyebrow is each guide's
-          one-line subtitle, so it serves as the dek; the long blurb stays on
-          the toolkit page. The data carries no theme or category field, so
-          there are no filter chips here. */}
+      {/* THE GUIDES. Shelf chips, then one lead given room (the only cover on
+          the page), then the rest as an index. In the built manifest
+          g.eyebrow is each guide's one-line subtitle, so it serves as the dek;
+          the long blurb stays on the toolkit page. */}
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "8px" }}>The collection</div>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px, 3.4vw, 34px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", marginBottom: "var(--s-4)" }}>
             Free guides for groups, classes, and teams
           </h2>
-          <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "0 0 var(--s-2)" }}>
-            {guides.length} {guides.length === 1 ? "guide" : "guides"}
+          {themed && (
+            <div className="ed-chips" role="group" aria-label="Filter study guides by subject">
+              {[{ id: "all", label: "All" }, ...THEMES].filter((t) => t.id === "all" || countFor(t.id) > 0).map((t) => (
+                <button key={t.id} type="button" className="ed-chip" aria-pressed={t.id === active} onClick={() => choose(t.id)}>
+                  {t.label}
+                  <span className="ed-chip-n">{t.id === "all" ? guides.length : countFor(t.id)}</span>
+                </button>
+              ))}
+            </div>
+          )}
+          <p role="status" style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "0 0 var(--s-2)" }}>
+            {shown.length === guides.length
+              ? `${guides.length} ${guides.length === 1 ? "guide" : "guides"}`
+              : `Showing ${shown.length} of ${guides.length}`}
           </p>
 
           {lead && (

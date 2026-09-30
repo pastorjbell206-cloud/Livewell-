@@ -62,6 +62,7 @@ export const KIND_ORDER = [
   "Pathway",
   "Care page",
   "Care plan",
+  "Reading plan",
   "Group guide",
   "Argument",
   "Family",
@@ -358,7 +359,19 @@ export const LIBRARIES = {
       })),
   plans: () =>
     list("plans/plans-index.json", "plans").map((p) =>
-      item({ kind: "Care plan", title: p.title, summary: clip(p.blurb), href: `/plans/${p.slug}` })
+      item({
+        kind: "Care plan", title: p.title, summary: clip(p.blurb), href: `/plans/${p.slug}`,
+        // Built by scripts/lib/help-printables.mjs inside `pnpm pdfs`.
+        files: [file("Printable booklet (Letter)", `/downloads/plans/${p.slug}-booklet-letter.pdf`), file("Printable booklet (A4)", `/downloads/plans/${p.slug}-booklet-a4.pdf`)],
+      })
+    ),
+  // Printable Bible reading plans, built by scripts/lib/reading-plans.mjs inside `pnpm pdfs`.
+  readingPlans: () =>
+    JSON.parse(fs.readFileSync(path.join(ROOT, "client/src/data/bible-reading-plans.json"), "utf8")).plans.map((p) =>
+      item({
+        kind: "Reading plan", title: p.title, summary: clip(p.blurb), href: `/plans#${p.id}`, period: `${p.days} days`,
+        files: [file("Printable plan (Letter)", `/downloads/reading-plans/${p.id}-letter.pdf`), file("Printable plan (A4)", `/downloads/reading-plans/${p.id}-a4.pdf`)],
+      })
     ),
   justice: () =>
     list("justice/topics-index.json", "topics").map((t) =>

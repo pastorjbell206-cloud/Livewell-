@@ -38,6 +38,11 @@
         "fear-of-the-future",
         "empty",
         "prayer"
+      ],
+      "guides": [
+        "anxiety",
+        "mental-health",
+        "the-psalms"
       ]
     },
     {
@@ -73,6 +78,11 @@
         "anxiety",
         "decisions",
         "empty"
+      ],
+      "guides": [
+        "providence",
+        "the-psalms",
+        "end-times"
       ]
     },
     {
@@ -113,6 +123,12 @@
         "empty",
         "grief",
         "anxiety"
+      ],
+      "guides": [
+        "alone-in-a-crowded-church",
+        "friendship",
+        "hospitality",
+        "singleness"
       ]
     },
     {
@@ -151,6 +167,10 @@
         "loneliness",
         "suffering",
         "empty"
+      ],
+      "guides": [
+        "grief",
+        "lament"
       ]
     },
     {
@@ -190,6 +210,11 @@
         "grief",
         "doubt",
         "empty"
+      ],
+      "guides": [
+        "suffering",
+        "providence",
+        "lament"
       ]
     },
     {
@@ -228,6 +253,13 @@
         "suffering",
         "prayer",
         "reading-the-bible"
+      ],
+      "guides": [
+        "doubt",
+        "deconstruction",
+        "skeptic",
+        "resurrection",
+        "the-psalms"
       ]
     },
     {
@@ -266,6 +298,10 @@
         "loneliness",
         "anxiety",
         "doubt"
+      ],
+      "guides": [
+        "mental-health",
+        "lament"
       ]
     },
     {
@@ -303,6 +339,12 @@
         "new-believer",
         "curious",
         "anxiety"
+      ],
+      "guides": [
+        "prayer",
+        "the-lords-prayer",
+        "the-psalms",
+        "lament"
       ]
     },
     {
@@ -345,6 +387,10 @@
         "anxiety",
         "divorce",
         "pornography"
+      ],
+      "guides": [
+        "marriage",
+        "forgiveness"
       ]
     },
     {
@@ -379,6 +425,12 @@
         "prayer",
         "doubt",
         "decisions"
+      ],
+      "guides": [
+        "the-story-of-the-bible",
+        "new-believer",
+        "the-psalms",
+        "the-parables"
       ]
     },
     {
@@ -413,6 +465,10 @@
         "fear-of-the-future",
         "prayer",
         "anxiety"
+      ],
+      "guides": [
+        "work-and-vocation",
+        "the-undivided-life"
       ]
     },
     {
@@ -454,6 +510,72 @@
         "church-hurt",
         "anger",
         "fatherless"
+      ],
+      "guides": [
+        "forgiveness",
+        "the-psalms",
+        "anger"
+      ]
+    },
+    {
+      "slug": "healing",
+      "title": "I'm praying for healing",
+      "summary": "Asking God to heal, and living in the waiting, without the promises he never made.",
+      "askedAs": [
+        "healing",
+        "Bible verses for healing",
+        "prayer for healing",
+        "does God still heal",
+        "why hasn't God healed me",
+        "healing scriptures",
+        "is sickness a punishment for sin",
+        "faith healing",
+        "praying for a sick friend",
+        "anointing the sick"
+      ],
+      "states": [
+        "carrying",
+        "helping"
+      ],
+      "sensitivity": "ordinary",
+      "page": false,
+      "rank": 13,
+      "kit": {
+        "read": [
+          {
+            "href": "/life/health-illness-and-pain",
+            "label": "How Should Christians Think About Sickness and Health?",
+            "kind": "Life"
+          },
+          {
+            "href": "/wisdom/serious-illness",
+            "label": "When You Are Seriously Ill",
+            "kind": "Wisdom"
+          },
+          {
+            "href": "/wisdom/chronic-pain",
+            "label": "Chronic Pain and Illness",
+            "kind": "Wisdom"
+          },
+          {
+            "href": "/life/waiting-and-unanswered-prayer",
+            "label": "What Do You Do When God Does Not Answer Prayer?",
+            "kind": "Life"
+          },
+          {
+            "href": "/writing/prosperity-gospel-is-not-the-gospel",
+            "label": "The Prosperity Gospel Is Not the Gospel",
+            "kind": "Essay"
+          },
+          {
+            "href": "/studyguides/lament",
+            "label": "Lament: A Bible Study on Praying Your Pain",
+            "kind": "Study guide"
+          }
+        ]
+      },
+      "guides": [
+        "lament"
       ]
     },
     {
@@ -516,6 +638,77 @@
             "kind": "Pathway"
           }
         ]
+      },
+      "guides": [
+        "parenting-formation"
+      ]
+    },
+    {
+      "slug": "family-devotions",
+      "title": "How do we do family devotions?",
+      "summary": "Five minutes at the table, a passage, a question, a prayer: faith at home without the performance.",
+      "askedAs": [
+        "family devotions",
+        "family worship",
+        "how to do family devotions",
+        "devotions for kids",
+        "reading the Bible with kids",
+        "family prayer",
+        "catechism for kids",
+        "family Bible study",
+        "bedtime prayers",
+        "how to teach kids the Bible"
+      ],
+      "states": [
+        "grow",
+        "helping"
+      ],
+      "sensitivity": "ordinary",
+      "page": false,
+      "rank": 15,
+      "kit": {
+        "read": [
+          {
+            "href": "/family/devotions",
+            "label": "Family Devotions",
+            "kind": "Page"
+          },
+          {
+            "href": "/tools/family-devotions",
+            "label": "Family Devotion Builder",
+            "kind": "Tool"
+          },
+          {
+            "href": "/how-tos/parenting-how-to-start-family-worship",
+            "label": "How to Start Family Worship in Five Minutes",
+            "kind": "How-to"
+          },
+          {
+            "href": "/how-tos/fam-how-to-start-family-worship",
+            "label": "How to Start Family Worship (and Keep It When It Falls Apart)",
+            "kind": "How-to"
+          },
+          {
+            "href": "/family/catechism",
+            "label": "Family Catechism",
+            "kind": "Page"
+          },
+          {
+            "href": "/how-tos/fam-how-to-use-a-family-catechism",
+            "label": "How to Use a Family Catechism",
+            "kind": "How-to"
+          },
+          {
+            "href": "/family/reading-plans",
+            "label": "Family Reading Plans",
+            "kind": "Page"
+          },
+          {
+            "href": "/writing/family-devotions-authentic",
+            "label": "Family Devotions That Don't Feel Forced",
+            "kind": "Essay"
+          }
+        ]
       }
     },
     {
@@ -561,7 +754,11 @@
             "kind": "Life"
           }
         ]
-      }
+      },
+      "guides": [
+        "fatherhood",
+        "manhood"
+      ]
     },
     {
       "slug": "purpose",
@@ -611,7 +808,11 @@
             "kind": "Wisdom"
           }
         ]
-      }
+      },
+      "guides": [
+        "identity",
+        "manhood"
+      ]
     },
     {
       "slug": "pornography",
@@ -717,7 +918,10 @@
             "kind": "Pathway"
           }
         ]
-      }
+      },
+      "guides": [
+        "money"
+      ]
     },
     {
       "slug": "caregiving",
@@ -767,7 +971,10 @@
             "kind": "Study guide"
           }
         ]
-      }
+      },
+      "guides": [
+        "aging-and-legacy"
+      ]
     },
     {
       "slug": "work-burnout",
@@ -822,7 +1029,10 @@
             "kind": "Pathway"
           }
         ]
-      }
+      },
+      "guides": [
+        "sabbath"
+      ]
     },
     {
       "slug": "pastors",
@@ -874,7 +1084,65 @@
             "kind": "Page"
           }
         ]
-      }
+      },
+      "guides": [
+        "pastoral-health"
+      ]
+    },
+    {
+      "slug": "refer-to-counselor",
+      "title": "When should I refer someone to a counselor?",
+      "summary": "For pastors and leaders: the signs that someone needs more than you can give, and how to hand them on well.",
+      "askedAs": [
+        "when to refer to a counselor",
+        "pastoral counseling limits",
+        "counselor referral list",
+        "Christian counselor or licensed counselor",
+        "how to refer someone",
+        "mental health and the church",
+        "pastor counseling",
+        "when to call a professional"
+      ],
+      "states": [
+        "leading",
+        "helping"
+      ],
+      "sensitivity": "ordinary",
+      "page": false,
+      "rank": 23,
+      "kit": {
+        "read": [
+          {
+            "href": "/writing/34-what-a-healthy-pastor-referral-network-actually-looks-like",
+            "label": "What a Healthy Pastor Referral Network Actually Looks Like",
+            "kind": "Essay"
+          },
+          {
+            "href": "/writing/church-and-mental-health",
+            "label": "How the Church Handles Mental Health (Badly)",
+            "kind": "Essay"
+          },
+          {
+            "href": "/how-tos/marriage-how-to-know-when-to-get-help",
+            "label": "How to Know When to Get Help",
+            "kind": "How-to"
+          },
+          {
+            "href": "/studyguides/mental-health",
+            "label": "Mental Health: A Bible Study on the Weight You Carry",
+            "kind": "Study guide"
+          },
+          {
+            "href": "/studyguides/pastoral-health",
+            "label": "Pastoral Health: A Study for Leaders and Those Who Love Them",
+            "kind": "Study guide"
+          }
+        ]
+      },
+      "guides": [
+        "mental-health",
+        "pastoral-health"
+      ]
     },
     {
       "slug": "church-hurt",
@@ -925,6 +1193,54 @@
           {
             "href": "/wisdom/finding-a-church",
             "label": "Finding a Church",
+            "kind": "Wisdom"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "is-it-a-sin",
+      "title": "Is it a sin to drink, get a tattoo, or gamble?",
+      "summary": "The questions Scripture leaves to conscience, and how to decide them without pride or fear.",
+      "askedAs": [
+        "is drinking a sin",
+        "is it a sin to get a tattoo",
+        "is gambling a sin",
+        "can Christians drink alcohol",
+        "Christian freedom",
+        "Romans 14",
+        "gray areas",
+        "disputable matters",
+        "is smoking a sin",
+        "is it a sin to swear"
+      ],
+      "states": [
+        "grow",
+        "carrying"
+      ],
+      "sensitivity": "ordinary",
+      "page": false,
+      "rank": 25,
+      "kit": {
+        "read": [
+          {
+            "href": "/wisdom/alcohol-and-drinking",
+            "label": "Alcohol and Drinking",
+            "kind": "Wisdom"
+          },
+          {
+            "href": "/wisdom/gambling",
+            "label": "Gambling and the Bet",
+            "kind": "Wisdom"
+          },
+          {
+            "href": "/wisdom/guilt-and-conscience",
+            "label": "Guilt and Conscience",
+            "kind": "Wisdom"
+          },
+          {
+            "href": "/wisdom/temptation",
+            "label": "Temptation",
             "kind": "Wisdom"
           }
         ]
@@ -1029,7 +1345,10 @@
             "kind": "Wisdom"
           }
         ]
-      }
+      },
+      "guides": [
+        "singleness"
+      ]
     },
     {
       "slug": "curious",
@@ -1078,7 +1397,10 @@
             "kind": "Page"
           }
         ]
-      }
+      },
+      "guides": [
+        "skeptic"
+      ]
     },
     {
       "slug": "politics",
@@ -1129,6 +1451,162 @@
           }
         ]
       }
+    },
+    {
+      "slug": "trust-the-bible",
+      "title": "Can I trust the Bible?",
+      "summary": "How the Bible came to us, what the manuscripts show, and what trusting it does and does not mean.",
+      "askedAs": [
+        "can I trust the Bible",
+        "is the Bible reliable",
+        "who wrote the Bible",
+        "Bible contradictions",
+        "how was the Bible put together",
+        "is the Bible true",
+        "biblical manuscripts",
+        "was the Bible changed",
+        "inerrancy",
+        "historical evidence for the Bible"
+      ],
+      "states": [
+        "grow",
+        "carrying"
+      ],
+      "sensitivity": "ordinary",
+      "page": false,
+      "rank": 35,
+      "kit": {
+        "read": [
+          {
+            "href": "/writing/why-trust-the-bible",
+            "label": "Why Would Anyone Trust the Bible?",
+            "kind": "Essay"
+          },
+          {
+            "href": "/writing/can-you-trust-the-bible",
+            "label": "Can You Trust the Bible?",
+            "kind": "Essay"
+          },
+          {
+            "href": "/writing/inerrancy-infallibility-and-the-word-you-can-trust",
+            "label": "Inerrancy, Infallibility, and the Word You Can Trust",
+            "kind": "Essay"
+          },
+          {
+            "href": "/theology/doctrine/revelation",
+            "label": "How God Speaks",
+            "kind": "Page"
+          },
+          {
+            "href": "/studyguides/the-story-of-the-bible",
+            "label": "The Story of the Bible: A Study of the Whole Canon",
+            "kind": "Study guide"
+          }
+        ]
+      },
+      "guides": [
+        "the-story-of-the-bible"
+      ]
+    },
+    {
+      "slug": "fasting",
+      "title": "How do I fast, and what is Lent for?",
+      "summary": "Fasting as the church has practiced it: what it is for, how to begin safely, and how to keep Lent.",
+      "askedAs": [
+        "fasting",
+        "how to fast",
+        "Bible verses about fasting",
+        "Lent",
+        "what to give up for Lent",
+        "Ash Wednesday",
+        "is fasting required",
+        "fasting and prayer",
+        "how long should I fast",
+        "Daniel fast"
+      ],
+      "states": [
+        "grow"
+      ],
+      "sensitivity": "ordinary",
+      "page": false,
+      "rank": 36,
+      "kit": {
+        "read": [
+          {
+            "href": "/how-tos/sf-how-to-fast",
+            "label": "How to Fast",
+            "kind": "How-to"
+          },
+          {
+            "href": "/writing/why-christians-fast",
+            "label": "Why Christians Fast (and Why You Probably Stopped)",
+            "kind": "Essay"
+          },
+          {
+            "href": "/writing/why-lent",
+            "label": "Why Would Anyone Give Something Up for Lent?",
+            "kind": "Essay"
+          },
+          {
+            "href": "/how-tos/fam-how-to-keep-lent-and-easter-as-a-family",
+            "label": "How to Keep Lent and Easter as a Family",
+            "kind": "How-to"
+          },
+          {
+            "href": "/wisdom/food-and-eating",
+            "label": "Food and Eating",
+            "kind": "Wisdom"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "pets-and-heaven",
+      "title": "Will I see my pet again?",
+      "summary": "Grief for an animal is real grief. What Scripture says about creation's future, and what it leaves unsaid.",
+      "askedAs": [
+        "do pets go to heaven",
+        "will I see my dog in heaven",
+        "do animals have souls",
+        "grieving a pet",
+        "pet loss",
+        "my dog died",
+        "is it wrong to grieve a pet this much",
+        "animals in the new creation"
+      ],
+      "states": [
+        "carrying"
+      ],
+      "sensitivity": "ordinary",
+      "page": false,
+      "rank": 38,
+      "kit": {
+        "read": [
+          {
+            "href": "/help/grief",
+            "label": "Someone I love has died",
+            "kind": "Page"
+          },
+          {
+            "href": "/wisdom/heaven-and-eternity",
+            "label": "Heaven and Eternity",
+            "kind": "Wisdom"
+          },
+          {
+            "href": "/theology/doctrine/last-things",
+            "label": "How Does It End?",
+            "kind": "Page"
+          },
+          {
+            "href": "/studyguides/heaven-and-hell",
+            "label": "Heaven and Hell: A Bible Study on the Life to Come",
+            "kind": "Study guide"
+          }
+        ]
+      },
+      "guides": [
+        "heaven-and-hell"
+      ]
     },
     {
       "slug": "divorce",
@@ -1220,7 +1698,10 @@
             "kind": "Study guide"
           }
         ]
-      }
+      },
+      "guides": [
+        "lament"
+      ]
     },
     {
       "slug": "job-loss",
@@ -1314,7 +1795,10 @@
             "kind": "Wisdom"
           }
         ]
-      }
+      },
+      "guides": [
+        "anger"
+      ]
     },
     {
       "slug": "deconstructing",
@@ -1362,7 +1846,10 @@
             "kind": "Pathway"
           }
         ]
-      }
+      },
+      "guides": [
+        "deconstruction"
+      ]
     },
     {
       "slug": "new-believer",
@@ -1405,7 +1892,10 @@
             "kind": "Page"
           }
         ]
-      }
+      },
+      "guides": [
+        "new-believer"
+      ]
     },
     {
       "slug": "whole-life",

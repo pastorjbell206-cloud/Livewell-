@@ -6,6 +6,10 @@
  * the manifest (client/public/plans/plans-index.json, built by
  * scripts/build-plans-index.mjs) and marks the ones this browser has started,
  * reading the same progress key the plan page writes (lw-plan-<slug>).
+ *
+ * Below them sit the Bible reading plans to print (named in
+ * client/src/data/bible-reading-plans.json; the PDFs are built by
+ * scripts/lib/reading-plans.mjs inside `pnpm pdfs`).
  */
 import { useEffect, useState } from "react";
 import { Link } from "wouter";
@@ -15,6 +19,7 @@ import { EditorialIndex } from "@/components/editorial/EditorialIndex";
 import { LoadFailed } from "@/components/LoadFailed";
 import { CrisisBlock } from "@/components/CrisisBlock";
 import { fetchJson } from "@/lib/fetch-json";
+import READING from "@/data/bible-reading-plans.json";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
@@ -95,7 +100,34 @@ export default function PlansIndex() {
         </div>
       </section>
 
-      <div style={{ background: "var(--bone)", padding: "0 var(--s-4) var(--s-5)" }}>
+      <section aria-labelledby="reading-plans" style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--s-4)" }}>
+        <div style={wrap}>
+          <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "8px" }}>To print</div>
+          <h2 id="reading-plans" style={{ fontFamily: "var(--F)", fontSize: "clamp(26px, 3.6vw, 36px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", margin: "0 0 10px" }}>
+            Bible reading plans
+          </h2>
+          <p style={{ fontFamily: "var(--B)", fontSize: "16.5px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "62ch", margin: "0 0 var(--s-4)" }}>
+            Four plans to print and keep in your Bible, from a month in the Psalms to the whole Bible in a year. Each day is balanced by length, so no single day ambushes you, and a missed day is simply picked up.
+          </p>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(260px, 100%), 1fr))", gap: "var(--s-3)" }}>
+            {READING.plans.map((p) => (
+              <article key={p.id} id={p.id} style={{ background: "var(--card)", border: "1px solid var(--border)", borderTop: "2px solid var(--mustard)", padding: "var(--s-3)", scrollMarginTop: "96px" }}>
+                <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--ink-muted)", marginBottom: "6px" }}>{p.days} days</div>
+                <h3 style={{ fontFamily: "var(--F)", fontSize: "22px", fontWeight: 500, color: "var(--ink)", margin: "0 0 8px" }}>{p.title}</h3>
+                <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.65, color: "var(--ink)", margin: "0 0 12px" }}>{p.blurb}</p>
+                <p style={{ fontFamily: "var(--U)", fontSize: "14px", margin: 0 }}>
+                  Print:{" "}
+                  <a href={`/downloads/reading-plans/${p.id}-letter.pdf`} style={{ color: "var(--mustard-text)", fontWeight: 600 }}>US Letter</a>
+                  {" · "}
+                  <a href={`/downloads/reading-plans/${p.id}-a4.pdf`} style={{ color: "var(--mustard-text)", fontWeight: 600 }}>A4</a>
+                </p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <div style={{ background: "var(--bone)", padding: "var(--s-4) var(--s-4) var(--s-5)" }}>
         <CrisisBlock variant="compact" />
       </div>
     </Layout>

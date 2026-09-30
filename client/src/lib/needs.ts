@@ -5,6 +5,7 @@
  * link for a Scripture reference.
  */
 import sensitive from "@/data/sensitive-pages.json";
+import type { CrisisTopic } from "@/components/CrisisBlock";
 
 export type ReaderState = "crisis" | "carrying" | "grow" | "helping" | "leading";
 export type Sensitivity = "crisis" | "high" | "ordinary";
@@ -121,3 +122,13 @@ export function studyBibleHref(ref: string): string | null {
  */
 export const SENSITIVE_LIFE = new Set<string>(sensitive.life);
 export const SENSITIVE_GUIDES = new Set<string>(sensitive.studyguides);
+
+/**
+ * Wisdom topics on heavy subjects, with the lines each calls for. `lead`
+ * topics show the full help block under the title (a reader typing "suicidal
+ * thoughts" should not scroll for it); `end` topics show it after the reading.
+ */
+export const SENSITIVE_WISDOM: Record<string, { topics: CrisisTopic[]; lead: boolean }> = Object.fromEntries([
+  ...Object.entries(sensitive.wisdom.lead).map(([id, topics]) => [id, { topics: topics as CrisisTopic[], lead: true }]),
+  ...Object.entries(sensitive.wisdom.end).map(([id, topics]) => [id, { topics: topics as CrisisTopic[], lead: false }]),
+]);

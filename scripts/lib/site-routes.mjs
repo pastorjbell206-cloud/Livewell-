@@ -11,6 +11,7 @@
  * resolve as "unverified", never as dead.
  */
 import { readFileSync, existsSync, readdirSync } from "node:fs";
+import { builtFrom } from "./built-files.mjs";
 import { join } from "node:path";
 
 const ROOT = new URL("../..", import.meta.url).pathname;
@@ -101,9 +102,11 @@ export function resolveHref(rawHref) {
   let href = rawHref.split("#")[0].split("?")[0];
   if (href.length > 1) href = href.replace(/\/+$/, "");
   if (!href.startsWith("/")) return { status: "unverified" };
-  // Static files served from client/public (PDFs, images) are real if present.
+  // Static files served from client/public (PDFs, images) are real if present,
+  // or if the deploy builds them from a source that exists (the PDFs are not
+  // committed; scripts/lib/built-files.mjs).
   if (/\.[a-z0-9]{2,5}$/i.test(href)) {
-    return existsSync(join(ROOT, "client/public", href)) ? { status: "ok" } : { status: "missing" };
+    return existsSync(join(ROOT, "client/public", href)) || builtFrom(href) ? { status: "ok" } : { status: "missing" };
   }
   if (literalRedirects.has(href)) return { status: "redirect", to: literalRedirects.get(href) };
   if (literal.has(href)) return { status: "ok" };

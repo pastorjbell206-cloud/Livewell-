@@ -1,0 +1,68 @@
+{
+  "slug": "family-devotions",
+  "page": false,
+  "rank": 15,
+  "title": "How do we do family devotions?",
+  "summary": "Five minutes at the table, a passage, a question, a prayer: faith at home without the performance.",
+  "askedAs": [
+    "family devotions",
+    "family worship",
+    "how to do family devotions",
+    "devotions for kids",
+    "reading the Bible with kids",
+    "family prayer",
+    "catechism for kids",
+    "family Bible study",
+    "bedtime prayers",
+    "how to teach kids the Bible"
+  ],
+  "states": [
+    "grow",
+    "helping"
+  ],
+  "sensitivity": "ordinary",
+  "kit": {
+    "read": [
+      {
+        "href": "/family/devotions",
+        "label": "Family Devotions",
+        "kind": "Page"
+      },
+      {
+        "href": "/tools/family-devotions",
+        "label": "Family Devotion Builder",
+        "kind": "Tool"
+      },
+      {
+        "href": "/how-tos/parenting-how-to-start-family-worship",
+        "label": "How to Start Family Worship in Five Minutes",
+        "kind": "How-to"
+      },
+      {
+        "href": "/how-tos/fam-how-to-start-family-worship",
+        "label": "How to Start Family Worship (and Keep It When It Falls Apart)",
+        "kind": "How-to"
+      },
+      {
+        "href": "/family/catechism",
+        "label": "Family Catechism",
+        "kind": "Page"
+      },
+      {
+        "href": "/how-tos/fam-how-to-use-a-family-catechism",
+        "label": "How to Use a Family Catechism",
+        "kind": "How-to"
+      },
+      {
+        "href": "/family/reading-plans",
+        "label": "Family Reading Plans",
+        "kind": "Page"
+      },
+      {
+        "href": "/writing/family-devotions-authentic",
+        "label": "Family Devotions That Don't Feel Forced",
+        "kind": "Essay"
+      }
+    ]
+  }
+}

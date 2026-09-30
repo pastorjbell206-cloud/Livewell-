@@ -1,0 +1,58 @@
+{
+  "slug": "healing",
+  "page": false,
+  "rank": 13,
+  "title": "I'm praying for healing",
+  "summary": "Asking God to heal, and living in the waiting, without the promises he never made.",
+  "askedAs": [
+    "healing",
+    "Bible verses for healing",
+    "prayer for healing",
+    "does God still heal",
+    "why hasn't God healed me",
+    "healing scriptures",
+    "is sickness a punishment for sin",
+    "faith healing",
+    "praying for a sick friend",
+    "anointing the sick"
+  ],
+  "states": [
+    "carrying",
+    "helping"
+  ],
+  "sensitivity": "ordinary",
+  "kit": {
+    "read": [
+      {
+        "href": "/life/health-illness-and-pain",
+        "label": "How Should Christians Think About Sickness and Health?",
+        "kind": "Life"
+      },
+      {
+        "href": "/wisdom/serious-illness",
+        "label": "When You Are Seriously Ill",
+        "kind": "Wisdom"
+      },
+      {
+        "href": "/wisdom/chronic-pain",
+        "label": "Chronic Pain and Illness",
+        "kind": "Wisdom"
+      },
+      {
+        "href": "/life/waiting-and-unanswered-prayer",
+        "label": "What Do You Do When God Does Not Answer Prayer?",
+        "kind": "Life"
+      },
+      {
+        "href": "/writing/prosperity-gospel-is-not-the-gospel",
+        "label": "The Prosperity Gospel Is Not the Gospel",
+        "kind": "Essay"
+      },
+      {
+        "href": "/studyguides/lament",
+        "label": "Lament: A Bible Study on Praying Your Pain",
+        "kind": "Study guide"
+      }
+    ]
+  }
+}
