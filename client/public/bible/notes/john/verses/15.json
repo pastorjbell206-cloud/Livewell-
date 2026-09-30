@@ -1,0 +1,596 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "The last of John's seven I am sayings with a predicate opens the chapter without a question to prompt it. Jesus names himself the true vine and his Father the farmer who tends it, and the image governs verses 1 to 8.",
+      "grammar": "Egō eimi hē ampelos hē alēthinē, ‘I am the vine, the true one’, repeats the article before the adjective, a word order that sets alēthinē apart for emphasis. Alēthinos in John means real or genuine, the reality toward which earlier things pointed (1:9, 6:32), rather than true as opposed to lying (alēthēs). Ho patēr mou ho geōrgos estin, ‘my Father is the farmer’, uses geōrgos, a worker of the soil. Luke has a more specialized word, ampelourgos, ‘vinedresser’, in the parable of the fig tree (Luke 13:7). In the parable of the tenants the geōrgoi are the leaders who were given charge of God's vineyard and failed (Mark 12:1-9). Here the Father himself is the farmer, and there are no tenants between him and the vine.",
+      "words": [
+        "G1473",
+        "G1510",
+        "G0288",
+        "G0228",
+        "G1092"
+      ],
+      "ot": [
+        {
+          "ref": "Psalm 80:8-19",
+          "note": "In the Hebrew (80:9-20) Asaph remembers that God brought a vine (gefen) out of Egypt, drove out the nations, and planted it, until it covered the mountains and reached to the sea. Now its walls are broken and the boar from the forest ravages it, and the refrain asks God to restore and let his face shine. At verse 15 the Hebrew (80:16) asks God to look after the stock his right hand planted and ‘the son’ (ben) he made strong for himself, and verse 17 (Hebrew 80:18) prays for the man of God's right hand, ‘the son of man’ (ben adam) he made strong. The Septuagint (Psalm 79:16) renders the ‘son’ of verse 15 as huion anthrōpou, ‘son of man’, so that in the Greek the vine and the son of man stand together twice. When the one who calls himself the Son of Man calls himself the true vine, the psalm's joining of the ravaged vine to a single royal figure is close at hand, though John does not cite it."
+        },
+        {
+          "ref": "Isaiah 5:1-7",
+          "note": "Isaiah's song of the vineyard tells of a beloved who cleared a hillside, planted choice vines, built a tower and a winepress, and looked for grapes, but the vineyard produced be'ushim, stinking or wild grapes; the Septuagint says it produced thorns (akanthas). The song ends by naming the vineyard as the house of Israel and closing with two wordplays in Hebrew: God looked for mishpat, justice, and saw mispach, bloodshed; for tsedaqah, righteousness, and heard tse'aqah, a cry. Isaiah 27:2-6 answers the song with a vineyard God guards night and day, and a day when Israel will take root and fill the world with fruit. Jesus' vine that bears much fruit (15:5, 15:8) stands in the line of that promised vineyard."
+        },
+        {
+          "ref": "Jeremiah 2:21",
+          "note": "The Hebrew has God say that he planted Israel as a soreq, a choice vine, kulloh zera emet, ‘wholly of true seed’, and asks how it turned into a degenerate foreign vine. The Septuagint renders the line ampelon karpophoron pasan alēthinēn, ‘a fruit-bearing vine, wholly true’, using the very adjective of John 15:1. What God planted Israel to be, a true vine bearing fruit, Jesus says he is. Many interpreters see this as the nearest verbal source of the phrase the true vine."
+        }
+      ],
+      "theology": [
+        {
+          "id": "israel",
+          "note": "The vine was Israel's emblem in Scripture and on the temple's gate. In calling himself the true vine, Jesus claims to be Israel as God meant it to be, the faithful son in whom God's planting finally bears fruit. The chapter note sets out how Christians have differed on what this fulfillment implies for the Jewish people."
+        },
+        {
+          "id": "messiah",
+          "note": "Psalm 80 already joined the vine to a royal son of man at God's right hand, and the Didache gave thanks for the holy vine of David made known through Jesus (Didache 9:2). The vine saying is a messianic claim in the form of an image: the king embodies his people."
+        }
+      ],
+      "refs": [
+        "Psalm 80:8-19",
+        "Isaiah 5:1-7",
+        "Jeremiah 2:21",
+        "Hosea 10:1",
+        "Mark 12:1-9"
+      ]
+    },
+    {
+      "v": "2",
+      "context": "The Father does two things to the branches, depending on whether they bear fruit. The fruitless are removed; the fruitful are cleaned so that they bear more. The verse sets up the warning of verse 6 and the reassurance of verse 3.",
+      "grammar": "The sentence begins with a construction grammarians call a hanging case: pan klēma en emoi mē pheron karpon, ‘every branch in me not bearing fruit’, stands first, and only then comes the verb, airei auto, ‘he takes it away’, with the pronoun picking the branch up again. The second half repeats the pattern: kai pan to karpon pheron kathairei auto, ‘and every one bearing fruit, he cleans it’. The two verbs rhyme, airei and kathairei, and the second is the verb used for cleaning or pruning, whose adjective katharos returns in verse 3. The phrase en emoi, ‘in me’, most naturally goes with the branch, a branch that is in the vine, which is why the verse matters in the debate about perseverance. Hina karpon pleiona pherē, ‘so that it may bear more fruit’, gives the purpose of the pruning with a comparative, pleiona, ‘more’.",
+      "words": [
+        "G2814",
+        "G2590",
+        "G5342",
+        "G0142",
+        "G2508",
+        "G4119"
+      ],
+      "history": "Roman agricultural writers describe the vinedresser's year in detail. Columella, writing in the first century AD, gives a whole book of his On Agriculture (book 4) to the planting, propping, and pruning of vines, including the cutting away of barren and superfluous shoots so that the vine's strength goes into fruit. Jesus' hearers did not need a manual: pruning in the dormant season and pinching back in the growing season were part of village life in Judea and Galilee.",
+      "theology": [
+        {
+          "id": "sanctification",
+          "note": "The Father's care for fruitful branches is to cut them back so that they bear more. The verse presents growth in holiness as the Father's work on those already joined to the vine, a work that can include loss, and verse 3 names the word of Jesus as its chief instrument."
+        }
+      ],
+      "refs": [
+        "Isaiah 18:5",
+        "Hebrews 12:10-11",
+        "Matthew 3:10",
+        "Luke 13:6-9"
+      ]
+    },
+    {
+      "v": "3",
+      "context": "Jesus turns from the image to the eleven: they are already clean. The word he has spoken to them has done for them what the Father's pruning does for the branches.",
+      "grammar": "Ēdē humeis katharoi este, ‘already you are clean’, puts ēdē, ‘already’, first, and the adjective katharos echoes kathairei in verse 2. Dia ton logon, ‘because of the word’, uses dia with the accusative, which gives the cause or ground (‘on account of’), not dia with the genitive, which would give the means (‘through’). The word is the reason they are clean. Hon lelalēka humin, ‘which I have spoken to you’, is a perfect: the word spoken remains in force. The verse recalls the foot washing, where Jesus said they were clean, though not all of them (13:10); Judas has now gone out, and Jesus says it without exception.",
+      "words": [
+        "G2235",
+        "G2513",
+        "G3056",
+        "G2980"
+      ],
+      "theology": [
+        {
+          "id": "regeneration",
+          "note": "The disciples' cleanness is the gift of Jesus' word, received in faith, not the result of their own effort. The New Testament elsewhere joins the word and cleansing in the same way: Christ cleanses the church by the washing of water with the word (Ephesians 5:26), and believers are born again through the living word of God (1 Peter 1:23)."
+        }
+      ],
+      "refs": [
+        "John 13:10-11",
+        "John 17:17",
+        "Ephesians 5:26",
+        "1 Peter 1:22-23",
+        "Psalm 119:9"
+      ]
+    },
+    {
+      "v": "4",
+      "context": "The command at the heart of the image: remain in me. Jesus explains it by the plain fact of the vineyard, that a branch cut off bears nothing.",
+      "grammar": "Meinate en emoi, ‘remain in me’, is an aorist imperative, which presents the command as a whole rather than stressing its continuation; the continuance is in the verb itself. Kagō en humin, ‘and I in you’, has no verb, and grammarians read it three ways: as a promise (‘and I will remain in you’, the BSB), as a second part of the command (‘and see that I remain in you’), or as a comparison (‘as I remain in you’). The first is the most common reading, and all three make the relationship mutual. The comparison that follows is exact: kathōs to klēma ou dunatai karpon pherein aph' heautou ean mē menē en tē ampelō, ‘just as the branch cannot bear fruit from itself unless it remains in the vine’, houtōs oude humeis ean mē en emoi menēte, ‘so neither can you unless you remain in me’. Aph' heautou, ‘from itself’, is the phrase Jesus used of himself: the Son does nothing from himself (5:19, 5:30).",
+      "words": [
+        "G3306",
+        "G2814",
+        "G2590",
+        "G0288",
+        "G1438"
+      ],
+      "theology": [
+        {
+          "id": "union",
+          "note": "The union of the disciple with Christ mirrors the Son's dependence on the Father. As the Son does nothing from himself but what he sees the Father doing (5:19), the branch bears nothing from itself. Union with Christ is not a technique but a dependence, and the command to remain is a command to keep receiving."
+        }
+      ],
+      "refs": [
+        "John 5:19",
+        "John 6:56",
+        "1 John 2:6",
+        "1 John 2:28",
+        "Colossians 2:6-7"
+      ]
+    },
+    {
+      "v": "5",
+      "context": "Jesus repeats the I am saying and makes the identification explicit: he is the vine, they are the branches. The one who remains in him bears much fruit, because apart from him they can do nothing.",
+      "grammar": "Egō eimi hē ampelos, humeis ta klēmata, ‘I am the vine, you the branches’, sets the two pronouns side by side with the verb supplied from the first clause. Ho menōn en emoi kagō en autō, houtos pherei karpon polun, ‘the one remaining in me and I in him, this one bears much fruit’, is another hanging construction, with houtos, ‘this one’, picking up the subject. The last clause, hoti chōris emou ou dunasthe poiein ouden, ‘because apart from me you can do nothing’, doubles the negative (ou ... ouden), which in Greek strengthens rather than cancels it. Chōris, ‘apart from’, is the word of 1:3, where without the Word nothing came into being (chōris autou egeneto oude hen).",
+      "words": [
+        "G0288",
+        "G2814",
+        "G3306",
+        "G5342",
+        "G2590",
+        "G5565",
+        "G3762"
+      ],
+      "history": "Augustine made the last clause a weapon against Pelagius, who taught that human beings can obey God by their own natural powers with grace as an aid. Jesus did not say, Augustine argued, that without him we can do little, but nothing (Tractates on John 81.3), and the Council of Carthage in 418 and the Second Council of Orange in 529 took up the verse. The Council of Trent's Decree on Justification (1547, chapter 16) uses the same image to say that Christ, as the head into the members and the vine into the branches, continually pours strength into the justified, strength that goes before, with, and after their good works. The Reformers read the verse just as firmly, though they drew different conclusions about merit.",
+      "theology": [
+        {
+          "id": "union",
+          "note": "The union is mutual (I in him, he in me) and fruitful. Nothing in the verse suggests that the branch contributes life to the vine; everything the branch bears it has received, which is why every Christian tradition has used this verse to say that good works flow from grace."
+        }
+      ],
+      "refs": [
+        "John 1:3",
+        "Philippians 4:13",
+        "2 Corinthians 3:5",
+        "Galatians 5:22-23",
+        "Philippians 2:12-13"
+      ]
+    },
+    {
+      "v": "6",
+      "context": "The warning. The one who does not remain is like a branch thrown out, dried up, gathered, and burned. The picture comes straight from the vineyard, where pruned wood was useless except as fuel.",
+      "grammar": "Ean mē tis menē en emoi, ‘if anyone does not remain in me’, is followed by two aorist indicatives, eblēthē exō hōs to klēma kai exēranthē, ‘he was thrown out like the branch and withered’. The aorists after a present condition are unusual. Grammarians explain them as gnomic, stating what always happens, as in a proverb, or as proleptic, describing the outcome as already settled the moment the branch ceases to remain. The next verbs are plural and impersonal: sunagousin auta kai eis to pur ballousin, ‘they gather them and throw them into the fire’, a Semitic way of expressing a passive (compare Luke 12:20, where ‘they demand your soul’ means your soul is required). Kaietai, ‘it is burned’, closes with a present passive.",
+      "words": [
+        "G3306",
+        "G0906G",
+        "G2814",
+        "G3583",
+        "G4863",
+        "G4442",
+        "G2545"
+      ],
+      "ot": [
+        {
+          "ref": "Ezekiel 15:1-8",
+          "note": "In the Hebrew, God asks Ezekiel how the wood of the vine is better than any other wood: no one takes a peg from it, it is thrown into the fire for fuel, and when the fire has burned both ends and charred the middle it is useless for anything. God then says he has given the people of Jerusalem to the fire like that wood. The Septuagint keeps the image closely, with eis to pur, ‘into the fire’, the phrase John uses. Ezekiel's point is that a vine's only value is its fruit; cut off and fruitless, its wood has none. Jesus applies the same logic to anyone who does not remain in him."
+        }
+      ],
+      "theology": [
+        {
+          "id": "perseverance",
+          "note": "The verse is the center of the chapter's debate over whether a true believer can be finally lost (see the chapter note's hard question). Whatever position a reader takes, the verse's own form is a warning addressed to disciples, and its aim is that they remain. Wesleyan and Arminian readers take it as a real possibility for real branches; Reformed readers take it as the fate of those whose connection to Christ was outward only, and as one of the means by which God keeps those who are his."
+        },
+        {
+          "id": "judgment",
+          "note": "Fire in Scripture is often the image of judgment (Matthew 3:10, 13:40-42). Jesus uses the image without softening it, but he uses it of those who do not remain, and he speaks it to call his disciples to remain, not to frighten them away from him."
+        }
+      ],
+      "refs": [
+        "Ezekiel 15:1-8",
+        "Matthew 3:10",
+        "Matthew 13:40-42",
+        "Hebrews 6:7-8",
+        "1 John 2:19"
+      ]
+    },
+    {
+      "v": "7-8",
+      "context": "The positive side of the warning: those who remain in him, with his words remaining in them, may ask what they wish and it will be done. The Father is glorified when they bear much fruit and so prove to be Jesus' disciples.",
+      "grammar": "Ean meinēte en emoi kai ta rhēmata mou en humin meinē, ‘if you remain in me and my words remain in you’, shows what remaining means: the second clause replaces ‘I in you’ with ‘my words in you’. Ho ean thelēte aitēsasthe, ‘ask whatever you wish’, is an aorist middle imperative; the middle voice can carry a sense of asking for oneself. Kai genēsetai humin, ‘and it will happen for you’, uses the future of ginomai, ‘come to be’. In verse 8, en toutō edoxasthē ho patēr mou, ‘in this my Father is glorified’, is an aorist that grammarians describe as timeless or as looking at the result as already accomplished; en toutō, ‘in this’, points forward to the hina clause, hina karpon polun pherēte, ‘that you bear much fruit’. Kai genēsthe emoi mathētai, ‘and become my disciples’, uses ginomai again: discipleship is something one keeps becoming.",
+      "words": [
+        "G3306",
+        "G4487",
+        "G2309",
+        "G0154",
+        "G1096",
+        "G1392",
+        "G2590",
+        "G3101"
+      ],
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "The promise is given to those in whom Jesus' words remain, so that their wishes have been shaped by his words. Prayer here is not a way of bending God to the disciple's will but the asking of those whose will is being formed by the word of Christ."
+        },
+        {
+          "id": "glory",
+          "note": "The Father's glory is displayed in his people's fruitfulness, as it was in the Son's finished work (17:4). The disciples glorify God not by adding anything to him but by showing the life of the vine in the world."
+        }
+      ],
+      "refs": [
+        "John 14:13-14",
+        "John 16:23-24",
+        "1 John 5:14-15",
+        "Matthew 5:16",
+        "John 8:31"
+      ]
+    },
+    {
+      "v": "9-10",
+      "context": "The image gives way to plain speech about love. The Father's love for the Son is the measure of the Son's love for the disciples, and keeping his commands is the way to remain in that love, as the Son remained in the Father's love by keeping his commands.",
+      "grammar": "Kathōs ēgapēsen me ho patēr, kagō humas ēgapēsa, ‘as the Father loved me, I also loved you’, uses two aorists that look at each love as a whole; kathōs, ‘just as’, gives both the pattern and the source. Meinate en tē agapē tē emē, ‘remain in my love’, repeats the article with the possessive adjective, and my love means the love Jesus has for them, not their love for him. Verse 10 makes it conditional: ean tas entolas mou tērēsēte, meneite en tē agapē mou, ‘if you keep my commands, you will remain in my love’. The comparison that follows, kathōs egō tas entolas tou patros mou tetērēka kai menō autou en tē agapē, ‘as I have kept my Father's commands and remain in his love’, uses the perfect tetērēka for a completed and lasting obedience, spoken as if his obedience to death were already finished.",
+      "words": [
+        "G2531",
+        "G0025",
+        "G3306",
+        "G0026",
+        "G1785",
+        "G5083G"
+      ],
+      "theology": [
+        {
+          "id": "love",
+          "note": "The love between the Father and the Son is the source of the disciples' love, and Jesus' own obedience is the pattern of theirs. Obedience does not earn the love; it is the way of remaining in a love already given, as a child remains in a father's love by living as his child."
+        },
+        {
+          "id": "trinity",
+          "note": "The Son is loved by the Father and keeps his commands. John presents the eternal relation of the Father and the Son (17:24) as the ground of the love the disciples are invited into, so that the love between the Father and the Son is the first love of all."
+        }
+      ],
+      "refs": [
+        "John 3:35",
+        "John 17:23-26",
+        "John 14:15",
+        "1 John 4:16",
+        "Jude 1:21"
+      ]
+    },
+    {
+      "v": "11",
+      "context": "Jesus names the purpose of everything he has said about the vine and remaining: his joy in them and their joy complete. On the night of his betrayal, he speaks of joy.",
+      "grammar": "Tauta lelalēka humin, ‘these things I have spoken to you’, is the formula that marks the discourse's pauses (14:25, 16:1, 16:33). Hina hē chara hē emē en humin ē, ‘so that my joy may be in you’, repeats the article with the possessive, as with my love in verse 9. Kai hē chara humōn plērōthē, ‘and your joy may be made full’, uses an aorist passive of plēroō, ‘fill’ or ‘fulfill’. John the Baptist had said his joy was made full at hearing the bridegroom's voice (3:29), and the same phrase returns in 16:24, 17:13, and 1 John 1:4.",
+      "words": [
+        "G2980",
+        "G5479",
+        "G4137"
+      ],
+      "theology": [
+        {
+          "id": "union",
+          "note": "Jesus' own joy, the joy of the Son in the Father's love, is given to those who remain in him. Joy in this chapter is not a mood produced by circumstances but a share in Christ's own life, and the next chapter will promise a joy no one can take away (16:22)."
+        }
+      ],
+      "refs": [
+        "John 3:29",
+        "John 16:22-24",
+        "John 17:13",
+        "1 John 1:4",
+        "Nehemiah 8:10"
+      ]
+    },
+    {
+      "v": "12-13",
+      "context": "The many commands of chapter 14 are gathered into one: love one another as I have loved you. Verse 13 then defines the measure: no one has greater love than to lay down one's life for one's friends.",
+      "grammar": "Hautē estin hē entolē hē emē, ‘this is my command’, uses the singular: the plural commandments of 14:15 and 15:10 are summed up in one. Hina agapate allēlous, ‘that you love one another’, gives its content with a present subjunctive of continuing love. Kathōs ēgapēsa humas, ‘as I loved you’, is the same aorist as in 13:34. Verse 13 reads literally ‘greater love than this no one has, that someone lay down his life for his friends’; meizona tautēs agapēn, ‘greater love than this’, uses the genitive of comparison, and the hina clause explains what this is. Tēn psuchēn autou thē, ‘lay down his life’, is John's idiom for a voluntary death, used of the good shepherd (10:11, 10:15, 10:17-18) and in Peter's promise (13:37). Huper tōn philōn autou, ‘on behalf of his friends’, uses huper, the preposition of benefit that John and Paul use for Christ's death for others.",
+      "words": [
+        "G1785",
+        "G0025",
+        "G0240",
+        "G3173",
+        "G0026",
+        "G5590H",
+        "G5087",
+        "G5228",
+        "G5384"
+      ],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "Jesus speaks of his own death, hours away, as love laying down its life on behalf of others. Paul pushes the thought further when he says Christ died for us while we were still sinners and enemies (Romans 5:6-10); the two statements belong together, since the friends of this verse are those Jesus has made his friends, including a Peter who will deny him."
+        },
+        {
+          "id": "love",
+          "note": "The command to love one another is measured by the cross. The love Jesus asks for is not a feeling of affection but a readiness to give one's life for another, which 1 John 3:16 applies to the ordinary sharing of goods with a brother in need."
+        }
+      ],
+      "refs": [
+        "John 13:34",
+        "John 10:11",
+        "Romans 5:6-8",
+        "1 John 3:16",
+        "Ephesians 5:2"
+      ]
+    },
+    {
+      "v": "14-15",
+      "context": "Jesus calls the disciples his friends, on the condition that they do what he commands, and explains the change of name. A slave is not told his master's purposes; Jesus has told them everything he heard from the Father.",
+      "grammar": "Humeis philoi mou este ean poiēte ha egō entellomai humin, ‘you are my friends if you do what I command you’, joins friendship and command without tension: friends of a king obey him, but as those who know his mind. Ouketi legō humas doulous, ‘no longer do I call you slaves’, uses the present legō. The reason is given in a general statement, hoti ho doulos ouk oiden ti poiei autou ho kurios, ‘for the slave does not know what his master is doing’. Humas de eirēka philous, ‘but you I have called friends’, uses the perfect of legō: the naming stands. Hoti panta ha ēkousa para tou patros mou egnōrisa humin, ‘because all that I heard from my Father I made known to you’, uses gnōrizō, ‘make known’, the verb that returns at the end of the prayer (17:26).",
+      "words": [
+        "G5384",
+        "G4160G",
+        "G1781",
+        "G1401",
+        "G6063",
+        "G2962H",
+        "G0191",
+        "G1107"
+      ],
+      "ot": [
+        {
+          "ref": "Isaiah 41:8",
+          "note": "God addresses Israel as ‘the offspring of Abraham, my friend’, where the Hebrew ohavi means literally ‘the one who loves me’ or ‘my loved one’. The Septuagint renders it hon ēgapēsa, ‘whom I loved’, and 2 Chronicles 20:7 uses a similar phrase; James 2:23 calls Abraham philos theou, ‘friend of God’. In Genesis 18:17 God asks whether he should hide from Abraham what he is about to do, and Amos 3:7 says the Lord does nothing without revealing his counsel to his servants the prophets. John 15:15 gathers these threads: friendship with God is the privilege of being told his purposes, and Jesus gives it to his disciples by making known all that he heard from the Father."
+        }
+      ],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "The disciples are friends because they have been told. Friendship with Christ is not first a feeling of closeness but a share in what he knows of the Father, the privilege Abraham and Moses had and that Jesus now extends to all who hear and keep his word."
+        }
+      ],
+      "refs": [
+        "Exodus 33:11",
+        "Genesis 18:17",
+        "Amos 3:7",
+        "James 2:23",
+        "Romans 8:15"
+      ]
+    },
+    {
+      "v": "16",
+      "context": "The friendship rests on Jesus' initiative: they did not choose him; he chose them and appointed them to go and bear fruit that remains. The promise about prayer returns, now addressed to the Father in Jesus' name.",
+      "grammar": "Ouch humeis me exelexasthe, all' egō exelexamēn humas, ‘not you chose me, but I chose you’, puts the pronouns in contrast and uses the aorist middle of eklegomai, ‘choose for oneself’. Kai ethēka humas, ‘and I appointed you’, uses tithēmi in the sense of setting someone in an office, as Paul says Christ appointed him to his service (1 Timothy 1:12). Two hina clauses follow. The first gives the purpose of the appointment, hina humeis hupagēte kai karpon pherēte kai ho karpos humōn menē, ‘that you go and bear fruit and your fruit remain’, where hupagēte, ‘go’, points to mission and menē, ‘remain’, applies the chapter's key verb to the fruit. The second, hina ho ti an aitēsēte ton patera en tō onomati mou dō humin, ‘so that whatever you ask the Father in my name he may give you’, can be read as a further purpose of the appointment or as a result of the fruit-bearing.",
+      "words": [
+        "G1586",
+        "G5087",
+        "G5217",
+        "G2590",
+        "G3306",
+        "G0154",
+        "G3686",
+        "G1325"
+      ],
+      "history": "In the Jewish world of the time a student normally chose his teacher. The Mishnah preserves the counsel of Joshua ben Perahiah, of the second century BC, to make for oneself a teacher and acquire a companion (m. Avot 1:6), and disciples attached themselves to a sage of their choosing. Jesus' call reversed the pattern: he sought out his disciples (1:43, Mark 1:16-20), and here he makes the reversal explicit.",
+      "theology": [
+        {
+          "id": "election",
+          "note": "Jesus' choice of the disciples is the ground of their life and their fruitfulness. In John the choosing is always for a purpose, to go and bear fruit, and it includes Judas (6:70), so the Gospel holds together divine initiative and the call to remain. Reformed interpreters read the verse as a statement of God's sovereign choosing; Arminian interpreters read it as Jesus' choice of the Twelve for their apostolic task. Both agree that the initiative in the relationship is his."
+        },
+        {
+          "id": "mission",
+          "note": "The disciples are appointed to go. Their fruit is the lasting result of their mission as well as their own growth, a harvest Jesus described in 4:35-38 and that the prayer of 17:20 already sees: those who will believe through their word."
+        }
+      ],
+      "refs": [
+        "John 6:70",
+        "John 13:18",
+        "John 4:35-38",
+        "1 Timothy 1:12",
+        "Ephesians 2:10"
+      ]
+    },
+    {
+      "v": "17",
+      "context": "The love command closes the second section as it opened it (verse 12). Everything Jesus has commanded is aimed at this.",
+      "grammar": "Tauta entellomai humin, hina agapate allēlous, literally ‘these things I command you, that you love one another’. The plural tauta, ‘these things’, followed by a hina clause, can be read as ‘this is what I command: love one another’ (the BSB) or as ‘I command you these things so that you may love one another’. On the second reading, all the teaching about remaining, fruit, and friendship has mutual love as its goal. The present subjunctive agapate describes a love that goes on.",
+      "words": [
+        "G1781",
+        "G0025",
+        "G0240"
+      ],
+      "theology": [
+        {
+          "id": "church",
+          "note": "The community of Jesus is defined by the command given to it. Mutual love is not one duty among many for the church but the purpose of its whole life together, and the next verse sets that love against the world's hatred."
+        }
+      ],
+      "refs": [
+        "John 15:12",
+        "John 13:34-35",
+        "1 John 3:23",
+        "1 John 4:7-11"
+      ]
+    },
+    {
+      "v": "18",
+      "context": "The chapter turns sharply from love to hatred. If the world hates the disciples, they are to remember that it hated Jesus first. The section that follows (18 to 25) explains why.",
+      "grammar": "Ei ho kosmos humas misei, ‘if the world hates you’, uses ei with the present indicative, a condition assumed to be real: the hatred is expected. Ginōskete, ‘know’ or ‘you know’, can be imperative or indicative, as the forms are identical; the BSB's ‘understand’ takes it as a command. Hoti eme prōton humōn memisēken, ‘that it has hated me before you’, uses prōton with the genitive in the sense of ‘before’, as John the Baptist said the one coming after him was prōtos mou, ‘before me’ (1:15, 1:30). The perfect memisēken describes a hatred that began and continues.",
+      "words": [
+        "G2889",
+        "G3404",
+        "G1097",
+        "G4413H"
+      ],
+      "history": "Roman writers of the early second century record the hostility the verse foresees. Tacitus says that Nero fastened the blame for the fire of AD 64 on a class hated for their abominations, called Christians (Annals 15.44), and Suetonius lists among Nero's measures the punishment of the Christians, whom he calls a class of people given to a new and harmful superstition (Nero 16.2). Neither historian shows any sympathy for the Christians, which makes their testimony to the hatred the more telling.",
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "Hatred of the disciples is not a sign that something has gone wrong but a sign that they belong to the one who was hated first. The verse gives suffering a place in the life of discipleship without making it a goal to be sought."
+        }
+      ],
+      "refs": [
+        "John 7:7",
+        "1 John 3:13",
+        "Matthew 10:22",
+        "1 Peter 4:12-14",
+        "John 1:15"
+      ]
+    },
+    {
+      "v": "19",
+      "context": "Jesus explains the world's hatred: the world loves its own, and the disciples are no longer its own, because he has chosen them out of the world. The verse is one of the Gospel's clearest statements of what John means by the world.",
+      "grammar": "Ei ek tou kosmou ēte, ho kosmos an to idion ephilei, ‘if you were of the world, the world would love its own’, is a contrary-to-fact condition with imperfects in both halves. Ek tou kosmou, ‘of the world’ or ‘out of the world’, describes origin and belonging, as Jesus told his opponents, you are from below, I am from above; you are of this world, I am not (8:23). To idion, ‘its own’, is neuter, as if the world loves what belongs to it as property, and the verb is phileō, used here interchangeably with agapaō. Hoti de ek tou kosmou ouk este, all' egō exelexamēn humas ek tou kosmou, ‘but because you are not of the world, but I chose you out of the world’, repeats ek tou kosmou three times, moving from belonging to the world to being chosen out of it.",
+      "words": [
+        "G2889",
+        "G2398",
+        "G5368",
+        "G1586",
+        "G3404"
+      ],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "John uses kosmos far more than any other New Testament writer, and in more than one sense. The world is the created order made through the Word (1:10, 17:24); it is humanity, which God loved enough to give his Son (3:16); and it is humanity organized in rejection of God, which hates Jesus (7:7) and his followers. Rudolf Bultmann's Theology of the New Testament made this last sense central to his reading of John. The senses are not separated in John: the world that hates is the world God loves and into which the disciples are sent (17:18). John's world is never evil matter, as later Gnostic teachers taught, but a creation turned against its Maker."
+        },
+        {
+          "id": "election",
+          "note": "The disciples are distinguished from the world not by their own superiority but by Jesus' choice. Being chosen out of the world does not remove them from it (17:15) but changes whom they belong to."
+        }
+      ],
+      "refs": [
+        "John 1:10",
+        "John 3:16-17",
+        "John 8:23",
+        "John 17:14-18",
+        "1 John 2:15-17"
+      ]
+    },
+    {
+      "v": "20-21",
+      "context": "Jesus reminds them of the proverb from the foot washing, that no slave is greater than his master, and draws the consequence: they will be treated as he was. The root of it all is that the persecutors do not know the one who sent him.",
+      "grammar": "Mnēmoneuete tou logou, ‘remember the word’, is a present imperative with the genitive, and the word quoted is 13:16. Two conditions of the same form follow: ei eme ediōxan, kai humas diōxousin, ‘if they persecuted me, they will persecute you too’, and ei ton logon mou etērēsan, kai ton humeteron tērēsousin, ‘if they kept my word, they will keep yours too’. The second is read in two ways: as irony (they did not keep his word, so they will not keep yours) or as a genuine second possibility (some did keep his word, and some will keep yours). Verse 21 begins alla, ‘but’, and gives the cause: tauta panta poiēsousin eis humas dia to onoma mou, ‘they will do all these things to you because of my name’. The name stands for Jesus himself, and hoti ouk oidasin ton pempsanta me, ‘because they do not know the one who sent me’, traces the hostility to ignorance of God.",
+      "words": [
+        "G3421",
+        "G1401",
+        "G3173",
+        "G2962H",
+        "G1377",
+        "G5083G",
+        "G3686",
+        "G6063",
+        "G3992"
+      ],
+      "parallels": [
+        "Matthew 10:22-25",
+        "Mark 13:13",
+        "Luke 6:40"
+      ],
+      "text": "The Synoptic Gospels place similar sayings in other settings. Matthew sets the proverb about the disciple and his teacher, the slave and his master, in the mission charge to the Twelve (Matthew 10:24-25), with the warning that they will be hated by all for Jesus' name (10:22). Mark has the warning in the discourse on the last days (Mark 13:13), and Luke has the proverb in the Sermon on the Plain in a different application (Luke 6:40). John gathers the proverb and the warning into the farewell, as preparation for the time after Jesus has gone.",
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "The persecution of Jesus' followers is persecution for his name. The first apostles rejoiced that they were counted worthy to suffer dishonor for the name (Acts 5:41), and 1 Peter 4:14-16 distinguishes suffering as a Christian from suffering deserved for wrongdoing."
+        }
+      ],
+      "refs": [
+        "John 13:16",
+        "Acts 5:41",
+        "1 Peter 4:14-16",
+        "2 Timothy 3:12",
+        "John 16:3"
+      ]
+    },
+    {
+      "v": "22-24",
+      "context": "Jesus explains why the world's hatred is guilt and not ignorance. His words (verse 22) and his works (verse 24) have taken away every excuse. To hate him is to hate his Father.",
+      "grammar": "Ei mē ēlthon kai elalēsa autois, hamartian ouk eichosan, ‘if I had not come and spoken to them, they would not have sin’, is a contrary-to-fact condition. The form eichosan, an imperfect with the ending -osan, is a Koine form of eichon. Having sin is John's idiom for being guilty (9:41, 19:11). Nun de prophasin ouk echousin peri tēs hamartias autōn, ‘but now they have no excuse for their sin’, uses prophasis, ‘pretext’ or ‘excuse’. Verse 23 states the principle in a single line: ho eme misōn kai ton patera mou misei, ‘the one hating me hates my Father too’. Verse 24 repeats the argument from the works, ta erga ... ha oudeis allos epoiēsen, ‘the works which no one else did’, and ends with two perfects, heōrakasin kai memisēkasin, ‘they have seen and have hated’, joined to kai eme kai ton patera mou, ‘both me and my Father’.",
+      "words": [
+        "G2064",
+        "G2980",
+        "G0266",
+        "G4392",
+        "G3404",
+        "G2041",
+        "G3708"
+      ],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Guilt is measured by what has been revealed. Those who saw Jesus' works and heard his words and still hated him are more responsible than those who never did, the principle Jesus states in 9:41 and Luke 12:47-48. The verse does not say that those who never heard are without sin, but that rejecting the clearest light is the deepest sin."
+        },
+        {
+          "id": "judgment",
+          "note": "To reject the Son is to reject the Father, because the Son is the Father's revelation (14:9). Judgment in John is the exposure of what a person does with the light that has come (3:19-21)."
+        }
+      ],
+      "refs": [
+        "John 9:41",
+        "John 3:19-21",
+        "Luke 12:47-48",
+        "John 5:36",
+        "Romans 1:20"
+      ]
+    },
+    {
+      "v": "25",
+      "context": "The world's hatred without cause fulfills what is written in their Law, the prayers of Israel's righteous sufferer. The section on hatred ends with Scripture.",
+      "grammar": "All' hina plērōthē ho logos ho en tō nomō autōn gegrammenos, ‘but so that the word written in their Law might be fulfilled’, is elliptical like 13:18: something like ‘this happened’ must be supplied. Nomos, ‘Law’, here means Israel's Scriptures as a whole, including the Psalms, as in 10:34 and 12:34. Autōn, ‘their’, sets the Law over against those who appeal to it while hating the one of whom it speaks; Jesus and the disciples are Jews, and the Law is theirs too. The quotation emisēsan me dōrean, ‘they hated me without cause’, uses dōrean, ‘as a gift’ or ‘for nothing’, the same adverb Paul uses for justification freely by God's grace (Romans 3:24).",
+      "words": [
+        "G4137",
+        "G3056",
+        "G3551",
+        "G1125",
+        "G3404",
+        "G1432"
+      ],
+      "ot": [
+        {
+          "ref": "Psalm 69:4",
+          "note": "In the Hebrew (69:5) the psalmist complains that those who hate him without cause, son'ay chinnam, are more than the hairs of his head; Psalm 35:19 has the same phrase, and Psalm 109:3 says his enemies attack him without cause. The Septuagint renders both psalms (68:5 and 34:19) with the participle hoi misountes me dōrean, ‘those who hate me for nothing’. John turns the participle into a finite aorist, emisēsan me dōrean, ‘they hated me without cause’, so that the psalm becomes a statement about a completed act. Psalm 69 is one of the New Testament's favorite psalms of the suffering righteous one: zeal for God's house (69:9) is applied to Jesus at the temple (2:17), and the sour wine offered for thirst (69:21) reappears at the cross (19:28-29). John reads the whole psalm as the prayer of the one who is now speaking."
+        }
+      ],
+      "refs": [
+        "Psalm 69:4",
+        "Psalm 35:19",
+        "Psalm 109:3-5",
+        "John 2:17",
+        "John 19:28-29"
+      ]
+    },
+    {
+      "v": "26",
+      "context": "The third Advocate saying. Against the world's hatred Jesus sets a witness: the Advocate, whom he will send from the Father, the Spirit of truth who proceeds from the Father, will testify about him. The verse became the chief biblical text in the division between East and West over the Spirit's procession.",
+      "grammar": "Hotan elthē ho paraklētos hon egō pempsō humin para tou patros, ‘when the Advocate comes, whom I will send to you from the Father’, makes Jesus the sender, where 14:16 and 14:26 had the Father giving and sending. The Spirit is then described again: to pneuma tēs alētheias ho para tou patros ekporeuetai, ‘the Spirit of truth who goes out from the Father’. Ekporeuomai means ‘go out’ or ‘come forth’; elsewhere in the New Testament it describes words coming from the mouth (Matthew 4:4, Luke 4:22) and people going out of a town. The two clauses are parallel: the future pempsō, ‘I will send’, describes the coming mission, and the present ekporeuetai, ‘proceeds’, can be read as describing the same mission or as a timeless statement of the Spirit's origin. Ekeinos marturēsei peri emou, ‘that one will testify about me’, uses the masculine pronoun, agreeing with paraklētos.",
+      "words": [
+        "G3875",
+        "G3992",
+        "G3844",
+        "G3962",
+        "G4151G",
+        "G0225",
+        "G1607",
+        "G3140"
+      ],
+      "history": "The creed of the Council of Constantinople in 381 took its phrase about the Spirit from this verse, changing para to ek: the Spirit proceeds from the Father (to ek tou patros ekporeuomenon). Gregory of Nazianzus had used the verse to distinguish the Spirit's procession from the Son's begetting (Oration 31.8). In the West, following Augustine, churches in Spain added filioque, ‘and the Son’, to the Latin creed, and Charlemagne's church pressed for it; after the council of Aachen in 809, Pope Leo III, though he accepted the doctrine, refused to alter the creed and had its original text set up on silver shields in Saint Peter's. Maximus the Confessor (Letter to Marinus, seventh century) had explained the Roman teaching as a coming forth through the Son, not a second cause, while Photius of Constantinople in the ninth century argued from this verse that the Spirit proceeds from the Father alone. The Council of Florence (1439) declared ‘and the Son’ and ‘through the Son’ equivalent, a union the Eastern churches did not receive. In 1995 the Pontifical Council for Promoting Christian Unity acknowledged that the Greek ekporeuesthai names origin from the Father as sole source while the Latin procedere is wider, and the Lambeth Conference of 1978 had asked Anglican churches to consider omitting the filioque.",
+      "theology": [
+        {
+          "id": "trinity",
+          "note": "The East reads the verse as distinguishing the Spirit's eternal procession from the Father, the one source (the monarchy of the Father), from his temporal sending by the Son; to say the Spirit proceeds also from the Son, Orthodox theologians have argued, confuses the persons or makes two sources in God. The West reads the verse's parallel clauses as describing the Spirit's mission, which reflects his eternal relation, and holds with Augustine that the Spirit proceeds from the Father principally and, by the Father's gift, from the Son, as from one principle, so that the Son is not a second source; it points to texts that call the Spirit the Spirit of the Son (Galatians 4:6) and to 16:14-15. Both confess the Spirit as fully God, worshiped and glorified with the Father and the Son. The dispute concerns how to speak of the Spirit's origin, and whether one part of the church could add to a creed agreed by all."
+        },
+        {
+          "id": "spirit",
+          "note": "Whatever it says of the Spirit's origin, the verse is clear about his work: he testifies about Jesus. The Spirit's witness is not a second message but the confirmation of the one the world has rejected."
+        }
+      ],
+      "refs": [
+        "John 14:16",
+        "John 14:26",
+        "John 16:7",
+        "Galatians 4:6",
+        "1 John 5:6"
+      ]
+    },
+    {
+      "v": "27",
+      "context": "The disciples' witness joins the Spirit's. They are qualified because they have been with Jesus from the beginning. The courtroom language that ran through the Gospel from the Baptist onward now passes to them.",
+      "grammar": "Kai humeis de martureite, ‘and you also testify’, uses a form that can be indicative (‘you testify’, a statement) or imperative (‘testify’, a command); the BSB's ‘must testify’ captures the sense of duty in either case. The present tense describes an ongoing witness. Hoti ap' archēs met' emou este, ‘because from the beginning you are with me’, uses the present este with a phrase of past time, a Greek idiom for a state that began in the past and continues, which English renders ‘you have been with me’. Ap' archēs, ‘from the beginning’, means from the start of Jesus' ministry (compare 16:4), not the beginning of 1:1.",
+      "words": [
+        "G3140",
+        "G0746",
+        "G1510"
+      ],
+      "theology": [
+        {
+          "id": "mission",
+          "note": "The Spirit's witness and the church's witness are not two testimonies but one, given through two agents. Peter says as much before the Sanhedrin: we are witnesses of these things, and so is the Holy Spirit (Acts 5:32). The disciples' qualification is that they were eyewitnesses, the standard Acts 1:21-22 sets for an apostle and 1 John 1:1-3 claims for its own proclamation."
+        }
+      ],
+      "refs": [
+        "Acts 1:8",
+        "Acts 1:21-22",
+        "Acts 5:32",
+        "1 John 1:1-3",
+        "Luke 24:48"
+      ]
+    }
+  ]
+}
