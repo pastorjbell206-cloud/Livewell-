@@ -12,6 +12,7 @@ import { CardGrid } from "@/components/editorial/CardGrid";
 import { SectionHead } from "@/components/editorial/SectionHead";
 import { useEffect, useState } from "react";
 import { Link } from "wouter";
+import ScriptureNote from "@/components/ScriptureNote";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
@@ -56,6 +57,7 @@ function WisdomToday() {
               {verse.text} <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "13px", color: "var(--mustard-text)" }}>{verse.ref}</span>
             </p>
           )}
+          {verse && <ScriptureNote rendering="bsb" />}
           <p style={{ fontFamily: "var(--B)", fontSize: "15.5px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "64ch", marginBottom: "16px" }}>{topic.framing}</p>
           <div style={{ display: "flex", gap: "18px", flexWrap: "wrap" }}>
             <Link href={`/wisdom/${topic.id}`} style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--mustard-text)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px" }}>

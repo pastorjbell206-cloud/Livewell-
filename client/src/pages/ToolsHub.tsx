@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { Link } from "wouter";
-import { BookOpen, Heart, Users, Search, HeartHandshake, DollarSign, Baby, Brain, BookMarked, MessageCircle, Shield, Target, Church, PenLine } from "lucide-react";
+import { BookOpen, Heart, Users, Search, HeartHandshake, DollarSign, Baby, Brain, BookMarked, MessageCircle, Shield, Target, Church, PenLine, CalendarDays } from "lucide-react";
 import { useFavorites } from "@/hooks/useFavorites";
 
 export const TOOLS = [
@@ -109,6 +109,13 @@ export const TOOLS = [
     href: "/tools/worry-journal",
     icon: PenLine,
     color: "var(--goldlt)",
+  },
+  {
+    title: "The Prayer Planner",
+    description: "Write down the people and needs you mean to pray for, give each a day, and each day see that day's names. Mark answered prayers and keep a dated record of them. Private to your browser.",
+    href: "/tools/prayer-planner",
+    icon: CalendarDays,
+    color: "var(--ink)",
   },
   {
     title: "Prayer Generator",
@@ -235,7 +242,7 @@ export const TOOLS = [
 export const TOOL_GROUPS = [
   { title: "Start with an honest reading", tools: TOOLS.filter((t) => ["/diagnostic","/tools/life-audit","/tools/emotional-health","/life/assessment"].includes(t.href)) },
   { title: "Scripture and theology", tools: TOOLS.filter((t) => ["/tools/deep-bible","/tools/bible-study","/resources/context","/theology/passage","/tools/verse-finder","/tools/bible-says","/tools/bible-on","/tools/theology-quiz","/tools/glossary","/tools/test-the-case","/tools/which-lens","/tools/scripture-memory"].includes(t.href)) },
-  { title: "Wisdom for a real situation", tools: TOOLS.filter((t) => ["/wisdom","/tools/wisdom-finder","/tools/proverbs-31","/tools/quotes","/tools/conflict-guide","/tools/worry-journal","/tools/prayer-generator"].includes(t.href)) },
+  { title: "Wisdom for a real situation", tools: TOOLS.filter((t) => ["/wisdom","/tools/wisdom-finder","/tools/proverbs-31","/tools/quotes","/tools/conflict-guide","/tools/worry-journal","/tools/prayer-planner","/tools/prayer-generator"].includes(t.href)) },
   { title: "Family, marriage, and the household", tools: TOOLS.filter((t) => ["/tools/family-devotions","/tools/marriage-assessment","/tools/parenting-guide","/tools/parenting-verses","/tools/financial-health","/tools/rule-of-life"].includes(t.href)) },
   { title: "The church and the public square", tools: TOOLS.filter((t) => ["/disruption/consistency","/nation/scorecard","/nation/policy"].includes(t.href)) },
 ];

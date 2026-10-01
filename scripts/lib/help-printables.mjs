@@ -125,7 +125,9 @@ function toBuffer(doc) {
 
 /** The one-page guide. Shrinks its type until the page holds everything. */
 export async function guidePdf(need, crisis, size) {
-  const sensitive = need.sensitivity !== "ordinary";
+  // Sensitive pages, and ordinary pages that still name abuse or substance use,
+  // print their help lines on the one-page guide.
+  const sensitive = need.sensitivity !== "ordinary" || (need.crisisTopics || []).some((t) => t !== "suicide");
   const lines = sensitive ? crisisLinesFor(crisis, need.crisisTopics || ["suicide"]) : [];
   for (const base of [11, 10.5, 10, 9.5, 9, 8.5]) {
     const doc = newDoc(size, `${need.title}: a one-page guide`, 48);

@@ -660,7 +660,7 @@ export default function EmotionalHealth() {
       <section
         style={{
           background: "var(--charcoal)",
-          color: "var(--bone)",
+          color: "var(--charcoal-fg)",
           padding: "80px 32px 60px",
           textAlign: "center",
         }}
@@ -1497,7 +1497,7 @@ export default function EmotionalHealth() {
                   alignItems: "center",
                   justifyContent: "space-between",
                   background: "var(--charcoal)",
-                  color: "var(--bone)",
+                  color: "var(--charcoal-fg)",
                   borderRadius: "8px",
                   padding: "24px 32px",
                   textDecoration: "none",

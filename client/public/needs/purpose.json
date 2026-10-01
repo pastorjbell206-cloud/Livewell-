@@ -1,39 +1,160 @@
 {
   "slug": "purpose",
-  "page": false,
+  "page": true,
   "rank": 17,
   "title": "What's the point of my life?",
-  "summary": "For anyone, and especially young men, asking who they are and what they are for.",
+  "seoTitle": "What's the Point of My Life? Finding Purpose and Meaning",
+  "description": "Asking what your life is for? What Scripture says about purpose and identity, small steps for this week, and where to turn if the question turns dark.",
+  "summary": "For anyone, and especially young men, asking who they are and what they're for, including when the question turns dark.",
   "askedAs": [
     "purpose",
     "what's the point",
-    "identity crisis",
+    "what's the point of living",
+    "what is the meaning of life",
+    "what am I here for",
     "who am I",
-    "meaning of life",
+    "identity crisis",
+    "I feel lost",
+    "my life doesn't matter",
+    "is this all there is",
     "calling",
-    "young men"
+    "what is God's will for my life",
+    "midlife crisis",
+    "young men and purpose",
+    "Bible verses about purpose",
+    "What does the Bible say about purpose"
   ],
   "states": [
     "carrying",
     "grow"
   ],
-  "sensitivity": "ordinary",
+  "sensitivity": "high",
+  "crisisTopics": [
+    "suicide"
+  ],
+  "answer": "You're asking what your life is for. Maybe a season ended and took your sense of yourself with it: school, a job, a marriage, the years when the kids needed you. Maybe you're young and can't tell what anyone needs you for, or you're doing everything you were told to do and still wonder whether any of it matters. It's one of the oldest questions people ask, and it deserves a real answer. But if *what's the point* has started to mean *I don't want to be alive*, the numbers at the top of this page are for you tonight. Call or text one of them, and tell someone near you. Asking for help is strength, not failure. If it's the question itself you're carrying, you don't have to settle it tonight. Get some sleep, and tomorrow tell one person you're asking it.",
+  "happening": "The question doesn't always arrive in a crisis. Sometimes it comes on an ordinary weeknight, when the house is quiet and you catch yourself thinking *is this it?* Sometimes it follows an ending: graduation, a layoff, a divorce, a diagnosis, the last child leaving home. The role that told you who you were is gone, and you're not sure who's left. If you're a young man, it may feel like fog. There's no clear road into adult life and no one who seems to need you, while your phone is full of voices ready to tell you what a man is for.\n\nTwo different things can hide inside the same words. One is the question of meaning: *What am I for? Who am I, apart from what I do?* It can hurt, but it's a healthy question. The other is despair, a heaviness that says nothing will ever change and that you're only a burden. The two can overlap, and one can slide into the other. If the second sounds like you, use the help at the top of this page and see a doctor this week. If what you feel is mostly flat and numb, [I feel empty, and I don't know why](/help/empty) was written for that.\n\nThe common explanations each see something real. It makes sense that the question presses hardest at turning points, when an old role ends before a new one has formed. Doctors know that a sense that nothing matters can be one of the ways depression speaks, and that it needs medical care when it lasts for weeks and spreads into sleep, appetite, and energy. A serious secular answer says the universe doesn't hand out meaning, so you make it, out of what you love and choose and the people you give yourself to, and it's no less real for being made. There's courage in that, and truth: meaning has to be lived. And the church says God made you on purpose, which is also true.\n\nBut underneath much of what we hear, in the culture and too often in church, sits an assumption we rarely notice: that meaning is something you have to produce, by achieving or by force of will, and that if you don't feel it, you've failed to make it. That turns the question into a test. Christianity makes an older and stranger claim. It says you were made by Someone and for Someone, that who you are is given before anything you do, and that much of what your life is for gets carried out in ordinary things: loving God, loving the people in front of you, and doing your work well. That doesn't make the question go away. It changes who has to answer it.",
+  "scripture": {
+    "intro": "Scripture doesn't hurry past this question. One of its books asks it bluntly, and God kept that book in the Bible. These passages move from that honest ache toward a God who pays attention to small creatures and gives an identity before he asks for anything.",
+    "passages": [
+      {
+        "ref": "Ecclesiastes 1:2-4, 8-9",
+        "text": "“Futility of futilities,” says the Teacher, “futility of futilities! Everything is futile!” What does a man gain from all his labor, at which he toils under the sun? Generations come and generations go, but the earth remains forever. ... All things are wearisome, more than one can describe; the eye is not satisfied with seeing, nor the ear content with hearing. What has been will be again, and what has been done will be done again; there is nothing new under the sun.",
+        "reading": "The book calls its speaker the Teacher, and he opens with his verdict. The word translated *futility* is the Hebrew *hebel*, breath or vapor, like the cloud your breath makes on a cold morning. Translations vary, but the image is of something you can't grasp or keep, which is a different complaint from calling life worthless. He tried one way after another to make a life count, from pleasure to great building projects, and called it all \"a pursuit of the wind\" (Ecclesiastes 2:11). The arguments you hear at two in the morning are already here. But the same book says God \"has also set eternity in the hearts of men\" (Ecclesiastes 3:11), which is why the vapor hurts. It tells you to eat your bread with joy (Ecclesiastes 9:7), and its conclusion is plain: \"Fear God and keep His commandments\" (Ecclesiastes 12:13). A life under the sun can't be held, but it can be received from God as a gift."
+      },
+      {
+        "ref": "Psalm 8:3-9",
+        "text": "When I behold Your heavens, the work of Your fingers, the moon and the stars, which You have set in place— what is man that You are mindful of him, or the son of man that You care for him? You made him a little lower than the angels; You crowned him with glory and honor. You made him ruler of the works of Your hands; You have placed everything under his feet: all sheep and oxen, and even the beasts of the field, the birds of the air and the fish of the sea, all that swim the paths of the seas. O LORD, our Lord, how majestic is Your name in all the earth!",
+        "reading": "This psalm bears David's name, and it asks what people ask under a night sky: next to all that, what are we? The modern version says the universe is vast and we're a speck, so nothing we do can matter. The psalm feels the same smallness and reaches the opposite conclusion: the wonder is that God is \"mindful\" of creatures this small, and gave them honor and work, ruling over the works of his hands. It begins and ends with God's name, not ours (Psalm 8:1, 9). The letter to the Hebrews reads this psalm and admits that \"at present we do not see everything subject to him,\" then adds, \"But we see Jesus\" (Hebrews 2:8-9), crowned with glory and honor because he suffered death, and through him God is \"bringing many sons to glory\" (Hebrews 2:10)."
+      },
+      {
+        "ref": "Acts 17:24-25, 27-28",
+        "text": "The God who made the world and everything in it is the Lord of heaven and earth and does not live in temples made by human hands. Nor is He served by human hands, as if He needed anything, because He Himself gives everyone life and breath and everything else. ... God intended that they would seek Him and perhaps reach out for Him and find Him, though He is not far from each one of us. ‘For in Him we live and move and have our being.’ As some of your own poets have said, ‘We are His offspring.’",
+        "reading": "Paul said this in Athens, at the Areopagus, where Epicurean and Stoic philosophers had brought him to explain himself (Acts 17:18-19). He started with their altar to an unknown god and quoted their own poets. God doesn't need anything from us, he said; he gives everyone \"life and breath and everything else.\" So your life doesn't have to earn its place by being useful to him; it's a gift before it's a task. And God made people so that they \"would seek Him and perhaps reach out for Him.\" The words *reach out for* translate a Greek word for feeling your way, the way you'd feel for a light switch in a dark room, and Paul doesn't scold the groping. He says God \"is not far from each one of us.\" When he came to the resurrection, some mocked him, some wanted to hear more, and some believed (Acts 17:31-34)."
+      },
+      {
+        "ref": "Ephesians 2:8-10",
+        "text": "For it is by grace you have been saved through faith, and this not from yourselves; it is the gift of God, not by works, so that no one can boast. For we are God’s workmanship, created in Christ Jesus to do good works, which God prepared in advance as our way of life.",
+        "reading": "This letter comes in Paul's name from prison (Ephesians 3:1), to believers, many of them Gentiles who had once been \"without hope and without God in the world\" (Ephesians 2:12). Notice the order. Grace comes first, a gift nobody earns. The works come second, and God prepared even those. *Workmanship* means something made; whatever else you are, you're not an accident that has to justify itself. Christians read \"prepared in advance\" in more than one way (see the questions below), but when the letter later spells out what good works look like, they're strikingly ordinary: telling your neighbor the truth (4:25), working with your own hands so you have something to share with anyone in need (4:28), kindness and forgiveness (4:32), love in a marriage and care for children (5:21 to 6:4). The life God prepared for you is made mostly of ordinary days."
+      }
+    ]
+  },
+  "whyHard": "For much of human history, people didn't answer the question of who they were from scratch. You were someone's son or daughter, from a particular place and a particular people, and often you learned your parents' trade. Much of that world was narrow, and for many it was cruel; no one should want back a world where birth decided your work and your worth. But the old world gave you a place before you'd done anything to earn it. Ours gives you a choice, and with the choice a job: make yourself.\n\nThe philosopher Jean-Paul Sartre put that answer plainly in a lecture in Paris in October 1945. A paper knife, he said, is made by someone who had its purpose in mind before he made it. There is no God to have us in mind, he argued, so we exist first and define ourselves afterward by what we choose, and he meant it as a summons to freedom and responsibility rather than to despair. I came to faith from atheism, and I won't pretend that answer is shallow or that the people who live by it are empty. At its best it asks you to face the world without consolation and still keep faith with the people and the work you love, and plenty who hold it keep their promises and love their children with a faithfulness that puts many of us in the pews to shame.\n\nStill, the answer lays more on a person than a person can carry. If you are what you make of yourself, your meaning is only as steady as you are, and nobody is steady on their worst night; a failure stops being something you did and starts to feel like a verdict on who you are. And it leaves the longing under the question with nowhere to go. We want our lives not only to feel meaningful, to us or even to the people who love us, but to be true, to count in a way that outlasts us. Ecclesiastes stood at that edge long before Sartre and called what it saw vapor.\n\nThen we put a screen in every pocket. You used to measure your life against a village. Now you can measure it against the best moments of thousands of strangers, every night before you sleep, and an ordinary life starts to look like falling behind. Young men get a sharper version, from voices that are sometimes wise and sometimes selling something.\n\nThe church should have said something older, and too often we answered with slogans. We told people God had a wonderful plan for their lives and let them hear a career track. We talked about calling as if it belonged mainly to pastors and missionaries, so a welder or a nurse could conclude that an ordinary life was a lesser assignment. We borrowed the language of impact and platform. Meanwhile Paul had told a young church \"to aspire to live quietly, to attend to your own matters, and to work with your own hands\" (1 Thessalonians 4:11). Those of us who preach did much of this, and I'm a pastor, so I'm inside that charge.\n\nOlder Christian teaching started somewhere else. In 1647 an assembly called by the English Parliament, meeting at Westminster, finished a short catechism for teaching the faith, and its first question is yours: what is a human being for? Its answer is that our chief purpose is to glorify God and to enjoy him forever. That answer doesn't ask you to become impressive, find a platform, or invent yourself. It puts the point of your life outside you, in Someone worth knowing, and it counts joy as part of the purpose. We asked each other to write ourselves, and then wondered why so many of us feel like rough drafts.",
+  "thisWeek": {
+    "intro": "If *what's the point* has turned into not wanting to be alive, the first step isn't on this list: use the help at the top of this page tonight, and tell someone near you. Otherwise, don't try to answer the whole question this week. Start with the next faithful thing.",
+    "steps": [
+      {
+        "title": "Do one small thing well",
+        "body": "Pick one ordinary task you've been doing half-heartedly, like the dishes or a bedtime story, and do it carefully today, for God and for whoever it serves. When the exiles came home from Babylon and laid the foundation of a new temple, those who remembered the first one wept (Ezra 3:12). God's word through the prophet Zechariah was a question: \"For who has despised the day of small things?\" (Zechariah 4:10)."
+      },
+      {
+        "title": "Look for who needs you",
+        "body": "Purpose has a face. Write down a few people whose week you could make better: a parent, a child, a coworker, a neighbor. Choose one and do something concrete for them before Sunday, a meal or a ride. Jesus said the whole Law hangs on loving God and loving your neighbor (Matthew 22:37-40). If you're young and no one seems to need you, go where hands are needed: a church work day, or an older neighbor's yard that's gotten away from them."
+      },
+      {
+        "title": "Take a day off from building yourself",
+        "body": "Choose one day this week, or half a day, when you won't try to improve or prove anything. Put the phone in a drawer, eat a slow meal with someone, go outside, go to church. The Sabbath was commanded to former slaves as a weekly reminder that the LORD had brought them out (Deuteronomy 5:15). A psalm bearing the name of Solomon, who built the temple, says it plainly: \"Unless the LORD builds the house, its builders labor in vain\" (Psalm 127:1). You're allowed to stop building for a day."
+      },
+      {
+        "title": "Bring God one honest question",
+        "body": "Each morning this week, before you pick up your phone, ask God one plain question: *What is this day for?* Or pray the words the boy Samuel was taught in the night: \"Speak, for Your servant is listening\" (1 Samuel 3:10). He said them before he knew the LORD (1 Samuel 3:7). If you're not sure anyone is there, say that too: *If You're there, I'm asking.* Then pay attention to the people and the work the day puts in front of you."
+      },
+      {
+        "title": "Tell someone, especially if it turns dark",
+        "body": "Tell one person you trust that you've been asking this: a friend, a pastor, a parent, an older believer. You might say, *I've been wondering what my life is for, and I don't want to think about it alone.* If the question has turned into not wanting to be alive, tell them that too, tonight, and call or text 988 together, or call 911 if you're in danger. Asking for help takes courage."
+      }
+    ]
+  },
+  "moreHelp": {
+    "body": "The question of meaning is a spiritual and pastoral question first, and a friend, a church, and time are real help. It becomes more than that when a heaviness comes with it and won't lift. If the sense that nothing matters has lasted more than two weeks, has spread into your sleep, appetite, energy, or work, or has turned into thoughts of not wanting to be alive, please see a doctor and a counselor. Depression is common and treatable, and getting care is no failure of faith. I'm a pastor, not a physician, and nothing here is medical advice.\n\nTo find a counselor, ask your doctor for a referral, check your insurance company's directory, or ask a pastor who knows the counselors nearby. If you want a Christian counselor, ask about that directly, and make sure whoever you see is licensed in your state. You don't have to be suicidal to call or text 988; it's there for anyone in emotional distress. If you're in immediate danger, call 911.",
+    "signs": [
+      "The question has turned into thoughts of not wanting to be alive, or that others would be better off without you. Call or text 988 now.",
+      "You or someone else is in immediate danger. Call 911.",
+      "A sense that nothing matters has lasted more than two weeks, most of the day, most days.",
+      "You've lost interest in nearly everything you used to enjoy.",
+      "Your sleep, appetite, or energy has changed a lot.",
+      "You can't keep up with work, school, or the people who depend on you."
+    ],
+    "firstCall": "You don't need a speech. You might say: *For about a month I've felt like my life has no point, and it's affecting my sleep and my work. I'd like to be seen.* If you've had any thoughts of ending your life, say so plainly; it helps them help you. Ask whether they take your insurance and what a visit costs, and ask a counselor whether they're licensed in your state. If your faith matters to you, it's fine to ask how they work with it.",
+    "cost": "Cost shouldn't be the reason you wait. Calling or texting 988 is free, and a visit to your regular doctor is often covered by insurance. Ask counselors about sliding-scale fees. Community mental health centers offer lower-cost care, university training clinics often charge less, and many employers offer an employee assistance program with a few free sessions. Some churches keep a benevolence fund for needs like this."
+  },
+  "helping": {
+    "body": "When someone you love asks what the point is, don't rush to answer. Ask what's underneath. Sometimes it's a healthy question at a turning point, and they need someone to think with. Sometimes it's despair, and they need help today. You can't always tell from the words, so ask gently and listen longer than feels comfortable.\n\nWatch for signs that it's more than a question: talking about wanting to die, about being a burden, or about having no reason to live; pulling away from everyone; giving away things that matter to them. The National Institute of Mental Health lists these among the warning signs of suicide. If you see them, ask directly: *Are you thinking about suicide?* The same institute says asking doesn't put the idea in someone's head. If the answer is yes, stay with them and call or text 988 together, or call 911 if they're in immediate danger.\n\nIf it's the meaning question, resist the slogan and the quick verse, and invite them into something real where they're needed. I'm raising five sons, and I'm convinced a young man learns what he's for less from being told than from being counted on. Pastors, the person asking this in your office may be asking both questions at once. Ask about both.",
+    "say": [
+      "That's a real question. What's bringing it up for you?",
+      "Are you thinking about suicide?",
+      "You matter to me, and not because of anything you've done.",
+      "I don't have a quick answer, but I'd like to think about it with you.",
+      "Could you help me with something on Saturday?",
+      "I'll check on you tomorrow."
+    ],
+    "dontSay": [
+      "Just find your passion.",
+      "You have so much to live for.",
+      "Other people have real problems.",
+      "Everything happens for a reason.",
+      "You're overthinking it.",
+      "Just trust God's plan."
+    ],
+    "next": "Come back after the first conversation; a text the next day tells them you meant it. Keep inviting them into something real: a meal, a job that needs doing, a Sunday. If you've seen the warning signs, help them reach a doctor or counselor, and bring in others so you're not their only support. If you're a teenager worried about a friend, tell a parent, a teacher, or a school counselor, even if your friend asked you to keep it quiet. Their safety matters more than the promise."
+  },
+  "prayer": "Lord, I don't know what I'm for. I've tried to make my life mean something, and some days it slips through my hands like breath on a cold morning. The Teacher said as much, and You kept his words in Your book.\n\nYou made the stars, and still You pay attention to people as small as me. Be mindful of me tonight.\n\nTake from me the job of inventing myself. I'm tired of auditioning for a life that counts. Show me the people You've put in front of me and the small work You've prepared for tomorrow, and give me enough faithfulness for that much.\n\nIf the question in me has gone dark, don't let me carry it alone. Give me the nerve to tell someone, and keep me here for the morning.\n\nYou made me for Yourself. Let my restless heart find its rest in You, even before I understand.\n\nAmen.",
   "kit": {
-    "read": [
+    "plan": {
+      "href": "/plans/whole-life",
+      "label": "Eight Weeks Toward One Undivided Life"
+    },
+    "selfCheck": {
+      "href": "/diagnostic",
+      "label": "Where Are You With God? A Self-Check"
+    },
+    "tool": {
+      "href": "/tools/rule-of-life",
+      "label": "Rule of Life Builder"
+    },
+    "guides": [
       {
         "href": "/studyguides/identity",
-        "label": "Identity: A Bible Study on Who You Actually Are",
-        "kind": "Study guide"
+        "label": "Identity: A Bible Study on Who You Actually Are"
+      },
+      {
+        "href": "/studyguides/the-image-of-god",
+        "label": "The Image of God: A Bible Study on Human Worth"
+      },
+      {
+        "href": "/studyguides/work-and-vocation",
+        "label": "Work and Vocation: A Bible Study on Faith and Your Job"
       },
       {
         "href": "/studyguides/manhood",
-        "label": "What Manhood Is For",
-        "kind": "Study guide"
-      },
+        "label": "What Manhood Is For"
+      }
+    ],
+    "read": [
       {
-        "href": "/pathways/manhood",
-        "label": "Manhood, the Father Wound, and Raising Sons",
-        "kind": "Pathway"
+        "href": "/wisdom/purpose-and-meaning",
+        "label": "Purpose and Meaning",
+        "kind": "Wisdom"
       },
       {
         "href": "/life/identity-and-worth",
@@ -44,7 +165,129 @@
         "href": "/wisdom/calling-and-purpose",
         "label": "Calling and Purpose",
         "kind": "Wisdom"
+      },
+      {
+        "href": "/life/work-as-worship",
+        "label": "What Does the Bible Say About Work and Calling?",
+        "kind": "Life"
+      },
+      {
+        "href": "/how-tos/wm-how-to-discern-your-calling",
+        "label": "How to Discern Your Calling",
+        "kind": "How-to"
+      },
+      {
+        "href": "/life/wisdom-for-all-of-life",
+        "label": "What Do Proverbs and Ecclesiastes Teach About Wisdom?",
+        "kind": "Life"
+      },
+      {
+        "href": "/writing/augustine-the-restless-man",
+        "label": "The Restless Man Who Couldn't Outrun God",
+        "kind": "Essay"
+      },
+      {
+        "href": "/life/the-empty-nest-and-midlife",
+        "label": "Empty Nest and Midlife: What Do You Do Now?",
+        "kind": "Life"
+      },
+      {
+        "href": "/pathways/manhood",
+        "label": "Manhood, the Father Wound, and Raising Sons",
+        "kind": "Pathway"
       }
     ]
+  },
+  "faq": [
+    {
+      "q": "Is it wrong to ask what the point of life is?",
+      "a": "No. Scripture asks it out loud. Ecclesiastes spends twelve chapters on it, and a psalm bearing David's name prays, \"Show me, O LORD, my end and the measure of my days. Let me know how fleeting my life is\" (Psalm 39:4). Around the year 400, Augustine opened his Confessions by telling God that he had made us for himself and that our hearts are restless until they rest in him. The restlessness is part of how you were made, and it points somewhere. Bring the question to God and to people you trust. If it has turned into not wanting to be alive, call or text 988 tonight."
+    },
+    {
+      "q": "What does the Bible say is the meaning of life?",
+      "a": "The Bible's answer starts outside you. The letter to the Colossians says that all things were created through Christ \"and for Him,\" and that \"in Him all things hold together\" (Colossians 1:16-17). Jesus summed up the whole Law in two commands, to love God with everything you are and to love your neighbor as yourself (Matthew 22:37-40). Micah, answering a worshiper who asks what God wants, says, \"to act justly, to love mercy, and to walk humbly with your God\" (Micah 6:8). The Westminster Shorter Catechism of 1647 says our chief purpose is to glorify God and to enjoy him forever. None of these asks you to be impressive. All of them ask you to belong to God."
+    },
+    {
+      "q": "What is God's will for my life?",
+      "a": "Some of it is plain: \"Give thanks in every circumstance, for this is God's will for you in Christ Jesus\" (1 Thessalonians 5:18). Beyond that, Christians disagree in good faith, and the creeds don't settle it. Some believe God has a particular path for each life that he makes known as you seek him. They read the good works God \"prepared in advance\" (Ephesians 2:10) as fitted to each person, and they hear the same care in the psalm that says \"all my days were written in Your book\" (Psalm 139:16); their comfort is that God cares about the particulars of your life and will lead you through them. Others read those prepared works as the way of life Scripture describes for every believer, and believe that within God's revealed will you're free to choose wisely, as when Paul wrote that a widow is \"free to marry anyone she wishes, as long as he belongs to the Lord\" (1 Corinthians 7:39); their comfort is that you can't miss God's will by choosing between two good things. If you're facing a particular decision, [How do I know what God wants me to do?](/help/decisions) is written for that."
+    },
+    {
+      "q": "How do I find my calling?",
+      "a": "In the New Testament, calling is a call to a person before it's a call to a job. Jesus called fishermen with the words \"Come, follow Me\" (Mark 1:17). Work matters too: God gave the first human being work before anything had gone wrong, placing him in the garden \"to cultivate and keep it\" (Genesis 2:15), so ordinary work isn't a consolation prize. To find your part, notice what you've been given and the needs around you; the first letter of Peter tells each believer to \"use whatever gift he has received to serve one another\" (1 Peter 4:10). Ask people who know you what they see, and be faithful where you are while the next step comes clear."
+    },
+    {
+      "q": "Can life have meaning without God?",
+      "a": "People who don't believe in God find real meaning in love, work, beauty, and justice, and I came to faith from atheism, so I won't pretend otherwise. Christianity agrees those goods are real, and the letter of James says where they come from: \"Every good and perfect gift is from above\" (James 1:17). The honest question is whether meaning we make can carry the weight of a whole life, including its failures and its end, and whether our longing to matter points past us. Paul told the philosophers of Athens that God \"is not far from each one of us\" (Acts 17:27). If you're not sure, [I don't believe, but I'm curious](/help?need=curious) is a place to start."
+    },
+    {
+      "q": "I'm a young man and I don't know what I'm for. Where do I start?",
+      "a": "Start smaller than the internet tells you to. A grand mission can wait; what you need now is a few older men who will tell you the truth, work that someone is counting on you to do, and a church where you're known by name. I was raised without a father, and I'm convinced no young man should have to figure this out alone. The letter to Titus tells him to urge the younger men \"to be self-controlled,\" and to show them how \"by doing good works\" (Titus 2:6-7). Ecclesiastes tells the young, \"Remember your Creator in the days of your youth\" (Ecclesiastes 12:1). If the fog won't lift, tell someone, and see a doctor."
+    }
+  ],
+  "related": [
+    "empty",
+    "decisions",
+    "doubt",
+    "curious"
+  ],
+  "slots": [
+    {
+      "section": "whyHard",
+      "note": "The page says only that James came to faith from atheism and will not call the secular answer shallow. If he wants to, he could add a short paragraph in his own words on whether the question of meaning played any part in his turn from unbelief. (The essay Can a Life Mean Anything Without God? carries first-person biography about his atheist years that this page does not repeat; anything added here should come from James himself.) The section stands without it."
+    },
+    {
+      "section": "faq",
+      "note": "Where James lands on the in-house question in What is God's will for my life?: whether God has a particular path for each life that believers discover, or guides mainly through his revealed will and the wisdom he gives. The answer states both views with their strongest verse and their comfort, says the creeds do not settle it, and does not land. If he wants a landing, it should be in his words, in one place."
+    },
+    {
+      "section": "helping",
+      "note": "James was raised without a father and is raising five sons; the page states only his conviction that a young man learns what he is for by being counted on (helping) and that no young man should have to figure this out alone (the young-man question). He could add, in his own words, what he would want a son, or a young man with no father at home, to hear when he asks what his life is for. No story has been written for him."
+    }
+  ],
+  "sources": [
+    {
+      "claim": "The Westminster Shorter Catechism was completed by the Westminster Assembly (called by the English Parliament) and presented to Parliament in November 1647; its first question asks what the chief end of man is, and its answer is that it is to glorify God and to enjoy him forever. The page paraphrases the answer (chief end as chief purpose) and does not quote it. Date confirmed again in the second pass through search excerpts: the House of Commons ordered it printed on 25 November 1647.",
+      "cite": "The Westminster Shorter Catechism (1647), question 1",
+      "url": "https://www.ccel.org/creeds/westminster-shorter-cat.html"
+    },
+    {
+      "claim": "Sartre gave the lecture Existentialism Is a Humanism at the Club Maintenant in Paris on 29 October 1945 (published 1946); he contrasts a paper-knife, made by an artisan who knew what it was for, with human beings, for whom, if there is no God, existence precedes essence, so that a person exists first and defines himself afterward; the lecture answers the charge that existentialism invites people to despair.",
+      "cite": "Jean-Paul Sartre, Existentialism Is a Humanism (lecture, 1945; published 1946)",
+      "url": "https://www.marxists.org/reference/archive/sartre/works/exist/sartre.htm"
+    },
+    {
+      "claim": "Augustine opens the Confessions (written around AD 397 to 400) by telling God that he made us for himself and that our heart is restless until it rests in him.",
+      "cite": "Augustine, Confessions, Book I, chapter 1",
+      "url": "https://www.newadvent.org/fathers/110101.htm"
+    },
+    {
+      "claim": "The Hebrew word behind futility in Ecclesiastes, hebel, means breath or vapor.",
+      "cite": "Strong's Hebrew 1892, hebel",
+      "url": "https://biblehub.com/hebrew/1892.htm"
+    },
+    {
+      "claim": "The Greek verb behind reach out for in Acts 17:27 (psēlaphaō) means to touch or feel after, to grope for.",
+      "cite": "Strong's Greek 5584, psēlaphaō",
+      "url": "https://biblehub.com/greek/5584.htm"
+    },
+    {
+      "claim": "Warning signs of suicide include talking about wanting to die or about being a burden; feeling empty, hopeless, or without a reason to live; withdrawing from family and friends; and giving away important possessions. Asking about suicide does not cause or increase suicidal thoughts.",
+      "cite": "National Institute of Mental Health, Frequently Asked Questions About Suicide",
+      "url": "https://www.nimh.nih.gov/health/publications/suicide-faq"
+    },
+    {
+      "claim": "Depression is common and treatable; its symptoms last most of the day, nearly every day, for at least two weeks, and include loss of interest or pleasure and changes in sleep, appetite, and energy.",
+      "cite": "National Institute of Mental Health, Depression",
+      "url": "https://www.nimh.nih.gov/health/publications/depression"
+    },
+    {
+      "claim": "You do not need to be suicidal to contact 988; it also serves people in emotional distress.",
+      "cite": "SAMHSA, 988 Frequently Asked Questions",
+      "url": "https://www.samhsa.gov/mental-health/988/faqs"
+    }
+  ],
+  "reviewed": {
+    "on": "2026-09-30",
+    "notes": "Second pass (editor), 2026-09-30; supersedes the writer's self-check. Validator clean (node scripts/validate-needs.mjs purpose) and the CarePage render test passes. Truth: every Scripture setting re-read in the BSB with --verses (Ecclesiastes 1:1-2, 2:1-11, 3:11, 9:7, 12:1, 12:9-13; the Psalm 8, 39, and 127 headings and Psalm 139:16; Acts 17:16-34; Ephesians 1:1, 2:10-12, 3:1, 4:25, 4:28, 4:32; Hebrews 2:6-10; 1 Thessalonians 1:1, 4:11, 5:16-18; Ezra 3:10-13; Zechariah 4:6-10; Deuteronomy 5:15; 1 Samuel 3:1-10; Matthew 22:37-40; Colossians 1:16-17; Micah 6:6-8; 1 Corinthians 7:39; Mark 1:17; Genesis 2:15; 1 Peter 4:10; James 1:17; Titus 2:6-7). Outside claims confirmed again through search excerpts (direct fetches are still blocked; re-open each source before release): Sartre's lecture at the Club Maintenant in Paris on 29 October 1945, the paper-knife made by someone who knew what it was for, existence before essence, and his answer to the charge of despair; the Shorter Catechism ordered printed by the House of Commons on 25 November 1647, its first question and answer paraphrased and never quoted. Changed: the answer now points to the numbers at the top of this page rather than the lines just above; What's going on no longer claims that most of the listed explanations assume meaning must be produced (the doctors' and the church's do not), and states the secular answer at its strongest (meaning made is no less real for being made) before the church's; in Why this is so hard Sartre puts that answer rather than the modern answer, the view is described at its best, and the critique names what the view leaves unanswered instead of claiming it cannot explain why we want to matter to others (it can); the catechism's chief end is paraphrased as our chief purpose, and a 1647 Protestant catechism is no longer called the older church; hebel is tied to its image, with a note that translations vary; Acts now says the speech was given at the Areopagus and that the mocking came at the resurrection (17:31-34); Ephesians, Colossians, Titus, and 1 Peter are named as letters, since their authorship is disputed; much of human history replaces most. Contested: the God's-will FAQ gives each view its own comfort (the first view's old comfort, that your life is no accident, belongs to both views) and both views' reading of Ephesians 2:10, which the Ephesians reading already pointed readers to; that reading was reworded so it no longer sides with the second view; no landing, and the slot stays. Voice: a sentence this page shared with the divorce page varied; strength, not failure kept once, in the answer; a tidy closing line after Zechariah cut; a young-men sentence that repeated What's going on shortened. Safe messaging: the first screen separates the meaning question from despair calmly and points to the line above the title; no method, means, or location anywhere in this file, these notes included; the direct question for helpers and the teenager's duty to tell are kept. Kit: every label matches its target. Flags for other files, not changed here: /life/work-as-worship has an unverified first-person line in James's voice (coming home empty and teaching his sons something he did not believe); /wisdom/purpose-and-meaning dates Augustine's restless heart to the fifth century (the Confessions were written about 397 to 400), credits Viktor Frankl with the why-and-how line he was quoting from Nietzsche, and lists Jeremiah 29:11 without its exile setting; /studyguides/manhood gives suicide rates (no method detail). The essay Can a Life Mean Anything Without God? stays out of the kit: it treats suicide in more detail than belongs one click from a page for readers who may be at risk, and it carries first-person biography that cannot be verified. No statistics, no quotations but Scripture, no stories; James appears only through the permitted facts and as stance. Read as the midnight reader on a phone, the skeptic, a pastor, and a licensed counselor."
   }
 }

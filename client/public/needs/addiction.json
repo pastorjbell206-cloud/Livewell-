@@ -1,19 +1,26 @@
 {
   "slug": "addiction",
-  "page": false,
+  "page": true,
   "rank": 27,
   "title": "I can't stop drinking or using",
-  "summary": "For the one caught and the family watching: the long road back, and where treatment starts.",
+  "seoTitle": "Addiction: Help When You Can't Stop Drinking or Using",
+  "description": "For the one who can't stop drinking or using and the family watching: how to stop safely, what Scripture says, and where treatment starts.",
+  "summary": "For the one who can't stop drinking or using, and the family watching: how to stop safely, where treatment starts, and the long road back.",
   "askedAs": [
     "addiction",
     "alcoholism",
-    "drinking too much",
+    "I drink too much",
     "drug addiction",
-    "my spouse drinks too much",
-    "recovery",
-    "relapse",
+    "my husband drinks too much",
+    "my son is using drugs",
     "how to quit drinking",
-    "sobriety"
+    "how to get sober",
+    "relapse",
+    "recovery",
+    "sobriety",
+    "opioids",
+    "is addiction a sin",
+    "Christian recovery"
   ],
   "states": [
     "carrying",
@@ -22,8 +29,100 @@
   "sensitivity": "high",
   "crisisTopics": [
     "substance",
-    "suicide"
+    "suicide",
+    "abuse"
   ],
+  "answer": "You've promised yourself it was the last time, and meant it, and by evening you were drinking or using again. Maybe you hide how much is gone, or need something just to feel normal, or the pills that began with a prescription now run your days. Or maybe it's someone you love, and you're the one counting bottles and lying awake. Either way, this isn't about not caring enough, and no one in this story is beyond help. Two things come first. If someone has taken too much and can't be woken or is barely breathing, call 911. And if you drink or use every day, don't quit suddenly on your own; stopping alcohol and some other drugs can be dangerous. Call a doctor or SAMHSA's helpline, listed just below, and stop with medical help.",
+  "happening": "It may have started as relief: a drink to take the edge off, a pill after surgery, something to get through the evening. Then the relief took more to reach, the hours without it got harder, and one day you noticed your life had been rearranged around it. You make rules (only on weekends, never before five) and break them, and each broken rule costs a little more of your self-respect. You promise in the morning that it's over, and by night the promise sounds like someone else's. What makes it torture is that you care, and you still can't stop.\n\nThe common explanations each hold part of the truth. Medicine says repeated use changes the brain's circuits of reward, stress, and self-control, which is why craving ignores your resolutions. It also says a body that has come to depend on a substance can be put at risk by stopping suddenly. Counseling asks what the substance is doing for you, and the honest answer is often that it quiets something else: anxiety, grief, trauma, loneliness, a marriage gone cold. The substance works for an hour, and that's the trap. The church calls it sin and bondage, and Scripture does call drunkenness sin and speaks of a person held captive. What each can miss alone is the rest of you. Medicine alone can treat you as a brain, counseling alone can explain the pain without naming the pull toward what you hate, and a sermon alone can leave you trying to pray your way through withdrawal. You're one person, body and soul, and help has to reach both.\n\nIf you're the one watching someone you love drink or use, you carry your own version of this. You've learned to read a voice on the phone, count what's left in the bottle and the bank account, and make excuses to the boss and the kids. You swing between fury and fear, and you may have started to believe that if you were calmer or more careful, they'd stop. It doesn't work that way. Their drinking or using isn't your fault, and no amount of your effort can make them quit, but you aren't helpless: you can stop covering for them, and you can get help for yourself and the children. And if they're ever violent or threatening, drunk or sober, that's abuse, not just a drinking problem. If you're afraid of them, your safety comes first, and the Domestic Violence Hotline above can help you make a safety plan.",
+  "scripture": {
+    "intro": "Scripture has seen this before: an apostle who does what he hates, a man lifted out of a pit, a son who spent everything in a far country. None of these passages pretends the chain is imaginary, and none writes anyone off. Each is read where it stands, with who wrote it, to whom, and why.",
+    "passages": [
+      {
+        "ref": "Romans 7:15,23-25",
+        "text": "I do not understand what I do. For what I want to do, I do not do. But what I hate, I do. ... But I see another law at work in my body, warring against the law of my mind and holding me captive to the law of sin that dwells within me. What a wretched man I am! Who will rescue me from this body of death? Thanks be to God, through Jesus Christ our Lord! So then, with my mind I serve the law of God, but with my flesh I serve the law of sin.",
+        "reading": "This chapter sits inside Paul's argument, written to the church in Rome, about what God's law can and can't do: it shows us what is right but can't give us the power to do it. Serious readers have long disagreed about whether he's describing life before Christ or a believer's ongoing fight. Either way, the voice in this chapter knows the good and can't do it, and it places part of the war \"at work in my body\" (Romans 7:23). Paul isn't writing about addiction, but anyone who has poured out a bottle at noon and bought another by six knows this voice. His question isn't *how do I fix myself* but \"Who will rescue me from this body of death?\" (Romans 7:24), and the answer is a person. Even after his thanks, his last sentence still describes the divided self, so the thanks comes before the struggle is over. The next line is \"Therefore, there is now no condemnation for those who are in Christ Jesus\" (Romans 8:1)."
+      },
+      {
+        "ref": "1 Corinthians 10:12-14",
+        "text": "So the one who thinks he is standing firm should be careful not to fall. No temptation has seized you except what is common to man. And God is faithful; He will not let you be tempted beyond what you can bear. But when you are tempted, He will also provide an escape, so that you can stand up under it. Therefore, my beloved, flee from idolatry.",
+        "reading": "Paul was writing to a church in Corinth where some felt free to eat in pagan temples because they knew an idol is nothing (1 Corinthians 8:4, 10). He reminds them that Israel had every spiritual advantage in the wilderness and still fell, and he warns the confident first. The promise that follows is often misread as *God won't give you more than you can handle*. It's about temptation, and what it promises is God's faithfulness: he will \"provide an escape\" (1 Corinthians 10:13). Paul's next sentence shows what that looks like: flee. The word *you* here is plural in Greek; the promise was made to a church. The way out is often a person to call, or a road home that doesn't pass the store."
+      },
+      {
+        "ref": "Psalm 40:1-3",
+        "text": "I waited patiently for the LORD; He inclined to me and heard my cry. He lifted me up from the pit of despair, out of the miry clay; He set my feet upon a rock, and made my footsteps firm. He put a new song in my mouth, a hymn of praise to our God. Many will see and fear and put their trust in the LORD.",
+        "reading": "The psalm bears David's name, and it opens after a rescue: a man who waited, cried out, and was pulled from a pit of despair and miry clay. The rescue is God's doing. He lifted the man out, set his feet on rock, and gave him a new song, so that many would see it and trust the LORD. But before the psalm ends, the same voice says \"my sins have overtaken me, so that I cannot see\" (Psalm 40:12), and it closes, \"O my God, do not delay\" (Psalm 40:17). Scripture keeps the song of rescue and the cry for help in one prayer. If you've been lifted out once and feel yourself sinking again, you can pray both halves. And notice where it begins, with waiting. Rescue that comes slowly is still rescue."
+      },
+      {
+        "ref": "Luke 15:17-20",
+        "text": "Finally he came to his senses and said, ‘How many of my father’s hired servants have plenty of food? But here I am, starving to death! I will get up and go back to my father and say to him, “Father, I have sinned against heaven and against you. I am no longer worthy to be called your son. Make me like one of your hired servants.”’ So he got up and went to his father. But while he was still in the distance, his father saw him and was filled with compassion. He ran to his son, embraced him, and kissed him.",
+        "reading": "Jesus told this story to religious leaders who grumbled that he welcomed sinners and ate with them (Luke 15:1-2). The younger son came to his senses only after the money was gone and no one would give him anything (Luke 15:14-17). He rehearsed a speech asking to be a hired hand, but when he gave it, it stopped before that line, and his father called for a robe, a ring, and sandals (Luke 15:21-22). Families, notice two more things. The father gave his son his share and let him go (Luke 15:12-13), and when he saw him \"still in the distance,\" he ran (Luke 15:20). This is a parable about God's welcome, though, and it gives no one a reason to wait for someone they love to hit bottom; with some drugs, the bottom can be an overdose. And when the older brother refused to celebrate, \"his father came out and pleaded with him\" (Luke 15:28). There's room in this story for the one who left and for the one who stayed and is angry."
+      }
+    ]
+  },
+  "whyHard": "The usual explanation is that people who can't stop don't want to badly enough. There's something to it: for most people, the first drink or the first pill was a choice. But the choice that starts it isn't the choice that keeps it going. Proverbs describes a drinker who was beaten and never felt it, and who asks, \"When can I wake up to search for another drink?\" (Proverbs 23:35). In the eighth book of his Confessions, Augustine traced how a desire he indulged became a habit, and a habit he didn't resist became a necessity, links in what he called a chain. He was writing about lust, not wine, but anyone who has tried to quit drinking knows that chain. Modern research finds something like it in the brain: repeated use reshapes the circuits of reward and self-control, and the changes can last long after the last use. The will that opened the door can't simply close it.\n\nWhat keeps the chain tight is shame. After the first sin, the man and his wife hid, and he told God, \"I was afraid because I was naked; so I hid myself\" (Genesis 3:10). Addiction runs on that reflex, the bottle behind the paint cans, the story rehearsed on the drive home, and shame and use feed each other. The church has too often tightened the loop. We've preached against drunkenness in ways that made the drinker feel like the worst sinner in the building while gossip and greed sat comfortably in the pews, and people learned to hide from the very ones who should have helped. Jesus came eating and drinking and was called a \"glutton and drunkard, a friend of tax collectors and sinners\" (Matthew 11:19), and we've often feared that accusation more than he did. Paul warned the Galatians against being \"encumbered once more by a yoke of slavery\" (Galatians 5:1), meaning religious people adding requirements to grace. *Get clean first, then come back* is that yoke. I'm a pastor, and I'm inside this indictment.\n\nLoneliness feeds it too. If your hardest hour is the quiet one at the end of the day, alone, you already know what the substance offers: a counterfeit of the rest and company we were made to find in each other. And we live inside an economy that profits from appetite and sells relief on every corner. The opioid crisis, as the CDC tells it, began in the 1990s with a rise in prescribing, so some people reading this were first handed their pills by a doctor after an injury or surgery. None of that cancels anyone's responsibility. It does mean the person who can't stop isn't a different kind of human being from the rest of us, who reach for our own relief at the end of a hard day.\n\nScripture's word for all this, bondage, is sturdier than either of the usual words, disease or choice. Paul could write, \"it is no longer I who do it, but it is sin living in me that does it\" (Romans 7:17), and still call it sin and cry out for rescue. You are responsible and you are captive, and those two truths aren't enemies. You can't repent of what you won't admit, and you can't be rescued from what you insist you control, which is why the way out begins with the truth told to someone else. You weren't meant to get free alone.",
+  "thisWeek": {
+    "intro": "You don't have to fix your whole life this week, and you don't have to share my faith for these steps to help. I'd rather you make one of these calls tonight than finish reading. The first five steps are for the one who can't stop; the last is for the people who love them.",
+    "steps": [
+      {
+        "title": "If you use every day, don't stop alone",
+        "body": "Call a doctor, or SAMHSA's National Helpline above, before you quit. Withdrawal from alcohol or some prescription sedatives can cause seizures and become life-threatening, and a doctor can help you stop safely, at home or in a hospital or detox program. If your pills were prescribed, talk with the prescriber before changing the dose. If you're pregnant, see a doctor right away and tell them everything you take, so they can help you stop in the way that's safest for you and the baby. If a seizure, fever, severe confusion, or hallucinations follow, call 911."
+      },
+      {
+        "title": "Tell one person the whole truth",
+        "body": "Tell one person how much, how often, and for how long: a friend who won't flinch, a pastor, a counselor, or your doctor. Pick someone who will keep your confidence and won't rescue you from the consequences. The letter of James says, \"Therefore confess your sins to each other and pray for each other so that you may be healed\" (James 5:16). You don't need everyone to know, only one person who knows everything."
+      },
+      {
+        "title": "Make one call about treatment",
+        "body": "Ask your doctor for an assessment, or call SAMHSA's helpline above and ask about licensed treatment near you. You don't have to know what kind of help you need; sorting that out is what an assessment is for. Treatment might be counseling, an outpatient or residential program, medicine a doctor prescribes and monitors, or several together. Taking a medicine your doctor prescribes for this isn't a failure of faith."
+      },
+      {
+        "title": "Clear the house and change your route",
+        "body": "Once you have a safe plan for stopping, get what's left out of the house, with someone there if that helps. Then plan for your hardest hour, whether it's the drive past the store or the evening alone: change the route, fill the hour, and put the number of the person you told at the top of your phone. Paul's counsel to the Corinthians was to flee (1 Corinthians 10:14), and fleeing is mostly made of ordinary choices like these."
+      },
+      {
+        "title": "Go to one meeting",
+        "body": "Twelve-step groups and church recovery ministries meet in many towns and online. Go to one this week and sit in the back; you don't have to say a word. You'll be among people who know this from the inside, some of whom have been in recovery for years. If the first group isn't a fit, try another."
+      },
+      {
+        "title": "For the family: stop covering, and get support",
+        "body": "If it's someone you love, stop making the calls, handing over money, and telling the stories that shield their drinking or using from its consequences. That isn't abandonment; it lets the truth be seen. Find support for yourself this week: a counselor, your pastor, or a family support group for people who love someone with an addiction. If opioids are involved, keep naloxone in the house; pharmacies sell it without a prescription. If you're afraid of them, call the Domestic Violence Hotline above before you change anything."
+      }
+    ]
+  },
+  "moreHelp": {
+    "body": "Addiction lives in the body, so it's more than a pastoral matter almost as soon as it's named. A pastor and a church can walk with you and tell you the truth, but they can't manage withdrawal, prescribe medicine, or treat the depression or anxiety that can travel with this. Start with a doctor. SAMHSA's National Helpline, in the help block above, can point you to licensed treatment near you.\n\nFor counseling, look for someone licensed and trained in substance use: an addiction counselor, clinical social worker, professional counselor, or psychologist. If you want a Christian counselor, ask about license and training as well as faith, since the word Christian on the door isn't a credential. Get names from your doctor, your insurer's directory, or a pastor who knows the good local counselors, and confirm the license on your state's licensing board website. If drinking or using has brought you to thoughts of ending your life, don't wait for an appointment. Call or text 988 now.",
+    "signs": [
+      "Someone can't be woken, or is breathing very slowly or not at all, after drinking or using. Call 911, use naloxone if you have it, turn them on their side, and stay with them.",
+      "Someone has a seizure, fever, severe confusion, or hallucinations after cutting back or stopping. Call 911.",
+      "You've had thoughts of ending your life, or of not caring whether you wake up. Call or text 988 now.",
+      "Someone at home is violent or threatening, drunk or sober, or you're afraid of them. Call the Domestic Violence Hotline, or 911 in an emergency.",
+      "You drink or use every day and want to stop. See a doctor before you quit.",
+      "You've tried to cut back and can't, or you need more than you used to for the same effect.",
+      "A child is left unsafe or unsupervised, or rides with someone who has been drinking or using. Protect the child first, and call 911 if they're in danger now."
+    ],
+    "firstCall": "You can say it simply: *I'm drinking (or using) more than I can control, and I need help stopping safely.* Tell the truth about how much, how often, and for how long, and list every medicine you take. Ask a program or counselor whether they're licensed in your state, what kinds of treatment they offer, what it costs, and whether they take your insurance. If you're calling about someone else, you can say, *My husband drinks every day, and I don't know what to do.*",
+    "cost": "Costs vary widely, so ask your insurer what your plan covers before you start. If you have no insurance or too little, SAMHSA's helpline can refer you to your state's publicly funded programs and to places that charge on a sliding scale. Community mental health centers, university training clinics, and employee assistance programs can lower the cost of counseling. Your church may have a benevolence fund; ask."
+  },
+  "helping": {
+    "body": "You can't make someone stop, and trying to force it will wear you out. What you can do is love them without enabling them. Enabling is anything that shields them from the consequences of drinking or using: calling in sick for them, handing over money, covering with family, cleaning up so no one sees. Paul told the Galatians to \"Carry one another's burdens\" (Galatians 6:2) and, three verses later, that \"each one should carry his own load\" (Galatians 6:5). Help carry what would crush them, and let them carry what is theirs.\n\nTalk when they're sober. Say what you've seen and how it's affected you, name one boundary, and keep it: *I won't give you money, but I'll drive you to any appointment, any day.* Drunk or sober, hitting, threatening, or controlling someone is abuse, and the one doing it is responsible. If you're afraid, call the Domestic Violence Hotline for a safety plan, and don't confront them alone.\n\nChildren need particular care. Tell them, in words that fit their age, that it isn't their fault and isn't their job to fix. Don't ask them to keep secrets or carry messages, make sure they have a safe adult to talk to, and if they aren't safe, get them out. If you're a teenager reading this about your own parent, tell a safe adult, such as a relative, a teacher, or a school counselor. That isn't disloyal.\n\nIf it's your teenager who is using, talk with their doctor about an evaluation. If it's an adult child, you can't make them want help, but you can decide what you'll pay for. Pastors, bring in medical help early, and if a child is being harmed or neglected, you may be a mandated reporter; the rules differ by state, so learn yours. This isn't legal advice.",
+    "say": [
+      "I love you, and I'm worried about your drinking.",
+      "I'm not going anywhere, and I'm not going to keep covering for it.",
+      "Will you see a doctor this week? I'll drive you.",
+      "What you've done isn't all you are.",
+      "Are you thinking about ending your life?",
+      "Whenever you want help, I'll help you find it."
+    ],
+    "dontSay": [
+      "Just pray about it.",
+      "If you loved us, you'd stop.",
+      "One drink won't hurt you.",
+      "Once an addict, always an addict.",
+      "It's not that bad."
+    ],
+    "next": "Check in again after the first conversation, and keep checking; people often go quiet when they most need company. If someone else might read their messages, ask how it's safe to reach them. Offer something concrete: a ride to an appointment, company on the hardest evening, childcare during treatment. If opioids are involved, keep naloxone nearby and learn the signs of an overdose. If they refuse help, keep the door open without keeping the secret, and keep your own support in place."
+  },
+  "prayer": "Lord, you know how many times I've said this was the last time. You know where it's hidden and how much is gone. I'm tired of lying to the people I love and to myself, and I'm afraid of the evening.\n\nI can't rescue myself. I've tried. So I'm asking you to rescue me, and not to be slow. Give me the courage to tell one person the truth, and the humility to take the help you send through doctors and through friends who won't let go. Don't let shame make me hide from you again.\n\nFor those of us who love someone who can't stop, give us the nerve to stop covering for them, and a door we can keep open without being harmed. Keep the children safe. Bring the lost ones home, Father, and run to meet them. Amen.",
   "kit": {
     "read": [
       {
@@ -50,7 +149,166 @@
         "href": "/life/desire-and-temptation",
         "label": "How Do You Fight Temptation and Disordered Desire?",
         "kind": "Life"
+      },
+      {
+        "href": "/life/shame-and-the-hiding-self",
+        "label": "What Is the Difference Between Guilt and Shame?",
+        "kind": "Life"
+      },
+      {
+        "href": "/how-tos/sf-how-to-confess-sin-and-walk-in-repentance",
+        "label": "How to Confess Sin and Walk in Repentance",
+        "kind": "How-to"
+      },
+      {
+        "href": "/writing/why-christians-confess-out-loud",
+        "label": "Why Christians Confess Their Sins Out Loud",
+        "kind": "Essay"
+      },
+      {
+        "href": "/wisdom/when-someone-wont-change",
+        "label": "When Someone Won't Change",
+        "kind": "Wisdom"
+      },
+      {
+        "href": "/wisdom/codependency",
+        "label": "Codependency and Losing Yourself",
+        "kind": "Wisdom"
+      },
+      {
+        "href": "/wisdom/toxic-relationships",
+        "label": "Toxic and Harmful Relationships",
+        "kind": "Wisdom"
+      },
+      {
+        "href": "/writing/addiction-justice-issue",
+        "label": "Addiction Is a Justice Issue",
+        "kind": "Essay"
       }
     ]
+  },
+  "faq": [
+    {
+      "q": "Is addiction a sin or a disease?",
+      "a": "Christians answer this differently, and each answer guards something true. Those who stress sin note that Scripture lists drunkards among those who will not inherit the kingdom of God, then says, \"And that is what some of you were. But you were washed\" (1 Corinthians 6:10-11). Calling it sin keeps you a responsible person who can repent and be changed. Those who stress disease point to the real changes repeated use makes in the brain, and to the harm done when people are told to pray harder instead of getting treatment. Scripture holds both, a real captivity and a real person inside it who is still answerable. Treat the body with medicine and the soul with confession and grace, and don't let anyone make you choose."
+    },
+    {
+      "q": "I relapsed. Is it over?",
+      "a": "No. Relapse is painful and can be dangerous, but it's common, and it isn't the end. The National Institute on Drug Abuse compares it to the return of symptoms in other long-term illnesses, such as high blood pressure or asthma: a sign that treatment should be resumed or changed, not proof that it failed. Tell someone today, and get back to your doctor, counselor, or group. If you use opioids, know that your tolerance drops after time away, and your old amount can cause an overdose. Don't let shame send you back into hiding. The son in Jesus' story came home with only a rehearsed apology, and his father ran."
+    },
+    {
+      "q": "My husband drinks too much. What can I do?",
+      "a": "Start with what's in your power, because his drinking isn't. First, if he's violent, threatening, or controlling, drunk or sober, that's abuse; your safety and the children's come first, so call the Domestic Violence Hotline for a safety plan before you confront him. Otherwise, talk to him when he's sober, and say plainly what you've seen and what it's doing to you and the children. Stop covering for him with his boss and your family. Ask him to see a doctor, and offer to go along. Get support for yourself whether or not he changes: a counselor, a pastor you trust, or a family support group. His drinking isn't your fault."
+    },
+    {
+      "q": "Is it a sin for a Christian to drink alcohol?",
+      "a": "Faithful Christians disagree, though both sides agree that drunkenness is sin: \"Do not get drunk on wine, which leads to reckless indiscretion\" (Ephesians 5:18). Some hold that drinking in moderation is permitted: Scripture praises \"wine that gladdens the heart of man\" (Psalm 104:15), and Jesus made wine at a wedding in Cana (John 2:1-11). Their comfort is gratitude for a good gift, received in freedom. Others hold that Christians should abstain entirely, citing Paul, \"It is better not to eat meat or drink wine or to do anything to cause your brother to stumble\" (Romans 14:21), along with the warnings of Proverbs 23 and the harm drinking has done to families. Their comfort is safety, and love for the neighbor who might fall. If you can't stop, though, that debate isn't the question in front of you, and both sides would tell you the same thing: get help, starting with a doctor."
+    },
+    {
+      "q": "Why hasn't God taken the craving away?",
+      "a": "Some people testify that God took the desire away at once. For others, freedom comes slowly, through a doctor, a counselor, a group, a friend who answers at midnight, and many ordinary days, and that is still God's work. Paul pleaded three times for the Lord to take away what he called a thorn in his flesh, and the answer was, \"My grace is sufficient for you, for My power is perfected in weakness\" (2 Corinthians 12:7-9). Scripture never says what the thorn was, and it may have been nothing like addiction. But a craving that lingers doesn't mean God has refused you. Keep asking, and keep taking the help he sends."
+    }
+  ],
+  "related": [
+    "marriage",
+    "parenting",
+    "empty",
+    "loneliness",
+    "cant-forgive",
+    "pornography"
+  ],
+  "slots": [
+    {
+      "section": "whyHard",
+      "note": "If James has seen addiction up close (in the home he grew up in, among the people he has pastored, or in his own life before or after he came to faith from atheism) and wants to say so, a few sentences in his own words would strengthen the paragraph on shame and the church. Only from James; the page stands without it."
+    },
+    {
+      "section": "faq",
+      "note": "Where James lands on drinking in moderation versus abstaining, in his own words, and the tradition his view comes from. The answer to 'Is it a sin for a Christian to drink alcohol?' states both positions and deliberately does not land."
+    },
+    {
+      "section": "helping",
+      "note": "As the father of five sons, James could add, in his own words, what he would want a parent to know when a son starts drinking or using. Only from James; the page stands without it."
+    },
+    {
+      "section": "moreHelp",
+      "note": "Any treatment programs, recovery ministries, family support groups, or counselors near Fenton that James trusts enough to name, and whether First Baptist Church of Fenton hosts or partners with a recovery group. Only from James."
+    }
+  ],
+  "sources": [
+    {
+      "claim": "NIDA describes addiction as a chronic, relapsing disorder involving changes to brain circuits for reward, stress, and self-control, changes that may last long after a person stops; for most people the first decision to use is voluntary, but repeated use can bring brain changes that challenge self-control.",
+      "cite": "National Institute on Drug Abuse, Drugs, Brains, and Behavior: The Science of Addiction, Drug Misuse and Addiction.",
+      "url": "https://nida.nih.gov/publications/drugs-brains-behavior-science-addiction/drug-misuse-addiction"
+    },
+    {
+      "claim": "NIDA compares relapse with the return of symptoms in other chronic illnesses such as high blood pressure and asthma; relapse signals that treatment should be resumed, modified, or changed, not that it has failed.",
+      "cite": "National Institute on Drug Abuse, Drugs, Brains, and Behavior: The Science of Addiction, Treatment and Recovery.",
+      "url": "https://nida.nih.gov/publications/drugs-brains-behavior-science-addiction/treatment-recovery"
+    },
+    {
+      "claim": "Alcohol withdrawal may quickly become life-threatening, especially with delirium tremens; call 911 or go to the emergency room for seizures, fever, severe confusion, or hallucinations. Mild withdrawal can often be treated outpatient; moderate to severe may need a hospital or treatment facility.",
+      "cite": "MedlinePlus Medical Encyclopedia (U.S. National Library of Medicine), Alcohol withdrawal.",
+      "url": "https://medlineplus.gov/ency/article/000764.htm"
+    },
+    {
+      "claim": "Stopping benzodiazepines abruptly or reducing the dose too quickly can cause withdrawal reactions, including seizures, which can be life-threatening (FDA boxed warning, September 23, 2020).",
+      "cite": "U.S. Food and Drug Administration, Benzodiazepine Drug Class: Drug Safety Communication, Boxed Warning Updated to Improve Safe Use.",
+      "url": "https://www.fda.gov/safety/medical-product-safety-information/benzodiazepine-drug-class-drug-safety-communication-boxed-warning-updated-improve-safe-use"
+    },
+    {
+      "claim": "After detox, a period of abstinence, or release from incarceration, opioid tolerance is reduced, and using previously tolerated amounts can cause a life-threatening overdose.",
+      "cite": "SAMHSA, Overdose Prevention and Response Toolkit (2023).",
+      "url": "https://library.samhsa.gov/sites/default/files/overdose-prevention-response-kit-pep23-03-00-001.pdf"
+    },
+    {
+      "claim": "In March 2023 the FDA approved Narcan 4 mg naloxone nasal spray for over-the-counter use, the first naloxone product approved for use without a prescription.",
+      "cite": "U.S. Food and Drug Administration, FDA Approves First Over-the-Counter Naloxone Nasal Spray.",
+      "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-over-counter-naloxone-nasal-spray"
+    },
+    {
+      "claim": "Signs of an opioid overdose include unresponsiveness, slow or stopped breathing, and blue lips or fingernails; give naloxone if available, call 911, lay the person on their side to prevent choking, and stay with them until help arrives.",
+      "cite": "CDC Overdose Resource Exchange, Signs of Opioid Misuse, Opioid Use Disorder, and Overdose: Know the Signs and Symptoms.",
+      "url": "https://www.cdc.gov/overdose-resources/files/signs-of-opioid-misuse-opioid-use-disorder-and-overdose-know-the-signs-and-symptoms.html"
+    },
+    {
+      "claim": "SAMHSA's National Helpline is free and confidential; callers with no insurance or too little are referred to their state office for state-funded treatment, and often to facilities with sliding-scale fees or that accept Medicare or Medicaid.",
+      "cite": "SAMHSA, National Helpline.",
+      "url": "https://www.samhsa.gov/find-help/helplines/national-helpline"
+    },
+    {
+      "claim": "The FDA has approved medications for alcohol use disorder and for opioid use disorder, used together with counseling and other treatment.",
+      "cite": "SAMHSA, Treatment Options for Substance Use Disorder.",
+      "url": "https://www.samhsa.gov/substance-use/treatment/options"
+    },
+    {
+      "claim": "The CDC describes the opioid overdose epidemic in waves, the first beginning with increased prescribing of opioids in the 1990s.",
+      "cite": "Centers for Disease Control and Prevention, Understanding the Opioid Overdose Epidemic.",
+      "url": "https://www.cdc.gov/overdose-prevention/about/understanding-the-opioid-overdose-epidemic.html"
+    },
+    {
+      "claim": "In Confessions VIII.5.10-12 Augustine describes a perverse will giving rise to lust, lust indulged becoming custom, and custom unresisted becoming necessity, calling the links a chain, and he reaches for Romans 7 to describe it; in VIII.6.13 he names what bound him most tightly as sexual desire (carnal concupiscence), which is why the page says he was writing about lust, not wine. The page paraphrases and quotes nothing.",
+      "cite": "Augustine, Confessions, Book VIII, chapter 5 (tr. J. G. Pilkington), New Advent.",
+      "url": "https://www.newadvent.org/fathers/110108.htm"
+    },
+    {
+      "claim": "In the Greek of 1 Corinthians 10:13, the pronoun you (hymas) and the verb you are able (dynasthe) are plural.",
+      "cite": "1 Corinthians 10:13, Greek text with parsing (SBL Greek New Testament), Bible Hub.",
+      "url": "https://biblehub.com/text/1_corinthians/10-13.htm"
+    },
+    {
+      "claim": "Hotline advocates help callers make a personal safety plan, any hour.",
+      "cite": "National Domestic Violence Hotline, What Is a Safety Plan? (the same source the marriage page cites).",
+      "url": "https://www.thehotline.org/what-is-a-safety-plan/"
+    },
+    {
+      "claim": "Many states include clergy among mandated reporters of child abuse and neglect, and the rules, including clergy-penitent privilege, vary by state.",
+      "cite": "Child Welfare Information Gateway, Clergy as Mandatory Reporters of Child Abuse and Neglect (U.S. Department of Health and Human Services).",
+      "url": "https://www.childwelfare.gov/resources/clergy-mandatory-reporters-child-abuse-and-neglect/"
+    }
+  ],
+  "reviewed": {
+    "on": "2026-09-30",
+    "notes": "Second-pass editorial review, done in full from the top in the brief's order (truth, Scripture, theology, care, voice, links, the four readers); it supersedes the writer's self-check. node scripts/validate-needs.mjs addiction is clean and the CarePage render test passes. Truth: every inline quotation re-checked with scripts/bsb.mjs against the verse it names (the validator only confirms the words occur somewhere in the BSB), and all match; passages read in context with --verses (Romans 7:14-8:2; 1 Corinthians 8, 10:1-22, and 6:9-11; Psalm 40 whole; Luke 15 whole; Proverbs 23:29-35; Genesis 3:7-10; Matthew 11:16-19; Galatians 5:1-6 and 6:1-5; James 5:13-16; Ephesians 5:18; Psalm 104:14-15; Romans 14:20-21; 2 Corinthians 12:7-10). Outside claims re-checked through search-engine excerpts, because direct fetches are blocked here (re-open each at the source before release): Augustine, Confessions VIII.5.10 (will, lust, custom, necessity, the chain) and VIII.6.13 (the bond named as carnal desire, now added to the source, which grounds lust, not wine); MedlinePlus on alcohol withdrawal; NIDA on relapse. Changes: the unsourced line that counselors say people drink or use to quiet something else now reads as a pastor's general observation of what counseling asks; the unsourced claim that many insurance plans cover some treatment is cut, leaving only ask your insurer what your plan covers; FindTreatment.gov is removed from This week and More help, with its source, since only lines in crisis-resources.json may be named, and SAMHSA's helpline carries the referral; the will captive now says Scripture speaks of a person held captive; Matthew 11:19 now gives the text's own reason (he came eating and drinking); the same thing in the brain became something like it; No one gets free alone, an empirical absolute, became You weren't meant to get free alone; 1 Corinthians 8 now says some in the church; the meeting step no longer promises you won't be lectured. Scripture: the Luke 15 reading told families the story shows no rescue in the far country, which reads as waiting for someone to hit bottom; it now keeps the father letting go and running and says the parable gives no reason to wait for a bottom that, with some drugs, can be an overdose. Two antitheses (Psalm 40, 1 Corinthians 10) rewritten and a padded triplet cut. Medical lines checked and kept general: 911, naloxone, side position, and staying for an overdose; daily users not to stop alone; alcohol and some prescription sedatives named only as classes; no dosing; the pregnancy line, which could be read as keep using until you see a doctor, now says see a doctor right away and tell them everything so they can help you stop safely for you and the baby. Theology: the drinking FAQ now states abstaining as a position parallel to moderation, and its closing line, which framed the question as whether you can (the moderation view's premise), now gives the counsel both sides share: get help, starting with a doctor. No landing; slot kept. Care: abuse is violence or threats, drunk or sober, and fear sends the reader to the Hotline (it had called any frightening behavior abuse); the husband FAQ now puts safety before any confrontation; the child sign adds 911; a say line echoing Bryan Stevenson's well-known sentence was replaced. Kit: all twelve targets opened; every label is the real title. Flagged, not relied on: /writing/addiction-justice-issue (a first-person church-basement anecdote; calls the epistle's author James), /life/addiction-and-the-long-road-back (offered an addict a sermon), /wisdom/breaking-bad-habits (resolved on Sunday, relapsed by Wednesday), and /wisdom/alcohol-and-drinking (says Augustine watched drink master his mother, overstating Confessions IX.8, and lands on moderation). Read as the midnight reader, the skeptic, a pastor, and a licensed counselor. No field the needs index carries was changed."
   }
 }

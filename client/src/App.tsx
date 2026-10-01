@@ -173,6 +173,7 @@ const RuleOfLife = lazy(() => import("./pages/tools/RuleOfLife"));
 const BibleOnTopic = lazy(() => import("./pages/tools/BibleOnTopic"));
 const WisdomFinder = lazy(() => import("./pages/tools/WisdomFinder"));
 const WorryJournal = lazy(() => import("./pages/tools/WorryJournal"));
+const PrayerPlanner = lazy(() => import("./pages/tools/PrayerPlanner"));
 const Proverbs31 = lazy(() => import("./pages/tools/Proverbs31"));
 const BibleReference = lazy(() => import("./pages/tools/BibleReference"));
 const ToolsGlossary = lazy(() => import("./pages/tools/TheologyGlossary"));
@@ -601,6 +602,7 @@ function Router() {
         <Route path="/tools/bible-on" component={BibleOnTopic} />
         <Route path="/tools/wisdom-finder" component={WisdomFinder} />
         <Route path="/tools/worry-journal" component={WorryJournal} />
+        <Route path="/tools/prayer-planner" component={PrayerPlanner} />
         <Route path="/tools/proverbs-31" component={Proverbs31} />
         <Route path="/tools/bible-says" component={BibleReference} />
         <Route path="/tools/quotes" component={QuoteLibrary} />

@@ -42,6 +42,7 @@ jobs:
           node scripts/validate-argument-cases.mjs
           node scripts/validate-links.mjs
           node scripts/validate-needs.mjs
+          node scripts/validate-needs.mjs --drafts
           node scripts/validate-grow-links.mjs
           node scripts/validate-plans.mjs
           node scripts/validate-grow-voice.mjs

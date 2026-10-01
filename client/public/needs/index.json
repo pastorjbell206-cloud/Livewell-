@@ -581,15 +581,21 @@
     {
       "slug": "parenting",
       "title": "Parenting is harder than anyone said",
-      "summary": "From a father of five sons who was raised without a father: formation over performance.",
+      "summary": "For worn-out parents of little ones, of a teen who's gone quiet, or of a grown child who has left the faith.",
       "askedAs": [
         "parenting",
-        "my teen won't talk to me",
-        "my child left the faith",
-        "discipline",
-        "raising kids in faith",
         "Christian parenting",
+        "Bible verses about parenting",
+        "how to discipline a child biblically",
+        "is spanking biblical",
+        "I yell at my kids",
+        "my teen won't talk to me",
+        "my kid is anxious",
         "worried about my kids",
+        "screen time",
+        "my child left the faith",
+        "prodigal child",
+        "Proverbs 22:6",
         "family devotions"
       ],
       "states": [
@@ -598,49 +604,24 @@
         "helping"
       ],
       "sensitivity": "ordinary",
-      "page": false,
+      "crisisTopics": [
+        "suicide",
+        "abuse",
+        "substance"
+      ],
+      "page": true,
       "rank": 14,
-      "kit": {
-        "read": [
-          {
-            "href": "/parenting-help",
-            "label": "For the stretch of parenting nobody warned you about",
-            "kind": "Page"
-          },
-          {
-            "href": "/tools/parenting-guide",
-            "label": "Parenting Stage Guide",
-            "kind": "Tool"
-          },
-          {
-            "href": "/tools/family-devotions",
-            "label": "Family Devotion Builder",
-            "kind": "Tool"
-          },
-          {
-            "href": "/life/raising-children-in-grace",
-            "label": "How Do You Discipline Children With Grace?",
-            "kind": "Life"
-          },
-          {
-            "href": "/life/the-wayward-child",
-            "label": "What Do You Do When Your Child Leaves the Faith?",
-            "kind": "Life"
-          },
-          {
-            "href": "/studyguides/parenting-formation",
-            "label": "Parenting: A Bible Study on Forming a Child's Faith",
-            "kind": "Study guide"
-          },
-          {
-            "href": "/pathways/parenting",
-            "label": "Raising Kids Who Keep the Faith",
-            "kind": "Pathway"
-          }
-        ]
-      },
+      "seoTitle": "Christian Parenting When It's Hard: Kids, Teens, Prodigals",
+      "description": "For the worn-out parent, the parent of a teen who's gone quiet, and the parent of a grown child who left the faith: Scripture and what to do.",
+      "related": [
+        "anger",
+        "anxiety",
+        "marriage",
+        "fatherless"
+      ],
       "guides": [
-        "parenting-formation"
+        "parenting-formation",
+        "raising-believers"
       ]
     },
     {
@@ -714,167 +695,159 @@
     {
       "slug": "fatherless",
       "title": "How do I be a dad when I never had one?",
-      "summary": "For men raising children without a blueprint, from a pastor who was raised without a father.",
+      "summary": "For anyone raised without a father, or by one who hurt them, who is raising children now or is afraid to.",
       "askedAs": [
         "father wound",
         "growing up without a dad",
         "how to be a good dad",
+        "how to be a father",
         "fatherless",
         "absent father",
         "I never had a father",
-        "how to be a father"
+        "my dad left",
+        "I'm afraid I'll be like my dad",
+        "God as Father when my father hurt me",
+        "raising a son without his father",
+        "single mom raising a boy",
+        "Bible verses about fathers",
+        "Psalm 68:5"
       ],
       "states": [
         "carrying",
         "grow"
       ],
       "sensitivity": "ordinary",
-      "page": false,
+      "crisisTopics": [
+        "abuse",
+        "substance"
+      ],
+      "page": true,
       "rank": 16,
-      "kit": {
-        "read": [
-          {
-            "href": "/studyguides/fatherhood",
-            "label": "Fatherhood: A Bible Study for Men Without a Blueprint",
-            "kind": "Study guide"
-          },
-          {
-            "href": "/pathways/manhood",
-            "label": "Manhood, the Father Wound, and Raising Sons",
-            "kind": "Pathway"
-          },
-          {
-            "href": "/studyguides/manhood",
-            "label": "What Manhood Is For",
-            "kind": "Study guide"
-          },
-          {
-            "href": "/life/identity-and-worth",
-            "label": "Where Does Your Identity and Worth Come From?",
-            "kind": "Life"
-          }
-        ]
-      },
+      "seoTitle": "The Father Wound: How to Be a Dad When You Never Had One",
+      "description": "Raised without a father, or by one who hurt you? How to be a dad without a blueprint, what Scripture says, and where to start this week.",
+      "related": [
+        "parenting",
+        "cant-forgive",
+        "anger",
+        "divorce",
+        "purpose",
+        "grief"
+      ],
       "guides": [
         "fatherhood",
-        "manhood"
+        "manhood",
+        "forgiveness"
       ]
     },
     {
       "slug": "purpose",
       "title": "What's the point of my life?",
-      "summary": "For anyone, and especially young men, asking who they are and what they are for.",
+      "summary": "For anyone, and especially young men, asking who they are and what they're for, including when the question turns dark.",
       "askedAs": [
         "purpose",
         "what's the point",
-        "identity crisis",
+        "what's the point of living",
+        "what is the meaning of life",
+        "what am I here for",
         "who am I",
-        "meaning of life",
+        "identity crisis",
+        "I feel lost",
+        "my life doesn't matter",
+        "is this all there is",
         "calling",
-        "young men"
+        "what is God's will for my life",
+        "midlife crisis",
+        "young men and purpose",
+        "Bible verses about purpose",
+        "What does the Bible say about purpose"
       ],
       "states": [
         "carrying",
         "grow"
       ],
-      "sensitivity": "ordinary",
-      "page": false,
+      "sensitivity": "high",
+      "crisisTopics": [
+        "suicide"
+      ],
+      "page": true,
       "rank": 17,
-      "kit": {
-        "read": [
-          {
-            "href": "/studyguides/identity",
-            "label": "Identity: A Bible Study on Who You Actually Are",
-            "kind": "Study guide"
-          },
-          {
-            "href": "/studyguides/manhood",
-            "label": "What Manhood Is For",
-            "kind": "Study guide"
-          },
-          {
-            "href": "/pathways/manhood",
-            "label": "Manhood, the Father Wound, and Raising Sons",
-            "kind": "Pathway"
-          },
-          {
-            "href": "/life/identity-and-worth",
-            "label": "Where Does Your Identity and Worth Come From?",
-            "kind": "Life"
-          },
-          {
-            "href": "/wisdom/calling-and-purpose",
-            "label": "Calling and Purpose",
-            "kind": "Wisdom"
-          }
-        ]
-      },
+      "seoTitle": "What's the Point of My Life? Finding Purpose and Meaning",
+      "description": "Asking what your life is for? What Scripture says about purpose and identity, small steps for this week, and where to turn if the question turns dark.",
+      "related": [
+        "empty",
+        "decisions",
+        "doubt",
+        "curious"
+      ],
       "guides": [
         "identity",
+        "the-image-of-god",
+        "work-and-vocation",
         "manhood"
       ]
     },
     {
       "slug": "pornography",
       "title": "I can't stop looking at porn",
-      "summary": "For the one who keeps going back and the spouse who found out: shame named, and a real way out.",
+      "summary": "For the one who keeps going back, and the spouse or parent who found out: shame named, and a real way out of hiding.",
       "askedAs": [
         "pornography",
         "porn addiction",
         "how to stop watching porn",
-        "my husband watches porn",
+        "I can't stop watching porn",
+        "is watching porn a sin",
+        "What does the Bible say about pornography",
+        "Bible verses about lust",
         "lust",
         "sexual purity",
-        "I keep relapsing"
+        "I keep relapsing",
+        "is masturbation a sin",
+        "my husband watches porn",
+        "porn and marriage",
+        "I found porn on my son's phone"
       ],
       "states": [
         "carrying",
         "helping"
       ],
-      "sensitivity": "ordinary",
-      "page": false,
+      "sensitivity": "high",
+      "crisisTopics": [
+        "suicide",
+        "abuse",
+        "sexual-assault"
+      ],
+      "page": true,
       "rank": 18,
-      "kit": {
-        "read": [
-          {
-            "href": "/wisdom/pornography",
-            "label": "Pornography and Its Grip",
-            "kind": "Wisdom"
-          },
-          {
-            "href": "/wisdom/lust",
-            "label": "Lust and the Wandering Eye",
-            "kind": "Wisdom"
-          },
-          {
-            "href": "/life/desire-and-temptation",
-            "label": "How Do You Fight Temptation and Disordered Desire?",
-            "kind": "Life"
-          },
-          {
-            "href": "/life/shame-and-the-hiding-self",
-            "label": "What Is the Difference Between Guilt and Shame?",
-            "kind": "Life"
-          },
-          {
-            "href": "/life/sex-and-the-body",
-            "label": "What Does Christianity Actually Teach About Sex?",
-            "kind": "Life"
-          }
-        ]
-      }
+      "seoTitle": "How to Stop Watching Porn: Faith, Shame, and Real Help",
+      "description": "Can't stop looking at porn, or found it on a spouse's or child's phone? What Scripture says, why it's so hard, and real steps out of hiding.",
+      "related": [
+        "marriage",
+        "addiction",
+        "loneliness",
+        "parenting",
+        "cant-forgive"
+      ],
+      "guides": [
+        "sermon-on-the-mount"
+      ]
     },
     {
       "slug": "money",
       "title": "Money is a weight on me",
-      "summary": "Debt, fear, and the never-enough: the heart first, then the budget.",
+      "summary": "For debt, bills you can't cover, and fights about money: what Scripture says, what to do this week, and where to find real help.",
       "askedAs": [
         "debt",
         "money problems",
         "financial stress",
+        "worried about money",
+        "can't pay my bills",
+        "living paycheck to paycheck",
+        "how to get out of debt",
         "budget",
         "tithing",
-        "how to get out of debt",
+        "should I tithe if I'm in debt",
+        "is debt a sin",
+        "money fights in marriage",
         "financial hardship",
         "Bible verses about money"
       ],
@@ -883,96 +856,68 @@
         "grow"
       ],
       "sensitivity": "ordinary",
-      "page": false,
+      "crisisTopics": [
+        "abuse"
+      ],
+      "page": true,
       "rank": 19,
-      "kit": {
-        "read": [
-          {
-            "href": "/tools/financial-health",
-            "label": "The Financial Health Check",
-            "kind": "Self-check"
-          },
-          {
-            "href": "/life/money-and-the-heart",
-            "label": "Why Did Jesus Treat Money as a Rival God?",
-            "kind": "Life"
-          },
-          {
-            "href": "/life/debt-and-provision",
-            "label": "What Does the Bible Say About Debt and Daily Bread?",
-            "kind": "Life"
-          },
-          {
-            "href": "/wisdom/financial-hardship",
-            "label": "Financial Hardship",
-            "kind": "Wisdom"
-          },
-          {
-            "href": "/studyguides/money",
-            "label": "Where Your Treasure Is",
-            "kind": "Study guide"
-          },
-          {
-            "href": "/pathways/money",
-            "label": "Money and the Heart",
-            "kind": "Pathway"
-          }
-        ]
-      },
+      "seoTitle": "Debt and Money Stress: What the Bible Says and What Helps",
+      "description": "Debt, bills you can't pay, and fights about money: what the Bible says about money and debt, what to do this week, and where to find real help.",
+      "related": [
+        "fear-of-the-future",
+        "anxiety",
+        "marriage",
+        "job-loss",
+        "empty"
+      ],
       "guides": [
-        "money"
+        "money",
+        "contentment",
+        "generosity"
       ]
     },
     {
       "slug": "caregiving",
       "title": "Caring for my parent is wearing me out",
-      "summary": "For the one caring for an aging parent: honoring them without losing yourself.",
+      "summary": "For the one caring for an aging parent or a sick spouse: honor without losing yourself, and help before you break.",
       "askedAs": [
         "caregiver burnout",
         "caring for aging parents",
         "my mom has dementia",
+        "my dad has Alzheimer's",
         "elderly parent",
         "caregiver stress",
-        "honor your father and mother",
-        "nursing home guilt"
+        "I resent caring for my parent",
+        "my siblings won't help",
+        "nursing home guilt",
+        "is it wrong to put my mom in a nursing home",
+        "assisted living",
+        "caring for a sick spouse",
+        "caring for a parent who hurt me",
+        "honor your father and mother"
       ],
       "states": [
         "carrying",
         "helping"
       ],
       "sensitivity": "ordinary",
-      "page": false,
+      "crisisTopics": [
+        "abuse",
+        "substance",
+        "suicide"
+      ],
+      "page": true,
       "rank": 20,
-      "kit": {
-        "read": [
-          {
-            "href": "/life/caring-for-aging-parents",
-            "label": "How Do You Honor Aging Parents Who Need Care?",
-            "kind": "Life"
-          },
-          {
-            "href": "/wisdom/caregiving",
-            "label": "Caring for Aging Parents",
-            "kind": "Wisdom"
-          },
-          {
-            "href": "/life/caring-for-the-dying",
-            "label": "How Do You Sit With Someone Who Is Dying?",
-            "kind": "Life"
-          },
-          {
-            "href": "/life/rest-and-the-sabbath",
-            "label": "What Is Sabbath Rest, and How Do You Keep It?",
-            "kind": "Life"
-          },
-          {
-            "href": "/studyguides/aging-and-legacy",
-            "label": "Aging and Legacy: A Bible Study on Finishing Well",
-            "kind": "Study guide"
-          }
-        ]
-      },
+      "seoTitle": "Caring for Aging Parents: Burnout, Guilt, and Real Help",
+      "description": "When caring for a parent or spouse is wearing you out: the guilt, the grief, what the Bible says, what to do this week, and where to find real help.",
+      "related": [
+        "grief",
+        "empty",
+        "loneliness",
+        "cant-forgive"
+      ],
       "guides": [
+        "sabbath",
         "aging-and-legacy"
       ]
     },
@@ -983,55 +928,43 @@
       "askedAs": [
         "burnout",
         "burned out",
+        "exhausted all the time",
         "work stress",
-        "exhausted",
-        "I hate my job",
         "overworked",
+        "I hate my job",
+        "dread Monday",
+        "I can't stop working",
         "hustle culture",
-        "Sabbath rest"
+        "how to recover from burnout",
+        "should I quit my job",
+        "pastor burnout",
+        "Sabbath rest",
+        "Bible verses about rest"
       ],
       "states": [
-        "carrying"
+        "carrying",
+        "leading"
       ],
       "sensitivity": "ordinary",
-      "page": false,
+      "crisisTopics": [
+        "suicide",
+        "substance"
+      ],
+      "page": true,
       "rank": 21,
-      "kit": {
-        "read": [
-          {
-            "href": "/wisdom/exhaustion",
-            "label": "Exhaustion and Burnout",
-            "kind": "Wisdom"
-          },
-          {
-            "href": "/life/ambition-and-rest",
-            "label": "Is Ambition a Sin? Drive, Hustle, and Rest",
-            "kind": "Life"
-          },
-          {
-            "href": "/life/rest-and-the-sabbath",
-            "label": "What Is Sabbath Rest, and How Do You Keep It?",
-            "kind": "Life"
-          },
-          {
-            "href": "/life/work-as-worship",
-            "label": "What Does the Bible Say About Work and Calling?",
-            "kind": "Life"
-          },
-          {
-            "href": "/studyguides/sabbath",
-            "label": "Sabbath: A Bible Study on Rest and Hurry",
-            "kind": "Study guide"
-          },
-          {
-            "href": "/pathways/rest-and-rhythm",
-            "label": "Rest, Sabbath, and the Cure for Hurry",
-            "kind": "Pathway"
-          }
-        ]
-      },
+      "seoTitle": "Burned Out at Work? What the Bible Says and What Helps",
+      "description": "Exhausted in a way sleep doesn't fix? What burnout is, how it differs from depression, what the Bible says about work and rest, and steps for this week.",
+      "related": [
+        "empty",
+        "decisions",
+        "pastors",
+        "money",
+        "anxiety"
+      ],
       "guides": [
-        "sabbath"
+        "sabbath",
+        "work-and-vocation",
+        "pastoral-health"
       ]
     },
     {
@@ -1152,51 +1085,45 @@
         "church hurt",
         "hurt by the church",
         "spiritual abuse",
-        "I'm done with church",
-        "church trauma",
+        "signs of spiritual abuse",
         "my pastor hurt me",
+        "I'm done with church",
+        "is it okay to leave my church",
+        "can I love Jesus and not go to church",
+        "church trauma",
         "religious trauma",
-        "leaving church"
+        "leaving church",
+        "abuse in the church",
+        "What does the Bible say about spiritual abuse?",
+        "Bible verses about church hurt"
       ],
       "states": [
         "carrying",
-        "helping"
+        "helping",
+        "leading"
       ],
       "sensitivity": "high",
       "crisisTopics": [
-        "abuse"
+        "abuse",
+        "sexual-assault",
+        "suicide"
       ],
-      "page": false,
+      "page": true,
       "rank": 24,
-      "kit": {
-        "read": [
-          {
-            "href": "/church-hurt",
-            "label": "When the church itself did the wounding",
-            "kind": "Page"
-          },
-          {
-            "href": "/wisdom/church-hurt",
-            "label": "Church Hurt",
-            "kind": "Wisdom"
-          },
-          {
-            "href": "/deconstruction",
-            "label": "Deconstruction named honestly",
-            "kind": "Page"
-          },
-          {
-            "href": "/plans/deconstruction",
-            "label": "Eight Weeks of Taking Your Questions Seriously",
-            "kind": "Plan"
-          },
-          {
-            "href": "/wisdom/finding-a-church",
-            "label": "Finding a Church",
-            "kind": "Wisdom"
-          }
-        ]
-      }
+      "seoTitle": "Hurt by the Church? Spiritual Abuse and Where to Begin",
+      "description": "When a pastor or a church did the wounding: naming spiritual abuse honestly, reporting what must be reported, and taking time to heal.",
+      "related": [
+        "cant-forgive",
+        "doubt",
+        "deconstructing",
+        "loneliness",
+        "suffering"
+      ],
+      "guides": [
+        "deconstruction",
+        "lament",
+        "character-before-competence"
+      ]
     },
     {
       "slug": "is-it-a-sin",
@@ -1249,17 +1176,22 @@
     {
       "slug": "addiction",
       "title": "I can't stop drinking or using",
-      "summary": "For the one caught and the family watching: the long road back, and where treatment starts.",
+      "summary": "For the one who can't stop drinking or using, and the family watching: how to stop safely, where treatment starts, and the long road back.",
       "askedAs": [
         "addiction",
         "alcoholism",
-        "drinking too much",
+        "I drink too much",
         "drug addiction",
-        "my spouse drinks too much",
-        "recovery",
-        "relapse",
+        "my husband drinks too much",
+        "my son is using drugs",
         "how to quit drinking",
-        "sobriety"
+        "how to get sober",
+        "relapse",
+        "recovery",
+        "sobriety",
+        "opioids",
+        "is addiction a sin",
+        "Christian recovery"
       ],
       "states": [
         "carrying",
@@ -1268,39 +1200,21 @@
       "sensitivity": "high",
       "crisisTopics": [
         "substance",
-        "suicide"
+        "suicide",
+        "abuse"
       ],
-      "page": false,
+      "page": true,
       "rank": 27,
-      "kit": {
-        "read": [
-          {
-            "href": "/life/addiction-and-the-long-road-back",
-            "label": "Why Can't Willpower Alone Break an Addiction?",
-            "kind": "Life"
-          },
-          {
-            "href": "/wisdom/addiction",
-            "label": "When You Are Trapped by Addiction",
-            "kind": "Wisdom"
-          },
-          {
-            "href": "/wisdom/alcohol-and-drinking",
-            "label": "Alcohol and Drinking",
-            "kind": "Wisdom"
-          },
-          {
-            "href": "/wisdom/breaking-bad-habits",
-            "label": "Breaking Bad Habits",
-            "kind": "Wisdom"
-          },
-          {
-            "href": "/life/desire-and-temptation",
-            "label": "How Do You Fight Temptation and Disordered Desire?",
-            "kind": "Life"
-          }
-        ]
-      }
+      "seoTitle": "Addiction: Help When You Can't Stop Drinking or Using",
+      "description": "For the one who can't stop drinking or using and the family watching: how to stop safely, what Scripture says, and where treatment starts.",
+      "related": [
+        "marriage",
+        "parenting",
+        "empty",
+        "loneliness",
+        "cant-forgive",
+        "pornography"
+      ]
     },
     {
       "slug": "dating",
@@ -1611,15 +1525,22 @@
     {
       "slug": "divorce",
       "title": "My marriage has ended",
-      "summary": "For the one whose marriage has ended or is ending: the grief, the children, and the life after.",
+      "summary": "For the one whose marriage has ended or is ending: the grief, the children, the shame, and what the Bible really says.",
       "askedAs": [
         "divorce",
         "going through a divorce",
         "life after divorce",
         "divorced Christian",
         "co-parenting",
-        "my spouse left",
-        "remarriage"
+        "my spouse left me",
+        "remarriage after divorce",
+        "does God hate divorce",
+        "is divorce a sin",
+        "can a divorced Christian remarry",
+        "shame after divorce",
+        "my parents are divorcing",
+        "Malachi 2:16",
+        "Bible verses about divorce"
       ],
       "states": [
         "carrying",
@@ -1628,34 +1549,26 @@
       "sensitivity": "high",
       "crisisTopics": [
         "suicide",
-        "abuse"
+        "abuse",
+        "substance"
       ],
-      "page": false,
+      "page": true,
       "rank": 39,
-      "kit": {
-        "read": [
-          {
-            "href": "/life/divorce-and-its-aftermath",
-            "label": "How Do You Live as a Christian After Divorce?",
-            "kind": "Life"
-          },
-          {
-            "href": "/life/betrayal-and-broken-trust",
-            "label": "How Do You Heal After Betrayal by Someone Close?",
-            "kind": "Life"
-          },
-          {
-            "href": "/life/the-blended-family",
-            "label": "Blended Family Struggles: How Do You Make It Work?",
-            "kind": "Life"
-          },
-          {
-            "href": "/wisdom/cheating",
-            "label": "Cheating and Betrayal of Trust",
-            "kind": "Wisdom"
-          }
-        ]
-      }
+      "seoTitle": "Going Through a Divorce: What the Bible Says and What Helps",
+      "description": "When your marriage has ended or is ending: grief, shame, the children, what the Bible says about divorce, and where to find help, with safety first.",
+      "related": [
+        "marriage",
+        "cant-forgive",
+        "loneliness",
+        "grief",
+        "money",
+        "church-hurt"
+      ],
+      "guides": [
+        "lament",
+        "forgiveness",
+        "singleness"
+      ]
     },
     {
       "slug": "infertility",

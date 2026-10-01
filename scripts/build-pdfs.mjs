@@ -202,12 +202,20 @@ function labelBody(doc, label, text) {
 // Study-guide toolkits: a Leader's Guide and a Participant Handout per series
 // ---------------------------------------------------------------------------
 
+/** The notice a guide that quotes the Berean Standard Bible carries. */
+function scriptureNotice(doc) {
+  doc.font("Times-Italic").fontSize(9.5).fillColor(MUTED)
+    .text("Scripture quotations are from the Berean Standard Bible, which is in the public domain.", { lineGap: 2 });
+  doc.moveDown(0.8);
+}
+
 async function buildStudyGuideLeader(g) {
   const outPath = path.join(OUT_STUDYGUIDES, `${g.slug}-leader.pdf`);
   await writePdf(outPath, (doc) => {
     coverPage(doc, { kicker: "Leader's Guide · " + g.sessionsLabel, title: g.title, subtitle: g.subtitle || g.audience + "." });
     sectionHeading(doc, { kicker: "About this study", title: g.title });
     bodyParagraphs(doc, g.summary);
+    if (g.translation === "BSB") scriptureNotice(doc);
     if (SENSITIVE_GUIDES.has(g.slug)) studyGuideHelpBox(doc, CRISIS, "leader");
 
     if (g.leaderPrimer) {
@@ -339,6 +347,7 @@ async function buildStudyGuideParticipant(g) {
     for (const s of g.sessions) {
       doc.addPage();
       if (s.n === g.sessions[0].n && SENSITIVE_GUIDES.has(g.slug)) studyGuideHelpBox(doc, CRISIS, "participant");
+      if (s.n === g.sessions[0].n && g.translation === "BSB") scriptureNotice(doc);
       sectionHeading(doc, { kicker: "Session " + s.n, title: s.title });
       bodyParagraphs(doc, s.summary);
       labelBody(doc, "Key Scripture", s.keyScripture.ref);

@@ -364,9 +364,19 @@ export default function CarePage() {
         </section>
       )}
 
+      {/* An ordinary page that still names abuse, sexual assault, or drinking
+          and drugs carries those lines at its foot (with id help-now, so the
+          page's own links to #help-now land on them); otherwise the quiet
+          compact block. */}
       {!sensitive && (
         <div style={{ background: "var(--bone)", padding: "0 var(--s-4) var(--s-5)" }}>
-          <CrisisBlock variant="compact" />
+          {topics.some((t) => t !== "suicide") ? (
+            <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
+              <CrisisBlock id="help-now" topics={topics} heading="If you need help now" />
+            </div>
+          ) : (
+            <CrisisBlock variant="compact" />
+          )}
         </div>
       )}
     </Layout>

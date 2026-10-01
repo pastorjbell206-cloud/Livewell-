@@ -100,6 +100,13 @@ export default function Help() {
     return () => { live = false; };
   }, [nonce, asked, navigate]);
 
+  // Pages link here as /help#help-now. The router does not scroll to a
+  // fragment on its own, so bring the help lines into view on arrival.
+  useEffect(() => {
+    if (typeof window === "undefined" || window.location.hash !== "#help-now") return;
+    requestAnimationFrame(() => document.getElementById("help-now")?.scrollIntoView({ block: "start" }));
+  }, []);
+
   const results = useMemo(() => (needs ? searchNeeds(query, needs).slice(0, 6) : []), [needs, query]);
   const chips = useMemo(() => (needs ? needs.filter((n) => n.page).slice(0, 12) : []), [needs]);
   const inState = useMemo(() => (needs ? needs.filter((n) => n.states.includes(state)) : []), [needs, state]);

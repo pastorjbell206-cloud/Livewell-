@@ -1,24 +1,137 @@
 {
   "slug": "caregiving",
-  "page": false,
+  "page": true,
   "rank": 20,
   "title": "Caring for my parent is wearing me out",
-  "summary": "For the one caring for an aging parent: honoring them without losing yourself.",
+  "seoTitle": "Caring for Aging Parents: Burnout, Guilt, and Real Help",
+  "description": "When caring for a parent or spouse is wearing you out: the guilt, the grief, what the Bible says, what to do this week, and where to find real help.",
+  "summary": "For the one caring for an aging parent or a sick spouse: honor without losing yourself, and help before you break.",
   "askedAs": [
     "caregiver burnout",
     "caring for aging parents",
     "my mom has dementia",
+    "my dad has Alzheimer's",
     "elderly parent",
     "caregiver stress",
-    "honor your father and mother",
-    "nursing home guilt"
+    "I resent caring for my parent",
+    "my siblings won't help",
+    "nursing home guilt",
+    "is it wrong to put my mom in a nursing home",
+    "assisted living",
+    "caring for a sick spouse",
+    "caring for a parent who hurt me",
+    "honor your father and mother"
   ],
   "states": [
     "carrying",
     "helping"
   ],
   "sensitivity": "ordinary",
+  "crisisTopics": [
+    "abuse",
+    "substance",
+    "suicide"
+  ],
+  "answer": "You love your mom or dad, or the husband or wife you promised to care for in sickness, and the caring is wearing you down. There are appointments and pill organizers, calls in the night, the same question asked again before lunch, and relatives with opinions and no time. Under the tiredness there may be things you can't say out loud: resentment, guilt about the resentment, and grief for someone who is still alive. None of that means you love them less. It means you're carrying more than one person was made to carry. For tonight, tell one person the whole truth about how you're doing. If you're afraid of what you might do, or someone is hurting your parent or you, call 911 if anyone is in danger, or call or text 988 if you're at a breaking point. Other help lines are listed below.",
+  "happening": "It may have started with a fall, a diagnosis, or a call from a neighbor, and then it grew. Now you're a nurse, a scheduler, a pharmacist, a bookkeeper, and sometimes a referee, and nobody trained you for any of it. Maybe you help with bathing, dressing, and the bathroom, or lie awake listening for footsteps in the hall. Your own life has thinned out, and the tiredness is the kind sleep doesn't fix, when you can get any.\n\nThere may be feelings you haven't told anyone: resentment toward your parent for needing so much, your siblings for helping so little, and God for letting it come to this, and then guilt for resenting people you love. You may have caught yourself thinking *I just want this to be over*, and felt sick that you thought it. If you're caring for a husband or wife, you can be lonely inside your own marriage, grieving the partner you had; you promised *in sickness and in health*, but you never promised to do it alone. Feelings like these don't cancel your love. They're what love can feel like after too long without rest or help.\n\nIf your parent has dementia, you may be grieving someone who is still alive. The family therapist Pauline Boss calls this *ambiguous loss*: the person you love is present in body and slipping away in mind, so there's no funeral, no casseroles, and no moment when anyone thinks to comfort you. You lose them in pieces small enough that others may not notice. The mother who knew everything about you may ask your name, and the father who could fix anything may not find the bathroom.\n\nThere are good explanations for all this, and each holds something true. Doctors will explain the illness, and if it's dementia, they'll tell you the accusations and the anger can be the disease talking. Counselors will tell you to take care of yourself, and they're right, though it's hard advice when you can't leave the house. Christians will remind you to honor your father and mother, which is right, though some wield it like a whip. Some will add *God won't give you more than you can handle*, which the Bible doesn't say; Paul admitted being “under a burden far beyond our ability to endure” (2 Corinthians 1:8). None of it tells you what to do with your own heart at two in the morning.\n\nThe child far away carries guilt across the miles, and the one nearby carries almost everything else. Deciding about a care facility can feel like betrayal whichever way it goes. And if the parent you're caring for was harsh, absent, or abusive, all of this lands on an old wound. Honoring a parent never means exposing yourself to abuse; if you're afraid of the one you're caring for, safety comes first.",
+  "scripture": {
+    "intro": "Scripture doesn't treat caregivers as machines or pretend old age is gentle. It gives you a command to honor that sits beside a command to rest, a church told to share the load, a Savior who provided for his mother while he was dying, and an old man's prayer not to be cast aside. Read one at a time, in a waiting room if that's where you are.",
+    "passages": [
+      {
+        "ref": "Exodus 20:12",
+        "text": "Honor your father and mother, so that your days may be long in the land that the LORD your God is giving you.",
+        "reading": "God spoke this at Sinai to grown men and women, the same people told not to steal or commit adultery, so it was never only for children. The Hebrew word for honor comes from a root meaning heavy: to honor your parents is to treat them as weighty, as people who still count. Jesus showed that this includes real provision when he condemned a tradition that let people declare what their parents would have received from them a gift to God (Mark 7:9-13). But look at what comes right before it: “Remember the Sabbath day by keeping it holy” (Exodus 20:8), a rest given to everyone in the household, servants included. The God who told you to honor your father and mother also told you to stop. Honor was never meant to be carried without rest, and it never requires you to stand within reach of abuse."
+      },
+      {
+        "ref": "1 Timothy 5:3-4, 8",
+        "text": "Honor the widows who are truly widows. But if a widow has children or grandchildren, they must first learn to show godliness to their own family and repay their parents, for this is pleasing in the sight of God. ... If anyone does not provide for his own, and especially his own household, he has denied the faith and is worse than an unbeliever.",
+        "reading": "People sometimes aim verse 8 like a missile, so read it where it sits. The letter comes in Paul's name to Timothy in Ephesus (1 Timothy 1:1-3), and this part of it concerns widows, in a world without pensions, where a woman with no family could be left with nothing. It wants children and grandchildren to care for their own first, and it calls that repayment, “pleasing in the sight of God” (1 Timothy 5:4). The warning in verse 8 is aimed at those who don't provide for their own, and its sting, “worse than an unbeliever” (1 Timothy 5:8), assumes that even people with no faith know to look after their parents. Then it asks families to help so the church can help “the widows who are truly in need” (1 Timothy 5:16); family and church each carry a share. The verse rebukes anyone who walks away. Aimed at someone who has provided for years and can't do it alone anymore, it misses its mark."
+      },
+      {
+        "ref": "John 19:25-27",
+        "text": "Near the cross of Jesus stood His mother and her sister, as well as Mary the wife of Clopas and Mary Magdalene. When Jesus saw His mother and the disciple whom He loved standing nearby, He said to His mother, “Woman, here is your son.” Then He said to the disciple, “Here is your mother.” So from that hour, this disciple took her into his home.",
+        "reading": "When Jesus was a baby, a man named Simeon told Mary, “a sword will pierce your soul as well” (Luke 2:35). Christians have long heard that word come true here. She stands near the cross, unable to stop what is happening to her son, and she stays; if you've sat beside a bed where there was nothing left to fix, she has been where you are. Then Jesus, in agony and close to death, makes sure she will be cared for. He can't take her home himself, so he gives her to the disciple he loved, and it happens “from that hour” (John 19:27). Jesus kept the command to honor his mother by arranging care he couldn't give with his own hands. If you're far away, or can't do it all anymore, that can be honor too."
+      },
+      {
+        "ref": "Psalm 71:9",
+        "text": "Do not discard me in my old age; do not forsake me when my strength fails.",
+        "reading": "This is the prayer of someone who has trusted God since youth (Psalm 71:5-6) and is now old, while enemies say “God has forsaken him” (Psalm 71:11). It voices a fear an aging parent may never say aloud: being set aside once the strength is gone. When your father refuses help or your mother says she's in the way, that fear may be underneath. Read the psalm as their prayer, and it may soften you on the hard days; then read it as yours, because your strength is failing too. The book of Isaiah holds a promise that reads like God's answer. It pictures the gods of Babylon loaded onto animals and hauled away, “a load to the weary animal” (Isaiah 46:1), and then God tells his people, “Even to your old age, I will be the same, and I will bear you up when you turn gray” (Isaiah 46:4). Idols have to be carried. This God carries his people, the one whose body or mind is failing and the one worn out from caring."
+      }
+    ]
+  },
+  "whyHard": "Caregiving is hard because bodies wear out and minds fade, and no page can make that easy. But you may be carrying a second weight on top of the first: the sense that needing help means you've failed, that resentment proves you don't love them, that a good son or daughter should manage alone. That weight has a history, and the church helped write it.\n\nMedicine has given many of our parents longer lives than earlier generations had, and we should be grateful. But many of those added years come with slow illnesses, like dementia, that can go on for years. They arrive in families scattered across states, in homes where both spouses may work, so care a household and a neighborhood might once have shared tends to land on one person: whoever lives closest, or whoever has always been the responsible one. And because we have moved aging and dying out of sight, you can reach middle age without watching anyone grow old up close, with no picture of faithful care until you're giving it.\n\nUnderneath the logistics is a way of seeing. In *Habits of the Heart* (1985), the sociologist Robert Bellah and his colleagues argued that individualism is the first language of American life, and that it leaves us struggling to speak about commitment; the older biblical and civic traditions survive as second languages. In that first language, a good life is independent and chosen, and you prove your worth by what you can do. It has no words for a daughter who didn't choose this and keeps choosing it, or for a father who can't do anything anymore and is worth no less. So the parent feels like a burden, and the caregiver feels like a failure for struggling or a fool for staying.\n\nThe church has too often gone along. We build our calendars around young families, pray for the sick by name, and forget the one who bathes them. I'm a pastor, so this includes me: it's easy for a church to stop noticing the member who hasn't been to worship in months because she can't leave her mother alone. We have preached honor as though it meant doing everything yourself.\n\nIf you don't share my faith, you may suspect that all this talk of honor is part of the problem, a religious way of guilting people into unpaid care until they break. There's truth in that. Duty preached without help has crushed people, and churches have done some of the preaching. But the first language has its own trouble: it struggles to say why you'd keep visiting a mother who won't remember you came. Christianity says she bears the image of God (Genesis 1:27), so her worth never rested on her memory or her usefulness, and that the one caring for her is a creature too, commanded to rest and meant to be helped. Held rightly, the faith protects them both.\n\nSo your exhaustion isn't the scandal. The scandal is how many of us let you get this tired alone.",
+  "thisWeek": {
+    "intro": "None of these steps will make your parent well; they're meant to keep you from carrying this alone. Start with the first, and if it's the only one you manage this week, it still counts. If you're afraid you might hurt your parent, call or text 988 today, before any of these; if someone else is hurting them, report it to adult protective services, and call 911 if anyone is in danger.",
+    "steps": [
+      {
+        "title": "Tell one person the whole truth",
+        "body": "Choose a friend, your pastor, or your own doctor, and tell them how you're really doing, including the parts you're ashamed of. Saying it aloud is not a betrayal of your parent; it lets someone help you carry it, as Paul told the Galatians to “carry one another's burdens” (Galatians 6:2). If you're afraid of losing control, say that first, and say it today."
+      },
+      {
+        "title": "Ask for specific help",
+        "body": "Write down everything the care takes in a week, then ask specific people for specific things. *Could you sit with Dad on Thursday afternoons?* is easier to say yes to than *let me know if you need anything*. When Moses sat alone judging Israel's disputes from morning till evening, his father-in-law told him, “the task is too heavy for you. You cannot handle it alone” (Exodus 18:18). Neither can you."
+      },
+      {
+        "title": "Take a real break",
+        "body": "Respite care exists so caregivers can rest: a helper at the house for a few hours, an adult day program, or a short stay in a care facility. Ask the doctor, a social worker, or the agency on aging what's available; if your parent is on hospice, Medicare's hospice benefit includes short respite stays. When his disciples didn't even have time to eat, it was Jesus who said, “Come with Me privately to a solitary place, and let us rest for a while” (Mark 6:31). The crowd got there first, and he taught them instead (Mark 6:33-34). Rest rarely goes to plan for caregivers either; arrange it anyway."
+      },
+      {
+        "title": "Call a family meeting",
+        "body": "Gather your siblings and anyone else who shares the responsibility, in person or by video. Say plainly what the care takes and what you can't keep doing, and ask each person what they will do: time, money, paperwork, insurance calls, a week's visit so you can get away. If an old fight always takes over, ask a pastor, a social worker, or a mediator to lead. Write down what you decide, and set a date to meet again."
+      },
+      {
+        "title": "Make the calls that open doors",
+        "body": "Ask your parent's doctor for time to talk about the care as a whole; the office may need your parent's permission to speak with you. Ask for a social worker, who will know what help exists nearby, including the agency on aging that serves your parent's area. Then ask an elder law attorney about a durable power of attorney and a health care proxy, which generally must be signed while your parent can still understand them; after that, the family may have to ask a court for guardianship. This isn't legal or financial advice; an attorney who knows your state's law is the one to ask."
+      }
+    ]
+  },
+  "moreHelp": {
+    "body": "Caregiving is more than a pastoral matter, and there's no shame in bringing in people with training: the doctor and a social worker for the care, an elder law attorney for the papers, a counselor for you. See a counselor if resentment is turning into rage, if you can't sleep or stop crying, if you feel nothing at all, or if caring for a parent who hurt you has reopened old wounds. Ask your doctor for a referral, search your insurer's directory, or ask your pastor whom they trust; if you want a Christian counselor, ask for one, and confirm with your state's licensing board that they're licensed. The agency on aging or a hospital can tell you where a caregiver support group meets.\n\nSome help can't wait. If someone is hurting, neglecting, or exploiting your parent, whether a relative, a paid helper, or a facility, report it to adult protective services, which every state has and whose staff are trained to look into it; in a facility, your state's long-term care ombudsman advocates for residents too. If you're afraid you'll hurt your parent, 988 is for you as well, and you don't have to be suicidal to call. If anyone in the house is hurting or threatening you, the National Domestic Violence Hotline, listed with the other help lines at the foot of this page, can help you plan for safety. In an emergency, call 911.",
+    "signs": [
+      "Someone is hurting, neglecting, or taking money from your parent. Call 911 if they're in danger, and report it to adult protective services.",
+      "You're afraid you might hurt your parent, or you already have. Make sure they're safe, step away, and call or text 988 now.",
+      "Your parent or anyone else in the house is hurting or threatening you. Get safe first, and call 911 if you're in danger.",
+      "Your parent is suddenly worse or different, has fallen or gotten lost, or still drives when it isn't safe. Call the doctor right away, or 911 in an emergency.",
+      "You've stopped sleeping or eating, you're sick more often, or you're drinking more to get through. See your own doctor and say you're a caregiver.",
+      "You've had thoughts of ending your life, or that everyone would be better off without you. Call or text 988 now."
+    ],
+    "firstCall": "You don't need the right words. To a counselor you can say, *I'm caring for my mother, who has dementia. I'm not sleeping, I'm angry all the time, and I'm scared of what I'm turning into.* Ask whether they're licensed in your state, whether they've worked with caregivers, what they charge, and whether they take your insurance or offer a sliding scale; if your faith matters, say so. To the agency on aging: *I'm caring for my father, and I can't keep doing it alone. What help is there near him?*",
+    "cost": "Counseling doesn't have to be out of reach: community mental health centers and university training clinics often charge on a sliding scale, and an employee assistance program at work may cover a few sessions. Medicare doesn't cover long-term custodial care when that's the only care someone needs, while Medicaid may, for those who qualify in their state; an elder law attorney or the agency on aging can explain the options. If you work, ask about family leave; federal law gives many workers unpaid, job-protected leave to care for a parent or spouse with a serious health condition, though not a parent-in-law. And if money is the crisis, tell your pastor; some churches keep a fund for needs like this."
+  },
+  "helping": {
+    "body": "If someone you love is caring for a parent or spouse, don't wait to be asked; a worn-out caregiver may not know how. Offer something specific and do it: a meal on Tuesdays, the lawn, a pharmacy run, an afternoon with their parent so they can get out, once you know the routine well enough that they don't have to supervise you. Visit the parent too; an hour with a lonely old man is also a gift to the daughter who can't be everywhere. Keep inviting the caregiver, even when they keep saying no.\n\nIf you're the sibling far away, ask the one who's there what would help, and do it: the bills, the insurance calls, money if you can't give time, a week's visit so they can leave. Don't second-guess decisions from a distance. Pastors, learn the caregiver's name along with the patient's, notice who has disappeared from worship, and ask the church to take shifts. Elder abuse reporting laws may apply to you and vary by state, so learn your obligations, and if you see signs of harm, report it to adult protective services rather than confronting anyone yourself.",
+    "say": [
+      "I'm bringing dinner Tuesday. Is six o'clock good?",
+      "Can I sit with your dad Thursday afternoon so you can get out?",
+      "How are you doing? Not him. You.",
+      "You're doing something hard, and you don't have to do it perfectly.",
+      "What's one thing I could take off your list this week?"
+    ],
+    "dontSay": [
+      "God won't give you more than you can handle.",
+      "I could never do what you do.",
+      "Let me know if you need anything.",
+      "At least she's still here.",
+      "Why don't you just put her in a home?"
+    ],
+    "next": "Put it on your calendar; a standing weekly offer does more than one grand gesture. Ask the caregiver what scares them most, and listen without fixing. If they say they're at a breaking point or afraid of what they might do, take it seriously: help arrange for someone to take over today, and stay while they call their doctor or 988. If they talk about wanting to die, ask plainly whether they're thinking about suicide; asking does not put the idea in their head. If anyone is in danger, call 911."
+  },
+  "prayer": "Lord, you knew the one I'm caring for before I did, and you promised to carry your people all the way to gray hair. I'm tired of carrying. I'm ashamed to say it, and you already know.\n\nI love them, and some days I resent them. I resent the people with advice and no time, and some days I resent you. I'm grieving someone who is still in the next room, and I'm afraid of what I'm turning into.\n\nDo not cast them off in their old age, and do not forsake me now that my strength is failing. Send people who will take a shift, and give me the humility to let them. Forgive me where I've been harsh. If something was broken between us long before this, heal what can be healed, and keep me safe from what can't.\n\nYou gave your own mother into someone else's keeping while you were dying. Teach me to honor with what I have, and to leave the rest to you, who never grow tired. Amen.",
   "kit": {
+    "selfCheck": {
+      "href": "/tools/emotional-health",
+      "label": "Emotional Health Self-Check"
+    },
+    "guides": [
+      {
+        "href": "/studyguides/sabbath",
+        "label": "Sabbath: A Bible Study on Rest and Hurry"
+      },
+      {
+        "href": "/studyguides/aging-and-legacy",
+        "label": "Aging and Legacy: A Bible Study on Finishing Well"
+      }
+    ],
     "read": [
       {
         "href": "/life/caring-for-aging-parents",
@@ -26,14 +139,19 @@
         "kind": "Life"
       },
       {
-        "href": "/wisdom/caregiving",
+        "href": "/wisdom/caring-for-aging-parents",
         "label": "Caring for Aging Parents",
         "kind": "Wisdom"
       },
       {
-        "href": "/life/caring-for-the-dying",
-        "label": "How Do You Sit With Someone Who Is Dying?",
-        "kind": "Life"
+        "href": "/how-tos/body-how-to-face-your-limits-without-despair",
+        "label": "How to Face Your Own Limits Without Despair",
+        "kind": "How-to"
+      },
+      {
+        "href": "/how-tos/rel-how-to-love-a-difficult-family-member",
+        "label": "How to Love a Difficult Family Member",
+        "kind": "How-to"
       },
       {
         "href": "/life/rest-and-the-sabbath",
@@ -41,10 +159,157 @@
         "kind": "Life"
       },
       {
-        "href": "/studyguides/aging-and-legacy",
-        "label": "Aging and Legacy: A Bible Study on Finishing Well",
-        "kind": "Study guide"
+        "href": "/writing/elder-abuse-invisible",
+        "label": "Elder Abuse: The Invisible Sin",
+        "kind": "Essay"
+      },
+      {
+        "href": "/life/caring-for-the-dying",
+        "label": "How Do You Sit With Someone Who Is Dying?",
+        "kind": "Life"
+      },
+      {
+        "href": "/how-tos/ss-how-to-care-for-a-dying-loved-one",
+        "label": "How to Care for a Dying Loved One",
+        "kind": "How-to"
+      },
+      {
+        "href": "/writing/end-of-life-and-bioethics",
+        "label": "Should We Keep People Alive at Any Cost?",
+        "kind": "Essay"
       }
     ]
+  },
+  "faq": [
+    {
+      "q": "Is it wrong to put my parent in a nursing home?",
+      "a": "Scripture commands honor and provision (Exodus 20:12; 1 Timothy 5:8) and never names the place, and faithful Christians weigh this differently. Some believe honor leans toward caring for a parent at home as long as it can be done, since children are told to “repay their parents” (1 Timothy 5:4); they would tell you that daily, costly presence is a gift no one else can give, and that God sees every hidden hour of it. Others believe honor can be given through other hands, so when a parent's needs outgrow what a family can safely give, a good facility, chosen with care and visited faithfully, is one way to provide; they point to the counsel that a task “too heavy for you” should be shared (Exodus 18:18), and would tell you a painful decision is not a sinful one. Both agree that abandonment is never honor, and that safety comes first."
+    },
+    {
+      "q": "Is it a sin to resent caring for my parent?",
+      "a": "Feeling resentful isn't automatically sin, but it's a warning worth heeding. It can mean the load is too heavy for one person, that someone who should help isn't helping, or that an old wound has reopened, and the Psalms show you can bring all of it to God. The letter to the Ephesians says, “Be angry, yet do not sin. Do not let the sun set upon your anger” (Ephesians 4:26). The danger is in keeping it: nursing it into contempt, taking it out on your parent, or letting it harden into a quiet withdrawal of care. Confess what has become sin, and change what you can by asking for help; the resentment isn't the whole truth about your love."
+    },
+    {
+      "q": "Do I have to take care of a parent who abused me?",
+      "a": "Honoring a parent never means putting yourself back within reach of harm. If your parent is still dangerous to you, or you're afraid of them, get safe first: call 911 in an emergency, and the National Domestic Violence Hotline can help you plan. The command to honor has no exception written into it, but it doesn't require trust, closeness, or pretending the past didn't happen, and forgiving someone is not the same as making yourself available to them. Between those lines is room for wisdom. Some adult children can give care with firm limits around it; others honor a parent by making sure care is given by someone else, arranging it and checking on it from a distance. A counselor who understands abuse can help you decide what is safe and wise for you."
+    },
+    {
+      "q": "My siblings won't help. What do I do?",
+      "a": "Ask plainly and specifically, at a family meeting if you can; some siblings don't help because they don't see what the care takes, and even one far away can give money, paperwork, phone calls, or a week's visit. Paul told the Galatians to “carry one another's burdens” (Galatians 6:2) and that “each one should carry his own load” (Galatians 6:5), using two different words: one for a heavy weight that others are told to help carry, one for the pack each person carries. A parent's decline is the first kind. If your siblings still refuse, grieve it honestly, stop waiting, and build help elsewhere: friends, the church, the agency on aging, paid help. God sees the one who stayed."
+    },
+    {
+      "q": "My mom doesn't recognize me anymore. Is she still there?",
+      "a": "She is still your mother, and still a person made in the image of God (Genesis 1:27), even when her memory can't hold who she is or who you are. When Zion complained that the Lord had forgotten her, God answered, “Even if she could forget, I will not forget you” (Isaiah 49:15). Your visit may be gone from her mind by supper and still have been a mercy at lunch: a familiar voice, a hand to hold, a song she still knows. Keep going, and let go of needing her to know it's you. And grieve what's gone; you're allowed to miss her while she's in the room."
+    }
+  ],
+  "related": [
+    "grief",
+    "empty",
+    "loneliness",
+    "cant-forgive"
+  ],
+  "slots": [
+    {
+      "section": "happening",
+      "note": "Raised without a father, James could add, in his own words, a few sentences on what honoring a parent who was absent asks and does not ask. The paragraph names this weight without his story, and nothing about his own father is assumed."
+    },
+    {
+      "section": "whyHard",
+      "note": "As a pastor, James could add in his own words what he has learned about how a church notices, or fails to notice, the caregivers among its members. The page invents no congregants or conversations."
+    },
+    {
+      "section": "whyHard",
+      "note": "As a father of five sons, James could add, if he wishes, how he thinks about one day needing their care, beside the paragraph on feeling like a burden. Nothing is assumed."
+    },
+    {
+      "section": "faq",
+      "note": "Is it wrong to put my parent in a nursing home: where James lands, in his own words. The answer states both views in the form their defenders would sign and lands nowhere."
+    }
+  ],
+  "sources": [
+    {
+      "claim": "Every state, the District of Columbia, and the U.S. territories provide adult protective services, which take and investigate reports of abuse, neglect, and exploitation of older adults and adults with disabilities.",
+      "cite": "Congressional Research Service, Adult Protective Services: Background and Funding (IF12917)",
+      "url": "https://www.congress.gov/crs-product/IF12917"
+    },
+    {
+      "claim": "Every state has a Long-Term Care Ombudsman Program, authorized by the Older Americans Act, that advocates for residents of nursing homes, assisted living, and similar facilities.",
+      "cite": "Administration for Community Living, The Long-Term Care Ombudsman Program: Protecting the Rights of Residents",
+      "url": "https://acl.gov/programs/long-term-care-ombudsman/long-term-care-ombudsman-program-protecting-rights-residents"
+    },
+    {
+      "claim": "Area agencies on aging, part of the network the Older Americans Act authorizes, connect older adults and family caregivers with local services; through the National Family Caregiver Support Program they offer caregivers information, counseling, support groups, and respite care.",
+      "cite": "Administration for Community Living, National Family Caregiver Support Program (background) and Older Americans Act",
+      "url": "https://acl.gov/about-acl/authorizing-statutes/older-americans-act"
+    },
+    {
+      "claim": "Legal documents such as a durable power of attorney and a health care proxy should be prepared while the person still has the legal capacity to make decisions, and an elder law attorney can advise and prepare them.",
+      "cite": "National Institute on Aging, Legal and Financial Planning for People Living With Dementia",
+      "url": "https://www.nia.nih.gov/health/legal-and-financial-planning-people-alzheimers"
+    },
+    {
+      "claim": "If dementia has advanced past the point of understanding legal documents, a court guardianship may be necessary; a durable power of attorney signed earlier can help avoid it.",
+      "cite": "Alzheimer's Association, Legal Plans (fact sheet)",
+      "url": "https://www.alz.org/getmedia/02f9227a-6485-45e0-8cb3-764e07a0bbab/alzheimers-dementia-legal-plans-b.pdf"
+    },
+    {
+      "claim": "Medicare doesn't cover long-term custodial care if that is the only care a person needs; Medicaid may cover it for those who meet their state's eligibility rules.",
+      "cite": "Medicare.gov, Long-term care coverage",
+      "url": "https://www.medicare.gov/coverage/long-term-care"
+    },
+    {
+      "claim": "Medicare's hospice benefit covers inpatient respite care, occasional short stays arranged by the hospice so that a family caregiver can rest.",
+      "cite": "Medicare.gov, Hospice care coverage",
+      "url": "https://www.medicare.gov/coverage/hospice-care"
+    },
+    {
+      "claim": "The Family and Medical Leave Act gives eligible employees of covered employers unpaid, job-protected leave to care for a spouse, child, or parent with a serious health condition, but not a parent-in-law.",
+      "cite": "U.S. Department of Labor, FMLA Frequently Asked Questions",
+      "url": "https://www.dol.gov/agencies/whd/fmla/faq"
+    },
+    {
+      "claim": "Tell the doctor right away if a person with dementia seems suddenly worse or different; fever, infection, medication side effects, and dehydration can cause sudden confusion.",
+      "cite": "National Institute on Aging, Taking a Person With Alzheimer's Disease to the Hospital",
+      "url": "https://www.nia.nih.gov/health/alzheimers-caregiving/taking-person-alzheimers-disease-hospital"
+    },
+    {
+      "claim": "Agitation and aggression in Alzheimer's disease can come from the disease and from problems such as pain, fear, or lack of sleep, which a doctor can look for.",
+      "cite": "National Institute on Aging, Coping With Agitation, Aggression, and Sundowning in Alzheimer's Disease",
+      "url": "https://www.nia.nih.gov/health/alzheimers-changes-behavior-and-communication/coping-agitation-aggression-and-sundowning"
+    },
+    {
+      "claim": "The family therapist Pauline Boss, professor emeritus at the University of Minnesota, coined the term ambiguous loss, which includes a loved one who is physically present but psychologically absent, as in dementia.",
+      "cite": "On Being, Pauline Boss: Navigating Loss Without Closure",
+      "url": "https://onbeing.org/programs/pauline-boss-navigating-loss-without-closure/"
+    },
+    {
+      "claim": "Habits of the Heart (1985), by Robert Bellah, Richard Madsen, William Sullivan, Ann Swidler, and Steven Tipton, described individualism as the first language of American life and the biblical and republican traditions as second languages, and argued that individualism leaves Americans struggling to speak about commitment.",
+      "cite": "Encyclopaedia Britannica, Habits of the Heart: Individualism and Commitment in American Life",
+      "url": "https://www.britannica.com/topic/Habits-of-the-Heart-Individualism-and-Commitment-in-American-Life"
+    },
+    {
+      "claim": "The Hebrew verb translated honor in Exodus 20:12 (kabed, Strong's H3513) comes from a root meaning to be heavy or weighty.",
+      "cite": "Bible Hub, Exodus 20:12 Lexicon",
+      "url": "https://biblehub.com/lexicon/exodus/20-12.htm"
+    },
+    {
+      "claim": "Galatians 6:2 and 6:5 use different Greek words: bare, heavy burdens, in verse 2, and phortion, the load or pack each person carries, in verse 5.",
+      "cite": "Bible Hub, Galatians 6:5 Lexicon (with the Galatians 6:2 lexicon)",
+      "url": "https://biblehub.com/lexicon/galatians/6-5.htm"
+    },
+    {
+      "claim": "You do not have to be suicidal to call or text 988.",
+      "cite": "988 Suicide & Crisis Lifeline, Get Help (as recorded in client/src/data/crisis-resources.json)",
+      "url": "https://988lifeline.org/get-help/"
+    },
+    {
+      "claim": "Asking someone directly whether they are thinking about suicide does not increase suicidal thoughts or behavior.",
+      "cite": "National Institute of Mental Health, 5 Action Steps to Help Someone Having Thoughts of Suicide",
+      "url": "https://www.nimh.nih.gov/sites/default/files/documents/health/publications/5-action-steps-help-someone-having-thoughts-suicide.pdf"
+    }
+  ],
+  "reviewed": {
+    "on": "2026-09-30",
+    "notes": "Second-pass editorial review, 2026-09-30, over the writer's draft. Checked: every passage and inline reference read in context with scripts/bsb.mjs --verses; outside claims re-checked through web search (direct fetches of the source sites are blocked here, so a check at the source before release still stands): Pauline Boss, family therapist and professor emeritus at the University of Minnesota, coined ambiguous loss and applied it to dementia; Habits of the Heart (1985) calls individualism the first language of American life, with the biblical and republican traditions as second languages; Medicare does not cover custodial care that is the only care needed, and Medicaid may; the hospice benefit includes occasional short inpatient respite stays; the FMLA covers a parent or spouse but not a parent-in-law; area agencies on aging offer caregivers support and respite. Sensitivity stays ordinary: most readers are worn out, not in danger, and a first-screen block would set four hotlines above a tired caregiver's answer, none of them the right door for elder abuse (adult protective services, which the page names, is not in the help data). The answer already carries 911 and 988 on the first screen and now says other lines are listed below. crisisTopics adds suicide, because the page names caregiver despair in the answer, a sign, and the helper's next step, so the foot block and the printed guide gain the Crisis Text Line. Changed: prose that worked around the missing help block now points to it (the Hotline listed at the foot of the page); the week's intro, which prints on the worksheet, names 988, adult protective services, and 911 instead of pointing to a section the worksheet lacks; the frightened caregiver's sign says call or text 988, not call someone; the Eldercare Locator is no longer named (a directory not in the verified help data), and its source now supports the generic agency on aging; go to court is now guardianship. Truth and Scripture: 1 Timothy is read as a letter that comes in Paul's name, and Ephesians is named as the letter, not by author; Simeon's word fulfilled at the cross is offered as the church's long reading, not the text's claim; Isaiah 46 is the book's promise to God's people, not a promise about any one parent; Mark 6 now admits the crowd came and Jesus taught them; the Galatians 6 gloss is tied to verse 2; family and church each carry a share (1 Timothy 5:16). Voice and care: the pastor's line is stance, not experience; the nursing-home steelman lost a phrase that tilted it; a sentimental FAQ closing was replaced. The legal and benefits lines stay general and carry the page's not-legal-or-financial-advice line. Kit labels match their targets. Flagged, not changed: the linked essay end-of-life-and-bioethics has unverified first-person experience, and the wisdom topic caring-for-aging-parents says the early church built the first hospitals, an overstatement; this page relies on neither. validate-needs clean."
   }
 }

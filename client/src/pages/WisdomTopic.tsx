@@ -21,6 +21,7 @@ import LoadFailed from "@/components/LoadFailed";
 import { fetchJson } from "@/lib/fetch-json";
 import { CrisisBlock } from "@/components/CrisisBlock";
 import { SENSITIVE_WISDOM } from "@/lib/needs";
+import ScriptureNote from "@/components/ScriptureNote";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
@@ -145,7 +146,7 @@ export default function WisdomTopic() {
       />
 
       {/* Hero */}
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "14px" }}>
             <Link href="/wisdom" style={{ color: "var(--mustard)", textDecoration: "none" }}>Wisdom</Link> · What the Bible says
@@ -181,6 +182,9 @@ export default function WisdomTopic() {
                   <cite style={{ fontFamily: "var(--U)", fontStyle: "normal", fontWeight: 600, fontSize: "13px", letterSpacing: "0.04em", color: "var(--mustard-text)" }}>{v.ref}</cite>
                 </blockquote>
               ))}
+            </div>
+            <div style={{ marginTop: "var(--s-3)" }}>
+              <ScriptureNote rendering="bsb" />
             </div>
           </div>
         </section>

@@ -11,6 +11,7 @@ import Layout from "@/components/Layout";
 import MoreOnThis from "@/components/MoreOnThis";
 import { CrisisBlock } from "@/components/CrisisBlock";
 import { HelpForThisGuide } from "@/components/HelpForThisGuide";
+import ScriptureNote from "@/components/ScriptureNote";
 import { SENSITIVE_GUIDES } from "@/lib/needs";
 import { SEOMeta } from "@/components/SEOMeta";
 import GatedDownload from "@/components/GatedDownload";
@@ -50,6 +51,8 @@ interface Guide {
   leaderPrimer?: string;
   faq?: { q: string; a: string }[];
   timeline?: { date: string; event: string }[];
+  /** Set on guides that quote the Berean Standard Bible throughout. */
+  translation?: "BSB";
 }
 
 const ALL_TABS = ["Leader", "Participant", "Devotional", "Facilitator", "Reference", "Promo"] as const;
@@ -113,7 +116,7 @@ export default function StudyGuide() {
     <Layout>
       {data && <SEOMeta title={`${data.title} — Leader's Toolkit`} description={data.subtitle} url={`https://www.livewellbyjamesbell.co/studyguides/${slug}`} />}
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>Study Guide · Leader's Toolkit</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(30px, 5vw, 52px)", fontWeight: 400, lineHeight: 1.06, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "22ch" }}>{data?.title ?? (missing ? "That guide is not here yet." : "Loading the guide…")}</h1>
@@ -333,6 +336,11 @@ export default function StudyGuide() {
             </div>
           </section>
 
+          {data.translation === "BSB" && (
+            <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto", padding: "0 var(--s-4)" }}>
+              <ScriptureNote rendering="bsb" />
+            </div>
+          )}
           {slug && SENSITIVE_GUIDES.has(slug) && <CrisisBlock variant="compact" />}
           {slug && <HelpForThisGuide slug={slug} />}
           {slug && <MoreOnThis href={`/studyguides/${slug}`} />}

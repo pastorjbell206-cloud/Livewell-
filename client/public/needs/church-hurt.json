@@ -1,54 +1,257 @@
 {
   "slug": "church-hurt",
-  "page": false,
+  "page": true,
   "rank": 24,
   "title": "The church hurt me",
+  "seoTitle": "Hurt by the Church? Spiritual Abuse and Where to Begin",
+  "description": "When a pastor or a church did the wounding: naming spiritual abuse honestly, reporting what must be reported, and taking time to heal.",
   "summary": "When the people who spoke for God did the wounding: naming it honestly, and what can be rebuilt.",
   "askedAs": [
     "church hurt",
     "hurt by the church",
     "spiritual abuse",
-    "I'm done with church",
-    "church trauma",
+    "signs of spiritual abuse",
     "my pastor hurt me",
+    "I'm done with church",
+    "is it okay to leave my church",
+    "can I love Jesus and not go to church",
+    "church trauma",
     "religious trauma",
-    "leaving church"
+    "leaving church",
+    "abuse in the church",
+    "What does the Bible say about spiritual abuse?",
+    "Bible verses about church hurt"
   ],
   "states": [
     "carrying",
-    "helping"
+    "helping",
+    "leading"
   ],
   "sensitivity": "high",
   "crisisTopics": [
-    "abuse"
+    "abuse",
+    "sexual-assault",
+    "suicide"
   ],
+  "answer": "Someone in the church hurt you. Maybe it was a pastor or leader you trusted, or a whole congregation that closed ranks when you spoke up. Now a sanctuary can make your chest tighten, certain verses sound like the voice that used them on you, and you aren't sure what's left of your faith. That is a real wound, and you aren't the problem for naming it. If a crime was committed, or anyone is still in danger, it belongs with the police, not only the church, and the help just below is for tonight. If you're safe, you don't have to decide anything about church this week. Start by telling the truth to one person outside that church who will believe you. When shepherds harm the flock, Scripture puts God against them, not beside them.",
+  "happening": "Church hurt comes in more than one shape. It may have been a pastor who couldn't be questioned, who treated your doubts as rebellion and your leaving as leaving God. It may have been sexual, physical, or emotional abuse by a leader or a volunteer, followed by a second blow when the people in charge protected the abuser instead of you. You might have been told to go home and submit to a spouse who was hurting you, or quietly dropped the month you divorced or got sick. Or you watched a church you loved choose its reputation over the truth, and you couldn't stay.\n\nThe effects can outlast your time there. A worship song you used to love can stop you cold, and a church parking lot on a Sunday morning can make you want to keep driving. You may not be able to pray without hearing the voice that used prayer on you. You may be grieving twice, for what was done and for the friends, and sometimes the job, you lost when you left. Underneath runs a question you may not say out loud: *was any of it real, or was God in on it too?* If you've walked away from faith because of what happened, you're welcome here, and no one on this page will hurry you.\n\nThe usual explanations each hold something true. Counselors will tell you that harm done by someone with spiritual authority can leave marks the way other betrayals do: a body on alert, sleep that won't come, memories that return uninvited, a shame that was never yours. Some call it religious trauma. Well-meaning Christians will remind you that every church is made of people who fail, and they're right. The culture will say you're better off without organized religion, and some churches really are unsafe.\n\nWhat those explanations leave out is a distinction. People in any church will disappoint you with a careless word or a decision you disagree with; that hurts, but it's the ordinary cost of living among sinners. Spiritual abuse is different in kind. It's the use of God's name or a leader's position to control or silence someone, or to shield the person who did harm. Some of what happens in churches is also a crime, whatever the church calls it. And the explanations skip the question underneath: will anyone answer for this? Scripture says they will answer to God, and he doesn't treat it as small.",
+  "scripture": {
+    "intro": "Scripture is harder on religious leaders who harm people than the church that hurt you may ever have been. The prophets indicted shepherds who fed on the flock, and Jesus saved some of his sharpest words for leaders who crushed people under burdens. We begin with a lament, because you shouldn't have to hurry past what happened to hear what God says about it.",
+    "passages": [
+      {
+        "ref": "Psalm 55:6-8, 12-14",
+        "text": "I said, “Oh, that I had wings like a dove! I would fly away and find rest. How far away I would flee! In the wilderness I would remain. Selah I would hurry to my shelter, far from this raging tempest.” ... For it is not an enemy who insults me; that I could endure. It is not a foe who rises against me; from him I could hide. But it is you, a man like myself, my companion and close friend. We shared sweet fellowship together; we walked with the crowd into the house of God.",
+        "reading": "This psalm bears David's name, and it's the prayer of someone betrayed by a friend he used to worship beside. Before he names the betrayal, he names the wish to get away. If you've thought *I'm done*, that thought is in the Bible, prayed out loud rather than confessed as a sin. An enemy he could have endured; this was a companion, whose \"words are softer than oil, yet they are swords unsheathed\" (Psalm 55:21). Harm done in God's name can sound that gentle. Notice where the psalm takes its wish to flee: \"But I call to God, and the LORD saves me\" (Psalm 55:16). He runs from the betrayer toward God and tells him everything, his anger included (Psalm 55:15)."
+      },
+      {
+        "ref": "Ezekiel 34:4, 10-11",
+        "text": "You have not strengthened the weak, healed the sick, bound up the injured, brought back the strays, or searched for the lost. Instead, you have ruled them with violence and cruelty. ... This is what the Lord GOD says: ‘Behold, I am against the shepherds, and I will demand from them My flock and remove them from tending the flock, so that they can no longer feed themselves. For I will deliver My flock from their mouths, and it will no longer be food for them.’ For this is what the Lord GOD says: ‘Behold, I Myself will search for My flock and seek them out.",
+        "reading": "Ezekiel was a priest among the exiles in Babylon (Ezekiel 1:1-3), and the book sets this word after the news that Jerusalem had fallen (Ezekiel 33:21). The shepherds were Israel's rulers, and the chapter opens with the charge against them: \"Woe to the shepherds of Israel, who only feed themselves\" (Ezekiel 34:2). They ruled with violence and cruelty while the weak and the injured went untended, and the flock scattered. God refuses to stay neutral. He sets himself against the shepherds, pulls his flock out of their mouths, and goes looking for the scattered himself. The New Testament charges the church's elders to \"be shepherds of God's flock\" (1 Peter 5:2), so this warning stands over everyone who leads a church, including me."
+      },
+      {
+        "ref": "Matthew 23:4, 13, 37",
+        "text": "They tie up heavy, burdensome loads and lay them on men’s shoulders, but they themselves are not willing to lift a finger to move them. ... Woe to you, scribes and Pharisees, you hypocrites! You shut the kingdom of heaven in men’s faces. You yourselves do not enter, nor will you let in those who wish to enter. ... O Jerusalem, Jerusalem, who kills the prophets and stones those sent to her, how often I have longed to gather your children together, as a hen gathers her chicks under her wings, but you were unwilling!",
+        "reading": "Jesus spoke these words in the temple courts in his last days in Jerusalem, first to the crowds and his disciples, then straight to the religious leaders (Matthew 23:1, 13). He condemns what they did with their authority: loads tied onto other people's backs, and a doorway to God's kingdom blocked by the very people who should have held it open. Set that beside his own promise: \"For My yoke is easy and My burden is light\" (Matthew 11:30). Pastors should read this chapter as addressed to us, because its temptations come with our work. And listen to how it ends, with Jesus longing to gather Jerusalem's children as a hen gathers her chicks. The anger and the tenderness come from the same heart."
+      },
+      {
+        "ref": "John 9:34-35, 38",
+        "text": "They replied, “You were born in utter sin, and you are instructing us?” And they threw him out. When Jesus heard that they had thrown him out, He found the man and said, “Do you believe in the Son of Man?” ... “Lord, I believe,” he said. And he worshiped Jesus.",
+        "reading": "Jesus had healed a man born blind, and the religious authorities spent a whole chapter trying to make his story go away. Even his parents were afraid to stand with him, because anyone who confessed Jesus would be put out of the synagogue (John 9:22). The man kept telling the plain truth, and in the end the authorities answered by declaring him a sinner from birth and throwing him out. Then comes the line to hold onto: when Jesus heard, he found him. Soon after, speaking to those same leaders, Jesus described thieves who climb into the sheepfold and a shepherd who \"lays down His life for the sheep\" (John 10:1, 11). If you were pushed out, or walked out because staying meant lying, you're standing where Jesus came looking."
+      }
+    ]
+  },
+  "whyHard": "The easy explanation for church hurt is that churches are full of sinners, and that's true. The New Testament is franker still. Paul warned the elders of Ephesus that \"even from your own number, men will rise up and distort the truth to draw away disciples after them\" (Acts 20:30), and the elder who wrote 3 John named Diotrephes, \"who loves to be first,\" and his habit of putting people out of the church (3 John 9-10). But a church full of sinners can't account for how deep this wound goes, and handed to someone who was abused, that explanation quietly moves the problem onto them, as if their mistake was expecting too much.\n\nIt goes deep because it came in God's name. Spiritual abuse works with true words, like submission and forgiveness, bent into a leash. Forgiveness never meant trusting the person again or keeping quiet about what they did. You may have heard *touch not God's anointed* used to shield a leader from questions. It comes from a psalm about God protecting a few wanderers from kings: \"He let no man oppress them; He rebuked kings on their behalf: 'Do not touch My anointed ones!'\" (Psalm 105:14-15). A verse that guarded the weak from the powerful gets turned into a guard for the powerful. The medicine was used as the knife, so prayer and Scripture, the things you'd reach for to heal, are the things that cut.\n\nThen there's the second wound, and for some people it's the deeper one: what happened after they told. The script is older than the church. After Amnon violated his half-sister Tamar, her brother Absalom told her, \"Be quiet for now, my sister. He is your brother\" (2 Samuel 13:20), and \"when King David heard all this, he was furious\" (2 Samuel 13:21). The text records his anger and no action. Churches have their own versions, like *let's keep this in the family*. Behind them there can be a real love for the church that has curdled into love for its name, as if God needed our silence to protect his. But the hiding is what turns one person's sin into the church's scandal.\n\nI'm a pastor, so I can't write this from outside it. Every pastor holds a trust that can be bent into what this page describes, and the pull to protect a ministry's name isn't a temptation only other pastors feel. We've preached submission more readily than we've submitted to correction, asked victims to forgive faster than we've asked offenders to repent, and mistaken quiet for peace. Where that's been true of us, the people we hurt aren't the ones who owe repentance first.\n\nA skeptic might say the church's record is evidence against its God, and that's a serious argument, because the church is the evidence people actually see. Jesus set the test himself: \"By this everyone will know that you are My disciples, if you love one another\" (John 13:35). A church that shields abusers fails it, and nobody should pretend otherwise. But the case against abusive shepherds is made inside Scripture itself, by the prophets and by Jesus. Dietrich Bonhoeffer, in *Life Together*, published in 1939, described two kinds of love at work in Christian community. One binds people to itself and wants to rule them. The other knows that Christ stands between us and every person we love, so it leaves them free for him. Spiritual abuse is the first kind dressed as the second. In a healthy church, Christ stands between the pastor and you. In an abusive one, the pastor stands between you and Christ.\n\nSo it's true that what was done to you wasn't Christ's doing, and the distinction matters, but it can't become the church's alibi. When Jesus set himself apart from the religious leaders of his day, it wasn't to let them off. It was to judge them. And when they threw a man out, he went looking for him.",
+  "thisWeek": {
+    "intro": "None of this has to be settled this week. These are small, honest steps you can take even when you're worn out. If anyone is unsafe, start with the first; otherwise, start wherever you are.",
+    "steps": [
+      {
+        "title": "If anyone is in danger, start there",
+        "body": "If the person who hurt you is still hurting or threatening you, or still has access to children, safety comes first. Call 911 if anyone is in danger now. If you think a child is being abused, call the police or your state's child abuse hotline; you don't need proof or anyone's permission. If the person you fear lives with you, call or text the Domestic Violence Hotline near the top of this page to make a safety plan; couples counseling isn't safe with an abusive partner. If someone checks your phone, use one they can't see."
+      },
+      {
+        "title": "Tell one safe person the truth",
+        "body": "Choose someone outside the church that hurt you: a friend, a relative, a counselor, or a pastor from another church who has nothing to protect. Tell them what happened in plain words, without shrinking it to sound spiritual or softening it to spare anyone. If it helps, write it down first, for your eyes only, with names and dates; notes made close to the time will steady you if others insist you're remembering it wrong, and they can help if you ever report. If the first person you tell minimizes it, that tells you about them, so try someone else."
+      },
+      {
+        "title": "Give yourself time",
+        "body": "You're allowed to stop going to the church that hurt you, and you don't owe anyone a meeting or an explanation. Try not to make lifelong decisions about faith in the rawest weeks, in either direction; there's no deadline. If you want to meet Jesus apart from the voice that misused him, read the Gospel of Mark, a chapter a day, and watch whom he touches, whom he defends, and whom he confronts, down to his warning about religious leaders who \"defraud widows of their houses, and for a show make lengthy prayers\" (Mark 12:40). If you can't do even that yet, rest."
+      },
+      {
+        "title": "When you're ready, look for these marks",
+        "body": "If and when you want to try a church again, and not before, look for what's hard to fake. Leaders answer to people who can tell them no, and they welcome questions. Money and decisions are handled in the open. The church can tell you plainly what it does when someone reports abuse. People who left are spoken of with respect. Visit more than once, sit near the door, and leave whenever you need to. The charge to elders in 1 Peter makes a fair test: \"not lording it over those entrusted to you, but being examples to the flock\" (1 Peter 5:3)."
+      }
+    ]
+  },
+  "moreHelp": {
+    "body": "Some of what happens in churches is more than a pastoral matter. Crimes like sexual abuse, assault, violence, and the abuse of a child belong with the police, whatever the church says, and money taken by fraud or from someone vulnerable may be a crime too. After sexual abuse or assault, RAINN's hotline near the top of this page is there whenever it happened. Time limits for charges differ by state and by crime, so ask a victim advocate or a lawyer before assuming it's too late.\n\nA counselor can help when what happened has taken over your sleep or your closest relationships, or keeps you from walking into any church. Your doctor can refer you, your insurer keeps a directory, and a pastor you trust from another church may know good counselors nearby. Check that anyone you see is licensed in your state and experienced with trauma, including harm done in a church. If you want a Christian counselor, ask how they bring faith into their work, and make sure they have no tie to the church involved. A good counselor won't push you back into church or out of your faith.",
+    "signs": [
+      "A child is being harmed or may be at risk. Call the police or your state's child abuse hotline.",
+      "You're under eighteen and an adult at church is hurting you. Tell a teacher, a school counselor, or another adult you trust.",
+      "A leader or church member sexually abused or assaulted you, whether last month or decades ago.",
+      "Someone is threatening you or pressuring you to stay quiet, drop a report, or meet the person who hurt you.",
+      "Someone at home uses God or Scripture to control or frighten you.",
+      "Panic, nightmares, or numbness have lasted for weeks.",
+      "You've had thoughts of ending your life. Call or text 988 now.",
+      "Money was taken from you, or from someone vulnerable, by pressure in God's name."
+    ],
+    "firstCall": "You don't need the right words. You can say, *I was hurt in a church by someone with spiritual authority, and it's still affecting me.* If it involved abuse or a crime, say so plainly. Then ask a few questions. Are you licensed in this state? Have you worked with people harmed in a church? How do you handle a client's faith, whether I want to keep it, question it, or set it down for now? What does a session cost? If the first counselor isn't a fit, try another.",
+    "cost": "Cost shouldn't keep you from help. Many counselors offer sliding-scale fees, community mental health centers and university training clinics usually charge less, and an employee assistance program through your job may cover a few free sessions. A church you trust, not the one that hurt you, may have a benevolence fund. If you were the victim of a crime, a victim advocate can tell you whether your state helps pay for counseling."
+  },
+  "helping": {
+    "body": "If someone tells you a church hurt them, take it seriously, and don't defend the church or the leader, even if you know and like them. Let them tell it without correcting details or explaining the other side. Ask whether they're safe, and if they might be in danger, ask how it's safe to contact them, since some people's messages are read. Don't hurry them back to church or argue them out of their anger. Your part is to stay, and to help them get safe and get help.\n\nIf you're a pastor, an elder, or anyone who leads in a church, this part is for you. When someone discloses abuse, listen and thank them, and don't promise to keep secrets you may have to report. Report the abuse of a child to the police or child protective services. When an adult tells you of a crime against them, the choice to report is theirs unless the law makes it your duty, so offer to help and to go with them; if a child may be at risk from the same person, report that yourself. Don't investigate a crime yourself instead of reporting it, and don't confront the accused, which can put the person who told you at risk. Many states name clergy as mandated reporters of child abuse, some require every adult to report, and the usual standard is suspicion, not proof. The laws vary by state, including what counts as privileged, so learn yours before you need it; this isn't legal advice. Never ask a victim to meet their abuser to reconcile, never ask them to keep quiet, and never make them tell their story again and again to a room of leaders. Then examine yourself. Who in your church could tell you no, and would anyone dare? Could a complaint about you reach someone who doesn't answer to you? Jesus said that for anyone who causes one of his little ones to stumble, \"it would be better for him to have a large millstone hung around his neck and to be drowned in the depths of the sea\" (Matthew 18:6), and he said it to disciples who had just asked him who was the greatest (Matthew 18:1).",
+    "say": [
+      "I believe you, and I'm glad you told me.",
+      "What happened to you was wrong.",
+      "Are you safe right now?",
+      "You don't have to decide anything about church or God tonight.",
+      "Leaving a church that hurt you isn't leaving God.",
+      "I'm not going anywhere."
+    ],
+    "dontSay": [
+      "Every church has problems.",
+      "You need to forgive and move on.",
+      "Did you talk to them privately first?",
+      "Think of what this will do to the church.",
+      "Don't let people keep you from God.",
+      "Are you sure that's what happened?"
+    ],
+    "next": "Check in next week and the week after; the hard days often come after everyone else has moved on. If a crime may have happened, offer to help them report it and to go along. Offer to sit with them while they call a counselor, and if they want to pray, pray a psalm with them rather than preaching at them. If they say they want to die, ask plainly whether they're thinking about suicide, and stay with them while they call or text 988. If leaders in your church are accused, bring in outside help: the authorities for any crime, and an independent investigator for the rest, since it's hard for any church to judge its own leaders fairly."
+  },
+  "prayer": "Lord, the people who hurt me used your name to do it, and I can't talk to you without hearing them. So I'll say it plainly and let you sort it out.\n\nYou saw what happened. You saw who knew and said nothing. You said you're against shepherds who feed on the flock, so be against them. Bring the truth into the light, and protect anyone they could still hurt.\n\nI don't know if I trust your church. Some days I'm not sure I trust you. If you're the shepherd who goes looking for the one who was thrown out, come and find me, because I don't have it in me to come looking for you tonight.\n\nKeep the good things they took from me until I can hold them again without shaking. And search me too, so this wound doesn't make me into someone who wounds. Amen.",
   "kit": {
+    "plan": {
+      "href": "/plans/deconstruction",
+      "label": "Eight Weeks of Taking Your Questions Seriously"
+    },
+    "guides": [
+      {
+        "href": "/studyguides/deconstruction",
+        "label": "When It All Comes Apart"
+      },
+      {
+        "href": "/studyguides/lament",
+        "label": "Lament: A Bible Study on Praying Your Pain"
+      },
+      {
+        "href": "/studyguides/character-before-competence",
+        "label": "Character Before Competence: A Church Leadership Study"
+      }
+    ],
     "read": [
       {
         "href": "/church-hurt",
-        "label": "When the church itself did the wounding",
+        "label": "Church Hurt: Resources for Survivors of Spiritual Abuse and Religious Trauma",
         "kind": "Page"
       },
       {
-        "href": "/wisdom/church-hurt",
-        "label": "Church Hurt",
+        "href": "/writing/spiritual-abuse-how-good-theology-gets-weaponized",
+        "label": "Spiritual Abuse: How Good Theology Gets Weaponized",
+        "kind": "Essay"
+      },
+      {
+        "href": "/writing/silence-abuse-church",
+        "label": "Why Do Churches Stay Silent About Abuse?",
+        "kind": "Essay"
+      },
+      {
+        "href": "/writing/done-with-church-not-jesus",
+        "label": "What If You're Done With Church but Not With Jesus?",
+        "kind": "Essay"
+      },
+      {
+        "href": "/writing/how-to-find-a-church-worth-joining",
+        "label": "How Do You Find a Church Worth Joining?",
+        "kind": "Essay"
+      },
+      {
+        "href": "/wisdom/submitting-to-leaders",
+        "label": "Submitting to Leaders",
         "kind": "Wisdom"
       },
       {
-        "href": "/deconstruction",
-        "label": "Deconstruction named honestly",
-        "kind": "Page"
+        "href": "/how-tos/ss-how-to-practice-lament",
+        "label": "How to Practice Lament",
+        "kind": "How-to"
       },
       {
-        "href": "/plans/deconstruction",
-        "label": "Eight Weeks of Taking Your Questions Seriously",
-        "kind": "Plan"
-      },
-      {
-        "href": "/wisdom/finding-a-church",
-        "label": "Finding a Church",
-        "kind": "Wisdom"
+        "href": "/life/betrayal-and-broken-trust",
+        "label": "How Do You Heal After Betrayal by Someone Close?",
+        "kind": "Life"
       }
     ]
+  },
+  "faq": [
+    {
+      "q": "Is it okay to leave my church?",
+      "a": "Yes. If a church is abusive, leaving can be the faithful choice, and leaving a congregation isn't leaving Christ. You don't owe anyone a final meeting; if you're afraid of the leaders, you don't have to meet them at all, and a short letter or no explanation is enough. A crime can be reported whether you stay or go. If the hurt came from ordinary conflict, an honest conversation may be worth having before you leave. Abuse is different. Jesus said his sheep \"will never follow a stranger; in fact, they will flee from him because they do not recognize his voice\" (John 10:5), and he said it just after religious leaders had thrown a man out (John 9:34). Leaving a voice that isn't his is what sheep do."
+    },
+    {
+      "q": "Can I love Jesus and not go to church?",
+      "a": "For a season, yes. People have stepped away from harmful churches while holding on to Jesus, and no one should rush you back. But the New Testament pictures faith lived among other believers; its letters were written to churches, and its commands to carry one another's burdens need other people. Hebrews, written to Christians under pressure, urges them not to give up meeting together, \"but let us encourage one another\" (Hebrews 10:25). Over time the question becomes when and where it's safe to belong again, and the way back can start small, with one or two Christians you trust, reading Scripture and praying with you."
+    },
+    {
+      "q": "How do I know if it was spiritual abuse?",
+      "a": "No single sign settles it, but some patterns deserve a name. Questions are treated as rebellion, and leaving is treated as leaving God. A leader answers to no one, and the people around the leader close ranks. Scripture is used to demand silence or instant forgiveness. People are shamed in public or cut off from friends and family outside the group, and decisions about marriage or money are made for them in God's name. Every church has disagreements and leaders who get things wrong, and that can hurt without being abuse; the difference is power used to control, again and again, with God's name attached. You don't need a label to be taken seriously, and a counselor can help you name what happened."
+    },
+    {
+      "q": "Doesn't Matthew 18 say I have to go to them privately first?",
+      "a": "Jesus does say, \"If your brother sins against you, go and confront him privately\" (Matthew 18:15), and between people who are safe with each other it's wise counsel; those who press it want to give the one who sinned a chance to listen and to keep a matter from becoming gossip. But earlier in the same chapter, Jesus warns that anyone who causes one of his little ones to stumble would be better off drowned (Matthew 18:6), and nothing in the passage tells a victim to face an abuser alone. Paul's rebuke of believers who sued each other concerns \"the things of this life\" (1 Corinthians 6:3), not crimes against the vulnerable, and he calls the governing authority \"God's servant, an agent of retribution to the wrongdoer\" (Romans 13:4). No one should ever ask you to meet with someone who abused you."
+    },
+    {
+      "q": "If my pastor was a fraud, was my faith fake?",
+      "a": "If your faith was in Christ, it didn't rest on the person who pointed you to him. Writing in chains about preachers who proclaimed Christ out of envy and rivalry, Paul said, \"in every way, whether by false motives or true, Christ is preached. And in this I rejoice\" (Philippians 1:18). Those rivals weren't abusers, but the point holds: the truth didn't belong to the one who spoke it. In the fourth century the Donatists taught that baptisms by ministers who had failed under persecution didn't count, and the wider church answered that baptism takes its worth from Christ, not from whoever performs it. What was true is still true, and the lies are theirs to answer for."
+    }
+  ],
+  "related": [
+    "cant-forgive",
+    "doubt",
+    "deconstructing",
+    "loneliness",
+    "suffering"
+  ],
+  "slots": [
+    {
+      "section": "whyHard",
+      "note": "After the paragraph that begins I'm a pastor: if James wants to, a few sentences in his own words on how he keeps his own pastoral authority answerable to others, or what he has learned about the pull to protect a ministry's name. Nothing that could identify anyone. The page stands without it."
+    },
+    {
+      "section": "whyHard",
+      "note": "After the skeptic paragraph: James came to faith from atheism. If he wants to, a sentence or two on how the church's failures looked to him from outside, and what helped him tell Christ apart from people who represented him badly, only as he tells it."
+    },
+    {
+      "section": "helping",
+      "note": "At the end of the part for leaders: a sentence of pastoral conviction from James, as a lead pastor and the founder of the Pastors Connection Network, on what a church owes someone who discloses abuse. If he wishes, he can also name organizations he trusts to train churches or to investigate independently (the /church-hurt page already lists GRACE), and any local counselors or survivor groups he would recommend (Grow prompt Section 12)."
+    }
+  ],
+  "sources": [
+    {
+      "claim": "Many states include clergy among the professionals required to report child abuse and neglect (the Gateway counts approximately 29 states and Guam), some states require every person to report (approximately 16 states, Puerto Rico, and the Virgin Islands), and whether clergy-penitent privilege applies varies by state.",
+      "cite": "Child Welfare Information Gateway (U.S. Department of Health and Human Services), Clergy as Mandatory Reporters of Child Abuse and Neglect.",
+      "url": "https://www.childwelfare.gov/resources/clergy-mandatory-reporters-child-abuse-and-neglect/"
+    },
+    {
+      "claim": "Reporting laws typically require a report when the reporter suspects or has reason to believe a child has been abused or neglected; the reporter does not have to prove it.",
+      "cite": "Child Welfare Information Gateway, Mandatory Reporting of Child Abuse and Neglect (State Statutes series).",
+      "url": "https://artifacts.childwelfare.gov/public/documents/mandatory-reporting-abuse-neglect.pdf"
+    },
+    {
+      "claim": "The National Domestic Violence Hotline does not recommend couples counseling with an abusive partner.",
+      "cite": "National Domestic Violence Hotline, Should I Go to Couples Therapy With My Abusive Partner?",
+      "url": "https://www.thehotline.org/resources/should-i-go-to-couples-therapy-with-my-abusive-partner/"
+    },
+    {
+      "claim": "Life Together was written in Göttingen in 1938 and published in 1939. In its first chapter, Bonhoeffer contrasts a human, self-centered love that binds the other to itself and desires to rule with a spiritual love that knows Christ stands between me and others and so leaves the other free to be Christ's.",
+      "cite": "Dietrich Bonhoeffer, Life Together (Gemeinsames Leben, 1939), chapter 1, Community; the wording was checked against published excerpts of the English translation.",
+      "url": "https://en.wikipedia.org/wiki/Life_Together"
+    },
+    {
+      "claim": "The Donatists held that sacraments given by clergy who had failed during Diocletian's persecution were invalid; the church in communion with Rome held that the sacraments receive their validity from Christ, not from the minister.",
+      "cite": "Encyclopaedia Britannica, North Africa: Christianity and the Donatist controversy.",
+      "url": "https://www.britannica.com/place/North-Africa/Christianity-and-the-Donatist-controversy"
+    }
+  ],
+  "reviewed": {
+    "on": "2026-09-30",
+    "notes": "Second-pass editorial review, 2026-09-30, over the writer's self-check. Checked: every passage and inline reference read in context with scripts/bsb.mjs --verses; outside claims re-checked through web search (direct fetches of the source sites are blocked here, so a check at the source before release still stands): Life Together was written in 1938 and published in 1939, and its first chapter does contrast a love that binds the other to itself and desires to rule with a love that knows Christ stands between me and others and leaves the other free to be Christ's, so the Bonhoeffer paraphrase stays; clergy are named mandated reporters of child abuse in about 29 states and Guam, every person must report in about 16 states, privilege varies by state, and the usual trigger is suspicion or reason to believe, not proof. Changed: crisisTopics adds suicide, because the page names thoughts of ending one's life and this wound often takes faith, community, and sometimes work at once; the topic adds the Crisis Text Line to the full help block and the printed guide, matching the line above the title. Leaders' part: child abuse always reported; an adult's choice to report respected unless the law makes reporting the leader's duty; any risk to a child reported; the suspicion-not-proof standard and every-adult states stated generally with the not-legal-advice line; the bans on investigating a crime in place of reporting it, confronting the accused, and asking a victim to meet an abuser kept. helping.next offers rather than presses reporting and adds asking plainly about suicide and staying while they call or text 988. The first FAQ no longer implies a frightened reader must meet leaders at all and reads John 10:5 after the expulsion in John 9:34. Cut as overstatement: the case against abusive shepherds 'first made inside Scripture'. Also: a plain sentence that forgiveness never meant trust or silence; the pastoral anaphora folded into one sentence; 1 Peter named as the letter, not by author; the John 9 and Psalm 55 readings made exact (v. 34; v. 14, with the psalm's anger in v. 15); 'If you think a child is being abused'; the under-eighteen sign moved into the first seven, which are the ones the handout prints. The balance holds: Christ is distinguished from those who harmed in his name, and the distinction is refused as the church's alibi. Kit labels match their targets (the silence essay's label is its planned SEO title). Flagged, not changed: the linked essays silence-abuse-church and done-with-church-not-jesus contain unverified first-person experience; this page neither repeats nor relies on it. validate-needs clean."
   }
 }

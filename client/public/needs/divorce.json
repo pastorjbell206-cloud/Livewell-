@@ -1,17 +1,26 @@
 {
   "slug": "divorce",
-  "page": false,
+  "page": true,
   "rank": 39,
   "title": "My marriage has ended",
-  "summary": "For the one whose marriage has ended or is ending: the grief, the children, and the life after.",
+  "seoTitle": "Going Through a Divorce: What the Bible Says and What Helps",
+  "description": "When your marriage has ended or is ending: grief, shame, the children, what the Bible says about divorce, and where to find help, with safety first.",
+  "summary": "For the one whose marriage has ended or is ending: the grief, the children, the shame, and what the Bible really says.",
   "askedAs": [
     "divorce",
     "going through a divorce",
     "life after divorce",
     "divorced Christian",
     "co-parenting",
-    "my spouse left",
-    "remarriage"
+    "my spouse left me",
+    "remarriage after divorce",
+    "does God hate divorce",
+    "is divorce a sin",
+    "can a divorced Christian remarry",
+    "shame after divorce",
+    "my parents are divorcing",
+    "Malachi 2:16",
+    "Bible verses about divorce"
   ],
   "states": [
     "carrying",
@@ -20,9 +29,119 @@
   "sensitivity": "high",
   "crisisTopics": [
     "suicide",
-    "abuse"
+    "abuse",
+    "substance"
   ],
+  "answer": "Maybe the papers are signed, or maybe it's happening now and you still can't believe it's your life. Whether you were left, did the leaving, or both of you gave up, you're losing more than a spouse: a home, a routine, friends, holidays, maybe time with your children, and the future you'd planned. Grief, anger, relief, guilt, and shame can arrive in the same afternoon. Being divorced doesn't make you a second-class Christian. For tonight, tell one person the truth about how you're doing. If your spouse or former spouse frightens you, call or text the National Domestic Violence Hotline, listed just below, before anything else. And if this loss has turned into thoughts of not wanting to live, call or text 988 now.",
+  "happening": "A marriage can end in one conversation or over ten years, and sometimes it's both: the day you found out, and the long slide you didn't see. You may be the one who was left, the one who left, or one of two people who finally stopped pretending. People tend to assume the one who left feels only relief and the one who was left feels only grief. Real life is messier, and shame often comes along with the rest, the kind that makes you want to skip church and shop at a different grocery store.\n\nThen the practical avalanche arrives: two households on the money that used to run one, a lawyer's retainer, papers you don't understand, a calendar that tells you which days you get your own children, holidays cut in half. Friends you knew as a couple go quiet or pick a side. You're grieving someone who is still alive and still texting about pickups. It shows in your body too: sleep that won't come, food with no taste, a heaviness every time the children leave for the other house.\n\nThe people you'll turn to each see part of this. A counselor will call this grief, and it is: divorce is a real loss, with no shortcut through it. A lawyer will call it a legal process, and it is; decisions made in the fog can follow you and your children for years. The church may speak of sin and forgiveness, and that's true too, because broken promises leave wrongs to be named, sometimes on both sides and sometimes mostly on one. What none of them quite holds is how tangled these are: grief knotted up with moral questions a therapist may not raise, a legal process with little room for what was actually done, and a church that talks about sin and forgets you're also in mourning.\n\nIf your spouse or former spouse has hit, threatened, stalked, or controlled you, the danger may not end with the marriage; the Hotline warns that leaving can be the most dangerous time. Reach them for a safety plan and ask about a protective order. Joint counseling with someone who has abused you isn't recommended, and mediation may not be safe either, so make sure your lawyer knows about the abuse early. The rest of this page assumes you're safe. And if your marriage isn't over, if you're still deciding or still hoping, [My marriage is falling apart](/help/marriage) is the better place to start.",
+  "scripture": {
+    "intro": "Scripture doesn't treat divorce as small, and it doesn't treat divorced people as disposable. The hard words come first, each read where it stands, including the verse you may have had quoted at you, and then the tenderness God speaks to the one who was sent away. None of these passages tells you to stay in danger.",
+    "passages": [
+      {
+        "ref": "Malachi 2:13-14,16",
+        "text": "And this is another thing you do: You cover the altar of the LORD with tears, with weeping and groaning, because He no longer regards your offerings or receives them gladly from your hands. Yet you ask, “Why?” It is because the LORD has been a witness between you and the wife of your youth, against whom you have broken faith, though she is your companion and your wife by covenant. ... “For I hate divorce,” says the LORD, the God of Israel. “He who divorces his wife covers his garment with violence,” says the LORD of Hosts. So guard yourselves in your spirit and do not break faith.",
+        "reading": "Malachi preached to Judah after the exile, to men weeping at the altar because God no longer accepted their offerings. The reason, he tells them, is that the LORD had been a witness between them and the wives of their youth, and they had broken faith with those women. This is the passage behind the line *God hates divorce*, and translations differ over its hardest verse (see the first question below). Either way, though, the anger in the passage falls on the husband who broke faith, and the violence it names is what he did to his wife. The passage takes the side of the woman who was sent away, and it gives no one a stone to throw at her."
+      },
+      {
+        "ref": "Matthew 19:3-6,8-9",
+        "text": "Then some Pharisees came and tested Him by asking, “Is it lawful for a man to divorce his wife for any reason?” Jesus answered, “Have you not read that from the beginning the Creator ‘made them male and female,’ and said, ‘For this reason a man will leave his father and mother and be united to his wife, and the two will become one flesh’? So they are no longer two, but one flesh. Therefore what God has joined together, let man not separate.” ... Jesus replied, “Moses permitted you to divorce your wives because of your hardness of heart; but it was not this way from the beginning. Now I tell you that whoever divorces his wife, except for sexual immorality, and marries another woman, commits adultery.”",
+        "reading": "The Pharisees' question, whether a man could divorce his wife “for any reason” (Matthew 19:3), echoes an argument recorded in the Mishnah, compiled around AD 200: the school of Shammai allowed divorce only for unchastity, the school of Hillel even for a spoiled meal (Gittin 9:10). Jesus doesn't start where they start. He goes back to the beginning, where two become one flesh, and calls Moses' certificate a concession to hardness of heart. That's why divorce can feel less like a contract ending than like something torn. Then he names an exception, and Christians have read it differently ever since, not least because Mark and Luke record the saying without it (Mark 10:11-12; Luke 16:18). Mark's account says the man who divorces his wife and marries another “commits adultery against her” (Mark 10:11): the wife sent away is the one wronged. No reading of this passage lets anyone say it didn't matter."
+      },
+      {
+        "ref": "1 Corinthians 7:10-11,15",
+        "text": "To the married I give this command (not I, but the Lord): A wife must not separate from her husband. But if she does, she must remain unmarried or else be reconciled to her husband. And a husband must not divorce his wife. ... But if the unbeliever leaves, let him go. The believing brother or sister is not bound in such cases. God has called you to live in peace.",
+        "reading": "Paul first passes on what the Lord taught: a wife must not separate, and if she does, she is to stay unmarried or be reconciled, and a husband must not divorce his wife. Then he takes up a case Jesus hadn't addressed, a believer married to an unbeliever: if the unbelieving spouse leaves, let them go. Two things are plain. You can't make another person stay, and the one who was left didn't do the leaving. What “not bound” means is where faithful Christians part ways: free to remarry, some say, or free from the duty to hold the marriage together, say others. But the last line is for everyone, including the one lying awake replaying the day it ended: “God has called you to live in peace” (1 Corinthians 7:15)."
+      },
+      {
+        "ref": "Isaiah 54:4-8",
+        "text": "Do not be afraid, for you will not be put to shame; do not be intimidated, for you will not be humiliated. For you will forget the shame of your youth and will remember no more the reproach of your widowhood. For your husband is your Maker— the LORD of Hosts is His name— the Holy One of Israel is your Redeemer; He is called the God of all the earth. For the LORD has called you back, like a wife deserted and wounded in spirit, like the rejected wife of one’s youth,” says your God. “For a brief moment I forsook you, but with great compassion I will bring you back. In a surge of anger I hid My face from you for a moment, but with everlasting kindness I will have compassion on you,” says the LORD your Redeemer.",
+        "reading": "Here God speaks to his own people as a wife who had been sent away, ashamed and alone, and calls her home. Earlier in the book she was sent away because of her people's transgressions (Isaiah 50:1), and still God took up the image of a discarded wife, with the shame and reproach this passage names, and spoke to her tenderly. If you were betrayed, the words fit what was done to you: “like a wife deserted and wounded in spirit” (Isaiah 54:6). If you were the one who broke faith, the passage says his compassion reaches even there. Notice the phrase the prophet chose, “the rejected wife of one's youth” (Isaiah 54:6). Malachi defended her. Here God himself brings her home."
+      }
+    ]
+  },
+  "whyHard": "The simplest explanation for why divorce hurts so much is that you lost a person. You did, but that's not all you lost. A marriage is a whole shared life: a home and its routines, in-laws who may have become family, friends you knew as a couple, a pew you sat in together, and the story you told yourself about where your life was headed. Divorce takes all of it at once, while the other person is still alive, sometimes sitting at your child's game with someone new. When someone dies, people know to come. When a marriage dies, they often don't know whether they're allowed to.\n\nThen the machinery starts. For most of American history, ending a marriage meant proving your spouse guilty of something, such as adultery, cruelty, or desertion, and couples who simply wanted out sometimes invented the evidence. In 1969 California passed the law usually counted as the first to let a marriage end without anyone proving fault, and every state has since adopted some form of it, so that today one spouse can end a marriage the other wanted to keep. There was mercy in that change. It ended a system that encouraged perjury, and it let people leave cruel spouses without first proving the cruelty in court. But a law that needs no reason doesn't ask what actually happened. California even stopped calling it divorce and called it dissolution, a word that fits a proceeding without blame and says nothing about what anyone did. A court can divide a house and set a schedule, but it has no way to heal a betrayal or to forgive one.\n\nThe church should be the place that can say what a court can't, and too often it hasn't been. We preach that marriage is meant to last a lifetime, and we should, because Jesus did. But many of our churches are built around intact families, and when a marriage ends we don't know where to look. Some of us have said too much: we treated every divorced person as the guilty one, quoted Malachi as if it had been written against the abandoned, and quietly moved people out of the places they used to serve. Others have said nothing and called the silence grace. I'm a pastor, and I'm inside this; it's easier to preach about lifelong marriage than to sit across a table from someone whose marriage just ended. The verdict and the silence tell a divorced person the same thing: *you don't belong here anymore*.\n\nThe courtroom and the church have fallen short in the same two ways. The old law demanded a guilty party, and the new law refuses to ask, and we in the church have made both mistakes, sometimes in the same congregation. Both are ways of not having to know the actual person: what was done, what was suffered, what needs confessing, and what needs grieving. Scripture won't take either shortcut. It calls broken faith what it is, and it won't let broken faith become anyone's name; the Scriptures that condemn the man who sends his wife away give some of God's tenderest words to the wife who was sent away (Malachi 2:14; Isaiah 54:6). A church that takes marriage as seriously as Jesus did should be the last place a divorced person has to grieve alone. Anything less takes marriage less seriously, not more.",
+  "thisWeek": {
+    "intro": "A week can't carry you through a divorce, but it can hold a few faithful steps, and if you're afraid, start with the first. Unless safety requires it, this isn't the week to sign what you don't understand, move far away, or start a new relationship.",
+    "steps": [
+      {
+        "title": "If you're afraid, start with safety",
+        "body": "Call or text the National Domestic Violence Hotline on this page, even if you aren't sure what you're living with counts as abuse. An advocate can help you plan for your safety and your children's, including handoffs, court dates, and where you'll stay. If your spouse can see your phone or accounts, use a device they can't reach. Keep contact in writing, don't meet alone, and tell your lawyer about the danger, because mediation may not be safe for you. If you're in immediate danger, call 911."
+      },
+      {
+        "title": "Tell one person, and don't disappear",
+        "body": "Shame grows in hiding, so tell one person how you're really doing: a friend, a pastor, or a counselor who won't pass it around or take over. If you have a church and it's safe to be there, go this Sunday, even if you sit in the back and slip out early. If your church met you with a verdict or with silence, tell a pastor plainly what you need, and if they can't give it, find a church that can."
+      },
+      {
+        "title": "Keep the children out of the middle",
+        "body": "Tell your children, in words that fit their age, that the divorce isn't their fault and isn't theirs to fix. Don't make them messengers, spies, or confidants, and don't criticize their other parent where they can hear. Where that parent is safe, let your children love them without guilt. Keep bedtimes, school, and church as steady as you can. If they aren't safe with the other parent, take that to your lawyer and an advocate, not to the children."
+      },
+      {
+        "title": "Get advice before you sign anything",
+        "body": "Before you sign anything about money, the house, or the children, talk with a family law attorney. If the two of you are safe with each other, a mediator can help you reach agreements, but a mediator doesn't represent either of you, so have your own lawyer look over anything before you sign it. Gather what you can: tax returns, bank and retirement statements, and records of debts. Don't hide money or empty accounts; it's wrong, and it can backfire in court. Asking for information isn't declaring war. If money is tight, look for a legal aid office. This isn't legal advice."
+      },
+      {
+        "title": "Name what you lost, and pray it",
+        "body": "Divorce is a stack of losses, and each one deserves a name. Write them down: the house, the in-laws, the couple friends, the Sunday routine, the future you pictured. Then pray them to God with Psalm 31, which bears David's name and knows what it is to be avoided: “they flee when they see me on the street” (Psalm 31:11). If you were wronged, say so. If you did wrong, say that too, as the same psalm does: “my iniquity has drained my strength” (Psalm 31:10)."
+      }
+    ]
+  },
+  "moreHelp": {
+    "body": "A pastor and good friends can carry a lot, but a divorce reaches into places that need training or authority. If there's been violence, threats, or stalking, start with the Hotline, call 911 in an emergency, and ask a local advocate about protective orders. A family law attorney can explain your rights around the children, support, the house, and debts where you live. A mediator can help two people who are safe with each other reach agreements, but if there's been abuse, tell your lawyer first, because mediation may not be safe or required.\n\nFor your own grief, or a child who is struggling, look for a licensed counselor: a marriage and family therapist, professional counselor, clinical social worker, or psychologist. If you want a Christian counselor, ask about license and training as well as faith. Get names from your doctor, your insurer's directory, or a pastor who knows good local counselors, and confirm the license with your state licensing board. For a child, the pediatrician or school counselor is a good first call. Some churches run divorce recovery groups, where no one needs the explanation. If you're drinking or using to get through, SAMHSA's National Helpline, listed above, can point you to treatment; if you're thinking about suicide, call or text 988.",
+    "signs": [
+      "You're afraid of your spouse or former spouse, or they've threatened to hurt you, the children, or themselves.",
+      "You've had thoughts of ending your life. Call or text 988 now, or call 911 if you're in danger.",
+      "A child tells you someone is hurting them. Call the police or your state's child protective services.",
+      "Someone is pressing you to sign papers about money, the house, or the children before you've had advice.",
+      "You haven't slept, eaten, or worked normally for more than two weeks.",
+      "You're drinking or using more to get through the nights, or the weekends without your children.",
+      "A child is withdrawing, struggling at school, or talking about wanting to die."
+    ],
+    "firstCall": "To a counselor, you can say it simply: *I'm going through a divorce, and I'm not handling it well.* Ask whether they're licensed in your state, what they charge, whether they take your insurance, and whether they also see children. To a family lawyer: *I'm getting divorced, and I need to understand my options for the children, the house, and money before I sign anything.* Ask what the first meeting costs, and if there's been abuse, whether they've handled cases like yours.",
+    "cost": "Counseling costs vary, and insurance may cover it, so ask before you start. Lower-cost options include sliding-scale fees, community mental health centers, university training clinics where supervised graduate students see clients for less, and employee assistance programs, which often include a few free sessions. Your church may have a benevolence fund; ask. Legal aid offices serve people with low incomes, some lawyers offer a low-cost first meeting, and mediation can cost less than a court fight when it's safe. The Hotline is free."
+  },
+  "helping": {
+    "body": "If your friend's marriage has ended, don't disappear. People often go quiet after a divorce because they don't know what to say, and the quiet feels like a verdict. Say something simple, then keep coming around with practical help: a meal, a ride, childcare during a court date, a seat at your table on the first holidays alone. Listen more than you advise, don't pass their story along, even as a prayer request, and don't run down their former spouse where the children can hear.\n\nIf they're afraid of their former spouse, believe them. Don't confront the ex, and don't push the two of them to talk it out. Ask how it's safe to reach them, since phones and messages may be watched, and help them contact the Hotline, whose advocates also talk with friends and family.\n\nIf it's your parents who are divorcing, you're allowed to grieve, even as a grown adult: the home you went back to, the holidays, the story of where you came from. You don't have to take sides, carry messages, or become either parent's confidant. You can love them both and still say, *I can't be the one you talk to about Dad.* If you're still living at home, it isn't your fault and it isn't yours to fix; tell a school counselor or another adult you trust how you're doing, especially if you're ever afraid at home.\n\nPastors, keep the divorced in the life of the church, and don't assume you know who was at fault. Don't send a frightened spouse home to reconcile, and don't let a verse stand in for a visit. If children are being harmed or are at risk, you may be a mandated reporter; the rules differ by state, so learn yours. This isn't legal advice.",
+    "say": [
+      "I'm so sorry. I'm not going anywhere.",
+      "You don't owe me the whole story.",
+      "Can I take the kids Saturday morning so you can rest?",
+      "Do you feel safe with your ex right now?",
+      "Are you thinking about suicide? You can tell me the truth.",
+      "Come for Thanksgiving. There's a chair for you."
+    ],
+    "dontSay": [
+      "God hates divorce, you know.",
+      "What did you do to make them leave?",
+      "At least you're free now.",
+      "I never liked him anyway.",
+      "You just need to forgive and move on."
+    ],
+    "next": "Keep checking in after the first month, when the calls tend to stop. Put the hard days on your calendar, the wedding anniversary, court dates, the first holidays and birthdays split between two houses, and reach out before them. If you're worried about their safety, ask how it's safe to contact them, and call the Hotline yourself for advice. If they talk about not wanting to live, stay with them and call or text 988 together, or call 911 if they're in danger now."
+  },
+  "prayer": "Lord, you were a witness when we made our promises, and you've seen everything since. I don't know how to live in the life that's left. Some hours I'm angry, some hours I'm relieved, and most of the time I'm just tired.\n\nYou know what was done to me and what I have done. Don't let me hide from either one. Where I need to confess, give me courage. Where I need to forgive, begin it in me before I can feel it. If I'm in danger, get me and anyone in my care somewhere safe.\n\nGuard any child caught between us, and keep me from handing them what's mine to carry. I give you the one I married. You see truly and judge rightly, and tonight I can do neither.\n\nWhen I'm ashamed to walk into church, walk in with me. You are near to the brokenhearted, and I am brokenhearted. Stay near. Amen.",
   "kit": {
+    "plan": {
+      "href": "/plans/forgiveness",
+      "label": "Eight Weeks Toward Setting Down the Debt"
+    },
+    "selfCheck": {
+      "href": "/tools/emotional-health",
+      "label": "Emotional Health Self-Check"
+    },
+    "guides": [
+      {
+        "href": "/studyguides/lament",
+        "label": "Lament: A Bible Study on Praying Your Pain"
+      },
+      {
+        "href": "/studyguides/forgiveness",
+        "label": "Forgiveness: A Bible Study on the Hardest Word"
+      },
+      {
+        "href": "/studyguides/singleness",
+        "label": "Singleness: A Bible Study for the Unmarried, written for the divorced and widowed too"
+      }
+    ],
     "read": [
       {
         "href": "/life/divorce-and-its-aftermath",
@@ -30,9 +149,34 @@
         "kind": "Life"
       },
       {
+        "href": "/writing/divorce-and-remarriage",
+        "label": "When a Marriage Ends: Divorce, Remarriage, and Grace",
+        "kind": "Essay"
+      },
+      {
         "href": "/life/betrayal-and-broken-trust",
         "label": "How Do You Heal After Betrayal by Someone Close?",
         "kind": "Life"
+      },
+      {
+        "href": "/wisdom/cheating",
+        "label": "Cheating and Betrayal of Trust",
+        "kind": "Wisdom"
+      },
+      {
+        "href": "/life/shame-and-the-hiding-self",
+        "label": "What Is the Difference Between Guilt and Shame?",
+        "kind": "Life"
+      },
+      {
+        "href": "/how-tos/ss-how-to-practice-lament",
+        "label": "How to Practice Lament",
+        "kind": "How-to"
+      },
+      {
+        "href": "/how-tos/sf-how-to-confess-sin-and-walk-in-repentance",
+        "label": "How to Confess Sin and Walk in Repentance",
+        "kind": "How-to"
       },
       {
         "href": "/life/the-blended-family",
@@ -40,10 +184,154 @@
         "kind": "Life"
       },
       {
-        "href": "/wisdom/cheating",
-        "label": "Cheating and Betrayal of Trust",
+        "href": "/wisdom/toxic-relationships",
+        "label": "Toxic and Harmful Relationships",
         "kind": "Wisdom"
+      },
+      {
+        "href": "/how-tos/ss-how-to-sit-with-someone-suffering",
+        "label": "How to Sit With Someone Who Is Suffering",
+        "kind": "How-to"
       }
     ]
+  },
+  "faq": [
+    {
+      "q": "Does God hate divorce?",
+      "a": "The line comes from Malachi 2:16, spoken to men of Judah who had broken faith with the wives of their youth and then wondered why God wouldn't accept their worship (Malachi 2:13-14). The Hebrew of verse 16 is hard, and translations differ. The Berean Standard Bible, like the King James, makes God the one who hates divorce: “For I hate divorce” (Malachi 2:16). The current NIV and the CSB read it as describing the husband who hates his wife and divorces her, and the ESV reads it much the same way. On any of these readings, the anger falls on the one who breaks faith, and the verse stands with the wife who was sent away. Nothing in it says God hates the people divorce has wounded, or that he's done with anyone who comes to him."
+    },
+    {
+      "q": "Is divorce a sin?",
+      "a": "Scripture treats the breaking of a marriage as a real wrong; Jesus called Moses' permission a concession to hardness of heart (Matthew 19:8). But being divorced and having sinned aren't the same thing. Paul tells the believer whose unbelieving spouse walks out to “let him go” (1 Corinthians 7:15); the one who was left didn't do the leaving, and no one sins by getting themselves and their children away from danger. Christians differ, honestly, on which grounds make a divorce right. Where you did wrong, you can name it plainly and be forgiven: “If we confess our sins, He is faithful and just to forgive us our sins” (1 John 1:9). Divorce isn't the unforgivable sin, and it isn't your name."
+    },
+    {
+      "q": "Can a divorced Christian remarry?",
+      "a": "Faithful churches answer this differently; it divides churches, not the faith. One view holds that marriage binds until death: “A wife is bound to her husband as long as he lives” (1 Corinthians 7:39), and Mark and Luke record Jesus' saying without exception (Mark 10:11-12; Luke 16:18). The Catholic Church teaches that a valid, consummated marriage between baptized Christians can't be dissolved, though its tribunals can declare that a marriage was never valid (Catechism 1640, 1629). This view keeps a vow as God keeps his, and keeps the door to reconciliation open. A second view holds that adultery or desertion frees the wronged spouse to remarry, reading Jesus' exception (Matthew 19:9) and Paul's “not bound in such cases” (1 Corinthians 7:15); it won't make the betrayed carry the betrayer's sin for life. A third view counts abuse and other grave breaking of vows as desertion too: no one, it holds, is bound to a covenant the other turned into danger, since “God has called you to live in peace” (1 Corinthians 7:15). The Orthodox churches, by a pastoral mercy called economia, allow a second marriage with prayers of repentance. Take this to a pastor who'll hear your whole story."
+    },
+    {
+      "q": "My spouse left me. Was it my fault?",
+      "a": "You can own what was yours without owning what was theirs. If you were cold, harsh, absent, or unfaithful, confess it to God and, where it's safe and wise, to the person you hurt. But your spouse's decision to leave was their decision. When Paul wrote about a believer whose unbelieving spouse walks out, he said to let the spouse go, and he laid no blame on the one who stayed (1 Corinthians 7:15). If the leaving came with an affair, abuse, or an addiction, you didn't cause it by failing to be enough. A counselor can help you sort out what was yours, which is hard to do alone at three in the morning."
+    },
+    {
+      "q": "How do I co-parent with my ex?",
+      "a": "Think of it as a long job you share with someone you may not trust, with the children at the center. Keep messages brief, factual, and in writing, and keep adult conflict away from the kids: no messengers, no spying, no commentary on the other parent. A written parenting plan and a shared calendar take heat out of the details. Paul's counsel fits: “If it is possible on your part, live at peace with everyone” (Romans 12:18). It won't always be possible, and you answer only for your part. Where the other parent is safe, your children need their love too. If they aren't safe, ask your lawyer and an advocate what protections, such as supervised visits, are available."
+    }
+  ],
+  "related": [
+    "marriage",
+    "cant-forgive",
+    "loneliness",
+    "grief",
+    "money",
+    "church-hurt"
+  ],
+  "slots": [
+    {
+      "section": "faq",
+      "note": "Where James lands on remarriage after divorce, in his own words: which grounds he holds (adultery, desertion, abuse), whether remarriage is open and to whom, and the strongest objection he hasn't fully answered (not a denominational label; no page speaks for his tradition). The answer to 'Can a divorced Christian remarry?' states three views, each with its strongest texts and its comfort, names Catholic and Orthodox practice, and deliberately doesn't land."
+    },
+    {
+      "section": "thisWeek",
+      "note": "James was raised without a father. If he chooses, a few sentences in his own words on what a child carries when a parent is absent, beside the step on keeping children out of the middle. Nothing is assumed about how his father came to be absent, and the page stands without it."
+    },
+    {
+      "section": "whyHard",
+      "note": "If James wants it, his own pastoral conviction about how a church should receive people whose marriages have ended, and whether First Baptist Church of Fenton has a practice or group for walking with them. Only from James; no invented congregants or couples."
+    },
+    {
+      "section": "moreHelp",
+      "note": "Any divorce recovery groups, Christian counselors, legal aid offices, or domestic violence programs near Fenton that James trusts enough to name. Only from James."
+    }
+  ],
+  "sources": [
+    {
+      "claim": "Translations of Malachi 2:16 differ: the King James (he hateth putting away) and the Berean Standard Bible (I hate divorce) make God the one who hates; the NIV (2011) reads the man who hates and divorces his wife, the CSB if he hates and divorces his wife, and the ESV the man who does not love his wife but divorces her.",
+      "cite": "Malachi 2:16 in the KJV, BSB, NIV, CSB, and ESV, compared on Bible Hub's parallel page; confirmed through search excerpts of Bible Hub, Biblia, and esv.org because direct fetches were blocked.",
+      "url": "https://biblehub.com/malachi/2-16.htm"
+    },
+    {
+      "claim": "The Mishnah (Gittin 9:10) records that the school of Shammai permitted a man to divorce his wife only for unchastity, and the school of Hillel even if she spoiled his dish; the Mishnah was compiled around AD 200.",
+      "cite": "Mishnah Gittin 9:10 (Sefaria); for the date, Wikipedia, Mishnah (compiled around 200 CE under Judah ha-Nasi).",
+      "url": "https://www.sefaria.org/Mishnah_Gittin.9.10"
+    },
+    {
+      "claim": "California's Family Law Act of 1969, effective January 1, 1970, is generally described as the first no-fault divorce law in the United States, and it replaced the action for divorce with a proceeding for dissolution of marriage on the ground of irreconcilable differences. The page says usually counted as the first because some states had earlier incompatibility grounds that are sometimes described as no-fault; their dates were not confirmed, so the page names none of them.",
+      "cite": "California State Assembly, Committee on Judiciary, report on the direction of divorce reform in California, from fault to no-fault (title read from a search excerpt, confirmed again through search excerpts in the second pass; re-open before release).",
+      "url": "https://ajud.assembly.ca.gov/sites/ajud.assembly.ca.gov/files/reports/1197%20divorcereform97.pdf"
+    },
+    {
+      "claim": "Under fault-based divorce a spouse had to prove grounds such as adultery, cruelty, or desertion, and the system encouraged perjury; every state now offers some form of no-fault divorce (New York last, in 2010), and one spouse can obtain it without the other's agreement.",
+      "cite": "Wikipedia, No-fault divorce (United States), read alongside the California Assembly report.",
+      "url": "https://en.wikipedia.org/wiki/No-fault_divorce"
+    },
+    {
+      "claim": "Leaving an abusive relationship is the most dangerous time for a survivor, so a personalized safety plan matters; a protective order is a court order that should never replace a safety plan, and advocates can help identify local legal resources.",
+      "cite": "National Domestic Violence Hotline, Protective Orders and Legal Resources.",
+      "url": "https://www.thehotline.org/resources/protective-restraining-orders/"
+    },
+    {
+      "claim": "If a partner may be monitoring your devices, use a safer device, such as a friend's phone or a library computer.",
+      "cite": "National Domestic Violence Hotline, Internet Safety for Survivors.",
+      "url": "https://www.thehotline.org/plan-for-safety/internet-safety/"
+    },
+    {
+      "claim": "Hotline advocates also talk with friends and family who are worried about someone.",
+      "cite": "National Domestic Violence Hotline, Support Others.",
+      "url": "https://www.thehotline.org/support-others/"
+    },
+    {
+      "claim": "Joint counseling with an abusive partner is not recommended, because it cannot fix the imbalance of power and what is said can be used against the abused partner afterward.",
+      "cite": "National Domestic Violence Hotline, Should I Go to Couples Therapy With My Abusive Partner?",
+      "url": "https://www.thehotline.org/resources/should-i-go-to-couples-therapy-with-my-abusive-partner/"
+    },
+    {
+      "claim": "Custody mediation may be unsafe or inappropriate where there has been domestic violence; courts screen for it, survivors can object and ask for safety measures, and the rules vary by state.",
+      "cite": "Battered Women's Justice Project, a guide for survivors ordered or referred to custody mediation in cases involving domestic violence; WomensLaw.org state pages on mediation.",
+      "url": "https://bwjp.org/wp-content/uploads/2022/10/how-to-navigate-custody-mediation-in-cases-involving-domestic-violence.pdf"
+    },
+    {
+      "claim": "Children should hear that the divorce is not their fault and that they cannot fix it; parents should not make a child the messenger or criticize the other parent where the child can hear.",
+      "cite": "American Academy of Pediatrics, HealthyChildren.org, Divorce and Separation: How to Help Your Child Adjust.",
+      "url": "https://www.healthychildren.org/English/family-life/family-dynamics/types-of-families/Pages/Adjusting-to-Divorce.aspx"
+    },
+    {
+      "claim": "It is not a child's job to make a parent feel better, and children should not be asked to take sides or be put in a loyalty bind.",
+      "cite": "Child Mind Institute, Supporting Kids During a Divorce.",
+      "url": "https://childmind.org/article/supporting-kids-during-a-divorce/"
+    },
+    {
+      "claim": "Legal aid organizations give free civil legal help to people with low incomes, including custody, child support, and protection from domestic violence.",
+      "cite": "Legal Services Corporation, What Is Legal Aid?",
+      "url": "https://www.lsc.gov/about-lsc/what-legal-aid"
+    },
+    {
+      "claim": "The Catholic Church teaches that a marriage concluded and consummated between baptized persons can never be dissolved (CCC 1640), and that a church tribunal can declare the nullity of a marriage, that is, that it never existed (CCC 1629). Both paragraphs confirmed again through search excerpts in the second pass.",
+      "cite": "Catechism of the Catholic Church, Part Two, Section Two, Chapter Three, Article 7, The Sacrament of Matrimony.",
+      "url": "https://www.scborromeo.org/ccc/p2s2c3a7.htm"
+    },
+    {
+      "claim": "The Orthodox Church, while opposed to divorce, permits divorced people to marry a second and even a third time (never a fourth) by economia (oikonomia), a pastoral dispensation out of concern for the people involved, and the rite for a second marriage replaces some of the joyful ceremonies with penitential prayers.",
+      "cite": "Orthodox Church in America, Questions and Answers, Divorce and Remarriage; with Orthodox parish pages on the second-marriage rite.",
+      "url": "https://www.oca.org/questions/sacramentmarriage/divorce-and-remarriage"
+    },
+    {
+      "claim": "Asking someone directly whether they are thinking about suicide does not increase suicidal thoughts or behavior.",
+      "cite": "National Institute of Mental Health, 5 Action Steps to Help Someone Having Thoughts of Suicide.",
+      "url": "https://www.nimh.nih.gov/sites/default/files/documents/health/publications/5-action-steps-help-someone-having-thoughts-suicide.pdf"
+    },
+    {
+      "claim": "Many states include clergy among mandated reporters of child abuse and neglect, and the rules vary by state.",
+      "cite": "Child Welfare Information Gateway, Clergy as Mandatory Reporters of Child Abuse and Neglect (U.S. Department of Health and Human Services).",
+      "url": "https://www.childwelfare.gov/resources/clergy-mandatory-reporters-child-abuse-and-neglect/"
+    },
+    {
+      "claim": "SAMHSA's National Helpline gives free, confidential treatment referrals and information for substance use and mental health.",
+      "cite": "Substance Abuse and Mental Health Services Administration, National Helpline.",
+      "url": "https://www.samhsa.gov/find-help/helplines/national-helpline"
+    }
+  ],
+  "reviewed": {
+    "on": "2026-09-30",
+    "notes": "Second pass (editor), 2026-09-30; supersedes the writer's self-check. Validator clean (node scripts/validate-needs.mjs divorce) and the CarePage render test passes. Truth: Scripture settings re-read in the BSB with --verses (Malachi 1:1 and 2:10-17; Matthew 19:3-9 with 5:31-32, Mark 10:2-12, and Luke 16:18; 1 Corinthians 7:8-17 and 7:39; Isaiah 50:1 and 54:1-8; the Psalm 31 heading and 31:9-12; Romans 12:17-18; 1 John 1:9; Psalm 34:18). Malachi 2:16: node scripts/bsb.mjs confirms the BSB puts the hating on God (For I hate divorce, says the LORD), as the KJV does (he hateth putting away); the NIV (2011) and the CSB put it on the husband who hates and divorces his wife, and the ESV reads the man who does not love his wife but divorces her; all confirmed through search excerpts. Ancient versions are not mentioned. The FAQ now says the BSB and KJV make God the one who hates divorce, instead of makes it God's own word (every rendering frames the verse as the LORD speaking). Outside claims confirmed again through search excerpts (direct fetches still blocked; re-open each source before release): CCC 1629 and 1640; Orthodox economia, second and third marriages, and the penitential rite; California's Family Law Act of 1969, effective 1970, with dissolution on irreconcilable differences. Changed: the remarriage FAQ now gives three distinct views, each with its strongest texts and its comfort (marriage binds until death, with 1 Corinthians 7:39 and the saying without exception in Mark and Luke, and the Catholic teaching stated as CCC 1640 and 1629 state it; adultery and desertion, with Matthew 19:9 and 1 Corinthians 7:15; a wider view that counts abuse and grave breaking of vows as desertion, with 1 Corinthians 7:15, beside Orthodox economia and second marriage), and does not land; the old answer folded the third view into the second with no text or comfort and said only that the Catholic Church teaches this. No-fault history: California's law is usually counted as the first (earlier incompatibility statutes are sometimes called no-fault, but their dates were not confirmed, so none is named); the reform's mercy is stated precisely (leaving a cruel spouse without first proving the cruelty in court); dissolution is described fairly, as a word that fits a proceeding without blame, rather than as if no one had done anything. The permanence of marriage became marriage meant to last a lifetime, because permanence names one of the three remarriage views. The Malachi reading no longer says the passage was spoken to defend the woman or was never meant as a stone (overstatement; 2:10-12 also concerns marrying the daughter of a foreign god). The Mishnah is compiled, not written down, around AD 200; Mark's account says replaces Mark adds; Earlier in the book replaces Isaiah's telling for Isaiah 50:1. Safety: What's going on now says in the text what the sources already said, that joint counseling with someone who has abused you isn't recommended and mediation may not be safe; step 1 no longer implies mediation will happen; step 2 sends the reader to church only if it's safe to be there; step 4 no longer offers a mediator as a source of advice (a mediator represents neither spouse, so have your own lawyer read anything before signing); the helping section adds a sentence for a teenager whose parents are divorcing. The answer says Being divorced doesn't make you a second-class Christian (None of that pointed at the feelings). Voice: a sentence shared with the purpose page varied; a repeated tell your lawyer removed. Slot: the remarriage slot no longer asks for the tradition James's view comes from, since no page speaks for his tradition. Kit: every label matches its target. Flags for other files, not changed here: /life/divorce-and-its-aftermath has unverified first-person lines in James's voice (having been part of churches that did this; early in ministry saying nothing to the divorced) and a rate claim about church marriages; /writing/divorce-and-remarriage narrates first-person experience (I have been the rigorist; reaching for the rule in a counseling room), describes his childhood as the wreckage of a broken home, which goes beyond the permitted facts, and calls I hate divorce the rendering of older translations though the BSB still has it. This page repeats and relies on none of it. No statistics; no quotations but Scripture; first person only as stance (I'm a pastor, and I'm inside this). Read as the midnight reader on a phone, the skeptic, a pastor, and a licensed counselor."
   }
 }
