@@ -27,7 +27,7 @@ const DIRS = [
   "client/public/studyguides",
   "scripts/articles", // upstream source for the how-to store
 ];
-const FILES = ["client/src/data/content-data.json", "client/public/llms-full.txt"];
+const FILES = ["client/src/data/content-data.json", "client/public/llms-full.txt", "content/static-library.generated.json"];
 
 function walk(relDir, out) {
   const abs = path.join(ROOT, relDir);

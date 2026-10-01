@@ -1,0 +1,48 @@
+{
+  "slug": "is-it-a-sin",
+  "page": false,
+  "rank": 25,
+  "title": "Is it a sin to drink, get a tattoo, or gamble?",
+  "summary": "The questions Scripture leaves to conscience, and how to decide them without pride or fear.",
+  "askedAs": [
+    "is drinking a sin",
+    "is it a sin to get a tattoo",
+    "is gambling a sin",
+    "can Christians drink alcohol",
+    "Christian freedom",
+    "Romans 14",
+    "gray areas",
+    "disputable matters",
+    "is smoking a sin",
+    "is it a sin to swear"
+  ],
+  "states": [
+    "grow",
+    "carrying"
+  ],
+  "sensitivity": "ordinary",
+  "kit": {
+    "read": [
+      {
+        "href": "/wisdom/alcohol-and-drinking",
+        "label": "Alcohol and Drinking",
+        "kind": "Wisdom"
+      },
+      {
+        "href": "/wisdom/gambling",
+        "label": "Gambling and the Bet",
+        "kind": "Wisdom"
+      },
+      {
+        "href": "/wisdom/guilt-and-conscience",
+        "label": "Guilt and Conscience",
+        "kind": "Wisdom"
+      },
+      {
+        "href": "/wisdom/temptation",
+        "label": "Temptation",
+        "kind": "Wisdom"
+      }
+    ]
+  }
+}

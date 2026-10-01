@@ -5,7 +5,7 @@
  */
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
-import { GeneratedCover, coverThemeFor } from "@/components/GeneratedCover";
+import { CardGrid } from "@/components/editorial/CardGrid";
 import { trpc } from "@/lib/trpc";
 import { useMemo, useState } from "react";
 import { Download, Loader2, Search, X } from "lucide-react";
@@ -67,6 +67,10 @@ const LIBRARIES = [
   },
 ];
 
+/** The flagship leads the page with room of its own; the rest sit as cards. */
+const FLAGSHIP = LIBRARIES.find((lib) => lib.flagship);
+const SHELF = LIBRARIES.filter((lib) => !lib.flagship);
+
 export default function Resources() {
   const resourcesQuery = trpc.resources.listPublished.useQuery();
   const [searchTerm, setSearchTerm] = useState("");
@@ -112,7 +116,7 @@ export default function Resources() {
       />
 
       {/* HERO */}
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>Resources</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(34px, 5.4vw, 58px)", fontWeight: 400, lineHeight: 1.04, letterSpacing: "-0.025em", marginBottom: "18px", maxWidth: "20ch" }}>
@@ -124,39 +128,36 @@ export default function Resources() {
         </div>
       </section>
 
-      {/* CURATED LIBRARIES */}
+      {/* CURATED LIBRARIES. The flagship keeps its charcoal ground as the one
+          lead, given room; the other libraries are cards. The page has no
+          section heading above them, so every library title is an h2, level
+          with "Downloads". */}
       <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4)" }}>
         <div style={wrap}>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(290px, 1fr))", gap: "var(--s-3)" }}>
-            {LIBRARIES.map((lib) => (
-              <Link
-                key={lib.href}
-                href={lib.href}
-                style={{
-                  display: "flex",
-                  gap: lib.flagship ? "0" : "14px",
-                  textDecoration: "none",
-                  padding: lib.flagship ? "var(--s-4)" : "0",
-                  overflow: "hidden",
-                  background: lib.flagship ? "var(--charcoal)" : "var(--card)",
-                  border: "1px solid rgba(20,17,12,0.08)",
-                  borderTop: lib.flagship ? "2px solid var(--mustard)" : undefined,
-                  gridColumn: lib.flagship ? "1 / -1" : undefined,
-                }}
-              >
-                {!lib.flagship && (
-                  <div style={{ width: "88px", flexShrink: 0, aspectRatio: "3 / 4", overflow: "hidden", alignSelf: "flex-start" }}>
-                    <GeneratedCover title={lib.title} {...coverThemeFor(`${lib.title} ${lib.eyebrow}`)} style={{ width: "100%", height: "100%" }} />
-                  </div>
-                )}
-                <div style={{ padding: lib.flagship ? "0" : "var(--s-4) var(--s-4) var(--s-4) 0" }}>
-                  <div className="eyebrow" style={{ color: lib.flagship ? "var(--mustard)" : "var(--mustard-text)", marginBottom: "10px" }}>{lib.eyebrow}</div>
-                  <div style={{ fontFamily: "var(--F)", fontSize: lib.flagship ? "clamp(24px, 3.4vw, 32px)" : "21px", lineHeight: 1.2, color: lib.flagship ? "var(--bone)" : "var(--ink)", marginBottom: "10px" }}>{lib.title}</div>
-                  <p style={{ fontFamily: "var(--B)", fontSize: "14.5px", lineHeight: 1.65, color: lib.flagship ? "rgba(245,240,230,0.78)" : "var(--ink-muted)", maxWidth: lib.flagship ? "70ch" : undefined, margin: 0 }}>{lib.desc}</p>
-                </div>
-              </Link>
-            ))}
-          </div>
+          {FLAGSHIP && (
+            <Link
+              href={FLAGSHIP.href}
+              className="ed-card ed-card--dark"
+              style={{ background: "var(--charcoal)", borderTop: "2px solid var(--mustard)", padding: "clamp(28px, 4vw, 48px)", gap: "14px", marginBottom: "clamp(16px, 2vw, 24px)" }}
+            >
+              <span className="eyebrow" style={{ color: "var(--mustard)" }}>{FLAGSHIP.eyebrow}</span>
+              <h2 className="ed-card-title" style={{ fontSize: "clamp(1.9rem, 1.3rem + 1.9vw, 2.8rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.02em" }}>
+                {FLAGSHIP.title}
+              </h2>
+              <p className="ed-card-dek" style={{ fontSize: "1.0625rem", lineHeight: 1.7, maxWidth: "64ch" }}>{FLAGSHIP.desc}</p>
+              <div className="ed-card-foot" style={{ justifyContent: "flex-start" }}>
+                <span>Open the library</span>
+                {/* .ed-arrow has no dark-card color of its own, so it would
+                    fall back to --ink-muted on charcoal; keep it legible. */}
+                <span className="ed-arrow" aria-hidden style={{ color: "var(--charcoal-fg)" }}>→</span>
+              </div>
+            </Link>
+          )}
+          <CardGrid
+            headingAs="h2"
+            label="Libraries"
+            items={SHELF.map((lib) => ({ href: lib.href, title: lib.title, dek: lib.desc, kicker: lib.eyebrow }))}
+          />
         </div>
       </section>
 
@@ -177,14 +178,18 @@ export default function Resources() {
                 style={{ width: "100%", boxSizing: "border-box", padding: "10px 12px 10px 36px", fontFamily: "var(--U)", fontSize: "14px", background: "var(--card)", border: "1px solid rgba(20,17,12,0.15)", borderRadius: "2px", color: "var(--ink)", outline: "none" }}
               />
             </div>
+            {/* The site's filter chips (.ed-chip): the pressed state inverts
+                ink and bone, so it reads in both themes. Format chips keep
+                their dashed edge to tell the two filter kinds apart. */}
             {categories.length > 1 && (
-              <div style={{ display: "flex", gap: "8px", flexWrap: "wrap" }}>
+              <div className="ed-chips" role="group" aria-label="Filter downloads by category" style={{ margin: 0 }}>
                 {categories.map((cat) => (
                   <button
                     key={cat}
+                    type="button"
+                    className="ed-chip"
                     onClick={() => setSelectedCategory(cat)}
                     aria-pressed={selectedCategory === cat}
-                    style={{ fontFamily: "var(--U)", fontSize: "12.5px", fontWeight: 600, padding: "7px 12px", borderRadius: "2px", cursor: "pointer", border: "1px solid rgba(20,17,12,0.18)", background: selectedCategory === cat ? "var(--charcoal)" : "transparent", color: selectedCategory === cat ? "var(--bone)" : "var(--ink)" }}
                   >
                     {cat === "all" ? "All" : cat}
                   </button>
@@ -192,13 +197,15 @@ export default function Resources() {
               </div>
             )}
             {formats.length > 1 && (
-              <div style={{ display: "flex", gap: "8px", flexWrap: "wrap" }}>
+              <div className="ed-chips" role="group" aria-label="Filter downloads by format" style={{ margin: 0 }}>
                 {formats.map((f) => (
                   <button
                     key={f}
+                    type="button"
+                    className="ed-chip"
                     onClick={() => toggleFormat(f)}
                     aria-pressed={selectedFormats.includes(f)}
-                    style={{ fontFamily: "var(--U)", fontSize: "12.5px", fontWeight: 600, padding: "7px 12px", borderRadius: "2px", cursor: "pointer", border: "1px dashed rgba(20,17,12,0.25)", background: selectedFormats.includes(f) ? "var(--charcoal)" : "transparent", color: selectedFormats.includes(f) ? "var(--bone)" : "var(--ink-muted)" }}
+                    style={{ borderStyle: "dashed" }}
                   >
                     {FORMAT_LABELS[f] || f.toUpperCase()}
                   </button>
@@ -207,13 +214,20 @@ export default function Resources() {
             )}
             {hasActiveFilters && (
               <button
+                type="button"
                 onClick={() => { setSearchTerm(""); setSelectedCategory("all"); setSelectedFormats([]); }}
-                style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontFamily: "var(--U)", fontSize: "12.5px", fontWeight: 600, padding: "7px 12px", borderRadius: "2px", cursor: "pointer", border: "none", background: "transparent", color: "var(--mustard-text)" }}
+                style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, padding: "8px 12px", borderRadius: "var(--radius-sm)", cursor: "pointer", border: "none", background: "transparent", color: "var(--mustard-text)" }}
               >
                 <X size={14} /> Clear filters
               </button>
             )}
           </div>
+
+          {!resourcesQuery.isLoading && resourcesQuery.data && resourcesQuery.data.length > 0 && (
+            <p role="status" style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "0 0 var(--s-2)" }}>
+              {`Showing ${filteredResources.length} of ${resourcesQuery.data.length}`}
+            </p>
+          )}
 
           {resourcesQuery.isLoading ? (
             <div style={{ display: "flex", alignItems: "center", gap: "10px", padding: "var(--s-4) 0", fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted)" }}>
@@ -224,43 +238,51 @@ export default function Resources() {
               {hasActiveFilters ? "Nothing matches those filters." : "Downloadable study guides and worksheets are on the way. The libraries above are open now."}
             </p>
           ) : (
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "var(--s-3)" }}>
+            /* Two columns at 900px and up, one below, divided by hairlines.
+               Each entry stays a plain block with its own Download link to
+               the file (the row itself is not a link). The button is ink with
+               bone text, the pressed-chip pairing, so it inverts correctly in
+               dark mode instead of vanishing into the ground. */
+            <ul className="ed-index ed-index--2" aria-label="Downloads">
               {filteredResources.map((r) => (
-                <div key={r.id} style={{ background: "var(--card)", border: "1px solid rgba(20,17,12,0.08)", overflow: "hidden", display: "flex", flexDirection: "column" }}>
-                  <div style={{ aspectRatio: "3 / 2", overflow: "hidden", borderBottom: "1px solid rgba(20,17,12,0.06)" }}>
-                    <GeneratedCover title={r.title} {...coverThemeFor(`${r.title} ${r.category ?? ""}`)} style={{ width: "100%", height: "100%" }} />
-                  </div>
-                  <div style={{ padding: "var(--s-3)", display: "flex", flexDirection: "column", gap: "10px", flex: 1 }}>
-                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: "10px" }}>
-                    <div style={{ fontFamily: "var(--F)", fontSize: "18px", lineHeight: 1.3, color: "var(--ink)" }}>{r.title}</div>
-                    {r.fileType && (
-                      <span style={{ fontFamily: "var(--M, monospace)", fontSize: "10.5px", letterSpacing: "0.08em", textTransform: "uppercase", color: "var(--ink-muted)", border: "1px solid rgba(20,17,12,0.15)", padding: "2px 6px", whiteSpace: "nowrap" }}>
-                        {FORMAT_LABELS[r.fileType] || r.fileType.toUpperCase()}
-                      </span>
+                <li key={r.id}>
+                  <div style={{ flex: 1, minWidth: 0, display: "flex", flexDirection: "column", gap: "10px", padding: "22px 0 24px" }}>
+                    {/* Category and format share the kicker line, so the title
+                        always gets the full column, even on a phone. */}
+                    {(r.category || r.fileType) && (
+                      <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: "8px 12px" }}>
+                        {r.category ? <span className="ed-kicker" style={{ marginBottom: 0 }}>{r.category}</span> : <span />}
+                        {r.fileType && (
+                          <span style={{ fontFamily: "var(--mono)", fontSize: "12.5px", letterSpacing: "0.06em", textTransform: "uppercase", color: "var(--ink-muted)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", padding: "2px 8px", whiteSpace: "nowrap" }}>
+                            {FORMAT_LABELS[r.fileType] || r.fileType.toUpperCase()}
+                          </span>
+                        )}
+                      </div>
+                    )}
+                    <h3 className="ed-title">{r.title}</h3>
+                    {r.description && (
+                      <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.6, color: "var(--ink-muted)", margin: 0, maxWidth: "62ch" }}>{r.description}</p>
+                    )}
+                    {r.url && (
+                      <a
+                        href={r.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ display: "inline-flex", alignItems: "center", gap: "8px", alignSelf: "flex-start", marginTop: "4px", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--bone)", background: "var(--ink)", borderRadius: "var(--radius-sm)", padding: "10px 16px", textDecoration: "none" }}
+                      >
+                        <Download size={15} aria-hidden /> Download
+                      </a>
                     )}
                   </div>
-                  {r.description && <p style={{ fontFamily: "var(--B)", fontSize: "13.5px", lineHeight: 1.6, color: "var(--ink-muted)", margin: 0, flex: 1 }}>{r.description}</p>}
-                  {r.category && <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--mustard-text)" }}>{r.category}</div>}
-                  {r.url && (
-                    <a
-                      href={r.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      style={{ display: "inline-flex", alignItems: "center", gap: "8px", fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--bone)", background: "var(--charcoal)", padding: "9px 14px", textDecoration: "none", alignSelf: "flex-start" }}
-                    >
-                      <Download size={14} /> Download
-                    </a>
-                  )}
-                  </div>
-                </div>
+                </li>
               ))}
-            </div>
+            </ul>
           )}
         </div>
       </section>
 
       {/* CLOSING */}
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--s-4)", color: "var(--bone)", textAlign: "center" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--s-4)", color: "var(--charcoal-fg)", textAlign: "center" }}>
         <div style={{ maxWidth: "560px", margin: "0 auto" }}>
           <p style={{ fontFamily: "var(--F)", fontSize: "17px", fontStyle: "italic", lineHeight: 1.6, color: "rgba(245,240,230,0.85)", marginBottom: "20px" }}>
             Looking for the writing itself? The essays and the books are the spine of everything here.

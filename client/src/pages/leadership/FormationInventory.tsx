@@ -11,6 +11,7 @@ import { useEffect, useMemo, useState } from "react";
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { writeStoredJSON } from "@/lib/storage";
 
 /* ------------------------------------------------------------------ */
 /* Data                                                                */
@@ -246,12 +247,10 @@ function loadHistory(): RunEntry[] {
   }
 }
 
-function saveHistory(history: RunEntry[]) {
-  try {
-    window.localStorage.setItem(STORAGE_KEY, JSON.stringify(history));
-  } catch {
-    // Storage unavailable. The inventory still works, it just forgets.
-  }
+function saveHistory(history: RunEntry[]): boolean {
+  // Storage unavailable (private mode, full quota) returns false so the
+  // results screen can say so instead of silently forgetting.
+  return writeStoredJSON(STORAGE_KEY, history);
 }
 
 /* ------------------------------------------------------------------ */
@@ -566,6 +565,7 @@ export default function FormationInventory() {
   const [history, setHistory] = useState<RunEntry[]>(() => loadHistory());
   const [previous, setPrevious] = useState<RunEntry | null>(null);
   const [copied, setCopied] = useState(false);
+  const [saveFailed, setSaveFailed] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -583,7 +583,7 @@ export default function FormationInventory() {
     const entry: RunEntry = { date: new Date().toISOString(), scores };
     const next = [...prior, entry];
     setHistory(next);
-    saveHistory(next);
+    setSaveFailed(!saveHistory(next));
     setCopied(false);
     setScreen(RESULTS_SCREEN);
   };
@@ -820,6 +820,11 @@ export default function FormationInventory() {
                     {verdictFor(scores)}
                   </p>
                 </div>
+                {saveFailed && (
+                  <p role="status" style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "10px 0 0" }}>
+                    Couldn't save to this browser — your work here will not survive a reload.
+                  </p>
+                )}
 
                 <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", marginTop: "var(--s-3)" }}>
                   <button onClick={copyResults} aria-live="polite" style={primaryBtn}>{copied ? "Copied" : "Copy results"}</button>

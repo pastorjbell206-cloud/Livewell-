@@ -1,0 +1,13 @@
+{
+  "themes": [
+    { "id": "hard-seasons", "label": "Grief and hard seasons" },
+    { "id": "inner-life", "label": "The inner life" },
+    { "id": "doubt", "label": "Doubt and questions" },
+    { "id": "belief", "label": "What Christians believe" },
+    { "id": "practice", "label": "Prayer, Scripture, and practice" },
+    { "id": "family", "label": "Marriage, family, and friendship" },
+    { "id": "work-money-justice", "label": "Work, money, and justice" },
+    { "id": "church-and-world", "label": "The church and the world" },
+    { "id": "leaders", "label": "For leaders" }
+  ]
+}

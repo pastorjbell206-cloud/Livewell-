@@ -102,6 +102,7 @@ Security headers (HSTS, `X-Frame-Options`, `X-Content-Type-Options`,
 │   └── public/           content-as-data libraries + assets:
 │       ├── leadership/ life/ creeds/ context/ history/ theology/
 │       ├── justice/ nation/ disruption/ prophetic/ plans/ studyguides/
+│       ├── needs/          Find Help registry + care pages (/help, /help/:slug)
 │       ├── books/ ebook/   and llms.txt (for answer engines)
 ├── server/               DEV runtime + business logic, fully typed
 │   ├── _core/  routers.ts  routers/ (lead-magnets, stripe, team-collab)
@@ -223,6 +224,17 @@ classifies older essays — the taxonomy is mid-migration.
 (leadership formation, integrated life, creeds, context guides, church history,
 study guides), with generated manifests (`scripts/build-*-index.mjs`) and CI
 validators (`validate-formation`, `validate-life`) that gate the build.
+
+**Find Help (the Grow section)** — `client/public/needs/` is the needs
+registry: one file per need, either a full care page (`page: true`, rendered
+at `/help/:slug` by `pages/help/CarePage.tsx`) or a starter that lists where
+to begin. `scripts/build-needs-index.mjs` writes the manifest the `/help` front
+door searches; `scripts/validate-needs.mjs` enforces `docs/grow/CARE-PAGE-SPEC.md`
+(word ranges, BSB Scripture verified against the Study Bible's text, live
+links, care rules). Crisis numbers live in one verified file,
+`client/src/data/crisis-resources.json`, rendered by `components/CrisisBlock.tsx`.
+Printables for every care page are built by `scripts/lib/help-printables.mjs`
+inside `pnpm pdfs`. The brief for the whole section is `docs/grow/GROW-PROMPT.md`.
 
 **Design system** — tokens are CSS variables in `index.css`; components
 reference them inline, so brand changes flow from `:root`. Cormorant Garamond +

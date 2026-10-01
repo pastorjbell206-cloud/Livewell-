@@ -15,7 +15,7 @@ import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import LoadFailed from "@/components/LoadFailed";
 import { fetchJson } from "@/lib/fetch-json";
-import { GeneratedCover, coverThemeFor } from "@/components/GeneratedCover";
+import { CardGrid } from "@/components/editorial/CardGrid";
 import { getReadEssays } from "@/lib/readProgress";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
@@ -75,7 +75,7 @@ export default function Pathways() {
       />
 
       {/* HERO */}
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>Topic Pathways</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(34px, 5.4vw, 58px)", fontWeight: 400, lineHeight: 1.04, letterSpacing: "-0.025em", marginBottom: "18px", maxWidth: "18ch" }}>
@@ -100,58 +100,62 @@ export default function Pathways() {
           ) : !items ? (
             <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "var(--ink-muted)" }}>Gathering the routes…</p>
           ) : (
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(380px, 100%), 1fr))", gap: "16px" }}>
-              {items.map((p) => {
-                const prog = progressOf(p);
-                return (
-                <Link
-                  key={p.slug}
-                  href={`/pathways/${p.slug}`}
-                  style={{ display: "flex", gap: "16px", textDecoration: "none", color: "inherit", background: "var(--card)", border: "1px solid rgba(20,17,12,0.08)", borderRadius: "var(--radius-sm)", overflow: "hidden", height: "100%" }}
-                >
-                  <div style={{ width: "104px", flexShrink: 0, alignSelf: "flex-start", aspectRatio: "3 / 4", overflow: "hidden" }}>
-                    <GeneratedCover title={p.title} {...coverThemeFor(`${p.title} ${p.subtitle}`)} style={{ width: "100%", height: "100%" }} />
-                  </div>
-                  <div style={{ display: "flex", flexDirection: "column", flex: 1, minWidth: 0, padding: "var(--s-4) var(--s-4) var(--s-4) 0" }}>
-                    <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "8px" }}>Read · Study · Book</div>
-                    <div style={{ fontFamily: "var(--F)", fontSize: "23px", fontWeight: 500, color: "var(--ink)", lineHeight: 1.18, marginBottom: "10px" }}>{p.title}</div>
-                    <p style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.6, color: "var(--ink-muted)", marginBottom: "12px" }}>{p.subtitle}</p>
-                    <p style={{ fontFamily: "var(--B)", fontSize: "13px", fontStyle: "italic", lineHeight: 1.55, color: "var(--ink-muted)", marginBottom: "14px", flex: 1 }}>{p.forWhom}</p>
-                    {prog && prog.done > 0 && (
-                      <div style={{ marginBottom: "12px" }}>
-                        <div
-                          role="progressbar"
-                          aria-valuenow={prog.pct}
-                          aria-valuemin={0}
-                          aria-valuemax={100}
-                          aria-label={`${prog.done} of ${prog.total} read`}
-                          style={{ height: "4px", background: "var(--border)", borderRadius: "999px", overflow: "hidden", marginBottom: "6px" }}
-                        >
-                          <div style={{ width: `${prog.pct}%`, height: "100%", background: "var(--mustard)" }} />
-                        </div>
-                        <span style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--mustard-text)" }}>
-                          {prog.done === prog.total ? "Finished" : `${prog.done} of ${prog.total} read`}
-                        </span>
-                      </div>
-                    )}
-                    <span style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--ink)", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px", alignSelf: "flex-start" }}>
-                      {prog && prog.done > 0 && prog.done < prog.total
-                        ? "Continue the pathway →"
+            <>
+              <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "0 0 var(--s-2)" }}>
+                {items.length} {items.length === 1 ? "pathway" : "pathways"}
+              </p>
+              {/* Each card: the subtitle as dek, then (in the meta slot) who it
+                  is for and the reader's device-local progress, and one action
+                  that says where the reader stands on this route. */}
+              <CardGrid
+                min={360}
+                label="Topic pathways"
+                items={items.map((p) => {
+                  const prog = progressOf(p);
+                  return {
+                    href: `/pathways/${p.slug}`,
+                    title: p.title,
+                    dek: p.subtitle,
+                    meta: (
+                      <>
+                        {p.forWhom && (
+                          <p style={{ flexBasis: "100%", margin: 0, fontFamily: "var(--B)", fontSize: "15px", fontStyle: "italic", lineHeight: 1.6, color: "var(--ink-muted)" }}>{p.forWhom}</p>
+                        )}
+                        {prog && prog.done > 0 && (
+                          <div style={{ flexBasis: "100%", marginTop: "8px" }}>
+                            <div
+                              role="progressbar"
+                              aria-valuenow={prog.pct}
+                              aria-valuemin={0}
+                              aria-valuemax={100}
+                              aria-label={`${prog.done} of ${prog.total} read`}
+                              style={{ height: "4px", background: "var(--border)", borderRadius: "var(--radius-pill)", overflow: "hidden", marginBottom: "6px" }}
+                            >
+                              <div style={{ width: `${prog.pct}%`, height: "100%", background: "var(--mustard)" }} />
+                            </div>
+                            <span style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--ink)" }}>
+                              {prog.done === prog.total ? "Finished" : `${prog.done} of ${prog.total} read`}
+                            </span>
+                          </div>
+                        )}
+                      </>
+                    ),
+                    cta:
+                      prog && prog.done > 0 && prog.done < prog.total
+                        ? "Continue the pathway"
                         : prog && prog.done === prog.total
-                          ? "Read it again →"
-                          : "Begin the pathway →"}
-                    </span>
-                  </div>
-                </Link>
-                );
-              })}
-            </div>
+                          ? "Read it again"
+                          : "Begin the pathway",
+                  };
+                })}
+              />
+            </>
           )}
         </div>
       </section>
 
       {/* CLOSING */}
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--s-4)", color: "var(--bone)", textAlign: "center" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--s-4)", color: "var(--charcoal-fg)", textAlign: "center" }}>
         <div style={{ maxWidth: "560px", margin: "0 auto" }}>
           <p style={{ fontFamily: "var(--F)", fontSize: "17px", fontStyle: "italic", lineHeight: 1.6, color: "rgba(245,240,230,0.85)", marginBottom: "20px" }}>
             A pathway is a place to start, not a fence. When one ends, the whole library is still open.

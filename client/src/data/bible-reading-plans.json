@@ -1,0 +1,33 @@
+{
+  "note": "Printable Bible reading plans (docs/grow/GROW-PROMPT.md 7.6). The day-by-day readings are computed from the Bible data by scripts/lib/reading-plans.mjs, balanced by verse count, so each day asks about the same time of you.",
+  "plans": [
+    {
+      "id": "psalms-in-30-days",
+      "title": "The Psalms in Thirty Days",
+      "days": 30,
+      "scope": ["psalms"],
+      "blurb": "All one hundred fifty psalms in a month, a few each day. The Bible's own prayer book, read the way it asks to be read: slowly, out loud when you can, and honestly, since the psalms hold back nothing a person can feel."
+    },
+    {
+      "id": "matthew-in-a-month",
+      "title": "A Gospel in a Month: Matthew",
+      "days": 28,
+      "scope": ["matthew"],
+      "blurb": "One chapter a day for four weeks. The birth, the teaching, the miracles, the cross, and the empty tomb, as Matthew tells them, with room to write what you notice about Jesus before you decide what to think of him."
+    },
+    {
+      "id": "new-testament-in-90-days",
+      "title": "The New Testament in Ninety Days",
+      "days": 90,
+      "scope": "NT",
+      "blurb": "The whole New Testament in three months, about three chapters a day. Long enough to hear the story whole, short enough to finish: the Gospels, the church's first years, the letters, and the Revelation."
+    },
+    {
+      "id": "bible-in-a-year",
+      "title": "The Bible in a Year",
+      "days": 365,
+      "scope": "ALL",
+      "blurb": "Every chapter from Genesis to Revelation in order, a portion a day for a year. Miss a day and pick up where you are. The point is not the checkbox; it is a year of letting the whole story read you."
+    }
+  ]
+}

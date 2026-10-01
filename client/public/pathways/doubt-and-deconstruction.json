@@ -1,7 +1,7 @@
 {
   "slug": "doubt-and-deconstruction",
   "title": "When Faith Has Questions",
-  "subtitle": "For the reader taking the faith apart — four essays, a study, and a book.",
+  "subtitle": "For the reader taking the faith apart: four essays, a study, and a book.",
   "forWhom": "For the Christian with real questions and the skeptic who left over them — anyone who would rather have an honest doubt than a dishonest certainty.",
   "movements": [
     {
@@ -45,18 +45,13 @@
     },
     {
       "kind": "book",
-      "heading": "Then read the book, free",
+      "heading": "Then work it through",
       "note": "Born Again From Atheism is the whole account of a man who left unbelief slowly, against his preference, and did not trade it for a god that small. Read it free; buy the ebook if it is worth keeping.",
       "items": [
         {
-          "label": "Born Again From Atheism — read free",
-          "href": "/read/born-again-from-atheism",
-          "blurb": "Twelve chapters, written toward the reader still on the other side. The complete book, free to read."
-        },
-        {
-          "label": "Read a sample and buy the ebook",
-          "href": "/born-again-from-atheism",
-          "blurb": "The book's own page, with a free excerpt and the purchase."
+          "label": "Believe",
+          "href": "/books/believe",
+          "blurb": "The book James wrote from the other side of atheism, for the reader who is not sure belief is possible."
         }
       ]
     }

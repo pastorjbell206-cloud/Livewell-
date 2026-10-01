@@ -1,0 +1,45 @@
+{
+  "slug": "anger",
+  "page": false,
+  "rank": 43,
+  "title": "I can't control my anger",
+  "summary": "Anger that burns hot or runs cold: what Scripture actually says, and what to do with it.",
+  "askedAs": [
+    "anger",
+    "angry all the time",
+    "is anger a sin",
+    "how to control anger",
+    "rage",
+    "temper",
+    "angry at God"
+  ],
+  "states": [
+    "carrying",
+    "helping"
+  ],
+  "sensitivity": "ordinary",
+  "kit": {
+    "read": [
+      {
+        "href": "/life/anger-and-the-hot-heart",
+        "label": "Is Anger a Sin? What Scripture Actually Says",
+        "kind": "Life"
+      },
+      {
+        "href": "/studyguides/anger",
+        "label": "Anger: A Bible Study on Temper and Righteous Anger",
+        "kind": "Study guide"
+      },
+      {
+        "href": "/wisdom/anger",
+        "label": "Anger and Resentment",
+        "kind": "Wisdom"
+      },
+      {
+        "href": "/wisdom/anger-at-god",
+        "label": "Anger at God",
+        "kind": "Wisdom"
+      }
+    ]
+  }
+}

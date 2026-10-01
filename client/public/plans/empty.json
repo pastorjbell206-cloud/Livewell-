@@ -1,0 +1,81 @@
+{
+  "slug": "empty",
+  "title": "Eight Weeks of Small Mercies",
+  "subtitle": "An eight week plan from James Bell for when you feel empty and don't know why. Bread and sleep, one person who knows, a doctor, the Psalms that pray in the dark, and mercy one morning at a time.",
+  "intro": "This is an eight week plan for the person who feels empty, numb, or hopeless and can't say why. Each week holds one focus, one small daily practice, one thing to read, one tool to use, and one honest question. It moves slowly on purpose. It begins where God began with Elijah, with bread and sleep, and then turns to one person who knows, a doctor who can look at the body, the Psalms that pray in the dark, and a hope that doesn't lie to you. Emptiness can grow out of grief, long exhaustion, a dry season with God, or depression, and often out of more than one at once. None of it means your faith has failed, and you don't have to feel anything to begin.\n\nIt isn't a cure, and it isn't a substitute for a doctor, a licensed counselor, a pastor, or real people who can walk with you. I'm a pastor, not a physician, and nothing here is medical advice. If the emptiness has lasted more than two weeks, it deserves a doctor's evaluation, and you don't have to wait for week three to make the call. In a crisis, call or text 988 now, before anything else on this page. Walk the plan imperfectly. A missed week is not failure; you just pick it back up. On some days, eating a meal and going to bed on time will be the whole of your faithfulness, and that counts.",
+  "careNote": "Low mood that lasts more than two weeks, or that changes your sleep, appetite, or ability to work, deserves a doctor's evaluation, and often a licensed counselor too; seeking that help is faithfulness, not failure. In a crisis, call or text 988, and if you're in immediate danger, call 911.",
+  "weeks": [
+    {
+      "n": 1,
+      "focus": "Bread and sleep first",
+      "why": "Start where God started with Elijah. After the fire on Mount Carmel, one threat from Jezebel sent him running into the wilderness, where he sat down under a broom tree and prayed that he might die. God didn't lecture him or hand him a better argument. An angel touched him and said, \"Get up and eat\" (1 Kings 19:5), then let him sleep again, and came back a second time to tell him to eat. A body that hasn't eaten or rested well for weeks will tell the soul that nothing matters, and the soul tends to believe it. This week won't cure a deep emptiness, and it isn't meant to. It gives your body a floor to stand on. If your thoughts have turned toward death the way Elijah's did, call or text 988 or tell someone near you tonight.",
+      "practice": "Each day, eat one real meal, even a small one, and drink a glass of water. Each night, choose a bedtime, put your phone in another room, and let the day end. If you've been sleeping far too much, set one alarm and get up when it rings. That's the whole practice, and on a hard week it's enough.",
+      "read": { "label": "1 Kings 19 in the Study Bible, where God meets Elijah's despair with bread and sleep", "href": "/study/bible/1-kings/19" },
+      "tool": { "label": "I feel empty, and I don't know why: the care page, with the crisis lines and real people to call", "href": "/help/empty" },
+      "reflection": "How have I been eating and sleeping lately, and what might my body be telling me that I haven't wanted to hear?"
+    },
+    {
+      "n": 2,
+      "focus": "Telling one person",
+      "why": "Before Elijah asked to die, he left his servant in Beersheba and went on alone (1 Kings 19:3-4). Emptiness tends to take the same road. It pulls you away from people, and the farther you go, the more the quiet feels like proof that nobody would care. Many of us have built lives in which no one would notice for weeks if we went silent. The Teacher of Ecclesiastes watched a man laboring all alone and concluded that two are better than one: \"if one falls down, his companion can lift him up\" (Ecclesiastes 4:10). You don't need an audience, and you don't need to explain what you can't yet explain. You need one person who knows.",
+      "practice": "Each day, pray by name for one person you could trust, a friend, a spouse, a parent, a pastor. If no name comes to mind, a pastor or your doctor counts. Before the week ends, tell that person the truth in one plain sentence: that you've been feeling empty for a while and don't want to carry it by yourself. If saying it aloud is too hard, send it as a text.",
+      "read": { "label": "How to Handle Loneliness, on why the pull to withdraw only deepens it", "href": "/how-tos/rel-how-to-handle-loneliness" },
+      "tool": { "label": "The Prayer Generator, with prayers to pray before a hard conversation", "href": "/tools/prayer-generator" },
+      "reflection": "Who is one person I could tell the truth to this week, and what am I afraid will happen if I do?"
+    },
+    {
+      "n": 3,
+      "focus": "Letting a doctor look",
+      "why": "Emptiness isn't only a matter of the soul. Some physical illnesses and some medications can bring on this kind of flatness, and depression, a real, common, and treatable medical condition, can drain the color from a life with no reason you can point to. You can't sort that out alone at midnight, and no one is asking you to. Paul called his companion \"Luke, the beloved physician\" (Colossians 4:14), and God's care for bodies has always come through ordinary means, doctors among them. Seeing one takes nothing away from your faith. It lets someone trained look at what you can't see from the inside, and it means you won't have to carry the guessing alone.",
+      "practice": "Each day, write one line about how you slept, whether you ate, how much energy you had, and anything you've stopped enjoying. Before the week ends, call your doctor, or a clinic if you don't have one, and ask to be seen. Bring the page, say plainly how long this has lasted, and if you've had any thoughts of death, tell them that too.",
+      "read": { "label": "What Does the Bible Say About Depression? On why getting help can be an act of faith", "href": "/life/the-heavy-mind" },
+      "tool": { "label": "The Emotional Health Self-Check, fifteen questions on rest, grief, and the inner life, a mirror and not a diagnosis", "href": "/tools/emotional-health" },
+      "reflection": "What have I been telling myself about why I don't need help, and would I say the same thing to a friend who felt this way?"
+    },
+    {
+      "n": 4,
+      "focus": "Praying in the dark",
+      "why": "You don't need the right feelings to pray, and your prayer doesn't need a happy ending. Psalm 88 is the darkest prayer in the Psalter. Heman never turns the corner into praise, and the psalm ends where he is: \"darkness is my closest companion\" (Psalm 88:18). God put that prayer in his people's songbook anyway, and Heman kept bringing it to him every morning (Psalm 88:13). Psalm 42 does something different. The psalmist talks back to his own soul, \"Why are you downcast, O my soul?\" (Psalm 42:5), and tells it to hope before he can feel hope. The church has too often sung the victories and skipped these prayers, and as a pastor I'm inside that failure. Lament is how faith keeps talking to God when it has nothing polished left to say.",
+      "practice": "Each day, read one psalm of lament aloud, slowly: Psalm 88 one day, Psalms 42 and 43 the next, then Psalm 13. Afterward, pray one honest sentence of your own, even if all you can say is that you feel nothing and you're telling God anyway. Five minutes is enough.",
+      "read": { "label": "How to Practice Lament, on the shape the Psalms give an honest complaint", "href": "/how-tos/ss-how-to-practice-lament" },
+      "tool": { "label": "Psalm 88 in the Study Bible, the prayer that ends in the dark, with notes on its setting", "href": "/study/bible/psalms/88" },
+      "reflection": "What have I been too careful, or too tired, to say to God, and what would it sound like to say it plainly?"
+    },
+    {
+      "n": 5,
+      "focus": "Daylight and the next small thing",
+      "why": "Scripture never splits a person into a soul and the vehicle it rides in. God formed man from the dust of the ground and breathed into him, \"and the man became a living being\" (Genesis 2:7), one creature with one life. We tend to live as if we were minds in need of more motivation, when we're creatures who need daylight, movement, and rest. A walk in daylight is a small thing, and it's real help, because what reaches the body reaches the rest of you. Emptiness will also argue you out of the small things that used to tie you to your life, and then use their absence as evidence that nothing matters. Keep a few of them anyway. Feeling often comes back after the doing rather than ahead of it.",
+      "practice": "Each day, get outside in daylight and walk for fifteen minutes, slowly if you need to. If fifteen is too many, walk to the end of the street and back, and count it. Once this week, keep one small appointment with your life, a Sunday service, a call you've been putting off, a meal with someone instead of alone, whether or not you feel like going.",
+      "read": { "label": "How to Keep Going Through Depression, on lowering the bar to the next small thing", "href": "/how-tos/ss-how-to-keep-going-through-depression" },
+      "tool": { "label": "Scripture Memory, learn one short verse by heart, such as Psalm 34:18, to say as you walk", "href": "/tools/scripture-memory" },
+      "reflection": "Which small things have I quietly stopped doing, and which one could I pick back up this week without waiting to feel like it?"
+    },
+    {
+      "n": 6,
+      "focus": "Dryness, depression, or both",
+      "why": "Emptiness comes in more than one kind, and the kinds call for different help. Spiritual dryness tends to center on God: prayer goes flat and he feels far away, while the rest of life keeps some of its color and you still ache for him. Depression tends to flatten everything at once, sleep, appetite, work, people, and God together. The church has known the dry country for a long time. John of the Cross, a sixteenth-century Spanish friar, wrote of a dark night in which God withdraws the felt sweetness of faith so that a person learns to love him and not only the feeling, and he took care to teach that not every dry season is that night. The two can overlap. Don't let the dark night become a reason to skip the doctor, and don't let a diagnosis persuade you that God has left.",
+      "practice": "Each day, write one sentence about where the flatness is: only in prayer, or in nearly everything, sleep and food and work and people too. Keep praying anyway, even if it's only the Lord's Prayer said slowly. At the end of the week, share what you've noticed with a pastor, and with your doctor if you haven't been seen yet or if anything has changed.",
+      "read": { "label": "Not Every Darkness Is a Doctrine Problem, on depression and the dark night of the soul", "href": "/writing/depression-or-the-dark-night" },
+      "tool": { "label": "The Wisdom Finder, type in what the flatness feels like and read what Scripture says to it", "href": "/tools/wisdom-finder" },
+      "reflection": "Is the flatness mostly in my prayers, or has it reached nearly everything, and who have I let look at it with me?"
+    },
+    {
+      "n": 7,
+      "focus": "Hope that does not lie",
+      "why": "Some of the best-loved words about hope in the Bible were written in the ruins of Jerusalem after Babylon burned it. The poet of Lamentations admits that his strength and his hope from the LORD have perished (Lamentations 3:18), and three verses later he writes, \"Yet I call this to mind, and therefore I have hope\" (Lamentations 3:21). Nothing around him had changed. Much of the advice we hand empty people, inside the church and out, assumes meaning is something you produce, so that feeling empty means you've failed to produce it. This poet didn't manufacture his hope. He remembered who God had been when he couldn't feel who God was, and the mercy he found was sized to one day: \"They are new every morning\" (Lamentations 3:23). A hope like that won't lie to you, because it never promises more than God has promised.",
+      "practice": "Each morning, read Lamentations 3:19-24 slowly, aloud if you can. Then write down one mercy from the day before, however small: a meal you tasted, a message that came, a few hours of sleep, a moment that was lighter than the rest. One line is enough. Keep the pages, because on the hard mornings you'll need something to call to mind.",
+      "read": { "label": "How to Find Hope When Nothing Changes, on the difference between hope and optimism", "href": "/how-tos/ss-how-to-find-hope-when-nothing-changes" },
+      "tool": { "label": "Lamentations 3 in the Study Bible, the whole poem, the ruins and the mercies both", "href": "/study/bible/lamentations/3" },
+      "reflection": "What do I know about God's faithfulness that I could call to mind on a morning when I can't feel any of it?"
+    },
+    {
+      "n": 8,
+      "focus": "A rule of small mercies",
+      "why": "Eight weeks of practices mean little if they end at week eight. A rule of life is an old name in the church for a few chosen practices that hold a life steady over years, the way a trellis holds up a vine. After an empty season the rule should be small on purpose, small enough to keep on your worst week. Look back at how God kept Elijah. He sent bread and sleep, then \"a still, small voice\" at Horeb (1 Kings 19:12), then a companion, Elisha, who followed him and served him (1 Kings 19:19-21). There was no program, only mercies given one day at a time. Keep the few that carried you.",
+      "practice": "Write on a card the two or three practices from these weeks that actually helped, with when and where you'll keep them. Do them each day. Show the card to one person and ask them to check on you in a month. If the emptiness is still heavy, keep your appointments too; a rule of life works alongside a doctor and a counselor, not in place of them.",
+      "read": { "label": "How to Build a Rule of Life, on the trellis that holds a life up while it grows", "href": "/how-tos/sf-how-to-build-a-rule-of-life" },
+      "tool": { "label": "The Rule of Life Builder, choose a few rhythms like a bedtime, a daily walk, and one friend who knows the truth about you", "href": "/tools/rule-of-life" },
+      "reflection": "Which small mercies from these weeks do I want to keep for good, and who will I ask to help me keep them?"
+    }
+  ]
+}

@@ -5,11 +5,11 @@ import CrisisFaq, { faqPageSchema } from "@/components/CrisisFaq";
 import { LandingSignup } from "@/components/LandingSignup";
 
 const ARTICLES = [
-  { title: "When Fear Rewrites Theology", slug: "when-fear-rewrites-theology" },
-  { title: "When God Doesn't Make Sense", slug: "when-god-doesnt-make-sense" },
-  { title: "What If We're Wrong?", slug: "what-if-we-are-wrong" },
-  { title: "The Dark Night of the Soul When God Feels Absent", slug: "dark-night-god-feels-absent" },
-  { title: "Constantine's Bargain", slug: "constantines-bargain" },
+  { title: "When Fear Starts Rewriting What You Believe", slug: "when-fear-rewrites-theology" },
+  { title: "When God Stops Making Sense", slug: "when-god-doesnt-make-sense" },
+  { title: "What If Christianity Is Wrong?", slug: "what-if-we-are-wrong" },
+  { title: "What to Do When God Feels Absent", slug: "dark-night-god-feels-absent" },
+  { title: "What You're Really Leaving When You Leave the Faith", slug: "constantines-bargain" },
 ];
 
 const FAQ_ITEMS = [

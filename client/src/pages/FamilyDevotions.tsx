@@ -10,6 +10,7 @@ import { ChevronDown } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { GeneratedCover } from "@/components/GeneratedCover";
+import ScriptureNote from "@/components/ScriptureNote";
 
 interface Weekly {
   id: string; title: string; theme: string; passage: string; passageText: string;
@@ -88,7 +89,7 @@ export default function FamilyDevotions() {
         url="https://www.livewellbyjamesbell.co/family/devotions"
       />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
             <Link href="/family" style={{ color: "inherit" }}>Family</Link> · Devotions
@@ -118,7 +119,7 @@ export default function FamilyDevotions() {
       <section style={{ background: "var(--bone)", padding: "var(--s-4) var(--s-4) var(--s-7)" }}>
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto", display: "flex", flexDirection: "column", gap: "10px" }}>
           {list.length === 0 && (
-            <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }}>Loading…</p>
+            <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }} role="status">Loading…</p>
           )}
           {tab === "weekly" && weekly.map((d, i) => (
             <Accordion key={d.id} id={d.id} eyebrow={`Week ${i + 1} · ${d.theme}`} title={d.title}>
@@ -133,6 +134,17 @@ export default function FamilyDevotions() {
               <Prayer text={d.prayer} />
             </Accordion>
           ))}
+          {/* The seasonal devotions retell each passage in plain words for
+              children; the weekly ones quote a translation that has not been
+              checked word for word. Say which. */}
+          <ScriptureNote rendering={tab === "weekly" ? "unverified" : "paraphrase"} />
+          {(tab === "advent" || tab === "holyWeek") && (
+            <p style={{ fontFamily: "var(--U)", fontSize: "15px", lineHeight: 1.6, color: "var(--ink)", margin: "0 0 var(--s-3)" }}>
+              Print the whole {tab === "advent" ? "Advent" : "Holy Week"} booklet, one day to a page, with each passage in full from the Berean Standard Bible:{" "}
+              <a href={`/downloads/seasonal/${tab === "advent" ? "advent" : "holy-week"}-family-letter.pdf`} style={{ color: "var(--mustard-text)", fontWeight: 600 }}>US Letter</a>{" · "}
+              <a href={`/downloads/seasonal/${tab === "advent" ? "advent" : "holy-week"}-family-a4.pdf`} style={{ color: "var(--mustard-text)", fontWeight: 600 }}>A4</a>
+            </p>
+          )}
           {(tab === "advent" || tab === "holyWeek") && (list as Daily[]).map((d) => (
             <Accordion key={`${tab}-${d.day}`} id={`${tab}-${d.day}`} eyebrow={d.label} title={d.title}>
               <Verse passage={d.passage} text={d.passageText} />

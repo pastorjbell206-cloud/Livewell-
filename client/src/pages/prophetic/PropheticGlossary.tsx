@@ -63,7 +63,7 @@ export default function PropheticGlossary({ config }: { config: SectionConfig })
 
       <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-7)" }}>
         <div style={wrap}>
-          {terms.length === 0 && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }}>Loading…</p>}
+          {terms.length === 0 && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }} role="status">Loading…</p>}
           {groups.map(([letter, items]) => (
             <div key={letter} style={{ marginBottom: "var(--s-5)" }}>
               <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 400, color: "var(--mustard-text)", marginBottom: "var(--s-3)", paddingBottom: "6px", borderBottom: "2px solid var(--mustard)" }}>{letter}</h2>

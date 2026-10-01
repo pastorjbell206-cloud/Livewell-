@@ -1,13 +1,13 @@
 /**
  * Home — mission-forward landing page.
  *
- * The homepage leads with the founder's headline and four mission doors —
- * Become a Disciple, Make Disciples, Leadership Training, Prophetic Justice —
- * so a visitor is routed by what they came for, not by the political/cultural
- * essay arcs (those live under Writing and the nav, not the front page). Below
- * the doors: the latest essays, the segmented signup (the conversion surface),
- * and the five pillars as the deeper taxonomy spine.
+ * The homepage leads with the founder's headline and the doors (DOORS below,
+ * rendered as a CardGrid), so a visitor is routed by what they came for, not
+ * by the political/cultural essay arcs (those live under Writing and the nav,
+ * not the front page). Below the doors: the flagship essays, the segmented
+ * signup (the conversion surface), and the section hubs.
  */
+import { useState } from "react";
 import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
 import { SKEPTIC_TRACK_LIVE } from "@/lib/skepticTrack";
@@ -18,9 +18,13 @@ import MinimalNav from "@/components/MinimalNav";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { SegmentedSignup } from "@/components/SegmentedSignup";
 import { SEOMeta, getOrganizationSchema, getWebSiteSchema } from "@/components/SEOMeta";
-import { TrackChip } from "@/components/TrackChip";
+import { EditorialIndex } from "@/components/editorial/EditorialIndex";
+import { CardGrid } from "@/components/editorial/CardGrid";
+import { LoadFailed } from "@/components/LoadFailed";
 import { trpc } from "@/lib/trpc";
 import { isFullEssay } from "@/lib/essayQuality";
+import { getReadEssays } from "@/lib/readProgress";
+import { essaySubjectLabel } from "@/lib/essayLabel";
 import FollowJames from "@/components/FollowJames";
 import AnnouncementBar from "@/components/AnnouncementBar";
 import PersistentHelpTab from "@/components/PersistentHelpTab";
@@ -138,7 +142,12 @@ const FLAGSHIP_SLUGS = [
   "why-there-are-so-many-christian-denominations",
 ];
 
+// One placeholder line in the loading rows below (kicker, title, dek, meta).
+const skeletonLine = { background: "var(--bone-warm)", borderRadius: "var(--radius-sm)" } as const;
+
 export default function Home() {
+  // The reader's device-local memory of finished essays (lib/readProgress).
+  const [readSlugs] = useState<Set<string>>(() => getReadEssays());
   const articlesQuery = trpc.posts.listPublished.useQuery();
   const all = articlesQuery.data ?? [];
 
@@ -491,78 +500,18 @@ export default function Home() {
           <PullQuote>
             Connecting the depth of theology to the weight of everyday life.
           </PullQuote>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
-              gap: "24px",
-            }}
-          >
-            {DOORS.filter(door => SKEPTIC_TRACK_LIVE || door.href !== "/skeptic-track").map(door => (
-              <Link key={door.href} href={door.href} style={{ textDecoration: "none" }}>
-                <article
-                  style={{
-                    padding: "var(--s-4)",
-                    background: "var(--card)",
-                    border: "1px solid var(--border)",
-                    borderLeft: "2px solid var(--mustard)",
-                    borderRadius: "var(--radius-sm)",
-                    height: "100%",
-                    display: "flex",
-                    flexDirection: "column",
-                    transition: "all 0.2s",
-                    cursor: "pointer",
-                  }}
-                  onMouseEnter={e => {
-                    e.currentTarget.style.background = "var(--bone-warm)";
-                  }}
-                  onMouseLeave={e => {
-                    e.currentTarget.style.background = "var(--card)";
-                  }}
-                >
-                  <h3
-                    style={{
-                      fontFamily: "var(--F)",
-                      fontSize: "26px",
-                      fontWeight: 500,
-                      letterSpacing: "-0.01em",
-                      color: "var(--ink)",
-                      marginBottom: "12px",
-                    }}
-                  >
-                    {door.title}
-                  </h3>
-                  <p
-                    style={{
-                      fontFamily: "var(--B)",
-                      fontSize: "15px",
-                      lineHeight: 1.65,
-                      color: "var(--ink-muted)",
-                      marginBottom: "20px",
-                      flex: 1,
-                    }}
-                  >
-                    {door.blurb}
-                  </p>
-                  <span
-                    style={{
-                      fontFamily: "var(--U)",
-                      fontSize: "12px",
-                      fontWeight: 600,
-                      letterSpacing: "0.12em",
-                      textTransform: "uppercase",
-                      color: "var(--ink)",
-                      borderBottom: "1px solid var(--mustard)",
-                      paddingBottom: "2px",
-                      alignSelf: "flex-start",
-                    }}
-                  >
-                    {door.cta} →
-                  </span>
-                </article>
-              </Link>
-            ))}
-          </div>
+          {/* Doors are the one place on the page that earns boxes: short, lifted,
+              each naming its own action. Never narrower than 340px, so three
+              across at most. */}
+          <CardGrid
+            min={340}
+            items={DOORS.filter(door => SKEPTIC_TRACK_LIVE || door.href !== "/skeptic-track").map(door => ({
+              href: door.href,
+              title: door.title,
+              dek: door.blurb,
+              cta: door.cta,
+            }))}
+          />
         </div>
       </section>
 
@@ -688,93 +637,43 @@ export default function Home() {
             </Link>
           </div>
 
+          {/* Loading: the same hairline rows the index will fill, so nothing
+              jumps when the essays arrive. */}
           {articlesQuery.isLoading && (
-            <div
-              role="status"
-              aria-label="Loading the essays"
-              style={{
-                display: "grid",
-                gridTemplateColumns: "repeat(auto-fill, minmax(min(300px, 100%), 1fr))",
-                gap: "24px",
-              }}
-            >
-              {Array.from({ length: 3 }, (_, i) => (
-                <div
-                  key={i}
-                  className="animate-pulse"
-                  style={{
-                    background: "var(--bone)",
-                    borderRadius: "var(--radius-sm)",
-                    height: "200px",
-                  }}
-                />
-              ))}
+            <div role="status" aria-label="Loading the essays">
+              <ul className="ed-index ed-index--2" aria-hidden>
+                {Array.from({ length: 6 }, (_, i) => (
+                  <li key={i}>
+                    <div className="animate-pulse" style={{ flex: 1, padding: "22px 0 24px" }}>
+                      <div style={{ ...skeletonLine, width: "28%", height: "12px" }} />
+                      <div style={{ ...skeletonLine, width: "80%", height: "26px", marginTop: "14px" }} />
+                      <div style={{ ...skeletonLine, width: "96%", height: "14px", marginTop: "16px" }} />
+                      <div style={{ ...skeletonLine, width: "92%", height: "14px", marginTop: "12px" }} />
+                      <div style={{ ...skeletonLine, width: "64%", height: "14px", marginTop: "12px" }} />
+                      <div style={{ ...skeletonLine, width: "20%", height: "12px", marginTop: "18px" }} />
+                    </div>
+                  </li>
+                ))}
+              </ul>
             </div>
           )}
 
+          {articlesQuery.isError && (
+            <LoadFailed what="The essays" onRetry={() => void articlesQuery.refetch()} />
+          )}
+
           {flagship.length > 0 && (
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "repeat(auto-fill, minmax(min(300px, 100%), 1fr))",
-                gap: "24px",
-              }}
-            >
-              {flagship.map(a => (
-                <Link
-                  key={a.id}
-                  href={`/writing/${a.slug}`}
-                  style={{ textDecoration: "none", color: "inherit" }}
-                >
-                  <article
-                    style={{
-                      background: "var(--card)",
-                      padding: "var(--s-4)",
-                      border: "1px solid var(--border)",
-                      borderRadius: "var(--radius-sm)",
-                      height: "100%",
-                      display: "flex",
-                      flexDirection: "column",
-                      cursor: "pointer",
-                      transition: "all 0.2s",
-                    }}
-                    onMouseEnter={e => {
-                      e.currentTarget.style.borderColor = "var(--mustard)";
-                    }}
-                    onMouseLeave={e => {
-                      e.currentTarget.style.borderColor = "var(--border)";
-                    }}
-                  >
-                    <div style={{ marginBottom: "12px" }}>
-                      <TrackChip pillarOrTrack={a.pillar} slug={a.slug} asLink={false} />
-                    </div>
-                    <h3
-                      style={{
-                        fontFamily: "var(--F)",
-                        fontSize: "22px",
-                        fontWeight: 500,
-                        letterSpacing: "-0.005em",
-                        lineHeight: 1.25,
-                        color: "var(--ink)",
-                        marginBottom: "12px",
-                        flex: 1,
-                      }}
-                    >
-                      {a.title}
-                    </h3>
-                    <div
-                      style={{
-                        fontFamily: "var(--U)",
-                        fontSize: "12px",
-                        color: "var(--ink-muted)",
-                      }}
-                    >
-                      {a.readingTimeMinutes ?? 5} min read
-                    </div>
-                  </article>
-                </Link>
-              ))}
-            </div>
+            <EditorialIndex
+              label="Start with these"
+              items={flagship.map(a => ({
+                href: `/writing/${a.slug}`,
+                title: a.title,
+                dek: a.excerpt,
+                kicker: essaySubjectLabel(a),
+                read: readSlugs.has(a.slug),
+                meta: `${a.readingTimeMinutes ?? 5} min read`,
+              }))}
+            />
           )}
         </div>
       </section>
@@ -824,58 +723,12 @@ export default function Home() {
           >
             The pillars. One argument.
           </h2>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
-              gap: "16px",
-            }}
-          >
-            {PILLARS.map(pillar => (
-              <Link key={pillar.href} href={pillar.href} style={{ textDecoration: "none" }}>
-                <div
-                  style={{
-                    padding: "20px",
-                    background: "var(--card)",
-                    border: "1px solid var(--border)",
-                    borderRadius: "var(--radius-sm)",
-                    height: "100%",
-                    transition: "all 0.2s",
-                    cursor: "pointer",
-                  }}
-                  onMouseEnter={e => {
-                    e.currentTarget.style.borderColor = "var(--mustard)";
-                  }}
-                  onMouseLeave={e => {
-                    e.currentTarget.style.borderColor = "var(--border)";
-                  }}
-                >
-                  <h3
-                    style={{
-                      fontFamily: "var(--F)",
-                      fontSize: "20px",
-                      fontWeight: 500,
-                      letterSpacing: "-0.005em",
-                      color: "var(--ink)",
-                      marginBottom: "8px",
-                    }}
-                  >
-                    {pillar.name}
-                  </h3>
-                  <p
-                    style={{
-                      fontFamily: "var(--B)",
-                      fontSize: "13px",
-                      lineHeight: 1.6,
-                      color: "var(--ink-muted)",
-                    }}
-                  >
-                    {pillar.blurb}
-                  </p>
-                </div>
-              </Link>
-            ))}
-          </div>
+          {/* An index, not a row of boxes: the doors above are the page's
+              lifted set; the pillars read as the parts of one argument. */}
+          <EditorialIndex
+            label="The pillars"
+            items={PILLARS.map(pillar => ({ href: pillar.href, title: pillar.name, dek: pillar.blurb }))}
+          />
         </div>
       </section>
       </main>

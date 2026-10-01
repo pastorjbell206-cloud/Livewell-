@@ -6,7 +6,7 @@ import { LandingSignup } from "@/components/LandingSignup";
 
 const TIER_1_ARTICLES = [
   { title: "The Rise and Fall of Christendom", href: "/writing/christendom-is-ending" },
-  { title: "Constantine's Bargain", href: "/writing/constantines-bargain" },
+  { title: "What You're Really Leaving When You Leave the Faith", href: "/writing/constantines-bargain" },
   { title: "When the Church Married Empire", href: "/theology/history/the-constantinian-turn" },
   { title: "The Great Schism", href: "/theology/history/the-east-west-schism" },
   { title: "The Reformation and Its Consequences", href: "/theology/history/the-reformation" },
@@ -21,8 +21,8 @@ const TIER_2_ARTICLES = [
   { title: "The Catholic Intellectual Tradition", href: "/theology/history/the-medieval-west" },
   { title: "The Orthodox Way", href: "/theology/history/the-church-that-outlived-rome" },
   { title: "The Mainline Protestant Collapse", href: "/writing/the-numbers-behind-the-decline" },
-  { title: "The Evangelical Movement", href: "/theology/history/the-awakenings" },
-  { title: "The Pentecostal Explosion", href: "/theology/history/the-global-church" },
+  { title: "The Missionary Century", href: "/theology/history/the-missionary-century" },
+  { title: "The Attractional Era", href: "/theology/history/the-attractional-era" },
   { title: "The Black Church Tradition", href: "/writing/black-church-prophetic-justice" },
   { title: "Christianity in the Global South", href: "/theology/history/the-global-church" },
 ];

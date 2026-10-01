@@ -1,0 +1,43 @@
+{
+  "slug": "new-believer",
+  "page": false,
+  "rank": 45,
+  "title": "I'm new to faith. What now?",
+  "summary": "Nobody expects you to know the words yet. How to begin, one small step at a time.",
+  "askedAs": [
+    "new Christian",
+    "just became a Christian",
+    "what do I do now",
+    "new believer",
+    "baptism",
+    "how to follow Jesus"
+  ],
+  "states": [
+    "grow"
+  ],
+  "sensitivity": "ordinary",
+  "kit": {
+    "read": [
+      {
+        "href": "/plans/new-believer",
+        "label": "Eight Weeks of Beginnings",
+        "kind": "Plan"
+      },
+      {
+        "href": "/studyguides/new-believer",
+        "label": "New Believers: A Study on Your First Steps of Faith",
+        "kind": "Study guide"
+      },
+      {
+        "href": "/life/discipleship-following-jesus",
+        "label": "What Does It Mean to Be a Disciple of Jesus?",
+        "kind": "Life"
+      },
+      {
+        "href": "/pathways",
+        "label": "The discipleship pathways",
+        "kind": "Page"
+      }
+    ]
+  }
+}

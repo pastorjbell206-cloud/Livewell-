@@ -9,6 +9,7 @@
  * nothing is sent anywhere.
  */
 import { useEffect, useMemo, useState } from "react";
+import { scrollBehavior } from "@/lib/motion";
 import { Link, useRoute } from "wouter";
 import Layout from "@/components/Layout";
 import LoadFailed from "@/components/LoadFailed";
@@ -176,7 +177,7 @@ export default function ProfileSurvey() {
               </div>
             ))}
 
-            <button disabled={answered < total} onClick={() => { setSubmitted(true); window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" }); }}
+            <button disabled={answered < total} onClick={() => { setSubmitted(true); window.scrollTo({ top: document.body.scrollHeight, behavior: scrollBehavior() }); }}
               style={{ marginTop: "var(--s-3)", fontFamily: "var(--U)", fontWeight: 600, fontSize: "15px", padding: "12px 22px", background: answered < total ? "var(--border)" : "var(--mustard)", color: answered < total ? "var(--ink-muted)" : "var(--charcoal)", border: "none", borderRadius: "var(--radius-sm)", cursor: answered < total ? "not-allowed" : "pointer" }}>
               {answered < total ? `Answer all ${total} (${answered} done)` : "See the profile"}
             </button>

@@ -21,6 +21,7 @@ import ScriptureNote, { type ScriptureRendering } from "./ScriptureNote";
 
 const ALL: ScriptureRendering[] = [
   "esv",
+  "bsb",
   "kjv",
   "niv",
   "nasb",
@@ -35,6 +36,11 @@ describe("ScriptureNote", () => {
     expect(
       screen.getByText(/English Standard Version/i)
     ).toBeInTheDocument();
+  });
+
+  it("names the Berean Standard Bible in full for the Grow section's text", () => {
+    render(<ScriptureNote rendering="bsb" />);
+    expect(screen.getByText(/Berean Standard Bible/i)).toBeInTheDocument();
   });
 
   it("offers a paraphrase as a paraphrase, and never as a quotation", () => {

@@ -1,0 +1,49 @@
+{
+  "slug": "curious",
+  "page": false,
+  "rank": 32,
+  "title": "I don't believe, but I'm curious",
+  "summary": "Written by a pastor who was an atheist first. No tricks, no ambush, no altar call.",
+  "askedAs": [
+    "what do Christians believe",
+    "is Christianity true",
+    "evidence for Jesus",
+    "curious about Christianity",
+    "atheist",
+    "skeptic",
+    "did Jesus rise from the dead"
+  ],
+  "states": [
+    "grow"
+  ],
+  "sensitivity": "ordinary",
+  "kit": {
+    "read": [
+      {
+        "href": "/post-christian",
+        "label": "Faith examined from outside the church",
+        "kind": "Page"
+      },
+      {
+        "href": "/plans/skeptic",
+        "label": "Eight Weeks of Reading Like an Adult",
+        "kind": "Plan"
+      },
+      {
+        "href": "/studyguides/skeptic",
+        "label": "Questions Skeptics Ask: A Study for Doubters",
+        "kind": "Study guide"
+      },
+      {
+        "href": "/tools/test-the-case",
+        "label": "Test the Case: Push Back at Every Step",
+        "kind": "Tool"
+      },
+      {
+        "href": "/theology/questions",
+        "label": "The hardest questions, not dodged",
+        "kind": "Page"
+      }
+    ]
+  }
+}

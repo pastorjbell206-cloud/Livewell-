@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import { scrollBehavior } from "@/lib/motion";
 import { SEOMeta } from "@/components/SEOMeta";
 import ScriptureNote from "@/components/ScriptureNote";
 import { Link } from "wouter";
@@ -798,7 +799,7 @@ const CONFLICT_TYPES: ConflictType[] = [
     ],
     relatedArticles: [
       { title: "Read essays on trust and faithfulness", href: "/writing?track=marriage" },
-      { title: "Take the Marriage Health Assessment", href: "/tools/marriage-assessment" },
+      { title: "Take the Marriage Health Self-Check", href: "/tools/marriage-assessment" },
     ],
   },
 ];
@@ -814,27 +815,27 @@ export default function ConflictGuide() {
   const handleSelectType = (id: string) => {
     setSelectedType(id);
     setCurrentStep(0);
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: scrollBehavior() });
   };
 
   const handleBack = () => {
     if (currentStep > 0) {
       setCurrentStep((prev) => prev - 1);
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      window.scrollTo({ top: 0, behavior: scrollBehavior() });
     }
   };
 
   const handleNext = () => {
     if (conflict && currentStep < conflict.steps.length - 1) {
       setCurrentStep((prev) => prev + 1);
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      window.scrollTo({ top: 0, behavior: scrollBehavior() });
     }
   };
 
   const handleReset = () => {
     setSelectedType(null);
     setCurrentStep(0);
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: scrollBehavior() });
   };
 
   const step = conflict?.steps[currentStep];

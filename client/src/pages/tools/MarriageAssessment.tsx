@@ -1,17 +1,42 @@
 import Layout from "@/components/Layout";
+import { scrollBehavior } from "@/lib/motion";
 import { SEOMeta } from "@/components/SEOMeta";
 import { ToolActions } from "@/components/ToolActions";
-import { useState, useRef } from "react";
+import { useState, useRef, type CSSProperties } from "react";
 import { Link } from "wouter";
 import { ArrowLeft, ArrowRight, ChevronRight, Printer } from "lucide-react";
 import { EmailResults } from "@/components/EmailResults";
+import { Markdown } from "@/components/Markdown";
 import { readStoredJSON, removeStoredJSON, writeStoredJSON } from "@/lib/storage";
+import { SafetyCheck } from "@/components/SafetyCheck";
+import { SelfCheckHistory } from "@/components/SelfCheckHistory";
 
 /* ── Types ─────────────────────────────────────────────────────── */
 
 interface Question {
   id: number;
   text: string;
+}
+
+/** The levels getScoreLevel computes for one area. */
+type Level = "high" | "mid" | "low";
+
+/** A specific live page from the Grow registry (never a generic library link). */
+interface NextLink {
+  label: string;
+  href: string;
+  /** Who the page is for, when that matters (safety first, or fit). */
+  note?: string;
+}
+
+/** What one area's result means at one level, and what to do about it. */
+interface AreaBand {
+  /** 80 to 150 words, specific to this area at this level. Markdown: *italics* only. */
+  interpretation: string;
+  /** Two or three concrete steps. */
+  steps: string[];
+  /** Two or three pages that fit this area at this level. */
+  links: NextLink[];
 }
 
 interface Category {
@@ -22,8 +47,21 @@ interface Category {
    *  that links to the full text — not an embedded quotation. */
   scripture: { ref: string };
   questions: Question[];
-  recommendations: Record<string, string[]>;
-  articleLink: { title: string; href: string };
+  /** One interpretation, set of steps, and set of links per level. */
+  bands: Record<Level, AreaBand>;
+}
+
+/** One overall result band (thresholds live in getOverallLabel). */
+interface OverallBand {
+  label: string;
+  color: string;
+  /** 150 to 300 words: what it usually means, what it does not, why people
+   *  land here, and what to do first. Paragraphs split on a blank line. */
+  description: string;
+  /** The lead-in to the eight-week plan, fitted to this band. */
+  planLead: string;
+  /** Where to start: safety first wherever it applies. */
+  next: NextLink[];
 }
 
 /* ── Data ──────────────────────────────────────────────────────── */
@@ -36,13 +74,21 @@ const RATING_LABELS = [
   "Strongly Agree",
 ];
 
+const LEVEL_LABEL: Record<Level, string> = {
+  high: "Strength",
+  mid: "Growing",
+  low: "Needs Attention",
+};
+
+/* Every href below is a literal so scripts/validate-grow-links.mjs can check
+   it against the route table and the library manifests. */
 const CATEGORIES: Category[] = [
   {
     name: "Communication",
     slug: "communication",
     scripture: { ref: "James 1:19" },
     description:
-      "How well you and your spouse actually hear each other -- not just the words, but what lives beneath them.",
+      "How well you and your spouse actually hear each other: not just the words, but what lives beneath them.",
     questions: [
       {
         id: 1,
@@ -54,29 +100,49 @@ const CATEGORIES: Category[] = [
       },
       {
         id: 3,
-        text: "I regularly share my fears, hopes, and emotional state with my spouse -- not just logistics and schedules.",
+        text: "I regularly share my fears, hopes, and emotional state with my spouse, not just logistics and schedules.",
       },
     ],
-    recommendations: {
-      low: [
-        "Set aside 15 minutes each evening with no screens. Not to solve anything -- just to ask, 'What was the hardest part of your day?' and listen without responding.",
-        "When conflict arises, practice the phrase: 'Help me understand what you mean by that.' It slows the conversation enough to prevent the damage speed causes.",
-        "Consider whether you have substituted information exchange for actual communication. Knowing your spouse's schedule is not the same as knowing their heart.",
-      ],
-      mid: [
-        "You have a foundation. Build on it by moving past safe topics. Ask each other: 'What are you afraid to tell me?' -- and mean it.",
-        "Notice when you interrupt. Not to correct yourself publicly, but to recognize the habit. Interruption communicates that your response matters more than their sentence.",
-        "Read a book together on communication in marriage -- not as homework, but as shared language. Gary Chapman's work on love languages remains a useful starting point.",
-      ],
-      high: [
-        "Protect what you have built. The couples who communicate well often stop noticing the effort it takes. Keep being intentional.",
-        "Use your communication strength to mentor another couple. What comes naturally to you may save someone else's marriage.",
-        "Go deeper. Move from 'we talk well' to 'we talk about the things that terrify us.' A marriage that can say the frightening things out loud is on different ground from one that only talks well.",
-      ],
-    },
-    articleLink: {
-      title: "Read more on marriage and communication",
-      href: "/writing?track=marriage",
+    bands: {
+      low: {
+        interpretation:
+          "Talking with your spouse has become hard in the ways that matter most. Maybe you don't feel heard, or disagreements turn into attacks on who you are, or the two of you trade schedules and never what you fear or hope. If disagreeing with your spouse leaves you afraid of what they'll do, that isn't a communication problem to solve with better technique, so start with the marriage help page below. For couples who are safe with each other, this usually happens slowly, as painful conversations teach both people to stop trying, and it rarely means either of you has nothing left to say. The way back begins with listening, which is slower and harder than talking.",
+        steps: [
+          "Set aside fifteen minutes this evening with the phones in another room. Ask what the hardest part of your spouse's day was, and listen without fixing, defending, or correcting.",
+          "When a conversation starts to heat up, slow it down with one sentence, *Help me understand what you mean*, and say back what you heard before you answer.",
+        ],
+        links: [
+          { label: "My marriage is falling apart", href: "/help/marriage", note: "Start here if you're afraid of your spouse" },
+          { label: "Talking with Your Spouse", href: "/wisdom/marriage-communication" },
+          { label: "How to Have a Weekly Marriage Check-In", href: "/how-tos/marriage-how-to-weekly-check-in" },
+        ],
+      },
+      mid: {
+        interpretation:
+          "Communication sits in the middle for you. You talk, some of it lands and some doesn't, and there are likely subjects the two of you have learned to step around. The basics are in place: on ordinary things, you can usually hear each other. What tends to go missing is the harder material, the fears, disappointments, and hopes that never come up because the day is full and raising them feels risky. At this stage it's easy to get good at hearing each other's news while missing each other's hearts. The next step is to go a little past the safe topics, gently and on purpose, and to listen longer than feels natural.",
+        steps: [
+          "Once this week, ask your spouse, *What's something you've wanted to tell me but haven't?* Then listen to the end without defending yourself.",
+          "Catch yourself interrupting. You don't need to announce it; stop, let your spouse finish, and answer what they actually said.",
+          "Start a short weekly check-in about the marriage itself: what went well between you, what hurt, and what each of you needs next week.",
+        ],
+        links: [
+          { label: "How to Have a Weekly Marriage Check-In", href: "/how-tos/marriage-how-to-weekly-check-in" },
+          { label: "Talking with Your Spouse", href: "/wisdom/marriage-communication" },
+        ],
+      },
+      high: {
+        interpretation:
+          "Communication is a strength in your marriage. Your answers suggest you can disagree without attacking each other's character, and that you share more with each other than logistics. That comes from years of small decisions to listen when it was inconvenient, and it's a real gift. The danger at this level isn't collapse but complacency: couples who talk well can stop noticing the effort it takes and start assuming they already know what the other thinks. A strength like this is meant to be used. It gives you room to raise what scares you, the money question, the quiet disappointment, the trouble with family, knowing the marriage can bear the weight.",
+        steps: [
+          "Name one conversation you've both been avoiding and set a time for it this month. The trust you've built is what makes the hard subject safe to raise.",
+          "Keep asking questions you think you know the answers to. People change, and a good listener keeps up.",
+          "Consider walking a younger couple through a study on marriage. What comes naturally to you may be something they've never seen.",
+        ],
+        links: [
+          { label: "How to Have the Money Conversation Without a War", href: "/how-tos/marriage-how-to-money-conversation" },
+          { label: "Marriage: A Bible Study on Covenant Love", href: "/studyguides/marriage" },
+        ],
+      },
     },
   },
   {
@@ -92,33 +158,53 @@ const CATEGORIES: Category[] = [
       },
       {
         id: 5,
-        text: "Physical affection -- not just sex, but touch, closeness, presence -- is a normal part of our daily life.",
+        text: "Physical affection (not just sex, but touch, closeness, presence) is a normal part of our daily life.",
       },
       {
         id: 6,
         text: "I feel emotionally close to my spouse, not just physically present in the same space.",
       },
     ],
-    recommendations: {
-      low: [
-        "Start with proximity before expecting intimacy. Sit on the same couch. Walk to the mailbox together. Closeness is rebuilt in small distances before large ones.",
-        "Name the distance honestly. 'I feel far from you' is not an accusation -- it is an invitation. Most spouses already sense the gap. Naming it gives permission to close it.",
-        "If physical intimacy has become transactional or absent, consider that the problem is rarely physical. Emotional disconnection shows up in the bedroom because the bedroom is where pretending gets hardest.",
-      ],
-      mid: [
-        "Schedule a weekly date that requires no planning beyond being there. The couples who wait for the perfect evening never have one.",
-        "Reintroduce non-sexual touch. A hand on the shoulder. Sitting close enough that your knees touch. Small gestures like these rebuild a closeness that words alone cannot.",
-        "Ask your spouse: 'When did you last feel truly close to me?' Their answer will tell you more than any book.",
-      ],
-      high: [
-        "Your connection is a gift. Do not assume it will maintain itself. Intimacy is not a destination you arrive at -- it is a discipline you practice.",
-        "Use your closeness as the foundation for harder conversations. Couples who are truly connected can say the hardest things because the relationship can bear the weight.",
-        "Pray together. Not performatively. Not long. Just honest words before God, side by side. There is an intimacy in shared vulnerability before God that nothing else replicates.",
-      ],
-    },
-    articleLink: {
-      title: "Read more on marriage and intimacy",
-      href: "/writing?track=marriage",
+    bands: {
+      low: {
+        interpretation:
+          "Your answers describe distance: little time together that isn't about children, work, or chores, little touch, and the sense of sharing a house more than a life. One thing comes first. If sex has become something you're pressured or forced into, that isn't a closeness problem but a safety problem, and the marriage help page below is the place to start. Otherwise, distance like this tends to build quietly, through seasons of exhaustion, small hurts left unspoken, or a busyness that crowded out the two of you. It can feel like proof that love is gone, but distance and the end of love are different things, and closeness is rebuilt in small steps before large ones.",
+        steps: [
+          "Start with nearness before you expect closeness: sit on the same couch, take a short walk together, eat one meal a week without screens.",
+          "Name the distance without blame. *I miss you* is an invitation, not an accusation, and your spouse may feel the gap as much as you do.",
+          "If physical intimacy has stopped or become a transaction, talk with a counselor, and see a doctor if pain, medication, or exhaustion may be part of it.",
+        ],
+        links: [
+          { label: "My marriage is falling apart", href: "/help/marriage", note: "Start here if you're pressured or afraid" },
+          { label: "How to Love a Spouse Who Has Gone Cold", href: "/how-tos/marriage-how-to-love-a-cold-spouse" },
+          { label: "What Does the Bible Say About Sex in Marriage?", href: "/life/the-marriage-bed" },
+        ],
+      },
+      mid: {
+        interpretation:
+          "Connection comes and goes for you. There's affection and some time together, but weeks can pass with the two of you running the household side by side and rarely looking up. That's less a sign of trouble than a sign of a full life, since children, jobs, and fatigue take the hours that used to belong to the two of you. The spark hasn't necessarily gone anywhere. What this result says is that closeness now needs protecting on purpose instead of being left to take care of itself. Small, regular things matter more here than grand gestures, because what you practice every week is what you'll have in ten years.",
+        steps: [
+          "Protect one evening or morning a week for just the two of you, and keep it simple enough that it actually happens.",
+          "Bring back ordinary touch that asks for nothing: a hand on the shoulder, sitting close, a longer hug at the door.",
+          "Ask your spouse when they last felt truly close to you, and listen for what made that time different.",
+        ],
+        links: [
+          { label: "How to Protect a Weekly Date Night", href: "/how-tos/marriage-how-to-protect-date-night" },
+          { label: "What Does the Bible Say About Sex in Marriage?", href: "/life/the-marriage-bed" },
+        ],
+      },
+      high: {
+        interpretation:
+          "Your answers describe real closeness: time together that isn't only about logistics, affection woven into ordinary days, and the sense of being known and not only accompanied. Genesis describes marriage as two becoming one flesh, and your answers suggest you know something of what that means in practice. Closeness like this grows from years of choosing each other in small ways, and it doesn't maintain itself. The seasons that test it are predictable enough to name now, while you're close: a new baby, illness, a demanding job, parents who need care. A connected marriage can bear more than a distant one; that's a mercy to be grateful for, not a reason to stop paying attention.",
+        steps: [
+          "If you share the faith, pray together briefly and honestly, even a few sentences side by side. There's a closeness in that nothing else gives.",
+          "Before the next demanding season arrives, decide together how you'll protect your time with each other when it does.",
+        ],
+        links: [
+          { label: "How to Pray Together as a Couple", href: "/how-tos/marriage-how-to-pray-together" },
+          { label: "Closeness in Marriage", href: "/wisdom/marriage-intimacy" },
+        ],
+      },
     },
   },
   {
@@ -126,41 +212,61 @@ const CATEGORIES: Category[] = [
     slug: "trust",
     scripture: { ref: "Proverbs 31:11" },
     description:
-      "Whether your marriage is a place where it is safe to be known -- fully, without editing.",
+      "Whether your marriage is a place where it is safe to be known fully, without editing.",
     questions: [
       {
         id: 7,
-        text: "We are transparent with each other about finances -- no hidden accounts, no secret spending, no financial decisions made alone.",
+        text: "We are transparent with each other about finances: no hidden accounts, no secret spending, no financial decisions made alone.",
       },
       {
         id: 8,
-        text: "I have complete confidence in my spouse's faithfulness -- emotionally and physically.",
+        text: "I have complete confidence in my spouse's faithfulness, emotionally and physically.",
       },
       {
         id: 9,
-        text: "I can be vulnerable with my spouse -- admitting failure, weakness, or fear -- without worrying it will be used against me later.",
+        text: "I can be vulnerable with my spouse (admitting failure, weakness, or fear) without worrying it will be used against me later.",
       },
     ],
-    recommendations: {
-      low: [
-        "Trust, once broken, is not rebuilt by promises. It is rebuilt by consistent, small, verifiable actions over time. Do not demand trust. Earn it.",
-        "If financial secrecy exists, open every account together this week, not as punishment but as a declaration that this marriage has no hidden rooms.",
-        "If vulnerability feels unsafe, ask yourself whether your spouse has actually weaponized your honesty, or whether you are protecting yourself from a wound that predates this marriage. Both are real. Both need attention.",
-      ],
-      mid: [
-        "Trust at this level means the foundation is present but not yet load-bearing. Test it gently. Share something you have been holding back and see what happens.",
-        "Have a monthly financial conversation -- not about budgets, but about fears. 'What keeps you up at night about money?' That question builds more trust than any spreadsheet.",
-        "Examine whether you are trusting your spouse or merely not distrusting them. Those are not the same thing.",
-      ],
-      high: [
-        "You have built something rare. Guard it fiercely. Trust is destroyed in moments and rebuilt in years.",
-        "Use your trust to go to the hard places together. Couples who trust deeply can face external crisis without the marriage becoming another casualty.",
-        "Model this for your children if you have them. They are learning what safety looks like by watching you.",
-      ],
-    },
-    articleLink: {
-      title: "Read more on trust and faithfulness",
-      href: "/writing?track=marriage",
+    bands: {
+      low: {
+        interpretation:
+          "Trust between you is thin. You may doubt your spouse's faithfulness, feel that money is hidden from you or decided without you, or have learned that anything vulnerable you say can be used against you later. Before anything else: if you're afraid of your spouse, or your spouse controls the money, your phone, or who you see, that isn't a trust problem to fix by trying harder. Start with the marriage help page below. If you're safe, low trust usually has a history, a betrayal that came to light or small deceptions that piled up, and sometimes a wound older than this marriage. Trust isn't restored by promises. It's rebuilt slowly, by honesty that can be checked.",
+        steps: [
+          "If you're safe with each other and money has been hidden, bring every account, debt, and purchase into the open this week, with a pastor or counselor in the room if it's likely to be hard.",
+          "If you've been betrayed, you don't owe anyone a quick recovery. Tell one trusted person the truth, and look for a counselor who works with couples after betrayal.",
+          "If you're the one who broke trust, stop hiding, tell the whole truth once with help, and accept that trust returns on your spouse's timetable, not yours.",
+        ],
+        links: [
+          { label: "My marriage is falling apart", href: "/help/marriage", note: "Safety first, then real help" },
+          { label: "How Do You Heal After Betrayal by Someone Close?", href: "/life/betrayal-and-broken-trust" },
+          { label: "How to Handle Money as a Couple", href: "/how-tos/wm-how-to-handle-money-as-a-couple" },
+        ],
+      },
+      mid: {
+        interpretation:
+          "Your answers put trust somewhere in the middle. You aren't braced for betrayal, but you may hold some things back, keep a little distance around money, or wonder whether honesty will cost you later. If what holds you back is fear of how your spouse will react, read the marriage help page below before anything else. Otherwise, this usually means the foundation is there but not yet carrying its full weight, often because an old hurt was never fully repaired, or because one of you learned long before this marriage that being known is dangerous. None of this accuses your spouse. It asks whether you're trusting them or simply not distrusting them, which are different things.",
+        steps: [
+          "Share one thing you've been holding back, something modest, and notice how it's received. Trust grows when honesty is met with care.",
+          "Once a month, talk about money starting with fears rather than numbers: what worries each of you, and what would help.",
+        ],
+        links: [
+          { label: "My marriage is falling apart", href: "/help/marriage", note: "Read this first if you're afraid of how your spouse will react" },
+          { label: "How to Have the Money Conversation Without a War", href: "/how-tos/marriage-how-to-money-conversation" },
+          { label: "How Do You Heal After Betrayal by Someone Close?", href: "/life/betrayal-and-broken-trust", note: "If an old wound is why you hold back" },
+        ],
+      },
+      high: {
+        interpretation:
+          "Yours is a marriage where it's safe to be known: open about money, confident in each other's faithfulness, and able to admit failure or fear without having it turned into a weapon later. That kind of trust is built by keeping small promises for years, telling the truth when a lie would have been easier, and forgiving without keeping a file. It's also more fragile than it feels, since one hidden thing can undo what took years to build. Trust at this level is something to guard, and something to pass on, especially to any children who are watching how the two of you treat each other.",
+        steps: [
+          "Keep money and devices open by habit, not because anyone asks. Openness practiced in good seasons is what carries you through hard ones.",
+          "If you have children, let them see you apologize to each other and keep your word. They're learning from you what a safe home looks like.",
+        ],
+        links: [
+          { label: "How Do You Build a Christian Home and Family?", href: "/life/the-home-and-the-family" },
+          { label: "Marriage: A Bible Study on Covenant Love", href: "/studyguides/marriage" },
+        ],
+      },
     },
   },
   {
@@ -172,7 +278,7 @@ const CATEGORIES: Category[] = [
     questions: [
       {
         id: 10,
-        text: "My spouse and I share a clear, discussed vision for our future -- not just assumptions about where we are headed.",
+        text: "My spouse and I share a clear, discussed vision for our future, not just assumptions about where we are headed.",
       },
       {
         id: 11,
@@ -180,29 +286,50 @@ const CATEGORIES: Category[] = [
       },
       {
         id: 12,
-        text: "Our spiritual lives are shared -- we pray, attend church, or discuss faith together, not just side by side.",
+        text: "Our spiritual lives are shared: we pray, attend church, or discuss faith together, not just side by side.",
       },
     ],
-    recommendations: {
-      low: [
-        "Sit down this week and answer one question together: 'What do we want our life to look like in five years?' If your answers surprise each other, that is the most important data you have received in months.",
-        "If parenting disagreements dominate your marriage, recognize that most parenting conflicts are actually value conflicts. You are not arguing about bedtime. You are arguing about what kind of adults you are trying to raise.",
-        "Begin praying together, even if it feels awkward. Start with one sentence each. 'God, help us.' That is enough. Shared spiritual life does not require eloquence. It requires willingness.",
-      ],
-      mid: [
-        "You have partial alignment. Identify the one area where your visions diverge most sharply and give it dedicated conversation -- not argument, conversation.",
-        "Write a family mission statement together. Not corporate jargon. Three sentences about what your family exists to do. Put it where you can see it.",
-        "If your spiritual lives run on parallel tracks, find one practice you can share. A devotional, a prayer walk, a Sunday conversation about the sermon. Shared faith is built in shared habits.",
-      ],
-      high: [
-        "Shared vision is your greatest strategic asset. Revisit it annually. The vision that served you at thirty may need refinement at forty.",
-        "Bring your shared vision to bear on major decisions. Job changes, moves, financial commitments -- run them through the filter of what you have said you are building together.",
-        "Share your process with younger couples. How you built shared vision is as valuable as the vision itself.",
-      ],
-    },
-    articleLink: {
-      title: "Read more on building a life together",
-      href: "/writing?track=marriage",
+    bands: {
+      low: {
+        interpretation:
+          "Your answers suggest the two of you are living parallel lives under one roof, with little shared sense of where you're headed, real differences about children or family, and faith lived separately if at all. That rarely happens by choice. Assumptions made early in the marriage went untested while jobs, children, and years changed you both, and nobody stopped to talk about it. Parenting disagreements in particular tend to be disagreements about values underneath, about what kind of adults you're trying to raise. A low score here doesn't mean you want incompatible lives. It means you haven't yet said out loud, to each other and in the same room, what you want.",
+        steps: [
+          "Sit down this week with one question: *What do we want our life to look like in five years?* Write your answers separately first, then compare them without arguing.",
+          "If you both follow Christ, begin praying together, even one sentence each. If your spouse doesn't share your faith, don't make prayer a test; pray for them, and share the life you can share.",
+          "When you disagree about the children, talk about what you hope they become before you talk about bedtimes and rules.",
+        ],
+        links: [
+          { label: "How to Have a Weekly Marriage Check-In", href: "/how-tos/marriage-how-to-weekly-check-in" },
+          { label: "How to Pray Together as a Couple", href: "/how-tos/marriage-how-to-pray-together" },
+          { label: "How Do You Build a Christian Home and Family?", href: "/life/the-home-and-the-family" },
+        ],
+      },
+      mid: {
+        interpretation:
+          "You and your spouse agree on some of what you're building and differ on some of it, or you talked about the future once and haven't since. Couples at this level usually share a direction in broad strokes while one area, whether children, money, or faith, has drifted onto separate tracks. None of this is cause for alarm. What it does suggest is that the places where your hopes differ haven't had enough honest conversation, and differences left unspoken tend to harden with time. The next step is modest and specific: find the one place where your hopes differ most, and give it a real conversation rather than an argument.",
+        steps: [
+          "Name the area where your hopes differ most and set aside an unhurried evening for it, aiming to understand rather than to win.",
+          "Write three plain sentences together about what your family is for, and put them somewhere you'll both see them.",
+          "If your faith runs on parallel tracks, choose one practice to share: a short prayer at dinner, a psalm before bed, or a conversation after church about what you heard.",
+        ],
+        links: [
+          { label: "How Do You Build a Christian Home and Family?", href: "/life/the-home-and-the-family" },
+          { label: "How do I know what God wants me to do?", href: "/help/decisions", note: "For a decision you're weighing together" },
+        ],
+      },
+      high: {
+        interpretation:
+          "You and your spouse are building the same life: a future you've actually discussed, broad agreement about children and family, and a faith you share instead of practicing side by side. That belongs to couples who keep talking about where they're headed rather than assuming it, and it steadies a marriage through a great deal. It won't spare you disagreements, and the vision that fit you at thirty may not fit at fifty, so it has to be revisited as children grow, work changes, and parents age. Its best use is practical: bringing each big decision, a move, a job, a major purchase, back to what you've said you're building together.",
+        steps: [
+          "Set a yearly time to revisit where you're headed, and ask what has changed in each of you since the last time.",
+          "Before either of you commits to a major decision, talk it through against what you've said you're building, and pray over it together.",
+          "Tell a younger couple how you learned to talk about the future. Your way of getting there may help them more than your conclusions.",
+        ],
+        links: [
+          { label: "How do I know what God wants me to do?", href: "/help/decisions" },
+          { label: "Marriage: A Bible Study on Covenant Love", href: "/studyguides/marriage" },
+        ],
+      },
     },
   },
   {
@@ -210,85 +337,209 @@ const CATEGORIES: Category[] = [
     slug: "conflict",
     scripture: { ref: "Ephesians 4:26" },
     description:
-      "Not whether you fight -- every marriage does. Whether you fight in a way that leaves the marriage stronger or weaker.",
+      "Not whether you fight, since every marriage does, but whether you fight in a way that leaves the marriage stronger or weaker.",
     questions: [
       {
         id: 13,
-        text: "When we argue, we fight about the issue at hand -- not every grievance from the last ten years.",
+        text: "When we argue, we fight about the issue at hand, not every grievance from the last ten years.",
       },
       {
         id: 14,
-        text: "After a serious conflict, we repair -- we come back together, acknowledge what happened, and reconnect.",
+        text: "After a serious conflict, we repair: we come back together, acknowledge what happened, and reconnect.",
       },
       {
         id: 15,
-        text: "Forgiveness in our marriage is real -- not just words spoken to end the tension, but genuine release of the offense.",
+        text: "Forgiveness in our marriage is real: not just words spoken to end the tension, but genuine release of the offense.",
       },
     ],
-    recommendations: {
-      low: [
-        "If every fight becomes a trial where past offenses are introduced as evidence, you need a reset. Agree together: 'Forgiven means finished. We do not reopen closed cases.'",
-        "Learn to take a twenty-minute break when conversations escalate. Not to avoid the conflict, but because your nervous system needs time to leave fight-or-flight mode before you can think clearly.",
-        "If you cannot resolve conflict without professional help, get professional help. Asking is not weakness; it is one of the braver things a married person does.",
-      ],
-      mid: [
-        "You manage conflict but may not be resolving it. There is a difference. Managed conflict stays quiet. Resolved conflict stays gone.",
-        "Practice the repair conversation: 'Here is what I did. Here is why it was wrong. Here is what I will do differently.' No qualifications. No 'but you also...' Just ownership.",
-        "Examine your forgiveness. If you have said 'I forgive you' but still bring it up, the forgiveness was incomplete. That is human. But it needs to be finished.",
-      ],
-      high: [
-        "Healthy conflict resolution is one of the rarest skills in any relationship. You have it. Do not take it for granted.",
-        "Teach your children how to fight well by letting them see you repair. They do not need to see the argument, but they do need to see the reconciliation.",
-        "Remember that conflict resolution is not conflict avoidance. Keep having the hard conversations. Your ability to resolve well gives you permission to engage honestly.",
-      ],
-    },
-    articleLink: {
-      title: "Read more on conflict and forgiveness",
-      href: "/writing?track=marriage",
+    bands: {
+      low: {
+        interpretation:
+          "Conflict is doing damage in your marriage. Old grievances come back into new arguments, fights end without repair, or forgiveness gets spoken without being settled. If your fights include threats, intimidation, breaking things, or any physical harm, or you're afraid of what your spouse will do, that isn't a conflict to resolve. It's a safety problem, and the marriage help page below comes before anything else here. Where both of you are safe, this pattern usually grows from hurts that were never repaired and so keep getting argued again. You've learned how to fight without learning how to come back, and coming back can be learned.",
+        steps: [
+          "If your spouse is afraid of you, or your anger has frightened anyone at home, get help for that first, from a counselor who works with anger and abuse rather than a couples counselor.",
+          "If you're safe with each other, stop an argument that starts circling, agree on a time to come back to it, such as tomorrow at eight, and keep that time. Stay on one subject when you return.",
+          "Stop bringing old grievances into new fights. If a past hurt keeps returning, it isn't finished; take it to a counselor or pastor on its own.",
+        ],
+        links: [
+          { label: "My marriage is falling apart", href: "/help/marriage", note: "Start here if a fight has ever made you afraid" },
+          { label: "How to Repair After a Blowup", href: "/how-tos/marriage-how-to-repair-after-blowup" },
+          { label: "I can't forgive them", href: "/help/cant-forgive", note: "When a wrong stands between you and won't let go" },
+        ],
+      },
+      mid: {
+        interpretation:
+          "You fight, you mostly recover, and sometimes an old hurt slips back into a new argument or an apology gets said without quite being meant. That usually means the two of you manage conflict better than you resolve it. Managed conflict goes quiet; resolved conflict stays settled. The difference is repair: coming back after the heat, owning your part without a counter-accusation, and actually releasing the offense instead of storing it. Nothing in this result is beyond you, and this is a good level at which to learn repair, while there's still plenty of goodwill between you.",
+        steps: [
+          "After your next argument, try a plain repair: *Here's what I did. Here's why it was wrong. Here's what I'll do differently.* Leave out *but you also*.",
+          "If you've said *I forgive you* and keep bringing it up, say so honestly. Half-finished forgiveness is human, and it still needs finishing.",
+          "If you're safe with each other, work through the one argument that keeps coming back using the conflict guide, a step at a time.",
+        ],
+        links: [
+          { label: "Conflict Resolution Guide", href: "/tools/conflict-guide", note: "For couples who are safe with each other" },
+          { label: "How to Actually Forgive Your Spouse", href: "/how-tos/marriage-how-to-actually-forgive" },
+          { label: "How Do You Handle Conflict and Truly Reconcile?", href: "/life/conflict-and-reconciliation" },
+        ],
+      },
+      high: {
+        interpretation:
+          "You know how to fight and come back. You tend to stay on the subject at hand, you repair after serious fights, and forgiveness between you is real rather than a way to end the tension. That comes from two people who have each learned to say *I was wrong* without adding a qualifier, and it's a hard-won skill. The risk here is subtle: good resolution can slide into avoiding conflict altogether to protect the peace, and a quiet house isn't always a settled one. Keep having the honest conversations. Your ability to repair is exactly what makes it safe to disagree.",
+        steps: [
+          "If you have children, let them see the reconciliation even when they didn't see the argument. They need to know that people who love each other come back.",
+          "Once a month, ask each other whether anything has gone unsaid. Peace kept by silence isn't the same as peace.",
+        ],
+        links: [
+          { label: "How Do You Handle Conflict and Truly Reconcile?", href: "/life/conflict-and-reconciliation" },
+          { label: "Forgiveness: A Bible Study on the Hardest Word", href: "/studyguides/forgiveness" },
+        ],
+      },
     },
   },
 ];
 
-function getScoreLevel(score: number, maxScore: number): string {
+function getScoreLevel(score: number, maxScore: number): Level {
   const pct = score / maxScore;
   if (pct >= 0.8) return "high";
   if (pct >= 0.5) return "mid";
   return "low";
 }
 
-function getOverallLabel(score: number): {
-  label: string;
-  color: string;
-  description: string;
-} {
-  const pct = score / 75;
-  if (pct >= 0.8)
-    return {
-      label: "Strong",
-      color: "var(--ok)",
-      description:
-        "Your marriage shows real strength across multiple areas. This does not mean perfection -- it means you have built habits of love that are bearing fruit. Protect them. Deepen them. The greatest threat to a strong marriage is the assumption that it will stay strong without continued effort.",
-    };
-  if (pct >= 0.6)
-    return {
-      label: "Growing",
-      color: "var(--mustard)",
-      description:
-        "Your marriage has genuine strengths and identifiable growth areas. Most marriages live here, and it is not a crisis, but it is not a place to settle either. The question is whether you will stay here or move toward something deeper. The fact that you took this assessment suggests you are ready for it.",
-    };
-  if (pct >= 0.4)
-    return {
-      label: "Needs Attention",
-      color: "var(--strain)",
-      description:
-        "Several areas of your marriage are under strain. Read that as a diagnosis rather than a verdict; a diagnosis tells you where to focus. Do not try to fix everything at once. Pick the category with the lowest score and start there. One area at a time. One conversation at a time.",
-    };
-  return {
-    label: "In Crisis",
+const OVERALL_BANDS: Record<"strong" | "growing" | "attention" | "strain", OverallBand> = {
+  strong: {
+    label: "Strong",
+    color: "var(--ok)",
+    description:
+      "You agreed with most of these fifteen statements. That usually means the two of you have built habits that hold: you listen to each other, you find your way back after a fight, and there's enough trust between you to tell the truth. Habits like that are built one ordinary day at a time by two people who keep choosing each other, and they're worth naming with gratitude instead of taking for granted.\n\nA strong score doesn't mean the marriage has no hard places, and it doesn't mean your spouse would answer the same way. One area can sit low even when the total is high, so read the breakdown below slowly. Some couples land here because the marriage is young and hasn't yet been tested by children, money, illness, or grief. Others land here after years of repairing what broke. And sometimes a high score carries a little hope in it, the way any of us answers for the marriage we mean to have. None of that is a failure, but all of it is a reason to keep tending what you've been given.\n\nStart with your lowest area, even if it's only a little lower than the rest, and talk about it together this week. Guard a regular time to talk about the marriage itself and not only the calendar. And ask whether your steadiness could help a younger or struggling couple, because a marriage that's doing well has something to give away.",
+    planLead:
+      "A strong marriage still needs tending. The eight-week plan gives the two of you one small practice a week for keeping what you've built.",
+    next: [
+      { label: "How to Have a Weekly Marriage Check-In", href: "/how-tos/marriage-how-to-weekly-check-in" },
+      { label: "Marriage: A Bible Study on Covenant Love", href: "/studyguides/marriage", note: "Five sessions, good to share with another couple or a small group" },
+      { label: "How to Pray Together as a Couple", href: "/how-tos/marriage-how-to-pray-together" },
+    ],
+  },
+  growing: {
+    label: "Growing",
+    color: "var(--mustard)",
+    description:
+      "Your answers lean toward agreement, with real hesitation in places. That usually means the marriage has genuine strengths alongside a few areas where the two of you have drifted, stalled, or stopped talking about something that matters. It's a sturdy place to stand and a poor place to settle, because the drift that brings a marriage here doesn't stop on its own.\n\nA result in this range doesn't mean your marriage is in trouble, and it doesn't mean you married the wrong person. It means ordinary life has been crowding the marriage, which is what ordinary life does. The reasons are rarely dramatic: small children or demanding work, money pressure, a tiredness that never quite lifts, or an old hurt that was smoothed over instead of repaired. The breakdown below will show you which area has been quietly paying for the others.\n\nStart with the area where your score is lowest, and resist the urge to fix everything at once. Choose one conversation for this week, set a time for it, and keep it. A short weekly check-in about the marriage itself, rather than the schedule, will do more over a year than one dramatic talk. If the same argument keeps coming back, the conflict guide below can give it a shape, as long as the two of you are safe with each other.",
+    planLead:
+      "A score is a snapshot. A path is what changes things: eight weeks toward each other, one small practice at a time.",
+    next: [
+      { label: "How to Have a Weekly Marriage Check-In", href: "/how-tos/marriage-how-to-weekly-check-in" },
+      { label: "Conflict Resolution Guide", href: "/tools/conflict-guide", note: "For couples who are safe with each other" },
+      { label: "Talking with Your Spouse", href: "/wisdom/marriage-communication" },
+    ],
+  },
+  attention: {
+    label: "Needs Attention",
+    color: "var(--strain)",
+    description:
+      "Taken together, your answers fall between disagreeing and neutral. That usually means several parts of the marriage are under strain at once, and that you've felt it for a while, even if you haven't said it out loud. Taking this self-check was a way of saying it, and that counts for something.\n\nThis result isn't a prediction, and it can't tell you whose fault this is or how your spouse would answer. People come to this point by different roads. For some it's years of living as roommates who run a household; for others it's the same fight repeating for months, or a hurt that never got repaired. A hard season can do it too: a new baby, a lost job, an illness, a parent who needs care. Exhaustion, grief, or depression in either of you can drain the warmth out of a marriage as well, and a doctor can help you tell whether that's part of it.\n\nIf you're afraid of your spouse, or your spouse controls your money, your phone, or who you see, start with safety before anything else here: the marriage help page below lists the National Domestic Violence Hotline near the top. If you're safe with each other, don't try to fix everything at once. Tell one trusted person the truth this week, pick the area with the lowest score, and call a licensed counselor now, while there's still warmth to build on.",
+    planLead:
+      "When you're ready for a path, the eight-week plan gives the two of you one small practice a week. It works best alongside the conversation you start this week, and alongside a counselor if you've called one.",
+    next: [
+      { label: "My marriage is falling apart", href: "/help/marriage", note: "Safety first, then real help, including how to find a counselor" },
+      { label: "How to Know When to Get Help", href: "/how-tos/marriage-how-to-know-when-to-get-help" },
+      { label: "Conflict Resolution Guide", href: "/tools/conflict-guide", note: "For couples who are safe with each other" },
+    ],
+  },
+  strain: {
+    label: "Under Heavy Strain",
     color: "var(--alert)",
     description:
-      "Your scores indicate significant distress in your marriage. This assessment is not the final word. Many marriages that score here have been rebuilt into something stronger than what existed before. But it will require help -- professional help, not just good intentions. Contact a licensed marriage counselor this week, not next month. And one thing has to be said plainly: if there is abuse in your home, your safety comes before couples counseling. Call the National Domestic Violence Hotline at 1-800-799-7233 or text START to 88788, any hour.",
-  };
+      "You disagreed with most of these fifteen statements. That usually means the marriage is hurting in more than one place at once: you feel far from each other, fights don't get repaired, or trust has worn thin, and you may have been carrying it alone for a long time. Answering honestly took courage.\n\nIf you're afraid of your spouse, or your spouse threatens you, hurts you, or controls your money, your phone, or who you see, that comes first, before any question about the marriage and before anyone asks you to try harder. Start with the marriage help page below. It lists the National Domestic Violence Hotline near the top, and they answer at any hour.\n\nThis result isn't a prediction, and it isn't a verdict on you or on your spouse. It's one person's answers on one day, and your spouse might answer differently. People come to this point by different roads: a long drift that hardened into a wall, a betrayal that came to light, an addiction, or the slow weight of illness, grief, or depression on one or both of you.\n\nIf you're safe, talk to a real person this week, before any practice or plan. Call a licensed counselor who works with couples, and go alone if your spouse won't come. Tell a pastor who knows you what's actually happening. If you've stopped sleeping, eating, or working normally, see a doctor as well. Big decisions about the marriage belong with those people, not with a score.",
+    planLead:
+      "Once you're safe with each other and someone is walking with you, the eight-week plan can give you one small practice a week. It's a companion to counseling, not a replacement for it.",
+    next: [
+      { label: "My marriage is falling apart", href: "/help/marriage", note: "Start here, especially if you're afraid" },
+      { label: "How to Know When to Get Help", href: "/how-tos/marriage-how-to-know-when-to-get-help" },
+      { label: "I can't forgive them", href: "/help/cant-forgive", note: "If a wrong stands between you" },
+    ],
+  },
+};
+
+function getOverallLabel(score: number): OverallBand {
+  const pct = score / 75;
+  if (pct >= 0.8) return OVERALL_BANDS.strong;
+  if (pct >= 0.6) return OVERALL_BANDS.growing;
+  if (pct >= 0.4) return OVERALL_BANDS.attention;
+  return OVERALL_BANDS.strain;
+}
+
+/* ── Result rendering helpers ──────────────────────────────────── */
+
+const eyebrowHeading: CSSProperties = {
+  fontSize: "11px",
+  fontWeight: 700,
+  letterSpacing: "0.2em",
+  textTransform: "uppercase",
+  color: "var(--mustard-text)",
+  fontFamily: "var(--U)",
+  margin: "28px 0 12px",
+};
+
+/** Band copy through the shared renderer, so words people say can be italic. */
+function Prose({ text, size = 16, gap = 14 }: { text: string; size?: number; gap?: number }) {
+  return (
+    <Markdown
+      components={{
+        p: ({ children }) => (
+          <p
+            style={{
+              fontSize: `${size}px`,
+              lineHeight: 1.75,
+              color: "var(--ink)",
+              fontFamily: "var(--B)",
+              margin: `0 0 ${gap}px`,
+              maxWidth: "65ch",
+            }}
+          >
+            {children}
+          </p>
+        ),
+      }}
+    >
+      {text}
+    </Markdown>
+  );
+}
+
+function NextLinks({ links }: { links: NextLink[] }) {
+  return (
+    <ul
+      style={{
+        listStyle: "none",
+        margin: 0,
+        padding: 0,
+        display: "flex",
+        flexDirection: "column",
+        gap: "12px",
+      }}
+    >
+      {links.map((l) => (
+        <li key={l.href} style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.6 }}>
+          <Link
+            href={l.href}
+            style={{
+              fontFamily: "var(--U)",
+              fontWeight: 600,
+              color: "var(--mustard-text)",
+              textDecoration: "none",
+              borderBottom: "1px solid var(--mustard)",
+            }}
+          >
+            {l.label}
+          </Link>
+          {l.note && (
+            <span style={{ display: "block", fontSize: "14px", color: "var(--ink-muted)", marginTop: "2px" }}>
+              {l.note}
+            </span>
+          )}
+        </li>
+      ))}
+    </ul>
+  );
 }
 
 /* ── Saved progress (HS-5): survive a refresh mid-assessment ───── */
@@ -370,13 +621,13 @@ export default function MarriageAssessment() {
       persist(answers, currentCategory);
       setTimeout(() => {
         resultsRef.current?.focus({ preventScroll: true });
-        resultsRef.current?.scrollIntoView({ behavior: "smooth" });
+        resultsRef.current?.scrollIntoView({ behavior: scrollBehavior() });
       }, 100);
     } else if (!isLastCategory) {
       const nextStep = currentCategory + 1;
       setCurrentCategory(nextStep);
       persist(answers, nextStep);
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      window.scrollTo({ top: 0, behavior: scrollBehavior() });
     }
   };
 
@@ -385,7 +636,7 @@ export default function MarriageAssessment() {
       const prevStep = currentCategory - 1;
       setCurrentCategory(prevStep);
       persist(answers, prevStep);
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      window.scrollTo({ top: 0, behavior: scrollBehavior() });
     }
   };
 
@@ -395,7 +646,7 @@ export default function MarriageAssessment() {
     setCurrentCategory(0);
     setShowResults(false);
     setResumed(false);
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: scrollBehavior() });
   };
 
   const handleChangeAnswers = () => {
@@ -403,7 +654,7 @@ export default function MarriageAssessment() {
     setCurrentCategory(0);
     setResumed(false);
     persist(answers, 0);
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: scrollBehavior() });
   };
 
   const getCategoryScore = (cat: Category) =>
@@ -419,15 +670,15 @@ export default function MarriageAssessment() {
   return (
     <Layout>
       <SEOMeta
-        title="Marriage Health Assessment -- Identify Strengths and Growth Areas"
-        description="A 15-question diagnostic to help couples identify strengths and growth areas across communication, intimacy, trust, shared vision, and conflict resolution."
-        keywords="marriage assessment, marriage health, marriage diagnostic, relationship quiz, marriage counseling, marriage strength"
+        title="Marriage Health Self-Check: A Private Look at Your Marriage"
+        description="Fifteen statements across communication, intimacy, trust, shared vision, and conflict. A private self-check for reflection, with honest next steps and safety first."
+        keywords="marriage self-check, marriage assessment, marriage health, how healthy is my marriage, Christian marriage help, marriage counseling"
         structuredData={{
           "@context": "https://schema.org",
           "@type": "WebApplication",
-          name: "Marriage Health Assessment",
+          name: "Marriage Health Self-Check",
           description:
-            "A 15-question diagnostic to help couples identify strengths and growth areas in their marriage.",
+            "A private self-check for reflection: fifteen statements across five areas of marriage, with specific next steps and safety first.",
           url: "https://www.livewellbyjamesbell.co/tools/marriage-assessment",
           applicationCategory: "LifestyleApplication",
           offers: { "@type": "Offer", price: "0" },
@@ -438,7 +689,7 @@ export default function MarriageAssessment() {
       <section
         style={{
           background: "var(--charcoal)",
-          color: "var(--bone)",
+          color: "var(--charcoal-fg)",
           padding: "80px 32px 60px",
           textAlign: "center",
         }}
@@ -468,7 +719,7 @@ export default function MarriageAssessment() {
           >
             Marriage Health{" "}
             <em style={{ fontStyle: "italic", color: "var(--mustard)" }}>
-              Assessment
+              Self-Check
             </em>
           </h1>
           <p
@@ -481,9 +732,11 @@ export default function MarriageAssessment() {
               margin: "0 auto",
             }}
           >
-            Fifteen statements across five areas of marriage. Rate each honestly.
-            This is not a test with right answers -- it is a diagnostic that
-            helps you see where you are strong and where the work remains.
+            Fifteen statements across five areas of marriage, about five
+            minutes. This is a self-check for reflection, not a test or a
+            diagnosis, and your answers stay on this device unless you choose
+            to leave a copy with us at the end. Answer for yourself, as things
+            are now rather than as you wish they were.
           </p>
         </div>
       </section>
@@ -862,7 +1115,14 @@ export default function MarriageAssessment() {
           style={{ padding: "48px 32px 80px", background: "var(--bone)", outline: "none" }}
         >
           <div className="wrap" style={{ maxWidth: "800px" }}>
-            <ToolActions toolName="Marriage Health Assessment" />
+            <ToolActions toolName="Marriage Health Self-Check" onStartOver={handleRestart} />
+            <SafetyCheck />
+            <SelfCheckHistory
+              id="marriage"
+              total={totalScore / (CATEGORIES.reduce((n, c) => n + c.questions.length, 0) * 5)}
+              areas={Object.fromEntries(CATEGORIES.map((c) => [c.name, getCategoryScore(c) / (c.questions.length * 5)]))}
+              answersKey={JSON.stringify(answers)}
+            />
             {persistFailed && (
               <p
                 style={{
@@ -934,18 +1194,23 @@ export default function MarriageAssessment() {
               >
                 {overall.label}
               </div>
-              <p
-                style={{
-                  fontSize: "16px",
-                  lineHeight: 1.8,
-                  color: "var(--ink)",
-                  fontFamily: "var(--B)",
-                  maxWidth: "60ch",
-                  margin: "0 auto",
-                }}
-              >
-                {overall.description}
-              </p>
+              <div style={{ maxWidth: "62ch", margin: "0 auto", textAlign: "left" }}>
+                <Prose text={overall.description} />
+                <h3 style={eyebrowHeading}>Where to start</h3>
+                <NextLinks links={overall.next} />
+                <p
+                  style={{
+                    fontSize: "13px",
+                    lineHeight: 1.6,
+                    fontFamily: "var(--U)",
+                    color: "var(--ink-muted)",
+                    margin: "24px 0 0",
+                  }}
+                >
+                  A self-check is for reflection. It isn't counseling, and it
+                  isn't medical, legal, or financial advice.
+                </p>
+              </div>
             </div>
 
             {/* Eight-Week Plan CTA */}
@@ -969,7 +1234,7 @@ export default function MarriageAssessment() {
                   marginBottom: "12px",
                 }}
               >
-                YOUR NEXT STEP
+                AN EIGHT-WEEK PLAN
               </div>
               <p
                 style={{
@@ -981,8 +1246,7 @@ export default function MarriageAssessment() {
                   margin: "0 0 20px",
                 }}
               >
-                A score is a snapshot. A path is what changes things: eight
-                weeks toward each other, one small practice at a time.
+                {overall.planLead}
               </p>
               <Link
                 href="/plans/marriage"
@@ -1101,23 +1365,17 @@ export default function MarriageAssessment() {
               </div>
             </div>
 
-            {/* Per-Category Recommendations */}
+            {/* Per-area interpretation: the band that matches the reader's level */}
             {CATEGORIES.map((cat) => {
               const score = getCategoryScore(cat);
               const maxCatScore = 15;
               const level = getScoreLevel(score, maxCatScore);
-              const recs = cat.recommendations[level];
-              const levelLabel =
-                level === "high"
-                  ? "Strength"
-                  : level === "mid"
-                    ? "Growing"
-                    : "Needs Attention";
+              const band = cat.bands[level];
               const levelColor =
                 level === "high"
                   ? "var(--ok)"
                   : level === "mid"
-                    ? "var(--mustard)"
+                    ? "var(--mustard-text)"
                     : "var(--alert)";
 
               return (
@@ -1136,7 +1394,7 @@ export default function MarriageAssessment() {
                       display: "flex",
                       justifyContent: "space-between",
                       alignItems: "center",
-                      marginBottom: "8px",
+                      marginBottom: "16px",
                       flexWrap: "wrap",
                       gap: "12px",
                     }}
@@ -1164,74 +1422,43 @@ export default function MarriageAssessment() {
                           level === "high"
                             ? "var(--ok-bg)"
                             : level === "mid"
-                              ? "rgba(212,160,23,0.1)"
+                              ? "var(--bone-warm)"
                               : "var(--alert-bg)",
                         borderRadius: "2px",
                       }}
                     >
-                      {levelLabel.toUpperCase()} -- {score}/{maxCatScore}
+                      {LEVEL_LABEL[level].toUpperCase()} · {score}/{maxCatScore}
                     </span>
                   </div>
-                  <p
-                    style={{
-                      fontSize: "15px",
-                      lineHeight: 1.7,
-                      color: "var(--ink-muted)",
-                      fontFamily: "var(--B)",
-                      marginBottom: "24px",
-                    }}
-                  >
-                    {cat.description}
-                  </p>
 
-                  <div
+                  <Prose text={band.interpretation} />
+
+                  <h4 style={eyebrowHeading}>What to do</h4>
+                  <ul
                     style={{
+                      listStyle: "none",
+                      margin: 0,
+                      padding: 0,
                       display: "flex",
                       flexDirection: "column",
                       gap: "16px",
-                      marginBottom: "24px",
                     }}
                   >
-                    {recs.map((rec, i) => (
-                      <div
+                    {band.steps.map((step, i) => (
+                      <li
                         key={i}
                         style={{
                           paddingLeft: "20px",
                           borderLeft: "2px solid var(--bone-warm)",
                         }}
                       >
-                        <p
-                          style={{
-                            fontSize: "15px",
-                            lineHeight: 1.8,
-                            color: "var(--ink)",
-                            fontFamily: "var(--B)",
-                            margin: 0,
-                          }}
-                        >
-                          {rec}
-                        </p>
-                      </div>
+                        <Prose text={step} size={15} gap={0} />
+                      </li>
                     ))}
-                  </div>
+                  </ul>
 
-                  <a
-                    href={cat.articleLink.href}
-                    style={{
-                      display: "inline-flex",
-                      alignItems: "center",
-                      gap: "6px",
-                      fontSize: "14px",
-                      fontFamily: "var(--U)",
-                      fontWeight: 600,
-                      color: "var(--mustard-text)",
-                      borderBottom: "1px solid rgba(212,160,23,0.35)",
-                      paddingBottom: "2px",
-                    }}
-                  >
-                    {cat.articleLink.title}
-                    <ChevronRight size={14} />
-                  </a>
+                  <h4 style={eyebrowHeading}>Go further</h4>
+                  <NextLinks links={band.links} />
                 </div>
               );
             })}
@@ -1260,7 +1487,7 @@ export default function MarriageAssessment() {
                   borderRadius: "2px",
                   cursor: "pointer",
                   background: "var(--charcoal)",
-                  color: "var(--bone)",
+                  color: "var(--charcoal-fg)",
                   border: "none",
                   transition: "opacity 0.2s",
                 }}
@@ -1318,31 +1545,31 @@ export default function MarriageAssessment() {
                   e.currentTarget.style.borderColor = "var(--border)";
                 }}
               >
-                Retake Assessment
+                Retake the self-check
               </button>
             </div>
 
             {/* Email Results */}
             <EmailResults
-              toolName="Marriage Health Assessment"
+              toolName="Marriage Health Self-Check"
               resultsSummary={
-                `Marriage Health Assessment Results\n\nOverall: ${totalScore}/75 (${overall.label})\n\n` +
+                `Marriage Health Self-Check Results\n\nOverall: ${totalScore}/75 (${overall.label})\n\n` +
                 CATEGORIES.map(
                   (cat) =>
-                    `${cat.name}: ${getCategoryScore(cat)}/15 (${getScoreLevel(getCategoryScore(cat), 15) === "high" ? "Strength" : getScoreLevel(getCategoryScore(cat), 15) === "mid" ? "Growing" : "Needs Attention"})`
+                    `${cat.name}: ${getCategoryScore(cat)}/15 (${LEVEL_LABEL[getScoreLevel(getCategoryScore(cat), 15)]})`
                 ).join("\n")
               }
             />
 
             {/* Next Step CTA */}
             <a
-              href="/writing?track=marriage"
+              href="/pathways/marriage"
               style={{
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "space-between",
                 background: "var(--charcoal)",
-                color: "var(--bone)",
+                color: "var(--charcoal-fg)",
                 borderRadius: "2px",
                 padding: "28px 36px",
                 textDecoration: "none",
@@ -1367,7 +1594,7 @@ export default function MarriageAssessment() {
                     marginBottom: "6px",
                   }}
                 >
-                  NEXT STEP
+                  READ FURTHER
                 </div>
                 <span
                   style={{
@@ -1377,7 +1604,7 @@ export default function MarriageAssessment() {
                     fontStyle: "italic",
                   }}
                 >
-                  Read essays on marriage, conflict, and the hard work of loving well
+                  Marriage, Past the Tips: four essays and a study, read in order
                 </span>
               </div>
               <ChevronRight
@@ -1394,10 +1621,10 @@ export default function MarriageAssessment() {
         <div style={{ maxWidth: "680px", margin: "0 auto", textAlign: "center" }}>
           <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "16px" }}>GO DEEPER</p>
           <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.75, color: "var(--ink)", maxWidth: "56ch", margin: "0 auto 22px" }}>
-            If this assessment named something you already knew was there, the book goes further. <em>Covenant</em> is the long form of everything this tool measures — why marriage is a promise, not a deal.
+            If this self-check named something you already knew was there, the long read goes further. <em>Why Do Marriages Drift Apart, and How Do You Stop It?</em> works through covenant, conflict, money, and desire, and why marriage is a promise, not a deal.
           </p>
           <div style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
-            <a href="/covenant" style={{ display: "inline-block", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--bone)", background: "var(--ink)", padding: "12px 22px", borderRadius: "3px", textDecoration: "none" }}>Read about Covenant</a>
+            <a href="/life/marriage-the-long-covenant" style={{ display: "inline-block", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--bone)", background: "var(--ink)", padding: "12px 22px", borderRadius: "3px", textDecoration: "none" }}>Read about marriage as covenant</a>
           </div>
         </div>
       </section>

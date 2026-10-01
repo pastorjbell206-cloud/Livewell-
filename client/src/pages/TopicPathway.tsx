@@ -84,7 +84,7 @@ export default function TopicPathway() {
     <Layout>
       <SEOMeta
         title={data ? `${data.title} — A Topic Pathway` : "Topic Pathways"}
-        description={data ? data.subtitle : "A guided route through a major topic: read a few essays, do the study, then read the book free."}
+        description={data ? data.subtitle : "A guided route through a major topic: read a few essays in order, then work it through with a study built for it."}
         url={`${SITE_URL}/pathways/${slug ?? ""}`}
       />
 

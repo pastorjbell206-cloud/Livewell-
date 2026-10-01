@@ -1,0 +1,81 @@
+{
+  "slug": "forgiveness",
+  "title": "Eight Weeks Toward Setting Down the Debt",
+  "subtitle": "An eight week plan from James Bell for the wrong you cannot forgive, whether it was done to you or by you. Honest about the wound, clear that safety comes first, and never in a hurry.",
+  "intro": "This is an eight week walk for the person who has tried to forgive and can't, and for the person who can't forgive themselves. Each week holds one focus, one small daily practice, one thing to read, one tool to use, and one honest question. It moves slowly on purpose, from naming the wound at its real size, through anger brought to God and the justice that belongs to him, to the harder questions of distance, the apology that never came, and the grace you may be refusing yourself. It will never ask you to pretend it didn't happen, to trust someone who hasn't earned it, or to go back to anyone who is still hurting you. Forgiveness doesn't ask that either. If the person you can't forgive is you, walk it anyway. Much of the ground is the same, and the last week turns to face you.\n\nIt is not a cure, and it is not a substitute for a doctor, a licensed counselor, a pastor, or the people who know what happened to you. If the wound is abuse or trauma, find a counselor who understands that kind of harm and bring these weeks to them. Walk it imperfectly. A missed week is not failure; you just pick it back up. Neither is finding the same wrong back in your hands a month from now, because a real debt is rarely set down only once.",
+  "careNote": "If the hurt is abuse or trauma, walk these weeks with a licensed counselor, and if you are not safe, the Find Help page lists the Domestic Violence Hotline; in a crisis, call or text 988.",
+  "weeks": [
+    {
+      "n": 1,
+      "focus": "Naming the wound at its real size",
+      "why": "Forgiveness is not forgetting, excusing, trusting again, reconciling, or keeping quiet. You can forgive and still report a crime, keep your distance, or refuse contact for the rest of your life. If a parent, a spouse, or a church leader has harmed you and could still harm you or a child, safety comes first, and nothing in these eight weeks will ask you to go back. What forgiveness does ask for first is honesty. A debt has to be counted before it can be cancelled, and a wrong you've shrunk to make it easier to forgive hasn't been forgiven. It has only been hidden.",
+      "practice": "Each day, write two plain sentences, one about what was done and one about what it cost you, whether sleep, trust, years, money, or faith. No softening and no spiritual editing. Keep the pages somewhere private, where no one who hurt you can find them.",
+      "read": { "label": "Forgiveness: The Hardest Grace, on the debt you carry and what forgiveness is not", "href": "/life/forgiveness-the-hardest-grace" },
+      "tool": { "label": "The Find Help page, where the Domestic Violence Hotline is listed with the other lines", "href": "/help" },
+      "reflection": "What was done to me, at its real size, and what has it cost me that I have never let myself count?"
+    },
+    {
+      "n": 2,
+      "focus": "Anger brought to God",
+      "why": "Many of us were taught that anger is the thing standing between us and forgiveness, so we swallow it, and swallowed anger doesn't disappear. It goes underground and hardens into bitterness. The Psalms know better. Psalm 55 was prayed by someone betrayed by a friend he had walked with into the house of God, and Psalm 109 by someone accused by the very people he loved. Both ask God to act against the ones who did the harm, and neither takes revenge. They hand the anger to the only one who can judge rightly, which is where it was meant to go all along.",
+      "practice": "Each day, read Psalm 55 slowly, aloud if you can, and pray as your own the lines that are true for you. Then tell God in plain words what you are angry about and what you want him to do. Leave the doing to him. If the anger has turned into thoughts of hurting them or yourself, tell a counselor or a pastor this week.",
+      "read": { "label": "How to Practice Lament, on praying the complaint without softening it", "href": "/how-tos/ss-how-to-practice-lament" },
+      "tool": { "label": "Psalm 55 in the Study Bible, with notes on a friend's betrayal", "href": "/study/bible/psalms/55" },
+      "reflection": "What have I been afraid to say to God about the one who hurt me, and what do I actually want him to do?"
+    },
+    {
+      "n": 3,
+      "focus": "What forgiveness is",
+      "why": "Most of us were handed the word forgiveness and never a definition, so we've been trying to do something we couldn't describe, and every failure has felt like proof we're bad at grace. Forgiveness is the decision to stop collecting a debt you have honestly counted, and to hand the collecting to God. It is usually a decision long before it is a feeling, and it is rarely made only once. When Peter asked how often he should forgive, Jesus said seventy-seven times (Matthew 18:22). He was speaking of a brother who keeps sinning, but the same patience fits one wrong that keeps coming back.",
+      "practice": "Each day, finish this sentence on paper: I have been afraid that forgiving would mean... Then ask honestly whether Scripture asks that of you, and cross out whatever it doesn't. What survives the week is the real thing, narrower than the counterfeit and harder.",
+      "read": { "label": "When You Cannot Forgive, on a decision that comes before the feeling", "href": "/wisdom/forgiveness" },
+      "tool": { "label": "The Emotional Health check, whose forgiveness questions separate forgiving from trusting", "href": "/tools/emotional-health" },
+      "reflection": "What have I believed forgiveness would require of me that God has never actually asked?"
+    },
+    {
+      "n": 4,
+      "focus": "Justice belongs to God",
+      "why": "Often the deepest reason we can't forgive is the fear that forgiving means they get away with it. Scripture takes that fear seriously. Paul writes, \"Do not avenge yourselves, beloved, but leave room for God's wrath\" (Romans 12:19). Forgiveness doesn't cancel justice. It moves the case out of your hands and into the hands of the only Judge who sees everything. Then, in the passage that follows, Paul describes the governing authority as \"God's servant, an agent of retribution to the wrongdoer\" (Romans 13:4). Reporting a crime is not revenge. What you set down is the private courtroom in your head, the one that never adjourns.",
+      "practice": "When the replay starts this week, the argument you keep winning in your head, stop and ask the question Joseph asked his brothers, \"Am I in the place of God?\" (Genesis 50:19). Then hand the case back to God in one sentence. This is about the private verdict. If a crime was committed, you are still free to report it.",
+      "read": { "label": "Forgiveness, a Bible study, session four: Mercy Is Not the Enemy of Justice", "href": "/studyguides/forgiveness" },
+      "tool": { "label": "The Passage Context tool, opened to Romans 12:17-21 in its setting", "href": "/theology/passage?ref=Romans%2012%3A17-21" },
+      "reflection": "What would change in me if I believed God will judge this rightly, and that the verdict does not depend on me?"
+    },
+    {
+      "n": 5,
+      "focus": "The debt you were forgiven",
+      "why": "Jesus' parable of the unforgiving servant (Matthew 18:21-35) has been used as a club against wounded people, and we in the church have not always handled it with care, so read it slowly. A servant released from a debt he could never repay went out and choked a fellow servant over one that was real but far smaller. The point is not that you are as guilty as the one who hurt you, or that what they did was small. It is that mercy given flows from mercy received, and nobody forgives on willpower. Notice, too, that the servants who saw the cruelty went and told their master (Matthew 18:31). Bringing a wrong into the light belongs to this parable as much as the pardon does.",
+      "practice": "Each day, before you rehearse what you are owed, spend two minutes naming one mercy you have received, from God or from another person. Then pray the Lord's Prayer slowly and stop at \"forgive us our debts, as we also have forgiven our debtors\" (Matthew 6:12). If you can't yet pray the second half honestly, tell God so.",
+      "read": { "label": "Matthew 18 in the Study Bible, with a note on what the parable does not require", "href": "/study/bible/matthew/18" },
+      "tool": { "label": "The Verse Finder's forgiveness verses, on forgiving as you have been forgiven", "href": "/tools/verse-finder" },
+      "reflection": "What mercy have I received, from God or from people, that I have never let myself feel the weight of?"
+    },
+    {
+      "n": 6,
+      "focus": "Boundaries, and whether to reconcile",
+      "why": "Forgiveness takes one person. Reconciliation takes two, and it needs truth, repentance, and time. When Joseph's brothers came to Egypt, he recognized them and did not reveal himself. He tested them across three chapters, until Judah offered himself as a slave in Benjamin's place (Genesis 44:33), and only then did Joseph make himself known, as ruler of the land and no longer in their power. Paul writes, \"If it is possible on your part, live at peace with everyone\" (Romans 12:18), and both of his conditions are honest. Sometimes peace isn't possible, and it was never all on you. A boundary kept for safety is not a grudge.",
+      "practice": "Each day, add a line to a private list of what would have to be true before you could trust this person again: the truth told, the harm owned, changed behavior that lasts. If nothing could make them safe, write that too and let it stand. This week is for deciding, not for contacting anyone.",
+      "read": { "label": "How Do You Heal After Betrayal by Someone Close? On forgiveness, reconciliation, and trust as three different things", "href": "/life/betrayal-and-broken-trust" },
+      "tool": { "label": "The Conflict Guide's Trust Repair path, only for a relationship where you are safe", "href": "/tools/conflict-guide" },
+      "reflection": "What would have to be true before this person could be trusted again, and am I free to accept that it may never be true?"
+    },
+    {
+      "n": 7,
+      "focus": "The one who never said sorry",
+      "why": "The hardest forgiveness is the kind no one asked for. They may deny it happened, or they may have died, and the wound has been waiting on a conversation that will never take place. Faithful Christians differ on whether forgiveness is complete before the other person repents, but they agree on what you can do without them, which is to give up the revenge and hand the case to God. When your own words run out, you can borrow the prayer Jesus prayed over men who had asked for nothing, \"Father, forgive them, for they do not know what they are doing\" (Luke 23:34). None of it requires contacting anyone, pretending, or standing at a grave before you're ready. Expect to do it more than once.",
+      "practice": "Write a letter you will never send to the one who never apologized, or who has died. Say what they did, what it cost you, and what you are handing to God. Read it aloud to God once, then keep it private or destroy it. On the days after, when the memory returns, tell God again that it is his.",
+      "read": { "label": "How to Forgive Someone Who Has Not Apologized, even someone who has died", "href": "/how-tos/rel-how-to-forgive-someone-who-has-not-apologized" },
+      "tool": { "label": "The care page on not being able to forgive, with the signs that it is time for more help", "href": "/help/cant-forgive" },
+      "reflection": "What am I still waiting for them to say, and what would it mean for me to stop waiting?"
+    },
+    {
+      "n": 8,
+      "focus": "When the one you cannot forgive is you",
+      "why": "Scripture never asks you to absolve yourself, and you don't have the authority to, which is part of why telling yourself you're forgiven rings hollow. Peter denied Jesus three times, then went outside and wept bitterly (Luke 22:62). He was not restored by forgiving himself. The risen Jesus came to him by the sea, asked him three times whether he loved him, and gave him sheep to feed (John 21:15-17). Receiving a verdict you had no right to give yourself is not arrogance, and refusing it is not humility. If what you can't forgive yourself for was done to you, the staying or the not seeing sooner, that weight belongs to the one who did it. And if the accusing voice turns toward harming yourself, tell someone today and call or text 988.",
+      "practice": "Each day, name one specific wrong to God, plainly, and read Psalm 103:8-12 aloud as his answer. Where you can make amends without harming or pressuring the one you wronged, do it; where you can't, leave it with him. And keep praying the Lord's Prayer after these weeks end. It holds both debts in a single line.",
+      "read": { "label": "How to Confess Sin and Walk in Repentance, on receiving forgiveness as already done", "href": "/how-tos/sf-how-to-confess-sin-and-walk-in-repentance" },
+      "tool": { "label": "Scripture Memory, the Forgiveness and Grace set, Psalm 103:12 among them", "href": "/tools/scripture-memory" },
+      "reflection": "What am I still trying to pay for that God has already forgiven, and who taught me that punishing myself was the same as taking it seriously?"
+    }
+  ]
+}

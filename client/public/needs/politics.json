@@ -1,0 +1,50 @@
+{
+  "slug": "politics",
+  "page": false,
+  "rank": 33,
+  "title": "Politics is tearing my family apart",
+  "summary": "When the fight at the table is about the flag or the cause: an older allegiance than either.",
+  "askedAs": [
+    "politics and faith",
+    "family political arguments",
+    "Christian nationalism",
+    "divided family",
+    "how to talk about politics",
+    "church divided over politics"
+  ],
+  "states": [
+    "carrying",
+    "helping",
+    "leading"
+  ],
+  "sensitivity": "ordinary",
+  "kit": {
+    "read": [
+      {
+        "href": "/life/faith-and-politics",
+        "label": "How Should a Christian Think About Politics?",
+        "kind": "Life"
+      },
+      {
+        "href": "/pathways/christian-nationalism",
+        "label": "Faith and the Flag",
+        "kind": "Pathway"
+      },
+      {
+        "href": "/pathways/progressive-captivity",
+        "label": "Faith and the Cause",
+        "kind": "Pathway"
+      },
+      {
+        "href": "/wisdom/division-in-the-church",
+        "label": "Division in the Church",
+        "kind": "Wisdom"
+      },
+      {
+        "href": "/wisdom/difficult-family",
+        "label": "Difficult Family",
+        "kind": "Wisdom"
+      }
+    ]
+  }
+}

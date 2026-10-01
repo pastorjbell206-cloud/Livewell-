@@ -60,7 +60,9 @@ export const KIND_ORDER = [
   "Church and power",
   "Nation",
   "Pathway",
+  "Care page",
   "Care plan",
+  "Reading plan",
   "Group guide",
   "Argument",
   "Family",
@@ -338,9 +340,38 @@ export const LIBRARIES = {
     list("pathways/index.json").map((p) =>
       item({ kind: "Pathway", title: p.title, summary: clip(p.subtitle ?? p.forWhom), href: `/pathways/${p.slug}` })
     ),
+  // Find Help care pages (/help/:slug): only registry needs with a written page.
+  needs: () =>
+    list("needs/index.json", "needs")
+      .filter((n) => n.page === true)
+      .map((n) => item({
+        kind: "Care page",
+        title: n.title,
+        summary: clip(n.summary),
+        href: `/help/${n.slug}`,
+        // Built by scripts/lib/help-printables.mjs inside `pnpm pdfs`.
+        files: [
+          ["One-page guide", "guide"], ["Prayer cards", "prayer"], ["Scripture cards", "scripture"], ["Worksheet for the week", "week"],
+        ].flatMap(([label, kind]) => [
+          file(`${label} (Letter)`, `/downloads/help/${n.slug}-${kind}-letter.pdf`),
+          file(`${label} (A4)`, `/downloads/help/${n.slug}-${kind}-a4.pdf`),
+        ]),
+      })),
   plans: () =>
     list("plans/plans-index.json", "plans").map((p) =>
-      item({ kind: "Care plan", title: p.title, summary: clip(p.blurb), href: `/plans/${p.slug}` })
+      item({
+        kind: "Care plan", title: p.title, summary: clip(p.blurb), href: `/plans/${p.slug}`,
+        // Built by scripts/lib/help-printables.mjs inside `pnpm pdfs`.
+        files: [file("Printable booklet (Letter)", `/downloads/plans/${p.slug}-booklet-letter.pdf`), file("Printable booklet (A4)", `/downloads/plans/${p.slug}-booklet-a4.pdf`)],
+      })
+    ),
+  // Printable Bible reading plans, built by scripts/lib/reading-plans.mjs inside `pnpm pdfs`.
+  readingPlans: () =>
+    JSON.parse(fs.readFileSync(path.join(ROOT, "client/src/data/bible-reading-plans.json"), "utf8")).plans.map((p) =>
+      item({
+        kind: "Reading plan", title: p.title, summary: clip(p.blurb), href: `/plans#${p.id}`, period: `${p.days} days`,
+        files: [file("Printable plan (Letter)", `/downloads/reading-plans/${p.id}-letter.pdf`), file("Printable plan (A4)", `/downloads/reading-plans/${p.id}-a4.pdf`)],
+      })
     ),
   justice: () =>
     list("justice/topics-index.json", "topics").map((t) =>
@@ -362,7 +393,16 @@ export const LIBRARIES = {
     const devotions = [...list("family-devotions.json"), ...list("family-devotions-2.json")].length;
     return [
       item({ kind: "Family", title: "Family Catechism", summary: clip("A 52-question family catechism in the New City Catechism tradition. Each week: a question, answers for adults and children, a verse, a reflection, a prayer."), href: "/family/catechism", period: `${list("family-catechism.json").length} questions` }),
-      item({ kind: "Family", title: "Family Devotions", summary: clip("A full year of family devotions to do together, plus daily Advent and Holy Week devotionals — each with a passage, a question, an activity, and a prayer."), href: "/family/devotions", period: `${devotions} devotions` }),
+      item({
+        kind: "Family", title: "Family Devotions", summary: clip("A full year of family devotions to do together, plus daily Advent and Holy Week devotionals — each with a passage, a question, an activity, and a prayer."), href: "/family/devotions", period: `${devotions} devotions`,
+        // The seasonal booklets, built by scripts/lib/help-printables.mjs inside `pnpm pdfs`.
+        files: [
+          file("Advent booklet (Letter)", "/downloads/seasonal/advent-family-letter.pdf"),
+          file("Advent booklet (A4)", "/downloads/seasonal/advent-family-a4.pdf"),
+          file("Holy Week booklet (Letter)", "/downloads/seasonal/holy-week-family-letter.pdf"),
+          file("Holy Week booklet (A4)", "/downloads/seasonal/holy-week-family-a4.pdf"),
+        ],
+      }),
       item({ kind: "Family", title: "Family Reading Plans", summary: clip("Read the Bible together as a family: the life of Jesus, the Old Testament for kids, the Psalms, and a starter plan. A passage and a prompt for each day."), href: "/family/reading-plans", period: `${list("family-reading-plans.json").length} plans` }),
     ];
   },

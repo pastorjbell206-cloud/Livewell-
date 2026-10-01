@@ -31,6 +31,9 @@ import { SUBPATHWAY_BY_SLUG } from "@/lib/subpathwayMap.generated";
 import { HIDDEN_SLUGS } from "@/lib/hiddenSlugs";
 import { isFullEssay } from "@/lib/essayQuality";
 import { StartHereRow } from "@/components/StartHereRow";
+import { EditorialIndex } from "@/components/editorial/EditorialIndex";
+import { getReadEssays } from "@/lib/readProgress";
+import { essaySubjectLabel } from "@/lib/essayLabel";
 
 /** A post's sub-pathway: the DB value if set, else the static slug map. */
 function resolveSub(p: any): string | null {
@@ -64,6 +67,7 @@ function parseSearchParams(): URLSearchParams {
 }
 
 export default function Writing() {
+  const [readSlugs] = useState<Set<string>>(() => getReadEssays());
   const [location] = useLocation();
   const postsQuery = trpc.posts.listPublished.useQuery();
   const [search, setSearch] = useState("");
@@ -366,27 +370,6 @@ export default function Writing() {
             </div>
           )}
 
-          {rest.length > visibleCount && (
-            <div style={{ textAlign: "center", marginTop: "var(--s-5)" }}>
-              <button
-                type="button"
-                onClick={() => setVisibleCount(c => c + 48)}
-                style={{
-                  fontFamily: "var(--U)",
-                  fontSize: "14px",
-                  fontWeight: 600,
-                  color: "var(--ink)",
-                  background: "transparent",
-                  border: "1px solid var(--border)",
-                  borderRadius: "var(--radius-sm)",
-                  padding: "13px 28px",
-                  cursor: "pointer",
-                }}
-              >
-                Show more — {rest.length - visibleCount} remaining
-              </button>
-            </div>
-          )}
         </div>
       </section>
 
@@ -747,102 +730,46 @@ export default function Writing() {
           )}
 
           {rest.length > 0 && (
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "repeat(auto-fill, minmax(min(300px, 100%), 1fr))",
-                gap: "24px",
-              }}
-            >
-              {rest.slice(0, visibleCount).map(post => (
-                <Link
-                  key={post.id}
-                  href={`/writing/${post.slug}`}
-                  style={{ textDecoration: "none", color: "inherit" }}
-                >
-                  <article
-                    style={{
-                      background: "var(--card)",
-                      border: "1px solid var(--border)",
-                      borderRadius: "var(--radius-sm)",
-                      overflow: "hidden",
-                      height: "100%",
-                      display: "flex",
-                      flexDirection: "column",
-                      cursor: "pointer",
-                      transition: "border-color 0.2s",
-                    }}
-                    onMouseEnter={e => {
-                      e.currentTarget.style.borderColor = "var(--mustard)";
-                    }}
-                    onMouseLeave={e => {
-                      e.currentTarget.style.borderColor = "var(--border)";
-                    }}
-                  >
-                    {/* Branded typographic card art — the same generator that
-                        renders every essay's share card, so the archive reads
-                        as a designed library rather than a wall of text. Edge-
-                        cached for a year per title, lazy below the fold. */}
-                    <img
-                      loading="lazy"
-                      decoding="async"
-                      src={`/api/og?title=${encodeURIComponent(post.title)}${post.pillar ? `&pillar=${encodeURIComponent(post.pillar)}` : ""}`}
-                      alt=""
-                      width={1200}
-                      height={630}
-                      style={{ width: "100%", height: "auto", display: "block", borderBottom: "1px solid var(--border)" }}
-                    />
-                    <div style={{ padding: "var(--s-4)", display: "flex", flexDirection: "column", flex: 1 }}>
-                    <div style={{ marginBottom: "12px" }}>
-                      <TrackChip pillarOrTrack={post.pillar} slug={post.slug} asLink={false} />
-                    </div>
-                    <h3
-                      style={{
-                        fontFamily: "var(--F)",
-                        fontSize: "22px",
-                        fontWeight: 500,
-                        letterSpacing: "-0.005em",
-                        lineHeight: 1.25,
-                        color: "var(--ink)",
-                        marginBottom: "12px",
-                      }}
-                    >
-                      {post.title}
-                    </h3>
-                    {post.excerpt && (
-                      <p
-                        style={{
-                          fontFamily: "var(--B)",
-                          fontSize: "14px",
-                          lineHeight: 1.6,
-                          color: "var(--ink-muted)",
-                          marginBottom: "16px",
-                          flex: 1,
-                        }}
-                      >
-                        {post.excerpt.slice(0, 140)}
-                        {post.excerpt.length > 140 ? "…" : ""}
-                      </p>
-                    )}
-                    <div
-                      style={{
-                        display: "flex",
-                        justifyContent: "space-between",
-                        fontFamily: "var(--U)",
-                        fontSize: "12px",
-                        color: "var(--ink-muted)",
-                      }}
-                    >
+            <>
+              <p role="status" style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "0 0 var(--s-2)" }}>
+                {`Showing ${Math.min(visibleCount, rest.length)} of ${rest.length}`}
+              </p>
+              {/* Every essay keeps its own branded art (the same generator as
+                  its share card), set beside the text so the row stays a
+                  comfortable read; phones drop the art for speed and room. */}
+              <EditorialIndex
+                columns={1}
+                thumbSide="right"
+                thumbWidth={232}
+                label="Essays"
+                items={rest.slice(0, visibleCount).map((post) => ({
+                  href: `/writing/${post.slug}`,
+                  title: post.title,
+                  dek: post.excerpt,
+                  kicker: essaySubjectLabel(post),
+                  read: readSlugs.has(post.slug),
+                  thumb: `/api/og?title=${encodeURIComponent(post.title)}${post.pillar ? `&pillar=${encodeURIComponent(post.pillar)}` : ""}`,
+                  meta: (
+                    <>
                       <span>{post.readingTimeMinutes ?? 5} min read</span>
-                      {post.format && post.format !== "article" && (
-                        <span>{FORMAT_LABELS[post.format] ?? post.format}</span>
-                      )}
-                    </div>
-                    </div>
-                  </article>
-                </Link>
-              ))}
-            </div>
+                      {post.format && post.format !== "article" && <span>{FORMAT_LABELS[post.format] ?? post.format}</span>}
+                    </>
+                  ),
+                }))}
+              />
+              {rest.length > visibleCount && (
+                <div style={{ textAlign: "center", marginTop: "var(--s-5)" }}>
+                  <button
+                    type="button"
+                    onClick={() => setVisibleCount(c => c + 48)}
+                    className="ed-chip"
+                    style={{ padding: "13px 28px", fontWeight: 600 }}
+                  >
+                    Show more: {rest.length - visibleCount} remaining
+                  </button>
+                </div>
+              )}
+            </>
           )}
         </div>
       </section>

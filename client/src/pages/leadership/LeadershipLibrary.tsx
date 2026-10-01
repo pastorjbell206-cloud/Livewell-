@@ -59,7 +59,7 @@ export default function LeadershipLibrary() {
             {groups.map((g) => <Chip key={g} active={group === g} onClick={() => setGroup(group === g ? null : g)}>{g}</Chip>)}
           </div>
 
-          {!items.length && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }}>Loading…</p>}
+          {!items.length && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }} role="status">Loading…</p>}
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(380px, 100%), 1fr))", gap: "14px" }}>
             {filtered.map((a) => (
               <Link key={a.slug} href={`/leadership/article/${a.slug}`} style={{ display: "flex", gap: "16px", background: "var(--card)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", overflow: "hidden", textDecoration: "none", color: "inherit", height: "100%" }}>

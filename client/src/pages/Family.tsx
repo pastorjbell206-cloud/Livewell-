@@ -14,9 +14,13 @@ import { SKEPTIC_TRACK_LIVE } from "@/lib/skepticTrack";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { PullQuote, StatementBand, SectionArt } from "@/components/EditorialBlocks";
+import { EditorialIndex, type IndexItem } from "@/components/editorial/EditorialIndex";
+import { CardGrid } from "@/components/editorial/CardGrid";
+import { SectionHead } from "@/components/editorial/SectionHead";
 import { trpc } from "@/lib/trpc";
 import SubjectShelf from "@/components/SubjectShelf";
 import { subjectById } from "@/lib/subjects";
+import { getReadEssays } from "@/lib/readProgress";
 
 interface Devotion {
   id: string;
@@ -37,41 +41,6 @@ const card = {
   color: "inherit", display: "block",
 } as const;
 
-function SectionHead({ kicker, title, blurb }: { kicker: string; title: string; blurb: string }) {
-  return (
-    <div style={{ marginBottom: "var(--s-4)" }}>
-      <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "10px" }}>{kicker}</div>
-      <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(26px, 3.5vw, 34px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", marginBottom: "10px" }}>{title}</h2>
-      <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "64ch" }}>{blurb}</p>
-    </div>
-  );
-}
-
-function LinkCard({ href, title, desc, external }: { href: string; title: string; desc: string; external?: boolean }) {
-  const inner = (
-    <>
-      <div style={{ fontFamily: "var(--F)", fontSize: "19px", fontWeight: 500, color: "var(--ink)", marginBottom: "6px" }}>{title}</div>
-      <div style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.6, color: "var(--ink-muted)" }}>{desc}</div>
-    </>
-  );
-  return external ? (
-    <a href={href} style={card}>{inner}</a>
-  ) : (
-    <Link href={href} style={card}>{inner}</Link>
-  );
-}
-
-const grid = { display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "16px" } as const;
-
-function PostCard({ slug, title, excerpt }: { slug: string; title: string; excerpt?: string | null }) {
-  return (
-    <Link href={`/writing/${slug}`} style={card}>
-      <div style={{ fontFamily: "var(--F)", fontSize: "19px", fontWeight: 500, color: "var(--ink)", marginBottom: "8px", lineHeight: 1.25 }}>{title}</div>
-      {excerpt && <div style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.6, color: "var(--ink-muted)" }}>{excerpt.slice(0, 130)}{excerpt.length > 130 ? "…" : ""}</div>}
-    </Link>
-  );
-}
-
 export default function Family() {
   const postsQuery = trpc.posts.listPublished.useQuery();
   const posts = postsQuery.data ?? [];
@@ -79,6 +48,18 @@ export default function Family() {
   const apologetics = posts.filter((p) => p.slug.startsWith("apologetics-"));
   const parentingArticles = posts.filter((p) => p.slug.startsWith("parenting-"));
   const marriageArticles = posts.filter((p) => p.slug.startsWith("marriage-"));
+
+  // Published essays read as an index (one link per row, the excerpt at
+  // reading size, a quiet mark on the ones this reader has finished).
+  const [readSlugs] = useState<Set<string>>(() => getReadEssays());
+  const essayRows = (list: typeof posts): IndexItem[] =>
+    list.map((p) => ({
+      href: `/writing/${p.slug}`,
+      title: p.title,
+      dek: p.excerpt,
+      read: readSlugs.has(p.slug),
+      meta: p.readingTimeMinutes ? <span>{p.readingTimeMinutes} min read</span> : undefined,
+    }));
 
   const [devotions, setDevotions] = useState<Devotion[]>([]);
   const [openDev, setOpenDev] = useState<string | null>(null);
@@ -98,7 +79,7 @@ export default function Family() {
       />
 
       {/* HERO */}
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>Integrated Life · Family</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(34px, 5vw, 56px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "20ch" }}>
@@ -119,7 +100,7 @@ export default function Family() {
               The Family Catechism
             </div>
             <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "64ch", marginBottom: "12px" }}>
-              Fifty-two questions, one a week, in the New City Catechism tradition. An answer for the grown-ups and one for the little ones, a verse, a short reflection, and a prayer. The oldest way a family has ever learned the faith.
+              Seventy-six questions, one a week, in the New City Catechism tradition. An answer for the grown-ups and one for the little ones, a verse, a short reflection, and a prayer. The oldest way a family has ever learned the faith.
             </p>
             <span style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--mustard-text)", display: "inline-flex", alignItems: "center", gap: "6px" }}>
               Start the catechism <ArrowRight size={14} />
@@ -131,9 +112,11 @@ export default function Family() {
       {/* FAMILY DEVOTIONS */}
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-5)" }}>
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
-          <SectionHead kicker="Do this together" title="Family devotions" blurb="Short, warm devotions for the table or the couch — a passage, a question that actually starts a conversation, something to do together, and a prayer a child can pray. Tap one to open it." />
+          <SectionHead eyebrow="Do this together" title="Family devotions" intro="Short, warm devotions for the table or the couch — a passage, a question that actually starts a conversation, something to do together, and a prayer a child can pray. Tap one to open it." />
           {devotions.length === 0 ? (
-            <LinkCard href="/tools/family-devotions" title="Build a family devotion" desc="Pick your kids' ages and a theme and get a complete 15-minute devotion with Scripture, teaching, an activity, and a prayer." />
+            <CardGrid
+              items={[{ href: "/tools/family-devotions", title: "Build a family devotion", dek: "Pick your kids' ages and a theme and get a complete 15-minute devotion with Scripture, teaching, an activity, and a prayer." }]}
+            />
           ) : (
             <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
               {devotions.map((d) => {
@@ -205,23 +188,19 @@ export default function Family() {
       {/* TEEN APOLOGETICS */}
       <section style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--s-4) var(--s-5)" }}>
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
-          <SectionHead kicker="For teenagers" title="Why we believe" blurb="Faith does not survive on what alone. A teenager needs the why. Honest answers to the hard questions — the resurrection, the Bible, suffering, science, other religions, and doubt itself." />
+          <SectionHead eyebrow="For teenagers" title="Why we believe" intro="Faith does not survive on what alone. A teenager needs the why. Honest answers to the hard questions — the resurrection, the Bible, suffering, science, other religions, and doubt itself." />
           {teen.length > 0 ? (
-            <div style={grid}>
-              {teen.map((p) => (
-                <Link key={p.slug} href={`/writing/${p.slug}`} style={card}>
-                  <div style={{ fontFamily: "var(--F)", fontSize: "19px", fontWeight: 500, color: "var(--ink)", marginBottom: "8px", lineHeight: 1.25 }}>{p.title}</div>
-                  {p.excerpt && <div style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.6, color: "var(--ink-muted)" }}>{p.excerpt.slice(0, 130)}{p.excerpt.length > 130 ? "…" : ""}</div>}
-                </Link>
-              ))}
-            </div>
+            <EditorialIndex label="Why we believe" items={essayRows(teen)} />
           ) : (
-            <div style={grid}>
-              {SKEPTIC_TRACK_LIVE && (
-                <LinkCard href="/skeptic-track" title="Start here if you're a skeptic" desc="Seven essays in argument order, for anyone working out whether this is true." />
-              )}
-              <LinkCard href="/doubt" title="On doubt" desc="Doubt is not the enemy of faith. What to do with the questions." />
-            </div>
+            <CardGrid
+              min={440}
+              items={[
+                ...(SKEPTIC_TRACK_LIVE
+                  ? [{ href: "/skeptic-track", title: "Start here if you're a skeptic", dek: "Seven essays in argument order, for anyone working out whether this is true." }]
+                  : []),
+                { href: "/doubt", title: "On doubt", dek: "Doubt is not the enemy of faith. What to do with the questions." },
+              ]}
+            />
           )}
         </div>
       </section>
@@ -230,10 +209,8 @@ export default function Family() {
       {apologetics.length > 0 && (
         <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-5)" }}>
           <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
-            <SectionHead kicker="For the asking" title="The apologetics library" blurb="The hardest questions, answered honestly — morality, suffering, hell, miracles, the hiddenness of God, the failures of the church, and whether faith is reasonable at all. For the teenager and the skeptic both." />
-            <div style={grid}>
-              {apologetics.map((p) => <PostCard key={p.slug} slug={p.slug} title={p.title} excerpt={p.excerpt} />)}
-            </div>
+            <SectionHead eyebrow="For the asking" title="The apologetics library" intro="The hardest questions, answered honestly — morality, suffering, hell, miracles, the hiddenness of God, the failures of the church, and whether faith is reasonable at all. For the teenager and the skeptic both." />
+            <EditorialIndex label="The apologetics library" items={essayRows(apologetics)} />
           </div>
         </section>
       )}
@@ -243,30 +220,45 @@ export default function Family() {
       {/* PARENTING */}
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-5)" }}>
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
-          <SectionHead kicker="Raising them in the faith" title="Parenting" blurb="The work no one applauds, done where no congregation watches. Scripture for the real moments, plus writing and tools for the long obedience of raising children who can carry weight." />
-          <div style={grid}>
-            {parentingArticles.map((p) => <PostCard key={p.slug} slug={p.slug} title={p.title} excerpt={p.excerpt} />)}
-            <LinkCard href="/tools/parenting-verses" title="Parenting Bible verses" desc="Scripture for fear, anger, identity, obedience, screens, and doubt — each with a short note for the parent." />
-            <LinkCard href="/parenting" title="On parenting" desc="Essays on raising children in the faith without crushing them." />
-            <LinkCard href="/tools/parenting-guide" title="Parenting stage guide" desc="Age-specific guidance from toddlers to young adults, and one practice to start this week." />
-            <LinkCard href="/writing/what-fatherhood-requires" title="What fatherhood requires" desc="On the inheritance you pass down, and the one you choose to break." />
-            <LinkCard href="/life/raising-children-in-grace" title="Raising children in grace" desc="The deep guide: discipline that reaches the heart, faith, screens, and the teen years. You cannot save your children, and you were never meant to." />
-            <LinkCard href="/life/the-home-and-the-family" title="The home and the family" desc="The household as a school of grace: the table, family worship, and the open door." />
-          </div>
+          <SectionHead eyebrow="Raising them in the faith" title="Parenting" intro="The work no one applauds, done where no congregation watches. Scripture for the real moments, plus writing and tools for the long obedience of raising children who can carry weight." />
+          {parentingArticles.length > 0 && (
+            <div style={{ marginBottom: "var(--s-5)" }}>
+              <EditorialIndex label="Parenting essays" items={essayRows(parentingArticles)} />
+            </div>
+          )}
+          <CardGrid
+            label="Parenting guides and tools"
+            items={[
+              { href: "/tools/parenting-verses", title: "Parenting Bible verses", dek: "Scripture for fear, anger, identity, obedience, screens, and doubt — each with a short note for the parent." },
+              { href: "/parenting", title: "On parenting", dek: "Essays on raising children in the faith without crushing them." },
+              { href: "/tools/parenting-guide", title: "Parenting stage guide", dek: "Age-specific guidance from toddlers to young adults, and one practice to start this week." },
+              { href: "/writing/what-fatherhood-requires", title: "What fatherhood requires", dek: "On the inheritance you pass down, and the one you choose to break." },
+              { href: "/life/raising-children-in-grace", title: "Raising children in grace", dek: "The deep guide: discipline that reaches the heart, faith, screens, and the teen years. You cannot save your children, and you were never meant to." },
+              { href: "/life/the-home-and-the-family", title: "The home and the family", dek: "The household as a school of grace: the table, family worship, and the open door." },
+            ]}
+          />
         </div>
       </section>
 
       {/* MARRIAGE */}
       <section style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--s-4) var(--s-5)" }}>
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
-          <SectionHead kicker="The center of the home" title="Marriage" blurb="A home is built on a covenant before it is built on anything else. Writing and a real assessment for the marriage your family is standing on." />
-          <div style={grid}>
-            {marriageArticles.map((p) => <PostCard key={p.slug} slug={p.slug} title={p.title} excerpt={p.excerpt} />)}
-            <LinkCard href="/marriage" title="On marriage" desc="Covenant, not contract. Marriage through the long middle." />
-            <LinkCard href="/tools/marriage-assessment" title="Marriage health assessment" desc="A 15-question diagnostic across communication, trust, conflict, and shared vision." />
-            <LinkCard href="/writing/covenant-vs-contract-what-marriage-is" title="Covenant vs. contract" desc="What marriage actually is, and why the difference holds it together." />
-            <LinkCard href="/life/marriage-the-long-covenant" title="Marriage: the long covenant" desc="The deep guide: the slow drift, conflict, money, desire, and the daily work of staying married well." />
-          </div>
+          <SectionHead eyebrow="The center of the home" title="Marriage" intro="A home is built on a covenant before it is built on anything else. Writing and a real assessment for the marriage your family is standing on." />
+          {marriageArticles.length > 0 && (
+            <div style={{ marginBottom: "var(--s-5)" }}>
+              <EditorialIndex label="Marriage essays" items={essayRows(marriageArticles)} />
+            </div>
+          )}
+          <CardGrid
+            min={440}
+            label="Marriage guides and tools"
+            items={[
+              { href: "/marriage", title: "On marriage", dek: "Covenant, not contract. Marriage through the long middle." },
+              { href: "/tools/marriage-assessment", title: "Marriage health assessment", dek: "A 15-question diagnostic across communication, trust, conflict, and shared vision." },
+              { href: "/writing/covenant-vs-contract-what-marriage-is", title: "Covenant vs. contract", dek: "What marriage actually is, and why the difference holds it together." },
+              { href: "/life/marriage-the-long-covenant", title: "Marriage: the long covenant", dek: "The deep guide: the slow drift, conflict, money, desire, and the daily work of staying married well." },
+            ]}
+          />
         </div>
       </section>
 
@@ -274,14 +266,17 @@ export default function Family() {
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-7)" }}>
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
           <SectionArt seed="family-tools" />
-          <SectionHead kicker="For the home" title="Tools" blurb="Practical tools to use around the table and through the week." />
-          <div style={grid}>
-            <LinkCard href="/tools/verse-finder" title="Bible verse finder" desc="Find Scripture for any season — anxiety, grief, hope, courage — and share it." />
-            <LinkCard href="/tools/family-devotions" title="Family devotion builder" desc="Build a 15-minute devotion by your kids' ages and a theme." />
-            <LinkCard href="/tools/bible-study" title="Bible study guide" desc="Study any book of the Bible with themes, questions, and reading strategies." />
-            <LinkCard href="/tools/prayer-generator" title="Prayer generator" desc="Guided prayers for morning, evening, strength, guidance, and gratitude." />
-            <LinkCard href="/tools/rule-of-life" title="Rule of life builder" desc="Build a sustainable rhythm of prayer, Scripture, rest, community, and mission you can actually keep." />
-          </div>
+          <SectionHead eyebrow="For the home" title="Tools" intro="Practical tools to use around the table and through the week." />
+          <CardGrid
+            label="Tools for the home"
+            items={[
+              { href: "/tools/verse-finder", title: "Bible verse finder", dek: "Find Scripture for any season — anxiety, grief, hope, courage — and share it." },
+              { href: "/tools/family-devotions", title: "Family devotion builder", dek: "Build a 15-minute devotion by your kids' ages and a theme." },
+              { href: "/tools/bible-study", title: "Bible study guide", dek: "Study any book of the Bible with themes, questions, and reading strategies." },
+              { href: "/tools/prayer-generator", title: "Prayer generator", dek: "Guided prayers for morning, evening, strength, guidance, and gratitude." },
+              { href: "/tools/rule-of-life", title: "Rule of life builder", dek: "Build a sustainable rhythm of prayer, Scripture, rest, community, and mission you can actually keep." },
+            ]}
+          />
         </div>
       </section>
       {subjectById("family") && <SubjectShelf subject={subjectById("family")!} />}

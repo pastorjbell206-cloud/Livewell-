@@ -1,0 +1,45 @@
+{
+  "slug": "pets-and-heaven",
+  "page": false,
+  "rank": 38,
+  "title": "Will I see my pet again?",
+  "summary": "Grief for an animal is real grief. What Scripture says about creation's future, and what it leaves unsaid.",
+  "askedAs": [
+    "do pets go to heaven",
+    "will I see my dog in heaven",
+    "do animals have souls",
+    "grieving a pet",
+    "pet loss",
+    "my dog died",
+    "is it wrong to grieve a pet this much",
+    "animals in the new creation"
+  ],
+  "states": [
+    "carrying"
+  ],
+  "sensitivity": "ordinary",
+  "kit": {
+    "read": [
+      {
+        "href": "/help/grief",
+        "label": "Someone I love has died",
+        "kind": "Page"
+      },
+      {
+        "href": "/wisdom/heaven-and-eternity",
+        "label": "Heaven and Eternity",
+        "kind": "Wisdom"
+      },
+      {
+        "href": "/theology/doctrine/last-things",
+        "label": "How Does It End?",
+        "kind": "Page"
+      },
+      {
+        "href": "/studyguides/heaven-and-hell",
+        "label": "Heaven and Hell: A Bible Study on the Life to Come",
+        "kind": "Study guide"
+      }
+    ]
+  }
+}

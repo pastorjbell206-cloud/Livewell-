@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import { scrollBehavior } from "@/lib/motion";
 import { SEOMeta } from "@/components/SEOMeta";
 import ScriptureNote from "@/components/ScriptureNote";
 import { Link } from "wouter";
@@ -754,13 +755,13 @@ export default function PastorBurnout() {
       persist(answers, currentCategory);
       setTimeout(() => {
         resultsRef.current?.focus({ preventScroll: true });
-        resultsRef.current?.scrollIntoView({ behavior: "smooth" });
+        resultsRef.current?.scrollIntoView({ behavior: scrollBehavior() });
       }, 100);
     } else if (!isLastCategory) {
       const nextStep = currentCategory + 1;
       setCurrentCategory(nextStep);
       persist(answers, nextStep);
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      window.scrollTo({ top: 0, behavior: scrollBehavior() });
     }
   };
 
@@ -769,7 +770,7 @@ export default function PastorBurnout() {
       const prevStep = currentCategory - 1;
       setCurrentCategory(prevStep);
       persist(answers, prevStep);
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      window.scrollTo({ top: 0, behavior: scrollBehavior() });
     }
   };
 
@@ -779,7 +780,7 @@ export default function PastorBurnout() {
     setCurrentCategory(0);
     setShowResults(false);
     setResumed(false);
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: scrollBehavior() });
   };
 
   const handleChangeAnswers = () => {
@@ -789,7 +790,7 @@ export default function PastorBurnout() {
     persist(answers, 0);
     setPrevious(null);
     setSaved(true);
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: scrollBehavior() });
   };
 
   const handleClearHistory = () => {
@@ -1346,7 +1347,7 @@ export default function PastorBurnout() {
           style={{ padding: "48px 32px 80px", background: "var(--bone)", outline: "none" }}
         >
           <div className="wrap" style={{ maxWidth: "800px" }}>
-            <ToolActions toolName="Pastor Burnout Diagnostic" />
+            <ToolActions toolName="Pastor Burnout Diagnostic" onStartOver={handleRestart} />
             {persistFailed && (
               <p
                 style={{

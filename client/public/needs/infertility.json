@@ -1,0 +1,43 @@
+{
+  "slug": "infertility",
+  "page": false,
+  "rank": 41,
+  "title": "We can't have children",
+  "summary": "For the ache of an empty nursery and a long wait, with Hannah's honesty and without platitudes.",
+  "askedAs": [
+    "infertility",
+    "can't get pregnant",
+    "childless",
+    "waiting for a baby",
+    "Hannah",
+    "trying to conceive"
+  ],
+  "states": [
+    "carrying"
+  ],
+  "sensitivity": "ordinary",
+  "kit": {
+    "read": [
+      {
+        "href": "/life/infertility-and-childlessness",
+        "label": "Where Is God in Infertility and Childlessness?",
+        "kind": "Life"
+      },
+      {
+        "href": "/wisdom/infertility",
+        "label": "Infertility and Childlessness",
+        "kind": "Wisdom"
+      },
+      {
+        "href": "/life/waiting-and-unanswered-prayer",
+        "label": "What Do You Do When God Does Not Answer Prayer?",
+        "kind": "Life"
+      },
+      {
+        "href": "/studyguides/lament",
+        "label": "Lament: A Bible Study on Praying Your Pain",
+        "kind": "Study guide"
+      }
+    ]
+  }
+}

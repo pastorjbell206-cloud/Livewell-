@@ -9,34 +9,20 @@
  * James has mentioned but not yet linked simply does not appear — no dead
  * icons, no "coming soon".
  */
-import { Link } from "wouter";
 import { liveChannels } from "@/lib/channels";
+import { EditorialIndex } from "@/components/editorial/EditorialIndex";
 
-const tile = {
-  display: "block",
-  textDecoration: "none",
-  background: "rgba(245,240,230,0.06)",
-  border: "1px solid rgba(245,240,230,0.16)",
-  borderRadius: "var(--radius-sm)",
-  padding: "18px 20px",
-} as const;
-
-const tileTitle = {
-  fontFamily: "var(--F)",
-  fontSize: "20px",
-  fontWeight: 500,
-  color: "var(--bone)",
-  marginBottom: "6px",
-  lineHeight: 1.2,
-} as const;
-
-const tileBlurb = {
-  fontFamily: "var(--B)",
-  fontSize: "13.5px",
-  lineHeight: 1.6,
-  color: "rgba(245,240,230,0.72)",
-  margin: 0,
-} as const;
+// The site's own surfaces first: everything written, the books, the things
+// to use, and the way to work with James. A reader should be able to reach
+// all of it from one block rather than hunting.
+const SITE_DOORS = [
+  { href: "/explore", title: "The Library", dek: "Everything in one place: essays, guides, studies, and every download, searchable." },
+  { href: "/writing", title: "All the writing", dek: "Every essay, searchable, filed by subject." },
+  { href: "/books", title: "The books", dek: "Three books, each written by hand." },
+  { href: "/tools", title: "The tools", dek: "Assessments, study guides, guided reading paths, and the rest." },
+  { href: "/downloads", title: "Downloads and PDFs", dek: "Every printable: leader guides and participant handouts. Free." },
+  { href: "/work-with-james", title: "Work with James", dek: "Preaching, consulting, and coming alongside a church or a leader." },
+];
 
 export default function FollowJames({
   heading = "Where else to find James",
@@ -48,7 +34,7 @@ export default function FollowJames({
   const channels = liveChannels();
 
   return (
-    <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4)", color: "var(--bone)" }}>
+    <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4)", color: "var(--charcoal-fg)" }}>
       <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
         <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "10px" }}>
           Follow the writing
@@ -78,53 +64,24 @@ export default function FollowJames({
           {blurb}
         </p>
 
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fill, minmax(min(260px, 100%), 1fr))",
-            gap: "14px",
-          }}
-        >
-          {/* The site's own surfaces first: everything written, the books, the
-              things to use, and the way to work with James. A reader should be
-              able to reach all of it from one block rather than hunting. */}
-          <Link href="/explore" style={tile}>
-            <div style={tileTitle}>The Library</div>
-            <p style={tileBlurb}>Everything in one place: essays, books, guides, and every download, searchable.</p>
-          </Link>
-          <Link href="/writing" style={tile}>
-            <div style={tileTitle}>All the writing</div>
-            <p style={tileBlurb}>Every essay, searchable, filed by subject.</p>
-          </Link>
-          <Link href="/books" style={tile}>
-            <div style={tileTitle}>The books</div>
-            <p style={tileBlurb}>Twenty-one titles, several readable free in full.</p>
-          </Link>
-          <Link href="/tools" style={tile}>
-            <div style={tileTitle}>The tools</div>
-            <p style={tileBlurb}>Assessments, study guides, guided reading paths, and the rest, in one place.</p>
-          </Link>
-          <Link href="/downloads" style={tile}>
-            <div style={tileTitle}>Downloads and PDFs</div>
-            <p style={tileBlurb}>Every printable: leader guides, participant handouts, sermon series. Free.</p>
-          </Link>
-          <Link href="/work-with-james" style={tile}>
-            <div style={tileTitle}>Work with James</div>
-            <p style={tileBlurb}>Preaching, consulting, and coming alongside a church or a leader.</p>
-          </Link>
-
-          {channels.map((c) => (
-            <a
-              key={c.id}
-              href={c.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={tile}
-            >
-              <div style={tileTitle}>{c.label}</div>
-              <p style={tileBlurb}>{c.blurb}</p>
-            </a>
-          ))}
+        <div className="ed-split">
+          <div>
+            <p className="ed-split-label" style={{ color: "var(--mustard)" }}>On this site</p>
+            <EditorialIndex tone="dark" columns={1} compact headingAs="span" label="On this site" items={SITE_DOORS} />
+          </div>
+          {channels.length > 0 && (
+            <div>
+              <p className="ed-split-label" style={{ color: "var(--mustard)" }}>Follow along</p>
+              <EditorialIndex
+                tone="dark"
+                columns={1}
+                compact
+                headingAs="span"
+                label="Where else James writes"
+                items={channels.map((c) => ({ href: c.url, title: c.label, dek: c.blurb, external: true }))}
+              />
+            </div>
+          )}
         </div>
       </div>
     </section>

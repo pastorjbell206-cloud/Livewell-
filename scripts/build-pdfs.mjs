@@ -4,6 +4,11 @@
  * Sources:
  *   client/public/context/guides/*.json          → client/public/downloads/context/<slug>.pdf
  *   client/public/leadership/sermon-series.json  → client/public/downloads/sermon-series/<id>.pdf
+ *   client/public/studyguides/*.json             → client/public/downloads/studyguides/<slug>-{leader,participant}.pdf
+ *   client/public/needs/*.json (care pages)      → client/public/downloads/help/<slug>-<kind>-<size>.pdf
+ *   client/public/plans/*.json                   → client/public/downloads/plans/<slug>-booklet-<size>.pdf
+ *   client/public/family-seasonal.json           → client/public/downloads/seasonal/<season>-family-<size>.pdf
+ *   client/src/data/bible-reading-plans.json     → client/public/downloads/reading-plans/<id>-<size>.pdf
  *
  * Run:  node scripts/build-pdfs.mjs
  *
@@ -20,6 +25,13 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import PDFDocument from "pdfkit";
+import { buildHelpPrintables, buildPlanBooklets, buildSeasonalPacks, buildToolPrintables, studyGuideHelpBox } from "./lib/help-printables.mjs";
+import { buildReadingPlans } from "./lib/reading-plans.mjs";
+import { passage } from "./lib/bsb.mjs";
+
+// Study guides on heavy subjects carry the help box (client/src/data/sensitive-pages.json).
+const SENSITIVE_GUIDES = new Set(JSON.parse(fs.readFileSync(new URL("../client/src/data/sensitive-pages.json", import.meta.url), "utf8")).studyguides);
+const CRISIS = JSON.parse(fs.readFileSync(new URL("../client/src/data/crisis-resources.json", import.meta.url), "utf8"));
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const GUIDES_DIR = path.join(ROOT, "client/public/context/guides");
@@ -190,17 +202,36 @@ function labelBody(doc, label, text) {
 // Study-guide toolkits: a Leader's Guide and a Participant Handout per series
 // ---------------------------------------------------------------------------
 
+/** The notice a guide that quotes the Berean Standard Bible carries. */
+function scriptureNotice(doc) {
+  doc.font("Times-Italic").fontSize(9.5).fillColor(MUTED)
+    .text("Scripture quotations are from the Berean Standard Bible, which is in the public domain.", { lineGap: 2 });
+  doc.moveDown(0.8);
+}
+
 async function buildStudyGuideLeader(g) {
   const outPath = path.join(OUT_STUDYGUIDES, `${g.slug}-leader.pdf`);
   await writePdf(outPath, (doc) => {
     coverPage(doc, { kicker: "Leader's Guide · " + g.sessionsLabel, title: g.title, subtitle: g.subtitle || g.audience + "." });
     sectionHeading(doc, { kicker: "About this study", title: g.title });
     bodyParagraphs(doc, g.summary);
+    if (g.translation === "BSB") scriptureNotice(doc);
+    if (SENSITIVE_GUIDES.has(g.slug)) studyGuideHelpBox(doc, CRISIS, "leader");
 
     if (g.leaderPrimer) {
       doc.addPage();
       sectionHeading(doc, { kicker: "Before you begin", title: "Leader training primer" });
       bodyParagraphs(doc, g.leaderPrimer);
+    }
+
+    // The facilitator's script: words to read aloud or put in your own.
+    if (g.facilitatorScript) {
+      doc.addPage();
+      sectionHeading(doc, { kicker: "Before you begin", title: "The facilitator's script" });
+      bodyParagraphs(doc, "Words you can read aloud, or put in your own: one to open each session, one to move from the teaching into the discussion, and one to close.");
+      if (g.facilitatorScript.open) labelBody(doc, "To open", g.facilitatorScript.open);
+      if (g.facilitatorScript.transition) labelBody(doc, "To move into the discussion", g.facilitatorScript.transition);
+      if (g.facilitatorScript.close) labelBody(doc, "To close", g.facilitatorScript.close);
     }
 
     for (const s of g.sessions) {
@@ -266,6 +297,45 @@ async function buildStudyGuideLeader(g) {
         .fillColor(MUTED).text(b.note);
       doc.moveDown(0.4);
     });
+    if (g.furtherReading?.length) {
+      sectionHeading(doc, { kicker: "Reference", title: "Further reading" });
+      g.furtherReading.forEach((r) => {
+        ensureRoom(doc, 40);
+        doc.font("Times-Roman").fontSize(11).fillColor(INK).text(r, { lineGap: 3 });
+        doc.moveDown(0.4);
+      });
+    }
+
+    // The reference material that used to live only on the web page.
+    if (g.glossary?.length) {
+      doc.addPage();
+      sectionHeading(doc, { kicker: "Reference", title: "Glossary" });
+      g.glossary.forEach((t) => {
+        ensureRoom(doc, 40);
+        doc.font("Times-Bold").fontSize(11).fillColor(INK).text(t.term + ". ", { continued: true })
+          .font("Times-Roman").text(t.definition, { lineGap: 3 });
+        doc.moveDown(0.4);
+      });
+    }
+    if (g.scriptureIndex?.length) {
+      sectionHeading(doc, { kicker: "Reference", title: "Scripture index" });
+      g.scriptureIndex.forEach((x) => {
+        ensureRoom(doc, 20);
+        const n = x.sessions ?? [];
+        doc.font("Times-Roman").fontSize(11).fillColor(INK).text(`${x.ref}: session${n.length > 1 ? "s" : ""} ${n.join(", ")}`, { lineGap: 2 });
+      });
+      doc.moveDown(0.6);
+    }
+    if (g.timeline?.length) {
+      doc.addPage();
+      sectionHeading(doc, { kicker: "Reference", title: "Timeline" });
+      g.timeline.forEach((t) => {
+        ensureRoom(doc, 40);
+        doc.font("Times-Bold").fontSize(11).fillColor(INK).text(t.date + ". ", { continued: true })
+          .font("Times-Roman").text(t.event, { lineGap: 3 });
+        doc.moveDown(0.4);
+      });
+    }
   }, { title: g.title + " — Leader's Guide" });
   return outPath;
 }
@@ -276,6 +346,8 @@ async function buildStudyGuideParticipant(g) {
     coverPage(doc, { kicker: "Participant Handout · " + g.sessionsLabel, title: g.title, subtitle: g.subtitle || g.audience + "." }, false);
     for (const s of g.sessions) {
       doc.addPage();
+      if (s.n === g.sessions[0].n && SENSITIVE_GUIDES.has(g.slug)) studyGuideHelpBox(doc, CRISIS, "participant");
+      if (s.n === g.sessions[0].n && g.translation === "BSB") scriptureNotice(doc);
       sectionHeading(doc, { kicker: "Session " + s.n, title: s.title });
       bodyParagraphs(doc, s.summary);
       labelBody(doc, "Key Scripture", s.keyScripture.ref);
@@ -601,6 +673,19 @@ async function main() {
       written.push(await buildSermonSeries(series, seriesData.intro));
     }
   }
+
+  // Find Help kits: a one-page guide, prayer cards, Scripture cards, and a
+  // worksheet for every care page, in Letter and A4 (scripts/lib/help-printables.mjs).
+  written.push(...(await buildHelpPrintables(ROOT)));
+  // Every eight-week care plan as a booklet, one week to a page, Letter and A4.
+  written.push(...(await buildPlanBooklets(ROOT)));
+  // Bible reading plans (a month in the Psalms to the Bible in a year), days computed from the Bible data.
+  written.push(...(await buildReadingPlans(ROOT)));
+  // Blank printables for the tools (the Worry Journal's week of evenings).
+  written.push(...(await buildToolPrintables(ROOT)));
+  // Seasonal family packs (Advent, Holy Week) from family-seasonal.json, with
+  // each day's passage printed verbatim from the BSB.
+  written.push(...(await buildSeasonalPacks(ROOT, (ref) => passage(ref).text)));
 
   let total = 0;
   let smallest = Infinity;

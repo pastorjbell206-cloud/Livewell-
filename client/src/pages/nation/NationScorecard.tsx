@@ -17,7 +17,7 @@ interface Party { id: "left" | "center" | "right"; label: string; }
 interface Data { intro: string; parties: Party[]; themes: Theme[]; closing: string; }
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
-const VERDICT: Record<string, string> = { Nearer: "#3E5C3A", Further: "#7A1F1F", Mixed: "#8A5A00" };
+const VERDICT: Record<string, string> = { Nearer: "var(--ok)", Further: "var(--alert)", Mixed: "var(--strain)" };
 
 export default function NationScorecard() {
   const [data, setData] = useState<Data | null>(null);
@@ -37,7 +37,7 @@ export default function NationScorecard() {
   }, [data]);
 
   const Badge = ({ v }: { v: string }) => (
-    <span style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase", color: VERDICT[v] ?? "var(--ink-muted)", background: `${VERDICT[v] ?? "#5A5448"}1A`, border: `1px solid ${VERDICT[v] ?? "#5A5448"}55`, borderRadius: "999px", padding: "3px 10px" }}>{v}</span>
+    <span style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase", color: VERDICT[v] ?? "var(--ink-muted)", background: `color-mix(in srgb, ${VERDICT[v] ?? "var(--ink-muted)"} 10%, transparent)`, border: `1px solid color-mix(in srgb, ${VERDICT[v] ?? "var(--ink-muted)"} 33%, transparent)`, borderRadius: "999px", padding: "3px 10px" }}>{v}</span>
   );
 
   return (
@@ -76,7 +76,7 @@ export default function NationScorecard() {
 
       <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-6)" }}>
         <div style={{ ...wrap, display: "flex", flexDirection: "column", gap: "10px" }}>
-          {!data && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }}>Loading…</p>}
+          {!data && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }} role="status">Loading…</p>}
           {data?.themes.map((th) => {
             const isOpen = open === th.name;
             return (
@@ -86,7 +86,7 @@ export default function NationScorecard() {
                   <span style={{ fontFamily: "var(--F)", fontSize: "19px", fontWeight: 500, color: "var(--ink)" }}>{th.name}</span>
                   <span style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                     <span style={{ display: "flex", gap: "4px" }}>
-                      {(["left", "center", "right"] as const).map((p) => <span key={p} aria-hidden style={{ width: "10px", height: "10px", borderRadius: "50%", background: VERDICT[th.scores[p].verdict] ?? "#5A5448" }} />)}
+                      {(["left", "center", "right"] as const).map((p) => <span key={p} aria-hidden style={{ width: "10px", height: "10px", borderRadius: "50%", background: VERDICT[th.scores[p].verdict] ?? "var(--ink-muted)" }} />)}
                     </span>
                     <ChevronDown size={18} aria-hidden style={{ color: "var(--ink-muted)", transform: isOpen ? "rotate(180deg)" : "none", transition: "transform .2s" }} />
                   </span>

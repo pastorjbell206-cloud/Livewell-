@@ -6,6 +6,7 @@
  * to it. Data: /theology/questions.json.
  */
 import { useEffect, useMemo, useState } from "react";
+import { scrollBehavior } from "@/lib/motion";
 import { Link } from "wouter";
 import { ChevronDown } from "lucide-react";
 import Layout from "@/components/Layout";
@@ -36,7 +37,7 @@ export default function TheologyQuestions() {
         const hash = window.location.hash.replace("#", "");
         if (hash && (d.questions as Q[]).some((q) => q.id === hash)) {
           setOpen(hash);
-          setTimeout(() => document.getElementById(hash)?.scrollIntoView({ behavior: "smooth", block: "start" }), 80);
+          setTimeout(() => document.getElementById(hash)?.scrollIntoView({ behavior: scrollBehavior(), block: "start" }), 80);
         }
       })
       .catch(() => {});
@@ -98,7 +99,7 @@ export default function TheologyQuestions() {
 
       <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-7)" }}>
         <div style={wrap}>
-          {questions.length === 0 && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }}>Loading…</p>}
+          {questions.length === 0 && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }} role="status">Loading…</p>}
           {groups.map(({ category, items }) => (
             <div key={category} style={{ marginBottom: "var(--s-5)" }}>
               <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(20px, 2.8vw, 26px)", fontWeight: 400, color: "var(--ink)", marginBottom: "var(--s-3)", paddingBottom: "6px", borderBottom: "2px solid var(--mustard)" }}>{category}</h2>

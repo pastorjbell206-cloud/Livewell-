@@ -1,7 +1,7 @@
 {
   "slug": "work-and-vocation",
   "title": "Work and the Weight of Monday",
-  "subtitle": "Is your job just a paycheck? Three essays, a study, and a book on the work God actually sees.",
+  "subtitle": "Is your job just a paycheck? Three essays, a study, and a guide on the work God actually sees.",
   "forWhom": "For the reader whose Monday feels like a different world than their Sunday — and suspects it should not.",
   "movements": [
     {
@@ -40,13 +40,13 @@
     },
     {
       "kind": "book",
-      "heading": "Then read the book — free, then buy",
+      "heading": "Then work it through",
       "note": "Read it cover to cover on the site before you ever buy it.",
       "items": [
         {
-          "label": "The Undivided Life",
-          "href": "/read/the-undivided-life",
-          "blurb": "The case against a faith that lives in the religious corner while the job runs on its own logic."
+          "label": "What does the Bible say about work and calling?",
+          "href": "/life/work-as-worship",
+          "blurb": "The dignity and the idolatry of work held together. What Scripture, the Reformers, and honest research say about calling, the curse on labor, and the long faithfulness that outlasts success."
         }
       ]
     }

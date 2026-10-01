@@ -9,6 +9,7 @@
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { Link } from "wouter";
+import { CardGrid } from "@/components/editorial/CardGrid";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
@@ -31,17 +32,17 @@ const GROUPS: Group[] = [
     eyebrow: "Start here",
     heading: "Where are you, actually?",
     blurb:
-      "Not where you say you are on Sunday. Where you are. These take an honest reading of the whole picture — one quick, one thorough, one to hand you a starting place.",
+      "Not where you say you are on Sunday. Where you are. These take an honest reading of the whole picture: one quick, one thorough, one to hand you a starting place.",
     items: [
       {
-        title: "The Diagnostic",
-        takeIf: "you want the honest check-in — where are you with God right now, without the church answer.",
+        title: "Where Are You With God? A Self-Check",
+        takeIf: "you want the honest check-in: where you are with God right now, without the church answer.",
         gives: "A straight reading of your season, and where to go from it.",
         href: "/diagnostic",
       },
       {
         title: "The Whole-Life Assessment",
-        takeIf: "you are willing to look at all of it — the inner life, the body, the home, work and money, the world.",
+        takeIf: "you are willing to look at all of it: the inner life, the body, the home, work and money, the world.",
         gives: "A map of where your life is flourishing and where it has gone quiet, plus a rule of life for this season.",
         href: "/life/assessment",
       },
@@ -60,10 +61,22 @@ const GROUPS: Group[] = [
       "Instruments for the specific thing that is heavy right now. Each one ends with an honest reading of where you stand and a place to start reading.",
     items: [
       {
-        title: "The Marriage Assessment",
+        title: "The Marriage Health Self-Check",
         takeIf: "the marriage is drifting, tense, or quiet, and you want an honest read instead of tips.",
         gives: "Where the covenant actually stands, and what to read next.",
         href: "/tools/marriage-assessment",
+      },
+      {
+        title: "The Emotional Health Self-Check",
+        takeIf: "you are running on empty, or something inside feels off and you cannot name it.",
+        gives: "A read on self-awareness, boundaries, grief, forgiveness, and rest, with practical steps.",
+        href: "/tools/emotional-health",
+      },
+      {
+        title: "The Financial Health Check",
+        takeIf: "money is a weight, a worry, or a quiet rival for your heart.",
+        gives: "Where you stand on generosity, contentment, stewardship, and provision, with Scripture-grounded steps.",
+        href: "/tools/financial-health",
       },
       {
         title: "The Life Audit",
@@ -77,7 +90,7 @@ const GROUPS: Group[] = [
     eyebrow: "For what you believe",
     heading: "The convictions under the surface.",
     blurb:
-      "What you actually believe, and whether you hold it evenly, is measurable. These two take that measure.",
+      "What you actually believe, and whether you hold it evenly, is measurable. These take that measure.",
     items: [
       {
         title: "The Theology Quiz",
@@ -86,8 +99,20 @@ const GROUPS: Group[] = [
         href: "/tools/theology-quiz",
       },
       {
+        title: "Which View Am I?",
+        takeIf: "you want to see which position you lean toward on a contested doctrine, and why faithful Christians differ.",
+        gives: "A starting point for understanding yourself, never a verdict.",
+        href: "/theology/which-view",
+      },
+      {
+        title: "Which Lens Has You?",
+        takeIf: "you suspect the flag, the cause, the marketplace, or nostalgia is doing your thinking before you do.",
+        gives: "Thirteen honest choices, five lenses named, then dismantled.",
+        href: "/tools/which-lens",
+      },
+      {
         title: "The Consistency Check",
-        takeIf: "you suspect you defend truth selectively — one standard for your side, another for theirs.",
+        takeIf: "you suspect you defend truth selectively: one standard for your side, another for theirs.",
         gives: "Where your standard bends, laid out plainly.",
         href: "/disruption/consistency",
       },
@@ -102,7 +127,7 @@ const assessmentsSchema = {
   "@type": "ItemList",
   name: "Assessments",
   description:
-    "Honest instruments for spiritual, whole-life, marriage, burnout, theology, and consistency self-examination.",
+    "Honest instruments for self-examination: the spiritual check-in, the whole-life map, marriage, emotional and financial health, the life audit, theology, and consistency.",
   url: "https://www.livewellbyjamesbell.co/assessments",
   itemListElement: GROUPS.flatMap((g) => g.items).map((item, i) => ({
     "@type": "ListItem",
@@ -117,13 +142,13 @@ export default function Assessments() {
     <Layout>
       <SEOMeta
         title="Assessments — Where Are You, Actually?"
-        description="Every honest instrument on the site in one place: the spiritual check-in, the whole-life map, marriage, the life audit, theology, and consistency. None of them grades you, and each one tells you what to read next."
+        description="Every self-check on the site in one place: faith, the whole of life, marriage, emotional and financial health, and belief. None of them grades you."
         url="https://www.livewellbyjamesbell.co/assessments"
         structuredData={assessmentsSchema}
       />
 
       {/* HERO */}
-      <section style={{ background: "var(--charcoal)", color: "var(--bone)", padding: "var(--s-7) var(--s-4) var(--s-6)" }}>
+      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-7) var(--s-4) var(--s-6)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>Assessments</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(36px, 6vw, 60px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "20px", maxWidth: "20ch" }}>
@@ -131,7 +156,7 @@ export default function Assessments() {
           </h1>
           <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.75)", maxWidth: "60ch" }}>
             Every instrument on the site, in one place, sorted by the question you
-            are actually asking. None of them grades you. Each one is a mirror —
+            are actually asking. None of them grades you. Each one is a mirror,
             and whatever it shows, the writing here was built to meet it.
           </p>
         </div>
@@ -148,44 +173,22 @@ export default function Assessments() {
             <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "62ch", marginBottom: "var(--s-4)" }}>
               {g.blurb}
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(300px, 100%), 1fr))", gap: "16px" }}>
-              {g.items.map(it => (
-                <Link
-                  key={it.href}
-                  href={it.href}
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    background: "var(--card)",
-                    border: "1px solid var(--line)",
-                    borderTop: "2px solid var(--mustard)",
-                    borderRadius: "var(--radius-sm)",
-                    padding: "var(--s-4)",
-                    textDecoration: "none",
-                  }}
-                >
-                  <div style={{ fontFamily: "var(--F)", fontSize: "21px", fontWeight: 500, lineHeight: 1.2, color: "var(--ink)", marginBottom: "10px" }}>
-                    {it.title}
-                  </div>
-                  <p style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.6, color: "var(--ink)", margin: "0 0 8px" }}>
-                    <span style={{ color: "var(--ink-muted)" }}>Take this if </span>
-                    {it.takeIf}
-                  </p>
-                  <p style={{ fontFamily: "var(--B)", fontSize: "13px", lineHeight: 1.6, color: "var(--ink-muted)", margin: "0 0 14px", flex: 1 }}>
-                    {it.gives}
-                  </p>
-                  <span style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--ink)", borderBottom: "1px solid var(--mustard)", alignSelf: "flex-start", paddingBottom: "2px" }}>
-                    Begin →
-                  </span>
-                </Link>
-              ))}
-            </div>
+            <CardGrid
+              label={g.heading}
+              items={g.items.map((it) => ({
+                href: it.href,
+                title: it.title,
+                dek: `Take this if ${it.takeIf}`,
+                meta: <span style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.55 }}>{it.gives}</span>,
+                cta: "Take the assessment",
+              }))}
+            />
           </div>
         </section>
       ))}
 
       {/* CLOSING */}
-      <section style={{ background: "var(--charcoal)", color: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
+      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-6) var(--s-4)" }}>
         <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto", textAlign: "center" }}>
           <p style={{ fontFamily: "var(--F)", fontSize: "clamp(20px, 2.8vw, 28px)", fontStyle: "italic", lineHeight: 1.4, color: "rgba(245,240,230,0.92)", marginBottom: "18px" }}>
             The mirror is not the point. What you do the day after you look is.

@@ -216,7 +216,7 @@ export function SegmentedSignup({
           style={{
             display: "grid",
             gap: "8px",
-            gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
+            gridTemplateColumns: "repeat(auto-fit, minmax(min(240px, 100%), 1fr))",
           }}
         >
           {AUDIENCES.map(opt => {
@@ -251,9 +251,9 @@ export function SegmentedSignup({
                 <span
                   style={{
                     fontFamily: "var(--U)",
-                    fontSize: "13px",
+                    fontSize: "15px",
                     fontWeight: 600,
-                    color: isPanel ? "var(--bone)" : "var(--ink)",
+                    color: isPanel ? "var(--charcoal-fg)" : "var(--ink)",
                   }}
                 >
                   {opt.label}
@@ -261,8 +261,8 @@ export function SegmentedSignup({
                 <span
                   style={{
                     fontFamily: "var(--B)",
-                    fontSize: "12px",
-                    lineHeight: 1.4,
+                    fontSize: "14px",
+                    lineHeight: 1.45,
                     color: isPanel
                       ? "rgba(245,240,230,0.6)"
                       : "var(--ink-muted)",

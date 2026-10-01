@@ -1,0 +1,51 @@
+{
+  "slug": "refer-to-counselor",
+  "page": false,
+  "rank": 23,
+  "title": "When should I refer someone to a counselor?",
+  "summary": "For pastors and leaders: the signs that someone needs more than you can give, and how to hand them on well.",
+  "askedAs": [
+    "when to refer to a counselor",
+    "pastoral counseling limits",
+    "counselor referral list",
+    "Christian counselor or licensed counselor",
+    "how to refer someone",
+    "mental health and the church",
+    "pastor counseling",
+    "when to call a professional"
+  ],
+  "states": [
+    "leading",
+    "helping"
+  ],
+  "sensitivity": "ordinary",
+  "kit": {
+    "read": [
+      {
+        "href": "/writing/34-what-a-healthy-pastor-referral-network-actually-looks-like",
+        "label": "What a Healthy Pastor Referral Network Actually Looks Like",
+        "kind": "Essay"
+      },
+      {
+        "href": "/writing/church-and-mental-health",
+        "label": "How the Church Handles Mental Health (Badly)",
+        "kind": "Essay"
+      },
+      {
+        "href": "/how-tos/marriage-how-to-know-when-to-get-help",
+        "label": "How to Know When to Get Help",
+        "kind": "How-to"
+      },
+      {
+        "href": "/studyguides/mental-health",
+        "label": "Mental Health: A Bible Study on the Weight You Carry",
+        "kind": "Study guide"
+      },
+      {
+        "href": "/studyguides/pastoral-health",
+        "label": "Pastoral Health: A Study for Leaders and Those Who Love Them",
+        "kind": "Study guide"
+      }
+    ]
+  }
+}

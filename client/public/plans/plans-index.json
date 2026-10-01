@@ -1,14 +1,34 @@
 {
   "plans": [
     {
+      "slug": "suffering",
+      "title": "Eight Weeks of Asking God Why",
+      "blurb": "An eight week plan from James Bell for anyone asking why God would let this happen. Job, the laments, and the cross, walked slowly, with no tidy answers and no hurry."
+    },
+    {
       "slug": "new-believer",
       "title": "Eight Weeks of Beginnings",
       "blurb": "An eight week plan from James Bell for the brand new Christian. What just happened, how to read, how to pray, how to find your people, all in plain words with every old term defined."
     },
     {
+      "slug": "fear-of-the-future",
+      "title": "Eight Weeks of Facing What Is Coming",
+      "blurb": "An eight week plan from James Bell for the fear of what is coming. The Psalms and prophets of trust read in their own setting, not as charms, and a way to live faithfully in an uncertain present."
+    },
+    {
+      "slug": "prayer",
+      "title": "Eight Weeks of Learning to Pray",
+      "blurb": "An eight week plan from James Bell for the beginner, the curious skeptic, and the believer whose prayer has gone quiet. Five minutes a day, borrowed words, honest complaint, and a rule you can keep."
+    },
+    {
       "slug": "skeptic",
       "title": "Eight Weeks of Reading Like an Adult",
       "blurb": "An eight week reading plan from James Bell for the curious nonbeliever. The Bible read as literature and history, the hard objections on the table, and no tricks anywhere in it."
+    },
+    {
+      "slug": "empty",
+      "title": "Eight Weeks of Small Mercies",
+      "blurb": "An eight week plan from James Bell for when you feel empty and don't know why. Bread and sleep, one person who knows, a doctor, the Psalms that pray in the dark, and mercy one morning at a time."
     },
     {
       "slug": "deconstruction",
@@ -26,6 +46,11 @@
       "blurb": "An eight week guided plan for the anxious mind from James Bell. Small daily practices, honest readings, and prayer for the nights when fear will not lift."
     },
     {
+      "slug": "loneliness",
+      "title": "Eight Weeks Toward Being Known",
+      "blurb": "An eight-week plan from James Bell for anyone who feels alone, whether single, widowed, new in town, married and still lonely, or unknown in a crowded church. Small daily steps toward God and people."
+    },
+    {
       "slug": "marriage",
       "title": "Eight Weeks Toward Each Other",
       "blurb": "An eight week guided plan for marriage from James Bell. One focus, one small daily practice, one reading, one tool, and one honest question each week."
@@ -34,6 +59,16 @@
       "slug": "whole-life",
       "title": "Eight Weeks Toward One Undivided Life",
       "blurb": "An eight week plan from James Bell toward one undivided life. Prayer, rest, friendship, work, money, church, and justice gathered into a rule you can keep."
+    },
+    {
+      "slug": "forgiveness",
+      "title": "Eight Weeks Toward Setting Down the Debt",
+      "blurb": "An eight week plan from James Bell for the wrong you cannot forgive, whether it was done to you or by you. Honest about the wound, clear that safety comes first, and never in a hurry."
+    },
+    {
+      "slug": "reading-the-bible",
+      "title": "Eight Weeks With an Open Bible",
+      "blurb": "An eight week reading plan from James Bell for the first-time reader, the one coming back, and the curious skeptic. Mark first, then the one story, the Psalms, the hard pages, and a way to keep going."
     }
   ]
 }

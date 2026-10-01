@@ -26,11 +26,11 @@ const PATH_FOR_PILLAR: Record<string, string> = {
   "the-pastoral-angle": "the-pastoral-angle",
 };
 
-const WINGS = [
+const WINGS: Array<{ name: string; href: string; blurb: string; external?: boolean }> = [
   { name: "Theological Depth", href: "/theology", blurb: "Doctrine, church history, the whole biblical story." },
   { name: "Prophetic Justice", href: "/justice", blurb: "The poor, the outsider, the systems we inherit." },
   { name: "Prophetic Disruption", href: "/disruption", blurb: "The church, empire, and the politics that capture it." },
-  { name: "Leadership Formation", href: "/leadership", blurb: "Character before competence, for those who lead." },
+  { name: "Leadership Formation", href: "https://pastorsconnectionnetwork.com", external: true, blurb: "Character before competence. This work now lives with the Pastors Connection Network." },
   { name: "Integrated Life", href: "/life", blurb: "Marriage, parenting, vocation, and rest." },
 ];
 
@@ -139,16 +139,20 @@ export default function Pillars() {
           <p style={{ color: "var(--bone)", opacity: 0.75, fontSize: "0.95rem", lineHeight: 1.7, maxWidth: "62ch", marginBottom: "2rem" }}>
             Alongside the pillars, five standing library sections hold the reference collections — the working shelves the essays draw on.
           </p>
-          {WINGS.map((w) => (
-            <Link key={w.href} href={w.href} style={{ display: "block", textDecoration: "none", padding: "1.1rem 0", borderBottom: "1px solid rgba(244,241,234,0.12)" }}>
+          {WINGS.map((w) => {
+            const Cmp = w.external ? "a" : Link;
+            const extra = w.external ? { target: "_blank", rel: "noopener noreferrer" } : {};
+            return (
+            <Cmp key={w.href} href={w.href} {...extra} style={{ display: "block", textDecoration: "none", padding: "1.1rem 0", borderBottom: "1px solid rgba(244,241,234,0.12)" }}>
               <span style={{ fontFamily: "var(--F)", fontSize: "1.15rem", fontWeight: 400, color: "var(--bone)" }}>
                 {w.name} <ArrowRight size={14} style={{ display: "inline", verticalAlign: "middle", color: "var(--mustard)" }} />
               </span>
               <span style={{ display: "block", fontSize: "0.85rem", lineHeight: 1.6, color: "var(--bone)", opacity: 0.55, marginTop: "0.25rem" }}>
                 {w.blurb}
               </span>
-            </Link>
-          ))}
+            </Cmp>
+            );
+          })}
           <div style={{ marginTop: "2.5rem", display: "flex", gap: "2rem", flexWrap: "wrap" }}>
             <Link href="/reading-paths" style={linkStyle}>All reading paths</Link>
             <Link href="/writing" style={linkStyle}>The full library</Link>

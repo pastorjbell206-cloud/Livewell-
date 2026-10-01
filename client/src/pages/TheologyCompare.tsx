@@ -52,7 +52,7 @@ export default function TheologyCompare() {
           <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.78)", maxWidth: "60ch", marginBottom: "20px" }}>
             Pick a doctrine and lay its views in a row. The same fair treatment as the full doctrine pages, arranged so you can scan the differences at a glance.
           </p>
-          <select value={slug} onChange={(e) => setSlug(e.target.value)}
+          <select value={slug} onChange={(e) => setSlug(e.target.value)} aria-label="Choose a doctrine"
             style={{ fontFamily: "var(--B)", fontSize: "16px", padding: "12px 16px", borderRadius: "var(--radius-sm)", border: "1px solid rgba(245,240,230,0.3)", background: "var(--bone)", color: "var(--ink)", minWidth: "min(440px, 100%)", maxWidth: "100%" }}>
             {ready.map((d) => <option key={d.slug} value={d.slug}>{d.title}</option>)}
           </select>
@@ -61,7 +61,7 @@ export default function TheologyCompare() {
 
       <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-7)" }}>
         <div style={wrap}>
-          {!doc && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }}>Loading…</p>}
+          {!doc && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }} role="status">Loading…</p>}
           {doc && (
             <>
               <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: "12px", marginBottom: "var(--s-4)" }}>

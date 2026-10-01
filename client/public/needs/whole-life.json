@@ -1,0 +1,48 @@
+{
+  "slug": "whole-life",
+  "page": false,
+  "rank": 46,
+  "title": "I just want to grow and follow well",
+  "summary": "Not in crisis: the whole of life under one Lord, on an ordinary Tuesday.",
+  "askedAs": [
+    "spiritual growth",
+    "how to grow in faith",
+    "rule of life",
+    "discipleship",
+    "spiritual disciplines",
+    "following Jesus"
+  ],
+  "states": [
+    "grow"
+  ],
+  "sensitivity": "ordinary",
+  "kit": {
+    "read": [
+      {
+        "href": "/plans/whole-life",
+        "label": "Eight Weeks Toward One Undivided Life",
+        "kind": "Plan"
+      },
+      {
+        "href": "/life/assessment",
+        "label": "The Whole-Life Assessment",
+        "kind": "Self-check"
+      },
+      {
+        "href": "/tools/rule-of-life",
+        "label": "Rule of Life Builder",
+        "kind": "Tool"
+      },
+      {
+        "href": "/life",
+        "label": "The Integrated Life",
+        "kind": "Page"
+      },
+      {
+        "href": "/theology/history",
+        "label": "The church's long story",
+        "kind": "Page"
+      }
+    ]
+  }
+}

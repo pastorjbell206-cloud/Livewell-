@@ -1,0 +1,53 @@
+{
+  "slug": "diagnosis",
+  "page": false,
+  "rank": 47,
+  "title": "I've been given a hard diagnosis",
+  "summary": "For the frightening news, the long illness, and the fear of dying, faced honestly and not alone.",
+  "askedAs": [
+    "terminal diagnosis",
+    "cancer",
+    "chronic illness",
+    "chronic pain",
+    "fear of dying",
+    "facing death",
+    "sick and scared"
+  ],
+  "states": [
+    "carrying",
+    "helping"
+  ],
+  "sensitivity": "high",
+  "crisisTopics": [
+    "suicide"
+  ],
+  "kit": {
+    "read": [
+      {
+        "href": "/wisdom/terminal-diagnosis",
+        "label": "Facing a Terminal Diagnosis",
+        "kind": "Wisdom"
+      },
+      {
+        "href": "/life/health-illness-and-pain",
+        "label": "How Should Christians Think About Sickness and Health?",
+        "kind": "Life"
+      },
+      {
+        "href": "/life/facing-death",
+        "label": "How Do Christians Face Death and the Fear of Dying?",
+        "kind": "Life"
+      },
+      {
+        "href": "/wisdom/chronic-pain",
+        "label": "Chronic Pain and Illness",
+        "kind": "Wisdom"
+      },
+      {
+        "href": "/life/caring-for-the-dying",
+        "label": "How Do You Sit With Someone Who Is Dying?",
+        "kind": "Life"
+      }
+    ]
+  }
+}
