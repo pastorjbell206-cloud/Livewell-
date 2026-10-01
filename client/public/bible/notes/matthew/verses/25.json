@@ -1,0 +1,275 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "The opening ‘then’ ties the parable to the end of chapter 24, where the master of the house returns at an hour no one expects (24:44-51). ‘At that time’ means the day of the Son of Man's coming, so the parable is about the kingdom at its arrival, not its present growth. Ten young women go out with their lamps to join a wedding procession, and the rest of the story turns on what happens to them when the bridegroom is late.",
+      "grammar": "Homoiōthēsetai, ‘will be likened’, is a future passive. Earlier kingdom parables open with the aorist hōmoiōthē, ‘has become like’ (13:24, 18:23, 22:2), describing the kingdom already at work; the future here points to its consummation, which fits the discourse's subject. The phrase for going out to meet, eis hupantēsin, is the reading of the critical editions; later manuscripts have eis apantēsin, the form verse 6 uses. Apantēsis was a recognized term for a delegation going out from a town to greet an arriving dignitary and escort him back in, and it occurs in the New Testament only here, in Acts 28:15 of the believers who came out to meet Paul, and in 1 Thessalonians 4:17 of meeting the Lord in the air. Erik Peterson (1930) argued that the civic custom lies behind all three; others think the word is too ordinary to carry a technical sense. In the parable the picture fits: the women go out to meet the bridegroom and come back in with him.",
+      "words": ["G3666", "G3933", "G2985", "G5222", "G3566"],
+      "theology": [
+        { "id": "return", "note": "The parable assumes that the kingdom's final arrival coincides with the coming of a person, the bridegroom, and that his people's task is to go out to meet him. Readiness is directed toward Jesus himself, not toward a date." },
+        { "id": "kingdom", "note": "The kingdom at its consummation is pictured as a wedding, the image Jesus used for his own presence in 9:15 and for the Father's banquet in 22:1-14. Its future form is joy and fellowship, the feast toward which the whole wait is directed." }
+      ],
+      "text": "Codex Bezae, Codex Koridethi, and many Latin and Syriac witnesses add ‘and the bride’, so that the women go out to meet both. The earliest Greek manuscripts, including Sinaiticus and Vaticanus, lack it, and editors judge it a scribal attempt to fit the scene to a procession from the bride's house. The parable's point is unaffected: the one they wait for is the bridegroom.",
+      "refs": ["Matthew 9:15", "Matthew 22:1-14", "Matthew 24:44", "1 Thessalonians 4:17"]
+    },
+    {
+      "v": "2-4",
+      "context": "The ten are divided at once into five foolish and five wise, and verses 3-4 explain the difference. All took lamps; only the wise brought a reserve of oil in flasks. Nothing distinguishes the groups except what they did before the wait began, which is why the difference cannot be seen until the bridegroom is late.",
+      "grammar": "Mōrai, ‘foolish’, and phronimoi, ‘wise, sensible’, are the pair that closed the Sermon on the Mount, where the wise man (phronimos) builds on rock and the foolish (mōros) on sand (7:24-27); they also recall the wise and faithful servant of 24:45. Verse 3 opens with gar, ‘for’: the verse explains why five are called foolish. The contrast is sharpened by the reflexive pronoun: the foolish took no oil meth' heautōn, ‘with themselves’, while the wise took oil en tois angeiois, ‘in the vessels’. Angeion is a general word for a container, and the plural suggests each woman carried her own.",
+      "words": ["G3474", "G5429", "G1063", "G1637", "G0030"],
+      "theology": [
+        { "id": "wisdom", "note": "Wisdom in the parable is foresight about the one thing that matters, the bridegroom's coming, and it shows itself in quiet preparation rather than in knowledge. The same practical wisdom marks the builder on rock (7:24) and the faithful servant (24:45)." }
+      ],
+      "text": "The critical editions name the foolish first in verse 2; the later Byzantine manuscripts and the King James Version put the wise first, ‘five of them were wise, and five were foolish’. The earlier order is the more surprising, and scribes probably smoothed it.",
+      "refs": ["Matthew 7:24-27", "Matthew 24:45", "Proverbs 21:20"]
+    },
+    {
+      "v": "5",
+      "context": "The bridegroom is delayed, and all ten fall asleep. The verse names the delay that the chapter note traces through the discourse (24:48, 25:19) and makes clear that sleeping is not the fault: the wise sleep too. What separates them is not wakefulness but preparation.",
+      "grammar": "Chronizontos de tou numphiou is a genitive absolute, ‘while the bridegroom was delaying’, the same verb the wicked servant uses in 24:48, ‘my master is delayed’. Two tenses follow in sequence. Enustaxan is an aorist, ‘they nodded off’, the moment of dozing; ekatheudon is an imperfect, ‘and they were sleeping’, the state that went on. The move from drowsiness to sleep takes no blame from the narrator.",
+      "words": ["G5549", "G3573", "G2518"],
+      "theology": [
+        { "id": "perseverance", "note": "The church's waiting is long enough that everyone's strength fails, and the parable does not treat that as disqualifying. Perseverance here is not unbroken vigilance but having made provision that lasts through the night." }
+      ],
+      "refs": ["Matthew 24:48", "2 Peter 3:4-9", "Hebrews 10:36-37"]
+    },
+    {
+      "v": "6-7",
+      "context": "At midnight, the darkest and least expected hour, a shout announces the bridegroom: “Here is the bridegroom! Come out to meet him!” All ten wake and trim their lamps, and for a moment they look the same again.",
+      "grammar": "Kraugē gegonen, ‘a cry arose’, uses the perfect tense in the middle of a past narrative, which gives the cry a vivid, present feel. Idou, ‘look’, is Matthew's favorite word for a sudden appearance. The command exerchesthe eis apantēsin autou, ‘come out to meet him’, repeats the language of verse 1 with the form apantēsis. Ekosmēsan, from kosmeō, ‘to put in order’, means they trimmed the wicks or re-soaked the torches and added oil so that the flame burned well; the same verb describes the adorned tombs of the prophets in 23:29.",
+      "words": ["G2906", "G1096", "G0529", "G1453", "G2885"],
+      "history": "Midnight processions are attested for weddings, though the timing varied. First Maccabees 9:37-39 describes a bridal party escorted with drums and music. A cry going ahead of the groom's party to warn those waiting fits village life where there were no fixed times and the groom's arrival might depend on negotiations or travel.",
+      "refs": ["Mark 13:35", "Matthew 24:31", "1 Thessalonians 4:16"]
+    },
+    {
+      "v": "8-9",
+      "context": "The foolish ask to share oil; the wise refuse, not out of spite but because there is not enough for all, and send them to the sellers. The exchange is the heart of the parable: some readiness cannot be borrowed at the last moment.",
+      "grammar": "Sbennuntai is a present tense, ‘are going out’: the lamps are sputtering as they speak, which shows they had some oil but not enough for the delay. The wise reply with mēpote ou mē arkesē hēmin kai humin, literally ‘lest perhaps it will certainly not suffice for us and you’. Ou mē with the aorist subjunctive is the strongest negation in Greek, and mēpote, ‘lest’, introduces it elliptically, so that the sense is ‘No, there will surely not be enough for both’. The later Byzantine manuscripts read the simpler ouk, without mē. The command that follows, poreuesthe mallon, ‘go instead’, and agorasate heautais, ‘buy for yourselves’, puts the responsibility back on the foolish with the reflexive pronoun.",
+      "words": ["G4570", "G3361", "G0714", "G4453", "G0059"],
+      "theology": [
+        { "id": "faith", "note": "The refusal makes a point about the person's own relation to the bridegroom: no one can be ready on another's behalf. Readers from Augustine onward have taken the oil to stand for something inward (love, a good conscience, faith that works), precisely because it cannot be passed from one lamp to another." }
+      ],
+      "refs": ["Ezekiel 18:20", "Galatians 6:5", "Romans 14:12"]
+    },
+    {
+      "v": "10",
+      "context": "While the foolish are away buying oil, the bridegroom comes. Those who were ready go in with him to the wedding, and the door is shut. The verse moves from the moment of arrival to a closed door in a single sentence, which is the parable's warning in miniature.",
+      "grammar": "Aperchomenōn de autōn agorasai is another genitive absolute, ‘while they were going off to buy’: the timing is the point, since the arrival comes precisely during their absence. Hai hetoimoi, ‘the ready ones’, uses the adjective of 24:44, ‘you also must be ready’, and 22:4 and 22:8, where everything is ready for the wedding feast. Gamous, ‘wedding festivities’, is plural, as in 22:2-12. Ekleisthē hē thura, ‘the door was shut’, is an aorist passive with no agent named; the shutting is final.",
+      "words": ["G0565", "G2092", "G1062", "G2808", "G2374"],
+      "theology": [
+        { "id": "kingdom", "note": "Entry into the feast is ‘with him’: the kingdom is not a place the ready reach by themselves but a celebration they enter in the bridegroom's company. The shut door shows that the invitation, though generous, has an end." }
+      ],
+      "refs": ["Luke 13:24-25", "Revelation 19:7-9", "Genesis 7:16", "Matthew 24:44"]
+    },
+    {
+      "v": "11-12",
+      "context": "The other women come later and call through the closed door, “Lord, lord,” and the bridegroom answers that he does not know them. The scene reproduces the warning at the end of the Sermon on the Mount, where some say ‘Lord, Lord’ and hear that Jesus never knew them (7:21-23).",
+      "grammar": "Husteron, ‘later, afterward’, is a comparative adjective used as an adverb. The doubled vocative kurie kurie is the same cry as 7:21-22, and ‘lord’ here is the natural address to the master of a house, which the parable turns into the address to Jesus. The reply amēn legō humin, ouk oida humas, ‘truly I tell you, I do not know you’, uses oida in the perfect with present meaning: the bridegroom does not recognize them as belonging to his party. In the Bible's language, to be known by the Lord is to belong to him (Amos 3:2, 2 Timothy 2:19), so the refusal is relational, not a failure of memory.",
+      "words": ["G5306", "G2962H", "G6063"],
+      "theology": [
+        { "id": "judgment", "note": "Judgment here is exclusion from the presence of the one they claimed to serve. The appeal ‘Lord, lord’ is sincere and urgent, but it comes after the time for readiness has passed, and verbal allegiance does not substitute for having been prepared." }
+      ],
+      "refs": ["Matthew 7:21-23", "Luke 13:25-27", "2 Timothy 2:19", "Amos 3:2"]
+    },
+    {
+      "v": "13",
+      "context": "Jesus draws the parable's lesson in his own voice: keep watch, because you do not know the day or the hour. The sentence repeats 24:42 and 24:44, so the parable is framed as an illustration of the discourse's main command.",
+      "grammar": "Grēgoreite is a present imperative, ‘keep on watching’, a continuing stance rather than a single act. The conjunction oun, ‘therefore’, draws the inference from the story, and hoti, ‘because’, gives the ground: ignorance of the time. The literal sense of grēgoreō is to stay awake, yet all ten slept (verse 5). The parable itself shows that watching means being prepared, not physically sleepless, which is how most commentators have read the tension.",
+      "words": ["G1127", "G3767", "G2250", "G5610"],
+      "theology": [
+        { "id": "return", "note": "The verse bars any calculation of the date of Christ's return, which even the Son did not claim to know (24:36). The right response to that ignorance is not speculation but readiness sustained over time." }
+      ],
+      "text": "Later manuscripts, followed by the King James Version, add ‘wherein the Son of man cometh’, drawn from 24:44. The earliest manuscripts end with ‘the day or the hour’.",
+      "refs": ["Matthew 24:36", "Matthew 24:42-44", "Mark 13:33-37", "1 Thessalonians 5:1-6"]
+    },
+    {
+      "v": "14-15",
+      "context": "A second parable follows at once, joined by ‘for’. A man about to go abroad entrusts his property to his servants: five talents to one, two to another, one to a third, each according to his ability. Where the virgins' parable is about waiting, this one is about what the servants do while they wait.",
+      "grammar": "Hōsper gar anthrōpos apodēmōn, ‘for just as a man going abroad’, begins a comparison that is never grammatically completed; the reader must supply ‘so it is with the kingdom’ or ‘so it will be’. The verb for entrusting, paredōken, is paradidōmi, ‘to hand over’, the same verb that will run through chapter 26 for Jesus being handed over (26:2). Ta huparchonta autou, ‘his possessions’, uses a present participle as a noun, ‘the things belonging to him’: the servants handle what is still the master's. Kata tēn idian dunamin, ‘according to his own ability’, makes the difference in amounts a matter of the master's judgment of each servant, not of favoritism.",
+      "words": ["G5618", "G0589", "G3860", "G5225", "G1411"],
+      "history": "On the scale of a talent, about six thousand denarii and so some twenty years of a laborer's wages, see the chapter note. A wealthy man leaving on a long trip would commonly put property in the hands of trusted slaves, who in the Roman world could manage estates and businesses and trade on the master's behalf. Slave managers of this kind, whom Latin called vilici and dispensatores, handled large sums, so the parable's arrangement was ordinary even if its amounts were extravagant.",
+      "theology": [
+        { "id": "work", "note": "What the servants hold is entrusted, not owned, and it is given in proportion to capacity. The parable frames a disciple's gifts, resources, and opportunities as a master's property to be put to use in his absence, and it measures faithfulness by the use made of what was given rather than by its size." }
+      ],
+      "text": "Where to put the word eutheōs, ‘immediately’, is disputed. The King James Version joins it to the master's departure, so that he left straightway; the critical editions and most modern versions, including the BSB, punctuate it with verse 16, so that the servant went at once to work. Both readings are possible from the Greek; the modern punctuation makes the first servant's promptness part of the contrast with the third.",
+      "parallels": ["Luke 19:11-27"],
+      "refs": ["Luke 19:12-13", "Romans 12:6", "1 Corinthians 4:2", "1 Peter 4:10"]
+    },
+    {
+      "v": "16-18",
+      "context": "The first two servants put the money to work and double it. The third digs a hole and hides his master's money. Three short sentences set the pattern the reckoning will expose.",
+      "grammar": "Ērgasato en autois, literally ‘worked with them’, is the ordinary idiom for trading or doing business with capital. Ekerdēsen, ‘gained’, is the reading of the critical editions; later manuscripts read epoiēsen, ‘made’. Hōsautōs, ‘likewise’, makes the second servant's action identical in kind to the first's. The third servant's verbs are all verbs of removal: apelthōn, ‘going away’, ōruxen gēn, ‘dug the ground’, ekrupsen, ‘hid’. Argurion, literally ‘silver’, is the ordinary word for money, and the phrase tou kuriou autou, ‘his master's’, reminds the reader whose it was.",
+      "words": ["G2038", "G2770", "G3736", "G2928", "G0694"],
+      "history": "Burying valuables was a common precaution in the ancient world, and hoards of coins buried and never recovered are among archaeology's commonest finds. The chapter note cites the Babylonian Talmud's ruling in the name of the sage Samuel that money can be properly guarded only by burying it in the ground (b. Bava Metzia 42a). The surrounding Mishnah (m. Bava Metzia 3:10) holds a trustee liable if he tied deposited money in a bundle and slung it over his back, because that is not how guardians guard. By that standard the third servant did the legally responsible thing; Luke's servant, who wrapped the mina in a cloth (Luke 19:20), did not.",
+      "refs": ["Matthew 13:44", "Luke 19:15-20", "Proverbs 10:4"]
+    },
+    {
+      "v": "19",
+      "context": "After a long time the master returns and settles accounts. The verse names the delay explicitly, the third time in the discourse (24:48, 25:5), and introduces the reckoning that fills the rest of the parable.",
+      "grammar": "Meta de polun chronon, ‘after much time’, sets the return far enough away that the servants' faithfulness is tested by duration. Erchetai, ‘comes’, and sunairei, ‘settles’, are historical presents, which make the return vivid. Sunairei logon, ‘settles account’, is a technical commercial phrase attested in business papyri, and Matthew used it for the king settling accounts with his servants in 18:23.",
+      "words": ["G5550", "G2064", "G4868", "G3056"],
+      "theology": [
+        { "id": "judgment", "note": "The master's return is a reckoning: each servant gives an account of what he did with what was entrusted. The New Testament applies the same picture to every believer, who will give an account to God (Romans 14:12, 2 Corinthians 5:10)." },
+        { "id": "return", "note": "The return is certain even though it is late. The delay does not cancel the reckoning; it is the time in which faithfulness is shown." }
+      ],
+      "refs": ["Matthew 18:23", "Romans 14:10-12", "2 Corinthians 5:10", "Luke 19:15"]
+    },
+    {
+      "v": "20-23",
+      "context": "The first two servants report in almost identical words and receive identical praise, word for word. The two-talent servant is commended exactly as the five-talent servant is. The repetition makes the point that the master measures faithfulness, not quantity, and it sets up the jarring difference of the third servant's speech.",
+      "grammar": "Eu, ‘well done’, is an adverb used as an exclamation of approval. Doule agathe kai piste, ‘good and faithful servant’, is in the vocative. The antithesis epi oliga ēs pistos, epi pollōn se katastēsō, ‘over a few things you were faithful, over many I will set you’, calls five talents, a fortune, ‘a few things’: measured against what the master is about to give, the entrusted wealth was small. The invitation eiselthe eis tēn charan tou kuriou sou, ‘enter into the joy of your master’, shifts from commerce to celebration. Some commentators take chara here as the master's festival or banquet, a sense the Greek word can carry by association; most take it as the master's own gladness, into which the servant is admitted.",
+      "words": ["G2095", "G4103", "G3641", "G2525", "G5479"],
+      "theology": [
+        { "id": "kingdom", "note": "Reward in the kingdom is described as greater responsibility and shared joy, not release from service. The faithful are given more to do and are invited into their master's gladness, which suggests that the age to come is a life of work without futility rather than idleness." },
+        { "id": "work", "note": "The identical praise for five and two talents means that the master does not rank his servants by output. Faithfulness in whatever measure was entrusted is what counts, which relieves those with lesser gifts of comparison and denies those with greater ones any boast." }
+      ],
+      "refs": ["Luke 16:10", "Luke 19:17", "Hebrews 12:2", "John 15:11"]
+    },
+    {
+      "v": "24-25",
+      "context": "The third servant speaks at length, and his speech is an accusation. He describes his master as hard, a man who reaps what others sowed, and explains that fear led him to bury the talent. He hands it back as if returning it intact were the same as faithfulness.",
+      "grammar": "The servant is introduced with eilēphōs, a perfect participle, ‘the one who had received’, where the others were introduced with the aorist labōn; the difference may be only stylistic, but it fits a man who has simply kept what he received. Egnōn se hoti sklēros ei anthrōpos, ‘I knew you, that you are a hard man’, is a construction in which the person is named before the clause that describes him, which puts the weight on his claim to know the master. Sklēros means harsh or severe. Phobētheis, ‘being afraid’, an aorist participle, gives the motive. His last words, ide echeis to son, ‘look, you have what is yours’, use the possessive son, ‘yours’: he treats the talent as the master's and nothing to do with him.",
+      "words": ["G2983", "G1097", "G4642", "G5399", "G2928"],
+      "theology": [
+        { "id": "fear-of-god", "note": "The servant's fear is the opposite of the reverent fear Scripture commends. It springs from a false picture of the master and paralyzes rather than moves to obedience. The chapter note rightly warns against reading his description as the parable's portrait of God; the master judges him by his own words, not endorsing them." }
+      ],
+      "refs": ["Luke 19:20-21", "1 John 4:18", "Proverbs 26:13"]
+    },
+    {
+      "v": "26-27",
+      "context": "The master turns the servant's words against him. If he really believed his master was demanding, he should at least have put the money with the bankers so that it would have earned interest. The servant's own theory condemns his idleness.",
+      "grammar": "Ponēre doule kai oknēre, ‘wicked and lazy servant’, answers ‘good and faithful’ in verses 21 and 23 with its exact opposite. The next sentence, ēdeis hoti therizō, ‘you knew that I reap’, can be read as a statement or as an indignant question, ‘You knew, did you, that I reap...?’ The NRSV and several commentators take it as a question, which makes clear that the master does not concede the description. Edei, an imperfect of necessity, means ‘you ought to have’. Balein ta arguria tois trapezitais, ‘to put my money with the bankers’, and sun tokō, ‘with interest’, use tokos, literally ‘offspring’, the ordinary Greek word for interest.",
+      "words": ["G4190", "G3636", "G1492I", "G1163", "G5133", "G5110"],
+      "text": "The critical editions read the plural ta arguria, ‘the pieces of money’, in verse 27; later manuscripts read the singular to argurion, ‘the money’. The sense is the same.",
+      "refs": ["Luke 19:22-23", "Deuteronomy 23:19-20", "Matthew 12:37"]
+    },
+    {
+      "v": "28-29",
+      "context": "The talent is taken from the third servant and given to the one with ten. A proverb explains the transfer: whoever has will be given more, and whoever does not have will lose even what he has. Jesus used the same saying about understanding the kingdom (13:12).",
+      "grammar": "Arate and dote are aorist imperatives, ‘take’ and ‘give’, crisp commands to attendants. In verse 29 the passives dothēsetai, ‘will be given’, perisseuthēsetai, ‘will have abundance’, and arthēsetai, ‘will be taken away’, have no stated agent. Grammarians call this the divine passive, a Jewish way of describing God's action without naming him; the parable's master stands for the one who gives and takes away. The principle is not about wealth but about use: what is put to work grows, and what is buried is lost.",
+      "words": ["G0142", "G1325", "G4052", "G2192"],
+      "theology": [
+        { "id": "judgment", "note": "The saying describes a law of the kingdom that works in both directions. Faithfulness leads to greater capacity and trust; refusal to use what God gives leads to losing it altogether, so that neglect is not neutral." }
+      ],
+      "refs": ["Matthew 13:12", "Mark 4:25", "Luke 8:18", "Luke 19:26"]
+    },
+    {
+      "v": "30",
+      "context": "The parable ends with sentence on the servant: he is thrown into the outer darkness, where there will be weeping and gnashing of teeth. The story of a business arrangement ends in the language of final judgment, which shows what was really at stake.",
+      "grammar": "Achreion, ‘useless, worthless’, is the word Jesus puts in the mouths of obedient servants in Luke 17:10, ‘we are unworthy servants’; here it is the verdict on one who did nothing. To skotos to exōteron, ‘the outer darkness’, is a comparative adjective, ‘the darkness farther out’, the dark beyond the lighted house or banquet hall. The phrase occurs only in Matthew (8:12, 22:13, 25:30). Ho klauthmos kai ho brugmos tōn odontōn, ‘the weeping and the gnashing of teeth’, has the definite article on each noun, marking a known and fixed expression; Matthew uses it six times (8:12, 13:42, 13:50, 22:13, 24:51, 25:30), Luke once (13:28).",
+      "words": ["G0888", "G4655", "G1857", "G2805", "G1030"],
+      "theology": [
+        { "id": "hell", "note": "Outer darkness and weeping describe exclusion from the feast and the anguish of loss, pictures that sit uneasily beside the image of fire if either is pressed literally. The verse contributes the note of separation from the master's presence and joy, which all Christian accounts of final punishment, whatever they say of its duration, include." }
+      ],
+      "refs": ["Matthew 8:12", "Matthew 22:13", "Matthew 24:51", "Luke 17:10"]
+    },
+    {
+      "v": "31",
+      "context": "The final scene opens with the Son of Man coming in glory, with all the angels, and taking his seat on his glorious throne. It picks up the discourse's climax (24:30-31) and turns from parable to a description of the judgment itself.",
+      "grammar": "Hotan de elthē, ‘whenever he comes’, uses hotan with the aorist subjunctive, which marks a future event as certain in fact but indefinite in time. Tote kathisei, ‘then he will sit’, puts the enthronement right after the arrival. Epi thronou doxēs autou, literally ‘on the throne of his glory’, is a Semitic construction in which a genitive noun does the work of an adjective (hence ‘his glorious throne’); Matthew has the same phrase in 19:28.",
+      "words": ["G2064", "G1391", "G0032G", "G2523", "G2362"],
+      "ot": [
+        { "ref": "Zechariah 14:5", "note": "The Hebrew ends the verse with the LORD my God coming ‘and all the holy ones with you’ (or ‘with him’, as the Septuagint and other ancient versions read). The Septuagint's kai pantes hoi hagioi met' autou is close to Matthew's kai pantes hoi angeloi met' autou, and ‘holy ones’ in Zechariah means the heavenly host. In Zechariah the coming one is the LORD himself, arriving on the Mount of Olives to fight for Jerusalem and reign as king over all the earth (14:4, 14:9). Matthew's Son of Man takes the LORD's place in the scene, speaking from the same mountain (24:3)." },
+        { "ref": "Daniel 7:13-14", "note": "In Daniel's vision one like a son of man comes with the clouds and receives dominion, glory, and a kingdom that all peoples, nations, and languages should serve. The Old Greek says that authority was given to him and that all the nations of the earth would serve him. Matthew's Son of Man comes ‘in his glory’ to sit on a throne before ‘all the nations’, which assumes that Daniel's vision has been fulfilled: the one who received the kingdom now exercises it in judgment." }
+      ],
+      "theology": [
+        { "id": "return", "note": "The verse is one of the plainest statements in the Gospels of Christ's personal, visible, glorious return. The one who taught on the Mount of Olives as a prophet about to be killed describes his own coming as the enthroned judge of all the earth." },
+        { "id": "angels", "note": "The angels accompany the Son of Man as his retinue, as in 13:41, 16:27, and 24:31. In Zechariah the holy ones come with the LORD; here they come with the Son of Man, which says something about the rank the Gospel gives him." }
+      ],
+      "refs": ["Matthew 16:27", "Matthew 19:28", "Matthew 24:30-31", "Revelation 20:11-12"]
+    },
+    {
+      "v": "32-33",
+      "context": "All the nations are gathered before the throne, and the Son of Man separates people as a shepherd separates sheep from goats, setting the sheep on his right and the goats on his left. The simile is brief, and the verdicts that follow explain it.",
+      "grammar": "Panta ta ethnē, ‘all the nations’, is neuter plural, but the next pronoun, autous, ‘them’, is masculine: grammatically the separation is of persons, not of nations as blocs. Matthew uses the same phrase in 24:9, 24:14, and 28:19, where it includes Jews and Gentiles alike; those who read the least of verse 40 as disciples often take the nations here as the non-Christian world being judged by its response to Jesus' messengers. Sunachthēsontai, ‘they will be gathered’, is a future passive; later manuscripts have the singular, agreeing with the neuter subject. The goats are eriphōn in verse 32 and eriphia, a diminutive, ‘kids, young goats’, in verse 33, a variation that probably has no special meaning. Ek dexiōn, ‘on the right’, is literally ‘from the right parts’, the idiom for position.",
+      "words": ["G4863", "G1484", "G0873", "G4263", "G2056", "G2055", "G1188"],
+      "ot": [
+        { "ref": "Ezekiel 34:17", "note": "In Ezekiel God says he will judge between sheep and sheep, between rams and goats, as part of his promise to shepherd his flock himself after Israel's shepherds had failed. The Septuagint uses probata and tragoi. In Ezekiel the judgment falls within God's own flock, on the fat and strong who pushed the weak aside (34:20-22), and God then sets over them one shepherd, his servant David (34:23-24). Matthew's scene takes up both roles: the Son of Man judges as the divine shepherd, and the criterion is how the strong treated the weak." }
+      ],
+      "theology": [
+        { "id": "judgment", "note": "The judgment is universal, since all the nations are gathered, and individual, since the shepherd separates persons one from another. It belongs to the Son of Man alone: neither the sheep nor the goats sort themselves." }
+      ],
+      "refs": ["Ezekiel 34:11-24", "Matthew 13:47-50", "John 5:22-27", "Acts 17:31"]
+    },
+    {
+      "v": "34",
+      "context": "The Son of Man is now named the King, and he welcomes those on his right to inherit the kingdom prepared for them from the foundation of the world. The welcome comes before any mention of their deeds, which verses 35-36 give as the reason.",
+      "grammar": "Deute, ‘come’, is the invitation Jesus gave to the weary in 11:28. Hoi eulogēmenoi tou patros mou, ‘you blessed of my Father’, is a perfect passive participle with a genitive naming the one who blessed: their blessedness is the Father's settled act. Klēronomēsate, an aorist imperative, ‘inherit’, uses the language of receiving what comes by gift or family right, not by wages. Hētoimasmenēn, ‘prepared’, is another perfect passive participle, and apo katabolēs kosmou, ‘from the foundation of the world’, is the phrase of 13:35. The emphatic humin, ‘for you’, stands between the participle and the noun.",
+      "words": ["G1205", "G2127", "G3962", "G2816", "G2090", "G2602"],
+      "theology": [
+        { "id": "election", "note": "The kingdom was prepared for these people before the world was made. Christians disagree about how God's eternal purpose relates to human response (Augustinian and Reformed readers stress God's prior choice; Arminian and many Catholic and Orthodox readers stress foreknowledge and response), but on any reading the verse puts the origin of the blessed's destiny in the Father's intention, not in their achievement." },
+        { "id": "kingdom", "note": "The kingdom is an inheritance, given to children of the Father, and it has been ready since creation. The end of history is not a new idea God has but the arrival of what he intended from the beginning." }
+      ],
+      "refs": ["Matthew 11:28", "Matthew 13:35", "Ephesians 1:4", "Luke 12:32", "1 Peter 1:4"]
+    },
+    {
+      "v": "35-36",
+      "context": "The King gives the reason for the welcome, and it is personal: I was hungry and you fed me. Six needs follow in three pairs: hunger and thirst, strangeness and nakedness, sickness and prison. The ‘for’ links the list to the inheritance of verse 34 as its evidence.",
+      "grammar": "The six clauses are built alike, a first-person verb of need followed by a second-person aorist of response. Xenos ēmēn kai sunēgagete me, ‘I was a stranger and you gathered me in’, uses sunagō, the verb of gathering that runs through the chapter: the master gathers where he did not scatter (verses 24, 26), and the nations are gathered before the King (verse 32). Epeskepsasthe, from episkeptomai, ‘you visited, looked after’, is a verb the Greek Old Testament uses for God coming to care for his people (Genesis 50:24, Exodus 4:31), and Luke uses it of God's visitation in Christ (Luke 1:68). En phulakē, ‘in prison’, refers to custody, often while awaiting trial.",
+      "words": ["G3983", "G1372", "G3581", "G4863", "G1131", "G0770H", "G1980", "G5438G"],
+      "theology": [
+        { "id": "justice-poor", "note": "The list is concrete: food, water, shelter, clothing, care, and presence. None is heroic, and every one is within reach of ordinary people. The verse makes these small acts the matter of the last judgment and gives the King's own voice to the person in need." },
+        { "id": "love", "note": "Love is described entirely in deeds done to bodies in need. The verbs are the ordinary ones of care, and the fact that the King says ‘me’ each time makes every such act a form of love to him." }
+      ],
+      "refs": ["Isaiah 58:6-7", "Job 31:16-20", "Hebrews 13:2-3", "James 2:15-16", "2 Timothy 1:16-17"]
+    },
+    {
+      "v": "37-39",
+      "context": "The righteous are astonished. They ask when they ever saw the King in any of these conditions. Their question repeats the list in reverse form and shows that they did not act in order to be rewarded or because they recognized him.",
+      "grammar": "Hoi dikaioi, ‘the righteous’, is the first time this group is named by character rather than by position. The question pote se eidomen, ‘when did we see you?’, is repeated three times, which slows the scene and makes the surprise its center. The participles peinōnta and dipsōnta, ‘hungry’ and ‘thirsty’, describe the King in his state of need as the object of their seeing. In verse 39 the critical editions read asthenounta, a participle, ‘being sick’, where the later text has the adjective asthenē, ‘sick’; the sense is the same.",
+      "words": ["G1342", "G4219", "G1492H", "G3983", "G0770H"],
+      "theology": [
+        { "id": "justification", "note": "The righteous do not appeal to their deeds; they do not even know about them in the sense the King means. Protestant interpreters from Luther and Calvin onward have read their surprise as the mark of a righteousness received rather than achieved, shown in fruit rather than claimed; Catholic interpreters speak of works done in grace that God truly rewards. Both agree that the righteous here are not calculating a reward." }
+      ],
+      "refs": ["Matthew 6:3-4", "Matthew 5:3-10", "Proverbs 19:17"]
+    },
+    {
+      "v": "40",
+      "context": "The King answers with a solemn saying: whatever they did for one of the least of these his brothers, they did for him. The verse is the key to the whole scene, and the chapter note sets out the debate over who the least are.",
+      "grammar": "Eph' hoson, literally ‘upon as much as’, means ‘inasmuch as, to the extent that’. Heni toutōn tōn adelphōn mou tōn elachistōn, ‘to one of these my brothers, the least’, stacks four qualifiers: ‘one’ makes a single act enough; ‘these’ points to people present or in view; ‘my brothers’ names a family relation; ‘the least’ is the superlative of mikros, ‘small’, which links the phrase to the ‘little ones’ of 10:42 and 18:6-14. Emoi epoiēsate, ‘to me you did it’, puts ‘me’ first for emphasis. Adelphoi can include sisters, which is why some modern versions translate ‘brothers and sisters’. Whether the words ‘my brothers’ narrow the group to disciples or express the King's solidarity with the needy is the exegetical question.",
+      "words": ["G1909", "G3745", "G0080", "G1646", "G4160G"],
+      "theology": [
+        { "id": "justice-poor", "note": "The chapter note names the two main readings. Graham Stanton, R. T. France, D. A. Carson, and W. D. Davies and Dale Allison read the least as Jesus' disciples, often poor and persecuted, since Matthew elsewhere calls disciples his brothers (12:49-50, 28:10) and promises reward for a cup of water given to a little one (10:42). Much Catholic social teaching, many Protestant and Orthodox teachers, and liberation theologians such as Gustavo Gutiérrez read the least as any person in need. On either reading, the King counts mercy to the vulnerable as mercy to himself." },
+        { "id": "union", "note": "The identification is stronger than representation. Christ does not only send the least; he is present in them, as the risen Christ asks Saul why he persecutes me (Acts 9:4). Readers who take the least as disciples see here the church as Christ's body; readers who take them as all the needy see Christ's solidarity with the poor that the incarnation began." }
+      ],
+      "refs": ["Matthew 10:40-42", "Matthew 12:48-50", "Matthew 18:5-6", "Acts 9:4-5", "Proverbs 19:17"]
+    },
+    {
+      "v": "41",
+      "context": "The King turns to those on his left and sends them away from himself into the eternal fire, which was prepared for the devil and his angels. The sentence mirrors verse 34 phrase by phrase, and its differences are deliberate.",
+      "grammar": "Poreuesthe ap' emou, ‘depart from me’, answers deute, ‘come’, in verse 34, and recalls 7:23. Katēramenoi, ‘cursed’, is a perfect passive participle like eulogēmenoi, but unlike verse 34 it names no agent: they are blessed ‘by my Father’, but not said to be cursed by him. To pur to aiōnion, ‘the eternal fire’, uses the adjective of verse 46. To hētoimasmenon tō diabolō kai tois angelois autou, ‘prepared for the devil and his angels’, echoes the participle of verse 34 but not its time phrase or its object: the kingdom was prepared ‘for you’ from the foundation of the world, the fire for the devil. Most commentators, including Davies and Allison and France, see the asymmetry as intended.",
+      "words": ["G4198", "G2672", "G4442", "G0166", "G2090", "G1228"],
+      "theology": [
+        { "id": "hell", "note": "The verse locates final punishment in separation from Christ and in fire, and it says whom the fire was made for. Human beings who go there go into a place not prepared for them, which is why the tradition has spoken of hell as the tragic refusal of a destiny God intended otherwise." },
+        { "id": "angels", "note": "The devil has angels, a company of fallen spirits under his rule, as Revelation 12:7-9 also pictures. Their final end is assumed rather than argued, and the judgment of human beings is set within God's judgment of every power opposed to him." }
+      ],
+      "text": "Codex Bezae, a few other manuscripts, and several Latin witnesses read ‘which my Father prepared’ in place of the simple passive, making verse 41 match verse 34. The shorter reading of the earliest manuscripts preserves the asymmetry and is almost certainly original.",
+      "refs": ["Matthew 7:23", "Revelation 20:10", "Revelation 12:7-9", "Jude 1:6", "2 Peter 2:4"]
+    },
+    {
+      "v": "42-45",
+      "context": "The list of needs is repeated in the negative, the condemned ask the same astonished question, and the King gives the mirror of verse 40. Each repetition is shorter than the last, until in verse 44 the condemned run all six conditions together in one breath and sum up what they failed to do.",
+      "grammar": "The negatives ouk edōkate, ‘you did not give’, and ou sunēgagete, ‘you did not take in’, repeat the verbs of verses 35-36 exactly. In verse 43 sickness and prison are joined, so that the King's list now has five members. The condemned's summary verb in verse 44, ou diēkonēsamen soi, ‘we did not serve you’, is diakoneō, to serve at table or minister, the verb of 20:28, where the Son of Man came not to be served but to serve. In verse 45 the King says ‘one of the least of these’ without ‘my brothers’, which some interpreters take as a sign that the phrase in verse 40 is not a restriction, and others as mere shortening.",
+      "words": ["G1325", "G4863", "G0772H", "G1247", "G1646", "G3756"],
+      "theology": [
+        { "id": "sin", "note": "The condemned are judged entirely for omissions. They are not charged with cruelty but with not seeing and not serving. The verse gives the sin of neglect a weight that ordinary moral reckoning rarely gives it." },
+        { "id": "justice-poor", "note": "Neglect of the needy is counted as neglect of the King. The condemned would gladly have served him had they known; the verse makes plain that he was there to be served all along." }
+      ],
+      "refs": ["Matthew 20:28", "James 4:17", "Luke 16:19-31", "1 John 3:17"]
+    },
+    {
+      "v": "46",
+      "context": "The scene ends with the two outcomes set side by side: the condemned go away into eternal punishment, the righteous into eternal life. It is the last sentence of Jesus' last discourse in Matthew, and the passion begins in the next verse.",
+      "grammar": "The sentence is a strict parallel: apeleusontai houtoi eis kolasin aiōnion, hoi de dikaioi eis zōēn aiōnion, ‘these will go away into eternal punishment, but the righteous into eternal life’. The same adjective, aiōnios, describes both destinies. Kolasis, ‘punishment’, occurs elsewhere in the New Testament only in 1 John 4:18. As the chapter note explains, the debate over final punishment turns on how much this parallel says about duration: Augustine (City of God 21.23) argued that the punishment must last as long as the life; conditionalists such as Edward Fudge and John Stott read the punishment as eternal in its result; universalists such as David Bentley Hart read aiōnios as ‘belonging to the age to come’.",
+      "words": ["G0565", "G2851", "G0166", "G1342", "G2222"],
+      "ot": [
+        { "ref": "Daniel 12:2", "note": "Daniel's is the only Old Testament verse that speaks of ‘everlasting life’, le-chayye olam, and it sets beside it shame and everlasting contempt for others who awake from the dust. The Greek versions render the first phrase zōēn aiōnion, exactly Matthew's words. Daniel speaks of a resurrection to two destinies at the end of a time of distress; Matthew's scene assumes that resurrection and makes the Son of Man the judge who assigns the outcomes." }
+      ],
+      "theology": [
+        { "id": "hell", "note": "The verse is the strongest single text for the traditional doctrine of eternal punishment, because of its parallel with eternal life. Faithful Christians differ on whether aiōnios here requires unending conscious experience, final destruction, or an age-long punishment that ends; the verse leaves no doubt that the outcome is final and belongs to the age to come." },
+        { "id": "hope", "note": "The last word of the discourse is life. The righteous go into the life of the age to come, the goal toward which the virgins waited and the servants worked, and the reason the whole chapter is good news for those who belong to the King." }
+      ],
+      "refs": ["Daniel 12:2", "John 5:28-29", "2 Thessalonians 1:9", "Revelation 20:14-15", "Romans 6:23"]
+    }
+  ]
+}

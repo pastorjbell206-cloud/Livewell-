@@ -1,0 +1,531 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "A summary that opens a new stage of travel. Jesus moves from town to town and village to village proclaiming the kingdom of God, and the Twelve go with him. The sentence runs on into verses 2-3, so the women are part of the same traveling company.",
+      "grammar": "En tō kathexēs, ‘in the time that followed’, uses kathexēs, a word found in the New Testament only in Luke and Acts (1:3, Acts 3:24, 11:4, 18:23). Diōdeuen, ‘he was traveling through’, is an imperfect of repeated movement, and kata polin kai kōmēn is distributive, ‘city by city and village by village’. Two participles describe the work: kērussōn, ‘proclaiming’ as a herald, and euangelizomenos, ‘announcing good news’. Their object is the kingdom of God, the same message Jesus said he was sent to bring to other towns (4:43).",
+      "words": ["G2517", "G1353", "G4172", "G2968", "G2784", "G2097", "G0932", "G1427"],
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "Luke defines Jesus' travels by their message: he goes everywhere announcing God's reign as good news. The kingdom is not first a program but a proclamation, and the deeds in the rest of the chapter show what the proclaimed reign does."
+        }
+      ],
+      "refs": ["Luke 4:43", "Luke 9:2", "Acts 28:31", "Matthew 9:35"]
+    },
+    {
+      "v": "2",
+      "context": "Alongside the Twelve travel women whom Jesus had healed of evil spirits and illnesses. The first named is Mary called Magdalene, from whom seven demons had gone out. Luke introduces her here as a new character, with a description of what Jesus freed her from, not of any sin.",
+      "grammar": "Hai ēsan tetherapeumenai, ‘who had been healed’, is a periphrastic pluperfect built from the imperfect of eimi and a perfect passive participle: their healing lay in the past, and its effect was their present company with Jesus. Maria hē kaloumenē Magdalēnē, ‘Mary, the one called Magdalene’, marks Magdalene as a byname from her town, distinguishing her from the other Marys of the Gospels. Aph' hēs daimonia hepta exelēluthei, ‘from whom seven demons had gone out’, uses the pluperfect again. Seven signals the severity of her affliction, as with the seven spirits worse than the first in 11:26; it is not a code for moral failure.",
+      "words": ["G2323", "G4151G", "G4190", "G0769H", "G3137I", "G3094", "G1140", "G2033", "G1831"],
+      "history": "The Western identification of Mary Magdalene with the sinful woman of 7:36-50 goes back to Gregory the Great's homily of 591 and has no basis in Luke's text. Luke names the woman of chapter 7 as a sinner and does not name her; he names Mary Magdalene here and describes her as delivered from demons, which he never equates with sexual sin. The Eastern churches never made the identification, and the Roman Catholic calendar of 1969 set it aside. The Gospels give Mary Magdalene a larger role than the legend did: she followed Jesus from Galilee, watched the crucifixion, and was among the first witnesses of the empty tomb and the risen Lord (23:49, 24:10, John 20:11-18).",
+      "theology": [
+        {
+          "id": "angels",
+          "note": "Luke speaks of evil spirits and illnesses side by side but keeps them distinct, as he does throughout (4:40-41, 6:18, 7:21). Deliverance from demonic power is part of what the kingdom brings, and those who were freed become the King's followers."
+        }
+      ],
+      "refs": ["Mark 16:9", "Luke 11:24-26", "Luke 23:49", "Luke 24:10", "John 20:11-18"]
+    },
+    {
+      "v": "3",
+      "context": "Two more women are named, Joanna and Susanna, with ‘many others’. They supported Jesus and the Twelve out of their own resources. The note is brief, but it tells the reader how the traveling mission was fed.",
+      "grammar": "Epitropos, ‘manager, steward’, is the title of someone entrusted with another's property or affairs; Matthew 20:8 uses it for a vineyard owner's foreman and Galatians 4:2 for guardians of an heir. Aitines diēkonoun autois, ‘who were serving them’: the imperfect of diakoneō describes ongoing support, and the verb covers providing meals and material help (compare 4:39, 10:40). Ek tōn huparchontōn autais, ‘from their possessions’, shows that these women controlled means of their own and gave from them.",
+      "words": ["G2489", "G5529", "G2012", "G2264H", "G4677", "G1247", "G5225"],
+      "history": "Joanna's husband Chuza held a responsible post in the household of Herod Antipas. The name Chuza is rare; it is attested in Nabatean inscriptions, including a tomb inscription at Hegra in Arabia naming a man as son of Kuza, and Richard Bauckham (Gospel Women, 2002) argued that Chuza was probably of Nabatean origin. Luke shows another link to Antipas's court in Acts 13:1, where Manaen, a leader in the church at Antioch, is described as having been brought up with Herod the tetrarch. Susanna appears only here.",
+      "theology": [
+        {
+          "id": "wealth",
+          "note": "Luke, who warns more than any Gospel about the danger of riches, also shows possessions put to faithful use. These women gave from what they owned to sustain the preaching of the kingdom, the pattern Luke will repeat in the early church (Acts 4:32-37)."
+        }
+      ],
+      "text": "Most editors print autois, ‘them’, Jesus and the Twelve; other manuscripts and the Textus Receptus have autō, ‘him’, followed by the King James Version (‘ministered unto him’), probably by assimilation to Mark 15:41 and Matthew 27:55.",
+      "refs": ["Luke 24:10", "Acts 13:1", "Mark 15:40-41", "Acts 4:32-37"]
+    },
+    {
+      "v": "4",
+      "context": "A large crowd gathers from town after town, and Jesus tells them a parable. Luke gives a single parable here where Mark 4 and Matthew 13 gather several, keeping the focus on the one about hearing.",
+      "grammar": "Suniontos de ochlou pollou, ‘as a great crowd was coming together’, is a genitive absolute that sets the scene. Kai tōn kata polin epiporeuomenōn pros auton, ‘and people from town after town were making their way to him’, uses kata distributively again, as in verse 1. Eipen dia parabolēs, ‘he spoke by means of a parable’, uses dia with the genitive for the means; parabolē, literally ‘a placing beside’, is a comparison, and Luke uses it for stories, proverbs, and images (4:23, 5:36, 6:39).",
+      "words": ["G4896", "G3793", "G1975", "G3850"],
+      "parallels": ["Mark 4:1-2", "Matthew 13:1-3"],
+      "refs": ["Luke 5:36", "Luke 6:39", "Psalm 78:2"]
+    },
+    {
+      "v": "5",
+      "context": "The parable opens with a sower going out to sow, and the first loss: seed on the path, trampled and eaten by birds. The whole story is told in the order of what happens to four kinds of ground.",
+      "grammar": "Exēlthen ho speirōn tou speirai ton sporon autou, ‘the sower went out to sow his seed’, repeats the root sper- three times (speirōn, speirai, sporon), a sound pattern the ear catches. Tou speirai is an articular infinitive of purpose. Only Luke adds the seed's own name, sporon, which he will use in verse 11 (‘the seed is the word of God’), and only Luke adds katepatēthē, ‘it was trampled’, to the birds that eat it: the path ruins the seed twice over.",
+      "words": ["G4687", "G4703", "G3598", "G2662", "G4071", "G2719"],
+      "parallels": ["Mark 4:3-4", "Matthew 13:3-4"],
+      "refs": ["Luke 8:11-12", "Isaiah 55:10-11"]
+    },
+    {
+      "v": "6-7",
+      "context": "Two more losses. Seed on rock springs up and withers for lack of moisture; seed among thorns is choked as the thorns grow up with it. Both begin to grow, which is what makes the loss hard.",
+      "grammar": "Luke says the seed fell epi tēn petran, ‘on the rock’, where Mark has epi to petrōdes, ‘on the rocky ground’; the image is soil lying thin over bedrock. Luke's reason for withering, dia to mē echein ikmada, ‘because it had no moisture’, differs from Mark's ‘no depth of earth’ and uses ikmas, a word found only here in the New Testament. In verse 7 sumphueisai, ‘growing up together with it’, is a compound participle, found only here: the thorns and the grain rise side by side, and apepnixan, ‘they choked’, describes the thorns strangling the seedlings. Luke uses the same family of verbs for being choked (pnigō and its compounds) in verses 14, 33, and 42.",
+      "words": ["G2667", "G4073", "G5453", "G3583", "G2429", "G0173", "G4855"],
+      "parallels": ["Mark 4:5-7", "Matthew 13:5-7"],
+      "refs": ["Jeremiah 4:3", "Luke 8:13-14", "Jeremiah 17:8"]
+    },
+    {
+      "v": "8",
+      "context": "The last seed falls on good soil and produces a hundredfold. Jesus ends the parable by calling out that whoever has ears should hear, the summons that governs the whole first half of the chapter.",
+      "grammar": "Luke has only the hundredfold (hekatontaplasiona) where Mark gives thirty, sixty, and a hundred, so the parable ends on the highest yield. Tauta legōn ephōnei, ‘saying these things, he called out’, uses the imperfect of phōneō, ‘raise the voice’: the closing line is spoken loudly, as a public appeal. Ho echōn ōta akouein akouetō, ‘the one who has ears to hear, let him hear’, is a present imperative of akouō in the third person, a call to keep listening, not only to receive sound.",
+      "words": ["G0018", "G1093I", "G1542", "G5455", "G3775", "G0191"],
+      "parallels": ["Mark 4:8-9", "Matthew 13:8-9"],
+      "refs": ["Genesis 26:12", "Luke 14:35", "Ezekiel 3:27", "Deuteronomy 29:4"]
+    },
+    {
+      "v": "9-10",
+      "context": "The disciples ask what the parable means. Jesus answers that the knowledge of the kingdom's mysteries has been given to them, while to others he speaks in parables, with words from Isaiah about seeing without seeing and hearing without understanding.",
+      "grammar": "Tis hautē eiē hē parabolē, ‘what this parable might be’, uses the optative eiē in an indirect question, a literary touch that Luke uses more than any other New Testament writer. Humin dedotai gnōnai ta mustēria, ‘to you it has been given to know the mysteries’, is a perfect passive with God as the unstated giver. Mustērion in the Greek Old Testament of Daniel 2 means a secret of God's plan that only God can reveal; in the New Testament it is not an esoteric rite but God's purpose disclosed. Tois de loipois, ‘but to the rest’, is Luke's softer phrase for Mark's ‘those outside’. The hina clause, ‘so that seeing they may not see’, can express purpose or result; it quotes Scripture and so presents the hardening as the outworking of what Isaiah described.",
+      "words": ["G1905", "G3850", "G1510", "G1325", "G1097", "G3466", "G0932", "G3062", "G2443", "G0991", "G4920"],
+      "ot": [
+        {
+          "ref": "Isaiah 6:9-10",
+          "note": "At his call, Isaiah is told to say to the people, ‘Keep listening, but do not comprehend; keep looking, but do not perceive’ (Hebrew imperatives), and to make their hearts dull lest they turn and be healed. The Septuagint turns the commands into predictions, ‘you will hear and not understand’, which softens the sense of divine purpose. Luke gives only a compressed form of the first lines, close to Mark 4:12, and omits Mark's final clause, ‘lest they turn and be forgiven’. Mark's ‘forgiven’, where the Hebrew and Septuagint have ‘healed’, agrees with the Aramaic Targum of Isaiah, which reads ‘and it be forgiven them’. Luke saves the full Septuagint quotation for the last scene of Acts (28:26-27), where Paul applies it to hearers in Rome."
+        }
+      ],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "Understanding the kingdom is a gift, ‘given’ by God, not an achievement of cleverness. The same parable that discloses God's purpose to those who seek its meaning conceals it from those who stay outside, so revelation always meets the hearer's response."
+        },
+        {
+          "id": "kingdom",
+          "note": "The kingdom has ‘mysteries’: God's reign is arriving in a form that can be missed, like seed in soil, and it is recognized only by those to whom its meaning is opened."
+        }
+      ],
+      "parallels": ["Mark 4:10-12", "Matthew 13:10-15"],
+      "refs": ["Daniel 2:27-28", "Acts 28:26-27", "Luke 10:21-24", "Romans 16:25-26"]
+    },
+    {
+      "v": "11-12",
+      "context": "The explanation begins by naming the seed as the word of God, then the first soil: hearers from whom the devil takes the word before it can take root, so that they may not believe and be saved.",
+      "grammar": "Estin de hautē hē parabolē, ‘this is the parable’, means ‘this is what it signifies’. Ho sporos estin ho logos tou theou, ‘the seed is the word of God’, gives the fullest form of the phrase among the Gospels; Mark has only ‘the word’. Luke uses ‘the word of God’ for Jesus' preaching (5:1, 8:21) and in Acts for the apostles' message (Acts 4:31, 6:7). In verse 12 the devil (diabolos, ‘slanderer’; Mark has Satan, Matthew ‘the evil one’) airei, ‘takes away’, the word from the heart, and Luke alone gives the purpose: hina mē pisteusantes sōthōsin, ‘so that they may not believe and be saved’. The aorist participle and subjunctive join believing and being saved as one event.",
+      "words": ["G3850", "G4703", "G3056", "G1228", "G0142", "G2588", "G4100", "G4982"],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "Luke's added clause states the link plainly: the word is heard in order to be believed, and believed in order that the hearer may be saved. Salvation in Luke comes through receiving the word with faith."
+        },
+        {
+          "id": "angels",
+          "note": "The devil is presented as an active opponent of the word, working at the moment of hearing. Scripture does not make him the only reason a hearer fails; the next soils locate the danger in shallowness and distraction. But it does treat the contest over the word as spiritual."
+        }
+      ],
+      "parallels": ["Mark 4:14-15", "Matthew 13:18-19"],
+      "refs": ["Luke 5:1", "Acts 6:7", "2 Corinthians 4:4", "Romans 10:17"]
+    },
+    {
+      "v": "13",
+      "context": "The rocky ground: people who receive the word with joy but have no root. They believe for a time and fall away in a time of testing. The joy is real, and so is the loss.",
+      "grammar": "Meta charas dechontai ton logon, ‘they receive the word with joy’: dechomai is the verb of welcome that Luke uses for receiving the gospel (Acts 8:14, 11:1, 17:11). Rhizan ouk echousin, ‘they have no root’, is the diagnosis. Luke alone says pros kairon pisteuousin, ‘they believe for a season’, and en kairō peirasmou aphistantai, ‘in a season of testing they fall away’; the two uses of kairos set a time of believing against a time of trial. Where Mark speaks of trouble and persecution, Luke's peirasmos covers any testing, the word he uses in the Lord's Prayer (11:4) and at Gethsemane (22:40, 46). Aphistantai, ‘they withdraw, stand off’, is the verb from which ‘apostasy’ comes.",
+      "words": ["G4073", "G5479", "G1209", "G3056", "G4491", "G2540", "G4100", "G3986H", "G0868"],
+      "theology": [
+        {
+          "id": "perseverance",
+          "note": "The verse says these hearers ‘believe’ and later fall away, and Christians read it differently. In the Reformed tradition (Calvin, the Westminster Confession 17) such faith is judged temporary and never saving, since the true believer is kept by God to the end; in Arminian and Wesleyan traditions (the Remonstrant theologians after the Synod of Dort, John Wesley's sermons) it describes real faith that can be lost. Catholic and Orthodox teaching likewise holds that grace can be forfeited. All agree that the verse warns against a faith with no root, and that the mark of true hearing is endurance, as verse 15 says."
+        }
+      ],
+      "parallels": ["Mark 4:16-17", "Matthew 13:20-21"],
+      "refs": ["Luke 11:4", "Luke 22:40", "Hebrews 3:12-14", "Colossians 2:6-7"]
+    },
+    {
+      "v": "14",
+      "context": "The thorny ground: hearers who go on their way and are choked by worries, riches, and the pleasures of life, so that their fruit never ripens. The word is neither snatched away nor abandoned; it is crowded out.",
+      "grammar": "Hupo merimnōn kai ploutou kai hēdonōn tou biou, ‘by cares and riches and pleasures of life’, is Luke's list; Mark has ‘the worries of this life, the deceitfulness of wealth, and the desire for other things’. Hēdonē, ‘pleasure’, is the word from which ‘hedonism’ comes. Poreuomenoi, ‘as they go along’, pictures a slow process on the road of ordinary life rather than a single crisis. Sumpnigontai is a present passive, ‘they are being choked’, and ou telesphorousin, ‘they do not bring to maturity’, uses a compound found only here in the New Testament: the plant grows but never ripens.",
+      "words": ["G0173", "G3308", "G4149", "G2237", "G0979", "G4198", "G4846", "G5052"],
+      "theology": [
+        {
+          "id": "wealth",
+          "note": "Riches sit between worries and pleasures as one of three things that smother the word. Luke returns to all three: anxiety about life (12:22-31), the rich fool (12:13-21), and the warning against hearts weighed down with indulgence and the cares of life (21:34)."
+        }
+      ],
+      "parallels": ["Mark 4:18-19", "Matthew 13:22"],
+      "refs": ["Luke 12:15-21", "Luke 12:22", "Luke 21:34", "1 Timothy 6:9-10"]
+    },
+    {
+      "v": "15",
+      "context": "The good soil: people who hear the word with an honest and good heart, hold it fast, and bear fruit with endurance. Luke's final soil is marked not by a quick yield but by keeping and patience.",
+      "grammar": "En kardia kalē kai agathē, ‘in a noble and good heart’, echoes the Greek ideal of the kalos kagathos, the person of fine and upright character, but Luke fills the phrase with a biblical sense: a heart open to God's word. Katechousin, ‘they hold it fast’, a present tense, contrasts with the seed snatched away (verse 12). Karpophorousin en hupomonē, ‘they bear fruit in endurance’, uses hupomonē, ‘patient endurance, staying under a load’, a word Luke uses only here and in 21:19.",
+      "words": ["G2570G", "G0018", "G2588", "G3056", "G2722", "G2592", "G5281"],
+      "theology": [
+        {
+          "id": "perseverance",
+          "note": "Fruit in this parable is not instant. The good hearer keeps the word and bears fruit through endurance, the same quality Jesus commends at the end of his Jerusalem discourse: ‘By your patient endurance you will gain your souls’ (21:19)."
+        }
+      ],
+      "parallels": ["Mark 4:20", "Matthew 13:23"],
+      "refs": ["Luke 21:19", "Luke 2:19", "Luke 11:28", "James 1:21-22"]
+    },
+    {
+      "v": "16",
+      "context": "The image changes from seed to lamp. No one lights a lamp to hide it; it goes on a stand so that those who come in can see. Following the parable, the saying explains why the disciples have been given the meaning: light is meant to be seen.",
+      "grammar": "Oudeis de luchnon hapsas, ‘no one, having lit a lamp’, is an aorist participle before the main verbs kaluptei, ‘covers’, and tithēsin, ‘puts’. Skeuei, ‘with a vessel’, is Luke's general word where Mark has modios, a grain measure. Hina hoi eisporeuomenoi blepōsin to phōs, ‘so that those coming in may see the light’, is Luke's own purpose clause, which pictures visitors entering a house, fitting a Gospel written for readers who would carry the light to others.",
+      "words": ["G3762", "G3088", "G0681", "G2572", "G4632", "G2825", "G3087", "G1531", "G5457"],
+      "theology": [
+        {
+          "id": "mission",
+          "note": "What has been given to the disciples in private is not meant to stay private. The lamp is set on a stand for those who enter, which anticipates the church's public witness in Acts."
+        }
+      ],
+      "parallels": ["Mark 4:21", "Matthew 5:15"],
+      "refs": ["Luke 11:33", "Luke 2:32", "Acts 13:47", "Philippians 2:15"]
+    },
+    {
+      "v": "17",
+      "context": "The reason for the lamp: nothing hidden will stay hidden. The mysteries now told privately will become public, and every secret will be brought to light.",
+      "grammar": "The verse is built in two parallel lines introduced by gar, ‘for’: ou estin krupton ho ou phaneron genēsetai, ‘there is nothing hidden that will not become manifest’, and oude apokruphon ho ou mē gnōsthē, ‘nor anything secret that will surely not fail to be known’. The second line uses ou mē with the aorist subjunctive, the strongest form of negation in Greek, and adds kai eis phaneron elthē, ‘and come into the open’. The future and emphatic negatives make the saying a promise about what God will do.",
+      "words": ["G2927", "G5318", "G1096", "G0614", "G1097", "G2064"],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "In context the saying is about the word: what Jesus now reveals to a few will be proclaimed openly. When Luke repeats it in 12:2-3, it becomes a warning that hidden hypocrisy will also be exposed. Revelation in both places is God's work of bringing into the light."
+        }
+      ],
+      "parallels": ["Mark 4:22", "Matthew 10:26"],
+      "refs": ["Luke 12:2-3", "1 Corinthians 4:5", "Colossians 1:26"]
+    },
+    {
+      "v": "18",
+      "context": "The practical conclusion: pay attention to how you listen. Hearing well brings more understanding; hearing carelessly loses even what one thought one had.",
+      "grammar": "Blepete oun pōs akouete, ‘see, therefore, how you hear’: oun draws the conclusion from the parable and the lamp sayings, and Luke has pōs, ‘how’, where Mark 4:24 has ti, ‘what’. The stress falls on the manner of listening. Hos an gar echē, dothēsetai autō, ‘for whoever has, it will be given to him’, uses a future passive with God as the implied giver. Luke alone adds ho dokei echein, ‘what he seems to have’ or ‘what he thinks he has’: the loss falls on a possession that was never real.",
+      "words": ["G0991", "G3767", "G4459", "G0191", "G2192", "G1325", "G1380", "G0142"],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "God's word is not neutral information. Receiving it leads to more understanding, and neglecting it leads to less; the hearer's response shapes what the hearer is able to receive next."
+        }
+      ],
+      "parallels": ["Mark 4:24-25", "Matthew 13:12"],
+      "refs": ["Luke 19:26", "Luke 11:28", "Hebrews 2:1", "James 1:22-25"]
+    },
+    {
+      "v": "19-21",
+      "context": "Jesus' mother and brothers come but cannot reach him because of the crowd. When he is told, he says that his mother and brothers are those who hear God's word and do it. Placed after the parable, the saying names the good soil: it is his family.",
+      "grammar": "Ouk ēdunanto suntuchein autō, ‘they were not able to reach him’, uses suntugchanō, ‘meet with’, found only here in the New Testament, and gives the crowd as the only reason. Hestēkasin exō, ‘they are standing outside’, a perfect, sets the family at the edge of the scene. Jesus' reply is a definition: mētēr mou kai adelphoi mou houtoi eisin hoi ton logon tou theou akouontes kai poiountes, ‘my mother and my brothers are these, who hear and do the word of God’. The two present participles, ‘hearing and doing’, repeat the conclusion of the Sermon on the Plain (6:47).",
+      "words": ["G3384", "G0080", "G1410", "G4940", "G3793", "G2476", "G1854", "G3056", "G0191", "G4160G"],
+      "history": "The Gospels name four brothers of Jesus, James, Joses, Judas, and Simon, and mention sisters (Mark 6:3). Christians have understood them in three ways. Helvidius in the fourth century and most Protestants in modern times take them as later children of Mary and Joseph. Epiphanius of Salamis and the Eastern Orthodox tradition take them as children of Joseph by an earlier marriage. Jerome, in his treatise Against Helvidius (about 383), argued that they were cousins, the view that became common in the Latin West. The Greek adelphos can mean a full brother but was also used more broadly for relatives, which is why the question remains debated.",
+      "theology": [
+        {
+          "id": "family",
+          "note": "Jesus does not reject his family; Luke has shown Mary as the model of one who hears and keeps God's word (1:38, 2:19, 2:51). He defines a family that anyone can join by hearing and doing, a household in which the natural family is included, not replaced."
+        }
+      ],
+      "parallels": ["Mark 3:31-35", "Matthew 12:46-50"],
+      "refs": ["Luke 1:38", "Luke 11:27-28", "Luke 6:47", "Acts 1:14"]
+    },
+    {
+      "v": "22",
+      "context": "One day Jesus proposes crossing to the other side of the lake, and they set out. The second half of the chapter begins, and it begins with a boat trip toward Gentile territory.",
+      "grammar": "Egeneto de en mia tōn hēmerōn, ‘it happened on one of the days’, is Luke's loose time marker (5:17, 20:1); he does not tie the storm to the day of parables as Mark does (Mark 4:35). Dielthōmen eis to peran tēs limnēs, ‘let us go across to the other side of the lake’, is a hortatory subjunctive. Luke calls the Sea of Galilee a limnē, ‘lake’, every time (5:1-2, 8:22-23, 8:33), where Mark and Matthew say thalassa, ‘sea’, echoing the Hebrew yam. Anēchthēsan, ‘they put out to sea’, is a nautical term Luke uses often in Acts.",
+      "words": ["G1096", "G4143", "G1330", "G4008", "G3041", "G0321"],
+      "history": "The Sea of Galilee is a freshwater lake about thirteen miles long and eight miles across at its widest, lying some 690 feet below sea level. Hills surround it, and the Golan heights rise steeply on the east; cool air descending through the gorges onto the warm surface can raise violent squalls with little warning, which fishermen on the lake still know.",
+      "parallels": ["Mark 4:35-36", "Matthew 8:18", "Matthew 8:23"],
+      "refs": ["Luke 5:1-2", "Acts 13:4", "Acts 27:2"]
+    },
+    {
+      "v": "23",
+      "context": "As they sail, Jesus falls asleep; a squall comes down on the lake, the boat takes on water, and they are in danger. Luke tells the rising danger in three short clauses.",
+      "grammar": "Aphupnōsen, ‘he fell asleep’, occurs only here in the New Testament; it describes dropping off to sleep, which Luke places before the storm. Katebē lailaps anemou eis tēn limnēn, ‘a whirlwind storm came down onto the lake’, uses katabainō, ‘come down’, apt to wind falling from the surrounding heights. Suneplērounto, ‘they were being filled up’, is an imperfect with the sailors as subject, a natural way of saying the boat was filling; ekinduneuon, ‘they were in danger’, another imperfect, holds the scene at its most dangerous moment.",
+      "words": ["G4126", "G0879", "G2597", "G2978", "G0417", "G3041", "G4845", "G2793"],
+      "ot": [
+        {
+          "ref": "Jonah 1:4-6",
+          "note": "The LORD hurls a great wind on the sea, the ship is about to break up, and Jonah lies fast asleep below deck until the captain wakes him and tells him to call on his God. The Septuagint says Jonah ‘was sleeping and snoring’ (ekatheuden kai erenchen). Luke's scene has no quotation from Jonah, but the sleeping man in a storm-tossed boat invites the comparison, and the contrast is plain: Jonah was fleeing God and had to be thrown into the sea, while Jesus rises and commands it. Jesus himself later calls his ministry ‘the sign of Jonah’ (11:29-32)."
+        }
+      ],
+      "parallels": ["Mark 4:37-38", "Matthew 8:24"],
+      "refs": ["Luke 11:29-30", "Psalm 121:4", "Acts 27:14-20"]
+    },
+    {
+      "v": "24",
+      "context": "The disciples wake him with a double cry, ‘Master, Master, we are perishing’. He rises, rebukes the wind and the raging water, and there is calm.",
+      "grammar": "Epistata, epistata, ‘Master, Master’, doubles Luke's own word for Jesus (Mark has didaskale, ‘Teacher’). Apollumetha, ‘we are perishing’, is a present middle of apollumi, the same verb used for the lost in Luke 15 and 19:10. Epetimēsen, ‘he rebuked’, is the verb Jesus uses against demons (4:35, 4:41) and fever (4:39): the storm is addressed as a hostile power. Tō kludōni tou hudatos, ‘the surge of the water’, uses kludōn, ‘rough water, billow’, found elsewhere only in James 1:6. Epausanto, ‘they ceased’, and egeneto galēnē, ‘there came a calm’, answer the two threats, wind and water.",
+      "words": ["G1326", "G1988", "G0622", "G2008", "G0417", "G2830", "G5204", "G3973", "G1055"],
+      "ot": [
+        {
+          "ref": "Psalm 106:9",
+          "note": "Recounting the exodus, the psalm says the LORD ‘rebuked the Red Sea, and it dried up’. The Septuagint (Psalm 105:9 in its numbering) reads epetimēsen tē eruthra thalassē, the same verb Luke uses here for Jesus rebuking the wind and waves, and adds that God led them through the depths (abussois), a word that returns in verse 31. The echo presents Jesus doing what Israel's God did at the sea."
+        },
+        {
+          "ref": "Psalm 107:23-30",
+          "note": "Sailors in a storm, their courage melting, cry to the LORD, who brings them out of their distress: ‘He calmed the storm to a whisper, and the waves of the sea were hushed’ (107:29). The Septuagint (106:29) says he ‘commanded’ (epetaxen) the storm, the verb the disciples use in the next verse: ‘He commands even the winds and the water’. The psalm ends with the sailors glad at the quiet and brought to their haven."
+        }
+      ],
+      "theology": [
+        {
+          "id": "sovereignty",
+          "note": "The storm is not treated as an accident of weather beyond anyone's reach. Jesus addresses it and it obeys, displaying the rule over creation that the psalms ascribe to the LORD alone."
+        }
+      ],
+      "parallels": ["Mark 4:38-39", "Matthew 8:25-26"],
+      "refs": ["Psalm 89:9", "Psalm 65:7", "Luke 4:39", "James 1:6"]
+    },
+    {
+      "v": "25",
+      "context": "Jesus asks, ‘Where is your faith?’ The disciples, afraid and amazed, ask one another who he is, since winds and water obey him. The question hangs over the rest of the chapter and is answered only in 9:20.",
+      "grammar": "Pou hē pistis humōn, ‘where is your faith?’, is gentler than Mark's ‘Do you still have no faith?’ (Mark 4:40): it assumes they have faith but did not use it. Phobēthentes de ethaumasan, ‘afraid, they marveled’, pairs fear with wonder. Tis ara houtos estin, ‘who then is this?’, uses ara, ‘then’, to draw the inference. The present tenses epitassei, ‘he commands’, and hupakouousin, ‘they obey’, state a general fact about him, not only what happened once.",
+      "words": ["G4226", "G4102G", "G5399", "G2296", "G0686", "G2004", "G5219", "G0417", "G5204"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Faith here is not the absence of fear but trust in the one who is present in the boat. The disciples' cry was to Jesus, which is faith of a kind; his question asks them to trust him while he sleeps, not only when he wakes."
+        },
+        {
+          "id": "incarnation",
+          "note": "The disciples' question is the right one. The one who falls asleep from tiredness is also the one whom wind and water obey; Luke shows full humanity and divine authority in the same boat, and leaves the reader to answer who he is."
+        }
+      ],
+      "parallels": ["Mark 4:40-41", "Matthew 8:26-27"],
+      "refs": ["Luke 9:20", "Luke 5:8-9", "Luke 7:49", "Mark 4:40"]
+    },
+    {
+      "v": "26",
+      "context": "They land in the region of the Gerasenes, opposite Galilee. The note on location marks the crossing into non-Jewish territory, which explains the herd of pigs in verse 32.",
+      "grammar": "Katepleusan, ‘they sailed down’, is a nautical verb for coming in from the open water to shore, found only here in the New Testament. Hētis estin antipera tēs Galilaias, ‘which is opposite Galilee’, uses antipera, ‘across from’, another word found only here, and the present estin, ‘is’, reads like a note for readers unfamiliar with the region.",
+      "words": ["G2668", "G5561", "G1086G", "G0495", "G1056G"],
+      "text": "The name varies in the manuscripts of all three Gospels. In Luke 8:26 (and 8:37), Gerasenes is read by Papyrus 75 (about AD 200), Codex Vaticanus, and Codex Bezae, with the Latin tradition, and most modern editions print it; Codex Sinaiticus and Codex Regius (L) have Gergesenes; Codex Alexandrinus and the Byzantine majority have Gadarenes, followed by the King James Version. In Mark 5:1 the first hand of Sinaiticus, Vaticanus, and Bezae read Gerasenes, Alexandrinus and the Byzantine text Gadarenes, and a corrector of Sinaiticus with some other manuscripts Gergesenes. In Matthew 8:28 the oldest manuscripts read Gadarenes, while the Byzantine text has Gergesenes, which is why the King James Version reads Gergesenes in Matthew and Gadarenes in Mark and Luke. Origen, in book 6 of his Commentary on John, rejected Gerasa as too far from the lake and argued for Gergesa, a town by the shore with a steep slope, and his preference probably influenced later copies. Each name can be defended as describing the region in a different way, since Gadara's territory reached toward the lake and Gerasa was the larger and better known city of the Decapolis.",
+      "parallels": ["Mark 5:1", "Matthew 8:28"],
+      "refs": ["Luke 8:37", "Mark 5:20"]
+    },
+    {
+      "v": "27",
+      "context": "As Jesus steps ashore he is met by a man from the town who had demons. For a long time he had worn no clothes and lived not in a house but among the tombs. Luke describes a man cut off from every normal human bond.",
+      "grammar": "Exelthonti autō epi tēn gēn, ‘as he came out onto the land’, is a dative participle agreeing with autō, ‘him’, the object of hupēntēsen, ‘met’. Anēr tis ek tēs poleōs, ‘a certain man from the town’, tells where he came from, not where he lived. Chronō hikanō, ‘for a considerable time’, and two negated clauses, ouk enedusato himation, ‘he had not put on a garment’, and en oikia ouk emenen, ‘he was not staying in a house’, build the portrait. Luke alone mentions the nakedness here, preparing for verse 35, where the man is found clothed.",
+      "words": ["G5221", "G0435G", "G4172", "G1140", "G5550", "G2425", "G1746", "G2440", "G3614G", "G3306", "G3418"],
+      "ot": [
+        {
+          "ref": "Isaiah 65:3-4",
+          "note": "God describes a rebellious people who provoke him, ‘who sit among the graves and spend the night in secret places, who eat the flesh of pigs’. The Septuagint adds that they sleep in the tombs and caves for the sake of dreams. The chapter is not quoted in the Gospels' story, but Jewish hearers could hardly miss the cluster of tombs, uncleanness, and pigs. Where Isaiah describes a people choosing defilement, Luke shows a man held captive in it and set free."
+        }
+      ],
+      "parallels": ["Mark 5:2-3", "Matthew 8:28"],
+      "refs": ["Isaiah 65:4", "Luke 8:35", "Numbers 19:16"]
+    },
+    {
+      "v": "28",
+      "context": "Seeing Jesus, the man cries out, falls before him, and shouts: what do you want with me, Jesus, Son of the Most High God? I beg you, do not torment me. The demon recognizes Jesus before the disciples can name him.",
+      "grammar": "Ti emoi kai soi, literally ‘what to me and to you?’, is a Semitic idiom (Hebrew mah li walakh) meaning ‘what do we have to do with each other?’ It is used in the Old Testament when one party resists another's interference, as when the widow of Zarephath says it to Elijah (1 Kings 17:18) and Jephthah to the Ammonite king (Judges 11:12). Huie tou theou tou hupsistou, ‘Son of the Most High God’, uses hupsistos, ‘Most High’, an old title of Israel's God (Genesis 14:18-20) often used by or to non-Israelites (Daniel 3:26, Acts 16:17), and the title the angel gave Jesus at the annunciation (1:32). Mē me basanisēs, ‘do not torment me’, uses basanizō, which can refer to punishment or judicial torture; the demons fear the judgment Jesus brings.",
+      "words": ["G0349", "G4363", "G5456G", "G1473", "G4771", "G5207", "G5310", "G1189", "G0928G"],
+      "theology": [
+        {
+          "id": "angels",
+          "note": "The unclean spirits know who Jesus is and fear him, which is recognition without trust (compare James 2:19). The powers that enslave people are not rivals to Jesus; they plead with him and cannot resist him."
+        }
+      ],
+      "parallels": ["Mark 5:6-7", "Matthew 8:29"],
+      "refs": ["Luke 1:32", "Genesis 14:18-20", "1 Kings 17:18", "Luke 4:34", "James 2:19"]
+    },
+    {
+      "v": "29",
+      "context": "Luke explains the outcry with a flashback. Jesus had already ordered the unclean spirit out, and the man's history was one of repeated seizure, chains, and flight into the desert.",
+      "grammar": "Parēngeilen gar, ‘for he had commanded’, introduces the reason for the plea in verse 28; the aorist is best rendered as a pluperfect in English. Pollois gar chronois sunērpakei auton, ‘for many times it had seized him’, uses a pluperfect of sunarpazō, ‘snatch, carry off’. The next verbs are imperfects of repeated action: edesmeueto, ‘he was being bound’, with the present passive participle phulassomenos, ‘being guarded’; diarrēssōn ta desma, ‘breaking the bonds’; ēlauneto, ‘he was being driven’, by the demon into desolate places. The piling up of past forms shows a long captivity that ordinary restraint could not manage.",
+      "words": ["G3853", "G4151G", "G0169", "G4884", "G1195", "G0254", "G3976", "G5442H", "G1284", "G1199", "G1643", "G2048"],
+      "parallels": ["Mark 5:3-5", "Mark 5:8"],
+      "refs": ["Luke 4:35", "Luke 11:21-22", "Luke 13:16"]
+    },
+    {
+      "v": "30-31",
+      "context": "Jesus asks the man's name, and the answer is ‘Legion’, because many demons had entered him. The demons beg not to be sent into the Abyss.",
+      "grammar": "Legiōn is a Latin loanword (legio) transliterated into Greek, the name of a Roman military unit. Luke explains it himself: hoti eisēlthen daimonia polla eis auton, ‘because many demons had gone into him’. Parekaloun, ‘they kept begging’, is an imperfect of persistent pleading. Abussos, ‘the Abyss’, literally ‘bottomless’, is the Septuagint's word for the deep waters of Genesis 1:2 (tehom) and for the depths of the earth (Psalm 71:20); in later Jewish writings and in Revelation 9:1-11 and 20:1-3 it is the prison where rebellious spirits are held until judgment.",
+      "words": ["G1905", "G3686", "G3003", "G1140", "G3870", "G2004", "G0012"],
+      "history": "A Roman legion in this period had a paper strength of around five thousand to six thousand men. The Tenth Legion, Fretensis, stationed in Syria in Jesus' day and garrisoned in Jerusalem after AD 70, used the boar among its emblems. Some modern readers, especially those who read the story as a protest against Roman occupation, see a pointed allusion in a ‘legion’ sent into pigs. The Gospels do not draw the connection, and the name's primary point in the text is number and strength.",
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The demons' fear of the Abyss shows that they know their end is confinement and judgment. Jesus' presence brings that judgment near, and Luke's readers would recognize the same destiny later described in Revelation 20:1-3."
+        }
+      ],
+      "parallels": ["Mark 5:9-10", "Matthew 8:29"],
+      "refs": ["Genesis 1:2", "Romans 10:7", "Revelation 9:1-2", "Revelation 20:1-3"]
+    },
+    {
+      "v": "32-33",
+      "context": "A large herd of pigs is feeding on the hillside. The demons ask to enter them; Jesus permits it; they leave the man, the herd rushes down the steep bank into the lake, and drowns. The destruction is visible proof that the man has been freed.",
+      "grammar": "Parekalesan auton hina epitrepsē autois, ‘they begged him to allow them’, and epetrepsen autois, ‘he allowed them’, repeat the verb of permission: the demons act only by leave. Hōrmēsen, ‘rushed’, describes a violent charge, and kata tou krēmnou, ‘down the steep bank’, uses krēmnos, ‘cliff, precipice’. Apepnigē, ‘was choked, drowned’, is the aorist passive of apopnigō, the same verb Luke used for the thorns choking the seed in verse 7. The link is verbal rather than intended allegory, but Luke's vocabulary ties together the forces that choke life in this chapter.",
+      "words": ["G0034", "G5519", "G1006", "G3735", "G3870", "G2010", "G3729", "G2911", "G3041", "G0638"],
+      "theology": [
+        {
+          "id": "sovereignty",
+          "note": "The demons must ask, and they receive only what Jesus allows. The story shows spiritual evil as real and destructive but wholly subject to his authority, which is the comfort Luke's readers are meant to take from it."
+        }
+      ],
+      "parallels": ["Mark 5:11-13", "Matthew 8:30-32"],
+      "refs": ["Job 1:12", "Job 2:6", "Leviticus 11:7", "Luke 22:31-32"]
+    },
+    {
+      "v": "34-36",
+      "context": "The herdsmen flee and report in town and country. People come out and find the man sitting at Jesus' feet, clothed and in his right mind, and they are afraid. Eyewitnesses tell how the man had been saved.",
+      "grammar": "Heuron kathēmenon ton anthrōpon, ‘they found the man sitting’, and then three details: himatismenon, ‘clothed’, a perfect participle for a restored state; sōphronounta, ‘being of sound mind’, from sōphroneō, ‘think soberly’, used by Paul for sober judgment (Romans 12:3); and para tous podas tou Iēsou, ‘at the feet of Jesus’, the posture of a disciple (10:39, Acts 22:3). In verse 36 Luke says pōs esōthē ho daimonistheis, ‘how the demonized man was saved’: sōzō, the word for salvation, describes his deliverance.",
+      "words": ["G5343", "G0518", "G1096", "G2147", "G2521", "G2439", "G4993", "G4228", "G5399", "G4982", "G1139"],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "Luke calls the man's deliverance salvation. Being saved here means being freed from bondage, restored to one's right mind, clothed, and seated with Jesus, which gives a concrete picture of the wholeness the word implies throughout the Gospel."
+        }
+      ],
+      "parallels": ["Mark 5:14-16", "Matthew 8:33"],
+      "refs": ["Luke 10:39", "Acts 22:3", "Romans 12:3", "Luke 19:9-10"]
+    },
+    {
+      "v": "37",
+      "context": "The whole population of the region asks Jesus to leave, because they are seized with great fear. He gets into the boat and goes back. The same power that freed the man drives the townspeople away.",
+      "grammar": "Hapan to plēthos, ‘the whole multitude’, is emphatic, and phobō megalō suneichonto, ‘they were gripped by great fear’, uses sunechō, ‘hold fast, seize’, in the imperfect passive; Luke uses the same verb for being ‘pressed’ by the crowd in verse 45 and for Jesus being ‘distressed’ in 12:50. Ērōtēsen auton apelthein ap' autōn, ‘they asked him to go away from them’, is a request Jesus honors without argument.",
+      "words": ["G2065", "G0537", "G4128", "G4066", "G1086G", "G0565", "G5401", "G4912", "G5290"],
+      "theology": [
+        {
+          "id": "fear-of-god",
+          "note": "Fear of the holy can move a person in two directions. Peter, afraid at the miraculous catch, fell at Jesus' feet (5:8-10), and the healed man sits there now; the Gerasenes, afraid, ask Jesus to leave. The same awe that should lead to worship becomes, when unwelcome, a reason to keep God at a distance."
+        }
+      ],
+      "parallels": ["Mark 5:17-18", "Matthew 8:34"],
+      "refs": ["Luke 5:8-10", "Luke 1:65", "Luke 7:16"]
+    },
+    {
+      "v": "38-39",
+      "context": "The freed man begs to go with Jesus, but Jesus sends him home to tell how much God has done for him. He goes through the whole town proclaiming how much Jesus had done. The first messenger to this Gentile region is a man who was once its outcast.",
+      "grammar": "Edeito de autou ho anēr einai sun autō, ‘the man was begging to be with him’: einai sun autō is the language of discipleship (compare 8:1, where the Twelve were ‘with him’). Hupostrephe eis ton oikon sou, ‘return to your home’, and diēgou, ‘tell in detail’, are present imperatives. The two hosa clauses make a deliberate pair: Jesus says hosa soi epoiēsen ho theos, ‘how much God has done for you’; the man goes out kērussōn hosa epoiēsen autō ho Iēsous, ‘proclaiming how much Jesus had done for him’. Kērussō is the herald's verb, used for Jesus' own preaching in verse 1.",
+      "words": ["G1189", "G0435G", "G1511", "G4862", "G0630G", "G5290", "G3624G", "G1334", "G3745", "G4160G", "G2784"],
+      "theology": [
+        {
+          "id": "mission",
+          "note": "Jesus turns the man's desire to follow into a commission to stay. He becomes a herald in his own town, among Gentiles, before the Twelve are sent out (9:1-6); the gospel reaches the Decapolis first through a witness to what God had done for him."
+        },
+        {
+          "id": "incarnation",
+          "note": "Luke lets the two sentences stand together: Jesus says God has done it, and the man says Jesus did. The narrator does not correct him. What God does, Jesus does, and the witness who tells one is telling the other."
+        }
+      ],
+      "parallels": ["Mark 5:18-20"],
+      "refs": ["Mark 3:14", "Mark 5:20", "Luke 9:1-2", "Psalm 66:16"]
+    },
+    {
+      "v": "40",
+      "context": "Back on the western shore, the crowd welcomes Jesus; they had all been waiting for him. The Gentile region asked him to go, and his own side of the lake stands ready.",
+      "grammar": "En de tō hupostrephein ton Iēsoun, ‘as Jesus was returning’, is an articular infinitive of time. Apedexato auton ho ochlos, ‘the crowd welcomed him’, uses apodechomai, ‘receive gladly’, a word found in the New Testament only in Luke and Acts (9:11, Acts 2:41, 21:17). Ēsan gar pantes prosdokōntes auton, ‘for all were expecting him’, is a periphrastic imperfect of prosdokaō, the verb of John's question in 7:19-20: ‘should we look for someone else?’",
+      "words": ["G5290", "G0588", "G3793", "G4328"],
+      "theology": [
+        {
+          "id": "hope",
+          "note": "The crowd's waiting is a small picture of Israel's larger expectation (2:25, 2:38, 3:15). Luke uses the same verb for those who wait for God's promised one, and here the one they wait for comes back to them."
+        }
+      ],
+      "parallels": ["Mark 5:21", "Matthew 9:1"],
+      "refs": ["Luke 2:25", "Luke 3:15", "Luke 9:11", "Acts 2:41"]
+    },
+    {
+      "v": "41-42",
+      "context": "Jairus, a synagogue leader, falls at Jesus' feet and begs him to come to his house, because his only daughter, about twelve years old, is dying. As Jesus goes, the crowds press around him, and the next story interrupts this one.",
+      "grammar": "Archōn tēs sunagōgēs, ‘ruler of the synagogue’, is Luke's variation on archisunagōgos (verse 49). Pesōn para tous podas, ‘falling at the feet’, is the same posture as the healed man in verse 35 and the woman in verse 47. Thugatēr monogenēs, ‘an only daughter’, repeats monogenēs from the widow's son (7:12). Apethnēsken, ‘she was dying’, is an imperfect of a process underway (Matthew 9:18 has the father say she has just died). Hoi ochloi sunepnigon auton, ‘the crowds were crushing him’, uses sumpnigō, the verb of the thorns choking the word in verse 14; Mark 5:24 has sunthlibō, ‘press together’.",
+      "words": ["G2383", "G0758", "G4864", "G4098", "G4228", "G3870", "G2364", "G3439", "G2094", "G0599", "G4846"],
+      "history": "Jairus is the Greek form of the Hebrew name Yair, borne in the Old Testament by a son of Manasseh (Numbers 32:41) and by one of the judges (Judges 10:3-5). A synagogue leader oversaw the building and the order of its services; the office was a mark of standing in a town, and Luke shows such a man falling at Jesus' feet in public.",
+      "parallels": ["Mark 5:22-24", "Matthew 9:18-19"],
+      "refs": ["Luke 7:12", "Luke 13:14", "Acts 13:15", "Acts 18:8"]
+    },
+    {
+      "v": "43-44",
+      "context": "In the press of the crowd is a woman who had suffered bleeding for twelve years and could not be healed by anyone. She comes up behind Jesus, touches the fringe of his cloak, and the bleeding stops at once.",
+      "grammar": "Ousa en rhusei haimatos, ‘being in a flow of blood’, uses the language of Leviticus 15 for a discharge. Apo etōn dōdeka, ‘for twelve years’, matches the girl's age in verse 42. Ouk ischusen ap' oudenos therapeuthēnai, ‘she was not able to be healed by anyone’, ends with a double negative that stresses the hopelessness. Hēpsato tou kraspedou tou himatiou autou, ‘she touched the fringe of his cloak’: kraspedon is the Septuagint's word for the tassels of Numbers 15:38. Parachrēma, ‘at once’, is a Lukan word (ten of its eighteen New Testament uses are in the Gospel), and estē, ‘stood still, stopped’, is the same verb used when the bearers halted at Nain (7:14).",
+      "words": ["G4511", "G0129G", "G2094", "G2395", "G2480", "G2323", "G0681", "G2899", "G2440", "G3916", "G2476"],
+      "history": "Mark 5:26 says she had suffered much under many physicians and grown worse; Luke's shorter clause omits the complaint about doctors, and some manuscripts, including Papyrus 75 and Codex Vaticanus, lack even the clause about spending all she had. W. K. Hobart (The Medical Language of St. Luke, 1882) used such differences to argue that the author was a physician, as Colossians 4:14 says of Luke. Henry J. Cadbury (The Style and Literary Method of Luke, 1919-1920) showed that Luke's so-called medical vocabulary is also found in educated non-medical writers, and most scholars now think the language neither proves nor disproves the tradition.",
+      "ot": [
+        {
+          "ref": "Numbers 15:38-39",
+          "note": "The LORD commands Israelites to make tassels (Hebrew tsitsit) on the corners (kanfe) of their garments with a blue cord, ‘so that you may see them and remember all the commandments of the LORD’. The Septuagint calls them kraspeda. Jesus wears the garment of an observant Jew. Zechariah 8:23 pictures ten men from the nations taking hold of the kanaph of a Jew because God is with him, the Septuagint using the same word, kraspedou; the woman's grasp of Jesus' fringe fits that picture of reaching for the one in whom God is present."
+        }
+      ],
+      "parallels": ["Mark 5:25-29", "Matthew 9:20-21"],
+      "refs": ["Leviticus 15:25-27", "Zechariah 8:23", "Luke 6:19", "Mark 6:56"]
+    },
+    {
+      "v": "45-46",
+      "context": "Jesus asks who touched him. Everyone denies it, and Peter points out that the crowds are pressing on every side. Jesus insists: someone touched him, for he knows power has gone out from him.",
+      "grammar": "Tis ho hapsamenos mou, ‘who is the one who touched me?’, uses an aorist participle for a specific act. Arnoumenōn de pantōn, ‘when all were denying’, is a genitive absolute with arneomai, the verb of Peter's later denials (22:57). Peter's reply uses sunechousin and apothlibousin, ‘they hem you in and press against you’; apothlibō occurs only here. Jesus answers with emphatic egō gar egnōn, ‘for I know’, and dunamin exelēluthuian ap' emou, ‘power that has gone out from me’, a perfect participle for power that went out and whose effect remains.",
+      "words": ["G0681", "G0720", "G4074G", "G1988", "G4912", "G0598", "G1097", "G1411", "G1831"],
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "Luke connects Jesus' healing power with the Spirit: Jesus returned to Galilee ‘in the power of the Spirit’ (4:14), and ‘the power of the Lord was present for Him to heal’ (5:17). The power that goes out at a touch is not a magical substance but the presence of God's Spirit working through Jesus, who knows when it is at work."
+        }
+      ],
+      "parallels": ["Mark 5:30-31", "Matthew 9:22"],
+      "refs": ["Luke 4:14", "Luke 5:17", "Luke 6:19", "Acts 10:38"]
+    },
+    {
+      "v": "47-48",
+      "context": "The woman sees she cannot stay hidden, comes trembling, falls before him, and tells in front of everyone why she touched him and how she was healed. Jesus calls her ‘Daughter’ and sends her away with faith credited and peace given.",
+      "grammar": "Idousa de hē gunē hoti ouk elathen, ‘the woman, seeing that she had not escaped notice’, uses lanthanō, ‘be hidden’, echoing the promise of verse 17 that nothing hidden will stay hidden. Enōpion pantos tou laou, ‘before all the people’, is Luke's addition: her healing becomes public testimony. Thugatēr, ‘daughter’: she is the only individual woman in the Gospels whom Jesus addresses by that name. Hē pistis sou sesōken se, ‘your faith has saved you’, repeats word for word what he said to the forgiven woman in 7:50, with the perfect of sōzō for a rescue complete and lasting.",
+      "words": ["G2990", "G5141", "G4363", "G0156", "G0518", "G1799", "G2992", "G2390", "G2364", "G4102G", "G4982", "G1515"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Her faith was imperfect in form, a secret touch in a crowd, yet Jesus names it as the means of her healing. He does not let it remain secret, because faith in Luke is finally a relationship with him, not a private transaction with his power."
+        },
+        {
+          "id": "family",
+          "note": "‘Daughter’ gives her a family name in public after twelve years on the edges of community life. It fulfills in miniature the saying of verse 21: those who come to Jesus in faith are brought into his household."
+        }
+      ],
+      "parallels": ["Mark 5:32-34", "Matthew 9:22"],
+      "refs": ["Luke 7:50", "Luke 8:17", "Luke 13:16", "Luke 17:19"]
+    },
+    {
+      "v": "49-50",
+      "context": "While Jesus is still speaking, someone comes from Jairus's house: the girl is dead, and the Teacher need not be troubled further. Jesus hears and speaks to Jairus: do not fear; only believe, and she will be saved.",
+      "grammar": "Eti autou lalountos, ‘while he was still speaking’, is a genitive absolute that makes the delay the cause of the bad news. Tethnēken, ‘she has died’, is a perfect of a settled fact. Mēketi skulle, ‘trouble him no longer’, uses the verb the centurion used in 7:6. Jesus answers with two imperatives of different aspect: mē phobou, a present, ‘stop being afraid’, and pisteuson, an aorist, ‘believe’. Mark 5:36 has the present pisteue, ‘keep believing’; Luke's aorist may present trust as a decisive act at this moment, though the difference should not be pressed. Luke alone adds kai sōthēsetai, ‘and she will be saved’, the same verb used for the woman in verse 48.",
+      "words": ["G2980", "G0752", "G2348", "G2364", "G4660", "G1320", "G5399", "G3441", "G4100", "G4982"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "The call to believe comes after the news of death, when faith no longer has any reason in circumstances. Luke places the woman's healing between the father's request and the report of death so that her story becomes the ground of Jesus' word to Jairus."
+        },
+        {
+          "id": "hope",
+          "note": "‘She will be saved’ is spoken over someone already dead. Jesus' promise stands where human help has ended, which is the shape Christian hope takes at every graveside."
+        }
+      ],
+      "parallels": ["Mark 5:35-36", "Matthew 9:18"],
+      "refs": ["Luke 7:6", "Luke 8:48", "Romans 4:17-18", "John 11:40"]
+    },
+    {
+      "v": "51-53",
+      "context": "At the house Jesus lets in only Peter, John, and James, with the girl's parents. The mourners are already weeping and beating their breasts. He tells them to stop weeping because she is not dead but asleep, and they laugh at him, knowing she has died.",
+      "grammar": "Luke's order, Peter, John, and James, puts John before his elder brother, as Luke does again in 9:28 and Acts 1:13, reflecting the partnership of Peter and John in Acts 3-4 and 8:14. Ekoptonto autēn, ‘they were beating their breasts for her’, uses koptō in the middle voice for the gestures of mourning. Mē klaiete, ‘stop weeping’, repeats the command to the widow in 7:13. Ou gar apethanen alla katheudei, ‘for she has not died but is sleeping’, contrasts an aorist of death with a present of sleep. Kategelōn, ‘they were laughing him down’, an imperfect of a compound verb, is scornful laughter; eidotes hoti apethanen, ‘knowing that she had died’, confirms the death beyond doubt.",
+      "words": ["G0863I", "G4074G", "G2491H", "G2385G", "G2799", "G2875", "G0599", "G2518", "G2606", "G6063"],
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "Jesus does not deny the girl's death, which the mourners and the narrator both affirm. He redescribes it: death in his presence is like sleep, from which one wakes. The early church used the same language for believers who die in Christ (1 Thessalonians 4:13-14), and Daniel 12:2 already spoke of those who sleep in the dust awaking."
+        }
+      ],
+      "parallels": ["Mark 5:37-40", "Matthew 9:23-24"],
+      "refs": ["Daniel 12:2", "John 11:11-14", "1 Thessalonians 4:13-14", "Luke 9:28"]
+    },
+    {
+      "v": "54-56",
+      "context": "Jesus takes the girl by the hand and calls, ‘Child, get up’. Her spirit returns, she rises at once, and he tells them to give her something to eat. Her parents are astounded, and he orders them to tell no one what happened.",
+      "grammar": "Kratēsas tēs cheiros autēs, ‘taking hold of her hand’, touches a corpse as Jesus touched the bier at Nain. Hē pais, egeire, ‘Child, get up’, uses the nominative with the article as a form of address and the present imperative of egeirō; Luke gives the command in Greek, while Mark 5:41 keeps Jesus' Aramaic, talitha koum. Epestrepsen to pneuma autēs, ‘her spirit returned’, is Luke's own detail. Dietaxen autē dothēnai phagein, ‘he directed that she be given something to eat’, confirms bodily life, much as the risen Jesus eats fish before his disciples (24:41-43). Parēngeilen autois mēdeni eipein, ‘he ordered them to tell no one’, gives an aorist command of silence.",
+      "words": ["G2902", "G5495", "G3816", "G1453", "G1994", "G4151G", "G0450", "G3916", "G1299", "G5315", "G1839", "G3853"],
+      "ot": [
+        {
+          "ref": "1 Kings 17:21-22",
+          "note": "Elijah stretches himself on the widow's son three times and prays, ‘let this boy's life return to him’, and the LORD hears, and ‘the boy's life returned to him, and he lived’. The Hebrew nefesh, ‘life’, becomes psuchē in the Septuagint. Luke's ‘her spirit returned’ uses pneuma, but the pattern of life returning to the body is the same, and so is the contrast: Elijah pleads, Jesus commands."
+        }
+      ],
+      "history": "The command to silence belongs to a pattern in the Synoptic Gospels that William Wrede called the messianic secret (Das Messiasgeheimnis in den Evangelien, 1901). Wrede thought it a device of Mark to explain why Jesus was not recognized as Messiah before the resurrection. Most later scholars see historical reasons as well, such as avoiding a crowd that wanted a wonder-worker or a political king (compare John 6:15). In a house surrounded by mourners, a raising could hardly be kept secret for long; the command limits public display rather than hiding the fact.",
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "The girl's return is bodily and ordinary: she stands up and eats. Like the young man at Nain, she will die again, but the story shows Jesus as the Lord of life whose word death obeys, the power that will raise the dead in the end."
+        },
+        {
+          "id": "intermediate",
+          "note": "Luke describes death as the spirit leaving and life as the spirit returning, the same language he uses when Jesus commits his spirit to the Father (23:46) and Stephen asks Jesus to receive his (Acts 7:59). The verse supports the biblical picture of the person continuing beyond death, though it says nothing about where the girl's spirit had been."
+        }
+      ],
+      "parallels": ["Mark 5:41-43", "Matthew 9:25-26"],
+      "refs": ["Luke 7:14", "Luke 24:41-43", "Luke 23:46", "Acts 7:59", "Acts 9:40-41"]
+    }
+  ]
+}

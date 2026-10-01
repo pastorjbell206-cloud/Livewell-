@@ -1,0 +1,400 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "A loose time note moves the story from Cana back to Jerusalem for an unnamed festival. The chapter note sets out the proposals for which feast it was. What matters for the story is that Jesus is again in the city of the temple and its authorities, where the Sabbath dispute will break out.",
+      "grammar": "Meta tauta, ‘after these things’, is John's loosest link between episodes (compare 3:22, 6:1, 7:1); it signals a new scene, not a precise interval. Heortē tōn Ioudaiōn, ‘a feast of the Jews’, lacks the article in the best manuscripts, so it is indefinite. Anebē, ‘went up’, is the pilgrimage verb, as in 2:13.",
+      "words": ["G3778", "G1859", "G2453", "G0305", "G2414"],
+      "theology": [
+        {
+          "id": "worship",
+          "note": "Jesus keeps Israel's festivals. The conflict of this chapter is not between Jesus and Israel's worship but between Jesus and a reading of the Sabbath that could not see God at work in the healing he did on it."
+        }
+      ],
+      "refs": ["John 2:13", "John 6:4", "John 7:2", "John 10:22"]
+    },
+    {
+      "v": "2",
+      "context": "The narrator describes the place before the person: a pool by the Sheep Gate, with five colonnades, called in Hebrew Bethesda. The precision of the description, in a book written after Jerusalem's destruction, is one of the details that archaeology has confirmed.",
+      "grammar": "Estin, ‘there is’, is present tense. Daniel Wallace (Biblica 71, 1990) argued that it is a genuine present and so implies that the pool and its colonnades were still standing when John wrote, which would point to a date before AD 70; others take it as a narrative present or note that the pools survived the city's destruction in some form. Epi tē probatikē, ‘by the sheep [gate]’, uses an adjective without its noun; the Greek Old Testament uses the same adjective for Nehemiah's Sheep Gate (Nehemiah 3:1, pulē probatikē), which is why most versions supply ‘gate’, though ‘sheep pool’ and ‘sheep market’ (KJV) have also been read. Kolumbēthra, from kolumbaō, ‘to dive’ or ‘to swim’, means a bathing pool. Hebraisti, ‘in Hebrew’, usually means the Aramaic spoken in Judea.",
+      "words": ["G2414", "G4262", "G2861", "G1951", "G1447", "G0964", "G4002", "G4745"],
+      "history": "Early Christian visitors saw the pools before any modern excavation. The Bordeaux Pilgrim, in AD 333, describes twin pools with five porticoes, called Bethsaida, and Eusebius, in his Onomasticon, a gazetteer of biblical places from the early fourth century, describes twin pools at Bezatha, one filled by rain and the other with reddish water. Modern excavation at St. Anne's (see the chapter note) found two rock-cut reservoirs divided by a rock partition, which fits these descriptions. Whether a fifth colonnade actually ran along the central dam is debated among archaeologists, but four sides and a central partition give a natural sense to John's five.",
+      "text": "The name is spelled three ways in the manuscripts. Bethesda, possibly ‘house of mercy’ or ‘house of outpouring’, is the reading of Codex Alexandrinus, Codex Ephraemi, and most later manuscripts, and it is supported by the dual name Beth Eshdatayin in the Copper Scroll from Qumran (3Q15). Bethzatha, which matches Josephus's name for the northern quarter of the city, Bezetha, is the reading of Codex Sinaiticus and is printed by the Nestle-Aland and Westcott-Hort editions. Bethsaida, the name of the town in Galilee, is read by P75 and Codex Vaticanus. The BSB, NIV, and ESV print Bethesda; the NRSV prints Beth-zatha.",
+      "refs": ["Nehemiah 3:1", "Nehemiah 12:39", "John 19:13", "John 9:7"]
+    },
+    {
+      "v": "3-4",
+      "context": "The colonnades are crowded with sick people, blind, lame, and withered. The critical text ends there. Verse 4, printed in the King James Version but not in modern versions, explained why they waited: an angel stirred the water from time to time, and the first to step in was healed. The man's words in verse 7 show that people believed the stirred water could heal, whether or not the narrator ever explained it.",
+      "grammar": "Katekeito, an imperfect, ‘were lying’, pictures a standing situation, not a single day's crowd. Plēthos tōn asthenountōn, ‘a multitude of the sick’, is followed by three adjectives used as nouns: tuphlōn, ‘blind’, chōlōn, ‘lame’, xērōn, ‘withered’, that is, paralyzed or with wasted limbs. The added words of verse 4 contain vocabulary found nowhere else in John and in some cases nowhere else in the New Testament: nosēma, ‘disease’, dēpote, ‘whatever’, and, in the longer ending of verse 3, kinēsis, ‘moving’. Bruce Metzger's Textual Commentary lists this vocabulary among the reasons for judging the words secondary.",
+      "words": ["G2621", "G4128", "G0770H", "G5185", "G5560", "G3584", "G0032G", "G5015", "G5016", "G3553", "G1221"],
+      "text": "Two additions are involved, and the witnesses treat them differently. The end of verse 3, ‘waiting for the moving of the water’, is absent from P66, P75, Codex Sinaiticus, Codex Vaticanus, and the first hands of Codex Alexandrinus and Codex Ephraemi. Verse 4 is absent from P66, P75, Sinaiticus, Vaticanus, the first hand of Ephraemi, and Codex Bezae. So Bezae has the end of verse 3 but not verse 4, while the first hand of Alexandrinus has verse 4 but not the end of verse 3. Several later manuscripts that include verse 4 mark it with asterisks or obeli, the scribes' signs of doubt, and its wording varies widely from copy to copy. These are the marks of an explanatory note that entered the text at different points. Nearly all modern editions and versions omit it; the BSB keeps the verse number and leaves it blank.",
+      "history": "The belief the gloss records is old. Tertullian, writing on baptism around AD 200, speaks of an angel who used to stir the pool of Bethsaida, so the explanation was known in North Africa by his time (On Baptism 5), and he saw in it a figure of the angel at Christian baptism. The healing hope itself fits the site, since excavators found evidence of a later healing sanctuary beside the pools (see the chapter note), and intermittent springs or channels feeding a pool could explain water that bubbled from time to time.",
+      "refs": ["John 5:7", "Isaiah 35:5-6", "Matthew 11:5", "Luke 14:13"]
+    },
+    {
+      "v": "5-7",
+      "context": "Out of the crowd Jesus picks one man, ill for thirty-eight years, and asks whether he wants to be well. The man does not answer yes. He explains why he has not been healed: he has no one to put him in the water, and someone always gets there first. His answer is a lament about being alone.",
+      "grammar": "Triakonta kai oktō etē echōn en tē astheneia autou, literally ‘having thirty-eight years in his illness’, uses echō with a span of time, an idiom for how long a condition has lasted. In verse 6 Jesus knows (gnous, an aorist participle of ginōskō) without being told, as with Nathanael and the Samaritan woman. Theleis hugiēs genesthai, ‘do you want to become well?’, uses hugiēs, ‘whole’, which becomes the chapter's refrain. The man's reply turns on anthrōpon ouk echō, ‘I have no one’, literally ‘a man I do not have’, set first for emphasis. Hina ... balē me eis tēn kolumbēthran, ‘to throw me into the pool’, uses ballō, a rough verb: someone would have to heave him in the moment the water was disturbed (hotan tarachthē, an aorist passive subjunctive).",
+      "words": ["G5144", "G3638", "G2094", "G0769H", "G1097", "G2309", "G5199", "G1096", "G2962H", "G0906H", "G5015"],
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "John does not explain the man's illness, promise that the others at the pool would be healed, or require him to have faith first. The scene is honest about long, helpless suffering and places the initiative entirely with Jesus, who comes to the man when no one else will."
+        }
+      ],
+      "refs": ["Deuteronomy 2:14", "John 1:47-48", "John 4:18", "Psalm 142:4"]
+    },
+    {
+      "v": "8-9",
+      "context": "Jesus speaks three commands, and the man is healed at once, picks up his mat, and walks. Then comes the delayed notice that changes everything: that day was a Sabbath. John tells the story of the man born blind the same way (9:14).",
+      "grammar": "Egeire aron ton krabatton sou kai peripatei, ‘get up, pick up your mat, and walk’, is almost exactly the wording of Jesus' command to the paralytic lowered through the roof in Mark 2:9-11, though the stories are otherwise different. Egeire and peripatei are present imperatives and aron an aorist: rise, take up the mat once, and keep walking. Krabattos is a poor person's pallet or camp bed. In verse 9 egeneto hugiēs, ‘became whole’, is an aorist of a completed change, and periepatei is an imperfect, ‘he began to walk around’, an inceptive sense the BSB captures. The sentence ēn de sabbaton, ‘now it was a Sabbath’, arrives only after the healing.",
+      "words": ["G1453", "G0142", "G2895", "G4043", "G2112", "G5199", "G4521"],
+      "theology": [
+        {
+          "id": "new-creation",
+          "note": "The prophets pictured the age of God's coming as a time when the lame would leap and the sick be made whole (Isaiah 35:5-6). John presents the healing as a sign of that restoration, given on the day that remembered God's finished creation."
+        }
+      ],
+      "refs": ["Mark 2:9-12", "John 9:14", "Isaiah 35:6", "Acts 3:6-8"]
+    },
+    {
+      "v": "10-13",
+      "context": "The authorities see a man carrying a mat on the Sabbath and object. He passes the blame to the man who healed him, whose name he does not know. Jesus has slipped away into the crowd. The healed man never asks who Jesus is, a contrast with the blind man of chapter 9.",
+      "grammar": "Sabbaton estin, ‘it is Sabbath’, is stated first, and ouk exestin soi arai ton krabatton, ‘it is not lawful for you to carry the mat’, uses exestin, the word for what the law permits. The man's reply in verse 11 begins with ho poiēsas me hugiē, ekeinos moi eipen, ‘the one who made me well, that man told me’: the resumptive ekeinos, ‘that man’, shifts responsibility away from himself. In verse 13 ho de iatheis, ‘the one who had been healed’, is an aorist passive participle, and exeneusen, ‘he slipped away’, is a rare verb, found only here in the New Testament, meaning to turn aside or withdraw.",
+      "words": ["G2453", "G2323", "G4521", "G1832", "G0142", "G2895", "G5199", "G2390", "G1593", "G3793"],
+      "history": "The rule against carrying was among the oldest Sabbath restrictions. Beyond Jeremiah 17:21-22 and the Mishnah's list (see the chapter note), the Book of Jubilees, a retelling of Genesis and Exodus from the second century BC, lists carrying a burden out of a tent or house among the acts that profane the Sabbath (Jubilees 50:8), and the Damascus Document found at Qumran forbids carrying anything out of a house or into it on the Sabbath (CD 11:7-9). Groups who disagreed about much else agreed that carrying in public was work.",
+      "theology": [
+        {
+          "id": "sabbath",
+          "note": "The authorities' first concern is the mat, not the man. The scene does not deny that the Sabbath had rules; it shows how a rule meant to guard rest could keep people from seeing that God had given rest to a man who had had none for thirty-eight years."
+        }
+      ],
+      "refs": ["Jeremiah 17:21-22", "Nehemiah 13:19", "Mark 2:27-28", "John 9:13-16"]
+    },
+    {
+      "v": "14-15",
+      "context": "Jesus finds the man in the temple and warns him: you are well; stop sinning, so that nothing worse happens to you. The man then goes and tells the authorities that it was Jesus who healed him. Whether he does it naively or to protect himself, the result is that Jesus becomes the target.",
+      "grammar": "Heuriskei, a historic present, ‘finds’, makes Jesus the one who seeks the man out again, as in 9:35. Ide, hugiēs gegonas, ‘see, you have become well’, uses a perfect: the healing stands. Mēketi hamartane is a present imperative with mēketi, ‘no longer’: ‘stop sinning’ or ‘do not go on sinning’, the same phrase as in 8:11. Hina mē cheiron soi ti genētai, ‘so that something worse may not happen to you’, uses the comparative cheiron, ‘worse’, without saying what. In verse 15 anēngeilen, ‘reported’, is the verb for announcing news, the same verb used of the Messiah in 4:25.",
+      "words": ["G2147", "G2411", "G2396", "G5199", "G3371", "G0264", "G5501", "G0312"],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Jesus links this man's future to sin without explaining his past illness by it. John 9:3 rules out treating every sickness as punishment, but this verse keeps the opposite error in view: sin has consequences more serious than a disabled body, and healing is not the end of what the man needs."
+        }
+      ],
+      "text": "A few manuscripts, followed by the Westcott-Hort edition, read eipen, ‘told’, for anēngeilen, ‘reported’, in verse 15. The difference is slight, though ‘reported’ fits the setting of an official inquiry.",
+      "refs": ["John 8:11", "John 9:3", "John 9:35", "Luke 13:1-5"]
+    },
+    {
+      "v": "16",
+      "context": "The narrator states the result: because Jesus was doing such things on the Sabbath, the authorities began to persecute him. The verse turns the story from a healing into a conflict, and it summarizes a pattern, not a single act.",
+      "grammar": "Dia touto, ‘because of this’, gives the cause, and hoti tauta epoiei en sabbatō explains it. Both main verbs are imperfect: ediōkon, ‘they were persecuting’ or ‘began to persecute’, and epoiei, ‘he was doing’, with the plural tauta, ‘these things’. The tenses describe a habit on both sides: Jesus made a practice of Sabbath healing, and his opponents made a practice of pursuing him for it.",
+      "words": ["G1377", "G2453", "G4160G", "G4521"],
+      "theology": [
+        {
+          "id": "sabbath",
+          "note": "The persecution is about Jesus' practice, not a lapse. His habit of healing on the Sabbath is deliberate, and verse 17 will give his reason: the day of God's rest is also a day of God's life-giving work."
+        }
+      ],
+      "text": "The Textus Receptus, followed by the King James Version, adds ‘and sought to slay him’ in this verse, anticipating verse 18; the words are absent from the early papyri and the major codices.",
+      "refs": ["Mark 3:1-6", "Luke 13:14-16", "John 7:21-23", "John 15:20"]
+    },
+    {
+      "v": "17",
+      "context": "Jesus answers the charge with one sentence: his Father is working until now, and he is working too. He does not argue about what counts as work. He puts his own activity alongside God's, which is why verse 18 follows.",
+      "grammar": "Apekrinato, ‘answered’, is an aorist middle form that John uses only here and in verse 19; his usual form is the passive-looking apekrithē. In the rest of the New Testament the middle form occurs mostly in trial scenes (Matthew 27:12, Mark 14:61, Luke 23:9), which suits the courtroom tone of this chapter, though the form alone cannot prove a legal nuance. Ho patēr mou heōs arti ergazetai, kagō ergazomai: ‘my Father’ (not ‘our Father’) is a claim of a unique relation; heōs arti, ‘until now’, means that God's work did not stop when creation was finished; kagō, ‘and I’, joins Jesus' work to the Father's with no qualification.",
+      "words": ["G0611", "G3962", "G0737", "G2038"],
+      "history": "Jewish teachers asked how God could rest on the seventh day (Genesis 2:2-3) and yet sustain the world, send rain, give birth and death, and judge. Besides Philo's answer (see the chapter note), a later midrash tells of four sages, Rabban Gamaliel, Rabbi Joshua, Rabbi Eleazar ben Azariah, and Rabbi Akiva, who, when asked in Rome why God does not keep his own Sabbath, replied that the whole world is his courtyard, so that he does not carry beyond his own domain (Exodus Rabbah 30:9). The tradition is later than the Gospel, but it shows that the problem Jesus addressed was one Jews recognized.",
+      "theology": [
+        {
+          "id": "sabbath",
+          "note": "God's rest on the seventh day was never inactivity. He goes on giving life and judging. Jesus claims that same freedom on the Sabbath, and so presents the healing as God's own Sabbath work."
+        },
+        {
+          "id": "providence",
+          "note": "‘My Father is at His work to this very day’ is a compact statement of providence: the God who finished creation has not stopped caring for it. The Son's works are part of that ongoing care."
+        }
+      ],
+      "refs": ["Genesis 2:2-3", "Psalm 121:4", "Hebrews 4:9-10", "John 9:4"]
+    },
+    {
+      "v": "18",
+      "context": "The authorities hear Jesus' claim exactly: calling God his own Father in this way makes him equal with God. Their determination to kill him intensifies. The narrator reports their reading without correcting it, and the rest of the chapter explains in what sense it is true.",
+      "grammar": "Mallon ezētoun, ‘they sought all the more’, is an imperfect of continuing effort. Two reasons follow, in parallel imperfects. First, eluen to sabbaton, ‘he was loosing the Sabbath’: luō means to loosen, undo, or annul, and the imperfect describes what they saw as a pattern. Second, patera idion elegen ton theon, ‘he was calling God his own Father’, where idion, ‘his own’, stresses a relation peculiar to him. The participle ison heauton poiōn tō theō, ‘making himself equal to God’, uses isos with the dative. The charge in its accusers' sense is that Jesus made himself God's rival; the Gospel's answer is that he did not make himself anything, since he is the Son (10:33-36).",
+      "words": ["G2212", "G0615", "G3089", "G4521", "G2398", "G3004H", "G2470", "G1438", "G4160G"],
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "The earliest opponents understood Jesus' words as a claim to divine status, which is why they sought his death. The verse is important evidence that the high Christology of John is not a later softening misunderstanding but the point at issue in Jesus' conflicts."
+        },
+        {
+          "id": "trinity",
+          "note": "Equality with God is ascribed to the Son at the moment his distinct relation to the Father is stressed (‘his own Father’). The church's later confession held both together: the Son is fully God and is distinct from the Father as Son."
+        }
+      ],
+      "refs": ["John 10:30-33", "John 19:7", "Philippians 2:6", "John 1:1"]
+    },
+    {
+      "v": "19",
+      "context": "Jesus begins his defense with a solemn ‘truly, truly’. The Son can do nothing on his own, only what he sees the Father doing, because whatever the Father does, the Son does likewise. The verse answers the charge of rivalry by describing perfect dependence and perfect equality of work at once.",
+      "grammar": "Ou dunatai ho huios poiein aph' heautou ouden, ‘the Son cannot do anything from himself’, uses aph' heautou, ‘from himself’, meaning on his own initiative or as an independent source. Ean mē ti blepē ton patera poiounta, ‘unless he sees the Father doing something’, uses a present subjunctive of seeing that is continuous. The ground clause, ha gar an ekeinos poiē, tauta kai ho huios homoiōs poiei, ‘for whatever that one does, these things the Son also does in the same way’, is universal (ha an, ‘whatever’) and uses homoiōs, ‘likewise’: the Son's works are not a part or an imitation of the Father's but the same works done in the same way. C. H. Dodd's reading of verses 19 and 20 as a parable of an apprentice son is discussed in the chapter note.",
+      "words": ["G0611", "G0281", "G1410", "G5207", "G1438", "G0991", "G3668"],
+      "theology": [
+        {
+          "id": "trinity",
+          "note": "The church's doctrine of inseparable operations, that the Father, Son, and Spirit act together in every work toward creation, draws on this verse. Augustine (On the Trinity 2.1.3) and Hilary of Poitiers read the Son's dependence as his origin from the Father, not as inferiority, since what he does is whatever the Father does. Christians who debate whether the Son's submission to the Father is eternal agree that this verse denies any independent or rival divine will."
+        }
+      ],
+      "refs": ["John 5:30", "John 8:28", "John 14:10", "John 10:37-38"]
+    },
+    {
+      "v": "20",
+      "context": "The reason the Son does what the Father does is love: the Father loves the Son and shows him everything. And the Father will show him greater works than the healing, so that his hearers will marvel. Verses 21 and 22 name the greater works: giving life and judging.",
+      "grammar": "Ho gar patēr philei ton huion, ‘for the Father loves the Son’, uses phileō; in 3:35 John says the same with agapaō. The two verbs are used interchangeably in John (compare 11:3 and 11:5, 20:2 and 13:23), so the change carries no special weight here. Deiknusin, present, ‘shows’, describes continuing disclosure, and deixei, future, ‘will show’, promises more. Meizona toutōn, ‘greater than these’, is a genitive of comparison. Hina humeis thaumazēte, ‘so that you will marvel’, states a result, and marvel in John is not yet faith (compare 7:21).",
+      "words": ["G5368", "G1166", "G3173", "G2041", "G2296"],
+      "theology": [
+        {
+          "id": "love",
+          "note": "The Father's love for the Son is the ground of the Son's work, not a reward for it. The relation between Father and Son is presented first as love, then as shared action, which is why John can later say that the love with which the Father loved the Son will be in believers (17:26)."
+        }
+      ],
+      "refs": ["John 3:35", "John 10:17", "John 17:24-26", "John 14:12"]
+    },
+    {
+      "v": "21",
+      "context": "The first greater work is giving life. As the Father raises the dead and makes them alive, so the Son gives life to whom he wills. The claim is breathtaking in a Jewish setting, since giving life to the dead was God's prerogative.",
+      "grammar": "Hōsper gar ... houtōs kai, ‘for just as ... so also’, sets the Father's work and the Son's side by side. Egeirei tous nekrous kai zōopoiei, ‘raises the dead and gives them life’, pairs a verb of raising with zōopoieō, ‘to make alive’. Hous thelei, ‘whom he wills’, applies the Son's own will to the giving of life. The present tenses describe what the Father and Son do characteristically, not a single event.",
+      "words": ["G3962", "G1453", "G3498", "G2227", "G5207", "G2309"],
+      "history": "Israel's Scriptures reserve the power to make alive to God: the LORD puts to death and makes alive (Deuteronomy 32:39, 1 Samuel 2:6), and the king of Israel protests that he is not God, to kill and make alive (2 Kings 5:7). The second benediction of the Amidah, the ancient Jewish prayer recited daily, praises God as the one who gives life to the dead. Its wording was fixed after the Gospels were written, but the conviction it expresses was well established in Jesus' day.",
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "The Son gives life now (verse 24) and will raise the dead at the end (verses 28-29). The same power operates in both, and it belongs to the Son as it belongs to the Father."
+        },
+        {
+          "id": "election",
+          "note": "‘To whom He wishes’ has been cited in debates about God's choice in salvation. Reformed interpreters read it as the Son's sovereign will in giving life; others note that the next verses name those who receive life as those who hear and believe (verse 24). Both readings agree that the Son is not an agent acting under constraint but gives life freely."
+        }
+      ],
+      "refs": ["Deuteronomy 32:39", "1 Samuel 2:6", "2 Kings 5:7", "Romans 4:17", "John 11:25"]
+    },
+    {
+      "v": "22-23",
+      "context": "The second greater work is judgment. The Father has given all judgment to the Son, with a stated purpose: that all may honor the Son as they honor the Father. Refusing honor to the Son is refusing it to the Father who sent him.",
+      "grammar": "Oude gar ho patēr krinei oudena, ‘for the Father does not judge anyone’, uses a double negative for emphasis, and alla tēn krisin pasan dedōken tō huiō, ‘but has given all judgment to the Son’, uses a perfect: the gift has been made and stands. In verse 23 hina pantes timōsi ton huion kathōs timōsi ton patera, ‘so that all may honor the Son just as they honor the Father’, has two forms of timaō, the first a subjunctive of purpose and the second an indicative of what people already do; kathōs, ‘just as’, sets the two honors on the same level. The negative clause uses present participles, ho mē timōn, ‘the one not honoring’, for a settled attitude.",
+      "words": ["G2919", "G2920", "G1325", "G5091", "G3992"],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "Final judgment belongs to the Son. The one who will judge is the one who came to save (3:17), so the judge of all is also the one who was judged at the cross."
+        },
+        {
+          "id": "worship",
+          "note": "Israel's God will not give his glory to another (Isaiah 42:8). Yet here all are to honor the Son as they honor the Father. The verse is one of the clearest grounds for the early Christian practice of worshiping Jesus, which the church understood not as a second worship but as the one worship of the one God."
+        }
+      ],
+      "refs": ["Isaiah 42:8", "Acts 17:31", "Philippians 2:9-11", "Revelation 5:12-13", "1 John 2:23"]
+    },
+    {
+      "v": "24",
+      "context": "A second ‘truly, truly’ applies the Son's life-giving authority to the hearer. Whoever hears Jesus' word and believes the one who sent him has eternal life now, will not come into judgment, and has already crossed from death to life.",
+      "grammar": "Ho ton logon mou akouōn kai pisteuōn has one article governing two participles, so hearing and believing describe one person, not two groups. Echei zōēn aiōnion, ‘has eternal life’, is present, not future. Eis krisin ouk erchetai, ‘does not come into judgment’, uses krisis in the sense of condemnation, as in 3:18. Metabebēken ek tou thanatou eis tēn zōēn, ‘has passed over from death into life’, is a perfect of metabainō, ‘to move from one place to another’: the transfer is complete and its result remains. 1 John 3:14 repeats the phrase.",
+      "words": ["G0281", "G3056", "G0191", "G4100", "G3992", "G2222", "G0166", "G2920", "G3327", "G2288"],
+      "theology": [
+        {
+          "id": "justification",
+          "note": "John's language here parallels Paul's ‘no condemnation for those in Christ Jesus’ (Romans 8:1): the believer does not come into judgment. The verdict of the last day is spoken now to the one who hears and believes."
+        },
+        {
+          "id": "regeneration",
+          "note": "Eternal life is not only a future reward but a present possession, received through hearing and believing. The new birth of chapter 3 is described here as a passage from death to life."
+        }
+      ],
+      "refs": ["John 3:18", "John 3:36", "1 John 3:14", "Romans 8:1", "Colossians 1:13"]
+    },
+    {
+      "v": "25",
+      "context": "A third ‘truly, truly’ declares that the hour is coming and is now here when the dead will hear the Son's voice, and those who hear will live. The dead here are those without the life of God, who hear his word now; verses 28 and 29 will speak of the dead in their graves.",
+      "grammar": "Erchetai hōra kai nun estin, ‘an hour is coming and now is’, is the same formula as in 4:23, joining the future hour of salvation to the present of Jesus' speaking. Hoi nekroi akousousin tēs phōnēs, ‘the dead will hear the voice’, uses akouō with the genitive, often the construction for hearing with understanding or heeding. Hoi akousantes zēsousin, ‘those who have heard will live’, uses an aorist participle for the decisive hearing that leads to life. The raising of Lazarus, called out of the tomb by Jesus' voice (11:43-44), will act out both senses of this verse.",
+      "words": ["G0281", "G5610", "G3568", "G3498", "G0191", "G5456G", "G2198"],
+      "theology": [
+        {
+          "id": "regeneration",
+          "note": "People are called ‘the dead’ before they hear the Son's voice. Life comes by his word, as it came to the dead man at Bethany. The verse makes spiritual life the Son's gift, not a human achievement."
+        }
+      ],
+      "refs": ["John 4:23", "John 11:43-44", "Ephesians 2:1-5", "Ephesians 5:14"]
+    },
+    {
+      "v": "26",
+      "context": "The ground for the Son's life-giving is given in terms of the Father: as the Father has life in himself, so he has granted the Son to have life in himself. The Son does not borrow life to pass on; he has it as its source.",
+      "grammar": "Hōsper ... houtōs, ‘just as ... so’, makes the parallel exact. Echei zōēn en heautō, ‘has life in himself’, means self-existent life, life not derived from anything else, which in Israel's faith belongs to God alone. The same phrase is used of the Son, but introduced by edōken, ‘he gave’: the Son's having life in himself is given by the Father. The aorist does not say when the giving happened. Interpreters differ on whether the verse speaks of the Son's eternal relation to the Father or of the authority given to the incarnate Son for his mission.",
+      "words": ["G3962", "G2192", "G2222", "G1438", "G1325", "G5207"],
+      "theology": [
+        {
+          "id": "trinity",
+          "note": "Augustine, in his Tractates on John, read this verse as describing the Father's eternal begetting of the Son: the Father gives the Son to have life in himself by begetting him, not by adding life to one who existed without it. The Nicene phrase ‘begotten, not made’ expresses this understanding. The alternative reading, that the verse describes the incarnate Son's commission, also holds that what is given is the divine life itself."
+        }
+      ],
+      "refs": ["John 1:4", "John 6:57", "Psalm 36:9", "1 John 5:11-12"]
+    },
+    {
+      "v": "27",
+      "context": "The Father has also given the Son authority to execute judgment, because he is the Son of Man. The judge of humanity is the one who is himself human and who fulfills the vision of Daniel 7.",
+      "grammar": "Exousian edōken autō krisin poiein, ‘he gave him authority to do judgment’, joins exousia, ‘authority’, to the phrase krisin poiein, ‘to execute judgment’. The reason clause, hoti huios anthrōpou estin, has no article on either noun, the only place in the Gospels where the title appears so. E. C. Colwell (Journal of Biblical Literature 52, 1933) showed that a definite predicate noun placed before the verb often lacks the article, so ‘the Son of Man’ is a natural translation; the anarthrous form also matches Daniel 7:13 in the Greek, hōs huios anthrōpou, ‘one like a son of man’, and so may point directly to Daniel's figure. Some read it as stressing Jesus' humanity, ‘because he is a human being’. The translation choice is discussed in the chapter note.",
+      "words": ["G1849", "G1325", "G2920", "G4160G", "G5207", "G0444"],
+      "theology": [
+        {
+          "id": "exaltation",
+          "note": "In Daniel the one like a son of man receives dominion and a kingdom that will not pass away. Jesus claims that authority now, before his death, as the Son of Man who will be lifted up and glorified (3:14, 12:23)."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Daniel 7:13-14",
+          "note": "In Daniel's night vision one like a son of man, in Aramaic kevar enash, comes with the clouds of heaven to the Ancient of Days and is given dominion, glory, and a kingdom, so that all peoples serve him. The Greek versions render the phrase hōs huios anthrōpou, without the article, as in John 5:27. Daniel 7:10 also speaks of the court sitting in judgment and the books opened. John joins the two themes, the son of man and judgment, and presents Jesus as the one to whom the Ancient of Days gives the authority to judge."
+        }
+      ],
+      "refs": ["Daniel 7:13-14", "Matthew 25:31-32", "Acts 17:31", "John 9:39"]
+    },
+    {
+      "v": "28-29",
+      "context": "Jesus tells his hearers not to marvel at this, because an hour is coming when all in the graves will hear his voice and come out, some to the resurrection of life and some to the resurrection of judgment. The present gift of life in verses 24 and 25 has a future completion in bodily resurrection.",
+      "grammar": "Mē thaumazete touto, a present imperative, ‘stop marveling at this’. Erchetai hōra lacks the ‘and now is’ of verse 25: this hour is future only. Pantes hoi en tois mnēmeiois, ‘all who are in the tombs’, is literal: the bodily dead. Ekporeusontai, ‘they will come out’, is future. The two groups are described by aorist participles summing up a life: hoi ta agatha poiēsantes, ‘those who have done good things’, and hoi ta phaula praxantes, ‘those who have practiced worthless things’, the same pairing of poieō with good and prassō with phaula as in 3:20-21. Anastasin zōēs and anastasin kriseōs are genitives of destination: a resurrection that leads to life, and one that leads to judgment.",
+      "words": ["G2296", "G5610", "G3419", "G0191", "G5456G", "G1607", "G0018", "G0386", "G2222", "G5337", "G4238", "G2920"],
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "Jesus teaches a general resurrection of the righteous and the wicked, a bodily coming out of tombs at his voice. John does not replace future hope with present experience; he holds both, as the church's creeds confess the resurrection of the dead."
+        },
+        {
+          "id": "judgment",
+          "note": "The final judgment follows what people have done. In John, however, the work God requires is to believe in the one he sent (6:29), and doing good means coming to the light (3:21), so the verse does not set works against faith but shows faith by its deeds."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Daniel 12:2",
+          "note": "Daniel is told that many of those who sleep in the dust of the earth will awake, some to everlasting life and some to shame and everlasting contempt. The Hebrew is rabbim miyyeshenei admat afar yaqitsu, elleh lechayyei olam we'elleh lacharafot ledir'on olam; the Greek versions render ‘awake’ with verbs of rising and keep the two destinies. John 5:29 follows the same two-way pattern and adds ‘judgment’ as the second destiny. Where Daniel says ‘many’, Jesus says ‘all’, and he adds that it is his voice that will call them. Daniel 12:2 is the clearest Old Testament statement of a resurrection of both righteous and wicked, and Jesus claims to be the one who brings it about."
+        }
+      ],
+      "refs": ["Daniel 12:2", "Acts 24:15", "1 Thessalonians 4:16", "John 3:20-21", "John 6:29"]
+    },
+    {
+      "v": "30",
+      "context": "The first part of the discourse closes with the words it began with, now in the first person: I can do nothing on my own. Jesus' judgment is just because he judges as he hears and seeks the will of the one who sent him, not his own.",
+      "grammar": "Ou dunamai egō poiein ap' emautou ouden repeats verse 19 in the first person, framing verses 19 to 30. Kathōs akouō krinō, ‘as I hear, I judge’, uses hearing where verse 19 used seeing: the Son's judgment is the Father's judgment heard and spoken. Hē krisis hē emē dikaia estin, ‘my judgment is just’, uses the emphatic possessive adjective emē, and the reason clause hoti ou zētō to thelēma to emon, ‘because I do not seek my own will’, uses the possessive adjective again, setting ‘my will’ against ‘the will of him who sent me’.",
+      "words": ["G1410", "G1473", "G4160G", "G0191", "G2919", "G2920", "G1342", "G2212", "G2307", "G3992"],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "A judge is just when he has no private interest in the verdict. Jesus grounds the justice of his judgment in his perfect alignment with the Father's will, the same obedience he will show in the garden (18:11)."
+        },
+        {
+          "id": "trinity",
+          "note": "The Son's will and the Father's will are not in conflict. The fathers who defended Nicene faith, and later Maximus the Confessor in the debates of the seventh century, read such sayings as describing the Son's obedience in his human will to the one divine will he shares with the Father."
+        }
+      ],
+      "refs": ["John 5:19", "John 6:38", "John 8:16", "Mark 14:36", "Hebrews 10:7"]
+    },
+    {
+      "v": "31-32",
+      "context": "Jesus turns from his authority to his witnesses. He concedes that his own testimony about himself, standing alone, would not be accepted in court. But there is another who testifies about him, and that testimony is true. The ‘other’ is the Father (verse 37).",
+      "grammar": "Ean egō marturō peri emautou, ‘if I testify about myself’, uses a subjunctive in a hypothetical condition. Hē marturia mou ouk estin alēthēs, ‘my testimony is not true’, uses alēthēs in the legal sense of valid or admissible, which is why the BSB has ‘valid’. In 8:14 Jesus says the opposite, that even if he testifies about himself his testimony is true; there he speaks of its truth, here of its legal standing. Allos estin ho marturōn, ‘there is another who testifies’, uses allos, ‘another’ of the same kind, and a present participle for ongoing testimony.",
+      "words": ["G3140", "G1473", "G3141", "G0227", "G0243", "G6063"],
+      "history": "The principle that a person's word on his own behalf could not decide a case appears in the Law's requirement of two or three witnesses (Deuteronomy 19:15) and in rabbinic rulings (see the chapter note). In a Jewish court, testimony had to come from outside the interested party, which is the procedure Jesus now follows.",
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "God does not ask for faith without evidence. Jesus accepts the rules of testimony and calls witnesses, and the chief witness is the Father, whose testimony comes through the works, the Scriptures, and the prophet sent before him."
+        }
+      ],
+      "refs": ["Deuteronomy 19:15", "John 8:13-18", "1 John 5:9", "John 5:37"]
+    },
+    {
+      "v": "33-35",
+      "context": "The first witness is John the Baptist. The authorities sent to him, and he testified to the truth. Jesus does not depend on human testimony, but he mentions John for their sake, so that they may be saved. John was a burning, shining lamp, and they were glad to enjoy his light for a while.",
+      "grammar": "Humeis apestalkate pros Iōannēn, ‘you have sent to John’, and memarturēken tē alētheia, ‘he has testified to the truth’, are both perfects: the delegation of 1:19 and the Baptist's testimony stand on the record. In verse 34 egō de ou para anthrōpou tēn marturian lambanō, ‘but I do not receive testimony from a human being’, sets egō against humeis. Hina humeis sōthēte, ‘so that you may be saved’, shows the purpose of the whole defense: not self-vindication but the hearers' salvation. In verse 35 ēn, ‘he was’, is past: the Baptist's work is over. Ho luchnos, ‘the lamp’, is not phōs, ‘light’, the word John reserves for Jesus (1:8-9). Kaiomenos kai phainōn, ‘burning and shining’, are present participles, and pros hōran, ‘for an hour’, means ‘for a short time’.",
+      "words": ["G0649", "G2491G", "G3140", "G0225", "G3141", "G2983", "G4982", "G3088", "G2545", "G5316", "G0021", "G5610", "G5457"],
+      "history": "Josephus confirms the Baptist's popularity and his fate. He writes that crowds gathered to John and were greatly stirred by his words, and that Herod Antipas, fearing that his influence might lead to revolt, imprisoned him at the fortress of Machaerus east of the Dead Sea and put him to death (Antiquities 18.116-119). The past tense of verse 35 fits a time after John's arrest or death.",
+      "ot": [
+        {
+          "ref": "Psalm 132:17",
+          "note": "In Psalm 132 God promises to make a horn sprout for David and says, in the Hebrew, arakhti ner limshichi, ‘I have prepared a lamp for my anointed one’. The Septuagint (Psalm 131:17) reads hētoimasa luchnon tō christō mou, using luchnos, the word Jesus uses for the Baptist. John does not quote the psalm, but the image of a lamp prepared for the Lord's anointed fits the Baptist's role exactly: he was the lamp, and the one he pointed to was the Christ."
+        }
+      ],
+      "refs": ["John 1:6-8", "John 1:19-27", "John 3:27-30", "Luke 1:76-79"]
+    },
+    {
+      "v": "36-38",
+      "context": "A greater witness than John is the works the Father gave Jesus to complete. They testify that the Father sent him. The Father himself has also testified, but the hearers have never heard his voice or seen his form, and his word does not abide in them, as shown by their refusal of the one he sent.",
+      "grammar": "Marturian meizō tou Iōannou, ‘testimony greater than John's’, uses a genitive of comparison. Ta erga ha dedōken moi ho patēr hina teleiōsō auta, ‘the works which the Father has given me to complete’, uses a perfect for the gift and the same verb teleioō as in 4:34 and 17:4. In verse 37 memarturēken, perfect, ‘has testified’, makes the Father's testimony a standing fact. Oute phōnēn autou pōpote akēkoate oute eidos autou heōrakate, ‘neither his voice have you ever heard nor his form have you seen’, uses two perfects, and eidos, ‘form’ or ‘appearance’. In verse 38 ton logon autou ouk echete en humin menonta, ‘you do not have his word abiding in you’, uses menō, abide, a key Johannine verb.",
+      "words": ["G2192", "G3141", "G3173", "G2041", "G1325", "G5048", "G3140", "G0649", "G3992", "G5456G", "G1491", "G3708", "G3056", "G3306"],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "The Father's testimony comes through the works of the Son and through the Scriptures (verse 39), not through a direct voice or vision the hearers could claim. Those who refuse the Son show that God's word has not taken root in them, however familiar they are with its text."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Deuteronomy 4:12",
+          "note": "Moses reminds Israel that at Horeb the LORD spoke from the fire: they heard the sound of words but saw no form, only a voice. The Hebrew temunah, ‘form’, is rendered homoiōma, ‘likeness’, in the Septuagint. Jesus' words, ‘you have never heard His voice nor seen His form’, turn the memory of Sinai against his hearers: at Sinai Israel heard the voice, but they have not. The Septuagint also gives the place where Jacob saw God face to face the name Eidos theou, ‘Form of God’ (Genesis 32:30-31), so eidos had associations with seeing God that John's readers of the Greek Bible could hear."
+        }
+      ],
+      "refs": ["John 1:18", "John 10:25", "John 14:9", "John 17:4", "1 John 5:9-10"]
+    },
+    {
+      "v": "39-40",
+      "context": "The next witness is Scripture. The hearers study the Scriptures because they think that in them they have eternal life, and the Scriptures testify about Jesus. Yet they will not come to him to have life. The rebuke is not against study but against study that stops short of its object.",
+      "grammar": "Eraunate tas graphas can be indicative, ‘you search the Scriptures’, or imperative, ‘search the Scriptures’, since the forms are identical. The next clause, hoti humeis dokeite, ‘because you think’, and the following rebuke fit the indicative, which modern versions adopt; the KJV's imperative became a Protestant watchword. Dokeite, ‘you think’ or ‘you suppose’, implies a mistaken confidence. Ekeinai eisin hai marturousai peri emou, ‘those are the ones testifying about me’, uses the emphatic demonstrative. Verse 40 opens with kai, which here means ‘and yet’, and ou thelete elthein, ‘you do not want to come’, puts the problem in the will, not in the evidence.",
+      "words": ["G2045", "G1124", "G1380", "G2222", "G0166", "G3140", "G2309", "G2064"],
+      "history": "An early papyrus, Egerton Papyrus 2, from the second century and now in the British Library, contains a saying of Jesus to the rulers of the people that closely resembles verses 39 and 45: they search the Scriptures in which they think they have life, and Moses, in whom they hope, is their accuser. Scholars debate whether the papyrus depends on John or on a shared tradition, but either way it shows how early these sayings circulated.",
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "Israel's Scriptures are God's word and they testify to Jesus. The verse teaches both that Scripture is to be read with care and that its purpose is to bring the reader to the living one it points to (compare Luke 24:27)."
+        }
+      ],
+      "refs": ["Luke 24:27", "Luke 24:44", "Deuteronomy 32:46-47", "2 Timothy 3:15", "Acts 17:11"]
+    },
+    {
+      "v": "41-44",
+      "context": "Jesus names the root of the refusal. He does not seek glory from people, but he knows his hearers do not have the love of God in them. He came in his Father's name and was not received; another who comes in his own name will be received. How can they believe when they seek glory from one another and not the glory that comes from the only God?",
+      "grammar": "Doxan para anthrōpōn ou lambanō, ‘I do not receive glory from people’, uses doxa in its sense of honor or approval. Egnōka humas, a perfect, ‘I have come to know you’. Tēn agapēn tou theou can be an objective genitive, ‘love for God’, or a subjective genitive, ‘God's love’ (at work in you); most take the first, and the context of seeking glory supports it. In verse 43 elēlutha, a perfect, ‘I have come’, contrasts with ean allos elthē, a hypothetical, ‘if another comes’. In verse 44 pōs dunasthe humeis pisteusai, ‘how can you believe?’, puts the impossibility in their pursuit of honor: lambanontes, a present participle, describes a habit of receiving glory from one another. Para tou monou theou, ‘from the only God’, echoes Israel's confession that God is one (Deuteronomy 6:4).",
+      "words": ["G1391", "G0444", "G2983", "G1097", "G0026", "G2064", "G3686", "G3962", "G2398", "G4100", "G3441", "G2316", "G2212"],
+      "history": "Josephus describes several popular leaders in the first century who drew crowds by their own claims, such as Theudas, who promised to part the Jordan and was killed by the Roman governor Fadus around AD 45 (Antiquities 20.97-98; compare Acts 5:36). A century after Jesus, Simon bar Kosiba led a revolt against Rome (AD 132 to 135), and Rabbi Akiva is remembered as hailing him as the star of Numbers 24:17 (y. Taanit 68d). Early Christian writers often read verse 43 as a prophecy of the Antichrist; modern commentators more often take it as a general statement of the pattern such figures illustrate.",
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Jesus locates unbelief in what people love. The desire for human approval makes faith impossible because faith means receiving honor from God alone, which may cost honor among people (12:42-43)."
+        }
+      ],
+      "text": "In verse 44 the early papyri P66 and P75 and the codices Vaticanus and Washingtonianus omit theou, ‘God’, reading ‘the glory from the only one’. Bruce Metzger's Textual Commentary notes that the editors kept theou because the sense requires it and because the word could easily have dropped out when scribes abbreviated it next to the similar letters of monou. Most English versions read ‘the only God’.",
+      "refs": ["John 12:42-43", "John 7:18", "Deuteronomy 6:4", "Acts 5:36-37", "1 Thessalonians 2:4-6"]
+    },
+    {
+      "v": "45-47",
+      "context": "The final witness becomes the prosecutor. Jesus will not need to accuse them before the Father; Moses, in whom they have set their hope, is their accuser, because Moses wrote about Jesus. If they do not believe Moses' writings, how will they believe Jesus' words? The chapter ends with the accused turned judge and a question left unanswered.",
+      "grammar": "Mē dokeite, ‘do not think’, is a present imperative. Katēgorēsō, future, ‘I will accuse’, is set against estin ho katēgorōn humōn Mōusēs, ‘your accuser is Moses’, a present participle used as a noun. Eis hon humeis ēlpikate, ‘in whom you have set your hope’, is a perfect of settled trust. Verse 46 is a contrary-to-fact condition with imperfects in both halves: ei gar episteuete Mōusei, episteuete an emoi, ‘if you believed Moses, you would believe me’, implying that they do not. Verse 47 contrasts grammasin, ‘writings’, with rhēmasin, ‘words’ spoken: if they reject what Moses wrote, they will not accept what Jesus says.",
+      "words": ["G1380", "G2723", "G3962", "G3475", "G1679", "G4100", "G1125", "G1121", "G4487"],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "Jesus claims that the Torah of Moses points to him. To read Moses rightly is to be led to Christ; to reject Christ is to misread Moses. The unity of the two Testaments rests on this claim."
+        },
+        {
+          "id": "judgment",
+          "note": "The Scripture that was trusted as a defense becomes the evidence. Deuteronomy itself had placed the Book of the Law beside the ark as a witness against the people (Deuteronomy 31:26), and Jesus applies that role to Moses' testimony about himself."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Deuteronomy 18:15",
+          "note": "Moses tells Israel that the LORD will raise up for them a prophet like him from among their brothers, and that they must listen to him. The Hebrew navi ... kamoni, ‘a prophet like me’, is rendered in the Septuagint prophētēn ... hōs eme, and the command elav tishma'un, ‘to him you shall listen’, becomes autou akousesthe. John does not quote the verse here, but Moses writing ‘about Me’ most naturally includes this promise, which Peter and Stephen later apply to Jesus (Acts 3:22, 7:37). The command to listen to the prophet is exactly what the hearers are failing to do."
+        }
+      ],
+      "refs": ["Deuteronomy 31:26", "Luke 16:29-31", "Luke 24:27", "Acts 3:22", "John 1:45"]
+    }
+  ]
+}

@@ -1,0 +1,262 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "When the Sabbath is over, at the dawning of the first day of the week, Mary Magdalene and the other Mary go to see the tomb. They are the same two women who sat opposite the grave when Joseph closed it (27:61), so the witnesses of the burial are the first at the empty tomb.",
+      "grammar": "Opse de sabbatōn is the phrase that divides translations. Opse usually means ‘late’, so the King James Version renders ‘in the end of the sabbath’; but with a genitive it can also mean ‘after’, a sense attested in Greek of the period and recognized by the standard lexicon (BDAG), and the following words, tē epiphōskousē eis mian sabbatōn, ‘at the dawning toward the first of the week’, point to Sunday morning. Epiphōskō means ‘to dawn, grow light’, but Luke uses it of the Sabbath ‘beginning’ at Friday sunset (Luke 23:54), so a few interpreters have read Matthew as Saturday evening; the other Gospels' morning setting and the natural sense of ‘dawning’ lead most to read Sunday dawn. Mian sabbatōn, literally ‘one of the sabbaths’, uses the cardinal ‘one’ for ‘first’ and ‘sabbaths’ for ‘week’, as the notes on Mark 16:2 explain. Theōrēsai ton taphon, ‘to look at the grave’, uses the verb of the women's watching at the cross (27:55).",
+      "words": ["G3796", "G4521", "G2020", "G2334", "G5028"],
+      "history": "Matthew mentions no spices. Mark and Luke say the women came to anoint the body, and John has Nicodemus bring spices at the burial itself (John 19:39); the notes on Mark 16:1 compare the accounts. In Matthew's telling the tomb is sealed and guarded (27:66), so the women's purpose is simply to see, perhaps to mourn at the grave in the first days after the death, as the chapter note describes.",
+      "text": "The King James Version's ‘In the end of the sabbath, as it began to dawn’ renders opse literally; Eusebius already discussed, in his Questions to Marinus, how Matthew's phrase fits Mark's ‘very early’, as the chapter note says.",
+      "parallels": ["Mark 16:1-2", "Luke 24:1", "John 20:1"],
+      "refs": ["Matthew 27:55-56", "Matthew 27:61", "Luke 23:54-56", "Mark 16:2"]
+    },
+    {
+      "v": "2-4",
+      "context": "A great earthquake, and an angel of the Lord comes down from heaven, rolls back the stone, and sits on it. His appearance is like lightning and his clothing white as snow. The guards shake with fear and become like dead men. The stone is moved not to let Jesus out, since the tomb is already empty when the women look in (verse 6), but to let the witnesses see.",
+      "grammar": "Kai idou seismos egeneto megas, ‘and behold, a great earthquake happened’, answers the earthquake at the cross (27:51, 27:54). Angelos gar kuriou, ‘for an angel of the Lord’, is explanatory: the quake is the angel's descent. ‘An angel of the Lord’ is the messenger who spoke to Joseph in dreams at the start of the Gospel (1:20, 2:13, 2:19), so the story ends as it began, with God's messenger announcing what God has done. Apekulisen ton lithon kai ekathēto epanō autou, ‘he rolled away the stone and was sitting on it’: the imperfect ekathēto pictures him seated on the stone the leaders had sealed, a picture of victory over their precautions. In verse 4 the guards eseisthēsan, ‘shook’, the verb from the same root as seismos, ‘earthquake’: the earth shook and so did its watchers. Egenēthēsan hōs nekroi, ‘they became like dead men’, reverses the scene: the living guards of a dead man become as dead, while the dead man lives.",
+      "words": ["G4578", "G0032G", "G0617", "G2521", "G0796", "G5510", "G4579", "G3498"],
+      "history": "The appearance echoes Daniel's visions: the man clothed in linen whose face was like lightning (Daniel 10:6), and the Ancient of Days whose clothing was white as snow (Daniel 7:9). It also recalls Jesus' own transfiguration, when his clothes became white as light (17:2). The other Gospels describe the messengers differently: a young man sitting inside the tomb in Mark, two men in dazzling clothes in Luke, and two angels in John, as the notes on Mark 16:5 and John 20:12-13 explain.",
+      "theology": [
+        {
+          "id": "angels",
+          "note": "God's messengers serve the story of Christ from his conception to his resurrection. The angel here does not raise Jesus or announce himself; he opens the tomb and speaks for God, the pattern of angelic ministry throughout Scripture (Hebrews 1:14)."
+        }
+      ],
+      "text": "Later manuscripts, followed by the King James Version, add that the angel rolled the stone ‘from the door’, as the chapter note says. The earliest manuscripts lack the phrase.",
+      "parallels": ["Mark 16:3-5", "Luke 24:2-4", "John 20:1", "John 20:12"],
+      "refs": ["Matthew 27:51", "Matthew 27:66", "Daniel 10:6", "Daniel 7:9", "Matthew 17:2"]
+    },
+    {
+      "v": "5-6",
+      "context": "The angel speaks to the women, not to the guards: they need not fear, because he knows they are looking for Jesus who was crucified. Jesus is not here; he has risen just as he said. They are invited to come and see the place where he lay. The message moves from reassurance, to proclamation, to evidence.",
+      "grammar": "Mē phobeisthe humeis, ‘do not be afraid, you’, puts the pronoun last for emphasis: the guards may tremble, but you need not. Iēsoun ton estaurōmenon, ‘Jesus the crucified one’, uses a perfect passive participle: the crucifixion is complete and remains his identity even as risen, the form Paul uses when he preaches Christ crucified (1 Corinthians 1:23). Ēgerthē gar kathōs eipen, ‘for he has been raised, just as he said’: ēgerthē is the aorist passive of egeirō, which can mean ‘he has been raised’ (by God) or simply ‘he has risen’, and kathōs eipen appeals to Jesus' own predictions (16:21, 17:23, 20:19). Deute idete ton topon hopou ekeito, ‘come, see the place where he was lying’: deute is the word of Jesus' invitation, come to me, all you who are weary (11:28). The imperfect ekeito describes a state now ended.",
+      "words": ["G5399", "G4717", "G2212", "G1453", "G2749"],
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "The angel's words are the first proclamation of the resurrection and hold its essential content: the crucified Jesus is not among the dead, he has been raised, and the place of his body is empty and can be seen. The church confesses the bodily resurrection of the very one who was crucified, not a different, spiritual Jesus."
+        },
+        {
+          "id": "revelation",
+          "note": "The resurrection is announced as the fulfillment of Jesus' own word, ‘just as he said’. The verse ties the reliability of his teaching to this event, which is why the apostles preached the resurrection as God's vindication of all Jesus claimed (Romans 1:4)."
+        }
+      ],
+      "text": "In verse 6 the King James Version reads ‘the place where the Lord lay’, following manuscripts that add ‘the Lord’; Sinaiticus, Vaticanus, and Koridethi lack it, as the chapter note explains.",
+      "parallels": ["Mark 16:6", "Luke 24:5-6", "John 20:13"],
+      "refs": ["Matthew 16:21", "Matthew 20:19", "1 Corinthians 1:23", "1 Corinthians 15:3-4", "Romans 1:4"]
+    },
+    {
+      "v": "7",
+      "context": "The angel sends the women to tell the disciples that Jesus has risen from the dead and is going ahead of them into Galilee, where they will see him. The women become the first messengers of the resurrection to the apostles.",
+      "grammar": "Tachu poreutheisai eipate, ‘go quickly and tell’, uses an aorist participle, ‘having gone’, with an aorist imperative, a pattern in which the participle shares the command's force; the same construction opens the Great Commission (verse 19). Hoti ēgerthē apo tōn nekrōn, ‘that he has been raised from the dead’, adds apo tōn nekrōn, ‘from among the dead’, the phrase the leaders used in their fear (27:64). Proagei humas, ‘he is going ahead of you’, is present tense: he is already on his way, as he promised at the supper (26:32). Idou eipon humin, ‘see, I have told you’, closes the message with the angel's own seal, where Mark has ‘as he told you’ (Mark 16:7).",
+      "words": ["G5035", "G4198", "G1453", "G3498", "G4254", "G3700G", "G1056G"],
+      "theology": [
+        {
+          "id": "mission",
+          "note": "The first commission after the resurrection is given to women: go and tell. The mission that will reach all nations (verse 19) begins with two women sent to eleven discouraged men, and the content of the message is the same from the first telling to the last."
+        }
+      ],
+      "parallels": ["Mark 16:7", "Luke 24:6-9"],
+      "refs": ["Matthew 26:32", "Mark 16:7", "Matthew 27:64", "John 20:17-18"]
+    },
+    {
+      "v": "8",
+      "context": "The women hurry from the tomb with fear and great joy and run to tell the disciples. Matthew's account differs sharply from Mark's, where the women flee and say nothing to anyone because they are afraid (Mark 16:8).",
+      "grammar": "Apelthousai tachu, ‘going away quickly’, obeys the angel's tachu in verse 7 at once. Meta phobou kai charas megalēs, ‘with fear and great joy’, holds two emotions together without resolving them. Chara megalē, ‘great joy’, is the joy of the Magi when they saw the star, who rejoiced with exceedingly great joy (2:10, echarēsan charan megalēn sphodra), and of the angel's announcement to the shepherds (Luke 2:10). Edramon apangeilai, ‘they ran to report’: apangellō, ‘to announce, bring news’, is the verb of their commission and will recur in verses 10 and 11.",
+      "words": ["G5035", "G3419", "G5401", "G5479", "G3173", "G5143", "G0518"],
+      "theology": [
+        {
+          "id": "fear-of-god",
+          "note": "The women's fear is not terror like the guards' but the awe that belongs to meeting God's action, and it runs together with joy. The verse shows that the fear of God and joy in God are not opposites; the right response to the resurrection holds both (Psalm 2:11)."
+        }
+      ],
+      "parallels": ["Mark 16:8", "Luke 24:9", "John 20:2"],
+      "refs": ["Matthew 2:10", "Luke 2:10", "Psalm 2:11", "Mark 16:8"]
+    },
+    {
+      "v": "9",
+      "context": "On the way, Jesus himself meets them and greets them. They come to him, take hold of his feet, and worship him. The angel's word is confirmed by the risen Lord in person.",
+      "grammar": "Kai idou Iēsous hupēntēsen autais, ‘and behold, Jesus met them’: hupantaō is used of meeting someone on the road (8:28). Chairete, ‘greetings’, literally ‘rejoice’, was the everyday greeting, and in Matthew it carries weight: Judas greeted Jesus with chaire, rabbi as he betrayed him (26:49), and the soldiers mocked him with chaire, basileu (27:29). The risen Jesus uses the same word, now in its fullest sense. Ekratēsan autou tous podas, ‘they took hold of his feet’, uses krateō, ‘to seize, grasp’, the verb of his arrest (26:50, 26:57). Prosekunēsan autō, ‘they worshiped him’: proskuneō in Matthew is given to Jesus by the Magi (2:11), the disciples in the boat (14:33), and here, though Jesus told the devil that worship belongs to God alone (4:10).",
+      "words": ["G5221", "G5463", "G2902", "G4228", "G4352"],
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "The women grasp his feet: the risen Jesus has a body that can be held, not a ghost or a vision. Luke and John make the same point in their own ways (Luke 24:39, John 20:27). The resurrection is the raising of the body that was buried."
+        },
+        {
+          "id": "worship",
+          "note": "Matthew records worship given to Jesus without correction, in a Gospel that insists worship is due to God alone (4:10). The first response to the risen Christ is not only belief but homage, and the verse is part of the New Testament's witness to his deity."
+        }
+      ],
+      "text": "The King James Version begins the verse with ‘And as they went to tell his disciples’, words absent from Sinaiticus, Vaticanus, and Bezae and probably added to smooth the transition, as the chapter note explains.",
+      "parallels": ["John 20:14-17", "Mark 16:9"],
+      "refs": ["Matthew 4:10", "Matthew 26:49", "Matthew 27:29", "Luke 24:39", "John 20:17"]
+    },
+    {
+      "v": "10",
+      "context": "Jesus repeats the angel's words, do not be afraid, and sends the women to tell his brothers to go to Galilee, where they will see him. The deserters are called brothers before they have done anything to deserve it.",
+      "grammar": "Mē phobeisthe, ‘stop being afraid’, is a present imperative with the negative, which often means to stop an attitude already present. Hupagete apangeilate, ‘go, report’, are two imperatives set side by side. Tois adelphois mou, ‘to my brothers’, is the key phrase. Jesus had said that whoever does the will of his Father is his brother (12:49-50) and had called the least of his brothers those he identifies with at the judgment (25:40). The men who fled (26:56) and the one who denied him (26:69-75) are still his brothers. Kakei me opsontai, ‘and there they will see me’, uses a future of promise.",
+      "words": ["G5399", "G5217", "G0518", "G0080", "G1056G", "G3700G"],
+      "ot": [
+        {
+          "ref": "Psalm 22:22",
+          "note": "After the cry of forsakenness and the sufferer's rescue, Psalm 22 turns: “I will proclaim Your name to my brothers; I will praise You in the assembly.” The Septuagint (21:23) reads tois adelphois mou, the same phrase Jesus uses here. Hebrews 2:11-12 quotes this verse as the risen Christ's own words, calling believers his brothers. Matthew does not cite the psalm, but the Gospel that set the crucifixion to Psalm 22's first half (27:35, 39, 43, 46) now shows the risen Jesus speaking of ‘my brothers’, the first words of its second half."
+        }
+      ],
+      "theology": [
+        {
+          "id": "church",
+          "note": "The first community of the risen Lord is formed by his word of restoration: the disciples who failed are named his brothers and summoned to meet him. The church is from its beginning a family of forgiven deserters gathered by Christ's invitation (Hebrews 2:11)."
+        }
+      ],
+      "parallels": ["John 20:17"],
+      "refs": ["Matthew 12:49-50", "Matthew 25:40", "Matthew 26:56", "Hebrews 2:11-12", "John 20:17"]
+    },
+    {
+      "v": "11-12",
+      "context": "While the women are on their way, some of the guard go into the city and report everything to the chief priests. The priests meet with the elders, form a plan, and give the soldiers a large sum of money. The first to report the events at the tomb to the authorities are the enemy's own soldiers.",
+      "grammar": "Poreuomenōn de autōn, ‘while they were going’, is a genitive absolute that sets the two scenes side by side: the women go to tell the truth, the guards go to report it too. Apēngeilan, ‘they reported’, is the same verb as the women's errand (verses 8 and 10): the guards also carry news of the resurrection, and it is suppressed. Sunachthentes meta tōn presbuterōn sumboulion te labontes, ‘having gathered with the elders and taken counsel’, repeats the phrase of 27:1 and 27:7. Arguria hikana, ‘a sufficient sum of silver’, uses arguria, the word for the thirty pieces paid to Judas (26:15, 27:3-9): the story that began with silver paid to hand Jesus over ends with silver paid to deny his resurrection.",
+      "words": ["G2892", "G0518", "G4824", "G0694", "G2425", "G4757"],
+      "history": "That the guards reported to the chief priests, not to Pilate, supports the view that they were temple police or Roman soldiers placed at the priests' disposal; the priests' promise to satisfy the governor if the story reaches him (verse 14) supports the second. The chapter note sets out both views and the discussion of the historicity of Matthew's guard story, including William Lane Craig's defense of its historical core (New Testament Studies, 1984) and Raymond Brown's judgment that it is apologetic legend.",
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Faced with evidence they cannot explain, the leaders choose to manage it. The verse shows the hardening that follows repeated refusal: the men who plotted Jesus' death now plot against his resurrection, spending money to keep the truth from spreading."
+        }
+      ],
+      "refs": ["Matthew 26:15", "Matthew 27:1", "Matthew 27:62-66", "Acts 4:16-18"]
+    },
+    {
+      "v": "13-14",
+      "context": "The priests give the soldiers their story: his disciples came by night and stole him while we were asleep. If the governor hears of it, they will satisfy him and keep the soldiers out of trouble.",
+      "grammar": "Eipate hoti hoi mathētai autou nuktos elthontes eklepsan auton hēmōn koimōmenōn, ‘say, His disciples came by night and stole him while we were sleeping’: the last words are a genitive absolute, and the story undercuts itself, since sleeping men cannot know who took the body. Eklepsan, ‘they stole’, is the verb the leaders used when they asked for the guard, lest his disciples come and steal him (27:64). In verse 14, ean akousthē touto epi tou hēgemonos can mean ‘if this is heard by the governor’ or ‘if this comes to a hearing before the governor’. Peisomen, ‘we will persuade’, is the verb of 27:20, where they persuaded the crowds; and amerimnous poiēsomen, ‘we will make you free from worry’, uses the word family of Jesus' teaching on anxiety (6:25-34).",
+      "words": ["G3101", "G3571", "G2813", "G2837", "G3982", "G2232", "G0275"],
+      "history": "Roman military discipline was harsh toward sentries who failed. Polybius describes a soldier found asleep on watch being beaten to death by his comrades (Histories 6.35-37), which is why the soldiers needed the promise of protection. Augustine, commenting on Psalm 59, whose title recalls Saul sending men to watch David's house, turned the story against itself: if the guards were asleep, how did they know who took the body, and if they were awake, why did they not stop the thieves? He called them sleeping witnesses.",
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "The story the priests invent assumes the one fact they cannot deny: the body is gone. The earliest recorded explanation offered by the opponents of the resurrection concedes the empty tomb, and the dispute is over why it was empty."
+        }
+      ],
+      "refs": ["Matthew 27:64", "Matthew 27:20", "Matthew 6:25", "Acts 12:18-19"]
+    },
+    {
+      "v": "15",
+      "context": "The soldiers take the money and do as they were taught, and Matthew adds that this story has been spread among the Jews to this day. The aside shows that Matthew is answering a claim his readers were still hearing.",
+      "grammar": "Epoiēsan hōs edidachthēsan, ‘they did as they were taught’, uses the aorist passive of didaskō. The irony is sharp in a Gospel that ends five verses later with didaskontes, ‘teaching’ them to obey all that Jesus commanded (verse 20): the guards are taught a lie for money, the disciples are sent to teach the truth. Diephēmisthē, ‘it was spread abroad’, is the verb used when the healed blind men spread Jesus' fame through the region (9:31). Para Ioudaiois, ‘among Jews’, has no article, and mechri tēs sēmeron hēmeras, ‘until this very day’, echoes ‘to this day’ in 27:8. Both phrases show a writer looking back on events some time past.",
+      "words": ["G0694", "G1321", "G1310", "G3056", "G2453", "G4594"],
+      "history": "The theft story lasted. Justin Martyr, writing his Dialogue with Trypho around 160, reports that the Jewish authorities sent chosen men throughout the world to say that a godless sect had arisen from one Jesus, a Galilean deceiver, whom they had crucified, but whose disciples stole him by night from the tomb (Dialogue 108). Tertullian (On the Shows 30) and the medieval Toledot Yeshu know a version in which a gardener removed the body, as the chapter note and the notes on John 20:14-15 describe. Matthew's phrase ‘among the Jews’ should not be read as a charge against Jews as a people: the Gospel's author, the women, and the eleven were Jews, and the verse names a report circulating in the synagogues Matthew's community was in conflict with.",
+      "text": "The critical editions read mechri tēs sēmeron hēmeras, ‘until this very day’; the Byzantine manuscripts and the Textus Receptus lack hēmeras, reading simply ‘until today’. The meaning is unaffected.",
+      "refs": ["Matthew 27:8", "Matthew 28:20", "Matthew 9:31", "Acts 13:27-31"]
+    },
+    {
+      "v": "16",
+      "context": "The eleven disciples go to Galilee, to the mountain Jesus had appointed. The number is a reminder of Judas's absence (27:5), and Galilee is where Jesus' ministry began among the Gentiles' neighbors (4:12-17).",
+      "grammar": "Hoi de hendeka mathētai, ‘the eleven disciples’, uses the number that now names the group after Judas's death (Acts 1:26 restores twelve). Eis to oros hou etaxato autois ho Iēsous, ‘to the mountain where Jesus had appointed them’: etaxato is the aorist middle of tassō, ‘to arrange, appoint’, and no earlier appointment of a mountain is recorded, so Matthew assumes instructions not narrated or reads the promises of 26:32 and 28:10 as including the place. The article with oros, ‘the mountain’, makes it a known meeting place, not ‘a mountain’.",
+      "words": ["G1733", "G3101", "G1056G", "G3735", "G5021"],
+      "history": "Matthew does not name the mountain, and no reliable tradition identifies it. Mountains mark the turning points of his Gospel: the mountain of temptation, where the devil offered Jesus the kingdoms of the world (4:8); the mountain of the Sermon (5:1); the mountain of the transfiguration (17:1); and the Mount of Olives (24:3). Dale Allison (The New Moses, 1993) has argued that the ending also recalls Moses, who saw the land from a mountain before his death and commissioned Joshua with the promise that the LORD would be with him (Deuteronomy 31:7-8, 31:23; Joshua 1:5-9).",
+      "theology": [
+        {
+          "id": "church",
+          "note": "The eleven gather at Jesus' appointment, not their own. The church's assembly around the risen Lord begins as obedience to his word, and it is to this reduced and doubting group that the whole mission of the church is given."
+        }
+      ],
+      "refs": ["Matthew 26:32", "Matthew 4:8", "Matthew 5:1", "Matthew 17:1", "Deuteronomy 31:23"]
+    },
+    {
+      "v": "17",
+      "context": "When they see him, they worship him, but some doubt. Matthew leaves the hesitation in the scene of worship without explaining it or resolving it, and Jesus' next act is to come near.",
+      "grammar": "Idontes auton prosekunēsan, ‘seeing him, they worshiped’, uses the verb of the women's homage (verse 9). Hoi de edistasan is the most debated phrase in the chapter. Hoi de usually marks a change of subject, ‘but others’, so the BSB's ‘but some doubted’ separates a group from the worshipers. K. L. McKay (Journal for the Study of the New Testament, 1985) argued that hoi de can refer back to the same group, ‘but they doubted’, so that all eleven worshiped and hesitated at once; P. W. van der Horst (Journal for the Study of the New Testament, 1986) replied from classical usage that hoi de normally involves at least a partial change of subject, supporting ‘some’. Edistasan, from distazō, ‘to waver, hesitate’, is the word Jesus spoke to Peter sinking in the waves, why did you doubt (14:31). It describes divided faith, not settled unbelief (apistia). Some have suggested that the doubters were others present besides the eleven, but Matthew mentions no one else.",
+      "words": ["G4352", "G1365"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Worship and hesitation stand together in the first gathering of the church. The verse does not praise doubt, but it shows that the risen Jesus does not wait for perfect certainty before he comes near and commissions his people; faith grows in the company of the one it is uncertain about (14:31)."
+        },
+        {
+          "id": "worship",
+          "note": "The eleven worship the risen Jesus as the women did. Matthew's Gospel, framed by the Magi's worship of the child (2:11) and the disciples' worship of the risen Lord, presents Jesus as the rightful object of the homage due to God."
+        }
+      ],
+      "refs": ["Matthew 14:31-33", "Matthew 2:11", "Luke 24:38-41", "John 20:24-29"]
+    },
+    {
+      "v": "18",
+      "context": "Jesus comes to them and speaks: all authority in heaven and on earth has been given to him. The claim is the ground of everything that follows; the command of verse 19 begins with ‘therefore’.",
+      "grammar": "Proselthōn ho Iēsous, ‘Jesus, having come near’: in Matthew people constantly ‘come to’ Jesus (proserchomai is one of his favorite verbs), and only twice is Jesus himself the one who comes near, here and at the transfiguration, where he touched the terrified disciples and told them not to be afraid (17:7). Edothē moi, ‘has been given to me’, is an aorist passive that implies God as the giver, the Father who had already handed all things over to the Son (11:27). Pasa exousia en ouranō kai epi gēs, ‘all authority in heaven and on earth’, uses the pair of the Lord's Prayer, on earth as it is in heaven (6:10). The devil once offered Jesus the kingdoms of the world if he would worship him (4:8-9); now, having refused that road and gone to the cross, he receives from the Father far more.",
+      "words": ["G4334", "G1325", "G1849", "G3772", "G1093G"],
+      "ot": [
+        {
+          "ref": "Daniel 7:13-14",
+          "note": "One like a son of man comes with the clouds of heaven to the Ancient of Days, “And He was given dominion, glory, and kingship, that the people of every nation and language should serve Him.” The Aramaic velleh yehiv sholtan, ‘and to him was given dominion’, is rendered in the Old Greek version kai edothē autō exousia, ‘and authority was given to him’, and continues with panta ta ethnē tēs gēs, ‘all the nations of the earth’. Matthew's edothē moi pasa exousia and panta ta ethnē in the next verse take up both phrases. Jesus had applied Daniel 7 to himself before the high priest (26:64); here the enthronement Daniel saw is declared accomplished."
+        }
+      ],
+      "theology": [
+        {
+          "id": "exaltation",
+          "note": "The crucified one now holds all authority, heaven's and earth's. The verse announces what the rest of the New Testament calls his session at God's right hand (Ephesians 1:20-22, Philippians 2:9-11): the resurrection is not only his return to life but his enthronement."
+        },
+        {
+          "id": "kingdom",
+          "note": "The kingdom Jesus proclaimed from the start (4:17) now has its king enthroned. The prayer that God's will be done on earth as in heaven (6:10) is answered in principle by the one who holds authority in both."
+        }
+      ],
+      "refs": ["Daniel 7:13-14", "Matthew 11:27", "Matthew 4:8-9", "Matthew 17:7", "Ephesians 1:20-22"]
+    },
+    {
+      "v": "19",
+      "context": "On the ground of that authority, Jesus sends the eleven: go and make disciples of all nations, baptizing them in the name of the Father, and of the Son, and of the Holy Spirit. The mission once limited to the lost sheep of Israel (10:5-6, 15:24) now reaches every people.",
+      "grammar": "Poreuthentes oun, ‘having gone, therefore’: oun ties the command to the authority just claimed. The only imperative is mathēteusate, ‘make disciples’; poreuthentes, an aorist participle placed before it, shares its force (as in verse 7), so ‘go and make disciples’ is right, while baptizontes, ‘baptizing’, and didaskontes, ‘teaching’ (verse 20), are present participles describing how disciples are made. Panta ta ethnē, ‘all the nations’, is neuter, but the pronoun that follows, autous, ‘them’, is masculine: the grammar shifts from nations to persons, so that what is in view is people from every nation, not nations as political bodies. Eis to onoma, ‘into the name’, singular, is followed by three names each with the article, tou patros kai tou huiou kai tou hagiou pneumatos: one name, three persons. The preposition eis suggests entry into belonging, as the chapter note explains.",
+      "words": ["G4198", "G3100", "G1484", "G0907", "G3686", "G3962", "G5207", "G4151G"],
+      "history": "The chapter note gives the early witnesses to the triadic formula: the Didache around AD 100 (7.1-3), Justin Martyr around 155 (First Apology 61), Tertullian (On Baptism 13), and Basil (On the Holy Spirit, 375). It also sets out the debate over ‘all nations’, whether it means the Gentiles only (Douglas Hare and Daniel Harrington, 1975) or all peoples including Israel (John P. Meier, 1977), the view most scholars now hold.",
+      "theology": [
+        {
+          "id": "mission",
+          "note": "The church's mission is defined here: making disciples, not only converts, from every people, on the authority of the risen Lord. It rests on his authority (verse 18) and his presence (verse 20), which is why it is a commission rather than merely a task."
+        },
+        {
+          "id": "trinity",
+          "note": "The Son and the Holy Spirit share one name with the Father in the rite of entry into God's people. No Jewish teacher would place a creature in the divine name, and the verse became one of the chief scriptural grounds of the church's confession of one God in three persons."
+        },
+        {
+          "id": "sacraments",
+          "note": "Baptism is commanded by the risen Lord as part of making disciples. Christians differ on its subjects (the children of believers, or only those who confess faith) and mode, and the Anabaptist Balthasar Hubmaier argued from the order of the verse for believers' baptism, as the chapter note describes; all traditions receive the command and the name as Christ's."
+        }
+      ],
+      "text": "Codex Vaticanus and Codex Bezae read baptisantes, an aorist, ‘having baptized’, for baptizontes, a reading poorly attested and not followed by the editions. Some manuscripts lack oun, ‘therefore’. The triadic formula stands in every Greek manuscript and ancient version of Matthew that contains the verse. Eusebius of Caesarea, in works before the Council of Nicaea in 325, often quotes a shorter form, ‘make disciples of all nations in my name’, which F. C. Conybeare (1901) thought original; Everett Ferguson and others explain it by Eusebius's habit of abbreviating, and after Nicaea he quotes the full formula (Against Marcellus, book 1). As the chapter note says, it concerns how one writer quoted the verse, not a variant in any surviving manuscript.",
+      "refs": ["Matthew 10:5-6", "Matthew 24:14", "Genesis 12:3", "Acts 2:38", "2 Corinthians 13:14"]
+    },
+    {
+      "v": "20",
+      "context": "The commission continues: teaching the disciples to obey everything Jesus commanded. Then the promise that ends the Gospel: Jesus is with his people all the days until the end of the age. The book that began with the name Immanuel, God with us (1:23), ends with Jesus himself saying, I am with you.",
+      "grammar": "Didaskontes autous tērein panta hosa eneteilamēn humin, ‘teaching them to keep all that I commanded you’: tēreō, ‘to keep, observe’, is the verb of keeping the commandments (19:17), and entellomai, ‘to command’, is the verb the Septuagint uses for the commands of God through Moses (Deuteronomy 4:2). The teaching is not information about Jesus but obedience to what he taught, sending the reader back through the five great discourses of the Gospel. Kai idou egō meth' humōn eimi, ‘and behold, I am with you’, puts the emphatic egō, ‘I myself’, first. Pasas tas hēmeras, ‘all the days’, is more concrete than ‘always’: each day, one by one. Heōs tēs sunteleias tou aiōnos, ‘until the completion of the age’, is the phrase of the parables of the weeds and the net (13:39-49) and the disciples' question on the Mount of Olives (24:3).",
+      "words": ["G1321", "G5083G", "G1781", "G4930", "G0165G"],
+      "ot": [
+        {
+          "ref": "Haggai 1:13",
+          "note": "Through Haggai the LORD said to the discouraged people rebuilding the temple, “I am with you,” declares the LORD. The Hebrew ani ittekhem is rendered in the Septuagint egō eimi meth' humōn, exactly Jesus' words here. The same promise was given to Jacob (Genesis 28:15, ‘Look, I am with you’), to Moses (Exodus 3:12), and to Joshua (Joshua 1:5), always at the start of a mission. Matthew's readers had heard the evangelist explain the name Immanuel as ‘God with us’, meth' hēmōn ho theos (1:23, quoting Isaiah 7:14). Now Jesus speaks the divine promise in the first person."
+        },
+        {
+          "ref": "2 Chronicles 36:23",
+          "note": "In the Jewish ordering of the Scriptures, Chronicles comes last, and it ends with Cyrus's decree that the LORD has given him all the kingdoms of the earth, and his words to God's people, may the LORD his God be with him, and may he go up. Many readers, as the chapter note says, hear Matthew's ending as a deliberate answer: all authority given, a sending out, and a promise of presence, now from a greater king who is himself the presence of God."
+        }
+      ],
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "The promise ‘I am with you’ belongs to God in Israel's Scriptures, and Jesus speaks it in his own name. The Gospel's first and last words about Jesus frame it: he is Immanuel, God with us (1:23), and he remains with his people after his resurrection (18:20). The presence of the incarnate Son is not withdrawn but extended to every place his disciples go."
+        },
+        {
+          "id": "hope",
+          "note": "The promise has a horizon: the completion of the age, when the Son of Man will come in glory (24:30-31, 25:31). The church lives between his resurrection and that day, sustained by a presence that reaches every one of the days in between."
+        },
+        {
+          "id": "sanctification",
+          "note": "Discipleship is defined as learning to keep all that Jesus commanded. The goal of the mission is not only faith and baptism but a life reshaped by his teaching, carried on under his presence."
+        }
+      ],
+      "text": "Later manuscripts, followed by the King James Version, add ‘Amen’ at the end. The King James ‘unto the end of the world’ renders aiōn as ‘world’; modern versions have ‘age’, which is closer to the Greek, as the chapter note says.",
+      "refs": ["Matthew 1:23", "Matthew 18:20", "Genesis 28:15", "Joshua 1:5-9", "Matthew 13:39-40"]
+    }
+  ]
+}

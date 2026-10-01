@@ -1,0 +1,336 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "As Jesus passes by, he sees a man blind from birth. The man does not ask for anything, and the healing that follows begins with Jesus' seeing, the first of many acts of seeing in a chapter about sight. The verse follows directly on 8:59, where Jesus left the temple.",
+      "grammar": "Kai paragōn eiden, ‘and passing by he saw’, puts the initiative with Jesus: a present participle for his movement and an aorist for the look that stops it. Tuphlon ek genetēs, ‘blind from birth’, uses genetē, a word found only here in the New Testament. The detail matters to the story's argument, since the neighbors, the parents, and the man himself will insist on it (verses 19, 20, 32): this is not a restoration of lost sight but the giving of sight never had.",
+      "words": ["G3855", "G1492H", "G0444", "G5185", "G1079"],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The healing begins with Jesus noticing a man everyone else passed. John shows the initiative of grace before any faith or request: the man is seen before he sees."
+        }
+      ],
+      "refs": ["John 8:59", "Mark 10:46-52", "Isaiah 42:7", "Luke 19:10"]
+    },
+    {
+      "v": "2",
+      "context": "The disciples turn the man into a theological problem: who sinned, this man or his parents, that he was born blind? They assume that his condition must be punishment and only want to know whose.",
+      "grammar": "Rhabbi, tis hēmarten, houtos ē hoi goneis autou, hina tuphlos gennēthē, ‘Rabbi, who sinned, this man or his parents, so that he was born blind?’ The hina clause here expresses result rather than purpose: that he should be born blind as a consequence. The option that the man himself sinned before birth is stated as a real possibility, which assumes either sin in the womb or a soul's existence before birth.",
+      "words": ["G2065", "G3101", "G4461", "G0264", "G1118", "G5185", "G1080"],
+      "history": "Both ideas behind the question were current. The Wisdom of Solomon, written in Greek a century or so before Jesus, has its speaker say that as a good soul he entered an undefiled body (Wisdom 8:19-20), and the rabbis could imagine an unborn child's inclinations stirring in the womb. The belief that children suffer for parents' sins could appeal to the second commandment (Exodus 20:5), though Ezekiel 18:20 rejects it as a principle of judgment. The disciples' question gathers these strands into a single assumption: suffering is always somebody's fault.",
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "The question treats a person as a case study in guilt. Its assumption, that particular suffering must track particular sin, is the one Job's friends made and the book of Job refuses. Jesus will refuse it too."
+        }
+      ],
+      "refs": ["Exodus 20:5", "Ezekiel 18:20", "Job 4:7-8", "Luke 13:1-5"]
+    },
+    {
+      "v": "3",
+      "context": "Jesus rejects both options. Neither the man nor his parents sinned; the blindness is not a verdict but an occasion for the works of God to be displayed. The sentence turns the question from cause to purpose and from the past to what God is about to do.",
+      "grammar": "Oute houtos hēmarten oute hoi goneis autou, ‘neither this man sinned nor his parents’, denies the link the disciples assumed, not that the man or his parents ever sinned at all. All' hina phanerōthē ta erga tou theou en autō, ‘but so that the works of God might be made manifest in him’, has an ellipsis: English Bibles supply ‘this happened’ (BSB) or ‘he was born blind’. Some interpreters, noting that the earliest manuscripts have no punctuation, join the hina clause to verse 4 (‘so that the works of God may be displayed in him, we must work’), which removes the suggestion that God caused the blindness for display. Phanerōthē, an aorist passive of phaneroō, is the verb John uses for revelation (1:31, 2:11, 21:1).",
+      "words": ["G0264", "G1118", "G5319", "G2041", "G2316"],
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "Jesus does not explain why the man was born blind; he refuses the explanation offered and says what God will do. The verse does not make suffering good, but it forbids reading it as proof of guilt and sets it within God's purpose to act."
+        },
+        {
+          "id": "providence",
+          "note": "On either punctuation, God's works reach into this man's life. Calvin's commentary (1553) takes the verse to mean that God has reasons for affliction hidden from us, and that we are not to judge a sufferer's guilt from his suffering."
+        }
+      ],
+      "refs": ["John 11:4", "Job 42:7", "2 Corinthians 12:9", "Romans 8:28"]
+    },
+    {
+      "v": "4-5",
+      "context": "Jesus says that ‘we’ must do the works of the one who sent him while it is day, because night is coming when no one can work. As long as he is in the world, he is the light of the world, the claim of 8:12 now about to be shown in action.",
+      "grammar": "Hēmas dei ergazesthai, ‘we must work’, uses dei, the ‘must’ of divine necessity in John (3:14, 4:4, 10:16), and the first person plural draws the disciples into his work. Ta erga tou pempsantos me, ‘the works of him who sent me’, keeps the singular ‘me’ for Jesus' own mission. Heōs hēmera estin, ‘while it is day’, and erchetai nux, ‘night is coming’, point to the hour of his death (11:9-10, 13:30). Hotan en tō kosmō ō, ‘whenever I am in the world’, uses hotan with a present subjunctive, ‘as long as’, and phōs eimi tou kosmou, ‘I am light of the world’, lacks the article that 8:12 has, which stresses the quality of what he is.",
+      "words": ["G1163", "G2038", "G2041", "G3992", "G2250", "G3571", "G2889", "G5457"],
+      "text": "The earliest manuscripts, including Papyri 66 and 75 and Codices Sinaiticus and Vaticanus, read ‘we must work’, which the critical editions print; later manuscripts and the King James Version have ‘I must work’. A few early witnesses also read ‘him who sent us’. The first person plural with ‘sent me’ is the more difficult combination and most likely original, since scribes tended to make the pronouns match.",
+      "theology": [
+        {
+          "id": "mission",
+          "note": "The ‘we’ of verse 4 makes the disciples partners in the works of the one who sent Jesus, a partnership the risen Christ will make explicit: as the Father sent me, I also send you (20:21)."
+        }
+      ],
+      "refs": ["John 8:12", "John 11:9-10", "John 12:35-36", "John 20:21", "John 5:17"]
+    },
+    {
+      "v": "6-7",
+      "context": "Jesus spits on the ground, makes mud, puts it on the man's eyes, and sends him to wash in the Pool of Siloam, a name John translates as Sent. The man goes, washes, and comes back seeing. He obeys before he can see anything.",
+      "grammar": "Eptusen chamai kai epoiēsen pēlon ek tou ptusmatos, ‘he spat on the ground and made mud from the spittle’, uses pēlos, the potter's clay of the Greek Old Testament (Isaiah 29:16). Epechrisen, ‘he anointed’, is the reading of most editions; Westcott and Hort printed epethēken, ‘he put on’, which the man uses in verse 15. Hupage nipsai eis tēn kolumbēthran tou Silōam, ‘go, wash in the pool of Siloam’, uses kolumbēthra, a pool for swimming or bathing, the word used of Bethesda in 5:2. Ho hermēneuetai apestalmenos, ‘which is translated Sent’, is a perfect passive participle of apostellō, the verb John uses for the Father's sending of the Son (3:17, 10:36).",
+      "words": ["G4429", "G5476", "G4081", "G4427", "G2025", "G3788", "G5217", "G3538", "G2861", "G4611", "G2059", "G0649", "G0991"],
+      "history": "In 2004, workers repairing a sewer line at the southern end of the City of David exposed stone steps, and Ronny Reich and Eli Shukron went on to uncover one side of a large pool of the Second Temple period, lined with three flights of five steps separated by short landings. Coins of Alexander Jannaeus (103 to 76 BC) sealed in the plaster of an earlier phase give the earliest date for its construction, and coins of the revolt against Rome (AD 66 to 70) lying on the steps show it was in use until the war. The excavators suggested that pilgrims immersed there for purity before going up to the temple; others think it was chiefly a public reservoir. North of the pool, excavators have since traced a paved stepped street climbing toward the temple mount, which coins beneath its paving date to around AD 31, in the governorship of Pontius Pilate (Tel Aviv 46, 2019).",
+      "ot": [
+        {
+          "ref": "Isaiah 8:6",
+          "note": "Isaiah rebukes the people who have rejected the gently flowing waters of Shiloah (Hebrew mei hashiloach; Greek Old Testament to hudōr tou Silōam). The name comes from the verb shalach, to send, probably for water sent through a channel from the Gihon spring. In Isaiah the waters stand for the LORD's quiet rule, refused in favor of foreign power. John draws out the name's meaning, Sent, and makes it point to Jesus."
+        },
+        {
+          "ref": "2 Kings 5:10-14",
+          "note": "Elisha sends Naaman to wash seven times in the Jordan, and after resisting the strange command he obeys and his flesh is restored like a young boy's. The pattern of a healing that comes through obeying an instruction to go and wash is shared, though John does not cite the story."
+        }
+      ],
+      "theology": [
+        {
+          "id": "creation",
+          "note": "Irenaeus (Against Heresies 5.15.2) read the mud as the Creator's hand, the same Word who formed Adam from the ground completing what was lacking from birth. The text does not draw the link, but the act of giving sight never had is a work of making, not repair."
+        }
+      ],
+      "refs": ["Genesis 2:7", "Mark 8:23", "John 5:2", "Nehemiah 3:15", "Isaiah 35:5"]
+    },
+    {
+      "v": "8-9",
+      "context": "The neighbors and those who had seen him begging cannot agree whether he is the same man. Some say yes, others say he only looks like him, and the man keeps saying, “I am the one.”",
+      "grammar": "Hoi theōrountes auton to proteron hoti prosaitēs ēn, ‘those who had seen him before, that he was a beggar’, uses prosaitēs, ‘beggar’, a word found in the New Testament only here and in Mark 10:46. Ho kathēmenos kai prosaitōn, ‘the one who sat and begged’, describes his whole identity by two present participles. Ekeinos elegen hoti egō eimi, ‘he kept saying, I am’, uses the imperfect for repeated insistence. Egō eimi here means simply ‘it is I’, but in a Gospel where Jesus says egō eimi of himself, the words in the healed man's mouth mark him as someone whose identity now depends on the one who healed him.",
+      "words": ["G1069", "G2334", "G4387", "G6075", "G2521", "G4319", "G3664", "G1510"],
+      "text": "The critical editions read ‘that he was a beggar’ (prosaitēs) in verse 8, with the earliest manuscripts; the Textus Receptus reads ‘that he was blind’ (tuphlos), which the King James Version follows.",
+      "refs": ["Mark 10:46", "Acts 3:2", "Acts 3:9-10", "2 Corinthians 5:17"]
+    },
+    {
+      "v": "10-12",
+      "context": "The neighbors ask how his eyes were opened. He tells it plainly: the man called Jesus made mud, anointed his eyes, told him to go and wash, and he received his sight. Asked where Jesus is, he says he does not know.",
+      "grammar": "Pōs oun ēneōchthēsan sou hoi ophthalmoi, ‘how then were your eyes opened?’, uses an aorist passive that leaves the agent unnamed. His answer begins ho anthrōpos ho legomenos Iēsous, ‘the man called Jesus’, the lowest title he will use. Aneblepsa, ‘I received sight’, is from anablepō, which can mean to look up or to see again; for a man born blind it can only mean to gain sight, and the Greek Old Testament uses the verb for the blind seeing in Isaiah 42:18. Ouk oida, ‘I do not know’, is honest: he has never seen Jesus.",
+      "words": ["G0455", "G3788", "G0444", "G3004H", "G2025", "G4611", "G3538", "G0308", "G6063"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "The man's faith begins as bare testimony: this is what happened to me. John shows faith growing from what one knows toward whom one knows, and the man's first title for Jesus is only the beginning."
+        }
+      ],
+      "refs": ["John 4:29", "John 9:17", "John 9:25", "Isaiah 42:18"]
+    },
+    {
+      "v": "13-14",
+      "context": "The neighbors bring the man to the Pharisees, and John now reveals what he held back: the day was a Sabbath. The healing becomes a case.",
+      "grammar": "Agousin, ‘they bring’, is a historic present, putting the reader in the scene. Ēn de sabbaton en hē hēmera ton pēlon epoiēsen ho Iēsous, ‘now it was a Sabbath on the day Jesus made the mud’, delays the key fact to this point, as John did in 5:9. The verse names the two acts that counted as work: making the mud and opening the eyes (aneōxen).",
+      "words": ["G0071", "G5330", "G4521", "G4081", "G4160G", "G0455", "G3788"],
+      "theology": [
+        {
+          "id": "sabbath",
+          "note": "Jesus chooses the Sabbath for a work that could have waited, as he did at Bethesda (5:9). The Sabbath remembered God's rest after creation and Israel's release from slavery (Exodus 20:11, Deuteronomy 5:15), and a work of new sight and release fits both."
+        }
+      ],
+      "refs": ["John 5:9-10", "John 7:22-23", "Mark 3:1-6", "Luke 13:14-16", "Deuteronomy 5:15"]
+    },
+    {
+      "v": "15-16",
+      "context": "The Pharisees ask how he received sight, and he tells it more briefly than before. They split: some say Jesus cannot be from God, since he does not keep the Sabbath; others ask how a sinner could do such signs.",
+      "grammar": "Pēlon epethēken mou epi tous ophthalmous, kai enipsamēn, kai blepō, ‘he put mud on my eyes, and I washed, and I see’, shortens the story to three clauses; the last is present tense, his condition now. Ouk estin houtos para theou ho anthrōpos, ‘this man is not from God’, and pōs dunatai anthrōpos hamartōlos toiauta sēmeia poiein, ‘how can a sinful man do such signs?’, state the two sides of a real legal question. Schisma ēn en autois, ‘there was a division among them’, uses the same word as 7:43 and 10:19.",
+      "words": ["G2007", "G3538", "G0991", "G5330", "G2316", "G4521", "G5083G", "G0268", "G4592", "G4978"],
+      "ot": [
+        {
+          "ref": "Deuteronomy 13:1-5",
+          "note": "The law warns that a prophet may give a sign or wonder that comes true and still lead Israel after other gods; such a prophet is to be rejected. The Pharisees who say Jesus is not from God reason from this principle: a sign does not validate one who breaks the law. Their colleagues reason from the other direction, that God does not give such power to sinners. Both sides are arguing from Scripture."
+        }
+      ],
+      "theology": [
+        {
+          "id": "sabbath",
+          "note": "The division shows the question is not whether the sign happened but how to judge it by the law. John presents it as a real dilemma, and the chapter's answer is that the one who does the Father's works is Lord of the day the Father made."
+        }
+      ],
+      "refs": ["John 7:43", "John 10:19-21", "John 3:2", "Mark 2:27-28"]
+    },
+    {
+      "v": "17",
+      "context": "Pressed for his own verdict, the man says, “He is a prophet.” He has moved from ‘the man called Jesus’ to a prophet sent by God.",
+      "grammar": "Ti su legeis peri autou, ‘what do you say about him?’, puts su, ‘you’, first: the experts turn to the one witness they least respect. Hoti ēneōxen sou tous ophthalmous, ‘since he opened your eyes’, gives the reason he is entitled to an opinion. Prophētēs estin, ‘he is a prophet’, has no article: not the Prophet like Moses of 6:14 and 7:40, but a man sent by God with God's power, like Elijah and Elisha.",
+      "words": ["G5185", "G0455", "G3788", "G4396"],
+      "theology": [
+        {
+          "id": "offices",
+          "note": "The man reaches for the office Israel knew for a man through whom God acted: prophet. It is a true title (Luke 24:19), and it is not the last he will use."
+        }
+      ],
+      "refs": ["John 4:19", "John 6:14", "Luke 7:16", "Luke 24:19"]
+    },
+    {
+      "v": "18-19",
+      "context": "The authorities, here called the Jews, refuse to believe the man was blind at all, and they summon his parents. They ask three questions: is this your son, was he born blind, and how does he now see?",
+      "grammar": "Ouk episteusan oun hoi Ioudaioi, ‘the Jews did not believe’, uses the term for the same leaders called Pharisees in verses 13-16, which shows that in this chapter hoi Ioudaioi means the authorities. Heōs hotou ephōnēsan tous goneis, ‘until they called the parents’, marks the limit of their disbelief. The question houtos estin ho huios humōn, hon humeis legete hoti tuphlos egennēthē, ‘is this your son, of whom you say that he was born blind?’, puts humeis legete, ‘you say’, as though the parents were the source of a claim still to be tested.",
+      "words": ["G4100", "G2453", "G5185", "G0308", "G5455", "G1118", "G5207", "G1080", "G0991", "G0737"],
+      "refs": ["John 9:13", "John 9:22", "John 1:19", "John 5:10"]
+    },
+    {
+      "v": "20-21",
+      "context": "The parents answer with care. They know he is their son and that he was born blind; how he now sees, or who opened his eyes, they do not know. He is of age; let them ask him.",
+      "grammar": "Oidamen, ‘we know’, occurs twice in verse 20 and ouk oidamen twice in verse 21, drawing a sharp line between what they will confirm and what they will not touch. Autos hēlikian echei, ‘he has age’, means he is an adult able to answer for himself, and peri heautou lalēsei, ‘he will speak for himself’, uses the future for what he is legally competent to do. The parents know perfectly well who healed him; the next verse explains why they say otherwise.",
+      "words": ["G6063", "G5207", "G5185", "G1080", "G0991", "G0455", "G3788", "G2065", "G2244", "G2980"],
+      "theology": [
+        {
+          "id": "family",
+          "note": "The parents protect themselves at their son's expense. John does not mock them, but the scene shows how fear can make even a family abandon one of its own, the pressure Jesus warns his disciples to expect (Matthew 10:21, 35-36)."
+        }
+      ],
+      "refs": ["Matthew 10:32-37", "John 12:42-43", "Proverbs 29:25"]
+    },
+    {
+      "v": "22-23",
+      "context": "John explains the parents' answer. They feared the authorities, who had already agreed that anyone who confessed Jesus as the Christ would be put out of the synagogue.",
+      "grammar": "Ephobounto tous Ioudaious, ‘they were afraid of the Jews’, is an imperfect for a continuing fear, and since the parents are themselves Jews, the phrase must mean the authorities. Ēdē gar sunetetheinto hoi Ioudaioi, ‘for the Jews had already agreed’, uses a pluperfect of suntithēmi, to agree together or to make a compact (Luke 22:5, Acts 23:20). Hina ean tis auton homologēsē Christon, ‘that if anyone should confess him as Christ’, uses homologeō for public confession, and aposunagōgos genētai, ‘he would become one expelled from the synagogue’, uses an adjective found only in John (9:22, 12:42, 16:2) and in no earlier Greek writing.",
+      "words": ["G1118", "G5399", "G2453", "G2235", "G4934", "G3670", "G5547", "G0656", "G2244"],
+      "history": "What stands behind the verse is debated. The Babylonian Talmud says that at Yavneh, under Rabban Gamaliel II, Samuel the Small composed a benediction against the minim, heretics, for the daily Eighteen Benedictions (b. Berakhot 28b-29a), usually dated to the 80s or 90s AD. In 1898 Solomon Schechter published a Palestinian form of the prayer from the Cairo Genizah that names the notzrim, Nazarenes, beside the minim, and Justin Martyr complained around 160 that Jews cursed believers in Christ in their synagogues (Dialogue with Trypho 16). Epiphanius (Panarion 29.9, around 375) and Jerome later said Jews cursed the Nazarenes three times a day. J. Louis Martyn (1968) read John 9:22 in this light. Reuven Kimelman (1981) and Steven Katz (Journal of Biblical Literature 103, 1984) argued that the word notzrim is a later addition, that the benediction targeted Jewish heretics generally, and that it expelled no one formally. Others hold that local exclusions, which Ezra 10:8 and the Qumran Rule (1QS 6:24-7:25) already knew, could have fallen on Jesus' followers during his ministry.",
+      "theology": [
+        {
+          "id": "church",
+          "note": "Confessing Jesus as the Christ can cost a person a community. John writes so that later believers who faced exclusion would see themselves in this man and know that Jesus seeks out the one who has been cast out (9:35), a warning and comfort Jesus repeats in 16:2."
+        }
+      ],
+      "refs": ["John 12:42-43", "John 16:2", "John 19:38", "Luke 6:22", "Ezra 10:8"]
+    },
+    {
+      "v": "24",
+      "context": "The authorities call the man back a second time and put him under oath: give glory to God, we know this man is a sinner. The verdict is announced before the testimony is heard.",
+      "grammar": "Ephōnēsan oun ton anthrōpon ek deuterou, ‘so they called the man a second time’, formally resumes the hearing. Dos doxan tō theō, ‘give glory to God’, is an aorist imperative in a fixed formula of adjuration: tell the truth before God and confess. Hēmeis oidamen, ‘we know’, sets the experts' knowledge against the man's, and hoti houtos ho anthrōpos hamartōlos estin, ‘that this man is a sinner’, prejudges the question verse 16 left open.",
+      "words": ["G5455", "G1208", "G5185", "G1325", "G1391", "G2316", "G6063", "G0268"],
+      "ot": [
+        {
+          "ref": "Joshua 7:19",
+          "note": "Joshua says to Achan, ‘My son, give glory to the LORD, the God of Israel, and make confession to him’ (Hebrew sim-na kavod; Greek Old Testament dos doxan sēmeron tō kuriō theō Israēl). The formula calls a guilty man to confess. The authorities use it on a man who has done nothing but been healed, as though he were the offender, and the irony is that the truth he will tell does give glory to God."
+        }
+      ],
+      "refs": ["Joshua 7:19", "1 Samuel 6:5", "Jeremiah 13:16", "Revelation 14:7"]
+    },
+    {
+      "v": "25",
+      "context": "The man refuses to decide what he cannot know and holds to what he does. Whether Jesus is a sinner he does not know. One thing he knows: “I was blind, but now I see!”",
+      "grammar": "Ei hamartōlos estin ouk oida, ‘whether he is a sinner I do not know’, answers their ‘we know’ with an honest ‘I do not know’. Hen oida, ‘one thing I know’, puts hen, ‘one’, first for emphasis. Hoti tuphlos ōn arti blepō, ‘that being blind, now I see’, uses a present participle, ‘being blind’, for his whole former life, and arti, ‘just now’, for the change. The testimony rests on experience that no argument can remove.",
+      "words": ["G0268", "G6063", "G1520", "G5185", "G0737", "G0991"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "The man's witness is limited but unshakable. He does not claim more than he knows, and he will not say less. John presents this as the seed of faith: testimony to what Jesus has done, which opens the way to knowing who he is (verses 35-38)."
+        }
+      ],
+      "refs": ["1 John 1:1-3", "Acts 4:20", "Psalm 146:8", "John 4:39-42"]
+    },
+    {
+      "v": "26-27",
+      "context": "They ask again what Jesus did and how. The man has had enough: he has told them already and they did not listen. Why do they want to hear it again? Do they want to become his disciples too?",
+      "grammar": "Eipon humin ēdē kai ouk ēkousate, ‘I told you already and you did not listen’, uses akouō in its sense of heeding. Ti palin thelete akouein, ‘why do you want to hear again?’, is followed by mē kai humeis thelete autou mathētai genesthai, ‘you do not want to become his disciples too, do you?’. The question with mē expects the answer no, which makes it sarcastic, and kai, ‘too’, quietly admits that he already counts himself one.",
+      "words": ["G2235", "G0191", "G3825", "G2309", "G3101", "G1096"],
+      "refs": ["John 5:37-40", "John 8:43", "Acts 7:51", "John 1:37"]
+    },
+    {
+      "v": "28-29",
+      "context": "The authorities revile him: he is that man's disciple, but they are disciples of Moses. They know God spoke to Moses; they do not know where this man comes from.",
+      "grammar": "Eloidorēsan, ‘they reviled’, is a strong verb of verbal abuse (Acts 23:4, 1 Corinthians 4:12). Su mathētēs ei ekeinou, ‘you are that one's disciple’, uses ekeinou, ‘that one’, to keep Jesus at arm's length, against hēmeis de tou Mōuseōs esmen mathētai, ‘but we are disciples of Moses’. Mōusei lelalēken ho theos, ‘God has spoken to Moses’, uses a perfect for revelation that still stands. Touton de ouk oidamen pothen estin, ‘but this man, we do not know where he is from’, reverses 7:27, where the crowd claimed to know exactly where he came from.",
+      "words": ["G3058", "G3101", "G1565", "G3475", "G6063", "G2980", "G2316", "G4159"],
+      "ot": [
+        {
+          "ref": "Numbers 12:6-8",
+          "note": "The LORD says that to other prophets he speaks in visions and dreams, but with his servant Moses he speaks face to face, clearly and not in riddles (Hebrew peh el-peh; Greek Old Testament stoma kata stoma). The authorities appeal to this unique standing of Moses. John's prologue has already said that the law came through Moses, while grace and truth came through Jesus Christ, the only one who has seen God (1:17-18), and that Moses wrote of Jesus (5:46)."
+        }
+      ],
+      "refs": ["John 1:17-18", "John 5:45-47", "John 7:27-28", "John 8:14", "Exodus 33:11"]
+    },
+    {
+      "v": "30-31",
+      "context": "The man, now teaching his teachers, finds it astonishing that they do not know where Jesus comes from, when he opened his eyes. He argues from what everyone knows: God does not listen to sinners but to the one who fears him and does his will.",
+      "grammar": "En toutō gar to thaumaston estin, ‘why, in this is the marvel’, turns their ignorance into the real wonder. Oidamen, ‘we know’, in verse 31 takes the authorities' own word and turns it against them: he too can appeal to common knowledge. Hamartōlōn ho theos ouk akouei, ‘God does not listen to sinners’, and ean tis theosebēs ē, ‘if anyone is God-fearing’, use theosebēs, a word found only here in the New Testament, for reverent piety.",
+      "words": ["G0444", "G2298", "G6063", "G4159", "G0455", "G3788", "G0268", "G2316", "G0191", "G2318", "G2307"],
+      "history": "The man's principle was familiar Jewish piety. The Babylonian Talmud records the teaching that when a person has the fear of heaven, his words are heard (b. Berakhot 6b, from Ecclesiastes 12:13), and the Psalms and Proverbs say much the same (Psalm 66:18, Proverbs 15:29). The man argues from shared ground, not from a new doctrine.",
+      "ot": [
+        {
+          "ref": "Psalm 66:18",
+          "note": "If I had cherished sin in my heart, the Lord would not have listened (Hebrew lo yishma adonai). The psalmist goes on to say that God has in fact heard him. Isaiah 1:15 and Proverbs 15:29 say the same in other forms. The man takes this common teaching and applies it: God has plainly heard Jesus, so Jesus is not the sinner they say."
+        }
+      ],
+      "refs": ["Proverbs 15:29", "Isaiah 1:15", "Psalm 34:15", "James 5:16", "1 John 3:22"]
+    },
+    {
+      "v": "32-33",
+      "context": "The man presses his argument to its conclusion. From the beginning of the world no one has heard of anyone opening the eyes of a man born blind. If this man were not from God, he could do nothing.",
+      "grammar": "Ek tou aiōnos ouk ēkousthē, ‘from the age it was not heard’, is a Semitic way of saying ‘never since the world began’ (compare Isaiah 64:4). Tuphlou gegennēmenou, ‘of one born blind’, uses a perfect participle for a state from birth. Verse 33 is a contrary-to-fact condition, ei mē ēn houtos para theou, ouk ēdunato poiein ouden, ‘if this man were not from God, he would not be able to do anything’, and para theou, ‘from God’, answers the charge of verse 16 in its own words.",
+      "words": ["G0165G", "G0191", "G0455", "G3788", "G5185", "G1080", "G3844", "G2316", "G1410"],
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "The man argues from the sign's uniqueness to Jesus' origin. The prophets had promised that in the day of God's salvation the eyes of the blind would be opened (Isaiah 35:5, 42:7), and his reasoning points further than he knows, toward the one who does what only God has promised to do."
+        }
+      ],
+      "refs": ["Isaiah 35:5", "Isaiah 42:7", "Isaiah 29:18", "John 3:2", "Matthew 11:5"]
+    },
+    {
+      "v": "34",
+      "context": "The authorities have no answer except contempt. He was born entirely in sin, and he presumes to teach them? They throw him out.",
+      "grammar": "En hamartiais su egennēthēs holos, ‘in sins you were born, wholly’, puts holos, ‘entirely’, at the end for weight: the disciples' theory of verse 2 returns as an insult, and the blindness they now deny is used as proof of his sinfulness. Kai su didaskeis hēmas, ‘and you are teaching us?’, sets su, ‘you’, against hēmas, ‘us’. Kai exebalon auton exō, ‘and they threw him out’, may mean they drove him from their presence or that they carried out the exclusion of verse 22; interpreters differ, and the Greek allows both.",
+      "words": ["G0266", "G1080", "G3650", "G1321", "G1544", "G1854"],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "The authorities use sin as a weapon, a label for someone else. Psalm 51:5 confesses being brought forth in iniquity as a truth about oneself. The chapter will turn the charge around: the guilt that remains is theirs (verse 41)."
+        }
+      ],
+      "refs": ["Psalm 51:5", "John 9:2", "John 9:22", "John 6:37", "3 John 1:10"]
+    },
+    {
+      "v": "35-37",
+      "context": "Jesus hears that the man has been thrown out and finds him. He asks whether he believes in the Son of Man. The man asks who he is so that he may believe, and Jesus answers that he has seen him: he is the one speaking with him.",
+      "grammar": "Kai heurōn auton, ‘and having found him’, uses heuriskō, the verb of Jesus finding disciples in 1:41-45: he goes looking. Su pisteueis eis ton huion tou anthrōpou, ‘do you believe in the Son of Man?’, puts su first, and the man's reply, kai tis estin, kurie, ‘and who is he, sir?’, uses kurie in its polite sense. Kai heōrakas auton, ‘you have both seen him’, uses a perfect of horaō, pointed for a man who has just received sight: the first face he sees in faith is this one. Kai ho lalōn meta sou ekeinos estin, ‘and the one speaking with you is he’, echoes Jesus' word to the Samaritan woman (4:26).",
+      "words": ["G0191", "G1544", "G2147", "G4100", "G5207", "G0444", "G2962H", "G3708", "G2980"],
+      "text": "The oldest manuscripts, including Papyri 66 and 75 and Codices Sinaiticus, Vaticanus, and Bezae, read ‘Son of Man’; later manuscripts and the King James Version read ‘Son of God’. Scribes were more likely to change the unusual question into the familiar confession than the reverse.",
+      "ot": [
+        {
+          "ref": "Daniel 7:13-14",
+          "note": "Daniel sees one like a son of man (Aramaic kevar enash; Greek Old Testament hōs huios anthrōpou) coming with the clouds of heaven and receiving dominion, glory, and a kingdom from the Ancient of Days, so that all peoples serve him. Jesus uses the title for himself throughout the Gospels. In John 5:27 the Father has given the Son authority to judge because he is the Son of Man, which prepares for the judgment saying of 9:39."
+        }
+      ],
+      "refs": ["John 4:26", "John 1:51", "John 5:27", "Ezekiel 34:16", "Luke 19:10"]
+    },
+    {
+      "v": "38",
+      "context": "The man answers, “Lord, I believe,” and worships Jesus. It is the end of his coming to sight and the only place in the Gospel where someone worships Jesus during his ministry.",
+      "grammar": "Ho de ephē, pisteuō, kurie, ‘and he said, I believe, Lord’, repeats kurie from verse 36, but the confession has changed its meaning from ‘sir’ to ‘Lord’. Kai prosekunēsen autō, ‘and he worshiped him’, uses proskuneō, the verb John uses nine times in 4:20-24 for the worship of the Father. It can mean respectful bowing before a superior, but here, after a confession of faith, it is worship.",
+      "words": ["G5346", "G4100", "G2962G", "G4352"],
+      "text": "Papyrus 75, the first hand of Codex Sinaiticus, Codex Washingtonianus, and a few other witnesses lack verse 38 and the first words of verse 39. Calvin L. Porter (New Testament Studies 13, 1967) argued that the words came from the church's baptismal liturgy; others think a scribe's eye skipped between similar lines. All major English versions print them.",
+      "theology": [
+        {
+          "id": "worship",
+          "note": "The man expelled from the synagogue's worship worships Jesus, with the verb the Gospel reserved for the Father in chapter 4. John offers no correction, as angels and apostles offer when others bow to them (Acts 10:25-26, Revelation 19:10), which is one of the ways the Gospel shows Jesus sharing the Father's honor (5:23)."
+        }
+      ],
+      "refs": ["John 4:20-24", "John 5:23", "John 20:28", "Matthew 28:9", "Acts 10:25-26"]
+    },
+    {
+      "v": "39",
+      "context": "Jesus names the meaning of the whole scene: he came into this world for judgment, so that those who do not see may see and those who see may become blind.",
+      "grammar": "Eis krima egō eis ton kosmon touton ēlthon, ‘for judgment I came into this world’, uses krima, the result of judging, the verdict, a word John uses only here. The hina clause has two halves: hoi mē blepontes blepōsin, ‘those not seeing may see’, and hoi blepontes tuphloi genōntai, ‘those seeing may become blind’. The second use of blepontes means ‘those who think they see’, as verse 41 makes plain. The statement does not contradict 3:17 (the Son was not sent to condemn): condemnation is not the purpose of his coming but its unavoidable effect on those who refuse the light.",
+      "words": ["G2917", "G2889", "G2064", "G0991", "G5185", "G1096"],
+      "ot": [
+        {
+          "ref": "Isaiah 6:9-10",
+          "note": "Isaiah is sent to a people who will look and not perceive, whose eyes are to be shut (Hebrew ve'einav hasha). John quotes the passage in 12:40 to explain unbelief in the face of Jesus' signs. Isaiah 42:18-19 adds the call to the blind to look and see, and names God's own servant Israel as the blind one, which fits a chapter in which religious leaders are shown to be blind."
+        }
+      ],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "Jesus' coming sorts people by how they respond to light. Sight is given to those who know they lack it; those who claim to have it are confirmed in blindness. The judgment is not arbitrary; it follows the response."
+        }
+      ],
+      "refs": ["John 3:17-21", "John 12:40", "Isaiah 42:18-19", "Luke 4:18", "Matthew 13:13-15"]
+    },
+    {
+      "v": "40-41",
+      "context": "Some Pharisees who are with him hear and ask whether they are blind too. Jesus answers that if they were blind, they would have no sin; but since they say they see, their sin remains.",
+      "grammar": "Mē kai hēmeis tuphloi esmen, ‘we are not blind too, are we?’, expects the answer no. Jesus answers with a contrary-to-fact condition: ei tuphloi ēte, ouk an eichete hamartian, ‘if you were blind, you would not have sin’, meaning that admitted blindness could be healed and would not be held against them. Nun de legete hoti blepomen, ‘but now you say, We see’, quotes their claim, and hē hamartia humōn menei, ‘your sin remains’, uses menō, the verb of abiding, for guilt that stays.",
+      "words": ["G5330", "G5185", "G2192", "G0266", "G0991", "G3306"],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "The sin that remains is not ignorance but the claim to need no light. The verse turns the chapter's question about the blind man's sin (verse 2) onto those who asked it, and it addresses every reader who is sure he already sees."
+        },
+        {
+          "id": "judgment",
+          "note": "Guilt remains where self-sufficiency refuses help. The same Gospel says that whoever does not believe is condemned already (3:18) and that the wrath of God remains on him (3:36), using the same verb, remain."
+        }
+      ],
+      "refs": ["John 3:36", "John 15:22-24", "Revelation 3:17-18", "Proverbs 26:12", "1 John 1:8"]
+    }
+  ]
+}

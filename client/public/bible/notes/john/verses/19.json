@@ -1,0 +1,387 @@
+{
+  "verses": [
+    {
+      "v": "1-3",
+      "context": "Pilate has Jesus flogged in the middle of the trial, before any sentence, and the soldiers turn the charge of kingship into a game: a crown of thorns, a purple robe, a mock salute, and blows to the face. In John the flogging looks like Pilate's attempt to satisfy the accusers with something less than death, as Luke's Pilate twice proposes to punish Jesus and release him (Luke 23:16, 23:22).",
+      "grammar": "Elaben ho Pilatos ton Iēsoun kai emastigōsen, ‘Pilate took Jesus and flogged him’, attributes to Pilate what his soldiers did: the verb is causative in effect, ‘had him flogged’. Mastigoō, ‘to whip’, is John's word; Mark and Matthew use phragelloō, from the Latin flagellum, for the flogging that accompanied the sentence. Plexantes stephanon ex akanthōn, ‘having woven a crown out of thorns’, uses stephanos, the wreath of a victor or ruler, not diadēma, the royal band. Verse 3 shifts to imperfects, ērchonto... kai elegon... kai edidosan, ‘they kept coming up to him and saying... and giving him blows’: a repeated ritual of mock homage. Chaire, ho basileus tōn Ioudaiōn uses the nominative with the article as a form of address, the way the greeting ‘Hail, Caesar’ was given.",
+      "words": ["G3146", "G4120", "G4735", "G0173", "G4210", "G2440", "G2064", "G5463", "G0935", "G4475"],
+      "history": "Roman law knew grades of beating, from a warning with rods to the severe flogging that went with a capital sentence, as A. N. Sherwin-White set out (Roman Society and Roman Law in the New Testament, 1963); John's placement fits a lesser punishment meant to end the case, while Mark's fits the flogging before execution. What the crown was made of is uncertain. H. St. J. Hart (Journal of Theological Studies, 1952) argued that it was plaited from the long spines of the date palm, which grew in Jerusalem, to imitate the radiate crowns of rays worn by divine rulers on coins; if so, it mocked a claim to divine kingship rather than chiefly causing pain.",
+      "theology": [
+        {
+          "id": "offices",
+          "note": "The soldiers stage a coronation as a joke, and John records it as the truth: Jesus is invested as king with thorns, robe, and homage. The mockery tells the reader what kind of king he is, one who reigns through humiliation borne for others."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Isaiah 50:6",
+          "note": "The servant of the LORD says in the Hebrew that he gave his back to those who strike and his cheeks to those who pull out the beard, and did not hide his face from disgrace and spitting. The Septuagint renders it that he gave his back to whips (mastigas) and his cheeks to blows (rhapismata). John does not cite the verse, but both key words of the Greek return here: Jesus is whipped (emastigōsen) and given rhapismata (verse 3; compare 18:22). The servant's confidence in the next verses, that the Lord GOD helps him and he will not be put to shame, frames the scene for readers who know Isaiah."
+        }
+      ],
+      "parallels": ["Mark 15:15-19", "Matthew 27:26-30", "Luke 23:16", "Luke 23:22"],
+      "refs": ["Isaiah 50:6", "Isaiah 53:5", "Luke 23:16", "1 Peter 2:24"]
+    },
+    {
+      "v": "4-5",
+      "context": "Pilate comes out again and declares for the second time that he finds no case against Jesus. Then Jesus is brought out wearing the thorns and the purple, and Pilate presents him with three words: “Here is the man!” He may intend pity, contempt, or proof that this broken figure threatens no one. John lets the words mean more than Pilate knows.",
+      "grammar": "Ide agō humin auton exō, hina gnōte, ‘look, I am bringing him out to you so that you may know’, uses a purpose clause: the display is meant as evidence of innocence. Phorōn, ‘wearing’, is from phoreō, used for clothes or insignia worn as a matter of course, which adds to the grim parody of royal dress. Idou ho anthrōpos, ‘Behold the man’, uses the article: not ‘a man’ but ‘the man’. In the Greek of 1 Samuel 9:17 the LORD points out Saul to Samuel with the same words, idou ho anthrōpos, ‘here is the man’ who will rule my people; Zechariah 6:12 in the Greek has idou anēr, ‘behold a man’, for the Branch who will build the temple. John does not mark either as a quotation. Within the Gospel, ‘the man’ may also point to Jesus' own title, the Son of Man, who is lifted up (3:14, 12:23, 12:34).",
+      "words": ["G1831", "G2396", "G0071", "G1097", "G0156", "G5409", "G0174", "G2400", "G0444"],
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "Pilate displays Jesus' humanity at its most wounded, and the Gospel that said the Word became flesh (1:14) lets the phrase stand as a confession it never intended. The Son of God is presented to the world as ‘the man’, fully human in weakness and shame."
+        }
+      ],
+      "refs": ["1 Samuel 9:17", "Zechariah 6:12", "John 1:14", "John 12:34", "Isaiah 53:3"]
+    },
+    {
+      "v": "6-7",
+      "context": "At the sight of Jesus the chief priests and their officers shout for crucifixion. Pilate, exasperated, tells them to crucify him themselves, knowing they cannot, and declares Jesus innocent a third time. The accusers then reveal the real charge: by their law he must die because he made himself the Son of God.",
+      "grammar": "Staurōson staurōson, ‘crucify, crucify’, is a doubled aorist imperative, a chant. Pilate's reply, labete auton humeis kai staurōsate, again uses the emphatic humeis, ‘you yourselves’, as in 18:31, and egō gar ouch heuriskō en autō aitian repeats his verdict of 18:38 and 19:4. The accusers' answer uses opheilei apothanein, ‘he ought to die’, where opheilō expresses obligation under law. Hoti huion theou heauton epoiēsen, ‘because he made himself Son of God’, uses the same reflexive idea as 5:18 and 10:33, where the charge was that he made himself equal with God. Huion theou has no article, but a predicate noun placed before its verb is often definite in Greek, and the charge plainly concerns a unique claim.",
+      "words": ["G0749", "G5257", "G2905", "G4717", "G0156", "G3551", "G3784", "G0599", "G5207", "G2316", "G1438"],
+      "history": "The law in view is Leviticus 24:16, which prescribes death by stoning for anyone who blasphemes the name of the LORD. The Mishnah later defines blasphemy narrowly as pronouncing the divine name itself (m. Sanhedrin 7:5), but whether that narrow definition was in force in the first century is doubtful, and Jewish sources of the period show broader ideas of insulting God's honor. Pilate, a Roman, would have heard ‘son of god’ in a different key: Augustus had styled himself divi filius, son of the deified Julius, and Greek stories told of heroes born of gods.",
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "The accusers state as a crime what the Gospel confesses as the truth: Jesus is the Son of God, not by self-promotion but because he came from the Father (5:19-23, 10:36). The charge that condemns him names the identity that saves."
+        }
+      ],
+      "parallels": ["Mark 15:13-14", "Matthew 27:22-23", "Luke 23:21-23"],
+      "refs": ["Leviticus 24:16", "John 5:18", "John 10:33", "John 10:36", "Mark 14:61-64"]
+    },
+    {
+      "v": "8-9",
+      "context": "The new charge frightens Pilate. He goes back inside and asks Jesus the Gospel's deepest question, where he comes from. Jesus gives no answer. Throughout John people have argued over Jesus' origin (7:27-29, 8:14, 9:29-30); the reader knows he is from the Father, and Pilate is not told.",
+      "grammar": "Mallon ephobēthē is usually translated ‘he was even more afraid’, but John has not said that Pilate was afraid before. Mallon can mean ‘more’ or ‘rather’, and some grammarians take it as elative, ‘he became very much afraid’. Either way the fear is new in the narrative and caused by ‘this word’, touton ton logon, the claim to be Son of God. Pothen ei su; ‘Where are you from?’, puts su last for emphasis. Apokrisin ouk edōken autō, ‘he did not give him an answer’, is the only silence of Jesus in John's account, where the Synoptics stress his silence more.",
+      "words": ["G0191", "G3056", "G3123G", "G5399", "G4232", "G4159", "G0612", "G1325"],
+      "history": "Matthew alone tells that Pilate's wife sent him word during the trial not to have anything to do with that righteous man, because of a dream (Matthew 27:19). John's detail of Pilate's fear is independent, but both accounts present a governor unsettled by more than politics. Romans took omens and dreams seriously, and a claim of divine sonship could awaken superstitious unease in a man whose own coins carried the augur's staff.",
+      "refs": ["John 7:27-29", "John 8:14", "Isaiah 53:7", "Matthew 27:19", "Mark 15:5"]
+    },
+    {
+      "v": "10-11",
+      "context": "Pilate presses Jesus with the fact of Roman power: he can release or crucify. Jesus answers that Pilate's power over him has been given from above, and that the one who handed him over bears the greater sin. The prisoner defines the limits of the judge's authority.",
+      "grammar": "Emoi ou laleis; ‘To me you do not speak?’, puts emoi first: Pilate is offended that his authority is ignored. He claims exousian... apolusai and exousian... staurōsai, authority to release and to crucify, in parallel phrases. Jesus answers with a contrary-to-fact condition: ouk eiches exousian kat' emou oudemian ei mē ēn dedomenon soi anōthen, ‘you would have no authority over me at all unless it had been given to you from above’. The participle dedomenon is neuter, not feminine to agree with exousia, which suggests that what was ‘given’ is the whole situation or arrangement, not only Pilate's office. Dia touto, ‘for this reason’, then introduces ho paradous me soi meizona hamartian echei, ‘the one who handed me over to you has greater sin’. The comparative implies that Pilate's sin is real, only lesser.",
+      "words": ["G2980", "G6063", "G1849", "G0630G", "G4717", "G2192", "G1325", "G0509", "G3860", "G3173", "G0266"],
+      "theology": [
+        {
+          "id": "state",
+          "note": "Political authority is real and derived. Pilate's power to release or crucify is given from above, which both limits it and makes him answerable for its use. Paul's teaching that the authorities are instituted by God (Romans 13:1) has here its sober counterpart: God-given authority can be used to condemn the innocent, and it is not excused for that."
+        },
+        {
+          "id": "sovereignty",
+          "note": "Even Rome's power over Jesus falls within what God has given. Acts 4:27-28 makes the same point about Herod and Pilate, who did what God's hand had predestined, without lessening their guilt."
+        }
+      ],
+      "text": "Who is ‘the one who handed me over’ is debated. Most commentators think of Caiaphas, who delivered Jesus to Pilate (18:28-30, 18:35), since the saying compares responsibility within the trial; others think of Judas, because the participle ho paradidous has been his title throughout (6:64, 13:11, 18:2, 18:5). Some take the singular to stand for the Jewish authorities as a body.",
+      "refs": ["Romans 13:1", "Acts 4:27-28", "John 10:18", "Daniel 4:17", "Acts 2:23"]
+    },
+    {
+      "v": "12",
+      "context": "From this point Pilate keeps trying to release Jesus, but the accusers find the lever that moves him: to release a man who calls himself king is to be no friend of Caesar. The religious charge has failed to move him, so they return to politics and aim it at Pilate himself.",
+      "grammar": "Ek toutou can mean ‘from then on’ or ‘because of this’, and both fit: after Jesus' answer, and because of it, Pilate seeks to release him. Ezētei, ‘he was seeking’, is an imperfect of attempted action, often called conative: he kept trying. The accusers' cry has two parts: a conditional threat, ean touton apolusēs, ouk ei philos tou Kaisaros, ‘if you release this man you are not Caesar's friend’, and a general principle, pas ho basilea heauton poiōn antilegei tō Kaisari, ‘everyone who makes himself a king opposes Caesar’. Antilegō, literally ‘speak against’, is used for political opposition and rebellion. Heauton poiōn, ‘making himself’, echoes the charge of verse 7: first he made himself Son of God, now he makes himself king.",
+      "words": ["G2212", "G0630G", "G5384", "G2541J", "G0935", "G1438", "G4160G", "G0483"],
+      "history": "Philokaisar, ‘friend of Caesar’, appears as a title on coins of client rulers loyal to Rome, among them Herod Agrippa I, who ruled Judea from AD 41 to 44. For a Roman governor the phrase amicus Caesaris described standing in the emperor's circle of trust, and to lose it could end a career or a life: under Tiberius prosecutions for maiestas, injury to the majesty of the Roman people and the emperor, were frequent, as Tacitus's Annals record at length. The accusers' threat was that a report to Rome would say Pilate had released a pretender to the throne.",
+      "theology": [
+        {
+          "id": "state",
+          "note": "Pilate's fear of Caesar outweighs his judgment that Jesus is innocent. The verse shows how political power, even when it recognizes the right, can be pushed into injustice by fear of losing position."
+        }
+      ],
+      "refs": ["John 12:42-43", "Acts 17:7", "Luke 23:2", "Proverbs 29:25"]
+    },
+    {
+      "v": "13",
+      "context": "Pilate brings Jesus out and takes his place on the judgment seat, at a place John names in two languages, the Stone Pavement and Gabbatha. The trial is about to reach its formal verdict. The precise setting marks the moment as a public, official act of the Roman state.",
+      "grammar": "Akousas tōn logōn toutōn, ‘having heard these words’, links the decision directly to the threat of verse 12. Ekathisen epi bēmatos may be read intransitively, ‘he sat down on the judgment seat’, which most translations prefer and which is the verb's usual sense when used without an object; or transitively, ‘he sat him (Jesus) on the judgment seat’, since auton, Jesus, is the object of the preceding verb ēgagen. Both are grammatically possible. The bēma is the raised platform of a magistrate's tribunal (Acts 18:12, 25:6). Lithostrōton is an adjective used as a name, ‘stone-paved’, and Hebraisti de Gabbatha gives the local name, which John does not claim is a translation.",
+      "words": ["G0191", "G3056", "G0071", "G2523", "G0968", "G5117", "G3038", "G1447", "G1042"],
+      "history": "Josephus says that the governor Florus in AD 66 lodged at the palace and set up his tribunal (bēma) in front of it (Jewish War 2.301), which supports locating Pilate's judgment at Herod's palace on the western hill. Excavations from 1999 to 2000 beneath the Ottoman prison called the Kishle, within the citadel near the Jaffa Gate, led by Amit Re'em, uncovered foundations and drains of Herod's palace, and Shimon Gibson has argued that the trial took place in that compound. The paved court traditionally shown to pilgrims at the Ecce Homo convent, on the site of the Antonia fortress, was shown by Pierre Benoit and others to belong to Hadrian's city of the second century. Gabbatha is usually explained as an Aramaic word for a height or raised place.",
+      "refs": ["Acts 18:12", "Acts 25:6", "2 Corinthians 5:10", "Romans 14:10"]
+    },
+    {
+      "v": "14",
+      "context": "John stops to give the date and time: the day of Preparation for the Passover, about the sixth hour, around noon. Then Pilate presents Jesus with a new formula, “Here is your King!” The time note ties the sentence of death to the hour when Passover itself was beginning.",
+      "grammar": "Ēn de paraskeuē tou pascha, ‘it was the Preparation of the Passover’, can be read as ‘the day before the Passover’ (the fourteenth of Nisan, when the lambs were slaughtered) or as ‘Friday of Passover week’, since paraskeuē was the ordinary Jewish Greek word for Friday (verses 31 and 42; Mark 15:42). The genitive tou pascha favors the first to many readers, because it defines what is being prepared; those who harmonize John with the Synoptics favor the second. Hōra ēn hōs hektē, ‘it was about the sixth hour’, uses hōs, ‘about’, a reminder that ancient time notes were approximate. Ide ho basileus humōn, ‘Look, your king’, uses the interjection ide, as in verse 4, and the possessive humōn presses the title on the accusers.",
+      "words": ["G3904", "G3957", "G5610", "G5613", "G1623", "G2396", "G0935"],
+      "history": "The sixth hour mattered on the eve of Passover. The Mishnah rules that leaven must be burned at the beginning of the sixth hour of the fourteenth of Nisan (m. Pesachim 1:4), and it says that on that day the afternoon offering was moved earlier so that the Passover lambs could be slaughtered after it (m. Pesachim 5:1). At the hour when the city was clearing out leaven and preparing to slaughter the lambs, Pilate gives his sentence on the one John called the Lamb of God (1:29).",
+      "text": "Mark says Jesus was crucified at the third hour (Mark 15:25), which seems to conflict with a sentence still being given about the sixth. A few manuscripts of John, among them Codex Regius (L), Codex Delta, and a corrector of Sinaiticus, read ‘third hour’ here; ancient writers, among them Eusebius, suggested that an early copyist had confused the Greek numerals for three and six. Nearly all manuscripts and all modern editions read the sixth hour. Other explanations are that both writers reckoned by three-hour blocks without clocks, so that mid-morning and midday shade into each other; that John counted from midnight, as B. F. Westcott argued, though there is little evidence for that reckoning in civil use; or that John's timing reflects his Passover theology.",
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "John places the sentence at the hour when the Passover proper began and the lambs were about to be slaughtered. Whatever the harmonization of the calendars, John wants his reader to see Jesus' death as the Passover sacrifice that frees God's people (1 Corinthians 5:7)."
+        }
+      ],
+      "parallels": ["Mark 15:25", "Mark 15:42", "Matthew 27:62", "Luke 23:54"],
+      "refs": ["John 1:29", "John 18:28", "John 19:31", "1 Corinthians 5:7", "Exodus 12:6"]
+    },
+    {
+      "v": "15-16",
+      "context": "The crowd's answer is a cry to take him away and crucify him. Pilate asks whether he should crucify their king, and the chief priests reply, “We have no king but Caesar.” Pilate hands Jesus over to be crucified. The trial ends with Israel's leaders confessing Caesar as their only king.",
+      "grammar": "Aron aron, ‘take away, take away’, is the aorist imperative of airō, ‘to lift, take away’, the verb John the Baptist used of the Lamb of God who ‘takes away’ the sin of the world (1:29, ho airōn). The crowd uses the same verb to demand that he be removed. Ton basilea humōn staurōsō; is a deliberative subjunctive, ‘Shall I crucify your king?’, with ton basilea humōn placed first for sarcasm. The chief priests answer with ouk echomen basilea ei mē Kaisara, ‘we have no king except Caesar’. In verse 16 paredōken auton autois, ‘he handed him over to them’, is grammatically ‘to the chief priests’, though Roman soldiers carry out the crucifixion (verse 23); John's phrasing, like Luke 23:25, lays the moral weight on those who demanded it.",
+      "words": ["G2905", "G0142", "G4717", "G0935", "G0749", "G2192", "G2541J", "G3860", "G3880"],
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "Israel's Scriptures confess the LORD as Israel's king (Judges 8:23, 1 Samuel 8:7, Psalm 47:7). The chief priests' cry is a denial of that confession for the sake of a political settlement. John does not say it of the Jewish people as a whole; he says it of the leaders at this moment, and the choice it exposes, a lesser king preferred to God, is one every reader can make."
+        },
+        {
+          "id": "atonement",
+          "note": "The crowd's ‘take him away’ uses the verb of 1:29. Unknowingly they ask for the removal of the one who removes the world's sin, and he is taken away so that sin may be."
+        }
+      ],
+      "text": "Some commentators have heard behind the priests' words the confession, later sung at the Passover Seder in the prayer called Nishmat, that apart from God Israel has no king. The prayer is ancient, but its form in the first century is uncertain, so the contrast is best treated as an echo readers may hear rather than an allusion John intended.",
+      "parallels": ["Mark 15:13-15", "Matthew 27:22-26", "Luke 23:21-25"],
+      "refs": ["John 1:29", "Judges 8:23", "1 Samuel 8:7", "Luke 23:25", "Acts 3:13-15"]
+    },
+    {
+      "v": "17-18",
+      "context": "Jesus goes out carrying his own cross to the Place of the Skull, Golgotha, and is crucified there between two others. John tells the crucifixion itself in a single clause and does not mention Simon of Cyrene. The emphasis falls on Jesus bearing the cross himself and on his place in the middle.",
+      "grammar": "Bastazōn heautō ton stauron, ‘carrying the cross for himself’, uses the dative of the reflexive pronoun, which stresses that he carried it by himself. Bastazō, ‘to bear’, is the verb Jesus used in 16:12 of what the disciples could not yet bear. Exēlthen, ‘he went out’, implies leaving the city, as Hebrews 13:12 stresses. The name is given twice: eis ton legomenon kraniou topon, ‘to the place called of a skull’, and ho legetai Hebraisti Golgotha, the Aramaic gulgulta, ‘skull’. In verse 18 enteuthen kai enteuthen, ‘from here and from here’, means ‘one on each side’, and meson de ton Iēsoun, ‘and Jesus in the middle’, places him at the center of the scene. John calls the two only ‘others’, where Mark calls them lēstai (Mark 15:27).",
+      "words": ["G0941", "G1438", "G4716", "G1831", "G2898", "G5117", "G1447", "G1115", "G4717", "G1782", "G3319"],
+      "history": "Why the place was called Skull is unknown; a rounded outcrop of rock is a common guess. Origen reported a tradition that Adam was buried at the place where Christ was crucified (Commentary on Matthew, on 27:33), which is why medieval paintings show a skull at the foot of the cross. John's silence about Simon of Cyrene has been linked to a later heresy: Irenaeus reports that the second-century teacher Basilides claimed Simon was crucified in Jesus' place while Jesus stood by and laughed (Against Heresies 1.24.4). John wrote before Basilides, but his insistence that Jesus carried the cross himself shuts the door on any such exchange.",
+      "ot": [
+        {
+          "ref": "Genesis 22:6",
+          "note": "Abraham laid the wood for the burnt offering on his son Isaac, who carried it up the mountain where he was to be offered. John does not cite the passage, and the link is typological rather than predictive. But from the second century, Christian writers such as Melito of Sardis read Isaac carrying the wood as a picture of Christ carrying his cross, the beloved son going up to the place of sacrifice, and John's detail that Jesus carried the cross himself invites the comparison."
+        }
+      ],
+      "parallels": ["Mark 15:20-22", "Mark 15:27", "Matthew 27:31-33", "Luke 23:26-33"],
+      "refs": ["Hebrews 13:12", "Genesis 22:6", "Isaiah 53:12", "Luke 9:23"]
+    },
+    {
+      "v": "19-20",
+      "context": "Pilate writes a notice and has it fixed to the cross: Jesus the Nazarene, the King of the Jews. Many read it, because the place is near the city and the notice is in three languages. The charge meant to shame becomes a proclamation to the whole world.",
+      "grammar": "Egrapsen de kai titlon ho Pilatos, ‘and Pilate also wrote a notice’, uses titlos, a Greek spelling of the Latin titulus, the placard stating the charge; only John uses the Latin word. Ēn de gegrammenon, ‘it was written’, is a periphrastic pluperfect: the text stood written. The title, Iēsous ho Nazōraios ho basileus tōn Ioudaiōn, is the longest of the four Gospel versions and the only one with the name of Nazareth. Hebraisti, Rhōmaisti, Hellēnisti, ‘in Hebrew, in Latin, in Greek’, are three adverbs formed on the same pattern, and Hebraisti here probably means Aramaic, the spoken language of Judea. Engus ēn ho topos tēs poleōs, ‘the place was near the city’, explains why so many read it.",
+      "words": ["G1125", "G5102", "G4716", "G3480", "G0935", "G0314", "G1451", "G4172", "G1447", "G4515", "G1676"],
+      "history": "The Latin abbreviation INRI, familiar from crucifixes, stands for the Vulgate's wording, Iesus Nazarenus Rex Iudaeorum. A wooden fragment venerated in Rome's church of Santa Croce in Gerusalemme as part of the title has been claimed to be the original; radiocarbon dating published in 2002 placed the wood in the tenth to twelfth centuries. Trilingual public notices were a feature of the eastern empire, and in Jerusalem the three languages matched the city's population: Aramaic or Hebrew for Judeans, Greek for the wider Jewish and Gentile world, and Latin for Roman administration.",
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "Pilate means the title as a warning to would-be rebels; John presents it as a proclamation in the languages of the known world. The kingship of Jesus is announced publicly, over the cross, to everyone who passes by."
+        }
+      ],
+      "parallels": ["Mark 15:26", "Matthew 27:37", "Luke 23:38"],
+      "refs": ["John 12:32", "John 1:45-46", "Philippians 2:9-11", "Hebrews 13:12"]
+    },
+    {
+      "v": "21-22",
+      "context": "The chief priests object to the wording: the notice should say only that Jesus claimed to be king. Pilate refuses with a curt reply. The man who gave way on the verdict will not give way on the placard, and John lets the Roman governor fix in writing what the priests denied.",
+      "grammar": "Mē graphe, ‘do not write’, is a present imperative with mē, which can mean ‘do not keep it written’ or ‘stop writing that’, since the notice is already up. The priests want to change a statement of fact into a report of a claim: ekeinos eipen, basileus eimi tōn Ioudaiōn, ‘that man said, I am King of the Jews’. Pilate's reply is two perfects of graphō, ho gegrapha, gegrapha, ‘what I have written, I have written’. The Greek perfect presents an act whose result stands, and the doubled form is emphatic: the inscription stays as it is.",
+      "words": ["G0749", "G4091", "G1125", "G0935", "G1510", "G0611"],
+      "theology": [
+        {
+          "id": "prophecy",
+          "note": "Like Caiaphas in 11:49-52, Pilate says more than he knows. Neither the priests' protest nor Pilate's contempt can alter what the notice proclaims, and John treats the unchangeable writing as a kind of unwitting testimony that stands over the cross."
+        }
+      ],
+      "refs": ["John 11:49-52", "John 18:37", "Esther 8:8", "Daniel 6:8"]
+    },
+    {
+      "v": "23-24",
+      "context": "The four soldiers of the execution squad divide Jesus' clothes, taking a share each, but they do not tear the seamless tunic and cast lots for it instead. John says this fulfilled Psalm 22:18 and closes the scene with the words ‘so the soldiers did these things’, a hinge to the next scene, where the women stand by the cross.",
+      "grammar": "Ta himatia autou, ‘his garments’, in the plural means the outer clothing, cloak, belt, sandals, and head covering, divided into tessara merē, ‘four parts’. The chitōn, the tunic worn next to the skin, was araphos, ‘seamless’, ek tōn anōthen huphantos di' holou, ‘woven from the top through the whole’; anōthen is the word for ‘from above’ in verse 11 and 3:3. Mē schisōmen auton, ‘let us not tear it’, uses schizō, the root of schisma, the word John uses for the divisions among people over Jesus (7:43, 9:16, 10:19). Lachōmen peri autou, ‘let us cast lots for it’, is from lanchanō, ‘to obtain by lot’. Hoi men oun stratiōtai tauta epoiēsan, ‘so the soldiers did these things’, uses men, which looks forward to the de of verse 25: on the one hand the soldiers, on the other the women.",
+      "words": ["G4757", "G2440", "G5064", "G3313", "G5509", "G0729", "G0509", "G5307", "G4977", "G2975", "G4137", "G1266", "G2441", "G2819", "G3303"],
+      "ot": [
+        {
+          "ref": "Psalm 22:18",
+          "note": "The Hebrew reads yechalleqū vegaday lahem ve‘al levushi yappilu goral, ‘they divide my garments among them, and for my clothing they cast lots’, two parallel lines saying one thing twice in the psalm of the righteous sufferer who cries ‘My God, my God, why have You forsaken me?’ (Psalm 22:1). John quotes the Septuagint (Psalm 21:19 in its numbering) word for word. Where Hebrew poetry uses parallel lines for one act, John sees two: the garments divided, and the one tunic assigned by lot. Mark 15:24, Matthew 27:35, and Luke 23:34 echo the psalm's wording without a formula of fulfillment; John alone quotes it as Scripture fulfilled, and the psalm's turn to praise and to the nations remembering the LORD (Psalm 22:22-31) stands behind the whole scene."
+        }
+      ],
+      "history": "Josephus says the high priest's robe was woven in one piece rather than sewn from two (Antiquities 3.161), and Philo made the high priest's garments that are not torn an image of the divine Word holding the world together (On Flight and Finding 110-112). Some interpreters therefore see a hint of Christ's priesthood in the tunic; others think John's interest is only in the fulfillment of the psalm. Cyprian later made the untorn tunic a figure of the church's unity (On the Unity of the Church 7).",
+      "theology": [
+        {
+          "id": "prophecy",
+          "note": "John sees even the soldiers' gambling as the fulfillment of Scripture. The psalm of the righteous sufferer is not merely illustrated but enacted in its details, and the one who prays its opening cry in the other Gospels is shown to be the one of whom it spoke."
+        },
+        {
+          "id": "offices",
+          "note": "If the seamless tunic echoes the high priest's robe, Jesus dies as priest as well as king, offering himself. John leaves the priestly reading implicit, and it should be taught as a possible echo rather than a stated claim."
+        }
+      ],
+      "parallels": ["Mark 15:24", "Matthew 27:35", "Luke 23:34"],
+      "refs": ["Psalm 22:18", "Psalm 22:1", "Exodus 28:31-32", "Hebrews 4:14"]
+    },
+    {
+      "v": "25",
+      "context": "In contrast to the soldiers, a group of women stands by the cross: Jesus' mother, her sister, Mary the wife of Clopas, and Mary Magdalene. John places them near enough for Jesus to speak to them, where the Synoptics have the women watching from a distance.",
+      "grammar": "Heistēkeisan de para tō staurō, ‘and there were standing beside the cross’, answers the men oun of verse 24 with de: the soldiers did their work, and the women stood. The pluperfect of histēmi describes a settled position. Para tō staurō, ‘beside the cross’, differs from Mark's apo makrothen, ‘from a distance’ (Mark 15:40), perhaps because the women moved closer at different times. The list is punctuated only by kai, ‘and’, so it can be read as four women (mother, her sister, Mary of Clopas, Mary Magdalene) or three (with ‘her sister’ standing in apposition to ‘Mary of Clopas’). Two sisters both named Mary is unlikely, which is why most commentators count four.",
+      "words": ["G2476", "G3844", "G4716", "G3384", "G0079", "G3137K", "G2832", "G3137I", "G3094"],
+      "history": "If there were four women, Jesus' mother's sister may be the woman Mark calls Salome (Mark 15:40) and Matthew calls the mother of the sons of Zebedee (Matthew 27:56); on that reconstruction, proposed by several nineteenth-century commentators and still held by some, James and John would be Jesus' cousins. The identification is possible but unproven. Clopas may be the Cleopas of Luke 24:18 or a different man; Hegesippus, as quoted by Eusebius (Church History 3.11), says Clopas was the brother of Joseph and that his son Symeon led the Jerusalem church after James.",
+      "parallels": ["Mark 15:40-41", "Matthew 27:55-56", "Luke 23:49"],
+      "refs": ["Mark 15:40", "Luke 8:2-3", "Luke 24:18", "Luke 2:35"]
+    },
+    {
+      "v": "26-27",
+      "context": "Seeing his mother and the disciple he loved, Jesus gives them to each other: to her, “Woman, here is your son”; to him, “Here is your mother.” From that hour the disciple takes her into his home. Jesus' mother appears in John only at Cana and at the cross, and both times he calls her ‘Woman’ and speaks of the hour (2:4).",
+      "grammar": "Gunai, ‘Woman’, is a respectful form of address in Greek, used by Jesus to the Samaritan woman (4:21) and to Mary Magdalene (20:15), but it is unusual for a son addressing his mother, and in John it sets the relationship on a new footing. Ide ho huios sou and ide hē mētēr sou, ‘look, your son’ and ‘look, your mother’, are a declaration formula, the kind of words that establish a relationship. Ap' ekeinēs tēs hōras, ‘from that hour’, recalls ‘My hour has not yet come’ at Cana (2:4): the hour has come. Elaben ho mathētēs autēn eis ta idia, ‘the disciple took her into his own’, uses eis ta idia, ‘to his own things’, that is, his home, the phrase used in 1:11 for the Word coming to his own, who did not receive him. Here the disciple receives.",
+      "words": ["G0025", "G3101", "G3936", "G3384", "G1135G", "G2396", "G5207", "G5610", "G2983", "G2398"],
+      "theology": [
+        {
+          "id": "church",
+          "note": "From the cross Jesus binds together his mother and his disciple as mother and son. The scene is filial care, and it is also the first household of the new family formed by his death, those born of God (1:12-13) who receive one another. Catholic teaching also finds here Mary given as mother to the church (Lumen Gentium 58); Protestant readers generally stress Jesus' care and the new community of disciples."
+        },
+        {
+          "id": "family",
+          "note": "In his dying hour Jesus honors his mother by providing for her future, fulfilling the command to honor father and mother at the point of greatest cost. Loyalty to his mission does not cancel duty to family; it reshapes it within the family of faith."
+        }
+      ],
+      "history": "Origen, in the opening book of his Commentary on John, wrote that no one can grasp the meaning of this Gospel who has not leaned on Jesus' breast and received Mary from Jesus to be his mother also, making the beloved disciple's two privileges the conditions for understanding the book. Later tradition placed Mary with John at Ephesus; another tradition places her death in Jerusalem. The Gospel itself says only that he took her into his home.",
+      "refs": ["John 2:4", "John 1:11-12", "Mark 3:33-35", "Exodus 20:12", "Acts 1:14"]
+    },
+    {
+      "v": "28-29",
+      "context": "Knowing that everything is now finished, Jesus says, “I am thirsty,” and so fulfills Scripture. A jar of sour wine stands nearby, and they lift a sponge soaked in it to his mouth on a stalk of hyssop. The one who offered living water (4:10-14, 7:37-38) dies thirsty.",
+      "grammar": "Eidōs ho Iēsous hoti ēdē panta tetelestai, ‘Jesus, knowing that already all things had been completed’, uses the same perfect tetelestai that Jesus will speak in verse 30. The purpose clause hina teleiōthē hē graphē, ‘so that the Scripture might be completed’, uses teleioō, ‘to bring to completion’, instead of John's usual plēroō, ‘to fulfill’, matching the vocabulary of finishing. Interpreters debate whether the clause goes with what precedes (all was completed so that Scripture might be fulfilled) or with what follows (he said ‘I thirst’ in order to fulfill Scripture); most modern translations take it with ‘I thirst’. Dipsō is a single word, ‘I thirst’. In verse 29 hussōpō perithentes, ‘putting it on hyssop’, names the plant used to apply the Passover blood (Exodus 12:22).",
+      "words": ["G6063", "G2235", "G5055", "G5048", "G1124", "G1372", "G4632", "G3690", "G4699", "G5301", "G4374", "G4750"],
+      "ot": [
+        {
+          "ref": "Psalm 69:21",
+          "note": "The Hebrew reads that they gave me poison for food, and for my thirst they gave me vinegar (chomets) to drink. The Septuagint (Psalm 68:22) has eis tēn dipsan mou epotisan me oxos, ‘for my thirst they gave me sour wine’, using oxos, the word John uses for the wine in the jar. The psalm is the lament of a righteous man hated without cause, a psalm John has already quoted twice (2:17, 15:25). Psalm 22:15, where the sufferer's tongue sticks to his jaws, stands behind the thirst as well. John does not specify which text he means by ‘the Scripture’; the offer of sour wine in the next verse matches Psalm 69 most closely."
+        }
+      ],
+      "theology": [
+        {
+          "id": "prophecy",
+          "note": "Jesus acts to complete Scripture with full knowledge. John presents the psalms of the suffering righteous one as finding their completion in Jesus' last hour, not by coincidence but because he is the one of whom they speak."
+        },
+        {
+          "id": "atonement",
+          "note": "Hyssop, which applied the blood of the Passover lamb to the doorposts in Egypt (Exodus 12:22), lifts the wine to the lips of the Lamb of God. The detail is small and deliberate: John keeps Passover in the reader's mind at the moment of death."
+        }
+      ],
+      "parallels": ["Mark 15:36", "Matthew 27:48", "Luke 23:36"],
+      "refs": ["Psalm 22:15", "John 4:13-14", "John 7:37-38", "Exodus 12:22"]
+    },
+    {
+      "v": "30",
+      "context": "Jesus receives the wine and speaks one word, “It is finished.” Then he bows his head and hands over his spirit. John records no loud cry and no darkness; the last act is Jesus' own.",
+      "grammar": "Tetelestai is the perfect passive of teleō, ‘to finish, complete, accomplish’: the work stands done, with lasting effect. It picks up 4:34 (to finish his work), 17:4 (having finished the work you gave me), and 13:1 (he loved them eis telos, to the end). The order of the last two clauses is striking: klinas tēn kephalēn paredōken to pneuma, ‘having bowed his head, he handed over his spirit’. The head is bowed first, then the spirit given, as though the death were a deliberate act; the same phrase, to lay down the head (tēn kephalēn klinē), is used in Matthew 8:20 and Luke 9:58, where the Son of Man has nowhere to lay his head. Paredōken, ‘he handed over’, is the passion's verb for betrayal and delivery (18:2, 18:30, 19:16), now used of Jesus' own giving.",
+      "words": ["G2983", "G3690", "G5055", "G2827", "G2776", "G3860", "G4151G"],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The work the Father gave the Son is complete, and the perfect tense says it remains complete. Nothing is left undone that must be added for sin to be taken away; the Reformers made this word central to their teaching that Christ's sacrifice was once for all (Hebrews 10:12-14)."
+        },
+        {
+          "id": "glory",
+          "note": "In John the cross is the hour of glory (12:23, 17:1). Jesus dies not as a defeated victim but as the one who completes his mission and gives up his life by his own authority (10:18); the glory is seen in the finished work."
+        }
+      ],
+      "text": "Some interpreters have heard a second meaning in paredōken to pneuma, that Jesus ‘handed over the Spirit’, since the Spirit could not be given until Jesus was glorified (7:39) and he will breathe the Spirit on the disciples in 20:22. The phrase most naturally means that he gave up his life, and English versions render it that way (‘yielded up His spirit’, ‘gave up his spirit’); the second sense can be suggested but not built on.",
+      "parallels": ["Mark 15:37", "Matthew 27:50", "Luke 23:46"],
+      "refs": ["John 17:4", "John 10:18", "John 4:34", "Hebrews 10:12-14", "Matthew 8:20"]
+    },
+    {
+      "v": "31-33",
+      "context": "Because it is the day of Preparation and the coming Sabbath is a great one, the authorities ask Pilate to have the legs of the crucified broken so that the bodies can be taken down before sundown. The soldiers break the legs of the two others, but find Jesus already dead and leave his legs unbroken.",
+      "grammar": "Ēn gar megalē hē hēmera ekeinou tou sabbatou, ‘for that Sabbath day was great’, explains the urgency: the Sabbath coincided with the first day of the festival. Hina mē meinē epi tou staurou ta sōmata, ‘so that the bodies might not remain on the cross’, uses menō, ‘remain’, in its plain sense. Hina kateagōsin autōn ta skelē kai arthōsin, ‘that their legs be broken and they be taken away’, uses two aorist passive subjunctives; kateagōsin is from katagnumi, ‘to break’, the same verb used of the other two in verse 32 (kateaxan). In verse 33 idontes ēdē auton tethnēkota, ‘seeing him already dead’, uses a perfect participle, ‘being in the state of death’, an emphatic confirmation that he had truly died.",
+      "words": ["G3904", "G3306", "G4716", "G4983", "G4521", "G3173", "G2608", "G4628", "G0142", "G4957", "G2348"],
+      "history": "Breaking the legs, crurifragium in Latin, hastened death by making it impossible for the victim to push up to breathe. The only certain skeleton of a crucified man from the region was found in 1968 at Giv'at ha-Mivtar in north Jerusalem, where Vassilios Tzaferis excavated a family tomb. An ossuary inscribed with the name Yehohanan held a right heel bone pierced by an iron nail about 11.5 centimeters long, with fragments of olive wood still attached between the nail's head and the bone. The first study, by Nicu Haas (1970), reported that the legs had been broken; a reexamination by Joseph Zias and Eliezer Sekeles (Israel Exploration Journal, 1985) found no clear evidence of that, and concluded that the arms were probably tied rather than nailed. The burial shows that a crucified man in first-century Jerusalem could be laid in a family tomb, as Deuteronomy 21:22-23 required.",
+      "theology": [
+        {
+          "id": "state",
+          "note": "The authorities' request combines Roman procedure and Jewish law. Even in executing, the state is bound by a higher command about the dignity of the dead, and John notes how that command shaped the end of the day."
+        }
+      ],
+      "parallels": ["Mark 15:42-44", "Matthew 27:62", "Luke 23:54"],
+      "refs": ["Deuteronomy 21:22-23", "Exodus 12:16", "Leviticus 23:6-7", "Mark 15:44"]
+    },
+    {
+      "v": "34-35",
+      "context": "Instead of breaking his legs, a soldier pierces Jesus' side with a spear, and at once blood and water come out. The narrator steps out of the story to insist that this is eyewitness testimony, and that it is given so that the reader may believe.",
+      "grammar": "Logchē autou tēn pleuran enuxen, ‘with a spear he pierced his side’, uses nussō, ‘to prick’ or ‘stab’, and pleura, ‘side’; the Greek of Genesis 2:21-22 uses pleura for the ‘rib’ taken from the sleeping Adam. The Latin Vulgate reads aperuit, ‘opened’, which reflects the reading or misreading ēnoixen for enuxen, and Augustine built on that word. Exēlthen euthus haima kai hudōr, ‘there came out immediately blood and water’, puts blood first. In verse 35 ho heōrakōs memarturēken, ‘the one who has seen has testified’, uses two perfects: the seeing and the witness both stand. Kai ekeinos oiden, ‘and that one knows’, is ambiguous: ekeinos may be the witness himself, speaking of himself in the third person, or Christ (or God) guaranteeing his testimony, as some older interpreters held. Hina kai humeis pisteuēte, ‘so that you also may believe’, is the Gospel's purpose clause (20:31).",
+      "words": ["G4757", "G3057", "G4125", "G3572", "G2112", "G0129G", "G5204", "G3708", "G3140", "G0228", "G3141", "G6063", "G0227", "G4100"],
+      "history": "The blood and water have been read in several ways since the second century. Origen, answering the pagan Celsus, who mocked Christians by asking whether ichor, the fluid of the gods in Homer, flowed from Jesus, replied that blood does not flow from dead bodies and that the flow was a miracle (Against Celsus 2.36). John Chrysostom (third baptismal instruction) and Augustine (Tractates on John 120) saw baptism and the Eucharist flowing from the side, and the church born from Christ as Eve was from Adam's side. Others, reading with 1 John 5:6, see testimony against those who denied that Christ truly died in the flesh. Physicians have proposed natural explanations, from William Stroud's A Treatise on the Physical Cause of the Death of Christ (1847), which argued for a ruptured heart, to an article in the Journal of the American Medical Association (1986) suggesting fluid around the heart and lungs; these remain conjectures, and John's own emphasis is on testimony.",
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The pierced side gives the Gospel's clearest witness that Jesus truly died, and the flow of blood and water points to what his death gives: cleansing and life, the streams of living water promised in 7:38-39 and the fountain for sin of Zechariah 13:1."
+        },
+        {
+          "id": "sacraments",
+          "note": "From the fathers onward, many churches have seen baptism (water) and the Lord's Supper (blood) flowing from the side of Christ. The reading is typological, not stated by John, and traditions weigh it differently; what the verse itself affirms is that the church's life flows from the death of Christ."
+        }
+      ],
+      "text": "At the end of verse 35 the manuscripts divide between pisteuēte, a present subjunctive, ‘that you may go on believing’, and pisteusēte, an aorist, ‘that you may come to believe’. The same division occurs at 20:31. The present is found in the first hand of Sinaiticus and in Vaticanus and is printed by Westcott and Hort and the SBL edition; the Nestle-Aland text prints the aorist with the sigma in brackets. Both are natural Greek for faith begun and continued.",
+      "refs": ["1 John 5:6-8", "John 7:38-39", "Zechariah 13:1", "Genesis 2:21-22", "John 21:24"]
+    },
+    {
+      "v": "36-37",
+      "context": "John names two Scriptures fulfilled in what the soldiers did and did not do. His bones were not broken, as with the Passover lamb, and he was pierced, as Zechariah said of the one on whom Jerusalem will look in mourning. The two citations close the account of the death.",
+      "grammar": "Egeneto gar tauta hina hē graphē plērōthē, ‘for these things happened so that the Scripture might be fulfilled’, refers to both events, the legs not broken and the side pierced. Ostoun ou suntribēsetai autou, ‘not a bone of his will be broken’, uses a future passive; the singular ostoun, ‘bone’, matches the Passover law (Exodus 12:46), while the passive verb matches Psalm 34:20. The second citation is introduced with palin hetera graphē legei, ‘again another Scripture says’. Opsontai eis hon exekentēsan, ‘they will look on him whom they pierced’, uses opsomai, the future of horaō, and ekkenteō, ‘to pierce through’.",
+      "words": ["G1096", "G1124", "G4137", "G3747", "G4937", "G2087", "G3700G", "G1574"],
+      "ot": [
+        {
+          "ref": "Exodus 12:46",
+          "note": "The Passover law commands that the lamb be eaten in one house and that no bone of it be broken; the Septuagint has kai ostoun ou suntripsete ap' autou, ‘you shall not break a bone of it’, and Numbers 9:12 repeats the rule. John's wording blends this with Psalm 34:20 (Psalm 33:21 in the Greek), where the LORD guards all the bones of the righteous and not one of them is broken (suntribēsetai, the same passive form John uses). The psalm speaks of the righteous sufferer, the law of the Passover lamb; John draws both into one saying, so that Jesus dies as the righteous one God protects and as the Lamb of God (1:29)."
+        },
+        {
+          "ref": "Zechariah 12:10",
+          "note": "In the Hebrew the LORD promises to pour on the house of David and the inhabitants of Jerusalem a spirit of grace and supplication, and they will look to me, the one they pierced, and mourn for him as for an only son. The Septuagint read the verb differently and says they will look to me because they mocked (katōrchēsanto). John's opsontai eis hon exekentēsan follows the Hebrew sense, and it agrees with the later Greek versions of Aquila and Theodotion in using ekkenteō. Revelation 1:7 uses the same Greek wording, which suggests a form of the text already familiar in the churches. In Zechariah the looking leads to mourning and, in the next verse of the prophecy, to a fountain opened to cleanse from sin (Zechariah 13:1)."
+        }
+      ],
+      "theology": [
+        {
+          "id": "prophecy",
+          "note": "John sees two strands of Scripture converge in one moment: the Passover lamb whose bones must remain whole, and the pierced one whom Jerusalem will look on with repentance. The soldiers act for their own reasons, and both Scriptures are fulfilled."
+        },
+        {
+          "id": "atonement",
+          "note": "By applying the Passover law to Jesus' body, John makes his death the true Passover sacrifice, the death by which God's people are spared and set free (1 Corinthians 5:7)."
+        }
+      ],
+      "refs": ["Numbers 9:12", "Psalm 34:20", "Revelation 1:7", "Zechariah 13:1", "1 Corinthians 5:7"]
+    },
+    {
+      "v": "38",
+      "context": "Joseph of Arimathea, a disciple of Jesus who had kept it secret for fear of the Jewish authorities, asks Pilate for the body, receives permission, and takes it away. The one who had hidden his faith now makes it public at the moment when association with Jesus is most dangerous.",
+      "grammar": "Meta de tauta, ‘after these things’, marks a new scene. Ōn mathētēs tou Iēsou kekrummenos de dia ton phobon tōn Ioudaiōn, ‘being a disciple of Jesus, but a hidden one because of fear of the Jews’, uses the perfect passive participle kekrummenos, ‘having been hidden’, for a settled condition that is now ending. John has spoken of such people before: many of the authorities believed in Jesus but would not confess it for fear of being put out of the synagogue (12:42-43). Hina arē to sōma, ‘that he might take away the body’, uses airō, and ēren to sōma autou, ‘he took away his body’, repeats it. Epetrepsen ho Pilatos, ‘Pilate permitted it’, is brief; Mark adds that Pilate first confirmed the death with the centurion (Mark 15:44-45).",
+      "words": ["G2065", "G4091", "G2501I", "G0707", "G3101", "G2928", "G5401", "G0142", "G4983", "G2010"],
+      "history": "Arimathea is usually identified with Ramathaim-zophim, Samuel's hometown in the hill country (1 Samuel 1:1), known in the first century as Rathamin (1 Maccabees 11:34). Mark calls Joseph a prominent member of the council (Mark 15:43), Matthew a rich man (Matthew 27:57), and Luke a good and righteous man who had not consented to the council's decision (Luke 23:50-51). John alone calls him a secret disciple. Roman governors could deny burial to the crucified, but Philo mentions that bodies were sometimes given to relatives on festival days (Against Flaccus 83).",
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Joseph's faith had been real but hidden. The death of Jesus, which scattered the open disciples, brings the secret one into the open. John does not scorn his earlier fear; he shows faith growing courage when it matters most."
+        }
+      ],
+      "parallels": ["Mark 15:42-45", "Matthew 27:57-58", "Luke 23:50-52"],
+      "refs": ["John 12:42-43", "John 7:13", "Mark 15:43", "Luke 23:50-51"]
+    },
+    {
+      "v": "39-40",
+      "context": "Nicodemus, who first came to Jesus by night (3:1-2), comes with about a hundred Roman pounds of myrrh and aloes. The two men bind the body in linen cloths with the spices, as Jews prepared their dead. The man who came in darkness now serves openly, and the quantity is lavish, a burial fit for a king.",
+      "grammar": "Ho elthōn pros auton nuktos to prōton, ‘the one who had come to him by night at first’, recalls 3:2 and 7:50 and marks the change. Pherōn migma smurnēs kai aloēs hōs litras hekaton, ‘bringing a mixture of myrrh and aloes, about a hundred litrai’: the litra is the Roman libra, about 327 grams, so the total is roughly 33 kilograms or 72 pounds, which the BSB rounds to about seventy-five pounds. Edēsan auto othoniois meta tōn arōmatōn, ‘they bound it in linen cloths with the spices’, uses deō, ‘to bind’, the verb used of Lazarus bound in grave clothes (11:44). Othonia is a plural of linen cloths or wrappings, where the Synoptics speak of a sindōn, a single linen sheet; the plural may include a sheet and bands. Kathōs ethos estin tois Ioudaiois entaphiazein, ‘as is the custom for the Jews to prepare for burial’, explains the practice for Gentile readers.",
+      "words": ["G3530", "G3571", "G5342", "G3395", "G4666", "G0250", "G3046", "G1540", "G1210", "G3608", "G0759", "G1485", "G1779"],
+      "history": "Large quantities of spices marked royal and honored burials. The Chronicler says King Asa was laid on a bier filled with spices blended by the perfumer's art (2 Chronicles 16:14), Jeremiah promises Zedekiah the burning of spices as for the kings before him (Jeremiah 34:5), and Josephus describes five hundred servants carrying spices at Herod the Great's funeral (Antiquities 17.199). The aloes of the Bible are most likely the fragrant resinous wood called eaglewood, not the medicinal aloe plant; myrrh and aloes together perfume the king's garments in the royal wedding psalm (Psalm 45:8). Mark and Luke say that the women came after the Sabbath with spices to anoint the body (Mark 16:1, Luke 24:1). Some think the hurried Friday burial left the anointing unfinished; others think the Gospels preserve different traditions of the burial.",
+      "theology": [
+        {
+          "id": "offices",
+          "note": "The spices of royal burial complete the chapter's portrait of Jesus as king. He is crowned in mockery, proclaimed over the cross, and buried with a king's honors by a member of the council that condemned him."
+        }
+      ],
+      "text": "In verse 39 the first hand of Codex Sinaiticus and Codex Vaticanus read heligma, ‘a roll’ or ‘package’, instead of migma, ‘a mixture’; the Westcott and Hort edition printed heligma, but most editions and translations read ‘mixture’. Some manuscripts also read hōsei for hōs, both meaning ‘about’.",
+      "parallels": ["Mark 15:46", "Matthew 27:59", "Luke 23:53"],
+      "refs": ["John 3:1-2", "John 7:50-51", "Psalm 45:8", "2 Chronicles 16:14", "John 11:44"]
+    },
+    {
+      "v": "41-42",
+      "context": "Near the place of crucifixion there is a garden, and in it a new tomb where no one had yet been laid. Because the Preparation day is ending and the tomb is close, they lay Jesus there. The chapter ends in stillness, the body in a garden tomb as the Sabbath begins.",
+      "grammar": "Ēn de en tō topō hopou estaurōthē kēpos, ‘there was, in the place where he was crucified, a garden’, puts kēpos at the end for emphasis; the passion that began in a garden (18:1) ends in one. Mnēmeion kainon, ‘a new tomb’, uses kainos, ‘new, unused’, and en hō oudepō oudeis ēn tetheimenos, ‘in which no one had yet been laid’, doubles the negatives for emphasis (oudepō oudeis). The perfect passive participle tetheimenos describes a state: no body had ever lain there, so there could be no confusion later about whose body was missing. Dia tēn paraskeuēn tōn Ioudaiōn, ‘because of the Jewish day of Preparation’, and hoti engus ēn to mnēmeion, ‘because the tomb was near’, give two reasons, time and place, for the choice.",
+      "words": ["G5117", "G4717", "G2779", "G3419", "G2537", "G3764", "G3762", "G5087", "G3904", "G1451"],
+      "history": "The tomb venerated inside the Church of the Holy Sepulchre stands within the small shrine called the Edicule. During its restoration in 2016 and 2017 by a team from the National Technical University of Athens, the marble covering the burial bench was lifted for the first time in centuries, exposing the original limestone bed, and mortar samples from the site were dated to about AD 345, consistent with the account of Constantine's builders uncovering the tomb (Eusebius, Life of Constantine 3.25-40). Martin Biddle's study The Tomb of Christ (1999) traces the tomb's history from Constantine to the present.",
+      "theology": [
+        {
+          "id": "glory",
+          "note": "The Son who was lifted up is laid in the earth, in a new tomb in a garden. John's glory is not interrupted by the burial; the silence of the tomb is the setting in which the first day of the new creation will dawn (20:1)."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Isaiah 53:9",
+          "note": "The Hebrew says of the servant that his grave was assigned with the wicked and with a rich man in his death, though he had done no violence. The Septuagint renders it differently, that the wicked will be given in exchange for his burial and the rich for his death. No Gospel quotes the verse, and John does not allude to it directly, but Christians from early times have seen in the servant's burial with the rich an anticipation of the burial in a rich man's new tomb (Matthew 27:57-60). The link should be taught as a correspondence readers have noticed, not as a fulfillment John claims."
+        }
+      ],
+      "parallels": ["Mark 15:46-47", "Matthew 27:60-61", "Luke 23:53-54"],
+      "refs": ["John 18:1", "John 20:15", "Luke 23:53", "Matthew 27:60", "1 Corinthians 15:3-4"]
+    }
+  ]
+}

@@ -1,0 +1,619 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "John moves the scene from Jerusalem, where chapter 5 ended with the authorities seeking Jesus' life, back to Galilee without explaining the trip. The loose join is one reason Rudolf Bultmann and a few others proposed that chapters 5 and 6 once stood in the reverse order; most interpreters now read the Gospel in its received order, since John often moves from scene to scene with no travel notes.",
+      "grammar": "Meta tauta, ‘after these things’, is John's usual loose link between episodes (3:22, 5:1, 7:1); it marks a new scene, not an exact interval. Apēlthen peran tēs thalassēs means he ‘went away across the sea’, and the sea receives two names in a row, ‘of Galilee, of Tiberias’, the second added as an explanation for readers who knew the lake by the name of its new city.",
+      "words": ["G3326", "G0565", "G4008", "G5085G"],
+      "history": "Luke sets the feeding near Bethsaida (Luke 9:10), a fishing village near where the Jordan enters the lake on the north. Philip the tetrarch, a son of Herod the Great, enlarged it and renamed it Julias in honor of the emperor's family (Josephus, Antiquities 18.28). Its exact site is still argued: excavations at et-Tell, led by Rami Arav, and more recently at el-Araj, led by Mordechai Aviam and R. Steven Notley, each claim it. Philip's territory lay east of the Jordan, so a crossing to ‘the other side’ also took Jesus out of the realm of Herod Antipas, who had executed John the Baptist (Mark 6:14-29).",
+      "parallels": ["Mark 6:30-34", "Matthew 14:13-14", "Luke 9:10-11"],
+      "refs": ["John 5:1", "John 21:1", "Mark 6:14-29"]
+    },
+    {
+      "v": "2-3",
+      "context": "The crowd follows because of the healings, a motive the chapter will test (6:26). Jesus goes up into the hills and sits with his disciples. The Synoptic Gospels say he had compassion on the crowd because they were like sheep without a shepherd (Mark 6:34); John instead stresses what the crowd saw and what it wanted.",
+      "grammar": "The verbs are imperfects: ēkolouthei, ‘was following’, etheōroun, ‘they were watching’, epoiei, ‘he was doing’. John describes a continuing pattern, not a single moment, and it presumes many healings that John has not narrated (he tells only one in Galilee, 4:46-54). Eis to oros, ‘into the mountain’, with the article, usually means the hill country above the lake rather than a named peak. Ekathēto, ‘he sat’, is the posture of a teacher (Matthew 5:1, Luke 4:20), and Jesus goes up and sits as Moses went up the mountain, though John does not press the comparison until the manna appears.",
+      "words": ["G0190", "G2334", "G4592", "G0770H", "G3735", "G2521"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "A crowd that follows because of signs is where the chapter starts, not where it ends. John has already shown that belief resting on signs alone is not yet the trust Jesus looks for (2:23-25), and this chapter will sift such a crowd down to the few who stay for his words."
+        }
+      ],
+      "parallels": ["Mark 6:34", "Matthew 14:14"],
+      "refs": ["John 2:23-25", "Matthew 5:1", "Exodus 19:3"]
+    },
+    {
+      "v": "4",
+      "context": "A one-line note on the calendar sets the key for the whole chapter. Everything that follows, the bread in the wilderness, the sea crossing, the grumbling, and the talk of flesh and blood given for the world, is to be read in the light of Passover.",
+      "grammar": "Ēn de engus to pascha, hē heortē tōn Ioudaiōn, ‘now the Passover was near, the feast of the Jews’. The explanatory phrase ‘the feast of the Jews’ appears with each festival John names (2:13, 5:1, 7:2, 11:55), a sign that he writes for readers who include people outside Judaism and need the festivals placed. The word engus, ‘near’, recurs at 2:13 and 11:55, so that each Passover in John is approached rather than arrived at.",
+      "words": ["G1451", "G3957", "G1859", "G2453"],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "John introduces Jesus as the Lamb of God (1:29) and will have him die as the Passover lambs are slaughtered (19:14, 19:36). Setting the bread of life discourse at Passover prepares the reader to hear the flesh ‘given for the life of the world’ (6:51) as sacrificial language."
+        }
+      ],
+      "refs": ["John 2:13", "John 11:55", "John 1:29", "John 19:36", "Exodus 12:1-14"]
+    },
+    {
+      "v": "5-6",
+      "context": "In John, Jesus raises the question of food himself. In the Synoptic accounts the disciples come to him at evening and urge him to send the crowd away, and he answers, ‘You give them something to eat’ (Mark 6:35-37). John adds that the question was a test, since Jesus already knew what he would do.",
+      "grammar": "Pothen agorasōmen artous, ‘from where are we to buy bread?’, is a deliberative subjunctive, a question about what to do. The question echoes Moses in the wilderness, ‘Where can I get meat for all these people?’ (Numbers 11:13, Hebrew me'ayin, ‘from where’), and pothen will become a key word of the next chapters, where the question is where Jesus himself comes from (7:27-28, 8:14, 9:29-30). Peirazōn auton is ‘testing him’: peirazō can mean to tempt toward sin, but here, as in Genesis 22:1 in the Greek Old Testament, it means to prove someone. The aside autos gar ēdei, ‘for he himself knew’, uses the pluperfect of oida, which functions as a simple past; John protects Jesus' foreknowledge as he does in 2:24-25 and 6:64.",
+      "words": ["G4159", "G0059", "G3985H", "G1492I", "G3195"],
+      "parallels": ["Mark 6:35-37", "Matthew 14:15-16", "Luke 9:12-13"],
+      "refs": ["Numbers 11:13", "Numbers 11:21-23", "John 2:24-25", "John 6:64"]
+    },
+    {
+      "v": "7-9",
+      "context": "Philip calculates and finds the need impossible; Andrew finds a boy with a small meal and doubts it matters. John alone names the two disciples, both from Bethsaida (1:44), and alone mentions the boy and the barley. The disciples' realism sets up the sign: what they have is plainly not enough.",
+      "grammar": "Brachu ti labē, ‘that each might take a little something’, makes Philip's point even at the smallest ration. In verse 9 two diminutives stand side by side. Paidarion is a diminutive of pais and can mean a young boy or a young servant; opsarion, from opson, the cooked relish eaten with bread, came to mean fish in particular, the sense it has in John (21:9-13). Artous krithinous, ‘barley loaves’, is a detail found only in John. Andrew's question, alla tauta ti estin eis tosoutous, ‘but what are these for so many?’, closely resembles the servant's objection in 2 Kings 4:43.",
+      "words": ["G1250", "G1220", "G1024", "G3808", "G2916", "G3795", "G5118"],
+      "ot": [
+        {
+          "ref": "2 Kings 4:42-44",
+          "note": "A man brings Elisha twenty loaves of barley bread (Hebrew lechem se'orim; Greek Old Testament artous krithinous, the same phrase John uses), and Elisha orders them given to a hundred men. His servant asks how he can set so little before so many, and the prophet answers with the word of the LORD that they will eat and have some left over, which they do. John's barley loaves, the doubting question, the abundance, and the leftovers all match. John does not quote the story, but a reader who knew it would see a greater prophet at work: twenty loaves fed a hundred; five feed thousands."
+        }
+      ],
+      "parallels": ["Mark 6:37-38", "Matthew 14:17", "Luke 9:13"],
+      "refs": ["John 1:44", "John 12:21-22", "John 21:9-13"]
+    },
+    {
+      "v": "10",
+      "context": "Jesus has the people recline on the grass. John counts about five thousand men, the same number the other Gospels give, and like Mark and Matthew he counts adult males.",
+      "grammar": "Jesus says poiēsate tous anthrōpous anapesein, ‘make the people recline’, using the general word anthrōpoi, but the count uses andres, grown men: ‘the men sat down, in number about five thousand’. Mark 6:44 counts andres too, and Matthew makes the point explicit, ‘about five thousand men, besides women and children’ (Matthew 14:21). Anapiptō, ‘to recline’, is the posture of a proper meal, not a snack taken standing.",
+      "words": ["G0444", "G0377", "G5528", "G0435G", "G4000"],
+      "history": "Mark adds that the people sat down in groups of hundreds and fifties (Mark 6:40). Some interpreters hear an echo of Israel ordered by thousands, hundreds, fifties, and tens in the wilderness (Exodus 18:21); John has no such detail, and his note of plenty of grass fits the spring season before Passover, when the hills around the lake are green.",
+      "parallels": ["Mark 6:39-40", "Matthew 14:19", "Luke 9:14-15"],
+      "refs": ["Exodus 18:21", "Psalm 23:1-2"]
+    },
+    {
+      "v": "11",
+      "context": "Jesus takes the loaves, gives thanks, and himself distributes bread and fish to the reclining crowd, as much as each wants. The quantity is set by the people's hunger, not by the size of the supply.",
+      "grammar": "The Synoptic accounts of this feeding say Jesus ‘blessed’ (eulogēsen, Mark 6:41); John uses eucharistēsas, ‘having given thanks’, the verb Mark uses at the feeding of the four thousand (Mark 8:6) and Paul uses of the Last Supper (1 Corinthians 11:24). John also omits the verb ‘broke’, which all three Synoptics have, and has Jesus give out the food himself (diedōken), where in the other Gospels he gives it to the disciples to distribute. Hoson ēthelon, ‘as much as they wanted’, is an imperfect of repeated action: they kept wanting, and kept receiving.",
+      "words": ["G2983", "G2168", "G1239", "G0345", "G2309"],
+      "theology": [
+        {
+          "id": "sacraments",
+          "note": "The sequence of taking, giving thanks, and giving is the pattern of every Jewish meal, and it is also the pattern of the Lord's Supper as the church remembered it. John does not say this meal was a Eucharist, but his wording lets the church's table sound in the background of a sign about bread given by Jesus' own hand."
+        }
+      ],
+      "text": "The King James Version reads that Jesus distributed ‘to the disciples, and the disciples to them that were set down’. The added words appear in later manuscripts and match the Synoptic accounts (Matthew 14:19); the earliest manuscripts have Jesus distribute directly, and modern versions follow them.",
+      "parallels": ["Mark 6:41-42", "Matthew 14:19-20", "Luke 9:16-17"],
+      "refs": ["Mark 8:6", "1 Corinthians 11:23-24", "Deuteronomy 8:10"]
+    },
+    {
+      "v": "12-13",
+      "context": "Only John has Jesus order the leftovers gathered ‘so that nothing will be wasted’. Twelve baskets are filled from five loaves, far more than the meal began with.",
+      "grammar": "Hina mē ti apolētai, ‘so that nothing may perish’, uses apollumi, the verb John picks up twice later in the chapter: the crowd should not work for food that perishes (6:27), and it is the Father's will that Jesus lose (apolesō) none of those given to him (6:39). The gathering of fragments quietly prepares for that promise. Sunagagete ta perisseusanta klasmata, ‘gather the fragments left over’: klasma, a broken piece, is the word the Didache later uses for the bread of the Eucharist. Tois bebrōkosin, ‘to those who had eaten’, is a perfect participle of bibrōskō, found only here in the New Testament.",
+      "words": ["G1705", "G4863", "G4052", "G2801", "G0622", "G2894", "G0977"],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The abundance is the point. God's provision in the wilderness was daily and sufficient; here it overflows, as Elisha's word had promised in 2 Kings 4:44. The care not to waste it treats God's gift as precious rather than cheap."
+        }
+      ],
+      "refs": ["John 6:27", "John 6:39", "John 17:12", "2 Kings 4:44"]
+    },
+    {
+      "v": "14",
+      "context": "The people conclude that Jesus is the Prophet whom Moses promised. They read the sign correctly as far as it goes: a man who feeds Israel in the wilderness looks like the new Moses. The next verse shows what they meant to do with that conclusion.",
+      "grammar": "Houtos estin alēthōs ho prophētēs ho erchomenos eis ton kosmon, ‘this is truly the Prophet who is coming into the world’. The article makes it a title, the expected Prophet, not merely a prophet. ‘Coming into the world’ is John's own language for Jesus' mission (1:9, 11:27, 18:37), so the crowd's words say more than they know. Elegon, an imperfect, suggests the saying spread through the crowd.",
+      "words": ["G1492H", "G4592", "G0230", "G4396", "G2064", "G2889"],
+      "history": "The hope of a coming Prophet rested on Deuteronomy 18:15-18. The Dead Sea Scrolls show it alive in the first century: the Community Rule speaks of the coming of a prophet and the messiahs of Aaron and Israel (1QS 9:11), and the Testimonia (4Q175) sets Deuteronomy 18:18-19 beside other messianic texts. John the Baptist was asked whether he was the Prophet (1:21), and the question returns at the feast of Tabernacles (7:40).",
+      "theology": [
+        {
+          "id": "offices",
+          "note": "The crowd names Jesus the Prophet like Moses, one of the three offices (prophet, priest, and king) in which the church has summarized Christ's work. The next verse shows the danger of honoring one office on one's own terms: they want the prophet to become their kind of king."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Deuteronomy 18:15-18",
+          "note": "Moses promises that the LORD will raise up a prophet ‘like me’ from among the people (Hebrew navi ... kamoni), and God says he will put his words in that prophet's mouth. The Greek Old Testament renders it closely, prophētēn ... hōs eme. Originally the promise explained how God would keep speaking to Israel after Moses; by Jesus' day it was read of one eschatological figure. Peter applies it to Jesus in Acts 3:22-23, and John lets the crowd say it here, then shows that Jesus is more than a prophet: he is the bread the Father gives."
+        }
+      ],
+      "text": "Papyrus 75 and Codex Vaticanus read ‘the signs’ in the plural; most manuscripts read the singular, ‘the sign’, pointing to the feeding just performed.",
+      "refs": ["John 1:21", "John 7:40", "Acts 3:22-23", "John 11:27"]
+    },
+    {
+      "v": "15",
+      "context": "The crowd moves from confession to action: they mean to seize Jesus and make him king. He withdraws to the hills alone. Mark says only that Jesus immediately compelled the disciples to get into the boat and dismissed the crowd (Mark 6:45); John supplies the reason for the haste.",
+      "grammar": "Harpazein auton, ‘to seize him’, is the verb for snatching by force; John uses it of the wolf that snatches the sheep and of the hand from which no one can snatch Jesus' own (10:12, 28-29). The crowd would take Jesus as plunder for its own cause. Hina poiēsōsin basilea, ‘to make him king’, has them as the makers. Anechōrēsen palin eis to oros autos monos, ‘he withdrew again to the mountain by himself alone’, stacks two words for solitude.",
+      "words": ["G0726", "G0935", "G0402", "G3441"],
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "Jesus is a king, as John will make plain at his trial and on the cross (18:37, 19:19), but not one made by a crowd's force. He tells Pilate that his kingdom is not from this world (18:36). The feeding shows the king's power; the withdrawal shows the kind of kingship he refuses."
+        }
+      ],
+      "text": "Codex Sinaiticus in its first hand, with some Old Latin and Syriac witnesses, reads pheugei, ‘he flees’, in place of ‘he withdrew’. Tischendorf printed it in his eighth edition, but nearly all later editors judge it a secondary reading, since the usual text stands in manuscripts of every family.",
+      "parallels": ["Mark 6:45-46", "Matthew 14:22-23"],
+      "refs": ["John 18:36-37", "John 10:28-29", "John 12:13-15"]
+    },
+    {
+      "v": "16-17",
+      "context": "At evening the disciples set out across the lake toward Capernaum without Jesus. John notes that it had become dark and that Jesus had not yet come to them.",
+      "grammar": "Skotia ēdē egegonei, ‘darkness had already come’, uses a pluperfect, a state already reached. John rarely mentions time of day without meaning more: darkness in this Gospel is where people are without the light (1:5, 3:19, 12:35), and Nicodemus came by night and Judas went out into it (3:2, 13:30). Oupō elēluthei pros autous ho Iēsous, ‘Jesus had not yet come to them’, is odd if they expected nothing: the ‘not yet’ implies that they were still hoping he would join them, and prepares for his coming across the water.",
+      "words": ["G3798", "G2597", "G2584", "G4653", "G1096", "G3768"],
+      "history": "Mark says Jesus sent the disciples ahead to Bethsaida and that they landed at Gennesaret, the plain on the northwestern shore (Mark 6:45, 53); John names Capernaum as their goal. Capernaum and the plain of Gennesaret lie a few miles apart on the same northern shore, so the accounts may describe the same crossing from different points of view.",
+      "parallels": ["Mark 6:45-47", "Matthew 14:22-24"],
+      "refs": ["John 1:5", "John 12:35", "John 13:30"]
+    },
+    {
+      "v": "18",
+      "context": "A strong wind stirs up the lake. John gives the storm a single sentence; unlike Mark and Matthew he does not say the wind was against them or that it ceased.",
+      "grammar": "Anemou megalou pneontos is a genitive absolute, ‘a great wind blowing’, giving the circumstance. Diēgeireto, an imperfect passive, means the sea ‘was being roused’: it kept rising. The same verb is used of rousing a sleeper: Mark 4:39 uses it when Jesus is woken in the other storm.",
+      "words": ["G2281", "G0417", "G3173", "G4154", "G1326"],
+      "refs": ["Psalm 107:25-26", "Mark 4:37", "Jonah 1:4"]
+    },
+    {
+      "v": "19",
+      "context": "Several miles out, in the middle of the lake, the disciples see Jesus walking on the sea and coming near the boat, and they are afraid. The distance places them far from shore.",
+      "grammar": "Stadious eikosi pente ē triakonta, ‘twenty-five or thirty stadia’, about three or four miles; the lake is roughly seven or eight miles wide, so they are in open water. Peripatounta epi tēs thalassēs, ‘walking on the sea’, could in principle mean ‘by the sea’, and a few modern writers have suggested Jesus was on the shore, since epi tēs thalassēs means ‘beside the sea’ in 21:1. The context rules this out: the boat is miles from land, the disciples are terrified, and Mark and Matthew say plainly that he walked on the water. Ephobēthēsan, ‘they were afraid’, is the reaction to an epiphany, not to a man on the beach.",
+      "words": ["G4712", "G2334", "G4043", "G2281", "G5399"],
+      "ot": [
+        {
+          "ref": "Job 9:8",
+          "note": "Job describes God as the one who alone stretches out the heavens and treads on the waves of the sea (Hebrew dorekh al-bamotei yam, ‘treading on the heights of the sea’). The Greek Old Testament renders the line peripatōn hōs ep' edaphous epi thalassēs, ‘walking on the sea as on dry ground’, the same verb and phrase John and Mark use. In Job the image belongs to God the Creator, master of the waters that ancient peoples feared. The Gospels do not cite the verse, but a reader of the Greek Bible would recognize whose act this is."
+        }
+      ],
+      "parallels": ["Mark 6:48-49", "Matthew 14:25-26"],
+      "refs": ["Psalm 77:19", "Isaiah 43:16", "John 21:1"]
+    },
+    {
+      "v": "20",
+      "context": "Jesus speaks two short phrases: egō eimi and ‘do not be afraid’. The words identify him to frightened friends, and in this setting they also carry the sound of God's own self-naming.",
+      "grammar": "Egō eimi can be ordinary speech, ‘It's me’; the healed blind man says the same words in 9:9 to identify himself. But in the Greek Old Testament egō eimi translates God's self-declaration ani hu, ‘I am he’ (Isaiah 41:4, 43:10, 43:25, 46:4), and it is joined to ‘do not fear’ in God's promises to Israel at the waters (Isaiah 43:1-5). John uses the absolute egō eimi, with no predicate, several times (8:24, 8:28, 8:58, 13:19, 18:5-8), and it is in 8:58 and 18:6 that its force becomes unmistakable. Here it stands between the two: a plain greeting that means more. Mē phobeisthe is a present imperative, ‘stop being afraid’. Mark 6:50 has the identical words; Matthew 14:27 adds ‘take courage’.",
+      "words": ["G1473", "G1510", "G5399"],
+      "theology": [
+        {
+          "id": "names-of-god",
+          "note": "On the lake Jesus does what the Old Testament reserves for God and speaks in words that echo God's name for himself. This is the first of John's egō eimi sayings, set in a scene of rescue, so that the divine name is heard first as comfort: the one who treads the sea is the one who comes to his frightened people."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Isaiah 43:1-5",
+          "note": "God tells Israel, ‘Do not fear, for I have redeemed you’, and promises, ‘When you pass through the waters, I will be with you’. A few verses later he says his people are his witnesses so that they may know that ‘I am he’ (43:10, Hebrew ani hu, Greek Old Testament egō eimi). The Isaiah passage belongs to the promise of a new exodus, which suits this chapter's Passover setting. Jesus does not quote Isaiah, but his words on the water gather the same two elements, the name and the command not to fear."
+        }
+      ],
+      "parallels": ["Mark 6:50", "Matthew 14:27"],
+      "refs": ["Exodus 3:14", "John 8:58", "John 18:5-6", "Isaiah 41:4"]
+    },
+    {
+      "v": "21",
+      "context": "The disciples gladly receive him, and at once the boat is at the shore. Matthew here adds Peter's walk on the water and the disciples' worship (Matthew 14:28-33); Mark says Jesus got into the boat, the wind ceased, and the disciples did not understand about the loaves (Mark 6:51-52). John ends instead with the sudden arrival.",
+      "grammar": "Ēthelon oun labein auton eis to ploion, ‘they were willing, then, to take him into the boat’, uses an imperfect of wanting; the Greek does not say whether he actually got in before the boat reached land, and interpreters differ. Some read ‘they gladly took him in’ with Mark 6:51; others think John means that before they could, the boat arrived. Eutheōs, ‘immediately’, carries the weight: the crossing is completed by his presence.",
+      "words": ["G2309", "G2983", "G4143", "G2112", "G5217"],
+      "ot": [
+        {
+          "ref": "Psalm 107:23-30",
+          "note": "The psalm describes sailors caught in a storm who cry to the LORD, who stills the storm and brings them to their desired haven (Hebrew el-mechoz cheftsam; Greek Old Testament epi limena thelēmatos autōn). John's boat reaching at once the land ‘where they were heading’ reads like that line. Again the Old Testament act belongs to the LORD, and John narrates it of Jesus without comment."
+        }
+      ],
+      "parallels": ["Mark 6:51-52", "Matthew 14:32-33"],
+      "refs": ["Mark 4:39-41", "Psalm 65:7"]
+    },
+    {
+      "v": "22-24",
+      "context": "The next day the crowd works out that Jesus did not leave in the disciples' boat, yet he is gone. When boats come from Tiberias, they cross to Capernaum to look for him. The long sentence explains how the audience of the discourse came to be in Capernaum.",
+      "grammar": "Verses 22 to 24 form one of the most tangled sentences in John: verse 22 begins with the crowd as subject, verse 23 breaks in with a parenthesis about the boats, and verse 24 resumes with hote oun, ‘so when’, picking up the thought. Grammarians call this an anacoluthon, a sentence that changes its construction midway. Ploiarion, a diminutive of ploion, ‘little boat’, is used interchangeably with ploion here. In verse 23 John calls Jesus ho kurios, ‘the Lord’, in his own narrative, which he rarely does before the resurrection (compare 11:2), and uses eucharistēsantos, ‘having given thanks’, as though the thanksgiving were the defining moment of the meal.",
+      "words": ["G4142", "G5085H", "G2168", "G2962G", "G2212"],
+      "text": "Because the sentence is so awkward, copyists smoothed it in many ways, and the Greek editions differ at several points. The King James Version adds in verse 22 ‘that one whereinto his disciples were entered’, from later manuscripts. The phrase “after the Lord had given thanks” in verse 23 is absent from Codex Bezae and some Old Latin and Syriac witnesses, but it is well attested and printed by modern editions.",
+      "refs": ["John 6:11", "John 11:2", "John 20:20"]
+    },
+    {
+      "v": "25-26",
+      "context": "The crowd asks when Jesus arrived; he does not answer the question but exposes their motive. They sought him not because they understood the sign but because they had eaten their fill.",
+      "grammar": "Pote hōde gegonas, ‘when did you come to be here?’, uses a perfect, asking about his present presence. Jesus ignores it. Amēn amēn legō humin, ‘truly, truly, I tell you’, is Jesus' distinctive solemn opening, doubled only in John (25 times). The contrast is precise: ouch hoti eidete sēmeia all' hoti ephagete ek tōn artōn kai echortasthēte, ‘not because you saw signs but because you ate of the loaves and were filled’. They saw the miracle, but not a sign, something pointing beyond itself. Chortazō, ‘to fill’, was used first of feeding animals with fodder, but by this time it was an ordinary word for eating one's fill (Matthew 5:6, 14:20).",
+      "words": ["G2147", "G1096", "G0281", "G1492H", "G4592", "G5315", "G5526"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Jesus distinguishes seeking him for his gifts from seeing what his gifts reveal. Faith in John is not a response to having one's needs met but a recognition of who meets them; a crowd can be fed and followed and still not believe."
+        }
+      ],
+      "refs": ["John 2:23-25", "John 4:48", "John 6:36"]
+    },
+    {
+      "v": "27",
+      "context": "Jesus redirects their labor. Food that perishes is what they worked for all their lives and what he gave them yesterday; food that remains to eternal life is what the Son of Man will give. The verse is the thesis of the discourse.",
+      "grammar": "Ergazesthe mē tēn brōsin tēn apollumenēn, ‘do not work for the food that perishes’, is a present imperative with a negative, forbidding an ongoing pattern. Brōsis can mean food or the act of eating, and it recurs in 6:55 (‘real food’). Tēn menousan, ‘that remains’, uses menō, a key word in John for what lasts and for abiding in Christ (6:56, 15:4-10). Touton gar ho patēr esphragisen ho theos, ‘for on him the Father has set his seal, God’, puts ‘God’ last for emphasis. The aorist esphragisen points to a definite act; many interpreters think of the Spirit's descent on Jesus at his baptism, which marked him out (1:32-34), though John does not say so.",
+      "words": ["G2038", "G1035", "G0622", "G3306", "G2222", "G4972"],
+      "history": "A seal pressed into clay or wax marked ownership and guaranteed that a document or a container was genuine and unopened. Seals of this period have been found in large numbers across the region. To say God has sealed the Son of Man is to say God has authenticated him as his own, as John earlier says that whoever accepts Jesus' testimony has certified (sphragizō) that God is truthful (3:33).",
+      "refs": ["Isaiah 55:2", "John 3:33", "John 4:14", "2 Corinthians 1:22", "John 1:32-34"]
+    },
+    {
+      "v": "28-29",
+      "context": "The crowd hears ‘work’ and asks what works God requires. Jesus answers with one work: to believe in the one God has sent. The exchange turns on the difference between plural and singular.",
+      "grammar": "Ti poiōmen hina ergazōmetha ta erga tou theou, ‘what should we do so that we may work the works of God?’, uses the plural, ‘works’, the language of commandments to be kept. Jesus answers with the singular: touto estin to ergon tou theou, hina pisteuēte eis hon apesteilen ekeinos, ‘this is the work of God, that you believe in the one he sent’. The genitive ‘of God’ can mean the work God requires or the work God does, and interpreters have taken it both ways; the chapter's later stress on the Father's giving and drawing (6:37, 44, 65) gives the second sense real support. The present subjunctive pisteuēte, printed by the critical editions, suggests continuing to believe; the Textus Receptus has the aorist.",
+      "words": ["G4160G", "G2038", "G2041", "G4100", "G0649"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Jesus reduces all the works of God to one: believing in the Son. Faith is not one work among many that earns life; it is the reception of the one God sent. Christians who debate how faith and works relate agree that this verse puts faith at the center and directs it to a person, not a program."
+        }
+      ],
+      "refs": ["1 John 3:23", "Romans 3:27-28", "Ephesians 2:8-10", "John 6:44"]
+    },
+    {
+      "v": "30-31",
+      "context": "The crowd that ate yesterday asks for a sign today, and names the one they want: manna, the bread from heaven Moses gave. The demand shows that they read the feeding as a first installment. If Jesus is the prophet like Moses, let him keep providing as Moses did.",
+      "grammar": "Ti oun poieis su sēmeion, ‘what sign, then, do you do?’, puts su, ‘you’, in emphatic position: they compare him with Moses. Ti ergazē, ‘what do you work?’, throws Jesus' own word back at him. Kathōs estin gegrammenon, ‘as it stands written’, is a standard formula for citing Scripture, the perfect participle stressing that the text stands. The quotation that follows becomes the text on which the rest of the discourse is a commentary.",
+      "words": ["G4592", "G2038", "G3131", "G2048", "G1125", "G0740", "G3772"],
+      "ot": [
+        {
+          "ref": "Psalm 78:24",
+          "note": "The closest source. The Hebrew reads that God rained down manna for them to eat and gave them ‘the grain of heaven’ (degan shamayim); the Greek Old Testament renders the second line arton ouranou edōken autois, ‘he gave them bread of heaven’, and the next verse calls it bread of angels. John's wording, arton ek tou ouranou edōken autois phagein, matches the psalm's ‘gave them bread of heaven’ and adds ‘to eat’."
+        },
+        {
+          "ref": "Exodus 16:4",
+          "note": "God tells Moses, ‘I am about to rain down bread from heaven for you’ (Hebrew lechem min-hashamayim; Greek Old Testament artous ek tou ouranou). This supplies John's ‘from heaven’ with the preposition ek."
+        },
+        {
+          "ref": "Exodus 16:15",
+          "note": "Moses explains the manna: it is the bread the LORD has given you to eat (Greek Old Testament houtos ho artos hon edōken kurios humin phagein). The final ‘to eat’, phagein, may come from here. Nehemiah 9:15 has a similar line. The crowd's quotation thus gathers several passages, a common way of citing Scripture at the time, and Jesus' reply takes it apart word by word: who gave, what the bread is, and what it means to eat."
+        }
+      ],
+      "refs": ["Nehemiah 9:15", "Deuteronomy 8:3", "1 Corinthians 10:3"]
+    },
+    {
+      "v": "32-33",
+      "context": "Jesus corrects the crowd's reading of their own text on three points: the giver was not Moses but the Father; the gift is not past but present; and the true bread from heaven is not manna but the one who comes down and gives life to the world.",
+      "grammar": "Ou Mōusēs dedōken ... all' ho patēr mou didōsin: the perfect ‘has given’ is set against the present ‘gives’, and Moses against ‘my Father’. Ton arton ek tou ouranou ton alēthinon, ‘the true bread from heaven’, uses alēthinos, ‘real, genuine’, as in the true light (1:9) and the true vine (15:1): not that the manna was false, but that it was a shadow of the real thing. In verse 33 ho katabainōn ek tou ouranou can be read two ways, because katabainōn is masculine and artos, ‘bread’, is also masculine. It may mean ‘that which comes down from heaven’, describing the bread, or ‘he who comes down from heaven’, a person. The crowd hears the first (6:34); Jesus declares the second (6:35). The ambiguity is the hinge of the dialogue.",
+      "words": ["G0281", "G3475", "G1325", "G0228", "G2597", "G2222", "G2889"],
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "The bread of God is a person who comes down from heaven. Verse 33 is the first of seven times in the chapter that Jesus' origin is described with ‘come down’, and it makes the incarnation the ground of the gift: life is given to the world because the Son has come into it."
+        }
+      ],
+      "text": "The critical editions and the Textus Receptus print the perfect dedōken, ‘has given’, in verse 32; Westcott and Hort and some others print the aorist edōken, ‘gave’, found in some early manuscripts. The contrast with the Father's present giving stands either way.",
+      "refs": ["John 1:9", "John 15:1", "John 3:13", "John 3:31"]
+    },
+    {
+      "v": "34",
+      "context": "The crowd asks for this bread always, as the Samaritan woman asked for the water that would spare her the trip to the well (4:15). They want the gift; they have not yet understood that the gift is a person.",
+      "grammar": "Kurie can mean ‘sir’ or ‘Lord’, and John often lets the word hover between courtesy and confession (4:11, 4:15, 4:19, 9:36-38). Dos hēmin pantote ton arton touton, ‘give us always this bread’, is an aorist imperative with pantote, ‘at all times’. The request resembles the Lord's Prayer's ‘give us today our daily bread’ in form, but the crowd still means a supply, not a savior.",
+      "words": ["G2962H", "G3842", "G1325", "G0740"],
+      "refs": ["John 4:15", "Matthew 6:11", "John 6:26"]
+    },
+    {
+      "v": "35",
+      "context": "Jesus answers the request by naming himself: he is the bread of life. Coming to him ends hunger; believing in him ends thirst. The saying gathers the feeding, the manna, and the water promised to the Samaritan woman into one claim.",
+      "grammar": "Egō eimi ho artos tēs zōēs is the first of the sayings in which egō eimi takes a predicate: the bread of life, the light of the world, the door, the good shepherd, the resurrection and the life, the way and the truth and the life, the true vine. The genitive tēs zōēs describes bread that gives life, and 6:51 restates it as ho artos ho zōn, ‘the living bread’. The promise uses the strongest negation in Greek, ou mē, twice: ou mē peinasē, ‘will certainly not hunger’, with an aorist subjunctive, and ou mē dipsēsei pōpote, ‘will certainly never thirst’, with a future indicative. The parallel lines make ‘comes to me’ and ‘believes in me’ two descriptions of one act, which is the key to the eating and drinking language to come.",
+      "words": ["G1473", "G1510", "G0740", "G2222", "G2064", "G3983", "G4100", "G1372", "G4455"],
+      "history": "Jewish wisdom writing had already pictured God's Wisdom as a hostess who says, ‘Come, eat my bread and drink the wine I have mixed’ (Proverbs 9:5). Ben Sira, around 180 BC, has Wisdom say that those who eat her will hunger for more and those who drink her will thirst for more (Sirach 24:21), meaning that Wisdom, identified with the law, is never exhausted. Jesus uses the same imagery and turns it around: whoever comes to him will never hunger or thirst, for in him the longing is met.",
+      "theology": [
+        {
+          "id": "faith",
+          "note": "The verse defines faith by its object and its effect. To believe is to come to Jesus himself, and what faith receives is not a benefit apart from him but his own life, which satisfies as bread satisfies the hungry."
+        }
+      ],
+      "refs": ["Isaiah 55:1-3", "Proverbs 9:5", "John 4:13-14", "John 7:37", "Revelation 7:16"]
+    },
+    {
+      "v": "36-37",
+      "context": "Jesus names their unbelief and then states the certainty behind every true coming: all the Father gives will come, and none who come will be turned away. Verse 37 holds divine giving and human coming side by side.",
+      "grammar": "Eipon humin, ‘I told you’, probably refers back to 6:26. In verse 37 pan ho didōsin moi ho patēr, ‘all that the Father gives me’, uses a neuter singular, pan ho, ‘everything that’, for people: the Father's gift is spoken of as one whole (the same neuter returns in 6:39 and 17:2, 17:24). Hēxei, ‘will come’, is a future of certainty. Then the grammar shifts to the individual, ton erchomenon pros eme, ‘the one who comes to me’, masculine singular. Ou mē ekbalō exō, ‘I will certainly not cast out’, is an understatement with the force of a strong promise: he will keep them. The same verb and adverb, exebalon exō, describe the synagogue casting out the healed blind man in 9:34-35, and Jesus then finds him.",
+      "words": ["G3708", "G4100", "G3956", "G1325", "G2240", "G1544", "G1854"],
+      "theology": [
+        {
+          "id": "election",
+          "note": "The verse speaks of a people given to the Son by the Father and certain to come. Reformed interpreters read it as a statement of unconditional election; Arminian and Wesleyan readers take the giving to follow God's foreknowledge of faith, or to describe believers as a class. Both read the second half as an unqualified welcome: no one who comes is refused. The chapter note's hard question sets out the debate."
+        }
+      ],
+      "refs": ["John 6:26", "John 9:34-35", "John 17:2", "John 17:24", "Matthew 11:28"]
+    },
+    {
+      "v": "38",
+      "context": "Jesus explains why he will never cast out anyone who comes: he came down to do the Father's will, not his own, and the next verse will say what that will is.",
+      "grammar": "Hoti katabebēka apo tou ouranou, ‘because I have come down from heaven’: the perfect describes a coming whose result continues; he is here as the one who came. The critical editions read apo, the Textus Receptus ek; both mean ‘from’. Ouch hina poiō to thelēma to emon all' to thelēma tou pempsantos me sets his own will against the sender's, not because they conflict but to say that his mission is wholly the Father's. ‘The one who sent me’ is John's constant way of naming the Father, used more than twenty times.",
+      "words": ["G2597", "G3772", "G2307", "G3992"],
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "The Son's coming down is a real descent with a purpose, and the purpose is obedience. The verse joins the incarnation to Jesus' submission to the Father, which the Gospels show in Gethsemane and which John voices in 4:34 and 5:30."
+        },
+        {
+          "id": "trinity",
+          "note": "The Son has a will and freely makes the Father's will his own. The church at the Third Council of Constantinople (680-681) confessed two wills in Christ, divine and human, in harmony; texts like this one were part of that discussion."
+        }
+      ],
+      "refs": ["John 4:34", "John 5:30", "Hebrews 10:7", "Matthew 26:39"]
+    },
+    {
+      "v": "39-40",
+      "context": "The Father's will is stated twice, once from the side of the Father's giving (verse 39) and once from the side of the believer's looking and believing (verse 40). Both end with the same promise: I will raise him up on the last day.",
+      "grammar": "Verse 39 repeats the neuter collective, pan ho dedōken moi, ‘all that he has given me’, then says hina ... mē apolesō ex autou, ‘that I should lose nothing of it’, and anastēsō auto, ‘raise it up’, still neuter. Verse 40 turns personal: pas ho theōrōn ton huion kai pisteuōn eis auton, ‘everyone who looks to the Son and believes in him’, with present participles for continuing looking and believing, and echē zōēn aiōnion, ‘may have eternal life’, now. The phrase tē eschatē hēmera, ‘the last day’, occurs in the New Testament only in John (6:39, 40, 44, 54; 11:24; 12:48), where eternal life already possessed still awaits bodily resurrection.",
+      "words": ["G2307", "G3956", "G0622", "G0450", "G2078", "G2250", "G2334", "G2192"],
+      "theology": [
+        {
+          "id": "perseverance",
+          "note": "The keeping of believers is grounded in the Father's will and the Son's obedience: Jesus is charged to lose none. Those who hold the perseverance of the saints find it stated here; others, including Arminian and some Lutheran readers, read it alongside warnings such as 6:66 and 15:6 and teach that believers can fall away. All agree that the verse puts the weight of security on Christ's faithfulness rather than on the believer's strength."
+        },
+        {
+          "id": "resurrection",
+          "note": "Eternal life begins now for whoever believes (verse 40), yet Jesus still promises resurrection on the last day. John does not let present life replace the future raising of the body; the two belong together."
+        }
+      ],
+      "refs": ["John 17:12", "John 10:28-29", "John 11:24-25", "John 5:28-29"]
+    },
+    {
+      "v": "41-42",
+      "context": "The audience, now called ‘the Jews’, grumbles at the claim to have come down from heaven. Their objection is reasonable on its face: they know his family. John shows that knowing Jesus' earthly origin can blind people to his heavenly one.",
+      "grammar": "Egonguzon, ‘they were grumbling’, is the imperfect of gongyzō, the word the Greek Old Testament uses for Israel's murmuring over food in the wilderness (Exodus 16:7-8); the crowd that asked for manna now behaves like the generation that ate it. Ouch houtos estin Iēsous ho huios Iōsēph, ‘is this not Jesus the son of Joseph?’, expects the answer yes. Pōs nun legei, ‘how is it that he now says?’, sets his claim against what they know. Here hoi Ioudaioi are a Galilean synagogue audience (6:59), not the Jerusalem authorities of chapter 5, which shows how broad John's use of the word is.",
+      "words": ["G1111", "G2453", "G2501G", "G6063", "G3384", "G2597"],
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "The objection states half the truth. Jesus is the son of a known family in Galilee, and he has come down from heaven. John has already told the reader both (1:14, 1:45), and the grumblers take the first as disproof of the second. The incarnation means both are true of the same person."
+        }
+      ],
+      "parallels": ["Mark 6:1-6", "Matthew 13:54-58", "Luke 4:22"],
+      "refs": ["John 1:45", "John 7:27-28", "Exodus 16:7-8", "Numbers 14:27"]
+    },
+    {
+      "v": "43-44",
+      "context": "Jesus tells them to stop grumbling and gives the reason their objection cannot be settled by argument: no one can come to him unless the Father draws him. The one drawn is the one Jesus will raise.",
+      "grammar": "Mē gonguzete, a present imperative with the negative, ‘stop grumbling’. Oudeis dunatai elthein pros me, ‘no one is able to come to me’, speaks of ability, not permission. Ean mē ho patēr ... helkusē auton, ‘unless the Father draws him’, uses an aorist subjunctive of helkō, the verb for dragging a net or drawing a sword (21:6, 18:10) and, figuratively, for attracting. Kagō anastēsō auton, ‘and I will raise him up’, has the same pronoun, auton, as the object of drawing and of raising. Reformed interpreters, D. A. Carson among them, argue that this ties the drawing to final salvation, so that all who are drawn are raised; Arminian and Wesleyan readers answer that the drawing is necessary but not by itself decisive, and point to 12:32, where Jesus draws all people. The grammar allows both to make their case.",
+      "words": ["G1111", "G1410", "G2064", "G1670", "G0450"],
+      "theology": [
+        {
+          "id": "election",
+          "note": "Coming to Christ is not something people achieve by their own insight: the Father must draw them. Augustine read this drawing as the attraction of delight rather than compulsion (Tractates on John 26). How far the drawing is effective in itself, and whether it reaches all, divides Reformed, Lutheran, Arminian, Catholic, and Orthodox teaching."
+        }
+      ],
+      "refs": ["John 12:32", "Jeremiah 31:3", "John 6:65", "Hosea 11:4"]
+    },
+    {
+      "v": "45",
+      "context": "Jesus supports his claim with Scripture: the prophets promised that all would be taught by God. The Father's drawing is described as teaching, and everyone who has listened to the Father and learned from him comes to Jesus.",
+      "grammar": "Estin gegrammenon en tois prophētais, ‘it stands written in the Prophets’, cites the prophetic books as a collection. Esontai pantes didaktoi theou, ‘they will all be taught of God’, uses didaktos with the genitive of the teacher. The second half, pas ho akousas para tou patros kai mathōn erchetai pros eme, ‘everyone who has heard from the Father and learned comes to me’, uses two aorist participles for a completed hearing and learning, followed by the present ‘comes’. The drawing of 6:44 is now explained as the Father teaching, which is why Augustine could describe it as persuasion rather than force.",
+      "words": ["G1125", "G4396", "G1318", "G0191", "G3129", "G2064"],
+      "ot": [
+        {
+          "ref": "Isaiah 54:13",
+          "note": "The Hebrew promises restored Zion, ‘All your children will be taught by the LORD’ (kol-banayikh limmudei YHWH), in a chapter about the barren city given innumerable children and an everlasting covenant of peace. The Greek Old Testament keeps ‘all your sons’. Jesus' wording drops ‘your sons’ and says simply ‘they will all be taught by God’, which widens the promise from the children of Zion to all whom the Father teaches. The new covenant promise of Jeremiah 31:33-34, that all will know the LORD, stands close by in thought."
+        }
+      ],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "God does not only send the Son; he teaches people to recognize him. The verse joins outward revelation (Jesus' words and signs) with inward teaching by the Father, and says the two lead to the same place."
+        }
+      ],
+      "refs": ["Jeremiah 31:33-34", "1 Thessalonians 4:9", "1 John 2:27", "John 6:44"]
+    },
+    {
+      "v": "46-47",
+      "context": "Jesus guards against a misunderstanding: being taught by the Father does not mean anyone has seen the Father, except the one who is from God. Then comes the plainest statement in the discourse: whoever believes has eternal life.",
+      "grammar": "Ouch hoti ton patera heōraken tis, ‘not that anyone has seen the Father’, uses a perfect, seeing with lasting result, and restates 1:18. Ho ōn para tou theou, ‘the one who is from God’, with para and the genitive, describes origin from the Father's side. In verse 47 ho pisteuōn echei zōēn aiōnion, ‘the one who believes has eternal life’, puts the verb in the present: life is possessed now.",
+      "words": ["G3708", "G3844", "G2316", "G0281", "G4100", "G2192", "G0166"],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "Verse 47 is the discourse's thesis in its simplest form, and every hard saying that follows must be read in its light. Whatever the eating of verse 53 means, it cannot mean less than, or other than, the believing that has eternal life now."
+        }
+      ],
+      "text": "The King James Version reads ‘He that believeth on me’. The words ‘on me’ are absent from the earliest manuscripts, including Papyri 66 and 75 and Codices Sinaiticus and Vaticanus, and were probably added to complete the thought.",
+      "refs": ["John 1:18", "John 5:37", "John 3:36", "John 5:24"]
+    },
+    {
+      "v": "48-50",
+      "context": "Jesus repeats ‘I am the bread of life’ and draws the contrast with the manna. Their fathers ate it and died; the bread that comes down from heaven is given so that one may eat and not die.",
+      "grammar": "The crowd said ‘our fathers’ (6:31); Jesus now says hoi pateres humōn, ‘your fathers’, distancing himself from their reading of the wilderness. Ephagon ... kai apethanon, ‘they ate ... and they died’, is set against hina tis ex autou phagē kai mē apothanē, ‘so that anyone may eat of it and not die’. The aorist subjunctive phagē describes the act of eating as a single reception. ‘Not die’ cannot mean escape from physical death, since the promise of resurrection (6:40) assumes it; it means the death that separates from God.",
+      "words": ["G3962", "G5315", "G2048", "G3131", "G0599", "G2597"],
+      "theology": [
+        {
+          "id": "hope",
+          "note": "The manna sustained life for a day at a time and could not keep the wilderness generation from dying. The bread from heaven gives a life that death does not end, which is why John can speak both of never dying (11:26) and of being raised (6:40)."
+        }
+      ],
+      "refs": ["Numbers 14:29-35", "1 Corinthians 10:3-5", "Hebrews 3:17", "John 11:25-26"]
+    },
+    {
+      "v": "51",
+      "context": "The verse bridges the two halves of the discourse. It repeats that Jesus is the living bread from heaven, then adds a new and startling identification: the bread he will give for the life of the world is his flesh.",
+      "grammar": "Ho artos ho zōn, ‘the living bread’, parallels the living water of 4:10. The last sentence reads, kai ho artos de hon egō dōsō hē sarx mou estin huper tēs tou kosmou zōēs, ‘and the bread that I will give is my flesh, for the life of the world’. The future dōsō, ‘I will give’, points beyond the present conversation to the cross. The preposition huper, ‘on behalf of’, is John's word for Jesus' death for others: the good shepherd lays down his life for the sheep (10:11), one man dies for the people (11:50), and love lays down its life for friends (15:13). Sarx, ‘flesh’, where the Synoptic words of institution have sōma, ‘body’, has been explained in two ways. Joachim Jeremias (The Eucharistic Words of Jesus) argued that Jesus' Aramaic at the Supper was probably bisri, ‘my flesh’, which John renders more literally; others see John's own choice, picking up ‘the Word became flesh’ (1:14).",
+      "words": ["G0740", "G2198", "G1325", "G4561", "G5228", "G2889", "G2222"],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The bread is not only the Son who came down but the flesh he will give up in death, and it is given huper, for the life of the world. The verse moves the discourse from incarnation to sacrifice: life comes to the world through the gift of Jesus' body in death."
+        },
+        {
+          "id": "sacraments",
+          "note": "The wording ‘the bread ... is my flesh ... for’ resembles Luke's words of institution, ‘This is My body, given for you’ (Luke 22:19). Ignatius of Antioch, early in the second century, calls the Eucharist the flesh of Jesus Christ (To the Smyrnaeans 7; To the Romans 7). Readers who find the Supper here start from this verse; readers who do not note that the future ‘I will give’ points first to the cross."
+        }
+      ],
+      "text": "The King James Version reads ‘the bread that I will give is my flesh, which I will give for the life of the world’, repeating ‘which I will give’ with later manuscripts. The earlier text has the phrase once; modern versions differ only in word order.",
+      "refs": ["John 1:14", "John 10:11", "John 11:50-52", "Luke 22:19", "Hebrews 10:10"]
+    },
+    {
+      "v": "52",
+      "context": "The grumbling turns into open argument. The audience takes the words at their most literal and most offensive: how can this man give us his flesh to eat? As with Nicodemus (3:4) and the Samaritan woman (4:11), the misunderstanding lets Jesus press further, and here he does not soften anything.",
+      "grammar": "Emachonto, from machomai, ‘to fight’, is stronger than the earlier grumbling: they quarreled sharply among themselves (the word is used of a fistfight in Acts 7:26 and of quarrels in James 4:2). Pōs dunatai houtos, ‘how can this man?’, uses houtos with a note of contempt, ‘this fellow’. Hēmin dounai tēn sarka autou phagein, ‘to give us his flesh to eat’, repeats Jesus' words exactly and asks the question the rest of the discourse refuses to relieve.",
+      "words": ["G3164", "G0240", "G4459", "G1410", "G4561", "G5315"],
+      "history": "The Lutheran Formula of Concord (1577), while confessing that Christ's body is received orally in the Supper, rejects what it calls a ‘Capernaitic’ eating, a crude chewing of flesh like ordinary meat, naming it after the audience in this Capernaum synagogue. Roman Catholic theology uses the same term for the same error. The word shows how the whole Christian tradition, including those who hold the strongest views of Christ's presence, has read verse 52 as a misunderstanding.",
+      "refs": ["John 3:4", "John 4:11", "John 6:60", "Acts 7:26"]
+    },
+    {
+      "v": "53",
+      "context": "Jesus answers the objection by intensifying it. Unless they eat the Son of Man's flesh and drink his blood, they have no life in themselves. Drinking blood, forbidden by the law, is added to eating flesh.",
+      "grammar": "Ean mē phagēte tēn sarka tou huiou tou anthrōpou kai piēte autou to haima, ‘unless you eat the flesh of the Son of Man and drink his blood’, uses aorist subjunctives for the act of receiving. Ouk echete zōēn en heautois, ‘you do not have life in yourselves’, is a present: without this eating there is no life now. The title Son of Man links the saying to 6:27 and 6:62 and to the figure who comes with the clouds in Daniel 7:13.",
+      "words": ["G0281", "G5315", "G4561", "G5207", "G0444", "G4095", "G0129G", "G2222"],
+      "history": "The law forbade drinking or eating blood because ‘the life of the flesh is in the blood’ (Leviticus 17:11, Hebrew nefesh habasar badam hi), and the prohibition was still urged on Gentile believers in Acts 15:20. To speak of drinking Jesus' blood was therefore shocking. It also carried a meaning the law itself supplied: to drink his blood is to receive his life, given up in death.",
+      "theology": [
+        {
+          "id": "sacraments",
+          "note": "Christians read verses 53-58 in five main ways. Roman Catholics read them of the Eucharist, in which the bread and wine become Christ's body and blood (Council of Trent, Session 13, 1551; the Catechism, 1406, cites 6:51, 54, and 56). The Orthodox also read them of the Eucharist, confessing with John of Damascus (Exposition of the Orthodox Faith 4.13) that the gifts are changed by the Spirit, without defining the manner. Lutherans confess Christ's true body and blood received orally in the Supper, yet the Formula of Concord (Solid Declaration 7) reads John 6 of the spiritual eating by faith that must accompany it. The Reformed, with Calvin and the Westminster Confession (29.7), teach a real feeding on Christ by faith through the Spirit, which the Supper seals. Memorialists, including most Baptists, read the verses as a vivid picture of believing in Jesus' death, pointing to 6:35, 6:47, and 6:63. Each reading is held by faithful churches."
+        }
+      ],
+      "refs": ["Leviticus 17:10-14", "Genesis 9:4", "Acts 15:20", "Matthew 26:26-28", "Daniel 7:13"]
+    },
+    {
+      "v": "54",
+      "context": "Jesus restates the promise positively: whoever eats his flesh and drinks his blood has eternal life, and he will raise him up on the last day. The verse is built on the same frame as verse 40, which promised the same two things to whoever looks to the Son and believes.",
+      "grammar": "Here John changes verbs, from phagein (the aorist used in 6:50-53) to ho trōgōn, a present participle of trōgō. The word first meant to chew or munch, used in classical Greek of animals feeding, and some interpreters, often Catholic and Lutheran, see a deliberate stress on real, bodily eating. Others, D. A. Carson among them, note that John never uses the present tense of the ordinary verb esthiō, that trōgō had become a common verb for eating by the first century (it is the ordinary word for ‘eat’ in modern Greek), and that John uses it again in 13:18, where he changes the Greek Old Testament's esthiōn in Psalm 41:9 to trōgōn. On that view trōgō is simply John's present tense for ‘eat’. The parallel with verse 40 is the other structural point: ‘everyone who looks to the Son and believes’ and ‘whoever eats my flesh and drinks my blood’ receive exactly the same promise.",
+      "words": ["G5176", "G4561", "G4095", "G0129G", "G2222", "G0166", "G0450", "G2078"],
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "The fourth and last promise of resurrection in the chapter is attached to eating and drinking. Early writers such as Ignatius (To the Ephesians 20) and Irenaeus (Against Heresies 4.18.5, 5.2.3) drew from this link the conviction that bodies nourished by Christ will rise, one reason the church from the start confessed the resurrection of the body and not only the survival of the soul."
+        }
+      ],
+      "refs": ["John 6:40", "John 13:18", "Matthew 24:38", "Psalm 41:9"]
+    },
+    {
+      "v": "55",
+      "context": "The reason: his flesh is real food and his blood real drink. The verse answers the crowd's request for the true bread from heaven (6:32) by applying ‘true’ to his flesh and blood.",
+      "grammar": "Hē gar sarx mou alēthēs estin brōsis, kai to haima mou alēthēs estin posis, ‘for my flesh is true food and my blood is true drink’. Alēthēs is a predicate adjective with brōsis and posis: food and drink that are what food and drink are meant to be, sustaining life. The word order puts ‘true’ before the noun for emphasis. Brōsis recalls 6:27, where they were told to work for the food that remains.",
+      "words": ["G4561", "G0227", "G1035", "G0129G", "G4213"],
+      "text": "The Textus Receptus and Byzantine manuscripts read the adverb alēthōs, ‘truly’, in both clauses, which the King James Version renders ‘my flesh is meat indeed, and my blood is drink indeed’. The critical editions, following Papyrus 75 and Codex Vaticanus among others, read the adjective alēthēs, ‘true’. The meaning is close, but the adjective makes a claim about the food itself.",
+      "refs": ["John 6:27", "John 6:32", "John 4:32-34"]
+    },
+    {
+      "v": "56",
+      "context": "Eating and drinking lead to mutual abiding: the one who eats remains in Jesus and Jesus in him. The language of the vine in chapter 15 is anticipated here.",
+      "grammar": "En emoi menei kagō en autō, ‘remains in me, and I in him’, is the first statement in John of mutual indwelling between Jesus and believers. Menō, ‘remain, abide, stay’, occurs about 40 times in John and more than 20 times in 1 John. The present tense of trōgōn and pinōn describes a continuing feeding, not a single meal, and the result is a continuing relationship.",
+      "words": ["G5176", "G4561", "G4095", "G0129G", "G3306"],
+      "theology": [
+        {
+          "id": "union",
+          "note": "The goal of the feeding is not a benefit received but a union: Christ in the believer and the believer in Christ. Every tradition that reads 6:53-58, sacramentally or not, finds here the heart of the passage, and the vine of 15:4-7 develops it."
+        }
+      ],
+      "text": "Codex Bezae, with a few Old Latin manuscripts, adds after this verse a longer saying: ‘as the Father is in me and I in the Father. Truly, truly, I say to you, unless you receive the body of the Son of Man as the bread of life, you have no life in him.’ The addition is found in no early Greek papyrus or major codex and is not printed in modern editions, but it shows how early readers heard the verse.",
+      "refs": ["John 15:4-7", "John 14:20", "John 17:21-23", "1 John 3:24"]
+    },
+    {
+      "v": "57",
+      "context": "Jesus grounds the believer's life in his own life from the Father. As he lives because of the living Father who sent him, so the one who feeds on him will live because of him.",
+      "grammar": "Kathōs ... kagō ... kai ... kakeinos sets up a chain of correspondence: ‘just as the living Father sent me and I live because of the Father, so the one who eats me, that one also will live because of me’. Dia with the accusative, dia ton patera and di' eme, normally means ‘because of’ or ‘on account of’: the Son's life has its source in the Father, and the believer's in the Son. Most striking is ho trōgōn me, ‘the one who eats me’. The object is no longer ‘my flesh’ but ‘me’: what is received is the person himself.",
+      "words": ["G2531", "G0649", "G2198", "G3962", "G1223", "G5176"],
+      "theology": [
+        {
+          "id": "trinity",
+          "note": "The ‘living Father’ gives the Son to have life in himself (5:26), and the Son gives it to those who feed on him. The verse traces life from the Father through the Son to the believer, and the Nicene confession of the Son as ‘God from God, light from light’ describes the same relation of origin without inequality."
+        }
+      ],
+      "refs": ["John 5:26", "John 14:19", "John 1:4", "Galatians 2:20"]
+    },
+    {
+      "v": "58",
+      "context": "Jesus returns to where the dialogue began: the bread that came down from heaven, the fathers who ate manna and died, and the promise that whoever eats this bread will live forever. The discourse closes where it opened.",
+      "grammar": "Ou kathōs ephagon hoi pateres kai apethanon, ‘not as the fathers ate and died’, is a compressed comparison, understood as ‘not like the bread the fathers ate’. Peder Borgen (Bread from Heaven, 1965) showed that this return to the words of the opening text, after working through its phrases, is the way Jewish homilies of the period, in Philo and later rabbinic sermons, marked the end of an exposition. The last word is zēsei eis ton aiōna, ‘will live forever’, the answer to ‘died’.",
+      "words": ["G2597", "G5315", "G3962", "G0599", "G5176", "G2198", "G0165H"],
+      "refs": ["John 6:31", "John 6:49-50", "John 6:33"]
+    },
+    {
+      "v": "59",
+      "context": "John names the setting only now: all this was said while Jesus taught in the synagogue at Capernaum. The note turns the discourse into public teaching in Israel's place of Scripture and prayer.",
+      "grammar": "En sunagōgē, without the article, can mean ‘in a synagogue’ or ‘in assembly’, that is, at a synagogue gathering. Didaskōn, a present participle, ‘while teaching’, presents the discourse as Jesus' teaching of Scripture in the manner of a synagogue sermon.",
+      "words": ["G4864", "G1321", "G2584"],
+      "history": "Luke says a Roman centurion built the synagogue at Capernaum (Luke 7:5), and Mark tells of Jesus teaching and healing there (Mark 1:21-28). The white limestone synagogue visitors see today dates from the late fourth or fifth century, but beneath it lie basalt walls that its excavators, Virgilio Corbo and Stanislao Loffreda, identified as an earlier building, widely taken to be the synagogue of Jesus' time.",
+      "refs": ["Mark 1:21-22", "Luke 7:5", "Luke 4:16-21", "John 18:20"]
+    },
+    {
+      "v": "60",
+      "context": "Now the objection comes from Jesus' own disciples, not the crowd. They call the saying hard and ask who can listen to it.",
+      "grammar": "Sklēros estin ho logos houtos, ‘this word is hard’. Sklēros means harsh or difficult to bear (used of a hard master in Matthew 25:24), not hard to understand: they understood enough to be offended. Tis dunatai autou akouein, ‘who can hear it?’, uses akouō with the genitive autou, which could refer to the word, ‘listen to it’, or to Jesus, ‘listen to him’. In Greek, hearing with the genitive often implies heeding: the question is who can accept this.",
+      "words": ["G3101", "G4642", "G3056", "G1410", "G0191"],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "Jesus' teaching is described as a word that can be heard and refused. The offense of revelation is not a failure of communication; the disciples find it hard precisely because they grasp enough of what he claims."
+        }
+      ],
+      "refs": ["Matthew 25:24", "John 8:43", "John 10:20", "1 Corinthians 1:23"]
+    },
+    {
+      "v": "61-62",
+      "context": "Jesus knows the disciples are grumbling and asks whether this offends them. Then he asks a question with no ending: what if they see the Son of Man ascend to where he was before?",
+      "grammar": "Eidōs ... en heautō, ‘knowing in himself’, stresses his inner knowledge. Touto humas skandalizei, ‘does this cause you to stumble?’: a skandalon is a trap or a stumbling block. Verse 62 is an aposiopesis, a conditional sentence whose main clause is left unsaid: ean oun theōrēte ton huion tou anthrōpou anabainonta hopou ēn to proteron, ‘if then you see the Son of Man ascending to where he was before...?’ Interpreters supply the missing clause in two ways: ‘will you be even more offended?’, since ascent through the cross is harder still, or ‘will you still be offended?’, since the ascent will show that he did come from heaven. The present participle anabainonta, ‘ascending’, pictures the ascent in progress, and in John it includes his being lifted up on the cross (3:14, 12:32-33).",
+      "words": ["G6063", "G1111", "G4624", "G2334", "G0305", "G4387"],
+      "theology": [
+        {
+          "id": "exaltation",
+          "note": "The descent of the bread from heaven is completed by the ascent of the Son of Man. John frames the Gospel with this movement (3:13, 20:17), and verse 62 implies that the flesh given for the world will not remain in the grave to be eaten crudely but will be raised and glorified."
+        }
+      ],
+      "refs": ["John 3:13", "John 20:17", "John 3:14", "Ephesians 4:9-10", "Acts 1:9"]
+    },
+    {
+      "v": "63",
+      "context": "Jesus gives the key to hearing his words: the Spirit gives life, the flesh profits nothing, and his words are spirit and life. The verse has been decisive in the church's arguments about the Supper.",
+      "grammar": "To pneuma estin to zōopoioun, ‘the Spirit is the one who gives life’; zōopoieō is used of the Father and the Son raising the dead in 5:21. Hē sarx ouk ōphelei ouden, ‘the flesh profits nothing’, has the article but no ‘my’. Most interpreters take ‘the flesh’ here as human nature on its own, which cannot give or grasp life, in contrast to ‘my flesh’ given for the world in 6:51. Ta rhēmata ha egō lelalēka humin pneuma estin kai zōē estin, ‘the words I have spoken to you are spirit and are life’: his words carry the Spirit and give life. The critical editions read the perfect lelalēka, ‘I have spoken’; the Textus Receptus has the present lalō.",
+      "words": ["G4151G", "G2227", "G4561", "G5623", "G4487", "G2980", "G2222"],
+      "history": "At the Marburg Colloquy in October 1529 Zwingli pressed this verse against a bodily presence of Christ in the Supper: if the flesh profits nothing, what use is eating it? Luther replied that Christ speaks here not of his own flesh but of ours, the flesh that is opposed to the Spirit, and held to the words ‘This is my body’. The disagreement divided the Protestant churches, and each side still reads 6:63 its own way.",
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "Life comes through the Spirit, and the Spirit comes through Jesus' words. Whatever else the discourse means, it cannot mean that life comes by a physical process apart from the Spirit and faith; on this every Christian tradition agrees, while differing on what the Spirit uses."
+        }
+      ],
+      "refs": ["John 3:6", "John 5:21", "2 Corinthians 3:6", "John 6:68", "Romans 8:2"]
+    },
+    {
+      "v": "64-65",
+      "context": "Jesus names the unbelief among his disciples, and John adds that Jesus knew from the start who did not believe and who would betray him. Jesus then repeats that no one can come to him unless it is granted by the Father.",
+      "grammar": "Eisin ex humōn tines hoi ou pisteuousin, ‘there are some of you who do not believe’, is spoken to people called disciples (6:60). John's aside, ēdei gar ex archēs, ‘for he knew from the beginning’, likely means from the beginning of his ministry, as in 15:27, though some read it of a knowledge before time. Tis estin ho paradōsōn auton, ‘who it was who would betray him’, uses a rare future participle, ‘the one who will hand him over’. In verse 65 ean mē ē dedomenon autō ek tou patros, ‘unless it has been given to him from the Father’, is a periphrastic perfect passive subjunctive: coming depends on a gift already given.",
+      "words": ["G4100", "G0746", "G3860", "G1325", "G1410"],
+      "theology": [
+        {
+          "id": "election",
+          "note": "Jesus explains unbelief among his followers by returning to the Father's giving (6:37, 44). The verse is meant to account for defection, not to discourage the anxious: the Father's gift makes coming possible, and the one who comes is not cast out."
+        },
+        {
+          "id": "sovereignty",
+          "note": "The betrayal is foreknown from the beginning, yet Judas is chosen, kept, and held responsible. John presents God's knowledge and human responsibility together, as he does again in 13:18-27."
+        }
+      ],
+      "refs": ["John 2:24-25", "John 13:11", "John 13:18", "John 15:27"]
+    },
+    {
+      "v": "66",
+      "context": "Many disciples turn back and no longer walk with him. It is the saddest sentence in the chapter, and a turning point in the Galilean ministry.",
+      "grammar": "Ek toutou can mean ‘from this time’ or ‘for this reason’; both fit, and John may mean both. Apēlthon eis ta opisō, literally ‘they went away to the things behind’, means they went back to their old lives (the same phrase is used of those who fall back at Jesus' arrest in 18:6). Ouketi met' autou periepatoun, ‘they no longer walked with him’, uses the imperfect for an ongoing practice that ended: discipleship was literally walking with the teacher, and they stopped.",
+      "words": ["G3101", "G0565", "G3694", "G4043"],
+      "theology": [
+        {
+          "id": "perseverance",
+          "note": "Those who hold that true believers cannot finally fall away read these disciples with 1 John 2:19, as followers who were never truly given to the Son (6:64). Those who hold that believers can fall away read the verse as a warning that real discipleship can be abandoned. Both take it as a warning that following Jesus for a time is not the same as remaining with him."
+        }
+      ],
+      "refs": ["1 John 2:19", "John 18:6", "Luke 9:62", "Hebrews 10:38-39"]
+    },
+    {
+      "v": "67-69",
+      "context": "Jesus turns to the Twelve, named as a group for the first time in John, and asks whether they want to leave too. Peter answers for them: there is no one else to go to, because Jesus has the words of eternal life, and they have come to believe and know that he is the Holy One of God. This is John's counterpart to Peter's confession at Caesarea Philippi.",
+      "grammar": "Mē kai humeis thelete hupagein, with mē, expects the answer no: ‘You do not want to go away too, do you?’ Pros tina apeleusometha, ‘to whom shall we go?’, a deliberative future. Rhēmata zōēs aiōniou echeis, ‘you have words of eternal life’, picks up 6:63. Hēmeis pepisteukamen kai egnōkamen, ‘we have believed and have come to know’, uses two perfects, a faith reached and still held. John often pairs believing and knowing without ranking them (17:8, 1 John 4:16). Su ei ho hagios tou theou, ‘you are the Holy One of God’, is the title the demon uses in Mark 1:24 and Luke 4:34; Jesus later speaks of himself as the one the Father sanctified and sent (10:36).",
+      "words": ["G1427", "G2309", "G5217", "G4074G", "G4487", "G2222", "G4100", "G1097", "G0040G"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Peter's faith does not rest on having understood the hard saying. It rests on who Jesus is and on the life his words give. Faith here is staying when others leave, because there is nowhere else to find life."
+        }
+      ],
+      "text": "Later manuscripts expand Peter's confession to ‘the Christ, the Son of the living God’ (so the King James Version), matching Matthew 16:16. The earliest manuscripts, including Papyri 66 and 75 and Codices Sinaiticus and Vaticanus, read “the Holy One of God”.",
+      "parallels": ["Mark 8:27-30", "Matthew 16:13-20", "Luke 9:18-20"],
+      "refs": ["Mark 1:24", "John 10:36", "John 11:27", "Psalm 106:16"]
+    },
+    {
+      "v": "70-71",
+      "context": "Jesus answers Peter's ‘we’ with a warning: he chose the Twelve, and one of them is a devil. John explains that he meant Judas son of Simon Iscariot, who would betray him. The chapter that began with thousands ends with one traitor inside the circle.",
+      "grammar": "Ouk egō humas tous dōdeka exelexamēn, ‘did I not choose you, the Twelve?’, expects yes; the aorist middle exelexamēn means ‘I chose for myself’. Kai ex humōn heis diabolos estin, ‘and of you one is a devil’, has diabolos without the article; it may mean ‘a devil’ or, with a predicate noun placed before the verb, ‘the devil’ in character. John later says the devil put betrayal in Judas' heart and Satan entered him (13:2, 27). The Synoptic Gospels, right after Peter's confession, have Jesus call Peter ‘Satan’ for resisting the cross (Mark 8:33); in John, the adversary among the Twelve is Judas. Emellen paradidonai auton, ‘he was going to hand him over’, uses paradidōmi, the verb for betrayal and for being handed over to death.",
+      "words": ["G1586", "G1427", "G1228", "G2455H", "G2469", "G3195", "G3860"],
+      "theology": [
+        {
+          "id": "election",
+          "note": "Jesus' choosing of the Twelve includes Judas. The verse shows that being chosen for an office or a place near Jesus is not the same as belonging to him in faith; Jesus chose Judas knowingly (6:64), and Judas remained responsible for his betrayal."
+        }
+      ],
+      "parallels": ["Mark 8:31-33", "Matthew 16:21-23"],
+      "refs": ["John 13:2", "John 13:27", "John 17:12", "Luke 22:3"]
+    }
+  ]
+}

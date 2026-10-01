@@ -1,0 +1,293 @@
+{
+  "verses": [
+    {
+      "v": "1-2",
+      "context": "News of Jesus reaches Herod Antipas, and the ruler's first thought is that John, whom he had killed, has come back. The chapter opens with a guilty conscience and continues the question of who Jesus is, which Nazareth answered in 13:55 with ‘the carpenter's son’ and Herod now answers with ‘John raised from the dead’.",
+      "grammar": "En ekeinō tō kairō, ‘at that time’, is Matthew's loose link between episodes (11:25, 12:1); it does not fix a date. Ēkousen ... tēn akoēn Iēsou, literally ‘heard the hearing of Jesus’, uses akoē for a report passed from mouth to mouth. Matthew gives Herod his proper title, tetraarchēs. In Herod's words the pronoun is emphatic, autos ēgerthē apo tōn nekrōn, ‘he himself has been raised from the dead’, and ēgerthē, an aorist passive, is the verb Matthew will use of Jesus' resurrection (27:64, 28:6-7). Dia touto hai dunameis energousin en autō, ‘for this reason the powers are at work in him’, treats the dunameis almost as active forces operating through a man returned from death; energeō gives English its ‘energy’.",
+      "words": ["G2540", "G0189", "G5076", "G1453", "G3498", "G1411", "G1754"],
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "Herod's fear shows that the idea of a dead man raised was thinkable in first-century Galilee, though here it is a guilty guess about John, who by John's Gospel did no signs (John 10:41). The chapter lets the reader set this rumor beside the real resurrection Matthew will proclaim, of one who was killed as John was and raised by God."
+        }
+      ],
+      "parallels": ["Mark 6:14-16", "Luke 9:7-9"],
+      "refs": ["Matthew 16:13-14", "John 10:41", "Luke 23:8", "Matthew 28:6-7"]
+    },
+    {
+      "v": "3-5",
+      "context": "A flashback explains Herod's fear. He had arrested John because John kept telling him that his marriage to Herodias was unlawful. Matthew's Herod wanted John dead from the start but feared the crowd, who held John to be a prophet, a motive close to the political fear Josephus describes (Antiquities 18.118).",
+      "grammar": "Gar, ‘for’, in verse 3 marks what follows as background. The aorists kratēsas, edēsen, and apetheto, ‘having seized, he bound and put away’, carry the sense of English pluperfects, ‘he had seized, bound, and imprisoned’, since Greek narrative uses the aorist for events earlier than the main story as well. Elegen in verse 4 is an imperfect, ‘he had been saying’: John's rebuke was repeated, not a single outburst. Ouk exestin soi echein autēn, ‘it is not lawful for you to have her’, uses exestin, the word for what the law permits (12:2, 12:10, 19:3), and echein in its sense of having as wife. In verse 5 the participle thelōn is concessive, ‘though he wanted to kill him’, and hoti hōs prophētēn auton eichon, ‘because they held him as a prophet’, is the phrase used again of John in 21:26 and of Jesus in 21:46, where the leaders fear the crowd in the same way.",
+      "words": ["G2902", "G1210", "G5438G", "G0659", "G3004G", "G1832", "G2309", "G0615", "G5399", "G4396"],
+      "ot": [
+        {
+          "ref": "Leviticus 18:16",
+          "note": "The Holiness Code forbids a man to take his brother's wife, and Leviticus 20:21 calls such a union impurity. The only exception was levirate marriage, when a brother died childless (Deuteronomy 25:5-10), and Herodias's first husband was alive and she had a daughter. John's charge applies the Torah to the ruler of Galilee in the plainest terms. The note on Mark 6:17-18 gives the Hebrew and the Septuagint."
+        }
+      ],
+      "text": "Most manuscripts call Herodias ‘his brother Philip's wife’, but the Latin Vulgate and a few other witnesses have only ‘his brother's wife’. Some scholars think the name came in from Mark 6:17; most editors keep it. Josephus calls her first husband Herod (Antiquities 18.109, 136), and the question of the name is discussed in the chapter note.",
+      "theology": [
+        {
+          "id": "state",
+          "note": "John holds the ruler to the same law as everyone else. The verse assumes that political power does not place a man above God's commands for marriage, and that a prophet's task includes saying so to the powerful at his own risk, as Nathan did to David and Elijah to Ahab."
+        }
+      ],
+      "parallels": ["Mark 6:17-20", "Luke 3:19-20"],
+      "refs": ["Leviticus 18:16", "Leviticus 20:21", "Matthew 21:26", "Matthew 21:46", "2 Samuel 12:7"]
+    },
+    {
+      "v": "6-8",
+      "context": "At Herod's birthday feast the daughter of Herodias dances and pleases him, and he swears to give her whatever she asks. Prompted by her mother, she asks for John's head on a platter, here and now. Matthew omits the king's offer of half his kingdom that Mark gives (Mark 6:23), keeping the scene brief and the focus on the oath.",
+      "grammar": "Genesiois de genomenois tou Hērōdou, ‘when Herod's birthday came’, is a dative of time with a plural noun, genesia, the name of the festival. Ōrchēsato en tō mesō, ‘danced in the middle’, places the girl before the reclining guests. Meth' horkou hōmologēsen, ‘he promised with an oath’, uses homologeō, which means to agree or declare publicly, so the promise was made before witnesses. Ho ean aitēsētai, ‘whatever she might ask’, is an open-ended relative clause with the subjunctive. Probibastheisa, an aorist passive participle found only here in the New Testament, means ‘having been pushed forward’ or ‘instructed’: the request is her mother's. Dos moi, ‘give me’, is an aorist imperative, and hōde, ‘here’, demands the head at once, on a pinax, a flat serving dish.",
+      "words": ["G1077", "G1096", "G3738", "G0700", "G3727", "G3670", "G0154", "G4264", "G5602", "G4094", "G2776"],
+      "history": "In older Greek the word genesia could name a commemoration held on a dead person's birthday (Herodotus 4.26 uses it so), but by the Roman period it commonly meant a living person's birthday feast, and that is its sense here. Josephus names Herodias's daughter Salome and says she later married Philip the tetrarch (Antiquities 18.136-137); the Gospels leave her unnamed. Matthew calls her a korasion, a girl (verse 11), without saying her age.",
+      "text": "The later manuscripts behind the King James Version read genesiōn de agomenōn, ‘when Herod's birthday was being kept’, a genitive absolute, which the KJV renders ‘when Herod's birthday was kept’. The earliest witnesses have the dative construction. The meaning is the same.",
+      "theology": [
+        {
+          "id": "sin",
+          "note": "The scene shows sin moving from pleasure to promise to murder, each step easier than the last. Jesus had forbidden oaths so that a disciple's plain yes or no would be enough (5:33-37); Herod's oath binds him to a crime he could have refused."
+        }
+      ],
+      "parallels": ["Mark 6:21-25"],
+      "refs": ["Genesis 40:20-22", "Esther 5:3", "Matthew 5:33-37", "Judges 11:30-35"]
+    },
+    {
+      "v": "9-11",
+      "context": "The king is grieved, but for the sake of his oaths and his guests he orders the head given. John is beheaded in prison, and the head is brought on a platter to the girl, who gives it to her mother. Matthew tells it in a few clipped clauses, without comment.",
+      "grammar": "Lupētheis ho basileus, ‘the king, though grieved’, is a concessive aorist passive participle; Matthew calls Antipas ‘king’ here, as people commonly did, though verse 1 gave his true title. Dia tous horkous kai tous sunanakeimenous, ‘because of the oaths and those reclining with him’, gives two reasons, both about honor before others. Ekeleusen dothēnai, ‘he ordered it to be given’, then pempsas apekephalisen ton Iōannēn, literally ‘having sent, he beheaded John’: Greek, like English ‘Herod beheaded John’, credits the act to the one who ordered it. Verse 11 moves the head along in three steps, ēnechthē, edothē, ēnegken, ‘it was brought, it was given, she brought it’, each clause shorter and colder than the last.",
+      "words": ["G3076", "G0935", "G3727", "G4873", "G2753", "G3992", "G0607", "G5438G", "G4094", "G2877"],
+      "history": "Josephus says John was sent in chains to Machaerus, the fortress-palace east of the Dead Sea, and killed there (Antiquities 18.119). At Machaerus the prison and the palace stood on the same hilltop, which would fit a head brought into the banquet during the feast, though Matthew does not name the place, and some place the banquet at Tiberias, since Mark mentions the leading men of Galilee. The Mishnah describes beheading with the sword as the manner in which the government does it (m. Sanhedrin 7:3).",
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "John dies for speaking the truth to a ruler, killed by a man who knew better and gave way to pressure from those around him. Matthew has already said that the Son of Man will suffer at their hands as John did (17:12 makes it explicit), and Pilate will repeat Herod's pattern: reluctant, afraid of the crowd, and yielding (27:17-26)."
+        }
+      ],
+      "parallels": ["Mark 6:26-28"],
+      "refs": ["Matthew 17:12", "Matthew 27:24-26", "Matthew 23:34-35", "Hebrews 11:36-38"]
+    },
+    {
+      "v": "12",
+      "context": "John's disciples take his body, bury it, and go and tell Jesus. The notice links the flashback to the present: Jesus hears of John's death in the next verse and withdraws.",
+      "grammar": "Ēran to ptōma, ‘they took the corpse’, uses ptōma, literally ‘what has fallen’, the word for a dead body. Ethapsan auton, ‘they buried him’, uses a masculine pronoun, so that the burial is of John and not merely of ‘it’. Elthontes apēngeilan tō Iēsou, ‘they came and reported to Jesus’, uses the verb of 11:4, where Jesus told John's disciples to go and report to John what they heard and saw. Now John's disciples report to Jesus that their teacher is dead; the last exchange between the two men is carried by the same messengers.",
+      "words": ["G3101", "G0142", "G4430", "G2290", "G0518"],
+      "text": "The later manuscripts behind the King James Version read sōma, ‘body’, where the earliest witnesses have ptōma, ‘corpse’, and auto, ‘it’, where the earliest have auton, ‘him’. The later readings smooth the wording; the sense is unchanged.",
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "Faithful witness is not rescued from death here; it is buried by those who loved it and brought to Jesus in grief. The verse does not explain John's death, but it shows where his disciples took the news, and Jesus' response is to withdraw and then to feed a crowd."
+        }
+      ],
+      "parallels": ["Mark 6:29"],
+      "refs": ["Matthew 11:2-6", "Matthew 27:57-61", "Acts 8:2"]
+    },
+    {
+      "v": "13-14",
+      "context": "Hearing of John's death, Jesus withdraws by boat to a desolate place to be alone, but the crowds follow on foot from the towns. When he lands and sees them, his grief gives way to compassion, and he heals their sick. Matthew says he healed; Mark says he taught (Mark 6:34).",
+      "grammar": "Anechōrēsen, ‘he withdrew’, is Matthew's verb for Jesus' retreats before danger (2:14, 4:12, 12:15, 15:21). Eis erēmon topon kat' idian, ‘to a desolate place privately’, uses erēmos, the word for the wilderness where Israel was fed (Exodus 16). Pezē, ‘on foot’, can also mean ‘by land’, contrasting the crowd's route with Jesus' boat. In verse 14 exelthōn, ‘having gone out’, means stepping out of the boat. Esplagchnisthē ep' autois, ‘he was moved with compassion for them’, is an aorist passive of splagchnizomai, the verb of the gut-deep compassion the Gospels give almost only to Jesus. Etherapeusen tous arrōstous, ‘he healed their sick’, uses arrōstos, literally ‘without strength’.",
+      "words": ["G0402", "G4143", "G2048", "G2398", "G3979", "G4697", "G2323", "G0732"],
+      "history": "Luke places the feeding near Bethsaida (Luke 9:10), a town on the northeast shore in the territory of Philip the tetrarch, so that the withdrawal also took Jesus out of the realm of Antipas, who had just killed John. Christian tradition from the fourth century remembered the site at Tabgha on the northwest shore, where the Church of the Multiplication preserves a fifth-century mosaic of loaves and fish. The difference is one of tradition and geography; the Gospels agree only that it was a lonely place by the lake.",
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "Jesus grieves the death of a friend and kinsman (Luke 1:36) and seeks solitude, as any mourner might. The one who will walk on the sea in verse 25 first shows the ordinary need of a human heart for quiet after loss, and then sets it aside for others. Hebrews says we have a high priest able to sympathize with our weakness (Hebrews 4:15)."
+        }
+      ],
+      "parallels": ["Mark 6:32-34", "Luke 9:10-11", "John 6:1-3"],
+      "refs": ["Matthew 9:36", "Matthew 4:12", "Matthew 12:15", "Hebrews 4:15"]
+    },
+    {
+      "v": "15-16",
+      "context": "As evening comes, the disciples suggest sending the crowd to the villages to buy food. Jesus answers that they need not go, and tells the disciples to feed them themselves. The command is impossible on its face, which is its point.",
+      "grammar": "Opsias de genomenēs, ‘when evening had come’, is a genitive absolute; opsia can mean late afternoon as well as evening, which is why verse 23 can use the same phrase again later. The disciples' speech gives two reasons in parallel clauses, erēmos estin ho topos, ‘the place is desolate’, and hē hōra ēdē parēlthen, ‘the hour has already passed’, and an aorist imperative, apoluson, ‘send away’. Jesus answers with a flat denial, ou chreian echousin apelthein, ‘they have no need to go away’, and an imperative whose pronoun stands emphatically last: dote autois humeis phagein, ‘give them to eat, you yourselves’.",
+      "words": ["G3798", "G2048", "G5610", "G3928", "G0630G", "G0059", "G1033", "G5532", "G1325", "G4771"],
+      "ot": [
+        {
+          "ref": "2 Kings 4:42-44",
+          "note": "When a man brought Elisha twenty loaves, the prophet said, “Give it to the people to eat,” and his servant objected that it could not feed a hundred men. The Septuagint's dote tō laō kai esthietōsan, ‘give to the people and let them eat’, shares the command ‘give’ with Jesus' dote autois. Matthew's scene follows the same pattern, but with a difference: Jesus gives the command to the disciples, who stand where Elisha's doubting servant stood. The note on Mark 6:37-38 sets out the parallel in full."
+        }
+      ],
+      "theology": [
+        {
+          "id": "mission",
+          "note": "Jesus does not feed the crowd around his disciples but through them. The command ‘you give them something to eat’ assigns them a task beyond their means, and the rest of the story shows what happens when they bring him what little they have (verse 18) and carry out what he blesses (verse 19)."
+        }
+      ],
+      "parallels": ["Mark 6:35-37", "Luke 9:12-13", "John 6:5-7"],
+      "refs": ["2 Kings 4:42-44", "Numbers 11:13", "Numbers 11:21-23"]
+    },
+    {
+      "v": "17-18",
+      "context": "The disciples report what they have: five loaves and two fish. Jesus says, “Bring them here to Me,” words only Matthew records. The scene turns on moving the little they have from their hands to his.",
+      "grammar": "Ouk echomen hōde ei mē, ‘we do not have here anything except’, frames their supplies as nearly nothing. Pente artous kai duo ichthuas, ‘five loaves and two fish’, are counted exactly, as the leftovers will be in verse 20. Jesus' reply, pherete moi hōde autous, ‘bring them here to me’, is a present imperative, and the word hōde, ‘here’, answers the disciples' hōde of verse 17: what is ‘only here’ with them becomes ‘here’ with him.",
+      "words": ["G2192", "G5602", "G4002", "G0740", "G1417", "G2486", "G5342"],
+      "history": "The loaves were small round flat breads, a meal for one person or two; John specifies barley loaves, the bread of the poor (John 6:9). The fish were probably dried or salted, the staple relish of the lake's fishing towns. Magdala on the western shore was known in Greek as Taricheae, a name built on tarichos, ‘preserved fish’, which suggests how important the salting of fish was to the lake's economy.",
+      "parallels": ["Mark 6:38", "Luke 9:13", "John 6:8-9"],
+      "refs": ["John 6:9", "2 Kings 4:42", "Matthew 16:9"]
+    },
+    {
+      "v": "19",
+      "context": "Jesus has the crowd recline on the grass, takes the loaves and fish, looks up to heaven, blesses, breaks, and gives to the disciples, who give to the crowds. The sequence of verbs will return at the Last Supper (26:26), and the grass and reclining crowd recall the shepherd of Psalm 23.",
+      "grammar": "Keleusas tous ochlous anaklithēnai epi tou chortou, ‘having ordered the crowds to recline on the grass’, uses anaklinō, the posture of a proper meal, not a snack taken standing. Then a chain of participles and finite verbs: labōn, ‘taking’, anablepsas eis ton ouranon, ‘looking up to heaven’, eulogēsen, ‘he blessed’, klasas, ‘breaking’, edōken, ‘he gave’. Eulogēsen has no object: in Jewish practice the blessing is spoken to God, praising him as the giver of bread, not over the food to change it. Matthew 26:26 uses the same four actions, labōn ... eulogēsas eklasen kai dous, ‘taking ... having blessed, he broke and giving’. The final clause, hoi de mathētai tois ochlois, ‘and the disciples to the crowds’, leaves the verb understood, so the disciples simply pass on what Jesus gives.",
+      "words": ["G2753", "G3793", "G0347", "G5528", "G2983", "G0308", "G2127", "G2806", "G1325"],
+      "theology": [
+        {
+          "id": "offices",
+          "note": "In contrast with Herod's banquet, Jesus acts here as the true king and shepherd who feeds his people in the wilderness, doing what the Old Testament says God does: rain bread from heaven (Exodus 16:4) and prepare a table for his flock (Psalm 23:5). His kingship is shown in giving, not taking."
+        },
+        {
+          "id": "sacraments",
+          "note": "The same four verbs at the Last Supper have led readers from the early church onward to see the feeding as a sign pointing to the Lord's Supper. Catholic and Orthodox readers often stress that link, especially with John 6 in view; many Protestant readers see an anticipation of the Supper's meaning rather than a teaching about it. The verse itself shows the pattern of Jesus' giving that the Supper will make explicit."
+        }
+      ],
+      "parallels": ["Mark 6:39-41", "Luke 9:14-16", "John 6:10-11"],
+      "refs": ["Matthew 26:26", "Psalm 23:1-5", "Exodus 16:4", "Psalm 78:24"]
+    },
+    {
+      "v": "20-21",
+      "context": "Everyone eats and is satisfied, and twelve baskets of pieces are left over. Matthew counts about five thousand men, and alone adds ‘besides women and children’, so the crowd was larger still.",
+      "grammar": "Ephagon pantes kai echortasthēsan, ‘they all ate and were satisfied’, uses chortazō, the verb of 5:6, ‘they will be filled’. The leftovers are exact: to perisseuon tōn klasmatōn, ‘what was left over of the broken pieces’, dōdeka kophinous plēreis, ‘twelve baskets full’. Klasma, a piece broken off, is the word the Didache later uses for the eucharistic bread (Didache 9:3-4). In verse 21 hoi de esthiontes ēsan andres, ‘those eating were men’, uses anēr, an adult male, and chōris gunaikōn kai paidiōn, ‘apart from women and children’, uses chōris, ‘without, not counting’. Matthew repeats the whole phrase at 15:38.",
+      "words": ["G5315", "G5526", "G4052", "G2801", "G1427", "G2894", "G4134", "G2068", "G0435G", "G4000", "G1135G", "G3813"],
+      "ot": [
+        {
+          "ref": "Exodus 12:37",
+          "note": "Israel left Egypt with “about 600,000 men on foot, besides women and children.” The Hebrew counts haggevarim, ‘the men’, levad mittaf, ‘besides the little ones’; the Septuagint renders the last phrase plēn tēs aposkeuēs, ‘besides the household’ or ‘baggage’. Matthew's chōris gunaikōn kai paidiōn does not follow the Septuagint's wording, so if he means to recall the exodus crowd, as many readers think, he echoes the Hebrew way of counting rather than the Greek text. Numbers 1 likewise counts Israel by its men. The phrase fits Matthew's picture of Jesus feeding a new wilderness people."
+        }
+      ],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The miracle ends in satisfaction and surplus. The psalmist praised God because He “fills the hungry with good things” (Psalm 107:9), and the leftovers show that God's provision in Jesus is not rationed to the bare minimum. Jesus will later ask the disciples to remember these baskets (16:9)."
+        }
+      ],
+      "parallels": ["Mark 6:42-44", "Luke 9:17", "John 6:12-13"],
+      "refs": ["Exodus 12:37", "Psalm 107:9", "Matthew 5:6", "Matthew 16:9", "2 Kings 4:44"]
+    },
+    {
+      "v": "22-23",
+      "context": "Jesus at once makes the disciples go ahead of him by boat while he dismisses the crowds, then goes up the mountain alone to pray. John explains the haste: the crowd wanted to make him king by force (John 6:15). Night finds Jesus on the mountain and the disciples on the water.",
+      "grammar": "Ēnagkasen, ‘he compelled’, is a strong verb (anagkazō), used of forcing someone against resistance; the disciples went unwillingly or at least on command. Proagein auton eis to peran, ‘to go before him to the other side’, and heōs hou apolusē tous ochlous, ‘until he should dismiss the crowds’, show that Jesus intended to follow. Anebē eis to oros kat' idian proseuxasthai, ‘he went up on the mountain by himself to pray’, uses an aorist infinitive of purpose. Opsias de genomenēs monos ēn ekei, ‘when evening came, he was there alone’, uses monos, ‘alone’, which with kat' idian stresses solitude twice.",
+      "words": ["G0315", "G1684", "G4254", "G0630G", "G3735", "G2398", "G4336", "G3798", "G3441"],
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "After the crowds and before the storm, Jesus prays alone. Matthew shows him praying on a mountain here and in Gethsemane (26:36-44), both times at night and both times while his disciples face a trial they do not yet understand. The disciples struggle on the water while he prays for them, a pattern the church has long seen in Christ's continuing intercession (Hebrews 7:25)."
+        }
+      ],
+      "parallels": ["Mark 6:45-46", "John 6:15-17"],
+      "refs": ["John 6:15", "Matthew 26:36-39", "Luke 6:12", "Hebrews 7:25"]
+    },
+    {
+      "v": "24",
+      "context": "The boat is far from land and battered by waves, because the wind is against it. The disciples are doing what Jesus commanded and are in trouble because of it.",
+      "grammar": "Stadious pollous apo tēs gēs apeichen, ‘was many stadia distant from the land’, uses apechō, ‘to be distant’, with the imperfect of a continuing state. Basanizomenon hupo tōn kumatōn, ‘being tormented by the waves’, uses basanizō, a word for torture, which Matthew has used for the paralyzed servant ‘suffering terribly’ (8:6) and the demons' fear of torment (8:29); the waves are pictured as tormentors. Ēn gar enantios ho anemos, ‘for the wind was contrary’, gives the cause with gar.",
+      "words": ["G4143", "G4712", "G0568", "G0928H", "G2949", "G1727", "G0417"],
+      "history": "The Sea of Galilee lies roughly 210 meters below sea level in a basin ringed by hills, and winds dropping onto it can raise steep waves quickly; fishermen on the lake have always feared a sudden storm at night. A stadion was about 185 meters, and John puts the boat some twenty-five or thirty stadia out, three or four miles (John 6:19).",
+      "text": "Codex Vaticanus, with some early versions, reads ‘many stadia’ from land, the reading of the modern critical editions and the source of the BSB's “far from land”. Most other manuscripts, followed by the King James Version, read ‘in the midst of the sea’, the wording of Mark 6:47, and some textual scholars think that reading original. The difference affects only the description of the boat's position.",
+      "parallels": ["Mark 6:47-48", "John 6:18"],
+      "refs": ["Matthew 8:24", "Psalm 107:25-27", "Acts 27:14-15"]
+    },
+    {
+      "v": "25-26",
+      "context": "In the fourth watch, between about three and six in the morning, Jesus comes to them walking on the sea. The disciples, seeing him, are terrified and cry out that it is a ghost. The first storm scene ended with the question “What kind of man is this?” (8:27); this one moves toward an answer.",
+      "grammar": "Tetartē de phulakē tēs nuktos, ‘in the fourth watch of the night’, is a dative of time. Ēlthen pros autous peripatōn epi tēn thalassan, ‘he came to them walking on the sea’, uses epi with the accusative, while verse 26 has epi tēs thalassēs with the genitive. Some grammarians see the accusative as movement across the surface and the genitive as position on it; others think the two had become interchangeable. Etarachthēsan, ‘they were troubled’, is the verb used of Herod and Jerusalem at the Magi's news (2:3). Phantasma estin, ‘it is a ghost’, and apo tou phobou ekraxan, ‘they cried out from fear’, show fear overcoming recognition.",
+      "words": ["G5067", "G5438H", "G3571", "G4043", "G2281", "G5015", "G5326", "G5401", "G2896"],
+      "ot": [
+        {
+          "ref": "Job 9:8",
+          "note": "Job says God alone “stretches out the heavens and treads on the waves of the sea.” The Septuagint renders it ‘walking on the sea as on dry ground’, with peripateō, Matthew's verb. Psalm 77:19 says to God, “Your path led through the sea,” recalling the exodus, and Isaiah 43:16 speaks of the LORD who makes a way in the sea. Matthew does not quote these texts, but in Israel's Scriptures walking on the sea is something only God does. The notes on Mark 6:48 and John 6:19 give the Hebrew and the Greek in full."
+        }
+      ],
+      "parallels": ["Mark 6:48-50", "John 6:19"],
+      "refs": ["Job 9:8", "Psalm 77:19", "Isaiah 43:16", "Habakkuk 3:15"]
+    },
+    {
+      "v": "27",
+      "context": "Jesus speaks at once: take courage, it is I, do not be afraid. The three short clauses answer the three parts of the disciples' fear: their panic, their mistaken identity, and their terror.",
+      "grammar": "Tharseite, ‘take courage’, is a present imperative; Jesus used the same word to the paralyzed man (9:2) and the woman with the flow of blood (9:22). Egō eimi, ‘I am’, can be the ordinary way to say ‘it is I’, but in the Greek Old Testament it renders God's self-naming, ‘I am he’ (Isaiah 43:10, Deuteronomy 32:39). Mē phobeisthe, a present imperative with mē, means ‘stop being afraid’ and is the standard word of reassurance in divine appearances (17:7, 28:5, 28:10). Spoken on the sea by one walking on it, the words work on both levels: identification and self-disclosure.",
+      "words": ["G2112", "G2980", "G2293", "G1473", "G1510", "G5399"],
+      "ot": [
+        {
+          "ref": "Isaiah 43:10",
+          "note": "The LORD tells Israel they are his witnesses “so that you may consider and believe Me and understand that I am He.” The Hebrew is ani hu; the Septuagint has egō eimi. A few verses earlier he promises, “When you pass through the waters, I will be with you” (Isaiah 43:2), and tells his people not to fear. Jesus' words on the lake gather the same elements: the waters, the command not to fear, and the divine name. John's note on 6:20 treats the phrase at length."
+        }
+      ],
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "The man who withdrew in grief (verse 13) and prayed alone (verse 23) now speaks on the waves with the words of God's self-disclosure. Matthew places the human and divine sides of Jesus next to each other without explaining how they belong together, which the church later confessed at Chalcedon (451) as two natures in one person."
+        },
+        {
+          "id": "names-of-god",
+          "note": "‘I am’ is the form in which God names himself to Moses and to Israel in exile (Exodus 3:14, Isaiah 43:10). On Jesus' lips here it is at least a hint of that name, and the disciples' worship in verse 33 shows they heard more than a friend's greeting."
+        }
+      ],
+      "parallels": ["Mark 6:50", "John 6:20"],
+      "refs": ["Exodus 3:14", "Isaiah 43:1-2", "Isaiah 43:10", "Matthew 28:10", "John 8:58"]
+    },
+    {
+      "v": "28-29",
+      "context": "Only Matthew tells of Peter's walk. Peter asks Jesus to command him to come on the water; Jesus says one word, “Come”; Peter gets out of the boat, walks on the water, and comes toward Jesus. This is the first of several scenes in which Matthew gives Peter a part of his own (15:15, 16:16-19, 17:24-27).",
+      "grammar": "Kurie, ei su ei, ‘Lord, if it is you’, is a condition that assumes the premise for the sake of the request; it is less doubt than a request for proof by command. Some readers hear an ironic echo of the tempter's ‘if you are the Son of God’ (4:3, 6), though Peter asks not for a display but for a word. Keleuson me elthein pros se, ‘command me to come to you’, recognizes that he can do it only on Jesus' order. Jesus answers with a single aorist imperative, elthe, ‘come’. Katabas apo tou ploiou, ‘having gone down from the boat’, and periepatēsen epi ta hudata, ‘he walked on the waters’, use the same verb for Peter as for Jesus in verse 25: for a few steps Peter does what only God does, by Jesus' word.",
+      "words": ["G4074G", "G2962G", "G4771", "G1510", "G2753", "G2064", "G2597", "G4143", "G4043", "G5204"],
+      "text": "The earliest witnesses read that Peter walked on the water ‘and came toward Jesus’ (kai ēlthen). Later manuscripts, followed by the King James Version, read ‘to go to Jesus’ (elthein), which leaves open whether he reached him. The reading of the modern editions implies that Peter really made progress before he looked at the wind.",
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Peter's faith acts on a word of command, not on a feeling of confidence. He asks for Jesus' order, receives it, and steps out. The verse defines faith by its object: Peter walks on the water not because he is strong but because Jesus has said, ‘Come’."
+        }
+      ],
+      "refs": ["Matthew 4:3-6", "Matthew 16:16-18", "John 21:7", "Hebrews 11:1"]
+    },
+    {
+      "v": "30-31",
+      "context": "Seeing the wind, Peter is afraid, begins to sink, and cries, “Lord, save me!” Jesus at once reaches out his hand, catches him, and asks why he doubted. The rescue comes before the rebuke.",
+      "grammar": "Blepōn de ton anemon ischuron, ‘seeing the wind, strong’, uses a present participle: as long as he looks at the wind he is afraid. Arxamenos katapontizesthai, ‘beginning to sink’, uses a verb found elsewhere in the New Testament only in 18:6, of being drowned in the depths of the sea. Kurie, sōson me, ‘Lord, save me’, is an aorist imperative, a three-word prayer, and it repeats the disciples' cry in the first storm, ‘Lord, save us’ (8:25). Eutheōs ... ekteinas tēn cheira epelabeto autou, ‘immediately, stretching out his hand, he took hold of him’, puts the rescue before any words. Oligopiste, ‘you of little faith’, is a vocative, and eis ti edistasas, literally ‘for what did you doubt?’, uses distazō, ‘to waver, to be of two minds’, a verb found only here and in 28:17.",
+      "words": ["G0991", "G0417", "G2478", "G5399", "G0757", "G2670", "G2962G", "G4982", "G1614", "G5495", "G1949", "G3640", "G1365"],
+      "ot": [
+        {
+          "ref": "Psalm 18:16",
+          "note": "David sings, “He reached down from on high and took hold of me; He drew me out of deep waters.” The Hebrew verb for ‘drew me out’ is yamsheni, from mashah, a verb used elsewhere only in the same psalm in 2 Samuel 22:17 and in Exodus 2:10, where it explains the name of Moses, drawn from the water. The Septuagint (Psalm 17:17) has ‘he took me’ and ‘he took me to himself out of many waters’. Peter's cry echoes Psalm 69:1, “Save me, O God, for the waters are up to my neck.” Matthew does not quote either psalm, but Peter prays as the psalmist prayed, and Jesus answers as the psalmist says God answered."
+        }
+      ],
+      "text": "Codex Sinaiticus and the first hand of Codex Vaticanus lack ischuron, ‘strong’, so that Peter saw ‘the wind’. Most editors think a scribe's eye skipped from one word to the next with the same ending and print the adjective, as the BSB does with “the strength of the wind”.",
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Jesus calls Peter ‘little faith’, not ‘no faith’: the faith that got him out of the boat was real, but his attention moved from the word to the wind. Doubt here is a divided mind in a believer, and Jesus meets it with a hand before a question. The same verb for doubt returns in 28:17, where some of the disciples doubt even as they worship the risen Jesus, and he comes near to them."
+        }
+      ],
+      "refs": ["Psalm 69:1-2", "Psalm 18:16", "Matthew 8:25-26", "Matthew 28:17", "James 1:6"]
+    },
+    {
+      "v": "32-33",
+      "context": "When they climb into the boat the wind stops, and those in the boat worship Jesus, saying, “Truly You are the Son of God!” Mark ends the same scene with astonishment and hardened hearts (Mark 6:51-52); Matthew ends it with a confession that anticipates Peter's in 16:16.",
+      "grammar": "Anabantōn autōn eis to ploion, ‘when they had gone up into the boat’, is a genitive absolute. Ekopasen ho anemos, ‘the wind grew tired’, uses kopazō, as if the wind were exhausted. Hoi de en tō ploiō prosekunēsan autō, ‘those in the boat worshiped him’, uses proskuneō, which can mean a bow of respect but in Matthew gathers around Jesus. Alēthōs theou huios ei, ‘truly you are God's Son’, places the predicate before the verb without the article. Grammarians debate how far such a word order makes the noun definite (the rule proposed by E. C. Colwell in 1933 concerns just this construction); the same wording without articles appears in the centurion's confession at the cross (27:54), and in context both mean the title, not a son of God among others.",
+      "words": ["G0305", "G4143", "G2869", "G0417", "G4352", "G0230", "G2316", "G5207"],
+      "text": "Modern editions read anabantōn, ‘having gone up’; the later manuscripts behind the King James Version read embantōn, ‘having entered’. The KJV's ‘when they were come into the ship’ reflects that reading. The sense is the same.",
+      "theology": [
+        {
+          "id": "worship",
+          "note": "In a Gospel where Jesus himself quotes the command to worship God alone (4:10), the disciples worship Jesus and he accepts it. This is the first time in Matthew that the disciples do so; the Magi did it at his birth (2:11), and the women and the Eleven will do it after the resurrection (28:9, 17)."
+        }
+      ],
+      "parallels": ["Mark 6:51-52", "John 6:21"],
+      "refs": ["Matthew 16:16", "Matthew 27:54", "Matthew 4:10", "Matthew 28:17", "Psalm 107:29-32"]
+    },
+    {
+      "v": "34-36",
+      "context": "They land at Gennesaret. The people recognize Jesus, send word through the whole region, and bring all their sick, begging only to touch the tassel of his cloak, and all who touch it are made well. The chapter that began with a king's fear ends with a whole district finding healing.",
+      "grammar": "Diaperasantes, ‘having crossed over’, is an aorist participle. Epignontes, ‘having recognized’, uses epiginōskō, a compound of knowing that often means full recognition. Parekaloun, an imperfect, ‘they kept begging’, and hina monon hapsōntai tou kraspedou, ‘that they might only touch the tassel’, echo the woman of 9:20-21. Hosoi hēpsanto diesōthēsan, ‘as many as touched were brought safely through’, uses diasōzō, a compound of sōzō, ‘to save’: the healing is described with the vocabulary of salvation, the same family of verbs as Peter's “save me” in verse 30.",
+      "words": ["G1276", "G1082", "G1921", "G4066", "G3870", "G3441", "G0681", "G2899", "G2440", "G1295"],
+      "history": "Gennesaret was the fertile plain on the northwest shore between Magdala and Capernaum, which Josephus praises for its year-round fruit (Jewish War 3.516-521). The name is generally connected with Kinnereth, the Old Testament name of the lake (Numbers 34:11, Joshua 13:27), and 1 Maccabees 11:67 speaks of the water of Gennesar. Luke calls the lake itself ‘the lake of Gennesaret’ (Luke 5:1). The tassel, the kraspedon, was the fringe the law required on the corners of an Israelite's cloak (Numbers 15:38-39), so the sick reached for the part of his clothing that marked him as faithful to the commandments.",
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "Matthew describes physical healing with a verb of saving, as he did with the woman whose faith ‘made you well’ (9:22, sōzō). In his Gospel the healings are signs of the salvation Jesus brings, whose name means that he will save his people from their sins (1:21)."
+        }
+      ],
+      "parallels": ["Mark 6:53-56"],
+      "refs": ["Matthew 9:20-22", "Numbers 15:38-39", "Luke 5:1", "Acts 5:15", "Matthew 1:21"]
+    }
+  ]
+}

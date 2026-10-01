@@ -344,7 +344,7 @@ for (const b of books) {
 }
 
 // Doctrine studies: checked where present; required once STUDIES_COMPLETE.
-const STUDIES_COMPLETE = false;
+const STUDIES_COMPLETE = true;
 for (const id of doctrineIds) {
   if (partial && !only.includes(id)) continue;
   if (!fs.existsSync(path.join(DIR, "doctrines", `${id}.json`))) { if (!partial && STUDIES_COMPLETE) fail(`doctrines/${id}`, "missing study"); continue; }
