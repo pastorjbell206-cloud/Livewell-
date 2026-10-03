@@ -1,0 +1,916 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "A hinge verse. It closes the Sermon on the Plain (6:20-49) and moves Jesus back to Capernaum, the lakeside town that has served as his base since 4:31. What follows turns from teaching to deeds: the words just spoken about hearing and doing are now matched by a word that heals at a distance.",
+      "grammar": "Epeidē normally means ‘since’ or ‘because’; here it is best taken as temporal, ‘when, after’, a rare sense in the New Testament, and the Byzantine manuscripts and the Textus Receptus read the more usual epei de. Eplērōsen panta ta rhēmata autou, ‘he completed all his words’, uses plēroō, ‘fill, complete’, the verb Luke also uses for fulfilled Scripture and fulfilled time (4:21, 9:31). Eis tas akoas tou laou, literally ‘into the ears of the people’, is a Septuagint-flavored phrase: the sermon was spoken publicly, to the whole people (laos, Luke's word for Israel as God's people), not only to disciples.",
+      "words": [
+        "G1894",
+        "G4137",
+        "G0189",
+        "G2992"
+      ],
+      "parallels": [
+        "Matthew 7:28-8:1",
+        "Matthew 8:5"
+      ],
+      "refs": [
+        "Luke 4:31",
+        "Luke 6:17-20",
+        "Luke 6:46-49"
+      ]
+    },
+    {
+      "v": "2-3",
+      "context": "The patient is introduced before the petitioner: a slave near death, and a master who valued him. The centurion does not come himself but sends Jewish elders, the first of two embassies, so that from start to finish he never meets Jesus face to face.",
+      "grammar": "Luke calls the sick man doulos, ‘slave’, in verses 2, 3, and 10, while the centurion himself calls him pais in verse 7. Pais can mean ‘child’, ‘boy’, or ‘servant’, and Matthew 8:6-13 uses only pais, which is why some readers of Matthew have taken the patient as the officer's son; John 4:46-54, a related healing at Capernaum, has huios, ‘son’. Luke's doulos settles the matter for his account. Entimos can mean ‘honored’ or ‘precious, dear’ (compare 14:8, 1 Peter 2:4), so the slave was either highly valued or much loved. Ēmellen teleutan, ‘was about to die’, uses mellō for an imminent event; Matthew describes paralysis and suffering, Luke the nearness of death. Diasōsē, ‘bring him safely through’, is a compound of sōzō used of rescue from mortal danger (Acts 27:44, 28:1).",
+      "words": [
+        "G1401",
+        "G1784",
+        "G3195",
+        "G5053",
+        "G1295",
+        "G4245G"
+      ],
+      "history": "The ‘elders of the Jews’ here are not the Jerusalem council but the leading men of the local community, who in a town like Capernaum handled public affairs and the synagogue. A Gentile officer approaching a Jewish holy man through them follows the ordinary channels of patronage: a benefactor of the town asks its leaders to speak for him.",
+      "parallels": [
+        "Matthew 8:5-6",
+        "John 4:46-47"
+      ],
+      "refs": [
+        "Luke 7:10",
+        "Acts 10:22"
+      ]
+    },
+    {
+      "v": "4-5",
+      "context": "The elders argue the case on merit. He is worthy, they say, because he loves the nation and built the synagogue. Their plea sets up the centurion's own message, which will contradict it.",
+      "grammar": "Parekaloun spoudaiōs, ‘they kept urging him earnestly’, is an imperfect of repeated pleading. Axios estin hō parexē touto, ‘he is worthy that you should grant him this’, uses a relative clause with the future indicative to express what the worthy person deserves; grammarians have long noted that it resembles the Latin idiom dignus qui, fitting for a request made on behalf of a man in a Roman-style army. Agapa gar to ethnos hēmōn, ‘for he loves our nation’: ethnos is the ordinary word for a people, used here by Jews of themselves, as in Acts 10:22 and 24:17. The emphatic hēmin at the end, ‘he built the synagogue for us’, underlines the benefaction.",
+      "words": [
+        "G3870",
+        "G4709",
+        "G0514",
+        "G3930",
+        "G0025",
+        "G1484",
+        "G3618"
+      ],
+      "history": "Gentile benefactors of synagogues are known outside the Gospels. An inscription from Acmonia in Phrygia, from the later first century, honors the men who restored a building that had been built for the Jewish community by Julia Severa, a priestess in the imperial cult who was not Jewish. The centurion belongs to the same world of patronage, but Luke presents his gift as an expression of genuine attachment to Israel, the kind of Gentile he will later call a God-fearer (Acts 10:2).",
+      "parallels": [
+        "Matthew 8:7"
+      ],
+      "refs": [
+        "Acts 10:1-2",
+        "Acts 10:22",
+        "Luke 7:9"
+      ]
+    },
+    {
+      "v": "6-7",
+      "context": "As Jesus nears the house a second embassy arrives, this time of friends, carrying the centurion's own words in the first person. Where the elders said he was worthy, he says he is not; he does not even count himself worthy to come to Jesus in person. He asks only that Jesus say a word.",
+      "grammar": "Mē skullou, ‘do not trouble yourself’, is a present imperative of skullō, a verb that once meant to flay or mangle and in ordinary Koine had weakened to ‘bother, harass’. Luke uses it again when Jairus is told not to trouble the Teacher (8:49). Ou gar hikanos eimi, ‘I am not fit’, uses hikanos, ‘sufficient, qualified’, the same words John the Baptist used of himself (3:16) and Matthew's centurion uses (Matthew 8:8). In verse 7 the verb shifts to ēxiōsa, ‘I did not count myself worthy’, which picks up the elders' axios from verse 4: they called him worthy, and he declines the word. Dio, ‘therefore’, links his absence to his sense of unworthiness, not to fear or rank. Eipe logō, literally ‘speak with a word’, uses an instrumental dative: a word alone will do. Iathētō ho pais mou is an aorist passive imperative, ‘let my servant be healed’, a request phrased as a command addressed to the situation.",
+      "words": [
+        "G4660",
+        "G2425",
+        "G0515",
+        "G1352",
+        "G5384",
+        "G4721",
+        "G2036",
+        "G3056",
+        "G2390"
+      ],
+      "history": "Pious Jews commonly avoided entering Gentile homes; Peter says as much in Cornelius's house (Acts 10:28), and the Mishnah later treats the dwellings of Gentiles as a source of uncleanness (m. Oholot 18:7). The centurion's message spares Jesus that difficulty. Whether he was thinking of purity rules or simply of his own standing, he frames it as unworthiness, not as a legal problem.",
+      "theology": [
+        {
+          "id": "faith",
+          "note": "The centurion's faith is joined to humility. He does not argue from his gifts, as his friends did, but from his lack of standing, and he asks for mercy on that basis. Luke's portrait of faith here is a person who expects everything from Jesus and claims nothing for himself."
+        }
+      ],
+      "parallels": [
+        "Matthew 8:8"
+      ],
+      "refs": [
+        "Luke 3:16",
+        "Acts 10:28",
+        "Luke 18:13-14"
+      ],
+      "text": "The text most editors print has the imperative iathētō, ‘let him be healed’, read by Codex Vaticanus and a few other early witnesses. Most manuscripts and the Textus Receptus have the future iathēsetai, ‘and my servant will be healed’, the form found in Matthew 8:8; the King James Version follows it with ‘shall be healed’. The BSB's English (‘will be healed’) conveys the sense of either reading."
+    },
+    {
+      "v": "8",
+      "context": "The centurion explains his request by analogy with his own post, a man who both obeys orders and gives them. He grasps that Jesus' word carries authority that does not depend on his presence.",
+      "grammar": "Kai gar egō anthrōpos eimi hupo exousian tassomenos, ‘for I too am a man placed under authority’: the kai, ‘too’, draws the comparison, and the passive participle tassomenos, ‘set in order, stationed’, which Luke includes, stresses that the centurion's own power is delegated. His point runs from the lesser to the greater. If an officer who is himself under orders can make others go and come, Jesus, who acts with God's authority, can command a sickness. The three imperatives that follow (poreuthēti, ‘go’; erchou, ‘come’; poiēson, ‘do this’) are each met by a present tense of immediate obedience (poreuetai, erchetai, poiei).",
+      "words": [
+        "G1849",
+        "G5021",
+        "G4757",
+        "G4198",
+        "G2064",
+        "G4160G",
+        "G1401"
+      ],
+      "parallels": [
+        "Matthew 8:9"
+      ],
+      "refs": [
+        "Psalm 107:20",
+        "Luke 4:36",
+        "Luke 5:24"
+      ]
+    },
+    {
+      "v": "9",
+      "context": "Jesus marvels, turns to the following crowd, and pronounces the centurion's faith greater than any he has found in Israel. The verdict answers the elders' argument from worthiness with a different category altogether: faith.",
+      "grammar": "Ethaumasen auton, ‘he marveled at him’, is striking because the Gospels seldom say Jesus was amazed. The only other place is Mark 6:6, where he marvels at the unbelief of Nazareth, so the two surprises form a pair: faith where it was not expected, unbelief where it should have been. Strapheis, ‘turning’, is a small Lukan habit that marks a pointed word (7:44, 9:55, 10:23, 22:61, 23:28). Oude en tō Israēl tosautēn pistin heuron, ‘not even in Israel have I found such faith’, uses oude, ‘not even’, to make Israel the place where such faith should have been expected.",
+      "words": [
+        "G2296",
+        "G4762",
+        "G3761",
+        "G2474",
+        "G5118",
+        "G4102G",
+        "G2147"
+      ],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Jesus measures faith by its object and its trust, not by its holder's lineage or merit. The first person in Luke's Gospel whose faith Jesus praises outright is a Gentile who has not even seen him, which anticipates the church of Acts, where people believe through the word of messengers."
+        },
+        {
+          "id": "israel",
+          "note": "The saying does not reject Israel; Jewish elders carried the man's request, and Jesus went with them. It sharpens the question the whole Gospel asks: who among God's people will recognize the visitation when it comes (19:44)?"
+        }
+      ],
+      "parallels": [
+        "Matthew 8:10-13"
+      ],
+      "refs": [
+        "Mark 6:6",
+        "Luke 13:28-29",
+        "Luke 19:44",
+        "Acts 10:34-35"
+      ]
+    },
+    {
+      "v": "10",
+      "context": "The messengers return and find the slave well. Luke tells the outcome in a single clause and adds no crowd reaction, letting the healing confirm the centurion's reasoning.",
+      "grammar": "Hupostrepsantes eis ton oikon hoi pemphthentes, ‘those who had been sent, returning to the house’, refers to the friends of verse 6. Hugiainonta, ‘being in good health’, is the present participle of hugiainō, a word Luke uses for the well who need no physician (5:31) and for the returning son received ‘safe and sound’ (15:27). Matthew 8:13 adds the hour of the healing; Luke leaves only the result.",
+      "words": [
+        "G5290",
+        "G3992",
+        "G5198"
+      ],
+      "theology": [
+        {
+          "id": "mission",
+          "note": "Jesus heals a Gentile's household without entering it, through an exchange of messengers. Luke tells the story so that it anticipates Acts 10, where another centurion sends for Peter and the gospel crosses into a Gentile house."
+        }
+      ],
+      "refs": [
+        "Luke 5:31",
+        "Luke 15:27",
+        "Acts 10:5-8",
+        "John 4:50-53"
+      ]
+    },
+    {
+      "v": "11",
+      "context": "The scene shifts to Nain, a village in lower Galilee, with two crowds about to meet: the disciples and a large crowd following Jesus, and a funeral procession coming out of the town. The raising of the dead that follows is found only in Luke.",
+      "grammar": "Kai egeneto en tō hexēs eporeuthē, ‘and it happened soon afterward that he went’, is Luke's Septuagint-style narrative opening, modeled on the Hebrew wayehi, ‘and it came to pass’, with egeneto followed directly by a finite verb. Luke writes this way most often in the early chapters, giving the story the sound of Israel's Scriptures. Suneporeuonto, ‘were traveling with him’, an imperfect, pictures the procession on the road.",
+      "words": [
+        "G1096",
+        "G1836",
+        "G4198",
+        "G3484",
+        "G4848"
+      ],
+      "history": "Nain lies roughly twenty-five miles southwest of Capernaum as the road runs, a long day's walk. The village is otherwise unknown in ancient literature, which is itself a sign that Luke is drawing on a local tradition rather than a famous site.",
+      "refs": [
+        "Luke 5:1",
+        "Luke 8:1"
+      ]
+    },
+    {
+      "v": "12",
+      "context": "At the town gate the two processions meet. Luke piles up the details of loss: the man is dead, he is his mother's only son, and she is a widow. The large crowd with her shows the town sharing her grief.",
+      "grammar": "Idou exekomizeto tethnēkōs, ‘behold, a dead man was being carried out’: exekomizeto is an imperfect of action in progress, and tethnēkōs is a perfect participle, ‘one who had died and was dead’. Monogenēs, ‘only’, occurs three times in Luke, each time of an only child in mortal danger: this son, Jairus's daughter (8:42), and the boy at the foot of the mountain (9:38). Only Luke supplies the detail in each case. Kai autē ēn chēra, ‘and she was a widow’, is added as a separate clause for weight.",
+      "words": [
+        "G4439",
+        "G1580",
+        "G2348",
+        "G3439",
+        "G5503"
+      ],
+      "ot": [
+        {
+          "ref": "1 Kings 17:10",
+          "note": "Elijah first met the widow of Zarephath ‘at the gate of the city’ (Hebrew petach ha'ir; Septuagint eis ton pulōna tēs poleōs), and later raised her only son (17:17-24). Luke's pulē tēs poleōs, ‘the gate of the town’, sets the meeting at Nain in the same place. Jesus has already cited this widow in his Nazareth sermon (4:25-26); the gate is the first of several echoes that make the reader think of Elijah before the miracle happens."
+        }
+      ],
+      "theology": [
+        {
+          "id": "justice-poor",
+          "note": "Israel's law named the widow among those God himself defends (Exodus 22:22-24, Deuteronomy 10:18), because she had lost her protector. With her only son dead, this woman had lost the last one. Luke's accumulation of details shows why the story is about her as much as about him."
+        }
+      ],
+      "refs": [
+        "Luke 8:42",
+        "Luke 9:38",
+        "Deuteronomy 10:18",
+        "Luke 4:25-26"
+      ]
+    },
+    {
+      "v": "13",
+      "context": "Jesus sees the mother, is moved, and speaks to her before he does anything else. No one has asked him for help. The narrator calls him “the Lord” as he acts.",
+      "grammar": "Mē klaie is a present imperative with mē, which often forbids an action already in progress: ‘stop weeping’. Jesus says the same to the mourners in Jairus's house (8:52, mē klaiete). Esplagchnisthē ep' autē, ‘he had compassion on her’, puts the object of his compassion first: it is the mother, not the corpse, whom he sees.",
+      "words": [
+        "G1492H",
+        "G2962G",
+        "G4697",
+        "G2799"
+      ],
+      "theology": [
+        {
+          "id": "attributes",
+          "note": "Israel confessed the LORD as ‘compassionate and gracious’ (Exodus 34:6). Here the narrator names Jesus ‘the Lord’ in the same breath as he describes his compassion, and the compassion acts unasked. Luke shows God's mercy not as a doctrine about Jesus but as something seen in his face and heard in his first word to a grieving woman."
+        }
+      ],
+      "refs": [
+        "Exodus 34:6",
+        "Luke 10:33",
+        "Luke 15:20",
+        "Luke 8:52"
+      ]
+    },
+    {
+      "v": "14-15",
+      "context": "Jesus touches the bier, the bearers stop, and he speaks directly to the dead man. The young man sits up and speaks, and Jesus gives him back to his mother. The miracle is told in a few plain verbs.",
+      "grammar": "Neaniske, soi legō, egerthēti, ‘Young man, to you I say, get up’: soi, ‘to you’, stands first for emphasis, and egerthēti is an aorist passive imperative of egeirō, ‘rise’, the verb the New Testament uses for resurrection. Anekathisen, ‘he sat up’, is a rare verb found in Greek medical writers of patients sitting up in bed; in the New Testament it occurs only here and in Acts 9:40, when Tabitha sits up at Peter's word, so Luke tells the two raisings with the same word. Kai ērxato lalein, ‘and began to speak’, is the proof of life. Edōken auton tē mētri autou, ‘he gave him to his mother’, reproduces the Greek Old Testament of 1 Kings 17:23 word for word.",
+      "words": [
+        "G0681",
+        "G4673",
+        "G3495",
+        "G1453",
+        "G0339",
+        "G2980",
+        "G1325"
+      ],
+      "ot": [
+        {
+          "ref": "1 Kings 17:17-24",
+          "note": "The widow's son at Zarephath falls ill and dies; Elijah carries him to the upper room, stretches himself on him three times, and cries to the LORD, who hears him, and the child's life returns. The Hebrew ends, ‘and he gave him to his mother’ (vayyittenehu le'immo), and the Septuagint renders it edōken auton tē mētri autou, the exact words of Luke 7:15. Luke's wording invites comparison, and the comparison shows difference as well as likeness: Elijah prays and labors, while Jesus touches the bier and speaks in his own name. The widow's response in 1 Kings 17:24 (now I know you are a man of God) is answered by the crowd at Nain in the next verse."
+        }
+      ],
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "Jesus raises the dead by a direct command in the first person, ‘I tell you, get up’. The young man returns to mortal life and will die again, so this is a sign rather than the resurrection itself, but it shows who holds the power that will raise the dead at the last day (John 5:25-29)."
+        }
+      ],
+      "refs": [
+        "1 Kings 17:23",
+        "2 Kings 4:32-37",
+        "Acts 9:40-41",
+        "John 5:25-29"
+      ]
+    },
+    {
+      "v": "16-17",
+      "context": "Awe seizes everyone, and they glorify God with two cries: a great prophet has risen among us, and God has visited his people. The report spreads through all Judea and the surrounding region. The crowd's reading is right as far as it goes, and the next scene asks whether ‘prophet’ is enough.",
+      "grammar": "Prophētēs megas ēgerthē en hēmin, ‘a great prophet has been raised up among us’, uses ēgerthē, the same verb as Jesus' command in verse 14: the young man is raised, and so, in another sense, is a prophet. The expectation behind the phrase is Deuteronomy 18:15-18, God's promise to raise up (Septuagint anastēsei) a prophet like Moses, which Luke later applies to Jesus explicitly (Acts 3:22-23). Edoxazon, ‘they were glorifying’, is an imperfect of continuing praise. In verse 17, Ioudaia, ‘Judea’, is used in Luke's broad sense for the whole land of the Jews, including Galilee (compare 4:44, 23:5, Acts 10:37).",
+      "words": [
+        "G5401",
+        "G1392",
+        "G4396",
+        "G1453",
+        "G1980",
+        "G2449",
+        "G4066"
+      ],
+      "theology": [
+        {
+          "id": "offices",
+          "note": "The crowd names Jesus a prophet, and Luke does not correct them; Jesus calls himself a prophet in 4:24 and 13:33. The Gospel will show that he is the prophet like Moses, and also more: the one through whom God himself visits his people (1:68)."
+        }
+      ],
+      "refs": [
+        "Deuteronomy 18:15",
+        "Acts 3:22-23",
+        "Luke 1:68",
+        "Luke 24:19"
+      ]
+    },
+    {
+      "v": "18-20",
+      "context": "News of ‘all these things’ reaches John in prison through his disciples. John sends two of them to ask whether Jesus is the one who was to come. Luke repeats the question word for word when the men deliver it, slowing the story so that the question stands out.",
+      "grammar": "Su ei ho erchomenos, ‘are you the coming one?’, uses a present participle as a title. John had announced that ‘one more powerful than I will come’ (3:16, erchetai), and the phrase echoes Psalm 118:26, ‘blessed is he who comes’, which the crowds will sing at the entry to Jerusalem (19:38). Allon prosdokōmen, ‘should we look for another?’: for verbs like prosdokaō the present indicative and subjunctive have the same form, and the context favors a deliberative subjunctive, ‘are we to wait for someone else?’. Allon, ‘another’, is the word most editors print; some manuscripts have heteron, a near synonym, which Matthew 11:3 uses. Apesteilen hēmas, ‘he has sent us’, in verse 20 casts the two men as formal envoys.",
+      "words": [
+        "G0518",
+        "G3101",
+        "G4341",
+        "G2064",
+        "G0243",
+        "G4328",
+        "G0649",
+        "G0910"
+      ],
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "The question shows that ‘the coming one’ was a live expectation, and that Jesus did not fit every version of it. Luke does not hide the question or answer it with a title. He lets it stand as the question every reader must ask."
+        }
+      ],
+      "parallels": [
+        "Matthew 11:2-3"
+      ],
+      "refs": [
+        "Luke 3:15-17",
+        "Psalm 118:26",
+        "Luke 19:38",
+        "Malachi 3:1"
+      ]
+    },
+    {
+      "v": "21",
+      "context": "A verse found only in Luke. At that very hour, in front of John's messengers, Jesus heals many and gives sight to many blind people. The answer he is about to give will describe what they have just watched.",
+      "grammar": "En ekeinē tē hōra, ‘in that very hour’, is a Lukan time marker (10:21, 13:31, 20:19). Mastigōn, literally ‘whips, scourges’, is used figuratively for painful afflictions, as in Mark 5:29 and 5:34. Echarisato blepein, ‘he graciously granted sight’, uses charizomai, related to charis, ‘grace’; the same verb returns in the parable of the two debtors, where the lender ‘freely forgave’ both (verses 42-43). Luke's vocabulary ties the healing of eyes and the cancelling of debts to one generosity.",
+      "words": [
+        "G5610",
+        "G2323",
+        "G3554",
+        "G3148",
+        "G5483",
+        "G0991"
+      ],
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "Jesus answers John's messengers first by acting. The signs are not offered as proof from a distance but performed before witnesses, which is how Luke expects his own readers to receive the Gospel: as the testimony of those who saw (1:2)."
+        }
+      ],
+      "refs": [
+        "Luke 1:2",
+        "Luke 4:40-41",
+        "Luke 6:18-19"
+      ]
+    },
+    {
+      "v": "22",
+      "context": "Jesus tells the messengers to report what they have seen and heard, and he describes it in six short clauses that gather phrases from Isaiah. The last and climactic item is not a miracle but preaching: the poor have good news brought to them.",
+      "grammar": "The six verbs are all present tense, describing what is happening now, and the last is a passive: ptōchoi euangelizontai, literally ‘the poor are evangelized’, the poor themselves being the ones who receive the proclamation. Euangelizō, ‘announce good news’, is the verb of Isaiah 61:1 in the Septuagint and of Jesus' programmatic sermon at Nazareth (4:18). The list omits two things from its sources. It does not mention release for prisoners (Isaiah 61:1), which John in Herod's prison would have noticed, and it does not mention the day of vengeance (Isaiah 61:2, 35:4), which John had preached (3:17).",
+      "words": [
+        "G0518",
+        "G5185",
+        "G0308",
+        "G5560",
+        "G3015",
+        "G2511",
+        "G2974",
+        "G3498",
+        "G1453",
+        "G4434",
+        "G2097"
+      ],
+      "ot": [
+        {
+          "ref": "Isaiah 35:4-6",
+          "note": "Isaiah 35 describes the desert blooming as God's people return, and verse 4 announces that ‘your God will come’ to save; ‘then the eyes of the blind will be opened and the ears of the deaf unstopped. Then the lame will leap like a deer’ (35:5-6). The Septuagint reads tuphlōn, kōphōn, and chōlos, the same words Jesus uses. By answering with this passage, Jesus identifies his works as the signs of God's own coming, the answer to the question about ‘the coming one’."
+        },
+        {
+          "ref": "Isaiah 61:1",
+          "note": "The Hebrew speaks of one anointed by the Spirit to bring good news to the poor, bind up the brokenhearted, proclaim liberty to captives, and ‘opening’ to those who are bound (peqach-qoach, probably release from prison). The Septuagint renders that last phrase ‘recovery of sight to the blind’ (tuphlois anablepsin), the form Jesus read at Nazareth (4:18). Here he quotes the good news to the poor and the sight to the blind, and leaves the captives unmentioned."
+        },
+        {
+          "ref": "Isaiah 26:19",
+          "note": "‘Your dead will live; their bodies will rise’, in the Septuagint anastēsontai hoi nekroi kai egerthēsontai, ‘the dead will rise and be raised’. It is one of the Old Testament's clearest hopes of resurrection, and the raising at Nain has just happened. Isaiah 29:18-19 adds the deaf hearing and the blind seeing, with the poor rejoicing in the Holy One of Israel."
+        }
+      ],
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "Jesus defines his messiahship by Isaiah's picture of God's saving arrival rather than by a title or by the judgment John expected first. The mercy comes now; the vengeance of Isaiah 61:2 is left for later, in keeping with Jesus stopping his Nazareth reading before that line (4:19)."
+        },
+        {
+          "id": "justice-poor",
+          "note": "The list climbs from healings to the good news for the poor, making it the crowning sign. In Luke the poor are not a figure of speech for the pious only; they are the materially poor and powerless (6:20, 14:13, 16:20), and their hearing good news is a mark of the Messiah's age."
+        }
+      ],
+      "parallels": [
+        "Matthew 11:4-5"
+      ],
+      "refs": [
+        "Luke 4:18-19",
+        "Isaiah 29:18-19",
+        "Luke 6:20",
+        "Luke 14:13"
+      ]
+    },
+    {
+      "v": "23",
+      "context": "The answer ends with a beatitude that is also a warning. Blessing belongs to the one who does not stumble over Jesus, including over the ways he does not match expectation.",
+      "grammar": "Makarios estin hos ean mē skandalisthē en emoi, ‘blessed is whoever is not caused to stumble by me’. Skandalizō comes from skandalon, the trigger of a trap or an obstacle that trips a walker, and in the passive means to be offended, to take offense so as to fall away. The aorist subjunctive with ean makes it a general condition that applies to anyone, John included, without accusing him.",
+      "words": [
+        "G3107",
+        "G4624"
+      ],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Faith is not only belief that Jesus can act but trust in the way he chooses to act. The beatitude blesses those who keep trusting when Jesus is not the Messiah they pictured, which is the test John faces in prison and the church faces often."
+        }
+      ],
+      "parallels": [
+        "Matthew 11:6"
+      ],
+      "refs": [
+        "Isaiah 8:14-15",
+        "Luke 2:34",
+        "Luke 20:17-18",
+        "1 Corinthians 1:23"
+      ]
+    },
+    {
+      "v": "24",
+      "context": "Once the messengers leave, Jesus turns to the crowds and speaks about John in his absence, with three rhetorical questions about their trip into the wilderness. The first, about a reed shaken by the wind, expects the answer no: John was not a man who bent with every breeze.",
+      "grammar": "Tōn angelōn Iōannou, ‘John's messengers’, uses angelos in its plain sense of ‘messenger’, the same word that in verse 27 will describe John himself as God's messenger. Ti exēlthate eis tēn erēmon theasasthai, ‘what did you go out into the wilderness to look at?’: theaomai, ‘gaze at, view’, suggests spectators at a show. Kalamon hupo anemou saleuomenon, ‘a reed being shaken by the wind’, is a vivid image of what grows by the Jordan and bends whichever way the wind blows.",
+      "words": [
+        "G0032H",
+        "G1831",
+        "G2048",
+        "G2300",
+        "G2563",
+        "G0417",
+        "G4531"
+      ],
+      "history": "Gerd Theissen (The Gospels in Context, 1991) pointed out that the first coins Herod Antipas struck, for the founding of his new capital Tiberias around AD 19 or 20, carried the image of a reed. If Jesus' hearers knew those coins, the question carried an edge: the reed was the emblem of the ruler who had imprisoned John. Theissen's suggestion cannot be proved, but it fits the next question about fine clothes and palaces.",
+      "parallels": [
+        "Matthew 11:7"
+      ],
+      "refs": [
+        "Luke 3:2-3",
+        "Luke 1:80",
+        "1 Kings 14:15"
+      ]
+    },
+    {
+      "v": "25-26",
+      "context": "The second question points to royal courtiers, the third to a prophet. Jesus accepts the third and raises it: John is a prophet and more than a prophet. The contrast with those in soft clothing living in palaces sets John against the court of Antipas, where he now sits as a prisoner.",
+      "grammar": "En malakois himatiois ēmphiesmenon, ‘dressed in soft garments’: malakos, ‘soft’, is the fine cloth of the wealthy. Luke expands Matthew's brief form with en himatismō endoxō kai truphē huparchontes, ‘those who live in splendid clothing and luxury’; truphē, ‘luxury, indulgence’, occurs only here and in 2 Peter 2:13. Basileiois, ‘royal places’, is a neuter plural, ‘palaces’. Nai, legō humin, kai perissoteron prophētou, ‘yes, I tell you, and more than a prophet’: perissoteron is a comparative neuter adverb used as a noun, ‘something more than a prophet’, so the stress falls on John's role, not simply his rank.",
+      "words": [
+        "G3120",
+        "G2440",
+        "G2441",
+        "G1741",
+        "G5172",
+        "G0933",
+        "G3483",
+        "G4054"
+      ],
+      "history": "Antipas's palaces included Tiberias and the fortress-palace of Machaerus east of the Dead Sea, where Josephus says John was held and executed (Antiquities 18.119). Josephus describes Machaerus at length in the seventh book of the Jewish War as a stronghold that Herod the Great had fitted with a lavish royal residence. John's camel-hair garment (Matthew 3:4) stood in deliberate contrast to such places.",
+      "parallels": [
+        "Matthew 11:8-9"
+      ],
+      "refs": [
+        "Luke 1:76",
+        "Matthew 3:4",
+        "Luke 20:6"
+      ]
+    },
+    {
+      "v": "27",
+      "context": "Jesus explains ‘more than a prophet’ from Scripture. John is the messenger whom God promised to send ahead to prepare the way. He is not only a prophet who speaks about the coming day; he is himself foretold.",
+      "grammar": "Houtos estin peri hou gegraptai, ‘this is the one about whom it stands written’: gegraptai is a perfect passive, ‘it has been written and remains written’, the standard formula for citing Scripture as a present authority. The quotation's pronouns carry the argument. In Malachi God says the messenger will prepare the way ‘before me’; in the Gospels' form, God tells another person, ‘I will send my messenger ahead of you, who will prepare your way before you’. The one whose way is prepared is now addressed as distinct from the speaker.",
+      "words": [
+        "G1125",
+        "G0649",
+        "G0032H",
+        "G4383",
+        "G2680",
+        "G3598"
+      ],
+      "ot": [
+        {
+          "ref": "Malachi 3:1",
+          "note": "The Hebrew reads, ‘I am sending my messenger, and he will clear the way before me’ (u-pinnah derekh lefanai); the Septuagint has epiblepsetai hodon pro prosōpou mou, ‘he will survey the way before my face’. In Malachi the coming one is the Lord himself, who will suddenly come to his temple, and Malachi 4:5 identifies the messenger with Elijah. Luke has already applied this to John (1:17, 1:76). The Gospel wording kataskeuasei, ‘will prepare’, is closer to the Hebrew than to the Septuagint, and it changes ‘before me’ to ‘before you’, so that the way of the Lord becomes the way of Jesus."
+        },
+        {
+          "ref": "Exodus 23:20",
+          "note": "The opening words match the Septuagint of Exodus 23:20 almost exactly: idou egō apostellō ton angelon mou pro prosōpou sou, ‘behold, I send my messenger before your face’, God's promise to send an angel ahead of Israel on the way to the promised land. Jewish tradition already read the two texts together, and the blend casts John as the guide of a new exodus. Matthew 11:10 and Mark 1:2 have the same combined form."
+        }
+      ],
+      "theology": [
+        {
+          "id": "prophecy",
+          "note": "The verse is an example of how the New Testament reads fulfillment: the prophet's words are applied to a specific person (John) and a specific relationship (forerunner to Lord), and the reading changes a pronoun to show who the Lord of Malachi 3:1 turns out to be."
+        }
+      ],
+      "parallels": [
+        "Matthew 11:10",
+        "Mark 1:2"
+      ],
+      "refs": [
+        "Malachi 4:5-6",
+        "Luke 1:17",
+        "Luke 1:76",
+        "Isaiah 40:3"
+      ]
+    },
+    {
+      "v": "28",
+      "context": "The highest praise and a sudden reversal. No one born of women is greater than John, yet the least in the kingdom of God is greater than he. The saying measures greatness not by personal stature but by where one stands in God's timetable.",
+      "grammar": "En gennētois gunaikōn, ‘among those born of women’, is a Semitic way of saying ‘among all human beings’ (compare Job 14:1, where the Septuagint has gennētos gunaikos). Ho de mikroteros en tē basileia tou theou, ‘the lesser in the kingdom of God’, uses the comparative mikroteros where English expects a superlative, ‘least’, a common Koine usage. Most interpreters take it of any member of the kingdom now arriving: John belongs to the era of promise, while the least disciple shares in its fulfillment (compare 10:23-24). John Chrysostom, in his homilies on Matthew, and some other early interpreters took ‘the lesser’ to be Jesus himself, younger than John and thought less of by the crowd, yet greater. The grammar allows it, but the parallel with 9:48 (‘whoever is the least among all of you’) favors the usual reading.",
+      "words": [
+        "G1084",
+        "G1135G",
+        "G3173",
+        "G3398",
+        "G0932"
+      ],
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The saying marks a turn of the ages. John stands at the threshold as the greatest of the prophets, and the kingdom Jesus brings is greater than all that led to it. Luke 16:16 states the same division: the Law and the Prophets until John, and since then the good news of the kingdom."
+        }
+      ],
+      "text": "At the start of the second clause the Textus Receptus reads ‘there is not a greater prophet than John the Baptist’, adding ‘prophet’ and ‘the Baptist’; the earliest manuscripts have simply ‘no one greater than John’. The King James Version follows the longer form.",
+      "parallels": [
+        "Matthew 11:11"
+      ],
+      "refs": [
+        "Job 14:1",
+        "Luke 16:16",
+        "Luke 10:23-24",
+        "Luke 9:48"
+      ]
+    },
+    {
+      "v": "29-30",
+      "context": "A comment on how people had responded to John. Those baptized by him, tax collectors included, acknowledged God's justice; the Pharisees and lawyers, who refused his baptism, rejected God's purpose for themselves. The two verses explain why the following parable fits ‘this generation’.",
+      "grammar": "Interpreters divide over who is speaking. Most translations, the BSB among them, close Jesus' words at verse 28 and treat verses 29-30 as the narrator's comment, because the verses report the crowd's reaction; others read them as Jesus continuing, since Luke does not mark a change of speaker. Edikaiōsan ton theon, ‘they justified God’, means they declared God to be in the right (see the chapter's note on dikaioō), and the participle baptisthentes gives the ground: by being baptized, they conceded that John's call was God's. Tēn boulēn tou theou ēthetēsan eis heautous, ‘they set aside God's purpose for themselves’: boulē, ‘counsel, plan’, is a key word in Luke-Acts for God's saving design (Acts 2:23, 4:28, 20:27), and eis heautous suggests that the plan meant for them, they refused.",
+      "words": [
+        "G2992",
+        "G5057",
+        "G1344",
+        "G0907",
+        "G0908",
+        "G5330",
+        "G3544",
+        "G1012",
+        "G0114"
+      ],
+      "history": "Nomikoi, ‘lawyers’, is Luke's usual word for the experts in the law of Moses whom Mark and Matthew usually call scribes (grammateis); outside Luke it appears in Matthew 22:35 and Titus 3:13. Luke uses it for the scholars who test Jesus (10:25) and receive his woes (11:45-52). They were interpreters of the Torah, not lawyers in the modern sense.",
+      "theology": [
+        {
+          "id": "justification",
+          "note": "People who were counted sinners declared God right by submitting to John's baptism of repentance, while respected teachers refused. The verses show that being right with God in Luke begins with conceding that God is right about us."
+        },
+        {
+          "id": "repentance",
+          "note": "John's baptism was ‘a baptism of repentance for the forgiveness of sins’ (3:3). Accepting it was an admission of need; refusing it was a claim of not needing it. The same division runs through the dinner scene that closes the chapter."
+        }
+      ],
+      "refs": [
+        "Luke 3:3",
+        "Luke 3:12-13",
+        "Acts 20:27",
+        "Matthew 21:31-32"
+      ]
+    },
+    {
+      "v": "31-32",
+      "context": "Jesus compares ‘this generation’ to children in the marketplace who complain that others will not join their games, whether a wedding dance or a funeral lament. The comparison sets up the next two verses, where John and Jesus play the two tunes.",
+      "grammar": "Tini oun homoiōsō, ‘to what then shall I compare?’, is a traditional opening for a parable, as in Isaiah 40:18 and later rabbinic parables. The children's taunt is built in two balanced lines with aorist verbs: ēulēsamen humin kai ouk ōrchēsasthe, ‘we played the pipe for you and you did not dance’; ethrēnēsamen kai ouk eklausate, ‘we sang a lament and you did not weep’. Matthew 11:17 has ekopsasthe, ‘you did not beat your breasts’; Luke's ‘weep’ is plainer. Readers have taken the image two ways. Either the children calling out are this generation, who want John and Jesus to play by their rules and sulk when they will not; or the children calling are John and Jesus, and this generation is the group that refuses both. The following verses, where ‘you say’ belongs to the generation, fit the first reading best.",
+      "words": [
+        "G3666",
+        "G1074",
+        "G3813",
+        "G0058",
+        "G4377",
+        "G0832",
+        "G3738",
+        "G2354",
+        "G2799"
+      ],
+      "history": "Weddings and funerals were the two great public occasions of village life, one with pipes and dancing, the other with dirges and loud weeping (compare Jeremiah 9:17-18, where women skilled in lament are summoned). Children imitating both in the open square of a town is a scene any listener would recognize.",
+      "parallels": [
+        "Matthew 11:16-17"
+      ],
+      "refs": [
+        "Isaiah 40:18",
+        "Jeremiah 9:17-18",
+        "Luke 11:29",
+        "Luke 17:25"
+      ]
+    },
+    {
+      "v": "33-34",
+      "context": "The application. John came fasting and was called demon-possessed; the Son of Man came eating and drinking and was called a glutton, a drunkard, and a friend of tax collectors and sinners. The generation dismissed both, for opposite reasons.",
+      "grammar": "Elēluthen, ‘has come’, is a perfect in both verses, presenting each coming as a completed fact whose effects remain. Luke writes mē esthiōn arton mēte pinōn oinon, ‘not eating bread nor drinking wine’, adding the objects to Matthew's plainer ‘neither eating nor drinking’ (Matthew 11:18); the angel had said John would never drink wine (1:15). Phagos, ‘glutton’, and oinopotēs, ‘wine-drinker, drunkard’, occur in the New Testament only here and in Matthew's parallel. Philos telōnōn kai hamartōlōn, ‘a friend of tax collectors and sinners’, was meant as an insult, and Luke's Gospel shows it to be a true description (5:29-32, 15:1-2, 19:7).",
+      "words": [
+        "G2064",
+        "G0910",
+        "G0740",
+        "G3631",
+        "G1140",
+        "G5207",
+        "G2068",
+        "G4095",
+        "G5314",
+        "G3630",
+        "G5384",
+        "G0268"
+      ],
+      "ot": [
+        {
+          "ref": "Deuteronomy 21:20",
+          "note": "The parents of a stubborn and rebellious son are to tell the elders that he ‘is a glutton and a drunkard’ (Hebrew zolel wesove), and the town is to stone him. The Septuagint renders the pair with different Greek words (sumbolokopōn oinophlugei), so the insult against Jesus is an allusion to the charge rather than a quotation. If his opponents meant it, they were labeling him with the rebellious son's capital offense. Proverbs 23:20-21 uses the same Hebrew pair in warning against the company of such people."
+        }
+      ],
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "The Son of Man ‘came eating and drinking’. Jesus' mission is carried out through ordinary human table fellowship, eating with those whom others avoided, and that visible humanity became the ground of the charge against him."
+        }
+      ],
+      "parallels": [
+        "Matthew 11:18-19"
+      ],
+      "refs": [
+        "Luke 1:15",
+        "Luke 5:29-32",
+        "Luke 15:1-2",
+        "Luke 19:7",
+        "Proverbs 23:20-21"
+      ]
+    },
+    {
+      "v": "35",
+      "context": "The verdict that closes the section. Wisdom, God's own wise purpose, is shown to be right by all her children, the people who received John and Jesus (verse 29).",
+      "grammar": "Edikaiōthē hē sophia apo pantōn tōn teknōn autēs, ‘wisdom was justified by all her children’. The aorist passive is best taken as gnomic, stating what is always true, and apo marks the agent: her children are the ones who vindicate her. Wisdom is personified as in Proverbs 8-9, where she calls in the streets and invites the simple to her table. ‘All’ is Luke's word, linking the saying to ‘all the people’ in verse 29. The verb picks up edikaiōsan from verse 29: the people justified God, and wisdom is justified by her children.",
+      "words": [
+        "G1344",
+        "G4678",
+        "G3956",
+        "G5043"
+      ],
+      "theology": [
+        {
+          "id": "wisdom",
+          "note": "God's wisdom is proved not by argument but by what it produces. The tax collectors and sinners who repented, and the woman in the next scene, are the evidence that John's austerity and Jesus' feasting were both God's wise way."
+        },
+        {
+          "id": "justification",
+          "note": "The verse turns the language of justification toward God: his ways are shown to be right by the people they create. Luke uses the verb for vindication before a watching world, not only for a verdict pronounced on an individual."
+        }
+      ],
+      "parallels": [
+        "Matthew 11:19"
+      ],
+      "refs": [
+        "Proverbs 8:1-4",
+        "Proverbs 9:1-6",
+        "Luke 11:49",
+        "1 Corinthians 1:24"
+      ]
+    },
+    {
+      "v": "36",
+      "context": "A Pharisee invites Jesus to a meal, and he goes in and reclines. The friend of sinners (verse 34) eats with a Pharisee too, and the stage is set for a sinner to come to the table.",
+      "grammar": "Ērōta de tis auton tōn Pharisaiōn, ‘one of the Pharisees was asking him’: the imperfect may suggest a request pressed or repeated. Kateklithē, ‘he reclined’, an aorist passive of kataklinō, is the posture of a formal meal, which determines where the woman will stand in verse 38. The host is not named until verse 40.",
+      "words": [
+        "G2065",
+        "G5330",
+        "G5315",
+        "G1525",
+        "G2625"
+      ],
+      "history": "Only Luke records Jesus accepting meals in Pharisees' homes, three times (7:36, 11:37, 14:1). Each ends in a pointed exchange about who belongs at God's table. The meal, not the synagogue, is Luke's favored setting for controversy and grace.",
+      "parallels": [
+        "Mark 14:3",
+        "Matthew 26:6-7",
+        "John 12:1-3"
+      ],
+      "refs": [
+        "Luke 11:37",
+        "Luke 14:1",
+        "Luke 5:29"
+      ]
+    },
+    {
+      "v": "37",
+      "context": "A woman known in the town as a sinner learns where Jesus is dining and comes with an alabaster flask of perfume. Luke introduces her with ‘behold’, marking her arrival as unexpected, and gives her no name.",
+      "grammar": "Gunē hētis ēn en tē polei hamartōlos, ‘a woman who was a sinner in the town’: the imperfect ēn describes her standing in the community, and some interpreters read it as a reputation that belongs to her past, since the story will reveal that she has already been forgiven (verse 47). The grammar does not decide the point. Epignousa, ‘having learned’, and komisasa, ‘having brought’, are aorist participles that show purpose: she came prepared. Alabastron murou, ‘an alabaster flask of perfume’, names both the container and its precious contents.",
+      "words": [
+        "G2400",
+        "G1135G",
+        "G0268",
+        "G1921",
+        "G2621",
+        "G2865",
+        "G0211",
+        "G3464"
+      ],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Luke uses the plain label ‘sinner’ without explanation and without softening. The story does not deny her sins; it will call them ‘many’ (verse 47). What it denies is that the label has the last word about her."
+        }
+      ],
+      "refs": [
+        "Luke 5:8",
+        "Luke 15:1-2",
+        "Luke 18:13"
+      ],
+      "history": "Luke gives the woman no name and does not say what her sin was. Western tradition, from Gregory the Great's homily of 591 onward, identified her with Mary Magdalene, whom Luke introduces a few verses later (8:2), and with Mary of Bethany, who anoints Jesus' feet in John 12:3. Luke's text makes neither connection: he presents Mary Magdalene as a new character healed of demons, and Mary of Bethany appears separately in 10:38-42. Nothing in Scripture calls Mary Magdalene a prostitute. The Eastern churches never made the identification, and the Roman Catholic calendar separated the three women in 1969."
+    },
+    {
+      "v": "38",
+      "context": "The woman stands behind Jesus at his feet, weeping, and wets his feet with her tears, wipes them with her hair, kisses them, and anoints them. She says nothing. The verse is a single long sentence of actions.",
+      "grammar": "After the aorist participle stasa, ‘having stood’, and the present participle klaiousa, ‘weeping’, the main verbs shift to the imperfect: exemassen, ‘she kept wiping’; katephilei, ‘she kept kissing’; ēleiphen, ‘she was anointing’. The tense paints continuing, repeated action, which Jesus will confirm in verse 45 (‘she has not stopped kissing’). Kataphileō is an intensive compound of phileō, ‘kiss tenderly, kiss again and again’; Luke uses it of the father embracing his returning son (15:20) and of the Ephesian elders farewelling Paul (Acts 20:37). Ērxato brechein, ‘she began to wet’, suggests the tears came before she had planned to use them.",
+      "words": [
+        "G2476",
+        "G3694",
+        "G4228",
+        "G2799",
+        "G1144",
+        "G1026",
+        "G2359",
+        "G1591",
+        "G2705",
+        "G0218",
+        "G3464"
+      ],
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "Her tears are the only words she offers. Luke does not say whether they are tears of sorrow or gratitude, and the story suggests both: a person who knows her sin and knows it has been forgiven. Repentance in Luke is often shown by action more than speech (3:8, 19:8)."
+        }
+      ],
+      "parallels": [
+        "John 12:3",
+        "Mark 14:3"
+      ],
+      "refs": [
+        "Luke 15:20",
+        "Acts 20:37",
+        "Luke 3:8"
+      ]
+    },
+    {
+      "v": "39",
+      "context": "Simon's unspoken thought. If Jesus were a prophet, he would know what kind of woman is touching him. Jesus' reply in the following verses shows that he knows both the woman and Simon's thought.",
+      "grammar": "Houtos ei ēn prophētēs, eginōsken an, ‘if this man were a prophet, he would know’, is a contrary-to-fact condition, formed with ei and the imperfect in the ‘if’ clause and an with the imperfect in the ‘then’ clause. The construction itself asserts the opposite: Simon concludes that Jesus is not a prophet and does not know. Tis kai potapē hē gunē, ‘who and what sort of woman’: potapos, ‘of what kind’, carries a note of disdain. Haptetai, ‘is touching’, a present middle, lingers on the ongoing contact, and hoti hamartōlos estin, ‘for she is a sinner’, gives Simon's reason in his own present tense.",
+      "words": [
+        "G5330",
+        "G1438",
+        "G4396",
+        "G1097",
+        "G0302",
+        "G4217",
+        "G0681",
+        "G0268"
+      ],
+      "theology": [
+        {
+          "id": "holiness",
+          "note": "Simon assumes that a holy man must keep his distance from the unclean and the sinful. Jesus reverses the direction of contagion: his holiness is not defiled by her touch, but she is restored by his. Craig Blomberg developed this theme across the Gospels' meal scenes in Contagious Holiness (2005)."
+        }
+      ],
+      "refs": [
+        "Luke 5:21-22",
+        "Luke 6:8",
+        "Luke 15:2",
+        "Mark 1:41"
+      ]
+    },
+    {
+      "v": "40-43",
+      "context": "Jesus answers the thought Simon did not speak, which proves him the prophet Simon doubted. He tells a two-line parable of a lender who cancels two debts, one ten times larger than the other, and asks which debtor will love him more. Simon answers, and in doing so judges himself.",
+      "grammar": "Echō soi ti eipein, ‘I have something to say to you’, is a courteous preface, and Simon's reply, Didaskale, eipe, ‘Teacher, say it’, is respectful. Danistēs is a professional moneylender; chreopheiletai, ‘debtors’, occurs only here and in 16:5. In verse 42 the lender echarisato, ‘freely forgave’, the verb of grace used in verse 21. Pleion agapēsei, ‘will love him more’, is a future describing the natural consequence of the cancellation. Simon's hupolambanō, ‘I suppose’, is cautious, perhaps reluctant, and Jesus' orthōs ekrinas, ‘you have judged rightly’, uses krinō, the verb of judgment: Simon has passed a verdict that will apply to himself.",
+      "words": [
+        "G4613I",
+        "G1320",
+        "G5533",
+        "G1157",
+        "G3784",
+        "G1220",
+        "G5483",
+        "G0025",
+        "G5274",
+        "G3723",
+        "G2919"
+      ],
+      "theology": [
+        {
+          "id": "love",
+          "note": "The parable makes love the response to a debt cancelled, not the payment for it. Both debtors are equally unable to pay and equally forgiven; what differs is the size of the debt they know was released, and so the measure of their gratitude."
+        }
+      ],
+      "refs": [
+        "2 Samuel 12:1-7",
+        "Matthew 18:23-27",
+        "Colossians 2:13-14",
+        "Luke 16:5"
+      ]
+    },
+    {
+      "v": "44-46",
+      "context": "Jesus turns toward the woman while speaking to Simon and contrasts their hospitality in three pairs: water and tears, a greeting kiss and kisses on the feet, oil for the head and perfume for the feet. Each time Simon gave nothing and she gave more than the custom required.",
+      "grammar": "Strapheis pros tēn gunaika tō Simōni ephē, ‘turning to the woman, he said to Simon’: Jesus' body faces her while his words go to Simon, who is made to look at the one he has judged. Blepeis tautēn tēn gunaika, ‘do you see this woman?’, asks whether he has truly looked at her as a person rather than a category. Each pair sets Simon's aorist ouk edōkas or ouk ēleipsas, ‘you did not give, you did not anoint’, against her emphatic hautē, ‘but she’. Ou dielipen kataphilousa, ‘she has not stopped kissing’, uses dialeipō with a participle for uninterrupted action. The last pair sharpens the contrast twice: elaion, ordinary olive oil, against muron, costly perfume, and the head against the feet.",
+      "words": [
+        "G4762",
+        "G5346",
+        "G0991",
+        "G5204",
+        "G1026",
+        "G1591",
+        "G5370",
+        "G1257",
+        "G2705",
+        "G1637",
+        "G2776",
+        "G0218",
+        "G3464"
+      ],
+      "theology": [
+        {
+          "id": "love",
+          "note": "Jesus reads the woman's actions as love directed to him personally, and he measures Simon's coolness by the same standard. The scene quietly assumes that the right response to God's forgiveness is love for Jesus, a claim that places him where the parable placed the forgiving lender."
+        }
+      ],
+      "refs": [
+        "Genesis 18:4",
+        "Psalm 23:5",
+        "Psalm 133:2",
+        "1 Samuel 25:41"
+      ]
+    },
+    {
+      "v": "47",
+      "context": "The conclusion of the parable, applied. Her many sins stand forgiven, and her great love is the sign; the one who has been forgiven little loves little. The final clause is addressed to Simon without naming him.",
+      "grammar": "Hou charin, ‘for this reason’, points back to the contrasts just drawn: because of what her actions show, Jesus can say what he says next. Apheōntai hai hamartiai autēs hai pollai, ‘her sins, which are many, have been forgiven’, is a perfect passive describing forgiveness as a settled state, and the passive leaves God as the unnamed forgiver. Hoti ēgapēsen polu, ‘for she loved much’, then gives the evidence by which the forgiveness can be seen (the chapter note explains the conjunction). The aorist ēgapēsen sums up her actions in the scene. The closing clause switches to the present tense, hō de oligon aphietai, oligon agapa, ‘but the one to whom little is forgiven loves little’, turning the parable into a general rule.",
+      "words": [
+        "G5484",
+        "G0863H",
+        "G0266",
+        "G4183",
+        "G0025",
+        "G3641"
+      ],
+      "theology": [
+        {
+          "id": "justification",
+          "note": "The woman's forgiveness is described as already complete before Jesus announces it, and her love follows from it. The order of the verse (forgiven, therefore loving) is the order the whole New Testament keeps: God's acquittal comes first, and the life of love grows from it."
+        },
+        {
+          "id": "love",
+          "note": "The last clause does not say that Simon needs little forgiveness. It says that one who thinks himself forgiven little will love little. The measure of love is a person's grasp of their own debt, which is why the parable is aimed at the host."
+        }
+      ],
+      "refs": [
+        "Luke 7:42",
+        "1 John 4:19",
+        "Romans 5:8",
+        "Luke 18:9-14"
+      ]
+    },
+    {
+      "v": "48-50",
+      "context": "Jesus speaks to the woman directly for the first time: your sins are forgiven. The other guests ask the chapter's question, who this is who even forgives sins, and Jesus answers not them but her, sending her away with the words of salvation and peace.",
+      "grammar": "Apheōntai sou hai hamartiai in verse 48 repeats the perfect of verse 47, now addressed to her: what has been true is declared aloud. Ērxanto hoi sunanakeimenoi legein en heautois, ‘the fellow guests began to say among themselves’, may mean inwardly or to one another. Hos kai hamartias aphiēsin, ‘who even forgives sins’: the kai, ‘even’, marks the claim as beyond a prophet's role. In verse 50, hē pistis sou sesōken se, ‘your faith has saved you’, uses the perfect of sōzō, a rescue accomplished and still in force, and poreuou eis eirēnēn, ‘go into peace’, is a present imperative with eis, sending her into a state of peace rather than merely wishing her well.",
+      "words": [
+        "G0863H",
+        "G0266",
+        "G4873",
+        "G1438",
+        "G4102G",
+        "G4982",
+        "G4198",
+        "G1515"
+      ],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Jesus credits her salvation to her faith, not to her tears or her gift. The actions in the scene are faith made visible, the trust that brought her into a Pharisee's house to seek him, and Luke uses the same saying for others who come to Jesus in need (8:48, 17:19, 18:42)."
+        },
+        {
+          "id": "incarnation",
+          "note": "The guests' question is the right one. In Israel's Scriptures forgiveness belongs to God (Psalm 130:4, Isaiah 43:25), and the scribes in 5:21 had already said so. Jesus pronounces forgiveness in his own voice, and Luke leaves the reader to draw the conclusion the guests could not."
+        },
+        {
+          "id": "salvation",
+          "note": "The word ‘saved’ here has no physical healing attached to it: the woman is forgiven, received, and sent in peace. Luke thereby shows that sōzō in his Gospel reaches past the body to the whole restoration of a person before God."
+        }
+      ],
+      "refs": [
+        "Luke 5:20-21",
+        "Luke 8:48",
+        "1 Samuel 1:17",
+        "Psalm 130:4",
+        "Isaiah 43:25"
+      ]
+    }
+  ]
+}

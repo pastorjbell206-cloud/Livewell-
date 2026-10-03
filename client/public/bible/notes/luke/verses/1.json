@@ -1,0 +1,665 @@
+{
+  "verses": [
+    {
+      "v": "1-2",
+      "context": "Luke opens with the only formal preface in the Gospels, one long, balanced sentence of which these verses are the first half. He places himself after others who had already written, and he locates the source of all their accounts in people who had seen the events and served the message from the start. The second half (verses 3-4) will say what he himself adds.",
+      "grammar": "The opening word, epeidēper (‘inasmuch as’), is a heavy, classical conjunction found nowhere else in the New Testament; the register announces a writer who knows the conventions of Greek prose. Epecheirēsan (‘undertook’, an aorist) can describe a failed attempt (Acts 9:29, 19:13), and Origen, in his first homily on Luke, read it as a hint at gospels the church did not receive; but the verb is also neutral in historical prefaces, and Luke says ‘it seemed good to me also’ in verse 3, putting himself alongside these writers rather than against them. Anataxasthai diēgēsin means to arrange or draw up a narrative. Peplērophorēmenōn is a perfect passive participle of plērophoreō, which can mean ‘fully accomplished’ or ‘fully assured’ (the sense in Romans 4:21); the King James Version's ‘most surely believed among us’ takes the second, while most modern versions take the first, which fits Luke's theme of fulfillment. Paredosan (‘handed down’) is the technical verb for passing on tradition (1 Corinthians 15:3). Autoptai (‘eyewitnesses’) occurs only here in the New Testament, and a single article binds it to hupēretai (‘servants’): one group who both saw and served the word.",
+      "words": ["G1895", "G2021", "G0392", "G1335", "G4135", "G3860", "G0845", "G5257", "G3056"],
+      "history": "Greek historians opened their works by naming predecessors, sources, and method. Thucydides (History 1.22) explains that he did not trust the first informant he met but checked eyewitness reports with care, and Polybius (12.27-28) insists that the historian's own inquiry and eyewitness testimony are the backbone of history. Josephus opens Against Apion (1.1-3) with a dedication and a statement of purpose much like Luke's. Loveday Alexander, in The Preface to Luke's Gospel (1993), showed that Luke's closest formal parallels are the prefaces of Greek technical and scientific treatises, which are shorter and plainer than the grand historians' openings; others still read it primarily as a historian's preface. Richard Bauckham (Jesus and the Eyewitnesses, 2006) argues that ‘from the beginning’ describes eyewitnesses who had been with Jesus from the start of his ministry, the qualification Acts 1:21-22 requires of an apostle.",
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "The preface claims that the gospel rests on public events, attested by named kinds of witnesses and handed on through a traceable chain. Luke does not ask for faith in a private vision but offers an inquiry into things that happened among us."
+        }
+      ],
+      "refs": ["Acts 1:1-3", "Acts 1:21-22", "1 Corinthians 15:3-8", "John 20:30-31"]
+    },
+    {
+      "v": "3-4",
+      "context": "The preface's second half names the author's work (careful investigation), his product (an orderly account), his addressee (Theophilus), and his aim (certainty). Verse 5 then drops the polished style at once and begins to sound like the Greek Old Testament.",
+      "grammar": "Parēkolouthēkoti is a perfect participle of parakoloutheō, literally ‘to follow alongside’. Henry Cadbury, in his commentary on the preface in The Beginnings of Christianity (volume 2, 1922), argued it means ‘having been familiar with’ the events, possibly as a participant, rather than ‘having investigated’ them; most translators still render it as research. Anōthen can mean ‘from the beginning’, ‘for a long time’, or ‘from above’ (its sense in John 3:3); here it matches ap' archēs in verse 2. Kathexēs (‘in order’) need not mean strict chronology: when Peter explains his vision ‘in order’ in Acts 11:4, the order is logical and persuasive. Kratiste (‘most excellent’) is the title Luke gives the governors Felix and Festus (Acts 23:26, 26:25), which suggests Theophilus was a man of standing. Katēchēthēs (‘you have been taught’) can mean formally instructed or merely informed (Acts 21:21 uses it of rumors); the word later gave the church ‘catechesis’. The sentence ends on asphaleian, ‘certainty’ or ‘security’, the last and emphatic word.",
+      "words": ["G3877", "G0509", "G0199", "G2517", "G2903", "G2321", "G2727", "G0803", "G1921"],
+      "history": "Josephus addresses both books of Against Apion to ‘most excellent Epaphroditus’ and opens the second with a summary of the first, exactly as Acts 1:1 opens with a summary of the Gospel for Theophilus. Theophilus means ‘friend of God’ or ‘loved by God’, and Origen (Homilies on Luke 1) suggested that every reader who loves God is the Theophilus addressed. The honorific title, though, points most readers to a real person, perhaps a patron who would have the work copied.",
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Luke writes so that a believer who has already been taught can know the ‘certainty’ of it. Faith here is not opposed to evidence; it is instruction strengthened by an orderly account of what happened."
+        }
+      ],
+      "refs": ["Acts 1:1", "Acts 11:4", "Acts 23:26", "Acts 2:36"]
+    },
+    {
+      "v": "5",
+      "context": "The narrative begins with a date, a priest, and a pedigree. Both husband and wife are of priestly descent, and the setting under Herod ties the story to a known reign before the temple scene that follows.",
+      "grammar": "Egeneto en tais hēmerais Hērōdou (‘it happened in the days of Herod’) imitates the Hebrew narrative opening vayehi bimei, familiar from the Greek Old Testament (Ruth 1:1). The change of register from verses 1-4 is deliberate: Luke can write classical Greek, and here chooses the idiom of Scripture. Ephēmeria (‘division’) is the word for a priestly course serving by the day or week. Elizabeth's name is the Greek form of Elisheba, the name of Aaron's own wife (Exodus 6:23), and ‘daughters of Aaron’ makes her priestly lineage explicit.",
+      "words": ["G1096", "G2264G", "G2183", "G0007H", "G1665", "G0002"],
+      "history": "Herod the Great ruled from 37 BC to his death, usually dated to 4 BC. The course of Abijah is the eighth of the twenty-four in 1 Chronicles 24:10, and Nehemiah 12:17 shows it still active after the exile. Lists of the priestly courses survive among the Dead Sea Scrolls in the calendrical texts called Mishmarot (4Q320-330), and fragments of a later synagogue inscription from Caesarea list the courses with the Galilean towns where their families settled after the wars with Rome (after AD 70 or after the Bar Kokhba revolt of 132-135; the date is disputed), one of them Nazareth.",
+      "parallels": ["Matthew 2:1"],
+      "refs": ["1 Chronicles 24:10", "Nehemiah 12:17", "Exodus 6:23", "Ruth 1:1"]
+    },
+    {
+      "v": "6-7",
+      "context": "Luke first establishes that the couple are righteous and law-keeping, then states their grief. The order matters: their childlessness is not a judgment on sin, and the Gospel opens among the faithful poor in hope rather than among the corrupt.",
+      "grammar": "Dikaioi enantion tou theou (‘righteous before God’) is Old Testament language for covenant faithfulness (Genesis 7:1), not a claim of sinlessness. Amemptoi (‘blameless’) is the word Paul uses of his own record under the law (Philippians 3:6). Probebēkotes en tais hēmerais, literally ‘advanced in their days’, is a Septuagint idiom. Kathoti (‘because’) gives the reason for the childlessness in Elizabeth alone, as ancient readers would expect.",
+      "words": ["G1342", "G0273", "G4260", "G4723", "G2530"],
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "A blameless couple live for decades with an unanswered grief. Luke refuses the equation of suffering with guilt that Jesus later rejects (Luke 13:1-5, John 9:2-3), and he shows God's answer coming in his own time."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Genesis 18:11",
+          "note": "The Septuagint describes Abraham and Sarah as probebēkotes hēmerōn, ‘advanced in days’, and Genesis 11:30 calls Sarah steira, ‘barren’. Luke uses both words of Zechariah and Elizabeth. The Hebrew has ba'im bayyamim, ‘going into days’, the idiom the Greek renders. The allusion signals that a new beginning like Isaac's birth is about to happen, one that only God can bring about."
+        }
+      ],
+      "refs": ["Genesis 11:30", "Genesis 7:1", "Philippians 3:6", "1 Samuel 1:2"]
+    },
+    {
+      "v": "8-10",
+      "context": "Zechariah's week of duty arrives and the lot selects him for the most solemn daily act a common priest could perform: burning incense inside the sanctuary. Outside, the people pray. Luke's Gospel begins and ends in the temple (24:53).",
+      "grammar": "Elachen (‘he was chosen by lot’, from lanchanō) means to obtain by lot; the same method chooses Matthias in Acts 1:26. Naos is the sanctuary building itself, the holy place, as distinct from hieron, the whole temple complex with its courts, where the people pray (2:27). Thumiasai (‘to burn incense’) and thumiamatos (‘of incense’) repeat the key act. Hōra tou thumiamatos (‘the hour of incense’) is the set hour of prayer.",
+      "words": ["G2975", "G3485", "G2370", "G2368", "G4336", "G2183"],
+      "history": "Incense was burned on the golden altar every morning and evening (Exodus 30:7-8). The Mishnah (m. Tamid 5:2-6:3) describes lots cast among the priests on duty for the tasks of the daily offering, including a lot for the incense restricted to those who had never offered it, and the Babylonian Talmud (b. Yoma 26a) says no priest offered the incense twice. The evening offering was a public hour of prayer (Acts 3:1 mentions the ninth hour, about 3 p.m.), and it was at the time of the evening offering that Gabriel came to Daniel (Daniel 9:21).",
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "The scene joins the priest's incense with the people's prayers, the connection Psalm 141:2 makes and Revelation 8:3-4 pictures in heaven. Luke's first scene of revelation takes place during prayer, a pattern he repeats at Jesus' baptism (3:21) and transfiguration (9:29)."
+        },
+        {
+          "id": "temple",
+          "note": "The Gospel starts in the sanctuary, at the center of Israel's worship, and ends there with disciples blessing God (24:53). Luke presents Jesus' coming as the fulfillment of temple hope, not a rival to it."
+        }
+      ],
+      "refs": ["Exodus 30:7-8", "Psalm 141:2", "Revelation 8:3-4", "Acts 3:1", "Daniel 9:21"]
+    },
+    {
+      "v": "11-12",
+      "context": "An angel appears at the right side of the incense altar, the side of favor. Zechariah's fear is the standard human response to the holy in Luke (1:29, 2:9), and it sets up the first ‘Do not be afraid’ of the Gospel.",
+      "grammar": "Ōphthē (‘appeared’, literally ‘was seen’) is an aorist passive of horaō, the verb Luke uses for the risen Jesus appearing to Simon (24:34) and Paul uses for the resurrection appearances (1 Corinthians 15:5-8). Hestōs (‘standing’) is a perfect participle: when Zechariah sees him the angel is already there. Phobos epepesen ep' auton, ‘fear fell upon him’, is a Septuagint idiom (Exodus 15:16).",
+      "words": ["G3700H", "G0032G", "G2476", "G2379", "G5401", "G1968"],
+      "theology": [
+        {
+          "id": "angels",
+          "note": "The angel is ‘of the Lord’, a messenger defined wholly by the one who sends him. In Luke angels announce and interpret (1:26, 2:9, 24:4) but never become the center of the story."
+        }
+      ],
+      "refs": ["Judges 13:3", "Daniel 10:7-12", "Luke 24:34"]
+    },
+    {
+      "v": "13",
+      "context": "The angel's first words calm the priest and announce that a prayer has been heard. The promised son and his name come together, as with Ishmael and Isaac (Genesis 16:11, 17:19).",
+      "grammar": "Mē phobou is a present imperative with the negative, ‘stop being afraid’. Eisēkousthē hē deēsis sou (‘your prayer has been heard’) is an aorist passive with God as the unnamed agent. Which prayer is meant is debated. Deēsis names a specific petition, and the promise of a son suggests the couple's long prayer for a child; but a priest praying at the incense would be praying for Israel's redemption, and some commentators, among them Joseph Fitzmyer (Anchor Bible, 1981), note that the angel answers both. The name Iōannēs renders the Hebrew Yochanan, ‘the LORD has been gracious’.",
+      "words": ["G5399", "G1522", "G1162", "G2491G", "G2564G"],
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "A prayer Zechariah had likely given up on is heard. The verse shows that the delay of an answer is not its refusal, and the answer, when it comes, is larger than the request."
+        }
+      ],
+      "refs": ["Genesis 17:19", "Genesis 16:11", "1 Samuel 1:17", "Daniel 10:12"]
+    },
+    {
+      "v": "14-15",
+      "context": "The angel describes the son: joy to his parents and many others, greatness before the Lord, abstinence from strong drink, and the Spirit from the womb. Each phrase marks John as a prophet set apart like Samson and Samuel.",
+      "grammar": "Chara and agalliasis (‘joy’ and ‘exultation’) begin Luke's vocabulary of joy, which runs through the birth stories (1:44, 1:47, 2:10). Megas enōpion kuriou, ‘great before the Lord’, is qualified; Jesus will be called ‘great’ without qualification (1:32). Ou mē piē uses the double negative with an aorist subjunctive, the strongest form of denial in Greek: ‘he shall never drink’. Sikera (‘strong drink’) is a loanword from Hebrew shekar, fermented drink not made from grapes. Eti ek koilias mētros autou can mean ‘even from birth’ or ‘while still in the womb’; verse 41, where the unborn John leaps at Mary's greeting, favors the second.",
+      "words": ["G5479", "G0020", "G3173", "G4608", "G4095", "G4130", "G2836"],
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "John is filled with the Spirit before he can do anything, as Jeremiah was set apart before birth (Jeremiah 1:5). Luke contrasts two kinds of filling, wine and the Spirit, a contrast Paul makes too (Ephesians 5:18) and Pentecost dramatizes (Acts 2:13-17)."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Numbers 6:3",
+          "note": "The Nazirite law forbids wine and shekar (Septuagint oinou kai sikera, the same pair as here). Samson's mother is told her son will be a Nazirite from the womb (Judges 13:4-5), and in the Septuagint of 1 Samuel 1:11 Hannah vows that Samuel will drink no wine or strong drink. Luke does not call John a Nazirite and does not mention the hair, so the allusion marks him as consecrated like these figures without applying the vow in full."
+        }
+      ],
+      "refs": ["Judges 13:4-5", "1 Samuel 1:11", "Jeremiah 1:5", "Ephesians 5:18", "Luke 7:28"]
+    },
+    {
+      "v": "16-17",
+      "context": "John's task is to turn Israel back and prepare a people. The key identification comes here: he will go before ‘the Lord their God’ in Elijah's spirit and power, which will make the one who follows him the Lord himself.",
+      "grammar": "Epistrepsei (‘he will turn’) and epistrepsai are from epistrephō, the Greek Old Testament's usual verb for Israel's repentance (the Hebrew shuv). Autou in proeleusetai enōpion autou (‘he will go before him’) grammatically refers to ‘the Lord their God’ of verse 16; Luke's readers learn in verse 76 and in chapter 3 that John goes before Jesus. Kateskeuasmenon is a perfect passive participle, ‘made ready’, a people in a prepared state.",
+      "words": ["G1994", "G4281", "G1799", "G2243", "G2090", "G2680", "G5428"],
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "Repentance here restores relationships: fathers to children, the disobedient to the wisdom of the righteous. Luke 3:10-14 will show what that turning looks like in practice."
+        },
+        {
+          "id": "prophecy",
+          "note": "The angel identifies John with the Elijah promised in Malachi. Jesus later confirms it (Luke 7:27, Matthew 11:14), though John himself denies being Elijah in person (John 1:21); the angel's phrase ‘in the spirit and power of Elijah’ explains how both are true."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Malachi 4:5-6",
+          "note": "Malachi (3:23-24 in the Hebrew) promises Elijah before the great day of the LORD to turn the heart of fathers to sons and of sons to their fathers. The Septuagint changes the second line to ‘the heart of a man to his neighbor’. Luke keeps the first line and replaces the second with ‘the disobedient to the wisdom of the righteous’, a moral turning. Sirach 48:10 already expected Elijah to turn the heart of the father to the son and restore the tribes of Jacob. Malachi 3:1, the messenger who prepares the way before the Lord, stands behind ‘to make ready a people’."
+        }
+      ],
+      "refs": ["Malachi 3:1", "Luke 7:27", "Matthew 11:14", "John 1:21"]
+    },
+    {
+      "v": "18",
+      "context": "Zechariah asks for proof. His question sounds like Mary's in verse 34, but the angel's response shows the difference: he asks how he can know, she asks how it will happen.",
+      "grammar": "Kata ti gnōsomai touto, literally ‘by what shall I know this?’, is a request for a sign. It echoes Abram's words in Genesis 15:8, where the Septuagint has the same kata ti gnōsomai. Abram was answered with a covenant ceremony; Zechariah will be answered with silence, the sign and the discipline in one. Presbutēs (‘old man’) and probebēkuia (‘advanced’) repeat verse 7, as if age settled the matter.",
+      "words": ["G2596", "G1097", "G4246", "G4260"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Zechariah is righteous (verse 6) and still doubts. Luke shows that faith is not a fixed possession of the devout; a lifelong priest can falter at the very promise he prayed for."
+        }
+      ],
+      "refs": ["Genesis 15:8", "Genesis 17:17", "Judges 6:17", "Luke 1:34"]
+    },
+    {
+      "v": "19-20",
+      "context": "The angel names himself and his standing, then pronounces the sign: silence until the promise comes true. The Gospel's first use of ‘good news’ is here, in a message received with doubt.",
+      "grammar": "Parestēkōs enōpion tou theou, ‘standing in the presence of God’, uses a perfect participle for a permanent station, the posture of a court official. Euangelisasthai (‘to bring good news’) is the first appearance of euangelizomai, a verb Luke uses far more often than Matthew or Mark. Esē siōpōn kai mē dunamenos lalēsai (‘you will be silent and unable to speak’) is a periphrastic future describing a continuing state. Anth' hōn means ‘because’, and hoitines plērōthēsontai eis ton kairon autōn, ‘which will be fulfilled in their time’, affirms that the words will happen whether or not Zechariah believes them.",
+      "words": ["G1043", "G3936", "G2097", "G4623", "G1410", "G0473", "G4137", "G2540"],
+      "history": "Gabriel is one of only two angels named in the Old Testament, both in Daniel (8:16, 9:21), where he explains visions of the end and the seventy weeks. Jewish writings of the Second Temple period (the era between the return from exile and AD 70) name him among the chief angels (1 Enoch 9:1, 20:7). Tobit 12:15 has Raphael describe himself as one of the seven angels who stand before the glory of the Lord.",
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Unbelief does not stop God's word; it only keeps the doubter from speaking about it. The discipline is also mercy: Zechariah's silence ends in praise (1:64)."
+        }
+      ],
+      "refs": ["Daniel 8:16", "Daniel 9:21-23", "Daniel 10:15", "Luke 1:64"]
+    },
+    {
+      "v": "21-22",
+      "context": "The scene cuts to the waiting crowd. The priest who should come out to bless them emerges speechless, gesturing. Luke's Gospel will end with Jesus lifting his hands and blessing his disciples, who then return to the temple praising God (24:50-53).",
+      "grammar": "Ēn ho laos prosdokōn, ‘the people were waiting’, is a periphrastic imperfect; the verb prosdokaō runs through Luke for Israel's expectation (3:15, 7:19-20). Ēn dianeuōn (‘he kept making signs’) is another continuous imperfect. Kōphos can mean mute, deaf, or both; the relatives' signing to Zechariah in verse 62 suggests he could not hear either. Optasia (‘vision’) is used again of the women's report of angels at the tomb (24:23).",
+      "words": ["G4328", "G5549", "G3701", "G1269", "G2974", "G1265"],
+      "history": "The Mishnah says the high priest on the Day of Atonement kept his prayer in the sanctuary short so as not to alarm the people waiting outside (m. Yoma 5:1). The daily priests pronounced the priestly blessing of Numbers 6:24-26 over the people after the offering (m. Tamid 7:2), the blessing Zechariah could not give.",
+      "refs": ["Numbers 6:24-26", "Luke 24:50-53", "Luke 24:23"]
+    },
+    {
+      "v": "23-25",
+      "context": "Zechariah finishes his week and goes home, and the promise begins to come true. Elizabeth's secluded months and her words of thanks close the first announcement.",
+      "grammar": "Leitourgia (‘service’) is the Septuagint's word for priestly ministry, the source of ‘liturgy’. Periekruben (‘she kept herself hidden’) is an imperfect, a sustained seclusion; Luke gives no reason, and suggestions range from modesty to a wish to wait until the pregnancy was undeniable. Epeiden (‘he looked upon’) is an aorist of epeidon, used elsewhere in the New Testament only in Acts 4:29. Oneidos (‘disgrace’) names public reproach.",
+      "words": ["G3009", "G4032", "G1896", "G0851", "G3681"],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "Elizabeth attributes the pregnancy entirely to the Lord's gaze and action. The verse shows God's care reaching into a private shame the community had noticed and, in its way, enforced."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Genesis 30:23",
+          "note": "When Rachel bears Joseph after long barrenness, she says God has taken away her reproach; the Septuagint reads aphēlen ho theos mou to oneidos, the same verb and noun as Elizabeth's aphelein oneidos. Elizabeth speaks in the words of Israel's mothers, placing her son among the children God gave to the barren."
+        }
+      ],
+      "refs": ["Genesis 30:23", "1 Samuel 1:6", "Isaiah 54:1", "Acts 4:29"]
+    },
+    {
+      "v": "26-27",
+      "context": "The second announcement moves from the temple to a village, from a priest to a young woman, from Jerusalem to Galilee. The time marker ‘sixth month’ binds the two stories together, and the double mention of ‘virgin’ prepares for the question of verse 34.",
+      "grammar": "Parthenos appears twice in one verse. In ordinary Greek it means a young unmarried woman and normally implies virginity, and verse 34 makes that sense explicit here. Emnēsteumenēn is a perfect passive participle, ‘betrothed’, a settled legal status. Ex oikou Dauid (‘of the house of David’) most naturally goes with Joseph, the nearer noun, and 2:4 confirms that Joseph was of David's line; some older interpreters attached it to Mary.",
+      "words": ["G3933", "G3423", "G3624H", "G1138", "G3478", "G0649"],
+      "history": "Nazareth is not mentioned in the Old Testament, Josephus, or the Mishnah; excavations show a small agricultural village in the first century. The earliest non-Christian mention is the Caesarea inscription of the priestly courses (see verse 5), which records that one priestly family settled there after the wars with Rome (after AD 70 or after 135; the date is disputed). The contrast Nathanael draws in John 1:46 fits what archaeology shows.",
+      "parallels": ["Matthew 1:18"],
+      "refs": ["John 1:46", "Matthew 2:23", "Luke 2:4"]
+    },
+    {
+      "v": "28",
+      "context": "Gabriel's greeting to Mary is brief and full of meaning: a call to rejoice, a title of grace, and an assurance of God's presence. Mary's reaction in the next verse shows how unusual it was.",
+      "grammar": "Chaire is the ordinary Greek greeting (‘hello’), but it literally means ‘rejoice’. Stanislas Lyonnet (1939) argued it echoes the prophets' summons to Daughter Zion to rejoice because the LORD is in her midst (Zephaniah 3:14-17, Zechariah 9:9), and René Laurentin developed the idea; Joseph Fitzmyer and Raymond Brown took it as the everyday greeting. Kecharitōmenē is a perfect passive participle of charitoō, ‘one who has been favored’, used as a name. The Latin Vulgate rendered it gratia plena, ‘full of grace’, the basis of the Ave Maria. Protestant interpreters have stressed that the passive makes Mary the recipient of God's favor rather than its source; Catholic interpreters have read the perfect as a lasting state of grace. Ho kurios meta sou, ‘the Lord is with you’, is the assurance given to Gideon (Judges 6:12).",
+      "words": ["G5463", "G5487", "G2962G"],
+      "theology": [
+        {
+          "id": "election",
+          "note": "Mary is addressed by what God has done for her before anything she does. The verse presents God's choice as free favor, given to a young woman of no standing in a village of no reputation."
+        }
+      ],
+      "text": "The Byzantine manuscripts, followed by the King James Version, add ‘blessed art thou among women’, borrowed from Elizabeth's greeting in verse 42. The earliest manuscripts (Sinaiticus and Vaticanus among them) lack it here.",
+      "refs": ["Zephaniah 3:14-17", "Judges 6:12", "Ephesians 1:6", "Luke 1:42"]
+    },
+    {
+      "v": "29-30",
+      "context": "Mary is troubled not by the angel's appearance but by his words, and she thinks before she speaks. The angel repeats the reassurance given to Zechariah and restates her favor in plain terms.",
+      "grammar": "Dietarachthē is a strengthened form (dia- plus tarassō, ‘thoroughly troubled’), and dielogizeto (imperfect) shows her reasoning it through. Potapos eiē uses the optative mood in an indirect question, a refined literary touch rare in the New Testament. Heures charin para tō theō, ‘you have found favor with God’, is the Septuagint's phrase for Noah (Genesis 6:8) and Moses (Exodus 33:17), people chosen for a role in God's purposes.",
+      "words": ["G1298", "G1260", "G4217", "G2147", "G5485"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Mary's troubled reasoning is not unbelief. Luke shows a faith that thinks, questions, and then consents, in contrast with the demand for proof in verse 18."
+        }
+      ],
+      "refs": ["Genesis 6:8", "Exodus 33:17", "Luke 2:19", "Luke 2:51"]
+    },
+    {
+      "v": "31",
+      "context": "The heart of the annunciation: conception, birth, and the name. The formula is the Old Testament's birth announcement, used for Ishmael, Samson, and in Isaiah for Immanuel.",
+      "grammar": "Idou (‘behold’) marks the announcement. Sullēmpsē en gastri kai texē huion kai kaleseis to onoma autou is a string of three futures that closely follows the Septuagint's birth-announcement pattern. Mary gives the name here (kaleseis, ‘you will call’), where in Matthew 1:21 Joseph does. Iēsous is the Greek form of Yeshua, a late form of Yehoshua (Joshua), ‘the LORD saves’; Luke does not explain the name here as Matthew does, but the angels will call him ‘Savior’ in 2:11.",
+      "words": ["G2400", "G4815", "G5088", "G2564G", "G2424G"],
+      "ot": [
+        {
+          "ref": "Isaiah 7:14",
+          "note": "The Septuagint of Isaiah 7:14 reads idou hē parthenos en gastri hexei kai texetai huion kai kaleseis to onoma autou Emmanouēl, ‘behold, the virgin will conceive and bear a son, and you will call his name Emmanuel’. The Hebrew has ha'almah, ‘the young woman’, and the verse was first a sign to King Ahaz. Luke does not quote it as Matthew does (1:23), but with parthenos repeated in verse 27 and nearly the same wording here, the echo is hard to miss. The same formula appears in the angel's words to Hagar (Genesis 16:11) and to Samson's mother (Judges 13:3)."
+        }
+      ],
+      "parallels": ["Matthew 1:20-23"],
+      "refs": ["Genesis 16:11", "Judges 13:3", "Matthew 1:21", "Luke 2:11"]
+    },
+    {
+      "v": "32-33",
+      "context": "Gabriel names who the child will be: great, Son of the Most High, heir to David's throne, king over Jacob's house forever. The promise to David is restated almost clause by clause.",
+      "grammar": "Megas stands without qualification, unlike John's ‘great before the Lord’ (verse 15). Huios hupsistou klēthēsetai, ‘will be called Son of the Most High’, uses ‘called’ in the Semitic sense of ‘will be’ (Isaiah 9:6). Hupsistos (‘Most High’) is a Septuagint title for God (Genesis 14:18) and one of Luke's favorites (1:35, 1:76, 6:35). Basileusei ... eis tous aiōnas (‘he will reign forever’) and ouk estai telos (‘there will be no end’) are Luke's two ways of saying the same thing.",
+      "words": ["G3173", "G5310", "G2564G", "G2362", "G0936", "G0165H", "G0932", "G5056"],
+      "history": "An Aramaic fragment from Qumran, 4Q246 (sometimes called the Son of God text), speaks of a figure who will be called son of God and son of the Most High and whose kingdom is everlasting. Whether that figure is a Messiah or an arrogant ruler claiming divine titles is debated (John J. Collins argues for a messianic reading; others see a hostile king), but the fragment shows that these titles were used together in Judea before Luke wrote.",
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "The verse sets Jesus in the Davidic promise: son, throne, house, and a kingdom without end. Luke makes the royal hope the frame for everything Jesus will do."
+        },
+        {
+          "id": "kingdom",
+          "note": "‘His kingdom will never end’ gives the reign of David's heir the permanence Daniel 7:14 gives the kingdom of the Son of Man, joining the two strands of hope in one person."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "2 Samuel 7:12-16",
+          "note": "Nathan's oracle promises that David's offspring will have an established throne and kingdom forever, and that God will be his father and he God's son. Luke gathers its terms (great name, throne, house, son, forever) into Gabriel's words. Isaiah 9:7 adds that there will be no end to the increase of his government on David's throne, and the Septuagint of that verse reads ouk estin horion, ‘no limit’, close to Luke's ouk estai telos."
+        }
+      ],
+      "refs": ["2 Samuel 7:12-16", "Isaiah 9:6-7", "Daniel 7:14", "Psalm 89:3-4", "Acts 2:30"]
+    },
+    {
+      "v": "34",
+      "context": "Mary asks how, not whether. Her question opens the way for the angel to explain the manner of the conception, which is the point of the scene.",
+      "grammar": "Andra ou ginōskō, ‘I do not know a man’, uses ginōskō in its biblical sense of sexual relations (Genesis 4:1, 19:8). The present tense has puzzled readers, since a betrothed woman would expect children after the wedding. Augustine (On Holy Virginity 4) took it as a sign that Mary had resolved to remain a virgin, a reading still common in Catholic interpretation. Others take the present as describing her present state and assume she understood the conception to be immediate. Raymond Brown (The Birth of the Messiah, 1977) treated the question as a literary device that lets the angel reveal the virginal conception. The grammar allows all three; the text does not settle the motive.",
+      "words": ["G4459", "G1893", "G0435G", "G1097"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Mary's question seeks understanding and is not rebuked. Scripture distinguishes the honest question of faith from the demand for a sign (compare verse 18)."
+        }
+      ],
+      "refs": ["Genesis 4:1", "Matthew 1:18", "Matthew 1:25"]
+    },
+    {
+      "v": "35",
+      "context": "The angel answers with two parallel lines about the Spirit and the power of the Most High, then draws the conclusion about the child's identity. This is the chapter's central statement about the conception of Jesus.",
+      "grammar": "Epeleusetai epi se (‘will come upon you’) is the verb Jesus uses of the Spirit at Pentecost (Acts 1:8), linking the birth of Jesus with the birth of the church. Episkiasei (‘will overshadow’) recalls the cloud over the tabernacle and at the transfiguration (9:34). Dio (‘therefore’) makes the title follow from the conception. The final clause can be divided two ways: ‘the holy one to be born will be called Son of God’ (the BSB and most versions) or ‘the child to be born will be called holy, Son of God’ (the RSV). Gennōmenon is a present passive participle, ‘the one being begotten’ or ‘born’.",
+      "words": ["G1904", "G1982", "G1411", "G5310", "G1352", "G1080", "G0040G", "G5207"],
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "The conception is God's creative act through the Spirit, without a human father and without any hint of a divine partner. The church confesses on this verse that Jesus was conceived by the Holy Spirit and born of the virgin Mary (the Apostles' Creed)."
+        },
+        {
+          "id": "trinity",
+          "note": "The Most High, his power, the Holy Spirit, and the Son of God all appear in one sentence. The verse does not state a doctrine of the Trinity, but it is one of the texts from which the church learned to speak of Father, Son, and Spirit acting together."
+        },
+        {
+          "id": "spirit",
+          "note": "The Spirit who hovered over the waters at creation (Genesis 1:2) comes upon Mary, and the life that results is holy from its beginning."
+        }
+      ],
+      "text": "The Byzantine manuscripts add ek sou, ‘of you’, so the King James Version reads ‘that holy thing which shall be born of thee’. The earliest manuscripts lack the phrase.",
+      "refs": ["Exodus 40:34-35", "Acts 1:8", "Luke 9:34", "Genesis 1:2", "Matthew 1:20"]
+    },
+    {
+      "v": "36-37",
+      "context": "The angel offers Mary a sign she did not ask for: her aged relative Elizabeth is six months pregnant. The saying that closes the announcement grounds both pregnancies in God's word.",
+      "grammar": "Sungenis (‘relative’) does not specify the relation, so it does not settle Mary's tribal descent; Elizabeth is of Aaron's line, and nothing here requires Mary to be. Suneilēphen is perfect, ‘has conceived’, the pregnancy an established fact. In verse 37, ouk adunatēsei ... pan rhēma is literally ‘every word will not be impossible’, a Hebrew-style negation meaning ‘no word will be impossible’. Rhēma can mean ‘word’ or ‘thing’, like Hebrew davar, so it can be read ‘nothing will be impossible with God’ (the King James Version) or ‘no word from God will ever fail’ (the BSB).",
+      "words": ["G6080", "G4815", "G1094", "G0101", "G4487"],
+      "text": "The earliest manuscripts read para tou theou, ‘from God’, which suits the BSB's ‘no word from God’; the Byzantine manuscripts read para tō theō, ‘with God’, which suits ‘with God nothing shall be impossible’.",
+      "ot": [
+        {
+          "ref": "Genesis 18:14",
+          "note": "When Sarah laughed at the promise of a son, the LORD asked whether anything is too hard for him. The Hebrew uses davar (‘word’ or ‘thing’) with the verb pala, ‘be wonderful, too hard’; the Septuagint reads mē adunatei para tō theō rhēma, the same verb and noun Luke uses. Gabriel's words place Mary's conception in the line of Isaac's, and go beyond it, since Sarah's was a birth to the barren and Mary's is a birth to a virgin."
+        }
+      ],
+      "refs": ["Genesis 18:14", "Jeremiah 32:17", "Mark 10:27", "Luke 18:27"]
+    },
+    {
+      "v": "38",
+      "context": "Mary consents. Her answer ends the annunciation, and the angel's departure closes the scene as his arrival opened it.",
+      "grammar": "Idou hē doulē kuriou has no verb: ‘Behold, the Lord's slave woman’. Doulē is the ordinary word for a female slave, and Hannah calls herself God's servant in the same way (1 Samuel 1:11). Genoito is an aorist optative, the mood of wish: ‘may it happen’. The Latin fiat mihi (‘let it be done to me’) gave the church the name ‘Mary's fiat’ for this consent.",
+      "words": ["G2400", "G1401", "G1096", "G4487"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Mary's faith is expressed as availability: she places herself under God's word before she knows what it will cost. Elizabeth will pronounce the blessing on this faith in verse 45."
+        }
+      ],
+      "refs": ["1 Samuel 1:18", "1 Samuel 3:10", "Luke 1:45", "Luke 11:28"]
+    },
+    {
+      "v": "39-40",
+      "context": "Mary sets out quickly to the hill country of Judah, the region of Jerusalem, to the home of Zechariah. The two announcement stories now meet in a single house.",
+      "grammar": "Anastasa ... eporeuthē, ‘arising, she went’, is a Septuagint pattern for decisive departure; the same words (anestē kai eporeuthē) describe David setting out to bring up the ark in 2 Samuel 6:2. Meta spoudēs (‘with haste’) shows eagerness, the same eagerness as the shepherds' in 2:16. Luke does not name the town.",
+      "words": ["G0450", "G4198", "G3714", "G4710", "G2448", "G0782"],
+      "history": "Priests on rotation lived in towns throughout Judea and went up to Jerusalem for their week of service. From about the sixth century, Christian tradition has identified Zechariah's town with Ein Karem, a village about four miles west of Jerusalem, where churches of the Visitation and of John's birth now stand. The Gospel itself gives no name, and the tradition cannot be checked.",
+      "refs": ["2 Samuel 6:2", "Luke 2:16", "Joshua 21:10-11"]
+    },
+    {
+      "v": "41-42",
+      "context": "At Mary's greeting the unborn John leaps and Elizabeth is filled with the Spirit and cries out a blessing. Before Mary says anything about her news, Elizabeth knows it.",
+      "grammar": "Eskirtēsen (‘leaped’) is the verb the Septuagint uses when the twins struggle in Rebekah's womb (Genesis 25:22), a movement there interpreted as a sign of destiny, and Malachi 4:2 uses it of calves leaping for joy. Anephōnēsen (‘cried out’) occurs only here in the New Testament; in the Septuagint it is used almost entirely of the Levites' music before the ark (1 Chronicles 15:28, 16:4-5). Eulogēmenē ... eulogēmenos are two perfect passive participles, ‘blessed’ as a lasting condition, pronounced first on the mother and then on the child.",
+      "words": ["G4640", "G1025", "G2836", "G0400", "G2127", "G2590"],
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "The Spirit fills Elizabeth and she speaks prophetically, the first of several in Luke's birth stories to do so (1:67, 2:25-27). The Spirit's first work in the Gospel is to recognize Jesus."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Judges 5:24",
+          "note": "Deborah's song calls Jael most blessed among women for killing Sisera, and in Judith 13:18 the elder Uzziah blesses Judith above all women on earth after she beheads Holofernes. Both women delivered Israel from an enemy. Elizabeth's blessing places Mary in that line, though her part in deliverance is to bear the deliverer. The second line echoes Deuteronomy 28:4, where the fruit of the womb is blessed for covenant faithfulness."
+        }
+      ],
+      "refs": ["Genesis 25:22", "Deuteronomy 28:4", "Luke 11:27-28"]
+    },
+    {
+      "v": "43-45",
+      "context": "Elizabeth names Mary ‘the mother of my Lord’, explains the leap as joy, and pronounces a blessing on Mary's faith. The priest's wife defers to the village girl, and the older prophet's mother to the younger mother of the Lord.",
+      "grammar": "Pothen moi touto, ‘whence is this to me?’, is an idiom of humble surprise. Hē mētēr tou kuriou mou, ‘the mother of my Lord’, uses kurios, which in Luke's narrative is also the name of God (verses 6, 9, 11); the reader is meant to feel the weight. In verse 45 the hoti clause can mean ‘blessed is she who believed that there would be fulfillment’ or ‘blessed is she who believed, because there will be fulfillment’. Makaria is the word of the Beatitudes (6:20).",
+      "words": ["G4159", "G3384", "G2962G", "G4640", "G3107", "G4100", "G5050"],
+      "history": "The title ‘Mother of God’ (Theotokos, ‘God-bearer’) was affirmed at the Council of Ephesus in AD 431 against Nestorius, who preferred ‘Christ-bearer’. The council's concern was Christ's person, that the one born of Mary is one person, truly God; this verse, with its ‘mother of my Lord’, was among the texts cited.",
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "The unborn Jesus, only days or weeks conceived, is already ‘my Lord’. The verse gives no stage of his human life in which he is less than who he is."
+        },
+        {
+          "id": "faith",
+          "note": "The first beatitude in Luke is spoken over belief in God's word. Its contrast with Zechariah's silence is deliberate."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "2 Samuel 6:9-11",
+          "note": "When the ark came toward him, David asked how it could come to him, and it stayed three months in the house of Obed-edom, bringing blessing. Luke has Elizabeth ask why the mother of her Lord should come to her, and Mary stay three months (verse 56). René Laurentin (Structure et théologie de Luc I-II, 1957) read this as a deliberate portrait of Mary as the new ark; Raymond Brown and Joseph Fitzmyer judged the parallels too loose to prove design. The shared details are real; how much weight they bear remains debated."
+        }
+      ],
+      "refs": ["Psalm 110:1", "2 Samuel 24:21", "Luke 6:20", "Luke 11:28"]
+    },
+    {
+      "v": "46-47",
+      "context": "Mary's song, the Magnificat, begins. Its first two lines are Hebrew parallelism in Greek: soul and spirit, magnify and rejoice, the Lord and God my Savior.",
+      "grammar": "Megalunei (present, ‘magnifies’) means to make great, here to declare great in praise. Psuchē (‘soul’) and pneuma (‘spirit’) are parallel terms for the whole inner self, not two parts of her. The second verb, ēgalliasen, is aorist; some grammarians read it as a Semitic parallel to the present, others as ingressive, ‘has begun to rejoice’. The combination of ‘God’ and ‘Savior’ applies to Israel's God the title the Roman world gave rulers (see 2:11).",
+      "words": ["G3170", "G5590I", "G0021", "G4151G", "G4990"],
+      "text": "Three Old Latin manuscripts (Vercellensis, Veronensis, and Rehdigeranus) read ‘Elizabeth said’, and Niceta of Remesiana (about AD 400) attributes the song to Elizabeth. Alfred Loisy and Adolf von Harnack (1900) argued that Luke wrote only ‘she said’ and that Elizabeth was meant. All Greek manuscripts read ‘Mary’, and nearly all scholars keep it.",
+      "history": "The Magnificat has been sung daily at the evening office of Vespers in the Western church for well over a millennium, and in the Anglican Book of Common Prayer at Evening Prayer. Martin Luther wrote a commentary on it in 1521, and settings range from Monteverdi's Vespers (1610) to J. S. Bach's Magnificat.",
+      "ot": [
+        {
+          "ref": "1 Samuel 2:1",
+          "note": "Hannah's song after Samuel's birth opens with her heart exulting in the LORD and her horn exalted. Luke's song follows its shape: personal praise, then God's reversal of the proud and the humble, then his rule. Habakkuk 3:18 in the Septuagint reads agalliasomai epi tō theō tō sōtēri mou, ‘I will rejoice in God my Savior’, almost exactly Mary's second line, and Psalm 34:3 calls others to magnify the LORD."
+        }
+      ],
+      "refs": ["1 Samuel 2:1-10", "Habakkuk 3:18", "Psalm 34:3", "Psalm 35:9"]
+    },
+    {
+      "v": "48",
+      "context": "The first reason for praise: God has looked on Mary's low estate. The second half turns the private mercy into a public, permanent one, with every generation calling her blessed.",
+      "grammar": "Hoti (‘for’) introduces the reason. Epeblepsen epi tēn tapeinōsin (‘he looked upon the lowliness’) uses tapeinōsis, which can mean humble condition or humiliation. Idou gar apo tou nun (‘for behold, from now on’) marks a turning point Luke will repeat (5:10, 12:52, 22:69). Makariousin (‘will call blessed’) is future.",
+      "words": ["G1914", "G5014", "G1401", "G3568", "G3106", "G1074"],
+      "theology": [
+        {
+          "id": "justice-poor",
+          "note": "God's attention settles first on the lowly. The song begins with one young woman's condition and will widen in verses 51-53 to a principle of how God acts in history."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "1 Samuel 1:11",
+          "note": "Hannah prays that the LORD will look on the affliction of his servant; the Septuagint reads epiblepsēs epi tēn tapeinōsin tēs doulēs sou, virtually Mary's words. In Genesis 30:13 Leah, naming Asher, says women will call her blessed (Septuagint makariousin me pasai hai gunaikes). Mary joins two mothers of Israel, and widens Leah's ‘women’ to ‘all generations’."
+        }
+      ],
+      "refs": ["1 Samuel 1:11", "Genesis 30:13", "Luke 11:27-28", "James 1:9-10"]
+    },
+    {
+      "v": "49-50",
+      "context": "The song names who God is: the Mighty One, whose name is holy and whose mercy lasts through the generations. The personal blessing of verse 48 now rests on God's character.",
+      "grammar": "Ho dunatos (‘the Mighty One’) is a divine title from the Septuagint (Zephaniah 3:17). Megala (‘great things’) recalls Deuteronomy 10:21, where God has done great things for Israel. Hagion to onoma autou is a nominal sentence without a verb: ‘holy (is) his name’. Eleos (‘mercy’) translates the Hebrew chesed, God's steadfast covenant love, and eis geneas kai geneas (‘to generations and generations’) is a Hebrew idiom for permanence.",
+      "words": ["G1415", "G3173", "G0040G", "G3686", "G1656", "G1074", "G5399"],
+      "theology": [
+        {
+          "id": "holiness",
+          "note": "God's power and holiness are not set against his mercy; they are its source. The one whose name is holy stoops to those who fear him."
+        },
+        {
+          "id": "fear-of-god",
+          "note": "Mercy is promised to ‘those who fear Him’, the Old Testament's phrase for people who live in reverent trust (Psalm 103:17). The verse makes such fear the posture that receives God's mercy."
+        }
+      ],
+      "text": "The earliest manuscripts read eis geneas kai geneas; the Byzantine text has eis geneas geneōn, ‘to generations of generations’. The sense is the same.",
+      "refs": ["Deuteronomy 10:21", "Psalm 111:9", "Psalm 103:17", "Zephaniah 3:17"]
+    },
+    {
+      "v": "51-53",
+      "context": "The song turns to God's reversals: the proud scattered, rulers brought down, the humble raised, the hungry filled, the rich sent away empty. The pairs are the chapter's clearest statement of how God acts, and Luke's Gospel will play them out in the Beatitudes and woes (6:20-26) and the rich man and Lazarus (16:19-31).",
+      "grammar": "Six aorist verbs (epoiēsen, dieskorpisen, katheilen, hupsōsen, eneplēsen, exapesteilen) describe what God ‘has done’, and their time reference is one of the song's real puzzles. Some grammarians read them as prophetic aorists, speaking of the future as already accomplished; others as gnomic, describing what God characteristically does; others as referring to what God has done in Israel's history, or to what he has just begun in Mary's conception. Raymond Brown (The Birth of the Messiah) discusses them as a Greek rendering of Hebrew perfects. The choice changes the song's tone from prophecy to praise, though its claim about God is the same either way.",
+      "words": ["G4160G", "G2904", "G1023", "G1287", "G5244", "G2507", "G1413", "G5312", "G5011", "G3983", "G1705", "G4147", "G1821", "G2756"],
+      "history": "The song has repeatedly been read as a text about power. Luther's 1521 commentary on it, dedicated to the young prince John Frederick of Saxony, told him to learn from it how God regards rulers. In an Advent sermon of 1933 Dietrich Bonhoeffer called it a revolutionary song. Gustavo Gutiérrez and other Latin American liberation theologians made it central to their reading of God's preference for the poor; others insist that the ‘humble’ and ‘hungry’ include the spiritually humble. Luke's own Gospel keeps both material and spiritual poverty in view.",
+      "theology": [
+        {
+          "id": "justice-poor",
+          "note": "The song makes God's rescue of the humble and the hungry part of Israel's salvation, not an addition to it. It does not treat poverty as a virtue but as a place where God's mercy arrives."
+        },
+        {
+          "id": "wealth",
+          "note": "The rich are ‘sent away empty’, not because wealth is evil but because the self-sufficient have no room to receive. Luke develops this in the parable of the rich fool (12:16-21) and the rich ruler (18:18-25)."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "1 Samuel 2:4-8",
+          "note": "Hannah's song sings that the bows of the mighty are broken while the feeble gain strength, that the full hire themselves out for bread while the hungry hunger no more, and that the LORD raises the poor from the dust to sit with princes. Mary's pairs compress these reversals. Other lines draw on Psalm 89:10 (God scattering enemies with his mighty arm), Job 12:19 (overthrowing the mighty), and Psalm 107:9 (filling the hungry with good things)."
+        }
+      ],
+      "refs": ["1 Samuel 2:4-8", "Psalm 107:9", "Luke 6:20-26", "Luke 16:19-25", "James 4:6"]
+    },
+    {
+      "v": "54-55",
+      "context": "The song ends where the chapter's theology rests: God has helped Israel because he remembered his mercy and his promise to Abraham. Mary's personal blessing is one act in the keeping of an ancient covenant.",
+      "grammar": "Antelabeto (‘he has helped’, literally ‘taken hold of’) and paidos autou (‘his servant’) echo the Septuagint of Isaiah 41:8-9, where God calls Israel ‘my servant’ (pais) and says he took hold of him. Mnēsthēnai eleous (‘to remember mercy’) is an infinitive of purpose or result: God helped Israel in order to remember, that is, to act on, his mercy. The construction of verse 55 is loose: ‘to Abraham and his offspring forever’ may complete ‘remembering mercy’ (mercy to Abraham) with ‘as He promised to our fathers’ as a parenthesis, which is how most translators read it.",
+      "words": ["G0482", "G3816", "G3403", "G1656", "G0011", "G4690G"],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "The Magnificat's last word is the promise to Abraham. In Luke's view, what God does through Mary is not a new plan but the faithfulness he swore long ago, and ‘forever’ reaches beyond Israel's history to its fulfillment."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Micah 7:20",
+          "note": "Micah ends his book by saying God will show faithfulness to Jacob and loving devotion to Abraham, as he swore to the fathers from days of old. The Septuagint uses eleos for chesed. Psalm 98:3 adds that God has remembered his love and faithfulness to the house of Israel. Mary's final lines echo both, and Zechariah will repeat the theme of the oath in verses 72-73."
+        }
+      ],
+      "refs": ["Isaiah 41:8-9", "Psalm 98:3", "Genesis 22:16-18", "Galatians 3:16"]
+    },
+    {
+      "v": "56",
+      "context": "Mary stays about three months and returns home. Luke likes to close one scene by removing a character before opening the next (1:23, 1:38), so her departure is reported before John's birth, though she may have stayed for it.",
+      "grammar": "Hōs mēnas treis, ‘about three months’, with Elizabeth's six months (verse 36), brings the pregnancy near term. Hupestrepsen eis ton oikon autēs, ‘returned to her own house’, confirms that Mary was not yet living in Joseph's home, which fits the betrothal described in verse 27 and the situation Matthew 1:18-25 addresses.",
+      "words": ["G3306", "G3376", "G5290", "G3624G"],
+      "refs": ["2 Samuel 6:11", "Matthew 1:18-25", "Luke 1:36"]
+    },
+    {
+      "v": "57-58",
+      "context": "The promise to Zechariah is fulfilled: Elizabeth bears a son. Neighbors and relatives recognize God's mercy and share her joy, as the angel foretold in verse 14.",
+      "grammar": "Eplēsthē ho chronos tou tekein autēn (‘the time was fulfilled for her to give birth’) uses ‘fulfilled’ language that Luke applies to both births (2:6) and echoes the Septuagint of Rebekah (Genesis 25:24). Emegalunen kurios to eleos autou met' autēs, ‘the Lord had magnified his mercy with her’, uses the verb of Mary's first line (verse 46). Sunechairon (‘they rejoiced with’) anticipates the rejoicing with in the lost-and-found parables (15:6, 15:9).",
+      "words": ["G4130", "G5550", "G3170", "G1656", "G4796"],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "The neighbors describe the birth as mercy, the covenant word of verses 50, 54, and 72. God's faithfulness to Israel shows up here as a birth in one household."
+        }
+      ],
+      "refs": ["Genesis 25:24", "Genesis 21:6", "Luke 1:14", "Luke 15:6"]
+    },
+    {
+      "v": "59-61",
+      "context": "The circumcision on the eighth day becomes a naming dispute. The relatives assume family custom; Elizabeth insists on the name the angel gave.",
+      "grammar": "Ekaloun is an imperfect used as a conative imperfect, describing an action attempted but not completed: ‘they were going to call him’, as the BSB renders it. Epi tō onomati tou patros autou means ‘after his father's name’. Elizabeth's ouchi, alla (‘No, but’) is emphatic. Luke does not say how she knew the name, whether Zechariah had written it down or it was revealed to her.",
+      "words": ["G2564G", "G3590", "G4059", "G3780", "G4772"],
+      "history": "Circumcision on the eighth day was commanded in Genesis 17:12 and Leviticus 12:3, and Genesis 21:3-4 links Isaac's naming and circumcision. This passage and 2:21 are among the earliest clear witnesses to naming a Jewish boy at his circumcision. Naming after a father or grandfather is well attested among Jewish families of the period; Tobit names his son Tobias (Tobit 1:9), and the high-priestly families repeated names across generations.",
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "John enters the covenant sign given to Abraham. Luke shows the forerunner and later Jesus (2:21) both received into Israel through its ordinary covenant rites."
+        }
+      ],
+      "refs": ["Genesis 17:12", "Leviticus 12:3", "Genesis 21:3-4", "Luke 2:21"]
+    },
+    {
+      "v": "62-63",
+      "context": "The family appeals to Zechariah by signs, and he writes on a tablet. His written words match his wife's spoken ones, which astonishes everyone.",
+      "grammar": "Eneneuon (‘they made signs’) suggests Zechariah was deaf as well as mute (see verse 22). Ti an theloi uses the optative with an in an indirect question, ‘what he might wish’, another refined construction. Iōannēs estin onoma autou is word for word ‘John is his name’: the present tense treats the name as already settled by God, not as a new decision.",
+      "words": ["G1770", "G2309", "G4093", "G1125", "G2491G", "G2296"],
+      "history": "A pinakidion was a small writing tablet, usually wood coated with wax and written on with a stylus, in common use for notes and school exercises across the Roman world.",
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Zechariah's first act after months of silence is obedience to the angel's word. The man who doubted now confirms the promise in writing before his speech returns."
+        }
+      ],
+      "refs": ["Luke 1:13", "Luke 1:20", "Isaiah 8:1"]
+    },
+    {
+      "v": "64-66",
+      "context": "Zechariah's speech returns at once, and his first words are praise. Awe spreads through the hill country, and people ask what the child will become; Luke answers with a narrator's comment that the Lord's hand was with him.",
+      "grammar": "Aneōchthē to stoma autou (‘his mouth was opened’) is an aorist passive with God as the unnamed agent, and parachrēma (‘immediately’) is a favorite Luke word for instant fulfillment (4:39, 5:25). Elalei eulogōn ton theon, ‘he began speaking, blessing God’, uses an ingressive imperfect: the priest who could not bless the people now blesses God. Ethento en tē kardia autōn (‘they laid it up in their hearts’) recalls Mary's pondering (2:19). Kai gar cheir kuriou ēn met' autou is Luke's own comment; ‘the hand of the Lord’ is used of Elijah (1 Kings 18:46) and of the church in Antioch (Acts 11:21).",
+      "words": ["G0455", "G3916", "G2980", "G2127", "G5087", "G2588", "G5495"],
+      "theology": [
+        {
+          "id": "worship",
+          "note": "Restored speech is used first for blessing God. Luke's narrative repeatedly ends healing and deliverance in praise (5:25, 13:13, 17:15, 18:43)."
+        }
+      ],
+      "text": "The earliest manuscripts read kai gar (‘for indeed’) before ‘the Lord's hand’, making the last line Luke's comment; some later manuscripts lack gar, which lets the line be read as part of what the people said.",
+      "refs": ["1 Kings 18:46", "Acts 11:21", "Luke 2:19", "Luke 5:25"]
+    },
+    {
+      "v": "67-68",
+      "context": "Filled with the Spirit, Zechariah prophesies. His song, the Benedictus, opens with the blessing formula that closes several books of the Psalter and states its theme at once: God has visited and redeemed his people.",
+      "grammar": "Eulogētos kurios ho theos tou Israēl (‘blessed be the Lord, the God of Israel’) is word for word the Septuagint formula of Psalm 41:13, 72:18, and 106:48. Epeskepsato (‘he has visited’) translates the Hebrew paqad, God's coming to look after his people (Exodus 4:31, Ruth 1:6). Epoiēsen lutrōsin, ‘he has made redemption’, uses lutrōsis, the ransom or release of captives, a word with the exodus behind it. As in the Magnificat, the aorists speak of God's work in the conception of Jesus as already done.",
+      "words": ["G4395", "G2128", "G1980", "G3085", "G2992"],
+      "history": "The Benedictus has been sung at Lauds, the morning office, in the Western church since at least the early Middle Ages, and it is one of the canticles of Morning Prayer in the Book of Common Prayer.",
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "Salvation is described first as God's visit. Luke will return to the word when the crowd at Nain says ‘God has visited His people’ (7:16) and when Jesus weeps over Jerusalem for not recognizing the time of its visitation (19:44)."
+        },
+        {
+          "id": "spirit",
+          "note": "The Spirit who silenced nothing but doubt now opens Zechariah's mouth in prophecy. In Luke the Spirit's filling repeatedly issues in inspired speech (1:41-42, Acts 2:4, 4:31)."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Exodus 4:31",
+          "note": "When Moses and Aaron told Israel in Egypt that the LORD had ‘visited’ them (Hebrew paqad, Septuagint epeskepsato) and seen their affliction, the people bowed and worshiped. Zechariah's first reason for blessing is the same verb, and ‘redemption’ carries the exodus with it. The birth of Jesus is presented as a new exodus visit."
+        }
+      ],
+      "refs": ["Psalm 72:18", "Psalm 106:48", "Ruth 1:6", "Luke 7:16", "Luke 19:44"]
+    },
+    {
+      "v": "69-71",
+      "context": "The means of the redemption is a Davidic deliverer, ‘a horn of salvation’, promised by the prophets from long ago. Zechariah, a priest of Aaron's line, praises God not for his own son first but for David's.",
+      "grammar": "Ēgeiren (‘he has raised up’) is used of God raising up deliverers (Judges 3:9) and, in Acts, of raising Jesus. Keras sōtērias (‘horn of salvation’) uses the horn, the image of an animal's strength, for a powerful savior. Verse 70 is a parenthesis, and verse 71 returns with sōtērian in the accusative, in loose apposition to ‘horn of salvation’ in verse 69: a salvation from our enemies. The phrase ‘His holy prophets, those of ages past’ appears almost identically in Peter's speech in Acts 3:21.",
+      "words": ["G1453", "G2768", "G4991", "G3816", "G4396", "G2190", "G3404"],
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "The Davidic promise is the channel of God's visit. Zechariah names the house of David before John is mentioned, so the forerunner's father makes the Messiah the song's center."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Psalm 132:17",
+          "note": "In Psalm 132 God promises to make a horn sprout for David and to prepare a lamp for his anointed. Psalm 18:2 (2 Samuel 22:3) calls the LORD the horn of David's salvation, and Hannah's song ends by exalting the horn of God's anointed (1 Samuel 2:10). The fifteenth benediction of the Jewish daily prayer, the Amidah, in its later Babylonian form asks God to make the branch of David sprout and his horn be exalted by God's salvation; its exact first-century wording is uncertain. Verse 71 echoes Psalm 106:10, where God saved Israel from the hand of the foe at the sea."
+        }
+      ],
+      "refs": ["Psalm 18:2", "1 Samuel 2:10", "Psalm 106:10", "Acts 3:21", "Ezekiel 29:21"]
+    },
+    {
+      "v": "72-75",
+      "context": "The song grounds the Davidic salvation in the older promise to Abraham and states its goal: a people rescued in order to worship God without fear, in holiness and righteousness, every day of their lives.",
+      "grammar": "A chain of infinitives carries the thought: poiēsai eleos (‘to show mercy’), mnēsthēnai diathēkēs (‘to remember the covenant’), dounai (‘to grant’), and latreuein (‘to serve’). Horkon hon ōmosen (‘the oath which he swore’) puts ‘oath’ in the accusative, attracted into the case of the relative pronoun, a slight irregularity that keeps the Semitic flow. Rhusthentas (‘having been rescued’) is accusative though ‘us’ is dative, another loose agreement. Latreuein is the verb for worship as service, the purpose stated for the exodus (Exodus 3:12, Septuagint latreusete). Hosiotēs and dikaiosunē (‘holiness and righteousness’) are paired in Wisdom 9:3 and Ephesians 4:24.",
+      "words": ["G1656", "G3403", "G1242", "G3727", "G3660", "G0011", "G0870", "G4506", "G3000", "G3742", "G1343"],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "God remembers the covenant, and his remembering is an act, not a mental event. The oath to Abraham (Genesis 22:16-18) is the ground of everything the song celebrates."
+        },
+        {
+          "id": "worship",
+          "note": "Deliverance has a purpose beyond safety: worship without fear. The exodus pattern holds: God frees his people so they may serve him."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Genesis 22:16-18",
+          "note": "After the binding of Isaac, God swears by himself to bless Abraham and promises his offspring will possess the gate of their enemies. Luke's ‘oath He swore to our father Abraham’ and ‘deliverance from hostile hands’ echo that oath, which Psalm 105:8-10 and Micah 7:20 also recall."
+        }
+      ],
+      "refs": ["Genesis 22:16-18", "Psalm 105:8-10", "Exodus 3:12", "Ephesians 4:24", "Hebrews 6:13-18"]
+    },
+    {
+      "v": "76-77",
+      "context": "Zechariah turns to his own son. John will be a prophet who goes before the Lord and gives people the knowledge of salvation through forgiveness, the gift his baptism will offer (3:3).",
+      "grammar": "Kai su de, paidion (‘and you, child’) is an emphatic turn of address. Prophētēs hupsistou klēthēsē (‘you will be called a prophet of the Most High’) sets John one step below Jesus, who is ‘Son of the Most High’ (verse 32). Proporeusē enōpion kuriou uses the same ‘before the Lord’ as verse 17. Gnōsin sōtērias (‘knowledge of salvation’) is experiential knowledge, and en aphesei hamartiōn (‘in the forgiveness of sins’) defines what that salvation is. Aphesis, release or forgiveness, becomes a key word in Luke-Acts (4:18, 24:47, Acts 2:38).",
+      "words": ["G3813", "G4396", "G5310", "G4313", "G2090", "G1108", "G4991", "G0859", "G0266"],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "The political language of verses 71-74 is here interpreted from within: salvation is known in the forgiveness of sins. Luke keeps both, never reducing salvation to either the inner or the outer."
+        },
+        {
+          "id": "prophecy",
+          "note": "After centuries in which no recognized prophet had arisen, a prophet is named at his circumcision. John will be the last prophet before the fulfillment (Luke 16:16)."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Malachi 3:1",
+          "note": "Malachi's messenger prepares the way before the LORD, and Isaiah 40:3 calls for a way prepared in the wilderness for the LORD. ‘Go on before the Lord to prepare the way for Him’ weaves the two, as Luke 3:4 and 7:27 will do explicitly. In both prophets the one who comes is God himself, which is what makes the application to Jesus so striking."
+        }
+      ],
+      "refs": ["Luke 3:3-6", "Luke 7:26-28", "Luke 24:47", "Acts 2:38"]
+    },
+    {
+      "v": "78-79",
+      "context": "The song ends with its most beautiful image: the dawn from on high visiting those who sit in darkness and death's shadow, and guiding their feet into peace. The whole redemption flows from God's tender mercy.",
+      "grammar": "Splagchna eleous, literally ‘the bowels of mercy’, uses splagchna, the inner organs, the seat of feeling in Greek and Hebrew thought, like the Hebrew rachamim; ‘tender mercy’ captures it. Anatolē means a rising, especially of the sun, and so the east or the dawn; in the Septuagint it also translates tsemach, ‘Branch’, a title of the Davidic king (Jeremiah 23:5, Zechariah 3:8, 6:12). ‘From on high’ and ‘to shine’ favor the image of sunrise here, but the royal sense would not be lost on readers who heard ‘horn of salvation’ in verse 69. The infinitives epiphanai (‘to shine’) and kateuthunai (‘to guide’) give the purpose.",
+      "words": ["G4698", "G1656", "G1980", "G0395", "G5311", "G2014", "G4655", "G4639", "G2288", "G2720", "G1515"],
+      "text": "The earliest manuscripts (including Sinaiticus and Vaticanus) read the future episkepsetai, ‘will visit’; others, including the Byzantine text, read the aorist epeskepsato, ‘has visited’, matching verse 68. The future looks ahead to Jesus' coming ministry and is printed in the standard critical editions.",
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "The Messiah comes as light to those who could not find their own way out of darkness. Luke will describe his ministry as release for captives and sight for the blind (4:18)."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Isaiah 9:2",
+          "note": "Isaiah promises that the people walking in darkness have seen a great light, a light shining on those in the land of the shadow of death, in the oracle that goes on to announce a child on David's throne (9:6-7). Isaiah 42:7 adds release for those who sit in darkness, and Isaiah 59:8 says of a sinful people that the way of peace they do not know. Malachi 4:2 promises the sun of righteousness rising with healing. Zechariah's lines weave these texts into one picture of dawn."
+        },
+        {
+          "ref": "Zechariah 6:12",
+          "note": "The Septuagint renders ‘Behold, a man whose name is the Branch’ as idou anēr, Anatolē onoma autō, ‘a man, his name is Dawn (or Rising)’, the word Luke uses here. The Hebrew tsemach means ‘sprout’, a royal shoot from David's line (Jeremiah 23:5). A Greek-speaking reader of Zechariah would hear both sunrise and king."
+        }
+      ],
+      "refs": ["Malachi 4:2", "Isaiah 42:7", "Matthew 4:16", "Luke 4:18"]
+    },
+    {
+      "v": "80",
+      "context": "A summary spans John's childhood and youth. He grows, strengthens in spirit, and lives in the wilderness until his public appearance, which chapter 3 will narrate.",
+      "grammar": "Ēuxanen and ekrataiouto are imperfects of ongoing growth; the same pattern describes Jesus in 2:40 and Samuel and Samson in the Old Testament (1 Samuel 2:21, 2:26; Judges 13:24-25). Pneumati may mean his own human spirit or the Holy Spirit (verse 15); both readings are defended. Anadeixis (‘public appearance’) occurs only here in the New Testament and in Greek can mean an official installation or public presentation of a person in office.",
+      "words": ["G0837", "G2901", "G4151G", "G2048", "G0323"],
+      "history": "Some scholars have suggested that John grew up among the Essenes of Qumran, near the Jordan's mouth and the Dead Sea, noting that Josephus says the Essenes adopted other people's children to raise in their ways (Jewish War 2.120) and that the Qumran community used Isaiah 40:3 of its own life in the desert (1QS 8:12-16). There is no direct evidence. John's baptism and message differ from Qumran's repeated washings and closed membership, and the suggestion remains a possibility, not a finding.",
+      "refs": ["Luke 2:40", "Luke 3:2", "1 Samuel 2:26", "Judges 13:24-25"]
+    }
+  ]
+}

@@ -1,0 +1,423 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "Jesus turns the prayer of 9:38 into an answer: the disciples who were told to ask the Lord of the harvest for workers now become the workers. Matthew describes their authority in the words he used twice for Jesus' own ministry, healing “every disease and sickness” (4:23, 9:35), so the mission of the twelve is plainly a sharing in his.",
+      "grammar": "Proskalesamenos, ‘having called to himself’, is an aorist middle participle; the middle voice of this verb regularly means summoning people to one's own side, and Matthew uses it when Jesus gathers hearers for important words (15:10, 15:32, 18:2). Edōken autois exousian, ‘he gave them authority’: exousia is authority granted and exercised by right, the quality the crowds noticed in his teaching (7:29) and the Son of Man's authority to forgive sins (9:6); the risen Jesus will claim it without limit (28:18). Pneumatōn akathartōn, ‘of unclean spirits’, is an objective genitive, authority over them. Hōste with the present infinitives ekballein and therapeuein, ‘so as to cast out and to heal’, gives the purpose of the gift and pictures it as ongoing work. Nosos and malakia, ‘disease’ and ‘sickness’, are near synonyms paired for completeness.",
+      "words": ["G4341", "G1325", "G1849", "G4151G", "G0169", "G1544", "G2323", "G3554", "G3119"],
+      "theology": [
+        {
+          "id": "mission",
+          "note": "The verse defines mission as participation. The twelve receive no separate program and no power of their own; they are given Jesus' authority to do Jesus' works, and everything they carry out in the rest of the chapter flows from this one act of giving."
+        }
+      ],
+      "parallels": ["Mark 6:7", "Luke 9:1-2"],
+      "refs": ["Matthew 9:35-38", "Matthew 7:29", "Matthew 28:18-20", "Mark 3:14-15"]
+    },
+    {
+      "v": "2",
+      "context": "Matthew names the twelve here for the first time as a group, and this is the only place he calls them apostles, the sent ones, just before they are sent. The list begins with the two pairs of brothers whose call he told in 4:18-22.",
+      "grammar": "Prōtos Simōn, ‘first, Simon’: Matthew never goes on to say ‘second’ or ‘third’, so prōtos is not simply a count but marks Peter's place at the head of the list. Readers have taken that place differently. Roman Catholic interpreters see in it, with 16:18-19, a primacy given to Peter among the apostles; Protestant and Orthodox interpreters commonly read it as the primacy of the first called (4:18) and of a leading spokesman, first among equals, without an office that passes to successors. Ho legomenos Petros, ‘the one called Peter’, is a present passive participle, the same phrase Matthew used in 4:18: Peter is a name already in use, whose meaning Jesus will explain in 16:18. Iakōbos ho tou Zebedaiou, literally ‘James the one of Zebedee’, uses the article with a genitive to mean ‘son of’, which English must supply.",
+      "words": ["G0652", "G4413G", "G3004H", "G4074G", "G0406", "G2199G"],
+      "history": "Two of these first four names are Greek, Andrew (Andreas) and, in the next verse, Philip, a sign of how deeply Greek language and culture had reached Galilee. John 1:44 says that Andrew, Peter, and Philip came from Bethsaida, which lay in the territory of Herod Philip, a mainly Gentile tetrarchy, though Peter and Andrew had a house in Capernaum by the time of Matthew 8:14. Zebedee owned a boat and employed hired men (Mark 1:20), so the sons of Zebedee were not poor. James son of Zebedee was the first of the twelve to die for his faith (Acts 12:1-2).",
+      "theology": [
+        {
+          "id": "israel",
+          "note": "Twelve is not an accidental number. Jesus later promises that the twelve will sit on twelve thrones judging the twelve tribes of Israel (19:28), so the group he forms is a sign that God is gathering and renewing his people, the twelve tribes reconstituted around the Messiah."
+        }
+      ],
+      "parallels": ["Mark 3:16-17", "Luke 6:13-14", "Acts 1:13"],
+      "refs": ["Matthew 4:18-22", "Matthew 16:17-19", "Matthew 19:28", "John 1:40-44"]
+    },
+    {
+      "v": "3",
+      "context": "The middle of the list pairs six more names. Matthew alone adds a label to his own name, ‘the tax collector’, which recalls his call from the tax booth in 9:9 and keeps before the reader where one of the apostles came from.",
+      "grammar": "Several of the names are Aramaic in origin. Bartholomaios is a patronymic, bar Talmai, ‘son of Talmai’ (a name borne by a king of Geshur in 2 Samuel 3:3), which explains why he has sometimes been identified with Nathanael, whom John names among the first disciples (John 1:45-49) while the other Gospels never mention him; the identification is traditional and cannot be proved. Thōmas comes from the Aramaic te'oma, ‘twin’, which John translates Didymos (John 11:16). Maththaios ho telōnēs, ‘Matthew the tax collector’, uses the article with a noun as a fixed description. Mark and Luke both list Matthew before Thomas (Mark 3:18, Luke 6:15); only this Gospel places him after Thomas and adds the label, a detail many readers since the early church have taken as a touch of self-effacement.",
+      "words": ["G5376G", "G0918", "G2381", "G3156", "G5057", "G2385H", "G0256", "G2280"],
+      "text": "In the tenth name the manuscripts divide. Codex Sinaiticus and Codex Vaticanus read Thaddaeus; Codex Bezae and some Old Latin copies read Lebbaeus; and the later manuscripts behind the King James Version combine the two as ‘Lebbaeus, whose surname was Thaddaeus’. Thaddaeus is almost certainly original, and the same man is most likely the ‘Judas son of James’ of Luke 6:16 and Acts 1:13. Both names have been explained from Aramaic or Hebrew words (Lebbaeus from lev, ‘heart’), but the derivations are uncertain.",
+      "history": "Mark calls Levi, the tax collector, ‘son of Alphaeus’ (Mark 2:14), and James here is also ‘son of Alphaeus’. The Gospels never say that Matthew and James were brothers, as they plainly say of Peter and Andrew and of James and John, so most interpreters do not assume it.",
+      "parallels": ["Mark 3:18", "Luke 6:14-16"],
+      "refs": ["Matthew 9:9", "John 1:45-49", "John 11:16", "Acts 1:13"]
+    },
+    {
+      "v": "4",
+      "context": "The list ends with a man of zeal and a betrayer. Placing Judas last, with the note of what he would do, is the pattern of every list of the twelve, and Matthew's readers meet the passion story's shadow before the mission has even begun.",
+      "grammar": "Ho kai paradous auton, ‘the one who also handed him over’: paradous is an aorist participle of paradidōmi, ‘to hand over’, and it tells the story from its end, since the betrayal has not yet happened in the narrative. The same verb will describe what will be done to the disciples (verses 17, 19, 21), so the list itself anticipates the chapter's warning that the disciple shares the teacher's fate. Kananaios is a Greek form of the Aramaic qan'an, ‘zealous’, not a reference to Canaan or to Cana; Luke gives the Greek equivalent, zēlōtēs (Luke 6:15).",
+      "words": ["G4613G", "G2581", "G2455H", "G2469", "G3860"],
+      "history": "Iscariot is most often explained as the Hebrew ish Qeriyyot, ‘man of Kerioth’, a town in southern Judah (Joshua 15:25). John twice calls Judas ‘son of Simon Iscariot’ (John 6:71, 13:26), which suggests that the name belonged to the family, as a place name would. Other proposals, such as a link with the Latin sicarius, ‘dagger man’, a term Josephus uses for assassins of the 50s, have found fewer defenders. The King James Version's ‘Simon the Canaanite’ misreads Kananaios as a place name.",
+      "parallels": ["Mark 3:18-19", "Luke 6:15-16"],
+      "refs": ["Luke 6:15", "Acts 1:13", "John 6:71", "Joshua 15:25", "Matthew 26:14-16"]
+    },
+    {
+      "v": "5-6",
+      "context": "The first instructions set the mission's boundary: not the Gentile regions, not the Samaritan towns, but ‘the lost sheep of Israel’. The phrase takes up the crowds of 9:36, ‘like sheep without a shepherd’, and Jesus will use it again of his own mission to the Canaanite woman (15:24).",
+      "grammar": "Eis hodon ethnōn mē apelthēte, ‘do not go off into a road of Gentiles’: mē with the aorist subjunctive is the normal Greek form of a prohibition, and the genitive ethnōn describes a road that leads into Gentile territory. Poreuesthe de mallon, ‘but go rather’, uses a present imperative and mallon, ‘rather’, to turn the prohibition into a positive command. Ta probata ta apolōlota, ‘the sheep that are lost’, uses a perfect participle of apollumi for a lasting condition. The genitive that follows, oikou Israēl, ‘of the house of Israel’, can be read two ways: as partitive, ‘the lost sheep among Israel’, as though only some were lost, or as defining, ‘the lost sheep who are the house of Israel’. The picture in 9:36 of the whole crowd as shepherdless favors the second, and most commentators read it so: Israel as a whole is the flock without a shepherd.",
+      "words": ["G0649", "G3853", "G3598", "G1484", "G4541", "G4198", "G3123H", "G4263", "G0622", "G3624H", "G2474"],
+      "history": "The Samaritans appear here and nowhere else in Matthew, though Luke and John show Jesus among them (Luke 9:52, 17:16, John 4). Galilean pilgrims going up to Jerusalem often took the direct road through Samaria, and the hostility could turn violent: Josephus tells of Galileans killed at a Samaritan village on their way to a festival under the governor Cumanus, around AD 51 (Antiquities 20.118).",
+      "theology": [
+        {
+          "id": "israel",
+          "note": "The limit is an act of faithfulness. God had promised through the prophets to seek his scattered flock himself (Ezekiel 34:11-16), and Jesus sends his messengers first to the people to whom that promise was made, before the command of 28:19 widens the mission to all nations."
+        },
+        {
+          "id": "mission",
+          "note": "Mission has an order as well as a scope. The same Gospel that confines this first sending to Israel ends by sending the eleven to the nations, and Matthew holds the two together rather than treating either as a mistake."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Jeremiah 50:6",
+          "note": "The Hebrew reads tso'n ovedot hayu ammi, ‘my people have been lost sheep’, whose shepherds led them astray on the mountains; the Septuagint (Jeremiah 27:6 in its numbering) has probata apolōlota, the same words as Matthew. Ezekiel 34:4 and 34:16 use the same language: the shepherds of Israel did not seek the lost, so the Lord himself will. Jesus' phrase is not a quotation but it carries this prophetic background, which casts Israel's leaders as failed shepherds and Jesus as the one through whom God seeks his flock."
+        }
+      ],
+      "parallels": ["Luke 9:2"],
+      "refs": ["Matthew 15:24", "Matthew 9:36", "Ezekiel 34:11-16", "Matthew 28:19", "Acts 13:46"]
+    },
+    {
+      "v": "7-8",
+      "context": "The message is the one John and Jesus preached (3:2, 4:17), and the works are the ones Jesus has just done in chapters 8 and 9: the sick healed, a leper cleansed, a girl raised, demons driven out. The closing command about giving freely sets the economics of the whole mission.",
+      "grammar": "Poreuomenoi de kērussete, ‘as you go, proclaim’: the present participle and present imperative describe proclamation as the continuing activity of the road. Ēngiken, ‘has come near’, is a perfect of engizō, the word of 3:2 and 4:17. C. H. Dodd (The Parables of the Kingdom, 1935) argued that the perfect can mean ‘has arrived’, and so read the kingdom as already present; most grammarians keep the sense ‘has drawn near’, while noting that the works that follow show its nearness already at work. The four commands therapeuete, egeirete, katharizete, ekballete are all present imperatives, ongoing tasks. Dōrean elabete, dōrean dote, ‘freely you received, freely give’, is a balanced pair of aorists with the adverb dōrean, ‘as a gift, without payment’, set first in each clause for emphasis.",
+      "words": ["G4198", "G2784", "G1448", "G0932", "G2323", "G1453", "G2511", "G1140", "G1544", "G1432", "G2983", "G1325"],
+      "history": "The ban on charging for healing had precedents. Elisha refused Naaman's gifts after the cleansing of his leprosy, and his servant Gehazi, who took them secretly, was struck with the same disease (2 Kings 5:15-27). The rabbis held a similar ideal for teaching the Torah: the Babylonian Talmud reasons from Deuteronomy 4:5 that as Moses taught without payment, so should teachers after him (b. Nedarim 37a). Acts shows the apostles keeping the rule when Simon of Samaria tried to buy the power to give the Spirit (Acts 8:18-20).",
+      "text": "The command ‘raise the dead’ stands in the early manuscripts and in the Textus Receptus behind the King James Version, but most later Byzantine manuscripts lack it, probably because a copyist's eye passed over one of the five short commands, which end in the same letters in Greek.",
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The announcement and the works belong together. The disciples do not only say that God's reign is near; they show it in bodies healed and people freed, which is how the kingdom's nearness becomes visible before its fullness."
+        },
+        {
+          "id": "mission",
+          "note": "‘Freely give’ grounds the whole mission in grace received. The messengers are not selling a service; they pass on a gift, and their generosity is meant to match the generosity that reached them."
+        }
+      ],
+      "parallels": ["Luke 9:2", "Luke 10:9"],
+      "refs": ["Matthew 4:17", "Matthew 11:5", "2 Kings 5:15-16", "Acts 8:18-20", "Acts 3:6"]
+    },
+    {
+      "v": "9-10",
+      "context": "The travel instructions strip the twelve of every provision a traveler would normally carry. The closing reason, that the worker deserves his food, shows that the point is not hardship for its own sake but dependence on the hospitality of those who receive the message.",
+      "grammar": "Mē ktēsēsthe, ‘do not acquire’: ktaomai means to get or procure, not merely to carry, so the ban is on equipping oneself for the road or earning money by the healing just commanded. The metals descend in value, chruson, arguron, chalkon, ‘gold, silver, copper’, so that not even small change is allowed; Mark mentions only copper (Mark 6:8). Eis tas zōnas, ‘into your belts’, refers to the folded sash in which coins were kept. Axios gar ho ergatēs tēs trophēs autou, ‘for the worker is worthy of his food’: axios takes a genitive of what is deserved, and Matthew's trophē, ‘food, provisions’, is narrower than Luke's misthos, ‘wages’ (Luke 10:7), the form quoted in 1 Timothy 5:18.",
+      "words": ["G2932", "G5557", "G0696", "G5475", "G2223", "G4082", "G5509", "G5266", "G4464", "G0514", "G2040", "G5160"],
+      "history": "The three metals match the coinage of the region. Gold coins were Roman aurei, rare in village life; silver meant denarii and the Tyrian shekels used for the temple tax; and copper, or bronze, was the everyday small change. The coins struck by Herod Antipas in Galilee were all bronze, since client rulers under Rome issued no silver of their own.",
+      "theology": [
+        {
+          "id": "wealth",
+          "note": "The messengers carry no money and take no fees, yet they may accept food and lodging. The verse sets out a principle the church has kept in various forms, that ministers may be supported by those they serve (1 Corinthians 9:14) but must not make the gospel a trade. Jesus later changes the practical instruction for a harder time (Luke 22:35-36), which shows the principle matters more than the particular list."
+        }
+      ],
+      "parallels": ["Mark 6:8-9", "Luke 9:3", "Luke 10:4", "Luke 10:7"],
+      "refs": ["1 Corinthians 9:14", "1 Timothy 5:18", "Luke 22:35-36", "2 Corinthians 11:7-9"]
+    },
+    {
+      "v": "11-13",
+      "context": "In each town the messengers look for a worthy host, stay with that household, and greet it with peace. The word ‘worthy’ (axios) appears twice here, the second and third of its seven uses in the chapter, and its meaning is settled by the next verse: a worthy house is one that receives them.",
+      "grammar": "Exetasate, ‘inquire carefully’, is an aorist imperative of a verb used for examining or investigating. Kakei meinate heōs an exelthēte, ‘and stay there until you go out’: the aorist imperative meinate commands staying put, not moving to better lodgings (Luke 10:7 makes the point explicit). In verse 13 the peace is the subject of two third-person imperatives, elthatō, ‘let it come’, and epistraphētō, ‘let it return’. Greek has no exact English equivalent, and the construction treats the spoken blessing almost as a thing sent out that either rests where it lands or comes back to the sender, like the word of God that does not return empty (Isaiah 55:11). The conditions ean men ē and ean de mē ē, ‘if it is ... but if it is not’, lay out both outcomes with balanced clauses.",
+      "words": ["G4172", "G2968", "G1833", "G0514", "G3306", "G3614G", "G0782", "G1515", "G2064", "G1994"],
+      "theology": [
+        {
+          "id": "mission",
+          "note": "The greeting of peace is not a pleasantry but the kingdom's blessing offered to a household. Its effect depends on reception, yet the messengers lose nothing when it is refused, since the peace returns to them."
+        }
+      ],
+      "parallels": ["Mark 6:10", "Luke 9:4", "Luke 10:5-7"],
+      "refs": ["Isaiah 55:11", "Luke 10:5-7", "John 14:27", "Psalm 122:7-8"]
+    },
+    {
+      "v": "14-15",
+      "context": "Refusal is answered with a sign and a warning. Shaking off the dust ends the messengers' responsibility for that place, and the first of the chapter's three ‘truly I tell you’ sayings compares the town's guilt with Sodom's, a comparison Jesus will press further against the lake towns in 11:23-24.",
+      "grammar": "Hos an mē dexētai humas mēde akousē tous logous humōn, ‘whoever does not receive you nor hear your words’, is a general relative clause with an and the aorist subjunctive, covering any case. Receiving and hearing go together: welcome for the messengers and attention to their message are one response. Ektinaxate, ‘shake off’, is an aorist imperative, a single decisive act. In verse 15, anektoteron estai gē Sodomōn kai Gomorrōn, ‘it will be more bearable for the land of Sodom and Gomorrah’: the comparative anektoteros, ‘more tolerable’, implies that judgment has degrees, and gē, ‘land’, recalls that the whole region of the plain was destroyed (Genesis 19:25). En hēmera kriseōs, ‘on a day of judgment’, is a phrase Matthew uses four times (11:22, 11:24, 12:36).",
+      "words": ["G1209", "G0191", "G3056", "G1621", "G2868", "G4228", "G0281", "G0414", "G1093H", "G4670", "G1116", "G2920"],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The verse teaches that judgment is measured by what people were given. Sodom sinned without hearing the messengers of the kingdom; a town that hears them and shuts its doors stands under a heavier sentence, a principle Jesus repeats in 11:20-24."
+        }
+      ],
+      "parallels": ["Mark 6:11", "Luke 9:5", "Luke 10:10-12"],
+      "refs": ["Acts 13:51", "Nehemiah 5:13", "Genesis 19:24-25", "Matthew 11:23-24", "Ezekiel 16:49-50"]
+    },
+    {
+      "v": "16",
+      "context": "The speech turns from the immediate mission to the dangers that follow the messengers wherever they go. The sheep image, used for Israel in verse 6, now describes the disciples themselves, sent among wolves, and the paired animals give them the character they will need.",
+      "grammar": "Idou egō apostellō humas, ‘look, I am sending you’: the pronoun egō is emphatic, and the present apostellō describes the sending as happening while he speaks. Hōs probata en mesō lukōn, ‘as sheep in the midst of wolves’, where Luke 10:3 has ‘lambs’. Ginesthe oun, ‘so be’, is a present imperative with oun drawing the consequence: because the danger is real, the disciple needs two qualities at once. Phronimoi hōs hoi opheis, ‘shrewd as the serpents’, uses the adjective the Septuagint gives the serpent in Genesis 3:1; akeraioi hōs hai peristerai, ‘innocent as the doves’, uses a word meaning ‘unmixed’, used elsewhere of wine not watered down or metal without alloy. The article with each animal is generic: serpents and doves as a kind.",
+      "words": ["G2400", "G0649", "G4263", "G3319", "G3074", "G1096", "G5429", "G3789", "G0185", "G4058"],
+      "history": "The saying was well known in the early church. Ignatius of Antioch, writing to Polycarp around 110, urged him to be prudent as the serpent in all things and innocent as the dove (To Polycarp 2.2), and the Gospel of Thomas preserves it as a saying of Jesus (saying 39). Wolves already stood in Matthew for false prophets (7:15), and Paul warned the Ephesian elders of fierce wolves that would come in among the flock (Acts 20:29).",
+      "theology": [
+        {
+          "id": "wisdom",
+          "note": "Jesus asks for practical wisdom and moral purity together. Shrewdness without innocence becomes cunning; innocence without shrewdness becomes naivety. The disciple is to read danger clearly without adopting the methods of the wolves."
+        }
+      ],
+      "parallels": ["Luke 10:3"],
+      "refs": ["Genesis 3:1", "Romans 16:19", "Philippians 2:15", "Matthew 7:15", "Acts 20:29"]
+    },
+    {
+      "v": "17-18",
+      "context": "The wolves are named: local councils, synagogue floggings, governors, and kings. These sayings stand in Mark's speech about the end (Mark 13:9); Matthew brings them into the mission speech, so that persecution becomes the expected setting of the church's witness, and verse 18 already reaches past Israel to the Gentiles.",
+      "grammar": "Prosechete de apo tōn anthrōpōn, ‘beware of people’: the article is generic, people in general, with the implied contrast to the Father who cares for them (verses 29 to 31). Paradōsousin, ‘they will hand over’, is the future of the verb used of Judas in verse 4. Eis sunedria, ‘to councils’, is plural, the local courts rather than the great Sanhedrin in Jerusalem. En tais sunagōgais autōn, ‘in their synagogues’: Matthew regularly says ‘their synagogues’ (4:23, 9:35, 12:9, 13:54), a phrase Graham Stanton (A Gospel for a New People, 1992) and others read as a sign that Matthew's community had separated from the synagogues of its town. Achthēsesthe, ‘you will be brought’, is a future passive; eis marturion autois kai tois ethnesin, ‘for a testimony to them and to the Gentiles’, gives the purpose God sets over the trial: the courtroom becomes a pulpit.",
+      "words": ["G4337", "G3860", "G4892", "G4864", "G3146", "G2232", "G0935", "G0071", "G1752", "G3142", "G1484"],
+      "history": "Flogging was a legal penalty under the law of Moses. Deuteronomy 25:2-3 has the guilty man beaten in the judge's presence and limits the blows to forty, so that the punishment does not degrade him. The Mishnah stops at thirty-nine, as a fence around the law's limit (m. Makkot 3:10), and assigns the beating to the attendant of the synagogue (m. Makkot 3:12). Paul received the thirty-nine lashes five times (2 Corinthians 11:24), and before his conversion he had believers beaten in synagogue after synagogue (Acts 22:19). The apostles were flogged by order of the council in Jerusalem (Acts 5:40-41), and Paul later stood before the governors Felix and Festus and King Agrippa II (Acts 24 to 26).",
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "Suffering here has a purpose beyond endurance. Being dragged before rulers ‘on My account’ turns the disciple into a witness, so that the persecutors themselves and the Gentile world hear the testimony they meant to silence."
+        }
+      ],
+      "parallels": ["Mark 13:9", "Luke 21:12-13", "Luke 12:11"],
+      "refs": ["Deuteronomy 25:2-3", "2 Corinthians 11:24", "Acts 5:40-41", "Acts 22:19", "Matthew 23:34"]
+    },
+    {
+      "v": "19-20",
+      "context": "In the courtroom the disciples are not to rehearse a defense in anxiety. The words will be given, because the Father's Spirit will speak through them. Acts tells the fulfillment when Peter, filled with the Holy Spirit, answers the council (Acts 4:8-13) and when Stephen's opponents cannot withstand the Spirit by which he spoke (Acts 6:10).",
+      "grammar": "Mē merimnēsēte, ‘do not be anxious’, is the verb of 6:25-34, where the disciples were told not to worry about food and clothing; now the same freedom from worry reaches to what to say before judges. Pōs ē ti lalēsēte, ‘how or what you should say’, covers both manner and content. Dothēsetai, ‘it will be given’, is a divine passive, God being the giver. Verse 20 builds a strong contrast: ou gar humeis este hoi lalountes, alla to pneuma tou patros humōn to laloun en humin, ‘for it is not you who are speaking, but the Spirit of your Father who is speaking in you’. The phrase ‘the Spirit of your Father’ is found only here in the New Testament; Mark 13:11 and Luke 12:12 say ‘the Holy Spirit’.",
+      "words": ["G3860", "G3309", "G2980", "G1325", "G5610", "G4151G", "G3962"],
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "The Spirit is given here not for wonders but for witness under pressure. Calling him ‘the Spirit of your Father’ ties the promise to the family language of the chapter: the persecuted disciple is not alone in court, because his Father speaks through him."
+        }
+      ],
+      "parallels": ["Mark 13:11", "Luke 12:11-12", "Luke 21:14-15"],
+      "refs": ["Exodus 4:12", "Acts 4:8-13", "Acts 6:10", "Matthew 6:25-34"]
+    },
+    {
+      "v": "21-22",
+      "context": "The hostility reaches inside the family, as brother hands over brother and children rise against parents. The saying prepares for verses 34 to 36, where Jesus quotes Micah 7:6, and it ends with the promise that endurance, not escape, marks those who are saved.",
+      "grammar": "Paradōsei, ‘will hand over’, is the chapter's key verb again. Epanastēsontai tekna epi goneis, ‘children will rise up against parents’: epanistēmi is the verb the Septuagint uses in Micah 7:6 for the daughter who rises up against her mother, an early echo of the verse Jesus will quote in 10:35. Esesthe misoumenoi, ‘you will be hated’, is a periphrastic future, the future of ‘to be’ with a present participle, stressing a continuing state. Ho de hupomeinas eis telos houtos sōthēsetai, ‘the one who has endured to the end, this one will be saved’: the aorist participle views the whole endurance as complete, and houtos picks up the subject with emphasis. Eis telos can mean ‘to the end of one's life’, ‘to the end of the age’ (as in 24:13-14), or ‘completely’, and interpreters divide; the verse's point holds on each reading.",
+      "words": ["G3860", "G0080", "G2288", "G5043", "G1881", "G1118", "G2289", "G3404", "G3686", "G5278", "G5056", "G4982"],
+      "theology": [
+        {
+          "id": "perseverance",
+          "note": "Salvation is promised to the one who endures. Christians read this differently. The Reformed tradition (Westminster Confession, chapter 17) holds that those truly born of God will persevere because God keeps them, so that endurance is the evidence and the means of that keeping; Wesleyan and Arminian traditions read the warning as a real possibility that a believer may fall away. Both take the call to endure with full seriousness."
+        },
+        {
+          "id": "suffering",
+          "note": "Being hated ‘because of My name’ means the hostility is aimed at Jesus through his followers. Suffering for his name is therefore a mark of belonging to him, not a sign that God has abandoned them."
+        }
+      ],
+      "parallels": ["Mark 13:12-13", "Luke 21:16-19"],
+      "refs": ["Matthew 24:9-13", "Micah 7:6", "John 15:18-21", "Revelation 2:10"]
+    },
+    {
+      "v": "23",
+      "context": "The persecuted are told to flee, not to seek martyrdom, and are promised that the Son of Man will come before they have finished with the towns of Israel. The saying is found only in Matthew and is the chapter's most debated verse; the chapter note sets out the main readings.",
+      "grammar": "Hotan de diōkōsin humas, ‘whenever they persecute you’, uses a present subjunctive for repeated occasions, and pheugete, ‘flee’, is a present imperative: flight is the standing instruction, not a single escape. Amēn legō humin, the second ‘truly I tell you’, introduces ou mē telesēte, ‘you will certainly not finish’: ou mē with the aorist subjunctive is the most emphatic negation Greek has. Teleō means to bring to an end or complete; here, to finish going through the towns. Heōs an elthē ho huios tou anthrōpou, ‘until the Son of Man comes’, is the first time Matthew speaks of the Son of Man coming, a phrase that will return in 16:28, 24:30, and 26:64.",
+      "words": ["G1377", "G4172", "G5343", "G2087", "G0281", "G5055", "G2474", "G2064", "G5207", "G0444"],
+      "text": "Codex Bezae and some other witnesses add ‘and if they persecute you in the other, flee to another’, filling out the pattern. The editions also differ over the word for ‘the next’: most modern editions read heteran, while the Textus Receptus and the Byzantine text read allēn; the sense is the same.",
+      "theology": [
+        {
+          "id": "return",
+          "note": "Whatever event ‘comes’ names here (the resurrection, the judgment on Jerusalem in AD 70, or the final return), the verse ties the church's mission to Israel to the coming of the Son of Man and says the mission will not be finished first. It gives the persecuted a reason to keep moving rather than a date to calculate."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Daniel 7:13-14",
+          "note": "The Aramaic has one ‘like a son of man’ (kevar enash) coming with the clouds of heaven to the Ancient of Days to receive dominion, glory, and a kingdom that all peoples will serve; the Greek versions read hōs huios anthrōpou ērcheto, ‘as a son of man was coming’. Daniel's figure comes to God to be vindicated after the beasts have oppressed the saints. Matthew draws on this scene directly in 24:30 and 26:64, and the coming in 10:23 is best read against it: the persecuted followers of a persecuted Son of Man will see him vindicated."
+        }
+      ],
+      "refs": ["Matthew 16:28", "Matthew 24:30", "Matthew 26:64", "Acts 8:1-4"]
+    },
+    {
+      "v": "24-25",
+      "context": "Two proverbs explain why persecution should not surprise anyone. A disciple shares his teacher's lot and a servant his master's; if Jesus has been called Beelzebul, his household will be called worse. The accusation first surfaced in 9:34 and will be answered at length in 12:24-32.",
+      "grammar": "Ouk estin mathētēs huper ton didaskalon, ‘a disciple is not above the teacher’: huper with the accusative means ‘above, superior to’. Arketon tō mathētē hina genētai hōs ho didaskalos autou, ‘it is enough for the disciple that he become like his teacher’: the hina clause functions as the subject of arketon, ‘sufficient’. Ei ton oikodespotēn Beelzeboul epekalesan, ‘if they have called the master of the house Beelzebul’, is a condition assumed true, since the charge has been made. Posō mallon tous oikiakous autou, ‘how much more his household members’, is an argument from the greater to the lesser, the form the rabbis called qal wahomer. The noun oikodespotēs and the name Beelzebul make a play the chapter note explains: the ‘lord of the house’ is slandered as the ‘lord of the dwelling’ of demons.",
+      "words": ["G3101", "G1320", "G1401", "G2962H", "G0713", "G3617", "G0954", "G1941", "G4214", "G3615"],
+      "text": "Most modern editions read epekalesan, ‘they called (him by the name)’; the Textus Receptus and the Byzantine text read ekalesan, the simple verb, with the same meaning. The Latin and Syriac traditions, followed by the King James Version, spell the name Beelzebub, after the god of Ekron in 2 Kings 1:2.",
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "The disciple's suffering is the teacher's suffering extended. Being slandered with him is part of being like him, and Jesus offers that likeness as enough, since to share the Master's name, even as an insult, is to belong to his house."
+        }
+      ],
+      "parallels": ["Luke 6:40", "John 13:16", "John 15:20"],
+      "refs": ["Matthew 9:34", "Matthew 12:24", "John 15:18-20", "1 Peter 4:14"]
+    },
+    {
+      "v": "26-27",
+      "context": "The first of three commands not to fear. The reason given is that the truth will come out: what Jesus has taught privately is meant for public proclamation, so the messengers should speak openly now rather than hide.",
+      "grammar": "Mē oun phobēthēte autous, ‘so do not fear them’: oun draws the conclusion from verses 24 and 25, and autous means the persecutors. The aorist subjunctive with mē forbids beginning to fear. Ouden gar estin kekalummenon ho ouk apokaluphthēsetai, ‘for nothing is covered that will not be uncovered’: the perfect passive participle kekalummenon, ‘covered and remaining covered’, is set against the future passive apokaluphthēsetai, ‘will be revealed’, a divine passive. In verse 27 the contrasts pile up: en tē skotia and en tō phōti, ‘in the dark’ and ‘in the light’; eis to ous, ‘into the ear’, a whisper, and epi tōn dōmatōn, ‘on the housetops’. Eipate and kēruxate are aorist imperatives, direct commands to speak out. Luke 12:2-3 uses the same sayings as a warning that hidden sins will be exposed; Matthew makes them a charge to proclaim.",
+      "words": ["G5399", "G2572", "G0601", "G2927", "G1097", "G4653", "G5457", "G3775", "G2784", "G1430"],
+      "history": "Flat roofs were public platforms in towns of the land of Israel. Josephus describes the place at the temple where a priest stood to announce with a trumpet the beginning and end of each Sabbath (Jewish War 4.582), and in 1968 Benjamin Mazar's excavations at the southwest corner of the Temple Mount uncovered a fallen stone inscribed in Hebrew ‘to the place of trumpeting’, most likely from that very spot. Announcements from a height were how a whole town heard news.",
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "What Jesus teaches in private is not an esoteric secret for an inner circle but a message entrusted for the whole world. The verse sets the church's teaching under the obligation of publicity: nothing hidden, everything eventually proclaimed."
+        }
+      ],
+      "parallels": ["Mark 4:22", "Luke 8:17", "Luke 12:2-3"],
+      "refs": ["Luke 12:2-3", "1 Corinthians 4:5", "Acts 5:20", "Acts 4:19-20"]
+    },
+    {
+      "v": "28",
+      "context": "The second command against fear sets two fears side by side. Persecutors can kill only the body; God alone can destroy the whole person. Rightly fearing God removes the fear of people, and verse 29 immediately adds that this God is ‘your Father’.",
+      "grammar": "Mē phobeisthe apo tōn apoktennontōn to sōma, ‘do not be afraid of those who kill the body’: phobeomai with apo reflects the Hebrew idiom yare min, ‘to be afraid from’. The second command, phobeisthe de mallon ton dunamenon, ‘but rather fear the One who is able’, takes a direct object without apo. Some commentators think the change of construction marks two different kinds of fear, dread of an enemy and reverent fear of God, though the difference should not be pressed. Psuchē here means the soul as distinct from the body, while in verse 39 the same word means ‘life’. Apolesai, ‘to destroy’, is an aorist infinitive of apollumi. A few readers have taken ‘the One who can destroy’ as the devil, but Scripture never gives the devil that power, and James 4:12 names God as the one able to save and destroy.",
+      "words": ["G5399", "G0615", "G4983", "G5590G", "G1410", "G0622", "G1067"],
+      "text": "The editions differ on the form of the first verb. Nestle-Aland and the Byzantine text read the present phobeisthe; Westcott and Hort and the Textus Receptus read the aorist phobēthēte, the form used in verse 26. The meaning does not change.",
+      "history": "Jewish martyr literature had already drawn this contrast. In 4 Maccabees, a first-century Jewish work, the seven brothers tortured under Antiochus IV encourage one another not to fear the one who thinks he is killing them, because a greater danger of eternal torment awaits those who break God's command (4 Maccabees 13:14-15).",
+      "theology": [
+        {
+          "id": "fear-of-god",
+          "note": "The fear of God is not set against trust but against the fear of people. Because God holds final authority over body and soul, no persecutor's threat is ultimate, and the disciple who fears God has nothing left to fear from anyone else."
+        },
+        {
+          "id": "hell",
+          "note": "The verse places the whole person, soul and body, under God's final judgment in Gehenna. Christians differ on what ‘destroy’ means. The majority tradition, following Augustine (City of God, book 21), reads it as unending punishment; others, such as Edward Fudge (The Fire That Consumes, 1982) and, tentatively, John Stott (in Evangelical Essentials, 1988), argue for final destruction. Both readings agree that the judgment belongs to God and is to be feared."
+        },
+        {
+          "id": "humanity",
+          "note": "The saying assumes that a human being is more than a body and that death at human hands does not end the person. It supports the church's teaching that the soul survives the body's death, while the mention of body and soul together looks toward the resurrection, in which the whole person stands before God."
+        }
+      ],
+      "parallels": ["Luke 12:4-5"],
+      "refs": ["Isaiah 51:12-13", "James 4:12", "Hebrews 10:31", "Luke 12:4-5"]
+    },
+    {
+      "v": "29-31",
+      "context": "The third command against fear rests on the Father's care. Sparrows were the cheapest food sold in the market, yet none falls without the Father; the disciples' hairs are counted; and they are worth more than many sparrows. The argument moves from the least to the greater, as in 6:26.",
+      "grammar": "Ouchi, ‘not?’, opens a question expecting ‘yes’. Assariou is a genitive of price, ‘for an assarion’, and pōleitai, ‘are sold’, is singular because its subject, strouthia, is a neuter plural, as Greek allows. Strouthion is a diminutive, any small bird. Hen ex autōn ou peseitai epi tēn gēn aneu tou patros humōn, ‘not one of them will fall to the ground without your Father’: aneu means ‘without, apart from’, and the Greek has no noun for ‘will’. In verse 30, ērithmēmenai eisin, ‘are numbered’, is a periphrastic perfect passive: the hairs have been counted and remain counted. In verse 31, pollōn strouthiōn diapherete humeis, ‘you are worth more than many sparrows’, uses a genitive of comparison with diapherō, the verb Jesus will use again for a man compared with a sheep (12:12).",
+      "words": ["G3780", "G4765", "G0787", "G4453", "G4098", "G1093I", "G0427", "G3962", "G2359", "G2776", "G0705", "G5399", "G1308"],
+      "history": "Rabbinic tradition told a story with the same logic. Rabbi Simeon ben Yohai, after years hiding in a cave from the Romans, watched a hunter trapping birds and heard a heavenly voice decide which would escape; he concluded that if not even a bird is caught without Heaven's decree, much less a human being (Genesis Rabbah 79:6). Luke's version of Jesus' saying has five sparrows sold for two assaria (Luke 12:6), so that the extra bird came free, and yet ‘not one of them is forgotten by God’ (Luke 12:6).",
+      "text": "The BSB's “apart from the will of your Father” supplies ‘the will of’, as do many other versions; the Greek says only ‘without your Father’. The shorter wording speaks of the Father's presence and knowledge in the sparrow's fall as much as of his decree, and some translations (the King James Version and the ESV among them) keep it.",
+      "theology": [
+        {
+          "id": "providence",
+          "note": "God's care reaches to the cheapest bird and the smallest detail of a person's body. The verse does not promise that sparrows will not fall or that disciples will not die; it promises that nothing happens outside the Father's knowledge and rule, which is why the disciple need not fear."
+        },
+        {
+          "id": "humanity",
+          "note": "‘You are worth more than many sparrows’ affirms the special value of human beings among God's creatures. The worth is not earned; it rests on the Father's regard, which the disciples share as his children."
+        }
+      ],
+      "parallels": ["Luke 12:6-7"],
+      "refs": ["Luke 12:6-7", "Matthew 6:26", "1 Samuel 14:45", "Luke 21:18", "Psalm 139:1-4"]
+    },
+    {
+      "v": "32-33",
+      "context": "‘Therefore’ draws the practical conclusion: freed from fear, the disciple must acknowledge Jesus publicly. The scene is a courtroom on earth answered by a courtroom in heaven, and Peter's denial in 26:69-75 will test these words.",
+      "grammar": "Pas oun hostis homologēsei en emoi, ‘everyone therefore who will confess in me’: homologeō with en, ‘confess in someone’, is not ordinary Greek and reflects an Aramaic idiom for acknowledging a person; Luke 12:8 has the same construction. Kagō, ‘I also’, makes Jesus' response match the disciple's act exactly. The balance is complete in verse 33: arnēsētai, ‘denies’, answered by arnēsomai, ‘I will deny’. Emprosthen, ‘before, in front of’, occurs four times, marking both scenes as public and judicial. Where Luke speaks of the angels of God (Luke 12:8-9), Matthew says ‘My Father in heaven’, so that Jesus appears as the one who speaks for his followers before the Father.",
+      "words": ["G3956", "G3670", "G1715", "G0444", "G3962", "G3772", "G0720"],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "Jesus places himself at the center of the last judgment as the one whose acknowledgment decides a person's standing before the Father. The warning is severe, yet the story of Peter, who denied him and was restored (26:75, 28:7), shows that the warning is spoken to call disciples back, not to close the door on those who fail and repent."
+        }
+      ],
+      "parallels": ["Luke 12:8-9", "Mark 8:38"],
+      "refs": ["Matthew 26:69-75", "2 Timothy 2:12-13", "Romans 10:9-10", "Revelation 3:5"]
+    },
+    {
+      "v": "34",
+      "context": "Jesus corrects a natural expectation. The Messiah was hoped for as the bringer of peace, and he does bring it (5:9), but his coming first divides people according to their response to him. The next verses show that the ‘sword’ cuts through households.",
+      "grammar": "Mē nomisēte hoti ēlthon, ‘do not suppose that I came’, is the same formula as 5:17, ‘Do not think that I have come to abolish the Law’, and in both places Jesus corrects a misunderstanding of his purpose. Ēlthon, ‘I came’, with an infinitive of purpose is one of the ‘I came’ sayings that state the aim of his mission (9:13, 20:28). Balein eirēnēn, literally ‘to throw peace’, uses ballō with an abstract object, an unusual expression that some grammarians trace to a Semitic idiom. Machaira, ‘sword’, is the short sword or long knife; Luke 12:51 has diamerismos, ‘division’, which states the meaning of the figure.",
+      "words": ["G3543", "G2064", "G0906H", "G1515", "G1093G", "G3162"],
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The kingdom's peace does not arrive by avoiding conflict. Because Jesus' claim is total, it separates those who receive him from those who refuse him, and the verse warns that loyalty to him will cost some disciples the peace of their homes before it brings the peace of God's reign. The sword is the division his claim causes, not a weapon his followers wield (26:52)."
+        }
+      ],
+      "parallels": ["Luke 12:51"],
+      "refs": ["Matthew 5:9", "Matthew 5:17", "Luke 2:34-35", "Matthew 26:52", "Hebrews 4:12"]
+    },
+    {
+      "v": "35-36",
+      "context": "Jesus explains the sword with the words of Micah 7:6. The prophet described a corrupt society in which no one could trust even their own family; Jesus applies the words to households divided by loyalty to him, and the Mishnah shows that Jews already read the verse as a picture of the days before the Messiah.",
+      "grammar": "Ēlthon gar dichasai, ‘for I came to divide’: dichazō, ‘to cut in two, set at variance’, occurs only here in the New Testament. Kata with the genitive, repeated three times, means ‘against’. Hoi oikiakoi autou, ‘his household members’, is the word used of Jesus' own household in verse 25. The two uses stand in deliberate tension: the disciple joins Jesus' household and may find his own household turned against him.",
+      "words": ["G2064", "G1369", "G0444", "G3962", "G2364", "G3384", "G3565", "G3994", "G2190", "G3615"],
+      "ot": [
+        {
+          "ref": "Micah 7:6",
+          "note": "The Hebrew reads ki-ven menabbel av, ‘for a son treats a father with contempt’, bat qamah ve'immah, ‘a daughter rises up against her mother’, kallah bachamotah, ‘a daughter-in-law against her mother-in-law’, and oyvei ish anshei veito, ‘a man's enemies are the men of his own house’. The Septuagint follows the Hebrew closely, with numphē and penthera for daughter-in-law and mother-in-law and echthroi for enemies, the same words Matthew uses. Matthew recasts the first line so that Jesus himself sets a man against his father, and compresses ‘the men of his house’ into the single word oikiakoi. In Micah the lines describe social collapse in a faithless generation, and the next verse turns to hope: ‘But as for me, I will look to the LORD’ (7:7). The Mishnah uses the same verse in its picture of the troubles before the Messiah (m. Sotah 9:15). Jesus claims that the messianic division has begun with him."
+        }
+      ],
+      "theology": [
+        {
+          "id": "family",
+          "note": "The verse does not make family an enemy; it recognizes that when one member follows Jesus and others do not, love may be met with hostility. Scripture elsewhere commands honoring parents and providing for one's household (15:4-6, 1 Timothy 5:8), and Jesus names the division as a cost, not a goal."
+        }
+      ],
+      "parallels": ["Luke 12:52-53"],
+      "refs": ["Micah 7:6-7", "Luke 12:52-53", "Matthew 10:21", "Matthew 15:4-6"]
+    },
+    {
+      "v": "37-38",
+      "context": "The demand for first loyalty. Three times Jesus says a person is ‘not worthy of Me’: the one who loves parents more, the one who loves children more, and the one who will not take up the cross. This is the first mention of the cross in Matthew, before Jesus has predicted his own death (16:21).",
+      "grammar": "Ho philōn patera ē mētera huper eme, ‘the one who loves father or mother above me’: huper with the accusative expresses preference. Luke's parallel uses misei, ‘hates’ (Luke 14:26), which reflects a Semitic idiom of choosing one over another: when Genesis says Leah was ‘unloved’ beside Rachel, the Hebrew literally calls her ‘hated’ (Genesis 29:30-31). Matthew's wording gives the sense of the idiom. Ouk estin mou axios, ‘is not worthy of me’, uses axios with the genitive of the person. In verse 38, hos ou lambanei ton stauron autou kai akolouthei opisō mou, ‘whoever does not take his cross and follow after me’: the present tenses describe a continuing way of life, not a single moment.",
+      "words": ["G5368", "G3962", "G3384", "G5228", "G0514", "G5207", "G2364", "G2983", "G4716", "G0190", "G3694"],
+      "history": "Crucifixion was familiar in Galilee and Judea. After the death of Herod the Great in 4 BC the Roman governor of Syria, Varus, crucified about two thousand rebels around Jerusalem (Josephus, Antiquities 17.295). A condemned man usually carried the crossbeam to the place of execution, so ‘taking up a cross’ was a picture of a man on the way to a public and shameful death.",
+      "theology": [
+        {
+          "id": "love",
+          "note": "Jesus does not command less love for family but a right order of loves, with himself first. Augustine described virtue as ordered love (City of God 15.22), and this verse is one of the clearest statements of that order: love of family flourishes rightly only under love for Christ."
+        },
+        {
+          "id": "suffering",
+          "note": "The cross is not a burden assigned by others but a death the disciple accepts for Jesus' sake by following him. The verse makes self-surrender the ordinary shape of discipleship, which Jesus repeats after his first passion prediction (16:24)."
+        }
+      ],
+      "parallels": ["Luke 14:26-27", "Mark 8:34"],
+      "refs": ["Luke 14:26-27", "Matthew 16:24", "Genesis 29:30-31", "Deuteronomy 33:9"]
+    },
+    {
+      "v": "39",
+      "context": "A paradox closes the section on cost. Holding on to life loses it; losing it for Jesus' sake finds it. The saying occurs in some form six times in the Gospels, more than almost any other saying of Jesus.",
+      "grammar": "The verse is a chiasm, an A-B-B-A pattern: ho heurōn, ‘the one who found’, apolesei, ‘will lose’; ho apolesas, ‘the one who lost’, heurēsei, ‘will find’. The aorist participles view each life as a whole, and the futures look to the outcome at the judgment. Psuchē, which meant ‘soul’ in verse 28, here means ‘life’, the self one lives. Heneken emou, ‘for my sake’, is the condition that turns loss into gain: not any loss, but loss because of Jesus.",
+      "words": ["G2147", "G5590H", "G0622", "G1752"],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "Salvation is described here as a life found by being given up. The verse does not make martyrdom the price of salvation; it says that a life held back from Jesus is finally lost and a life surrendered to him is finally kept, the pattern of his own death and resurrection."
+        }
+      ],
+      "parallels": ["Matthew 16:25", "Mark 8:35", "Luke 9:24", "Luke 17:33", "John 12:25"],
+      "refs": ["John 12:25", "Philippians 3:7-8", "Galatians 2:20"]
+    },
+    {
+      "v": "40",
+      "context": "The speech returns to where it began, with the authority of the sent. Receiving Jesus' messengers is receiving him, and receiving him is receiving the Father. The verse turns from the messengers' danger to the dignity of those who welcome them.",
+      "grammar": "The verse is a chain of four present forms of dechomai, ‘to receive, welcome’: ho dechomenos humas eme dechetai, kai ho eme dechomenos dechetai ton aposteilanta me, ‘the one receiving you receives me, and the one receiving me receives the One who sent me’. The emphatic pronoun eme, ‘me’, sits before its verb each time. Ton aposteilanta, ‘the one who sent’, is an aorist participle of apostellō, the verb from which apostolos comes, so the chain of sending runs from the Father through the Son to the apostles.",
+      "words": ["G1209", "G0649"],
+      "theology": [
+        {
+          "id": "union",
+          "note": "Jesus identifies himself with his messengers so closely that a welcome given to them reaches him. The same identification returns in 25:40, and it grounds the church's conviction that Christ is present in those he sends."
+        },
+        {
+          "id": "mission",
+          "note": "The mission of the church stands inside the mission of the Son, who was himself sent by the Father. The disciples carry not only a message about God but the presence of the one who sent them."
+        }
+      ],
+      "parallels": ["Mark 9:37", "Luke 10:16", "John 13:20"],
+      "refs": ["John 13:20", "Luke 10:16", "Matthew 25:40", "Galatians 4:14"]
+    },
+    {
+      "v": "41",
+      "context": "Two examples widen the promise. Whoever welcomes a prophet or a righteous person for what they are shares in their reward. Matthew's community knew both kinds of people (23:34), and Israel's stories remembered hosts rewarded for receiving prophets.",
+      "grammar": "Eis onoma prophētou, literally ‘into the name of a prophet’, is a Semitic idiom (compare the Hebrew leshem) meaning ‘because he is a prophet’ or ‘as a prophet’. The welcome is given for the sake of the person's calling, not for private advantage. Misthon prophētou lēmpsetai, ‘will receive a prophet's reward’, uses the future of lambanō. The same structure is repeated for the dikaios, ‘righteous person’, making two exactly parallel sentences.",
+      "words": ["G1209", "G4396", "G3686", "G3408", "G2983", "G1342"],
+      "history": "Israel's Scriptures tell of hosts rewarded for receiving prophets. The widow of Zarephath fed Elijah and her flour and oil did not run out, and her son was raised (1 Kings 17:9-24); the Shunammite woman built a room for Elisha and was given a son, later restored to life (2 Kings 4:8-37). The Didache, a church manual from around AD 100, shows communities still receiving traveling prophets and testing them (Didache 11 to 13).",
+      "theology": [
+        {
+          "id": "church",
+          "note": "The verse imagines a community with prophets and righteous teachers among it and gives every member a share in their work through hospitality. Those who support the church's servants take part in the ministry they support."
+        }
+      ],
+      "refs": ["1 Kings 17:9-16", "2 Kings 4:8-17", "Matthew 23:34", "Hebrews 13:2", "3 John 1:5-8"]
+    },
+    {
+      "v": "42",
+      "context": "The speech ends with the smallest act imaginable. A cup of cold water given to one of these ‘little ones’ because he is a disciple will not go unrewarded. After warnings of courts and crosses, the last word is about the value of ordinary kindness.",
+      "grammar": "Hos an potisē, ‘whoever gives to drink’, is a general relative clause. Potērion psuchrou monon, ‘a cup of cold only’: psuchros, ‘cold’, stands alone with ‘water’ understood, a natural Greek ellipsis, and monon, ‘only’, stresses how little is given. Hena tōn mikrōn toutōn, ‘one of these little ones’, is the first use of a phrase Matthew uses for disciples (18:6, 18:10, 18:14). Eis onoma mathētou, ‘in the name of a disciple’, continues the idiom of verse 41. Ou mē apolesē ton misthon autou, ‘he will certainly not lose his reward’, uses the emphatic negation again, after the third ‘truly I tell you’ of the chapter.",
+      "words": ["G4222", "G1520", "G3398", "G4221", "G5593", "G3440", "G3686", "G3101", "G0281", "G0622", "G3408"],
+      "theology": [
+        {
+          "id": "love",
+          "note": "The verse makes the smallest kindness count before God when it is done for a disciple's sake. Interpreters divide over whether the ‘least of these’ in 25:40 also means disciples, as ‘little ones’ does here, or all the needy; either way, God notices what is given to the lowly."
+        }
+      ],
+      "parallels": ["Mark 9:41"],
+      "refs": ["Mark 9:41", "Matthew 18:6", "Matthew 25:40", "Hebrews 6:10", "Proverbs 25:25"]
+    }
+  ]
+}

@@ -1,0 +1,261 @@
+{
+  "verses": [
+    {
+      "v": "1-2",
+      "context": "The parable begins with ‘for’, tying it to the saying just spoken in 19:30 about the first and the last. A landowner goes out at dawn to hire workers for his vineyard and agrees with them on a denarius for the day. The agreement is fair and ordinary, which is what makes the ending surprising.",
+      "grammar": "Homoia gar estin, ‘for it is like’, uses gar to explain 19:30: the parable is commentary on Peter's question and Jesus' warning. Anthrōpō oikodespotē, literally ‘to a man, a householder’, is a Semitic doubling Matthew also uses at 13:52 and 21:33. Hama prōi, ‘at dawn’, marks the first hiring. Misthōsasthai, ‘to hire’, is an aorist middle, hiring for oneself. Sumphōnēsas ... ek dēnariou tēn hēmeran, ‘having agreed ... for a denarius for the day’, uses ek for the price and an accusative of time for the length of the contract. Sumphōneō, ‘agree’, returns in verse 13, when the owner reminds the grumbler of the terms.",
+      "words": ["G3664", "G3617", "G3409", "G2040", "G4856", "G1220"],
+      "history": "A denarius was a Roman silver coin and a normal day's pay for a laborer. Tacitus reports that the Rhine legions who mutinied in AD 14 demanded a denarius a day (Annals 1.17), so the figure represents a decent wage, enough to feed a family for a day. Grape harvest in the land came in late summer, when fruit had to be picked and pressed before it spoiled, the season that best explains an owner going back to the marketplace again and again.",
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The kingdom of heaven is compared not to the vineyard or the workers but to the owner and what he does. The story is about the way God gives, and the first scene establishes that he deals honestly before he deals generously."
+        }
+      ],
+      "refs": ["Matthew 19:30", "Matthew 13:52", "Leviticus 19:13"]
+    },
+    {
+      "v": "3-5",
+      "context": "At the third hour the owner finds others standing idle in the marketplace and sends them in, promising whatever is right. He does the same at the sixth and ninth hours. The repetitions build the rhythm of the story and show an owner who keeps going out.",
+      "grammar": "Hestōtas, ‘standing’, is a perfect participle of histēmi: they have been standing and still are. Argous, ‘idle’, is an adjective built on the word for work (a-ergos, ‘without work’), a quiet play on ergatas, ‘workers’, in verse 1; it describes men without employment, not lazy men. Ho ean ē dikaion dōsō humin, ‘whatever is right I will give you’, uses an indefinite relative clause with the subjunctive: the owner commits to justice without naming a sum. Dikaion, ‘right, just’, sets up the complaint and the reply in verse 13, where the owner says he does the first workers no wrong (adikō).",
+      "words": ["G5154", "G5610", "G2476", "G0058", "G0692", "G1342"],
+      "history": "The hours were counted from sunrise, so the third hour is about nine in the morning, the sixth noon, and the ninth about three in the afternoon. The marketplace (agora) of a village or town was where day laborers gathered to be hired.",
+      "refs": ["Matthew 11:16", "Acts 17:17"]
+    },
+    {
+      "v": "6-7",
+      "context": "At the eleventh hour, with one hour of the working day left, the owner still finds men standing there. He asks why, they answer that no one has hired them, and he sends them into the vineyard with no promise of pay at all. The dialogue grows longest with those who seem least useful.",
+      "grammar": "Peri de tēn hendekatēn, ‘about the eleventh’, omits ‘hour’, which the reader supplies. Ti hōde hestēkate holēn tēn hēmeran argoi, ‘why have you stood here the whole day idle?’, uses a perfect, hestēkate, for a state that has lasted all day. Their answer, hoti oudeis hēmas emisthōsato, ‘because no one hired us’, uses the same verb of hiring as verse 1 in the aorist. The owner's reply repeats hupagete kai humeis, ‘you also go’, from verse 4, but drops any mention of wages.",
+      "words": ["G1734", "G2476", "G0692", "G3762", "G3409", "G5217"],
+      "theology": [
+        {
+          "id": "election",
+          "note": "The owner goes out repeatedly and calls those no one else chose. The initiative in the parable is entirely his, which is how Matthew's Jesus describes God's call to tax collectors and sinners (9:9-13)."
+        }
+      ],
+      "refs": ["Matthew 9:9-13", "Isaiah 55:1", "Luke 14:21-23"]
+    },
+    {
+      "v": "8",
+      "context": "At evening the owner tells his foreman to call the workers and pay them, beginning with the last hired and going on to the first. The payment is on time, as the law required, but the order is deliberate: the first workers will watch what the last receive.",
+      "grammar": "Opsias de genomenēs, ‘evening having come’, is a genitive absolute marking the time of payment. Epitropos, ‘foreman’ or ‘manager’, is the title of Chuza, Herod's steward (Luke 8:3), and of the guardians of an heir (Galatians 4:2). Kaleson ... kai apodos autois ton misthon, ‘call ... and pay them the wage’, uses aorist imperatives; apodidōmi means to pay what is owed. Arxamenos apo tōn eschatōn heōs tōn prōtōn, ‘beginning from the last up to the first’, reverses the order of hiring and echoes the saying about the last and the first in 19:30 and 20:16.",
+      "words": ["G3798", "G2012", "G0591", "G3408", "G2078", "G4413G"],
+      "history": "The law required that a hired worker be paid before sunset, since he was poor and depended on it (Leviticus 19:13, Deuteronomy 24:14-15). The Mishnah works out the rule for day and night laborers (m. Bava Metzia 9:11-12). The owner keeps that law exactly; the surprise lies elsewhere.",
+      "refs": ["Leviticus 19:13", "Deuteronomy 24:14-15", "James 5:4"]
+    },
+    {
+      "v": "9-10",
+      "context": "The eleventh-hour workers each receive a full denarius. The first workers, seeing it, assume they will get more, but they too receive a denarius each. The story has led its hearers to share their expectation.",
+      "grammar": "Elabon ana dēnarion, ‘they received a denarius each’, uses ana in its distributive sense, ‘apiece’. Enomisan hoti pleion lēmpsontai, ‘they supposed that they would receive more’, reports their reasoning with a future in indirect speech; nomizō often names an assumption that turns out wrong (5:17, 10:34). Kai autoi, ‘they also, themselves’, stresses that the same coin went to them. The repetition of ana dēnarion in both verses is the whole shock of the parable in two words.",
+      "words": ["G2983", "G0303", "G1220", "G3543", "G4119"],
+      "text": "Most manuscripts have the comparative in the neuter singular, pleion, ‘more’; the Textus Receptus reads the plural pleiona, ‘more things’. Editions also vary in whether the article stands before ana dēnarion in verse 10. Neither difference changes the meaning.",
+      "refs": ["Luke 15:28-30", "Romans 4:4-5"]
+    },
+    {
+      "v": "11-12",
+      "context": "The first workers grumble against the owner. Their complaint is not that they were underpaid but that the latecomers were made equal to them, though they bore the burden of the day and its scorching heat. The objection sounds like justice and is actually a comparison.",
+      "grammar": "Egonguzon, ‘they were grumbling’, is an imperfect of continuing complaint. The verb and its noun are the Septuagint's words for Israel's murmuring in the wilderness (Exodus 16:7-8, Numbers 14:27), and Paul uses the same verb when he recalls that story (1 Corinthians 10:10). Isous hēmin autous epoiēsas, ‘you made them equal to us’, puts isous, ‘equal’, first for emphasis. Tois bastasasi to baros tēs hēmeras kai ton kausōna, ‘who bore the weight of the day and the scorching heat’, pairs baros, ‘burden’, with kausōn, the burning heat of the sun or of a hot east wind (Luke 12:55, James 1:11).",
+      "words": ["G1111", "G3617", "G2470", "G0941", "G0922", "G2742"],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "The grumbling exposes a sin that looks like fairness. The first workers are not wronged; they resent another's good, the envy Scripture traces from Cain onward, and their murmuring puts them in the line of Israel grumbling against the God who fed them in the wilderness."
+        }
+      ],
+      "refs": ["Exodus 16:7-8", "Numbers 14:27", "1 Corinthians 10:10", "Jonah 4:1-3"]
+    },
+    {
+      "v": "13-14",
+      "context": "The owner answers one of the grumblers directly. He has done him no wrong: they agreed on a denarius. The worker should take what is his and go. The owner wants to give the last the same as the first, and the wish is his to act on.",
+      "grammar": "Hetaire, ‘friend’ or ‘comrade’, is a polite but distant address that Matthew uses only for someone in the wrong (22:12, 26:50). Ouk adikō se, ‘I do you no wrong’, is a present of adikeō, the negative of the ‘right’ (dikaion) promised in verse 4. Ouchi dēnariou sunephōnēsas moi, ‘did you not agree with me for a denarius?’, uses ouchi, which expects the answer yes, and the same verb as verse 2. Aron to son kai hupage, ‘take what is yours and go’, is brusque. Thelō de toutō tō eschatō dounai hōs kai soi, ‘but I want to give to this last one as also to you’, grounds the payment in the owner's will: thelō, ‘I want’, returns in verse 15.",
+      "words": ["G2083", "G0091", "G4856", "G0142", "G2309", "G2078"],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "The owner's defense separates two things the grumblers merged: what is owed and what is given. The first workers receive justice; the last receive generosity. The gift of the kingdom is given on the second basis to all, which is why no one can claim more of it by longer service."
+        }
+      ],
+      "refs": ["Matthew 22:12", "Matthew 26:50", "Romans 11:6"]
+    },
+    {
+      "v": "15",
+      "context": "The owner's last two questions close the parable. May he not do as he wishes with what is his? Or is the worker's eye evil because the owner is good? The story ends on the question, left for the hearer to answer.",
+      "grammar": "Ouk exestin moi, ‘is it not lawful for me’, uses exestin, the Pharisees' word in 19:3 (‘is it lawful for a man to divorce his wife?’). There the question was what a husband may do to his wife; here it is what a generous owner may do with his own. The second question is an idiom: ho ophthalmos sou ponēros estin hoti egō agathos eimi, literally ‘is your eye evil because I am good?’ The ‘evil eye’ is the envious, grudging look (Deuteronomy 15:9, Proverbs 28:22), and its opposite, a good eye, meant generosity. The owner calls himself agathos, ‘good’, the word Jesus used of God in 19:17: ‘There is only One who is good’. The reader who remembers that verse knows who the owner stands for.",
+      "words": ["G1832", "G2309", "G3788", "G4190", "G0018"],
+      "text": "Manuscripts differ over whether the first question begins with ē, ‘or’, which the Textus Receptus and some critical editions print and others omit; the difference is one of style, not sense.",
+      "theology": [
+        {
+          "id": "attributes",
+          "note": "God's goodness is shown as generosity beyond desert, and the parable asks whether the hearer can bear it. The link to 19:17 makes the point: the only good one is God, and his goodness is free to give more than anyone earns."
+        }
+      ],
+      "refs": ["Matthew 6:22-23", "Deuteronomy 15:9", "Matthew 19:17", "Romans 9:15-16"]
+    },
+    {
+      "v": "16",
+      "context": "The saying of 19:30 returns in reverse order, closing the frame around the parable. ‘So’ draws the conclusion: in the kingdom the last will be first and the first last. The reversal in the story is the reversal the saying describes.",
+      "grammar": "Houtōs, ‘thus, in this way’, points back to the story as the pattern. The future esontai, ‘will be’, speaks of the final state. The chiasm reverses 19:30: there, many first will be last and last first; here, the last will be first and the first last, the order in which the workers were paid.",
+      "words": ["G3779", "G2078", "G4413G"],
+      "text": "The King James Version adds ‘for many be called, but few chosen’, a line found in many later manuscripts and taken from 22:14. It is absent from Codex Sinaiticus, Codex Vaticanus, and other early witnesses, and modern Bibles omit it.",
+      "refs": ["Matthew 19:30", "Matthew 22:14", "Luke 13:30", "Mark 10:31"]
+    },
+    {
+      "v": "17-19",
+      "context": "Jesus takes the Twelve aside on the road up to Jerusalem and predicts his death for the third time. This prediction is the fullest: he will be handed to the chief priests and scribes, condemned to death, handed over to the Gentiles to be mocked, flogged, and crucified, and raised on the third day. It is the only one of the three that names crucifixion.",
+      "grammar": "Anabainōn, ‘going up’, is the pilgrim's verb, and anabainomen, ‘we are going up’, includes the disciples in the road. Kat' idian, ‘privately’, sets the teaching apart from the crowd. Paradothēsetai, ‘will be handed over’, is a future passive; the verb paradidōmi covers Judas's betrayal (26:15), the council's handing him to Pilate (27:2), and Pilate's handing him over to be crucified (27:26), and many interpreters also hear God's purpose behind it, as in the Septuagint of Isaiah 53:6 and 12. Katakrinousin auton thanatō, ‘they will condemn him to death’, and paradōsousin, ‘they will hand over’, are future actives. Three aorist infinitives of purpose follow, empaixai, mastigōsai, staurōsai, ‘to mock, to flog, to crucify’. Egerthēsetai, ‘he will be raised’, is a future passive.",
+      "words": ["G0305", "G3860", "G2632", "G1484", "G1702", "G3146", "G4717", "G1453"],
+      "history": "Compared with 16:21 (suffer, be killed, be raised) and 17:22-23 (handed over to men, killed, raised), this prediction adds the Gentiles and three details that Matthew's passion narrative will fulfill: flogging (27:26), mocking by the soldiers (27:27-31), and crucifixion (27:35). Only Rome could crucify in Judea, so naming crucifixion is naming a Roman execution.",
+      "text": "The critical editions read egerthēsetai, ‘he will be raised’; the Textus Receptus and Byzantine text read anastēsetai, ‘he will rise’, the wording of Mark and Luke. Some manuscripts read ‘the twelve disciples’ and others ‘the Twelve’.",
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The passive ‘will be handed over’ holds together human betrayal and divine purpose, the pattern of Isaiah 53, where the servant is handed over for sins. Jesus goes up to Jerusalem knowing and choosing the death his words describe."
+        },
+        {
+          "id": "resurrection",
+          "note": "Each prediction ends with the promise of being raised on the third day. The resurrection is part of the plan announced beforehand, not a reversal improvised after the cross."
+        }
+      ],
+      "parallels": ["Mark 10:32-34", "Luke 18:31-33"],
+      "refs": ["Matthew 16:21", "Matthew 17:22-23", "Matthew 26:2", "Isaiah 53:12"]
+    },
+    {
+      "v": "20-21",
+      "context": "Right after the prediction of the cross, the mother of James and John comes kneeling with her sons and asks for them the seats at Jesus' right and left in his kingdom. The juxtaposition is Matthew's point: the disciples still picture a kingdom without a cross.",
+      "grammar": "Proskunousa, ‘kneeling, doing homage’, is a present participle of proskuneō, the verb for the magi's worship (2:11) and the posture of petitioners (8:2, 15:25). Aitousa ti ap' autou, ‘asking something from him’, is vague, as a court petition might begin. Jesus asks ti theleis, ‘what do you want?’, the same question he will put to the blind men (verse 32). Her reply, eipe hina kathisōsin, ‘say that they may sit’, uses an aorist imperative of legō, asking for a royal word that settles the matter. Ek dexiōn ... ex euōnumōn, ‘on the right ... on the left’, names the places of highest honor beside a king. Matthew has en tē basileia sou, ‘in your kingdom’, where Mark has ‘in your glory’.",
+      "words": ["G3384", "G4352", "G0154", "G2309", "G2036", "G1188", "G2176"],
+      "history": "The mother of the sons of Zebedee appears again only at the cross, among the women watching from a distance (27:56). Matthew's version of the request comes from her, though Jesus answers the sons; in Mark 10:35 the brothers ask for themselves. Interpreters have suggested that Matthew shielded the apostles, or that he recorded a mother's part the other accounts left out; both are guesses.",
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The request assumes a kingdom of thrones and precedence arranged by influence. Jesus' answer will relocate the right and the left: Matthew shows them next at the crucifixion, where two robbers hang on his right and his left (27:38)."
+        }
+      ],
+      "parallels": ["Mark 10:35-37"],
+      "refs": ["Matthew 27:56", "Matthew 27:38", "1 Kings 2:19", "Psalm 110:1"]
+    },
+    {
+      "v": "22",
+      "context": "Jesus answers the brothers, not their mother: they do not know what they are asking. He asks whether they can drink the cup he is about to drink, and they say at once that they can. Their confidence will not survive Gethsemane, where he asks that the cup pass and they sleep (26:39-45).",
+      "grammar": "Ouk oidate ti aiteisthe, ‘you do not know what you are asking’, uses the plural and the middle voice of aiteō, which may carry the sense of asking for oneself, though by this period active and middle often overlap. Dunasthe piein to potērion ho egō mellō pinein, ‘are you able to drink the cup that I am about to drink?’, uses mellō with a present infinitive for what is imminent and certain, with the emphatic egō, ‘I’. Their answer is a single word, dunametha, ‘we are able’.",
+      "words": ["G6063", "G0154", "G1410", "G4095", "G4221", "G3195"],
+      "text": "The King James Version adds ‘and to be baptized with the baptism that I am baptized with’, here and in verse 23. The phrase comes from later manuscripts that borrowed it from Mark 10:38-39; the early manuscripts of Matthew mention only the cup.",
+      "ot": [
+        {
+          "ref": "Isaiah 51:17",
+          "note": "The Hebrew calls Jerusalem to awake, since she has drunk from the LORD's hand kos chamato, ‘the cup of his wrath’, and the Septuagint has to potērion tou thumou. The cup is one of the prophets' commonest images for the portion God pours out in judgment (Psalm 75:8, Jeremiah 25:15-17), though it can also be a cup of blessing (Psalm 16:5, 23:5). Jesus takes it as a name for the suffering he goes to meet, and in 26:39 he prays that this cup might pass from him. Isaiah 51:22 promises that God will take the cup from his people's hand; the Gospels show Jesus drinking it."
+        }
+      ],
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "Jesus names his coming death as a cup given him to drink, suffering received from the Father's hand. The brothers will share his cup in their own way, but they do not yet understand that glory in his kingdom comes by that road."
+        }
+      ],
+      "parallels": ["Mark 10:38-39"],
+      "refs": ["Matthew 26:39", "Psalm 75:8", "Jeremiah 25:15", "Isaiah 51:22"]
+    },
+    {
+      "v": "23",
+      "context": "Jesus grants that the brothers will drink his cup, but the seats at his right and left are not his to assign. They belong to those for whom the Father has prepared them. The answer both honors the brothers' future suffering and refuses their request.",
+      "grammar": "To men potērion mou piesthe, ‘my cup you will indeed drink’, uses men, answered by de, to set the promise against the refusal. Piesthe is a future: this will happen. Ouk estin emon touto dounai, ‘this is not mine to give’, is balanced by all' hois hētoimastai hupo tou patros mou, ‘but it is for those for whom it has been prepared by my Father’. Hētoimastai is a perfect passive: the places are already prepared. The same verb describes the kingdom prepared for the blessed from the foundation of the world (25:34) and the fire prepared for the devil and his angels (25:41).",
+      "words": ["G3303", "G4221", "G4095", "G1188", "G2176", "G2090", "G3962"],
+      "history": "James was executed with the sword by Herod Agrippa I around AD 44 (Acts 12:2), the first of the Twelve to die for his faith. Irenaeus reports that John lived at Ephesus into the reign of Trajan (Against Heresies 3.3.4); late reports that Papias said John was killed by the Jews are doubted by most historians. The brothers drank the cup in different ways, one by an early death and the other by a long witness.",
+      "theology": [
+        {
+          "id": "sovereignty",
+          "note": "The Son defers to the Father's prepared purpose. The honors of the kingdom are not won by petition or family influence; they rest in the Father's gift, and even Jesus does not treat them as his to hand out on request."
+        }
+      ],
+      "parallels": ["Mark 10:39-40"],
+      "refs": ["Acts 12:2", "Matthew 25:34", "Revelation 1:9", "John 21:22-23"]
+    },
+    {
+      "v": "24-25",
+      "context": "The other ten are indignant with the two brothers, which shows they wanted the same thing. Jesus calls them together and contrasts the way power works among the Gentiles, where rulers lord it over their subjects and the great exercise authority over them.",
+      "grammar": "Ēganaktēsan, ‘they were indignant’, is the verb Matthew uses of the chief priests at the children's praise (21:15) and of the disciples at the anointing in Bethany (26:8): it is the anger of those who resent what others receive, which links the scene to the grumbling in the vineyard. Proskalesamenos, ‘having summoned’, is an aorist middle participle. Hoi archontes tōn ethnōn katakurieuousin autōn kai hoi megaloi katexousiazousin autōn, ‘the rulers of the nations lord it over them and the great ones exercise authority over them’, pairs two compound verbs whose prefix kata- gives the sense of pressing down on others. The present tenses describe how things customarily are.",
+      "words": ["G0023", "G4341", "G6063", "G0758", "G2634", "G3173", "G2715"],
+      "history": "Rome ruled Judea through prefects and client kings. Herod's son Archelaus, ethnarch of Judea, ruled so harshly that a delegation of Jews and Samaritans complained to Augustus, who deposed him in AD 6 (Josephus, Antiquities 17.342-344). Matthew has already told how Archelaus's reign made Joseph afraid to settle in Judea (2:22).",
+      "parallels": ["Mark 10:41-42", "Luke 22:24-25"],
+      "refs": ["Matthew 2:22", "1 Peter 5:3", "Luke 22:24-25"]
+    },
+    {
+      "v": "26-27",
+      "context": "It is not to be so among the disciples. Whoever wants to be great must be their servant, and whoever wants to be first must be their slave. Jesus does not forbid the desire for greatness; he redefines what greatness is.",
+      "grammar": "Ouch houtōs estai en humin, ‘it shall not be so among you’, uses a future that functions as a command. Two parallel sentences follow, each with a conditional relative clause and a future: hos ean thelē en humin megas genesthai, estai humōn diakonos, ‘whoever wishes to become great among you will be your servant’, and hos an thelē en humin einai prōtos, estai humōn doulos, ‘whoever wishes to be first among you will be your slave’. The terms escalate: megas to prōtos, diakonos (one who serves at table) to doulos (one owned by another). Humōn, ‘your’, makes the service owed to the rest of the community.",
+      "words": ["G3779", "G2309", "G3173", "G1249", "G4413G", "G1401"],
+      "text": "Most editions read estai, ‘it shall be’; Westcott and Hort print estin, ‘it is not so among you’, the reading also found in the parallel at Mark 10:43, which states what the community is rather than commanding what it must be. The difference is small, since each implies the other.",
+      "theology": [
+        {
+          "id": "leadership",
+          "note": "Jesus defines authority among his people by service, not by rank. The one who would lead must take the place of the servant and even the slave, which is why the church later named an office from diakonos (Philippians 1:1) and why Matthew repeats the rule when Jesus warns against the scribes' love of honor (23:11)."
+        }
+      ],
+      "parallels": ["Mark 10:43-44"],
+      "refs": ["Matthew 23:11-12", "Mark 9:35", "John 13:14-15", "Philippians 1:1"]
+    },
+    {
+      "v": "28",
+      "context": "Jesus grounds the rule of service in his own mission. The Son of Man did not come to be served but to serve and to give his life as a ransom for many. The sentence gathers the chapter's themes, the last made first, the cup, and the true shape of greatness, into one statement of why he is going to Jerusalem.",
+      "grammar": "Hōsper, ‘just as’, makes Jesus the pattern of the command in verses 26 and 27. Ouk ēlthen diakonēthēnai alla diakonēsai, ‘came not to be served but to serve’, sets a passive and an active aorist infinitive side by side; ēlthen, ‘came’, speaks of his whole mission (5:17, 9:13, 10:34). Kai dounai tēn psuchēn autou lutron anti pollōn: psuchē here means ‘life’; lutron is the price of release; anti usually means ‘in place of’, as when Archelaus reigned anti Hērōdou, ‘in place of Herod’ (2:22). Pollōn, ‘many’, is a Semitic way of speaking of a great multitude, not a restriction; Joachim Jeremias argued it is inclusive, and 1 Timothy 2:6 has ‘a ransom for all’ (antilutron huper pantōn).",
+      "words": ["G5618", "G2064", "G1247", "G1325", "G5590H", "G3083", "G0473", "G4183"],
+      "text": "Codex Bezae, the Old Latin, and the Curetonian Syriac add a long passage after this verse, telling the disciples to seek to rise from what is small rather than to be made less from what is great, and not to take the places of honor at a dinner, a close relative of Luke 14:8-10. No modern Bible includes it.",
+      "ot": [
+        {
+          "ref": "Isaiah 53:10-12",
+          "note": "The Hebrew says the servant's nefesh, ‘life’, is made an asham, a guilt offering (53:10), that he will justify harabbim, ‘the many’ (53:11), and that he poured out his nefesh to death and bore the sin of rabbim, ‘many’ (53:12). The Septuagint has paredothē eis thanaton hē psuchē autou, ‘his life was handed over to death’, and hamartias pollōn anēnegken, ‘he bore the sins of many’. Matthew's saying shares psuchē, polloi, and the idea of a life given for others, but not the Septuagint's wording, and lutron never appears in Isaiah 53. C. K. Barrett and Morna Hooker (Jesus and the Servant, 1959) therefore doubted a direct allusion; Joachim Jeremias, Peter Stuhlmacher, and Rikki Watts have argued that the concept of a life given in place of many, with the guilt offering as its payment, is exactly Isaiah 53's. Matthew himself reads Jesus' ministry through Isaiah 53 (8:17) and repeats ‘for many’ at the Last Supper (26:28)."
+        },
+        {
+          "ref": "Daniel 7:13-14",
+          "note": "In Daniel one like a son of man receives dominion, glory, and a kingdom, and the Aramaic says all peoples, nations, and languages yiflechun, ‘will serve’, him. Jesus takes the title and reverses the expectation: the Son of Man came not to be served but to serve. The service Daniel foresaw will come (28:18-19), but by way of the cross."
+        }
+      ],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The verse explains Jesus' death as a ransom, a price paid to set others free, given in their place. Christians have developed the image as liberation from sin and hostile powers and as Christ bearing what others owed; the text itself does not say to whom the price is paid, a question debated since Origen and Gregory of Nazianzus, and it stresses that the death is a costly act of service for many."
+        },
+        {
+          "id": "leadership",
+          "note": "Service in the church rests on the atonement, not on management technique. Because the Son of Man gave his life for others, his followers cannot use office to be served."
+        }
+      ],
+      "parallels": ["Mark 10:45"],
+      "refs": ["1 Timothy 2:6", "Matthew 26:28", "Philippians 2:5-8", "1 Peter 1:18-19", "Titus 2:14"]
+    },
+    {
+      "v": "29-31",
+      "context": "As Jesus leaves Jericho with a large crowd, two blind men by the road hear that he is passing and cry out, ‘Lord, Son of David, have mercy on us’. The crowd tells them to be quiet, and they shout louder. Matthew has two men where Mark and Luke have one, and he places the healing as Jesus leaves the town, as Mark does.",
+      "grammar": "Ekporeuomenōn autōn apo Ierichō, ‘as they were going out from Jericho’, is a genitive absolute. Idou duo tuphloi kathēmenoi para tēn hodon, ‘behold, two blind men sitting beside the road’, uses idou, Matthew's favorite way of drawing attention. Paragei, ‘is passing by’, is a present retained in indirect speech. Their cry, eleēson hēmas, kurie, huios Dauid, ‘have mercy on us, Lord, Son of David’, uses the nominative huios where classical Greek would use a vocative, a common feature of the Greek of this period. Epetimēsen autois hina siōpēsōsin, ‘rebuked them that they should be silent’, is followed by meizon ekraxan, ‘they cried out more’, a comparative used as an adverb.",
+      "words": ["G1607", "G2410", "G5185", "G3855", "G2896", "G1653", "G2962G", "G1138", "G4623"],
+      "text": "Manuscripts differ over the order and presence of ‘Lord’ and ‘Jesus’ in the cry, so that the King James Version reads ‘Have mercy on us, O Lord, thou son of David’ and the BSB ‘Lord, Son of David, have mercy on us’. Mark has one blind man, Bartimaeus, healed as Jesus leaves Jericho (Mark 10:46); Luke has one unnamed man healed as Jesus approaches it (Luke 18:35). Matthew also doubles the Gadarene demoniac (8:28), and his earlier story of two blind men (9:27-31) has the same cry.",
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "The blind men name Jesus Son of David, the royal heir promised to David, on the last stage of the road to David's city. Their cry for mercy defines what they expect of the Messiah, not thrones but compassion, and it anticipates the crowd's ‘Hosanna to the Son of David’ in 21:9."
+        }
+      ],
+      "parallels": ["Mark 10:46-48", "Luke 18:35-39"],
+      "refs": ["Matthew 9:27-31", "Matthew 15:22", "Matthew 21:9", "2 Samuel 7:12-16"]
+    },
+    {
+      "v": "32-34",
+      "context": "Jesus stops, calls them, and asks what they want. They ask for their eyes to be opened. Moved with compassion, he touches their eyes; at once they see and follow him. The chapter that began with a story of grace ends with two beggars who receive it and walk behind Jesus to Jerusalem.",
+      "grammar": "Stas, ‘standing still’, is an aorist participle of histēmi: the one going up to Jerusalem halts for two beggars. Ti thelete poiēsō humin, ‘what do you want me to do for you?’, uses a deliberative subjunctive and echoes his question to the mother in verse 21, framing the second half of the chapter. Hina anoigōsin hoi ophthalmoi hēmōn, ‘that our eyes be opened’, is a hina clause expressing a request, with an aorist passive subjunctive. Splanchnistheis, ‘moved with compassion’, is Matthew's addition to Mark. Hēpsato tōn ommatōn autōn, ‘he touched their eyes’, uses omma, a rarer word for eye found in the New Testament only here and in Mark 8:23. Ēkolouthēsan autō, ‘they followed him’, is the chapter's last word.",
+      "words": ["G2476", "G2309", "G0455", "G4697", "G0681", "G3659", "G0308", "G0190"],
+      "text": "The critical editions read ommatōn in verse 34; the Textus Receptus has the common word ophthalmōn and adds that their eyes received sight, which gives the King James Version ‘and immediately their eyes received sight’.",
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "Jesus does what Isaiah said would mark God's coming to save, opening the eyes of the blind (Isaiah 35:5), which Matthew has already given as the answer to John's question whether Jesus is the one to come (11:5)."
+        },
+        {
+          "id": "salvation",
+          "note": "The men who asked for mercy receive sight and follow. Seeing and following belong together: the disciples, who can see, still misunderstand the road, while the blind men, once healed, take it."
+        }
+      ],
+      "parallels": ["Mark 10:49-52", "Luke 18:40-43"],
+      "refs": ["Isaiah 35:5", "Matthew 11:5", "Matthew 9:36", "Matthew 14:14"]
+    }
+  ]
+}

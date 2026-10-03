@@ -1,0 +1,650 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "The Gospel's first sentence is a title, and it names Jesus by three things at once: Christ, son of David, son of Abraham. The two ancestors are given in reverse order, David first, because the royal claim is the one the genealogy must prove; the list that follows then runs forward from Abraham (verses 2 to 6) to David, so that the verse is answered in the order it is asked backward.",
+      "grammar": "Biblos geneseōs, literally ‘book of genesis’, has no verb; it is a heading, like the headings of the Greek Old Testament at Genesis 2:4 and 5:1 (\"This is the book of the generations of Adam\"). Whether it heads the genealogy only, chapters 1 and 2, or the whole Gospel is debated: W. D. Davies and Dale Allison take it as a title for the entire book, a new Genesis, while most commentators, R. T. France among them, confine it to the family record. Christos is still a title here, ‘the Anointed One’, the Greek for Messiah, though Matthew will also use Iēsous Christos as a double name (1:18). The two genitives huiou Dauid and huiou Abraam are both ‘son’ in the wide biblical sense of descendant, since David and Abraham lived a thousand years apart.",
+      "words": [
+        "G0976",
+        "G1078",
+        "G5547",
+        "G1138",
+        "G0011"
+      ],
+      "history": "Son of David was a messianic title before the Gospels. The Psalms of Solomon, Jewish poems from the decades after Pompey took Jerusalem in 63 BC, pray that God will raise up for Israel their king, the son of David, to purge Jerusalem of the nations (Psalms of Solomon 17:21). Matthew uses the title more than any other Gospel, and mostly on the lips of the needy and the outsider: blind men (9:27, 20:30), a Canaanite woman (15:22), and children in the temple (21:15).",
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "The verse sets out Jesus' credentials in one line: anointed king, heir of the covenant with David (2 Samuel 7:12-16), heir of the promise to Abraham that all the families of the earth would be blessed through his offspring (Genesis 12:3). Before any miracle or sermon, Matthew says who Jesus is by where he stands in Israel's story."
+        },
+        {
+          "id": "covenant",
+          "note": "Naming Abraham and David together joins the two covenants that carry the Old Testament's hope, the one promising a people and a blessing for the nations, the other promising a king. Matthew presents Jesus as the one in whom both covenants arrive."
+        }
+      ],
+      "parallels": [
+        "Luke 3:23-38"
+      ],
+      "refs": [
+        "Genesis 5:1",
+        "Genesis 22:18",
+        "2 Samuel 7:12-16",
+        "Romans 1:3",
+        "Galatians 3:16"
+      ]
+    },
+    {
+      "v": "2",
+      "context": "The line begins with the three patriarchs and then widens for a moment: Jacob fathers ‘Judah and his brothers’, the twelve sons who became the tribes of Israel. The Messiah comes from Judah, the tribe of the scepter (Genesis 49:10), but the whole people is named at the start.",
+      "grammar": "The verb egennēsen (aorist active of gennaō, ‘fathered’) will be repeated some forty times, and the whole list moves by one plain pattern: A fathered B, then B fathered C, joined by de, ‘and’. In Hebrew genealogies the matching verb (yalad in its causative form) can mean ‘became the ancestor of’ as well as ‘fathered’, and Matthew uses it that way in verse 8, where Joram ‘fathers’ his great-great-grandson. Kai tous adelphous autou, ‘and his brothers’, appears only here and in verse 11, at the exile, the two points where the list widens from one heir to a whole generation.",
+      "words": [
+        "G1080",
+        "G2455N",
+        "G0080"
+      ],
+      "theology": [
+        {
+          "id": "israel",
+          "note": "By naming Judah's brothers, Matthew keeps all Israel in view: the king comes from one tribe for the sake of the whole people. Jesus will later choose twelve disciples and promise that they will judge the twelve tribes (19:28), a sign that he came to gather all Israel."
+        }
+      ],
+      "refs": [
+        "Genesis 21:3",
+        "Genesis 25:26",
+        "Genesis 29:35",
+        "Genesis 49:10"
+      ]
+    },
+    {
+      "v": "3",
+      "context": "The first woman appears: Judah fathered Perez and Zerah ‘by Tamar’. Her story (Genesis 38) is one of the strangest in the Old Testament, and Matthew names her without comment. Hezron and Ram carry the line toward the wilderness generation.",
+      "grammar": "The phrase ek tēs Thamar, ‘out of Tamar’, uses ek with the genitive for the mother, a formula that breaks the pattern of fathers and returns with Rahab, Ruth, and Uriah's wife (verses 5 and 6) and, altered, with Mary (verse 16). Twins are named here, Perez and Zerah, though only Perez carries the line; Genesis 38:29 explains his name as ‘breach’ or ‘breaking out’, because he pushed ahead of his brother at birth. Aram is the Greek spelling of Ram (Ruth 4:19, 1 Chronicles 2:9), taken over from the Septuagint.",
+      "words": [
+        "G2283",
+        "G5329",
+        "G2196",
+        "G2074",
+        "G0689"
+      ],
+      "history": "Genesis never says where Tamar came from. Later Jewish writers filled the gap in opposite ways: the book of Jubilees (41:1) makes her an Aramean, while Philo of Alexandria (On the Virtues 220-222) presents her as a woman of Syria Palaestina who left the gods of her upbringing for the one God, a proselyte. Either way, Jewish tradition before Matthew already treated her as an outsider who joined Israel. The line from Perez to David was recorded in Ruth 4:18-22 and 1 Chronicles 2:4-15, which Matthew follows closely here.",
+      "theology": [
+        {
+          "id": "family",
+          "note": "Judah's line continues through a union that began in his own injustice to his daughter-in-law, and Judah confessed that she was more righteous than he (Genesis 38:26). The Messiah's family tree does not hide how families actually fail and are rescued."
+        }
+      ],
+      "parallels": [
+        "Luke 3:33"
+      ],
+      "refs": [
+        "Genesis 38:26-30",
+        "Ruth 4:12",
+        "Ruth 4:18-19",
+        "1 Chronicles 2:4-5"
+      ]
+    },
+    {
+      "v": "4",
+      "context": "Three names cover Israel's time in Egypt and the wilderness. They are unfamiliar to most readers, but Nahshon was a leading figure of the exodus generation, which ties the royal line to the story of the people coming out of Egypt.",
+      "history": "Amminadab's daughter Elisheba married Aaron (Exodus 6:23), so Nahshon was Aaron's brother-in-law and the Messiah's line was joined by marriage to the priestly house. Nahshon son of Amminadab was the leader of the tribe of Judah in the wilderness (Numbers 1:7, 2:3), and he was the first of the twelve leaders to bring his offering when the tabernacle altar was dedicated (Numbers 7:12). A later rabbinic legend (Babylonian Talmud, Sotah 37a) made him the first to wade into the Red Sea before it parted. Salmon, his son, belongs to the generation that entered Canaan.",
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The list moves quietly through centuries in which God was shaping a people in Egypt and the desert. Names that seem to carry no story mark the long patience by which the promise to Abraham was kept."
+        }
+      ],
+      "parallels": [
+        "Luke 3:32-33"
+      ],
+      "refs": [
+        "Exodus 6:23",
+        "Numbers 1:7",
+        "Numbers 7:12",
+        "Ruth 4:19-20"
+      ]
+    },
+    {
+      "v": "5",
+      "context": "Two more women: Rahab, the Canaanite of Jericho who sheltered Israel's spies, and Ruth, the Moabite widow who bound herself to Naomi's God. Both were foreigners, and both are remembered for faithfulness. The line reaches Jesse, David's father.",
+      "grammar": "The formula ek tēs, ‘by’, now appears twice in one verse, with Rhachab and Rhouth. Matthew's spelling Rhachab differs from Raab, the form in the Septuagint of Joshua and in Hebrews 11:31 and James 2:25. Jerome D. Quinn (Biblica, 1981) asked whether Matthew meant a different woman; most scholars, Raymond Brown among them, still identify her with the Rahab of Jericho, since both spellings render the same Hebrew name and Josephus also writes it with the ch sound. The names Boes (Boaz) and Iōbēd (Obed) follow Greek forms of Ruth 4.",
+      "words": [
+        "G4477",
+        "G1003",
+        "G4503",
+        "G5601",
+        "G2421"
+      ],
+      "history": "No Old Testament text makes Rahab the wife of Salmon or the mother of Boaz; Matthew is the earliest known source for it. The chronology is compressed. Salmon belonged to the generation of the conquest, while Boaz, Obed, and Jesse bring the line to David around 1000 BC, so three links cover a span that the book of Judges fills with several centuries. Ruth 4:18-22 has the same short list, which suggests that the Old Testament genealogy already named only the main links. Ruth came from Moab, a people barred from Israel's assembly (Deuteronomy 23:3), yet the book that bears her name ends with her great-grandson David (Ruth 4:17).",
+      "theology": [
+        {
+          "id": "mission",
+          "note": "A Canaanite and a Moabite stand in the ancestry of Israel's king. Before Matthew tells of Magi from the east or ends with the command to make disciples of all nations (28:19), the genealogy shows the nations already inside the Messiah's family."
+        },
+        {
+          "id": "faith",
+          "note": "The New Testament remembers Rahab for faith (Hebrews 11:31) and for acting on it (James 2:25), and Ruth's vow to take Naomi's God as her own (Ruth 1:16) is the Old Testament's classic confession of a convert. Both women entered the people of God by trust, not by birth."
+        }
+      ],
+      "parallels": [
+        "Luke 3:32"
+      ],
+      "refs": [
+        "Joshua 6:25",
+        "Hebrews 11:31",
+        "Ruth 1:16",
+        "Ruth 4:13-17",
+        "Deuteronomy 23:3"
+      ]
+    },
+    {
+      "v": "6",
+      "context": "The first section of the genealogy peaks in ‘David the king’, the only person in the list given a title. Then the second section begins with David again, and at once with his worst sin: Solomon was born of ‘Uriah’s wife’, the woman David took after arranging her husband's death.",
+      "grammar": "Ton basilea, ‘the king’, with the article, marks David as the king, the one whose name organizes the whole list (see verse 17). Ek tēs tou Ouriou is literally ‘by the [one] of Uriah’: the feminine article stands alone and the noun ‘wife’ is understood, as the BSB supplies. Matthew never gives her name, Bathsheba, and the omission is pointed. It keeps Uriah in the verse, the Hittite soldier whose loyalty to David was greater than David's to him (2 Samuel 11:11).",
+      "words": [
+        "G2421",
+        "G1138",
+        "G0935",
+        "G4672G",
+        "G3774"
+      ],
+      "history": "David's reign is usually dated to about 1010 to 970 BC. Outside the Bible, the Tel Dan stele, an Aramaic victory inscription of the ninth century BC found in northern Israel in 1993 and 1994, refers to the ‘house of David’, the earliest known mention of David's dynasty. The prophet Nathan's rebuke of David for taking Uriah's wife and killing him with the sword of the Ammonites (2 Samuel 12:7-9) is the story Matthew's four words recall; the heading of Psalm 51 ties that psalm of repentance to the same event.",
+      "theology": [
+        {
+          "id": "sin",
+          "note": "The genealogy names the king's glory and his crime in one verse. The line through which the Messiah comes runs straight through adultery and murder, and Matthew does not tidy it; the Savior of verse 21 comes from a family that needed saving."
+        },
+        {
+          "id": "messiah",
+          "note": "David is the pattern of the Messiah, the shepherd-king chosen by God, and the only title in the list is his. Yet the same verse shows why Israel needed a son of David better than David, which is the claim the rest of the Gospel makes."
+        }
+      ],
+      "parallels": [
+        "Luke 3:31"
+      ],
+      "refs": [
+        "1 Samuel 16:12-13",
+        "2 Samuel 11:27",
+        "2 Samuel 12:7-9",
+        "Psalm 51:1-4"
+      ]
+    },
+    {
+      "v": "7-8",
+      "context": "The kings of Judah begin: Solomon, Rehoboam, under whom the kingdom split, Abijah, Asa, Jehoshaphat, Joram, and Uzziah. Matthew follows the royal list of 1 Chronicles 3:10-12 until, between Joram and Uzziah, three kings silently disappear.",
+      "grammar": "Iōram egennēsen ton Ozian, ‘Joram fathered Uzziah’, skips Ahaziah, Joash, and Amaziah, so that ‘fathered’ here means ‘was the ancestor of’ (see verse 2). Three explanations are offered. First, a copying slip: in Greek the names Ochozias (Ahaziah) and Ozias (Uzziah) look alike, and an eye could jump from one to the other in a source list. Second, design: Joram married Athaliah, daughter of Ahab and Jezebel (2 Kings 8:18, 26), and the three omitted kings were her son, grandson, and great-grandson, the generations of the house of Ahab under judgment. Third, simple arrangement to reach fourteen. Matthew calls Uzziah by the name Chronicles uses (2 Chronicles 26:1); Kings mostly calls him Azariah (2 Kings 15:1).",
+      "words": [
+        "G4672G",
+        "G4497",
+        "G0007G",
+        "G0760",
+        "G2498",
+        "G2496",
+        "G3604"
+      ],
+      "history": "Rehoboam's refusal to lighten the labor of the northern tribes split David's kingdom around 930 BC (1 Kings 12), and from then on Judah alone was ruled by David's line. Kings judges these men sharply: Abijah (called Abijam in 1 Kings 15:1-3) walked in his father's sins; Asa and Jehoshaphat were reformers (1 Kings 15:11, 22:43); Joram did evil as the house of Ahab had done, yet the LORD would not destroy Judah because he had promised David a lamp (2 Kings 8:18-19). Uzziah reigned long and prospered but was struck with leprosy for burning incense in the temple (2 Chronicles 26:16-21).",
+      "text": "The earliest manuscripts of verses 7 and 8 read Asaph, the name of the psalmist, where the Old Testament king is Asa; the BSB, like most English Bibles, translates the king's name. The spelling reflects the Greek manuscripts rather than any different history, and the chapter's text note sets out the explanations.",
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "The line survives kings who broke faith, because God had bound himself to David. Kings says so directly: the LORD spared Judah for David's sake (2 Kings 8:19). The genealogy is a record of that promise holding when its bearers did not."
+        }
+      ],
+      "refs": [
+        "1 Chronicles 3:10-12",
+        "1 Kings 12:16",
+        "2 Kings 8:18-19",
+        "2 Kings 11:1-3",
+        "2 Chronicles 26:16-21"
+      ]
+    },
+    {
+      "v": "9",
+      "context": "Uzziah, Jotham, Ahaz, Hezekiah. One name here sets up the end of the chapter: Ahaz is the king to whom Isaiah gave the sign of the young woman and Immanuel (Isaiah 7:10-14), the text Matthew will quote in verse 23. The unbelieving king and the prophecy spoken to him stand in the same chapter.",
+      "history": "Isaiah saw his vision of the LORD enthroned ‘in the year that King Uzziah died’ (Isaiah 6:1), around 740 BC. Ahaz, facing an attack from Aram and the northern kingdom of Israel around 734 BC, refused Isaiah's offer of a sign and bought Assyria's help instead (2 Kings 16:5-9). Hezekiah, his son, withstood the Assyrian king Sennacherib in 701 BC; Sennacherib's own annals, preserved on clay prisms such as the Taylor Prism in the British Museum, boast that he shut Hezekiah up in Jerusalem like a bird in a cage, but do not claim the city's capture. Justin's Jewish interlocutor Trypho held that Hezekiah was the child of Isaiah 7:14 (Dialogue with Trypho 43, 67). Rashi rejected that view on chronological grounds, reckoning from the ages given in Kings that Hezekiah was born before his father became king.",
+      "theology": [
+        {
+          "id": "prophecy",
+          "note": "By naming Ahaz in the line, Matthew keeps the reader aware of where Isaiah's sign was first spoken. The fulfillment in verse 23 comes to a descendant of the very king who refused to ask for a sign."
+        }
+      ],
+      "refs": [
+        "Isaiah 6:1",
+        "Isaiah 7:10-14",
+        "2 Kings 16:1-9",
+        "2 Kings 18:13",
+        "2 Kings 18:5"
+      ]
+    },
+    {
+      "v": "10",
+      "context": "Hezekiah, Manasseh, Amon, Josiah: the best and the worst of Judah's kings stand side by side. Manasseh's long reign was remembered as the cause of the exile; his grandson Josiah as the most faithful king of all.",
+      "grammar": "The Greek editions print Amōs (Amos) for the king Amon, the reading of the earliest manuscripts (Sinaiticus, Vaticanus, and others), where later manuscripts and the King James Version read Amōn. The BSB translates the king's name. As with Asaph in verses 7 and 8, the spelling may be an early slip or may reflect the Greek Old Testament Matthew used; the chapter's text note sets out the options.",
+      "words": [
+        "G1478",
+        "G3128H",
+        "G0301H",
+        "G2502"
+      ],
+      "history": "Manasseh reigned fifty-five years (2 Kings 21:1), the longest reign in Judah, and filled Jerusalem with innocent blood (2 Kings 21:16); Kings names his sins as the reason Judah was removed (2 Kings 24:3-4). Chronicles adds that in captivity he humbled himself and God restored him (2 Chronicles 33:12-13), and the later Prayer of Manasseh gives words to that repentance. Josiah carried out his reform after the book of the law was found in the temple in 622 BC (2 Kings 22 to 23) and was killed by Pharaoh Neco at Megiddo in 609 BC (2 Kings 23:29).",
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "Manasseh, the king blamed for the exile, is also the king Chronicles presents as the great penitent. His place in the Messiah's line holds together two truths the Gospel will press: sin has consequences for a whole people, and no one is beyond God's hearing when he turns."
+        }
+      ],
+      "refs": [
+        "2 Kings 21:1-16",
+        "2 Chronicles 33:12-13",
+        "2 Kings 23:25",
+        "2 Kings 24:3-4"
+      ]
+    },
+    {
+      "v": "11",
+      "context": "The second section ends in catastrophe: Josiah fathered ‘Jeconiah and his brothers at the time of the exile to Babylon’. The phrase marks the moment David's throne was lost, and the next verse begins the list again from that loss.",
+      "grammar": "Jeconiah was Josiah's grandson, not his son; his father Jehoiakim is missing. Jerome suggested that the Jeconiah of verse 11 stands for Jehoiakim, and the Jeconiah of verse 12 for his son, since the two names were easily confused in Greek. The phrase ‘and his brothers’ fits Jehoiakim better as well, for Josiah's sons Jehoahaz, Jehoiakim, and Zedekiah all reigned, while Jeconiah's brothers are unknown. Epi tēs metoikesias Babylōnos uses epi with the genitive in its sense ‘at the time of’. Metoikesia means removal to another dwelling, a deportation, and it appears only in this chapter in the New Testament.",
+      "words": [
+        "G2502",
+        "G2423",
+        "G0080",
+        "G3350",
+        "G0897"
+      ],
+      "history": "The Babylonian Chronicle (the tablet known as ABC 5, in the British Museum) records that in his seventh year Nebuchadnezzar besieged the city of Judah, took it on the second day of the month Adar, in March 597 BC, seized its king, and appointed a king of his own choice. The captured king was Jeconiah (Jehoiachin), who had reigned three months (2 Kings 24:8-17); the appointee was his uncle Zedekiah, whose rebellion led to the city's destruction in 587 or 586 BC.",
+      "text": "A number of later Greek manuscripts (among them Codex Koridethi and family 1) and the Harklean Syriac add ‘Josiah fathered Jehoiakim, and Jehoiakim fathered Jeconiah’, restoring the missing king. The addition would give fifteen names in the second section, spoiling Matthew's fourteen, and editors agree it is a later correction from the Old Testament.",
+      "theology": [
+        {
+          "id": "exile",
+          "note": "Matthew makes the exile one of the three hinges of Israel's history, equal in weight to Abraham and David. The deportation was the judgment the prophets had warned of, and by counting from it Matthew implies that Israel's exile, in the deepest sense, lasted until the Christ."
+        }
+      ],
+      "refs": [
+        "2 Kings 24:8-17",
+        "1 Chronicles 3:15-16",
+        "Jeremiah 22:24-26",
+        "2 Kings 25:27-30"
+      ]
+    },
+    {
+      "v": "12",
+      "context": "After the exile the line continues through the captive king. Jeconiah fathered Shealtiel, and Shealtiel Zerubbabel, the governor who led the rebuilding of the temple. The royal family survived the loss of the throne.",
+      "grammar": "Meta tēn metoikesian, ‘after the deportation’, opens the third section with the same noun that closed the second, so the exile is the hinge on which the list turns. The name Zorobabel (Zerubbabel) is usually explained from Akkadian as ‘seed of Babylon’, a name given to a child born in exile. Salathiēl is the Greek form of Shealtiel, ‘I asked of God’. Matthew follows 1 Chronicles 3:17 and Haggai 1:1 in making Zerubbabel Shealtiel's son; 1 Chronicles 3:19 makes him the son of Shealtiel's brother Pedaiah, a difference often explained by levirate marriage or adoption.",
+      "words": [
+        "G3350",
+        "G2423",
+        "G4528H",
+        "G2216H"
+      ],
+      "history": "Jeconiah was not left without sons: clay ration tablets from Nebuchadnezzar's Babylon, published by Ernst Weidner in 1939, list oil for Ya'ukinu, king of Judah, and for his five sons, and 1 Chronicles 3:17-18 names seven. Kings ends with his release from prison by Evil-merodach around 561 BC and a seat at the king of Babylon's table (2 Kings 25:27-30), a small sign that David's line had not been snuffed out. Zerubbabel, governor of Judah under Persia, laid the foundation of the second temple around 520 BC (Ezra 3:8, Haggai 1:1).",
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "Jeremiah had pronounced Jeconiah's line cut off from the throne, and Haggai had called his grandson God's signet ring. Matthew runs the Messiah's line through both words: the judgment was real, since no descendant of Jeconiah ever reigned again, and the promise was real, since the true king comes from this line by God's own act rather than by a claim to the crown."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Jeremiah 22:30",
+          "note": "Jeremiah's oracle against Coniah (Jeconiah) says, \"Enroll this man as childless, a man who will not prosper in his lifetime. None of his descendants will prosper to sit on the throne of David or to rule again in Judah.\" The Hebrew ariri, ‘childless’, is qualified by the rest of the verse: he did have children, but none would reign. A similar sentence was spoken on his father Jehoiakim (Jeremiah 36:30). Jewish writers have pressed this verse against Jesus' Davidic claim, and Christian answers differ: some note that Haggai 2:23 reverses the signet-ring image of Jeremiah 22:24 for Zerubbabel; some cite the rabbinic tradition that Jeconiah repented and the decree was lifted; some argue that, since Joseph did not beget Jesus (verse 16), Jesus inherits the legal right without the curse of blood descent. Matthew himself makes no comment, and he may have seen no conflict: Jeconiah's descendants did not prosper on the throne, and the one who finally reigns in this line does so in a way no earthly succession could provide."
+        }
+      ],
+      "parallels": [
+        "Luke 3:27"
+      ],
+      "refs": [
+        "1 Chronicles 3:17-19",
+        "Haggai 2:23",
+        "Jeremiah 22:24",
+        "Ezra 3:8"
+      ]
+    },
+    {
+      "v": "13-15",
+      "context": "Nine names, from Abiud to Jacob, appear nowhere else in Scripture. After the brilliance and ruin of the kings, the line goes quiet through centuries of Persian, Greek, Hasmonean, and Roman rule. The family of David waits in obscurity.",
+      "history": "None of these men is among Zerubbabel's sons in 1 Chronicles 3:19-20 (Meshullam, Hananiah, and others), and none can be traced in any other source. They are ordinary Jewish names of the period, several of them theophoric (containing a name of God): Eliakim, Eliud, and Eleazar all begin with El, God, and Zadok was also the name of the high priestly family. Nine or ten generations for roughly five hundred years between Zerubbabel and Jesus is too few, so the list is compressed here as it was between Salmon and David. Where Matthew found the names is unknown. Julius Africanus reported that relatives of Jesus kept family records (Eusebius, Church History 1.7.14), and Hegesippus that descendants of Jude were questioned under Domitian as members of David's family (Church History 3.20.1-2), which shows that the family's Davidic descent was remembered and could be dangerous.",
+      "theology": [
+        {
+          "id": "hope",
+          "note": "The longest stretch of the list is also the dullest, men known to God and no one else. Matthew includes it whole, and the effect is to make waiting part of the story: the promise was being kept through the centuries in which nothing seemed to happen."
+        }
+      ],
+      "parallels": [
+        "Luke 3:23-27"
+      ],
+      "refs": [
+        "1 Chronicles 3:19-24",
+        "Habakkuk 2:3",
+        "Luke 2:25",
+        "Galatians 4:4"
+      ]
+    },
+    {
+      "v": "16",
+      "context": "The pattern of the whole list breaks. Jacob fathered Joseph, but Joseph is not said to father Jesus. He is ‘the husband of Mary, of whom was born Jesus’. The sentence raises the question that verses 18 to 25 answer: how is Jesus Joseph's heir if Joseph is not his father?",
+      "grammar": "Three changes happen at once. The relative pronoun ex hēs, ‘of whom’, is feminine singular, so it points to Mary, not to Joseph or to both. The verb changes from the active egennēsen, used of every father, to the passive egennēthē, ‘was born’ or ‘was begotten’; many interpreters read it as a divine passive, with God as the unnamed agent, which the next paragraph confirms. And the list's last name receives an epithet: ho legomenos Christos, ‘who is called Christ’. The same phrase returns on Pilate's lips in 27:17 and 27:22 (\"Jesus who is called Christ\"), so that the title Matthew gives at the cradle is repeated, half-mockingly, at the trial.",
+      "words": [
+        "G2384G",
+        "G2501G",
+        "G0435H",
+        "G3137G",
+        "G3739",
+        "G1080",
+        "G3004H",
+        "G5547"
+      ],
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "The verse places Jesus in the royal line through Joseph while declining to call Joseph his father. It is the genealogy's own way of saying what the church later confessed: Jesus is truly a son of Israel and of David, and his origin is not simply from them."
+        }
+      ],
+      "parallels": [
+        "Luke 3:23"
+      ],
+      "refs": [
+        "Matthew 27:17",
+        "Matthew 13:55",
+        "Luke 3:23",
+        "Galatians 4:4"
+      ]
+    },
+    {
+      "v": "17",
+      "context": "Matthew steps back from the list and tells the reader how to read it: three sections of fourteen generations, marked by Abraham, David, the exile, and the Christ. The summary turns a family record into an interpretation of history.",
+      "grammar": "Pasai oun hai geneai, ‘so all the generations’, uses oun, ‘therefore’ or ‘so then’, to draw a conclusion from the list just given. Geneai here means links in a chain of descent, not a fixed number of years. Dekatessares, ‘fourteen’, is said three times. Hebrew letters also served as numbers, and the consonants of David's name, D-W-D (dalet 4, waw 6, dalet 4), add up to fourteen; David is the fourteenth name in the list and the only one called king. The device, known as gematria, is well attested in later Jewish writing, and Revelation 13:18 uses the same kind of number riddle. Whether Matthew intended it cannot be proved, but the pattern fits a genealogy whose whole point is the son of David.",
+      "words": [
+        "G1074",
+        "G1180",
+        "G3350",
+        "G1138",
+        "G5547"
+      ],
+      "history": "Dividing history into set periods was a habit of Jewish writers in this age. Daniel 9:24-27 speaks of seventy weeks of years before the end, and the Apocalypse of Weeks in 1 Enoch (93:1-10 and 91:11-17) divides history from Adam to the judgment into ten weeks, with Israel's great turning points falling at the ends of weeks. Matthew's three fourteens belong to that way of thinking: history has a shape, and God keeps its time.",
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The symmetry is not found in the Old Testament lists, where the numbers are uneven; it is a claim Matthew makes about them. History from Abraham to Jesus, with its promises, disasters, and silences, is not a random sequence but a plan moving to its appointed goal."
+        },
+        {
+          "id": "prophecy",
+          "note": "The three hinges are promise (Abraham), kingdom (David), and loss (the exile). The Christ arrives as the answer to the third, the one who ends the exile and restores the kingdom, so that the genealogy itself works as a kind of prophecy fulfilled."
+        }
+      ],
+      "refs": [
+        "Daniel 9:24-25",
+        "Galatians 4:4",
+        "Ephesians 1:10",
+        "Revelation 13:18"
+      ]
+    },
+    {
+      "v": "18",
+      "context": "Matthew now explains verse 16. Mary was betrothed to Joseph, and before they began to live together she was found to be pregnant. The narrator tells the reader at once what Joseph does not yet know: the child is ‘through the Holy Spirit’. The drama of the next verses is Joseph's, not the reader's.",
+      "grammar": "Tou de Iēsou Christou hē genesis, ‘the origin of Jesus Christ’, repeats the word of verse 1, genesis, tying the story to the genealogy's heading. Mnēsteutheisēs tēs mētros autou, ‘his mother having been betrothed’, is a genitive absolute, setting the circumstance. Prin ē synelthein autous, ‘before they came together’, can mean before they lived in one house or before they had sexual relations; in this context both are true. Heurethē, ‘she was found’, is a plain passive: the pregnancy became evident. Ek pneumatos hagiou, ‘from the Holy Spirit’, has no article in Greek, which stresses the Spirit as the creative source. The Greek word for spirit is neuter (the Hebrew ruach is usually feminine), and nothing in the phrase suggests a divine partner; the conception is an act of God's creative power, like the Spirit over the waters in Genesis 1:2.",
+      "words": [
+        "G1078",
+        "G3423",
+        "G3384",
+        "G4905",
+        "G2147",
+        "G1064",
+        "G4151G",
+        "G0040G"
+      ],
+      "text": "Where modern editions read genesis, ‘origin’, the later Byzantine manuscripts read gennēsis, ‘birth’, a more ordinary word that loses the echo of verse 1 (the King James Version's ‘the birth of Jesus Christ’ rests on it, though the BSB also says birth). A few witnesses read only ‘of Christ’ or ‘of Christ Jesus’.",
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "The Spirit is named as the source of the child's life before the child is named at all. Matthew's first mention of the Holy Spirit is at the beginning of Jesus' human existence, and the Gospel ends with the name of the Father, the Son, and the Holy Spirit (28:19)."
+        },
+        {
+          "id": "incarnation",
+          "note": "The verse states the conception without a human father as fact and without explanation. The church's confession that the Son was conceived by the Holy Spirit and born of the Virgin Mary rests on this verse and Luke 1:35."
+        }
+      ],
+      "parallels": [
+        "Luke 1:26-35"
+      ],
+      "refs": [
+        "Luke 1:34-35",
+        "Genesis 1:2",
+        "Matthew 1:20",
+        "Galatians 4:4"
+      ]
+    },
+    {
+      "v": "19",
+      "context": "Joseph faces a decision without the reader's knowledge. He is called righteous, he does not want to shame Mary, and he decides to end the betrothal quietly. The verse is short, but it is the moral center of the story: what does a righteous man do when the law and mercy seem to pull apart.",
+      "grammar": "Ho anēr autēs, ‘her husband’, treats the betrothed Joseph as legally married. Two participles give his reasons: dikaios ōn, ‘being righteous’, and mē thelōn autēn deigmatisai, ‘not wanting to expose her’. How they relate is the debate. On one reading the kai is concessive: because he was righteous (faithful to the law) he would divorce her, yet because he was unwilling to shame her he would do it quietly. On another, righteousness itself includes mercy, and both participles explain the quiet divorce. A third, argued in the 1950s by the Jesuit scholar Xavier Léon-Dufour, holds that Joseph already knew the child was from the Spirit and meant to withdraw in reverence, unworthy to claim her; on that reading the angel's ‘do not be afraid’ in verse 20 answers awe rather than suspicion. Apolysai is the ordinary verb for divorce (5:31-32, 19:3-9), and lathra, ‘secretly’, points to a private certificate before the minimum of witnesses rather than a public charge.",
+      "words": [
+        "G0435H",
+        "G1342",
+        "G2309",
+        "G1165",
+        "G1014",
+        "G2977",
+        "G0630H"
+      ],
+      "text": "The earliest manuscripts read deigmatisai, ‘to expose’; the Byzantine manuscripts read the compound paradeigmatisai, ‘to make a public example of’, which the King James Version translates. The meaning is nearly the same, but the compound sounds harsher, closer to public punishment.",
+      "theology": [
+        {
+          "id": "law",
+          "note": "Joseph's righteousness keeps the law without cruelty. Matthew later has Jesus rebuke those who keep the law's small details and neglect justice, mercy, and faithfulness (23:23) and twice quote Hosea's word that God desires mercy (9:13, 12:7). The first righteous man in the Gospel already lives that way."
+        }
+      ],
+      "refs": [
+        "Deuteronomy 24:1",
+        "Deuteronomy 22:23-24",
+        "Matthew 23:23",
+        "Matthew 5:31-32",
+        "Hosea 6:6"
+      ]
+    },
+    {
+      "v": "20",
+      "context": "While Joseph is still turning the matter over, God intervenes. An angel addresses him in a dream as ‘son of David’, tells him not to fear taking Mary home, and gives the reason the reader already knows. Joseph's quiet plan is overruled by revelation.",
+      "grammar": "Tauta de autou enthymēthentos, ‘as he considered these things’, is a genitive absolute, and idou, ‘behold’, marks the sudden interruption. The phrase kat' onar, ‘in a dream’, occurs six times in the New Testament, all in Matthew (1:20; 2:12, 13, 19, 22; 27:19). The address Iōsēph huios Dauid is the key to the scene: Joseph is the only person besides Jesus whom Matthew calls son of David, and it is through him that the title passes to Jesus. Mē phobēthēs is an aorist subjunctive prohibition, ‘do not be afraid’. Paralabein, ‘to take to yourself’, is the verb for completing the marriage by bringing the bride home. To en autē gennēthen, ‘what has been conceived in her’, is a neuter participle, since the child's sex has not yet been announced.",
+      "words": [
+        "G1760",
+        "G0032G",
+        "G3677",
+        "G1138",
+        "G5399",
+        "G3880",
+        "G1080",
+        "G4151G"
+      ],
+      "history": "The angel of the Lord (angelos kyriou) is the messenger who appears to Hagar (Genesis 16:7), to Gideon (Judges 6:11-12), and to Samson's parents (Judges 13:3). In Matthew the figure appears at the beginning and the end of the story, to Joseph here and at the empty tomb (28:2). Dreams as a channel of revelation recall the patriarch Joseph son of Jacob (Genesis 37 and 40 to 41), and this Joseph, also son of a Jacob (verse 16), is likewise guided by dreams and will go down to Egypt.",
+      "theology": [
+        {
+          "id": "angels",
+          "note": "The angel's work is to speak God's word at the decisive moment and then disappear. Angels in Matthew serve the story of Jesus at its beginning and its end; they announce and do not replace the obedience of the people they address."
+        },
+        {
+          "id": "spirit",
+          "note": "The angel repeats the narrator's words: the child is ‘from the Holy Spirit’. The double statement (verses 18 and 20) is Matthew's emphasis that the conception is God's creative work."
+        }
+      ],
+      "parallels": [
+        "Luke 1:30-31"
+      ],
+      "refs": [
+        "Genesis 16:7",
+        "Judges 13:3",
+        "Genesis 37:5",
+        "Matthew 28:2",
+        "Luke 1:35"
+      ]
+    },
+    {
+      "v": "21",
+      "context": "The angel gives the child's name and explains it. Jesus means ‘the LORD saves’, and the angel defines the salvation: he will save his people from their sins. The Messiah's first announced task is not a political rescue but rescue from sin.",
+      "grammar": "Kaleseis to onoma autou, ‘you will call his name’, is a future used as a command, the Semitic form of instruction (the BSB's \"you are to give Him the name\"); by naming the child, Joseph acknowledges him as his own son. Autos gar sōsei uses the emphatic pronoun autos, ‘he himself’, and gar, ‘for’, which gives the reason for the name. The explanation works only in Hebrew or Aramaic, where the name Yeshua sounds like the verb yasha, ‘save’; in Greek, Iēsous has no connection with sōzō. That suggests the saying took shape in a Semitic setting. Ton laon autou, ‘his people’, in Matthew first means Israel (2:6, 4:23), and apo tōn hamartiōn autōn, ‘from their sins’, names what they need saving from.",
+      "words": [
+        "G5088",
+        "G2564G",
+        "G3686",
+        "G2424G",
+        "G4982",
+        "G2992",
+        "G0266"
+      ],
+      "history": "Jesus was a common name, the Greek form of Joshua (Yehoshua, later Yeshua); Hebrews 4:8 uses the same Greek name for Joshua son of Nun. Jewish writers before Matthew already drew out its meaning: Philo explains Joshua's name as ‘salvation of the Lord’ (On the Change of Names 121), and Ben Sira says Joshua was, in keeping with his name, a great savior of God's chosen (Sirach 46:1).",
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "The verse defines salvation by its object before the Gospel says anything else about it. The people Jesus saves are his own people, and what he saves them from is their sins. The rest of Matthew shows how: he forgives sins (9:2-6) and gives his life as a ransom and his blood for the forgiveness of sins (20:28, 26:28)."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Psalm 130:8",
+          "note": "The angel's words echo the last line of Psalm 130, \"And He will redeem Israel from all iniquity.\" In the Septuagint (Psalm 129:8) the line begins kai autos lytrōsetai, ‘and he himself will redeem’, with the same emphatic autos Matthew uses, and ends with the people's lawless deeds. In the psalm it is the LORD who redeems Israel from its sins; in Matthew it is the child named Jesus. W. D. Davies and Dale Allison are among those who hear the allusion, which quietly assigns to Jesus a work the psalm gives to God."
+        }
+      ],
+      "parallels": [
+        "Luke 1:31",
+        "Luke 2:21"
+      ],
+      "refs": [
+        "Psalm 130:8",
+        "Matthew 9:6",
+        "Matthew 26:28",
+        "Acts 4:12",
+        "Hebrews 4:8"
+      ]
+    },
+    {
+      "v": "22",
+      "context": "The first of Matthew's fulfillment formulas. The narrator steps outside the story to tell the reader what it means: these events complete something the Lord said through a prophet. The formula, with variations, recurs about ten times in the Gospel.",
+      "grammar": "Touto de holon gegonen, ‘all this has happened’, uses the perfect tense, which presents the event as completed with lasting effect; the same phrase returns at the arrest, when the disciples flee (26:56). Hina plērōthē, ‘in order that it might be fulfilled’, is a purpose clause: Matthew sees God's intention behind the events. To rhēthen hypo kyriou dia tou prophētou, ‘what was spoken by the Lord through the prophet’, distinguishes two agents with two prepositions: hypo for the Lord who speaks, dia for the prophet through whom he speaks. The formula expresses a view of Scripture in miniature. Commentators disagree on whether the angel is still speaking or the narrator has taken over; since every other formula in Matthew is the narrator's, most take this one the same way.",
+      "words": [
+        "G1096",
+        "G2443",
+        "G4137",
+        "G2046",
+        "G5259G",
+        "G2962G",
+        "G4396"
+      ],
+      "theology": [
+        {
+          "id": "prophecy",
+          "note": "The formula claims that God spoke through Isaiah and that what he said reaches its fullness here. Fulfillment in Matthew is wider than prediction come true; it includes patterns and hopes filled full (see 2:15). This verse establishes the category."
+        },
+        {
+          "id": "revelation",
+          "note": "The phrase ‘by the Lord through the prophet’ holds divine and human authorship together, a way of speaking about Scripture the New Testament shares (2 Peter 1:21)."
+        }
+      ],
+      "refs": [
+        "Matthew 2:15",
+        "Matthew 21:4",
+        "Matthew 26:56",
+        "2 Peter 1:21"
+      ]
+    },
+    {
+      "v": "23",
+      "context": "The quotation from Isaiah 7:14, with Matthew's translation of the name. The verse gives the child his second name: Jesus names what he does, Immanuel names who he is. It opens a frame that closes in the Gospel's last sentence, ‘I am with you always’ (28:20).",
+      "grammar": "Hē parthenos, ‘the virgin’, has the article, as in the Hebrew (ha'almah) and the Septuagint: a particular woman. En gastri hexei, ‘will have in the womb’, is the idiom already used of Mary in verse 18, so Matthew's narrative and quotation match word for word. Kalesousin, ‘they will call’, is third person plural, differing from both the Septuagint and the Hebrew (see the note on Isaiah 7:14); it makes the name the confession of a people rather than the act of one parent, and Jesus is never called Immanuel in daily life. Ho estin methermēneuomenon, ‘which is translated’, is Matthew's usual way of glossing a Semitic phrase for Greek readers (27:33, 27:46). Meth' hēmōn ho theos, ‘with us God’, keeps the Hebrew word order.",
+      "words": [
+        "G2400",
+        "G3933",
+        "G1064",
+        "G5088",
+        "G2564G",
+        "G1694",
+        "G3177",
+        "G2316"
+      ],
+      "text": "Isaiah's Hebrew says the young woman will call (qarat, third person feminine) the child's name; the main Septuagint manuscripts read kaleseis, ‘you will call’, addressed to Ahaz or the house of David; the Great Isaiah Scroll from Qumran (1QIsaa) has a masculine form, ‘he will call’. Matthew's ‘they will call’ is found in no earlier text. Most scholars think Matthew adapted the verb himself; the variety shows that the verb was already read in more than one way.",
+      "ot": [
+        {
+          "ref": "Isaiah 7:14",
+          "note": "In Isaiah 7 King Ahaz, threatened by Aram and the northern kingdom around 734 BC, refuses the sign the LORD offers, and Isaiah replies to the ‘house of David’ with a sign anyway (the ‘you’ of 7:13-14 is plural). The Hebrew reads hinneh ha'almah harah veyoledet ben: harah can be an adjective, ‘is pregnant’, or a future, ‘will conceive’. Almah means a young woman of marriageable age; in its other certain uses (Genesis 24:43, Exodus 2:8) it describes unmarried girls, but the word itself does not state virginity, and Hebrew has bethulah, though Gordon Wenham (Vetus Testamentum, 1972) argued that bethulah too means a girl of marriageable age rather than a virgin as such. The Septuagint, translated by Jews before Christ, chose parthenos, and Matthew follows it. Jewish interpreters from Trypho in Justin's Dialogue (43, 67) onward have objected fairly on three grounds: the Hebrew does not require a virgin; Isaiah 7:16 ties the sign to Ahaz's own time, since the two hostile kings will be gone before the boy is grown; and the passage is about a sign to a king, not a Messiah. Rashi took the mother to be Isaiah's wife, whose son appears in Isaiah 8:3. Christian readers answer in two ways. Some hold that the sign had a first fulfillment in Isaiah's day and a fuller one in Jesus, as Matthew reads Hosea 11:1 in the next chapter. Others, such as Alec Motyer, argue that the Immanuel child of Isaiah 7 is the royal child of 9:6-7, called ‘Mighty God’, who was never born in Ahaz's day. Either way, Matthew reads Isaiah in light of an event he already believed had happened; he does not derive the event from the verse."
+        },
+        {
+          "ref": "Isaiah 8:8-10",
+          "note": "The name Immanuel returns twice more in Isaiah: the Assyrian flood will fill ‘your entire land, O Immanuel’ (8:8), and the nations' plans will fail, \"For God is with us\" (8:10), where the Hebrew is simply immanu el. In Isaiah the name is a promise that God stands with his people through invasion. Matthew's gloss, ‘God with us’, takes the phrase at its fullest: not only God on our side, but God present among us in this child."
+        }
+      ],
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "Matthew translates the name so that no reader will miss it: God with us. Set beside the conception by the Spirit, the name is the Gospel's first statement that in Jesus God himself has come to be present with his people, and it frames the book with the promise of 28:20."
+        },
+        {
+          "id": "prophecy",
+          "note": "Matthew's use of Isaiah 7:14 shows fulfillment as the filling full of a text within its larger passage (Isaiah 7 to 11), where the sign to David's house leads to the promise of a Davidic child with divine names. The verse invites readers to read Isaiah whole."
+        }
+      ],
+      "refs": [
+        "Isaiah 7:14",
+        "Isaiah 9:6-7",
+        "Matthew 18:20",
+        "Matthew 28:20",
+        "John 1:14"
+      ]
+    },
+    {
+      "v": "24",
+      "context": "Joseph wakes and does exactly what he was told. He takes Mary home as his wife. He never speaks a word in the Gospel; his obedience is his speech.",
+      "grammar": "Egertheis, ‘having been raised’ or ‘having got up’, is the aorist passive participle of egeirō, the verb Matthew also uses for resurrection; here it means simply rising from sleep, and the same participle begins each of Joseph's obedient acts (2:14, 2:21). Epoiēsen hōs prosetaxen autō ho angelos, ‘he did as the angel commanded him’, is an obedience formula of the kind the Old Testament uses of Noah and Moses (Genesis 6:22, Exodus 40:16); Matthew will use it again of the disciples (21:6, 26:19). Parelaben, ‘he took’, answers the angel's paralabein in verse 20 word for word.",
+      "words": [
+        "G1453",
+        "G5258",
+        "G4160G",
+        "G4367",
+        "G0032G",
+        "G3880",
+        "G1135H"
+      ],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Joseph believes the message and acts on it at once, at the cost of whatever the neighbors would think. Matthew's first picture of faith is not a confession but an obedient deed, which fits the Gospel's insistence on doing the Father's will (7:21)."
+        }
+      ],
+      "refs": [
+        "Genesis 6:22",
+        "Matthew 2:14",
+        "Matthew 21:6",
+        "Matthew 7:21"
+      ]
+    },
+    {
+      "v": "25",
+      "context": "The chapter ends with two facts. Joseph had no sexual relations with Mary until the child was born, which confirms that the child is not his; and Joseph named him Jesus, which makes him legally Joseph's son and a son of David. The first fact guards the conception; the second secures the inheritance.",
+      "grammar": "Ouk eginōsken autēn, ‘he was not knowing her’, uses ginōskō in the biblical sense of sexual union (Genesis 4:1), and the imperfect tense describes a continuing abstention throughout the pregnancy. Heōs hou, ‘until’, states what did not happen up to a point; the construction does not by itself say what happened afterward. It sometimes implies a change (24:39) and sometimes does not (28:20, where Jesus is with his disciples ‘to the end of the age’; the Septuagint of 2 Samuel 6:23, where Michal had no child until the day of her death), so the grammar cannot settle whether Mary later bore other children. Protestants usually read the verse, with 13:55, as implying normal marriage later; Roman Catholic and Orthodox Christians hold Mary's perpetual virginity and read the verse as concerned only with the time before the birth. Ekalesen, ‘he called’, fulfills the command of verse 21 exactly.",
+      "words": [
+        "G1097",
+        "G2193",
+        "G5088",
+        "G5207",
+        "G2564G",
+        "G2424G"
+      ],
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "The verse keeps both halves of Matthew's claim together: Jesus was born of a woman who had not known a man, and he was received into a human family and given a name by a human father. The Son of God entered a real household."
+        },
+        {
+          "id": "family",
+          "note": "Joseph becomes Jesus' father by adoption, the act of naming. Matthew shows the royal inheritance passing not by blood but by a man's willing acceptance of a child who was not his by nature, which gives dignity to every adoptive parent."
+        }
+      ],
+      "parallels": [
+        "Luke 2:7",
+        "Luke 2:21"
+      ],
+      "refs": [
+        "Genesis 4:1",
+        "Matthew 1:21",
+        "Matthew 13:55",
+        "Luke 2:21"
+      ]
+    }
+  ]
+}

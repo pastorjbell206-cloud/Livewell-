@@ -1,0 +1,569 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "Matthew jumps from the child settled in Nazareth to the adult ministry, and the first figure on stage is John. He arrives in the wilderness of Judea as a herald. The same verb will announce Jesus' arrival in verse 13, so the chapter is built on two entrances.",
+      "grammar": "En de tais hēmerais ekeinais, ‘in those days’, is a loose biblical time marker, not a date; the Septuagint uses a similar phrase when it moves from the infant Moses to the grown man (Exodus 2:11), a transition much like Matthew's. Paraginetai, ‘arrives’ or ‘appears’, is a historic present, a vivid present tense in a past narrative, and verse 13 uses the same form of Jesus. Ho baptistēs, ‘the Baptist’, is a title (Mark prefers the participle ho baptizōn, ‘the one who baptizes’). Kēryssōn, ‘proclaiming as a herald’, is the verb for a public announcement made on someone else's authority.",
+      "words": [
+        "G2250",
+        "G3854",
+        "G2491G",
+        "G0910",
+        "G2784",
+        "G2048",
+        "G2449"
+      ],
+      "history": "Josephus, writing independently of the Gospels, also calls him ‘John, surnamed the Baptist’ (Antiquities 18.116), which shows the title was his public name. The wilderness of Judea is the dry country falling east from the Judean hills to the Jordan valley and the Dead Sea. The Fourth Gospel places John's baptizing at ‘Bethany beyond the Jordan’ (John 1:28), on the east bank, in Perea, the territory of Herod Antipas, which helps explain why it was Antipas who later arrested him (14:3).",
+      "theology": [
+        {
+          "id": "prophecy",
+          "note": "John's appearance ends the long absence of prophets that Jewish tradition felt after Malachi. Matthew introduces him not as a new beginning but as the voice the prophets had promised, which verse 3 confirms."
+        }
+      ],
+      "parallels": [
+        "Mark 1:4",
+        "Luke 3:1-3"
+      ],
+      "refs": [
+        "John 1:28",
+        "Luke 1:80",
+        "Matthew 11:7-11",
+        "Matthew 14:3"
+      ]
+    },
+    {
+      "v": "2",
+      "context": "John's message in one line: repent, because the kingdom of heaven has come near. Jesus will preach exactly the same words in 4:17 and send his disciples with the second half of them (10:7). In Matthew the forerunner's message becomes the Messiah's.",
+      "grammar": "Metanoeite is a present imperative, a call to a continuing turned life, not only a single act. Ēngiken is the perfect of engizō, ‘to come near’, and its force is debated. C. H. Dodd (The Parables of the Kingdom, 1935) argued that it means ‘has arrived’, comparing ephthasen, ‘has come upon you’, in 12:28; Werner Georg Kümmel (Promise and Fulfilment) and most since have answered that engizō means ‘draw near’, so the kingdom is at hand, pressing on the present without yet being complete. Matthew's usage elsewhere (21:1, 26:45-46) supports nearness. Hē basileia tōn ouranōn, ‘the kingdom of the heavens’, has a plural ‘heavens’, reflecting the Hebrew shamayim, always plural, and ‘heaven’ stands reverently for God.",
+      "words": [
+        "G3340",
+        "G1448",
+        "G0932",
+        "G3772"
+      ],
+      "history": "The phrase kingdom of heaven was known in Jewish prayer. The Mishnah (Berakhot 2:2) explains that the Shema is recited first so that a person may take upon himself the yoke of the kingdom of heaven (malkhut shamayim) before the yoke of the commandments. God's kingship was confessed daily; what John announced was that God was about to act as king in a new and decisive way.",
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "The call to repent comes grounded in a fact: ‘for’ (gar) the kingdom has come near. Repentance in Matthew is the response to what God is doing, not a condition for getting God to act, and its first word in the Gospel is the same for John and for Jesus."
+        },
+        {
+          "id": "kingdom",
+          "note": "The verse introduces Matthew's central theme. God's reign is not a place above the clouds but God acting as king, and John announces it as near enough to demand a decision now."
+        }
+      ],
+      "parallels": [
+        "Mark 1:4",
+        "Mark 1:15"
+      ],
+      "refs": [
+        "Matthew 4:17",
+        "Matthew 10:7",
+        "Matthew 12:28",
+        "Daniel 2:44"
+      ]
+    },
+    {
+      "v": "3",
+      "context": "Matthew explains who John is by Isaiah's words: the voice in the wilderness calling for a road to be made ready for the Lord. The verse gives John his role, and it quietly gives the Lord of Isaiah's prophecy a new identity: the one who comes after John is Jesus.",
+      "grammar": "Houtos gar estin ho rhētheis, ‘for this is the one spoken of’, uses gar to give the reason for what verses 1 and 2 describe. It is not one of Matthew's fulfillment formulas (there is no plērōthē); John is identified with the prophecy rather than said to fulfill it. The quotation follows the Septuagint: phōnē boōntos en tē erēmō, ‘a voice of one crying in the wilderness’, then two imperatives, hetoimasate, ‘prepare’ (aorist), and poieite, ‘make’ (present). Kyriou, ‘of the Lord’, stands where the Hebrew has the divine name YHWH, and tas tribous autou, ‘his paths’, replaces Isaiah's ‘of our God’, so the pronoun can refer to Jesus.",
+      "words": [
+        "G3778",
+        "G2046",
+        "G2268",
+        "G5456G",
+        "G0994",
+        "G2048",
+        "G2090",
+        "G2962G",
+        "G5147"
+      ],
+      "ot": [
+        {
+          "ref": "Isaiah 40:3",
+          "note": "Isaiah 40 opens the prophecies of comfort to exiles in Babylon: Jerusalem's forced labor is completed and her iniquity pardoned (40:2), and a highway is to be built through the desert for God to lead his people home. In the Hebrew the voice cries, \"Prepare the way for the LORD in the wilderness\"; the Septuagint attaches ‘in the wilderness’ to the voice, and Matthew, with Mark and Luke, follows it. Matthew differs from Mark in one respect: Mark begins with a line from Malachi 3:1 and Exodus 23:20 attributed to Isaiah (Mark 1:2), while Matthew quotes Isaiah alone here and uses the Malachi text later, on Jesus' lips, in 11:10. For Matthew, whose genealogy counted from the exile (1:17), Isaiah's promise of the end of exile is exactly the right text for the man who prepares the Messiah's way."
+        }
+      ],
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "In Isaiah the way is prepared for the LORD himself, Israel's God coming to his people. Applying the verse to the forerunner of Jesus identifies Jesus' coming with God's own coming, the same claim Matthew made in the name Immanuel (1:23)."
+        }
+      ],
+      "parallels": [
+        "Mark 1:2-3",
+        "Luke 3:4-6",
+        "John 1:23"
+      ],
+      "refs": [
+        "Isaiah 40:1-5",
+        "Malachi 3:1",
+        "Matthew 11:10",
+        "Luke 1:76"
+      ]
+    },
+    {
+      "v": "4",
+      "context": "Matthew pauses on John's clothing and food. Both mark him as a man of the wilderness living on what it gives, and the leather belt is a deliberate sign: it is Elijah's. Readers who knew Malachi's promise that Elijah would come before the day of the LORD would recognize him before Jesus names him (11:14).",
+      "grammar": "Autos de ho Iōannēs, ‘now John himself’, turns attention to the man. Eichen, ‘he had’, is an imperfect of habit: this was what he always wore. Endyma apo trichōn kamēlou, ‘a garment from camel's hairs’, is cloth woven of camel hair, a coarse fabric, not a skin. Zōnēn dermatinēn peri tēn osphyn autou, ‘a leather belt around his waist’, reproduces the Septuagint of 2 Kings 1:8 almost exactly. Hē de trophē ēn autou akrides kai meli agrion, ‘his food was locusts and wild honey’, uses trophē for regular sustenance.",
+      "words": [
+        "G2491G",
+        "G2192",
+        "G1742",
+        "G2359",
+        "G2574",
+        "G2223",
+        "G1193",
+        "G3751",
+        "G5160",
+        "G0200",
+        "G3192",
+        "G0066"
+      ],
+      "history": "Locusts were among the insects the law permitted (Leviticus 11:21-22), and they are still eaten in parts of the Middle East, dried or roasted. The Elijah association had a setting too: Elijah was taken up near the Jordan, across from Jericho, and Elisha took up his cloak on its bank (2 Kings 2:6-14), the same stretch of river where tradition places John's baptizing. John's diet and dress drew comment in his own day; Jesus later reports that people said John had a demon because he came neither eating nor drinking (11:18).",
+      "theology": [
+        {
+          "id": "prophecy",
+          "note": "The verse presents John as the Elijah Malachi promised. Matthew makes it explicit twice (11:14, 17:12-13), while John in the Fourth Gospel denies being Elijah (John 1:21). Most interpreters reconcile the two by distinguishing identity from role: John is not Elijah returned in person, as some expected, but he comes ‘in the spirit and power of Elijah’ (Luke 1:17) to do Elijah's promised work."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "2 Kings 1:8",
+          "note": "When King Ahaziah's messengers describe the man who met them, the king knows him at once: \"He was a hairy man,\" \"with a leather belt around his waist.\" \"It was Elijah the Tishbite\". The Hebrew ish ba'al se'ar, literally ‘a man, lord of hair’, can mean a hairy man or a man wearing a garment of hair, and Zechariah 13:4 shows that a hairy cloak was a prophet's recognized dress. The Septuagint reads anēr dasys, ‘a shaggy man’, and zōnēn dermatinēn periezōsmenos tēn osphyn autou, ‘girded with a leather belt around his waist’. Matthew's phrase is lifted from that line, and with Malachi 4:5 (\"I will send you Elijah the prophet before the coming of the great and awesome Day of the LORD\") it identifies the forerunner."
+        }
+      ],
+      "parallels": [
+        "Mark 1:6"
+      ],
+      "refs": [
+        "2 Kings 1:8",
+        "Zechariah 13:4",
+        "Malachi 4:5",
+        "Matthew 11:14",
+        "Matthew 17:12-13"
+      ]
+    },
+    {
+      "v": "5-6",
+      "context": "The response is enormous. People stream out from Jerusalem, all Judea, and the whole Jordan region, and they are baptized by John in the river, confessing their sins. The movement is outward, from the city and its temple to the wilderness.",
+      "grammar": "Tote exeporeueto, ‘then there went out’, is an imperfect singular with three subjects, Jerusalem, all Judea, and the whole region of the Jordan: the places stand for their people, and the imperfect pictures a continuing stream. Ebaptizonto, ‘they were being baptized’, is also imperfect, and hyp' autou, ‘by him’, marks John as the one who baptized, unlike the self-immersion of Jewish purity washings. Exomologoumenoi tas hamartias autōn, ‘openly confessing their sins’, is a present middle participle; the prefix ex- gives the sense of confession spoken aloud. The confession accompanies the baptism rather than following it.",
+      "words": [
+        "G5119",
+        "G1607",
+        "G2414",
+        "G2449",
+        "G4066",
+        "G2446",
+        "G0907",
+        "G4215",
+        "G1843",
+        "G0266"
+      ],
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "Repentance here is spoken and public. People name their sins before others, which is the biblical shape of confession from Leviticus 26:40 and Psalm 32:5 to 1 John 1:9."
+        },
+        {
+          "id": "sacraments",
+          "note": "John's baptism is a single washing administered by another and joined to confession. That form, a once-for-all rite given, not self-administered, is the one Christian baptism inherited, though the New Testament distinguishes John's baptism from baptism in Jesus' name (Acts 19:3-5)."
+        }
+      ],
+      "parallels": [
+        "Mark 1:5",
+        "Luke 3:3"
+      ],
+      "refs": [
+        "Psalm 32:5",
+        "1 John 1:9",
+        "Acts 19:3-5",
+        "Matthew 21:25-26"
+      ]
+    },
+    {
+      "v": "7",
+      "context": "John sees many Pharisees and Sadducees coming and greets them with an insult: brood of vipers. The question that follows is sarcastic. Who told them to run from the coming wrath, as if a baptism could be a hiding place for people who have not changed?",
+      "grammar": "Pollous tōn Pharisaiōn kai Saddoukaiōn, ‘many of the Pharisees and Sadducees’, has one article over both names, presenting two rival parties as a single group, as Matthew does again in chapter 16. Erchomenous epi to baptisma autou, ‘coming to his baptism’, uses epi with the accusative, which can mean coming to receive it, coming to where it was happening (the BSB's ‘place of baptism’), or even coming against it; Luke 7:30 says the Pharisees and lawyers refused John's baptism. Gennēmata echidnōn, ‘offspring of vipers’, is repeated word for word by Jesus against the Pharisees (12:34) and the scribes and Pharisees (23:33). Tēs mellousēs orgēs, ‘the coming wrath’, uses mellō for what is about to happen.",
+      "words": [
+        "G1492H",
+        "G5330",
+        "G4523",
+        "G2064",
+        "G1909",
+        "G0908",
+        "G1081G",
+        "G2191",
+        "G5263",
+        "G5343",
+        "G3195",
+        "G3709"
+      ],
+      "history": "The image is of snakes driven out of the brush by a field fire, which Acts 28:3 records happening to Paul on Malta when a viper came out of the burning sticks because of the heat. Luke addresses the same speech to the crowds (Luke 3:7); Matthew directs it at the religious leaders, which sharpens it: the people who knew the Scriptures best are the ones warned that knowledge and descent will not shelter them.",
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The wrath of God is ‘coming’, a real future the prophets called the day of the LORD (Zephaniah 1:15, Malachi 4:1). John's rebuke assumes it cannot be escaped by ritual; the only refuge is the changed life the next verse demands."
+        }
+      ],
+      "parallels": [
+        "Luke 3:7"
+      ],
+      "refs": [
+        "Matthew 12:34",
+        "Matthew 23:33",
+        "Luke 7:30",
+        "Acts 28:3",
+        "1 Thessalonians 1:10"
+      ]
+    },
+    {
+      "v": "8-9",
+      "context": "John demands fruit that matches repentance and forbids the excuse he knows is coming: ‘We have Abraham as our father.’ God does not need their pedigree; he can raise children for Abraham from the stones by the river.",
+      "grammar": "Poiēsate oun, ‘produce, then’, is an aorist imperative with oun, ‘therefore’: if they are fleeing wrath, let the flight show. Matthew has the singular karpon axion, ‘fruit worthy’, where Luke has the plural ‘fruits’; the singular presents the whole life as one harvest. In verse 9, mē doxēte legein en heautois, ‘do not think to say within yourselves’, uses dokeō, ‘suppose, presume’, and forbids even the private thought, where Luke's form forbids beginning to say it aloud. Dynatai ho theos ek tōn lithōn toutōn egeirai tekna, ‘God is able from these stones to raise up children’, uses egeirō, ‘raise’, the verb of resurrection, for God's creative power.",
+      "words": [
+        "G4160G",
+        "G3767",
+        "G2590",
+        "G0514",
+        "G3341",
+        "G1380",
+        "G3962",
+        "G0011",
+        "G1410",
+        "G3037",
+        "G1453",
+        "G5043"
+      ],
+      "text": "Modern editions read the singular karpon axion, ‘fruit worthy’, with the Byzantine manuscripts; the Textus Receptus behind the King James Version reads the plural ‘fruits meet for repentance’, assimilating to Luke 3:8.",
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "Repentance that bears no fruit is not repentance. John does not ask for fruit in place of turning but as its evidence, the conviction Jesus repeats: a tree is known by its fruit (7:16-20, 12:33)."
+        },
+        {
+          "id": "israel",
+          "note": "Descent from Abraham was a real gift (Romans 9:4-5), but John denies that it guarantees a place in the coming kingdom. The Mishnah itself defines Abraham's disciples by character, a good eye, a humble spirit, and a lowly soul (m. Avot 5:19), and Jesus will say that Abraham's children do Abraham's works (John 8:39). God's power to raise children from stones anticipates the Gentiles who will be counted Abraham's offspring (8:11, Galatians 3:7)."
+        }
+      ],
+      "parallels": [
+        "Luke 3:8"
+      ],
+      "refs": [
+        "Isaiah 51:1-2",
+        "John 8:33-39",
+        "Romans 4:16",
+        "Galatians 3:7",
+        "Matthew 7:16-20"
+      ]
+    },
+    {
+      "v": "10",
+      "context": "The warning ends with an image of judgment already under way. The axe is set against the roots; every tree without good fruit is being cut down and thrown into the fire. Jesus will repeat the last sentence word for word in the Sermon on the Mount (7:19).",
+      "grammar": "Ēdē, ‘already’, stands first for emphasis. Keitai, ‘lies’ or ‘is laid’, pictures the axe set at the base of the trunk before the first swing. Pros tēn rhizan, ‘at the root’, means the cut will not be a pruning but a felling. Ekkoptetai and balletai, ‘is cut down’ and ‘is thrown’, are present passives with future reference, a prophetic present that treats the outcome as certain; the passives leave the woodsman unnamed, and verses 11 and 12 will name him. Karpon kalon, ‘good fruit’, adds the adjective that verse 8 implied.",
+      "words": [
+        "G2235",
+        "G0513",
+        "G4491",
+        "G1186",
+        "G2749",
+        "G2590",
+        "G2570G",
+        "G1581",
+        "G4442",
+        "G0906G"
+      ],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "Judgment falls on fruitlessness, and it is near. The same image in Jesus' mouth (7:19) aims at false prophets, and in both places it presses on people who are religious but unchanged."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Malachi 4:1",
+          "note": "Malachi's last chapter pictures the day \"burning like a furnace\" when evildoers will be stubble and \"Not a root or branch will be left to them\". A few verses later comes the promise of Elijah (4:5). John, dressed as Elijah, uses Malachi's picture of root, fire, and stubble: the axe at the root here and the chaff in the fire in verse 12. Isaiah 10:33-34 supplies the axe, the LORD felling the lofty trees of the proud."
+        }
+      ],
+      "parallels": [
+        "Luke 3:9"
+      ],
+      "refs": [
+        "Matthew 7:19",
+        "Isaiah 10:33-34",
+        "Malachi 4:1",
+        "Luke 13:6-9"
+      ]
+    },
+    {
+      "v": "11",
+      "context": "John turns from the leaders to the one coming after him. His own baptism is with water, for repentance; the coming one is stronger, John is not fit to carry his sandals, and he will baptize with the Holy Spirit and with fire.",
+      "grammar": "Egō men ... ho de, ‘I on the one hand ... but he’, sets the two baptizers in contrast. Eis metanoian, ‘for repentance’, uses eis in the sense ‘with a view to’. Matthew, unlike Mark 1:4 and Luke 3:3, does not say John's baptism was ‘for the forgiveness of sins’; he keeps that phrase for the cup of the Last Supper (26:28), so that forgiveness is tied to Jesus' death. Ho opisō mou erchomenos, ‘the one coming after me’, can suggest a follower, since opisō is used of disciples who come after a master, yet this follower is ischyroteros, ‘stronger’; ‘the coming one’ becomes a title (11:3, 21:9, 23:39). Ta hypodēmata bastasai, ‘to carry the sandals’, is Matthew's form, where Mark, Luke, and John have ‘untie the strap’; both were a slave's task. En pneumati hagiō kai pyri, ‘in the Holy Spirit and fire’, uses one preposition for both nouns.",
+      "words": [
+        "G1473",
+        "G3303",
+        "G0907",
+        "G5204",
+        "G3341",
+        "G3694",
+        "G2064",
+        "G2478",
+        "G2425",
+        "G5266",
+        "G0941",
+        "G4151G",
+        "G0040G",
+        "G4442"
+      ],
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "The coming one will do what no prophet could: give God's Spirit. The prophets had promised that God would pour out his Spirit (Ezekiel 36:26-27, Joel 2:28), so John assigns to Jesus a work reserved for God. Whether the fire is the purifying fire of Pentecost (Acts 2:3) or the fire of judgment that verses 10 and 12 mention, or one baptism that purifies the penitent and consumes the impenitent (James Dunn's reading), remains debated; in Matthew's immediate context the fire of verses 10 and 12 is judgment."
+        },
+        {
+          "id": "sacraments",
+          "note": "John himself distinguishes his water baptism from the baptism the coming one will give. Christians have drawn from this both the difference between John's baptism and Christian baptism (Acts 19:1-6) and the conviction that the outward washing points to an inward gift of the Spirit that only Christ gives."
+        }
+      ],
+      "parallels": [
+        "Mark 1:7-8",
+        "Luke 3:16",
+        "John 1:26-27"
+      ],
+      "refs": [
+        "Acts 1:5",
+        "Acts 2:3-4",
+        "Ezekiel 36:26-27",
+        "Matthew 11:3",
+        "Matthew 26:28"
+      ]
+    },
+    {
+      "v": "12",
+      "context": "The coming one is pictured at harvest with a winnowing fork in hand. He will clear his threshing floor, gather the wheat into his barn, and burn the chaff with a fire no one can put out. The images of the axe and the fork belong to one message: the coming one divides.",
+      "grammar": "Hou to ptyon en tē cheiri autou, ‘whose winnowing fork is in his hand’, is a relative clause with no verb, as if the fork is already raised. Matthew then uses three futures, diakathariei, ‘he will clear thoroughly’, synaxei, ‘he will gather’, and katakausei, ‘he will burn up’, where Luke has infinitives of purpose (‘to clear’, ‘to gather’); Matthew states as certainties what Luke states as intentions. The prefix kata- in katakausei intensifies, ‘burn up completely’. Pyri asbestō, ‘with unquenchable fire’, uses the adjective behind the English word asbestos.",
+      "words": [
+        "G4425",
+        "G5495",
+        "G1245",
+        "G0257",
+        "G4863",
+        "G4621",
+        "G0596",
+        "G0892",
+        "G2618",
+        "G4442",
+        "G0762"
+      ],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The same person gathers and burns. Judgment in Matthew is not only condemnation but separation, the wheat kept safe as surely as the chaff removed, a picture Jesus develops in the parable of the wheat and the weeds, where the same words, ‘gather the wheat into my barn’ (13:30), return."
+        },
+        {
+          "id": "hell",
+          "note": "‘Unquenchable fire’ comes from the last verse of Isaiah (66:24), which Jesus also uses of final judgment (Mark 9:43-48). Christians have understood the nature and duration of that judgment in different ways, but the image is of a verdict that cannot be escaped or undone."
+        }
+      ],
+      "parallels": [
+        "Luke 3:17"
+      ],
+      "refs": [
+        "Psalm 1:4",
+        "Isaiah 66:24",
+        "Matthew 13:30",
+        "Matthew 25:32-33"
+      ]
+    },
+    {
+      "v": "13",
+      "context": "Jesus now arrives, with the same verb that announced John (verse 1). He comes from Galilee to the Jordan for one stated purpose: to be baptized by John. The one John has just described as stronger comes to receive what John gives.",
+      "grammar": "Tote paraginetai, ‘then arrives’, repeats the historic present of verse 1, setting John's entrance and Jesus' side by side. Apo tēs Galilaias, ‘from Galilee’, picks up 2:22-23, where the family settled there. Tou baptisthēnai hyp' autou, ‘to be baptized by him’, is an articular infinitive (the genitive article tou with an infinitive) expressing purpose: Matthew makes it clear that Jesus came deliberately for this, not by chance. The passive with hypo names John as the baptizer.",
+      "words": [
+        "G5119",
+        "G3854",
+        "G2424G",
+        "G1056G",
+        "G2446",
+        "G2491G",
+        "G0907"
+      ],
+      "history": "From Nazareth to the traditional baptismal site near Jericho is a walk of some seventy miles or more, several days' travel, probably by the Jordan valley. Modern historians regard the baptism of Jesus by John as among the most certain facts of his life, because the early church would hardly have invented a story in which Jesus submits to a baptism of repentance from someone who might seem his superior.",
+      "theology": [
+        {
+          "id": "sacraments",
+          "note": "Jesus chooses baptism for himself. Christians of every tradition have seen in this the ground of Christian baptism: the Lord who commands his disciples to baptize (28:19) first stepped into the water himself."
+        }
+      ],
+      "parallels": [
+        "Mark 1:9",
+        "Luke 3:21"
+      ],
+      "refs": [
+        "Matthew 2:22-23",
+        "Matthew 28:19",
+        "Mark 1:9",
+        "Acts 10:37-38"
+      ]
+    },
+    {
+      "v": "14",
+      "context": "John tries to stop him. He, the preacher of repentance, says he is the one who needs to be baptized, and asks why Jesus comes to him. Only Matthew records the exchange, and it states aloud the difficulty every reader feels.",
+      "grammar": "Diekōlyen, ‘he was trying to prevent’, is a conative imperfect: an action attempted but not completed. The compound dia-kōlyō is stronger than the simple kōlyō and occurs only here in the New Testament. Egō chreian echō hypo sou baptisthēnai, kai sy erchē pros me, ‘I have need to be baptized by you, and you come to me?’, sets the emphatic pronouns egō and sy against each other, reversing the positions of baptizer and baptized.",
+      "words": [
+        "G1254",
+        "G1473",
+        "G5532",
+        "G2192",
+        "G0907",
+        "G4771",
+        "G2064"
+      ],
+      "text": "The name ‘John’ in this verse is missing from the first hand of Codex Sinaiticus and from Codex Vaticanus, and Westcott and Hort left it out; most editions print it, and the subject is clear either way. English Bibles supply the name.",
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "John recognizes Jesus' superiority before any sign from heaven. The Fourth Gospel has John say he did not know him until he saw the Spirit descend (John 1:31-33); many interpreters reconcile the two by distinguishing personal acquaintance (Luke 1:36 makes them relatives) from recognition of Jesus as the one who baptizes with the Spirit."
+        }
+      ],
+      "refs": [
+        "John 1:29-34",
+        "Luke 1:41-44",
+        "Matthew 11:11",
+        "John 3:30"
+      ]
+    },
+    {
+      "v": "15",
+      "context": "Jesus' first words in Matthew answer John: let it be so for now, because it is fitting for us to fulfill all righteousness. John consents. The reply introduces two words, fulfill and righteousness, that will run through the Gospel (5:17, 5:20, 6:33).",
+      "grammar": "Aphes arti, ‘permit it now’, is an aorist imperative of aphiēmi, ‘let, allow’, and arti, ‘now, for the present’, admits that the reversal John sees is real but that this moment calls for it. Houtōs gar prepon estin hēmin, ‘for thus it is fitting for us’, uses prepon, ‘fitting, proper’, not dei, ‘it is necessary’; the language is of what suits God's purpose. Hēmin, ‘for us’, includes John: both have parts in God's plan. Plērōsai pasan dikaiosynēn, ‘to fulfill all righteousness’, joins Matthew's fulfillment verb to righteousness, which in Matthew usually means conduct that conforms to God's will (5:20, 6:1). Tote aphiēsin auton, ‘then he permits him’, is another historic present, answering aphes with the same verb.",
+      "words": [
+        "G0611",
+        "G0863I",
+        "G0737",
+        "G3779",
+        "G4241",
+        "G4137",
+        "G3956",
+        "G1343",
+        "G5119"
+      ],
+      "history": "Matthew's explanation was known very early. Ignatius of Antioch, writing around AD 110, says Jesus was baptized by John so that all righteousness might be fulfilled by him (To the Smyrnaeans 1.1), the earliest clear echo of a detail found only in Matthew.",
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "Interpreters read the phrase in several ways. Many, Ulrich Luz among them, take it as obedience: John's baptism was God's command to Israel (21:25, 32), and Jesus submits to all God requires. Oscar Cullmann (Baptism in the New Testament, 1950) read it as Jesus accepting the role of the servant who bears the sins of many, so that his baptism looks ahead to his death, which he calls a baptism (Luke 12:50). Others stress solidarity: the sinless one stands where sinners stand. The readings are compatible, and together they present the baptism as the first step on the road to the cross."
+        },
+        {
+          "id": "law",
+          "note": "The one who says he came not to abolish the Law and the Prophets but to fulfill them (5:17) begins by fulfilling ‘all righteousness’. Jesus' own obedience comes before any demand he makes of his disciples that their righteousness exceed the scribes' (5:20)."
+        }
+      ],
+      "refs": [
+        "Matthew 5:17",
+        "Matthew 21:32",
+        "Isaiah 53:11-12",
+        "Luke 12:50",
+        "2 Corinthians 5:21"
+      ]
+    },
+    {
+      "v": "16",
+      "context": "As soon as Jesus is baptized he comes up from the water, the heavens are opened, and he sees the Spirit of God descending like a dove and coming upon him. The Spirit who was the source of his conception (1:18, 20) now rests on him for his work.",
+      "grammar": "Baptistheis, ‘having been baptized’, is an aorist passive participle, so the baptism itself is told in a single word and the weight falls on what follows. Euthys anebē apo tou hydatos, ‘immediately he went up from the water’, describes leaving the river; Matthew's apo, ‘from’, and Mark's ek, ‘out of’, do not by themselves settle the mode of baptism. Idou ēneōchthēsan hoi ouranoi, ‘behold, the heavens were opened’, uses anoigō where Mark has the violent schizō, ‘torn’. Pneuma theou, ‘the Spirit of God’, is Matthew's wording (Mark has ‘the Spirit’, Luke ‘the Holy Spirit’), recalling the ruach elohim of Genesis 1:2. The two present participles, katabainon and erchomenon, ‘descending and coming upon him’, and hōsei peristeran, ‘as if a dove’, describe the manner of the descent.",
+      "words": [
+        "G0907",
+        "G2112",
+        "G0305",
+        "G5204",
+        "G0455",
+        "G3772",
+        "G1492H",
+        "G4151G",
+        "G2316",
+        "G2597",
+        "G5616",
+        "G4058",
+        "G2064"
+      ],
+      "ot": [
+        {
+          "ref": "Ezekiel 1:1",
+          "note": "Ezekiel's book opens, \"while I was among the exiles by the River Kebar, the heavens opened and I saw visions of God.\" The Septuagint uses ēnoichthēsan hoi ouranoi, the same verb Matthew uses. Both scenes take place beside a river, and Ezekiel's among the exiles, the condition Matthew's genealogy says lasted until the Christ. Isaiah had prayed that God would rend the heavens and come down (Isaiah 64:1), and Isaiah 11:2 had promised that the Spirit of the LORD would rest on the shoot of Jesse. In the opened heavens God answers that prayer and keeps that promise."
+        }
+      ],
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "The Spirit comes upon Jesus to anoint him as the Messiah, the anointed one of Isaiah 11:2 and 61:1. The one who will baptize with the Spirit (verse 11) first receives the Spirit, which Peter later summarized as God anointing Jesus of Nazareth with the Holy Spirit and power (Acts 10:38)."
+        },
+        {
+          "id": "trinity",
+          "note": "The Son stands in the river, the Spirit of God descends, and in the next verse the Father speaks. The church has seen in the scene one of Scripture's clearest revelations of the one God as three persons, acting together and distinctly."
+        }
+      ],
+      "parallels": [
+        "Mark 1:10",
+        "Luke 3:21-22",
+        "John 1:32-34"
+      ],
+      "refs": [
+        "Isaiah 11:2",
+        "Isaiah 61:1",
+        "Isaiah 64:1",
+        "Genesis 1:2",
+        "Acts 10:38"
+      ]
+    },
+    {
+      "v": "17",
+      "context": "A voice from heaven declares Jesus to be the Father's beloved Son, in whom he is well pleased. In Mark and Luke the voice speaks to Jesus; in Matthew it speaks about him, a public announcement. The same words will sound again at the transfiguration, with the command to listen to him (17:5).",
+      "grammar": "Idou phōnē ek tōn ouranōn legousa, ‘behold, a voice from the heavens saying’, repeats the idou of verse 16, marking a second revelation. Houtos estin, ‘this is’, is third person, where Mark 1:11 and Luke 3:22 have sy ei, ‘you are’. Ho huios mou ho agapētos, ‘my Son, the beloved’, repeats the article, so that ‘the beloved’ can function as a title in its own right. En hō eudokēsa, ‘in whom I am well pleased’, uses an aorist that grammarians describe as timeless or constative, perhaps reflecting a Hebrew stative verb; it does not date the Father's delight to a moment. Matthew's own translation of Isaiah 42:1 in 12:18 uses both agapētos and eudokēsen, which confirms that he hears the servant song in these words.",
+      "words": [
+        "G2400",
+        "G5456G",
+        "G3772",
+        "G3778",
+        "G5207",
+        "G0027",
+        "G2106"
+      ],
+      "text": "Codex Bezae and some Syriac manuscripts read ‘You are my beloved Son, in you I am well pleased’, bringing Matthew into line with Mark and Luke. The harder third-person reading, ‘This is’, found in the great majority of manuscripts, is almost certainly original.",
+      "ot": [
+        {
+          "ref": "Psalm 2:7",
+          "note": "In Psalm 2 the LORD installs his king on Zion and says, \"You are My Son; today I have become Your Father.\" The psalm was a royal coronation text, and by the first century some Jews read it of the Messiah (Psalms of Solomon 17 draws on its language). Matthew's ‘This is My Son’ turns the psalm's direct address into an announcement to the bystanders, identifying Jesus as the royal Son of David's line whom the genealogy introduced."
+        },
+        {
+          "ref": "Isaiah 42:1",
+          "note": "Isaiah's first servant song begins, \"Here is My Servant, whom I uphold, My Chosen One, in whom My soul delights. I will put My Spirit on Him\". The Hebrew ratsetah nafshi, ‘my soul delights’, lies behind ‘I am well pleased’. The Septuagint names the servant as Jacob and Israel and uses different verbs, so Matthew is not following it here; in 12:18 he gives his own rendering of Isaiah 42:1, calling the servant ho agapētos mou, ‘my beloved’, and using eudokēsen, the verb of the baptism. The Spirit's descent in verse 16 matches the servant's anointing. The servant's path in Isaiah leads through suffering to bearing the sin of many (Isaiah 53:12)."
+        },
+        {
+          "ref": "Genesis 22:2",
+          "note": "God tells Abraham, \"Take your son,\" \"your only son Isaac, whom you love\". The Hebrew yechidkha, ‘your only one’, is rendered in the Septuagint ton agapēton, ‘the beloved’, the word the voice uses. The echo is verbal rather than explicit, but in a Gospel that opened with Jesus as son of Abraham (1:1), a beloved son offered by his father is a pattern many interpreters, from the church fathers onward, have heard here."
+        }
+      ],
+      "theology": [
+        {
+          "id": "trinity",
+          "note": "The Father speaks of the Son on whom the Spirit has come. The verse does not use the word Trinity, but it is the scene the church most often cited for the distinct persons of the one God, and Matthew's Gospel will end with the single name of the Father, the Son, and the Holy Spirit (28:19)."
+        },
+        {
+          "id": "messiah",
+          "note": "The voice combines the king's title from Psalm 2 with the servant's description from Isaiah 42. From the start of his ministry, Jesus is the Messiah who serves, and the Father's delight rests on him before he has preached or healed."
+        }
+      ],
+      "parallels": [
+        "Mark 1:11",
+        "Luke 3:22"
+      ],
+      "refs": [
+        "Psalm 2:7",
+        "Isaiah 42:1",
+        "Genesis 22:2",
+        "Matthew 12:18",
+        "Matthew 17:5"
+      ]
+    }
+  ]
+}

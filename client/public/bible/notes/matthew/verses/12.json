@@ -1,0 +1,513 @@
+{
+  "verses": [
+    {
+      "v": "1-2",
+      "context": "‘At that time’ ties the scene to 11:25-30: right after offering rest to the weary, Jesus faces a dispute about the day of rest. Matthew alone says the disciples were hungry, which prepares for the example of the hungry David in the next verse and shows that the dispute is about need, not idle snacking.",
+      "grammar": "Tois sabbasin, ‘on the Sabbath’, is plural in form but singular in meaning, a pattern Greek took over from the Aramaic shabbeta. Epeinasan, ‘they were hungry’, an aorist, gives the reason for what follows, and ērxanto tillein stachuas kai esthiein, ‘they began to pluck heads of grain and to eat’, uses present infinitives for the ongoing action. The Pharisees' charge, poiousin ho ouk exestin poiein en sabbatō, ‘they are doing what is not permitted to do on a Sabbath’, uses exestin, ‘it is lawful, permitted’, the technical word of legal debate that recurs through the chapter (verses 4, 10, 12).",
+      "words": ["G2540", "G4198", "G4521", "G4702", "G3983", "G5089", "G4719", "G2068", "G5330", "G1832", "G4160G"],
+      "history": "Standing grain ready to be plucked sets the scene in the harvest season between Passover and Pentecost, roughly April to June, when barley and then wheat ripened. The Mishnah's list of thirty-nine kinds of forbidden work includes reaping and threshing (m. Shabbat 7:2), and plucking and rubbing ears in the hand (Luke 6:1) could be counted as both. The Pharisees do not accuse the disciples of theft, since Deuteronomy 23:25 allowed a hungry traveler to pick grain by hand from a neighbor's field; the question is only the day.",
+      "theology": [
+        {
+          "id": "sabbath",
+          "note": "The dispute is not whether to keep the Sabbath but how. Matthew's note that the disciples were hungry frames the question the rest of the passage answers: whether the day God gave for rest can be used to deny a basic human need."
+        }
+      ],
+      "parallels": ["Mark 2:23-24", "Luke 6:1-2"],
+      "refs": ["Deuteronomy 23:25", "Exodus 20:8-11", "Exodus 34:21", "Matthew 11:28-30"]
+    },
+    {
+      "v": "3-4",
+      "context": "Jesus answers from Scripture with the story of David at Nob. A hungry man and his companions ate bread that the law reserved for priests, and Scripture does not condemn them. The argument is that genuine need can override a ceremonial rule, and that what David's companions were allowed, the Son of David's companions are allowed too.",
+      "grammar": "Ouk anegnōte, ‘have you not read?’, is pointed when addressed to experts in Scripture; Jesus uses it again in verse 5 and in 19:4, 21:16, 21:42, and 22:31. Pōs eisēlthen eis ton oikon tou theou, ‘how he entered the house of God’: in David's day this was the sanctuary at Nob, not the temple, which was built later. Tous artous tēs protheseōs, literally ‘the loaves of the setting-out’, names the bread of the Presence by its placement before God; Hebrews 9:2 uses the same phrase in reverse (hē prothesis tōn artōn). Ho ouk exon ēn autō phagein, ‘which it was not lawful for him to eat’, uses the participle of exestin, the chapter's legal key word, and ei mē tois hiereusin monois, ‘except for the priests alone’, recalls Leviticus 24:9.",
+      "words": ["G0314", "G1138", "G3983", "G1525", "G3624G", "G2316", "G0740", "G4286", "G5315", "G1832", "G2409", "G3441"],
+      "text": "Most modern editions read ephagon, ‘they ate’, and the relative ho, ‘which’, agreeing with the idea of eating; the Byzantine text and the Textus Receptus read ephagen, ‘he ate’, and some manuscripts have hous, ‘which (loaves)’. The BSB's ‘he and his companions ate’ combines the sense. Mark 2:26 names the high priest as Abiathar, while 1 Samuel 21 names his father Ahimelech; Matthew and Luke name no priest.",
+      "ot": [
+        {
+          "ref": "1 Samuel 21:1-6",
+          "note": "David, fleeing Saul, asks the priest Ahimelech at Nob for bread, and the only bread on hand is lechem hapanim, ‘bread of the Presence’ (literally ‘of the face’), which had been replaced with fresh loaves. The priest gives it on condition that the young men have kept themselves from women, and the Septuagint (1 Kingdoms 21) calls it artoi tou prosōpou, ‘loaves of the face’. The Hebrew does not say the day was a Sabbath, though the change of bread happened on the Sabbath (Leviticus 24:8), and later interpreters, Jewish and Christian, drew that inference; the Babylonian Talmud discusses the episode in connection with the baking and setting out of this bread (b. Menahot 95b). Jesus' point does not depend on the day: the anointed king's need outweighed a sacred rule, and no one condemned him."
+        }
+      ],
+      "theology": [
+        {
+          "id": "law",
+          "note": "Jesus reads the law by its purpose. Rules that guard holy things are good, yet Scripture itself shows that they yield to human need, and a reading of the law that forgets this has misunderstood the law's own story."
+        }
+      ],
+      "parallels": ["Mark 2:25-26", "Luke 6:3-4"],
+      "refs": ["1 Samuel 21:1-6", "Leviticus 24:5-9", "Hebrews 9:2", "Matthew 19:4"]
+    },
+    {
+      "v": "5-6",
+      "context": "Matthew alone adds a second argument, from the law itself. Every Sabbath the priests in the temple do work the day otherwise forbids and are guiltless, because the temple's service takes precedence. Then comes the claim that sharpens everything: something greater than the temple is here.",
+      "grammar": "Tois sabbasin hoi hiereis en tō hierō to sabbaton bebēlousin kai anaitioi eisin, ‘on the Sabbath the priests in the temple profane the Sabbath and are guiltless’: bebēloō is a strong word, ‘to desecrate, treat as common’, deliberately provocative, and anaitios, ‘innocent, guiltless’, will return in verse 7 for the disciples. Verse 6 reads legō de humin hoti tou hierou meizon estin hōde, ‘but I tell you that something greater than the temple is here’. The genitive tou hierou is a genitive of comparison placed first for emphasis, and hōde, ‘here’, points to the scene in the grainfield. The neuter meizon, ‘something greater’, has been read as the kingdom, the presence of God at work in Jesus, or Jesus himself described in a neuter to stress quality; the same neuter returns with Jonah and Solomon (verses 41 and 42).",
+      "words": ["G0314", "G3551", "G4521", "G2409", "G2411", "G0953", "G0338", "G3173", "G5602"],
+      "history": "The law required additional offerings on the Sabbath, two lambs with grain and drink offerings besides the daily sacrifice (Numbers 28:9-10), and the priests set out fresh bread of the Presence every Sabbath (Leviticus 24:8). Rabbinic law accepted that temple service overrode Sabbath restrictions; the Mishnah lists the parts of the Passover sacrifice that override the Sabbath when the festival falls on it (m. Pesahim 6:1). Jesus' argument uses a principle his opponents already held.",
+      "text": "The earliest manuscripts and the Byzantine text read the neuter meizon, ‘something greater’; the Textus Receptus, followed by the King James Version, reads the masculine meizōn, ‘one greater’. The neuter is the harder and better-attested reading.",
+      "theology": [
+        {
+          "id": "temple",
+          "note": "The temple was the place of God's presence in Israel. To say that something greater than the temple is here is to claim that God's presence is now found in Jesus and his work more fully than in the sanctuary, a claim John's Gospel makes when Jesus speaks of the temple of his body (John 2:19-21)."
+        }
+      ],
+      "refs": ["Numbers 28:9-10", "Leviticus 24:8", "John 2:19-21", "Matthew 12:41-42", "Matthew 26:61"]
+    },
+    {
+      "v": "7",
+      "context": "Jesus quotes Hosea 6:6 for the second time in Matthew (compare 9:13). The accusers' failure is not ignorance of the text but of its meaning: had they grasped that God wants mercy, they would not have condemned men who are, like the priests of verse 5, innocent.",
+      "grammar": "Ei de egnōkeite ti estin, ‘if you had known what this means’: the pluperfect egnōkeite in a contrary-to-fact condition, followed by ouk an katedikasate, ‘you would not have condemned’, states a past knowledge they did not have and a condemnation they did make. Ti estin, ‘what it is’, means ‘what it means’. Tous anaitious, ‘the guiltless’, picks up anaitioi from verse 5: the disciples stand where the priests stand. The quotation itself, eleos thelō kai ou thusian, ‘I desire mercy and not sacrifice’, places the verb between its two objects.",
+      "words": ["G1097", "G1656", "G2309", "G2378", "G2613", "G0338"],
+      "ot": [
+        {
+          "ref": "Hosea 6:6",
+          "note": "The Hebrew reads ki chesed chafatsti velo-zavach, veda'at elohim me'olot, ‘for I delight in loyal love and not sacrifice, and the knowledge of God more than burnt offerings’. The second line uses a comparative (‘more than’), which shows that the first line's ‘not’ is also comparative: God is not rejecting sacrifice but ranking it below covenant loyalty. The Septuagint renders chesed as eleos, ‘mercy’, and its witnesses divide between ‘rather than sacrifice’ (ē thusian) and ‘and not sacrifice’ (kai ou thusian), the wording Matthew has. In Hosea the verse rebukes a people whose worship continued while their loyalty vanished like morning dew (6:4). Jesus turns it against a strictness that condemns the hungry: mercy is the purpose the law's ceremonies serve."
+        }
+      ],
+      "theology": [
+        {
+          "id": "worship",
+          "note": "Hosea's words, as Jesus uses them, do not abolish sacrifice or ritual but set them beneath mercy. Worship that is scrupulous about observance and careless about people has inverted God's order of priorities."
+        }
+      ],
+      "refs": ["Hosea 6:6", "Matthew 9:13", "Matthew 23:23", "1 Samuel 15:22", "Micah 6:6-8"]
+    },
+    {
+      "v": "8",
+      "context": "The argument ends with a claim of authority. The Son of Man is Lord of the Sabbath, so the right to say what the day is for belongs to him. Matthew leaves out the saying in Mark 2:27 that the Sabbath was made for man, which keeps the focus on Jesus himself.",
+      "grammar": "Kurios gar estin tou sabbatou ho huios tou anthrōpou, literally ‘for lord of the Sabbath is the Son of Man’: kurios stands first for emphasis. Gar, ‘for’, connects the claim back to verses 6 and 7: the disciples are guiltless because the one they follow has authority over the day. In Aramaic bar enash, ‘son of man’, can simply mean ‘a human being’, and some interpreters have read Mark's form as saying that humanity is lord of the Sabbath; without Mark 2:27, Matthew's form points plainly to Jesus as the Son of Man of Daniel 7.",
+      "words": ["G2962H", "G4521", "G5207", "G0444"],
+      "theology": [
+        {
+          "id": "sabbath",
+          "note": "The Sabbath was God's institution, given at creation and at Sinai. To claim lordship over it is to claim God's authority over its meaning. Christians differ on how the day binds the church (the chapter note gives the positions), but they agree that Christ, not the church or its critics, is its Lord."
+        }
+      ],
+      "parallels": ["Mark 2:27-28", "Luke 6:5"],
+      "refs": ["Mark 2:27-28", "Genesis 2:2-3", "Daniel 7:13-14", "Hebrews 4:9-10"]
+    },
+    {
+      "v": "9-10",
+      "context": "The second Sabbath dispute moves into ‘their synagogue’. A man with a withered hand is present, and in Matthew the opponents raise the question themselves, as a legal test, whether healing is permitted on the Sabbath. Their aim is not to learn but to accuse.",
+      "grammar": "Metabas ekeithen, ‘moving on from there’, uses the same verb as 11:1 for Jesus' shifts of location. Cheira echōn xēran, ‘having a dry hand’: xēros, ‘dry’, describes a hand shriveled or paralyzed. Epērōtēsan auton legontes ei exestin, ‘they asked him, saying, is it lawful?’: ei introducing a direct question is a Septuagint usage not found in classical Greek. The purpose clause hina katēgorēsōsin autou, ‘so that they might accuse him’, reveals the motive, and katēgoreō is the verb for bringing a formal charge in court.",
+      "words": ["G3327", "G2064", "G4864", "G5495", "G3584", "G1905", "G1832", "G2323", "G2723"],
+      "history": "Jerome, in his commentary on Matthew (on 12:13), reports that the gospel used by the Nazarenes and Ebionites, a Jewish-Christian gospel in Hebrew or Aramaic, described the man as a mason who asked Jesus to restore his hand so that he would not have to beg for his bread. The detail is not in the canonical Gospels, but it shows how early readers understood what a withered hand meant for a laborer.",
+      "text": "The Nestle-Aland editions read the aorist infinitive therapeusai, ‘to heal’; the other editions read the present therapeuein, with the same meaning.",
+      "parallels": ["Mark 3:1-2", "Luke 6:6-7"],
+      "refs": ["Mark 3:1-2", "Luke 14:1-3", "1 Kings 13:4-6", "Luke 13:14"]
+    },
+    {
+      "v": "11-12",
+      "context": "Jesus answers with a case his hearers would decide at once. A man with one sheep fallen into a pit would lift it out on the Sabbath; a human being is worth far more; therefore doing good on the Sabbath is lawful. Luke has a similar saying in another Sabbath healing (Luke 14:5).",
+      "grammar": "Tis estai ex humōn anthrōpos hos hexei probaton hen, ‘what man will there be among you who has one sheep’: hen, ‘one’, may suggest the man's only sheep, which makes the rescue all the more certain. Ouchi kratēsei auto kai egerei, ‘will he not grab it and lift it out?’: ouchi expects ‘yes’, and egeirō, ‘raise’, is the verb also used for raising the sick and the dead. Posō oun diapherei anthrōpos probatou, ‘how much more then does a man differ from a sheep’, is an argument from lesser to greater, with the verb of 10:31. Hōste exestin tois sabbasin kalōs poiein, ‘so it is lawful to do good on the Sabbath’: hōste with the indicative draws a conclusion, and kalōs poiein, ‘to do well, act rightly’, makes the question moral, not merely legal.",
+      "words": ["G0444", "G4263", "G1706", "G4521", "G0999", "G2902", "G1453", "G4214", "G1308", "G1832", "G2573", "G4160G"],
+      "history": "Jewish groups disagreed about animals in distress on the Sabbath. The Damascus Document from Qumran forbids lifting an animal out of a pit or cistern on the Sabbath (CD 11:13-14), while a later rabbinic ruling allows bringing bedding and cushions so that an animal fallen into a ditch can climb out itself (b. Shabbat 128b). Jesus' question assumes that most of his hearers would rescue the sheep, which puts him closer to the Pharisaic mainstream than to Qumran's strictness.",
+      "theology": [
+        {
+          "id": "sabbath",
+          "note": "Doing good is not an exception to the Sabbath but part of its purpose. The day that remembers God's rest and Israel's release from slavery (Deuteronomy 5:15) is honored by restoring a person, not by leaving him bound."
+        },
+        {
+          "id": "humanity",
+          "note": "‘How much more valuable is a man than a sheep’ affirms the special worth of human beings, the same argument Jesus made about sparrows (10:31). Human dignity, grounded in God's regard, shapes how his commands are kept."
+        }
+      ],
+      "parallels": ["Luke 14:5", "Luke 13:15-16"],
+      "refs": ["Matthew 10:31", "Luke 14:5", "Luke 13:15-16", "Deuteronomy 5:12-15"]
+    },
+    {
+      "v": "13-14",
+      "context": "Jesus heals with a word, and the man's hand is restored. The Pharisees respond by going out to plot his death, the first time Matthew mentions such a plan. The irony is sharp: the question was whether one may do good on the Sabbath, and the answer they give is to plan a killing.",
+      "grammar": "Ekteinon sou tēn cheira, ‘stretch out your hand’, is an aorist imperative, and kai exeteinen, ‘and he stretched it out’, answers it in the same verb: the healing happens in the act of obedience. Apekatestathē hugiēs hōs hē allē, ‘it was restored healthy like the other’: apokathistēmi, ‘restore to a former state’, carries a double augment in this form, and Matthew uses the verb again when Elijah ‘will restore all things’ (17:11). In verse 14, sumboulion elabon kat' autou, ‘they took counsel against him’, is Matthew's own phrase for plotting (22:15, 27:1, 27:7, 28:12), and hopōs auton apolesōsin, ‘how they might destroy him’, uses apollumi.",
+      "words": ["G1614", "G5495", "G0600", "G5199", "G1831", "G5330", "G4824", "G2983", "G0622"],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "The Pharisees guard the Sabbath from a healing while planning a death. The scene shows how religious zeal can blind people to the evil of their own intentions, a danger the Gospel presses on every reader, not only on these opponents."
+        }
+      ],
+      "parallels": ["Mark 3:5-6", "Luke 6:10-11"],
+      "refs": ["1 Kings 13:4-6", "Matthew 17:11", "Matthew 26:3-4", "John 5:16-18", "Matthew 22:15"]
+    },
+    {
+      "v": "15-16",
+      "context": "Aware of the plot, Jesus withdraws, heals all who follow him, and orders them not to make him known. Matthew compresses Mark's longer summary (Mark 3:7-12) and explains the withdrawal and the silence by the quotation that follows.",
+      "grammar": "Ho de Iēsous gnous anechōrēsen ekeithen, ‘but Jesus, knowing it, withdrew from there’: anachōreō is a pattern word in Matthew for withdrawal in the face of danger, used of Joseph fleeing Herod (2:14, 2:22), of Jesus after John's arrest (4:12), after John's death (14:13), and before the Canaanite woman (15:21). Etherapeusen autous pantas, ‘he healed them all’, keeps Matthew's stress on the completeness of his mercy. Epetimēsen autois hina mē phaneron auton poiēsōsin, ‘he warned them not to make him known’: epitimaō is a stern word, used for rebuking demons and wind (17:18, 8:26), and phaneros, ‘evident, public’, names what Jesus refuses: to be made a public figure of acclaim.",
+      "words": ["G1097", "G0402", "G1564", "G0190", "G3793", "G2323", "G2008", "G5318"],
+      "text": "Codex Sinaiticus and Codex Vaticanus, followed by Westcott and Hort and the SBL edition, read that ‘many’ followed him; most manuscripts read ‘large crowds’ (ochloi polloi). The sense is the same.",
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "Jesus refuses to answer a death plot with a show of power or a popular movement. His withdrawal and his command to silence belong to the kind of Messiah he is, which Matthew explains through Isaiah in the next verses."
+        }
+      ],
+      "parallels": ["Mark 3:7-12"],
+      "refs": ["Matthew 2:14", "Matthew 4:12", "Matthew 14:13", "Matthew 8:4"]
+    },
+    {
+      "v": "17-18",
+      "context": "Matthew halts the narrative for his longest quotation from the prophets, Isaiah 42:1-4. The first verse identifies Jesus as the Servant whom God has chosen and loves, on whom God puts his Spirit, and who will announce justice to the nations. The words echo the voice at Jesus' baptism (3:17).",
+      "grammar": "Hina plērōthē to rhēthen dia Ēsaiou tou prophētou, ‘so that what was spoken through Isaiah the prophet might be fulfilled’, is Matthew's fulfillment formula; dia, ‘through’, makes the prophet the instrument and God the speaker. Idou ho pais mou, ‘behold my servant’: pais can mean both servant and child. Hon hēretisa, ‘whom I chose’, uses hairetizō, found only here in the New Testament. Ho agapētos mou eis hon eudokēsen hē psuchē mou, ‘my beloved, in whom my soul is well pleased’, differs from both the Hebrew and the Greek of Isaiah and matches the baptismal voice, ‘This is My beloved Son, in whom I am well pleased’ (3:17). Thēsō, ‘I will put’, is future, where the Hebrew natati is a perfect, ‘I have put’. Krisin tois ethnesin apangelei, ‘he will announce justice to the nations’: krisis here means justice or right judgment, as the Hebrew mishpat.",
+      "words": ["G4137", "G2046", "G2268", "G3816", "G0140", "G0027", "G2106", "G5590G", "G5087", "G4151G", "G2920", "G1484", "G0518"],
+      "ot": [
+        {
+          "ref": "Isaiah 42:1",
+          "note": "The Hebrew reads hen avdi etmokh-bo, bechiri ratsetah nafshi, ‘here is my servant, whom I uphold, my chosen one, in whom my soul delights’, natati ruchi alav, ‘I have put my Spirit on him’, mishpat laggoyim yotsi, ‘he will bring forth justice to the nations’. The Septuagint makes the servant national: Iakōb ho pais mou ... Israēl ho eklektos mou, ‘Jacob my servant ... Israel my chosen’. Matthew has neither the Septuagint's names nor the Hebrew's ‘whom I uphold’; his ‘whom I have chosen, my beloved’ shapes the verse to the baptism. The Aramaic Targum of Isaiah begins the verse ‘behold my servant, the Messiah’, which shows that Jewish readers also heard it messianically. In Isaiah the servant is both Israel (41:8) and one who restores Israel (49:5-6); Matthew reads the passage of Jesus, who fulfills Israel's calling."
+        }
+      ],
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "The Messiah is identified here as the Servant, chosen and loved by God, who brings justice not by force but by the Spirit. Matthew places this portrait precisely where Jesus refuses to meet a plot with power."
+        },
+        {
+          "id": "spirit",
+          "note": "‘I will put My Spirit on Him’ ties Jesus' whole ministry to the Spirit who came on him at the baptism (3:16). It prepares for verse 28, where he drives out demons by the Spirit of God, and for the warning of verses 31 and 32."
+        },
+        {
+          "id": "mission",
+          "note": "The Servant brings justice to the nations. In a Gospel where the twelve were first sent only to Israel (10:5-6), the quotation anticipates the mission to all nations (28:19)."
+        }
+      ],
+      "refs": ["Matthew 3:16-17", "Matthew 17:5", "Isaiah 49:5-6", "Acts 4:27"]
+    },
+    {
+      "v": "19",
+      "context": "The Servant does not quarrel or shout, and no one hears his voice raised in the streets. Placed after Jesus' withdrawal from a plot and his command to silence (verses 15 and 16), the line explains both: he does not win by public confrontation.",
+      "grammar": "Ouk erisei oude kraugasei, ‘he will not quarrel nor cry out’: erizō, ‘to wrangle, contend’, occurs only here in the New Testament and matches neither the Hebrew nor the Septuagint, which speak only of not crying out. Oude akousei tis en tais plateiais tēn phōnēn autou, ‘nor will anyone hear his voice in the streets’: the plateiai are the broad streets and squares of a town, the places of public speech.",
+      "words": ["G2051", "G2905", "G0191", "G4116", "G5456G"],
+      "ot": [
+        {
+          "ref": "Isaiah 42:2",
+          "note": "The Hebrew reads lo yits'aq velo yissa velo-yashmia bachuts qolo, ‘he will not cry out or raise his voice or make it heard in the street’. The Septuagint has ou kekraxetai oude anēsei, oude akousthēsetai exō hē phōnē autou, ‘he will not cry out nor let up, nor will his voice be heard outside’. Matthew's ‘he will not quarrel’ is his own rendering and fits the context he has built, in which Jesus withdraws from conflict with the Pharisees rather than fighting it out in public."
+        }
+      ],
+      "refs": ["Isaiah 42:2", "Matthew 12:15-16", "1 Peter 2:23", "2 Timothy 2:24"]
+    },
+    {
+      "v": "20",
+      "context": "The Servant's gentleness reaches the weakest: a reed already cracked he will not snap, a wick barely smoking he will not snuff out. Yet his gentleness is not weakness, since he continues until justice wins. The reed recalls the ‘reed swaying in the wind’ of 11:7, the same Greek word, kalamos.",
+      "grammar": "Kalamon suntetrimmenon ou kateaxei, ‘a bruised reed he will not break’: suntetrimmenon is a perfect passive participle of suntribō, ‘crush, shatter’, describing a reed already damaged, and kateagnumi, ‘break’, is the final snapping. Kai linon tuphomenon ou sbesei, ‘and a smoldering wick he will not quench’: linon is flax, and here the flax wick of an oil lamp; tuphomenon, ‘smoking’, describes a wick nearly out. Heōs an ekbalē eis nikos tēn krisin, ‘until he brings justice to victory’: ekballō here means ‘bring forth’, and eis nikos, ‘to victory’, is a phrase the Septuagint sometimes uses for the Hebrew lanetsach, ‘forever’ or ‘to the end’ (2 Samuel 2:26), so Matthew's wording may reflect a reading of the Hebrew in that light.",
+      "words": ["G2563", "G4937", "G2608", "G3043", "G5188", "G4570", "G1544", "G3534", "G2920"],
+      "ot": [
+        {
+          "ref": "Isaiah 42:3-4",
+          "note": "The Hebrew reads qaneh ratsuts lo yishbor, ufishtah khehah lo yekhabbenah, le'emet yotsi mishpat, ‘a crushed reed he will not break, and a dim wick he will not quench; in faithfulness he will bring forth justice’, and 42:4 continues ‘he will not grow dim or be crushed until he establishes justice in the earth’. The Septuagint has kalamon tethlasmenon ou suntripsei kai linon kapnizomenon ou sbesei, alla eis alētheian exoisei krisin. Matthew uses the Septuagint's main verb, suntribō, for the reed's condition, adds his own verb for breaking, and joins the end of 42:3 to the ‘until’ of 42:4, leaving out Isaiah's words about the servant himself not growing dim or being crushed. The result makes the victory of justice the goal of the Servant's patience."
+        }
+      ],
+      "theology": [
+        {
+          "id": "justice-poor",
+          "note": "The justice the Servant brings is not imposed by crushing the weak. His way with the damaged and the nearly extinguished is patience and care, and the verse promises that this gentleness will still end in justice victorious. The Puritan Richard Sibbes built his book of comfort, The Bruised Reed (1630), on this verse."
+        }
+      ],
+      "refs": ["Isaiah 42:3", "Matthew 11:7", "Matthew 11:28-29", "Isaiah 57:15", "Hebrews 4:15"]
+    },
+    {
+      "v": "21",
+      "context": "The quotation ends with hope for the nations. The Servant of Israel's God becomes the one in whose name the Gentiles hope, which anticipates the Gospel's last command to make disciples of all nations (28:19).",
+      "grammar": "Kai tō onomati autou ethnē elpiousin, ‘and in his name nations will hope’: elpizō usually takes a preposition (epi or eis); here the bare dative tō onomati is unusual. The future elpiousin is a promise. Ethnē without the article means ‘nations’, peoples in general.",
+      "words": ["G3686", "G1484", "G1679"],
+      "ot": [
+        {
+          "ref": "Isaiah 42:4",
+          "note": "The Hebrew ends ultorato iyyim yeyachelu, ‘and for his law the coastlands will wait’, the islands and shores being the farthest reaches of the known world. The Septuagint reads kai epi tō onomati autou ethnē elpiousin, ‘and in his name nations will hope’, which Matthew follows almost exactly. The Greek rendering may reflect an interpretive choice, since ‘name’ and ‘law’ are not similar Hebrew words; either way, the far-off peoples who wait for the Servant's teaching become in Matthew nations who hope in his name."
+        }
+      ],
+      "theology": [
+        {
+          "id": "hope",
+          "note": "The nations' hope rests on a person, ‘His name’, not on a program. In Matthew the name of Jesus becomes the name into which disciples of all nations are baptized, together with the Father and the Spirit (28:19)."
+        }
+      ],
+      "refs": ["Isaiah 42:4", "Matthew 28:19", "Romans 15:12", "Isaiah 49:6"]
+    },
+    {
+      "v": "22-23",
+      "context": "A man who is demon-possessed, blind, and mute is brought to Jesus and healed so that he speaks and sees. The crowds begin to ask whether Jesus is the Son of David, and the question sets off the Pharisees' accusation. Matthew told a similar exorcism in 9:32-34, with the same charge afterward.",
+      "grammar": "Prosēnechthē autō daimonizomenos tuphlos kai kōphos, ‘there was brought to him a demon-possessed man, blind and mute’: Luke 11:14 mentions only muteness. Hōste ton kōphon lalein kai blepein, ‘so that the mute man spoke and saw’, gives the result with infinitives. Existanto pantes hoi ochloi, ‘all the crowds were astonished’, is an imperfect, a continuing amazement. Mēti houtos estin ho huios Dauid, ‘this is not the Son of David, is it?’: mēti introduces a question that expects ‘no’ or signals hesitation, so the crowd is half daring to think it.",
+      "words": ["G4374", "G1139", "G5185", "G2974", "G2323", "G1839", "G3793", "G3385", "G5207", "G1138"],
+      "history": "In Matthew the title ‘Son of David’ is spoken mostly by people seeking healing (9:27, 15:22, 20:30-31). Dennis Duling (Harvard Theological Review, 1975) argued that this reflects a Jewish tradition of Solomon, David's son, as master of healing and exorcism, which Josephus attests when he credits Solomon with incantations and methods of driving out demons (Antiquities 8.45-49). Jesus is about to claim that one greater than Solomon is here (verse 42).",
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "The crowds' question moves toward the truth Matthew has taught from his first verse, that Jesus is the Son of David (1:1). The Messiah is recognized here not by military victory but by healing and liberation."
+        }
+      ],
+      "parallels": ["Luke 11:14", "Matthew 9:32-33"],
+      "refs": ["Matthew 1:1", "Matthew 9:27", "Matthew 15:22", "Matthew 21:9"]
+    },
+    {
+      "v": "24",
+      "context": "The Pharisees cannot deny the healing, so they reinterpret its source: Jesus casts out demons only by Beelzebul, the prince of demons. The charge, already voiced in 9:34 and anticipated in 10:25, now receives Jesus' full answer.",
+      "grammar": "Houtos ouk ekballei ta daimonia ei mē en tō Beelzeboul, ‘this fellow does not cast out demons except by Beelzebul’: houtos, ‘this one’, is contemptuous, and ouk ... ei mē, ‘not ... except’, gives the BSB's ‘only by’. En is instrumental, ‘by means of’. Archonti tōn daimoniōn, ‘ruler of the demons’, stands in apposition to Beelzebul, identifying him as the head of the demonic order.",
+      "words": ["G5330", "G0191", "G3778", "G1544", "G1140", "G0954", "G0758"],
+      "text": "The Greek manuscripts read Beelzeboul (Codex Sinaiticus and Codex Vaticanus spell it Beezeboul). The King James Version's Beelzebub follows the Latin and Syriac translations, which assimilated the name to Baal-zebub, the god of Ekron in 2 Kings 1:2.",
+      "theology": [
+        {
+          "id": "sin",
+          "note": "The Pharisees see good and call it evil, the inversion Isaiah condemned (Isaiah 5:20). Their verdict is not a failure of evidence but a refusal of it, which is why Jesus will warn in verses 31 and 32 that such a settled refusal is the one path that shuts out forgiveness."
+        }
+      ],
+      "parallels": ["Mark 3:22", "Luke 11:15", "Matthew 9:34"],
+      "refs": ["Matthew 9:34", "Matthew 10:25", "Isaiah 5:20", "John 10:20-21"]
+    },
+    {
+      "v": "25-26",
+      "context": "Jesus knows their thoughts and answers with logic. A kingdom, town, or house at war with itself cannot last; if Satan were driving out Satan, his own kingdom would be falling apart. The accusation defeats itself.",
+      "grammar": "Eidōs de tas enthumēseis autōn, ‘knowing their thoughts’: eidōs is a perfect participle with present meaning. Pasa basileia meristheisa kath' heautēs erēmoutai, ‘every kingdom divided against itself is laid waste’: meristheisa is an aorist passive participle, ‘having been divided’, and erēmoō, ‘make desolate’, is related to erēmos, the word Jesus uses when he says Jerusalem's house is left ‘desolate’ (23:38). In verse 26, ei ho satanas ton satanan ekballei, eph' heauton emeristhē, ‘if Satan casts out Satan, he has been divided against himself’: the condition is assumed for argument's sake, and the aorist emeristhē treats the division as already done. Pōs oun stathēsetai hē basileia autou, ‘how then will his kingdom stand?’, assumes that Satan has a basileia, a realm set against God's.",
+      "words": ["G6063", "G1761", "G0932", "G3307", "G2049", "G4172", "G3614H", "G2476", "G4567"],
+      "history": "Jesus' hearers had a recent example of a divided kingdom laid waste. The rival Hasmonean brothers Hyrcanus II and Aristobulus II fought each other for the throne of Judea, and both appealed to Rome; in 63 BC the Roman general Pompey used their quarrel to take Jerusalem, ending Jewish independence (Josephus, Antiquities 14.29-79).",
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The saying assumes two opposed kingdoms, Satan's and God's. Jesus' exorcisms are not a quarrel inside the realm of evil but an assault on it from outside, which sets up the claim of verse 28 that God's kingdom has arrived."
+        }
+      ],
+      "parallels": ["Mark 3:23-26", "Luke 11:17-18"],
+      "refs": ["Matthew 9:4", "Matthew 23:38", "Matthew 4:8-10", "John 12:31"]
+    },
+    {
+      "v": "27",
+      "context": "A second argument turns the charge back on the accusers. Other Jews also practiced exorcism, and no one accused them of working by Satan. If Jesus' exorcisms are demonic, so are theirs; their own people will judge the charge.",
+      "grammar": "Kai ei egō en Beelzeboul ekballō ta daimonia, ‘and if I by Beelzebul cast out the demons’: egō is emphatic, and the condition is assumed for argument. Hoi huioi humōn en tini ekballousin, ‘by whom do your sons cast them out?’: ‘your sons’ is a Semitic idiom for members of their own community or their disciples, not their children. Dia touto autoi kritai esontai humōn, ‘for this reason they themselves will be your judges’: autoi, ‘they themselves’, is emphatic, and the future looks to their verdict on the Pharisees' inconsistency.",
+      "words": ["G0954", "G1544", "G1140", "G5207", "G2923"],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "Jesus holds his accusers to their own standard. The verse shows that judgment includes consistency: those who condemn in another what they approve in their own people are judged by the measure they use (7:2)."
+        }
+      ],
+      "parallels": ["Luke 11:19"],
+      "refs": ["Acts 19:13-16", "Matthew 7:1-2", "Mark 9:38-40", "Romans 2:1"]
+    },
+    {
+      "v": "28",
+      "context": "Now Jesus states what the exorcisms actually mean. If he drives out demons by the Spirit of God, then God's kingdom has already come upon his hearers. The logic runs from the source of the power to the arrival of the reign.",
+      "grammar": "Ei de en pneumati theou egō ekballō ta daimonia, ‘but if by the Spirit of God I cast out demons’: en pneumati theou is set first for emphasis, and egō is again emphatic. This condition, unlike verse 27, is one Jesus plainly affirms. Ara ephthasen eph' humas hē basileia tou theou, ‘then the kingdom of God has come upon you’: ara draws the inference, and ephthasen, an aorist of phthanō, ‘arrive, reach’, is stronger than ēngiken, ‘has come near’ (4:17, 10:7). Matthew nearly always says ‘kingdom of heaven’; ‘kingdom of God’ appears here and in only three other places (19:24, 21:31, 21:43). Luke's parallel has ‘by the finger of God’ (Luke 11:20), echoing Exodus 8:19; interpreters debate which wording is earlier, and Matthew's ties the saying to the Spirit of verse 18 and verses 31 and 32.",
+      "words": ["G4151G", "G2316", "G1473", "G1544", "G1140", "G5348", "G0932"],
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "The Spirit whom God put on his Servant (verse 18) is the power by which Jesus frees the possessed. The verse links the Spirit and the kingdom: where the Spirit is at work liberating people, God's reign is present."
+        },
+        {
+          "id": "kingdom",
+          "note": "This is one of the clearest statements that the kingdom is already present in Jesus' ministry. It stands beside sayings that it is near (4:17) and still to come (6:10), and together they describe a reign that has arrived in part and awaits its fullness."
+        }
+      ],
+      "parallels": ["Luke 11:20"],
+      "refs": ["Exodus 8:19", "Matthew 12:18", "Acts 10:38", "Luke 17:20-21", "Matthew 6:10"]
+    },
+    {
+      "v": "29",
+      "context": "A short parable explains how the exorcisms work. No one plunders a strong man's house without first tying him up. Jesus is the stronger one who has bound Satan and is now carrying off the people he held captive.",
+      "grammar": "Ē pōs dunatai tis eiselthein eis tēn oikian tou ischurou, ‘or how can anyone enter the house of the strong man?’: ē, ‘or’, offers another way of seeing the same point. Ta skeuē autou harpasai, ‘to plunder his goods’: harpazō is the verb of 11:12, which strengthens the hostile reading there, and skeuē, ‘vessels, goods’, stands for the people Satan holds. Ean mē prōton dēsē ton ischuron, ‘unless he first binds the strong man’: prōton, ‘first’, fixes the order, and deō, ‘bind’, is the verb Revelation 20:2 uses for binding the dragon. Kai tote tēn oikian autou diarpasei, ‘and then he will plunder his house’, uses the intensified compound diarpazō, ‘plunder thoroughly’.",
+      "words": ["G1410", "G1525", "G3614G", "G2478", "G4632", "G0726", "G4413G", "G1210", "G1283"],
+      "ot": [
+        {
+          "ref": "Isaiah 49:24-25",
+          "note": "The exiles ask whether prey can be taken from the mighty or captives rescued from a tyrant, and the LORD answers that he himself will take the captives of the mighty and rescue the prey of the tyrant. The Hebrew word is gibbor, ‘mighty man’, which the Septuagint renders gigas, ‘giant’. Jesus' image takes up this promise: God himself, acting in Jesus, frees his captive people from a stronger power. Isaiah 53:12 in the Septuagint adds that the Servant will divide the spoils of the strong (tōn ischurōn), the same adjective."
+        }
+      ],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The binding of the strong man became a central image for Christ's victory over evil, the theme Gustaf Aulén called the classic view in Christus Victor (1931). Interpreters differ on when the binding happened: in Jesus' victory over temptation (4:1-11), in his exorcisms, or decisively at the cross and resurrection (Colossians 2:15, Hebrews 2:14-15). Irenaeus and Augustine read the verse as Christ binding the devil, and the New Testament joins the victory to the cross."
+        },
+        {
+          "id": "kingdom",
+          "note": "The kingdom comes as an invasion of occupied territory. Satan is strong, but Jesus is stronger, and every person freed from demonic power is plunder taken back for God."
+        }
+      ],
+      "parallels": ["Mark 3:27", "Luke 11:21-22"],
+      "refs": ["Isaiah 49:24-25", "Isaiah 53:12", "Colossians 2:15", "Hebrews 2:14-15", "Revelation 20:2"]
+    },
+    {
+      "v": "30",
+      "context": "The parable forces a decision. In a war between Jesus and Satan there is no neutral ground: whoever is not with Jesus is against him, and whoever does not gather with him scatters. The saying warns the undecided crowd as well as the hostile Pharisees.",
+      "grammar": "Ho mē ōn met' emou kat' emou estin, ‘the one who is not with me is against me’: the present participle with mē describes a general class, and the prepositions meta, ‘with’, and kata, ‘against’, are set side by side with the emphatic emou. Kai ho mē sunagōn met' emou skorpizei, ‘and the one who does not gather with me scatters’, uses shepherd language: sunagō, ‘gather’, and skorpizō, ‘scatter’, describe a flock. The image recalls the shepherdless sheep of 9:36 and Jesus' mission to gather the lost sheep of Israel (10:6).",
+      "words": ["G1510", "G3326", "G2596", "G4863", "G4650"],
+      "theology": [
+        {
+          "id": "mission",
+          "note": "Jesus' work is gathering God's scattered people, and every person either joins that work or works against it. Mark 9:40, ‘whoever is not against us is for us’, guards the other side: the saying draws the line around Jesus himself, not around a particular group of his followers."
+        }
+      ],
+      "parallels": ["Luke 11:23"],
+      "refs": ["Mark 9:40", "Ezekiel 34:12-13", "John 10:12", "Matthew 9:36"]
+    },
+    {
+      "v": "31",
+      "context": "‘Therefore’ ties the warning to the Beelzebul charge. Jesus first makes the widest promise of forgiveness in the Gospels, every sin and blasphemy, and then names the one exception: blasphemy against the Spirit, which in context means calling the Spirit's evident work of liberation the work of Satan.",
+      "grammar": "Dia touto legō humin, ‘for this reason I tell you’, draws the conclusion from verses 24 to 30. Pasa hamartia kai blasphēmia aphethēsetai tois anthrōpois, ‘every sin and blasphemy will be forgiven to people’: aphethēsetai is a future passive with God as the implied forgiver, and pasa, ‘every’, is placed first. Hē de tou pneumatos blasphēmia ouk aphethēsetai, ‘but the blasphemy of the Spirit will not be forgiven’: tou pneumatos is an objective genitive, blasphemy directed against the Spirit. Blasphēmia means slander or abusive speech; against God it is speaking of him falsely or with contempt.",
+      "words": ["G3004G", "G0266", "G0988", "G0863H", "G0444", "G4151G"],
+      "history": "The saying was applied early in the churches. The Didache, from around AD 100, forbids testing or judging a prophet who speaks in the Spirit and adds that every sin will be forgiven but this one will not (Didache 11.7), which shows how the first Christians connected the saying with resisting the Spirit's present work.",
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "The Spirit is the one through whom God's forgiveness and liberation reach people. To look at the Spirit's plain work, call it demonic, and hold to that verdict is to reject the very means by which forgiveness comes, which is why this alone is named as unforgiven."
+        },
+        {
+          "id": "salvation",
+          "note": "The verse opens with the promise that every sin and blasphemy will be forgiven, and the exception does not shrink that promise. The sin in view is not a careless word, a doubt, or an unwanted blasphemous thought, but the settled hardness of people who saw God's saving work and named it Satan's."
+        }
+      ],
+      "parallels": ["Mark 3:28-29", "Luke 12:10"],
+      "refs": ["Mark 3:28-30", "Luke 12:10", "Isaiah 63:10", "Acts 7:51"]
+    },
+    {
+      "v": "32",
+      "context": "Jesus sharpens the contrast. A word against the Son of Man can be forgiven; speaking against the Holy Spirit will not be forgiven in this age or the next. The verse is the one that has caused sensitive consciences the most fear, and it needs to be read in its setting and with care.",
+      "grammar": "Hos ean eipē logon kata tou huiou tou anthrōpou, ‘whoever speaks a word against the Son of Man’, and hos d' an eipē kata tou pneumatos tou hagiou, ‘but whoever speaks against the Holy Spirit’, are parallel general relative clauses with the aorist subjunctive: each describes a kind of act. Oute en toutō tō aiōni oute en tō mellonti, ‘neither in this age nor in the one to come’, uses the Jewish division of time into ‘this age’ and ‘the age to come’ (compare m. Avot 4:16, which calls this world a vestibule before the world to come). The phrase is an emphatic way of saying ‘never’. Gregory the Great (Dialogues, book 4) inferred from it that some sins can be forgiven in the age to come, one of the texts later cited for purgatory; the Reformers answered that the idiom implies no such thing.",
+      "words": ["G2036", "G3056", "G5207", "G0444", "G0863H", "G4151G", "G0040G", "G0165G", "G3195"],
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "Many interpreters explain the difference between the Son of Man and the Spirit this way: Jesus' identity was veiled in his lowliness and could be misunderstood, as Paul says he acted ‘in ignorance’ as a persecutor (1 Timothy 1:13), while the Spirit's work in freeing the possessed was plain. Augustine (Sermon 71) identified the sin with final impenitence, and Calvin (Institutes 3.3.22) with knowing resistance to truth recognized as God's."
+        },
+        {
+          "id": "salvation",
+          "note": "Pastors from John Bunyan's day to ours have observed that the fear of having committed this sin, and the longing to be right with God, are themselves signs that one has not, since the sin is marked by hardness and contempt, not anxiety. Some who fear it live with scrupulosity, a form of obsessive-compulsive disorder in which intrusive blasphemous thoughts recur against their will; it is treatable, and seeking help from a pastor and a counselor or doctor is consistent with trusting God. Anyone whose fear has become despair or thoughts of self-harm should contact crisis services at once (in the United States, call or text 988)."
+        }
+      ],
+      "parallels": ["Luke 12:10", "Mark 3:28-29"],
+      "refs": ["1 Timothy 1:13-15", "Hebrews 6:4-6", "1 John 5:16", "1 John 1:9"]
+    },
+    {
+      "v": "33-35",
+      "context": "Jesus returns to the Pharisees' words and what they reveal. A tree is known by its fruit: if the fruit of his work is good, the tree is good, and their evil words show the state of their hearts. The saying echoes the Sermon on the Mount (7:16-20) and John the Baptist's ‘brood of vipers’ (3:7).",
+      "grammar": "Poiēsate to dendron kalon kai ton karpon autou kalon, ‘make the tree good and its fruit good’: the aorist imperative here means ‘suppose, reckon’ as much as ‘produce’: be consistent, and judge tree and fruit together. Ek gar tou karpou to dendron ginōsketai, ‘for by the fruit the tree is known’. In verse 34, gennēmata echidnōn, ‘offspring of vipers’, repeats John's words (3:7) and anticipates 23:33. Ek gar tou perisseumatos tēs kardias to stoma lalei, ‘for out of the overflow of the heart the mouth speaks’: perisseuma is what spills over from a full container. In verse 35, thēsauros, ‘treasure, storehouse’, pictures the heart as a storeroom from which a person brings out (ekballei) what is stored.",
+      "words": ["G4160G", "G1186", "G2570G", "G4550", "G2590", "G1097", "G1081G", "G2191", "G4190", "G4051", "G2588", "G2980", "G2344", "G1544"],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Jesus locates evil speech in the heart. Words are not accidents but overflow, which means that the problem the Pharisees show is not a slip of the tongue but a heart turned against God's work, and the cure must reach the heart."
+        }
+      ],
+      "parallels": ["Luke 6:43-45", "Matthew 7:16-20"],
+      "refs": ["Matthew 3:7", "Matthew 15:18-19", "James 3:10-12", "Proverbs 4:23", "Matthew 23:33"]
+    },
+    {
+      "v": "36-37",
+      "context": "Words will be weighed at the judgment, even the careless ones. The Pharisees' slander of verse 24 was no idle remark, and Jesus warns that speech both reveals and decides a person's standing before God.",
+      "grammar": "Pan rhēma argon, ‘every idle word’: argos, formed from a- and ergon, means ‘without work, useless’. The word stands in contrast with the ‘works’ (erga) of Christ and of wisdom (11:2, 11:19): idle words do nothing good. Apodōsousin peri autou logon, ‘they will give account concerning it’, is the language of settling accounts (compare 18:23, 25:19). Verse 37 shifts to the singular ‘you’, as if quoting a proverb: ek gar tōn logōn sou dikaiōthēsē, ‘for by your words you will be justified’, and katadikasthēsē, ‘you will be condemned’. Dikaioō here has its courtroom sense, ‘to acquit’, which the BSB renders “acquitted”.",
+      "words": ["G4487", "G0692", "G2980", "G0591", "G3056", "G2920", "G1344", "G2613"],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The final judgment takes account of speech because speech reveals the heart (verse 34). Christians relate this to justification by faith in different ways: Protestant readers generally take words and works as the evidence of a heart already made right by grace, while Catholic and Orthodox readers stress that the grace received in faith bears fruit that God truly judges. Both hold that no one is acquitted by their own merit and that no one's words are beyond God's notice."
+        }
+      ],
+      "refs": ["James 3:2-6", "Romans 2:6-8", "Matthew 25:31-46", "Proverbs 18:21", "Ephesians 4:29"]
+    },
+    {
+      "v": "38-39",
+      "context": "After everything the crowds have seen, some scribes and Pharisees ask for a sign, a public proof on demand. Jesus refuses: an evil and adulterous generation will be given no sign except that of the prophet Jonah. The demand is repeated in a shorter scene in 16:1-4.",
+      "grammar": "Didaskale, ‘Teacher’: in Matthew this address comes only from outsiders and opponents (8:19, 9:11, 22:16, 22:36), never from the disciples, who call Jesus ‘Lord’. Thelomen apo sou sēmeion idein, ‘we want to see a sign from you’: apo sou may mean a sign done by him or one from heaven attesting him (16:1). Genea ponēra kai moichalis, ‘an evil and adulterous generation’: moichalis, ‘adulterous’, is the prophets' picture of covenant unfaithfulness, Israel as an unfaithful wife (Hosea 2, Jeremiah 3). Sēmeion epizētei, ‘seeks a sign’, and ou dothēsetai, ‘will not be given’, a divine passive. To sēmeion Iōna tou prophētou, ‘the sign of Jonah the prophet’, can mean the sign that Jonah was or the sign that happened to Jonah; verse 40 explains it.",
+      "words": ["G1122", "G5330", "G1320", "G2309", "G4592", "G1492H", "G1074", "G4190", "G3428", "G1934", "G1325", "G2495H", "G4396"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Jesus does not refuse evidence; he has just healed a blind and mute man. He refuses a sign on demand, which would put God under the demanders' control. Faith responds to what God gives, and the sign he gives is the death and resurrection of his Son."
+        }
+      ],
+      "parallels": ["Luke 11:29", "Mark 8:11-12", "Matthew 16:1-4"],
+      "refs": ["Matthew 16:1-4", "Hosea 2:2-5", "Jeremiah 3:6-10", "1 Corinthians 1:22-23", "John 2:18-22"]
+    },
+    {
+      "v": "40",
+      "context": "Matthew alone explains the sign of Jonah as Jesus' burial and resurrection. As Jonah spent three days and nights inside the great fish and came out alive to preach, the Son of Man will spend three days and nights in the heart of the earth. The chapter note discusses how the time span fits a Friday burial and Sunday resurrection.",
+      "grammar": "Hōsper gar ēn Iōnas en tē koilia tou kētous treis hēmeras kai treis nuktas, ‘for just as Jonah was in the belly of the sea monster three days and three nights’, reproduces the Septuagint of Jonah word for word. The accusatives of time, treis hēmeras kai treis nuktas, express duration. Houtōs estai ho huios tou anthrōpou en tē kardia tēs gēs, ‘so will the Son of Man be in the heart of the earth’: ‘heart of the earth’ echoes Jonah's own prayer, where he was cast into ‘the heart of the seas’ (Jonah 2:3), and means the realm of death and the grave, not the physical center of the earth.",
+      "words": ["G1510", "G2495H", "G2836", "G2785", "G5140", "G2250", "G3571", "G5207", "G2588", "G1093G"],
+      "ot": [
+        {
+          "ref": "Jonah 1:17",
+          "note": "The Hebrew says that the LORD appointed a dag gadol, ‘great fish’, to swallow Jonah, and Jonah was in its belly shloshah yamim ushloshah leilot, ‘three days and three nights’. The verse is 2:1 in the Hebrew and the Septuagint. The Septuagint renders the fish kētos, a sea monster, and Matthew quotes its wording exactly. In Jonah the prophet's prayer from the fish describes a descent to Sheol and a rescue from the pit (2:2-6), so the book itself presents his time in the fish as a passage through death. Jesus takes that pattern as a sign of his own burial and rising."
+        }
+      ],
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "This is Matthew's first clear prediction of Jesus' resurrection, told in a riddle before the plain predictions of 16:21, 17:23, and 20:19. The one sign given to an unbelieving generation is the Son of Man's return from death, and the chief priests will remember the prediction when they seal the tomb (27:63-64)."
+        }
+      ],
+      "parallels": ["Luke 11:30"],
+      "refs": ["Jonah 2:1-6", "Matthew 16:21", "Matthew 27:63-64", "1 Corinthians 15:3-4", "Ephesians 4:9"]
+    },
+    {
+      "v": "41",
+      "context": "The men of Nineveh will rise at the judgment and condemn this generation, because they repented at Jonah's preaching, and something greater than Jonah is here. Pagans who repented at a reluctant prophet's five-word warning will testify against Israelites who refused the Messiah.",
+      "grammar": "Andres Nineuitai anastēsontai en tē krisei meta tēs geneas tautēs, ‘Ninevite men will stand up at the judgment with this generation’: anistēmi can mean to rise from the dead or to stand up in court as a witness, and both senses fit. Katakrinousin autēn, ‘they will condemn it’, means their example will show this generation's guilt. Metenoēsan eis to kērugma Iōna, ‘they repented at the preaching of Jonah’: eis here means ‘in response to’, and kērugma, ‘proclamation’, became the early church's word for its message (1 Corinthians 1:21). Kai idou pleion Iōna hōde, ‘and look, something greater than Jonah is here’: pleion is neuter, like meizon in verse 6.",
+      "words": ["G0435G", "G3536", "G0450", "G2920", "G1074", "G2632", "G3340", "G2782", "G2495H", "G4119", "G5602"],
+      "history": "Nineveh, on the Tigris opposite modern Mosul, was the last great capital of the Assyrian Empire, which destroyed the northern kingdom of Israel in 722 BC. The city fell to the Babylonians and Medes in 612 BC, and Nahum celebrates its fall. For Jesus' hearers the Ninevites were the archetypal cruel enemy, which is what makes their repentance at Jonah's preaching (Jonah 3:5-10) such a sharp contrast with Galilee's unbelief.",
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "The Ninevites repented at a warning from a reluctant prophet who worked no miracle. The verse measures this generation by that standard: the greater the messenger, the greater the guilt of those who will not turn."
+        }
+      ],
+      "parallels": ["Luke 11:32"],
+      "refs": ["Jonah 3:4-10", "Nahum 3:1-7", "Matthew 11:21-24", "Luke 11:32"]
+    },
+    {
+      "v": "42",
+      "context": "A second foreign witness joins the first. The Queen of the South traveled from the ends of the earth to hear Solomon's wisdom, and something greater than Solomon is here. The Son of David whom the crowds wondered about (verse 23) surpasses the wisest son of David.",
+      "grammar": "Basilissa notou, ‘queen of the south’: notos is the south wind and hence the south. Egerthēsetai en tē krisei, ‘will be raised at the judgment’, uses egeirō in the passive, the verb of resurrection, where verse 41 used anistēmi. Ek tōn peratōn tēs gēs, ‘from the ends of the earth’, describes her homeland as the farthest south the hearers could picture. Akousai tēn sophian Solomōnos, ‘to hear the wisdom of Solomon’, and kai idou pleion Solomōnos hōde, ‘and look, something greater than Solomon is here’, repeat the neuter comparative.",
+      "words": ["G0938H", "G3558H", "G1453", "G2920", "G2632", "G4009", "G1093G", "G4678", "G4672G", "G4119"],
+      "history": "The queen of Sheba's visit is told in 1 Kings 10:1-13 and 2 Chronicles 9:1-12. Sheba is usually identified with Saba, the kingdom of the Sabaeans in southwest Arabia, in modern Yemen, whose capital Marib grew rich on the incense trade that carried frankincense and myrrh north by caravan. Josephus calls her queen of Egypt and Ethiopia (Antiquities 8.165), and Ethiopian tradition later claimed her as the mother of its royal line.",
+      "theology": [
+        {
+          "id": "wisdom",
+          "note": "Solomon was Israel's model of God-given wisdom, and a Gentile queen made a long trip to hear it. Jesus claims to be greater than Solomon, so that his teaching is wisdom beyond what the queen came to hear, and those near him who will not listen are condemned by her example."
+        }
+      ],
+      "parallels": ["Luke 11:31"],
+      "refs": ["1 Kings 10:1-9", "2 Chronicles 9:1-8", "Matthew 11:19", "Colossians 2:2-3"]
+    },
+    {
+      "v": "43-45",
+      "context": "A parable about an evil spirit that leaves a man, finds no rest, and returns with seven worse spirits to a house swept and put in order but empty. Matthew alone applies it at the end to ‘this wicked generation’: a people that has seen demons driven out but has not received the one who drove them out is in worse danger than before.",
+      "grammar": "Hotan de to akatharton pneuma exelthē, ‘whenever the unclean spirit goes out’, is a general temporal clause. Dierchetai di' anudrōn topōn zētoun anapausin kai ouch heuriskei, ‘it passes through waterless places seeking rest and does not find it’: anapausis, ‘rest’, is the word of 11:29, where Jesus offers rest to the weary, and the contrast is pointed. In verse 44 the spirit calls the man eis ton oikon mou, ‘my house’, and finds it scholazonta, sesarōmenon kai kekosmēmenon, ‘unoccupied, swept, and put in order’: the first is a present participle, ‘standing empty’, found in Matthew and not in Luke, and the other two are perfect passive participles describing a finished cleaning. In verse 45 hepta hetera pneumata ponērotera heautou, ‘seven other spirits more evil than itself’, and ta eschata cheirona tōn prōtōn, ‘the last things become worse than the first’.",
+      "words": ["G0169", "G1831", "G1330", "G0504", "G0372", "G2147", "G1994", "G4980", "G4563", "G2885", "G2033", "G4190", "G2078", "G5501", "G1074"],
+      "theology": [
+        {
+          "id": "regeneration",
+          "note": "The house is cleaned but left empty. The parable teaches that reform without a new occupant is not safe: deliverance from evil must be followed by the presence of God, or the last state is worse than the first. The chapter's claim is that the Spirit of God, at work in Jesus, is the one who fills the house."
+        },
+        {
+          "id": "judgment",
+          "note": "Matthew's closing line turns the parable into a warning for ‘this wicked generation’. A people that saw God's liberating work and turned away is not left neutral; it becomes more exposed to evil than before, a pattern 2 Peter 2:20-22 applies to those who turn back after knowing the way."
+        }
+      ],
+      "parallels": ["Luke 11:24-26"],
+      "refs": ["Luke 11:24-26", "Matthew 11:28-29", "2 Peter 2:20-22", "Isaiah 13:21", "Luke 8:2"]
+    },
+    {
+      "v": "46-47",
+      "context": "While Jesus is still speaking, his mother and brothers arrive and stand outside wanting to speak with him, and someone passes on the message. Matthew leaves out Mark's note that his family thought he was out of his mind (Mark 3:21), so the scene turns entirely on Jesus' answer.",
+      "grammar": "Eti autou lalountos tois ochlois, ‘while he was still speaking to the crowds’, is a genitive absolute that joins this scene to the preceding speech. Heistēkeisan exō, ‘they were standing outside’, is a pluperfect of histēmi used with the sense of a past continuing state; exō, ‘outside’, is repeated in verse 47 and sets the family physically apart from the circle around Jesus. Zētountes autō lalēsai, ‘seeking to speak to him’, uses a present participle and an aorist infinitive.",
+      "words": ["G2980", "G3793", "G3384", "G0080", "G2476", "G1854", "G2212"],
+      "text": "Verse 47 is missing from Codex Sinaiticus (in its first hand), Codex Vaticanus, Codex Regius (L), and some early translations, and some modern versions put it in a footnote. Most editors think it was lost by accident, since verses 46 and 47 both end with lalēsai, ‘to speak’, and a copyist's eye could skip from one to the other; Nestle-Aland prints it in brackets. The next verse supports its originality, since Jesus answers tō legonti autō, ‘the one who told him’, which assumes the speaker of verse 47.",
+      "history": "Matthew 13:55 names Jesus' brothers as James, Joseph, Simon, and Judas, and mentions sisters. Christians have understood the relationship in three main ways. Helvidius, in the fourth century, held that they were children of Mary and Joseph born after Jesus, the view of most Protestants today. The Protevangelium of James and Epiphanius held that they were Joseph's children by an earlier marriage, the view of the Orthodox churches. Jerome (Against Helvidius, around 383) argued that they were cousins, the view that became standard in the Latin West and in Roman Catholic teaching. The Greek word adelphos can bear the wider sense, and the question is decided by other considerations.",
+      "parallels": ["Mark 3:31-32", "Luke 8:19-20"],
+      "refs": ["Matthew 13:55-56", "Mark 3:21", "John 7:3-5", "Acts 1:14", "Galatians 1:19"]
+    },
+    {
+      "v": "48-50",
+      "context": "Jesus answers with a question and a gesture. Stretching out his hand toward his disciples, he names them his mother and brothers, and then widens the circle: whoever does the will of his Father in heaven is his brother and sister and mother. The chapter that began with who may do what on the Sabbath ends with who belongs to Jesus.",
+      "grammar": "Tis estin hē mētēr mou, kai tines eisin hoi adelphoi mou, ‘who is my mother, and who are my brothers?’, is a real question that redefines the terms. Ekteinas tēn cheira autou epi tous mathētas autou, ‘stretching out his hand toward his disciples’, uses ekteinō, the verb of verse 13, where the healed man stretched out his withered hand: the chapter's two outstretched hands frame its conflict. Hostis gar an poiēsē to thelēma tou patros mou tou en ouranois, ‘for whoever does the will of my Father in heaven’, is a general relative clause; Mark has ‘the will of God’ (Mark 3:35), and Matthew's ‘my Father’ explains how Jesus can have such a family. Autos mou adelphos kai adelphē kai mētēr estin, ‘that one is my brother and sister and mother’: adelphē, ‘sister’, appears for the first time, and ‘father’ is not named, since that place belongs to God.",
+      "words": ["G3384", "G0080", "G1614", "G5495", "G3101", "G4160G", "G2307", "G3962", "G3772", "G0079"],
+      "theology": [
+        {
+          "id": "family",
+          "note": "Jesus does not disown his natural family, who appear among the believers after the resurrection (Acts 1:14). He creates a new household defined by doing the Father's will, in which men and women alike are his brothers, sisters, and mothers, and so family to one another. For those whose families have rejected them for following him (10:35-37), this is where he promises they will be received."
+        },
+        {
+          "id": "church",
+          "note": "The circle of disciples around Jesus is the first picture of the church as a family. Doing the Father's will (compare 7:21) is the mark of membership, and the risen Jesus will call his disciples ‘My brothers’ (28:10)."
+        }
+      ],
+      "parallels": ["Mark 3:33-35", "Luke 8:21"],
+      "refs": ["Matthew 7:21", "Matthew 28:10", "Acts 1:14", "Hebrews 2:11-12", "Mark 10:29-30"]
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "verses": [
+    {
+      "v": "1-2",
+      "context": "The scene opens with a time note, a place, and a guest list. “On the third day” links the wedding to the days counted since 1:19 (1:29, 1:35, 1:43), so the first sign follows directly on Jesus' promise to Nathanael that he would see greater things (1:50). Jesus' mother is present before Jesus arrives, and she is never named in John: she appears only here and at the cross (19:25-27), and both times Jesus calls her ‘woman’.",
+      "grammar": "Tē hēmera tē tritē, ‘on the third day’, is a dative of time. Counting from 1:19 the wedding falls on the sixth or seventh day of the sequence, and some commentators hear an echo of a first week of new creation; others note that at Sinai the LORD revealed his glory ‘on the third day’ (Exodus 19:11, 19:16), which fits verse 11. John does not signal either pattern explicitly, so both remain suggestions. In verse 2 the verb eklēthē, ‘was invited’, is singular though its subject is ‘Jesus and his disciples’: Greek often makes a verb agree with the nearest subject, and here the effect is to put Jesus first and the disciples in his train.",
+      "words": ["G5154", "G1062", "G2580", "G2564G", "G3101"],
+      "history": "The Mishnah fixes the weekday for weddings: a virgin is married on the fourth day of the week and a widow on the fifth, so that if the husband had a complaint about the bride's virginity he could bring it to the local court, which sat on Mondays and Thursdays (m. Ketubbot 1:1). The rule was written down around AD 200 and cannot be assumed for first-century Galilee in every detail, but it shows that weddings were bound up with law, property, and family honor, not only celebration. A village wedding drew relatives and neighbors from nearby towns, which explains why Jesus' mother, Jesus, and his new disciples, among them Nathanael of Cana (21:2), are all present.",
+      "refs": ["John 1:50-51", "John 19:25-27", "John 21:2", "Exodus 19:16"]
+    },
+    {
+      "v": "3-4",
+      "context": "The wine runs out, and Jesus' mother tells him so. Her words state a fact rather than make a request, the same way Martha and Mary later send word, “Lord, the one You love is sick” (11:3), and leave the response to him. Jesus' answer sets his action under a different clock, his hour, which the Gospel will count down until 12:23.",
+      "grammar": "Husterēsantos oinou is a genitive absolute, ‘the wine having run short’, setting the situation before the main verb. Oinon ouk echousin puts ‘wine’ first for emphasis: ‘wine they have none’. In verse 4 the idiom ti emoi kai soi (literally ‘what to me and to you?’) is discussed in the chapter note; the second half turns on hōra, ‘hour’, with the possessive mou, ‘my hour’. Oupō hēkei is present tense, ‘has not yet arrived’, using hēkō, a verb that already means ‘to have come’. In John ‘not yet’ is a loaded phrase (7:6, 7:30, 8:20): it marks a fixed appointment, not a reluctance.",
+      "words": ["G5302", "G3631", "G1135G", "G3768", "G2240", "G5610"],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The first mention of Jesus' hour comes at a wedding table, and every later use points to his death (12:23-27, 13:1, 17:1). By joining the hour to a lack of wine, John lets the reader see that the joy Jesus gives at Cana is drawn on the account of the cross, where the hour arrives."
+        }
+      ],
+      "text": "The first hand of Codex Sinaiticus and several Old Latin manuscripts give verse 3 a longer form in which the guests had no wine because the wedding wine was finished. The shorter reading, found in P66, P75, Codex Vaticanus, and most witnesses, is printed by all modern editions. In verse 4 the critical editions begin with kai, ‘and’, which the Textus Receptus lacks; the sense is the same.",
+      "refs": ["John 11:3", "John 7:6", "John 12:23", "John 19:26-27"]
+    },
+    {
+      "v": "5",
+      "context": "Mary turns from her son to the servants and tells them to do whatever he says. She has heard his reply as neither a refusal nor a rebuke she must answer, and she leaves the outcome to him. The servants become the only people at the feast who know where the good wine came from (verse 9).",
+      "grammar": "Ho ti an legē humin, poiēsate joins an indefinite relative clause (‘whatever he may say to you’) with an aorist imperative (‘do it’). The indefinite clause gives Jesus an open field: Mary does not suggest what he should do. The present subjunctive legē looks to whatever instruction comes next, while the aorist imperative calls for simple, complete compliance.",
+      "words": ["G1249", "G3004G", "G4160G"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Mary's instruction is a model of trust that does not dictate. Catholic and Orthodox readers have seen in it Mary's role of directing others to her Son, and Protestant readers a pattern of faith for every disciple; the two readings are not exclusive, and both rest on the words themselves: do whatever he tells you."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Genesis 41:55",
+          "note": "During the famine in Egypt, Pharaoh tells his hungry people to go to Joseph and do what he tells them. The Hebrew is asher yomar lakhem ta'asu, ‘what he says to you, do’; the Septuagint renders it ho ean eipē humin poiēsate, which is almost word for word John's phrase, differing only in the tense of the verb of saying. The verbal match is close enough that many commentators hear an allusion: as the Egyptians were sent to Joseph for bread in a time of want, the servants are sent to Jesus in a moment of lack. John does not draw the line himself, so the link should be offered as a probable echo, not a claim of fulfillment."
+        }
+      ],
+      "refs": ["Genesis 41:55", "Luke 1:38", "John 15:14"]
+    },
+    {
+      "v": "6",
+      "context": "The narrator pauses to describe the jars before anything happens: six of them, of stone, set there for Jewish purification, each holding two or three measures. The description tells the reader both what the water was for and how much of it there will be.",
+      "grammar": "Kata ton katharismon tōn Ioudaiōn, ‘according to the purification of the Jews’, uses kata to state purpose or custom: the jars were there to serve the purity rites. Keimenai, a present participle of keimai, ‘to lie’ or ‘to stand’, describes them as fixtures, standing there permanently rather than brought in. Chōrousai ana metrētas duo ē treis uses ana in its distributive sense, ‘two or three measures apiece’. The metrētēs was a Greek liquid measure of roughly 39 liters, about the size of the Hebrew bath. The adjective lithinai, ‘of stone’, is the detail that matters: stone, unlike pottery, could not contract impurity.",
+      "words": ["G3035", "G5201", "G2512", "G2749", "G5562", "G3355"],
+      "history": "Beyond the rule in m. Kelim 10:1 that stone vessels are not susceptible to impurity (see the chapter note), the Mishnah shows stone vessels in use for the most careful rites: the water for the ashes of the red heifer was drawn in cups of stone (m. Parah 3:2), and the washing of hands required at least a quarter-log of water poured over them (m. Yadayim 1:1). Large lathe-turned stone jars of the kind John describes have been found in Jerusalem, notably in the Burnt House in the Jewish Quarter, a priestly household destroyed in AD 70 and excavated by Nahman Avigad in the 1970s. Stone vessels decline sharply after AD 70 and largely disappear after the Bar Kokhba revolt of AD 132 to 135, which fits a practice tied to the purity culture of the late Second Temple period.",
+      "theology": [
+        {
+          "id": "law",
+          "note": "The jars belong to the law's provision for purity, which was a gift for living near a holy God, not an empty form. John sets the sign exactly there, so that what the law's washings served is now surpassed in Jesus, as the prologue said: the law came through Moses, grace and truth through Jesus Christ (1:17)."
+        }
+      ],
+      "refs": ["Mark 7:3-4", "John 3:25", "John 1:17", "Hebrews 9:13-14"]
+    },
+    {
+      "v": "7-8",
+      "context": "Jesus gives two plain orders, fill the jars and then draw and carry to the master of the feast, and the servants obey both. No word of blessing or prayer is reported. The quantity is set at the brim before anything is changed, so nothing but water went in.",
+      "grammar": "Gemisate and antlēsate are aorist imperatives, simple commands to fill and to draw, while pherete, ‘carry’, is present, a command that describes the ongoing act of taking it to the table. Heōs anō, ‘up to the top’, closes off any suggestion that something else was added. Nun, ‘now’, in verse 8 marks the turn: the jars are full, and the moment has come. B. F. Westcott suggested in his commentary that the servants drew from the well after filling the jars and that only the water drawn became wine, since antleō is the ordinary verb for drawing from a well (4:7, 4:15); most commentators take the natural sense that they drew from the jars.",
+      "words": ["G1072", "G0507", "G0501", "G5342", "G0755"],
+      "history": "The architriklinos, literally the ‘ruler of the three-couch room’, took his title from the Greco-Roman triclinium, the dining room with couches on three sides. The word is rare in Greek literature. At a village wedding in Galilee he was probably a guest or family member appointed to preside, the figure Sirach 32:1-2 advises to look after the guests before taking his own place, rather than a hired servant.",
+      "refs": ["John 4:7", "John 4:15", "John 2:5"]
+    },
+    {
+      "v": "9-10",
+      "context": "The miracle is told only in a participle: the master tastes ‘the water that had become wine’. He does not know where it came from; the servants do. His remark to the bridegroom praises the wrong man, and the irony is the point: the one who kept the good wine until now is not the groom but Jesus.",
+      "grammar": "To hudōr oinon gegenēmenon is a perfect participle: ‘the water having become wine’, a change already complete when he tastes it. John never describes the moment of change. Pothen, ‘from where’, is one of the Gospel's key questions: people will ask where Jesus comes from (7:27-28, 8:14, 9:29-30), and Pilate will ask him directly (19:9). The master does not know; the servants who drew the water know (ēdeisan, pluperfect of oida, used as a simple past). In verse 10 tetērēkas, ‘you have kept’, is perfect, stressing the state that results: the good wine has been held back and is present now, heōs arti, ‘until now’. Methusthōsin, an aorist passive subjunctive, describes guests who have drunk freely; the chapter note discusses its range.",
+      "words": ["G1096", "G1492H", "G4159", "G5083I", "G0737", "G3184", "G1640"],
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "The best wine appears last, ‘until now’. In Jewish hope the messianic age would be marked by wine in abundance (Isaiah 25:6, Amos 9:13). The master's sentence, spoken without understanding, states the logic of the whole Gospel: God has kept the best for the time of the Son."
+        }
+      ],
+      "refs": ["John 7:27-28", "John 9:29-30", "John 19:9", "Isaiah 25:6"]
+    },
+    {
+      "v": "11",
+      "context": "The narrator names what has happened: the beginning of the signs, a revelation of glory, and the disciples' faith. The verse looks back to 1:14 (‘we have seen his glory’) and forward to 4:54, where the second sign, also at Cana, is numbered.",
+      "grammar": "Tautēn epoiēsen archēn tōn sēmeiōn uses archē as a predicate: ‘this he did as the beginning of the signs’. John could have written prōton, ‘first’; archē can also mean origin or ruling principle, and several commentators hear the prologue's en archē (1:1) behind it, so that Cana is the sign that sets the pattern for the rest. Ephanerōsen, ‘revealed’, is the verb used for Jesus' being made known to Israel (1:31) and for his resurrection appearances (21:1, 21:14). Episteusan eis auton, ‘believed into him’, is John's characteristic construction for personal trust.",
+      "words": ["G0746", "G4592", "G5319", "G1391", "G4100"],
+      "theology": [
+        {
+          "id": "glory",
+          "note": "Glory is revealed at a small family feast, seen by servants and a few disciples, not by the crowd. John defines divine glory by what it does here: it supplies a need generously and quietly. The same pattern of hidden glory will reach its height at the cross."
+        },
+        {
+          "id": "faith",
+          "note": "The disciples already believed in some sense (1:41-49), and yet ‘his disciples believed in him’ after the sign. In John faith is not a single moment but a trust that deepens as Jesus reveals himself, as verse 22 will show again."
+        }
+      ],
+      "refs": ["John 1:14", "John 4:54", "John 20:30-31", "John 1:31"]
+    },
+    {
+      "v": "12",
+      "context": "A short travel note moves Jesus, his mother, his brothers, and his disciples down to Capernaum for a few days. It bridges Cana and Jerusalem and introduces the brothers, who reappear in 7:3-5, where the narrator says that even they did not believe in him.",
+      "grammar": "Katebē, ‘he went down’, is geographically exact: Cana lies in the Galilean hills, while Capernaum sits on the lakeshore, about 200 meters below sea level. Ou pollas hēmeras, ‘not many days’, is a litotes, understatement by negation, a mannerism John shares with ordinary Greek. The verb is singular again, as in verse 2, with Jesus as the lead subject.",
+      "words": ["G2597", "G2584", "G0080", "G3306"],
+      "history": "Capernaum has been extensively excavated by the Franciscan Custody of the Holy Land since the early twentieth century. Its best-known ruin, a white limestone synagogue, dates from the fourth or fifth century AD, but it stands on the basalt foundations of an earlier building that many excavators date to the first century. Nearby, beneath an octagonal Byzantine church, a first-century house shows signs of early Christian veneration, and pilgrims identified it as the house of Peter. John, unlike the Synoptic Gospels, says little about Capernaum as Jesus' base, but this verse fits their picture (Matthew 4:13, Mark 2:1).",
+      "text": "The critical editions print ‘his brothers’ with the pronoun, which some editions and manuscripts lack; the meaning is unaffected. The chapter note sets out the three historic views of who the brothers were.",
+      "refs": ["John 7:3-5", "Matthew 4:13", "Mark 3:31-35", "Acts 1:14"]
+    },
+    {
+      "v": "13",
+      "context": "Jesus goes up to Jerusalem for Passover. This is the first of three Passovers John mentions (2:13, 6:4, 11:55), the basis for the traditional reckoning that Jesus' public ministry lasted more than two years. The Synoptic Gospels narrate only one Passover, the last.",
+      "grammar": "Engus ēn to pascha tōn Ioudaiōn, ‘the Passover of the Jews was near’, explains a Jewish feast for readers who may not know it, one of several hints that John wrote with Gentile or diaspora readers in view (compare 2:6, 4:9, 19:40). Anebē, ‘went up’, is the standard verb for pilgrimage to Jerusalem, which sits on the central ridge some 750 meters above sea level, and it answers katebē, ‘went down’, in verse 12.",
+      "words": ["G1451", "G3957", "G2453", "G0305"],
+      "history": "The Law required every Israelite man to appear before the LORD at the three pilgrim feasts (Exodus 23:14-17, Deuteronomy 16:16), and Passover drew the largest crowds. Josephus claims that a census under Nero counted more than 250,000 Passover lambs and nearly three million people (Jewish War 6.422-425). The figures are generally regarded as inflated, but the scale was vast, and so was the demand for sacrificial animals and for the coinage required for the temple tax, which is the setting of the next verse.",
+      "refs": ["John 6:4", "John 11:55", "Deuteronomy 16:16", "Luke 2:41-42"]
+    },
+    {
+      "v": "14-15",
+      "context": "In the temple courts Jesus finds traders in cattle, sheep, and doves and money changers at their tables. He makes a whip of cords, drives out the animals, scatters the coins, and overturns the tables. John alone mentions the whip, the sheep and cattle, and the pouring out of coins.",
+      "grammar": "John uses two words for the money changers: kermatistas in verse 14, from kerma, ‘small coin’, and kollubistōn in verse 15, from kollubos, a small coin or exchange fee. In verse 15 pantas exebalen ek tou hierou, ta te probata kai tous boas is debated. The construction te... kai, ‘both... and’, can explain pantas, ‘all’: ‘he drove them all out, both the sheep and the cattle’, which is how the BSB and most modern versions take it, so that the whip is used on the animals. Others read pantas as the traders and the phrase as an addition, ‘and the sheep and cattle as well’. The masculine pantas fits either the men or the masculine boas. Anetrepsen, ‘overturned’, and execheen, ‘poured out’, are vivid aorists of a single decisive act.",
+      "words": ["G2411", "G4453", "G2773", "G5416", "G1544", "G2855", "G2772", "G0396"],
+      "history": "The Mishnah mentions a surcharge, the kolbon, which exchangers added when converting coins for the half-shekel tax (m. Shekalim 1:6-7), the fee from which kollubistēs takes its name. When the trade was first allowed inside the temple precincts is uncertain. Victor Eppstein (Zeitschrift für die neutestamentliche Wissenschaft 55, 1964) proposed that the high priest Caiaphas introduced the sale of animals into the outer court only around AD 30, which would make Jesus' protest a response to a recent change. The proposal rests on a combination of later rabbinic traditions and is not widely accepted as proven, but it shows that some Jews also disputed where and how the trade should be run.",
+      "parallels": ["Matthew 21:12-13", "Mark 11:15-17", "Luke 19:45-46"],
+      "refs": ["Malachi 3:1-3", "Exodus 30:13"]
+    },
+    {
+      "v": "16",
+      "context": "Jesus orders the dove sellers to remove their cages (doves could not be driven out like cattle) and gives the reason: they have turned his Father's house into a house of trade. In the Synoptic accounts Jesus quotes Isaiah 56:7 and Jeremiah 7:11 (‘a den of robbers’); in John he speaks in his own words, and the charge is commerce, not robbery.",
+      "grammar": "Arate, an aorist imperative, is a sharp command to take the things away. Mē poieite with the present imperative means ‘stop making’, forbidding an activity already under way. Ton oikon tou patros mou, ‘the house of my Father’, is the first time in John that Jesus calls God ‘my Father’, and it is the same claim he makes as a boy in the temple (Luke 2:49). Oikon emporiou, ‘a house of trade’, is a genitive of description; emporion (the root of English ‘emporium’) means a market or trading place.",
+      "words": ["G0142", "G3624G", "G3962", "G1712"],
+      "theology": [
+        {
+          "id": "temple",
+          "note": "Jesus acts not as a reformer from outside but as the Son who has a right to his Father's house. The claim to sonship is made in the place where God's presence dwelt, and it prepares for verse 21, where the Son's own body is the true house of God."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Zechariah 14:21",
+          "note": "Zechariah's last vision pictures the day of the LORD, when everything in Jerusalem will be holy to the LORD, even the cooking pots, and ‘there will no longer be a Canaanite in the house of the LORD of hosts’. The Hebrew kena'ani can mean a Canaanite or, by extension, a trader, since Canaanites were known as merchants (compare Proverbs 31:24, Hosea 12:7). The Septuagint keeps the ethnic sense, ‘Canaanite’. John does not quote the verse, but Jesus' ‘house of trade’ matches the trader sense closely, and many commentators think John means the reader to see the day of holiness Zechariah foresaw arriving in Jesus' act."
+        }
+      ],
+      "refs": ["Luke 2:49", "Isaiah 56:7", "Jeremiah 7:11"]
+    },
+    {
+      "v": "17",
+      "context": "The disciples connect what they see with a line from Psalm 69, a psalm of a righteous sufferer. The remembering may have happened at once or, like verse 22, after the resurrection; John does not say, but the future tense points beyond the moment to the cost of Jesus' zeal.",
+      "grammar": "Gegrammenon estin, a periphrastic perfect, ‘it stands written’, is the formula for Scripture that remains in force. The key difference from the psalm is the verb. The Hebrew of Psalm 69:9 has a perfect, akhalatni, ‘has consumed me’, and the Septuagint an aorist, katephagen, ‘consumed’. John's best manuscripts have the future kataphagetai, ‘will consume’. Kataphagō means to eat up or devour, and in the future it becomes a prediction: Jesus' zeal for the house of God will cost him his life.",
+      "words": ["G3403", "G1125", "G2205", "G2719"],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The zeal that clears the temple is the zeal that will consume Jesus. By changing the psalm's past tense to a future, John makes the quotation a prophecy of the passion: the temple act leads to the cross, as the Synoptic Gospels show when they place it in the last week."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Psalm 69:9",
+          "note": "In Psalm 69 (68 in the Greek numbering) a righteous man is hated without cause and mocked for his devotion, and he says that zeal for God's house has consumed him and that the insults aimed at God have fallen on him. The Hebrew qin'at beitekha akhalatni and the Septuagint ho zēlos tou oikou sou katephagen me both use a past tense; John alone has the future. Paul quotes the second half of the same verse of Christ in Romans 15:3, and John returns to Psalm 69 in 15:25 and at the cross (19:28-29, compare Psalm 69:21). The early church read the whole psalm as the voice of the suffering Messiah. The text note in the chapter note explains why some later manuscripts assimilated John's verb back to the psalm."
+        }
+      ],
+      "refs": ["Romans 15:3", "John 15:25", "John 19:28-29", "Psalm 69:21"]
+    },
+    {
+      "v": "18",
+      "context": "The authorities do not deny the abuse or defend the trade; they ask for credentials. A man who acts like a prophet in the temple should be able to show a sign that God stands behind him. The same demand returns after the feeding of the five thousand (6:30).",
+      "grammar": "Apekrithēsan ... kai eipan, ‘answered and said’, is a Semitic pairing common in John. The question ti sēmeion deiknueis hēmin, hoti tauta poieis uses hoti in a causal or explanatory sense: ‘what sign do you show us, since you do these things?’ The present tenses (deiknueis, poieis) make it a demand for a sign here and now.",
+      "words": ["G0611", "G4592", "G1166", "G4160G"],
+      "parallels": ["Mark 11:27-33", "Matthew 21:23-27", "Luke 20:1-8"],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "The authorities want a sign that proves; Jesus offers a sign that must be believed, his death and resurrection. In John signs reveal to those willing to see, and the demand for proof on the asker's terms is met with a word whose meaning will only be clear after Easter."
+        }
+      ],
+      "refs": ["John 6:30", "1 Corinthians 1:22-24", "Matthew 12:38-40"]
+    },
+    {
+      "v": "19",
+      "context": "Jesus answers with a riddle. It sounds like a claim to rebuild the sanctuary in three days if it were torn down; the narrator will explain that he meant his body. The saying survived in the tradition in garbled form as a charge against him (Mark 14:58) and a taunt at the cross (Mark 15:29).",
+      "grammar": "Lusate is an aorist imperative, ‘destroy’, but no one supposes Jesus is ordering the authorities to tear down the temple. Grammarians classify it as a conditional or ironic imperative, where the command stands for a condition: ‘destroy this temple, and in three days I will raise it’, meaning ‘if you destroy it...’. The prophets use the same figure (Amos 4:4, ‘Go to Bethel and transgress’). Egerō, ‘I will raise’, is an active future with Jesus as subject; egeirō is the verb for raising a building and for raising the dead, and the double meaning is the hinge of the riddle. Naos, the sanctuary, is discussed in the chapter note.",
+      "words": ["G3089", "G3485", "G5140", "G2250", "G1453"],
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "Jesus names himself as the one who will raise the destroyed temple. Elsewhere the New Testament usually says that God raised Jesus (Acts 2:24, Romans 10:9), and verse 22 uses the passive; John holds both together, as in 10:17-18, where the Son has authority to lay down his life and take it up again."
+        }
+      ],
+      "parallels": ["Mark 14:58", "Matthew 26:61", "Mark 15:29", "Acts 6:14"],
+      "text": "The parallel sayings differ in form. In Mark 14:58 false witnesses report Jesus as saying ‘I will destroy this temple made with hands’ and build another not made with hands; in Matthew 26:61, ‘I am able to destroy’. In John, Jesus says ‘destroy’ to his hearers: the destroyers are they, not he. The difference is significant, since the charge at the trial rests on Jesus as the destroyer, and John's form of the saying answers it."
+    },
+    {
+      "v": "20",
+      "context": "The authorities take the saying literally. The sanctuary had been under construction for forty-six years, and this Galilean speaks of three days. Their literal hearing is one of John's typical misunderstandings, and it prepares for the narrator's explanation in verse 21.",
+      "grammar": "Tesserakonta kai hex etesin oikodomēthē, literally ‘in forty-six years was built’, uses a dative of time (etesin) and an aorist passive (oikodomēthē). Grammarians read the combination two ways. Taken as a constative aorist, it summarizes the whole span of building up to the present: ‘this sanctuary has been under construction for forty-six years’, which fits Josephus's report that work continued until the 60s. Taken more strictly, it can mean ‘this sanctuary was built, and has stood, forty-six years’, counting from the completion of the naos, the inner house, which Josephus says took a year and a half (Antiquities 15.421). The emphatic su, ‘you’, in the second clause adds scorn: ‘and you will raise it in three days?’",
+      "words": ["G5062", "G1803", "G2094", "G3618", "G3485", "G1453"],
+      "history": "Josephus dates the start of Herod's rebuilding to the eighteenth year of his reign (Antiquities 15.380), which is usually reckoned as 20/19 BC, counting from Herod's capture of Jerusalem in 37 BC; Jewish War 1.401 gives the fifteenth year, a discrepancy scholars explain in different ways. Forty-six years from 20/19 BC points to AD 27 or 28, and this verse is one of the few fixed points for dating Jesus' ministry, alongside Luke's fifteenth year of Tiberius (Luke 3:1), usually placed in AD 28 or 29. If the count runs from the completion of the sanctuary about 18/17 BC, the date moves a year or two later. Either way, the figure fits the late 20s AD, and it shows that the Gospel's author knew the temple's building history.",
+      "refs": ["Luke 3:1", "John 3:4", "John 6:52"]
+    },
+    {
+      "v": "21-22",
+      "context": "The narrator steps in to explain what no one present understood: Jesus meant his body. Then he tells the reader when the disciples understood it, after the resurrection, and what they came to believe: the Scripture and Jesus' word together. The two verses give the Gospel's own account of how it was written, in the light of Easter.",
+      "grammar": "Ekeinos de, ‘but he’, sets Jesus' meaning against the hearers' in verse 20. Peri tou naou tou sōmatos autou, ‘about the temple of his body’, has a genitive of apposition: the temple that is his body. The imperfect elegen, ‘he was speaking’, describes what he meant all along. In verse 22 ēgerthē, ‘he was raised’, is an aorist passive, the usual way the New Testament speaks of God raising Jesus, set beside Jesus' own active ‘I will raise’ in verse 19. Tē graphē is singular, which in John usually means a particular passage (13:18, 19:24, 19:36); here it may be Psalm 69:9 from verse 17 or a text such as Psalm 16:10, and John does not say which.",
+      "words": ["G1565", "G3485", "G4983", "G1453", "G3403", "G1124", "G3056"],
+      "theology": [
+        {
+          "id": "temple",
+          "note": "Jesus' body is the place where God dwells and meets his people. When the Jerusalem sanctuary was destroyed in AD 70, John's readers already knew where God's house now stood: in the crucified and risen Jesus, and, as Paul would say, in the people joined to him (1 Corinthians 3:16)."
+        },
+        {
+          "id": "resurrection",
+          "note": "The resurrection is what makes sense of the saying. John is candid that the disciples did not understand at the time; their faith was formed by Jesus' rising, which confirmed his word and opened the Scriptures to them (compare Luke 24:44-45)."
+        },
+        {
+          "id": "revelation",
+          "note": "The disciples believed ‘the Scripture and the word that Jesus had spoken’, placing Jesus' own words beside Israel's Scriptures as a word from God. John's Gospel presents itself as the fruit of that remembering (14:26)."
+        }
+      ],
+      "refs": ["John 12:16", "John 14:26", "Luke 24:44-45", "1 Corinthians 3:16", "Revelation 21:22"]
+    },
+    {
+      "v": "23-25",
+      "context": "While in Jerusalem for the feast, Jesus does signs that John does not narrate (compare 3:2, 4:45), and many believe in his name. Jesus, however, does not entrust himself to them, because he knows what is in people. The paragraph closes the temple scene and opens the Nicodemus scene, which begins with ‘a man’ (3:1).",
+      "grammar": "Theōrountes, ‘seeing’, is a present participle giving the ground of their belief: they believed as they watched the signs. Ouk episteuen auton autois is an imperfect, ‘he was not entrusting himself to them’, a settled stance rather than a single decision. Dia to auton ginōskein pantas uses an articular infinitive with dia to give the reason: ‘because he knew all people’. In verse 25 chreian eichen hina tis marturēsē has a hina clause explaining the need, ‘he had no need that anyone should testify’, and tō anthrōpō uses a generic article: human beings as such.",
+      "words": ["G2334", "G4592", "G4100", "G3686", "G1097", "G5532", "G3140", "G0444"],
+      "theology": [
+        {
+          "id": "attributes",
+          "note": "Scripture says that God alone knows the human heart (1 Kings 8:39, Jeremiah 17:10). John ascribes that knowledge to Jesus without qualification, and he shows it at work in the next chapters, with Nathanael (1:47-48), Nicodemus, and the Samaritan woman (4:18)."
+        },
+        {
+          "id": "faith",
+          "note": "The same verb names both sides: many believed, but Jesus did not believe himself to them. Faith drawn by spectacle is real but not yet the trust that Jesus answers with self-giving; the chapter shows the difference without despising the beginning."
+        }
+      ],
+      "text": "Editions differ over the pronoun in verse 24. The Nestle-Aland text prints auton, ‘him’, used reflexively, while the Textus Receptus and other editions have the reflexive heauton, ‘himself’. The meaning is the same in every case.",
+      "refs": ["1 Kings 8:39", "Jeremiah 17:10", "John 1:47-48", "John 3:1-2", "John 6:64"]
+    }
+  ]
+}

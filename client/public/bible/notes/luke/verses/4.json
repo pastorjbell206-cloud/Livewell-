@@ -1,0 +1,783 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "Luke ties the temptation directly to the baptism and the genealogy that precede it. The Jesus who has just been named the beloved Son (3:22) and traced back to ‘Adam, son of God’ (3:38) now goes into the wilderness full of the Spirit who came on him at the Jordan.",
+      "grammar": "Plērēs pneumatos hagiou, ‘full of the Holy Spirit’, is a phrase Luke uses of Jesus only here and later of Stephen, the seven, and Barnabas (Acts 6:3, 6:5, 7:55, 11:24): the Spirit-filled life of the church mirrors its Lord. The verb ēgeto is an imperfect passive, ‘he was being led’, and the best-attested text reads en tē erēmō, ‘in the wilderness’, not ‘into’ it (the later Byzantine text has eis tēn erēmon). The effect is that the Spirit leads Jesus throughout the forty days, not merely delivers him to the place. Mark 1:12 is blunter (the Spirit ‘drives him out’); Matthew 4:1 says he was led up ‘to be tempted’.",
+      "words": [
+        "G4134",
+        "G4151G",
+        "G0071",
+        "G2048",
+        "G5290"
+      ],
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "The Spirit does not remove Jesus from testing but leads him into it and through it. Luke's Christology is Spirit-shaped from the start: conceived by the Spirit (1:35), anointed at the Jordan (3:22), led in the wilderness (4:1), empowered in Galilee (4:14), and claiming Isaiah's anointing (4:18)."
+        }
+      ],
+      "parallels": [
+        "Matthew 4:1",
+        "Mark 1:12"
+      ],
+      "refs": [
+        "Luke 3:22",
+        "Luke 3:38",
+        "Acts 10:38",
+        "Deuteronomy 8:2"
+      ]
+    },
+    {
+      "v": "2",
+      "context": "The forty days recall Israel's forty years of testing in the wilderness and the forty-day fasts of Moses and Elijah. In Luke the testing runs through the whole period; the three temptations that follow are its climax, when Jesus is at his weakest.",
+      "grammar": "Peirazomenos is a present participle: Jesus was ‘being tested’ during the forty days, whereas Matthew 4:2-3 places the fast first and the tempter's arrival after it. The verb peirazō covers both ‘test’ and ‘tempt’; the same event can be God's proving of his Son and the devil's attempt to make him fall. Diabolos, ‘slanderer, accuser’, is the Septuagint's word for the satan (the adversary) in Job 1-2 and Zechariah 3:1. Luke says simply that he ‘ate nothing’ (ouk ephagen ouden), where Matthew uses the religious term ‘fasted’.",
+      "words": [
+        "G3985G",
+        "G1228",
+        "G5062",
+        "G5315",
+        "G3983"
+      ],
+      "history": "Forty is a number of testing and preparation throughout Israel's Scriptures: Moses was on the mountain forty days and nights without bread or water (Exodus 34:28; Deuteronomy 9:9), Elijah went forty days on the strength of one meal to Horeb (1 Kings 19:8), and Israel wandered forty years, which Deuteronomy 8:2 interprets as God humbling and testing his people to know what was in their heart.",
+      "parallels": [
+        "Matthew 4:2",
+        "Mark 1:13"
+      ],
+      "refs": [
+        "Deuteronomy 8:2-3",
+        "Exodus 34:28",
+        "1 Kings 19:8",
+        "Hebrews 4:15"
+      ]
+    },
+    {
+      "v": "3-4",
+      "context": "The first test aims at hunger and at sonship together. Jesus answers not with a display of power but with the words Moses spoke to a hungry Israel, taking his place as the Son who trusts his Father to feed him.",
+      "grammar": "Ei huios ei tou theou is a first-class condition, which assumes the premise for the sake of argument: ‘since you are the Son of God’ is closer to the force than a doubting ‘if’. The devil does not question the voice from heaven (3:22); he proposes that sonship be used for self-preservation. Luke has ‘this stone’ and ‘bread’ in the singular, a single loaf for a hungry man, where Matthew 4:3 has ‘these stones’ and ‘loaves’. Jesus answers with gegraptai, a perfect passive, ‘it stands written’: Scripture spoken once still holds.",
+      "words": [
+        "G1487G",
+        "G5207",
+        "G3037",
+        "G0740",
+        "G1125",
+        "G2198",
+        "G3441"
+      ],
+      "text": "The earliest manuscripts (Codex Sinaiticus, Codex Vaticanus, and others) end the quotation at ‘bread alone’. Codex Alexandrinus and the Byzantine text add the rest of Deuteronomy 8:3, ‘but by every word of God’, which is why the King James Version is longer. The addition is almost certainly borrowed from Matthew 4:4.",
+      "ot": [
+        {
+          "ref": "Deuteronomy 8:3",
+          "note": "Moses reminds Israel that God let them hunger and then fed them with manna, to teach them that man does not live by bread alone but by everything that comes from the mouth of the LORD. The Septuagint renders the second half ‘by every word (rhēma) that goes out through the mouth of God’. Luke quotes only the first half, word for word with the Septuagint. Where Israel grumbled for food in the wilderness (Exodus 16), the Son accepts hunger and waits on his Father."
+        }
+      ],
+      "parallels": [
+        "Matthew 4:3-4"
+      ],
+      "refs": [
+        "Exodus 16:2-4",
+        "John 4:34",
+        "Luke 3:22",
+        "Luke 22:42"
+      ]
+    },
+    {
+      "v": "5-7",
+      "context": "The second test in Luke is the third in Matthew. The devil offers the world's kingdoms at the price of worship. Luke gives no mountain (only ‘led Him up’) and adds that the vision came ‘in an instant’, which suggests a visionary experience rather than a literal view.",
+      "grammar": "Oikoumenē, ‘the inhabited world’, is the word Luke used in 2:1 for the reach of Augustus's census decree: the devil offers the empire that ruled Luke's readers. En stigmē chronou, ‘in a point of time’, occurs only here in the New Testament. The devil's claim in verse 6 turns on paradedotai, a perfect passive, ‘it has been handed over’, without saying by whom. Luke later has Jesus use the same verb of himself: ‘All things have been entrusted to Me by My Father’ (10:22). The condition in verse 7, ean proskunēsēs enōpion emou, uses the Semitic ‘worship before me’; proskuneō is the ordinary word for bowing down in homage and for worship of God.",
+      "words": [
+        "G0321",
+        "G3625",
+        "G4743",
+        "G0932",
+        "G1849",
+        "G1391",
+        "G3860",
+        "G4352"
+      ],
+      "theology": [
+        {
+          "id": "idolatry",
+          "note": "The offer is authority without the cross, gained by bowing to another power. The temptation names the root of idolatry: worship given to whatever promises to deliver the world on easier terms than God's."
+        },
+        {
+          "id": "kingdom",
+          "note": "The devil's claim to hand out kingdoms is left unrefuted in the moment but overturned by the Gospel: authority over all things is given to the Son by the Father (10:22; Daniel 7:14), and the kingdom comes through suffering (24:26)."
+        }
+      ],
+      "text": "The Byzantine text adds ‘the devil’ as subject and ‘into a high mountain’ from Matthew 4:8. The earlier manuscripts lack both.",
+      "parallels": [
+        "Matthew 4:8-9"
+      ],
+      "refs": [
+        "Luke 10:22",
+        "John 12:31",
+        "1 John 5:19",
+        "Daniel 7:14",
+        "Luke 24:26"
+      ]
+    },
+    {
+      "v": "8",
+      "context": "Jesus answers from the Shema's chapter: the LORD alone is to be worshiped and served. The refusal comes before the offer can be weighed.",
+      "grammar": "Both verbs are future indicatives used as commands, the way the Septuagint renders Hebrew law (‘you shall worship’, ‘you shall serve’). Latreuō is the verb of religious service, used in the Septuagint for Israel's worship of God and for idolatrous service of other gods. Monō, ‘only’, stands at the point of emphasis.",
+      "words": [
+        "G4352",
+        "G3000",
+        "G3441",
+        "G2962G",
+        "G1125"
+      ],
+      "text": "The Byzantine text and the King James Version add ‘Get behind me, Satan’, drawn from Matthew 4:10 (or from Jesus' words to Peter in Mark 8:33). The earliest manuscripts of Luke lack it.",
+      "ot": [
+        {
+          "ref": "Deuteronomy 6:13",
+          "note": "The Hebrew reads ‘the LORD your God you shall fear and him you shall serve’, part of the warning that when Israel enters the land and eats its fill it must not forget the LORD and follow other gods (6:10-15). The Septuagint keeps ‘fear’ and adds monō, ‘him only’, which the Hebrew implies but does not say. Matthew 4:10 and Luke both read ‘worship’ (proskunēseis) in place of ‘fear’, fitting the devil's demand, and keep the Septuagint's ‘only’. The verse that guarded Israel against the gods of Canaan now guards the Son against the god of this age."
+        }
+      ],
+      "theology": [
+        {
+          "id": "worship",
+          "note": "Worship belongs to God alone. Jesus, who later receives worship after the resurrection (24:52), here refuses to give it to any creature, and his answer defines worship as undivided service."
+        }
+      ],
+      "parallels": [
+        "Matthew 4:10"
+      ],
+      "refs": [
+        "Deuteronomy 6:4-5",
+        "Luke 24:52",
+        "Revelation 22:8-9",
+        "Exodus 20:3"
+      ]
+    },
+    {
+      "v": "9-11",
+      "context": "The last test takes place in Jerusalem, at the temple, the city where Luke's Gospel began (1:5-23) and where it will end (24:52-53). This time the devil quotes Scripture himself, a psalm of trust, to invite a spectacle.",
+      "grammar": "Pterugion, ‘little wing’, is the word rendered ‘pinnacle’; it names some high edge of the temple complex, but no one knows exactly which. Hieron is the whole temple precinct, not the sanctuary (naos) proper. Bale seauton enteuthen katō, ‘throw yourself down from here’, is an aorist imperative calling for one decisive act. The conjunction gar (‘for’) presents the psalm as the devil's ground: God has promised protection, so claim it.",
+      "words": [
+        "G4419",
+        "G2411",
+        "G0906G",
+        "G2419",
+        "G1781",
+        "G1314",
+        "G4350"
+      ],
+      "history": "Josephus describes the Royal Portico on the south side of Herod's temple as standing so high above the Kidron ravine that anyone looking down from its roof grew dizzy (Antiquities 15.411-412). Early Christian tradition preserved by Hegesippus and quoted by Eusebius (Ecclesiastical History 2.23) says James the brother of Jesus was set on the pterugion of the temple and thrown down, the same word Luke uses here.",
+      "ot": [
+        {
+          "ref": "Psalm 91:11-12",
+          "note": "The psalm (90 in the Septuagint) promises the one who dwells in the shelter of the Most High that God will command his angels to guard him in all his ways. The devil's wording follows the Septuagint closely. Luke keeps ‘to guard you’ (tou diaphulaxai se), which Matthew 4:6 omits, but both leave out ‘in all your ways’, the phrase that ties the promise to walking in God's way rather than to a stunt. The psalm's next verse speaks of trampling the lion and the serpent, which Luke's Jesus later gives his disciples authority to do (10:19)."
+        }
+      ],
+      "parallels": [
+        "Matthew 4:5-6"
+      ],
+      "refs": [
+        "Luke 13:33-34",
+        "Luke 10:19",
+        "Luke 23:35-39",
+        "Luke 24:52-53"
+      ]
+    },
+    {
+      "v": "12-13",
+      "context": "Jesus refuses to force God's hand. The devil leaves, but only for a time; Luke is marking the conflict as unfinished, and it returns with Judas and the passion (22:3, 22:53).",
+      "grammar": "Eirētai, ‘it has been said’, is another perfect passive for Scripture's standing word; Matthew 4:7 has ‘again it is written’. Ekpeiraseis is the intensive compound ‘put to the test’, the same verb the lawyer uses of Jesus in 10:25. In verse 13 achri kairou means ‘until an opportune time’. Hans Conzelmann (Die Mitte der Zeit, 1954, translated as The Theology of St Luke) read it as opening a ‘Satan-free’ period in Jesus' ministry until 22:3; critics point out that Jesus still casts out demons and speaks of Satan's fall (10:18) in the meantime, so the phrase is better read as a warning of a later, decisive return.",
+      "words": [
+        "G2046",
+        "G1598",
+        "G4931",
+        "G3986G",
+        "G0868",
+        "G2540"
+      ],
+      "ot": [
+        {
+          "ref": "Deuteronomy 6:16",
+          "note": "The Hebrew reads ‘you shall not test the LORD your God as you tested him at Massah’, recalling Exodus 17:1-7, where thirsty Israel demanded water and asked, ‘Is the LORD among us or not?’ The Septuagint's ekpeiraseis is the verb Luke uses. To throw himself down and require rescue would be to demand proof of God's presence, the sin of Massah. Matthew's order ends the temptations on the mountain (the offer of the kingdoms), so that Jesus' final word is about worship; Luke's ends at the temple with this verse. Scholars differ on which order is earlier; most, including Joseph Fitzmyer in his Anchor Bible commentary (1981), think Matthew's order is the earlier and that Luke moved the temple scene last because his whole Gospel moves toward Jerusalem."
+        }
+      ],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Faith trusts God's promises without staging tests to make him prove them. Jesus will be protected by God in the end, but by resurrection, not by being spared from falling."
+        }
+      ],
+      "parallels": [
+        "Matthew 4:7",
+        "Matthew 4:11"
+      ],
+      "refs": [
+        "Exodus 17:7",
+        "Luke 22:3",
+        "Luke 22:53",
+        "Luke 10:18",
+        "Hebrews 2:18"
+      ]
+    },
+    {
+      "v": "14-15",
+      "context": "Luke's summary of the Galilean ministry opens with the Spirit again: the one led by the Spirit in the wilderness returns in the Spirit's power. Teaching in synagogues is the first activity named, and the response is at first universal praise.",
+      "grammar": "En tē dunamei tou pneumatos, ‘in the power of the Spirit’, joins two words Luke often pairs (1:17, 1:35, Acts 1:8, 10:38). Edidasken is an imperfect of habitual action, ‘he was teaching’. Doxazomenos, ‘being glorified’, is striking: elsewhere in Luke people glorify God after Jesus' deeds (2:20, 5:25-26); here the praise is directed at Jesus himself, and the next scene shows how quickly it can turn.",
+      "words": [
+        "G1411",
+        "G4151G",
+        "G5345",
+        "G4066",
+        "G1321",
+        "G4864",
+        "G1392"
+      ],
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "Luke places the Spirit's power at the beginning of Jesus' public work, as he will at the beginning of the church's (Acts 1:8, 2:4). The ministry that follows is the Spirit's work through the Son."
+        }
+      ],
+      "parallels": [
+        "Matthew 4:12-17",
+        "Mark 1:14-15"
+      ],
+      "refs": [
+        "Acts 10:38",
+        "Acts 1:8",
+        "Luke 1:35"
+      ]
+    },
+    {
+      "v": "16",
+      "context": "Jesus comes home. Luke stresses that synagogue attendance on the Sabbath was his settled habit and that he stood to read, the posture of respect for the text being read.",
+      "grammar": "Tethrammenos, ‘having been brought up’, is a perfect passive participle that looks back to the childhood summaries of 2:39-40 and 2:51-52. Kata to eiōthos autō, ‘according to his custom’, is the phrase Luke later uses of Paul going into synagogues on the Sabbath (Acts 17:2). Nazara is an unusual Greek form of the town's name, found elsewhere only in Matthew 4:13. Anestē anagnōnai, ‘he stood up to read’, may mean he was invited, or that he offered himself; the verse does not say.",
+      "words": [
+        "G3478",
+        "G5142",
+        "G1486",
+        "G4521",
+        "G4864",
+        "G0450",
+        "G0314"
+      ],
+      "history": "First-century synagogues are known both from texts and from the ground. The Theodotus inscription, found by Raymond Weill in 1913 on the Ophel ridge south of the Temple Mount and dated by most scholars before AD 70, records in Greek that Theodotus son of Vettenus, a priest and ruler of the synagogue (archisynagōgos), son and grandson of synagogue rulers, built the synagogue for the reading of the Law and the teaching of the commandments, with a guest house and water installations for visitors from abroad. Josephus (Against Apion 2.175) and Philo both describe weekly gatherings to hear and learn the Law, and Acts 15:21 speaks of Moses being read in the synagogues every Sabbath. Buildings from the period have been excavated at Gamla, Masada, Herodium, and Magdala (found in 2009). No first-century synagogue has been identified at Nazareth.",
+      "parallels": [
+        "Matthew 13:53-54",
+        "Mark 6:1-2"
+      ],
+      "refs": [
+        "Luke 2:39-40",
+        "Luke 2:51-52",
+        "Acts 13:14-15",
+        "Acts 15:21",
+        "Acts 17:2"
+      ]
+    },
+    {
+      "v": "17",
+      "context": "The scroll is handed to Jesus and he finds the passage. Luke slows the scene to single actions, and the phrase ‘He found the place’ suggests Jesus chose the text rather than merely reading an assigned one, though Luke does not settle the question.",
+      "grammar": "Epedothē, ‘was handed’, is an aorist passive, with the attendant of verse 20 as the implied agent. Biblion here is a scroll, not a codex (a bound book). Anaptuxas, ‘having unrolled’, is the reading of Codex Sinaiticus, Codex Bezae, and most later manuscripts, printed in the Nestle-Aland text; Codex Vaticanus and several other early witnesses read anoixas, ‘having opened’, a verb better suited to a codex, which is why some editors (Westcott and Hort, Tregelles) preferred it as the harder reading. Either way the sense is the same. Heuren ton topon, ‘he found the place’, uses topos for a passage of Scripture, as in Acts 8:32.",
+      "words": [
+        "G1929",
+        "G0975",
+        "G2268",
+        "G0380",
+        "G2147",
+        "G5117"
+      ],
+      "history": "A complete Isaiah scroll from about 125 BC was found at Qumran in 1947 (1QIsaiah-a); it is about 7.3 meters (24 feet) long, and chapter 61 falls near its end, so finding the passage meant rolling through most of the book. The Mishnah, written down about AD 200, describes the later practice: a reading from the Law followed by one from the Prophets, and it permits the reader to skip from one place to another in the Prophets but not in the Law (m. Megillah 4:4). Whether a fixed cycle of prophetic readings already existed in Jesus' day is debated; the evidence for one is later.",
+      "text": "On anaptuxas (‘unrolled’) versus anoixas (‘opened’), see the grammar note. English versions follow the first.",
+      "parallels": [
+        "Matthew 13:54"
+      ],
+      "refs": [
+        "Acts 8:32-35",
+        "Acts 13:15",
+        "Nehemiah 8:5-8"
+      ]
+    },
+    {
+      "v": "18",
+      "context": "Jesus reads Isaiah's words about the Spirit-anointed messenger. In Luke's design this reading is Jesus' own statement of his mission, and each line is fulfilled somewhere in the Gospel: good news to the poor (6:20, 7:22), release (5:20, 13:16), sight for the blind (7:21, 18:35-43).",
+      "grammar": "Echrisen, ‘he anointed’, is the verb behind the title Christos, ‘anointed one’; the anointing points back to the Spirit's descent at the Jordan, as Peter later says (Acts 10:38). Hou heineken, ‘because’, makes the anointing the reason for the Spirit's presence. The switch from aorist (‘anointed’) to perfect (apestalken, ‘has sent’) presents the sending as a commission still in force. Aphesis appears twice, ‘release’ for captives and ‘release’ for the oppressed. It is the same noun Luke uses for the forgiveness of sins (1:77, 3:3, 24:47), and the double use invites the reader to hear both liberation and forgiveness in it. Euangelisasthai ptōchois, ‘to announce good news to the poor’, puts the poor first among the recipients.",
+      "words": [
+        "G5548",
+        "G2097",
+        "G4434",
+        "G0649",
+        "G2784",
+        "G0164",
+        "G0859",
+        "G0309",
+        "G2352"
+      ],
+      "text": "The Byzantine text and the King James Version include ‘to heal the brokenhearted’ after ‘He has sent Me’, a line that stands in Isaiah 61:1. It is absent from Codex Sinaiticus, Codex Vaticanus, Codex Bezae, and other early witnesses, and was likely restored by scribes who knew Isaiah; most modern editions omit it.",
+      "ot": [
+        {
+          "ref": "Isaiah 61:1",
+          "note": "The Hebrew speaks of the Spirit of the Lord GOD upon the prophet because the LORD has anointed him to bring good news to the afflicted (anavim), to bind up the brokenhearted, to proclaim liberty (deror) to captives and ‘opening’ (peqach-qoach) to the bound. The Septuagint, which Luke follows almost word for word, has ‘the Spirit of the Lord’, renders anavim by ptōchois (‘poor’), deror by aphesis, and reads the obscure ‘opening’ as ‘recovery of sight to the blind’. Luke's text omits ‘to heal the brokenhearted’ and inserts a line from elsewhere (see Isaiah 58:6 below)."
+        },
+        {
+          "ref": "Isaiah 58:6",
+          "note": "‘To release the oppressed’ comes from Isaiah 58:6, where God describes the fast he wants: loosing the bonds of wickedness and letting the crushed (retsutsim) go free. The Septuagint reads apostelle tethrausmenous en aphesei, ‘send away the broken in release’; Luke turns the imperative into an infinitive to fit the sentence. The two passages are joined by the shared word aphesis, a way of linking texts by a common term that later rabbis called gezerah shavah. Isaiah 58 ties that release to justice for the hungry and the oppressed, and with the insertion, the social demands of true worship become part of Jesus' mission."
+        }
+      ],
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "Jesus applies to himself a text about one anointed by the Spirit. Luke's readers know that Christ means anointed; here the anointing is defined by what it does, bringing good news, release, and sight."
+        },
+        {
+          "id": "justice-poor",
+          "note": "The poor are the first named recipients of the good news, and Isaiah 58's call to free the oppressed is written into the mission. The verse will not let the gospel be only inward, nor only social: aphesis means both release and forgiveness."
+        }
+      ],
+      "parallels": [
+        "Matthew 11:5"
+      ],
+      "refs": [
+        "Acts 10:38",
+        "Luke 7:22",
+        "Luke 13:16",
+        "Isaiah 42:6-7",
+        "Luke 1:77"
+      ]
+    },
+    {
+      "v": "19",
+      "context": "Jesus ends the reading in the middle of Isaiah's sentence, at ‘the year of the Lord’s favor’, before its next words, the day of our God's vengeance. The stopping point is part of the message: the season now opened is one of grace.",
+      "grammar": "Eniauton kuriou dekton, ‘an acceptable year of the Lord’, translates the Hebrew shenat-ratson, ‘a year of favor’. Luke's kēruxai (‘to proclaim’) replaces the Septuagint's kalesai (‘to call’), repeating the verb of verse 18. The adjective dektos returns in verse 24, where a prophet is not dektos, ‘accepted’, in his hometown. The favorable year is announced, and the hometown will not find the herald favorable.",
+      "words": [
+        "G2784",
+        "G1763",
+        "G2962G",
+        "G1184"
+      ],
+      "history": "Isaiah's ‘liberty’ and ‘year of favor’ draw on the Jubilee of Leviticus 25, the fiftieth year proclaimed with the ram's horn on the Day of Atonement, when liberty (deror) was declared throughout the land, Israelite slaves went free, and family land returned to its owners. There is no clear evidence that the Jubilee was ever carried out in full; Jeremiah 34:8-22 records a release of slaves under Zedekiah that was quickly revoked. At Qumran, the Melchizedek text (11Q13), from about the first century BC, weaves Leviticus 25, Deuteronomy 15, and Isaiah 61 into a vision of a final Jubilee in which a heavenly Melchizedek proclaims release and atonement, and 4Q521 expects the Lord to heal the wounded, raise the dead, and bring good news to the poor. Jesus' reading belongs to that stream of hope.",
+      "ot": [
+        {
+          "ref": "Isaiah 61:2",
+          "note": "The Hebrew continues: to proclaim the year of the LORD's favor and the day of vengeance of our God, to comfort all who mourn. The Septuagint keeps the pairing (eniauton kuriou dekton kai hēmeran antapodoseōs). Jesus stops before ‘the day of vengeance’. Interpreters read the omission differently. Many see it as marking the present as the time of grace, with judgment still to come (Luke 21:22 calls the fall of Jerusalem ‘days of vengeance’, using the noun ekdikēsis). Joachim Jeremias (Jesus' Promise to the Nations, 1956; English 1958) argued that it was the omission of vengeance on Israel's enemies that offended the hearers. The Jubilee reading has been developed in different directions: John Howard Yoder (The Politics of Jesus, 1972) argued that Jesus was proclaiming a real Jubilee with economic and social demands, while others read the year of favor as the messianic age of salvation, of which economic release is a sign rather than the substance."
+        },
+        {
+          "ref": "Leviticus 25:10",
+          "note": "‘Proclaim liberty throughout the land’ is where the Hebrew deror, the word of Isaiah 61:1, has its legal home, and the Septuagint renders it aphesis, as it names the Jubilee itself eniautos apheseōs, ‘year of release’. Luke's Greek readers would hear the Jubilee in the word."
+        }
+      ],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "The favorable year is the time when God's salvation is offered freely. The omission of vengeance does not deny judgment (Luke speaks of it often), but orders the time: grace now, and the verdict later."
+        },
+        {
+          "id": "judgment",
+          "note": "Judgment is deferred, not abolished. The line Jesus leaves unread reappears in his warnings over Jerusalem (19:41-44, 21:22)."
+        }
+      ],
+      "refs": [
+        "Leviticus 25:8-13",
+        "Isaiah 49:8",
+        "2 Corinthians 6:2",
+        "Luke 21:22",
+        "Jeremiah 34:8-17"
+      ]
+    },
+    {
+      "v": "20-21",
+      "context": "Every movement is narrated: the scroll rolled up, returned, and Jesus seated. Then comes the shortest possible sermon, and Luke gives only its first sentence, the claim that the Scripture just read is fulfilled in the hearing of those present.",
+      "grammar": "Hupēretēs is an assistant or attendant, here the synagogue official. Ekathisen, ‘he sat down’, is the teacher's posture (5:3; Matthew 5:1). Atenizontes, ‘staring intently’, is a verb Luke uses far more than any other New Testament writer, often at a moment of revelation (Acts 1:10, 6:15, 7:55). In verse 21, ērxato legein (‘he began to say’) implies that more followed. Sēmeron peplērōtai is a perfect passive: the Scripture ‘has been fulfilled’ and stands fulfilled. En tois ōsin humōn, ‘in your ears’, is a Semitic idiom: the fulfillment is happening as they listen.",
+      "words": [
+        "G4428",
+        "G5257",
+        "G2523",
+        "G0816",
+        "G0757",
+        "G4594",
+        "G4137",
+        "G1124",
+        "G3775"
+      ],
+      "history": "The Mishnah describes the synagogue attendant (the ḥazzan) taking the Torah scroll from its place and handing it to the head of the synagogue in the rituals of the Day of Atonement (m. Yoma 7:1) and of the king's reading (m. Sotah 7:8). Reading while standing and teaching while seated both fit what later Jewish sources describe.",
+      "theology": [
+        {
+          "id": "prophecy",
+          "note": "‘Today’ is fulfillment language. Luke uses sēmeron at turning points (2:11, 19:9, 23:43): the promised future has arrived in the person of Jesus, and his hearers are its witnesses."
+        }
+      ],
+      "refs": [
+        "Luke 2:11",
+        "Luke 19:9",
+        "Luke 23:43",
+        "Luke 24:44",
+        "Acts 6:15"
+      ]
+    },
+    {
+      "v": "22",
+      "context": "The first reaction is admiring, but the question ‘Isn’t this the son of Joseph?’ sets up the conflict. Luke's readers know that Jesus was only ‘thought to be’ Joseph's son (3:23); the village sees only the carpenter's boy.",
+      "grammar": "Emarturoun autō, ‘they were bearing witness to him’, uses a dative that normally expresses favor (they spoke well of him). Jeremias argued that it could mean ‘they bore witness against him’, which would make the mood hostile from the start, but most commentators keep the favorable sense, which suits the marveling that follows. Logois tēs charitos, ‘words of grace’, can mean gracious, attractive speech or words about God's grace; both fit. Ouchi expects a yes answer: ‘Surely this is Joseph's son, isn't it?’",
+      "words": [
+        "G3140",
+        "G2296",
+        "G3056",
+        "G5485",
+        "G3780",
+        "G2501G"
+      ],
+      "parallels": [
+        "Matthew 13:54-56",
+        "Mark 6:2-3",
+        "John 6:42"
+      ],
+      "refs": [
+        "Luke 3:23",
+        "Luke 2:48-49",
+        "John 1:45-46",
+        "Psalm 45:2"
+      ]
+    },
+    {
+      "v": "23",
+      "context": "Jesus anticipates their demand: if he healed in Capernaum, let him prove it at home. The mention of Capernaum, before Luke has narrated any work there, shows Luke has brought this scene forward to open the ministry.",
+      "grammar": "Pantōs ereite, ‘surely you will say’, is a confident future. Parabolē here means a proverb, the Greek counterpart of the Hebrew mashal, which covers sayings, riddles, and parables. Iatre, therapeuson seauton is a vocative with an aorist imperative, ‘Physician, heal yourself’. En tē patridi sou, ‘in your hometown’, introduces the word patris that returns in verse 24.",
+      "words": [
+        "G3843",
+        "G3850",
+        "G2395",
+        "G2323",
+        "G2584",
+        "G3968"
+      ],
+      "history": "The proverb was widespread. Genesis Rabbah 23:4 has a version in Hebrew (‘Physician, physician, heal your own limp’), and Greek literature knows the figure of the doctor who treats others while himself full of sores. The saying's point is that someone who claims power should show it first among his own. The mocking at the cross has the same form: he saved others; let him save himself (23:35-39).",
+      "parallels": [
+        "Mark 6:5"
+      ],
+      "refs": [
+        "Luke 23:35-39",
+        "Luke 4:31-41",
+        "John 4:48"
+      ]
+    },
+    {
+      "v": "24",
+      "context": "Jesus answers with a saying about prophets that all four Gospels record in some form. He accepts the role of prophet and explains in advance why his home will reject him.",
+      "grammar": "Amēn legō humin, ‘truly I tell you’, is the first of Luke's six uses of this solemn formula, a Hebrew word of affirmation that Jesus distinctively places before his own sayings rather than after someone else's. Dektos, ‘acceptable’, is the adjective of verse 19. The year of the Lord's dektos has been announced, but the prophet himself is not dektos at home, a wordplay only visible in the Greek. Mark 6:4 says instead that a prophet is not ‘without honor’ except at home.",
+      "words": [
+        "G0281",
+        "G4396",
+        "G1184",
+        "G3968"
+      ],
+      "history": "The Gospel of Thomas, saying 31 (also preserved in the Greek papyrus fragment P.Oxyrhynchus 1), pairs this saying with the physician proverb: no prophet is accepted in his own village, no physician heals those who know him. Scholars debate whether Thomas preserves an independent form or combines Luke's two sayings.",
+      "parallels": [
+        "Mark 6:4",
+        "Matthew 13:57",
+        "John 4:44"
+      ],
+      "refs": [
+        "Jeremiah 11:21",
+        "Luke 13:33-34",
+        "Acts 7:51-52"
+      ]
+    },
+    {
+      "v": "25-26",
+      "context": "Jesus takes his first precedent from Elijah. God sent the great prophet during the famine not to any Israelite widow but to a Gentile widow in Sidonian territory. God's freedom to show mercy beyond Israel is the point, and the hearers feel it.",
+      "grammar": "Ep’ alētheias, ‘in truth’, is a variation on the ‘amen’ of verse 24. Ekleisthē ho ouranos, ‘the heaven was shut’, is a divine passive: God closed it. Ei mē in verse 26 normally means ‘except’, but the widow of Zarephath was not one of Israel's widows, so it has the sense ‘but only’; the same construction appears in verse 27. Epemphthē, ‘was sent’, is another passive with God as the sender, echoing the ‘He has sent Me’ of verse 18.",
+      "words": [
+        "G0225",
+        "G5503",
+        "G2243",
+        "G2808",
+        "G3042",
+        "G3992",
+        "G4558",
+        "G4606"
+      ],
+      "history": "Zarephath (Sarepta in Greek) was a Phoenician coastal town between Tyre and Sidon; excavations there in the 1970s, led by James Pritchard, uncovered a Phoenician harbor town. It lay in the heartland of Baal worship, the region of Jezebel's father Ethbaal, king of the Sidonians (1 Kings 16:31). First Kings 18:1 dates the rain's return to ‘the third year’; Luke's ‘three years and six months’ agrees with James 5:17 and reflects a Jewish reckoning of the drought's full length, perhaps also shaped by the three and a half years of distress in Daniel 7:25 and 12:7.",
+      "ot": [
+        {
+          "ref": "1 Kings 17:8-16",
+          "note": "In the famine God sends Elijah to a widow in Zarephath, who shares her last flour and oil and is sustained until the rain returns. The Septuagint calls the place ‘Sarepta of Sidonia’, Luke's exact phrase. Later the same widow's son is raised (17:17-24), a story Luke echoes when Jesus raises the widow's son at Nain and ‘gave him back to his mother’ (7:15, the words of 1 Kings 17:23 in the Greek)."
+        }
+      ],
+      "theology": [
+        {
+          "id": "mission",
+          "note": "The mission that Isaiah's text describes already reached Gentiles in Israel's own history. Jesus' precedents foreshadow Luke's second volume, where the gospel refused in synagogues is received by Gentiles (Acts 13:46, 28:28)."
+        }
+      ],
+      "refs": [
+        "1 Kings 18:1",
+        "James 5:17",
+        "Luke 7:11-17",
+        "Acts 13:46",
+        "Acts 28:28"
+      ]
+    },
+    {
+      "v": "27",
+      "context": "The second precedent comes from Elisha: of all the people with skin disease in Israel, the one healed was Naaman, commander of the army of Aram (Syria), Israel's enemy.",
+      "grammar": "Leproi, ‘lepers’, is an adjective used as a noun. Ekatharisthē, ‘was cleansed’, is the language of ritual purity from Leviticus 13-14, not only of healing; Luke will use katharizō when Jesus touches a leper in 5:12-13. Naiman ho Suros, ‘Naaman the Syrian’, puts the foreigner's nationality last, where it lands hardest.",
+      "words": [
+        "G3015",
+        "G1666",
+        "G2511",
+        "G3497",
+        "G4948"
+      ],
+      "ot": [
+        {
+          "ref": "2 Kings 5:1-14",
+          "note": "Naaman, commander of the army of the king of Aram, comes to Elisha on the word of a captured Israelite girl, is told to wash seven times in the Jordan, and comes up with flesh like a little child's. The king of Israel's panic (‘Am I God, to kill and to make alive?’, 5:7) shows that cleansing such a disease was thought to be God's work alone. Second Kings 7:3-10 mentions four lepers at the gate of Samaria in the same period, the ‘many lepers in Israel’ of Jesus' remark."
+        }
+      ],
+      "theology": [
+        {
+          "id": "election",
+          "note": "Israel's election is not a fence against God's mercy to others. The Scriptures Nazareth honored already record God choosing a Gentile general for healing while Israel's own sufferers waited."
+        }
+      ],
+      "refs": [
+        "2 Kings 7:3",
+        "Luke 17:15-18",
+        "Luke 5:12-13"
+      ]
+    },
+    {
+      "v": "28-30",
+      "context": "Admiration turns to fury. The villagers drive Jesus out of town and try to hurl him from a cliff, but he walks through them and leaves. The scene anticipates the whole Gospel: rejection by his own, an attempt to kill him outside the town, and a way forward that his enemies cannot block.",
+      "grammar": "Eplēsthēsan thumou, ‘they were filled with rage’, uses the same ‘filled’ verb Luke elsewhere uses for being filled with the Spirit (1:15, 1:41), now filled with the opposite. Exebalon auton exō tēs poleōs, ‘they threw him out of the town’, is the language used when Stephen is driven out and stoned (Acts 7:58). Hōste katakrēmnisai, ‘so as to throw him down headlong’, expresses intended result. In verse 30, dielthōn dia mesou autōn eporeueto, ‘passing through their midst he went on’, uses the imperfect of poreuomai, the verb of Jesus' purposeful going that dominates the road to Jerusalem (9:51, 13:33).",
+      "words": [
+        "G4130",
+        "G2372",
+        "G1544",
+        "G3790",
+        "G3735",
+        "G2630",
+        "G1330",
+        "G4198"
+      ],
+      "history": "Nazareth lay on the slopes of a basin in the Lower Galilean hills, and its rock slopes and steep drops fit Luke's description. The traditional ‘Mount of Precipitation’ (Jebel Qafzeh) lies a few kilometers southeast of the ancient village, too far to match ‘the brow of the hill on which the town was built’. The Mishnah (m. Sanhedrin 6:4) describes the execution by stoning as beginning with a push from a height of twice a man's stature, and some interpreters see an attempted lynching of that kind here; others take it simply as mob violence.",
+      "refs": [
+        "Luke 13:33",
+        "Luke 9:51",
+        "Acts 7:58",
+        "John 8:59",
+        "John 10:39"
+      ]
+    },
+    {
+      "v": "31-32",
+      "context": "Jesus goes down to Capernaum, his new base, and teaches on the Sabbath. The contrast with Nazareth is immediate: there they tried to throw him out; here they are astonished at the authority of his word.",
+      "grammar": "Katēlthen, ‘he went down’, is geographically exact: Nazareth sits in the hills and Capernaum on the lakeshore, some two hundred meters below sea level. Ēn didaskōn is a periphrastic imperfect, ‘he was teaching’, describing an ongoing activity. Exeplēssonto, ‘they were struck out of themselves’, is a strong word for astonishment. Hoti en exousia ēn ho logos autou, ‘because his word was with authority’: Luke omits Mark's comparison with the scribes (Mark 1:22) and places the authority in the word itself, which the exorcism will then demonstrate.",
+      "words": [
+        "G2718",
+        "G2584",
+        "G1321",
+        "G4521",
+        "G1605",
+        "G1322",
+        "G1849",
+        "G3056"
+      ],
+      "parallels": [
+        "Mark 1:21-22",
+        "Matthew 7:28-29"
+      ],
+      "refs": [
+        "Matthew 4:13",
+        "Luke 7:1",
+        "Luke 10:15"
+      ]
+    },
+    {
+      "v": "33-34",
+      "context": "In the synagogue itself a demonized man interrupts. The first being in Luke's narrative of the ministry to name Jesus correctly is a demon, and it names him with terror.",
+      "grammar": "Pneuma daimoniou akathartou, ‘a spirit of an unclean demon’, is an unusual doubling. In ordinary Greek a daimonion could be a neutral or even benign divine being, so Luke may add ‘unclean’ to make its nature plain to Gentile readers. Ea is an interjection of surprise or dismay. Ti hēmin kai soi, literally ‘what to us and to you?’, is a Hebrew idiom (mah-li valakh) meaning ‘what do we have to do with each other?’, the words of the widow of Zarephath to Elijah (1 Kings 17:18) and of David to the sons of Zeruiah (2 Samuel 16:10). ‘Us’ speaks for the demonic world. Oida se tis ei, ‘I know who you are’, has been read as an attempt to gain power over Jesus by naming him, a technique known from ancient magical texts.",
+      "words": [
+        "G1140",
+        "G0169",
+        "G1436",
+        "G3479",
+        "G0622",
+        "G6063",
+        "G0040G"
+      ],
+      "theology": [
+        {
+          "id": "angels",
+          "note": "The demons know who Jesus is and fear destruction. Their recognition is true in content and hostile in intent, which is why Jesus refuses their testimony (4:35, 41)."
+        }
+      ],
+      "parallels": [
+        "Mark 1:23-24"
+      ],
+      "refs": [
+        "1 Kings 17:18",
+        "Psalm 106:16",
+        "James 2:19",
+        "John 6:69"
+      ]
+    },
+    {
+      "v": "35",
+      "context": "Jesus silences the demon and commands it out with two words. Luke adds a physician's kind of detail: the demon threw the man down but came out without harming him.",
+      "grammar": "Epetimēsen, ‘rebuked’, is a verb of authoritative command; Luke uses it for demons (4:35, 41), a fever (4:39), and later the wind and waves (8:24). Phimōthēti is an aorist passive imperative of a verb meaning ‘muzzle’: be silenced. Mēden blapsan auton, ‘having harmed him in nothing’, is Luke's addition; Mark 1:26 reports convulsions and a loud cry.",
+      "words": [
+        "G2008",
+        "G5392",
+        "G1831",
+        "G4496",
+        "G0984"
+      ],
+      "history": "Josephus (Antiquities 8.46-48) describes a Jewish exorcist named Eleazar who, in the presence of Vespasian, drew a demon out through a man's nostrils with a ring containing a root prescribed by Solomon, reciting incantations, and proved its departure by having it overturn a basin of water. The contrast with Luke's scene is sharp: no ring, no root, no incantation, only a command.",
+      "parallels": [
+        "Mark 1:25-26"
+      ],
+      "refs": [
+        "Luke 8:24",
+        "Luke 8:29",
+        "Acts 16:18"
+      ]
+    },
+    {
+      "v": "36-37",
+      "context": "The synagogue's reaction names the two qualities Luke has joined throughout the chapter, authority and power. The report spreads, fulfilling in advance the summary of verse 14.",
+      "grammar": "Tis ho logos houtos can mean ‘what is this word?’ or, reflecting the Hebrew davar (both ‘word’ and ‘thing’), ‘what is this matter?’. Either way the stress falls on the word that achieved it. En exousia kai dunamei, ‘with authority and power’: authority is the right to command, power the ability to effect. Ēchos in verse 37 is literally ‘sound’, the word Luke uses for the noise from heaven at Pentecost (Acts 2:2).",
+      "words": [
+        "G2285",
+        "G3056",
+        "G1849",
+        "G1411",
+        "G2004",
+        "G2279"
+      ],
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The unclean spirits obey a word. The kingdom Jesus proclaims arrives as a liberation of people held captive by evil, the release of verse 18 made visible (compare 11:20)."
+        }
+      ],
+      "parallels": [
+        "Mark 1:27-28"
+      ],
+      "refs": [
+        "Luke 11:20",
+        "Luke 9:1",
+        "Acts 10:38"
+      ]
+    },
+    {
+      "v": "38-39",
+      "context": "From the synagogue to Simon's house: the same authority reaches a private sickbed. Simon has not yet been introduced as a disciple (that comes in 5:1-11), so Luke assumes readers know who he is.",
+      "grammar": "Sunechomenē puretō megalō, ‘held fast by a great fever’, uses a verb of being gripped or constrained. Epistas epanō autēs, ‘standing over her’, and epetimēsen tō puretō, ‘he rebuked the fever’, treat the illness with the same word used of the demon in verse 35, whereas Mark 1:31 has Jesus take her hand and raise her. Diēkonei, an imperfect, ‘she began to serve them’, uses the verb from which ‘deacon’ comes; Luke later applies it to the women who supported Jesus (8:3) and to Jesus himself (22:27).",
+      "words": [
+        "G3994",
+        "G4912",
+        "G4446",
+        "G3173",
+        "G2186",
+        "G2008",
+        "G0863G",
+        "G1247"
+      ],
+      "history": "W. K. Hobart (The Medical Language of St. Luke, 1882) pointed to ‘great fever’ as a technical term, since Galen says physicians distinguished great and small fevers, and used it to support the tradition that Luke was a physician (Colossians 4:14). Henry J. Cadbury (The Style and Literary Method of Luke, published in 1919-1920) showed that most of Hobart's ‘medical’ vocabulary also appears in non-medical writers such as Josephus, Plutarch, and Lucian, so the language cannot prove the author's profession, though it does not disprove it either. At Capernaum, Franciscan excavations from 1968 under Virgilio Corbo and Stanislao Loffreda found, beneath a fifth-century octagonal church, a house of the first century whose main room was later plastered and set apart for gatherings, with Christian graffiti. Its identification as Simon Peter's house is an ancient tradition that the evidence makes plausible but cannot prove.",
+      "parallels": [
+        "Mark 1:29-31",
+        "Matthew 8:14-15"
+      ],
+      "refs": [
+        "1 Corinthians 9:5",
+        "Luke 8:3",
+        "Luke 22:27",
+        "Colossians 4:14"
+      ]
+    },
+    {
+      "v": "40-41",
+      "context": "At sunset the Sabbath ends, and the town brings its sick to Simon's door. Jesus lays hands on each one, and again silences the demons who know that he is the Christ.",
+      "grammar": "Dunontos tou hēliou, ‘as the sun was setting’, is a genitive absolute marking the end of the Sabbath, when carrying the sick was again permitted. Heni hekastō, ‘on each one’, is Luke's addition to Mark 1:32-34: the healing is personal, not wholesale. In verse 41 the demons' cry, ‘You are the Son of God’, is explained by the narrator as knowledge that he was the Christos, so Luke treats the two titles as interpreting each other. Ouk eia is an imperfect, ‘he would not allow’, and ēdeisan is a pluperfect, ‘they already knew’.",
+      "words": [
+        "G1416",
+        "G2246",
+        "G3554",
+        "G4164",
+        "G1520",
+        "G1538",
+        "G5495",
+        "G2007",
+        "G2323",
+        "G1439",
+        "G1492I",
+        "G5547"
+      ],
+      "history": "Carrying burdens from one domain to another was forbidden on the Sabbath (Jeremiah 17:21-22, and among the thirty-nine categories of work in m. Shabbat 7:2), so the crowd waits for sunset. The laying on of hands for healing is not described in the Old Testament, but the Genesis Apocryphon from Qumran (1QapGen 20) has Abram pray for Pharaoh and lay his hands on his head to drive away the afflicting spirit.",
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "The narrator confirms what the demons say: Jesus is the Christ, the Son of God. Jesus silences them because the confession he wants is not extracted by terror but given by disciples (9:20), and because his messiahship must be understood through the cross (9:21-22)."
+        }
+      ],
+      "parallels": [
+        "Mark 1:32-34",
+        "Matthew 8:16-17"
+      ],
+      "refs": [
+        "Luke 9:20-22",
+        "Luke 13:13",
+        "Acts 28:8",
+        "Jeremiah 17:21-22"
+      ]
+    },
+    {
+      "v": "42-43",
+      "context": "The crowds try to keep Jesus, a reversal of Nazareth, which tried to throw him out. He will not be kept: the kingdom must be announced in other towns, because that is why he was sent.",
+      "grammar": "Kateichon auton, ‘they were holding him back’, is an imperfect of attempted action. Dei, ‘it is necessary’, is Luke's word for the divine necessity that governs Jesus' life (2:49, 9:22, 13:33, 24:7, 24:26, 24:44). Euangelisasthai tēn basileian tou theou, ‘to announce the good news of the kingdom of God’, is the first time Jesus names the kingdom in Luke, and it repeats the verb of Isaiah 61 from verse 18. Apestalēn, ‘I was sent’, answers apestalken, ‘He has sent Me’, in the same reading.",
+      "words": [
+        "G2048",
+        "G2722",
+        "G2087",
+        "G2097",
+        "G1163",
+        "G0932",
+        "G0649"
+      ],
+      "theology": [
+        {
+          "id": "mission",
+          "note": "Jesus' mission is defined by movement outward. The needs of one town, however real, do not hold him, because he is sent to proclaim the kingdom to all; Luke's second volume carries the same necessity to the ends of the earth (Acts 1:8)."
+        },
+        {
+          "id": "kingdom",
+          "note": "The kingdom of God is the content of the good news, and it is announced before it is explained. Luke uses the phrase some thirty times, beginning here."
+        }
+      ],
+      "parallels": [
+        "Mark 1:35-38"
+      ],
+      "refs": [
+        "Luke 2:49",
+        "Luke 8:1",
+        "Luke 9:22",
+        "Acts 1:8",
+        "Acts 28:31"
+      ]
+    },
+    {
+      "v": "44",
+      "context": "A closing summary. The earliest manuscripts say Jesus preached in the synagogues of ‘Judea’, though he has been working in Galilee.",
+      "text": "The earliest witnesses (Papyrus 75, Codex Sinaiticus, Codex Vaticanus, and others) read Ioudaias, ‘of Judea’; Codex Alexandrinus, Codex Bezae, and the Byzantine text read ‘of Galilee’, matching Mark 1:39 and the setting. ‘Galilee’ is best explained as a scribal correction of a surprising reading, not the reverse, so modern editions print ‘Judea’. Luke sometimes uses Judea in a wide sense for the whole land of the Jews (1:5, 7:17, 23:5; Acts 10:37), and that is probably its sense here.",
+      "history": "In Luke's usage, Judea can mean the Roman administrative district around Jerusalem or, more broadly, the whole Jewish homeland, as when Herod the Great is called ‘king of Judea’ (1:5) though he ruled Galilee too.",
+      "parallels": [
+        "Mark 1:39",
+        "Matthew 4:23"
+      ],
+      "refs": [
+        "Luke 1:5",
+        "Luke 7:17",
+        "Luke 23:5",
+        "Acts 10:37"
+      ]
+    }
+  ]
+}

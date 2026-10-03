@@ -1,0 +1,420 @@
+{
+  "verses": [
+    {
+      "v": "1-2",
+      "context": "Having silenced every questioner (22:46), Jesus speaks about the scribes and Pharisees to the crowds and his disciples. He begins by granting their position: they sit in Moses' seat. The chapter's severity is set from the start within an acknowledgment of real authority.",
+      "grammar": "Tote, ‘then’, Matthew's favorite connective, ties the speech to the silence that ended chapter 22. Ekathisan, ‘they sat’ or ‘they have taken their seat’, is an aorist that many grammarians take in the sense of a Hebrew perfect, describing a settled state: they occupy the seat. A few interpreters have heard in it a claim the scribes made for themselves, ‘they have seated themselves’, but the next verse, which tells the crowds to heed them, tells against that reading. Epi tēs Mōuseōs kathedras, ‘on the seat of Moses’, uses kathedra, the word from which ‘cathedral’ comes.",
+      "words": ["G5119", "G2980", "G3793", "G3101", "G3475", "G2515", "G2523", "G1122", "G5330"],
+      "history": "Sitting was the posture of the teacher and the judge. Moses ‘took his seat to judge the people’ (Exodus 18:13), Jesus sat to teach on the mountain and in the temple (5:1, 26:55), and the stone seats found in later Galilean synagogues, at Chorazin and Hammath Tiberias, show that a place of honor for the one who expounded the Law became a fixture of synagogue furniture. Whether the phrase names such a chair in Jesus' day or is a figure for teaching authority, it places the scribes in Moses' succession as interpreters of the Torah.",
+      "theology": [
+        {
+          "id": "leadership",
+          "note": "Jesus does not deny that the scribes and Pharisees hold a real office. His critique is aimed at how they hold it. The chapter's teaching on leadership begins by distinguishing the authority of a role from the character of those who fill it."
+        }
+      ],
+      "parallels": ["Mark 12:38", "Luke 20:45"],
+      "refs": ["Exodus 18:13", "Matthew 5:1", "Matthew 26:55", "Nehemiah 8:4-8"]
+    },
+    {
+      "v": "3",
+      "context": "The crowds are told to do and keep everything the scribes and Pharisees tell them, but not to imitate their deeds, because they speak and do not act. The instruction is startling after Jesus' warnings about the Pharisees' tradition (15:1-20) and his command to beware of their teaching (16:6, 16:12).",
+      "grammar": "Panta oun hosa ean eipōsin humin, ‘therefore all things whatever they say to you’, is sweeping. Poiēsate kai tēreite, ‘do and keep’, pairs an aorist imperative with a present imperative. Kata de ta erga autōn mē poieite, ‘but according to their works do not act’, sets their deeds against their words, and the reason is compressed into four Greek words, legousin gar kai ou poiousin, ‘for they say and do not do’.",
+      "words": ["G3956", "G3767", "G3745", "G2036", "G4160G", "G5083G", "G2041", "G3004G"],
+      "theology": [
+        {
+          "id": "law",
+          "note": "Interpreters reconcile this verse with 16:12 in several ways. Mark Allan Powell (1995) argued that ‘Moses' seat’ refers to the scribes' role in reading the Torah aloud, so that Jesus commends what they read from Moses, not their own rulings. Others read ‘everything’ as limited to their faithful teaching of the Law, or take the command as ironic. On any reading, Jesus affirms the Law they teach and condemns the gap between their words and their lives, the same gap he warned of in 7:21-23."
+        }
+      ],
+      "refs": ["Matthew 16:6", "Matthew 16:12", "Matthew 7:21-23", "Romans 2:21-23", "James 1:22"]
+    },
+    {
+      "v": "4",
+      "context": "Their teaching loads others with heavy burdens that they will not lift a finger to move. The picture of a porter's heavy pack on another man's shoulders contrasts with Jesus' own invitation, whose burden is light (11:30).",
+      "grammar": "Desmeuousin, ‘they bind up’, is the verb for tying a load into a bundle. Phortia barea, ‘heavy burdens’, uses the noun Jesus used of his own burden, to phortion mou elaphron, ‘my burden is light’ (11:30). Autoi de tō daktulō autōn ou thelousin kinēsai auta, ‘but they themselves with their finger are not willing to move them’, can mean either that they will not help others carry the loads, by easing a ruling, or that they themselves will not carry what they require. Many commentators prefer the first, since the image is of others' shoulders.",
+      "words": ["G1195", "G5413", "G0926", "G1419", "G2007", "G5606", "G1147", "G2309", "G2795"],
+      "text": "The words kai dusbastakta, ‘and hard to bear’, are absent from some early manuscripts, and editions divide: the Westcott and Hort and SBL texts omit them, NA28 prints them. They may have come in from Luke 11:46, where the same adjective appears.",
+      "theology": [
+        {
+          "id": "leadership",
+          "note": "A leader who multiplies demands on others while exempting himself has misunderstood authority. Jesus' contrast with his own easy yoke (11:28-30) and the apostles' refusal to lay an unbearable yoke on Gentile believers (Acts 15:10) show the pattern he wants: leaders who carry burdens with people, not onto them (Galatians 6:2)."
+        }
+      ],
+      "parallels": ["Luke 11:46"],
+      "refs": ["Matthew 11:28-30", "Acts 15:10", "Galatians 6:2", "Luke 11:46"]
+    },
+    {
+      "v": "5",
+      "context": "Everything they do is done to be seen. Jesus names two visible marks of devotion, the phylacteries and the tassels, and says they are enlarged for display. The verse echoes the Sermon on the Mount's warning against practicing righteousness before others to be seen by them (6:1).",
+      "grammar": "Pros to theathēnai tois anthrōpois, ‘in order to be seen by people’, is an articular infinitive of purpose, the exact phrase of 6:1, pros to theathēnai autois. Platunousin, ‘they broaden’, and megalunousin, ‘they enlarge’, are presents of habitual action. Phulaktēria, ‘phylacteries’, is a Greek word meaning a safeguard or protective charm; Jews called them tefillin, and the Greek name may reflect how outsiders saw them. Kraspeda, ‘tassels’, is the word the Greek Old Testament uses for the fringes of Numbers 15:38.",
+      "words": ["G3956", "G2041", "G4160G", "G2300", "G0444", "G4115", "G5440", "G3170", "G2899"],
+      "history": "Josephus describes the practice of bearing on the forehead and arm reminders of God's mighty acts (Antiquities 4.213), based on Deuteronomy 6:8, 11:18, and Exodus 13:9, 16. Leather tefillin cases and their tiny parchment slips have been found in the caves near Qumran; the cases are small, and some slips include the Ten Commandments, which later rabbinic practice left out. Tassels, with a cord of blue, were commanded so that Israel would look at them and remember the commandments (Numbers 15:38-39). Jesus wore them himself (9:20, 14:36).",
+      "theology": [
+        {
+          "id": "holiness",
+          "note": "Both practices were given by God to turn the eyes and heart toward his commands. Enlarged for an audience, they turn the eyes of others toward the wearer. The verse does not fault the practices; it shows how the signs of holiness can be emptied by the wish to be seen having them."
+        }
+      ],
+      "parallels": ["Mark 12:38"],
+      "refs": ["Matthew 6:1", "Deuteronomy 6:8", "Numbers 15:38-39", "Matthew 9:20"]
+    },
+    {
+      "v": "6-7",
+      "context": "They love honor: the best couches at banquets, the front seats in synagogues, greetings in the marketplaces, and being addressed as Rabbi. The list moves from private feasts to public worship to the street, every place a person can be seen.",
+      "grammar": "Philousin, ‘they love’, governs the whole list. Prōtoklisia, ‘the first reclining place’, and prōtokathedria, ‘the first seat’, are compounds with prōtos, ‘first’, naming ranked positions. Aspasmous en tais agorais, ‘greetings in the marketplaces’, and kaleisthai hupo tōn anthrōpōn Rhabbi, ‘to be called Rabbi by people’, complete the list with a present passive infinitive: the pleasure is in being addressed.",
+      "words": ["G5368", "G4411", "G1173", "G4410", "G4864", "G0783", "G0058", "G2564G", "G0444", "G4461"],
+      "history": "Rabbi, from Hebrew rav, ‘great’, with the suffix ‘my’, was a respectful address to a teacher in Jesus' day; John translates it as ‘Teacher’ (John 1:38). After AD 70 it became the formal title of ordained sages. At banquets the couches were ranked by nearness to the host, which is why Jesus told guests to take the lowest place (Luke 14:7-11), and James warns churches against seating the rich in the good places (James 2:1-4).",
+      "theology": [
+        {
+          "id": "leadership",
+          "note": "The love of rank is a temptation for every religious leader, not a peculiarity of the first century. Jesus places it among the marks of a faith performed for an audience, and his own disciples had argued over who would sit at his right and left (20:20-28)."
+        }
+      ],
+      "parallels": ["Mark 12:38-39", "Luke 11:43", "Luke 20:46"],
+      "refs": ["Luke 14:7-11", "James 2:1-4", "John 1:38", "Matthew 20:20-28"]
+    },
+    {
+      "v": "8",
+      "context": "Jesus turns to his disciples directly: they are not to be called Rabbi, for they have one Teacher and are all brothers. The first of three prohibitions builds a community without ranks of honor.",
+      "grammar": "Humeis de, ‘but you’, is emphatic and contrasts the disciples with the scribes of verse 7. Mē klēthēte, ‘do not be called’, an aorist subjunctive with mē, forbids the practice. Heis gar estin humōn ho didaskalos, ‘for one is your Teacher’, puts heis, ‘one’, first, the word of the Shema's confession that the LORD is one. Pantes de humeis adelphoi este, ‘and all of you are brothers’, gives the consequence: equals under one teacher.",
+      "words": ["G4771", "G2564G", "G4461", "G1520", "G1320", "G3956", "G0080"],
+      "text": "The King James Version reads ‘for one is your Master, even Christ’. The earliest manuscripts have kathēgētēs, ‘instructor’, or didaskalos, ‘teacher’, without ‘Christ’, and the name was brought over from verse 10 by later scribes.",
+      "theology": [
+        {
+          "id": "church",
+          "note": "The disciples' community is a family of brothers and sisters under one Teacher. Jesus has already defined his family as those who do his Father's will (12:50), and after the resurrection he calls the disciples ‘my brothers’ (28:10). Teaching remains a gift in the church (Ephesians 4:11), but no teacher stands above the rest as a rival to Christ."
+        }
+      ],
+      "refs": ["Matthew 12:50", "Matthew 28:10", "John 13:13-14", "James 3:1"]
+    },
+    {
+      "v": "9",
+      "context": "The second prohibition: call no one on earth your father, for you have one Father, the one in heaven. The title father was given to revered teachers and founders of schools, and Jesus reserves its highest sense for God.",
+      "grammar": "Kai patera mē kalesēte humōn epi tēs gēs, ‘and do not call anyone your father on earth’, puts patera, ‘father’, first for emphasis. The contrast epi tēs gēs, ‘on earth’, and ho ouranios, ‘the heavenly one’, frames the saying. Heis gar estin humōn ho patēr ho ouranios, ‘for one is your Father, the heavenly one’, repeats heis from verse 8. Matthew uses ‘your Father in heaven’ and ‘your heavenly Father’ more than any other Gospel.",
+      "words": ["G3962", "G2564G", "G1093G", "G1520", "G3770"],
+      "history": "Calling a revered teacher father was an old custom. Elisha cried ‘my father, my father’ as Elijah was taken (2 Kings 2:12), and a king of Israel addressed Elisha the same way (2 Kings 6:21, 13:14). The Mishnah calls Hillel and Shammai the fathers of the world (m. Eduyot 1:4), and the tractate of the sages' sayings is named Avot, ‘Fathers’. Paul calls himself a father to his converts (1 Corinthians 4:15), and Stephen addresses the council as ‘brothers and fathers’ (Acts 7:2).",
+      "theology": [
+        {
+          "id": "god",
+          "note": "God alone is Father in the ultimate sense, the source of the disciples' life and the one whose will defines their family. Protestant readers have often applied the verse against clerical titles; Catholic and Orthodox readers, noting Paul's usage, read it as forbidding any human claim to rival God's fatherhood rather than all use of the word. Both agree that no teacher may take the place of God."
+        }
+      ],
+      "refs": ["2 Kings 2:12", "1 Corinthians 4:15", "Matthew 6:9", "Ephesians 3:14-15"]
+    },
+    {
+      "v": "10",
+      "context": "The third prohibition: do not be called instructors, for you have one Instructor, the Christ. The three titles, Rabbi, Father, Instructor, are answered by the one Teacher, the one Father in heaven, and the Christ.",
+      "grammar": "Kathēgētēs, ‘instructor’ or ‘guide’, occurs only here in the New Testament, twice. In Greek usage it named a private tutor or a philosopher's teacher, and Bruce Winter (Tyndale Bulletin, 1991) argued from Greek usage that it commonly meant a personal tutor, which would make the saying reserve for Christ the role of the one teacher who forms each disciple. Hoti kathēgētēs humōn estin heis ho Christos, ‘because your instructor is one, the Christ’, uses the title for the first time since 22:42, where the Pharisees could not say whose son the Christ is.",
+      "words": ["G3366", "G2564G", "G2519", "G1520", "G5547"],
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "Jesus names himself the Christ and claims for the Christ a teaching authority above every human teacher. The sole Teacher of the church is not a school's founder whose sayings are passed on but the living Christ, who promises to be with his disciples to the end of the age (28:20)."
+        }
+      ],
+      "refs": ["Matthew 22:42", "Matthew 11:27-29", "Matthew 28:20", "John 13:13"]
+    },
+    {
+      "v": "11-12",
+      "context": "The positive rule: the greatest among you will be your servant. Then a principle that governs the whole kingdom: whoever exalts himself will be humbled, and whoever humbles himself will be exalted. The warning to the disciples ends where Jesus' teaching on greatness has always ended (18:4, 20:26-27).",
+      "grammar": "Ho de meizōn humōn estai humōn diakonos, ‘the greater among you shall be your servant’, uses a future indicative with the force of a command, as in the Law. Meizōn is a comparative used as a superlative. Verse 12 is a chiasm: hupsōsei ... tapeinōthēsetai, tapeinōsei ... hupsōthēsetai, ‘will exalt ... will be humbled, will humble ... will be exalted’. The future passives are divine passives: God does the humbling and the exalting.",
+      "words": ["G3173", "G4771", "G1510", "G1249", "G3748", "G5312", "G1438", "G5013"],
+      "ot": [
+        {
+          "ref": "Ezekiel 21:26",
+          "note": "In Ezekiel's oracle against the last king of Judah, God orders the crown removed and declares that things will not stay as they are: exalt the lowly and bring low the exalted. The Hebrew uses the roots shafal, ‘to be low’, and gavah, ‘to be high’; the Septuagint (21:31 in its numbering) uses tapeinoō and hupsoō, the verbs of Matthew 23:12. The same reversal runs through Hannah's song (1 Samuel 2:7-8) and Proverbs 29:23. Jesus applies the prophets' rule for kings to the leaders of his own community."
+        }
+      ],
+      "theology": [
+        {
+          "id": "leadership",
+          "note": "Greatness in Christ's community is measured by service, and God himself reverses self-promotion. The pattern is Christ's own: he humbled himself and God highly exalted him (Philippians 2:8-9)."
+        }
+      ],
+      "parallels": ["Mark 9:35", "Mark 10:43-44", "Luke 14:11", "Luke 18:14"],
+      "refs": ["Matthew 18:4", "Matthew 20:26-27", "Philippians 2:8-9", "James 4:10", "1 Peter 5:5-6"]
+    },
+    {
+      "v": "13",
+      "context": "The first woe. The scribes and Pharisees shut the kingdom of heaven in people's faces; they do not enter themselves, and they stop those who are trying to go in. The worst charge comes first: they stand in the doorway.",
+      "grammar": "Ouai humin, ‘woe to you’, is the prophets' cry of grief and doom (Isaiah 5:8-23). Hupokritai, ‘hypocrites’, from the word for a stage actor, will be repeated in six of the seven woes. Kleiete tēn basileian tōn ouranōn emprosthen tōn anthrōpōn, ‘you shut the kingdom of heaven in front of people’, pictures a door slammed. Tous eiserchomenous, ‘those who are entering’, is a present participle that many grammarians read as conative, ‘those trying to enter’.",
+      "words": ["G3759", "G1122", "G5330", "G5273", "G2808", "G0932", "G3772", "G1715", "G0444", "G1525", "G0863I"],
+      "history": "The Pharisees addressed here were the most respected teachers of the people, a lay movement devoted to applying the Law to all of life (Josephus, Jewish War 2.162; Antiquities 18.15). Paul, Gamaliel, and Nicodemus were Pharisees, and the Pharisees' heirs themselves condemned religious display, warning against ‘painted ones’ who imitate the Pharisees (b. Sotah 22b). The woes that begin here were later read as a portrait of Jews and Judaism as such: John Chrysostom's sermons Against the Jews (386 to 387) and Luther's On the Jews and Their Lies (1543) drew on this language, and ‘Pharisee’ became a byword for hypocrite. The Second Vatican Council's Nostra Aetate (1965) and the Vatican's 1985 Notes on preaching, with many Protestant statements, have rejected that reading. The woes are a prophet's rebuke inside Israel, and Matthew sets them beside warnings to Jesus' own disciples (verses 8 to 12).",
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "Jesus gave Peter the keys of the kingdom to open it (16:19). Teachers who use their knowledge of Scripture to close the door commit the gravest failure of leadership, and Luke's parallel names what they have taken away, the key of knowledge (Luke 11:52)."
+        }
+      ],
+      "parallels": ["Luke 11:52"],
+      "refs": ["Matthew 16:19", "Luke 11:52", "Isaiah 5:8", "Matthew 21:31-32"]
+    },
+    {
+      "v": "14",
+      "context": "Most modern Bibles omit this verse or print it in a note. In the manuscripts that have it, it is a woe on those who devour widows' houses and make long prayers for show, words found in Mark 12:40 and Luke 20:47.",
+      "text": "The verse is absent from Codex Sinaiticus, Codex Vaticanus, Codex Bezae, and early versions. In the later manuscripts that include it, it stands sometimes before verse 13 and sometimes after it, a wandering placement that marks an addition. Its wording matches Mark 12:40 and Luke 20:47, from which a scribe probably supplied it. The King James Version, following the Textus Receptus, prints it as verse 14; with it Matthew has eight woes, without it seven.",
+      "parallels": ["Mark 12:40", "Luke 20:47"],
+      "refs": ["Mark 12:40", "Luke 20:47", "Exodus 22:22-24"]
+    },
+    {
+      "v": "15",
+      "context": "The second woe. They cross sea and land to make one convert, and then make him twice as much a son of hell as themselves. The zeal is real; what it reproduces is the problem.",
+      "grammar": "Periagete tēn thalassan kai tēn xēran, ‘you go around the sea and the dry land’, is a merism for going everywhere. Poiēsai hena prosēluton, ‘to make one proselyte’, uses hena, ‘one’, for emphasis on the effort. Huion geennēs, ‘a son of Gehenna’, is a Semitic idiom for one who belongs to or deserves hell, and diploteron humōn, ‘twice more than you’, is a comparative with a genitive of comparison.",
+      "words": ["G4013", "G2281", "G3584", "G4160G", "G1520", "G4339", "G1096", "G5207", "G1067", "G1362"],
+      "history": "Proselytes were Gentiles who fully converted to Judaism, and Acts names some among the first believers (Acts 2:10, 6:5, 13:43). The Babylonian Talmud tells how Shammai drove away would-be converts who came with conditions, while Hillel received them and taught them (b. Shabbat 31a). Whether Pharisees sought converts widely is debated; Scot McKnight and Martin Goodman argued that Judaism was not a missionary religion in the Christian sense, so the woe may target zeal to make sympathizers into full proselytes of a particular school.",
+      "theology": [
+        {
+          "id": "mission",
+          "note": "Zeal in making converts is no proof of faithfulness. Jesus' own commission is to make disciples by teaching them to obey all he commanded (28:19-20), and the woe warns every missionary movement, Christian ones included, that it can reproduce its own faults in those it wins."
+        }
+      ],
+      "refs": ["Matthew 28:19-20", "Acts 2:10", "Galatians 6:12-13", "Matthew 5:22"]
+    },
+    {
+      "v": "16-17",
+      "context": "The third woe, the only one addressed to ‘blind guides’ rather than ‘hypocrites’. They teach that an oath by the temple means nothing but an oath by the temple's gold is binding. Jesus asks which is greater, the gold or the temple that makes it holy.",
+      "grammar": "Hodēgoi tuphloi, ‘blind guides’, repeats 15:14. Hos an omosē en tō naō, ouden estin, ‘whoever swears by the sanctuary, it is nothing’, and opheilei, ‘he is obligated’, literally ‘he owes’, are the language of legal rulings. Mōroi kai tuphloi, ‘fools and blind’, uses mōros, the word Jesus forbade as an insult in anger (5:22); interpreters note that here it is a prophetic verdict on teaching, not contempt for a brother. Ho naos ho hagiasas ton chruson, ‘the sanctuary that made the gold holy’, uses an aorist participle for the act of consecration.",
+      "words": ["G3759", "G3595", "G5185", "G3660", "G3485", "G3762", "G5557", "G3784", "G3474", "G3173", "G0037"],
+      "text": "The critical editions read the aorist hagiasas, ‘that made holy’, in verse 17; the Textus Receptus has the present hagiazōn, ‘that makes holy’, matching verse 19. The sense is the same.",
+      "theology": [
+        {
+          "id": "holiness",
+          "note": "Holiness flows from God's presence to the things that belong to him. The temple sanctifies the gold, not the reverse, so an oath by any holy thing is finally an oath before the Holy One. Jesus had already forbidden oaths as evasions altogether (5:33-37)."
+        }
+      ],
+      "refs": ["Matthew 15:14", "Matthew 5:33-37", "Matthew 5:22", "James 5:12"]
+    },
+    {
+      "v": "18-20",
+      "context": "The same reasoning applied to the altar: an oath by the altar is said to mean nothing, but an oath by the gift on it binds. Jesus answers that the altar makes the gift holy, and whoever swears by the altar swears by it and everything on it.",
+      "grammar": "Verse 18 repeats the pattern of verse 16 with thusiastērion, ‘altar’, and dōron, ‘gift’. Verse 19 shortens the rebuke to tuphloi, ‘blind ones’, and asks ti gar meizon, ‘which is greater’, using the neuter since both nouns are neuter. To thusiastērion to hagiazon to dōron, ‘the altar that sanctifies the gift’, uses a present participle for the altar's continuing effect. Ho oun omosas, ‘so the one who swears’, draws the conclusion with oun, ‘therefore’.",
+      "words": ["G3660", "G2379", "G3762", "G1435", "G1883", "G3784", "G5185", "G3173", "G0037", "G3956"],
+      "text": "The King James Version adds ‘fools and’ in verse 19, ‘Ye fools and blind’, from later manuscripts that assimilated the verse to verse 17; the earliest have only ‘blind’.",
+      "ot": [
+        {
+          "ref": "Exodus 29:37",
+          "note": "The Law says that after seven days of atonement the altar becomes most holy, and whatever touches the altar will be holy (Hebrew kol-hanogea bammizbeach yiqdash). The Septuagint renders the last clause with hagiasthēsetai, ‘will be made holy’, from the verb Jesus uses in verse 19. Jesus argues from the Law's own logic: holiness passes from the altar to the gift, so the altar, and the God it serves, is what an oath finally invokes."
+        }
+      ],
+      "theology": [
+        {
+          "id": "worship",
+          "note": "Casuistry about oaths treats sacred things as tools for escaping one's word. Jesus reverses the perspective: the altar and its gifts exist for the worship of God, and no clever ranking of them can put a promise outside his hearing."
+        }
+      ],
+      "refs": ["Exodus 29:37", "Exodus 30:29", "Leviticus 6:18", "Matthew 5:23-24"]
+    },
+    {
+      "v": "21-22",
+      "context": "The argument reaches its end. An oath by the temple is an oath by the one who dwells in it; an oath by heaven is an oath by God's throne and by the one who sits on it. Every substitute for God's name leads back to God.",
+      "grammar": "Tō katoikounti auton, ‘the one dwelling in it’, is a present participle: God is spoken of as living in the sanctuary. En tō thronō tou theou kai en tō kathēmenō epanō autou, ‘by the throne of God and by the one seated on it’, builds on Jesus' earlier word that heaven is God's throne (5:34). The repeated omnuei, ‘swears’, in verses 20 to 22 hammers the point that the oath is real whatever one swears by.",
+      "words": ["G3660", "G3485", "G2730", "G3772", "G2362", "G2316", "G2521", "G1883"],
+      "text": "Most editions read the present katoikounti, ‘who dwells’, in verse 21; the Byzantine text and Tregelles read the aorist katoikēsanti, ‘who dwelt’ or ‘who took up dwelling’. The difference is small, though the present keeps God's presence in the temple in view at the very moment Jesus is about to announce that the house will be left desolate (verse 38).",
+      "theology": [
+        {
+          "id": "temple",
+          "note": "The temple matters because God dwells there, as Solomon prayed (1 Kings 8:13), and heaven because it is his throne (Isaiah 66:1). The verse affirms the temple's holiness even as the chapter moves toward its abandonment, which shows that Jesus' judgment on it is not contempt for what it was."
+        }
+      ],
+      "refs": ["1 Kings 8:13", "Isaiah 66:1", "Psalm 11:4", "Matthew 5:34-35"]
+    },
+    {
+      "v": "23",
+      "context": "The fourth woe. They tithe even kitchen herbs, mint, dill, and cumin, but neglect the weightier matters of the Law: justice, mercy, and faithfulness. Jesus says they should have practiced the weightier matters without neglecting the tithes.",
+      "grammar": "Apodekatoute, ‘you tithe’, a present, describes their regular practice. Ta barutera tou nomou, ‘the heavier things of the Law’, uses a comparative that recalls the rabbinic distinction between heavy and light commands. Tēn krisin kai to eleos kai tēn pistin, ‘justice and mercy and faithfulness’: pistis here means faithfulness or fidelity, as in the Greek Old Testament, not only belief. Tauta de edei poiēsai kakeina mē aphienai, ‘these you ought to have done, and not to have neglected those’, uses edei, an imperfect of obligation, for what should have been done and was not.",
+      "words": ["G3759", "G5273", "G0586", "G2238", "G0432", "G2951", "G0863G", "G0926", "G3551", "G2920", "G1656", "G4102H", "G1163", "G4160G"],
+      "history": "The Law required tithes of grain, wine, oil, and the produce of trees (Leviticus 27:30, Deuteronomy 14:22-23). Pharisaic practice extended them to herbs: the Mishnah names cumin among produce tithed everywhere (m. Demai 2:1) and records Rabbi Eliezer's ruling that dill is tithed in seed, leaves, and pods (m. Maaserot 4:5). Luke's parallel names rue (Luke 11:42), which the Mishnah lists among plants exempt from tithes (m. Sheviit 9:1), so Luke's version pictures a scrupulousness beyond even the Pharisees' rule.",
+      "text": "The King James Version reads ‘mint and anise and cummin’. The Greek anēthon is dill; ‘anise’ is an older English rendering, not a different text.",
+      "theology": [
+        {
+          "id": "law",
+          "note": "The Law has an order of weight, and Jesus names it from the prophets: justice, mercy, and faithfulness echo Micah 6:8 and Hosea 6:6. Careful obedience in small things is commended, not dismissed; what is condemned is small obedience that becomes a substitute for the great."
+        },
+        {
+          "id": "justice-poor",
+          "note": "Krisis, justice, is the concern of the prophets for right dealing, above all toward the weak. By listing it first, Jesus makes the treatment of others the heaviest matter of the Law, which fits the chapter's picture of leaders who load burdens on others (verse 4)."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Micah 6:8",
+          "note": "Micah answers the question of what offerings will please God by naming what the LORD requires: to do mishpat, ‘justice’, to love chesed, ‘steadfast love’ or ‘mercy’, and to walk humbly with God. The Septuagint renders the first two with krima and eleos. Matthew's triad, krisis, eleos, pistis, is not a quotation, but its first two terms and its setting, ritual gifts weighed against justice and mercy, follow Micah closely. Matthew has twice quoted Hosea 6:6, ‘I desire mercy, not sacrifice’ (9:13, 12:7), and the same priority governs this verse."
+        }
+      ],
+      "parallels": ["Luke 11:42"],
+      "refs": ["Micah 6:8", "Hosea 6:6", "Matthew 9:13", "Deuteronomy 14:22-23"]
+    },
+    {
+      "v": "24",
+      "context": "A comic picture sums up the fourth woe: blind guides strain out a gnat and swallow a camel. The smallest unclean creature is carefully removed from the cup while the largest goes down whole.",
+      "grammar": "Diulizontes, ‘straining out’, is a present participle for the careful habit of filtering wine through cloth; the King James Version's ‘strain at’ is an older English idiom for the same action. Kōnōps, ‘gnat’, and kamēlos, ‘camel’, stand at the two ends of the scale of unclean animals (Leviticus 11:4, 11:41-43). Katapinontes, ‘swallowing down’, a compound with kata, stresses swallowing whole. The hyperbole matches the camel and the needle's eye of 19:24.",
+      "words": ["G3595", "G5185", "G1368", "G2971", "G2574", "G2666"],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "The picture shows how a conscience can be exact about the trivial and blind to the enormous. Jesus does not mock scruple itself but the distortion that lets it hide injustice and unmercy."
+        }
+      ],
+      "refs": ["Leviticus 11:4", "Leviticus 11:41-43", "Matthew 19:24", "Matthew 7:3-5"]
+    },
+    {
+      "v": "25-26",
+      "context": "The fifth woe. They clean the outside of cup and dish, while inside they are full of greed and self-indulgence. The remedy is to clean the inside first, so that the outside becomes clean too. The image moves from table purity to the heart.",
+      "grammar": "Katharizete to exōthen, ‘you clean the outside’, is set against esōthen de gemousin, ‘but inside they are full’. Gemousin ex harpagēs kai akrasias, ‘they are full from robbery and lack of self-control’, may mean that the contents were obtained by greed, the preposition ex marking the source: the cup is clean, and what is in it was taken from others. In verse 26 the address becomes singular, Pharisaie tuphle, ‘blind Pharisee’, as if speaking to each hearer, and katharison prōton, ‘clean first’, an aorist imperative, gives the order of repair. Hina genētai kai to ektos ... katharon, ‘so that the outside also may become clean’, makes outward purity the result of inward cleansing.",
+      "words": ["G2511", "G1855", "G4221", "G3953", "G2081", "G1073", "G0724", "G0192", "G5330", "G5185", "G4413G", "G1787", "G1622", "G2513"],
+      "text": "In verse 25 some manuscripts read adikias, ‘unrighteousness’, for akrasias, ‘self-indulgence’. In verse 26 most manuscripts, followed by the BSB, read ‘the cup and dish’; Codex Bezae, Codex Koridethi, family 1, and some Latin and Syriac witnesses have only ‘the cup’, and NA28 prints the shorter text, judging ‘and dish’ an addition from verse 25.",
+      "theology": [
+        {
+          "id": "holiness",
+          "note": "Holiness begins inside and works outward. The verse does not despise outward purity; it makes it the fruit of a cleansed heart. Jesus has already taught that what defiles comes from within (15:17-20), and the prophets promised a new heart from God (Ezekiel 36:25-26)."
+        }
+      ],
+      "parallels": ["Luke 11:39-41"],
+      "refs": ["Matthew 15:17-20", "Ezekiel 36:25-26", "Psalm 51:6-10", "James 4:8"]
+    },
+    {
+      "v": "27-28",
+      "context": "The sixth woe. They are like whitewashed tombs, beautiful outside and full of dead men's bones and every impurity inside. So they appear righteous to others but inside are full of hypocrisy and lawlessness.",
+      "grammar": "Paromoiazete taphois kekoniamenois, ‘you resemble whitewashed tombs’: kekoniamenois is a perfect passive participle from konia, ‘lime’ or ‘plaster’, the state of having been whitewashed. Exōthen men phainontai hōraioi, esōthen de gemousin, ‘outside they appear beautiful, but inside they are full’, uses the men ... de contrast again. In verse 28 the application ends with anomias, ‘lawlessness’, a word Matthew uses for those whom the judge rejects (7:23, 13:41, 24:12). The men most devoted to the Law are, within, full of lawlessness.",
+      "words": ["G3945", "G5028", "G2867", "G1855", "G5316", "G5611", "G2081", "G1073", "G3747", "G3498", "G0167", "G1342", "G3324", "G5272", "G0458"],
+      "history": "Graves were marked with lime so that no one would touch one unknowingly and contract the seven days of impurity in Numbers 19:16; the Mishnah says the marking was renewed each spring before Passover (m. Maaser Sheni 5:1, m. Shekalim 1:1). Luke's parallel uses the opposite image, unmarked graves that people walk over without knowing (Luke 11:44). Paul calls the high priest Ananias a whitewashed wall (Acts 23:3), echoing Ezekiel's false prophets who whitewash a flimsy wall (Ezekiel 13:10-12).",
+      "theology": [
+        {
+          "id": "holiness",
+          "note": "The whitewash that warned of death becomes a picture of righteousness worn as a surface. The verse names hypocrisy as a form of lawlessness, not a lesser fault, because it keeps the Law's appearance while refusing its heart."
+        }
+      ],
+      "parallels": ["Luke 11:44"],
+      "refs": ["Numbers 19:16", "Acts 23:3", "Ezekiel 13:10-12", "1 Samuel 16:7", "Matthew 7:23"]
+    },
+    {
+      "v": "29-31",
+      "context": "The seventh woe. They build tombs for the prophets and decorate the monuments of the righteous, and say that they would not have shared in their fathers' murders. By calling them ‘our fathers’, they admit whose sons they are.",
+      "grammar": "Oikodomeite tous taphous tōn prophētōn kai kosmeite ta mnēmeia tōn dikaiōn, ‘you build the tombs of the prophets and adorn the monuments of the righteous’, is a parallel pair. Their words in verse 30 are a contrary-to-fact condition in the imperfect, ei ēmetha ... ouk an ēmetha autōn koinōnoi, ‘if we had been ... we would not have been their partners’. Hōste martureite heautois, ‘so you testify against yourselves’, turns their disclaimer into evidence: huioi este tōn phoneusantōn, ‘you are sons of those who murdered’, where ‘sons of’ is a Semitic idiom for sharing a character as well as a descent.",
+      "words": ["G3759", "G3618", "G5028", "G4396", "G2885", "G3419", "G1342", "G3004G", "G1510", "G2250", "G3962", "G2844", "G0129G", "G5620", "G3140", "G5207", "G5407"],
+      "history": "Israel's own Scriptures remembered the killing of prophets: Jezebel's slaughter of the LORD's prophets (1 Kings 18:4, 19:10), King Jehoiakim's execution of the prophet Uriah (Jeremiah 26:20-23), and the stoning of Zechariah in the temple court (2 Chronicles 24:21). The confession in Nehemiah 9:26 names the pattern: they killed your prophets who warned them. Monumental tombs of the Second Temple period still stand in the Kidron Valley opposite the temple mount, and Peter could say that David's tomb was ‘with us to this day’ (Acts 2:29).",
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Honoring the dead prophets costs nothing; the test is how the living ones are treated. The verse shows the self-deception by which every generation imagines it would have done better than its fathers, and it names that very claim as evidence of kinship with them."
+        }
+      ],
+      "parallels": ["Luke 11:47-48"],
+      "refs": ["Nehemiah 9:26", "Jeremiah 26:20-23", "1 Kings 19:10", "Acts 7:51-52"]
+    },
+    {
+      "v": "32-33",
+      "context": "Jesus tells them to fill up the measure of their fathers' sin, and calls them snakes and a brood of vipers, asking how they will escape the judgment of hell. The rhetoric reaches its peak and turns toward the judgment of verses 34 to 36.",
+      "grammar": "Plērōsate, ‘fill up’, is an aorist imperative of ironic permission: go on and complete what your fathers began. To metron, ‘the measure’, pictures sin filling a vessel until judgment falls, as God told Abraham that the iniquity of the Amorites was ‘not yet complete’ (Genesis 15:16). Opheis, gennēmata echidnōn, ‘snakes, offspring of vipers’, repeats John the Baptist's words (3:7) and Jesus' own (12:34). Pōs phugēte, ‘how will you flee’, is a deliberative aorist subjunctive, a question with no good answer.",
+      "words": ["G4771", "G4137", "G3358", "G3962", "G3789", "G1081G", "G2191", "G4459", "G5343", "G2920", "G1067"],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "Judgment in Scripture often comes when a long history of sin reaches its measure. Paul uses the same image of those who opposed the gospel in Judea, filling up the measure of their sins (1 Thessalonians 2:16). The verse speaks of a limit God sets to his patience, not of a fate imposed without cause."
+        }
+      ],
+      "refs": ["Genesis 15:16", "Matthew 3:7", "Matthew 12:34", "1 Thessalonians 2:16"]
+    },
+    {
+      "v": "34",
+      "context": "Jesus speaks as the one who sends messengers: he is sending prophets, wise men, and scribes, some of whom they will kill and crucify, flog in their synagogues, and pursue from town to town. The persecution of his disciples will repeat the pattern of the prophets.",
+      "grammar": "Dia touto idou egō apostellō, ‘therefore, look, I am sending’, uses an emphatic egō, ‘I’, and a present tense with future force. The three nouns prophētas kai sophous kai grammateis, ‘prophets and wise men and scribes’, include grammateis, the very word for the scribes he is rebuking; Jesus has his own scribes trained for the kingdom (13:52). Apokteneite kai staurōsete, ‘you will kill and crucify’, mastigōsete, ‘you will flog’, and diōxete, ‘you will pursue’, are futures that repeat the warnings of the mission discourse (10:17, 10:23).",
+      "words": ["G1223", "G2400", "G1473", "G0649", "G4396", "G4680", "G1122", "G0615", "G4717", "G3146", "G4864", "G1377", "G4172"],
+      "history": "Acts and Paul's letters record what the verse foresees: Stephen stoned (Acts 7:58-60), James killed by Herod Agrippa I (Acts 12:2), apostles flogged by the council (Acts 5:40), and Paul five times given the thirty-nine lashes by synagogue authorities (2 Corinthians 11:24). Crucifixion was a Roman penalty, and ‘crucify’ here may include handing someone over to Roman power, as happened to Jesus.",
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "The messengers Jesus sends will suffer as the prophets did. Luke's parallel attributes the sending to the Wisdom of God (Luke 11:49); Matthew places it in Jesus' own mouth, so that the one who speaks takes the role God played in sending the prophets, and his followers' suffering becomes part of that long story."
+        }
+      ],
+      "parallels": ["Luke 11:49"],
+      "refs": ["Matthew 10:17", "Matthew 10:23", "Matthew 13:52", "2 Chronicles 36:15-16", "2 Corinthians 11:24"]
+    },
+    {
+      "v": "35-36",
+      "context": "All the righteous blood shed on earth, from Abel to Zechariah, murdered between the sanctuary and the altar, will come on this generation. Jesus names the first and last murders in the Hebrew Bible read in the order that ends with Chronicles, and declares that the whole reckoning is about to fall.",
+      "grammar": "Hopōs elthē eph' humas, ‘so that there may come upon you’, expresses the outcome as God's purpose. Pan haima dikaion ekchunnomenon, ‘all righteous blood being shed’, uses a present participle, blood still being poured out. Apo tou haimatos Habel ... heōs tou haimatos Zachariou, ‘from the blood of Abel ... to the blood of Zechariah’, marks the span of Scripture. Metaxu tou naou kai tou thusiastēriou, ‘between the sanctuary and the altar’, places the murder in the priests' court. Verse 36 is solemn, amēn legō humin, and hēxei tauta panta epi tēn genean tautēn, ‘all these things will come upon this generation’, anticipates 24:34.",
+      "words": ["G3704", "G2064", "G1909", "G3956", "G0129G", "G1342", "G1632", "G1093G", "G0006", "G2197G", "G5207", "G0914", "G5407", "G3485", "G2379", "G0281", "G2240", "G1074"],
+      "ot": [
+        {
+          "ref": "2 Chronicles 24:20-22",
+          "note": "The Spirit of God came on Zechariah son of Jehoiada the priest, who rebuked the people for forsaking the LORD; at King Joash's order they stoned him in the court of the LORD's house, and as he died he said, ‘May the LORD see this and call you to account’. Abel's blood, too, cried out from the ground (Genesis 4:10). The Babylonian Talmud gives an order of the Writings that ends with Chronicles (b. Bava Batra 14b), so Abel and this Zechariah would be the first and last martyrs of the canon in that arrangement. Hebrews contrasts Abel's blood, which cried for justice, with the blood of Jesus, which speaks a better word (Hebrews 12:24)."
+        }
+      ],
+      "history": "Chronicles names the martyr son of Jehoiada; Matthew says son of Berechiah, the father of the prophet Zechariah (Zechariah 1:1). The solutions offered are these: that Matthew follows a Jewish tradition that had already merged the two men, attested in the Targum of Lamentations 2:20, which names the priest and prophet killed in the sanctuary as Zechariah son of Iddo, the prophet's grandfather; that the patronymic is an early scribal gloss; that Jehoiada bore a second name or that Berechiah was an ancestor, for which there is no evidence; that the man is Zechariah son of Baris, killed by the Zealots in the temple in AD 67 or 68 (Josephus, Jewish War 4.334-344), which most reject because Jesus speaks of a past murder; and that he is Zechariah the father of John the Baptist, killed in the temple according to the Protevangelium of James (23-24), a view found in Origen. Many critical scholars, W. D. Davies and Dale Allison among them, conclude that the two figures were conflated.",
+      "text": "The words ‘son of Berechiah’ are missing from the first hand of Codex Sinaiticus, a few other manuscripts, and quotations in Eusebius, and Jerome reports that the gospel used by the Nazarenes read ‘son of Joiada’ (Commentary on Matthew, on 23:35). Luke's parallel has only ‘Zechariah’ (Luke 11:51). Most scholars treat the omissions as attempts to remove the difficulty, since ‘son of Berechiah’ is secure in the rest of the tradition.",
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The generation that rejects God's final messengers stands at the end of a long history of refusal and bears its full weight. Judgment here is corporate and historical, the reckoning of a city and its leaders, and the crowd's cry in 27:25 must be read beside the Last Supper's promise that Jesus' blood is poured out for the forgiveness of sins (26:28)."
+        }
+      ],
+      "parallels": ["Luke 11:50-51"],
+      "refs": ["Genesis 4:8-10", "2 Chronicles 24:20-22", "Hebrews 12:24", "Matthew 24:34", "Matthew 27:25"]
+    },
+    {
+      "v": "37",
+      "context": "The tone breaks from woe to lament. Jerusalem, which kills the prophets and stones God's messengers, is addressed twice by name, and Jesus says how often he has longed to gather her children as a hen gathers her chicks under her wings, and they were unwilling.",
+      "grammar": "Ierousalēm Ierousalēm, the doubled name, is a cry of grief, like ‘Absalom, my son, my son’ (2 Samuel 18:33). Hē apokteinousa ... kai lithobolousa, ‘who kills ... and stones’, are present participles of characteristic action. Posakis ēthelēsa episunagagein, ‘how often I wanted to gather’, sets Jesus' will against theirs in the closing kai ouk ēthelēsate, ‘and you were not willing’: the same verb, thelō, on both sides. Ornis, ‘bird’, is a general word, here the mother hen, and hupo tas pterugas, ‘under the wings’, is the Old Testament image of God's shelter.",
+      "words": ["G2419", "G0615", "G4396", "G3036", "G0649", "G4212", "G2309", "G1996", "G5043", "G5158", "G3733", "G3556", "G4420"],
+      "history": "The image of God sheltering his people under his wings runs through Israel's Scriptures (Deuteronomy 32:11, Ruth 2:12, Psalm 91:4). A Christian writing, probably of the second century, preserved as the opening of 2 Esdras (sometimes called 5 Ezra), takes up the saying and puts it in God's mouth, saying he gathered Israel as a hen gathers her chicks under her wings (2 Esdras 1:30).",
+      "theology": [
+        {
+          "id": "israel",
+          "note": "The lament shows God's love for Jerusalem in Jesus' own voice. His longing is not for a people he has written off but for children he has tried again and again to gather, and the judgment he pronounces is spoken with the grief of one who wanted another outcome."
+        },
+        {
+          "id": "election",
+          "note": "The verse sets divine willing against human refusal. Arminian and Wesleyan readers cite it as evidence that God's saving will can be resisted. Augustine (Enchiridion 97) answered that Jerusalem was unwilling but Christ still gathered those of her children he willed, and Calvin distinguished God's will as declared in his word from his hidden purpose. Both sides take seriously that the refusal is truly Jerusalem's."
+        }
+      ],
+      "parallels": ["Luke 13:34"],
+      "refs": ["Deuteronomy 32:11", "Psalm 91:4", "Ruth 2:12", "Luke 19:41-44", "2 Chronicles 36:15-16"]
+    },
+    {
+      "v": "38",
+      "context": "The verdict: your house is left to you desolate. ‘House’ may be the temple, the city, or the ruling house, and the temple is surely in view, since in the next verses Jesus walks out of it and foretells its destruction (24:1-2).",
+      "grammar": "Idou, ‘look’, calls attention. Aphietai, ‘is left’, a present passive, describes the abandonment as already taking effect. Ho oikos humōn, ‘your house’, is telling: in 21:13 Jesus quoted Scripture of the temple as ‘My house’; now it is ‘your house’. Erēmos, ‘desolate’ or ‘deserted’, is the adjective from which erēmōsis, ‘desolation’, is formed, the word of the abomination of desolation in 24:15.",
+      "words": ["G2400", "G0863G", "G3624G", "G2048"],
+      "text": "Codex Vaticanus and a few other witnesses lack erēmos, ‘desolate’, and Westcott and Hort omitted it; most editions print it. It may have been dropped as redundant after ‘left’, or added to match Jeremiah 22:5 in the Greek.",
+      "ot": [
+        {
+          "ref": "Jeremiah 22:5",
+          "note": "Jeremiah warns the king of Judah that if the people do not obey, God swears by himself that this house will become a ruin. The Hebrew is lechorbah yihyeh habbayit hazzeh, ‘this house will become a desolation’; the Septuagint reads eis erēmōsin estai ho oikos houtos, with erēmōsis. Jeremiah also hears God say, ‘I have forsaken My house’ (Jeremiah 12:7). In Ezekiel the glory of the LORD leaves the temple and stands on the mountain east of the city (Ezekiel 10:18-19, 11:23), the Mount of Olives, where Jesus will sit to speak of the temple's end (24:3)."
+        }
+      ],
+      "theology": [
+        {
+          "id": "temple",
+          "note": "The house God filled with his presence can be left to those who refused him. Matthew's Gospel, which began with Emmanuel, ‘God with us’ (1:23), locates God's presence in Jesus himself and in the gathered community (18:20, 28:20), and the departure from the temple that follows this verse enacts the change."
+        }
+      ],
+      "parallels": ["Luke 13:35"],
+      "refs": ["Jeremiah 22:5", "Jeremiah 12:7", "Ezekiel 11:23", "Matthew 21:13", "Matthew 24:1-2"]
+    },
+    {
+      "v": "39",
+      "context": "Jesus' last public words in Matthew: they will not see him again until they say, ‘Blessed is He who comes in the name of the Lord.’ The crowds sang those words at his entry (21:9); the leaders did not. The speech ends not with a closed door but with a psalm waiting to be sung.",
+      "grammar": "Ou mē me idēte, ‘you will certainly not see me’, is the strongest negation, with an aorist subjunctive. Ap' arti, ‘from now on’, marks a turning point, as it will twice more in the passion (26:29, 26:64). Heōs an eipēte, ‘until you say’, is an indefinite temporal clause; Dale Allison (Journal for the Study of the New Testament, 1983) argued that it states a condition, so that Jesus' coming waits on Jerusalem's welcome. Eulogēmenos ho erchomenos, ‘blessed is the one coming’, is a perfect passive participle, ‘one who stands blessed’.",
+      "words": ["G3004G", "G3165", "G1492H", "G0737", "G2193", "G2036", "G2127", "G2064", "G3686", "G2962G"],
+      "ot": [
+        {
+          "ref": "Psalm 118:26",
+          "note": "The Hebrew reads barukh habba beshem YHWH, ‘blessed is the one who comes in the name of the LORD’, followed by ‘we bless you from the house of the LORD’. It is a blessing spoken by the priests over the pilgrim or the king entering the temple at a festival, in the psalm that closes the Hallel sung at Passover. The Septuagint (Psalm 117:26) renders it eulogēmenos ho erchomenos en onomati kuriou, which Matthew quotes exactly, as he did at the entry (21:9). Jesus uses the psalm to describe the welcome Jerusalem will one day give him, and he has already quoted its next lines about the rejected stone (21:42)."
+        }
+      ],
+      "theology": [
+        {
+          "id": "israel",
+          "note": "Interpreters differ on whether the verse promises Jerusalem's future welcome, warns of a recognition that will come too late, or sets the condition of his coming. On any reading the chapter ends with longing rather than final rejection, and Paul's hope that all Israel will be saved (Romans 11:26) stands close to it."
+        },
+        {
+          "id": "return",
+          "note": "The words ‘until you say’ point beyond the cross to Jesus' coming again, the subject of the discourse that follows in chapters 24 and 25."
+        }
+      ],
+      "parallels": ["Luke 13:35"],
+      "refs": ["Psalm 118:26", "Matthew 21:9", "Matthew 21:42", "Romans 11:25-26", "Zechariah 12:10"]
+    }
+  ]
+}
