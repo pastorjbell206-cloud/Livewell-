@@ -5,9 +5,10 @@
  * scripts/build-catalogue.mjs), so the shelf lists exactly what the Library
  * lists and neither can drift: the free Hard Issues booklets (PDF + EPUB), a
  * leader's guide and participant handout for every study, a printable for
- * every Reading Scripture in Context guide, each with its file size once the
- * deploy has built it. The books themselves are sold, so they appear last as
- * links to their pages, never as files.
+ * every Reading Scripture in Context guide, the Find Help printables, the
+ * plan booklets, Bible reading plans, worksheets, workbooks, and card sets,
+ * each with its file size once the deploy has built it. The books themselves
+ * are sold, so they appear last as links to their pages, never as files.
  */
 import { useEffect, useMemo, useState } from "react";
 import { Link } from "wouter";
@@ -15,7 +16,7 @@ import { Download } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { LoadFailed } from "@/components/LoadFailed";
-import { fetchCatalogue, formatBytes, kindRank, type Catalogue, type CatalogueItem } from "@/lib/catalogue";
+import { fetchCatalogue, formatBytes, kindRank, type Catalogue, type CatalogueFile, type CatalogueItem } from "@/lib/catalogue";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
@@ -65,6 +66,24 @@ const SHELVES: Record<string, { label: string; blurb: string }> = {
 
 const idFor = (kind: string) => kind.toLowerCase().replace(/[^a-z0-9]+/g, "-");
 
+/**
+ * A card's files, one line per document: "One-page guide (Letter)" and
+ * "One-page guide (A4)" become "One-page guide: Letter · A4". Files with no
+ * paper size in the label (a leader's guide, a PDF and an EPUB) share a line.
+ */
+export function fileLines(files: CatalogueFile[]): { name: string; files: { label: string; file: CatalogueFile }[] }[] {
+  const lines: { name: string; files: { label: string; file: CatalogueFile }[] }[] = [];
+  for (const file of files) {
+    const m = file.label.match(/^(.*\S)\s*\((Letter|A4)\)$/);
+    const name = m ? m[1] : "";
+    const label = m ? m[2] : file.label;
+    const line = lines.find((l) => l.name === name);
+    if (line) line.files.push({ label, file });
+    else lines.push({ name, files: [{ label, file }] });
+  }
+  return lines;
+}
+
 export default function Downloads() {
   const [catalogue, setCatalogue] = useState<Catalogue | null>(null);
   const [failed, setFailed] = useState(false);
@@ -104,7 +123,7 @@ export default function Downloads() {
     <Layout>
       <SEOMeta
         title="Free Downloads: Study Guides, Curriculum, and Printable PDFs"
-        description="Every printable file in one place: leader's guides and participant handouts for each study, plus Reading Scripture in Context printables. All free."
+        description="Every printable in one place, free: study guides, Find Help guides and worksheets, plan booklets, Bible reading plans, workbooks, and Scripture cards."
         url="https://www.livewellbyjamesbell.co/downloads"
       />
 
@@ -117,7 +136,7 @@ export default function Downloads() {
           <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.8)", maxWidth: "62ch" }}>
             {fileCount > 0
               ? `${fileCount} files, free, nothing gated. Print them, hand them out, teach from them.`
-              : "Study guides, booklets, and context printables. Free, and nothing is gated."}
+              : "Study guides, Find Help printables, plan booklets, and more. Free, and nothing is gated."}
           </p>
           <p style={{ fontFamily: "var(--U)", fontSize: "14px", marginTop: "14px" }}>
             <Link href="/explore?dl=1" style={{ color: "var(--bone)", textDecoration: "none", borderBottom: "1px solid var(--mustard)" }}>
@@ -181,32 +200,39 @@ export default function Downloads() {
                       {r.title}
                     </div>
                     {r.summary && r.kind === "Booklet" && (
-                      <div style={{ fontFamily: "var(--B)", fontSize: "13.5px", lineHeight: 1.5, color: "var(--ink-muted)", marginBottom: "10px" }}>{r.summary}</div>
+                      <div style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.6, color: "var(--ink-muted)", marginBottom: "10px" }}>{r.summary}</div>
                     )}
-                    <div style={{ display: "flex", flexWrap: "wrap", gap: "6px 14px", alignItems: "center" }}>
-                      {r.files?.map((file) => (
-                        <a
-                          key={file.href}
-                          href={file.href}
-                          download
-                          style={{
-                            display: "inline-flex", alignItems: "center", gap: "5px", minHeight: "32px",
-                            fontFamily: "var(--U)", fontSize: "12.5px", fontWeight: 600,
-                            color: "var(--mustard-text)", textDecoration: "none",
-                            borderBottom: "1px solid var(--mustard)", paddingBottom: "1px",
-                          }}
-                        >
-                          <Download size={12} aria-hidden />
-                          {file.label}
-                          {file.bytes ? <span style={{ fontWeight: 400, color: "var(--ink-muted)" }}>{formatBytes(file.bytes)}</span> : null}
-                        </a>
-                      ))}
-                      {r.kind !== "Booklet" && (
-                        <Link href={r.href} style={{ fontFamily: "var(--U)", fontSize: "12.5px", color: "var(--ink-muted)", textDecoration: "none" }}>
+                    {fileLines(r.files ?? []).map((line) => (
+                      <div key={line.name || "files"} style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", lineHeight: 1.4 }}>
+                        {line.name && <span style={{ marginRight: "8px" }}>{line.name}:</span>}
+                        {line.files.map(({ label, file }, i) => (
+                          <span key={file.href}>
+                            {i > 0 && <span aria-hidden style={{ margin: "0 8px" }}>·</span>}
+                            <a
+                              href={file.href}
+                              download
+                              aria-label={line.name ? `${line.name}, ${label}` : label}
+                              style={{
+                                display: "inline-flex", alignItems: "center", gap: "5px", minHeight: "32px",
+                                fontSize: "13px", fontWeight: 600,
+                                color: "var(--mustard-text)", textDecoration: "none",
+                              }}
+                            >
+                              <Download size={12} aria-hidden />
+                              <span style={{ borderBottom: "1px solid var(--mustard)" }}>{label}</span>
+                              {file.bytes ? <span style={{ fontWeight: 400, color: "var(--ink-muted)" }}>{formatBytes(file.bytes)}</span> : null}
+                            </a>
+                          </span>
+                        ))}
+                      </div>
+                    ))}
+                    {r.kind !== "Booklet" && (
+                      <div style={{ marginTop: "4px" }}>
+                        <Link href={r.href} style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", textDecoration: "none" }}>
                           {r.kind === "Worksheet" || r.kind === "Workbook" || r.kind === "Card set" ? "The page it goes with" : "Read online"}
                         </Link>
-                      )}
-                    </div>
+                      </div>
+                    )}
                   </div>
                 ))}
               </div>

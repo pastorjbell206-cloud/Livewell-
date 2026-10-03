@@ -126,7 +126,7 @@ export const TOOLS = [
   },
   {
     title: "Prayer Generator",
-    description: "Words for when you do not have your own. Choose the hour or the need, morning, evening, strength, guidance, gratitude, and get a written prayer you can change until it says what you mean.",
+    description: "Words for when you do not have your own. Choose the hour or the need, morning, evening, strength, guidance, gratitude, and get a written prayer to pray as it is, or copy and make your own.",
     href: "/tools/prayer-generator",
     icon: Heart,
     color: "var(--ink)",
