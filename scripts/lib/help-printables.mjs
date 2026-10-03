@@ -957,49 +957,50 @@ export async function ruleOfLifePdf(size) {
 
 /**
  * Scripture to carry: one verse for each hard place on Find Help, chosen to
- * be memorized and read in its context on the care page it comes from.
- * Keyed by need slug; a card prints only once its care page is live.
+ * be memorized and read in its context on the care page it comes from, so
+ * each verse is one the page itself reads (server/help-printables.test.ts
+ * checks). Keyed by need slug; a card prints only once its care page is live.
  */
 export const MEMORY_VERSES = {
   anxiety: "1 Peter 5:6-7",
   "fear-of-the-future": "Matthew 6:34",
   loneliness: "Psalm 25:16",
-  grief: "Psalm 34:18",
-  suffering: "Romans 8:18",
+  grief: "Psalm 23:4",
+  suffering: "Mark 15:34",
   doubt: "Mark 9:24",
   empty: "Psalm 42:11",
   prayer: "Romans 8:26",
   marriage: "Ephesians 4:32",
   "reading-the-bible": "Psalm 119:105",
   decisions: "Proverbs 3:5-6",
-  "cant-forgive": "Colossians 3:13",
+  "cant-forgive": "Romans 12:21",
   addiction: "1 Corinthians 10:13",
   pornography: "Psalm 51:10",
-  "church-hurt": "Matthew 12:20",
-  caregiving: "Galatians 6:9",
+  "church-hurt": "John 9:35",
+  caregiving: "Psalm 71:9",
   parenting: "Deuteronomy 6:6-7",
   fatherless: "Psalm 68:5",
   "work-burnout": "Matthew 11:28",
-  money: "Hebrews 13:5",
+  money: "1 Timothy 6:6",
   purpose: "Ephesians 2:10",
-  divorce: "Psalm 147:3",
+  divorce: "Isaiah 54:4",
   curious: "John 1:46",
   deconstructing: "John 6:68",
   "new-believer": "2 Corinthians 5:17",
   "whole-life": "John 15:5",
   diagnosis: "2 Corinthians 4:16",
   healing: "Revelation 21:4",
-  infertility: "Psalm 62:8",
+  infertility: "Psalm 13:5",
   "job-loss": "Lamentations 3:22-23",
   anger: "Proverbs 15:1",
-  politics: "Philippians 3:20",
-  "family-devotions": "Psalm 78:4",
+  politics: "James 1:19-20",
+  "family-devotions": "2 Timothy 3:15",
   "refer-to-counselor": "Exodus 18:18",
-  "is-it-a-sin": "Psalm 139:23-24",
-  "trust-the-bible": "2 Timothy 3:16-17",
+  "is-it-a-sin": "Galatians 5:13",
+  "trust-the-bible": "2 Peter 1:16",
   fasting: "Matthew 4:4",
-  "pets-and-heaven": "Psalm 36:6",
-  dating: "1 Corinthians 13:4-5",
+  "pets-and-heaven": "Matthew 10:29",
+  dating: "Genesis 2:24",
 };
 
 export async function memoryCardsPdf(cards, size) {
@@ -1107,7 +1108,7 @@ export async function familyCardsPdf(devotions, size) {
     for (const [font, size, text, color, spacing, after] of parts) {
       doc.font(font).fontSize(s(size));
       const h = doc.heightOfString(text, { width: w, lineGap: 1.5, characterSpacing: spacing });
-      if (!dry) tag(doc, root, font === "Times-Bold" && size === 17 ? "H2" : "P", () => doc.fillColor(color).text(text, pad, y, { width: w, lineGap: 1.5, characterSpacing: spacing }));
+      if (!dry) tag(doc, root, text === d.title ? "H2" : "P", () => doc.fillColor(color).text(text, pad, y, { width: w, lineGap: 1.5, characterSpacing: spacing }));
       y += h + s(after);
     }
     return y - top;

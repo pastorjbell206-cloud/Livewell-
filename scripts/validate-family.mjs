@@ -7,7 +7,7 @@
  * the BSB (<ScriptureNote rendering="bsb">), and the printable family table
  * cards print the same text. This keeps the label true: every passageText and
  * scriptureText must be a continuous stretch of the BSB for its reference
- * (an ellipsis may mark a gap), and its quotation marks must pair.
+ * (an ellipsis may mark a gap), and its quotation marks must open and close in order.
  *
  * To refresh a passage, copy it from `node scripts/bsb.mjs "<ref>"`, or run the
  * conversion in readingText() from scripts/lib/bsb.mjs.
@@ -43,9 +43,13 @@ for (const [file, refKey, textKey] of SOURCES) {
     } catch (e) {
       errors.push(`${where}: ${e.message}`);
     }
-    const open = (text.match(/“/g) || []).length;
-    const close = (text.match(/”/g) || []).length;
-    if (open !== close) errors.push(`${where}: unpaired quotation marks`);
+    // Every closing mark has an opening mark before it, and none is left open.
+    let depth = 0;
+    for (const ch of text) {
+      if (ch === "“") depth++;
+      else if (ch === "”" && --depth < 0) break;
+    }
+    if (depth !== 0) errors.push(`${where}: unpaired quotation marks`);
   });
 }
 

@@ -60,6 +60,27 @@ describe("section-wide printables", () => {
     }
   });
 
+  it("every verse to carry is one its care page reads, so the card's pointer is true", () => {
+    // A verse counts when one of the page's passages covers it, or the page quotes it with its reference.
+    const covers = (passage: string, ref: string) => {
+      const m = ref.match(/^(.+) (\d+):(\d+)/);
+      const p = passage.match(/^(.+) (\d+):(.+)$/);
+      if (!m || !p || m[1] !== p[1] || m[2] !== p[2]) return false;
+      const v = Number(m[3]);
+      return p[3].split(",").some((part) => {
+        const [a, b] = part.trim().split("-").map(Number);
+        return b ? v >= a && v <= b : v === a;
+      });
+    };
+    for (const need of needs) {
+      const ref = verses[need.slug];
+      const passages: string[] = need.scripture.passages.map((p: { ref: string }) => p.ref);
+      const text = JSON.stringify({ ...need, askedAs: [], sources: [], reviewed: null, slots: [] });
+      const first = ref.replace(/-\d+$/, "").replace(/,.*$/, "");
+      expect(passages.some((p) => covers(p, ref)) || text.includes(`(${first})`), `${need.slug}: ${ref} is not read on the page`).toBe(true);
+    }
+  });
+
   it("the prayer journal is a pattern page, thirty days, and a page for answers", async () => {
     const b: Buffer = await prayerJournalPdf("LETTER", readingText("Matthew 6:9-13"));
     expect(tagged(b)).toBe(true);
