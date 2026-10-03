@@ -185,7 +185,11 @@
         "label": "Addiction Is a Justice Issue",
         "kind": "Essay"
       }
-    ]
+    ],
+    "plan": {
+      "href": "/plans/addiction",
+      "label": "Eight Weeks on the Long Road Back"
+    }
   },
   "faq": [
     {

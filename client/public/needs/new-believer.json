@@ -1,43 +1,304 @@
 {
   "slug": "new-believer",
-  "page": false,
+  "page": true,
   "rank": 45,
-  "title": "I'm new to faith. What now?",
-  "summary": "Nobody expects you to know the words yet. How to begin, one small step at a time.",
+  "title": "I'm a new Christian. What do I do now?",
+  "seoTitle": "Just Became a Christian? What to Do Next, in Plain Words",
+  "description": "Just became a Christian? A pastor's plain guide to what happened, where to start reading, how to pray, finding a church, baptism, and the doubts that come.",
+  "summary": "Nobody expects you to know the words yet. What just happened, and how to begin: reading, prayer, church, and baptism.",
   "askedAs": [
     "new Christian",
     "just became a Christian",
+    "I got saved",
     "what do I do now",
     "new believer",
+    "how to follow Jesus",
+    "how to read the Bible as a new Christian",
+    "do I have to go to church",
+    "what is baptism",
     "baptism",
-    "how to follow Jesus"
+    "do I need to be baptized again",
+    "what does it mean to be born again",
+    "Bible verses for new believers",
+    "2 Corinthians 5:17"
   ],
   "states": [
     "grow"
   ],
   "sensitivity": "ordinary",
-  "kit": {
-    "read": [
+  "crisisTopics": [
+    "suicide",
+    "substance",
+    "abuse"
+  ],
+  "answer": "You've come to believe in Jesus, maybe last night, maybe slowly over months, and you don't know what comes next. You may feel joy, or relief, or not much at all. Nobody expects you to know the words yet. What happened is what Christians call grace: God's kindness to people who could never earn it. You didn't earn your way in, and you won't be graded on how fast you learn. So start small. Read the Gospel of Mark, the shortest of the four accounts of Jesus's life, a chapter a day. Pray the Lord's Prayer, the prayer Jesus taught his followers, a line at a time. Visit a church, find one Christian friend, and ask a pastor about baptism, the washing with water that marks a person as belonging to Jesus.",
+  "happening": "People come to faith by different roads. Some can name the night: a service where something gave way, or the end of a long argument with God. Others only know that somewhere along the way they came to believe Jesus is who he said he was, and told him so. Either way, something good has happened, and you're allowed to be glad. When religious leaders grumbled that Jesus ate with sinners, he told them stories of lost things found, and said there is joy in heaven over one sinner who repents (Luke 15:1-10).\n\nWhat comes next can be confusing. Before long the old self may turn up again, the temper or the habit you thought you'd left behind. And there's a new vocabulary. People at church say they were *saved*, which means rescued: from sin, the wrong we do and the turning from God beneath it, and for a life with God that death doesn't end. They speak of the Holy Spirit, God himself present with his people, and of being *born again*, Jesus's phrase for the new life God gives (John 3:3). Someone you love may have asked whether you've lost your mind.\n\nThe usual explanations each hold something true. A skeptic would say that what you felt has ordinary causes, a need for comfort or for belonging, and that it will fade. Feelings do rise and fall, and some churches do press people at emotional moments; a page that denied it wouldn't deserve your trust. But Christianity doesn't rest on the feeling. When Paul summed up the faith for the church in Corinth, he listed events: Christ died for our sins, was buried, and was raised on the third day (1 Corinthians 15:3-4). The church's quick version says you made a decision and you're saved, so come on Sundays. Something decisive did happen. But that version can leave you thinking you've arrived, when you've only just been born.\n\nWhat both leave out is that you've begun a life with someone, and new lives start small and hungry, in need of a family. If your faith came in the middle of a crisis, the section below on getting more help is for you. And if you came to faith from unbelief, part of you may still stand outside with its arms folded, watching the rest of you pray. I came to faith from atheism, so I won't call that hypocrisy; it's an old habit of mind, and you can bring its questions along.",
+  "scripture": {
+    "intro": "Much of the New Testament, the part of the Bible written after Jesus, was first addressed to new Christians in young churches. Here is what it says happened to anyone who belongs to Christ, what to be hungry for, what the first church looked like, and what baptism means.",
+    "passages": [
       {
-        "href": "/plans/new-believer",
-        "label": "Eight Weeks of Beginnings",
-        "kind": "Plan"
+        "ref": "2 Corinthians 5:17-19",
+        "text": "Therefore if anyone is in Christ, he is a new creation. The old has passed away. Behold, the new has come! All this is from God, who reconciled us to Himself through Christ and gave us the ministry of reconciliation: that God was reconciling the world to Himself in Christ, not counting men’s trespasses against them. And He has committed to us the message of reconciliation.",
+        "reading": "Paul wrote this to a church in Corinth that had begun to doubt him. He had once regarded Christ “according to the flesh” (verse 16), by human standards, and had tried to destroy the church (Galatians 1:13). To be *in Christ* is to belong to him by faith, and creation is something only God does: what happens to anyone in Christ is as much God's work as the first morning of the world. “All this is from God.” To reconcile is to make peace, and God made peace with people who had turned against him, “not counting men's trespasses against them.” You didn't climb up to God; he came to you. A new creation still struggles, though: later in this letter Paul begs the Lord to remove what he calls a thorn in his flesh, and hears, “My grace is sufficient for you” (12:7-9)."
       },
+      {
+        "ref": "1 Peter 2:1-3",
+        "text": "Rid yourselves, therefore, of all malice, deceit, hypocrisy, envy, and slander. Like newborn babies, crave pure spiritual milk, so that by it you may grow up in your salvation, now that you have tasted that the Lord is good.",
+        "reading": "First Peter, a letter in the name of Jesus's disciple Peter, was written to Christians scattered across what is now Turkey, people being slandered for their faith (2:12). Just before these verses it reminds them that they “have been born again” through “the living and enduring word of God” (1:23). Read in that light, the milk is that word, and the picture is a baby who isn't the least embarrassed to be hungry. Hunger is a sign of life. Growth takes time: salvation, God's rescue, is something you “grow up in,” a life as well as a moment. And growing means letting go of what crowds out love: malice, deceit, hypocrisy, envy, slander. The letter asks all its readers, not only beginners, to stay as hungry as newborns."
+      },
+      {
+        "ref": "Acts 2:41-42, 46-47",
+        "text": "Those who embraced his message were baptized, and about three thousand were added to the believers that day. They devoted themselves to the apostles’ teaching and to the fellowship, to the breaking of bread and to prayer. ... With one accord they continued to meet daily in the temple courts and to break bread from house to house, sharing their meals with gladness and sincerity of heart, praising God and enjoying the favor of all the people. And the Lord added to their number daily those who were being saved.",
+        "reading": "About seven weeks after the crucifixion, at Pentecost, a harvest festival that filled Jerusalem with pilgrims, Peter told the crowd that God had raised Jesus from the dead. Cut to the heart, they asked what to do, and he told them to repent and be baptized (verses 37-38); to repent is to turn around, from sin toward God. These first new Christians gave themselves to four things: the apostles' teaching (what Jesus's chosen witnesses taught, now in the New Testament), the fellowship (a shared life), the breaking of bread (including meals in one another's homes), and prayer. This isn't a perfect church; within a few chapters it faced a lie in its midst (5:1-11) and a complaint that widows were being overlooked when food was handed out (6:1). Look for these four things in a church, not perfection."
+      },
+      {
+        "ref": "Romans 6:3-4",
+        "text": "Or aren’t you aware that all of us who were baptized into Christ Jesus were baptized into His death? We were therefore buried with Him through baptism into death, in order that, just as Christ was raised from the dead through the glory of the Father, we too may walk in newness of life.",
+        "reading": "Paul has just told the church in Rome that God's grace is greater than our sin, and he expects someone to ask, “Shall we continue in sin so that grace may increase?” (verse 1). His answer points them back to the day they were baptized. Paul ties baptism to being joined to Jesus: to his death, so the old life no longer owns you, and to his resurrection, so you can “walk in newness of life.” Churches that disagree about much else agree on that. They differ on how to baptize, whom to baptize, and what the water does; the questions at the end of this page set out each view."
+      }
+    ]
+  },
+  "whyHard": "Some of the difficulty is simply that beginnings are hard, and Jesus was honest about that; he warned the crowds following him to count the cost (Luke 14:25-28). But much of the confusion comes from the way becoming a Christian has been explained to us.\n\nMany of us learned to think of becoming a Christian as a single moment: come forward, raise your hand, pray this prayer. The instinct behind it is right, and I'd defend it. Faith can't be inherited, and the gospel, the good news that Jesus died for our sins and rose again, calls each person to answer for themselves. But when the moment becomes the whole message, a new believer is handed a decision without an apprenticeship, and when the feelings of that night fade, as feelings do, people conclude it didn't take. We pastors have done this, and I don't exempt myself. A decision is easier to celebrate than a life is to walk beside.\n\nThe church has known better. The Didache, one of the oldest Christian writings outside the New Testament, spends its first six chapters on how to live before it turns to baptism, and it tells believers to pray the Lord's Prayer three times a day. People preparing for baptism were called catechumens, from a Greek word for being taught, and by the fourth century, in many places, they spent the weeks before Easter under instruction and learned the Creed, a short summary of Christian belief, by heart. Augustine, who had argued against the faith for years, was baptized that way in Milan at Easter in 387. Jesus's own word for his followers is disciples: learners who pick up a life by living near the one who has it. Nobody becomes a carpenter by signing a form.\n\nOur age adds its own weight. In *Habits of the Heart* (1985), the sociologist Robert Bellah and his colleagues described a young nurse who believed in God, couldn't remember the last time she'd been to church, and called her faith by her own name: *Sheilaism*. It's easy to smile at her, and harder to admit how many of us, believers included, share her sense that faith is private and ours to define. A faith like that has nothing to hold it on a gray Tuesday. The New Testament's commands assume other people: bear with one another, forgive one another, carry one another's burdens (Colossians 3:13; Galatians 6:2).\n\nWe've failed new believers the other way too, by loading them with rules and opinions before they've learned to stand, as if grace got you in the door and performance keeps you in the room. Jesus said of the religious teachers of his day, “They tie up heavy, burdensome loads and lay them on men's shoulders” (Matthew 23:4). His own invitation is different: “Take My yoke upon you and learn from Me; for I am gentle and humble in heart” (Matthew 11:29). That is an apprentice's invitation.\n\nSo if the first glow has faded and the old self keeps coming back, that isn't proof nothing happened. It's what a beginning looks like when nobody told you it was one.",
+  "thisWeek": {
+    "intro": "You can't change everything this week, and nobody's asking you to. Start with small practices Christians have kept from the beginning: reading, praying, gathering, and walking with friends. If you miss a day, pick up where you left off.",
+    "steps": [
+      {
+        "title": "Pray the Lord's Prayer, a line at a time",
+        "body": "Prayer is talking with God honestly; there are no special words to learn first. Jesus gave his followers a pattern ([Matthew 6:9-13](/study/bible/matthew/6)). Pray it once a day, slowly, adding a sentence of your own after each line. At “Our Father in heaven,” thank him that you belong to him. At “Give us this day our daily bread,” ask for what today needs. At “forgive us our debts,” name what you've done wrong and anyone you need to forgive. If *Father* is a hard word because of the father you had, or didn't have, you can still pray it; God is the Father no earthly father fully was. Soon you'll know the prayer by heart."
+      },
+      {
+        "title": "Read Mark, a chapter a day",
+        "body": "The Bible is a library, and you don't have to start at page one. Start with Mark: sixteen chapters, a little over two weeks at a chapter a day. Open [Mark 1](/study/bible/mark/1) in the free Study Bible here and read straight through. Each day, write down one line that stopped you and one question. Then read another Gospel; the printable [Bible reading plans](/plans#reading-plans) include a month in Matthew. There's more on [Where do I start reading the Bible?](/help/reading-the-bible)"
+      },
+      {
+        "title": "Find one friend who follows Jesus",
+        "body": "Faith is learned the way a trade is learned, beside someone further along. Ask one Christian you trust, someone honest about their own faults, to meet weekly for a month: read the same chapter of Mark, trade questions, and pray for five minutes. If you're a teenager, meet at church or somewhere public. If no one comes to mind, ask a pastor to introduce you to someone. Be wary of anyone who wants to run your decisions."
+      },
+      {
+        "title": "Visit a church, and go back",
+        "body": "Look for the four things the first Christians gave themselves to (Acts 2:42): the Bible taught plainly, people who share their lives, the Lord's Supper (also called Communion, the bread and cup Jesus gave his followers the night before he died), and prayer. Go at least three times before you decide, and tell the pastor you're new. Unsure whether to take Communion? It's fine to sit it out and ask; many churches ask that you be baptized first."
+      },
+      {
+        "title": "Ask about baptism",
+        "body": "In the New Testament, new believers were baptized near the start (Acts 2:41), so ask about it early. Tell a pastor you've come to faith and ask what their church believes baptism means, whom they baptize, and how. Churches answer differently, for reasons set out in the questions at the end of this page; a good pastor will explain without pressure. If you were baptized as a child, say so."
+      },
+      {
+        "title": "When doubts or old habits come back",
+        "body": "Questions you can't answer will come, and so will habits you thought were gone. When the risen Jesus met his disciples on a mountain, “they worshiped Him, but some doubted” (Matthew 28:17), and he sent them all anyway. Write your questions down and ask them out loud. When you sin, tell God the truth the same day. Christians call this confession, saying plainly what you did and agreeing with God that it was wrong, and it comes with a promise: “If we confess our sins, He is faithful and just to forgive us our sins and to cleanse us from all unrighteousness” (1 John 1:9). For heavier questions, read [I'm not sure I believe anymore](/help/doubt)."
+      }
+    ]
+  },
+  "moreHelp": {
+    "body": "Usually a pastor and a few Christian friends are the right help for a new believer. Two situations call for more. One is a faith that arrived in the middle of a crisis: drinking or drugs, depression, grief, thoughts of ending your life. Believing in Jesus doesn't replace treatment, so keep seeing your doctor or counselor, keep going to your recovery meetings, and don't stop a medication without your doctor, whatever anyone tells you about faith.\n\nThe other is a group that wants control: a church or leader who tells you to cut off your family, takes charge of your money or your decisions, forbids questions, or answers to no one. That's spiritual abuse, and you're free to walk away. If someone at home threatens or hurts you because of your faith, your safety comes first; call 911 if you're in danger, and use the help lines at the end of this page.\n\nTo find a counselor, ask your doctor for a referral, check your insurer's directory, or ask a pastor which counselors nearby they trust. If you want a Christian counselor, say so, and whoever you see, check that they're licensed in your state.",
+    "signs": [
+      "You have thoughts of ending your life or of not wanting to be alive. Call or text 988 now, or 911 if you're in danger.",
+      "You came to faith during an addiction and are tempted to quit treatment because you feel strong.",
+      "A heaviness you brought into faith hasn't lifted, or you can't sleep, eat, or work.",
+      "Fear that you aren't really saved fills hours of your day, and no reassurance lasts.",
+      "A church or leader tells you to cut off your family, hand over your money, or stop asking questions.",
+      "Someone at home threatens, controls, or hurts you because of your faith. Call 911 if you're in danger; if you're under eighteen, tell a teacher or another adult you trust."
+    ],
+    "firstCall": "You don't need the right words. To a pastor: *I've just become a Christian and I don't know what to do next. Could someone walk with me for a few weeks?* To a doctor or counselor: *I've recently come to faith, and I'm still struggling with my drinking (or my grief, or my anxiety). My faith matters to me, and I'd like help that respects it.* Ask how they work with a client's faith.",
+    "cost": "Talking with a pastor costs nothing, and neither does a Bible: the [Study Bible](/study/bible) here is free. Counseling fees vary. Ask about sliding-scale fees, look for a community mental health center or a university training clinic, check whether your employer has an employee assistance program with a few free sessions, and ask whether a church has a benevolence fund. No church should make money the price of belonging."
+  },
+  "helping": {
+    "body": "Maybe your friend, your daughter, or your coworker has just told you they've become a Christian. If you follow Jesus yourself, the best thing you can give them is company. Read Mark with them and pray together, briefly and plainly. Sit with them in church, introduce them to people, and explain what's about to happen before it happens, especially Communion and baptism. Don't load them with rules or with your church's side of every argument, and never treat a stumble as proof it wasn't real.\n\nIf you don't share their faith, some caution is fair: watch for a group that isolates them or takes their money. But if what you see is someone reading, praying, and growing kinder, give them room; you can disagree and still be glad for what is good in them. And if you're a pastor, don't let a new believer's first months be a welcome and a pamphlet. Put a person beside them.",
+    "say": [
+      "I'm so glad. Tell me what happened.",
+      "Want to read Mark together? A chapter a day.",
+      "You don't have to know the words yet.",
+      "Ask me anything. If I don't know, we'll find out together.",
+      "Falling back doesn't mean it wasn't real. Come back."
+    ],
+    "dontSay": [
+      "Now you'll have to give all that up.",
+      "Are you sure it wasn't just emotional?",
+      "If you really meant it, you'd feel different.",
+      "Real Christians don't doubt.",
+      "You'll never struggle with that again."
+    ],
+    "next": "If they want to go further, [New Believers: A Study on Your First Steps of Faith](/studyguides/new-believer) is built for a volunteer to lead with no preparation, and [Eight Weeks of Beginnings](/plans/new-believer) walks the first two months. Check in each week, and if you notice the signs above, help them make the call."
+  },
+  "prayer": "God, I think something has happened to me, and I don't have the words for it yet. I believe your Son died for me and rose again. I've told you so, and I meant it.\n\nThank you. I didn't earn this, and I couldn't have. You came looking for me before I ever looked for you.\n\nTeach me to pray. Open the Bible to me. Give me one friend who knows the way a little better than I do, and a church that will be patient with me while I learn.\n\nWhen the old self comes back, don't let me hide from you. When doubts come, let me bring them to you. When the feeling fades, remind me that you were never the feeling.\n\nYou began this. Finish it, in your time and not mine. Our Father in heaven, hallowed be your name. Amen.",
+  "kit": {
+    "plan": {
+      "href": "/plans/new-believer",
+      "label": "Eight Weeks of Beginnings"
+    },
+    "tool": {
+      "href": "/tools/prayer-planner",
+      "label": "The Prayer Planner: Your People, Through the Week"
+    },
+    "guides": [
       {
         "href": "/studyguides/new-believer",
-        "label": "New Believers: A Study on Your First Steps of Faith",
-        "kind": "Study guide"
+        "label": "New Believers: A Study on Your First Steps of Faith"
       },
+      {
+        "href": "/studyguides/believe",
+        "label": "Believe: A Bible Study for New Believers and Seekers"
+      },
+      {
+        "href": "/studyguides/the-lords-prayer",
+        "label": "The Lord's Prayer: A Bible Study Line by Line"
+      },
+      {
+        "href": "/studyguides/the-church",
+        "label": "Why We Still Need Each Other"
+      },
+      {
+        "href": "/studyguides/the-creeds",
+        "label": "The Creeds: A Bible Study on What Christians Believe"
+      }
+    ],
+    "read": [
       {
         "href": "/life/discipleship-following-jesus",
         "label": "What Does It Mean to Be a Disciple of Jesus?",
         "kind": "Life"
       },
       {
-        "href": "/pathways",
-        "label": "The discipleship pathways",
+        "href": "/writing/what-the-gospel-actually-is",
+        "label": "What the Gospel Actually Is",
+        "kind": "Essay"
+      },
+      {
+        "href": "/life/baptism-and-the-new-life",
+        "label": "What Does Baptism Mean, and Why Does It Matter?",
+        "kind": "Life"
+      },
+      {
+        "href": "/life/the-church-as-family",
+        "label": "Why Does the Bible Call the Church a Family?",
+        "kind": "Life"
+      },
+      {
+        "href": "/wisdom/finding-a-church",
+        "label": "Finding a Church",
+        "kind": "Wisdom"
+      },
+      {
+        "href": "/wisdom/assurance-of-faith",
+        "label": "Assurance of Faith",
+        "kind": "Wisdom"
+      },
+      {
+        "href": "/resources/creeds/apostles-creed",
+        "label": "The Apostles' Creed, with plain notes on its key phrases",
+        "kind": "Page"
+      },
+      {
+        "href": "/how-tos/sf-how-to-actually-read-the-bible",
+        "label": "How to Actually Read the Bible",
+        "kind": "How-to"
+      },
+      {
+        "href": "/how-tos/sf-how-to-confess-sin-and-walk-in-repentance",
+        "label": "How to Confess Sin and Walk in Repentance",
+        "kind": "How-to"
+      },
+      {
+        "href": "/how-tos/wn-how-to-tell-your-story",
+        "label": "How to Tell Your Story",
+        "kind": "How-to"
+      },
+      {
+        "href": "/tools/glossary",
+        "label": "Theological Vocabulary Glossary: one hundred terms, each explained in a sentence, a paragraph, and why it matters",
+        "kind": "Tool"
+      },
+      {
+        "href": "/plans#reading-plans",
+        "label": "Bible reading plans to print, from a Gospel in a month to the whole Bible in a year",
         "kind": "Page"
       }
     ]
+  },
+  "faq": [
+    {
+      "q": "I don't feel any different. Did it work?",
+      "a": "Some people feel a rush of joy and others feel almost nothing, and either can be the start of real faith. The Bible measures what happened by whom you trusted: “if you confess with your mouth, ‘Jesus is Lord,’ and believe in your heart that God raised Him from the dead, you will be saved” (Romans 10:9). To be saved is to be rescued, from sin and its end, for life with God. The first letter of John was written to believers “so that you may know that you have eternal life” (1 John 5:13). God wants you to know, not to guess. If fear that you aren't really saved is taking over your days, talk with a pastor."
+    },
+    {
+      "q": "Do I have to go to church to be a Christian?",
+      "a": "You can't earn God's love by going, and you won't lose it by missing a Sunday. But the Christian life was never meant to be lived alone. Most of the New Testament's letters were written to churches, full of commands you can only keep with other people. “Let us not neglect meeting together, as some have made a habit, but let us encourage one another” (Hebrews 10:25). A church is the people who belong to Jesus in a particular place, and you need them, as they need you. A screen can help you begin, but it can't sit with you in a hospital. If a church has hurt you before, go slowly; [The church hurt me](/help/church-hurt) may help."
+    },
+    {
+      "q": "What is baptism, and do I need to be baptized?",
+      "a": "Baptism is washing with water in the name of the Father, the Son, and the Holy Spirit, as Jesus commanded (Matthew 28:19), marking a person as belonging to Jesus and his people. New believers in the New Testament were baptized near the start (Acts 2:41), so nearly every church will ask you to be baptized if you haven't been. Churches differ on what it does. Some call it an ordinance, an act of obedience that pictures what God has already done; because “it is by grace you have been saved through faith” (Ephesians 2:8), they say, baptism doesn't save you but is your glad, public answer to a salvation already given. Others call it a sacrament, a means by which God gives what the water signifies; they cite Peter, “Repent and be baptized ... for the forgiveness of your sins” (Acts 2:38), and say your baptism is God's promise to you, which holds when your feelings don't. Others, between these, call it a sign and seal of God's promise, as circumcision was to Abraham (Romans 4:11), given to strengthen faith. This is a second-order question: it divides churches, not the faith. Ask the church you join what it teaches."
+    },
+    {
+      "q": "I was baptized as a baby. Do I need to be baptized again?",
+      "a": "Churches that baptize the children of believers see one covenant running through both Testaments. God gave its sign, circumcision, to Israel's sons at eight days old (Genesis 17:12); Colossians links baptism with circumcision (2:11-12); Peter said, “This promise belongs to you and your children” (Acts 2:39); and whole households were baptized (Acts 16:15, 33). God claimed you before you could answer, they say, so they won't repeat a baptism done in the name of the Father, Son, and Holy Spirit; they'll ask you to confess for yourself the faith you were baptized into. Churches that baptize only believers point to the New Testament pattern, faith first, then baptism: “when they believed Philip ... they were baptized, both men and women” (Acts 8:12). Baptism is your own confession of faith, they say, and no slight to the parents who brought you, so they'll ask you to be baptized now; in their eyes it isn't a second baptism. Some immerse, as when Jesus “came up out of the water” (Mark 1:10); others pour or sprinkle, recalling “I will also sprinkle clean water on you” (Ezekiel 36:25). Faithful churches have differed here for centuries; talk it through with the church you join."
+    },
+    {
+      "q": "I keep falling back into old habits. Was it real?",
+      "a": "Falling back doesn't prove nothing happened. It shows that sin, the wrong we do and the self-will beneath it, has deep roots, in beginners and old saints alike. The first letter of John, written to believers, admits, “If we say we have no sin, we deceive ourselves” (1 John 1:8), and promises, “if anyone does sin, we have an advocate before the Father” (2:1): Jesus himself, speaking for you. Augustine, one of the church's great early teachers, wrote his *Confessions* as a bishop, years after his baptism, and in its tenth book he examined the temptations he was still fighting. Change is real, and slow. Confess the same day, tell a trusted friend about the pattern that keeps winning, and keep going: “He who began a good work in you will carry it on to completion” (Philippians 1:6). If it's drinking, drugs, or pornography, see [I can't stop drinking or using](/help/addiction) or [I can't stop looking at porn](/help/pornography)."
+    }
+  ],
+  "related": [
+    "prayer",
+    "reading-the-bible",
+    "doubt",
+    "whole-life",
+    "curious"
+  ],
+  "slots": [
+    {
+      "section": "happening",
+      "note": "After the sentence I came to faith from atheism, so I won't call that hypocrisy: if he wants to, a few sentences in his own words about his first months as a believer after atheism (what surprised him, who walked with him, what he wishes someone had told him). The sentence states only the approved fact, as a stance toward the reader; nothing about what he felt or did has been written for him, and the section stands without it."
+    },
+    {
+      "section": "whyHard",
+      "note": "The paragraph on the decision culture states James's conviction as a pastor (we pastors have done this, and I don't exempt myself) without describing any practice of his own. As lead pastor and founder of the Pastors Connection Network, he could add, in his own words, what he believes a church owes a new believer in the first months, or what his church does. Nothing has been described for him."
+    },
+    {
+      "section": "thisWeek",
+      "note": "Step 1 says Father may be a hard word because of the father you had, or didn't have. James was raised without a father; if he chooses, a sentence in his own words on learning to pray Our Father. The step stands without it."
+    },
+    {
+      "section": "faq",
+      "note": "Where James lands on baptism (how, whom, and what it signifies), in his own words, if he wants to say it here. The two baptism answers give each view its own verses and its comfort, then stop, as the contested-doctrine rule requires. For the editor: the essays /writing/why-baptism (I hold the believer's-baptism conviction; the tradition I serve in) and /writing/baptism-mode-and-subjects (a first-person account of his own adult baptism), and session 2 of /studyguides/baptism-and-communion (Bell names believer's baptism), already state a landing or a story for him. He should confirm them before any page repeats them, which is why none of the three is in this kit."
+    },
+    {
+      "section": "helping",
+      "note": "James has five sons. If he wishes, a sentence in his own words on what he would want a parent to do when a child says they've become a Christian. Nothing has been assumed about his sons' faith."
+    }
+  ],
+  "sources": [
+    {
+      "claim": "The Didache spends chapters 1 to 6 on the two ways, of life and of death, before chapter 7 turns to baptism (having first said all these things, baptize), and in chapter 8 tells believers to pray the Lord's Prayer three times a day.",
+      "cite": "The Didache (Teaching of the Twelve Apostles), chapters 1 to 8, Roberts-Donaldson translation, Early Christian Writings",
+      "url": "https://www.earlychristianwritings.com/text/didache-roberts.html"
+    },
+    {
+      "claim": "A catechumen is a person receiving instruction in preparation for baptism; in the early church, instruction for candidates was given during Lent, before baptism at Easter.",
+      "cite": "Encyclopaedia Britannica, Catechumen",
+      "url": "https://www.britannica.com/topic/catechumen"
+    },
+    {
+      "claim": "In Augustine's time, candidates for Easter baptism were handed the Creed during Lent, learned it by heart, and recited it back before they were baptized.",
+      "cite": "Augustine of Hippo, Sermons 227 to 229, chapter introduction, The Cambridge Edition of Early Christian Writings",
+      "url": "https://www.cambridge.org/core/books/abs/cambridge-edition-of-early-christian-writings/augustine-of-hippo-sermons-227229/745630E965C1505445BC2F855BD81E31"
+    },
+    {
+      "claim": "Ambrose baptized Augustine, with his son Adeodatus and his friend Alypius, at the Easter Vigil in Milan in 387.",
+      "cite": "Midwest Augustinians, Conversion of St. Augustine",
+      "url": "https://www.midwestaugustinians.org/conversion-of-st-augustine"
+    },
+    {
+      "claim": "Augustine wrote the Confessions between about 397 and 400, after he became bishop of Hippo, and in Book 10 examines the temptations that still beset him after his conversion.",
+      "cite": "James J. O'Donnell, commentary on Confessions Book 10 (Georgetown University)",
+      "url": "https://faculty.georgetown.edu/jod/conf/comm10.html"
+    },
+    {
+      "claim": "In Habits of the Heart (1985), chapter 9, Robert Bellah and his co-authors describe Sheila Larson, a young nurse who believed in God, could not remember the last time she went to church, and called her faith Sheilaism.",
+      "cite": "Robert N. Bellah, Richard Madsen, William M. Sullivan, Ann Swidler, and Steven M. Tipton, Habits of the Heart (University of California Press, 1985); summarized at Wikipedia, Sheilaism",
+      "url": "https://en.wikipedia.org/wiki/Sheilaism"
+    }
+  ],
+  "reviewed": {
+    "on": "2026-10-01",
+    "notes": "Second-pass editorial review, 2026-10-01; it supersedes the writer's self-check. node scripts/validate-needs.mjs new-believer is clean (4,227 words, down from 4,365) and the CarePage render test passes. Checked in order against docs/grow/CARE-PAGE-SPEC.md and the review brief: truth, Scripture, theology, care, voice, links, the four readers. Truth: every passage and inline reference re-read in the BSB with --verses, with its setting (2 Corinthians 5:14-19 and 12:7-9 with Galatians 1:13; 1 Peter 1:1, 1:22-2:5, 2:12; Acts 2:36-47, 5:1-11, 6:1; Romans 5:20-6:4; Luke 15:1-10; Luke 14:25-28; Matthew 6:9-13, 11:28-30, 23:2-4, 28:16-20; 1 John 1:8-2:1 and 5:13; Acts 2:38-39, 8:12, 16:14-15 and 31-33; Colossians 2:11-12; Genesis 17:10-12; Romans 4:11; Mark 1:9-10; Ezekiel 36:25; and the rest). The 1 Peter reading now reads the milk as the word in the light of 1:23 instead of asserting it. The unsourced line that much American preaching since the nineteenth-century revivals aimed at a moment is gone; the paragraph now says many of us learned to think of conversion as a single moment, which makes no historical claim. Outside facts kept only where they are well established; nothing could be re-opened (direct fetches are egress-blocked and the web search budget was spent), so re-open each source before release: the Didache's order (now six chapters on how to live before it turns to baptism, since chapter 5 is the way of death) and its Lord's Prayer three times a day; catechumens, from the Greek for being taught; by the fourth century, in many places, the weeks before Easter under instruction and the Creed learned by heart; Augustine baptized in Milan at Easter 387; the Confessions written as a bishop, Book 10 on the temptations he still fought; Bellah's Sheilaism, with the book now named. Cut as less than certain: instruction lasting weeks or months, sometimes years, and the Lord's Prayer learned by heart in many places before baptism. Sources narrowed to match what the page now says. Theology: baptism stays a second-order question with no landing. FAQ 3 had begun stating two views in the page's own voice; each is now attributed (they say, they cite), and the middle view has its verse and comfort (a sign and seal, as circumcision was to Abraham, Romans 4:11, given to strengthen faith). FAQ 4 now states infant baptism as its defenders would (one covenant through both Testaments, circumcision as its sign, Colossians 2:11-12, Acts 2:39, household baptisms) and believers' baptism likewise (the New Testament pattern of faith then baptism, the believer's own confession, in their eyes not a second baptism and no slight to the parents), with no tilt in the adjectives. Both answers and step 5 send the reader to the church they join. Faith can't be inherited no longer adds from the right family or country. James: as I did, followed by a picture of arms folded, read as narrating his experience and echoed the convert story in /writing/why-christians-recite-creeds; it is now the bare fact as stance (I came to faith from atheism, so I won't call that hypocrisy). The sentence on pastors handing over a booklet, under I don't exempt myself, read as his own practice and was replaced by a conviction. The happening slot is updated; the other four slots stand. Care: crisisTopics stay suicide, substance, and abuse (the page names someone at home who threatens or controls a new believer, and spiritual abuse); the foot-of-page block carries those lines, so the help lines at the end of this page is accurate. The medication line now says not to stop one without your doctor; step 3 tells a teenager to meet at church or somewhere public; Father in step 1 is now you can still pray it, not say it anyway. Voice and length: repetition cut (feelings vary, the shortest Gospel, a church isn't a building, baptism's three questions in the Romans reading, a second Augustine date, the helping.next echo, licensing in firstCall, a duplicate addiction link); one antithesis per section; a sentimental image and two triplets gone; the skeptic stated more strongly (ordinary causes, a need for comfort or belonging); What's going on ends on weight instead of a pointer, and Why this is so hard on its verdict. Links: every kit target opened. The Apostles' Creed label promised notes on each phrase; the page annotates eight, so it now says its key phrases. The other labels match (the glossary holds 100 terms at three levels; the reading plans include a Gospel in a month, Matthew; the New Believers guide says a volunteer can run it with no preparation). Flagged for James: /writing/what-the-gospel-actually-is narrates its author's preaching in the first person, and /studyguides/believe adds one line beyond the approved facts; both stay as kit links because the labels are true and neither is the page's best resource, and the page repeats neither. The baptism essays, session 2 of the Baptism and Communion guide, and the creeds and cost essays remain unlinked and unechoed."
   }
 }

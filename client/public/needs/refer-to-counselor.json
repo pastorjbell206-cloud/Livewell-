@@ -1,25 +1,143 @@
 {
   "slug": "refer-to-counselor",
-  "page": false,
+  "page": true,
   "rank": 23,
   "title": "When should I refer someone to a counselor?",
-  "summary": "For pastors and leaders: the signs that someone needs more than you can give, and how to hand them on well.",
+  "seoTitle": "When to Refer Someone to a Counselor, and How to Do It Well",
+  "description": "For pastors, leaders, and friends: the signs someone needs more help than you can give, how to refer them well, and how to stay with them after.",
+  "summary": "For pastors and leaders: the signs someone needs more than you can give, and how to refer them without letting go.",
   "askedAs": [
     "when to refer to a counselor",
+    "how to refer someone to a counselor",
     "pastoral counseling limits",
     "counselor referral list",
     "Christian counselor or licensed counselor",
-    "how to refer someone",
     "mental health and the church",
     "pastor counseling",
-    "when to call a professional"
+    "when to call a professional",
+    "when is it beyond me",
+    "warm handoff",
+    "how to suggest counseling to a friend",
+    "are pastors mandated reporters",
+    "pastor confidentiality",
+    "what does the Bible say about counseling"
   ],
   "states": [
     "leading",
     "helping"
   ],
   "sensitivity": "ordinary",
+  "crisisTopics": [
+    "suicide",
+    "abuse",
+    "substance"
+  ],
+  "answer": "Someone trusted you with something heavy, and you're wondering if it's more than you can carry. It may be, and saying so is part of caring for them. If they've mentioned ending their life, ask directly whether they're thinking about suicide, stay with them, and call or text 988 together, or call 911 if they're in danger right now. If a child is being harmed, report it. If they're afraid of someone at home, safety comes first, and the help lines at the end of this page can help them plan. Bring in trained help now, too, when someone sees or hears things others don't, can't stop drinking or using, is starving themselves or bingeing, is haunted by trauma, or is sinking deeper each week, or when you're out of your depth or they've come to lean on you alone. A referral doesn't end your care. You make the call with them, and you stay.",
+  "happening": "It might happen in your office, in a hospital hallway, or in the parking lot after small group. Someone tells you they haven't slept in weeks and can't stop crying, or that they've started to think everyone would be better off without them. Someone else tells you a husband or wife frightens them, or that they hear a voice no one else hears, or that the drinking is every day now. Sometimes it's the third conversation about the same darkness, and the person is worse than the first time. You care about them, and somewhere in the conversation a question starts to form: *is this beyond me?*\n\nThat question rarely comes alone. Suggesting a counselor can feel like sending someone away, and you may wonder whether a counselor would respect their faith. If you're a pastor, it can seem that you're supposed to have the answer and that sending someone elsewhere admits you don't; if you're a friend or a small-group leader, it can seem that you have no standing to say anything at all. And if you've been carrying someone for months, answering texts at midnight, there may be a tiredness you're ashamed of, and a relief at the thought of handing them on that shames you too.\n\nThe common explanations each hold something true. Doctors and counselors will tell you that some struggles are illnesses or injuries, that the brain and body are involved, and that good intentions don't replace training. They're right; a helper who means well and doesn't know what he's looking at can do harm. Pastors will tell you that guilt, grief, and despair are also matters of the soul, and that prayer, Scripture, and the presence of the church are real care, not a waiting room. They're right too, and the Bible itself knows that different troubles need different care: Paul told the Thessalonians to “admonish the unruly, encourage the fainthearted, help the weak, and be patient with everyone” (1 Thessalonians 5:14), and much harm comes from mixing those up, like rebuking the fainthearted as if they were rebels.\n\nWhat both leave out is that you don't have to settle which kind of problem it is before you do something. Diagnosis isn't your job, and you don't need one. The questions that matter are simpler: whether anyone is in danger; whether the body is involved, in sleep or eating or drinking; whether it's getting worse; whether it's past what you know how to do; and whether the person has come to lean on you alone. A yes to any of them means it's time to bring someone else in.",
+  "scripture": {
+    "intro": "Scripture doesn't treat a helper's limits as a failure of faith. It shows a leader told he couldn't carry everyone, a king healed through prayer and a poultice, a church told to share burdens without pretending to carry them all, and comforters who did their best work in silence.",
+    "passages": [
+      {
+        "ref": "Exodus 18:18",
+        "text": "Surely you and these people with you will wear yourselves out, because the task is too heavy for you. You cannot handle it alone.",
+        "reading": "Moses sat from morning until evening settling Israel's disputes himself, because, as he put it, the people came to him “to inquire of God” (Exodus 18:15). It was holy work, and it was crushing him. His father-in-law Jethro, the priest of Midian, watched for a day and told him, “What you are doing is not good” (Exodus 18:17). Notice who wears out: Moses and the people both. A helper who carries everything alone doesn't only exhaust himself; the people wait all day and get less of him. Jethro's counsel shared the work with capable, trustworthy men who feared God, while the hardest cases still came to Moses, so that care could reach everyone and “all these people can go home in peace” (Exodus 18:23). The counsel came from outside Israel, and Moses had the humility to take it."
+      },
+      {
+        "ref": "2 Kings 20:5, 7",
+        "text": "“Go back and tell Hezekiah the leader of My people that this is what the LORD, the God of your father David, says: ‘I have heard your prayer; I have seen your tears. I will surely heal you. ...’” Then Isaiah said, “Prepare a poultice of figs.” So they brought it and applied it to the boil, and Hezekiah recovered.",
+        "reading": "Hezekiah was dying, and the prophet Isaiah had told him so. The king turned his face to the wall, prayed, and wept bitterly (2 Kings 20:2-3), and before Isaiah had left the middle courtyard, God sent him back with an answer. Then the same prophet who carried God's promise told them to prepare the poultice. The passage doesn't say how the figs worked, and it isn't a manual for medicine. What it shows is a prophet who saw no contest between the prayer God had heard and the remedy laid on the boil. When you pray for someone and then help them call a doctor or a counselor, you're keeping together what Isaiah kept together. You haven't stopped trusting God. You're trusting him to work through the help he gives."
+      },
+      {
+        "ref": "Galatians 6:2-5",
+        "text": "Carry one another’s burdens, and in this way you will fulfill the law of Christ. If anyone thinks he is something when he is nothing, he deceives himself. Each one should test his own work. Then he will have reason to boast in himself alone, and not in someone else. For each one should carry his own load.",
+        "reading": "Paul had just warned the churches of Galatia against conceit and envy (Galatians 5:26). Now he tells them to carry each other's burdens, using a word for a heavy weight. A few lines later he says each one should carry his own load, using a different word, one also used for a ship's cargo; in context, that load is each person's own work, which he must test for himself (Galatians 6:4). Some weights are too heavy for one person, and some things belong to each person and can't be carried for them, like the choice to get help, take the medicine, or keep the appointment. Between those lines sits a warning for the helper: anyone who “thinks he is something when he is nothing” deceives himself (Galatians 6:3). A pastor who believes he can be everything to everyone has fallen for it, and so has a friend who believes no one else could help. Testing your own work includes knowing what it isn't."
+      },
+      {
+        "ref": "Job 2:13",
+        "text": "Then they sat on the ground with him for seven days and seven nights, but no one spoke a word to him because they saw how intense his suffering was.",
+        "reading": "Job's three friends came to comfort him, wept when they saw him, and sat with him for a week in silence. Then Job spoke, and they answered him, and for chapter after chapter they insisted that suffering like his must have a spiritual cause and that he should repent. Their theology sounds orthodox, and some of it is true in the abstract. Job told them, “you are all worthless physicians. If only you would remain silent; for that would be your wisdom!” (Job 13:4-5). At the end God told them, “you have not spoken about Me accurately, as My servant Job has” (Job 42:7), and it was Job who prayed for them (Job 42:8-10). Helpers are tempted to explain what they should only sit beside. When we name a cause we can't see, a hidden sin behind someone's depression or a weak faith behind their panic, we're standing where the friends stood."
+      }
+    ]
+  },
+  "whyHard": "It's easy to say that pastors who won't refer are proud, and some of us are. But beneath the pride sits an older mistake, shared by people who look like opposites. One church tells a depressed believer to pray harder and confess more, as though every darkness were a spiritual failure. Another hands anyone with a hard question to a professional and quietly stops being their church. One distrusts medicine and the other has given up on the soul, yet they share a premise: that caring for souls and treating minds and bodies are rivals, and you have to pick one.\n\nThe church hasn't always thought this way. Around 590, newly made bishop of Rome, Gregory the Great wrote his *Book of Pastoral Rule*, and its first chapter calls the guidance of souls the art of arts and reaches for medicine to explain it. The wounds of the mind are harder to see than the body's, he wrote, yet people who would blush to pose as physicians without knowing medicines will set themselves up as physicians of the heart without the knowledge it requires. He was warning untrained pastors, and the warning cuts both ways: learn the care of souls, and don't practice what you haven't learned. In the 1680s the Puritan pastor Richard Baxter published a sermon on melancholy, an old name for a heavy, anxious darkness of mind, under a title that is its argument: *The Cure of Melancholy and Overmuch-Sorrow, by Faith and Physick*. Physick meant medicine. Gregory took medicine as a model for the pastor's art, and Baxter took it as a partner; neither treated it as a rival.\n\nThe twentieth century strained that partnership in two ways at once. Sigmund Freud called religion an illusion in *The Future of an Illusion* (1927), and many Christians came to see psychology as a rival faith; some still do. Meanwhile, as the sociologist Philip Rieff argued in *The Triumph of the Therapeutic* (1966), the therapeutic was displacing the religious as the frame of Western life, and the aim of life was shifting from salvation to a sense of well-being. The church breathed that air too.\n\nSo we inherited both reactions, and each guards something real. The pastor who won't refer fears a stranger will treat a soul as a set of symptoms, and Rieff's account suggests the fear isn't paranoid. The pastor who refers at the first hard question fears doing harm by playing doctor, and he's right to, though he may also have stopped believing he has anything to give. I'm a pastor, so I'm inside this, and our motives are rarely as clean as our reasons. Being needed has its own quiet pleasure. Being available can pass for care when it's mostly a way of keeping someone close, sometimes out of fear that if they find help elsewhere, they won't need us or won't come back. And a hard case can be handed off for no better reason than that it's hard. None of us is exempt from either temptation, and both refuse the same humility: being one member of a body, where no member can say to another, “I do not need you” (1 Corinthians 12:21).\n\nA skeptic might say the church should stay out of mental health altogether, and there's history on his side. Churches have told the depressed to pray harder, called illness sin, and sent people home to someone who was hurting them. That record is real, and no one should excuse it. But a person is more than a set of symptoms, and a church can do what a clinic isn't built to do: bring meals, sit through a night in the hospital, remember the anniversary of a death, and hold out a hope that doesn't depend on getting better.\n\nJesus told the parable of the good Samaritan to answer who our neighbor is, but notice how the mercy ends. The Samaritan bandaged a stranger's wounds, took him to an inn, and the next day paid the innkeeper to care for him, saying, “on my return I will repay you for any additional expense” (Luke 10:35). He didn't stay at the inn, and he didn't disappear. We aren't the healer, and we were never meant to be. We are meant to come back, when the healing comes and when it doesn't.",
+  "thisWeek": {
+    "intro": "These steps assume no one is in immediate danger. If someone has talked about ending their life, stay with them and call or text 988 together today, or call 911 if they're in danger now. If you suspect a child is being harmed, report it today. If they're afraid of someone at home, their safety comes first.",
+    "steps": [
+      {
+        "title": "Write down what you've seen",
+        "body": "Before you decide anything, write down what you've seen and heard, in plain words and without labels. Note what they told you, how long it has gone on, and what has changed in their sleep, eating, work, or drinking. Keep the note private, and write it as if they'll read it. Then compare it honestly with the signs on this page. Writing it down keeps you from diagnosing, which isn't your job, and from minimizing, a temptation when you love someone and want them to be fine."
+      },
+      {
+        "title": "Ask about danger plainly",
+        "body": "Ask plainly whether they're thinking about suicide, whether anyone at home frightens them, and whether anyone is hurting them or a child. It will feel awkward; ask anyway. Asking about suicide doesn't put the idea in someone's head. If the answer to any of them is yes, the next step is a call today, not a referral next week. If they're afraid of someone at home, ask how it's safe to reach them, since phones and messages may be read."
+      },
+      {
+        "title": "Have two or three names ready",
+        "body": "Find two or three counselors or clinics you'd trust, not just one, and call each yourself. The questions to ask are under What to say when you call. Write down what you learn; the printable referral list in Go deeper has room for it, with the national help lines already printed. A counselor you've spoken with yourself is easier to call than a name from a search."
+      },
+      {
+        "title": "Make the handoff warm",
+        "body": "Offer to make the first call together, or to sit with them while they book the appointment. In health care this is called a warm handoff: one helper passes a patient to the next in person, with the patient in the room, so nothing gets lost in between. Ask whether they'd like a ride to the first visit, and let them choose among the names. Unless someone is in danger, an adult's care is theirs to decide."
+      },
+      {
+        "title": "Stay close after the handoff",
+        "body": "Put a date on your calendar to check in after the first appointment, and keep it. Keep inviting them to worship, to dinner, to the group, and keep praying with them if they want you to. Paul told the Corinthians, “If one part suffers, every part suffers with it” (1 Corinthians 12:26). Counseling doesn't take anyone out of the body, and it doesn't excuse the rest of the body from suffering with them."
+      },
+      {
+        "title": "Look at your own load",
+        "body": "Notice what this is costing you, and tell someone: an elder, another pastor, your spouse, or a counselor of your own. You can talk about your load without telling their story; leave out names and details. If you've been everyone's last call for years, take that as a warning. Pastors running on empty can start with [I'm a pastor and I'm running on empty](/help?need=pastors)."
+      }
+    ]
+  },
+  "moreHelp": {
+    "body": "When the signs below appear, pastoral care still has a part, but it can't be the only part, and some of them need medical, licensed, or safety help that no pastor should try to give alone. Good names come from the person's doctor, their insurance company's directory, and pastors nearby who keep lists of their own. Before you refer, check the counselor's license on your state's licensing board website. For many people the first stop is their regular doctor, who can look for physical causes and refer them on.\n\nIn general terms, a psychiatrist is a medical doctor who diagnoses and can prescribe medication. A psychologist usually holds a doctorate, provides therapy and psychological testing, and in most states can't prescribe. Licensed professional counselors (LPCs; some states say licensed mental health counselors), marriage and family therapists (LMFTs), and clinical social workers (LCSWs) generally hold master's degrees and provide therapy; social workers are also trained to connect people with practical help. Names and rules vary by state.\n\n*Christian counselor* describes a faith or an approach, not a license, and so does *biblical counselor*. Some hold a state license; some hold a certification from a ministry or biblical counseling association, which may reflect real training but isn't a license. Ask either way, and ask how they work with a client's faith.",
+    "signs": [
+      "They've talked about suicide or wanting to die. Stay with them and call or text 988 together now, or call 911 if they're in immediate danger.",
+      "They're afraid of someone at home, or someone hurts or controls them. Ask how it's safe to reach them, and point them to the Domestic Violence Hotline. Never suggest or offer couples counseling when one spouse fears the other.",
+      "You suspect a child is being abused or neglected. Report it to child protective services or the police; your state's law may require you to.",
+      "They see or hear things others don't, seem to have lost touch with what's real, or are suddenly confused. Get medical help today, and call 911 if anyone is in danger.",
+      "They can't stop drinking or using drugs, or need them to get through the day. Stopping suddenly can be medically dangerous, so a doctor should guide it.",
+      "They're starving themselves, bingeing and purging, or losing weight fast. This can be life-threatening; they need a doctor as well as a counselor.",
+      "A trauma keeps returning in nightmares or flashbacks, or a heaviness has lasted most of the day, nearly every day, for two weeks or more. Help them see a doctor or licensed counselor.",
+      "You're out of your depth, or they've come to depend on you alone. That's reason enough to refer, and it isn't a failure."
+    ],
+    "firstCall": "When you're building your list, call a counselor's office and say, *I serve at a church here in town, and I'm putting together a list of counselors I'd trust with the people I care for. Do you have a few minutes?* Ask about their license, what they treat and don't, fees and insurance, how soon they can see someone, how they respect a client's faith, and what they do in a crisis. When you call with someone, let them speak for themselves if they can. If they can't, you might say, *I'm here with a friend who's been struggling and would like to make an appointment.*",
+    "cost": "Help the person ask their insurer which counselors are in network, and ask counselors about sliding-scale fees. Community mental health centers offer lower-cost care, university training clinics often charge less, and many employers offer a few free sessions through an employee assistance program. The 988 Lifeline is free. A church that sends people to counseling should be ready to help pay for it when it can; if yours keeps a benevolence fund, this is one of the things it's for."
+  },
+  "helping": {
+    "body": "People often don't hear *you should see a counselor* the way we mean it. They may hear *you're too much for me*, or *something is wrong with you*, or *your faith isn't strong enough*. So say why you're suggesting it, and make the limits yours, not theirs: tell them what you've noticed, that you care too much to be the only help they have, and that what they're carrying deserves someone trained for it. Offer names and offer to help with the call. Then let them answer. Unless someone is in danger, an adult can say no, and your part is to stay close and ask again later.\n\nBe honest about confidentiality from the start, and don't promise a secrecy you may not be able to keep. If you're a friend or small-group leader, you can ask, *Would it help if I told our pastor?*, and let them decide. If one spouse is afraid of the other, never counsel them together, and ask the one who's afraid how it's safe to stay in touch. And if they've come to lean on you alone, say so kindly, and widen the circle rather than stepping away.",
+    "say": [
+      "I care about you too much to be the only one helping with this.",
+      "What you're carrying deserves someone trained for it.",
+      "Are you thinking about suicide?",
+      "Can we make the call together right now?",
+      "I'm not going anywhere. I'll still be here."
+    ],
+    "dontSay": [
+      "You just need to pray more.",
+      "I'll keep this between us, no matter what.",
+      "Counseling is for people who don't trust God.",
+      "I've done all I can for you.",
+      "Let me know how it goes."
+    ],
+    "next": "After the first appointment, ask how it went, not what was said. If the first counselor isn't a good fit, help them find another; one poor match doesn't mean counseling can't help. If they stop going and seem worse, ask why, gently. If they talk about wanting to die, ask plainly whether they're thinking about suicide, and stay with them while they call or text 988. Keep praying for them by name."
+  },
+  "prayer": "Lord, someone trusted me with more than I know how to carry. I want to be enough for them, and I'm not. You knew that before I did.\n\nForgive me for the times I've held on because I liked being needed or was afraid of losing them, and for the times I've let go because I was tired. When I don't understand, keep me from explaining and keep me near. Give me the courage to ask the hard question and the humility to call someone wiser.\n\nGive skill and patience to the doctors and counselors I send them to. Keep the one I'm praying for safe tonight, and where I can't go with them, go with them.\n\nYou are the Shepherd who binds up the broken and strengthens the weak. I'm not. Make me one of the hands you use, and when they come back, let them find me still here. Amen.",
   "kit": {
+    "tool": {
+      "href": "/downloads/tools/referral-list-letter.pdf",
+      "label": "A Referral List for Pastors and Church Leaders (printable PDF)"
+    },
+    "guides": [
+      {
+        "href": "/studyguides/mental-health",
+        "label": "Mental Health: A Bible Study on the Weight You Carry"
+      },
+      {
+        "href": "/studyguides/pastoral-health",
+        "label": "Pastoral Health: A Study for Leaders and Those Who Love Them"
+      }
+    ],
     "read": [
       {
         "href": "/writing/34-what-a-healthy-pastor-referral-network-actually-looks-like",
@@ -27,25 +145,163 @@
         "kind": "Essay"
       },
       {
-        "href": "/writing/church-and-mental-health",
-        "label": "How the Church Handles Mental Health (Badly)",
-        "kind": "Essay"
+        "href": "/life/the-heavy-mind",
+        "label": "What Does the Bible Say About Depression?",
+        "kind": "Life"
       },
       {
         "href": "/how-tos/marriage-how-to-know-when-to-get-help",
-        "label": "How to Know When to Get Help",
+        "label": "How to Know When to Get Help (for a struggling marriage)",
         "kind": "How-to"
-      },
-      {
-        "href": "/studyguides/mental-health",
-        "label": "Mental Health: A Bible Study on the Weight You Carry",
-        "kind": "Study guide"
-      },
-      {
-        "href": "/studyguides/pastoral-health",
-        "label": "Pastoral Health: A Study for Leaders and Those Who Love Them",
-        "kind": "Study guide"
       }
     ]
+  },
+  "faq": [
+    {
+      "q": "Is it a lack of faith to send someone to a counselor?",
+      "a": "No. Scripture doesn't set prayer against the help God gives through skilled hands. God promised to heal Hezekiah, and the healing came with a poultice of figs (2 Kings 20:5-7). When Scripture faults King Asa, who in his illness “did not seek the LORD, but only the physicians” (2 Chronicles 16:12), the fault is in the word *only*. Proverbs adds, “Plans fail for lack of counsel, but with many advisers they succeed” (Proverbs 15:22); those advisers weren't therapists, but the book keeps returning to the wisdom of more than one voice. Sending someone for help can be an act of faith. The faithless thing would be to stop praying, or to stop caring once the appointment is made."
+    },
+    {
+      "q": "Should I refer to a Christian counselor or a licensed counselor?",
+      "a": "They aren't opposites. Many counselors are both, and *Christian counselor* isn't a license, so ask about training and licensure either way. Beyond that, faithful Christians disagree about the best help for troubles of the soul. Biblical counselors hold that Scripture is sufficient for counseling, that the local church is where that care belongs, and that secular therapies carry their own beliefs about human nature; many also send people to a doctor for the body. They point to Scripture making the man of God “complete, fully equipped for every good work” (2 Timothy 3:17), and offer the comfort that no trouble is beyond the reach of God's word. Others hold that all truth is God's truth, that studying the mind is part of studying his creation, and that licensed counselors bring training and accountability a pastor may not have. They point to the letter of James, “Every good and perfect gift is from above” (James 1:17), and offer the comfort that what is true in a counselor's training is God's gift too. Either way, suicide risk, psychosis, abuse at home, eating disorders, and dangerous withdrawal need medical, licensed, or safety help no pastor should give alone."
+    },
+    {
+      "q": "Are pastors mandated reporters?",
+      "a": "In many states, yes. Clergy are named among the people required to report suspected child abuse or neglect, some states require everyone to report, and the usual standard is suspicion or reason to believe, not proof. Whether what's said to a pastor in confidence is legally privileged also varies by state. So don't promise anyone you'll keep everything secret. Promise to keep their confidence unless someone is in danger or a child is being harmed, and say so at the start. Licensed counselors work under similar limits and will explain theirs. Learn your own state's law before you need it, from your state's child protective services agency or a local attorney. This is general information, not legal advice."
+    },
+    {
+      "q": "What if they won't see a counselor?",
+      "a": "An adult gets to decide about their own care, and pressure can make the door harder to open. Ask what's in the way: the cost, fear of being judged, a bad experience with a counselor before, or a worry that a counselor will dismiss their faith. Many of those have answers, and you can help find them. Offer a smaller step, like a visit to their regular doctor, keep the friendship warm, and ask again in a few weeks. But if they're thinking about suicide, their refusal doesn't settle it: stay with them and call or text 988, or call 911 if the danger is immediate. If a child is at risk, report it. If they're afraid of someone at home, let them lead, and help them reach the Domestic Violence Hotline; in an emergency, call 911."
+    },
+    {
+      "q": "Do I stop being their pastor once they're in counseling?",
+      "a": "No. A counselor treats; a pastor shepherds, and a person in counseling still needs worship, the Lord's Supper, prayer, friends, and someone who notices when they're missing. What changes is that you stop trying to be their therapist. Don't run a second set of sessions alongside the first, and don't ask what they talk about in counseling; ask what they'd like you to know. The counselor generally can't tell you anything without their permission, and with it, the two of you can sometimes talk if that helps them. The church should be a place they belong while they get help, and long after."
+    }
+  ],
+  "related": [
+    "pastors",
+    "empty",
+    "anxiety",
+    "marriage",
+    "addiction",
+    "church-hurt"
+  ],
+  "slots": [
+    {
+      "section": "whyHard",
+      "note": "After the paragraph that begins So we inherited both reactions: as a pastor, James could add, in his own words, how he decides when a need has passed what he should carry alone, or what he has learned about referring well. Nothing that could identify anyone; the page invents no congregants or conversations and stands without it."
+    },
+    {
+      "section": "whyHard",
+      "note": "In the skeptic paragraph: James came to faith from atheism. If he wants to, a sentence or two on how the church's handling of suffering and mental illness looked to him from outside, only as he tells it."
+    },
+    {
+      "section": "thisWeek",
+      "note": "At the step Have two or three names ready: as lead pastor of First Baptist Church of Fenton and founder of the Pastors Connection Network, James could say, if he wishes, how pastors can share trusted referral names with one another, or name counselors or organizations he trusts (Grow prompt Section 12). Nothing is assumed."
+    },
+    {
+      "section": "thisWeek",
+      "note": "At the step Look at your own load: if James wants to, a sentence in his own words on where a pastor, himself included, takes his own load. Nothing about his own health or counseling is assumed; the library essay depression-in-the-pulpit narrates a season of depression in his voice that is unverified, and this page neither repeats nor relies on it."
+    },
+    {
+      "section": "faq",
+      "note": "Should I refer to a Christian counselor or a licensed counselor: where James lands on the biblical counseling and integration views, in his own words, with the tradition it comes from and the strongest objection he hasn't fully answered. The answer states both views in the form their defenders would sign and lands nowhere."
+    }
+  ],
+  "sources": [
+    {
+      "claim": "Gregory the Great wrote the Book of Pastoral Rule around 590, when he was newly made bishop of Rome. Its first chapter calls the government of souls the art of arts, says the wounds of the mind are more hidden than those of the body, and observes that people who know nothing of medicines blush to appear as physicians of the flesh while people ignorant of spiritual precepts profess themselves physicians of the heart. The page paraphrases (the guidance of souls) and does not quote.",
+      "cite": "Gregory the Great, The Book of Pastoral Rule, Part I, chapter 1 (trans. James Barmby, Nicene and Post-Nicene Fathers, Second Series, vol. 12). The work, its date, and the art-of-arts passage are well established; the translation's exact wording was confirmed only through search excerpts, so check it before quoting it anywhere.",
+      "url": "https://www.newadvent.org/fathers/36011.htm"
+    },
+    {
+      "claim": "Richard Baxter published a sermon titled The Cure of Melancholy and Overmuch-Sorrow, by Faith and Physick in the 1680s. The page draws its point only from the title (physick meaning medicine, set beside faith) and does not report the sermon's contents.",
+      "cite": "Richard Baxter, The Cure of Melancholy and Overmuch-Sorrow, by Faith and Physick, listed as a 1683 text in a Routledge collection; search excerpts place its first printing in A Continuation of Morning-Exercise Questions and Cases of Conscience (1683). The page says only the 1680s; read the 1683 text before adding the year or describing the sermon's advice.",
+      "url": "https://www.taylorfrancis.com/chapters/edit/10.4324/9781003553250-5/cure-melancholy-overmuch-sorrow-faith-physick-1683-richard-baxter"
+    },
+    {
+      "claim": "Sigmund Freud's The Future of an Illusion (1927) treats religious beliefs as illusions arising from wish fulfillment.",
+      "cite": "Sigmund Freud, The Future of an Illusion (1927).",
+      "url": "https://en.wikipedia.org/wiki/The_Future_of_an_Illusion"
+    },
+    {
+      "claim": "The sociologist Philip Rieff argued in The Triumph of the Therapeutic: Uses of Faith After Freud (1966) that a therapeutic culture centered on psychological well-being was displacing the religious frame of Western life, religious man, born to be saved, giving way to psychological man, born to be pleased. The page paraphrases the shift as from salvation to a sense of well-being and does not quote.",
+      "cite": "Philip Rieff, The Triumph of the Therapeutic: Uses of Faith After Freud (1966). The book, its date, and its thesis are well established.",
+      "url": "https://en.wikipedia.org/wiki/Philip_Rieff"
+    },
+    {
+      "claim": "Psychiatrists are medical doctors who can prescribe medication; psychologists usually hold a doctorate (PhD or PsyD), evaluate, test, and provide therapy, and may prescribe only in a few states; licensed professional counselors (in some states, licensed mental health counselors), marriage and family therapists, and clinical social workers generally hold master's degrees and provide therapy, and social workers are also trained in case management. Titles and rules vary by state.",
+      "cite": "National Alliance on Mental Illness (NAMI), Choosing the Right Mental Health Provider, read through search excerpts (which said master's or doctoral level for psychologists). The page states only these general distinctions; licensure as a psychologist generally requires a doctorate, hence usually. Re-check before release.",
+      "url": "https://stigmafree.nami.org/guides/nami-choosing-the-right-mental-health-provider/"
+    },
+    {
+      "claim": "Licensed counselors inform clients of the limits of confidentiality and generally disclose information only with the client's consent or sound legal or ethical justification, such as protecting someone from serious and foreseeable harm or a legal requirement (B.1.c, B.1.d, B.2.a). The page says only that counselors work under limits like a pastor's, will explain them, and generally can't tell a pastor anything without the person's permission.",
+      "cite": "American Counseling Association, 2014 ACA Code of Ethics, Section B, Confidentiality and Privacy. Read through search excerpts; other licensed professions keep similar rules in their own codes. Re-check before release.",
+      "url": "https://manifold.counseling.org/read/aca-code-of-ethics/section/ae38deea-7b60-43f3-b08f-33e5a5f584e5"
+    },
+    {
+      "claim": "Many states include clergy among the professionals required to report child abuse and neglect, some states require every person to report, and whether clergy-penitent privilege applies varies by state.",
+      "cite": "Child Welfare Information Gateway (U.S. Department of Health and Human Services), Clergy as Mandatory Reporters of Child Abuse and Neglect (cited already on the church-hurt page).",
+      "url": "https://www.childwelfare.gov/resources/clergy-mandatory-reporters-child-abuse-and-neglect/"
+    },
+    {
+      "claim": "Reporting laws typically require a report when the reporter suspects or has reason to believe a child has been abused or neglected; the reporter does not have to prove it.",
+      "cite": "Child Welfare Information Gateway, Mandatory Reporting of Child Abuse and Neglect (State Statutes series), cited already on the church-hurt page.",
+      "url": "https://artifacts.childwelfare.gov/public/documents/mandatory-reporting-abuse-neglect.pdf"
+    },
+    {
+      "claim": "The National Domestic Violence Hotline does not recommend couples counseling with an abusive partner. The page builds on it: a helper never suggests or offers couples counseling when one spouse fears the other.",
+      "cite": "National Domestic Violence Hotline, Should I Go to Couples Therapy With My Abusive Partner? (cited already on the church-hurt page).",
+      "url": "https://www.thehotline.org/resources/should-i-go-to-couples-therapy-with-my-abusive-partner/"
+    },
+    {
+      "claim": "Alcohol withdrawal may quickly become life-threatening, and moderate to severe withdrawal may need a hospital or treatment facility.",
+      "cite": "MedlinePlus Medical Encyclopedia (U.S. National Library of Medicine), Alcohol withdrawal (cited already on the addiction page).",
+      "url": "https://medlineplus.gov/ency/article/000764.htm"
+    },
+    {
+      "claim": "Stopping benzodiazepines abruptly or reducing the dose too quickly can cause withdrawal reactions, including seizures, which can be life-threatening.",
+      "cite": "U.S. Food and Drug Administration, Benzodiazepine Drug Class: Drug Safety Communication (September 23, 2020), cited already on the addiction page.",
+      "url": "https://www.fda.gov/safety/medical-product-safety-information/benzodiazepine-drug-class-drug-safety-communication-boxed-warning-updated-improve-safe-use"
+    },
+    {
+      "claim": "Eating disorders are serious illnesses that can be life-threatening; medical care and monitoring are needed to treat their health consequences, and with treatment people can recover.",
+      "cite": "National Institute of Mental Health, Eating Disorders: What You Need to Know. Read through search excerpts; the page states only this general, well-established point. Re-check before release.",
+      "url": "https://www.nimh.nih.gov/health/publications/eating-disorders"
+    },
+    {
+      "claim": "Psychosis involves some loss of contact with reality, including seeing or hearing things others do not and false beliefs; connecting people with treatment early can have long-term benefits.",
+      "cite": "National Institute of Mental Health, Understanding Psychosis. Read through search excerpts; the page states only this general, well-established point. Re-check before release.",
+      "url": "https://www.nimh.nih.gov/health/publications/understanding-psychosis"
+    },
+    {
+      "claim": "Re-experiencing symptoms of post-traumatic stress include flashbacks, bad dreams, and frightening thoughts.",
+      "cite": "National Institute of Mental Health, Post-Traumatic Stress Disorder. Read through search excerpts; the page states only this general, well-established point. Re-check before release.",
+      "url": "https://www.nimh.nih.gov/health/topics/post-traumatic-stress-disorder-ptsd"
+    },
+    {
+      "claim": "Depression is diagnosed when symptoms are present most of the day, nearly every day, for at least two weeks; the page uses that span as a sign to get help and diagnoses no one.",
+      "cite": "National Institute of Mental Health, Depression. Read through search excerpts; the page states only this general, well-established point. Re-check before release.",
+      "url": "https://www.nimh.nih.gov/health/publications/depression"
+    },
+    {
+      "claim": "Asking someone directly whether they are thinking about suicide does not increase suicidal thoughts or behavior.",
+      "cite": "National Institute of Mental Health, 5 Action Steps to Help Someone Having Thoughts of Suicide (cited already on the caregiving and divorce pages).",
+      "url": "https://www.nimh.nih.gov/sites/default/files/documents/health/publications/5-action-steps-help-someone-having-thoughts-suicide.pdf"
+    },
+    {
+      "claim": "A warm handoff is a handoff conducted in person between two members of the health care team, in front of the patient and family.",
+      "cite": "Agency for Healthcare Research and Quality, Warm Handoff: Intervention. The term and its meaning are standard in health care; AHRQ's wording was read through search excerpts.",
+      "url": "https://www.ahrq.gov/patient-safety/reports/engage/interventions/warmhandoff.html"
+    },
+    {
+      "claim": "Galatians 6:2 and 6:5 use different Greek words: bare, heavy burdens, in verse 2, and phortion, a load (a word also used of a ship's freight), in verse 5.",
+      "cite": "Bible Hub, Galatians 6:5 Lexicon (with the Galatians 6:2 lexicon and Strong's 5413, phortion), cited already on the caregiving page.",
+      "url": "https://biblehub.com/lexicon/galatians/6-5.htm"
+    }
+  ],
+  "reviewed": {
+    "on": "2026-10-01",
+    "notes": "Second pass (editor), 2026-10-01, after the writer's self-check. Truth: Gregory kept, dated to around 590 when he was newly bishop of Rome, Pastoral Rule I.1 paraphrased. Baxter reduced to what is certain, the sermon's title and the 1680s; the claim about his advice on physick (search excerpts only) is cut and Baxter's point now rests on the title. Rieff paraphrased as a shift from salvation to a sense of well-being; Freud 1927 kept; 'the two drifted apart' became the twentieth century straining the partnership in two ways (rivalry and replacement). A psychologist now 'usually holds a doctorate' and 'in most states can't prescribe'; 'some states require every adult to report' became 'everyone'. Sources rewritten to claim only what the page says and to state how each was confirmed. No statistics, no quotations but Scripture, no stories; first person only for stance. Scripture: every passage and inline quotation re-read in context with bsb.mjs --verses. Jethro is the priest of Midian; Exodus 18:21 says capable, trustworthy men who feared God; Job's friends answered after Job spoke (Job 3:1); the Galatians reading no longer calls the churches prone to comparison and ties the load to each one's own work (6:4); the fig poultice was laid on a boil. Theology: the counseling FAQ names biblical counselors (Scripture sufficient for counseling, care belonging in the local church, secular therapies carrying their own anthropology, many also sending people to a doctor) and integrationists (all truth is God's truth) in forms each would sign, each with its verse and comfort and no landing; the slot for James stands. The page's floor is stated plainly there and in When to get more help: suicide risk, psychosis, abuse at home, eating disorders, and dangerous withdrawal need medical, licensed, or safety help no pastor should give alone. Care: never suggest or offer couples counseling when one spouse fears the other (sign and helping section); ask the one who is afraid how it is safe to make contact; an adult afraid at home leads their own plan, with the Hotline and 911 in an emergency, while suicide risk and a child at risk are not left to a refusal. Drinking sign narrowed to can't stop or needs it to get through the day. Notes about a person kept private. Mandated reporting stays general: varies by state, learn your own obligations, not legal advice. The answer now says the help lines are at the end of this (ordinary) page. Voice: the pastor inside the indictment now names the pleasure of being needed, availability as a way of keeping someone close, and the fear of losing them, beside handing off what is hard; the prayer confesses the same. The question stack in What's going on is one sentence; 'most people' became 'people often'; the prayer no longer repeats the Job reading's line. Kit: the referral list kept as a printable (renders as a plain file link). Removed: essay 10 (It's Okay to See a Counselor) and essay 2 (Confusing Availability with Pastoral Care), because each narrates unverifiable first-person events and the Pastoral Health study guide covers the ground cleanly; How the Church Handles Mental Health (Badly), because it calls Psalm 42 David's, opens on a real family's loss, and lands hard on the question the FAQ leaves to James, while the depression Life page and the Mental Health study guide cover it cleanly. Kept: essay 34 under its real title (its first-person story of a couple in financial crisis is unverified; the page neither repeats nor relies on it, and the printable list is the page's best resource). The marriage how-to is labeled as about a struggling marriage. Luke the physician cut from the first FAQ for length. validate-needs clean (4,491 words)."
   }
 }

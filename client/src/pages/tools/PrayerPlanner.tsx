@@ -269,6 +269,16 @@ export default function PrayerPlanner() {
             )}
           </p>
           <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink)", margin: "0 0 var(--s-3)" }}>
+            Rather keep it on paper? Print a blank week:{" "}
+            <a href="/downloads/tools/prayer-list-letter.pdf" style={{ color: "var(--mustard-text)", fontWeight: 600 }}>US Letter</a>
+            {" · "}
+            <a href="/downloads/tools/prayer-list-a4.pdf" style={{ color: "var(--mustard-text)", fontWeight: 600 }}>A4</a> (PDF).
+            {" "}Or a month of prayer journal pages, shaped by the Lord's Prayer:{" "}
+            <a href="/downloads/tools/prayer-journal-letter.pdf" style={{ color: "var(--mustard-text)", fontWeight: 600 }}>US Letter</a>
+            {" · "}
+            <a href="/downloads/tools/prayer-journal-a4.pdf" style={{ color: "var(--mustard-text)", fontWeight: 600 }}>A4</a> (PDF).
+          </p>
+          <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink)", margin: "0 0 var(--s-3)" }}>
             If prayer itself feels impossible right now, start with{" "}
             <Link href="/help/prayer" style={{ color: "var(--mustard-text)", fontWeight: 600 }}>I don't know how to pray</Link>, or walk{" "}
             <Link href="/plans/prayer" style={{ color: "var(--mustard-text)", fontWeight: 600 }}>the eight-week plan</Link>. For words to borrow, the{" "}

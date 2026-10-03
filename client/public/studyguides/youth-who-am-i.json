@@ -1,0 +1,1146 @@
+{
+  "slug": "youth-who-am-i",
+  "theme": "youth",
+  "title": "Who Am I, Really? A Bible Study for Teenagers",
+  "subtitle": "A five-session study for students on identity, the phone, anxiety, friendship, and a faith they can call their own.",
+  "summary": "This study is for students roughly thirteen to eighteen, for the youth groups and classes that gather them, and for the parents, grandparents, and leaders who love them. It walks through five questions teenagers are already asking, whether or not anyone at church has asked them out loud: who gets to say who I am, what the phone in my pocket is doing to me, what to do when I'm anxious, how to find real friends and a place to belong, and how a faith I was handed can become my own. Each session starts where students actually live, goes underneath to Scripture and the long memory of the church, and arrives at a way of seeing they can carry into rooms the study never mentions. It is built so a volunteer can lead it with no preparation. Every discussion question carries the answer behind it, every quiet room has a backup question, and every session ends in prayer rather than advice.\n\nThe study takes teenagers seriously. It doesn't talk down to them, it doesn't treat them as a problem to be managed, and it doesn't pretend the adults have these things figured out. Most of the pressures it names, the performing, the screens, the worry, the loneliness, the borrowed faith, are things adults handed to young people or modeled in front of them, and the study says so. It is careful, too. Discussion questions invite and never require, no student is pressed to share anything private, and the leader primer tells leaders exactly what to do if a student discloses danger at home or thoughts of self-harm. Parents can read every word their students read.\n\nLiveWell is the work of James Bell, a pastor who came to faith from atheism, was raised without a father, and has five sons. The conviction under every session is simple: the God who made you has spoken first, and his word about you is truer than any other.",
+  "audience": "Students roughly 13 to 18, youth groups, and the parents and leaders who love them",
+  "sessionsLabel": "5 sessions (run as 5, 8, or 4 weeks)",
+  "sessions": [
+    {
+      "n": 1,
+      "essaySlug": "what-it-means-to-bear-the-image-of-god",
+      "title": "Who Says Who I Am?",
+      "aim": "To help students hear that who they are was given by God before it was earned from anyone, that they are made in his image and named by him, and to refuse both the voice that says you have to invent yourself and the voice that says you are only as good as your last grade, game, or post.",
+      "summary": "All day long, something is telling you who you are: a grade, a coach, a group chat (by who answers and who doesn't), the number under a post, and your own thoughts late at night, which are rarely kind. This session asks a plain question: who actually gets to say who you are?\n\nThe world around you offers two answers. One says you get to decide: look inside, find your real self, and become it. There's something true in that, because nobody should be crushed under a label someone else stuck on them. The other answer, which you can hear at school and sometimes at church, says you are what you achieve, so be impressive, be good, be the one everybody's proud of. There's something true there too, because what you do matters. But both answers put the whole weight of who you are on you, and that weight is more than anyone can carry.\n\nThe Bible starts somewhere else. Before you did anything, God made you in his own image (Genesis 1:27), which means your worth was given, not earned, and nobody can vote it away. The God of Psalm 139 knew the one praying it before anyone else did, and he knows you the same way. And when Jesus was baptized, before he had preached a sermon or healed anyone, the Father said, “You are My beloved Son; in You I am well pleased” (Mark 1:11). Through Jesus, God invites you into that same love as his own child. You're not a project you have to finish. You're someone God has already named.",
+      "keyScripture": {
+        "ref": "Genesis 1:27",
+        "why": "The first thing the Bible says about human beings is that God made them in his own image, before any of them had done anything, which means a person's worth is given by God rather than earned from anyone, and no grade, ranking, or follower count can add to it or take it away."
+      },
+      "timing": [
+        {
+          "segment": "Open",
+          "minutes": 5
+        },
+        {
+          "segment": "Teach",
+          "minutes": 15
+        },
+        {
+          "segment": "Discuss",
+          "minutes": 30
+        },
+        {
+          "segment": "Close",
+          "minutes": 10
+        }
+      ],
+      "discussion": [
+        {
+          "q": "Without naming anyone, what are the main things that tell students your age who they are, or whether they matter?",
+          "behind": "Start with the room's own map, and keep it general so no one has to talk about themselves. You'll hear grades, sports, looks, followers, friend groups, being picked or not picked, what parents brag about. If you can, write the list where everyone can see it. Don't judge anything on it yet. Just notice together how many voices are talking at once and how few of them ever say you are enough. If the room is slow, offer one from the adult world: grown-ups get ranked by job titles, paychecks, houses, and how their kids are doing."
+        },
+        {
+          "q": "Genesis says God made people in his own image before any of them had done a single thing. If your worth was given before you did anything, what does that change about a bad grade or a lost game?",
+          "behind": "This is the center of the session. Help them feel the order: gift first, achievement second. A grade is information about a test, not a verdict on a person, and a loss is a loss, not a ruling on someone's value. Don't let it slide into saying grades and games don't matter; they do, and doing well is good. What changes is that the result can't reach the foundation, because God laid the foundation. Let students say it in their own words, and let a skeptical student push back without being corrected too quickly."
+        },
+        {
+          "q": "In Mark 1:11, the Father says “You are My beloved Son; in You I am well pleased” before Jesus has preached or healed anyone. Then, in Matthew 4:3, the tempter's first words to Jesus are “If You are the Son of God.” Why do you think the attack went straight for who he was?",
+          "behind": "Help them see that the voices that try to rename us usually begin with if: if you were smarter, better-looking, worth texting back. Jesus doesn't answer by proving himself or performing a miracle on demand. He answers with what God has said (Matthew 4:4), and that's the move this whole session teaches. Students don't have to win every argument with the if voice; they need to know what God has already said."
+        },
+        {
+          "q": "Some people say the answer is to be yourself and let no one define you. Others say the answer is to work hard and become someone everyone's proud of. What's true in each, and what's too heavy in each?",
+          "behind": "Protect the fairness here. Be yourself is right that nobody should be reduced to a label others stick on them, and it often comes from people who were pushed into masks by a cruel crowd. Work hard and make us proud is right that effort and character matter, and God gave us work to do. But both put the whole weight of a self on the person carrying it: one says invent yourself, and the other says earn yourself. Many students feel that weight without having words for it. Don't let the room mock either answer; the people who give them usually mean well."
+        },
+        {
+          "q": "Daniel and his friends were young men taken to Babylon, given new names, and put through three years of Babylonian schooling. What do you think helped them stay who they were?",
+          "behind": "Let them notice that Babylon renamed them (Daniel 1:7) and trained them, and the young men didn't fight everything. They learned the language and the literature. But Daniel “made up his mind” on one point (Daniel 1:8), and it kept him tied to the God who had named him first. Ask what Babylon's schooling looks like now, the voices that quietly teach students who to be, and what one line a student might draw. Keep it voluntary; nobody has to share their own answer out loud."
+        }
+      ],
+      "objections": [
+        {
+          "objection": "Nobody gets to tell me who I am, not my parents, not the church, not God. I decide. That's what it means to be free.",
+          "response": "Grant the part that's true. Nobody should be reduced to a label someone else stuck on them, and plenty of young people have been told who they are by people who didn't love them; wanting to throw off false names is healthy. Then ask the harder question gently: where does the self you decide on come from? Nobody builds an identity out of nothing. The self we choose is shaped by the voices we listen to most, the feed, the friend group, the shows, the market, so deciding who you are usually means choosing which crowd gets to decide. The Christian claim isn't that a stranger gets to label you. It's that the One who made you knows you better than you know yourself (Psalm 139:1-4) and has spoken first, and his word about you is the one no crowd can take back. Hearing that word ends the exhausting job of creating yourself every morning."
+        },
+        {
+          "objection": "It's easy to say I'm made in God's image. You don't know what I've done, or what I look like, or how badly I'm failing. Whatever God made, I've ruined it.",
+          "response": "Don't hurry past this one, because the student who says it means it, and others are thinking it. Agree with what's true: sin is real, and all of us, the adults included, have done things that deface the image we carry. But Scripture never says the image disappears when we fail. After the flood God still says “in His own image God has made mankind” (Genesis 9:6), and the letter of James reminds its readers that even the people they curse “have been made in God's likeness” (James 3:9). The image was never a grade you could lose, and the cross is God's way of restoring what we've damaged, not trading us in for someone better. The Father called Jesus beloved before Jesus had done anything in public; God's love in Christ isn't a prize for doing well. If a student's self-contempt sounds like it's sliding into hopelessness or thoughts of self-harm, talk with them privately that same day and follow the leader primer."
+        }
+      ],
+      "quietRoomQuestion": "What are some labels students your age get stuck with that are hard to shake? Talk about people in general, not yourself.",
+      "practice": "This week, notice the voices. Every time something tells you who you are, a grade, a comment, a number under a post, a thought at night, write it down in a few words. Next to each one, write what God has said instead, using one of this session's verses: Psalm 139:14, Mark 1:11, or 1 John 3:1. You don't have to show the list to anyone. But if any of those voices tell you that you'd be better off not being here, don't just write it down: tell a trusted adult today, or call or text 988. At the end of the week, read the two columns side by side and ask yourself which voice you've been treating as final.",
+      "closingPrayer": "Father, we've let a lot of voices tell us who we are, and most of them never loved us. Some of us have believed the worst things anyone ever said about us. Some of us have believed the best things and worn ourselves out trying to deserve them. Forgive us for listening to the crowd more than to you, and forgive the adults in this room for teaching young people to measure themselves by what they achieve. Thank you that you made us in your image before we had done anything at all, and that you knew us before anyone else did. Thank you that you named Jesus your beloved Son, and that in him you call us your children. When the other voices start with if, let us hear you. Speak your name over us until it's the one we believe. In Jesus' name, amen.",
+      "reflection": [
+        "Which voice do I let decide whether I'm okay on a given day: a grade, a person, a number, or my own thoughts?",
+        "If my worth was given by God before I did anything, what am I still trying to earn that I already have?",
+        "What has God said about me in Scripture that I find hardest to believe, and why?"
+      ],
+      "teaching": "Start with the noise, because every student in the room lives inside it. From the moment the alarm goes off, something is telling them who they are: the grade posted overnight, the coach's lineup, the group chat that went quiet when they joined it, the number under the photo, the college mail with smiling students on the cover who look nothing like them. And under all of it is their own voice late at night, usually the harshest one. Many of them have never been asked the question underneath the noise, so ask it plainly. Who actually gets to say who you are?\n\nOur culture gives two answers, and each deserves a hearing at its strongest. The first says you decide: look inside, find your real self, and become it, whatever anyone thinks. It's right that nobody should be reduced to a label someone else stuck on them, and plenty of people have needed real courage to stop being who a cruel crowd told them to be. The second answer, which students hear at school and sometimes at church, says you are what you achieve, so be the good kid, the smart kid, the athlete, the one your parents can brag about. It's right that effort and character matter. But both answers put the whole weight of who you are on you. One says invent yourself, the other says earn yourself, and either way you're never finished, which is why so many people your age are tired in a way a weekend doesn't fix.\n\nThis isn't only your generation's problem, and it isn't your fault. In 1563, theologians in Heidelberg published a catechism, a set of questions and answers written to teach the faith to young people. Its first question asks what your only comfort is in life and in death, and the answer begins by saying that you are not your own but belong, body and soul, to your faithful Savior Jesus Christ. The modern world tells us the opposite, that we belong to ourselves, and Alan Noble argues in You Are Not Your Own that this leaves each of us responsible for making and justifying our own life, a weight no one was made to carry. We adults built a lot of that world. We cheer louder for the trophy than for kindness, and we've taught you, often without meaning to, that you are what you produce. The indictment starts with us.\n\nThe Bible starts in a completely different place. Before human beings had worked or failed or impressed anyone, God made them: “So God created man in His own image; in the image of God He created him” (Genesis 1:27). In the ancient world, kings set up statues of themselves to show who ruled a land, and kings were sometimes called the image of a god. Genesis takes that royal word and gives it to every human being, the honor student and the kid failing chemistry, the starter and the one on the bench, and the very next thing God does is bless them (Genesis 1:28). Psalm 139, which bears David's name, goes further. It prays to the God who “knit me together in my mother's womb” and whose eyes “saw my unformed body” (Psalm 139:13-16). This is a prayer to a God who knows everything about the one praying, including what he'd rather hide, and it ends by asking God to search his heart (Psalm 139:23-24). Being fully known by this God is the safest place there is.\n\nNow look at Jesus. In Mark 1, before he has preached a sermon, healed anyone, or called a single disciple, he comes up out of the water at his baptism, the Spirit descends on him, and the Father speaks: “You are My beloved Son; in You I am well pleased” (Mark 1:11). The whole Trinity is present at the moment the Son is named, and the naming comes before the work. Right after that, the Spirit leads him into the wilderness, and Matthew records the tempter's opening line: “If You are the Son of God” (Matthew 4:3). Of course the attack goes after identity. The voices that want to own you usually start with if. If you were really smart. If you were actually good-looking. If you mattered, they'd have answered. Jesus doesn't answer by proving himself. He answers with what God has said (Matthew 4:4). Daniel lived a version of the same story. Babylon gave him and his friends new names and three years of schooling designed to make them Babylonian (Daniel 1:3-7), and Daniel “made up his mind” not to defile himself with the king's food (Daniel 1:8), drawing a line that kept him tied to the God of Israel in a palace built to make him forget. Babylon could change the name on his paperwork. It couldn't change who had named him first.\n\nYou are not self-made, and you are not nothing. You were made by God, in his image, on purpose, and in Christ he calls you his child: “Behold what manner of love the Father has given to us, that we should be called children of God” (1 John 3:1). That doesn't make grades and games and friendships unimportant. It makes them safe to care about, because none of them can reach the foundation. Some of you have spent years trying to earn a name you already have. Some of you believe the worst thing anyone ever said about you more than anything God has said. The adults in this room know that struggle too; many of us still check other people's faces to find out whether we're okay. But the word the Father spoke over Jesus at his baptism, before any of his work, was beloved, and in him God offers that word to you. The voices will keep talking this week. You don't have to win the argument with them. You only have to remember who spoke first.",
+      "scriptureStudy": [
+        {
+          "ref": "Genesis 1:26-28",
+          "note": "God says “Let Us make man in Our image” and then does it, and the image is given to human beings as such, not to the impressive ones. The first thing God does after making them is bless them (1:28). Worth and blessing come before any work is done; the calling to fill and care for the earth flows from who they already are."
+        },
+        {
+          "ref": "Psalm 139:13-16",
+          "note": "The psalm bears David's name and prays to the God who “formed my inmost being” and saw the one praying before anyone else did. It's a prayer to a God who knows everything about him and stays near, and it ends by asking God to search his heart (139:23-24), because being fully known by this God is safe."
+        },
+        {
+          "ref": "Mark 1:9-11",
+          "note": "The Father speaks before Jesus has preached, healed, or called a single disciple. The Spirit descends, the Father names the Son, and the whole Trinity is present at once. Identity comes first and mission second, and in Christ that is the order for us too."
+        },
+        {
+          "ref": "Matthew 4:1-4",
+          "note": "The tempter's first words go straight at the identity the Father has just spoken: “If You are the Son of God.” Jesus answers with Scripture, not with a display of power, because he lives “on every word that comes from the mouth of God.”"
+        },
+        {
+          "ref": "Daniel 1:3-8",
+          "note": "Babylon's plan for the young captives was thorough: new names, three years of training in the language and literature of the Chaldeans, and food from the king's table. Daniel and his friends learned what Babylon taught, but Daniel drew a line at the king's food (1:8)."
+        },
+        {
+          "ref": "John 12:42-43",
+          "note": "Some leaders believed in Jesus but kept quiet about it, because “they loved praise from men more than praise from God.” Living for approval is not a modern invention. John names it as one of the things that kept people from following Jesus openly."
+        }
+      ],
+      "goingDeeper": "For the group that wants more, set two kinds of pressure side by side. Edward Welch, in When People Are Big and God Is Small, calls the first the fear of man: letting other people's approval and rejection grow so large that God seems small. In teenagers we call it peer pressure and in adults people-pleasing, and Welch's point is that the cure is fearing the Lord more, which frees us to need people less and love them more. The second pressure is inside. Paul, writing to a church that ranked its leaders like celebrities, says, “I care very little, however, if I am judged by you or by any human court. In fact, I do not even judge myself” (1 Corinthians 4:3). Timothy Keller's short book The Freedom of Self-Forgetfulness works through that passage and argues that the gospel frees us from both the crowd's verdict and our own self-condemnation, because “It is the Lord who judges me” (1 Corinthians 4:4). On Keller's reading, Christian humility is freedom from the courtroom, which is a very different thing from self-hatred. Finally, David Kinnaman and Mark Matlock, in Faith for Exiles, describe the screen-saturated world young people live in as a digital Babylon, and the first practice they found among young Christians with resilient faith is intimacy with Jesus as the ground of identity. Ask the group which verdict people their age find harder to ignore, the crowd's or their own, and what it would look like to let God's verdict speak louder than both.",
+      "caseStudy": "Suppose a junior has spent three years as the best player on the team. Teachers know the name, younger kids want the jersey number, and the family calendar is built around games. Then an injury ends the season and maybe the sport. Within a month the group chat that used to light up after games goes quiet, the student stops coming to youth group, and finally says there's no point anymore, because without the sport there's nothing to be. Walk the room through it slowly. What voices named this student before the injury, and which have gone quiet? How could someone tell this student the truth of Genesis 1 and Mark 1 without making the loss small, since the loss is real and grieving it is right? What would friends, parents, and leaders need to do, not only say, so the student knows they're loved apart from what they can do? A note for leaders: a student who says there's no point anymore may be grieving, or may be in danger. Ask gently and privately, and if there is any hint of thoughts of self-harm, follow the leader primer that same day.",
+      "memoryVerse": {
+        "ref": "Psalm 139:14",
+        "text": "I praise You, for I am fearfully and wonderfully made. Marvelous are Your works, and I know this very well."
+      }
+    },
+    {
+      "n": 2,
+      "essaySlug": "",
+      "title": "The Phone in My Pocket",
+      "aim": "To help students look honestly at the phone, naming both its real gifts and its real costs, and to see from Scripture that what we keep looking at slowly shapes who we become, so they can begin choosing what they look at instead of letting the feed choose for them.",
+      "summary": "Your phone is probably within reach right now. For many people, adults included, it's the first thing touched in the morning and the last thing seen at night. This session isn't going to tell you your phone is evil, because it isn't. It lets you talk to a grandparent across the country, keep up with a friend who moved away, read the Bible anywhere, make music, learn almost anything, and call for help when you need it. Those are real gifts, and the adults who complain about your phone often have theirs in hand while they do it.\n\nBut the phone is also built to hold your attention, and attention is not a small thing. Scripture says something that sounds old-fashioned and turns out to be true: you become like what you keep looking at. Psalm 115 says that people who trust in idols become like them. Paul says that people who turn to the Lord are being changed into his image (2 Corinthians 3:18). You are being shaped by whatever has your eyes most often. The question is what's doing the shaping.\n\nSo this session asks honest questions about what the phone gives, what it takes, and what comparison does to us, and it hands you a short prayer from Psalm 119:37: “Turn my eyes away from worthless things; revive me with Your word.” Nobody here is going to shame you, and this study won't hand you a rule; the rules for your phone are your family's to make. You're just going to be asked to look at what you look at.",
+      "keyScripture": {
+        "ref": "2 Corinthians 3:18",
+        "why": "Paul says that those who turn to the Lord with unveiled faces are being transformed into his image by the Spirit, and read beside Psalm 115, where idol-makers become like their idols, that means the deepest question about a phone is not how many hours it takes but whose likeness it is forming."
+      },
+      "timing": [
+        {
+          "segment": "Open",
+          "minutes": 5
+        },
+        {
+          "segment": "Teach",
+          "minutes": 15
+        },
+        {
+          "segment": "Discuss",
+          "minutes": 30
+        },
+        {
+          "segment": "Close",
+          "minutes": 10
+        }
+      ],
+      "discussion": [
+        {
+          "q": "Start with the good. What's one real gift the phone has given people your age?",
+          "behind": "Begin here on purpose. Students expect adults to attack their phones, and if you open with the attack you'll lose the room. Let them list the goods: family far away, friends who moved, music, learning, creativity, safety, the Bible itself. Receive them as real. Everything else in the session is more believable because you started honestly. If the room is slow, name one good the phone has done for adults, like a video call with family who live far away."
+        },
+        {
+          "q": "Ecclesiastes says “the eye is not satisfied with seeing” (Ecclesiastes 1:8). Why do you think a feed never runs out, and how do people usually feel when they finally stop scrolling?",
+          "behind": "Help them notice the design without turning it into a conspiracy theory. Many apps are built to hold attention as long as possible, because attention is what they sell, and an endless feed means there's no natural place to stop. The Teacher in Ecclesiastes noticed long before screens that eyes are never full. Ask what the end of a long scroll usually feels like: rested, or emptier? Let them answer honestly. Some will say it helps them relax, and that's allowed."
+        },
+        {
+          "q": "After Saul heard a crowd praise David more than him, 1 Samuel 18:9 says Saul “kept a jealous eye on David.” How does comparison work on a phone, and what does it do to people?",
+          "behind": "This is the hinge. Saul's jealousy started with a song he heard, and from that day his eye was never the same (1 Samuel 18:7-9). Social media can turn that song into a constant soundtrack, because someone is always prettier, funnier, more invited, more followed. Let students describe comparison in general terms so no one has to confess their own. Then ask what the difference is between admiring someone and keeping a jealous eye on them. Keep the tone kind; everyone in the room compares, the adults included."
+        },
+        {
+          "q": "Psalm 115 says that people who make idols “become like them.” If we become like what we pay attention to, what could hours of scrolling make a person into, and what could time with God's word and with real people make a person into?",
+          "behind": "Push gently from content to formation. Bad content is only part of the question; the larger part is what a constant habit of quick switching does to a mind, and what slow attention to Scripture and to people does instead. Let them be specific, and don't moralize; let the contrast speak. Point out that Psalm 115 describes idols that have eyes but cannot see. A person can end up the same way, looking at everything and noticing nothing."
+        },
+        {
+          "q": "Jesus got up early and “slipped out to a solitary place to pray” (Mark 1:35), even when everyone was looking for him. What could a solitary place look like in a student's week?",
+          "behind": "End practical and voluntary. Some will name a walk, a room with the door shut, a drive with a parent and no music, the first ten minutes of the morning before the phone. Some will say there's nowhere. Take that seriously, because many students have very little unwatched time, and the adults in their lives filled their calendars. Invite them to try one small solitary place this week, and don't ask anyone to report back unless they want to."
+        }
+      ],
+      "objections": [
+        {
+          "objection": "Adults freak out about every new thing. They said TV would rot our brains and video games would make us violent. Phones are just the newest panic, and kids turn out fine.",
+          "response": "There's real truth here. Adults have worried about new tools for a very long time; in Plato's Phaedrus, Socrates tells a story in which a king warns that writing will make people forgetful. Some of those worries were overblown, and young people often understand new tools better than their parents do, so adults should be humble, especially since so many of us can't put our own phones down. But that some earlier worries were exaggerated doesn't mean every worry is. The king's warning overstated the danger, since writing gave us the Scriptures themselves, and it was still right that tools change the people who use them. The honest question is what this particular tool, used the way it was designed to be used, does to attention, sleep, friendship, and prayer, and what it's doing in our own lives. Scripture cares less about the device than about what we become by what we behold."
+        },
+        {
+          "objection": "Phones are destroying this generation. The only faithful answer is to get rid of them, or at least to tell kids that social media is a sin.",
+          "response": "Take this seriously too, because it comes from love. Jonathan Haidt argues in The Anxious Generation that the move from a play-based childhood to a phone-based one has harmed young people through lost sleep, fragmented attention, less time with friends in person, and something close to addiction, and he urges families and schools to delay smartphones and social media. Some researchers think he claims more than the evidence shows; many parents find that his argument matches what they see at home. Scripture locates sin in the heart rather than in objects (Mark 7:20-23), so a phone isn't sin, and the same phone that distracts can call a grandmother or read a psalm aloud. But Jesus also told his followers to deal drastically with whatever leads them into sin (Matthew 5:29-30), and that's one reason some faithful families wait or say no, while others teach careful use from the start. Whether and when a student has a smartphone or social media is a decision for each family, and no student should be shamed here for what their family decided. A family's limits can protect a student well. What limits can't do alone is change what a student wants, which is why this session keeps asking what we're looking at."
+        }
+      ],
+      "quietRoomQuestion": "If a phone could talk about the person who owns it, what do you think it would say they care about most? Answer for people your age in general.",
+      "practice": "Pick one small experiment for this week. Either charge your phone outside your bedroom at night (if you can, ask a parent to help, and tell them why), or give the first ten minutes of your morning to Psalm 119:37 and one short psalm before you open any app. When you notice yourself reaching for the phone out of boredom, pray the verse instead: turn my eyes away from worthless things. At the end of the week, ask yourself honestly what changed, in your sleep, your mood, or your attention, and what didn't.",
+      "closingPrayer": "Lord, you gave us eyes to see your world and the faces of the people you love, and we spend a lot of our looking on screens. We're not here to blame the phone. We're here to tell you the truth: our attention wanders, comparison gets into us, and some nights we scroll long past the point of rest. The adults in this room are no better at this than the students. Turn our eyes away from worthless things, and revive us with your word. Make us people who can sit with a friend without checking, who can be bored without panicking, and who can look at you long enough to start looking like you. Thank you that you never scroll past us. In Jesus' name, amen.",
+      "reflection": [
+        "When do I reach for my phone without deciding to, and what am I usually hoping to find?",
+        "Who do I compare myself to most, and what does it do to the way I see God's gifts to me?",
+        "If I become like what I keep looking at, what have I been looking at most this month?"
+      ],
+      "teaching": "Begin by admitting something, because students will hear everything else differently if you do. The phone isn't the enemy, and the adults in this room aren't above it. Many of us check our phones at dinner and in the middle of conversations with the people we love. We handed these devices to young people before most of us had learned to use our own well. So this session doesn't stand outside the problem pointing in. We're inside it together.\n\nThen give the phone its due, because it's a remarkable gift. With it a student can talk to a grandparent across the country, keep a friendship alive after a move, learn guitar, get help with chemistry at midnight, read the whole Bible, and call for help in an emergency. For a student who feels alone at school, an online friend can be a real comfort, though an online friend who asks for secrecy, photos, money, or a meeting is a reason to tell a trusted adult right away. Scripture puts the problem in the human heart rather than in our tools. Paul's rule for his own freedom is useful here. He quotes a slogan the Corinthians liked, “Everything is permissible for me,” and answers it twice: “not everything is beneficial,” and “I will not be mastered by anything” (1 Corinthians 6:12). So a Christian asks two questions about anything that's allowed: does it help, and is it starting to own me?\n\nThen tell the truth about the costs. Many apps are designed to hold your attention as long as possible, because attention is what they sell to advertisers, and an endless feed has no bottom and no natural place to stop. Long before screens, the Teacher in Ecclesiastes noticed that “the eye is not satisfied with seeing” (Ecclesiastes 1:8), and the feed is built on that ancient hunger. Jonathan Haidt argues that the shift to a phone-based childhood has cost young people sleep, focused attention, and time with friends in person; other researchers think the evidence is more mixed. You don't have to settle that debate to look at your own life. After an hour on the feed, are you more rested or less, more grateful or more jealous, more present to the people around you or less?\n\nScripture goes deeper than any study can. The Bible says we become like what we look at and trust. Psalm 115 describes idols with eyes that can't see and ears that can't hear, and then says, “Those who make them become like them, as do all who trust in them” (Psalm 115:8). G. K. Beale has traced that idea through the whole Bible: people come to resemble what they revere, either for ruin or for restoration. Paul says the same thing from the hopeful side. Those who turn to the Lord “are being transformed into His image” (2 Corinthians 3:18). The word translated reflect in the Berean Standard Bible can also mean to look at something as in a mirror, and translations divide over it, but either way the point stands: we become like the glory we keep facing. So the deepest question about the phone isn't how many minutes it takes. It's whose likeness it's forming in you.\n\nFor many students, comparison is where this hits first, so remember Saul. After David killed Goliath, the women sang, “Saul has slain his thousands, and David his tens of thousands,” and Saul couldn't stop hearing it: “from that day forward Saul kept a jealous eye on David” (1 Samuel 18:7-9). One song, and his eye was never the same. A phone can put that song on repeat, because someone is always more invited, more followed, better looking, or more gifted. Jesus warned against doing good “to be seen by them” (Matthew 6:1), and the warning lands differently when every good thing can be posted. He pointed instead to a Father “who sees what is done in secret” (Matthew 6:4). You don't need an audience to be seen.\n\nSo what does faithfulness look like? Start with Jesus, who had crowds wanting his attention, and who still got up early and “slipped out to a solitary place to pray” (Mark 1:35). When his disciples came back from their mission so busy they hadn't even had time to eat, he told them, “Come with Me privately to a solitary place, and let us rest for a while” (Mark 6:31). Andy Crouch, in The Tech-Wise Family, suggests that our devices should go to bed before we do and wake up after we do, so that the first and last voices of the day aren't the feed's. Paul, writing from custody, told the Philippians to think on “whatever is true, whatever is honorable, whatever is right, whatever is pure, whatever is lovely” (Philippians 4:8). And Psalm 119:37 gives a prayer short enough to carry all week: “Turn my eyes away from worthless things; revive me with Your word.” You're going to become like something. The feed is asking for your eyes, and so is Jesus. Only one of them knows your name.",
+      "scriptureStudy": [
+        {
+          "ref": "Psalm 119:37",
+          "note": "The verse is a prayer. The psalmist asks God to turn his eyes from “worthless things” and to revive him “with Your word.” He assumes his eyes need help, and he asks for more than looking away: he asks to be filled with something better."
+        },
+        {
+          "ref": "Psalm 115:4-8",
+          "note": "The idols have mouths, eyes, ears, hands, and feet that don't work, and “Those who make them become like them.” Worship shapes the worshiper."
+        },
+        {
+          "ref": "2 Corinthians 3:18",
+          "note": "Paul contrasts the veil over Moses' face with believers who turn to the Lord with “unveiled faces.” The verb can mean to reflect or to look as in a mirror; either way, the change comes from facing the Lord, and it's the Spirit's work, not a self-improvement project."
+        },
+        {
+          "ref": "1 Samuel 18:6-9",
+          "note": "One victory song turns Saul's eye jealous, and he watches David with suspicion from then on. Comparison often begins with what we listen to and look at, and it can turn admiration for someone's gifts into resentment of the person."
+        },
+        {
+          "ref": "Matthew 6:1-6",
+          "note": "Jesus warns against performing good deeds “to be seen by men” and points to the Father who sees in secret. Not every good thing needs an audience. Some of the best things in a life are known only to God."
+        },
+        {
+          "ref": "Mark 1:35-38",
+          "note": "In the middle of a crowded, demanding ministry, Jesus withdrew before dawn to pray, and when his disciples told him “Everyone is looking for You!” he went on with his mission rather than the crowd's agenda. His attention wasn't owned by the people looking for him, which is part of why he could love them well."
+        }
+      ],
+      "goingDeeper": "For the group that wants to think harder, put three books in conversation. Sherry Turkle, an MIT researcher who isn't writing as a Christian, argues in Alone Together that constant connection has led us to expect more from technology and less from each other. Tony Reinke, writing as a Christian in 12 Ways Your Phone Is Changing You, tries to be fair in both directions, naming real gifts of connection alongside distraction, approval-seeking, and loneliness. Jonathan Haidt's The Anxious Generation, met in this session's objections, ends with four proposed norms: no smartphones before high school, no social media before sixteen, phone-free schools, and more independence and free play; other researchers dispute how much the evidence can show. Take each at its strongest, and then bring it under Scripture rather than setting it beside Scripture as an equal. Research can describe what's happening to attention and sleep. It can't tell you what attention is for. Scripture can: attention is a form of love, which is why the Bible's language for worship is so often the language of looking, to “gaze on the beauty of the LORD” (Psalm 27:4) and to “fix our eyes on Jesus” (Hebrews 12:2). Ask the group what a household's approach to phones would look like if it began with what attention is for, and remember that faithful families answer that question differently.",
+      "caseStudy": "Suppose a freshman gets a phone over the summer, and by October the parents notice a change. The student is tired all the time, scrolls in bed past midnight, seems flat after time online, and snaps at siblings when asked to put the phone away. When a youth leader asks how things are going, the student says everything's fine, and then admits, a little embarrassed, that the phone is the first thing touched every morning and that the feed makes everyone else's life look better. Talk it through. What's good in this student's phone use that shouldn't be taken away? What's being formed in the student that nobody intended? What would a wise next step look like, one the student chooses rather than one that's imposed, and how might the parents and the student decide on it together? And if the tiredness and sadness last for weeks, why would it be right to talk with a doctor?",
+      "memoryVerse": {
+        "ref": "Psalm 119:37",
+        "text": "Turn my eyes away from worthless things; revive me with Your word."
+      }
+    },
+    {
+      "n": 3,
+      "essaySlug": "anxiety-and-faith",
+      "title": "When I'm Anxious",
+      "aim": "To help students name worry honestly, hear Jesus and Paul speaking to anxious people with invitation rather than scolding, practice handing their fears to God in prayer, and know plainly when worry calls for a trusted adult and a doctor's care.",
+      "summary": "Some worry is normal. Before a big test, a tryout, or a hard conversation, your heart speeds up, and that's your body doing its job. But for a lot of students, worry doesn't switch off. It comes at night, it sits in your stomach all day at school, and sometimes it turns into panic that seems to come out of nowhere. On top of that, many Christian students carry a second worry: that being anxious means they're failing at trusting God.\n\nThis session says plainly that being anxious is not proof of weak faith. The night before the cross, Jesus himself was “deeply troubled and distressed” (Mark 14:33). Paul admitted to a time when he and his friends were “under a burden far beyond our ability to endure” (2 Corinthians 1:8). When Jesus tells us not to worry, he doesn't shout it. He points to birds and flowers and reminds you that your Father knows what you need (Matthew 6:25-34). When Paul tells the Philippians to pray instead of being anxious, he's writing as a prisoner, and he promises that God's peace will guard your heart and mind (Philippians 4:6-7). And the first letter of Peter says to throw your worries onto God, “because He cares for you” (1 Peter 5:7).\n\nPart of trusting God is telling people. If worry has been keeping you from sleeping, eating, going to school, or being with friends for weeks, tell a parent or another trusted adult, and see a doctor. If you ever have thoughts of hurting yourself or of not wanting to be alive, tell a trusted adult today, or call or text 988, any time. That isn't a failure of faith. It's one of the ways God takes care of you.",
+      "keyScripture": {
+        "ref": "Philippians 4:6-7",
+        "why": "Paul tells the church to bring everything to God in prayer with thanksgiving and promises that the peace of God will guard their hearts and minds, and he writes it while held as a prisoner himself, which means this peace was never a reward for an easy life but a gift for an anxious one."
+      },
+      "timing": [
+        {
+          "segment": "Open",
+          "minutes": 5
+        },
+        {
+          "segment": "Teach",
+          "minutes": 15
+        },
+        {
+          "segment": "Discuss",
+          "minutes": 30
+        },
+        {
+          "segment": "Close",
+          "minutes": 10
+        }
+      ],
+      "discussion": [
+        {
+          "q": "Without naming anyone, what do students your age worry about most?",
+          "behind": "Keep it general and in the third person so nobody has to disclose anything. You'll likely hear grades, college, the future, friendships, appearance, family conflict, money at home, the news, safety at school. Write the list down and thank them. The length of the list is itself the first point, because anxious students often think they're the only ones, and they aren't. If a student starts to share something that sounds like danger, gently say you'd like to hear more right after the session, and follow up that same day."
+        },
+        {
+          "q": "Mark says that in Gethsemane Jesus “began to be deeply troubled and distressed” (Mark 14:33). What does it change to know that Jesus felt that way?",
+          "behind": "This is the hinge of the session. If being distressed were a sin, the sinless Son of God couldn't have felt it. He did, he told his friends, and he brought it straight to his Father in prayer. Let the relief land: being anxious isn't the same as failing God. What Jesus shows is what to do with distress, not that it should never come."
+        },
+        {
+          "q": "Jesus doesn't just say do not worry. He says look at the birds and consider the lilies. Why do you think he answers worry by pointing at things?",
+          "behind": "Jesus argues from the lesser to the greater: if God feeds birds that can't plant and clothes flowers that last a day, he'll care for his children (Matthew 6:26-30). Help them see that he's giving reasons, not a scolding; the command comes with a Father attached. Point out that he also says “tomorrow will worry about itself” (Matthew 6:34). Worry usually lives in a future that hasn't happened yet."
+        },
+        {
+          "q": "The first letter of Peter says to cast your anxiety on God, and the very next verse warns about a roaring lion. Why would the letter put those two side by side?",
+          "behind": "Casting anxiety on God doesn't mean pretending danger isn't real (1 Peter 5:6-9). The letter was written to Christians who were really suffering. Trusting God moves the weight onto someone strong enough to carry it; it doesn't make the lion disappear. Students will respect that honesty. Then ask what casting might look like in practice: saying the worry to God out loud, writing it down, handing it over again when it comes back an hour later."
+        },
+        {
+          "q": "What kinds of adults could a student tell if worry got too heavy? You don't need to name anyone.",
+          "behind": "Make this concrete and voluntary. Parents, grandparents, a school counselor, a teacher, a coach, a youth leader, a pastor, a doctor. Some students will feel that no adult would understand; gently say it's worth trying more than one. Say clearly that anyone who is ever thinking about hurting themselves or about not wanting to be alive should tell an adult right away or call or text 988, and that telling is brave, not weak. Don't ask anyone in the group whether they've felt that way; if you're worried about a particular student, talk with them privately and ask directly, as the leader primer describes."
+        }
+      ],
+      "objections": [
+        {
+          "objection": "Jesus said do not worry. Paul said be anxious for nothing. If I'm anxious, I'm disobeying God, and if I trusted him more it would go away.",
+          "response": "Grant what's true. Jesus and Paul really do call us out of worry, and some of our worry is our hearts grabbing for control, approval, or security in things that can't hold us; trust really does change things. But read the commands where they stand. Jesus gives reasons and a Father, not a threat (Matthew 6:26-32). Paul gives a practice and a promise, and he writes as a prisoner (Philippians 1:13; 4:6-7). And the same Jesus who said do not worry was “deeply troubled and distressed” in Gethsemane (Mark 14:33). If anxiety were always disobedience, Jesus would have sinned that night, and he didn't. Some anxiety involves the body itself, a stress response that won't switch off, and trying harder to trust can't fix that any more than it can set a broken arm. A student who has prayed hard and still feels anxious hasn't failed. They may need rest, food, sleep, a trusted adult, and a doctor, and God works through every one of those."
+        },
+        {
+          "objection": "Anxiety is just brain chemistry. Faith has nothing to do with it, and bringing God into it only makes people feel guilty.",
+          "response": "Much of this is right. Anxiety can be a real medical condition. Bodies get sick, and some anxiety needs a doctor or counselor the way a broken bone needs a cast. The church has sometimes made people feel guilty for being sick, and that was wrong. Seeing a doctor or counselor is not a lack of faith. Then add what's missing. A person isn't only chemistry. Worry is also about what we love and fear and hope for, about whether the future is in good hands, and about whether we're alone. Scripture speaks to those things, and so does a church that prays for you and checks on you. In 1 Kings 19, when the prophet Elijah was exhausted and afraid and told God he'd had enough, God answered first with sleep, food, and water, twice, and only after that with a conversation (1 Kings 19:4-8). God cared for his body and his soul together, and so should we."
+        }
+      ],
+      "quietRoomQuestion": "What actually helps a person calm down when worry gets loud? Not the things people say, the things that really help. Answer in general.",
+      "practice": "Try Paul's practice from Philippians 4:6 once a day this week. On paper or in your phone's notes, write one worry in a single sentence. Under it, write what you're asking God for. Under that, write one thing you're thankful for today, however small. Then pray it, out loud or silently, and if the worry comes back later, hand it over again; that's what casting means. Also this week, choose two adults you could tell if worry ever got too heavy, and if it's already too heavy, tell one of them. If home isn't a safe place to talk, make at least one of them an adult outside your home, like a teacher, a school counselor, or a pastor. If you ever have thoughts of hurting yourself, tell a trusted adult right away or call or text 988.",
+      "closingPrayer": "Father, you know the worries in this room, the ones we said out loud and the ones we didn't. Thank you that Jesus knew what it was to be deeply troubled, and that he brought it to you. Teach us to do the same. Take the weight we keep picking back up, and guard our hearts and minds with your peace when we can't guard them ourselves. For anyone here whose worry has become too heavy, give them the courage to tell someone, and give the adults in their lives the wisdom to help. Forgive us, the adults, for the pressure we've piled on young people and for the worry we've taught them by our own example. You feed the birds and clothe the flowers. Care for your children tonight. In Jesus' name, amen.",
+      "reflection": [
+        "What do I worry about most, and what am I afraid will happen if it goes wrong?",
+        "When I'm anxious, do I usually bring it to God, hide it, or try to control everything myself?",
+        "Who are two adults I could tell if worry ever became too heavy to carry alone?"
+      ],
+      "teaching": "Start by saying something many students have never heard an adult say in church: being anxious doesn't make you a bad Christian. Some worry is ordinary. Your heart speeds up before a test or a tryout because your body is getting ready, and that's good design. But for many students, worry doesn't switch off. It comes at night when the house is quiet. It sits in the stomach all through the school day. Sometimes it turns into panic, a racing heart, trouble breathing, a sudden sense that something terrible is about to happen, with no reason anyone can see. And many Christian students carry a second worry on top of the first, the fear that the anxiety itself proves they don't trust God enough. That second worry is a heavy and unnecessary load, and this session is about setting it down.\n\nYou'll hear two answers about anxiety, and both hold onto something true. The first says anxiety is a faith problem, so pray more and trust harder, and it's right that some worry is our hearts grabbing for control, approval, or a guaranteed future, which the gospel really does speak to. The second says anxiety is just chemistry and has nothing to do with God, and it's right that anxiety can be a medical condition and that the church has sometimes treated sick people as if they were disobedient. Each answer sees part of the truth. You're a whole person, body and soul, and worry can involve both at once.\n\nIt's worth asking why so many students are carrying so much, and the honest answer includes us, the adults. Some of it is the world, with news that never stops and phones that never sleep. But we've also filled your calendars, told you that everything depends on grades and resumes and getting into the right school, and worried out loud in front of you about money and the future. We say God is in control and then live as if everything depends on us. Long ago Augustine prayed, in his Confessions, that our hearts are restless until they rest in God. Restlessness isn't new. We've just built a world that makes it louder, and we owe you an honest apology before we owe you any advice.\n\nNow look at Jesus, because he changes the whole conversation. The night before the cross, in the garden called Gethsemane, Jesus “began to be deeply troubled and distressed,” and he told his closest friends, “My soul is consumed with sorrow to the point of death” (Mark 14:33-34). The Son of God felt dread. He didn't hide it from his friends, and he didn't pretend in front of his Father. He fell to the ground and prayed (Mark 14:35-36). If distress were a sin, Jesus would have sinned that night, and he didn't. So being anxious isn't the problem in itself. The question is what we do with it, and Jesus shows us: bring it to the Father honestly, and don't go through it alone. When he taught about worry, he didn't scold. He pointed. “Look at the birds of the air,” he said; they don't plant or harvest, and your heavenly Father feeds them. “Are you not much more valuable than they?” (Matthew 6:26). He gave reasons, and he gave a Father. And he said something wise about where worry lives: “Do not worry about tomorrow, for tomorrow will worry about itself” (Matthew 6:34). Much of our anxiety is about a tomorrow that hasn't happened yet. God gives grace for today.\n\nPaul's words in Philippians 4 are well known, and it matters where he wrote them. He was a prisoner, and he tells the Philippians that the whole palace guard knows he's in chains for Christ (Philippians 1:13). From there he writes, “Be anxious for nothing, but in everything, by prayer and petition, with thanksgiving, present your requests to God. And the peace of God, which surpasses all understanding, will guard your hearts and your minds in Christ Jesus” (Philippians 4:6-7). A man surrounded by guards promises that God's peace will stand guard over your heart. That isn't advice from someone with an easy life. The same chapter holds the verse some athletes write on their wristbands, “I can do all things through Christ who gives me strength” (Philippians 4:13), and Paul means something deeper than winning; he has learned to be content whether he's well fed or hungry (Philippians 4:11-12). The first letter of Peter adds one more word: “Cast all your anxiety on Him, because He cares for you” (1 Peter 5:7). Cast means throw. It's something you do, often before you feel any different, and you may have to do it again an hour later. Notice that the next verse warns about a roaring lion (1 Peter 5:8). The letter doesn't pretend the danger isn't real; it tells you who is strong enough to carry it.\n\nThen say clearly what trusting God includes, because this is where students most need adults to be plain. Trusting God includes telling people. Proverbs says, “Anxiety weighs down the heart of a man, but a good word cheers it up” (Proverbs 12:25), and nobody can give you a good word if nobody knows what you're carrying. It's time to tell a parent or another trusted adult, and to see a doctor, if worry or panic has been happening most days for weeks; if it's keeping you from sleeping, eating, going to school, or being with friends; if you've started avoiding things you used to do because of it; or if you're using something to escape it. A doctor or counselor can help sort out what's going on. This study can't, and it isn't medical advice, and getting that help is no more a failure of faith than taking medicine for an infection. And if you ever have thoughts of hurting yourself or of not wanting to be alive, tell a trusted adult today, not tomorrow, or call or text 988, any time of day or night. You won't get in trouble for telling. Telling is one of the bravest and most faithful things a person can do.\n\nThe God who feeds the birds hasn't forgotten you, and the Savior who was deeply troubled in a garden knows what your nights are like. Peace may not come as a feeling right away. Sometimes it comes as the strength to get through one more day, sometimes as a friend who notices or a doctor who helps, and it always comes from a Father who cares. We adults still worry too. We're learning to cast our anxiety on him alongside you, not from somewhere above you.",
+      "scriptureStudy": [
+        {
+          "ref": "Matthew 6:25-34",
+          "note": "Jesus speaks to worry about the basics, food, drink, and clothes, and argues from the lesser to the greater: the Father who feeds birds and clothes wildflowers will care for his children. The command comes with reasons and a Father, it points to “seek first the kingdom of God” as the deeper priority, and it ends by keeping worry inside today (6:34)."
+        },
+        {
+          "ref": "Mark 14:32-36",
+          "note": "Jesus is “deeply troubled and distressed” and says so to his friends. Then he falls to the ground and prays, “Abba, Father.” Distress isn't sin. The Son of God felt it, said it, and brought it to his Father, ending with “not what I will, but what You will.”"
+        },
+        {
+          "ref": "Philippians 4:6-7",
+          "note": "Prayer, petition, and thanksgiving, and then a peace that guards. Paul writes as a prisoner, and his word for guard is a military one: God's peace stands watch over hearts and minds that can't guard themselves."
+        },
+        {
+          "ref": "1 Peter 5:6-9",
+          "note": "The letter is written to Christians who are really suffering: humble yourselves, cast your anxiety on God, stay alert, resist. Casting your anxiety doesn't make the lion disappear. It puts you in the care of someone stronger than the lion, and it reminds you that believers around the world are “undergoing the same kinds of suffering.”"
+        },
+        {
+          "ref": "1 Kings 19:3-8",
+          "note": "The prophet Elijah, afraid and worn out, sat down under a broom tree and “prayed that he might die,” saying, “I have had enough, LORD” (19:4). God didn't scold him. An angel woke him to eat, let him sleep, and fed him again before any conversation about what came next, and rest and food were part of God's care. This note is for leaders. If a student ever talks the way Elijah did, take it seriously: ask them privately and directly whether they're thinking about suicide (asking won't put the idea in their head), stay with them, call or text 988 together, and bring in a trusted adult as the leader primer describes. Never treat it as a discipline problem or a failure of faith, and never leave a student to push through it alone."
+        },
+        {
+          "ref": "2 Corinthians 1:8-10",
+          "note": "Paul admits that in a deadly danger in the province of Asia he and his companions “despaired even of life” and felt they were “under the sentence of death.” Scripture doesn't hide that faithful people have been overwhelmed. He says the experience taught them to trust “in God, who raises the dead,” and that God delivered them."
+        }
+      ],
+      "goingDeeper": "For the group that wants to go further, notice how the church has handled anxiety over the centuries, because it hasn't always been wise. Christians have sometimes treated every inner struggle as a moral failure, so that people suffering what we would now recognize as an anxiety disorder were told only to repent and trust more. Parts of the wider culture have more recently treated anxiety as nothing but chemistry, as if a person had no soul and no need for hope. Both mistakes flatten a human being. Scripture describes whole people: Elijah needed food and sleep before he needed a conversation (1 Kings 19:5-8), and the psalmists poured out their fear to God in words we're still invited to pray. Then take the secular account at its strongest. Jonathan Haidt, met in session 2, argues that the phone-based childhood has worsened young people's anxiety through lost sleep, less time together in person, and fragmented attention. Whether or not he's right about how much, each of those is something Scripture already treats as part of God's care: sleep (Psalm 4:8), companionship (Ecclesiastes 4:9-12), and attention to what is true (Philippians 4:8). Research can describe the symptoms. The gospel tells us who holds the future we're afraid of. Ask the group how a church could become a place where students can say they're anxious without being lectured.",
+      "caseStudy": "Suppose a sophomore with good grades and a full schedule starts having what feel like panic attacks before school: a racing heart, a tight chest, a wave of dread. The student has prayed about it every night and hasn't told anyone, because the family is known at church as strong believers and the student is ashamed, convinced that real Christians don't feel like this. One evening, at the edge of the youth room while others are still around, the student quietly mentions it to a leader. Walk through what a wise response sounds like. What should the leader say first, and what would be the wrong thing to say? Why does the student need the parents involved, and how could the leader help the student tell them? Why is a doctor part of the answer, and how is that consistent with trusting God? And what could the church do so the next anxious student doesn't wait so long to say something?",
+      "memoryVerse": {
+        "ref": "1 Peter 5:7",
+        "text": "Cast all your anxiety on Him, because He cares for you."
+      }
+    },
+    {
+      "n": 4,
+      "essaySlug": "friendship-the-love-we-forgot",
+      "title": "Friends, Loneliness, and Belonging",
+      "aim": "To help students face loneliness honestly, see friendship the way Scripture does, as a covenant love rather than a status game, and find in Christ and in his church a belonging that doesn't depend on fitting in.",
+      "summary": "You can be lonely in a full cafeteria. You can be in a group chat that never stops and still feel like nobody really knows you. Loneliness isn't the same as being alone; it's the feeling of not being known or not being wanted, and almost everyone feels it at some point, including the adults who look like they have it together.\n\nThe Bible takes loneliness seriously. Before sin ever entered the world, God said of the first human being, “It is not good for the man to be alone” (Genesis 2:18). We were made for each other. This session looks at one of the greatest friendships ever written down, between David and Jonathan. Jonathan was the king's son, and David was the young hero who might take his place, so Jonathan had every reason to see David as a rival. Instead, “Jonathan loved him as himself” (1 Samuel 18:1), gave him his own robe and sword, stood up for him when it was dangerous, and helped him find strength in God. Jonathan's father, Saul, looked at the same David and “kept a jealous eye” on him (1 Samuel 18:9). Two people faced one choice: covenant or comparison.\n\nThen Jesus, the night before he died, told his followers, “I have called you friends” (John 15:15). Friendship with God is the ground of every other friendship, and his church is meant to be a family where nobody has to earn a seat. Not everyone will find a Jonathan this year. Everyone can choose to be one.",
+      "keyScripture": {
+        "ref": "1 Samuel 18:1-4",
+        "why": "Jonathan, the king's son and heir, makes a covenant with David, the young man who could take his throne, loves him as himself, and hands him his robe, sword, bow, and belt, which shows friendship as a covenant love that refuses rivalry and gives up status for a friend's good."
+      },
+      "timing": [
+        {
+          "segment": "Open",
+          "minutes": 5
+        },
+        {
+          "segment": "Teach",
+          "minutes": 15
+        },
+        {
+          "segment": "Discuss",
+          "minutes": 30
+        },
+        {
+          "segment": "Close",
+          "minutes": 10
+        }
+      ],
+      "discussion": [
+        {
+          "q": "Why do you think a person can feel lonely even when they're surrounded by people, at school, online, or even at church?",
+          "behind": "Keep it general. Help them name the difference between being alone and being lonely: loneliness is about not being known or not being wanted. Many students will recognize it without wanting to say so, so don't press anyone to describe their own. If the room is quiet, point out that adults feel it too, in offices, in marriages, and in churches, which is part of why this session isn't only about teenagers."
+        },
+        {
+          "q": "Jonathan was the prince, and David was the one who might take his throne. Saul looked at David and saw a threat; Jonathan looked at David and saw a friend. What do you think made the difference?",
+          "behind": "This is the hinge. In the same chapter, Jonathan makes a covenant with David (1 Samuel 18:3) and Saul keeps a jealous eye on him (18:9). David was the same man to both of them; the difference was what each man did with his own heart. Jonathan gave David his robe and weapons (18:4), the very things that marked his own status. Ask what it might look like to give up status for a friend at school: sharing credit, including someone, refusing to join the mocking. Let them get specific."
+        },
+        {
+          "q": "Ecclesiastes says, “pity the one who falls without another to help him up!” (Ecclesiastes 4:10). What does it look like to help a friend up, and when is it more than a friend can do alone?",
+          "behind": "Let them describe ordinary help: sitting with someone, texting back, telling the truth kindly (Proverbs 27:6). Then guide them to the line. When a friend is in danger, being hurt, or talking about hurting themselves, helping them up means telling a trusted adult, even if they asked you to keep it secret. Jonathan promised to send David away “in safety” when the danger was in Jonathan's own home (1 Samuel 20:13). A real friend doesn't carry that alone. Say this plainly; it may save a life."
+        },
+        {
+          "q": "In John 15, Jesus tells his disciples, “I have called you friends” (John 15:15). What's the difference between being someone's servant and being their friend, and what does it mean that Jesus calls his followers friends?",
+          "behind": "Jesus explains it himself: a servant doesn't know what his master is doing, but Jesus has told his friends everything he heard from the Father. Friendship means being let in. Then point to John 15:13, where the greatest love lays down its life for its friends, which Jesus was about to do. Help them see that their belonging doesn't start with whether the right group wants them. It starts with Jesus choosing them (John 15:16)."
+        },
+        {
+          "q": "Jesus said that whoever does the will of God is his “brother and sister and mother” (Mark 3:35). What would it look like for a church to be a family for students, not just a youth group in another room?",
+          "behind": "Widen the circle. The church is meant to be a family across generations, with older believers as mothers and fathers and peers as brothers and sisters (1 Timothy 5:1-2). Ask what's missing in your own church, and what students could give to adults, not only receive. Be honest that adults often keep young people in a separate room. Let the answers be specific, and if students are critical of the church, thank them; they're probably right about something."
+        }
+      ],
+      "objections": [
+        {
+          "objection": "Friends are supposed to make you feel good. If someone drains you, cut them off. Protect your peace.",
+          "response": "Grant what's right. Some relationships are harmful, and Scripture warns that “the companion of fools will be destroyed” (Proverbs 13:20). Augustine admitted in his Confessions that in his sixteenth year he stole pears with friends and would never have done it alone. If a friendship involves being hurt, threatened, pressured into danger, or controlled, a student should step back and tell a trusted adult; safety comes first. But when protecting yourself becomes the whole rule, every friendship turns into a transaction: I'll stay as long as you make me feel good. Jonathan's friendship with David cost him his father's approval and nearly his life (1 Samuel 20:30-33), and Proverbs says “A friend loves at all times” (Proverbs 17:17), not only in the easy ones. The wisdom is to tell the difference between a friend who is hard to love and a friendship that is hurting you, and to ask an adult for help when you can't tell."
+        },
+        {
+          "objection": "I don't need friends. I've got God, and honestly, my online friends understand me better than anyone at school.",
+          "response": "Take both halves seriously. God is enough in the deepest sense, and there are seasons when he's the only one who stays. Near the end of the second letter to Timothy, which bears Paul's name, the writer says that at his first defense in court “no one stood with me,” but “the Lord stood by me and strengthened me” (2 Timothy 4:16-17). Online friendships can be real too, especially for students who feel out of place where they live. But in the same chapter the writer begs Timothy to come quickly and to bring Mark; only Luke is still with him (2 Timothy 4:9-11). A man who knew the Lord was standing by him still wanted friends in the room, and God said “It is not good for the man to be alone” (Genesis 2:18) before sin ever entered the world. Keep the online friends who are good for you, and tell a trusted adult right away if anyone online asks for secrecy, photos, money, or a meeting. Then ask God for one friend you can sit beside, and look for someone who needs you to be that friend."
+        }
+      ],
+      "quietRoomQuestion": "What's one small thing someone could do this week that would make a lonely person at school feel seen? Keep it simple.",
+      "practice": "This week, be a Jonathan in one small way. Notice one person on the edge, someone who sits alone, is new, or got left out, and do one concrete thing: sit with them, include them, or send a kind message and then follow it up in person. Have at least one real conversation with a friend with no phones on the table. And remember: if a friend ever tells you they're in danger or thinking about hurting themselves, being a good friend means telling a trusted adult right away, even if they asked you to keep it secret. If you're the one who isn't safe at home, tell a trusted adult outside your home, like a teacher, a school counselor, or a pastor.",
+      "closingPrayer": "Lord Jesus, you called your disciples friends, and you laid down your life for them. Some of us feel lonely tonight, even surrounded by people. Some of us have left others out, or kept a jealous eye on someone you love. Some of us adults have been too busy to be the friends and the family young people needed. Forgive us. Thank you that you chose us before we ever chose you. Make us like Jonathan: quick to give up our status for someone else's good, brave enough to speak up when a friend is in danger, and faithful enough to help each other find strength in you. Settle the lonely among us in families, and make this church one of them. Amen.",
+      "reflection": [
+        "When have I felt known by someone, even a little, and what did they do that made me feel that way?",
+        "Is there someone I compare myself to the way Saul compared himself to David? What would it look like to be a Jonathan to them instead?",
+        "Who is one person on the edge that God might be asking me to notice this week?"
+      ],
+      "teaching": "Start with something almost everyone in the room has felt and few will say. You can be lonely in a full cafeteria. You can be in five group chats and still feel that nobody would notice if you disappeared for a week. Loneliness isn't the same as being alone; plenty of people enjoy time by themselves. Loneliness is the ache of not being known or not being wanted, and it's a common feeling, and one of the least admitted, in a high school, in an office, and in a church. If you've felt it, you're not strange. You're human, and the Bible saw you coming.\n\nIn the whole creation story, the first thing God calls not good is a human being on his own: “It is not good for the man to be alone” (Genesis 2:18). Sin hadn't happened yet. We were made by a God who is himself a communion of love, Father, Son, and Spirit, and we were made for one another, so the ache for friendship is part of the way you were built rather than a weakness. What went wrong is that sin turned other people into rivals and audiences, and instead of friends we got rankings: who's popular, who's in, who sits where. Phones didn't invent that, but they can put it on a scoreboard. Sherry Turkle, who studies how technology changes relationships, argues that we've come to expect more from our devices and less from each other. Connection got easier. Being known didn't.\n\nSo look at one of the greatest friendships ever written down. After David defeated Goliath, he came to King Saul's court, and “the souls of Jonathan and David were knit together, and Jonathan loved him as himself” (1 Samuel 18:1). Remember who Jonathan was. He was Saul's son, the crown prince, next in line to be king. David was the young hero the whole country was singing about, and the obvious threat to Jonathan's future. Jonathan had every reason to compete. Instead he made a covenant with David, and he “removed the robe he was wearing and gave it to David, along with his tunic, his sword, his bow, and his belt” (1 Samuel 18:4). Those weren't random gifts. They were the signs of who Jonathan was, a prince and a warrior, and he handed them to his friend. Then look a few verses later at Jonathan's father. Saul heard the same crowd singing David's praise, and “from that day forward Saul kept a jealous eye on David” (1 Samuel 18:9). It was the same David in the same chapter, and one man chose covenant while the other chose comparison. Sooner or later, most friendships come to that choice.\n\nJonathan's friendship cost him. When Saul set out to kill David, Jonathan promised to find out the truth and, if his father meant harm, to send David away “in safety” (1 Samuel 20:13). When Jonathan defended David at his father's table, Saul hurled a spear at his own son (1 Samuel 20:33). The two friends said goodbye in a field and “wept together” (1 Samuel 20:41), not knowing when they would see each other again. Later, when David was hiding in the wilderness, Jonathan found him and “strengthened his hand in God” (1 Samuel 23:16). That's what a friend does: tells you the truth, stands up for you when it costs something, and points you back to God when you're running out of strength. And notice one more thing, because it matters for you. When the danger was inside Jonathan's own home, Jonathan didn't stay quiet. He acted to get his friend to safety. If a friend ever tells you they're being hurt, or that they're not safe at home, or that they're thinking about hurting themselves, the Jonathan thing to do is to tell a trusted adult right away, even if your friend asked you to keep it secret. A secret that keeps someone in danger isn't one a friend should keep. If the danger is in your friend's home, tell a different trusted adult: a school counselor, a teacher, a pastor, or a youth leader. And if you're the one who isn't safe at home, the same goes for you: tell one of those adults, because you deserve to be safe too.\n\nThe Teacher in Ecclesiastes saw a man who worked endlessly and alone, with no one to share any of it, and called his life futile (Ecclesiastes 4:8). Then he wrote one of the Bible's best lines about friendship: “Two are better than one, because they have a good return for their labor. For if one falls down, his companion can lift him up” (Ecclesiastes 4:9-10). Everybody falls. The question is whether anyone is close enough to help. But the deepest friendship in the Bible isn't David and Jonathan's. It's the one Jesus offered the night before he died. “Greater love has no one than this, that he lay down his life for his friends,” he said, and then, “I have called you friends” (John 15:13-15). Jesus didn't wait for his disciples to become impressive. He told them, “You did not choose Me, but I chose you” (John 15:16). Your belonging doesn't start with the right group wanting you. It starts with Jesus choosing you, and it continues in the family he makes.\n\nThat family is the church. When Jesus' own relatives came looking for him, he looked at the people sitting around him and said that “whoever does the will of God is My brother and sister and mother” (Mark 3:35). The first letter to Timothy tells its reader to treat older people in the church as fathers and mothers and younger people as brothers and sisters (1 Timothy 5:1-2). The church is meant to be the place where “God settles the lonely in families” (Psalm 68:6). We adults have to admit that we haven't always built churches like that. We've often put young people in a separate room and called it ministry, and we've been too busy to be the friends we tell you to be. Dietrich Bonhoeffer, who trained young pastors in Nazi Germany at a seminary the Gestapo shut down in 1937, warned that people who love their dream of community more than the actual community end up destroying it. Real belonging is messier than the dream. People are awkward, slow to text back, and sometimes disappointing. But it's a gift, and it's real. Not every student will find a Jonathan this year. Every student can choose to be one.",
+      "scriptureStudy": [
+        {
+          "ref": "1 Samuel 18:1-4",
+          "note": "The souls of Jonathan and David are “knit together,” and Jonathan makes a covenant “because he loved him as himself.” The robe, tunic, sword, bow, and belt were the marks of a prince and a warrior. Jonathan gives his status to his friend."
+        },
+        {
+          "ref": "1 Samuel 20:12-17",
+          "note": "Jonathan promises to tell David the truth about his father's plans and to send him away safely, and he asks David to keep faithful love with his family forever. The Berean Standard Bible calls that faithful love “loving devotion,” its rendering of the Hebrew word hesed, the steady covenant love the Old Testament uses for God himself."
+        },
+        {
+          "ref": "1 Samuel 20:41-42",
+          "note": "The friends part in tears, and Jonathan sends David off “in peace” under the covenant they swore before the LORD. In their world a kiss was the ordinary greeting and farewell of family and close friends, as it still is in many places; this is two friends saying goodbye without knowing when they'll meet again."
+        },
+        {
+          "ref": "Ecclesiastes 4:8-12",
+          "note": "The Teacher sees a man alone, working without end and with no one to share it, and calls it futile. Then he turns: two are better than one, two can resist what one can't, and “a cord of three strands is not quickly broken.” Friendship is protection as well as pleasure."
+        },
+        {
+          "ref": "John 15:12-17",
+          "note": "On the night before the cross, Jesus commands love “as I have loved you,” defines the greatest love as laying down one's life for friends, calls his disciples friends, and reminds them that he chose them. Belonging begins with being chosen."
+        },
+        {
+          "ref": "Psalm 68:5-6",
+          "note": "God is “A father of the fatherless” and “settles the lonely in families.” The lonely aren't an afterthought in Scripture. They're the very people God gathers, and that's a word for any student growing up without a father at home."
+        }
+      ],
+      "goingDeeper": "For the group that wants more, read C. S. Lewis on friendship in The Four Loves. Lewis observed that we picture lovers face to face, absorbed in each other, and friends side by side, absorbed in some common interest. That's a practical clue for lonely students: friendship usually grows around something shared, a team, an instrument, a project, a place to serve, rather than around the direct search for friends. Add Bonhoeffer's Life Together, written out of the shared life of the Confessing Church seminary at Finkenwalde after the Gestapo closed it in 1937, with its insistence that community is a gift God gives rather than an ideal we demand. Put those beside Augustine's admission, met in this session's objections, that he would never have stolen those pears alone, and you have a realistic picture: friendship is a gift, it grows side by side, it can pull us toward good or evil, and it's never perfect. Kenda Creasy Dean found in Almost Christian that the most committed young Christians belonged to a significant faith community, and Kara Powell and Brad Griffin name where do I fit as one of three big questions underneath adolescence. Ask the group what shared work your church could offer that would let students and adults stand side by side, and what it would take for every student to be known by at least one adult who isn't their parent.",
+      "caseStudy": "Suppose a student gets a message from a friend late on a Saturday night: things are really bad at home, I don't feel safe, and you have to promise not to tell anyone or it will get worse. The student is scared, wants to be loyal, and doesn't know what to do. Talk it through slowly as a group. What would Jonathan do? Why isn't promising to keep this secret the loving thing? Who could the student tell, and why might a school counselor, a teacher, a pastor, or a youth leader be the right person when the danger is at home? What could the student write back tonight? Something like this: I'm really glad you told me, you don't deserve to be scared, and I'm going to help you get help. And if a message like this ever says someone might hurt themselves, the student should tell an adult immediately, call or text 988 with them, and call 911 if anyone is in immediate danger. A note for leaders: if a student in the room seems to be describing their own situation, don't ask for more in front of the group. Talk with them privately afterward, where others can see you, and follow the leader primer.",
+      "memoryVerse": {
+        "ref": "Ecclesiastes 4:9-10",
+        "text": "Two are better than one, because they have a good return for their labor. For if one falls down, his companion can lift him up; but pity the one who falls without another to help him up!"
+      }
+    },
+    {
+      "n": 5,
+      "essaySlug": "teen-it-is-okay-to-doubt",
+      "title": "A Faith That's Actually Mine",
+      "aim": "To welcome students' questions and doubts as something faith can survive and even grow through, to distinguish doubt from unbelief, and to invite students to make the faith they've been handed their own, not by throwing it away or by pretending, but by bringing their real questions to Jesus himself.",
+      "summary": "Many students grow up with a faith that belongs to their parents, their church, or their grandparents. That isn't a bad thing, because a faith handed down is a gift. But at some point every person has to ask whether they believe it themselves. Maybe you've had a question you were afraid to say out loud, a prayer that felt like it hit the ceiling, or a moment in church when everyone else seemed sure and you weren't.\n\nThis session says something that may surprise you: doubt is not the opposite of faith. In Mark 9, a desperate father says to Jesus, “I do believe; help my unbelief!” (Mark 9:24), and Jesus helps him. In John 20, the disciple Thomas says he won't believe Jesus rose from the dead unless he sees it for himself. Jesus doesn't throw him out. He comes back, shows Thomas his wounds, and Thomas says, “My Lord and my God!” (John 20:28). Even on the day Jesus gave his followers their mission, Matthew says they worshiped him, “but some doubted” (Matthew 28:17).\n\nOwning your faith doesn't mean starting from scratch, and it doesn't mean pretending. The second letter to Timothy, written in Paul's name to a young leader, remembers a faith that “first dwelt in your grandmother Lois and your mother Eunice” and now lives in Timothy too (2 Timothy 1:5). Faith becomes yours when you bring your real questions to Jesus and keep following him while you ask them. You're allowed to ask. He isn't afraid of your questions.",
+      "keyScripture": {
+        "ref": "John 20:24-29",
+        "why": "Thomas refuses to believe the resurrection on anyone else's word and asks to see for himself, and Jesus answers not by shaming him but by coming back and showing him his wounds, which shows that honest doubt brought to Jesus can end in one of the fullest confessions in the Gospels: “My Lord and my God!” (John 20:28)."
+      },
+      "timing": [
+        {
+          "segment": "Open",
+          "minutes": 5
+        },
+        {
+          "segment": "Teach",
+          "minutes": 15
+        },
+        {
+          "segment": "Discuss",
+          "minutes": 30
+        },
+        {
+          "segment": "Close",
+          "minutes": 10
+        }
+      ],
+      "discussion": [
+        {
+          "q": "Without naming anyone, what questions about God or faith do people your age carry but rarely say out loud in church?",
+          "behind": "Keep it general and welcome everything. You may hear: Is any of this real? Why does God allow suffering? Why do Christians act like hypocrites? Is Christianity the only way? What about science? Write the questions down and don't answer them yet. Thank the room. The point is to show that questions can be spoken here without anyone panicking. If one question is clearly heavy for a particular student, offer to talk afterward, somewhere others can see you."
+        },
+        {
+          "q": "Thomas said he'd never believe unless he saw the nail marks for himself (John 20:25). When Jesus came back, what did he do, and what didn't he do?",
+          "behind": "Jesus came back eight days later, spoke peace, and offered Thomas exactly the evidence he had asked for (John 20:26-27). He didn't shame him or throw him out of the group. He did tell him to stop doubting and believe, so don't let the room conclude that doubt is a place to live forever. Jesus meets doubt in order to lead it somewhere, to the confession “My Lord and my God!” (John 20:28). Notice too that Thomas was with the disciples the second time. He didn't walk away while he doubted."
+        },
+        {
+          "q": "The father in Mark 9 said, “I do believe; help my unbelief!” (Mark 9:24). Can belief and unbelief live in the same person at the same time?",
+          "behind": "Yes, and that's the point. Os Guinness describes doubt as being in two minds, caught between faith and unbelief, which is different from having decided against God. The father's prayer is honest, and Jesus answers it by healing his son (Mark 9:25-27). Help students see that they can pray the father's prayer. Leaders who have prayed it themselves can say so; it helps students to hear that adults have honest prayers too."
+        },
+        {
+          "q": "Timothy's faith first lived in his grandmother and his mother, and the letter tells him to continue in what he learned, “since you know from whom you have learned them” (2 Timothy 3:14). Why do the people who hand us faith matter, and what makes a faith become your own?",
+          "behind": "Protect both sides. Faith handed down is a gift, not a trap; Timothy had known the Scriptures from infancy (2 Timothy 3:15), and the people who taught him were part of why he could trust what he learned. But the letter says that faith now lives “in you as well” (2 Timothy 1:5). Owning faith doesn't mean rejecting what you were given. It means examining it, the way the Bereans “examined the Scriptures every day” (Acts 17:11), and choosing to trust Christ yourself. Be careful with students whose parents don't share the faith or whose home is hard; for them, the people who hand them faith may be a grandparent, a coach, or this church."
+        },
+        {
+          "q": "When many followers left Jesus, Peter said, “Lord, to whom would we go? You have the words of eternal life” (John 6:68). What could it look like to keep following Jesus while you still have questions?",
+          "behind": "Close on following, not on certainty. Peter didn't understand everything Jesus had just said, and many who heard it walked away. But he knew where life was. Owning faith often looks like that: honest questions, and a decision to stay close to Jesus while you look for answers. Invite students to think of one question they'd like to keep exploring and an adult they could explore it with, but don't ask anyone to share their answer."
+        }
+      ],
+      "objections": [
+        {
+          "objection": "Questioning is just rebellion. The letter of James compares the one who doubts to a wave tossed by the wind and tells him not to expect anything from God. Good Christian kids don't doubt; they believe what they're taught.",
+          "response": "Grant what's right here. Humility matters, honoring your parents matters (Exodus 20:12), and not every question is honest; some are excuses to do what we already wanted. The letter of James does warn against doubting. But read it in context. It's about asking God for wisdom while being “double-minded” (James 1:8), trying to keep one foot with God and one foot out, not about honest questions brought to God. The same Bible that holds that warning also holds Thomas, whom Jesus came back for, and the father who prayed “help my unbelief” (Mark 9:24), whom Jesus helped, and the command to “have mercy on those who doubt” (Jude 1:22). The boy Jesus himself, at twelve, sat in the temple “listening to them and asking them questions” (Luke 2:46). A question honestly brought to God is a form of faith."
+        },
+        {
+          "objection": "To have my own faith, I have to throw out everything my parents taught me and figure it out from scratch. Otherwise it's just their faith, or just my culture.",
+          "response": "There's real truth in this. Nobody can believe for you, and a faith only borrowed to keep the peace at home isn't the same as trusting Christ yourself. Some of what gets passed down as Christianity is thin, too, like the moralistic therapeutic deism described in this session's teaching, and that deserves to be questioned. But nobody figures anything out from scratch. Everyone starts with something they were handed, and the person who throws out their parents' faith often just picks up the faith of their feed instead. Owning your faith means examining what you were given honestly, keeping what is true, and coming to trust Jesus for yourself. Timothy's faith first lived in his grandmother and his mother, and it became his own (2 Timothy 1:5). That's what it looks like to inherit a faith rather than rent one."
+        }
+      ],
+      "quietRoomQuestion": "If people your age could ask God one question and get a straight answer, what do you think they'd ask? Answer for people in general.",
+      "practice": "This week, write down one honest question you have about God or faith, the real one. Then do three things with it. First, pray it the way the father in Mark 9 did: I do believe; help my unbelief. Second, read John 20 slowly, all the way through, and notice how Jesus treats people who aren't sure. Third, bring your question to an adult you trust, a parent, a grandparent, a pastor, or a youth leader, and ask what they think. You don't need an answer by the end of the week. You only need to stop carrying the question alone.",
+      "closingPrayer": "Lord Jesus, you came back for Thomas. You didn't leave him outside with his questions, and you didn't leave the father in Mark 9 alone with his unbelief. Some of us are sure tonight, some of us aren't, and some of us have been pretending. Thank you that we don't have to pretend with you. Forgive us, the adults, for the times we've handed young people a faith too thin to survive their questions, and for hiding our own doubts instead of bringing them to you. Give every student here a faith that is truly theirs, received with gratitude from the people who loved them and tested in the light of your word. We do believe. Help our unbelief. Amen.",
+      "reflection": [
+        "What do I actually believe about Jesus right now, apart from what I'm expected to say?",
+        "What question have I been afraid to ask, and who could I ask it with?",
+        "What have the people who love me handed me about faith that I want to keep, and why?"
+      ],
+      "teaching": "Start with the situation many students in the room are in, whether or not they'll say so. They grew up around church. They know the songs and the stories and the right answers. And somewhere along the way, maybe this year, a question arrived that they didn't know what to do with. Is any of this real? Why doesn't God answer? Why do Christians act the way they do? Do I believe this, or have I just been around it my whole life? For many students the question is less frightening than what might happen if they asked it out loud: the worried face, the quick verse, the sense that they've let someone down. So they keep quiet, and the question grows in the dark.\n\nThere are two common answers. The first says that questioning is rebellion: good Christian kids believe what they're taught, and doubt is sin. It's right that humility matters, that honoring your parents matters, and that some questions are really excuses. The second says that to have a faith of your own you have to throw out everything you were taught and start from scratch, because anything inherited is just your parents' faith or your culture. It's right that nobody can believe for you and that some of what gets passed down as Christianity is thin. But both answers leave out the same person. The first treats questions as a threat to Jesus, and the second assumes he isn't really there to be asked.\n\nWe adults need to own our part. In 2005 the sociologist Christian Smith and his colleague Melinda Lundquist Denton published Soul Searching, a national study of American teenagers' religious lives. They found that many teenagers, including many who went to church, held a quiet working creed they called moralistic therapeutic deism: God exists, wants people to be good and nice, helps when you need him, and the point of life is to be happy and feel good about yourself. Five years later Kenda Creasy Dean argued in Almost Christian that teenagers learned that creed mostly from us, from the adults and churches around them. If you were handed a faith that's mostly about being nice and feeling okay, of course it can't hold up under real questions. It was never the faith of the Bible. The faith of the Bible has a cross and an empty tomb at its center, and it was built to survive questions.\n\nSo look at how Jesus treats people who aren't sure. In Mark 9 a father brings his son, who has suffered since childhood, after Jesus' disciples have failed to help. The father asks Jesus to help them if he can. Jesus answers, “All things are possible to him who believes!” and the father cries out, “I do believe; help my unbelief!” (Mark 9:23-24). That's belief and unbelief in the same breath, and Jesus doesn't send him away to sort it out first. He heals the boy. In John 20, Thomas wasn't there when the risen Jesus first appeared to the disciples, and he refused to believe on anyone else's word. “Unless I see the nail marks in His hands,” he said, he would never believe (John 20:25). Eight days later Jesus came back, stood among them, and offered Thomas exactly what he'd asked for, and Thomas's doubt ended in one of the clearest confessions of who Jesus is anywhere in the Gospels: “My Lord and my God!” (John 20:28). And when Jesus gathered his followers on a mountain to give them their mission, Matthew says, “they worshiped Him, but some doubted” (Matthew 28:17). Jesus gave the mission to all of them. Os Guinness describes doubt as being in two minds, caught between faith and unbelief. Unbelief has decided against God. Doubt is a question you can still bring to him.\n\nSo what does it mean to own your faith? Look at Timothy. The second letter to Timothy, written in Paul's name to a young church leader, remembers his “sincere faith, which first dwelt in your grandmother Lois and your mother Eunice,” and says that it now lives “in you as well” (2 Timothy 1:5). Later the letter tells him to “continue in the things you have learned and firmly believed, since you know from whom you have learned them. From infancy you have known the Holy Scriptures” (2 Timothy 3:14-15). The people mattered. Timothy could trust what he'd been taught partly because he knew who had taught him and how they had lived. But the faith became his own. Owning faith isn't starting over. It's examining what you were handed, the way the Bereans “examined the Scriptures every day to see if these teachings were true” (Acts 17:11), and then choosing to trust Christ yourself. Some of you were handed faith by your parents. Some of you weren't, and your faith came through a grandparent, a coach, a friend, or this church. Either way the question is the same: will you bring your real questions to Jesus and keep following him while you ask them?\n\nWhen many of Jesus' followers walked away because his teaching was hard, he asked the Twelve if they wanted to leave too. Peter didn't claim to understand everything. He said, “Lord, to whom would we go? You have the words of eternal life” (John 6:68). That's what an owned faith often sounds like: not the absence of questions, but the decision to bring them to the one who has the words of life. If you're not a Christian and you came tonight anyway, you're welcome here, and nobody wants you to pretend. Thomas's question was a question about evidence, whether Jesus really rose, and that's a question you can actually investigate. Luke's Gospel opens with its writer saying he carefully investigated everything from the beginning, “so that you may know the certainty of the things you have been taught” (Luke 1:4). Read it. Ask your hardest questions out loud. We adults should have made this room safe for them a long time ago. The faith you were handed can become your own, and the Jesus who came back for Thomas isn't afraid of your questions.",
+      "scriptureStudy": [
+        {
+          "ref": "Mark 9:21-27",
+          "note": "A father whose son has suffered since childhood brings him to Jesus after the disciples fail to help. His prayer holds belief and unbelief together, and Jesus answers it by healing the boy and lifting him by the hand. Honest, mixed faith is still faith that Jesus hears."
+        },
+        {
+          "ref": "John 20:24-29",
+          "note": "Thomas misses Jesus' first appearance to the disciples and won't believe on their word. Jesus returns, speaks peace, and invites Thomas to touch his wounds. His words “Stop doubting and believe” come with evidence attached, and Thomas answers, “My Lord and my God!” Then Jesus blesses “those who have not seen and yet have believed” (20:29), which takes in every student in the room."
+        },
+        {
+          "ref": "2 Timothy 1:5",
+          "note": "Faith passes through people, from grandmother to mother to son, and yet it becomes Timothy's own. The letter calls it “sincere faith,” which means neither borrowed nor performed."
+        },
+        {
+          "ref": "2 Timothy 3:14-15",
+          "note": "Timothy is told to continue in what he learned, partly because he knows the people he learned it from, and because the Scriptures he has known since infancy lead to salvation “through faith in Christ Jesus.” An inherited faith can be a starting place that leads to Christ."
+        },
+        {
+          "ref": "Luke 2:41-52",
+          "note": "At twelve, Jesus stays behind in the temple, “listening to them and asking them questions.” Then he goes home with his parents and is obedient to them. Questions and honor belong together, and the young Jesus shows both."
+        },
+        {
+          "ref": "John 6:66-69",
+          "note": "When many disciples leave, Peter stays, not because he understands everything but because he knows Jesus has “the words of eternal life.”"
+        }
+      ],
+      "goingDeeper": "For the group that wants to think harder, set the research beside the Bible. Kara Powell and Chap Clark's Sticky Faith, drawn from the Fuller Youth Institute's research on students moving from high school into college, reports that doubt itself isn't what harms young people's faith so much as unexpressed doubt, the question kept silent because nobody seemed safe to ask. Os Guinness's God in the Dark, an updated version of his earlier In Two Minds, argues that doubt is a mind suspended between faith and unbelief, to be understood and answered rather than feared or celebrated. Both fit Jude's command: “have mercy on those who doubt” (Jude 1:22). For students who want a place to start on the hardest questions, Rebecca McLaughlin's 10 Questions Every Teen Should Ask (and Answer) about Christianity is written for them. Then there's a harder conversation that faithful Christians have without agreeing. Churches differ about how children belong to the church: some baptize the infants of believing parents and later invite them to confirm the faith as their own, and others baptize only those who profess faith for themselves. Both traditions want what this session wants, a faith that becomes personal trust in Christ. Christians also differ about whether a true believer can finally fall away. Those are questions for your pastor and your family, not for settling in a youth room. What all of them affirm is enough for tonight: Jesus came back for Thomas.",
+      "caseStudy": "Suppose a senior who grew up in the church, helps lead worship, and has gone on every mission trip stays after youth group and tells a leader quietly, in the corner of the room while others are still around, that they aren't sure they believe any of it anymore and that their parents would be crushed to know. Talk through how a wise leader responds. What should the leader say first, and what would make things worse? What might be behind the question, and how could the leader find out without interrogating? How might the student eventually talk with their parents, and how could the leader help with that? What would it look like to keep the conversation going over weeks rather than trying to fix it in one night? And what might this student need from the church that a single conversation can't give?",
+      "memoryVerse": {
+        "ref": "Mark 9:24",
+        "text": "I do believe; help my unbelief!"
+      }
+    }
+  ],
+  "leaderPrimer": "Leading teenagers through these questions is a privilege, and it carries more weight than most volunteer roles, so read this whole primer before the first session. Students will trust you with more than you expect. That trust is the point of the study, and it has to be protected.\n\nNever meet with a student alone in private, in person or online. Talk with a student where others can see you even if they can't hear you: the corner of the youth room while others are still there, a table in the church lobby, a bench outside the building. Have two adults present at every session. Keep your messages with students transparent, and follow your church's safeguarding policy on texting, social media, rides, and supervision; if your church doesn't have one, ask your pastor before you begin. Never collect or read students' handouts or reflection pages. Those belong to them.\n\nThe discussion questions invite; they never require. Any student may pass on any question, every time, without explaining why, and you must never press a student to disclose something private, in the group or afterward. Most questions are written so students can answer about people their age in general rather than about themselves. If a student begins to share something in the group that sounds like danger, gently stop, thank them, and say you'd like to hear more right after the session. Then follow up that same day.\n\nIf you're worried about a student, ask them privately and directly whether they're thinking about suicide; asking won't put the idea in their head, and it tells them they can talk to you. If a student tells you they are thinking about suicide or about hurting themselves, take it seriously every time, even if they laugh it off. Stay with them, and don't leave them alone. Thank them for telling you, and tell them plainly that you are going to help them get help, which means you can't keep it secret. Call or text 988, the Suicide & Crisis Lifeline, together with them, and if anyone is in immediate danger, call 911. Tell their parent or guardian, unless the parent or guardian is the danger, and tell your pastor or the person your church's policy names. Never treat it as a discipline problem or a failure of faith. Don't try to be their counselor; your job is to get them to people who can help and to stay close while that happens. Never discuss methods or details of self-harm in the group.\n\nIf a student tells you they are being hurt, threatened, or neglected, or that they don't feel safe at home, believe them and tell them they were right to tell you. Don't investigate, don't question them for details, and don't confront the person they named. Don't press the student to forgive or make peace with that person either; safety comes before reconciliation. Don't promise to keep it secret. Report it as the law requires and as your church's policy directs. Youth leaders are often mandated reporters, and the laws vary by state, so find out before the study begins what your state requires of you and whom your church notifies; nothing in this guide is legal advice. If a student is in immediate danger, call 911. For a student who is afraid of someone at home, the National Domestic Violence Hotline (call 1-800-799-7233 or text START to 88788) can also help, at any hour.\n\nKnow your room. Some students come from strong Christian homes, some from homes where faith isn't shared, and some from homes that are hard. Some are growing up without a father at home, and they may hear the word Father differently when the study uses it for God; Psalm 68 calls God “A father of the fatherless” (Psalm 68:5), and you can say so gently. Some students may not believe at all; welcome them without making them a project. Some are carrying anxiety or sadness that is more than a hard week. The third session says plainly that seeing a doctor or counselor is not a failure of faith, and you should say it too; nothing in this study is medical advice. For your own preparation, the site's pages on worry (/help/anxiety), loneliness (/help/loneliness), and doubt (/help/doubt) go further than a study guide can.\n\nQuestions about sexuality and gender may come up, in general or about a student's own life. This study doesn't take them up, and you shouldn't take a side on them in the room. If a student raises one, thank them, don't let it turn into a debate or let anyone mock the question, and offer to talk privately afterward, where others can see you. Then connect the student with your pastor and, where it's safe for the student, help them talk with their parents. What a student tells you about their own life is theirs; don't pass it on except as their safety requires and your pastor advises.\n\nSome questions in this study are open among faithful Christians, and the study leaves them open. Families decide differently when a student should have a smartphone or social media, and no student should be shamed for what their family decided. Churches differ about how children belong to the church, whether through infant baptism and later confirmation or through believer's baptism, and about whether a true believer can finally fall away. Christians differ about which kinds of counseling are wisest and about when medication is the right help, though the study holds the floor that getting help is not a lack of faith. James Bell's own landing on these questions is not given here; that is his to say in his own words. Your job is to let students and families disagree and remain brothers and sisters.\n\nFinally, lead from inside. The adults in the room aren't outside these questions. Adults perform for approval, scroll past midnight, worry about the future, get lonely, and borrow their convictions too. Where that's true of you, say so; students can tell the difference between an adult who is lecturing and one who is learning alongside them. Keep parents close: invite them to the orientation, tell them what each session covers, and remind them that they can read every handout. You won't fix anyone in five sessions, and you aren't supposed to. You're there to tell students the truth about who they are, to be safe and trustworthy, and to point them, yourself first, to the God who has spoken first.",
+  "faq": [
+    {
+      "q": "Is this study appropriate for my teenager? What does it cover, and what doesn't it?",
+      "a": "It is written for students roughly thirteen to eighteen, and parents can read every word their students read. The five sessions cover identity, the phone, anxiety, friendship and belonging, and doubt and owning faith. The study does not take up dating, sexuality, or gender, and it never asks students to share private information. When it touches heavy subjects, like anxiety or a friend in danger, it does so carefully: it tells students to talk to a trusted adult, it never describes self-harm, and it gives leaders clear instructions for keeping students safe."
+    },
+    {
+      "q": "Will students be asked to share personal things in front of the group?",
+      "a": "No. Every discussion question invites and none require. Students may pass on any question at any time, and most questions are written so students can answer about people their age in general rather than about themselves. The leader primer tells leaders never to press a student to disclose anything private and never to collect or read students' reflection pages. If a student starts to share something that sounds like danger, the leader gently stops and talks with the student privately afterward, somewhere other people can see them."
+    },
+    {
+      "q": "Does the study tell students to get rid of their phones or quit social media?",
+      "a": "No. The second session starts with the real goods of the phone and only then names the costs. It presents the strongest arguments on both sides, including Jonathan Haidt's case for delaying smartphones and social media and the criticism that the evidence is weaker than he claims. Whether and when a student has a phone or social media is a decision for each family, and faithful Christian parents decide it differently. The study's question is deeper than a rule: what are we becoming by what we keep looking at?"
+    },
+    {
+      "q": "My teenager struggles with anxiety. Will this study make them feel it's a lack of faith?",
+      "a": "It works hard to do the opposite. The third session says plainly that being anxious is not proof of weak faith, pointing to Jesus, who was deeply troubled and distressed in Gethsemane. It treats anxiety as something that can involve both body and soul, says that seeing a doctor or counselor is not a failure of faith, and tells students when to talk to a trusted adult and get help. It also teaches simple practices of prayer from Philippians 4 and 1 Peter 5. Nothing in the study is medical advice; if you're concerned, talk with your student's doctor."
+    },
+    {
+      "q": "What happens if a student tells a leader they're thinking about suicide or hurting themselves?",
+      "a": "The leader primer tells leaders who are worried about a student to ask privately and directly, and if a student says yes, to take it seriously every time, stay with the student, tell them they're going to help them get help and so can't keep it secret, and call or text 988, the Suicide & Crisis Lifeline, together. If anyone is in immediate danger, the leader calls 911. The leader tells the student's parent or guardian, unless the parent or guardian is the danger, and follows the church's safeguarding policy. Students are also told directly, in the first, third, and fourth sessions, that telling an adult is brave and that they can call or text 988 any time."
+    },
+    {
+      "q": "What happens if a student tells a leader something is wrong at home?",
+      "a": "Leaders are instructed to believe the student, to tell them they were right to tell, and not to investigate, question them for details, or confront anyone. They don't promise secrecy. They report as the law requires and as the church's policy directs. Many youth leaders are mandated reporters, and the laws vary by state, so the primer tells every leader to learn their own obligations before the study begins; nothing in this guide is legal advice. The fourth session also teaches students that if a friend says they aren't safe, the loving thing is to tell a trusted adult, and that a student who isn't safe at home should tell a trusted adult outside the home, such as a teacher, a school counselor, or a pastor."
+    },
+    {
+      "q": "Does this study encourage students to question their parents' faith?",
+      "a": "It encourages students to bring their real questions to Jesus, which is different. The fifth session takes seriously that a faith only borrowed to keep the peace isn't the same as trusting Christ yourself, and it takes just as seriously that a faith handed down is a gift. It points to Timothy, whose faith first lived in his grandmother and mother and became his own, and to the boy Jesus asking questions in the temple and then going home and obeying his parents. Owning faith, it says, means examining what you were given and choosing to trust Christ, not throwing everything away."
+    },
+    {
+      "q": "My student has told me they have doubts. Should I be worried?",
+      "a": "Take it seriously, but don't panic. Doubt isn't the same as unbelief; it's being in two minds, and Scripture is full of people who brought their questions to God, from the psalmists to Thomas. The Fuller Youth Institute's research, described in Sticky Faith, found that doubt itself isn't what tends to harm young people's faith; doubt kept silent is. So the most helpful thing a parent can do is make it safe to keep talking: ask what's behind the question, listen more than you answer, and look for good answers together."
+    },
+    {
+      "q": "Can a student come if they're not a Christian?",
+      "a": "Yes, and they're welcome. The study doesn't assume everyone in the room believes, and it never asks anyone to pretend. Students who don't believe will find hard questions taken seriously, objections stated fairly, and Christian claims put plainly enough to test. The fifth session says that whether Jesus rose from the dead is a question a person can actually investigate. Leaders are asked to welcome such students without making them a project."
+    },
+    {
+      "q": "If I have doubts, does that mean I was never really a Christian?",
+      "a": "No. Christians from different traditions answer some related questions differently, such as whether a true believer can finally fall away, and the study leaves those for you to talk through with your pastor and family. But they agree that having doubts doesn't prove a person was never a Christian. Doubt is not the same as unbelief, and Jesus doesn't throw doubters away. He came back for Thomas, and he answered the father who asked for help with his unbelief. Bring your questions to Jesus in prayer and to a trusted Christian adult, and keep going."
+    },
+    {
+      "q": "Why does the study keep pointing at the adults?",
+      "a": "Because much of what teenagers struggle with didn't start with them. Adults handed young people phones before learning to use their own, built the pressure around achievement, modeled worry and busyness, and often passed on a faith thinner than the one in the Bible; Kenda Creasy Dean's Almost Christian argued that teenagers' faith largely mirrors the faith of the adults around them. A study that corrected only teenagers would be dishonest, so this one asks the adults to go first."
+    },
+    {
+      "q": "I'm a volunteer, not a youth pastor. Can I lead this?",
+      "a": "Yes. The study is built so a volunteer doesn't have to write a lesson: every discussion question has the answer behind it, every session has a backup question for a quiet room, and every session ends in prayer. What you do need is to read the leader primer, know your church's safeguarding policy and your state's reporting obligations, have two adults present, never meet with a student alone in private, and be honest with students about your own questions. You don't have to have everything figured out. You do have to be safe, truthful, and kind."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "Late fourth century",
+      "event": "Augustine writes his Confessions. The book opens with his prayer that our hearts are restless until they rest in God, and it later admits that in his sixteenth year he stole pears with a group of friends and would not have done it alone."
+    },
+    {
+      "date": "1563",
+      "event": "The Heidelberg Catechism is published, a book of questions and answers written to teach the faith to young people. Its first question asks what your only comfort is in life and in death, and its answer begins by saying that you are not your own but belong, body and soul, to your faithful Savior Jesus Christ."
+    },
+    {
+      "date": "1939",
+      "event": "Dietrich Bonhoeffer publishes Life Together, written out of the shared life of the Confessing Church seminary at Finkenwalde, which the Gestapo had closed in 1937. He calls Christian community a gift of grace and warns that a dream of community, loved more than the real one, destroys it."
+    },
+    {
+      "date": "1960",
+      "event": "C. S. Lewis publishes The Four Loves, drawn from radio talks he gave in 1958, picturing friends not face to face like lovers but side by side, absorbed in some common interest."
+    },
+    {
+      "date": "2005",
+      "event": "Christian Smith and Melinda Lundquist Denton publish Soul Searching, a national study of American teenagers' religious lives, and give the name moralistic therapeutic deism to the thin working creed they found."
+    },
+    {
+      "date": "2010",
+      "event": "Kenda Creasy Dean publishes Almost Christian, arguing that teenagers' lukewarm faith largely reflects the faith of the adults and churches around them, and that the most committed young Christians share a story of God, a faith community, a sense of vocation, and hope."
+    },
+    {
+      "date": "2011",
+      "event": "Kara Powell and Chap Clark publish Sticky Faith, drawn from the Fuller Youth Institute's research on students moving into college, which found that unexpressed doubt, more than doubt itself, harms young people's faith. Sherry Turkle publishes Alone Together the same year."
+    },
+    {
+      "date": "2017",
+      "event": "Andy Crouch publishes The Tech-Wise Family and Tony Reinke publishes 12 Ways Your Phone Is Changing You, two Christian attempts to name both the gifts and the costs of the smartphone."
+    },
+    {
+      "date": "2021",
+      "event": "Kara Powell and Brad Griffin publish 3 Big Questions That Change Every Teenager, naming identity, belonging, and purpose as the questions underneath adolescence, and Alan Noble publishes You Are Not Your Own, building on the Heidelberg Catechism's first answer."
+    },
+    {
+      "date": "2024",
+      "event": "Jonathan Haidt publishes The Anxious Generation, arguing that the shift from a play-based to a phone-based childhood has harmed young people's mental health, a claim many parents find persuasive and some researchers contest."
+    }
+  ],
+  "facilitatorScript": {
+    "open": "Welcome. I'm glad you're here. Before we start, here's how this group works. First, you never have to share anything you don't want to. Every question is an invitation, and you can always say pass, no explanation needed. Second, what people share here stays here, with one exception: if someone tells us they're being hurt, or that they might hurt themselves or someone else, we will get help, because keeping you safe matters more than keeping a secret. Third, questions are welcome, the hard ones and the doubting ones too. If you're not sure you believe any of this, you're welcome here, and nobody wants you to pretend. Fourth, the adults in this room don't have all of this figured out. Adults wrestle with a lot of the same things you do, and we're here to learn with you, not to lecture you. Tonight we're looking at this together: ________. Let's read our key passage, and then we'll talk.",
+    "transition": "We've looked at what the passage says. Now let's bring it into the week you're actually going to have, the hallway, the group chat, the practice field, the kitchen table, the phone on your nightstand, because that's where this either matters or it doesn't.",
+    "close": "We're going to stop there, even though there's more to say. Try the practice this week if you can, and if you only manage the reflection questions, that counts. Your handout is yours, and nobody is going to collect it. If anything tonight stirred up something heavy, talk to me or another leader before you leave, or to a parent or another adult you trust tonight. And if you or a friend are ever in danger or thinking about hurting yourselves, tell a trusted adult right away, or call or text 988, any time. Let's pray before we go. Thanks for being honest tonight."
+  },
+  "cadences": [
+    {
+      "name": "The full study (8 weeks)",
+      "plan": [
+        "Week 1: Orientation. Invite parents for the first twenty minutes to hear the plan, the ground rules, and how the group keeps students safe. Then set the ground rules with students and open session 1's first two questions slowly.",
+        "Week 2: Session 1, Who Says Who I Am?, full discussion and practice.",
+        "Week 3: Session 2, The Phone in My Pocket, part one: the honest gifts, the honest costs, and what comparison does to us.",
+        "Week 4: Session 2 continued: what we behold shapes us, with time to try the practice together and talk about how it went.",
+        "Week 5: Session 3, When I'm Anxious, with unhurried time on when to tell a trusted adult and how to get help.",
+        "Week 6: Session 4, Friends, Loneliness, and Belonging, including the scenario about a friend in danger.",
+        "Week 7: Session 5, A Faith That's Actually Mine.",
+        "Week 8: Integration. Revisit the memory verses and practices, and invite parents, grandparents, or older church members to share a meal with the group and hear whatever students choose to say."
+      ]
+    },
+    {
+      "name": "The intensive (4 weeks)",
+      "plan": [
+        "Week 1: Sessions 1 and 2 together, who says who I am and the phone in my pocket.",
+        "Week 2: Session 3, When I'm Anxious, with extra time on getting help.",
+        "Week 3: Session 4, Friends, Loneliness, and Belonging.",
+        "Week 4: Session 5, A Faith That's Actually Mine, plus a short close that returns to the word the Father spoke over Jesus at his baptism: beloved."
+      ]
+    },
+    {
+      "name": "As written (5 weeks)",
+      "plan": [
+        "Week 1: Session 1, Who Says Who I Am?",
+        "Week 2: Session 2, The Phone in My Pocket.",
+        "Week 3: Session 3, When I'm Anxious.",
+        "Week 4: Session 4, Friends, Loneliness, and Belonging.",
+        "Week 5: Session 5, A Faith That's Actually Mine."
+      ]
+    }
+  ],
+  "bibliography": [
+    {
+      "title": "You Are Not Your Own: Belonging to God in an Inhuman World",
+      "author": "Alan Noble",
+      "note": "Builds on the first question of the Heidelberg Catechism to argue that the modern assumption that we belong to ourselves leaves each person responsible for making and justifying their own life, and that belonging to Christ is the better news. Behind session 1."
+    },
+    {
+      "title": "When People Are Big and God Is Small: Overcoming Peer Pressure, Codependency, and the Fear of Man",
+      "author": "Edward T. Welch",
+      "note": "Names the fear of man, letting other people's approval and rejection rule us, which in teenagers is called peer pressure, and argues that the fear of the Lord frees us to need people less and love them more. Session 1."
+    },
+    {
+      "title": "The Freedom of Self-Forgetfulness: The Path to True Christian Joy",
+      "author": "Timothy Keller",
+      "note": "A short exposition of 1 Corinthians 3:21-4:7 arguing that gospel humility frees a person from both pride and self-condemnation, because the Lord's judgment, not the crowd's or our own, is the one that counts. Session 1."
+    },
+    {
+      "title": "Faith for Exiles: 5 Ways for a New Generation to Follow Jesus in Digital Babylon",
+      "author": "David Kinnaman and Mark Matlock",
+      "note": "Drawn from research on young Christians whose faith stayed resilient, it describes today's screen-saturated culture as digital Babylon and names five practices, beginning with intimacy with Jesus as the ground of a resilient identity. Sessions 1 and 2."
+    },
+    {
+      "title": "The Tech-Wise Family: Everyday Steps for Putting Technology in Its Proper Place",
+      "author": "Andy Crouch",
+      "note": "Ten household commitments, such as waking up before our devices do and putting them to bed before we sleep, built on the conviction that choices about technology are really about forming wisdom and courage together. Session 2, and a gift to parents."
+    },
+    {
+      "title": "12 Ways Your Phone Is Changing You",
+      "author": "Tony Reinke",
+      "note": "A Christian account of how smartphones change us for good and for ill, from real gifts of connection to distraction, loneliness, and approval-seeking, written to help readers keep the gifts and avoid the pitfalls. Session 2."
+    },
+    {
+      "title": "We Become What We Worship: A Biblical Theology of Idolatry",
+      "author": "G. K. Beale",
+      "note": "Traces through the whole canon, with Isaiah 6 as a lens, the principle that people come to resemble what they revere, for ruin or for restoration. The scholarly background to session 2's reading of Psalm 115 and 2 Corinthians 3:18, written for serious readers."
+    },
+    {
+      "title": "Alone Together: Why We Expect More from Technology and Less from Each Other",
+      "author": "Sherry Turkle",
+      "note": "An MIT researcher's study of how constant connection changes relationships, arguing that we have come to expect more from our devices and less from one another. Not a Christian book; useful in sessions 2 and 4."
+    },
+    {
+      "title": "The Anxious Generation",
+      "author": "Jonathan Haidt",
+      "note": "A social psychologist's argument that the shift from a play-based to a phone-based childhood harmed young people through social deprivation, sleep deprivation, fragmented attention, and addiction, with four proposed norms for families and schools. Some researchers dispute how much the evidence shows. Not a Christian book; sessions 2 and 3."
+    },
+    {
+      "title": "Soul Searching: The Religious and Spiritual Lives of American Teenagers",
+      "author": "Christian Smith with Melinda Lundquist Denton",
+      "note": "The national study of American teenagers' religious lives that named moralistic therapeutic deism, a working creed in which God exists, wants people to be good and nice, helps when called on, and the goal of life is to be happy and feel good about oneself. Session 5."
+    },
+    {
+      "title": "Almost Christian: What the Faith of Our Teenagers Is Telling the American Church",
+      "author": "Kenda Creasy Dean",
+      "note": "Argues from the same national study that teenagers' thin faith largely mirrors the faith of the adults and churches around them, and that the most committed young Christians share a personal story of God, a significant faith community, a sense of vocation, and hope. Sessions 4 and 5."
+    },
+    {
+      "title": "Sticky Faith: Everyday Ideas to Build Lasting Faith in Your Kids",
+      "author": "Kara E. Powell and Chap Clark",
+      "note": "Draws on the Fuller Youth Institute's research on students moving from high school into college, including the finding that doubt itself is not what harms young people's faith; unexpressed doubt is. Session 5, and a gift to parents."
+    },
+    {
+      "title": "3 Big Questions That Change Every Teenager: Making the Most of Your Conversations and Connections",
+      "author": "Kara Powell and Brad M. Griffin",
+      "note": "Organizes adolescence around three questions, who am I, where do I fit, and what difference can I make, and offers research-based help for adults who walk with teenagers through identity, belonging, and purpose. Sessions 1 and 4."
+    },
+    {
+      "title": "God in the Dark: The Assurance of Faith Beyond a Shadow of Doubt",
+      "author": "Os Guinness",
+      "note": "An updated version of his earlier In Two Minds, arguing that doubt is not the same as unbelief but a mind in two minds, suspended between faith and unbelief, to be understood and answered rather than feared or celebrated. Session 5."
+    },
+    {
+      "title": "Life Together",
+      "author": "Dietrich Bonhoeffer",
+      "note": "Written out of the shared life of the Confessing Church seminary at Finkenwalde, it treats Christian community as a gift of grace and warns that a dream of community, loved more than the real community, destroys it. Session 4."
+    },
+    {
+      "title": "The Four Loves",
+      "author": "C. S. Lewis",
+      "note": "Distinguishes affection, friendship, romantic love, and charity, and pictures friends not face to face like lovers but side by side, absorbed in some common interest. Session 4."
+    },
+    {
+      "title": "Confessions",
+      "author": "Augustine of Hippo",
+      "note": "Includes his account of stealing pears in his sixteenth year with friends, which he admits he would not have done alone, and his prayer that our hearts are restless until they rest in God. Sessions 3 and 4."
+    },
+    {
+      "title": "10 Questions Every Teen Should Ask (and Answer) about Christianity",
+      "author": "Rebecca McLaughlin",
+      "note": "Written for teenagers and building on her Confronting Christianity, it takes the hard questions young people ask about Christianity seriously, including questions about sexuality and gender, so parents may want to read it alongside their student. Session 5."
+    }
+  ],
+  "furtherReading": [
+    "10 Questions Every Teen Should Ask (and Answer) about Christianity, Rebecca McLaughlin, for students who want honest answers to hard questions. It also takes up sexuality and gender, so parents may want to read along.",
+    "The Tech-Wise Family, Andy Crouch, for parents and students who want to make decisions about screens together, as a household, instead of in a running argument.",
+    "3 Big Questions That Change Every Teenager, Kara Powell and Brad M. Griffin, for parents, grandparents, and leaders who want better conversations with teenagers about identity, belonging, and purpose.",
+    "You Are Not Your Own, Alan Noble, for older students and adults who want to think hard about why the modern demand to make yourself is so exhausting.",
+    "God in the Dark, Os Guinness, for anyone carrying doubts who wants them taken seriously, neither feared nor celebrated."
+  ],
+  "glossary": [
+    {
+      "term": "Image of God",
+      "definition": "The truth from Genesis 1 that God made every human being in his own likeness, to know him and to represent him in the world. It is given, not earned, so no grade, ranking, or failure can add to a person's worth or take it away. Sin damages the image but does not erase it."
+    },
+    {
+      "term": "Beloved",
+      "definition": "The word the Father spoke over Jesus at his baptism, before any public ministry. In Christ, believers are brought into that love, so God's love is their starting point rather than their reward."
+    },
+    {
+      "term": "The fear of man",
+      "definition": "Letting other people's approval or rejection rule us. Teenagers call it peer pressure and adults call it people-pleasing; Scripture's answer is the fear of the Lord, which frees us to need people less and love them more."
+    },
+    {
+      "term": "Attention",
+      "definition": "What we give our eyes and minds to. The study treats attention as a form of love and a gift from God, which is why what holds it matters so much."
+    },
+    {
+      "term": "Formation",
+      "definition": "The slow shaping of a person by what they repeatedly do, love, and look at. Scripture teaches that we become like what we worship, either for ruin or for restoration."
+    },
+    {
+      "term": "Anxiety",
+      "definition": "A heavy, often physical sense of dread or alarm, usually fastened onto a future that hasn't happened yet. It can be part of ordinary life, and it can also be part of a medical condition that needs a doctor's care. Being anxious is not, in itself, a sin or proof of weak faith."
+    },
+    {
+      "term": "The peace of God",
+      "definition": "The peace Paul promises in Philippians 4, which surpasses understanding and guards the heart and mind in Christ Jesus. Sometimes it's felt as calm, and sometimes as the strength to keep going."
+    },
+    {
+      "term": "Casting",
+      "definition": "The word the first letter of Peter uses for what to do with anxiety: throw it onto God, because he cares for you. It's an act, often repeated, not a feeling."
+    },
+    {
+      "term": "Covenant",
+      "definition": "A binding promise of loyal love. Jonathan's covenant with David shows friendship as committed love that lasts through danger and refuses rivalry."
+    },
+    {
+      "term": "Loving devotion",
+      "definition": "The Berean Standard Bible's rendering of the Hebrew word hesed, the steady covenant love of God, which Jonathan asks David to show to his family."
+    },
+    {
+      "term": "Loneliness",
+      "definition": "The ache of not being known or not being wanted, which can happen even among many people. Being alone is the first thing in the creation story that God calls not good (Genesis 2:18)."
+    },
+    {
+      "term": "The household of God",
+      "definition": "The church understood as a family that Jesus creates, where believers of every age are brothers and sisters, mothers and fathers to one another."
+    },
+    {
+      "term": "Doubt",
+      "definition": "Being in two minds, caught between faith and unbelief. Unlike unbelief, which has decided against God, doubt is a question that can still be brought to him, and Scripture commands mercy for those who doubt."
+    },
+    {
+      "term": "Moralistic therapeutic deism",
+      "definition": "The name the sociologists Christian Smith and Melinda Lundquist Denton gave to the thin working creed they found among many American teenagers: God exists, wants people to be good and nice, helps when needed, and the goal of life is to be happy and feel good about oneself."
+    },
+    {
+      "term": "Mandated reporter",
+      "definition": "A person whom the law requires to report suspected abuse or neglect of a child. Many youth leaders are mandated reporters, and the rules vary by state, so every leader should learn their own obligations."
+    },
+    {
+      "term": "Safeguarding policy",
+      "definition": "A church's written practices for protecting children and teenagers, such as never meeting with a student alone in private and reporting concerns. Every leader of this study should know it and follow it."
+    }
+  ],
+  "scriptureIndex": [
+    {
+      "ref": "Genesis 1:26-28",
+      "sessions": [
+        1
+      ]
+    },
+    {
+      "ref": "Genesis 2:18",
+      "sessions": [
+        4
+      ]
+    },
+    {
+      "ref": "Genesis 9:6",
+      "sessions": [
+        1
+      ]
+    },
+    {
+      "ref": "1 Samuel 18:1-4",
+      "sessions": [
+        4
+      ]
+    },
+    {
+      "ref": "1 Samuel 18:6-9",
+      "sessions": [
+        2,
+        4
+      ]
+    },
+    {
+      "ref": "1 Samuel 20",
+      "sessions": [
+        4
+      ]
+    },
+    {
+      "ref": "1 Samuel 23:16-18",
+      "sessions": [
+        4
+      ]
+    },
+    {
+      "ref": "1 Kings 19:3-8",
+      "sessions": [
+        3
+      ]
+    },
+    {
+      "ref": "Psalm 68:5-6",
+      "sessions": [
+        4
+      ]
+    },
+    {
+      "ref": "Psalm 115:4-8",
+      "sessions": [
+        2
+      ]
+    },
+    {
+      "ref": "Psalm 119:37",
+      "sessions": [
+        2
+      ]
+    },
+    {
+      "ref": "Psalm 139",
+      "sessions": [
+        1
+      ]
+    },
+    {
+      "ref": "Proverbs 12:25",
+      "sessions": [
+        3
+      ]
+    },
+    {
+      "ref": "Proverbs 17:17",
+      "sessions": [
+        4
+      ]
+    },
+    {
+      "ref": "Ecclesiastes 1:8",
+      "sessions": [
+        2
+      ]
+    },
+    {
+      "ref": "Ecclesiastes 4:8-12",
+      "sessions": [
+        3,
+        4
+      ]
+    },
+    {
+      "ref": "Daniel 1:3-8",
+      "sessions": [
+        1
+      ]
+    },
+    {
+      "ref": "Matthew 4:1-4",
+      "sessions": [
+        1
+      ]
+    },
+    {
+      "ref": "Matthew 5:29-30",
+      "sessions": [
+        2
+      ]
+    },
+    {
+      "ref": "Matthew 6:1-6",
+      "sessions": [
+        2
+      ]
+    },
+    {
+      "ref": "Matthew 6:25-34",
+      "sessions": [
+        3
+      ]
+    },
+    {
+      "ref": "Matthew 28:16-17",
+      "sessions": [
+        5
+      ]
+    },
+    {
+      "ref": "Mark 1:9-11",
+      "sessions": [
+        1
+      ]
+    },
+    {
+      "ref": "Mark 1:35-38",
+      "sessions": [
+        2
+      ]
+    },
+    {
+      "ref": "Mark 3:31-35",
+      "sessions": [
+        4
+      ]
+    },
+    {
+      "ref": "Mark 6:30-32",
+      "sessions": [
+        2
+      ]
+    },
+    {
+      "ref": "Mark 7:20-23",
+      "sessions": [
+        2
+      ]
+    },
+    {
+      "ref": "Mark 9:21-27",
+      "sessions": [
+        5
+      ]
+    },
+    {
+      "ref": "Mark 14:32-36",
+      "sessions": [
+        3
+      ]
+    },
+    {
+      "ref": "Luke 1:1-4",
+      "sessions": [
+        5
+      ]
+    },
+    {
+      "ref": "Luke 2:41-52",
+      "sessions": [
+        5
+      ]
+    },
+    {
+      "ref": "John 6:66-69",
+      "sessions": [
+        5
+      ]
+    },
+    {
+      "ref": "John 12:42-43",
+      "sessions": [
+        1
+      ]
+    },
+    {
+      "ref": "John 15:12-17",
+      "sessions": [
+        4
+      ]
+    },
+    {
+      "ref": "John 20:24-29",
+      "sessions": [
+        5
+      ]
+    },
+    {
+      "ref": "Acts 17:11",
+      "sessions": [
+        5
+      ]
+    },
+    {
+      "ref": "1 Corinthians 4:3-4",
+      "sessions": [
+        1
+      ]
+    },
+    {
+      "ref": "1 Corinthians 6:12",
+      "sessions": [
+        2
+      ]
+    },
+    {
+      "ref": "2 Corinthians 1:8-10",
+      "sessions": [
+        3
+      ]
+    },
+    {
+      "ref": "2 Corinthians 3:18",
+      "sessions": [
+        2
+      ]
+    },
+    {
+      "ref": "Philippians 4:6-7",
+      "sessions": [
+        3
+      ]
+    },
+    {
+      "ref": "Philippians 4:8-9",
+      "sessions": [
+        2,
+        3
+      ]
+    },
+    {
+      "ref": "Philippians 4:11-13",
+      "sessions": [
+        3
+      ]
+    },
+    {
+      "ref": "1 Timothy 5:1-2",
+      "sessions": [
+        4
+      ]
+    },
+    {
+      "ref": "2 Timothy 1:5",
+      "sessions": [
+        5
+      ]
+    },
+    {
+      "ref": "2 Timothy 3:14-15",
+      "sessions": [
+        5
+      ]
+    },
+    {
+      "ref": "2 Timothy 4:9-17",
+      "sessions": [
+        4
+      ]
+    },
+    {
+      "ref": "James 1:5-8",
+      "sessions": [
+        5
+      ]
+    },
+    {
+      "ref": "1 Peter 5:6-9",
+      "sessions": [
+        3
+      ]
+    },
+    {
+      "ref": "1 John 3:1",
+      "sessions": [
+        1
+      ]
+    },
+    {
+      "ref": "Jude 1:22",
+      "sessions": [
+        5
+      ]
+    }
+  ],
+  "promoKit": {
+    "bulletinBlurb": "Who am I, really? It's the question under almost everything teenagers face, and this five-session study takes it seriously: who gets to say who you are, what the phone in your pocket is doing to you, what to do when you're anxious, how to find real friends and a place to belong, and how a faith you were handed can become your own. It doesn't talk down to students, it doesn't hand them easy answers, and it never asks anyone to share private things in the group. Parents, every handout is yours to read too, so the conversation can keep going at home. Students, bring your questions.",
+    "pulpitAnnouncement": "We're starting a five-session study for our students called Who Am I, Really? It takes the questions teenagers are already asking and brings them to Scripture: identity, phones, anxiety, friendship, and what it means for a faith to become your own. Parents, here's what you should know. It doesn't talk down to students, it never asks them to share private things in front of the group, and our leaders follow our safeguarding policy every week. Ask any of the leaders for the plan, and know that you can read every handout your student reads. Students, bring your real questions. You won't be the only one with them.",
+    "inviteCaption": "Grades, followers, group chats, the voice in your head at night: everybody's telling you who you are. Who Am I, Really? is a five-session study for students on identity, phones, anxiety, friendship, and a faith that's actually yours. Bring your questions. Bring a friend.",
+    "quoteCards": [
+      "You're not a project you have to finish. You're someone God has already named.",
+      "The voices that want to own you usually start with if. Jesus answered the tempter with what God had already said.",
+      "You become like what you keep looking at. The feed is asking for your eyes, and so is Jesus. Only one of them knows your name.",
+      "Being anxious isn't proof of weak faith. Jesus was deeply troubled in the garden, and he took it to his Father.",
+      "Telling a trusted adult isn't a failure of faith. It's one of the ways God takes care of you.",
+      "Saul kept a jealous eye on David. Jonathan gave him his robe. Sooner or later, most friendships come to that choice.",
+      "Not everyone will find a Jonathan this year. Everyone can choose to be one.",
+      "Jesus came back for Thomas. He isn't afraid of your questions."
+    ]
+  },
+  "kicker": "Named and Known",
+  "translation": "BSB"
+}

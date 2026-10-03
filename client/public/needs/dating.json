@@ -1,16 +1,25 @@
 {
   "slug": "dating",
-  "page": false,
+  "page": true,
   "rank": 30,
   "title": "Should we get married?",
-  "summary": "Dating, singleness, and discerning a spouse, for people who take marriage seriously.",
+  "seoTitle": "Should We Get Married? Christian Dating and Discernment",
+  "description": "Dating, deciding, or waiting? The questions to ask each other, red flags not to marry past, what Scripture says, and why singleness is a whole life.",
+  "summary": "For couples deciding and singles tired of waiting: the questions to ask, the red flags not to marry past, and singleness as a whole life.",
   "askedAs": [
     "Christian dating",
-    "should we get married",
-    "singleness",
     "dating advice",
+    "should we get married",
+    "how do I know if he's the one",
+    "how do I know if she's the one",
+    "What does the Bible say about dating",
+    "unequally yoked",
+    "red flags in dating",
+    "how long should we date",
+    "premarital counseling",
+    "Is it a sin to have sex before marriage",
     "waiting for a spouse",
-    "premarital",
+    "singleness",
     "is singleness a calling"
   ],
   "states": [
@@ -18,11 +27,145 @@
     "carrying"
   ],
   "sensitivity": "ordinary",
+  "crisisTopics": [
+    "abuse",
+    "substance"
+  ],
+  "answer": "You love someone, or think you might, and the question won't leave you alone: should we get married? Or you're single and tired of waiting, wondering whether God has anyone for you at all. Either way, it can feel as if one wrong move could cost you the rest of your life. You don't have to settle it alone, or tonight. Wisdom here comes in ordinary forms: honest questions asked of each other, the counsel of people who know you both, and enough time to see each other on bad days. If you're single, your life isn't on hold. And if the person you're dating scares you, checks your phone, cuts you off from friends, pressures you sexually, or threatens you, those are warning signs of abuse, and no amount of loving them harder will fix it. The National Domestic Violence Hotline helps people who are dating, too; it's with the help lines at the end of this page.",
+  "happening": "This question usually comes without any theology attached: a conversation you keep almost starting, a friend's engagement photos at midnight, a parent asking when, or the quiet math of your age. If you're dating, you may love this person and still feel a knot you can't name, or feel so sure that you wonder whether it's wisdom or momentum. If you're single, it may be the long Sunday afternoons, the apps that leave you more tired than hopeful, and prayers for a spouse that seem to go nowhere.\n\nThe usual explanations each hold part of the truth. The culture says you'll just know, and attraction does matter; the Bible makes room for a whole book of love poetry. Counselors say to watch how you fight and make up, and to notice the family patterns each of you brings, and they're right, because none of that disappears at the altar. The church says to pray and keep yourselves pure, which is true as far as it goes. What they can all leave out is that marriage is a promise, so the deeper question is whether you're becoming people who can make one and keep it.\n\nSome things aren't questions of fit at all. If the person you're dating checks your phone, decides who you can see, gets jealous in ways that pull you away from friends and family, pressures you sexually, puts you down and calls it joking, or has anger that frightens you, those aren't quirks to marry past, and a wedding won't cure them. Abuse doesn't have to involve hitting. The National Domestic Violence Hotline describes it as a pattern one partner uses to keep power and control over the other, in dating relationships as well as marriages. If you feel afraid, take that seriously and talk confidentially with the Hotline, and if you're a teenager, tell a parent or another adult you trust as well. If you're in danger, call 911.\n\nIf you're single, you may have been told, kindly, that your real life starts at the wedding. The longing for a spouse is real, and Scripture doesn't scold it: \"Hope deferred makes the heart sick\" (Proverbs 13:12). But your life isn't a rehearsal for a better one. It's the life God has given you, with work to do and people to love, and the church owes you more than a seat at the edge.",
+  "scripture": {
+    "intro": "Scripture says nothing about dating as we know it and offers no method for choosing a spouse, but it gives you a picture of what marriage is, a poem about the kind of person worth trusting, a story of love that protects instead of using, and a chapter in which Paul answers a church's questions about marrying and staying single.",
+    "passages": [
+      {
+        "ref": "Genesis 2:18,24-25",
+        "text": "The LORD God also said, “It is not good for the man to be alone. I will make for him a suitable helper.” ... For this reason a man will leave his father and mother and be united to his wife, and they will become one flesh. And the man and his wife were both naked, and they were not ashamed.",
+        "reading": "Before anything has gone wrong in Genesis, God names one thing that isn't good: the man is alone. Marriage is his first answer, though not his only one; Jesus never married, yet he looked at the people seated around him and called them his mother and brothers (Mark 3:34-35). A single reader can hear this verse as a word against isolation, not a verdict on their life. For a couple, the next lines describe marriage: a man leaves his father and mother, and two lives become one flesh, a union the letter to the Ephesians calls a profound mystery about Christ and the church (Ephesians 5:31-32). The chapter ends on two people naked and unashamed, fully known and unafraid of being known. That's a fair test before any wedding: can you tell each other the truth about your money, your past, your faith, and your fears, and still be welcome?"
+      },
+      {
+        "ref": "Proverbs 31:10-12,30",
+        "text": "A wife of noble character, who can find? She is far more precious than rubies. The heart of her husband trusts in her, and he lacks nothing of value. She brings him good and not harm all the days of her life. ... Charm is deceptive and beauty is fleeting, but a woman who fears the LORD is to be praised.",
+        "reading": "Proverbs ends with a poem in praise of a woman of noble character, in a chapter that opens with a king passing on what his mother taught him (Proverbs 31:1). The poem is about a wife, but its wisdom runs both ways. It praises what lasts: someone a spouse can safely trust, who does good and not harm year after year, whose arms are strong for work and open to the poor (Proverbs 31:17, 20). Charm and beauty prove nothing on their own. Anyone can learn charm, and some people are at their most charming before they begin to control. What holds is the fear of the LORD, a life ordered toward God that you can see on ordinary days."
+      },
+      {
+        "ref": "Ruth 3:11-12",
+        "text": "And now do not be afraid, my daughter. I will do for you whatever you request, since all my fellow townspeople know that you are a woman of noble character. Yes, it is true that I am a kinsman-redeemer, but there is a redeemer nearer than I.",
+        "reading": "Ruth was a widow and a foreigner, gleaning grain to keep her mother-in-law fed. At Naomi's urging she goes to Boaz on the threshing floor at night and asks him to spread the corner of his garment over her (Ruth 3:9), a request for marriage from a relative with the right to redeem. She is alone and exposed, and a lesser man could have used the moment. Boaz tells her not to be afraid and calls her a woman of noble character, the phrase Proverbs uses. He tells her the truth about a nearer relative instead of hurrying past it, guards her name (Ruth 3:14), and settles everything the next morning at the city gate, before the elders and the people (Ruth 4:9-11). Love worth marrying looks like that: it protects you, it tells you the truth, and it's glad to be seen."
+      },
+      {
+        "ref": "1 Corinthians 7:7-9,39",
+        "text": "I wish that all men were as I am. But each man has his own gift from God; one has this gift, another has that. Now to the unmarried and widows I say this: It is good for them to remain unmarried, as I am. But if they cannot control themselves, let them marry. For it is better to marry than to burn with passion. ... A wife is bound to her husband as long as he lives. But if her husband dies, she is free to marry anyone she wishes, as long as he belongs to the Lord.",
+        "reading": "Paul wrote this chapter to answer questions the church in Corinth had sent him (1 Corinthians 7:1), and he answered as an unmarried man who thought his state was good, because the unmarried can give the Lord undivided devotion (1 Corinthians 7:32-35). He isn't trying \"to restrict you\" (1 Corinthians 7:35), he says, and he wrote with an eye on \"the present crisis\" (1 Corinthians 7:26). He's just as frank about desire, and he doesn't treat marriage as a failure: \"if you do marry, you have not sinned\" (1 Corinthians 7:28). Near the chapter's end comes the plainest instruction the New Testament gives about whom to marry: anyone you wish, as long as they belong to the Lord. Paul wrote it about widows, and many Christians since have taken it as the rule for every believer who marries. It's a short sentence, and people in love are often tempted to talk themselves past it."
+      }
+    ]
+  },
+  "whyHard": "For centuries, families arranged marriages or steered them hard, because a marriage joined land and households, and the feelings of two young people came a distant second. No one should be nostalgic for that. It bound a great many people, women especially, to marriages they never wanted and couldn't leave.\n\nThe modern world handed the choice to the two people getting married, a real gain, and made love the main reason to marry. Then it asked that choice to carry almost everything. If a spouse is supposed to supply romance, friendship, meaning, and proof that your life turned out well, then choosing one becomes a bet on your whole happiness, placed mostly alone, on the evidence of feelings. No wonder some people freeze and others rush.\n\nThe church, for its part, gave that weight Christian words. Some of us talked about finding the one in ways that left young people terrified of missing their only chance, though that belief, held well, is meant to comfort. Some of us promised that if they waited, God would reward them with a spouse, as if marriage were a prize for good behavior, and then had little to say to the faithful who waited and never married. We built church life around couples and young families until a single adult could sit through years of sermons that never imagined their life. The culture makes your spouse your soulmate, and the church too often made your spouse your reward. I'm a pastor, so I can't point at that church from outside it.\n\nI came to faith from atheism, so I understand why the church's talk about dating and sex can sound like control dressed up as holiness. Some of that suspicion has been earned. But the faith itself is stranger than its failures. Its Lord lived and died unmarried, and the apostle who planted many of its first churches was unmarried and called it good. Long before them, God promised eunuchs who held fast to his covenant, men who would leave no heirs, a name \"better than that of sons and daughters\" (Isaiah 56:4-5). A faith like that can't make marriage the point of a life.\n\nScripture offers something sturdier than the soulmate or the prize. Marriage is a covenant, a promise to keep faith with one person for life, made before God and witnesses; Malachi says the LORD himself stands witness between a husband and \"the wife of your youth\" (Malachi 2:14). The human witnesses matter too. In 1215 the Fourth Lateran Council required that coming marriages be announced in church, and for centuries banns were read on several Sundays so that anyone who knew a reason the couple couldn't marry could say so. The aim was mostly to catch legal obstacles, such as kinship too close to marry. But the practice said something we've forgotten: a wedding concerns more people than the two at the front.\n\nSo the question keeping you awake is larger and kinder than the one you've been asking. It isn't whether you've found someone who can complete you, because no spouse can. It's whether two ordinary sinners can make a costly promise in front of people who know them, and keep it after the feelings change. You were never meant to decide that alone.",
+  "thisWeek": {
+    "intro": "None of this should be decided in a hurry, and these steps are small on purpose. If you're afraid of the person you're dating, start with the second step and talk with the National Domestic Violence Hotline before anything else; the rest assume you're safe with each other.",
+    "steps": [
+      {
+        "title": "Write down the real question",
+        "body": "Take five minutes tonight to write down the question you're actually asking. It might be *Should we get engaged?* or *Should I end this?* or *How do I live well if I'm single for years?* Under it, write what you hope for and what you're afraid of. Then pray both, and ask for the wisdom the letter of James says God gives \"generously to all without finding fault\" (James 1:5)."
+      },
+      {
+        "title": "Name what you keep explaining away",
+        "body": "Write down anything about the relationship you keep making excuses for: the jealousy, the temper, the lie, the pressure, the drinking. Tell one person you trust what you wrote, and if you're under eighteen, make it an adult. Control, threats, sexual pressure, and anything that makes you afraid aren't differences to work through, and a tearful apology followed by a good week doesn't prove anything has changed. If that's what you see, talk with a Hotline advocate before you end things, since leaving is often the most dangerous time, and use a phone the other person can't check. If you're in danger, call 911."
+      },
+      {
+        "title": "Ask each other the hard questions",
+        "body": "If you're seriously dating, start the conversations that matter, a few at a time. Ask what Jesus will have to do with your home. Talk about children: whether, when, and how you'd raise them. Put your money on the table, debts included. Talk about your families and what leaving home will mean, how each of you fights and makes up, and what you each believe God has called you to do. Notice whether you can both hear an answer you didn't want. That may tell you more than the answers."
+      },
+      {
+        "title": "Let people who know you both see you",
+        "body": "Spend real time with each other's friends and families, not only alone together. Then ask two or three wise people who know you both what they see and what worries them, and listen without defending. They aren't infatuated, so they can see what you can't. If everyone who knows you well is uneasy, don't wave it away. And if the person you're dating tries to keep you away from these people, that's an answer too."
+      },
+      {
+        "title": "Book premarital counseling early",
+        "body": "If you're talking about engagement, set up premarital counseling with a pastor or a licensed counselor now, months before a wedding date rather than weeks. Tell the truth there about your debts, your health, your history, and your fears, and talk through what each of you believes about husbands and wives, a question faithful Christians answer differently. If the counselor raises a concern, don't hurry past it. If you're afraid of your partner, this isn't where to start; the Hotline is."
+      },
+      {
+        "title": "If you're single, stop waiting to live",
+        "body": "Do one thing this week that someone waiting for their real life to begin wouldn't do. Invite someone to dinner instead of waiting to be asked, commit to a friendship or a ministry as if you'll be here in five years, or make your place a home. Tell God honestly what you long for, then go and live the life in front of you, and let the longing come along."
+      }
+    ]
+  },
+  "moreHelp": {
+    "body": "Many dating questions need only prayer, wise friends, and time. Some need more. If the person you're dating has hurt or threatened you, follows you, tracks your phone, or won't accept a breakup, reach the National Domestic Violence Hotline, and call 911 in an emergency; police and courts can do what friends and pastors can't, including protective orders, which an advocate can explain. If someone forced or pressured you into anything sexual, RAINN's hotline can help, whenever it happened. If you're under eighteen, tell a parent, a school counselor, or another adult you trust, especially if someone much older is pursuing you or asking you to keep it secret.\n\nPremarital counseling is worth it for any couple, and a licensed counselor is wise when either of you brings something heavy into marriage: a past divorce, children from another relationship, an addiction, abuse in your past, depression, or serious debt. Ask your doctor for a referral, search your insurer's directory, or ask a pastor which local counselors they trust. If you want a Christian counselor, ask about license and training as well as faith, and confirm the license on your state licensing board's website. If your partner is controlling or frightening, don't begin with couples counseling; the Hotline doesn't recommend it with an abusive partner.",
+    "signs": [
+      "You're afraid of the person you're dating, or they have hit, shoved, choked, or threatened you. In danger, call 911.",
+      "They check your phone, track where you go, or decide who you can see.",
+      "They pressure or force you sexually, or won't take no for an answer.",
+      "They threaten to hurt you, themselves, or someone you love if you leave. Call 911 if anyone is in danger.",
+      "Their drinking, drug use, or gambling worries you, or they hide it.",
+      "Worry about the decision has taken your sleep, appetite, or work for more than two weeks.",
+      "A breakup has left you unable to function, or you've thought about ending your life. Call or text 988."
+    ],
+    "firstCall": "For premarital counseling, keep it simple: *We're thinking about getting married, and we'd like premarital counseling.* Then ask how many sessions they do, what they cover, what it costs, and whether they meet with each of you alone at least once. If you're calling the Hotline, you don't have to be sure it's abuse. You can say, *I'm not sure this counts, but the person I'm dating scares me,* and an advocate will take it from there.",
+    "cost": "Ask your pastor first; many churches offer premarital counseling, and some charge little or nothing for it. Licensed counselors' fees vary, and insurance may not cover premarital sessions, so ask before you start. Lower-cost options include sliding-scale fees, community mental health centers, university training clinics where supervised graduate students see clients for less, and employee assistance programs, which often include a few free sessions. The Hotline and RAINN are free and confidential."
+  },
+  "helping": {
+    "body": "If someone you love is dating, ask more than you tell. People tend to defend a relationship harder when they feel judged, so start with questions. If you have a real concern, say it once, plainly and kindly, with specifics, then stay close.\n\nIf you suspect abuse, believe what they tell you. Don't confront the partner, which can make things more dangerous, and don't issue ultimatums, since cutting them off from you is what a controlling partner wants. Help them reach the Hotline, which talks with worried friends and family too, and let them make their own decisions, even when you'd decide differently.\n\nI have five sons, and I'd rather they bring this question to me than hide it from me, which means I have to listen before I lecture. Pastors carry a particular weight. In premarital counseling, meet with each partner alone at least once and ask whether they ever feel afraid, be willing to tell a couple to wait, and refer them to a licensed counselor when the trouble is bigger than you. Treat single adults as full members of the church, not a ministry problem. If a minor tells you about abuse, you may be a mandated reporter; the rules vary by state, so learn yours. This isn't legal advice.",
+    "say": [
+      "What do you love about them?",
+      "Is there anything about the relationship that worries you?",
+      "Do you ever feel afraid of them?",
+      "I'm on your side, whatever you decide.",
+      "Your life isn't on hold. I'm glad you're here."
+    ],
+    "dontSay": [
+      "So when is it your turn?",
+      "You're just too picky.",
+      "God will bring someone when you stop looking.",
+      "Every couple fights like that.",
+      "You'll never find anyone better."
+    ],
+    "next": "Keep checking in, especially after a breakup, when people often go quiet. Offer something concrete: a meal, a ride, help finding a counselor, or an evening with friends who aren't all paired off. If you're worried about someone's safety, ask how it's safe to reach them, since some partners read every message. If a breakup has left them hopeless, ask directly whether they're thinking about suicide, and call or text 988 together if they are. And if they marry someone you had doubts about, stay close."
+  },
+  "prayer": "Lord, you said it isn't good to be alone, and some nights I feel that more than I can say. \"Turn to me and be gracious, for I am lonely and afflicted\" (Psalm 25:16). I don't know whether this is the person I should marry, or whether you mean for me to marry at all, and I'm tired of guessing.\n\nGive me eyes that see past charm, and friends who will tell me the truth when I don't want to hear it. If I'm excusing something that should frighten me, don't let me look away. If I'm only afraid of a good and costly promise, give me courage. Keep me from using anyone, and from letting anyone use me.\n\nIf you give me a spouse, make me someone who keeps a vow when it costs. If you don't, let me live this life fully, and give me a family among your people. Don't let me make anyone my savior but you. You have said you will never leave me. Keep me close. Amen.",
   "kit": {
+    "guides": [
+      {
+        "href": "/studyguides/singleness",
+        "label": "Singleness: A Bible Study for the Unmarried"
+      },
+      {
+        "href": "/studyguides/marriage",
+        "label": "Marriage: A Bible Study on Covenant Love"
+      }
+    ],
     "read": [
       {
         "href": "/life/dating-and-discernment",
         "label": "How Do You Date Wisely and Choose a Spouse?",
+        "kind": "Life"
+      },
+      {
+        "href": "/how-tos/rel-how-to-know-if-you-should-marry-someone",
+        "label": "How to Know If You Should Marry Someone",
+        "kind": "How-to"
+      },
+      {
+        "href": "/how-tos/rel-how-to-date-with-wisdom",
+        "label": "How to Date With Wisdom",
+        "kind": "How-to"
+      },
+      {
+        "href": "/wisdom/dating",
+        "label": "Dating and Discernment",
+        "kind": "Wisdom"
+      },
+      {
+        "href": "/wisdom/dating-a-nonbeliever",
+        "label": "Dating a Nonbeliever",
+        "kind": "Wisdom"
+      },
+      {
+        "href": "/wisdom/toxic-relationships",
+        "label": "Toxic and Harmful Relationships",
+        "kind": "Wisdom"
+      },
+      {
+        "href": "/life/sex-and-the-body",
+        "label": "What Does Christianity Actually Teach About Sex?",
         "kind": "Life"
       },
       {
@@ -31,15 +174,129 @@
         "kind": "Life"
       },
       {
-        "href": "/studyguides/singleness",
-        "label": "Singleness: A Bible Study for the Unmarried",
-        "kind": "Study guide"
+        "href": "/how-tos/rel-how-to-thrive-as-a-single-christian",
+        "label": "How to Thrive as a Single Christian",
+        "kind": "How-to"
       },
       {
-        "href": "/wisdom/dating",
-        "label": "Dating and Discernment",
+        "href": "/how-tos/rel-how-to-be-content-when-you-long-to-be-married",
+        "label": "How to Be Content When You Long to Be Married",
+        "kind": "How-to"
+      },
+      {
+        "href": "/wisdom/breakup",
+        "label": "After a Breakup",
         "kind": "Wisdom"
       }
-    ]
+    ],
+    "tool": {
+      "href": "/downloads/workbooks/before-you-marry-letter.pdf",
+      "label": "Before You Marry: a premarital workbook to print, eight sessions for the two of you (PDF)"
+    }
+  },
+  "faq": [
+    {
+      "q": "How do I know if this person is the one?",
+      "a": "Christians answer this in two ways, and the creeds don't settle it. Some believe God has a particular person for you and leads you to them through prayer, Scripture, circumstances, and counsel; Abraham's servant prayed that the woman who offered to water his camels would be \"the one You have appointed for Your servant Isaac\" (Genesis 24:14). Their comfort is that God goes before you, as he went before the servant, and brings the person you marry into your life. Others believe God gives freedom within wisdom, pointing to Paul's word that a widow is \"free to marry anyone she wishes, as long as he belongs to the Lord\" (1 Corinthians 7:39). Their comfort is freedom: within what God has commanded, a wise and prayerful choice is a faithful one. Both agree on more than they disagree: pray, look for faith and character, listen to people who know you both, and once you've made your vows, the one you married is the one you're called to love."
+    },
+    {
+      "q": "Is it wrong to date someone who isn't a Christian?",
+      "a": "The plainest word in the New Testament on whom to marry is Paul's: free to marry anyone, \"as long as he belongs to the Lord\" (1 Corinthians 7:39). He was writing about widows, and many Christians since have applied it to every believer who marries. The familiar verse, \"Do not be unequally yoked with unbelievers\" (2 Corinthians 6:14), comes in a passage calling the Corinthians away from idolatry (2 Corinthians 6:16), and it's often applied to marriage as well. Faithful Christians differ on application, such as whether to date someone you couldn't marry, or how to weigh a partner who says they believe but shows little sign of it. Hoping love will convert someone puts a weight on love it can't carry. If you're the partner who doesn't believe, this is no verdict on your worth. And if you're already married to someone who doesn't share your faith, Paul says to stay if they're willing (1 Corinthians 7:12-13)."
+    },
+    {
+      "q": "Is it a sin to have sex before marriage?",
+      "a": "The church's historic teaching, drawn from Scripture, is that sex belongs within marriage, and I won't blur it: \"Marriage should be honored by all and the marriage bed kept undefiled\" (Hebrews 13:4). That isn't because the body is shameful. The Song of Songs celebrates desire without embarrassment and still warns, \"Do not arouse or awaken love until the time is right\" (Song of Songs 2:7), because something this strong belongs inside a promise strong enough to hold it. If you've already crossed that line, you aren't ruined or second-rate. \"If we confess our sins, He is faithful and just to forgive us our sins\" (1 John 1:9), and you can begin again today. If you live together, talk honestly with a pastor about faithfulness from here. And if someone pressured or forced you, the sin was theirs, not yours; RAINN's hotline can help."
+    },
+    {
+      "q": "How long should we date before getting engaged?",
+      "a": "Scripture doesn't give a number, and anyone who promises you one is guessing. You need enough time to see each other in more than one season: tired, disappointed, sick, around each other's families, and in at least one real disagreement you worked through. Rushing can outrun your judgment, and years of drifting can become a way of keeping the comfort of a relationship without the risk of a promise. Ask the people who know you both whether you're ready, and if you still can't say yes after a long while, it may be kinder to say no."
+    },
+    {
+      "q": "Is singleness a gift or a calling?",
+      "a": "Singleness is good, whatever else you conclude: Jesus never married, and Paul said it is good to remain unmarried (1 Corinthians 7:8). What Christians read differently is the word gift in 1 Corinthians 7:7. Some take it as a particular grace given to certain people, a settled ability to live unmarried for the kingdom, pointing to Jesus' words about those who can accept this, \"only those to whom it has been given\" (Matthew 19:11). Their comfort is that if you have that gift, you can receive it as a calling, not a consolation. Others read the gift as whatever state you're in now, received from God and lived for him, pointing to Paul's rule that each one should \"lead the life that the Lord has assigned to him\" (1 Corinthians 7:17). Their comfort is that you don't need to prove a special calling to know your single life matters. Both agree that wanting marriage is no sin, and that the church owes its single members a real family."
+    }
+  ],
+  "related": [
+    "marriage",
+    "loneliness",
+    "decisions"
+  ],
+  "slots": [
+    {
+      "section": "faq",
+      "note": "Where James lands, in his own words, on whether God has one particular person for each believer to find. The answer to How do I know if this person is the one? gives each view its strongest text (Genesis 24:14; 1 Corinthians 7:39) and its comfort, and deliberately does not land; the decisions page leaves the related question of God's specific plan open the same way."
+    },
+    {
+      "section": "faq",
+      "note": "Where James lands on the word gift in 1 Corinthians 7:7: a particular grace of celibacy given to some (Matthew 19:11), or the state each believer is in (1 Corinthians 7:17). The answer to Is singleness a gift or a calling? gives each reading its text and its comfort and does not land."
+    },
+    {
+      "section": "whyHard",
+      "note": "Only if James wants it: a few sentences, in his own words, on what being raised without a father meant for his picture of marriage, or on what he hopes his five sons will see before they choose a spouse. The page states only the bare facts, and the section stands without it."
+    },
+    {
+      "section": "helping",
+      "note": "Whether First Baptist Church of Fenton offers premarital counseling or pairs engaged couples with mentors, how James approaches premarital counseling as a pastor, and any counselors near Fenton he trusts enough to name. Only from James."
+    },
+    {
+      "section": "happening",
+      "note": "The page says nothing about James's own dating, engagement, or marriage. If he chooses, he could add something from his own life about deciding to marry; no story has been written for him."
+    }
+  ],
+  "sources": [
+    {
+      "claim": "The National Domestic Violence Hotline defines domestic violence (also called intimate partner violence, dating abuse, or relationship abuse) as a pattern of behaviors one partner uses to maintain power and control over another partner in an intimate relationship, so it serves people who are dating as well as the married.",
+      "cite": "National Domestic Violence Hotline, Understand Relationship Abuse. Confirmed from search excerpts only (direct fetches are blocked here); re-check at the source before release.",
+      "url": "https://www.thehotline.org/identify-abuse/understand-relationship-abuse/"
+    },
+    {
+      "claim": "Leaving is often the most dangerous time for someone in an abusive relationship, which is why a safety plan matters.",
+      "cite": "National Domestic Violence Hotline, Why People Stay in an Abusive Relationship (cited already on the marriage page).",
+      "url": "https://www.thehotline.org/support-others/why-people-stay-in-an-abusive-relationship/"
+    },
+    {
+      "claim": "If a partner may be monitoring your devices, look for help on a device they cannot see.",
+      "cite": "National Domestic Violence Hotline, Internet Safety for Survivors (cited already on the marriage page).",
+      "url": "https://www.thehotline.org/plan-for-safety/internet-safety/"
+    },
+    {
+      "claim": "Apologizing and acting nice again are not true indications of change in an abusive partner.",
+      "cite": "National Domestic Violence Hotline, Is Change Possible in an Abuser? (cited already on the anger page from search excerpts; re-check at the source before release).",
+      "url": "https://www.thehotline.org/resources/is-change-possible-in-an-abuser/"
+    },
+    {
+      "claim": "A protective order is a court order, and Hotline advocates can help identify local legal resources.",
+      "cite": "National Domestic Violence Hotline, Protective Orders and Legal Resources (cited already on the divorce page).",
+      "url": "https://www.thehotline.org/resources/protective-restraining-orders/"
+    },
+    {
+      "claim": "The National Domestic Violence Hotline does not recommend couples counseling with an abusive partner.",
+      "cite": "National Domestic Violence Hotline, Should I Go to Couples Therapy With My Abusive Partner? (cited already on the marriage page).",
+      "url": "https://www.thehotline.org/resources/should-i-go-to-couples-therapy-with-my-abusive-partner/"
+    },
+    {
+      "claim": "Hotline advocates also talk with friends and family who are worried about someone.",
+      "cite": "National Domestic Violence Hotline, Support Others (cited already on the divorce page).",
+      "url": "https://www.thehotline.org/support-others/"
+    },
+    {
+      "claim": "The Fourth Lateran Council (1215), in canon 51, forbade clandestine marriages and required that coming marriages be announced publicly in the churches by the priests, with a set time in which anyone could raise a lawful impediment, such as kinship too close to marry (canon 50 of the same council set the forbidden degrees of kinship). Reading the banns on successive Sundays became the custom for centuries afterward.",
+      "cite": "Fourth Lateran Council (1215), canons 50 and 51, in the English translation of the canons in the Internet Medieval Sourcebook, Fordham University. The reviewer knows the canon but could not open the link (fetches are blocked here); confirm the URL before release.",
+      "url": "https://sourcebooks.fordham.edu/basis/lateran4.asp"
+    },
+    {
+      "claim": "Asking someone directly whether they are thinking about suicide does not increase suicidal thoughts or behavior.",
+      "cite": "National Institute of Mental Health, 5 Action Steps to Help Someone Having Thoughts of Suicide (cited already on the diagnosis page).",
+      "url": "https://www.nimh.nih.gov/health/publications/5-action-steps-to-help-someone-having-thoughts-of-suicide"
+    },
+    {
+      "claim": "Many states include clergy among mandated reporters of child abuse and neglect, and the rules vary by state.",
+      "cite": "Child Welfare Information Gateway, Clergy as Mandatory Reporters of Child Abuse and Neglect (U.S. Department of Health and Human Services).",
+      "url": "https://www.childwelfare.gov/resources/clergy-mandatory-reporters-child-abuse-and-neglect/"
+    }
+  ],
+  "reviewed": {
+    "on": "2026-10-01",
+    "notes": "Second pass (editor), 2026-10-01; supersedes the writer's self-check. Validator clean (node scripts/validate-needs.mjs dating) and the CarePage render test passes. Scripture: every passage and inline quotation re-read in its setting with scripts/bsb.mjs --verses (Genesis 2:18-25 with Mark 3:31-35 and Ephesians 5:31-32; Proverbs 31:1-31; Ruth 3:1-18 and 4:1-11; 1 Corinthians 7:1-40; Genesis 24:12-14 and 24:50-51; Matthew 19:10-12; Isaiah 56:3-5; Malachi 2:13-16; Proverbs 13:12; James 1:5; Psalm 25:16; 2 Corinthians 6:14-16; Hebrews 13:4; Song of Songs 2:7; 1 John 1:9). 1 Corinthians 7:39 is the chapter's second-to-last verse, so the reading now says near the chapter's end, not that the chapter closes with it; Paul wrote it about widows, not to them. The Proverbs reading ends on the fear of the LORD instead of an appended application, and the Genesis reading folds Ephesians 5:31-32 into its one-flesh sentence and ends on its own question. Truth: Stephanie Coontz and Marriage, a History (2005) are no longer named, and the claim that what made modern marriage richer also made it easier to leave is cut; Why this is so hard now says only that the modern world handed the choice to the couple and made love the main reason to marry, and the Coontz source is removed. The Fourth Lateran Council (1215) stays: its canon 51 forbade clandestine marriages and required coming marriages to be announced in church so impediments could be raised, which the reviewer knows from the canon itself; the source now cites canons 50 and 51 in the Internet Medieval Sourcebook instead of Wikipedia, with a note that the link could not be opened here. The Hotline's definition of abuse (a pattern of power and control, naming dating abuse) is its long-standing wording and stays, with the cite's re-check note. Softened as far as the evidence allows: For most of history (now For centuries); the apostle who carried it across the Roman world (now planted many of its first churches); Christians have long applied 1 Corinthians 7:39 to every believer (now many Christians since have, in the reading and the yoked answer); churches often provide premarital counseling at little or no cost (now many churches offer it, and some charge little or nothing); Most dating questions (now Many). Contested: the one, and the gift of singleness, each give both views a text and a comfort in words their defenders would sign, with no landing; the gift's second reading now has its best text (1 Corinthians 7:17), and the comforts in the one answer are restated so neither implies the other view lacks them (God goes before you, as he went before the servant; freedom within what God has commanded). Why this is so hard now says the belief in the one, held well, is meant to comfort, and faults only the anxious way it was taught. Gender roles appear only as a question for premarital counseling. Sex: the historic teaching stated plainly, without shame, with 1 John 1:9, and coercion named as the other person's sin. Care: the answer now names the red flags plainly (scares you, checks your phone, cuts you off from friends, pressures you sexually, threatens you), calls them warning signs of abuse, and says no amount of loving them harder will fix it, with the Hotline in the help lines at the foot of the page; What's going on and the second step now tell a teenager to tell a parent or another adult they trust. crisisTopics abuse and substance stay (a partner's drinking or drug use is a named sign; 988 shows in the foot block regardless). Singleness: the summary no longer files singles under waiting, and the prayer's If you don't, fill my life anyway, which treated singleness as an emptiness to fill, now asks to live this life fully; marriage is never a reward. Voice: a second Not X. Y. removed from What's going on and the Scripture intro; repeated lines cut (Paul called staying unmarried good, twice; the fear of one wrong move; the spouse who makes your life whole; the helper's example questions, which live in the say list). Length 4,362 words (writer 4,393): the cuts were partly spent on the red flags, the teenager lines, 1 Corinthians 7:17, and the fairness clause; most of what overlaps now is deliberate safety repetition. Kit: every target opened and every label is the real title. The breakup how-to is replaced by the wisdom page After a Breakup, because the how-to tells readers You contributed to how it ended; almost everyone does, with no word for someone leaving a controlling partner. Kept, with nothing repeated on this page: How to Know If You Should Marry Someone (says without support that marriages everyone doubted rarely turn out well, and cites Ecclesiastes 4:9-12 for the vow); Toxic and Harmful Relationships (writes the Hotline number into its own text, correct today but outside crisis-resources.json); How Do You Date Wisely and Choose a Spouse? (characterizes Tashiro, Ansari and Klinenberg, Stanley and Rhoades, Fisher, and Gottman without sources); What Does Christianity Actually Teach About Sex? (leans on Gary Wilson and Mark Regnerus, both contested); How to Thrive as a Single Christian (says Hannah was not rebuked, but Eli rebuked her, 1 Samuel 1:14). The premarital workbook is not linked. Read as the midnight reader on a phone, a teenager reading alone, the skeptic, a pastor, and a licensed counselor."
   }
 }

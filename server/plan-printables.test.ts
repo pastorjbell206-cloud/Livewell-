@@ -10,7 +10,7 @@ import path from "node:path";
 // @ts-expect-error: a plain .mjs build module without types
 import { planBookletPdf } from "../scripts/lib/help-printables.mjs";
 // @ts-expect-error: a plain .mjs build module without types
-import { chaptersFor, splitDays, labelFor, planDays, readingPlanPdf } from "../scripts/lib/reading-plans.mjs";
+import { chaptersFor, sectionsFor, splitDays, labelFor, planDays, readingPlanPdf } from "../scripts/lib/reading-plans.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const crisis = JSON.parse(fs.readFileSync(path.join(ROOT, "client/src/data/crisis-resources.json"), "utf8"));
@@ -21,7 +21,7 @@ const PLANS = path.join(ROOT, "client/public/plans");
 const carePlans = fs.readdirSync(PLANS)
   .filter((f) => f.endsWith(".json") && !f.includes("index"))
   .map((f) => JSON.parse(fs.readFileSync(path.join(PLANS, f), "utf8")));
-const readingPlans: { id: string; title: string; days: number; scope: string | string[] }[] =
+const readingPlans: { id: string; title: string; days: number; scope: string | string[]; unit?: string; through?: number; finale?: { label: string } }[] =
   JSON.parse(fs.readFileSync(path.join(ROOT, "client/src/data/bible-reading-plans.json"), "utf8")).plans;
 
 describe("plan booklets", () => {
@@ -44,14 +44,23 @@ describe("Bible reading plans", () => {
     expect(labelFor([ch("Genesis", "genesis", 50, 50), ch("Exodus", "exodus", 40, 1)])).toBe("Genesis 50 to Exodus 1");
   });
 
+  it("labels a run of scenes by chapter and verse", () => {
+    const sc = (c: number, from: number, to: number) => ({ book: "Mark", slug: "mark", chapters: 16, c, from, to, verses: to - from + 1 });
+    expect(labelFor([sc(1, 1, 8), sc(1, 9, 15)])).toBe("Mark 1:1-15");
+    expect(labelFor([sc(1, 40, 45), sc(2, 1, 12)])).toBe("Mark 1:40-2:12");
+  });
+
   for (const plan of readingPlans) {
-    it(`${plan.id}: every chapter once, in order, over ${plan.days} days`, async () => {
-      const chapters = chaptersFor(ROOT, plan.scope);
-      const groups: { slug: string; c: number }[][] = splitDays(chapters, plan.days);
+    it(`${plan.id}: every ${plan.unit === "scene" ? "scene" : "chapter"} once, in order, over ${plan.days} days`, async () => {
+      type Unit = { slug: string; c: number; from?: number };
+      const units: Unit[] = plan.unit === "scene" ? sectionsFor(ROOT, plan.scope, plan.through) : chaptersFor(ROOT, plan.scope, plan.through);
+      const groups: Unit[][] = splitDays(units, plan.days);
+      const key = (x: Unit) => `${x.slug} ${x.c} ${x.from ?? ""}`;
       expect(groups).toHaveLength(plan.days);
       expect(groups.every((g) => g.length > 0)).toBe(true);
-      expect(groups.flat().map((x) => `${x.slug} ${x.c}`)).toEqual(chapters.map((x: { slug: string; c: number }) => `${x.slug} ${x.c}`));
+      expect(groups.flat().map(key)).toEqual(units.map(key));
       const days = planDays(ROOT, plan);
+      expect(days).toHaveLength(plan.days + (plan.finale ? 1 : 0));
       const pdf: Buffer = await readingPlanPdf(plan, days, "A4");
       expect(tagged(pdf)).toBe(true);
     });

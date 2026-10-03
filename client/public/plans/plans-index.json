@@ -1,9 +1,29 @@
 {
   "plans": [
     {
+      "slug": "church-hurt",
+      "title": "Eight Weeks After the Church Hurt You",
+      "blurb": "An eight week plan from James Bell for anyone hurt by a church or by people who spoke for God. Safety first, the Psalms' words for betrayal, and no hurry back through any church door."
+    },
+    {
+      "slug": "parenting",
+      "title": "Eight Weeks for the Worn-Out Parent",
+      "blurb": "An eight-week plan from James Bell for the worn-out parent of children at home. Rest and help, the temper and the apology, the table and the bedside, the screens, and children you cannot control."
+    },
+    {
+      "slug": "doubt",
+      "title": "Eight Weeks for When You're Not Sure Anymore",
+      "blurb": "An eight week plan from James Bell for the believer whose questions have grown heavy. Doubt named without shame, the doubters Scripture kept, the old creed, and practices that hold you while a question stays open."
+    },
+    {
       "slug": "suffering",
       "title": "Eight Weeks of Asking God Why",
       "blurb": "An eight week plan from James Bell for anyone asking why God would let this happen. Job, the laments, and the cross, walked slowly, with no tidy answers and no hurry."
+    },
+    {
+      "slug": "purpose",
+      "title": "Eight Weeks of Asking What Your Life Is For",
+      "blurb": "An eight week plan from James Bell for anyone asking what their life is for. Ecclesiastes as a companion, an identity received, the people who need you, ordinary work, rest, and small faithfulness."
     },
     {
       "slug": "new-believer",
@@ -19,6 +39,16 @@
       "slug": "prayer",
       "title": "Eight Weeks of Learning to Pray",
       "blurb": "An eight week plan from James Bell for the beginner, the curious skeptic, and the believer whose prayer has gone quiet. Five minutes a day, borrowed words, honest complaint, and a rule you can keep."
+    },
+    {
+      "slug": "work-burnout",
+      "title": "Eight Weeks of Learning to Stop",
+      "blurb": "An eight week plan from James Bell for when work has taken more than it should. Sleep, a workday that ends, worth you don't have to earn, a day of rest, an honest look at the job, and a rhythm you can keep."
+    },
+    {
+      "slug": "caregiving",
+      "title": "Eight Weeks of Not Carrying It Alone",
+      "blurb": "An eight week plan from James Bell for the one caring for an aging parent or a sick spouse. Honest about the guilt and the grief, practical about help and rest, and clear that no one can carry this alone."
     },
     {
       "slug": "skeptic",
@@ -41,6 +71,26 @@
       "blurb": "An eight week companion for grief from James Bell. Permission to mourn, lament as language, and a way to live forward without leaving them behind."
     },
     {
+      "slug": "addiction",
+      "title": "Eight Weeks on the Long Road Back",
+      "blurb": "An eight week plan from James Bell for the one who can't stop drinking or using. Stopping safely with a doctor, one person who knows, the hardest hour, shame brought into the light, and a life to live toward."
+    },
+    {
+      "slug": "pornography",
+      "title": "Eight Weeks Out of Hiding",
+      "blurb": "An eight week plan from James Bell for the one who can't stop looking at porn. Telling one person, your hardest hour, honest accountability, the body as a gift, and grace for the day you fall."
+    },
+    {
+      "slug": "decisions",
+      "title": "Eight Weeks Toward a Decision You Can Live With",
+      "blurb": "An eight week plan from James Bell for the decision you can't seem to make and the fear of missing God's will. What God has already made plain, wisdom for the asking, honest counsel, and a date to decide by."
+    },
+    {
+      "slug": "divorce",
+      "title": "Eight Weeks Toward a Life After Divorce",
+      "blurb": "An eight-week plan from James Bell for the one whose marriage has ended or is ending. Safety first, then grief, shame, the children, anger and forgiveness, and a future the ending does not name."
+    },
+    {
       "slug": "anxiety",
       "title": "Eight Weeks Toward a Quieter Mind",
       "blurb": "An eight week guided plan for the anxious mind from James Bell. Small daily practices, honest readings, and prayer for the nights when fear will not lift."
@@ -51,9 +101,19 @@
       "blurb": "An eight-week plan from James Bell for anyone who feels alone, whether single, widowed, new in town, married and still lonely, or unknown in a crowded church. Small daily steps toward God and people."
     },
     {
+      "slug": "fatherless",
+      "title": "Eight Weeks Toward Being the Dad You Never Had",
+      "blurb": "An eight week plan from James Bell for anyone raised without a father, or by one who hurt them. Grief, God as Father, older men to watch, going back when you fail, and a blessing to pass on."
+    },
+    {
       "slug": "marriage",
       "title": "Eight Weeks Toward Each Other",
       "blurb": "An eight week guided plan for marriage from James Bell. One focus, one small daily practice, one reading, one tool, and one honest question each week."
+    },
+    {
+      "slug": "money",
+      "title": "Eight Weeks Toward Enough",
+      "blurb": "An eight week plan from James Bell for when money is a weight on you. Facing the numbers without shame, worry and daily bread, debt, a budget, an honest talk at home, and a life money doesn't rule."
     },
     {
       "slug": "whole-life",

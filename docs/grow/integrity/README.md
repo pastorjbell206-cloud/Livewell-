@@ -9,6 +9,7 @@ for content is never to fabricate, so two sweeps generalized or cut them:
 |---|---|---|
 | `ledger-study-guides.md` | the 62 study guides | 1,163 (829 generalized, 334 cut) |
 | `ledger-life-howtos-wisdom.md` | Everyday Life pages, how-to guides, wisdom topics | 195 |
+| `library-flags.md` | essays, theology pages, tools, and hubs the care-page writers opened | corrections made, and first-person lines left for James |
 
 Each row gives the file, the field, the original sentence word for word, what
 was done, and the new text, so any line that is James's own true story can be

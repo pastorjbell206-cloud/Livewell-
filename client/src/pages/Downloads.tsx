@@ -37,6 +37,18 @@ const SHELVES: Record<string, { label: string; blurb: string }> = {
     label: "Eight-week plans, as booklets",
     blurb: "Every care plan printed as a booklet, one week to a page with room to write, in US Letter and A4.",
   },
+  Worksheet: {
+    label: "Worksheets to print",
+    blurb: "Blank pages for the work that happens on paper: a worry log, a weekly prayer list, a month of prayer journal pages, a rule of life, a budget, a grief journal page, a conversation guide for couples, and a referral list for church leaders.",
+  },
+  Workbook: {
+    label: "Workbooks",
+    blurb: "Longer printables for a couple or a small group to work through over several sessions, with Scripture printed in full and room for each person to write.",
+  },
+  "Card set": {
+    label: "Cards to cut and keep",
+    blurb: "Scripture to carry, one verse for each hard place, and cards for the family table, each passage in full from the Berean Standard Bible.",
+  },
   "Reading plan": {
     label: "Bible reading plans",
     blurb: "From a month in the Psalms to the whole Bible in a year, each day balanced by length, to print and keep in your Bible.",
@@ -191,7 +203,7 @@ export default function Downloads() {
                       ))}
                       {r.kind !== "Booklet" && (
                         <Link href={r.href} style={{ fontFamily: "var(--U)", fontSize: "12.5px", color: "var(--ink-muted)", textDecoration: "none" }}>
-                          Read online
+                          {r.kind === "Worksheet" || r.kind === "Workbook" || r.kind === "Card set" ? "The page it goes with" : "Read online"}
                         </Link>
                       )}
                     </div>

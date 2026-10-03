@@ -84,6 +84,8 @@ for (const rel of FILES) {
     let prose = text.replace(/[“"]([^”"]+)[”"]/g, (m, q) => (bible.includes(normalize(q)) && normalize(q).split(" ").length >= 3 ? " " : m));
     for (const re of ALLOWED) prose = prose.replace(re, " ");
     for (const m of prose.matchAll(forbiddenRe)) hits.push({ rel, path, word: m[1], at: prose.slice(Math.max(0, m.index - 40), m.index + 50).replace(/\s+/g, " ") });
+    // A style note left in reader-facing text ("Not X. Y." is the name of a move, not a sentence).
+    if (!/reviewed\.notes$/.test(path)) for (const m of text.matchAll(/\bNot X\. Y\./g)) hits.push({ rel, path, word: "Not X. Y.", at: text.slice(Math.max(0, m.index - 40), m.index + 50).replace(/\s+/g, " ") });
   }
 }
 

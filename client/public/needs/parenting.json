@@ -76,7 +76,7 @@
     "steps": [
       {
         "title": "Step away before you blow up",
-        "body": "When you feel your temper rising, stop before you speak, make sure the children are safe, and step into another room until you can talk quietly. With a crying baby, lay the baby on their back in the crib, walk away to calm down, and check on them every five to ten minutes; never shake a baby. If you're ever afraid you'll hurt your child, call someone now: a friend, your doctor, or 988, where you don't have to be suicidal to call."
+        "body": "When you feel your temper rising, stop before you speak, make sure the children are safe, and step into another room until you can talk quietly; never shake a baby. With a crying baby, lay the baby on their back in the crib, walk away to calm down, and check on them every five to ten minutes. If you're ever afraid you'll hurt your child, call someone now: a friend, your doctor, or 988, where you don't have to be suicidal to call."
       },
       {
         "title": "Repair one thing",
@@ -148,6 +148,11 @@
     ],
     "read": [
       {
+        "href": "/tools/parent-teen-conversation",
+        "label": "The Parent and Teen Conversation: answer apart, then talk where you see home differently",
+        "kind": "Tool"
+      },
+      {
         "href": "/how-tos/parenting-how-to-apologize-to-your-kids",
         "label": "How to Apologize to Your Kids",
         "kind": "How-to"
@@ -193,11 +198,6 @@
         "kind": "Wisdom"
       },
       {
-        "href": "/tools/family-devotions",
-        "label": "Family Devotion Builder",
-        "kind": "Tool"
-      },
-      {
         "href": "/pathways/parenting",
         "label": "Raising Kids Who Keep the Faith",
         "kind": "Pathway"
@@ -207,7 +207,11 @@
         "label": "Parenting Help: essays and answers for parents",
         "kind": "Page"
       }
-    ]
+    ],
+    "plan": {
+      "href": "/plans/parenting",
+      "label": "Eight Weeks for the Worn-Out Parent"
+    }
   },
   "faq": [
     {

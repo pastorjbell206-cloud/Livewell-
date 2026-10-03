@@ -63,6 +63,9 @@ export const KIND_ORDER = [
   "Care page",
   "Care plan",
   "Reading plan",
+  "Worksheet",
+  "Workbook",
+  "Card set",
   "Group guide",
   "Argument",
   "Family",
@@ -365,6 +368,46 @@ export const LIBRARIES = {
         files: [file("Printable booklet (Letter)", `/downloads/plans/${p.slug}-booklet-letter.pdf`), file("Printable booklet (A4)", `/downloads/plans/${p.slug}-booklet-a4.pdf`)],
       })
     ),
+  // Blank worksheets to print, built by scripts/lib/help-printables.mjs inside `pnpm pdfs`.
+  worksheets: () =>
+    [
+      ["worry-log", "The Worry Journal, on paper", "A week of evenings: the worry, the one thing that is yours to do tomorrow, what is not yours to carry, and a sentence of prayer, with a page for looking back.", "/tools/worry-journal"],
+      ["prayer-list", "A weekly prayer list", "Your people and needs by day of the week, with a page for prayers answered, the date, and how the answer came.", "/tools/prayer-planner"],
+      ["budget", "A monthly budget", "A month planned before it begins, starting with what you will give and save, then the rest. Not financial advice.", "/help/money"],
+      ["grief-journal", "A grief journal page", "Prompts for the days after a death: what you miss, a memory to keep, what you wish you could say, and a prayer, even an angry one.", "/help/grief"],
+      ["conflict-guide", "A conversation guide for couples", "Six steps for the argument you keep having, for couples who are safe with each other, with safety first.", "/help/marriage"],
+      ["referral-list", "A referral list for church leaders", "The national help lines, then room to list the counselors and services near you before anyone needs them.", "/help/refer-to-counselor"],
+      ["prayer-journal", "A prayer journal: a month of mornings", "Thirty mornings shaped by the prayer Jesus taught: who God is, what you confess, what you are thankful for, and what you ask for others and for yourself.", "/help/prayer"],
+      ["rule-of-life", "A rule of life on one page", "The shape of an ordinary week: prayer, Scripture, worship, rest, people, work, the body, and who will ask how it is going.", "/tools/rule-of-life"],
+    ].map(([id, title, summary, href]) =>
+      item({
+        kind: "Worksheet", title, summary: clip(summary), href,
+        files: [file("Letter", `/downloads/tools/${id}-letter.pdf`), file("A4", `/downloads/tools/${id}-a4.pdf`)],
+      })
+    ),
+  // Cards to cut and keep, built by scripts/lib/help-printables.mjs inside `pnpm pdfs`.
+  cardSets: () =>
+    [
+      ["memory-cards", "Scripture to carry", "One verse for each hard place on Find Help, in full from the Berean Standard Bible, four cards to a page, each naming the care page where it is read in context.", "/help"],
+      ["family-cards", "Family table cards", "A card for each weekly family devotion: the passage in full, the big idea, questions to talk about, and a prayer.", "/family/devotions"],
+    ].map(([id, title, summary, href]) =>
+      item({
+        kind: "Card set", title, summary: clip(summary), href,
+        files: [file("Letter", `/downloads/tools/${id}-letter.pdf`), file("A4", `/downloads/tools/${id}-a4.pdf`)],
+      })
+    ),
+  // Workbooks for a couple or a group, built by scripts/lib/workbooks.mjs inside `pnpm pdfs`.
+  workbooks: () => {
+    const dir = path.join(PUB, "workbooks");
+    if (!fs.existsSync(dir)) return [];
+    return fs.readdirSync(dir).filter((f) => f.endsWith(".json")).sort().map((f) => {
+      const wb = JSON.parse(fs.readFileSync(path.join(dir, f), "utf8"));
+      return item({
+        kind: "Workbook", title: wb.title, summary: clip(wb.subtitle), href: wb.href, period: `${wb.sessions.length} sessions`,
+        files: [file("Workbook (Letter)", `/downloads/workbooks/${wb.id}-letter.pdf`), file("Workbook (A4)", `/downloads/workbooks/${wb.id}-a4.pdf`)],
+      });
+    });
+  },
   // Printable Bible reading plans, built by scripts/lib/reading-plans.mjs inside `pnpm pdfs`.
   readingPlans: () =>
     JSON.parse(fs.readFileSync(path.join(ROOT, "client/src/data/bible-reading-plans.json"), "utf8")).plans.map((p) =>

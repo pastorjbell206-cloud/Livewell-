@@ -37,6 +37,16 @@ describe("CrisisBlock", () => {
     expect(crisisLines(["abuse"]).map((r) => r.id)).toContain("dv-hotline");
   });
 
+  it("the compact block adds a topic's lines from the verified data, and only then", () => {
+    const plain = render(<TestProviders><CrisisBlock variant="compact" /></TestProviders>);
+    expect(hrefs(plain.container)).not.toContain("tel:18006624357");
+    plain.unmount();
+    const { container } = render(<TestProviders><CrisisBlock variant="compact" topics={["suicide", "substance"]} /></TestProviders>);
+    const samhsa = crisis.resources.find((r) => r.id === "samhsa")!;
+    for (const a of samhsa.actions) expect(hrefs(container)).toContain(a.href);
+    expect(hrefs(container)).toEqual(expect.arrayContaining(["tel:988", "tel:911"]));
+  });
+
   it("prints the date the numbers were checked", () => {
     render(<TestProviders><CrisisBlock /></TestProviders>);
     expect(screen.getByText(new RegExp(`Numbers checked ${checkedLabel()}`))).toBeInTheDocument();

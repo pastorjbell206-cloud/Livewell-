@@ -6,9 +6,13 @@
  * are computed here from the Bible data (client/public/bible/), never typed by
  * hand: the chapters in scope, in canonical order, are cut into contiguous
  * days whose verse counts come as close as whole chapters allow to an equal
- * share, so each day asks about the same time of the reader. Each plan prints
- * in US Letter and A4 to client/public/downloads/reading-plans/<id>-<size>.pdf:
- * a checklist, with a line to write on for the plans of a month or less.
+ * share, so each day asks about the same time of the reader. A plan with
+ * `unit: "scene"` cuts at the scenes in the Study Bible notes' outlines
+ * instead, so each day ends where a story ends (the Lent plan through Mark);
+ * `through` stops at a chapter, and `finale` adds a closing reading outside
+ * the count (Easter morning). Each plan prints in US Letter and A4 to
+ * client/public/downloads/reading-plans/<id>-<size>.pdf: a checklist, with a
+ * line to write on for the plans of forty-five days or fewer.
  */
 import fs from "node:fs";
 import path from "node:path";
@@ -22,16 +26,40 @@ const FIXED_DATE = new Date("2026-01-01T00:00:00Z");
 const SITE = "livewellbyjamesbell.co";
 const SIZES = { letter: "LETTER", a4: "A4" };
 
-/** Every chapter in scope, in canonical order, with its verse count. */
-export function chaptersFor(root, scope) {
+/** Every chapter in scope, in canonical order, with its verse count. `through` stops at that chapter. */
+export function chaptersFor(root, scope, through = Infinity) {
   const books = JSON.parse(fs.readFileSync(path.join(root, "client/public/bible/books.json"), "utf8"));
   const inScope = books.filter((b) => (scope === "ALL" ? true : scope === "NT" || scope === "OT" ? b.testament === scope : scope.includes(b.slug)));
   const out = [];
   for (const b of inScope) {
-    for (let c = 1; c <= b.chapters; c++) {
+    for (let c = 1; c <= Math.min(b.chapters, through); c++) {
       const ch = JSON.parse(fs.readFileSync(path.join(root, "client/public/bible/ch", b.slug, `${c}.json`), "utf8"));
       out.push({ book: b.name, slug: b.slug, chapters: b.chapters, c, verses: ch.verses.length });
     }
+  }
+  return out;
+}
+
+/**
+ * The scenes of each chapter in scope, from the Study Bible notes' outlines
+ * (client/public/bible/notes/<book>/<chapter>.json), so a day can end where
+ * a story ends. A chapter without an outline counts as one scene.
+ */
+export function sectionsFor(root, scope, through = Infinity) {
+  const out = [];
+  for (const ch of chaptersFor(root, scope, through)) {
+    let outline = [];
+    try {
+      outline = JSON.parse(fs.readFileSync(path.join(root, "client/public/bible/notes", ch.slug, `${ch.c}.json`), "utf8")).outline || [];
+    } catch { /* no notes for this chapter */ }
+    const parts = outline.map((o) => {
+      const [a, b] = String(o.v).split("-").map(Number);
+      return { from: a, to: Number.isFinite(b) ? b : a, title: o.t };
+    });
+    const covers = parts.length && parts[0].from === 1 && parts[parts.length - 1].to === ch.verses &&
+      parts.every((x, i) => i === 0 || x.from === parts[i - 1].to + 1);
+    if (!covers) { out.push({ ...ch, from: 1, to: ch.verses, title: "" }); continue; }
+    for (const x of parts) out.push({ ...ch, from: x.from, to: x.to, title: x.title, verses: x.to - x.from + 1 });
   }
   return out;
 }
@@ -95,8 +123,18 @@ export function splitDays(chapters, days) {
   return groups;
 }
 
+/** "Mark 1:1-20", "Mark 1:40-2:12": the label for a run of scenes. */
+function sceneLabel(group) {
+  const first = group[0];
+  const last = group[group.length - 1];
+  if (first.slug !== last.slug) return `${first.book} ${first.c}:${first.from} to ${last.book} ${last.c}:${last.to}`;
+  if (first.c === last.c) return `${first.book} ${first.c}:${first.from}-${last.to}`;
+  return `${first.book} ${first.c}:${first.from}-${last.c}:${last.to}`;
+}
+
 /** "Genesis 1-3", "Obadiah", "Genesis 50 to Exodus 2", "Psalm 23". */
 export function labelFor(group) {
+  if (group[0].from !== undefined) return sceneLabel(group);
   const name = (x) => (x.slug === "psalms" ? "Psalm" : x.book);
   const one = (x) => (x.chapters === 1 ? x.book : `${name(x)} ${x.c}`);
   const first = group[0];
@@ -110,7 +148,15 @@ export function labelFor(group) {
 }
 
 export function planDays(root, plan) {
-  return splitDays(chaptersFor(root, plan.scope), plan.days).map((g, i) => ({ day: i + 1, reading: labelFor(g) }));
+  const units = plan.unit === "scene" ? sectionsFor(root, plan.scope, plan.through) : chaptersFor(root, plan.scope, plan.through);
+  const days = splitDays(units, plan.days).map((g, i) => ({
+    day: i + 1,
+    reading: labelFor(g),
+    ...(plan.unit === "scene" ? { note: g.map((x) => x.title).filter(Boolean).join("; ") } : {}),
+  }));
+  // A closing reading outside the count (Easter morning, after Lent's forty days).
+  if (plan.finale) days.push({ day: plan.finale.label, reading: plan.finale.reading, note: plan.finale.note || "" });
+  return days;
 }
 
 function newDoc(size, title) {
@@ -173,18 +219,22 @@ export async function readingPlanPdf(plan, days, size) {
   const list = doc.struct("L");
   root.add(list);
 
-  if (days.length <= 31) {
-    // One row per day, with a line to write on.
+  if (days.length <= 45) {
+    // One row per day, with a line to write on; a plan read by scenes names them.
+    const label = (d) => (typeof d.day === "number" ? `Day ${d.day}` : d.day);
+    const labelW = days.some((d) => typeof d.day !== "number") ? 82 : 50;
     for (const d of days) {
-      if (doc.y + 34 > bottom()) { doc.addPage(); doc.y = doc.page.margins.top; }
+      const rowH = d.note ? 41 : 34;
+      if (doc.y + rowH > bottom()) { doc.addPage(); doc.y = doc.page.margins.top; }
       const y = doc.y;
       box(left, y);
       list.add(doc.struct("LI", () => {
-        doc.font("Times-Bold").fontSize(10.5).fillColor(INK).text(`Day ${d.day}`, left + 14, y, { width: 50, lineBreak: false });
-        doc.font("Times-Roman").fontSize(10.5).fillColor(INK).text(d.reading, left + 66, y, { width: width - 66, lineBreak: false });
+        doc.font("Times-Bold").fontSize(10.5).fillColor(INK).text(label(d), left + 14, y, { width: labelW, lineBreak: false });
+        doc.font("Times-Roman").fontSize(10.5).fillColor(INK).text(d.reading, left + 16 + labelW, y, { width: width - 16 - labelW, lineBreak: false });
+        if (d.note) doc.font("Times-Italic").fontSize(8.5).fillColor(MUTED).text(d.note, left + 16 + labelW, y + 13, { width: width - 16 - labelW, lineBreak: false, ellipsis: true });
       }));
-      artifact(doc, () => { doc.save().lineWidth(0.5).strokeColor(RULE).moveTo(left + 66, y + 28).lineTo(left + width, y + 28).stroke().restore(); });
-      doc.y = y + 34;
+      artifact(doc, () => { doc.save().lineWidth(0.5).strokeColor(RULE).moveTo(left + 16 + labelW, y + rowH - 6).lineTo(left + width, y + rowH - 6).stroke().restore(); });
+      doc.y = y + rowH;
     }
   } else {
     // A checklist in columns: three on Letter and A4.

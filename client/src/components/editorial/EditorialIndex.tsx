@@ -94,7 +94,8 @@ export function EditorialIndex({
           <li key={`${it.href}|${it.title}`}>
             {it.external ? (
               <a className={rowCls} href={it.href} target="_blank" rel="noopener noreferrer">{body}</a>
-            ) : it.href.startsWith("#") ? (
+            ) : it.href.startsWith("#") || /\.(pdf|epub|docx?)($|[?#])/i.test(it.href) ? (
+              // In-page anchors and files (a printable PDF) are plain links, not app routes.
               <a className={rowCls} href={it.href}>{body}</a>
             ) : (
               <Link className={rowCls} href={it.href}>{body}</Link>

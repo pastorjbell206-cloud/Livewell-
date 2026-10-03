@@ -270,7 +270,9 @@ export default function Help() {
           <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "64ch", marginTop: "var(--s-5)" }}>
             Want something longer? <Link href="/plans" style={{ color: "var(--mustard-text)", fontWeight: 600 }}>The eight-week care plans</Link>,{" "}
             <Link href="/assessments" style={{ color: "var(--mustard-text)", fontWeight: 600 }}>the honest self-checks</Link>, and{" "}
-            <Link href="/tools" style={{ color: "var(--mustard-text)", fontWeight: 600 }}>the tools</Link> all start from here too. This site supports the work of doctors, counselors, and pastors. It does not replace them.
+            <Link href="/tools" style={{ color: "var(--mustard-text)", fontWeight: 600 }}>the tools</Link> all start from here too, and{" "}
+            <Link href="/downloads" style={{ color: "var(--mustard-text)", fontWeight: 600 }}>every printable</Link> is free, including{" "}
+            <a href="/downloads/tools/memory-cards-letter.pdf" style={{ color: "var(--mustard-text)", fontWeight: 600 }}>Scripture to carry</a>, a card with one verse for each of these places. This site supports the work of doctors, counselors, and pastors. It does not replace them.
           </p>
         </div>
       </section>

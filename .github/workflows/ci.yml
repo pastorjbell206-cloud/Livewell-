@@ -45,6 +45,8 @@ jobs:
           node scripts/validate-needs.mjs --drafts
           node scripts/validate-grow-links.mjs
           node scripts/validate-plans.mjs
+          node scripts/validate-workbooks.mjs
+          node scripts/validate-family.mjs
           node scripts/validate-grow-voice.mjs
           node scripts/validate-verse-guides.mjs
           pnpm exec tsx scripts/validate-catalogue.mjs

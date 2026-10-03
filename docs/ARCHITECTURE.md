@@ -236,6 +236,30 @@ links, care rules). Crisis numbers live in one verified file,
 Printables for every care page are built by `scripts/lib/help-printables.mjs`
 inside `pnpm pdfs`. The brief for the whole section is `docs/grow/GROW-PROMPT.md`.
 
+Around the care pages: eight-week plans in `client/public/plans/` (validated
+by `validate-plans`, each printed as a booklet); printable Bible reading plans
+named in `client/src/data/bible-reading-plans.json` and computed from the Bible
+data by `scripts/lib/reading-plans.mjs` (days balanced by verse count, or cut at
+the Study Bible outline's scenes); the self-checks under `pages/tools/` (each
+with `SafetyCheck`, `SelfCheckHistory`, and couple mode on the marriage check
+via `components/CoupleCompare.tsx`); and the companion tools (the Worry
+Journal, the Prayer Planner, the Parent and Teen Conversation), all keeping
+their data in the browser through `lib/storage.ts`. Crisis-level pages wait in
+`docs/grow/drafts/` until James approves them (`validate-needs --drafts`).
+Beyond the care pages, the printables shelf (`/downloads`) carries worksheets
+(a worry log, a prayer list, a month of prayer journal pages, a rule of life,
+a budget, a grief journal page, a couples' conversation guide, a referral list
+for church leaders), card sets (Scripture to carry, one verse per care page from
+`MEMORY_VERSES`; family table cards from the weekly devotions), and workbooks
+for couples (`client/public/workbooks/*.json`, rendered by
+`scripts/lib/workbooks.mjs`, gated by `validate-workbooks`). Printed Scripture
+goes through `readingText()` in `scripts/lib/bsb.mjs` (no psalm headings, no
+stray quotation marks). The family devotions and catechism quote the BSB word
+for word (`validate-family`).
+`scripts/lib/built-files.mjs` names every download the deploy builds, so the
+link checkers accept links to PDFs that are not committed. What the integrity
+sweeps removed from the Grow libraries is recorded in `docs/grow/integrity/`.
+
 **Design system** — tokens are CSS variables in `index.css`; components
 reference them inline, so brand changes flow from `:root`. Cormorant Garamond +
 Inter; cream/black with mustard as <8% punctuation. Contract in `CLAUDE.md`.

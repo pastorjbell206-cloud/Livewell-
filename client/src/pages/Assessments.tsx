@@ -84,6 +84,12 @@ const GROUPS: Group[] = [
         gives: "A structured look at the gap, without shame.",
         href: "/tools/life-audit",
       },
+      {
+        title: "The Spiritual Gifts Self-Check",
+        takeIf: "you are not sure where you fit in your church, or whether you have anything to give it.",
+        gives: "Where your service already shows across eight gifts Scripture names, none ranked above another.",
+        href: "/tools/spiritual-gifts",
+      },
     ],
   },
   {

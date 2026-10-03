@@ -5,15 +5,35 @@
       "id": "psalms-in-30-days",
       "title": "The Psalms in Thirty Days",
       "days": 30,
-      "scope": ["psalms"],
+      "scope": [
+        "psalms"
+      ],
       "blurb": "All one hundred fifty psalms in a month, a few each day. The Bible's own prayer book, read the way it asks to be read: slowly, out loud when you can, and honestly, since the psalms hold back nothing a person can feel."
     },
     {
       "id": "matthew-in-a-month",
       "title": "A Gospel in a Month: Matthew",
       "days": 28,
-      "scope": ["matthew"],
+      "scope": [
+        "matthew"
+      ],
       "blurb": "One chapter a day for four weeks. The birth, the teaching, the miracles, the cross, and the empty tomb, as Matthew tells them, with room to write what you notice about Jesus before you decide what to think of him."
+    },
+    {
+      "id": "lent-with-mark",
+      "title": "Forty Days With Mark: A Lent Reading Plan",
+      "days": 40,
+      "scope": [
+        "mark"
+      ],
+      "unit": "scene",
+      "through": 15,
+      "finale": {
+        "label": "Easter Sunday",
+        "reading": "Mark 16:1-8",
+        "note": "The empty tomb"
+      },
+      "blurb": "Mark's Gospel through the forty days of Lent, from Ash Wednesday to Holy Saturday with the Sundays set aside, a few of its own scenes each day. You walk with Jesus toward Jerusalem and the cross, and on Easter morning you read the empty tomb."
     },
     {
       "id": "new-testament-in-90-days",

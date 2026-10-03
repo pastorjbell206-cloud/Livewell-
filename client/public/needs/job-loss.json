@@ -1,38 +1,158 @@
 {
   "slug": "job-loss",
-  "page": false,
+  "page": true,
   "rank": 42,
   "title": "I lost my job",
-  "summary": "When the work is gone: worth, provision, and the next honest step.",
+  "seoTitle": "Lost Your Job? What the Bible Says and What to Do Next",
+  "description": "Laid off or fired? What to do first about benefits, health coverage, and bills, what the Bible says about losing a job, and where your worth really lies.",
+  "summary": "Laid off or fired: the first practical steps, what Scripture says, and why your worth was never your job.",
   "askedAs": [
     "lost my job",
-    "unemployed",
     "laid off",
     "fired",
+    "unemployed",
     "job loss",
     "can't find work",
-    "career change"
+    "how to cope with losing a job",
+    "what to do after being fired",
+    "applying for unemployment",
+    "unemployment and depression",
+    "career change",
+    "my husband lost his job",
+    "Bible verses about losing a job",
+    "What does the Bible say about losing your job"
   ],
   "states": [
-    "carrying"
+    "carrying",
+    "helping"
   ],
   "sensitivity": "ordinary",
+  "crisisTopics": [
+    "suicide",
+    "substance",
+    "abuse"
+  ],
+  "answer": "You lost your job. Maybe it was a short meeting and a box for your things, a phone call, or a business that closed. Along with the paycheck you may have lost the shape of your days, the people you saw every morning, and the answer you gave when someone asked what you do. If you were fired, shame may be tangled up in all of it. This is a real loss, and it's right to grieve it, but it isn't a verdict on your worth, which never came from the job. You don't have to plan your whole future tonight. Tell the people closest to you, and tomorrow apply for unemployment benefits with the state where you worked; they exist for times like this. If this has turned into hopelessness, or into thoughts of ending your life, call or text 988 now and tell someone near you.",
+  "happening": "It may have taken fifteen minutes, and your badge stopped working before you reached the car. If you were laid off, you may be stunned that years of good work could end in a paragraph. If you were fired, you may be replaying every conversation, half sure it was unfair and half sure it was your fault. Either way, the first days can feel unreal. You wake at the old hour with nowhere to be, and you're refreshing the job sites at two in the morning. Someone at church asks how work is going, and you don't know what to say.\n\nThe common explanations of a job loss each get hold of something true. The financial one is right that this is an emergency with deadlines: benefits to claim, insurance to replace, bills that won't wait for a hiring manager. The psychological one is right that losing work is a loss, and people grieve it with shock, anger, fear, and a strange flatness. Sleep and appetite can go sideways, and for some the heaviness settles in and won't lift; if that's you, tell a doctor, and [I feel empty, and I don't know why](/help/empty) may help. You're likely to hear two spiritual explanations. One says God has something better around the corner; it's right that God hasn't left you, but nobody can promise the next job will be better. The other treats the loss as a test you're failing or a sign that something is wrong between you and God. Scripture does speak of testing, but it never hands anyone a key for decoding a layoff.\n\nNone of them quite reaches the question underneath: *Am I still worth anything?* A job pays the bills, but it's also where you were expected each morning and where your effort counted. If you've carried a household, losing the ability to provide can feel like failing the people you love, even when the decision was made in an office you've never seen. Your spouse may be frightened too, and your children may be reading your face for clues. Shame makes people hide, and a job loss kept quiet gets heavier every week.\n\nFor some, especially those whose sense of worth lived in the work, the shame turns darker: the thought that you're only a burden now, or that your family would be better off without you. I'd rather ask you plainly than guess: are you having thoughts of ending your life? If you are, that thought comes from the pain, and it lies to you about how much you're needed. Call or text 988 now and tell someone near you; you don't have to wait for an emergency to call.",
+  "scripture": {
+    "intro": "Scripture has no word for a layoff, but it knows people who lost their living. It keeps a widow's complaint that God brought her home empty, and a poet's hope spoken from a ruined city. Jesus tells anxious people they're worth more than the birds their Father feeds, and Paul writes from prison about contentment and receiving help. None of them promises the next job, but each shows a God who stays with people where you are now.",
+    "passages": [
+      {
+        "ref": "Ruth 1:20-21",
+        "text": "“Do not call me Naomi,” she replied. “Call me Mara, because the Almighty has dealt quite bitterly with me. I went away full, but the LORD has brought me back empty. Why call me Naomi? After all, the LORD has testified against me, and the Almighty has afflicted me.”",
+        "reading": "Naomi left Bethlehem in a famine with her husband and two sons, and in Moab all three died (Ruth 1:1-5). A widow without sons had lost her living along with her family, so she told the women of Bethlehem to call her Mara, which means bitter. Scripture keeps her complaint without correcting it. Then Ruth, a foreigner, goes out to glean the grain Israel's law told farmers to leave \"for the poor and the foreign resident\" (Leviticus 23:22). She \"happened to come\" to the field of Boaz (Ruth 2:3), who tells his men to leave extra stalks for her and \"do not insult her\" (Ruth 2:15-16). Provision came without a miracle, through work, a law that guarded the dignity of the poor, and the kindness of Boaz. Later Boaz sends barley so Ruth won't go home \"empty-handed\" (Ruth 3:17), the same Hebrew word Naomi used of herself."
+      },
+      {
+        "ref": "Lamentations 3:17-18, 21-24",
+        "text": "My soul has been deprived of peace; I have forgotten what prosperity is. So I say, “My strength has perished, along with my hope from the LORD.” ... Yet I call this to mind, and therefore I have hope: Because of the loving devotion of the LORD we are not consumed, for His mercies never fail. They are new every morning; great is Your faithfulness! “The LORD is my portion,” says my soul, “therefore I will hope in Him.”",
+        "reading": "Lamentations is five poems of grief written after Babylon's army took Jerusalem in 587 or 586 BC and burned the temple (2 Kings 25:9). Children fainted from hunger in the streets (Lamentations 2:11-12), and the first eighteen verses of this chapter read like an accusation against God. Then hope comes, though nothing outside has changed. It comes from memory, from calling to mind mercies that are \"new every morning,\" like the manna Israel gathered each morning (Exodus 16:21). \"The LORD is my portion\" is the language of land. The priests received no share of it, and God told Aaron, \"I am your portion and your inheritance\" (Numbers 18:20). A man whose share of the world has been taken says God himself is his share. The book still ends unresolved (Lamentations 5:22). Hope like this doesn't wait for the ending."
+      },
+      {
+        "ref": "Matthew 6:26-27",
+        "text": "Look at the birds of the air: They do not sow or reap or gather into barns—and yet your heavenly Father feeds them. Are you not much more valuable than they? Who of you by worrying can add a single hour to his life?",
+        "reading": "In the Sermon on the Mount (Matthew 5:1), Jesus points to birds that have no jobs. They don't sow or reap or store anything, and the Father feeds them anyway. Then he asks, \"Are you not much more valuable than they?\" The Father's care was never wages for your output. Jesus does promise that \"all these things will be added unto you\" (Matthew 6:33), yet Paul, who served him, still knew hunger (Philippians 4:12). What he promises is a Father who knows and provides, \"your heavenly Father knows that you need them\" (Matthew 6:32), not a life without hard seasons. And he ends where a job search has to live: \"Today has enough trouble of its own\" (Matthew 6:34). Do today's work, ask for today's bread (Matthew 6:11), and leave tomorrow with your Father."
+      },
+      {
+        "ref": "Philippians 4:11-14",
+        "text": "I am not saying this out of need, for I have learned to be content regardless of my circumstances. I know how to live humbly, and I know how to abound. I am accustomed to any and every situation—to being filled and being hungry, to having plenty and having need. I can do all things through Christ who gives me strength. Nevertheless, you have done well to share in my affliction.",
+        "reading": "Paul wrote this from prison (Philippians 1:13), partly to thank the church at Philippi for a gift brought by one of their own, Epaphroditus (Philippians 2:25; 4:18). The famous line, \"I can do all things through Christ who gives me strength,\" gets borrowed for winning games and landing jobs. In its place it's about something harder: being content hungry or full, because Christ gave him strength in both. He says he learned it, which means it can be learned, and no one should expect to have it mastered a month after losing a job. Yet the apostle who could live on very little didn't wave their help away: \"you have done well to share in my affliction.\" For Paul, contentment included the humility to receive what God sent through other people."
+      }
+    ]
+  },
+  "whyHard": "If you ask why losing a job hurts so much, the first answer is money, and the money is real. But money can't explain the shame, or why the days go shapeless even when a severance check covers the bills. In the early 1930s a team of researchers from Vienna, among them the social psychologist Marie Jahoda, went to Marienthal, an Austrian village whose textile factory had closed, to study what joblessness was doing to its people. They found a community grown tired and resigned. Half a century later, Jahoda argued that a job gives far more than a wage: a structure for the day, people outside the family, a part in a shared purpose, a recognized place in the world, and regular activity. Lose the job and you lose them all at once.\n\nIn the United States the same decade brought a public answer. The Social Security Act of 1935 set up the federal and state system of unemployment insurance that still runs today, for workers who lose their jobs through no fault of their own. Insurance treats a layoff as a risk any worker might face. Remember that when shame tells you that you have no business applying.\n\nStill, the deepest weight is the verdict you hear inside the news, the voice that turns *your position has been eliminated* into *you weren't good enough*. That voice is older than any economy. When Job lost his herds, his servants, and his children in one day (Job 1:13-19), his friend Eliphaz asked, \"Who, being innocent, has ever perished?\" (Job 4:7). At the end of the book God tells Eliphaz, \"you have not spoken about Me accurately, as My servant Job has\" (Job 42:7). Our culture keeps the friends' logic and drops their God: if the market let you go, you weren't worth keeping. Some preaching says it in religious words, promising that enough faith will keep a believer from loss. Ecclesiastes saw through all of it: \"neither is the bread to the wise, nor the wealth to the intelligent, nor the favor to the skillful. For time and chance happen to all\" (Ecclesiastes 9:11).\n\nNone of this means you had no part in it. If you were fired for something you did, own it plainly and make right what you can. Owning a real failure is a different thing from accepting a verdict on your whole worth, and you can do the first without the second.\n\nToo often the church hands down the same verdict without meaning to. We give leadership to the successful, introduce people by their titles, and don't know what to say to the unemployed in the lobby. I'm a pastor, and that charge includes me. Israel's law asked more of its people: a countryman who could no longer support himself was to be helped \"so that he can continue to live among you\" (Leviticus 25:35).\n\nUnderneath it all is the question from the middle of the night: am I still worth anything? Scripture answers it before any work is done. Jesus spent most of his life in Nazareth, where his neighbors knew him as a tradesman: \"Isn't this the carpenter,\" they said (Mark 6:3). Before he had preached a sermon or healed anyone, the Father spoke over him at his baptism: \"This is My beloved Son, in whom I am well pleased!\" (Matthew 3:17). The Father's word came before the work, and so did the image of God you bear (Genesis 1:27). Every working life ends, by a layoff or an illness or old age, and a worth that depended on the job would end with it. A job can feed a family and give you a place to serve. But it only ever paid you. It never named you.",
+  "thisWeek": {
+    "intro": "You can't fix all of this in a week. Begin with the first step and take the others as you're able. These steps are general, not financial or legal advice, and the rules differ from state to state.",
+    "steps": [
+      {
+        "title": "Tell the people closest to you",
+        "body": "Today, if you can, tell your spouse everything, including what you're afraid of; hiding a job loss, even for a few days, turns a hardship into a secret. Let your spouse be frightened or angry for a while without defending yourself, then pick a time this week to look at the numbers together. If you live alone, tell one friend who won't flinch. Your children need to hear it too, in words their age can carry (see the questions below)."
+      },
+      {
+        "title": "Apply for unemployment benefits",
+        "body": "File with the unemployment office of the state where you worked, even if you live in another, and do it as soon as you can. If you were fired or aren't sure you qualify, apply anyway and let the state decide. Have your employers' names and addresses and your dates of work at hand, and answer every question exactly as it happened. Then ask what you must do to keep the claim open, including how often to report and what counts as looking for work, and do it."
+      },
+      {
+        "title": "Find out what happens to your health insurance",
+        "body": "If your health insurance came through your job, ask the employer or the plan this week when it ends and what your choices are. You may be able to keep the same coverage for a while under a federal law called COBRA, though you'll usually pay the whole premium yourself. Losing job-based coverage also opens a limited window to sign up for a plan through HealthCare.gov or your state's marketplace, so look right away. If your income has dropped, look into Medicaid, and CHIP for your children; you can apply for them any time of year."
+      },
+      {
+        "title": "Make a bare-bones budget and call your lenders",
+        "body": "Write down what's still coming in, from severance, benefits, savings, or a spouse's pay, and what has to go out: housing, utilities, food, medicine, insurance, transportation, minimum payments. Then call your landlord or mortgage servicer, your card companies, and any student loan servicer before you miss a payment, ask about hardship options, and write down what they agree to. Be slow to cash out a retirement account; ask first what it will cost in taxes."
+      },
+      {
+        "title": "Give the search hours and an end",
+        "body": "Looking for work is work, and it goes better with hours. Get up at your usual time, get dressed, and give the search a set block each weekday: applications, calls, and at least one conversation with someone in your field. Then stop for the day, and keep one day a week free of it altogether. Tell people what kind of work you want, and ask your state's unemployment office where the nearest public job center is; its help with résumés and job leads is free. Don't decide on a new career in your worst week. And begin each day by asking for today's bread (Matthew 6:11)."
+      },
+      {
+        "title": "Let your church carry some of it",
+        "body": "Tell your pastor or your small group what happened, and say plainly what would help: leads, someone to read your résumé, a meal in a hard week, help with a bill. Ask whether the church has a benevolence fund. Scripture tells believers, \"Carry one another's burdens\" (Galatians 6:2), and that command needs someone willing to be carried. Keep worshiping with them, even on the Sundays you'd rather stay home. When someone asks how work is going, it's enough to say, *I'm between jobs, and I'd be grateful for your prayers.*"
+      }
+    ]
+  },
+  "moreHelp": {
+    "body": "Some of what follows a job loss needs more than a pastor. If the heaviness hasn't lifted after a couple of weeks, if it has spread into nearly everything, or if you're drinking more to get through the days, see a doctor. A licensed counselor can help with the grief and the shame; ask your doctor for a referral, check your insurer's directory, or ask a pastor which counselors nearby they trust. If you want a Christian counselor, make sure they're also licensed, and check the license with your state's licensing board.\n\nIf you think you were let go illegally, or you weren't paid what you're owed, talk with an employment lawyer or legal aid soon; the deadlines for filing a discrimination charge can be short. For debts past what you can manage, see [Money is a weight on me](/help/money). I'm a pastor, not a doctor, a lawyer, or a financial adviser, and none of this is medical, legal, or financial advice.",
+    "signs": [
+      "The heaviness has lasted two weeks or more, most of the day, nearly every day, or you can barely sleep or get out of bed.",
+      "You're drinking more, or using something, to get through the days. SAMHSA's helpline is with the help lines at the end of this page.",
+      "You've had thoughts of ending your life, or that your family would be better off without you. Call or text 988 now, or 911 if you're in danger.",
+      "Someone at home has turned threatening or violent, or you're afraid of them. Call 911 in danger; the Domestic Violence Hotline is with the help lines at the end of this page.",
+      "You think you were fired for your race, sex, age, religion, national origin, or disability, or for reporting wrongdoing. Talk with an employment lawyer or legal aid soon.",
+      "A job offer asks you to pay to get the job, or to deposit a check and send some of the money back. That's a scam; send nothing."
+    ],
+    "firstCall": "Say it simply. To a doctor or counselor you might say, *I lost my job two months ago, and I can't get out from under it. I'm not sleeping, and I'm short with my family.* Be honest about drinking or anything else you're using. To an employment lawyer: *I think the real reason I was let go isn't the one they gave me.* Ask what a first meeting costs. With the unemployment office, describe how the job ended exactly as it happened.",
+    "cost": "Losing a job often means losing the insurance that paid for care, so ask about cost before the first visit. Counselors may offer sliding-scale fees, community mental health centers and university training clinics often charge less, and Medicaid may cover care if your income has dropped. If your spouse still has a job, ask whether that employer has an employee assistance program and whether it covers family members. Legal aid helps people with low incomes at no charge, and your church may keep a benevolence fund for times like this, so ask."
+  },
+  "helping": {
+    "body": "If someone you love has lost a job, don't disappear. People go quiet around the unemployed because they don't know what to say, and the quiet feels like judgment. Keep inviting them to things that don't cost money. Ask what would help, then do something specific: send their name to someone who's hiring, read a résumé, bring a meal, cover a bill if you can afford to give the money away. Don't make every conversation about the search.\n\nIf it's your spouse, you're both afraid, and fear can come out as blame. Let them grieve before you start fixing, tell them what you're afraid of without making it their fault, and agree on a time each week to talk about money. Watch for the withdrawal shame brings, the late sleeping, the extra drinks, the silence, and say what you see, gently. If their anger ever turns into threats or makes you afraid, that's more than stress, and your safety comes first: call 911 in danger, and the Domestic Violence Hotline is with the help lines at the end of this page.\n\nPastors and churches can do what one friend can't: connect the people in the congregation who hire with the people who need work. Handle benevolence with privacy and dignity, and don't tie help to attendance. Keep asking the person between jobs to use their gifts, because being needed tells them something no sermon can.",
+    "say": [
+      "I'm so sorry. That's a real loss.",
+      "You're the same person to me you were last week.",
+      "Can I send your name to a few people I know?",
+      "What would help most this week?",
+      "Do you want to talk about it, or take a break from it tonight?"
+    ],
+    "dontSay": [
+      "Enjoy the time off.",
+      "God must have something better for you.",
+      "What did you do?",
+      "At least you got severance.",
+      "You'll find something in no time."
+    ],
+    "next": "Keep checking in long after the first week; a long search gets lonely. Offer something concrete, like a ride to an interview or a practice interview. If their hope keeps shrinking, or they talk about being a burden or not wanting to be alive, ask directly, *Are you thinking about suicide?* Asking won't put the idea in their head. Stay with them and call or text 988 together, or call 911 if they're in immediate danger."
+  },
+  "prayer": "Lord, the work is gone, and I don't know what comes next. You know what went with it: the paycheck, the people, the place where I was needed. You know whether I failed or was simply let go, and how loud the shame is either way.\n\nNaomi came home empty, and you let her say so. The poet sat in the ruins and still called your mercies new every morning. Tonight I'm somewhere between them.\n\nGive us this day our daily bread. You kept a widow's jar of flour from running out, one day at a time; feed my house like that. Open doors I can't open, and give me the grace to accept help and the stubbornness to keep knocking.\n\nDon't let me believe I'm worth only what someone will pay me. You knew my name before anyone hired me. If the waiting is long, stay in it with me.\n\nAmen.",
   "kit": {
+    "plan": {
+      "href": "/plans/money",
+      "label": "Eight Weeks Toward Enough, a plan for when money is a weight on you"
+    },
+    "selfCheck": {
+      "href": "/tools/financial-health",
+      "label": "Financial Health Check"
+    },
+    "tool": {
+      "href": "/tools/worry-journal",
+      "label": "The Worry Journal: Five Minutes Before Bed"
+    },
+    "guides": [
+      {
+        "href": "/studyguides/identity",
+        "label": "Identity: A Bible Study on Who You Actually Are"
+      },
+      {
+        "href": "/studyguides/work-and-vocation",
+        "label": "Work and Vocation: A Bible Study on Faith and Your Job"
+      },
+      {
+        "href": "/studyguides/lament",
+        "label": "Lament: A Bible Study on Praying Your Pain"
+      }
+    ],
     "read": [
       {
-        "href": "/life/unemployment-and-the-lost-job",
-        "label": "When the Work Is Gone: Unemployment and Worth",
-        "kind": "Life"
-      },
-      {
-        "href": "/wisdom/job-loss",
-        "label": "Job Loss",
-        "kind": "Wisdom"
-      },
-      {
-        "href": "/life/debt-and-provision",
-        "label": "What Does the Bible Say About Debt and Daily Bread?",
-        "kind": "Life"
+        "href": "/how-tos/wm-how-to-handle-a-job-loss",
+        "label": "How to Handle a Job Loss",
+        "kind": "How-to"
       },
       {
         "href": "/life/identity-and-worth",
@@ -40,10 +160,182 @@
         "kind": "Life"
       },
       {
+        "href": "/life/unemployment-and-the-lost-job",
+        "label": "When the Work Is Gone: Unemployment and Worth",
+        "kind": "Life"
+      },
+      {
+        "href": "/life/shame-and-the-hiding-self",
+        "label": "What Is the Difference Between Guilt and Shame?",
+        "kind": "Life"
+      },
+      {
+        "href": "/life/debt-and-provision",
+        "label": "What Does the Bible Say About Debt and Daily Bread?",
+        "kind": "Life"
+      },
+      {
+        "href": "/how-tos/wm-how-to-make-a-budget-that-honors-god",
+        "label": "How to Make a Budget That Honors God",
+        "kind": "How-to"
+      },
+      {
+        "href": "/wisdom/financial-hardship",
+        "label": "Financial Hardship",
+        "kind": "Wisdom"
+      },
+      {
         "href": "/wisdom/career-change",
         "label": "Changing Careers",
         "kind": "Wisdom"
+      },
+      {
+        "href": "/how-tos/ss-how-to-practice-lament",
+        "label": "How to Practice Lament",
+        "kind": "How-to"
+      },
+      {
+        "href": "/resources/context/philippians-4-13-in-context",
+        "label": "What Does Philippians 4:13 Really Mean?",
+        "kind": "Page"
+      },
+      {
+        "href": "/resources/context/jeremiah-29-11-in-context",
+        "label": "What Does Jeremiah 29:11 Really Mean?",
+        "kind": "Page"
       }
     ]
+  },
+  "faq": [
+    {
+      "q": "Is God punishing me by taking my job?",
+      "a": "No one, including you, can read a layoff as God's verdict on your life. When a tower fell and killed eighteen people, Jesus asked whether they had been worse sinners than everyone else in Jerusalem and answered, \"No, I tell you\" (Luke 13:4-5), then called all his hearers to repent. Hebrews does tell believers to \"Endure suffering as discipline\" (Hebrews 12:7), but it means a father's training, given \"for our good\" (Hebrews 12:10), and it gives no one a way to read an employer's decision as payment for a particular sin. If you belong to Christ, the sentence you're afraid of has already been carried: \"there is now no condemnation for those who are in Christ Jesus\" (Romans 8:1). If your conscience shows you a real wrong, confess it and make it right where you can. Then let it be forgiven."
+    },
+    {
+      "q": "Is it wrong for a Christian to collect unemployment?",
+      "a": "No. Unemployment insurance is what its name says: insurance, paid for mostly by taxes on employers, for workers who lose their jobs through no fault of their own, and the amount is based on wages you've already earned. Taking a benefit you're eligible for isn't stealing, and it's nothing to be ashamed of. Scripture doesn't shame people for receiving help in need, either; Israel's law built provision for the poor into the harvest itself, and a forgotten sheaf was \"to be left for the foreigner, the fatherless, and the widow\" (Deuteronomy 24:19). What faith asks of you here is honesty: answer every question truthfully, report any work you pick up, and look for work as your state requires. Your state decides who qualifies, and none of this is legal advice."
+    },
+    {
+      "q": "Doesn't the Bible say if you don't work, you don't eat?",
+      "a": "The line comes from 2 Thessalonians, a letter sent in the names of Paul, Silvanus, and Timothy: \"If anyone is unwilling to work, he shall not eat\" (2 Thessalonians 3:10). The word that matters is unwilling. The letter corrects people in the church who were \"accomplishing nothing but being busybodies\" (2 Thessalonians 3:11) and tells them to work quietly and earn their own living. It says nothing against someone who wants work and can't find it, and searching for a job is real labor. If the verse has been quoted at you, it was pulled out of its place. A few lines later the letter says, \"do not grow weary in well-doing\" (2 Thessalonians 3:13). That word fits you better."
+    },
+    {
+      "q": "The Bible says the righteous never beg for bread. Why am I struggling?",
+      "a": "The line is from a psalm that bears David's name: \"I once was young and now am old, yet never have I seen the righteous abandoned or their children begging for bread\" (Psalm 37:25). Quoted at someone who is struggling, it can sound like comfort for the comfortable, but it's a testimony, what one old man had seen, in a wisdom psalm about not fretting when evildoers prosper (Psalm 37:1, 7). The psalm does promise provision (Psalm 37:19), but it speaks as Proverbs does, of how God's world runs over a lifetime and how it finally ends, not as a guarantee that no faithful person is ever poor. Paul knew hunger (Philippians 4:12), and Hebrews honors the faithful who were \"destitute, oppressed, and mistreated\" (Hebrews 11:37). Your struggle doesn't prove you've lost God's favor. The psalm promises that the LORD \"will not forsake His saints\" (Psalm 37:28), and it calls the righteous \"ever generous and quick to lend\" (Psalm 37:26). One way God keeps his people from begging is by making them generous to one another."
+    },
+    {
+      "q": "How do I tell my kids I lost my job?",
+      "a": "Tell them soon, simply, and in words their age can carry; silence leaves children to imagine the reason. You might say, *I lost my job. It isn't because of anything you did. We're going to be careful with money for a while, and we're working on it.* Promise only what you can keep: that they're loved, that you'll take care of them, that you'll tell them the truth. Keep their routines steady, and don't make them your confidant about bills or fears. Let them see you pray, look for work, and rest. I'm raising five sons, and if a season like this came to our house, I'd want them to learn that their father's worth, and theirs, was never a paycheck."
+    }
+  ],
+  "related": [
+    "money",
+    "fear-of-the-future",
+    "empty",
+    "purpose",
+    "decisions"
+  ],
+  "slots": [
+    {
+      "section": "whyHard",
+      "note": "Whether James has lost a job himself, or walked closely with someone who did, and what it showed him about work and worth, in his own words only. The paragraph on the church (I'm a pastor, and that charge includes me) could carry it. The section stands without it."
+    },
+    {
+      "section": "faq",
+      "note": "The answer on telling children carries only James's conviction as a father of five sons (what he would want them to learn if a season like this came). He could add, in his own words, how he talks with his sons about work and provision, or, as a man raised without a father, what a child notices when a household is under strain. No story has been written for him."
+    },
+    {
+      "section": "moreHelp",
+      "note": "Whether First Baptist Church of Fenton has a benevolence process, members who help job seekers with leads and résumés, or a gathering for people between jobs, and any American Job Center, legal aid office, or counselors near Fenton he trusts enough to name. Only from James."
+    },
+    {
+      "section": "faq",
+      "note": "The answer on collecting unemployment stays pastoral and factual: unemployment insurance as insurance, eligibility decided by the state, honesty in every claim. If James wants to say more about Christians and public assistance in general, which touches politics, it belongs in his own words."
+    },
+    {
+      "section": "faq",
+      "note": "The answer on Psalm 37:25 now concedes the skeptic's objection without biography (the writer's draft leaned on James having come to faith from atheism to make the concession). If James wants to say, in his own words, how verses like this sounded to him before he believed, it could go there. Nothing has been written for him."
+    }
+  ],
+  "sources": [
+    {
+      "claim": "Marie Jahoda argued that employment has, besides its manifest function of earning a living, five latent functions: a time structure for the day, social contact outside the family, participation in collective goals and purposes, status and identity, and regular activity.",
+      "cite": "Marie Jahoda, Employment and Unemployment: A Social-Psychological Analysis (Cambridge University Press, 1982); summarized in Frontiers in Psychology, Heterogeneities in the latent functions of employment (2022).",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9428713/"
+    },
+    {
+      "claim": "In the early 1930s a research team from Vienna (Marie Jahoda, Paul Lazarsfeld, Hans Zeisel and others) studied the Austrian village of Marienthal after its textile factory closed, and described a tired community marked by resignation (Die Arbeitslosen von Marienthal, 1933). The page gives no closing year for the factory and no fieldwork dates; the search excerpt of this source gave 1930 and November 1931 to May 1932, which were not carried onto the page.",
+      "cite": "Haus der Geschichte Österreich, 1933: Marie Jahoda, Paul Felix Lazarsfeld and Hans Zeisel: The Unemployed of Marienthal.",
+      "url": "https://hdgoe.at/marienthal_unemployed"
+    },
+    {
+      "claim": "The Social Security Act of 1935 (Titles III and IX) set up unemployment insurance in the United States as a federal-state program.",
+      "cite": "Social Security Administration, Annual Statistical Supplement, Unemployment Insurance program description.",
+      "url": "https://www.ssa.gov/policy/docs/progdesc/sspus/unemploy.pdf"
+    },
+    {
+      "claim": "The unemployment compensation program is almost totally funded by employer taxes; only three states (Alaska, New Jersey, Pennsylvania) also collect from workers.",
+      "cite": "U.S. Department of Labor, Employment and Training Administration, Unemployment Compensation: Federal-State Partnership; and the Unemployment Insurance Tax fact sheet.",
+      "url": "https://oui.doleta.gov/unemploy/pdf/partnership.pdf"
+    },
+    {
+      "claim": "Unemployment insurance provides temporary benefits to eligible workers unemployed through no fault of their own who meet their state's requirements for wages earned or time worked; benefit amounts are figured from past wages; contact your state's program as soon as possible after becoming unemployed, and file in the state where you worked.",
+      "cite": "U.S. Department of Labor, Unemployment Insurance fact sheet and How Do I File for Unemployment Insurance?",
+      "url": "https://oui.doleta.gov/unemploy/docs/factsheet/UI_Program_FactSheet.pdf"
+    },
+    {
+      "claim": "File for unemployment in the state where you worked, even if you live in a different state; when your money situation changes, contact your lenders and ask for help, such as more time to pay or a waived late fee, before payments are due.",
+      "cite": "Consumer Financial Protection Bureau, Unexpected job loss.",
+      "url": "https://www.consumerfinance.gov/consumer-tools/unexpected-job-loss/"
+    },
+    {
+      "claim": "COBRA generally applies to group health plans of employers with 20 or more employees, and a plan may require you to pay the full cost of continuation coverage plus a 2 percent administrative charge.",
+      "cite": "U.S. Department of Labor, Employee Benefits Security Administration, An Employee's Guide to Health Benefits Under COBRA.",
+      "url": "https://www.dol.gov/agencies/ebsa/about-ebsa/our-activities/resource-center/publications/an-employees-guide-to-health-benefits-under-cobra"
+    },
+    {
+      "claim": "Losing job-based coverage can qualify you for a Special Enrollment Period (on HealthCare.gov, if you lost coverage in the past 60 days or expect to lose it in the next 60); people eligible for Medicaid or CHIP can apply any time. The page names no number of days; it says only that the window is limited.",
+      "cite": "HealthCare.gov, See your options if you lose job-based health insurance.",
+      "url": "https://www.healthcare.gov/have-job-based-coverage/if-you-lose-job-based-coverage/"
+    },
+    {
+      "claim": "Early distributions from retirement plans are generally subject to income tax and, before age 59 and a half, an additional tax unless an exception applies. The page says only to ask what cashing out will cost in taxes.",
+      "cite": "Internal Revenue Service, Topic no. 558, Additional tax on early distributions from retirement plans other than IRAs.",
+      "url": "https://www.irs.gov/taxtopics/tc558"
+    },
+    {
+      "claim": "A discrimination charge generally must be filed with the EEOC within 180 calendar days of the discrimination, extended to 300 days where a state or local agency enforces a similar law. The page says only that the deadlines can be short.",
+      "cite": "U.S. Equal Employment Opportunity Commission, Time Limits for Filing a Charge.",
+      "url": "https://www.eeoc.gov/time-limits-filing-charge"
+    },
+    {
+      "claim": "American Job Centers, the public job centers sponsored by the U.S. Department of Labor and listed through CareerOneStop, offer free employment help, including résumé and job search help. The page names neither; it tells the reader to ask the state unemployment office for the public job center nearby.",
+      "cite": "CareerOneStop (U.S. Department of Labor), American Job Center Finder.",
+      "url": "https://www.careeronestop.org/LocalHelp/AmericanJobCenters/american-job-centers.aspx"
+    },
+    {
+      "claim": "Honest employers will never ask you to pay to get a job, and no honest employer will send a check to deposit and then ask you to send part of the money on; that is a fake check scam.",
+      "cite": "Federal Trade Commission, Job Scams.",
+      "url": "https://consumer.ftc.gov/articles/job-scams"
+    },
+    {
+      "claim": "Civil legal aid organizations give free legal help to people with low incomes, including people facing eviction or foreclosure.",
+      "cite": "Legal Services Corporation, What Is Civil Legal Aid?",
+      "url": "https://www.lsc.gov/about-lsc/what-civil-legal-aid"
+    },
+    {
+      "claim": "NIMH describes depression's signs as lasting most of the day, nearly every day, for at least two weeks. The page's first sign uses the same measure to send the reader to a doctor and names no condition.",
+      "cite": "National Institute of Mental Health, Depression.",
+      "url": "https://www.nimh.nih.gov/health/publications/depression"
+    },
+    {
+      "claim": "Asking someone directly whether they are thinking about suicide is recommended; asking does not cause or increase suicidal thoughts.",
+      "cite": "National Institute of Mental Health, Frequently Asked Questions About Suicide.",
+      "url": "https://www.nimh.nih.gov/health/publications/suicide-faq"
+    }
+  ],
+  "reviewed": {
+    "on": "2026-10-01",
+    "notes": "Second editorial pass (2026-10-01) over the writer's self-check. Validator clean (node scripts/validate-needs.mjs job-loss) and the CarePage render test passes. Truth, outside sources: every outside claim was confirmed by the writer only through search excerpts, and this pass could not open them either (direct fetches egress-blocked), so the page now keeps only what is ordinary and certain and phrases the rest as general, durable guidance. Marienthal: the closing year (1930) and the fieldwork dates were cut; the page now says a team of researchers from Vienna, among them Marie Jahoda, studied the village in the early 1930s after its textile factory closed and found a tired, resigned community, and that Jahoda later named the latent goods of work (Employment and Unemployment, 1982). The Social Security Act of 1935 now set up the federal and state system of unemployment insurance (it had said made it national). The claim-start rule (in many states a claim starts the week you file, resting on Texas and New Jersey) was cut with its source; the step now says file with the state where you worked as soon as you can and ask the state what it requires and how often, since weekly filing is not universal (some states certify every two weeks). The 60-day special enrollment window is no longer stated as a number; the page says the window is limited and to look right away. COBRA kept as you may be able to keep the coverage, usually paying the whole premium. Medicaid, and CHIP for children, any time of year. CareerOneStop and American Job Centers are no longer named (the brief bars naming organizations outside crisis-resources.json in More help, and the program names are less durable than the advice); the reader is told to ask the state unemployment office for the public job center nearby. The working spouse's employee assistance program line is now a question to ask (whether that employer has one and whether it covers family), not a claim. EEOC, IRS, legal aid, FTC job-scam, NIMH lines kept general (the deadlines can be short; ask what cashing out will cost in taxes; legal aid at no charge for low incomes; pay-to-get-a-job and deposit-and-send-back as the marks of a scam). Sources pruned and reworded to match what the page now says; every URL still has to be re-opened at the source before release. Truth, Scripture (read in the BSB with --verses): Ruth's gleaning now cites Leviticus 23:22 (the grain harvest; 19:10's them is grapes) and names Ruth as the foreigner the law made room for; Ruth 1:21 and 3:17 share the word for empty (reqam), as the writer had it. Lamentations: the priests received no share of the land (Numbers 18:20; it had said no fields). Job 42:7 is now quoted (you have not spoken about Me accurately) because the old paraphrase (had not spoken of him accurately) could be read as about Job. Philippians: Epaphroditus as their messenger now cites 2:25 with 4:18. The punishment answer had said nothing in Scripture lets us read an employer's decision as discipline, which Hebrews 12:7 (endure suffering as discipline) contradicts; it now grants Hebrews 12:7 and 12:10 as a father's training, denies only that anyone can decode a layoff as payment for a particular sin, and adds Romans 8:1. Promises: the Scripture intro now says plainly that none of these passages promises the next job. Matthew 6 no longer skips 6:33: it grants the promise that all these things will be added, sets it beside Paul's hunger (Philippians 4:12), and reads it as a Father who knows and provides (6:32), not a life without hard seasons. Philippians 4:13 stays contentment in want, with 4:14 for receiving help. Psalm 37:25 was honest as an old man's testimony but implied the psalm makes no provision promises; it now grants Psalm 37:19, reads the psalm as wisdom that speaks of how God's world runs over a lifetime and how it ends (as Proverbs does), keeps Philippians 4:12, Hebrews 11:37, and 37:26, 28, and adds that the reader's struggle does not prove they have lost God's favor. Its I came to faith from atheism line was replaced by the skeptic's objection stated without biography; a slot asks James for his own words there. Care: What's going on now ends by naming, gently, the darker turn shame can take for someone whose worth lived in the work (a burden, the family better off without me), asks the reader directly whether they are having thoughts of ending their life, says the thought lies about how much they are needed, and gives 988 with tell someone near you; no methods, nothing framed as release. The helper's next step now lists talk of being a burden as a reason to ask directly. Sensitivity stays ordinary (the answer carries 988 on the first screen). The helping section now serves the spouse it claims to (states keeps helping): name your own fear without blame, protect the evenings from money talk, watch for withdrawal, and if anger turns into threats or fear, safety first with 911 and the Domestic Violence Hotline; a matching sign was added to More help, so crisisTopics now adds abuse (quick exit and the hotline at the foot). Shame and benefits: the page no longer calls applying begging (shame tells you that you have no business applying), and the benefits answer adds that Scripture does not shame people for receiving help in need; no political position is taken. Voice: one Not X. Y. per section (Matthew's reading and the close of Why this is so hard); the Philippians and Matthew antitheses and the one-place-where-no-one-asks line were rewritten (church step now gives words for the question at church); the answer now says the loss is not a verdict on your worth, so a reader fired for cause is not handed a denial. Kit: every target opened. /wisdom/job-loss was dropped: it lists Jeremiah 29:11 as a job-loss verse without its exile setting, duplicates this page's own Scripture, and a cleaner resource exists (the Jeremiah 29:11 context guide stays). /life/unemployment-and-the-lost-job stays under its true title but no longer leads the list; it asserts without a source that long-term unemployment is among the most reliable predictors of depression and anxiety, which this page does not repeat (it also paraphrases 2 Thessalonians 3:10 loosely and says Jesus was a carpenter for thirty years). The cleaner How to Handle a Job Loss now leads. /wisdom/financial-hardship lists Psalm 37:25 bare; its label is true and the page's own answer reads the verse in place. No first-person anecdotes found in any linked resource. Not run, per the brief: scripts/build-needs-index.mjs (crisisTopics changed, so the index needs rebuilding) and the printables."
   }
 }

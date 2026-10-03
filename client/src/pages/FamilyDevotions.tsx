@@ -135,9 +135,16 @@ export default function FamilyDevotions() {
             </Accordion>
           ))}
           {/* The seasonal devotions retell each passage in plain words for
-              children; the weekly ones quote a translation that has not been
-              checked word for word. Say which. */}
-          <ScriptureNote rendering={tab === "weekly" ? "unverified" : "paraphrase"} />
+              children; the weekly ones quote the Berean Standard Bible word
+              for word (scripts/validate-family.mjs). Say which. */}
+          <ScriptureNote rendering={tab === "weekly" ? "bsb" : "paraphrase"} />
+          {tab === "weekly" && weekly.length > 0 && (
+            <p style={{ fontFamily: "var(--U)", fontSize: "15px", lineHeight: 1.6, color: "var(--ink)", margin: "0 0 var(--s-3)" }}>
+              Print every weekly devotion as a card for the table, two to a page, each passage in full:{" "}
+              <a href="/downloads/tools/family-cards-letter.pdf" style={{ color: "var(--mustard-text)", fontWeight: 600 }}>US Letter</a>{" · "}
+              <a href="/downloads/tools/family-cards-a4.pdf" style={{ color: "var(--mustard-text)", fontWeight: 600 }}>A4</a>
+            </p>
+          )}
           {(tab === "advent" || tab === "holyWeek") && (
             <p style={{ fontFamily: "var(--U)", fontSize: "15px", lineHeight: 1.6, color: "var(--ink)", margin: "0 0 var(--s-3)" }}>
               Print the whole {tab === "advent" ? "Advent" : "Holy Week"} booklet, one day to a page, with each passage in full from the Berean Standard Bible:{" "}

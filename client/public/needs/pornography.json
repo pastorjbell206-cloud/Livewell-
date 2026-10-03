@@ -191,7 +191,11 @@
         "label": "Who Was Augustine and Why Does He Still Matter?",
         "kind": "Essay"
       }
-    ]
+    ],
+    "plan": {
+      "href": "/plans/pornography",
+      "label": "Eight Weeks Out of Hiding"
+    }
   },
   "faq": [
     {

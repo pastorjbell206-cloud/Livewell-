@@ -10,8 +10,17 @@
   ],
   "studyguides": [
     "grief", "lament", "anxiety", "mental-health", "suffering", "doubt", "deconstruction",
-    "marriage", "anger", "forgiveness", "alone-in-a-crowded-church", "pastoral-health"
+    "marriage", "anger", "forgiveness", "alone-in-a-crowded-church", "pastoral-health",
+    "youth-who-am-i", "addiction-and-recovery", "divorce-and-blended-families", "when-our-parents-grow-old"
   ],
+  "studyguideTopics": {
+    "addiction-and-recovery": ["substance", "abuse"],
+    "divorce-and-blended-families": ["abuse"],
+    "marriage": ["abuse"],
+    "anger": ["abuse"],
+    "forgiveness": ["abuse"],
+    "youth-who-am-i": ["abuse"]
+  },
   "wisdom": {
     "lead": {
       "suicidal-thoughts": ["suicide"],

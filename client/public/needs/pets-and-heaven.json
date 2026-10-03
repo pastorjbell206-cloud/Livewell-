@@ -1,29 +1,141 @@
 {
   "slug": "pets-and-heaven",
-  "page": false,
+  "page": true,
   "rank": 38,
   "title": "Will I see my pet again?",
+  "seoTitle": "Do Pets Go to Heaven? Pet Loss, Grief, and the Bible",
+  "description": "Grieving a dog, cat, or other pet: what the Bible says about animals and heaven, what it leaves unsaid, and what to do this week.",
   "summary": "Grief for an animal is real grief. What Scripture says about creation's future, and what it leaves unsaid.",
   "askedAs": [
     "do pets go to heaven",
     "will I see my dog in heaven",
     "do animals have souls",
+    "what does the Bible say about animals in heaven",
     "grieving a pet",
     "pet loss",
     "my dog died",
+    "my cat died",
     "is it wrong to grieve a pet this much",
+    "putting a pet down",
+    "is it a sin to put my dog down",
+    "how to tell a child the pet died",
     "animals in the new creation"
   ],
   "states": [
-    "carrying"
+    "carrying",
+    "helping"
   ],
   "sensitivity": "ordinary",
+  "crisisTopics": [
+    "suicide",
+    "abuse"
+  ],
+  "answer": "Your animal has died, or is dying, and the grief is bigger than you expected and harder to explain. Maybe you made the decision at the vet's office this week, or an accident took a dog who was fine this morning, or the old cat who slept on your bed for years is gone. The house is too quiet, and you may feel foolish for how much it hurts. You aren't foolish. You loved a creature God made, and it's right to grieve. Will you see your pet again? The Bible doesn't promise it and doesn't rule it out, but it says more about animals, and about the God who made them, than you might expect. For tonight, it's enough to let yourself cry and tell one person who will understand. If the sadness has turned into thoughts of ending your life, call or text 988 now.",
+  "happening": "Grief for an animal often lives in small places. You reach for the leash at six o'clock, or step around the spot by the door where the dog used to sleep. The food bowl is still on the floor because putting it away feels like a second goodbye. An animal is part of the ordinary hours of a life, every day, for years, so when it dies, a hundred small habits suddenly have nowhere to go.\n\nThe grief can be fierce, and the fierceness can embarrass you. An animal greets you the same way whether the day went well or badly, and it may have been with you through a move, a divorce, an illness, or the years your children grew up. When it's gone, you lose a companion and a witness to your life. If the death was sudden, you may keep replaying what you could have done. Choosing the day to end an animal's suffering carries its own weight, and when an old animal finally fails, relief can arrive alongside the sorrow and feel like betrayal.\n\nIt's often a lonely grief, too. There's usually no funeral and no time off work, and people who have never loved an animal may tell you *it was just a dog*. Even kind friends may expect you to be fine by Monday. A child may be meeting death for the first time, and someone who lives alone may have lost the one creature they spoke to every day. And sometimes an animal's death reopens an older loss, a parent or a marriage, until you're grieving far more than one pet. If that's where you are, [Someone I love has died](/help/grief) was written for that grief too.\n\nThere are explanations, and each holds something true. People who study grief describe it as the price of attachment, and they're right: the bond was real, so the loss is real, and your body may feel it in broken sleep and a heaviness that won't lift. Christians will offer you an answer about heaven, in one direction or the other, and they're right that death raises the question. But a quick answer of either kind can skip the question underneath the tears: did this creature matter to anyone but me, and will I ever see my friend again? That question deserves an honest answer from Scripture, including an honest account of what Scripture doesn't say.",
+  "scripture": {
+    "intro": "The Bible says more about animals than many people expect, and less about what happens to them after death than many people want. These passages show God forming the animals and bringing them to us, noticing when even a sparrow falls, and promising a future for his whole creation. One of them asks outright whether a person and an animal go different ways at death, and doesn't pretend to know. They won't tell you everything about the animal you lost, but they'll tell you a good deal about the God who made it.",
+    "passages": [
+      {
+        "ref": "Genesis 2:19-20",
+        "text": "And out of the ground the LORD God formed every beast of the field and every bird of the air, and He brought them to the man to see what he would name each one. And whatever the man called each living creature, that was its name. The man gave names to all the livestock, to the birds of the air, and to every beast of the field. But for Adam no suitable helper was found.",
+        "reading": "These verses follow right after God says, “It is not good for the man to be alone” (Genesis 2:18). The animals enter the story there, formed from the same ground as the man (Genesis 2:7) and brought to him by God, and the man's first recorded act is naming them. Naming takes attention. If you named your animal and learned its moods and habits, you were doing one of the oldest things people do. The passage is honest, too: no animal was the partner the man needed, and the story doesn't pretend otherwise. But your animal was God's handiwork, and it was known by name. That's worth grieving."
+      },
+      {
+        "ref": "Matthew 10:29",
+        "text": "Are not two sparrows sold for a penny? Yet not one of them will fall to the ground apart from the will of your Father.",
+        "reading": "Jesus said this as he sent out his twelve disciples, warning them that they would be hated and some betrayed to death (Matthew 10:21-22). Two sparrows sold for a penny: they cost almost nothing. Jesus doesn't explain why sparrows fall. Matthew's Greek says simply that none falls apart from your Father, and Luke's version of the saying reads, “not one of them is forgotten by God” (Luke 12:6). So his followers need not be afraid, because “you are worth more than many sparrows” (Matthew 10:31). The point is about people. But the smaller half of the argument has to be true for the larger half to work."
+      },
+      {
+        "ref": "Ecclesiastes 3:19-21",
+        "text": "For the fates of both men and beasts are the same: As one dies, so dies the other—they all have the same breath. Man has no advantage over the animals, since everything is futile. All go to one place; all come from dust, and all return to dust. Who knows if the spirit of man rises upward and the spirit of the animal descends into the earth?",
+        "reading": "The Teacher, as the book calls its speaker, looks hard at life “under the sun” (Ecclesiastes 1:3), and this is one of the hardest things he sees. He isn't raising animals up; he's bringing us down. God tests people, he says, “so that they may see for themselves that they are but beasts” (Ecclesiastes 3:18), sharing their breath and returning to the same dust. Then he asks whether the human spirit rises and the animal's goes down into the earth, and he doesn't answer. He offers no comfort here, and Scripture kept his words anyway, so the Bible doesn't hurry you past the grave or claim to know more than it does. The rest of Scripture answers part of his question: in Christ the dead will be raised, “those who belong to Him” (1 Corinthians 15:23), and the whole creation will be set free (Romans 8:21). About the animal you loved, it leaves the question standing, and leaves it with God."
+      },
+      {
+        "ref": "Isaiah 11:6-9",
+        "text": "The wolf will live with the lamb, and the leopard will lie down with the goat; the calf and young lion and fatling will be together, and a little child will lead them. The cow will graze with the bear, their young will lie down together, and the lion will eat straw like the ox. The infant will play by the cobra’s den, and the toddler will reach into the viper’s nest. They will neither harm nor destroy on all My holy mountain, for the earth will be full of the knowledge of the LORD as the sea is full of water.",
+        "reading": "Isaiah is describing the reign of a coming king, a shoot from the stump of Jesse, David's father (Isaiah 11:1), and Paul applied the next verse to Christ (Romans 15:12). When the prophet pictures that king's peace, he fills it with animals: predator and prey lying down together, a toddler reaching into the viper's nest unharmed. Some readers take the passage as a promise about animals themselves, others as a picture of a world without violence, and the book returns to the scene in its vision of “new heavens and a new earth” (Isaiah 65:17, 25). On either reading, the prophet's picture of the world set right is full of creatures, and nothing in it harms or destroys. What the passage doesn't do is name which animals, or tell you whether the one you lost will be among them."
+      },
+      {
+        "ref": "Romans 8:19-22",
+        "text": "The creation waits in eager expectation for the revelation of the sons of God. For the creation was subjected to futility, not by its own will, but because of the One who subjected it, in hope that the creation itself will be set free from its bondage to decay and brought into the glorious freedom of the children of God. We know that the whole creation has been groaning together in the pains of childbirth until the present time.",
+        "reading": "Paul wrote this to the believers in Rome, just after saying that present sufferings can't compare with the glory to come (Romans 8:18). Here he widens the hope to the whole creation. It was subjected to futility and is in bondage to decay, and it groans like a woman in labor, pains that lead to a birth. Its future is bound up with the future of God's children, and we groan with it: “we ourselves... groan inwardly as we wait” (Romans 8:23). Your animal's death belongs to that bondage to decay, and your grief belongs to that groaning. Paul doesn't say what the creation's freedom will mean for one particular creature, and no one should promise you more than he does. What he does say is that the groaning is labor, and labor ends in birth."
+      }
+    ]
+  },
+  "whyHard": "Part of what makes this grief hard is that the world gives it nowhere to go. A death in the family brings a funeral and food at the door; an animal's death usually brings neither, and you may be back at work the next morning hoping no one asks about your eyes. The grief scholar Kenneth Doka called this disenfranchised grief, in a 1989 book by that name: the grief of a loss that isn't openly acknowledged or publicly mourned. Losing a pet often fits, so people grieve alone and decide the grief itself is the problem.\n\nSome of us lean on our animals more than we admit. A dog that meets you at the door after an empty day can become the most faithful presence in your week. That says something good about the animal and something harder about the rest of us. If a widow's closest companion was her dog, the dog was a gift, and the loneliness around it is partly the church's failure, mine included.\n\nThe question about heaven has its own history. Thomas Aquinas, writing in the thirteenth century, taught that animals have souls, the life by which they sense and move, but that an animal's soul has no activity of its own apart from its body and so does not outlast it, as a human soul does. Christians who reason this way see animals as good gifts for this life, formed from the same ground and given the same breath, while only human beings bear God's image (Genesis 1:27) and resurrection is promised to those who belong to Christ. Their caution is a kind of reverence: they won't say more than Scripture says.\n\nOthers have read the same Bible and hoped for more. In a sermon on Romans 8 called *The General Deliverance*, John Wesley argued that the animals, which share the creation's groaning, will share in their measure in its freedom. C. S. Lewis, in *The Problem of Pain* (1940), tentatively suggested that a tame animal, whose personality is largely the gift of the people who love it, might share in their immortality. Both men were taking seriously a God who forgets no sparrow and means to set his creation free.\n\nMany of us absorbed a picture of heaven as souls in the clouds, with no room for animals, and in that picture the question about your dog sounds childish. So it gets a quick answer: *animals don't have souls*, said with a shrug, or a card about pets waiting at a rainbow bridge, given with a hug. The first defends a doctrine and leaves a grieving person alone. The second is kindly meant, but it promises more than Scripture does. Both are tempting, to pastors as much as anyone, because each one ends a conversation we don't know how to have.\n\nIf you don't believe any of this, you may hear the whole question as proof that heaven is a wish, and some of that suspicion is fair; people furnish heaven with whatever they can't bear to lose, Christians included. But a faith invented to make us feel better would have promised every beloved animal a place by the fire. Scripture gives you a God who feeds the ravens (Luke 12:24) and remembers the sparrows, a creation promised its freedom, and about your particular animal, a silence it won't fill. That restraint proves nothing by itself, but it does suggest that on this question, at least, the Bible isn't simply telling us what we want to hear.\n\nSo grief for a creature God formed from the ground, and included in his covenant with every living thing after the flood (Genesis 9:10), is nothing to be ashamed of. And the question it raises isn't childish. It asks how far God's compassion reaches. Scripture leaves some of your questions open, but it answers that one: “His compassion rests on all He has made” (Psalm 145:9).",
+  "thisWeek": {
+    "intro": "You don't have to settle every question this week. If your animal is still alive and you're facing a hard decision, start with the first step. If that's behind you, start with the second, and take the rest as you're able.",
+    "steps": [
+      {
+        "title": "If you're facing the decision",
+        "body": "Ask your veterinarian plain questions: *Is she in pain? What can still be done, and what would it cost her? What happens if we wait?* Then decide for the animal's sake, which sometimes means letting go sooner than you want and sometimes means waiting. Caring for an animal can mean choosing a gentle end, and that choice can be mercy. If you can bear to stay with her at the end, stay; if you can't, that isn't a failure of love."
+      },
+      {
+        "title": "Let yourself grieve, and tell someone",
+        "body": "Don't apologize for crying, and don't rush yourself back to normal. Tell one person what happened, ideally someone who has loved an animal and will understand. If you need a day off, ask for it plainly. You shouldn't have to carry this in secret, and you don't owe anyone an explanation for why it hurts so much."
+      },
+      {
+        "title": "Say goodbye on purpose",
+        "body": "Mark the end in some way: a burial where it's allowed, a place for the ashes, a few words and a prayer with the people who loved the animal too. Let the children help. Thank God out loud for particular things, like the welcome at the door or the weight at the foot of the bed; Psalm 104 can lend you words. Keep the collar if you want to, and put the bowl away when you're ready, not before."
+      },
+      {
+        "title": "Plan for the empty hours",
+        "body": "The hardest times may be the ones your animal used to fill, like the morning walk or the moment you come home. Don't leave those hours empty and dreaded. Walk the old route anyway, or call a friend at that hour. And don't rush to bring home another animal; wait until you can welcome one for itself, not as a replacement."
+      },
+      {
+        "title": "Notice what else you're grieving",
+        "body": "If this death has opened an older loss, the parent who gave you that dog or the marriage it outlasted, that isn't foolish either. Name the older loss to God and to someone you trust, and read [Someone I love has died](/help/grief), which was written for that grief."
+      }
+    ]
+  },
+  "moreHelp": {
+    "body": "Grief for an animal usually softens with time, honest prayer, and a few people who take it seriously. Sometimes it doesn't: it stays heavy for months, or it leaves someone who lives alone in a silence that turns into despair. Neither is foolish, and both deserve real help.\n\nYour veterinarian may know of a pet loss support group or support line, where no one will need anything explained. A pastor can pray with you and help you say goodbye. If the grief is keeping you from sleeping, eating, or working, see your doctor, and consider a licensed counselor who works with grief: a professional counselor (LPC), a marriage and family therapist (LMFT), a clinical social worker (LCSW), or a psychologist. Ask your doctor for a referral, search your insurer's directory, or ask a pastor which counselors they trust. If you want a Christian counselor, ask for one, and either way confirm with your state's licensing board that they're licensed.",
+    "signs": [
+      "You've had thoughts of ending your life or of not wanting to wake up. Call or text 988 now, or call 911 if you're in danger.",
+      "Weeks have passed and you still can't sleep, eat, work, or get out of bed.",
+      "Guilt about how your animal died replays for weeks and won't let you rest.",
+      "You live alone and have gone days without talking to anyone.",
+      "A child's grief has gone on for weeks, with bedtime fears or trouble at school: tell their pediatrician. If a child talks about wanting to die, call or text 988.",
+      "Someone hurt or killed your animal on purpose. Report it to animal control or the police.",
+      "Someone at home has hurt or threatened your animal to frighten or control you. The National Domestic Violence Hotline at the end of this page can help you plan for safety; if you're in danger, call 911."
+    ],
+    "firstCall": "You don't need the right words. You can say: *My dog died a month ago, and I'm not coping. I can't sleep, and I feel foolish that it's this hard.* Ask whether they're licensed in your state, whether they've worked with grief, what they charge, and whether they take your insurance or offer a sliding scale. If your faith matters to you, tell them, and ask whether it will be welcome.",
+    "cost": "Pet loss support groups, and the grief groups some churches host, often cost nothing. An employee assistance program at work may cover a few counseling sessions, and community mental health centers and university training clinics often charge on a sliding scale. The 988 Lifeline is free. If the last veterinary bills were heavy, ask the clinic about a payment plan, and tell your pastor; a church may be able to help."
+  },
+  "helping": {
+    "body": "When someone you love has lost an animal, take the grief at its real size, and don't compare it with a human death in either direction. Say the animal's name and ask for a story. A note a week later can mean a great deal, because by then others may have moved on.\n\nIf you're a parent, let your child grieve in their own way, which may look like play, questions at odd hours, or tears weeks later. Answer honestly, and let them see that you're sad too.\n\nIf you're a pastor, don't treat this as too small for your attention. Someone may feel foolish bringing it to you, so ask. An older member who lives alone may have lost the companion of every day, and that's a reason to visit. When someone asks whether they'll see their animal again, resist both quick answers: tell them what Scripture says and what it doesn't, and that they can trust the animal they loved to the God who made it.",
+    "say": [
+      "I'm so sorry. I know how much you loved him.",
+      "Tell me about her. What was she like?",
+      "It makes sense that you miss her this much.",
+      "God made him, and Jesus said not even a sparrow is forgotten."
+    ],
+    "dontSay": [
+      "It was just a dog.",
+      "You can always get another one.",
+      "At least it wasn't a person.",
+      "Animals don't have souls, so don't worry about it.",
+      "He's definitely in heaven waiting for you."
+    ],
+    "next": "Put the date in your calendar and check in a week later, and again when the anniversary comes. Offer something specific, like a walk on the old route together or dinner on a hard evening. If the person lives alone, visit. If the grief has turned into talk of not wanting to be here, ask plainly whether they're thinking about suicide; asking doesn't put the idea in their head. Stay with them and help them call or text 988, or call 911 if they're in danger now."
+  },
+  "prayer": "Lord God, you made the animals and saw that they were good, and you brought them to us to name. You gave me this one, and I thank you for the years we had and for every welcome at the door.\n\nI miss my friend more than I can explain, and some nights the quiet in this house is hard to bear. If I chose the day to end the suffering, help me believe it was mercy. If I missed something, you know what I couldn't see; forgive what was mine to confess, and lift the guilt that isn't.\n\nYou feed the ravens, and not one sparrow is forgotten by you. So I give this creature back to you, the one who made it, and I trust you with what I can't know.\n\nYou have promised to set your creation free, and I don't know everything that will mean. I know you are good, and that your compassion rests on all you have made. Hold my grief until it softens, and teach me to love what is still here. Amen.",
   "kit": {
     "read": [
       {
-        "href": "/help/grief",
-        "label": "Someone I love has died",
-        "kind": "Page"
+        "href": "/how-tos/ss-how-to-grieve-well",
+        "label": "How to Grieve Well",
+        "kind": "How-to"
+      },
+      {
+        "href": "/how-tos/parenting-how-to-answer-hard-questions-about-god",
+        "label": "How to Answer Your Child's Hard Questions About God",
+        "kind": "How-to"
+      },
+      {
+        "href": "/writing/what-is-heaven-actually-like",
+        "label": "What Is Heaven Actually Like?",
+        "kind": "Essay"
       },
       {
         "href": "/wisdom/heaven-and-eternity",
@@ -31,15 +143,119 @@
         "kind": "Wisdom"
       },
       {
-        "href": "/theology/doctrine/last-things",
-        "label": "How Does It End?",
-        "kind": "Page"
+        "href": "/life/creation-and-our-keeping",
+        "label": "What Does the Bible Say About Caring for Creation?",
+        "kind": "Life"
       },
       {
-        "href": "/studyguides/heaven-and-hell",
-        "label": "Heaven and Hell: A Bible Study on the Life to Come",
-        "kind": "Study guide"
+        "href": "/theology/doctrine/anthropology",
+        "label": "What Is a Human Being?",
+        "kind": "Page"
       }
     ]
+  },
+  "faq": [
+    {
+      "q": "Do pets go to heaven?",
+      "a": "The Bible doesn't say whether a particular animal will be raised, so no one can honestly tell you for certain either way. It does promise that “the creation itself will be set free from its bondage to decay” (Romans 8:21). Some Christians reason that resurrection is promised to “those who belong to Him” (1 Corinthians 15:23), and that in the new creation, where God “will wipe away every tear” (Revelation 21:4), no one will be left grieving what they lost. Others, John Wesley and C. S. Lewis among them, have hoped animals will share in creation's freedom, and some extend that hope to our own animals, since the One on the throne says, “Behold, I make all things new” (Revelation 21:5). Both trust the same God with the animal you loved."
+    },
+    {
+      "q": "Do animals have souls?",
+      "a": "It depends on what you mean by soul. If you mean the life and breath that make a creature alive and aware, the Old Testament uses the same Hebrew word, nephesh, for the animals as living creatures (Genesis 1:24) and for the first man, who “became a living being” (Genesis 2:7). If you mean a self that survives death and stands before God, Scripture doesn't say that of animals, and Christian thinkers such as Thomas Aquinas have said no. What sets human beings apart is God's image (Genesis 1:27). Ecclesiastes asks the hard question outright, “Who knows if the spirit of man rises upward and the spirit of the animal descends into the earth?” (Ecclesiastes 3:21), and the rest of Scripture answers it for human beings with the promise of resurrection. For animals, it leaves the question open."
+    },
+    {
+      "q": "Is it wrong to grieve a pet this much?",
+      "a": "No. You loved a creature God made and called good, one that shared the ordinary hours of your life for years, and losing it hurts. Scripture knows this bond. When the prophet Nathan wanted to reach King David's conscience, he told of a poor man's lamb that “grew up with him and his children” and “slept in his arms” (2 Samuel 12:3), and David burned with anger at the man who took it. The parable was about David's own sin, but it only works because its hearers knew that kind of love. Grieving an animal deeply doesn't mean you love people less. If the grief seems far bigger than one pet, it may be carrying an older loss, and that's worth bringing to God and to someone you trust."
+    },
+    {
+      "q": "Is it wrong to put my pet down?",
+      "a": "Choosing a peaceful death for an animal that can't get better is a decision faithful people make out of love. Scripture doesn't address it directly, but it does say, “A righteous man regards the life of his animal” (Proverbs 12:10). The Hebrew says the righteous person knows his animal's life, and that kind of knowing is what lets a person see when the suffering won't ease and ask the veterinarian the hard question. If the decision came sooner than you wanted, or money and circumstances limited what you could do, a limit like that isn't a failure of love. If guilt keeps replaying the day, tell God the truth about it, and talk with someone you trust."
+    },
+    {
+      "q": "How do I tell my child our pet died?",
+      "a": "Tell them soon, in plain words. Use the word *died*; young children can take *put to sleep* or *went away* literally and become afraid of bedtime or keep waiting at the door. If you chose euthanasia, you can say the vet helped her die peacefully because her body couldn't get better. Let your child see you sad, answer the same questions more than once, and let them help say goodbye. If they ask whether she's in heaven, don't promise and don't slam the door: *I don't know everything God will do, but I know God made her and cares for what he made.*"
+    },
+    {
+      "q": "Will there be animals in the new creation?",
+      "a": "The prophets' pictures of the world God is making include them. Isaiah saw the wolf living with the lamb (Isaiah 11:6), and the book returns to that scene in its vision of “new heavens and a new earth” (Isaiah 65:17, 25); Paul wrote that the whole creation waits to be set free (Romans 8:19-21). Christians read these pictures in different ways. Some take them to mean the renewed earth will have animals in it; others hold that animals were given for this life and will have no place in the next, and read the prophets' animals as pictures of peace. Either way, the hope Scripture holds out is “a new heaven and a new earth” (Revelation 21:1), and whether a particular animal will be there, it doesn't say."
+    }
+  ],
+  "related": [
+    "grief",
+    "loneliness",
+    "suffering"
+  ],
+  "slots": [
+    {
+      "section": "faq",
+      "note": "Do pets go to heaven: where James lands, in his own words and from his own reading of Scripture. The answer as written gives the two main lines of Christian reasoning at their strongest (resurrection promised to those who belong to Christ, with every tear wiped away; creation set free and all things made new), says plainly what Scripture does and does not say, and does not land. The same holds for the two paragraphs on Aquinas and on Wesley and Lewis in Why this is so hard, and for the FAQ on whether the new creation will have animals in it at all, which states both readings of Isaiah's animals and does not land either."
+    },
+    {
+      "section": "whyHard",
+      "note": "The paragraph on the two quick answers (the shrug and the rainbow bridge) once had James say he feels the pull of both. That was cut as a first-person claim he has not made himself; the paragraph now says both answers tempt pastors as much as anyone. If James wishes, in his own words, he could say whether he has reached for either one."
+    },
+    {
+      "section": "whyHard",
+      "note": "James came to faith from atheism. In his own words, he could add what he believed about death, and about animals, before faith, beside the paragraph that answers the skeptic. The section stands without it."
+    },
+    {
+      "section": "thisWeek",
+      "note": "As a father of five sons, James could add, if his family has lost an animal, a few sentences on how they said goodbye or how he answered his sons' questions about heaven. Only from James; nothing is assumed about his family or any pet."
+    },
+    {
+      "section": "helping",
+      "note": "If James wishes, what being a pastor has taught him about people who feel foolish bringing the death of an animal to their church, in his own words. The page invents no conversations or congregants."
+    }
+  ],
+  "sources": [
+    {
+      "claim": "Kenneth J. Doka gave the name disenfranchised grief, in a 1989 book by that name, to grief for a loss that is not openly acknowledged, socially supported, or publicly mourned.",
+      "cite": "Kenneth J. Doka, ed., Disenfranchised Grief: Recognizing Hidden Sorrow (1989). The writer confirmed it through search excerpts only. The second-pass editor kept it because Doka's term and this book are standard in the grief literature, and worded the page so it does not depend on the exact year he first used the term. Re-check against the book before release.",
+      "url": "https://www.ebsco.com/research-starters/psychology/disenfranchised-grief"
+    },
+    {
+      "claim": "Thomas Aquinas taught that the souls of brute animals are not subsistent, having no operation of their own apart from the body, and so perish with the body, while the human soul is subsistent and incorruptible.",
+      "cite": "Thomas Aquinas, Summa Theologiae I, q. 75, a. 3 (whether the souls of brute animals are subsistent) and a. 6 (whether the human soul is incorruptible). Standard Thomist teaching; the writer confirmed a. 3 through search excerpts only, and neither pass could open the text here. Re-check before release.",
+      "url": "https://www.ccel.org/ccel/aquinas/summa.FP_Q75_A3.html"
+    },
+    {
+      "claim": "John Wesley's sermon The General Deliverance, on Romans 8:19-22, argues that the animal creation will be delivered from the bondage of corruption into a measure, according as they are capable, of the liberty of the children of God.",
+      "cite": "John Wesley, Sermon 60, The General Deliverance (Wesley Center Online, 1872 edition). The sermon, its text, and its thesis are well known; the page states only the thesis. Confirmed through search excerpts only; re-check before release.",
+      "url": "https://wesley.nnu.edu/john-wesley/the-sermons-of-john-wesley-1872-edition/sermon-60-the-general-deliverance/"
+    },
+    {
+      "claim": "In The Problem of Pain (1940), in the chapter on animal pain, C. S. Lewis tentatively suggested that the personality of tame animals is largely the gift of their human masters and that such animals may have an immortality in relation to those masters.",
+      "cite": "C. S. Lewis, The Problem of Pain (1940), ch. 9, Animal Pain. Confirmed through search excerpts only, and the url is a quotation index, not the book; re-check against the book before release. The draft also said Lewis later called the idea a supposal in Letters to Malcolm (1964); that could not be confirmed and was cut in the second pass.",
+      "url": "https://www.lewisquotes.com/quotations/resurrection-of-the-body/the-place-of-animals.html"
+    },
+    {
+      "claim": "The Hebrew word nephesh (often translated soul) is used of the animals as living creatures (Genesis 1:24; 2:19; 9:10) and of the man who became a living being (Genesis 2:7); in Proverbs 12:10 the righteous man knows (yada) the nephesh of his animal; in Matthew 10:29 the Greek reads apart from your Father, with no word for will; Ecclesiastes 3:19 and 3:21 use ruach for the breath and spirit of both.",
+      "cite": "STEPBible Data (Tyndale House, Cambridge), TAHOT and TAGNT word tagging with the TBESH lexicon, as served in the site's own Study Bible (client/public/bible/ch, lex); checked word by word in this repository.",
+      "url": "https://www.STEPBible.org"
+    },
+    {
+      "claim": "With children, use the word died; young children can take euphemisms such as put to sleep literally, which can confuse or frighten them.",
+      "cite": "Nemours KidsHealth, When a Pet Dies: Helping Kids Cope. Confirmed through search excerpts only; the page keeps only this general counsel, which is standard in guidance on children and grief. Re-check before release.",
+      "url": "https://kidshealth.org/en/parents/pet-death.html"
+    },
+    {
+      "claim": "A pet's death may be a child's first experience of loss, and children are helped by honest, simple explanations.",
+      "cite": "American Academy of Child and Adolescent Psychiatry, Facts for Families: When a Pet Dies. Confirmed through search excerpts only; the page keeps only this general counsel. Re-check before release.",
+      "url": "https://www.aacap.org/AACAP/Families_and_Youth/Facts_for_Families/FFF-Guide/When-A-Pet-Dies-078.aspx"
+    },
+    {
+      "claim": "It is all right for children to see the adults around them grieve a pet, and including children in saying goodbye can help them.",
+      "cite": "American Academy of Pediatrics, HealthyChildren.org, When a Pet Dies: How to Help Your Child Cope. Confirmed through search excerpts only; the page keeps only this general counsel. Re-check before release.",
+      "url": "https://www.healthychildren.org/English/healthy-living/emotional-wellness/Building-Resilience/Pages/when-a-pet-dies-how-to-help-your-child-cope.aspx"
+    },
+    {
+      "claim": "Asking someone directly whether they are thinking about suicide does not increase suicidal thoughts or behavior.",
+      "cite": "National Institute of Mental Health, 5 Action Steps to Help Someone Having Thoughts of Suicide; cited already on the grief page.",
+      "url": "https://www.nimh.nih.gov/sites/default/files/documents/health/publications/5-action-steps-help-someone-having-thoughts-suicide.pdf"
+    }
+  ],
+  "reviewed": {
+    "on": "2026-10-01",
+    "notes": "Second pass (editor), 2026-10-01; supersedes the writer's self-check. Validator clean (node scripts/validate-needs.mjs pets-and-heaven) and the CarePage render test passes, including /help/pets-and-heaven. Truth: every setting re-read in the BSB with --verses (Genesis 2:15-23; Matthew 10:16-31 with Luke 12:6-7 and 12:24; Ecclesiastes 1:1-3, 3:16-22 and 12:7; Isaiah 11:1-10 with Romans 15:12 and Isaiah 65:17, 25; Romans 8:18-23; 1 Corinthians 15:20-24; Revelation 21:1-5; 2 Samuel 12:1-7; Proverbs 12:10; Psalm 145:9; Genesis 9:9-12; Hosea 2:18), and the word claims re-checked in the site's tagged data (nephesh in Genesis 1:24, 2:7, 2:19; yada with nephesh in Proverbs 12:10; no word for will in Matthew 10:29; ruach in Ecclesiastes 3:19, 21). Outside sources could not be opened in this pass either, so the page keeps only what is standard and certain. Doka now rests on his 1989 book by that name, not on the year he coined the term. The Lewis sentence no longer says he later called the idea a guess in Letters to Malcolm (unconfirmed, cut); The Problem of Pain's own caution stands (tentatively suggested). The claim that some veterinary schools run free pet loss lines was generalized to ask your veterinarian, and its source removed. The three child-guidance sources were narrowed to the general counsel the page uses (say died, be honest, let children see you grieve, include them). The Aquinas source adds q. 75 a. 6 for the human soul outlasting the body. Publisher names dropped from the Doka and Lewis citations. Scripture: the Ecclesiastes reading now meets the hard text on its own terms (3:18: the Teacher is humbling people, not raising animals, and offers no comfort), and the intro no longer says it asks the reader's own question. The Isaiah reading now has the toddler reach into the viper's nest, as the BSB does, and says the passage names no particular animal. The Romans 8 reading no longer implies decay will not have the last word over one pet; it says no one should promise more than Paul does. The souls FAQ no longer uses Ecclesiastes 3:21 to say the Bible keeps the question open for human beings. Nathan's lamb is quoted without like a daughter, so the page never sets a pet beside a child, and the FAQ says the parable was about David's sin. Theology: the new-creation FAQ tilted (they point the same direction; full of creatures); it now states the view that animals belong to this life alone beside the hopeful one, lets Revelation 21:1 say the rest, and the faq slot covers it. Do pets go to heaven lost its hedge (perhaps) and no longer credits Wesley and Lewis with Revelation 21:5 reasoning. Care: the answer now ends with 988 for the reader at midnight, as sibling ordinary pages do, and no longer tells someone whose animal is dying that it is gone. A sign was added for an animal hurt or threatened by someone at home to frighten or control, with the National Domestic Violence Hotline and 911, and crisisTopics now includes abuse (quick exit and the abuse lines at the foot). The euthanasia answer adds that a decision bounded by money or circumstances is not a failure of love; nothing on the page touches end-of-life decisions for a person. License types added to more help. The prayer no longer says more than I can bear or asks God to teach self-forgiveness; it separates real guilt from false. Suicide lines checked against safe messaging. Voice: the rainbow bridge is now kindly meant but promises more than Scripture does. I'm a pastor, and I feel the pull of both was cut as a first-person experience (slot added); the paragraph implicates pastors and we instead. The skeptic paragraph no longer claims the Bible is a poor candidate for wishful thinking. Two greeting-card lines on grief and love cut. The second Not X. Y. in Why this is so hard removed; anaphora runs in What's going on, the Ecclesiastes reading, and the helping openers broken up. Links: every kit target reopened. Dropped the heaven-and-hell study guide (it states where James lands on hell; the clean Heaven and Eternity topic already serves this page), the animal-suffering essay (many unverifiable first-person experiences, and a landing against the view that animal death came with the Fall; /help/suffering in related covers the question), and How Does It End? (millennial timelines with James's landing, nothing on animals). Kept What Is a Human Being? (truthful label, not the best resource, no clean page on the soul; it voices James's landing on the intermediate state and one unverifiable line about praying beside dying believers) and What Is Heaven Actually Like? (one unverifiable line: it surprised me when I first heard it, checked against the text more times than I can count). The page echoes none of them. The needs index must be rebuilt (page, crisisTopics, and guides changed)."
   }
 }

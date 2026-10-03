@@ -1,8 +1,10 @@
 {
   "slug": "diagnosis",
-  "page": false,
+  "page": true,
   "rank": 47,
   "title": "I've been given a hard diagnosis",
+  "seoTitle": "Facing a Hard Diagnosis: Faith, Fear, and What Helps",
+  "description": "After a hard diagnosis: the fear, praying for healing without false promises, what the Bible says, what to do this week, and how to help someone who is sick.",
   "summary": "For the frightening news, the long illness, and the fear of dying, faced honestly and not alone.",
   "askedAs": [
     "terminal diagnosis",
@@ -11,7 +13,14 @@
     "chronic pain",
     "fear of dying",
     "facing death",
-    "sick and scared"
+    "sick and scared",
+    "how to pray when you're sick",
+    "what to do after a cancer diagnosis",
+    "hospice",
+    "am I being punished",
+    "Bible verses for the sick",
+    "what to say to someone with cancer",
+    "how to tell my kids I have cancer"
   ],
   "states": [
     "carrying",
@@ -21,11 +30,131 @@
   "crisisTopics": [
     "suicide"
   ],
+  "answer": "You've been told something about your body that can't be untold: cancer, an illness with no cure, pain that won't go away, or a number of months. Maybe it happened today and you're still sitting in the car, or maybe you've lived with it for years and you're tired in ways nobody sees. You may be afraid of the treatment, the pain, the bills, dying itself, and what happens to the people who depend on you. That fear doesn't mean your faith has failed. Tonight you don't have to understand any of it. Write down the questions you're afraid to ask your doctor, and tell one person how scared you really are. If the fear has turned into not wanting to live, or into thoughts of ending your life, call or text one of the lines just below, tonight.",
+  "happening": "It may have started with a sentence in a small room, a phone call at work, or results that appeared in a patient portal before anyone explained them. Afterward, life split into before and after. You may remember the doctor's face and almost none of the words. Then came the scans and the waiting, the late nights searching for odds, and the phone calls you dreaded making.\n\nThe fear has many rooms, and not all of them are about dying. If your illness is one you'll live with rather than die from, the fear is no lighter: a life rearranged around a body that won't cooperate, a tiredness no one can see, friends who tell you *but you look fine*, and grief for the life you had planned. Some people, worn down by pain or by feeling like a weight on everyone, start to believe the people they love would be better off without them, or start thinking about ending their lives. Are you having thoughts like that? If you are, they come from how much you're carrying, and what they say about the people who love you isn't true. Tell your doctor, and call or text 988 today.\n\nThe common explanations each hold something true. Your doctors can tell you what the disease is and what can be done, and you should use everything they know; but a prognosis describes how an illness tends to go, not how to live inside one. Counselors will tell you that shock, fear, numbness, and grief are ordinary responses to news like this, and they're right, though knowing it doesn't quiet three in the morning. Christians will tell you to pray, and they're right, because God hears and God heals. But some add things God never said: that you'll be cured if you believe enough, that they know why this happened, or that sickness is a sign of hidden sin.\n\nWhat they all leave out is the person who has to wake up tomorrow inside this body. A diagnosis drags into the open what we spend much of our lives not looking at: that we're mortal, that we don't control the number of our days, and that sooner or later we'll need to be carried. That's why it shakes faith as well as plans. The questions under the medical ones are older than medicine: *Why me? Is God angry with me? Will he heal me? And if he doesn't, will he still be there?*",
+  "scripture": {
+    "intro": "Scripture doesn't promise that every sickness will be cured in this life, and it doesn't ask the sick to keep quiet. It gives you a psalm prayed from a sickbed, the church called to the bedside, an apostle honest about a body wearing out, and the promise of a body raised.",
+    "passages": [
+      {
+        "ref": "Psalm 6:2-3, 6, 9",
+        "text": "Be merciful to me, O LORD, for I am frail; heal me, O LORD, for my bones are in agony. My soul is deeply distressed. How long, O LORD, how long? ... I am weary from groaning; all night I flood my bed with weeping and drench my couch with tears. ... The LORD has heard my cry for mercy; the LORD accepts my prayer.",
+        "reading": "This psalm bears David's name, and it's the prayer of someone whose body and soul are failing together. It opens with a fear you may know, that his suffering is God's anger: “O LORD, do not rebuke me in Your anger” (Psalm 6:1). Then it asks plainly to be healed, asks how long, and even argues for more time: “who can praise You from Sheol?” (Psalm 6:5). At verse 8 the psalm turns: the LORD has heard. It ends before we learn whether the pain stopped, and God's people kept his prayer in their prayer book anyway. In this psalm, asking to be healed, asking how long, and weeping through the night are what faith sounds like."
+      },
+      {
+        "ref": "James 5:14-15",
+        "text": "Is any one of you sick? He should call the elders of the church to pray over him and anoint him with oil in the name of the Lord. And the prayer offered in faith will restore the one who is sick. The Lord will raise him up. If he has sinned, he will be forgiven.",
+        "reading": "Near its close, the letter of James pictures the church at a bedside. The sick person calls; the elders come, pray, and anoint him, and the prayer offered in faith is theirs, so nothing here lets anyone tell the sick they're still sick because they believed too little. Christians read the promise in more than one way, and the words allow it: the word translated restore is the ordinary word for save and is also used of being made well, and raise him up can mean rising from a sickbed or from the dead. Many read it as God's promise to heal the body in answer to the church's prayer, as the next verse's “so that you may be healed” suggests (James 5:16), and they pray boldly, expecting him to act. Others hear the words reaching past this life as well, to the day God raises the dead, so the promise holds even when the body isn't restored here. Catholic and Orthodox Christians receive the passage as the ground of a sacrament, the anointing of the sick, through which Christ strengthens the sick, forgives sins, and heals as he wills. Every reading calls the church to the bedside."
+      },
+      {
+        "ref": "2 Corinthians 4:16-18",
+        "text": "Therefore we do not lose heart. Though our outer self is wasting away, yet our inner self is being renewed day by day. For our light and momentary affliction is producing for us an eternal weight of glory that is far beyond comparison. So we fix our eyes not on what is seen, but on what is unseen. For what is seen is temporary, but what is unseen is eternal.",
+        "reading": "Be careful with the word “light.” Paul wrote this after being beaten, stoned, and shipwrecked (2 Corinthians 11:25), and in the same letter he says he once felt “under the sentence of death” (2 Corinthians 1:9). He sets affliction on a scale beside an eternal weight of glory, and only by that comparison is it light. He's honest that the outer self is wasting away, and he says why he doesn't lose heart: “the One who raised the Lord Jesus will also raise us with Jesus” (2 Corinthians 4:14). Until then the renewal comes day by day, one day's strength at a time."
+      },
+      {
+        "ref": "1 Corinthians 15:42-44",
+        "text": "So will it be with the resurrection of the dead: What is sown is perishable; it is raised imperishable. It is sown in dishonor; it is raised in glory. It is sown in weakness; it is raised in power. It is sown a natural body; it is raised a spiritual body. If there is a natural body, there is also a spiritual body.",
+        "reading": "Some in the church at Corinth were saying there is no resurrection of the dead (1 Corinthians 15:12), and Paul anticipates the next question: “With what kind of body will they come?” (1 Corinthians 15:35). He answers with a farmer's picture: a seed goes into the ground, and God gives it a body it never had as a seed (1 Corinthians 15:37-38). The Christian hope isn't escape from the flesh that has failed you. It's that this body, sown in weakness, will be raised in power. Paul rests all of it on one event, Christ raised as the firstfruits, with those who belong to him to follow (1 Corinthians 15:20, 23). Sown in weakness is not the end of the sentence."
+      }
+    ]
+  },
+  "whyHard": "Frightening news about the body raises a question that isn't medical at all: *what did I do to cause this?* Jesus' disciples asked it about a man born blind, “who sinned, this man or his parents” (John 9:2), and Jesus refused to read the blindness as anyone's sentence (John 9:3). Scripture sometimes ties a sickness to sin, but his answer takes away our right to read that tie off a person's body. Job's friends sat with him in silence for seven days, then spent much of a long book insisting his suffering had to be his fault, and at the end God said they had not spoken accurately about him (Job 42:7). The instinct survives because it promises safety: if sickness comes from sin or weakness, the well can stay well by being good.\n\nOur age hasn't outgrown it; we've only changed the vocabulary. In *Illness as Metaphor* (1978), written after her own diagnosis with cancer, the essayist Susan Sontag argued that popular psychological theories of illness place the blame on the ill, as if cancer grew out of feelings a person had kept bottled up, and she noticed how much of our talk about cancer is borrowed from war. We still speak of people who beat it and people who lost their battle, as if the outcome measured the patient.\n\nThe church has its own version, and it wounds more deeply because it uses God's name. The Word of Faith movement, which grew up in the twentieth century, teaches that believers have a right to physical health and can claim it by faith spoken aloud, so a sickness that stays looks like a failure of believing. Its teachers start from something true: God does heal, and a church that never expects him to act has a sickness of its own. But a gospel that guarantees health turns every unhealed Christian into a suspect, and it isn't the gospel Paul preached with his thorn still in his flesh (2 Corinthians 12:7-9). I'm a pastor, and pastors feel the pull of this from the other side. We want to give frightened people something, and a promise is easier to hand someone than our presence.\n\nUnderneath the blame is something deeper: we don't know how to be mortal. Modern medicine is a gift we should be grateful for, but it has trained us to treat each illness as a problem waiting for the right fix, and when the fixes run out we have no words. In 1967 Cicely Saunders, a physician whose Christian faith shaped her work, opened St Christopher's Hospice in London, convinced that the dying suffer what she called total pain, in body, mind, relationships, and spirit, and that all of it can be cared for even when the disease can't be cured. At its best, hospice recovers an old Christian conviction: no one should be left to die alone.\n\nIf you don't share my faith, you may suspect that the hope on this page is a story people tell themselves when the scans come back bad. I came to faith from atheism, and I won't pretend that suspicion is foolish; Christians have sometimes used heaven as a sedative. But a faith made up to soothe the sick wouldn't have kept Psalm 6, or Psalm 88, a prayer that ends in darkness, or called death an enemy (1 Corinthians 15:26). What Christianity stakes everything on is one body that walked out of a tomb, a claim about history you're free to examine (1 Corinthians 15:14).\n\nSo you are not on trial, and your body is not the evidence. Jesus counted himself among the sick: “I was sick and you looked after Me” (Matthew 25:36).",
+  "thisWeek": {
+    "intro": "None of these steps will change the diagnosis. Start with the first; if it's the only one you manage, it still counts. If you're having thoughts of ending your life, call or text 988 today, before anything else here, and in an emergency call 911.",
+    "steps": [
+      {
+        "title": "Write down your questions",
+        "body": "Before your next appointment, write down every question you have, starting with the ones you're afraid to ask. What exactly is this, and how sure are we? What are my choices, including no treatment at all, and is each one meant to cure, to control, or to keep me comfortable? What will it take out of me? How long do I have to decide? Which symptoms mean I should call right away, and whom do I call at night? Bring someone to take notes."
+      },
+      {
+        "title": "Ask about a second opinion and palliative care",
+        "body": "Ask your doctor whether a second opinion makes sense for a diagnosis this serious; it's a common request, and many insurers cover it. Then ask about palliative care, which isn't the same as hospice. It's care from a team trained to ease pain, other symptoms, and the stress of a serious illness, and you can have it from the time you're diagnosed, alongside treatment meant to cure."
+      },
+      {
+        "title": "Tell the people who need to know",
+        "body": "Decide who needs to hear the news from you, and ask one trusted person to pass along updates so you don't have to keep retelling the hardest day of your life. Tell your children the truth in words that fit their age; there's more on that below. Then let a few people into the practical details: who will drive, who will cook, who will sit with you on the hard days."
+      },
+      {
+        "title": "Pray, and let the church pray with you",
+        "body": "Ask God plainly to heal you, and ask for what you need today: sleep, courage, good doctors, the right words for the people you love. When you can't find words, read Psalm 23 aloud, a psalm that bears David's name. Tell your pastor. If you'd like, ask the elders of your church to pray over you and anoint you, as the letter of James describes (James 5:14)."
+      },
+      {
+        "title": "Put your wishes on paper",
+        "body": "Fill out an advance directive, so the people you love won't have to guess what you want. Ask your doctor or hospital for your state's forms: a living will, saying what treatment you would and wouldn't want, and a health care power of attorney, naming who decides if you can't. Talk with that person, and give your doctor a copy. For a will, see an attorney; this isn't legal advice. When Isaiah told the sick King Hezekiah, “Put your house in order” (2 Kings 20:1), Hezekiah wept and prayed for his life. You can do both."
+      }
+    ]
+  },
+  "moreHelp": {
+    "body": "Your medical team comes first for anything about your body; this page isn't medical advice and can't stand in for them. But a hard diagnosis is more than a medical matter. Ask for a palliative care team if pain or other symptoms aren't under control or treatment decisions are getting heavy, for a hospital social worker to help with insurance, work, rides, and paperwork, and for the chaplain if you'd like someone to pray with. Ask about a support group for your illness. You can ask about hospice at any point, even just to understand it.\n\nIf fear, sadness, or numbness won't lift, see a counselor; those can be signs of depression, which can be treated even alongside another illness. Ask your doctor for a referral, search your insurer's directory, or ask your pastor whom they trust. If you want a Christian counselor, ask for one, and either way confirm with your state's licensing board that they're licensed.",
+    "signs": [
+      "You've had thoughts of ending your life, or that everyone would be better off without you. Call or text 988 now, or call 911 if you're in danger.",
+      "You have a new, sudden, or severe symptom. Call your care team right away, and call 911 if it's an emergency.",
+      "Pain or other symptoms aren't under control. Call your care team today and ask for palliative care.",
+      "For two weeks or more you can't stop crying, can't sleep, or feel nothing at all. Tell your doctor, and ask about a counselor.",
+      "You don't understand your choices, or you feel pushed into a decision. Ask for a meeting with your care team or a second opinion.",
+      "The will, insurance, bills, or your job are more than you can sort out. Ask for a social worker, and see an attorney about legal papers.",
+      "A child in the family is withdrawing or talking about wanting to die. Tell their doctor or school counselor, and call or text 988 if you fear for their safety."
+    ],
+    "firstCall": "You don't need the right words. To a counselor you can say, *I was diagnosed with cancer two months ago. I'm scared all the time, I'm not sleeping, and I don't know how to talk to my kids.* Ask whether they're licensed in your state, whether they've worked with people facing serious illness, what they charge, and whether they take your insurance or offer a sliding scale. If your faith matters to you, say so.",
+    "cost": "Before the bills pile up, ask the hospital's financial counselor to explain your coverage and look for programs that help. Nonprofit hospitals must have a written financial assistance policy, so ask for it. Original Medicare covers hospice for those who qualify, with little or nothing to pay. Community mental health centers and university training clinics often offer counseling on a sliding scale. Federal law gives many workers unpaid, job-protected leave for their own serious health condition. If money is the crisis, tell your pastor; some churches keep a fund for needs like this."
+  },
+  "helping": {
+    "body": "If someone you love has been given a hard diagnosis, don't disappear because you don't know what to say. Go, and keep going. Offer something specific and then do it: a ride to treatment, dinner on Thursdays, an afternoon with the kids, a seat beside them in the waiting room. Ask before you visit, and stay away when you're sick, since some treatments make infections dangerous. Don't share their news without their permission. An illness that lasts years needs help that lasts years.\n\nLet them lead the conversation. Some days they'll want to talk about dying and some days about anything else. If they want to talk about death, don't shut it down with *you're going to beat this*; that leaves them alone with what they most need to say. If they ask you to pray, pray plainly, and ask for healing without promising it. Remember the four men who carried a paralyzed man to Jesus and opened a roof to get him there; when Jesus saw “their faith,” he spoke to the man they had carried (Mark 2:5). Pastors, visit, bring communion or anoint as your church practices, and learn the caregiver's name too. If you're the one caring for a sick husband, wife, or parent, there's a [page for caregivers](/help/caregiving).",
+    "say": [
+      "I'm so sorry. I'm not going anywhere.",
+      "I'm driving you to treatment Tuesday. What time should I come?",
+      "Do you want to talk about it, or about anything else?",
+      "You don't have to be brave with me.",
+      "I'm praying for you by name. Would you like me to pray with you now?"
+    ],
+    "dontSay": [
+      "Everything happens for a reason.",
+      "If you have enough faith, God will heal you.",
+      "Stay positive.",
+      "I knew someone who died of that.",
+      "Have you tried this cure I read about?",
+      "God won't give you more than you can handle."
+    ],
+    "next": "Call on treatment days and while they wait for results, and ask the caregiver how they're doing too. Someone near the end of life may say they're ready to go, and that can be peace rather than despair; if you can't tell which you're hearing, ask. If they talk about ending their life, or say everyone would be better off without them, ask plainly whether they're thinking about suicide; asking won't put the idea in their head. Stay with them while they call or text 988, and call 911 if they're in danger."
+  },
+  "prayer": "Lord, I'm sick, and I'm scared. You heard what the doctors said before I could tell you, so I'll tell you what they can't measure: I'm afraid of the pain, the treatment, being a burden, dying, and the people I love having to watch.\n\nBe merciful to me, for I am frail. Heal me. I'm asking plainly, because your servants asked before me and you didn't turn them away. And if this cup doesn't pass from me, teach me to pray the way your Son prayed in the garden, and to keep calling you Father in the dark.\n\nDon't let me read my body as your verdict. Forgive what needs forgiving, and don't let me carry guilt your Son has already borne. Give me strength for this one day, people to carry me when I can't walk, and the right words for the people I love.\n\nYour Son went down into death and came out of the grave in a body. Hold this body, failing as it is, until the day you raise it. In the name of Jesus, the resurrection and the life. Amen.",
   "kit": {
+    "plan": {
+      "href": "/plans/fear-of-the-future",
+      "label": "Eight Weeks of Facing What Is Coming"
+    },
+    "guides": [
+      {
+        "href": "/studyguides/the-psalms",
+        "label": "The Psalms: A Bible Study on Honest Prayer"
+      },
+      {
+        "href": "/studyguides/providence",
+        "label": "Where Is God When It Hurts: Suffering and the Goodness of God"
+      },
+      {
+        "href": "/studyguides/resurrection",
+        "label": "The Resurrection: A Bible Study on the Evidence"
+      }
+    ],
     "read": [
+      {
+        "href": "/how-tos/ss-how-to-face-a-hard-diagnosis",
+        "label": "How to Face a Hard Diagnosis",
+        "kind": "How-to"
+      },
       {
         "href": "/wisdom/terminal-diagnosis",
         "label": "Facing a Terminal Diagnosis",
+        "kind": "Wisdom"
+      },
+      {
+        "href": "/wisdom/serious-illness",
+        "label": "When You Are Seriously Ill",
+        "kind": "Wisdom"
+      },
+      {
+        "href": "/wisdom/chronic-pain",
+        "label": "Chronic Pain and Illness",
         "kind": "Wisdom"
       },
       {
@@ -39,15 +168,157 @@
         "kind": "Life"
       },
       {
-        "href": "/wisdom/chronic-pain",
-        "label": "Chronic Pain and Illness",
-        "kind": "Wisdom"
-      },
-      {
         "href": "/life/caring-for-the-dying",
         "label": "How Do You Sit With Someone Who Is Dying?",
         "kind": "Life"
+      },
+      {
+        "href": "/how-tos/body-how-to-live-with-chronic-pain",
+        "label": "How to Live With Chronic Pain and Faith",
+        "kind": "How-to"
+      },
+      {
+        "href": "/how-tos/body-how-to-care-for-your-body-in-sickness",
+        "label": "How to Care for Your Body in Sickness",
+        "kind": "How-to"
+      },
+      {
+        "href": "/how-tos/ss-how-to-sit-with-someone-suffering",
+        "label": "How to Sit With Someone Who Is Suffering",
+        "kind": "How-to"
+      },
+      {
+        "href": "/writing/what-the-resurrection-changes",
+        "label": "What Actually Changes If Jesus Rose",
+        "kind": "Essay"
       }
     ]
+  },
+  "faq": [
+    {
+      "q": "If I had more faith, would God heal me?",
+      "a": "God does heal, and you're right to ask him to. Faith matters, too; Jesus told a woman he had healed, “your faith has healed you” (Mark 5:34). But no one can read your faith off your body. Paul, whose faith no one doubts, pleaded three times for his thorn to be taken away and was told, “My grace is sufficient for you, for My power is perfected in weakness” (2 Corinthians 12:9). Faith is trust in a person, not a force that controls outcomes. In this life God heals many, though not all, and he has promised all who belong to Christ the resurrection of the body. There's more on the page [I'm praying for healing](/help/healing)."
+    },
+    {
+      "q": "How do I pray when I'm sick?",
+      "a": "Honestly, and as plainly as people in the Bible did. Ask God to heal you, as Psalm 6 does: “heal me, O LORD, for my bones are in agony” (Psalm 6:2). Tell him who is sick, as Martha and Mary sent word to Jesus: “Lord, the one You love is sick” (John 11:3). Pray as Jesus prayed in Gethsemane, asking for the cup to pass and adding, “Yet not as I will, but as You will” (Matthew 26:39); that's trusting God with the answer, not giving up on healing. When you have no words, “the Spirit Himself intercedes for us with groans too deep for words” (Romans 8:26). And let others pray when you can't."
+    },
+    {
+      "q": "Is choosing hospice giving up?",
+      "a": "No. Hospice is care for people whose illness can no longer be cured; its aim is comfort and time with the people they love, and it doesn't try to hasten death. Under Medicare it's for someone whose doctors expect them to live six months or less if the illness runs its usual course, and you can leave hospice and return to treatment at any time. Christian moral teaching has long distinguished between declining treatment whose burdens outweigh its benefits, which can be faithful, and acting to cause death, which it has historically refused. Hospice is on the first side of that line. Paul hoped Christ would be exalted in his body “whether by life or by death” (Philippians 1:20), and the way you spend your remaining time can do the same."
+    },
+    {
+      "q": "How do I tell my kids I'm sick?",
+      "a": "Gently, honestly, and in words that fit their age. A young child needs a few simple sentences, often more than once; a teenager may want more of the facts and some say in what changes at home. Children often sense when something is wrong, and left to guess, they may imagine something worse, so tell them the truth, including the name of the illness, and that you'll keep them posted. Make sure they hear that nothing they did, said, or thought caused it, who will take care of them, and, if it's true of your illness, that they can't catch it. Let them ask anything, and let them see you sad sometimes. Your care team or a hospital social worker can help you plan what to say, and may know someone who helps children through a parent's illness."
+    },
+    {
+      "q": "Is it wrong to be afraid of dying?",
+      "a": "No. The night before he died, Jesus said, “My soul is consumed with sorrow to the point of death” (Matthew 26:38). Scripture calls death “the last enemy to be destroyed” (1 Corinthians 15:26), and it's natural to fear an enemy. Christianity doesn't cure that fear by pretending death is nothing. It points to someone who went through death and came out the other side, who told a grieving sister, “I am the resurrection and the life” (John 11:25). The Apostles' Creed confesses what comes at the end: the resurrection of the body and the life everlasting."
+    }
+  ],
+  "related": [
+    "fear-of-the-future",
+    "healing",
+    "caregiving",
+    "grief",
+    "suffering"
+  ],
+  "slots": [
+    {
+      "section": "whyHard",
+      "note": "James came to faith from atheism. In his own words, he could add how he thought about sickness and death before faith and what changed, beside the paragraph that answers the skeptic. The section stands without it, and nothing about his own health or losses is assumed."
+    },
+    {
+      "section": "faq",
+      "note": "How do I tell my kids I'm sick: James was raised without a father and is raising five sons. If he wishes, he could add a few sentences of his own for the parent who is afraid of leaving children behind. The page assumes nothing about his father, his family's health, or his own."
+    },
+    {
+      "section": "helping",
+      "note": "As a pastor, James could add in his own words what sitting with the sick has taught him about what to say and what to leave unsaid. The page invents no patients, visits, or conversations."
+    },
+    {
+      "section": "scripture",
+      "note": "James 5:14-15: the reading sets out three ways Christians take the promise (healing God gives in answer to the church's prayer; a promise that also reaches to the final resurrection; the ground of the sacrament of anointing in Catholic and Orthodox churches), each with its evidence and its comfort, and lands nowhere. Where James lands, and how his church practices anointing, belongs to him, in his own words."
+    },
+    {
+      "section": "faq",
+      "note": "Is choosing hospice giving up: the answer states the long Christian distinction between declining burdensome treatment and acting to cause death, and does not discuss medically assisted death, which some states allow and some readers will be weighing. If James wants a pastoral word on it, it should be his own, written with the safe-messaging rules in view."
+    }
+  ],
+  "sources": [
+    {
+      "claim": "Palliative care can begin at diagnosis, at any stage of a serious illness, and can be given alongside treatment meant to cure; hospice is for people whose illness is no longer being treated with the aim of a cure.",
+      "cite": "National Institute on Aging, What Are Palliative Care and Hospice Care?",
+      "url": "https://www.nia.nih.gov/health/hospice-and-palliative-care/what-are-palliative-care-and-hospice-care"
+    },
+    {
+      "claim": "Medicare's hospice benefit is for someone whose doctor certifies a life expectancy of six months or less if the illness runs its normal course; the patient can stop hospice care at any time and return to regular Medicare coverage; under Original Medicare the patient pays little or nothing for hospice care.",
+      "cite": "Centers for Medicare & Medicaid Services, Medicare Hospice Benefits (booklet 02154)",
+      "url": "https://www.medicare.gov/publications/02154-medicare-hospice-benefits.pdf"
+    },
+    {
+      "claim": "Getting a second opinion is common, and many health insurers pay for one.",
+      "cite": "National Cancer Institute, Finding Health Care Services",
+      "url": "https://www.cancer.gov/about-cancer/managing-care/services"
+    },
+    {
+      "claim": "Advance directives include a living will and a durable power of attorney for health care naming who decides if you cannot; the forms vary by state.",
+      "cite": "National Institute on Aging, Advance Care Planning: Advance Directives for Health Care",
+      "url": "https://www.nia.nih.gov/health/advance-care-planning/advance-care-planning-advance-directives-health-care"
+    },
+    {
+      "claim": "Section 501(r)(4) of the Internal Revenue Code requires tax-exempt hospital organizations to have a written financial assistance policy for each hospital facility.",
+      "cite": "Internal Revenue Service, Financial Assistance Policy and Emergency Medical Care Policy, Section 501(r)(4)",
+      "url": "https://www.irs.gov/charities-non-profits/financial-assistance-policy-and-emergency-medical-care-policy-section-501r4"
+    },
+    {
+      "claim": "Depression is treatable even when a person has a chronic disease.",
+      "cite": "National Institute of Mental Health, Understanding the Link Between Chronic Disease and Depression",
+      "url": "https://www.nimh.nih.gov/health/publications/chronic-illness-mental-health"
+    },
+    {
+      "claim": "Asking someone directly whether they are thinking about suicide does not increase suicidal thoughts or behavior.",
+      "cite": "National Institute of Mental Health, 5 Action Steps to Help Someone Having Thoughts of Suicide",
+      "url": "https://www.nimh.nih.gov/health/publications/5-action-steps-to-help-someone-having-thoughts-of-suicide"
+    },
+    {
+      "claim": "The Family and Medical Leave Act gives eligible employees of covered employers unpaid, job-protected leave for their own serious health condition that makes them unable to work.",
+      "cite": "U.S. Department of Labor, Fact Sheet #28: The Family and Medical Leave Act",
+      "url": "https://www.dol.gov/agencies/whd/fact-sheets/28-fmla"
+    },
+    {
+      "claim": "Susan Sontag wrote Illness as Metaphor (1978) after her own cancer diagnosis; she argued that psychological theories of illness place the blame on the ill, including the notion that cancer comes from repressed feeling, and that the controlling metaphors for cancer are drawn from warfare.",
+      "cite": "Wikipedia, Illness as Metaphor (with EBSCO Research Starters, Illness as Metaphor by Susan Sontag)",
+      "url": "https://en.wikipedia.org/wiki/Illness_as_Metaphor"
+    },
+    {
+      "claim": "Cicely Saunders, a nurse, social worker, and physician whose Christian faith shaped her vision, founded St Christopher's Hospice in London in 1967 and developed the concept of total pain, which includes physical, emotional, social, and spiritual suffering.",
+      "cite": "St Christopher's Hospice, Dame Cicely Saunders",
+      "url": "https://www.stchristophers.org.uk/about/damecicelysaunders/"
+    },
+    {
+      "claim": "The Word of Faith movement, which arose in the twentieth century, teaches that believers have a right to physical health, claimed through positive confession.",
+      "cite": "Wikipedia, Word of Faith",
+      "url": "https://en.wikipedia.org/wiki/Word_of_Faith"
+    },
+    {
+      "claim": "Discontinuing medical procedures that are burdensome or disproportionate to the expected outcome can be legitimate, because one does not will to cause death; this is distinguished from euthanasia, which the Catechism condemns.",
+      "cite": "Catechism of the Catholic Church, 2276 to 2279 (Euthanasia)",
+      "url": "https://www.vatican.va/content/catechism/en/part_three/section_two/chapter_two/article_5/i_respect_for_human_life.html"
+    },
+    {
+      "claim": "In James 5:15 the verb rendered restore (sōzō) is the ordinary New Testament word for save and is also used of healing or being made whole, and raise up (egeirō) is used both of rising from a sickbed and of resurrection.",
+      "cite": "Bible Hub, James 5:15 Lexicon",
+      "url": "https://biblehub.com/lexicon/james/5-15.htm"
+    },
+    {
+      "claim": "The Catholic Church keeps the anointing of the sick as a sacrament, with James 5:14-15 as its chief biblical text, giving the sick strength, forgiveness of sins, and healing of body if God wills; the Orthodox churches keep Holy Unction as a sacrament (holy mystery) for the healing of soul and body and the forgiveness of sins.",
+      "cite": "Wikipedia, Anointing of the Sick in the Catholic Church; OrthodoxWiki, Holy Unction",
+      "url": "https://en.wikipedia.org/wiki/Anointing_of_the_Sick_in_the_Catholic_Church"
+    }
+  ],
+  "reviewed": {
+    "on": "2026-10-01",
+    "notes": "Second pass, 2026-10-01 (supersedes the writer's notes). Truth: every Scripture citation was re-read in context with scripts/bsb.mjs --verses, and every inline quotation was machine-checked against the passage its reference names. Mark 2:3's carriers are now four men, as the text says, not friends. Sources: the WHO palliative-care definition (read from a copy on another site), the American Cancer Society and OncoLink/CancerCare entries on talking with children, and the CDC infection entry are dropped. What they supported now stands only as ordinary knowledge (hospice aims at comfort and does not try to hasten death; some treatments make infections dangerous; children cannot catch an illness that is not contagious) or as general guidance. The claim that most doctors welcome a second opinion is cut. The fourteen remaining sources are trimmed to what the page says; all were confirmed only through search excerpts and need a check at the source before release. The Word of Faith movement is now described in the present tense, since it still teaches. Length: 4,368 to 4,181 words. The John 9 passage is cut; its point now opens Why this is so hard (John 9:2-3), and other repeats are trimmed: the bodily-hope point in the 2 Corinthians 4 reading (kept in 1 Corinthians 15), the depression signs in the help body (kept in the signs list), the doctor's palliative-care script, and the social worker in Cost. Healing: /help/healing has a page, so the FAQ links there, and its answer now matches that page: God heals, not always in this life; no one can read your faith off your body; Paul was told no; the resurrection is promised to all who belong to Christ. Jesus in Gethsemane is no longer listed among the unhealed. Contested: the Scripture intro no longer says flatly that Scripture does not promise a cure, which tilted against the first reading of James 5. The three readings (healing in answer to the church's prayer, with James 5:16 as its evidence; a promise that also reaches to the resurrection; the ground of the Catholic and Orthodox sacrament, giving strength, forgiveness, and healing as Christ wills) are stated as their defenders would state them, and the slot for James is kept. The 1 Corinthians 15 promise is now tied to those who belong to Christ (15:23). Theology: the prayer, addressed to the Father, said you went down into death; it now names the Son. Care: the page now asks the reader directly whether they are having thoughts of ending their life, and the answer names those thoughts. Philippians 1:23 (to depart is far better) is cut from the fear-of-dying answer on a page that carries the suicide lines; that answer now ends on the resurrection. A helper who hears ready to go is told to ask if unsure. The chest-pain sign is now a general new-or-severe-symptom sign, and the questions step asks which symptoms mean calling right away. See an attorney before you sign anything is now about legal papers. Telling children is age-aware and points to the care team and social worker. Medically assisted death stays out, with its slot. Kit: every target was opened and every label is the real title. The Lament study guide contains an unverified first-person line (I have stood at gravesides with nothing true to say), so it is replaced by The Psalms: A Bible Study on Honest Prayer, which covers lament and carries no such anecdote. The caregiving link now says whom that page serves. Voice: Not X, Y moves are held to one per section, and She got the symptom exactly right is cut. validate-needs is clean."
   }
 }

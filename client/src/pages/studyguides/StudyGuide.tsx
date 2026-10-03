@@ -12,7 +12,7 @@ import MoreOnThis from "@/components/MoreOnThis";
 import { CrisisBlock } from "@/components/CrisisBlock";
 import { HelpForThisGuide } from "@/components/HelpForThisGuide";
 import ScriptureNote from "@/components/ScriptureNote";
-import { SENSITIVE_GUIDES } from "@/lib/needs";
+import { GUIDE_TOPICS, SENSITIVE_GUIDES } from "@/lib/needs";
 import { SEOMeta } from "@/components/SEOMeta";
 import GatedDownload from "@/components/GatedDownload";
 import PageEndNav from "@/components/PageEndNav";
@@ -341,7 +341,7 @@ export default function StudyGuide() {
               <ScriptureNote rendering="bsb" />
             </div>
           )}
-          {slug && SENSITIVE_GUIDES.has(slug) && <CrisisBlock variant="compact" />}
+          {slug && SENSITIVE_GUIDES.has(slug) && <CrisisBlock variant="compact" topics={["suicide", ...(GUIDE_TOPICS[slug] ?? [])]} />}
           {slug && <HelpForThisGuide slug={slug} />}
           {slug && <MoreOnThis href={`/studyguides/${slug}`} />}
           <PageEndNav back={{ href: "/studyguides", label: "All study guides" }} />

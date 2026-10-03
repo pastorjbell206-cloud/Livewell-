@@ -25,7 +25,10 @@ export function builtFrom(href) {
   if (/^\/downloads\/seasonal\/(advent|holy-week)-family-(letter|a4)\.pdf$/.test(href)) return existsSync(join(PUB, "family-seasonal.json"));
   m = href.match(/^\/downloads\/plans\/(.+)-booklet-(letter|a4)\.pdf$/);
   if (m) return existsSync(join(PUB, `plans/${m[1]}.json`));
-  if (/^\/downloads\/tools\/worry-log-(letter|a4)\.pdf$/.test(href)) return true;
+  if (/^\/downloads\/tools\/(worry-log|referral-list|prayer-list|budget|grief-journal|conflict-guide|prayer-journal|rule-of-life|memory-cards|family-cards)-(letter|a4)\.pdf$/.test(href)) return true;
+  // Workbooks (scripts/lib/workbooks.mjs), one per client/public/workbooks/<id>.json.
+  m = href.match(/^\/downloads\/workbooks\/(.+)-(letter|a4)\.pdf$/);
+  if (m) return existsSync(join(PUB, `workbooks/${m[1]}.json`));
   // Bible reading plans (scripts/lib/reading-plans.mjs), named in client/src/data/bible-reading-plans.json.
   m = href.match(/^\/downloads\/reading-plans\/(.+)-(letter|a4)\.pdf$/);
   if (m) return JSON.parse(readFileSync(join(ROOT, "client/src/data/bible-reading-plans.json"), "utf8")).plans.some((p) => p.id === m[1]);

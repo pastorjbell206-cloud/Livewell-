@@ -44,8 +44,11 @@ function Prose({ text, light = false }: { text: string; light?: boolean }) {
           </p>
         ),
         a: ({ href, children }) =>
-          href && href.startsWith("/") ? (
+          href && href.startsWith("/") && !/\.(pdf|epub|docx?)($|[?#])/i.test(href) ? (
             <Link href={href} style={{ color: "inherit", textDecorationColor: "var(--mustard)", textUnderlineOffset: "3px" }}>{children}</Link>
+          ) : href && href.startsWith("/") ? (
+            // A printable on this site: a plain link, so the browser opens the file instead of the app routing to it.
+            <a href={href} style={{ color: "inherit", textDecorationColor: "var(--mustard)", textUnderlineOffset: "3px" }}>{children}</a>
           ) : (
             <a href={href} target="_blank" rel="noopener noreferrer" style={{ color: "inherit", textDecorationColor: "var(--mustard)", textUnderlineOffset: "3px" }}>{children}</a>
           ),

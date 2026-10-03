@@ -131,6 +131,21 @@ export function CrisisBlock({
           <a href="tel:988" style={{ color: "var(--ink)", fontWeight: 600 }}>988</a> for the Suicide &amp; Crisis
           Lifeline, or text <a href="sms:741741?&body=HOME" style={{ color: "var(--ink)", fontWeight: 600 }}>HOME to 741741</a>.
           If anyone is in immediate danger, call <a href="tel:911" style={{ color: "var(--ink)", fontWeight: 600 }}>911</a>.
+          {/* Lines beyond 988 and the Crisis Text Line, when the page's subject calls for them. */}
+          {crisisLines(topics)
+            .filter((r) => r.id !== "988" && r.id !== "crisis-text-line")
+            .map((r) => (
+              <span key={r.id}>
+                {" "}{r.name}:{" "}
+                {r.actions.filter((a) => a.kind !== "chat").map((a, i) => (
+                  <span key={a.href}>
+                    {i > 0 && " or "}
+                    <a href={a.href} style={{ color: "var(--ink)", fontWeight: 600 }}>{a.label.replace(/^(Call|Text) /, (m) => m.toLowerCase())}</a>
+                  </span>
+                ))}
+                .
+              </span>
+            ))}{" "}
           This site supports the work of doctors, counselors, and pastors. It does not replace them.{" "}
           <Link href="/help" style={{ color: "var(--mustard-text)", fontWeight: 600, textDecoration: "none" }}>
             Find help for what you are facing →

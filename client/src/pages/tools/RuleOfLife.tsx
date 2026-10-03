@@ -337,6 +337,12 @@ export default function RuleOfLife() {
             <Link href="/life/rest-and-the-sabbath" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>Read: Rest and the Sabbath</Link>
             <Link href="/how-tos?topic=discipleship" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>How-tos for making disciples</Link>
           </div>
+          <p className="no-print" style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink)", margin: "var(--s-3) 0 0" }}>
+            Rather keep it on paper, in your Bible? Print a one-page rule of life:{" "}
+            <a href="/downloads/tools/rule-of-life-letter.pdf" style={{ color: "var(--mustard-text)", fontWeight: 600 }}>US Letter</a>
+            {" · "}
+            <a href="/downloads/tools/rule-of-life-a4.pdf" style={{ color: "var(--mustard-text)", fontWeight: 600 }}>A4</a> (PDF).
+          </p>
         </div>
       </section>
 

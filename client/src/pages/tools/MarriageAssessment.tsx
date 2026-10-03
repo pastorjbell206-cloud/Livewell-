@@ -10,6 +10,7 @@ import { Markdown } from "@/components/Markdown";
 import { readStoredJSON, removeStoredJSON, writeStoredJSON } from "@/lib/storage";
 import { SafetyCheck } from "@/components/SafetyCheck";
 import { SelfCheckHistory } from "@/components/SelfCheckHistory";
+import { CoupleCompare } from "@/components/CoupleCompare";
 
 /* ── Types ─────────────────────────────────────────────────────── */
 
@@ -1123,6 +1124,7 @@ export default function MarriageAssessment() {
               areas={Object.fromEntries(CATEGORIES.map((c) => [c.name, getCategoryScore(c) / (c.questions.length * 5)]))}
               answersKey={JSON.stringify(answers)}
             />
+            <CoupleCompare areas={CATEGORIES.map((c) => ({ name: c.name, score: getCategoryScore(c) }))} />
             {persistFailed && (
               <p
                 style={{

@@ -25,12 +25,15 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import PDFDocument from "pdfkit";
-import { buildHelpPrintables, buildPlanBooklets, buildSeasonalPacks, buildToolPrintables, studyGuideHelpBox } from "./lib/help-printables.mjs";
+import { buildHelpPrintables, buildPlanBooklets, buildSeasonalPacks, buildSectionPrintables, buildToolPrintables, studyGuideHelpBox } from "./lib/help-printables.mjs";
 import { buildReadingPlans } from "./lib/reading-plans.mjs";
+import { buildWorkbooks } from "./lib/workbooks.mjs";
 import { passage } from "./lib/bsb.mjs";
 
 // Study guides on heavy subjects carry the help box (client/src/data/sensitive-pages.json).
-const SENSITIVE_GUIDES = new Set(JSON.parse(fs.readFileSync(new URL("../client/src/data/sensitive-pages.json", import.meta.url), "utf8")).studyguides);
+const SENSITIVE_PAGES = JSON.parse(fs.readFileSync(new URL("../client/src/data/sensitive-pages.json", import.meta.url), "utf8"));
+const SENSITIVE_GUIDES = new Set(SENSITIVE_PAGES.studyguides);
+const GUIDE_TOPICS = SENSITIVE_PAGES.studyguideTopics || {};
 const CRISIS = JSON.parse(fs.readFileSync(new URL("../client/src/data/crisis-resources.json", import.meta.url), "utf8"));
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -216,7 +219,7 @@ async function buildStudyGuideLeader(g) {
     sectionHeading(doc, { kicker: "About this study", title: g.title });
     bodyParagraphs(doc, g.summary);
     if (g.translation === "BSB") scriptureNotice(doc);
-    if (SENSITIVE_GUIDES.has(g.slug)) studyGuideHelpBox(doc, CRISIS, "leader");
+    if (SENSITIVE_GUIDES.has(g.slug)) studyGuideHelpBox(doc, CRISIS, "leader", GUIDE_TOPICS[g.slug]);
 
     if (g.leaderPrimer) {
       doc.addPage();
@@ -346,7 +349,7 @@ async function buildStudyGuideParticipant(g) {
     coverPage(doc, { kicker: "Participant Handout · " + g.sessionsLabel, title: g.title, subtitle: g.subtitle || g.audience + "." }, false);
     for (const s of g.sessions) {
       doc.addPage();
-      if (s.n === g.sessions[0].n && SENSITIVE_GUIDES.has(g.slug)) studyGuideHelpBox(doc, CRISIS, "participant");
+      if (s.n === g.sessions[0].n && SENSITIVE_GUIDES.has(g.slug)) studyGuideHelpBox(doc, CRISIS, "participant", GUIDE_TOPICS[g.slug]);
       if (s.n === g.sessions[0].n && g.translation === "BSB") scriptureNotice(doc);
       sectionHeading(doc, { kicker: "Session " + s.n, title: s.title });
       bodyParagraphs(doc, s.summary);
@@ -683,6 +686,10 @@ async function main() {
   written.push(...(await buildReadingPlans(ROOT)));
   // Blank printables for the tools (the Worry Journal's week of evenings).
   written.push(...(await buildToolPrintables(ROOT)));
+  // A prayer journal, a rule of life, Scripture to carry, and family table cards.
+  written.push(...(await buildSectionPrintables(ROOT)));
+  // Workbooks for a couple or a group over several sessions (client/public/workbooks/*.json).
+  written.push(...(await buildWorkbooks(ROOT)));
   // Seasonal family packs (Advent, Holy Week) from family-seasonal.json, with
   // each day's passage printed verbatim from the BSB.
   written.push(...(await buildSeasonalPacks(ROOT, (ref) => passage(ref).text)));

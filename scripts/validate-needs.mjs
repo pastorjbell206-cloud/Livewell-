@@ -51,6 +51,8 @@ const FORBIDDEN = [
   "your truth", "do the work", "your feelings are valid", "lean into", "leaning into", "showing up", "show up for",
 ];
 const forbiddenRe = new RegExp(`\\b(${FORBIDDEN.map((w) => w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&").replace(/'/g, "['’]")).join("|")})\\b`, "i");
+// The ordinary noun the list does not mean (the same allowance as validate-grow-voice.mjs).
+const FOSTER_CARE = /\bfoster (care|parent|parents|parenting|child|children|home|homes|family|families|system|kids?)\b/gi;
 const PHONE = /\b(?:1[-. ]?)?\(?\d{3}\)?[-. ]\d{3}[-. ]\d{4}\b|\b\d{5,6}\b/;
 const STATES = new Set(["crisis", "carrying", "grow", "helping", "leading"]);
 const SENS = new Set(["crisis", "high", "ordinary"]);
@@ -78,7 +80,7 @@ function prose(where, text, min = 0, max = Infinity) {
       fail(where, `double quotation marks are for Scripture, and this is not verbatim BSB: "${q.slice(0, 70)}"`);
   }
   const short = quotes.filter((q) => normalize(q).split(" ").length < 3).join(" ");
-  const m = `${outside} ${short}`.match(forbiddenRe);
+  const m = `${outside} ${short}`.replace(FOSTER_CARE, " ").match(forbiddenRe);
   if (m) fail(where, `forbidden language "${m[1]}"`);
   if (outside.includes("!")) fail(where, "exclamation point outside quoted Scripture");
   if (/[\u2014]/.test(outside)) fail(where, "em-dash (use a comma, colon, parentheses, or a new sentence)");

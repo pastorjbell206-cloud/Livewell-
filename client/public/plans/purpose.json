@@ -1,0 +1,81 @@
+{
+  "slug": "purpose",
+  "title": "Eight Weeks of Asking What Your Life Is For",
+  "subtitle": "An eight week plan from James Bell for anyone asking what their life is for. Ecclesiastes as a companion, an identity received, the people who need you, ordinary work, rest, and small faithfulness.",
+  "intro": "This is an eight week plan for when you're asking what your life is for. A season may have ended and taken your sense of yourself with it, or you may be young and unable to tell who needs you, or you may be doing everything you were told and still wonder whether any of it matters. If the question has started to mean you don't want to be alive, set this plan aside for tonight: call or text 988, or use the other help lines at the top of the Find Help page, and tell someone near you. I'd rather you call someone tonight than start week one. If it's the question itself you're carrying, each week holds one focus, one small daily practice, one thing to read, one tool to use, and one honest question, and Ecclesiastes, the Bible's bluntest book about meaning, walks beside you the whole way. The weeks move from the honest question and the weight our age puts on it, through an identity received rather than built, the people who need you, ordinary work, rest from inventing yourself, and small faithfulness, to a life that matters without having to prove it.\n\nIt isn't a cure, and it isn't a substitute for a doctor, a licensed counselor, a pastor, or real people who know your name. I'm a pastor, not a physician. If a heaviness has come with the question and stayed more than two weeks, see a doctor now, not after week eight. Walk the plan imperfectly. A missed week is not failure; you just pick it back up. You won't need to settle the whole question by week eight, only to take the next faithful step.",
+  "careNote": "If a sense that nothing matters has lasted more than two weeks or reached your sleep, appetite, or work, see a doctor and a licensed counselor; that help is no failure of faith. If it has turned into thoughts of not wanting to be alive, or in a crisis, call or text 988 now, and if you're in immediate danger, call 911.",
+  "weeks": [
+    {
+      "n": 1,
+      "focus": "The honest question",
+      "why": "The question deserves an honest hearing, and Scripture gives it one. Ecclesiastes opens with its speaker, the Teacher, asking it outright: \"What does a man gain from all his labor, at which he toils under the sun?\" (Ecclesiastes 1:3). The book's key word, rendered futile in the Berean Standard Bible, is the Hebrew hebel, breath or vapor, seen on a cold morning and never held. That book is in the Bible, so you can bring the question to God. This week asks only that you put it into words and notice what kind of asking it is. The question of meaning can hurt and still be healthy. Despair is different. It's a heaviness that says nothing will ever change and that you're only a burden, and it isn't telling you the truth. If that sounds like you, tonight is for calling or texting 988 and telling someone near you.",
+      "practice": "On the first day, read Ecclesiastes 1 slowly, aloud if you can. Each day after, write the question in your own words, exactly as it comes, and one plain sentence about what is pressing it on you now: an ending, a quiet house, a job, a fog about who needs you. Each morning before you pick up your phone, ask God what this day is for, and if you're not sure anyone is listening, tell him that too.",
+      "read": { "label": "What's the point of my life? The care page these weeks walk more slowly, with the help lines at the top", "href": "/help/purpose" },
+      "tool": { "label": "Ecclesiastes 1 in the Study Bible, with a note on the Hebrew word for vapor and the hard question of whether the Bible calls life meaningless", "href": "/study/bible/ecclesiastes/1" },
+      "reflection": "Is what I'm carrying mostly a question about what my life is for, or a heaviness that says nothing will change, and who have I told?"
+    },
+    {
+      "n": 2,
+      "focus": "The weight of making yourself",
+      "why": "The Teacher ran the experiment we are still running. He tried pleasure, built houses, planted vineyards, and gathered silver and gold, then looked back over it all: \"I found everything to be futile, a pursuit of the wind\" (Ecclesiastes 2:11). He also saw that \"all labor and success spring from a man's envy of his neighbor\" (Ecclesiastes 4:4). Our age hands each of us a job the old world rarely did: make yourself. I came to faith from atheism, and I won't call that answer shallow; there is courage in it, and meaning does have to be lived. But if you are only what you make of yourself, your meaning is as steady as you are, and a failure starts to feel like a verdict. Add a phone that sets strangers' best moments beside your life every night, and the question becomes a test you seem to be failing.",
+      "practice": "Each day, notice one moment when you measured your life against someone else's, on a screen or in your head, and write down the measure you used: money, a title, a body, a marriage, a following. This week, keep your phone out of the bedroom. On one day, read Ecclesiastes 2, and if the Teacher's words in verses 17 to 20 sound like your own nights, tell someone that day, and in a crisis call or text 988.",
+      "read": { "label": "Why Do We Measure Ourselves by Success and Failure? On the private ledger many of us keep on ourselves", "href": "/life/success-and-failure" },
+      "tool": { "label": "Ecclesiastes 2 in the Study Bible, the Teacher's experiment with pleasure, building, and work", "href": "/study/bible/ecclesiastes/2" },
+      "reflection": "What have I been using to prove that my life counts, and what happens inside me on the days it stops working?"
+    },
+    {
+      "n": 3,
+      "focus": "Received rather than built",
+      "why": "Scripture starts further back than our age does: who you are is given before anything you do. \"So God created man in His own image\" (Genesis 1:27), which means you were made on purpose before you made anything of yourself. A psalm bearing David's name looks up at the night sky, feels how small we are, and marvels at God's attention instead: \"what is man that You are mindful of him, or the son of man that You care for him?\" (Psalm 8:4). The letter to the Ephesians keeps the same order. Grace comes first, \"it is the gift of God, not by works\" (Ephesians 2:8-9), and only then the words \"we are God's workmanship\" (Ephesians 2:10). An identity you build has to be defended every morning. An identity you receive can be rested in, and lived from.",
+      "practice": "Each morning before you pick up your phone, read Psalm 8 aloud or say Ephesians 2:10 to yourself. Then write one sentence about who you are that doesn't depend on anything you did yesterday or will do today. If you're not sure you believe it yet, write what would change if it were true.",
+      "read": { "label": "Where Does Your Identity and Worth Come From? On the difference between a worth you achieve and a worth you receive", "href": "/life/identity-and-worth" },
+      "tool": { "label": "Identity: A Bible Study on Who You Actually Are, five sessions on an identity given before it was ever performed", "href": "/studyguides/identity" },
+      "reflection": "What have I been trying to earn that these passages say was given before I did anything at all?"
+    },
+    {
+      "n": 4,
+      "focus": "The people who need you",
+      "why": "The Teacher describes a man with no son or brother and no end to his labor, who asks, \"For whom do I toil and bereave my soul of enjoyment?\" (Ecclesiastes 4:8). Then he writes, \"Two are better than one\" (Ecclesiastes 4:9). Jesus said the whole Law hangs on two commandments, to love God and to love your neighbor (Matthew 22:37-40). Much of what your life is for has a face: a parent, a child, a coworker, a friend. This isn't a test of your worth, which week three said was given, and it runs both ways. In the same passage one falls and the other lifts him up (Ecclesiastes 4:10), and being lifted belongs to a life that matters too. Many of us have arranged our lives so that no one needs us and we need no one, and the Teacher called that kind of toil a miserable task.",
+      "practice": "Write down four or five people whose week you could make better: a parent, a child, a coworker, a neighbor, a friend who has gone quiet. Each day, do one concrete thing for one of them, a meal, a ride, a call, an hour of help. If no one seems to need you yet, go where hands are needed, a church work day or an older neighbor's yard. On the first day, read Ecclesiastes 4:7-12.",
+      "read": { "label": "How to Love Your Actual Neighbors, on learning their names and letting them help you too", "href": "/how-tos/wn-how-to-love-your-actual-neighbors" },
+      "tool": { "label": "The Prayer Planner, to give each person on your list a day of the week in prayer", "href": "/tools/prayer-planner" },
+      "reflection": "Who has God already put within reach of my hands, and what is one thing they need that I could give this week?"
+    },
+    {
+      "n": 5,
+      "focus": "Ordinary work as a calling",
+      "why": "God gave the first human being work before anything had gone wrong, placing him in the garden \"to cultivate and keep it\" (Genesis 2:15). Work is older than the curse. Yet the church often talked as if real callings went to pastors and missionaries, and a plumber or a teacher could hear that ordinary work was second best. Those of us who preach share the blame. Paul urged a young church \"to aspire to live quietly, to attend to your own matters, and to work with your own hands\" (1 Thessalonians 4:11), and the first call Jesus gave fishermen was to himself: \"Come, follow Me\" (Mark 1:17). Christians answer differently whether God has a particular path for each life, and the care page linked here weighs both views without settling it. Neither view makes a mother's work or a mechanic's any smaller.",
+      "practice": "At the end of each day, write down one piece of work you did, paid or unpaid, and one person it served: a customer, a coworker, a child, a parent, a stranger. If you're out of work right now, the search and the help you give count too. Once this week, do one ordinary task with unusual care, for the Lord, as the letter to the Colossians puts it (Colossians 3:23).",
+      "read": { "label": "How to See Your Work as Worship, on the work in Eden before the fall and asking whom your work serves", "href": "/how-tos/wm-how-to-see-your-work-as-worship" },
+      "tool": { "label": "How do I know what God wants me to do? The care page whose questions weigh whether God has a specific plan for your life", "href": "/help/decisions" },
+      "reflection": "What work am I doing right now that I've quietly decided doesn't count, and who would tell me it does?"
+    },
+    {
+      "n": 6,
+      "focus": "Rest from inventing yourself",
+      "why": "A self you have to invent never gets a day off. It has to be maintained, improved, and shown, and the work is never finished. God gave Israel a weekly day of rest, and Deuteronomy explains why: \"Remember that you were a slave in the land of Egypt\" (Deuteronomy 5:15). Slaves can't stop; people God has freed may. A psalm bearing Solomon's name, the king who built the temple, says, \"Unless the LORD builds the house, its builders labor in vain\" (Psalm 127:1), and that God \"gives sleep to His beloved\" (Psalm 127:2). The Teacher, after all his building, judged one handful with tranquility better than two with toil (Ecclesiastes 4:6). Christians answer differently how the Sabbath command applies now, and the burnout care page weighs the views. This week asks only for a day, or part of one.",
+      "practice": "Choose one day this week, or half a day if your work or caregiving allows no more, when you won't try to improve, produce, or prove anything. Put the phone in a drawer, eat a slow meal with someone, go outside, worship with God's people. Each night before you sleep, pray Psalm 127:1-2 and leave the unfinished things with God until morning.",
+      "read": { "label": "How to Receive Rest as a Gift, Not a Reward, on the weekly rest first given to former slaves", "href": "/how-tos/body-how-to-receive-rest-as-a-gift" },
+      "tool": { "label": "I'm burned out at work: the care page whose questions weigh how Christians keep the Sabbath now", "href": "/help/work-burnout" },
+      "reflection": "What am I afraid would happen to me, or to the picture I keep of myself, if I stopped building for a whole day?"
+    },
+    {
+      "n": 7,
+      "focus": "The day of small things",
+      "why": "When the exiles came home from Babylon and laid the foundation of a new temple, many who had seen the first one wept aloud (Ezra 3:12); beside the house they remembered, it looked like nothing (Haggai 2:3). God's word through the prophet Zechariah came as a question: \"For who has despised the day of small things?\" (Zechariah 4:10). Most of a life that matters is made of days like that, ordinary and unrecorded, and waiting for a great purpose can become a way of putting off the small one in front of you. The Teacher knew it: \"He who watches the wind will fail to sow\" (Ecclesiastes 11:4). So sow, he says, morning and evening, \"for you do not know which will succeed\" (Ecclesiastes 11:6). The small thing done faithfully is not a delay on the way to your purpose. Very often it is the purpose.",
+      "practice": "Each day, choose one ordinary task you've been doing half-heartedly, the dishes, a report, a bedtime story, a visit, and do it carefully, for God and for whoever it serves. Each night, write it down in one line. On one day this week, read Ezra 3:10-13, Zechariah 4:6-10, and Ecclesiastes 11:1-6 together.",
+      "read": { "label": "Being Reliable, on faithfulness in the small thing, repeated until it becomes character", "href": "/wisdom/reliability" },
+      "tool": { "label": "Zechariah 4 in the Study Bible, with the day of small things read in its setting after the exile", "href": "/study/bible/zechariah/4" },
+      "reflection": "What small faithful thing have I been putting off while I wait for something bigger to make my life count?"
+    },
+    {
+      "n": 8,
+      "focus": "A life that matters without proving it",
+      "why": "Ecclesiastes never turns the vapor into something you can hold. It ends where it began, calling everything futile (Ecclesiastes 12:8), and then a second voice gives the book's conclusion: \"Fear God and keep His commandments, because this is the whole duty of man\" (Ecclesiastes 12:13). Earlier the Teacher told his reader, \"Go, eat your bread with joy ... for God has already approved your works\" (Ecclesiastes 9:7). The Westminster Shorter Catechism, finished in 1647, opens by asking what a human being is for and answers that our chief purpose is to glorify God and to enjoy him forever. It locates the point of your life outside you, in a God worth knowing, and it makes joy part of the point. A life lived toward him doesn't have to prove it matters. The question may still visit you, but you no longer have to answer it by yourself.",
+      "practice": "On the first day, read Ecclesiastes 12. Then write on a card the two or three practices from these weeks that actually helped, with when and where you'll keep them, and copy Ecclesiastes 12:13 at the bottom. Show the card to one person and ask them to check on you in a month. If a heaviness has stayed with you, make or keep an appointment with a doctor or counselor; the card goes alongside that help, not in place of it.",
+      "read": { "label": "The Restless Man Who Couldn't Outrun God, on Augustine and the heart that is restless until it rests in God", "href": "/writing/augustine-the-restless-man" },
+      "tool": { "label": "The Rule of Life Builder, to keep a few of these practices after week eight", "href": "/tools/rule-of-life" },
+      "reflection": "If my life didn't have to prove that it matters, how would I spend an ordinary Tuesday?"
+    }
+  ]
+}

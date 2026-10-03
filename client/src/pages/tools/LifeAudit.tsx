@@ -322,7 +322,7 @@ const CATEGORIES: Category[] = [
         ],
         next: [
           { kind: "Life", title: "What Is a Christian View of Sleep, Food, and Rest?", href: "/life/the-body-and-the-rhythms" },
-          { kind: "Find help", title: "I've been given a hard diagnosis", href: "/help?need=diagnosis" },
+          { kind: "Find help", title: "I've been given a hard diagnosis", href: "/help/diagnosis" },
           { kind: "How-to", title: "How to Face Your Own Limits Without Despair", href: "/how-tos/body-how-to-face-your-limits-without-despair" },
         ],
       },

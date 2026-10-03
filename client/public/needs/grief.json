@@ -194,7 +194,11 @@
         "label": "John 11 in the Study Bible: the death and raising of Lazarus",
         "kind": "Page"
       }
-    ]
+    ],
+    "tool": {
+      "href": "/downloads/tools/grief-journal-letter.pdf",
+      "label": "A grief journal page to print, for the days after (PDF)"
+    }
   },
   "faq": [
     {

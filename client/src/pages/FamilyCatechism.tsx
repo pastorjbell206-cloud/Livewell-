@@ -12,6 +12,7 @@ import { Link } from "wouter";
 import { ChevronDown } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import ScriptureNote from "@/components/ScriptureNote";
 
 interface Entry {
   number: number;
@@ -153,6 +154,7 @@ export default function FamilyCatechism() {
               )}
             </div>
           )}
+          {parts.length > 0 && <ScriptureNote rendering="bsb" />}
           {parts.map(({ part, items }) => (
             <div key={part} style={{ marginBottom: "var(--s-5)" }}>
               <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(22px, 3vw, 28px)", fontWeight: 400, color: "var(--ink)", marginBottom: "var(--s-3)", paddingBottom: "8px", borderBottom: "2px solid var(--mustard)" }}>{part}</h2>

@@ -107,7 +107,7 @@ export default function PlansIndex() {
             Bible reading plans
           </h2>
           <p style={{ fontFamily: "var(--B)", fontSize: "16.5px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "62ch", margin: "0 0 var(--s-4)" }}>
-            Four plans to print and keep in your Bible, from a month in the Psalms to the whole Bible in a year. Each day is balanced by length, so no single day ambushes you, and a missed day is simply picked up.
+            Plans to print and keep in your Bible: a month in the Psalms, a Gospel in a month, Mark through the forty days of Lent, the New Testament in ninety days, and the whole Bible in a year. Each day is balanced by length, so no single day ambushes you, and a missed day is simply picked up.
           </p>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(260px, 100%), 1fr))", gap: "var(--s-3)" }}>
             {READING.plans.map((p) => (

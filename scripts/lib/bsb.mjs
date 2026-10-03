@@ -86,6 +86,52 @@ export function passage(ref) {
   return { ref, book: book.name, verses, text: verses.map((v) => v.t).join(" ") };
 }
 
+/**
+ * A psalm's heading ("For the choirmaster. A Psalm of David.") sits inside
+ * verse 1 in this text. For reading aloud or printing a passage that starts
+ * at a psalm's first verse, the heading comes off; what remains is still a
+ * continuous stretch of the verse, so quotesPassage accepts it.
+ */
+const HEADING_SENTENCE = [
+  // Titles, tunes, and authors: "For the choirmaster." "A Maskil of David."
+  /(?:For|To|With|On|Set to|A|An|Of)\b[^.?!]*\b(?:choirmaster|director|Psalm|Song|song|Maskil|Miktam|Shiggaion|tune|instruments|David|Asaph|Korah|Solomon|Moses|Heman|Ethan|Jeduthun|Sabbath|thanksgiving|prayer|Prayer|remembrance|ascents)\b[^.?!]*[.?!]/,
+  // Musical settings: "According to Gittith."
+  /According to\b[^.?!]*[.?!]/,
+  // Occasions from David's life: "When Nathan the prophet came to him..."
+  /(?:When|After)\b[^.?!]*(?:David|Saul|Nathan|Doeg|Ziph|Aram|Joab|Absalom|Abimelech|Achish|Philistine|Edom|cave|wilderness)[^.?!]*[.?!]/,
+].map((r) => r.source).join("|");
+const PSALM_HEADING = new RegExp(String.raw`^(?:(?:${HEADING_SENTENCE})[”’"']?\s+)+(?:He said:\s+)?`);
+
+/**
+ * A passage cut from a longer speech can open or close on a quotation mark
+ * whose partner is outside the passage. Printed alone, a stray mark is noise:
+ * an unpartnered opening mark at the start or closing mark at the end comes
+ * off, and a speech the passage opens mid-text is closed where it stops.
+ */
+export function balanceQuotes(text) {
+  let t = text;
+  const count = (ch) => t.split(ch).length - 1;
+  if (count("”") > count("“") && t.endsWith("”")) t = t.slice(0, -1);
+  if (count("“") > count("”")) t = t.startsWith("“") ? t.slice(1) : `${t}”`;
+  // Single marks double as apostrophes, so only a closing mark after the final stop is dropped.
+  if (!t.includes("‘") && /[.?!]’$/.test(t)) t = t.slice(0, -1);
+  return t;
+}
+
+/** The passage's text for reading or print: no psalm heading, no stray quotation marks, no closing Selah. */
+export function readingText(ref) {
+  const p = passage(ref);
+  let text = p.text;
+  if (p.book === "Psalms" && p.verses[0].v === 1) {
+    const stripped = text.replace(PSALM_HEADING, "");
+    if (stripped.trim()) text = stripped;
+  }
+  // A passage that stops mid-sentence says so; a closing "Selah" (a musical or
+  // liturgical mark, not a word to memorize) comes off the end.
+  text = balanceQuotes(text).replace(/\s+Selah$/, "").replace(/[,;:]$/, "...");
+  return text;
+}
+
 /** Compare quotations on words alone: case, quotes, and punctuation ignored. */
 export function normalize(s) {
   return s

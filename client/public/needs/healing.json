@@ -1,31 +1,152 @@
 {
   "slug": "healing",
-  "page": false,
+  "page": true,
   "rank": 13,
   "title": "I'm praying for healing",
+  "seoTitle": "Praying for Healing: What the Bible Promises and Doesn't",
+  "description": "Praying for healing for yourself or someone you love? What the Bible says, why God doesn't always heal now, and how to pray without false promises.",
   "summary": "Asking God to heal, and living in the waiting, without the promises he never made.",
   "askedAs": [
     "healing",
     "Bible verses for healing",
     "prayer for healing",
+    "healing scriptures",
     "does God still heal",
     "why hasn't God healed me",
-    "healing scriptures",
     "is sickness a punishment for sin",
     "faith healing",
     "praying for a sick friend",
-    "anointing the sick"
+    "anointing the sick",
+    "by his stripes we are healed",
+    "James 5:14",
+    "is it a lack of faith to see a doctor",
+    "gifts of healing"
   ],
   "states": [
     "carrying",
     "helping"
   ],
   "sensitivity": "ordinary",
+  "crisisTopics": [
+    "suicide",
+    "substance",
+    "abuse"
+  ],
+  "answer": "You're asking God to heal: your own body, or a child, a husband or wife, a parent, a friend. You may be living between appointments and phone calls, wondering whether God still heals, why he hasn't yet, or whether your faith is the problem. The Bible tells you to ask plainly, because God heals. It's just as honest that he doesn't always heal in this life, and neither outcome is a verdict on your faith. Tonight, tell God exactly what you're asking for, and ask one or two people to pray with you. Keep the treatment your doctor prescribed; medicine is one of God's gifts. If pain or fear has you thinking about ending your life, call or text 988.",
+  "happening": "Maybe it's your own body: a diagnosis you're still learning to say, pain that greets you in the morning and keeps you up at night, an illness that has gone on so long that people have stopped asking about it. Maybe it's someone you love: a child in a hospital bed, a husband waiting on a biopsy, a mother whose name you keep adding to the prayer list. Your prayers have narrowed to one request. Some nights you search for healing verses, looking for the one that promises what you want.\n\nThe questions come with the waiting. *Does God still heal? Why hasn't he healed yet? Did I bring this on myself? If I believed harder, would it be gone?* Some people have heard worse from other Christians: *claim your healing*, *don't speak that diagnosis over yourself*, *is there sin in your life?* Others have the opposite trouble. Their church prays for the doctors and the family and a good outcome but never quite asks God to heal, and they wonder whether asking would be naive.\n\nEach of the usual explanations holds something true. Medicine is right that sickness has causes and treatments, and a doctor's honest prognosis isn't unbelief; it's information you need. Waiting is its own suffering: fear and hope trade places by the hour and wear down sleep, appetite, and patience. Long illness is lonely, because people know what to do in a crisis and often don't know what to do in the long middle. And the Christians who say God heals and we should ask him are right; the Gospels are full of it.\n\nWhat these explanations leave out is the question underneath. Medicine can tell you what's wrong and what might help, but not whether anyone hears you. And the popular spiritual answers tend to keep one half of the Bible and drop the other. Some keep the healings and drop the apostle who asked three times and was told no. Others keep the honesty about suffering and drop the boldness to ask. You need both halves, because both are true, and holding them together is what makes this prayer so hard to pray.",
+  "scripture": {
+    "intro": "Many of the healing verses people pass around are real promises, and they're richer and harder where they stand. Here are instructions for the sick, a woman the doctors had failed, a dying king's tears, an apostle's refused request, and a world where pain is gone.",
+    "passages": [
+      {
+        "ref": "James 5:13-16",
+        "text": "Is any one of you suffering? He should pray. Is anyone cheerful? He should sing praises. Is any one of you sick? He should call the elders of the church to pray over him and anoint him with oil in the name of the Lord. And the prayer offered in faith will restore the one who is sick. The Lord will raise him up. If he has sinned, he will be forgiven. Therefore confess your sins to each other and pray for each other so that you may be healed. The prayer of a righteous man has great power to prevail.",
+        "reading": "The letter of James, written to scattered believers facing “trials of many kinds” (James 1:2), gives the sick standing instructions. The sick person calls; the elders come, pray, and anoint. Oil soothed wounds in that world (Luke 10:34) and also marked a person as set apart for God, and Christians have read it both ways. Notice whose faith is named: the prayer of faith is the elders', not a test the sick person must pass, and the line about sin begins with *if*. Then the circle widens to everyone. The promise is real, and it's the Lord who raises up; the same chapter has just pointed to Job's perseverance and “the outcome from the Lord” at the end of it (James 5:11)."
+      },
+      {
+        "ref": "Mark 5:25-34",
+        "text": "And a woman was there who had suffered from bleeding for twelve years. She had borne much agony under the care of many physicians and had spent all she had, but to no avail. Instead, her condition had only grown worse. When the woman heard about Jesus, she came up through the crowd behind Him and touched His cloak. ... Immediately her bleeding stopped, and she sensed in her body that she was healed of her affliction. ... “Daughter,” said Jesus, “your faith has healed you. Go in peace and be free of your affliction.”",
+        "reading": "Mark sets this inside another story: Jesus is on his way to heal Jairus's dying daughter (Mark 5:23) when a woman reaches for his cloak. Her bleeding had made her ceremonially unclean for twelve years (Leviticus 15:25), and her faith was nothing grander than the hope that touching his clothes would be enough. When Jesus kept looking for her, she came forward trembling (Mark 5:33), and he called her “Daughter.” His word about her faith honors a woman who reached for him; it isn't a scale for weighing everyone still sick. Then word came that the girl had died, and Jesus went to the house anyway and raised her (Mark 5:35-42)."
+      },
+      {
+        "ref": "2 Kings 20:1-7",
+        "text": "In those days Hezekiah became mortally ill. The prophet Isaiah son of Amoz came to him and said, “This is what the LORD says: ‘Put your house in order, for you are about to die; you will not recover.’” Then Hezekiah turned his face to the wall and prayed to the LORD... And Hezekiah wept bitterly. ... the word of the LORD came to him... ‘I have heard your prayer; I have seen your tears. I will surely heal you....’ Then Isaiah said, “Prepare a poultice of figs.” So they brought it and applied it to the boil, and Hezekiah recovered.",
+        "reading": "Hezekiah, king of Judah, heard the plainest word a sick person can hear: you will not recover. He turned his face to the wall and wept, and God answered the tears as well as the prayer. Then the prophet who carried God's promise prescribed figs for the boil, so prayer and medicine sit side by side in this story, and neither apologizes for the other. The healing came with a number on it, fifteen more years (2 Kings 20:6), and in time Hezekiah died (2 Kings 20:21). Fifteen years was a mercy worth weeping for, and it was still fifteen years."
+      },
+      {
+        "ref": "2 Corinthians 12:7-9",
+        "text": "... So to keep me from becoming conceited, I was given a thorn in my flesh, a messenger of Satan, to torment me. Three times I pleaded with the Lord to take it away from me. But He said to me, “My grace is sufficient for you, for My power is perfected in weakness.” Therefore I will boast all the more gladly in my weaknesses, so that the power of Christ may rest on me.",
+        "reading": "Paul is answering rivals in Corinth who boasted of their credentials (2 Corinthians 11:12-13). He never names his thorn; some think it was the illness he mentions to the Galatians (Galatians 4:13), others an opponent or a persecution. He does say he pleaded three times, and the answer was no. God had done “extraordinary miracles” through Paul's hands (Acts 19:11), and still he wasn't spared. The reasons given are his humility and God's power made perfect in weakness; weak faith never comes up. If your answer so far has been no, you're in an apostle's company, and the grace he was given is offered to you too."
+      },
+      {
+        "ref": "Revelation 21:3-5",
+        "text": "And I heard a loud voice from the throne saying: “Behold, the dwelling place of God is with man, and He will dwell with them. They will be His people, and God Himself will be with them as their God. ‘He will wipe away every tear from their eyes,’ and there will be no more death or mourning or crying or pain, for the former things have passed away.” And the One seated on the throne said, “Behold, I make all things new.” Then He said, “Write this down, for these words are faithful and true.”",
+        "reading": "John saw this on Patmos, where he was “because of the word of God and my testimony about Jesus” (Revelation 1:9). It's the Bible's last word on pain, and God wipes away the tears himself. A chapter later the leaves of the tree of life are “for the healing of the nations” (Revelation 22:2). Paul gives the same hope a body: what is “sown in weakness” is “raised in power” (1 Corinthians 15:43). For everyone who belongs to Christ, a healing that doesn't come in this life is kept for that day."
+      }
+    ]
+  },
+  "whyHard": "People who pray for healing often find themselves between two answers that sound like opposites. The first is the quiet assumption of a medical age, and the skeptic states it most sharply: sickness is a matter of cells and causes, and prayer changes nothing anyone can measure. He has evidence. In 2006 the American Heart Journal published a large trial in which strangers prayed for patients facing heart bypass surgery: being prayed for made no difference to complications, and those told for certain that they were being prayed for had more complications, not fewer. The second answer is preached on religious television and in churches of many kinds: God guarantees healing to every believer with enough faith, and a symptom that lingers means faith that wavered. It's the healing half of the prosperity gospel, which teaches that believers have a right to health and wealth and can obtain them by confessing their faith and giving.\n\nEach answer has hold of something true. The skeptic is right about the trial: it found no benefit, and Christians shouldn't talk as though prayer were a treatment that works by the dose. I came to faith from atheism, and I take that result seriously. The second answer is right that God heals, that he is generous, and that a church which never asks him to heal has quietly stopped expecting him to act.\n\nUnderneath, though, the two share an assumption: both treat prayer as a mechanism and the outcome as a verdict. If prayer is a treatment, a failed trial proves no one is listening. If faith is a force, a sick body proves the faith was weak. Scripture describes something else: asking a Father who is free, who healed Hezekiah and told Paul no. A God who could be tested like a drug wouldn't be that Father. To a skeptic that can sound like a convenient escape from the evidence, but the Bible recorded its unhealed saints long before anyone ran a trial.\n\nThe church has drifted toward both mistakes, and I'm a pastor, so I have to include myself. It's easier to pray only *guide the surgeon's hands* than to ask God outright to heal, because the first prayer can't be disappointed, and that caution is its own failure of faith. The louder error has done more visible harm; it has told sick people, in God's name, that they didn't believe enough, and it deserves grief as well as correction. A promise God never made can't be kept, and when it breaks, it breaks on the people in the hospital beds.\n\nThe Bible's own account is older and harder than either answer. When John the Baptist asked from prison whether Jesus was the one, Jesus pointed to his healings (Matthew 11:2-5). But everyone he healed died later. Paul, through whose hands God healed many, still groaned with the church as we “wait eagerly for ... the redemption of our bodies” (Romans 8:23). The historic creeds don't promise healing in this life; the [Apostles' Creed](/resources/creeds/apostles-creed) confesses the resurrection of the body.\n\nSo this prayer is hard because we're asking for something God really gives, from inside a world where he hasn't yet given all of it. Every healing in this life is a gift of time. The resurrection is the healing that lasts.",
+  "thisWeek": {
+    "intro": "None of this makes healing happen, and none of it is a technique for getting it. It's how to ask plainly, let others carry you, and care for your body while you wait.",
+    "steps": [
+      {
+        "title": "Ask God plainly to heal",
+        "body": "Say it in plain words: *heal me*, or *heal her*. You don't need to hedge the request to protect God, or yourself, from disappointment. If your words run out, borrow a psalm that bears David's name: “heal me, O LORD, for my bones are in agony” (Psalm 6:2). Tell him the fear and the anger too. In Gethsemane Jesus asked for exactly what he wanted, then prayed, “Yet not what I will, but what You will” (Mark 14:36). Both halves belong in prayer."
+      },
+      {
+        "title": "Ask others to pray with you",
+        "body": "The letter of James tells the sick to call the elders to pray over them and anoint them (James 5:14). Call your pastor this week and ask, even if your church doesn't usually do this; if you're too sick to go, ask them to come to you. Then choose two or three people who will pray without preaching at you, tell them exactly what to pray for (Thursday's scan, sleep, courage, the pain at night), and let them bring a meal or drive you to treatment. If you're praying for someone else, offer to make these calls, and [The Prayer Planner](/tools/prayer-planner) can put their name in front of you on the days you choose."
+      },
+      {
+        "title": "Keep your treatment and your appointments",
+        "body": "Keep taking what your doctor prescribed, and keep your appointments; prayer and treatment aren't rivals, and using one isn't doubting the other. Pray for the people treating you by name. If anyone urges you to stop or refuse a treatment to prove your faith, talk with your doctor before you change anything."
+      },
+      {
+        "title": "Borrow a lament on the hard days",
+        "body": "Some days you won't have a prayer of your own, so borrow one. Psalm 88 is the prayer of someone “afflicted and near death” since youth (Psalm 88:15). It ends in darkness, but it opens by calling on “the God of my salvation” (Psalm 88:1), and it's in the Bible. Read it aloud, or Psalm 13, and add a sentence of your own, even if it's only *I'm still here*. Honest complaint spoken to God is still prayer."
+      }
+    ]
+  },
+  "moreHelp": {
+    "body": "Praying for healing is spiritual work, and a pastor or a praying friend is good company for it, but this page can't stand in for a doctor, and nothing on it should delay medical care. If you're unsure about a diagnosis or a treatment plan, it's reasonable to ask for a second opinion. If pain or illness won't lift, ask your doctor about a pain specialist or palliative care, which treats pain and other symptoms at any stage of a serious illness, alongside other treatment. Long illness wears on the mind too, and a licensed counselor can help you carry the fear, the grief, and the waiting. Ask your doctor for a referral, check your insurer's directory, or ask a pastor which counselors they trust; if you want a Christian counselor, say so, and confirm with your state's licensing board that any counselor you see is licensed. If the news is new and frightening, there's [a page for a hard diagnosis](/help/diagnosis).",
+    "signs": [
+      "Symptoms are new, sudden, or getting worse. Call your doctor today, or 911 in an emergency.",
+      "Pain or fear has left you hopeless, or you've had thoughts of ending your life. Call or text 988 now.",
+      "Someone pressures you to stop or refuse treatment, or to keep a sick child from a doctor, as proof of faith. Talk to your doctor, and call 911 if a child is in danger.",
+      "Someone at home uses God to control your medical care, or you're afraid of them. Call 911 if you're in danger; the Domestic Violence Hotline is at the end of this page.",
+      "You're taking more pain medicine than prescribed, or drinking to get through the day. Tell your doctor; SAMHSA's helpline is at the end of this page.",
+      "Fear, grief, or sleeplessness has lasted for weeks and is crowding out the rest of your life. See your doctor or a licensed counselor.",
+      "You're a teenager who is sick or scared and carrying it alone. Tell a parent, a school nurse, or another adult you trust."
+    ],
+    "firstCall": "Say it simply. To a doctor: *I want to understand my options and what each would mean for my daily life.* To a counselor: *I'm living with an illness, and the fear and the waiting are wearing me down.* Ask whether they're licensed in your state, what they charge, and whether they take your insurance. If your faith matters to you, say so: *I'm praying for healing, and I'd like a counselor who respects that.*",
+    "cost": "Asking your pastor and elders to pray costs nothing. For counseling, ask about sliding-scale fees, a community mental health center, a university training clinic, or an employee assistance program at work, which often covers a few free sessions. For medical bills, ask the hospital about financial assistance, and tell your pastor if money is the crisis; some churches keep a benevolence fund for needs like this."
+  },
+  "helping": {
+    "body": "If you're praying for someone who is sick, ask them what they'd like you to pray for, then pray that, plainly and briefly. You may ask God boldly to heal. You may not promise that he will in this life, and the person in the bed can hear the difference. Bring the help that goes with prayer, a meal or a ride to treatment or an hour so the caregiver can sleep, and keep visiting after the cards stop. If they'd like to be anointed, help them ask their pastor. If they're angry at God, don't correct them; the Psalms make room for that anger.\n\nIf you're a pastor, teach your people to ask God to heal and to know what he hasn't promised, in the same sermon. Make prayer for the sick, with anointing as your church practices it, an ordinary part of church life, and if anyone tells a sick person they lack faith, deal with it, gently and quickly.",
+    "say": [
+      "What would you like me to pray for?",
+      "I'm asking God to heal you, and I'm staying, whatever happens.",
+      "You can be honest with me about how bad it is.",
+      "Can I bring dinner on Tuesday?",
+      "I'll keep praying on the days you can't."
+    ],
+    "dontSay": [
+      "If you had enough faith, you'd be healed.",
+      "Claim your healing, and don't speak the diagnosis.",
+      "God told me you're going to be fine.",
+      "Is there some sin in your life?",
+      "Everything happens for a reason."
+    ],
+    "next": "Put their scans and appointments on your calendar, and pray and text them on those days. If your friend talks about wanting to die, ask directly whether they're thinking about suicide, stay with them, and help them call or text 988, or call 911 if they're in danger. If they're taking more medication than prescribed or drinking to cope, tell them gently what you've noticed and help them talk to their doctor."
+  },
+  "prayer": "Lord Jesus, you reached out and touched a leper. You stopped for a woman in a crowd, and you wept at your friend's grave. So I'm asking you plainly: heal. Heal this body, mine or the one I love, and please don't wait long.\n\nI don't know whether you will, and I'm not at peace with that. Some nights your silence is more than I can carry. If my faith is small, it's the faith I have, and I'm bringing it to you.\n\nUse the doctors and the medicine. Guard me from the voices that blame the sick, and from the fear that I brought this on myself. Send people who will keep praying when I can't.\n\nIf your answer is not yet, give me the grace you gave Paul. Hold on to me until the day you wipe away every tear and raise your people whole. Until then, keep me asking. Amen.",
   "kit": {
+    "tool": {
+      "href": "/tools/prayer-planner",
+      "label": "The Prayer Planner: Your People, Through the Week"
+    },
+    "guides": [
+      {
+        "href": "/studyguides/lament",
+        "label": "Lament: A Bible Study on Praying Your Pain"
+      },
+      {
+        "href": "/studyguides/suffering",
+        "label": "When It Does Not Make Sense"
+      },
+      {
+        "href": "/studyguides/holy-spirit",
+        "label": "The Holy Spirit: A Bible Study on the Forgotten God"
+      }
+    ],
     "read": [
       {
         "href": "/life/health-illness-and-pain",
         "label": "How Should Christians Think About Sickness and Health?",
+        "kind": "Life"
+      },
+      {
+        "href": "/life/waiting-and-unanswered-prayer",
+        "label": "What Do You Do When God Does Not Answer Prayer?",
         "kind": "Life"
       },
       {
@@ -39,20 +160,111 @@
         "kind": "Wisdom"
       },
       {
-        "href": "/life/waiting-and-unanswered-prayer",
-        "label": "What Do You Do When God Does Not Answer Prayer?",
-        "kind": "Life"
+        "href": "/resources/context/psalm-91-in-context",
+        "label": "Does Psalm 91 Promise Protection From Harm?",
+        "kind": "Page"
       },
       {
-        "href": "/writing/prosperity-gospel-is-not-the-gospel",
-        "label": "The Prosperity Gospel Is Not the Gospel",
-        "kind": "Essay"
+        "href": "/resources/context/romans-8-28-in-context",
+        "label": "Does Romans 8:28 Mean Everything Happens for a Reason?",
+        "kind": "Page"
       },
       {
-        "href": "/studyguides/lament",
-        "label": "Lament: A Bible Study on Praying Your Pain",
-        "kind": "Study guide"
+        "href": "/how-tos/body-how-to-care-for-your-body-in-sickness",
+        "label": "How to Care for Your Body in Sickness",
+        "kind": "How-to"
+      },
+      {
+        "href": "/how-tos/body-how-to-live-with-chronic-pain",
+        "label": "How to Live With Chronic Pain and Faith",
+        "kind": "How-to"
+      },
+      {
+        "href": "/how-tos/ss-how-to-face-a-hard-diagnosis",
+        "label": "How to Face a Hard Diagnosis",
+        "kind": "How-to"
+      },
+      {
+        "href": "/how-tos/ss-how-to-sit-with-someone-suffering",
+        "label": "How to Sit With Someone Who Is Suffering",
+        "kind": "How-to"
       }
     ]
+  },
+  "faq": [
+    {
+      "q": "Does God still heal people today?",
+      "a": "Yes. Christians across traditions believe God heals in answer to prayer. What divides faithful churches is narrower: whether the “gifts of healing” Paul lists (1 Corinthians 12:9) continue today. Continuationists say they do, since no text ends them and Paul tells the church to “eagerly desire the greater gifts” (1 Corinthians 12:31); their comfort is that the Spirit who healed through the apostles still gives those gifts in his church. Cessationists say those gifts confirmed the gospel when it was first announced (Hebrews 2:3-4) and ended with the apostles, while God still heals in answer to prayer; their comfort is that no sick person has to hunt for a gifted healer, since the church's prayer is what God told the sick to ask for. This divides churches, not the faith."
+    },
+    {
+      "q": "Why hasn't God healed me?",
+      "a": "No one can tell you why in your case, and anyone who claims to know is guessing. What Scripture shows is that a no, or a not yet, isn't a verdict on you. When Paul's companion Epaphroditus nearly died, “God had mercy on him” (Philippians 2:27), but 2 Timothy, a letter in Paul's name, mentions leaving Trophimus “sick in Miletus” (2 Timothy 4:20). Elisha, through whose prayer God raised a dead boy, died of an illness (2 Kings 13:14). Keep asking; Jesus told a parable about our “need to pray at all times and not lose heart” (Luke 18:1). And if the one you prayed for has died, [the page on grief](/help/grief) was written for you."
+    },
+    {
+      "q": "Is my sickness a punishment for sin?",
+      "a": "Sometimes the Bible connects the two: a psalm that bears David's name says, “there is no rest in my bones because of my sin” (Psalm 38:3). But Scripture won't let anyone read a diagnosis as proof of guilt. Job's friends tried, and God's wrath was kindled against them (Job 42:7). Asked whose sin had made a man blind from birth, Jesus answered, “Neither this man nor his parents sinned” (John 9:3). If something is on your conscience, confess it and receive forgiveness, and don't let anyone, including the voice in your own head, call your sickness God getting even."
+    },
+    {
+      "q": "If I had more faith, would God heal me?",
+      "a": "Faith matters in the Gospels. Jesus told a healed woman, “your faith has healed you” (Mark 5:34), and once told his disciples they had failed “Because you have so little faith,” though the measure he named in the same breath was “faith the size of a mustard seed” (Matthew 17:20). But people were healed on the faith of friends who carried a paralyzed man to him (Mark 2:3-5), on a father's “I do believe; help my unbelief!” (Mark 9:24), and with no faith mentioned at all (John 5:5-13), while Paul, whose faith no one doubts, was told no. No one can read your faith off your body. Teaching that makes healing the reward of enough faith is an error, however sincerely it's preached, and it lays a second weight on people already carrying the first."
+    },
+    {
+      "q": "What does the Bible mean when it says we are healed by his wounds?",
+      "a": "The line comes from the Servant song in Isaiah: “He was pierced for our transgressions ... and by His stripes we are healed” (Isaiah 53:5). Stripes are the wounds of a beating. Christians read the promise two ways. Some hold that the cross won healing for the body as well as for sin, so believers may ask for it now; Matthew says Jesus healed the sick to fulfill Isaiah's words, “He took on our infirmities and carried our diseases” (Matthew 8:17), and their comfort is that you're asking for what Christ has already paid for. Others hold that the cross secures every healing but that the body's full healing waits for the resurrection; the first letter of Peter applies the line to Christ bearing “our sins in His body on the tree” (1 Peter 2:24), and their comfort is that an unhealed body is no sign the cross has failed you. The historic creeds don't settle it."
+    },
+    {
+      "q": "Is it a lack of faith to see a doctor or take medicine?",
+      "a": "No. Jesus compared his own work to a doctor's: “It is not the healthy who need a doctor, but the sick” (Mark 2:17). The letter to the Colossians sends greetings from “Luke, the beloved physician” (Colossians 4:14). When Chronicles faults King Asa, it's because “even in his illness he did not seek the LORD, but only the physicians” (2 Chronicles 16:12); the fault was leaving God out, not seeing the doctors. Pray, and take the medicine."
+    }
+  ],
+  "related": [
+    "prayer",
+    "suffering",
+    "diagnosis",
+    "grief",
+    "caregiving"
+  ],
+  "slots": [
+    {
+      "section": "whyHard",
+      "note": "James came to faith from atheism. If he wishes, a few sentences in his own words on how he regarded prayer for healing as an atheist, and how he weighs the 2006 prayer trial now, would give that paragraph its full weight. The page claims only that he came to faith from atheism and takes the trial's result seriously; it says nothing about what he thought or did before faith."
+    },
+    {
+      "section": "faq",
+      "note": "Does God still heal people today: where James lands on whether the gifts of healing continue, and the tradition his view comes from, in his own words. The answer gives the continuationist and cessationist views their strongest texts and their comforts and lands nowhere. The site disagrees with itself here: /theology/doctrine/holy-spirit and /theology/doctrine/miracles carry a first-person landing on the open-but-cautious view (and first-person accounts of praying for the sick that no one has verified), while /studyguides/holy-spirit says Bell refuses to break the tie. This page's kit links only the study guide. Whatever James writes should be reconciled with all three."
+    },
+    {
+      "section": "faq",
+      "note": "What does the Bible mean when it says we are healed by his wounds: where James lands on whether healing for the body in this life is provided in the atonement, in his own words. Both readings are given their strongest text and their comfort, with no landing, and the answer is short enough to take his few sentences."
+    },
+    {
+      "section": "helping",
+      "note": "As a pastor, James could say in his own words how he prays with the sick, and whether and how he anoints them, beside the paragraph for pastors. The page invents no visits, patients, or practices of his church."
+    },
+    {
+      "section": "happening",
+      "note": "As a father of five sons, James could add, if he wishes, a sentence in his own words about praying for a sick child. Nothing about his family's health is assumed or claimed."
+    }
+  ],
+  "sources": [
+    {
+      "claim": "A multicenter randomized trial published in the American Heart Journal in 2006 (the STEP trial, Herbert Benson and colleagues), in which prayer groups who did not know the patients prayed for people undergoing coronary artery bypass surgery, found that intercessory prayer itself had no effect on complication-free recovery, and that patients who were certain of receiving prayer had a higher incidence of complications.",
+      "cite": "Benson H, et al., Study of the Therapeutic Effects of Intercessory Prayer (STEP) in cardiac bypass patients: a multicenter randomized trial of uncertainty and certainty of receiving intercessory prayer, American Heart Journal 151, no. 4 (2006), PubMed abstract",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16569567/"
+    },
+    {
+      "claim": "The prosperity gospel is the teaching that believers have a right to the blessings of health and wealth and can obtain them through positive confessions of faith and the sowing of seeds through tithes and offerings.",
+      "cite": "Lausanne Theology Working Group (Africa chapter), A Statement on the Prosperity Gospel",
+      "url": "https://lausanne.org/content/a-statement-on-the-prosperity-gospel"
+    },
+    {
+      "claim": "Palliative care is specialized medical care for people living with a serious illness; it can begin at diagnosis and be given alongside treatment meant to cure.",
+      "cite": "National Institute on Aging, What Are Palliative Care and Hospice Care?",
+      "url": "https://www.nia.nih.gov/health/hospice-and-palliative-care/what-are-palliative-care-and-hospice-care"
+    }
+  ],
+  "reviewed": {
+    "on": "2026-10-01",
+    "notes": "Second pass, 2026-10-01, on the writer's draft of the same day. Truth: every passage and inline reference was re-read in context with scripts/bsb.mjs --verses (James 1:1-2 and 5:7-20; Mark 5:21-43 with Leviticus 15:25-27; 2 Kings 20:1-21 with Isaiah 38:1-8 and 21; 2 Corinthians 11:12-15 and 12:1-10 with Galatians 4:13-15 and Acts 19:11-12; Revelation 1:9, 21:1-5, and 22:1-3; Matthew 11:2-6; Romans 8:18-25; 1 Corinthians 12:7-11, 12:28-31, and 15:42-44; Hebrews 2:3-4; Isaiah 53:3-6 with Matthew 8:14-17 and 1 Peter 2:21-25; Philippians 2:25-27; 2 Timothy 4:20; 2 Kings 4:32-35 and 13:14; Luke 18:1; Psalms 6, 13, 38, and 88, of which 6, 13, and 38 bear David's name and 88 is assigned to no one; Job 42:7; John 5:5-13 and 9:1-3; Mark 1:40-41, 2:3-5, 2:17, 9:22-24, and 14:32-36; Matthew 17:19-20; Colossians 4:14; 2 Chronicles 16:12; Luke 10:34). The 2006 STEP prayer trial stays only as the skeptic's strongest evidence, stated from what is certain and without numbers: strangers prayed for bypass patients, being prayed for made no difference to complications, and patients told for certain they were being prayed for had more complications. The first-name-and-initial detail and the ACC source were cut. The answer now concedes the finding outright, says Christians shouldn't talk as though prayer were a treatment, and says a God who could be tested like a drug would not be the Father Scripture describes. Sources now hold only what the page claims: the STEP abstract; the Lausanne definition of the prosperity gospel, which is ordinary knowledge, without the cross-denominational line; and NIA on palliative care, without hospice. All three were confirmed by the writer only through search excerpts and should be opened before release. No creed promises became the historic creeds don't promise, since some denominational statements of faith do place healing in the atonement. The prayer's claim that Jesus touched the sick when no one else would became the leper he reached out and touched (Mark 1:41). The Scripture intro says many, not all, healing verses are real promises. Theology: the gifts question (continuationist and cessationist) and healing in the atonement each give two views their verse and their comfort, with no landing and slots kept; Does God still heal now opens with a yes that every view on the page affirms. Helping now says anointing as your church practices it rather than prescribing it, matching the James reading. Prosperity teaching and its opposite are both refused: God heals, not always in this life; illness is no verdict on faith; medicine is a gift; the final healing is the resurrection. Care: suicide appears only as thoughts, with 988, 911, and the advice to ask directly, and no means. crisisTopics adds abuse, with a new sign for someone at home who uses God to control your medical care or makes you afraid, since the page already named pressure to refuse treatment and to keep a sick child from a doctor; the hotline, SAMHSA, and 988 sit at the page foot where the signs say. Voice: first person only as stance and approved facts (atheism; pastor); I grieve over that teaching became the teaching deserving grief as well as correction; the stripes question is now in plain words; the punishment answer no longer repeats the James reading's if. Sibling page (diagnosis): the answers agree (faith matters, a lingering illness is no verdict, Paul's thorn stayed, the prayer of faith is the elders'); lines that duplicated it were changed (the firstCall opening, two say lines, the prayer's carry-me line, the supplement don't-say, the questions-before-each-visit sentence, and the not-on-trial verdict), and its link is now /help/diagnosis. Kit: removed the prosperity essay (unsourced claims about living preachers) and /theology/doctrine/miracles (it lands on the gifts question in James's voice and narrates unverified experiences of praying for the sick); the Holy Spirit study guide, which refuses to break the tie, stays. Heaven and Hell gave way to When It Does Not Make Sense (the thorn not removed, Revelation 21:4), and the Romans 8:28 context guide was added. The steps no longer say the Prayer Planner keeps appointment dates; it gives each name a weekday. The church and friends steps were merged. Length went from 4,291 to about 4,170 words, leaving room for the slots. validate-needs is clean, and the CarePage test was run."
   }
 }

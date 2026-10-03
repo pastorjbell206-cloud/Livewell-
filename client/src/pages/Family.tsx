@@ -19,6 +19,7 @@ import { CardGrid } from "@/components/editorial/CardGrid";
 import { SectionHead } from "@/components/editorial/SectionHead";
 import { trpc } from "@/lib/trpc";
 import SubjectShelf from "@/components/SubjectShelf";
+import ScriptureNote from "@/components/ScriptureNote";
 import { subjectById } from "@/lib/subjects";
 import { getReadEssays } from "@/lib/readProgress";
 
@@ -152,6 +153,7 @@ export default function Family() {
               })}
             </div>
           )}
+          <ScriptureNote rendering="bsb" />
           <div style={{ marginTop: "16px", display: "flex", flexWrap: "wrap", gap: "20px" }}>
             <Link href="/family/devotions" style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--mustard-text)", display: "inline-flex", alignItems: "center", gap: "6px" }}>
               See the full year, plus Advent and Holy Week <ArrowRight size={14} />

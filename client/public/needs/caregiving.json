@@ -178,7 +178,11 @@
         "label": "Should We Keep People Alive at Any Cost?",
         "kind": "Essay"
       }
-    ]
+    ],
+    "plan": {
+      "href": "/plans/caregiving",
+      "label": "Eight Weeks of Not Carrying It Alone"
+    }
   },
   "faq": [
     {

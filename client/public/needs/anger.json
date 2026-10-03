@@ -1,24 +1,143 @@
 {
   "slug": "anger",
-  "page": false,
+  "page": true,
   "rank": 43,
   "title": "I can't control my anger",
-  "summary": "Anger that burns hot or runs cold: what Scripture actually says, and what to do with it.",
+  "seoTitle": "Can't Control Your Anger? What the Bible Says, What Helps",
+  "description": "For the temper that keeps winning, the grudge that won't cool, and anger at God: what Scripture says, what helps, and when it has crossed into abuse.",
+  "summary": "For the temper that keeps winning, the grudge that won't cool, and anger at God, with a plain word on when it has become abuse.",
   "askedAs": [
     "anger",
     "angry all the time",
+    "why am I so angry",
     "is anger a sin",
+    "Bible verses about anger",
     "how to control anger",
+    "anger management",
     "rage",
     "temper",
-    "angry at God"
+    "I yell at my kids",
+    "I yell at my wife",
+    "righteous anger",
+    "angry at God",
+    "be angry and sin not"
   ],
   "states": [
     "carrying",
     "helping"
   ],
-  "sensitivity": "ordinary",
+  "sensitivity": "high",
+  "crisisTopics": [
+    "abuse",
+    "substance",
+    "suicide"
+  ],
+  "answer": "It comes faster than you can stop it. It takes one small thing, and you're shouting at your kids, slamming a door, or saying something to your spouse you can't take back. Then come the shame, the apology, the promise, and a few days later the same fire. Or yours runs cold, a grudge you've nursed for years, or it's aimed at God. Anger isn't always a sin, and a temper can change. But hitting, shoving, or threatening your partner, or using your temper to control them, is abuse, not a temper problem, and if your family is afraid of you, take that as seriously. Step away now. Call 911 if anyone is in danger, 988 if you're afraid of what you might do, and the National Domestic Violence Hotline, listed just below, which also talks with people worried about their own behavior. If someone else's anger frightens you, put your safety first; that Hotline is for you.",
+  "happening": "Anger is fast. A shoe left in the hallway or a question asked for the fourth time, and your face is hot and your voice is already rising before you've thought a single thought. A door slams, and you see a look on your child's face that you'll replay tonight, along with the quiet fear that this is the real you. For some it runs cold, a silence that lasts for days and hardens into contempt, and for others it's aimed at God over a death or a prayer that went nowhere.\n\nBe honest about where the line falls, because it isn't only hitting and threats. Choking, breaking things to frighten someone, and controlling where a partner goes or who they see are abuse too. Calling it anger makes it sound like weather that happens to you. Abuse is a pattern of power and control, and it needs help built for abuse rather than a general anger class. A family that tiptoes around your moods is telling you something.\n\nIf you're here because of someone else's temper, trust your own fear and put your safety first; keeping them calm was never your job. If you're under eighteen, tell a teacher, a school counselor, or another adult you trust.\n\nFor the temper itself, the usual explanations each hold part of the truth. A doctor can look at sleep, pain, stress, and drinking, because each shortens a fuse, and constant irritability can be a sign of depression, which in men can look more like anger than sadness. A counselor may say that anger often stands guard over feelings that are harder to admit, like fear, hurt, shame, and grief. Some of us learned our anger at home, from a parent's temper or a parent's absence. And the church will say that much of our anger is sin, which is true.\n\nWhat they can leave out is that anger is also a signal. It flares where something matters to you, which is why you can't simply switch it off. Sometimes what it defends is good: a child who was mistreated, a wrong that's real. More often, if we're honest, it defends our pride and comfort and the expectation of being obeyed. The goal isn't to stop feeling anger. It's to learn what yours is defending, and to stop letting it decide what you do.",
+  "scripture": {
+    "intro": "Scripture doesn't call all anger sin, and it doesn't treat anger lightly either. God calls himself slow to anger, Jesus was angry in a synagogue, and Proverbs watches what a temper does to the people around it. The last passage is a hard one: an angry prophet, and a God who answers him with questions.",
+    "passages": [
+      {
+        "ref": "Mark 3:4-6",
+        "text": "And He asked them, “Which is lawful on the Sabbath: to do good or to do evil, to save life or to destroy it?” But they were silent. Jesus looked around at them with anger and sorrow at their hardness of heart. Then He said to the man, “Stretch out your hand.” So he stretched it out, and it was restored. At this, the Pharisees went out and began plotting with the Herodians how they might kill Jesus.",
+        "reading": "Jesus' opponents were watching to see whether he would heal a man's withered hand on the Sabbath, so they could accuse him (Mark 3:2). Mark joins two things we rarely hold together: Jesus looked at them with anger and with sorrow. What angered him was hearts so hard they would rather a man's hand stay withered than see their rule bent, and his anger ended with the man made whole. There was other anger in the room. Luke says his opponents were “filled with rage” (Luke 6:11), and Mark says they walked out and began plotting his death. Righteous anger grieves, it's aimed at harm done to someone else, and it moves toward healing. Much of what we call righteous anger fails all three tests, mine included."
+      },
+      {
+        "ref": "Ephesians 4:26-27,31-32",
+        "text": "“Be angry, yet do not sin.” Do not let the sun set upon your anger, and do not give the devil a foothold. ... Get rid of all bitterness, rage and anger, outcry and slander, along with every form of malice. Be kind and tenderhearted to one another, forgiving each other just as in Christ God forgave you.",
+        "reading": "The letter to the Ephesians is talking about people who belong to each other, “for we are all members of one another” (Ephesians 4:25), and no one is nearer than the people at your own table. “Be angry, yet do not sin” comes from Psalm 4:4, an evening prayer, and the letter keeps the evening in view: it allows anger but sets a deadline on it, because anger kept overnight gives the devil a foothold. Then it names what a temper sounds like. The word translated outcry means shouting, the raised voice a whole house learns to brace for. What the letter asks for instead is a tender heart, and its last words give the reason: you forgive as someone who has been forgiven."
+      },
+      {
+        "ref": "Proverbs 15:1,18",
+        "text": "A gentle answer turns away wrath, but a harsh word stirs up anger. ... A hot-tempered man stirs up strife, but he who is slow to anger calms dispute.",
+        "reading": "Proverbs describes how life usually runs in God's world, and at home it runs like this: a harsh word draws a harsher one, and a gentle answer lowers the heat. The phrase translated slow to anger is the one God uses of himself at Sinai (Exodus 34:6). In Hebrew it is literally long of nose, as if anger were heat rising in the face and patience a long breath before it comes. The person who calms a quarrel shares something of God's own character. But a proverb isn't a promise, and a gentle answer isn't a safety plan. If you live with someone whose rage frightens you, nothing here says your softness can control it or that their anger is your fault. Here they're a word to the one with the temper."
+      },
+      {
+        "ref": "Jonah 4:1-2,4",
+        "text": "Jonah, however, was greatly displeased, and he became angry. So he prayed to the LORD, saying, “O LORD, is this not what I said while I was still in my own country? This is why I was so quick to flee toward Tarshish. I knew that You are a gracious and compassionate God, slow to anger, abounding in loving devotion—One who relents from sending disaster. ... But the LORD replied, “Have you any right to be angry?”",
+        "reading": "God had sent Jonah to Nineveh, the great city of Assyria, whose violence the book itself names (Jonah 3:8). Nineveh repented, God spared it, and Jonah was furious. He told God he had run because he knew God was “slow to anger,” throwing God's own words about himself back at him as a complaint. Then he asked to die (Jonah 4:3). Anger with nowhere to go can turn inward like that; if you've thought about ending your life, call or text 988 now. God doesn't strike Jonah down. He asks a question, then asks it again over a withered plant, and Jonah insists he's right, “angry enough to die” (Jonah 4:9). The book ends with God's last question, about a city full of people, and Jonah never answers. The question is left with us."
+      }
+    ]
+  },
+  "whyHard": "The usual explanation for a temper is temperament: *I've always been this way*, *my dad was the same*. There's something to it; some people do run hotter than others. Proverbs warns that keeping company with a hot-tempered man means “you may learn his ways” (Proverbs 22:24-25), and that's how a lot of us learned ours. But temperament only explains how fast the fire catches. What the fire is about is another question.\n\nAnger is different from the other hard feelings. Fear says *I'm in danger*, and grief says *I've lost something*, but anger says *you were wrong*. It's a verdict. Aristotle saw this more than three centuries before Christ: in his Rhetoric he describes anger as a painful desire to pay back a slight you didn't deserve, and he notices that it carries a pleasure of its own, the hope of getting even. That's why it's so hard to put down. From the inside, anger feels like justice and tastes like power, and in a rage we rarely believe we're the problem. When God asked Cain why he was angry, Cain gave no answer and went out to the field with his brother (Genesis 4:6-8).\n\nWe haven't been given much help with it. Some of us were taught to swallow anger, and swallowed anger doesn't disappear; it goes cold and leaks out as contempt. Others were taught to let it out, which turns out to feed it. When the psychologist Brad Bushman tested it in a 2002 study, venting by hitting a punching bag increased anger and aggression rather than reducing it. Venting is rehearsal. And a lot of us now rehearse daily, in feeds that always have someone new to be furious with, then carry the habit home.\n\nThe church has made this harder in two opposite ways. We've told people who were wronged (a mistreated wife, a hurt child, a member wounded by a leader) that their anger was the sin, so anger that was telling the truth got called bitterness and swallowed. And we've called our own anger zeal: sermons that run on outrage, and fathers whose tempers ruled the house while they led family devotions. I'm a pastor, and few places make it easier for irritation to pass itself off as conviction than a pulpit. Both mistakes come from the same place. We decided which anger was holy by whose anger it was.\n\nScripture refuses both. It never calls all anger sin; God himself is angry at evil. But it also says that “man's anger does not bring about the righteousness that God desires” (James 1:20), and the same letter names the reason: “You crave what you do not have... You quarrel and fight” (James 4:2). Under a great deal of our anger is something we wanted and didn't get, whether respect, quiet, control, or our own way, so the verdict anger hands down is usually about us. Scripture's deepest word to an angry person isn't a technique. It takes the gavel out of our hands: “Vengeance is Mine; I will repay, says the Lord” (Romans 12:19). Leaving judgment to God doesn't mean staying where you're being hurt or keeping quiet about a wrong; the wrong still matters. But we were never the judge, and the Judge has been patient with us.",
+  "thisWeek": {
+    "intro": "None of this will make you patient by Saturday, but it can stop the worst of the damage and begin something slower. Every step after the first assumes everyone at home is safe.",
+    "steps": [
+      {
+        "title": "If anyone is afraid of you, start here",
+        "body": "If anyone at home is afraid of you, or your anger has turned physical, get help today: the National Domestic Violence Hotline if it's your spouse or partner, and a doctor or counselor if it's your children. Ask the Hotline about an intervention program built for abuse. Meanwhile, when you feel it rising, leave the room or the house, and never block anyone from leaving. Don't drink, and don't press the people you've frightened to forgive you or to go to counseling with you. Call or text 988 if you're afraid of what you might do, and 911 if anyone is in danger."
+      },
+      {
+        "title": "Learn your early warning signs",
+        "body": "Anger climbs before it explodes, and the earlier you catch it, the more choices you have. Think back over the last few times you blew up. What did your body do first: heat in your face, a tight jaw, a rising voice? What were you telling yourself, *he always*, *she never*, *I've had it*? Had you slept, eaten, or been drinking? Write it down. This week, say it out loud the moment you notice it: *I'm getting angry.*"
+      },
+      {
+        "title": "Take a time-out, and come back",
+        "body": "Agree on a time-out while everyone is calm, and if you have a baby, lay them on their back in a crib before you step away, and never shake a baby. The time-out is a word that means *I'm too angry to talk well, I'm stepping away, and I'll be back.* When you use it, say when you'll return, then leave the room or take a walk. Don't drive, and don't spend the time rehearsing the argument. Then come back when you said you would. A time-out is for cooling down, never for punishing someone with silence."
+      },
+      {
+        "title": "Starve the fire",
+        "body": "If you get angrier when you drink, stop drinking this week, and if you drink heavily every day, see a doctor first, because quitting suddenly can be dangerous. If you can't stop, read [I can't stop drinking or using](/help/addiction). Proverbs says “strong drink is a brawler” (Proverbs 20:1). Protect your sleep, and eat before the hour you usually blow up. And take a week off from whatever keeps handing you something to be furious about."
+      },
+      {
+        "title": "Repair what you broke",
+        "body": "When your anger has hurt someone, go back once you're calm and name what you did without a *but*: *I yelled at you and said things that weren't true. That was wrong. Will you forgive me?* Tell them what you'll change, then change it, because an apology repeated without change becomes part of the pattern. Children need this as much as adults. Jesus said to leave your gift at the altar and “first go and be reconciled to your brother” (Matthew 5:24). If the person is afraid of you, don't press them; let changed behavior speak first."
+      },
+      {
+        "title": "Ask what your anger is defending",
+        "body": "Tonight, take the day's anger to God the way Psalm 4 does: “on your bed, search your heart and be still” (Psalm 4:4). Ask what you wanted and didn't get, and whether fear, grief, or shame was underneath. Then tell one honest person what you found, a friend, a pastor, or a counselor, who will ask you about it again next week. A temper kept secret keeps its hold."
+      }
+    ]
+  },
+  "moreHelp": {
+    "body": "Much of this belongs with prayer, honest friends, and a church that knows you. Some of it needs more. When anger has become violence, threats, or control, or a partner is afraid of you, the help starts with the National Domestic Violence Hotline, listed near the top of this page. Ask about an intervention program near you; the Hotline doesn't recommend anger management or couples counseling for abusive behavior, because abuse is about power and control. When it's your children who are afraid or have been hurt, make sure they're safe and see a doctor or counselor this week. Call 911 if anyone is in danger.\n\nIf your anger is constant, start with a doctor, who can look for what may be feeding it. Then look for a licensed counselor who works with anger, trauma, or family patterns: a professional counselor, marriage and family therapist, clinical social worker, or psychologist. If you want a Christian counselor, ask about license and training as well as faith. Get names from your doctor, your insurer's directory, or a pastor who knows good local counselors, and confirm the license on your state licensing board's website. If you're the one living with someone's anger, start with a counselor of your own, not a couples counselor.",
+    "signs": [
+      "Someone at home is afraid of you, or you've hit, shoved, choked, or threatened anyone, or broken things to frighten them.",
+      "You've thought about hurting someone, or you're afraid you will. Step away now, and call 911 if anyone is in danger.",
+      "Your anger has turned on yourself, or you've thought about ending your life. Call or text 988 now.",
+      "You drink or use to calm down, or you get angrier when you've been drinking.",
+      "You've felt irritable, on edge, or low most days for two weeks or more, or lost interest in what you used to enjoy.",
+      "Memories of being hurt come back with rage, panic, or nightmares.",
+      "You're under eighteen and someone at home is hurting or frightening you. Tell a teacher, a school counselor, or another adult you trust, and call 911 if you're in danger."
+    ],
+    "firstCall": "You don't need the right words. You can say, *My temper is hurting my family, and I want help.* If anyone at home is afraid of you, or you've been physical, say so; it tells them what kind of help you need. Then ask a few questions. Are you licensed in this state? Do you work with anger and with abusive behavior? How do you handle a client's faith? What does a session cost, and is there a sliding scale? If you're calling the Hotline about yourself, you can start with *I'm worried about how I treat my partner.*",
+    "cost": "Counseling costs vary widely, so ask the counselor and your insurer before you start. Lower-cost help exists: sliding-scale fees, community mental health centers, university training clinics where supervised graduate students see clients for less, and employee assistance programs, which often include a few free sessions. Some churches keep a benevolence fund that can help, so ask. The Hotline and the 988 Lifeline are free."
+  },
+  "helping": {
+    "body": "If someone tells you they can't control their anger, take it seriously without crushing them. Don't excuse it as stress or personality, and don't shame them into silence. Ask plainly whether anyone at home is afraid of them. If the answer is yes, or you suspect it, don't try to manage it yourself or sit the couple down to talk it out. Urge them to call the Hotline and get into a program built for abuse, and keep the safety of the people at home in view, not only the comfort of the one asking for help. Ask, too, whether they've thought about hurting themselves or anyone else; if they have, help them call or text 988 now, or call 911 if anyone is in danger.\n\nIf you're helping someone who lives with another person's anger, believe them, and don't tell them a gentler answer would fix it. Help them reach the Hotline, and ask how it's safe to contact them, since phones and messages may be read.\n\nPastors carry a particular weight, because someone who rages at home can be warm in the lobby. When a spouse tells you they're afraid, don't counsel the couple together, don't tell the other spouse what you heard, and don't ask the frightened one to submit or forgive their way to safety. If children are being harmed or are at risk, you may be a mandated reporter; the rules differ by state, so learn yours before you need them. This isn't legal advice.",
+    "say": [
+      "Thank you for telling me. I'm not going anywhere.",
+      "Is anyone at home afraid of you?",
+      "Have you thought about hurting yourself or anyone else?",
+      "What usually happens right before you blow up?",
+      "I'll help you find someone to talk to this week.",
+      "(To someone living with it) This isn't your fault, and keeping them calm isn't your job."
+    ],
+    "dontSay": [
+      "Everybody loses it sometimes.",
+      "That's just how men are.",
+      "What did you do to set them off?",
+      "Just pray more and it'll go away.",
+      "Try being gentler with them."
+    ],
+    "next": "Check in again within a few days, and keep asking; people often go quiet right after they've promised to change. Offer something concrete: a ride to the first appointment, an hour with the kids, a weekly breakfast where they tell you honestly how the week went. The Hotline's advocates talk with worried friends and family too. Pray for the whole household by name."
+  },
+  "prayer": "Lord, you are slow to anger, and I am not. You've seen the faces of the people I love when I lose my temper. I can't unsay what I said. Forgive me, and don't let me call it anything softer than it was.\n\nSearch my heart tonight, on my bed, and show me what my anger is defending. If it's my pride, my comfort, my own way, take it from me. If it's something you love, teach me to grieve it rightly and to act without wounding anyone.\n\nKeep the people in my house safe, from me if they need to be, and give me the humility to get help. Make me gentle the way your Son is gentle, strong enough not to need to win.\n\nAnd when I'm angry with you, let me say it to your face instead of walking away. You heard Job, and you reasoned with Jonah. Ask me your questions until I answer. Amen.",
   "kit": {
+    "selfCheck": {
+      "href": "/tools/emotional-health",
+      "label": "Emotional Health Self-Check"
+    },
+    "guides": [
+      {
+        "href": "/studyguides/anger",
+        "label": "Anger: A Bible Study on Temper and Righteous Anger"
+      },
+      {
+        "href": "/studyguides/the-psalms",
+        "label": "The Psalms: A Bible Study on Honest Prayer"
+      }
+    ],
     "read": [
       {
         "href": "/life/anger-and-the-hot-heart",
@@ -26,9 +145,14 @@
         "kind": "Life"
       },
       {
-        "href": "/studyguides/anger",
-        "label": "Anger: A Bible Study on Temper and Righteous Anger",
-        "kind": "Study guide"
+        "href": "/how-tos/parenting-how-to-apologize-to-your-kids",
+        "label": "How to Apologize to Your Kids",
+        "kind": "How-to"
+      },
+      {
+        "href": "/how-tos/marriage-how-to-repair-after-blowup",
+        "label": "How to Repair After a Blowup (for couples who are safe with each other)",
+        "kind": "How-to"
       },
       {
         "href": "/wisdom/anger",
@@ -36,10 +160,168 @@
         "kind": "Wisdom"
       },
       {
+        "href": "/wisdom/apologizing-well",
+        "label": "Apologizing Well",
+        "kind": "Wisdom"
+      },
+      {
+        "href": "/wisdom/self-control",
+        "label": "Self-Control and Discipline",
+        "kind": "Wisdom"
+      },
+      {
         "href": "/wisdom/anger-at-god",
         "label": "Anger at God",
         "kind": "Wisdom"
+      },
+      {
+        "href": "/wisdom/outrage-culture",
+        "label": "Outrage Culture",
+        "kind": "Wisdom"
+      },
+      {
+        "href": "/wisdom/toxic-relationships",
+        "label": "Toxic and Harmful Relationships",
+        "kind": "Wisdom"
       }
     ]
+  },
+  "faq": [
+    {
+      "q": "Is anger a sin, or can it be righteous?",
+      "a": "Anger isn't a sin in itself. God is angry at evil, and Jesus looked at hard-hearted men “with anger and sorrow” (Mark 3:5). The letter to the Ephesians says, “Be angry, yet do not sin” (Ephesians 4:26). Righteous anger looks like his: grieved rather than gratified, stirred by harm done to someone else rather than a slight to you, and content to leave the verdict with God (Romans 12:19). But Scripture is wary of our anger, because ours is so often about us, and Jesus set anger at a brother beside murder (Matthew 5:21-22). Anger turns to sin when it's aimed at the wrong thing, held too long, or taken out on the people around you."
+    },
+    {
+      "q": "Why am I so angry all the time?",
+      "a": "There's rarely one reason. Start with your body. Tiredness, pain, hunger, stress, and alcohol all make anger come faster, and irritability that won't lift can be a sign of depression or anxiety, so tell a doctor. Then look underneath. Anger is often carrying fear, grief, shame, or exhaustion, or on old wounds from a home where you learned to brace for someone's temper. Some of it is a grievance you've never said out loud, at a person or at God. Some is habit, rehearsed until it became your way of meeting the world. A counselor can help you sort out which is which."
+    },
+    {
+      "q": "Is it okay to be angry at God?",
+      "a": "Faithful Christians answer this two ways, and each guards something real. Some say anger at God is never right, because it accuses him of wrong, and he is “without injustice” (Deuteronomy 32:4). Bring him your grief and confusion, they say, and confess the anger itself, as Job did once God had spoken: “I retract my words, and I repent in dust and ashes” (Job 42:6). Their comfort is that God can be trusted even when he can't be understood. Others say anger brought to God can itself be a prayer. They point to psalms that ask God, “Why are You sleeping?” (Psalm 44:23), and to God's verdict that Job's friends had not spoken accurately about him, “as My servant Job has” (Job 42:7). Their comfort is that you don't have to clean yourself up to pray. Both agree on this much: say it to God rather than walk away from him. He answered Job and Jonah with questions of his own."
+    },
+    {
+      "q": "I yell at my kids. How do I stop?",
+      "a": "Notice when it happens. It's often the same few flashpoints: the morning rush, the end of a long day, the third time you've asked. Plan for those hours, lower your voice on purpose, and step into another room before the next sentence comes out. When you do yell, go back once you're calm, own it without a *but*, and ask your child to forgive you. The letter to the Colossians tells fathers not to provoke their children, “so they will not become discouraged” (Colossians 3:21). If your anger has ever turned physical, or your children seem afraid of you, talk to a doctor or counselor this week, and call or text 988 if you're afraid of what you might do. [Parenting is harder than anyone said](/help/parenting) has more."
+    },
+    {
+      "q": "I yell at my wife or husband. Is that abuse?",
+      "a": "It can be, and you aren't the best judge, so look honestly. Abuse is a pattern of power and control, and yelling can be part of it: name-calling, threats, rage that makes someone change what they say or do to keep you calm. Is your spouse afraid of you? Do they walk on eggshells around your moods? Have you blocked a door, broken something, grabbed, shoved, or hit? Do you control the money, their phone, or who they see? If any of that is true, call the National Domestic Violence Hotline, listed near the top of this page, and ask about an intervention program; anger-management classes and couples counseling aren't built for this. If none of it is, the yelling still wounds, and Scripture tells every one of us to get rid of “rage and anger, outcry” (Ephesians 4:31)."
+    }
+  ],
+  "related": [
+    "marriage",
+    "parenting",
+    "cant-forgive",
+    "fatherless",
+    "addiction",
+    "suffering"
+  ],
+  "slots": [
+    {
+      "section": "whyHard",
+      "note": "Beside 'I'm a pastor, and few places make it easier for irritation to pass itself off as conviction than a pulpit': if James wants, a sentence or two in his own words, as a father of five sons, on what raising boys has taught him about his own temper or about how sons learn anger from their fathers. Only from James; no invented scenes with his sons, and the page says nothing about his temper or his home until he writes it."
+    },
+    {
+      "section": "happening",
+      "note": "After 'Some of us learned our anger at home, from a parent's temper or a parent's absence': if James chooses, a few sentences on being raised without a father and what he had to learn about anger without one. Only from James; the page stands without it."
+    },
+    {
+      "section": "whyHard",
+      "note": "James came to faith from atheism. If he wants to, a sentence on how Christians' anger looked to him as an unbeliever, beside the paragraph on the church calling its own anger zeal, only as he tells it."
+    },
+    {
+      "section": "faq",
+      "note": "'Is it okay to be angry at God?' states both views (anger at God is never right, so bring him your grief and confess the anger; anger brought to God can itself be prayer), each with its strongest verses and its own comfort, and deliberately does not land; the prayer stays on their common ground (say it to God rather than walk away). James can add where he lands, the tradition behind it, and the strongest objection he has not fully answered. Note for James: both anger-at-God resources left in Go deeper (the Anger at God wisdom topic and the Psalms study) lean toward the second view."
+    },
+    {
+      "section": "moreHelp",
+      "note": "Any counselors, batterer intervention programs, or domestic violence agencies near Fenton that James trusts enough to name, and whether First Baptist Church of Fenton has a protocol when a spouse discloses abuse or a member discloses abusive behavior. Only from James."
+    }
+  ],
+  "sources": [
+    {
+      "claim": "Aristotle, in the Rhetoric, defines anger as a desire, accompanied by pain, for revenge for an apparent slight that was not deserved, and says anger is attended by a certain pleasure, the hope of revenge.",
+      "cite": "Aristotle, Rhetoric, Book II, chapter 2 (1378a), in the W. Rhys Roberts and J. H. Freese translations. Confirmed from search excerpts only (direct fetches are blocked here); re-check at the source before release.",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0060:book=2:chapter=2"
+    },
+    {
+      "claim": "In a 2002 study, venting anger by hitting a punching bag increased anger and aggression rather than reducing it.",
+      "cite": "Brad J. Bushman, Does Venting Anger Feed or Extinguish the Flame? Catharsis, Rumination, Distraction, Anger, and Aggressive Responding, Personality and Social Psychology Bulletin 28, no. 6 (2002): 724-731. Confirmed from search excerpts only (direct fetches are blocked here); re-check at the source before release.",
+      "url": "https://journals.sagepub.com/doi/10.1177/0146167202289002"
+    },
+    {
+      "claim": "The National Domestic Violence Hotline says abuse is not the result of anger issues but of the desire to control a partner; it does not recommend anger management or couples counseling for abusive partners to deal with abusive patterns, and points instead to batterer intervention and prevention programs.",
+      "cite": "National Domestic Violence Hotline, Intervention Programs for Abusive Behaviors. Confirmed from search excerpts only (direct fetches are blocked here); re-check at the source before release.",
+      "url": "https://www.thehotline.org/resources/intervention-programs-for-abusive-behavior/"
+    },
+    {
+      "claim": "Hotline advocates talk with people who think they may be hurting their partner, discuss healthy and unhealthy behavior with them, and refer them to resources in their area.",
+      "cite": "National Domestic Violence Hotline, Am I Hurting My Partner? (help for abusive partners). Confirmed from search excerpts only (direct fetches are blocked here); re-check at the source before release.",
+      "url": "https://www.thehotline.org/support-others/help-for-abusive-partners/"
+    },
+    {
+      "claim": "The National Domestic Violence Hotline does not recommend couples counseling with an abusive partner.",
+      "cite": "National Domestic Violence Hotline, Should I Go to Couples Therapy With My Abusive Partner? (cited already on the marriage page).",
+      "url": "https://www.thehotline.org/resources/should-i-go-to-couples-therapy-with-my-abusive-partner/"
+    },
+    {
+      "claim": "If a partner may be monitoring your devices, look for help on a device they cannot see.",
+      "cite": "National Domestic Violence Hotline, Internet Safety for Survivors (cited already on the marriage page).",
+      "url": "https://www.thehotline.org/plan-for-safety/internet-safety/"
+    },
+    {
+      "claim": "Anger management teaching has people watch for physical, behavioral, emotional, and thought cues that anger is rising, and use a timeout, agreed on in advance, to leave a situation before anger escalates.",
+      "cite": "Substance Abuse and Mental Health Services Administration, Anger Management for Substance Use Disorder and Mental Health Clients: A Cognitive-Behavioral Therapy Manual (Patrick M. Reilly and Michael S. Shopshire; updated 2019), sessions on the anger meter, anger cues, and timeouts. Confirmed from search excerpts only (direct fetches are blocked here); re-check at the source before release.",
+      "url": "https://library.samhsa.gov/product/anger-management-substance-use-disorder-and-mental-health-clients-cognitive-behavioral-therapy-manual/pep19-02-01-001"
+    },
+    {
+      "claim": "Depression can involve increased anger or irritability, and its symptoms are judged over most of the day, nearly every day, for at least two weeks.",
+      "cite": "National Institute of Mental Health, Depression. Confirmed from search excerpts only (direct fetches are blocked here); re-check at the source before release.",
+      "url": "https://www.nimh.nih.gov/health/publications/depression"
+    },
+    {
+      "claim": "Men who are depressed may appear angry or aggressive instead of sad, so the anger may not be recognized as depression.",
+      "cite": "National Institute of Mental Health, Men and Depression, summarized on its Men and Mental Health page. Confirmed from search excerpts only (direct fetches are blocked here); re-check at the source before release.",
+      "url": "https://www.nimh.nih.gov/health/topics/men-and-mental-health"
+    },
+    {
+      "claim": "Being irritable and feeling restless or on edge are among the symptoms of generalized anxiety disorder.",
+      "cite": "National Institute of Mental Health, Anxiety Disorders. Confirmed from search excerpts only (direct fetches are blocked here); re-check at the source before release.",
+      "url": "https://www.nimh.nih.gov/health/topics/anxiety-disorders"
+    },
+    {
+      "claim": "The Hebrew phrase translated slow to anger in Exodus 34:6 and Proverbs 15:18 (erek appayim) is literally long of nostrils, since aph means nose or nostril as well as anger.",
+      "cite": "Strong's Hebrew 639 (aph, nose or nostril, and so anger) and 750 (arek, long). The Study Bible's own word data shows the same pair in both verses (client/public/bible/ch/exodus/34.json, verse 6, and proverbs/15.json, verse 18: H0750 with H0639, the dual noun). Lexicon page confirmed from search excerpts only (direct fetches are blocked here); re-check at the source before release.",
+      "url": "https://www.blueletterbible.org/lexicon/h639/nasb20/wlc/0-1/"
+    },
+    {
+      "claim": "The Greek word translated outcry in Ephesians 4:31 (kraugē) means a crying out, shouting, or clamor.",
+      "cite": "Strong's Greek 2906 (kraugē), with the LSJ gloss a crying, screaming, shouting; the Study Bible's own word data glosses it clamor (client/public/bible/ch/ephesians/4.json, verse 31). Lexicon page confirmed from search excerpts only (direct fetches are blocked here); re-check at the source before release.",
+      "url": "https://www.blueletterbible.org/lexicon/g2906/esv/mgnt/0-1/"
+    },
+    {
+      "claim": "Alcohol withdrawal can become life-threatening, so someone who drinks heavily every day should see a doctor before stopping.",
+      "cite": "MedlinePlus, Alcohol withdrawal (cited already on the addiction page).",
+      "url": "https://medlineplus.gov/ency/article/000764.htm"
+    },
+    {
+      "claim": "When a baby's crying becomes too much, put the baby on their back in a crib and walk away to calm down; never shake a baby.",
+      "cite": "Centers for Disease Control and Prevention, About Abusive Head Trauma (cited already on the parenting page).",
+      "url": "https://www.cdc.gov/child-abuse-neglect/about/about-abusive-head-trauma.html"
+    },
+    {
+      "claim": "Many states include clergy among mandated reporters of child abuse and neglect, and the rules vary by state.",
+      "cite": "Child Welfare Information Gateway, Clergy as Mandatory Reporters of Child Abuse and Neglect (U.S. Department of Health and Human Services; cited already on the marriage, cant-forgive, and parenting pages).",
+      "url": "https://www.childwelfare.gov/resources/clergy-mandatory-reporters-child-abuse-and-neglect/"
+    },
+    {
+      "claim": "You do not have to be suicidal to call or text 988; the Lifeline also helps in a mental health or substance use crisis and with worry about someone else.",
+      "cite": "988 Suicide and Crisis Lifeline, Get Help (the same wording is carried in client/src/data/crisis-resources.json; cited already on the parenting page).",
+      "url": "https://988lifeline.org/get-help/"
+    }
+  ],
+  "reviewed": {
+    "on": "2026-10-01",
+    "notes": "Second editorial pass, 2026-10-01, over the writer's self-check. Truth: every passage and inline reference re-read in context with scripts/bsb.mjs --verses (Mark 3:1-6 with Luke 6:6-11; Ephesians 4:25-32 with Psalm 4; Proverbs 15:1, 15:18, 20:1, and 22:24-25; Exodus 34:5-7; Jonah 3:5-10 and 4:1-11; Genesis 4:5-8; James 1:19-21 and 4:1-3; Romans 12:17-21; 1 Peter 2:18-24; Matthew 5:21-24; Colossians 3:18-21; Deuteronomy 32:4; Job 38:1-2, 40:8, and 42:1-8; Psalm 44:23-26). The Hebrew and Greek claims were checked against the Study Bible's own word data (H0750 with H0639 in both Exodus 34:6 and Proverbs 15:18; G2906, glossed clamor, in Ephesians 4:31). Outside claims (web search and direct fetches were unavailable, so every source still needs a check at the source before release): Aristotle stays, now named as the Rhetoric and paraphrased no more strongly than his definition; Bushman (2002) is cut back on the page and in sources to what the study found, that venting by hitting a punching bag increased anger and aggression rather than reducing it; the Hotline's Is Change Possible page is cut from sources, since the page's line on apologies stands as ordinary counsel; the NIMH, SAMHSA, MedlinePlus, CDC, and clergy-reporting sources each match a sentence no stronger than the source; 988's not-only-for-suicide wording is added, as on the parenting page. Care: sensitivity is now high. The answer sends readers to the Domestic Violence Hotline, and on an ordinary page its number sat at the foot of a long page, so the help block now follows the answer and every pointer says listed just below or near the top of this page (the needs index needs a rebuild for this and for the description). The abuse line no longer labels the reader: hitting, shoving, or threatening a partner, or controlling them, is named abuse, and a family's fear is to be taken as seriously. The Hotline and an intervention program are for partner abuse, with the Hotline's reason (power and control, so not anger management or couples counseling) stated where the help is chosen. A parent whose anger has turned physical with children is sent to the children's safety, a doctor or counselor, and 988 if afraid of what they might do, as on the parenting page; the Hotline is built for partner abuse, and the old wording (hit anyone) also called a parent's physical discipline abuse by implication, a contested question this page should not settle. The reader afraid of someone else's anger is now met in the answer and again right after the line in What's going on. 1 Peter 2:23 is cut from Why this is so hard, because 1 Peter 2:18-23 has long been used to keep the abused enduring; the Romans 12:19 verdict now says that leaving judgment to God isn't staying in harm's way or keeping quiet, and its last line is said of us all. The Jonah reading names suicide directly beside 988; the helper is told to ask directly about hurting themselves or anyone else, and Things you can say adds that question. Repetition: the Hotline's description, the end-of-page pointers, the restated abuse list in What's going on, the intro's echo of step 1, and FAQ sentences that repeated the readings word for word are cut or reworded. The page is 4,252 words (from 4,302); the cuts were partly spent on the safety precision above. Voice: anaphora and stacked triplets thinned in What's going on and step 6; Proverbs 15 is read as a word to the one with the temper without claiming 15:1 is addressed to him; the pastor's line implicates him by office instead of describing his own irritation; Ephesians 4's evening prayer and its sunset deadline are tied together. Contested: Is it okay to be angry at God? now states the second view's claim as plainly as the first, gives the first view a comfort of its own, and ends on their common ground without promising God will answer; no landing; slot kept and updated. Kit: the essay Is It Okay to Be Angry at God? is dropped, since the Anger at God wisdom topic and the Psalms study cover it cleanly; the essay The Church and Domestic Violence is replaced by the Toxic and Harmful Relationships wisdom topic. Flagged, not changed: both essays carry unverifiable first-person lines (I have sat with women who stayed in abusive marriages; I have sat with people whose anger at God was still raw in the tenth year), the first also prints a statistic, and the second caricatures the first view; this page repeats none of it. The blowup how-to never mentions safety, so its label keeps the writer's for-couples-who-are-safe qualifier. James appears only as a pastor and in one 'mine included'; the five-sons slot stays a slot. Validator clean for anger; the CarePage test passes for /help/anger. Read again as the midnight reader, the skeptic, a pastor, and a licensed counselor."
   }
 }

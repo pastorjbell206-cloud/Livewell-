@@ -200,7 +200,11 @@
         "label": "Difficult Family",
         "kind": "Wisdom"
       }
-    ]
+    ],
+    "plan": {
+      "href": "/plans/fatherless",
+      "label": "Eight Weeks Toward Being the Dad You Never Had"
+    }
   },
   "faq": [
     {

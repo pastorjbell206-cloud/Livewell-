@@ -111,6 +111,13 @@ export const TOOLS = [
     color: "var(--goldlt)",
   },
   {
+    title: "The Parent and Teen Conversation",
+    description: "A parent and a teenager each answer twelve short statements about home on their own, swap codes, and see where they see things differently, with questions to ask each other there. Nothing is stored or sent.",
+    href: "/tools/parent-teen-conversation",
+    icon: MessageCircle,
+    color: "var(--goldlt)",
+  },
+  {
     title: "The Prayer Planner",
     description: "Write down the people and needs you mean to pray for, give each a day, and each day see that day's names. Mark answered prayers and keep a dated record of them. Private to your browser.",
     href: "/tools/prayer-planner",
@@ -172,6 +179,13 @@ export const TOOLS = [
     href: "/tools/emotional-health",
     icon: Brain,
     color: "var(--goldlt)",
+  },
+  {
+    title: "Spiritual Gifts Self-Check",
+    description: "Thirty-two statements about what you've actually done, across eight gifts Scripture names, from teaching and mercy to hospitality and sharing the faith. It ranks no gift above another, and it sets out both views on the miraculous gifts without taking a side.",
+    href: "/tools/spiritual-gifts",
+    icon: Users,
+    color: "var(--ink)",
   },
     {
     title: "Scripture Memory System",
@@ -240,10 +254,10 @@ export const TOOLS = [
 
 /** Display groups for the hub, ordered by need. Every TOOLS href appears exactly once. */
 export const TOOL_GROUPS = [
-  { title: "Start with an honest reading", tools: TOOLS.filter((t) => ["/diagnostic","/tools/life-audit","/tools/emotional-health","/life/assessment"].includes(t.href)) },
+  { title: "Start with an honest reading", tools: TOOLS.filter((t) => ["/diagnostic","/tools/life-audit","/tools/emotional-health","/tools/spiritual-gifts","/life/assessment"].includes(t.href)) },
   { title: "Scripture and theology", tools: TOOLS.filter((t) => ["/tools/deep-bible","/tools/bible-study","/resources/context","/theology/passage","/tools/verse-finder","/tools/bible-says","/tools/bible-on","/tools/theology-quiz","/tools/glossary","/tools/test-the-case","/tools/which-lens","/tools/scripture-memory"].includes(t.href)) },
   { title: "Wisdom for a real situation", tools: TOOLS.filter((t) => ["/wisdom","/tools/wisdom-finder","/tools/proverbs-31","/tools/quotes","/tools/conflict-guide","/tools/worry-journal","/tools/prayer-planner","/tools/prayer-generator"].includes(t.href)) },
-  { title: "Family, marriage, and the household", tools: TOOLS.filter((t) => ["/tools/family-devotions","/tools/marriage-assessment","/tools/parenting-guide","/tools/parenting-verses","/tools/financial-health","/tools/rule-of-life"].includes(t.href)) },
+  { title: "Family, marriage, and the household", tools: TOOLS.filter((t) => ["/tools/family-devotions","/tools/marriage-assessment","/tools/parenting-guide","/tools/parent-teen-conversation","/tools/parenting-verses","/tools/financial-health","/tools/rule-of-life"].includes(t.href)) },
   { title: "The church and the public square", tools: TOOLS.filter((t) => ["/disruption/consistency","/nation/scorecard","/nation/policy"].includes(t.href)) },
 ];
 
