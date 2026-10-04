@@ -246,16 +246,22 @@ via `components/CoupleCompare.tsx`); and the companion tools (the Worry
 Journal, the Prayer Planner, the Parent and Teen Conversation), all keeping
 their data in the browser through `lib/storage.ts`. Crisis-level pages wait in
 `docs/grow/drafts/` until James approves them (`validate-needs --drafts`).
-Beyond the care pages, the printables shelf (`/downloads`) carries worksheets
-(a worry log, a prayer list, a month of prayer journal pages, a rule of life,
-a budget, a grief journal page, a couples' conversation guide, a referral list
-for church leaders), card sets (Scripture to carry, one verse per care page from
+Beyond the care pages, the printables shelf (`/downloads`, one line per
+document on each card) carries worksheets (a worry log, a prayer list, a month
+of prayer journal pages, a rule of life, a budget, a grief journal page, a plan
+for the first holidays after a loss, a couples' conversation guide, and for
+church leaders a referral list and a first response for when someone says they
+are not safe at home), card sets (Scripture to carry, one verse per care page from
 `MEMORY_VERSES`; family table cards from the weekly devotions), and workbooks
 for couples (`client/public/workbooks/*.json`, rendered by
 `scripts/lib/workbooks.mjs`, gated by `validate-workbooks`). Printed Scripture
 goes through `readingText()` in `scripts/lib/bsb.mjs` (no psalm headings, no
 stray quotation marks). The family devotions and catechism quote the BSB word
 for word (`validate-family`).
+Help lines follow the subject: care pages name theirs in `crisisTopics`, and a
+study guide on a heavy subject is listed in `client/src/data/sensitive-pages.json`
+(`studyguides`, with any extra lines in `studyguideTopics`), which the guide page's
+compact help block and its PDFs both read.
 `scripts/lib/built-files.mjs` names every download the deploy builds, so the
 link checkers accept links to PDFs that are not committed. What the integrity
 sweeps removed from the Grow libraries is recorded in `docs/grow/integrity/`.
