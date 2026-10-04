@@ -9,7 +9,7 @@ import { describe, it, expect } from "vitest";
 import fs from "node:fs";
 import path from "node:path";
 // @ts-expect-error: a plain .mjs build module without types
-import { guidePdf, scripturePdf, prayerPdf, weekPdf, prayerJournalPdf, ruleOfLifePdf, memoryCardsPdf, familyCardsPdf, MEMORY_VERSES } from "../scripts/lib/help-printables.mjs";
+import { guidePdf, scripturePdf, prayerPdf, weekPdf, prayerJournalPdf, ruleOfLifePdf, memoryCardsPdf, familyCardsPdf, holidaysAfterLossPdf, firstResponsePdf, MEMORY_VERSES } from "../scripts/lib/help-printables.mjs";
 // @ts-expect-error: a plain .mjs build module without types
 import { workbookPdf, listWorkbooks } from "../scripts/lib/workbooks.mjs";
 // @ts-expect-error: a plain .mjs build module without types
@@ -86,6 +86,15 @@ describe("section-wide printables", () => {
     expect(tagged(b)).toBe(true);
     expect(pages(b)).toBe(32);
   });
+
+  for (const size of ["LETTER", "A4"]) {
+    it(`the holidays page and the first response each fit one tagged page (${size})`, async () => {
+      for (const b of [await holidaysAfterLossPdf(crisis, size), await firstResponsePdf(crisis, size)] as Buffer[]) {
+        expect(tagged(b)).toBe(true);
+        expect(pages(b)).toBe(1);
+      }
+    });
+  }
 
   for (const size of ["LETTER", "A4"]) {
     it(`the rule of life fits one page (${size})`, async () => {

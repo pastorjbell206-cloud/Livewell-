@@ -544,7 +544,7 @@ export async function buildToolPrintables(root) {
     const pl = path.join(out, `prayer-list-${name}.pdf`);
     fs.writeFileSync(pl, await prayerListPdf(size));
     written.push(pl);
-    for (const [file, make] of [["budget", () => budgetPdf(size)], ["grief-journal", () => griefJournalPdf(crisis, size)], ["conflict-guide", () => conflictGuidePdf(size)]]) {
+    for (const [file, make] of [["budget", () => budgetPdf(size)], ["grief-journal", () => griefJournalPdf(crisis, size)], ["conflict-guide", () => conflictGuidePdf(size)], ["holidays-after-loss", () => holidaysAfterLossPdf(crisis, size)], ["first-response", () => firstResponsePdf(crisis, size)]]) {
       const w = path.join(out, `${file}-${name}.pdf`);
       fs.writeFileSync(w, await make());
       written.push(w);
@@ -996,6 +996,7 @@ export const MEMORY_VERSES = {
   politics: "James 1:19-20",
   "family-devotions": "2 Timothy 3:15",
   "refer-to-counselor": "Exodus 18:18",
+  pastors: "Mark 6:31",
   "is-it-a-sin": "Galatians 5:13",
   "trust-the-bible": "2 Peter 1:16",
   fasting: "Matthew 4:4",
@@ -1155,4 +1156,66 @@ export async function buildSectionPrintables(root) {
     }
   }
   return written;
+}
+
+/** For the first holidays after a death: plan the day ahead, with room to write. */
+export async function holidaysAfterLossPdf(crisis, size) {
+  const doc = newDoc(size, "The first holidays without them", 48);
+  const root = doc.struct("Document");
+  doc.addStructure(root);
+  const { left, width } = worksheetHeader(doc, root, "FIND HELP · GRIEF", "The first holidays without them",
+    "Thanksgiving, Christmas, a birthday, the anniversary: the days that used to gather everyone now mark who is missing. You don't have to keep them the way you always have. Plan the day a little ahead, with the people you'll spend it with, and give yourself permission to change your mind when it comes.");
+  promptBlock(doc, root, left, width, "What we will keep", "One or two traditions that still help.", 2);
+  promptBlock(doc, root, left, width, "What we will change, or set aside this year", "Doing it differently is not a betrayal of the one you lost.", 3);
+  promptBlock(doc, root, left, width, "How we will remember them", "A candle, a story told at the table, their recipe, a place set for them, or simply saying their name.", 3);
+  promptBlock(doc, root, left, width, "Where I can step away", "A room, a walk, a time to leave early. Say it ahead of time so no one worries.", 2);
+  promptBlock(doc, root, left, width, "Who will check on me that night, and who I will call", "Ask one person by name, before the day.", 2);
+  promptBlock(doc, root, left, width, "A prayer for the day", "Lament is prayer, and the Psalms are full of it. Joy and sorrow can sit at the same table.", 3);
+  tag(doc, root, "P", () => doc.font("Times-Italic").fontSize(8.5).fillColor(MUTED).text(`If grief has turned into not wanting to be alive, call or text 988, any hour; in immediate danger, call 911. Numbers checked ${checkedLabel(crisis.checked)}. More: ${SITE}/help/grief.`, left, doc.y, { width }));
+  root.end();
+  footer(doc, `${SITE}/help/grief`);
+  return toBuffer(doc);
+}
+
+/**
+ * For pastors and church leaders, the first hour after someone says they are
+ * not safe at home: the steps the Find Help pages already give helpers, on one
+ * page, with the help lines from the verified file and room for local names.
+ */
+export async function firstResponsePdf(crisis, size) {
+  const doc = newDoc(size, "When someone says they are not safe at home: a first response for church leaders", 44);
+  const root = doc.struct("Document");
+  doc.addStructure(root);
+  const { left, width } = worksheetHeader(doc, root, "FOR PASTORS AND CHURCH LEADERS", "When someone says they are not safe at home",
+    "Someone has trusted you with what may be the hardest thing they have ever said out loud. What you do in the next hour matters more than anything you say later. This page is for that hour. It is not legal advice; reporting laws vary by state.");
+  const steps = [
+    ["Believe them, and say so.", "Tell them you believe them, that it is not their fault, and that you will help them reach people who can keep them safe."],
+    ["Ask about danger now.", "Are they in danger tonight? Are children at risk? Have they thought about ending their life? Ask that plainly. In immediate danger, call 911; for thoughts of suicide, call or text 988 together."],
+    ["Let them lead their own plan.", "An adult decides what happens next. Your part is to connect them with people trained in safety planning, like the Domestic Violence Hotline below, not to decide for them. Ask how it is safe to reach them, because phones and messages may be read."],
+    ["Never bring the two of them together.", "No couples counseling, no mediation, no meeting with the other person, and never tell the other person what you heard. Do not make forgiveness, reconciliation, or submission the next step. Safety comes first."],
+    ["Protect children, and know your duty.", "If a child is being harmed or is at risk, church leaders are required to report in many states. Learn your state's rule before you need it."],
+    ["Keep it close, and write it down.", "Tell only the people who must know to keep someone safe. Write down what you were told, in their words, with the date."],
+    ["Stay with them.", "Keep in touch in the way they say is safe. Connect them with a licensed counselor, and offer the church's practical help when they are ready: meals, childcare, a ride, a place to stay. If the person who harmed them is a member or a leader, protect the one who was harmed; position does not decide the response."],
+  ];
+  steps.forEach(([h, t], i) => {
+    tag(doc, root, "H2", () => doc.font("Times-Bold").fontSize(10.5).fillColor(INK).text(`${i + 1}. ${h}`, left, doc.y + 3, { width }));
+    tag(doc, root, "P", () => doc.font("Times-Roman").fontSize(9.5).fillColor(INK).text(t, left + 14, doc.y + 1, { width: width - 14, lineGap: 1 }));
+  });
+  doc.moveDown(0.5);
+  const lines = crisisLinesFor(crisis, ["abuse", "sexual-assault"]);
+  const top = doc.y;
+  tag(doc, root, "H2", () => doc.font("Times-Bold").fontSize(10.5).fillColor(INK).text("Help lines", left + 10, top + 8, { width: width - 20 }));
+  for (const r of lines) {
+    const acts = r.actions.filter((a) => a.kind !== "chat").map((a) => a.label).join(" · ");
+    tag(doc, root, "P", () => doc.font("Times-Roman").fontSize(9.5).fillColor(INK).text(`${r.name}: ${acts}.`, left + 10, doc.y + 1, { width: width - 20 }));
+  }
+  tag(doc, root, "P", () => doc.font("Times-Roman").fontSize(9.5).fillColor(INK).text(`${crisis.emergency.label}: ${crisis.emergency.for}`, left + 10, doc.y + 1, { width: width - 20 }));
+  tag(doc, root, "P", () => doc.font("Times-Italic").fontSize(8).fillColor(MUTED).text(`Free and confidential. Numbers checked ${checkedLabel(crisis.checked)} against each service's official site (US).`, left + 10, doc.y + 2, { width: width - 20 }));
+  const boxBottom = doc.y + 8;
+  artifact(doc, () => { doc.save().lineWidth(0.8).strokeColor(MUSTARD).rect(left, top, width, boxBottom - top).stroke().restore(); });
+  doc.y = boxBottom + 10;
+  promptBlock(doc, root, left, width, "Our local help", "A shelter or advocate, child protective services, the police non-emergency line, and who in our church handles reports.", 6);
+  root.end();
+  footer(doc, `${SITE}/help/refer-to-counselor`);
+  return toBuffer(doc);
 }

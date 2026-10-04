@@ -140,6 +140,11 @@
     ],
     "read": [
       {
+        "kind": "Tool",
+        "label": "The first holidays without them: a page to plan Thanksgiving, Christmas, or an anniversary (PDF)",
+        "href": "/downloads/tools/holidays-after-loss-letter.pdf"
+      },
+      {
         "href": "/life/grief-and-loss",
         "label": "What Does the Bible Say About Grief and Loss?",
         "kind": "Life"

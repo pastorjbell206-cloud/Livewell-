@@ -40,7 +40,7 @@ const SHELVES: Record<string, { label: string; blurb: string }> = {
   },
   Worksheet: {
     label: "Worksheets to print",
-    blurb: "Blank pages for the work that happens on paper: a worry log, a weekly prayer list, a month of prayer journal pages, a rule of life, a budget, a grief journal page, a conversation guide for couples, and a referral list for church leaders.",
+    blurb: "Pages for the work that happens on paper: a worry log, a weekly prayer list, a month of prayer journal pages, a rule of life, a budget, a grief journal page, a plan for the first holidays after a loss, a conversation guide for couples, and, for church leaders, a referral list and a first response for when someone says they are not safe at home.",
   },
   Workbook: {
     label: "Workbooks",

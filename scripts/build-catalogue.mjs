@@ -377,6 +377,8 @@ export const LIBRARIES = {
       ["grief-journal", "A grief journal page", "Prompts for the days after a death: what you miss, a memory to keep, what you wish you could say, and a prayer, even an angry one.", "/help/grief"],
       ["conflict-guide", "A conversation guide for couples", "Six steps for the argument you keep having, for couples who are safe with each other, with safety first.", "/help/marriage"],
       ["referral-list", "A referral list for church leaders", "The national help lines, then room to list the counselors and services near you before anyone needs them.", "/help/refer-to-counselor"],
+      ["holidays-after-loss", "The first holidays without them", "A page for planning Thanksgiving, Christmas, or an anniversary after a death: what to keep, what to change, how to remember them, and who will check on you.", "/help/grief"],
+      ["first-response", "When someone says they are not safe at home", "For pastors and church leaders: seven steps for the first hour after someone discloses abuse, the help lines, and room for local names. Not legal advice.", "/help/refer-to-counselor"],
       ["prayer-journal", "A prayer journal: a month of mornings", "Thirty mornings shaped by the prayer Jesus taught: who God is, what you confess, what you are thankful for, and what you ask for others and for yourself.", "/help/prayer"],
       ["rule-of-life", "A rule of life on one page", "The shape of an ordinary week: prayer, Scripture, worship, rest, people, work, the body, and who will ask how it is going.", "/tools/rule-of-life"],
     ].map(([id, title, summary, href]) =>

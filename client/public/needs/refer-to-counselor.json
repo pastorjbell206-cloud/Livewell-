@@ -140,6 +140,11 @@
     ],
     "read": [
       {
+        "kind": "Tool",
+        "label": "When someone says they are not safe at home: a one-page first response for church leaders (PDF)",
+        "href": "/downloads/tools/first-response-letter.pdf"
+      },
+      {
         "href": "/writing/34-what-a-healthy-pastor-referral-network-actually-looks-like",
         "label": "What a Healthy Pastor Referral Network Actually Looks Like",
         "kind": "Essay"
