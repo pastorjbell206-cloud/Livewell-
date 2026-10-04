@@ -19,20 +19,20 @@ export const TRIAGE: Record<Triage, TriageMeta> = {
   "first-order": {
     label: "First order",
     short: "Essential to the faith itself",
-    color: "#7A1F1F",
-    bg: "rgba(122,31,31,0.10)",
+    color: "var(--accent-oxide)",
+    bg: "color-mix(in srgb, var(--accent-oxide) 10%, transparent)",
   },
   "second-order": {
     label: "Second order",
     short: "Divides faithful churches, not the faith",
-    color: "#8A5A00",
-    bg: "rgba(212,160,23,0.14)",
+    color: "var(--accent-amber)",
+    bg: "color-mix(in srgb, var(--mustard) 14%, transparent)",
   },
   "third-order": {
     label: "Third order",
     short: "Room inside one congregation",
-    color: "#3E5C3A",
-    bg: "rgba(62,92,58,0.12)",
+    color: "var(--ok)",
+    bg: "color-mix(in srgb, var(--ok) 12%, transparent)",
   },
 };
 

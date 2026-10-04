@@ -140,7 +140,7 @@ export default function PastoralBurnout() {
           <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "24px" }}>NEXT STEP</p>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--ink)", marginBottom: "16px" }}>Find out where you actually are</h2>
           <p style={{ fontFamily: "var(--U)", fontSize: "16px", color: "var(--ink-muted, #5A5448)", lineHeight: 1.7, marginBottom: "32px", maxWidth: "52ch", marginLeft: "auto", marginRight: "auto" }}>
-            Start with the Emotional Health Assessment — fifteen honest questions on rest, boundaries, and grief, private to your browser — and the Pastors Connection Network for the company of people who know the weight.
+            Start with the Emotional Health Self-Check, fifteen honest questions on rest, boundaries, and grief, private to your browser, and the Pastors Connection Network for the company of people who know the weight.
           </p>
           <Link href="/tools/emotional-health" style={{ textDecoration: "none" }}>
             <button style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", border: "none", padding: "12px 28px", fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)", borderRadius: "3px", cursor: "pointer" }}>Take the Burnout Diagnostic</button>

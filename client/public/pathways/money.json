@@ -1,7 +1,7 @@
 {
   "slug": "money",
   "title": "Money and the Heart",
-  "subtitle": "What the heart does with treasure — four essays, a study, and a book.",
+  "subtitle": "What the heart does with treasure: four essays, a study, and a financial health check.",
   "forWhom": "For the worried and the comfortable alike — the reader who suspects their bank statement is a truer confession than their doctrine.",
   "movements": [
     {
@@ -20,8 +20,8 @@
           "blurb": "You cannot serve God and mammon. He said it as a warning, not a paradox."
         },
         {
-          "label": "What the Jubilee Means",
-          "href": "/writing/what-jubilee-means",
+          "label": "Jubilee, Debt, and the Economy God Commanded",
+          "href": "/writing/jubilee-debt-and-the-economy-god-commanded",
           "blurb": "An economy God built to reset every fifty years, and why we quietly filed it under metaphor."
         },
         {
@@ -45,13 +45,13 @@
     },
     {
       "kind": "book",
-      "heading": "Then read the book, free",
+      "heading": "Then work it through",
       "note": "On Money & Stewardship gathers the long-form work — debt, generosity, tithing, contentment, and what Jesus meant by mammon. The full book, free.",
       "items": [
         {
-          "label": "On Money & Stewardship — read free",
-          "href": "/read/essays-money-stewardship",
-          "blurb": "Sixteen chapters on treasure and the heart. Free to read in full."
+          "label": "The Financial Health Check",
+          "href": "/tools/financial-health",
+          "blurb": "Twelve questions across generosity, contentment, stewardship, and family provision, and what your answers say about who you believe owns what you have."
         },
         {
           "label": "Find James's books in the bookstore",

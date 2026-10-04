@@ -5,6 +5,7 @@
  * /theology/theology-glossary.json.
  */
 import { useEffect, useMemo, useState } from "react";
+import { scrollBehavior } from "@/lib/motion";
 import { Link } from "wouter";
 import { Search } from "lucide-react";
 import Layout from "@/components/Layout";
@@ -30,7 +31,7 @@ export default function TheologyGlossary() {
   useEffect(() => {
     if (terms.length === 0) return;
     const hash = window.location.hash.replace("#", "");
-    if (hash) setTimeout(() => document.getElementById(hash)?.scrollIntoView({ behavior: "smooth", block: "start" }), 80);
+    if (hash) setTimeout(() => document.getElementById(hash)?.scrollIntoView({ behavior: scrollBehavior(), block: "start" }), 80);
   }, [terms]);
 
   const docTitle = (slug: string) => DOCTRINE_INDEX.find((d) => d.slug === slug && d.ready)?.title;
@@ -81,7 +82,7 @@ export default function TheologyGlossary() {
 
       <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-7)" }}>
         <div style={wrap}>
-          {terms.length === 0 && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }}>Loading the glossary…</p>}
+          {terms.length === 0 && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }} role="status">Loading the glossary…</p>}
           {terms.length > 0 && filtered.length === 0 && <p style={{ fontFamily: "var(--B)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }}>No term matches that. Try another word.</p>}
           {groups.map(([letter, items]) => (
             <div key={letter} style={{ marginBottom: "var(--s-5)" }}>

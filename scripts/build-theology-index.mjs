@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * build-theology-index.mjs — generates client/public/theology/index.json,
- * the manifest for the 50 contested-doctrine pages at /theology/doctrine/:slug.
+ * the manifest for the contested-doctrine pages at /theology/doctrine/:slug.
  *
  * The doctrine library was the largest content family with no manifest, which
  * kept it out of both the sitemap and the build-time meta system (board audit
@@ -35,6 +35,14 @@ for (const file of fs.readdirSync(DIR).sort()) {
   // church-history sets). Doctrine docs are the ones with slug + title;
   // everything else is skipped silently by design.
   if (!doc.slug || !doc.title) continue;
+  // TheologyDoctrine fetches /theology/<slug>.json, so a manifest entry whose
+  // slug differs from its filename dead-ends for every reader arriving from
+  // the sitemap. methodology.json (slug "how-to-use-this-section", served at
+  // /theology/how-to-use by its own page) is the intended skip here.
+  if (doc.slug !== file.replace(/\.json$/, "")) {
+    console.log(`[theology-index] skipping ${file}: slug "${doc.slug}" does not match the filename (not a doctrine page)`);
+    continue;
+  }
   docs.push({
     slug: doc.slug,
     title: doc.title,

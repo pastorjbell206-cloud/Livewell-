@@ -1,0 +1,81 @@
+{
+  "slug": "parenting",
+  "title": "Eight Weeks for the Worn-Out Parent",
+  "subtitle": "An eight-week plan from James Bell for the worn-out parent of children at home. Rest and help, the temper and the apology, the table and the bedside, the screens, and children you cannot control.",
+  "intro": "This is an eight-week plan for you if your children are still at home and you're worn out: short on sleep, quicker to anger than you want to be, and carrying more guilt than anyone can see. Each week holds one focus, one small daily practice, one thing to read, one tool to use, and one honest question. It moves slowly on purpose, from the tiredness and the temper, through repair after you've wronged your child, to what often lies underneath, the quiet belief that a child is a project and their outcome a verdict on you. Then it turns to the table and the bedside, the screens, prayer and Scripture without performance, and the children you cannot control. If your children are grown and one has left the faith, this plan was written for an earlier season, and the parenting care page on Find Help has a part for you.\n\nIt isn't a cure, and it isn't a substitute for a doctor, a licensed counselor, a pastor, or the real people who can share the load with you. If you're ever afraid you might hurt your child, don't wait for the right week: make sure the child is safe, step away, and call someone now, a friend, your doctor, or 988. Walk the plan imperfectly. A missed week is not failure; you just pick it back up, which is most of what parenting asks of you anyway. Your check marks are saved in this browser and nowhere else.",
+  "careNote": "If a child's sadness, fears, or behavior keeps worrying you, or your own exhaustion won't lift, start with your child's doctor or your own, then a licensed counselor. If your child talks about wanting to die, or you're afraid you might hurt them, call or text 988 now, and call 911 if anyone is in danger.",
+  "weeks": [
+    {
+      "n": 1,
+      "focus": "The tiredness, and the guilt on top of it",
+      "why": "Parenting shows you how little sleep you can live on, and it adds a guilt that doesn't need evidence to convict you. You can love your children fiercely, count the minutes until bedtime, and then lie awake ashamed of how you spoke to them. Many of us read that exhaustion as a verdict, as if a better parent would never be this worn down. Tiredness isn't a moral failure. It's what a finite body feels after months of broken nights, and it needs rest and help as much as resolve. Psalm 127 bears the name of Solomon, the king who built the temple, and it speaks to the parent who believes everything depends on how hard they try: \"In vain you rise early and stay up late ... for He gives sleep to His beloved\" (Psalm 127:2). You were never meant to hold the house up alone.",
+      "practice": "Each night, write one honest line about the day with no verdict attached: how you slept, what was hard, one moment that was good. Before the week ends, ask one person for one specific thing, an hour with the kids so you can sleep, a ride to practice, a meal on a hard night. If you're parenting alone, this step matters most, because the people who love you need to be told how to help.",
+      "read": { "label": "How to Lead Your Family When You Feel Like a Failure, for the parent lying awake sure they are failing their children", "href": "/how-tos/parenting-how-to-lead-your-family-when-you-feel-like-a-failure" },
+      "tool": { "label": "Parenting is harder than anyone said, the care page this plan walks beside, with what to do this week and when to get more help", "href": "/help/parenting" },
+      "reflection": "What have I been telling myself my tiredness proves about me as a parent, and who could I ask for help before the week is out?"
+    },
+    {
+      "n": 2,
+      "focus": "When your temper rises",
+      "why": "Few things shame a parent like hearing their own voice at full volume, aimed at a child they'd die for. The heat rises out of something underneath: no sleep, hunger, running late, fear for the child, or a pattern carried from your own childhood. The letter of James gives the right order: \"Everyone should be quick to listen, slow to speak, and slow to anger\" (James 1:19). Slow doesn't mean never; it means a pause long enough to choose what comes next. If you're afraid of what you might do, make sure the child is safe, step away, and call someone now: a friend, your doctor, or 988, where you don't have to be suicidal to call. With a crying baby, lay the baby on their back in the crib, leave the room to calm down, and check on them every five to ten minutes. Never shake a baby.",
+      "practice": "When you feel the heat rising, stop before you speak, make sure the children are safe, and step into another room until you can talk quietly. Each night, note one moment you caught it in time, one you didn't, and what came just before. If your anger has ever turned physical, see a doctor or a counselor this week. If it's someone else's temper at home that frightens you, your safety and your children's come first, and the Find Help page lists the Domestic Violence Hotline.",
+      "read": { "label": "How to Deal With Anger, on the pause between the spark and the words, and when a temper needs outside help", "href": "/how-tos/sf-how-to-deal-with-anger" },
+      "tool": { "label": "Parenting Bible Verses, where the Anger set gives three verses and a short note for the parent", "href": "/tools/parenting-verses" },
+      "reflection": "What usually comes right before I lose my temper with my children, and what am I trying to protect in that moment?"
+    },
+    {
+      "n": 3,
+      "focus": "Repair after you've wronged your child",
+      "why": "Every parent sins against their children, and what a child learns depends a great deal on what happens next. A parent who never apologizes teaches that the powerful never have to repent, which is a lie about God and about the world. Proverbs puts the choice plainly: \"He who conceals his sins will not prosper, but whoever confesses and renounces them will find mercy\" (Proverbs 28:13). Apologizing won't cost you your authority; you can hold the line you were defending and still be sorry for how you held it. And you go to your child as someone already met with mercy. Psalm 103, which bears David's name, says, \"As a father has compassion on his children, so the LORD has compassion on those who fear Him\" (Psalm 103:13). A parent who believes that can afford to say sorry.",
+      "practice": "Think of one time you wronged your child, recently or long ago, and go to them this week when you're calm. Name what you did with no excuse attached, say it was wrong, ask them to forgive you, and tell them one thing you'll change. A four-year-old can understand a plain sentence: I yelled at you, and that was wrong. A teenager may need you to listen longer than you talk. After that, repair each day's small wrongs before bedtime.",
+      "read": { "label": "How to Apologize to Your Kids, on naming the wrong, owning the harm, and asking their forgiveness", "href": "/how-tos/parenting-how-to-apologize-to-your-kids" },
+      "tool": { "label": "Psalm 103 in the Study Bible, on a Father who removes our sins and remembers that we are dust", "href": "/study/bible/psalms/103" },
+      "reflection": "What wrong against my child have I never owned, and what am I afraid will happen if I name it?"
+    },
+    {
+      "n": 4,
+      "focus": "Forming a child, not controlling one",
+      "why": "Beneath the tiredness and the temper there's often a plan nobody wrote down. Many of us began treating a child as a project, so that their grades, their manners, even their faith became the measure of our work, and home turned into a performance for whoever was watching. Then every hard day feels like a verdict on us, and correction slides toward control. The letter to the Ephesians limits the power of fathers, who held it in the households of that day: \"Fathers, do not provoke your children to wrath; instead, bring them up in the discipline and instruction of the Lord\" (Ephesians 6:4). The word for discipline means a child's whole upbringing, correction included, aimed at who they are becoming. Whether to spank is a question faithful Christian parents answer differently; the care page's questions set out both views at their strongest, and this plan leaves it there.",
+      "practice": "The next time you correct a child, do three things in order: get your own anger in hand before you say a word, ask one question about what was going on inside them, and come back afterward on purpose, so they come away sure they're still loved. Each night, ask yourself which correction that day was for their good and which was for how things looked.",
+      "read": { "label": "How Do You Discipline Children With Grace? On a child as a person given to you, not a result assigned to you", "href": "/life/raising-children-in-grace" },
+      "tool": { "label": "How to Discipline in a Way That Reaches the Heart, the three steps behind this week's practice", "href": "/how-tos/parenting-how-to-discipline-to-reach-the-heart" },
+      "reflection": "Where have I treated my child's choices as a verdict on me, and what has that done to the way I correct them?"
+    },
+    {
+      "n": 5,
+      "focus": "Being there at the table and at bedtime",
+      "why": "Deuteronomy pictures faith handed on in the most ordinary hours: \"speak of them when you sit at home and when you walk along the road, when you lie down and when you get up\" (Deuteronomy 6:7). The verse before puts those words \"upon your hearts\" first (Deuteronomy 6:6), so the lesson begins with what the parent loves. Most of what forms a child isn't a lesson at all but a presence: the table where they're heard, the car where a teenager finally talks sideways, the edge of the bed in the dark. Few families decide to stop eating together. The evenings erode one practice and one screen at a time, and winning them back takes a few protected hours and a parent who stays in the room.",
+      "practice": "Choose one meal or one bedtime each day and protect it, with every phone in another room, yours included. At the table, ask one real question and let the silence sit. At bedtime, sit on the edge of the bed for five minutes instead of saying goodnight from the doorway, and ask what was good about the day and what was hard.",
+      "read": { "label": "How to Eat Dinner Together Again, on protecting a few nights at the table with the phones in another room", "href": "/how-tos/fam-how-to-eat-dinner-together-again" },
+      "tool": { "label": "The Parenting Stage Guide, what a child needs at their age and one practice to start, from a bedtime blessing to a weekly walk", "href": "/tools/parenting-guide" },
+      "reflection": "When did my child last have my full attention with nothing competing for it, and what keeps crowding that out?"
+    },
+    {
+      "n": 6,
+      "focus": "The screens, theirs and ours",
+      "why": "Scripture doesn't give a number for screen time, and researchers still argue about how much harm screens do, so better questions help more than a rule borrowed from someone else. What is the screen replacing in your home: sleep, play, conversation, the boredom that turns into imagination? What is it feeding: comparison, the hunger to be seen, images a child can't unsee? Before any rule for them, look at your own hand. We're the ones who handed our children the phone, and many of us are still holding ours at the table. Paul answered a slogan in Corinth with a line worth teaching at any age: \"I will not be mastered by anything\" (1 Corinthians 6:12). A rule you won't keep yourself won't hold, and there's no shame in waiting longer than other families to give a child a smartphone.",
+      "practice": "Each day, keep phones and tablets out of the bedrooms at night, yours too, and off the table at meals. By the weekend, sit down together and write three things: when screens are off, where they don't go, and what you'll do instead. Then keep it yourself first, because your children are watching what you do with yours.",
+      "read": { "label": "How Does Your Phone Shape Your Attention and Soul? On your own phone first, and what children learn from where a parent's eyes go", "href": "/life/technology-and-attention" },
+      "tool": { "label": "How to Make a Family Screen Covenant, a few house rules written together, with the parents under them too", "href": "/how-tos/fam-how-to-make-a-family-screen-covenant" },
+      "reflection": "What is the screen replacing in our home, and what would my children say holds my attention?"
+    },
+    {
+      "n": 7,
+      "focus": "Prayer and Scripture without the performance",
+      "why": "A Christian home can turn into a stage without anyone meaning it to: devotions kept for how they look, a dinner prayer pitched to the guests, a child's faith worn as the family's report card. In the Sermon on the Mount, Jesus warned against praying \"to be seen by men\" and told his hearers instead to \"go into your inner room, shut your door, and pray to your Father, who is unseen\" (Matthew 6:5-6). Children can tell a performance from the real thing, and the real thing is usually smaller than we expect: a few verses read at the end of a meal, thanks said out loud, a short prayer that names their actual troubles, kept up badly for years. Some of the most important prayers in a home are the ones the children never hear, prayed for them by name behind a closed door.",
+      "practice": "Pick one meal or one bedtime and add five minutes: read a few verses aloud, a psalm or a story from one of the Gospels, let everyone name one thing they're thankful for, and pray, even briefly. Keep it short, and don't quit when it falls apart. Then each day, on your own with the door shut, pray for one of your children by name about one specific thing.",
+      "read": { "label": "How to Start Family Worship (and Keep It When It Falls Apart), on a few honest minutes at the table, kept badly for years", "href": "/how-tos/fam-how-to-start-family-worship" },
+      "tool": { "label": "The Prayer Planner, a private list that gives each child a day of the week and keeps a record of answered prayer", "href": "/tools/prayer-planner" },
+      "reflection": "If my children knew my faith only by what I do when no one else is watching, what would they conclude about the God I pray to?"
+    },
+    {
+      "n": 8,
+      "focus": "Trusting God with children you cannot control",
+      "why": "Sooner or later every parent runs into the limit of their power. You can't make a child believe, choose well, or turn out the way you pictured, and a tighter grip rarely brings one closer. Proverbs 22:6, the verse about training up a child, is a real encouragement, since early training runs deep, but it's a proverb and not a guarantee, and those of us who pastor have too often sold it as a contract. Jesus told of a man who scatters seed and \"sleeps and wakes, and the seed sprouts and grows, though he knows not how\" (Mark 4:27). The parable is about God's kingdom, yet a parent can hardly miss its shape. The sower plants and later reaps, but the growing was never his. Your part is faithfulness: the table, the apology, the prayers. The rest belongs to God, who loves your children more than you do.",
+      "practice": "Each night, write down one worry about one child, then sort it: the part that is yours to do tomorrow, and the part that isn't yours to carry, their choices and the outcome. Pray one sentence handing that part to God. At the week's end, write on a card the two or three practices from these weeks that helped, and keep them.",
+      "read": { "label": "Raising Believers, a five-session Bible study for parents that ends on grace, not fear, and the letting go", "href": "/studyguides/raising-believers" },
+      "tool": { "label": "The Worry Journal, five minutes before bed to sort what is yours to do from what is not yours to carry", "href": "/tools/worry-journal" },
+      "reflection": "What am I still trying to control in my children that was never mine to hold, and what would it look like to keep planting and leave the growing to God?"
+    }
+  ]
+}

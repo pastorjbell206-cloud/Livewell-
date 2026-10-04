@@ -1,234 +1,278 @@
 /**
- * The seeker's front door (/help). A person arrives carrying a felt need, not
- * a theological category. This page meets that: pick what you are facing and
- * get, in one place, the essay to read, the assessment to take, the tool or
- * practice to try, and a prayer. Every link points to a route that exists.
+ * Find Help (/help) — the front door of the Grow section.
  *
- * This is the reader-first counterpart to the catalog-first pillar nav: it
- * gathers the assets that were already on the site but scattered across
- * topical pages, the tools hub, and the life domains.
+ * A person arrives carrying something, in their own words, not a category.
+ * So the page starts where they are: a line of real help before anything
+ * else, a search box that understands the way people actually say it (each
+ * need's `askedAs` phrases, docs/grow/GROW-PROMPT.md Section 5), chips for
+ * the needs most people bring, the verified crisis lines in full, and then
+ * the five places a reader can be (in trouble, carrying something, wanting to
+ * grow, helping someone, leading a group).
+ *
+ * The needs come from the registry (client/public/needs/index.json, built by
+ * scripts/build-needs-index.mjs). A need with a care page links to
+ * /help/<slug>; a need without one yet opens a short list of where to begin.
+ * Every link is checked by scripts/validate-needs.mjs.
  */
-import { useState } from "react";
-import { Link } from "wouter";
+import { useEffect, useMemo, useState } from "react";
+import { Link, useLocation } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
-import { BookOpen, ClipboardCheck, Hand, Heart } from "lucide-react";
-import { SKEPTIC_TRACK_LIVE } from "@/lib/skepticTrack";
+import { CrisisBlock } from "@/components/CrisisBlock";
+import { EditorialIndex, type IndexItem } from "@/components/editorial/EditorialIndex";
+import { LoadFailed } from "@/components/LoadFailed";
+import { fetchJson } from "@/lib/fetch-json";
+import { READER_STATES, searchNeeds, type NeedEntry, type NeedsIndex, type ReaderState } from "@/lib/needs";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
+const isIndex = (x: unknown): x is NeedsIndex => !!x && Array.isArray((x as NeedsIndex).needs);
 
-interface Help { href: string; label: string; kind: "read" | "assess" | "do" | "pray" }
-interface Need {
-  id: string;
-  title: string;       // felt-need, in the person's own words
-  opener: string;      // a short, warm, plain line that names the ache
-  helps: Help[];
+function needItem(n: NeedEntry, state?: ReaderState): IndexItem {
+  return {
+    href: `/help/${n.slug}${state === "helping" ? "#helping" : ""}`,
+    title: n.title,
+    dek: n.summary,
+    kicker: n.sensitivity === "ordinary" ? "Care page" : "Care page · help first",
+  };
 }
 
-const NEEDS: Need[] = [
-  {
-    id: "marriage",
-    title: "My marriage is in trouble",
-    opener: "Not a tune-up. A marriage that needs more than tips, from someone who refuses to hand you tips.",
-    helps: [
-      { href: "/marriage-crisis", label: "Read: when the marriage itself is the crisis — start here", kind: "read" },
-      { href: "/plans/marriage", label: "Do: an eight-week guided plan toward each other", kind: "do" },
-      { href: "/marriage", label: "Read: writing on covenant, conflict, and the long middle", kind: "read" },
-      { href: "/tools/marriage-assessment", label: "Assess: where your marriage is strong and where it is strained", kind: "assess" },
-      { href: "/tools/conflict-guide", label: "Do: a guided path through a real conflict", kind: "do" },
-      { href: "/tools/prayer-generator", label: "Pray: a prayer for a marriage under weight", kind: "pray" },
-    ],
-  },
-  {
-    id: "anxious",
-    title: "I am anxious or overwhelmed",
-    opener: "The 3am mind. The body that will not settle. This is not a lack of faith, and you are not the only one.",
-    helps: [
-      { href: "/plans/anxiety", label: "Do: an eight-week guided plan toward a quieter mind", kind: "do" },
-      { href: "/life/the-anxious-mind", label: "Read: faith and the anxious mind, honestly", kind: "read" },
-      { href: "/tools/emotional-health", label: "Assess: an honest read on where you are", kind: "assess" },
-      { href: "/life/the-body-and-the-rhythms", label: "Do: the body, sleep, and rest as part of the cure", kind: "do" },
-      { href: "/tools/prayer-generator", label: "Pray: a prayer when the fear will not lift", kind: "pray" },
-    ],
-  },
-  {
-    id: "doubt",
-    title: "I believe, but I am full of doubt",
-    opener: "Doubt is not the opposite of faith. It is often part of a living one. You do not have to hide it here.",
-    helps: [
-      { href: "/faith-crisis", label: "Read: for the season when the whole faith feels like it is failing", kind: "read" },
-      { href: "/honest-questions", label: "Read: the honest questions, taken seriously", kind: "read" },
-      { href: "/doubt", label: "Read: doubt as part of a living faith", kind: "read" },
-      { href: "/theology/questions", label: "Read: the hard questions, answered honestly", kind: "read" },
-      { href: "/resources/context", label: "Do: read the Bible in its real context, not the caricature", kind: "do" },
-      { href: "/tools/prayer-generator", label: "Pray: a prayer for when belief is thin", kind: "pray" },
-    ],
-  },
-  {
-    id: "deconstructing",
-    title: "I am deconstructing my faith",
-    opener: "No panic here, and no shame. Many people are not leaving Jesus. They are leaving a version of him someone sold them. Take the questions seriously, and take your time.",
-    helps: [
-      { href: "/deconstruction", label: "Read: deconstruction named honestly — grief, anger, and what can be rebuilt", kind: "read" },
-      { href: "/church-hurt", label: "Read: when the church itself did the wounding", kind: "read" },
-      { href: "/plans/deconstruction", label: "Do: eight weeks of taking your questions seriously", kind: "do" },
-      { href: "/resources/context/the-bible-is-not-an-american-book", label: "Read: separating Jesus from the version you were handed", kind: "read" },
-      { href: "/disruption", label: "Read: what the church got wrong, said plainly by a pastor", kind: "read" },
-      { href: "/theology/compare", label: "Do: see every position side by side, fairly", kind: "do" },
-    ],
-  },
-  {
-    id: "skeptic",
-    title: "I do not believe, and I am curious",
-    opener: "Written for you by a pastor who was an atheist first. No tricks, no ambush, no altar call. Just the material, taken as seriously as you take it.",
-    helps: [
-      { href: "/post-christian", label: "Read: faith examined from outside the church, no altar call", kind: "read" },
-      { href: "/plans/skeptic", label: "Do: eight weeks of reading like an adult", kind: "do" },
-      { href: "/skeptic-track", label: "Read: the skeptic track, in argument order", kind: "read" },
-      { href: "/resources/context", label: "Read: the Bible in its real history, cited to scholarship", kind: "read" },
-      { href: "/theology/questions", label: "Read: the hardest questions, not dodged", kind: "read" },
-    ],
-  },
-  {
-    id: "new-believer",
-    title: "I am new to faith and do not know what to do next",
-    opener: "Welcome. Nobody expects you to know the words yet. Here is how to begin, one small step at a time, with everything explained.",
-    helps: [
-      { href: "/plans/new-believer", label: "Do: eight weeks of beginnings", kind: "do" },
-      { href: "/pathways", label: "Read: the pathway from new believer to mature", kind: "read" },
-      { href: "/tools/prayer-generator", label: "Pray: how to pray when you do not know how", kind: "pray" },
-      { href: "/start", label: "Assess: find your starting place", kind: "assess" },
-    ],
-  },
-  {
-    id: "grief",
-    title: "I am grieving a loss",
-    opener: "No trite comfort here. Lament is the language faith gives the grieving, and you are allowed to use it.",
-    helps: [
-      { href: "/plans/grief", label: "Do: an eight-week companion through loss", kind: "do" },
-      { href: "/grief", label: "Read: walking through grief without the cliches", kind: "read" },
-      { href: "/life/grief-and-loss", label: "Read: loss faced honestly, and where to find help", kind: "read" },
-      { href: "/lament", label: "Do: the practice of lament", kind: "do" },
-      { href: "/tools/prayer-generator", label: "Pray: a prayer in suffering", kind: "pray" },
-    ],
-  },
-  {
-    id: "parenting",
-    title: "Parenting is harder than anyone said",
-    opener: "From a father of five sons who was raised without a father. Formation over performance, presence over advice.",
-    helps: [
-      { href: "/parenting-help", label: "Read: for the stretch of parenting nobody warned you about", kind: "read" },
-      { href: "/parenting", label: "Read: writing on raising children in the faith", kind: "read" },
-      { href: "/tools/parenting-guide", label: "Assess: guidance for your child's stage", kind: "assess" },
-      { href: "/tools/family-devotions", label: "Do: build a fifteen-minute family devotion", kind: "do" },
-      { href: "/family", label: "Read: the family discipleship hub", kind: "read" },
-    ],
-  },
-  {
-    id: "money",
-    title: "Money is a weight on me",
-    opener: "Debt, fear, the never-enough. This is heart-formation before it is budgeting, and Scripture says more than you think.",
-    helps: [
-      { href: "/life/money-and-the-heart", label: "Read: money, contentment, and the rival god", kind: "read" },
-      { href: "/tools/financial-health", label: "Assess: an honest financial-health check", kind: "assess" },
-      { href: "/tools/prayer-generator", label: "Pray: a prayer for provision and freedom from fear", kind: "pray" },
-    ],
-  },
-  {
-    id: "burnout",
-    title: "I am a leader running on empty",
-    opener: "The loneliest job in the room. If you are a pastor near the end of yourself, start here. Seeking help is faith, not failure.",
-    helps: [
-      { href: "/pastoral-burnout", label: "Read: why pastors leave, and how to stay whole", kind: "read" },
-    ],
-  },
-  {
-    id: "grow",
-    title: "I just want to grow, and follow well",
-    opener: "Not in crisis. You want the whole of life to come under one Lord, on an ordinary Tuesday. Here is the path.",
-    helps: [
-      { href: "/church-history", label: "Read: the church’s long story as a place to stand", kind: "read" },
-      { href: "/plans/whole-life", label: "Do: an eight-week plan toward one undivided life", kind: "do" },
-      { href: "/life/assessment", label: "Assess: the Whole-Life Assessment, with a rule of life", kind: "assess" },
-      { href: "/pathways", label: "Do: the discipleship pathway, new believer to mature", kind: "do" },
-      { href: "/life", label: "Read: the Integrated Life hub", kind: "read" },
-      { href: "/start", label: "Assess: find your starting path", kind: "assess" },
-    ],
-  },
-];
-
-const KIND_META: Record<Help["kind"], { label: string; Icon: typeof BookOpen }> = {
-  read: { label: "Read", Icon: BookOpen },
-  assess: { label: "Assess", Icon: ClipboardCheck },
-  do: { label: "Do", Icon: Hand },
-  pray: { label: "Pray", Icon: Heart },
-};
+/** A need without its own page yet: the places on the site to begin. */
+function Starter({ n, open, onToggle }: { n: NeedEntry; open: boolean; onToggle: () => void }) {
+  return (
+    <div style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", padding: "clamp(18px, 2.2vw, 26px)" }}>
+      <button type="button" onClick={onToggle} aria-expanded={open} className="ed-row" style={{ width: "100%", padding: 0, font: "inherit", textAlign: "left", cursor: "pointer" }}>
+        <span style={{ display: "block", minWidth: 0 }}>
+          <span className="ed-title" style={{ fontWeight: 400 }}>{n.title}</span>
+          <span style={{ display: "block", fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.6, color: "var(--ink-muted)", marginTop: "8px", maxWidth: "62ch" }}>{n.summary}</span>
+          <span style={{ display: "block", fontFamily: "var(--U)", fontSize: "15px", fontWeight: 600, color: "var(--ink)", marginTop: "12px" }}>{open ? "Close" : "Where to start"}</span>
+        </span>
+        <span className="ed-arrow" aria-hidden style={{ fontSize: "22px", transform: "none" }}>{open ? "−" : "+"}</span>
+      </button>
+      {open && n.kit && (
+        <div style={{ marginTop: "var(--s-3)" }}>
+          {n.sensitivity !== "ordinary" && (
+            <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.6, color: "var(--ink-muted)", margin: "0 0 12px" }}>
+              If this is urgent, the lines under <a href="#help-now" style={{ color: "var(--mustard-text)", fontWeight: 600 }}>Help, right now</a> are open day and night.
+            </p>
+          )}
+          <EditorialIndex
+            columns={1}
+            compact
+            headingAs="span"
+            label={n.title}
+            items={n.kit.read.map((r) => ({ href: r.href, title: r.label, kicker: r.kind, external: /^https?:/.test(r.href) }))}
+          />
+        </div>
+      )}
+    </div>
+  );
+}
 
 export default function Help() {
+  const [, navigate] = useLocation();
+  const [needs, setNeeds] = useState<NeedEntry[] | null>(null);
+  const [failed, setFailed] = useState(false);
+  const [nonce, setNonce] = useState(0);
+  const [query, setQuery] = useState("");
+  const [state, setState] = useState<ReaderState>("carrying");
   const [open, setOpen] = useState<string | null>(null);
+
+  // /help?need=<slug> opens that need once the list arrives: its care page,
+  // or its starting list here. Care pages use it to link a related need that
+  // has no page yet.
+  const [asked] = useState(() => (typeof window === "undefined" ? null : new URLSearchParams(window.location.search).get("need")));
+
+  useEffect(() => {
+    let live = true;
+    fetchJson("/needs/index.json", isIndex)
+      .then((ix) => {
+        if (!live) return;
+        setNeeds(ix.needs);
+        setFailed(false);
+        const n = asked ? ix.needs.find((x) => x.slug === asked) : undefined;
+        if (!n) return;
+        if (n.page) { navigate(`/help/${n.slug}`, { replace: true }); return; }
+        setOpen(n.slug);
+        setState(n.states[0]);
+        requestAnimationFrame(() => document.getElementById(`need-${n.slug}`)?.scrollIntoView({ block: "start" }));
+      })
+      .catch(() => { if (live) setFailed(true); });
+    return () => { live = false; };
+  }, [nonce, asked, navigate]);
+
+  // Pages link here as /help#help-now. The router does not scroll to a
+  // fragment on its own, so bring the help lines into view on arrival.
+  useEffect(() => {
+    if (typeof window === "undefined" || window.location.hash !== "#help-now") return;
+    requestAnimationFrame(() => document.getElementById("help-now")?.scrollIntoView({ block: "start" }));
+  }, []);
+
+  const results = useMemo(() => (needs ? searchNeeds(query, needs).slice(0, 6) : []), [needs, query]);
+  const chips = useMemo(() => (needs ? needs.filter((n) => n.page).slice(0, 12) : []), [needs]);
+  const inState = useMemo(() => (needs ? needs.filter((n) => n.states.includes(state)) : []), [needs, state]);
+  const pages = inState.filter((n) => n.page);
+  const starters = inState.filter((n) => !n.page);
+
+  const go = (n: NeedEntry) => {
+    if (n.page) navigate(`/help/${n.slug}`);
+    else {
+      setOpen(n.slug);
+      setState(n.states[0]);
+      requestAnimationFrame(() => document.getElementById(`need-${n.slug}`)?.scrollIntoView({ block: "start" }));
+    }
+  };
 
   return (
     <Layout>
       <SEOMeta
         title="Find Help for What You Are Facing"
-        description="Anxious, grieving, doubting, a marriage in trouble, running on empty? Start here. Honest writing, real assessments, and practices for whatever you are carrying."
+        description="Anxious, grieving, doubting, lonely, a marriage in trouble? Say it in your own words. Honest help, Scripture in context, and real people to call."
         url="https://www.livewellbyjamesbell.co/help"
       />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-4) var(--s-4) var(--s-6)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
-          <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>Start here</div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5.4vw, 56px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "18px", maxWidth: "18ch" }}>
+          <p style={{ fontFamily: "var(--U)", fontSize: "14px", lineHeight: 1.6, margin: "0 0 var(--s-4)", padding: "10px 14px", border: "1px solid var(--charcoal-soft)", borderLeft: "3px solid var(--mustard)", borderRadius: "var(--radius-sm)", maxWidth: "70ch" }}>
+            In danger or thinking about ending your life? Call or text <a href="tel:988" style={{ color: "inherit", fontWeight: 700 }}>988</a>, text{" "}
+            <a href="sms:741741?&body=HOME" style={{ color: "inherit", fontWeight: 700 }}>HOME to 741741</a>, or call <a href="tel:911" style={{ color: "inherit", fontWeight: 700 }}>911</a>.{" "}
+            <a href="#help-now" style={{ color: "var(--mustard)", fontWeight: 600 }}>More lines below</a>
+          </p>
+          <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "14px" }}>Find help</div>
+          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(34px, 5.6vw, 58px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", margin: "0 0 16px", maxWidth: "18ch" }}>
             What are you facing?
           </h1>
-          <p style={{ fontFamily: "var(--B)", fontSize: "17.5px", lineHeight: 1.75, color: "rgba(245,240,230,0.82)", maxWidth: "60ch" }}>
-            You did not come here for a category. You came carrying something. Choose what is closest, and you will find the writing, the honest tools, and the prayer for exactly that. No dead ends.
+          <p style={{ fontFamily: "var(--B)", fontSize: "17.5px", lineHeight: 1.7, color: "var(--charcoal-fg)", maxWidth: "60ch", margin: "0 0 var(--s-4)" }}>
+            Say it the way you would say it to a friend. Each page here starts with what you are carrying, reads Scripture in context, and ends with something you can do this week and people who can help.
           </p>
+
+          <form
+            role="search"
+            onSubmit={(e) => { e.preventDefault(); if (results[0]) go(results[0]); }}
+            style={{ maxWidth: "640px" }}
+          >
+            <label htmlFor="help-search" style={{ display: "block", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, marginBottom: "8px" }}>
+              Type it in your own words
+            </label>
+            <input
+              id="help-search"
+              type="search"
+              autoComplete="off"
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              placeholder="For example: I can't sleep because I'm worried"
+              style={{ width: "100%", minHeight: "52px", padding: "12px 16px", fontFamily: "var(--B)", fontSize: "17px", color: "var(--ink)", background: "var(--card)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)" }}
+            />
+          </form>
+          <div aria-live="polite" style={{ maxWidth: "640px" }}>
+            {query.trim().length >= 2 && needs && (
+              results.length ? (
+                <div style={{ marginTop: "12px", background: "var(--card)", borderRadius: "var(--radius-sm)", padding: "4px 16px", color: "var(--ink)" }}>
+                  <p className="sr-only">{results.length} matching {results.length === 1 ? "page" : "pages"}</p>
+                  <ul style={{ listStyle: "none", margin: 0, padding: 0 }}>
+                    {results.map((n) => (
+                      <li key={n.slug} style={{ borderTop: "1px solid var(--border)" }}>
+                        <button type="button" onClick={() => go(n)} className="ed-row" style={{ width: "100%", padding: "12px 0", font: "inherit", textAlign: "left", cursor: "pointer", background: "none", border: 0 }}>
+                          <span style={{ display: "block", minWidth: 0 }}>
+                            <span className="ed-title" style={{ fontSize: "20px", fontWeight: 400 }}>{n.title}</span>
+                            <span style={{ display: "block", fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.5, color: "var(--ink-muted)", marginTop: "4px" }}>{n.summary}</span>
+                          </span>
+                          <span className="ed-arrow" aria-hidden>→</span>
+                        </button>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ) : (
+                <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.6, color: "var(--charcoal-fg)", margin: "12px 0 0" }}>
+                  Nothing here matches that yet. Try one plain word (worry, alone, grief, marriage), or choose from the lists below. If it is urgent, the lines below are open now.
+                </p>
+              )
+            )}
+          </div>
+
+          {chips.length > 0 && (
+            <div style={{ marginTop: "var(--s-4)" }}>
+              <p style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", color: "var(--charcoal-fg)", margin: "0 0 10px" }}>What people bring most</p>
+              <ul style={{ listStyle: "none", margin: 0, padding: 0, display: "flex", flexWrap: "wrap", gap: "8px", maxWidth: "860px" }}>
+                {chips.map((n) => (
+                  <li key={n.slug}>
+                    <Link href={`/help/${n.slug}`} style={{ display: "inline-flex", alignItems: "center", minHeight: "40px", padding: "8px 14px", borderRadius: "var(--radius-pill)", border: "1px solid var(--charcoal-soft)", color: "var(--charcoal-fg)", fontFamily: "var(--U)", fontSize: "15px", textDecoration: "none" }}>
+                      {n.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
       </section>
 
-      <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-6)" }}>
+      <section style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--s-4)" }}>
+        <div style={{ maxWidth: "var(--w-content)", margin: "0 auto" }}>
+          <CrisisBlock id="help-now" heading="If you're in trouble right now" topics={["suicide", "abuse", "sexual-assault", "substance"]} />
+        </div>
+      </section>
+
+      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-7)" }}>
         <div style={wrap}>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(340px, 100%), 1fr))", gap: "var(--s-3)" }}>
-            {NEEDS.map((n) => {
-              const isOpen = open === n.id;
+          <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "12px" }}>Where are you?</div>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(28px, 4vw, 40px)", fontWeight: 400, letterSpacing: "-0.02em", lineHeight: 1.12, color: "var(--ink)", margin: "0 0 var(--s-3)", maxWidth: "24ch" }}>
+            Start from where you actually are.
+          </h2>
+          <div role="group" aria-label="Where are you?" style={{ display: "flex", flexWrap: "wrap", gap: "8px", margin: "0 0 var(--s-3)" }}>
+            {READER_STATES.filter((s) => s.id !== "crisis").map((s) => {
+              const on = s.id === state;
               return (
-                <div key={n.id} style={{ background: "var(--card)", border: "1px solid rgba(20,17,12,0.08)", borderTop: `2px solid var(--mustard)`, padding: "var(--s-3)" }}>
-                  <button
-                    onClick={() => setOpen(isOpen ? null : n.id)}
-                    aria-expanded={isOpen}
-                    style={{ display: "block", width: "100%", textAlign: "left", background: "none", border: "none", cursor: "pointer", padding: 0 }}
-                  >
-                    <div style={{ fontFamily: "var(--F)", fontSize: "22px", lineHeight: 1.2, color: "var(--ink)", marginBottom: "8px" }}>{n.title}</div>
-                    <p style={{ fontFamily: "var(--B)", fontSize: "14.5px", lineHeight: 1.6, color: "var(--ink-muted)", margin: 0 }}>{n.opener}</p>
-                    <div style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, color: "var(--mustard-text)", marginTop: "12px" }}>
-                      {isOpen ? "Close" : "Show me where to start"}
-                    </div>
-                  </button>
-                  {isOpen && (
-                    <div style={{ marginTop: "var(--s-3)", borderTop: "1px solid rgba(20,17,12,0.08)", paddingTop: "var(--s-3)", display: "grid", gap: "10px" }}>
-                      {n.helps.filter((h) => SKEPTIC_TRACK_LIVE || h.href !== "/skeptic-track").map((h) => {
-                        const meta = KIND_META[h.kind];
-                        const Icon = meta.Icon;
-                        return (
-                          <Link key={h.href + h.label} href={h.href} style={{ display: "flex", gap: "10px", alignItems: "flex-start", textDecoration: "none", padding: "8px", borderRadius: "2px" }}>
-                            <span style={{ flexShrink: 0, marginTop: "2px", color: "var(--mustard-text)" }}><Icon size={16} /></span>
-                            <span>
-                              <span style={{ fontFamily: "var(--U)", fontSize: "10.5px", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--ink-muted)", display: "block", marginBottom: "2px" }}>{meta.label}</span>
-                              <span style={{ fontFamily: "var(--B)", fontSize: "14.5px", lineHeight: 1.5, color: "var(--ink)" }}>{h.label.replace(/^(Read|Assess|Do|Pray): /, "")}</span>
-                            </span>
-                          </Link>
-                        );
-                      })}
-                    </div>
-                  )}
-                </div>
+                <button
+                  key={s.id}
+                  type="button"
+                  aria-pressed={on}
+                  onClick={() => setState(s.id)}
+                  style={{ minHeight: "44px", padding: "10px 16px", borderRadius: "var(--radius-pill)", border: `1px solid ${on ? "var(--charcoal)" : "var(--border)"}`, background: on ? "var(--charcoal)" : "var(--card)", color: on ? "var(--charcoal-fg)" : "var(--ink)", fontFamily: "var(--U)", fontSize: "15px", fontWeight: 600, cursor: "pointer" }}
+                >
+                  {s.label}
+                </button>
               );
             })}
           </div>
+          <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.6, color: "var(--ink-muted)", margin: "0 0 var(--s-4)", maxWidth: "62ch" }}>
+            {READER_STATES.find((s) => s.id === state)?.blurb}
+            {state === "helping" && " Each page below opens at its section for helpers."}
+            {state === "leading" && (
+              <>
+                {" "}Every care page names a study for a group in its Go deeper list, and the full shelf is in{" "}
+                <Link href="/studyguides" style={{ color: "var(--mustard-text)", fontWeight: 600 }}>the study guides</Link>.
+              </>
+            )}
+          </p>
 
-          <p style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "64ch", marginTop: "var(--s-4)" }}>
-            If you are in crisis or thinking about ending your life, please reach out now. In the US, call or text 988 for the Suicide and Crisis Lifeline, and tell someone who loves you. This site supports the work of doctors, counselors, and pastors. It does not replace them.
+          {failed && <LoadFailed what="The list of needs" onRetry={() => setNonce((n) => n + 1)} backHref="/" backLabel="Home" />}
+          {!needs && !failed && <p role="status" style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }}>Loading the list…</p>}
+
+          {pages.length > 0 && <EditorialIndex columns={2} headingAs="h3" label="Care pages" items={pages.map((n) => needItem(n, state))} />}
+
+          {starters.length > 0 && (
+            <>
+              <h3 style={{ fontFamily: "var(--F)", fontSize: "24px", fontWeight: 500, color: "var(--ink)", margin: "var(--s-5) 0 8px" }}>More that people carry</h3>
+              <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.6, color: "var(--ink-muted)", margin: "0 0 var(--s-3)", maxWidth: "62ch" }}>
+                These do not have their own page yet. Each opens the places on the site to begin.
+              </p>
+              <div className="ed-split" style={{ gap: "var(--s-3)", alignItems: "start" }}>
+                {starters.map((n) => (
+                  <div key={n.slug} id={`need-${n.slug}`} style={{ scrollMarginTop: "80px" }}>
+                    <Starter n={n} open={open === n.slug} onToggle={() => setOpen(open === n.slug ? null : n.slug)} />
+                  </div>
+                ))}
+              </div>
+            </>
+          )}
+
+          <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "64ch", marginTop: "var(--s-5)" }}>
+            Want something longer? <Link href="/plans" style={{ color: "var(--mustard-text)", fontWeight: 600 }}>The eight-week care plans</Link>,{" "}
+            <Link href="/assessments" style={{ color: "var(--mustard-text)", fontWeight: 600 }}>the honest self-checks</Link>, and{" "}
+            <Link href="/tools" style={{ color: "var(--mustard-text)", fontWeight: 600 }}>the tools</Link> all start from here too, and{" "}
+            <Link href="/downloads" style={{ color: "var(--mustard-text)", fontWeight: 600 }}>every printable</Link> is free, including{" "}
+            <a href="/downloads/tools/memory-cards-letter.pdf" style={{ color: "var(--mustard-text)", fontWeight: 600 }}>Scripture to carry</a>, a card with one verse for each of these places. This site supports the work of doctors, counselors, and pastors. It does not replace them.
           </p>
         </div>
       </section>

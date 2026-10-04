@@ -6,6 +6,7 @@
  * /theology/theology-diagnostics.json.
  */
 import { useEffect, useMemo, useState } from "react";
+import { scrollBehavior } from "@/lib/motion";
 import { Link } from "wouter";
 import { RotateCcw } from "lucide-react";
 import Layout from "@/components/Layout";
@@ -66,7 +67,7 @@ export default function TheologyDiagnostic() {
   }, [quiz, complete, answers]);
 
   function start(slug: string) { setActiveSlug(slug); setAnswers({}); }
-  function reset() { setAnswers({}); window.scrollTo({ top: 0, behavior: "smooth" }); }
+  function reset() { setAnswers({}); window.scrollTo({ top: 0, behavior: scrollBehavior() }); }
 
   return (
     <Layout>
@@ -95,7 +96,7 @@ export default function TheologyDiagnostic() {
           {/* QUIZ PICKER */}
           {!quiz && (
             <>
-              {quizzes === null && !loadError && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }}>Loading…</p>}
+              {quizzes === null && !loadError && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }} role="status">Loading…</p>}
               {loadError && (
                 <LoadFailed what="The diagnostic" onRetry={() => setNonce((n) => n + 1)} backHref="/tools" backLabel="Back to the tools" />
               )}

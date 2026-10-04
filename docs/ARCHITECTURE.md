@@ -102,6 +102,7 @@ Security headers (HSTS, `X-Frame-Options`, `X-Content-Type-Options`,
 │   └── public/           content-as-data libraries + assets:
 │       ├── leadership/ life/ creeds/ context/ history/ theology/
 │       ├── justice/ nation/ disruption/ prophetic/ plans/ studyguides/
+│       ├── needs/          Find Help registry + care pages (/help, /help/:slug)
 │       ├── books/ ebook/   and llms.txt (for answer engines)
 ├── server/               DEV runtime + business logic, fully typed
 │   ├── _core/  routers.ts  routers/ (lead-magnets, stripe, team-collab)
@@ -223,6 +224,47 @@ classifies older essays — the taxonomy is mid-migration.
 (leadership formation, integrated life, creeds, context guides, church history,
 study guides), with generated manifests (`scripts/build-*-index.mjs`) and CI
 validators (`validate-formation`, `validate-life`) that gate the build.
+
+**Find Help (the Grow section)** — `client/public/needs/` is the needs
+registry: one file per need, either a full care page (`page: true`, rendered
+at `/help/:slug` by `pages/help/CarePage.tsx`) or a starter that lists where
+to begin. `scripts/build-needs-index.mjs` writes the manifest the `/help` front
+door searches; `scripts/validate-needs.mjs` enforces `docs/grow/CARE-PAGE-SPEC.md`
+(word ranges, BSB Scripture verified against the Study Bible's text, live
+links, care rules). Crisis numbers live in one verified file,
+`client/src/data/crisis-resources.json`, rendered by `components/CrisisBlock.tsx`.
+Printables for every care page are built by `scripts/lib/help-printables.mjs`
+inside `pnpm pdfs`. The brief for the whole section is `docs/grow/GROW-PROMPT.md`.
+
+Around the care pages: eight-week plans in `client/public/plans/` (validated
+by `validate-plans`, each printed as a booklet); printable Bible reading plans
+named in `client/src/data/bible-reading-plans.json` and computed from the Bible
+data by `scripts/lib/reading-plans.mjs` (days balanced by verse count, or cut at
+the Study Bible outline's scenes); the self-checks under `pages/tools/` (each
+with `SafetyCheck`, `SelfCheckHistory`, and couple mode on the marriage check
+via `components/CoupleCompare.tsx`); and the companion tools (the Worry
+Journal, the Prayer Planner, the Parent and Teen Conversation), all keeping
+their data in the browser through `lib/storage.ts`. Crisis-level pages wait in
+`docs/grow/drafts/` until James approves them (`validate-needs --drafts`).
+Beyond the care pages, the printables shelf (`/downloads`, one line per
+document on each card) carries worksheets (a worry log, a prayer list, a month
+of prayer journal pages, a rule of life, a budget, a grief journal page, a plan
+for the first holidays after a loss, a couples' conversation guide, and for
+church leaders a referral list and a first response for when someone says they
+are not safe at home), card sets (Scripture to carry, one verse per care page from
+`MEMORY_VERSES`; family table cards from the weekly devotions), and workbooks
+for couples (`client/public/workbooks/*.json`, rendered by
+`scripts/lib/workbooks.mjs`, gated by `validate-workbooks`). Printed Scripture
+goes through `readingText()` in `scripts/lib/bsb.mjs` (no psalm headings, no
+stray quotation marks). The family devotions and catechism quote the BSB word
+for word (`validate-family`).
+Help lines follow the subject: care pages name theirs in `crisisTopics`, and a
+study guide on a heavy subject is listed in `client/src/data/sensitive-pages.json`
+(`studyguides`, with any extra lines in `studyguideTopics`), which the guide page's
+compact help block and its PDFs both read.
+`scripts/lib/built-files.mjs` names every download the deploy builds, so the
+link checkers accept links to PDFs that are not committed. What the integrity
+sweeps removed from the Grow libraries is recorded in `docs/grow/integrity/`.
 
 **Design system** — tokens are CSS variables in `index.css`; components
 reference them inline, so brand changes flow from `:root`. Cormorant Garamond +

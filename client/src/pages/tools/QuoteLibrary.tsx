@@ -8,6 +8,7 @@
  */
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { SITE_URL } from "@/lib/site";
 import { useState, useMemo, useCallback } from "react";
 import { Link } from "wouter";
 import {
@@ -41,11 +42,11 @@ const CATEGORIES = [
 ] as const;
 
 const CATEGORY_COLORS: Record<string, string> = {
-  conviction: "var(--c-mustard, #D4A017)",
+  conviction: "var(--mustard)",
   comfort: "var(--ok)",
-  challenge: "#B85C3A",
-  history: "#5A7B9A",
-  wisdom: "var(--c-ink-muted, #5A5448)",
+  challenge: "var(--clay)",
+  history: "var(--accent-slate)",
+  wisdom: "var(--ink-muted)",
 };
 
 /** Pillars offered in the filter — derived from the data, never hardcoded. */
@@ -62,12 +63,15 @@ function authorOf(q: SocialQuote): string {
   return q.author ?? "James Bell";
 }
 
-/** Route to the source work: essays under /writing, books under /read,
- *  study guides under /studyguides. */
-function sourcePath(q: SocialQuote): string {
+/** Route to the source work: essays under /writing, study guides under
+ *  /studyguides. Book quotes return null: the free on-site library was
+ *  retired when the shelf was reduced to the three handwritten books, so the
+ *  source is named without a link rather than pointed at a shelf that no
+ *  longer carries it. */
+function sourcePath(q: SocialQuote): string | null {
   switch (q.sourceType) {
     case "book":
-      return `/read/${q.articleSlug}`;
+      return null;
     case "studyguide":
       return `/studyguides/${q.articleSlug}`;
     default:
@@ -87,7 +91,7 @@ function sourceKindLabel(q: SocialQuote): string {
 }
 
 function shareTextFor(q: SocialQuote): string {
-  const url = `https://livewellbyjamesbell.co${sourcePath(q)}`;
+  const url = `${SITE_URL}${sourcePath(q) ?? "/tools/quotes"}`;
   return `"${q.text}"\n\n— ${authorOf(q)}, "${q.articleTitle}"\n${url}`;
 }
 
@@ -108,13 +112,13 @@ const actionButtonStyle = (active: boolean) =>
     display: "inline-flex",
     alignItems: "center",
     gap: "0.35rem",
-    fontFamily: "'Inter', sans-serif",
+    fontFamily: "var(--U)",
     fontSize: "0.8rem",
     fontWeight: 500,
-    color: active ? "var(--ok)" : "var(--c-ink-muted, #5A5448)",
+    color: active ? "var(--ok)" : "var(--ink-muted)",
     background: "none",
     border: "1px solid",
-    borderColor: active ? "var(--ok)" : "var(--c-ink-muted, #5A5448)",
+    borderColor: active ? "var(--ok)" : "var(--ink-muted)",
     borderRadius: "4px",
     padding: "0.35rem 0.75rem",
     cursor: "pointer",
@@ -137,7 +141,7 @@ function QuoteCard({
   const [copyFailed, setCopyFailed] = useState(false);
 
   const shareText = shareTextFor(quote);
-  const articleUrl = `https://livewellbyjamesbell.co${sourcePath(quote)}`;
+  const articleUrl = `${SITE_URL}${sourcePath(quote) ?? "/tools/quotes"}`;
 
   const handleCopy = useCallback(async () => {
     const ok = await copyToClipboard(shareText);
@@ -169,8 +173,8 @@ function QuoteCard({
   return (
     <article
       style={{
-        background: "var(--c-white, #FFFFFF)",
-        borderLeft: `4px solid ${CATEGORY_COLORS[quote.category] || "var(--c-mustard, #D4A017)"}`,
+        background: "var(--card)",
+        borderLeft: `4px solid ${CATEGORY_COLORS[quote.category] || "var(--mustard)"}`,
         borderRadius: "4px",
         padding: "2rem 2rem 1.5rem",
         boxShadow: "0 1px 4px rgba(0,0,0,0.06)",
@@ -184,11 +188,11 @@ function QuoteCard({
       {/* Quote text */}
       <blockquote
         style={{
-          fontFamily: "'Cormorant Garamond', Georgia, serif",
+          fontFamily: "var(--F)",
           fontSize: "1.25rem",
           lineHeight: 1.6,
           fontStyle: "italic",
-          color: "var(--c-ink, #14110C)",
+          color: "var(--ink)",
           margin: 0,
           padding: 0,
           flex: 1,
@@ -209,13 +213,13 @@ function QuoteCard({
       >
         <span
           style={{
-            fontFamily: "'Inter', sans-serif",
+            fontFamily: "var(--U)",
             fontSize: "0.7rem",
             fontWeight: 500,
             textTransform: "uppercase",
             letterSpacing: "0.14em",
-            color: CATEGORY_COLORS[quote.category] || "var(--c-ink-muted, #5A5448)",
-            border: `1px solid ${CATEGORY_COLORS[quote.category] || "var(--c-ink-muted, #5A5448)"}`,
+            color: CATEGORY_COLORS[quote.category] || "var(--ink-muted)",
+            border: `1px solid ${CATEGORY_COLORS[quote.category] || "var(--ink-muted)"}`,
             borderRadius: "3px",
             padding: "0.15rem 0.5rem",
             lineHeight: 1,
@@ -225,9 +229,9 @@ function QuoteCard({
         </span>
         <span
           style={{
-            fontFamily: "'Inter', sans-serif",
+            fontFamily: "var(--U)",
             fontSize: "0.75rem",
-            color: "var(--c-ink-muted, #5A5448)",
+            color: "var(--ink-muted)",
           }}
         >
           {quote.pillar}
@@ -235,9 +239,9 @@ function QuoteCard({
         {quote.author && quote.author !== "James Bell" && (
           <span
             style={{
-              fontFamily: "'Inter', sans-serif",
+              fontFamily: "var(--U)",
               fontSize: "0.75rem",
-              color: "var(--c-ink-muted, #5A5448)",
+              color: "var(--ink-muted)",
             }}
           >
             · {quote.author}
@@ -248,25 +252,29 @@ function QuoteCard({
       {/* Source link */}
       <p
         style={{
-          fontFamily: "'Inter', sans-serif",
+          fontFamily: "var(--U)",
           fontSize: "0.85rem",
-          color: "var(--c-ink-muted, #5A5448)",
+          color: "var(--ink-muted)",
           margin: 0,
           lineHeight: 1.5,
         }}
       >
         {sourceKindLabel(quote)}{" "}
-        <Link
-          href={sourcePath(quote)}
-          style={{
-            color: "var(--c-ink, #14110C)",
-            textDecoration: "none",
-            borderBottom: "1px solid var(--c-mustard, #D4A017)",
-            paddingBottom: "1px",
-          }}
-        >
-          {quote.articleTitle}
-        </Link>
+        {sourcePath(quote) ? (
+          <Link
+            href={sourcePath(quote)!}
+            style={{
+              color: "var(--ink)",
+              textDecoration: "none",
+              borderBottom: "1px solid var(--mustard)",
+              paddingBottom: "1px",
+            }}
+          >
+            {quote.articleTitle}
+          </Link>
+        ) : (
+          <span style={{ color: "var(--ink)" }}>{quote.articleTitle}</span>
+        )}
       </p>
 
       {/* Actions */}
@@ -303,9 +311,9 @@ function QuoteCard({
         <p
           role="status"
           style={{
-            fontFamily: "'Inter', sans-serif",
+            fontFamily: "var(--U)",
             fontSize: "0.8rem",
-            color: "var(--c-ink-muted, #5A5448)",
+            color: "var(--ink-muted)",
             margin: 0,
           }}
         >
@@ -404,8 +412,8 @@ export default function QuoteLibrary() {
       {/* Hero */}
       <section
         style={{
-          background: "var(--c-black, #1A1A1A)",
-          color: "var(--c-cream, #F5F0E6)",
+          background: "var(--charcoal)",
+          color: "var(--bone)",
           padding: "5rem 1.5rem 4rem",
           textAlign: "center",
         }}
@@ -413,12 +421,12 @@ export default function QuoteLibrary() {
         <div style={wrap}>
           <span
             style={{
-              fontFamily: "'Inter', sans-serif",
+              fontFamily: "var(--U)",
               fontWeight: 500,
               fontSize: "0.75rem",
               textTransform: "uppercase",
               letterSpacing: "0.18em",
-              color: "var(--c-mustard, #D4A017)",
+              color: "var(--mustard)",
               display: "block",
               marginBottom: "1rem",
             }}
@@ -427,23 +435,23 @@ export default function QuoteLibrary() {
           </span>
           <h1
             style={{
-              fontFamily: "'Cormorant Garamond', Georgia, serif",
+              fontFamily: "var(--F)",
               fontWeight: 400,
               fontSize: "clamp(2rem, 5vw, 3.5rem)",
               letterSpacing: "-0.02em",
               lineHeight: 1.15,
               margin: "0 0 1.25rem",
-              color: "var(--c-cream, #F5F0E6)",
+              color: "var(--bone)",
             }}
           >
             Words Worth Sharing
           </h1>
           <p
             style={{
-              fontFamily: "'Inter', sans-serif",
+              fontFamily: "var(--U)",
               fontSize: "1.05rem",
               lineHeight: 1.7,
-              color: "var(--c-ink-muted, #9A948A)",
+              color: "var(--ink-muted)",
               maxWidth: "52ch",
               margin: "0 auto",
             }}
@@ -454,9 +462,9 @@ export default function QuoteLibrary() {
           </p>
           <p
             style={{
-              fontFamily: "'Inter', sans-serif",
+              fontFamily: "var(--U)",
               fontSize: "0.85rem",
-              color: "var(--c-ink-muted, #9A948A)",
+              color: "var(--ink-muted)",
               marginTop: "1.5rem",
             }}
           >
@@ -468,7 +476,7 @@ export default function QuoteLibrary() {
       {/* A quote for today */}
       <section
         style={{
-          background: "var(--c-cream-warm, #EDE8DC)",
+          background: "var(--bone-warm)",
           padding: "3rem 1.5rem",
           textAlign: "center",
         }}
@@ -476,12 +484,12 @@ export default function QuoteLibrary() {
         <div style={{ ...wrap, maxWidth: "760px" }}>
           <span
             style={{
-              fontFamily: "'Inter', sans-serif",
+              fontFamily: "var(--U)",
               fontWeight: 500,
               fontSize: "0.75rem",
               textTransform: "uppercase",
               letterSpacing: "0.18em",
-              color: "var(--c-mustard, #D4A017)",
+              color: "var(--mustard)",
               display: "block",
               marginBottom: "1.25rem",
             }}
@@ -490,11 +498,11 @@ export default function QuoteLibrary() {
           </span>
           <blockquote
             style={{
-              fontFamily: "'Cormorant Garamond', Georgia, serif",
+              fontFamily: "var(--F)",
               fontSize: "clamp(1.35rem, 3vw, 1.75rem)",
               lineHeight: 1.5,
               fontStyle: "italic",
-              color: "var(--c-ink, #14110C)",
+              color: "var(--ink)",
               margin: "0 0 1.25rem",
             }}
           >
@@ -502,24 +510,28 @@ export default function QuoteLibrary() {
           </blockquote>
           <p
             style={{
-              fontFamily: "'Inter', sans-serif",
+              fontFamily: "var(--U)",
               fontSize: "0.9rem",
-              color: "var(--c-ink-muted, #5A5448)",
+              color: "var(--ink-muted)",
               margin: 0,
             }}
           >
             — {authorOf(today)},{" "}
-            <Link
-              href={sourcePath(today)}
+            {sourcePath(today) ? (
+              <Link
+              href={sourcePath(today)!}
               style={{
-                color: "var(--c-ink, #14110C)",
+                color: "var(--ink)",
                 textDecoration: "none",
-                borderBottom: "1px solid var(--c-mustard, #D4A017)",
+                borderBottom: "1px solid var(--mustard)",
                 paddingBottom: "1px",
               }}
             >
               {today.articleTitle}
             </Link>
+            ) : (
+              <span style={{ color: "var(--ink)" }}>{today.articleTitle}</span>
+            )}
           </p>
         </div>
       </section>
@@ -527,7 +539,7 @@ export default function QuoteLibrary() {
       {/* Filters */}
       <section
         style={{
-          background: "var(--c-cream, #F5F0E6)",
+          background: "var(--bone)",
           borderBottom: "1px solid rgba(0,0,0,0.06)",
           padding: "1.25rem 1.5rem",
           position: "sticky",
@@ -564,17 +576,17 @@ export default function QuoteLibrary() {
                 }}
                 aria-pressed={view === v.id}
                 style={{
-                  fontFamily: "'Inter', sans-serif",
+                  fontFamily: "var(--U)",
                   fontSize: "0.8rem",
                   fontWeight: 500,
                   padding: "0.35rem 0.85rem",
                   borderRadius: "4px",
                   border: "1px solid",
                   borderColor:
-                    view === v.id ? "var(--c-black, #1A1A1A)" : "rgba(0,0,0,0.12)",
-                  background: view === v.id ? "var(--c-black, #1A1A1A)" : "transparent",
+                    view === v.id ? "var(--charcoal)" : "rgba(0,0,0,0.12)",
+                  background: view === v.id ? "var(--charcoal)" : "transparent",
                   color:
-                    view === v.id ? "var(--c-cream, #F5F0E6)" : "var(--c-ink, #14110C)",
+                    view === v.id ? "var(--bone)" : "var(--ink)",
                   cursor: "pointer",
                   transition: "all 0.15s",
                 }}
@@ -594,7 +606,7 @@ export default function QuoteLibrary() {
                 left: "0.65rem",
                 top: "50%",
                 transform: "translateY(-50%)",
-                color: "var(--c-ink-muted, #5A5448)",
+                color: "var(--ink-muted)",
                 pointerEvents: "none",
               }}
             />
@@ -609,13 +621,13 @@ export default function QuoteLibrary() {
               aria-label="Search quotes by text or source title"
               style={{
                 width: "100%",
-                fontFamily: "'Inter', sans-serif",
+                fontFamily: "var(--U)",
                 fontSize: "0.85rem",
                 padding: "0.45rem 0.75rem 0.45rem 2rem",
                 border: "1px solid rgba(0,0,0,0.12)",
                 borderRadius: "4px",
-                background: "var(--c-white, #FFFFFF)",
-                color: "var(--c-ink, #14110C)",
+                background: "var(--card)",
+                color: "var(--ink)",
               }}
             />
           </div>
@@ -623,7 +635,7 @@ export default function QuoteLibrary() {
           <Filter
             size={16}
             aria-hidden="true"
-            style={{ color: "var(--c-ink-muted, #5A5448)", flexShrink: 0 }}
+            style={{ color: "var(--ink-muted)", flexShrink: 0 }}
           />
 
           {/* Category pills */}
@@ -641,18 +653,18 @@ export default function QuoteLibrary() {
                 }}
                 aria-pressed={category === c.id}
                 style={{
-                  fontFamily: "'Inter', sans-serif",
+                  fontFamily: "var(--U)",
                   fontSize: "0.8rem",
                   fontWeight: 500,
                   padding: "0.35rem 0.85rem",
                   borderRadius: "100px",
                   border: "1px solid",
                   borderColor:
-                    category === c.id ? "var(--c-mustard, #D4A017)" : "rgba(0,0,0,0.12)",
+                    category === c.id ? "var(--mustard)" : "rgba(0,0,0,0.12)",
                   background:
-                    category === c.id ? "var(--c-mustard, #D4A017)" : "transparent",
+                    category === c.id ? "var(--mustard)" : "transparent",
                   color:
-                    category === c.id ? "var(--c-white, #FFFFFF)" : "var(--c-ink, #14110C)",
+                    category === c.id ? "var(--card)" : "var(--ink)",
                   cursor: "pointer",
                   transition: "all 0.15s",
                 }}
@@ -672,14 +684,14 @@ export default function QuoteLibrary() {
               }}
               aria-label="Filter by pillar"
               style={{
-                fontFamily: "'Inter', sans-serif",
+                fontFamily: "var(--U)",
                 fontSize: "0.8rem",
                 fontWeight: 500,
                 padding: "0.4rem 2rem 0.4rem 0.75rem",
                 border: "1px solid rgba(0,0,0,0.12)",
                 borderRadius: "4px",
-                background: "var(--c-white, #FFFFFF)",
-                color: "var(--c-ink, #14110C)",
+                background: "var(--card)",
+                color: "var(--ink)",
                 cursor: "pointer",
                 appearance: "none",
                 WebkitAppearance: "none",
@@ -700,7 +712,7 @@ export default function QuoteLibrary() {
                 top: "50%",
                 transform: "translateY(-50%)",
                 pointerEvents: "none",
-                color: "var(--c-ink-muted, #5A5448)",
+                color: "var(--ink-muted)",
               }}
             />
           </div>
@@ -710,7 +722,7 @@ export default function QuoteLibrary() {
       {/* Quotes grid */}
       <section
         style={{
-          background: "var(--c-cream, #F5F0E6)",
+          background: "var(--bone)",
           padding: "3rem 1.5rem 4rem",
           minHeight: "60vh",
         }}
@@ -719,9 +731,9 @@ export default function QuoteLibrary() {
           {saveFailed && (
             <p
               style={{
-                fontFamily: "'Inter', sans-serif",
+                fontFamily: "var(--U)",
                 fontSize: "0.85rem",
-                color: "var(--c-ink-muted, #5A5448)",
+                color: "var(--ink-muted)",
                 marginBottom: "1rem",
               }}
             >
@@ -743,9 +755,9 @@ export default function QuoteLibrary() {
             <p
               role="status"
               style={{
-                fontFamily: "'Inter', sans-serif",
+                fontFamily: "var(--U)",
                 fontSize: "0.85rem",
-                color: "var(--c-ink-muted, #5A5448)",
+                color: "var(--ink-muted)",
                 margin: 0,
               }}
             >
@@ -770,9 +782,9 @@ export default function QuoteLibrary() {
               <span
                 role="status"
                 style={{
-                  fontFamily: "'Inter', sans-serif",
+                  fontFamily: "var(--U)",
                   fontSize: "0.8rem",
-                  color: "var(--c-ink-muted, #5A5448)",
+                  color: "var(--ink-muted)",
                 }}
               >
                 Copy failed — select and copy manually.
@@ -784,9 +796,9 @@ export default function QuoteLibrary() {
             <div style={{ textAlign: "center", padding: "4rem 0" }}>
               <p
                 style={{
-                  fontFamily: "'Inter', sans-serif",
+                  fontFamily: "var(--U)",
                   fontSize: "1rem",
-                  color: "var(--c-ink-muted, #5A5448)",
+                  color: "var(--ink-muted)",
                   margin: "0 0 1.25rem",
                 }}
               >
@@ -837,12 +849,12 @@ export default function QuoteLibrary() {
                   <button
                     onClick={() => setVisible((v) => v + PAGE_SIZE)}
                     style={{
-                      fontFamily: "'Inter', sans-serif",
+                      fontFamily: "var(--U)",
                       fontSize: "0.9rem",
                       fontWeight: 500,
                       padding: "0.75rem 2rem",
-                      background: "var(--c-black, #1A1A1A)",
-                      color: "var(--c-cream, #F5F0E6)",
+                      background: "var(--charcoal)",
+                      color: "var(--bone)",
                       border: "none",
                       borderRadius: "4px",
                       cursor: "pointer",
@@ -861,8 +873,8 @@ export default function QuoteLibrary() {
       {/* Bottom CTA */}
       <section
         style={{
-          background: "var(--c-black, #1A1A1A)",
-          color: "var(--c-cream, #F5F0E6)",
+          background: "var(--charcoal)",
+          color: "var(--bone)",
           padding: "3rem 1.5rem",
           textAlign: "center",
         }}
@@ -870,7 +882,7 @@ export default function QuoteLibrary() {
         <div style={wrap}>
           <p
             style={{
-              fontFamily: "'Cormorant Garamond', Georgia, serif",
+              fontFamily: "var(--F)",
               fontSize: "1.5rem",
               fontWeight: 400,
               lineHeight: 1.4,
@@ -883,12 +895,12 @@ export default function QuoteLibrary() {
           <Link
             href="/writing"
             style={{
-              fontFamily: "'Inter', sans-serif",
+              fontFamily: "var(--U)",
               fontSize: "0.9rem",
               fontWeight: 500,
               padding: "0.75rem 2rem",
-              background: "var(--c-mustard, #D4A017)",
-              color: "var(--c-white, #FFFFFF)",
+              background: "var(--mustard)",
+              color: "var(--card)",
               borderRadius: "4px",
               textDecoration: "none",
               display: "inline-block",

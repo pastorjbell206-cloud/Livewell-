@@ -60,7 +60,12 @@ export const KIND_ORDER = [
   "Church and power",
   "Nation",
   "Pathway",
+  "Care page",
   "Care plan",
+  "Reading plan",
+  "Worksheet",
+  "Workbook",
+  "Card set",
   "Group guide",
   "Argument",
   "Family",
@@ -338,9 +343,80 @@ export const LIBRARIES = {
     list("pathways/index.json").map((p) =>
       item({ kind: "Pathway", title: p.title, summary: clip(p.subtitle ?? p.forWhom), href: `/pathways/${p.slug}` })
     ),
+  // Find Help care pages (/help/:slug): only registry needs with a written page.
+  needs: () =>
+    list("needs/index.json", "needs")
+      .filter((n) => n.page === true)
+      .map((n) => item({
+        kind: "Care page",
+        title: n.title,
+        summary: clip(n.summary),
+        href: `/help/${n.slug}`,
+        // Built by scripts/lib/help-printables.mjs inside `pnpm pdfs`.
+        files: [
+          ["One-page guide", "guide"], ["Prayer cards", "prayer"], ["Scripture cards", "scripture"], ["Worksheet for the week", "week"],
+        ].flatMap(([label, kind]) => [
+          file(`${label} (Letter)`, `/downloads/help/${n.slug}-${kind}-letter.pdf`),
+          file(`${label} (A4)`, `/downloads/help/${n.slug}-${kind}-a4.pdf`),
+        ]),
+      })),
   plans: () =>
     list("plans/plans-index.json", "plans").map((p) =>
-      item({ kind: "Care plan", title: p.title, summary: clip(p.blurb), href: `/plans/${p.slug}` })
+      item({
+        kind: "Care plan", title: p.title, summary: clip(p.blurb), href: `/plans/${p.slug}`,
+        // Built by scripts/lib/help-printables.mjs inside `pnpm pdfs`.
+        files: [file("Printable booklet (Letter)", `/downloads/plans/${p.slug}-booklet-letter.pdf`), file("Printable booklet (A4)", `/downloads/plans/${p.slug}-booklet-a4.pdf`)],
+      })
+    ),
+  // Blank worksheets to print, built by scripts/lib/help-printables.mjs inside `pnpm pdfs`.
+  worksheets: () =>
+    [
+      ["worry-log", "The Worry Journal, on paper", "A week of evenings: the worry, the one thing that is yours to do tomorrow, what is not yours to carry, and a sentence of prayer, with a page for looking back.", "/tools/worry-journal"],
+      ["prayer-list", "A weekly prayer list", "Your people and needs by day of the week, with a page for prayers answered, the date, and how the answer came.", "/tools/prayer-planner"],
+      ["budget", "A monthly budget", "A month planned before it begins, starting with what you will give and save, then the rest. Not financial advice.", "/help/money"],
+      ["grief-journal", "A grief journal page", "Prompts for the days after a death: what you miss, a memory to keep, what you wish you could say, and a prayer, even an angry one.", "/help/grief"],
+      ["conflict-guide", "A conversation guide for couples", "Six steps for the argument you keep having, for couples who are safe with each other, with safety first.", "/help/marriage"],
+      ["referral-list", "A referral list for church leaders", "The national help lines, then room to list the counselors and services near you before anyone needs them.", "/help/refer-to-counselor"],
+      ["holidays-after-loss", "The first holidays without them", "A page for planning Thanksgiving, Christmas, or an anniversary after a death: what to keep, what to change, how to remember them, and who will check on you.", "/help/grief"],
+      ["first-response", "When someone says they are not safe at home", "For pastors and church leaders: seven steps for the first hour after someone discloses abuse, the help lines, and room for local names. Not legal advice.", "/help/refer-to-counselor"],
+      ["prayer-journal", "A prayer journal: a month of mornings", "Thirty mornings shaped by the prayer Jesus taught: who God is, what you confess, what you are thankful for, and what you ask for others and for yourself.", "/help/prayer"],
+      ["rule-of-life", "A rule of life on one page", "The shape of an ordinary week: prayer, Scripture, worship, rest, people, work, the body, and who will ask how it is going.", "/tools/rule-of-life"],
+    ].map(([id, title, summary, href]) =>
+      item({
+        kind: "Worksheet", title, summary: clip(summary), href,
+        files: [file("Letter", `/downloads/tools/${id}-letter.pdf`), file("A4", `/downloads/tools/${id}-a4.pdf`)],
+      })
+    ),
+  // Cards to cut and keep, built by scripts/lib/help-printables.mjs inside `pnpm pdfs`.
+  cardSets: () =>
+    [
+      ["memory-cards", "Scripture to carry", "One verse for each hard place on Find Help, in full from the Berean Standard Bible, four cards to a page, each naming the care page where it is read in context.", "/help"],
+      ["family-cards", "Family table cards", "A card for each weekly family devotion: the passage in full, the big idea, questions to talk about, and a prayer.", "/family/devotions"],
+    ].map(([id, title, summary, href]) =>
+      item({
+        kind: "Card set", title, summary: clip(summary), href,
+        files: [file("Letter", `/downloads/tools/${id}-letter.pdf`), file("A4", `/downloads/tools/${id}-a4.pdf`)],
+      })
+    ),
+  // Workbooks for a couple or a group, built by scripts/lib/workbooks.mjs inside `pnpm pdfs`.
+  workbooks: () => {
+    const dir = path.join(PUB, "workbooks");
+    if (!fs.existsSync(dir)) return [];
+    return fs.readdirSync(dir).filter((f) => f.endsWith(".json")).sort().map((f) => {
+      const wb = JSON.parse(fs.readFileSync(path.join(dir, f), "utf8"));
+      return item({
+        kind: "Workbook", title: wb.title, summary: clip(wb.subtitle), href: wb.href, period: `${wb.sessions.length} sessions`,
+        files: [file("Workbook (Letter)", `/downloads/workbooks/${wb.id}-letter.pdf`), file("Workbook (A4)", `/downloads/workbooks/${wb.id}-a4.pdf`)],
+      });
+    });
+  },
+  // Printable Bible reading plans, built by scripts/lib/reading-plans.mjs inside `pnpm pdfs`.
+  readingPlans: () =>
+    JSON.parse(fs.readFileSync(path.join(ROOT, "client/src/data/bible-reading-plans.json"), "utf8")).plans.map((p) =>
+      item({
+        kind: "Reading plan", title: p.title, summary: clip(p.blurb), href: `/plans#${p.id}`, period: `${p.days} days`,
+        files: [file("Printable plan (Letter)", `/downloads/reading-plans/${p.id}-letter.pdf`), file("Printable plan (A4)", `/downloads/reading-plans/${p.id}-a4.pdf`)],
+      })
     ),
   justice: () =>
     list("justice/topics-index.json", "topics").map((t) =>
@@ -362,7 +438,16 @@ export const LIBRARIES = {
     const devotions = [...list("family-devotions.json"), ...list("family-devotions-2.json")].length;
     return [
       item({ kind: "Family", title: "Family Catechism", summary: clip("A 52-question family catechism in the New City Catechism tradition. Each week: a question, answers for adults and children, a verse, a reflection, a prayer."), href: "/family/catechism", period: `${list("family-catechism.json").length} questions` }),
-      item({ kind: "Family", title: "Family Devotions", summary: clip("A full year of family devotions to do together, plus daily Advent and Holy Week devotionals — each with a passage, a question, an activity, and a prayer."), href: "/family/devotions", period: `${devotions} devotions` }),
+      item({
+        kind: "Family", title: "Family Devotions", summary: clip("A full year of family devotions to do together, plus daily Advent and Holy Week devotionals — each with a passage, a question, an activity, and a prayer."), href: "/family/devotions", period: `${devotions} devotions`,
+        // The seasonal booklets, built by scripts/lib/help-printables.mjs inside `pnpm pdfs`.
+        files: [
+          file("Advent booklet (Letter)", "/downloads/seasonal/advent-family-letter.pdf"),
+          file("Advent booklet (A4)", "/downloads/seasonal/advent-family-a4.pdf"),
+          file("Holy Week booklet (Letter)", "/downloads/seasonal/holy-week-family-letter.pdf"),
+          file("Holy Week booklet (A4)", "/downloads/seasonal/holy-week-family-a4.pdf"),
+        ],
+      }),
       item({ kind: "Family", title: "Family Reading Plans", summary: clip("Read the Bible together as a family: the life of Jesus, the Old Testament for kids, the Psalms, and a starter plan. A passage and a prompt for each day."), href: "/family/reading-plans", period: `${list("family-reading-plans.json").length} plans` }),
     ];
   },

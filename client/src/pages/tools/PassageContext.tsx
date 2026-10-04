@@ -15,6 +15,7 @@
  * teaching panel still renders and the reader is pointed to the reference.
  */
 import { useEffect, useMemo, useState } from "react";
+import { scrollBehavior } from "@/lib/motion";
 import { Link } from "wouter";
 import { ChevronDown, Search } from "lucide-react";
 import Layout from "@/components/Layout";
@@ -271,11 +272,11 @@ export default function PassageContext() {
           {books.length > 0 && (
             <div style={{ display: "flex", flexWrap: "wrap", gap: "10px", alignItems: "center", marginTop: "14px" }}>
               <span style={{ fontFamily: "var(--U)", fontSize: "12px", color: "rgba(245,240,230,0.6)" }}>or pick</span>
-              <select value={pickBook} onChange={(e) => { setPickBook(e.target.value); setPickChapter(1); }}
+              <select value={pickBook} onChange={(e) => { setPickBook(e.target.value); setPickChapter(1); }} aria-label="Book of the Bible"
                 style={{ fontFamily: "var(--B)", fontSize: "14px", padding: "8px 10px", borderRadius: "var(--radius-sm)", border: "1px solid rgba(245,240,230,0.3)", background: "var(--bone)", color: "var(--ink)" }}>
                 {books.map((b) => <option key={b.book} value={b.book}>{b.book}</option>)}
               </select>
-              <select value={pickChapter} onChange={(e) => setPickChapter(parseInt(e.target.value, 10))}
+              <select value={pickChapter} onChange={(e) => setPickChapter(parseInt(e.target.value, 10))} aria-label="Chapter"
                 style={{ fontFamily: "var(--B)", fontSize: "14px", padding: "8px 10px", borderRadius: "var(--radius-sm)", border: "1px solid rgba(245,240,230,0.3)", background: "var(--bone)", color: "var(--ink)" }}>
                 {Array.from({ length: pickBookMeta?.chapters ?? 1 }, (_, i) => i + 1).map((c) => <option key={c} value={c}>Chapter {c}</option>)}
               </select>
@@ -334,7 +335,7 @@ export default function PassageContext() {
 
               {/* 1. THE PASSAGE */}
               <Panel title="The passage, with room around it" kicker="Read it first" defaultOpen>
-                {textState === "loading" && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", padding: "16px 0" }}>Loading the text…</p>}
+                {textState === "loading" && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", padding: "16px 0" }} role="status">Loading the text…</p>}
                 {textState === "error" && (
                   <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "var(--ink-muted)", paddingTop: "16px" }}>
                     The passage text could not be loaded right now. Open your own Bible to {refLabel} and read a few verses before and after it. Everything below still works.
@@ -414,7 +415,7 @@ export default function PassageContext() {
                 <Panel title="What the rest of Scripture says" kicker="Cross-references">
                   <div style={{ paddingTop: "16px", display: "flex", flexWrap: "wrap", gap: "8px" }}>
                     {note.crossRefs.map((r) => (
-                      <button key={r} type="button" onClick={() => { setInput(r); resolve(parseReference(r, books), r); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                      <button key={r} type="button" onClick={() => { setInput(r); resolve(parseReference(r, books), r); window.scrollTo({ top: 0, behavior: scrollBehavior() }); }}
                         style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, padding: "8px 14px", borderRadius: "999px", border: "1px solid var(--mustard)", background: "rgba(212,160,23,0.10)", color: "var(--mustard-text)", cursor: "pointer" }}>
                         {r}
                       </button>

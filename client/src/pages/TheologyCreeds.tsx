@@ -53,7 +53,7 @@ export default function TheologyCreeds() {
       <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-4)" }}>
         <div style={{ ...wrap, display: "flex", flexDirection: "column", gap: "12px" }}>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px, 3.5vw, 32px)", fontWeight: 400, color: "var(--ink)", marginBottom: "8px" }}>The creeds</h2>
-          {creeds.length === 0 && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-5) 0" }}>Loading…</p>}
+          {creeds.length === 0 && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-5) 0" }} role="status">Loading…</p>}
           {creeds.map((c) => {
             const isOpen = open === c.name;
             return (

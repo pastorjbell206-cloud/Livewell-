@@ -5,11 +5,14 @@
  * doctrine by triage level. Doctrines marked ready link to a worked page; the
  * rest show as the planned map so the reader sees where it is going.
  */
+import { useState } from "react";
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
-import { TriageBadge } from "@/components/TriageBadge";
-import { DOCTRINE_INDEX, type DoctrineIndexEntry } from "@/lib/theology";
+import { DOCTRINE_INDEX, TRIAGE, type Triage } from "@/lib/theology";
+import { EditorialIndex } from "@/components/editorial/EditorialIndex";
+import { CardGrid } from "@/components/editorial/CardGrid";
+import { SectionHead } from "@/components/editorial/SectionHead";
 import { StatementBand, SectionArt } from "@/components/EditorialBlocks";
 import SubjectShelf from "@/components/SubjectShelf";
 import { subjectById } from "@/lib/subjects";
@@ -22,36 +25,19 @@ const card = {
 } as const;
 
 const PILLARS = [
-  { key: "Systematic", n: "One", title: "Systematic theology", blurb: "The faith laid out in order, from Scripture and the Trinity to creation, sin, Christ, the Spirit, salvation, the church, and the last things.", href: "" },
-  { key: "History", n: "Two", title: "Church history", blurb: "How the church got here. The councils that fixed the creeds, the heresies that forced them, and the people who carried the faith through twenty centuries.", href: "/theology/history" },
-  { key: "Biblical", n: "Three", title: "Biblical theology", blurb: "How the whole Bible fits as one story. Covenant, dispensational, and progressive-covenantal frameworks, the canonical themes, and how the New Testament reads the Old.", href: "/theology/biblical" },
+  { key: "Systematic", n: "one", title: "Systematic theology", blurb: "The faith laid out in order, from Scripture and the Trinity to creation, sin, Christ, the Spirit, salvation, the church, and the last things.", href: "#doctrine-map", cta: "See the doctrines" },
+  { key: "History", n: "two", title: "Church history", blurb: "How the church got here. The councils that fixed the creeds, the heresies that forced them, and the people who carried the faith through twenty centuries.", href: "/theology/history", cta: "Walk the story" },
+  { key: "Biblical", n: "three", title: "Biblical theology", blurb: "How the whole Bible fits as one story. Covenant, dispensational, and progressive-covenantal frameworks, the canonical themes, and how the New Testament reads the Old.", href: "/theology/biblical", cta: "Walk the story" },
 ];
-
-function DoctrineCard({ d }: { d: DoctrineIndexEntry }) {
-  const inner = (
-    <>
-      <div style={{ marginBottom: "12px" }}><TriageBadge triage={d.triage} /></div>
-      <div style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 500, color: "var(--ink)", marginBottom: "8px", lineHeight: 1.25 }}>{d.title}</div>
-      <div style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.6, color: "var(--ink-muted)" }}>{d.blurb}</div>
-      {d.ready ? (
-        <div style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--mustard-text)", marginTop: "12px" }}>Read the worked doctrine →</div>
-      ) : (
-        <div style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, letterSpacing: "0.04em", textTransform: "uppercase", color: "var(--ink-muted)", marginTop: "12px" }}>In the writing</div>
-      )}
-    </>
-  );
-  return d.ready ? (
-    <Link href={`/theology/doctrine/${d.slug}`} style={{ ...card, borderTop: "3px solid var(--mustard)" }}>{inner}</Link>
-  ) : (
-    <div style={{ ...card, opacity: 0.82 }}>{inner}</div>
-  );
-}
 
 export default function Theology() {
   // Render only published doctrines, so an unpublished one is simply absent,
   // never a greyed-out "worked page coming" teaser.
-  const byPillar = (p: string) => DOCTRINE_INDEX.filter((d) => d.pillar === p && d.ready);
+  const [order, setOrder] = useState<Triage | "all">("all");
+  const byPillar = (p: string) =>
+    DOCTRINE_INDEX.filter((d) => d.pillar === p && d.ready && (order === "all" || d.triage === order));
   const readyCount = DOCTRINE_INDEX.filter((d) => d.ready).length;
+  const orderCount = (t: Triage) => DOCTRINE_INDEX.filter((d) => d.ready && d.triage === t).length;
 
   // The worked doctrines, as an ItemList. Built from the same `ready` filter the
   // page renders from, so the schema can never advertise a doctrine the reader
@@ -98,7 +84,7 @@ export default function Theology() {
       />
 
       {/* HERO */}
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-7) var(--s-4) var(--s-6)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-7) var(--s-4) var(--s-6)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>Theological Depth</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(38px, 6vw, 68px)", fontWeight: 400, lineHeight: 1.02, letterSpacing: "-0.03em", marginBottom: "20px", maxWidth: "16ch" }}>
@@ -113,20 +99,16 @@ export default function Theology() {
       {/* FIND YOUR WAY IN */}
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) 0" }}>
         <div style={wrap}>
-          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(22px, 3vw, 28px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", marginBottom: "var(--s-3)" }}>Find your way in</h2>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "12px" }}>
-            {[
-              { href: "/theology/search", title: "Search everything", desc: "One box across the doctrines, all 230 passages, the glossary, and more." },
-              { href: "/theology/paths", title: "Where do I start?", desc: "Short guided paths for the new believer and the curious." },
-              { href: "/theology/questions", title: "Hard questions", desc: "Honest answers to what people actually ask, routed into the study." },
-              { href: "/theology/traditions", title: "Why so many churches?", desc: "An irenic guide to the traditions and the core they share." },
-            ].map((t) => (
-              <Link key={t.href} href={t.href} style={{ ...card, borderTop: "3px solid var(--mustard)" }}>
-                <div style={{ fontFamily: "var(--F)", fontSize: "19px", fontWeight: 500, color: "var(--ink)", marginBottom: "6px" }}>{t.title}</div>
-                <div style={{ fontFamily: "var(--B)", fontSize: "13px", lineHeight: 1.55, color: "var(--ink-muted)" }}>{t.desc}</div>
-              </Link>
-            ))}
-          </div>
+          <SectionHead title="Find your way in" />
+          <CardGrid
+            min={440}
+            items={[
+              { href: "/theology/search", title: "Search everything", dek: "One box across the doctrines, all 230 passages, the glossary, and more." },
+              { href: "/theology/paths", title: "Where do I start?", dek: "Short guided paths for the new believer and the curious." },
+              { href: "/theology/questions", title: "Hard questions", dek: "Honest answers to what people actually ask, routed into the study." },
+              { href: "/theology/traditions", title: "Why so many churches?", dek: "An irenic guide to the traditions and the core they share." },
+            ]}
+          />
         </div>
       </section>
 
@@ -167,61 +149,59 @@ export default function Theology() {
       </StatementBand>
 
       {/* STUDY TOOLS */}
-      <section style={{ background: "var(--bone-warm)", padding: "var(--s-5) var(--s-4) 0" }}>
+      <section style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--s-4) var(--s-2)" }}>
         <div style={wrap}>
-          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(22px, 3vw, 28px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", marginBottom: "var(--s-3)" }}>Study tools</h2>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: "12px" }}>
-            {[
-              { href: "/theology/passage", title: "Passage Context Tool", desc: "Read any verse back inside its paragraph, book, and the whole story." },
-              { href: "/theology/compare", title: "Compare the views", desc: "Lay any doctrine's positions side by side in a table." },
-              { href: "/theology/glossary", title: "Glossary", desc: "Every term, defined plainly and searchable." },
-              { href: "/theology/creeds", title: "Creeds and confessions", desc: "The historic creeds in full, and the great confessions." },
-              { href: "/theology/hermeneutics", title: "How to read the Bible well", desc: "The rules of interpretation and the mistakes to avoid." },
-              { href: "/theology/which-view", title: "Which view am I?", desc: "Answer a few questions and see where you lean." },
-            ].map((t) => (
-              <Link key={t.href} href={t.href} style={{ ...card, borderTop: "1px solid var(--border)" }}>
-                <div style={{ fontFamily: "var(--F)", fontSize: "18px", fontWeight: 500, color: "var(--ink)", marginBottom: "6px" }}>{t.title}</div>
-                <div style={{ fontFamily: "var(--B)", fontSize: "13px", lineHeight: 1.55, color: "var(--ink-muted)" }}>{t.desc}</div>
-              </Link>
-            ))}
-          </div>
+          <SectionHead title="Study tools" intro="The instruments behind the doctrines: read a verse in context, set the views side by side, look up a term." />
+          <CardGrid
+            items={[
+              { href: "/theology/passage", title: "Passage Context Tool", dek: "Read any verse back inside its paragraph, book, and the whole story." },
+              { href: "/theology/compare", title: "Compare the views", dek: "Lay any doctrine's positions side by side in a table." },
+              { href: "/theology/glossary", title: "Glossary", dek: "Every term, defined plainly and searchable." },
+              { href: "/theology/creeds", title: "Creeds and confessions", dek: "The historic creeds in full, and the great confessions." },
+              { href: "/theology/hermeneutics", title: "How to read the Bible well", dek: "The rules of interpretation and the mistakes to avoid." },
+              { href: "/theology/which-view", title: "Which view am I?", dek: "Answer a few questions and see where you lean." },
+            ]}
+          />
         </div>
       </section>
 
       {/* THE PILLARS */}
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
-          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(26px, 3.5vw, 34px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--bone)", marginBottom: "var(--s-4)" }}>Three pillars</h2>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "16px" }}>
-            {PILLARS.map((p) => {
-              const inner = (
-                <>
-                  <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "10px" }}>{`Pillar ${p.n}`}</div>
-                  <div style={{ fontFamily: "var(--F)", fontSize: "23px", fontWeight: 500, color: "var(--ink)", marginBottom: "8px" }}>{p.title}</div>
-                  <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.65, color: "var(--ink-muted)" }}>{p.blurb}</p>
-                  {p.href && <span style={{ display: "block", fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--mustard-text)", marginTop: "12px" }}>Walk the story →</span>}
-                </>
-              );
-              return p.href ? (
-                <Link key={p.key} href={p.href} style={{ ...card, borderTop: "3px solid var(--mustard)" }}>{inner}</Link>
-              ) : (
-                <div key={p.key} style={{ ...card, borderTop: "1px solid var(--border)" }}>{inner}</div>
-              );
-            })}
-          </div>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(26px, 3.5vw, 34px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--charcoal-fg)", marginBottom: "var(--s-4)" }}>Three pillars</h2>
+          <CardGrid
+            tone="dark"
+            items={PILLARS.map((p) => ({ href: p.href, title: p.title, dek: p.blurb, kicker: `Pillar ${p.n}`, cta: p.cta }))}
+          />
         </div>
       </section>
 
       {/* DOCTRINE MAP */}
-      <section style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--s-4) var(--s-7)" }}>
+      <section id="doctrine-map" style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--s-4) var(--s-7)", scrollMarginTop: "80px" }}>
         <div style={wrap}>
-          <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "10px" }}>The map</div>
-          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(26px, 3.5vw, 34px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", marginBottom: "10px" }}>Every doctrine, sorted by weight</h2>
-          <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "64ch", marginBottom: "var(--s-5)" }}>
-            {`The full section, laid out from the start. ${readyCount === 1 ? "One doctrine is" : `${readyCount} doctrines are`} worked end to end in the six-step method.`}
-          </p>
+          <SectionHead
+            eyebrow="The map"
+            title="Every doctrine, sorted by weight"
+            intro={`The full section, laid out from the start. ${readyCount === 1 ? "One doctrine is" : `${readyCount} doctrines are`} worked end to end in the six-step method. Filter by how much a disagreement actually matters.`}
+          />
 
           <SectionArt seed="doctrine-map" />
+
+          <div className="ed-chips" role="group" aria-label="Filter doctrines by weight">
+            <button type="button" className="ed-chip" aria-pressed={order === "all"} onClick={() => setOrder("all")}>
+              All<span className="ed-chip-n">{readyCount}</span>
+            </button>
+            {(Object.keys(TRIAGE) as Triage[]).map((t) => (
+              <button key={t} type="button" className="ed-chip" aria-pressed={order === t} onClick={() => setOrder(t)}>
+                {TRIAGE[t].label}<span className="ed-chip-n">{orderCount(t)}</span>
+              </button>
+            ))}
+          </div>
+          {order !== "all" && (
+            <p role="status" style={{ fontFamily: "var(--B)", fontSize: "15px", fontStyle: "italic", color: "var(--ink-muted)", margin: "0 0 var(--s-3)" }}>
+              {TRIAGE[order].label}: {TRIAGE[order].short}.
+            </p>
+          )}
 
           {["Systematic", "History", "Biblical"].map((pillar) => {
             const items = byPillar(pillar);
@@ -229,10 +209,15 @@ export default function Theology() {
             const label = pillar === "Systematic" ? "Pillar 1 · Systematic theology" : pillar === "History" ? "Pillar 2 · Church history" : "Pillar 3 · Biblical theology";
             return (
               <div key={pillar} style={{ marginBottom: "var(--s-5)" }}>
-                <h3 style={{ fontFamily: "var(--F)", fontSize: "clamp(20px, 2.6vw, 26px)", fontWeight: 400, color: "var(--ink)", marginBottom: "var(--s-3)", paddingBottom: "8px", borderBottom: "2px solid var(--mustard)" }}>{label}</h3>
-                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "16px" }}>
-                  {items.map((d) => <DoctrineCard key={d.slug} d={d} />)}
-                </div>
+                <h3 style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", gap: "12px", fontFamily: "var(--F)", fontSize: "clamp(20px, 2.6vw, 26px)", fontWeight: 400, color: "var(--ink)", margin: "0 0 var(--s-2)" }}>
+                  {label}
+                  <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)" }}>{" "}{items.length}</span>
+                </h3>
+                <EditorialIndex
+                  label={label}
+                  headingAs="h4"
+                  items={items.map((d) => ({ href: `/theology/doctrine/${d.slug}`, title: d.title, dek: d.blurb, kicker: TRIAGE[d.triage].label }))}
+                />
               </div>
             );
           })}

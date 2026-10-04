@@ -1,10 +1,3 @@
-// The toaster is only ever fed by the admin pages (toast() calls live there),
-// so it loads lazily: sonner and next-themes leave the initial graph every
-// reader downloads. No root TooltipProvider: nothing outside the admin
-// sidebar renders a tooltip, and the sidebar mounts its own provider.
-const Toaster = lazy(() =>
-  import("@/components/ui/sonner").then((m) => ({ default: m.Toaster }))
-);
 import PageTracker from "@/components/PageTracker";
 import WebVitalsBeacon from "@/components/WebVitalsBeacon";
 import ClientErrorReporter from "@/components/ClientErrorReporter";
@@ -13,6 +6,14 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import { Route, Router as WouterRouter, Switch, useLocation } from "wouter";
 import { useBrowserLocation } from "wouter/use-browser-location";
 import { Suspense, lazy, startTransition, useCallback, useEffect } from "react";
+
+// The toaster is only ever fed by the admin pages (toast() calls live there),
+// so it loads lazily: sonner and next-themes leave the initial graph every
+// reader downloads. No root TooltipProvider: nothing outside the admin
+// sidebar renders a tooltip, and the sidebar mounts its own provider.
+const Toaster = lazy(() =>
+  import("@/components/ui/sonner").then((m) => ({ default: m.Toaster }))
+);
 import { trackReturnReaderOnce } from "@/lib/telemetry";
 import { JUSTICE, DISRUPTION } from "./lib/prophetic";
 import ErrorBoundary from "./components/ErrorBoundary";
@@ -113,6 +114,8 @@ const Parenting = lazy(() => import("./pages/Parenting"));
 const Doubt = lazy(() => import("./pages/Doubt"));
 const Help = lazy(() => import("./pages/Help"));
 const CarePlan = lazy(() => import("./pages/plans/CarePlan"));
+const PlansIndex = lazy(() => import("./pages/plans/PlansIndex"));
+const CarePage = lazy(() => import("./pages/help/CarePage"));
 const StartHereQuiz = lazy(() => import("./pages/StartHereQuiz"));
 const Privacy = lazy(() => import("./pages/Privacy"));
 const Accessibility = lazy(() => import("./pages/Accessibility"));
@@ -169,6 +172,10 @@ const FamilyDevotionBuilder = lazy(() => import("./pages/tools/FamilyDevotionBui
 const RuleOfLife = lazy(() => import("./pages/tools/RuleOfLife"));
 const BibleOnTopic = lazy(() => import("./pages/tools/BibleOnTopic"));
 const WisdomFinder = lazy(() => import("./pages/tools/WisdomFinder"));
+const WorryJournal = lazy(() => import("./pages/tools/WorryJournal"));
+const PrayerPlanner = lazy(() => import("./pages/tools/PrayerPlanner"));
+const ParentTeenConversation = lazy(() => import("./pages/tools/ParentTeenConversation"));
+const SpiritualGifts = lazy(() => import("./pages/tools/SpiritualGifts"));
 const Proverbs31 = lazy(() => import("./pages/tools/Proverbs31"));
 const BibleReference = lazy(() => import("./pages/tools/BibleReference"));
 const ToolsGlossary = lazy(() => import("./pages/tools/TheologyGlossary"));
@@ -431,6 +438,8 @@ function Router() {
         <Route path="/theology" component={Theology} />
         <Route path="/doubt" component={Doubt} />
         <Route path="/help" component={Help} />
+        <Route path="/help/:slug">{(p) => <CarePage key={p.slug} />}</Route>
+        <Route path="/plans" component={PlansIndex} />
         <Route path="/plans/:slug">{(p) => <CarePlan key={p.slug} />}</Route>
         <Route path="/start" component={StartHereQuiz} />
         <Route path="/start-here" component={ToStartRedirect} />
@@ -594,6 +603,10 @@ function Router() {
         <Route path="/tools/rule-of-life" component={RuleOfLife} />
         <Route path="/tools/bible-on" component={BibleOnTopic} />
         <Route path="/tools/wisdom-finder" component={WisdomFinder} />
+        <Route path="/tools/worry-journal" component={WorryJournal} />
+        <Route path="/tools/prayer-planner" component={PrayerPlanner} />
+        <Route path="/tools/parent-teen-conversation" component={ParentTeenConversation} />
+        <Route path="/tools/spiritual-gifts" component={SpiritualGifts} />
         <Route path="/tools/proverbs-31" component={Proverbs31} />
         <Route path="/tools/bible-says" component={BibleReference} />
         <Route path="/tools/quotes" component={QuoteLibrary} />

@@ -1,0 +1,81 @@
+{
+  "slug": "prayer",
+  "title": "Eight Weeks of Learning to Pray",
+  "subtitle": "An eight week plan from James Bell for the beginner, the curious skeptic, and the believer whose prayer has gone quiet. Five minutes a day, borrowed words, honest complaint, and a rule you can keep.",
+  "intro": "This is an eight week walk for anyone who doesn't know how to pray: the person no one ever taught, the one whose prayers shrank over the years to meals and emergencies and then went quiet, and the one who isn't sure anyone is listening and is curious anyway. You're in good company. The men who lived with Jesus watched him pray and then asked him to teach them. Each week holds one focus, one small daily practice, one thing to read, one tool, and one honest question. The weeks begin with five minutes and a chair, move through the words Jesus gave and the Psalms the church has prayed from the beginning, make room for complaint, for other people's names, and for silence, and end where many people give up, at the prayer that wasn't answered, with a rule small enough to keep.\n\nIt is not a cure for anything, and it is not a substitute for a doctor, a licensed counselor, a pastor, or the people who will pray with you. Walk it imperfectly. A missed week is not failure; you simply pick it back up, and coming back after you've wandered off is much of what a life of prayer looks like anyway. I came to faith from atheism, so if you aren't sure God is there, I won't ask you to pretend. Your check marks stay in this browser, on this device, and nowhere else.",
+  "careNote": "If prayer has gone quiet along with your sleep, your appetite, or your interest in the people you love, or if fear of praying wrongly or of never being forgiven is taking hours of your day, talk with a doctor or a licensed counselor as well as a pastor. In a crisis, call or text 988.",
+  "weeks": [
+    {
+      "n": 1,
+      "focus": "Nobody starts out knowing how",
+      "why": "The disciples had grown up among a praying people, and still, after watching Jesus pray, they felt like beginners and said so: “Lord, teach us to pray” (Luke 11:1). Jesus didn't scold them for asking; he began to teach them. Prayer is learned the way any language is learned, by hearing it and saying it back, clumsily at first, until the words begin to feel like your own. So this week asks only one thing of you, the admission that you're a beginner. If you aren't sure anyone is listening, bring that along too. A desperate father once said to Jesus, “I do believe; help my unbelief!” (Mark 9:24), and Jesus didn't send him away.",
+      "practice": "Once a day, pray the disciples' request from Luke 11:1 as your own, in those same words. Then tell God one true thing about today, in a sentence or two, the way you'd say it to someone who already knows. If you doubt anyone is there, an honest prayer can begin with an if. That's the whole practice this week.",
+      "read": { "label": "How Do You Actually Pray? An essay on why nobody is born knowing how", "href": "/writing/how-do-you-actually-pray" },
+      "tool": { "label": "Luke 11 in the Study Bible, the chapter where the disciples asked, with notes", "href": "/study/bible/luke/11" },
+      "reflection": "If I were sure someone was listening, what would I say first, and what has kept me from saying it?"
+    },
+    {
+      "n": 2,
+      "focus": "A time, a place, and five minutes",
+      "why": "Prayer that has no time and no place tends to happen only in emergencies. Jesus assumed his followers would have somewhere to go, a room with a door they could shut (Matthew 6:6). When Daniel's rivals had a law passed against praying to anyone but the king, he went home to his window and knelt three times a day, “just as he had done before” (Daniel 6:10). The habit was already in place when the crisis came, which is what habits are for. You don't need an hour or a holy room. A chair, the car before you walk into work, or the edge of the bed will do, and five minutes is enough to begin.",
+      "practice": "Choose one time you can keep every day, first thing before the phone or last thing before sleep, and one place. Go there and pray for five minutes, using last week's request and one true sentence if nothing else comes. When your mind wanders, and it will, come back without scolding yourself. If you miss a day, don't lecture yourself; just come back the next day.",
+      "read": { "label": "Why Christians prayed at fixed hours, and how it looks for someone who is not a monk", "href": "/writing/praying-at-fixed-hours" },
+      "tool": { "label": "Psalm 5 in the Study Bible, a prayer for daybreak, with notes", "href": "/study/bible/psalms/5" },
+      "reflection": "When do I actually pray now, and what does that tell me I believe prayer is for?"
+    },
+    {
+      "n": 3,
+      "focus": "The Lord's Prayer, one line at a time",
+      "why": "When the disciples asked to be taught, Jesus didn't hand them a method for making up prayers. He gave them words: “When you pray, say” (Luke 11:2). Many of us learned to distrust borrowed prayers, and not without reason, since Jesus warned against babbling on as though many words would earn a hearing (Matthew 6:7). Yet in Matthew he gives the Lord's Prayer in the very next breath, so the danger was never given words, only the belief that piling them up impresses God. Those of us who lead churches, and I lead one, haven't helped, with long, polished prayers that teach a room that prayer belongs to the gifted. The Lord's Prayer is short and plain, and each line opens onto something you can pray in your own words: God's name, his kingdom, today's bread, the wrong you've done and the wrong done to you, the temptation ahead.",
+      "practice": "Each day, pray the Lord's Prayer slowly from Matthew 6:9-13. Then go back to one line, a different one each day, and pray it again in your own words. At “daily bread,” ask plainly for what you need today. At “forgive us,” name one wrong you've done and one person you need to forgive. If the word Father is hard for you, tell him why. That is a prayer too.",
+      "read": { "label": "The only prayer Jesus taught, walked line by line as if for the first time", "href": "/writing/the-only-prayer-jesus-taught" },
+      "tool": { "label": "Matthew 6 in the Study Bible, the Lord's Prayer in its setting, with notes", "href": "/study/bible/matthew/6" },
+      "reflection": "Which line of the Lord's Prayer comes easily to me, and which do I hurry past, and why?"
+    },
+    {
+      "n": 4,
+      "focus": "The Psalms, the church's oldest prayer book",
+      "why": "The Psalms were Israel's book of prayer and song, and the church has prayed them from its first days. Jesus prayed them too; his cry from the cross in Mark 15:34 is the first line of Psalm 22. They hold every kind of speech a person can bring to God: praise and thanks, confession, fear, rage, bewilderment, and trust. That range is why they teach so well. You begin by praying someone else's words, and over time you find your own growing out of them, which is how every language is learned. These are also God's words, given to you before you knew you'd need them, so borrowing them is not second best.",
+      "practice": "Each day, pray one psalm slowly, aloud if you can. Psalms 23, 51, 103, and 139 are good places to start. When a line is true for you, stop and say it to God in your own words. When a line doesn't fit your day, pray it for someone it does fit, because somewhere today a person is living inside that verse.",
+      "read": { "label": "Praying the words when you have none, on the Psalms as borrowed prayer", "href": "/writing/praying-the-words-when-you-have-none" },
+      "tool": { "label": "The Psalms in the Study Bible, an introduction and all 150 listed by title", "href": "/study/bible/psalms" },
+      "reflection": "What kinds of prayer have I left out of my life because no one ever gave me the words for them?"
+    },
+    {
+      "n": 5,
+      "focus": "Honest prayer: lament and complaint",
+      "why": "Some of the Bible's prayers are complaints. Psalm 13 opens, “How long, O LORD? Will You forget me forever?” and asks how long four times in two verses, and its heading gives it to the choirmaster, so it was meant for Israel's worship. Lament isn't a lapse of faith. It's faith that refuses to lie to God and keeps talking to him anyway. Many of us learned to edit our prayers before we prayed them, trimming away the anger and the disappointment until nothing true was left. The Psalms won't allow that. Psalm 13 turns toward trust by its end, though nothing in David's circumstances has changed, and Psalm 88 never turns at all. Both are in the Bible on purpose.",
+      "practice": "Each day, pray Psalm 13 aloud. Then write your own how long in one or two plain sentences, telling God what has gone on too long, what you're angry about, or what you've stopped expecting. Write it to him, as David did, without tidying it up or hurrying to a happy ending. Close with verse 5 if you can mean it, and if you can't, tell him that instead.",
+      "read": { "label": "How to Practice Lament, on the shape the Psalms give and saying the complaint without softening it", "href": "/how-tos/ss-how-to-practice-lament" },
+      "tool": { "label": "Psalm 13 in the Study Bible, with notes on how its complaint turns to song", "href": "/study/bible/psalms/13" },
+      "reflection": "What have I stopped telling God because I assumed he didn't want to hear it, and who taught me that?"
+    },
+    {
+      "n": 6,
+      "focus": "Praying for others by name",
+      "why": "Prayer that stays on ourselves slowly shrinks, and Scripture keeps turning it outward. On the night Peter would deny him, Jesus told him, “I have prayed for you, Simon, that your faith will not fail” (Luke 22:32). He prayed for one man, by name, knowing exactly what that man was about to do. Praying for someone is a way of loving them that doesn't crowd them, and it changes the one who prays, because you can't carry a person to God day after day without beginning to care about their actual life, their work, their fears, their sick parent. A name said to God each morning is a small, stubborn act of love.",
+      "practice": "Write three to five names on a card and keep it where you pray. Each day, say each name to God and ask for one specific thing for that person's good, not only for the change you'd like to see in them. Before the week ends, ask one of them what they'd like you to pray for, and then pray for exactly that.",
+      "read": { "label": "How to Pray for People Who Do Not Believe, on praying by name and for a person's whole good", "href": "/how-tos/wn-how-to-pray-for-people-who-do-not-believe" },
+      "tool": { "label": "The Prayer Generator, with written prayers for a loved one, for your children, and for the church", "href": "/tools/prayer-generator" },
+      "reflection": "Who do I worry about more than I pray for, and what would change if the worry became their name said to God?"
+    },
+    {
+      "n": 7,
+      "focus": "Silence, attention, and the wandering mind",
+      "why": "Within a minute of starting to pray, most minds are somewhere else: tomorrow's errands, an old argument, the phone in the next room. Our attention has been trained all day to jump, and it doesn't stop at the edge of a prayer. Wandering is simply what untrained attention does, and the practice is to come back, gently, as often as it takes; each return is a small prayer of its own. Silence belongs here too, because prayer is being with God and listening, not only speaking. Psalm 131 pictures a soul stilled “like a weaned child with his mother” (Psalm 131:2), no longer crying to be fed and content simply to be near. That kind of quiet is learned a few minutes at a time.",
+      "practice": "Begin your five minutes by praying Psalm 131, then stay quiet for two minutes. When your mind wanders, come back with one word, Father or Jesus or the name of someone you carry, and don't scold yourself for leaving. Keep a scrap of paper nearby for the errands that surface. Leave the phone in another room until you're done.",
+      "read": { "label": "How to Practice Silence and Solitude, including what to do when your mind riots", "href": "/how-tos/sf-how-to-practice-silence-and-solitude" },
+      "tool": { "label": "Psalm 131 in the Study Bible, three verses on a quieted soul, with notes", "href": "/study/bible/psalms/131" },
+      "reflection": "What do I reach for the moment it gets quiet, and what might I be avoiding by reaching for it?"
+    },
+    {
+      "n": 8,
+      "focus": "Unanswered prayer, and a rule you can keep",
+      "why": "Sooner or later you'll ask for something that matters more than anything, and it won't come. The Bible doesn't hide this. In Gethsemane Jesus asked his Father to take the cup away, then prayed, “Yet not what I will, but what You will” (Mark 14:36). The cup wasn't taken, and on the third day the Father raised him. Paul pleaded three times to be rid of his thorn and was told that grace would be enough (2 Corinthians 12:8-9). No amount of faith obligates God to give what we ask. Jesus told a parable so that his followers would “pray at all times and not lose heart” (Luke 18:1), and a small rule of prayer is how ordinary people keep from losing heart. It holds you through the weeks when prayer seems to change nothing, which is exactly what it's for.",
+      "practice": "Write your rule of prayer on one card: when and where you'll pray, for how long, and the two or three practices from these weeks that helped most, whether the Lord's Prayer, a psalm, your list of names, or two minutes of silence. Add the one request you're still waiting on, and keep bringing it. Make the rule small enough for your worst week, and show the card to one person who will ask you about it.",
+      "read": { "label": "What Do You Do When God Does Not Answer Prayer? On the long wait, and a silence that is not absence", "href": "/life/waiting-and-unanswered-prayer" },
+      "tool": { "label": "The Rule of Life builder, to choose a few practices you can copy and keep", "href": "/tools/rule-of-life" },
+      "reflection": "Which of these practices will I keep on the weeks when prayer seems to change nothing, and who will help me keep them?"
+    }
+  ]
+}

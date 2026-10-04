@@ -1,9 +1,9 @@
 import { useMemo } from "react";
 import { Link } from "wouter";
-import { ArrowRight } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { StatementBand, SectionArt } from "@/components/EditorialBlocks";
+import { EditorialIndex } from "@/components/editorial/EditorialIndex";
 import ToolStrip from "@/components/ToolStrip";
 import { trpc } from "@/lib/trpc";
 import {
@@ -59,7 +59,7 @@ export default function LivingWell() {
       />
 
       {/* HERO */}
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-7) var(--s-4) var(--s-6)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-7) var(--s-4) var(--s-6)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
             Formation · Pillar Six
@@ -97,38 +97,23 @@ export default function LivingWell() {
       {/* SUB-THEMES */}
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
         <div style={wrap}>
-          <div style={{ display: "grid", gap: "20px" }}>
-            {SUBTHEMES.map((s) => (
-              <Link
-                key={s.slug}
-                href={`${pillarUrl(PILLAR.slug)}&subTheme=${s.slug}`}
-                style={{
-                  display: "block",
-                  background: "var(--card)",
-                  border: "1px solid var(--border)",
-                  borderLeft: "3px solid var(--mustard)",
-                  borderRadius: "var(--radius-sm)",
-                  padding: "24px 28px",
-                  textDecoration: "none",
-                }}
-              >
-                <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", gap: "16px" }}>
-                  <h2 style={{ fontFamily: "var(--F)", fontSize: "24px", fontWeight: 500, letterSpacing: "-0.01em", color: "var(--ink)" }}>
-                    {s.label}
-                  </h2>
-                  <div style={{ display: "flex", alignItems: "center", gap: "12px", flexShrink: 0 }}>
-                    <span style={{ fontFamily: "var(--U)", fontSize: "12px", color: "var(--ink-muted)", whiteSpace: "nowrap" }}>
-                      {perSub[s.slug] ?? 0} {perSub[s.slug] === 1 ? "essay" : "essays"}
-                    </span>
-                    <ArrowRight size={18} aria-hidden style={{ color: "var(--ink-muted)" }} />
-                  </div>
-                </div>
-                <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.6, color: "var(--ink-muted)", marginTop: "10px" }}>
-                  {s.blurb}
-                </p>
-              </Link>
-            ))}
-          </div>
+          {/* The seven sub-doors as one index; each title stays an h2, as
+              before. The count shows once the essays have loaded, so a
+              loading page never claims a sub-theme is empty. */}
+          <EditorialIndex
+            columns={1}
+            headingAs="h2"
+            label="Sub-themes"
+            items={SUBTHEMES.map((s) => {
+              const n = perSub[s.slug] ?? 0;
+              return {
+                href: `${pillarUrl(PILLAR.slug)}&subTheme=${s.slug}`,
+                title: s.label,
+                dek: s.blurb,
+                meta: postsQuery.data ? <span>{n} {n === 1 ? "essay" : "essays"}</span> : undefined,
+              };
+            })}
+          />
 
           <SectionArt seed="living-well-pillar-six" />
 

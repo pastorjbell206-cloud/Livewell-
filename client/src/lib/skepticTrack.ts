@@ -49,7 +49,7 @@ export const SKEPTIC_STOPS: SkepticStop[] = [
     slug: "why-trust-the-bible",
     title: "5. The Bible without the marketing.",
     pitch:
-      "Inerrancy is a fairly recent dogma. Inspiration is older. Read Scripture the way Christians have actually read it.",
+      "Where the Bible came from, what the manuscripts show, and why Christians trust it, with the hard questions left in.",
   },
   {
     slug: "can-you-be-good-without-god",

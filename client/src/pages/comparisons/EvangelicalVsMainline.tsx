@@ -56,7 +56,7 @@ const SHARED_GROUND = [
 ];
 
 const RELATED_ARTICLES = [
-  { title: "The Evangelical Movement", href: "/theology/history/the-awakenings" },
+  { title: "The Missionary Century", href: "/theology/history/the-missionary-century" },
   { title: "The Mainline Protestant Collapse", href: "/writing/the-numbers-behind-the-decline" },
   { title: "The Social Gospel and Its Critics", href: "/writing/when-justice-becomes-a-gospel" },
   { title: "The Fundamentalist-Modernist Controversy", href: "/theology/history" },

@@ -11,6 +11,7 @@
  * does not render, and the page's own curated content still stands.
  */
 import { useEffect, useState } from "react";
+import { EditorialIndex } from "@/components/editorial/EditorialIndex";
 import { Link } from "wouter";
 import { fetchStaticCatalog, type CatalogItem } from "@/lib/catalog";
 import { matchesSubject, type Subject } from "@/lib/subjects";
@@ -30,16 +31,6 @@ function groupFor(item: CatalogItem): Group | null {
   if (t.includes("essay") || t.includes("article") || t.includes("guide") || t.includes("domain")) return "Read";
   return "Read";
 }
-
-const card = {
-  display: "block",
-  textDecoration: "none",
-  color: "inherit",
-  background: "var(--card)",
-  border: "1px solid var(--border)",
-  borderRadius: "var(--radius-sm)",
-  padding: "14px 16px",
-} as const;
 
 export default function SubjectShelf({
   subject,
@@ -125,45 +116,18 @@ export default function SubjectShelf({
                 {g}
                 <span style={{ color: "var(--ink-muted)", fontWeight: 500 }}>{`  ${list.length}`}</span>
               </h3>
-              <div
-                style={{
-                  display: "grid",
-                  gridTemplateColumns: "repeat(auto-fill, minmax(min(300px, 100%), 1fr))",
-                  gap: "12px",
-                }}
-              >
-                {visible.map((it) => (
-                  <Link key={it.href} href={it.href} style={card}>
-                    <div
-                      style={{
-                        fontFamily: "var(--F)",
-                        fontSize: "17px",
-                        fontWeight: 500,
-                        color: "var(--ink)",
-                        lineHeight: 1.25,
-                        marginBottom: it.blurb ? "6px" : 0,
-                      }}
-                    >
-                      {it.title}
-                    </div>
-                    {it.blurb && (
-                      <p
-                        style={{
-                          fontFamily: "var(--B)",
-                          fontSize: "13.5px",
-                          lineHeight: 1.55,
-                          color: "var(--ink-muted)",
-                          margin: 0,
-                        }}
-                      >
-                        {it.blurb.length > 130 ? `${it.blurb.slice(0, 129).trimEnd()}…` : it.blurb}
-                      </p>
-                    )}
-                  </Link>
-                ))}
-              </div>
+              <EditorialIndex
+                compact
+                headingAs="h4"
+                label={g}
+                items={visible.map((it) => ({
+                  href: it.href,
+                  title: it.title,
+                  dek: it.blurb ? (it.blurb.length > 180 ? `${it.blurb.slice(0, 179).trimEnd()}…` : it.blurb) : null,
+                }))}
+              />
               {list.length > visible.length && (
-                <p style={{ fontFamily: "var(--B)", fontSize: "13px", color: "var(--ink-muted)", marginTop: "10px" }}>
+                <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "var(--ink-muted)", marginTop: "14px" }}>
                   {`and ${list.length - visible.length} more — `}
                   <Link href="/explore" style={{ color: "var(--mustard-text)", fontWeight: 600 }}>
                     search the whole library

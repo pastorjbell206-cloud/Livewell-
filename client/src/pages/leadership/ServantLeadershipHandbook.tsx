@@ -58,7 +58,7 @@ export default function ServantLeadershipHandbook() {
 
       {!chapters ? (
         <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4)", minHeight: "40vh" }}>
-          <div style={prose}><p style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }}>Loading the handbook…</p></div>
+          <div style={prose}><p style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }} role="status">Loading the handbook…</p></div>
         </section>
       ) : (
         <>

@@ -335,8 +335,14 @@ export default function RuleOfLife() {
           <div style={{ marginTop: "var(--s-5)", borderTop: "1px solid rgba(20,17,12,0.1)", paddingTop: "var(--s-3)", display: "flex", gap: "var(--s-4)", flexWrap: "wrap" }}>
             <Link href="/life/discipleship-following-jesus" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>Read: Discipleship</Link>
             <Link href="/life/rest-and-the-sabbath" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>Read: Rest and the Sabbath</Link>
-            <Link href="/disciple-making" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>Make disciples</Link>
+            <Link href="/how-tos?topic=discipleship" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>How-tos for making disciples</Link>
           </div>
+          <p className="no-print" style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink)", margin: "var(--s-3) 0 0" }}>
+            Rather keep it on paper, in your Bible? Print a one-page rule of life:{" "}
+            <a href="/downloads/tools/rule-of-life-letter.pdf" style={{ color: "var(--mustard-text)", fontWeight: 600 }}>US Letter</a>
+            {" · "}
+            <a href="/downloads/tools/rule-of-life-a4.pdf" style={{ color: "var(--mustard-text)", fontWeight: 600 }}>A4</a> (PDF).
+          </p>
         </div>
       </section>
 
@@ -345,10 +351,10 @@ export default function RuleOfLife() {
         <div style={{ maxWidth: "680px", margin: "0 auto", textAlign: "center" }}>
           <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "16px" }}>GO DEEPER</p>
           <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.75, color: "var(--ink)", maxWidth: "56ch", margin: "0 auto 22px" }}>
-            This builder has a book behind it. <em>Rule of Life: The Ancient Art of Forming a Soul in an Age Built to Deform It</em> — the same trellis, at full depth.
+            This builder has a guide beside it. <em>How to Build a Rule of Life</em> walks the same trellis in prose: start honest, build small, write it down, and revisit it with the seasons.
           </p>
           <div style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
-            <a href="/rule-of-life" style={{ display: "inline-block", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--bone)", background: "var(--ink)", padding: "12px 22px", borderRadius: "3px", textDecoration: "none" }}>Read about the book</a>
+            <a href="/how-tos/sf-how-to-build-a-rule-of-life" style={{ display: "inline-block", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--bone)", background: "var(--ink)", padding: "12px 22px", borderRadius: "3px", textDecoration: "none" }}>Read the guide</a>
           </div>
         </div>
       </section>

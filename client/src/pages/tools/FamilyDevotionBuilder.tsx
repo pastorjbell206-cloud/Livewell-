@@ -12,6 +12,7 @@
  * default entry — the series is an invitation after the first devotion.
  */
 import Layout from "@/components/Layout";
+import { scrollBehavior } from "@/lib/motion";
 import { SEOMeta } from "@/components/SEOMeta";
 import { useEffect, useRef, useState } from "react";
 import { Users, Copy, Check, RotateCcw, BookOpen, MessageCircle, Hand, HeartHandshake } from "lucide-react";
@@ -805,7 +806,7 @@ export default function FamilyDevotionBuilder() {
   const [scrollPending, setScrollPending] = useState(false);
   useEffect(() => {
     if (scrollPending && outputRef.current) {
-      outputRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+      outputRef.current.scrollIntoView({ behavior: scrollBehavior(), block: "start" });
       setScrollPending(false);
     }
   }, [scrollPending]);

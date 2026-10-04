@@ -1,0 +1,81 @@
+{
+  "slug": "work-burnout",
+  "title": "Eight Weeks of Learning to Stop",
+  "subtitle": "An eight week plan from James Bell for when work has taken more than it should. Sleep, a workday that ends, worth you don't have to earn, a day of rest, an honest look at the job, and a rhythm you can keep.",
+  "intro": "This is an eight week plan for the person whose tiredness a weekend no longer fixes, who wakes already dreading the day, checks the inbox one last time before bed, and can't remember when work last felt like anything but weight. Each week holds one focus, one small daily practice, one thing to read, one tool to use, and one honest question. It moves slowly on purpose. It begins by naming what kind of tired this is and caring for the body, then goes underneath, to why stopping feels impossible and what we've asked work to prove about us. It ends with a day of rest, an honest look at the job, work as a calling rather than an identity, and a rhythm you can keep. What many people call burnout is not laziness or a failure of faith; it's the cost of a load carried too long without relief.\n\nIt isn't a cure, and it isn't a substitute for a doctor, a licensed counselor, a pastor, or the people who know you. I'm a pastor, not a physician, and nothing here is medical, legal, or financial advice. If the exhaustion has gone on for weeks, or the heaviness has followed you home, see a doctor; the first week will ask you to make that call. If you've had any thoughts of ending your life, call or text 988 now, before anything else on this page. Walk the plan imperfectly. A missed week is not failure; you just pick it back up. Some weeks the only practice you'll manage is going to bed on time, and that counts.",
+  "careNote": "See a doctor if weeks of rest haven't lifted the exhaustion, if the heaviness has reached beyond work, or if you're drinking or using something to get through; SAMHSA's helpline on the Find Help page can point you to treatment, and a licensed counselor can help you see why stopping is so hard. In a crisis, call or text 988, or call 911 if you're in immediate danger.",
+  "weeks": [
+    {
+      "n": 1,
+      "focus": "Naming what kind of tired this is",
+      "why": "It helps to know which kind of tired you're carrying before you decide what to do about it. The ordinary kind comes from a hard week and goes away with sleep and a real day off. What many people call burnout is the tired that rest no longer reaches, often with a growing coldness toward a job you once cared about and a sense that you can't do it well anymore. Depression can look much the same, but it reaches well past work. If the heaviness has followed you home, into evenings and weekends and the things you used to enjoy, and it has stayed most of the day, nearly every day, for two weeks or more, let a doctor look at it. Long exhaustion can have physical causes too. This is hard to see clearly from the inside, and you don't have to see it alone.",
+      "practice": "Each evening, write one line: how you slept, how much energy you had, and whether the heaviness stayed at work or came home with you. Before the week ends, book a visit with your doctor, or with a clinic if you have no regular doctor, and bring those lines with you. And tell one person you trust that you're more worn out than you've been letting on.",
+      "read": { "label": "I feel empty, and I don't know why, the care page to read if the heaviness has followed you home", "href": "/help/empty" },
+      "tool": { "label": "The Emotional Health Self-Check, fifteen questions on rest, limits, and the inner life, including whether you can stop at the end of a workday", "href": "/tools/emotional-health" },
+      "reflection": "Does this tiredness stay at work, or has it followed me into nearly everything, and who besides me has looked at it?"
+    },
+    {
+      "n": 2,
+      "focus": "Sleep and the body first",
+      "why": "Start with the body, which has been carrying this longer than anyone noticed. Months of short nights will tell you that everything is urgent and nothing matters, and it's hard to think clearly about a job, or about God, from inside that fog. A psalm that bears Solomon's name calls it vain to rise early and stay up late toiling, \"for He gives sleep to His beloved\" (Psalm 127:2). Every night's sleep is a creature's admission that it isn't holding the world up, and Jesus slept in the stern of a boat while the storm went on (Mark 4:38). If a drink or a pill has become how you get to sleep, tell your doctor: stopping alcohol or some prescription sedatives suddenly can be dangerous, and a doctor can help you stop safely. SAMHSA's helpline on the Find Help page can also point you to treatment.",
+      "practice": "Each night this week, go to bed at the same hour, with your phone charging in another room, and give the half hour before it to something slow: a book, a conversation, a prayer. Each day, eat one real meal sitting down and get outside for a short walk in daylight, even ten minutes. If sleep still won't come, tell the doctor you called in week one.",
+      "read": { "label": "How to Sleep Like a Creature Who Trusts God, on Psalm 127, a bedtime for your phone, and when to see a doctor", "href": "/how-tos/body-how-to-sleep-like-a-creature" },
+      "tool": { "label": "The Prayer Generator, with evening prayers for handing the day back to God before you sleep", "href": "/tools/prayer-generator" },
+      "reflection": "What have I been trading sleep for, and what has the trade actually bought me?"
+    },
+    {
+      "n": 3,
+      "focus": "A workday that ends",
+      "why": "For many of us, work no longer stays at work. It rides home in a pocket, sits at the dinner table, and goes to bed with us, and even on a quiet evening some part of the mind stays at its post, waiting for the next message. The Teacher of Ecclesiastes wrote of a man whose work filled his days with grief, so that \"even at night, his mind does not rest\" (Ecclesiastes 2:23). The phone has made his kind of evening ordinary. Some jobs do need you reachable, and if yours is one, settle with your manager what truly can't wait. On most evenings, though, nothing will arrive that can't be answered in the morning. A day that never ends is a day you can never rest from.",
+      "practice": "Choose a time when work ends each day and keep it. At that time, write down tomorrow's first task, close the laptop, and turn off work notifications until morning. If something truly can't wait, decide ahead what counts and let everything else sit. At bedtime, if the work is still running in your head, give it five minutes on paper and leave it there.",
+      "read": { "label": "How to Build Rhythms of Work and Rest, on giving the workday a hard edge when the phone never stops", "href": "/how-tos/body-how-to-rhythms-of-work-and-rest" },
+      "tool": { "label": "The Worry Journal, five minutes before bed to write down what's yours to do tomorrow and hand the rest to God", "href": "/tools/worry-journal" },
+      "reflection": "What am I afraid will happen if I'm unreachable for one evening, and how often has it actually happened?"
+    },
+    {
+      "n": 4,
+      "focus": "What your work was never meant to prove",
+      "why": "Beneath much of this exhaustion sits a question older than any job: what is a person worth, and who decides? We ask strangers what they do before anything else, and slowly the job starts to sound like a ruling on the person: a mistake lands like a judgment, and an evening off feels like falling behind. Jesus told of an older son who stayed home and worked while his brother squandered everything, and who summed up his life to his father as \"all these years I have served you\" (Luke 15:29). The Gospel's word for served is the verb for a slave's labor. He lived in his father's house as if he had to earn a place in it. The father's answer is for everyone who works that way: \"Son, you are always with me ... and all that is mine is yours\" (Luke 15:31).",
+      "practice": "Each morning this week, read Luke 15:25-32 slowly before you open your email or your messages. Each evening, write one line about a moment that day when your sense of worth rose or fell with your work (a meeting, a mistake, a word of praise), and set the father's words beside it.",
+      "read": { "label": "Why Do We Measure Ourselves by Success and Failure? On being loved before the first outcome", "href": "/life/success-and-failure" },
+      "tool": { "label": "Luke 15 in the Study Bible, with notes on the father who goes out to plead with the older son", "href": "/study/bible/luke/15" },
+      "reflection": "Where did I learn that I had to earn my place, and is that voice telling me the truth about God?"
+    },
+    {
+      "n": 5,
+      "focus": "The Sabbath, a rest for free people",
+      "why": "Scripture gives the Ten Commandments twice, and the two tellings ground the Sabbath in different reasons. In Exodus the command looks back to creation, when God rested on the seventh day (Exodus 20:11). In Deuteronomy it looks back to Egypt: \"Remember that you were a slave in the land of Egypt\" (Deuteronomy 5:15). A slave rests only when the master allows it. This command gave a freed people a day no master could take, and it reached their servants and the foreigners among them too (Deuteronomy 5:14). It was a mark of freedom, not a prize for finishing. Faithful Christians answer differently which day it falls on and how the command applies now; the care page that goes with this plan sets their views side by side. You don't need to settle that to receive the gift this week.",
+      "practice": "Choose a stretch of time this week to stop, a whole day if your work allows it, or a few protected hours if you work shifts or hold two jobs. Leave the work, the inbox, and the catching up alone. Fill the time with worship, sleep, a meal with people you love, a walk outside. When work thoughts come, write them down for later and go back to resting.",
+      "read": { "label": "What Is Sabbath Rest, and How Do You Keep It? On rest as gift and as freedom, and where Christians differ", "href": "/life/rest-and-the-sabbath" },
+      "tool": { "label": "I'm burned out at work, the care page, whose questions at the end set out how Christians differ on the Sabbath", "href": "/help/work-burnout" },
+      "reflection": "What would fall apart if I stopped for a day, and who do I believe is holding it up?"
+    },
+    {
+      "n": 6,
+      "focus": "An honest look at the job",
+      "why": "Part of this weight may come from inside you, and part from a job that would exhaust anyone. Usually it's some of each, and it helps to tell them apart. When Moses sat from morning to evening settling the people's disputes, his father-in-law warned him, \"the task is too heavy for you. You cannot handle it alone\" (Exodus 18:18), and helped him share it. Scripture puts the blame for an unjust load where it belongs. The law required that a poor hired hand be paid before sunset, \"because he is poor and depends on them\" (Deuteronomy 24:15), and in the letter of James, withheld wages cry out and the harvesters' cries reach the Lord (James 5:4). For many people quitting isn't a simple option; the rent, the insurance, and the children are real. Unless the work is unsafe or abusive, don't decide to leave in your most exhausted week.",
+      "practice": "Each day, add a line to two lists: what the job truly requires, and what you've piled on yourself, such as evenings no one asked for or the need to be irreplaceable. Before the week ends, ask your manager for one conversation about the load, or, if that feels unsafe, go first to human resources or a colleague you trust. If you're thinking about leaving, decide with the people it will affect and with someone who can help you read the numbers, since nothing here is financial advice.",
+      "read": { "label": "How do I know what God wants me to do? The care page for a decision like whether to stay in a job", "href": "/help/decisions" },
+      "tool": { "label": "The Life Audit, twenty-four questions across eight areas of life, from marriage to the body to work, naming what is strong and what is slipping", "href": "/tools/life-audit" },
+      "reflection": "Is this a season that will pass or a job that won't change, and which part of the weight did I pick up myself?"
+    },
+    {
+      "n": 7,
+      "focus": "Work as a calling, not an identity",
+      "why": "Work is older than the curse. God set the man in Eden \"to cultivate and keep it\" (Genesis 2:15) before anything had gone wrong, and good work, done well, is still a way of loving God and your neighbor. But a calling and an identity are different things. A calling is received and can be set down at night; an identity has to be defended every day and never lets you rest. Pastors and church staff are often the worst at rest for exactly this reason: when the work is about God, overwork can pass for devotion. I'm a pastor, so I write this from inside it. When the seventy-two came back rejoicing that even demons submitted to them, Jesus said, \"do not rejoice that the spirits submit to you, but rejoice that your names are written in heaven\" (Luke 10:20).",
+      "practice": "Each morning before work, pray one sentence offering the day's work to God as his, not as proof of you. Each evening, name one good your work did for someone else and leave the rest of the scoreboard alone. If you're a pastor or work for a church, tell one elder or board member this week how tired you really are, and ask them to hold you to your day off.",
+      "read": { "label": "How to Discern Your Calling, on the call to belong to God that comes before any job", "href": "/how-tos/wm-how-to-discern-your-calling" },
+      "tool": { "label": "Pastoral Health, a five-session study for a church board to read alongside the pastor it wants to keep", "href": "/studyguides/pastoral-health" },
+      "reflection": "If my job ended tomorrow, what would still be true about who I am?"
+    },
+    {
+      "n": 8,
+      "focus": "A rhythm you can keep",
+      "why": "A week away can refill you, but it can't change what you come back to. If Monday brings the old load and you bring the old need to prove yourself, the exhaustion will be there waiting. What lasts is a rhythm: a time each day when work ends, a stretch each week when you stop, and time away each year that you actually take. Jesus kept one under more demand than most of us will ever face. As the crowds grew, \"He frequently withdrew to the wilderness to pray\" (Luke 5:16), and when his apostles had no time even to eat, he took them away to rest (Mark 6:31-32). Nobody keeps a rhythm perfectly. You keep returning to it, the way the weary keep coming back to the one who said, \"Come to Me, all you who are weary and burdened, and I will give you rest\" (Matthew 11:28).",
+      "practice": "Write three lines on a card: the time your workday ends, the stretch of rest you'll keep each week, and the name of one person who will ask you about both. Add the one practice from these weeks that helped most. Put the card where you'll see it each morning, and put your next days off on the calendar now.",
+      "read": { "label": "How to Build a Rule of Life, on starting with practices so small you're almost embarrassed by them", "href": "/how-tos/sf-how-to-build-a-rule-of-life" },
+      "tool": { "label": "The Rule of Life Builder, to settle on a bedtime, a guardrail on screens, and a weekly day of rest you can keep", "href": "/tools/rule-of-life" },
+      "reflection": "Who will notice if I slide back into the old pace, and have I given them permission to say so?"
+    }
+  ]
+}

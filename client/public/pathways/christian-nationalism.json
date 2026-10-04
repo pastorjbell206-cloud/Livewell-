@@ -1,7 +1,7 @@
 {
   "slug": "christian-nationalism",
   "title": "Faith and the Flag",
-  "subtitle": "When the cross gets conscripted — four essays, a study, and a book.",
+  "subtitle": "When the cross gets conscripted: four essays, a study, and a book.",
   "forWhom": "For the reader in a church that has started to sound like a campaign, and for the one who suspects their own side is not innocent either.",
   "movements": [
     {
@@ -15,8 +15,8 @@
           "blurb": "The whole diagnosis first: two captivities, right and left, and the older faith underneath both."
         },
         {
-          "label": "When God Bless America Replaces Thy Kingdom Come",
-          "href": "/writing/when-god-bless-america-replaces-thy-kingdom-come",
+          "label": "Can You Pledge Allegiance to Two Kingdoms?",
+          "href": "/writing/two-kingdoms-one-pledge",
           "blurb": "How patriotism became the practical savior of American Christianity."
         },
         {
@@ -30,9 +30,9 @@
           "blurb": "How comfort learned to call itself a cross."
         },
         {
-          "label": "Can You Pledge Allegiance to Two Kingdoms?",
-          "href": "/writing/two-kingdoms-one-pledge",
-          "blurb": "What allegiance to a crucified King costs when the nation asks first."
+          "label": "Was America Ever Really a Christian Nation?",
+          "href": "/writing/nostalgia-is-not-the-kingdom",
+          "blurb": "The longing for a lost Christian America feels like faith and works like idolatry. It is the mirror image of the progressive worship of the future, a moment on the calendar mistaken for the kingdom of God."
         }
       ]
     },
@@ -50,13 +50,13 @@
     },
     {
       "kind": "book",
-      "heading": "Then read the book, free",
+      "heading": "Then work it through",
       "note": "The Captive Church follows the one temptation Jesus refused in the wilderness through Constantine, the denarius, and the flag on the platform. Read it free.",
       "items": [
         {
-          "label": "The Captive Church — read free",
-          "href": "/read/the-captive-church",
-          "blurb": "Ten chapters on nationalism, empire, and the cost of cultural Christianity. The complete book, free."
+          "label": "When God Bless America Replaces Thy Kingdom Come",
+          "href": "/books/when-god-bless-america",
+          "blurb": "The book James wrote on the flag and the kingdom, and what the church traded for a seat at the table."
         },
         {
           "label": "Find James's books in the bookstore",

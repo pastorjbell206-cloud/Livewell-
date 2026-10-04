@@ -140,8 +140,8 @@ const STATIC_PAGES = [
   },
   {
     path: "/diagnostic",
-    title: "Diagnostic — Where are you with God right now?",
-    description: "Eight questions across four dimensions. Honest answers. A specific essay, a book, and an email track for what to do next.",
+    title: "Where Are You With God Right Now? An Honest Self-Check",
+    description: "Eight questions in four areas, for reflection, not a test: how you treat people, handle doubt, work and rest, and pray. Your answers stay on your device.",
     type: "website",
   },
   // ── Shared-component routes (NationEssay slug=…, Prophetic* config=…,
@@ -423,6 +423,31 @@ function extractReadableText(obj, acc = [], depth = 0) {
   return acc;
 }
 
+/** Some essay bodies are stored as simple HTML (the post-Christian series;
+ *  the client converts them with client/src/lib/htmlToMarkdown.ts). Treated
+ *  as Markdown they would be escaped into one paragraph of visible tags, so
+ *  they pass through here instead, reduced to an allow-list of prose tags
+ *  with no attributes except a safe href. */
+const HTML_BODY_HINT = /<\/?(p|h[1-6]|em|strong|blockquote|ul|ol|li|br|a)\b[^>]*>/i;
+function isHtmlBody(s) {
+  return HTML_BODY_HINT.test(String(s ?? ""));
+}
+function safeProseHtml(html) {
+  const ALLOWED = new Set(["p", "h2", "h3", "h4", "em", "strong", "b", "i", "blockquote", "ul", "ol", "li", "a", "br", "hr"]);
+  return String(html)
+    .replace(/<(script|style|iframe|object|embed)\b[\s\S]*?<\/\1>/gi, "")
+    .replace(/<(\/?)([a-z0-9]+)\b([^>]*)>/gi, (m, close, tag, attrs) => {
+      const t = tag.toLowerCase();
+      const level = t === "h1" ? "h2" : t; // h1 is reserved for the title
+      if (!ALLOWED.has(level)) return "";
+      if (level === "a" && !close) {
+        const href = (attrs.match(/href="([^"]*)"/i) || [])[1] || "";
+        return /^(https?:|\/|#|mailto:)/i.test(href) ? `<a href="${href}">` : "<a>";
+      }
+      return `<${close}${level}>`;
+    });
+}
+
 /** Build the crawlable <article> body block for #root. */
 function renderArticleBody({ title, subtitle, contentHtml, sectionLabel }) {
   const parts = [
@@ -445,7 +470,7 @@ function renderArticleBody({ title, subtitle, contentHtml, sectionLabel }) {
 function bodyFromContent({ title, subtitle, sectionLabel, markdown, contentObj }) {
   let contentHtml = "";
   if (markdown) {
-    contentHtml = mdToHtml(markdown);
+    contentHtml = isHtmlBody(markdown) ? safeProseHtml(markdown) : mdToHtml(markdown);
   } else if (contentObj) {
     const paras = extractReadableText(contentObj);
     contentHtml = paras.map((p) => mdToHtml(p)).filter(Boolean).join("\n");
@@ -455,7 +480,7 @@ function bodyFromContent({ title, subtitle, sectionLabel, markdown, contentObj }
 }
 
 function articleSchema(post, url, image) {
-  const bodyText = markdownToPlainText(post.body);
+  const bodyText = markdownToPlainText(isHtmlBody(post.body) ? String(post.body).replace(/<[^>]+>/g, " ") : post.body);
   return {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -528,6 +553,7 @@ const SECTION_BY_ROUTE = {
   "/justice/topic/": { name: "Prophetic Justice", path: "/justice" },
   "/disruption/topic/": { name: "Prophetic Disruption", path: "/disruption" },
   "/wisdom/": { name: "Wisdom", path: "/wisdom" },
+  "/help/": { name: "Find Help", path: "/help" },
 };
 
 // ---------------------------------------------------------------------------
@@ -965,7 +991,7 @@ async function main() {
     { file: "client/public/studyguides/index.json", key: "guides", route: "/studyguides/", ogPrefix: "studyguides", desc: "blurb", contentDir: "client/public/studyguides" },
     { file: "client/public/howtos/index.json", key: "articles", route: "/how-tos/", ogPrefix: "howtos", desc: "excerpt", contentDir: "client/public/howtos/a" },
     { file: "client/public/plans/plans-index.json", key: "plans", route: "/plans/", ogPrefix: "plans", desc: "blurb", contentDir: "client/public/plans" },
-    // The 50 contested-doctrine pages (/theology/doctrine/:slug) — manifest
+    // The contested-doctrine pages (/theology/doctrine/:slug) — manifest
     // from scripts/build-theology-index.mjs; subtitle is the description.
     { file: "client/public/theology/index.json", key: "docs", route: "/theology/doctrine/", ogPrefix: "theology-doctrine", desc: "subtitle" },
     // Sermon series for all 66 books of the Bible. The manifest keys the entry
@@ -984,6 +1010,17 @@ async function main() {
     // table extractor skips them by design and only a manifest pass reaches
     // them; the sitemap has listed both families all along.
     { file: "client/public/pathways/index.json", route: "/pathways/", ogPrefix: "pathways", desc: "subtitle" },
+    // Find Help care pages (/help/:slug) from the needs registry
+    // (scripts/build-needs-index.mjs). Only needs with a written page are
+    // routes; starter entries live on /help itself. The head carries the
+    // search title, not the reader's-words H1, plus the FAQ as structured
+    // data; registry and review fields stay out of the crawlable body.
+    {
+      file: "client/public/needs/index.json", key: "needs", route: "/help/", ogPrefix: "help", desc: "description",
+      contentDir: "client/public/needs", titleField: "seoTitle", preferTitleField: true, faq: true,
+      filter: (e) => e.page === true,
+      omitKeys: ["slug", "page", "rank", "seoTitle", "description", "summary", "askedAs", "states", "sensitivity", "crisisTopics", "kit", "related", "slots", "sources", "reviewed"],
+    },
   ];
   let withBody = 0;
   for (const src of LIBRARY_SOURCES) {
@@ -994,10 +1031,11 @@ async function main() {
     // Most manifests are `{ key: [...] }`; a couple (pathways) are a bare array.
     const entries = Array.isArray(data) ? data : data[src.key] || [];
     for (const e of entries) {
+      if (src.filter && !src.filter(e)) continue;
       // Most manifests key by slug/title; a few (e.g. the whole-Bible sermons)
       // key by id/name, so allow a per-source field alias.
       const slug = e.slug || (src.slugField ? e[src.slugField] : undefined);
-      const rawTitle = e.title || (src.titleField ? e[src.titleField] : undefined);
+      const rawTitle = (src.preferTitleField && e[src.titleField]) || e.title || (src.titleField ? e[src.titleField] : undefined);
       if (!slug || !rawTitle) continue;
       const title = src.titleTemplate ? src.titleTemplate.replace(/\{title\}/g, rawTitle) : rawTitle;
       const url = `${SITE_URL}${src.route}${slug}`;
@@ -1018,6 +1056,8 @@ async function main() {
           catch { /* leave head-only */ }
         }
       }
+      const faqEntries = src.faq && Array.isArray(contentObj?.faq) ? contentObj.faq : [];
+      if (contentObj && src.omitKeys) for (const k of src.omitKeys) delete contentObj[k];
       // Books get a subtitle-enriched <title> (matching the client SEOMeta) and
       // a Book JSON-LD carrying every chapter as a hasPart node, so search can
       // deep-link the exact chapter that answers a reader's question.
@@ -1028,6 +1068,17 @@ async function main() {
       if (section) crumbs.push(section);
       crumbs.push({ name: title, path: `${src.route}${slug}` });
       const schemas = [breadcrumbSchema(crumbs)];
+      if (faqEntries.length) {
+        schemas.push({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqEntries.map((f) => ({
+            "@type": "Question",
+            name: f.q,
+            acceptedAnswer: { "@type": "Answer", text: String(f.a).replace(/[*_]/g, "") },
+          })),
+        });
+      }
       if (src.type === "book") {
         const chapters = Array.isArray(contentObj?.chapters) ? contentObj.chapters : [];
         schemas.push({

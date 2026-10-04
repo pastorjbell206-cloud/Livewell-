@@ -1,0 +1,81 @@
+{
+  "slug": "divorce",
+  "title": "Eight Weeks Toward a Life After Divorce",
+  "subtitle": "An eight-week plan from James Bell for the one whose marriage has ended or is ending. Safety first, then grief, shame, the children, anger and forgiveness, and a future the ending does not name.",
+  "intro": "This is an eight-week walk for the person whose marriage has ended or is ending, whether you were left, did the leaving, or both of you finally stopped pretending. Each week holds one focus, one small daily practice, one thing to read, one tool to use, and one honest question. It moves slowly on purpose. It starts with safety and the first numb days, then moves through the losses, the shame that can make church hard to face, the children, anger and forgiveness, the quiet house, and the money and paperwork, and it ends with a future the ending doesn't get to name. If your spouse or former spouse frightens you, read week one before anything else. Being divorced doesn't make you a second-class Christian, and nothing here will ask you to pretend it didn't matter.\n\nIt is not a cure, and it is not a substitute for a doctor, a licensed counselor, a pastor, a family lawyer, or the people who will stay with you through this. I'm a pastor, and nothing here is legal, financial, or medical advice. Walk it imperfectly. A missed week is not failure; you just pick it back up. Some weeks the question will be all you can manage, and that counts. Your check marks are saved only in this browser, so if someone who frightens you can see this phone or computer, use one they can't reach.",
+  "careNote": "If you haven't slept, eaten, or worked normally for more than two weeks, see a doctor or a licensed counselor, and for a child who is struggling, start with the pediatrician or school counselor. If you are afraid of your spouse or former spouse, the Find Help page lists the Domestic Violence Hotline; in a crisis, call or text 988.",
+  "weeks": [
+    {
+      "n": 1,
+      "focus": "Safety first, then the shock",
+      "why": "The first days after a marriage ends can feel unreal, numb through the afternoon and wide awake at three in the morning, and you may not trust your own judgment yet. Start with one honest question: am I safe? If your spouse or former spouse has hit, threatened, stalked, or controlled you, the danger may not end with the marriage. The National Domestic Violence Hotline, listed on the Find Help page, warns that leaving can be the most dangerous time; reach them for a safety plan, and ask about a protective order. Joint counseling with someone who has abused you isn't recommended, and mediation may not be safe either, so tell your lawyer about the abuse early. If you are safe, this week's work is small on purpose, because shock is no time for large decisions.",
+      "practice": "Each day, eat one real meal, keep a bedtime, and tell one person the truth about how you're doing. Unless safety requires it, don't sign anything you don't understand, move far away, or start a new relationship this week. If you need the Hotline and your spouse can see your phone or accounts, use a device they can't reach. If this loss has turned into thoughts of not wanting to live, call or text 988 tonight.",
+      "read": { "label": "My marriage has ended, the care page this plan walks through more slowly, with safety first", "href": "/help/divorce" },
+      "tool": { "label": "The Find Help page, where the National Domestic Violence Hotline is listed with 988", "href": "/help" },
+      "reflection": "Am I actually safe, and who is one person I could let see how hard these days have been?"
+    },
+    {
+      "n": 2,
+      "focus": "Naming what you lost",
+      "why": "A divorce is a stack of losses, and most of them never get a name. You lost a spouse, and with them a home and its routines, in-laws who had become family, friends you knew as a couple, the pew you sat in together, and the future you'd planned. You may be grieving someone who is still alive and still texting about pickups, and few people know how to sit with that kind of loss. Even if you did the leaving, or feel some relief, the losses are real. Psalm 31, which bears David's name, knows what it is to be avoided and set aside: \"I am forgotten like a dead man, out of mind. I am like a broken vessel\" (Psalm 31:12). Losses that are never named don't fade. They wait.",
+      "practice": "Each day, write one thing you lost on a single line, as plainly as you can: the house, the in-laws, Sunday mornings, the future you pictured. Then read Psalm 31:9-16 aloud and pray that one loss to God by name. If you were wronged, say so. If you did wrong, say that too, as the psalm does in verse 10. Keep the list, because you'll come back to it in the last week.",
+      "read": { "label": "How to Practice Lament, on bringing an honest complaint to God without tidying it up", "href": "/how-tos/ss-how-to-practice-lament" },
+      "tool": { "label": "Psalm 31 in the Study Bible, with notes on the broken vessel and the friends who flee", "href": "/study/bible/psalms/31" },
+      "reflection": "Which of my losses have I not let myself grieve, because no one around me seems to think it counts?"
+    },
+    {
+      "n": 3,
+      "focus": "Shame, and walking back into church",
+      "why": "Shame often comes with a divorce, the kind that makes you want to skip church and shop at a different grocery store. It helps to tell guilt from shame. Guilt says I did something wrong, and a wrong can be confessed and forgiven. Shame says I am something wrong, and it visits the betrayed and the betrayer alike. We in the church, pastors first among us, have often helped it along with a verdict, or with a silence that said the same thing. In Isaiah, God pictures his people as a wife deserted and wounded in spirit, sent away for their own transgressions (Isaiah 50:1), and still he calls her back: \"Do not be afraid, for you will not be put to shame\" (Isaiah 54:4). If you were wronged, that word fits what was done to you. If you did the wrong, his compassion reaches even there.",
+      "practice": "If it's safe for you to be there, go to church this Sunday, even if you sit in the back and slip out early. Each morning until then, read Isaiah 54:4-8 aloud. Before the week ends, tell a pastor plainly what you need: a visit, a seat beside someone, or simply not to be avoided. If your church can't give you that, look for one that can.",
+      "read": { "label": "What Is the Difference Between Guilt and Shame? On the hiding self and the God who comes looking", "href": "/life/shame-and-the-hiding-self" },
+      "tool": { "label": "Isaiah 54 in the Study Bible, where God calls back a wife deserted and wounded in spirit", "href": "/study/bible/isaiah/54" },
+      "reflection": "Is what I'm carrying guilt for something I can confess, or shame that has been trying to become my name?"
+    },
+    {
+      "n": 4,
+      "focus": "Keeping the children out of the middle",
+      "why": "Children may decide in private that the divorce was their fault, or that they could fix it if they were good enough. Tell them, in words that fit their age, that it is neither. Then guard the middle. A child should never be the messenger between houses, the spy who reports back, or the confidant who hears what only an adult should carry. Where their other parent is safe, let them love that parent without guilt; where that parent isn't safe, take it to your lawyer and an advocate, not to the children. In both Matthew and Mark, Jesus' hard words on divorce are followed at once by people bringing him little children. When the disciples rebuked the people bringing them, he said, \"Let the little children come to Me, and do not hinder them\" (Mark 10:14), and he took them in his arms.",
+      "practice": "Each day, give your children one steady thing: the usual bedtime, a meal at the table, a few minutes of attention with no questions about the other house. Say nothing against their other parent where they can hear. On the nights they're away, pray for each child by name. If your children are grown, don't make them your confidants either. If you have no children, keep the same rule with family and friends: no messengers and no recruiting sides.",
+      "read": { "label": "How to Help an Anxious Child, on being the steady adult a frightened child can borrow calm from", "href": "/how-tos/parenting-how-to-help-an-anxious-child" },
+      "tool": { "label": "The Prayer Planner, to give each child a day and pray for them by name, especially the nights they're away", "href": "/tools/prayer-planner" },
+      "reflection": "What have my children been carrying for me that was never theirs to carry, and how can I take it back?"
+    },
+    {
+      "n": 5,
+      "focus": "Anger, and what forgiveness does not require",
+      "why": "Anger often runs through the grief of a divorce, aimed at your former spouse, at yourself, at God, or at the church. Scripture doesn't ask you to swallow it. Psalm 55, which bears David's name, knows the particular wound of betrayal by someone close: \"But it is you, a man like myself, my companion and close friend\" (Psalm 55:13). The letter to the Ephesians says, \"Be angry, yet do not sin\" (Ephesians 4:26), and Paul tells the Romans to \"leave room for God's wrath\" (Romans 12:19) instead of taking revenge. Own what was yours to own and nothing that was theirs; being abused was never your part. Then be clear about forgiveness. It is handing the debt to God, usually more than once. It is not trusting them again, going back, keeping quiet about abuse, or giving up the protection a court has given you.",
+      "practice": "Each day, tell God in plain words what you're angry about, and pray Psalm 55 when your own words run out. Then write one honest line about your own part, if you had one, and confess it. When the replayed argument starts, hand the case back to God in one sentence. Forgiveness needs no phone call, so contact no one this week to forgive them. If the anger has turned into thoughts of hurting them or yourself, tell a counselor, and in a crisis call or text 988.",
+      "read": { "label": "How Do You Heal After Betrayal by Someone Close? Psalm 55, and why forgiving is not the same as trusting again", "href": "/life/betrayal-and-broken-trust" },
+      "tool": { "label": "I can't forgive them, the care page on what forgiveness is and isn't, with safety first", "href": "/help/cant-forgive" },
+      "reflection": "What am I angry about that I have never said plainly to God, and what have I feared forgiving would force me to do?"
+    },
+    {
+      "n": 6,
+      "focus": "The quiet house",
+      "why": "Loneliness after a divorce keeps its own calendar: the nights the children are at the other house, Sunday afternoons, the anniversary, holidays cut in half. Friends you knew as a couple may have gone quiet or picked a side. Psalm 102, the prayer of one who is afflicted, says it plainly: \"I lie awake; I am like a lone bird on a housetop\" (Psalm 102:7). Loneliness offers quick cures: the screen, the bottle, someone new to fill the silence. They tend to leave the quiet heavier than they found it. What helps is slower: the same people, seen again and again, and a church that can be a household. God made us for company, and he still \"settles the lonely in families\" (Psalm 68:6).",
+      "practice": "Find your hardest hour and give it a shape: a walk, a call to someone who will pick up, a meal at a table instead of in front of a screen. Once this week, say yes to an invitation, or ask a church near you about a divorce recovery group, where no one needs the explanation. If you've been drinking or using more to get through the nights, tell your doctor, since stopping suddenly can be dangerous, and see SAMHSA's helpline on the Find Help page.",
+      "read": { "label": "Why Is It So Hard to Make Real Friends as an Adult? On why friendship is no consolation prize for the single, the widowed, and the divorced", "href": "/life/friendship-against-isolation" },
+      "tool": { "label": "Singleness: A Bible Study for the Unmarried, written for the divorced and widowed too", "href": "/studyguides/singleness" },
+      "reflection": "What do I reach for in my loneliest hour, and who could I let into that hour instead?"
+    },
+    {
+      "n": 7,
+      "focus": "Money, papers, and one thing a day",
+      "why": "Then comes the practical avalanche: two households on the money that used to run one, a lawyer's retainer, papers you don't understand, a schedule that tells you which days you get your own children. It's tempting to sign anything to make it end, or to stop opening the mail. Proverbs offers better counsel: \"Plans fail for lack of counsel, but with many advisers they succeed\" (Proverbs 15:22). I'm a pastor, not a lawyer or a financial adviser, and none of this is legal or financial advice, but before you sign anything about money, the house, or the children, talk with a family law attorney, or a legal aid office if money is tight. If there has been abuse, tell your lawyer first, because mediation may not be safe. And don't hide money or empty accounts: \"Dishonest scales are an abomination to the LORD\" (Proverbs 11:1).",
+      "practice": "Each day, do one practical thing and only one. One day, gather tax returns, bank and retirement statements, and records of debts into a single folder; another, write down what's due this month; another, call an attorney or a legal aid office. Each night, write down the one thing that's yours to do tomorrow and hand the rest to God, because \"Today has enough trouble of its own\" (Matthew 6:34).",
+      "read": { "label": "Money is a weight on me, the care page on bills, debt, and where to find real help", "href": "/help/money" },
+      "tool": { "label": "The Worry Journal, five minutes before bed to name tomorrow's one task and hand God the rest", "href": "/tools/worry-journal" },
+      "reflection": "What have I been avoiding opening, signing, or asking about, and who could help me face it this week?"
+    },
+    {
+      "n": 8,
+      "focus": "A future the ending does not name",
+      "why": "Somewhere in these weeks you may have wondered whether you'll marry again, or whether you may. Faithful Christians answer that differently, and the care page linked in week one sets out the views without deciding for you; take it to a pastor who will hear your whole story. Underneath it lies an older question: what the ending gets to say about who you are. When Naomi came home to Bethlehem after her husband and both her sons had died, the women of the town asked, \"Can this be Naomi?\" (Ruth 1:19). She told them, \"Call me Mara, because the Almighty has dealt quite bitterly with me\" (Ruth 1:20). Her losses were deaths, not a divorce, but you may know that pull. No one in the book ever calls her Mara. The ending is part of your story. It does not get to be your name.",
+      "practice": "Look back at the list of losses from week two and notice which ones you can carry now that you couldn't then, and which are still raw. Then write on a card the two or three practices from these weeks that helped, and keep them. Pray Psalm 31:14-15 each morning. And when someone newly divorced walks into your church, be the one who sits beside them.",
+      "read": { "label": "How Do You Live as a Christian After Divorce? On what grace builds in the ruins of a marriage", "href": "/life/divorce-and-its-aftermath" },
+      "tool": { "label": "The Rule of Life Builder, to keep the few practices that carried you through these weeks", "href": "/tools/rule-of-life" },
+      "reflection": "What have I let the ending say about who I am, and what would it mean to stop answering to that name?"
+    }
+  ]
+}

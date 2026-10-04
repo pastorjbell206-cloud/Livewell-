@@ -1,0 +1,81 @@
+{
+  "slug": "reading-the-bible",
+  "title": "Eight Weeks With an Open Bible",
+  "subtitle": "An eight week reading plan from James Bell for the first-time reader, the one coming back, and the curious skeptic. Mark first, then the one story, the Psalms, the hard pages, and a way to keep going.",
+  "intro": "This is an eight week plan for three kinds of reader: the person who wants to start reading the Bible and does not know where, the one coming back after an attempt that stalled, and the curious skeptic who would rather read the book than argue about it secondhand. Each week holds one focus, one small daily practice with the chapters named, one thing to read, one tool, and one honest question. It begins with the Gospel of Mark, a chapter a day, and then widens to the one story the whole Bible tells, to Genesis and the Psalms, to the passages people skip, and to the company of other readers. Plenty of people who put this book down never decided it was false. They were handed a method that could not carry them, often by those of us in the church, and they blamed themselves.\n\nIt is not a cure for anything, and it is not a substitute for a doctor, a licensed counselor, a pastor, or the real people who can read alongside you. Walk it imperfectly. A missed week is not failure, and neither is a missed day. The chapter will still be there when you come back, and nobody is grading your pace. The first disciples in Mark were slow to understand too, and Mark does not hide it.",
+  "careNote": "If the Bible was once used against you, at home or in a church, reading it again can stir up that harm, and a counselor who understands spiritual abuse can help you carry it. If reading leaves you gripped by a fear of condemnation that will not lift, talk with a pastor you trust and with a doctor or licensed counselor.",
+  "weeks": [
+    {
+      "n": 1,
+      "focus": "A time, a place, and the Gospel of Mark",
+      "why": "If you have tried to read the Bible before, you may have started on page one, stalled somewhere in the laws of Leviticus, and quietly decided the problem was you. More often the problem was the method. A reading habit rests on a set time and a familiar place far more than on resolve, and a first reader needs a book that puts Jesus in front of them quickly. Mark is the shortest of the four Gospels and, on most scholars' reckoning, the earliest. By the end of its first chapter Jesus has called four fishermen and touched a man with leprosy, and at the hinge of the book, in chapter 8, he turns to his friends and asks, “Who do you say I am?” (Mark 8:29).",
+      "practice": "Choose a time you already keep, the first coffee or the lunch break, and one place, the same chair each day. Read Mark 1 to 8 this week, a chapter a day and two on whichever day has more room. Keep a pen close and write down one question for each chapter. Fifteen minutes is plenty.",
+      "read": { "label": "How to Actually Read the Bible, on why Mark comes first and three questions to ask", "href": "/how-tos/sf-how-to-actually-read-the-bible" },
+      "tool": { "label": "Mark 1 in the Study Bible, the full text with notes, if you have no Bible at hand", "href": "/study/bible/mark/1" },
+      "reflection": "What has kept me from reading this book until now, and how much of that was ever about the book itself?"
+    },
+    {
+      "n": 2,
+      "focus": "Who wrote it, to whom, and what kind of writing",
+      "why": "The Bible is a library of different kinds of writing, history and law, poetry and prophecy, letters and Gospels, and every book in it was written by someone, to someone, for a reason. Each of those facts changes how a sentence should be heard. Mark does not name its author, though an early tradition ties the book to Peter. Most scholars date it to the late 60s or early 70s, and the tradition places its first readers in Rome, not long after Nero turned on the Christians there. Read with that in mind, the second half of Mark, with its road to the cross and its slow, frightened disciples, speaks directly to people who knew what following Jesus could cost.",
+      "practice": "Read the Study Bible's introduction to Mark once, then Mark 9 to 16 at last week's pace. Each day, ask who is speaking, who first heard these words, and what they would have meant to them. At chapter 16, read the Study Bible's note on how the book ends, since its oldest complete copies stop at verse 8.",
+      "read": { "label": "The Study Bible's introduction to Mark: who wrote it, when, for whom, and how to read it", "href": "/study/bible/mark" },
+      "tool": { "label": "The Passage Context Tool, for the author, first audience, and kind of writing behind any reference", "href": "/theology/passage" },
+      "reflection": "Now that I have read all of Mark, who do I say Jesus is, and how much of that answer came from the page?"
+    },
+    {
+      "n": 3,
+      "focus": "The one story the whole library tells",
+      "why": "Those sixty-six books, written over more than a thousand years, also tell one story. It runs from a good world, through the ruin of it, through God's long work of repair by way of one family, one nation, and one king, to Jesus, and on to a world made new. Read without that shape, every page feels like a fragment. On the road to Emmaus after his resurrection, Jesus walked with two grieving disciples and, “beginning with Moses and all the Prophets, He explained to them what was written in all the Scriptures about Himself” (Luke 24:27). This week you read one chapter at each great turn of that story. Next week goes back to the first pages.",
+      "practice": "One chapter a day, in this order: Genesis 12, Exodus 12, 2 Samuel 7, Isaiah 53, Nehemiah 8, Luke 24, and Revelation 21. Before each, find where it falls on the Study Bible's story path and read the short account of the world behind it. Then write one line: what does God promise or do here?",
+      "read": { "label": "The Story of the Bible, a five-session study of the whole canon, creation to new creation", "href": "/studyguides/the-story-of-the-bible" },
+      "tool": { "label": "The Study Bible's story path, eleven acts with the world behind each one", "href": "/study/bible/story" },
+      "reflection": "Which part of the story have I been mistaking for the whole of it, and what changes when I see where it is going?"
+    },
+    {
+      "n": 4,
+      "focus": "Back to the beginning in Genesis",
+      "why": "With the whole story in view, go back to the first pages. Genesis 1 was first heard in a world full of other creation stories. In Babylon's, the god Marduk builds the sky and the earth from the body of a slain sea goddess, and human beings are made to do the gods' drudgery. Genesis answers with one God, no battle, a good world, and human beings made in his image. Many modern readers arrive asking only how old the earth is, and Christians who confess the same Creator disagree about how these chapters relate to science. That question deserves patience. The chapters themselves are asking older ones: who made the world, what it is for, who we are, and what went wrong.",
+      "practice": "Read Genesis 1 to 11 this week, about a chapter and a half a day; the family lists in chapters 5 and 10 go quickly. Read chapter 1 aloud once. Each day, write down what God calls good and what goes wrong. Chapter 11 ends where last week began, with Abram and his family.",
+      "read": { "label": "Was Genesis 1 Answering Babylon, Not Modern Science? On the questions the chapter first answered", "href": "/resources/context/genesis-one-in-its-world" },
+      "tool": { "label": "The Deep Bible Study Companion, which takes Genesis 1 and Genesis 3 layer by layer", "href": "/tools/deep-bible" },
+      "reflection": "What did I come to Genesis asking, and what was Genesis asking me?"
+    },
+    {
+      "n": 5,
+      "focus": "The Psalms as prayer, read aloud",
+      "why": "Much of the Bible speaks to you. The Psalms give you words to speak back. They were Israel's prayer book, and they hold praise, thanks, confession, and complaint, some of it raw enough to unsettle a polite congregation. Jesus prayed them. In Mark 15, which you read in week two, he cries out from the cross the opening line of Psalm 22. That changes what reading is for. Some of this book is meant to be studied, and some of it is meant to be prayed, said aloud in your own voice on the days you believe it and on the days you are not sure you do.",
+      "practice": "Read one psalm a day, aloud: Psalms 1, 8, 13, 22, 23, 51, and 121. Read it once to hear it, then a second time slowly, as your own prayer wherever you can mean the words. If you do not believe, read them as other people's prayers and notice what they dare to say to God.",
+      "read": { "label": "The Psalms: A Bible Study on Honest Prayer, complaint and rage included", "href": "/studyguides/the-psalms" },
+      "tool": { "label": "Psalm 22 in the Study Bible, with notes on the prayer Jesus spoke from the cross", "href": "/study/bible/psalms/22" },
+      "reflection": "Which psalm said something I have felt but never said aloud, and what would it cost me to say it?"
+    },
+    {
+      "n": 6,
+      "focus": "The hard passages, read in their setting",
+      "why": "Sooner or later every honest reader reaches pages that make them want to close the book: the conquest of Canaan, laws that regulate slavery, a psalm that ends by wishing death on Babylon's children. We in the church have often read around them, which leaves the skeptic who stops cold at Joshua reading more honestly than we did. No quick explanation settles these passages, and this week will not pretend one does. What you can do is read them whole and in their setting, with the chapters around them, the kind of writing they are, the world that produced them, and where the whole story finally goes. Some of the difficulty eases that way. Some will remain, and carrying it honestly is part of reading well.",
+      "practice": "One chapter a day: Genesis 15, Deuteronomy 7, Deuteronomy 9, Joshua 2, Joshua 6, Psalm 137, and Luke 9. Read each chapter whole, never a single verse alone, and read the guide alongside them. At the end of the week, write two short lists, what the setting explained and what it honestly did not. Keep both.",
+      "read": { "label": "Why Is the Old Testament So Violent? An Honest Look, with three readings set out at full strength", "href": "/resources/context/the-violence-of-the-old-testament" },
+      "tool": { "label": "The Context Library, with guides on the slavery texts and the other hard questions", "href": "/resources/context" },
+      "reflection": "When a passage troubles me, do I skip it, explain it away, or stay with it, and where did I learn to do that?"
+    },
+    {
+      "n": 7,
+      "focus": "Reading with someone beside you",
+      "why": "In Acts 8, a senior official of the Ethiopian queen's court, the man in charge of her whole treasury, was riding home from worship in Jerusalem and reading the prophet Isaiah in his chariot. “Do you understand what you are reading?” Philip asked. “How can I,” he said, “unless someone guides me?” (Acts 8:30-31). He was no fool. He was reading alone a book meant to be read in company. The passage was Isaiah 53, which you read in week three, and Philip began there and told him about Jesus. Most readers need a Philip at some point, and there is no shame in asking for one.",
+      "practice": "Read Acts 1 to 8, a chapter a day and two on one day. Before the week ends, ask one person to read Acts 8 with you, a friend, a pastor, or a Christian whose honesty you trust. Read it aloud together, then ask three plain questions: what does this show us about God, what does it show us about people, and what does it ask of us?",
+      "read": { "label": "Being Discipled, on asking someone further along to read and pray with you", "href": "/wisdom/being-discipled" },
+      "tool": { "label": "Acts 8 in the Study Bible, the chariot on the Gaza road, to open together", "href": "/study/bible/acts/8" },
+      "reflection": "Who could I ask to read with me, and what has kept me from asking?"
+    },
+    {
+      "n": 8,
+      "focus": "A plan to keep reading after week eight",
+      "why": "Eight weeks is long enough to learn that this book can be read, and short enough that most of it still lies ahead. What carries a reader across years is a plan small enough to keep on a bad week, a time and a place you already know, and someone who will ask how the reading is going. This week you read one of Paul's letters the way a letter is meant to be read, after first reading in Acts 16 how the church that received it began. Paul wrote it in chains, and joy runs all through it. Then you choose what comes next and write it down. The goal was never to finish the book. It was to meet the One it is about, and to keep meeting him.",
+      "practice": "Read Acts 16, where the church at Philippi begins, then Philippians 1 to 4, a chapter a day. On the last day, read the whole letter in one sitting. Then write your next plan on a card: the book, the time, the place. Luke and then the rest of Acts make a good next stretch, or the story path from its first act. Show the card to the person from week seven.",
+      "read": { "label": "Knowing the Bible, on reading that aims at a changed life, not only an informed mind", "href": "/wisdom/knowing-the-bible" },
+      "tool": { "label": "The Study Bible, where the story path, every book's introduction, and the chapter notes begin", "href": "/study/bible" },
+      "reflection": "What do I want to be reading a year from now, and what in my week will I have to protect to get there?"
+    }
+  ]
+}

@@ -62,7 +62,7 @@ export default function WholeBibleSermons() {
     return (
       <Layout>
         <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4)", minHeight: "50vh" }}>
-          <div style={wrap}><p style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }}>Loading the library…</p></div>
+          <div style={wrap}><p style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }} role="status">Loading the library…</p></div>
         </section>
       </Layout>
     );
@@ -223,7 +223,7 @@ export default function WholeBibleSermons() {
           </h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: "var(--s-3)" }}>
             {data.topical.map((s) => (
-              <div key={s.id} style={{ background: "var(--panel, #1d1b15)", border: "1px solid rgba(245,240,230,0.12)", padding: "var(--s-3)" }}>
+              <div key={s.id} style={{ background: "var(--charcoal-soft)", border: "1px solid rgba(245,240,230,0.12)", padding: "var(--s-3)" }}>
                 <div style={{ fontFamily: "var(--F)", fontSize: "20px", color: "var(--bone)", lineHeight: 1.2, marginBottom: "6px" }}>{s.title}</div>
                 <div style={{ fontFamily: "var(--F)", fontSize: "15px", fontStyle: "italic", color: "rgba(245,240,230,0.7)", marginBottom: "10px" }}>{s.headline}</div>
                 <div style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.06em", color: "var(--mustard)" }}>{s.parts} parts</div>

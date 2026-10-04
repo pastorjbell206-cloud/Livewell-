@@ -140,7 +140,7 @@ export default function TheologyBiblical() {
       {tab === "story" && (
         <section style={{ background: "var(--bone)", padding: "var(--s-4) var(--s-4) var(--s-7)" }}>
           <div style={{ ...wrap, display: "flex", flexDirection: "column", gap: "12px" }}>
-            {acts.length === 0 && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }}>Loading the story…</p>}
+            {acts.length === 0 && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }} role="status">Loading the story…</p>}
             {acts.map((a) => {
               const isOpen = openAct === a.id;
               return (
@@ -176,7 +176,7 @@ export default function TheologyBiblical() {
             <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "66ch", marginBottom: "8px", fontStyle: "italic" }}>
               Follow one thread from Genesis to Revelation and you will feel the whole Bible pull together. Each of these runs the length of the story and lands in Christ.
             </p>
-            {themes.length === 0 && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }}>Loading…</p>}
+            {themes.length === 0 && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }} role="status">Loading…</p>}
             {themes.map((t) => {
               const isOpen = openTheme === t.name;
               return (
@@ -209,7 +209,7 @@ export default function TheologyBiblical() {
       {tab === "ntot" && (
         <section style={{ background: "var(--bone)", padding: "var(--s-4) var(--s-4) var(--s-7)" }}>
           <div style={{ ...wrap }}>
-            {!ntot && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }}>Loading…</p>}
+            {!ntot && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }} role="status">Loading…</p>}
             {ntot && (
               <>
                 <div style={{ marginBottom: "var(--s-4)" }}><Prose text={ntot.intro} /></div>
@@ -235,7 +235,7 @@ export default function TheologyBiblical() {
       {tab === "books" && (
         <section style={{ background: "var(--bone)", padding: "var(--s-4) var(--s-4) var(--s-7)" }}>
           <div style={{ ...wrap }}>
-            {booksOt.length + booksNt.length === 0 && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }}>Loading…</p>}
+            {booksOt.length + booksNt.length === 0 && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }} role="status">Loading…</p>}
             {booksOt.length + booksNt.length > 0 && <SectionArt seed="biblical-books" />}
             {[{ label: "The Old Testament", items: booksOt }, { label: "The New Testament", items: booksNt }].map(({ label, items }) => items.length > 0 && (
               <div key={label} style={{ marginBottom: "var(--s-5)" }}>

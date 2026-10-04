@@ -19,7 +19,7 @@
       "focus": "The inner life",
       "why": "Everything else in this plan draws from this well. A prayer life is not a performance for God, it is the daily turning of your attention toward the One who was already attending to you. We start here because a life integrates around whatever sits at its center, and something always sits there.",
       "practice": "Ten minutes of unhurried prayer each day, and let half of it be silence. No agenda, no list to get through. Show God the day and let him look at it with you.",
-      "read": { "label": "The Lament page, because honest prayer includes the parts you usually edit out", "href": "/lament" },
+      "read": { "label": "How to Practice Lament, because honest prayer includes the parts you usually edit out", "href": "/how-tos/ss-how-to-practice-lament" },
       "tool": { "label": "The Prayer Generator, for the days the well feels dry", "href": "/tools/prayer-generator" },
       "reflection": "What actually sits at the center of my attention most days, and what would it take for prayer to move toward that place?"
     },
@@ -55,8 +55,8 @@
       "focus": "The local church",
       "why": "An undivided life cannot be assembled alone, and it was never meant to be. The local church, with all its ordinary frustrations, is where formation actually happens, among people you did not choose and cannot curate. Belonging somewhere specific is part of the integration, not an accessory to it.",
       "practice": "Each day, pray for your church by name, its pastor, and one person in it. If you do not have a church, pray for the one you will visit this month, and pick the Sunday.",
-      "read": { "label": "The Discipleship page, on why nobody is formed in private", "href": "/discipleship" },
-      "tool": { "label": "The Church Health tool, think clearly about the congregation you belong to", "href": "/tools/church-health" },
+      "read": { "label": "Why Does Church Membership Still Matter? On why nobody is formed in private", "href": "/life/church-membership-and-commitment" },
+      "tool": { "label": "The Prayer Generator, use its prayers for the church and for pastors to pray for yours by name", "href": "/tools/prayer-generator" },
       "reflection": "What have I been expecting the church to give me, and what have I actually been willing to give it?"
     },
     {
@@ -73,7 +73,7 @@
       "focus": "A rule of life",
       "why": "Eight weeks of practices are scaffolding. A rule of life is the building, a few chosen commitments, small enough to keep on your worst week, that hold a life in one direction for years. The saints were not stronger than you. They were more decided, and they decided in advance.",
       "practice": "Write your rule on one card, two or three practices from these weeks that proved true, with when and where you will do them. Do them each day. Show the card to one person who will ask you about it.",
-      "read": { "label": "Return to the Discipleship page and read it as a charter for the next year", "href": "/discipleship" },
+      "read": { "label": "How to Build a Rule of Life, a charter for the next year, written down and revisited with the seasons", "href": "/how-tos/sf-how-to-build-a-rule-of-life" },
       "tool": { "label": "Retake the Whole Life Assessment and set it beside week one", "href": "/life/assessment" },
       "reflection": "A year from now, what few practices do I want to have kept, and who am I asking to walk them with me?"
     }

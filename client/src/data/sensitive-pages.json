@@ -1,0 +1,52 @@
+{
+  "note": "Library pages on heavy subjects carry the help block (docs/grow/GROW-PROMPT.md, Wave 0). Read by client/src/lib/needs.ts (the pages) and scripts/build-pdfs.mjs (the study guide PDFs), so the web and the print copies never disagree.",
+  "life": [
+    "the-anxious-mind", "the-heavy-mind", "grief-and-loss", "addiction-and-the-long-road-back",
+    "divorce-and-its-aftermath", "betrayal-and-broken-trust", "facing-death", "caring-for-the-dying",
+    "suffering-and-the-silence-of-god", "forgiveness-the-hardest-grace", "the-dry-season",
+    "shame-and-the-hiding-self", "infertility-and-childlessness", "the-wayward-child",
+    "anger-and-the-hot-heart", "health-illness-and-pain", "unemployment-and-the-lost-job",
+    "friendship-against-isolation", "waiting-and-unanswered-prayer"
+  ],
+  "studyguides": [
+    "grief", "lament", "anxiety", "mental-health", "suffering", "doubt", "deconstruction",
+    "marriage", "anger", "forgiveness", "alone-in-a-crowded-church", "pastoral-health",
+    "youth-who-am-i", "addiction-and-recovery", "divorce-and-blended-families", "when-our-parents-grow-old"
+  ],
+  "studyguideTopics": {
+    "addiction-and-recovery": ["substance", "abuse"],
+    "divorce-and-blended-families": ["abuse"],
+    "marriage": ["abuse"],
+    "anger": ["abuse"],
+    "forgiveness": ["abuse"],
+    "youth-who-am-i": ["abuse"]
+  },
+  "wisdom": {
+    "lead": {
+      "suicidal-thoughts": ["suicide"],
+      "depression": ["suicide"],
+      "despair-and-hope": ["suicide"],
+      "self-hatred": ["suicide"],
+      "toxic-relationships": ["abuse", "sexual-assault"]
+    },
+    "end": {
+      "addiction": ["substance", "suicide"],
+      "alcohol-and-drinking": ["substance"],
+      "marriage-conflict": ["abuse"],
+      "betrayal": ["abuse"],
+      "church-hurt": ["abuse", "sexual-assault"],
+      "pornography": ["suicide"],
+      "grief": ["suicide"],
+      "losing-a-child": ["suicide"],
+      "losing-a-parent": ["suicide"],
+      "losing-a-spouse": ["suicide"],
+      "sudden-loss": ["suicide"],
+      "miscarriage": ["suicide"],
+      "infertility": ["suicide"],
+      "wayward-child": ["suicide"],
+      "terminal-diagnosis": ["suicide"],
+      "facing-death": ["suicide"],
+      "serious-illness": ["suicide"]
+    }
+  }
+}

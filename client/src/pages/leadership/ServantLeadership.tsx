@@ -97,7 +97,7 @@ export default function ServantLeadership() {
               { href: "/leadership/guides", k: "The Lessons · 4 guides", t: "Training Guides", d: "Session-by-session: servant leadership, elders, deacons, developing leaders." },
               { href: "#marks", k: "The Framework", t: "The 9 Marks", d: "A diagnostic for every leader — and the conviction underneath each one." },
             ].map((c) => (
-              <a key={c.href} href={c.href} style={{ display: "block", background: "var(--panel, #1d1b15)", border: "1px solid rgba(245,240,230,0.12)", padding: "var(--s-3)", textDecoration: "none" }}>
+              <a key={c.href} href={c.href} style={{ display: "block", background: "var(--charcoal-soft)", border: "1px solid rgba(245,240,230,0.12)", padding: "var(--s-3)", textDecoration: "none" }}>
                 <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "8px" }}>{c.k}</div>
                 <div style={{ fontFamily: "var(--F)", fontSize: "21px", color: "var(--bone)", lineHeight: 1.2, marginBottom: "6px" }}>{c.t}</div>
                 <div style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.55, color: "rgba(245,240,230,0.7)" }}>{c.d}</div>

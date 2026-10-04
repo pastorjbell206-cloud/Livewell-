@@ -10,9 +10,10 @@
  * ToolsHub so the two never drift; a tool listed here but not there is a bug.
  */
 import { Link } from "wouter";
-import { BookOpen, Compass, HelpCircle, Library, Search, Scroll, Landmark, Brain } from "lucide-react";
+import { BookOpen, Compass, HelpCircle, Library, Search, Scroll } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { CardGrid, type CardItem } from "@/components/editorial/CardGrid";
 import { TOOLS } from "@/pages/ToolsHub";
 
 type Door = {
@@ -82,13 +83,11 @@ const STANDS_ON = [
     title: "Church history",
     text: "You did not start the faith. You were handed it. The councils, the figures, the heresies, and the whole arc from Pentecost to today, hung on one timeline.",
     href: "/theology/history",
-    icon: Landmark,
   },
   {
     title: "Theology",
     text: "The doctrines, the traditions, the creeds, and how to read Scripture without making it say what you already believe.",
     href: "/theology",
-    icon: Brain,
   },
 ];
 
@@ -107,10 +106,10 @@ export default function Study() {
       <section style={{ background: "var(--charcoal)", padding: "var(--s-7) var(--s-3) var(--s-5)" }}>
         <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "1.5rem" }}>Study the Bible</div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(2.2rem, 4.8vw, 3.2rem)", fontWeight: 400, lineHeight: 1.08, letterSpacing: "-0.02em", color: "var(--bone)", marginBottom: "1.2rem" }}>
+          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(2.2rem, 4.8vw, 3.2rem)", fontWeight: 400, lineHeight: 1.08, letterSpacing: "-0.02em", color: "var(--charcoal-fg)", marginBottom: "1.2rem" }}>
             Start with what you are holding
           </h1>
-          <p style={{ color: "var(--bone)", opacity: 0.8, fontSize: "1.05rem", lineHeight: 1.7, maxWidth: "62ch" }}>
+          <p style={{ color: "var(--charcoal-fg)", opacity: 0.8, fontSize: "1.05rem", lineHeight: 1.7, maxWidth: "62ch" }}>
             Nobody arrives at the Bible in general. You arrive with a chapter open, or a question you cannot put down, or a word from a sermon you did not understand. Begin there. Each door below opens onto real depth, and none of them assumes you have done this before.
           </p>
         </div>
@@ -137,6 +136,15 @@ export default function Study() {
             const Icon = door.icon;
             const tools = door.hrefs.map((h) => byHref.get(h)).filter(Boolean) as (typeof TOOLS)[number][];
             const extra = door.hrefs.filter((h) => !byHref.has(h));
+            // Registry tools first, then the off-registry pages, as before. The
+            // per-tool icons are gone: CardGrid's kicker slot takes text only.
+            const cards: CardItem[] = [
+              ...tools.map((tool) => ({ href: tool.href, title: tool.title, dek: tool.description })),
+              ...extra.flatMap((h) => {
+                const entry = OFF_REGISTRY[h];
+                return entry ? [{ href: h, title: entry.title, dek: entry.description }] : [];
+              }),
+            ];
             return (
               <div key={door.holding}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "6px" }}>
@@ -145,30 +153,7 @@ export default function Study() {
                 </div>
                 <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(1.6rem, 3vw, 2.1rem)", fontWeight: 400, letterSpacing: "-0.01em", color: "var(--ink)", marginBottom: "0.4rem" }}>{door.holding}</h2>
                 <p style={{ fontFamily: "var(--B)", fontSize: "1rem", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "62ch", marginBottom: "var(--s-3)" }}>{door.lead}</p>
-                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(300px, 100%), 1fr))", gap: "20px" }}>
-                  {tools.map((tool) => {
-                    const TIcon = tool.icon;
-                    return (
-                      <Link key={tool.href} href={tool.href} style={{ display: "block", padding: "28px 28px", background: "var(--card)", borderRadius: "var(--radius-sm)", borderLeft: "3px solid var(--mustard)", textDecoration: "none" }}>
-                        <TIcon size={26} aria-hidden style={{ color: "var(--ink)", marginBottom: "12px" }} />
-                        <div style={{ fontFamily: "var(--F)", fontSize: "1.3rem", fontWeight: 500, color: "var(--ink)", marginBottom: "8px" }}>{tool.title}</div>
-                        <p style={{ fontFamily: "var(--B)", fontSize: "0.95rem", lineHeight: 1.65, color: "var(--ink-muted)", margin: 0 }}>{tool.description}</p>
-                        <div style={{ marginTop: "16px", fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--ink)", borderBottom: "1px solid var(--mustard)", width: "fit-content", paddingBottom: "2px" }}>Open</div>
-                      </Link>
-                    );
-                  })}
-                  {extra.map((h) => {
-                    const entry = OFF_REGISTRY[h];
-                    if (!entry) return null;
-                    return (
-                      <Link key={h} href={h} style={{ display: "block", padding: "28px 28px", background: "var(--card)", borderRadius: "var(--radius-sm)", borderLeft: "3px solid var(--mustard)", textDecoration: "none" }}>
-                        <div style={{ fontFamily: "var(--F)", fontSize: "1.3rem", fontWeight: 500, color: "var(--ink)", marginBottom: "8px" }}>{entry.title}</div>
-                        <p style={{ fontFamily: "var(--B)", fontSize: "0.95rem", lineHeight: 1.65, color: "var(--ink-muted)", margin: 0 }}>{entry.description}</p>
-                        <div style={{ marginTop: "16px", fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--ink)", borderBottom: "1px solid var(--mustard)", width: "fit-content", paddingBottom: "2px" }}>Open</div>
-                      </Link>
-                    );
-                  })}
-                </div>
+                <CardGrid label={door.holding} items={cards} />
               </div>
             );
           })}
@@ -178,22 +163,21 @@ export default function Study() {
       {/* WHAT THE STUDY STANDS ON */}
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-3)" }}>
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
-          <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "1rem" }}>What the study stands on</div>
-          <p style={{ color: "var(--bone)", opacity: 0.75, fontSize: "0.95rem", lineHeight: 1.7, maxWidth: "62ch", marginBottom: "2rem" }}>
+          {/* The eyebrow is this section's heading, so the two cards below sit
+              under it as h3s, not under the last door. The eyebrow style sits on
+              an inner span because brand-override.css forces every heading
+              into the serif with !important. */}
+          <h2 style={{ marginBottom: "1rem" }}>
+            <span className="eyebrow" style={{ color: "var(--mustard)" }}>What the study stands on</span>
+          </h2>
+          <p style={{ color: "var(--charcoal-fg)", opacity: 0.75, fontSize: "0.95rem", lineHeight: 1.7, maxWidth: "62ch", marginBottom: "2rem" }}>
             Every passage you study was read by twenty centuries of Christians before you, argued over in councils, and carried through the church's worst hours. Knowing that story is part of reading well.
           </p>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(300px, 100%), 1fr))", gap: "20px" }}>
-            {STANDS_ON.map((s) => {
-              const SIcon = s.icon;
-              return (
-                <Link key={s.href} href={s.href} style={{ display: "block", padding: "28px", border: "1px solid rgba(245,240,230,0.14)", borderRadius: "var(--radius-sm)", textDecoration: "none" }}>
-                  <SIcon size={26} aria-hidden style={{ color: "var(--mustard)", marginBottom: "12px" }} />
-                  <div style={{ fontFamily: "var(--F)", fontSize: "1.35rem", fontWeight: 400, color: "var(--bone)", marginBottom: "8px" }}>{s.title}</div>
-                  <p style={{ fontFamily: "var(--B)", fontSize: "0.95rem", lineHeight: 1.65, color: "var(--bone)", opacity: 0.75, margin: 0 }}>{s.text}</p>
-                </Link>
-              );
-            })}
-          </div>
+          <CardGrid
+            tone="dark"
+            label="What the study stands on"
+            items={STANDS_ON.map((s) => ({ href: s.href, title: s.title, dek: s.text }))}
+          />
         </div>
       </section>
     </Layout>
