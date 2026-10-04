@@ -64,4 +64,4 @@ The prophetic tradition in the Hebrew scriptures consistently shows figures who 
 
 If you are navigating this territory, the Pastors Connection Network includes pastors who have walked this road — who have burned out, stepped back, and returned to fruitful ministry on the other side. You do not have to discern this alone. In fact, trying to discern it alone is precisely the kind of isolation that contributed to the burnout in the first place.
 
-The wreckage is not the end. But neither is the rush to get past it. What comes after the collapse, when it is genuine and sustained and honest, often carries a weight the pre-collapse ministry never had — because it knows the cost. Find your people. Let them help you find your way. Take the time the journey actually requires.
+The wreckage is not the end. But neither is the rush to get past it. What comes after the collapse, when it is genuine and sustained and honest, often carries a weight the pre-collapse ministry never had — because it knows the cost. Find your people. Let them help you find your way. Take the time it actually requires.

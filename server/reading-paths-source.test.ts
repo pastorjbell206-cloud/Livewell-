@@ -11,10 +11,14 @@
 import { describe, expect, it } from "vitest";
 import { READING_PATHS, getReadingPathBySlug } from "@/lib/readingPaths";
 import contentData from "@/data/content-data.json";
+import staticLibrary from "../content/static-library.generated.json";
 
-const knownSlugs = new Set(
-  (contentData as { posts: { slug: string }[] }).posts.map(p => p.slug)
-);
+// A /writing essay is real if either source publishes it: content-data, or the
+// static library (the JSON-library essays and the reviewed rewrites).
+const knownSlugs = new Set([
+  ...(contentData as { posts: { slug: string }[] }).posts.map(p => p.slug),
+  ...(staticLibrary as { slug: string }[]).map(p => p.slug),
+]);
 
 describe("reading paths source of truth", () => {
   it("defines the six definitive paths with unique slugs", () => {

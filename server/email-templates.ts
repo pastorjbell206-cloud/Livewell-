@@ -1,5 +1,5 @@
 /**
- * Email template generator with Livewell branding
+ * Email template generator with LiveWell branding
  * All templates use the brand colors and typography
  */
 
@@ -35,7 +35,7 @@ export function getWelcomeEmailTemplate(params: EmailTemplateParams): string {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome to Livewell</title>
+  <title>Welcome to LiveWell</title>
   <style>
     body { font-family: 'Georgia', serif; margin: 0; padding: 0; background-color: ${BRAND_COLORS.cream}; }
     .container { max-width: 600px; margin: 0 auto; background-color: white; }
@@ -54,14 +54,14 @@ export function getWelcomeEmailTemplate(params: EmailTemplateParams): string {
 <body>
   <div class="container">
     <div class="header">
-      <h1>Livewell</h1>
+      <h1>LiveWell</h1>
       <div class="tagline">by James Bell</div>
     </div>
     
     <div class="content">
       <h2>Welcome, ${recipientName}!</h2>
       
-      <p>Thank you for subscribing to Livewell. You're now part of a community of thinking Christians exploring faith, culture, and the Christian life.</p>
+      <p>Thank you for subscribing to LiveWell. You're now part of a community of thinking Christians exploring faith, culture, and the Christian life.</p>
       
       <p>Here's what you can expect:</p>
       <ul style="margin: 16px 0; padding-left: 20px;">
@@ -73,18 +73,18 @@ export function getWelcomeEmailTemplate(params: EmailTemplateParams): string {
       <p>I write from one conviction: behavior modification was never the point. Heart transformation is.</p>
       
       <div style="text-align: center;">
-        <a href="https://livewell.com" class="cta-button">Read the Latest Essays</a>
+        <a href="https://www.livewellbyjamesbell.co" class="cta-button">Read the Latest Essays</a>
       </div>
       
       <div class="divider"></div>
       
       <p style="font-size: 14px; color: ${BRAND_COLORS.gray};">
-        Questions? Reply to this email or visit <a href="https://livewell.com" style="color: ${BRAND_COLORS.gold};">livewell.com</a>
+        Questions? Reply to this email or visit <a href="https://www.livewellbyjamesbell.co" style="color: ${BRAND_COLORS.gold};">livewellbyjamesbell.co</a>
       </p>
     </div>
     
     <div class="footer">
-      <p style="margin: 0 0 12px 0;">© 2026 Livewell by James Bell. All rights reserved.</p>
+      <p style="margin: 0 0 12px 0;">© 2026 LiveWell by James Bell. All rights reserved.</p>
       <p style="margin: 0;">
         <a href="${unsubscribeUrl}">Unsubscribe from this list</a>
       </p>
@@ -103,7 +103,7 @@ export function getArticleNotificationTemplate(params: EmailTemplateParams): str
     recipientName = "Friend",
     articleTitle = "New Essay",
     articleExcerpt = "",
-    articleUrl = "https://livewell.com",
+    articleUrl = "https://www.livewellbyjamesbell.co",
     articleAuthor = "James Bell",
     unsubscribeUrl = "#",
   } = params;
@@ -135,7 +135,7 @@ export function getArticleNotificationTemplate(params: EmailTemplateParams): str
 <body>
   <div class="container">
     <div class="header">
-      <div class="logo">Livewell</div>
+      <div class="logo">LiveWell</div>
       <div class="tagline">by James Bell</div>
     </div>
     
@@ -158,13 +158,13 @@ export function getArticleNotificationTemplate(params: EmailTemplateParams): str
       <div class="divider"></div>
       
       <p style="font-size: 14px; color: ${BRAND_COLORS.gray}; margin-bottom: 0;">
-        You're receiving this because you subscribed to Livewell. 
+        You're receiving this because you subscribed to LiveWell. 
         <a href="${unsubscribeUrl}" style="color: ${BRAND_COLORS.gold};">Manage your preferences</a>
       </p>
     </div>
     
     <div class="footer">
-      <p style="margin: 0 0 12px 0;">© 2026 Livewell by James Bell</p>
+      <p style="margin: 0 0 12px 0;">© 2026 LiveWell by James Bell</p>
       <p style="margin: 0;">Essays on faith, culture, and the Christian life</p>
     </div>
   </div>
@@ -185,7 +185,7 @@ export function getDigestEmailTemplate(params: EmailTemplateParams): string {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Livewell Digest</title>
+  <title>LiveWell Digest</title>
   <style>
     body { font-family: 'Georgia', serif; margin: 0; padding: 0; background-color: ${BRAND_COLORS.cream}; }
     .container { max-width: 600px; margin: 0 auto; background-color: white; }
@@ -206,20 +206,20 @@ export function getDigestEmailTemplate(params: EmailTemplateParams): string {
 <body>
   <div class="container">
     <div class="header">
-      <h1>Livewell Digest</h1>
+      <h1>LiveWell Digest</h1>
       <div class="tagline">by James Bell</div>
     </div>
     
     <div class="content">
       <p>Hi ${recipientName},</p>
       
-      <p>Here's what's new this week at Livewell:</p>
+      <p>Here's what's new this week at LiveWell:</p>
       
       <div class="section-title">Latest Essays</div>
       <div class="article-card">
-        <h3>Check out the latest on livewell.com</h3>
+        <h3>Check out the latest on livewellbyjamesbell.co</h3>
         <p>New essays on theology, faith, and Christian witness are published regularly.</p>
-        <p><a href="https://livewell.com">Visit Livewell →</a></p>
+        <p><a href="https://www.livewellbyjamesbell.co">Visit LiveWell →</a></p>
       </div>
       
       ${campaignMessage ? `<div class="section-title">Special Announcement</div><div style="padding: 16px; background-color: ${BRAND_COLORS.cream}; border-radius: 4px;">${campaignMessage}</div>` : ""}
@@ -227,13 +227,13 @@ export function getDigestEmailTemplate(params: EmailTemplateParams): string {
       <div class="divider"></div>
       
       <p style="font-size: 14px; color: ${BRAND_COLORS.gray};">
-        <a href="https://livewell.com" style="color: ${BRAND_COLORS.gold};">Visit Livewell</a> | 
+        <a href="https://www.livewellbyjamesbell.co" style="color: ${BRAND_COLORS.gold};">Visit LiveWell</a> | 
         <a href="${unsubscribeUrl}" style="color: ${BRAND_COLORS.gold};">Unsubscribe</a>
       </p>
     </div>
     
     <div class="footer">
-      <p style="margin: 0 0 12px 0;">© 2026 Livewell by James Bell</p>
+      <p style="margin: 0 0 12px 0;">© 2026 LiveWell by James Bell</p>
       <p style="margin: 0;">Essays on faith, culture, and the Christian life</p>
     </div>
   </div>
@@ -254,7 +254,7 @@ export function getManualCampaignTemplate(params: EmailTemplateParams): string {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Message from Livewell</title>
+  <title>Message from LiveWell</title>
   <style>
     body { font-family: 'Georgia', serif; margin: 0; padding: 0; background-color: ${BRAND_COLORS.cream}; }
     .container { max-width: 600px; margin: 0 auto; background-color: white; }
@@ -270,7 +270,7 @@ export function getManualCampaignTemplate(params: EmailTemplateParams): string {
 <body>
   <div class="container">
     <div class="header">
-      <h1>Livewell</h1>
+      <h1>LiveWell</h1>
       <div style="font-size: 14px; color: ${BRAND_COLORS.gold}; margin-top: 8px; letter-spacing: 0.15em; text-transform: uppercase;">by James Bell</div>
     </div>
     
@@ -284,13 +284,13 @@ export function getManualCampaignTemplate(params: EmailTemplateParams): string {
       <div class="divider"></div>
       
       <p style="font-size: 14px; color: ${BRAND_COLORS.gray};">
-        <a href="https://livewell.com" style="color: ${BRAND_COLORS.gold};">Visit Livewell</a> | 
+        <a href="https://www.livewellbyjamesbell.co" style="color: ${BRAND_COLORS.gold};">Visit LiveWell</a> | 
         <a href="${unsubscribeUrl}" style="color: ${BRAND_COLORS.gold};">Unsubscribe</a>
       </p>
     </div>
     
     <div class="footer">
-      <p style="margin: 0 0 12px 0;">© 2026 Livewell by James Bell</p>
+      <p style="margin: 0 0 12px 0;">© 2026 LiveWell by James Bell</p>
       <p style="margin: 0;">Essays on faith, culture, and the Christian life</p>
     </div>
   </div>

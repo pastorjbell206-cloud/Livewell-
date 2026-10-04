@@ -187,6 +187,12 @@ function BookIndex({ books }: { books: BibleBook[] }) {
       <section id="books" style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--s-4)", scrollMarginTop: "70px" }}>
         <div style={{ ...wrap, display: "grid", gap: "var(--s-5)" }}>
           <H2>The Sixty-Six Books</H2>
+          <p style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted)", margin: "calc(-1 * var(--s-4)) 0 0" }}>
+            <Link href="/scripture-index" style={{ color: "var(--ink)", textDecoration: "underline", textDecorationColor: "var(--mustard)", textUnderlineOffset: "3px", backgroundImage: "none" }}>
+              The Scripture index
+            </Link>
+            {" "}lists every place on the site that discusses a passage, book by book.
+          </p>
           {SECTIONS.map((sec) => (
             <div key={sec.label}>
               <H3>{sec.label}</H3>

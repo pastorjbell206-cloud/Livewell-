@@ -357,7 +357,7 @@ export default function EmotionalHealth() {
       <section
         style={{
           background: "var(--charcoal)",
-          color: "var(--bone)",
+          color: "var(--charcoal-fg)",
           padding: "80px 32px 60px",
           textAlign: "center",
         }}
@@ -478,7 +478,7 @@ export default function EmotionalHealth() {
                         ci === 0 ? "4px solid var(--mustard)" : undefined,
                     }}
                   >
-                    <h3
+                    <h2
                       style={{
                         fontSize: "13px",
                         fontWeight: 700,
@@ -489,7 +489,7 @@ export default function EmotionalHealth() {
                       }}
                     >
                       {cat.toUpperCase()}
-                    </h3>
+                    </h2>
                     <div
                       style={{
                         display: "flex",
@@ -1111,7 +1111,7 @@ export default function EmotionalHealth() {
                   alignItems: "center",
                   justifyContent: "space-between",
                   background: "var(--charcoal)",
-                  color: "var(--bone)",
+                  color: "var(--charcoal-fg)",
                   borderRadius: "8px",
                   padding: "24px 32px",
                   textDecoration: "none",

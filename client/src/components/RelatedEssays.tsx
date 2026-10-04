@@ -6,7 +6,7 @@
  * essay verified against client/src/lib/pillar-assignments.ts (the filing
  * registry) — this component fetches nothing, so every link resolves and the
  * card never depends on the network settling. We resolve the current post to
- * its six-pillar id via pillarForPost, offer that pillar's cornerstones (minus
+ * its pillar id via pillarForPost, offer that pillar's cornerstones (minus
  * the current essay, de-duplicated), and top up from a cross-pillar cornerstone
  * set when a pillar is thin — so the reader always gets three to four.
  */
@@ -15,6 +15,7 @@ import { pillarForPost } from "@/lib/taxonomy";
 
 interface PostLike {
   slug?: string | null;
+  related?: { slug: string; title: string; deck?: string }[] | null;
   pillar?: string | null;
 }
 
@@ -28,27 +29,27 @@ interface RelatedItem {
 const CORNERSTONES: Record<number, RelatedItem[]> = {
   1: [
     { slug: "what-christian-nationalism-is-and-is-not", title: "What Christian Nationalism Is and What It Is Not", blurb: "The phrase has become a weapon thrown in both directions, and almost nobody using it has stopped to ask what it actually names." },
-    { slug: "flags-in-the-sanctuary", title: "Flags in the Sanctuary: A Theology of the Nation", blurb: "The flag stands on most American platforms because nobody put it there on purpose, and that is precisely the problem." },
-    { slug: "whose-kingdom-jesus-and-political-power", title: "Whose Kingdom? Jesus and Political Power", blurb: "Jesus was offered every kingdom of the world by someone who actually had them to give, and what he did with the offer settles the question we keep reopening." },
-    { slug: "silence-abuse-church", title: "The Silence About Abuse in the Church", blurb: "The church's institutional protection of abusers and silencing of victims is one of its most serious failures and most urgent moral crises." },
+    { slug: "the-flag-in-the-sanctuary", title: "Should Churches Have an American Flag in the Sanctuary?", blurb: "The flag beside the pulpit arrived through war and grief, not through a vote or a theology." },
+    { slug: "two-kingdoms-faith-and-state", title: "What Does Render Unto Caesar Mean for Church and State?", blurb: "Jesus did not split life into two equal drawers, one for God and one for politics." },
+    { slug: "sexual-abuse-crisis-in-the-church", title: "Sexual Abuse in the Church and How Churches Should Respond", blurb: "From Boston to the Southern Baptist Convention to the Church of England, the reports describe one pattern in opposite kinds of church: the crime, and then the institution protecting itself." },
   ],
   2: [
-    { slug: "is-poverty-political-the-bibles-answer", title: "Is Poverty Political? The Bible's Uncomfortable Answer", blurb: "The question assumes poverty is either a private misfortune or a partisan football, and the prophets refuse both with a word our politics has no translation for." },
+    { slug: "is-poverty-political-the-bibles-answer", title: "What Does the Bible Say About Poverty, and Is It Political?", blurb: "Scripture binds every Christian to the poor through the law, the prophets, Jesus and the apostles, but it hands no party a platform." },
   ],
   3: [
-    { slug: "how-to-read-the-bible-without-making-it-say-what-you-want", title: "How to Read the Bible Without Making It Say What You Want", blurb: "Two sincere readers open the same page and find opposite gods." },
-    { slug: "what-the-gospel-actually-is", title: "What the Gospel Actually Is", blurb: "The gospel is not advice about how to be good or how to feel loved." },
-    { slug: "the-trinity-is-not-optional", title: "The Trinity Is Not Optional", blurb: "We treat the Trinity as the church's embarrassing arithmetic." },
+    { slug: "how-to-read-the-bible-without-making-it-say-what-you-want", title: "How to Read the Bible in Context, and Let It Read You", blurb: "Every reader brings something to the Bible, and its worst misreadings came from readers sure they brought nothing." },
+    { slug: "what-the-gospel-actually-is", title: "What Is the Gospel? What the Good News Actually Means", blurb: "The gospel is not advice about how to be good, and it is not a reassurance that you already are." },
+    { slug: "the-trinity-is-not-optional", title: "What Is the Trinity? Why Christians Believe God Is Three in One", blurb: "The Trinity is not arithmetic the councils laid on top of a simple faith." },
     { slug: "the-council-of-nicaea-what-was-decided-in-325", title: "The Council of Nicaea: What Was Actually Decided in 325", blurb: "Nicaea did not invent the divinity of Jesus or pick the books of the Bible." },
-    { slug: "what-is-biblical-justice-mishpat-and-tsedaqah", title: "What Is Biblical Justice? Mishpat and Tsedaqah", blurb: "Biblical justice is two Hebrew words held together, and the church keeps tearing them apart." },
-    { slug: "the-image-of-god-and-the-lie-of-race", title: "The Image of God and the Lie of Race", blurb: "Race is a recent invention dressed up as an ancient fact, and the church helped sew the costume." },
+    { slug: "justice-not-political-theological", title: "Is Biblical Justice Political? What Scripture Means by Justice", blurb: "Biblical justice is rooted in God's own character and covenant, not in either party's platform." },
+    { slug: "the-image-of-god-and-the-lie-of-race", title: "What Does the Bible Say About Race and Racial Reconciliation?", blurb: "Race as a ranking of human worth is a modern invention the church helped build, not a biblical category." },
   ],
   4: [
-    { slug: "the-atheist-in-the-pulpit", title: "The Atheist in the Pulpit", blurb: "I was not a lapsed churchgoer who wandered back." },
+    { slug: "the-atheist-in-the-pulpit", title: "The Atheist in the Pulpit: What a Former Atheist Still Hears", blurb: "I didn't wander back to a faith I'd lost." },
     { slug: "excavation-not-demolition", title: "Excavation, Not Demolition", blurb: "Demolition and excavation use the same tools — the pry bar, the shovel, the refusal to respect a wall just because it is standing." },
-    { slug: "christendom-is-ending-christianity-is-not", title: "Christendom Is Ending. Christianity Is Not.", blurb: "The arrangement that made Christianity the default religion of the West is dying, and many believers are grieving the wrong thing." },
+    { slug: "christendom-is-ending", title: "What Is Christendom, and What Comes After It?", blurb: "Christendom was the settlement that made Christianity the default of Western life, from Constantine to the American Protestant consensus." },
     { slug: "the-end-of-home-field-advantage", title: "The End of Home-Field Advantage", blurb: "For fifteen centuries the church evangelized a culture that already half believed — the vocabulary pre-taught, the guilt pre-aimed, the God assumed." },
-    { slug: "two-kingdoms-faith-and-state", title: "Two Kingdoms: How Christians Relate Faith and State", blurb: "The old teaching that there are two kingdoms has been used both to silence the church and to baptize the state, and it was meant to do neither." },
+    { slug: "two-kingdoms-faith-and-state", title: "What Does Render Unto Caesar Mean for Church and State?", blurb: "Jesus did not split life into two equal drawers, one for God and one for politics." },
   ],
   5: [
     { slug: "how-to-lead-without-losing-your-soul", title: "How to Lead Without Losing Your Soul", blurb: "A man can gain a thriving church and lose the very soul that was supposed to lead it, and most of the practices we call leadership are how he does it." },
@@ -57,22 +58,29 @@ const CORNERSTONES: Record<number, RelatedItem[]> = {
   6: [
     { slug: "the-machine-that-forms-you", title: "The Machine That Forms You", blurb: "Everyone is arguing about what the machines will do to our jobs, our schools, our elections." },
     { slug: "the-hour-that-forms-the-week", title: "The Hour That Forms the Week", blurb: "Every church has a liturgy, including the church that says it does not." },
-    { slug: "covenant-vs-contract-what-marriage-is", title: "Covenant vs. Contract: What Marriage Actually Is", blurb: "A contract protects you from the person across the table, and a covenant binds you to them, which is why the modern wedding is a contract dressed in the language of a covenant it no longer believes." },
-    { slug: "how-to-raise-children-in-the-faith", title: "How to Raise Children in the Faith Without Crushing Them", blurb: "The opposite of crushing a child into the faith is not letting them choose freely from a neutral distance, because there is no neutral distance, and the home is forming them whether you intend it or not." },
-    { slug: "what-fatherhood-requires", title: "What Fatherhood Requires", blurb: "We have spent a generation telling fathers to be present, and presence is necessary and nowhere near sufficient, because a man can be in the room and still hand his children nothing." },
-    { slug: "what-the-sabbath-is-and-why-you-need-it", title: "What the Sabbath Is and Why You Need It", blurb: "" },
+    { slug: "covenant-vs-contract-what-marriage-is", title: "What Is Covenant Marriage? Why Marriage Is Not a Contract", blurb: "A contract protects two people from each other; a covenant binds them to each other before God." },
+    { slug: "how-to-talk-kids-faith-doubt", title: "How to Raise Kids in the Faith When You Have Doubts Yourself", blurb: "Your children will not inherit your certainty." },
+    { slug: "what-fatherhood-requires", title: "What Does the Bible Say About Fathers and the Father Wound?", blurb: "The word father is full before the church ever says it." },
+    { slug: "what-the-sabbath-is-and-why-you-need-it", title: "What Is the Sabbath and Should Christians Keep It Today?", blurb: "The Sabbath was given twice, once to creatures and once to freed slaves, and Jesus claimed it rather than cancelled it." },
   ],
 };
 
 const FALLBACK: RelatedItem[] = [
-    { slug: "the-atheist-in-the-pulpit", title: "The Atheist in the Pulpit", blurb: "I was not a lapsed churchgoer who wandered back." },
-    { slug: "how-to-read-the-bible-without-making-it-say-what-you-want", title: "How to Read the Bible Without Making It Say What You Want", blurb: "Two sincere readers open the same page and find opposite gods." },
-    { slug: "christendom-is-ending-christianity-is-not", title: "Christendom Is Ending. Christianity Is Not.", blurb: "The arrangement that made Christianity the default religion of the West is dying, and many believers are grieving the wrong thing." },
-    { slug: "covenant-vs-contract-what-marriage-is", title: "Covenant vs. Contract: What Marriage Actually Is", blurb: "A contract protects you from the person across the table, and a covenant binds you to them, which is why the modern wedding is a contract dressed in the language of a covenant it no longer believes." },
+    { slug: "the-atheist-in-the-pulpit", title: "The Atheist in the Pulpit: What a Former Atheist Still Hears", blurb: "I didn't wander back to a faith I'd lost." },
+    { slug: "how-to-read-the-bible-without-making-it-say-what-you-want", title: "How to Read the Bible in Context, and Let It Read You", blurb: "Every reader brings something to the Bible, and its worst misreadings came from readers sure they brought nothing." },
+    { slug: "christendom-is-ending", title: "What Is Christendom, and What Comes After It?", blurb: "Christendom was the settlement that made Christianity the default of Western life, from Constantine to the American Protestant consensus." },
+    { slug: "covenant-vs-contract-what-marriage-is", title: "What Is Covenant Marriage? Why Marriage Is Not a Contract", blurb: "A contract protects two people from each other; a covenant binds them to each other before God." },
 ];
 
 /** Up to four other essays, current excluded, de-duped, topped up when thin. */
 function pickRelated(post: PostLike): RelatedItem[] {
+  // The static essay file carries three picks from the essay's own track,
+  // computed at build time (scripts/build-public-essays.mjs). Those win; the
+  // pillar cornerstones below are the fallback for database-only essays.
+  const built = Array.isArray(post.related)
+    ? post.related.filter(r => r && typeof r.slug === "string" && typeof r.title === "string" && r.slug !== post.slug)
+    : [];
+  if (built.length >= 3) return built.slice(0, 4).map(r => ({ slug: r.slug, title: r.title, blurb: r.deck ?? "" }));
   const current = (post.slug ?? "").trim();
   const pillarId = pillarForPost(post)?.id ?? 5;
   const seen = new Set<string>([current]);
@@ -90,17 +98,30 @@ function pickRelated(post: PostLike): RelatedItem[] {
   return out;
 }
 
-export function RelatedEssays({ post }: { post: PostLike }) {
+export function RelatedEssays({ post, compact = false }: { post: PostLike; compact?: boolean }) {
   const items = pickRelated(post);
   if (items.length === 0) return null;
 
   return (
     <section
-      style={{
-        background: "var(--bone)",
-        padding: "var(--s-6) var(--s-4)",
-        borderTop: "1px solid var(--border)",
-      }}
+      aria-label="Keep reading"
+      style={
+        compact
+          ? {
+              // Inside the essay body: a quiet inset, not a full-bleed band.
+              margin: "2.4em 0",
+              padding: "20px 24px",
+              background: "var(--bone-warm)",
+              borderLeft: "2px solid var(--mustard)",
+              borderRadius: "var(--radius-sm)",
+              fontSize: "16px",
+            }
+          : {
+              background: "var(--bone)",
+              padding: "var(--s-6) var(--s-4)",
+              borderTop: "1px solid var(--border)",
+            }
+      }
     >
       <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
         <div

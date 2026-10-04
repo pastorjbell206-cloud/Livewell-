@@ -35,7 +35,7 @@ export default function TheologyHermeneutics() {
         url="https://www.livewellbyjamesbell.co/theology/hermeneutics"
       />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
             <Link href="/theology" style={{ color: "inherit" }}>Theological Depth</Link> · Reading well

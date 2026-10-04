@@ -524,7 +524,7 @@ export default function ChurchHealth() {
       <section
         style={{
           background: "var(--charcoal)",
-          color: "var(--bone)",
+          color: "var(--charcoal-fg)",
           padding: "80px 32px 60px",
           textAlign: "center",
         }}
@@ -1457,7 +1457,7 @@ export default function ChurchHealth() {
                   borderRadius: "2px",
                   cursor: "pointer",
                   background: "var(--charcoal)",
-                  color: "var(--bone)",
+                  color: "var(--charcoal-fg)",
                   border: "none",
                   transition: "opacity 0.2s",
                 }}
@@ -1529,13 +1529,15 @@ export default function ChurchHealth() {
               }}
             >
               <a
-                href="/pastors"
+                href="https://pastorsconnectionnetwork.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 style={{
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "space-between",
                   background: "var(--charcoal)",
-                  color: "var(--bone)",
+                  color: "var(--charcoal-fg)",
                   borderRadius: "2px",
                   padding: "28px 36px",
                   textDecoration: "none",

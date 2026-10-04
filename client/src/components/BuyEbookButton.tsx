@@ -10,7 +10,7 @@
  * degrades to a clean "request your copy by email" call to action, so the page
  * is never a dead end during the window before payments are switched on.
  */
-import { useState } from "react";
+import { useState, type ReactNode } from "react";
 
 const CONTACT_EMAIL = "Pastorjbell206@gmail.com";
 
@@ -43,10 +43,20 @@ export function BuyEbookButton({
   slug,
   title,
   label = "Buy the eBook — $8.99",
+  fallbackLink,
+  fallback,
 }: {
   slug: string;
   title?: string;
   label?: string;
+  /**
+   * A Stripe Payment Link the book was first sold through. Used only when the
+   * API reports the book has no price of its own yet, so a buyer is never
+   * turned away while the server-side price is being set up.
+   */
+  fallbackLink?: string;
+  /** Same idea, for a book wired to an embedded Stripe Buy Button. */
+  fallback?: ReactNode;
 }) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -82,8 +92,13 @@ export function BuyEbookButton({
         return;
       }
       // 503 from /api/checkout means Stripe (or this book's price) is not
-      // configured yet — that is "coming soon", not a real failure.
+      // configured yet — that is "coming soon", not a real failure. A book
+      // with a Payment Link of its own goes straight there instead.
       if (res.status === 503) {
+        if (fallbackLink && fallbackLink.startsWith("https://buy.stripe.com")) {
+          window.location.href = fallbackLink;
+          return;
+        }
         setComingSoon(true);
       } else if (res.status >= 500) {
         // Never surface raw server/Stripe strings at the buy moment.
@@ -100,6 +115,7 @@ export function BuyEbookButton({
   }
 
   if (comingSoon) {
+    if (fallback) return <>{fallback}</>;
     return (
       <span style={{ display: "inline-flex", flexDirection: "column", gap: "8px" }}>
         <a href={requestHref} style={buttonStyle}>

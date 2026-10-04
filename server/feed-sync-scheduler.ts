@@ -24,8 +24,9 @@ export async function syncFeed(feedUrl: string, source: "substack" | "pastors-co
 
     for (const item of feedItems) {
       try {
-        await createSyndicatedArticle(item);
-        itemsAdded++;
+        const created = await createSyndicatedArticle(item);
+        if (created) itemsAdded++;
+        else itemsSkipped++; // unmapped slug, no /p/ link, or already present
         console.log(`[Feed Sync] Added article: ${item.title}`);
       } catch (error) {
         console.error(`[Feed Sync] Error syncing item: ${item.title}`, error);

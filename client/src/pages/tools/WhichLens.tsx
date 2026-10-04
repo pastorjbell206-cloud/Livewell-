@@ -128,7 +128,7 @@ const LENSES: Record<LensId, {
     verdict: "Some of what you are defending is not the faith. It is the memory of its furniture.",
     body: "This lens grieves — and the grief is real, and nothing here mocks it. A world where the culture did half the church's work is gone, and it took the hymns, the assumptions, and the full pews with it. But Christendom and Christianity were never the same thing, and a faith spent guarding the arrangement cannot spend itself on the kingdom. The church has been small before, strange before, unofficial before — and those were not its worst centuries. The pillar below starts with the grief and refuses to stay there.",
     ctaLabel: "Enter the pillar: After Christendom",
-    ctaHref: "/after-christendom",
+    ctaHref: "/living-well",
     pathHref: "/reading-paths/the-church-after-christendom",
   },
   marketplace: {
@@ -207,10 +207,10 @@ export default function WhichLens() {
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-3) var(--s-5)" }}>
         <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "1.2rem" }}>A diagnostic</div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(2rem, 4.4vw, 2.9rem)", fontWeight: 400, lineHeight: 1.08, letterSpacing: "-0.02em", color: "var(--bone)", marginBottom: "1rem" }}>
+          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(2rem, 4.4vw, 2.9rem)", fontWeight: 400, lineHeight: 1.08, letterSpacing: "-0.02em", color: "var(--charcoal-fg)", marginBottom: "1rem" }}>
             Which lens has you?
           </h1>
-          <p style={{ color: "var(--bone)", opacity: 0.75, fontSize: "1rem", lineHeight: 1.7, maxWidth: "58ch" }}>
+          <p style={{ color: "var(--charcoal-fg)", opacity: 0.75, fontSize: "1rem", lineHeight: 1.7, maxWidth: "58ch" }}>
             Everyone reads the faith through something. Thirteen choices — none of them comfortable, most of them unfair, all of them honest. Pick the answer that is truer of you, not the one you approve of. Your answers stay in this browser tab and are seen by no one.
           </p>
         </div>
@@ -311,7 +311,7 @@ export default function WhichLens() {
                   ))}
                 </div>
               ))}
-              <button onClick={() => setReviewing(false)} style={{ marginTop: "1.6rem", background: "var(--charcoal)", color: "var(--bone)", border: "none", cursor: "pointer", fontFamily: "var(--U)", fontWeight: 500, fontSize: "0.875rem", padding: "0.85rem 1.6rem" }}>
+              <button onClick={() => setReviewing(false)} style={{ marginTop: "1.6rem", background: "var(--charcoal)", color: "var(--charcoal-fg)", border: "none", cursor: "pointer", fontFamily: "var(--U)", fontWeight: 500, fontSize: "0.875rem", padding: "0.85rem 1.6rem" }}>
                 See my lens
               </button>
             </div>

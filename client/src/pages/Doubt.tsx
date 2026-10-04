@@ -11,10 +11,10 @@ export default function Doubt() {
 
   const FEATURED_ARTICLES = [
     {
-      title: "When Fear Rewrites Theology",
+      title: "Is My Faith Driven by Fear? How Anxiety Rewrites What You Believe",
       slug: "when-fear-rewrites-theology",
       topic: "Faith & Doubt",
-      readTime: "10 min read"
+      readTime: "19 min read"
     },
     {
       title: "When the Church Married Empire",
@@ -23,22 +23,16 @@ export default function Doubt() {
       readTime: "12 min read"
     },
     {
-      title: "When God Doesn't Make Sense",
-      slug: "when-god-doesnt-make-sense",
+      title: "Why Does God Feel Silent? Faith When God Seems Absent",
+      slug: "when-god-is-silent-and-the-room-is-empty",
       topic: "Faith & Doubt",
-      readTime: "11 min read"
+      readTime: "20 min read"
     },
     {
-      title: "What If We're Wrong?",
+      title: "What If Christianity Is Wrong? Living Honestly With the Question",
       slug: "what-if-we-are-wrong",
       topic: "Faith & Doubt",
-      readTime: "13 min read"
-    },
-    {
-      title: "The Dark Night of the Soul When God Feels Absent",
-      slug: "dark-night-god-feels-absent",
-      topic: "Faith & Doubt",
-      readTime: "14 min read"
+      readTime: "19 min read"
     },
     {
       title: "Constantine's Bargain",
@@ -52,7 +46,7 @@ export default function Doubt() {
     {
       title: "I used to believe, but now I'm not sure",
       description: "For those who had faith and are now questioning. You're not alone. And this might be the most honest part of what you are walking through.",
-      href: "/writing/dark-night-god-feels-absent"
+      href: "/writing/when-god-is-silent-and-the-room-is-empty"
     },
     {
       title: "Someone I love is questioning their faith",
@@ -86,8 +80,12 @@ export default function Doubt() {
 
       <MinimalNav />
 
+      {/* This page renders the nav directly rather than through Layout, so it
+          declares its own main landmark — the skip link in MinimalNav targets it. */}
+      <main id="main">
+
       {/* HERO SECTION */}
-      <section style={{ background: "var(--ink)", color: "var(--paper)", padding: "80px 20px", minHeight: "600px", display: "flex", alignItems: "center" }}>
+      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "80px 20px", minHeight: "600px", display: "flex", alignItems: "center" }}>
         <div style={{ maxWidth: "800px", margin: "0 auto", textAlign: "center" }}>
           <h1 style={{ fontSize: "clamp(36px, 5vw, 56px)", fontWeight: "bold", lineHeight: "1.2", marginBottom: "24px", fontFamily: "var(--F)" }}>
             When the Questions Won't Stop
@@ -175,7 +173,7 @@ export default function Doubt() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "24px" }}>
             {HARD_QUESTIONS.map((item, i) => (
               <Link key={i} href={item.href} style={{ textDecoration: "none" }}>
-                <div style={{ background: "var(--ink)", color: "var(--paper)", padding: "32px", borderRadius: "8px", cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "space-between", minHeight: "100px" }}>
+                <div style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "32px", borderRadius: "8px", cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "space-between", minHeight: "100px" }}>
                   <h3 style={{ fontSize: "16px", fontWeight: "bold", margin: 0 }}>
                     {item.q}
                   </h3>
@@ -197,7 +195,7 @@ export default function Doubt() {
             your foundations are solid and where the gaps are, then hands you the
             reading that meets you there instead of a verdict.
           </p>
-          <Link href="/tools/theology-quiz" style={{ display: "inline-block", background: "var(--ink)", color: "var(--bone)", padding: "13px 28px", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, borderRadius: "3px", textDecoration: "none" }}>
+          <Link href="/tools/theology-quiz" style={{ display: "inline-block", background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "13px 28px", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, borderRadius: "3px", textDecoration: "none" }}>
             Take the quiz
           </Link>
         </div>
@@ -242,6 +240,8 @@ export default function Doubt() {
           </Link>
         </div>
       </section>
+
+      </main>
 
       <Footer />
       {subjectById("doubt") && <SubjectShelf subject={subjectById("doubt")!} />}

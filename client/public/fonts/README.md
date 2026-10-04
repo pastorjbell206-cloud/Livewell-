@@ -4,11 +4,20 @@ Subsetted woff2 files for the two brand families, downloaded from Google
 Fonts' serving CDN (fonts.gstatic.com) and committed here so no page load
 ever contacts a third party for type.
 
-- **Cormorant Garamond** — upright 400/500/600 + italic 400, latin and
+- **Cormorant Garamond** — upright 400/500 + italic 400, latin and
   latin-ext subsets. Copyright the Cormorant Project Authors; licensed
   under the SIL Open Font License 1.1.
-- **Inter** — 400/500/600, latin and latin-ext subsets. Copyright the
+- **Inter** — 400/500, latin and latin-ext subsets; the 500 face is declared
+  for `font-weight: 500 600`, so UI set at 600 renders in the 500 file with no
+  synthetic bold and no third download (the brand table specifies Inter 500
+  for UI and labels). Copyright the
   Inter Project Authors; licensed under the SIL Open Font License 1.1.
+
+- **Source Serif 4** — 400 and 600, upright and italic, latin and latin-ext
+  subsets; the long-form text face (`--font-text`, `.article-body`). The 600
+  face is declared for `font-weight: 500 700` so `strong` and `b` use it with
+  no synthetic bold. Taken from the `@fontsource/source-serif-4` package
+  (5.3.0). Copyright Adobe; licensed under the SIL Open Font License 1.1.
 
 The matching `@font-face` rules (with the original `unicode-range` values,
 so latin-ext files download only when a page actually uses those

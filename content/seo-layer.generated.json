@@ -1,0 +1,3416 @@
+{
+ "affirmation-is-not-love": {
+  "metaDescription": "Is affirmation the same as love? What Augustine, Aquinas, Lewis, Bonhoeffer and the Gospels teach about a love that wills the good and tells the truth.",
+  "source": "rewrite",
+  "grade": 6.7,
+  "excerptGrade": 11
+ },
+ "authority-we-traded-for-authenticity": {
+  "metaDescription": "Is Scripture or lived experience a Christian's final authority? The case for experience at its strongest, and why the church reads the Bible by the creed.",
+  "source": "rewrite",
+  "grade": 7.2,
+  "excerptGrade": 20.2,
+  "qa": {
+   "question": "Is the Bible or My Experience the Final Authority?",
+   "answer": "In a generation the Christian sentence changed from 'the Bible says' to 'I feel like God is.' Experience has corrected the church before, but only as a witness brought to Scripture, never as the judge seated above it, and the right has made the same trade in a louder voice."
+  }
+ },
+ "bible-with-a-scalpel": {
+  "metaDescription": "Red-letter and trajectory readings of the Bible get something right: the canon moves, and Jesus is its center.",
+  "source": "derived",
+  "grade": 11.8,
+  "excerptGrade": 7.4,
+  "qa": {
+   "question": "Can You Pick and Choose Which Parts of the Bible to Follow?",
+   "answer": "Red-letter and trajectory readings of the Bible get something right: the canon moves, and Jesus is its center. But a center that silences the rest of the canon has become a knife, and the right has its own blade in Romans 13. The older way reads the whole."
+  }
+ },
+ "cancel-culture-without-absolution": {
+  "metaDescription": "Call-out culture kept the church's whole grammar of sin, confession and penance and threw away the one word that made it bearable: absolution.",
+  "source": "derived",
+  "grade": 11.8,
+  "excerptGrade": 11.7,
+  "qa": {
+   "question": "Is Cancel Culture a Religion Without Forgiveness?",
+   "answer": "Call-out culture kept the church's whole grammar of sin, confession and penance and threw away the one word that made it bearable: absolution. The progressive church adopted that economy, the right runs its own version, and only the cross has ever been able to close the account."
+  }
+ },
+ "cheap-grace-left-hand": {
+  "metaDescription": "What Bonhoeffer meant by cheap grace, how right and left each keep a version of it, and why the cross holds forgiveness and accountability together.",
+  "source": "rewrite",
+  "grade": 12.1,
+  "excerptGrade": 10.2
+ },
+ "conscience-outsourced-to-party": {
+  "metaDescription": "Can a Christian be loyal to a political party? What Haidt, Niebuhr, Barmen and Daniel teach about partisanship, conscience and where loyalty ends.",
+  "source": "rewrite",
+  "grade": 7.9,
+  "excerptGrade": 7,
+  "qa": {
+   "question": "Should Christians Be Loyal to a Political Party?",
+   "answer": "We talk constantly about the church captured by the political right. The left's capture is harder to see, because the left believes it is the side that thinks for itself. A Christian may use a party; the danger is letting it keep his conscience."
+  }
+ },
+ "deconstruction-without-reconstruction": {
+  "metaDescription": "Why progressive Christianity is often where deconstruction lands, what liberal Protestantism's history shows about it, and how the creed rebuilds a faith.",
+  "source": "rewrite",
+  "grade": 14.4,
+  "excerptGrade": 10.1,
+  "qa": {
+   "question": "Is Progressive Christianity What Comes After Deconstruction?",
+   "answer": "Many who take apart an evangelical faith rebuild it as progressive Christianity. The church ran that experiment once already, and its record shows that a faith rebuilt from our own ideals ends up looking like us."
+  }
+ },
+ "progressive-christians-and-abortion": {
+  "metaDescription": "The progressive Christian conscience was formed by one conviction: no one gets to decide that a weaker human being doesn't count.",
+  "source": "derived",
+  "grade": 10,
+  "excerptGrade": 7.8,
+  "qa": {
+   "question": "Can a Progressive Christian Be Pro-Life?",
+   "answer": "The progressive Christian conscience was formed by one conviction: no one gets to decide that a weaker human being doesn't count. On the unborn, that conscience goes quiet. The oldest Christian ethic, and Bernardin's consistent ethic of life, ask it to finish its own sentence."
+  }
+ },
+ "right-side-of-history": {
+  "metaDescription": "Where the phrase 'the right side of history' came from, why it carries such moral force, and how Christian hope differs from faith in progress.",
+  "source": "rewrite",
+  "grade": 9.3,
+  "excerptGrade": 8.8,
+  "qa": {
+   "question": "Is 'the Right Side of History' a Christian Idea?",
+   "answer": "The phrase began as a confession that God bends history toward justice. It now means history bends itself and we need only guess its direction, and that is a different faith with a different judge."
+  }
+ },
+ "social-gospel-kingdom-without-a-king": {
+  "metaDescription": "Walter Rauschenbusch recovered something the American church had lost: a kingdom as wide as the world.",
+  "source": "derived",
+  "grade": 11.3,
+  "excerptGrade": 7.9,
+  "qa": {
+   "question": "What Was the Social Gospel, and Where Did It Go Wrong?",
+   "answer": "Walter Rauschenbusch recovered something the American church had lost: a kingdom as wide as the world. Within a generation his heirs kept the kingdom and let go of the King. The way back is not to shrink his kingdom but to set it again on its only foundation."
+  }
+ },
+ "the-respectable-church": {
+  "metaDescription": "The educated progressive congregation kept the ethics its class admires and quietly dropped the offense of the cross.",
+  "source": "derived",
+  "grade": 12.4,
+  "excerptGrade": 10,
+  "qa": {
+   "question": "Why Is the Church So Middle Class?",
+   "answer": "The educated progressive congregation kept the ethics its class admires and quietly dropped the offense of the cross. The suburban evangelical church kept the doctrine and dropped the class-crossing the doctrine demands. James 2 and 1 Corinthians 1 describe a church neither would recognize."
+  }
+ },
+ "the-sin-we-stopped-naming": {
+  "metaDescription": "Why progressive and conservative churches stopped confessing personal sin, what the tradition knew about the sins of the good, and how confession heals.",
+  "source": "rewrite",
+  "grade": 13.4,
+  "excerptGrade": 12.6
+ },
+ "when-justice-becomes-a-gospel": {
+  "metaDescription": "Is social justice biblical, and can it become a gospel of its own? How a true conviction turns into an idol, and how justice stays rooted in the cross.",
+  "source": "rewrite",
+  "grade": 6.7,
+  "excerptGrade": 8.3
+ },
+ "why-mainline-churches-declined": {
+  "metaDescription": "The mainline's decline has many honest explanations, and birth rates explain more of it than evangelicals like to admit.",
+  "source": "derived",
+  "grade": 12.9,
+  "excerptGrade": 10.8
+ },
+ "nostalgia-is-not-the-kingdom": {
+  "metaDescription": "The longing for a lost Christian America feels like faith and works like idolatry.",
+  "source": "derived",
+  "grade": 8.4,
+  "excerptGrade": 9.8,
+  "qa": {
+   "question": "Was America Ever Really a Christian Nation?",
+   "answer": "The longing for a lost Christian America feels like faith and works like idolatry. It is the mirror image of the progressive worship of the future, a moment on the calendar mistaken for the kingdom of God."
+  }
+ },
+ "six-verses-we-memorized": {
+  "metaDescription": "A tribe does not have to delete a single verse to edit the Bible. It only has to decide which ones get printed in bold.",
+  "source": "derived",
+  "grade": 4.9,
+  "excerptGrade": 6.5
+ },
+ "strongman-theology": {
+  "metaDescription": "A frightened church always asks for a king. We are praying the same prayer. The elders did not ask for a tyrant. That is the part everyone misses.",
+  "source": "derived",
+  "grade": 2.3,
+  "excerptGrade": 3.9
+ },
+ "the-flag-in-the-sanctuary": {
+  "metaDescription": "How the American flag came into church sanctuaries, what civil religion is, and how Scripture separates loving your country from worshiping it.",
+  "source": "rewrite",
+  "grade": 13.9,
+  "excerptGrade": 8.5,
+  "qa": {
+   "question": "Should Churches Have an American Flag in the Sanctuary?",
+   "answer": "The flag beside the pulpit arrived through war and grief, not through a vote or a theology. Loving your country is a Christian virtue; the question is whether the sanctuary still teaches which loyalty is final."
+  }
+ },
+ "the-persecution-we-invented": {
+  "metaDescription": "A church that ran the culture for a thousand years lost the room and called it persecution.",
+  "source": "derived",
+  "grade": 7,
+  "excerptGrade": 6.6,
+  "qa": {
+   "question": "Is the American Church Really Being Persecuted?",
+   "answer": "A church that ran the culture for a thousand years lost the room and called it persecution. Here is what that word costs us, and what the actual persecuted church would say if we let them speak."
+  }
+ },
+ "the-third-temptation": {
+  "metaDescription": "In the wilderness, Satan offered Jesus all the kingdoms of the world if he would bow. Power was always the temptation.",
+  "source": "derived",
+  "grade": 6.5,
+  "excerptGrade": 7.9
+ },
+ "two-kingdoms-one-pledge": {
+  "metaDescription": "You cannot pledge ultimate allegiance twice. Allegiance. It is not a soft word.",
+  "source": "derived",
+  "grade": 4.3,
+  "excerptGrade": 9.8,
+  "qa": {
+   "question": "Can You Pledge Allegiance to Two Kingdoms?",
+   "answer": "You cannot pledge ultimate allegiance twice. A pastor on the two-kingdoms tradition, the cost of following a crucified King, and why the line between Caesar and Christ runs straight through the American Christian's chest."
+  }
+ },
+ "when-the-pulpit-became-a-precinct": {
+  "metaDescription": "A church does not have to endorse a candidate to become a precinct. It only has to make the tribe feel at home and the outsider feel watched.",
+  "source": "derived",
+  "grade": 5.5,
+  "excerptGrade": 6
+ },
+ "six-lenses-that-distort-the-bible": {
+  "metaDescription": "You think you read the Bible plainly. Here is how to see the glass before it edits the text.",
+  "source": "derived",
+  "grade": 2.4,
+  "excerptGrade": 9.2
+ },
+ "christendom-is-ending": {
+  "metaDescription": "What Christendom was, from Constantine and Theodosius to Westphalia and America's Protestant consensus, why it is ending, and what faith looks like after.",
+  "source": "rewrite",
+  "grade": 13.9,
+  "excerptGrade": 9.8,
+  "qa": {
+   "question": "What Is Christendom, and What Comes After It?",
+   "answer": "Christendom was the settlement that made Christianity the default of Western life, from Constantine to the American Protestant consensus. It is ending. Christianity is not, and confusing the two leaves the church grieving the wrong loss and reaching for the wrong remedies."
+  }
+ },
+ "exile-is-not-the-end": {
+  "metaDescription": "What Jeremiah 29 meant to the exiles of 597 BC, how Peter and Augustine read it, and whether American Christians can honestly call themselves exiles.",
+  "source": "rewrite",
+  "grade": 13.5,
+  "excerptGrade": 11.1,
+  "qa": {
+   "question": "Are American Christians exiles at all?",
+   "answer": "The modern revival of the word came from more than one direction. Stanley Hauerwas and William Willimon's Resident Aliens (1989) marked Christendom's end with a small scene from Willimon's youth, a Sunday evening in 1963 when the Fox Theater in Greenville, South Carolina, opened in defiance of the old blue laws. They called the church a colony, an island of one culture in the middle of another, whose first political task is to be the church. Lee Beach's The Church in Exile (2015) developed the exile reading into a practical theology for congregations after Christendom."
+  }
+ },
+ "the-numbers-behind-the-decline": {
+  "metaDescription": "The statistics about the dying church get quoted in two directions, apocalypse and denial, and both are usually wrong.",
+  "source": "derived",
+  "grade": 11.1,
+  "excerptGrade": 9.1
+ },
+ "what-dies-when-christendom-dies": {
+  "metaDescription": "Not everything that is dying in the church deserves to be mourned. When something large dies, the first grief is indiscriminate.",
+  "source": "derived",
+  "grade": 7,
+  "excerptGrade": 8.7
+ },
+ "witness-without-power": {
+  "metaDescription": "The early church conquered the Roman Empire without a single seat in its government.",
+  "source": "derived",
+  "grade": 9.3,
+  "excerptGrade": 8.7
+ },
+ "discipling-people-out-of-fear": {
+  "metaDescription": "Political capture runs on fear, and you cannot argue a frightened person back to peace.",
+  "source": "derived",
+  "grade": 8.4,
+  "excerptGrade": 9.4
+ },
+ "pastoring-a-captured-congregation": {
+  "metaDescription": "Your people are being discipled forty hours a week by a screen that knows them better than you do.",
+  "source": "derived",
+  "grade": 6.7,
+  "excerptGrade": 8.4,
+  "qa": {
+   "question": "How Do You Pastor a Church Addicted to Cable News?",
+   "answer": "Your people are being discipled forty hours a week by a screen that knows them better than you do. A working pastor on shepherding a congregation whose first language has quietly become cable news."
+  }
+ },
+ "preaching-to-a-divided-room": {
+  "metaDescription": "Half your room is braced for you to betray them and the other half is hoping you will.",
+  "source": "derived",
+  "grade": 5.9,
+  "excerptGrade": 8.1
+ },
+ "the-last-nonpartisan-in-the-room": {
+  "metaDescription": "Everyone wants to know which side you are on, and refusing to say it costs you something real.",
+  "source": "derived",
+  "grade": 7.2,
+  "excerptGrade": 7
+ },
+ "when-elders-are-loyal-to-a-party": {
+  "metaDescription": "The capture that endangers a church most is not in the pews. It is on the board.",
+  "source": "derived",
+  "grade": 1.6,
+  "excerptGrade": 5.2
+ },
+ "burnout-is-not-a-badge": {
+  "metaDescription": "We turned exhaustion into a virtue and then wondered why our best men kept collapsing. The empty man is not the faithful man.",
+  "source": "derived",
+  "grade": 5.8,
+  "excerptGrade": 4.5
+ },
+ "the-loneliest-room-in-the-church": {
+  "metaDescription": "The fullest building in town has one room where a man sits alone with everything he is not allowed to say.",
+  "source": "derived",
+  "grade": 8.9,
+  "excerptGrade": 7.4
+ },
+ "the-pastor-nobody-checks-on": {
+  "metaDescription": "We built a vocation where the man who asks everyone how they are gets asked by no one. Here is how the grammar got that way, and what it takes to break it.",
+  "source": "derived",
+  "grade": 5.1,
+  "excerptGrade": 5.1
+ },
+ "when-the-calling-costs-more": {
+  "metaDescription": "No one lied to us about the calling. They just never finished the sentence about the bill, and the second invoice has names and dates the first one didn't.",
+  "source": "derived",
+  "grade": 6.3,
+  "excerptGrade": 6.3
+ },
+ "why-pastors-quit": {
+  "metaDescription": "Most pastors do not quit on the bad day. They quit on the ordinary one, after a long erosion no one watched happen.",
+  "source": "derived",
+  "grade": 5.3,
+  "excerptGrade": 4.1
+ },
+ "abuse-in-a-christian-marriage": {
+  "metaDescription": "No verse in Scripture requires anyone to stay where they are being harmed.",
+  "source": "derived",
+  "grade": 5.8,
+  "excerptGrade": 10.4,
+  "qa": {
+   "question": "Does the Bible Require Me to Stay in an Abusive Marriage?",
+   "answer": "No verse in Scripture requires anyone to stay where they are being harmed. The passages most often used to keep a victim at home say something very different when they are read in context, and the church owes an honest account of how it has used them."
+  }
+ },
+ "blended-family-stepparenting": {
+  "metaDescription": "Every stepfamily is born out of a loss, and the stepparent who tries to fill the empty place usually makes it wider.",
+  "source": "derived",
+  "grade": 11.2,
+  "excerptGrade": 10.4
+ },
+ "can-a-marriage-survive-an-affair": {
+  "metaDescription": "An affair forces two questions that people usually ask as one: can this marriage survive, and should it.",
+  "source": "derived",
+  "grade": 8.5,
+  "excerptGrade": 9.1,
+  "qa": {
+   "question": "Can a Marriage Survive an Affair, and Should It?",
+   "answer": "An affair forces two questions that people usually ask as one: can this marriage survive, and should it. Scripture answers the second with more freedom than the church has often allowed, and the first with more hope than the culture expects."
+  }
+ },
+ "caring-for-a-spouse-with-dementia": {
+  "metaDescription": "Our culture quietly believes that a person is their memory, so dementia looks like the end of the person and the end of the marriage.",
+  "source": "derived",
+  "grade": 11.2,
+  "excerptGrade": 10.7,
+  "qa": {
+   "question": "Caring for a Spouse With Dementia: What Do Our Vows Still Ask?",
+   "answer": "Our culture quietly believes that a person is their memory, so dementia looks like the end of the person and the end of the marriage. The Christian faith says we are held in God's memory, and the vow asks for faithfulness, which is not the same as doing everything alone."
+  }
+ },
+ "emotional-labor-in-marriage": {
+  "metaDescription": "What emotional labor and the mental load really are, why one spouse ends up carrying them, why children deepen the gap, and what Scripture asks of both.",
+  "source": "rewrite",
+  "grade": 11.1,
+  "excerptGrade": 9.9,
+  "qa": {
+   "question": "Why Does One Spouse Carry the Whole Mental Load in Marriage?",
+   "answer": "The heaviest work in many marriages is not the chores but the watch: the anticipating and remembering that leaves no trace when it is done well. Children multiply it, and Scripture has always called it work that both spouses owe."
+  }
+ },
+ "empty-nest-marriage": {
+  "metaDescription": "The empty nest doesn't create the question of who a couple is without the children.",
+  "source": "derived",
+  "grade": 6,
+  "excerptGrade": 9.5,
+  "qa": {
+   "question": "Empty Nest Marriage: Who Are We Now That the Kids Are Gone?",
+   "answer": "The empty nest doesn't create the question of who a couple is without the children. It reveals whether the marriage was a union of two people or a partnership in a project, and Scripture planned for the leaving long before we dreaded it."
+  }
+ },
+ "in-laws-leave-and-cleave": {
+  "metaDescription": "Genesis 2:24 does not tell married children to stop honoring their parents. It moves their first loyalty, and it asks the parents to let it move.",
+  "source": "derived",
+  "grade": 5.4,
+  "excerptGrade": 7.3,
+  "qa": {
+   "question": "What Does 'Leave and Cleave' Mean When In-Laws Interfere?",
+   "answer": "Genesis 2:24 does not tell married children to stop honoring their parents. It moves their first loyalty, and it asks the parents to let it move. Most in-law trouble comes from confusing honor with allegiance, on one side of the family or the other."
+  }
+ },
+ "infertility-and-marriage": {
+  "metaDescription": "Scripture does not hurry this grief, and neither should the church. Inside, the pastor will ask the mothers to stand.",
+  "source": "derived",
+  "grade": 3.7,
+  "excerptGrade": 11.1,
+  "qa": {
+   "question": "How Do Couples Survive Infertility Without Losing Each Other?",
+   "answer": "Infertility is a grief without a funeral, and it strains a marriage because two people mourn it on different schedules while quietly wondering whether they are enough for each other. Scripture does not hurry this grief, and neither should the church."
+  }
+ },
+ "marriage-after-kids-co-managers": {
+  "metaDescription": "Young children turn most couples into a good team, and a team is not the same thing as a marriage.",
+  "source": "derived",
+  "grade": 6.4,
+  "excerptGrade": 9,
+  "qa": {
+   "question": "Why Does Marriage Feel Like a Business Partnership After Kids?",
+   "answer": "Young children turn most couples into a good team, and a team is not the same thing as a marriage. The danger of the early parenting years is not partnership but a partnership that quietly replaces the friendship it was meant to serve."
+  }
+ },
+ "midlife-crisis-in-marriage": {
+  "metaDescription": "The midlife ache is usually honest about something, but it is rarely honest about the marriage.",
+  "source": "derived",
+  "grade": 11.3,
+  "excerptGrade": 11.3
+ },
+ "mismatched-desire-in-marriage": {
+  "metaDescription": "A difference in desire is not a defect in either spouse. Picture a married couple in bed on an ordinary weeknight.",
+  "source": "derived",
+  "grade": 7,
+  "excerptGrade": 9.3
+ },
+ "the-resentment-in-your-marriage": {
+  "metaDescription": "What resentment in marriage means, when a grievance is fair and when it turns to bitterness, and how Scripture moves from honest speech to forgiveness.",
+  "source": "rewrite",
+  "grade": 11.6,
+  "excerptGrade": 9.5
+ },
+ "the-slow-drift-that-ends-marriages": {
+  "metaDescription": "Why couples drift apart and end up like roommates: the old sin of acedia, the modern soulmate marriage, and how Scripture calls spouses back to attention.",
+  "source": "rewrite",
+  "grade": 12.3,
+  "excerptGrade": 6.9
+ },
+ "what-engaged-couples-should-talk-about": {
+  "metaDescription": "Most engaged couples use their conversations to test compatibility, and compatibility is the wrong test.",
+  "source": "derived",
+  "grade": 14.6,
+  "excerptGrade": 10.5,
+  "qa": {
+   "question": "What Should Engaged Couples Talk About Before Marriage?",
+   "answer": "Most engaged couples use their conversations to test compatibility, and compatibility is the wrong test. The talks that matter teach two people how to keep a promise to someone they cannot yet fully know."
+  }
+ },
+ "what-silence-costs-a-marriage": {
+  "metaDescription": "Why the silent treatment wounds a marriage, when silence protects or listens instead, and what Scripture, Bonhoeffer and Gottman teach about talking again.",
+  "source": "rewrite",
+  "grade": 12.4,
+  "excerptGrade": 8.8,
+  "qa": {
+   "question": "Where are you?",
+   "answer": "The first question God asks a human being in Scripture is asked of a man who has gone silent. \"But the LORD God called to the man and said to him, 'Where are you?'\" (Genesis 3:9). God isn't lost. The man is. And God doesn't accept the silence as the new arrangement. He comes looking, with a question rather than a charge, which leaves room for an answer, and he walks through the hedge of leaves and trees not to shame the man but to draw him back into speech."
+  }
+ },
+ "what-the-bible-says-about-submission": {
+  "metaDescription": "Ephesians 5 read in context: mutual submission, headship defined by the cross, both main Christian views, and why submission never requires enduring abuse.",
+  "source": "rewrite",
+  "grade": 13.9,
+  "excerptGrade": 8.8,
+  "qa": {
+   "question": "What Does the Bible Say About Submission in Marriage?",
+   "answer": "Ephesians 5 begins a sentence earlier than it is usually quoted, and its heaviest command falls on the husband. Read whole, it gives no one a license to dominate and no one permission to hide."
+  }
+ },
+ "when-you-married-someone-you-no-longer-recognize": {
+  "metaDescription": "Why spouses become strangers, especially once the kids leave, what growing apart does and does not mean, and why the marriage vow was made for this season.",
+  "source": "rewrite",
+  "grade": 11.1,
+  "excerptGrade": 9.4,
+  "qa": {
+   "question": "I Don't Recognize My Spouse Anymore. Is the Marriage Over?",
+   "answer": "The stranger across the table is not proof the marriage failed. Both of you changed, as every vow assumed you would, and the question is whether you will learn the person who is actually there, including the one in the mirror."
+  }
+ },
+ "why-the-first-year-of-marriage-is-hard": {
+  "metaDescription": "The Law of Moses set that year apart for a reason. He loads it one way. She loads it another.",
+  "source": "derived",
+  "grade": 1.8,
+  "excerptGrade": 8.3,
+  "qa": {
+   "question": "Why Is the First Year of Marriage So Hard?",
+   "answer": "The first year of marriage is hard because two people are building one shared world out of two, and because each must lose the spouse they imagined to find the one they married. The Law of Moses set that year apart for a reason."
+  }
+ },
+ "widowhood-grief-and-remarriage": {
+  "metaDescription": "The death of a husband or wife takes away a person and a self at the same time.",
+  "source": "derived",
+  "grade": 5.9,
+  "excerptGrade": 9.4
+ },
+ "adoption-and-foster-care-the-cost": {
+  "metaDescription": "Paul made adoption the name of salvation, and the church has been tempted ever since to cast adoptive parents as the saviors in the story.",
+  "source": "derived",
+  "grade": 11.2,
+  "excerptGrade": 11.7,
+  "qa": {
+   "question": "Should Christians Adopt or Become Foster Parents?",
+   "answer": "Paul made adoption the name of salvation, and the church has been tempted ever since to cast adoptive parents as the saviors in the story. Read in context, Romans 8 and Ephesians 1 give that role to God alone, and ask the families who take a child in to count a cost the recruitment video leaves out."
+  }
+ },
+ "christian-school-public-school-or-homeschool": {
+  "metaDescription": "Faithful Christians choose public school, Christian school and homeschool, and each choice has a serious case behind it.",
+  "source": "derived",
+  "grade": 8.5,
+  "excerptGrade": 7.2,
+  "qa": {
+   "question": "Christian School, Public School or Homeschool: How Do We Choose?",
+   "answer": "Faithful Christians choose public school, Christian school and homeschool, and each choice has a serious case behind it. What Scripture binds is that parents answer for their children's formation. How they school them is a second-order question, and the church should stop treating it as a test of faith."
+  }
+ },
+ "discipline-without-domination": {
+  "metaDescription": "What biblical discipline means: paideia in Ephesians and Hebrews, the rod in Proverbs read as wisdom, the spanking debate, and correcting without anger.",
+  "source": "rewrite",
+  "grade": 13.4,
+  "excerptGrade": 10.3
+ },
+ "family-devotions-authentic": {
+  "metaDescription": "How to do family devotions and teach kids to pray and read the Bible: what Scripture asks of a home, what history shows, and what tired parents can keep.",
+  "source": "rewrite",
+  "grade": 11.6,
+  "excerptGrade": 10.8
+ },
+ "family-worship-toddlers-and-teenagers": {
+  "metaDescription": "We assume worship has to be pitched at a child's level to form him. It's seven-thirty in the evening, and a family is trying to pray together.",
+  "source": "derived",
+  "grade": 7.2,
+  "excerptGrade": 9.1
+ },
+ "gender-roles-at-home-boys-and-girls": {
+  "metaDescription": "Only the first is settled, and only the second is a real doctrinal dispute. Children need their parents to know the difference.",
+  "source": "derived",
+  "grade": 6.4,
+  "excerptGrade": 9.3,
+  "qa": {
+   "question": "Gender Roles in a Christian Home: What Should We Teach Our Kids?",
+   "answer": "Three different questions hide under the phrase gender roles: whether male and female are real and good, whether Scripture gives a husband a distinct headship, and who does the dishes. Only the first is settled, and only the second is a real doctrinal dispute. Children need their parents to know the difference."
+  }
+ },
+ "grandparents-and-the-faith-of-grandchildren": {
+  "metaDescription": "Lois appears in one verse of the Bible, and her whole record is that her faith was sincere and it lived on.",
+  "source": "derived",
+  "grade": 8,
+  "excerptGrade": 10,
+  "qa": {
+   "question": "How Can Grandparents Pass On Their Faith to Grandchildren?",
+   "answer": "Lois appears in one verse of the Bible, and her whole record is that her faith was sincere and it lived on. Grandparents cannot believe for their grandchildren, but the faith of a grandmother has a way of outlasting the generation that set it down."
+  }
+ },
+ "helping-children-grieve": {
+  "metaDescription": "They need honest words, adults who grieve in front of them, and a hope that doesn't lie about the enemy it defeats.",
+  "source": "derived",
+  "grade": 8,
+  "excerptGrade": 10
+ },
+ "hospitality-open-table-family": {
+  "metaDescription": "The modern family was built to be a haven, and a haven is a good thing.",
+  "source": "derived",
+  "grade": 6.1,
+  "excerptGrade": 9.3,
+  "qa": {
+   "question": "How Do We Practice Hospitality as a Family With Kids at Home?",
+   "answer": "The modern family was built to be a haven, and a haven is a good thing. But a haven that only ever shelters its own becomes a fortress, and children raised in a fortress learn a smaller gospel than the one that fed them."
+  }
+ },
+ "how-to-talk-kids-faith-doubt": {
+  "metaDescription": "How to pass on faith to your kids when you have doubts: what Scripture says, what research on handing down faith found, and why honesty outlasts theater.",
+  "source": "rewrite",
+  "grade": 9.8,
+  "excerptGrade": 7.4
+ },
+ "raising-a-child-with-special-needs": {
+  "metaDescription": "Every parent receives a child they didn't design. The father in Mark 9 prayed 'help us,' and the church is supposed to be part of the answer.",
+  "source": "derived",
+  "grade": 5.4,
+  "excerptGrade": 7.1
+ },
+ "raising-kids-who-think": {
+  "metaDescription": "How to answer kids' hard questions about God: why Scripture expects children to ask, what the catechisms knew, and why owned questions outlast recitation.",
+  "source": "rewrite",
+  "grade": 12.5,
+  "excerptGrade": 8.1
+ },
+ "raising-sons-manhood": {
+  "metaDescription": "What biblical manhood means for raising sons: the domineering and diminished counterfeits, the virtue tradition, and Christ's strength under control.",
+  "source": "rewrite",
+  "grade": 13.5,
+  "excerptGrade": 10.5
+ },
+ "sabbath-at-home-family-rest": {
+  "metaDescription": "A day off is rest one person buys, often with someone else's work. A Sabbath is rest a whole household receives together.",
+  "source": "derived",
+  "grade": 6.9,
+  "excerptGrade": 8.3,
+  "qa": {
+   "question": "How Do You Keep the Sabbath as a Family With Young Kids?",
+   "answer": "A day off is rest one person buys, often with someone else's work. A Sabbath is rest a whole household receives together. For a family, keeping one is less about rules than about refusing, one day in seven, the anxious logic that runs the other six."
+  }
+ },
+ "sibling-rivalry-cain-and-abel": {
+  "metaDescription": "The first murder in the Bible is between brothers, and Genesis keeps returning to the same wound through Jacob and Esau and Joseph and his brothers.",
+  "source": "derived",
+  "grade": 11.8,
+  "excerptGrade": 7.6,
+  "qa": {
+   "question": "Am I my brother's keeper?",
+   "answer": "What does this mean for the parent in the minivan? It doesn't mean every squabble is a spiritual crisis, and it doesn't mean children should be lectured on Genesis every time they fight over a seat. Much sibling conflict really is small, and some of it resolves best when parents stay out of it. But it does mean the home is doing something more important than keeping the peace. It is teaching children how to live with the people they didn't choose, whom God has placed beside them, and whom they will know longer than almost anyone else in their lives."
+  }
+ },
+ "single-parenting-and-the-church": {
+  "metaDescription": "The church is right that children flourish with two parents, and wrong to build its life as though every household had them.",
+  "source": "derived",
+  "grade": 8.5,
+  "excerptGrade": 7.8,
+  "qa": {
+   "question": "Why Do Single Parents Feel Invisible at Church?",
+   "answer": "The church is right that children flourish with two parents, and wrong to build its life as though every household had them. Scripture's answer to the parent raising children alone is not a lesser ministry. It is a family, the one Jesus arranged from the cross."
+  }
+ },
+ "teaching-kids-money-and-generosity": {
+  "metaDescription": "Children learn about money less from what we tell them than from what they watch us fear, want and give away.",
+  "source": "derived",
+  "grade": 6.6,
+  "excerptGrade": 8.2,
+  "qa": {
+   "question": "How Do I Teach My Kids About Money and Generosity?",
+   "answer": "Children learn about money less from what we tell them than from what they watch us fear, want and give away. Augustine's distinction between things to be used and things to be enjoyed is still the clearest map a parent has."
+  }
+ },
+ "teenager-identity-who-am-i": {
+  "metaDescription": "Every teenager asks who am I, and our culture tells them to answer by choosing and performing a self.",
+  "source": "derived",
+  "grade": 9.2,
+  "excerptGrade": 9.5
+ },
+ "teenager-losing-faith": {
+  "metaDescription": "Your first instinct will be to win the argument. The argument is not the thing your teenager is testing. You are.",
+  "source": "derived",
+  "grade": 3.4,
+  "excerptGrade": 4.6
+ },
+ "the-first-year-with-a-baby": {
+  "metaDescription": "The first year with a baby strains the body, the marriage and the soul at once, and most new parents face it more alone than any generation before them.",
+  "source": "derived",
+  "grade": 11.6,
+  "excerptGrade": 6,
+  "qa": {
+   "question": "Why Is the First Year With a Baby So Hard on a Marriage?",
+   "answer": "The first year with a baby strains the body, the marriage and the soul at once, and most new parents face it more alone than any generation before them. The exhaustion is not a verdict on your love or your faith. It is a place God has been before you."
+  }
+ },
+ "the-over-scheduled-family": {
+  "metaDescription": "Youth sports are a real good, and the over-scheduled family is rarely a lazy or worldly one. It is usually an anxious one.",
+  "source": "derived",
+  "grade": 7.4,
+  "excerptGrade": 7.8
+ },
+ "the-pastors-kids-are-watching": {
+  "metaDescription": "Your congregation hears your sermons. Your children watch the drive home.",
+  "source": "derived",
+  "grade": 3.7,
+  "excerptGrade": 4.4
+ },
+ "the-weight-of-what-you-model": {
+  "metaDescription": "Why kids learn faith from their parents' example: imitation in Scripture, Bandura and Girard on modeling, hypocrisy, and why a parent's repentance matters.",
+  "source": "rewrite",
+  "grade": 14.9,
+  "excerptGrade": 10.5
+ },
+ "the-work-nobody-watches": {
+  "metaDescription": "The culture calls mothering a waste of a mind. The church hands it a carnation one Sunday a year and loads it like a mule the other fifty-one.",
+  "source": "derived",
+  "grade": 5.5,
+  "excerptGrade": 6.5
+ },
+ "toddler-tantrums-and-the-will": {
+  "metaDescription": "A toddler's tantrum is where a human will first meets the world's refusal, and the parent's temper usually meets it there too.",
+  "source": "derived",
+  "grade": 9.6,
+  "excerptGrade": 5.8
+ },
+ "when-your-adult-child-leaves-the-faith": {
+  "metaDescription": "When a grown son or daughter leaves the faith, parents reach for guilt and then for strategy. The parable of the prodigal, read carefully, offers neither.",
+  "source": "derived",
+  "grade": 7.6,
+  "excerptGrade": 7.1,
+  "qa": {
+   "question": "My Adult Child Left the Faith. What Do I Do Now?",
+   "answer": "When a grown son or daughter leaves the faith, parents reach for guilt and then for strategy. The parable of the prodigal, read carefully, offers neither. It offers a father who let go, kept watching, ran when he saw the boy, and then went out to plead with the son who never left."
+  }
+ },
+ "can-you-have-faith-and-doubt": {
+  "metaDescription": "Can a Christian doubt and still believe? What Scripture does with doubters, how doubt differs from unbelief, and why certainty is not the same as faith.",
+  "source": "rewrite",
+  "grade": 5.4,
+  "excerptGrade": 11.4,
+  "qa": {
+   "question": "Can You Have Faith and Doubt at the Same Time?",
+   "answer": "Doubt is a question asked from inside trust; unbelief is a settled refusal to trust. The church lost many of its most honest people by confusing the two, and by mistaking a modern demand for certainty for the confidence Scripture actually commends."
+  }
+ },
+ "constantines-bargain": {
+  "metaDescription": "Much of what people leave when they leave the faith is not the faith at all.",
+  "source": "derived",
+  "grade": 3.2,
+  "excerptGrade": 5.1
+ },
+ "depression-or-the-dark-night": {
+  "metaDescription": "On depression, the dark night of the soul, and the line no one should have to find alone.",
+  "source": "derived",
+  "grade": 5.2,
+  "excerptGrade": 10
+ },
+ "excavation-not-demolition": {
+  "metaDescription": "Demolition and excavation use the same tools, the pry bar, the shovel, the refusal to respect a wall just because it is standing.",
+  "source": "derived",
+  "grade": 11.3,
+  "excerptGrade": 7.9
+ },
+ "what-if-we-are-wrong": {
+  "metaDescription": "What if Christianity is false? Paul's own test in 1 Corinthians 15, Pascal's wager and its objections, Clifford and James, and how to live with the doubt.",
+  "source": "rewrite",
+  "grade": 5.4,
+  "excerptGrade": 6,
+  "qa": {
+   "question": "What if it's only useful?",
+   "answer": "There is a softer answer, offered from pulpits and by people who don't believe the creed: even if Christianity is wrong, it's good for you. There is real evidence behind the claim. In 2016 the journal JAMA Internal Medicine published a study led by Shanshan Li, with Tyler VanderWeele of Harvard among the authors, that followed tens of thousands of women in the Nurses' Health Study for about sixteen years; those who attended services more than once a week had a substantially lower risk of dying during that time than those who never attended, after adjusting for many other factors."
+  }
+ },
+ "when-fear-rewrites-theology": {
+  "metaDescription": "How fear passes for faith, what the Bible means by the fear of the Lord, and how scrupulosity, prophecy panic and dread distort the face of God.",
+  "source": "rewrite",
+  "grade": 11.1,
+  "excerptGrade": 7.6
+ },
+ "why-does-god-feel-far-away": {
+  "metaDescription": "Feeling that God is far away is not a conclusion you reasoned your way to. It is the weather of our age. A pastor who came from atheism on why.",
+  "source": "hand",
+  "grade": 3.7,
+  "excerptGrade": 6.7,
+  "qa": {
+   "question": "Why Does God Feel So Far Away?",
+   "answer": "The sense that God is distant is not a conclusion you reasoned your way to. It is the weather of an age. A pastor who came to faith from atheism on disenchantment, the buffered self, and why the thinness you feel is the ceiling of a house rather than the edge of the world."
+  }
+ },
+ "the-weight-that-stays": {
+  "metaDescription": "Why grief often lasts for years, what the five stages got wrong, what the Bible says about grieving with hope, and when lasting grief needs real help.",
+  "source": "rewrite",
+  "grade": 9.4,
+  "excerptGrade": 7
+ },
+ "when-god-is-silent-and-the-room-is-empty": {
+  "metaDescription": "Why does God feel silent? Isaiah's hidden God, the lament psalms, Job, the dark night, the hiddenness argument, and Holy Saturday, when God lay in a grave.",
+  "source": "rewrite",
+  "grade": 6.3,
+  "excerptGrade": 9.3
+ },
+ "the-faith-once-delivered": {
+  "metaDescription": "What Jude meant by the faith once delivered, how the creeds of Nicaea and Chalcedon confess Scripture, and why America's no creed but the Bible fails.",
+  "source": "rewrite",
+  "grade": 11.8,
+  "excerptGrade": 12.7
+ },
+ "the-trinity-plainly": {
+  "metaDescription": "It sounds like a math problem the church flunked: one God, three persons. It was never math.",
+  "source": "derived",
+  "grade": 2.3,
+  "excerptGrade": 4.5,
+  "qa": {
+   "question": "How Can God Be Three and One?",
+   "answer": "It sounds like a math problem the church flunked: one God, three persons. It was never math. It is the church's best attempt to say everything true about a God who showed up in person."
+  }
+ },
+ "why-christians-recite-creeds": {
+  "metaDescription": "Standing in a room of strangers, reciting words written before your country existed, sounds like the opposite of real faith.",
+  "source": "derived",
+  "grade": 10.5,
+  "excerptGrade": 7.7,
+  "qa": {
+   "question": "Why Would Anyone Recite a 1,700-Year-Old Creed?",
+   "answer": "Standing in a room of strangers, reciting words written before your country existed, sounds like the opposite of real faith. It is closer to the truth than 'just me and my Bible' ever was."
+  }
+ },
+ "why-the-incarnation-matters": {
+  "metaDescription": "What is the incarnation? John 1, Philippians 2, the councils from Nicaea to Chalcedon, and why God becoming man matters for sin, suffering and the body.",
+  "source": "rewrite",
+  "grade": 7.2,
+  "excerptGrade": 8.6
+ },
+ "easter-is-not-a-day": {
+  "metaDescription": "Easter as the church's oldest feast: Passover and Pascha, the Vigil, the fifty days, why East and West differ on the date, and the truth about Eostre.",
+  "source": "rewrite",
+  "grade": 10.7,
+  "excerptGrade": 9.6,
+  "qa": {
+   "question": "Eostre, Eggs and Rabbits: Is Easter Pagan?",
+   "answer": "Every spring someone posts that Easter is a pagan festival with a cross painted on it, sometimes a skeptic who thinks Christianity is borrowed mythology, sometimes a Christian who thinks the faithful shouldn't keep the holiday. Both assume the name and customs tell you what the feast is. The claim deserves a patient answer, because part of it is true."
+  }
+ },
+ "what-is-advent": {
+  "metaDescription": "What Advent is, how it grew from fasts in Gaul and Rome's four Sundays, and why the season before Christmas waits for Christ's return as well as his birth.",
+  "source": "rewrite",
+  "grade": 10.4,
+  "excerptGrade": 11.8,
+  "qa": {
+   "question": "Does a Christian Have to Keep Advent?",
+   "answer": "Many faithful Christians don't keep Advent, and their reasons deserve their strongest form. The Puritan objection to the calendar as a whole is traced in the essay on the church year. The objection to Advent in particular runs like this. The New Testament commands watchfulness but never a season of it. \"Stay awake\" was spoken about every hour, and to give the return of Christ a season implies the rest of the year is off duty. The free-church Christian, Baptist or independent, would say the whole of life is Advent, and a liturgical season risks turning a daily readiness into an annual mood."
+  }
+ },
+ "why-lent": {
+  "metaDescription": "Why Christians keep Lent and fast: the forty days in Scripture, early church fasting, the Reformers' objections, and how to fast wisely and safely.",
+  "source": "rewrite",
+  "grade": 12,
+  "excerptGrade": 10.9
+ },
+ "why-the-church-has-a-calendar": {
+  "metaDescription": "What the church calendar is, how it grew from Israel's feasts and early Christian practice, and what its seasons from Advent to Ordinary Time form in us.",
+  "source": "rewrite",
+  "grade": 11.5,
+  "excerptGrade": 10.7,
+  "qa": {
+   "question": "Is the Church Calendar Biblical?",
+   "answer": "Many Christians who don't keep the church year decline it on principle, and the principle deserves to be stated as its defenders would state it. God alone may say how he's to be worshiped, and the New Testament appoints one holy day, the Lord's day. Everything else in the calendar is human invention, however old and lovely, and the apostles warned against binding consciences with it. Paul was alarmed at the Galatians: \"You observe days and months and seasons and years!\" (Galatians 4:10, ESV)."
+  }
+ },
+ "the-table-that-divides": {
+  "metaDescription": "The one meal Jesus left to hold his people together has become the thing that most visibly keeps them apart. A newcomer notices this fast.",
+  "source": "derived",
+  "grade": 6.7,
+  "excerptGrade": 5.2
+ },
+ "why-baptism": {
+  "metaDescription": "What baptism is, from Romans 6 to the Didache, and why churches split over infant or believer's baptism, immersion or sprinkling, sacrament or ordinance.",
+  "source": "rewrite",
+  "grade": 12.9,
+  "excerptGrade": 13,
+  "qa": {
+   "question": "Sacrament or Ordinance: What Does the Water Do?",
+   "answer": "Beneath the debate over who and how lies a third question, older and in some ways deeper: what the water actually does. Augustine gave the classic definition in his Tractates on the Gospel of John: \"Accedit verbum ad elementum, et fit sacramentum,\" the word comes to the element, and it becomes a sacrament. A sacrament, on this account, is a visible sign through which God gives what he has promised."
+  }
+ },
+ "why-christians-confess-out-loud": {
+  "metaDescription": "Saying your worst out loud, to another person, in plain words, almost everything in us resists it.",
+  "source": "derived",
+  "grade": 8.4,
+  "excerptGrade": 6.2
+ },
+ "why-faith-uses-physical-things": {
+  "metaDescription": "What Communion is and why Christians share bread and wine: the Last Supper, 1 Corinthians, four views of Christ's presence, and why matter still matters.",
+  "source": "rewrite",
+  "grade": 9.7,
+  "excerptGrade": 10.1,
+  "qa": {
+   "question": "Why would a spiritual faith need bread?",
+   "answer": "The suspicion that matter is beneath God is older than the church. In the second century it took a form the church learned to call Gnosticism, a family of movements rather than a single sect. Its teachers differed, but they shared a verdict: the physical world was a mistake or a prison, made by a lesser power, and the enlightened soul's task was to escape it. The body was not really you. Salvation meant getting out."
+  }
+ },
+ "silence-and-solitude": {
+  "metaDescription": "What the desert fathers, Benedict's Rule, Elijah and Jesus teach about silence and solitude, why we flee them, and how solitude differs from loneliness.",
+  "source": "rewrite",
+  "grade": 14.4,
+  "excerptGrade": 11.5
+ },
+ "angels-demons-and-the-unseen": {
+  "metaDescription": "What the Bible says about angels, demons and Satan, read in context: the divine council, the exorcisms, the powers, and what popular belief added later.",
+  "source": "rewrite",
+  "grade": 13.5,
+  "excerptGrade": 10.3,
+  "qa": {
+   "question": "What Does the Bible Actually Say About Angels and Demons?",
+   "answer": "Scripture says more about the unseen than the modern skeptic allows and far less than popular belief assumes. Read in context, it describes a world with one Lord, servants who carry his errands, and an accuser who has already lost his case."
+  }
+ },
+ "are-miracles-believable": {
+  "metaDescription": "Hume's argument against miracles at full strength, the replies of Lewis, Swinburne, Earman and Keener, and what the Gospels say miracles are for.",
+  "source": "rewrite",
+  "grade": 12.4,
+  "excerptGrade": 14.3
+ },
+ "can-you-be-good-without-god": {
+  "metaDescription": "Yes, unbelievers can be good. The harder question is where morality comes from: Plato's Euthyphro, Kant, Darwin, Nietzsche and the law on the heart.",
+  "source": "rewrite",
+  "grade": 7.3,
+  "excerptGrade": 11.4
+ },
+ "can-you-lose-your-salvation": {
+  "metaDescription": "Can you lose your salvation? Five Christian views at full strength, Hebrews 6 and John 10 read in context, and where assurance of salvation truly rests.",
+  "source": "rewrite",
+  "grade": 4.9,
+  "excerptGrade": 11.9
+ },
+ "christian-sexual-ethic": {
+  "metaDescription": "Is the Christian view of sexuality homophobic? Genesis, Jesus, Romans 1, the strongest affirming and traditional cases, and the church's failures.",
+  "source": "rewrite",
+  "grade": 11,
+  "excerptGrade": 10.5,
+  "qa": {
+   "question": "Is the Christian View of Sexuality Homophobic?",
+   "answer": "The church has often treated gay people with contempt, and that has to be confessed first. But the historic Christian ethic is a vision of the body that asks the same costly thing of everyone, and it deserves to be weighed at full strength beside its best critics."
+  }
+ },
+ "christianity-and-islam": {
+  "metaDescription": "How Christianity and Islam differ on the Trinity, Jesus, the cross, revelation and grace, and whether Christians and Muslims worship the same God.",
+  "source": "rewrite",
+  "grade": 12.9,
+  "excerptGrade": 7.7,
+  "qa": {
+   "question": "Christianity vs Islam: What Is the Real Difference?",
+   "answer": "Christianity and Islam are neither the same faith nor strangers. They agree that God is one, great and merciful, and they part over whether he has shown his face in Jesus, crucified and raised."
+  }
+ },
+ "christians-and-abortion": {
+  "metaDescription": "What the Bible and the historic church teach about abortion, the strongest pro-choice arguments answered, the hard cases, and grace for the wounded.",
+  "source": "rewrite",
+  "grade": 12.4,
+  "excerptGrade": 10.8
+ },
+ "did-god-command-genocide": {
+  "metaDescription": "Did God command genocide in Joshua? The herem texts, the skeptic's case, ancient war rhetoric, Rahab, Marcion and the cross, and what still stays hard.",
+  "source": "rewrite",
+  "grade": 6.3,
+  "excerptGrade": 10.7
+ },
+ "did-the-resurrection-happen": {
+  "metaDescription": "The historical case that Jesus rose: the early creed in 1 Corinthians 15, the empty tomb and women witnesses, and the strongest skeptical replies weighed.",
+  "source": "rewrite",
+  "grade": 12.6,
+  "excerptGrade": 13.7
+ },
+ "divorce-and-remarriage": {
+  "metaDescription": "Biblical grounds for divorce and remarriage: Moses, Jesus, and Paul read in context, four Christian views, and why no view requires staying in danger.",
+  "source": "rewrite",
+  "grade": 11.5,
+  "excerptGrade": 9.4,
+  "qa": {
+   "question": "What Does the Bible Say About Divorce and Remarriage?",
+   "answer": "Asked whether a man could divorce his wife for any cause, Jesus tightened the law of Moses and named an exception in the same breath. Read in context, the texts are harder than the culture wants and more merciful than the church has often been."
+  }
+ },
+ "does-god-actually-exist": {
+  "metaDescription": "Aquinas, Leibniz, the kalam and Anselm's proof, the objections of Hume, Russell, Mackie and Oppy, and which God the arguments would reach if they worked.",
+  "source": "rewrite",
+  "grade": 11.6,
+  "excerptGrade": 8.5,
+  "qa": {
+   "question": "Why is there anything at all?",
+   "answer": "The most famous arguments begin from the plainest fact available: something exists. They are usually lumped together as \"the cosmological argument,\" as though there were one, and much of the confusion in popular debate comes from that lumping. There are at least three distinct arguments here, and they stand or fall on different premises."
+  }
+ },
+ "faith-and-gender-identity": {
+  "metaDescription": "A Christian look at gender dysphoria: Genesis, the eunuch of Acts 8, affirming and traditional views, the Cass Review, and what the church owes.",
+  "source": "rewrite",
+  "grade": 12,
+  "excerptGrade": 12.3,
+  "qa": {
+   "question": "What Does the Church Owe Transgender People?",
+   "answer": "Gender dysphoria is real suffering before it is a political argument. This essay states the affirming case and the historic Christian view of the sexed body at full strength, lands with the historic view, and asks what the church owes the people it has too often turned into a cause."
+  }
+ },
+ "faith-and-science": {
+  "metaDescription": "How the war between science and Christianity was invented, what historians found about Galileo, Darwin and Scopes, and what science cannot answer.",
+  "source": "rewrite",
+  "grade": 12.8,
+  "excerptGrade": 13.1
+ },
+ "how-to-read-genesis-one": {
+  "metaDescription": "How Genesis 1 is built, what it answered in the ancient world, six ways Christians read the days, and the historical Adam debate, stated fairly.",
+  "source": "rewrite",
+  "grade": 11.6,
+  "excerptGrade": 5.9
+ },
+ "if-god-is-good-why-suffering": {
+  "metaDescription": "Why does a good God allow suffering? Epicurus, Plantinga, Rowe's fawn, Job and the cross, and why the answer must never be used on the grieving.",
+  "source": "rewrite",
+  "grade": 7.2,
+  "excerptGrade": 9.7
+ },
+ "is-faith-irrational": {
+  "metaDescription": "What faith means in Scripture, Clifford's charge that it is belief without evidence, and the replies of William James, Plantinga, Aquinas and Pascal.",
+  "source": "rewrite",
+  "grade": 12.4,
+  "excerptGrade": 12.6
+ },
+ "is-faith-just-wishful-thinking": {
+  "metaDescription": "Feuerbach, Marx, Nietzsche and Freud said God is a wish. The replies of Vitz, Lewis and Plantinga, and why Christian hope is not the same as optimism.",
+  "source": "rewrite",
+  "grade": 5,
+  "excerptGrade": 9.4
+ },
+ "is-hell-eternal": {
+  "metaDescription": "It is not whether there is a hell that keeps people awake. It is whether it stops.",
+  "source": "derived",
+  "grade": 2.3,
+  "excerptGrade": 6.5,
+  "qa": {
+   "question": "Is Hell Forever, or Does It End?",
+   "answer": "It is not whether there is a hell that keeps people awake. It is whether it stops. There is a difference, and every grieving heart knows it, between a God who lets a soul finally cease and a God who keeps it alive forever so it can go on burning."
+  }
+ },
+ "is-jesus-really-the-only-way": {
+  "metaDescription": "Is Jesus the only way to God? John Hick's pluralism at full strength, Rahner and Newbigin, Acts 4:12 and John 14:6 in context, and those who never heard.",
+  "source": "rewrite",
+  "grade": 4.6,
+  "excerptGrade": 10.1,
+  "qa": {
+   "question": "Is Jesus Really the Only Way?",
+   "answer": "For most of my life I was an atheist, and of all the things the church claimed, that Jesus is the only way struck me as not merely improbable but obscene. But the parable of the blind men and the elephant cannot survive one question: who is telling it?"
+  }
+ },
+ "just-war-and-pacifism": {
+  "metaDescription": "Two Christians read the same Sermon on the Mount. One picks up a rifle to stop a slaughter. One lays the rifle down and lets them kill him first.",
+  "source": "derived",
+  "grade": 2,
+  "excerptGrade": 3.1
+ },
+ "meaning-without-god": {
+  "metaDescription": "The atheist is not the miserable nihilist the church invented to feel better. He builds real, loving, meaningful lives.",
+  "source": "derived",
+  "grade": 8,
+  "excerptGrade": 5.9,
+  "qa": {
+   "question": "Can a Life Mean Anything Without God?",
+   "answer": "The atheist is not the miserable nihilist the church invented to feel better. He builds real, loving, meaningful lives. The question is not whether he can make meaning. It is whether meaning you make can hold you when you stop believing in it."
+  }
+ },
+ "personhood-in-the-age-of-ai": {
+  "metaDescription": "Turing, Searle's Chinese room, Boethius and the image of God: why intelligence is not personhood, and why measuring worth by output fails the weak.",
+  "source": "rewrite",
+  "grade": 12,
+  "excerptGrade": 11.4
+ },
+ "predestination-and-free-will": {
+  "metaDescription": "Predestination vs. free will from Augustine to Dort, Wesley and Barth: both views at full strength, Romans 9 in context, and what the creeds leave open.",
+  "source": "rewrite",
+  "grade": 5.4,
+  "excerptGrade": 8.4,
+  "qa": {
+   "question": "Predestination vs. Free Will: What Does the Bible Teach?",
+   "answer": "The church has argued for sixteen centuries over whether God chooses us or we choose him, and the creeds never closed the question. Both answers are stronger than their cartoons, and both send the frightened soul to the same place."
+  }
+ },
+ "the-atheist-in-the-pulpit": {
+  "metaDescription": "A former atheist, now a pastor, states the atheist case at its strongest, from Russell to Nagel, and tells what moved him to faith and what belief cost.",
+  "source": "rewrite",
+  "grade": 11.3,
+  "excerptGrade": 4.5
+ },
+ "the-cost-of-following": {
+  "metaDescription": "Every invitation to believe you have ever received was trying to sell you something, and you were right to smell it.",
+  "source": "derived",
+  "grade": 10.6,
+  "excerptGrade": 7.4
+ },
+ "was-jesus-just-a-good-teacher": {
+  "metaDescription": "The polite modern verdict on Jesus is that he was a great moral teacher, nothing more. C.S. Lewis said that was the one thing he never left open to us.",
+  "source": "derived",
+  "grade": 4,
+  "excerptGrade": 6.4,
+  "qa": {
+   "question": "Was Jesus Really Just a Good Teacher?",
+   "answer": "The polite modern verdict on Jesus is that he was a great moral teacher, nothing more. C.S. Lewis said that was the one thing he never left open to us. The trilemma gets attacked, fairly, so here it is pressure-tested against the best objections."
+  }
+ },
+ "what-new-atheists-got-right": {
+  "metaDescription": "I owned the books. I underlined them, I argued from them, and I would have followed all four horsemen off a cliff.",
+  "source": "derived",
+  "grade": 5.3,
+  "excerptGrade": 6.8
+ },
+ "why-didnt-the-bible-ban-slavery": {
+  "metaDescription": "When I was an atheist this was the argument I kept at the top of the list.",
+  "source": "derived",
+  "grade": 4.9,
+  "excerptGrade": 5,
+  "qa": {
+   "question": "Why Didn't the Bible Just Ban Slavery?",
+   "answer": "When I was an atheist this was the argument I kept at the top of the list. If the book were really from a good God, somewhere in all those pages it would say four words: own no human being. It never does. I no longer think that ends the conversation, but I understand why I thought it did."
+  }
+ },
+ "why-trust-the-bible": {
+  "metaDescription": "Can you trust the Bible? An honest look at manuscripts, the Dead Sea Scrolls, how the canon formed, the Gospels as history, contradictions and inerrancy.",
+  "source": "rewrite",
+  "grade": 8.2,
+  "excerptGrade": 11.1,
+  "qa": {
+   "question": "Who decided which books are in the Bible?",
+   "answer": "The second piece of the folklore is more dramatic. In Dan Brown's The Da Vinci Code (2003), a character explains that Constantine commissioned a new Bible, that Jesus was voted into godhood at the Council of Nicaea in 325, and that earlier gospels portraying him as a mortal man were suppressed. Millions of readers took it as history. Nicaea was called to settle the Arian controversy over whether the Son is fully God, and its creed and canons say nothing about which books belong in the New Testament."
+  }
+ },
+ "women-in-ministry": {
+  "metaDescription": "Can women be pastors? Both views stated at full strength, with Genesis, Deborah, Phoebe, Junia, 1 Timothy 2, church history, and why it is second-order.",
+  "source": "rewrite",
+  "grade": 7.2,
+  "excerptGrade": 9.9
+ },
+ "the-historical-jesus-without-the-shortcuts": {
+  "metaDescription": "What historians agree about Jesus: the Roman and Jewish sources, the case against the myth theory, the three quests, and where historical method stops.",
+  "source": "rewrite",
+  "grade": 12,
+  "excerptGrade": 12.5
+ },
+ "what-following-this-actually-costs": {
+  "metaDescription": "What it costs to follow Jesus: Luke 14 read in context, Bonhoeffer's call to come and die, the social price of faith today, and the gains Jesus named.",
+  "source": "rewrite",
+  "grade": 10.5,
+  "excerptGrade": 8.5
+ },
+ "what-secular-explanations-still-have-to-explain": {
+  "metaDescription": "Consciousness, reason, morality, fine-tuning, the church's rise and our longing for more: what naturalism still must explain, and why it isn't a gap.",
+  "source": "rewrite",
+  "grade": 12.4,
+  "excerptGrade": 10.6
+ },
+ "does-god-change-his-mind": {
+  "metaDescription": "Does God change his mind? Numbers 23:19 and Jonah 3:10 in context, the Hebrew niham, classical theism, open theism, and what relenting means for prayer.",
+  "source": "rewrite",
+  "grade": 4.9,
+  "excerptGrade": 8.4
+ },
+ "is-god-in-control": {
+  "metaDescription": "What Christian providence actually claims: Joseph, Romans 8:28 in context, Boethius, Lisbon 1755, the Psalms, and why it isn't fate or a funeral slogan.",
+  "source": "rewrite",
+  "grade": 11,
+  "excerptGrade": 11.8,
+  "qa": {
+   "question": "If God Is in Control, Why Doesn't It Feel Like It?",
+   "answer": "The church never promised that God's rule would feel like rule. The doctrine of providence claims something harder and kinder than the funeral slogan: no evil escapes God's governance, none of it is called good, and faith has always been allowed to complain while it trusts."
+  }
+ },
+ "the-god-who-hides": {
+  "metaDescription": "If God is real and wants to be known, why is He so often silent? The felt absence of God has driven people out of faith and kept others from entering it.",
+  "source": "derived",
+  "grade": 5.4,
+  "excerptGrade": 5.1,
+  "qa": {
+   "question": "Why Does God Hide?",
+   "answer": "If God is real and wants to be known, why is He so often silent? The felt absence of God has driven people out of faith and kept others from entering it. The tradition does not explain the silence away. It does something stranger, it makes a home in it."
+  }
+ },
+ "the-holiness-of-god": {
+  "metaDescription": "What does it mean that God is holy? The Hebrew qadosh, Isaiah 6, Rudolf Otto, Leviticus 19, Uzzah, and how Jesus touched the unclean and made them clean.",
+  "source": "rewrite",
+  "grade": 6.3,
+  "excerptGrade": 8.7,
+  "qa": {
+   "question": "What Does It Mean That God Is Holy?",
+   "answer": "We have flattened holy into very nice, and some of us were taught it as a weapon. Scripture means something stranger: a God wholly other, whose otherness comes near and makes the unclean clean."
+  }
+ },
+ "what-went-wrong": {
+  "metaDescription": "What is sin? The Bible's words for it, sin as a power, Augustine and Pelagius on original sin, the guilt-machine objection, and why the diagnosis is mercy.",
+  "source": "rewrite",
+  "grade": 8.5,
+  "excerptGrade": 10.7
+ },
+ "why-god-started-with-one-family": {
+  "metaDescription": "Why did God choose Abraham? The covenant of Genesis 12, 15 and 17, Paul's reading of it, and why biblical election is a calling for the nations, not favor.",
+  "source": "rewrite",
+  "grade": 6.3,
+  "excerptGrade": 5.9,
+  "qa": {
+   "question": "The Strongest Objection: Why One Family, Why One People?",
+   "answer": "The objection deserves its full strength first. In 1730 the English deist Matthew Tindal published Christianity as Old as the Creation. A perfectly good and just God, he reasoned, would give every human being equal access to what salvation requires, so true religion must be universal, available to reason in every age and nation. A revelation given to one people in one corner of the world, reaching most of humanity late or never, can't be the work of a God who loves all his creatures equally. On this view particularity is not a mystery. It's evidence against the claim."
+  }
+ },
+ "augustine-the-restless-man": {
+  "metaDescription": "We have been reading ourselves in his pages ever since. He wrote the story of his own soul. Not his accomplishments, he had plenty.",
+  "source": "derived",
+  "grade": 4.2,
+  "excerptGrade": 9.8
+ },
+ "christianity-was-never-western": {
+  "metaDescription": "Jesus was a Middle Eastern man. The first convert recorded after Pentecost was an African.",
+  "source": "derived",
+  "grade": 7.8,
+  "excerptGrade": 6.5
+ },
+ "the-fight-to-put-the-bible-in-your-hands": {
+  "metaDescription": "The Bible on your shelf, in a language you can read, cost people their lives. One man was strangled and burned for translating it.",
+  "source": "derived",
+  "grade": 4.8,
+  "excerptGrade": 5.2
+ },
+ "the-first-christians-died-for-this": {
+  "metaDescription": "This is who they were, and why they did it. There is a letter, written around the year 155, from one church to another, describing the death of an old man.",
+  "source": "derived",
+  "grade": 4.5,
+  "excerptGrade": 8.5
+ },
+ "why-people-fled-to-the-desert": {
+  "metaDescription": "Who the desert fathers and mothers were, from Antony and Pachomius to the ammas and Evagrius's eight thoughts, and what households can learn from them.",
+  "source": "rewrite",
+  "grade": 11.6,
+  "excerptGrade": 10.4,
+  "qa": {
+   "question": "Who Were the Desert Fathers and Mothers, and Why Do They Matter?",
+   "answer": "The desert fathers and mothers left a church grown comfortable after Constantine and found that the world had followed them into the sand, lodged in their own hearts. Their notes on that heart became the seven deadly sins, and their wisdom can still be practiced at home."
+  }
+ },
+ "how-do-you-actually-pray": {
+  "metaDescription": "How to pray: the Lord's Prayer clause by clause, the Psalms and set prayers, and how to keep praying through dryness, lament and unanswered prayer.",
+  "source": "rewrite",
+  "grade": 8.3,
+  "excerptGrade": 9.7
+ },
+ "a-whole-life": {
+  "metaDescription": "Jesus was single. Paul was single and called it good. A father of five on the chapter married preachers skip.",
+  "source": "derived",
+  "grade": 3.5,
+  "excerptGrade": 4.8
+ },
+ "friendship-the-love-we-forgot": {
+  "metaDescription": "Why adults struggle to make close friends: the loneliness data, what Aristotle, Aelred and C. S. Lewis knew, and what Jesus meant by calling us friends.",
+  "source": "rewrite",
+  "grade": 5.5,
+  "excerptGrade": 11.4
+ },
+ "how-to-die-well": {
+  "metaDescription": "What Christianity teaches about dying well: the ars moriendi, hospice and palliative care, stopping treatment, and why assisted suicide is not the answer.",
+  "source": "rewrite",
+  "grade": 13.4,
+  "excerptGrade": 9.3
+ },
+ "the-end-of-home-field-advantage": {
+  "metaDescription": "For fifteen centuries the church evangelized a culture that already half believed, the vocabulary pre-taught, the guilt pre-aimed, the God assumed.",
+  "source": "derived",
+  "grade": 15.6,
+  "excerptGrade": 9.8
+ },
+ "the-hour-that-forms-the-week": {
+  "metaDescription": "Every church has a liturgy, including the church that says it does not.",
+  "source": "derived",
+  "grade": 6.7,
+  "excerptGrade": 7.6
+ },
+ "the-machine-that-forms-you": {
+  "metaDescription": "Everyone is arguing about what the machines will do to our jobs, our schools, our elections.",
+  "source": "derived",
+  "grade": 8.4,
+  "excerptGrade": 8.6
+ },
+ "the-womanhood-they-preached-was-small": {
+  "metaDescription": "The world I was raised in preached a womanhood of shrinkage, modesty as fear of the body, submission as erasure, silence as virtue, Scripture as a leash.",
+  "source": "derived",
+  "grade": 12.9,
+  "excerptGrade": 6.5
+ },
+ "what-a-christian-owes-the-city": {
+  "metaDescription": "The critique of political idolatry is finished only when it builds something.",
+  "source": "derived",
+  "grade": 12.7,
+  "excerptGrade": 11.4
+ },
+ "your-body-is-not-a-cage": {
+  "metaDescription": "What the Bible says about the body: Genesis 2:7, the incarnation, the resurrection body of 1 Corinthians 15, the Gnostics, and why it shapes how we age.",
+  "source": "rewrite",
+  "grade": 12.4,
+  "excerptGrade": 10.7
+ },
+ "what-the-resurrection-changes": {
+  "metaDescription": "Why the resurrection matters now: God's verdict on the cross and on injustice, and what Easter means for the body, grief and work, from 1 Corinthians 15.",
+  "source": "rewrite",
+  "grade": 10.7,
+  "excerptGrade": 9.3
+ },
+ "who-did-jesus-claim-to-be": {
+  "metaDescription": "Most people inherit a Jesus who said wise things and was kind to outsiders.",
+  "source": "derived",
+  "grade": 6.7,
+  "excerptGrade": 7.4,
+  "qa": {
+   "question": "Who Did Jesus Claim to Be?",
+   "answer": "Most people inherit a Jesus who said wise things and was kind to outsiders. The historical figure said things that, in his own world, sounded like a man putting himself in the place of God."
+  }
+ },
+ "why-did-jesus-have-to-die": {
+  "metaDescription": "Why Jesus had to die: ransom, satisfaction, substitution and moral influence weighed, God's wrath defined, and the divine child abuse charge answered.",
+  "source": "rewrite",
+  "grade": 13.9,
+  "excerptGrade": 9,
+  "qa": {
+   "question": "Why can't God simply forgive?",
+   "answer": "The objection deserves its strongest form. We forgive each other constantly and nobody dies. If a father can forgive the son who wrecked the car, surely God can forgive without blood, and demanding a death first looks less like love than like a creditor who won't tear up the note until someone pays. The Italian anti-Trinitarian theologian Faustus Socinus pressed this in the sixteenth century with real precision: a debt paid in full hasn't been forgiven, and a debt forgiven needed no payment. You can have forgiveness or satisfaction, he argued, but not both."
+  }
+ },
+ "its-not-just-what-you-do": {
+  "metaDescription": "You have probably never killed anyone. By that standard you are doing fine.",
+  "source": "derived",
+  "grade": 4.2,
+  "excerptGrade": 5.4
+ },
+ "the-hardest-thing-jesus-asked": {
+  "metaDescription": "Turn the other cheek. Love your enemies. There is a line in the Sermon on the Mount that almost everyone admires and almost no one obeys.",
+  "source": "derived",
+  "grade": 4.6,
+  "excerptGrade": 6.5
+ },
+ "what-jesus-said-the-good-life-is": {
+  "metaDescription": "What the Beatitudes mean: makarios and 'ashrê, Matthew 5 beside Luke 6's woes, Aristotle's good life, and how Augustine, Luther and Willard read them.",
+  "source": "rewrite",
+  "grade": 12,
+  "excerptGrade": 10.2
+ },
+ "how-do-you-actually-change": {
+  "metaDescription": "What sanctification means, why willpower fails, how Reformed, Wesleyan, Keswick and Orthodox Christians explain change, and how the examen forms the heart.",
+  "source": "rewrite",
+  "grade": 13.4,
+  "excerptGrade": 12.7
+ },
+ "what-the-bible-says-about-spiritual-gifts": {
+  "metaDescription": "What the Bible teaches about spiritual gifts, the cessationist and continuationist cases at full strength, and how churches should test prophecy today.",
+  "source": "rewrite",
+  "grade": 13.9,
+  "excerptGrade": 10.2
+ },
+ "who-is-the-holy-spirit": {
+  "metaDescription": "Who the Holy Spirit is, what Scripture says he does, what being filled with the Spirit means across the traditions, and why he is not a feeling.",
+  "source": "rewrite",
+  "grade": 10.7,
+  "excerptGrade": 8.5,
+  "qa": {
+   "question": "Who Is the Holy Spirit and What Does He Do?",
+   "answer": "The Holy Spirit is a person, fully God, confessed with the Father and the Son since 381, and his central work is to join us to Christ. Experiences of him are real, but they are the fruit of that union and never its foundation."
+  }
+ },
+ "does-hell-exist": {
+  "metaDescription": "Does hell exist? Gehenna, Matthew 25 and Revelation 20 read in context, three Christian views of hell stated fairly, and why a loving God judges evil.",
+  "source": "rewrite",
+  "grade": 6.7,
+  "excerptGrade": 11,
+  "qa": {
+   "question": "How could a loving God allow it?",
+   "answer": "The ache under the original question remains. On proportion, the objection assumes that sin is a small thing answered with a large penalty. Anselm of Canterbury, in Cur Deus Homo (1098), reasoned that sin must be weighed against the honor of the God it dishonors, so that a wrong against the source of all goodness can't be weighed like a wrong against a stranger. That argument doesn't prove anything about duration, and conditionalists accept it as readily as traditionalists do. But it does undo the picture of a cosmic overreaction to trivia."
+  }
+ },
+ "what-is-heaven-actually-like": {
+  "metaDescription": "What the Bible says about heaven: the state between death and resurrection, new heavens and new earth, the vision of God, and what near-death books miss.",
+  "source": "rewrite",
+  "grade": 10.9,
+  "excerptGrade": 8.3
+ },
+ "can-you-be-a-christian-alone": {
+  "metaDescription": "Can you be a Christian without going to church? What Scripture, Cyprian, the Reformers and Bonhoeffer say about a faith that is personal but never private.",
+  "source": "rewrite",
+  "grade": 7.2,
+  "excerptGrade": 9.6,
+  "qa": {
+   "question": "Can You Be a Christian Without Going to Church?",
+   "answer": "You can believe alone, and God does not lose track of anyone who does. But the New Testament knows a faith that is personal and never private, and the things that make a Christian a Christian, the word from outside, the water and the bread, cannot be done by one person."
+  }
+ },
+ "how-to-find-a-church-worth-joining": {
+  "metaDescription": "How to find a good church without church shopping: the historic marks of the church, what to look for in leaders, and the red flags to walk away from.",
+  "source": "rewrite",
+  "grade": 10,
+  "excerptGrade": 8.2
+ },
+ "what-is-church-actually-for": {
+  "metaDescription": "If church is a service you attend, then a bad service is reason enough to stop. But the New Testament never describes a service.",
+  "source": "derived",
+  "grade": 6.3,
+  "excerptGrade": 8.4,
+  "qa": {
+   "question": "What Is Church Actually For?",
+   "answer": "If church is a service you attend, then a bad service is reason enough to stop. But the New Testament never describes a service. It describes a body, a family, and a witness, and that changes everything about whether you can replace it."
+  }
+ },
+ "when-the-church-is-what-hurt-you": {
+  "metaDescription": "Hurt by a church? Why betrayal by a congregation cuts so deep, what Scripture says about it, forgiveness versus reconciliation, and whether to go back.",
+  "source": "rewrite",
+  "grade": 8.2,
+  "excerptGrade": 11.2,
+  "qa": {
+   "question": "Is It Better to Stay Away From Church?",
+   "answer": "Some who read this have already decided, and their case deserves to be stated as they would state it. They gave years to a congregation, taught the classes and brought the meals, and when the moment came the church took their trust and handed back a rumor. Since leaving they sleep better on Saturday nights, and their children are no longer around the people who did it. They pray more honestly at home than they ever did in the building, they still read Scripture, and they keep a few Christian friends who proved faithful."
+  }
+ },
+ "1-preaching-to-the-felt-need-without-the-deeper-need": {
+  "metaDescription": "Congregations have felt needs, the things they know they want help with. Parenting, marriage, finances, purpose, anxiety.",
+  "source": "derived",
+  "grade": 7.2,
+  "excerptGrade": 7.2
+ },
+ "1-the-slow-burn-how-ministry-exhaustion-sneaks-up-on-you-before-you-see-it-coming": {
+  "metaDescription": "Nobody burns out on a Tuesday afternoon and decides they are done. That is not how it works. Burnout in ministry is not a moment, it is a process.",
+  "source": "derived",
+  "grade": 4.9,
+  "excerptGrade": 4.9
+ },
+ "1-trying-to-change-everything-in-the-first-year": {
+  "metaDescription": "New pastors often arrive with a clear vision of what the church should become.",
+  "source": "derived",
+  "grade": 5.9,
+  "excerptGrade": 5.9
+ },
+ "10-its-okay-to-see-a-counselor-why-pastors-resist-and-why-they-shouldnt": {
+  "metaDescription": "Of all the things that are slowly changing in pastoral culture, the stigma around professional counseling may be the most stubbornly persistent.",
+  "source": "derived",
+  "grade": 13.4,
+  "excerptGrade": 13.4
+ },
+ "11-what-pastors-need-to-know-about-depression-and-why-its-not-a-faith-problem": {
+  "metaDescription": "Depression does not care about your theology. It does not make exceptions for people who have been called to preach the hope of the resurrection.",
+  "source": "derived",
+  "grade": 6.7,
+  "excerptGrade": 6.7
+ },
+ "12-anxiety-perfectionism-and-the-pastor-breaking-the-cycle": {
+  "metaDescription": "They look like virtues from the outside. The pastor who prepares for Sunday with extraordinary care.",
+  "source": "derived",
+  "grade": 6.7,
+  "excerptGrade": 8.4
+ },
+ "13-you-are-not-your-churchs-attendance-numbers": {
+  "metaDescription": "Somewhere along the way, the attendance count became the pastoral report card.",
+  "source": "derived",
+  "grade": 9.7,
+  "excerptGrade": 9.7
+ },
+ "14-how-to-preach-the-same-gospel-to-people-who-are-nothing-alike": {
+  "metaDescription": "Walk into almost any established congregation in America and look at the range of people sitting in the pews.",
+  "source": "derived",
+  "grade": 12.3,
+  "excerptGrade": 12.3
+ },
+ "15-when-your-preaching-gets-stale-and-what-to-do-about-it": {
+  "metaDescription": "Admitting your preaching has gone stale carries a shame all its own. You have said this before. You know what you think it means.",
+  "source": "derived",
+  "grade": 2.3,
+  "excerptGrade": 5.8
+ },
+ "16-five-sermon-habits-that-are-slowly-shrinking-your-congregations-faith": {
+  "metaDescription": "Congregations have felt needs, the things they know they want help with. Parenting, marriage, finances, purpose, anxiety.",
+  "source": "derived",
+  "grade": 7.2,
+  "excerptGrade": 13.6
+ },
+ "17-preaching-to-the-room-thats-not-there-yet-how-to-reach-the-unchurched-through-your-sunday-message": {
+  "metaDescription": "One percent. Part of this is structural, the church has always struggled to reach those who do not come. But part of it is homiletical.",
+  "source": "derived",
+  "grade": 3.7,
+  "excerptGrade": 14
+ },
+ "18-80-of-churches-are-plateaued-or-declining-are-you-one-of-them": {
+  "metaDescription": "Not growing, maintaining at best, losing ground at worst. This sounds obvious, but it is not easy in practice.",
+  "source": "derived",
+  "grade": 4.3,
+  "excerptGrade": 14.3
+ },
+ "19-what-small-churches-get-right-that-large-churches-rarely-talk-about": {
+  "metaDescription": "The contemporary church conversation is dominated by large churches. The conferences feature their pastors. The podcasts interview their leaders.",
+  "source": "derived",
+  "grade": 11.1,
+  "excerptGrade": 11.1
+ },
+ "2-always-resolving-the-tension": {
+  "metaDescription": "Great preaching creates tension before it resolves it. Preachers who manage their feedback develop, over time, a systematic bias toward early resolution.",
+  "source": "derived",
+  "grade": 11.2,
+  "excerptGrade": 14
+ },
+ "2-confusing-availability-with-pastoral-care": {
+  "metaDescription": "New pastors often feel that being available to everyone at all times is the highest expression of pastoral love.",
+  "source": "derived",
+  "grade": 11.7,
+  "excerptGrade": 8.7
+ },
+ "2-what-a-sabbatical-is-and-why-your-church-should-require-one": {
+  "metaDescription": "The word sabbatical carries different weight depending on who is in the room.",
+  "source": "derived",
+  "grade": 8.5,
+  "excerptGrade": 8.5
+ },
+ "20-the-metrics-that-actually-tell-you-if-your-church-is-healthy": {
+  "metaDescription": "This is not a peripheral observation. The problem with tracking only attendance and giving is not that these things do not matter, they do.",
+  "source": "derived",
+  "grade": 7.3,
+  "excerptGrade": 14.8
+ },
+ "21-when-is-it-time-to-revitalize-and-when-is-it-time-to-replant": {
+  "metaDescription": "The language of church revitalization has been one of the most discussed topics in pastoral circles for the past decade, and for good reason.",
+  "source": "derived",
+  "grade": 12.5,
+  "excerptGrade": 12.5
+ },
+ "22-how-to-lead-a-church-through-a-season-of-decline-without-losing-hope": {
+  "metaDescription": "Leading a declining church is one of the loneliest experiences in pastoral ministry. The conference speakers talk about growth.",
+  "source": "derived",
+  "grade": 9.9,
+  "excerptGrade": 8.2
+ },
+ "23-how-to-give-feedback-that-actually-changes-behavior": {
+  "metaDescription": "Most feedback conversations in ministry contexts are ineffective. Feedback that changes behavior is a learnable skill.",
+  "source": "derived",
+  "grade": 11.1,
+  "excerptGrade": 14.1
+ },
+ "24-the-most-dangerous-person-on-a-church-staff-it-might-surprise-you": {
+  "metaDescription": "These are real dangers, and they deserve genuine leadership attention. But the most consistently damaging person on many church staffs is none of these.",
+  "source": "derived",
+  "grade": 7.8,
+  "excerptGrade": 14.8
+ },
+ "25-when-to-fire-someone-and-how-to-do-it-with-integrity": {
+  "metaDescription": "No pastor goes into ministry hoping to fire people. Letting someone go is one of the hardest leadership tasks in any context.",
+  "source": "derived",
+  "grade": 7.5,
+  "excerptGrade": 10.5
+ },
+ "26-building-a-staff-culture-where-people-dont-burn-out-and-leave": {
+  "metaDescription": "The cost of staff turnover in ministry is enormous and systematically underestimated.",
+  "source": "derived",
+  "grade": 16.6,
+  "excerptGrade": 16.6
+ },
+ "27-what-gen-z-actually-wants-from-a-church-and-why-its-not-what-you-think": {
+  "metaDescription": "They are showing up. Why they are returning is its own story. This piece is about the harder thing: what happens after they walk in.",
+  "source": "derived",
+  "grade": 3.2,
+  "excerptGrade": 14.3
+ },
+ "28-why-young-adults-are-coming-back-to-church-and-how-not-to-lose-them-again": {
+  "metaDescription": "Something has been stirring. The question for every church is not whether young adults are spiritually curious right now.",
+  "source": "derived",
+  "grade": 7.4,
+  "excerptGrade": 16.6
+ },
+ "29-what-the-scandals-in-the-church-are-teaching-us-about-accountability": {
+  "metaDescription": "The past decade has been one of the most sobering in the modern history of the American church when it comes to leadership accountability.",
+  "source": "derived",
+  "grade": 13.9,
+  "excerptGrade": 13.9
+ },
+ "3-how-to-return-to-ministry-after-burning-out": {
+  "metaDescription": "Standing on the other side of a ministry burnout is its own kind of loneliness.",
+  "source": "derived",
+  "grade": 8.4,
+  "excerptGrade": 8.4
+ },
+ "3-illustrating-everything-with-success-stories": {
+  "metaDescription": "It implies that faithful application of biblical truth reliably produces good outcomes in visible, timely ways.",
+  "source": "derived",
+  "grade": 15,
+  "excerptGrade": 16.8
+ },
+ "3-treating-sunday-as-the-only-metric": {
+  "metaDescription": "It is easy, especially in a culture that quantifies everything, to measure the health of your ministry by Sunday attendance and sermon reception.",
+  "source": "derived",
+  "grade": 14.9,
+  "excerptGrade": 11.1
+ },
+ "30-how-to-talk-about-political-divisiveness-from-the-pulpit-without-destroying-your-church": {
+  "metaDescription": "The polarization that has fractured American public life has not stopped at the church door.",
+  "source": "derived",
+  "grade": 10.7,
+  "excerptGrade": 13.7
+ },
+ "31-when-a-church-split-happens-surviving-it-learning-from-it-moving-forward": {
+  "metaDescription": "Church splits are among the most painful experiences in ministry, and they are more common than the pastoral culture likes to acknowledge.",
+  "source": "derived",
+  "grade": 12.3,
+  "excerptGrade": 12.3
+ },
+ "32-reformed-and-charismatic-pastors-at-the-same-table-what-happened-when-we-tried": {
+  "metaDescription": "I want to be honest about how skeptical I was going in. The charismatic-cessationist divide is not as old as it feels.",
+  "source": "derived",
+  "grade": 6.9,
+  "excerptGrade": 16.4
+ },
+ "33-the-case-for-doing-city-wide-church-together-at-least-once-a-year": {
+  "metaDescription": "There is a moment that most pastors who have experienced a genuine city-wide worship gathering can describe with unusual precision.",
+  "source": "derived",
+  "grade": 13.5,
+  "excerptGrade": 13.5
+ },
+ "34-what-a-healthy-pastor-referral-network-actually-looks-like": {
+  "metaDescription": "Every pastor makes referrals, to counselors, to other ministries, to specialists in areas outside their competence.",
+  "source": "derived",
+  "grade": 15,
+  "excerptGrade": 15
+ },
+ "35-how-three-small-churches-co-planted-one-new-congregation": {
+  "metaDescription": "The conversation that started the whole thing was not particularly visionary. It was actually a complaint.",
+  "source": "derived",
+  "grade": 10.4,
+  "excerptGrade": 14.2
+ },
+ "36-before-you-launch-that-ministry-ask-if-another-church-in-town-is-already-doing-it": {
+  "metaDescription": "Few things energize a pastor like the vision for a new ministry. The next steps are obvious: form a team, develop a plan, build a budget, launch.",
+  "source": "derived",
+  "grade": 5.8,
+  "excerptGrade": 6.8
+ },
+ "37-what-predominantly-white-churches-get-wrong-when-they-talk-about-diversity": {
+  "metaDescription": "This article is not an attack on the impulse. The desire to embody that vision is right.",
+  "source": "derived",
+  "grade": 5.1,
+  "excerptGrade": 18.2
+ },
+ "39-church-closures-are-outpacing-church-plants-3-to-1-what-that-means-for-the-mission": {
+  "metaDescription": "For every congregation that opens its doors for the first time, three are closing theirs for the last time.",
+  "source": "derived",
+  "grade": 8,
+  "excerptGrade": 13.2
+ },
+ "4-navigating-conflict-alone": {
+  "metaDescription": "Every church has conflict. Pastors who pretend otherwise are either new or dishonest.",
+  "source": "derived",
+  "grade": 7.8,
+  "excerptGrade": 7.8
+ },
+ "4-never-preaching-anything-that-costs-you-something": {
+  "metaDescription": "The safest sermon to preach is the one everyone agrees with in advance.",
+  "source": "derived",
+  "grade": 6.7,
+  "excerptGrade": 6.7
+ },
+ "4-the-difference-between-being-tired-and-being-done": {
+  "metaDescription": "Every pastor reaches moments when they wonder if they should quit. This is not a sign of weak faith or insufficient calling.",
+  "source": "derived",
+  "grade": 5.9,
+  "excerptGrade": 5.5
+ },
+ "40-how-to-talk-about-global-missions-in-a-way-that-actually-moves-your-congregation": {
+  "metaDescription": "The missionary couple stands at the front with a slideshow of photographs and statistics and a map with pins in it. The need is described.",
+  "source": "derived",
+  "grade": 6.7,
+  "excerptGrade": 15.5
+ },
+ "41-when-short-term-mission-trips-help-and-when-they-hurt": {
+  "metaDescription": "Somewhere on your church calendar there is probably a trip. The dates are set. The fundraising letters may already be drafted.",
+  "source": "derived",
+  "grade": 6.2,
+  "excerptGrade": 6.2
+ },
+ "42-the-unreached-people-groups-closest-to-you-that-youve-never-considered": {
+  "metaDescription": "When the church talks about unreached people groups, the conversation almost always faces outward and away, toward the ethnic and linguistic communities.",
+  "source": "derived",
+  "grade": 15,
+  "excerptGrade": 15.6
+ },
+ "43-how-national-pastors-are-redefining-what-it-means-to-be-a-missionary": {
+  "metaDescription": "The argument is over. The evidence ended it. The church in Africa grew from under ten million Christians in 1900 to hundreds of millions today.",
+  "source": "derived",
+  "grade": 5.6,
+  "excerptGrade": 11.4
+ },
+ "44-what-the-church-in-the-global-south-can-teach-the-church-in-america-about-suffering": {
+  "metaDescription": "The American church has developed a sophisticated relationship with comfort. Its buildings are climate controlled.",
+  "source": "derived",
+  "grade": 13.3,
+  "excerptGrade": 13.3
+ },
+ "45-building-a-mission-sending-culture-in-a-church-thats-never-sent-anyone": {
+  "metaDescription": "The mission stops being abstract. It becomes personal. This article is an attempt to map it.",
+  "source": "derived",
+  "grade": 4.9,
+  "excerptGrade": 14.8
+ },
+ "46-how-to-pastor-a-congregation-that-is-politically-divided-and-keep-the-gospel-central": {
+  "metaDescription": "Today it is. The challenge of pastoring across political division is not primarily a political challenge. It is a theological one.",
+  "source": "derived",
+  "grade": 10.2,
+  "excerptGrade": 15
+ },
+ "47-engaging-the-nones-what-research-tells-us-about-reaching-the-religiously-unaffiliated": {
+  "metaDescription": "The \"nones\", people who claim no religious affiliation when surveyed, are the fastest-growing religious demographic in the United States.",
+  "source": "derived",
+  "grade": 15.4,
+  "excerptGrade": 15.4
+ },
+ "48-ai-authenticity-and-the-pastor-what-artificial-intelligence-means-for-ministry": {
+  "metaDescription": "I know because I did it too. The old question was whether a machine could write a sermon. It can.",
+  "source": "derived",
+  "grade": 1.8,
+  "excerptGrade": 13
+ },
+ "49-when-the-church-becomes-a-political-brand-and-how-to-step-back-from-the-edge": {
+  "metaDescription": "It happens gradually, and then suddenly. The culture of the congregation has shifted.",
+  "source": "derived",
+  "grade": 7.8,
+  "excerptGrade": 17.7
+ },
+ "5-ending-every-sermon-with-the-same-application-structure": {
+  "metaDescription": "The congregation learns this faster than the preacher realizes. After a few months, sometimes a few weeks, the experienced attender knows what is coming.",
+  "source": "derived",
+  "grade": 9.2,
+  "excerptGrade": 15.4
+ },
+ "5-when-the-man-in-the-pulpit-is-falling-apart": {
+  "metaDescription": "He stood at the pulpit last Sunday and preached about the peace of God that surpasses understanding.",
+  "source": "derived",
+  "grade": 9.1,
+  "excerptGrade": 7.6
+ },
+ "50-how-to-lead-when-trust-in-institutions-including-the-church-is-at-an-all-time-low": {
+  "metaDescription": "Trust in government, in media, in healthcare, in universities, in the justice system, all of these have declined to historic lows by multiple measures.",
+  "source": "derived",
+  "grade": 14.4,
+  "excerptGrade": 17.4
+ },
+ "7-protecting-your-marriage-when-ministry-demands-everything": {
+  "metaDescription": "Ministry and marriage are both long-term commitments that require sustained, intentional investment to flourish.",
+  "source": "derived",
+  "grade": 14.3,
+  "excerptGrade": 14.3
+ },
+ "8-the-pastors-kids-are-watching-what-are-they-seeing": {
+  "metaDescription": "Ask most pastors' kids what they remember most vividly about growing up in a ministry household, and you will hear a range of answers.",
+  "source": "derived",
+  "grade": 11.5,
+  "excerptGrade": 11.5
+ },
+ "9-how-to-be-present-at-home-when-your-mind-never-leaves-the-church": {
+  "metaDescription": "The pastoral mind is, by vocation, a mind that carries other people. This is not a design flaw.",
+  "source": "derived",
+  "grade": 5,
+  "excerptGrade": 5
+ },
+ "addiction-justice-issue": {
+  "metaDescription": "Is addiction a sin or a disease? The disease model and its critics, Augustine and Romans 7, the roots of AA, and why addiction is also a justice question.",
+  "source": "rewrite",
+  "grade": 7.2,
+  "excerptGrade": 11.1
+ },
+ "ai-authenticity-pastor-artificial-intelligence": {
+  "metaDescription": "A pastor asked me recently whether it was wrong to use artificial intelligence to write his sermons. I did not answer immediately.",
+  "source": "derived",
+  "grade": 9.6,
+  "excerptGrade": 9.6
+ },
+ "amos-american-church": {
+  "metaDescription": "What the prophet Amos told prosperous, worshiping Israel under Jeroboam II about worship without justice, and what his warning means for churches today.",
+  "source": "rewrite",
+  "grade": 13.9,
+  "excerptGrade": 10.2
+ },
+ "anxiety-perfectionism-pastor-breaking-cycle": {
+  "metaDescription": "The perfectionist pastor looks, from the outside, like a man of unusually high standards. He prepares more thoroughly than anyone around him.",
+  "source": "derived",
+  "grade": 8.5,
+  "excerptGrade": 8.5
+ },
+ "art-of-saying-no-without-guilt": {
+  "metaDescription": "Somewhere in his training, the pastor absorbed a theology of yes. Every need became a command. Every request became the voice of God.",
+  "source": "derived",
+  "grade": 7.4,
+  "excerptGrade": 7.4
+ },
+ "atonement-more-than-one-model": {
+  "metaDescription": "The cross of Christ is the center of the Christian faith. Every tradition affirms this.",
+  "source": "derived",
+  "grade": 4.6,
+  "excerptGrade": 4.6
+ },
+ "before-launch-ministry-ask-other-church": {
+  "metaDescription": "Before you build the food pantry, ask who already runs one. These are not romantic questions. They are stewardship questions.",
+  "source": "derived",
+  "grade": 4.7,
+  "excerptGrade": 13.7
+ },
+ "bivocational-pastors-get-right": {
+  "metaDescription": "An enormous share of American pastors, in many denominations, most of them, serve their congregations on part-time or bivocational terms.",
+  "source": "derived",
+  "grade": 15.2,
+  "excerptGrade": 15.2
+ },
+ "build-real-friendships-other-pastors": {
+  "metaDescription": "In most towns of any size there is a pastors' lunch a few times a year.",
+  "source": "derived",
+  "grade": 4.7,
+  "excerptGrade": 4.7
+ },
+ "building-leadership-team": {
+  "metaDescription": "Look at how Paul planted a church and you will notice what he did before he left. He appointed elders.",
+  "source": "derived",
+  "grade": 3.7,
+  "excerptGrade": 3.7
+ },
+ "burnout-nobody-talks-about": {
+  "metaDescription": "The burnout we talk about is dramatic. The pastor who quits. The one who has the affair.",
+  "source": "derived",
+  "grade": 2.6,
+  "excerptGrade": 4.1
+ },
+ "church-abandoned-public-square": {
+  "metaDescription": "It is a coherent story. It is also, historically, mostly false. It was a defeat that was later reframed as virtue.",
+  "source": "derived",
+  "grade": 6.2,
+  "excerptGrade": 16.1
+ },
+ "church-closures-outpacing-plants": {
+  "metaDescription": "The data on American church decline is not new. What is new is the scale and the pace.",
+  "source": "derived",
+  "grade": 3.7,
+  "excerptGrade": 16.5
+ },
+ "church-credibility-problem": {
+  "metaDescription": "Why Americans stopped trusting the church: what Gallup's numbers show, the causes we own, how a true gospel gets discredited, and what repentance requires.",
+  "source": "rewrite",
+  "grade": 13.4,
+  "excerptGrade": 10.4
+ },
+ "church-death-penalty": {
+  "metaDescription": "The United States executes people in the name of the state. This is not a minor inconsistency.",
+  "source": "derived",
+  "grade": 7.9,
+  "excerptGrade": 15.5
+ },
+ "church-domestic-violence": {
+  "metaDescription": "How churches fail victims of domestic abuse, what Scripture says about violence at home, and why no teaching on submission ever requires enduring abuse.",
+  "source": "rewrite",
+  "grade": 13.9,
+  "excerptGrade": 9.1
+ },
+ "church-fathers-not-boring": {
+  "metaDescription": "Who the church fathers were, from Ignatius and Perpetua to Athanasius, Chrysostom and Augustine, where they failed, and why Protestants still read them.",
+  "source": "rewrite",
+  "grade": 12.9,
+  "excerptGrade": 8.4,
+  "qa": {
+   "question": "Who Were the Church Fathers, and Why Should You Read Them?",
+   "answer": "The church fathers were pastors, martyrs, mothers and exiles who held the faith before the empire owned it and while it was being handed over. They got real things wrong, and they are still the family we were given."
+  }
+ },
+ "church-food-insecurity": {
+  "metaDescription": "What Scripture says about hunger, from manna to the Lord's Supper, and how churches can move from handing out food to shared tables that honor the hungry.",
+  "source": "rewrite",
+  "grade": 11.5,
+  "excerptGrade": 10.1,
+  "qa": {
+   "question": "What Does the Bible Say About Hunger and Food Insecurity?",
+   "answer": "Scripture treats bread as the stuff of a shared table, not only a supply to be handed out. The church has become good at distribution, and it is necessary work, but the Lord's Supper asks for communion: that the hungry sit down with us as one household."
+  }
+ },
+ "church-gun-violence": {
+  "metaDescription": "A fair Christian look at guns: CDC data on gun deaths and suicide, self-defense and nonviolence in the tradition, Heller and Bruen, and the church's call.",
+  "source": "rewrite",
+  "grade": 10.9,
+  "excerptGrade": 6.5,
+  "qa": {
+   "question": "What Should Christians Think About Guns and Gun Violence?",
+   "answer": "Christians who keep a gun to protect their families and Christians who want stricter laws both stand on real ground in Scripture and the tradition. The church can leave much of the policy question open. It cannot stay silent about the dead, most of whom died by their own hand."
+  }
+ },
+ "church-incarceration-silence": {
+  "metaDescription": "Many of them are fathers. Many of them are sons. The church has been mostly quiet about this. That silence is not neutrality.",
+  "source": "derived",
+  "grade": 3.1,
+  "excerptGrade": 13.2
+ },
+ "church-must-speak-housing": {
+  "metaDescription": "What Leviticus 25, Micah, Isaiah and Naboth teach about homes and land, how American housing was built, and how to weigh gentrification honestly.",
+  "source": "rewrite",
+  "grade": 13.9,
+  "excerptGrade": 13.6,
+  "qa": {
+   "question": "What Does the Bible Say About Housing and Gentrification?",
+   "answer": "Israel's law treated a family's home as an inheritance held under God, not merely an asset to be traded, and the prophets named the legal machinery of dispossession as sin. That standard judges American housing, the fight over gentrification, and the churches that own the ground."
+  }
+ },
+ "church-needs-you-healthy-not-busy": {
+  "metaDescription": "A pastor who gives without receiving will eventually have nothing left to give. Every pastor agrees with that sentence.",
+  "source": "derived",
+  "grade": 8.6,
+  "excerptGrade": 6.6
+ },
+ "church-political-brand-step-back": {
+  "metaDescription": "The drift is rarely dramatic. It happens in sermon illustrations that only land for one kind of voter.",
+  "source": "derived",
+  "grade": 6.9,
+  "excerptGrade": 14.6
+ },
+ "church-response-poverty-charity": {
+  "metaDescription": "The food pantry is a good thing. The coat drive is a good thing. Charity responds to the wound. Justice asks about the weapon.",
+  "source": "derived",
+  "grade": 2,
+  "excerptGrade": -0.2
+ },
+ "church-response-to-culture": {
+  "metaDescription": "Niebuhr's five types of Christ and culture, the critiques of Yoder, Hauerwas and Carson, and what Hunter, Crouch and Dreher propose for the church now.",
+  "source": "rewrite",
+  "grade": 11.2,
+  "excerptGrade": 7.4
+ },
+ "church-sex-more-than-money": {
+  "metaDescription": "Why churches preach on sexual sin far more than greed though Scripture pairs them, and how history, politics and consumer habits split the Bible's warning.",
+  "source": "rewrite",
+  "grade": 11.6,
+  "excerptGrade": 10.5
+ },
+ "church-split-surviving-learning-forward": {
+  "metaDescription": "Nobody tells you, in seminary, what it feels like to watch the congregation break in two.",
+  "source": "derived",
+  "grade": 8.4,
+  "excerptGrade": 9.8
+ },
+ "church-wealth-world-poverty": {
+  "metaDescription": "What the widow's offering, Jesus on the temple and church history teach about church wealth, building campaigns, sacred beauty and the claim of the poor.",
+  "source": "rewrite",
+  "grade": 11.6,
+  "excerptGrade": 11.8
+ },
+ "city-wide-church-together": {
+  "metaDescription": "He did not say: seek the shalom of your particular congregation. He said the city. The whole city.",
+  "source": "derived",
+  "grade": 5.1,
+  "excerptGrade": 14.8
+ },
+ "climate-refugees": {
+  "metaDescription": "Why climate refugees have no status under the 1951 Convention, what the science and projections can bear, and what Scripture's famine migrants teach.",
+  "source": "rewrite",
+  "grade": 11.3,
+  "excerptGrade": 10.6,
+  "qa": {
+   "question": "Climate Refugees and the Bible: Who Is My Neighbor Now?",
+   "answer": "Most people uprooted by a changing climate have no legal category and no single cause anyone can prove. Scripture never made the neighbor wait on either, and it asks the people who burned the most to answer for both restitution and mercy."
+  }
+ },
+ "conflict-is-not-failure": {
+  "metaDescription": "The New Testament church had conflict before it had a second generation.",
+  "source": "derived",
+  "grade": 8.8,
+  "excerptGrade": 9.3
+ },
+ "cost-of-ministry-silos": {
+  "metaDescription": "Every church has them. The children's ministry that does not know what the youth ministry is teaching.",
+  "source": "derived",
+  "grade": 5.1,
+  "excerptGrade": 5.1
+ },
+ "creation-care-not-optional": {
+  "metaDescription": "What Genesis means by dominion, how Christians answered Lynn White's 1967 charge, and why clean air and water are a matter of neighbor love, not party.",
+  "source": "rewrite",
+  "grade": 11.3,
+  "excerptGrade": 11.7,
+  "qa": {
+   "question": "What Does the Bible Say About Caring for the Environment?",
+   "answer": "Genesis gives human beings real authority over the earth, but it is a tenant's authority under a Creator who still owns it. Lynn White's charge against Christianity deserves an honest answer, and so do the neighbors who live downstream of our choices."
+  }
+ },
+ "culture-discipleship-not-attendance": {
+  "metaDescription": "A church can gather a great many people and disciple almost none of them.",
+  "source": "derived",
+  "grade": 6.7,
+  "excerptGrade": 6.7
+ },
+ "danger-pastoral-isolation": {
+  "metaDescription": "Almost every pastoral failure that makes the news was preceded by years of isolation. Not geographic isolation.",
+  "source": "derived",
+  "grade": 11.3,
+  "excerptGrade": 11.3
+ },
+ "delegation-is-not-weakness": {
+  "metaDescription": "Somewhere in the formation of American pastoral identity, we absorbed a theology of the indispensable pastor.",
+  "source": "derived",
+  "grade": 17.9,
+  "excerptGrade": 11.1
+ },
+ "difference-tired-and-done": {
+  "metaDescription": "There is a difference between being tired and being done, and a pastor who cannot tell them apart will make one of two mistakes.",
+  "source": "derived",
+  "grade": 10,
+  "excerptGrade": 10
+ },
+ "digital-divide": {
+  "metaDescription": "Who the digital divide leaves out, what Congress funded and let lapse, and how the gleaning law of Leviticus 19 shapes a Christian response to access.",
+  "source": "rewrite",
+  "grade": 12.3,
+  "excerptGrade": 13.2
+ },
+ "disability-justice-theological": {
+  "metaDescription": "Picture a man who has worshiped God from a wheelchair in the same congregation for twenty years.",
+  "source": "derived",
+  "grade": 8.4,
+  "excerptGrade": 8.4
+ },
+ "doctrine-of-discovery": {
+  "metaDescription": "What the Doctrine of Discovery is: the papal bulls behind it, Johnson v. M'Intosh, the Vatican's 2023 repudiation, and what Christians owe now.",
+  "source": "rewrite",
+  "grade": 7.4,
+  "excerptGrade": 11.4
+ },
+ "early-church-practiced": {
+  "metaDescription": "A close reading of Acts 2 and 4, whether Luke idealized the church, how later Christians shared, and how socialist and libertarian readings fare.",
+  "source": "rewrite",
+  "grade": 11.5,
+  "excerptGrade": 10.8,
+  "qa": {
+   "question": "Did Luke idealize the church?",
+   "answer": "There is a serious objection to reading these summaries as reportage, and it deserves the form its best defenders would sign. Educated Greek readers would have heard something familiar in Acts 4:32. Aristotle, in the ninth book of the Nicomachean Ethics, collects the proverbs his culture used about true friendship, among them that friends share a single soul and that friends hold their goods in common. Plato knew the second proverb, and later tradition credited it to Pythagoras and told of Pythagorean circles that pooled their property."
+  }
+ },
+ "education-inequality": {
+  "metaDescription": "What Scripture and church history say about school funding gaps, segregation academies, the school-to-prison pipeline, and what Christians owe children.",
+  "source": "rewrite",
+  "grade": 14.6,
+  "excerptGrade": 10.1
+ },
+ "eighty-percent-churches-plateaued": {
+  "metaDescription": "Most pastors know this in the abstract. I have been the pastor of a plateaued church.",
+  "source": "derived",
+  "grade": 2.3,
+  "excerptGrade": 16.4
+ },
+ "elder-abuse-invisible": {
+  "metaDescription": "What elder abuse is, why most of it goes unreported, what the fifth commandment asks of adult children, and how a church can protect its older members.",
+  "source": "rewrite",
+  "grade": 12,
+  "excerptGrade": 11.4
+ },
+ "exodus-demands-church": {
+  "metaDescription": "How the Exodus runs from Deuteronomy to the Last Supper and 1 Peter, how Puritans, slaves and liberation theology read it, and what it asks of Christians.",
+  "source": "rewrite",
+  "grade": 13.7,
+  "excerptGrade": 8.7,
+  "qa": {
+   "question": "What Does the Exodus Mean for Christians Today?",
+   "answer": "The Exodus is the founding memory of the people of God, a rescue from Pharaoh for the service of God. Every generation that has claimed it, the church included, has been judged by it."
+  }
+ },
+ "finding-your-barnabas": {
+  "metaDescription": "Read Acts 9 carefully. Paul has just been converted on the Damascus road.",
+  "source": "derived",
+  "grade": 4.2,
+  "excerptGrade": 4.2
+ },
+ "five-biggest-mistakes-new-pastors": {
+  "metaDescription": "A new pastor arrives with two things in abundance and one thing not at all. He has faith. He has calling.",
+  "source": "derived",
+  "grade": 2.3,
+  "excerptGrade": 2.3
+ },
+ "five-sermon-habits-shrinking-faith": {
+  "metaDescription": "The congregation learns what faith looks like from the pulpit. This is not an exaggeration, it is simply how communities form.",
+  "source": "derived",
+  "grade": 7,
+  "excerptGrade": 7
+ },
+ "foster-care-unfinished-mandate": {
+  "metaDescription": "What the Bible says about foster care and adoption: the fatherless in Scripture, adoption in Paul, the U.S. system, its critics, and how churches can help.",
+  "source": "rewrite",
+  "grade": 7.2,
+  "excerptGrade": 12,
+  "qa": {
+   "question": "What Does the Bible Say About Foster Care and Adoption?",
+   "answer": "Scripture never mentions foster care, yet it names God as the one who settles the solitary in a home and calls salvation itself an adoption. Read carefully, it asks the church to stand with the child's own family where that family can be made safe, and to open its own homes where it cannot."
+  }
+ },
+ "future-of-missions-already-there": {
+  "metaDescription": "The map in the missions conference has not changed. The map is not wrong as an artifact of history. It is increasingly wrong as a description of reality.",
+  "source": "derived",
+  "grade": 6.2,
+  "excerptGrade": 13.6
+ },
+ "gen-z-wants-from-church": {
+  "metaDescription": "Every generation gets misread by the church that is trying to reach it.",
+  "source": "derived",
+  "grade": 6.7,
+  "excerptGrade": 7.2
+ },
+ "give-feedback-changes-behavior": {
+  "metaDescription": "Most feedback conversations accomplish one thing: they make the person giving the feedback feel that they have discharged an obligation.",
+  "source": "derived",
+  "grade": 12.3,
+  "excerptGrade": 9.9
+ },
+ "global-south-church-teach-suffering": {
+  "metaDescription": "They are not praying for comfort. They are praying for courage. They are praying for each other's families in the event of arrest.",
+  "source": "derived",
+  "grade": 2.8,
+  "excerptGrade": 14.4
+ },
+ "good-samaritan-actually-arguing": {
+  "metaDescription": "Luke 10:25-37 in context: the lawyer's test, Jewish-Samaritan hostility, the priest and Levite, Augustine's allegory, and the question Jesus turns around.",
+  "source": "rewrite",
+  "grade": 15.1,
+  "excerptGrade": 10.1,
+  "qa": {
+   "question": "What Is the Parable of the Good Samaritan Really About?",
+   "answer": "Jesus told the parable to a lawyer looking for the limits of his obligation. He answered by making the enemy the rescuer and turning the question from who qualifies as my neighbor to whether I will be one."
+  }
+ },
+ "grief-abortion-church": {
+  "metaDescription": "What Scripture says about forgiveness and grief after abortion, what the research on mental health shows, and where women and men can find help and peace.",
+  "source": "rewrite",
+  "grade": 11.3,
+  "excerptGrade": 9,
+  "qa": {
+   "question": "Grief and Guilt After Abortion: Is There Forgiveness?",
+   "answer": "The forgiveness of God for abortion is real and complete, and it does not require pretending nothing was lost. The church once held the conviction and the way home in one practice; it has too often kept the first and closed the second."
+  }
+ },
+ "healthcare-moral-issue": {
+  "metaDescription": "What the Bible and church history say about caring for the sick, whether healthcare is a right, and how Christians weigh single-payer and market plans.",
+  "source": "rewrite",
+  "grade": 11.2,
+  "excerptGrade": 12.9
+ },
+ "healthy-conflict-marriage": {
+  "metaDescription": "What Scripture and marriage research teach about anger, fighting fair, and repair, and why healthy conflict in marriage has to end in reconciliation.",
+  "source": "rewrite",
+  "grade": 12.4,
+  "excerptGrade": 8.5
+ },
+ "healthy-pastor-referral-network": {
+  "metaDescription": "The call came on a Tuesday afternoon. He needed a therapist. He needed a marriage counselor with clinical training. He needed, eventually, a psychiatrist.",
+  "source": "derived",
+  "grade": 7.9,
+  "excerptGrade": 14.8
+ },
+ "hidden-pain-successful-pastor": {
+  "metaDescription": "Success in ministry does a thing no one warned you about. It closes doors. The congregation grows. The platform expands.",
+  "source": "derived",
+  "grade": 4.7,
+  "excerptGrade": 5.9
+ },
+ "hospitality-not-optional": {
+  "metaDescription": "What the Bible says about hospitality: philoxenia, Abraham at Mamre, Jesus as guest and host, the early church, and why opening a home is hard now.",
+  "source": "rewrite",
+  "grade": 13.2,
+  "excerptGrade": 9.1
+ },
+ "human-trafficking-selective-outrage": {
+  "metaDescription": "What the law means by human trafficking, what the 2022 global estimates show, where church outrage stops, the 2020 rumors, and what Scripture asks of us.",
+  "source": "rewrite",
+  "grade": 10,
+  "excerptGrade": 5.9
+ },
+ "interior-life-of-pastor": {
+  "metaDescription": "There is a kind of ministry that looks like faithfulness from the outside and is hollow from the inside. I have practiced it.",
+  "source": "derived",
+  "grade": 5.3,
+  "excerptGrade": 5.3
+ },
+ "isaiah-58-demands": {
+  "metaDescription": "Isaiah 58 in its setting: the returned exiles' fasts, the Hebrew of debt and release, why the Sabbath closes the chapter, Luke 4, and fasting today.",
+  "source": "rewrite",
+  "grade": 11.3,
+  "excerptGrade": 9.6
+ },
+ "justice-not-political-theological": {
+  "metaDescription": "What mishpat, tsedaqah and dikaiosyne mean, how the prophets, Jesus and James used them, and why biblical justice is public but belongs to no party.",
+  "source": "rewrite",
+  "grade": 13,
+  "excerptGrade": 10.8
+ },
+ "lead-church-decline-without-losing-hope": {
+  "metaDescription": "Decline does something to a pastor that success never does. Success flatters you. Decline strips you.",
+  "source": "derived",
+  "grade": 4.9,
+  "excerptGrade": 4.9
+ },
+ "lead-through-church-crisis": {
+  "metaDescription": "It comes for almost everyone, eventually. A moral failure on the staff. A split over a decision no one expected to be divisive.",
+  "source": "derived",
+  "grade": 7.4,
+  "excerptGrade": 6.2
+ },
+ "lead-when-trust-institutions-low": {
+  "metaDescription": "The question I am hearing from pastors is not primarily theological. It is credibility. How do you lead people who do not trust you?",
+  "source": "derived",
+  "grade": 6.2,
+  "excerptGrade": 6.2
+ },
+ "learned-unity-pastoring-across-cultures": {
+  "metaDescription": "We were trying to build something together. What we built instead, at least for the first eighteen months, was a very polite set of misunderstandings.",
+  "source": "derived",
+  "grade": 6.7,
+  "excerptGrade": 17.7
+ },
+ "loneliness-of-leadership": {
+  "metaDescription": "David wrote Psalm 22 from a place no one who had not been there could fully identify.",
+  "source": "derived",
+  "grade": 5.6,
+  "excerptGrade": 4
+ },
+ "metrics-tell-church-healthy": {
+  "metaDescription": "Ask the average pastor how his church is doing, and he will tell you a number. Attendance, usually. Sometimes giving.",
+  "source": "derived",
+  "grade": 5.9,
+  "excerptGrade": 5.9
+ },
+ "micah-6-8-demands": {
+  "metaDescription": "Micah 6:8 in its setting: the covenant lawsuit, the offerings God refused, and what mishpat, hesed and walking humbly with God mean in Hebrew and for us.",
+  "source": "rewrite",
+  "grade": 12.4,
+  "excerptGrade": 8.3,
+  "qa": {
+   "question": "Who is a God like you?",
+   "answer": "I've preached Micah 6:8 without doing it. I've called a congregation to justice while leading a church whose budget mostly went to keeping itself running, described the steadfast love of God from a comfortable distance from the people who most needed to receive it through us, and talked about walking humbly with God while being considerably less humble in the room where the budget was set. That's the ordinary way a pastor makes the offer of 6:6 instead of the life of 6:8: a larger program in place of a smaller obedience."
+  }
+ },
+ "mission-is-not-optional": {
+  "metaDescription": "What the mission of the church is: missio Dei, the Great Commission read in context, the Lausanne debate over evangelism and justice, and mission at home.",
+  "source": "rewrite",
+  "grade": 12.3,
+  "excerptGrade": 9.1
+ },
+ "mission-sending-culture-never-sent": {
+  "metaDescription": "The church that has never sent anyone has usually told itself a reasonable story about why. The mission field is far away.",
+  "source": "derived",
+  "grade": 6.9,
+  "excerptGrade": 5.5
+ },
+ "mobilizing-church-missions-small-budget": {
+  "metaDescription": "The assumption lives in almost every small church I have encountered: that world missions is something larger churches do.",
+  "source": "derived",
+  "grade": 12.3,
+  "excerptGrade": 12.3
+ },
+ "moral-injury-veterans": {
+  "metaDescription": "What moral injury is, how it differs from PTSD, what Scripture and the early church knew about guilt after war, and how a church can help veterans heal.",
+  "source": "rewrite",
+  "grade": 11.3,
+  "excerptGrade": 8.6
+ },
+ "most-dangerous-person-church-staff": {
+  "metaDescription": "The staff member every pastor worries about is easy to identify. These people are visible.",
+  "source": "derived",
+  "grade": 9.4,
+  "excerptGrade": 11.2
+ },
+ "national-pastors-redefining-missionary": {
+  "metaDescription": "That image is not entirely wrong. The sacrifice is real. The fruit has been real.",
+  "source": "derived",
+  "grade": 2.9,
+  "excerptGrade": 19.4
+ },
+ "nehemiah-rebuilding": {
+  "metaDescription": "The history behind Nehemiah in 445 BC, his confession, the debt crisis, the reading of the Law, chapter 13, and what rebuilding a broken life requires.",
+  "source": "rewrite",
+  "grade": 12.3,
+  "excerptGrade": 11.6,
+  "qa": {
+   "question": "What Does Nehemiah Teach About Rebuilding What Was Broken?",
+   "answer": "Nehemiah rebuilt Jerusalem's wall in fifty-two days, and then spent years learning that a wall cannot rebuild a people. The book begins in confession and ends unfinished, which is exactly why it helps anyone standing in the ruins of a family, a marriage or a faith."
+  }
+ },
+ "not-your-churchs-attendance-numbers": {
+  "metaDescription": "The number comes out after the service. Someone counts the chairs, or the clickers register the bodies, or the app generates the report.",
+  "source": "derived",
+  "grade": 7.4,
+  "excerptGrade": 7.4
+ },
+ "okay-to-see-counselor": {
+  "metaDescription": "He will send you to a counselor. He believes them. The pastor understands suffering.",
+  "source": "derived",
+  "grade": 5.6,
+  "excerptGrade": 15.7
+ },
+ "partnering-national-pastor": {
+  "metaDescription": "Underneath all of it was a single organizing premise: we have what they need. That premise is not evil. It is not even entirely wrong.",
+  "source": "derived",
+  "grade": 5.6,
+  "excerptGrade": 16.2
+ },
+ "pastor-politically-divided-gospel-central": {
+  "metaDescription": "The congregation I stood before had people who despised each other's politics.",
+  "source": "derived",
+  "grade": 10.7,
+  "excerptGrade": 10.7
+ },
+ "pastoral-care-wealthy-congregant": {
+  "metaDescription": "The wealthy congregant is not a problem to manage. The disciples were astonished. They had assumed the opposite. Wealth looked like favor.",
+  "source": "derived",
+  "grade": 6.9,
+  "excerptGrade": 17
+ },
+ "pastoral-care-wealthy": {
+  "metaDescription": "There is a cowardice that dresses itself as respect. You do not press on certain areas. You keep the conversation in safe waters.",
+  "source": "derived",
+  "grade": 4.8,
+  "excerptGrade": 4.8
+ },
+ "pastors-authority-relational": {
+  "metaDescription": "Jesus taught with authority, and the crowds were astonished, \"not as the scribes\" (Matthew 7:28, 29). The scribes had credentials.",
+  "source": "derived",
+  "grade": 6,
+  "excerptGrade": 6
+ },
+ "pastors-depression-not-faith-problem": {
+  "metaDescription": "He called it a \"fainting fit.\" He did not call it a faith problem. He knew better.",
+  "source": "derived",
+  "grade": 2.3,
+  "excerptGrade": 15.5
+ },
+ "pastors-kids-watching-what-seeing": {
+  "metaDescription": "My sons know things about ministry that the congregation does not know, because they have watched it from a distance of about three feet.",
+  "source": "derived",
+  "grade": 10.5,
+  "excerptGrade": 10.5
+ },
+ "payday-lending-christians": {
+  "metaDescription": "What Exodus, Leviticus, Deuteronomy and Nehemiah teach on interest, how the church judged usury, and what it means for payday loans and their alternatives.",
+  "source": "rewrite",
+  "grade": 15.9,
+  "excerptGrade": 9.1,
+  "qa": {
+   "question": "What Does the Bible Say About Usury and Payday Loans?",
+   "answer": "The Torah forbade turning a poor neighbor's need into income, and the church spent fifteen centuries learning to tell that loan from a merchant's. The payday storefront stands almost exactly on the line Scripture drew."
+  }
+ },
+ "personal-board-accountability": {
+  "metaDescription": "Every CEO has a board. Every doctor has a licensing body. Every pilot answers to a tower.",
+  "source": "derived",
+  "grade": 7.4,
+  "excerptGrade": 7.4
+ },
+ "prayer-is-not-optional": {
+  "metaDescription": "Ask a pastor how his prayer life is and watch his face before he answers.",
+  "source": "derived",
+  "grade": 4.4,
+  "excerptGrade": 4.4
+ },
+ "preach-same-gospel-different-people": {
+  "metaDescription": "The sermon is one sermon. These are four completely different situations. They are not the exception, they are the room.",
+  "source": "derived",
+  "grade": 5.3,
+  "excerptGrade": 15
+ },
+ "preaching-to-room-not-there-yet": {
+  "metaDescription": "Sunday morning holds more than one kind of person. Most preachers solve this problem by choosing one audience.",
+  "source": "derived",
+  "grade": 4.3,
+  "excerptGrade": 13.3
+ },
+ "present-at-home-mind-never-leaves": {
+  "metaDescription": "The dinner table is where it shows. You are physically present. Your children ask you something and you answer a question they did not ask.",
+  "source": "derived",
+  "grade": 4.7,
+  "excerptGrade": 6.4
+ },
+ "prophetic-imagination": {
+  "metaDescription": "A summary of Walter Brueggemann's The Prophetic Imagination: royal consciousness, grief and hope, its fair critiques, and what it asks of the church today.",
+  "source": "rewrite",
+  "grade": 13.4,
+  "excerptGrade": 10.4
+ },
+ "prophetic-pastor": {
+  "metaDescription": "And when they talk about pastoral ministry, they usually mean someone who comes to the bedside, who holds the grieving, who offers presence in the dark.",
+  "source": "derived",
+  "grade": 12.3,
+  "excerptGrade": 16.4
+ },
+ "protecting-marriage-ministry-demands": {
+  "metaDescription": "There is a theology buried in the way most pastors manage their time, and it is not the theology they would preach.",
+  "source": "derived",
+  "grade": 8.5,
+  "excerptGrade": 8.5
+ },
+ "psalm-82-unjust-systems": {
+  "metaDescription": "Psalm 82 verse by verse: the divine council, who the gods are, why Jesus quoted it in John 10, how 'you are gods' is misused, and what justice holds up.",
+  "source": "rewrite",
+  "grade": 9.9,
+  "excerptGrade": 9.1,
+  "qa": {
+   "question": "Psalm 82 Explained: What Does 'You Are Gods' Mean?",
+   "answer": "Psalm 82 puts the gods on trial for failing the weak and the fatherless and sentences them to die like men. Whoever the gods are, the psalm teaches that authority is a trust held for the vulnerable, and that the world stands or shakes on whether it is kept."
+  }
+ },
+ "reformation-actually-about": {
+  "metaDescription": "The Protestant Reformation is one of the most consequential events in Western history, religious, cultural, political, economic.",
+  "source": "derived",
+  "grade": 18.1,
+  "excerptGrade": 18.1
+ },
+ "reformed-charismatic-pastors-same-table": {
+  "metaDescription": "We sat in a circle of folding chairs in a church basement in Fenton and disagreed about almost everything for three hours.",
+  "source": "derived",
+  "grade": 11.2,
+  "excerptGrade": 11.2
+ },
+ "repentance-and-renewal": {
+  "metaDescription": "What biblical repentance is: metanoia and shuv, Luther's first thesis, godly and worldly grief, restitution, corporate confession, and why it isn't shame.",
+  "source": "rewrite",
+  "grade": 13.9,
+  "excerptGrade": 10.4
+ },
+ "return-ministry-after-burnout": {
+  "metaDescription": "The pastors I have watched return to ministry after burning out almost always make the same mistake.",
+  "source": "derived",
+  "grade": 9.8,
+  "excerptGrade": 9.8
+ },
+ "revitalize-or-replant": {
+  "metaDescription": "The distinction matters because the strategies are completely different.",
+  "source": "derived",
+  "grade": 14.1,
+  "excerptGrade": 14.7
+ },
+ "sabbatical-why-church-should-require": {
+  "metaDescription": "The word sabbatical makes most churches nervous. They require it. A sabbatical is the biblical rhythm of rest, scaled up.",
+  "source": "derived",
+  "grade": 6.5,
+  "excerptGrade": 8.8
+ },
+ "scandals-teaching-accountability": {
+  "metaDescription": "The names accumulate. Pastors of megachurches. Founders of parachurch organizations. Denominational leaders with decades of respected service.",
+  "source": "derived",
+  "grade": 15.9,
+  "excerptGrade": 15.9
+ },
+ "short-term-mission-trips-help-hurt": {
+  "metaDescription": "The local construction workers who could have built the wall correctly in one day were not hired.",
+  "source": "derived",
+  "grade": 7.7,
+  "excerptGrade": 12.4
+ },
+ "slow-burn-ministry-exhaustion": {
+  "metaDescription": "Burnout almost never arrives as an event. We picture it that way, a collapse, a breakdown, a dramatic morning a man cannot get out of the car.",
+  "source": "derived",
+  "grade": 7.2,
+  "excerptGrade": 7.2
+ },
+ "small-churches-get-right": {
+  "metaDescription": "The megachurch is the aspiration. The small church is the consolation prize.",
+  "source": "derived",
+  "grade": 6.4,
+  "excerptGrade": 14.2
+ },
+ "solidarity-theological-virtue": {
+  "metaDescription": "What solidarity means in Catholic social teaching and in Paul's letters, and why justice cut off from love hardens into ideology on the right and the left.",
+  "source": "rewrite",
+  "grade": 13.3,
+  "excerptGrade": 8.6
+ },
+ "spiritual-disciplines-for-pastors": {
+  "metaDescription": "Nobody warned me that the job itself would become the thing standing between me and God.",
+  "source": "derived",
+  "grade": 7.6,
+  "excerptGrade": 7.6
+ },
+ "spouse-wishes-knew-parsonage": {
+  "metaDescription": "The pastor chose this life. He felt the call, pursued the training, said yes to the church.",
+  "source": "derived",
+  "grade": 1.6,
+  "excerptGrade": 1.6
+ },
+ "staff-culture-no-burnout": {
+  "metaDescription": "The church staff that cannot keep good people has usually decided, usually without knowing it, that the mission matters more than the people serving it.",
+  "source": "derived",
+  "grade": 12.6,
+  "excerptGrade": 8.8
+ },
+ "stop-performing-start-pastoring": {
+  "metaDescription": "It was a Tuesday afternoon when I finally admitted it to myself. I was workshopping. I was testing the lines.",
+  "source": "derived",
+  "grade": 5.9,
+  "excerptGrade": 6.9
+ },
+ "stopped-competing-church-across-town": {
+  "metaDescription": "I will tell you something I am not proud of. For years I kept a private scoreboard. The church across town grew, and something in me tightened.",
+  "source": "derived",
+  "grade": 4.1,
+  "excerptGrade": 4.1
+ },
+ "talk-global-missions-moves-congregation": {
+  "metaDescription": "The missions presentation is a reliable feature of the American evangelical calendar.",
+  "source": "derived",
+  "grade": 16.6,
+  "excerptGrade": 16.6
+ },
+ "talk-politics-pulpit-without-destroying": {
+  "metaDescription": "The congregation you serve is not one thing. That is the trap. But the alternative is not silence.",
+  "source": "derived",
+  "grade": 3.1,
+  "excerptGrade": 15.2
+ },
+ "the-long-arc": {
+  "metaDescription": "The phrase about the arc of the moral universe bending toward justice was not invented in the twentieth century.",
+  "source": "derived",
+  "grade": 11.1,
+  "excerptGrade": 11.1
+ },
+ "the-monster-in-the-mirror": {
+  "metaDescription": "Why Every Generation Gets the Bible Wrong, Why Yours Is No Different, and What to Do About It.",
+  "source": "derived",
+  "grade": 9.1,
+  "excerptGrade": 9.1
+ },
+ "the-theology-of-time": {
+  "metaDescription": "What the Bible says about time and hurry: chronos and kairos, Psalm 90, Ecclesiastes 3, Augustine, clock time, and why hurry is a question of trust.",
+  "source": "rewrite",
+  "grade": 10.9,
+  "excerptGrade": 11.1
+ },
+ "theological-case-against-torture": {
+  "metaDescription": "A Christian answer to the ticking-bomb case for torture: Dershowitz and Krauthammer, the 2014 Senate report, the church's own record, and the cross.",
+  "source": "rewrite",
+  "grade": 10.8,
+  "excerptGrade": 11.5
+ },
+ "theology-fair-wages": {
+  "metaDescription": "What Leviticus, Deuteronomy, the prophets, James and Jesus teach about fair pay and wage theft, with Rerum Novarum and the market case weighed fairly.",
+  "source": "rewrite",
+  "grade": 13.9,
+  "excerptGrade": 4.1,
+  "qa": {
+   "question": "What Does the Bible Say About Fair Wages and Wage Theft?",
+   "answer": "Scripture calls a withheld wage theft and says the worker's cry reaches God. What a just wage should require of law is argued among faithful people. Whether we pay what we owe is not."
+  }
+ },
+ "theology-of-enough": {
+  "metaDescription": "What the Bible says about contentment and enough: the manna, Agur's prayer, Paul in prison, Burroughs, and what research on money and happiness shows.",
+  "source": "rewrite",
+  "grade": 12,
+  "excerptGrade": 11.2
+ },
+ "theology-of-protest": {
+  "metaDescription": "There is a persistent assumption in large portions of the American church that protest is somehow un-Christian.",
+  "source": "derived",
+  "grade": 11.9,
+  "excerptGrade": 11.9
+ },
+ "theology-of-reparations": {
+  "metaDescription": "What the Bible teaches about restitution, from Exodus 22 to Zacchaeus, and how Christians can weigh the case for and against reparations after redlining.",
+  "source": "rewrite",
+  "grade": 13.4,
+  "excerptGrade": 11.6
+ },
+ "theology-public-health": {
+  "metaDescription": "In 2020, the pastoral question that should have been theological became political almost immediately. Masks or no masks.",
+  "source": "derived",
+  "grade": 8.9,
+  "excerptGrade": 8.5
+ },
+ "three-small-churches-coplanted": {
+  "metaDescription": "That model works. It requires a pastor secure enough in his own ecclesiological identity to raise up a leader he is willing to release.",
+  "source": "derived",
+  "grade": 9.2,
+  "excerptGrade": 15
+ },
+ "truth-in-post-truth-world": {
+  "metaDescription": "What is truth? Pilate's question and Jesus's answer read in context, why the post-truth age is a crisis of indifference, and how Christians should speak.",
+  "source": "rewrite",
+  "grade": 6.7,
+  "excerptGrade": 7
+ },
+ "unreached-people-groups-closest-to-you": {
+  "metaDescription": "Count the apartment complex where recent immigrants from Somalia live in quiet and considerable isolation.",
+  "source": "derived",
+  "grade": 13.9,
+  "excerptGrade": 13
+ },
+ "vision-without-community-fantasy": {
+  "metaDescription": "Nehemiah did not arrive in Jerusalem with a plan. He did not call a meeting. He did not call a press conference. He looked at what was broken.",
+  "source": "derived",
+  "grade": 3.6,
+  "excerptGrade": 15.3
+ },
+ "weight-of-what-you-cant-say": {
+  "metaDescription": "You know things about your congregation that nobody else knows. You know whose marriage is barely hanging on while they hold hands in the third row.",
+  "source": "derived",
+  "grade": 6.3,
+  "excerptGrade": 6.3
+ },
+ "what-we-owe-generations": {
+  "metaDescription": "What the Bible says about the sins of the fathers, what Burke and Parfit saw, and why debt, climate and faith are inheritances Christians must answer for.",
+  "source": "rewrite",
+  "grade": 11.5,
+  "excerptGrade": 11
+ },
+ "when-fire-someone-with-integrity": {
+  "metaDescription": "And yet it is. This is why pastors avoid it too long. Pastoral care that withholds necessary truth is not care.",
+  "source": "derived",
+  "grade": 3.4,
+  "excerptGrade": 14.8
+ },
+ "when-man-pulpit-falling-apart": {
+  "metaDescription": "Sometimes the crisis is not in the congregation. It is in the man at the front. A marriage coming apart. A depression that will not lift.",
+  "source": "derived",
+  "grade": 4.2,
+  "excerptGrade": 3.4
+ },
+ "when-preaching-gets-stale": {
+  "metaDescription": "By Thursday afternoon the dread has arrived. The text is open. The commentary stack is there.",
+  "source": "derived",
+  "grade": 4.9,
+  "excerptGrade": 4.9
+ },
+ "when-shepherd-needs-shepherding": {
+  "metaDescription": "You were never designed to carry the weight of ministry alone, and the Gospel you preach proves it. You know how to shepherd.",
+  "source": "derived",
+  "grade": 5.8,
+  "excerptGrade": 5.8
+ },
+ "where-church-was-silent": {
+  "metaDescription": "The church in America has a history that is not primarily the history of courage and faithfulness, though it contains that.",
+  "source": "derived",
+  "grade": 12.3,
+  "excerptGrade": 12.3
+ },
+ "white-churches-wrong-about-diversity": {
+  "metaDescription": "John describes it as a vision of what is coming. I am a white pastor. I lead a predominantly white congregation.",
+  "source": "derived",
+  "grade": 5.7,
+  "excerptGrade": 13.6
+ },
+ "why-pastors-quit-and-how-to-stay": {
+  "metaDescription": "They say they are \"called to a new season.\" They say they need to \"spend time with family.\" They say the Lord is \"leading them elsewhere.\"",
+  "source": "derived",
+  "grade": 9.5,
+  "excerptGrade": 15.3
+ },
+ "widow-orphan-stranger": {
+  "metaDescription": "Why Scripture names the widow, orphan and stranger, how Israel's law differed from its neighbors', what the early church did, and who they are today.",
+  "source": "rewrite",
+  "grade": 11.2,
+  "excerptGrade": 8.7,
+  "qa": {
+   "question": "What Does the Bible Say About Widows, Orphans and Strangers?",
+   "answer": "Across the law, the psalms, the prophets and the letters, God names three people who had no one to speak for them and calls himself their next of kin. Who stands in those places now, and why so few of them sit in our pews, is the question the text leaves with the church."
+  }
+ },
+ "you-are-not-the-exception": {
+  "metaDescription": "Why Christians misread the Bible in every era, from the curse of Ham to 1844 and manifest destiny, what Gadamer and Lewis explain, and how to read humbly.",
+  "source": "rewrite",
+  "grade": 13,
+  "excerptGrade": 7.4,
+  "qa": {
+   "question": "If everyone misreads, does every reading count?",
+   "answer": "The opposite error deserves its strongest statement. If every generation has misread the Bible, the argument runs, then no reading has authority, and the honest course is to admit that the text means what each community makes of it. Some who say this are skeptics; others are Christians who watched the church defend slavery with chapter and verse. The conservative answer is usually fear: a text that can mean anything can command nothing, and a church that cannot say a reading is wrong cannot tell the slaveholder he was wrong either. Both are right about something."
+  }
+ },
+ "young-adults-coming-back-church": {
+  "metaDescription": "Most of those strategies failed to reverse the trend, which should have told us something about the nature of the problem.",
+  "source": "derived",
+  "grade": 9.5,
+  "excerptGrade": 15.7
+ },
+ "apologetics-hasnt-the-church-done-terrible-things": {
+  "metaDescription": "The Crusades, the Inquisition, the wars of religion, slavery and abuse: the honest history, what it proves and what it doesn't, and why Christ judges it.",
+  "source": "rewrite",
+  "grade": 13.2,
+  "excerptGrade": 4.8
+ },
+ "what-is-the-kingdom-of-god-and-why-it-changes-everything": {
+  "metaDescription": "What Jesus meant by the kingdom of God: its roots in Israel's hope, a century of scholarly debate, the parables, and why it is God's reign, not a place.",
+  "source": "rewrite",
+  "grade": 11.6,
+  "excerptGrade": 11.1
+ },
+ "why-the-bible-is-one-story-not-66-books": {
+  "metaDescription": "Is the Bible one story? How creation, fall, Israel, Christ, church and new creation fit together, why the exodus runs through it, and the case against.",
+  "source": "rewrite",
+  "grade": 5.8,
+  "excerptGrade": 9.5
+ },
+ "what-it-means-to-bear-the-image-of-god": {
+  "metaDescription": "What it means to be made in God's image: Genesis in its ancient setting, the three historic readings, and why human dignity rests on God, not ability.",
+  "source": "rewrite",
+  "grade": 12.9,
+  "excerptGrade": 9.6,
+  "qa": {
+   "question": "What Does It Mean to Be Made in the Image of God?",
+   "answer": "Being made in God's image is a status God confers before it is a capacity we exercise. That is why human dignity can be neither earned nor lost, and why every side that rations it stands under the same judgment."
+  }
+ },
+ "already-and-not-yet-living-between-two-worlds": {
+  "metaDescription": "What 'already but not yet' means: the two ages of Jewish hope, how Easter split them, what Vos, Cullmann and Ladd saw, and how to live in the overlap.",
+  "source": "rewrite",
+  "grade": 10.8,
+  "excerptGrade": 10.7
+ },
+ "what-christian-nationalism-is-and-is-not": {
+  "metaDescription": "Christian nationalism gets thrown as an insult in both directions. A pastor on what the phrase actually names, and what it does not.",
+  "source": "hand",
+  "grade": 6.3,
+  "excerptGrade": 11.3
+ },
+ "how-the-religious-right-was-built": {
+  "metaDescription": "A fair history of the religious right, from Scopes and Billy Graham to Bob Jones, Roe and the Moral Majority, and the mainline's parallel political turn.",
+  "source": "rewrite",
+  "grade": 15,
+  "excerptGrade": 8.8
+ },
+ "two-kingdoms-faith-and-state": {
+  "metaDescription": "What render unto Caesar means in Mark 12, how Romans 13 reads with Revelation 13, and how Augustine, Luther, Calvin, Anabaptists and Barmen drew the line.",
+  "source": "rewrite",
+  "grade": 11.8,
+  "excerptGrade": 11.7,
+  "qa": {
+   "question": "What Does Render Unto Caesar Mean for Church and State?",
+   "answer": "Jesus did not split life into two equal drawers, one for God and one for politics. He handed Caesar back a coin and claimed for God everything that bears God's image, which leaves the state real, limited and answerable, and leaves the church neither a throne nor permission to be silent."
+  }
+ },
+ "the-church-after-cultural-power": {
+  "metaDescription": "Now that the church no longer sets the terms of the culture, it has to decide whether it ever knew how to be the church without them.",
+  "source": "derived",
+  "grade": 9.4,
+  "excerptGrade": 9.4
+ },
+ "the-council-of-nicaea-what-was-decided-in-325": {
+  "metaDescription": "Nicaea did not invent the divinity of Jesus or pick the books of the Bible. What it actually did still decides what you believe about your own salvation.",
+  "source": "derived",
+  "grade": 8,
+  "excerptGrade": 8
+ },
+ "how-the-reformation-started-and-why-it-still-matters": {
+  "metaDescription": "The Reformation from Hus and Tetzel to Luther, Trent and the 1999 Joint Declaration: what it recovered, what it cost, and why it still matters now.",
+  "source": "rewrite",
+  "grade": 11.3,
+  "excerptGrade": 13.8,
+  "qa": {
+   "question": "What Was the Reformation and Why Does It Still Matter?",
+   "answer": "The Reformation began as a quarrel over indulgences and became an argument about how a guilty person stands before God. It recovered a gospel the late medieval church had buried and broke the Western church in the recovering, and an honest account has to grieve the one while receiving the other."
+  }
+ },
+ "the-great-awakenings-and-the-making-of-american-faith": {
+  "metaDescription": "The First and Second Great Awakenings explained: Edwards, Whitefield, Cane Ridge, Finney, revival and slavery, and what revivalism gave and cost.",
+  "source": "rewrite",
+  "grade": 14,
+  "excerptGrade": 9.9
+ },
+ "why-there-are-so-many-christian-denominations": {
+  "metaDescription": "Why Christians divided, from 1054 and the Reformation to American revivals and Azusa Street, what still unites them, and what non-denominational means.",
+  "source": "rewrite",
+  "grade": 15.5,
+  "excerptGrade": 11.4,
+  "qa": {
+   "question": "Why Are There So Many Christian Denominations?",
+   "answer": "The divisions are real, they have dates, and many of them owe more to class, race and nation than to the Bible. Underneath them the churches still confess one creed, and the church that calls itself non-denominational is not an exit from that history but one more tradition inside it."
+  }
+ },
+ "how-to-revitalize-a-dying-church": {
+  "metaDescription": "Revitalization is not a program you install but a death the pastor must enter before the congregation can live. The numbers came to me on a Tuesday.",
+  "source": "derived",
+  "grade": 8,
+  "excerptGrade": 11.7
+ },
+ "why-churches-close-and-what-comes-next": {
+  "metaDescription": "A church does not die when it locks the door but years earlier, the day it stopped believing it had anything the lost could not get elsewhere.",
+  "source": "derived",
+  "grade": 10.2,
+  "excerptGrade": 10.2
+ },
+ "why-gen-z-is-coming-back-to-church": {
+  "metaDescription": "The young are not returning to be comforted but to be told the truth, and the church that flatters them will lose them again.",
+  "source": "derived",
+  "grade": 8.5,
+  "excerptGrade": 8.5
+ },
+ "replanting-when-a-church-starts-over": {
+  "metaDescription": "The vote was twenty-three to nine. Afterward I asked her how she could vote to end the church she had given her life to.",
+  "source": "derived",
+  "grade": 3.3,
+  "excerptGrade": 11.5
+ },
+ "leading-a-church-when-trust-is-gone": {
+  "metaDescription": "Trust cannot be restored by competence or charisma but only by the slow, costly work of a leader who tells the truth when the truth indicts him.",
+  "source": "derived",
+  "grade": 11.5,
+  "excerptGrade": 11.5
+ },
+ "how-individualism-changed-how-we-read-the-bible": {
+  "metaDescription": "We did not stop believing the Bible, we quietly rewrote who it was talking to, and the someone it now addresses is me alone.",
+  "source": "derived",
+  "grade": 10.5,
+  "excerptGrade": 10.5
+ },
+ "consumerism-is-a-spiritual-formation": {
+  "metaDescription": "The mall is not neutral, it is a cathedral, and we have been worshiping in it longer than we have been worshiping anywhere else.",
+  "source": "derived",
+  "grade": 10.5,
+  "excerptGrade": 10.5
+ },
+ "the-church-captive-to-the-culture-war": {
+  "metaDescription": "We were promised the culture war would defend the faith, and instead it quietly rewrote the faith to fit the war.",
+  "source": "derived",
+  "grade": 8.3,
+  "excerptGrade": 8.3
+ },
+ "outrage-is-not-a-spiritual-gift": {
+  "metaDescription": "What Scripture, the desert fathers and Aquinas teach about righteous anger, and why the outrage rewarded online, on the right and the left, is different.",
+  "source": "rewrite",
+  "grade": 12.6,
+  "excerptGrade": 10.5
+ },
+ "formed-by-screens-technology-and-the-soul": {
+  "metaDescription": "The screen does not only fill our time, it slowly remakes the kind of soul we have time for.",
+  "source": "derived",
+  "grade": 6.1,
+  "excerptGrade": 6.1
+ },
+ "how-to-read-the-bible-without-making-it-say-what-you-want": {
+  "metaDescription": "How to read the Bible in context: genre, canon, the proof-text habit, how misreadings defended slavery, lectio divina, and why study needs devotion.",
+  "source": "rewrite",
+  "grade": 13.9,
+  "excerptGrade": 9.4
+ },
+ "what-the-gospel-actually-is": {
+  "metaDescription": "What the gospel is: euangelion in Rome and Isaiah, Paul's creed in 1 Corinthians 15, the king Jesus and justification debate, and why assent falls short.",
+  "source": "rewrite",
+  "grade": 11.3,
+  "excerptGrade": 5.7,
+  "qa": {
+   "question": "King Jesus or justification by faith?",
+   "answer": "Once you agree the gospel is news, a harder question opens among people who agree on nearly everything else: what is the headline? Each side of the argument is protecting something real."
+  }
+ },
+ "the-trinity-is-not-optional": {
+  "metaDescription": "What the Trinity means, how Scripture and the councils of 325 and 381 shaped it, which errors it rules out, and why a triune God means love is eternal.",
+  "source": "rewrite",
+  "grade": 10.4,
+  "excerptGrade": 8.2
+ },
+ "inerrancy-infallibility-and-the-word-you-can-trust": {
+  "metaDescription": "Most fights about whether the Bible has errors are really fights about fear and control. The deeper question is whether it can do what God sent it to do.",
+  "source": "derived",
+  "grade": 5.9,
+  "excerptGrade": 5.9
+ },
+ "grace-is-not-a-feeling": {
+  "metaDescription": "We turned grace into a warm mood that asks nothing and changes no one. Real grace costs the giver everything, and that is why it is not soft.",
+  "source": "derived",
+  "grade": 5,
+  "excerptGrade": 5
+ },
+ "what-the-bible-actually-says-about-money-and-wealth": {
+  "metaDescription": "What Jesus, Paul, the Old Testament, the church fathers and John Wesley teach about wealth, contentment, debt, generosity and the tithe, read in context.",
+  "source": "rewrite",
+  "grade": 12,
+  "excerptGrade": 8.6,
+  "qa": {
+   "question": "What Does the Bible Say About Money and Wealth?",
+   "answer": "Scripture calls wealth a gift, warns that it is a danger, and names money a rival master that promises the security only God can give. The Christian life with money turns on telling the tool from the master."
+  }
+ },
+ "is-poverty-political-the-bibles-answer": {
+  "metaDescription": "What the Torah, the prophets, Jesus and the early church teach about the poor, how charity, justice and policy differ, and where Christians may disagree.",
+  "source": "rewrite",
+  "grade": 12.1,
+  "excerptGrade": 10.5,
+  "qa": {
+   "question": "What Does the Bible Say About Poverty, and Is It Political?",
+   "answer": "Scripture binds every Christian to the poor through the law, the prophets, Jesus and the apostles, but it hands no party a platform. The difference between charity, justice and policy is where honest argument begins."
+  }
+ },
+ "jubilee-debt-and-the-economy-god-commanded": {
+  "metaDescription": "How Leviticus 25, Deuteronomy 15 and Ruth governed land, debt and gleaning, whether Israel kept the Jubilee, and what the law asks of modern economies.",
+  "source": "rewrite",
+  "grade": 13,
+  "excerptGrade": 11.1,
+  "qa": {
+   "question": "Did Israel ever keep the Jubilee?",
+   "answer": "The honest answer is that we don't know. Some scholars read Leviticus 25 as a late, utopian priestly program never enforced; others think it preserves an old institution rarely kept on schedule. What is not in doubt is that debt release was a real practice in Israel's world. Moshe Weinfeld set out in Social Justice in Ancient Israel and in the Ancient Near East (1995) how Mesopotamian kings issued edicts of misharum, \"equity,\" often on taking the throne, cancelling certain debts and freeing people held in debt servitude."
+  }
+ },
+ "the-eye-of-the-needle-jesus-and-the-rich": {
+  "metaDescription": "Mark 10 read in context: the needle gate myth, the rope theory, Clement to Wesley, and what 'with God all things are possible' does and doesn't soften.",
+  "source": "rewrite",
+  "grade": 9.8,
+  "excerptGrade": 7.6,
+  "qa": {
+   "question": "What Did Jesus Mean by a Camel Through the Eye of a Needle?",
+   "answer": "Jesus did not describe a tight squeeze through a low gate. He named an impossibility, and the church has spent two thousand years turning it back into a difficulty it could manage. The impossibility is where grace begins, and grace does not make wealth safe."
+  }
+ },
+ "charity-is-not-justice-the-difference": {
+  "metaDescription": "How Christians have told charity from justice, from Ambrose and Aquinas to Tocqueville and Câmara, and why the church owes the poor both, justice first.",
+  "source": "rewrite",
+  "grade": 12.1,
+  "excerptGrade": 9.8,
+  "qa": {
+   "question": "Charity vs. Justice: What's the Difference for Christians?",
+   "answer": "Charity gives what is ours; justice returns what was never ours to keep. Scripture and the church's long memory bind Christians to both, and warn that generosity can become a respectable way of withholding what we owe."
+  }
+ },
+ "covenant-vs-contract-what-marriage-is": {
+  "metaDescription": "What is covenant marriage? The biblical meaning of marriage from Genesis 2 and 15 to Ephesians 5, and how the West came to treat marriage as a contract.",
+  "source": "rewrite",
+  "grade": 5.9,
+  "excerptGrade": 8.8
+ },
+ "what-fatherhood-requires": {
+  "metaDescription": "What the Bible says about being a father: God as Father in Scripture and the creeds, the father wound, the projection objection, and what fathers owe.",
+  "source": "rewrite",
+  "grade": 11.3,
+  "excerptGrade": 9,
+  "qa": {
+   "question": "What Does the Bible Say About Fathers and the Father Wound?",
+   "answer": "The word father is full before the church ever says it. Scripture and the creeds insist that God's fatherhood is not modeled on ours but ours on his, which answers the skeptic and is the only real hope for a man whose own father left the word empty."
+  }
+ },
+ "protecting-your-marriage-from-work": {
+  "metaDescription": "When work is hurting your marriage: why some jobs demand everything, how good work becomes an idol, and what the Bible's two reasons for rest teach.",
+  "source": "rewrite",
+  "grade": 11.3,
+  "excerptGrade": 6.9
+ },
+ "forgiveness-in-marriage": {
+  "metaDescription": "What it means to forgive your spouse: how forgiveness differs from reconciliation and trust, what repentance owes, and why it never requires danger.",
+  "source": "rewrite",
+  "grade": 13.4,
+  "excerptGrade": 8.5
+ },
+ "marriage-money-and-marriage": {
+  "metaDescription": "Why Christian couples fight about money, what Jesus meant by mammon, how to weigh joint or separate bank accounts, and when money control becomes abuse.",
+  "source": "rewrite",
+  "grade": 12.6,
+  "excerptGrade": 12.3,
+  "qa": {
+   "question": "Joint or separate accounts?",
+   "answer": "Here the practical question arrives: should a married couple combine everything, or keep separate accounts? Nothing in this section is financial or legal advice. Property law differs by state (nine states treat most marital property as community property), and the specifics of accounts, debts and estates belong with a qualified professional."
+  }
+ },
+ "marriage-intimacy": {
+  "metaDescription": "What 1 Corinthians 7 and the Song of Songs teach about sex in marriage, why Christian marriages go sexless, and how couples can seek help without pressure.",
+  "source": "rewrite",
+  "grade": 10.7,
+  "excerptGrade": 11.1
+ },
+ "marriage-through-depression-and-crisis": {
+  "metaDescription": "How to love a depressed husband or wife: why treatment and faith aren't rivals, what the Bible's laments offer, and why the caregiver needs help too.",
+  "source": "rewrite",
+  "grade": 11.8,
+  "excerptGrade": 6.6,
+  "qa": {
+   "question": "My Spouse Is Depressed. How Do I Help Without Losing Myself?",
+   "answer": "Depression in a marriage is a medical illness and a spiritual burden at once. The church has often met it with explanations, when the sick spouse needs treatment and presence and the well spouse needs help of their own. The vow was written for this season."
+  }
+ },
+ "parenting-raising-kids-in-a-screen-age": {
+  "metaDescription": "When should a child get a smartphone? Haidt and his critics, Postman, McLuhan and Scripture on screens, attention and formation, and why parents go first.",
+  "source": "rewrite",
+  "grade": 5.8,
+  "excerptGrade": 7.9
+ },
+ "parenting-talking-about-sex-and-identity": {
+  "metaDescription": "How Christian parents can talk with kids about sex, the body and gender identity: Scripture, church history, purity culture's failures, and lasting love.",
+  "source": "rewrite",
+  "grade": 14.4,
+  "excerptGrade": 7.5
+ },
+ "parenting-letting-them-fail": {
+  "metaDescription": "Why overprotective parenting leaves kids fragile, how to tell danger from difficulty, and what Scripture says about suffering, providence and letting go.",
+  "source": "rewrite",
+  "grade": 15.5,
+  "excerptGrade": 9.9
+ },
+ "parenting-family-rhythms-that-form-faith": {
+  "metaDescription": "Spiritual milestones for children by age, and why Sabbath, feast, table and the church year form faith more deeply than a checklist of things to achieve.",
+  "source": "rewrite",
+  "grade": 11.3,
+  "excerptGrade": 7.6
+ },
+ "why-pastors-are-leaving-ministry": {
+  "metaDescription": "A man I trained for the ministry called me last spring to tell me he was done. Not falling, not in scandal, not in doubt about the existence of God.",
+  "source": "derived",
+  "grade": 5.6,
+  "excerptGrade": 13.5
+ },
+ "depression-in-the-pulpit": {
+  "metaDescription": "I have preached a sermon on the goodness of God on a morning when I could not feel it.",
+  "source": "derived",
+  "grade": 6.1,
+  "excerptGrade": 14.5
+ },
+ "how-to-lead-without-losing-your-soul": {
+  "metaDescription": "A man can gain a thriving church and lose the very soul that was supposed to lead it, and most of the practices we call leadership are how he does it.",
+  "source": "derived",
+  "grade": 11.3,
+  "excerptGrade": 11.3
+ },
+ "the-interior-life-of-the-pastor": {
+  "metaDescription": "A pastor can handle the things of God all week and starve to death spiritually, because handling is not the same as eating.",
+  "source": "derived",
+  "grade": 9.3,
+  "excerptGrade": 9.3
+ },
+ "why-your-church-should-require-a-sabbatical": {
+  "metaDescription": "Most churches will let a pastor work himself into the ground and call it dedication.",
+  "source": "derived",
+  "grade": 7.6,
+  "excerptGrade": 12.5
+ },
+ "how-to-preach-to-people-who-have-heard-it-all": {
+  "metaDescription": "The hardest congregation is not the hostile one but the one that has already heard your text a hundred times and stopped expecting anything from it.",
+  "source": "derived",
+  "grade": 13.2,
+  "excerptGrade": 13.2
+ },
+ "preaching-politics-without-losing-the-gospel": {
+  "metaDescription": "It is the second Sunday of November and the preacher has a decision to make before he opens his mouth. Half the room voted one way.",
+  "source": "derived",
+  "grade": 5.8,
+  "excerptGrade": 14.8
+ },
+ "expository-vs-topical-preaching": {
+  "metaDescription": "Two preachers prepare for the same Sunday. By Saturday night both will have a sermon.",
+  "source": "derived",
+  "grade": 3.9,
+  "excerptGrade": 14.7
+ },
+ "five-preaching-habits-that-empty-a-room": {
+  "metaDescription": "A room does not usually empty all at once, it leaks, one Sunday at a time, through habits the preacher cannot see because he is the one performing them.",
+  "source": "derived",
+  "grade": 11.6,
+  "excerptGrade": 11.6
+ },
+ "the-difference-between-a-sermon-and-a-talk": {
+  "metaDescription": "A man stands up with notes and speaks for thirty minutes about God, and at the end you cannot tell whether what just happened was a sermon or a talk.",
+  "source": "derived",
+  "grade": 11.8,
+  "excerptGrade": 10.9
+ },
+ "the-most-segregated-hour": {
+  "metaDescription": "The hour we call holy is the hour we keep apart, and the building of that wall has a history older than our discomfort with naming it.",
+  "source": "derived",
+  "grade": 10.7,
+  "excerptGrade": 10.7
+ },
+ "the-image-of-god-and-the-lie-of-race": {
+  "metaDescription": "What Scripture says about race: nations and tongues, how race was invented, the color-blindness debate, and why reconciliation requires repentance.",
+  "source": "rewrite",
+  "grade": 14.6,
+  "excerptGrade": 13.6,
+  "qa": {
+   "question": "What Does the Bible Say About Race and Racial Reconciliation?",
+   "answer": "Race as a ranking of human worth is a modern invention the church helped build, not a biblical category. The Bible's answer is reconciliation, and biblical reconciliation passes through truth, repentance and restitution before it arrives at peace."
+  }
+ },
+ "lament-the-prayer-the-church-forgot": {
+  "metaDescription": "Is it wrong to be angry at God? How the lament psalms, Job, Jeremiah and Jesus' cry from the cross turn protest into prayer, and where that anger stops.",
+  "source": "rewrite",
+  "grade": 5.1,
+  "excerptGrade": 6.3,
+  "qa": {
+   "question": "Is it wrong to be angry at God?",
+   "answer": "The Christians who say you shouldn't be angry at God aren't fools, and their case deserves the form they'd sign. Anger is a moral judgment; to be angry at someone is to hold that he has done wrong. God cannot do wrong. He is the standard of righteousness, not a party measured against it. So anger at God is always misdirected, a creature putting the Creator in the dock, and the fitting response to loss is Job's on the first day: \"The LORD gave, and the LORD has taken away; blessed be the name of the LORD\" (Job 1:21, ESV)."
+  }
+ },
+ "building-the-multiethnic-church": {
+  "metaDescription": "Why Sunday morning is still segregated, what Ephesians, Galatians and Acts say about the dividing wall, and why real multiethnic churches share power.",
+  "source": "rewrite",
+  "grade": 13.4,
+  "excerptGrade": 11.8
+ },
+ "what-the-sabbath-is-and-why-you-need-it": {
+  "metaDescription": "What the Sabbath is in Scripture, how Jesus and the early church kept it, four Christian views held today, and why rest is trust in God, not a reward.",
+  "source": "rewrite",
+  "grade": 10.4,
+  "excerptGrade": 12.4,
+  "qa": {
+   "question": "What Is the Sabbath and Should Christians Keep It Today?",
+   "answer": "The Sabbath was given twice, once to creatures and once to freed slaves, and Jesus claimed it rather than cancelled it. Christians still disagree about how it binds us, but every faithful answer rests on one distinction our culture has lost: rest as a reward for work, or rest as trust that God keeps the world running while we stop."
+  }
+ },
+ "how-to-build-a-healthy-church-staff-culture": {
+  "metaDescription": "The staff culture you actually have is the one you tolerate on a Tuesday, not the one you describe in the elder retreat.",
+  "source": "derived",
+  "grade": 9.8,
+  "excerptGrade": 9.8
+ },
+ "when-to-fire-someone-in-ministry": {
+  "metaDescription": "The cruelest thing a pastor can do to a staff member is keep him on a year past the point where everyone but him already knows.",
+  "source": "derived",
+  "grade": 9.5,
+  "excerptGrade": 9.5
+ },
+ "leading-through-conflict-on-a-church-team": {
+  "metaDescription": "A church team does not get into trouble because it fights, it gets into trouble because it learned to call avoidance peace.",
+  "source": "derived",
+  "grade": 9.6,
+  "excerptGrade": 9.6
+ },
+ "how-to-develop-leaders-not-just-volunteers": {
+  "metaDescription": "A church can run a hundred volunteers through its slots for a decade and produce not a single leader, and most of them do.",
+  "source": "derived",
+  "grade": 9,
+  "excerptGrade": 9
+ },
+ "the-lonely-seat-power-and-the-senior-leader": {
+  "metaDescription": "The loneliness of the senior seat is real, and the way most pastors try to cure it is exactly what makes it worse.",
+  "source": "derived",
+  "grade": 9.3,
+  "excerptGrade": 9.3
+ },
+ "individual-sin-and-systemic-sin-explained": {
+  "metaDescription": "Is sin only personal? What Isaiah, Amos, Daniel and Paul's powers teach about systemic sin, the strongest objections to the idea, and what repentance asks.",
+  "source": "rewrite",
+  "grade": 8.6,
+  "excerptGrade": 10.7
+ },
+ "principalities-and-powers-the-bibles-language-for-systems": {
+  "metaDescription": "Paul had a vocabulary for systemic evil two thousand years before the word systemic existed.",
+  "source": "derived",
+  "grade": 12.3,
+  "excerptGrade": 12.3
+ },
+ "disability-dignity-and-the-image-of-god": {
+  "metaDescription": "What the Bible says about disability: Leviticus 21, John 9, Mephibosheth, the wounds of the risen Christ, eugenics, and what the church owes families.",
+  "source": "rewrite",
+  "grade": 13.4,
+  "excerptGrade": 9.4
+ },
+ "mental-health-and-the-church-beyond-pray-about-it": {
+  "metaDescription": "Why telling a depressed Christian to just pray more fails, what Scripture says about anguish, and how prayer, medicine and the church belong together.",
+  "source": "rewrite",
+  "grade": 11.5,
+  "excerptGrade": 8.4
+ },
+ "what-the-bible-says-about-immigrants-and-refugees-in-depth": {
+  "metaDescription": "What the Torah's sojourner laws, Romans 13, Ruth and Matthew 25 teach about immigration, what Scripture binds Christians to, and what it leaves to policy.",
+  "source": "rewrite",
+  "grade": 11.6,
+  "excerptGrade": 8.6,
+  "qa": {
+   "question": "What Does the Bible Say About Immigration and Refugees?",
+   "answer": "Scripture binds the church to justice and love toward the sojourner, and it leaves the numbers and procedures of a nation's border to prudence. Both halves of that sentence cut, and they cut the right and the left with the same edge."
+  }
+ },
+ "the-consistent-pro-life-ethic-womb-to-tomb": {
+  "metaDescription": "What a consistent pro-life ethic asks of the church after birth: Bernardin's seamless garment, the early church, mothers, foster care and life after Dobbs.",
+  "source": "rewrite",
+  "grade": 12,
+  "excerptGrade": 10.9
+ },
+ "what-is-vocation-work-as-calling": {
+  "metaDescription": "What vocation means in Scripture and history, from Genesis and Luther to Weber and burnout, and why your work is a calling but never your salvation.",
+  "source": "rewrite",
+  "grade": 12.7,
+  "excerptGrade": 5.5
+ },
+ "how-to-find-gods-will-for-your-career": {
+  "metaDescription": "What the Bible means by God's will: decree and command, Friesen's wisdom view, Ignatian discernment, Acts 15, and how to choose a job without dread.",
+  "source": "rewrite",
+  "grade": 9.7,
+  "excerptGrade": 8.5,
+  "qa": {
+   "question": "How Do You Know God's Will for Your Life and Career?",
+   "answer": "Scripture never promises a hidden blueprint for your career that you might fail to find. It names God's will plainly, hands you wisdom and counsel, and frees you to choose under a providence your choices cannot wreck."
+  }
+ },
+ "bivocational-ministry-done-right": {
+  "metaDescription": "A man called me late on a Tuesday, ashamed in a way he could barely put into words.",
+  "source": "derived",
+  "grade": 7.8,
+  "excerptGrade": 14.1
+ },
+ "the-constantinian-bargain": {
+  "metaDescription": "The church did not lose its nerve in a single year. But the trade it made with the empire has been coming due for seventeen hundred years.",
+  "source": "derived",
+  "grade": 4.1,
+  "excerptGrade": 4.1
+ },
+ "a-life-you-cannot-cut-in-half": {
+  "metaDescription": "We are the first people who can be in two places at once. We have not admitted what it is doing to us.",
+  "source": "derived",
+  "grade": 2.7,
+  "excerptGrade": 2.7
+ },
+ "the-church-has-outlived-its-own-funerals": {
+  "metaDescription": "Every generation believes it is the one watching the church die. The history says otherwise, and it says something worse.",
+  "source": "derived",
+  "grade": 8.4,
+  "excerptGrade": 8.4
+ },
+ "preaching-is-not-public-speaking": {
+  "metaDescription": "The pulpit has been colonized by the conference stage. The preacher who notices is the one with something left to lose.",
+  "source": "derived",
+  "grade": 6.5,
+  "excerptGrade": 6.5
+ },
+ "the-inheritance-you-choose": {
+  "metaDescription": "I was raised without a father and given five sons. Everything I believe about covenant, I learned in the gap between those two facts.",
+  "source": "derived",
+  "grade": 7.3,
+  "excerptGrade": 7.3
+ },
+ "the-year-the-church-agreed": {
+  "metaDescription": "In 1933 the German church did not resist the regime. It volunteered. We would all like to believe we would have been the exception.",
+  "source": "derived",
+  "grade": 3.3,
+  "excerptGrade": 3.3
+ },
+ "mammon-learned-to-pray": {
+  "metaDescription": "The most successful heresy in American history did not deny the gospel. It improved it, and added one sentence the New Testament never says.",
+  "source": "derived",
+  "grade": 9.7,
+  "excerptGrade": 9.7
+ },
+ "the-christianity-of-this-land": {
+  "metaDescription": "Frederick Douglass said there were two religions in America wearing the same name. The seam he named still runs straight through the church.",
+  "source": "derived",
+  "grade": 5.8,
+  "excerptGrade": 5.8
+ },
+ "a-team-is-not-a-court": {
+  "metaDescription": "Pastors gather agreement and call it loyalty. The people closest to a leader's power are the first ones it can wound.",
+  "source": "derived",
+  "grade": 5.9,
+  "excerptGrade": 5.9
+ },
+ "how-christianity-became-an-empire": {
+  "metaDescription": "The story of how a persecuted Jewish sect became the official religion of the Roman Empire, and what was gained and lost in the transformation.",
+  "source": "derived",
+  "grade": 13.5,
+  "excerptGrade": 13.5
+ },
+ "the-great-schism": {
+  "metaDescription": "The 1054 split between Eastern and Western Christianity was centuries in the making.",
+  "source": "derived",
+  "grade": 8.5,
+  "excerptGrade": 10.3
+ },
+ "what-the-reformation-actually-changed": {
+  "metaDescription": "The Reformation was not just a theological dispute. Like most standard tellings it is about a third true.",
+  "source": "derived",
+  "grade": 6.3,
+  "excerptGrade": 11.6
+ },
+ "the-anabaptist-option": {
+  "metaDescription": "They rejected the state church, practiced believer's baptism, and insisted on nonviolence. Both Catholics and Protestants killed them for it.",
+  "source": "derived",
+  "grade": 9.6,
+  "excerptGrade": 8.6
+ },
+ "how-american-christianity-became-american": {
+  "metaDescription": "American Christianity is not European Christianity with an American accent.",
+  "source": "derived",
+  "grade": 17.8,
+  "excerptGrade": 22
+ },
+ "the-rise-and-fall-of-mainline-protestantism": {
+  "metaDescription": "For most of the twentieth century, mainline Protestantism was American Christianity. Its decline is not merely a story about shrinking pews.",
+  "source": "derived",
+  "grade": 11,
+  "excerptGrade": 10.8
+ },
+ "what-evangelicalism-was-supposed-to-be": {
+  "metaDescription": "That it became something else entirely is one of the great tragedies of modern American religion.",
+  "source": "derived",
+  "grade": 12.8,
+  "excerptGrade": 16.6
+ },
+ "the-black-church-in-america": {
+  "metaDescription": "A history of the Black church in America, from the invisible institution of slavery to civil rights, and what its witness asks of the whole church.",
+  "source": "rewrite",
+  "grade": 13.6,
+  "excerptGrade": 12.3
+ },
+ "pentecostalism-and-the-global-south": {
+  "metaDescription": "The most significant development in global Christianity over the past century is not a new theology, a papal encyclical, or a denominational merger.",
+  "source": "derived",
+  "grade": 18,
+  "excerptGrade": 17.1
+ },
+ "three-families-of-christianity": {
+  "metaDescription": "Christianity is not one tradition but three great families, each with its own genius and its own blind spots.",
+  "source": "derived",
+  "grade": 8.6,
+  "excerptGrade": 8.8
+ },
+ "guide-to-every-major-denomination": {
+  "metaDescription": "The existence of denominations embarrasses many Christians and trips up many outsiders.",
+  "source": "derived",
+  "grade": 14.7,
+  "excerptGrade": 17.2
+ },
+ "calvinism-and-arminianism": {
+  "metaDescription": "The oldest and most consequential debate in Protestant theology is also the most misunderstood.",
+  "source": "derived",
+  "grade": 12.6,
+  "excerptGrade": 10.8
+ },
+ "liturgical-vs-contemporary-worship": {
+  "metaDescription": "Liturgical or contemporary worship? The history from Justin Martyr and the Reformers to Finney and Willow Creek, and how each way of worship forms us.",
+  "source": "rewrite",
+  "grade": 9.1,
+  "excerptGrade": 10.9
+ },
+ "charismatic-movement-inside-every-denomination": {
+  "metaDescription": "The movement that began in a converted stable in Los Angeles in 1906 has now touched every branch of Christianity on earth.",
+  "source": "derived",
+  "grade": 11.8,
+  "excerptGrade": 11.7
+ },
+ "why-people-are-leaving-the-church": {
+  "metaDescription": "Why people are leaving the church: the rise of the nones and dones, what secularization theory missed, and why faith rarely survives leaving the body.",
+  "source": "rewrite",
+  "grade": 14,
+  "excerptGrade": 9.7
+ },
+ "deconstruction-is-not-destruction": {
+  "metaDescription": "What faith deconstruction means, from Derrida to the exvangelical movement, and how to tell dismantling a church culture from abandoning the creed.",
+  "source": "rewrite",
+  "grade": 13.9,
+  "excerptGrade": 9.8,
+  "qa": {
+   "question": "What Is Faith Deconstruction, and What Does Exvangelical Mean?",
+   "answer": "Deconstruction began as a philosopher's way of reading and became the name for leaving evangelicalism. Much of what exvangelicals left deserved to be left. The real question is whether the digging stops in the rubble or reaches the foundation."
+  }
+ },
+ "purity-culture-and-its-wreckage": {
+  "metaDescription": "What purity culture was, from True Love Waits to I Kissed Dating Goodbye, the harm it did, and the older Christian sexual ethic it distorted and obscured.",
+  "source": "rewrite",
+  "grade": 12.4,
+  "excerptGrade": 7.6
+ },
+ "prosperity-gospel-is-not-the-gospel": {
+  "metaDescription": "What the prosperity gospel teaches, where it came from, why it draws the poor, and how Job, Paul, Hebrews 11 and the Beatitudes answer it from Scripture.",
+  "source": "rewrite",
+  "grade": 11.1,
+  "excerptGrade": 8.5,
+  "qa": {
+   "question": "What Is the Prosperity Gospel, and Is It Biblical?",
+   "answer": "The prosperity gospel promises health and wealth as the return on faith and giving. It is right that God cares about bodies and bread, wrong about how he gives, and the poor it courts pay the highest price for the error."
+  }
+ },
+ "religious-trauma-is-real": {
+  "metaDescription": "What religious trauma and spiritual abuse are, where the terms came from, how hard truth differs from abuse, and what Scripture says to shepherds who harm.",
+  "source": "rewrite",
+  "grade": 10.9,
+  "excerptGrade": 12.6
+ },
+ "is-god-real": {
+  "metaDescription": "The question of God's existence deserves more than slogans from either side.",
+  "source": "derived",
+  "grade": 7.8,
+  "excerptGrade": 8.7
+ },
+ "what-christians-believe-about-hell": {
+  "metaDescription": "The Christian tradition has never spoken with one voice about hell. So this is not an argument for a single position.",
+  "source": "derived",
+  "grade": 6.5,
+  "excerptGrade": 9.4
+ },
+ "the-historical-jesus": {
+  "metaDescription": "The quest for the historical Jesus has occupied scholars for over two centuries.",
+  "source": "derived",
+  "grade": 10.4,
+  "excerptGrade": 9.5
+ },
+ "do-miracles-still-happen": {
+  "metaDescription": "What the Gospel miracles were for, the cessationist and continuationist cases, Augustine, Lourdes, faith-healing fraud, and how to pray for the sick.",
+  "source": "rewrite",
+  "grade": 13.4,
+  "excerptGrade": 11.5
+ },
+ "why-christianity": {
+  "metaDescription": "Why Christianity and not Islam, Buddhism or Hinduism? Hick's pluralism, Newbigin's reply, Prothero on real differences, and what only Christianity claims.",
+  "source": "rewrite",
+  "grade": 11.5,
+  "excerptGrade": 11.3
+ },
+ "how-to-talk-about-faith": {
+  "metaDescription": "How to talk about faith with friends who are nones: who they are, why old methods felt like sales, and what 1 Peter 3 and Acts 17 teach us to do instead.",
+  "source": "rewrite",
+  "grade": 9.8,
+  "excerptGrade": 10
+ },
+ "raising-kids-post-christian": {
+  "metaDescription": "How to raise Christian kids in a secular culture: what ended with Christendom, the Benedict Option debate, and why Scripture calls families exiles.",
+  "source": "rewrite",
+  "grade": 13.4,
+  "excerptGrade": 11.4
+ },
+ "interfaith-marriage": {
+  "metaDescription": "What the Bible says to a Christian thinking of marrying an unbeliever, and to one already married: 2 Corinthians 6, 1 Corinthians 7 and 1 Peter 3.",
+  "source": "rewrite",
+  "grade": 10.7,
+  "excerptGrade": 8.4
+ },
+ "digital-discipleship": {
+  "metaDescription": "How phones and algorithms form adults: McLuhan, Postman, Carr, Simone Weil, and Haidt and his critics, read with Romans 12, Philippians 4 and Psalm 46.",
+  "source": "rewrite",
+  "grade": 9.7,
+  "excerptGrade": 9.7,
+  "qa": {
+   "question": "Could You Not Watch One Hour?",
+   "answer": "On the night he was betrayed, Jesus took three of his closest friends into Gethsemane and asked them for one thing: \"My soul is very sorrowful, even to death; remain here, and watch with me\" (Matthew 26:38, ESV). He didn't ask them to fight or to understand. He asked for their attention, their presence awake beside him in the worst hour of his life. He came back and found them asleep, and his question has outlived every technology since: \"So, could you not watch with me one hour?\" (Matthew 26:40, ESV)."
+  }
+ },
+ "family-and-faith-transitions": {
+  "metaDescription": "When family says you've lost your mind over faith: Jesus's family in Mark 3, Matthew 10 in context, honoring parents, and persecution versus your own zeal.",
+  "source": "rewrite",
+  "grade": 12.3,
+  "excerptGrade": 10.4
+ },
+ "sexual-abuse-crisis-in-the-church": {
+  "metaDescription": "What the abuse reports found in Catholic, Baptist and Anglican churches, why cover-ups happen, what Scripture says, and how a church must respond.",
+  "source": "rewrite",
+  "grade": 11.8,
+  "excerptGrade": 12.9
+ },
+ "why-the-church-lost-the-culture-war": {
+  "metaDescription": "Where the phrase culture war came from, why Christians lost it, and what Hunter, Taylor, MacIntyre and 1 Peter show about witness without cultural power.",
+  "source": "rewrite",
+  "grade": 11.6,
+  "excerptGrade": 10.2
+ },
+ "white-evangelicalism-and-race": {
+  "metaDescription": "The American church did not merely tolerate slavery. It theologized it.",
+  "source": "derived",
+  "grade": 11.2,
+  "excerptGrade": 12.4
+ },
+ "megachurch-model": {
+  "metaDescription": "Are megachurches good for Christianity? Their history from McGavran to Willow Creek and Saddleback, their best case, what failed, and what Scripture says.",
+  "source": "rewrite",
+  "grade": 7.9,
+  "excerptGrade": 9.8
+ },
+ "colonialism-and-missions": {
+  "metaDescription": "The honest history of missions and colonialism: the Requerimiento, the Congo, residential schools, Las Casas, William Carey, and short-term trips today.",
+  "source": "rewrite",
+  "grade": 15.6,
+  "excerptGrade": 8.9,
+  "qa": {
+   "question": "Whose religion is it now?",
+   "answer": "If Christianity had been nothing more than the chaplaincy of empire, it should have left with the administrators. It didn't. Sanneh made the point in Whose Religion Is Christianity? (2003): across much of Africa the faith grew fastest after independence, in churches led by Africans, worshiping in African languages. The historian Andrew Walls, who taught in West Africa before building the study of world Christianity at Aberdeen and Edinburgh, explained why. In The Missionary Movement in Christian History (1996) he argued that Christian expansion has always been serial rather than progressive."
+  }
+ },
+ "what-christians-can-learn-from-judaism": {
+  "metaDescription": "How Christianity grew out of Judaism, why the church rejected Marcion, its long teaching of contempt, and what Christians can learn from Jewish faith.",
+  "source": "rewrite",
+  "grade": 11,
+  "excerptGrade": 10.5
+ },
+ "what-christians-can-learn-from-buddhism": {
+  "metaDescription": "What Buddhism teaches across its schools, what Christians can learn from it, Merton and Thich Nhat Hanh, mindfulness, and where the two faiths differ.",
+  "source": "rewrite",
+  "grade": 9.5,
+  "excerptGrade": 11.7
+ },
+ "what-christians-can-learn-from-indigenous-spirituality": {
+  "metaDescription": "What Christians can learn from Native American traditions on land, kinship and ceremony, the Native Christians who teach it, and where the faiths differ.",
+  "source": "rewrite",
+  "grade": 12.5,
+  "excerptGrade": 11.5,
+  "qa": {
+   "question": "What Can Christians Learn From Native American Faith Traditions?",
+   "answer": "Native American faith is many traditions, not one, and Christianity has been a Native faith for more than three centuries. Native Christians and their critics can teach the church about land, kinship and ceremony, and where the confessions part, they should part honestly."
+  }
+ },
+ "the-christian-mystics": {
+  "metaDescription": "Who the Christian mystics were, from Dionysius and Julian of Norwich to Teresa and Edwards, what mystical first meant, and the case for and against them.",
+  "source": "rewrite",
+  "grade": 11.8,
+  "excerptGrade": 9.7,
+  "qa": {
+   "question": "Who Were the Christian Mystics, and What Can They Teach Us?",
+   "answer": "Before mystical meant a private experience, it meant the hidden depth of Scripture and sacrament. Read that way, the great Christian mystics are not an escape from doctrine but its hardest school, and the sternest critics of what our age calls mysticism."
+  }
+ }
+}

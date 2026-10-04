@@ -3,6 +3,7 @@ import { ArrowRight } from "lucide-react";
 import { SEOMeta } from "@/components/SEOMeta";
 import { GeneratedCover, coverThemeFor } from "@/components/GeneratedCover";
 import { READING_PATHS as CANONICAL_PATHS, availableCount } from "@/lib/readingPaths";
+import { countWord } from "@/lib/taxonomy";
 
 interface PathArticle {
   title: string;
@@ -28,32 +29,32 @@ const READING_PATHS: ReadingPath[] = [
     estimatedTime: "45 minutes of reading, for the marriage you have not given up on",
     articles: [
       {
-        title: "Why Do Married Couples Slowly Drift Apart?",
+        title: "Why Married Couples Drift Apart and End Up Feeling Like Roommates",
         slug: "the-slow-drift-that-ends-marriages",
         description:
           "No one signs the divorce papers because of a single Tuesday.",
-        readTime: "10 min read",
+        readTime: "20 min read",
       },
       {
-        title: "What Silence Actually Costs a Marriage",
+        title: "The Silent Treatment in Marriage and How to Start Talking Again",
         slug: "what-silence-costs-a-marriage",
         description:
           "The marriage rarely dies in the fight.",
-        readTime: "11 min read",
+        readTime: "20 min read",
       },
       {
-        title: "What the Resentment in Your Marriage Is Telling You",
+        title: "Resentment in Marriage and How to Stop Resenting Your Spouse",
         slug: "the-resentment-in-your-marriage",
         description:
           "Resentment is not the rot in your marriage.",
-        readTime: "10 min read",
+        readTime: "20 min read",
       },
       {
-        title: "How Do You Forgive Without Pretending It Didn't Happen?",
-        slug: "forgiveness-without-pretending",
+        title: "How to Forgive Your Spouse, and Why Forgiveness Isn't Trust",
+        slug: "forgiveness-in-marriage",
         description:
           "Most of what we call forgiveness in marriage is pretending.",
-        readTime: "10 min read",
+        readTime: "19 min read",
       },
     ],
   },
@@ -65,32 +66,25 @@ const READING_PATHS: ReadingPath[] = [
     estimatedTime: "50 minutes that take the questions seriously",
     articles: [
       {
-        title: "What If Christianity Is Wrong?",
+        title: "What If Christianity Is Wrong? Living Honestly With the Question",
         slug: "what-if-we-are-wrong",
         description:
           "The question arrives uninvited, usually at night: what if the whole thing is a story we told ourselves?",
-        readTime: "10 min read",
+        readTime: "19 min read",
       },
       {
-        title: "When God Stops Making Sense",
-        slug: "when-god-doesnt-make-sense",
+        title: "Why Does God Feel Silent? Faith When God Seems Absent",
+        slug: "when-god-is-silent-and-the-room-is-empty",
         description:
           "We were sold a God who would add up.",
-        readTime: "10 min read",
+        readTime: "20 min read",
       },
       {
-        title: "What to Do When God Feels Absent",
-        slug: "dark-night-god-feels-absent",
-        description:
-          "The silence is not punishment and it is not your failure.",
-        readTime: "10 min read",
-      },
-      {
-        title: "How Does the Church Tell the Truth in a Post-Truth Age?",
+        title: "What Is Truth? A Christian Answer in a Post-Truth Age",
         slug: "truth-in-post-truth-world",
         description:
           "Two members of the same church now carry two contradictory sets of facts about the same week.",
-        readTime: "11 min read",
+        readTime: "20 min read",
       },
       {
         title: "What Comes After Deconstruction of Your Faith?",
@@ -130,11 +124,11 @@ const READING_PATHS: ReadingPath[] = [
         readTime: "10 min read",
       },
       {
-        title: "When Ministry Is Quietly Killing Your Marriage",
-        slug: "protecting-marriage-in-ministry",
+        title: "When Work Is Hurting Your Marriage and You Can't Just Quit",
+        slug: "protecting-your-marriage-from-work",
         description:
           "The work that destroys a pastor's marriage looks exactly like faithfulness.",
-        readTime: "10 min read",
+        readTime: "19 min read",
       },
     ],
   },
@@ -146,18 +140,11 @@ const READING_PATHS: ReadingPath[] = [
     estimatedTime: "35 minutes for the parent who prays more than they plan",
     articles: [
       {
-        title: "How Do You Raise Kids Who Think About Their Faith?",
+        title: "How to Answer Your Kids' Hard Questions About God and Doubt",
         slug: "raising-kids-who-think",
         description:
           "We trained a generation to give the right answer and called it faith.",
-        readTime: "10 min read",
-      },
-      {
-        title: "How Do You Talk to Your Kids About Doubt?",
-        slug: "teaching-kids-about-doubt",
-        description:
-          "You are waiting for your child to bring you their doubts.",
-        readTime: "10 min read",
+        readTime: "19 min read",
       },
       {
         title: "When Your Teenager Says They Don't Believe Anymore",
@@ -167,11 +154,11 @@ const READING_PATHS: ReadingPath[] = [
         readTime: "11 min read",
       },
       {
-        title: "How a Father Shapes the Way a Child Sees God",
-        slug: "the-father-wound-and-the-god-question",
+        title: "What Does the Bible Say About Fathers and the Father Wound?",
+        slug: "what-fatherhood-requires",
         description:
           "Before your child can hear the word Father about God, they will have learned what the word means from you.",
-        readTime: "11 min read",
+        readTime: "19 min read",
       },
     ],
   },
@@ -190,32 +177,32 @@ const READING_PATHS: ReadingPath[] = [
         readTime: "11 min read",
       },
       {
-        title: "Is Justice a Political Issue or a Theological One?",
+        title: "Is Biblical Justice Political? What Scripture Means by Justice",
         slug: "justice-not-political-theological",
         description:
           "Say the word \"justice\" in a mixed room and both tribes reach for it before anyone thinks about God.",
-        readTime: "10 min read",
+        readTime: "21 min read",
       },
       {
-        title: "What Does the Bible Say About the Church and the Poor?",
-        slug: "poor-not-ministry-category",
+        title: "What Does the Bible Say About Poverty, and Is It Political?",
+        slug: "is-poverty-political-the-bibles-answer",
         description:
           "James grades the worship service at the door, Isaiah grades the fast by the hungry, and the one requirement Jerusalem attached to Paul's gospel was the poor.",
-        readTime: "12 min read",
+        readTime: "19 min read",
       },
       {
-        title: "Why Does Charity Treat Symptoms and Not Causes?",
-        slug: "symptoms-without-causes-charity",
+        title: "Charity vs. Justice: What's the Difference for Christians?",
+        slug: "charity-is-not-justice-the-difference",
         description:
           "We are good at the Saturday.",
-        readTime: "12 min read",
+        readTime: "20 min read",
       },
       {
-        title: "Can a System Sin?",
-        slug: "individual-sin-systemic-sin-2",
+        title: "Is Sin Only Personal? What the Bible Says About Systemic Sin",
+        slug: "individual-sin-and-systemic-sin-explained",
         description:
           "Say \"systemic sin\" in a deacons' meeting and count to three.",
-        readTime: "12 min read",
+        readTime: "20 min read",
       },
     ],
   },
@@ -412,7 +399,7 @@ export default function ReadingPaths() {
         </div>
       </section>
 
-      {/* THE SIX PILLAR PATHS — the canonical ordered arcs through the library
+      {/* THE PILLAR PATHS — the canonical ordered arcs through the library
           (lib/readingPaths.ts). Each links to its own page at
           /reading-paths/:slug; the themed collections below remain as they are. */}
       <section style={{ background: "var(--charcoal)", padding: "4rem 1.5rem" }}>
@@ -441,10 +428,10 @@ export default function ReadingPaths() {
               marginBottom: "0.9rem",
             }}
           >
-            Six ordered arcs through the whole argument
+            {(() => { const w = countWord(CANONICAL_PATHS.length); return w.charAt(0).toUpperCase() + w.slice(1); })()} ordered arcs through the whole argument
           </h2>
           <p style={{ fontSize: "0.95rem", lineHeight: 1.7, color: "var(--charcoal-fg)", opacity: 0.7, maxWidth: "62ch", marginBottom: "2rem" }}>
-            The themed collections below gather essays by subject. These six are different — each is a sequence, built to be read in order, tracing one pillar of the site's spine from diagnosis to formation.
+            The themed collections below gather essays by subject. These {countWord(CANONICAL_PATHS.length)} are different — each is a sequence, built to be read in order, tracing one pillar of the site's spine from diagnosis to formation.
           </p>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "0.75rem" }}>
             {CANONICAL_PATHS.map((p) => (

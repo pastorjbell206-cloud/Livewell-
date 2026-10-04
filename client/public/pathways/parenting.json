@@ -33,30 +33,13 @@
     },
     {
       "kind": "study",
-      "heading": "Then sit down at the table",
-      "note": "The Family Table is a guided study for discipling your own household — the meal, the text, the question, and the sending, scaled to a living room.",
+      "heading": "Then work the study",
+      "note": "A five-session study on parenting as formation rather than performance, for a couple, a small group, or a parent working alone.",
       "items": [
         {
-          "label": "The Family Table — a study for households",
-          "href": "/table/the-family-table",
-          "blurb": "A work-through study for making disciples of the children already at your table."
-        }
-      ]
-    },
-    {
-      "kind": "book",
-      "heading": "Then read the book, free",
-      "note": "Raising Kids in the Faith collects the work on handing down a faith worth keeping — prayer, the Bible at home, and family rhythms that hold. Free to read.",
-      "items": [
-        {
-          "label": "Raising Kids in the Faith — read free",
-          "href": "/read/essays-raising-kids-in-faith",
-          "blurb": "Eleven chapters on forming faith at home. The complete book, free."
-        },
-        {
-          "label": "Find James's books in the bookstore",
-          "href": "/books",
-          "blurb": "Print and ebook editions of the full library."
+          "label": "Parenting: A Bible Study on Forming a Child's Faith",
+          "href": "/studyguides/parenting-formation",
+          "blurb": "Five sessions on forming a child's faith, past the tips and into the cross."
         }
       ]
     }

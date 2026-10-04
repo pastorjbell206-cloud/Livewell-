@@ -41,7 +41,7 @@ export default function PropheticLament() {
     <Layout>
       <SEOMeta title="The Lament and the Hope — Prayers for a Broken World" description="The prophets indict, then lament, then promise. Words to grieve injustice, confess the church's own failure, and hope in the world God will set right." url="https://www.livewellbyjamesbell.co/lament" />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>Prophetic Disruption and Justice · Lament and hope</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(34px, 5.5vw, 58px)", fontWeight: 400, lineHeight: 1.04, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "20ch" }}>{data?.title ?? "The Lament and the Hope"}</h1>
@@ -61,7 +61,7 @@ export default function PropheticLament() {
 
       {/* PRAYERS */}
       {data && (
-        <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-7)", color: "var(--bone)" }}>
+        <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-7)", color: "var(--charcoal-fg)" }}>
           <div style={wrap}>
             {GROUPS.map((g) => (byType[g.type]?.length ? (
               <div key={g.type} style={{ marginBottom: "var(--s-5)" }}>

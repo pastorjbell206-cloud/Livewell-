@@ -11,15 +11,17 @@
  */
 import { useEffect, useMemo, useState } from "react";
 import { Link, useLocation } from "wouter";
-import { Search, SlidersHorizontal, X } from "lucide-react";
+import { LayoutGrid, List, Search, SlidersHorizontal, X } from "lucide-react";
 
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { StatementBand } from "@/components/EditorialBlocks";
 import { TrackChip } from "@/components/TrackChip";
+import { EssayArt } from "@/components/EssayArt";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { LoadFailed } from "@/components/LoadFailed";
 import { trpc } from "@/lib/trpc";
+import { fetchJson } from "@/lib/fetch-json";
 import { pillarToTrack, resolveTrack, pillarForPost, PILLAR_BY_SLUG, subThemesForPost, SUBTHEMES, PILLARS_V2, MOVEMENTS } from "@/lib/taxonomy";
 import {
   PILLAR_BY_SLUG as NEW_PILLAR_BY_SLUG,
@@ -31,6 +33,35 @@ import { SUBPATHWAY_BY_SLUG } from "@/lib/subpathwayMap.generated";
 import { HIDDEN_SLUGS } from "@/lib/hiddenSlugs";
 import { isFullEssay } from "@/lib/essayQuality";
 import { StartHereRow } from "@/components/StartHereRow";
+import { readStoredJSON, writeStoredJSON } from "@/lib/storage";
+import { smartQuotes } from "@/lib/smart-quotes";
+
+/**
+ * A card standfirst, trimmed to `max` characters on a word boundary. Some
+ * stored excerpts carry JSON-escaped quotes (\"like this\"); unescape them and
+ * curl the quotes so a card never shows a backslash.
+ */
+function standfirst(text: string, max: number): string {
+  const clean = smartQuotes(text.replace(/\\(["'])/g, "$1")).trim();
+  // Many stored excerpts are already cut mid-word; only a finished sentence
+  // is shown whole, anything else ends on a whole word and an ellipsis.
+  if (clean.length <= max && /[.!?\u2026\u201D\u2019)]$/.test(clean)) return clean;
+  const cut = clean.slice(0, Math.min(max, clean.length) + 1);
+  const space = cut.lastIndexOf(" ");
+  return (space > cut.length * 0.6 ? cut.slice(0, space) : cut).replace(/[\s,;:.\u2014-]+$/, "") + "\u2026";
+}
+
+/** Card grid or a text-first list; the reader's choice is remembered. */
+type IndexView = "cards" | "list";
+const VIEW_KEY = "livewell-writing-view";
+const isIndexView = (x: unknown): x is IndexView => x === "cards" || x === "list";
+
+const isIndexRow = (x: unknown): x is Record<string, unknown> =>
+  !!x && typeof x === "object" && typeof (x as Record<string, unknown>).slug === "string" && typeof (x as Record<string, unknown>).title === "string";
+function withListDates(p: Record<string, unknown>): Record<string, unknown> {
+  const d = (v: unknown) => (typeof v === "string" && v ? new Date(v) : v instanceof Date ? v : null);
+  return { ...p, publishedAt: d(p.publishedAt), createdAt: d(p.createdAt), updatedAt: d(p.updatedAt) };
+}
 
 /** A post's sub-pathway: the DB value if set, else the static slug map. */
 function resolveSub(p: any): string | null {
@@ -65,9 +96,33 @@ function parseSearchParams(): URLSearchParams {
 
 export default function Writing() {
   const [location] = useLocation();
-  const postsQuery = trpc.posts.listPublished.useQuery();
+  // Static only: /essays/index-lite.json (built by scripts/build-public-essays.mjs)
+  // carries what the cards and every filter need and paints the library from
+  // the CDN. The hub used to download the full 500 KB index and then call the
+  // API for the same list again on every visit; the API is now called only
+  // when the built file is missing (dev without the build step). An essay
+  // published from the admin joins the hub at the next deploy; its own URL
+  // works at once.
+  const [staticIndex, setStaticIndex] = useState<Record<string, unknown>[] | "miss" | null>(null);
+  useEffect(() => {
+    let stale = false;
+    fetchJson<unknown[]>("/essays/index-lite.json", (x): x is unknown[] => Array.isArray(x))
+      .then(rows => { if (!stale) setStaticIndex(rows.filter(isIndexRow).map(withListDates)); })
+      .catch(() => { if (!stale) setStaticIndex("miss"); });
+    return () => { stale = true; };
+  }, []);
+  const postsQuery = trpc.posts.listPublished.useQuery(undefined, { enabled: staticIndex === "miss" });
+  type ListedPost = NonNullable<typeof postsQuery.data>[number];
+  const staticRows = staticIndex && staticIndex !== "miss" ? (staticIndex as unknown as ListedPost[]) : null;
+  const listLoading = staticIndex === null || (staticIndex === "miss" && postsQuery.isLoading);
+  const listFailed = staticIndex === "miss" && postsQuery.isError;
   const [search, setSearch] = useState("");
   const [showFilters, setShowFilters] = useState(false);
+  const [view, setView] = useState<IndexView>(() => readStoredJSON(VIEW_KEY, isIndexView, "cards"));
+  const chooseView = (v: IndexView) => {
+    setView(v);
+    writeStoredJSON(VIEW_KEY, v);
+  };
   // Windowed render: hundreds of cards at once is a scroll of soup and a real
   // render cost. Start at 24; the button below the grid grows the window, and
   // any filter change resets it.
@@ -99,12 +154,15 @@ export default function Writing() {
   const subLabel = activeSub ? SUBPATHWAY_LABEL_BY_SLUG[activeSub] ?? null : null;
   const newHeading = activeSeries ? STUDY_GUIDES_LABEL : subLabel ?? newPillarName;
 
-  const posts = postsQuery.data ?? [];
+  const posts: ListedPost[] = staticRows ?? postsQuery.data ?? [];
 
   const filtered = useMemo(() => {
     return posts.filter(p => {
       // Hidden duplicate stubs never appear in the listing.
-      if (HIDDEN_SLUGS.has(p.slug)) return false;
+      // Main hid 128 "phantom" slugs judged from the seed rows (50-word abstracts).
+      // The library holds full essays under those same slugs, and the static index
+      // lists the library. Hide only what is actually a stub in the row we have.
+      if (HIDDEN_SLUGS.has(p.slug) && !isFullEssay(p)) return false;
       // Catalog stubs (a title over a 40-word abstract, no essay behind it)
       // stay out of the index — see docs/audit-corpus/. Real short posts pass.
       if (!isFullEssay(p)) return false;
@@ -113,7 +171,7 @@ export default function Writing() {
         const track = pillarToTrack(p.pillar);
         if (track !== activeTrack) return false;
       }
-      // Pillar (legacy two-movement / six-pillar taxonomy)
+      // Pillar (two-movement pillar taxonomy)
       if (activePillar && !isNewPillar) {
         const pl = pillarForPost(p);
         if (!pl || pl.slug !== activePillar) return false;
@@ -201,7 +259,7 @@ export default function Writing() {
    * plain total when nothing is filtering, and the ratio when something is.
    */
   const allCount = useMemo(
-    () => posts.filter(p => !HIDDEN_SLUGS.has(p.slug) && isFullEssay(p)).length,
+    () => posts.filter(p => isFullEssay(p)).length,
     [posts]
   );
 
@@ -251,10 +309,32 @@ export default function Writing() {
         style={{
           background: "var(--charcoal)",
           padding: "var(--s-6) var(--s-4) var(--s-5)",
-          color: "var(--bone)",
+          color: "var(--charcoal-fg)",
         }}
       >
-        <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
+        <div className={isFiltering ? undefined : "home-hero-grid"} style={{ maxWidth: "var(--w-default)", margin: "0 auto", display: isFiltering ? undefined : "grid", gap: "var(--s-5)", alignItems: "center" }}>
+          {/* The newest essay's art beside the heading, so the hub does not open
+              on the same charcoal block as every other hub. Filtered views keep
+              the plain heading; the art belongs to the unfiltered front of the room. */}
+          {!isFiltering && !listLoading && posts[0] && (
+            <Link href={`/writing/${posts[0].slug}`} style={{ textDecoration: "none", color: "inherit", display: "block", order: 2, maxWidth: "560px", width: "100%", justifySelf: "end" }}>
+              <EssayArt seed={posts[0].slug} track={posts[0].pillar} title={posts[0].title} style={{ borderRadius: "var(--radius-sm)", boxShadow: "0 24px 60px rgba(0,0,0,0.35)" }} />
+              <div style={{ display: "flex", gap: "12px", alignItems: "baseline", marginTop: "12px", flexWrap: "wrap" }}>
+                <span style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--mustard)" }}>Newest</span>
+                <span style={{ fontFamily: "var(--F)", fontSize: "19px", lineHeight: 1.25, color: "var(--charcoal-fg)" }}>{posts[0].title}</span>
+              </div>
+            </Link>
+          )}
+          {/* Hold the art's place while the index loads. On a phone the grid is
+              one column and the art sits under the heading, so arriving late it
+              pushed the whole page down (CI measured a 0.16 layout shift). */}
+          {!isFiltering && listLoading && (
+            <div aria-hidden style={{ order: 2, maxWidth: "560px", width: "100%", justifySelf: "end" }}>
+              <div style={{ aspectRatio: "16 / 9", width: "100%", borderRadius: "var(--radius-sm)", background: "rgba(245,240,230,0.06)" }} />
+              <div style={{ marginTop: "12px", fontFamily: "var(--F)", fontSize: "19px", lineHeight: 1.25 }}>&nbsp;</div>
+            </div>
+          )}
+          <div>
           <div
             className="eyebrow"
             style={{ marginBottom: "16px", color: "var(--mustard)" }}
@@ -308,7 +388,7 @@ export default function Writing() {
               color: "rgba(245,240,230,0.55)",
             }}
           >
-            {postsQuery.isLoading
+            {listLoading
               ? "Loading…"
               : isFiltering
                 ? `${filtered.length} of ${allCount} essays shown`
@@ -337,7 +417,7 @@ export default function Writing() {
                   padding: "6px 12px",
                   borderRadius: "999px",
                   border: `1px solid ${!activeSubTheme ? "var(--mustard)" : "rgba(245,240,230,0.25)"}`,
-                  color: "var(--bone)",
+                  color: "var(--charcoal-fg)",
                   textDecoration: "none",
                 }}
               >
@@ -356,7 +436,7 @@ export default function Writing() {
                     padding: "6px 12px",
                     borderRadius: "999px",
                     border: `1px solid ${activeSubTheme === st ? "var(--mustard)" : "rgba(245,240,230,0.25)"}`,
-                    color: "var(--bone)",
+                    color: "var(--charcoal-fg)",
                     textDecoration: "none",
                   }}
                 >
@@ -365,28 +445,7 @@ export default function Writing() {
               ))}
             </div>
           )}
-
-          {rest.length > visibleCount && (
-            <div style={{ textAlign: "center", marginTop: "var(--s-5)" }}>
-              <button
-                type="button"
-                onClick={() => setVisibleCount(c => c + 48)}
-                style={{
-                  fontFamily: "var(--U)",
-                  fontSize: "14px",
-                  fontWeight: 600,
-                  color: "var(--ink)",
-                  background: "transparent",
-                  border: "1px solid var(--border)",
-                  borderRadius: "var(--radius-sm)",
-                  padding: "13px 28px",
-                  cursor: "pointer",
-                }}
-              >
-                Show more — {rest.length - visibleCount} remaining
-              </button>
-            </div>
-          )}
+          </div>
         </div>
       </section>
 
@@ -415,7 +474,7 @@ export default function Writing() {
         />
       )}
 
-      {/* PILLAR CHIPS — the two-movement / six-pillar taxonomy */}
+      {/* PILLAR CHIPS — the two-movement pillar taxonomy */}
       <section
         style={{
           background: "var(--bone)",
@@ -578,6 +637,35 @@ export default function Writing() {
             <SlidersHorizontal size={14} aria-hidden />
             More filters
           </button>
+          <div role="group" aria-label="Show essays as" style={{ display: "inline-flex", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", overflow: "hidden" }}>
+            {(["cards", "list"] as const).map((v) => (
+              <button
+                key={v}
+                type="button"
+                onClick={() => chooseView(v)}
+                aria-pressed={view === v}
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: "6px",
+                  padding: "10px 14px",
+                  minHeight: "44px",
+                  border: "none",
+                  // --ink/--bone flip together, so the chosen view reads as
+                  // selected in both themes (charcoal vanishes on a dark page).
+                  background: view === v ? "var(--ink)" : "transparent",
+                  color: view === v ? "var(--bone)" : "var(--ink-muted)",
+                  fontFamily: "var(--U)",
+                  fontSize: "13px",
+                  fontWeight: 600,
+                  cursor: "pointer",
+                }}
+              >
+                {v === "cards" ? <LayoutGrid size={14} aria-hidden /> : <List size={14} aria-hidden />}
+                {v === "cards" ? "Cards" : "List"}
+              </button>
+            ))}
+          </div>
         </div>
 
         {/* Sub-filters: audience + format */}
@@ -697,7 +785,7 @@ export default function Writing() {
         }}
       >
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
-          {postsQuery.isLoading && (
+          {listLoading && (
             <div
               role="status"
               aria-label="Loading the writing"
@@ -724,7 +812,7 @@ export default function Writing() {
           {/* A failed request is not an empty result. Telling a reader to
               change their filter when the server never answered sends them
               hunting for a mistake they did not make. */}
-          {postsQuery.isError && (
+          {listFailed && (
             <LoadFailed
               what="The writing"
               onRetry={() => void postsQuery.refetch()}
@@ -733,7 +821,7 @@ export default function Writing() {
             />
           )}
 
-          {!postsQuery.isLoading && !postsQuery.isError && rest.length === 0 && (
+          {!listLoading && !listFailed && rest.length === 0 && (
             <p
               style={{
                 fontFamily: "var(--B)",
@@ -746,7 +834,34 @@ export default function Writing() {
             </p>
           )}
 
-          {rest.length > 0 && (
+          {rest.length > 0 && view === "list" && (
+            // Text-first: the title and the standfirst, no art. For the reader
+            // who knows what they are looking for, or who reads by title.
+            <ol style={{ listStyle: "none", margin: 0, padding: 0, maxWidth: "var(--w-content)", borderTop: "1px solid var(--border)" }}>
+              {rest.slice(0, visibleCount).map(post => (
+                <li key={post.id} style={{ borderBottom: "1px solid var(--border)" }}>
+                  <Link href={`/writing/${post.slug}`} style={{ display: "block", padding: "20px 0", textDecoration: "none", color: "inherit" }}>
+                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: "16px", marginBottom: "6px" }}>
+                      <TrackChip pillarOrTrack={post.pillar} slug={post.slug} asLink={false} />
+                      <span style={{ fontFamily: "var(--U)", fontSize: "12px", color: "var(--ink-muted)", whiteSpace: "nowrap" }}>
+                        {post.readingTimeMinutes ?? 5} min read
+                      </span>
+                    </div>
+                    <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(22px, 2.4vw, 26px)", fontWeight: 500, letterSpacing: "-0.005em", lineHeight: 1.2, color: "var(--ink)", margin: "0 0 6px" }}>
+                      {post.title}
+                    </h2>
+                    {post.excerpt && (
+                      <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.6, color: "var(--ink-muted)", margin: 0, maxWidth: "68ch" }}>
+                        {standfirst(post.excerpt, 180)}
+                      </p>
+                    )}
+                  </Link>
+                </li>
+              ))}
+            </ol>
+          )}
+
+          {rest.length > 0 && view === "cards" && (
             <div
               style={{
                 display: "grid",
@@ -779,24 +894,34 @@ export default function Writing() {
                       e.currentTarget.style.borderColor = "var(--border)";
                     }}
                   >
-                    {/* Branded typographic card art — the same generator that
-                        renders every essay's share card, so the archive reads
-                        as a designed library rather than a wall of text. Edge-
-                        cached for a year per title, lazy below the fold. */}
-                    <img
-                      loading="lazy"
-                      decoding="async"
-                      src={`/api/og?title=${encodeURIComponent(post.title)}${post.pillar ? `&pillar=${encodeURIComponent(post.pillar)}` : ""}`}
-                      alt=""
-                      width={1200}
-                      height={630}
-                      style={{ width: "100%", height: "auto", display: "block", borderBottom: "1px solid var(--border)" }}
-                    />
+                    {/* Every essay carries an image. A real cover wins; otherwise the
+                        same deterministic art the essay page shows, drawn in-page —
+                        no request per card. (This used to fetch the 1200×630 share
+                        card from the edge function for every card: a heavy, dark
+                        block per essay, and a broken image whenever it did not answer.) */}
+                    {post.coverImage ? (
+                      <img
+                        loading="lazy"
+                        decoding="async"
+                        src={post.coverImage}
+                        alt=""
+                        width={1200}
+                        height={675}
+                        style={{ width: "100%", height: "auto", aspectRatio: "16 / 9", objectFit: "cover", display: "block", borderBottom: "1px solid var(--border)" }}
+                      />
+                    ) : (
+                      <div style={{ borderBottom: "1px solid var(--border)" }}>
+                        <EssayArt seed={post.slug} track={post.pillar} decorative />
+                      </div>
+                    )}
                     <div style={{ padding: "var(--s-4)", display: "flex", flexDirection: "column", flex: 1 }}>
                     <div style={{ marginBottom: "12px" }}>
                       <TrackChip pillarOrTrack={post.pillar} slug={post.slug} asLink={false} />
                     </div>
-                    <h3
+                    {/* h2: the featured essay above is an h2 and only renders when
+                        the database marks one; without it the cards followed the
+                        h1 directly and skipped a level (axe heading-order). */}
+                    <h2
                       style={{
                         fontFamily: "var(--F)",
                         fontSize: "22px",
@@ -808,7 +933,7 @@ export default function Writing() {
                       }}
                     >
                       {post.title}
-                    </h3>
+                    </h2>
                     {post.excerpt && (
                       <p
                         style={{
@@ -820,8 +945,7 @@ export default function Writing() {
                           flex: 1,
                         }}
                       >
-                        {post.excerpt.slice(0, 140)}
-                        {post.excerpt.length > 140 ? "…" : ""}
+                        {standfirst(post.excerpt, 140)}
                       </p>
                     )}
                     <div
@@ -842,6 +966,27 @@ export default function Writing() {
                   </article>
                 </Link>
               ))}
+            </div>
+          )}
+          {rest.length > visibleCount && (
+            <div style={{ textAlign: "center", marginTop: "var(--s-5)" }}>
+              <button
+                type="button"
+                onClick={() => setVisibleCount(c => c + 48)}
+                style={{
+                  fontFamily: "var(--U)",
+                  fontSize: "14px",
+                  fontWeight: 600,
+                  color: "var(--ink)",
+                  background: "transparent",
+                  border: "1px solid var(--border)",
+                  borderRadius: "var(--radius-sm)",
+                  padding: "13px 28px",
+                  cursor: "pointer",
+                }}
+              >
+                Show more — {rest.length - visibleCount} remaining
+              </button>
             </div>
           )}
         </div>

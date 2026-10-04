@@ -12,7 +12,6 @@ import { Link } from "wouter";
 
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
-import { bookCountWordCap } from "@/config/siteStats";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { trpc } from "@/lib/trpc";
 import { bookUrl } from "@/lib/site";
@@ -132,7 +131,7 @@ export default function RoadMap() {
         style={{
           background: "var(--charcoal)",
           padding: "var(--s-7) var(--s-4) var(--s-6)",
-          color: "var(--bone)",
+          color: "var(--charcoal-fg)",
         }}
       >
         <div style={{ maxWidth: "var(--w-content)", margin: "0 auto" }}>
@@ -161,8 +160,8 @@ export default function RoadMap() {
               maxWidth: "62ch",
             }}
           >
-            Forty-eight books is the plan. {bookCountWordCap}
-            {" "}are already in print. The rest get listed here when they are
+            Forty-eight books is the plan. The ones already in print are
+            listed below. The rest get listed here when they are
             actually underway, not before, so this page will always run shorter
             than the plan. Subscribe to the weekly letter to know when one lands.
           </p>

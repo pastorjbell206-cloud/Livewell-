@@ -44,7 +44,7 @@ export default function CreedsLibrary() {
         url="https://www.livewellbyjamesbell.co/resources/creeds"
       />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>Resources · The church's memory</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5.2vw, 56px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "18px", maxWidth: "20ch" }}>

@@ -1,39 +1,48 @@
 import { getDb } from "./db";
 import { posts } from "../drizzle/schema";
 import { eq, and, desc } from "drizzle-orm";
-import { FeedItem } from "./feed-parser";
+import type { FeedItem } from "./feed-parser";
+import { shapeSyndicatedPost, type ShapedPost } from "./syndication-shape";
 
 /**
- * Create a syndicated article from a feed item
+ * Create a post from a feed item, or skip it.
+ *
+ * Returns the shaped row when a new draft was inserted, and null when the item
+ * was skipped: unmapped slug, no /p/ link, non-Substack source, or a row with
+ * that slug already exists. Callers count null as "skipped". Inserted rows are
+ * UNPUBLISHED drafts, matching the admin importer — an editor publishes.
  */
-export async function createSyndicatedArticle(feedItem: FeedItem) {
+export async function createSyndicatedArticle(feedItem: FeedItem): Promise<ShapedPost | null> {
+  const shaped = shapeSyndicatedPost(feedItem);
+  if (!shaped) {
+    console.log(`[Syndication] Skipped (unmapped or no /p/ slug): ${feedItem.title}`);
+    return null;
+  }
   try {
     const db = await getDb();
     if (!db) throw new Error("Database not available");
 
-    // Create slug from title
-    const slug = feedItem.title
-      .toLowerCase()
-      .replace(/[^a-z0-9]+/g, "-")
-      .replace(/^-+|-+$/g, "")
-      .substring(0, 100);
+    const existing = await db.select({ id: posts.id }).from(posts).where(eq(posts.slug, shaped.slug)).limit(1);
+    if (existing.length > 0) {
+      console.log(`[Syndication] Already present, skipped: ${shaped.slug}`);
+      return null;
+    }
 
-    // Create the article
-    await db
-      .insert(posts)
-      .values({
-        title: feedItem.title,
-        slug: `${slug}-${Date.now()}`, // Add timestamp to ensure uniqueness
-        excerpt: feedItem.description.substring(0, 300),
-        body: feedItem.description,
-        pillar: `${feedItem.source === "substack" ? "Substack" : "Pastors Connection"}`,
-        readTime: "5 min read",
-        publishedAt: new Date(feedItem.pubDate),
-        published: true,
-      });
+    await db.insert(posts).values({
+      title: shaped.title,
+      slug: shaped.slug,
+      excerpt: shaped.excerpt,
+      body: shaped.body,
+      pillar: shaped.pillar,
+      subPathway: shaped.subPathway,
+      isSeries: shaped.isSeries,
+      readTime: shaped.readTime,
+      publishedAt: shaped.publishedAt,
+      published: false,
+    });
 
-    console.log(`[Syndication] Created article: ${feedItem.title}`);
-    return feedItem;
+    console.log(`[Syndication] Draft created: ${shaped.slug} (${shaped.pillar} / ${shaped.subPathway})`);
+    return shaped;
   } catch (error: any) {
     console.error("[Syndication] Error creating article:", error);
     throw error;
@@ -63,25 +72,23 @@ export async function getRecentSyndicatedArticles(limit = 10) {
 }
 
 /**
- * Get articles by source
+ * Get articles by source.
+ *
+ * Synced Substack posts no longer carry a fake "Substack" pillar; the ones
+ * worth listing as a source are the serialized book, which is tagged isSeries.
+ * Legacy Pastors Connection rows keep their old pillar label.
  */
 export async function getArticlesBySource(source: "substack" | "pastors-connection", limit = 10) {
   try {
     const db = await getDb();
     if (!db) throw new Error("Database not available");
 
-    const pillar = source === "substack" ? "Substack" : "Pastors Connection";
-    const articles = await db
-      .select()
-      .from(posts)
-      .where(
-        and(
-          eq(posts.published, true),
-          eq(posts.pillar, pillar)
-        )
-      )
-      .orderBy(desc(posts.publishedAt))
-      .limit(limit);
+    const where =
+      source === "substack"
+        ? and(eq(posts.published, true), eq(posts.isSeries, true))
+        : and(eq(posts.published, true), eq(posts.pillar, "Pastors Connection"));
+
+    const articles = await db.select().from(posts).where(where).orderBy(desc(posts.publishedAt)).limit(limit);
 
     return articles;
   } catch (error: any) {

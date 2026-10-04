@@ -79,7 +79,7 @@ I should tell you who is writing to you, since you gave me your inbox and that i
 
 I grew up without a father and without God, and for a long time I assumed both absences were permanent. I was not a seeker. I was an atheist, and a fairly content one. The faith I hold now was not inherited. It was argued into me, suffered into me, and finally given to me, in roughly that order.
 
-These days I pastor First Baptist Church of Fenton, Michigan. I have five sons. I have written twenty-one books. None of that is a resume. It is a list of rooms — the hospital room, the kitchen at midnight, the study on a Saturday when the sermon will not come — and the writing on this site comes out of those rooms, not from above them.
+These days I pastor First Baptist Church of Fenton, Michigan. I have five sons. I write books. None of that is a resume. It is a list of rooms — the hospital room, the kitchen at midnight, the study on a Saturday when the sermon will not come — and the writing on this site comes out of those rooms, not from above them.
 
 What you will get from me: an email when I have something worth your time, essays that take both the Bible and your intelligence seriously, and no manufactured urgency. What you will not get: spam, guilt, or a sales funnel wearing a clerical collar.
 

@@ -63,7 +63,7 @@ export function EmailResults({ toolName, resultsSummary }: EmailResultsProps) {
     fontFamily: "var(--U)",
     fontWeight: 600,
     background: "var(--charcoal)",
-    color: "var(--bone)",
+    color: "var(--charcoal-fg)",
     border: "none",
     borderRadius: "2px",
     cursor: "pointer",

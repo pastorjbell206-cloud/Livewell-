@@ -23,7 +23,7 @@ const TIER_2_ARTICLES = [
   { title: "The Mainline Protestant Collapse", href: "/writing/the-numbers-behind-the-decline" },
   { title: "The Evangelical Movement", href: "/theology/history/the-awakenings" },
   { title: "The Pentecostal Explosion", href: "/theology/history/the-global-church" },
-  { title: "The Black Church Tradition", href: "/writing/black-church-prophetic-justice" },
+  { title: "The Black Church Tradition", href: "/writing/the-black-church-in-america" },
   { title: "Christianity in the Global South", href: "/theology/history/the-global-church" },
 ];
 

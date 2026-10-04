@@ -52,8 +52,22 @@ const SECTIONS = [
       const data = readJson("client/src/data/content-data.json");
       const posts = Array.isArray(data) ? data : data?.posts;
       if (!Array.isArray(posts)) return [];
+      // The pastor-trade essays moved to PCN (content/pcn-moved.json) are no
+      // longer this site's; their URLs redirect there.
+      const moved = new Set(readJson("content/pcn-moved.json")?.slugs || []);
+      // Rewritten essays (scripts/apply-rewrites.mjs) list under their new title
+      // and deck; essays merged into them are gone (their URLs redirect).
+      const rw = readJson("content/rewrites.generated.json") || { rewritten: [], merged: {} };
+      const rewritten = new Set(rw.rewritten || []);
+      for (const slug of Object.keys(rw.merged || {})) moved.add(slug);
+      for (const r of readJson("vercel.json")?.redirects || []) {
+        const m = String(r.source || "").match(/^\/writing\/([a-z0-9][a-z0-9-]*)$/);
+        if (m) moved.add(m[1]); // the address redirects elsewhere
+      }
+      const lib = new Map((readJson("content/static-library.generated.json") || []).map((r) => [r.slug, r]));
       return posts
-        .filter((p) => p && p.slug && p.title && p.published !== false)
+        .filter((p) => p && p.slug && p.title && p.published !== false && !moved.has(p.slug))
+        .map((p) => (rewritten.has(p.slug) && lib.get(p.slug) ? { ...p, title: lib.get(p.slug).title, excerpt: lib.get(p.slug).excerpt } : p))
         .map((p) => entryLine(p.title, `${SITE}/writing/${p.slug}`, p.excerpt || p.summary || p.subtitle));
     },
   },
@@ -126,5 +140,10 @@ for (const sec of SECTIONS) {
 out += `## Contact\n\nPastorjbell206@gmail.com\n`;
 
 fs.mkdirSync(path.dirname(OUT), { recursive: true });
+// The index is read by machines, and CI (scripts/validate-no-emdash.mjs) forbids
+// em-dashes in it. Sources such as the church-history subtitles still carry them,
+// so normalise at the point of emission rather than editing authored content:
+// " — " becomes ", " and any stray dash becomes a comma.
+out = out.replace(/\s*[—–]\s*/g, ", ");
 fs.writeFileSync(OUT, out);
 console.log(`[llms-full] wrote ${OUT} — ${total} entries, ${(out.length / 1024).toFixed(1)} KB`);

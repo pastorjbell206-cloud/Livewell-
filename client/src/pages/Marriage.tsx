@@ -13,40 +13,40 @@ export default function Marriage() {
 
   const FEATURED_ARTICLES = [
     {
-      title: "Covenant vs. Contract: What Marriage Actually Is",
+      title: "What Is Covenant Marriage? Why Marriage Is Not a Contract",
       slug: "covenant-vs-contract-what-marriage-is",
       topic: "Marriage",
-      readTime: "18 min read"
+      readTime: "20 min read"
     },
     {
-      title: "Communication That Actually Works",
-      slug: "marriage-communication-that-works",
+      title: "The Silent Treatment in Marriage and How to Start Talking Again",
+      slug: "what-silence-costs-a-marriage",
       topic: "Marriage",
-      readTime: "9 min read"
+      readTime: "20 min read"
     },
     {
-      title: "Fighting Fair: Conflict Without Casualties",
-      slug: "marriage-fighting-fair",
+      title: "Healthy Conflict in Marriage Is More Than Fighting Fair",
+      slug: "healthy-conflict-marriage",
       topic: "Marriage",
-      readTime: "9 min read"
+      readTime: "19 min read"
     },
     {
-      title: "Forgiveness in Marriage: How to Actually Do It",
+      title: "How to Forgive Your Spouse, and Why Forgiveness Isn't Trust",
       slug: "forgiveness-in-marriage",
       topic: "Marriage",
-      readTime: "11 min read"
+      readTime: "19 min read"
     },
     {
-      title: "Money and Marriage",
+      title: "Why Married Couples Fight About Money, and What the Bible Says",
       slug: "marriage-money-and-marriage",
       topic: "Marriage",
-      readTime: "9 min read"
+      readTime: "19 min read"
     },
     {
-      title: "Protecting Your Marriage From the Demands of Work",
+      title: "When Work Is Hurting Your Marriage and You Can't Just Quit",
       slug: "protecting-your-marriage-from-work",
       topic: "Marriage",
-      readTime: "12 min read"
+      readTime: "19 min read"
     }
   ];
 
@@ -71,7 +71,7 @@ export default function Marriage() {
   return (
     <div style={{ background: "var(--bone)" }}>
       <SEOMeta
-        title="Christian Marriage Help | LiveWell by James Bell"
+        title="Christian Marriage Help — Covenant, Conflict, and Repair"
         description="Covenant theology applied to marriage: articles on communication, conflict, and emotional labor, for couples who want more than advice."
         keywords="Christian marriage help, biblical marriage, marriage counseling, marriage conflict, marriage communication, keeping marriage vows"
         url="https://www.livewellbyjamesbell.co/marriage"
@@ -80,8 +80,12 @@ export default function Marriage() {
 
       <MinimalNav />
 
+      {/* This page renders the nav directly rather than through Layout, so it
+          declares its own main landmark — the skip link in MinimalNav targets it. */}
+      <main id="main">
+
       {/* HERO SECTION */}
-      <section style={{ background: "var(--ink)", color: "var(--charcoal-fg)", padding: "80px 20px", minHeight: "600px", display: "flex", alignItems: "center" }}>
+      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "80px 20px", minHeight: "600px", display: "flex", alignItems: "center" }}>
         <div style={{ maxWidth: "800px", margin: "0 auto", textAlign: "center" }}>
           <h1 style={{ fontSize: "clamp(36px, 5vw, 56px)", fontWeight: "bold", lineHeight: "1.2", marginBottom: "24px", fontFamily: "var(--F)" }}>
             When Your Marriage Needs More Than Advice
@@ -199,7 +203,7 @@ export default function Marriage() {
             Start with the Marriage Health Assessment. It takes about ten minutes and will show you where your marriage is strongest and where the repair work begins. If what you are carrying is heavier than a questionnaire can hold, a pastor or a counselor is the right next door, and there is no shame in walking through it.
           </p>
           <Link href="/tools/marriage-assessment" style={{ textDecoration: "none" }}>
-            <button style={{ background: "var(--ink)", color: "var(--charcoal-fg)", border: "none", padding: "16px 40px", fontSize: "16px", fontWeight: "bold", borderRadius: "4px", cursor: "pointer" }}>
+            <button style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", border: "none", padding: "16px 40px", fontSize: "16px", fontWeight: "bold", borderRadius: "4px", cursor: "pointer" }}>
               Take the Assessment
             </button>
           </Link>
@@ -214,6 +218,8 @@ export default function Marriage() {
 
       {subjectById("marriage") && <SubjectShelf subject={subjectById("marriage")!} />}
       <CrisisHelp />
+      </main>
+
       <Footer />
     </div>
   );

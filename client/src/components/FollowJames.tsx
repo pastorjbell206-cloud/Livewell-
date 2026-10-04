@@ -98,7 +98,7 @@ export default function FollowJames({
           </Link>
           <Link href="/books" style={tile}>
             <div style={tileTitle}>The books</div>
-            <p style={tileBlurb}>Twenty-one titles, several readable free in full.</p>
+            <p style={tileBlurb}>The books James has written, several readable free in full.</p>
           </Link>
           <Link href="/tools" style={tile}>
             <div style={tileTitle}>The tools</div>

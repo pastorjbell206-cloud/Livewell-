@@ -25,9 +25,9 @@
           "blurb": "Augustine named the ache sixteen centuries early: the heart is restless until it rests in God."
         },
         {
-          "label": "Sabbath Isn't Optional",
-          "href": "/writing/sabbath-isnt-optional",
-          "blurb": "The command to stop is not a lifestyle tip. It is a rebellion against the god of more."
+          "label": "Why a Day of Doing Nothing Is an Act of Defiance",
+          "href": "/writing/a-day-of-doing-nothing",
+          "blurb": "Stopping for a full day — no work, no producing, no proving — feels almost impossible to a culture organized around output."
         }
       ]
     },
@@ -40,23 +40,6 @@
           "label": "Consider the Birds — a study on anxiety",
           "href": "/studyguides/anxiety",
           "blurb": "Five sessions, with the answer behind every question already written for the leader."
-        }
-      ]
-    },
-    {
-      "kind": "book",
-      "heading": "Then read the book, free",
-      "note": "On Rest & Sabbath gathers the long-form work on the exhausted life — silence, waiting, and a pace a body can actually survive. Read it whole, here, for nothing.",
-      "items": [
-        {
-          "label": "On Rest & Sabbath — read free",
-          "href": "/read/essays-rest-and-sabbath",
-          "blurb": "Twenty chapters on rest in a culture of exhaustion. The complete book, free to read."
-        },
-        {
-          "label": "Find James's books in the bookstore",
-          "href": "/books",
-          "blurb": "Print and ebook editions of the full library."
         }
       ]
     }

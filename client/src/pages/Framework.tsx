@@ -58,7 +58,7 @@ export default function Framework() {
         url="https://www.livewellbyjamesbell.co/framework"
       />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-7) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-7) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={prose}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>The Framework</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(34px, 6vw, 60px)", fontWeight: 400, lineHeight: 1.03, letterSpacing: "-0.025em", marginBottom: "22px" }}>
@@ -71,7 +71,7 @@ export default function Framework() {
             Theology that does not end in a life was never theology. It was a hobby.
           </p>
           <p style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.7, color: "rgba(245,240,230,0.55)", marginTop: "16px" }}>
-            (This is the arc through the reference shelves. The site's spine — the six pillars, two movements — lives at <Link href="/map" style={{ color: "var(--mustard)" }}>the map</Link>.)
+            (This is the arc through the reference shelves. The site's spine — the five pillars, two movements — lives at <Link href="/map" style={{ color: "var(--mustard)" }}>the map</Link>.)
           </p>
         </div>
       </section>
@@ -96,7 +96,7 @@ export default function Framework() {
         </div>
       </section>
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4)", color: "var(--bone)", textAlign: "center" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4)", color: "var(--charcoal-fg)", textAlign: "center" }}>
         <div style={{ maxWidth: "560px", margin: "0 auto" }}>
           <p style={{ fontFamily: "var(--F)", fontSize: "19px", fontStyle: "italic", lineHeight: 1.6, color: "rgba(245,240,230,0.9)", marginBottom: "24px" }}>
             You do not have to start at the beginning. You have to start where you actually are.

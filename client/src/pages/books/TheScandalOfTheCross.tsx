@@ -44,7 +44,7 @@ export default function TheScandalOfTheCross() {
       />
 
       {/* HERO — cover + buy */}
-      <section style={{ background: "var(--ink)", color: "var(--bone)", padding: "var(--s-7) var(--s-4) var(--s-6)" }}>
+      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-7) var(--s-4) var(--s-6)" }}>
         <div style={{ ...prose, display: "flex", gap: "44px", alignItems: "center", flexWrap: "wrap" }}>
           <img
             src="/books/the-scandal-of-the-cross.svg"
@@ -91,7 +91,7 @@ export default function TheScandalOfTheCross() {
       </section>
 
       {/* BUY AGAIN */}
-      <section style={{ background: "var(--ink)", color: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
+      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-6) var(--s-4)" }}>
         <div style={{ ...prose, textAlign: "center" }}>
           <p style={{ fontFamily: "var(--F)", fontSize: "24px", fontStyle: "italic", margin: "0 0 22px", color: "rgba(245,240,230,.92)" }}>
             Rome raised the cross to make a public example of a dying man. We hang it on a chain. Somewhere between the two, the scandal went quiet.

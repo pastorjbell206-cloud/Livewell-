@@ -17,9 +17,19 @@
           "note": "Stephen became the first follower of Jesus to be killed for his faith. A young man named Saul stood watching, approving of the death."
         },
         {
+          "year": "the 30s",
+          "title": "Philip baptizes an Ethiopian official",
+          "note": "Luke tells of a royal treasurer from the kingdom Luke calls Ethiopia, which lay along the upper Nile in what is now Sudan, reading Isaiah in his chariot on the road home from Jerusalem. Philip explained the passage to him and baptized him that day. Before Paul ever reached Europe, the gospel was already traveling south into Africa."
+        },
+        {
           "year": "around 35",
           "title": "The conversion of Saul",
           "note": "On the road to Damascus, the persecutor Saul met the risen Christ and was changed. He took the name Paul and became the church's furthest reaching missionary."
+        },
+        {
+          "year": "around 44",
+          "title": "James the son of Zebedee is killed",
+          "note": "Herod Agrippa had James, one of the first four disciples Jesus called, put to death with the sword. He is the first of the Twelve whose martyrdom the New Testament records."
         },
         {
           "year": "around 49",
@@ -32,9 +42,29 @@
           "note": "Paul planted churches across Asia Minor and Greece and wrote letters to them that we still read. Romans, Corinthians, Philippians, and the rest were born as real mail to real congregations."
         },
         {
+          "year": "around 51",
+          "title": "Paul before Gallio in Corinth",
+          "note": "Paul's opponents brought him before the Roman proconsul Gallio, who dismissed the case as a quarrel about words and names. An inscription found at Delphi fixes the date of Gallio's term, and it gives historians one of the firmest anchors for dating Paul's life and letters."
+        },
+        {
+          "year": "first century",
+          "title": "Thomas and the church in India",
+          "note": "The Christians of Kerala in southern India trace their church to the apostle Thomas, and their tradition dates his arrival to the year 52. Whatever historians make of the tradition, there was a church in India long before most of northern Europe heard the gospel, and for most of its history it worshiped in Syriac."
+        },
+        {
+          "year": "62",
+          "title": "James the brother of Jesus is killed",
+          "note": "The Jewish historian Josephus records that the high priest Ananus had James, the brother of Jesus and leader of the Jerusalem church, stoned during a gap between Roman governors. Josephus adds that the most fair minded people in the city were offended by it. A brother who had not believed during Jesus's ministry died for him."
+        },
+        {
           "year": "around 64",
           "title": "Persecution under Nero",
           "note": "After a great fire in Rome, the emperor Nero blamed the Christians and had many killed. Tradition holds that both Peter and Paul died in Rome around this time."
+        },
+        {
+          "year": "second half of the first century",
+          "title": "The Gospels are written down",
+          "note": "Most scholars date the four Gospels to roughly the last third of the first century, with Mark usually placed first, around the year 70. The eyewitnesses were aging and dying, and the church set their testimony down so it would outlive them."
         },
         {
           "year": "70",
@@ -45,6 +75,11 @@
           "year": "around 95",
           "title": "John writes Revelation",
           "note": "Exiled to the island of Patmos, the apostle John recorded a vision of Christ's final victory. It was the last of the New Testament writings to be set down."
+        },
+        {
+          "year": "around 96",
+          "title": "The Roman church writes to Corinth",
+          "note": "The church in Rome wrote to the church in Corinth, where younger members had pushed out their elders. The letter, traditionally credited to Clement, is among the oldest Christian writings outside the New Testament. It shows a church already quarreling over leadership, and already appealing to the apostles to settle it."
         },
         {
           "year": "around 100",
@@ -60,9 +95,24 @@
       "summary": "For more than two hundred years, to be a Christian was to be in danger. Rome did not understand these people who would not burn incense to the emperor and would not call him lord. Christians met in homes, buried their dead in tunnels under the city, and lived knowing that arrest could come at any time. They were accused of strange crimes and blamed for plagues and famines. And still they grew.\n\nTwo things held them together in those years. The first was the witness of the martyrs. When men and women went calmly to their deaths rather than deny Christ, it shook the people who watched. One early writer said the blood of the martyrs was seed. Every death seemed to produce more believers. The second was the work of the thinkers, the ones we call the apologists, who wrote careful defenses of the faith and explained to a hostile world what Christians actually believed.\n\nThis was also the age when the church sorted out which writings truly carried the apostles' teaching, the slow shaping of the New Testament. False teachings forced believers to say more clearly what they held to be true. Then, after the worst persecution of all, everything turned. An emperor named Constantine saw a vision before a battle, won it, and in the year 313 made the Christian faith legal across the empire. The catacombs gave way to the open air.",
       "events": [
         {
+          "year": "around 110",
+          "title": "Ignatius writes on the road to Rome",
+          "note": "Under armed guard on the way to his execution, the bishop of Antioch wrote seven letters to the churches. He begged the believers in Rome not to use their influence to save him, and he insisted to the others that Christ had truly suffered in the flesh, not merely seemed to."
+        },
+        {
           "year": "around 112",
           "title": "Pliny questions the Christians",
           "note": "A Roman governor wrote to the emperor asking how to handle these believers who met before dawn and sang to Christ as to a god. His letter is one of the earliest outside descriptions of the church."
+        },
+        {
+          "year": "around 144",
+          "title": "Marcion is sent away from Rome",
+          "note": "A wealthy shipowner named Marcion taught that the God of the Old Testament was a lesser and harsher god than the Father of Jesus, and he cut the Scriptures down to one edited Gospel and ten letters of Paul. The church in Rome expelled him. His shortened Bible pushed the church to say plainly which books it received, and that Israel's Scriptures were its own."
+        },
+        {
+          "year": "around 155",
+          "title": "Justin describes Sunday worship",
+          "note": "In a defense addressed to the emperor, Justin described what Christians did on Sunday. They gathered, read the writings of the apostles and the prophets for as long as time allowed, prayed, shared the bread and the cup, and took up a collection for widows, orphans, the sick, prisoners, and strangers. It is one of the oldest detailed descriptions of Christian worship we have."
         },
         {
           "year": "around 155",
@@ -75,9 +125,24 @@
           "note": "A philosopher who became a Christian, Justin wrote some of the first reasoned defenses of the faith for the Roman public. He paid for it with his life, and his name carries his end."
         },
         {
+          "year": "177",
+          "title": "The martyrs of Lyon and Vienne",
+          "note": "In two towns in Gaul a mob turned on the Christians, and the authorities tortured and killed dozens of them. The letter the survivors sent east singles out Blandina, an enslaved woman whose endurance outlasted her torturers. The church did not rank its witnesses by social standing."
+        },
+        {
           "year": "around 180",
           "title": "Irenaeus writes against the heresies",
           "note": "A bishop in Gaul answered the Gnostics, who taught a secret and twisted version of the faith. His work helped the church define the true gospel against the counterfeit."
+        },
+        {
+          "year": "180",
+          "title": "The Scillitan martyrs",
+          "note": "Twelve Christians from the town of Scilli in North Africa were tried at Carthage and beheaded. Asked what was in their case, one of them answered that it held books and the letters of Paul, a just man. The record of their trial is the oldest dated Christian document in Latin, and it comes from Africa."
+        },
+        {
+          "year": "around 197",
+          "title": "Tertullian's Apology",
+          "note": "Writing from Carthage, Tertullian answered the charges against Christians one by one. He told Rome that each execution multiplied the church, because the blood of the martyrs worked like seed. North Africa was giving the western church its first great theologians."
         },
         {
           "year": "around 200",
@@ -85,14 +150,44 @@
           "note": "The church was settling which books truly came from the apostles. Lists of accepted writings circulated, and the New Testament we hold today began to come into focus."
         },
         {
+          "year": "203",
+          "title": "Perpetua and Felicity die at Carthage",
+          "note": "A young noblewoman nursing her infant and an enslaved woman who gave birth in prison days before the games were killed together in the arena at Carthage. Perpetua's prison diary survives, one of the earliest writings we have by a Christian woman. Rome sorted people by rank. The noblewoman and the slave went to their deaths as sisters."
+        },
+        {
           "year": "around 250",
           "title": "The persecution under Decius",
           "note": "The emperor Decius ordered everyone in the empire to sacrifice to the gods. Many Christians refused and died, and the church later wrestled with how to receive back those who had given in."
         },
         {
+          "year": "before 256",
+          "title": "The house church at Dura Europos",
+          "note": "In a Roman frontier town on the Euphrates, Christians remodeled an ordinary house into a meeting place with a room for baptism, its walls painted with the Good Shepherd and with women approaching a tomb. The town fell to the Persians in the 250s and was abandoned, and the sand preserved one of the oldest church buildings ever found."
+        },
+        {
+          "year": "258",
+          "title": "Cyprian of Carthage is beheaded",
+          "note": "Cyprian, bishop of Carthage, had led his church through a plague and through the bitter question of how to receive back those who had sacrificed under Decius. When persecution returned under Valerian he was tried and beheaded outside the city, and his people spread cloths on the ground before him."
+        },
+        {
+          "year": "around 270",
+          "title": "Antony goes into the desert",
+          "note": "A young Egyptian heard the Gospel reading in which Jesus tells a rich man to sell everything and give to the poor, and he did it. He withdrew into the desert for a life of prayer, and so many followed that, in his biographer's image, the desert filled like a city. The monastic movement began in Egypt."
+        },
+        {
+          "year": "early 300s",
+          "title": "Armenia becomes a Christian kingdom",
+          "note": "King Tiridates the Third was baptized by Gregory the Illuminator and made the faith the religion of his kingdom. Armenian tradition dates it to 301, and many historians place it closer to 314. Either way, Armenia is usually counted the first kingdom to take Christianity as its own, before Rome did."
+        },
+        {
           "year": "303",
           "title": "The Great Persecution begins",
           "note": "The emperor Diocletian launched the harshest assault yet, burning churches and Scriptures and killing believers across the empire. It was the last and worst storm before the calm."
+        },
+        {
+          "year": "311",
+          "title": "Galerius ends the persecution",
+          "note": "Dying of a painful illness, the emperor Galerius, one of the fiercest persecutors, issued an edict of toleration and asked the Christians to pray for him. The Great Persecution had failed to break the church."
         },
         {
           "year": "312",
@@ -118,9 +213,34 @@
           "note": "Bishops from across the empire gathered to answer Arius, who taught that the Son was less than the Father. They confessed the Son to be fully God, of the same being as the Father. The Nicene Creed began here."
         },
         {
+          "year": "330",
+          "title": "Constantinople becomes the new capital",
+          "note": "Constantine dedicated a new Christian capital on the Bosporus at the old town of Byzantium. For more than a thousand years it would be the center of the eastern church and the Greek speaking Christian world."
+        },
+        {
+          "year": "4th century",
+          "title": "Ethiopia receives the faith",
+          "note": "Frumentius, a young Christian from Tyre carried captive to the royal court of Aksum, rose to a position of trust there and later returned as its bishop, consecrated by Athanasius in Alexandria. King Ezana embraced the faith, and his coins, which had carried the pagan crescent and disc, began to carry the cross. The Ethiopian church is older than the churches of most of Europe."
+        },
+        {
+          "year": "around 341",
+          "title": "Ulfilas and the Gothic Bible",
+          "note": "Ulfilas was consecrated bishop to the Goths north of the Danube and translated the Bible into their language, devising an alphabet to do it. He held the Arian view of Christ that Nicaea had rejected, and so the Goths who later poured into the western empire came as Arian Christians."
+        },
+        {
           "year": "around 367",
           "title": "Athanasius lists the New Testament",
           "note": "The bishop Athanasius, who had defended Nicaea through years of exile, wrote a letter naming the twenty seven books of the New Testament we hold today."
+        },
+        {
+          "year": "around 370",
+          "title": "Basil builds a city of mercy",
+          "note": "As bishop of Caesarea, Basil built a complex outside the city to house and treat the sick, the poor, travelers, and lepers, which people called the Basileias. Historians point to it as one of the first hospitals. It put into brick what he preached, that the bread the rich stored away belonged to the hungry."
+        },
+        {
+          "year": "380",
+          "title": "Theodosius makes the faith imperial",
+          "note": "The emperor Theodosius decreed that all his subjects should hold the faith of Nicaea, and by 392 pagan sacrifice was banned. The persecuted church had become the established church in less than seventy years. It gained protection, and it began to learn how to persecute."
         },
         {
           "year": "381",
@@ -128,9 +248,34 @@
           "note": "A second great council confirmed Nicaea and affirmed the full deity of the Holy Spirit. The creed reached close to the form recited in churches now."
         },
         {
-          "year": "around 387",
+          "year": "386",
           "title": "The conversion of Augustine",
           "note": "A brilliant and restless man who had chased every pleasure and philosophy finally surrendered to Christ in a garden in Milan. His writings would shape the western church for a thousand years."
+        },
+        {
+          "year": "390",
+          "title": "Ambrose bars the emperor",
+          "note": "After Theodosius ordered a massacre of thousands in Thessalonica, Ambrose wrote that he would not offer the sacrament in the emperor's presence until he repented. The most powerful man in the world did public penance. A bishop had told a Christian ruler that he stood under the same law as everyone else."
+        },
+        {
+          "year": "393 and 397",
+          "title": "African councils name the canon",
+          "note": "Councils at Hippo and Carthage, with Augustine taking part, listed the books of Scripture to be read in church, and their New Testament is the twenty seven books Athanasius had named. The churches were recognizing a canon they had already been living by."
+        },
+        {
+          "year": "410",
+          "title": "Rome is sacked",
+          "note": "Alaric's Visigoths, themselves Christians, plundered the city of Rome for three days. Pagans blamed the disaster on the abandonment of the old gods. Augustine answered with The City of God, begun in 413 and finished thirteen years later, arguing that no earthly city, Rome included, is the kingdom of God."
+        },
+        {
+          "year": "410",
+          "title": "The Church of the East organizes in Persia",
+          "note": "At a synod in the Persian capital of Seleucia Ctesiphon, the Christians of the Persian Empire organized under their own chief bishop. Living outside Rome's borders and often persecuted by the Persian kings, this church would carry the gospel across Asia to India, Central Asia, and China."
+        },
+        {
+          "year": "430",
+          "title": "Augustine dies as Hippo is besieged",
+          "note": "Augustine died while the Vandals were besieging his city, reading the penitential psalms he had asked to be written out and hung on the walls of his room. The empire he had served was coming apart. His writings outlasted it and shaped the western church for the next thousand years."
         },
         {
           "year": "431",
@@ -143,7 +288,12 @@
           "note": "The church confessed that Jesus is one person in two natures, fully God and fully man, without confusion and without division. It remains the standard for understanding who Christ is."
         },
         {
-          "year": "around 460",
+          "year": "after 451",
+          "title": "The Oriental churches part ways",
+          "note": "Many Christians in Egypt, Syria, Armenia, and Ethiopia rejected Chalcedon's wording, fearing it divided Christ, and confessed instead one united nature of the incarnate Word. Their opponents called them Monophysites, a name taken from the heresy of Eutyches, but they condemned his blending of the natures as firmly as Chalcedon did, and the Oriental Orthodox churches today reject the label and call their confession Miaphysite. In the late twentieth century, Eastern Orthodox and Oriental Orthodox theologians concluded in joint statements that much of the division had been over words more than faith, and Rome reached similar agreements with the Coptic and Syriac churches."
+        },
+        {
+          "year": "5th century",
           "title": "Patrick among the Irish",
           "note": "A former slave returned to the land of his captivity to bring the gospel to Ireland. His mission helped carry the faith to peoples Rome had never reached."
         },
@@ -153,9 +303,34 @@
           "note": "The last emperor in the west was deposed and the old Roman order collapsed. As the empire crumbled, the church remained, holding a center the world had lost."
         },
         {
+          "year": "late 400s",
+          "title": "The Nine Saints come to Ethiopia",
+          "note": "Ethiopian tradition remembers nine monks from the Roman east who settled in the kingdom of Aksum, founded monasteries, and carried the faith from the royal court into the countryside. The translation of the Scriptures into Ge'ez is associated with these centuries, and the Ethiopian church has kept that ancient language in its worship ever since."
+        },
+        {
+          "year": "around 500",
+          "title": "Clovis is baptized",
+          "note": "Clovis, king of the Franks, was baptized at Reims. Most of the other Germanic kings were Arian, but he took the faith of Nicaea, which his wife Clotilde had urged on him for years. The long alliance between the Frankish kings and the western church began here."
+        },
+        {
           "year": "around 529",
           "title": "Benedict writes his Rule",
           "note": "Benedict gave the monks a simple plan for a life of prayer and work and stability. His Rule would order monastic life across Europe for centuries."
+        },
+        {
+          "year": "537",
+          "title": "Hagia Sophia is dedicated",
+          "note": "The emperor Justinian dedicated the great church of Holy Wisdom in Constantinople, whose dome seemed to float above the worshipers. For nearly a thousand years it was the largest church in the Christian world. A later Russian chronicle tells of envoys who worshiped there and said they did not know whether they were in heaven or on earth."
+        },
+        {
+          "year": "mid 500s",
+          "title": "Nubia receives the faith",
+          "note": "Missionaries from Constantinople reached the kingdoms of Nubia along the Nile south of Egypt, and within decades their kings and peoples were Christian. Nubian Christianity lasted for most of a thousand years, with its own cathedrals, painted churches, and written language."
+        },
+        {
+          "year": "563",
+          "title": "Columba sails to Iona",
+          "note": "The Irish monk Columba left his homeland with a band of companions and founded a monastery on the island of Iona off the coast of Scotland. From Iona, monks carried the gospel to the Picts and later to northern England. Ireland, evangelized by a former slave, was now sending missionaries of its own."
         }
       ]
     },
@@ -171,6 +346,11 @@
           "note": "A monk who did not want the office became one of its greatest holders. Gregory cared for the poor of Rome, reformed worship, and sent the gospel north into England."
         },
         {
+          "year": "around 590",
+          "title": "Columbanus sets out for the continent",
+          "note": "The Irish monk Columbanus crossed to Gaul with a band of companions and founded monasteries at Luxeuil and later at Bobbio in Italy. He rebuked a Frankish king to his face and was driven out for it. Irish monks helped rekindle the faith in lands where it had grown thin."
+        },
+        {
           "year": "597",
           "title": "Augustine of Canterbury reaches England",
           "note": "Gregory sent a band of monks to bring the faith to the English. They landed in Kent and began the long work that would make England a Christian land."
@@ -179,6 +359,36 @@
           "year": "around 622",
           "title": "The rise of Islam",
           "note": "In Arabia a new religion arose under Muhammad and spread with great speed. Within a century it had taken much of the once Christian Middle East and North Africa, reshaping the world the church lived in."
+        },
+        {
+          "year": "635",
+          "title": "Alopen reaches the Chinese capital",
+          "note": "A monk of the Church of the East named Alopen arrived at Chang'an, capital of the Tang dynasty, carrying Scriptures. The emperor had the books translated and permitted a monastery to be built. The gospel reached China from Persia, along the Silk Road, nearly a thousand years before the Jesuits arrived."
+        },
+        {
+          "year": "around 637",
+          "title": "Jerusalem passes to Muslim rule",
+          "note": "The patriarch Sophronius surrendered Jerusalem to the caliph Umar after a siege. Within a few years Syria, Palestine, and Egypt, the heartlands of early Christianity, lay under Muslim rule, and their churches began a long life as protected and restricted minorities."
+        },
+        {
+          "year": "around 652",
+          "title": "The Nubian kingdoms hold",
+          "note": "Arab armies that had taken Egypt pushed south into Nubia and were checked at Dongola. The treaty that followed, known as the Baqt, left the Christian kingdoms of Nubia standing for centuries while North Africa passed into the Islamic world."
+        },
+        {
+          "year": "664",
+          "title": "The Synod of Whitby",
+          "note": "At a meeting in Northumbria, the king chose to follow Roman rather than Irish custom for the date of Easter and the ordering of monastic life. It sounds small. It settled which way the English church would face for nearly nine hundred years."
+        },
+        {
+          "year": "around 726",
+          "title": "Iconoclasm begins",
+          "note": "The emperor Leo the Third moved against the use of icons, and more than a century of conflict followed in which images were destroyed and their defenders punished. Living under Muslim rule and out of the emperor's reach, John of Damascus wrote the defense the east would remember: because God became visible in the flesh, he may be pictured."
+        },
+        {
+          "year": "731",
+          "title": "Bede finishes his history",
+          "note": "A monk at Jarrow in northern England completed The Ecclesiastical History of the English People. Bede weighed his sources and named them, and his work did more than any other to spread the practice of dating events from the birth of Christ, the system still used today."
         },
         {
           "year": "732",
@@ -191,14 +401,44 @@
           "note": "An English monk became the apostle to the Germans, planting churches across the forests of central Europe. He died a martyr, still at his work among the people he came to reach."
         },
         {
+          "year": "781",
+          "title": "The Xi'an Stele is raised",
+          "note": "Christians of the Church of the East in China set up a stone monument, inscribed in Chinese and Syriac, recording the arrival of what they called the Luminous Religion in 635 and summarizing its teaching. The stele was buried for centuries and dug up in the 1620s. It is the plainest surviving witness that Asia had a church long before Europe came calling."
+        },
+        {
+          "year": "787",
+          "title": "The Second Council of Nicaea",
+          "note": "The seventh ecumenical council ruled that icons may be honored, the honor passing to the one they depict, while worship belongs to God alone. It is the last council received as ecumenical by both the Orthodox and Catholic churches."
+        },
+        {
+          "year": "793",
+          "title": "Vikings strike Lindisfarne",
+          "note": "Raiders from Scandinavia sacked the monastery of Lindisfarne off the English coast, killing monks and carrying off its treasures. It began two centuries of Viking raids on the monasteries of Britain and Ireland. Within a few generations, the descendants of the raiders would themselves be baptized."
+        },
+        {
           "year": "800",
           "title": "Charlemagne crowned emperor",
           "note": "On Christmas Day the pope placed a crown on Charlemagne in Rome. The act tied the church to a new European order and revived learning across his lands."
         },
         {
+          "year": "843",
+          "title": "The Triumph of Orthodoxy",
+          "note": "The empress Theodora restored the icons for good, ending the long iconoclast struggle. The Orthodox church still keeps the first Sunday of Lent as the Sunday of Orthodoxy, carrying icons in procession."
+        },
+        {
           "year": "around 863",
           "title": "Cyril and Methodius among the Slavs",
           "note": "Two brothers brought the gospel to the Slavic peoples and gave them a written language so they could read the Scriptures in their own tongue. Their work still shapes eastern Europe."
+        },
+        {
+          "year": "around 864",
+          "title": "Bulgaria is baptized",
+          "note": "Boris, ruler of the Bulgarians, was baptized and led his people into the eastern church. Disciples of Cyril and Methodius, driven out of Moravia, found refuge in Bulgaria, and there the Slavonic liturgy and the alphabet later named for Cyril took root."
+        },
+        {
+          "year": "910",
+          "title": "The abbey of Cluny is founded",
+          "note": "Duke William of Aquitaine founded a monastery at Cluny in Burgundy and placed it directly under the pope, free from local lords. Cluny became the center of a reform that recovered discipline and worship across hundreds of houses."
         },
         {
           "year": "988",
@@ -219,9 +459,24 @@
       "summary": "These were the centuries when the western church stood at the height of its power, and also the centuries when the cracks that would one day break it open began to show. Popes commanded kings. Great cathedrals rose stone by stone toward heaven. The faith touched every part of ordinary life, from birth to death and every season in between. It was a confident age, and a troubled one.\n\nThe crusades began in 1095, armies marching east to take back the holy places from Muslim rule. They were driven by real devotion and stained by real cruelty, and their memory is heavy. At the same time, something quieter and more lasting was happening. The first universities opened, and brilliant teachers called the scholastics set out to think through the whole of the faith with the tools of reason. Thomas Aquinas, the greatest of them, wrote vast works showing how faith and reason belong together rather than at war.\n\nThe age also produced the friars, men like Francis of Assisi, who gave up wealth to live among the poor, and Dominic, who sent preachers to teach the truth. They were a living reproach to a church grown rich and comfortable. And there were voices crying for reform, men like Wycliffe and Hus, who saw what was wrong and paid for saying so. In 1453 the city of Constantinople, the last of the old Roman world, fell to the Ottoman Turks. An age was ending, and the world stood on the edge of a great upheaval.",
       "events": [
         {
+          "year": "1077",
+          "title": "Henry the Fourth at Canossa",
+          "note": "In the struggle over whether kings or popes appointed bishops, Pope Gregory the Seventh excommunicated the emperor Henry the Fourth. Henry stood in the snow outside the castle of Canossa for three days, barefoot by the chroniclers' account, until the pope lifted the sentence. The pope had humbled the emperor, though the struggle ran on until the Concordat of Worms in 1122, and a church that fought to be free of the throne would soon be tempted to become a throne itself."
+        },
+        {
           "year": "1095",
           "title": "The First Crusade is called",
           "note": "Pope Urban the Second summoned the knights of Europe to march east and recover Jerusalem. The crusades that followed mixed sincere devotion with terrible violence and left wounds that linger still."
+        },
+        {
+          "year": "1098",
+          "title": "Anselm finishes Why God Became Man",
+          "note": "Written partly in exile, Anselm's Cur Deus Homo asked why the incarnation was necessary at all. His answer, that only one who is both God and man could make satisfaction for human sin, shaped western thinking about the cross for centuries and is still debated."
+        },
+        {
+          "year": "1099",
+          "title": "The crusaders take Jerusalem",
+          "note": "The First Crusade had been preached as an armed pilgrimage to aid the eastern Christians and recover the holy places. After a siege of some five weeks its armies broke into Jerusalem and killed thousands of its inhabitants, Muslim and Jewish alike; some were ransomed or allowed to leave, but the slaughter was vast. Chroniclers who were there described it with pride. Any honest telling of Christian history has to carry this day."
         },
         {
           "year": "around 1115",
@@ -229,14 +484,39 @@
           "note": "A young monk named Bernard led a renewal of monastic life and became the most listened to voice of his age. His warm writings on the love of God still feed believers."
         },
         {
+          "year": "1141",
+          "title": "Hildegard is told to write",
+          "note": "At forty two, Hildegard, then leader of the nuns at Disibodenberg and later known as Hildegard of Bingen, received what she described as a command from heaven to write down her visions. The result, Scivias, took ten years, and it began one of the widest bodies of work any medieval writer produced, in theology, music, medicine, and natural science."
+        },
+        {
           "year": "around 1150",
           "title": "The first universities",
           "note": "Schools at Paris, Bologna, and Oxford grew into the first universities, where the study of theology stood at the center. Christian faith gave birth to the western tradition of learning."
         },
         {
+          "year": "around 1173",
+          "title": "Valdes gives away his fortune",
+          "note": "A rich merchant of Lyon named Valdes, often called Peter Waldo, paid to have the Gospels translated into the common tongue, gave away his wealth, and began preaching poverty. Forbidden to preach without permission, his followers kept on and were condemned. The Waldensians survived centuries of persecution in the Alpine valleys and later joined the Reformation."
+        },
+        {
+          "year": "around 1200",
+          "title": "The rock churches of Lalibela",
+          "note": "In the Ethiopian highlands, eleven churches were carved down into solid rock, a work tradition credits to King Lalibela, who meant them as a new Jerusalem for pilgrims who could not reach the old one. They are still used for worship."
+        },
+        {
+          "year": "1204",
+          "title": "The Fourth Crusade sacks Constantinople",
+          "note": "A crusading army bound for Egypt was diverted to Constantinople and sacked the greatest Christian city in the world, looting its churches and installing a Latin patriarch. Western Christians had plundered eastern Christians under the sign of the cross. More than the condemnations of 1054, this is the wound that made the schism real in eastern memory, and in Athens in 2001 Pope John Paul the Second spoke of the sack with deep regret and asked God's forgiveness for the sins of Catholics against the Orthodox."
+        },
+        {
           "year": "around 1209",
           "title": "Francis of Assisi gives up everything",
           "note": "The son of a rich merchant stripped off his fine clothes and chose a life of poverty among the poor and the lepers. His followers, the Franciscans, spread joy and simplicity across Europe."
+        },
+        {
+          "year": "1215",
+          "title": "The Fourth Lateran Council",
+          "note": "Pope Innocent the Third's great council required every western Christian to confess and receive communion at least once a year and used the word transubstantiation to define the Eucharist. The same council required Jews and Muslims to wear distinctive dress. Reform and cruelty came out of the same room."
         },
         {
           "year": "1216",
@@ -249,6 +529,36 @@
           "note": "The greatest of the scholastic teachers wrote vast works showing that faith and reason are friends, not enemies. His thought still guides much of Christian theology."
         },
         {
+          "year": "1309",
+          "title": "The papacy moves to Avignon",
+          "note": "Pope Clement the Fifth settled in Avignon, and for nearly seventy years the popes lived in France, in the shadow of the French crown. Critics called it the Babylonian captivity of the church. The office meant to stand above kings looked as if it belonged to one."
+        },
+        {
+          "year": "1347 to 1351",
+          "title": "The Black Death",
+          "note": "Plague swept through Europe and killed perhaps a third of its people in a few years. Priests who tended the dying died in great numbers, and many towns turned on their Jewish neighbors and blamed them for the sickness, though Pope Clement the Sixth condemned the charge. The fear of those years shaped the devotion of the century that followed."
+        },
+        {
+          "year": "1351",
+          "title": "The hesychasts are vindicated",
+          "note": "A council in Constantinople upheld Gregory Palamas, who taught that monks praying in stillness could truly encounter God's uncreated energies while God's essence remained beyond all knowing. The distinction became a settled part of Orthodox theology."
+        },
+        {
+          "year": "1373",
+          "title": "Julian of Norwich's showings",
+          "note": "Near death at thirty, a woman in Norwich received a series of visions of Christ's passion and of God's love, which she spent the next twenty years and more pondering. Her Revelations of Divine Love is the earliest surviving book in English known to have been written by a woman."
+        },
+        {
+          "year": "1376",
+          "title": "Catherine of Siena goes to Avignon",
+          "note": "A dyer's daughter from Siena, with no office and no rank, traveled to Avignon to urge Pope Gregory the Eleventh to return to Rome. He left Avignon that September and entered Rome in January 1377. Her letters to popes and princes are some of the frankest words ever spoken to power from inside the church."
+        },
+        {
+          "year": "1378",
+          "title": "The Great Western Schism",
+          "note": "After the papacy's return to Rome, a disputed election produced two rival popes, one in Rome and one in Avignon, and in time a third. For nearly forty years western Christians could not agree on who led the church, and trust in the papacy never fully recovered."
+        },
+        {
           "year": "around 1380",
           "title": "Wycliffe and the English Bible",
           "note": "John Wycliffe challenged the wealth and power of the church and helped put the Scriptures into English for ordinary people. He is often called the morning star of the Reformation."
@@ -259,9 +569,34 @@
           "note": "A Czech preacher who called for reform and for Scripture in the people's language was condemned and burned at the stake. His death lit a fire that would not go out."
         },
         {
+          "year": "1417",
+          "title": "The Council of Constance ends the schism",
+          "note": "The same council that burned Jan Hus removed the rival popes and elected Martin the Fifth, ending the Great Western Schism. It also declared that a general council held authority even over a pope, a claim later popes rejected."
+        },
+        {
+          "year": "1448",
+          "title": "The Russian church governs itself",
+          "note": "After Constantinople accepted union with Rome at the Council of Florence, Russian bishops rejected the union and chose their own metropolitan without seeking Constantinople's approval. The Russian church had become self governing, and after 1453 many in Moscow came to see their city as the guardian of Orthodoxy."
+        },
+        {
           "year": "1453",
           "title": "The fall of Constantinople",
           "note": "The great Christian city of the east fell to the Ottoman Turks, ending the last remnant of the Roman Empire. Scholars fled west with their books, helping spark the new learning of the Renaissance."
+        },
+        {
+          "year": "around 1455",
+          "title": "The Gutenberg Bible",
+          "note": "Johannes Gutenberg completed the first major book printed in Europe with movable metal type, a Latin Bible. Within a lifetime printing had put books within reach of ordinary readers, and the arguments of the coming century would travel faster than any authority could stop them."
+        },
+        {
+          "year": "1491",
+          "title": "The king of Kongo is baptized",
+          "note": "Nzinga a Nkuwu, ruler of the Kongo kingdom in west central Africa, was baptized after contact with Portuguese sailors and took the name João. His son Afonso built a Christian kingdom, and in 1518 Pope Leo the Tenth appointed Afonso's son Henrique a bishop, the first native bishop of sub Saharan Africa in the Catholic Church. He returned to Kongo as bishop in 1521."
+        },
+        {
+          "year": "1492",
+          "title": "Columbus reaches the Caribbean",
+          "note": "The same year Spain expelled its Jews, a Genoese sailor funded by the Spanish crown landed in the Bahamas. The conquest that followed carried the cross into the Americas together with the sword, and within decades the peoples of the Caribbean had been devastated by war, forced labor, and disease."
         }
       ]
     },
@@ -272,9 +607,19 @@
       "summary": "It started with a monk who could not find peace. Martin Luther had done everything the church asked, and still he was terrified of God. Then he read in Paul's letter to the Romans that the righteous live by faith, and the meaning broke over him like dawn. We are not saved by our own efforts but by trusting what Christ has already done. That truth set him free, and it would shake the western world.\n\nIn 1517 Luther nailed a list of ninety five complaints to a church door in Wittenberg, mostly about the selling of forgiveness. He only meant to start a debate. Instead, with the new printing press carrying his words across Europe, he started a revolution. Soon others took up the work in their own places. John Calvin built a whole vision of the Christian life in Geneva. In England the church broke from Rome and slowly found its own path. Radical reformers went further still, insisting on believer's baptism and a church free from the state.\n\nThe Catholic Church answered with a reform of its own. At the Council of Trent it sharpened its teaching and cleaned up its worst abuses, and new orders like the Jesuits carried its renewal around the globe. But the splits came at a fearful price. For more than a century, Catholics and Protestants fought brutal wars, ending in the exhaustion of the Thirty Years War. Out of all the blood and argument came a hard truth the church is still learning. The gospel cannot be spread by the sword.",
       "events": [
         {
+          "year": "1516",
+          "title": "Erasmus prints the Greek New Testament",
+          "note": "The humanist scholar Erasmus published the first Greek New Testament to reach the market in print, with a fresh Latin translation beside it. Luther used it for his German New Testament and Tyndale for his English one. The humanists wanted to go back to the sources, and the sources turned out to be explosive."
+        },
+        {
           "year": "1517",
           "title": "Luther's Ninety Five Theses",
           "note": "Martin Luther posted his objections to the selling of indulgences on the church door in Wittenberg. He meant to start a debate and instead began the Reformation."
+        },
+        {
+          "year": "1519",
+          "title": "Zwingli begins preaching in Zurich",
+          "note": "On the first day of 1519 Huldrych Zwingli began preaching straight through the Gospel of Matthew in Zurich's Great Minster, setting aside the assigned readings. His reform in Zurich moved quickly and parted from Luther's over the Lord's Supper."
         },
         {
           "year": "1521",
@@ -282,9 +627,49 @@
           "note": "Ordered to take back his writings before the emperor, Luther said he could not go against conscience and the word of God. Here I stand, he is remembered as saying."
         },
         {
+          "year": "1522",
+          "title": "Luther's German New Testament",
+          "note": "Hidden in the Wartburg castle after Worms, Luther translated the New Testament into German in about eleven weeks. It was published in September 1522 and sold out quickly. Ordinary Germans could now read for themselves the book the arguments were about."
+        },
+        {
+          "year": "1524 to 1525",
+          "title": "The Peasants' War",
+          "note": "German peasants rose against their lords, many believing the Reformation's message of freedom reached their fields as well as their souls. Luther, who had first rebuked the lords for their oppression, was horrified by the violence and wrote urging the princes to strike the rebels down. Tens of thousands of peasants were killed, and the reform lost many of the common people it had first stirred."
+        },
+        {
           "year": "1525",
           "title": "The radical reformers and believer's baptism",
           "note": "A group in Zurich began baptizing adults who professed faith, breaking with both Rome and the other reformers. These Anabaptists wanted a church of the willing, set apart from the state."
+        },
+        {
+          "year": "1525",
+          "title": "Luther marries Katharina von Bora",
+          "note": "The former monk married a former nun who had escaped her convent two years before. Their crowded household in Wittenberg, full of children, students, and guests, became the model of the Protestant parsonage. Marriage, long treated as a lesser calling than the cloister, was being claimed as a place to serve God."
+        },
+        {
+          "year": "1526",
+          "title": "Tyndale's New Testament reaches England",
+          "note": "Printed at Worms and smuggled across the Channel, William Tyndale's New Testament, translated from the Greek, began circulating in England. Church authorities bought up copies to burn them. The story goes that the money helped Tyndale print more."
+        },
+        {
+          "year": "1526",
+          "title": "Afonso of Kongo protests the slave trade",
+          "note": "King Afonso the First of Kongo, a devout Christian who had sent envoys to Rome, wrote to the king of Portugal that Portuguese traders were seizing his people, even nobles and his own relatives, and selling them as slaves. His complaints were largely ignored. Afonso sought to control the trade rather than end it, but he had named the evil that European Christians were profiting from as it tore through his kingdom."
+        },
+        {
+          "year": "1527",
+          "title": "The Schleitheim Confession",
+          "note": "Swiss Anabaptists met at Schleitheim and agreed on seven articles: the baptism of believers, church discipline, the Lord's Supper, separation from the world, pastors, refusal of the sword, and refusal of oaths. Months later its likely author, Michael Sattler, was tortured and burned, and his wife Margaretha was drowned."
+        },
+        {
+          "year": "1529",
+          "title": "The Marburg Colloquy",
+          "note": "Philip of Hesse brought Luther and Zwingli together to unite the Protestant cause. They agreed on fourteen of fifteen articles and broke over the fifteenth, how Christ is present in the Lord's Supper. Protestants have been divided on that question ever since."
+        },
+        {
+          "year": "1530",
+          "title": "The Augsburg Confession",
+          "note": "Philip Melanchthon drafted a statement of Lutheran belief that was read before the emperor at the Diet of Augsburg. It remains the defining confession of the Lutheran churches."
         },
         {
           "year": "1534",
@@ -297,19 +682,99 @@
           "note": "John Calvin published his Institutes and soon led the church in Geneva. His clear teaching on the sovereignty of God shaped Reformed churches across Europe and beyond."
         },
         {
-          "year": "1545",
-          "title": "The Council of Trent begins",
-          "note": "The Catholic Church gathered to answer the Reformation, defining its doctrine and ending many of the abuses that had provoked the split. It guided Catholic life for four hundred years."
-        },
-        {
           "year": "around 1540",
           "title": "Ignatius founds the Jesuits",
           "note": "A wounded soldier turned to Christ and gathered the Society of Jesus, an order of disciplined men devoted to teaching and mission. The Jesuits carried Catholic renewal around the world."
         },
         {
+          "year": "1542",
+          "title": "Francis Xavier reaches Goa",
+          "note": "One of the first Jesuits landed in Portuguese India and went on to preach along the coasts of southern India, in the islands of Southeast Asia, and in Japan. He died in 1552 on an island off the coast of China, waiting for passage into a country he never entered."
+        },
+        {
+          "year": "1545",
+          "title": "The Council of Trent begins",
+          "note": "The Catholic Church gathered to answer the Reformation, defining its doctrine and ending many of the abuses that had provoked the split. It guided Catholic life for four hundred years."
+        },
+        {
+          "year": "1549",
+          "title": "The Book of Common Prayer",
+          "note": "Thomas Cranmer's prayer book gave the Church of England a single order of worship in English. Revised in 1552 and several times after, most lastingly in 1662, its language shaped the prayers of English speaking Christians around the world."
+        },
+        {
+          "year": "1550",
+          "title": "The Valladolid debate",
+          "note": "Before a panel of theologians in Spain, the friar Bartolomé de las Casas argued against the scholar Juan Ginés de Sepúlveda over whether the native peoples of the Americas could justly be conquered and forced into servitude. Las Casas insisted they were fully human and entitled to hear the gospel in freedom. The panel never issued a clear verdict, and the conquest went on."
+        },
+        {
+          "year": "1553",
+          "title": "Servetus is burned at Geneva",
+          "note": "Michael Servetus, who denied the Trinity, was arrested in Geneva, tried by the city council with Calvin's support, and burned. Calvin had asked for a less cruel death. Reformers who had been persecuted were now persecuting."
+        },
+        {
+          "year": "1555",
+          "title": "The Peace of Augsburg",
+          "note": "The emperor and the Lutheran princes agreed that each ruler in the empire would choose the Lutheran or the Catholic faith for his own territory, and his subjects would conform or leave. It stopped the fighting for a time. It also made the prince the judge of his people's faith."
+        },
+        {
+          "year": "1562",
+          "title": "Teresa founds her first reformed convent",
+          "note": "In Ávila, Teresa opened the small convent of Saint Joseph, where a few nuns lived in poverty, enclosure, and prayer. Over the next twenty years she founded more than a dozen others, traveling rough roads in poor health and under the suspicion of the Inquisition."
+        },
+        {
+          "year": "1563",
+          "title": "The Heidelberg Catechism",
+          "note": "Written for the Palatinate in Germany, this catechism opens by asking what a person's only comfort is in life and in death, and answers that it is to belong to Jesus Christ. It became one of the most loved teaching documents of the Reformed churches."
+        },
+        {
+          "year": "1572",
+          "title": "The Saint Bartholomew's Day massacre",
+          "note": "In Paris, Catholic mobs and soldiers began killing French Protestants, the Huguenots, on the feast of Saint Bartholomew, and the killing spread to other cities until thousands were dead. The French wars of religion dragged on until the Edict of Nantes granted the Huguenots limited toleration in 1598."
+        },
+        {
+          "year": "1597",
+          "title": "The martyrs of Nagasaki",
+          "note": "Twenty six Christians, Japanese converts and European friars among them, were crucified on a hill at Nagasaki on the orders of Toyotomi Hideyoshi. The youngest were boys. The Japanese church had grown quickly since Xavier's arrival, and now it began to learn what the early church had learned."
+        },
+        {
+          "year": "1601",
+          "title": "Matteo Ricci enters Beijing",
+          "note": "After nearly twenty years in China learning its language and classics, the Jesuit Matteo Ricci was admitted to the imperial capital. He presented the faith in the terms of Chinese learning and won friends among the scholars, some of whom became Christians. Whether he had translated the gospel or diluted it became one of the longest arguments in the history of missions."
+        },
+        {
+          "year": "1609",
+          "title": "The first Baptist congregation",
+          "note": "English separatists in exile in Amsterdam, led by John Smyth and Thomas Helwys, concluded that baptism belonged to believers and formed a church on that basis. Helwys returned to London in 1612 and wrote to King James that the king had no power over consciences, whether of heretics, Turks, or Jews. He died in prison."
+        },
+        {
           "year": "1611",
           "title": "The King James Bible",
           "note": "English scholars produced a translation of remarkable beauty that would shape the language and faith of the English speaking world for centuries."
+        },
+        {
+          "year": "1614",
+          "title": "Japan outlaws Christianity",
+          "note": "The Tokugawa shogunate banned the faith, expelled the missionaries, and began a persecution that killed thousands. Christians who survived went underground, handing on prayers and baptism in secret for more than two centuries. When missionaries returned in the 1860s, they found them still there."
+        },
+        {
+          "year": "1618 to 1619",
+          "title": "The Synod of Dort",
+          "note": "Reformed churches from across Europe met at Dordrecht to answer the followers of Jacobus Arminius. The synod's canons, later summarized as five points, affirmed God's sovereign grace in salvation, and the Arminian ministers were removed from their pulpits. Faithful Protestants still divide over the question."
+        },
+        {
+          "year": "1619",
+          "title": "Enslaved Africans arrive in Virginia",
+          "note": "An English ship landed some twenty Africans at Point Comfort in the Virginia colony, captives taken from a Portuguese slave ship. American slavery and the American church would grow up together. Many white churches came to bless the arrangement, and the Black church would be born resisting it."
+        },
+        {
+          "year": "1637",
+          "title": "Anne Hutchinson is tried in Massachusetts",
+          "note": "A midwife who led crowded discussions of Sunday's sermons in her Boston home was tried by the colony's leaders for criticizing its ministers and for teaching that assurance came by the direct witness of the Spirit. She was banished and later excommunicated. People who had crossed an ocean for freedom of worship would not extend it to a woman who disagreed with them."
+        },
+        {
+          "year": "1646",
+          "title": "The Westminster Confession",
+          "note": "An assembly of English and Scottish divines meeting at Westminster Abbey completed a confession of faith, with catechisms to follow. It became the doctrinal standard of Presbyterian churches around the world, and Congregationalist and Baptist confessions were built on its frame."
         },
         {
           "year": "1648",
@@ -325,14 +790,59 @@
       "summary": "The modern age confronted the church with new questions and carried it to new places. On one side came doubt. Thinkers began to ask whether God was needed at all, whether miracles could happen, whether the Bible could be trusted. The church had to learn to answer not the sword of Rome but the cool skepticism of the lecture hall. Some believers lost their nerve. Others rose to meet the challenge with minds as sharp as any critic.\n\nOn another side came fire. Again and again, when faith grew cold, God seemed to send revival. The Great Awakenings swept through Britain and America under preachers like Wesley and Whitefield and Edwards, and ordinary people were swept up in a living encounter with God. Out of that warmth came the modern missionary movement. Men and women left everything to carry the gospel to India, to China, to Africa, to the islands of the sea, often never to return home.\n\nAnd so the map changed again. The Catholic Church renewed itself for the modern world at the Second Vatican Council. New movements of the Spirit spread across continents. And quietly, decisively, the center of the Christian faith shifted. Where once it was European, today the church is most alive in Africa, in Asia, in Latin America, among peoples the first missionaries only dreamed of reaching. The faith that began in a borrowed room in Jerusalem now belongs to the whole world. And you belong to it. This story is still being written, and your life is part of the next page.",
       "events": [
         {
-          "year": "around 1740",
-          "title": "The Great Awakening",
-          "note": "Preachers like Jonathan Edwards and George Whitefield saw thousands turn to Christ in a great wave of revival across Britain and the American colonies. Cold religion gave way to living faith."
+          "year": "1675",
+          "title": "Spener calls for a living faith",
+          "note": "The Lutheran pastor Philipp Jakob Spener published Pia Desideria, calling for small groups to study Scripture, a working faith in ordinary believers, and pastors trained in holiness as well as doctrine. The Pietist movement that followed reached the Moravians and, through them, John Wesley."
+        },
+        {
+          "year": "1688",
+          "title": "The Germantown protest against slavery",
+          "note": "Four Quakers in Germantown, Pennsylvania, signed a protest against the buying and holding of human beings, reasoning from Jesus's command to treat others as we would be treated. It is the earliest known written protest against slavery by Christians in the English colonies. Their own yearly meeting declined to act on it."
+        },
+        {
+          "year": "1706",
+          "title": "Missionaries reach Tranquebar",
+          "note": "Two young German Pietists, Bartholomäus Ziegenbalg and Heinrich Plütschau, landed at the Danish colony of Tranquebar in southern India, the first Protestant missionaries in India. Ziegenbalg learned Tamil, studied Hindu thought seriously, and translated the New Testament into Tamil."
+        },
+        {
+          "year": "1706",
+          "title": "Beatriz Kimpa Vita is burned in Kongo",
+          "note": "A young Kongolese noblewoman who said Saint Anthony spoke through her led a movement to restore the war torn Christian kingdom of Kongo, teaching that Jesus and the holy family had been Kongolese. She was condemned as a heretic, with Capuchin missionaries advising the king, and burned. Whatever one makes of her teaching, her story is an early sign of Africans claiming the faith as their own, and of how hard missionaries found it to tell a new heresy from a new hearing."
+        },
+        {
+          "year": "1727",
+          "title": "The Moravian renewal",
+          "note": "Refugees from the old Hussite church had gathered on the estate of Count Nikolaus von Zinzendorf at Herrnhut in Saxony. After a season of bitter quarrels, a communion service in August 1727 left them reconciled and on fire, and they began a prayer watch that is said to have run around the clock for a hundred years."
+        },
+        {
+          "year": "1732",
+          "title": "Moravian missionaries sail for the Caribbean",
+          "note": "Two Moravians, Leonard Dober and David Nitschmann, went to the Danish island of Saint Thomas to preach to the enslaved. One of the most effective evangelists there was Rebecca Protten, a free woman of color. Within a few years Moravians were in Greenland, Suriname, and South Africa."
         },
         {
           "year": "1738",
           "title": "John Wesley's heart is warmed",
           "note": "After years of striving, Wesley felt his heart strangely warmed as he trusted Christ alone. The movement he led, the Methodists, brought the gospel to the poor and working people."
+        },
+        {
+          "year": "around 1740",
+          "title": "The Great Awakening",
+          "note": "Preachers like Jonathan Edwards and George Whitefield saw thousands turn to Christ in a great wave of revival across Britain and the American colonies. Cold religion gave way to living faith."
+        },
+        {
+          "year": "1770s",
+          "title": "Silver Bluff Baptist Church",
+          "note": "On a plantation near the Savannah River in South Carolina, enslaved believers formed one of the earliest Black Baptist congregations in America. One of its early leaders, David George, later helped plant Black Baptist churches in Nova Scotia and Sierra Leone. The Black church began among people the law counted as property."
+        },
+        {
+          "year": "1784",
+          "title": "Korea's church is founded by laypeople",
+          "note": "Yi Seung-hun, a Korean scholar who had read Catholic books brought from China, was baptized in Beijing and returned home to baptize others. The Korean church began without missionaries, among scholars reading the faith for themselves, and waves of persecution over the next century killed thousands of its members."
+        },
+        {
+          "year": "1787",
+          "title": "The Free African Society",
+          "note": "Richard Allen and Absalom Jones, both formerly enslaved and both leaders among the Black members of St. George's Methodist Church in Philadelphia, founded a mutual aid society for Black Philadelphians. Allen later recounted that Black worshipers were pulled from their knees during prayer at St. George's and walked out together. The walkout was long dated to 1787, but building records for the church's new gallery have led many historians to place it in 1792. Either way, the Black church in the North was born from a refusal to be segregated at prayer."
         },
         {
           "year": "1789",
@@ -350,22 +860,182 @@
           "note": "A shoemaker turned preacher, Carey urged the church to take the gospel to the nations and then went himself. He is often called the father of the modern missionary movement."
         },
         {
+          "year": "1794",
+          "title": "Bethel and St. Thomas open their doors",
+          "note": "Allen dedicated Bethel African Methodist Episcopal Church in a converted blacksmith shop, and Jones opened the African Episcopal Church of St. Thomas. That same year the two men published an account of how Black Philadelphians had nursed the sick and buried the dead in the yellow fever epidemic of 1793, answering a white publisher who had accused them of profiteering."
+        },
+        {
+          "year": "1801",
+          "title": "The Cane Ridge revival",
+          "note": "Thousands gathered for days of camp meeting at Cane Ridge in Kentucky, with preachers from several denominations and scenes of weeping, falling, and shouting. It became the emblem of the Second Great Awakening, which made evangelical Protestantism the dominant religion of the American frontier."
+        },
+        {
+          "year": "1807",
+          "title": "Britain abolishes the slave trade",
+          "note": "After twenty years of campaigning, led in Parliament by William Wilberforce and outside it by Quakers, evangelicals, and Black writers such as Olaudah Equiano, Britain outlawed its trade in enslaved people. A United States ban on importing enslaved people, passed the same year, took effect in 1808. Slavery itself remained."
+        },
+        {
+          "year": "1816",
+          "title": "The African Methodist Episcopal Church",
+          "note": "After years of legal struggle with white Methodists over control of Bethel, Richard Allen and delegates from other Black congregations met in Philadelphia and formed the African Methodist Episcopal Church, one of the first independent Black denominations in the United States. Allen was consecrated its first bishop."
+        },
+        {
+          "year": "1833",
+          "title": "Britain abolishes slavery",
+          "note": "Parliament passed the Slavery Abolition Act, and Wilberforce died days after hearing that its passage was secure. The act paid twenty million pounds in compensation to the slaveholders and nothing to the enslaved, who were bound to work for their former owners for several more years as apprentices."
+        },
+        {
+          "year": "1845",
+          "title": "Frederick Douglass indicts slaveholding religion",
+          "note": "Douglass closed the Narrative of his life with an appendix explaining that he attacked not the Christianity of Christ but the slaveholding Christianity of America, which he called corrupt and hypocritical. The man who wielded the whip during the week, he wrote, filled the pulpit on Sunday. It remains one of the sharpest words the American church has ever received from a believer."
+        },
+        {
+          "year": "1845",
+          "title": "The Southern Baptist Convention is formed",
+          "note": "Baptists in the South broke from their northern brethren after the national mission boards made clear they would not appoint slaveholders as missionaries. The body that would become America's largest Protestant denomination was founded in defense of slaveholders, and it would also send missionaries across the world. In 1995, at its 150th anniversary, the convention lamented and repudiated the slavery bound up in its founding and apologized to African Americans for condoning and perpetuating racism."
+        },
+        {
+          "year": "1849",
+          "title": "Harriet Tubman escapes",
+          "note": "Harriet Tubman fled slavery in Maryland and then went back, again and again, to lead family members and others north. She was a woman of constant prayer who believed God guided her steps. The Underground Railroad ran on the courage of the enslaved themselves and on the Black churches and white allies who sheltered them."
+        },
+        {
+          "year": "1851",
+          "title": "Sojourner Truth speaks at Akron",
+          "note": "The formerly enslaved preacher Sojourner Truth rose at a women's rights convention in Akron, Ohio, and argued from her own labor and suffering that a woman was the equal of a man. The best known version of her speech, with its famous refrain, was published twelve years later by a white organizer and cast in a Southern dialect Truth, raised speaking Dutch in New York, did not speak. The report printed weeks after the speech is plainer and closer to her."
+        },
+        {
+          "year": "1854",
+          "title": "Kierkegaard attacks Christendom",
+          "note": "After a newly dead bishop was eulogized as a witness to the truth, Søren Kierkegaard began a public assault on the Danish state church, arguing that a Christianity everyone belonged to by birth had ceased to be Christianity at all. He died the next year at forty two. His question about a church too comfortable to follow Jesus returned with force a century later."
+        },
+        {
           "year": "around 1859",
           "title": "The rise of modern skepticism",
           "note": "New theories in science and history and philosophy led many to question the faith. The church was pressed to defend the truth in an age of doubt, and many able minds rose to answer."
         },
         {
-          "year": "around 1906",
-          "title": "The Azusa Street revival",
-          "note": "A humble gathering in Los Angeles sparked the Pentecostal movement, with its hunger for the Holy Spirit. It would grow into one of the fastest spreading Christian movements in history."
+          "year": "1864",
+          "title": "Samuel Ajayi Crowther is made a bishop",
+          "note": "A Yoruba man who had been captured as a boy, sold into slavery, and freed by a British naval patrol was consecrated in Canterbury Cathedral as bishop on the Niger. He was the first African Anglican bishop of modern times. By the end of his life, younger European missionaries had worked to push him aside."
         },
         {
-          "year": "around 1945",
+          "year": "1873",
+          "title": "Lottie Moon sails for China",
+          "note": "Charlotte Moon, a highly educated Virginian, joined her sister in China as a missionary teacher and later moved into the interior to evangelize. Her letters home urged Southern Baptist women to organize for missions, and in 1888 they did. She died in 1912 aboard a ship in the harbor at Kobe, weakened by famine years in which she had given away what she had."
+        },
+        {
+          "year": "1885 to 1887",
+          "title": "The Uganda martyrs",
+          "note": "King Mwanga of Buganda turned on the young Christian converts at his court, Anglican and Catholic alike. Many were burned alive at Namugongo in June 1886, some of them still in their teens. Their deaths did not end the church in Uganda. It grew."
+        },
+        {
+          "year": "1889",
+          "title": "Pandita Ramabai opens a home for widows",
+          "note": "The Sanskrit scholar Pandita Ramabai, a convert from a Brahmin family, opened a school in Bombay for child widows, girls whom Indian society had cast off. From it grew the Mukti Mission, which during the famines of the late 1890s took in hundreds of starving women and girls."
+        },
+        {
+          "year": "1895",
+          "title": "The National Baptist Convention",
+          "note": "Black Baptist bodies joined in Atlanta to form the National Baptist Convention, which became the largest Black religious body in the United States. After emancipation the Black church was the one institution Black Americans owned and governed themselves, and it became the organizing center of much that followed."
+        },
+        {
+          "year": "1900",
+          "title": "The Boxer Uprising",
+          "note": "A movement in northern China that blamed foreign powers and their religion for the nation's humiliation killed missionaries and thousands of Chinese Christians. Foreign armies crushed it and exacted heavy payments. Chinese believers paid for their faith and for its entanglement with foreign power."
+        },
+        {
+          "year": "1906",
+          "title": "The Azusa Street revival",
+          "note": "In a former church building on Azusa Street in Los Angeles, a Black holiness preacher named William J. Seymour led a revival that met almost daily for about three years. Black, white, Latino, and Asian worshipers prayed together in a city and a century that segregated nearly everything. The Pentecostal movement that spread from there became one of the largest in Christian history."
+        },
+        {
+          "year": "1907",
+          "title": "The Pyongyang revival",
+          "note": "At a winter Bible conference in Pyongyang, Korean Christians began confessing their sins publicly, one after another, late into the night. The revival spread across the peninsula and set the pattern of early morning prayer and Bible study that still marks the Korean church. Pyongyang came to be called the Jerusalem of the East."
+        },
+        {
+          "year": "1910",
+          "title": "The World Missionary Conference at Edinburgh",
+          "note": "More than a thousand delegates met to plan the evangelization of the world, and only a handful came from the churches of Asia and Africa. One of them, V. S. Azariah of India, told the Western missionaries that the younger churches needed not only their charity but their friendship. Two years later he became the first Indian bishop in the Anglican communion."
+        },
+        {
+          "year": "1911",
+          "title": "Pentecost reaches Brazil",
+          "note": "Two Swedish missionaries, Gunnar Vingren and Daniel Berg, began a Pentecostal congregation in Belém in northern Brazil. It grew into the Assemblies of God in Brazil, now one of the largest Protestant bodies in the world. Latin American Christianity, long Catholic, was becoming Pentecostal as well."
+        },
+        {
+          "year": "1913 to 1915",
+          "title": "William Wadé Harris walks the Ivory Coast",
+          "note": "A Liberian prophet in a white robe, carrying a cross, a Bible, and a calabash, walked the coast of the Ivory Coast and the Gold Coast calling people to burn their charms and turn to God. Colonial and missionary estimates of those he baptized in about eighteen months, before French authorities expelled him, run from a hundred thousand to a hundred and twenty thousand. He told his converts to wait for teachers who would bring the Bible, and when Methodist missionaries arrived years later, they found congregations already waiting."
+        },
+        {
+          "year": "1915",
+          "title": "The Armenian genocide",
+          "note": "Beginning in April 1915, the Ottoman government deported and massacred its Armenian population, killing hundreds of thousands and, by many estimates, more than a million. Assyrian and Greek Christians were slaughtered as well. One of the oldest Christian nations on earth was nearly erased from its homeland, and much of the world looked away."
+        },
+        {
+          "year": "1917",
+          "title": "The Russian church restores its patriarch",
+          "note": "As revolution swept Russia, a church council restored the office of patriarch, which Peter the Great had abolished two centuries before, and chose Tikhon by lot. The Bolshevik state soon moved against the church. Over the next two decades tens of thousands of clergy were killed and most churches were closed."
+        },
+        {
+          "year": "1919",
+          "title": "Barth's commentary on Romans",
+          "note": "In 1914 Karl Barth, a Swiss village pastor, had watched his revered German teachers sign a manifesto supporting their nation's war, and he concluded that their theology had failed. His commentary on Paul's letter to the Romans insisted that God is not an extension of human culture, progress, or religion. It shook the liberal theology in which he had been trained."
+        },
+        {
+          "year": "1921",
+          "title": "Simon Kimbangu is arrested",
+          "note": "A Baptist catechist in the Belgian Congo began a ministry of preaching and healing that drew crowds from across the region. Colonial authorities arrested him within months and sentenced him to death, a sentence commuted to life imprisonment. He died in prison in 1951, and the church that bears his name became one of the largest independent churches in Africa."
+        },
+        {
+          "year": "1930s",
+          "title": "The East African Revival",
+          "note": "Beginning at a mission station in Rwanda and spreading through Uganda, Kenya, Tanzania, and beyond, a movement of repentance swept the churches of East Africa. Its people, called the saved ones, confessed sin openly and crossed lines of tribe and race to be reconciled. The revival shaped a generation of African church leaders, some of whom would later stand up to dictators."
+        },
+        {
+          "year": "1934",
+          "title": "The Barmen Declaration",
+          "note": "Pastors and theologians of the Confessing Church met at Barmen and adopted a declaration, drafted largely by Barth, rejecting any claim that the church could recognize another lord besides Jesus Christ or take its message from the state. It was the clearest Protestant refusal of the Nazi claim on the church. It said nothing directly about the Jews, a silence Barth later regretted."
+        },
+        {
+          "year": "1940 to 1944",
+          "title": "The village of Le Chambon",
+          "note": "The Protestant village of Le Chambon sur Lignon in occupied France, led by its pastor André Trocmé and his wife Magda, hid thousands of Jews, many of them children, from the Nazis and the Vichy police. The descendants of persecuted Huguenots knew what it meant to be hunted."
+        },
+        {
+          "year": "1940s",
+          "title": "C. S. Lewis and the modern defense of faith",
+          "note": "Writers like Lewis, who had been an atheist before coming to Christ, gave a generation of doubters reasons to believe again. Their work still speaks to honest questions."
+        },
+        {
+          "year": "1945",
           "title": "Bonhoeffer and the cost of discipleship",
           "note": "The German pastor Dietrich Bonhoeffer resisted the evil of the Nazi regime and was executed for it. His life and writings reminded the church that following Christ has a cost."
         },
         {
-          "year": "1962",
+          "year": "1948",
+          "title": "The World Council of Churches",
+          "note": "Protestant and Orthodox churches from dozens of nations met in Amsterdam and formed the World Council of Churches. After two world wars, the divided church was trying to learn how to speak and act together."
+        },
+        {
+          "year": "1949",
+          "title": "The Communist revolution in China",
+          "note": "The Communist victory led within a few years to the expulsion of foreign missionaries and state control of the Protestant churches through the Three Self Patriotic Movement. Many observers assumed Chinese Christianity would not survive without its Western supporters."
+        },
+        {
+          "year": "1952",
+          "title": "Watchman Nee is arrested",
+          "note": "The Chinese church leader Watchman Nee, whose assemblies had grown without foreign oversight, was arrested and later sentenced to fifteen years. He was never released and died in a labor camp in 1972. Through the decades of repression, Christians met in homes, much as the first believers had."
+        },
+        {
+          "year": "1955",
+          "title": "The Montgomery bus boycott",
+          "note": "After Rosa Parks was arrested for refusing to give up her bus seat, Black churches in Montgomery organized a boycott that lasted more than a year and chose a young Baptist pastor, Martin Luther King Jr., to lead it. Congregations became dispatch centers for car pools, and mass meetings in the churches kept the people walking."
+        },
+        {
+          "year": "1962 to 1965",
           "title": "The Second Vatican Council",
           "note": "The Catholic Church gathered to renew its life for the modern world, opening worship to the languages of the people and reaching out to other Christians."
         },
@@ -375,19 +1045,79 @@
           "note": "Martin Luther King Jr., a Baptist pastor, wrote from a jail cell to white clergy who had counseled patience. The civil rights movement was organized largely in churches — and resisted, largely, by other churches. Both facts are part of this history."
         },
         {
+          "year": "1963",
+          "title": "The Sixteenth Street Baptist Church bombing",
+          "note": "On a Sunday morning in September, members of the Ku Klux Klan bombed the Sixteenth Street Baptist Church in Birmingham, killing four girls, Addie Mae Collins, Cynthia Wesley, Carole Robertson, and Carol Denise McNair, as they prepared for worship. The men responsible lived in a city full of churches. It took nearly forty years to convict the last of them."
+        },
+        {
+          "year": "1964",
+          "title": "Fannie Lou Hamer testifies",
+          "note": "A Mississippi sharecropper who had been fired and evicted for trying to register to vote, and beaten in a jail cell for her organizing, testified on national television before the Democratic Party's credentials committee. She described what had been done to her and asked whether this was America. Her faith, rooted in the Black church and its hymns, carried the movement in the places it was most dangerous."
+        },
+        {
           "year": "1965",
           "title": "The Voting Rights Act",
           "note": "The movement that marched out of Black congregations reached its legislative summit. Much of the white American church had watched from the side it would later regret — a wound in the church's witness that has not finished healing."
         },
         {
-          "year": "around 1970",
-          "title": "C. S. Lewis and the modern defense of faith",
-          "note": "Writers like Lewis, who had been an atheist before coming to Christ, gave a generation of doubters reasons to believe again. Their work still speaks to honest questions."
+          "year": "1965",
+          "title": "Rome and Constantinople lift the anathemas",
+          "note": "On the day before the Second Vatican Council closed, Pope Paul the Sixth and Patriarch Athenagoras of Constantinople jointly withdrew the condemnations exchanged in 1054. The schism was not healed, but its founding curse was lifted after more than nine hundred years."
+        },
+        {
+          "year": "1968",
+          "title": "The bishops at Medellín",
+          "note": "Latin American Catholic bishops meeting at Medellín, Colombia, described the poverty and repression of their continent as institutionalized violence and committed the church to the side of the poor. Liberation theology, named in Gustavo Gutiérrez's book of 1971, grew from this soil, and so did the martyrdoms of the next decade."
+        },
+        {
+          "year": "1968",
+          "title": "Martin Luther King Jr. is assassinated",
+          "note": "King was shot on a motel balcony in Memphis, where he had come to support striking sanitation workers. The night before, he had preached that he had seen the promised land and might not get there with his people. He was thirty nine."
+        },
+        {
+          "year": "1974",
+          "title": "The Lausanne Congress",
+          "note": "More than two thousand evangelical leaders from about 150 countries met at Lausanne in Switzerland. The Latin American theologians René Padilla and Samuel Escobar challenged the gathering to reject a gospel wrapped in American culture and silent about injustice, and the Lausanne Covenant affirmed that evangelism and social responsibility both belong to Christian duty. The global church had begun to reshape the Western one."
+        },
+        {
+          "year": "1977",
+          "title": "Archbishop Janani Luwum is murdered",
+          "note": "The Anglican archbishop of Uganda confronted Idi Amin over the killings of his people and was dead within days, officially in a car accident no one believed. The East African Revival had taught Luwum to confess his own sin in the open. It had also taught him to name the sins of the powerful."
         },
         {
           "year": "1979",
           "title": "The Moral Majority",
           "note": "American evangelicalism was formally organized as a voting bloc. Whatever each reader makes of the causes it served, the fusion of church and party built here set the terms of the next four decades — and the church is still paying the bill for being mistaken for a faction."
+        },
+        {
+          "year": "1979",
+          "title": "China's churches reopen",
+          "note": "After the Cultural Revolution had shut the churches of China, the first Protestant churches reopened their doors. Believers who had worshiped in secret for years came out, and by most accounts the church was larger than when the missionaries left. The church Western observers had written off had survived without them."
+        },
+        {
+          "year": "1980",
+          "title": "Óscar Romero is killed at the altar",
+          "note": "The archbishop of San Salvador, who had used his Sunday sermons to name the dead and to order soldiers to stop killing their own people, was shot while celebrating Mass in a hospital chapel. He had been appointed as a safe, cautious choice. The murder of his friend, the Jesuit Rutilio Grande, had changed him."
+        },
+        {
+          "year": "1989",
+          "title": "The prayers at Leipzig",
+          "note": "Weekly prayers for peace at the Nikolaikirche in Leipzig had become the gathering point for East Germans who wanted change. On 9 October tens of thousands marched from the churches carrying candles, and the security forces did not fire. A month later the Berlin Wall fell."
+        },
+        {
+          "year": "1994",
+          "title": "The Rwandan genocide",
+          "note": "In one of the most Christian nations in Africa, Hutu extremists killed hundreds of thousands of Tutsi and moderate Hutu in about a hundred days. Many were murdered inside churches where they had fled for refuge, some with the help of clergy, while other Christians hid their neighbors at the risk of their lives. The country had been a birthplace of the East African Revival. Baptism had not reached the deepest loyalties of the heart."
+        },
+        {
+          "year": "1999",
+          "title": "Lutherans and Catholics on justification",
+          "note": "The Lutheran World Federation and the Catholic Church signed a Joint Declaration on the Doctrine of Justification at Augsburg, stating that the condemnations each had issued in the sixteenth century did not apply to the other's teaching as now presented. The question that split the western church in 1517 had not vanished. But the two could now say much of the answer together."
+        },
+        {
+          "year": "2015",
+          "title": "The Charleston church massacre",
+          "note": "A young white supremacist sat through a Wednesday night Bible study at Emanuel African Methodist Episcopal Church in Charleston, then killed nine of the people who had welcomed him, including the pastor, Clementa Pinckney. The congregation's building had been burned in 1822 after one of its founders, Denmark Vesey, was accused of planning a slave revolt. Days after the shooting, relatives of the dead told the killer in court that they forgave him."
         },
         {
           "year": "today",

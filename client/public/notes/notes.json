@@ -1,0 +1,4 @@
+{
+  "format": "Short-form notes: the Facebook-length pieces. Each note is { id, date (YYYY-MM-DD), text (plain prose; blank line between paragraphs), source ('facebook' | 'site'), url (optional link to the original post), scripture (optional reference) }. Never hand-write a note in James's name; import his own posts with scripts/import-facebook-notes.mjs.",
+  "notes": []
+}

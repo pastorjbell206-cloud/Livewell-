@@ -12,34 +12,34 @@ export default function Parenting() {
 
   const FEATURED_ARTICLES = [
     {
-      title: "How to Raise Children in the Faith Without Crushing Them",
-      slug: "how-to-raise-children-in-the-faith",
+      title: "How to Raise Kids in the Faith When You Have Doubts Yourself",
+      slug: "how-to-talk-kids-faith-doubt",
       topic: "Parenting",
-      readTime: "12 min read"
+      readTime: "19 min read"
     },
     {
-      title: "What Fatherhood Requires",
+      title: "What Does the Bible Say About Fathers and the Father Wound?",
       slug: "what-fatherhood-requires",
       topic: "Fatherhood",
-      readTime: "12 min read"
+      readTime: "19 min read"
     },
     {
-      title: "Discipline That Forms the Heart, Not Just the Behavior",
-      slug: "parenting-discipline-that-forms-the-heart",
+      title: "How to Discipline a Child Biblically, Without Anger",
+      slug: "discipline-without-domination",
       topic: "Parenting",
-      readTime: "9 min read"
+      readTime: "19 min read"
     },
     {
-      title: "Raising Kids in a Screen and Phone Age",
+      title: "When Should My Child Get a Smartphone? A Christian Answer",
       slug: "parenting-raising-kids-in-a-screen-age",
       topic: "Parenting",
-      readTime: "10 min read"
+      readTime: "19 min read"
     },
         {
-      title: "Teaching Your Kids to Pray and Read the Bible",
-      slug: "parenting-teaching-kids-to-pray-and-read-scripture",
+      title: "How to Do Family Devotions and Teach Your Kids to Pray",
+      slug: "family-devotions-authentic",
       topic: "Parenting",
-      readTime: "9 min read"
+      readTime: "20 min read"
     }
   ];
 
@@ -61,7 +61,7 @@ export default function Parenting() {
   return (
     <div style={{ background: "var(--paper)" }}>
       <SEOMeta
-        title="Christian Parenting Help | LiveWell by James Bell"
+        title="Christian Parenting Help — From a Father of Five"
         description="Raising kids who think, question, and believe. Christian parenting on faith formation, doubt, and technology, for every season."
         keywords="Christian parenting, raising kids in faith, how to talk to kids about God, faith and teenagers, parenting resources, Christian family"
         url="https://www.livewellbyjamesbell.co/parenting"
@@ -70,8 +70,12 @@ export default function Parenting() {
 
       <MinimalNav />
 
+      {/* This page renders the nav directly rather than through Layout, so it
+          declares its own main landmark — the skip link in MinimalNav targets it. */}
+      <main id="main">
+
       {/* HERO SECTION */}
-      <section style={{ background: "var(--ink)", color: "var(--paper)", padding: "80px 20px", minHeight: "600px", display: "flex", alignItems: "center" }}>
+      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "80px 20px", minHeight: "600px", display: "flex", alignItems: "center" }}>
         <div style={{ maxWidth: "800px", margin: "0 auto", textAlign: "center" }}>
           <h1 style={{ fontSize: "clamp(36px, 5vw, 56px)", fontWeight: "bold", lineHeight: "1.2", marginBottom: "24px", fontFamily: "var(--F)" }}>
             Raising Kids Who Think, Question, and Believe
@@ -222,6 +226,8 @@ export default function Parenting() {
       </section>
 
       {subjectById("parenting") && <SubjectShelf subject={subjectById("parenting")!} />}
+      </main>
+
       <Footer />
     </div>
   );

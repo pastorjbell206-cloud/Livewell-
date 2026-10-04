@@ -14,6 +14,7 @@
  */
 import { readFileSync, writeFileSync, readdirSync, existsSync, statSync } from "node:fs";
 import { join } from "node:path";
+import { applyToLibrary, loadRewrites, loadRetirements } from "./apply-rewrites.mjs";
 
 // dir -> classification. pillar must be a value pillarToTrack() resolves, so the
 // essay lands in the right /writing track and content-pillar. Editorial; James
@@ -213,6 +214,22 @@ const TITLE_OVERRIDES = {
   "theology-of-protest": "A Theology of Protest",
   "ai-authenticity-pastor-artificial-intelligence": "AI and the Pastor's Calling",
 };
+// Title-only repairs for bridged essays that have no article-library entry.
+// Their short slugs had the small words cut out, so titleFromSlug() produced
+// "Reformation Actually About" and the like. Unlike TITLE_OVERRIDES, an entry
+// here does not move the essay into the prophetic-justice pillar. Guarded by
+// server/essay-titles.test.ts.
+const TITLE_REPAIRS = {
+  "build-real-friendships-other-pastors": "Why Pastors Have So Few Real Friends, and How to Make Them",
+  "church-abandoned-public-square": "Why the Church Abandoned the Public Square",
+  "cost-of-ministry-silos": "Why Ministry Silos Are a Theological Problem",
+  "future-of-missions-already-there": "The Future of Missions Is Already in the Global South",
+  "mobilizing-church-missions-small-budget": "How a Small Church Can Send Missionaries Without a Big Budget",
+  "partnering-national-pastor": "What Real Partnership With a National Pastor Looks Like",
+  "pastoral-care-wealthy": "Why Pastors Avoid Talking to Wealthy Members About Money",
+  "reformation-actually-about": "What the Reformation Was Really About, and What It Broke",
+  "theology-public-health": "Why Public Health Is a Theological Question for the Church",
+};
 const SMALL_WORDS = new Set(["a","an","and","as","at","but","by","for","in","is","it","of","on","or","the","to","vs","with","without","when","how","what","why","are","your","you"]);
 function titleFromSlug(slug) {
   const words = slug.replace(/^\d+-/, "").split("-");
@@ -253,7 +270,7 @@ if (existsSync(BODIES_PATH)) {
     const when = new Date(BASE2 - j * DAY).toISOString();
     bridgeRecords.push({
       id: 2_000_000 + j,
-      title: TITLE_OVERRIDES[b.slug] || (lib && lib.title) || titleFromSlug(b.slug),
+      title: TITLE_OVERRIDES[b.slug] || TITLE_REPAIRS[b.slug] || (lib && lib.title) || titleFromSlug(b.slug),
       slug: b.slug,
       body: b.body,
       excerpt: (lib && lib.excerpt) || excerptFromBody(b.body),
@@ -376,7 +393,9 @@ if (existsSync(PC_PATH)) {
   }
 }
 
-const allRecords = records.concat(bridgeRecords, draftRecords, pcRecords);
+// The rewrites (content/rewrites/*.md, docs/rewrites/STANDARD.md) lie over
+// every source, so rebuilding the library from its sources never undoes them.
+const allRecords = applyToLibrary(records.concat(bridgeRecords, draftRecords, pcRecords), loadRewrites(), undefined, loadRetirements()).records;
 
 const outPath = "api/static-library.generated.ts";
 const banner =

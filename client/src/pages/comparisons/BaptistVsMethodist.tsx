@@ -69,7 +69,7 @@ const RELATED_ARTICLES = [
   { title: "The Age of Revivals", href: "/theology/history/the-awakenings" },
   { title: "The Evangelical Movement", href: "/theology/history/the-awakenings" },
   { title: "The Mainline Protestant Collapse", href: "/writing/the-numbers-behind-the-decline" },
-  { title: "The Black Church Tradition", href: "/writing/black-church-prophetic-justice" },
+  { title: "The Black Church Tradition", href: "/writing/the-black-church-in-america" },
   { title: "Christianity in a Post-Christian Age", href: "/writing/the-church-after-cultural-power" },
 ];
 

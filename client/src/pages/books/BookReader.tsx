@@ -30,9 +30,6 @@ const eyebrow: React.CSSProperties = {
 interface Chapter { n: number; slug?: string; title: string; summary?: string; verdict?: string; body: string; reflect?: string[] }
 interface Book { title: string; subtitle?: string; blurb?: string; pillar?: string; chapters: Chapter[] }
 
-// Paid ebooks: downloads go through checkout, so the free reader offers no PDF.
-const PAID_BOOK_SLUGS = new Set(["born-again-from-atheism", "the-god-who-is-not-nice"]);
-
 type FontSize = "sm" | "md" | "lg";
 const FONT_SCALE: Record<FontSize, number> = { sm: 0.94, md: 1, lg: 1.12 };
 const FONT_KEY = "livewell-reader-fontsize";
@@ -208,11 +205,6 @@ export default function BookReader() {
                     Start from the beginning
                   </button>
                 )}
-                {slug && !PAID_BOOK_SLUGS.has(slug) && (
-                  <a href={`/downloads/books/${slug}.pdf`} style={{ padding: "12px 20px", background: "transparent", color: "rgba(245,240,230,0.82)", border: "1px solid rgba(245,240,230,0.25)", textDecoration: "none", fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, borderRadius: "var(--radius-sm)" }}>
-                    Download the PDF
-                  </a>
-                )}
               </div>
             )}
           </div>
@@ -300,7 +292,7 @@ export default function BookReader() {
                       {ch.summary}
                     </p>
                   )}
-                  <div className="article-body" style={{ fontSize: "calc(1rem * var(--reader-scale, 1))" }}>
+                  <div className="article-body" style={{ fontSize: "calc(clamp(1.125rem, 1rem + 0.5vw, 1.25rem) * var(--reader-scale, 1))" }}>
                     <Markdown>{ch.body}</Markdown>
                   </div>
                   {ch.verdict && <p style={{ fontFamily: "var(--F)", fontSize: "22px", fontStyle: "italic", color: "var(--mustard-text)", margin: "var(--s-4) 0", paddingLeft: "20px", borderLeft: "3px solid var(--mustard)" }}>{ch.verdict}</p>}

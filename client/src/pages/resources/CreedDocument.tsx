@@ -40,7 +40,7 @@ export default function CreedDocument() {
     <Layout>
       {data && <SEOMeta title={`${data.title} — Full Text with Notes`} description={data.subtitle} url={`https://www.livewellbyjamesbell.co/resources/creeds/${slug}`} />}
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
             <Link href="/resources/creeds" style={{ color: "inherit" }}>Creeds, Confessions, and Classics</Link>
@@ -82,7 +82,7 @@ export default function CreedDocument() {
             </section>
           )}
 
-          <section style={{ background: "var(--charcoal)", padding: "var(--s-4)", color: "var(--bone)" }}>
+          <section style={{ background: "var(--charcoal)", padding: "var(--s-4)", color: "var(--charcoal-fg)" }}>
             <div style={{ ...wrap, display: "flex", gap: "var(--s-4)", flexWrap: "wrap" }}>
               <Link href="/resources/creeds" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard)" }}>← All documents</Link>
               <Link href="/theology/creeds" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard)" }}>The confessions surveyed</Link>
