@@ -1,80 +1,80 @@
 {
   "slug": "whole-life",
   "title": "Eight Weeks Toward One Undivided Life",
-  "subtitle": "An eight week plan from James Bell toward one undivided life. Prayer, rest, friendship, work, money, church, and justice gathered into a rule you can keep.",
-  "intro": "This is an eight week walk for the person who is not in crisis but knows the life they are living is divided, faith in one room, work in another, money in a locked drawer, the body ignored entirely. Each week holds one focus, one small daily practice, one thing to read, one tool to use, and one honest question. The aim is integration, one life lived in one direction under one Lord, instead of six lives competing for the same person.\n\nIt is not a cure for anything, and it is not a substitute for a pastor, a counselor, a doctor, or the community that knows you. Walk it imperfectly. A missed week is not failure, you just pick it back up where you stopped. This is not a scorecard, and you are not behind. Grace does not keep score, which is the only reason any of us can start.",
-  "careNote": "",
+  "subtitle": "An eight week plan from James Bell for anyone who wants to grow and follow Jesus well. Ordinary practices, other people, rest, work, and a rule small enough to keep, all resting on grace.",
+  "intro": "This is an eight week walk for the person who isn't in crisis but wants to grow: to know God better, to pray and read the Bible with some steadiness, and to be kinder and more patient a year from now. Maybe you've started reading plans and dropped them by February, or you've followed Jesus for years and feel stuck, or your faith lives in one room of your life while work, money, and the body live in others. Each week holds one focus, one small daily practice, one thing to read, one tool to use, and one honest question. It moves from an honest look, through the reasons effort so often stalls, to the ordinary means God uses to grow his people: Scripture and prayer, rest, friendship, work, the church, quiet service, and a rule small enough to keep. Growth in Christ is God's work in you before it's yours, and you're invited to take part in it, not to produce it.\n\nIt is not a cure for anything, and it is not a substitute for a pastor, a doctor, a counselor, or the church that knows you. Walk it imperfectly. A missed week is not failure, and a missed day isn't something to make up; you just pick it back up. None of these weeks is a grade, and you aren't behind.",
+  "careNote": "If prayer and nearly everything else have gone flat for two weeks or more, or fear of failing God fills your days, see a doctor or licensed counselor as well as a pastor. If someone at home threatens or hurts you, or anyone uses God to control you, start at Find Help, and call 911 if you're in danger. If you think of ending your life, call or text 988.",
   "weeks": [
     {
       "n": 1,
       "focus": "The honest look",
-      "why": "Every real change begins with an accurate map. Most of us have never once looked at the whole of our life in one sitting, the prayer, the body, the friendships, the money, the work, side by side. This week you take the honest inventory, not to grade yourself, but to see what is actually there.",
-      "practice": "Each day, write down one true sentence about one area of your life, prayer, body, friendship, work, money, church, one area per day. No commentary, no plans yet. Just the truth.",
-      "read": { "label": "The Integrated Life, on why the divided life does not work", "href": "/life" },
-      "tool": { "label": "The Whole Life Assessment, take it once and keep the results for week eight", "href": "/life/assessment" },
-      "reflection": "Which part of my life have I been keeping out of view, and what am I afraid an honest look would require of me?"
+      "why": "When people say they want to grow, they usually mean several things at once: to know God and not only know about him, to pray without drifting, and to stop repeating the same failures, the short temper at the end of the day or the scrolling that eats the evening. Underneath there's often a quiet worry that other Christians are further along. This week you look at the whole of your life in one sitting, the prayer, the body, the friendships, the work, the money, not to grade yourself but to see what is there. The psalmist's prayer is the right way in: \"Search me, O God, and know my heart\" (Psalm 139:23).",
+      "practice": "Take the Whole-Life Assessment once this week, after praying Psalm 139:23, and keep your results. Then each day write one true sentence about one area of your life, prayer, body, friendship, work, money, or church, with no plan yet to fix anything. Your lowest areas aren't a verdict on you, only a place to begin.",
+      "read": { "label": "I just want to grow and follow Jesus well, the care page this plan walks beside", "href": "/help/whole-life" },
+      "tool": { "label": "The Whole-Life Assessment, thirty statements in about eight minutes; keep your results for week eight", "href": "/life/assessment" },
+      "reflection": "Which part of my life have I been keeping out of God's view, and what am I afraid an honest look would ask of me?"
     },
     {
       "n": 2,
-      "focus": "The inner life",
-      "why": "Everything else in this plan draws from this well. A prayer life is not a performance for God, it is the daily turning of your attention toward the One who was already attending to you. We start here because a life integrates around whatever sits at its center, and something always sits there.",
-      "practice": "Ten minutes of unhurried prayer each day, and let half of it be silence. No agenda, no list to get through. Show God the day and let him look at it with you.",
-      "read": { "label": "How to Practice Lament, because honest prayer includes the parts you usually edit out", "href": "/how-tos/ss-how-to-practice-lament" },
-      "tool": { "label": "The Prayer Generator, for the days the well feels dry", "href": "/tools/prayer-generator" },
-      "reflection": "What actually sits at the center of my attention most days, and what would it take for prayer to move toward that place?"
+      "focus": "Grace, effort, and the treadmill",
+      "why": "When growth stalls, two explanations pull against each other. One says try harder and lets guilt do the pushing; the other says stop trying and trust, since growth is God's business. Each has hold of something, and holding only one half leaves you exhausted or adrift. Paul held both in one breath: \"continue to work out your salvation with fear and trembling. For it is God who works in you to will and to act on behalf of His good purpose\" (Philippians 2:12-13). The treadmill treats God's love as a wage, and the shrug treats God as a caretaker who asks nothing of you. You can't earn what has been given, but you can work hard at staying near the one who gives it.",
+      "practice": "Each day this week, before you pray or read, tell God in one sentence which way you lean, toward the striving or toward the shrug. Then do one small practice, a psalm, a short prayer, or a kindness, and stop there. If you miss a day, don't make it up and don't punish yourself; pick it back up tomorrow.",
+      "read": { "label": "Grace and Works, on receiving the gift first and serving from gratitude", "href": "/wisdom/grace-and-works" },
+      "tool": { "label": "Philippians 2 in the Study Bible, on working out what God works in", "href": "/study/bible/philippians/2" },
+      "reflection": "When my growth stalls, do I reach for guilt or for a shrug, and what does that say about how I picture God?"
     },
     {
       "n": 3,
-      "focus": "The body and rest",
-      "why": "You do not have a soul that happens to carry a body. You are one creature, and a neglected body quietly taxes everything else, the prayer, the patience, the marriage, the work. Rest is not a reward for the productive. It is a command for the loved.",
-      "practice": "Each day, keep a set bedtime and take a ten minute walk outside. Two appointments with your own creatureliness. Keep them like you would keep them for someone you love.",
-      "read": { "label": "The Body and the Rhythms, on sleep, movement, and sabbath", "href": "/life/the-body-and-the-rhythms" },
-      "tool": { "label": "The Life Audit, see where your actual hours are going", "href": "/tools/life-audit" },
-      "reflection": "What does my treatment of my body say I believe about where life comes from?"
+      "focus": "Remaining in the vine",
+      "why": "On the night he was arrested, Jesus told eleven men who would scatter within hours that they were already clean because of his word (John 15:3), before he asked anything of them. Then came one command, repeated: \"Remain in Me, and I will remain in you\" (John 15:4). Branches don't strain to make grapes; they stay joined to the vine. Remaining isn't passive, since a few lines on he ties it to keeping his commandments (John 15:10). He also warns that a branch which does not remain is thrown away (John 15:6). Some faithful Christians read that as describing people who were near Jesus without being joined to him; others read it as a warning that a believer can turn away, and take comfort that it's aimed at turning away, not at weakness. Either way, he said all of this to men about to fail him, and after the resurrection he came back to them (John 20:19).",
+      "practice": "Read one psalm a day, slowly and aloud if you can, starting with Psalm 1 and its tree \"planted by streams of water\" (Psalm 1:3). When a line is true for you, pray it back to God in your own words; when it isn't, pray it for someone it fits. On days the reading feels empty, read it anyway and tell God honestly how it felt. If you miss a day, don't make it up. Just read today's.",
+      "read": { "label": "Why Does God Feel So Far Away When You Pray? For the seasons when the practices feel empty", "href": "/life/the-dry-season" },
+      "tool": { "label": "John 15 in the Study Bible, the vine and the branches, with the ways Christians read its warning", "href": "/study/bible/john/15" },
+      "reflection": "What would remaining in Christ look like on an ordinary Tuesday for me, and what keeps crowding it out?"
     },
     {
       "n": 4,
-      "focus": "Friendship and the table",
-      "why": "We were not made to be known by no one. Modern life makes isolation the default, and the default must be resisted on purpose. Friendship is not a luxury for people with spare time. It is load bearing, and most of us are carrying weight that was meant to be shared.",
-      "practice": "Each day, make one small move toward one friend, a message, a call, an invitation to a table. Small and real beats grand and imagined. By the end of the week, share one meal with someone.",
-      "read": { "label": "Friendship Against Isolation, on the slow work of being known", "href": "/life/friendship-against-isolation" },
-      "tool": { "label": "The Emotional Health tool, to see what you tend to hide from the people closest to you", "href": "/tools/emotional-health" },
-      "reflection": "Who actually knows me, not my schedule but me, and when did I last let that number grow?"
+      "focus": "The body and rest",
+      "why": "You are one creature, not a soul that happens to carry a body, and a body that never sleeps enough quietly taxes everything else, the prayer, the patience, the work. Psalm 127 says that God \"gives sleep to His beloved\" (Psalm 127:2). Rest belongs here too. Whatever you believe about how the Sabbath command applies to Christians, Jesus was plain about whom it serves: \"The Sabbath was made for man, not man for the Sabbath\" (Mark 2:27). And if eating, exercise, fasting, or any other discipline has become a way to punish yourself or control your weight, tell a doctor, because a practice that harms you has stopped serving you.",
+      "practice": "Each day, keep a set bedtime and take a short walk outside. Once this week, choose a stretch of hours, half a day if a whole one isn't possible, and stop: no work, no errands, no catching up. Worship, eat a long meal, walk, nap, or call a friend. If even that is impossible right now, start with one hour.",
+      "read": { "label": "Sabbath: A Bible Study on Rest and Hurry, which sets out how Christians differ on the command", "href": "/studyguides/sabbath" },
+      "tool": { "label": "The Life Audit, twenty-four questions across eight areas of life, health among them", "href": "/tools/life-audit" },
+      "reflection": "What does the way I treat my body and my time off say I believe about where life comes from?"
     },
     {
       "n": 5,
-      "focus": "Work and money",
-      "why": "Work and money are where most of our waking hours and most of our hidden worship go. They are not secular zones outside the spiritual life. They are the spiritual life, in its most measurable form. What you do with a Tuesday and a dollar tells the truth about what you trust.",
-      "practice": "At the end of each workday, name one way your work served an actual person. Then, once this week, look at a month of your spending and write down what it says you love.",
-      "read": { "label": "Money and the Heart, on what the account statement confesses", "href": "/life/money-and-the-heart" },
-      "tool": { "label": "The Financial Health tool, an honest look at the numbers without shame", "href": "/tools/financial-health" },
-      "reflection": "If a stranger read my calendar and my bank statement, what would they say I worship?"
+      "focus": "Friends, and one person to walk with",
+      "why": "No one grows alone. The letter to the Colossians tells believers to put on \"compassion, kindness, humility, gentleness, and patience\" (Colossians 3:12), and none of those can be worn alone in a room; the fruit of the Spirit (Galatians 5:22-23) is tested among people. Friendship isn't a luxury for people with spare time. It carries weight that was meant to be shared. It also helps to have one person a little further along who will ask how you're really doing. The letter of James tells believers to \"confess your sins to each other and pray for each other so that you may be healed\" (James 5:16), and that takes someone you trust.",
+      "practice": "Each day, make one small move toward one friend: a message, a call, or an invitation to your table. By the end of the week, ask someone you trust who is a little further along, a friend, an older Christian, or your pastor, to meet once a month and ask how you're really doing.",
+      "read": { "label": "How to Build Deep Friendships as an Adult, on making room for friendship on purpose", "href": "/how-tos/rel-how-to-build-deep-friendships-as-an-adult" },
+      "tool": { "label": "The Prayer Planner, to pray for your people by name through the week", "href": "/tools/prayer-planner" },
+      "reflection": "Who actually knows me, not my schedule but me, and whom could I ask to walk with me?"
     },
     {
       "n": 6,
-      "focus": "The local church",
-      "why": "An undivided life cannot be assembled alone, and it was never meant to be. The local church, with all its ordinary frustrations, is where formation actually happens, among people you did not choose and cannot curate. Belonging somewhere specific is part of the integration, not an accessory to it.",
-      "practice": "Each day, pray for your church by name, its pastor, and one person in it. If you do not have a church, pray for the one you will visit this month, and pick the Sunday.",
-      "read": { "label": "Why Does Church Membership Still Matter? On why nobody is formed in private", "href": "/life/church-membership-and-commitment" },
-      "tool": { "label": "The Prayer Generator, use its prayers for the church and for pastors to pray for yours by name", "href": "/tools/prayer-generator" },
-      "reflection": "What have I been expecting the church to give me, and what have I actually been willing to give it?"
+      "focus": "Work and money",
+      "why": "Many of us learned, without anyone saying it, that growth happens in a spiritual compartment while the job, the money, the body, and the marriage sit outside it. Pastors like me have to own part of that, because we often measured what was easy to count and said too little about Monday. The letter to the Colossians leaves nothing outside: \"whatever you do, in word or deed, do it all in the name of the Lord Jesus, giving thanks to God the Father through Him\" (Colossians 3:17). Money is part of it, and Jesus was direct about why: \"For where your treasure is, there your heart will be also\" (Matthew 6:21).",
+      "practice": "At the end of each workday, paid or unpaid, name one way your work served an actual person, and thank God for it. Once this week, look at a month of your spending and write down what it says you love, without shame and without a plan to fix it yet.",
+      "read": { "label": "How Do You Live Your Faith on Monday, Not Just Sunday?", "href": "/life/the-integrated-life" },
+      "tool": { "label": "The Financial Health Check, twelve questions on money and faith", "href": "/tools/financial-health" },
+      "reflection": "If someone read my calendar and my bank statement, what would they say I trust?"
     },
     {
       "n": 7,
-      "focus": "Serving and justice",
-      "why": "A life integrated only around its own flourishing has merely built a nicer prison. The prophets will not allow a spirituality that ends at our own front door. Somewhere near you is a person carrying more than they can lift, and your one undivided life is partly for them.",
-      "practice": "Each day, notice one person you would normally walk past, and do one small thing, a word, a meal, an errand, a name learned. Do it quietly. Tell no one.",
-      "read": { "label": "The Justice pages, on what the Lord requires", "href": "/justice" },
-      "tool": { "label": "The Verse Finder, search what Scripture says about justice and mercy", "href": "/tools/verse-finder" },
-      "reflection": "Whose burden have I trained myself not to see, and what would it cost me to see it?"
+      "focus": "The church and the hidden kindness",
+      "why": "The first believers devoted themselves to teaching, fellowship, the breaking of bread, and prayer (Acts 2:42), and they did all of it together. A church is one of the places God grows people, among people you didn't choose. Love of neighbor is where growth shows, so practice it where no one will applaud. Jesus told his followers to give in secret, because \"your Father, who sees what is done in secret, will reward you\" (Matthew 6:4). Quiet service trains the heart away from performance. If church is where you were hurt, you don't have to walk back in alone, and the care page on church hurt is a place to start.",
+      "practice": "Go to church this Sunday, and stay a few minutes afterward to talk with someone. If you don't have a church yet, pick one and choose the Sunday now. Each day, do one small kindness no one will see, a meal, an errand, a note, or an hour with someone lonely, and don't post it or mention it.",
+      "read": { "label": "Why We Still Need Each Other, a study on the church and the call to belong", "href": "/studyguides/the-church" },
+      "tool": { "label": "The Prayer Generator's prayers for the church and for pastors", "href": "/tools/prayer-generator" },
+      "reflection": "What have I been expecting the church to give me, and what have I been willing to give it?"
     },
     {
       "n": 8,
-      "focus": "A rule of life",
-      "why": "Eight weeks of practices are scaffolding. A rule of life is the building, a few chosen commitments, small enough to keep on your worst week, that hold a life in one direction for years. The saints were not stronger than you. They were more decided, and they decided in advance.",
-      "practice": "Write your rule on one card, two or three practices from these weeks that proved true, with when and where you will do them. Do them each day. Show the card to one person who will ask you about it.",
-      "read": { "label": "How to Build a Rule of Life, a charter for the next year, written down and revisited with the seasons", "href": "/how-tos/sf-how-to-build-a-rule-of-life" },
-      "tool": { "label": "Retake the Whole Life Assessment and set it beside week one", "href": "/life/assessment" },
+      "focus": "A rule small enough to keep",
+      "why": "A rule of life is a short, written pattern of practices fitted to your actual week. It works like a trellis, which can't make anything grow but gives a growing life something to climb. It can also go sour. The letter to the Colossians warns against strict rules of self-denial that look wise but \"are of no value against the indulgence of the flesh\" (Colossians 2:23). A rule helps when it keeps you near Christ and his people, and it harms when it becomes a way to impress God or anyone else. Keep yours small enough for your worst week, and trust the one who began the work in you to finish it.",
+      "practice": "Write your rule on one card: two or three practices from these weeks that helped, with when and where you'll keep them, such as a psalm before breakfast, church on Sunday, or coffee with a friend once a month. Show the card to one person who will ask about it. Then retake the Whole-Life Assessment and set it beside week one, as a map rather than a grade.",
+      "read": { "label": "Spiritual Habits: A Bible Study on Formation, whose last session is A Rule You Can Actually Keep", "href": "/studyguides/habits-and-formation" },
+      "tool": { "label": "The Rule of Life Builder, to choose a few rhythms and write them down", "href": "/tools/rule-of-life" },
       "reflection": "A year from now, what few practices do I want to have kept, and who am I asking to walk them with me?"
     }
   ]

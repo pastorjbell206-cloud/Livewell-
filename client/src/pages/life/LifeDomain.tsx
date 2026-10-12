@@ -11,7 +11,7 @@ import { Link, useRoute } from "wouter";
 import Layout from "@/components/Layout";
 import MoreOnThis from "@/components/MoreOnThis";
 import { CrisisBlock } from "@/components/CrisisBlock";
-import { SENSITIVE_LIFE } from "@/lib/needs";
+import { LIFE_TOPICS, SENSITIVE_LIFE } from "@/lib/needs";
 import { toParagraphs } from "@/lib/prose";
 import { SEOMeta } from "@/components/SEOMeta";
 import PageEndNav from "@/components/PageEndNav";
@@ -160,7 +160,7 @@ export default function LifeDomain() {
         </section>
       )}
 
-      {slug && SENSITIVE_LIFE.has(slug) && <CrisisBlock variant="compact" />}
+      {slug && SENSITIVE_LIFE.has(slug) && <CrisisBlock variant="compact" topics={["suicide", ...(LIFE_TOPICS[slug] ?? [])]} />}
       {slug && <MoreOnThis href={`/life/${slug}`} />}
       <PageEndNav back={{ href: "/life", label: "The Integrated Life" }} />
     </Layout>

@@ -124,6 +124,8 @@ export const SENSITIVE_LIFE = new Set<string>(sensitive.life);
 export const SENSITIVE_GUIDES = new Set<string>(sensitive.studyguides);
 /** Extra help lines a guide's subject calls for, beyond 988 and the Crisis Text Line. */
 export const GUIDE_TOPICS: Record<string, CrisisTopic[]> = sensitive.studyguideTopics as Record<string, CrisisTopic[]>;
+/** The same for life pages whose text names a line (the Hotline, SAMHSA), so the block carries it. */
+export const LIFE_TOPICS: Record<string, CrisisTopic[]> = sensitive.lifeTopics as Record<string, CrisisTopic[]>;
 
 /**
  * Wisdom topics on heavy subjects, with the lines each calls for. `lead`

@@ -1,80 +1,80 @@
 {
   "slug": "anxiety",
   "title": "Eight Weeks Toward a Quieter Mind",
-  "subtitle": "An eight week guided plan for the anxious mind from James Bell. Small daily practices, honest readings, and prayer for the nights when fear will not lift.",
-  "intro": "This is an eight week walk for the person whose mind will not be quiet. Each week holds one focus, one small daily practice, one thing to read, one tool to use, and one honest question. It moves slowly on purpose, from naming the anxiety, to caring for the body that carries it, to the older practices of lament and prayer, to the people who can help you bear it. Anxiety is not a verdict on your faith. It is a weight, and weights can be carried differently.\n\nIt is not a cure, and it is not a substitute for a doctor, a licensed counselor, a pastor, or the community that knows your name. Walk it imperfectly. A missed week is not failure, you just pick it back up. There is no scorecard here, because anxiety has handed you enough scorecards already. This one you get to put down.",
-  "careNote": "Persistent or impairing anxiety belongs in the care of a doctor and a licensed counselor, seeking that help is faith and not failure, and in a crisis call or text 988.",
+  "subtitle": "An eight-week plan from James Bell for the mind that won't stop worrying: small daily practices, honest readings, and prayer for the nights when fear will not lift.",
+  "intro": "This is an eight-week walk for the person whose mind won't be quiet. Each week holds one focus, one small daily practice, one thing to read, one tool to use, and one honest question. It moves slowly on purpose: from naming the worry and caring for the body that carries it, to the old practice of lament, then down to the habits and the culture that keep the alarm ringing, and on to prayer, to the people who can help you carry it, and to a few practices you can keep. Anxiety is not a verdict on your faith. It's a weight on body and soul together, more common in church than anyone lets on, and it deserves real care, from God and from people.\n\nIt is not a cure, and it is not a substitute for a doctor, a licensed counselor, a pastor, or the people who know your name. I'm a pastor, not a physician, and nothing here is medical advice. Walk it imperfectly. A missed week is not failure; you simply pick it back up. Anxiety has handed you enough scorecards already, so you won't find one here. And if the fear has turned into thoughts of not wanting to be alive, don't wait for any week of this plan: call or text 988 tonight.",
+  "careNote": "If the worry has been steady for weeks, panic keeps coming, or you're relying on alcohol or pills to calm down, see a doctor or a licensed counselor; going is faith, not failure. If someone at home hurts, threatens, or controls you, that's a safety matter first: the National Domestic Violence Hotline is on Find Help. In a crisis, call or text 988, or 911 in immediate danger.",
   "weeks": [
     {
       "n": 1,
       "focus": "Naming it without shame",
-      "why": "Anxiety grows best in the dark, unnamed and unexamined. The first work is not to defeat it but to look at it plainly, the way you would look at any other fact about your life. Naming a fear does not give it power. It takes some back.",
-      "practice": "Each day, write down in one or two plain sentences what you are anxious about. No spin, no spiritual editing. Just the truth on paper, where you can see its actual size.",
-      "read": { "label": "The Anxious Mind, on what anxiety is and what it is not", "href": "/life/the-anxious-mind" },
-      "tool": { "label": "The Help page, so you know where the doors are before you need them", "href": "/help" },
+      "why": "Anxiety grows best in the dark, and it rarely comes alone. Under the worry sits a second fear, that a stronger Christian would be free of this by now. Scripture doesn't support it. The psalm that bears David's name says, “Fear and trembling grip me” (Psalm 55:5), and the night before the cross Jesus “began to be sorrowful and deeply distressed” (Matthew 26:37). Trust and fear can live in the same person on the same night. So the first work is to look at the worry plainly, because a fear on paper has a size you can see. One fear needs a different first step. If someone at home hurts, threatens, or controls you, that's a safety matter before it's an anxiety one: the National Domestic Violence Hotline, listed on Find Help, can help you plan, and 911 is for immediate danger.",
+      "practice": "Each evening, write down in one or two plain sentences what you're anxious about, as specifically as you can: the bill, the scan, the conversation, the thing you can't name yet. Beside each, write one thing you could do about it this week, or mark it as something only God can carry and let that line become your prayer. Keep the page by your bed, and when the loop starts at night, add to the list instead of arguing with it.",
+      "read": { "label": "Is Anxiety a Sin? Faith and Mental Health, on why anxiety is not a failure of faith", "href": "/life/the-anxious-mind" },
+      "tool": { "label": "The Worry Journal, five minutes before bed to name the worry, sort what's yours, and hand the rest to God", "href": "/tools/worry-journal" },
       "reflection": "What am I most afraid of beneath the daily worries, and how long have I been carrying it alone?"
     },
     {
       "n": 2,
       "focus": "The body first",
-      "why": "You are not a mind in a jar. Anxiety lives in a body, in its sleep, its food, its stillness, and a body run ragged will hand the mind nothing but alarms. Before the deeper work, the body needs basic mercy. This is not self improvement. It is stewardship of the one body you were given.",
-      "practice": "Each day, take a ten minute walk outside and keep a set bedtime. That is the whole practice. Treat both as appointments you do not cancel on yourself.",
-      "read": { "label": "The Body and the Rhythms, on sleep, movement, and rest as obedience", "href": "/life/the-body-and-the-rhythms" },
-      "tool": { "label": "The Verse Finder, look up what Scripture says about sleep and rest", "href": "/tools/verse-finder" },
-      "reflection": "How have I been treating my body, and what is it telling me that I have refused to hear?"
+      "why": "You're not a mind in a jar. Anxiety lives in a body, in its sleep, its food, and its breathing, and doctors are right that much of it is physical: your body has an alarm built to protect you, and in anxiety it rings when there's no fire, or keeps ringing after the fire is out. Sleep, illness, hormones, medications, caffeine, and alcohol all turn it up or down, which is one reason to see a doctor, and chest pain, trouble breathing, or fainting that no one has checked needs care right away, with a call to 911 if you need it. Scripture isn't embarrassed by the body. When Elijah lay down spent under a broom tree, God let him sleep and fed him, twice, before the word of the LORD came to him with a question (1 Kings 19:5-9).",
+      "practice": "Each day, take a ten-minute walk outside in daylight, eat real meals, and keep a set bedtime with the phone charging outside the bedroom. When the alarm rises, slow your breathing and make each breath out longer than the breath in. Notice honestly what caffeine and alcohol do to your nerves, and if you've been leaning on alcohol or pills to calm down or sleep, tell your doctor this week; stopping suddenly on your own can be dangerous.",
+      "read": { "label": "How to Sleep Like a Creature Who Trusts God, on bedtime, the phone, and when sleeplessness needs a doctor", "href": "/how-tos/body-how-to-sleep-like-a-creature" },
+      "tool": { "label": "1 Kings 19 in the Study Bible, where God gives the exhausted Elijah sleep and food before the word of the LORD comes to him", "href": "/study/bible/1-kings/19" },
+      "reflection": "How have I been treating my body, and what has it been telling me that I've refused to hear?"
     },
     {
       "n": 3,
       "focus": "The practice of lament",
-      "why": "The Bible does not tell anxious people to cheer up. It gives them psalms that argue, weep, and accuse, prayed by people whose fear was real. Lament is the prayer language of those who refuse to lie to God. This week you borrow those words until you find your own.",
-      "practice": "Each day, pray one psalm of lament aloud, Psalm 13 is a good place to start. Five minutes. Let the psalmist say the things you were taught not to say.",
-      "read": { "label": "How to Practice Lament, the prayer the church forgot", "href": "/how-tos/ss-how-to-practice-lament" },
-      "tool": { "label": "Scripture Memory, learn one line of a lament psalm by heart", "href": "/tools/scripture-memory" },
+      "why": "The Bible doesn't tell anxious people to cheer up. It gives them psalms that argue, weep, and plead, prayed by people whose fear was real and kept by God for every frightened person who runs out of words. Psalm 55, which bears David's name, is a prayer of terror and betrayal. The one praying wants wings to fly away and never gets them. What he gets is a hearing: “Morning, noon, and night, I cry out in distress, and He hears my voice” (Psalm 55:17). If someone at home hurts or threatens you, getting to safety is not a failure of faith; the Domestic Violence Hotline on Find Help can help. Lament is how people who refuse to lie to God keep talking to him, and it doesn't wait for you to feel anything before it counts as prayer. This week you borrow their words until you find your own.",
+      "practice": "Each day, pray one psalm of lament aloud as your own prayer: Psalm 55 one day, Psalm 13 another, Psalms 42 and 43 another. Five minutes is enough. Don't tidy yourself up first, because the psalmists didn't. If your mind keeps turning over things too big for it, end with Psalm 131, three short verses about a soul quieted like a weaned child with its mother.",
+      "read": { "label": "How to Practice Lament, on bringing God your honest complaint in the shape the Psalms give it", "href": "/how-tos/ss-how-to-practice-lament" },
+      "tool": { "label": "Psalm 55 in the Study Bible, a frightened, betrayed man's prayer for the wings of a dove", "href": "/study/bible/psalms/55" },
       "reflection": "What have I been too polite to say to God, and what has the politeness cost me?"
     },
     {
       "n": 4,
       "focus": "What the mind rehearses",
-      "why": "An anxious mind is a rehearsal hall. It runs the same disaster again and again, and every run wears the groove deeper. You cannot simply stop rehearsing, but you can notice the script, question it, and set a truer line beside it. The mind believes what it repeats.",
-      "practice": "When you catch a rehearsed fear this week, write it down, then write one sentence beside it of what is actually true, as far as you can honestly tell. Two lines, side by side.",
-      "read": { "label": "The Doubt page, because anxious minds and doubting minds rehearse in the same room", "href": "/doubt" },
-      "tool": { "label": "The Emotional Health tool, to see the patterns underneath the rehearsals", "href": "/tools/emotional-health" },
-      "reflection": "What story does my anxiety keep telling me, and who would I be if I stopped believing it without checking?"
+      "why": "An anxious mind is a rehearsal hall. Worry picks up a problem, turns it over, finds no handle, sets it down, and picks it up again, and the same loop can run backward, replaying the thing you said or should have done. It feels responsible, as if thinking about a danger were the same as doing something about it, but the loop rarely produces a decision. It produces another lap. Counselors add that the mind learns to scan for danger, that avoiding what you fear teaches the fear it was right, and that hard histories can set the alarm to go off sooner. You usually can't stop a thought by fighting it head-on, and arguing with a worry tends to feed it. What you can change is what you do with it.",
+      "practice": "When you catch the loop this week, write the worry down and ask whether there's one thing you can do about it in the next seven days. If there is, put it on the calendar. If there isn't, hand it to God in one plain sentence, then give your mind something else to hold: a walk, work with your hands, or a conversation with someone who isn't worried.",
+      "read": { "label": "Anxiety: A Bible Study on Worry and the Peace of Christ, five sessions beginning with what anxiety actually is", "href": "/studyguides/anxiety" },
+      "tool": { "label": "The Emotional Health Self-Check, fifteen questions on your inner life, from naming what you feel to rest", "href": "/tools/emotional-health" },
+      "reflection": "What story does my anxiety keep telling me, and when did I last check whether it is true?"
     },
     {
       "n": 5,
       "focus": "Attention and the scroll",
-      "why": "Whatever you give your attention to, you are being formed by. The feed is engineered to keep an anxious mind anxious, because alarm holds attention better than peace does. This week you do not quit the phone. You simply stop letting it speak first.",
-      "practice": "Keep the phone in another room for the first thirty minutes of each day. Let the first voice your mind hears be silence, Scripture, or prayer, not the news of everything wrong everywhere.",
-      "read": { "label": "The Integrated Life, on living one life instead of a scattered one", "href": "/life" },
-      "tool": { "label": "Scripture Memory, put the verse you memorized where the scroll used to be", "href": "/tools/scripture-memory" },
+      "why": "The body was made to answer dangers it could see: a storm coming in, a stranger at the door, a sick child in the next room. Now the whole world's dangers arrive in a pocket, all day, through feeds built to hold our attention, and few things hold attention like alarm. The body rings the same bell for the screen as for the room. We know about more dangers than any people before us and can act on almost none of them, and worry lives in that gap. Whatever gets your first and last attention each day is forming you. This week you don't quit the phone. You only stop letting it speak first.",
+      "practice": "Turn off news and social media notifications for the week, and check the headlines once a day, well before evening. Keep the phone in another room for the first thirty minutes of each morning and the last hour before bed. Let the first voice your mind hears be silence, Scripture, or a short prayer. At the week's end, notice what your mind did with the room you gave it.",
+      "read": { "label": "How to Unhook From Your Screens, on giving the phone a bedtime and turning off the alerts", "href": "/how-tos/body-how-to-unhook-from-your-screens" },
+      "tool": { "label": "The Prayer Generator's morning prayers, for the first minutes you used to give the phone", "href": "/tools/prayer-generator" },
       "reflection": "What gets my first and best attention each day, and what is that attention slowly making of me?"
     },
     {
       "n": 6,
       "focus": "Prayer when fear will not lift",
-      "why": "Some fear does not leave when you pray. The honest tradition has always known this, which is why it gave us short prayers that can be breathed rather than performed. Prayer in anxiety is not a technique for calm. It is company in the dark, which is sometimes the more important thing.",
-      "practice": "Choose one breath prayer, Lord Jesus Christ, have mercy on me is the old one, and pray it slowly whenever anxiety rises. Inhale on the first half, exhale on the second. As many times a day as you need.",
-      "read": { "label": "Return to The Anxious Mind and read it again, this time as prayer", "href": "/life/the-anxious-mind" },
-      "tool": { "label": "The Prayer Generator, for the nights when no words will come", "href": "/tools/prayer-generator" },
-      "reflection": "When fear does not lift after I pray, what do I conclude about God, and is that conclusion true?"
+      "why": "Some fear doesn't leave when you pray, and that isn't proof you prayed wrong. Paul wrote “Be anxious for nothing” (Philippians 4:6) from custody, in chains for Christ, and the next verse promises that “the peace of God, which surpasses all understanding, will guard your hearts and your minds in Christ Jesus” (Philippians 4:7). A peace that surpasses understanding doesn't wait for you to reason your way into it, so you can be kept before you feel calm. When Peter began to sink, Jesus reached out and took hold of him before he said a word about his little faith (Matthew 14:31). For centuries the church has also prayed short prayers that can be breathed rather than performed, for the nights when long ones won't come.",
+      "practice": "Choose one short prayer and pray it slowly whenever anxiety rises, breathing in on the first half and out on the second, with the breath out a little longer. The church's old one is the Jesus Prayer: Lord Jesus Christ, have mercy on me. Even three words are enough: Lord, help me. Pray it as many times a day as you need. You don't have to feel calm for it to count.",
+      "read": { "label": "How to Pray When You Are Falling Apart, on groans, borrowed psalms, and one short line prayed again and again", "href": "/how-tos/ss-how-to-pray-when-falling-apart" },
+      "tool": { "label": "Scripture Memory, to learn Philippians 4:6-7 or 1 Peter 5:7 by heart for the nights you can't open a book", "href": "/tools/scripture-memory" },
+      "reflection": "When fear doesn't lift after I pray, what do I conclude about God, and is that conclusion true?"
     },
     {
       "n": 7,
-      "focus": "Telling one person",
-      "why": "Anxiety isolates, and isolation feeds anxiety, and the loop tightens quietly for years. The loop breaks the same way it formed, one relationship at a time. You do not need an audience. You need one person who knows, because a carried weight shared is a different weight.",
-      "practice": "Each day, pray by name for one trusted person, a friend, a pastor, a sibling. Before the week ends, tell that person in plain words what you have been carrying. One conversation. That is the practice.",
-      "read": { "label": "Friendship Against Isolation, on why nobody heals alone", "href": "/life/friendship-against-isolation" },
-      "tool": { "label": "The Help page, if telling one person shows you it is time to tell a professional", "href": "/help" },
+      "focus": "Telling one person, and making the call",
+      "why": "Anxiety grows in hiding, and anxious people often hide it because they feel like a burden. The loop tends to break the way it formed, one relationship at a time. You don't need an audience; you need one person who knows. And if the worry has been steady for weeks, or it's taking your sleep, your work, or your joy, one of the people who knows should be a doctor or a licensed counselor. A doctor can check whether something physical is feeding the alarm and talk with you about treatment; a counselor can teach your mind new habits for the loop. If a doctor recommends medication, taking it is not faithlessness, any more than wearing glasses is; just don't start, stop, or change one on your own. Going is an act of faith in a God who works through ordinary means.",
+      "practice": "Each day, pray by name for one person you trust: a friend, a pastor, a sibling, your spouse. Before the week ends, tell them plainly that you've been more anxious than you've let on and don't want to carry it alone, and ask them to check on you. If there's no one to tell, say that to a doctor or a pastor. If the worry has lasted for weeks, call this week and book a visit with your doctor or a licensed counselor.",
+      "read": { "label": "I can't stop worrying, the care page these weeks walk, with the signs that call for a doctor and what to say when you call", "href": "/help/anxiety" },
+      "tool": { "label": "Mental Health: A Bible Study on the Weight You Carry, whose second session takes on the false choice between faith and help", "href": "/studyguides/mental-health" },
       "reflection": "What keeps me from being known, and what am I protecting by staying hidden?"
     },
     {
       "n": 8,
       "focus": "A sustainable rule of life",
-      "why": "Eight weeks of practices mean little if they end at week eight. A rule of life is not a regimen. It is a trellis, a few chosen supports that hold a life up so it can grow in one direction over years. This week you keep what helped and let the rest go without guilt.",
-      "practice": "Write on a card the two or three practices from these weeks that actually helped. Do them each day. That card is your rule, small enough to keep, strong enough to hold.",
-      "read": { "label": "How to Build a Rule of Life, on the trellis these weeks were pointing toward", "href": "/how-tos/sf-how-to-build-a-rule-of-life" },
-      "tool": { "label": "The Whole Life Assessment, take stock of where you are now", "href": "/life/assessment" },
+      "why": "Eight weeks of practices mean little if they end at week eight. A rule of life, the church's old name for a pattern of chosen practices, holds a life up over years the way a trellis holds a vine. Keep yours small, because it has to survive ordinary weeks. And let it carry the deepest thing these weeks have pointed toward. Under a great deal of worry lies the belief that everything depends on you, that someone has to hold the world together tonight and it has to be you. Scripture says of Christ that “in Him all things hold together” (Colossians 1:17). Someone is holding the world together tonight, and it was never supposed to be you.",
+      "practice": "Write on a card the two or three practices from these weeks that actually helped, whether the page by the bed, the walk, the psalm, the breath prayer, or the phone in another room. Keep them each day this week and let the rest go without guilt. Show the card to one person and ask them to check on you in a month.",
+      "read": { "label": "What Does Sleep Teach Us About Trusting God? On the nightly limit that admits the world goes on without you", "href": "/life/sleep-and-limits" },
+      "tool": { "label": "The Rule of Life Builder, to choose the few practices you'll keep after week eight", "href": "/tools/rule-of-life" },
       "reflection": "What few practices will I still be keeping a year from now, and who will I ask to keep me honest about them?"
     }
   ]

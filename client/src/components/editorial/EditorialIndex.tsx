@@ -92,7 +92,8 @@ export function EditorialIndex({
         const rowCls = !it.thumb ? "ed-row" : thumbSide === "right" ? "ed-row ed-row--thumb-right" : "ed-row ed-row--thumb";
         return (
           <li key={`${it.href}|${it.title}`}>
-            {it.external ? (
+            {it.external || /^https?:\/\//i.test(it.href) ? (
+              // Another website: the app's router cannot navigate there, so a plain link that opens it.
               <a className={rowCls} href={it.href} target="_blank" rel="noopener noreferrer">{body}</a>
             ) : it.href.startsWith("#") || /\.(pdf|epub|docx?)($|[?#])/i.test(it.href) ? (
               // In-page anchors and files (a printable PDF) are plain links, not app routes.

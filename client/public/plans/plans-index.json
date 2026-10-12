@@ -16,6 +16,11 @@
       "blurb": "An eight week plan from James Bell for the believer whose questions have grown heavy. Doubt named without shame, the doubters Scripture kept, the old creed, and practices that hold you while a question stays open."
     },
     {
+      "slug": "infertility",
+      "title": "Eight Weeks in the Waiting",
+      "blurb": "An eight week plan from James Bell for husbands and wives who can't have children, and anyone who longed to be a parent. Hannah's prayer, the hard days, the losses no one saw, and a hope that tells the truth."
+    },
+    {
       "slug": "suffering",
       "title": "Eight Weeks of Asking God Why",
       "blurb": "An eight week plan from James Bell for anyone asking why God would let this happen. Job, the laments, and the cross, walked slowly, with no tidy answers and no hurry."
@@ -28,12 +33,12 @@
     {
       "slug": "new-believer",
       "title": "Eight Weeks of Beginnings",
-      "blurb": "An eight week plan from James Bell for the brand new Christian. What just happened, how to read, how to pray, how to find your people, all in plain words with every old term defined."
+      "blurb": "An eight week plan from James Bell for the brand new Christian. What just happened, reading Mark, the prayer Jesus taught, a church and baptism, and the doubts that come, in plain words."
     },
     {
       "slug": "fear-of-the-future",
       "title": "Eight Weeks of Facing What Is Coming",
-      "blurb": "An eight week plan from James Bell for the fear of what is coming. The Psalms and prophets of trust read in their own setting, not as charms, and a way to live faithfully in an uncertain present."
+      "blurb": "An eight-week plan from James Bell for the fear of what is coming. The Psalms and prophets of trust read in their own setting, not as charms, and a way to live faithfully in an uncertain present."
     },
     {
       "slug": "prayer",
@@ -63,12 +68,12 @@
     {
       "slug": "deconstruction",
       "title": "Eight Weeks of Taking Your Questions Seriously",
-      "blurb": "An eight week plan from James Bell for the person pulling an inherited faith apart. Careful examination instead of a quiet exit, with honest readings, no panic, and no ambush."
+      "blurb": "An eight week plan from James Bell for the person taking apart an inherited faith: sort what you were handed, face the hard questions, and dig for what is older, with no panic and no ambush."
     },
     {
       "slug": "grief",
       "title": "Eight Weeks of Walking With Loss",
-      "blurb": "An eight week companion for grief from James Bell. Permission to mourn, lament as language, and a way to live forward without leaving them behind."
+      "blurb": "An eight-week companion from James Bell for anyone grieving a death: permission to mourn, the Psalms' language of lament, and a way to live forward without leaving them behind."
     },
     {
       "slug": "addiction",
@@ -79,6 +84,11 @@
       "slug": "pornography",
       "title": "Eight Weeks Out of Hiding",
       "blurb": "An eight week plan from James Bell for the one who can't stop looking at porn. Telling one person, your hardest hour, honest accountability, the body as a gift, and grace for the day you fall."
+    },
+    {
+      "slug": "job-loss",
+      "title": "Eight Weeks Out of Work",
+      "blurb": "An eight week plan from James Bell for anyone who has lost a job, laid off or fired. The first steps, the shame, the people at home, lament, a shape for the day, help received, the search, and work that isn't a god."
     },
     {
       "slug": "decisions",
@@ -93,7 +103,12 @@
     {
       "slug": "anxiety",
       "title": "Eight Weeks Toward a Quieter Mind",
-      "blurb": "An eight week guided plan for the anxious mind from James Bell. Small daily practices, honest readings, and prayer for the nights when fear will not lift."
+      "blurb": "An eight-week plan from James Bell for the mind that won't stop worrying: small daily practices, honest readings, and prayer for the nights when fear will not lift."
+    },
+    {
+      "slug": "anger",
+      "title": "Eight Weeks Toward a Slower Temper",
+      "blurb": "An eight-week plan from James Bell for the temper that keeps winning. Where the line falls, what anger signals and defends, the time-out, repair, anger at God, and forgiveness that isn't silence."
     },
     {
       "slug": "loneliness",
@@ -108,7 +123,7 @@
     {
       "slug": "marriage",
       "title": "Eight Weeks Toward Each Other",
-      "blurb": "An eight week guided plan for marriage from James Bell. One focus, one small daily practice, one reading, one tool, and one honest question each week."
+      "blurb": "An eight week plan from James Bell for a marriage gone cold, loud, or broken by betrayal. Safety first, honest about what we ask marriage to carry, and slow to rebuild trust."
     },
     {
       "slug": "money",
@@ -118,7 +133,7 @@
     {
       "slug": "whole-life",
       "title": "Eight Weeks Toward One Undivided Life",
-      "blurb": "An eight week plan from James Bell toward one undivided life. Prayer, rest, friendship, work, money, church, and justice gathered into a rule you can keep."
+      "blurb": "An eight week plan from James Bell for anyone who wants to grow and follow Jesus well. Ordinary practices, other people, rest, work, and a rule small enough to keep, all resting on grace."
     },
     {
       "slug": "forgiveness",

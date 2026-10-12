@@ -373,7 +373,7 @@ export const LIBRARIES = {
     [
       ["worry-log", "The Worry Journal, on paper", "A week of evenings: the worry, the one thing that is yours to do tomorrow, what is not yours to carry, and a sentence of prayer, with a page for looking back.", "/tools/worry-journal"],
       ["prayer-list", "A weekly prayer list", "Your people and needs by day of the week, with a page for prayers answered, the date, and how the answer came.", "/tools/prayer-planner"],
-      ["budget", "A monthly budget", "A month planned before it begins, starting with what you will give and save, then the rest. Not financial advice.", "/help/money"],
+      ["budget", "A monthly budget", "A month planned before it begins: what comes in, what you will give and save, and where the rest goes. Not financial advice.", "/help/money"],
       ["grief-journal", "A grief journal page", "Prompts for the days after a death: what you miss, a memory to keep, what you wish you could say, and a prayer, even an angry one.", "/help/grief"],
       ["conflict-guide", "A conversation guide for couples", "Six steps for the argument you keep having, for couples who are safe with each other, with safety first.", "/help/marriage"],
       ["referral-list", "A referral list for church leaders", "The national help lines, then room to list the counselors and services near you before anyone needs them.", "/help/refer-to-counselor"],

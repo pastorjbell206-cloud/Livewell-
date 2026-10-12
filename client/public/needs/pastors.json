@@ -1,41 +1,187 @@
 {
   "slug": "pastors",
-  "page": false,
+  "page": true,
   "rank": 22,
   "title": "I'm a pastor and I'm running on empty",
-  "summary": "For pastors near the end of themselves. Seeking help is faith, not failure.",
+  "seoTitle": "Pastor Burnout, Depression, and Thinking About Quitting",
+  "description": "For pastors running on empty, and the spouses and boards who love them: what's happening, what Scripture says, and what to do this week.",
+  "summary": "For pastors near the end of themselves, and for those who love them. Asking for help isn't a failure of faith.",
   "askedAs": [
     "pastor burnout",
-    "pastor depression",
-    "thinking about quitting ministry",
-    "pastor loneliness",
     "ministry burnout",
-    "pastor's wife"
+    "pastor depression",
+    "pastor anxiety",
+    "pastor loneliness",
+    "pastor mental health",
+    "thinking about quitting ministry",
+    "should I quit ministry",
+    "can a pastor see a counselor",
+    "pastor sabbatical",
+    "pastor marriage struggling",
+    "pastor's wife",
+    "pastor's husband",
+    "Bible verses for pastors"
   ],
   "states": [
     "carrying",
+    "helping",
     "leading"
   ],
   "sensitivity": "high",
   "crisisTopics": [
-    "suicide"
+    "suicide",
+    "abuse",
+    "substance"
   ],
+  "answer": "You're still preaching on Sundays, still answering the late-night texts and sitting in hospital rooms, and somewhere along the way you ran dry. You may be lonelier than anyone in your church would guess, and some days you think about walking away from all of it. None of that makes you a failure or a fraud. It means you've been carrying, for too long and mostly alone, more than one person can carry. Start small: sleep tonight, keep your next day off, and this week tell one person outside your congregation the truth. If you've had any thoughts of ending your life, call or text 988 now; that help and more is listed just below. And if you love a pastor, as a spouse or a church leader, part of this page is written for you.",
+  "happening": "It rarely arrives as a crisis. Sunday carries you, and on Monday you can barely get off the couch. The phone lights up and your chest tightens before you see who it is. You read Scripture all week, but mostly to find next Sunday's sermon, and you pray more often in public than alone. You smile at the door and snap at your family on the drive home, and Tuesday's critical email is still replaying at three on Friday morning. You can't remember your last full day off, and you've caught yourself looking at other jobs, or wishing you'd get sick enough that someone else would have to take over. If your thoughts have gone further, toward not wanting to be alive, call or text 988 now and tell someone.\n\nEach common explanation holds something true. The medical one remembers your body: months of short sleep and constant alertness wear anyone down, exhaustion can have physical causes, and depression is a common, treatable illness, not a verdict on your faith. Pastors aren't exempt: Charles Spurgeon, a celebrated preacher in Victorian London, warned the students he trained, in a lecture called *The Minister's Fainting Fits*, that low seasons would come to most of them, and spoke of his own. The psychological account knows that people who absorb others' pain for a living need somewhere to set it down. The spiritual account is right that a pastor can handle holy things all week and stop being fed by them; Paul's charge to the elders of Ephesus was “Keep watch over yourselves and the entire flock” (Acts 20:28), in that order.\n\nWhat each explanation leaves out is how much of this the work itself produces. Much of what a pastor carries can't be repeated to anyone, and we've let the phone decide our days. Criticism comes with the job, often secondhand, while the person in the pulpit and the person at home drift apart and the family pays the difference. And some of us are hiding something, a habit or a drink or a relationship, or a doubt we can't say from the pulpit. These tend to arrive together, which is why a week off can't fix them by itself.",
+  "scripture": {
+    "intro": "Scripture is honest about leaders who reach the end of themselves. A prophet asks to die and is given sleep and bread. Moses is told the load is too heavy for one man. Jesus pulls his tired friends away from the crowd, and Paul tells a church he had despaired of life itself. None is shamed for being spent, and none is left there.",
+    "passages": [
+      {
+        "ref": "1 Kings 19:4-7",
+        "text": "... He sat down under a broom tree and prayed that he might die. “I have had enough, LORD,” he said. “Take my life, for I am no better than my fathers.” Then he lay down under the broom tree and fell asleep. Suddenly an angel touched him and said, “Get up and eat.” And he looked around, and there by his head was a cake of bread baked over hot coals, and a jar of water. So he ate and drank and lay down again. A second time the angel of the LORD returned and touched him, saying, “Get up and eat, or the journey will be too much for you.”",
+        "reading": "Elijah had just watched fire fall on Mount Carmel (1 Kings 18:38). When the queen threatened his life, he ran, left his servant behind, and in the wilderness asked God to take his life. God doesn't argue or tell him to pray harder. He lets him sleep and sends bread, twice. Only then does God ask, “What are you doing here, Elijah?” (1 Kings 19:9), correct his belief that he alone was left, and give him Elisha. If you've prayed anything like Elijah's prayer, tell someone today and call or text 988. Before God gave his prophet anything to do, he gave him sleep and a meal he didn't have to make."
+      },
+      {
+        "ref": "Exodus 18:17-18, 23",
+        "text": "But Moses’ father-in-law said to him, “What you are doing is not good. Surely you and these people with you will wear yourselves out, because the task is too heavy for you. You cannot handle it alone. ... If you follow this advice and God so directs you, then you will be able to endure, and all these people can go home in peace.”",
+        "reading": "Moses judged the people from morning until evening, and his reason was a holy one: “Because the people come to me to inquire of God” (Exodus 18:15). His father-in-law Jethro, the priest of Midian, watched for a day and called it not good; holy work didn't make the arrangement good. Jethro's counsel was to share the load with capable, trustworthy men who feared God, so only the hardest cases came to Moses. Later Moses said it himself, “I cannot carry all these people by myself” (Numbers 11:14), and God gave him seventy elders to share it. Being needed by everyone can feel like faithfulness. Scripture's word for it is too heavy."
+      },
+      {
+        "ref": "Mark 6:30-32",
+        "text": "Meanwhile, the apostles gathered around Jesus and brought Him news of all they had done and taught. And He said to them, “Come with Me privately to a solitary place, and let us rest for a while.” For many people were coming and going, and they did not even have time to eat. So they went away in a boat by themselves to a solitary place.",
+        "reading": "The Twelve had just come back from their first mission (Mark 6:7-13), so crowded by people coming and going that they had no time even to eat, and the one who had sent them out called them away. Their rest didn't go as planned: the crowd got there first, and Jesus had compassion on them, taught them, and fed five thousand (Mark 6:33-44). But that evening he sent the disciples ahead and went up on the mountain to pray (Mark 6:45-46). A day off swallowed by a funeral isn't a failure, and it isn't a reason to stop taking them. Jesus kept returning to the quiet place, and he invited his tired workers along."
+      },
+      {
+        "ref": "2 Corinthians 1:8-9",
+        "text": "We do not want you to be unaware, brothers, of the hardships we encountered in the province of Asia. We were under a burden far beyond our ability to endure, so that we despaired even of life. Indeed, we felt we were under the sentence of death, in order that we would not trust in ourselves, but in God, who raises the dead.",
+        "reading": "Paul wrote this to a church where some questioned his ministry (2 Corinthians 10:10), and he told them about one of its hardest stretches. He doesn't say what happened in Asia, only that it was beyond his strength and came so he would trust “God, who raises the dead” (2 Corinthians 1:9). Later in the same letter he names “the pressure of my concern for all the churches” (2 Corinthians 11:28), and the answer he was given when he pleaded for his thorn to be removed: “My grace is sufficient for you, for My power is perfected in weakness” (2 Corinthians 12:9). The apostle didn't pretend to be stronger than he was, and the gospel didn't need him to be."
+      }
+    ]
+  },
+  "whyHard": "The usual explanation for a pastor who runs out is personal: you didn't keep boundaries, didn't rest, didn't pray enough. Some of that is true, and I'm a pastor, so I can't hear it as a charge against somebody else. But it treats a pattern as a private failure and leaves the shape of the work untouched.\n\nScripture doesn't picture one person holding a congregation together. When the apostles were pulled between the daily care of widows and their own calling, they had the church choose seven to serve, so they could devote themselves “to prayer and to the ministry of the word” (Acts 6:4). Paul and Barnabas “appointed elders for them in each church” (Acts 14:23), and the letter of James tells believers to “confess your sins to each other” (James 5:16). The care of souls was shared, and those who gave care were meant to receive it.\n\nWe built something else. Many congregations now expect one person to preach, counsel, visit, lead, raise money, settle conflict, and answer the phone, which reaches every hour. When a church becomes a service its members choose and pay for, the pastor becomes its provider, and providers get reviewed. Meanwhile the family learns, whatever we preach on Sunday, what comes first. Eugene Peterson, who pastored one congregation in Maryland for nearly thirty years, argued in an essay called *The Unbusy Pastor* that our busyness usually comes from vanity, the wish to look important, or from laziness, letting others fill the calendar so we never have to decide what we're called to do. For Peterson, that was to pray, to preach, and to listen. Availability can be love. It can also be the easiest way to feel needed while the slow, hidden work goes undone.\n\nThe same arrangement makes pastors lonely. Friendship inside a congregation gets complicated when you know things you can't say, hold authority over the people you'd befriend, and may one day have to correct them. Dietrich Bonhoeffer wrote *Life Together* in 1938, out of the shared life of a seminary for young pastors that the Gestapo had closed the year before. He saw that a fellowship of the devout can leave no room for anyone to be a sinner, so everyone hides and stays alone with their sin, and that confession to a brother is where the isolation breaks. A pastor whose living depends on seeming well has every reason to hide, which is why secrets grow in the dark, and why a fall can look sudden to everyone but the one who was hiding it.\n\nA skeptic might say this proves the job is an act: pay someone to look unshakable about God in public, and sooner or later the strain shows. There's truth in that, and we've rewarded the performance more often than we should. But a show of strength is exactly what the New Testament doesn't ask of its ministers. Paul wrote that he and his fellow workers carried their treasure in jars of clay, “to show that this surpassingly great power is from God and not from us” (2 Corinthians 4:7). A church that needs its pastor to be indispensable has asked for something only Christ can be, and a pastor who agrees, as many of us have, has taken a job that was never open. Your church already has a Savior.",
+  "thisWeek": {
+    "intro": "None of this gets fixed in a week, and you don't have to fix it alone. If you've had thoughts of ending your life, start instead with the help near the top of this page: call or text 988 today.",
+    "steps": [
+      {
+        "title": "Sleep, and decide nothing big yet",
+        "body": "Go to bed at a decent hour tonight, with your phone outside the bedroom; a psalm says God “gives sleep to His beloved” (Psalm 127:2). Don't write the resignation letter or the angry reply this week. Exhaustion distorts what you see, and a decision made in your worst week deserves a second look after some rest."
+      },
+      {
+        "title": "Keep your next day off, all of it",
+        "body": "Take a whole day, not a morning squeezed between appointments. Turn off notifications, name one leader as the contact for emergencies, and do something that has nothing to do with church. If you don't have a regular day off, ask your board for one this week. Resting isn't laziness here. It's trusting Christ to keep his church for a day without you."
+      },
+      {
+        "title": "Tell one friend outside your church",
+        "body": "Choose someone who doesn't depend on you, like a pastor in another town or an old friend, and say it plainly: *I'm not okay, and I haven't told anyone.* If you're married, tell your spouse in words, too. And if you're hiding something, this is the person to tell, and this is the week."
+      },
+      {
+        "title": "Tell one elder or board member the truth",
+        "body": "Ask the leader you trust most for an hour, and tell them how tired you are, what it's costing you, and what you need: help with the load, a protected day off, or time away. Do it while it's still a conversation and not a crisis. You don't owe anyone every detail, but your leaders can't protect what they can't see. If no one on your board is safe to tell yet, start with the friend and the counselor."
+      },
+      {
+        "title": "See a doctor, then a counselor",
+        "body": "Make a doctor's appointment this week and be honest about sleep, appetite, mood, drinking, and medication; exhaustion and depression have physical sides. Then book a first appointment with a licensed counselor outside your congregation's circles, even if that means the next town. You've sent others for help, and you're allowed to go."
+      },
+      {
+        "title": "Start the sabbatical conversation",
+        "body": "If you've served for years without an extended rest, ask your board to discuss a sabbatical, weeks or months away to rest and be fed. Bring a plan for who will preach and cover pastoral care, so the talk can be about how rather than whether. If you need medical leave instead, ask for that plainly; it's a different request."
+      }
+    ]
+  },
+  "moreHelp": {
+    "body": "Pastors are usually the ones making referrals, which can make it hard to see when you need one. This becomes a matter for a doctor and a licensed counselor when the heaviness lasts, spreads into your sleep, appetite, and home, or turns toward death, or when you're relying on alcohol, pills, or a screen to get through. Depression is treatable, and taking medication a doctor recommends isn't a failure of faith.\n\nFor a counselor, ask your doctor, check your insurer's directory, or ask a pastor at another church whom they trust. If you want a Christian counselor, ask for one, and confirm any counselor's license with your state licensing board. You don't have to be suicidal to call or text 988; it answers for anyone in crisis. If you're thinking about ending your life, don't wait for an appointment: call or text 988 now, or 911 if you're in danger.",
+    "signs": [
+      "You've had thoughts of ending your life, or that your family or church would be better off without you. Call or text 988 now.",
+      "The heaviness has lasted most of the day, nearly every day, for two weeks or more, or rest no longer touches it.",
+      "You're drinking, using something, or turning to pornography to get through the week. For drinking or drugs, SAMHSA's helpline near the top of this page can point you to treatment.",
+      "You're hiding a relationship, or you've crossed a line with someone in your care. Stop, and get outside help; anyone harmed comes first.",
+      "You're afraid of someone at home. Reach the Domestic Violence Hotline near the top of this page, and don't try couples counseling while you're afraid.",
+      "Your spouse is afraid of you. The Domestic Violence Hotline also talks with people worried about their own behavior; ask about a program for people who have harmed a partner, not anger management or couples counseling.",
+      "Your children are afraid of you, or have been hurt. Make sure they're safe, and see a doctor or counselor this week."
+    ],
+    "firstCall": "You don't need a speech. To a doctor you might say, *I'm a pastor. I've been exhausted and low for about three months, I'm not sleeping, and it's affecting my work and my family.* Be honest about drinking and medication. Ask a counselor whether they're licensed in your state, whether they take your insurance, and how they protect the privacy of someone known locally. If you've had thoughts of ending your life, say so plainly.",
+    "cost": "Cost shouldn't be the reason you wait. Ask your insurer which counselors are in network, and ask about sliding-scale fees. Community mental health centers and university training clinics often charge less, and if your church belongs to a denomination, ask whether it offers counseling for clergy. Ask your board, too; a church that asks its pastor to carry its crises can help pay for the care that makes it possible. The 988 Lifeline is free."
+  },
+  "helping": {
+    "body": "If you're married to a pastor, you probably saw this first: the flatness at dinner, the phone at the table, the vacation spent answering email. You can't make your spouse get help, but you can say plainly what you see: *You're not sleeping, you're not here even when you're home, and I'm worried about you.* Offer to make the doctor's appointment together. And if the trouble at home is fear of your spouse, that isn't ministry stress, and no church's reputation is worth your safety; the Domestic Violence Hotline near the top of this page can help you plan.\n\nIf you're a church member, know that your pastor carries things for this congregation that you may never see. Care for them without making them a project: don't hover or discuss how they seem, don't send criticism through their family, send a note that asks for nothing, and protect their day off by not needing them on it.\n\nIf you're an elder or board member, put the day off, vacation, and a sabbatical policy in writing, check that they're taken, budget for counseling, and take real work off your pastor's desk. And when your pastor tells you the truth, guard it; a disclosure used later in a dispute or an evaluation betrays the pastor who trusted you and teaches the next one to stay silent. Guarding a confidence never means hiding harm, though: if anyone has been hurt, their safety comes first, and harm to a child must be reported.",
+    "say": [
+      "How are you, really? You don't have to be our pastor right now.",
+      "Take the whole day off. We'll cover it.",
+      "What can we take off your plate this month?",
+      "Are you thinking about suicide?",
+      "Thank you for telling us. We'll help you carry this.",
+      "We'd rather have you healthy in ten years than here every Sunday."
+    ],
+    "dontSay": [
+      "You of all people should know better.",
+      "Must be nice to work one day a week.",
+      "Pastors don't get days off.",
+      "Just pray through it.",
+      "Can I tell you what people are saying?"
+    ],
+    "next": "Check back within a week, and keep checking; one conversation won't undo years of strain. If your pastor talks about wanting to die, ask directly, *Are you thinking about suicide?*, stay with them, and call or text 988 together. If a pastor's spouse tells you they're afraid at home, believe them, don't tell the pastor what you heard, ask how it's safe to reach them, since phones and messages may be read, and help them reach the Hotline."
+  },
+  "prayer": "Lord, I'm more tired than I've told anyone. I've spoken of your rest on Sundays while I had none, and I've carried other people's griefs while hiding my own, even from you.\n\nForgive me for confusing being needed with being faithful, and for acting as if your church would fall without me. Forgive me for what my family has paid. Bring what I've hidden into the light, and give me the nerve to say it out loud.\n\nYou let Elijah sleep and fed him before you asked him anything. When Moses couldn't carry your people alone, you gave him others to carry them with him. Your Son took his tired friends to a quiet place. Do that for me: give me sleep, and bread, and one friend who will tell me the truth.\n\nIf I'm to stay, give me strength to stay. If I'm to go, give me courage to go well. Either way, keep me yours, because I was yours before I was anyone's pastor.\n\nAmen.",
   "kit": {
-    "read": [
+    "plan": {
+      "href": "/plans/work-burnout",
+      "label": "Eight Weeks of Learning to Stop"
+    },
+    "selfCheck": {
+      "href": "/tools/emotional-health",
+      "label": "Emotional Health Self-Check"
+    },
+    "tool": {
+      "href": "/tools/rule-of-life",
+      "label": "Rule of Life Builder"
+    },
+    "guides": [
       {
         "href": "/studyguides/pastoral-health",
-        "label": "Pastoral Health: A Study for Leaders and Those Who Love Them",
-        "kind": "Study guide"
+        "label": "Pastoral Health: A Study for Leaders and Those Who Love Them"
       },
+      {
+        "href": "/studyguides/character-before-competence",
+        "label": "Character Before Competence: A Church Leadership Study"
+      }
+    ],
+    "read": [
       {
         "href": "/wisdom/exhaustion",
         "label": "Exhaustion and Burnout",
         "kind": "Wisdom"
       },
       {
-        "href": "/life/ambition-and-rest",
-        "label": "Is Ambition a Sin? Drive, Hustle, and Rest",
+        "href": "/how-tos/wm-how-to-rest-when-you-feel-you-cannot-stop",
+        "label": "How to Rest When You Feel You Cannot Stop",
+        "kind": "How-to"
+      },
+      {
+        "href": "/life/the-heavy-mind",
+        "label": "What Does the Bible Say About Depression?",
         "kind": "Life"
+      },
+      {
+        "href": "/how-tos/ss-how-to-keep-going-through-depression",
+        "label": "How to Keep Going Through Depression",
+        "kind": "How-to"
+      },
+      {
+        "href": "/how-tos/rel-how-to-build-deep-friendships-as-an-adult",
+        "label": "How to Build Deep Friendships as an Adult",
+        "kind": "How-to"
+      },
+      {
+        "href": "/how-tos/sf-how-to-confess-sin-and-walk-in-repentance",
+        "label": "How to Confess Sin and Walk in Repentance",
+        "kind": "How-to"
+      },
+      {
+        "href": "/wisdom/people-pleasing",
+        "label": "People-Pleasing and the Fear of Man",
+        "kind": "Wisdom"
       },
       {
         "href": "/life/rest-and-the-sabbath",
@@ -43,10 +189,140 @@
         "kind": "Life"
       },
       {
+        "href": "/life/ambition-and-rest",
+        "label": "Is Ambition a Sin? Drive, Hustle, and Rest",
+        "kind": "Life"
+      },
+      {
+        "href": "/downloads/tools/first-response-letter.pdf",
+        "label": "When someone says they are not safe at home: a one-page first response for church leaders (PDF)",
+        "kind": "Tool"
+      },
+      {
         "href": "https://pastorsconnectionnetwork.com",
-        "label": "The Pastors Connection Network, where the pastors' material now lives",
+        "label": "The Pastors Connection Network, founded by James Bell (a separate website)",
         "kind": "Page"
       }
     ]
+  },
+  "faq": [
+    {
+      "q": "Can a pastor see a counselor?",
+      "a": "Yes, and there's no shame in it; it's the counsel you'd give anyone in your church carrying what you carry. Choose someone licensed and outside your congregation's circles, and ask at the start how they protect your privacy and where confidentiality ends. *Christian counselor* isn't a credential, so ask about the license either way, and ask how they work with a client's faith."
+    },
+    {
+      "q": "Should I quit the ministry?",
+      "a": "I can't answer that for you, and I'd be wary of anyone who answered it quickly. Some calls do change, and leaving can be faithful: your gifts may belong somewhere else, or staying may cost your marriage, your health, or your integrity. But exhaustion can feel like a call ending when it's a body and soul asking for rest. So don't decide in your worst month. Sleep, see a doctor, tell your board the truth, and take real time off; if the pull to leave is still there when you're rested, take it seriously then. If what's underneath is doubt, start with [I'm not sure I believe anymore](/help/doubt). And if the wish to leave has turned into not wanting to be alive, call or text 988 now."
+    },
+    {
+      "q": "Should a pastor who needs time away step down?",
+      "a": "Faithful churches answer this differently, and the creeds don't settle it. Some hold that a pastor who can't shepherd for a long or uncertain season should step down: elders are charged to “be shepherds of God's flock that is among you” (1 Peter 5:2), a flock can't wait indefinitely, and stepping down lets a pastor heal without a pulpit pulling them back too soon. Their comfort is that a call to Christ outlives any title. Others hold that illness and exhaustion call for leave rather than resignation, since 1 Timothy 3 asks for character, not unbroken health; after Elijah slept and ate, God sent him back: “Go back by the way you came” (1 Kings 19:15). Their comfort is that a church can carry its shepherd for a season. Both agree the board must know the truth, and that moral failure is a separate question."
+    },
+    {
+      "q": "How much should I tell my congregation?",
+      "a": "Pastors who love their people disagree here. Some believe in telling the congregation plainly. Paul told the Corinthians about hardships that made him despair even of life, and counted on their prayers (2 Corinthians 1:8-11); openness breaks the myth of a pastor who never struggles and frees members who suffer in silence. Their comfort is that your people can pray for what they know. Others believe in telling the elders everything and the congregation simply, enough to understand an absence and to pray, since a pastor's crisis can frighten the vulnerable and feed gossip, and a family deserves privacy. There is “a time to be silent and a time to speak” (Ecclesiastes 3:7). Their comfort is that discretion isn't hypocrisy. Both agree that no one should be lied to, and that the board needs the whole story."
+    },
+    {
+      "q": "I'm married to a pastor, and I'm struggling too. Where do I turn?",
+      "a": "You may be carrying more than anyone sees: criticism meant for your spouse, a calendar built around other people's emergencies, friendships complicated by the role, and no pastor of your own to tell. It isn't disloyal to say so. Find one friend outside the church you can be honest with, and a counselor if you need one; you're allowed to be a church member rather than unpaid staff. If you're worried your spouse might harm themselves, ask them directly whether they're thinking about suicide, and call or text 988 together. If you're afraid of your spouse, the Domestic Violence Hotline near the top of this page can help you plan for safety."
+    },
+    {
+      "q": "I'm a pastor and I'm hiding a sin. What should I do?",
+      "a": "Tell someone this week, specifically and out loud. Proverbs is plain about it: “He who conceals his sins will not prosper, but whoever confesses and renounces them will find mercy” (Proverbs 28:13). Start with one person you trust outside your church, or a counselor. For an addiction, get help now; [I can't stop drinking or using](/help/addiction) and [I can't stop looking at porn](/help/pornography) are places to begin. If you've harmed someone, especially someone in your care, it isn't yours to manage quietly: their safety and healing come first, and harm to a child must be reported to the police or child protective services. What this means for your ministry is a question faithful churches answer differently. Tonight's question is whether you'll stop hiding."
+    }
+  ],
+  "related": [
+    "refer-to-counselor",
+    "work-burnout",
+    "empty",
+    "loneliness",
+    "marriage",
+    "church-hurt"
+  ],
+  "slots": [
+    {
+      "section": "whyHard",
+      "note": "After the paragraph on Eugene Peterson and availability: as a pastor, James could add, in his own words, how he decides what gets his time, guards his own day off, or where he takes his own load. Nothing about his habits, health, or counseling is assumed."
+    },
+    {
+      "section": "whyHard",
+      "note": "James came to faith from atheism and was raised without a father. The Pastoral Health study guide once said of him that these taught him to earn love until he was hollow; the integrity sweep cut that line as unverified (docs/grow/integrity/ledger-study-guides.md). If it is true and he wants it told, a sentence or two in his own words would deepen the availability paragraph. The page stands without it."
+    },
+    {
+      "section": "thisWeek",
+      "note": "At Start the sabbatical conversation: if First Baptist Church of Fenton has a day-off or sabbatical policy James is willing to offer as a model, he could describe it in his own words. Nothing is assumed."
+    },
+    {
+      "section": "helping",
+      "note": "James has five sons. If he wishes, a sentence in his own words on how he guards his family from what ministry can cost them, beside the board paragraph or the line in whyHard that the family learns what comes first. No story is written for him."
+    },
+    {
+      "section": "faq",
+      "note": "Should a pastor who needs time away step down: where James lands, in his own words, with the tradition it comes from and the strongest objection he hasn't fully answered. The answer states both views, each with a verse and a comfort, and lands nowhere."
+    },
+    {
+      "section": "faq",
+      "note": "How much should I tell my congregation: where James lands, in his own words. The answer states both views, each with a verse and a comfort, and lands nowhere."
+    },
+    {
+      "section": "kit",
+      "note": "James founded the Pastors Connection Network. The page says nothing about its programs or services; if he wants, he can say in his own words what a pastor who reads this page will find there, and whether the page should point to it more directly than the Go deeper link."
+    }
+  ],
+  "sources": [
+    {
+      "claim": "Spurgeon's lecture The Minister's Fainting Fits, given to the students he trained for ministry, says that fits of depression come over most of them and speaks of his own.",
+      "cite": "C. H. Spurgeon, Lectures to My Students, Lecture 11, The Minister's Fainting Fits (cited already on the empty page). Web search and direct fetches were unavailable for the second pass; re-open the source before release.",
+      "url": "https://www.monergism.com/content/ministers-fainting-fits"
+    },
+    {
+      "claim": "Eugene Peterson pastored one congregation, Christ Our King Presbyterian Church in Bel Air, Maryland, for nearly thirty years. In his essay The Unbusy Pastor he argued that a pastor's busyness usually comes from vanity (wanting to appear important) or laziness (letting others decide what he will do instead of deciding himself), and named the pastor's proper work as praying, preaching, and listening. The page paraphrases and quotes nothing, and states no dates.",
+      "cite": "Eugene H. Peterson, The Unbusy Pastor, in The Contemplative Pastor: Returning to the Art of Spiritual Direction. From the writer's and reviewer's knowledge; confirm the essay's argument and the length of the pastorate. Web search and direct fetches were unavailable for the second pass; re-open the source before release.",
+      "url": "https://en.wikipedia.org/wiki/Eugene_H._Peterson"
+    },
+    {
+      "claim": "Bonhoeffer wrote Life Together in 1938 (published 1939) out of the common life of the Confessing Church's preachers' seminary at Finkenwalde, which the Gestapo closed in 1937. In its chapter on confession he observes that the pious fellowship permits no one to be a sinner, so each hides his sin and remains alone with it, and that confession to a brother breaks through to community. The page paraphrases and quotes nothing.",
+      "cite": "Dietrich Bonhoeffer, Life Together (Gemeinsames Leben, 1939), chapter 5, Confession and Communion. The writing and publication dates were confirmed for the church-hurt page; the 1937 closure and the chapter's argument are ordinary, well-established knowledge kept from memory. Web search and direct fetches were unavailable for the second pass; re-open the source before release.",
+      "url": "https://en.wikipedia.org/wiki/Life_Together"
+    },
+    {
+      "claim": "Depression is a common and treatable condition; its symptoms last most of the day, nearly every day, for at least two weeks.",
+      "cite": "National Institute of Mental Health, Depression (cited already on the empty and work-burnout pages). Web search and direct fetches were unavailable for the second pass; re-open the source before release.",
+      "url": "https://www.nimh.nih.gov/health/publications/depression"
+    },
+    {
+      "claim": "Asking someone directly whether they are thinking about suicide is recommended; asking does not cause or increase suicidal thoughts.",
+      "cite": "National Institute of Mental Health, Frequently Asked Questions About Suicide (cited already on the empty and work-burnout pages). Web search and direct fetches were unavailable for the second pass; re-open the source before release.",
+      "url": "https://www.nimh.nih.gov/health/publications/suicide-faq"
+    },
+    {
+      "claim": "You do not need to be suicidal to contact 988; it also serves people in emotional distress or crisis.",
+      "cite": "SAMHSA, 988 Frequently Asked Questions (cited already on the empty page). Web search and direct fetches were unavailable for the second pass; re-open the source before release.",
+      "url": "https://www.samhsa.gov/mental-health/988/faqs"
+    },
+    {
+      "claim": "The National Domestic Violence Hotline does not recommend couples counseling with an abusive partner.",
+      "cite": "National Domestic Violence Hotline, Should I Go to Couples Therapy With My Abusive Partner? (cited already on the church-hurt, refer-to-counselor, and anger pages). Web search and direct fetches were unavailable for the second pass; re-open the source before release.",
+      "url": "https://www.thehotline.org/resources/should-i-go-to-couples-therapy-with-my-abusive-partner/"
+    },
+    {
+      "claim": "Hotline advocates talk with people who think they may be hurting their partner and refer them to resources in their area.",
+      "cite": "National Domestic Violence Hotline, Am I Hurting My Partner? (help for abusive partners), as cited on the anger page from search excerpts. Web search and direct fetches were unavailable for the second pass; re-open the source before release.",
+      "url": "https://www.thehotline.org/support-others/help-for-abusive-partners/"
+    },
+    {
+      "claim": "The Hotline does not recommend anger management or couples counseling for people who abuse a partner, and points them instead to intervention programs for abusive behavior.",
+      "cite": "National Domestic Violence Hotline, Intervention Programs for Abusive Behaviors, as cited on the anger page from search excerpts. Web search and direct fetches were unavailable for the second pass; re-open the source before release.",
+      "url": "https://www.thehotline.org/resources/intervention-programs-for-abusive-behavior/"
+    },
+    {
+      "claim": "Many states include clergy among those required to report suspected child abuse and neglect, and some require every person to report. The page says only that harm to a child must be reported (to the police or child protective services).",
+      "cite": "Child Welfare Information Gateway (U.S. Department of Health and Human Services), Clergy as Mandatory Reporters of Child Abuse and Neglect (cited already on the church-hurt and refer-to-counselor pages). Web search and direct fetches were unavailable for the second pass; re-open the source before release.",
+      "url": "https://www.childwelfare.gov/resources/clergy-mandatory-reporters-child-abuse-and-neglect/"
+    }
+  ],
+  "reviewed": {
+    "on": "2026-10-04",
+    "notes": "Second editorial pass, 2026-10-04, over the writer's pass of the same day. Web search and direct fetches were unavailable, so every entry in sources now says it must be re-opened before release. Truth: every passage and inline reference re-read in context with scripts/bsb.mjs --verses (1 Kings 18:36-46 and 19:1-21; Exodus 17:8-13 and 18:1-26; Numbers 11:10-25; Mark 6:6-46; 2 Corinthians 1:3-11, 4:7-10, 10:10, 11:28, 12:7-9; Acts 6:1-4, 14:21-23, 20:17-28; James 5:13-16; Psalm 127:1-2; 1 Peter 5:1-4; 1 Timothy 3:1-7; Proverbs 28:13; Ecclesiastes 3:7). The 2 Corinthians reading no longer calls Asia the worst stretch of Paul's ministry (the text says only that it was beyond his strength); the Exodus reading drops 'the holiest there is' and the line that leader and people were already wearing out (Jethro warns that they will); the Mark reading drops the John the Baptist clause, which did no work, and 'The rest' became 'Their rest'. Witnesses kept only as far as certain: Spurgeon's The Minister's Fainting Fits as verified for the empty page; Peterson's nearly thirty years with one Maryland congregation and The Unbusy Pastor's argument, with the paraphrase brought back to the essay (busyness from vanity, the wish to look important, or laziness, letting others decide; the work is to pray, preach, and listen), no dates on the page; Bonhoeffer's Life Together (1938, as confirmed for church-hurt), the Gestapo's 1937 closing of the seminary, and the confession chapter's argument, kept as ordinary, well-established knowledge and marked for re-checking. Care: the sign that sent a pastor whose family is afraid of him to the Hotline is now three signs: afraid of someone at home (Hotline, no couples counseling); your spouse is afraid of you (the Hotline also talks with people worried about their own behavior; a program for people who have harmed a partner, never anger management or couples counseling, as the anger page states it, with its two Hotline sources added); your children are afraid or have been hurt (their safety, a doctor or counselor this week). The board paragraph now says a weaponized disclosure betrays the pastor who made it, and that guarding a confidence never means hiding harm (anyone hurt comes first; harm to a child must be reported). A leader told by a pastor's spouse that they are afraid is told not to tell the pastor what they heard. The quitting answer ends with 988 if the wish to leave has turned into not wanting to be alive; What's going on says 988 now, not today; the spouse's answer asks directly about suicide; the board step tells a pastor with no safe board member to start with the friend and the counselor. Contested: the step-down answer let the second view rebut a disqualification claim the first never made; each now states its own case, verse, and comfort. In the disclosure answer, Proverbs 12:23 cast the open pastor as the fool who proclaims folly, a tilt against the first view; the discretion view now carries Ecclesiastes 3:7. No landing; both slots kept. Voice and repetition: the set-it-down image, the availability line, and the habit, drink, or relationship list each appeared three or four times and now appear once or twice; cut the everyone's-pastor-and-no-one's-friend cliche, the Aaron and Hur image (a third Moses picture), the summary's slogan, 'plural' after Acts 14:23 (it leaned on a polity question), and the generic he for a pastor (the page is neutral on who holds the office); the skeptic's objection now matches the reply; the body's own not-medical-advice line is cut because the page prints one under When to get more help. Length 4,203 to 4,152 after the safety additions; the step-down answer has room under its 200-word cap for James. Kit: the Pastors Connection Network label claimed the pastors' material lives there, which this page cannot verify; it now says only that James Bell founded it and that it is a separate website. The first-response printable for church leaders is added. Both study guides stay under their real titles; Pastoral Health quotes Barna and Lifeway figures and Character Before Competence says it is drawn from an unconfirmed James Bell book, and this page repeats neither. states adds helping, for spouses and boards. Flag for the editor (outside this file): CarePage passes no external flag to the Go deeper list, so the network's link renders as a wouter Link, whose click calls history.pushState with a cross-origin URL; a plain click or tap may do nothing (work-burnout has the same link). The Scripture card verse, Mark 6:31, is unchanged; no passage changed. The needs index needs a rebuild for the summary, states, and kit. Validator clean for pastors; the CarePage test passes. Read as the pastor at midnight who has thought about quitting or worse, a pastor's spouse, an elder, a licensed counselor, and the skeptic."
   }
 }

@@ -65,7 +65,7 @@ paths trace the twin.
 
 ## Free study-guide curriculum library
 
-Sixty-two complete small-group study guides, free, each a facilitator-ready
+Sixty-eight complete small-group study guides, free, each a facilitator-ready
 curriculum: five or six sessions with full teaching, discussion questions
 (with the pastoral reasoning behind each), anticipated objections answered,
 Scripture study, prayers, a leader primer, glossary, and bibliography. Every
@@ -73,9 +73,11 @@ guide ships with downloadable Leader's Guide and Participant Handout PDFs.
 Topics run from books and texts of Scripture (the Psalms, the Beatitudes, the
 parables, the Lord's Prayer, the story of the whole Bible) through doctrine
 (the creeds, the image of God, baptism and communion, the fruit of the
-Spirit) to the weight of ordinary life (marriage, parenting, singleness,
-grief, suffering, mental health, anger, money, contentment, friendship,
-hospitality, manhood, womanhood, aging and legacy).
+Spirit) and the church year (Advent, Lent) to the weight of ordinary life
+(marriage, parenting, singleness, grief, suffering, mental health, anger,
+money, contentment, friendship, hospitality, manhood, womanhood, aging and
+legacy, caring for aging parents, divorce and blended families, addiction and
+recovery, and a guide for teenagers).
 
 - Index of all guides: https://www.livewellbyjamesbell.co/studyguides
 - Each guide lives at /studyguides/{slug} with its PDFs linked on the page.

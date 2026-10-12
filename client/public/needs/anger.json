@@ -124,6 +124,10 @@
   },
   "prayer": "Lord, you are slow to anger, and I am not. You've seen the faces of the people I love when I lose my temper. I can't unsay what I said. Forgive me, and don't let me call it anything softer than it was.\n\nSearch my heart tonight, on my bed, and show me what my anger is defending. If it's my pride, my comfort, my own way, take it from me. If it's something you love, teach me to grieve it rightly and to act without wounding anyone.\n\nKeep the people in my house safe, from me if they need to be, and give me the humility to get help. Make me gentle the way your Son is gentle, strong enough not to need to win.\n\nAnd when I'm angry with you, let me say it to your face instead of walking away. You heard Job, and you reasoned with Jonah. Ask me your questions until I answer. Amen.",
   "kit": {
+    "plan": {
+      "href": "/plans/anger",
+      "label": "Eight Weeks Toward a Slower Temper"
+    },
     "selfCheck": {
       "href": "/tools/emotional-health",
       "label": "Emotional Health Self-Check"

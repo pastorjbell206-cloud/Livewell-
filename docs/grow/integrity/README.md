@@ -3,12 +3,13 @@
 The Grow libraries contained sentences that told stories about James Bell, his
 office, his congregants, his family, and his conversion that no one could
 verify, and several of them contradicted each other. CLAUDE.md's first rule
-for content is never to fabricate, so two sweeps generalized or cut them:
+for content is never to fabricate, so three sweeps generalized or cut them:
 
 | Ledger | Libraries | Changes |
 |---|---|---|
 | `ledger-study-guides.md` | the 62 study guides | 1,163 (829 generalized, 334 cut) |
 | `ledger-life-howtos-wisdom.md` | Everyday Life pages, how-to guides, wisdom topics | 195 |
+| `ledger-context-guides.md` | the 41 Reading Scripture in Context guides | 40 (35 generalized, 4 cut, 1 corrected), then 8 follow-up changes after an adversarial read and 4 factual corrections by the editor |
 | `library-flags.md` | essays, theology pages, tools, and hubs the care-page writers opened | corrections made, and first-person lines left for James |
 
 Each row gives the file, the field, the original sentence word for word, what

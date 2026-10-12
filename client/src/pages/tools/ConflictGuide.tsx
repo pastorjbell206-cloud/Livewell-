@@ -166,7 +166,7 @@ const CONFLICT_TYPES: ConflictType[] = [
           reference: "Matthew 6:25",
         },
         warning:
-          "Do not use financial fear to control the conversation. 'We are going to lose everything' may feel true in the moment. It is almost certainly not true. Catastrophizing shuts down dialogue.",
+          "Do not use financial fear to control the conversation. 'We are going to lose everything' may feel true in the moment. Most of the time it is not, and even when the danger is real, catastrophizing shuts down the conversation you need to face it.",
       },
       {
         number: 3,

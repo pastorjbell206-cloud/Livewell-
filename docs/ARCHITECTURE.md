@@ -259,9 +259,11 @@ goes through `readingText()` in `scripts/lib/bsb.mjs` (no psalm headings, no
 stray quotation marks). The family devotions and catechism quote the BSB word
 for word (`validate-family`).
 Help lines follow the subject: care pages name theirs in `crisisTopics`, and a
-study guide on a heavy subject is listed in `client/src/data/sensitive-pages.json`
-(`studyguides`, with any extra lines in `studyguideTopics`), which the guide page's
-compact help block and its PDFs both read.
+study guide or life page on a heavy subject is listed in
+`client/src/data/sensitive-pages.json` (`studyguides` and `life`, with any extra
+lines in `studyguideTopics` and `lifeTopics`), which the page's compact help block
+(and a guide's PDFs) read; `validate-studyguides` and `validate-life` fail on a
+listed slug that does not exist.
 `scripts/lib/built-files.mjs` names every download the deploy builds, so the
 link checkers accept links to PDFs that are not committed. What the integrity
 sweeps removed from the Grow libraries is recorded in `docs/grow/integrity/`.

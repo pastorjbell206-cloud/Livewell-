@@ -6,12 +6,20 @@
     "suffering-and-the-silence-of-god", "forgiveness-the-hardest-grace", "the-dry-season",
     "shame-and-the-hiding-self", "infertility-and-childlessness", "the-wayward-child",
     "anger-and-the-hot-heart", "health-illness-and-pain", "unemployment-and-the-lost-job",
-    "friendship-against-isolation", "waiting-and-unanswered-prayer"
+    "friendship-against-isolation", "waiting-and-unanswered-prayer", "marriage-the-long-covenant",
+    "identity-and-worth"
   ],
+  "lifeTopics": {
+    "anger-and-the-hot-heart": ["abuse"],
+    "divorce-and-its-aftermath": ["abuse"],
+    "marriage-the-long-covenant": ["abuse"],
+    "addiction-and-the-long-road-back": ["substance"]
+  },
   "studyguides": [
     "grief", "lament", "anxiety", "mental-health", "suffering", "doubt", "deconstruction",
     "marriage", "anger", "forgiveness", "alone-in-a-crowded-church", "pastoral-health",
-    "youth-who-am-i", "addiction-and-recovery", "divorce-and-blended-families", "when-our-parents-grow-old"
+    "youth-who-am-i", "addiction-and-recovery", "divorce-and-blended-families", "when-our-parents-grow-old",
+    "forty-days", "waiting-for-the-light"
   ],
   "studyguideTopics": {
     "addiction-and-recovery": ["substance", "abuse"],
@@ -19,7 +27,9 @@
     "marriage": ["abuse"],
     "anger": ["abuse"],
     "forgiveness": ["abuse"],
-    "youth-who-am-i": ["abuse"]
+    "youth-who-am-i": ["abuse"],
+    "forty-days": ["substance"],
+    "waiting-for-the-light": ["abuse"]
   },
   "wisdom": {
     "lead": {

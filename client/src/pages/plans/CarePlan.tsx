@@ -6,7 +6,7 @@
  * week, checkable progress kept in localStorage, and grace built in - a
  * missed week is named as normal, never failure.
  */
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, type ReactNode } from "react";
 import { Link, useRoute } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
@@ -39,6 +39,15 @@ function saveProgress(slug: string, p: Progress) {
 
 const lbl = { fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase" as const, color: "var(--ink-muted)", marginBottom: "6px" };
 const body = { fontFamily: "var(--B)", fontSize: "15.5px", lineHeight: 1.7, color: "var(--ink)" } as const;
+
+const weekLinkStyle = { display: "flex", gap: "8px", alignItems: "center", textDecoration: "none", fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--mustard-text)" } as const;
+
+/** A week's read or tool: an app route, or a printable file (a plain link, so the browser opens it). */
+function WeekLink({ href, children }: { href: string; children: ReactNode }) {
+  return /\.(pdf|epub|docx?)($|[?#])/i.test(href)
+    ? <a href={href} style={weekLinkStyle}>{children}</a>
+    : <Link href={href} style={weekLinkStyle}>{children}</Link>;
+}
 
 export default function CarePlan() {
   const [, params] = useRoute("/plans/:slug");
@@ -113,6 +122,10 @@ export default function CarePlan() {
           {data && data.intro.split("\n\n").map((p, i) => (
             <p key={i} style={{ fontFamily: "var(--B)", fontSize: "16.5px", lineHeight: 1.75, color: "rgba(245,240,230,0.82)", maxWidth: "62ch", marginBottom: "12px" }}>{p}</p>
           ))}
+          {/* When to get more help: first, not after week eight. */}
+          {data?.careNote && (
+            <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "rgba(245,240,230,0.82)", maxWidth: "62ch", margin: "4px 0 12px", paddingLeft: "12px", borderLeft: "2px solid var(--mustard)" }}>{data.careNote}</p>
+          )}
           {data && !progress && (
             <button
               onClick={start}
@@ -174,12 +187,8 @@ export default function CarePlan() {
                   <div style={lbl}>This week's practice</div>
                   <p style={{ ...body, marginBottom: "14px", maxWidth: "68ch" }}>{w.practice}</p>
                   <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(240px, 100%), 1fr))", gap: "10px" }}>
-                    <Link href={w.read.href} style={{ display: "flex", gap: "8px", alignItems: "center", textDecoration: "none", fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--mustard-text)" }}>
-                      <BookOpen size={15} /> {w.read.label}
-                    </Link>
-                    <Link href={w.tool.href} style={{ display: "flex", gap: "8px", alignItems: "center", textDecoration: "none", fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--mustard-text)" }}>
-                      <Wrench size={15} /> {w.tool.label}
-                    </Link>
+                    <WeekLink href={w.read.href}><BookOpen size={15} /> {w.read.label}</WeekLink>
+                    <WeekLink href={w.tool.href}><Wrench size={15} /> {w.tool.label}</WeekLink>
                   </div>
                   <div style={{ marginTop: "14px", borderLeft: "2px solid rgba(20,17,12,0.12)", paddingLeft: "12px" }}>
                     <div style={{ ...lbl, display: "flex", alignItems: "center", gap: "6px" }}><PenLine size={12} /> Reflect</div>
@@ -188,10 +197,6 @@ export default function CarePlan() {
                 </div>
               );
             })}
-
-            {data.careNote && (
-              <p style={{ ...body, color: "var(--ink-muted)", maxWidth: "68ch", marginTop: "var(--s-3)" }}>{data.careNote}</p>
-            )}
 
             {/* The booklet is built by scripts/lib/help-printables.mjs inside `pnpm pdfs`. */}
             <p style={{ fontFamily: "var(--U)", fontSize: "14px", lineHeight: 1.6, color: "var(--ink-muted)", marginTop: "var(--s-3)" }}>

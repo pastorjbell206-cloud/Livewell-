@@ -93,5 +93,12 @@ for (const file of files) {
   });
 }
 
+// The guides that print and show help lines (client/src/data/sensitive-pages.json)
+// must exist, so a misspelled or unwritten slug cannot silently drop a guide's help.
+const SENSITIVE = JSON.parse(fs.readFileSync("client/src/data/sensitive-pages.json", "utf8"));
+const slugs = new Set(files.map((f) => f.replace(/\.json$/, "")));
+for (const s of SENSITIVE.studyguides || []) if (!slugs.has(s)) fail("sensitive-pages.json", `studyguides lists "${s}", which is not a study guide`);
+for (const s of Object.keys(SENSITIVE.studyguideTopics || {})) if (!(SENSITIVE.studyguides || []).includes(s)) fail("sensitive-pages.json", `studyguideTopics names "${s}", which is not in studyguides`);
+
 if (failures) { console.error(`\n[validate-studyguides] ${failures} failure(s) across ${guideCount} guide(s)`); process.exit(1); }
 console.log(`[validate-studyguides] ${guideCount} guide(s), 0 failures`);

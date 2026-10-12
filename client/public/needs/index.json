@@ -932,56 +932,49 @@
     {
       "slug": "pastors",
       "title": "I'm a pastor and I'm running on empty",
-      "summary": "For pastors near the end of themselves. Seeking help is faith, not failure.",
+      "summary": "For pastors near the end of themselves, and for those who love them. Asking for help isn't a failure of faith.",
       "askedAs": [
         "pastor burnout",
-        "pastor depression",
-        "thinking about quitting ministry",
-        "pastor loneliness",
         "ministry burnout",
-        "pastor's wife"
+        "pastor depression",
+        "pastor anxiety",
+        "pastor loneliness",
+        "pastor mental health",
+        "thinking about quitting ministry",
+        "should I quit ministry",
+        "can a pastor see a counselor",
+        "pastor sabbatical",
+        "pastor marriage struggling",
+        "pastor's wife",
+        "pastor's husband",
+        "Bible verses for pastors"
       ],
       "states": [
         "carrying",
+        "helping",
         "leading"
       ],
       "sensitivity": "high",
       "crisisTopics": [
-        "suicide"
+        "suicide",
+        "abuse",
+        "substance"
       ],
-      "page": false,
+      "page": true,
       "rank": 22,
-      "kit": {
-        "read": [
-          {
-            "href": "/studyguides/pastoral-health",
-            "label": "Pastoral Health: A Study for Leaders and Those Who Love Them",
-            "kind": "Study guide"
-          },
-          {
-            "href": "/wisdom/exhaustion",
-            "label": "Exhaustion and Burnout",
-            "kind": "Wisdom"
-          },
-          {
-            "href": "/life/ambition-and-rest",
-            "label": "Is Ambition a Sin? Drive, Hustle, and Rest",
-            "kind": "Life"
-          },
-          {
-            "href": "/life/rest-and-the-sabbath",
-            "label": "What Is Sabbath Rest, and How Do You Keep It?",
-            "kind": "Life"
-          },
-          {
-            "href": "https://pastorsconnectionnetwork.com",
-            "label": "The Pastors Connection Network, where the pastors' material now lives",
-            "kind": "Page"
-          }
-        ]
-      },
+      "seoTitle": "Pastor Burnout, Depression, and Thinking About Quitting",
+      "description": "For pastors running on empty, and the spouses and boards who love them: what's happening, what Scripture says, and what to do this week.",
+      "related": [
+        "refer-to-counselor",
+        "work-burnout",
+        "empty",
+        "loneliness",
+        "marriage",
+        "church-hurt"
+      ],
       "guides": [
-        "pastoral-health"
+        "pastoral-health",
+        "character-before-competence"
       ]
     },
     {

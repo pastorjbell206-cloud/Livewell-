@@ -626,7 +626,7 @@ export async function budgetPdf(size) {
   const root = doc.struct("Document");
   doc.addStructure(root);
   const { left, width } = worksheetHeader(doc, root, "FIND HELP · MONEY", "A month, planned before it begins",
-    "Fill this in before the month starts, together if you share money. Write what comes in, then decide first what you will give and save, at whatever size your life allows this month, and then plan the rest. A budget is not a verdict on you; it is a way of telling the truth about money and choosing where it goes. This is a worksheet, not financial advice: for debt or legal trouble, a nonprofit credit counselor is a good first call.");
+    "Fill this in before the month starts, together if you share money. Write what comes in, decide what you will give and save at whatever size your life allows this month, and plan the rest. A budget is not a verdict on you; it is a way of telling the truth about money and choosing where it goes. This is a worksheet, not financial advice: for debt or legal trouble, a nonprofit credit counselor is a good first call.");
   const rows = [
     ["Coming in", "Paychecks, benefits, other income", 3],
     ["Giving", "What you have decided to give this month", 2],

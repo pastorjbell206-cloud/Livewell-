@@ -80,7 +80,7 @@
       },
       {
         "title": "Read the best case and the best objection",
-        "body": "Don't settle this against a strawman in either direction. [Did the Resurrection Actually Happen?](/writing/did-the-resurrection-happen) lays out the historical case, weighs the skeptical alternatives, and admits it isn't proof. [What the New Atheists Got Right](/writing/what-new-atheists-got-right) states the four leading New Atheists at full strength and concedes what they got right before it answers them. Both essays are written from inside the faith, so read the critics in their own words too. If you'd rather argue than read, [Test the Case](/tools/test-the-case) lets you push back at every step. Take your time. The truth will keep."
+        "body": "Don't settle this against a strawman in either direction. [I don't believe, but I'm curious](/help/curious) states the strongest objections, Hume on miracles and Freud on wishful thinking, before it answers them, and says plainly what historians do and don't agree on. [Can I trust the Bible?](/help/trust-the-bible) does the same for the case against the text. Both are written from inside the faith, so read the critics in their own words too. If you'd rather argue than read, [Test the Case](/tools/test-the-case) lets you push back at every step. Take your time. The truth will keep."
       }
     ]
   },
@@ -159,9 +159,9 @@
         "kind": "Essay"
       },
       {
-        "href": "/writing/dark-night-god-feels-absent",
-        "label": "What to Do When God Feels Absent",
-        "kind": "Essay"
+        "kind": "Life",
+        "label": "Why Does God Feel So Far Away When You Pray?",
+        "href": "/life/the-dry-season"
       },
       {
         "href": "/pathways/doubt-and-deconstruction",
@@ -179,19 +179,14 @@
         "kind": "Page"
       },
       {
-        "href": "/writing/did-the-resurrection-happen",
-        "label": "Did the Resurrection Actually Happen?",
-        "kind": "Essay"
+        "kind": "Page",
+        "label": "Did the Gospels Get Jesus Right?",
+        "href": "/resources/context/did-the-gospels-get-jesus-right"
       },
       {
-        "href": "/writing/the-historical-jesus-without-the-shortcuts",
-        "label": "What Can History Actually Prove About Jesus?",
-        "kind": "Essay"
-      },
-      {
-        "href": "/writing/what-new-atheists-got-right",
-        "label": "What the New Atheists Got Right",
-        "kind": "Essay"
+        "kind": "Page",
+        "label": "1 Corinthians 15 in the Study Bible: the earliest summary of the resurrection, with notes",
+        "href": "/study/bible/1-corinthians/15"
       },
       {
         "href": "/plans/skeptic",
@@ -273,6 +268,6 @@
   ],
   "reviewed": {
     "on": "2026-09-29",
-    "notes": "Second-pass edit, done in full from the top. Validator clean (node scripts/validate-needs.mjs doubt). Truth: Charles Taylor's A Secular Age (2007), its question about belief around 1500 and its case against subtraction stories; John of the Cross, Dark Night, Book I, chapter 1 (the mother who weans her child and sets it down to walk); and Britannica's dating of the crucifixion (Passover, between AD 29 and 33, possibly 30) were each confirmed as the page characterizes them, and each source URL confirmed to exist, through search-engine excerpts, because the source sites are blocked from this environment; re-open each before release. Matthew uses the same verb for doubt in 14:31 and 28:17 (distazo, which occurs only in those two verses in the New Testament): confirmed and kept. Every reading rechecked in context with scripts/bsb.mjs: Mark 9:2 and 9:14-29; Psalm 73 with 1 Chronicles 16:4-7 and Ezra 2:41; John 1:1, 11:7-16, and 20:19-31; Matthew 11:2-6, 14:28-33, 23:13, and 28:16-20; Jude 1:17-23; Luke 1:1-4; Psalm 88; Hebrews 3:12; James 1:5-8 and 4:4-8; 1 Corinthians 15:14-17. Changes: the answer now says that those who brought their doubt to Jesus were not sent away (it had extended that to psalmists who never met him); the FAQ on James 1:6-8 presents divided loyalty as one reading, states the other (a rebuke to any wavering in prayer) fairly, and adds the passage's own opening invitation (James 1:5); the deconstruction FAQ commits instead of hedging with I don't think and drops a second stacked triplet; a mixed metaphor in whyHard repaired. No sentence says James says or wrote about the New Testament letter (it is the letter of James throughout); James is described only as a pastor, and nothing speaks for a denomination or tradition. Related already carries the starter needs deconstructing, church-hurt, and curious. Every kit label checked against its target (plans-index, the study guide index, the essay titles in the static library and content-data, the pathway, wisdom, and how-to manifests, and the page components): doubt has no eight-week plan of its own, so the kit uses the deconstruction plan under its real title. No statistics, no quotations but Scripture, no biography beyond the approved facts, first person only for conviction; the 988 lines follow safe-messaging language. Read as the person at midnight on a phone, the skeptic, the pastor, and a licensed counselor."
+    "notes": "Second-pass edit, done in full from the top. Validator clean (node scripts/validate-needs.mjs doubt). Truth: Charles Taylor's A Secular Age (2007), its question about belief around 1500 and its case against subtraction stories; John of the Cross, Dark Night, Book I, chapter 1 (the mother who weans her child and sets it down to walk); and Britannica's dating of the crucifixion (Passover, between AD 29 and 33, possibly 30) were each confirmed as the page characterizes them, and each source URL confirmed to exist, through search-engine excerpts, because the source sites are blocked from this environment; re-open each before release. Matthew uses the same verb for doubt in 14:31 and 28:17 (distazo, which occurs only in those two verses in the New Testament): confirmed and kept. Every reading rechecked in context with scripts/bsb.mjs: Mark 9:2 and 9:14-29; Psalm 73 with 1 Chronicles 16:4-7 and Ezra 2:41; John 1:1, 11:7-16, and 20:19-31; Matthew 11:2-6, 14:28-33, 23:13, and 28:16-20; Jude 1:17-23; Luke 1:1-4; Psalm 88; Hebrews 3:12; James 1:5-8 and 4:4-8; 1 Corinthians 15:14-17. Changes: the answer now says that those who brought their doubt to Jesus were not sent away (it had extended that to psalmists who never met him); the FAQ on James 1:6-8 presents divided loyalty as one reading, states the other (a rebuke to any wavering in prayer) fairly, and adds the passage's own opening invitation (James 1:5); the deconstruction FAQ commits instead of hedging with I don't think and drops a second stacked triplet; a mixed metaphor in whyHard repaired. No sentence says James says or wrote about the New Testament letter (it is the letter of James throughout); James is described only as a pastor, and nothing speaks for a denomination or tradition. Related already carries the starter needs deconstructing, church-hurt, and curious. Every kit label checked against its target (plans-index, the study guide index, the essay titles in the static library and content-data, the pathway, wisdom, and how-to manifests, and the page components): doubt has no eight-week plan of its own, so the kit uses the deconstruction plan under its real title. No statistics, no quotations but Scripture, no biography beyond the approved facts, first person only for conviction; the 988 lines follow safe-messaging language. Read as the person at midnight on a phone, the skeptic, the pastor, and a licensed counselor. 2026-10-04, editor: step 6 and the reading list no longer rely on essays listed in docs/grow/integrity/library-flags.md (first-person stories, an overstatement of scholarly agreement); the step now points to the curious and trust-the-bible care pages, and the list to the dry-season Life page, the Gospels context guide, and the Study Bible's 1 Corinthians 15."
   }
 }

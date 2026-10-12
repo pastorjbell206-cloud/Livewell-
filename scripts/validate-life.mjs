@@ -61,5 +61,11 @@ for (const f of files) {
     for (const w of FORBIDDEN_WORDS) if (new RegExp(`\\b${w}\\b`, "i").test(s)) { fail(f, `forbidden word "${w}": "${s.slice(0, 50)}..."`); break; }
   }
 }
+// The pages that show a help block (client/src/data/sensitive-pages.json) must
+// exist, and extra lines may only be named for a page that shows the block.
+const SENSITIVE = JSON.parse(fs.readFileSync("client/src/data/sensitive-pages.json", "utf8"));
+const slugs = new Set(files.map((f) => f.replace(/\.json$/, "")));
+for (const s of SENSITIVE.life || []) if (!slugs.has(s)) fail("sensitive-pages.json", `life lists "${s}", which is not a life page`);
+for (const s of Object.keys(SENSITIVE.lifeTopics || {})) if (!(SENSITIVE.life || []).includes(s)) fail("sensitive-pages.json", `lifeTopics names "${s}", which is not in life`);
 console.log(`[validate-life] ${files.length} domain(s), ${failures} failure(s)`);
 process.exit(failures ? 1 : 0);
