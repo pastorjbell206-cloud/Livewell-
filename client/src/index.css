@@ -486,6 +486,12 @@ h1, h2, h3 { text-wrap: balance; }
 .article-body h3{font-family:var(--F);font-size:22px;font-weight:500;letter-spacing:-.005em;line-height:1.3;color:var(--ink);margin-top:1.8em;margin-bottom:.4em}
 .article-body p{max-width:62ch}
 .article-body p:first-of-type::first-letter{font-family:var(--F);font-size:4.6em;float:left;line-height:.92;padding:.04em .08em 0 0;color:var(--ink);font-weight:400}
+/* The drop cap belongs to the essay's opening paragraph only — :first-of-type
+   also matches the first <p> inside every blockquote and list item. */
+.article-body blockquote p:first-of-type::first-letter,.article-body li p:first-of-type::first-letter{font-family:inherit;font-size:inherit;float:none;line-height:inherit;padding:0;color:inherit;font-weight:inherit}
+/* A one-line opening paragraph is shorter than the cap; contain the float so
+   the next paragraph starts below it instead of being indented around it. */
+.article-body p:first-of-type{display:flow-root}
 .article-body blockquote{font-family:var(--F);font-size:24px;font-style:italic;font-weight:400;line-height:1.4;color:var(--ink);max-width:60ch;border-left:2px solid var(--mustard);padding:.2em 0 .2em 1.4em;margin:2em 0;letter-spacing:-.005em}
 .article-body blockquote p{max-width:none}
 .article-body a{color:var(--ink);border-bottom:1px solid var(--mustard);transition:background-color .2s}

@@ -38,6 +38,7 @@ import { articleUrl, OG_DEFAULT_IMAGE, SITE_URL } from "@/lib/site";
 import { trackEssayComplete, trackPathStep } from "@/lib/telemetry";
 import { markEssayRead } from "@/lib/readProgress";
 import { readStoredJSON, writeStoredJSON } from "@/lib/storage";
+import { normalizeEssayBody } from "@/lib/html-body";
 
 /**
  * Per-slug byline overrides. Every essay not listed here is authored by
@@ -364,7 +365,15 @@ function TableOfContents({
   return (
     <nav
       aria-label="In this essay"
-      style={{ maxWidth: "var(--w-prose)", margin: "0 auto var(--s-5)" }}
+      // The site-header rule in index.css styles every bare <nav> as a 70px
+      // flex bar; reset it here or the card overflows onto the hero and body.
+      style={{
+        display: "block",
+        height: "auto",
+        padding: 0,
+        maxWidth: "var(--w-prose)",
+        margin: "0 auto var(--s-5)",
+      }}
     >
       <details
         open
@@ -843,7 +852,7 @@ export default function ArticleDetail() {
                   ),
                 }}
               >
-                {post.body.replace(/^\s*#{1,6}\s+.*\r?\n+/, "")}
+                {normalizeEssayBody(post.body).replace(/^\s*#{1,6}\s+.*\r?\n+/, "")}
               </Markdown>
             ) : (
               <p style={{ fontStyle: "italic", color: "var(--ink-muted)" }}>
