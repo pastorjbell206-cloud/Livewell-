@@ -80,14 +80,14 @@ export default function TheologyQuestions() {
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
-            <Link href="/theology" style={{ color: "inherit" }}>Theological Depth</Link> · Hard questions
+            <Link href="/study" style={{ color: "inherit" }}>Study</Link> · Hard questions
           </div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5vw, 52px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "20ch" }}>
             The questions you actually came with.
           </h1>
           <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.78)", maxWidth: "62ch" }}>
             Nobody starts by searching for a doctrine. They start with a question that keeps them up at night. Here are the real ones, answered plainly and without flinching, each one opening a door to the fuller study behind it. The plain-language versions live at{" "}
-            <Link href="/faq" style={{ color: "var(--bone)", borderBottom: "1px solid var(--mustard)", textDecoration: "none" }}>questions people ask</Link>.
+            <Link href="/answers" style={{ color: "var(--bone)", borderBottom: "1px solid var(--mustard)", textDecoration: "none" }}>questions people ask</Link>.
           </p>
         </div>
       </section>

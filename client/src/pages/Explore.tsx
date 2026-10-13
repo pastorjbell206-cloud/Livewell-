@@ -24,6 +24,7 @@ import { LoadFailed } from "@/components/LoadFailed";
 import FollowJames from "@/components/FollowJames";
 import { SITE_URL } from "@/lib/site";
 import { trpc } from "@/lib/trpc";
+import { essayDate, isPublicEssay } from "@/lib/shelf";
 import { TOOLS } from "@/pages/ToolsHub";
 import {
   buildIndex,
@@ -127,6 +128,8 @@ export default function Explore() {
       const slug = typeof p?.slug === "string" ? p.slug : "";
       const title = typeof p?.title === "string" ? p.title : "";
       if (!slug || !title || have.has(`/writing/${slug}`)) continue;
+      // Retired essays stay out of the Library (lib/shelf.ts).
+      if (!isPublicEssay(slug, essayDate(p))) continue;
       const when = p.publishedAt ? new Date(p.publishedAt as string) : null;
       const date = when && !Number.isNaN(when.getTime()) ? when.toISOString().slice(0, 10) : undefined;
       fresh.push({

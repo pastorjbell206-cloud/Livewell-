@@ -8,6 +8,7 @@ import { Link } from "wouter";
 import { ArrowLeft, Search as SearchIcon } from "lucide-react";
 
 import { LibrarySource, LIBRARY_SOURCES, pickString } from "@/lib/catalog";
+import { essayDate, isPublicEssay } from "@/lib/shelf";
 
 // --- Library manifest search (static JSON content libraries) ---
 // The source registry lives in @/lib/catalog so search and the unified
@@ -34,16 +35,16 @@ async function fetchLibrarySource(source: LibrarySource): Promise<LibraryEntry[]
     const list = data?.[source.listKey];
     if (!Array.isArray(list)) return [];
     return list
-      .filter((item: any) => item && typeof item.slug === "string" && typeof item.title === "string")
-      .map((item: any) => ({
-        slug: item.slug,
-        title: item.title,
+      .filter((item: Record<string, unknown>) => item && typeof item.slug === "string" && typeof item.title === "string")
+      .map((item: Record<string, unknown>) => ({
+        slug: item.slug as string,
+        title: item.title as string,
         // Each library names its summary/facet fields differently — take the
         // first present so every source searches on its real text.
         blurb: pickString(item.blurb, item.excerpt, item.summary, item.subtitle),
         facet: pickString(item.group, item.pillar, item.topic, item.era, item.audience),
         sourceLabel: source.label,
-        href: source.buildHref(item.slug),
+        href: source.buildHref(item.slug as string),
         indexHref: source.indexHref,
       }));
   } catch {
@@ -55,7 +56,10 @@ async function fetchLibrarySource(source: LibrarySource): Promise<LibraryEntry[]
 
 export default function SearchPage() {
   const [, navigate] = useLocation();
-  const [query, setQuery] = useState("");
+  // A deep link (/search?q=Genesis 1, from the Study Bible) opens on its query.
+  const [query, setQuery] = useState(() =>
+    typeof window === "undefined" ? "" : new URLSearchParams(window.location.search).get("q") ?? ""
+  );
   const [searchType, setSearchType] = useState<"all" | "articles" | "resources">("all");
 
   // Library manifests: fetched once on mount, filtered client-side per query
@@ -110,12 +114,17 @@ export default function SearchPage() {
     { enabled: query.length > 0 && searchType === "resources" }
   );
 
-  const results =
+  const rawResults =
     searchType === "all"
       ? allResults.data?.results || []
       : searchType === "articles"
         ? articleResults.data?.results || []
         : resourceResults.data?.results || [];
+  // Retired essays never surface in search (lib/shelf.ts). The post-cutoff
+  // rule reads the same date everywhere: publishedAt, else createdAt.
+  const results = rawResults.filter(
+    (r) => r.type !== "article" || isPublicEssay(r.slug ?? "", essayDate(r))
+  );
 
   const isLoading =
     searchType === "all"
@@ -135,7 +144,7 @@ export default function SearchPage() {
         : resourceResults;
   const isError = activeQuery.isError;
 
-  const getResultLink = (result: any) => {
+  const getResultLink = (result: (typeof results)[number]) => {
     switch (result.type) {
       case "article":
         return `/writing/${result.slug}`;
@@ -237,17 +246,6 @@ export default function SearchPage() {
             </div>
           ) : (
             <>
-              {/* The Library searches every kind of writing, Scripture
-                  references included; this page searches the database and
-                  six libraries. Offer the wider search on every query. */}
-              <p className="mb-8" style={{ fontFamily: "var(--U)", fontSize: "15px" }}>
-                <Link
-                  href={`/explore?q=${encodeURIComponent(query.trim())}`}
-                  style={{ color: "var(--ink)", fontWeight: 600, textDecoration: "none", borderBottom: "1px solid var(--mustard)" }}
-                >
-                  Search for “{query.trim()}” across the whole Library
-                </Link>
-              </p>
               {/* Library results from the static JSON manifests */}
               {visibleLibraryMatches.length > 0 && (
                 <div className="mb-12">
@@ -360,7 +358,7 @@ export default function SearchPage() {
               </p>
 
               <div className="space-y-4">
-                {results.map((result: any) => (
+                {results.map((result) => (
                   <Link
                     key={`${result.type}-${result.id}`}
                     href={getResultLink(result)}

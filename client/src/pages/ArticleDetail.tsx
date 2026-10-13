@@ -11,6 +11,7 @@
 import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { Link, useLocation, useParams } from "wouter";
+import { useQuery } from "@tanstack/react-query";
 import { DISCUSSION_GUIDES } from "@/data/discussion-guides";
 import { Markdown } from "@/components/Markdown";
 import { recordReadEvent } from "@/components/ReadDepthBeacon";
@@ -26,19 +27,31 @@ import ChannelLine from "@/components/ChannelLine";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { CitationCopy } from "@/components/CitationCopy";
 import { AudienceShare } from "@/components/AudienceShare";
-import { AudienceLabel } from "@/components/AudienceLabel";
-import { TrackChip } from "@/components/TrackChip";
 import { KeepReadingBook } from "@/components/KeepReadingBook";
 import { RelatedEssays } from "@/components/RelatedEssays";
 import ArticleNextSteps, { isArticleOnPath } from "@/components/ArticleNextSteps";
 import { GeneratedHero } from "@/components/GeneratedHero";
 import { trpc } from "@/lib/trpc";
-import { pillarForPost } from "@/lib/taxonomy";
+import { pillarForPost, pillarToTrack } from "@/lib/taxonomy";
+import {
+  cleanExcerpt,
+  essayDate,
+  essayVisibility,
+  isEssayOverride,
+  nearestSection,
+  overrideMeta,
+  overrideUrl,
+  sectionBySlug,
+  sectionHref,
+  shelfEntry,
+} from "@/lib/shelf";
+import { fetchJson } from "@/lib/fetch-json";
+import { RetiredEssayNotice } from "@/components/RetiredEssayNotice";
 import { articleUrl, OG_DEFAULT_IMAGE, SITE_URL } from "@/lib/site";
 import { trackEssayComplete, trackPathStep } from "@/lib/telemetry";
 import { markEssayRead } from "@/lib/readProgress";
 import { readStoredJSON, writeStoredJSON } from "@/lib/storage";
-import { normalizeEssayBody } from "@/lib/html-body";
+import { normalizeEssayBody, opensWithProse, stripDuplicateTitle } from "@/lib/html-body";
 
 /**
  * Per-slug byline overrides. Every essay not listed here is authored by
@@ -338,7 +351,9 @@ function TableOfContents({
     const root = bodyRef.current;
     if (!root) return;
     const seen = new Set<string>();
-    const headings = Array.from(root.querySelectorAll("h2")).map((node, i) => {
+    // An empty heading (a stray "##" in an imported body) is not a section.
+    const nodes = Array.from(root.querySelectorAll("h2")).filter((node) => node.textContent?.trim());
+    const headings = nodes.map((node, i) => {
       const text = node.textContent?.trim() || `Section ${i + 1}`;
       let id = node.id || slugifyHeading(text, i);
       while (seen.has(id)) id = `${id}-${i}`;
@@ -436,15 +451,77 @@ function TableOfContents({
   );
 }
 
+/** What the page renders: the database post, or the shelf's rewrite of it. */
+interface EssayView {
+  slug: string;
+  title: string;
+  excerpt: string | null;
+  body: string | null;
+  pillar: string | null;
+  coverImage: string | null;
+  audience: string | null;
+  readingTimeMinutes: number | null;
+  publishedAt: Date | string | null;
+  createdAt: Date | string | null;
+  updatedAt: Date | string | null;
+}
+
 export default function ArticleDetail() {
   const { slug } = useParams<{ slug: string }>();
   const bodyRef = useRef<HTMLDivElement>(null);
   const [, navigate] = useLocation();
+
+  // The shelf decides what this URL shows (lib/shelf.ts). A pending shelf
+  // essay with no rewrite yet needs nothing from the server; one with a
+  // rewrite renders that file instead of the database body.
+  const entry = shelfEntry(slug);
+  const rewrite = overrideMeta(slug);
+  const waitingOnRewrite = entry?.status === "pending" && !rewrite;
+
   const postQuery = trpc.posts.getBySlug.useQuery(
     { slug: slug ?? "" },
-    { enabled: Boolean(slug) }
+    { enabled: Boolean(slug) && !waitingOnRewrite }
   );
-  const post = postQuery.data ?? null;
+  const rewriteQuery = useQuery({
+    queryKey: ["essay-rewrite", slug],
+    queryFn: () => fetchJson(overrideUrl(slug ?? ""), isEssayOverride),
+    enabled: Boolean(slug && rewrite),
+  });
+
+  const dbPost = postQuery.data ?? null;
+  const rewritten = rewriteQuery.data ?? null;
+  const post: EssayView | null = rewritten
+    ? {
+        slug: rewritten.slug,
+        title: rewritten.title,
+        excerpt: rewritten.excerpt || null,
+        body: rewritten.body,
+        pillar: dbPost?.pillar ?? null,
+        coverImage: dbPost?.coverImage ?? null,
+        audience: dbPost?.audience ?? null,
+        readingTimeMinutes: Math.max(1, Math.round(rewritten.body.split(/\s+/).filter(Boolean).length / 225)),
+        publishedAt: dbPost?.publishedAt ?? rewritten.updated,
+        createdAt: dbPost?.createdAt ?? rewritten.updated,
+        updatedAt: rewritten.updated,
+      }
+    : dbPost
+      ? {
+          slug: dbPost.slug,
+          title: dbPost.title,
+          // The shelf's own line when it has one (blurb "" means no line);
+          // otherwise the excerpt, with the entities Substack left decoded.
+          excerpt:
+            entry?.blurb !== undefined ? entry.blurb || null : cleanExcerpt(dbPost.excerpt) || null,
+          body: dbPost.body ?? null,
+          pillar: dbPost.pillar ?? null,
+          coverImage: dbPost.coverImage ?? null,
+          audience: dbPost.audience ?? null,
+          readingTimeMinutes: dbPost.readingTimeMinutes ?? null,
+          publishedAt: dbPost.publishedAt ?? null,
+          createdAt: dbPost.createdAt ?? null,
+          updatedAt: dbPost.updatedAt ?? null,
+        }
+      : null;
 
   // Reading-focus mode (board rec #10): a page-level calm that reduces the
   // article to title + body, persisted so the preference survives a reload.
@@ -500,7 +577,20 @@ export default function ArticleDetail() {
     return () => observer.disconnect();
   }, [postSlug]);
 
-  if (postQuery.isLoading) {
+  if (waitingOnRewrite && entry) {
+    return (
+      <RetiredEssayNotice
+        slug={entry.slug}
+        title={entry.title}
+        pending
+        section={nearestSection(entry.slug)}
+      />
+    );
+  }
+
+  // With a rewrite, wait for the file and for the database row (its pillar and
+  // dates); a missing or failed row does not hold the rewrite back.
+  if (postQuery.isLoading || rewriteQuery.isLoading) {
     return (
       <Layout>
         <div style={{ padding: "var(--s-6) var(--s-4)", textAlign: "center" }}>
@@ -513,15 +603,15 @@ export default function ArticleDetail() {
   // A request that failed is not an article that does not exist. Telling a
   // reader the piece is gone when the server simply did not answer is a lie
   // the reader has no way to check, and it loses them for good.
-  if (postQuery.isError) {
+  if (rewrite ? rewriteQuery.isError : postQuery.isError) {
     return (
       <Layout>
         <div style={{ padding: "var(--s-6) var(--s-4)" }}>
           <LoadFailed
             what="This essay"
-            onRetry={() => void postQuery.refetch()}
+            onRetry={() => void (rewrite ? rewriteQuery.refetch() : postQuery.refetch())}
             backHref="/writing"
-            backLabel="Back to the writing"
+            backLabel="All essays"
           />
         </div>
       </Layout>
@@ -541,7 +631,7 @@ export default function ArticleDetail() {
               marginBottom: "20px",
             }}
           >
-            Article not found
+            Essay not found
           </h2>
           <button
             type="button"
@@ -558,12 +648,31 @@ export default function ArticleDetail() {
               fontSize: "13px",
             }}
           >
-            Back to Writing
+            All essays
           </button>
         </div>
       </Layout>
     );
   }
+
+  // Off the shelf: the URL still answers, with a short notice that points on.
+  const visibility = essayVisibility(post.slug, essayDate(post));
+  if (visibility === "retired" || visibility === "pending") {
+    return (
+      <RetiredEssayNotice
+        slug={post.slug}
+        title={post.title}
+        pending={visibility === "pending"}
+        section={nearestSection(post.slug, pillarToTrack(post.pillar))}
+      />
+    );
+  }
+
+  // The body as Markdown, with the import's broken structure repaired and a
+  // repeated title dropped; the drop cap only when it opens on real prose.
+  const bodyMarkdown = post.body ? stripDuplicateTitle(normalizeEssayBody(post.body), post.title) : "";
+  const dropCap = opensWithProse(bodyMarkdown);
+  const kickerSection = sectionBySlug(entry?.section);
 
   const canonical = articleUrl(post.slug);
   const description = post.excerpt || post.title;
@@ -598,7 +707,7 @@ export default function ArticleDetail() {
           ),
           getBreadcrumbSchema([
             { name: "Home", url: SITE_URL },
-            { name: "Writing", url: `${SITE_URL}/writing` },
+            { name: "Essays", url: `${SITE_URL}/writing` },
             { name: post.title, url: canonical },
           ]),
         ]}
@@ -635,7 +744,7 @@ export default function ArticleDetail() {
             }
           >
             <ArrowLeft size={16} aria-hidden />
-            Back to Writing
+            All essays
           </button>
         </div>
         )}
@@ -655,7 +764,8 @@ export default function ArticleDetail() {
               textAlign: "center",
             }}
           >
-            {/* Kicker — pillar */}
+            {/* Kicker: the shelf section the essay sits in, or Latest for a
+                new post off the shelf (the names /writing uses). */}
             <div
               style={{
                 display: "flex",
@@ -663,7 +773,24 @@ export default function ArticleDetail() {
                 marginBottom: "24px",
               }}
             >
-              <TrackChip pillarOrTrack={post.pillar} slug={post.slug} />
+              <Link
+                href={kickerSection ? sectionHref(kickerSection) : "/writing"}
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: "10px",
+                  fontFamily: "var(--U)",
+                  fontSize: "11px",
+                  fontWeight: 600,
+                  textTransform: "uppercase",
+                  letterSpacing: "0.18em",
+                  color: "var(--mustard-text)",
+                  textDecoration: "none",
+                }}
+              >
+                <span aria-hidden style={{ width: "24px", height: "1px", background: "var(--mustard)" }} />
+                {kickerSection ? kickerSection.name : "Latest"}
+              </Link>
             </div>
 
             {/* Title */}
@@ -727,10 +854,7 @@ export default function ArticleDetail() {
                 {author}
               </span>
               <span aria-hidden style={{ opacity: 0.5 }}>·</span>
-              <AudienceLabel
-                audience={post.audience}
-                readingTimeMinutes={post.readingTimeMinutes ?? 5}
-              />
+              <span>{post.readingTimeMinutes ?? 5} min read</span>
               {post.publishedAt && (
                 <>
                   <span aria-hidden style={{ opacity: 0.5 }}>·</span>
@@ -831,7 +955,7 @@ export default function ArticleDetail() {
           <QuoteSelectionShare title={post.title} url={canonical} bodyRef={bodyRef} author={author} />
           {!focus && <TableOfContents bodyRef={bodyRef} contentKey={post.slug} />}
           <div
-            className="article-body"
+            className={dropCap ? "article-body" : "article-body prose-section"}
             ref={bodyRef}
             style={{
               maxWidth: focus ? "68ch" : "var(--w-prose)",
@@ -852,7 +976,7 @@ export default function ArticleDetail() {
                   ),
                 }}
               >
-                {normalizeEssayBody(post.body).replace(/^\s*#{1,6}\s+.*\r?\n+/, "")}
+                {bodyMarkdown}
               </Markdown>
             ) : (
               <p style={{ fontStyle: "italic", color: "var(--ink-muted)" }}>

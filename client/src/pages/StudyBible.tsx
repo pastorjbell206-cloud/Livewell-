@@ -817,7 +817,7 @@ function VerseStudy({ books, book, chapter, verse, lang, setSel, data, verseNote
       <p style={{ margin: 0, fontFamily: "var(--U)", fontSize: "13px", lineHeight: 1.9 }}>
         <Link href={`/theology/passage?ref=${encodeURIComponent(refLabel)}`} style={quietLink}>This passage in context</Link>
         {" · "}
-        <Link href={`/explore?q=${encodeURIComponent(`${book.name} ${chapter}`)}`} style={quietLink}>Search the Library for {book.name} {chapter}</Link>
+        <Link href={`/search?q=${encodeURIComponent(`${book.name} ${chapter}`)}`} style={quietLink}>Search the site for {book.name} {chapter}</Link>
       </p>
     </div>
   );

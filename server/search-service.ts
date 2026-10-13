@@ -18,6 +18,8 @@ export interface SearchResult {
   url?: string;
   category?: string;
   publishedAt?: Date;
+  /** The essay shelf's Latest rule falls back to this when publishedAt is empty. */
+  createdAt?: Date;
   relevance?: number;
 }
 
@@ -54,6 +56,7 @@ async function searchArticlesFulltext(
       pillar,
       topic,
       publishedAt,
+      createdAt,
       MATCH(title, excerpt, body) AGAINST(${query} IN NATURAL LANGUAGE MODE) AS relevance
     FROM posts
     WHERE published = true
@@ -69,6 +72,7 @@ async function searchArticlesFulltext(
     pillar: string | null;
     topic: string | null;
     publishedAt: Date | null;
+    createdAt: Date | null;
     relevance: number;
   }>(result);
   return rows.map(a => ({
@@ -79,6 +83,7 @@ async function searchArticlesFulltext(
     slug: a.slug,
     category: a.topic ?? a.pillar ?? undefined,
     publishedAt: a.publishedAt ?? undefined,
+    createdAt: a.createdAt ?? undefined,
     relevance: a.relevance,
   }));
 }
@@ -90,7 +95,7 @@ async function searchArticlesLike(
 ): Promise<SearchResult[]> {
   const term = `%${query}%`;
   const result = await db.execute(sql`
-    SELECT id, title, excerpt, slug, pillar, topic, publishedAt
+    SELECT id, title, excerpt, slug, pillar, topic, publishedAt, createdAt
     FROM posts
     WHERE published = true
       AND (title LIKE ${term} OR excerpt LIKE ${term} OR body LIKE ${term})
@@ -105,6 +110,7 @@ async function searchArticlesLike(
     pillar: string | null;
     topic: string | null;
     publishedAt: Date | null;
+    createdAt: Date | null;
   }>(result);
   return rows.map(a => ({
     id: a.id,
@@ -114,6 +120,7 @@ async function searchArticlesLike(
     slug: a.slug,
     category: a.topic ?? a.pillar ?? undefined,
     publishedAt: a.publishedAt ?? undefined,
+    createdAt: a.createdAt ?? undefined,
   }));
 }
 

@@ -3,6 +3,7 @@ import { useState } from "react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { SITE_URL } from "@/lib/site";
+import { isPublicEssayHref } from "@/lib/shelf";
 
 /* ── data ─────────────────────────────────────────────────────────── */
 
@@ -64,6 +65,8 @@ const RELATED_ARTICLES = [
   { title: "The Rise and Fall of Christendom", href: "/writing/christendom-is-ending" },
   { title: "When the Church Married Empire", href: "/theology/history/the-constantinian-turn" },
 ];
+const RELATED_ON_SHELF = RELATED_ARTICLES.filter((a) => isPublicEssayHref(a.href));
+
 
 const FAQ_ITEMS = [
   {
@@ -268,31 +271,33 @@ export default function OrthodoxVsCatholic() {
         </div>
       </section>
 
-      {/* Related Articles */}
-      <section style={S.sectionWarm}>
-        <div style={S.wrapNarrow}>
-          <p style={S.eyebrow}>KEEP READING</p>
-          <h2 style={S.h2}>Go deeper</h2>
-          <div style={{ display: "flex", flexDirection: "column" }}>
-            {RELATED_ARTICLES.map((a) => (
-              <Link key={a.href} href={a.href} style={{ textDecoration: "none" }}>
-                <div style={{ padding: "20px 0", borderBottom: "1px solid rgba(0,0,0,0.08)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                  <span style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 400, color: "var(--ink)" }}>{a.title}</span>
-                  <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--mustard-text)" }}>Read</span>
-                </div>
-              </Link>
-            ))}
+      {/* Related Articles: only those on the public shelf (lib/shelf.ts). */}
+      {RELATED_ON_SHELF.length > 0 && (
+        <section style={S.sectionWarm}>
+          <div style={S.wrapNarrow}>
+            <p style={S.eyebrow}>KEEP READING</p>
+            <h2 style={S.h2}>Go deeper</h2>
+            <div style={{ display: "flex", flexDirection: "column" }}>
+              {RELATED_ON_SHELF.map((a) => (
+                <Link key={a.href} href={a.href} style={{ textDecoration: "none" }}>
+                  <div style={{ padding: "20px 0", borderBottom: "1px solid rgba(0,0,0,0.08)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                    <span style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 400, color: "var(--ink)" }}>{a.title}</span>
+                    <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--mustard-text)" }}>Read</span>
+                  </div>
+                </Link>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* CTA */}
       <section style={S.sectionDark}>
         <div style={{ maxWidth: "560px", margin: "0 auto", textAlign: "center" }}>
-          <h2 style={S.h2White}>The full post-Christian series</h2>
-          <p style={S.bodyTextWhite}>Sixty essays tracing every major tradition, fracture, and turning point in the history of Christianity. The Orthodox-Catholic schism is where it begins.</p>
-          <Link href="/post-christian" style={{ textDecoration: "none" }}>
-            <button style={{ background: "var(--bone)", color: "var(--ink)", border: "none", padding: "14px 28px", fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)", borderRadius: "2px", cursor: "pointer", borderBottom: "2px solid var(--mustard)" }}>Explore the Series</button>
+          <h2 style={S.h2White}>After Christendom</h2>
+          <p style={S.bodyTextWhite}>Essays on what happens to the church when a culture built on Christianity starts to move past it, and what faithfulness looks like on the other side.</p>
+          <Link href="/writing?section=after-christendom" style={{ textDecoration: "none" }}>
+            <button style={{ background: "var(--bone)", color: "var(--ink)", border: "none", padding: "14px 28px", fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)", borderRadius: "2px", cursor: "pointer", borderBottom: "2px solid var(--mustard)" }}>Read the essays</button>
           </Link>
         </div>
       </section>

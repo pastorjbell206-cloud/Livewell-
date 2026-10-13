@@ -62,16 +62,61 @@ export function htmlBodyToMarkdown(body: string): string {
     .replace(new RegExp(` ?${BR} ?`, "g"), "\\\n");
 }
 
+/** A Scripture reference as the imports print it: "Jeremiah 17:9", "1 John 1:8", "Isaiah 8:12–13". */
+const REF = String.raw`(?:[1-3][ \t]?)?[A-Z][a-z]+\.?[ \t]\d+:\d+(?:[–-]\d+)?`;
+
+/**
+ * Mechanical repairs for the shapes the Substack and chapter imports broke.
+ * Each one restores structure the source had; none changes a word.
+ *
+ *   - "• • •" ornaments (often wrapped in stray ** that then bolded a whole
+ *     section) become a plain section break;
+ *   - a "##" heading glued to the end of the previous sentence starts its
+ *     own line, and an empty "##" is dropped;
+ *   - a chapter's section titles set as bold numbered lines
+ *     ("**I. What We Get Wrong About Evil**") become real headings, so the
+ *     contents list finds them and the drop cap lands on prose;
+ *   - a "> quote" line followed directly by a paragraph ends the quote there,
+ *     instead of the quote swallowing the commentary after it;
+ *   - several verses run together in one quote ("…it?”— Jeremiah 17:9“These
+ *     people…") are set one per paragraph;
+ *   - paragraphs the import fused at the period ("altered.Before that edict")
+ *     are parted again.
+ */
+function repairImportedStructure(input: string): string {
+  let s = input.replace(/\r\n?/g, "\n");
+  s = s.replace(/\**[ \t]*•[ \t]*•[ \t]*•[ \t]*\**/g, "\n\n---\n\n");
+  s = s.replace(/([.!?”"’)*_])[ \t]*(#{2,6}[ \t]+\S)/g, "$1\n\n$2");
+  s = s.replace(/^#{1,6}[ \t]*$/gm, "");
+  s = s.replace(/^\*\*((?:[IVXLC]+|\d{1,2})\.[ \t]+[^*\n]{2,120}?)\*\*[ \t]*$/gm, "## $1");
+  s = s.replace(new RegExp(`([.!?”’"])\\((?=${REF}\\))`, "g"), "$1 (");
+  s = s
+    .split("\n")
+    .map((line) => {
+      if (/^>/.test(line)) return line.replace(new RegExp(`(—[ \\t]*${REF})(?=“)`, "g"), "$1\n>\n> ");
+      if (/^#|https?:|\]\(/.test(line)) return line;
+      // A lowercase word fused to a capital ("altered.Before"), or a proper noun
+      // fused to a common sentence opener ("Empire.For many"). "Life.Church"
+      // and the like are left alone.
+      return line
+        .replace(/(?<![A-Za-z])([a-z]{2,}[.!?][”’"]?)(?=[A-Z][a-z’']|[A-Z][ \t]|“[A-Z])/g, "$1\n\n")
+        .replace(/(?<![A-Za-z])([A-Z][a-z]+[.!?][”’"]?)(?=(?:A|An|And|As|But|By|For|He|If|In|It|No|Not|Of|On|Our|Set|She|So|That|The|Their|There|They|This|To|We|What|When|Yet)[ \t,])/g, "$1\n\n");
+    })
+    .join("\n");
+  s = s.replace(/^(>[^\n]*)\n(?=[^>\n])/gm, "$1\n\n");
+  return s.replace(/\n{3,}/g, "\n\n").replace(/\s+$/, "");
+}
+
 /**
  * normalizeEssayBody — tidy the artifacts the Substack RSS import left in a
  * body, after any HTML conversion. The import flattened each post's header
  * image into an empty link (`[](https://substackcdn.com/…)`) or replaced it
  * with leading `---` rules, and it wrote every em dash as three hyphens
- * between words ("instability---coalition"). The essay's own text is not
- * touched beyond those three mechanical repairs.
+ * between words ("instability---coalition"). It also broke some structure
+ * (see repairImportedStructure). The essay's own words are not touched.
  */
 export function normalizeEssayBody(body: string): string {
-  let s = htmlBodyToMarkdown(body);
+  let s = repairImportedStructure(htmlBodyToMarkdown(body));
   // Leading empty image links and thematic breaks, in any order.
   for (;;) {
     const next = s.replace(/^\s*(?:\[\]\([^)\s]*\)|-{3,}|\*{3,}|_{3,})[ \t]*(?:\r?\n|$)/, "");
@@ -81,4 +126,32 @@ export function normalizeEssayBody(body: string): string {
   // "word---word" is the import's spelling of an em dash.
   s = s.replace(/(\S)---(?=\S)/g, "$1—");
   return s.trimStart();
+}
+
+const plainTitle = (t: string) => t.toLowerCase().replace(/&[a-z#0-9]+;/g, " ").replace(/[^a-z0-9]+/g, " ").trim();
+
+/**
+ * The page sets the essay's title as its own H1, so a body that opens by
+ * repeating it (an H1, or any heading with the title's words) drops that
+ * line. A body that opens with a real section heading keeps it.
+ */
+export function stripDuplicateTitle(body: string, title: string): string {
+  const m = body.match(/^\s*(#{1,6})[ \t]+(.*?)[ \t#]*(?:\n+|$)/);
+  if (!m) return body;
+  return m[1] === "#" || plainTitle(m[2]) === plainTitle(title) ? body.slice(m[0].length) : body;
+}
+
+/**
+ * Whether the opening paragraph can carry the drop cap: real prose, not a
+ * one-line epigraph or a line set wholly in bold or italics (a giant initial
+ * beside a short emphasized line reads as a mistake).
+ */
+export function opensWithProse(markdown: string): boolean {
+  const first = markdown
+    .split(/\n{2,}/)
+    .map((b) => b.trim())
+    .find((b) => b && !/^(?:#|>|[-*_]{3,}$|[-*+][ \t]|\d+[.)][ \t]|!\[|\|)/.test(b));
+  if (!first) return false;
+  if (/^(\*{1,3}|_{1,3})[\s\S]*\1$/.test(first)) return false;
+  return first.length >= 140;
 }

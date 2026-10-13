@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { htmlBodyToMarkdown, isHtmlBody, normalizeEssayBody } from "./html-body";
+import { htmlBodyToMarkdown, isHtmlBody, normalizeEssayBody, opensWithProse, stripDuplicateTitle } from "./html-body";
 
 describe("htmlBodyToMarkdown", () => {
   it("returns a Markdown body untouched", () => {
@@ -72,5 +72,52 @@ describe("normalizeEssayBody", () => {
 
   it("still converts an HTML body", () => {
     expect(normalizeEssayBody("<p>One.</p><p>Two.</p>")).toBe("One.\n\nTwo.");
+  });
+});
+
+describe("normalizeEssayBody: the import's broken structure", () => {
+  it("turns ornament breaks into section breaks and frees the headings glued to them", () => {
+    const out = normalizeEssayBody("Intro line here.\n\n**• • •****## The Day\nIn 313 AD it changed.• • •**\n\n## Next");
+    expect(out).toBe("Intro line here.\n\n---\n\n## The Day\nIn 313 AD it changed.\n\n---\n\n## Next");
+  });
+
+  it("parts paragraphs fused at the period, and leaves brand names alone", () => {
+    expect(normalizeEssayBody("It was altered.Before that, a cost. In the Roman Empire.For many, relief.")).toBe(
+      "It was altered.\n\nBefore that, a cost. In the Roman Empire.\n\nFor many, relief."
+    );
+    const brand = "Churches like Life.Church grew fast. See e.g.Acts and the U.S.Army.";
+    expect(normalizeEssayBody(brand)).toBe(brand);
+  });
+
+  it("ends a quote at its own line and sets run-together verses one per paragraph", () => {
+    expect(normalizeEssayBody("> He was not a monster.\nHe was a man.")).toBe("> He was not a monster.\n\nHe was a man.");
+    expect(normalizeEssayBody("> “A.”— Jeremiah 17:9“B.”— 1 John 1:8")).toBe("> “A.”— Jeremiah 17:9\n>\n> “B.”— 1 John 1:8");
+    expect(normalizeEssayBody("> who can understand it?(Jeremiah 17:9)")).toBe("> who can understand it? (Jeremiah 17:9)");
+  });
+
+  it("makes bold numbered section titles real headings and drops empty ones", () => {
+    expect(normalizeEssayBody("**I. What We Get Wrong About Evil**\n\nProse.\n\n##")).toBe(
+      "## I. What We Get Wrong About Evil\n\nProse."
+    );
+    // An ordinary bold sentence is not a heading.
+    expect(normalizeEssayBody("**This matters.**")).toBe("**This matters.**");
+  });
+});
+
+describe("stripDuplicateTitle", () => {
+  it("drops an opening H1 or a heading that repeats the title, and keeps a real first section", () => {
+    expect(stripDuplicateTitle("# Anything\nBody", "Title")).toBe("Body");
+    expect(stripDuplicateTitle("## Every Generation Was Sure It Was Right\n\nBody", "Every Generation Was Sure It Was Right")).toBe("Body");
+    expect(stripDuplicateTitle("## A Bible on His Desk\nBody", "Every Generation Was Sure It Was Right")).toBe("## A Bible on His Desk\nBody");
+  });
+});
+
+describe("opensWithProse", () => {
+  it("gives the drop cap only to a real opening paragraph", () => {
+    const prose = "When we try to picture the people who did the worst things in church history, we tend to reach for a particular image: someone who knew, and chose to proceed anyway.";
+    expect(opensWithProse(`## I. Title\n\n${prose}`)).toBe(true);
+    expect(opensWithProse(`*“A one-line epigraph set in italics.”*\n\n${prose}`)).toBe(false);
+    expect(opensWithProse("He kept a Bible on his desk.")).toBe(false);
+    expect(opensWithProse("")).toBe(false);
   });
 });

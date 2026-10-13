@@ -2,6 +2,9 @@ import { Link } from "wouter";
 import { useState } from "react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { isPublicEssay } from "@/lib/shelf";
+
+const FULL_ESSAY = "young-adults-coming-back-church";
 
 const FAQ_ITEMS = [
   {
@@ -119,20 +122,23 @@ export default function WhyDoYoungPeopleLeaveChurch() {
         </div>
       </section>
 
-      <section style={{ background: "var(--charcoal)", padding: "80px 24px" }}>
-        <div style={{ maxWidth: "600px", margin: "0 auto", textAlign: "center" }}>
-          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "24px" }}>GO DEEPER</p>
-          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--charcoal-fg)", marginBottom: "16px" }}>Read the full essay</h2>
-          <p style={{ fontFamily: "var(--U)", fontSize: "15px", color: "rgba(255,255,255,0.6)", lineHeight: 1.7, marginBottom: "32px", maxWidth: "48ch", marginLeft: "auto", marginRight: "auto" }}>
-            The full article traces the research, names the institutional failures, and asks what a church worth staying for would look like.
-          </p>
-          <Link href="/writing/young-adults-coming-back-church" style={{ textDecoration: "none" }}>
-            <span style={{ display: "inline-block", background: "var(--bone)", color: "var(--ink)", fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, letterSpacing: "0.06em", padding: "15px 32px", borderRadius: "2px", borderBottom: "2px solid var(--mustard)" }}>
-              Read the full article
-            </span>
-          </Link>
-        </div>
-      </section>
+      {/* The full essay, shown only while it is on the public shelf (lib/shelf.ts). */}
+      {isPublicEssay(FULL_ESSAY) && (
+        <section style={{ background: "var(--charcoal)", padding: "80px 24px" }}>
+          <div style={{ maxWidth: "600px", margin: "0 auto", textAlign: "center" }}>
+            <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "24px" }}>GO DEEPER</p>
+            <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--charcoal-fg)", marginBottom: "16px" }}>Read the full essay</h2>
+            <p style={{ fontFamily: "var(--U)", fontSize: "15px", color: "rgba(255,255,255,0.6)", lineHeight: 1.7, marginBottom: "32px", maxWidth: "48ch", marginLeft: "auto", marginRight: "auto" }}>
+              The full article traces the research, names the institutional failures, and asks what a church worth staying for would look like.
+            </p>
+            <Link href={`/writing/${FULL_ESSAY}`} style={{ textDecoration: "none" }}>
+              <span style={{ display: "inline-block", background: "var(--bone)", color: "var(--ink)", fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, letterSpacing: "0.06em", padding: "15px 32px", borderRadius: "2px", borderBottom: "2px solid var(--mustard)" }}>
+                Read the full article
+              </span>
+            </Link>
+          </div>
+        </section>
+      )}
 
       <section style={{ background: "var(--bone-warm)", padding: "64px 24px" }}>
         <div style={{ maxWidth: "720px", margin: "0 auto" }}>

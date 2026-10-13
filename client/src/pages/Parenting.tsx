@@ -7,6 +7,7 @@ import PillarLeadMagnet from "@/components/PillarLeadMagnet";
 import { PullQuote, StatementBand } from "@/components/EditorialBlocks";
 import SubjectShelf from "@/components/SubjectShelf";
 import { subjectById } from "@/lib/subjects";
+import { filterPublicPosts } from "@/lib/shelf";
 
 export default function Parenting() {
 
@@ -42,6 +43,7 @@ export default function Parenting() {
       readTime: "9 min read"
     }
   ];
+  const featured = filterPublicPosts(FEATURED_ARTICLES);
 
   const AGE_GROUPS = [
     {
@@ -92,31 +94,34 @@ export default function Parenting() {
           </div>
       </section>
 
-      {/* FEATURED ARTICLES */}
-      <section style={{ background: "var(--paper)", padding: "80px 20px" }}>
-        <div style={{ maxWidth: "1400px", margin: "0 auto" }}>
-          <h2 style={{ fontSize: "36px", fontWeight: "bold", marginBottom: "48px", fontFamily: "var(--F)", color: "var(--ink)" }}>
-            Essential Reading for Parents
-          </h2>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(300px, 100%), 1fr))", gap: "32px" }}>
-            {FEATURED_ARTICLES.map((article, i) => (
-              <Link key={i} href={"/writing/" + article.slug} style={{ textDecoration: "none" }}>
-                <div style={{ background: "var(--card)", padding: "32px", borderRadius: "8px", border: "1px solid var(--border)", cursor: "pointer", height: "100%", display: "flex", flexDirection: "column" }}>
-                  <div style={{ fontSize: "11px", fontWeight: "bold", color: "var(--gold)", marginBottom: "12px", textTransform: "uppercase" }}>
-                    {article.topic}
+      {/* FEATURED ARTICLES: only those on the public shelf (lib/shelf.ts);
+          the section steps aside while none of them is. */}
+      {featured.length > 0 && (
+        <section style={{ background: "var(--paper)", padding: "80px 20px" }}>
+          <div style={{ maxWidth: "1400px", margin: "0 auto" }}>
+            <h2 style={{ fontSize: "36px", fontWeight: "bold", marginBottom: "48px", fontFamily: "var(--F)", color: "var(--ink)" }}>
+              Essential Reading for Parents
+            </h2>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(300px, 100%), 1fr))", gap: "32px" }}>
+              {featured.map((article, i) => (
+                <Link key={i} href={"/writing/" + article.slug} style={{ textDecoration: "none" }}>
+                  <div style={{ background: "var(--card)", padding: "32px", borderRadius: "8px", border: "1px solid var(--border)", cursor: "pointer", height: "100%", display: "flex", flexDirection: "column" }}>
+                    <div style={{ fontSize: "11px", fontWeight: "bold", color: "var(--gold)", marginBottom: "12px", textTransform: "uppercase" }}>
+                      {article.topic}
+                    </div>
+                    <h3 style={{ fontSize: "18px", fontWeight: "bold", marginBottom: "16px", color: "var(--ink)", flex: 1, lineHeight: "1.4" }}>
+                      {article.title}
+                    </h3>
+                    <div style={{ fontSize: "12px", color: "var(--ink3)" }}>
+                      {article.readTime}
+                    </div>
                   </div>
-                  <h3 style={{ fontSize: "18px", fontWeight: "bold", marginBottom: "16px", color: "var(--ink)", flex: 1, lineHeight: "1.4" }}>
-                    {article.title}
-                  </h3>
-                  <div style={{ fontSize: "12px", color: "var(--ink3)" }}>
-                    {article.readTime}
-                  </div>
-                </div>
-              </Link>
-            ))}
+                </Link>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       <StatementBand tone="dark" eyebrow="Formation, not performance">
         You are not raising a performance; you are raising a person who will believe, or not, on their own.

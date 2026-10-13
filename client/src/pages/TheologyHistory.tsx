@@ -122,7 +122,7 @@ export default function TheologyHistory() {
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
-            <Link href="/theology" style={{ color: "inherit" }}>Theological Depth</Link> · Pillar Two
+            <Link href="/study" style={{ color: "inherit" }}>Study</Link> · Church history
           </div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(34px, 5.5vw, 60px)", fontWeight: 400, lineHeight: 1.04, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "18ch" }}>
             The story you were born into.
@@ -345,7 +345,7 @@ export default function TheologyHistory() {
       {/* FOOTER NAV */}
       <section style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--s-4)", color: "var(--bone)" }}>
         <div style={{ ...wrap, display: "flex", flexWrap: "wrap", gap: "16px", justifyContent: "space-between", alignItems: "center" }}>
-          <Link href="/theology" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard)" }}>All of Theological Depth</Link>
+          <Link href="/study" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard)" }}>Everything in Study</Link>
           <Link href="/theology/doctrine/god-and-trinity" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard)" }}>See where the creeds came from →</Link>
         </div>
       </section>

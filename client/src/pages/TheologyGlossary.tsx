@@ -62,7 +62,7 @@ export default function TheologyGlossary() {
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
-            <Link href="/theology" style={{ color: "inherit" }}>Theological Depth</Link> · Glossary
+            <Link href="/study" style={{ color: "inherit" }}>Study</Link> · Glossary
           </div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5vw, 52px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "20ch" }}>
             Every word, explained plainly.

@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Command } from "cmdk";
 import { useLocation } from "wouter";
 import { trpc } from "@/lib/trpc";
+import { essayDate, isPublicEssay } from "@/lib/shelf";
 
 interface SearchResult {
   id: number;
@@ -11,6 +12,8 @@ interface SearchResult {
   slug?: string;
   url?: string;
   category?: string;
+  publishedAt?: unknown;
+  createdAt?: unknown;
 }
 
 const STATIC_PAGES: { label: string; path: string }[] = [
@@ -18,7 +21,7 @@ const STATIC_PAGES: { label: string; path: string }[] = [
   { label: "Writing", path: "/writing" },
   { label: "Books", path: "/books" },
   { label: "Tools", path: "/tools" },
-  { label: "Reading Paths", path: "/reading-paths" },
+  { label: "Study", path: "/study" },
   { label: "About", path: "/about" },
 ];
 
@@ -87,7 +90,11 @@ export default function CommandPalette({ defaultOpen = false }: { defaultOpen?: 
     { enabled: query.length > 1 },
   );
 
-  const results: SearchResult[] = searchQuery.data?.results ?? [];
+  // Retired essays never surface in search (lib/shelf.ts). The post-cutoff
+  // rule reads the same date everywhere: publishedAt, else createdAt.
+  const results: SearchResult[] = (searchQuery.data?.results ?? []).filter(
+    (r) => r.type !== "article" || isPublicEssay(r.slug ?? "", essayDate(r))
+  );
   const articles = results.filter((r) => r.type === "article");
   const resources = results.filter((r) => r.type === "resource");
   const books = results.filter((r) => r.type === "book");

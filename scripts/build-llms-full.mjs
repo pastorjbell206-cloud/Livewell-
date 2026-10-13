@@ -10,13 +10,14 @@
  * single fetch.
  *
  * Deterministic and dependency-free: reads the committed content manifests and
- * the essay seed. No database needed. Fails soft per source.
+ * the essay shelf. No database needed. Fails soft per source.
  *
  *   node scripts/build-llms-full.mjs
  */
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { loadEssayShelf } from "./lib/shelf.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
@@ -31,9 +32,13 @@ function readJson(rel) {
   }
 }
 
-/** Collapse whitespace and clip a summary to one clean line. */
+/**
+ * Collapse whitespace and clip a summary to one clean line. An em-dash becomes
+ * a comma (the house rule in scripts/purge-emdashes.mjs): this file is held to
+ * zero em-dashes by validate-no-emdash.mjs.
+ */
 function oneLine(s, max = 200) {
-  const t = String(s ?? "").replace(/\s+/g, " ").trim();
+  const t = String(s ?? "").replace(/ *\u2014 */g, ", ").replace(/\s+/g, " ").trim();
   return t.length > max ? t.slice(0, max - 1).replace(/\s+\S*$/, "") + "…" : t;
 }
 
@@ -47,14 +52,17 @@ function entryLine(title, url, summary) {
 const SECTIONS = [
   {
     heading: "Essays",
-    intro: "Long-form essays on theology, culture, marriage, parenting, doubt, and pastoral ministry.",
+    intro: "The essays on the public shelf, in the order the site shelves them: the church after Christendom, faith and power, the long history of the faith, and reading the Bible in its world.",
     build() {
-      const data = readJson("client/src/data/content-data.json");
-      const posts = Array.isArray(data) ? data : data?.posts;
-      if (!Array.isArray(posts)) return [];
-      return posts
-        .filter((p) => p && p.slug && p.title && p.published !== false)
-        .map((p) => entryLine(p.title, `${SITE}/writing/${p.slug}`, p.excerpt || p.summary || p.subtitle));
+      // Only the public shelf (client/src/lib/shelf.json): retired essays are
+      // noindex on the site and stay out of this index too. Titles and lines
+      // come from the shelf or a rewrite, never from the static seed, which
+      // still carries an AI draft under one of the shelf's slugs.
+      const shelf = loadEssayShelf(ROOT);
+      return shelf.liveEssays().map((e) => {
+        const rewrite = shelf.overrideRecords.get(e.slug);
+        return entryLine(rewrite?.title || e.title, `${SITE}/writing/${e.slug}`, rewrite ? rewrite.excerpt : e.blurb || "");
+      });
     },
   },
   {

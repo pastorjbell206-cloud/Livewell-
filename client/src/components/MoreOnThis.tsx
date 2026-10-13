@@ -65,8 +65,8 @@ export default function MoreOnThis({ href, title }: { href: string; title?: stri
             ))}
           </ul>
           <p style={{ margin: "var(--s-4) 0 0", fontFamily: "var(--U)", fontSize: "13px" }}>
-            <Link href="/explore" style={{ color: "var(--ink)", fontWeight: 600, textDecoration: "none", borderBottom: "1px solid var(--mustard)" }}>
-              Everything else is in the Library
+            <Link href="/search" style={{ color: "var(--ink)", fontWeight: 600, textDecoration: "none", borderBottom: "1px solid var(--mustard)" }}>
+              Search the whole site
             </Link>
           </p>
         </div>

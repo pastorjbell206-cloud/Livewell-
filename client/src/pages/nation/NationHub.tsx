@@ -73,8 +73,8 @@ export default function NationHub() {
           <div style={{ ...card, background: "var(--charcoal)", borderTop: "3px solid var(--mustard)", color: "var(--bone)", display: "flex", flexDirection: "column", justifyContent: "center" }}>
             <p style={{ fontFamily: "var(--F)", fontSize: "20px", lineHeight: 1.4, color: "var(--bone)", marginBottom: "12px" }}>Render to Caesar what is Caesar's. And to God what is God's.</p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: "14px" }}>
-              <Link href="/disruption" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard)", fontSize: "13px" }}>Prophetic Disruption →</Link>
-              <Link href="/justice" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard)", fontSize: "13px" }}>Prophetic Justice →</Link>
+              <Link href="/writing?section=faith-and-power" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard)", fontSize: "13px" }}>Faith and Power essays →</Link>
+              <Link href="/justice/timeline" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard)", fontSize: "13px" }}>The injustice timeline →</Link>
             </div>
           </div>
         </div>

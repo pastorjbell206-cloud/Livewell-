@@ -2,6 +2,8 @@ import { Link } from "wouter";
 import { useState } from "react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { ShelfReadingList } from "@/components/ShelfReadingList";
+import { isPublicEssay } from "@/lib/shelf";
 import { LandingSignup } from "@/components/LandingSignup";
 
 const ARTICLES = [
@@ -12,6 +14,17 @@ const ARTICLES = [
   { title: "The Sexual Abuse Crisis in the Church", slug: "sexual-abuse-crisis-in-the-church" },
   { title: "How to Find a Church That Won't Hurt You", slug: "finding-a-good-church" },
   { title: "Reconstructing Faith After Deconstruction", slug: "reconstructing-faith" },
+];
+
+const FIND_A_CHURCH = "how-to-find-a-church-worth-joining";
+
+// Live care resources for the same need, listed when none of the essays
+// above is on the public shelf (components/ShelfReadingList).
+const WHILE_OFF_SHELF = [
+  { title: "Alone in a crowded church: a study on loneliness and belonging", href: "/studyguides/alone-in-a-crowded-church" },
+  { title: "Mental health: a Bible study on the weight you carry", href: "/studyguides/mental-health" },
+  { title: "Lament: a Bible study on praying your pain", href: "/studyguides/lament" },
+  { title: "Eight weeks of taking your questions seriously", href: "/plans/deconstruction" },
 ];
 
 const EXTERNAL_RESOURCES = [
@@ -119,16 +132,7 @@ export default function ChurchHurt() {
         <div style={{ maxWidth: "720px", margin: "0 auto" }}>
           <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "24px" }}>THE ESSAYS</p>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--ink)", marginBottom: "32px" }}>Writing that names the thing the church will not name</h2>
-          <div style={{ display: "flex", flexDirection: "column" }}>
-            {ARTICLES.map((a) => (
-              <Link key={a.slug} href={`/writing/${a.slug}`} style={{ textDecoration: "none" }}>
-                <div style={{ padding: "20px 0", borderBottom: "1px solid rgba(0,0,0,0.08)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                  <span style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 400, color: "var(--ink)" }}>{a.title}</span>
-                  <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--mustard-text)" }}>Read</span>
-                </div>
-              </Link>
-            ))}
-          </div>
+          <ShelfReadingList essays={ARTICLES} fallback={WHILE_OFF_SHELF} />
         </div>
       </section>
 
@@ -187,19 +191,21 @@ export default function ChurchHurt() {
         </div>
       </section>
 
-      {/* Next Step */}
-      <section style={{ background: "var(--bone)", padding: "80px 24px" }}>
-        <div style={{ maxWidth: "720px", margin: "0 auto", textAlign: "center" }}>
-          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "24px" }}>WHEN YOU ARE READY</p>
-          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--ink)", marginBottom: "16px" }}>Finding a church that will not hurt you</h2>
-          <p style={{ fontFamily: "var(--U)", fontSize: "16px", color: "var(--ink-muted, #5A5448)", lineHeight: 1.7, marginBottom: "32px", maxWidth: "52ch", marginLeft: "auto", marginRight: "auto" }}>
-            Not everyone will go back to church. That is okay. But if you want to, this essay names what to look for and what to avoid.
-          </p>
-          <Link href="/writing/how-to-find-a-church-worth-joining" style={{ textDecoration: "none" }}>
-            <button style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", border: "none", padding: "12px 28px", fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)", borderRadius: "3px", cursor: "pointer" }}>Read the Essay</button>
-          </Link>
-        </div>
-      </section>
+      {/* Next Step, shown only while the essay it points to is on the public shelf. */}
+      {isPublicEssay(FIND_A_CHURCH) && (
+        <section style={{ background: "var(--bone)", padding: "80px 24px" }}>
+          <div style={{ maxWidth: "720px", margin: "0 auto", textAlign: "center" }}>
+            <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "24px" }}>WHEN YOU ARE READY</p>
+            <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--ink)", marginBottom: "16px" }}>Finding a church that will not hurt you</h2>
+            <p style={{ fontFamily: "var(--U)", fontSize: "16px", color: "var(--ink-muted, #5A5448)", lineHeight: 1.7, marginBottom: "32px", maxWidth: "52ch", marginLeft: "auto", marginRight: "auto" }}>
+              Not everyone will go back to church. That is okay. But if you want to, this essay names what to look for and what to avoid.
+            </p>
+            <Link href={`/writing/${FIND_A_CHURCH}`} style={{ textDecoration: "none" }}>
+              <button style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", border: "none", padding: "12px 28px", fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)", borderRadius: "3px", cursor: "pointer" }}>Read the Essay</button>
+            </Link>
+          </div>
+        </section>
+      )}
     </Layout>
   );
 }

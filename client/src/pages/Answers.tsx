@@ -11,6 +11,7 @@ import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { ANSWERS } from "@/data/answers";
 import { Link } from "wouter";
+import { isPublicEssay } from "@/lib/shelf";
 
 const wrap = { maxWidth: "var(--w-content)", margin: "0 auto" } as const;
 
@@ -29,7 +30,7 @@ export default function Answers() {
     <Layout>
       <SEOMeta
         title="Honest Answers to Hard Questions About Christianity"
-        description="Did the resurrection happen? Why trust the Bible? If God is good, why suffering? Straight answers from a pastor who was an atheist first, each with the full essay behind it."
+        description="Did the resurrection happen? Why trust the Bible? If God is good, why suffering? Straight answers from a pastor who was an atheist first, with the essay or book that goes further where one is on the site."
         url="https://www.livewellbyjamesbell.co/answers"
         structuredData={faqSchema}
       />
@@ -42,10 +43,10 @@ export default function Answers() {
             The questions people actually ask.
           </h1>
           <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.75)", maxWidth: "60ch" }}>
-            Straight answers first, two minutes each. Behind every one stands the
-            full essay, and behind the essay, the book. Go as deep as you want.
-            Written by a pastor who was an atheist first, so the questions get
-            taken seriously, not managed.
+            Straight answers first, two minutes each. Where the full essay is on
+            the site, or a book takes the question further, it is linked beneath
+            the answer. Written by a pastor who was an atheist first, so the
+            questions get taken seriously, not managed.
           </p>
         </div>
       </section>
@@ -90,15 +91,22 @@ export default function Answers() {
                   {p}
                 </p>
               ))}
-              {/* The depth ladder */}
-              <div style={{ background: "var(--card)", border: "1px solid var(--line)", borderLeft: "2px solid var(--mustard)", padding: "16px 20px", marginTop: "18px", display: "flex", flexDirection: "column", gap: "6px" }}>
-                <Link href={`/writing/${a.essaySlug}`} style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--ink)", textDecoration: "none" }}>
-                  The full essay: {a.essayTitle} →
-                </Link>
-                <Link href={a.bookHref} style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 500, color: "var(--ink-muted)", textDecoration: "none" }}>
-                  The book behind it: {a.bookTitle}
-                </Link>
-              </div>
+              {/* The depth ladder: the essay only while it is on the public
+                  shelf (lib/shelf.ts), the book when one takes the question up. */}
+              {(isPublicEssay(a.essaySlug) || (a.bookHref && a.bookTitle)) && (
+                <div style={{ background: "var(--card)", border: "1px solid var(--line)", borderLeft: "2px solid var(--mustard)", padding: "16px 20px", marginTop: "18px", display: "flex", flexDirection: "column", gap: "6px" }}>
+                  {isPublicEssay(a.essaySlug) && (
+                    <Link href={`/writing/${a.essaySlug}`} style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--ink)", textDecoration: "none" }}>
+                      The full essay: {a.essayTitle} →
+                    </Link>
+                  )}
+                  {a.bookHref && a.bookTitle && (
+                    <Link href={a.bookHref} style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 500, color: "var(--ink-muted)", textDecoration: "none" }}>
+                      The book behind it: {a.bookTitle}
+                    </Link>
+                  )}
+                </div>
+              )}
             </article>
           ))}
         </div>
@@ -111,7 +119,7 @@ export default function Answers() {
             Your question is not on this page? Someone has probably asked it before,
             and it was answered at length.
           </p>
-          <Link href="/faq" style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--mustard)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px" }}>
+          <Link href="/theology/questions" style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--mustard)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px" }}>
             Browse every question →
           </Link>
         </div>
