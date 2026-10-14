@@ -28,23 +28,23 @@ export const META_DESCRIPTION =
   "Learning to follow Jesus and live well in post-Christian America. A Study Bible with notes on every chapter, the church's long history, essays, and books by James Bell.";
 
 /*
- * The home page hero. Every sentence here is already on the site in James's
- * own words (the home page's mission line and /about), so the front page
- * introduces him without adding a claim. scripts/prerender-heads.mjs paints
- * the same strings into the static HTML for "/", so keep each one a plain
- * double-quoted string on one line. (The headline's hyphen is a non-breaking
- * one, U+2011, so "post-Christian" never splits across lines.)
+ * The home page hero. James chose the two paragraphs below on 2026-10-14
+ * (replacing the earlier lines drawn from /about); the facts in HOME_WHO are
+ * the confirmed biography. scripts/prerender-heads.mjs paints the same strings
+ * into the static HTML for "/", so keep each one a plain double-quoted string
+ * on one line. (The headline's hyphen is a non-breaking one, U+2011, so
+ * "post-Christian" never splits across lines.)
  */
 export const HOME_HEADLINE =
   "Learning to follow Jesus — and live well — in post‑Christian America.";
 
-/** Why the site exists (/about, "The heart behind it"). */
+/** Why the site exists (also the pull quote at the top of /about). */
 export const HOME_WHY =
-  "What I want is simple to say and long to do. I want the historic faith — the creed, the cross, the resurrection, the kingdom — held out in ordinary language to people who have every cultural permission to ignore it.";
+  "What does it look like to follow Jesus when the culture around you no longer shares your assumptions? The early church knew. So did believers in every age who lived without power. This site is here to help you study the Bible in its context, learn the church's long history, and think through the hardest questions of our time with patience and depth.";
 
-/** Who is writing (/about, the opening). */
+/** Who is writing. */
 export const HOME_WHO =
-  "I was an atheist before I was a Christian. I bring it up because it changed how I write and not because I want to build a personality on it. Mostly it means I know what the objections sound like from the inside, and I am not willing to answer them with something thin.";
+  "I'm James Bell, a pastor, Susanna's husband, and dad to five sons. I was raised without a father and came to faith as an adult, after years as an atheist, so I know the objections from the inside. I founded the Pastors Connection Network, and I write for anyone who wants a faith deep enough to handle real questions.";
 
 /** James's portrait, the same photograph /about and the author card use. */
 export const PORTRAIT_URL =
