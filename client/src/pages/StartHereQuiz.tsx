@@ -4,7 +4,9 @@ import { SEOMeta } from "@/components/SEOMeta";
 import MinimalNav from "@/components/MinimalNav";
 import Footer from "@/components/Footer";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
+import { CrisisBlock } from "@/components/CrisisBlock";
 import { readStoredJSON, removeStoredJSON, writeStoredJSON } from "@/lib/storage";
+import { isPublicEssay } from "@/lib/shelf";
 
 const QUESTIONS = [
   {
@@ -12,21 +14,21 @@ const QUESTIONS = [
     title: "What's weighing heaviest right now?",
     options: [
       { label: "Marriage", value: "marriage", color: "var(--gold)" },
-      { label: "Parenting", value: "parenting", color: "#9B8BA8" },
-      { label: "Faith & Doubt", value: "doubt", color: "#8B6B7F" },
-      { label: "Calling & Purpose", value: "calling", color: "#6B8E6F" },
-      { label: "Justice & Culture", value: "justice", color: "#8B4545" },
-      { label: "Pastoral Ministry", value: "pastoral", color: "#6B8E6F" }
+      { label: "Parenting", value: "parenting", color: "var(--accent-mauve)" },
+      { label: "Faith & Doubt", value: "doubt", color: "var(--accent-plum)" },
+      { label: "Calling & Purpose", value: "calling", color: "var(--accent-moss)" },
+      { label: "Justice & Culture", value: "justice", color: "var(--accent-oxide)" },
+      { label: "Pastoral Ministry", value: "pastoral", color: "var(--accent-moss)" }
     ]
   },
   {
     id: "situation",
     title: "How would you describe where you are?",
     options: [
-      { label: "In Crisis", value: "crisis", color: "#8B4545" },
-      { label: "Searching for Answers", value: "searching", color: "#6B8E6F" },
+      { label: "In Crisis", value: "crisis", color: "var(--accent-oxide)" },
+      { label: "Searching for Answers", value: "searching", color: "var(--accent-moss)" },
       { label: "Growing Deeper", value: "growing", color: "var(--ink)" },
-      { label: "Leading Others", value: "leading", color: "#6B8E6F" }
+      { label: "Leading Others", value: "leading", color: "var(--accent-moss)" }
     ]
   },
   {
@@ -34,12 +36,26 @@ const QUESTIONS = [
     title: "What kind of content helps you most?",
     options: [
       { label: "Deep Articles", value: "articles", color: "var(--gold)" },
-      { label: "Practical Tools", value: "tools", color: "#6B8E6F" },
-      { label: "Books", value: "books", color: "#8B6B7F" },
-      { label: "Devotionals", value: "devotionals", color: "#6B9B8B" }
+      { label: "Practical Tools", value: "tools", color: "var(--accent-moss)" },
+      { label: "Books", value: "books", color: "var(--accent-plum)" },
+      { label: "Devotionals", value: "devotionals", color: "var(--accent-teal)" }
     ]
   }
 ];
+
+/* The third question used to change nothing: every combination fell through
+ * to an essay list. FIRST_STEPS answers it. "Practical Tools" leads with the
+ * tool or self-check for the concern, "Devotionals" with a daily path, and
+ * "Books" moves the book ahead of the essays. `help` is where "In Crisis"
+ * sends the reader first, before any reading. */
+const FIRST_STEPS: Record<string, { help: { href: string; label: string }; tool: { href: string; label: string }; daily: { href: string; label: string } }> = {
+  marriage: { help: { href: "/help/marriage", label: "My marriage is falling apart" }, tool: { href: "/tools/marriage-assessment", label: "The Marriage Assessment" }, daily: { href: "/plans/marriage", label: "Eight Weeks Toward Each Other" } },
+  parenting: { help: { href: "/help", label: "Find help for what you are facing" }, tool: { href: "/tools/parenting-guide", label: "The Parenting Stage Guide" }, daily: { href: "/tools/family-devotions", label: "The Family Devotion Builder" } },
+  doubt: { help: { href: "/help/doubt", label: "I'm not sure I believe anymore" }, tool: { href: "/tools/test-the-case", label: "Test the Case: Push Back at Every Step" }, daily: { href: "/plans/deconstruction", label: "Eight Weeks of Taking Your Questions Seriously" } },
+  calling: { help: { href: "/help/decisions", label: "How do I know what God wants me to do?" }, tool: { href: "/life/assessment", label: "The Whole-Life Assessment" }, daily: { href: "/plans/whole-life", label: "Eight Weeks Toward One Undivided Life" } },
+  justice: { help: { href: "/help", label: "Find help for what you are facing" }, tool: { href: "/disruption/consistency", label: "The Consistency Check" }, daily: { href: "/plans/whole-life", label: "Eight Weeks Toward One Undivided Life" } },
+  pastoral: { help: { href: "/help", label: "Find help for what you are facing" }, tool: { href: "/tools/emotional-health", label: "The Emotional Health Self-Check" }, daily: { href: "/plans/whole-life", label: "Eight Weeks Toward One Undivided Life" } },
+};
 
 /* Session mirror (roadmap HS-5). One-sitting entry flow: answers, step, and
  * the submitted flag survive an accidental refresh via sessionStorage, and
@@ -47,9 +63,16 @@ const QUESTIONS = [
 
 // The article titles here are display copies of the real titles; the
 // start-quiz-titles test keeps them from drifting when essays are retitled.
+// Only essays on the public shelf are shown (client/src/lib/shelf.json), so
+// each path also names live pages to start from: its Find Help page, its
+// eight-week plan, or a study.
 export const READING_PATHS = {
   "marriage-crisis-articles": {
     title: "Marriage Under Strain",
+    pages: [
+      { title: "My marriage is falling apart", href: "/help/marriage", kind: "Find Help" },
+      { title: "Eight Weeks Toward Each Other", href: "/plans/marriage", kind: "Eight-week plan" }
+    ],
     articles: [
       { title: "When Romance Left Covenant Remains", slug: "when-romance-left-covenant-remains" },
       { title: "What the Resentment in Your Marriage Is Telling You", slug: "the-resentment-in-your-marriage" },
@@ -59,6 +82,10 @@ export const READING_PATHS = {
   },
   "marriage-searching-articles": {
     title: "Building Covenant Strength",
+    pages: [
+      { title: "Why Do Marriages Drift Apart, and How Do You Stop It?", href: "/life/marriage-the-long-covenant", kind: "Everyday Life" },
+      { title: "Eight Weeks Toward Each Other", href: "/plans/marriage", kind: "Eight-week plan" }
+    ],
     articles: [
       { title: "When Romance Left Covenant Remains", slug: "when-romance-left-covenant-remains" },
       { title: "What Are You Really Promising in Your Marriage Vows?", slug: "the-covenant-you-didnt-understand" },
@@ -68,6 +95,10 @@ export const READING_PATHS = {
   },
   "parenting-crisis-articles": {
     title: "Parenting Through Uncertainty",
+    pages: [
+      { title: "Parenting is harder than anyone said", href: "/help/parenting", kind: "Find Help" },
+      { title: "Eight Weeks for the Worn-Out Parent", href: "/plans/parenting", kind: "Eight-week plan" }
+    ],
     articles: [
       { title: "When Your Teenager Says They Don't Believe Anymore", slug: "teenager-losing-faith" },
       { title: "How to Talk to Your Kids About Faith When You're Not Sure Yourself", slug: "how-to-talk-kids-faith-doubt" },
@@ -77,6 +108,10 @@ export const READING_PATHS = {
   },
   "doubt-crisis-articles": {
     title: "Finding Faith in the Questions",
+    pages: [
+      { title: "I'm not sure I believe anymore", href: "/help/doubt", kind: "Find Help" },
+      { title: "Eight Weeks for When You're Not Sure Anymore", href: "/plans/doubt", kind: "Eight-week plan" }
+    ],
     articles: [
       { title: "What If Christianity Is Wrong?", slug: "what-if-we-are-wrong" },
       { title: "What You're Really Leaving When You Leave the Faith", slug: "constantines-bargain" },
@@ -86,6 +121,10 @@ export const READING_PATHS = {
   },
   "pastoral-articles": {
     title: "Pastoral Leadership & Burnout",
+    pages: [
+      { title: "I'm a pastor and I'm running on empty", href: "/help/pastors", kind: "Find Help" },
+      { title: "Pastoral Health: A Study for Leaders and Those Who Love Them", href: "/studyguides/pastoral-health", kind: "Study guide" }
+    ],
     articles: [
       { title: "Can You Be a Christian on Your Own?", slug: "can-you-be-a-christian-alone" },
       { title: "Rest, Ambition, and the Idol of Success", slug: "rest-ambition-and-the-idol-of-success" },
@@ -95,6 +134,10 @@ export const READING_PATHS = {
   },
   "default": {
     title: "Essential LiveWell Collection",
+    pages: [
+      { title: "Find help, starting from your own words", href: "/help", kind: "Find Help" },
+      { title: "The Study Bible", href: "/study/bible", kind: "Study" }
+    ],
     articles: [
       { title: "What Comes After Deconstruction of Your Faith?", slug: "excavation-not-demolition" },
       { title: "When Romance Left Covenant Remains", slug: "when-romance-left-covenant-remains" },
@@ -199,6 +242,24 @@ export default function StartHereQuiz() {
   };
 
   const readingPath = getReadingPath();
+  const first = FIRST_STEPS[answers.concern] ?? FIRST_STEPS.pastoral;
+  // The book recommendation leads when the reader asked for books.
+  const bookBlock = (
+    <div style={{ background: "var(--paper2)", padding: "32px", borderRadius: "8px", marginBottom: "48px", textAlign: "center" }}>
+      <p style={{ fontSize: "12px", fontWeight: "bold", color: "var(--gold)", marginBottom: "8px", textTransform: "uppercase" }}>
+        {answers.format === "books" ? "Begin with this book" : "Then read this book"}
+      </p>
+      <h3 style={{ fontSize: "20px", fontWeight: "bold", color: "var(--ink)", marginBottom: "12px" }}>
+        {readingPath.book}
+      </h3>
+      <p style={{ fontSize: "14px", color: "var(--ink3)", marginBottom: "16px" }}>
+        A book from the same desk, longer than an essay and slower to finish, for when three pieces are not enough.
+      </p>
+      <Link href="/books" style={{ display: "inline-block", background: "var(--ink)", color: "var(--paper)", padding: "14px 24px", minHeight: "44px", lineHeight: "16px", fontSize: "14px", fontWeight: "bold", borderRadius: "4px", textDecoration: "none", boxSizing: "border-box" }}>
+        View Books
+      </Link>
+    </div>
+  );
   const allAnswered = Object.keys(answers).length === QUESTIONS.length;
   const isComplete = allAnswered && submitted;
 
@@ -229,9 +290,9 @@ export default function StartHereQuiz() {
                   { label: "Marriage", href: "/marriage" },
                   { label: "Parenting", href: "/parenting" },
                   { label: "Doubt", href: "/answers" },
-                  { label: "Disciple someone", href: "/table" },
+                  { label: "Disciple someone", href: "/studyguides" },
                   { label: "Grief", href: "/plans/grief" },
-                  { label: "Pastoring", href: "/for-pastors" },
+                  { label: "Pastoring", href: "/studyguides/pastoral-health" },
                   { label: "The essays", href: "/writing" },
                 ].map((c) => (
                   <Link key={c.href} href={c.href} style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink)", textDecoration: "none", background: "var(--card)", border: "1px solid var(--border)", borderRadius: "999px", padding: "8px 16px" }}>
@@ -280,7 +341,7 @@ export default function StartHereQuiz() {
                     aria-pressed={answers[QUESTIONS[currentStep].id] === option.value}
                     style={{
                       background: answers[QUESTIONS[currentStep].id] === option.value ? option.color : "var(--card)",
-                      color: answers[QUESTIONS[currentStep].id] === option.value ? "#FFF" : "var(--ink)",
+                      color: answers[QUESTIONS[currentStep].id] === option.value ? "var(--bone)" : "var(--ink)",
                       border: answers[QUESTIONS[currentStep].id] === option.value ? "none" : "1px solid var(--border)",
                       borderLeft: answers[QUESTIONS[currentStep].id] === option.value ? "none" : `6px solid ${option.color}`,
                       padding: "24px",
@@ -342,33 +403,61 @@ export default function StartHereQuiz() {
         ) : (
           <>
             {/* RESULTS PAGE */}
+            {answers.situation === "crisis" && (
+              <div style={{ marginBottom: "40px", textAlign: "left" }}>
+                <CrisisBlock heading="Before anything else" topics={["suicide", "abuse"]} />
+                <p style={{ fontSize: "16px", lineHeight: 1.6, color: "var(--ink)", margin: "20px 0 0" }}>
+                  A reading list is not enough on its own in a crisis. Start here instead:{" "}
+                  <Link href={first.help.href} style={{ color: "var(--mustard-text)", fontWeight: 600 }}>{first.help.label} →</Link>
+                </p>
+              </div>
+            )}
             <div style={{ textAlign: "center", marginBottom: "48px" }}>
               <h1 style={{ fontSize: "36px", fontWeight: "bold", color: "var(--ink)", marginBottom: "16px", fontFamily: "var(--F)" }}>
                 Where to start
               </h1>
               <p style={{ fontSize: "16px", color: "var(--ink3)", marginBottom: "24px" }}>
-                Three essays for what you said is weighing on you, and one book after them. If what you named is a crisis, a reading list is not enough on its own. The Care Plans under Help are built for that, and a real person is better than any page here.
+                {answers.format === "tools" || answers.format === "devotionals"
+                  ? "One place to begin in the form you asked for, then reading for what you said is weighing on you, and a book after it."
+                  : "Reading for what you said is weighing on you, and one book after it."}{" "}
+                A real person is better than any page here, and <Link href="/help" style={{ color: "var(--mustard-text)", fontWeight: 600 }}>Find help</Link> starts from your own words.
               </p>
               <h2 style={{ fontSize: "24px", fontWeight: "bold", color: "var(--ink)", marginBottom: "32px", fontFamily: "var(--F)" }}>
                 {readingPath.title}
               </h2>
             </div>
 
+            {(answers.format === "tools" || answers.format === "devotionals") && (
+              <div style={{ background: "var(--card)", border: "1px solid var(--border)", borderLeft: "3px solid var(--mustard)", borderRadius: "8px", padding: "24px", marginBottom: "40px" }}>
+                <p style={{ fontSize: "12px", fontWeight: "bold", color: "var(--mustard-text)", margin: "0 0 8px", textTransform: "uppercase", letterSpacing: "0.12em" }}>
+                  {answers.format === "tools" ? "Begin with this tool" : "Begin with a daily path"}
+                </p>
+                <Link href={answers.format === "tools" ? first.tool.href : first.daily.href} style={{ fontFamily: "var(--F)", fontSize: "22px", color: "var(--ink)", textDecoration: "none" }}>
+                  {answers.format === "tools" ? first.tool.label : first.daily.label} →
+                </Link>
+              </div>
+            )}
+
+            {answers.format === "books" && bookBlock}
+
             {/* ARTICLES */}
             <div style={{ marginBottom: "48px" }}>
               <h3 style={{ fontSize: "18px", fontWeight: "bold", color: "var(--ink)", marginBottom: "24px" }}>
-                Start with these essays
+                Start with these
               </h3>
               <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-                {readingPath.articles.map((article, i) => (
-                  <Link key={i} href={"/writing/" + article.slug} style={{ textDecoration: "none" }}>
+                {[
+                  ...readingPath.pages,
+                  ...readingPath.articles.filter((a) => isPublicEssay(a.slug)).map((a) => ({ title: a.title, href: "/writing/" + a.slug, kind: "Essay" })),
+                ].map((article, i) => (
+                  <Link key={i} href={article.href} style={{ textDecoration: "none" }}>
                     <div style={{ background: "var(--card)", padding: "24px", borderRadius: "8px", border: "1px solid var(--border)", cursor: "pointer", display: "flex", justifyContent: "space-between", alignItems: "start" }}>
                       <div style={{ textAlign: "left" }}>
                         <h4 style={{ fontSize: "16px", fontWeight: "bold", color: "var(--ink)", margin: "0 0 8px 0" }}>
                           {article.title}
                         </h4>
                         <p style={{ fontSize: "13px", color: "var(--ink3)", margin: 0 }}>
-                          Essay
+                          {article.kind}
                         </p>
                       </div>
                       <span style={{ color: "var(--gold)", fontWeight: "bold", marginLeft: "16px", whiteSpace: "nowrap" }}>
@@ -380,21 +469,7 @@ export default function StartHereQuiz() {
               </div>
             </div>
 
-            {/* BOOK RECOMMENDATION */}
-            <div style={{ background: "var(--paper2)", padding: "32px", borderRadius: "8px", marginBottom: "48px", textAlign: "center" }}>
-              <p style={{ fontSize: "12px", fontWeight: "bold", color: "var(--gold)", marginBottom: "8px", textTransform: "uppercase" }}>
-                Then read this book
-              </p>
-              <h3 style={{ fontSize: "20px", fontWeight: "bold", color: "var(--ink)", marginBottom: "12px" }}>
-                {readingPath.book}
-              </h3>
-              <p style={{ fontSize: "14px", color: "var(--ink3)", marginBottom: "16px" }}>
-                A book from the same desk, longer than an essay and slower to finish, for when three pieces are not enough.
-              </p>
-              <Link href="/books" style={{ display: "inline-block", background: "var(--ink)", color: "var(--paper)", padding: "14px 24px", minHeight: "44px", lineHeight: "16px", fontSize: "14px", fontWeight: "bold", borderRadius: "4px", textDecoration: "none", boxSizing: "border-box" }}>
-                View Books
-              </Link>
-            </div>
+            {answers.format !== "books" && bookBlock}
 
             {/* EMAIL CAPTURE — real subscribe (was: setEmailSubmitted no-op) */}
             <div>
@@ -402,7 +477,7 @@ export default function StartHereQuiz() {
                 variant="inline"
                 source="start-here-quiz"
                 title="Want this path emailed to you?"
-                description="Direct links to the essays on your path, plus the weekly letter when new pieces land."
+                description="Direct links to the pages on your path, plus the weekly letter when new pieces land."
               />
             </div>
 

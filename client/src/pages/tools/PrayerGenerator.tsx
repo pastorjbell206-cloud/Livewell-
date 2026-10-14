@@ -1,6 +1,6 @@
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
-import { useState, useMemo, useEffect, useRef, useCallback } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import { Heart, Copy, Check, RefreshCw, Share2, Sun, Play, Pause, RotateCcw } from "lucide-react";
 import { useFavorites } from "@/hooks/useFavorites";
 import { copyToClipboard } from "@/lib/clipboard";
@@ -15,7 +15,7 @@ const PRAYERS: Record<string, string[]> = {
   "Evening Prayer": [
     "Lord, the day is ending and I bring it to You — the parts I'm proud of and the parts I regret. Thank You for carrying me through moments I didn't think I could handle. Forgive me where I fell short. As I rest tonight, quiet the voices that replay my failures. Let me sleep in the assurance that tomorrow is not mine to worry about. You are enough. Amen.",
     "Father, as darkness comes, I thank You for the light You gave today. There were moments of grace I almost missed. There were people You placed in my path that I almost walked past. Forgive my blindness. As I close my eyes, I trust that You never close Yours. Watch over my family tonight. Give us rest that restores. Amen.",
-    "God, I am tired — not just physically, but in my soul. This day asked more of me than I had to give. But You never run dry. Refill what was emptied today. Heal what was broken. And as I sleep, do the work in me that only rest and Your Spirit can accomplish. I release this day to You. Amen.",
+    "God, I am tired — not just physically, but in my soul. This day asked more of me than I had to give. But You never run dry. Refill what was emptied today. Heal what was broken. And as I sleep, do in me what only rest and Your Spirit can do. I release this day to You. Amen.",
   ],
   "Prayer for Strength": [
     "Lord, I am running on empty and I know it. The weight of what I'm carrying was never meant for my shoulders alone. I confess I've been trying to power through in my own strength, and it's not working. Meet me in this weakness. Be the strength I cannot manufacture. Help me take the next step, even when I cannot see the path. Amen.",

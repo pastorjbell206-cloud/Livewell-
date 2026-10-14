@@ -14,6 +14,7 @@
  */
 import fs from "node:fs";
 import path from "node:path";
+import { quotesPassage } from "./lib/bsb.mjs";
 
 const DIR = "client/public/studyguides";
 
@@ -24,6 +25,8 @@ const ARR_FIELDS = [
   ["furtherReading", 1], ["glossary", 1], ["scriptureIndex", 1],
 ];
 const OBJ_FIELDS = ["facilitatorScript", "promoKit"];
+// Every guide sits on one shelf of the /studyguides filter.
+const THEMES = new Set(JSON.parse(fs.readFileSync("client/src/data/studyguide-themes.json", "utf8")).themes.map((t) => t.id));
 
 // Per-session requirements. (essaySlug and memoryVerse are present in the schema
 // but allowed to be empty — the PDF renderer treats both as optional.)
@@ -58,6 +61,15 @@ for (const file of files) {
   for (const k of STR_FIELDS) if (!isStr(d[k])) fail(file, `missing/empty string field "${k}"`);
   for (const [k, n] of ARR_FIELDS) if (!isArr(d[k], n)) fail(file, `"${k}" must be an array of >= ${n}`);
   for (const k of OBJ_FIELDS) if (!d[k] || typeof d[k] !== "object") fail(file, `missing object field "${k}"`);
+  if (!THEMES.has(d.theme)) fail(file, `"theme" must be one of ${[...THEMES].join(", ")} (client/src/data/studyguide-themes.json)`);
+  // A guide that declares the Berean Standard Bible quotes it verbatim.
+  if (d.translation !== undefined && d.translation !== "BSB") fail(file, `"translation" may only be "BSB" (or absent)`);
+  if (d.translation === "BSB") {
+    for (const s of d.sessions || []) {
+      const mv = s?.memoryVerse;
+      if (mv?.text && !quotesPassage(mv.text, mv.ref)) fail(file, `session ${s.n}: memoryVerse is not verbatim BSB for ${mv.ref} (copy it from: node scripts/bsb.mjs "${mv.ref}")`);
+    }
+  }
 
   // faq + bibliography + glossary item shapes
   for (const q of d.faq || []) if (!isStr(q?.q) || !isStr(q?.a)) fail(file, `faq item needs q + a: ${JSON.stringify(q).slice(0, 60)}`);
@@ -80,6 +92,13 @@ for (const file of files) {
     else for (const v of s.scriptureStudy) if (!isStr(v?.ref) || !isStr(v?.note)) fail(file, `${where} scriptureStudy needs ref + note`);
   });
 }
+
+// The guides that print and show help lines (client/src/data/sensitive-pages.json)
+// must exist, so a misspelled or unwritten slug cannot silently drop a guide's help.
+const SENSITIVE = JSON.parse(fs.readFileSync("client/src/data/sensitive-pages.json", "utf8"));
+const slugs = new Set(files.map((f) => f.replace(/\.json$/, "")));
+for (const s of SENSITIVE.studyguides || []) if (!slugs.has(s)) fail("sensitive-pages.json", `studyguides lists "${s}", which is not a study guide`);
+for (const s of Object.keys(SENSITIVE.studyguideTopics || {})) if (!(SENSITIVE.studyguides || []).includes(s)) fail("sensitive-pages.json", `studyguideTopics names "${s}", which is not in studyguides`);
 
 if (failures) { console.error(`\n[validate-studyguides] ${failures} failure(s) across ${guideCount} guide(s)`); process.exit(1); }
 console.log(`[validate-studyguides] ${guideCount} guide(s), 0 failures`);

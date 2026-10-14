@@ -19,6 +19,9 @@ import MoreOnThis from "@/components/MoreOnThis";
 import { SEOMeta } from "@/components/SEOMeta";
 import LoadFailed from "@/components/LoadFailed";
 import { fetchJson } from "@/lib/fetch-json";
+import { CrisisBlock } from "@/components/CrisisBlock";
+import { SENSITIVE_WISDOM } from "@/lib/needs";
+import ScriptureNote from "@/components/ScriptureNote";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
@@ -143,7 +146,7 @@ export default function WisdomTopic() {
       />
 
       {/* Hero */}
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "14px" }}>
             <Link href="/wisdom" style={{ color: "var(--mustard)", textDecoration: "none" }}>Wisdom</Link> · What the Bible says
@@ -157,6 +160,16 @@ export default function WisdomTopic() {
         </div>
       </section>
 
+      {/* A heavy subject: the help block, from the one verified data file.
+          On the gravest topics it sits right under the title. */}
+      {SENSITIVE_WISDOM[topic.id]?.lead && (
+        <section style={{ background: "var(--bone)", padding: "var(--s-4) var(--s-4) 0" }}>
+          <div style={wrap}>
+            <CrisisBlock topics={SENSITIVE_WISDOM[topic.id].topics} />
+          </div>
+        </section>
+      )}
+
       {/* Verses */}
       {topic.verses && topic.verses.length > 0 && (
         <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4)" }}>
@@ -169,6 +182,9 @@ export default function WisdomTopic() {
                   <cite style={{ fontFamily: "var(--U)", fontStyle: "normal", fontWeight: 600, fontSize: "13px", letterSpacing: "0.04em", color: "var(--mustard-text)" }}>{v.ref}</cite>
                 </blockquote>
               ))}
+            </div>
+            <div style={{ marginTop: "var(--s-3)" }}>
+              <ScriptureNote rendering="bsb" />
             </div>
           </div>
         </section>
@@ -203,6 +219,17 @@ export default function WisdomTopic() {
           </ul>
         </div>
       </section>
+      {SENSITIVE_WISDOM[topic.id] && !SENSITIVE_WISDOM[topic.id].lead && (
+        SENSITIVE_WISDOM[topic.id].topics.some((t) => t !== "suicide") ? (
+          <section style={{ background: "var(--bone)", padding: "0 var(--s-4) var(--s-5)" }}>
+            <div style={wrap}>
+              <CrisisBlock topics={SENSITIVE_WISDOM[topic.id].topics} heading="If you need help now" />
+            </div>
+          </section>
+        ) : (
+          <CrisisBlock variant="compact" />
+        )
+      )}
       <MoreOnThis href={`/wisdom/${id}`} />
     </Layout>
   );

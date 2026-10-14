@@ -27,6 +27,7 @@ for (const f of files) {
     guides.push({
       slug: d.slug,
       title: d.title,
+      theme: d.theme || "",
       eyebrow: d.eyebrow || d.subtitle || "",
       blurb: d.cardBlurb || d.summary || d.subtitle || "",
       audience: d.audience || "",

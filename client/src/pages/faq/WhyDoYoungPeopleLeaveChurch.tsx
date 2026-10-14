@@ -4,7 +4,7 @@ import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { isPublicEssay } from "@/lib/shelf";
 
-const FULL_ESSAY = "young-adults-coming-back-church";
+const FULL_ESSAY = "why-young-adults-arent-coming-back";
 
 const FAQ_ITEMS = [
   {

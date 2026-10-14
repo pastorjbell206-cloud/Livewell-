@@ -13,6 +13,8 @@ export interface StudyGuideEntry {
   blurb: string;
   audience: string;
   sessionsLabel: string;
+  /** Shelf id from client/src/data/studyguide-themes.json (the /studyguides filter). */
+  theme?: string;
 }
 
 export const STUDY_GUIDES: StudyGuideEntry[] = [

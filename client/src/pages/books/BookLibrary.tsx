@@ -162,7 +162,7 @@ export default function BookLibrary() {
       <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-6)" }}>
         <div style={wrap}>
           {!loaded ? (
-            <p style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }}>Loading the library…</p>
+            <p style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }} role="status">Loading the library…</p>
           ) : books.length === 0 ? (
             <p style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }}>The library could not load right now. Please refresh the page.</p>
           ) : (

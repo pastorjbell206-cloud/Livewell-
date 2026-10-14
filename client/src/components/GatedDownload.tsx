@@ -26,19 +26,29 @@ export default function GatedDownload({
   const [open, setOpen] = useState(false);
   const [email, setEmail] = useState("");
   const [busy, setBusy] = useState(false);
+  const [captureFailed, setCaptureFailed] = useState(false);
 
   const submit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!email.includes("@")) return;
     setBusy(true);
+    // The download opens either way — never block the file on a failed
+    // capture. But the permanent unlock and the "you join the essay list"
+    // claim hold only when the capture actually landed; on failure the gate
+    // stays, so the next visit gets another chance at the signup.
+    let captured = false;
     try {
-      await fetch("/api/subscribe", {
+      const res = await fetch("/api/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, source }),
       });
-    } catch { /* best-effort; never block the download on a failed capture */ }
-    try { localStorage.setItem(GATE_KEY, "1"); } catch { /* ignore */ }
+      captured = res.ok;
+    } catch { /* capture failed; the download still opens below */ }
+    if (captured) {
+      try { localStorage.setItem(GATE_KEY, "1"); } catch { /* ignore */ }
+    }
+    setCaptureFailed(!captured);
     setBusy(false);
     setUnlocked(true);
     setOpen(false);
@@ -47,14 +57,21 @@ export default function GatedDownload({
 
   if (unlocked) {
     return (
-      <a
-        href={href}
-        target="_blank"
-        rel="noopener noreferrer"
-        style={{ display: "inline-flex", alignItems: "center", gap: "8px", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--bone)", background: "var(--ink)", padding: "11px 18px", textDecoration: "none", borderRadius: "2px" }}
-      >
-        <Download size={15} /> {label}
-      </a>
+      <div>
+        <a
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ display: "inline-flex", alignItems: "center", gap: "8px", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--bone)", background: "var(--ink)", padding: "11px 18px", textDecoration: "none", borderRadius: "2px" }}
+        >
+          <Download size={15} /> {label}
+        </a>
+        {captureFailed && (
+          <p role="status" style={{ margin: "8px 0 0", fontFamily: "var(--U)", fontSize: "12px", color: "var(--ink-muted)" }}>
+            The download is yours, but the list signup didn't go through — it will ask again next visit.
+          </p>
+        )}
+      </div>
     );
   }
 

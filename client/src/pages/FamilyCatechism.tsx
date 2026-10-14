@@ -1,6 +1,8 @@
 /**
- * Family Catechism (/family/catechism) — a New City Catechism-style set of 52
- * questions a family learns and discusses together, one per week. Each question
+ * Family Catechism (/family/catechism) — a New City Catechism-style set of 76
+ * questions a family learns and discusses together, one per week (the
+ * "this week" pick walks weeks 1 to 52, so it never lands past question 52;
+ * the full list below shows all of them). Each question
  * opens to an adult answer, a child's version, the Scripture, a short
  * commentary, and a prayer. Data: /family-catechism.json.
  */
@@ -10,6 +12,7 @@ import { Link } from "wouter";
 import { ChevronDown } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import ScriptureNote from "@/components/ScriptureNote";
 
 interface Entry {
   number: number;
@@ -103,8 +106,8 @@ export default function FamilyCatechism() {
   return (
     <Layout>
       <SEOMeta
-        title="The Family Catechism — 52 Questions to Learn Together"
-        description="A 52-question family catechism in the New City Catechism tradition. Each week: a question, answers for adults and children, a verse, a reflection, a prayer."
+        title="The Family Catechism — 76 Questions to Learn Together"
+        description="A 76-question family catechism in the New City Catechism tradition. Each week: a question, answers for adults and children, a verse, a reflection, a prayer."
         url="https://www.livewellbyjamesbell.co/family/catechism"
       />
 
@@ -117,7 +120,7 @@ export default function FamilyCatechism() {
             The Family Catechism
           </h1>
           <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.78)", maxWidth: "62ch" }}>
-            Fifty-two questions, one for each week of the year. A family learns the faith the way it has always been learned, by question and answer, said out loud together until it lives in them. Each one has an answer for the grown-ups and a shorter one for the little ones, a verse, a short word for the parent, and a prayer.
+            Seventy-six questions, taken one a week. A family learns the faith the way it has always been learned, by question and answer, said out loud together until it lives in them. Each one has an answer for the grown-ups and a shorter one for the little ones, a verse, a short word for the parent, and a prayer.
           </p>
         </div>
       </section>
@@ -132,11 +135,11 @@ export default function FamilyCatechism() {
         </section>
       )}
 
-      {/* ALL 52, BY PART */}
+      {/* EVERY QUESTION, BY PART */}
       <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-7)" }}>
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
           {entries.length === 0 && (
-            <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }}>Loading the catechism…</p>
+            <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }} role="status">Loading the catechism…</p>
           )}
           {entries.length > 0 && (
             <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "12px", marginBottom: "var(--s-4)" }}>
@@ -151,6 +154,7 @@ export default function FamilyCatechism() {
               )}
             </div>
           )}
+          {parts.length > 0 && <ScriptureNote rendering="bsb" />}
           {parts.map(({ part, items }) => (
             <div key={part} style={{ marginBottom: "var(--s-5)" }}>
               <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(22px, 3vw, 28px)", fontWeight: 400, color: "var(--ink)", marginBottom: "var(--s-3)", paddingBottom: "8px", borderBottom: "2px solid var(--mustard)" }}>{part}</h2>

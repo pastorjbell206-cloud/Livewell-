@@ -1,9 +1,10 @@
 /**
  * The Resource hub (/resources): a handful of things people actually use, in
  * four short groups. Downloads and PDFs (the /downloads shelf and the free
- * Hard Issues booklets), the tools (a few that serve the mission, then the
- * whole /tools registry, where every tool stays listed), help in a hard
- * season (/help and the eight-week care plans), and the household (/family).
+ * Hard Issues booklets), the tools (a few that serve the mission, the
+ * self-checks at /assessments, then the whole /tools registry, where every
+ * tool stays listed), help in a hard season (/help, the /plans index of every
+ * eight-week care plan, and a few plans by name), and the household (/family).
  *
  * Files James adds in /admin/resources still appear here on their own, under
  * Downloads, whenever there are any; nothing renders while they load.
@@ -86,7 +87,7 @@ export default function Resources() {
               {
                 label: "Every download, on one shelf",
                 href: "/downloads",
-                note: "A leader's guide and a handout for every group study, a printable for every context guide, and the free booklets.",
+                note: "A leader's guide and a handout for every group study, a printable for every context guide, the Find Help worksheets, the eight-week plans as booklets, Bible reading plans, workbooks, and the free booklets.",
               },
               {
                 label: "The Hard Issues booklets",
@@ -135,6 +136,11 @@ export default function Resources() {
                 note: "Thirteen honest choices that show which lens is doing your reading of Scripture before you do.",
               },
               {
+                label: "The self-checks",
+                href: "/assessments",
+                note: "Honest questions about faith, the whole of life, marriage, emotional and financial health, and belief. None of them grades you.",
+              },
+              {
                 label: "Every tool",
                 href: "/tools",
                 note: "The full set, from the Bible study companion and the glossary to the assessments and planners.",
@@ -153,9 +159,14 @@ export default function Resources() {
                 href: "/help",
                 note: "Pick what you are carrying and find, in one place, something to read, something to do, and a prayer.",
               },
+              {
+                label: "Every eight-week plan",
+                href: "/plans",
+                note: "One practice, one reading, one tool, and one honest question each week, for grief, doubt, money, anger, caregiving, a marriage under strain, and more. Each prints as a booklet.",
+              },
             ]}
           >
-            Eight-week plans walk with you through one season at a time:{" "}
+            Eight-week plans walk with you through one season at a time, among them{" "}
             {CARE_PLANS.map((p, i) => (
               <span key={p.href}>
                 <Link href={p.href} style={inlineLink}>

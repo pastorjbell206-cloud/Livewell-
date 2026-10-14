@@ -75,7 +75,7 @@ const RESURRECTION: ArgumentCase = {
     },
     {
       id: "early",
-      move: "Now the timing, which is the thing I had wrong for years. In his first letter to Corinth, Paul hands on a summary he says he received: that Christ died, was buried, was raised, and appeared to named people, many still alive. The words for delivered and received are the technical language for passing on a fixed tradition, so the creed is older than the letter that carries it. Even skeptical historians date it to within a few years of the crucifixion, into the hands of the men who claimed to be there.",
+      move: "Now the timing, which is the part most often gotten wrong. In his first letter to Corinth, Paul hands on a summary he says he received: that Christ died, was buried, was raised, and appeared to named people, many still alive. The words for delivered and received are the technical language for passing on a fixed tradition, so the creed is older than the letter that carries it. Even skeptical historians date it to within a few years of the crucifixion, into the hands of the men who claimed to be there.",
       objections: [
         {
           label: "A fast legend is still a legend.",
@@ -161,7 +161,7 @@ const HELL: ArgumentCase = {
   title: "Could a good God send anyone to hell?",
   kicker: "The case, one move at a time",
   intro:
-    "I am not going to defend a cartoon, and I am not going to pretend the objection is weak. For years this was one of my own hardest reasons to reject the whole thing. We will go one move at a time. Raise the objection you actually hold, and I will give you the real answer, including what the move does not settle. You can walk away unconvinced at any point.",
+    "I am not going to defend a cartoon, and I am not going to pretend the objection is weak. For many thoughtful people it is the hardest reason of all to reject the whole thing. We will go one move at a time. Raise the objection you actually hold, and I will give you the real answer, including what the move does not settle. You can walk away unconvinced at any point.",
   published: true,
   steps: [
     {
@@ -261,12 +261,12 @@ const MEANING: ArgumentCase = {
   title: "Can a life mean anything without God?",
   kicker: "The case, one move at a time",
   intro:
-    "I was an atheist, and I built a real and meaningful life without God, so I am not going to insult you by pretending you cannot. We will go one move at a time. Raise the objection you actually hold, and I will give you the honest answer, including what the move does not settle. You can walk away unconvinced at any point.",
+    "I came to faith from atheism, and I know a person can build a real and meaningful life without God, so I am not going to insult you by pretending you cannot. We will go one move at a time. Raise the objection you actually hold, and I will give you the honest answer, including what the move does not settle. You can walk away unconvinced at any point.",
   published: true,
   steps: [
     {
       id: "concede",
-      move: "Start where the honest atheist starts, because the Christian version of this argument is usually a slander. People build rich, loving, meaningful lives with no God at all. I have known unbelievers who loved their spouses with a fidelity that shamed the elders of my church and faced a terminal diagnosis with a steadiness I would want at my own bedside. The miserable nihilist the church invented to feel superior does not exist. Meaning without God is not rare. It is everywhere. That was never the real question.",
+      move: "Start where the honest atheist starts, because the Christian version of this argument is usually a slander. People build rich, loving, meaningful lives with no God at all. Many unbelievers love their spouses with a faithfulness that puts plenty of churchgoers to shame, and face a terminal diagnosis with a steadiness anyone would want at their own bedside. The miserable nihilist the church invented to feel superior does not exist. Meaning without God is not rare. It is everywhere. That was never the real question.",
       objections: [
         {
           label: "Right, so the argument is already over.",
@@ -317,7 +317,7 @@ const MEANING: ArgumentCase = {
         {
           label: "You can be committed to justice without grounding it in God.",
           response:
-            "You can be committed to it, deeply, and many atheists are more committed than many believers. The question is not commitment, it is grounding. When you say cruelty is really wrong, wrong even if everyone approved, you are describing a fact that holds independent of anyone's opinion. A silent, indifferent universe supplies feelings about cruelty. It does not supply the fact. You may be living off moral capital you did not mint and cannot account for. That is not an insult. I did the same for years.",
+            "You can be committed to it, deeply, and many atheists are more committed than many believers. The question is not commitment, it is grounding. When you say cruelty is really wrong, wrong even if everyone approved, you are describing a fact that holds independent of anyone's opinion. A silent, indifferent universe supplies feelings about cruelty. It does not supply the fact. You may be living off moral capital you did not mint and cannot account for. That is not an insult. Most of us, believers included, do the same without noticing.",
         },
       ],
       grants: "This step shows the meaningless-universe view struggles to fund the values its holders actually live by. It does not prove those values come from God.",
@@ -350,12 +350,12 @@ const EVIL: ArgumentCase = {
   title: "If God is good, why is there so much suffering?",
   kicker: "The case, one move at a time",
   intro:
-    "This is the best argument against God, and I am not going to pretend otherwise. It is the one that cost me the most, and it is not solved in a paragraph. We will go one move at a time. Raise the objection you actually hold, and I will give you the honest answer, including what it does not settle. You can walk away unconvinced at any point.",
+    "This is the best argument against God, and I am not going to pretend otherwise. It is the heaviest of them, and it is not solved in a paragraph. We will go one move at a time. Raise the objection you actually hold, and I will give you the honest answer, including what it does not settle. You can walk away unconvinced at any point.",
   published: true,
   steps: [
     {
       id: "concede",
-      move: "Start by granting the whole weight of it, because a defense that hurries past the horror has not earned the right to speak. A child dies slowly in a cancer ward. A wave takes a quarter of a million people in a morning. If there is a God who is both good and able, that is a real problem, not a debating point, and the person who feels it in their body is seeing clearly. I felt it for years. I still feel its edge.",
+      move: "Start by granting the whole weight of it, because a defense that hurries past the horror has not earned the right to speak. A child dies slowly in a cancer ward. A wave takes a quarter of a million people in a morning. If there is a God who is both good and able, that is a real problem, not a debating point, and the person who feels it in their body is seeing clearly. Believers feel it too. I still feel its edge.",
       objections: [
         {
           label: "A good, all-powerful God would simply prevent it.",
@@ -401,7 +401,7 @@ const EVIL: ArgumentCase = {
         {
           label: "A God who suffers too still has not fixed anything.",
           response:
-            "Not yet, and the people who met him in their worst hour do not come back saying they now understand. They come back saying they were not alone in it, and that the one who made the promise had a wound of his own to show. That is not a proof, and I am not offering it as one. It is the difference between a God who owes you an explanation and a God who entered the thing you needed explained. You can decide that is not enough. It was more than I expected to find.",
+            "Not yet, and the people who met him in their worst hour do not come back saying they now understand. They come back saying they were not alone in it, and that the one who made the promise had a wound of his own to show. That is not a proof, and I am not offering it as one. It is the difference between a God who owes you an explanation and a God who entered the thing you needed explained. You can decide that is not enough. It may be more than you expect to find.",
         },
         {
           label: "I still cannot reconcile the suffering with a loving God.",
@@ -422,7 +422,7 @@ const GOSPELS: ArgumentCase = {
   title: "Can you trust the Gospels?",
   kicker: "The case, one move at a time",
   intro:
-    "There is a confident version of this that everyone knows and almost no one has checked. Written centuries late, changed like a game of telephone, voted into being by an emperor. I believed all three when I was an unbeliever, and I had checked none of them. We will go one move at a time. Raise the objection you actually hold, and I will give you the real answer.",
+    "There is a confident version of this that everyone knows and almost no one has checked. Written centuries late, changed like a game of telephone, voted into being by an emperor. Many people believe all three, and few have checked any of them. We will go one move at a time. Raise the objection you actually hold, and I will give you the real answer.",
   published: true,
   steps: [
     {
@@ -461,14 +461,14 @@ const GOSPELS: ArgumentCase = {
         {
           label: "The emperor and the council at Nicaea decided all this later.",
           response:
-            "This may be the most confident falsehood of them all. The Council of Nicaea, in 325, did not select which books to keep, and it did not invent the divinity of Jesus. Its records are about the relation of the Son to the Father, the fight with Arius. The four Gospels were already being read as Scripture more than a century before Constantine was born, sorted out by use across the churches, not by a vote. And the divinity of Jesus is sitting in that Corinthian creed, decades before any emperor took an interest.",
+            "This may be the most confident falsehood of them all. The Council of Nicaea, in 325, did not select which books to keep, and it did not invent the divinity of Jesus. Its records are about the relation of the Son to the Father, the fight with Arius. The four Gospels were already being read as Scripture more than a century before Constantine was born, sorted out by use across the churches, not by a vote. And Paul's letters, written within about thirty years of the crucifixion, already call Jesus Lord and speak of him as existing in the form of God (Philippians 2:6), centuries before any emperor took an interest.",
         },
       ],
       grants: "This step shows the claim is early and tied to named witnesses, and that the Nicaea story is a myth. It does not prove the witnesses were right.",
     },
     {
       id: "verdict",
-      move: "So the honest limit. None of this is proof, and I am not offering it as proof. The tell, for me, was the embarrassment. Legends flatter their heroes and their authors. The Gospels record the leaders as cowards who ran, and they make women the first witnesses to the empty tomb, in a culture where a woman's testimony was worth so little it was often inadmissible.",
+      move: "So the honest limit. None of this is proof, and I am not offering it as proof. The tell, for me, is the embarrassment. Legends flatter their heroes and their authors. The Gospels record the leaders as cowards who ran, and they make women the first witnesses to the empty tomb, in a culture where a woman's testimony was worth so little it was often inadmissible.",
       objections: [
         {
           label: "The women being first could just be how it happened.",
@@ -494,7 +494,7 @@ const JESUS: ArgumentCase = {
   title: "Was Jesus just a good teacher?",
   kicker: "The case, one move at a time",
   intro:
-    "The most respectable thing you can say about Jesus in polite company is that he was a great moral teacher, nothing more. It costs nothing and offends no one, and for years it was my verdict too. We will go one move at a time. Raise the objection you actually hold, and I will give you the honest answer, including what it does not settle.",
+    "The most respectable thing you can say about Jesus in polite company is that he was a great moral teacher, nothing more. It costs nothing and offends no one, and it is the verdict of many thoughtful people. We will go one move at a time. Raise the objection you actually hold, and I will give you the honest answer, including what it does not settle.",
   published: true,
   steps: [
     {
@@ -540,7 +540,7 @@ const JESUS: ArgumentCase = {
         {
           label: "I can still admire his ethics without the metaphysics.",
           response:
-            "You can admire them, and you should, but notice what you are doing. You are honoring the teaching of a man while setting aside his own account of who was teaching it, which is a strange way to respect anyone. The comfortable view, the one I held, turns out to be a file and not a conclusion, a way of keeping the parts of Jesus that cost nothing and shelving the man himself. The historical Jesus does not leave that shelf empty. He talked his way off it.",
+            "You can admire them, and you should, but notice what you are doing. You are honoring the teaching of a man while setting aside his own account of who was teaching it, which is a strange way to respect anyone. The comfortable view, the one many of us have held, turns out to be a file and not a conclusion, a way of keeping the parts of Jesus that cost nothing and shelving the man himself. The historical Jesus does not leave that shelf empty. He talked his way off it.",
         },
         {
           label: "I still just think he was a remarkable man.",
@@ -561,7 +561,7 @@ const WISHFUL: ArgumentCase = {
   title: "Is faith just wishful thinking?",
   kicker: "The case, one move at a time",
   intro:
-    "This one I have to answer against myself, because for years I made it, and I made it well. We will go one move at a time. Raise the objection you actually hold, and I will give you the honest answer, including what it does not settle. You can walk away unconvinced at any point.",
+    "This one deserves an answer at full strength, because it is made often, and made well. We will go one move at a time. Raise the objection you actually hold, and I will give you the honest answer, including what it does not settle. You can walk away unconvinced at any point.",
   published: true,
   steps: [
     {
@@ -607,7 +607,7 @@ const WISHFUL: ArgumentCase = {
         {
           label: "I still think believers just want it to be true.",
           response:
-            "Some do, and you should say so, and I was a believer's mirror image who wanted it not to be true. So here is the only fair test. Ask the believer what they want to be true, and you will find plenty of faith that is a wish with a steeple. Then have the nerve to ask it of yourself. I ran the projection test on everyone but me for years, and underneath, where I did not look, was a man who found a Godless universe not a grief but a relief. The crutch was real. It was just in my other hand.",
+            "Some do, and you should say so. But the suspicion cuts both ways, because some unbelievers want it not to be true. So here is the only fair test. Ask the believer what they want to be true, and you will find plenty of faith that is a wish with a steeple. Then have the nerve to ask it of yourself. It is easy to run the projection test on everyone but yourself, and to miss that a godless universe can feel less like a grief than a relief. The crutch can be in either hand.",
         },
       ],
       grants: "This is where the case ends and the choosing begins. It removes a shortcut. It does not make the decision for you.",
@@ -623,12 +623,12 @@ const PLURALISM: ArgumentCase = {
   title: "Don't all religions lead to the same God?",
   kicker: "The case, one move at a time",
   intro:
-    "I used to think this was the humble, obvious position, and that the people who denied it were arrogant. It turned out to be almost the reverse, and it took me years to see it. We will go one move at a time. Raise the objection you actually hold, and I will give you the honest answer.",
+    "It can look like the humble, obvious position, and the people who deny it can look arrogant. On a closer look it is almost the reverse. We will go one move at a time. Raise the objection you actually hold, and I will give you the honest answer.",
   published: true,
   steps: [
     {
       id: "concede",
-      move: "Start by granting what is true and painful in it. The exclusive claim has often been held like a weapon, used to bless conquest and to say unspeakable things to grieving people about their dead. And the intuition underneath is real: if you had been born in a different place, you would almost certainly hold a different faith with the same confidence you hold this one. That should unsettle anyone. It unsettled me for years.",
+      move: "Start by granting what is true and painful in it. The exclusive claim has often been held like a weapon, used to bless conquest and to say unspeakable things to grieving people about their dead. And the intuition underneath is real: if you had been born in a different place, you would almost certainly hold a different faith with the same confidence you hold this one. That should unsettle anyone, and it unsettles believers too.",
       objections: [
         {
           label: "Your beliefs just track your birthplace, so none of them can be the truth.",
@@ -685,7 +685,7 @@ const FAITH: ArgumentCase = {
   title: "Is believing anything on faith irrational?",
   kicker: "The case, one move at a time",
   intro:
-    "I called my old position pure reason, and I was wrong about it in a way that took me a long time to see. We will go one move at a time. Raise the objection you actually hold, and I will give you the honest answer, including what it does not settle.",
+    "I came to faith from atheism, and I know how easy it is to call one's own position pure reason and miss the faith underneath it. We will go one move at a time. Raise the objection you actually hold, and I will give you the honest answer, including what it does not settle.",
   published: true,
   steps: [
     {
@@ -731,14 +731,14 @@ const FAITH: ArgumentCase = {
         {
           label: "Fine, but I would still rather trust as little as possible.",
           response:
-            "That is a fair instinct, and I share it more than you might guess. I do not ask you to believe on no evidence, and I would not have, because the demand would have insulted the man I was. I ask only that you count the faith you already live by, the trust under the reason you are so sure is unmixed, and then weigh whether the object of the Christian faith could bear that kind of weight. That is not a leap into the dark. It is the same thing you already do with everything you know, turned toward a harder question.",
+            "That is a fair instinct, and I share it more than you might guess. I do not ask you to believe on no evidence, and I would not ask it, because the demand insults a thinking person. I ask only that you count the faith you already live by, the trust under the reason you are so sure is unmixed, and then weigh whether the object of the Christian faith could bear that kind of weight. That is not a leap into the dark. It is the same thing you already do with everything you know, turned toward a harder question.",
         },
       ],
       grants: "This is where the case ends and the choosing begins. It levels the ground. It does not decide for you.",
     },
   ],
   close:
-    "So here is the whole of it. Faith is not the enemy of reason, and reason is not the pure alternative to faith, because both of them run on trust that outstrips proof, and the honest question is only which trust is earned. I called my own position pure reason for years and had never counted the enormous faith underneath it, invisible the way water is invisible to the fish. You can weigh all of this and still find the Christian claim unwarranted, and be welcome to keep reading here. I only wanted the fight to be a fair one, over evidence, and not over a caricature of the word faith.",
+    "So here is the whole of it. Faith is not the enemy of reason, and reason is not the pure alternative to faith, because both of them run on trust that outstrips proof, and the honest question is only which trust is earned. It is easy to call one's own position pure reason and never count the enormous faith underneath it, invisible the way water is invisible to the fish. You can weigh all of this and still find the Christian claim unwarranted, and be welcome to keep reading here. I only wanted the fight to be a fair one, over evidence, and not over a caricature of the word faith.",
 };
 
 export const ARGUMENT_CASES: ArgumentCase[] = [RESURRECTION, EVIL, GOSPELS, JESUS, PLURALISM, WISHFUL, FAITH, HELL, MEANING];

@@ -1,0 +1,73 @@
+{
+  "checked": "2026-09-29",
+  "howChecked": "Each line was confirmed against its official site on the date above, read through search-engine excerpts of the official pages, because the sites could not be opened from the build environment. Before the next release, open each source page, confirm every number and text code, and update this date. scripts/validate-needs.mjs fails CI once this date is more than 180 days old.",
+  "emergency": {
+    "label": "Call 911",
+    "href": "tel:911",
+    "for": "If you or someone else is in immediate danger."
+  },
+  "resources": [
+    {
+      "id": "988",
+      "name": "988 Suicide & Crisis Lifeline",
+      "for": "Thoughts of suicide, a mental health or substance use crisis, or worry about someone else. You do not have to be suicidal to call.",
+      "topics": ["suicide", "substance"],
+      "actions": [
+        { "kind": "call", "label": "Call 988", "href": "tel:988" },
+        { "kind": "text", "label": "Text 988", "href": "sms:988" },
+        { "kind": "chat", "label": "Chat online", "href": "https://chat.988lifeline.org/" }
+      ],
+      "more": "En español, call 988 and press 2. Veterans and service members, call 988 and press 1, or text 838255.",
+      "hours": "Free and confidential, 24 hours a day",
+      "source": "https://988lifeline.org/get-help/"
+    },
+    {
+      "id": "crisis-text-line",
+      "name": "Crisis Text Line",
+      "for": "When typing is easier than talking.",
+      "topics": ["suicide"],
+      "actions": [
+        { "kind": "text", "label": "Text HOME to 741741", "href": "sms:741741?&body=HOME" }
+      ],
+      "hours": "Free and confidential, 24 hours a day, in English and Spanish",
+      "source": "https://www.crisistextline.org/"
+    },
+    {
+      "id": "dv-hotline",
+      "name": "National Domestic Violence Hotline",
+      "for": "If you are afraid of someone at home, or someone is hurting, threatening, or controlling you.",
+      "topics": ["abuse"],
+      "actions": [
+        { "kind": "call", "label": "Call 1-800-799-7233", "href": "tel:18007997233" },
+        { "kind": "text", "label": "Text START to 88788", "href": "sms:88788?&body=START" },
+        { "kind": "chat", "label": "Chat online", "href": "https://www.thehotline.org/" }
+      ],
+      "hours": "Free and confidential, 24 hours a day",
+      "source": "https://www.thehotline.org/get-help/"
+    },
+    {
+      "id": "rainn",
+      "name": "RAINN National Sexual Assault Hotline",
+      "for": "After sexual assault or abuse, whenever it happened.",
+      "topics": ["sexual-assault", "abuse"],
+      "actions": [
+        { "kind": "call", "label": "Call 800-656-4673", "href": "tel:18006564673" },
+        { "kind": "text", "label": "Text HOPE to 64673", "href": "sms:64673?&body=HOPE" },
+        { "kind": "chat", "label": "Chat online", "href": "https://rainn.org/help-and-healing/hotline/" }
+      ],
+      "hours": "Free and confidential, 24 hours a day, in English and Spanish",
+      "source": "https://rainn.org/help-and-healing/hotline/"
+    },
+    {
+      "id": "samhsa",
+      "name": "SAMHSA National Helpline",
+      "for": "Finding treatment for drug or alcohol use or for mental health, for you or someone you love. It gives referrals and information, not crisis counseling; in a crisis, call 988.",
+      "topics": ["substance"],
+      "actions": [
+        { "kind": "call", "label": "Call 1-800-662-4357", "href": "tel:18006624357" }
+      ],
+      "hours": "Free and confidential, 24 hours a day, in English and Spanish",
+      "source": "https://www.samhsa.gov/find-help/helplines/national-helpline"
+    }
+  ]
+}

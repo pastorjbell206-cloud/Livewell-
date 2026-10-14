@@ -5,7 +5,9 @@
  * mustard text + Inter all-caps).
  */
 import { Link } from "wouter";
-import { pillarForPost, pillarUrl } from "@/lib/taxonomy";
+import { pillarUrl, PILLAR_BY_ID, TRACK_BY_SLUG, resolveTrack, trackUrl } from "@/lib/taxonomy";
+import { PILLAR_ASSIGNMENTS } from "@/lib/pillar-assignments";
+import { pillarKicker } from "@/lib/essayLabel";
 
 interface TrackChipProps {
   /** Legacy `posts.pillar` value (kept for backward compatibility). */
@@ -24,8 +26,16 @@ export function TrackChip({
   asLink = true,
   inverted = false,
 }: TrackChipProps) {
-  const pillar = pillarForPost({ slug, pillar: pillarOrTrack });
-  const kicker = pillar?.short ?? "Essay";
+  // A filed essay shows (and links to) its curated pillar. An essay nobody
+  // has filed yet shows its own subject and links to that subject's shelf,
+  // rather than the taxonomy's filtering default, which would label a
+  // theology essay "Pastoral". Same rule as lib/essayLabel.ts.
+  const filedId = slug ? PILLAR_ASSIGNMENTS[slug]?.pillar : undefined;
+  const pillar = filedId ? PILLAR_BY_ID.get(filedId) ?? null : null;
+  const raw = pillarOrTrack?.trim();
+  const track = !pillar && raw ? (TRACK_BY_SLUG.get(raw) ?? resolveTrack(raw)) : null;
+  const kicker = (pillar ? pillarKicker(pillar) : null) ?? track?.kicker ?? "Essay";
+  const href = pillar ? pillarUrl(pillar.slug) : track ? trackUrl(track.slug) : null;
 
   const textColor = inverted ? "var(--mustard)" : "var(--mustard-text)";
   const ruleColor = "var(--mustard)";
@@ -52,9 +62,9 @@ export function TrackChip({
     </span>
   );
 
-  if (asLink && pillar) {
+  if (asLink && href) {
     return (
-      <Link href={pillarUrl(pillar.slug)} style={{ textDecoration: "none" }}>
+      <Link href={href} style={{ textDecoration: "none" }}>
         {content}
       </Link>
     );

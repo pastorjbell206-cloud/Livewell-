@@ -9,7 +9,7 @@
  *
  * Deliberate restraint, because this is a pastoral site and not a storefront:
  *   - hidden below 1024px, where it would cover content on a phone
- *   - hidden on /help itself, and on the admin surface
+ *   - hidden on /help itself (and its care pages), and on the admin surface
  *   - never animated, never a pop-up, never re-appears after dismissal
  *   - honors prefers-reduced-motion by having no motion at all
  */
@@ -38,7 +38,7 @@ export default function PersistentHelpTab() {
   }, []);
 
   // Never shadow the page it points at, and stay out of the admin workspace.
-  const suppressed = location === "/help" || location.startsWith("/admin");
+  const suppressed = location === "/help" || location.startsWith("/help/") || location.startsWith("/admin");
   if (suppressed || dismissed || !scrolled) return null;
 
   return (

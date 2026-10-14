@@ -53,7 +53,7 @@ function NavItemLink({
 }
 
 export default function MinimalNav() {
-  const [location] = useLocation();
+  const [location, navigate] = useLocation();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
@@ -66,7 +66,7 @@ export default function MinimalNav() {
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
     if (searchQuery.trim()) {
-      window.location.href = "/search?q=" + encodeURIComponent(searchQuery.trim());
+      navigate("/search?q=" + encodeURIComponent(searchQuery.trim()));
     }
     setSearchOpen(false);
   };

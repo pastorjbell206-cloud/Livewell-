@@ -37,6 +37,26 @@ const STATIC_ARTICLES = loadStaticLibrary();
 // unaffected, as in the API.) Parsed by scripts/lib/shelf.mjs; fails soft.
 const TAKEN_DOWN = loadTakenDown();
 
+/**
+ * URLs vercel.json 301s away must never be advertised: a sitemap entry whose
+ * URL redirects is an instruction the crawler can only disobey (the audit in
+ * scripts/audit-canonicals.mjs walks what this file emits). Literal redirect
+ * sources are enough — every essay/static collision is a literal source.
+ */
+function loadRedirectSources() {
+  try {
+    const cfg = JSON.parse(fs.readFileSync("vercel.json", "utf8"));
+    return new Set(
+      (cfg.redirects || [])
+        .map((r) => r.source)
+        .filter((s) => typeof s === "string" && !s.includes(":") && !s.includes("*") && !s.includes("("))
+    );
+  } catch {
+    return new Set();
+  }
+}
+const REDIRECT_SOURCES = loadRedirectSources();
+
 // The essay shelf (client/src/lib/shelf.json): only public essays belong in
 // the sitemap. Retired essays keep their URLs but answer with a noindex
 // notice, so advertising them would only spend crawl budget on dead ends.
@@ -105,6 +125,7 @@ const STATIC_PAGES = [
   { url: "/resources/context", priority: "0.9", changefreq: "weekly" },
   { url: "/resources/creeds", priority: "0.8", changefreq: "monthly" },
   { url: "/help", priority: "0.9", changefreq: "monthly" },
+  { url: "/plans", priority: "0.8", changefreq: "monthly" },
   { url: "/plans/marriage", priority: "0.8", changefreq: "monthly" },
   { url: "/plans/anxiety", priority: "0.8", changefreq: "monthly" },
   { url: "/plans/grief", priority: "0.8", changefreq: "monthly" },
@@ -198,6 +219,10 @@ const STATIC_PAGES = [
   { url: "/tools/bible-says", priority: "0.65", changefreq: "monthly" },
   { url: "/tools/bible-study", priority: "0.65", changefreq: "monthly" },
   { url: "/tools/conflict-guide", priority: "0.65", changefreq: "monthly" },
+  { url: "/tools/worry-journal", priority: "0.65", changefreq: "monthly" },
+  { url: "/tools/spiritual-gifts", priority: "0.65", changefreq: "monthly" },
+  { url: "/tools/prayer-planner", priority: "0.65", changefreq: "monthly" },
+  { url: "/tools/parent-teen-conversation", priority: "0.65", changefreq: "monthly" },
   { url: "/tools/deep-bible", priority: "0.7", changefreq: "monthly" },
   { url: "/tools/emotional-health", priority: "0.65", changefreq: "monthly" },
   { url: "/tools/financial-health", priority: "0.65", changefreq: "monthly" },
@@ -261,12 +286,18 @@ function manifestPages() {
     // The Topic Pathways (/pathways/:slug) — guided reading routes. Their
     // manifest is a bare array, handled by the Array.isArray fallback below.
     { file: "client/public/pathways/index.json", prefix: "/pathways/" },
+    // Care plans (/plans/:slug), so a new plan is listed without an edit here,
+    // and the Find Help care pages (/help/:slug): only registry entries with a
+    // written page are routes.
+    { file: "client/public/plans/plans-index.json", key: "plans", prefix: "/plans/" },
+    { file: "client/public/needs/index.json", key: "needs", prefix: "/help/", filter: (e) => e.page === true },
   ];
   for (const s of sources) {
     try {
       const data = JSON.parse(fs.readFileSync(s.file, "utf8"));
       const items = Array.isArray(data) ? data : data[s.key] || [];
       for (const entry of items) {
+        if (s.filter && !s.filter(entry)) continue;
         const slug = entry.slug || (s.slugField ? entry[s.slugField] : undefined);
         if (slug) pages.push({ url: `${s.prefix}${slug}`, priority: "0.75", changefreq: "monthly" });
       }
@@ -318,24 +349,39 @@ function buildXml(staticPages, articles, books, readingPaths) {
     seen.add(p.url);
     return true;
   });
+  // A URL vercel.json 301s away, or one whose canonical is another URL
+  // (query strings), must never be advertised.
+  let excluded = 0;
+  const advertisable = (path) => {
+    if (path.includes("?") || REDIRECT_SOURCES.has(path)) {
+      excluded += 1;
+      return false;
+    }
+    return true;
+  };
   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
   xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
   for (const page of allStatic) {
+    if (!advertisable(page.url)) continue;
     xml += urlEntry(`${BASE_URL}${page.url}`, null, page.changefreq, page.priority);
   }
   for (const a of articles) {
+    if (!advertisable(`/writing/${a.slug}`)) continue;
     const when = a.updatedAt ? new Date(a.updatedAt) : null;
     const lastmod = when && !Number.isNaN(when.getTime()) ? when.toISOString().split("T")[0] : null;
     xml += urlEntry(`${BASE_URL}/writing/${a.slug}`, lastmod, "monthly", "0.8");
   }
   for (const b of books) {
     const lastmod = new Date(b.updatedAt).toISOString().split("T")[0];
+    if (!advertisable(`/books/${b.slug}`)) continue;
     xml += urlEntry(`${BASE_URL}/books/${b.slug}`, lastmod, "monthly", "0.7");
   }
   for (const p of readingPaths) {
     const lastmod = new Date(p.updatedAt).toISOString().split("T")[0];
+    if (!advertisable(`/reading-paths/${p.slug}`)) continue;
     xml += urlEntry(`${BASE_URL}/reading-paths/${p.slug}`, lastmod, "monthly", "0.7");
   }
+  if (excluded > 0) console.log(`[sitemap] excluded ${excluded} redirect-source or query-string URLs`);
   xml += "</urlset>\n";
   return xml;
 }

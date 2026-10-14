@@ -1,8 +1,10 @@
+import type { CSSProperties } from "react";
 import { Link, useLocation } from "wouter";
-import { ArrowRight } from "lucide-react";
+import { scrollBehavior } from "@/lib/motion";
 import { SEOMeta } from "@/components/SEOMeta";
-import { GeneratedCover, coverThemeFor } from "@/components/GeneratedCover";
+import { EditorialIndex } from "@/components/editorial/EditorialIndex";
 import { READING_PATHS as CANONICAL_PATHS, availableCount } from "@/lib/readingPaths";
+import { READING_PATHS as SERIES_PATHS } from "@/data/reading-paths-post-christian";
 
 interface PathArticle {
   title: string;
@@ -183,8 +185,8 @@ const READING_PATHS: ReadingPath[] = [
     estimatedTime: "55 minutes, from Amos to the present",
     articles: [
       {
-        title: "Where the Church Was Silent",
-        slug: "where-church-was-silent",
+        title: "Complicity: How Good People Sustain Bad Systems",
+        slug: "complicity-how-good-people-sustain-bad-systems",
         description:
           "The hardest case against the church is not an argument.",
         readTime: "11 min read",
@@ -227,7 +229,7 @@ export default function ReadingPaths() {
   const scrollToPath = (id: number) => {
     const el = document.getElementById(`path-${id}`);
     if (el) {
-      el.scrollIntoView({ behavior: "smooth", block: "start" });
+      el.scrollIntoView({ behavior: scrollBehavior(), block: "start" });
     }
   };
 
@@ -235,7 +237,7 @@ export default function ReadingPaths() {
     <>
       <SEOMeta
         title="Reading Paths — LiveWell by James Bell"
-        description="Five curated reading paths through marriage, doubt, pastoral life, parenting, and prophetic justice. Start where the weight is heaviest."
+        description="Curated reading paths through marriage, doubt, pastoral life, parenting, justice, and the post-Christian reckoning. Start where the weight is heaviest."
         keywords="reading paths, curated essays, marriage, doubt, pastoral burnout, parenting, justice, theology"
       />
 
@@ -307,108 +309,34 @@ export default function ReadingPaths() {
           >
             Choose your path
           </h2>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(min(340px, 100%), 1fr))",
-              gap: "1.25rem",
-            }}
-          >
+          {/* Doors to the five path sections below. Each card is one <button>
+              (the whole card is the control) that scrolls to its section, so
+              the .ed-card styling is composed by hand rather than through
+              CardGrid, which only renders links. Spans, not headings, inside
+              the button: a button may hold phrasing content only, and each
+              path's own section below carries its h2. */}
+          <ul className="ed-cards" style={{ "--ed-card-min": "340px" } as CSSProperties}>
             {READING_PATHS.map((path) => (
-              <button
-                key={path.id}
-                onClick={() => scrollToPath(path.id)}
-                style={{
-                  background: "var(--card)",
-                  border: "1px solid rgba(26, 26, 26, 0.08)",
-                  borderRadius: "2px",
-                  overflow: "hidden",
-                  padding: 0,
-                  cursor: "pointer",
-                  textAlign: "left",
-                  transition: "border-color 0.2s, box-shadow 0.2s",
-                  display: "flex",
-                  gap: "1.25rem",
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.borderColor = "var(--mustard)";
-                  e.currentTarget.style.boxShadow =
-                    "0 4px 16px rgba(26, 26, 26, 0.06)";
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.borderColor =
-                    "rgba(26, 26, 26, 0.08)";
-                  e.currentTarget.style.boxShadow = "none";
-                }}
-              >
-                <div
-                  style={{
-                    width: "92px",
-                    flexShrink: 0,
-                    alignSelf: "flex-start",
-                    aspectRatio: "3 / 4",
-                    overflow: "hidden",
-                  }}
+              <li key={path.id}>
+                <button
+                  type="button"
+                  className="ed-card"
+                  onClick={() => scrollToPath(path.id)}
+                  style={{ width: "100%", font: "inherit", textAlign: "left", cursor: "pointer" }}
                 >
-                  <GeneratedCover
-                    title={path.title}
-                    eyebrow="Reading Path"
-                    variant={
-                      coverThemeFor(`${path.title} ${path.introduction}`)
-                        .variant
-                    }
-                    style={{ width: "100%", height: "100%" }}
-                  />
-                </div>
-                <div
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    gap: "0.75rem",
-                    padding: "1.75rem 1.75rem 1.75rem 0",
-                    flex: 1,
-                    minWidth: 0,
-                  }}
-                >
-                  <div
-                    style={{
-                      fontFamily: "var(--U)",
-                      fontSize: "0.75rem",
-                      fontWeight: 500,
-                      letterSpacing: "0.18em",
-                      textTransform: "uppercase",
-                      color: "var(--mustard-text)",
-                    }}
-                  >
-                    PATH {path.id}
-                  </div>
-                  <h3
-                    style={{
-                      fontFamily: "var(--F)",
-                      fontSize: "1.25rem",
-                      fontWeight: 400,
-                      color: "var(--ink)",
-                      lineHeight: 1.25,
-                      margin: 0,
-                    }}
-                  >
-                    {path.title}
-                  </h3>
-                  <p
-                    style={{
-                      fontFamily: "var(--U)",
-                      fontSize: "0.8rem",
-                      color: "var(--ink-muted)",
-                      lineHeight: 1.6,
-                      margin: 0,
-                    }}
-                  >
+                  <span className="ed-kicker" style={{ marginBottom: 0 }}>PATH {path.id}</span>
+                  <span className="ed-card-title" style={{ fontWeight: 400 }}>{path.title}</span>
+                  <span className="ed-card-dek">
                     {path.articles.length} essays &middot; {path.estimatedTime}
-                  </p>
-                </div>
-              </button>
+                  </span>
+                  <span className="ed-card-foot">
+                    <span />
+                    <span className="ed-arrow" aria-hidden style={{ transform: "none" }}>↓</span>
+                  </span>
+                </button>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
 
@@ -446,28 +374,20 @@ export default function ReadingPaths() {
           <p style={{ fontSize: "0.95rem", lineHeight: 1.7, color: "var(--charcoal-fg)", opacity: 0.7, maxWidth: "62ch", marginBottom: "2rem" }}>
             The themed collections below gather essays by subject. These six are different — each is a sequence, built to be read in order, tracing one pillar of the site's spine from diagnosis to formation.
           </p>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "0.75rem" }}>
-            {CANONICAL_PATHS.map((p) => (
-              <Link
-                key={p.slug}
-                href={p.externalHref || `/reading-paths/${p.slug}`}
-                style={{
-                  display: "block",
-                  padding: "1.1rem 1.2rem",
-                  border: "1px solid rgba(244,241,234,0.16)",
-                  textDecoration: "none",
-                }}
-              >
-                <span style={{ display: "block", fontFamily: "var(--F)", fontSize: "1.1rem", fontWeight: 400, color: "var(--charcoal-fg)", marginBottom: "0.3rem" }}>
-                  {p.title}
-                  <ArrowRight size={14} style={{ display: "inline", verticalAlign: "middle", marginLeft: "0.45rem", color: "var(--mustard)" }} />
-                </span>
-                <span style={{ display: "block", fontFamily: "var(--U)", fontSize: "0.75rem", letterSpacing: "0.06em", color: "var(--charcoal-fg)", opacity: 0.55 }}>
-                  {p.externalHref ? "The book, in order" : `${availableCount(p)} essays in order`}
-                </span>
-              </Link>
-            ))}
-          </div>
+          {/* Each path's own one-paragraph framing (lib/readingPaths.ts, written
+              for the list card) is the dek; compact rows clamp it to two lines. */}
+          <EditorialIndex
+            tone="dark"
+            columns={2}
+            compact
+            label="The pillar paths"
+            items={CANONICAL_PATHS.map((p) => ({
+              href: p.externalHref || `/reading-paths/${p.slug}`,
+              title: p.title,
+              dek: p.description,
+              meta: p.externalHref ? "The book, in order" : `${availableCount(p)} essays in order`,
+            }))}
+          />
         </div>
       </section>
 
@@ -687,6 +607,48 @@ export default function ReadingPaths() {
       })}
 
       {/* CLOSING SECTION */}
+
+      {/* THE POST-CHRISTIAN SERIES — eight sequenced paths through the
+          60-essay series. Essay pages link here as /reading-paths#<slug>
+          (ArticleNextSteps), so each block carries id={path.slug}. */}
+      <section style={{ background: "var(--bone-warm)", padding: "4rem 1.5rem" }}>
+        <div style={{ maxWidth: "760px", margin: "0 auto" }}>
+          <div style={{ fontFamily: "var(--U)", fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "1rem" }}>
+            The post-Christian series
+          </div>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(1.6rem, 3.5vw, 2.2rem)", fontWeight: 400, lineHeight: 1.15, letterSpacing: "-0.02em", color: "var(--ink)", marginBottom: "0.9rem" }}>
+            Eight paths through the reckoning
+          </h2>
+          <p style={{ fontSize: "0.95rem", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "62ch", marginBottom: "2.5rem" }}>
+            The sixty-essay series on Christianity after Christendom, sequenced for the reader you actually are: the historian, the doubter, the one the church hurt, the one still outside looking in.
+          </p>
+          {SERIES_PATHS.map((path) => (
+            <div key={path.slug} id={path.slug} style={{ borderTop: "1px solid var(--border)", padding: "2rem 0", scrollMarginTop: "90px" }}>
+              <h3 style={{ fontFamily: "var(--F)", fontSize: "1.4rem", fontWeight: 400, color: "var(--ink)", margin: "0 0 0.4rem" }}>
+                {path.title}
+              </h3>
+              <p style={{ fontFamily: "var(--U)", fontSize: "0.8rem", color: "var(--mustard-text)", margin: "0 0 0.75rem" }}>
+                For: {path.audience} &middot; {path.articles.length} essays &middot; {path.estimatedTime}
+              </p>
+              <p style={{ fontSize: "0.95rem", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "62ch", margin: "0 0 1.25rem" }}>
+                {path.introduction}
+              </p>
+              <ol style={{ margin: 0, padding: 0, listStyle: "none", display: "flex", flexDirection: "column", gap: "0.6rem" }}>
+                {path.articles.map((a, i) => (
+                  <li key={a.slug}>
+                    <Link href={`/writing/${a.slug}`} style={{ display: "flex", gap: "0.75rem", alignItems: "baseline", textDecoration: "none" }}>
+                      <span style={{ fontFamily: "var(--U)", fontSize: "0.75rem", color: "var(--ink-muted)", flex: "0 0 1.4rem" }}>{i + 1}.</span>
+                      <span style={{ fontFamily: "var(--B)", fontSize: "0.95rem", color: "var(--ink)", borderBottom: "1px solid var(--mustard)", paddingBottom: "1px" }}>{a.title}</span>
+                      <span style={{ fontFamily: "var(--U)", fontSize: "0.75rem", color: "var(--ink-muted)", marginLeft: "auto", flexShrink: 0 }}>{a.readTime}</span>
+                    </Link>
+                  </li>
+                ))}
+              </ol>
+            </div>
+          ))}
+        </div>
+      </section>
+
       <section
         style={{
           background: "var(--charcoal)",

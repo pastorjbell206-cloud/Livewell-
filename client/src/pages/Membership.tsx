@@ -24,15 +24,21 @@ export default function Membership() {
   const handleWaitlist = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!email || !email.includes("@")) return;
+    setCheckoutError(null);
+    // Only claim a spot on the list when the request actually landed —
+    // "you are on the list" must never be said over a failed signup.
     try {
-      await fetch("/api/subscribe", {
+      const res = await fetch("/api/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, source: "membership-waitlist" }),
       });
-    } catch { /* best-effort */ }
-    setJoined(true);
-    setEmail("");
+      if (!res.ok) throw new Error(String(res.status));
+      setJoined(true);
+      setEmail("");
+    } catch {
+      setCheckoutError("The signup didn't go through. Try again in a moment, or email Pastorjbell206@gmail.com and I will add you by hand.");
+    }
   };
 
   const handleCheckout = async (e: React.FormEvent) => {

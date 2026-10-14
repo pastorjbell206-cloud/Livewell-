@@ -9,12 +9,25 @@
  * unpublished slug at test time, not in production.
  */
 import { describe, expect, it } from "vitest";
+import { readFileSync } from "node:fs";
+import { fileURLToPath } from "node:url";
+import path from "node:path";
 import { READING_PATHS, getReadingPathBySlug } from "@/lib/readingPaths";
 import contentData from "@/data/content-data.json";
 
-const knownSlugs = new Set(
-  (contentData as { posts: { slug: string }[] }).posts.map(p => p.slug)
-);
+// The serving truth for /writing/:slug is DB → static library (api/index.ts
+// trpcGetPost; dev's db.ts merges the same library), and content-data.json is
+// a further client-side subset — so a slug in EITHER store renders. The guard
+// checks the union, matching what production actually resolves.
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const staticLibrary = JSON.parse(
+  readFileSync(path.resolve(__dirname, "../content/static-library.generated.json"), "utf8")
+) as { slug: string }[];
+
+const knownSlugs = new Set([
+  ...(contentData as { posts: { slug: string }[] }).posts.map(p => p.slug),
+  ...staticLibrary.map(e => e.slug),
+]);
 
 describe("reading paths source of truth", () => {
   it("defines the six definitive paths with unique slugs", () => {

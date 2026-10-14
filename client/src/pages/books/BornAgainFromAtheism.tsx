@@ -87,7 +87,7 @@ export default function BornAgainFromAtheism() {
       {/* FREE SAMPLE */}
       <section style={{ background: "var(--bone)", padding: "0 var(--s-4) var(--s-5)" }}>
         <div style={prose} className="book-prose">
-          {sample ? <Markdown>{sample}</Markdown> : <p style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }}>Loading the opening…</p>}
+          {sample ? <Markdown>{sample}</Markdown> : <p style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }} role="status">Loading the opening…</p>}
         </div>
       </section>
 

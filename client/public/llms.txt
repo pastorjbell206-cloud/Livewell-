@@ -34,9 +34,19 @@ doors: Study, Essays, Books, Resources, and About.
   Temple Judaism, the Greco-Roman world, honor-shame culture, and reading the
   Bible apart from American political assumptions, all cited to scholarship):
   https://www.livewellbyjamesbell.co/resources/context
-- Study guides for groups (sixty-two free small-group curricula, each with
-  Leader's Guide and Participant Handout PDFs; each guide lives at
-  /studyguides/{slug}): https://www.livewellbyjamesbell.co/studyguides
+- Study guides for groups (sixty-eight free small-group curricula, each a
+  facilitator-ready course of five or six sessions with full teaching,
+  discussion questions, anticipated objections answered, Scripture study, and
+  prayers, and each with Leader's Guide and Participant Handout PDFs; each
+  guide lives at /studyguides/{slug}). Topics run from books and texts of
+  Scripture (the Psalms, the Beatitudes, the parables, the Lord's Prayer, the
+  story of the whole Bible) through doctrine (the creeds, the image of God,
+  baptism and communion, the fruit of the Spirit) and the church year (Advent,
+  Lent) to the weight of ordinary life (marriage, parenting, singleness,
+  grief, suffering, mental health, anger, money, contentment, friendship,
+  hospitality, manhood, womanhood, aging and legacy, caring for aging parents,
+  divorce and blended families, addiction and recovery, and a guide for
+  teenagers): https://www.livewellbyjamesbell.co/studyguides
 
 ## Essays
 
@@ -58,14 +68,20 @@ doors: Study, Essays, Books, Resources, and About.
 ## Resources
 
 - Resources (the hub): https://www.livewellbyjamesbell.co/resources
-- Downloads and PDFs (leader guides, participant handouts, the Hard Issues
-  booklets): https://www.livewellbyjamesbell.co/downloads
+- Downloads and PDFs (every printable, free: study-guide leader guides and
+  participant handouts, Find Help guides and worksheets, eight-week plan
+  booklets, Bible reading plans, workbooks for couples, Scripture cards, the
+  Hard Issues booklets): https://www.livewellbyjamesbell.co/downloads
 - The Hard Issues series:
   https://www.livewellbyjamesbell.co/resources/hard-issues-series
 - Tools (every tool on the site, in one registry):
   https://www.livewellbyjamesbell.co/tools
 - Find Help (for a hard season, with eight-week care plans and a path to real
-  help): https://www.livewellbyjamesbell.co/help
+  help; care pages written in the words people search, for the hard places a
+  pastor hears about, among them worry, grief, a marriage in trouble, doubt,
+  addiction, and job loss, each with Scripture read in context, steps for this
+  week, signs that call for more help, and verified help lines):
+  https://www.livewellbyjamesbell.co/help
 - Integrated Life (one undivided life: the inner life, the body and rhythms,
   home, work and money, the world): https://www.livewellbyjamesbell.co/life
 - For families (devotions, the catechism, reading plans):

@@ -49,7 +49,7 @@ export default function PropheticQuestions({ config }: { config: SectionConfig }
 
       <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-7)" }}>
         <div style={{ ...wrap, display: "flex", flexDirection: "column", gap: "10px" }}>
-          {questions.length === 0 && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }}>Loading…</p>}
+          {questions.length === 0 && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }} role="status">Loading…</p>}
           {questions.map((q) => {
             const isOpen = open === q.id;
             return (

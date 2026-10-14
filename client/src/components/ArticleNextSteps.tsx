@@ -59,12 +59,13 @@ const TOOL_MAP: Record<string, ToolRec> = {
   },
   // The burnout diagnostic moved with the pastors' library to the Pastors
   // Connection Network (/tools/pastor-burnout now 301s to /tools), so a
-  // tired leader is sent to Find Help, which names a next step on this site.
+  // tired leader is sent to Find Help's page for pastors running on empty,
+  // which names a next step on this site.
   "pastor-burnout": {
     name: "Find help for a leader running on empty",
     description:
       "Somewhere to start when the work has taken more than you had.",
-    href: "/help",
+    href: "/help/pastors",
   },
   "life-audit": {
     name: "Life Audit",

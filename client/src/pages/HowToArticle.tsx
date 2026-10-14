@@ -66,7 +66,7 @@ export default function HowToArticle() {
           {article && (
             <article>
               <div style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, letterSpacing: "0.07em", color: "var(--mustard-text)", margin: "var(--s-4) 0 12px" }}>
-                {(TOPIC_LABEL[article.topic] || article.topic).toUpperCase()} · {article.readTime}
+                {(TOPIC_LABEL[article.topic] || article.topic).toUpperCase()} · {/^\d+$/.test(String(article.readTime).trim()) ? `${String(article.readTime).trim()} min read` : article.readTime}
               </div>
               <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(30px, 4.6vw, 46px)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.02em", color: "var(--ink)", marginBottom: "var(--s-3)" }}>
                 {article.title}

@@ -12,7 +12,7 @@ export function TriageBadge({ triage, withShort = false }: { triage: Triage; wit
         style={{
           fontFamily: "var(--U)", fontSize: "11px", fontWeight: 700, letterSpacing: "0.1em",
           textTransform: "uppercase", color: t.color, background: t.bg,
-          border: `1px solid ${t.color}33`, borderRadius: "999px", padding: "4px 12px",
+          border: `1px solid color-mix(in srgb, ${t.color} 20%, transparent)`, borderRadius: "999px", padding: "4px 12px",
         }}
       >
         {t.label}

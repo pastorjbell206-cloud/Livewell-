@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import { scrollBehavior } from "@/lib/motion";
 import { SEOMeta } from "@/components/SEOMeta";
 import ScriptureNote from "@/components/ScriptureNote";
 import { Link } from "wouter";
@@ -155,7 +156,7 @@ const TOPICS: Topic[] = [
         reference: "Matthew 26:36-46",
         text: "'My soul is overwhelmed with sorrow to the point of death,' he said to them. ... Going a little farther, he fell with his face to the ground and prayed, 'My Father, if it is possible, may this cup be taken from me. Yet not as I will, but as you will.'",
         context:
-          "Gethsemane is the moment when the incarnation costs the most. Jesus does not approach the cross with stoic detachment; he sweats blood. He asks for another way. The disciples fall asleep, which means he faces this alone. The one who told others not to be anxious is himself overwhelmed with sorrow.",
+          "Gethsemane is the moment when the incarnation costs the most. Jesus does not approach the cross with stoic detachment; his sweat falls like drops of blood. He asks for another way. The disciples fall asleep, which means he faces this alone. The one who told others not to be anxious is himself overwhelmed with sorrow.",
         misuse:
           "Sometimes presented as a model of cheerful obedience: 'Jesus submitted, so should you.' This misses the agony. Jesus submitted, yes, but through anguish so severe that Luke describes it as producing sweat like drops of blood. Obedience here is not calm acceptance; it is choosing the Father's will while your body is breaking down.",
         teaches:
@@ -1704,7 +1705,7 @@ export default function BibleReference() {
                 <button
                   onClick={() => {
                     setActiveTopic(null);
-                    window.scrollTo({ top: 0, behavior: "smooth" });
+                    window.scrollTo({ top: 0, behavior: scrollBehavior() });
                   }}
                   style={{
                     padding: "12px 28px",
