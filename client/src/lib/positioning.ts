@@ -25,7 +25,30 @@ export const PRIMARY_SUBHEAD_SHORT =
   "For believers trying to follow Jesus in a culture that no longer shares Christian assumptions. Essays on theology, culture, family, and the American church, helping readers reconstruct a deeper historical faith and learn to live well in post-Christian America.";
 
 export const META_DESCRIPTION =
-  "Deep theology for everyday life. Essays on theology, politics, and the American church after Christendom — plus marriage, money, parenting, manhood, womanhood, and the long work of pastoring. By James Bell. New essays weekly.";
+  "Learning to follow Jesus and live well in post-Christian America. A Study Bible with notes on every chapter, the church's long history, essays, and books by James Bell.";
+
+/*
+ * The home page hero. Every sentence here is already on the site in James's
+ * own words (the home page's mission line and /about), so the front page
+ * introduces him without adding a claim. scripts/prerender-heads.mjs paints
+ * the same strings into the static HTML for "/", so keep each one a plain
+ * double-quoted string on one line. (The headline's hyphen is a non-breaking
+ * one, U+2011, so "post-Christian" never splits across lines.)
+ */
+export const HOME_HEADLINE =
+  "Learning to follow Jesus — and live well — in post‑Christian America.";
+
+/** Why the site exists (/about, "The heart behind it"). */
+export const HOME_WHY =
+  "What I want is simple to say and long to do. I want the historic faith — the creed, the cross, the resurrection, the kingdom — held out in ordinary language to people who have every cultural permission to ignore it.";
+
+/** Who is writing (/about, the opening). */
+export const HOME_WHO =
+  "I was an atheist before I was a Christian. I bring it up because it changed how I write and not because I want to build a personality on it. Mostly it means I know what the objections sound like from the inside, and I am not willing to answer them with something thin.";
+
+/** James's portrait, the same photograph /about and the author card use. */
+export const PORTRAIT_URL =
+  "https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/IMG_4533_137f3486.jpeg";
 
 export const NEWSLETTER_PITCH_PASTORAL = {
   title: "The Pastor's Letter — Tuesday morning",

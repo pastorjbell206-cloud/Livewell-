@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { CrisisBlock } from "@/components/CrisisBlock";
 import { readStoredJSON, removeStoredJSON, writeStoredJSON } from "@/lib/storage";
+import { isPublicEssay } from "@/lib/shelf";
 
 const QUESTIONS = [
   {
@@ -62,9 +63,16 @@ const FIRST_STEPS: Record<string, { help: { href: string; label: string }; tool:
 
 // The article titles here are display copies of the real titles; the
 // start-quiz-titles test keeps them from drifting when essays are retitled.
+// Only essays on the public shelf are shown (client/src/lib/shelf.json), so
+// each path also names live pages to start from: its Find Help page, its
+// eight-week plan, or a study.
 export const READING_PATHS = {
   "marriage-crisis-articles": {
     title: "Marriage Under Strain",
+    pages: [
+      { title: "My marriage is falling apart", href: "/help/marriage", kind: "Find Help" },
+      { title: "Eight Weeks Toward Each Other", href: "/plans/marriage", kind: "Eight-week plan" }
+    ],
     articles: [
       { title: "When Romance Left Covenant Remains", slug: "when-romance-left-covenant-remains" },
       { title: "What the Resentment in Your Marriage Is Telling You", slug: "the-resentment-in-your-marriage" },
@@ -74,6 +82,10 @@ export const READING_PATHS = {
   },
   "marriage-searching-articles": {
     title: "Building Covenant Strength",
+    pages: [
+      { title: "Why Do Marriages Drift Apart, and How Do You Stop It?", href: "/life/marriage-the-long-covenant", kind: "Everyday Life" },
+      { title: "Eight Weeks Toward Each Other", href: "/plans/marriage", kind: "Eight-week plan" }
+    ],
     articles: [
       { title: "When Romance Left Covenant Remains", slug: "when-romance-left-covenant-remains" },
       { title: "What Are You Really Promising in Your Marriage Vows?", slug: "the-covenant-you-didnt-understand" },
@@ -83,6 +95,10 @@ export const READING_PATHS = {
   },
   "parenting-crisis-articles": {
     title: "Parenting Through Uncertainty",
+    pages: [
+      { title: "Parenting is harder than anyone said", href: "/help/parenting", kind: "Find Help" },
+      { title: "Eight Weeks for the Worn-Out Parent", href: "/plans/parenting", kind: "Eight-week plan" }
+    ],
     articles: [
       { title: "When Your Teenager Says They Don't Believe Anymore", slug: "teenager-losing-faith" },
       { title: "How to Talk to Your Kids About Faith When You're Not Sure Yourself", slug: "how-to-talk-kids-faith-doubt" },
@@ -92,6 +108,10 @@ export const READING_PATHS = {
   },
   "doubt-crisis-articles": {
     title: "Finding Faith in the Questions",
+    pages: [
+      { title: "I'm not sure I believe anymore", href: "/help/doubt", kind: "Find Help" },
+      { title: "Eight Weeks for When You're Not Sure Anymore", href: "/plans/doubt", kind: "Eight-week plan" }
+    ],
     articles: [
       { title: "What If Christianity Is Wrong?", slug: "what-if-we-are-wrong" },
       { title: "What You're Really Leaving When You Leave the Faith", slug: "constantines-bargain" },
@@ -101,6 +121,10 @@ export const READING_PATHS = {
   },
   "pastoral-articles": {
     title: "Pastoral Leadership & Burnout",
+    pages: [
+      { title: "I'm a pastor and I'm running on empty", href: "/help/pastors", kind: "Find Help" },
+      { title: "Pastoral Health: A Study for Leaders and Those Who Love Them", href: "/studyguides/pastoral-health", kind: "Study guide" }
+    ],
     articles: [
       { title: "Can You Be a Christian on Your Own?", slug: "can-you-be-a-christian-alone" },
       { title: "Rest, Ambition, and the Idol of Success", slug: "rest-ambition-and-the-idol-of-success" },
@@ -110,6 +134,10 @@ export const READING_PATHS = {
   },
   "default": {
     title: "Essential LiveWell Collection",
+    pages: [
+      { title: "Find help, starting from your own words", href: "/help", kind: "Find Help" },
+      { title: "The Study Bible", href: "/study/bible", kind: "Study" }
+    ],
     articles: [
       { title: "What Comes After Deconstruction of Your Faith?", slug: "excavation-not-demolition" },
       { title: "When Romance Left Covenant Remains", slug: "when-romance-left-covenant-remains" },
@@ -261,7 +289,7 @@ export default function StartHereQuiz() {
                 {[
                   { label: "Marriage", href: "/marriage" },
                   { label: "Parenting", href: "/parenting" },
-                  { label: "Doubt", href: "/doubt" },
+                  { label: "Doubt", href: "/answers" },
                   { label: "Disciple someone", href: "/studyguides" },
                   { label: "Grief", href: "/plans/grief" },
                   { label: "Pastoring", href: "/studyguides/pastoral-health" },
@@ -390,8 +418,8 @@ export default function StartHereQuiz() {
               </h1>
               <p style={{ fontSize: "16px", color: "var(--ink3)", marginBottom: "24px" }}>
                 {answers.format === "tools" || answers.format === "devotionals"
-                  ? "One place to begin in the form you asked for, then three essays for what you said is weighing on you, and a book after them."
-                  : "Three essays for what you said is weighing on you, and one book after them."}{" "}
+                  ? "One place to begin in the form you asked for, then reading for what you said is weighing on you, and a book after it."
+                  : "Reading for what you said is weighing on you, and one book after it."}{" "}
                 A real person is better than any page here, and <Link href="/help" style={{ color: "var(--mustard-text)", fontWeight: 600 }}>Find help</Link> starts from your own words.
               </p>
               <h2 style={{ fontSize: "24px", fontWeight: "bold", color: "var(--ink)", marginBottom: "32px", fontFamily: "var(--F)" }}>
@@ -415,18 +443,21 @@ export default function StartHereQuiz() {
             {/* ARTICLES */}
             <div style={{ marginBottom: "48px" }}>
               <h3 style={{ fontSize: "18px", fontWeight: "bold", color: "var(--ink)", marginBottom: "24px" }}>
-                Start with these essays
+                Start with these
               </h3>
               <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-                {readingPath.articles.map((article, i) => (
-                  <Link key={i} href={"/writing/" + article.slug} style={{ textDecoration: "none" }}>
+                {[
+                  ...readingPath.pages,
+                  ...readingPath.articles.filter((a) => isPublicEssay(a.slug)).map((a) => ({ title: a.title, href: "/writing/" + a.slug, kind: "Essay" })),
+                ].map((article, i) => (
+                  <Link key={i} href={article.href} style={{ textDecoration: "none" }}>
                     <div style={{ background: "var(--card)", padding: "24px", borderRadius: "8px", border: "1px solid var(--border)", cursor: "pointer", display: "flex", justifyContent: "space-between", alignItems: "start" }}>
                       <div style={{ textAlign: "left" }}>
                         <h4 style={{ fontSize: "16px", fontWeight: "bold", color: "var(--ink)", margin: "0 0 8px 0" }}>
                           {article.title}
                         </h4>
                         <p style={{ fontSize: "13px", color: "var(--ink3)", margin: 0 }}>
-                          Essay
+                          {article.kind}
                         </p>
                       </div>
                       <span style={{ color: "var(--gold)", fontWeight: "bold", marginLeft: "16px", whiteSpace: "nowrap" }}>
@@ -446,7 +477,7 @@ export default function StartHereQuiz() {
                 variant="inline"
                 source="start-here-quiz"
                 title="Want this path emailed to you?"
-                description="Direct links to the essays on your path, plus the weekly letter when new pieces land."
+                description="Direct links to the pages on your path, plus the weekly letter when new pieces land."
               />
             </div>
 

@@ -35,6 +35,7 @@ import { ANSWERS } from "../client/src/data/answers.ts";
 import { ARGUMENT_CASES } from "../client/src/data/argumentCases.ts";
 import { DISCUSSION_GUIDES } from "../client/src/data/discussion-guides.ts";
 import { BOOKLETS } from "../client/src/data/booklets.ts";
+import { essayDate, loadEssayShelf } from "./lib/shelf.mjs";
 
 dotenv.config();
 
@@ -117,7 +118,9 @@ function uniq(list, max = 12) {
 function parseSet(relFile, name) {
   try {
     const src = fs.readFileSync(path.join(ROOT, relFile), "utf8");
-    const m = src.match(new RegExp(`${name} = new Set<string>\\(\\[([\\s\\S]*?)\\]\\)`));
+    // Anchored to a declaration at the start of a line, so a comment that
+    // quotes the declaration's shape is never read in its place.
+    const m = src.match(new RegExp(`^(?:export )?const ${name} = new Set<string>\\(\\[([\\s\\S]*?)\\]\\)`, "m"));
     if (!m) return new Set();
     return new Set([...m[1].matchAll(/["']([^"']+)["']/g)].map((x) => x[1]));
   } catch {
@@ -162,7 +165,13 @@ async function loadDbEssays() {
       // characters is an abstract, not an essay.
       `SELECT ${wanted.join(", ")} FROM posts WHERE published = true AND CHAR_LENGTH(body) >= 600`
     );
-    return rows;
+    // Rows the admin unpublished: the takedown lever. Marked so essayItems
+    // keeps them out even when the shelf or the static library would add them.
+    let hidden = [];
+    try {
+      [hidden] = await conn.query("SELECT slug FROM posts WHERE published = false");
+    } catch { /* nothing to hold back */ }
+    return [...rows, ...hidden.map((h) => ({ slug: h.slug, unpublished: true }))];
   } catch (err) {
     console.warn(`[catalogue] database unavailable (${err.message}); essays from the static library only`);
     return null;
@@ -181,23 +190,40 @@ function loadStaticEssays() {
 }
 
 function essayItems(dbRows, staticRows) {
+  // Only the public essay shelf (scripts/lib/shelf.mjs): live shelf essays,
+  // pending ones whose rewrite exists, and posts created after the cutoff.
+  // Retired essays stay out of the Library, MoreOnThis, and the Downloads
+  // search, whatever the database or the static library still holds.
+  const shelf = loadEssayShelf(ROOT);
+  // TAKEN_DOWN gates static copies only, exactly as api/index.ts applies it;
+  // a DB row under the same slug (James's own chapter) is unaffected.
   const takenDown = parseSet("api/index.ts", "TAKEN_DOWN");
   const hidden = parseSet("client/src/lib/hiddenSlugs.ts", "HIDDEN_SLUGS");
+  const unpublished = new Set((dbRows ?? []).filter((r) => r.unpublished).map((r) => r.slug));
   const bySlug = new Map();
-  // Database first; the static library fills in slugs the database lacks,
-  // exactly as posts.listPublished merges them.
-  for (const r of [...(dbRows ?? []), ...staticRows]) {
-    if (!r.slug || bySlug.has(r.slug) || takenDown.has(r.slug) || hidden.has(r.slug)) continue;
+  const add = (r) => {
+    if (!r.slug || bySlug.has(r.slug) || hidden.has(r.slug) || unpublished.has(r.slug)) return;
+    if (!shelf.isPublic(r.slug, essayDate(r))) return;
+    const rewrite = shelf.overrideRecords.get(r.slug);
+    const entry = shelf.entries.get(r.slug);
     bySlug.set(r.slug, item({
       kind: "Essay",
-      title: r.title,
-      summary: clip(r.excerpt),
+      title: rewrite?.title || r.title,
+      summary: clip(rewrite ? rewrite.excerpt : entry?.blurb ?? r.excerpt),
       href: `/writing/${r.slug}`,
       group: r.pillar,
       minutes: minutesFrom(r.readingTimeMinutes) ?? minutesFrom(r.readTime),
-      date: isoDate(r.publishedAt ?? r.createdAt),
+      date: isoDate(rewrite?.updated ?? r.publishedAt ?? r.createdAt),
     }));
-  }
+  };
+  // Database first; the static library fills in slugs the database lacks,
+  // exactly as posts.listPublished merges them.
+  for (const r of dbRows ?? []) add(r);
+  for (const r of staticRows) if (!takenDown.has(r.slug)) add(r);
+  // The shelf itself last, so a public shelf essay is listed even when the
+  // build has no database (CI, previews): its title and line come from the
+  // committed shelf, or from its rewrite.
+  for (const e of shelf.liveEssays()) add({ slug: e.slug, title: e.title, excerpt: e.blurb ?? "" });
   return [...bySlug.values()];
 }
 

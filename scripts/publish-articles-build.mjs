@@ -30,6 +30,7 @@ import { readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import dotenv from "dotenv";
+import { loadTakenDown } from "./lib/shelf.mjs";
 
 dotenv.config();
 
@@ -75,11 +76,15 @@ async function main() {
   // simply behaves as before. With it, prefer the longest clean body per slug
   // when filling a stub row, and fill stub rows for slugs the article library
   // never carried.
+  // Static copies listed in api/index.ts's TAKEN_DOWN are never a fill
+  // source: when-fear-rewrites-theology, for one, is an AI draft that shares
+  // its slug with James's own chapter, and must never be written into his row.
+  const takenDown = loadTakenDown();
   let staticLib = [];
   try {
     const raw2 = JSON.parse(readFileSync(STATIC_LIB, "utf8"));
     staticLib = (Array.isArray(raw2) ? raw2 : []).filter(
-      (a) => a && a.slug && a.body && !hasCite(a.body)
+      (a) => a && a.slug && a.body && !hasCite(a.body) && !takenDown.has(a.slug)
     );
   } catch {
     /* optional source — proceed with the article library alone */

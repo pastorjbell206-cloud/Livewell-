@@ -125,10 +125,8 @@
     "read": [
       { "href": "/study/bible/mark", "label": "The Gospel of Mark in the Study Bible, with an introduction and notes on every chapter", "kind": "Page" },
       { "href": "/how-tos/sf-how-to-actually-read-the-bible", "label": "How to Actually Read the Bible", "kind": "How-to" },
-      { "href": "/writing/the-bible-is-one-story", "label": "Is the Bible One Story or a Book of Rules?", "kind": "Essay" },
       { "href": "/life/the-story-we-live-in", "label": "Creation, Fall, Redemption, Restoration: The Bible's Story", "kind": "Life" },
-      { "href": "/writing/reading-the-bible-slowly", "label": "How to Read the Bible Slowly, the Old Way", "kind": "Essay" },
-      { "href": "/writing/reading-in-community", "label": "Why Should You Read the Bible in Community?", "kind": "Essay" },
+      { "href": "/resources/context/collectivist-world-individualist-readers", "label": "Is 'You' in the New Testament Singular or Plural? (why the Bible was never meant to be read as private mail)", "kind": "Page" },
       { "href": "/resources/context/the-violence-of-the-old-testament", "label": "Why Is the Old Testament So Violent? An Honest Look", "kind": "Page" },
       { "href": "/resources/context", "label": "Reading Scripture in Context: guides to the world behind the Bible", "kind": "Page" },
       { "href": "/plans/skeptic", "label": "Eight Weeks of Reading Like an Adult, a reading plan for the curious skeptic", "kind": "Plan" },

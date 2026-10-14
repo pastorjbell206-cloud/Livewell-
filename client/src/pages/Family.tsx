@@ -18,6 +18,7 @@ import { EditorialIndex, type IndexItem } from "@/components/editorial/Editorial
 import { CardGrid } from "@/components/editorial/CardGrid";
 import { SectionHead } from "@/components/editorial/SectionHead";
 import { trpc } from "@/lib/trpc";
+import { filterPublicPosts, isPublicEssayHref } from "@/lib/shelf";
 import SubjectShelf from "@/components/SubjectShelf";
 import ScriptureNote from "@/components/ScriptureNote";
 import { subjectById } from "@/lib/subjects";
@@ -44,7 +45,8 @@ const card = {
 
 export default function Family() {
   const postsQuery = trpc.posts.listPublished.useQuery();
-  const posts = postsQuery.data ?? [];
+  // Only essays on the public shelf (lib/shelf.ts); retired ones stay unlisted.
+  const posts = filterPublicPosts(postsQuery.data ?? []);
   const teen = posts.filter((p) => p.slug.startsWith("teen-"));
   const apologetics = posts.filter((p) => p.slug.startsWith("apologetics-"));
   const parentingArticles = posts.filter((p) => p.slug.startsWith("parenting-"));
@@ -200,7 +202,7 @@ export default function Family() {
                 ...(SKEPTIC_TRACK_LIVE
                   ? [{ href: "/skeptic-track", title: "Start here if you're a skeptic", dek: "Seven essays in argument order, for anyone working out whether this is true." }]
                   : []),
-                { href: "/doubt", title: "On doubt", dek: "Doubt is not the enemy of faith. What to do with the questions." },
+                { href: "/answers", title: "On doubt and hard questions", dek: "Doubt is not the enemy of faith. Short, honest answers to the questions." },
               ]}
             />
           )}
@@ -237,7 +239,7 @@ export default function Family() {
               { href: "/writing/what-fatherhood-requires", title: "What fatherhood requires", dek: "On the inheritance you pass down, and the one you choose to break." },
               { href: "/life/raising-children-in-grace", title: "Raising children in grace", dek: "The deep guide: discipline that reaches the heart, faith, screens, and the teen years. You cannot save your children, and you were never meant to." },
               { href: "/life/the-home-and-the-family", title: "The home and the family", dek: "The household as a school of grace: the table, family worship, and the open door." },
-            ]}
+            ].filter((item) => isPublicEssayHref(item.href))}
           />
         </div>
       </section>
@@ -259,7 +261,7 @@ export default function Family() {
               { href: "/tools/marriage-assessment", title: "Marriage health assessment", dek: "A 15-question diagnostic across communication, trust, conflict, and shared vision." },
               { href: "/writing/covenant-vs-contract-what-marriage-is", title: "Covenant vs. contract", dek: "What marriage actually is, and why the difference holds it together." },
               { href: "/life/marriage-the-long-covenant", title: "Marriage: the long covenant", dek: "The deep guide: the slow drift, conflict, money, desire, and the daily work of staying married well." },
-            ]}
+            ].filter((item) => isPublicEssayHref(item.href))}
           />
         </div>
       </section>

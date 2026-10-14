@@ -13,6 +13,10 @@ import superjson from "superjson";
 // slug collision; static fills the rest; if the DB is unreachable the site still
 // serves the library. Regenerate with `node scripts/build-static-library.mjs`.
 import STATIC_LIBRARY from "./static-library.generated.js";
+// The essay shelf: the one committed list of which essays are public
+// (client/src/lib/shelf.ts reads the same file). Only the RSS feed consults it
+// here; the listings are filtered on the client and in the build scripts.
+import SHELF_DATA from "../client/src/lib/shelf.json" with { type: "json" };
 import { readFileSync } from "node:fs";
 import { readFile } from "node:fs/promises";
 import Stripe from "stripe";
@@ -1212,11 +1216,18 @@ function byDateDesc(a: any, b: any): number {
 // static-only essay has no DB row to unpublish, so this is its hard-pull lever:
 // add its slug here, deploy, and it is gone everywhere the static library serves
 // it (the direct URL and the listings). Code-level, auditable, only ever
-// removes content. Keep empty until a piece must come down.
+// removes content. Add a slug only when a static copy must come down.
 // NOTE: scripts/generate-sitemap.mjs parses this exact single-line declaration
 // at build time to drop taken-down slugs from the sitemap — keep the
 // `const TAKEN_DOWN = new Set<string>([...])` shape if you edit it.
-const TAKEN_DOWN = new Set<string>([]);
+//
+// when-fear-rewrites-theology: the URL belongs to James's Substack chapter (a
+// DB row). The static library also carries an AI draft under the same slug
+// (content/drafts/faith-crisis/), which would surface here whenever the DB row
+// is missing, unpublished, or unreachable. Listing it keeps the draft off that
+// URL for good; the DB chapter is unaffected (TAKEN_DOWN only gates static
+// copies). The build scripts honor the same set (scripts/lib/shelf.mjs).
+const TAKEN_DOWN = new Set<string>(["when-fear-rewrites-theology"]);
 
 // Append the static essays the DB doesn't already have (DB wins on slug), then
 // order the whole set newest-first so the index reads as one library.
@@ -1492,6 +1503,7 @@ type SearchResult = {
   url?: string;
   category?: string;
   publishedAt?: unknown;
+  createdAt?: unknown;
   relevance?: number;
 };
 
@@ -1503,7 +1515,7 @@ function clampLimit(n: unknown, def = 20, max = 50): number {
 async function searchArticlesProd(c: mysql.PoolConnection, query: string, limit: number): Promise<SearchResult[]> {
   try {
     const [rows]: any = await c.query(
-      "SELECT id, title, excerpt, slug, pillar, topic, publishedAt, " +
+      "SELECT id, title, excerpt, slug, pillar, topic, publishedAt, createdAt, " +
         "MATCH(title, excerpt, body) AGAINST(? IN NATURAL LANGUAGE MODE) AS relevance " +
         "FROM posts WHERE published = true " +
         "AND MATCH(title, excerpt, body) AGAINST(? IN NATURAL LANGUAGE MODE) " +
@@ -1513,12 +1525,12 @@ async function searchArticlesProd(c: mysql.PoolConnection, query: string, limit:
     return (rows as any[]).map((a) => ({
       id: a.id, type: "article", title: a.title, excerpt: a.excerpt ?? undefined,
       slug: a.slug, category: a.topic ?? a.pillar ?? undefined,
-      publishedAt: a.publishedAt ?? undefined, relevance: a.relevance,
+      publishedAt: a.publishedAt ?? undefined, createdAt: a.createdAt ?? undefined, relevance: a.relevance,
     })) as SearchResult[];
   } catch {
     const term = `%${query}%`;
     const [rows]: any = await c.query(
-      "SELECT id, title, excerpt, slug, pillar, topic, publishedAt FROM posts " +
+      "SELECT id, title, excerpt, slug, pillar, topic, publishedAt, createdAt FROM posts " +
         "WHERE published = true AND (title LIKE ? OR excerpt LIKE ? OR body LIKE ?) " +
         "ORDER BY publishedAt DESC LIMIT " + limit,
       [term, term, term],
@@ -1526,7 +1538,7 @@ async function searchArticlesProd(c: mysql.PoolConnection, query: string, limit:
     return (rows as any[]).map((a) => ({
       id: a.id, type: "article", title: a.title, excerpt: a.excerpt ?? undefined,
       slug: a.slug, category: a.topic ?? a.pillar ?? undefined,
-      publishedAt: a.publishedAt ?? undefined,
+      publishedAt: a.publishedAt ?? undefined, createdAt: a.createdAt ?? undefined,
     })) as SearchResult[];
   }
 }
@@ -1737,6 +1749,18 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
             }
           }
           if (sets.length === 0) return trpcOk(res, { ok: true });
+          // Publishing a draft records when it went out, as publishBySlugs
+          // does: the essay shelf's Latest rule reads publishedAt (else
+          // createdAt), so a draft begun before the cutoff and published
+          // after it still appears. Only an unpublished row is stamped, so
+          // saving an essay that is already live never changes its date.
+          // Mirrored in server/db.ts updatePost (the dev runtime).
+          if (input?.published === true) {
+            await c.execute(
+              "UPDATE posts SET publishedAt = COALESCE(publishedAt, NOW()) WHERE id = ? AND published = 0",
+              [postId]
+            );
+          }
           sets.push("updatedAt = NOW()");
           params.push(postId);
           await c.execute(`UPDATE posts SET ${sets.join(", ")} WHERE id = ?`, params);
@@ -2892,26 +2916,47 @@ function escapeXml(s: string): string {
     .replace(/'/g, "&apos;");
 }
 
+// The feed syndicates only what the essay shelf makes public: the live shelf
+// essays, and posts not on the shelf that went out at or after the shelf's
+// cutoff (publishedAt, else createdAt; the rule in client/src/lib/shelf.ts).
+// Retired essays stay out. A pending shelf essay stays out even once its
+// rewrite exists: the rewrite lives in client/public/essays/, not in the row
+// this feed reads, so syndicating the row would send the old text.
+const SHELF_FILE: { latestCutoff: string; essays: { slug: string; status: string }[] } = SHELF_DATA;
+const RSS_LIVE_SLUGS: string[] = SHELF_FILE.essays.filter((e) => e.status === "live").map((e) => e.slug);
+const RSS_SHELF_SLUGS = new Set(SHELF_FILE.essays.map((e) => e.slug));
+const RSS_LATEST_CUTOFF = new Date(SHELF_FILE.latestCutoff);
+
+type RssRow = { slug: string; publishedAt?: Date | string | null; createdAt?: Date | string | null };
+function rssShelfPublic(row: RssRow): boolean {
+  if (RSS_SHELF_SLUGS.has(row.slug)) return RSS_LIVE_SLUGS.includes(row.slug);
+  const when = new Date(row.publishedAt || row.createdAt || 0).getTime();
+  return Number.isFinite(when) && when >= RSS_LATEST_CUTOFF.getTime();
+}
+
 async function rssLiveWell(_req: VercelRequest, res: VercelResponse) {
   const SITE_URL = "https://www.livewellbyjamesbell.co";
   const SITE_NAME = "LiveWell by James Bell";
   const DESC = "Theology that carries the weight of everyday life. Essays on faith, justice, marriage, parenting, and pastoral ministry by James Bell.";
   try {
     const rows: any[] = await withConn(async (c) => {
+      const liveIn = RSS_LIVE_SLUGS.length ? `slug IN (${RSS_LIVE_SLUGS.map(() => "?").join(", ")})` : "FALSE";
       const [posts]: any = await c.query(
-        `SELECT slug, title, excerpt, body, coverImage, publishedAt, updatedAt
+        `SELECT slug, title, excerpt, body, coverImage, publishedAt, createdAt, updatedAt
            FROM posts
           WHERE published = true
-          ORDER BY publishedAt DESC, updatedAt DESC
-          LIMIT 50`
+            AND (${liveIn} OR COALESCE(publishedAt, createdAt) >= ?)
+          ORDER BY COALESCE(publishedAt, createdAt) DESC, updatedAt DESC
+          LIMIT 50`,
+        [...RSS_LIVE_SLUGS, RSS_LATEST_CUTOFF]
       );
-      return Array.isArray(posts) ? posts : [];
+      return (Array.isArray(posts) ? posts : []).filter(rssShelfPublic);
     });
     const buildDate = new Date().toUTCString();
     const items = rows
       .map((p) => {
         const url = `${SITE_URL}/writing/${p.slug}`;
-        const pubDate = (p.publishedAt ? new Date(p.publishedAt) : new Date(p.updatedAt || Date.now())).toUTCString();
+        const pubDate = new Date(p.publishedAt || p.createdAt || p.updatedAt || Date.now()).toUTCString();
         const excerpt = p.excerpt || (p.body || "").slice(0, 280);
         return `    <item>
       <title>${escapeXml(p.title)}</title>

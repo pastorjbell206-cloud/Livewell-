@@ -139,8 +139,8 @@ export default function Downloads() {
               : "Study guides, Find Help printables, plan booklets, and more. Free, and nothing is gated."}
           </p>
           <p style={{ fontFamily: "var(--U)", fontSize: "14px", marginTop: "14px" }}>
-            <Link href="/explore?dl=1" style={{ color: "var(--bone)", textDecoration: "none", borderBottom: "1px solid var(--mustard)" }}>
-              Search them in the Library
+            <Link href="/search" style={{ color: "var(--bone)", textDecoration: "none", borderBottom: "1px solid var(--mustard)" }}>
+              Search the whole site
             </Link>
           </p>
         </div>

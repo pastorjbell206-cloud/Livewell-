@@ -124,6 +124,12 @@
   },
   "prayer": "Lord, you know how many times I've said this was the last time. You know where it's hidden and how much is gone. I'm tired of lying to the people I love and to myself, and I'm afraid of the evening.\n\nI can't rescue myself. I've tried. So I'm asking you to rescue me, and not to be slow. Give me the courage to tell one person the truth, and the humility to take the help you send through doctors and through friends who won't let go. Don't let shame make me hide from you again.\n\nFor those of us who love someone who can't stop, give us the nerve to stop covering for them, and a door we can keep open without being harmed. Keep the children safe. Bring the lost ones home, Father, and run to meet them. Amen.",
   "kit": {
+    "guides": [
+      {
+        "href": "/studyguides/addiction-and-recovery",
+        "label": "Addiction and Recovery: A Bible Study on the Long Road Back"
+      }
+    ],
     "read": [
       {
         "href": "/life/addiction-and-the-long-road-back",
@@ -161,11 +167,6 @@
         "kind": "How-to"
       },
       {
-        "href": "/writing/why-christians-confess-out-loud",
-        "label": "Why Christians Confess Their Sins Out Loud",
-        "kind": "Essay"
-      },
-      {
         "href": "/wisdom/when-someone-wont-change",
         "label": "When Someone Won't Change",
         "kind": "Wisdom"
@@ -179,11 +180,6 @@
         "href": "/wisdom/toxic-relationships",
         "label": "Toxic and Harmful Relationships",
         "kind": "Wisdom"
-      },
-      {
-        "href": "/writing/addiction-justice-issue",
-        "label": "Addiction Is a Justice Issue",
-        "kind": "Essay"
       }
     ],
     "plan": {

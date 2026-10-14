@@ -127,11 +127,8 @@
     ],
     "read": [
       { "href": "/pathways/prayer", "label": "Learning to Pray Again", "kind": "Pathway" },
-      { "href": "/writing/how-do-you-actually-pray", "label": "How Do You Actually Pray?", "kind": "Essay" },
-      { "href": "/writing/the-only-prayer-jesus-taught", "label": "What Does the Lord's Prayer Actually Mean?", "kind": "Essay" },
-      { "href": "/writing/praying-the-words-when-you-have-none", "label": "How Do You Pray When You Have No Words Left?", "kind": "Essay" },
-      { "href": "/writing/praying-at-fixed-hours", "label": "What Is Fixed-Hour Prayer and Why Did the Church Keep It?", "kind": "Essay" },
-      { "href": "/writing/when-prayer-goes-unanswered", "label": "What to Do When Prayer Goes Unanswered", "kind": "Essay" },
+      { "href": "/how-tos/ss-how-to-pray-when-falling-apart", "label": "How to Pray When You Are Falling Apart (when your own words are gone, borrow the Psalms)", "kind": "How-to" },
+      { "href": "/how-tos/sf-how-to-examine-your-day-the-daily-examen", "label": "How to Examine Your Day (the Daily Examen), ten minutes before sleep looking back over the day with God", "kind": "How-to" },
       { "href": "/life/waiting-and-unanswered-prayer", "label": "What Do You Do When God Does Not Answer Prayer?", "kind": "Life" },
       { "href": "/life/the-dry-season", "label": "Why Does God Feel So Far Away When You Pray?", "kind": "Life" },
       { "href": "/how-tos/sf-how-to-pray-when-you-do-not-feel-like-it", "label": "How to Pray When You Do Not Feel Like It", "kind": "How-to" },

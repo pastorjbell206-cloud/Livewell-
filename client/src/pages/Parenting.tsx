@@ -12,6 +12,7 @@ import { SectionHead } from "@/components/editorial/SectionHead";
 import SubjectShelf from "@/components/SubjectShelf";
 import { subjectById } from "@/lib/subjects";
 import { getReadEssays } from "@/lib/readProgress";
+import { filterPublicPosts } from "@/lib/shelf";
 
 export default function Parenting() {
   const [readSlugs] = useState<Set<string>>(() => getReadEssays());
@@ -43,6 +44,7 @@ export default function Parenting() {
       topic: "Parenting"
     }
   ];
+  const featured = filterPublicPosts(FEATURED_ARTICLES);
 
   const AGE_GROUPS = [
     {
@@ -93,20 +95,23 @@ export default function Parenting() {
           </div>
       </section>
 
-      {/* FEATURED ARTICLES */}
-      <section style={{ background: "var(--paper)", padding: "80px 20px" }}>
-        <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
-          <SectionHead title="Essential Reading for Parents" />
-          <EditorialIndex
-            label="Essential Reading for Parents"
-            items={FEATURED_ARTICLES.map((article) => ({
-              href: `/writing/${article.slug}`,
-              title: article.title,
-              read: readSlugs.has(article.slug),
-            }))}
-          />
-        </div>
-      </section>
+      {/* FEATURED ARTICLES: only those on the public shelf (lib/shelf.ts);
+          the section steps aside while none of them is. */}
+      {featured.length > 0 && (
+        <section style={{ background: "var(--paper)", padding: "80px 20px" }}>
+          <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
+            <SectionHead title="Essential Reading for Parents" />
+            <EditorialIndex
+              label="Essential Reading for Parents"
+              items={featured.map((article) => ({
+                href: `/writing/${article.slug}`,
+                title: article.title,
+                read: readSlugs.has(article.slug),
+              }))}
+            />
+          </div>
+        </section>
+      )}
 
       <StatementBand tone="dark" eyebrow="Formation, not performance">
         You are not raising a performance; you are raising a person who will believe, or not, on their own.
@@ -186,9 +191,9 @@ export default function Parenting() {
           <p style={{ fontSize: "16px", lineHeight: "1.8", marginBottom: "32px", color: "var(--ink3)" }}>
             That is not a failure. It is the one honest thing you can hand them: a faith they watched being tested, and held anyway.
           </p>
-          <Link href="/writing?track=parenting" style={{ textDecoration: "none" }}>
+          <Link href="/help/parenting" style={{ textDecoration: "none" }}>
             <button style={{ background: "var(--ink)", color: "var(--paper)", border: "none", padding: "16px 40px", fontSize: "16px", fontWeight: "bold", borderRadius: "4px", cursor: "pointer" }}>
-              Browse All Parenting Articles
+              When Parenting Is Harder Than Anyone Said
             </button>
           </Link>
           <div style={{ marginTop: "20px" }}>

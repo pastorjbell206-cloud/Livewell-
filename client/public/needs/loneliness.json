@@ -174,19 +174,9 @@
         "kind": "How-to"
       },
       {
-        "href": "/writing/friendship-the-love-we-forgot",
-        "label": "Friendship Is the Love We Forgot",
-        "kind": "Essay"
-      },
-      {
         "href": "/life/the-church-as-family",
         "label": "Why Does the Bible Call the Church a Family?",
         "kind": "Life"
-      },
-      {
-        "href": "/writing/can-you-be-a-christian-alone",
-        "label": "Can You Be a Christian on Your Own?",
-        "kind": "Essay"
       },
       {
         "href": "/wisdom/finding-a-church",
@@ -199,9 +189,9 @@
         "kind": "Life"
       },
       {
-        "href": "/writing/the-slow-drift-that-ends-marriages",
-        "label": "The Slow Drift That Ends Marriages",
-        "kind": "Essay"
+        "href": "/life/marriage-the-long-covenant",
+        "label": "Why Do Marriages Drift Apart, and How Do You Stop It?",
+        "kind": "Life"
       },
       {
         "href": "/wisdom/losing-a-spouse",
@@ -214,9 +204,9 @@
         "kind": "Wisdom"
       },
       {
-        "href": "/writing/the-pastor-nobody-checks-on",
-        "label": "The Pastor Nobody Checks On",
-        "kind": "Essay"
+        "href": "/help/pastors",
+        "label": "I'm a pastor and I'm running on empty: the Find Help page for pastors, and for those who love them",
+        "kind": "Page"
       }
     ]
   },

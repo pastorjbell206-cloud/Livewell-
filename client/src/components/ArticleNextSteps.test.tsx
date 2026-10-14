@@ -12,11 +12,23 @@
  * These tests guard that rule so a future "just one more CTA" cannot quietly
  * rebuild the wall.
  */
-import { describe, it, expect } from "vitest";
+import { describe, it, expect, vi, beforeEach } from "vitest";
 import { screen } from "@testing-library/react";
 
 import { renderWithProviders } from "@/test/harness";
+import { isPublicEssay } from "@/lib/shelf";
 import ArticleNextSteps, { isArticleOnPath } from "./ArticleNextSteps";
+
+// The next-on-path link only ever points at a public shelf essay (retired ones
+// are stepped over). These tests are about the one-ask rule, not the shelf, so
+// every essay counts as public unless a test says otherwise.
+vi.mock("@/lib/shelf", async (importOriginal) => ({
+  ...(await importOriginal<typeof import("@/lib/shelf")>()),
+  isPublicEssay: vi.fn(() => true),
+}));
+beforeEach(() => {
+  vi.mocked(isPublicEssay).mockImplementation(() => true);
+});
 
 /** First two essays of "The Story of Christianity" reading path. */
 const ON_PATH_SLUG = "how-christianity-became-an-empire";
@@ -56,6 +68,19 @@ describe("ArticleNextSteps — mid reading path", () => {
   });
 });
 
+describe("ArticleNextSteps — retired essays on a path", () => {
+  it("steps over a retired next essay to the next public one", () => {
+    vi.mocked(isPublicEssay).mockImplementation((slug) => slug !== "the-great-schism");
+    renderWithProviders(
+      <ArticleNextSteps articleSlug={ON_PATH_SLUG} articlePillar="" />
+    );
+
+    expect(screen.queryByText(NEXT_ON_PATH_TITLE)).not.toBeInTheDocument();
+    expect(screen.getByText(/read next/i)).toBeInTheDocument();
+    expect(screen.getByText(/What the Reformation Actually Changed/i)).toBeInTheDocument();
+  });
+});
+
 describe("ArticleNextSteps — not on a path", () => {
   it("cedes the lead to the book, keeping no prominent ask of its own", () => {
     renderWithProviders(
@@ -67,11 +92,11 @@ describe("ArticleNextSteps — not on a path", () => {
     expect(screen.queryByText(/open tool/i)).not.toBeInTheDocument();
   });
 
-  it("still offers a path as a quiet line rather than a card", () => {
+  it("offers no reading path, since the paths index folded into /writing", () => {
     renderWithProviders(
       <ArticleNextSteps articleSlug={OFF_PATH_SLUG} articlePillar="" />
     );
 
-    expect(screen.getByText(/start the path/i)).toBeInTheDocument();
+    expect(screen.queryByText(/start the path/i)).not.toBeInTheDocument();
   });
 });

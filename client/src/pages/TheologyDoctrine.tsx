@@ -56,7 +56,7 @@ export default function TheologyDoctrine() {
           <div style={{ ...wrap, textAlign: "center" }}>
             <h1 style={{ fontFamily: "var(--F)", fontSize: "32px", fontWeight: 400, color: "var(--ink)", marginBottom: "12px" }}>This doctrine is still being written.</h1>
             <p style={{ fontFamily: "var(--B)", color: "var(--ink-muted)", marginBottom: "20px" }}>The map is laid out, the writing comes one doctrine at a time.</p>
-            <Link href="/theology" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>Back to Theological Depth</Link>
+            <Link href="/study" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>Back to Study</Link>
           </div>
         </section>
       </Layout>
@@ -85,7 +85,7 @@ export default function TheologyDoctrine() {
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
-            <Link href="/theology" style={{ color: "inherit" }}>Theological Depth</Link> · Doctrine
+            <Link href="/study" style={{ color: "inherit" }}>Study</Link> · Doctrine
           </div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(34px, 5.5vw, 60px)", fontWeight: 400, lineHeight: 1.04, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "20ch" }}>
             {doc.title}
@@ -246,12 +246,12 @@ export default function TheologyDoctrine() {
       <section style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--s-4)", color: "var(--bone)" }}>
         <div style={{ ...wrap, display: "flex", flexWrap: "wrap", gap: "16px", justifyContent: "space-between", alignItems: "center" }}>
           <Link href="/theology/how-to-use" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard)" }}>How to read this fairly</Link>
-          <Link href="/theology" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard)" }}>All doctrines</Link>
+          <Link href="/study/bible/doctrines" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard)" }}>All doctrines</Link>
         </div>
       </section>
 
       {slug && <MoreOnThis href={`/theology/doctrine/${slug}`} />}
-      <PageEndNav back={{ href: "/theology", label: "Theological Depth" }} />
+      <PageEndNav back={{ href: "/study", label: "Study" }} />
     </Layout>
   );
 }

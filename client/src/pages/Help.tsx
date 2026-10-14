@@ -22,6 +22,8 @@ import { CrisisBlock } from "@/components/CrisisBlock";
 import { EditorialIndex, type IndexItem } from "@/components/editorial/EditorialIndex";
 import { LoadFailed } from "@/components/LoadFailed";
 import { fetchJson } from "@/lib/fetch-json";
+import { isPublicEssayHref } from "@/lib/shelf";
+import { SKEPTIC_TRACK_LIVE } from "@/lib/skepticTrack";
 import { READER_STATES, searchNeeds, type NeedEntry, type NeedsIndex, type ReaderState } from "@/lib/needs";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
@@ -60,7 +62,7 @@ function Starter({ n, open, onToggle }: { n: NeedEntry; open: boolean; onToggle:
             compact
             headingAs="span"
             label={n.title}
-            items={n.kit.read.map((r) => ({ href: r.href, title: r.label, kicker: r.kind, external: /^https?:/.test(r.href) }))}
+            items={n.kit.read.filter((r) => isPublicEssayHref(r.href) && (SKEPTIC_TRACK_LIVE || !r.href.startsWith("/skeptic-track"))).map((r) => ({ href: r.href, title: r.label, kicker: r.kind, external: /^https?:/.test(r.href) }))}
           />
         </div>
       )}

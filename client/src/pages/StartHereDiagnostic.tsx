@@ -145,7 +145,7 @@ const RESULTS: Record<ResultKey, ResultProfile> = {
     tagline: "For the mind that refuses easy answers",
     description:
       "You came here with questions, not to have them silenced. The writing on this path treats doubt as a serious intellectual posture, not a spiritual failure. These are essays and resources built for people who left certainty behind and need to know whether anything sturdy remains.",
-    primaryCta: { label: "Begin the Skeptic's Path", href: "/honest-questions" },
+    primaryCta: { label: "Start With the Hard Questions", href: "/answers" },
     secondarySuggestions: [
       { label: "Theology Diagnostic", href: "/theology/which-view", note: "Map where you actually land on the big questions" },
       { label: "The Full Story of Christianity", href: "/theology/history", note: "Understand how the tradition arrived at this moment" },
@@ -162,7 +162,7 @@ const RESULTS: Record<ResultKey, ResultProfile> = {
     secondarySuggestions: [
       { label: "When Faith Falls Apart", href: "/deconstruction", note: "A reading path for rebuilding, at the pace the wound allows" },
       { label: "Care Plans", href: "/help", note: "Pastoral resources for specific seasons of crisis" },
-      { label: "The Skeptic's Path", href: "/honest-questions", note: "When you are ready to ask the harder questions" },
+      { label: "Answers to Hard Questions", href: "/answers", note: "When you are ready to ask the harder questions" },
     ],
   },
   pastor: {
@@ -186,7 +186,7 @@ const RESULTS: Record<ResultKey, ResultProfile> = {
       "You are past surface-level devotionals. You want to know what the text actually says in its context, what the original audience heard, and why two thousand years of readers have argued about it. These tools and study paths treat the Bible as a serious ancient library, not a self-help manual.",
     primaryCta: { label: "Open the Deep Bible Companion", href: "/tools/deep-bible" },
     secondarySuggestions: [
-      { label: "Theology Hub", href: "/theology", note: "Doctrine, creeds, hermeneutics, and the contested questions" },
+      { label: "Study", href: "/study", note: "The Study Bible, church history, the creeds, and studies for groups" },
       { label: "Study Guides", href: "/studyguides", note: "Structured walks through specific books and themes" },
       { label: "The Full Story", href: "/theology/history", note: "The history that shaped how we read the text today" },
     ],
@@ -213,8 +213,8 @@ const RESULTS: Record<ResultKey, ResultProfile> = {
     primaryCta: { label: "Begin Rebuilding", href: "/deconstruction" },
     secondarySuggestions: [
       { label: "Healing First", href: "/church-hurt", note: "If the wound is still open, start here instead" },
-      { label: "The Skeptic's Path", href: "/honest-questions", note: "The hardest questions, taken seriously rather than managed" },
-      { label: "Reading Paths", href: "/reading-paths", note: "Ordered sequences of essays, chosen for where you are starting from" },
+      { label: "Answers to Hard Questions", href: "/answers", note: "The hardest questions, taken seriously rather than managed" },
+      { label: "Essays", href: "/writing", note: "The essay shelf, arranged in sections, so you can start where you are" },
     ],
   },
 };

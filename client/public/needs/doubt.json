@@ -154,29 +154,14 @@
         "kind": "How-to"
       },
       {
-        "href": "/writing/can-you-have-faith-and-doubt",
-        "label": "Can You Have Faith and Still Have Doubts?",
-        "kind": "Essay"
+        "href": "/study/bible/mark/9",
+        "label": "Mark 9 in the Study Bible: the father's prayer, and faith that brings its unbelief to Jesus, with notes",
+        "kind": "Page"
       },
       {
         "kind": "Life",
         "label": "Why Does God Feel So Far Away When You Pray?",
         "href": "/life/the-dry-season"
-      },
-      {
-        "href": "/pathways/doubt-and-deconstruction",
-        "label": "When Faith Has Questions: four essays, a study, and a book",
-        "kind": "Pathway"
-      },
-      {
-        "href": "/doubt",
-        "label": "When the Questions Won't Stop",
-        "kind": "Page"
-      },
-      {
-        "href": "/skeptic-track",
-        "label": "The Skeptic's Track",
-        "kind": "Page"
       },
       {
         "kind": "Page",
@@ -212,7 +197,7 @@
     },
     {
       "q": "How do I know if Christianity is true?",
-      "a": "No argument gives mathematical certainty, and anyone who promises it is overselling. But Christianity stakes everything on a historical event, and Paul said so bluntly: “if Christ has not been raised, your faith is futile” (1 Corinthians 15:17). That moves the question from feelings and upbringing to what happened outside Jerusalem one Passover weekend around AD 30. Read one Gospel slowly, then weigh the case for the resurrection against the strongest objections, as you would any serious claim about the past. The Skeptic's Track on this site takes the resurrection and the other hard questions in order, in essays written for skeptics first. You deserve to reach your verdict honestly, and you don't have to reach it quickly."
+      "a": "No argument gives mathematical certainty, and anyone who promises it is overselling. But Christianity stakes everything on a historical event, and Paul said so bluntly: “if Christ has not been raised, your faith is futile” (1 Corinthians 15:17). That moves the question from feelings and upbringing to what happened outside Jerusalem one Passover weekend around AD 30. Read one Gospel slowly, then weigh the case for the resurrection against the strongest objections, as you would any serious claim about the past. [I don't believe, but I'm curious](/help/curious) sets out that case with its honest limits, and states the strongest objections before it answers them. You deserve to reach your verdict honestly, and you don't have to reach it quickly."
     },
     {
       "q": "Why don't I feel God anymore?",
@@ -268,6 +253,6 @@
   ],
   "reviewed": {
     "on": "2026-09-29",
-    "notes": "Second-pass edit, done in full from the top. Validator clean (node scripts/validate-needs.mjs doubt). Truth: Charles Taylor's A Secular Age (2007), its question about belief around 1500 and its case against subtraction stories; John of the Cross, Dark Night, Book I, chapter 1 (the mother who weans her child and sets it down to walk); and Britannica's dating of the crucifixion (Passover, between AD 29 and 33, possibly 30) were each confirmed as the page characterizes them, and each source URL confirmed to exist, through search-engine excerpts, because the source sites are blocked from this environment; re-open each before release. Matthew uses the same verb for doubt in 14:31 and 28:17 (distazo, which occurs only in those two verses in the New Testament): confirmed and kept. Every reading rechecked in context with scripts/bsb.mjs: Mark 9:2 and 9:14-29; Psalm 73 with 1 Chronicles 16:4-7 and Ezra 2:41; John 1:1, 11:7-16, and 20:19-31; Matthew 11:2-6, 14:28-33, 23:13, and 28:16-20; Jude 1:17-23; Luke 1:1-4; Psalm 88; Hebrews 3:12; James 1:5-8 and 4:4-8; 1 Corinthians 15:14-17. Changes: the answer now says that those who brought their doubt to Jesus were not sent away (it had extended that to psalmists who never met him); the FAQ on James 1:6-8 presents divided loyalty as one reading, states the other (a rebuke to any wavering in prayer) fairly, and adds the passage's own opening invitation (James 1:5); the deconstruction FAQ commits instead of hedging with I don't think and drops a second stacked triplet; a mixed metaphor in whyHard repaired. No sentence says James says or wrote about the New Testament letter (it is the letter of James throughout); James is described only as a pastor, and nothing speaks for a denomination or tradition. Related already carries the starter needs deconstructing, church-hurt, and curious. Every kit label checked against its target (plans-index, the study guide index, the essay titles in the static library and content-data, the pathway, wisdom, and how-to manifests, and the page components): doubt has no eight-week plan of its own, so the kit uses the deconstruction plan under its real title. No statistics, no quotations but Scripture, no biography beyond the approved facts, first person only for conviction; the 988 lines follow safe-messaging language. Read as the person at midnight on a phone, the skeptic, the pastor, and a licensed counselor. 2026-10-04, editor: step 6 and the reading list no longer rely on essays listed in docs/grow/integrity/library-flags.md (first-person stories, an overstatement of scholarly agreement); the step now points to the curious and trust-the-bible care pages, and the list to the dry-season Life page, the Gospels context guide, and the Study Bible's 1 Corinthians 15."
+    "notes": "Second-pass edit, done in full from the top. Validator clean (node scripts/validate-needs.mjs doubt). Truth: Charles Taylor's A Secular Age (2007), its question about belief around 1500 and its case against subtraction stories; John of the Cross, Dark Night, Book I, chapter 1 (the mother who weans her child and sets it down to walk); and Britannica's dating of the crucifixion (Passover, between AD 29 and 33, possibly 30) were each confirmed as the page characterizes them, and each source URL confirmed to exist, through search-engine excerpts, because the source sites are blocked from this environment; re-open each before release. Matthew uses the same verb for doubt in 14:31 and 28:17 (distazo, which occurs only in those two verses in the New Testament): confirmed and kept. Every reading rechecked in context with scripts/bsb.mjs: Mark 9:2 and 9:14-29; Psalm 73 with 1 Chronicles 16:4-7 and Ezra 2:41; John 1:1, 11:7-16, and 20:19-31; Matthew 11:2-6, 14:28-33, 23:13, and 28:16-20; Jude 1:17-23; Luke 1:1-4; Psalm 88; Hebrews 3:12; James 1:5-8 and 4:4-8; 1 Corinthians 15:14-17. Changes: the answer now says that those who brought their doubt to Jesus were not sent away (it had extended that to psalmists who never met him); the FAQ on James 1:6-8 presents divided loyalty as one reading, states the other (a rebuke to any wavering in prayer) fairly, and adds the passage's own opening invitation (James 1:5); the deconstruction FAQ commits instead of hedging with I don't think and drops a second stacked triplet; a mixed metaphor in whyHard repaired. No sentence says James says or wrote about the New Testament letter (it is the letter of James throughout); James is described only as a pastor, and nothing speaks for a denomination or tradition. Related already carries the starter needs deconstructing, church-hurt, and curious. Every kit label checked against its target (plans-index, the study guide index, the essay titles in the static library and content-data, the pathway, wisdom, and how-to manifests, and the page components): doubt has no eight-week plan of its own, so the kit uses the deconstruction plan under its real title. No statistics, no quotations but Scripture, no biography beyond the approved facts, first person only for conviction; the 988 lines follow safe-messaging language. Read as the person at midnight on a phone, the skeptic, the pastor, and a licensed counselor. 2026-10-04, editor: step 6 and the reading list no longer rely on essays listed in docs/grow/integrity/library-flags.md (first-person stories, an overstatement of scholarly agreement); the step now points to the curious and trust-the-bible care pages, and the list to the dry-season Life page, the Gospels context guide, and the Study Bible's 1 Corinthians 15. 2026-10-14, editor: the essays now sit behind a curated shelf (client/src/lib/shelf.json), so no reader link here may land on a retired essay. The reading list trades Can You Have Faith and Still Have Doubts? for the Study Bible's Mark 9, and drops /doubt (now a redirect), the Skeptic's Track (built on retired essays), and the doubt-and-deconstruction pathway (its essays are off the shelf, and library-flags.md lists it for describing Born Again From Atheism while linking /books/believe). The FAQ on whether Christianity is true now points to the curious care page, as step 6 does, rather than the skeptic study, whose resurrection session leans on a claim of scholarly near-consensus of the kind this page has declined."
   }
 }

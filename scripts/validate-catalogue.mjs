@@ -7,7 +7,8 @@
  * Builds the catalogue in memory without a database (the static essay library
  * stands in, as it does in CI) and fails if:
  *   1. any source produced nothing (a manifest moved or its shape changed);
- *   2. an essay in the static library is missing (minus takedowns and hidden);
+ *   2. a public shelf essay is missing, or a retired essay is listed
+ *      (client/src/lib/shelf.json via scripts/lib/shelf.mjs);
  *   3. any item's link does not match a route in client/src/App.tsx;
  *   4. any downloadable file neither exists on disk nor is a PDF the deploy
  *      builds from a source that exists (scripts/build-pdfs.mjs);
@@ -20,6 +21,7 @@ import zlib from "node:zlib";
 import { fileURLToPath } from "node:url";
 import { assemble, KIND_ORDER } from "./build-catalogue.mjs";
 import { builtFrom } from "./lib/built-files.mjs";
+import { loadEssayShelf } from "./lib/shelf.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const PUB = path.join(ROOT, "client/public");
@@ -38,18 +40,18 @@ for (const [name, n] of Object.entries(parts)) {
   if (!n) fail(`source "${name}" produced no items`);
 }
 
-// 2. essays complete against the static library
-const staticLib = JSON.parse(fs.readFileSync(path.join(ROOT, "content/static-library.generated.json"), "utf8"));
+// 2. essays match the public shelf: every live shelf essay is listed, and no
+//    retired essay is (the catalogue feeds the Library, MoreOnThis, Downloads)
+const shelf = loadEssayShelf(ROOT);
 const essayHrefs = new Set(catalogue.items.filter((i) => i.kind === "Essay").map((i) => i.href));
-const setFrom = (rel, name) => {
-  const src = fs.readFileSync(path.join(ROOT, rel), "utf8");
-  const m = src.match(new RegExp(`${name} = new Set<string>\\(\\[([\\s\\S]*?)\\]\\)`));
-  return new Set(m ? [...m[1].matchAll(/["']([^"']+)["']/g)].map((x) => x[1]) : []);
-};
-const excluded = new Set([...setFrom("api/index.ts", "TAKEN_DOWN"), ...setFrom("client/src/lib/hiddenSlugs.ts", "HIDDEN_SLUGS")]);
-for (const r of staticLib) {
-  if (!r?.slug || r.published === false || r.published === 0 || excluded.has(r.slug)) continue;
-  if (!essayHrefs.has(`/writing/${r.slug}`)) fail(`essay missing from the catalogue: ${r.slug}`);
+for (const e of shelf.liveEssays()) {
+  if (!essayHrefs.has(`/writing/${e.slug}`)) fail(`shelf essay missing from the catalogue: ${e.slug}`);
+}
+for (const href of essayHrefs) {
+  const slug = href.replace(/^\/writing\//, "");
+  // Without a database there are no post-cutoff essays, so anything listed
+  // must be on the public shelf itself.
+  if (shelf.visibility(slug) !== "shelf") fail(`retired essay listed in the catalogue: ${slug}`);
 }
 
 // 3. every link resolves to a route

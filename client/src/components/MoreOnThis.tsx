@@ -51,7 +51,7 @@ export default function MoreOnThis({ href, title }: { href: string; title?: stri
           <SectionHead
             eyebrow="Keep going"
             title="More on this"
-            seeAll={{ href: "/explore", label: "Everything in the Library" }}
+            seeAll={{ href: "/search", label: "Search the whole site" }}
           />
           <EditorialIndex
             compact

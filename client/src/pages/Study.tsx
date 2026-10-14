@@ -1,185 +1,268 @@
 /**
- * /study — the one door to studying the Bible.
+ * /study: the anchor of the site.
  *
- * The Bible tools used to be nine separate doors with nine separate front
- * steps (docs/WORLD-CLASS-SITE-PROMPT.md, "The student who wants to study the
- * Bible"). This page arranges them by what the reader is actually holding
- * when they arrive — a passage, a topic, a question, a book of the Bible, a
- * word they do not know — and then opens onto the history and the theology
- * the study stands on. The tool entries themselves come from the registry in
- * ToolsHub so the two never drift; a tool listed here but not there is a bug.
+ * The Study Bible comes first and gets the most room: the story in eleven
+ * acts, an introduction to every book, notes on every chapter, verse notes
+ * where they are written, the doctrine studies, and the reading guides. Then
+ * the church's history and its creeds, then reading Scripture in the world it
+ * was written in, then studying with a group. Every link is an existing route;
+ * the study tools that used to be listed here live in the /tools registry,
+ * linked at the foot of the page.
+ *
+ * The counts are the Study Bible's own (client/public/bible): 66 book
+ * introductions, notes on all 1,189 chapters, 11 acts, 62 doctrine studies,
+ * 24 guides. Verse-by-verse notes are complete for Genesis and the four
+ * Gospels so far; the page says so rather than implying more.
  */
 import { Link } from "wouter";
-import { BookOpen, Compass, HelpCircle, Library, Search, Scroll } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
-import { CardGrid, type CardItem } from "@/components/editorial/CardGrid";
-import { TOOLS } from "@/pages/ToolsHub";
+import { HubGroup, HubStyles, type HubLink } from "@/components/HubGroup";
 
-type Door = {
-  holding: string;
-  lead: string;
-  icon: typeof BookOpen;
-  hrefs: string[];
-};
+const gutter = "clamp(16px, 4vw, var(--s-4))";
+const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
-/**
- * Doors that are real pages but not registered in the tools hub. Passage
- * Context lives under /theology, and Wisdom is a library hub, not a tool.
- */
-const OFF_REGISTRY: Record<string, { title: string; description: string }> = {
-  "/theology/passage": {
-    title: "A Passage in Context",
-    description: "Enter any reference and see it in its setting: who wrote it and why, its genre, the flow of the argument around it, the cross-references, and the questions to ask of it.",
-  },
-  "/wisdom": {
-    title: "Wisdom for All of Life",
-    description: "Proverbs, Ecclesiastes, and the skill of living where no single command reaches.",
-  },
-};
-
-/** Arranged by what the reader is holding, in the order a person tends to arrive. */
-const DOORS: Door[] = [
+/** The parts of the Study Bible, in the order a newcomer should meet them. */
+const STUDY_BIBLE: HubLink[] = [
   {
-    holding: "A passage",
-    lead: "You have a chapter open and want to understand it, not just read it.",
-    icon: BookOpen,
-    hrefs: ["/tools/deep-bible", "/theology/passage"],
+    label: "The story of the Bible, in eleven acts",
+    href: "/study/bible/story",
+    note: "The whole Bible as one story, from creation to new creation, with the history behind each act and every chapter placed where it happened.",
   },
   {
-    holding: "A topic",
-    lead: "Money, anger, anxiety, marriage, work: what Scripture actually says, in context, not a verse on a mug.",
-    icon: Compass,
-    hrefs: ["/tools/bible-on", "/tools/verse-finder", "/tools/bible-says"],
+    label: "An introduction to every book",
+    href: "/study/bible",
+    note: "All sixty-six: who wrote it, when, why, and how it is built.",
   },
   {
-    holding: "A question you are carrying",
-    lead: "Type the thing you are struggling with and find the Bible's wisdom for it, and the world it was written in.",
-    icon: HelpCircle,
-    hrefs: ["/tools/wisdom-finder", "/wisdom"],
+    label: "Notes on all 1,189 chapters",
+    href: "/study/bible",
+    note: "Each chapter's history, its culture, how it is built, what it teaches, and where it sits in the one story. The Hebrew and Greek beneath every English word.",
   },
   {
-    holding: "A book of the Bible",
-    lead: "Twelve essential books studied whole: key themes, reading strategies, the questions worth asking.",
-    icon: Library,
-    hrefs: ["/tools/bible-study", "/tools/proverbs-31"],
+    label: "Verse-by-verse notes",
+    href: "/study/bible/matthew/1",
+    note: "Written for Genesis and the four Gospels so far, and for a few chapters elsewhere. The rest of the Bible is still being written, book by book.",
   },
   {
-    holding: "A word you do not know",
-    lead: "A hundred theological terms explained at three depths, from one line to the history behind it.",
-    icon: Search,
-    hrefs: ["/tools/glossary"],
+    label: "Sixty-two doctrine studies",
+    href: "/study/bible/doctrines",
+    note: "God, creation, sin, covenant, Christ, salvation, the Spirit, the church, and the last things, each traced through the chapters that teach it.",
   },
   {
-    holding: "A verse you want to keep",
-    lead: "Forty verses, memorized the way memory actually works.",
-    icon: Scroll,
-    hrefs: ["/tools/scripture-memory"],
-  },
-];
-
-const STANDS_ON = [
-  {
-    title: "Church history",
-    text: "You did not start the faith. You were handed it. The councils, the figures, the heresies, and the whole arc from Pentecost to today, hung on one timeline.",
-    href: "/theology/history",
-  },
-  {
-    title: "Theology",
-    text: "The doctrines, the traditions, the creeds, and how to read Scripture without making it say what you already believe.",
-    href: "/theology",
+    label: "Twenty-four guides to reading the Bible",
+    href: "/study/bible/guides",
+    note: "What the Bible is, how the books were chosen, how the text reached us, how to read each kind of writing, and the ancient world's money, measures, calendar, and kings.",
   },
 ];
 
 export default function Study() {
-  const byHref = new Map(TOOLS.map((t) => [t.href, t] as const));
-
   return (
     <Layout>
       <SEOMeta
         title="Study the Bible — LiveWell by James Bell"
-        description="One door to studying the Bible: study any passage in depth, find what Scripture says about a topic, bring the question you are carrying, work through a whole book, learn the words, and stand on the church's history."
+        description="Learn the whole Bible: the Study Bible with notes on all 1,189 chapters, the story in eleven acts, doctrine studies and reading guides, then the church's history, its creeds, and the world the Bible was written in."
         url="https://www.livewellbyjamesbell.co/study"
       />
+      <HubStyles />
 
       {/* HERO */}
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-7) var(--s-3) var(--s-5)" }}>
-        <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
-          <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "1.5rem" }}>Study the Bible</div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(2.2rem, 4.8vw, 3.2rem)", fontWeight: 400, lineHeight: 1.08, letterSpacing: "-0.02em", color: "var(--charcoal-fg)", marginBottom: "1.2rem" }}>
-            Start with what you are holding
+      <section style={{ background: "var(--charcoal)", padding: `var(--s-6) ${gutter} var(--s-5)` }}>
+        <div style={wrap}>
+          <h1
+            style={{
+              fontFamily: "var(--F)",
+              fontSize: "clamp(38px, 5.4vw, 64px)",
+              fontWeight: 400,
+              lineHeight: 1.04,
+              letterSpacing: "-0.02em",
+              color: "var(--charcoal-fg)",
+              margin: "0 0 18px",
+              maxWidth: "18ch",
+            }}
+          >
+            Learn the whole Bible, and the church that carried it
           </h1>
-          <p style={{ color: "var(--charcoal-fg)", opacity: 0.8, fontSize: "1.05rem", lineHeight: 1.7, maxWidth: "62ch" }}>
-            Nobody arrives at the Bible in general. You arrive with a chapter open, or a question you cannot put down, or a word from a sermon you did not understand. Begin there. Each door below opens onto real depth, and none of them assumes you have done this before.
+          <p style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.7, color: "var(--charcoal-fg-muted)", maxWidth: "62ch", margin: 0 }}>
+            Start with the Study Bible, whether you have never opened it or have read it for years. Behind it
+            stand twenty centuries of Christians who read the same pages, the creeds they confessed, and the
+            ancient world the text assumes you already know.
           </p>
         </div>
       </section>
 
-      {/* THE STUDY BIBLE — the whole text, with the Hebrew and Greek beneath it */}
-      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-3) 0" }}>
-        <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
-          <Link href="/study/bible" style={{ display: "block", padding: "32px", background: "var(--card)", border: "1px solid var(--border)", borderLeft: "4px solid var(--mustard)", borderRadius: "var(--radius-sm)", textDecoration: "none", backgroundImage: "none" }}>
-            <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "10px" }}>New · The Study Bible</div>
-            <div style={{ fontFamily: "var(--F)", fontSize: "clamp(1.6rem, 3vw, 2.2rem)", fontWeight: 400, color: "var(--ink)", marginBottom: "10px", lineHeight: 1.15 }}>Learn the whole Bible, one story from Genesis to Revelation</div>
-            <p style={{ fontFamily: "var(--B)", fontSize: "1rem", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "64ch", margin: "0 0 14px" }}>
-              Follow the Bible's one story in eleven acts, read an introduction to every book, and open study notes on every chapter: its history, its culture, how it is built, what it teaches, and how it points to Christ. Beneath every English word are the Hebrew and Greek it translates.
+      {/* THE STUDY BIBLE: first and biggest. */}
+      <section aria-labelledby="study-bible-title" style={{ background: "var(--bone)", padding: `var(--s-6) ${gutter}` }}>
+        <div style={wrap} className="study-bible">
+          <div className="study-bible__lead">
+            <h2
+              id="study-bible-title"
+              style={{
+                fontFamily: "var(--F)",
+                fontSize: "clamp(40px, 5vw, 60px)",
+                fontWeight: 400,
+                lineHeight: 1.04,
+                letterSpacing: "-0.02em",
+                color: "var(--ink)",
+                margin: "0 0 18px",
+              }}
+            >
+              The Study Bible
+            </h2>
+            <p style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.7, color: "var(--ink-muted)", margin: "0 0 var(--s-4)", maxWidth: "46ch" }}>
+              Every chapter comes with notes on its history, its culture, how it is built, what it teaches, and
+              where it sits in the one story that runs from Genesis to Revelation. Underneath every English word
+              are the Hebrew and Greek it translates.
             </p>
-            <div style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--ink)", borderBottom: "1px solid var(--mustard)", width: "fit-content", paddingBottom: "2px" }}>Open the Study Bible</div>
-          </Link>
+            <Link
+              href="/study/bible"
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                minHeight: "46px",
+                padding: "0 24px",
+                background: "var(--ink)",
+                color: "var(--bone)",
+                borderBottom: "2px solid var(--mustard)",
+                borderRadius: "var(--radius-sm)",
+                fontFamily: "var(--U)",
+                fontSize: "15px",
+                fontWeight: 500,
+                textDecoration: "none",
+              }}
+            >
+              Open the Study Bible
+            </Link>
+          </div>
+          <ul className="hub-group__links">
+            {STUDY_BIBLE.map((l) => (
+              <li key={l.label}>
+                <Link href={l.href} className="hub-link" style={{ color: "var(--ink)" }}>
+                  <span className="hub-link__label">{l.label}</span>
+                  <span className="hub-link__note" style={{ color: "var(--ink-muted)" }}>
+                    {l.note}
+                  </span>
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
-      {/* THE DOORS */}
-      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-3)" }}>
-        <div style={{ maxWidth: "var(--w-default)", margin: "0 auto", display: "flex", flexDirection: "column", gap: "var(--s-5)" }}>
-          {DOORS.map((door) => {
-            const Icon = door.icon;
-            const tools = door.hrefs.map((h) => byHref.get(h)).filter(Boolean) as (typeof TOOLS)[number][];
-            const extra = door.hrefs.filter((h) => !byHref.has(h));
-            // Registry tools first, then the off-registry pages, as before. The
-            // per-tool icons are gone: CardGrid's kicker slot takes text only.
-            const cards: CardItem[] = [
-              ...tools.map((tool) => ({ href: tool.href, title: tool.title, dek: tool.description })),
-              ...extra.flatMap((h) => {
-                const entry = OFF_REGISTRY[h];
-                return entry ? [{ href: h, title: entry.title, dek: entry.description }] : [];
-              }),
-            ];
-            return (
-              <div key={door.holding}>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "6px" }}>
-                  <Icon size={20} aria-hidden style={{ color: "var(--mustard-text)" }} />
-                  <div className="eyebrow" style={{ color: "var(--mustard-text)" }}>You are holding</div>
-                </div>
-                <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(1.6rem, 3vw, 2.1rem)", fontWeight: 400, letterSpacing: "-0.01em", color: "var(--ink)", marginBottom: "0.4rem" }}>{door.holding}</h2>
-                <p style={{ fontFamily: "var(--B)", fontSize: "1rem", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "62ch", marginBottom: "var(--s-3)" }}>{door.lead}</p>
-                <CardGrid label={door.holding} items={cards} />
-              </div>
-            );
-          })}
-        </div>
-      </section>
-
-      {/* WHAT THE STUDY STANDS ON */}
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-3)" }}>
-        <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
-          {/* The eyebrow is this section's heading, so the two cards below sit
-              under it as h3s, not under the last door. The eyebrow style sits on
-              an inner span because brand-override.css forces every heading
-              into the serif with !important. */}
-          <h2 style={{ marginBottom: "1rem" }}>
-            <span className="eyebrow" style={{ color: "var(--mustard)" }}>What the study stands on</span>
-          </h2>
-          <p style={{ color: "var(--charcoal-fg)", opacity: 0.75, fontSize: "0.95rem", lineHeight: 1.7, maxWidth: "62ch", marginBottom: "2rem" }}>
-            Every passage you study was read by twenty centuries of Christians before you, argued over in councils, and carried through the church's worst hours. Knowing that story is part of reading well.
-          </p>
-          <CardGrid
+      {/* CHURCH HISTORY */}
+      <section style={{ background: "var(--charcoal)", padding: `var(--s-2) ${gutter}` }}>
+        <div style={wrap}>
+          <HubGroup
+            id="church-history"
+            title="Church history"
             tone="dark"
-            label="What the study stands on"
-            items={STANDS_ON.map((s) => ({ href: s.href, title: s.title, dek: s.text }))}
-          />
+            links={[
+              {
+                label: "The history of the church",
+                href: "/theology/history",
+                note: "The councils, the figures, the heresies, and the whole arc from Pentecost to today, hung on one timeline.",
+              },
+              {
+                label: "Creeds and confessions",
+                href: "/resources/creeds",
+                note: "The full texts of the creeds and confessions, with plain-language notes on what the loaded phrases meant to the people who wrote them.",
+              },
+              {
+                label: "Why there are so many churches",
+                href: "/theology/traditions",
+                note: "A charitable guide to the major traditions, Catholic to Pentecostal: what each one treasures, and the deep core they share.",
+              },
+              {
+                label: "The injustice timeline",
+                href: "/justice/timeline",
+                note: "An honest reckoning with the injustices of history, those done in the name of Christ among them. No one's hands are clean.",
+              },
+              {
+                label: "The witnesses",
+                href: "/justice/witnesses",
+                note: "The people who did justice at real cost, from the abolitionists to the rescuers of the trafficked, honest about their flaws.",
+              },
+              {
+                label: "The witnesses who would not be captured",
+                href: "/disruption/witnesses",
+                note: "The people who told the church and the powers costly truth and refused to be captured by either.",
+              },
+            ]}
+          >
+            You did not start the faith. You were handed it. Every passage you study was read by Christians
+            before you, argued over in councils, and carried through the church's worst hours.
+          </HubGroup>
         </div>
       </section>
+
+      {/* THE BIBLE IN ITS CONTEXT */}
+      <section style={{ background: "var(--bone-warm)", padding: `var(--s-2) ${gutter}` }}>
+        <div style={wrap}>
+          <HubGroup
+            id="context"
+            title="Reading the Bible in its context"
+            links={[
+              {
+                label: "Reading Scripture in context",
+                href: "/resources/context",
+                note: "The Ancient Near East, Second Temple Judaism, the Greco-Roman world, honor and shame, and how to read the Bible apart from American political assumptions.",
+              },
+              {
+                label: "The Study Bible's reading guides",
+                href: "/study/bible/guides",
+                note: "How to read each kind of writing in the Bible (narrative, law, poetry, prophecy, Gospels, parables, letters, apocalyptic) and the empires, rulers, and groups behind the text.",
+              },
+              {
+                label: "A theology glossary",
+                href: "/theology/glossary",
+                note: "Every theological term, from atonement to the Trinity, defined plainly and linked to the doctrine it belongs to.",
+              },
+              {
+                label: "Search the theology reference",
+                href: "/theology/search",
+                note: "One search across the doctrines, passages, glossary terms, creeds, figures, traditions, and hard questions.",
+              },
+            ]}
+          >
+            The Bible was written to people in a world with its own empires, calendars, and assumptions. Knowing
+            that world is how you hear it on its own terms instead of ours.
+          </HubGroup>
+        </div>
+      </section>
+
+      {/* STUDY WITH A GROUP */}
+      <section style={{ background: "var(--bone)", padding: `var(--s-2) ${gutter} var(--s-5)` }}>
+        <div style={wrap}>
+          <HubGroup
+            id="groups"
+            title="Study with a group"
+            links={[
+              {
+                label: "Study guides for groups",
+                href: "/studyguides",
+                note: "A leader's guide with timing and the answer behind every question, a participant handout, and printable PDFs.",
+              },
+            ]}
+          >
+            For a class, a small group, or a family table.
+          </HubGroup>
+          <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.65, color: "var(--ink-muted)", margin: "var(--s-3) 0 0" }}>
+            Looking for the study tools: the passage companion, the topic finder, the glossary, Scripture
+            memory?{" "}
+            <Link href="/tools" style={{ color: "var(--ink)", textDecoration: "none", borderBottom: "1px solid var(--mustard)" }}>
+              They are all in the tools
+            </Link>
+            .
+          </p>
+        </div>
+      </section>
+
+      <style>{STUDY_CSS}</style>
     </Layout>
   );
 }
+
+const STUDY_CSS = `
+.study-bible{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:var(--s-5);align-items:start}
+@media (max-width:860px){.study-bible{grid-template-columns:minmax(0,1fr)}}
+`;

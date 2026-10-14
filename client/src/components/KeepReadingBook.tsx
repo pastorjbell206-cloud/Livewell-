@@ -1,81 +1,52 @@
 /**
- * KeepReadingBook — the article-to-book funnel. Every essay ends with a card
- * pointing the reader to the book that carries its argument to full length.
- *
- * The shelf holds exactly the three books James wrote by hand, so the card
- * recommends one of those three only where the match is real (the essay's
- * slug or track genuinely belongs to that book's argument). Everywhere else
- * it shows the shelf itself rather than pretending a match — the claim "the
- * argument runs to full length in X" is only ever made when it is true.
+ * KeepReadingBook — the essay-to-book card. An essay ends with the book that
+ * carries its argument to full length, chosen from the essay's slug and
+ * pillar/track so the match is topical. Only books on the /books shelf
+ * (lib/bookShelf.ts) are ever offered; when none of them fits the essay, no
+ * card renders, because a book that does not carry the argument is an ad.
  */
 import { Link } from "wouter";
-import { resolveTrack } from "@/lib/taxonomy";
+import { pillarForPost, resolveTrack } from "@/lib/taxonomy";
 import { trackBookClick } from "@/lib/telemetry";
+import { shelfBook, type ShelfBook } from "@/lib/bookShelf";
 
 interface PostLike {
   slug?: string | null;
   pillar?: string | null;
 }
 
-interface BookRef {
-  slug: string;
-  title: string;
-  sub: string;
-  blurb: string;
-  /** Route to the product page. */
-  href: string;
-  /** Cover path. */
-  cover: string;
-}
-
-const BOOKS: Record<string, BookRef> = {
-  "when-god-bless-america": {
-    slug: "when-god-bless-america",
-    title: "When God Bless America Replaces Thy Kingdom Come",
-    sub: "How Patriotism Became Our Practical Savior",
-    blurb: "Civil religion named for what it is — idolatry with a flag for a shroud — and the older allegiance underneath.",
-    href: "/books/when-god-bless-america",
-    cover: "/books/when-god-bless-america.webp",
-  },
-  "the-monster-in-the-mirror": {
-    slug: "the-monster-in-the-mirror",
-    title: "The Monster in the Mirror",
-    sub: "Why Every Generation Gets the Bible Wrong, Why Yours Is No Different, and What to Do About It",
-    blurb: "Six American cultural lenses that quietly distort how we read Scripture, and what it looks like to read against your own assumptions.",
-    href: "/books/the-monster-in-the-mirror",
-    cover: "/books/the-monster-in-the-mirror.webp",
-  },
-  "believe": {
-    slug: "believe",
-    title: "Believe",
-    sub: "The Rational Case for Christian Faith",
-    blurb: "The hardest questions skeptics ask about God, the Bible, the resurrection, suffering, and hell, answered by a pastor who was once an atheist.",
-    href: "/books/believe",
-    cover: "/books/believe.webp",
-  },
-};
-
-/** Slug-keyword rules: an essay routes to a book only when the match is real.
- *  First match wins; most-specific rules first. */
+/** Slug-keyword rules: first match wins; most specific rules first. */
 const SLUG_BOOK_RULES: Array<{ keywords: string[]; book: string }> = [
-  { keywords: ["god-bless-america", "nationalis", "civil-religion", "patriot", "pledge", "flag", "voting-bloc", "precinct"], book: "when-god-bless-america" },
-  { keywords: ["atheis", "skeptic", "unbelie", "deconstruct", "doubt", "why-believe", "resurrection-evidence", "does-god-exist"], book: "believe" },
-  { keywords: ["cultural-lens", "gets-the-bible-wrong", "misread", "proof-text", "read-the-bible", "individualism", "consumer-christian"], book: "the-monster-in-the-mirror" },
+  { keywords: ["monster", "mirror", "blind-spot", "cultural-lens", "gets-the-bible-wrong", "every-generation"], book: "the-monster-in-the-mirror" },
+  { keywords: ["god-bless-america", "nationalis", "civil-religion", "patriot", "empire", "christendom"], book: "when-god-bless-america" },
+  {
+    keywords: [
+      "atheis", "skeptic", "unbelie", "apologetic", "resurrection", "god-exist", "god-actually-exist",
+      "suffering", "miracle", "faith-and-science", "science-and-faith", "trust-the-bible", "reliability", "is-the-bible",
+      "never-heard", "only-way", "is-hell", "about-hell",
+    ],
+    book: "believe",
+  },
 ];
 
-function bookFor(post: PostLike): BookRef | null {
+/** The shelf book that carries this essay's argument, or null when none does. */
+export function bookFor(post: PostLike): ShelfBook | null {
   const slug = (post.slug ?? "").toLowerCase();
   if (slug) {
     for (const rule of SLUG_BOOK_RULES) {
-      if (rule.keywords.some((k) => slug.includes(k))) return BOOKS[rule.book];
+      if (rule.keywords.some((k) => slug.includes(k))) return shelfBook(rule.book);
     }
   }
 
   const track = resolveTrack(post.pillar ?? null)?.slug;
-  if (track === "politics") return BOOKS["when-god-bless-america"];
-  if (track === "doubt") return BOOKS["believe"];
-  if (track === "theology") return BOOKS["the-monster-in-the-mirror"];
+  if (track === "politics" || track === "after-christendom") return shelfBook("when-god-bless-america");
+  if (track === "american-church" || track === "theology") return shelfBook("the-monster-in-the-mirror");
+  if (track === "doubt") return shelfBook("believe");
+  if (track) return null;
 
+  const id = pillarForPost(post)?.id;
+  if (id === 1 || id === 2 || id === 4) return shelfBook("when-god-bless-america");
+  if (id === 3) return shelfBook("the-monster-in-the-mirror");
   return null;
 }
 
@@ -92,9 +63,9 @@ export function KeepReadingBook({
   quiet?: boolean;
 }) {
   const book = bookFor(post);
+  if (!book) return null;
 
   if (quiet) {
-    if (!book) return null;
     return (
       <section style={{ background: "var(--bone)", padding: "var(--s-4)" }}>
         <div
@@ -108,7 +79,7 @@ export function KeepReadingBook({
           }}
         >
           <img
-            src={book.cover}
+            src={book.thumb}
             alt=""
             width={44}
             height={66}
@@ -144,50 +115,11 @@ export function KeepReadingBook({
     );
   }
 
-  if (!book) {
-    // No honest single match: show the shelf itself.
-    const shelf = Object.values(BOOKS);
-    return (
-      <section style={{ background: "var(--ink)", padding: "var(--s-6) var(--s-4)" }}>
-        <div style={{ maxWidth: "var(--w-content)", margin: "0 auto" }}>
-          <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard)" }}>
-            Keep reading · The books
-          </div>
-          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(26px, 3.4vw, 34px)", fontWeight: 400, color: "var(--bone)", margin: "8px 0 6px", lineHeight: 1.1, letterSpacing: "-0.02em" }}>
-            Three books, written by hand
-          </h2>
-          <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.6, color: "rgba(245,240,230,.8)", margin: "0 0 20px", maxWidth: "60ch" }}>
-            The long arguments behind the essays: the flag and the kingdom, the lenses that bend how we read Scripture, and the case for belief from a pastor who was once an atheist.
-          </p>
-          <div style={{ display: "flex", gap: "20px", flexWrap: "wrap" }}>
-            {shelf.map((b) => (
-              <Link
-                key={b.slug}
-                href={b.href}
-                onClick={() => trackBookClick(post.slug ?? "", b.slug)}
-                style={{ display: "flex", gap: "12px", alignItems: "center", textDecoration: "none", flex: "1 1 220px", minWidth: "220px" }}
-              >
-                <img
-                  src={b.cover}
-                  alt=""
-                  width={54}
-                  height={81}
-                  style={{ width: "54px", height: "auto", borderRadius: "2px", flex: "0 0 auto", boxShadow: "0 8px 20px rgba(0,0,0,.45)" }}
-                />
-                <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", lineHeight: 1.4, color: "var(--bone)" }}>{b.title}</span>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-    );
-  }
-
   return (
-    <section style={{ background: "var(--ink)", padding: "var(--s-6) var(--s-4)" }}>
+    <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4)" }}>
       <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "28px", alignItems: "center", flexWrap: "wrap" }}>
         <img
-          src={book.cover}
+          src={book.thumb}
           alt={`${book.title} cover`}
           width={120}
           height={181}
@@ -197,16 +129,16 @@ export function KeepReadingBook({
           <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard)" }}>
             Keep reading · The book
           </div>
-          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(26px, 3.4vw, 34px)", fontWeight: 400, color: "var(--bone)", margin: "8px 0 4px", lineHeight: 1.1, letterSpacing: "-0.02em" }}>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(26px, 3.4vw, 34px)", fontWeight: 400, color: "var(--charcoal-fg)", margin: "8px 0 4px", lineHeight: 1.1, letterSpacing: "-0.02em" }}>
             {book.title}
           </h2>
-          <p style={{ fontFamily: "var(--F)", fontStyle: "italic", fontSize: "17px", color: "rgba(245,240,230,.72)", margin: "0 0 12px" }}>
+          <p style={{ fontFamily: "var(--F)", fontStyle: "italic", fontSize: "17px", color: "var(--charcoal-fg-muted)", margin: "0 0 12px" }}>
             {book.sub}
           </p>
-          <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.6, color: "rgba(245,240,230,.8)", margin: "0 0 18px", maxWidth: "54ch" }}>
+          <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.6, color: "var(--charcoal-fg-muted)", margin: "0 0 18px", maxWidth: "54ch" }}>
             {book.blurb}
           </p>
-          <Link href={book.href} onClick={() => trackBookClick(post.slug ?? "", book.slug)} style={{ display: "inline-block", fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--ink)", background: "var(--mustard)", padding: "13px 26px", borderRadius: "var(--radius-sm)", textDecoration: "none" }}>
+          <Link href={book.href} onClick={() => trackBookClick(post.slug ?? "", book.slug)} style={{ display: "inline-block", fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--charcoal)", background: "var(--mustard)", padding: "13px 26px", borderRadius: "var(--radius-sm)", textDecoration: "none" }}>
             Read the book →
           </Link>
         </div>

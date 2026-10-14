@@ -1,20 +1,23 @@
 /**
- * Primary navigation. LiveWell's header carries the writing platform and
- * nothing else: Read / Topics / Grow / About, rendered as dropdown menus, with
- * one source of truth in lib/siteNav.ts so the header and footer never drift.
- * Groups without a primary link (the pastors' and disciple-making work, which
- * is headed to its own homes) are skipped here and live in the footer only.
- * Start Here sits at the top level rather than inside a menu, because the
- * front door should never be two clicks deep. Utility actions — Find Help,
- * search, Subscribe — sit to the right. The menu is static (no API round
- * trip), so it paints in full on first render.
+ * Primary navigation: Study, Essays, Books, Resources, About, with one source
+ * of truth in lib/siteNav.ts so the header and footer never drift. A group
+ * with several header links opens as a menu; a group with one renders as that
+ * plain link. Utility actions (Find Help, search, Subscribe) sit to the right.
+ * The map is static (no API round trip), so the header paints in full on
+ * first render.
  */
 import { Link, useLocation } from "wouter";
 import { useEffect, useRef, useState } from "react";
 import { ChevronDown, Menu, Search, X } from "lucide-react";
 
-import { SITE_NAV_GROUPS, START_NAV, headerLinks, type SiteNavLink } from "@/lib/siteNav";
-import { PILLAR_ORDER, pillarListingUrl } from "@/lib/subPathways";
+import {
+  HELP_LINK,
+  SEARCH_SHORTCUTS,
+  SITE_NAV_GROUPS,
+  headerLinks,
+  soleHeaderLink,
+  type SiteNavLink,
+} from "@/lib/siteNav";
 
 /** Header and mobile menus show only groups that carry primary links. */
 const HEADER_GROUPS = SITE_NAV_GROUPS.filter((g) => headerLinks(g).length > 0);
@@ -182,10 +185,10 @@ export default function MinimalNav() {
                 flexWrap: "wrap",
               }}
             >
-              {PILLAR_ORDER.map(pillar => (
+              {SEARCH_SHORTCUTS.map(link => (
                 <Link
-                  key={pillar}
-                  href={pillarListingUrl(pillar)}
+                  key={link.href}
+                  href={link.href}
                   onClick={() => setSearchOpen(false)}
                   style={{
                     fontFamily: "var(--U)",
@@ -197,7 +200,7 @@ export default function MinimalNav() {
                     textDecoration: "none",
                   }}
                 >
-                  {pillar}
+                  {link.label}
                 </Link>
               ))}
             </div>
@@ -232,18 +235,20 @@ export default function MinimalNav() {
           backdropFilter: "blur(16px)",
           borderBottom: "1px solid var(--border)",
           width: "100%",
-          // The universal box-sizing reset is stripped by the CSS build, so
-          // this nav defaulted to content-box: width:100% + its 16px padding
-          // pushed 32px past a phone viewport (horizontal scroll on every page).
-          // Pinned border-box here so 100% includes the padding.
-          boxSizing: "border-box",
+          // The legacy nav{} rule in index.css caps every <nav> at 1200px and
+          // centres it; the header runs the full width so its rule does too.
+          // Its height and side padding (32px, 16px on phones) still apply.
+          maxWidth: "none",
+          margin: 0,
         }}
       >
+        {/* The page's content column (var(--w-default)), so the logo lines up
+            with the headings below and the actions sit flush right. */}
         <div
           style={{
-            maxWidth: "1400px",
+            width: "100%",
+            maxWidth: "var(--w-default)",
             margin: "0 auto",
-            padding: "0 20px",
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
@@ -256,7 +261,7 @@ export default function MinimalNav() {
                 style={{
                   fontFamily: "var(--F)",
                   fontSize: "20px",
-                  fontWeight: 600,
+                  fontWeight: 500,
                   color: "var(--ink)",
                   lineHeight: 1,
                   paddingBottom: "4px",
@@ -286,24 +291,29 @@ export default function MinimalNav() {
             style={{ display: "flex", gap: "2px", alignItems: "center" }}
             className="desktop-nav"
           >
-            {/* The front door, at the top level. A newcomer should never have to
-                open a menu to find where to begin. */}
-            <Link
-              href={START_NAV.href}
-              style={{
-                color: isActive(START_NAV.href) ? "var(--mustard-text)" : "var(--ink)",
-                fontFamily: "var(--U)",
-                fontSize: "13px",
-                fontWeight: 600,
-                padding: "8px 12px",
-                borderBottom: "2px solid var(--mustard)",
-                whiteSpace: "nowrap",
-                textDecoration: "none",
-              }}
-            >
-              {START_NAV.label}
-            </Link>
-            {HEADER_GROUPS.map(group => (
+            {HEADER_GROUPS.map(group => {
+              const sole = soleHeaderLink(group);
+              if (sole) {
+                return (
+                  <Link
+                    key={group.title}
+                    href={sole.href}
+                    aria-current={isActive(sole.href) ? "page" : undefined}
+                    style={{
+                      color: isActive(sole.href) ? "var(--mustard-text)" : "var(--ink)",
+                      fontFamily: "var(--U)",
+                      fontSize: "13px",
+                      fontWeight: 500,
+                      padding: "8px 12px",
+                      whiteSpace: "nowrap",
+                      textDecoration: "none",
+                    }}
+                  >
+                    {group.title}
+                  </Link>
+                );
+              }
+              return (
               <div key={group.title} style={{ display: "contents" }}>
               <div
                 style={{ position: "relative" }}
@@ -398,10 +408,11 @@ export default function MinimalNav() {
                 )}
               </div>
               </div>
-            ))}
+              );
+            })}
 
             <Link
-              href="/help"
+              href={HELP_LINK.href}
               style={{
                 color: "var(--mustard-text)",
                 fontFamily: "var(--U)",
@@ -411,7 +422,7 @@ export default function MinimalNav() {
                 whiteSpace: "nowrap",
               }}
             >
-              Find Help
+              {HELP_LINK.label}
             </Link>
 
             <button
@@ -457,11 +468,28 @@ export default function MinimalNav() {
             </Link>
           </div>
 
-          {/* Mobile */}
+          {/* Mobile: Find Help stays one tap away, beside search. */}
           <div
-            style={{ display: "flex", gap: "8px", alignItems: "center" }}
+            style={{ display: "flex", gap: "4px", alignItems: "center" }}
             className="mobile-nav"
           >
+            <Link
+              href={HELP_LINK.href}
+              style={{
+                color: "var(--mustard-text)",
+                fontFamily: "var(--U)",
+                fontSize: "14px",
+                fontWeight: 600,
+                padding: "0 8px",
+                minHeight: "44px",
+                display: "inline-flex",
+                alignItems: "center",
+                whiteSpace: "nowrap",
+                textDecoration: "none",
+              }}
+            >
+              {HELP_LINK.label}
+            </Link>
             <button
               type="button"
               onClick={() => setSearchOpen(true)}
@@ -525,7 +553,7 @@ export default function MinimalNav() {
             }}
           >
             <Link
-              href="/help"
+              href={HELP_LINK.href}
               onClick={() => setMobileOpen(false)}
               style={{
                 display: "block",
@@ -539,22 +567,31 @@ export default function MinimalNav() {
             >
               Find Help for What You Are Facing
             </Link>
-            <Link
-              href={START_NAV.href}
-              onClick={() => setMobileOpen(false)}
-              style={{
-                display: "block",
-                padding: "12px 0",
-                fontFamily: "var(--U)",
-                fontSize: "15px",
-                fontWeight: 700,
-                color: "var(--mustard-text)",
-                borderBottom: "1px solid var(--border)",
-              }}
-            >
-              {START_NAV.label}
-            </Link>
-            {HEADER_GROUPS.map(group => (
+            {HEADER_GROUPS.map(group => {
+              const sole = soleHeaderLink(group);
+              if (sole) {
+                return (
+                  <Link
+                    key={group.title}
+                    href={sole.href}
+                    onClick={() => setMobileOpen(false)}
+                    aria-current={isActive(sole.href) ? "page" : undefined}
+                    style={{
+                      display: "block",
+                      fontFamily: "var(--U)",
+                      color: "var(--ink)",
+                      fontSize: "14px",
+                      fontWeight: 600,
+                      padding: "12px 0",
+                      borderBottom: "1px solid var(--border)",
+                      textDecoration: "none",
+                    }}
+                  >
+                    {group.title}
+                  </Link>
+                );
+              }
+              return (
               <div key={group.title}>
                 <div
                   style={{
@@ -633,7 +670,8 @@ export default function MinimalNav() {
                   </div>
                 )}
               </div>
-            ))}
+              );
+            })}
             <div style={{ display: "flex", gap: "12px", marginTop: "16px" }}>
               <Link
                 href="/subscribe"
@@ -654,35 +692,16 @@ export default function MinimalNav() {
               >
                 Subscribe
               </Link>
-              <Link
-                href="/membership"
-                onClick={() => setMobileOpen(false)}
-                style={{
-                  flex: 1,
-                  textDecoration: "none",
-                  textAlign: "center",
-                  background: "transparent",
-                  color: "var(--ink)",
-                  border: "1px solid var(--ink)",
-                  padding: "13px 24px",
-                  fontFamily: "var(--U)",
-                  fontSize: "14px",
-                  fontWeight: 600,
-                  borderRadius: "var(--radius-sm)",
-                }}
-              >
-                Membership
-              </Link>
             </div>
           </div>
         )}
       </nav>
 
       <style>{
-        // The full desktop nav needs ~1080px to fit; below that it overflowed
-        // (40px at 1024, 64px at 1000), so the hamburger takes over up to 1080.
-        "@media (max-width: 1080px) { .desktop-nav { display: none !important; } .mobile-nav { display: flex !important; } }" +
-        "@media (min-width: 1081px) { .mobile-nav { display: none !important; } .desktop-nav { display: flex !important; } }"
+        // The five-door header needs ~770px (logo 106 + links 606 + gutters,
+        // measured at 1280); the hamburger takes over at 860 to leave air.
+        "@media (max-width: 860px) { .desktop-nav { display: none !important; } .mobile-nav { display: flex !important; } }" +
+        "@media (min-width: 861px) { .mobile-nav { display: none !important; } .desktop-nav { display: flex !important; } }"
       }</style>
     </>
   );

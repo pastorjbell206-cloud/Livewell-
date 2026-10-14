@@ -70,7 +70,9 @@ export function SEOMeta({
       <meta name="description" content={description} />
       {keywords && <meta name="keywords" content={keywords} />}
       <meta name="author" content={author} />
-      {noindex && <meta name="robots" content="noindex, nofollow" />}
+      {/* "follow", matching the prerendered head (scripts/prerender-heads.mjs):
+          a noindex page's links still pass readers and equity on. */}
+      {noindex && <meta name="robots" content="noindex, follow" />}
 
       {/* Canonical */}
       <link rel="canonical" href={canonicalUrl} />

@@ -265,7 +265,12 @@ lines in `studyguideTopics` and `lifeTopics`), which the page's compact help blo
 (and a guide's PDFs) read; `validate-studyguides` and `validate-life` fail on a
 listed slug that does not exist.
 `scripts/lib/built-files.mjs` names every download the deploy builds, so the
-link checkers accept links to PDFs that are not committed. What the integrity
+link checkers accept links to PDFs that are not committed. `validate-grow-links`
+also fails on a Grow link to an essay off the public shelf (`client/src/lib/shelf.json`),
+including markdown links in the libraries' prose; the care page, the `/help`
+starter list, and a study guide's session essay link check the shelf again at
+render time (`isPublicEssay`, `isPublicEssayHref`), so an essay taken down later
+drops out instead of landing a reader on a retired notice. What the integrity
 sweeps removed from the Grow libraries is recorded in `docs/grow/integrity/`.
 
 **Design system** — tokens are CSS variables in `index.css`; components

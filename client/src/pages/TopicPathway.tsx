@@ -11,6 +11,7 @@
  */
 import { useEffect, useState } from "react";
 import { Link, useRoute } from "wouter";
+import { isPublicEssayHref } from "@/lib/shelf";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import LoadFailed from "@/components/LoadFailed";
@@ -92,7 +93,7 @@ export default function TopicPathway() {
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
         <div style={wrap}>
           <div style={{ ...eyebrow, color: "var(--mustard)", marginBottom: "14px" }}>
-            <Link href="/pathways" style={{ color: "inherit", textDecoration: "none" }}>Topic Pathways</Link>
+            Topic Pathway
           </div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5vw, 54px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "20ch" }}>
             {data ? data.title : "A guided route"}
@@ -116,9 +117,9 @@ export default function TopicPathway() {
           <div style={{ ...wrap, textAlign: "center", maxWidth: "480px" }}>
             <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 400, color: "var(--ink)", marginBottom: "12px" }}>That pathway isn't here.</h2>
             <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "var(--ink-muted)", marginBottom: "22px" }}>
-              It may have been renamed, or the link is off by a word. Every pathway that exists is on the index.
+              It may have been renamed, or the link is off by a word. Find Help gathers what the site offers for whatever you are facing.
             </p>
-            <Link href="/pathways" style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--ink)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px" }}>See all pathways</Link>
+            <Link href="/help" style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--ink)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px" }}>Find Help</Link>
           </div>
         </section>
       ) : !data ? (
@@ -140,9 +141,15 @@ export default function TopicPathway() {
                 </div>
                 <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink-muted)", margin: "0 0 18px", paddingLeft: "56px", maxWidth: "62ch" }}>{m.note}</p>
 
-                {/* Items */}
+                {/* Items: an essay off the public shelf is left out (lib/shelf.ts),
+                    so no step lands on a retired notice. */}
+                {m.items.every((it) => !isPublicEssayHref(it.href)) && (
+                  <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "var(--ink)", margin: "0 0 18px", paddingLeft: "56px", maxWidth: "62ch" }}>
+                    The essays for this step are off the shelf for now. The next step takes up the same questions.
+                  </p>
+                )}
                 <div style={{ display: "flex", flexDirection: "column", gap: "10px", paddingLeft: "56px" }}>
-                  {m.items.map((it, j) => (
+                  {m.items.filter((it) => isPublicEssayHref(it.href)).map((it, j) => (
                     <Link
                       key={j}
                       href={stepHref(it.href)}
@@ -169,7 +176,7 @@ export default function TopicPathway() {
               <p style={{ fontFamily: "var(--F)", fontSize: "18px", fontStyle: "italic", color: "var(--ink-muted)", marginBottom: "18px" }}>
                 That is the route. Where it ends, the whole library is still open.
               </p>
-              <Link href="/pathways" style={{ fontFamily: "var(--U)", fontSize: "13.5px", fontWeight: 600, color: "var(--ink)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px" }}>The other pathways →</Link>
+              <Link href="/help" style={{ fontFamily: "var(--U)", fontSize: "13.5px", fontWeight: 600, color: "var(--ink)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px" }}>Find help for whatever else you are facing →</Link>
             </div>
           </div>
         </section>

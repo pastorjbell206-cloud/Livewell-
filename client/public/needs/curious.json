@@ -79,7 +79,7 @@
       },
       {
         "title": "Weigh the best case against the best objection",
-        "body": "Give both sides their strongest voice. [Can a Reasonable Person Believe in Miracles?](/writing/apologetics-can-a-reasonable-person-believe-in-miracles) states Hume's argument at full strength before answering it, and [Did the Gospels Get Jesus Right?](/resources/context/did-the-gospels-get-jesus-right) takes on the idea that the stories drifted into legend. Then read the best skeptical scholars on the same questions, in their own words, and notice where each side has to strain to make its case."
+        "body": "Give both sides their strongest voice. [Were Ancient People Gullible About Miracles?](/resources/context/miracles-and-the-ancient-mind) answers the common claim that ancient people would believe any miracle story, and [Did the Gospels Get Jesus Right?](/resources/context/did-the-gospels-get-jesus-right) takes on the idea that the stories drifted into legend. Then read Hume's essay on miracles and the best skeptical scholars on the same questions, in their own words, and notice where each side has to strain to make its case."
       }
     ]
   },
@@ -148,11 +148,6 @@
         "kind": "Page"
       },
       {
-        "href": "/writing/apologetics-can-a-reasonable-person-believe-in-miracles",
-        "label": "Can a Reasonable Person Believe in Miracles?",
-        "kind": "Essay"
-      },
-      {
         "href": "/resources/context/did-the-gospels-get-jesus-right",
         "label": "Did the Gospels Get Jesus Right?",
         "kind": "Page"
@@ -163,14 +158,9 @@
         "kind": "Page"
       },
       {
-        "href": "/writing/apologetics-isnt-faith-believing-without-evidence",
-        "label": "Isn't Faith Just Believing Without Evidence?",
-        "kind": "Essay"
-      },
-      {
-        "href": "/writing/what-the-gospel-actually-is",
-        "label": "What the Gospel Actually Is",
-        "kind": "Essay"
+        "href": "/study/bible/doctrines/faith",
+        "label": "Faith and Faithfulness: What the Bible Teaches",
+        "kind": "Page"
       },
       {
         "href": "/resources/creeds/apostles-creed",
@@ -188,9 +178,9 @@
         "kind": "Plan"
       },
       {
-        "href": "/writing/did-the-resurrection-happen",
-        "label": "Did the Resurrection Actually Happen?",
-        "kind": "Essay"
+        "href": "/study/bible/1-corinthians/15",
+        "label": "1 Corinthians 15 in the Study Bible: the gospel Paul received and passed on, one of the oldest summaries of the faith, with notes",
+        "kind": "Page"
       },
       {
         "href": "/skeptic-track",

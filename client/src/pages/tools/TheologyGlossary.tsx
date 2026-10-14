@@ -1609,7 +1609,7 @@ export default function TheologyGlossary() {
           </p>
           <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "12px" }}>
             <Link
-              href="/theology"
+              href="/study"
               style={{
                 fontFamily: "var(--U)",
                 fontSize: "15px",
@@ -1622,7 +1622,7 @@ export default function TheologyGlossary() {
                 transition: "opacity var(--dur) var(--ease)",
               }}
             >
-              Explore Theology
+              Explore Study
             </Link>
             <Link
               href="/tools"

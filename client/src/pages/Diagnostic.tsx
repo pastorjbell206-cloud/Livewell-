@@ -185,7 +185,7 @@ interface DimResult {
 const DIM_META: Record<Dim, DimMeta> = {
   relational: {
     label: "Relational",
-    essay: { href: "/writing/the-hardest-thing-jesus-asked", title: "What Did Jesus Mean by Love Your Enemies?" },
+    essay: { href: "/studyguides/sermon-on-the-mount", title: "The Sermon on the Mount: A Bible Study, whose third session is Love Your Enemies" },
     book: { href: "/books/the-monster-in-the-mirror", title: "The Monster in the Mirror" },
     levels: {
       thin: {
@@ -234,7 +234,7 @@ const DIM_META: Record<Dim, DimMeta> = {
   },
   intellectual: {
     label: "Intellectual",
-    essay: { href: "/writing/can-you-have-faith-and-doubt", title: "Can You Have Faith and Still Have Doubts?" },
+    essay: { href: "/help/doubt", title: "I'm not sure I believe anymore, the Find Help page on doubt" },
     book: { href: "/books/believe", title: "Believe" },
     levels: {
       thin: {
@@ -283,7 +283,7 @@ const DIM_META: Record<Dim, DimMeta> = {
   },
   vocational: {
     label: "Vocational",
-    essay: { href: "/writing/what-the-sabbath-is-and-why-you-need-it", title: "What the Sabbath Is and Why You Need It" },
+    essay: { href: "/how-tos/wm-how-to-rest-when-you-feel-you-cannot-stop", title: "How to Rest When You Feel You Cannot Stop" },
     book: null,
     levels: {
       thin: {
@@ -332,7 +332,7 @@ const DIM_META: Record<Dim, DimMeta> = {
   },
   devotional: {
     label: "Devotional",
-    essay: { href: "/writing/praying-when-you-dont-feel-it", title: "Why Does Prayer Feel Dry, and What Do You Do?" },
+    essay: { href: "/help/prayer", title: "I don't know how to pray, the Find Help page on prayer" },
     book: null,
     levels: {
       thin: {
@@ -834,7 +834,7 @@ export default function Diagnostic() {
                         paddingBottom: "2px",
                       }}
                     >
-                      Read the essay: {lead.essay.title} →
+                      Read next: {lead.essay.title} →
                     </Link>
                     {lead.book && (
                       <Link

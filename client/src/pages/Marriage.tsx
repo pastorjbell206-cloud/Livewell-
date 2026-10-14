@@ -13,6 +13,7 @@ import { SectionHead } from "@/components/editorial/SectionHead";
 import SubjectShelf from "@/components/SubjectShelf";
 import { subjectById } from "@/lib/subjects";
 import { getReadEssays } from "@/lib/readProgress";
+import { filterPublicPosts } from "@/lib/shelf";
 
 export default function Marriage() {
   const [readSlugs] = useState<Set<string>>(() => getReadEssays());
@@ -49,22 +50,23 @@ export default function Marriage() {
       topic: "Marriage"
     }
   ];
+  const featured = filterPublicPosts(FEATURED_ARTICLES);
 
   const READING_PATHS = [
     {
-      title: "Marriage: Covenant & Roles",
-      description: "What covenant means, what you promised, and how two people lead and serve when love feels impossible.",
-      href: "/writing?q=covenant"
+      title: "Marriage: The Long Covenant",
+      description: "What covenant means, what you promised, and why marriages drift apart and how to stop it.",
+      href: "/life/marriage-the-long-covenant"
     },
     {
       title: "Marriage: Communication & Conflict",
-      description: "How to fight fair, have the conversations you've been avoiding, and repair after rupture.",
-      href: "/writing?q=conflict"
+      description: "Eight weeks of small daily practices: hearing before answering, the fight that keeps coming back, confession, and turning toward each other again.",
+      href: "/plans/marriage"
     },
     {
       title: "Marriage: Crisis & Rebuilding",
-      description: "Affairs, addiction, divorce, and the long work of starting again when the marriage nearly ended.",
-      href: "/writing?q=marriage"
+      description: "When the marriage is falling apart: betrayal, addiction, the question of divorce, safety first if you are afraid, and what to do this week.",
+      href: "/help/marriage"
     }
   ];
 
@@ -107,20 +109,23 @@ export default function Marriage() {
           </div>
       </section>
 
-      {/* FEATURED ARTICLES */}
-      <section style={{ background: "var(--bone)", padding: "80px 20px" }}>
-        <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
-          <SectionHead title="Essential Reading" />
-          <EditorialIndex
-            label="Essential Reading"
-            items={FEATURED_ARTICLES.map((article) => ({
-              href: `/writing/${article.slug}`,
-              title: article.title,
-              read: readSlugs.has(article.slug),
-            }))}
-          />
-        </div>
-      </section>
+      {/* FEATURED ARTICLES: only those on the public shelf (lib/shelf.ts);
+          the section steps aside while none of them is. */}
+      {featured.length > 0 && (
+        <section style={{ background: "var(--bone)", padding: "80px 20px" }}>
+          <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
+            <SectionHead title="Essential Reading" />
+            <EditorialIndex
+              label="Essential Reading"
+              items={featured.map((article) => ({
+                href: `/writing/${article.slug}`,
+                title: article.title,
+                read: readSlugs.has(article.slug),
+              }))}
+            />
+          </div>
+        </section>
+      )}
 
       <StatementBand tone="dark" eyebrow="Covenant, not contract">
         A covenant is kept on the days the feeling is gone.

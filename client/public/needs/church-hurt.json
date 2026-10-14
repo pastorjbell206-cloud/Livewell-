@@ -144,24 +144,14 @@
         "kind": "Page"
       },
       {
-        "href": "/writing/spiritual-abuse-how-good-theology-gets-weaponized",
-        "label": "Spiritual Abuse: How Good Theology Gets Weaponized",
-        "kind": "Essay"
+        "href": "/resources/context/matthew-18-20-in-context",
+        "label": "What Does ‘Where Two or Three Are Gathered’ Really Mean? Matthew 18 read whole, and why it is no rule that a harmed person must meet the one who harmed them",
+        "kind": "Page"
       },
       {
-        "href": "/writing/silence-abuse-church",
-        "label": "Why Do Churches Stay Silent About Abuse?",
-        "kind": "Essay"
-      },
-      {
-        "href": "/writing/done-with-church-not-jesus",
-        "label": "What If You're Done With Church but Not With Jesus?",
-        "kind": "Essay"
-      },
-      {
-        "href": "/writing/how-to-find-a-church-worth-joining",
-        "label": "How Do You Find a Church Worth Joining?",
-        "kind": "Essay"
+        "href": "/study/bible/ezekiel/34",
+        "label": "Ezekiel 34 in the Study Bible: God against the shepherds who fed on the flock, and the strong who trample the weak, with notes",
+        "kind": "Page"
       },
       {
         "href": "/wisdom/submitting-to-leaders",
@@ -177,6 +167,11 @@
         "href": "/life/betrayal-and-broken-trust",
         "label": "How Do You Heal After Betrayal by Someone Close?",
         "kind": "Life"
+      },
+      {
+        "href": "/wisdom/church-hurt",
+        "label": "Church Hurt: What the Bible Says",
+        "kind": "Wisdom"
       }
     ]
   },

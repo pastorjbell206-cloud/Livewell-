@@ -152,14 +152,9 @@
         "kind": "Life"
       },
       {
-        "href": "/writing/suffering-without-explanation",
-        "label": "Why Does God Allow Suffering?",
-        "kind": "Essay"
-      },
-      {
-        "href": "/writing/if-god-is-good-why-suffering",
-        "label": "If God Is Good, Why Is There So Much Suffering?",
-        "kind": "Essay"
+        "href": "/resources/context/romans-8-28-in-context",
+        "label": "Does Romans 8:28 Mean Everything Happens for a Reason? Why the verse is no explanation to hand the grieving",
+        "kind": "Page"
       },
       {
         "href": "/theology/doctrine/theodicy",
@@ -192,8 +187,8 @@
         "kind": "Pathway"
       },
       {
-        "href": "/honest-questions",
-        "label": "Honest Questions About Christianity: Essays for Skeptics and Seekers",
+        "href": "/help/curious",
+        "label": "I don't believe, but I'm curious: the Find Help page for skeptics, with the best reasons and the honest limits",
         "kind": "Page"
       }
     ]

@@ -28,6 +28,7 @@ import { Link } from "wouter";
 import { READING_PATHS } from "@/data/reading-paths-post-christian";
 import { pillarForPost } from "@/lib/taxonomy";
 import { caseForEssay } from "@/data/argumentCases";
+import { isPublicEssay } from "@/lib/shelf";
 
 // ─── Tool mapping ────────────────────────────────────────────────────
 
@@ -56,11 +57,15 @@ const TOOL_MAP: Record<string, ToolRec> = {
       "A serious diagnostic for the covenant relationship — not tips, but an honest read of where you are.",
     href: "/tools/marriage-assessment",
   },
-  "emotional-health": {
-    name: "Emotional Health Self-Check",
+  // The burnout diagnostic moved with the pastors' library to the Pastors
+  // Connection Network (/tools/pastor-burnout now 301s to /tools), so a
+  // tired leader is sent to Find Help's page for pastors running on empty,
+  // which names a next step on this site.
+  "pastor-burnout": {
+    name: "Find help for a leader running on empty",
     description:
-      "An honest read of the weight you are carrying, and whether the pace you keep is sustainable.",
-    href: "/tools/emotional-health",
+      "Somewhere to start when the work has taken more than you had.",
+    href: "/help/pastors",
   },
   "life-audit": {
     name: "Life Audit",
@@ -93,7 +98,7 @@ const SLUG_TOOL_RULES: Array<{ keywords: string[]; toolKey: string }> = [
   { keywords: ["deconstruction", "leaving", "exvangelical", "nones", "reconstructing"], toolKey: "start-here" },
   { keywords: ["marriage", "interfaith-marriage", "covenant"], toolKey: "marriage-assessment" },
   { keywords: ["parenting", "raising-kids", "family"], toolKey: "parenting-guide" },
-  { keywords: ["burnout", "pastor-burnout"], toolKey: "emotional-health" },
+  { keywords: ["burnout", "pastor-burnout"], toolKey: "pastor-burnout" },
   { keywords: ["suffering", "doubt", "bible", "genesis", "miracles", "scripture", "god-real", "historical-jesus"], toolKey: "deep-bible" },
   { keywords: ["denomination", "calvinism", "arminianism", "liturgical", "creeds", "charismatic", "schism", "reformation"], toolKey: "theology-quiz" },
   { keywords: ["politics", "culture-war", "purity", "prosperity", "race", "colonialism", "abuse"], toolKey: "bible-on-topic" },
@@ -105,7 +110,7 @@ const PILLAR_TOOL_FALLBACK: Record<string, string> = {
   "capture-by-the-left": "bible-on-topic",
   "reading-scripture-past-our-politics": "deep-bible",
   "after-christendom-pillar": "theology-quiz",
-  "the-pastoral-angle": "emotional-health",
+  "the-pastoral-angle": "pastor-burnout",
   "living-well-after-christendom": "life-audit",
 };
 
@@ -146,8 +151,9 @@ function findPathPositions(articleSlug: string): PathPosition[] {
   for (const path of READING_PATHS) {
     const idx = path.articles.findIndex((a) => a.slug === articleSlug);
     if (idx === -1) continue;
-    const nextArticle =
-      idx < path.articles.length - 1 ? path.articles[idx + 1] : null;
+    // The next essay on the path that is on the public shelf; retired essays
+    // are stepped over (lib/shelf.ts), so the one ask never lands on a notice.
+    const nextArticle = path.articles.slice(idx + 1).find((a) => isPublicEssay(a.slug)) ?? null;
     results.push({
       pathTitle: path.title,
       pathSlug: path.slug,
@@ -166,24 +172,6 @@ function findPathPositions(articleSlug: string): PathPosition[] {
  */
 export function isArticleOnPath(articleSlug: string): boolean {
   return findPathPositions(articleSlug).length > 0;
-}
-
-/** Find the best reading path to suggest based on pillar. */
-function suggestPath(pillarSlug: string | undefined): typeof READING_PATHS[number] | null {
-  const pillarPathMap: Record<string, string> = {
-    "capture-by-the-right": "church-reckoning",
-    "capture-by-the-left": "faith-in-secular-world",
-    "reading-scripture-past-our-politics": "know-your-tradition",
-    "after-christendom-pillar": "story-of-christianity",
-    "the-pastoral-angle": "when-the-church-hurts",
-    "living-well-after-christendom": "faith-in-secular-world",
-  };
-  const targetSlug = pillarSlug ? pillarPathMap[pillarSlug] : undefined;
-  if (targetSlug) {
-    return READING_PATHS.find((p) => p.slug === targetSlug) ?? READING_PATHS[0];
-  }
-  // Default to The Skeptic's Path
-  return READING_PATHS.find((p) => p.slug === "skeptics-path") ?? READING_PATHS[0];
 }
 
 // ─── Styles ──────────────────────────────────────────────────────────
@@ -259,16 +247,11 @@ export default function ArticleNextSteps({
   const pathPositions = useMemo(() => findPathPositions(articleSlug), [articleSlug]);
   const isOnPath = pathPositions.length > 0;
 
-  const suggestedPath = useMemo(
-    () => (isOnPath ? null : suggestPath(pillarSlug)),
-    [isOnPath, pillarSlug]
-  );
-
   // Off a path, the book that carries this essay's argument leads instead
   // (KeepReadingBook). This panel drops to quiet links so the two do not
   // compete at the moment the reader is most ready to act.
   if (!isOnPath) {
-    if (!suggestedPath && !tool && !argumentCase) return null;
+    if (!tool && !argumentCase) return null;
     return (
       <section
         style={{
@@ -290,14 +273,6 @@ export default function ArticleNextSteps({
               style={subtleLinkStyle}
             >
               Argue it yourself &rarr;
-            </Link>
-          )}
-          {suggestedPath && (
-            <Link
-              href={`/reading-paths#${suggestedPath.slug}`}
-              style={subtleLinkStyle}
-            >
-              Start the path: {suggestedPath.title} &rarr;
             </Link>
           )}
           {tool && (
@@ -332,18 +307,10 @@ export default function ArticleNextSteps({
                   marginBottom: "12px",
                 }}
               >
+                {/* The reading-paths index folded into /writing, so the
+                    path is named here rather than linked. */}
                 You are on{" "}
-                <Link
-                  href={`/reading-paths#${pos.pathSlug}`}
-                  style={{
-                    color: "var(--ink)",
-                    fontWeight: 600,
-                    borderBottom: "1px solid var(--mustard)",
-                    textDecoration: "none",
-                  }}
-                >
-                  {pos.pathTitle}
-                </Link>{" "}
+                <span style={{ color: "var(--ink)", fontWeight: 600 }}>{pos.pathTitle}</span>{" "}
                 &mdash; article {pos.currentIndex + 1} of {pos.totalArticles}
               </div>
               {pos.next ? (
@@ -391,8 +358,8 @@ export default function ArticleNextSteps({
               Argue it yourself &rarr;
             </Link>
           )}
-          <Link href="/reading-paths" style={subtleLinkStyle}>
-            All {READING_PATHS.length} reading paths &rarr;
+          <Link href="/writing" style={subtleLinkStyle}>
+            All essays &rarr;
           </Link>
           {tool && (
             <Link href={tool.href} style={subtleLinkStyle}>

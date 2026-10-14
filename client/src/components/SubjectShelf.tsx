@@ -129,8 +129,8 @@ export default function SubjectShelf({
               {list.length > visible.length && (
                 <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "var(--ink-muted)", marginTop: "14px" }}>
                   {`and ${list.length - visible.length} more — `}
-                  <Link href="/explore" style={{ color: "var(--mustard-text)", fontWeight: 600 }}>
-                    search the whole library
+                  <Link href="/search" style={{ color: "var(--mustard-text)", fontWeight: 600 }}>
+                    search the whole site
                   </Link>
                 </p>
               )}

@@ -604,9 +604,9 @@ export const BANDS: Record<BandId, OverallBand> = {
       href: "/wisdom/serving-in-the-church",
     },
     later: {
-      lead: "For the longer view of what Scripture says about gifts, and how they come into view in the life of a church:",
-      title: "What the Bible Says About Spiritual Gifts",
-      href: "/writing/what-the-bible-says-about-spiritual-gifts",
+      lead: "For the longer view of what Scripture says about gifts, the fourth session of this study takes up the gifts and the question Christians disagree about:",
+      title: "The Holy Spirit: A Bible Study on the Forgotten God",
+      href: "/studyguides/holy-spirit",
     },
   },
   "one-or-two": {
@@ -617,9 +617,9 @@ export const BANDS: Record<BandId, OverallBand> = {
       "What to do first: serve in one of your clearer areas for a season, six months or so, somewhere other people can see the work. Then ask two or three of them what they've seen and what they'd tell you to keep doing. If their answers match yours, that's worth more than any score here. And none of these areas ranks above another (1 Corinthians 12:21-26), so choose by where you can serve, not by which gift sounds most impressive.",
     ],
     next: {
-      lead: "This essay walks through what Scripture says about gifts, gives both sides of the debate over the miraculous gifts a fair hearing, and ends where this page does: a gift comes into view as you use it among other people.",
-      cta: "What the Bible Says About Spiritual Gifts",
-      href: "/writing/what-the-bible-says-about-spiritual-gifts",
+      lead: "Service in Scripture is the ordinary life of a church member. This page is about serving where your gifts and your church's needs overlap, which is where a gift comes into view.",
+      cta: "Serving in the Church",
+      href: "/wisdom/serving-in-the-church",
     },
     later: {
       lead: "For a small group that wants to study the gifts together, the fourth session of this study takes up the gifts and the question Christians disagree about:",
@@ -640,9 +640,9 @@ export const BANDS: Record<BandId, OverallBand> = {
       href: "/wisdom/serving-in-the-church",
     },
     later: {
-      lead: "For the longer view of what Scripture says about gifts, and why they come into view as you use them:",
-      title: "What the Bible Says About Spiritual Gifts",
-      href: "/writing/what-the-bible-says-about-spiritual-gifts",
+      lead: "For a small group that wants to study the gifts together, the fourth session of this study takes up the gifts and the question Christians disagree about:",
+      title: "The Holy Spirit: A Bible Study on the Forgotten God",
+      href: "/studyguides/holy-spirit",
     },
   },
   untried: {

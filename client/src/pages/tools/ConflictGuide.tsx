@@ -318,7 +318,7 @@ const CONFLICT_TYPES: ConflictType[] = [
     ],
     relatedArticles: [
       { title: "Read the age-by-age parenting guide", href: "/tools/parenting-guide" },
-      { title: "Read essays on family and parenting", href: "/writing?track=parenting" },
+      { title: "Read the Find Help page for parents", href: "/help/parenting" },
     ],
   },
   {

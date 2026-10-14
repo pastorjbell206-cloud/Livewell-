@@ -68,17 +68,15 @@ export default function EmailSignup() {
             Prefer to read at your own pace
           </p>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px, 3vw, 36px)", fontWeight: 400, color: "var(--ink)", marginBottom: 16 }}>
-            The reading paths are open now
+            The essays are open now
           </h2>
           <p style={{ fontFamily: "var(--B)", fontSize: "16px", color: "var(--ink-muted)", lineHeight: 1.7, maxWidth: "54ch", margin: "0 auto 32px" }}>
-            Curated sequences through the library — deconstruction, church history,
-            the skeptic's track, and more — in the right order, one essay at a time,
-            no inbox required. Email versions of these paths are being built; when
-            they can actually be delivered, subscribers hear first.
+            A short shelf of essays, grouped by subject, with three to start with.
+            Read them at your own pace, no inbox required.
           </p>
-          <Link href="/reading-paths" style={{ textDecoration: "none" }}>
+          <Link href="/writing" style={{ textDecoration: "none" }}>
             <button style={{ background: "var(--ink)", color: "var(--bone)", border: "none", padding: "13px 28px", fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)", borderRadius: "3px", cursor: "pointer" }}>
-              Browse the Reading Paths
+              Read the essays
             </button>
           </Link>
         </div>

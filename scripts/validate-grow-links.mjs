@@ -8,7 +8,11 @@
  * needs registry and care pages) and its pages (help, tools, assessments,
  * plans, start, downloads), resolves every internal href against the route
  * table and the library manifests (scripts/lib/site-routes.mjs), and fails on
- * any link that is missing or that only works through a redirect.
+ * any link that is missing or that only works through a redirect. It also
+ * fails on a link to an essay that is off the public shelf
+ * (client/src/lib/shelf.json), which lands a reader on a retired notice,
+ * unless the file checks the shelf itself before showing the link. Markdown
+ * links inside the libraries' prose are checked too.
  *
  *   node scripts/validate-grow-links.mjs          CI gate
  *   node scripts/validate-grow-links.mjs --report print findings, exit 0
@@ -16,6 +20,7 @@
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { ROOT, resolveHref, hrefsIn, listFiles } from "./lib/site-routes.mjs";
+import { loadEssayShelf } from "./lib/shelf.mjs";
 
 const REPORT = process.argv.includes("--report");
 
@@ -26,6 +31,7 @@ const FILES = [
   ...listFiles("client/public/wisdom", [".json"]),
   ...listFiles("client/public/studyguides", [".json"]),
   ...listFiles("client/public/needs", [".json"]),
+  ...listFiles("docs/grow/drafts", [".json"]),
   "client/src/pages/Help.tsx",
   "client/src/pages/Assessments.tsx",
   "client/src/pages/ToolsHub.tsx",
@@ -49,15 +55,27 @@ const RETIRED = new Set([
   "client/src/pages/tools/SermonOutline.tsx",
 ]);
 
+// An essay link is live only when the essay is on the public shelf.
+const SHELF = loadEssayShelf();
+const offShelf = (href) => {
+  const m = href.match(/^\/(?:writing|article)\/([^/?#]+)/);
+  return Boolean(m) && !SHELF.isPublic(decodeURIComponent(m[1]));
+};
+// Markdown links in prose: [label](/path).
+const markdownHrefs = (text) => [...text.matchAll(/\]\((\/[^)\s"]*)\)/g)].map((m) => m[1]);
+
 const findings = [];
 for (const rel of new Set(FILES)) {
   if (RETIRED.has(rel)) continue;
   let text;
   try { text = readFileSync(join(ROOT, rel), "utf8"); } catch { continue; }
-  for (const href of hrefsIn(text)) {
+  // A page that imports lib/shelf filters its own essay links before showing them.
+  const gated = /from ["'](?:@\/lib|\.{1,2}(?:\/\.\.)*\/lib|\.)\/shelf["']/.test(text);
+  for (const href of new Set([...hrefsIn(text), ...(rel.endsWith(".json") ? markdownHrefs(text) : [])])) {
     const r = resolveHref(href);
     if (r.status === "missing") findings.push({ rel, href, why: "missing" });
     else if (r.status === "redirect") findings.push({ rel, href, why: `redirects to ${r.to}` });
+    else if (!gated && offShelf(href)) findings.push({ rel, href, why: "an essay off the public shelf (a retired notice)" });
   }
 }
 

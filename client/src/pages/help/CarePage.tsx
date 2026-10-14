@@ -27,7 +27,15 @@ import { EditorialIndex, type IndexItem } from "@/components/editorial/Editorial
 import { LoadFailed } from "@/components/LoadFailed";
 import { fetchJson } from "@/lib/fetch-json";
 import { studyBibleHref } from "@/lib/needs";
+import { isPublicEssayHref } from "@/lib/shelf";
+import { SKEPTIC_TRACK_LIVE } from "@/lib/skepticTrack";
 import type { CarePageData, NeedsIndex } from "@/lib/needs";
+
+/**
+ * A link a care page may show: never an essay that is off the shelf (it would
+ * land on a retired notice) or the Skeptic's Track while it is held back.
+ */
+const isLiveHref = (href: string) => isPublicEssayHref(href) && (SKEPTIC_TRACK_LIVE || !/^\/skeptic-track(?:[/?#]|$)/.test(href));
 
 const SITE = "https://www.livewellbyjamesbell.co";
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
@@ -44,7 +52,9 @@ function Prose({ text, light = false }: { text: string; light?: boolean }) {
           </p>
         ),
         a: ({ href, children }) =>
-          href && href.startsWith("/") && !/\.(pdf|epub|docx?)($|[?#])/i.test(href) ? (
+          href && href.startsWith("/") && !isLiveHref(href) ? (
+            <>{children}</>
+          ) : href && href.startsWith("/") && !/\.(pdf|epub|docx?)($|[?#])/i.test(href) ? (
             <Link href={href} style={{ color: "inherit", textDecorationColor: "var(--mustard)", textUnderlineOffset: "3px" }}>{children}</Link>
           ) : href && href.startsWith("/") ? (
             // A printable on this site: a plain link, so the browser opens the file instead of the app routing to it.
@@ -177,6 +187,7 @@ export default function CarePage() {
   if (data.kit.tool) kitItems.push({ href: data.kit.tool.href, title: data.kit.tool.label, kicker: "Tool" });
   for (const g of data.kit.guides ?? []) kitItems.push({ href: g.href, title: g.label, kicker: "Study guide" });
   for (const r of data.kit.read) kitItems.push({ href: r.href, title: r.label, kicker: r.kind });
+  const kitShown = kitItems.filter((i) => isLiveHref(i.href));
 
   const related = (data.related ?? []).filter((s) => titles[s]);
 
@@ -323,7 +334,7 @@ export default function CarePage() {
         <p style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.7, color: "var(--ink-muted)", margin: "0 0 var(--s-3)", maxWidth: "62ch" }}>
           {goDeeperIntro(data)}
         </p>
-        <EditorialIndex items={kitItems} columns={1} compact headingAs="h3" label="Go deeper" />
+        <EditorialIndex items={kitShown} columns={1} compact headingAs="h3" label="Go deeper" />
       </Section>
 
       <Section id="print" tone="warm" eyebrow="Print it" title="For the refrigerator, a friend, or a small group">

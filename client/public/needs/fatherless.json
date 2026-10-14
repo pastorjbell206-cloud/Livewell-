@@ -141,24 +141,9 @@
     ],
     "read": [
       {
-        "href": "/pathways/manhood",
-        "label": "Manhood, the Father Wound, and Raising Sons",
-        "kind": "Pathway"
-      },
-      {
-        "href": "/writing/the-father-wound-and-the-god-question",
-        "label": "How a Father Shapes the Way a Child Sees God",
-        "kind": "Essay"
-      },
-      {
-        "href": "/writing/raising-sons-manhood",
-        "label": "How Do You Teach a Son What Manhood Actually Is?",
-        "kind": "Essay"
-      },
-      {
-        "href": "/writing/what-fatherhood-requires",
-        "label": "What Fatherhood Requires",
-        "kind": "Essay"
+        "href": "/studyguides/knowing-god",
+        "label": "The Trinity: A Bible Study on Knowing God (session three takes up calling God Father when your own father failed you)",
+        "kind": "Study guide"
       },
       {
         "href": "/how-tos/parenting-how-to-apologize-to-your-kids",

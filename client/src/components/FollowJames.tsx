@@ -16,12 +16,12 @@ import { EditorialIndex } from "@/components/editorial/EditorialIndex";
 // to use, and the way to work with James. A reader should be able to reach
 // all of it from one block rather than hunting.
 const SITE_DOORS = [
-  { href: "/explore", title: "The Library", dek: "Everything in one place: essays, guides, studies, and every download, searchable." },
+  { href: "/resources", title: "Resources", dek: "Everything else in one place: the Study Bible, church history, guides, plans, and the downloads." },
   { href: "/writing", title: "All the writing", dek: "Every essay, searchable, filed by subject." },
   { href: "/books", title: "The books", dek: "Three books, each written by hand." },
   { href: "/tools", title: "The tools", dek: "Assessments, study guides, guided reading paths, and the rest." },
   { href: "/downloads", title: "Downloads and PDFs", dek: "Every printable: leader guides and participant handouts. Free." },
-  { href: "/work-with-james", title: "Work with James", dek: "Preaching, consulting, and coming alongside a church or a leader." },
+  { href: "/speaking", title: "Work with James", dek: "Preaching, consulting, and coming alongside a church or a leader." },
 ];
 
 export default function FollowJames({
@@ -56,7 +56,7 @@ export default function FollowJames({
             fontFamily: "var(--B)",
             fontSize: "15px",
             lineHeight: 1.7,
-            color: "rgba(245,240,230,0.78)",
+            color: "var(--charcoal-fg-muted)",
             maxWidth: "60ch",
             marginBottom: "var(--s-5)",
           }}

@@ -124,6 +124,10 @@
     },
     "guides": [
       {
+        "href": "/studyguides/when-our-parents-grow-old",
+        "label": "When Our Parents Grow Old: A Bible Study for Caregivers (on hard choices, elder abuse, and dying well)"
+      },
+      {
         "href": "/studyguides/sabbath",
         "label": "Sabbath: A Bible Study on Rest and Hurry"
       },
@@ -159,11 +163,6 @@
         "kind": "Life"
       },
       {
-        "href": "/writing/elder-abuse-invisible",
-        "label": "Elder Abuse: The Invisible Sin",
-        "kind": "Essay"
-      },
-      {
         "href": "/life/caring-for-the-dying",
         "label": "How Do You Sit With Someone Who Is Dying?",
         "kind": "Life"
@@ -172,11 +171,6 @@
         "href": "/how-tos/ss-how-to-care-for-a-dying-loved-one",
         "label": "How to Care for a Dying Loved One",
         "kind": "How-to"
-      },
-      {
-        "href": "/writing/end-of-life-and-bioethics",
-        "label": "Should We Keep People Alive at Any Cost?",
-        "kind": "Essay"
       }
     ],
     "plan": {

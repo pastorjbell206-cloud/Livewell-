@@ -58,7 +58,7 @@ export default function TheologyMethodology() {
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
-            <Link href="/theology" style={{ color: "inherit" }}>Theological Depth</Link> · Start here
+            <Link href="/study" style={{ color: "inherit" }}>Study</Link> · Start here
           </div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(34px, 5.5vw, 58px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "20ch" }}>
             {m?.title ?? "How to Use This Section"}
@@ -115,7 +115,7 @@ export default function TheologyMethodology() {
           <Block kicker="A word before you begin" title={m.formationHeading}>
             <Prose text={m.formationBody} />
             <div style={{ marginTop: "var(--s-4)" }}>
-              <Link href="/theology" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)", display: "inline-flex", alignItems: "center", gap: "6px" }}>
+              <Link href="/study/bible/doctrines" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)", display: "inline-flex", alignItems: "center", gap: "6px" }}>
                 Now to the doctrines →
               </Link>
             </div>

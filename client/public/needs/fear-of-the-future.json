@@ -105,7 +105,7 @@
     "cost": "Cost stops many people before they ask, so ask. Many insurance plans cover counseling; call the number on your card and ask about mental health benefits. If you're paying yourself, ask about sliding-scale fees. Community mental health centers and university training clinics, where supervised graduate students see clients, usually cost less. Your employer may offer an employee assistance program with a few free sessions, and many churches keep a benevolence fund for exactly this."
   },
   "helping": {
-    "body": "If someone you love is scared of the future, the first gift is to listen long enough to learn what the fear actually is; it's usually more specific than it sounds. Don't argue with the fear or hurry to fix it, and be careful with reassurance: *it'll be fine* is a promise you can't keep, and they know it. Offer what God offered the exiles, which was presence: *I don't know what's going to happen, and I'm not going anywhere.* Then help them find one thing to do this week, and do it alongside them.\n\nIf you're a parent, remember that children read the adults around them more closely than the headlines, and you don't have to pretend the world is safe. What steadies them is watching someone they love admit to being afraid and keep praying and planting anyway. If you're a pastor, many of your people are being taught to fear by their screens; read these texts with them in context and refuse to preach the safety version. [How Do You Pastor a Church Addicted to Cable News?](/writing/pastoring-a-captured-congregation) goes further.",
+    "body": "If someone you love is scared of the future, the first gift is to listen long enough to learn what the fear actually is; it's usually more specific than it sounds. Don't argue with the fear or hurry to fix it, and be careful with reassurance: *it'll be fine* is a promise you can't keep, and they know it. Offer what God offered the exiles, which was presence: *I don't know what's going to happen, and I'm not going anywhere.* Then help them find one thing to do this week, and do it alongside them.\n\nIf you're a parent, remember that children read the adults around them more closely than the headlines, and you don't have to pretend the world is safe. What steadies them is watching someone they love admit to being afraid and keep praying and planting anyway. If you're a pastor, many of your people are being taught to fear by their screens; read these texts with them in context and refuse to preach the safety version. [The News and Fear](/wisdom/the-news-and-fear) goes further.",
     "say": [
       "What's the part you're most afraid of?",
       "That's a real fear. You're not foolish for feeling it.",
@@ -178,14 +178,14 @@
         "kind": "Essay"
       },
       {
-        "href": "/writing/why-hope-is-not-wishful-thinking",
-        "label": "Why Christian Hope Is Not Wishful Thinking",
-        "kind": "Essay"
+        "href": "/studyguides/resurrection",
+        "label": "The Resurrection: A Bible Study on the Evidence (session five takes up what it would mean for our deepest fear if it happened)",
+        "kind": "Study guide"
       },
       {
-        "href": "/writing/exile-is-not-the-end",
-        "label": "The Church Has Been an Exile Before",
-        "kind": "Essay"
+        "href": "/resources/context/jeremiah-29-11-in-context",
+        "label": "What Does Jeremiah 29:11 Really Mean? The whole letter to the exiles, read in its setting",
+        "kind": "Page"
       },
       {
         "href": "/how-tos/body-how-to-sleep-like-a-creature",

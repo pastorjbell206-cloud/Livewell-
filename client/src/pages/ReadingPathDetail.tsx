@@ -43,8 +43,8 @@ export function ReadingPathDetail() {
             <p style={{ color: "var(--ink-muted)", marginBottom: "2rem" }}>
               The reading path you followed doesn't exist — it may have moved when the paths were reorganized.
             </p>
-            <Link href="/reading-paths" style={{ fontFamily: "var(--U)", fontSize: "0.875rem", fontWeight: 500, color: "var(--mustard)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "0.25rem" }}>
-              All reading paths <ArrowRight size={14} style={{ display: "inline", verticalAlign: "middle" }} />
+            <Link href="/writing" style={{ fontFamily: "var(--U)", fontSize: "0.875rem", fontWeight: 500, color: "var(--mustard)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "0.25rem" }}>
+              All essays <ArrowRight size={14} style={{ display: "inline", verticalAlign: "middle" }} />
             </Link>
           </div>
         </section>
@@ -157,8 +157,8 @@ export function ReadingPathDetail() {
             Read it in order if you can. Each essay assumes the ground the one before it cleared.
           </p>
           <div style={{ display: "flex", gap: "2rem", justifyContent: "center", flexWrap: "wrap" }}>
-            <Link href="/reading-paths" style={{ fontFamily: "var(--U)", fontSize: "0.875rem", fontWeight: 500, color: "var(--mustard)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "0.25rem" }}>
-              All reading paths
+            <Link href="/writing" style={{ fontFamily: "var(--U)", fontSize: "0.875rem", fontWeight: 500, color: "var(--mustard)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "0.25rem" }}>
+              All essays
             </Link>
             <Link href="/writing" style={{ fontFamily: "var(--U)", fontSize: "0.875rem", fontWeight: 500, color: "var(--mustard)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "0.25rem" }}>
               The full library
