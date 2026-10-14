@@ -69,13 +69,24 @@
   ],
   "redirects": [
     {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "livewellbyjamesbell.co"
+        }
+      ],
+      "destination": "https://www.livewellbyjamesbell.co/$1",
+      "permanent": true
+    },
+    {
       "source": "/church-history",
       "destination": "/theology/history",
       "permanent": true
     },
     {
       "source": "/framework",
-      "destination": "/pillars",
+      "destination": "/writing",
       "permanent": true
     },
     {
@@ -84,643 +95,638 @@
       "permanent": true
     },
     {
-      "source": "/writing/when-god-bless-america-replaces-thy-kingdom-come",
-      "destination": "/writing/two-kingdoms-one-pledge",
-      "permanent": true
-    },
-    {
       "source": "/writing/church-political-brand-step-back",
-      "destination": "/writing/when-the-pulpit-became-a-precinct",
+      "destination": "/writing?section=faith-and-power",
       "permanent": true
     },
     {
       "source": "/writing/complicity-not-innocence",
-      "destination": "/justice",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/mishpat-tsedaqah",
-      "destination": "/justice",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/micah-6-8-demands",
-      "destination": "/justice",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/church-credibility-problem",
-      "destination": "/justice",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/prophetic-tradition-economic-justice",
-      "destination": "/justice",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/what-jubilee-means",
-      "destination": "/justice",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/church-wealth-world-poverty",
-      "destination": "/justice",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/good-samaritan-arguing",
-      "destination": "/justice",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/solidarity-theological-virtue",
-      "destination": "/justice",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/reaching-rich-comfortable",
-      "destination": "/justice",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/theology-of-repair",
-      "destination": "/justice",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/hospitality-not-optional",
-      "destination": "/justice",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/earth-is-lords",
-      "destination": "/justice",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/ruth-gleaning-laws",
-      "destination": "/justice",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/church-comfort-inequality",
-      "destination": "/justice",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/prophetic-pastor",
-      "destination": "/justice",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/justice-without-love-ideology",
-      "destination": "/writing/when-justice-becomes-a-gospel",
+      "destination": "/writing?section=faith-and-power",
       "permanent": true
     },
     {
       "source": "/writing/beatitudes-actually-promising",
-      "destination": "/writing/what-jesus-said-the-good-life-is",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/color-blindness-not-virtue",
-      "destination": "/justice",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/vulnerable-people-not-in-pews",
-      "destination": "/justice",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/prophets-expelled-sanctuary",
-      "destination": "/justice",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/exodus-demands-church-today",
-      "destination": "/justice",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/sabbath-is-resistance",
-      "destination": "/writing/a-day-of-doing-nothing",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/pastoral-care-wealthy-congregant",
-      "destination": "/justice",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/church-response-poverty-charity",
-      "destination": "/justice",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/church-must-speak-housing",
-      "destination": "/justice",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/the-long-arc",
-      "destination": "/writing/right-side-of-history",
+      "destination": "/writing?section=the-mirror",
       "permanent": true
     },
     {
       "source": "/writing/justice-not-political",
-      "destination": "/justice",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/where-church-was-silent",
-      "destination": "/justice",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/the-monster-in-the-mirror",
-      "destination": "/theology",
+      "destination": "/books/the-monster-in-the-mirror",
       "permanent": true
     },
     {
       "source": "/writing/lead-when-trust-institutions-low",
-      "destination": "/theology",
+      "destination": "/study",
       "permanent": true
     },
     {
       "source": "/writing/psalms-as-prayer-not-poetry",
-      "destination": "/writing/praying-the-words-when-you-have-none",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/eschatology-matters-end-shapes-now",
-      "destination": "/writing/why-hope-is-not-wishful-thinking",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/global-church-is-your-church",
-      "destination": "/writing/christianity-was-never-western",
+      "destination": "/writing?section=ancient-church",
       "permanent": true
     },
     {
       "source": "/writing/scripture-meditation",
-      "destination": "/writing/reading-the-bible-slowly",
+      "destination": "/writing?section=bible-in-its-world",
       "permanent": true
     },
     {
       "source": "/writing/hope-of-resurrection",
-      "destination": "/writing/what-the-resurrection-changes",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/why-pastors-quit-and-how-to-stay",
-      "destination": "/writing/why-pastors-quit",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/stop-performing-start-pastoring",
-      "destination": "/living-well",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/personal-board-accountability",
-      "destination": "/living-well",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/lead-through-church-crisis",
-      "destination": "/living-well",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/when-man-pulpit-falling-apart",
-      "destination": "/writing/the-pastor-nobody-checks-on",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/spouse-wishes-knew-parsonage",
-      "destination": "/writing/protecting-marriage-in-ministry",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/protecting-marriage-ministry-demands",
-      "destination": "/writing/protecting-marriage-in-ministry",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/pastors-kids-watching-what-seeing",
-      "destination": "/writing/the-pastors-kids-are-watching",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/present-at-home-mind-never-leaves",
-      "destination": "/living-well",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/when-preaching-gets-stale",
-      "destination": "/living-well",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/lead-church-decline-without-losing-hope",
-      "destination": "/living-well",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/most-dangerous-person-church-staff",
-      "destination": "/living-well",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/learned-unity-pastoring-across-cultures",
-      "destination": "/living-well",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/why-poverty-political",
-      "destination": "/living-well",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/imago-dei-means-more",
-      "destination": "/living-well",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/most-prophetic-live-differently",
-      "destination": "/living-well",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/children-poverty-prophetic-indictment",
-      "destination": "/living-well",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/church-mental-health-justice",
-      "destination": "/writing/depression-or-the-dark-night",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/church-megaproject-widows-mite",
-      "destination": "/living-well",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/what-we-owe-generations",
-      "destination": "/living-well",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/burnout-nobody-talks-about",
-      "destination": "/writing/burnout-is-not-a-badge",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/sabbath-isnt-optional",
-      "destination": "/writing/a-day-of-doing-nothing",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/your-marriage-is-ministry-too",
-      "destination": "/writing/protecting-marriage-in-ministry",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/weight-of-what-you-cant-say",
-      "destination": "/writing/the-loneliest-room-in-the-church",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/finding-your-barnabas",
-      "destination": "/writing/friendship-the-love-we-forgot",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/mission-is-not-optional",
-      "destination": "/living-well",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/hidden-pain-successful-pastor",
-      "destination": "/writing/the-pastor-nobody-checks-on",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/church-needs-you-healthy-not-busy",
-      "destination": "/writing/burnout-is-not-a-badge",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/five-biggest-mistakes-new-pastors",
-      "destination": "/leadership",
+      "destination": "https://pastorsconnectionnetwork.com",
       "permanent": true
     },
     {
       "source": "/writing/stopped-competing-church-across-town",
-      "destination": "/leadership",
+      "destination": "https://pastorsconnectionnetwork.com",
       "permanent": true
     },
     {
       "source": "/writing/slow-burn-ministry-exhaustion",
-      "destination": "/writing/burnout-is-not-a-badge",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/okay-to-see-counselor",
-      "destination": "/leadership",
+      "destination": "https://pastorsconnectionnetwork.com",
       "permanent": true
     },
     {
       "source": "/writing/anxiety-perfectionism-pastor-breaking-cycle",
-      "destination": "/leadership",
+      "destination": "https://pastorsconnectionnetwork.com",
       "permanent": true
     },
     {
       "source": "/writing/not-your-churchs-attendance-numbers",
-      "destination": "/leadership",
+      "destination": "https://pastorsconnectionnetwork.com",
       "permanent": true
     },
     {
       "source": "/writing/five-sermon-habits-shrinking-faith",
-      "destination": "/leadership",
+      "destination": "https://pastorsconnectionnetwork.com",
       "permanent": true
     },
     {
       "source": "/writing/preaching-to-room-not-there-yet",
-      "destination": "/writing/preaching-to-a-divided-room",
+      "destination": "/writing?section=faith-and-power",
       "permanent": true
     },
     {
       "source": "/writing/metrics-tell-church-healthy",
-      "destination": "/leadership",
+      "destination": "https://pastorsconnectionnetwork.com",
       "permanent": true
     },
     {
       "source": "/writing/when-fire-someone-with-integrity",
-      "destination": "/leadership",
+      "destination": "https://pastorsconnectionnetwork.com",
       "permanent": true
     },
     {
       "source": "/writing/staff-culture-no-burnout",
-      "destination": "/leadership",
+      "destination": "https://pastorsconnectionnetwork.com",
       "permanent": true
     },
     {
       "source": "/writing/healthy-pastor-referral-network",
-      "destination": "/leadership",
+      "destination": "https://pastorsconnectionnetwork.com",
       "permanent": true
     },
     {
       "source": "/writing/three-small-churches-coplanted",
-      "destination": "/leadership",
+      "destination": "https://pastorsconnectionnetwork.com",
       "permanent": true
     },
     {
       "source": "/writing/before-launch-ministry-ask-other-church",
-      "destination": "/leadership",
+      "destination": "https://pastorsconnectionnetwork.com",
       "permanent": true
     },
     {
       "source": "/writing/white-churches-wrong-about-diversity",
-      "destination": "/leadership",
+      "destination": "https://pastorsconnectionnetwork.com",
       "permanent": true
     },
     {
       "source": "/writing/church-closures-outpacing-plants",
-      "destination": "/writing/the-numbers-behind-the-decline",
+      "destination": "/writing?section=after-christendom",
       "permanent": true
     },
     {
       "source": "/writing/talk-global-missions-moves-congregation",
-      "destination": "/writing/17-mobilizing-your-church-for-world-missions-without-a-big-budget",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/national-pastors-redefining-missionary",
-      "destination": "/leadership",
+      "destination": "https://pastorsconnectionnetwork.com",
       "permanent": true
     },
     {
       "source": "/writing/pastor-politically-divided-gospel-central",
-      "destination": "/writing/pastoring-a-captured-congregation",
+      "destination": "/writing?section=faith-and-power",
       "permanent": true
     },
     {
       "source": "/writing/when-shepherd-needs-shepherding",
-      "destination": "/writing/the-pastor-nobody-checks-on",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/loneliness-of-leadership",
-      "destination": "/writing/the-loneliest-room-in-the-church",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/delegation-is-not-weakness",
-      "destination": "/leadership",
+      "destination": "https://pastorsconnectionnetwork.com",
       "permanent": true
     },
     {
       "source": "/writing/vision-without-community-fantasy",
-      "destination": "/leadership",
+      "destination": "https://pastorsconnectionnetwork.com",
       "permanent": true
     },
     {
       "source": "/writing/pastors-authority-relational",
-      "destination": "/leadership",
+      "destination": "https://pastorsconnectionnetwork.com",
       "permanent": true
     },
     {
       "source": "/writing/conflict-is-not-failure",
-      "destination": "/leadership",
+      "destination": "https://pastorsconnectionnetwork.com",
       "permanent": true
     },
     {
       "source": "/writing/building-leadership-team",
-      "destination": "/leadership",
+      "destination": "https://pastorsconnectionnetwork.com",
       "permanent": true
     },
     {
       "source": "/writing/danger-pastoral-isolation",
-      "destination": "/writing/the-pastor-nobody-checks-on",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/courage-to-be-different",
-      "destination": "/leadership",
+      "destination": "https://pastorsconnectionnetwork.com",
       "permanent": true
     },
     {
       "source": "/writing/collaboration-across-denominations",
-      "destination": "/leadership",
+      "destination": "https://pastorsconnectionnetwork.com",
       "permanent": true
     },
     {
       "source": "/writing/church-response-to-culture",
-      "destination": "/leadership",
+      "destination": "https://pastorsconnectionnetwork.com",
       "permanent": true
     },
     {
       "source": "/writing/interior-life-of-pastor",
-      "destination": "/leadership",
+      "destination": "https://pastorsconnectionnetwork.com",
       "permanent": true
     },
     {
       "source": "/writing/art-of-saying-no-without-guilt",
-      "destination": "/theology",
+      "destination": "/study",
       "permanent": true
     },
     {
       "source": "/writing/learned-from-pastor-disagrees",
-      "destination": "/theology",
+      "destination": "/study",
       "permanent": true
     },
     {
       "source": "/writing/preach-same-gospel-different-people",
-      "destination": "/theology",
+      "destination": "/study",
       "permanent": true
     },
     {
       "source": "/writing/widow-orphan-stranger",
-      "destination": "/theology",
+      "destination": "/study",
       "permanent": true
     },
     {
       "source": "/writing/stranger-at-gate",
-      "destination": "/theology",
+      "destination": "/study",
       "permanent": true
     },
     {
       "source": "/writing/greek-original-language-matters",
-      "destination": "/writing/what-the-original-audience-heard",
+      "destination": "/writing?section=bible-in-its-world",
       "permanent": true
     },
     {
       "source": "/writing/church-fathers-not-boring",
-      "destination": "/theology",
+      "destination": "/study",
       "permanent": true
     },
     {
       "source": "/writing/atonement-more-than-one-model",
-      "destination": "/writing/why-did-jesus-have-to-die",
+      "destination": "/study/bible/doctrines",
       "permanent": true
     },
     {
       "source": "/writing/kingdom-of-god-not-what-you-think",
-      "destination": "/theology",
+      "destination": "/study",
       "permanent": true
     },
     {
       "source": "/writing/holy-spirit-not-feeling",
-      "destination": "/writing/what-does-the-holy-spirit-do",
+      "destination": "/study/bible/doctrines",
       "permanent": true
     },
     {
       "source": "/writing/sin-not-just-what-you-do",
-      "destination": "/writing/what-went-wrong",
+      "destination": "/study/bible/doctrines",
       "permanent": true
     },
     {
       "source": "/writing/incarnation-changes-everything",
-      "destination": "/writing/why-the-incarnation-matters",
+      "destination": "/study/bible/doctrines",
       "permanent": true
     },
     {
       "source": "/writing/prayer-is-not-optional",
-      "destination": "/writing/how-do-you-actually-pray",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/spiritual-disciplines-for-pastors",
-      "destination": "/theology",
+      "destination": "/study",
       "permanent": true
     },
     {
       "source": "/writing/the-examined-life",
-      "destination": "/theology",
+      "destination": "/study",
       "permanent": true
     },
     {
       "source": "/writing/repentance-and-renewal",
-      "destination": "/writing/why-christians-confess-out-loud",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/poor-not-ministry",
-      "destination": "/theology",
+      "destination": "/study",
       "permanent": true
     },
     {
       "source": "/writing/sabbatical-why-church-should-require",
-      "destination": "/leadership",
+      "destination": "https://pastorsconnectionnetwork.com",
       "permanent": true
     },
     {
       "source": "/writing/difference-tired-and-done",
-      "destination": "/writing/why-pastors-quit",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/eighty-percent-churches-plateaued",
-      "destination": "/writing/the-numbers-behind-the-decline",
+      "destination": "/writing?section=after-christendom",
       "permanent": true
     },
     {
       "source": "/writing/revitalize-or-replant",
-      "destination": "/leadership",
+      "destination": "https://pastorsconnectionnetwork.com",
       "permanent": true
     },
     {
       "source": "/writing/give-feedback-changes-behavior",
-      "destination": "/leadership",
+      "destination": "https://pastorsconnectionnetwork.com",
       "permanent": true
     },
     {
       "source": "/writing/young-adults-coming-back-church",
-      "destination": "/leadership",
+      "destination": "https://pastorsconnectionnetwork.com",
       "permanent": true
     },
     {
       "source": "/writing/scandals-teaching-accountability",
-      "destination": "/leadership",
+      "destination": "https://pastorsconnectionnetwork.com",
       "permanent": true
     },
     {
       "source": "/writing/talk-politics-pulpit-without-destroying",
-      "destination": "/writing/preaching-to-a-divided-room",
+      "destination": "/writing?section=faith-and-power",
       "permanent": true
     },
     {
       "source": "/writing/church-split-surviving-learning-forward",
-      "destination": "/leadership",
+      "destination": "https://pastorsconnectionnetwork.com",
       "permanent": true
     },
     {
       "source": "/writing/city-wide-church-together",
-      "destination": "/leadership",
+      "destination": "https://pastorsconnectionnetwork.com",
       "permanent": true
     },
     {
       "source": "/writing/unreached-people-groups-closest-to-you",
-      "destination": "/leadership",
+      "destination": "https://pastorsconnectionnetwork.com",
       "permanent": true
     },
     {
       "source": "/writing/mission-sending-culture-never-sent",
-      "destination": "/writing/17-mobilizing-your-church-for-world-missions-without-a-big-budget",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/unity-without-uniformity",
-      "destination": "/disruption",
+      "destination": "/writing?section=faith-and-power",
       "permanent": true
     },
     {
       "source": "/writing/your-city-is-mission-field",
-      "destination": "/writing/what-a-christian-owes-the-city",
+      "destination": "/writing?section=after-christendom",
       "permanent": true
     },
     {
@@ -750,34 +756,23 @@
     },
     {
       "source": "/resources-for-pastors",
-      "destination": "/for-pastors",
+      "destination": "https://pastorsconnectionnetwork.com",
       "permanent": true
     },
     {
       "source": "/after-christendom",
-      "destination": "/babylon",
+      "destination": "/writing?section=after-christendom",
       "permanent": true
     },
     {
       "source": "/after-christendom/thank-you",
-      "destination": "/babylon",
+      "destination": "/books",
       "permanent": true
     },
     {
       "source": "/lead-magnets/:magnetId",
       "destination": "/resources",
       "permanent": false
-    },
-    {
-      "source": "/(.*)",
-      "has": [
-        {
-          "type": "host",
-          "value": "livewellbyjamesbell.co"
-        }
-      ],
-      "destination": "https://www.livewellbyjamesbell.co/$1",
-      "permanent": true
     },
     {
       "source": "/read",
@@ -1022,6 +1017,181 @@
     {
       "source": "/writing/parenting-when-your-child-doubts-or-walks-away",
       "destination": "/parenting",
+      "permanent": true
+    },
+    {
+      "source": "/explore",
+      "destination": "/writing",
+      "permanent": true
+    },
+    {
+      "source": "/library",
+      "destination": "/writing",
+      "permanent": true
+    },
+    {
+      "source": "/article-collections",
+      "destination": "/writing",
+      "permanent": true
+    },
+    {
+      "source": "/reading-paths",
+      "destination": "/writing",
+      "permanent": true
+    },
+    {
+      "source": "/pathways",
+      "destination": "/writing",
+      "permanent": true
+    },
+    {
+      "source": "/pillars",
+      "destination": "/writing",
+      "permanent": true
+    },
+    {
+      "source": "/map",
+      "destination": "/writing",
+      "permanent": true
+    },
+    {
+      "source": "/living-well",
+      "destination": "/writing",
+      "permanent": true
+    },
+    {
+      "source": "/exile",
+      "destination": "/writing?section=after-christendom",
+      "permanent": true
+    },
+    {
+      "source": "/post-christian",
+      "destination": "/writing?section=after-christendom",
+      "permanent": true
+    },
+    {
+      "source": "/justice",
+      "destination": "/writing",
+      "permanent": true
+    },
+    {
+      "source": "/justice/posture",
+      "destination": "/writing",
+      "permanent": true
+    },
+    {
+      "source": "/justice/glossary",
+      "destination": "/writing",
+      "permanent": true
+    },
+    {
+      "source": "/justice/topic/:slug",
+      "destination": "/writing",
+      "permanent": true
+    },
+    {
+      "source": "/lament",
+      "destination": "/studyguides/lament",
+      "permanent": true
+    },
+    {
+      "source": "/disruption",
+      "destination": "/writing?section=faith-and-power",
+      "permanent": true
+    },
+    {
+      "source": "/disruption/posture",
+      "destination": "/writing?section=faith-and-power",
+      "permanent": true
+    },
+    {
+      "source": "/disruption/glossary",
+      "destination": "/writing?section=faith-and-power",
+      "permanent": true
+    },
+    {
+      "source": "/disruption/questions",
+      "destination": "/writing?section=faith-and-power",
+      "permanent": true
+    },
+    {
+      "source": "/disruption/topic/:slug",
+      "destination": "/writing?section=faith-and-power",
+      "permanent": true
+    },
+    {
+      "source": "/capture-by-the-right",
+      "destination": "/writing?section=faith-and-power",
+      "permanent": true
+    },
+    {
+      "source": "/capture-by-the-left",
+      "destination": "/writing?section=faith-and-power",
+      "permanent": true
+    },
+    {
+      "source": "/reading-scripture-past-our-politics",
+      "destination": "/writing?section=faith-and-power",
+      "permanent": true
+    },
+    {
+      "source": "/theology",
+      "destination": "/study",
+      "permanent": true
+    },
+    {
+      "source": "/theology/paths",
+      "destination": "/study",
+      "permanent": true
+    },
+    {
+      "source": "/historic-faith",
+      "destination": "/study",
+      "permanent": true
+    },
+    {
+      "source": "/theology/biblical",
+      "destination": "/study/bible/story",
+      "permanent": true
+    },
+    {
+      "source": "/theology/hermeneutics",
+      "destination": "/study/bible/guides",
+      "permanent": true
+    },
+    {
+      "source": "/theology/explorer",
+      "destination": "/study/bible/doctrines",
+      "permanent": true
+    },
+    {
+      "source": "/faq",
+      "destination": "/answers",
+      "permanent": true
+    },
+    {
+      "source": "/honest-questions",
+      "destination": "/answers",
+      "permanent": true
+    },
+    {
+      "source": "/doubt",
+      "destination": "/answers",
+      "permanent": true
+    },
+    {
+      "source": "/substack",
+      "destination": "/subscribe",
+      "permanent": true
+    },
+    {
+      "source": "/work-with-james",
+      "destination": "/speaking",
+      "permanent": true
+    },
+    {
+      "source": "/connect",
+      "destination": "/about",
       "permanent": true
     }
   ],

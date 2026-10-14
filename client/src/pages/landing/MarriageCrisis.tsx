@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { ShelfReadingList } from "@/components/ShelfReadingList";
 import CrisisFaq, { faqPageSchema } from "@/components/CrisisFaq";
 import { LandingSignup } from "@/components/LandingSignup";
 
@@ -10,6 +11,15 @@ const ARTICLES = [
   { title: "Fighting Fair Is Not Enough", slug: "fighting-fair-is-not-enough" },
   { title: "What Silence Actually Costs a Marriage", slug: "what-silence-costs-a-marriage" },
   { title: "Forgiveness Without Pretending", slug: "forgiveness-without-pretending" },
+];
+
+// Live care resources for the same need, listed when none of the essays
+// above is on the public shelf (components/ShelfReadingList).
+const WHILE_OFF_SHELF = [
+  { title: "Eight weeks toward each other", href: "/plans/marriage" },
+  { title: "Marriage: a Bible study on covenant love", href: "/studyguides/marriage" },
+  { title: "Forgiveness: a Bible study on the hardest word", href: "/studyguides/forgiveness" },
+  { title: "Where your marriage is strong and where it is strained", href: "/tools/marriage-assessment" },
 ];
 
 const FAQ_ITEMS = [
@@ -67,17 +77,8 @@ export default function MarriageCrisis() {
       <section style={{ background: "var(--bone-warm)", padding: "80px 24px" }}>
         <div style={{ maxWidth: "720px", margin: "0 auto" }}>
           <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "24px" }}>START READING</p>
-          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--ink)", marginBottom: "32px" }}>Essays for the marriage nobody posts about</h2>
-          <div style={{ display: "flex", flexDirection: "column" }}>
-            {ARTICLES.map((a) => (
-              <Link key={a.slug} href={`/writing/${a.slug}`} style={{ textDecoration: "none" }}>
-                <div style={{ padding: "20px 0", borderBottom: "1px solid rgba(0,0,0,0.08)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                  <span style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 400, color: "var(--ink)" }}>{a.title}</span>
-                  <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--mustard-text)" }}>Read</span>
-                </div>
-              </Link>
-            ))}
-          </div>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--ink)", marginBottom: "32px" }}>For the marriage nobody posts about</h2>
+          <ShelfReadingList essays={ARTICLES} fallback={WHILE_OFF_SHELF} />
         </div>
       </section>
 

@@ -4,6 +4,7 @@ import { ArrowRight } from "lucide-react";
 import Layout from "@/components/Layout";
 import { StatementBand } from "@/components/EditorialBlocks";
 import { trpc } from "@/lib/trpc";
+import { filterPublicPosts } from "@/lib/shelf";
 import { PILLAR_BY_ID, pillarForPost, pillarUrl, type Pillar } from "@/lib/taxonomy";
 import { getReadingPathBySlug, availableCount } from "@/lib/readingPaths";
 import ToolStrip, { type ToolStripItem } from "@/components/ToolStrip";
@@ -59,7 +60,7 @@ export default function PillarLanding({
 }) {
   const postsQuery = trpc.posts.listPublished.useQuery();
   const essayCount = useMemo(
-    () => (postsQuery.data ?? []).filter((p) => pillarForPost(p)?.id === pillar.id).length,
+    () => filterPublicPosts(postsQuery.data ?? []).filter((p) => pillarForPost(p)?.id === pillar.id).length,
     [postsQuery.data, pillar.id],
   );
   const path = pathSlug ? getReadingPathBySlug(pathSlug) : undefined;
@@ -150,7 +151,7 @@ export default function PillarLanding({
             )}
           </div>
           <div style={{ flexBasis: "100%", marginTop: "1.2rem" }}>
-            <Link href="/pillars" style={goldLink}>All six pillars</Link>
+            <Link href="/writing" style={goldLink}>All essays</Link>
           </div>
         </div>
       </section>

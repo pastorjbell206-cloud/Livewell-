@@ -228,7 +228,7 @@ export default function StartHereQuiz() {
                 {[
                   { label: "Marriage", href: "/marriage" },
                   { label: "Parenting", href: "/parenting" },
-                  { label: "Doubt", href: "/doubt" },
+                  { label: "Doubt", href: "/answers" },
                   { label: "Disciple someone", href: "/table" },
                   { label: "Grief", href: "/plans/grief" },
                   { label: "Pastoring", href: "/for-pastors" },

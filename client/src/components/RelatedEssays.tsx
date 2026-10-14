@@ -2,16 +2,15 @@
  * RelatedEssays — a quiet "Keep reading" list of other essays, filed beside the
  * KeepReadingBook card so a reader leaves with both another essay and a book.
  *
- * The picks are STATIC and self-contained. Every slug below is a real /writing
- * essay verified against client/src/lib/pillar-assignments.ts (the filing
- * registry) — this component fetches nothing, so every link resolves and the
- * card never depends on the network settling. We resolve the current post to
- * its six-pillar id via pillarForPost, offer that pillar's cornerstones (minus
- * the current essay, de-duplicated), and top up from a cross-pillar cornerstone
- * set when a pillar is thin — so the reader always gets three to four.
+ * The picks come only from the public essay shelf (lib/shelf.ts): essays from
+ * the same section first, then the shelf's "Start with these", then the rest
+ * of the shelf in order. Nothing retired is ever offered. The component
+ * fetches nothing, so the card never depends on the network settling, and
+ * every link resolves to an essay that is on the shelf.
  */
 import { Link } from "wouter";
-import { pillarForPost } from "@/lib/taxonomy";
+import { pillarToTrack } from "@/lib/taxonomy";
+import { START_WITH, liveShelfEssays, nearestSection, overrideMeta, shelfEntry, type ShelfEssay } from "@/lib/shelf";
 
 interface PostLike {
   slug?: string | null;
@@ -21,72 +20,30 @@ interface PostLike {
 interface RelatedItem {
   slug: string;
   title: string;
-  /** One verified line lifted from the essay's own excerpt; may be empty. */
+  /** The shelf's display line for the essay; may be empty. */
   blurb: string;
 }
 
-const CORNERSTONES: Record<number, RelatedItem[]> = {
-  1: [
-    { slug: "what-christian-nationalism-is-and-is-not", title: "What Christian Nationalism Is and What It Is Not", blurb: "The phrase has become a weapon thrown in both directions, and almost nobody using it has stopped to ask what it actually names." },
-    { slug: "flags-in-the-sanctuary", title: "Flags in the Sanctuary: A Theology of the Nation", blurb: "The flag stands on most American platforms because nobody put it there on purpose, and that is precisely the problem." },
-    { slug: "whose-kingdom-jesus-and-political-power", title: "Whose Kingdom? Jesus and Political Power", blurb: "Jesus was offered every kingdom of the world by someone who actually had them to give, and what he did with the offer settles the question we keep reopening." },
-    { slug: "silence-abuse-church", title: "The Silence About Abuse in the Church", blurb: "The church's institutional protection of abusers and silencing of victims is one of its most serious failures and most urgent moral crises." },
-  ],
-  2: [
-    { slug: "is-poverty-political-the-bibles-answer", title: "Is Poverty Political? The Bible's Uncomfortable Answer", blurb: "The question assumes poverty is either a private misfortune or a partisan football, and the prophets refuse both with a word our politics has no translation for." },
-  ],
-  3: [
-    { slug: "how-to-read-the-bible-without-making-it-say-what-you-want", title: "How to Read the Bible Without Making It Say What You Want", blurb: "Two sincere readers open the same page and find opposite gods." },
-    { slug: "what-the-gospel-actually-is", title: "What the Gospel Actually Is", blurb: "The gospel is not advice about how to be good or how to feel loved." },
-    { slug: "the-trinity-is-not-optional", title: "The Trinity Is Not Optional", blurb: "We treat the Trinity as the church's embarrassing arithmetic." },
-    { slug: "the-council-of-nicaea-what-was-decided-in-325", title: "The Council of Nicaea: What Was Actually Decided in 325", blurb: "Nicaea did not invent the divinity of Jesus or pick the books of the Bible." },
-    { slug: "what-is-biblical-justice-mishpat-and-tsedaqah", title: "What Is Biblical Justice? Mishpat and Tsedaqah", blurb: "Biblical justice is two Hebrew words held together, and the church keeps tearing them apart." },
-    { slug: "the-image-of-god-and-the-lie-of-race", title: "The Image of God and the Lie of Race", blurb: "Race is a recent invention dressed up as an ancient fact, and the church helped sew the costume." },
-  ],
-  4: [
-    { slug: "the-atheist-in-the-pulpit", title: "The Atheist in the Pulpit", blurb: "I was not a lapsed churchgoer who wandered back." },
-    { slug: "excavation-not-demolition", title: "Excavation, Not Demolition", blurb: "Demolition and excavation use the same tools — the pry bar, the shovel, the refusal to respect a wall just because it is standing." },
-    { slug: "christendom-is-ending-christianity-is-not", title: "Christendom Is Ending. Christianity Is Not.", blurb: "The arrangement that made Christianity the default religion of the West is dying, and many believers are grieving the wrong thing." },
-    { slug: "the-end-of-home-field-advantage", title: "The End of Home-Field Advantage", blurb: "For fifteen centuries the church evangelized a culture that already half believed — the vocabulary pre-taught, the guilt pre-aimed, the God assumed." },
-    { slug: "two-kingdoms-faith-and-state", title: "Two Kingdoms: How Christians Relate Faith and State", blurb: "The old teaching that there are two kingdoms has been used both to silence the church and to baptize the state, and it was meant to do neither." },
-  ],
-  5: [
-    { slug: "how-to-lead-without-losing-your-soul", title: "How to Lead Without Losing Your Soul", blurb: "A man can gain a thriving church and lose the very soul that was supposed to lead it, and most of the practices we call leadership are how he does it." },
-    { slug: "the-interior-life-of-the-pastor", title: "The Interior Life of the Pastor", blurb: "A pastor can handle the things of God all week and starve to death spiritually, because handling is not the same as eating." },
-  ],
-  6: [
-    { slug: "the-machine-that-forms-you", title: "The Machine That Forms You", blurb: "Everyone is arguing about what the machines will do to our jobs, our schools, our elections." },
-    { slug: "the-hour-that-forms-the-week", title: "The Hour That Forms the Week", blurb: "Every church has a liturgy, including the church that says it does not." },
-    { slug: "covenant-vs-contract-what-marriage-is", title: "Covenant vs. Contract: What Marriage Actually Is", blurb: "A contract protects you from the person across the table, and a covenant binds you to them, which is why the modern wedding is a contract dressed in the language of a covenant it no longer believes." },
-    { slug: "how-to-raise-children-in-the-faith", title: "How to Raise Children in the Faith Without Crushing Them", blurb: "The opposite of crushing a child into the faith is not letting them choose freely from a neutral distance, because there is no neutral distance, and the home is forming them whether you intend it or not." },
-    { slug: "what-fatherhood-requires", title: "What Fatherhood Requires", blurb: "We have spent a generation telling fathers to be present, and presence is necessary and nowhere near sufficient, because a man can be in the room and still hand his children nothing." },
-    { slug: "what-the-sabbath-is-and-why-you-need-it", title: "What the Sabbath Is and Why You Need It", blurb: "" },
-  ],
-};
-
-const FALLBACK: RelatedItem[] = [
-    { slug: "the-atheist-in-the-pulpit", title: "The Atheist in the Pulpit", blurb: "I was not a lapsed churchgoer who wandered back." },
-    { slug: "how-to-read-the-bible-without-making-it-say-what-you-want", title: "How to Read the Bible Without Making It Say What You Want", blurb: "Two sincere readers open the same page and find opposite gods." },
-    { slug: "christendom-is-ending-christianity-is-not", title: "Christendom Is Ending. Christianity Is Not.", blurb: "The arrangement that made Christianity the default religion of the West is dying, and many believers are grieving the wrong thing." },
-    { slug: "covenant-vs-contract-what-marriage-is", title: "Covenant vs. Contract: What Marriage Actually Is", blurb: "A contract protects you from the person across the table, and a covenant binds you to them, which is why the modern wedding is a contract dressed in the language of a covenant it no longer believes." },
-];
-
-/** Up to four other essays, current excluded, de-duped, topped up when thin. */
-function pickRelated(post: PostLike): RelatedItem[] {
+/** Up to four other shelf essays, current excluded: same section, then start-with, then the rest. */
+export function pickRelated(post: PostLike): RelatedItem[] {
   const current = (post.slug ?? "").trim();
-  const pillarId = pillarForPost(post)?.id ?? 5;
+  const live = liveShelfEssays();
+  const section =
+    shelfEntry(current)?.section ?? nearestSection(current, pillarToTrack(post.pillar))?.slug ?? null;
+  const ordered = [
+    ...live.filter((e) => e.section === section),
+    ...START_WITH.map((slug) => live.find((e) => e.slug === slug)).filter((e): e is ShelfEssay => !!e),
+    ...live,
+  ];
   const seen = new Set<string>([current]);
   const out: RelatedItem[] = [];
-  const take = (list: RelatedItem[]) => {
-    for (const item of list) {
-      if (out.length >= 4) break;
-      if (!item.slug || seen.has(item.slug)) continue;
-      seen.add(item.slug);
-      out.push(item);
-    }
-  };
-  take(CORNERSTONES[pillarId] ?? []);
-  if (out.length < 3) take(FALLBACK);
+  for (const e of ordered) {
+    if (out.length >= 4) break;
+    if (seen.has(e.slug)) continue;
+    seen.add(e.slug);
+    const rewrite = overrideMeta(e.slug);
+    out.push({ slug: e.slug, title: rewrite?.title || e.title, blurb: rewrite ? rewrite.excerpt : e.blurb ?? "" });
+  }
   return out;
 }
 

@@ -22,7 +22,10 @@ article a, .prose a {
   text-decoration: none;
   background-image: linear-gradient(var(--mustard), var(--mustard));
   background-repeat: no-repeat;
-  background-position: 0 calc(100% - 0.5em);
+  /* 100% = foot of the inline box. The old calc(100% - 0.5em) assumed the
+     background spans the 1.7 line box; it spans the glyph box, so the line
+     struck through the text (the pillar kicker, the contents list). */
+  background-position: 0 100%;
   background-size: 100% 1px;
 }
 article a:hover, .prose a:hover { background-size: 100% 2px; }

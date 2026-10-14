@@ -2,7 +2,7 @@
  * The Answers hub data (/answers). Each entry is a real reader question whose
  * H2 is the query itself, answered in three tight paragraphs distilled from
  * the essay that carries the full argument, laddering short answer → essay →
- * book. The paragraphs are compressions of their source essays — no claim,
+ * book (where a book on the shelf takes the question up). The paragraphs are compressions of their source essays — no claim,
  * citation, or verse appears here that is not in the essay. Edit the answer
  * by editing its essay first; this layer only surfaces it.
  */
@@ -16,9 +16,12 @@ export interface Answer {
   /** The essay that makes the argument in full. */
   essaySlug: string;
   essayTitle: string;
-  /** The book that carries it the rest of the way. */
-  bookTitle: string;
-  bookHref: string;
+  /**
+   * The book that carries it the rest of the way: a title on the /books shelf
+   * (lib/bookShelf.ts) that takes up this question, or absent when none does.
+   */
+  bookTitle?: string;
+  bookHref?: string;
 }
 
 export const ANSWERS: Answer[] = [
@@ -32,8 +35,8 @@ export const ANSWERS: Answer[] = [
     ],
     essaySlug: "did-the-resurrection-happen",
     essayTitle: "Did the Resurrection Actually Happen?",
-    bookTitle: "The Reliability of Scripture",
-    bookHref: "/books/the-reliability-of-scripture",
+    bookTitle: "Believe",
+    bookHref: "/books/believe",
   },
   {
     slug: "why-would-anyone-trust-the-bible",
@@ -45,8 +48,8 @@ export const ANSWERS: Answer[] = [
     ],
     essaySlug: "why-trust-the-bible",
     essayTitle: "Why Would Anyone Trust the Bible?",
-    bookTitle: "The Reliability of Scripture",
-    bookHref: "/books/the-reliability-of-scripture",
+    bookTitle: "Believe",
+    bookHref: "/books/believe",
   },
   {
     slug: "if-god-is-good-why-suffering",
@@ -58,8 +61,8 @@ export const ANSWERS: Answer[] = [
     ],
     essaySlug: "if-god-is-good-why-suffering",
     essayTitle: "If God Is Good, Why Is There So Much Suffering?",
-    bookTitle: "Prayer in the Dark",
-    bookHref: "/prayer-in-the-dark",
+    bookTitle: "Believe",
+    bookHref: "/books/believe",
   },
   {
     slug: "what-if-christianity-is-wrong",
@@ -71,8 +74,8 @@ export const ANSWERS: Answer[] = [
     ],
     essaySlug: "what-if-we-are-wrong",
     essayTitle: "What If Christianity Is Wrong?",
-    bookTitle: "Born Again From Atheism",
-    bookHref: "/born-again-from-atheism",
+    bookTitle: "Believe",
+    bookHref: "/books/believe",
   },
   {
     slug: "was-jesus-just-a-good-teacher",
@@ -84,8 +87,8 @@ export const ANSWERS: Answer[] = [
     ],
     essaySlug: "was-jesus-just-a-good-teacher",
     essayTitle: "Was Jesus Really Just a Good Teacher?",
-    bookTitle: "The Scandal of the Cross",
-    bookHref: "/the-scandal-of-the-cross",
+    bookTitle: "Believe",
+    bookHref: "/books/believe",
   },
   {
     slug: "do-i-have-to-choose-between-faith-and-science",
@@ -97,8 +100,8 @@ export const ANSWERS: Answer[] = [
     ],
     essaySlug: "faith-and-science",
     essayTitle: "Do You Have to Choose Between Faith and Science?",
-    bookTitle: "Born Again From Atheism",
-    bookHref: "/born-again-from-atheism",
+    bookTitle: "Believe",
+    bookHref: "/books/believe",
   },
   {
     slug: "is-it-okay-to-be-angry-at-god",
@@ -110,8 +113,6 @@ export const ANSWERS: Answer[] = [
     ],
     essaySlug: "what-psalms-teach-about-anger-at-god",
     essayTitle: "Is It Okay to Be Angry at God?",
-    bookTitle: "Prayer in the Dark",
-    bookHref: "/prayer-in-the-dark",
   },
   {
     slug: "can-you-be-a-christian-without-church",
@@ -123,8 +124,6 @@ export const ANSWERS: Answer[] = [
     ],
     essaySlug: "can-you-be-a-christian-alone",
     essayTitle: "Can You Be a Christian on Your Own?",
-    bookTitle: "The Body You Left",
-    bookHref: "/the-body-you-left",
   },
   {
     slug: "done-with-church-but-not-jesus",
@@ -136,8 +135,6 @@ export const ANSWERS: Answer[] = [
     ],
     essaySlug: "done-with-church-not-jesus",
     essayTitle: "What If You're Done With Church but Not With Jesus?",
-    bookTitle: "The Body You Left",
-    bookHref: "/the-body-you-left",
   },
   {
     slug: "what-happens-after-deconstruction",
@@ -149,8 +146,6 @@ export const ANSWERS: Answer[] = [
     ],
     essaySlug: "deconstruction-without-reconstruction",
     essayTitle: "What Happens After You Deconstruct Your Faith?",
-    bookTitle: "Faith After Deconstruction",
-    bookHref: "/faith-after-deconstruction",
   },
   {
     slug: "how-can-god-be-three-and-one",
@@ -162,8 +157,6 @@ export const ANSWERS: Answer[] = [
     ],
     essaySlug: "the-trinity-plainly",
     essayTitle: "How Can God Be Three and One?",
-    bookTitle: "Why Not What",
-    bookHref: "/why-not-what",
   },
   {
     slug: "should-a-christian-follow-a-political-party",
@@ -188,8 +181,6 @@ export const ANSWERS: Answer[] = [
     ],
     essaySlug: "what-the-bible-says-about-money",
     essayTitle: "What the Bible Actually Says About Money",
-    bookTitle: "Where Your Treasure Is",
-    bookHref: "/where-your-treasure-is",
   },
   {
     slug: "what-does-the-bible-say-about-anxiety",
@@ -201,8 +192,6 @@ export const ANSWERS: Answer[] = [
     ],
     essaySlug: "what-jesus-said-about-worry-and-money",
     essayTitle: "What Jesus Said About Worry and Money",
-    bookTitle: "Consider the Birds",
-    bookHref: "/consider-the-birds",
   },
   {
     slug: "when-your-teenager-says-they-dont-believe",
@@ -214,8 +203,6 @@ export const ANSWERS: Answer[] = [
     ],
     essaySlug: "teenager-losing-faith",
     essayTitle: "When Your Teenager Says They Don't Believe Anymore",
-    bookTitle: "Raising Believers",
-    bookHref: "/books/raising-believers",
   },
   {
     slug: "is-jesus-the-only-way",
@@ -227,8 +214,8 @@ export const ANSWERS: Answer[] = [
     ],
     essaySlug: "is-jesus-really-the-only-way",
     essayTitle: "Is Jesus Really the Only Way?",
-    bookTitle: "Born Again From Atheism",
-    bookHref: "/born-again-from-atheism",
+    bookTitle: "Believe",
+    bookHref: "/books/believe",
   },
   {
     slug: "does-god-actually-exist",
@@ -240,8 +227,8 @@ export const ANSWERS: Answer[] = [
     ],
     essaySlug: "does-god-actually-exist",
     essayTitle: "Does God Actually Exist?",
-    bookTitle: "Born Again From Atheism",
-    bookHref: "/born-again-from-atheism",
+    bookTitle: "Believe",
+    bookHref: "/books/believe",
   },
   {
     slug: "what-about-those-who-never-heard",
@@ -253,8 +240,8 @@ export const ANSWERS: Answer[] = [
     ],
     essaySlug: "what-about-those-who-never-heard",
     essayTitle: "What About Those Who Never Heard?",
-    bookTitle: "Born Again From Atheism",
-    bookHref: "/born-again-from-atheism",
+    bookTitle: "Believe",
+    bookHref: "/books/believe",
   },
   {
     slug: "can-you-be-good-without-god",
@@ -266,8 +253,8 @@ export const ANSWERS: Answer[] = [
     ],
     essaySlug: "can-you-be-good-without-god",
     essayTitle: "Can You Be Good Without God?",
-    bookTitle: "Born Again From Atheism",
-    bookHref: "/born-again-from-atheism",
+    bookTitle: "Believe",
+    bookHref: "/books/believe",
   },
   {
     slug: "is-faith-irrational",
@@ -279,8 +266,8 @@ export const ANSWERS: Answer[] = [
     ],
     essaySlug: "is-faith-irrational",
     essayTitle: "Is Believing Anything on Faith Irrational?",
-    bookTitle: "Born Again From Atheism",
-    bookHref: "/born-again-from-atheism",
+    bookTitle: "Believe",
+    bookHref: "/books/believe",
   },
   {
     slug: "are-miracles-believable",
@@ -292,8 +279,8 @@ export const ANSWERS: Answer[] = [
     ],
     essaySlug: "are-miracles-believable",
     essayTitle: "Are Miracles Believable?",
-    bookTitle: "The Scandal of the Cross",
-    bookHref: "/the-scandal-of-the-cross",
+    bookTitle: "Believe",
+    bookHref: "/books/believe",
   },
   {
     slug: "did-god-command-genocide",
@@ -305,8 +292,8 @@ export const ANSWERS: Answer[] = [
     ],
     essaySlug: "did-god-command-genocide",
     essayTitle: "Did God Command Genocide?",
-    bookTitle: "The Reliability of Scripture",
-    bookHref: "/books/the-reliability-of-scripture",
+    bookTitle: "Believe",
+    bookHref: "/books/believe",
   },
   {
     slug: "why-didnt-the-bible-just-ban-slavery",
@@ -318,8 +305,8 @@ export const ANSWERS: Answer[] = [
     ],
     essaySlug: "why-didnt-the-bible-ban-slavery",
     essayTitle: "Why Didn't the Bible Just Ban Slavery?",
-    bookTitle: "The Reliability of Scripture",
-    bookHref: "/books/the-reliability-of-scripture",
+    bookTitle: "The Monster in the Mirror",
+    bookHref: "/books/the-monster-in-the-mirror",
   },
   {
     slug: "is-faith-just-wishful-thinking",
@@ -331,8 +318,8 @@ export const ANSWERS: Answer[] = [
     ],
     essaySlug: "is-faith-just-wishful-thinking",
     essayTitle: "Is Faith Just Wishful Thinking?",
-    bookTitle: "Born Again From Atheism",
-    bookHref: "/born-again-from-atheism",
+    bookTitle: "Believe",
+    bookHref: "/books/believe",
   },
   {
     slug: "what-did-the-new-atheists-get-right",
@@ -344,8 +331,8 @@ export const ANSWERS: Answer[] = [
     ],
     essaySlug: "what-new-atheists-got-right",
     essayTitle: "What the New Atheists Got Right",
-    bookTitle: "Born Again From Atheism",
-    bookHref: "/born-again-from-atheism",
+    bookTitle: "Believe",
+    bookHref: "/books/believe",
   },
   {
     slug: "can-life-mean-anything-without-god",
@@ -357,8 +344,8 @@ export const ANSWERS: Answer[] = [
     ],
     essaySlug: "meaning-without-god",
     essayTitle: "Can a Life Mean Anything Without God?",
-    bookTitle: "Born Again From Atheism",
-    bookHref: "/born-again-from-atheism",
+    bookTitle: "Believe",
+    bookHref: "/books/believe",
   },
   {
     slug: "christianity-and-islam-differences",
@@ -370,8 +357,8 @@ export const ANSWERS: Answer[] = [
     ],
     essaySlug: "christianity-and-islam",
     essayTitle: "What Christianity and Islam Actually Dispute",
-    bookTitle: "Born Again From Atheism",
-    bookHref: "/born-again-from-atheism",
+    bookTitle: "Believe",
+    bookHref: "/books/believe",
   },
   {
     slug: "can-you-lose-your-salvation",
@@ -383,8 +370,6 @@ export const ANSWERS: Answer[] = [
     ],
     essaySlug: "can-you-lose-your-salvation",
     essayTitle: "Can You Lose Your Salvation?",
-    bookTitle: "Faith After Deconstruction",
-    bookHref: "/faith-after-deconstruction",
   },
   {
     slug: "is-anxiety-a-spiritual-failure",
@@ -396,8 +381,6 @@ export const ANSWERS: Answer[] = [
     ],
     essaySlug: "anxiety-and-faith",
     essayTitle: "Is My Anxiety a Spiritual Failure?",
-    bookTitle: "Prayer in the Dark",
-    bookHref: "/prayer-in-the-dark",
   },
   {
     slug: "is-hell-forever-or-does-it-end",
@@ -409,8 +392,8 @@ export const ANSWERS: Answer[] = [
     ],
     essaySlug: "is-hell-eternal",
     essayTitle: "Is Hell Forever, or Does It End?",
-    bookTitle: "Heaven Is Not Your Reward",
-    bookHref: "/heaven-is-not-your-reward",
+    bookTitle: "Believe",
+    bookHref: "/books/believe",
   },
   {
     slug: "does-god-choose-us-or-do-we-choose-him",
@@ -422,8 +405,6 @@ export const ANSWERS: Answer[] = [
     ],
     essaySlug: "predestination-and-free-will",
     essayTitle: "Does God Choose Us, or Do We Choose Him?",
-    bookTitle: "Why Not What",
-    bookHref: "/why-not-what",
   },
   {
     slug: "how-should-a-christian-read-genesis-1",
@@ -435,8 +416,8 @@ export const ANSWERS: Answer[] = [
     ],
     essaySlug: "how-to-read-genesis-one",
     essayTitle: "How Should a Christian Read Genesis 1?",
-    bookTitle: "Born Again From Atheism",
-    bookHref: "/born-again-from-atheism",
+    bookTitle: "Believe",
+    bookHref: "/books/believe",
   },
   {
     slug: "what-does-the-bible-say-about-divorce-and-remarriage",
@@ -448,8 +429,6 @@ export const ANSWERS: Answer[] = [
     ],
     essaySlug: "divorce-and-remarriage",
     essayTitle: "When a Marriage Ends: Divorce, Remarriage, and Grace",
-    bookTitle: "Covenant",
-    bookHref: "/covenant",
   },
   {
     slug: "why-does-god-allow-natural-disasters",
@@ -461,8 +440,8 @@ export const ANSWERS: Answer[] = [
     ],
     essaySlug: "natural-evil-and-animal-suffering",
     essayTitle: "The Suffering God Never Ordered",
-    bookTitle: "Prayer in the Dark",
-    bookHref: "/prayer-in-the-dark",
+    bookTitle: "Believe",
+    bookHref: "/books/believe",
   },
   {
     slug: "what-makes-us-human-in-the-age-of-ai",
@@ -474,7 +453,5 @@ export const ANSWERS: Answer[] = [
     ],
     essaySlug: "personhood-in-the-age-of-ai",
     essayTitle: "What Makes Us Human in the Age of AI?",
-    bookTitle: "Ordinary Holiness",
-    bookHref: "/ordinary-holiness",
   },
 ];

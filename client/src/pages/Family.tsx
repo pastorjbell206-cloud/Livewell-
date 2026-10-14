@@ -15,6 +15,7 @@ import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { PullQuote, StatementBand, SectionArt } from "@/components/EditorialBlocks";
 import { trpc } from "@/lib/trpc";
+import { filterPublicPosts, isPublicEssayHref } from "@/lib/shelf";
 import SubjectShelf from "@/components/SubjectShelf";
 import { subjectById } from "@/lib/subjects";
 
@@ -74,7 +75,8 @@ function PostCard({ slug, title, excerpt }: { slug: string; title: string; excer
 
 export default function Family() {
   const postsQuery = trpc.posts.listPublished.useQuery();
-  const posts = postsQuery.data ?? [];
+  // Only essays on the public shelf (lib/shelf.ts); retired ones stay unlisted.
+  const posts = filterPublicPosts(postsQuery.data ?? []);
   const teen = posts.filter((p) => p.slug.startsWith("teen-"));
   const apologetics = posts.filter((p) => p.slug.startsWith("apologetics-"));
   const parentingArticles = posts.filter((p) => p.slug.startsWith("parenting-"));
@@ -220,7 +222,7 @@ export default function Family() {
               {SKEPTIC_TRACK_LIVE && (
                 <LinkCard href="/skeptic-track" title="Start here if you're a skeptic" desc="Seven essays in argument order, for anyone working out whether this is true." />
               )}
-              <LinkCard href="/doubt" title="On doubt" desc="Doubt is not the enemy of faith. What to do with the questions." />
+              <LinkCard href="/answers" title="On doubt and hard questions" desc="Doubt is not the enemy of faith. Short, honest answers to the questions." />
             </div>
           )}
         </div>
@@ -249,7 +251,9 @@ export default function Family() {
             <LinkCard href="/tools/parenting-verses" title="Parenting Bible verses" desc="Scripture for fear, anger, identity, obedience, screens, and doubt — each with a short note for the parent." />
             <LinkCard href="/parenting" title="On parenting" desc="Essays on raising children in the faith without crushing them." />
             <LinkCard href="/tools/parenting-guide" title="Parenting stage guide" desc="Age-specific guidance from toddlers to young adults, and one practice to start this week." />
-            <LinkCard href="/writing/what-fatherhood-requires" title="What fatherhood requires" desc="On the inheritance you pass down, and the one you choose to break." />
+            {isPublicEssayHref("/writing/what-fatherhood-requires") && (
+              <LinkCard href="/writing/what-fatherhood-requires" title="What fatherhood requires" desc="On the inheritance you pass down, and the one you choose to break." />
+            )}
             <LinkCard href="/life/raising-children-in-grace" title="Raising children in grace" desc="The deep guide: discipline that reaches the heart, faith, screens, and the teen years. You cannot save your children, and you were never meant to." />
             <LinkCard href="/life/the-home-and-the-family" title="The home and the family" desc="The household as a school of grace: the table, family worship, and the open door." />
           </div>
@@ -264,7 +268,9 @@ export default function Family() {
             {marriageArticles.map((p) => <PostCard key={p.slug} slug={p.slug} title={p.title} excerpt={p.excerpt} />)}
             <LinkCard href="/marriage" title="On marriage" desc="Covenant, not contract. Marriage through the long middle." />
             <LinkCard href="/tools/marriage-assessment" title="Marriage health assessment" desc="A 15-question diagnostic across communication, trust, conflict, and shared vision." />
-            <LinkCard href="/writing/covenant-vs-contract-what-marriage-is" title="Covenant vs. contract" desc="What marriage actually is, and why the difference holds it together." />
+            {isPublicEssayHref("/writing/covenant-vs-contract-what-marriage-is") && (
+              <LinkCard href="/writing/covenant-vs-contract-what-marriage-is" title="Covenant vs. contract" desc="What marriage actually is, and why the difference holds it together." />
+            )}
             <LinkCard href="/life/marriage-the-long-covenant" title="Marriage: the long covenant" desc="The deep guide: the slow drift, conflict, money, desire, and the daily work of staying married well." />
           </div>
         </div>

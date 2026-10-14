@@ -2,6 +2,8 @@ import { Link } from "wouter";
 import { useState } from "react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { ShelfReadingList } from "@/components/ShelfReadingList";
+import { isPublicEssay } from "@/lib/shelf";
 import { LandingSignup } from "@/components/LandingSignup";
 
 const ARTICLES = [
@@ -11,6 +13,60 @@ const ARTICLES = [
   { title: "Reconstructing Faith After Deconstruction", slug: "reconstructing-faith" },
   { title: "The Spirituality of Doubt", slug: "the-spirituality-of-doubt" },
   { title: "The Problem with Certainty", slug: "the-problem-with-certainty" },
+];
+
+// Live care resources for the same need, listed when none of the essays
+// above is on the public shelf (components/ShelfReadingList).
+const WHILE_OFF_SHELF = [
+  { title: "Eight weeks of taking your questions seriously", href: "/plans/deconstruction" },
+  { title: "When it all comes apart: a study on deconstruction", href: "/studyguides/deconstruction" },
+  { title: "When faith has questions: a study on doubt", href: "/studyguides/doubt" },
+  { title: "Honest answers to hard questions", href: "/answers" },
+];
+
+// "Start where you actually are": each card leads to its essay while that
+// essay is on the public shelf, and to a live resource for the same reader
+// while it is not, so no card lands on a retired notice.
+const STARTING_POINTS = [
+  {
+    kicker: "I AM DECONSTRUCTING",
+    essay: {
+      slug: "deconstruction-is-not-destruction",
+      title: "Deconstruction Is Not Destruction",
+      blurb: "For the person in the middle of it. The thing that feels like falling apart might be the thing that puts you back together.",
+    },
+    instead: {
+      href: "/studyguides/deconstruction",
+      title: "When It All Comes Apart",
+      blurb: "A five-session study on faith deconstruction, handled pastorally, for the person taking an inherited faith apart to see what is actually true.",
+    },
+  },
+  {
+    kicker: "I AM REBUILDING",
+    essay: {
+      slug: "reconstructing-faith",
+      title: "Reconstructing Faith After Deconstruction",
+      blurb: "For the person who has taken the old structure down and wants to know if anything worth building remains.",
+    },
+    instead: {
+      href: "/studyguides/deep-roots",
+      title: "Deep Roots: A Bible Study for Faith Beyond Slogans",
+      blurb: "A five-session study on the doctrines we recite without using, the church we forgot we owe, and the single story Scripture has been telling all along.",
+    },
+  },
+  {
+    kicker: "I LEFT AND I AM NOT GOING BACK",
+    essay: {
+      slug: "engaging-nones-religiously-unaffiliated",
+      title: "The Rise of the Nones",
+      blurb: "For the person who walked away. This is not a guilt trip. It is an honest look at what you left and why millions are doing the same.",
+    },
+    instead: {
+      href: "/answers",
+      title: "Honest answers to hard questions",
+      blurb: "Short, plain answers to the questions people actually ask, taken seriously. No guilt trip, no altar call.",
+    },
+  },
 ];
 
 const FAQ_ITEMS = [
@@ -116,27 +172,20 @@ export default function Deconstruction() {
           <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "24px" }}>WHERE ARE YOU</p>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--ink)", marginBottom: "32px" }}>Start where you actually are</h2>
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <Link href="/writing/deconstruction-is-not-destruction" style={{ textDecoration: "none" }}>
-              <div style={{ background: "var(--card)", padding: "24px", borderRadius: "3px", border: "1px solid rgba(0,0,0,0.06)" }}>
-                <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "8px" }}>I AM DECONSTRUCTING</p>
-                <p style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 400, color: "var(--ink)", marginBottom: "8px" }}>Deconstruction Is Not Destruction</p>
-                <p style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted, #5A5448)", lineHeight: 1.6 }}>For the person in the middle of it. The thing that feels like falling apart might be the thing that puts you back together.</p>
-              </div>
-            </Link>
-            <Link href="/writing/reconstructing-faith" style={{ textDecoration: "none" }}>
-              <div style={{ background: "var(--card)", padding: "24px", borderRadius: "3px", border: "1px solid rgba(0,0,0,0.06)" }}>
-                <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "8px" }}>I AM REBUILDING</p>
-                <p style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 400, color: "var(--ink)", marginBottom: "8px" }}>Reconstructing Faith After Deconstruction</p>
-                <p style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted, #5A5448)", lineHeight: 1.6 }}>For the person who has taken the old structure down and wants to know if anything worth building remains.</p>
-              </div>
-            </Link>
-            <Link href="/writing/engaging-nones-religiously-unaffiliated" style={{ textDecoration: "none" }}>
-              <div style={{ background: "var(--card)", padding: "24px", borderRadius: "3px", border: "1px solid rgba(0,0,0,0.06)" }}>
-                <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "8px" }}>I LEFT AND I AM NOT GOING BACK</p>
-                <p style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 400, color: "var(--ink)", marginBottom: "8px" }}>The Rise of the Nones</p>
-                <p style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted, #5A5448)", lineHeight: 1.6 }}>For the person who walked away. This is not a guilt trip. It is an honest look at what you left and why millions are doing the same.</p>
-              </div>
-            </Link>
+            {STARTING_POINTS.map((p) => {
+              const card = isPublicEssay(p.essay.slug)
+                ? { href: `/writing/${p.essay.slug}`, title: p.essay.title, blurb: p.essay.blurb }
+                : p.instead;
+              return (
+                <Link key={p.kicker} href={card.href} style={{ textDecoration: "none" }}>
+                  <div style={{ background: "var(--card)", padding: "24px", borderRadius: "3px", border: "1px solid var(--border)" }}>
+                    <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "8px" }}>{p.kicker}</p>
+                    <p style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 400, color: "var(--ink)", marginBottom: "8px" }}>{card.title}</p>
+                    <p style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted)", lineHeight: 1.6 }}>{card.blurb}</p>
+                  </div>
+                </Link>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -146,16 +195,7 @@ export default function Deconstruction() {
         <div style={{ maxWidth: "720px", margin: "0 auto" }}>
           <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "24px" }}>THE ESSAYS</p>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--ink)", marginBottom: "32px" }}>Writing that takes your questions seriously</h2>
-          <div style={{ display: "flex", flexDirection: "column" }}>
-            {ARTICLES.map((a) => (
-              <Link key={a.slug} href={`/writing/${a.slug}`} style={{ textDecoration: "none" }}>
-                <div style={{ padding: "20px 0", borderBottom: "1px solid rgba(0,0,0,0.08)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                  <span style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 400, color: "var(--ink)" }}>{a.title}</span>
-                  <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--mustard-text)" }}>Read</span>
-                </div>
-              </Link>
-            ))}
-          </div>
+          <ShelfReadingList essays={ARTICLES} fallback={WHILE_OFF_SHELF} />
         </div>
       </section>
 
@@ -199,12 +239,12 @@ export default function Deconstruction() {
       <section style={{ background: "var(--bone)", padding: "80px 24px" }}>
         <div style={{ maxWidth: "720px", margin: "0 auto", textAlign: "center" }}>
           <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "24px" }}>KEEP READING</p>
-          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--ink)", marginBottom: "16px" }}>The full post-Christian series</h2>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--ink)", marginBottom: "16px" }}>After Christendom</h2>
           <p style={{ fontFamily: "var(--U)", fontSize: "16px", color: "var(--ink-muted, #5A5448)", lineHeight: 1.7, marginBottom: "32px", maxWidth: "52ch", marginLeft: "auto", marginRight: "auto" }}>
-            Deconstruction is one piece of a larger story. Sixty essays tracing what happens when a culture built on Christianity starts to move past it.
+            Deconstruction is one piece of a larger story: what happens to the church when a culture built on Christianity starts to move past it.
           </p>
-          <Link href="/post-christian" style={{ textDecoration: "none" }}>
-            <button style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", border: "none", padding: "12px 28px", fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)", borderRadius: "3px", cursor: "pointer" }}>Explore the Full Series</button>
+          <Link href="/writing?section=after-christendom" style={{ textDecoration: "none" }}>
+            <button style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", border: "none", padding: "12px 28px", fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)", borderRadius: "3px", cursor: "pointer" }}>Read the essays</button>
           </Link>
         </div>
       </section>

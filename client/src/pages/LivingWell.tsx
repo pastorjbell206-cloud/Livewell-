@@ -6,6 +6,7 @@ import { SEOMeta } from "@/components/SEOMeta";
 import { StatementBand, SectionArt } from "@/components/EditorialBlocks";
 import ToolStrip from "@/components/ToolStrip";
 import { trpc } from "@/lib/trpc";
+import { filterPublicPosts } from "@/lib/shelf";
 import {
   PILLAR_BY_ID,
   pillarUrl,
@@ -42,7 +43,7 @@ export default function LivingWell() {
   const { total, perSub } = useMemo(() => {
     const perSub: Record<string, number> = {};
     let total = 0;
-    for (const p of postsQuery.data ?? []) {
+    for (const p of filterPublicPosts(postsQuery.data ?? [])) {
       if (pillarForPost(p)?.id !== 6) continue;
       total += 1;
       for (const st of subThemesForPost(p)) perSub[st] = (perSub[st] ?? 0) + 1;

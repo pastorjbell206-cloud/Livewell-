@@ -88,9 +88,9 @@ export default function FollowJames({
           {/* The site's own surfaces first: everything written, the books, the
               things to use, and the way to work with James. A reader should be
               able to reach all of it from one block rather than hunting. */}
-          <Link href="/explore" style={tile}>
-            <div style={tileTitle}>The Library</div>
-            <p style={tileBlurb}>Everything in one place: essays, books, guides, and every download, searchable.</p>
+          <Link href="/resources" style={tile}>
+            <div style={tileTitle}>Resources</div>
+            <p style={tileBlurb}>Everything else in one place: the Study Bible, church history, guides, plans, and the downloads.</p>
           </Link>
           <Link href="/writing" style={tile}>
             <div style={tileTitle}>All the writing</div>
@@ -108,7 +108,7 @@ export default function FollowJames({
             <div style={tileTitle}>Downloads and PDFs</div>
             <p style={tileBlurb}>Every printable: leader guides, participant handouts, sermon series. Free.</p>
           </Link>
-          <Link href="/work-with-james" style={tile}>
+          <Link href="/speaking" style={tile}>
             <div style={tileTitle}>Work with James</div>
             <p style={tileBlurb}>Preaching, consulting, and coming alongside a church or a leader.</p>
           </Link>

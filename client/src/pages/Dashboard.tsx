@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { useFormationTracker } from "@/hooks/useFormationTracker";
+import { isPublicEssay } from "@/lib/shelf";
 
 /* ── Reading paths (mirrored from ReadingPaths.tsx for progress tracking) ── */
 
@@ -156,9 +157,9 @@ export default function Dashboard() {
     for (const b of data.bibleBooks)
       entries.push({ type: "Bible Book", title: b.name, slug: b.name, at: b.studiedAt, href: `/tools/deep-bible` });
     for (const p of data.pathsStarted)
-      entries.push({ type: "Path Started", title: p.title, slug: p.slug, at: p.startedAt, href: `/reading-paths` });
+      entries.push({ type: "Path Started", title: p.title, slug: p.slug, at: p.startedAt, href: `/reading-paths/${p.slug}` });
     for (const p of data.pathsCompleted)
-      entries.push({ type: "Path Completed", title: p.title, slug: p.slug, at: p.completedAt, href: `/reading-paths` });
+      entries.push({ type: "Path Completed", title: p.title, slug: p.slug, at: p.completedAt, href: `/reading-paths/${p.slug}` });
     entries.sort((a, b) => (a.at > b.at ? -1 : 1));
     return entries.slice(0, 10);
   }, [data]);
@@ -179,7 +180,7 @@ export default function Dashboard() {
         title: "Start Here Diagnostic",
         description:
           "Not sure where to begin? This diagnostic helps you find the right starting point based on what you are carrying.",
-        href: "/start-here",
+        href: "/start",
       });
     }
 
@@ -189,7 +190,7 @@ export default function Dashboard() {
       items.push({
         title: p.title,
         description: `A reading path with ${p.total} essays. Begin where the weight is heaviest.`,
-        href: "/reading-paths",
+        href: `/reading-paths/${p.slug}`,
       });
     }
 
@@ -208,7 +209,8 @@ export default function Dashboard() {
     // Suggest articles not yet read
     for (const article of SUGGESTED_ARTICLES) {
       if (items.length >= 5) break;
-      if (!readSlugs.has(article.slug)) {
+      // Only essays on the public shelf (lib/shelf.ts) are suggested.
+      if (!readSlugs.has(article.slug) && isPublicEssay(article.slug)) {
         items.push({
           title: article.title,
           description: "An essay worth sitting with.",
@@ -384,7 +386,7 @@ export default function Dashboard() {
                 curated sequence of essays built for a specific season.
               </p>
               <Link
-                href="/reading-paths"
+                href="/writing"
                 style={{
                   display: "inline-block",
                   padding: "0.75rem 1.5rem",
@@ -398,7 +400,7 @@ export default function Dashboard() {
                   textDecoration: "none",
                 }}
               >
-                Browse reading paths
+                Browse the essays
               </Link>
             </div>
           )}
@@ -517,7 +519,7 @@ export default function Dashboard() {
                 {unstartedPaths.map((path) => (
                   <Link
                     key={path.slug}
-                    href="/reading-paths"
+                    href={`/reading-paths/${path.slug}`}
                     style={{
                       ...cardStyle,
                       textDecoration: "none",

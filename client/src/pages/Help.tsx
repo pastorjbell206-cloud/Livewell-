@@ -17,6 +17,7 @@ import { SKEPTIC_TRACK_LIVE } from "@/lib/skepticTrack";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
+/** A link to another site (an absolute https URL) opens as a plain link in a new tab. */
 interface Help { href: string; label: string; kind: "read" | "assess" | "do" | "pray" }
 interface Need {
   id: string;
@@ -57,8 +58,8 @@ const NEEDS: Need[] = [
     opener: "Doubt is not the opposite of faith. It is often part of a living one. You do not have to hide it here.",
     helps: [
       { href: "/faith-crisis", label: "Read: for the season when the whole faith feels like it is failing", kind: "read" },
-      { href: "/honest-questions", label: "Read: the honest questions, taken seriously", kind: "read" },
-      { href: "/doubt", label: "Read: doubt as part of a living faith", kind: "read" },
+      { href: "/answers", label: "Read: the honest questions, taken seriously", kind: "read" },
+      { href: "/studyguides/doubt", label: "Read: When Faith Has Questions, a study on doubt as part of a living faith", kind: "read" },
       { href: "/theology/questions", label: "Read: the hard questions, answered honestly", kind: "read" },
       { href: "/resources/context", label: "Do: read the Bible in its real context, not the caricature", kind: "do" },
       { href: "/tools/prayer-generator", label: "Pray: a prayer for when belief is thin", kind: "pray" },
@@ -73,7 +74,7 @@ const NEEDS: Need[] = [
       { href: "/church-hurt", label: "Read: when the church itself did the wounding", kind: "read" },
       { href: "/plans/deconstruction", label: "Do: eight weeks of taking your questions seriously", kind: "do" },
       { href: "/resources/context/the-bible-is-not-an-american-book", label: "Read: separating Jesus from the version you were handed", kind: "read" },
-      { href: "/disruption", label: "Read: what the church got wrong, said plainly by a pastor", kind: "read" },
+      { href: "/writing?section=the-mirror", label: "Read: what the church got wrong, said plainly by a pastor", kind: "read" },
       { href: "/theology/compare", label: "Do: see every position side by side, fairly", kind: "do" },
     ],
   },
@@ -82,7 +83,7 @@ const NEEDS: Need[] = [
     title: "I do not believe, and I am curious",
     opener: "Written for you by a pastor who was an atheist first. No tricks, no ambush, no altar call. Just the material, taken as seriously as you take it.",
     helps: [
-      { href: "/post-christian", label: "Read: faith examined from outside the church, no altar call", kind: "read" },
+      { href: "/answers", label: "Read: faith examined from outside the church, no altar call", kind: "read" },
       { href: "/plans/skeptic", label: "Do: eight weeks of reading like an adult", kind: "do" },
       { href: "/skeptic-track", label: "Read: the skeptic track, in argument order", kind: "read" },
       { href: "/resources/context", label: "Read: the Bible in its real history, cited to scholarship", kind: "read" },
@@ -95,7 +96,7 @@ const NEEDS: Need[] = [
     opener: "Welcome. Nobody expects you to know the words yet. Here is how to begin, one small step at a time, with everything explained.",
     helps: [
       { href: "/plans/new-believer", label: "Do: eight weeks of beginnings", kind: "do" },
-      { href: "/pathways", label: "Read: the pathway from new believer to mature", kind: "read" },
+      { href: "/studyguides/new-believer", label: "Read: a study on your first steps of faith", kind: "read" },
       { href: "/tools/prayer-generator", label: "Pray: how to pray when you do not know how", kind: "pray" },
       { href: "/start", label: "Assess: find your starting place", kind: "assess" },
     ],
@@ -108,7 +109,7 @@ const NEEDS: Need[] = [
       { href: "/plans/grief", label: "Do: an eight-week companion through loss", kind: "do" },
       { href: "/grief", label: "Read: walking through grief without the cliches", kind: "read" },
       { href: "/life/grief-and-loss", label: "Read: loss faced honestly, and where to find help", kind: "read" },
-      { href: "/lament", label: "Do: the practice of lament", kind: "do" },
+      { href: "/studyguides/lament", label: "Do: the practice of lament", kind: "do" },
       { href: "/tools/prayer-generator", label: "Pray: a prayer in suffering", kind: "pray" },
     ],
   },
@@ -139,7 +140,11 @@ const NEEDS: Need[] = [
     title: "I am a leader running on empty",
     opener: "The loneliest job in the room. If you are a pastor near the end of yourself, start here. Seeking help is faith, not failure.",
     helps: [
-      { href: "/pastoral-burnout", label: "Read: why pastors leave, and how to stay whole", kind: "read" },
+      { href: "/studyguides/pastoral-health", label: "Read: a study on pastoral health, for leaders and those who love them", kind: "read" },
+      { href: "/studyguides/sabbath", label: "Do: a study on Sabbath, rest, and hurry", kind: "do" },
+      { href: "/tools/emotional-health", label: "Assess: an honest read on where you are", kind: "assess" },
+      { href: "/tools/prayer-generator", label: "Pray: a prayer for when you have nothing left to give", kind: "pray" },
+      { href: "https://pastorsconnectionnetwork.com", label: "Do: the Pastors Connection Network, a community for pastors (a separate site)", kind: "do" },
     ],
   },
   {
@@ -147,10 +152,10 @@ const NEEDS: Need[] = [
     title: "I just want to grow, and follow well",
     opener: "Not in crisis. You want the whole of life to come under one Lord, on an ordinary Tuesday. Here is the path.",
     helps: [
-      { href: "/church-history", label: "Read: the church’s long story as a place to stand", kind: "read" },
+      { href: "/theology/history", label: "Read: the church’s long story as a place to stand", kind: "read" },
       { href: "/plans/whole-life", label: "Do: an eight-week plan toward one undivided life", kind: "do" },
       { href: "/life/assessment", label: "Assess: the Whole-Life Assessment, with a rule of life", kind: "assess" },
-      { href: "/pathways", label: "Do: the discipleship pathway, new believer to mature", kind: "do" },
+      { href: "/studyguides/deep-roots", label: "Do: Deep Roots, a study for faith beyond slogans", kind: "do" },
       { href: "/life", label: "Read: the Integrated Life hub", kind: "read" },
       { href: "/start", label: "Assess: find your starting path", kind: "assess" },
     ],
@@ -184,6 +189,11 @@ export default function Help() {
           <p style={{ fontFamily: "var(--B)", fontSize: "17.5px", lineHeight: 1.75, color: "rgba(245,240,230,0.82)", maxWidth: "60ch" }}>
             You did not come here for a category. You came carrying something. Choose what is closest, and you will find the writing, the honest tools, and the prayer for exactly that. No dead ends.
           </p>
+          <p style={{ fontFamily: "var(--B)", fontSize: "17.5px", lineHeight: 1.7, color: "var(--bone)", maxWidth: "60ch", marginTop: "var(--s-3)", paddingLeft: "14px", borderLeft: "2px solid var(--mustard)" }}>
+            If you are in danger or thinking about ending your life, call or text{" "}
+            <a href="tel:988" style={{ color: "var(--bone)", fontWeight: 600, textDecoration: "underline", textUnderlineOffset: "3px" }}>988</a>{" "}
+            now (the Suicide and Crisis Lifeline in the US, any hour), and tell someone who loves you.
+          </p>
         </div>
       </section>
 
@@ -210,14 +220,20 @@ export default function Help() {
                       {n.helps.filter((h) => SKEPTIC_TRACK_LIVE || h.href !== "/skeptic-track").map((h) => {
                         const meta = KIND_META[h.kind];
                         const Icon = meta.Icon;
-                        return (
-                          <Link key={h.href + h.label} href={h.href} style={{ display: "flex", gap: "10px", alignItems: "flex-start", textDecoration: "none", padding: "8px", borderRadius: "2px" }}>
+                        const rowStyle = { display: "flex", gap: "10px", alignItems: "flex-start", textDecoration: "none", padding: "8px", borderRadius: "2px" } as const;
+                        const inner = (
+                          <>
                             <span style={{ flexShrink: 0, marginTop: "2px", color: "var(--mustard-text)" }}><Icon size={16} /></span>
                             <span>
                               <span style={{ fontFamily: "var(--U)", fontSize: "10.5px", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--ink-muted)", display: "block", marginBottom: "2px" }}>{meta.label}</span>
                               <span style={{ fontFamily: "var(--B)", fontSize: "14.5px", lineHeight: 1.5, color: "var(--ink)" }}>{h.label.replace(/^(Read|Assess|Do|Pray): /, "")}</span>
                             </span>
-                          </Link>
+                          </>
+                        );
+                        return /^https?:\/\//.test(h.href) ? (
+                          <a key={h.href + h.label} href={h.href} target="_blank" rel="noopener noreferrer" style={rowStyle}>{inner}</a>
+                        ) : (
+                          <Link key={h.href + h.label} href={h.href} style={rowStyle}>{inner}</Link>
                         );
                       })}
                     </div>

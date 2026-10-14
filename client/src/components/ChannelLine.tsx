@@ -1,7 +1,7 @@
 /**
  * ChannelLine — one quiet line at the end of an essay naming where else James
  * writes, read from lib/channels.ts so it can never drift from the footer, the
- * Connect page, or the Person schema. Deliberately small: it sits under the
+ * About page, or the Person schema. Deliberately small: it sits under the
  * essay's one primary next step and never competes with it.
  */
 import { Link } from "wouter";
@@ -23,7 +23,7 @@ export default function ChannelLine() {
           </span>
         ))}
         {" · "}
-        <Link href="/connect" style={{ ...link, fontWeight: 600 }}>Everywhere James is</Link>
+        <Link href="/about" style={{ ...link, fontWeight: 600 }}>Everywhere James is</Link>
       </p>
     </div>
   );

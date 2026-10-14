@@ -196,6 +196,9 @@ export function GeneratedHero({
   return (
     <svg
       viewBox={`0 0 ${VB_W} ${VB_H}`}
+      // The frame is 16:9 (matching a real cover image) but the viewBox is
+      // 1200x630; "slice" fills the frame instead of letterboxing the art.
+      preserveAspectRatio="xMidYMid slice"
       role="img"
       aria-label={title ? `Cover art for ${title}` : "Article cover art"}
       style={{
@@ -210,10 +213,10 @@ export function GeneratedHero({
     >
       <rect width={VB_W} height={VB_H} fill="var(--bone)" />
       <rect width={VB_W} height={VB_H} fill="var(--bone-warm)" opacity={0.45} />
-      {/* A slug-derived tilt distinguishes essays that share a pillar's motif. */}
-      <g transform={`rotate(${(((h >> 8) % 25) - 12)} ${CX} ${CY})`}>
-        {MOTIFS[motifIndex](h)}
-      </g>
+      {/* Kept level: a slug-derived tilt (up to 12deg) slid the grid and arc
+          motifs off-centre and under the mustard rule, reading as a broken
+          image. The hash still varies each motif's counts and accent. */}
+      {MOTIFS[motifIndex](h)}
       {/* The line under the weight — constant across every motif for cohesion */}
       <rect x={CX - 40} y={566} width={80} height={2} fill={mustard} />
     </svg>
