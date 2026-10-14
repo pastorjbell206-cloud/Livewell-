@@ -2940,7 +2940,7 @@ async function rssLiveWell(_req: VercelRequest, res: VercelResponse) {
     const rows: any[] = await withConn(async (c) => {
       const liveIn = RSS_LIVE_SLUGS.length ? `slug IN (${RSS_LIVE_SLUGS.map(() => "?").join(", ")})` : "FALSE";
       const [posts]: any = await c.query(
-        `SELECT slug, title, excerpt, body, coverImage, publishedAt, createdAt, updatedAt
+        `SELECT slug, title, excerpt, body, publishedAt, createdAt, updatedAt
            FROM posts
           WHERE published = true
             AND (${liveIn} OR COALESCE(publishedAt, createdAt) >= ?)
