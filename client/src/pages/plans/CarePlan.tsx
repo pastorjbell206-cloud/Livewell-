@@ -11,7 +11,10 @@ import { Link, useRoute } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { CrisisHelp } from "@/components/CrisisHelp";
-import { BookOpen, Wrench, PenLine, Check, RotateCcw, Printer } from "lucide-react";
+import { RemindMe } from "@/components/RemindMe";
+import { SAVE_FAILED, TakeItWithYou } from "@/components/TakeItWithYou";
+import { readStoredJSON, removeStoredJSON, writeStoredJSON } from "@/lib/storage";
+import { ArrowDown, BookOpen, Wrench, PenLine, Check, RotateCcw, Printer } from "lucide-react";
 
 const wrap = { maxWidth: "var(--w-content)", margin: "0 auto" } as const;
 
@@ -27,14 +30,17 @@ interface Plan {
 }
 interface Progress { startedAt: string; done: Record<number, boolean> }
 
+// Saved in this browser through lib/storage: a shape guard on the way in, and
+// a truthful result on the way out, so a refused write shows the save-failure
+// line instead of check marks that vanish on reload.
+const isProgressOrNull = (x: unknown): x is Progress | null =>
+  x === null || (!!x && typeof x === "object" && typeof (x as Progress).startedAt === "string" && !!(x as Progress).done && typeof (x as Progress).done === "object");
+
 function loadProgress(slug: string): Progress | null {
-  try {
-    const raw = localStorage.getItem(`lw-plan-${slug}`);
-    return raw ? (JSON.parse(raw) as Progress) : null;
-  } catch { return null; }
+  return readStoredJSON<Progress | null>(`lw-plan-${slug}`, isProgressOrNull, null);
 }
-function saveProgress(slug: string, p: Progress) {
-  try { localStorage.setItem(`lw-plan-${slug}`, JSON.stringify(p)); } catch { /* ignore */ }
+function saveProgress(slug: string, p: Progress): boolean {
+  return writeStoredJSON(`lw-plan-${slug}`, p);
 }
 
 const lbl = { fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase" as const, color: "var(--ink-muted)", marginBottom: "6px" };
@@ -57,6 +63,7 @@ export default function CarePlan() {
   // answered and data/missing derive per render — no synchronous reset effect.
   const [progress, setProgress] = useState<Progress | null>(() => (slug ? loadProgress(slug) : null));
   const [result, setResult] = useState<{ slug: string; data: Plan | null } | null>(null);
+  const [saveFailed, setSaveFailed] = useState(false);
 
   useEffect(() => {
     if (!slug) return;
@@ -72,21 +79,22 @@ export default function CarePlan() {
   const start = () => {
     if (!slug) return;
     const p: Progress = { startedAt: new Date().toISOString(), done: {} };
-    saveProgress(slug, p);
+    setSaveFailed(!saveProgress(slug, p));
     setProgress(p);
   };
 
   const toggleWeek = (n: number) => {
     if (!slug || !progress) return;
     const p: Progress = { ...progress, done: { ...progress.done, [n]: !progress.done[n] } };
-    saveProgress(slug, p);
+    setSaveFailed(!saveProgress(slug, p));
     setProgress(p);
   };
 
   const reset = () => {
     if (!slug) return;
     if (!window.confirm("Start this plan over? Your check marks will be cleared.")) return;
-    try { localStorage.removeItem(`lw-plan-${slug}`); } catch { /* ignore */ }
+    removeStoredJSON(`lw-plan-${slug}`);
+    setSaveFailed(false);
     setProgress(null);
   };
 
@@ -144,7 +152,28 @@ export default function CarePlan() {
               <div style={{ height: "3px", background: "rgba(245,240,230,0.15)", maxWidth: "360px" }}>
                 <div style={{ height: "3px", background: "var(--mustard)", width: `${(doneCount / data.weeks.length) * 100}%`, transition: "width 0.3s" }} />
               </div>
+              {/* A returning reader lands at the top of eight open weeks; this takes them to theirs. */}
+              {currentWeek && (
+                <a
+                  href={`#week-${currentWeek}`}
+                  style={{ display: "inline-flex", alignItems: "center", gap: "8px", minHeight: "44px", marginTop: "14px", padding: "10px 20px", background: "var(--mustard)", color: "var(--charcoal)", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 700, borderRadius: "2px", textDecoration: "none" }}
+                >
+                  Go to week {currentWeek} <ArrowDown size={16} aria-hidden />
+                </a>
+              )}
+              {saveFailed && <p role="status" style={{ fontFamily: "var(--U)", fontSize: "13px", lineHeight: 1.5, color: "var(--charcoal-fg)", margin: "10px 0 0" }}>{SAVE_FAILED}</p>}
             </div>
+          )}
+          {data && doneCount < data.weeks.length && (
+            <RemindMe
+              title={data.title}
+              details={`This week's step in your eight-week plan. Open the plan for the practice, the reading, and the question.`}
+              href={`/plans/${data.slug}`}
+              freq="WEEKLY"
+              count={data.weeks.length - doneCount}
+              schedule={doneCount ? `once a week for the ${data.weeks.length - doneCount} weeks left` : "once a week for eight weeks"}
+              onDark
+            />
           )}
         </div>
       </section>
@@ -152,13 +181,16 @@ export default function CarePlan() {
       {data && (
         <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-6)" }}>
           <div style={wrap}>
+            <TakeItWithYou title={data.title} kind="Eight-week plan" href={`/plans/${data.slug}`} summary={data.subtitle} />
             {data.weeks.map((w) => {
               const done = !!progress?.done[w.n];
               const isCurrent = progress && currentWeek === w.n;
               return (
                 <div
                   key={w.n}
+                  id={`week-${w.n}`}
                   style={{
+                    scrollMarginTop: "88px",
                     background: "var(--card)",
                     border: isCurrent ? "1px solid var(--mustard)" : "1px solid var(--border)",
                     borderTop: "2px solid var(--mustard)",
@@ -213,7 +245,7 @@ export default function CarePlan() {
             <div style={{ display: "flex", gap: "var(--s-4)", flexWrap: "wrap", marginTop: "var(--s-4)" }}>
               <Link href="/help" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>← Find help for something else</Link>
               {progress && (
-                <button onClick={reset} style={{ display: "inline-flex", alignItems: "center", gap: "6px", background: "none", border: "none", cursor: "pointer", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--ink-muted)", padding: 0 }}>
+                <button type="button" onClick={reset} style={{ display: "inline-flex", alignItems: "center", gap: "6px", minHeight: "44px", background: "none", border: "none", cursor: "pointer", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--ink-muted)", padding: "0 4px" }}>
                   <RotateCcw size={14} /> Start over
                 </button>
               )}

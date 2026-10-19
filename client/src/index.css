@@ -269,7 +269,10 @@ img{display:block;max-width:100%}
 /* NAV */
 .nav-wrap{position:sticky;top:0;z-index:200;background:rgba(250,248,244,.97);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);transition:box-shadow .3s}
 .nav-wrap.shadow{box-shadow:0 4px 32px rgba(26,51,40,.08)}
-nav{display:flex;align-items:center;justify-content:space-between;height:70px;max-width:1200px;margin:0 auto;padding:0 32px}
+/* The site header only (MinimalNav). A bare nav{} rule here once shaped every
+   <nav> on the site as a 70px bar, printing in-page jump lists over the
+   headings beneath them. */
+.site-nav{display:flex;align-items:center;justify-content:space-between;height:70px;max-width:1200px;margin:0 auto;padding:0 32px}
 /* The static shell's masthead (index.html) matches the header's height, so
    the swap to React moves nothing below it. */
 .lw-shell-bar{height:70px;box-sizing:border-box}
@@ -561,7 +564,7 @@ footer{background:var(--charcoal);color:var(--bone);padding:60px 0 40px}
 
 @media(max-width:480px){
   .wrap{padding:0 16px}
-  nav{padding:0 16px;height:60px}
+  .site-nav{padding:0 16px;height:60px}
   .lw-shell-bar{height:60px}
   .hero-h{font-size:32px}
   .hero-ctas{flex-direction:column;align-items:flex-start}

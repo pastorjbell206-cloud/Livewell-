@@ -11,6 +11,7 @@ import { useState } from "react";
 import { Link } from "wouter";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import ScriptureNote from "@/components/ScriptureNote";
+import { RemindMe } from "@/components/RemindMe";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
@@ -81,6 +82,16 @@ export default function Proverbs31() {
           <p style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.75, color: "rgba(245,240,230,0.82)", maxWidth: "62ch" }}>
             Proverbs has thirty-one chapters and most months have thirty-one days, which makes it simple to read one a day, matched to the date. Do not study it. Live in it, and let one line follow you into the day's decisions.
           </p>
+          <RemindMe
+            title="Proverbs in 31 days"
+            details="Today's chapter of Proverbs, matched to the date, with one line to carry into the day."
+            href="/tools/proverbs-31"
+            freq="DAILY"
+            count={31}
+            schedule="every day for thirty-one days"
+            defaultTime="morning"
+            onDark
+          />
         </div>
       </section>
 

@@ -9,6 +9,8 @@ import { ArrowLeft, Search as SearchIcon } from "lucide-react";
 
 import { LibrarySource, LIBRARY_SOURCES, pickString } from "@/lib/catalog";
 import { essayDate, isPublicEssay } from "@/lib/shelf";
+import { rankEntries } from "@/lib/siteSearch";
+import { TOOLS } from "@/pages/ToolsHub";
 
 // --- Library manifest search (static JSON content libraries) ---
 // The source registry lives in @/lib/catalog so search and the unified
@@ -23,9 +25,23 @@ interface LibraryEntry {
   sourceLabel: string;
   href: string;
   indexHref: string;
+  /** The everyday phrasings people use for it (a care page's askedAs). */
+  keywords: string;
 }
 
-const LIBRARY_RESULT_CAP = 12;
+const LIBRARY_RESULT_CAP = 16;
+
+// The tools, from the /tools registry, so "worry journal" finds the Worry Journal.
+const TOOL_ENTRIES: LibraryEntry[] = TOOLS.map((t) => ({
+  slug: t.href,
+  title: t.title,
+  blurb: t.description,
+  facet: "Tool",
+  sourceLabel: "Tools",
+  href: t.href,
+  indexHref: "/tools",
+  keywords: "",
+}));
 
 async function fetchLibrarySource(source: LibrarySource): Promise<LibraryEntry[]> {
   try {
@@ -46,6 +62,7 @@ async function fetchLibrarySource(source: LibrarySource): Promise<LibraryEntry[]
         sourceLabel: source.label,
         href: source.buildHref(item.slug as string),
         indexHref: source.indexHref,
+        keywords: Array.isArray(item.askedAs) ? (item.askedAs as unknown[]).filter((w) => typeof w === "string").join(" ") : "",
       }));
   } catch {
     // Graceful per-manifest failure: a missing or malformed manifest
@@ -60,6 +77,12 @@ export default function SearchPage() {
   const [query, setQuery] = useState(() =>
     typeof window === "undefined" ? "" : new URLSearchParams(window.location.search).get("q") ?? ""
   );
+  // Keep the address in step, so Back and a shared link return to the same search.
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const url = query.trim() ? `/search?q=${encodeURIComponent(query.trim())}` : "/search";
+    if (window.location.pathname + window.location.search !== url) window.history.replaceState(window.history.state, "", url);
+  }, [query]);
   const [searchType, setSearchType] = useState<"all" | "articles" | "resources">("all");
 
   // Library manifests: fetched once on mount, filtered client-side per query
@@ -70,7 +93,7 @@ export default function SearchPage() {
     let cancelled = false;
     Promise.all(LIBRARY_SOURCES.map(fetchLibrarySource)).then((lists) => {
       if (cancelled) return;
-      setLibraryEntries(lists.flat());
+      setLibraryEntries([...lists.flat(), ...TOOL_ENTRIES]);
       setLibraryLoaded(true);
     });
     return () => {
@@ -79,11 +102,8 @@ export default function SearchPage() {
   }, []);
 
   const libraryMatches = useMemo(() => {
-    const q = query.trim().toLowerCase();
-    if (q.length === 0) return [];
-    return libraryEntries.filter((entry) =>
-      `${entry.title} ${entry.blurb} ${entry.facet}`.toLowerCase().includes(q)
-    );
+    if (query.trim().length === 0) return [];
+    return rankEntries(libraryEntries, query);
   }, [libraryEntries, query]);
 
   const visibleLibraryMatches = libraryMatches.slice(0, LIBRARY_RESULT_CAP);
@@ -207,12 +227,12 @@ export default function SearchPage() {
             <input
               type="text"
               aria-label="Search the site"
-              placeholder="Search articles, resources, books…"
+              placeholder="Search help, essays, plans, tools…"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               className="w-full pl-12 pr-4 py-3 border rounded-lg focus:outline-none focus:ring-2 text-lg"
               style={{
-                borderColor: "rgba(244,241,234,0.7)",
+                borderColor: "var(--border)",
                 backgroundColor: "var(--bone)",
                 color: "var(--ink)",
               }}
@@ -242,7 +262,7 @@ export default function SearchPage() {
         <div>
           {query === "" ? (
             <div className="text-center py-12" style={{ color: "var(--ink-muted)" }}>
-              <p className="text-lg">Type a word or a topic. The essays, the libraries, and the tools are all in here.</p>
+              <p className="text-lg">Type a word, a topic, or what you're going through, in your own words. Find Help, the essays, the plans, the guides, and the tools are all in here.</p>
             </div>
           ) : (
             <>
@@ -253,7 +273,7 @@ export default function SearchPage() {
                     className="font-ui text-xs font-medium uppercase mb-6"
                     style={{ color: "var(--gold)", letterSpacing: "0.18em" }}
                   >
-                    From the libraries
+                    Help, plans, tools, and guides
                   </p>
                   <div className="space-y-4">
                     {visibleLibraryMatches.map((entry) => (
@@ -262,7 +282,7 @@ export default function SearchPage() {
                         href={entry.href}
                         className="block p-4 border rounded-lg hover:shadow-md transition-shadow"
                         style={{
-                          borderColor: "rgba(244,241,234,0.7)",
+                          borderColor: "var(--border)",
                           backgroundColor: "var(--bone)",
                         }}
                       >
@@ -364,7 +384,7 @@ export default function SearchPage() {
                     href={getResultLink(result)}
                     className="block p-4 border rounded-lg hover:shadow-md transition-shadow"
                     style={{
-                      borderColor: "rgba(244,241,234,0.7)",
+                      borderColor: "var(--border)",
                       backgroundColor: "var(--bone)",
                     }}
                   >

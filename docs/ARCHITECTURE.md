@@ -243,7 +243,8 @@ data by `scripts/lib/reading-plans.mjs` (days balanced by verse count, or cut at
 the Study Bible outline's scenes); the self-checks under `pages/tools/` (each
 with `SafetyCheck`, `SelfCheckHistory`, and couple mode on the marriage check
 via `components/CoupleCompare.tsx`); and the companion tools (the Worry
-Journal, the Prayer Planner, the Parent and Teen Conversation), all keeping
+Journal, the Prayer Planner, the Connection Planner, the Parent and Teen
+Conversation), all keeping
 their data in the browser through `lib/storage.ts`. Crisis-level pages wait in
 `docs/grow/drafts/` until James approves them (`validate-needs --drafts`).
 Beyond the care pages, the printables shelf (`/downloads`, one line per
@@ -252,7 +253,10 @@ of prayer journal pages, a rule of life, a budget, a grief journal page, a plan
 for the first holidays after a loss, a couples' conversation guide, and for
 church leaders a referral list and a first response for when someone says they
 are not safe at home), card sets (Scripture to carry, one verse per care page from
-`MEMORY_VERSES`; family table cards from the weekly devotions), and workbooks
+`MEMORY_VERSES`; family table cards from the weekly devotions), seasonal family
+booklets (Thanksgiving week, Advent, Holy Week, from `client/public/family-seasonal.json`;
+a season prints and gets its tab on `/family/devotions` once it has days, and
+`validate-family` checks every day's fields and reference), and workbooks
 for couples (`client/public/workbooks/*.json`, rendered by
 `scripts/lib/workbooks.mjs`, gated by `validate-workbooks`). Printed Scripture
 goes through `readingText()` in `scripts/lib/bsb.mjs` (no psalm headings, no
@@ -272,6 +276,33 @@ starter list, and a study guide's session essay link check the shelf again at
 render time (`isPublicEssay`, `isPublicEssayHref`), so an essay taken down later
 drops out instead of landing a reader on a retired notice. What the integrity
 sweeps removed from the Grow libraries is recorded in `docs/grow/integrity/`.
+
+**Take it with you (no accounts; nothing leaves the reader's device)** —
+`components/TakeItWithYou.tsx` is the Send / Save / Print bar on care pages,
+eight-week plans, study guides, context guides, and every tool (through
+`ToolActions`). On a phone, Send opens the phone's own share sheet
+(`navigator.share`). On a computer it opens a panel with a code to scan
+(`qrcode-generator`, loaded on demand), "Email it to me" (a `mailto:` the
+reader's own mail app sends), and Copy link; touch devices also get Text it
+(`sms:`). The site sends nothing and keeps nothing. `SendButton` is the
+one-button form on each `/downloads` card. Save writes to My Library
+(`lib/library.ts`, key `livewell-library-v1`, which also reads the essays'
+older `livewell:bookmarks`). `/my-library` (`pages/MyLibrary.tsx`, noindex)
+lists what was saved, what was started (`lib/myProgress.ts` only reads each
+tool's own key: plan progress, self-check histories, the companion tools,
+Scripture memory, the Study Bible), and the essays read lately (public shelf
+only), with an email-my-list link and the add-to-home-screen card
+(`components/AddToHomeScreen.tsx`; `lib/install.ts` holds the browser's
+`beforeinstallprompt`, captured in `main.tsx`). It is linked from the footer's
+Resources group, the phone menu, the `/resources` hero, the tools hub, and
+every Save. `components/RemindMe.tsx` puts a repeating reminder in the reader's
+own calendar (`lib/calendar.ts`: an RFC 5545 `.ics` in floating local time, or
+a Google Calendar link) on the eight-week plans and the Connection Planner
+(weekly) and on the reading plans, the Worry Journal, the Prayer Planner, and
+Proverbs in 31 days (daily). `/search` ranks care pages, plans, tools, and the
+libraries together through `lib/siteSearch.ts` (every word must match; a title
+match leads); the tools hub, `/plans`, and `/downloads` filter in place as the
+reader types.
 
 **Design system** — tokens are CSS variables in `index.css`; components
 reference them inline, so brand changes flow from `:root`. Cormorant Garamond +

@@ -35,6 +35,24 @@ export interface LibrarySource {
  */
 export const LIBRARY_SOURCES: LibrarySource[] = [
   {
+    // Find Help: one care page per need, searched on the words people
+    // actually use (each need's askedAs list).
+    url: "/needs/index.json",
+    listKey: "needs",
+    label: "Find Help",
+    type: "Find Help",
+    buildHref: (slug) => `/help/${slug}`,
+    indexHref: "/help",
+  },
+  {
+    url: "/plans/plans-index.json",
+    listKey: "plans",
+    label: "Eight-Week Plans",
+    type: "Plan",
+    buildHref: (slug) => `/plans/${slug}`,
+    indexHref: "/plans",
+  },
+  {
     url: "/context/guides-index.json",
     listKey: "guides",
     label: "Reading Scripture in Context",

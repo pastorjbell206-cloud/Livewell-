@@ -10,6 +10,11 @@ import App from "./App";
 import { getLoginUrl } from "./const";
 import "./index.css";
 import "./brand-override.css";
+import { captureInstallPrompt } from "@/lib/install";
+
+// The browser offers to install the site only once, early; keep that offer
+// for the "Add to your home screen" card on My Library (lib/install).
+captureInstallPrompt();
 
 // Calm defaults: one retry instead of three (the retry storm on a cold API
 // was the dominant cause of the ~20 s lab Speed Index), five minutes of

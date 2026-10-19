@@ -12,11 +12,13 @@
  */
 import { useEffect, useMemo, useState } from "react";
 import { Link } from "wouter";
-import { Download } from "lucide-react";
+import { FileText } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { LoadFailed } from "@/components/LoadFailed";
 import { fetchCatalogue, formatBytes, kindRank, type Catalogue, type CatalogueFile, type CatalogueItem } from "@/lib/catalogue";
+import { SendButton } from "@/components/TakeItWithYou";
+import { normalizeText, queryWords } from "@/lib/siteSearch";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
@@ -56,7 +58,7 @@ const SHELVES: Record<string, { label: string; blurb: string }> = {
   },
   Family: {
     label: "For families",
-    blurb: "The Advent and Holy Week family devotions as printable booklets, one day to a page.",
+    blurb: "The Thanksgiving, Advent, and Holy Week family devotions as printable booklets, one day to a page.",
   },
   "Context guide": {
     label: "Reading Scripture in context",
@@ -88,6 +90,7 @@ export default function Downloads() {
   const [catalogue, setCatalogue] = useState<Catalogue | null>(null);
   const [failed, setFailed] = useState(false);
   const [nonce, setNonce] = useState(0);
+  const [query, setQuery] = useState("");
 
   useEffect(() => {
     let stale = false;
@@ -116,6 +119,25 @@ export default function Downloads() {
     return { shelves, books };
   }, [catalogue]);
 
+  // Find a printable: every word of the query in the item, its shelf, or its file names.
+  const words = queryWords(query);
+  const q = query.trim();
+  const visible = useMemo(() => {
+    const words = queryWords(q);
+    return words.length
+        ? shelves
+            .map((s) => ({
+              ...s,
+              rows: s.rows.filter((r) => {
+                const text = normalizeText(`${r.title} ${r.summary ?? ""} ${s.label} ${(r.files ?? []).map((f) => f.label).join(" ")}`);
+                return words.every((w) => text.includes(w));
+              }),
+            }))
+            .filter((s) => s.rows.length)
+        : shelves;
+  }, [shelves, q]);
+  const matchCount = visible.reduce((n, s) => n + s.rows.length, 0);
+
   const fileCount = shelves.reduce((n, s) => n + s.rows.reduce((m, r) => m + (r.files?.length ?? 0), 0), 0);
   const jump = [...shelves.map((s) => ({ id: s.id, label: s.label, n: s.rows.length })), ...(books.length ? [{ id: "books", label: "The books", n: books.length }] : [])];
 
@@ -138,15 +160,25 @@ export default function Downloads() {
               ? `${fileCount} files, free, nothing gated. Print them, hand them out, teach from them.`
               : "Study guides, Find Help printables, plan booklets, and more. Free, and nothing is gated."}
           </p>
-          <p style={{ fontFamily: "var(--U)", fontSize: "14px", marginTop: "14px" }}>
-            <Link href="/search" style={{ color: "var(--bone)", textDecoration: "none", borderBottom: "1px solid var(--mustard)" }}>
-              Search the whole site
-            </Link>
+          <label htmlFor="dl-find" style={{ display: "block", fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--charcoal-fg)", margin: "var(--s-4) 0 8px" }}>
+            Find a printable
+          </label>
+          <input
+            id="dl-find"
+            type="search"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder="Try: grief, marriage, Romans"
+            autoComplete="off"
+            style={{ width: "100%", maxWidth: "560px", minHeight: "52px", padding: "12px 16px", fontSize: "17px", fontFamily: "var(--B)", borderRadius: "var(--radius-sm)", border: "1px solid var(--charcoal-line)", background: "var(--bone)", color: "var(--ink)" }}
+          />
+          <p style={{ fontFamily: "var(--U)", fontSize: "14px", lineHeight: 1.6, color: "var(--charcoal-fg-muted)", margin: "12px 0 0", maxWidth: "62ch" }}>
+            Tap a file to open it; your phone's viewer can save or print it. In the US, choose Letter; most other countries use A4.
           </p>
         </div>
       </section>
 
-      {jump.length > 1 && (
+      {jump.length > 1 && !words.length && (
         <nav aria-label="Jump to a section" style={{ background: "var(--bone-warm)", padding: "var(--s-4)", borderBottom: "1px solid var(--border)" }}>
           <div style={{ ...wrap, display: "flex", flexWrap: "wrap", gap: "10px" }}>
             {jump.map((j) => (
@@ -169,7 +201,14 @@ export default function Downloads() {
       )}
 
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-7)" }}>
-        <div style={wrap}>
+        <div style={wrap} id="downloads-top">
+          {words.length > 0 && catalogue && (
+            <p role="status" style={{ fontFamily: "var(--U)", fontSize: "15px", color: "var(--ink-muted)", margin: "0 0 var(--s-4)" }}>
+              {matchCount
+                ? `${matchCount} ${matchCount === 1 ? "printable matches" : "printables match"} "${query.trim()}".`
+                : <>Nothing here matches "{query.trim()}". Try another word, or <Link href={`/search?q=${encodeURIComponent(query.trim())}`} style={{ color: "var(--mustard-text)", fontWeight: 600 }}>search the whole site</Link>.</>}
+            </p>
+          )}
           {failed && !catalogue && (
             <LoadFailed
               what="The download list"
@@ -182,7 +221,7 @@ export default function Downloads() {
             <p role="status" style={{ fontFamily: "var(--B)", fontSize: "15px", color: "var(--ink-muted)" }}>Gathering the files…</p>
           )}
 
-          {shelves.map((s) => (
+          {visible.map((s) => (
             <div key={s.id} id={s.id} style={{ marginBottom: "var(--s-7)", scrollMarginTop: "80px" }}>
               <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px, 3.4vw, 32px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", lineHeight: 1.15, marginBottom: "8px" }}>
                 {s.label}
@@ -203,22 +242,24 @@ export default function Downloads() {
                       <div style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.6, color: "var(--ink-muted)", marginBottom: "10px" }}>{r.summary}</div>
                     )}
                     {fileLines(r.files ?? []).map((line) => (
-                      <div key={line.name || "files"} style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", lineHeight: 1.4 }}>
+                      <div key={line.name || "files"} style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted)", lineHeight: 1.4 }}>
                         {line.name && <span style={{ marginRight: "8px" }}>{line.name}:</span>}
                         {line.files.map(({ label, file }, i) => (
                           <span key={file.href}>
                             {i > 0 && <span aria-hidden style={{ margin: "0 8px" }}>·</span>}
+                            {/* Opens in the browser's viewer (which can save, share, or print it) instead of forcing a download. */}
                             <a
                               href={file.href}
-                              download
-                              aria-label={line.name ? `${line.name}, ${label}` : label}
+                              target="_blank"
+                              rel="noopener"
+                              aria-label={`${r.title}: ${line.name ? `${line.name}, ` : ""}${label}`}
                               style={{
-                                display: "inline-flex", alignItems: "center", gap: "5px", minHeight: "32px",
-                                fontSize: "13px", fontWeight: 600,
+                                display: "inline-flex", alignItems: "center", gap: "5px", minHeight: "44px",
+                                fontSize: "14px", fontWeight: 600,
                                 color: "var(--mustard-text)", textDecoration: "none",
                               }}
                             >
-                              <Download size={12} aria-hidden />
+                              <FileText size={13} aria-hidden />
                               <span style={{ borderBottom: "1px solid var(--mustard)" }}>{label}</span>
                               {file.bytes ? <span style={{ fontWeight: 400, color: "var(--ink-muted)" }}>{formatBytes(file.bytes)}</span> : null}
                             </a>
@@ -226,16 +267,22 @@ export default function Downloads() {
                         ))}
                       </div>
                     ))}
-                    {r.kind !== "Booklet" && (
-                      <div style={{ marginTop: "4px" }}>
-                        <Link href={r.href} style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", textDecoration: "none" }}>
+                    <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: "10px", flexWrap: "wrap", marginTop: "6px" }}>
+                      {r.kind !== "Booklet" ? (
+                        <Link href={r.href} style={{ display: "inline-flex", alignItems: "center", minHeight: "44px", fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted)" }}>
                           {r.kind === "Worksheet" || r.kind === "Workbook" || r.kind === "Card set" ? "The page it goes with" : "Read online"}
                         </Link>
-                      </div>
-                    )}
+                      ) : <span />}
+                      {r.files?.[0] && <SendButton title={r.title} href={r.files[0].href} summary={`${r.title}, free from LiveWell`} />}
+                    </div>
                   </div>
                 ))}
               </div>
+              {!words.length && (
+                <p style={{ marginTop: "var(--s-3)" }}>
+                  <a href="#downloads-top" style={{ display: "inline-flex", alignItems: "center", minHeight: "44px", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--mustard-text)" }}>Back to the top</a>
+                </p>
+              )}
             </div>
           ))}
 
