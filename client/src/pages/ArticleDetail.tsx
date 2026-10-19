@@ -6,7 +6,12 @@
  * - Related articles uses the relatedArticles router
  * - Emits Article schema + Open Graph via SEOMeta (React 19 head JSX)
  * - Body width is 680px (var(--w-prose)) per CLAUDE.md
- * - Bookmark + reading progress persist in localStorage
+ * - Save and send (TakeItWithYou) sit under the byline, on a phone's first
+ *   screen, and again after the essay; Save is My Library (lib/library), the
+ *   one save store, which also reads the page's older bookmarks
+ * - Listen (the device's own voice), Text size, and Focus sit above the body;
+ *   Focus mode keeps every action reachable
+ * - Printing gives the title, byline, and text; the rest is .no-print
  */
 import { useEffect, useRef, useState } from "react";
 import { scrollBehavior } from "@/lib/motion";
@@ -16,9 +21,13 @@ import { useQuery } from "@tanstack/react-query";
 import { DISCUSSION_GUIDES } from "@/data/discussion-guides";
 import { Markdown } from "@/components/Markdown";
 import { recordReadEvent } from "@/components/ReadDepthBeacon";
-import { ArrowLeft, BookOpen, Bookmark, Share2, User } from "lucide-react";
+import { ArrowLeft, BookOpen, Share2, User } from "lucide-react";
 
 import Layout from "@/components/Layout";
+import { TakeItWithYou } from "@/components/TakeItWithYou";
+import { ListenButton } from "@/components/ListenButton";
+import { TextSize, useTextSize } from "@/components/TextSize";
+import { shareTrigger } from "@/components/AudienceShare";
 import { LoadFailed } from "@/components/LoadFailed";
 import PageEndNav from "@/components/PageEndNav";
 import ReadingProgressBar from "@/components/ReadingProgressBar";
@@ -51,7 +60,8 @@ import { RetiredEssayNotice } from "@/components/RetiredEssayNotice";
 import { articleUrl, OG_DEFAULT_IMAGE, SITE_URL } from "@/lib/site";
 import { trackEssayComplete, trackPathStep } from "@/lib/telemetry";
 import { markEssayRead } from "@/lib/readProgress";
-import { isArrayOf, readStoredJSON, writeStoredJSON } from "@/lib/storage";
+import { readStoredJSON, writeStoredJSON } from "@/lib/storage";
+import { copyToClipboard } from "@/lib/clipboard";
 import { normalizeEssayBody, opensWithProse, stripDuplicateTitle } from "@/lib/html-body";
 
 /**
@@ -64,152 +74,61 @@ const ARTICLE_AUTHORS: Record<string, string> = {
   "the-womanhood-they-preached-was-small": "Susanna Bell",
 };
 
-function ShareButton({ title, url }: { title: string; url: string }) {
-  const [copied, setCopied] = useState(false);
-  return (
-    <button
-      type="button"
-      onClick={async () => {
-        if (typeof navigator !== "undefined" && navigator.share) {
-          try {
-            await navigator.share({ title, url, text: title });
-            return;
-          } catch {
-            // user cancelled — fall through to clipboard copy
-          }
-        }
-        try {
-          await navigator.clipboard.writeText(url);
-          setCopied(true);
-          setTimeout(() => setCopied(false), 1500);
-        } catch {
-          // clipboard unavailable
-        }
-      }}
-      aria-label="Share this article"
-      aria-live="polite"
-      style={{
-        display: "inline-flex",
-        alignItems: "center",
-        gap: "8px",
-        background: "transparent",
-        border: "1px solid var(--border)",
-        borderRadius: "var(--radius-sm)",
-        padding: "10px 16px",
-        fontFamily: "var(--U)",
-        fontSize: "13px",
-        fontWeight: 600,
-        color: "var(--ink-muted)",
-        cursor: "pointer",
-        transition: "all 0.2s",
-      }}
-    >
-      <Share2 size={14} aria-hidden />
-      {copied ? "Link copied" : "Share"}
-    </button>
-  );
+/**
+ * What a shared quotation carries: the words, then the essay they were met in
+ * and the site. Never a byline. A block quote in an essay is as often
+ * Scripture or another writer as James, so signing it "James Bell" would put
+ * words in his mouth (or put his name on Paul's). The link travels separately.
+ */
+export function quoteShareText(quote: string, essayTitle: string): string {
+  let words = quote.replace(/\s+/g, " ").trim();
+  // A quotation already set in quotation marks keeps one pair, not two.
+  const wrapped = /^["“](.*)["”]$/.exec(words);
+  if (wrapped) words = wrapped[1].trim();
+  return `“${words}”\n\nFrom "${essayTitle}" on LiveWell`;
 }
 
-function readBookmarked(slug: string): boolean {
-  return readStoredJSON("livewell:bookmarks", isStringArray, [] as string[]).includes(slug);
-}
-
-const isStringArray = isArrayOf((x): x is string => typeof x === "string");
-
-// Rendered with key={slug} so navigating between articles remounts it and
-// re-reads the stored bookmarks for the new slug.
-function BookmarkButton({ slug }: { slug: string }) {
-  const [bookmarked, setBookmarked] = useState(() => readBookmarked(slug));
-  const [saveFailed, setSaveFailed] = useState(false);
-
-  const toggle = () => {
-    // Flip only when the write lands, so "Saved" and aria-pressed stay
-    // truthful in private mode / blocked storage.
-    const next = !bookmarked;
-    const stored = readStoredJSON("livewell:bookmarks", isStringArray, [] as string[]);
-    const updated = next ? Array.from(new Set([...stored, slug])) : stored.filter(s => s !== slug);
-    const ok = writeStoredJSON("livewell:bookmarks", updated);
-    setSaveFailed(!ok);
-    if (ok) setBookmarked(next);
-  };
-
-  return (
-    <button
-      type="button"
-      onClick={toggle}
-      aria-pressed={bookmarked}
-      aria-label={bookmarked ? "Remove bookmark" : "Bookmark this article"}
-      style={{
-        display: "inline-flex",
-        alignItems: "center",
-        gap: "8px",
-        background: "transparent",
-        border: `1px solid ${bookmarked ? "var(--mustard)" : "var(--border)"}`,
-        borderRadius: "var(--radius-sm)",
-        padding: "10px 16px",
-        fontFamily: "var(--U)",
-        fontSize: "13px",
-        fontWeight: 600,
-        color: bookmarked ? "var(--ink)" : "var(--ink-muted)",
-        cursor: "pointer",
-        transition: "all 0.2s",
-      }}
-    >
-      <Bookmark
-        size={14}
-        aria-hidden
-        fill={bookmarked ? "currentColor" : "none"}
-      />
-      {bookmarked ? "Saved" : "Save"}
-      {saveFailed && (
-        <span role="status" style={{ fontWeight: 400, color: "var(--ink-muted)" }}>
-          — couldn't save to this browser
-        </span>
-      )}
-    </button>
-  );
+/**
+ * Hand a quotation to the phone's share sheet, or copy it with the link where
+ * there is no share sheet (or it fails). A reader who closes the sheet has
+ * chosen not to share: nothing is copied behind their back.
+ */
+async function shareQuote(title: string, text: string, url: string): Promise<"shared" | "cancelled" | "copied" | "failed"> {
+  if (typeof navigator !== "undefined" && typeof navigator.share === "function") {
+    try {
+      await navigator.share({ title, text, url });
+      return "shared";
+    } catch (e) {
+      if ((e as { name?: string } | null)?.name === "AbortError") return "cancelled";
+      // Anything else (no permission, unsupported data): copy instead.
+    }
+  }
+  return (await copyToClipboard(`${text}\n${url}`)) ? "copied" : "failed";
 }
 
 /**
  * ShareableQuote — every blockquote in an essay renders as a pull-quote the
  * reader can lift and share. Reads its own rendered text (so it survives
- * whatever markup the Markdown renderer puts inside), then hands it to the native share
- * sheet, falling back to a clipboard copy with attribution and the article URL.
+ * whatever markup the Markdown renderer puts inside), then hands it to the
+ * native share sheet, or copies it with the essay's title and link.
  */
 function ShareableQuote({
   children,
   shareTitle,
   shareUrl,
-  author,
 }: {
   children?: React.ReactNode;
   shareTitle: string;
   shareUrl: string;
-  /** The essay's resolved byline; shared quotes are attributed to the person who wrote them. */
-  author: string;
 }) {
   const textRef = useRef<HTMLDivElement>(null);
-  const [copied, setCopied] = useState(false);
+  const [state, setState] = useState<"" | "copied" | "failed">("");
 
   const onShare = async () => {
     const quote = textRef.current?.textContent?.trim() ?? "";
     if (!quote) return;
-    const attributed = `"${quote}" — ${author}`;
-    if (typeof navigator !== "undefined" && navigator.share) {
-      try {
-        await navigator.share({ title: shareTitle, text: attributed, url: shareUrl });
-        return;
-      } catch {
-        // user dismissed — fall through to clipboard
-      }
-    }
-    try {
-      await navigator.clipboard.writeText(`${attributed}\n${shareUrl}`);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 1800);
-    } catch {
-      // clipboard unavailable
-    }
+    const result = await shareQuote(shareTitle, quoteShareText(quote, shareTitle), shareUrl);
+    setState(result === "copied" || result === "failed" ? result : "");
   };
 
   return (
@@ -219,13 +138,13 @@ function ShareableQuote({
       </div>
       <button
         type="button"
-        className="quote-share__btn"
+        className="quote-share__btn no-print"
         onClick={onShare}
-        aria-label="Share this quote"
         aria-live="polite"
+        style={{ minHeight: "44px" }}
       >
         <Share2 size={13} aria-hidden />
-        {copied ? "Copied" : "Share this quote"}
+        {state === "copied" ? "Copied" : state === "failed" ? "Couldn't copy" : "Share this quote"}
       </button>
     </blockquote>
   );
@@ -241,16 +160,13 @@ function QuoteSelectionShare({
   title,
   url,
   bodyRef,
-  author,
 }: {
   title: string;
   url: string;
   bodyRef: React.RefObject<HTMLDivElement | null>;
-  /** The essay's resolved byline; a highlighted sentence is attributed to its writer. */
-  author: string;
 }) {
   const [pop, setPop] = useState<{ text: string; top: number; left: number } | null>(null);
-  const [copied, setCopied] = useState(false);
+  const [copy, setCopy] = useState<"" | "copied" | "failed">("");
 
   useEffect(() => {
     const fine =
@@ -268,7 +184,7 @@ function QuoteSelectionShare({
       if (!within || text.length < 12) { setPop(null); return; }
       const rect = range.getBoundingClientRect();
       if (!rect || rect.width === 0) { setPop(null); return; }
-      setCopied(false);
+      setCopy("");
       setPop({ text, top: rect.top, left: rect.left + rect.width / 2 });
     };
     const hide = () => setPop(null);
@@ -286,27 +202,25 @@ function QuoteSelectionShare({
   if (!pop) return null;
 
   const share = async () => {
-    const attributed = `“${pop.text}” — ${author}`;
-    if (typeof navigator !== "undefined" && navigator.share) {
-      try { await navigator.share({ title, text: attributed, url }); setPop(null); return; } catch { /* fall through to copy */ }
+    const result = await shareQuote(title, quoteShareText(pop.text, title), url);
+    if (result === "shared" || result === "cancelled") {
+      setPop(null);
+      return;
     }
-    try {
-      await navigator.clipboard.writeText(`${attributed}\n${url}`);
-      setCopied(true);
-      setTimeout(() => setPop(null), 1200);
-    } catch { /* ignore */ }
+    setCopy(result);
+    if (result === "copied") setTimeout(() => setPop(null), 1200);
   };
 
   return createPortal(
-    <div style={{ position: "fixed", top: Math.max(8, pop.top - 46), left: pop.left, transform: "translateX(-50%)", zIndex: 1100 }}>
+    <div className="no-print" style={{ position: "fixed", top: Math.max(8, pop.top - 52), left: pop.left, transform: "translateX(-50%)", zIndex: 1100 }}>
       <button
         type="button"
         onMouseDown={(e) => e.preventDefault()}
         onClick={share}
         aria-live="polite"
-        style={{ display: "inline-flex", alignItems: "center", gap: "7px", background: "var(--charcoal)", color: "var(--bone)", border: "none", borderRadius: "var(--radius-sm)", padding: "8px 14px", fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, letterSpacing: "0.04em", cursor: "pointer", boxShadow: "var(--shadow-modal)", whiteSpace: "nowrap" }}
+        style={{ display: "inline-flex", alignItems: "center", gap: "7px", minHeight: "44px", background: "var(--charcoal)", color: "var(--charcoal-fg)", border: "none", borderRadius: "var(--radius-sm)", padding: "8px 14px", fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, letterSpacing: "0.04em", cursor: "pointer", boxShadow: "var(--shadow-modal)", whiteSpace: "nowrap" }}
       >
-        <Share2 size={13} aria-hidden /> {copied ? "Copied" : "Share quote"}
+        <Share2 size={13} aria-hidden /> {copy === "copied" ? "Copied" : copy === "failed" ? "Couldn't copy" : "Share quote"}
       </button>
     </div>,
     document.body
@@ -374,12 +288,7 @@ function TableOfContents({
   return (
     <nav
       aria-label="In this essay"
-      // The site-header rule in index.css styles every bare <nav> as a 70px
-      // flex bar; reset it here or the card overflows onto the hero and body.
       style={{
-        display: "block",
-        height: "auto",
-        padding: 0,
         maxWidth: "var(--w-prose)",
         margin: "0 auto var(--s-5)",
       }}
@@ -535,6 +444,8 @@ export default function ArticleDetail() {
       return next;
     });
   };
+  // The reader's text size (A− / A+), kept on this device, separate from Focus.
+  const textSize = useTextSize();
 
   // Depth telemetry (board rec #17): emit "essay_read_complete" once, when a
   // zero-chrome sentinel at the foot of the body scrolls into view — a real
@@ -673,10 +584,18 @@ export default function ArticleDetail() {
   const ogImage = post.coverImage || OG_DEFAULT_IMAGE;
   const publishedIso = String(post.publishedAt || post.createdAt || "");
   const author = ARTICLE_AUTHORS[post.slug] ?? "James Bell";
+  // Save and send carry the essay's own path, so a saved essay is one entry in
+  // My Library however the reader arrived (?path=, #section).
+  const essayPath = `/writing/${post.slug}`;
+  const summary = post.excerpt ?? undefined;
+  const measure = focus ? "68ch" : "var(--w-prose)";
+  const bodySize = Math.round((focus ? 20 : 18) * textSize.scale);
 
   return (
     <Layout>
-      <ReadingProgressBar />
+      <div className="no-print">
+        <ReadingProgressBar />
+      </div>
       <SEOMeta
         title={post.title}
         description={description}
@@ -706,12 +625,15 @@ export default function ArticleDetail() {
           ]),
         ]}
       />
-      <article className={focus ? "lw-reading-focus" : undefined}>
+      {/* print-paper: printed, the essay is ink on paper whatever the screen's
+          theme (index.css, end of file). */}
+      <article className={focus ? "lw-reading-focus print-paper" : "print-paper"}>
         {/* BACK BUTTON — hidden in reading-focus mode (breadcrumb chrome) */}
         {!focus && (
         <div
+          className="no-print"
           style={{
-            padding: "20px var(--s-4)",
+            padding: "8px var(--s-4)",
             borderBottom: "1px solid var(--border)",
           }}
         >
@@ -722,6 +644,7 @@ export default function ArticleDetail() {
               display: "flex",
               alignItems: "center",
               gap: "8px",
+              minHeight: "44px",
               background: "transparent",
               border: "none",
               color: "var(--ink-muted)",
@@ -743,10 +666,11 @@ export default function ArticleDetail() {
         </div>
         )}
 
-        {/* HEADER — centered editorial */}
+        {/* HEADER — centered editorial. A little less air above the kicker on
+            a phone, so save and send land on the first screen. */}
         <section
           style={{
-            padding: "var(--s-6) var(--s-4) var(--s-5)",
+            padding: "clamp(var(--s-4), 8vw, var(--s-6)) var(--s-4) var(--s-4)",
             background: "var(--bone)",
             borderBottom: "1px solid var(--border)",
           }}
@@ -862,11 +786,20 @@ export default function ArticleDetail() {
                 </>
               )}
             </div>
+
+            {/* SAVE AND SEND — under the byline, so a reader on a phone can
+                keep the essay or send it to themselves before scrolling.
+                Shown in Focus mode too. The wrapper centers the bar and lets
+                its panel's text sit flush left. */}
+            <div style={{ display: "flex", justifyContent: "center", marginTop: "24px", textAlign: "left" }}>
+              <TakeItWithYou title={post.title} kind="Essay" href={essayPath} summary={summary} print align="center" />
+            </div>
           </div>
         </section>
 
-        {/* HERO IMAGE — real cover when present, on-brand generated art otherwise */}
-        <section style={{ padding: "var(--s-5) var(--s-4) 0" }}>
+        {/* HERO IMAGE — real cover when present, on-brand generated art
+            otherwise. Art for the screen; a printed essay starts with its words. */}
+        <section className="no-print" style={{ padding: "var(--s-5) var(--s-4) 0" }}>
           <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
             {post.coverImage ? (
               <img
@@ -897,65 +830,57 @@ export default function ArticleDetail() {
 
         {/* BODY */}
         <section style={{ padding: "var(--s-6) var(--s-4)" }}>
-          {/* Focus toggle — quiet reading-mode control (board rec #10). Sits
-              above the measure so it is reachable in both modes; the body is
-              never hidden, so this doubles as the "Exit focus" control. */}
+          {/* Reading tools, above the measure so they are reachable in both
+              modes: Listen (the device's own voice reads the body), Text size
+              (kept on this device), and the Focus toggle (board rec #10),
+              which doubles as "Exit focus" since the body is never hidden. */}
           <div
+            className="no-print"
+            role="group"
+            aria-label="Reading tools"
             style={{
-              maxWidth: focus ? "68ch" : "var(--w-prose)",
+              maxWidth: measure,
               margin: "0 auto var(--s-3)",
               display: "flex",
-              justifyContent: "flex-end",
+              flexWrap: "wrap",
+              alignItems: "center",
+              justifyContent: "space-between",
+              gap: "12px",
             }}
           >
-            <button
-              type="button"
-              onClick={toggleFocus}
-              aria-pressed={focus}
-              aria-label={
-                focus
-                  ? "Exit distraction-free reading"
-                  : "Enter distraction-free reading"
-              }
-              style={{
-                display: "inline-flex",
-                alignItems: "center",
-                gap: "8px",
-                background: "transparent",
-                border: "1px solid var(--border)",
-                borderRadius: "var(--radius-sm)",
-                padding: "8px 14px",
-                fontFamily: "var(--U)",
-                fontSize: "12px",
-                fontWeight: 600,
-                letterSpacing: "0.04em",
-                color: "var(--ink-muted)",
-                cursor: "pointer",
-                transition: "color 0.2s, border-color 0.2s",
-              }}
-              onMouseEnter={e => {
-                e.currentTarget.style.color = "var(--ink)";
-                e.currentTarget.style.borderColor = "var(--mustard)";
-              }}
-              onMouseLeave={e => {
-                e.currentTarget.style.color = "var(--ink-muted)";
-                e.currentTarget.style.borderColor = "var(--border)";
-              }}
-            >
-              <BookOpen size={14} aria-hidden />
-              {focus ? "Exit focus" : "Focus"}
-            </button>
+            {/* Keyed by essay: moving to another essay stops the voice. */}
+            <ListenButton key={post.slug} target={bodyRef} title={post.title} byline={`By ${author}`} />
+            <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: "12px" }}>
+              <TextSize size={textSize.size} onChange={textSize.setSize} saveFailed={textSize.saveFailed} />
+              <button
+                type="button"
+                onClick={toggleFocus}
+                aria-pressed={focus}
+                style={{ ...shareTrigger, transition: "color 0.2s, border-color 0.2s" }}
+                onMouseEnter={e => {
+                  e.currentTarget.style.color = "var(--ink)";
+                  e.currentTarget.style.borderColor = "var(--mustard)";
+                }}
+                onMouseLeave={e => {
+                  e.currentTarget.style.color = "var(--ink-muted)";
+                  e.currentTarget.style.borderColor = "var(--border)";
+                }}
+              >
+                <BookOpen size={16} aria-hidden />
+                {focus ? "Exit focus" : "Focus"}
+              </button>
+            </div>
           </div>
-          <QuoteSelectionShare title={post.title} url={canonical} bodyRef={bodyRef} author={author} />
+          <QuoteSelectionShare title={post.title} url={canonical} bodyRef={bodyRef} />
           {!focus && <TableOfContents bodyRef={bodyRef} contentKey={post.slug} />}
           <div
             className={dropCap ? "article-body" : "article-body prose-section"}
             ref={bodyRef}
             style={{
-              maxWidth: focus ? "68ch" : "var(--w-prose)",
+              maxWidth: measure,
               margin: "0 auto",
               fontFamily: "var(--B)",
-              fontSize: focus ? "20px" : "18px",
+              fontSize: `${bodySize}px`,
               lineHeight: focus ? 1.9 : 1.75,
               color: "var(--ink)",
             }}
@@ -964,7 +889,7 @@ export default function ArticleDetail() {
               <Markdown
                 components={{
                   blockquote: ({ children }: { children?: React.ReactNode }) => (
-                    <ShareableQuote shareTitle={post.title} shareUrl={canonical} author={author}>
+                    <ShareableQuote shareTitle={post.title} shareUrl={canonical}>
                       {children}
                     </ShareableQuote>
                   ),
@@ -986,47 +911,47 @@ export default function ArticleDetail() {
               admin dashboard's "Essays finished" tile. */}
           <div ref={bodyEndRef} aria-hidden style={{ height: 1 }} />
 
-          {/* Reader actions — hidden in reading-focus mode (share row) */}
-          {!focus && (
+          {/* Reader actions after the essay, in both modes: save and send
+              (the same My Library entry as the bar under the byline), then
+              cite, send to someone else, and the small-group guide. */}
           <div
+            className="no-print"
             style={{
-              maxWidth: "var(--w-prose)",
+              maxWidth: measure,
               margin: "var(--s-5) auto 0",
               paddingTop: "var(--s-4)",
               borderTop: "1px solid var(--border)",
-              display: "flex",
-              flexWrap: "wrap",
-              alignItems: "center",
-              gap: "12px",
             }}
           >
-            <BookmarkButton key={post.slug} slug={post.slug} />
-            <ShareButton title={post.title} url={canonical} />
-            <CitationCopy
+            <TakeItWithYou
               title={post.title}
-              url={canonical}
-              publishedDate={publishedIso}
+              kind="Essay"
+              href={essayPath}
+              summary={summary}
+              print
+              extra={
+                <>
+                  <CitationCopy title={post.title} url={canonical} publishedDate={publishedIso} author={author} />
+                  {/* Three-audience share: a skeptic, a pastor, a spouse */}
+                  <AudienceShare title={post.title} url={canonical} />
+                  {/* Pastor distribution: hand this essay to a whole small group */}
+                  {post.slug && DISCUSSION_GUIDES[post.slug] && (
+                    <Link href={`/group-guide/${post.slug}`} style={{ ...shareTrigger, color: "var(--ink)" }}>
+                      Use this with your small group
+                    </Link>
+                  )}
+                </>
+              }
             />
-            {/* Three-audience share replaces the single SendToPastor button */}
-            <AudienceShare title={post.title} url={canonical} />
-            {/* Pastor distribution: hand this essay to a whole small group */}
-            {post.slug && DISCUSSION_GUIDES[post.slug] && (
-              <Link
-                href={`/group-guide/${post.slug}`}
-                style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--ink)", textDecoration: "none", border: "1px solid var(--border)", borderRadius: "999px", padding: "7px 14px", whiteSpace: "nowrap" }}
-              >
-                Use this with your small group
-              </Link>
-            )}
           </div>
-          )}
         </section>
 
-        {/* POST-BODY CHROME — hidden in reading-focus mode. The book that
-            carries this essay's argument, then a quiet list of other essays
-            (board rec #9), then the newsletter CTA, author bio, and end nav. */}
+        {/* POST-BODY CHROME — hidden in reading-focus mode, and never printed.
+            The book that carries this essay's argument, then a quiet list of
+            other essays (board rec #9), then the newsletter CTA, author bio,
+            and end nav. */}
         {!focus && (
-          <>
+          <div className="no-print">
             {/* NEXT STEPS — the matched tool and reading path for this essay
                 (built long ago, never imported; revived by QW-16) */}
             {/* ONE PRIMARY NEXT STEP. A reader at the end of an essay is at
@@ -1063,7 +988,7 @@ export default function ArticleDetail() {
             <ChannelLine />
 
             <PageEndNav back={{ href: "/writing", label: "All essays" }} />
-          </>
+          </div>
         )}
       </article>
     </Layout>

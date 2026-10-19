@@ -699,3 +699,21 @@ h1, h2, h3 { text-wrap: balance; }
 @media (max-width: 1023px) {
   .persistent-help-tab { display: none !important; }
 }
+
+/*
+  PRINTING AN ESSAY OR A SMALL-GROUP GUIDE (ArticleDetail.tsx, GroupGuide.tsx)
+  Paper is light whatever theme the screen is in. Inside .print-paper the
+  tokens print at their light values, so dark mode does not print pale text
+  on white, and a guide's title, set on the charcoal band on screen, prints in
+  ink. What these pages show only on screen carries .no-print (hidden by the
+  print rule above), and the fixed Find Help tab stays off the paper.
+*/
+@media print {
+  .print-paper {
+    --bone:#F5F0E6;--bone-warm:#EDE8DC;--card:#FFFFFF;
+    --ink:#14110C;--ink-muted:#5A5448;--mustard-text:#7A6010;
+    --line:#D9D3C4;--border:#D9D3C4;
+    --charcoal:var(--bone);--charcoal-fg:var(--ink);--charcoal-fg-muted:var(--ink-muted);
+  }
+  .persistent-help-tab { display: none !important; }
+}

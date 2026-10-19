@@ -14,7 +14,7 @@
  * 2026-10-14), so the page says plainly that nothing leaves the device, and
  * offers the reader's own email app to carry the saved list to another one.
  */
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Link } from "wouter";
 import { ArrowRight, Mail, Share2, Trash2 } from "lucide-react";
 import Layout from "@/components/Layout";
@@ -63,9 +63,11 @@ async function sendOne(item: LibraryItem): Promise<void> {
 export default function MyLibrary() {
   const items = useLibrary();
   const [planTitles, setPlanTitles] = useState<Record<string, string>>({});
-  const [progress, setProgress] = useState<ProgressRow[]>([]);
-  const [recent, setRecent] = useState<{ href: string; title: string }[]>([]);
-  const [snippets, setSnippets] = useState(0);
+  // Read from this browser as the page renders; plan titles arrive later and
+  // only rename the rows they belong to.
+  const progress = useMemo<ProgressRow[]>(() => collectProgress(planTitles), [planTitles]);
+  const [recent] = useState(() => recentEssays());
+  const [snippets] = useState(() => savedSnippetCount());
   const [removeFailed, setRemoveFailed] = useState(false);
 
   useEffect(() => {
@@ -83,12 +85,6 @@ export default function MyLibrary() {
       alive = false;
     };
   }, []);
-
-  useEffect(() => {
-    setProgress(collectProgress(planTitles));
-    setRecent(recentEssays());
-    setSnippets(savedSnippetCount());
-  }, [planTitles]);
 
   const nothingYet = items.length === 0 && progress.length === 0 && recent.length === 0 && snippets === 0;
 

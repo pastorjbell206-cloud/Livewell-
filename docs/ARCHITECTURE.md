@@ -279,8 +279,13 @@ sweeps removed from the Grow libraries is recorded in `docs/grow/integrity/`.
 
 **Take it with you (no accounts; nothing leaves the reader's device)** —
 `components/TakeItWithYou.tsx` is the Send / Save / Print bar on care pages,
-eight-week plans, study guides, context guides, and every tool (through
-`ToolActions`). On a phone, Send opens the phone's own share sheet
+eight-week plans, study guides, context guides, small-group guides, every tool
+(through `ToolActions`), and every essay (under the byline, so it is on a
+phone's first screen, and again after the text, where Cite this and Send to…
+join it). An essay also has Listen (the device's own voice,
+`components/ListenButton.tsx`) and Text size (`components/TextSize.tsx`), and
+prints as ink on paper in either theme (`.print-paper` at the end of
+`index.css`). On a phone, Send opens the phone's own share sheet
 (`navigator.share`). On a computer it opens a panel with a code to scan
 (`qrcode-generator`, loaded on demand), "Email it to me" (a `mailto:` the
 reader's own mail app sends), and Copy link; touch devices also get Text it

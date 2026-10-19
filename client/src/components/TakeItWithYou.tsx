@@ -269,13 +269,12 @@ function SendPanel({ id, title, url, summary, onClose }: { id: string; title: st
  * code is shown.
  */
 export function QrCode({ text, size = 160 }: { text: string; size?: number }) {
-  const [code, setCode] = useState<{ d: string; n: number } | null>(null);
-  const [failed, setFailed] = useState(false);
+  // Keyed by the address it was drawn for, so a new address never shows the
+  // old code, and nothing needs resetting when the address changes.
+  const [drawn, setDrawn] = useState<{ text: string; code: { d: string; n: number } | null } | null>(null);
 
   useEffect(() => {
     let alive = true;
-    setCode(null);
-    setFailed(false);
     import("qrcode-generator")
       .then((m) => {
         const qr = m.default(0, "M");
@@ -284,17 +283,19 @@ export function QrCode({ text, size = 160 }: { text: string; size?: number }) {
         const n = qr.getModuleCount();
         let d = "";
         for (let r = 0; r < n; r++) for (let c = 0; c < n; c++) if (qr.isDark(r, c)) d += `M${c} ${r}h1v1h-1z`;
-        if (alive) setCode({ d, n });
+        if (alive) setDrawn({ text, code: { d, n } });
       })
       .catch(() => {
-        if (alive) setFailed(true);
+        if (alive) setDrawn({ text, code: null });
       });
     return () => {
       alive = false;
     };
   }, [text]);
 
-  if (failed) {
+  const current = drawn?.text === text ? drawn : null;
+  const code = current?.code ?? null;
+  if (current && !code) {
     return (
       <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", width: size, margin: 0 }}>
         The code couldn't be drawn here. Use Email or Copy link instead.
