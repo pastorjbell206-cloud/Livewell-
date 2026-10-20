@@ -5,14 +5,21 @@
  * self-checks at /assessments, then the whole /tools registry, where every
  * tool stays listed), help in a hard season (/help, the /plans index of every
  * eight-week care plan, and a few plans by name), and the household (/family).
+ * The hero opens the reader's own My Library and the site search, and the page
+ * ends with the card that puts LiveWell on a phone's home screen.
  *
  * Files James adds in /admin/resources still appear here on their own, under
  * Downloads, whenever there are any; nothing renders while they load.
  */
+import { useMemo } from "react";
 import { Link } from "wouter";
+import { BookmarkCheck, Search } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { HubGroup, HubStyles } from "@/components/HubGroup";
+import { AddToHomeScreen } from "@/components/AddToHomeScreen";
+import { useLibrary } from "@/lib/library";
+import { collectProgress } from "@/lib/myProgress";
 import { trpc } from "@/lib/trpc";
 
 const gutter = "clamp(16px, 4vw, var(--s-4))";
@@ -28,14 +35,46 @@ const FORMAT_LABELS: Record<string, string> = {
 
 /** The eight-week care plans (client/public/plans), by what a reader is carrying. */
 const CARE_PLANS = [
-  { label: "anxiety", href: "/plans/anxiety" },
-  { label: "grief", href: "/plans/grief" },
-  { label: "a marriage under strain", href: "/plans/marriage" },
-  { label: "taking your questions seriously", href: "/plans/deconstruction" },
-  { label: "the curious skeptic", href: "/plans/skeptic" },
-  { label: "the new believer", href: "/plans/new-believer" },
-  { label: "one undivided life", href: "/plans/whole-life" },
+  { label: "Anxiety", href: "/plans/anxiety" },
+  { label: "Grief", href: "/plans/grief" },
+  { label: "A marriage under strain", href: "/plans/marriage" },
+  { label: "Taking your questions seriously", href: "/plans/deconstruction" },
+  { label: "The curious skeptic", href: "/plans/skeptic" },
+  { label: "The new believer", href: "/plans/new-believer" },
+  { label: "One undivided life", href: "/plans/whole-life" },
 ];
+
+/** A button-sized link on the charcoal hero. */
+const heroAction = {
+  display: "inline-flex",
+  alignItems: "center",
+  gap: "8px",
+  minHeight: "44px",
+  padding: "10px 16px",
+  border: "1px solid var(--charcoal-line)",
+  borderRadius: "var(--radius-sm)",
+  color: "var(--charcoal-fg)",
+  fontFamily: "var(--U)",
+  fontSize: "14px",
+  fontWeight: 600,
+  textDecoration: "none",
+} as const;
+
+/** A plan by name, big enough to tap. */
+const planPill = {
+  display: "inline-flex",
+  alignItems: "center",
+  minHeight: "44px",
+  padding: "8px 14px",
+  border: "1px solid var(--border)",
+  borderRadius: "var(--radius-pill)",
+  background: "var(--card)",
+  color: "var(--ink)",
+  fontFamily: "var(--U)",
+  fontSize: "14px",
+  fontWeight: 500,
+  textDecoration: "none",
+} as const;
 
 const inlineLink = {
   color: "var(--ink)",
@@ -46,6 +85,10 @@ const inlineLink = {
 export default function Resources() {
   // Files added through /admin/resources. Shown only when there are some.
   const added = trpc.resources.listPublished.useQuery().data?.filter((r) => r.url) ?? [];
+  // What this reader has kept here, from this browser only (lib/library, lib/myProgress).
+  const saved = useLibrary().length;
+  const started = useMemo(() => collectProgress().length, []);
+  const mine = [saved ? `${saved} saved` : "", started ? `${started} started` : ""].filter(Boolean).join(", ");
 
   return (
     <Layout>
@@ -75,6 +118,15 @@ export default function Resources() {
           <p style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.7, color: "var(--charcoal-fg-muted)", maxWidth: "60ch", margin: 0 }}>
             Downloads, tools, help for a hard season, and things for the household. Everything here is free.
           </p>
+          <div style={{ display: "flex", flexWrap: "wrap", gap: "10px", marginTop: "var(--s-4)" }}>
+            <Link href="/my-library" style={heroAction}>
+              <BookmarkCheck size={16} aria-hidden /> My Library
+              {mine && <span style={{ fontWeight: 400, color: "var(--charcoal-fg-muted)" }}>{mine}</span>}
+            </Link>
+            <Link href="/search" style={heroAction}>
+              <Search size={16} aria-hidden /> Search everything
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -166,15 +218,16 @@ export default function Resources() {
               },
             ]}
           >
-            Eight-week plans walk with you through one season at a time, among them{" "}
-            {CARE_PLANS.map((p, i) => (
-              <span key={p.href}>
-                <Link href={p.href} style={inlineLink}>
-                  {p.label}
-                </Link>
-                {i < CARE_PLANS.length - 1 ? ", " : "."}
-              </span>
-            ))}
+            Eight-week plans walk with you through one season at a time. A few of them:
+            <ul style={{ listStyle: "none", margin: "12px 0 0", padding: 0, display: "flex", flexWrap: "wrap", gap: "8px" }}>
+              {CARE_PLANS.map((p) => (
+                <li key={p.href}>
+                  <Link href={p.href} style={planPill}>
+                    {p.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </HubGroup>
 
           <HubGroup
@@ -189,7 +242,7 @@ export default function Resources() {
               {
                 label: "Family devotions",
                 href: "/family/devotions",
-                note: "A devotion for every week of the year, plus Advent and Holy Week.",
+                note: "A devotion for every week of the year, plus Thanksgiving, Advent, and Holy Week.",
               },
               {
                 label: "A family catechism",
@@ -205,6 +258,10 @@ export default function Resources() {
           >
             For the table where most faith is actually handed on.
           </HubGroup>
+
+          <div style={{ marginTop: "var(--s-4)", maxWidth: "640px" }}>
+            <AddToHomeScreen />
+          </div>
         </div>
       </section>
     </Layout>

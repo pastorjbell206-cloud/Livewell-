@@ -22,7 +22,12 @@ export function builtFrom(href) {
   // and the tools' blank printables (scripts/lib/help-printables.mjs).
   m = href.match(/^\/downloads\/help\/(.+)-(guide|prayer|scripture|week)-(letter|a4)\.pdf$/);
   if (m) return existsSync(join(PUB, `needs/${m[1]}.json`));
-  if (/^\/downloads\/seasonal\/(advent|holy-week)-family-(letter|a4)\.pdf$/.test(href)) return existsSync(join(PUB, "family-seasonal.json"));
+  m = href.match(/^\/downloads\/seasonal\/(advent|holy-week|thanksgiving)-family-(letter|a4)\.pdf$/);
+  if (m) {
+    const file = join(PUB, "family-seasonal.json");
+    const key = { advent: "advent", "holy-week": "holyWeek", thanksgiving: "thanksgiving" }[m[1]];
+    return existsSync(file) && (JSON.parse(readFileSync(file, "utf8"))[key] ?? []).length > 0;
+  }
   m = href.match(/^\/downloads\/plans\/(.+)-booklet-(letter|a4)\.pdf$/);
   if (m) return existsSync(join(PUB, `plans/${m[1]}.json`));
   if (/^\/downloads\/tools\/(worry-log|referral-list|prayer-list|budget|grief-journal|conflict-guide|prayer-journal|rule-of-life|memory-cards|family-cards|holidays-after-loss|first-response)-(letter|a4)\.pdf$/.test(href)) return true;

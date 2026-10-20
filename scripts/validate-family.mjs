@@ -12,11 +12,16 @@
  * To refresh a passage, copy it from `node scripts/bsb.mjs "<ref>"`, or run the
  * conversion in readingText() from scripts/lib/bsb.mjs.
  *
+ * The seasonal packs (client/public/family-seasonal.json) retell each passage
+ * for children and print the passage itself from its reference, so there every
+ * day must carry its fields, its reference must resolve in the BSB, and the
+ * retelling may not use quotation marks (it is a paraphrase, not a quotation).
+ *
  *   node scripts/validate-family.mjs        CI gate
  */
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
-import { quotesPassage } from "./lib/bsb.mjs";
+import { passage, quotesPassage } from "./lib/bsb.mjs";
 
 const ROOT = new URL("..", import.meta.url).pathname;
 const SOURCES = [
@@ -53,9 +58,26 @@ for (const [file, refKey, textKey] of SOURCES) {
   });
 }
 
+const SEASONAL = "client/public/family-seasonal.json";
+const DAY_FIELDS = ["label", "title", "passage", "passageText", "reflection", "question", "prayer"];
+let days = 0;
+for (const [season, list] of Object.entries(JSON.parse(readFileSync(join(ROOT, SEASONAL), "utf8")))) {
+  if (!Array.isArray(list)) { errors.push(`${SEASONAL} ${season}: expected a list of days`); continue; }
+  list.forEach((d, i) => {
+    const where = `${SEASONAL} ${season}[${i}] ${d?.passage ?? "(no reference)"}`;
+    for (const k of DAY_FIELDS) if (typeof d?.[k] !== "string" || !d[k].trim()) errors.push(`${where}: needs ${k}`);
+    if (typeof d?.passage === "string") {
+      try { if (!passage(d.passage).text) errors.push(`${where}: no BSB text for this reference`); }
+      catch (e) { errors.push(`${where}: ${e.message}`); }
+    }
+    if (typeof d?.passageText === "string" && /["“”]/.test(d.passageText)) errors.push(`${where}: the retelling is a paraphrase, so it may not use quotation marks`);
+    days++;
+  });
+}
+
 if (errors.length) {
   console.error(`\nFamily Scripture: ${errors.length} problem(s)\n`);
   for (const e of errors) console.error(`  ${e}`);
   process.exit(1);
 }
-console.log(`Family Scripture: clean (${checked} passages, verbatim BSB).`);
+console.log(`Family Scripture: clean (${checked} passages, verbatim BSB; ${days} seasonal days, each reference in the BSB).`);

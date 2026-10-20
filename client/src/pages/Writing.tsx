@@ -13,16 +13,24 @@
  * URL parameters: ?section=<slug> shows one section, ?track=<slug> shows the
  * sections that answer for a taxonomy track (old hub links land here), and
  * ?q= searches the public essays (the WebSite SearchAction target).
+ *
+ * The search box sits in the hero, above "Start with these", so it stays put
+ * while the reader types and the row below it gives way to the results; a
+ * search with no essay to show points on to the site-wide search. Every essay
+ * row carries the reader's own marks from this device: Read (finished, from
+ * lib/readProgress) and Saved (in My Library, lib/library).
  */
 import { useMemo, useState } from "react";
 import { Link, useLocation } from "wouter";
-import { Search, X } from "lucide-react";
+import { BookmarkCheck, Search, X } from "lucide-react";
 
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { StartHereRow } from "@/components/StartHereRow";
 import { trpc } from "@/lib/trpc";
+import { useLibrary } from "@/lib/library";
+import { getReadEssays } from "@/lib/readProgress";
 import { pillarToTrack, resolveTrack } from "@/lib/taxonomy";
 import {
   START_WITH,
@@ -58,6 +66,12 @@ interface ShelfItem {
   section: string | null;
 }
 
+/** What this device knows about the reader's essays: finished (slugs) and saved (paths). */
+interface ReaderMarks {
+  read: Set<string>;
+  saved: Set<string>;
+}
+
 function minutesOf(row: ListingRow | undefined): number | null {
   if (!row) return null;
   if (typeof row.readingTimeMinutes === "number" && row.readingTimeMinutes > 0) return row.readingTimeMinutes;
@@ -91,6 +105,15 @@ export default function Writing() {
   const sectionParam = params.get("section");
   const trackParam = params.get("track");
   const query = search.trim();
+
+  // The reader's marks: essays finished on this device, and pages saved to
+  // My Library (kept current as the reader saves elsewhere).
+  const library = useLibrary();
+  const [readSlugs] = useState(() => getReadEssays());
+  const marks = useMemo<ReaderMarks>(
+    () => ({ read: readSlugs, saved: new Set(library.map((i) => i.href)) }),
+    [readSlugs, library]
+  );
 
   const rows = useMemo(() => (postsQuery.data ?? []) as unknown as ListingRow[], [postsQuery.data]);
   const loaded = postsQuery.isSuccess;
@@ -243,6 +266,8 @@ export default function Writing() {
           >
             {intro}
           </p>
+          {/* Above "Start with these", so it does not move while the reader types. */}
+          <SearchBox value={search} onChange={setSearch} />
           {filtering && (
             <p style={{ margin: "20px 0 0", fontFamily: "var(--U)", fontSize: "14px" }}>
               <Link
@@ -272,8 +297,6 @@ export default function Writing() {
       {/* THE SHELF */}
       <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-7)" }}>
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
-          <SearchBox value={search} onChange={setSearch} />
-
           {query ? (
             <div aria-live="polite">
               <p style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted)", margin: "0 0 var(--s-3)" }}>
@@ -281,12 +304,33 @@ export default function Writing() {
                   ? `No essay on the shelf matches "${query}".`
                   : `${results.length} ${results.length === 1 ? "essay matches" : "essays match"} "${query}".`}
               </p>
-              <EssayList items={results} />
+              {results.length === 0 && (
+                <p style={{ margin: "0 0 var(--s-3)" }}>
+                  <Link
+                    href={`/search?q=${encodeURIComponent(query)}`}
+                    style={{
+                      display: "inline-flex",
+                      alignItems: "center",
+                      minHeight: "44px",
+                      fontFamily: "var(--U)",
+                      fontSize: "15px",
+                      fontWeight: 600,
+                      color: "var(--ink)",
+                      textDecoration: "underline",
+                      textDecorationColor: "var(--mustard)",
+                      textUnderlineOffset: "4px",
+                    }}
+                  >
+                    Search the whole site for "{query}"
+                  </Link>
+                </p>
+              )}
+              <EssayList items={results} marks={marks} />
             </div>
           ) : (
             <>
               {shownLatest.length > 0 && (
-                <ShelfGroup id="latest" name="Latest" description="New essays, as they are written." items={shownLatest} />
+                <ShelfGroup id="latest" name="Latest" description="New essays, as they are written." items={shownLatest} marks={marks} />
               )}
               {sectionsWithItems.map(({ section, items }) => (
                 <ShelfGroup
@@ -295,6 +339,7 @@ export default function Writing() {
                   name={section.name}
                   description={section.description}
                   items={items}
+                  marks={marks}
                   href={filtering ? undefined : sectionHref(section)}
                 />
               ))}
@@ -348,9 +393,10 @@ function SearchBox({ value, onChange }: { value: string; onChange: (v: string) =
         background: "var(--card)",
         border: "1px solid var(--border)",
         borderRadius: "var(--radius-sm)",
-        padding: "10px 14px",
+        minHeight: "48px",
+        padding: "0 2px 0 14px",
         maxWidth: "420px",
-        marginBottom: "var(--s-5)",
+        margin: "var(--s-3) 0 0",
       }}
     >
       <Search size={14} aria-hidden style={{ color: "var(--ink-muted)", flex: "0 0 auto" }} />
@@ -363,6 +409,7 @@ function SearchBox({ value, onChange }: { value: string; onChange: (v: string) =
         style={{
           flex: 1,
           minWidth: 0,
+          minHeight: "44px",
           border: "none",
           outline: "none",
           background: "transparent",
@@ -376,9 +423,9 @@ function SearchBox({ value, onChange }: { value: string; onChange: (v: string) =
           type="button"
           onClick={() => onChange("")}
           aria-label="Clear search"
-          style={{ background: "none", border: "none", cursor: "pointer", color: "var(--ink-muted)", padding: 0 }}
+          style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", minWidth: "44px", minHeight: "44px", background: "none", border: "none", cursor: "pointer", color: "var(--ink-muted)", padding: 0 }}
         >
-          <X size={14} aria-hidden />
+          <X size={16} aria-hidden />
         </button>
       )}
     </div>
@@ -395,12 +442,14 @@ function ShelfGroup({
   name,
   description,
   items,
+  marks,
   href,
 }: {
   id: string;
   name: string;
   description: string;
   items: ShelfItem[];
+  marks: ReaderMarks;
   /** Link the heading to the section's own view (the unfiltered shelf only). */
   href?: string;
 }) {
@@ -444,57 +493,80 @@ function ShelfGroup({
         </p>
       </div>
       <div style={{ flex: "2 1 420px", minWidth: 0 }}>
-        <EssayList items={items} />
+        <EssayList items={items} marks={marks} />
       </div>
     </section>
   );
 }
 
-function EssayList({ items }: { items: ShelfItem[] }) {
+function EssayList({ items, marks }: { items: ShelfItem[]; marks: ReaderMarks }) {
   if (items.length === 0) return null;
   return (
     <ul style={{ listStyle: "none", margin: 0, padding: 0 }}>
-      {items.map((it, i) => (
-        <li key={it.slug} style={{ borderTop: i === 0 ? "none" : "1px solid var(--border)" }}>
-          <Link
-            href={`/writing/${it.slug}`}
-            style={{ display: "block", padding: i === 0 ? "0 0 20px" : "20px 0", textDecoration: "none", color: "var(--ink)" }}
-          >
-            <span
-              style={{
-                display: "block",
-                fontFamily: "var(--F)",
-                fontSize: "23px",
-                fontWeight: 500,
-                lineHeight: 1.25,
-                letterSpacing: "-0.005em",
-              }}
+      {items.map((it, i) => {
+        const href = `/writing/${it.slug}`;
+        const read = marks.read.has(it.slug);
+        const saved = marks.saved.has(href);
+        return (
+          <li key={it.slug} style={{ borderTop: i === 0 ? "none" : "1px solid var(--border)" }}>
+            <Link
+              href={href}
+              style={{ display: "block", padding: i === 0 ? "0 0 20px" : "20px 0", textDecoration: "none", color: "var(--ink)" }}
             >
-              {it.title}
-            </span>
-            {it.blurb && (
               <span
                 style={{
                   display: "block",
-                  marginTop: "6px",
-                  fontFamily: "var(--B)",
-                  fontSize: "15px",
-                  lineHeight: 1.6,
-                  color: "var(--ink-muted)",
-                  maxWidth: "62ch",
+                  fontFamily: "var(--F)",
+                  fontSize: "23px",
+                  fontWeight: 500,
+                  lineHeight: 1.25,
+                  letterSpacing: "-0.005em",
                 }}
               >
-                {it.blurb}
+                {it.title}
               </span>
-            )}
-            {it.minutes ? (
-              <span style={{ display: "block", marginTop: "8px", fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)" }}>
-                {it.minutes} min read
-              </span>
-            ) : null}
-          </Link>
-        </li>
-      ))}
+              {it.blurb && (
+                <span
+                  style={{
+                    display: "block",
+                    marginTop: "6px",
+                    fontFamily: "var(--B)",
+                    fontSize: "15px",
+                    lineHeight: 1.6,
+                    color: "var(--ink-muted)",
+                    maxWidth: "62ch",
+                  }}
+                >
+                  {it.blurb}
+                </span>
+              )}
+              {(it.minutes || read || saved) && (
+                <span
+                  style={{
+                    display: "flex",
+                    flexWrap: "wrap",
+                    alignItems: "center",
+                    gap: "4px 14px",
+                    marginTop: "8px",
+                    fontFamily: "var(--U)",
+                    fontSize: "13px",
+                    color: "var(--ink-muted)",
+                  }}
+                >
+                  {it.minutes ? <span>{it.minutes} min read</span> : null}
+                  {/* The same mark the start row shows (index.css .ed-read). */}
+                  {read && <span className="ed-read">✓ Read</span>}
+                  {saved && (
+                    <span style={{ display: "inline-flex", alignItems: "center", gap: "5px", color: "var(--ink)", fontWeight: 600 }}>
+                      <BookmarkCheck size={14} aria-hidden /> Saved
+                    </span>
+                  )}
+                </span>
+              )}
+            </Link>
+          </li>
+        );
+      })}
     </ul>
   );
 }

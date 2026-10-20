@@ -791,16 +791,15 @@ export function studyGuideHelpBox(doc, crisis, audience, topics = []) {
 
 /**
  * Seasonal family packs (docs/grow/GROW-PROMPT.md 7.6 and 5.5): the site's
- * own Advent (25 days) and Holy Week (8 days) family devotions, from
+ * own Thanksgiving week (7 days), Advent (25 days), and Holy Week (8 days)
+ * family devotions, from
  * client/public/family-seasonal.json, printed as a booklet. The devotions
  * paraphrase each passage for children; the pack prints the passage itself,
  * verbatim from the Berean Standard Bible, and labels the paraphrase as one.
  */
 export async function seasonalPdf(root, season, size, passageText) {
   const data = JSON.parse(fs.readFileSync(path.join(root, "client/public/family-seasonal.json"), "utf8"))[season];
-  const meta = season === "advent"
-    ? { title: "Advent at the Table", sub: "Twenty-five days for families, December 1 to Christmas" }
-    : { title: "Holy Week at the Table", sub: "Eight days for families, Palm Sunday to Easter" };
+  const meta = SEASON_META[season];
   const doc = newDoc(size, `${meta.title}: ${meta.sub}`, 54);
   const root_ = doc.struct("Document");
   doc.addStructure(root_);
@@ -845,11 +844,19 @@ export async function seasonalPdf(root, season, size, passageText) {
   return toBuffer(doc);
 }
 
+const SEASON_META = {
+  thanksgiving: { file: "thanksgiving-family", title: "Thanksgiving at the Table", sub: "Seven days for families, the week of Thanksgiving" },
+  advent: { file: "advent-family", title: "Advent at the Table", sub: "Twenty-five days for families, December 1 to Christmas" },
+  holyWeek: { file: "holy-week-family", title: "Holy Week at the Table", sub: "Eight days for families, Palm Sunday to Easter" },
+};
+
 export async function buildSeasonalPacks(root, passageText) {
   const out = path.join(root, "client/public/downloads/seasonal");
   fs.mkdirSync(out, { recursive: true });
   const written = [];
-  for (const [season, file] of [["advent", "advent-family"], ["holyWeek", "holy-week-family"]]) {
+  const data = JSON.parse(fs.readFileSync(path.join(root, "client/public/family-seasonal.json"), "utf8"));
+  // A pack prints once it has days in the data.
+  for (const [season, file] of Object.entries(SEASON_META).filter(([s]) => (data[s] ?? []).length).map(([s, m]) => [s, m.file])) {
     for (const [name, size] of Object.entries(SIZES)) {
       const p = path.join(out, `${file}-${name}.pdf`);
       fs.writeFileSync(p, await seasonalPdf(root, season, size, passageText));

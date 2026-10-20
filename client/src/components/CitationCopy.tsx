@@ -9,24 +9,36 @@
  * Why this exists: CLAUDE.md names PCN as the highest-leverage growth
  * channel. Pastors quote and link Bell's pieces in sermons and bulletins;
  * giving them clean attribution removes friction.
+ *
+ * Copies go through lib/clipboard, so "Copied" shows only when the copy
+ * happened; when it did not, the citation is shown to select by hand. The
+ * menu opens, places itself, and closes the way AudienceShare's does
+ * (useShareMenu).
  */
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Copy, Check } from "lucide-react";
 import { SITE_NAME, AUTHOR_NAME } from "@/lib/site";
+import { copyToClipboard } from "@/lib/clipboard";
+import { shareMenuItem, shareTrigger, useShareMenu } from "@/components/AudienceShare";
 
 interface CitationCopyProps {
   title: string;
   url: string;
   publishedDate?: string;
+  /** The essay's byline; defaults to James Bell. */
+  author?: string;
 }
 
 type Format = "sermon" | "chicago" | "apa";
 
-function buildCitation(
+const LABELS: Record<Format, string> = { sermon: "Sermon attribution", chicago: "Chicago", apa: "APA" };
+
+export function buildCitation(
   format: Format,
   title: string,
   url: string,
-  publishedDate?: string
+  publishedDate?: string,
+  author: string = AUTHOR_NAME
 ): string {
   const date = publishedDate ? new Date(publishedDate) : new Date();
   const year = date.getFullYear();
@@ -38,129 +50,81 @@ function buildCitation(
 
   switch (format) {
     case "sermon":
-      return `${AUTHOR_NAME}, "${title}," ${SITE_NAME}, ${year}. ${url}`;
+      return `${author}, "${title}," ${SITE_NAME}, ${year}. ${url}`;
     case "chicago":
-      return `${AUTHOR_NAME}. "${title}." ${SITE_NAME}, ${longDate}. ${url}.`;
+      return `${author}. "${title}." ${SITE_NAME}, ${longDate}. ${url}.`;
     case "apa":
-      return `${AUTHOR_NAME.split(" ").reverse().join(", ")}. (${year}). ${title}. ${SITE_NAME}. ${url}`;
+      return `${author.split(" ").reverse().join(", ")}. (${year}). ${title}. ${SITE_NAME}. ${url}`;
   }
 }
 
-export function CitationCopy({ title, url, publishedDate }: CitationCopyProps) {
-  const [open, setOpen] = useState(false);
-  const [copiedFormat, setCopiedFormat] = useState<Format | null>(null);
+export function CitationCopy({ title, url, publishedDate, author = AUTHOR_NAME }: CitationCopyProps) {
+  const wrapRef = useRef<HTMLDivElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
+  const menu = useShareMenu(wrapRef, buttonRef);
+  const [result, setResult] = useState<{ format: Format; copied: boolean; text: string } | null>(null);
+
+  const toggle = () => {
+    if (!menu.open) setResult(null);
+    menu.toggle();
+  };
 
   const handleCopy = async (format: Format) => {
-    const citation = buildCitation(format, title, url, publishedDate);
-    try {
-      await navigator.clipboard.writeText(citation);
-      setCopiedFormat(format);
-      setTimeout(() => setCopiedFormat(null), 2000);
-    } catch {
-      // clipboard write can fail in non-HTTPS or restrictive iframes; no-op
-    }
+    const citation = buildCitation(format, title, url, publishedDate, author);
+    setResult({ format, copied: await copyToClipboard(citation), text: citation });
   };
 
   return (
-    <div style={{ position: "relative", display: "inline-block" }}>
+    <div ref={wrapRef} onBlur={menu.onBlur} style={{ position: "relative", display: "inline-block" }}>
       <button
+        ref={buttonRef}
         type="button"
-        onClick={() => setOpen(o => !o)}
-        aria-expanded={open}
-        aria-label="Copy citation for this article"
-        style={{
-          display: "inline-flex",
-          alignItems: "center",
-          gap: "8px",
-          background: "transparent",
-          border: "1px solid var(--border)",
-          borderRadius: "var(--radius-sm)",
-          padding: "10px 16px",
-          fontFamily: "var(--U)",
-          fontSize: "13px",
-          fontWeight: 600,
-          color: "var(--ink-muted)",
-          cursor: "pointer",
-          transition: "all 0.2s",
-        }}
+        onClick={toggle}
+        aria-expanded={menu.open}
+        aria-controls={menu.open ? menu.menuId : undefined}
+        style={shareTrigger}
       >
-        <Copy size={14} aria-hidden />
+        <Copy size={16} aria-hidden />
         Cite this
       </button>
-      {open && (
-        <div
-          role="menu"
-          style={{
-            position: "absolute",
-            top: "calc(100% + 8px)",
-            right: 0,
-            background: "var(--card)",
-            border: "1px solid var(--border)",
-            boxShadow: "var(--shadow-modal)",
-            padding: "8px",
-            minWidth: "240px",
-            zIndex: 10,
-          }}
-        >
-          {(["sermon", "chicago", "apa"] as Format[]).map(format => (
-            <button
-              key={format}
-              type="button"
-              role="menuitem"
-              onClick={() => handleCopy(format)}
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "space-between",
-                width: "100%",
-                padding: "10px 12px",
-                background:
-                  copiedFormat === format ? "var(--bone-warm)" : "transparent",
-                border: "none",
-                fontFamily: "var(--U)",
-                fontSize: "13px",
-                fontWeight: 500,
-                color: "var(--ink)",
-                textAlign: "left",
-                cursor: "pointer",
-                transition: "background 0.15s",
-              }}
-              onMouseEnter={e =>
-                (e.currentTarget.style.background = "var(--bone-warm)")
-              }
-              onMouseLeave={e =>
-                (e.currentTarget.style.background =
-                  copiedFormat === format ? "var(--bone-warm)" : "transparent")
-              }
-            >
-              <span>
-                {format === "sermon"
-                  ? "Sermon attribution"
-                  : format === "chicago"
-                    ? "Chicago"
-                    : "APA"}
-              </span>
-              {copiedFormat === format ? (
-                <Check size={14} aria-hidden />
-              ) : (
-                <Copy size={14} aria-hidden />
-              )}
-            </button>
-          ))}
+      {menu.open && (
+        <div id={menu.menuId} style={menu.menuStyle}>
+          {(["sermon", "chicago", "apa"] as Format[]).map((format) => {
+            const copied = result?.format === format && result.copied;
+            return (
+              <button
+                key={format}
+                type="button"
+                onClick={() => handleCopy(format)}
+                style={{
+                  ...shareMenuItem,
+                  justifyContent: "space-between",
+                  background: copied ? "var(--bone-warm)" : "transparent",
+                }}
+                onMouseEnter={(e) => (e.currentTarget.style.background = "var(--bone-warm)")}
+                onMouseLeave={(e) => (e.currentTarget.style.background = copied ? "var(--bone-warm)" : "transparent")}
+              >
+                <span>{LABELS[format]}</span>
+                {copied ? (
+                  <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "13px", fontWeight: 600 }}>
+                    <Check size={16} aria-hidden /> Copied
+                  </span>
+                ) : (
+                  <Copy size={16} aria-hidden />
+                )}
+              </button>
+            );
+          })}
+          {result && !result.copied && (
+            <div style={{ padding: "8px 12px 10px", fontFamily: "var(--U)", fontSize: "13px", lineHeight: 1.5, color: "var(--ink)" }}>
+              <p style={{ margin: "0 0 6px", color: "var(--ink-muted)" }}>Couldn't copy here. Select the citation and copy it:</p>
+              <p style={{ margin: 0, userSelect: "all", WebkitUserSelect: "all", overflowWrap: "anywhere" }}>{result.text}</p>
+            </div>
+          )}
         </div>
       )}
-      <span
-        role="status"
-        style={{
-          position: "absolute",
-          width: "1px",
-          height: "1px",
-          overflow: "hidden",
-          clip: "rect(0 0 0 0)",
-          whiteSpace: "nowrap",
-        }}
-      >
-        {copiedFormat ? "Citation copied" : ""}
+      <span role="status" className="sr-only">
+        {result ? (result.copied ? "Citation copied" : "Couldn't copy the citation") : ""}
       </span>
     </div>
   );

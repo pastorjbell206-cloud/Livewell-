@@ -8,7 +8,7 @@
  */
 import { Link, useLocation } from "wouter";
 import { useEffect, useRef, useState } from "react";
-import { ChevronDown, Menu, Search, X } from "lucide-react";
+import { BookmarkCheck, ChevronDown, Menu, Search, X } from "lucide-react";
 
 import {
   HELP_LINK,
@@ -154,7 +154,7 @@ export default function MinimalNav() {
                   clip: "rect(0,0,0,0)",
                 }}
               >
-                Search essays and books
+                Search LiveWell
               </label>
               <input
                 id="nav-search-input"
@@ -191,11 +191,14 @@ export default function MinimalNav() {
                   href={link.href}
                   onClick={() => setSearchOpen(false)}
                   style={{
+                    display: "inline-flex",
+                    alignItems: "center",
+                    minHeight: "44px",
                     fontFamily: "var(--U)",
-                    fontSize: "12px",
+                    fontSize: "13px",
                     border: "1px solid rgba(245,240,230,0.2)",
                     color: "rgba(245,240,230,0.6)",
-                    padding: "6px 14px",
+                    padding: "6px 16px",
                     borderRadius: "999px",
                     textDecoration: "none",
                   }}
@@ -227,6 +230,7 @@ export default function MinimalNav() {
 
       {/* Main Nav */}
       <nav
+        className="site-nav"
         style={{
           position: "sticky",
           top: 0,
@@ -235,9 +239,9 @@ export default function MinimalNav() {
           backdropFilter: "blur(16px)",
           borderBottom: "1px solid var(--border)",
           width: "100%",
-          // The legacy nav{} rule in index.css caps every <nav> at 1200px and
-          // centres it; the header runs the full width so its rule does too.
-          // Its height and side padding (32px, 16px on phones) still apply.
+          // The .site-nav rule in index.css caps the bar at 1200px and centres
+          // it; the header runs the full width so its rule does too. Its
+          // height and side padding (32px, 16px on phones) still apply.
           maxWidth: "none",
           margin: 0,
         }}
@@ -673,6 +677,28 @@ export default function MinimalNav() {
               );
             })}
             <div style={{ display: "flex", gap: "12px", marginTop: "16px" }}>
+              {/* What this reader saved and started, kept on this device (/my-library). */}
+              <Link
+                href="/my-library"
+                onClick={() => setMobileOpen(false)}
+                style={{
+                  flex: 1,
+                  display: "inline-flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  gap: "8px",
+                  textDecoration: "none",
+                  border: "1px solid var(--ink)",
+                  color: "var(--ink)",
+                  padding: "13px 16px",
+                  fontFamily: "var(--U)",
+                  fontSize: "14px",
+                  fontWeight: 600,
+                  borderRadius: "var(--radius-sm)",
+                }}
+              >
+                <BookmarkCheck size={16} aria-hidden /> My Library
+              </Link>
               <Link
                 href="/subscribe"
                 onClick={() => setMobileOpen(false)}
