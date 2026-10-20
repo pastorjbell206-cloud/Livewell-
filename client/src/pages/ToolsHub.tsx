@@ -5,7 +5,7 @@ import { BookOpen, Heart, Users, Search, HeartHandshake, DollarSign, Baby, Brain
 import { useFavorites } from "@/hooks/useFavorites";
 import { useMemo, useState } from "react";
 import { useLibrary } from "@/lib/library";
-import { normalizeText, queryWords } from "@/lib/siteSearch";
+import { hasWordStarts, queryWords } from "@/lib/siteSearch";
 
 export const TOOLS = [
   {
@@ -277,8 +277,7 @@ const slug = (t: string) => t.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(
 /** A tool matches when every word of the query is in its name or description. */
 function toolMatches(tool: (typeof TOOLS)[number], q: string): boolean {
   const words = queryWords(q);
-  const text = normalizeText(`${tool.title} ${tool.description}`);
-  return words.length > 0 && words.every((w) => text.includes(w));
+  return words.length > 0 && hasWordStarts(`${tool.title} ${tool.description}`, words);
 }
 
 function ToolCard({ tool }: { tool: (typeof TOOLS)[number] }) {
@@ -353,7 +352,7 @@ export default function ToolsHub() {
             Tools for the Life You Are <em style={{ fontStyle: "italic", color: "var(--mustard)" }}>Actually</em> Living
           </h1>
           <p style={{ fontSize: "17px", lineHeight: 1.7, color: "var(--charcoal-fg-muted)", fontFamily: "var(--B)", margin: "0 0 var(--s-4)" }}>
-            Built for marriages, for households, for anyone who takes the faith seriously enough to practice it on a Tuesday. Every one is free, works on your phone, and keeps what you write on your own device.
+            Built for marriages, for households, for anyone who takes the faith seriously enough to practice it on a Tuesday. Every one is free and works on your phone, and the journals and planners keep what you write on your own device.
           </p>
           <label htmlFor="tool-find" style={{ display: "block", fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--charcoal-fg)", marginBottom: "8px", textAlign: "left" }}>
             Find a tool
@@ -365,7 +364,7 @@ export default function ToolsHub() {
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Try: prayer, worry, marriage"
             autoComplete="off"
-            style={{ width: "100%", minHeight: "52px", padding: "12px 16px", fontSize: "17px", fontFamily: "var(--B)", borderRadius: "var(--radius-sm)", border: "1px solid var(--charcoal-line)", background: "var(--bone)", color: "var(--ink)" }}
+            style={{ width: "100%", minHeight: "52px", padding: "12px 16px", fontSize: "17px", fontFamily: "var(--B)", borderRadius: "var(--radius-sm)", border: "1px solid var(--charcoal-line)", background: "var(--charcoal-fg)", color: "var(--charcoal)" }}
           />
         </div>
       </section>
@@ -377,11 +376,12 @@ export default function ToolsHub() {
             <span aria-hidden style={{ color: "var(--mustard-text)" }}>→</span>
           </Link>
 
+          {/* Always on the page, so a screen reader hears each new count. */}
+          <p role="status" style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted)", margin: searching ? "0 0 var(--s-3)" : 0 }}>
+            {searching ? (found.length ? `${found.length} ${found.length === 1 ? "tool matches" : "tools match"} "${query.trim()}"` : `No tool matches "${query.trim()}".`) : ""}
+          </p>
           {searching ? (
             <div>
-              <p role="status" style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted)", margin: "0 0 var(--s-3)" }}>
-                {found.length ? `${found.length} ${found.length === 1 ? "tool matches" : "tools match"} "${query.trim()}"` : `No tool matches "${query.trim()}".`}
-              </p>
               {found.length ? (
                 <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(300px, 100%), 1fr))", gap: "16px" }}>
                   {found.map((tool) => <ToolCard key={tool.href} tool={tool} />)}

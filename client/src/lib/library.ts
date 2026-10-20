@@ -31,25 +31,44 @@ export interface LibraryItem {
   kind: string;
   /** When it was saved (ISO 8601). */
   savedAt: string;
+  /**
+   * An essay's own date, as the shelf judges it (publishedAt, else createdAt),
+   * so a post James publishes after the shelf was set stays a live link.
+   */
+  date?: string;
 }
 
 const isItem = (x: unknown): x is LibraryItem => {
   if (!x || typeof x !== "object") return false;
   const r = x as Record<string, unknown>;
-  return typeof r.href === "string" && typeof r.title === "string" && typeof r.kind === "string" && typeof r.savedAt === "string";
+  return (
+    typeof r.href === "string" &&
+    typeof r.title === "string" &&
+    typeof r.kind === "string" &&
+    typeof r.savedAt === "string" &&
+    (r.date === undefined || typeof r.date === "string")
+  );
 };
-const isItems = isArrayOf(isItem);
+const isList = (x: unknown): x is unknown[] => Array.isArray(x);
 const isSlugs = isArrayOf((x): x is string => typeof x === "string");
 
-const SITE_HOST = /(^|\.)livewellbyjamesbell\.co$/i;
+/** The stored list, every well-formed entry kept: one bad entry never empties the rest. */
+function storedItems(): LibraryItem[] {
+  return readStoredJSON(LIBRARY_KEY, isList, []).filter(isItem);
+}
 
-/** One spelling per page: a path on this site, without its hash or a trailing slash. */
+const SITE_HOST = /(^|\.)livewellbyjamesbell\.co$/i;
+/** Tags a shared link picks up (Facebook, Google, Mailchimp); never part of the page itself. */
+const TRACKING = /^(utm_\w+|fbclid|gclid|mc_cid|mc_eid)$/i;
+
+/** One spelling per page: a path on this site, without its hash, tracking tags, or a trailing slash. */
 export function libraryPath(href: string): string {
   let path = href.trim();
   try {
     const url = new URL(path, "https://www.livewellbyjamesbell.co");
     const sameHost = SITE_HOST.test(url.hostname) || (typeof window !== "undefined" && url.host === window.location.host);
     if (!sameHost) return url.toString();
+    for (const key of Array.from(url.searchParams.keys())) if (TRACKING.test(key)) url.searchParams.delete(key);
     path = url.pathname + url.search;
   } catch {
     /* keep it as given */
@@ -67,7 +86,7 @@ function humanize(slug: string): string {
 
 /** Saved items, newest first, with the older essay bookmarks folded in. */
 export function readLibrary(): LibraryItem[] {
-  const items = readStoredJSON(LIBRARY_KEY, isItems, []);
+  const items = storedItems();
   const have = new Set(items.map((i) => i.href));
   const legacy = readStoredJSON(LEGACY_BOOKMARKS_KEY, isSlugs, []);
   const fromBookmarks: LibraryItem[] = legacy
@@ -87,8 +106,11 @@ function notify(): void {
 /** Save a page (or refresh its title). Returns false when the browser refused the write. */
 export function saveToLibrary(item: Omit<LibraryItem, "savedAt">): boolean {
   const href = libraryPath(item.href);
-  const items = readStoredJSON(LIBRARY_KEY, isItems, []).filter((i) => i.href !== href);
-  const next: LibraryItem[] = [{ href, title: item.title.trim() || href, kind: item.kind, savedAt: new Date().toISOString() }, ...items];
+  const items = storedItems().filter((i) => i.href !== href);
+  const next: LibraryItem[] = [
+    { href, title: item.title.trim() || href, kind: item.kind, savedAt: new Date().toISOString(), ...(item.date ? { date: item.date } : {}) },
+    ...items,
+  ];
   const ok = writeStoredJSON(LIBRARY_KEY, next);
   if (ok) notify();
   return ok;
@@ -97,7 +119,7 @@ export function saveToLibrary(item: Omit<LibraryItem, "savedAt">): boolean {
 /** Remove a page from the library (and from the older essay bookmarks). Returns false when the write failed. */
 export function removeFromLibrary(href: string): boolean {
   const path = libraryPath(href);
-  const items = readStoredJSON(LIBRARY_KEY, isItems, []);
+  const items = storedItems();
   let ok = true;
   if (items.some((i) => i.href === path)) ok = writeStoredJSON(LIBRARY_KEY, items.filter((i) => i.href !== path));
   const essay = path.match(ESSAY);

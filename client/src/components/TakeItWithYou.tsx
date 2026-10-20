@@ -37,6 +37,8 @@ interface TakeItWithYouProps {
   align?: "start" | "center";
   /** More buttons for this page, after Save and Print (a tool's Start over). */
   extra?: ReactNode;
+  /** An essay's own date (publishedAt, else createdAt), kept with the save so My Library can judge it. */
+  date?: string;
 }
 
 function isTouch(): boolean {
@@ -89,7 +91,7 @@ export const takeButton: React.CSSProperties = {
 };
 const primary: React.CSSProperties = { ...takeButton, background: "var(--ink)", color: "var(--bone)", borderColor: "var(--ink)" };
 
-export function TakeItWithYou({ title, kind, href, summary, print = false, save = true, align = "start", extra }: TakeItWithYouProps) {
+export function TakeItWithYou({ title, kind, href, summary, print = false, save = true, align = "start", extra, date }: TakeItWithYouProps) {
   const path = libraryPath(href ?? (typeof window !== "undefined" ? window.location.pathname + window.location.search : "/"));
   const url = absoluteUrl(path);
   const items = useLibrary();
@@ -114,7 +116,7 @@ export function TakeItWithYou({ title, kind, href, summary, print = false, save 
   };
 
   const toggleSave = () => {
-    const ok = saved ? removeFromLibrary(path) : saveToLibrary({ href: path, title, kind });
+    const ok = saved ? removeFromLibrary(path) : saveToLibrary({ href: path, title, kind, date: date || undefined });
     setStatus(ok ? (saved ? "removed" : "saved") : "failed");
   };
 
@@ -144,7 +146,7 @@ export function TakeItWithYou({ title, kind, href, summary, print = false, save 
       </div>
       <p aria-live="polite" style={{ fontFamily: "var(--U)", fontSize: "14px", lineHeight: 1.5, color: "var(--ink-muted)", margin: status ? "10px 0 0" : 0, textAlign: align === "center" ? "center" : "left" }}>
         {status === "saved" && (
-          <>Saved to <Link href="/my-library" style={{ color: "var(--mustard-text)", fontWeight: 600 }}>My Library</Link>, on this device.</>
+          <>Saved to <Link href="/my-library" style={{ color: "var(--mustard-text)", fontWeight: 600 }}>My Library</Link>, in this browser.</>
         )}
         {status === "removed" && "Removed from My Library."}
         {status === "failed" && SAVE_FAILED}
@@ -198,12 +200,18 @@ export function SendButton({ title, href, summary, label = "Send" }: { title: st
 function SendPanel({ id, title, url, summary, onClose }: { id: string; title: string; url: string; summary?: string; onClose: () => void }) {
   const [copy, setCopy] = useState<"idle" | "copied" | "failed">("idle");
   const headingRef = useRef<HTMLParagraphElement>(null);
+  const panelRef = useRef<HTMLDivElement>(null);
   const touch = isTouch();
 
+  // Into the panel once, as it opens; never again when the page around it
+  // re-renders (a keystroke in a journal, a Save), or focus would be taken.
   useEffect(() => {
     headingRef.current?.focus();
+  }, []);
+  // Escape closes it while the reader is in it, not from another field or overlay.
+  useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") onClose();
+      if (e.key === "Escape" && panelRef.current?.contains(document.activeElement)) onClose();
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
@@ -214,7 +222,7 @@ function SendPanel({ id, title, url, summary, onClose }: { id: string; title: st
   };
 
   return (
-    <div id={id} role="region" aria-label="Send it to your phone" style={{ marginTop: "12px", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", background: "var(--card)", padding: "var(--s-4)", maxWidth: "560px" }}>
+    <div ref={panelRef} id={id} role="region" aria-label="Send it to your phone" style={{ flexBasis: "100%", marginTop: "12px", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", background: "var(--card)", padding: "var(--s-4)", maxWidth: "560px" }}>
       <div style={{ display: "flex", alignItems: "flex-start", justifyContent: "space-between", gap: "12px" }}>
         <p ref={headingRef} tabIndex={-1} style={{ fontFamily: "var(--F)", fontSize: "22px", lineHeight: 1.2, color: "var(--ink)", margin: 0, outline: "none" }}>
           Send it to your phone

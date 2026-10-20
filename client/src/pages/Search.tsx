@@ -9,7 +9,8 @@ import { ArrowLeft, Search as SearchIcon } from "lucide-react";
 
 import { LibrarySource, LIBRARY_SOURCES, pickString } from "@/lib/catalog";
 import { essayDate, isPublicEssay } from "@/lib/shelf";
-import { rankEntries } from "@/lib/siteSearch";
+import { crisisTopicsFor, rankEntries } from "@/lib/siteSearch";
+import { CrisisBlock } from "@/components/CrisisBlock";
 import { TOOLS } from "@/pages/ToolsHub";
 
 // --- Library manifest search (static JSON content libraries) ---
@@ -107,6 +108,9 @@ export default function SearchPage() {
   }, [libraryEntries, query]);
 
   const visibleLibraryMatches = libraryMatches.slice(0, LIBRARY_RESULT_CAP);
+  // A reader who types their trouble here ("I want to die") sees how to reach
+  // a person before any page.
+  const crisisTopics = useMemo(() => crisisTopicsFor(query), [query]);
   const truncatedLibraries = useMemo(() => {
     if (libraryMatches.length <= LIBRARY_RESULT_CAP) return [];
     const visible = new Set(visibleLibraryMatches);
@@ -262,10 +266,19 @@ export default function SearchPage() {
         <div>
           {query === "" ? (
             <div className="text-center py-12" style={{ color: "var(--ink-muted)" }}>
-              <p className="text-lg">Type a word, a topic, or what you're going through, in your own words. Find Help, the essays, the plans, the guides, and the tools are all in here.</p>
+              <p className="text-lg">Type a word or a topic. Find Help, the essays, the plans, the guides, and the tools are all in here.</p>
+              {/* /help searches in the browser; this page also asks the server about essays. */}
+              <p className="text-lg" style={{ marginTop: "12px" }}>
+                For what you're going through, <Link href="/help" style={{ color: "var(--mustard-text)", fontWeight: 600 }}>Find Help</Link> starts from your own words.
+              </p>
             </div>
           ) : (
             <>
+              {crisisTopics.length > 0 && (
+                <div className="mb-12">
+                  <CrisisBlock id="help-now" topics={crisisTopics} heading="If you need help now" />
+                </div>
+              )}
               {/* Library results from the static JSON manifests */}
               {visibleLibraryMatches.length > 0 && (
                 <div className="mb-12">

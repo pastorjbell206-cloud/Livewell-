@@ -6,7 +6,7 @@
  */
 import { useId, useState } from "react";
 import { CalendarPlus } from "lucide-react";
-import { googleCalendarUrl, openIcs, type Reminder } from "@/lib/calendar";
+import { googleCalendarUrl, isAppleMobile, openIcs, type IcsResult, type Reminder } from "@/lib/calendar";
 import { absoluteUrl } from "@/components/TakeItWithYou";
 
 interface RemindMeProps {
@@ -36,7 +36,7 @@ const TIMES = [
 export function RemindMe({ title, details, href, freq, count, schedule, defaultTime = "evening", onDark = false }: RemindMeProps) {
   const [open, setOpen] = useState(false);
   const [time, setTime] = useState<(typeof TIMES)[number]["id"]>(defaultTime);
-  const [status, setStatus] = useState<"" | "sent" | "failed">("");
+  const [status, setStatus] = useState<"" | IcsResult>("");
   const groupId = useId();
   const fg = onDark ? "var(--charcoal-fg)" : "var(--ink)";
   const muted = onDark ? "var(--charcoal-fg-muted)" : "var(--ink-muted)";
@@ -52,7 +52,7 @@ export function RemindMe({ title, details, href, freq, count, schedule, defaultT
 
   return (
     <div className="no-print" style={{ margin: "12px 0 0" }}>
-      <button type="button" onClick={() => setOpen((o) => !o)} aria-expanded={open} aria-controls={open ? groupId : undefined} style={button}>
+      <button type="button" onClick={() => setOpen((o) => !o)} aria-expanded={open} aria-controls={open ? groupId : undefined} aria-label={`Remind me: ${title}`} style={button}>
         <CalendarPlus size={16} aria-hidden /> Remind me
       </button>
       {open && (
@@ -64,7 +64,7 @@ export function RemindMe({ title, details, href, freq, count, schedule, defaultT
             <div style={{ display: "flex", flexWrap: "wrap", gap: "6px 16px" }}>
               {TIMES.map((t) => (
                 <label key={t.id} style={{ display: "inline-flex", alignItems: "center", gap: "8px", minHeight: "44px", fontFamily: "var(--U)", fontSize: "14px", color: fg, cursor: "pointer" }}>
-                  <input type="radio" name={`${groupId}-time`} value={t.id} checked={time === t.id} onChange={() => setTime(t.id)} style={{ width: "18px", height: "18px", accentColor: "var(--mustard)" }} />
+                  <input type="radio" name={`${groupId}-time`} value={t.id} checked={time === t.id} onChange={() => setTime(t.id)} style={{ width: "18px", height: "18px", accentColor: onDark ? "var(--mustard)" : "var(--mustard-text)" }} />
                   {t.label}
                 </label>
               ))}
@@ -74,16 +74,18 @@ export function RemindMe({ title, details, href, freq, count, schedule, defaultT
             <a href={googleCalendarUrl(reminder)} target="_blank" rel="noopener noreferrer" style={button}>
               Google Calendar
             </a>
-            <button type="button" onClick={() => setStatus(openIcs(reminder) ? "sent" : "failed")} style={button}>
+            <button type="button" onClick={() => setStatus(openIcs(reminder))} style={button}>
               Apple, Outlook, or other
             </button>
           </div>
           <p aria-live="polite" style={{ fontFamily: "var(--U)", fontSize: "13px", lineHeight: 1.5, color: muted, margin: "10px 0 0" }}>
-            {status === "sent"
-              ? "If your calendar didn't open, look in your downloads for livewell-reminder.ics and open it."
-              : status === "failed"
-                ? "Your browser wouldn't make the calendar file. Try Google Calendar instead."
-                : "It goes into your calendar, not to LiveWell. Delete it there any time."}
+            {status === "opened"
+              ? "If Calendar didn't open, use Google Calendar instead."
+              : status === "downloaded"
+                ? "If your calendar didn't open, look in your downloads for livewell-reminder.ics and open it."
+                : status === "unsupported" || status === "failed"
+                  ? `This browser can't add it to your calendar. Use Google Calendar${isAppleMobile() ? ", or open this page in Safari" : ""}.`
+                  : "It goes into your calendar, not to LiveWell. Delete it there any time."}
           </p>
         </div>
       )}

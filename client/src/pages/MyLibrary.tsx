@@ -14,21 +14,21 @@
  * 2026-10-14), so the page says plainly that nothing leaves the device, and
  * offers the reader's own email app to carry the saved list to another one.
  */
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Link } from "wouter";
-import { ArrowRight, Mail, Share2, Trash2 } from "lucide-react";
+import { ArrowRight, Mail, Trash2 } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { AddToHomeScreen } from "@/components/AddToHomeScreen";
-import { SAVE_FAILED, absoluteUrl, emailHref } from "@/components/TakeItWithYou";
+import { SAVE_FAILED, SendButton, absoluteUrl } from "@/components/TakeItWithYou";
 import { removeFromLibrary, useLibrary, type LibraryItem } from "@/lib/library";
 import { collectProgress, recentEssays, savedSnippetCount, type ProgressRow } from "@/lib/myProgress";
-import { isPublicEssayHref } from "@/lib/shelf";
+import { isPublicEssay } from "@/lib/shelf";
 
 const wrap: React.CSSProperties = { maxWidth: "var(--w-default)", margin: "0 auto" };
 const h2: React.CSSProperties = { fontFamily: "var(--F)", fontSize: "clamp(26px, 3.6vw, 36px)", fontWeight: 400, letterSpacing: "-0.02em", lineHeight: 1.12, color: "var(--ink)", margin: "0 0 var(--s-3)" };
 const kicker: React.CSSProperties = { fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, letterSpacing: "0.16em", textTransform: "uppercase", color: "var(--mustard-text)" };
-const rowStyle: React.CSSProperties = { display: "flex", alignItems: "center", gap: "12px", padding: "14px 0", borderBottom: "1px solid var(--border)" };
+const rowStyle: React.CSSProperties = { display: "flex", flexWrap: "wrap", alignItems: "center", gap: "12px", padding: "14px 0", borderBottom: "1px solid var(--border)" };
 const small: React.CSSProperties = { fontFamily: "var(--U)", fontSize: "13px", lineHeight: 1.5, color: "var(--ink-muted)" };
 const iconButton: React.CSSProperties = {
   display: "inline-flex", alignItems: "center", justifyContent: "center", gap: "6px", minWidth: "44px", minHeight: "44px", padding: "8px 10px",
@@ -47,17 +47,16 @@ function listEmail(items: LibraryItem[]): string {
   return `mailto:?subject=${encodeURIComponent("My LiveWell library")}&body=${encodeURIComponent(`${body}\n\nFrom LiveWell by James Bell`)}`;
 }
 
-async function sendOne(item: LibraryItem): Promise<void> {
-  const url = absoluteUrl(item.href);
-  if (typeof navigator !== "undefined" && typeof navigator.share === "function") {
-    try {
-      await navigator.share({ title: item.title, url });
-      return;
-    } catch (e) {
-      if (e instanceof Error && e.name === "AbortError") return;
-    }
-  }
-  window.location.href = emailHref(item.title, url);
+const ESSAY_PATH = /^\/writing\/([^/?#]+)$/;
+
+/**
+ * Whether a saved page is still there to open. Only essays come and go: one
+ * off the shelf answers with a takedown notice. An essay saved with its date
+ * is judged as the shelf judges it, so a post James publishes later stays live.
+ */
+function isLiveSaved(item: LibraryItem): boolean {
+  const m = item.href.match(ESSAY_PATH);
+  return !m || isPublicEssay(decodeURIComponent(m[1]), item.date);
 }
 
 export default function MyLibrary() {
@@ -69,6 +68,15 @@ export default function MyLibrary() {
   const [recent] = useState(() => recentEssays());
   const [snippets] = useState(() => savedSnippetCount());
   const [removeFailed, setRemoveFailed] = useState(false);
+  // After a Remove, focus lands on the list's heading (or the page's, when the
+  // list is gone), not on the page body.
+  const savedHeadingRef = useRef<HTMLHeadingElement>(null);
+  const titleRef = useRef<HTMLHeadingElement>(null);
+  const remove = (item: LibraryItem) => {
+    const ok = removeFromLibrary(item.href);
+    setRemoveFailed(!ok);
+    if (ok) setTimeout(() => (savedHeadingRef.current ?? titleRef.current)?.focus(), 0);
+  };
 
   useEffect(() => {
     let alive = true;
@@ -102,7 +110,7 @@ export default function MyLibrary() {
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>
             <Link href="/resources" style={{ color: "inherit" }}>Resources</Link> · My Library
           </div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(36px, 6vw, 60px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", margin: "0 0 20px", maxWidth: "20ch" }}>
+          <h1 ref={titleRef} tabIndex={-1} style={{ fontFamily: "var(--F)", fontSize: "clamp(36px, 6vw, 60px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", margin: "0 0 20px", maxWidth: "20ch", outline: "none" }}>
             My Library
           </h1>
           <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "var(--charcoal-fg-muted)", maxWidth: "60ch", margin: 0 }}>
@@ -165,10 +173,10 @@ export default function MyLibrary() {
         <section style={{ background: progress.length ? "var(--bone-warm)" : "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
           <div style={wrap}>
             <div style={kicker}>Saved</div>
-            <h2 style={h2}>What you've saved</h2>
+            <h2 ref={savedHeadingRef} tabIndex={-1} style={{ ...h2, outline: "none" }}>What you've saved</h2>
             <ul style={{ listStyle: "none", margin: 0, padding: 0 }}>
               {items.map((item) => {
-                const live = isPublicEssayHref(item.href);
+                const live = isLiveSaved(item);
                 return (
                   <li key={item.href} style={rowStyle}>
                     <div style={{ flex: 1, minWidth: 0 }}>
@@ -184,19 +192,15 @@ export default function MyLibrary() {
                         </>
                       )}
                     </div>
-                    {live && (
-                      <button type="button" onClick={() => sendOne(item)} aria-label={`Send ${item.title} to my phone`} style={iconButton}>
-                        <Share2 size={16} aria-hidden /> Send
-                      </button>
-                    )}
-                    <button type="button" onClick={() => setRemoveFailed(!removeFromLibrary(item.href))} aria-label={`Remove ${item.title} from My Library`} style={iconButton}>
+                    {live && <SendButton title={item.title} href={item.href} />}
+                    <button type="button" onClick={() => remove(item)} aria-label={`Remove ${item.title} from My Library`} style={iconButton}>
                       <Trash2 size={16} aria-hidden />
                     </button>
                   </li>
                 );
               })}
             </ul>
-            {removeFailed && <p role="status" style={{ ...small, color: "var(--ink)", marginTop: "12px" }}>{SAVE_FAILED}</p>}
+            <p role="status" style={{ ...small, color: "var(--ink)", marginTop: removeFailed ? "12px" : 0 }}>{removeFailed ? SAVE_FAILED : ""}</p>
           </div>
         </section>
       )}

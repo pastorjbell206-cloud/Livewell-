@@ -18,7 +18,7 @@ import { SEOMeta } from "@/components/SEOMeta";
 import { LoadFailed } from "@/components/LoadFailed";
 import { fetchCatalogue, formatBytes, kindRank, type Catalogue, type CatalogueFile, type CatalogueItem } from "@/lib/catalogue";
 import { SendButton } from "@/components/TakeItWithYou";
-import { normalizeText, queryWords } from "@/lib/siteSearch";
+import { hasWordStarts, queryWords } from "@/lib/siteSearch";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
@@ -129,8 +129,7 @@ export default function Downloads() {
             .map((s) => ({
               ...s,
               rows: s.rows.filter((r) => {
-                const text = normalizeText(`${r.title} ${r.summary ?? ""} ${s.label} ${(r.files ?? []).map((f) => f.label).join(" ")}`);
-                return words.every((w) => text.includes(w));
+                return hasWordStarts(`${r.title} ${r.summary ?? ""} ${s.label} ${(r.files ?? []).map((f) => f.label).join(" ")}`, words);
               }),
             }))
             .filter((s) => s.rows.length)
@@ -170,7 +169,7 @@ export default function Downloads() {
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Try: grief, marriage, Romans"
             autoComplete="off"
-            style={{ width: "100%", maxWidth: "560px", minHeight: "52px", padding: "12px 16px", fontSize: "17px", fontFamily: "var(--B)", borderRadius: "var(--radius-sm)", border: "1px solid var(--charcoal-line)", background: "var(--bone)", color: "var(--ink)" }}
+            style={{ width: "100%", maxWidth: "560px", minHeight: "52px", padding: "12px 16px", fontSize: "17px", fontFamily: "var(--B)", borderRadius: "var(--radius-sm)", border: "1px solid var(--charcoal-line)", background: "var(--charcoal-fg)", color: "var(--charcoal)" }}
           />
           <p style={{ fontFamily: "var(--U)", fontSize: "14px", lineHeight: 1.6, color: "var(--charcoal-fg-muted)", margin: "12px 0 0", maxWidth: "62ch" }}>
             Tap a file to open it; your phone's viewer can save or print it. In the US, choose Letter; most other countries use A4.
@@ -202,13 +201,14 @@ export default function Downloads() {
 
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-7)" }}>
         <div style={wrap} id="downloads-top">
-          {words.length > 0 && catalogue && (
-            <p role="status" style={{ fontFamily: "var(--U)", fontSize: "15px", color: "var(--ink-muted)", margin: "0 0 var(--s-4)" }}>
-              {matchCount
+          {/* Always on the page, so a screen reader hears each new count. */}
+          <p role="status" style={{ fontFamily: "var(--U)", fontSize: "15px", color: "var(--ink-muted)", margin: words.length > 0 && catalogue ? "0 0 var(--s-4)" : 0 }}>
+            {words.length > 0 && catalogue
+              ? matchCount
                 ? `${matchCount} ${matchCount === 1 ? "printable matches" : "printables match"} "${query.trim()}".`
-                : <>Nothing here matches "{query.trim()}". Try another word, or <Link href={`/search?q=${encodeURIComponent(query.trim())}`} style={{ color: "var(--mustard-text)", fontWeight: 600 }}>search the whole site</Link>.</>}
-            </p>
-          )}
+                : <>Nothing here matches "{query.trim()}". Try another word, or <Link href={`/search?q=${encodeURIComponent(query.trim())}`} style={{ color: "var(--mustard-text)", fontWeight: 600 }}>search the whole site</Link>.</>
+              : null}
+          </p>
           {failed && !catalogue && (
             <LoadFailed
               what="The download list"

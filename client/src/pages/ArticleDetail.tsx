@@ -792,7 +792,7 @@ export default function ArticleDetail() {
                 Shown in Focus mode too. The wrapper centers the bar and lets
                 its panel's text sit flush left. */}
             <div style={{ display: "flex", justifyContent: "center", marginTop: "24px", textAlign: "left" }}>
-              <TakeItWithYou title={post.title} kind="Essay" href={essayPath} summary={summary} print align="center" />
+              <TakeItWithYou title={post.title} kind="Essay" href={essayPath} summary={summary} date={publishedIso} print align="center" />
             </div>
           </div>
         </section>
@@ -928,6 +928,7 @@ export default function ArticleDetail() {
               kind="Essay"
               href={essayPath}
               summary={summary}
+              date={publishedIso}
               print
               extra={
                 <>

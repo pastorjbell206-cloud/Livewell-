@@ -3,7 +3,7 @@
  * actually type, and puts the closest title first.
  */
 import { describe, expect, it } from "vitest";
-import { normalizeText, queryWords, rankEntries, scoreEntry } from "./siteSearch";
+import { crisisTopicsFor, hasWordStarts, normalizeText, queryWords, rankEntries, scoreEntry } from "./siteSearch";
 
 const worryJournal = { title: "The Worry Journal", blurb: "Five minutes before bed.", sourceLabel: "Tools" };
 const anxietyCare = { title: "I can't stop worrying", blurb: "For the worry that won't switch off.", keywords: "anxiety worry can't sleep Philippians 4:6", sourceLabel: "Find Help" };
@@ -37,5 +37,31 @@ describe("ranking", () => {
 
   it("returns nothing for an empty query", () => {
     expect(rankEntries([howTo], "  ")).toEqual([]);
+  });
+
+  it("matches at the start of a word, never inside one", () => {
+    expect(scoreEntry({ title: "Eight Weeks Toward Being Known", blurb: "For the lonely." }, "war")).toBe(0);
+    expect(hasWordStarts("I can't stop drinking or using", ["sin"])).toBe(false);
+    expect(hasWordStarts("The Worry Journal", ["worr"])).toBe(true);
+  });
+
+  it("meets an everyday phrasing short words and all", () => {
+    const divorce = { title: "My marriage has ended", blurb: "", keywords: "is divorce a sin", sourceLabel: "Find Help" };
+    expect(scoreEntry(divorce, "is divorce a sin")).toBe(10 + 40 + 3);
+  });
+});
+
+describe("crisis words", () => {
+  it("names the help lines what a reader typed calls for", () => {
+    expect(crisisTopicsFor("I want to die")).toEqual(["suicide"]);
+    expect(crisisTopicsFor("thinking about killing myself")).toEqual(["suicide"]);
+    expect(crisisTopicsFor("my husband hits me")).toEqual(["suicide", "abuse"]);
+    expect(crisisTopicsFor("I was raped")).toEqual(["suicide", "sexual-assault"]);
+  });
+
+  it("stays quiet for everything else", () => {
+    expect(crisisTopicsFor("grief after a death")).toEqual([]);
+    expect(crisisTopicsFor("the war in Ukraine")).toEqual([]);
+    expect(crisisTopicsFor("Deuteronomy")).toEqual([]);
   });
 });

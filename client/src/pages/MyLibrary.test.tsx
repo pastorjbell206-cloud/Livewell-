@@ -36,4 +36,15 @@ describe("My Library", () => {
     fireEvent.click(screen.getByRole("button", { name: /remove someone i love has died/i }));
     expect(screen.queryByRole("link", { name: "Someone I love has died" })).toBeNull();
   });
+
+  it("keeps a post James published after the shelf was set as a live link, and says when an essay was taken down", () => {
+    // Hypothetical essays, so their addresses are built, not written out (scripts/validate-links.mjs).
+    const later = `/writing/${"a-post-from-this-month"}`;
+    saveToLibrary({ href: later, title: "A Post From This Month", kind: "Essay", date: "2026-10-15T12:00:00.000Z" });
+    saveToLibrary({ href: `/writing/${"an-old-retired-essay"}`, title: "An Old Essay", kind: "Essay" });
+    render(<TestProviders><MyLibrary /></TestProviders>);
+    expect(screen.getByRole("link", { name: "A Post From This Month" })).toHaveAttribute("href", later);
+    expect(screen.queryByRole("link", { name: "An Old Essay" })).toBeNull();
+    expect(screen.getByText("James has taken this essay down for now.")).toBeInTheDocument();
+  });
 });

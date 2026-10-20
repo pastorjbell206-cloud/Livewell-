@@ -128,26 +128,34 @@ export function googleCalendarUrl(r: Reminder): string {
   return `https://calendar.google.com/calendar/render?${params.toString()}`;
 }
 
-function isAppleMobile(): boolean {
+export function isAppleMobile(): boolean {
   if (typeof navigator === "undefined") return false;
   const ua = navigator.userAgent || "";
   const iPadOS = navigator.platform === "MacIntel" && ((navigator as Navigator & { maxTouchPoints?: number }).maxTouchPoints ?? 0) > 1;
   return /iPhone|iPad|iPod/.test(ua) || iPadOS;
 }
 
+/** The in-app browsers of Facebook, Instagram, and the Google app, which cannot hand a calendar file to Calendar. */
+const IN_APP = /FBAN|FBAV|Instagram|GSA\//;
+
+/** What became of the reminder, so the page can say what to do next. */
+export type IcsResult = "opened" | "downloaded" | "unsupported" | "failed";
+
 /**
- * Hand the reminder to the device's calendar. On iPhone and iPad, Safari opens
- * a calendar data address straight into Calendar; elsewhere the .ics file is
- * downloaded, and opening it adds the event. Returns false if the browser
- * refused.
+ * Hand the reminder to the device's calendar. On iPhone and iPad, the browser
+ * opens a calendar data address straight into Calendar ("opened"); elsewhere
+ * the .ics file is downloaded, and opening it adds the event ("downloaded").
+ * An in-app browser that cannot do either is "unsupported"; a browser that
+ * refused is "failed".
  */
-export function openIcs(r: Reminder, filename = "livewell-reminder.ics"): boolean {
-  if (typeof window === "undefined") return false;
+export function openIcs(r: Reminder, filename = "livewell-reminder.ics"): IcsResult {
+  if (typeof window === "undefined") return "failed";
+  if (IN_APP.test(navigator.userAgent || "")) return "unsupported";
   const ics = buildIcs(r);
   try {
     if (isAppleMobile()) {
       window.location.href = `data:text/calendar;charset=utf-8,${encodeURIComponent(ics)}`;
-      return true;
+      return "opened";
     }
     const blob = new Blob([ics], { type: "text/calendar;charset=utf-8" });
     const href = URL.createObjectURL(blob);
@@ -158,8 +166,8 @@ export function openIcs(r: Reminder, filename = "livewell-reminder.ics"): boolea
     a.click();
     a.remove();
     setTimeout(() => URL.revokeObjectURL(href), 10_000);
-    return true;
+    return "downloaded";
   } catch {
-    return false;
+    return "failed";
   }
 }

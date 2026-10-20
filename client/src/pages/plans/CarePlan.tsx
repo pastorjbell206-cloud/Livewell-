@@ -171,7 +171,13 @@ export default function CarePlan() {
               href={`/plans/${data.slug}`}
               freq="WEEKLY"
               count={data.weeks.length - doneCount}
-              schedule={doneCount ? `once a week for the ${data.weeks.length - doneCount} weeks left` : "once a week for eight weeks"}
+              schedule={
+                data.weeks.length - doneCount === 1
+                  ? "once, for the last week"
+                  : doneCount
+                    ? `once a week for the ${data.weeks.length - doneCount} weeks left`
+                    : "once a week for eight weeks"
+              }
               onDark
             />
           )}

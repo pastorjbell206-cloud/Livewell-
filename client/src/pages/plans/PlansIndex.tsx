@@ -20,7 +20,7 @@ import { LoadFailed } from "@/components/LoadFailed";
 import { CrisisBlock } from "@/components/CrisisBlock";
 import { fetchJson } from "@/lib/fetch-json";
 import { readStoredJSON } from "@/lib/storage";
-import { normalizeText, queryWords } from "@/lib/siteSearch";
+import { hasWordStarts, queryWords } from "@/lib/siteSearch";
 import { RemindMe } from "@/components/RemindMe";
 import READING from "@/data/bible-reading-plans.json";
 
@@ -43,9 +43,7 @@ function progressFor(slug: string): number | null {
 }
 
 function planMatches(p: PlanEntry, q: string): boolean {
-  const words = queryWords(q);
-  const text = normalizeText(`${p.need ?? ""} ${p.title} ${p.blurb}`);
-  return words.every((w) => text.includes(w));
+  return hasWordStarts(`${p.need ?? ""} ${p.title} ${p.blurb}`, queryWords(q));
 }
 
 export default function PlansIndex() {
@@ -103,11 +101,10 @@ export default function PlansIndex() {
                 autoComplete="off"
                 style={{ width: "100%", maxWidth: "520px", minHeight: "52px", padding: "12px 16px", fontSize: "17px", fontFamily: "var(--B)", borderRadius: "var(--radius-sm)", border: "1px solid var(--border)", background: "var(--card)", color: "var(--ink)", marginBottom: "var(--s-4)" }}
               />
-              {query.trim() && (
-                <p role="status" style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted)", margin: "0 0 var(--s-3)" }}>
-                  {shown?.length ? `${shown.length} ${shown.length === 1 ? "plan matches" : "plans match"}` : "No plan matches. Find Help below starts from your own words."}
-                </p>
-              )}
+              {/* Always on the page, so a screen reader hears each new count. */}
+              <p role="status" style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted)", margin: query.trim() ? "0 0 var(--s-3)" : 0 }}>
+                {query.trim() ? (shown?.length ? `${shown.length} ${shown.length === 1 ? "plan matches" : "plans match"}` : "No plan matches. Find Help below starts from your own words.") : ""}
+              </p>
               <EditorialIndex
                 columns={2}
                 headingAs="h2"

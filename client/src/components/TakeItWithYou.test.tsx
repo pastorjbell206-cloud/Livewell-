@@ -2,6 +2,7 @@
  * TakeItWithYou sends a page through the reader's own apps and saves it to
  * My Library, and tells the truth about both.
  */
+import { useState } from "react";
 import { afterEach, describe, expect, it, vi } from "vitest";
 import { act, fireEvent, render, screen } from "@testing-library/react";
 import { TestProviders } from "@/test/harness";
@@ -32,6 +33,30 @@ describe("TakeItWithYou", () => {
     expect(screen.getByText(/point your phone's camera/i)).toBeInTheDocument();
     fireEvent.keyDown(window, { key: "Escape" });
     expect(screen.queryByRole("region", { name: /send it to your phone/i })).toBeNull();
+  });
+
+  it("leaves focus where the reader is typing when the page around the panel re-renders", async () => {
+    function Journal() {
+      const [text, setText] = useState("");
+      return (
+        <>
+          <label>
+            Worry <input value={text} onChange={(e) => setText(e.target.value)} />
+          </label>
+          <TakeItWithYou title="The Worry Journal" kind="Tool" href="/tools/worry-journal" />
+        </>
+      );
+    }
+    render(<TestProviders><Journal /></TestProviders>);
+    fireEvent.click(screen.getByRole("button", { name: /send to my phone/i }));
+    await screen.findByRole("region", { name: /send it to your phone/i });
+    const field = screen.getByRole("textbox", { name: "Worry" });
+    field.focus();
+    fireEvent.change(field, { target: { value: "the bill" } });
+    expect(document.activeElement).toBe(field);
+    // Escape typed in the journal is the journal's, not the panel's.
+    fireEvent.keyDown(field, { key: "Escape" });
+    expect(screen.getByRole("region", { name: /send it to your phone/i })).toBeInTheDocument();
   });
 
   it("saves to My Library and says where it went", () => {

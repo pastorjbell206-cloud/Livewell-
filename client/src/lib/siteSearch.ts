@@ -11,6 +11,8 @@
  * type a plain sentence.
  */
 
+import type { CrisisTopic } from "@/components/CrisisBlock";
+
 export interface Searchable {
   title: string;
   blurb: string;
@@ -35,21 +37,53 @@ export function queryWords(q: string): string[] {
   return normalizeText(q).split(" ").filter((w) => w.length > 1);
 }
 
+/**
+ * True when every word begins a word of `text`, so "worr" finds "worry" but
+ * "war" does not find "toward" and "sin" does not find "using".
+ */
+export function hasWordStarts(text: string, words: string[]): boolean {
+  const hay = ` ${normalizeText(text)}`;
+  return words.every((w) => hay.includes(` ${w}`));
+}
+
 const PRIORITY: Record<string, number> = { "Find Help": 3, Tools: 2, "Eight-Week Plans": 1 };
 
 export function scoreEntry(item: Searchable, q: string): number {
   const words = queryWords(q);
   if (!words.length) return 0;
-  const phrase = words.join(" ");
-  const title = ` ${normalizeText(item.title)} `;
-  const keywords = ` ${normalizeText(item.keywords ?? "")} `;
-  const all = `${title}${normalizeText(item.blurb)} ${normalizeText(item.facet ?? "")}${keywords}`;
-  if (!words.every((w) => all.includes(w))) return 0;
+  // The whole query, short words and all, so "is divorce a sin" meets its own phrasing.
+  const phrase = normalizeText(q);
+  // Every part starts with a space, so a match can be held to the start of a word.
+  const title = ` ${normalizeText(item.title)}`;
+  const keywords = ` ${normalizeText(item.keywords ?? "")}`;
+  const all = `${title} ${normalizeText(item.blurb)} ${normalizeText(item.facet ?? "")}${keywords}`;
+  const has = (hay: string, w: string) => hay.includes(` ${w}`);
+  if (!words.every((w) => has(all, w))) return 0;
   let score = 10;
-  if (title.includes(` ${phrase} `) || title.includes(phrase)) score += 100;
-  else if (words.every((w) => title.includes(w))) score += 50;
-  if (keywords.includes(phrase)) score += 40;
+  if (has(title, phrase)) score += 100;
+  else if (words.every((w) => has(title, w))) score += 50;
+  if (has(keywords, phrase)) score += 40;
   return score + (PRIORITY[item.sourceLabel ?? ""] ?? 0);
+}
+
+/**
+ * What a reader typed that calls for a person, not a page: thoughts of
+ * suicide or self-harm, abuse, sexual assault, an overdose. Each pattern names
+ * the help lines it needs; 988 always comes first.
+ */
+const CRISIS: [RegExp, CrisisTopic][] = [
+  [/\b(suicid\w*|kill(ing)? my ?self|end(ing)? my life|end it all|(want|going) to die|self ?harm\w*|hurt(ing)? my ?self|cut(ting)? my ?self)\b/, "suicide"],
+  [/\b(abus\w*|hits? me|beats? me|afraid of my (husband|wife|partner|boyfriend|girlfriend|dad|father|mom|mother))\b/, "abuse"],
+  [/\b(rape[ds]?|raping|sexual(ly)? assault\w*|molest\w*)\b/, "sexual-assault"],
+  [/\b(overdos\w*)\b/, "substance"],
+];
+
+/** The help lines a search calls for, or none. */
+export function crisisTopicsFor(query: string): CrisisTopic[] {
+  const q = normalizeText(query);
+  const topics = CRISIS.filter(([re]) => re.test(q)).map(([, t]) => t);
+  if (!topics.length) return [];
+  return ["suicide", ...topics.filter((t) => t !== "suicide")];
 }
 
 /** The matching items, best first (stable for equal scores). */

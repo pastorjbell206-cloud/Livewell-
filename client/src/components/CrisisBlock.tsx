@@ -184,7 +184,7 @@ export function CrisisBlock({
       </ul>
       {topics.includes("abuse") && (
         <p style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.6, color: "var(--ink-muted)", margin: "12px 0 0", maxWidth: "62ch" }}>
-          If someone checks your phone or computer, look for help on a device they cannot see, and clear your browsing history afterward.
+          If someone checks your phone or computer, look for help on a device they cannot see. Afterward, clear your browsing history and this site's data; anything saved to My Library stays until you do.
         </p>
       )}
       <p style={{ fontFamily: "var(--B)", fontSize: "13px", lineHeight: 1.6, color: "var(--ink-muted)", margin: "14px 0 0", maxWidth: "62ch" }}>

@@ -3,7 +3,7 @@
  * in local time, that a calendar app will read.
  */
 import { describe, expect, it } from "vitest";
-import { buildIcs, foldLine, googleCalendarUrl, icsText, type Reminder } from "./calendar";
+import { buildIcs, foldLine, googleCalendarUrl, icsText, openIcs, type Reminder } from "./calendar";
 
 const reminder: Reminder = {
   title: "Eight Weeks Toward a Quieter Mind",
@@ -65,5 +65,16 @@ describe("googleCalendarUrl", () => {
     expect(url.searchParams.get("dates")).toBe("20261020T200000/20261020T201500");
     expect(url.searchParams.get("recur")).toBe("RRULE:FREQ=WEEKLY;COUNT=8");
     expect(url.searchParams.get("details")).toContain(reminder.url);
+  });
+});
+
+describe("openIcs", () => {
+  it("says an in-app browser cannot add it, instead of claiming it worked", () => {
+    Object.defineProperty(navigator, "userAgent", { value: "Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) [FBAN/FBIOS;FBAV/480.0]", configurable: true });
+    try {
+      expect(openIcs(reminder)).toBe("unsupported");
+    } finally {
+      delete (navigator as unknown as Record<string, unknown>).userAgent;
+    }
   });
 });

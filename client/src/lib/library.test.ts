@@ -18,6 +18,11 @@ describe("libraryPath", () => {
     expect(libraryPath("/tools/test-the-case?case=evil")).toBe("/tools/test-the-case?case=evil");
     expect(libraryPath("/")).toBe("/");
   });
+
+  it("drops the tags a shared link picks up, and keeps a page's own query", () => {
+    expect(libraryPath("/help/grief?fbclid=IwAR0abc&utm_source=facebook")).toBe("/help/grief");
+    expect(libraryPath("/tools/test-the-case?case=evil&utm_medium=email&mc_cid=1")).toBe("/tools/test-the-case?case=evil");
+  });
 });
 
 describe("saving and removing", () => {
@@ -47,6 +52,20 @@ describe("saving and removing", () => {
     expect(removeFromLibrary("/writing/every-generation-was-sure-it-was")).toBe(true);
     expect(readLibrary()).toHaveLength(0);
     expect(JSON.parse(localStorage.getItem(LEGACY_BOOKMARKS_KEY) ?? "[]")).toEqual([]);
+  });
+
+  it("keeps every good entry when one stored entry is bad", () => {
+    localStorage.setItem(LIBRARY_KEY, JSON.stringify([{ href: "/help/grief", title: "Grief", kind: "Find Help", savedAt: "2026-10-01T00:00:00.000Z" }, { href: 3 }]));
+    expect(readLibrary().map((i) => i.href)).toEqual(["/help/grief"]);
+    expect(saveToLibrary({ href: "/plans/anxiety", title: "Anxiety", kind: "Eight-week plan" })).toBe(true);
+    expect(readLibrary().map((i) => i.href)).toEqual(["/plans/anxiety", "/help/grief"]);
+  });
+
+  it("keeps an essay's own date with the save", () => {
+    // A post James might publish later: hypothetical, so its address is built, not written out.
+    const href = `/writing/${"a-new-post"}`;
+    saveToLibrary({ href, title: "A New Post", kind: "Essay", date: "2026-10-15T12:00:00.000Z" });
+    expect(readLibrary()[0]).toMatchObject({ href, date: "2026-10-15T12:00:00.000Z" });
   });
 
   it("skips corrupt stored data instead of breaking", () => {
