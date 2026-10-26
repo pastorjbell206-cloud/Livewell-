@@ -13,6 +13,7 @@ import { ChevronDown } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import ScriptureNote from "@/components/ScriptureNote";
+import { VerseRef } from "@/components/VerseRef";
 import LoadFailed from "@/components/LoadFailed";
 import { fetchJson } from "@/lib/fetch-json";
 import { catechismWeekIndex } from "@/lib/familyCatechism";
@@ -60,7 +61,8 @@ function QuestionCard({ e, highlight, open, setOpen, learned, onToggleLearned }:
             <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.6, color: "var(--ink-muted)", marginTop: "4px" }}>{e.kidsAnswer}</p>
           </div>
           <div style={{ marginBottom: "16px" }}>
-            <span className="eyebrow">{e.scripture}</span>
+            {/* The verse is printed below it, so the reference goes to its chapter. */}
+            <span className="eyebrow"><VerseRef reference={e.scripture} mode="link" /></span>
             <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "var(--ink)", fontStyle: "italic", marginTop: "4px" }}>{e.scriptureText}</p>
           </div>
           <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "var(--ink-muted)", marginBottom: e.prayer ? "16px" : 0 }}>{e.commentary}</p>

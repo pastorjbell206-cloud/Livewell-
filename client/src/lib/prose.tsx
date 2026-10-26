@@ -6,9 +6,11 @@
  * index.css) plus `.prose-section`, a modifier that suppresses the lead-article
  * drop cap — a drop cap belongs to the top of an article, not to every section
  * block. Plain-text fields are split into readable paragraphs (honoring real
- * breaks, else grouping sentences); pass `markdown` to render Markdown instead.
+ * breaks, else grouping sentences); pass `markdown` to render Markdown instead,
+ * and `verseRefs` to make the Scripture references in it live (VerseRef).
  */
 import { Markdown } from "@/components/Markdown";
+import { RefText, type VerseRefMode } from "@/components/VerseRef";
 
 /**
  * Turn a prose field into readable paragraphs. Honors explicit blank-line
@@ -39,16 +41,19 @@ export function Prose({
   text,
   markdown = false,
   className = "",
+  verseRefs,
 }: {
   text: string;
   markdown?: boolean;
   className?: string;
+  /** "sheet" on pages that quote the BSB or nothing; "link" on pages that quote the ESV. */
+  verseRefs?: VerseRefMode;
 }) {
   return (
     <div className={`article-body prose-section ${className}`.trim()}>
       {markdown
-        ? <Markdown>{text}</Markdown>
-        : toParagraphs(text).map((p, i) => <p key={i}>{p}</p>)}
+        ? <Markdown verseRefs={verseRefs}>{text}</Markdown>
+        : toParagraphs(text).map((p, i) => <p key={i}>{verseRefs ? <RefText text={p} mode={verseRefs} /> : p}</p>)}
     </div>
   );
 }

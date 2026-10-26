@@ -1,18 +1,17 @@
 /**
- * ScriptureRef — a Scripture citation that reads its own context.
+ * ScriptureRef: a Scripture citation held as data (a doctrine's key texts, a
+ * passage under discussion) rendered as a link into the Study Bible chapter
+ * (master plan 7.1; it used to open the Passage Context tool).
  *
- * Renders a reference (e.g. "John 3:16", "Romans 13:1-7") as a quiet link into
- * the Passage Context tool, which already resolves `?ref=` deep links and shows
- * the passage's background, flow, and the debates around it. A dotted mustard
- * underline signals it is live; the title gives the hover hint. No network
- * fetch here — the tool does the work — so it never fails or half-loads.
- *
- * Use it anywhere a Scripture reference is rendered as structured data (a
- * doctrine's key texts, a question's passages, a topic's proof texts) to turn
- * every citation into a door to its context instead of dead text.
+ * The field is not always one clean reference: "Jonah 3:10 with Jeremiah
+ * 18:7-10" makes both references live, "Acts 2 (Pentecost and Peter's
+ * sermon)" links the reference and keeps the note as text, and a book outside
+ * the Protestant canon ("Wisdom 2:12-20") stays plain text. Link mode, so the
+ * page's own translation is never set beside another.
  */
-import { Link } from "wouter";
 import type { CSSProperties } from "react";
+import { RefText, VerseRef } from "@/components/VerseRef";
+import { parseScriptureRef } from "@/lib/scripture-ref";
 
 export function ScriptureRef({
   reference,
@@ -23,20 +22,11 @@ export function ScriptureRef({
 }) {
   const ref = (reference ?? "").trim();
   if (!ref) return null;
+  if (parseScriptureRef(ref)) return <VerseRef reference={ref} mode="link" style={style} />;
   return (
-    <Link
-      href={`/theology/passage?ref=${encodeURIComponent(ref)}`}
-      title={`Read ${ref} in context`}
-      style={{
-        color: "inherit",
-        borderBottom: "1px dotted var(--mustard)",
-        textDecoration: "none",
-        cursor: "help",
-        ...style,
-      }}
-    >
-      {ref}
-    </Link>
+    <span style={style}>
+      <RefText text={ref} mode="link" />
+    </span>
   );
 }
 
