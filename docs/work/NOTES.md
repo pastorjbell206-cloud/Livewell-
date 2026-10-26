@@ -171,3 +171,17 @@ PR. Keep /theology/history URLs; no new redirects there. Current study: 7 eras,
    Log (update it in the doors unit, U19).
 4. Advent: **keep the December 1 to 25 calendar and fix it** (wording, order,
    findable from home). No new writing.
+
+## Wave 1 integration notes (2026-10-27)
+
+- All seven unit branches (worktree-wf_4b2d5b16-bc3-1..7: U03 U04 U06 U09 U10
+  U12 U14) merge without conflicts on top of the work branch.
+- Combined tree: pnpm check passes; every CI validator passes; tests 954 pass,
+  2 fail, both seams between U10 and U12:
+  1. church-year.test: the family year map must be regenerated after U12's id
+     repairs (`node scripts/build-family-year.mjs`).
+  2. family-gate.test "frozen id renamed ... passes with one": the year-map
+     check reads the repo's familyYear.generated.ts, which still names the old
+     id in the test's temp scenario. Fix: let the validator take an injectable
+     year-map path (or skip it) and have the test pass a copy with the id
+     renamed.
