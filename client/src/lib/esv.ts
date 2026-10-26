@@ -9,6 +9,12 @@
  * is the one line to change. The record of the reading, with the quotation
  * limits noted at the same time, is docs/work/plan/units/U04.md on the work
  * branch.
+ *
+ * Open (review, 2026-10-26, same method): search results say the current page
+ * ends the notice with a further line, "ESV Text Edition: 2025." It is not
+ * added here: the page was not opened, and the line names the text edition
+ * the quotations are from, which nothing has checked yet (the ESV API check,
+ * U27, would settle it). James's paste decides both.
  */
 export const ESV_NOTICE =
   "Scripture quotations are from the ESV® Bible (The Holy Bible, English Standard Version®), © 2001 by Crossway, a publishing ministry of Good News Publishers. Used by permission. All rights reserved.";

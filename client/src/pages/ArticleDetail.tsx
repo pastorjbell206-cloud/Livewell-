@@ -322,11 +322,14 @@ function TableOfContents({
           border: "1px solid var(--border)",
           borderLeft: "2px solid var(--mustard)",
           borderRadius: "var(--radius-sm)",
-          padding: "16px 20px",
         }}
       >
+        {/* The card's padding sits on the summary, so the whole closed card
+            is the tap target (it starts closed on a phone), not one line of
+            11px text. */}
         <summary
           style={{
+            padding: "16px 20px",
             fontFamily: "var(--U)",
             fontSize: "11px",
             fontWeight: 600,
@@ -341,7 +344,7 @@ function TableOfContents({
         <ol
           style={{
             listStyle: "none",
-            margin: "16px 0 0",
+            margin: "0 20px 16px",
             padding: 0,
             display: "flex",
             flexDirection: "column",

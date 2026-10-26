@@ -294,6 +294,10 @@ describe("/writing/:slug, the first screen on a phone", () => {
     const phone = await renderEssay();
     await waitFor(() => expect(contents()).toBeInTheDocument());
     expect(contents().open).toBe(false);
+    // Closed, the summary is the card's one door: it carries the card's
+    // padding, so the whole card is the tap target, not a line of 11px text.
+    expect(contents().querySelector("summary")!.style.padding).toBe("16px 20px");
+    expect(contents().style.padding).toBe("");
     phone.unmount();
 
     screenWidth(false);
