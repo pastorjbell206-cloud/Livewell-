@@ -25,10 +25,13 @@ export type { FamilySeasonKey, FamilySetKey, FamilyWeek } from "./familyYear.gen
 const DAY_MS = 86_400_000;
 const ISO = /^(\d{4})-(\d{2})-(\d{2})$/;
 
+/** Days since 1970 for a real calendar date; null for "2027-02-30", which Date would roll into March. */
 function dayNumber(iso: string): number | null {
   const m = ISO.exec(iso);
   if (!m) return null;
-  return Date.UTC(Number(m[1]), Number(m[2]) - 1, Number(m[3])) / DAY_MS;
+  const t = Date.UTC(Number(m[1]), Number(m[2]) - 1, Number(m[3]));
+  if (new Date(t).toISOString().slice(0, 10) !== iso) return null;
+  return t / DAY_MS;
 }
 
 /** The reader's calendar date, in their own time zone. */
@@ -39,7 +42,7 @@ export function localISODate(d: Date = new Date()): string {
 
 /** True when the date is on the map. */
 export function onFamilyMap(date: string): boolean {
-  return ISO.test(date) && date >= FAMILY_YEAR_FROM && date <= FAMILY_YEAR_THROUGH;
+  return dayNumber(date) !== null && date >= FAMILY_YEAR_FROM && date <= FAMILY_YEAR_THROUGH;
 }
 
 /** The week (Sunday to Saturday) that holds the date, or null off the map. */

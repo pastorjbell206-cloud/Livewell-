@@ -23,9 +23,9 @@
  *   - The rotation counts from ROTATION_EPOCH, not from the first week the
  *     map lists, so extending the map never reshuffles it.
  *   - A hand override (client/public/family-year-overrides.json) pins one
- *     devotion, from any family-devotions*.json file, to one week. A pinned
- *     week does not use up a rotation slot: the devotion it displaced moves to
- *     the next week.
+ *     devotion, from any family-devotions*.json file, to one week the rotation
+ *     would serve (never a week a daily set serves). A pinned week does not use
+ *     up a rotation slot: the devotion it displaced moves to the next week.
  *
  * Regenerating with the same inputs writes the same file (CI checks this), and
  * CI fails once fewer than twelve months remain in the map: raise LAST_YEAR
@@ -207,6 +207,9 @@ export function buildYearMap(inputs, { first = FIRST_YEAR, last = LAST_YEAR, epo
     const season = weekSeason(s);
     const set = served.get(season);
     const pinned = pins.get(s);
+    if (pinned && set) {
+      problems.push(`${OVERRIDES_FILE}: week ${s} is served by the daily "${set}" set in ${SEASONAL_FILE}; pin only a week the rotation serves`);
+    }
     all.push({ start: s, season, set, pinned, rotates: !set && !pinned });
   }
   const found = all.findIndex((w) => w.start >= epoch);

@@ -308,6 +308,11 @@ describe("the year map's hand overrides and sets", () => {
     expect(buildYearMap({ ...inputs, overrides: [] }).problems.join("\n")).toMatch(/expected \{ "weeks"/);
   });
 
+  it("refuse a pin on a week a daily set serves", () => {
+    const onSet: Built = buildYearMap(withPins([{ week: "2026-11-22", devotion: "gratitude" }]));
+    expect(onSet.problems.join("\n")).toMatch(/week 2026-11-22 is served by the daily "thanksgiving" set/);
+  });
+
   it("refuse a seasonal set it cannot place or whose length changed", () => {
     expect(buildYearMap({ ...inputs, sets: { ...inputs.sets, lent: 40 } }).problems.join("\n")).toMatch(/"lent" has no place/);
     expect(buildYearMap({ ...inputs, sets: { ...inputs.sets, advent: 26 } }).problems.join("\n")).toMatch(/"advent" has 26 days/);

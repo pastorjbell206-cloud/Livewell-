@@ -27,6 +27,11 @@ describe("familyYear", () => {
     expect(familyWeekOn("2099-01-01")).toBeNull();
     expect(familyWeekOn("tonight")).toBeNull();
     expect(onFamilyMap("2027-1-1")).toBe(false);
+    // Not a real day: Date would roll it into March.
+    expect(onFamilyMap("2027-02-30")).toBe(false);
+    expect(familyWeekOn("2027-02-30")).toBeNull();
+    expect(familySeasonOn("2027-02-31")).toBeNull();
+    expect(familySetDayOn("2026-12-32")).toBeNull();
     expect(familySeasonOn("2099-01-01")).toBeNull();
     expect(familySetDayOn("2099-12-01")).toBeNull();
   });
