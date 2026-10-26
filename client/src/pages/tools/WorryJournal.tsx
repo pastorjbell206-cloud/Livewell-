@@ -18,6 +18,7 @@ import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { ToolActions } from "@/components/ToolActions";
+import { RemindMe } from "@/components/RemindMe";
 import ScriptureNote from "@/components/ScriptureNote";
 import { CrisisBlock } from "@/components/CrisisBlock";
 import { readStoredJSON, writeStoredJSON, removeStoredJSON, isArrayOf } from "@/lib/storage";
@@ -138,6 +139,16 @@ export default function WorryJournal() {
           <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.65, margin: 0, maxWidth: "60ch", opacity: 0.85 }}>
             Everything you write stays in this browser and is never sent anywhere. This is a journal, not treatment: if worry has taken over your days or your sleep for weeks, see a doctor or a licensed counselor.
           </p>
+          <RemindMe
+            title="The Worry Journal"
+            details="Five minutes before bed: name what you're worried about, sort the one thing that is yours to do tomorrow, and hand the rest to God."
+            href="/tools/worry-journal"
+            freq="DAILY"
+            count={30}
+            schedule="every day for thirty days"
+            defaultTime="evening"
+            onDark
+          />
         </div>
       </section>
 

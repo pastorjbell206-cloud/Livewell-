@@ -67,6 +67,14 @@ const TOOL_MAP: Record<string, ToolRec> = {
       "Somewhere to start when the work has taken more than you had.",
     href: "/help/pastors",
   },
+  // The pastoral pillar's fallback: most of its essays are about an ordinary
+  // believer's Tuesday, not a pastor's burnout (that one has its own slug rule).
+  "find-help": {
+    name: "Find help for what you are facing",
+    description:
+      "Pick what you are carrying and find something to read, something to do, and a prayer.",
+    href: "/help",
+  },
   "life-audit": {
     name: "Life Audit",
     description:
@@ -110,7 +118,7 @@ const PILLAR_TOOL_FALLBACK: Record<string, string> = {
   "capture-by-the-left": "bible-on-topic",
   "reading-scripture-past-our-politics": "deep-bible",
   "after-christendom-pillar": "theology-quiz",
-  "the-pastoral-angle": "pastor-burnout",
+  "the-pastoral-angle": "find-help",
   "living-well-after-christendom": "life-audit",
 };
 

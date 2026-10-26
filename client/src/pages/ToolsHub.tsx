@@ -3,6 +3,9 @@ import { SEOMeta } from "@/components/SEOMeta";
 import { Link } from "wouter";
 import { BookOpen, Heart, Users, Search, HeartHandshake, DollarSign, Baby, Brain, BookMarked, MessageCircle, Shield, Target, Church, PenLine, CalendarDays } from "lucide-react";
 import { useFavorites } from "@/hooks/useFavorites";
+import { useMemo, useState } from "react";
+import { useLibrary } from "@/lib/library";
+import { hasWordStarts, queryWords } from "@/lib/siteSearch";
 
 export const TOOLS = [
   {
@@ -123,6 +126,13 @@ export const TOOLS = [
     href: "/tools/prayer-planner",
     icon: CalendarDays,
     color: "var(--ink)",
+  },
+  {
+    title: "The Connection Planner",
+    description: "For when you feel alone: name up to five people, choose one small step toward each this week, keep one place where the same faces gather, and check off what happened. Private to your browser.",
+    href: "/tools/connection-planner",
+    icon: HeartHandshake,
+    color: "var(--goldlt)",
   },
   {
     title: "Prayer Generator",
@@ -256,16 +266,60 @@ export const TOOLS = [
 export const TOOL_GROUPS = [
   { title: "Start with an honest reading", tools: TOOLS.filter((t) => ["/diagnostic","/tools/life-audit","/tools/emotional-health","/tools/spiritual-gifts","/life/assessment"].includes(t.href)) },
   { title: "Scripture and theology", tools: TOOLS.filter((t) => ["/tools/deep-bible","/tools/bible-study","/resources/context","/theology/passage","/tools/verse-finder","/tools/bible-says","/tools/bible-on","/tools/theology-quiz","/tools/glossary","/tools/test-the-case","/tools/which-lens","/tools/scripture-memory"].includes(t.href)) },
-  { title: "Wisdom for a real situation", tools: TOOLS.filter((t) => ["/wisdom","/tools/wisdom-finder","/tools/proverbs-31","/tools/quotes","/tools/conflict-guide","/tools/worry-journal","/tools/prayer-planner","/tools/prayer-generator"].includes(t.href)) },
+  { title: "Wisdom for a real situation", tools: TOOLS.filter((t) => ["/wisdom","/tools/wisdom-finder","/tools/proverbs-31","/tools/quotes","/tools/conflict-guide","/tools/worry-journal","/tools/prayer-planner","/tools/connection-planner","/tools/prayer-generator"].includes(t.href)) },
   { title: "Family, marriage, and the household", tools: TOOLS.filter((t) => ["/tools/family-devotions","/tools/marriage-assessment","/tools/parenting-guide","/tools/parent-teen-conversation","/tools/parenting-verses","/tools/financial-health","/tools/rule-of-life"].includes(t.href)) },
   { title: "The church and the public square", tools: TOOLS.filter((t) => ["/disruption/consistency","/nation/scorecard","/nation/policy"].includes(t.href)) },
 ];
 
 
+const slug = (t: string) => t.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+
+/** A tool matches when every word of the query is in its name or description. */
+function toolMatches(tool: (typeof TOOLS)[number], q: string): boolean {
+  const words = queryWords(q);
+  return words.length > 0 && hasWordStarts(`${tool.title} ${tool.description}`, words);
+}
+
+function ToolCard({ tool }: { tool: (typeof TOOLS)[number] }) {
+  const Icon = tool.icon;
+  return (
+    <Link
+      href={tool.href}
+      className="tool-card"
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        padding: "clamp(18px, 3vw, 28px)",
+        background: "var(--card)",
+        borderRadius: "var(--radius-sm)",
+        border: "1px solid var(--border)",
+        borderLeft: `4px solid ${tool.color}`,
+        textDecoration: "none",
+        minHeight: "100%",
+      }}
+    >
+      <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
+        <Icon size={24} aria-hidden style={{ color: tool.color, flexShrink: 0 }} />
+        <h3 style={{ fontSize: "21px", fontWeight: 500, fontFamily: "var(--F)", color: "var(--ink)", lineHeight: 1.2, margin: 0 }}>{tool.title}</h3>
+      </div>
+      <p className="tool-card-dek" style={{ fontSize: "15px", lineHeight: 1.6, color: "var(--ink-muted)", fontFamily: "var(--B)", margin: 0 }}>
+        {tool.description}
+      </p>
+      <div style={{ marginTop: "auto", paddingTop: "14px", fontSize: "14px", fontWeight: 600, color: "var(--mustard-text)", fontFamily: "var(--U)" }}>
+        Open the tool <span aria-hidden>→</span>
+      </div>
+    </Link>
+  );
+}
+
 export default function ToolsHub() {
   const verses = useFavorites("livewell-saved-verses");
   const prayers = useFavorites("livewell-saved-prayers");
   const totalSaved = verses.favorites.length + prayers.favorites.length;
+  const saved = useLibrary();
+  const [query, setQuery] = useState("");
+  const found = useMemo(() => (query.trim() ? TOOLS.filter((t) => toolMatches(t, query)) : []), [query]);
+  const searching = query.trim().length > 0;
 
   return (
     <Layout>
@@ -281,76 +335,94 @@ export default function ToolsHub() {
           url: "https://www.livewellbyjamesbell.co/tools",
         }}
       />
+      <style>{`
+        .tool-card:hover, .tool-card:focus-visible { border-color: var(--mustard); }
+        @media (max-width: 640px) {
+          .tool-card-dek { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+        }
+      `}</style>
 
       {/* Hero */}
-      <section style={{ background: "var(--charcoal)", color: "var(--ivory)", padding: "80px 32px 60px", textAlign: "center" }}>
+      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-6) var(--s-4) var(--s-5)", textAlign: "center" }}>
         <div className="wrap" style={{ maxWidth: "700px" }}>
-          <div style={{ fontSize: "11px", fontWeight: 700, letterSpacing: "0.2em", color: "var(--gold)", fontFamily: "var(--U)", marginBottom: "16px" }}>
+          <div style={{ fontSize: "11px", fontWeight: 700, letterSpacing: "0.2em", color: "var(--mustard)", fontFamily: "var(--U)", marginBottom: "16px" }}>
             FREE TOOLS
           </div>
-          <h1 style={{ fontSize: "clamp(36px, 5vw, 52px)", fontWeight: 300, fontFamily: "var(--F)", lineHeight: 1.15, marginBottom: "20px" }}>
-            Tools for the Life You Are <em style={{ fontStyle: "italic", color: "var(--gold)" }}>Actually</em> Living
+          <h1 style={{ fontSize: "clamp(34px, 5vw, 52px)", fontWeight: 300, fontFamily: "var(--F)", lineHeight: 1.15, marginBottom: "16px" }}>
+            Tools for the Life You Are <em style={{ fontStyle: "italic", color: "var(--mustard)" }}>Actually</em> Living
           </h1>
-          <p style={{ fontSize: "18px", lineHeight: 1.7, opacity: 0.85, fontFamily: "var(--B)" }}>
-            Built for marriages, for households, for anyone who takes the faith seriously enough to practice it on a Tuesday.
+          <p style={{ fontSize: "17px", lineHeight: 1.7, color: "var(--charcoal-fg-muted)", fontFamily: "var(--B)", margin: "0 0 var(--s-4)" }}>
+            Built for marriages, for households, for anyone who takes the faith seriously enough to practice it on a Tuesday. Every one is free and works on your phone, and the journals and planners keep what you write on your own device.
           </p>
+          <label htmlFor="tool-find" style={{ display: "block", fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--charcoal-fg)", marginBottom: "8px", textAlign: "left" }}>
+            Find a tool
+          </label>
+          <input
+            id="tool-find"
+            type="search"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder="Try: prayer, worry, marriage"
+            autoComplete="off"
+            style={{ width: "100%", minHeight: "52px", padding: "12px 16px", fontSize: "17px", fontFamily: "var(--B)", borderRadius: "var(--radius-sm)", border: "1px solid var(--charcoal-line)", background: "var(--charcoal-fg)", color: "var(--charcoal)" }}
+          />
         </div>
       </section>
 
-      {/* Tools, in the order a person actually needs them: an honest reading
-          first, then the Word, then wisdom for the situation, then the
-          household, then the public square. Grouping lives in TOOL_GROUPS. */}
-      <section style={{ padding: "60px 32px", background: "var(--paper)" }}>
+      <section style={{ padding: "var(--s-5) var(--s-4) var(--s-6)", background: "var(--bone)" }}>
         <div className="wrap" style={{ maxWidth: "1000px" }}>
-          {TOOL_GROUPS.map((group) => (
-            <div key={group.title} style={{ marginBottom: "56px" }}>
-              <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "6px" }}>{group.title}</div>
-              <div style={{ width: "40px", height: "1px", background: "var(--mustard)", marginBottom: "22px" }} />
-              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(300px, 100%), 1fr))", gap: "32px" }}>
-              {group.tools.map((tool) => {
-              const Icon = tool.icon;
-              return (
-                <Link
-                  key={tool.href}
-                  href={tool.href}
-                  style={{
-                    display: "block",
-                    padding: "40px 32px",
-                    background: "var(--card)",
-                    borderRadius: "8px",
-                    borderLeft: `4px solid ${tool.color}`,
-                    textDecoration: "none",
-                    transition: "transform 0.2s, box-shadow 0.2s",
-                  }}
-                  onMouseEnter={(e) => { e.currentTarget.style.transform = "translateY(-4px)"; e.currentTarget.style.boxShadow = "0 12px 32px rgba(0,0,0,0.08)"; }}
-                  onMouseLeave={(e) => { e.currentTarget.style.transform = "none"; e.currentTarget.style.boxShadow = "none"; }}
-                >
-                  <Icon size={32} style={{ color: tool.color, marginBottom: "16px" }} />
-                  <h2 style={{ fontSize: "22px", fontWeight: 600, fontFamily: "var(--F)", color: "var(--ink)", marginBottom: "12px" }}>
-                    {tool.title}
-                  </h2>
-                  <p style={{ fontSize: "15px", lineHeight: 1.7, color: "var(--ink3)", fontFamily: "var(--B)" }}>
-                    {tool.description}
-                  </p>
-                  <div style={{ marginTop: "20px", fontSize: "13px", fontWeight: 600, color: tool.color, fontFamily: "var(--U)" }}>
-                    Use Tool →
-                  </div>
-                </Link>
-              );
-              })}
-              </div>
+          <Link href="/my-library" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: "12px", minHeight: "52px", padding: "12px 16px", marginBottom: "var(--s-5)", border: "1px solid var(--border)", borderLeft: "3px solid var(--mustard)", borderRadius: "var(--radius-sm)", background: "var(--card)", color: "var(--ink)", textDecoration: "none", fontFamily: "var(--U)", fontSize: "15px", fontWeight: 600 }}>
+            <span>My Library{saved.length ? ` (${saved.length} saved)` : ""}: what you've saved and started, on this device</span>
+            <span aria-hidden style={{ color: "var(--mustard-text)" }}>→</span>
+          </Link>
+
+          {/* Always on the page, so a screen reader hears each new count. */}
+          <p role="status" style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted)", margin: searching ? "0 0 var(--s-3)" : 0 }}>
+            {searching ? (found.length ? `${found.length} ${found.length === 1 ? "tool matches" : "tools match"} "${query.trim()}"` : `No tool matches "${query.trim()}".`) : ""}
+          </p>
+          {searching ? (
+            <div>
+              {found.length ? (
+                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(300px, 100%), 1fr))", gap: "16px" }}>
+                  {found.map((tool) => <ToolCard key={tool.href} tool={tool} />)}
+                </div>
+              ) : (
+                <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink)" }}>
+                  Try another word, <Link href={`/search?q=${encodeURIComponent(query.trim())}`} style={{ color: "var(--mustard-text)", fontWeight: 600 }}>search the whole site</Link>, or start at <Link href="/help" style={{ color: "var(--mustard-text)", fontWeight: 600 }}>Find Help</Link> with what you're facing.
+                </p>
+              )}
             </div>
-          ))}
-          <div style={{ textAlign: "center", marginTop: "32px" }}>
-            <Link
-              href="/tools/saved"
-              style={{
-                fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)",
-                color: "var(--mustard-text)", textDecoration: "underline",
-                textUnderlineOffset: "3px",
-              }}
-            >
-              {totalSaved > 0 ? `Saved Items (${totalSaved})` : "Saved Items — verses and prayers you keep live here"}
+          ) : (
+            <>
+              {/* Jump to a group: on a phone the list is long, so the groups are one tap away. */}
+              <nav aria-label="Tool groups" style={{ display: "flex", flexWrap: "wrap", gap: "8px", marginBottom: "var(--s-5)" }}>
+                {TOOL_GROUPS.map((g) => (
+                  <a key={g.title} href={`#${slug(g.title)}`} style={{ display: "inline-flex", alignItems: "center", minHeight: "44px", padding: "8px 14px", border: "1px solid var(--border)", borderRadius: "var(--radius-pill)", background: "var(--card)", color: "var(--ink)", textDecoration: "none", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600 }}>
+                    {g.title} <span style={{ color: "var(--ink-muted)", fontWeight: 500, marginLeft: "6px" }}>{g.tools.length}</span>
+                  </a>
+                ))}
+              </nav>
+              {/* Tools, in the order a person actually needs them: an honest reading
+                  first, then the Word, then wisdom for the situation, then the
+                  household, then the public square. Grouping lives in TOOL_GROUPS. */}
+              {TOOL_GROUPS.map((group) => (
+                <div key={group.title} id={slug(group.title)} style={{ marginBottom: "var(--s-6)", scrollMarginTop: "80px" }}>
+                  <h2 className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "6px" }}>{group.title}</h2>
+                  <div style={{ width: "40px", height: "1px", background: "var(--mustard)", marginBottom: "18px" }} />
+                  <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(300px, 100%), 1fr))", gap: "16px" }}>
+                    {group.tools.map((tool) => <ToolCard key={tool.href} tool={tool} />)}
+                  </div>
+                </div>
+              ))}
+            </>
+          )}
+
+          <div style={{ display: "flex", flexWrap: "wrap", gap: "12px 24px", justifyContent: "center", marginTop: "var(--s-4)" }}>
+            <Link href="/my-library" style={{ fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)", color: "var(--mustard-text)", textDecoration: "underline", textUnderlineOffset: "3px" }}>
+              My Library
+            </Link>
+            <Link href="/tools/saved" style={{ fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)", color: "var(--mustard-text)", textDecoration: "underline", textUnderlineOffset: "3px" }}>
+              {totalSaved > 0 ? `Saved verses and prayers (${totalSaved})` : "Saved verses and prayers"}
             </Link>
           </div>
         </div>

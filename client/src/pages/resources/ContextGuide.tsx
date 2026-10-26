@@ -11,6 +11,7 @@ import MoreOnThis from "@/components/MoreOnThis";
 import { Prose } from "@/lib/prose";
 import { SEOMeta } from "@/components/SEOMeta";
 import PageEndNav from "@/components/PageEndNav";
+import { TakeItWithYou } from "@/components/TakeItWithYou";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
@@ -72,6 +73,14 @@ export default function ContextGuide() {
         </div>
       </section>
 
+      {data && (
+        <section className="no-print" style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) 0" }}>
+          <div style={wrap}>
+            <TakeItWithYou title={data.title} kind="Context guide" href={`/resources/context/${data.slug}`} summary={data.subtitle} print />
+          </div>
+        </section>
+      )}
+
       {data?.sections.map((s, i) => (
         <section key={s.id} style={{ background: i % 2 ? "var(--bone-warm)" : "var(--bone)", padding: "var(--s-5) var(--s-4)" }}>
           <div style={wrap}>
@@ -122,7 +131,7 @@ export default function ContextGuide() {
         <div style={{ ...wrap, display: "flex", gap: "var(--s-4)", flexWrap: "wrap" }}>
           <Link href="/resources/context" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>← All context guides</Link>
           {data && (
-            <a href={`/downloads/context/${slug}.pdf`} download style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>Download as PDF</a>
+            <a href={`/downloads/context/${slug}.pdf`} target="_blank" rel="noopener" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>Open the PDF</a>
           )}
         </div>
       </section>

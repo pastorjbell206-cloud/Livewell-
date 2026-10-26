@@ -17,6 +17,7 @@ import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { ToolActions } from "@/components/ToolActions";
+import { RemindMe } from "@/components/RemindMe";
 import ScriptureNote from "@/components/ScriptureNote";
 import { readStoredJSON, writeStoredJSON, removeStoredJSON } from "@/lib/storage";
 
@@ -139,6 +140,16 @@ export default function PrayerPlanner() {
           <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.65, margin: 0, maxWidth: "60ch", opacity: 0.85 }}>
             Everything stays in this browser and is never sent anywhere.
           </p>
+          <RemindMe
+            title="The Prayer Planner"
+            details="Today's names are waiting on the Prayer Planner."
+            href="/tools/prayer-planner"
+            freq="DAILY"
+            count={30}
+            schedule="every day for thirty days"
+            defaultTime="morning"
+            onDark
+          />
         </div>
       </section>
 

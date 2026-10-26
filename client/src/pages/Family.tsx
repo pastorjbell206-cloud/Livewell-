@@ -158,7 +158,7 @@ export default function Family() {
           <ScriptureNote rendering="bsb" />
           <div style={{ marginTop: "16px", display: "flex", flexWrap: "wrap", gap: "20px" }}>
             <Link href="/family/devotions" style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--mustard-text)", display: "inline-flex", alignItems: "center", gap: "6px" }}>
-              See the full year, plus Advent and Holy Week <ArrowRight size={14} />
+              See the full year, plus Thanksgiving, Advent, and Holy Week <ArrowRight size={14} />
             </Link>
             <Link href="/tools/family-devotions" style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--mustard-text)", display: "inline-flex", alignItems: "center", gap: "6px" }}>
               Or build your own <ArrowRight size={14} />

@@ -4,7 +4,9 @@
  * grammar as a section of the essay shelf on /writing. Stacks on a phone.
  * Light or dark, to sit on a cream or a charcoal section. A page that uses it
  * renders <HubStyles /> once. A link marked `external` (another site, a
- * mailto) renders as a plain <a>; everything else is an in-app <Link>.
+ * mailto) renders as a plain <a>; everything else is an in-app <Link>. Each
+ * label carries a small arrow, so on a phone, where nothing hovers, a link
+ * still looks like something to tap.
  */
 import type { ReactNode } from "react";
 import { Link } from "wouter";
@@ -66,6 +68,9 @@ export function HubGroup({
           const inner = (
             <>
               <span className="hub-link__label">{l.label}</span>
+              <span className="hub-link__arrow" aria-hidden="true" style={{ color: dark ? "var(--mustard)" : "var(--mustard-text)" }}>
+                →
+              </span>
               {l.note && (
                 <span className="hub-link__note" style={{ color: muted }}>
                   {l.note}
@@ -111,6 +116,9 @@ const HUB_CSS = `
 .hub-link{display:block;text-decoration:none}
 .hub-link__label{display:inline;font-family:var(--F);font-weight:500;font-size:23px;line-height:1.25;text-decoration:underline;text-decoration-color:transparent;text-decoration-thickness:1px;text-underline-offset:0.16em;transition:text-decoration-color var(--dur) var(--ease)}
 .hub-link:hover .hub-link__label,.hub-link:focus-visible .hub-link__label{text-decoration-color:var(--mustard)}
+.hub-link__arrow{display:inline-block;margin-left:8px;font-family:var(--U);font-size:18px;line-height:1;transition:transform var(--dur) var(--ease)}
+.hub-link:hover .hub-link__arrow,.hub-link:focus-visible .hub-link__arrow{transform:translateX(3px)}
+@media (prefers-reduced-motion:reduce){.hub-link__arrow{transition:none}}
 .hub-link__note{display:block;font-family:var(--B);font-size:15px;line-height:1.6;margin-top:4px;max-width:58ch}
 @media (max-width:760px){.hub-group{grid-template-columns:minmax(0,1fr)}}
 `;

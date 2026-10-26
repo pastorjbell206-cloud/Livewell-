@@ -18,6 +18,7 @@ import GatedDownload from "@/components/GatedDownload";
 import PageEndNav from "@/components/PageEndNav";
 import { DONATE_HREF, DONATE_BLURB } from "@/lib/donate";
 import { isPublicEssay } from "@/lib/shelf";
+import { TakeItWithYou } from "@/components/TakeItWithYou";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 const prose = { maxWidth: "var(--w-prose)", margin: "0 auto" } as const;
@@ -149,6 +150,7 @@ export default function StudyGuide() {
         <>
           <section style={{ background: "var(--bone)", padding: "var(--s-4) var(--s-4) 0" }}>
             <div style={wrap}>
+              <TakeItWithYou title={data.title} kind="Study guide" href={`/studyguides/${data.slug}`} summary={data.subtitle} />
               <p style={{ ...body, maxWidth: "68ch", marginBottom: "var(--s-3)" }}>{data.summary}</p>
               <div role="tablist" aria-label="Toolkit sections" style={{ display: "flex", gap: "6px", flexWrap: "wrap", borderBottom: "1px solid rgba(20,17,12,0.12)" }}>
                 {tabs.map((t) => (

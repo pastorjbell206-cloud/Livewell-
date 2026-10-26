@@ -84,11 +84,14 @@ export const SITE_NAV_GROUPS: SiteNavGroup[] = [
     title: "Resources",
     links: [
       { label: "Resources", href: "/resources", primary: true },
+      { label: "My Library", href: "/my-library" },
       { label: "Downloads and PDFs", href: "/downloads" },
       { label: "The Hard Issues booklets", href: "/resources/hard-issues-series" },
       { label: "All tools", href: "/tools" },
+      { label: "Self-checks", href: "/assessments" },
       { label: "How-to guides", href: "/how-tos" },
       { label: "Find help in a hard season", href: "/help" },
+      { label: "Eight-week plans", href: "/plans" },
       { label: "For families", href: "/family" },
     ],
   },
@@ -115,4 +118,5 @@ export const SEARCH_SHORTCUTS: SiteNavLink[] = [
   { label: "Essays", href: "/writing" },
   { label: "Books", href: "/books" },
   { label: "Find help", href: "/help" },
+  { label: "Tools", href: "/tools" },
 ];
