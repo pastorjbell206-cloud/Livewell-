@@ -11,8 +11,9 @@
  * site's parser (client/src/lib/scripture-ref.ts; scripture-ref.test.ts holds
  * the two together): "Book C", "Book C-C", "Book C:V", "Book C:V-V",
  * "Book C:V-C:V", verse lists within a chapter ("Psalm 23:1,4"), chapters
- * joined by semicolons ("Romans 5:1; 8:28"), loose spacing ("jn 3 16"), and
- * the abbreviations in client/src/data/scripture-books.json ("Ps", "1 Cor").
+ * joined by semicolons ("Romans 5:1; 8:28"), loose spacing ("jn 3 16"), a part
+ * of a verse ("Romans 3:23b", read as the whole verse), and the abbreviations
+ * in client/src/data/scripture-books.json ("Ps", "1 Cor").
  */
 import { readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
@@ -54,7 +55,8 @@ function chapter(slug, c) {
 /** The book (letters, with an optional 1-3 in front), then everything from the first digit after it. */
 const SPLIT = /^(.*?[a-z][a-z.]*)\s*(\d[\s\S]*)$/i;
 const CHAPTERS = /^(\d+)(?:-(\d+))?$/;
-const VERSES = /^(\d+)(?:-(?:(\d+):)?(\d+))?$/;
+/** A verse may carry a part letter ("23b"); the span is the whole verse. */
+const VERSES = /^(\d+)[a-c]?(?:-(?:(\d+):)?(\d+)[a-c]?)?$/;
 
 /**
  * "Philippians 4:6-7" -> { book, parts: [{ c1, v1, c2, v2 }] } (v2 is
@@ -72,7 +74,7 @@ export function readRef(ref) {
     .replace(/\s*([:.,;-])\s*/g, "$1")
     .replace(/^(\d+)\s+(?=\d)/, "$1:")
     .replace(/(\d)\.(?=\d)/g, "$1:");
-  if (/[^\d:,;-]/.test(loc)) return null;
+  if (/[^\d:,;a-c-]/.test(loc)) return null;
   const parts = [];
   for (const seg of loc.split(";")) {
     const colon = seg.indexOf(":");

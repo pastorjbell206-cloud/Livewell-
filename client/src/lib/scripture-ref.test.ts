@@ -39,6 +39,8 @@ const FIXTURES = [
   "Hezekiah 1:1", "Wisdom 2:12-20", "2 Maccabees 12:39-45", "Genesis", "Genesis 51", "Genesis 0", "John 0:1",
   "John 3:0", "John 3:18-16", "John 4-3", "Jude 2:1", "John 3:16 and 17", "Acts 2 (Pentecost)", "John 3:16.",
   "John 3:16,", "3:16", "", "not a reference", "is 53", "1 Corinthians (Christ crucified)", "4 John 1:1",
+  "Romans 3:23b", "John 18:36a", "Luke 22:19b-20", "Mark 1:35a-b", "Matthew 5:13c, 14", "John 3:16ab", "John 3:16A",
+  "Psalm 23a", "John 3:16 b",
 ];
 
 describe("the two parsers", () => {
@@ -54,6 +56,12 @@ describe("the two parsers", () => {
     for (const [ref, want] of Object.entries(expected)) {
       expect(both(ref), ref).toEqual({ site: want, scripts: want });
     }
+  });
+
+  it("read a part of a verse as the whole verse", () => {
+    expect(both("Romans 3:23b")).toEqual({ site: { slug: "romans", parts: [{ c1: 3, v1: 23, c2: 3, v2: 23 }] }, scripts: { slug: "romans", parts: [{ c1: 3, v1: 23, c2: 3, v2: 23 }] } });
+    expect(both("Luke 22:19b-20").site).toEqual({ slug: "luke", parts: [{ c1: 22, v1: 19, c2: 22, v2: 20 }] });
+    for (const ref of ["John 3:16ab", "John 3:16A", "Psalm 23a", "John 3:16 b"]) expect(both(ref), ref).toEqual({ site: null, scripts: null });
   });
 
   it("return null for an unknown book", () => {

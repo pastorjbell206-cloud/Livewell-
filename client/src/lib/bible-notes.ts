@@ -254,11 +254,11 @@ export function setRead(key: string, read: boolean): boolean {
 
 // ── Scripture references in the rest of the site ────────────────────────────
 
-/** The longest opening stretch of the text that reads as a reference. */
+/** The longest opening stretch of the text that reads as a reference, cut where a word or number ends. */
 function leadingRef(text: string): ScriptureRef | null {
   const s = text.trim();
   for (let end = s.length; end > 0; end--) {
-    if (end < s.length && !/[\s,;(]/.test(s[end])) continue;
+    if (end < s.length && /[A-Za-z0-9]/.test(s[end])) continue;
     const r = parseScriptureRef(s.slice(0, end));
     if (r) return r;
   }
@@ -268,10 +268,11 @@ function leadingRef(text: string): ScriptureRef | null {
 /**
  * "Psalm 139:1-4", "Daniel 1 and 6", "Romans 8–9", "1 Cor. 13" → the book's
  * slug and every chapter the reference touches. A catalogue line can run on
- * into prose ("Acts 2 (Pentecost)") or a second reference ("Proverbs 16:33
- * and 21:1"): the reference it opens with names the book, and each "and" that
- * goes on in the same book adds its chapters. Null when it does not open with
- * a reference (read by lib/scripture-ref.ts).
+ * into prose ("Acts 2 (Pentecost)", "Genesis 1:5. The day") or a second
+ * reference ("Proverbs 16:33 and 21:1"): the reference it opens with names the
+ * book, and each "and" that goes on in the same book adds its chapters; an
+ * "and" that names another book ("and 2 Peter 3:9") ends it. Null when it does
+ * not open with a reference (read by lib/scripture-ref.ts).
  */
 export function refChapters(ref: string): { slug: string; chapters: number[] } | null {
   const [head, ...more] = ref.split(/\s+and\s+/);
@@ -279,7 +280,8 @@ export function refChapters(ref: string): { slug: string; chapters: number[] } |
   if (!lead) return null;
   const spans = [...lead.parts];
   for (const piece of more) {
-    const next = /^\d/.test(piece) ? leadingRef(`${lead.book.name} ${piece}`) : null;
+    // "16:33 and 21:1" goes on in the book; "and 2 Peter 3:9" names another.
+    const next = /^\d/.test(piece) && !leadingRef(piece) ? leadingRef(`${lead.book.name} ${piece}`) : null;
     if (!next) break;
     spans.push(...next.parts);
   }

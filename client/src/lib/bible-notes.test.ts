@@ -25,6 +25,15 @@ describe("refChapters", () => {
     expect(refChapters("Matthew 23:37 and Ezekiel 18:23")).toEqual({ slug: "matthew", chapters: [23] });
     expect(refChapters("Mark 10:6 and the genealogies of Genesis 5 and 11")).toEqual({ slug: "mark", chapters: [10] });
     expect(refChapters("Jude 14-15 with Jude 9")).toEqual({ slug: "jude", chapters: [1] });
+    expect(refChapters("Genesis 1:5. The day with evening")).toEqual({ slug: "genesis", chapters: [1] });
+    expect(refChapters("Genesis 1:5\u2014the day with evening")).toEqual({ slug: "genesis", chapters: [1] });
+  });
+
+  it("does not take a numbered book after 'and' for a chapter of the first", () => {
+    expect(refChapters("2 Corinthians 12:7-9 and 2 Timothy 4:20")).toEqual({ slug: "2-corinthians", chapters: [12] });
+    expect(refChapters("Psalm 90:4 and 2 Peter 3:8")).toEqual({ slug: "psalms", chapters: [90] });
+    expect(refChapters("Acts 16:14-15, 16:31-34, and 1 Corinthians 1:16")).toEqual({ slug: "acts", chapters: [16] });
+    expect(refChapters("1 Samuel 17 and 2 Samuel 11")).toEqual({ slug: "1-samuel", chapters: [17] });
   });
 
   it("returns null for anything that isn't a Bible reference", () => {

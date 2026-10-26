@@ -8,8 +8,9 @@
  * It reads "Book C", "Book C-C", "Book C:V", "Book C:V-V", "Book C:V-C:V",
  * verse lists within a chapter ("Psalm 71:9, 17-18"), chapters joined by
  * semicolons ("Romans 5:1; 8:28"), loose spacing ("jn 3 16"), "." between
- * chapter and verse ("John 3.16"), and a lone number in a one-chapter book as
- * a verse ("Jude 3"). Book names come from data/scripture-books.json with the
+ * chapter and verse ("John 3.16"), a part of a verse ("Romans 3:23b", read as
+ * the whole verse), and a lone number in a one-chapter book as a verse
+ * ("Jude 3"). Book names come from data/scripture-books.json with the
  * abbreviations people write (jn, rom, 1 cor, ps, prov, gen, matt, mk, lk).
  * Anything else, or a chapter or verse that cannot exist, is null.
  *
@@ -70,7 +71,8 @@ export function findBook(name: string): BibleBook | null {
 /** The book (letters, with an optional 1-3 in front), then everything from the first digit after it. */
 const SPLIT = /^(.*?[a-z][a-z.]*)\s*(\d[\s\S]*)$/i;
 const CHAPTERS = /^(\d+)(?:-(\d+))?$/;
-const VERSES = /^(\d+)(?:-(?:(\d+):)?(\d+))?$/;
+/** A verse may carry a part letter ("23b"); the span is the whole verse. */
+const VERSES = /^(\d+)[a-c]?(?:-(?:(\d+):)?(\d+)[a-c]?)?$/;
 
 /** A Scripture reference -> its book and the stretches of text it names; null when it is not one. */
 export function parseScriptureRef(input: string): ScriptureRef | null {
@@ -83,7 +85,7 @@ export function parseScriptureRef(input: string): ScriptureRef | null {
     .replace(/\s*([:.,;-])\s*/g, "$1")
     .replace(/^(\d+)\s+(?=\d)/, "$1:")
     .replace(/(\d)\.(?=\d)/g, "$1:");
-  if (/[^\d:,;-]/.test(loc)) return null;
+  if (/[^\d:,;a-c-]/.test(loc)) return null;
   const parts: RefSpan[] = [];
   for (const seg of loc.split(";")) {
     const colon = seg.indexOf(":");
