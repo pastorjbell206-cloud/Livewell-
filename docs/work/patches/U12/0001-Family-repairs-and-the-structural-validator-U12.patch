@@ -1,7 +1,7 @@
 From 4aef229844068e69fd6c66a1b7533cdfcbf19f0e Mon Sep 17 00:00:00 2001
 From: Claude <noreply@anthropic.com>
 Date: Mon, 26 Oct 2026 21:30:29 +0000
-Subject: [PATCH] Family repairs and the structural validator (U12)
+Subject: [PATCH 1/2] Family repairs and the structural validator (U12)
 
 Devotion ids repaired, then frozen:
 - family-devotions-2.json: the second "forgiveness" and "obedience" become

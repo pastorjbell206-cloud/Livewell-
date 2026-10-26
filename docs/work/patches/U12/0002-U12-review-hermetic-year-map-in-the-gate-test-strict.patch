@@ -1,0 +1,165 @@
+From 5fcffe51a675ecb37878dc94f1cc3f6adbcf2b97 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Mon, 26 Oct 2026 22:30:52 +0000
+Subject: [PATCH 2/2] U12 review: hermetic year-map in the gate test, stricter
+ dash rule, year labels
+
+- server/family-gate.test.ts: seeded scenarios no longer read the repo's
+  generated year map, so the rename scenario passes once U10's
+  familyYear.generated.ts is in the tree (the wave 1 integration seam).
+- validate-family.mjs: any "--" in family prose fails (the old pattern
+  missed "word-- word" and "word --word"); a catechism count is read only
+  in copy that points at the family catechism, so a glossary page giving
+  the Westminster or Heidelberg count cannot fail the gate.
+- The 72 weekly devotions were still called "a year" in the devotions
+  page's SEO title and description, the catalogue summary, and the
+  Resources note ("A devotion for every week of the year"). Each now says
+  seventy-two, more than a year, and the gate checks the number.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01JuCQ8kZ25i9zRwNgk6bh4e
+---
+ client/src/pages/FamilyDevotions.tsx |  4 ++--
+ client/src/pages/Resources.tsx       |  2 +-
+ scripts/build-catalogue.mjs          |  2 +-
+ scripts/validate-family.mjs          | 15 ++++++++++-----
+ server/family-gate.test.ts           | 14 ++++++++++++--
+ 5 files changed, 26 insertions(+), 11 deletions(-)
+
+diff --git a/client/src/pages/FamilyDevotions.tsx b/client/src/pages/FamilyDevotions.tsx
+index 4c6a3061..aeadec1d 100644
+--- a/client/src/pages/FamilyDevotions.tsx
++++ b/client/src/pages/FamilyDevotions.tsx
+@@ -117,8 +117,8 @@ export default function FamilyDevotions() {
+   return (
+     <Layout>
+       <SEOMeta
+-        title="Family Devotions: A Year of Devotions, Thanksgiving, Advent, and Holy Week"
+-        description="A full year of family devotions to do together, plus daily devotionals for Thanksgiving week, Advent, and Holy Week, each with a passage, a question, and a prayer."
++        title="Family Devotions: Weekly, Thanksgiving, Advent, and Holy Week"
++        description="Seventy-two weekly family devotions, more than a year of them, plus daily devotionals for Thanksgiving week, Advent, and Holy Week, each with a passage, a question, and a prayer."
+         url="https://www.livewellbyjamesbell.co/family/devotions"
+       />
+ 
+diff --git a/client/src/pages/Resources.tsx b/client/src/pages/Resources.tsx
+index bb22e1a7..6586f825 100644
+--- a/client/src/pages/Resources.tsx
++++ b/client/src/pages/Resources.tsx
+@@ -242,7 +242,7 @@ export default function Resources() {
+               {
+                 label: "Family devotions",
+                 href: "/family/devotions",
+-                note: "A devotion for every week of the year, plus Thanksgiving, Advent, and Holy Week.",
++                note: "Seventy-two weekly devotions, more than a year of them, plus Thanksgiving, Advent, and Holy Week.",
+               },
+               {
+                 label: "A family catechism",
+diff --git a/scripts/build-catalogue.mjs b/scripts/build-catalogue.mjs
+index 4151280f..cd410679 100644
+--- a/scripts/build-catalogue.mjs
++++ b/scripts/build-catalogue.mjs
+@@ -465,7 +465,7 @@ export const LIBRARIES = {
+     return [
+       item({ kind: "Family", title: "Family Catechism", summary: clip("A 76-question family catechism in the New City Catechism tradition. Each week: a question, answers for adults and children, a verse, a reflection, a prayer."), href: "/family/catechism", period: `${list("family-catechism.json").length} questions` }),
+       item({
+-        kind: "Family", title: "Family Devotions", summary: clip("A full year of family devotions to do together, plus daily devotionals for Thanksgiving week, Advent, and Holy Week, each with a passage, a question, and a prayer."), href: "/family/devotions", period: `${devotions} devotions`,
++        kind: "Family", title: "Family Devotions", summary: clip("Seventy-two weekly family devotions, more than a year of them, plus daily devotionals for Thanksgiving week, Advent, and Holy Week, each with a passage, a question, and a prayer."), href: "/family/devotions", period: `${devotions} devotions`,
+         // The seasonal booklets, built by scripts/lib/help-printables.mjs inside `pnpm pdfs`.
+         files: [
+           ...((detail("family-seasonal.json")?.thanksgiving ?? []).length
+diff --git a/scripts/validate-family.mjs b/scripts/validate-family.mjs
+index 7b51c146..8b00ee1e 100644
+--- a/scripts/validate-family.mjs
++++ b/scripts/validate-family.mjs
+@@ -27,8 +27,9 @@
+  *     age carries both the younger and the older list; every catechism answer
+  *     has its child's answer beside it.
+  *   - Counts match copy: each reading plan's "N days" matches its days, and
+- *     every page, script, or text that says how many catechism questions or
+- *     weekly devotions there are says the number the data holds.
++ *     every page, script, or text that says how many catechism questions (in
++ *     copy that points at the family catechism) or weekly devotions there are
++ *     says the number the data holds.
+  *   - One translation per surface: each family page that shows verse text
+  *     names, in its <ScriptureNote>, exactly the translations of the libraries
+  *     it shows (PAGES below), and a references-only page names none.
+@@ -233,7 +234,7 @@ export function checkFamily({
+       if (scriptureField && at.endsWith(`.${scriptureField}`)) continue;
+       const prose = outsideQuotations(text);
+       if (/—/.test(prose)) errors.push(`${label}${at}: em-dash outside a quotation (the em-dash rule; recast the sentence)`);
+-      if (/\S--\S|\s--\s/.test(prose)) errors.push(`${label}${at}: "--" standing in for a dash (recast the sentence)`);
++      if (/--/.test(prose)) errors.push(`${label}${at}: "--" standing in for a dash (recast the sentence)`);
+     }
+ 
+     if (kind === "devotions") {
+@@ -395,9 +396,13 @@ export function checkFamily({
+     if (show(want) !== show(have)) errors.push(`${rel}: its <ScriptureNote> names ${show(have)}, but the libraries it shows are in ${show(want)}`);
+   }
+ 
+-  // Counts match copy.
++  // Counts match copy. A catechism count is read only in copy that points at
++  // the family catechism (its page or its data file), so a glossary or history
++  // page giving the Heidelberg or Westminster catechism's own count is not
++  // mistaken for a claim about this one.
+   for (const [rel, text] of copy) {
+-    for (const m of text.matchAll(CATECHISM_CLAIM)) {
++    const ours = /catechism/i.test(path.basename(rel)) || /\/family\/catechism|family-catechism/.test(text);
++    for (const m of ours ? text.matchAll(CATECHISM_CLAIM) : []) {
+       const near = text.slice(Math.max(0, m.index - 160), m.index + m[0].length + 160);
+       if (!/catechism/i.test(path.basename(rel)) && !/catechism/i.test(near)) continue;
+       const n = countWord(m[1]);
+diff --git a/server/family-gate.test.ts b/server/family-gate.test.ts
+index ce8b43ed..5f1fe63d 100644
+--- a/server/family-gate.test.ts
++++ b/server/family-gate.test.ts
+@@ -24,7 +24,12 @@ let tmp = "";
+ let pub = "";
+ const read = <T = unknown>(name: string): T => JSON.parse(fs.readFileSync(path.join(pub, name), "utf8"));
+ const write = (name: string, data: unknown) => fs.writeFileSync(path.join(pub, name), JSON.stringify(data, null, 2));
+-const errorsOf = (opts: Parameters<typeof checkFamily>[0] = {}) => checkFamily({ publicDir: pub, ...opts }).errors;
++// Seeded scenarios read no year map unless they pass one: the repo's generated
++// map (U10) names the committed ids, so a scenario that renames or removes a
++// devotion would otherwise fail on the map instead of on what it is testing.
++// The year-map test below seeds its own; "passes as committed" reads the real one.
++const errorsOf = (opts: Parameters<typeof checkFamily>[0] = {}) =>
++  checkFamily({ publicDir: pub, yearMapFile: path.join(tmp, "no-year-map.ts"), ...opts }).errors;
+ 
+ beforeEach(() => {
+   tmp = fs.mkdtempSync(path.join(os.tmpdir(), "family-gate-"));
+@@ -108,27 +113,32 @@ describe("validate-family.mjs", () => {
+     first[1].reflection = "A line with a pause — like this.";
+     first[2].reflection = "Jesus said, “Come to Me—all of you,” and meant it.";
+     first[3].reflection = "A line -- with two hyphens.";
++    first[4].reflection = "A line-- typed the other way.";
+     write("family-devotions.json", first);
+     const errors = errorsOf();
+     expect(errors.some((e) => /family-devotions\.json\[1\]\.reflection: em-dash outside a quotation/.test(e))).toBe(true);
+     expect(errors.some((e) => /family-devotions\.json\[2\]\.reflection/.test(e))).toBe(false);
+     expect(errors.some((e) => /family-devotions\.json\[3\]\.reflection: "--" standing in/.test(e))).toBe(true);
++    expect(errors.some((e) => /family-devotions\.json\[4\]\.reflection: "--" standing in/.test(e))).toBe(true);
+     // The committed passage text keeps the BSB's own em-dashes.
+     expect(read<{ passageText: string }[]>("family-devotions.json").some((d) => d.passageText.includes("—"))).toBe(true);
+   });
+ 
+   it("fails when copy states the wrong count", () => {
+     const copy: [string, string][] = [
+-      ["seeded/catalogue.mjs", 'summary: clip("A 52-question family catechism in the New City Catechism tradition.")'],
++      ["seeded/catalogue.mjs", 'summary: clip("A 52-question family catechism in the New City Catechism tradition."), href: "/family/catechism"'],
+       ["seeded/Hub.tsx", '{ href: "/family/catechism", note: "Seventy-six questions and answers, one at a time." }'],
+       ["seeded/Devotions.tsx", "Seventy weekly devotions, more than a year of them."],
+       ["seeded/Tools.tsx", 'title: "Marriage health assessment", dek: "A 15-question diagnostic across trust and conflict."'],
++      // Another catechism's own count, on a page that does not point at ours.
++      ["seeded/Glossary.tsx", "The Westminster Shorter Catechism (1647) puts the faith in 107 questions."],
+     ];
+     const errors = errorsOf({ copy });
+     expect(errors).toContain('seeded/catalogue.mjs: says "52-question" about the catechism, which has 76 questions');
+     expect(errors.some((e) => e.startsWith("seeded/Hub.tsx"))).toBe(false);
+     expect(errors.some((e) => /seeded\/Devotions\.tsx: says "Seventy weekly devotions", but \/family\/devotions lists 72/.test(e))).toBe(true);
+     expect(errors.some((e) => e.startsWith("seeded/Tools.tsx"))).toBe(false);
++    expect(errors.some((e) => e.startsWith("seeded/Glossary.tsx"))).toBe(false);
+   });
+ 
+   it("reads count words", () => {
+-- 
+2.43.0
+
