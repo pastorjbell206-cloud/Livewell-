@@ -150,6 +150,8 @@ const BibleOnTopic = lazy(() => import("./pages/tools/BibleOnTopic"));
 const WisdomFinder = lazy(() => import("./pages/tools/WisdomFinder"));
 const WorryJournal = lazy(() => import("./pages/tools/WorryJournal"));
 const PrayerPlanner = lazy(() => import("./pages/tools/PrayerPlanner"));
+const ConnectionPlanner = lazy(() => import("./pages/tools/ConnectionPlanner"));
+const MyLibrary = lazy(() => import("./pages/MyLibrary"));
 const ParentTeenConversation = lazy(() => import("./pages/tools/ParentTeenConversation"));
 const SpiritualGifts = lazy(() => import("./pages/tools/SpiritualGifts"));
 const Proverbs31 = lazy(() => import("./pages/tools/Proverbs31"));
@@ -602,6 +604,8 @@ function Router() {
         <Route path="/tools/wisdom-finder" component={WisdomFinder} />
         <Route path="/tools/worry-journal" component={WorryJournal} />
         <Route path="/tools/prayer-planner" component={PrayerPlanner} />
+        <Route path="/tools/connection-planner" component={ConnectionPlanner} />
+        <Route path="/my-library" component={MyLibrary} />
         <Route path="/tools/parent-teen-conversation" component={ParentTeenConversation} />
         <Route path="/tools/spiritual-gifts" component={SpiritualGifts} />
         <Route path="/tools/proverbs-31" component={Proverbs31} />

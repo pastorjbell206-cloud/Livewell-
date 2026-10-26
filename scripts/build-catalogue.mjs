@@ -465,9 +465,12 @@ export const LIBRARIES = {
     return [
       item({ kind: "Family", title: "Family Catechism", summary: clip("A 52-question family catechism in the New City Catechism tradition. Each week: a question, answers for adults and children, a verse, a reflection, a prayer."), href: "/family/catechism", period: `${list("family-catechism.json").length} questions` }),
       item({
-        kind: "Family", title: "Family Devotions", summary: clip("A full year of family devotions to do together, plus daily Advent and Holy Week devotionals — each with a passage, a question, an activity, and a prayer."), href: "/family/devotions", period: `${devotions} devotions`,
+        kind: "Family", title: "Family Devotions", summary: clip("A full year of family devotions to do together, plus daily devotionals for Thanksgiving week, Advent, and Holy Week, each with a passage, a question, and a prayer."), href: "/family/devotions", period: `${devotions} devotions`,
         // The seasonal booklets, built by scripts/lib/help-printables.mjs inside `pnpm pdfs`.
         files: [
+          ...((detail("family-seasonal.json")?.thanksgiving ?? []).length
+            ? [file("Thanksgiving booklet (Letter)", "/downloads/seasonal/thanksgiving-family-letter.pdf"), file("Thanksgiving booklet (A4)", "/downloads/seasonal/thanksgiving-family-a4.pdf")]
+            : []),
           file("Advent booklet (Letter)", "/downloads/seasonal/advent-family-letter.pdf"),
           file("Advent booklet (A4)", "/downloads/seasonal/advent-family-a4.pdf"),
           file("Holy Week booklet (Letter)", "/downloads/seasonal/holy-week-family-letter.pdf"),

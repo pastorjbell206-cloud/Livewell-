@@ -222,6 +222,7 @@ const STATIC_PAGES = [
   { url: "/tools/worry-journal", priority: "0.65", changefreq: "monthly" },
   { url: "/tools/spiritual-gifts", priority: "0.65", changefreq: "monthly" },
   { url: "/tools/prayer-planner", priority: "0.65", changefreq: "monthly" },
+  { url: "/tools/connection-planner", priority: "0.65", changefreq: "monthly" },
   { url: "/tools/parent-teen-conversation", priority: "0.65", changefreq: "monthly" },
   { url: "/tools/deep-bible", priority: "0.7", changefreq: "monthly" },
   { url: "/tools/emotional-health", priority: "0.65", changefreq: "monthly" },

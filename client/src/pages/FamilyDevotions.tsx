@@ -1,8 +1,9 @@
 /**
  * Family devotions (/family/devotions) — the full set: 52 weekly devotions for
- * the year, plus seasonal devotionals for Advent and Holy Week. Data:
- * /family-devotions.json + /family-devotions-2.json (weekly), and
- * /family-seasonal.json (advent + holyWeek).
+ * the year, plus seasonal devotionals for Thanksgiving, Advent, and Holy Week.
+ * Data: /family-devotions.json + /family-devotions-2.json (weekly), and
+ * /family-seasonal.json (thanksgiving, advent, holyWeek).
+ * A seasonal tab appears only once its pack has days in the data.
  */
 import { useEffect, useMemo, useState } from "react";
 import { Link } from "wouter";
@@ -21,12 +22,19 @@ interface Daily {
   reflection: string; question: string; prayer: string;
 }
 
-type Tab = "weekly" | "advent" | "holyWeek";
+type Tab = "weekly" | "thanksgiving" | "advent" | "holyWeek";
+type Season = Exclude<Tab, "weekly">;
+
+// Each seasonal pack's name and the booklet files scripts/lib/help-printables.mjs builds for it.
+const SEASONS: Record<Season, { label: string; file: string }> = {
+  thanksgiving: { label: "Thanksgiving", file: "thanksgiving" },
+  advent: { label: "Advent", file: "advent" },
+  holyWeek: { label: "Holy Week", file: "holy-week" },
+};
 
 export default function FamilyDevotions() {
   const [weekly, setWeekly] = useState<Weekly[]>([]);
-  const [advent, setAdvent] = useState<Daily[]>([]);
-  const [holyWeek, setHolyWeek] = useState<Daily[]>([]);
+  const [seasonal, setSeasonal] = useState<Record<Season, Daily[]>>({ thanksgiving: [], advent: [], holyWeek: [] });
   const [tab, setTab] = useState<Tab>("weekly");
   const [open, setOpen] = useState<string | null>(null);
 
@@ -37,15 +45,16 @@ export default function FamilyDevotions() {
     ]).then(([a, b]) => setWeekly([...(Array.isArray(a) ? a : []), ...(Array.isArray(b) ? b : [])]));
     fetch("/family-seasonal.json")
       .then((r) => (r.ok ? r.json() : null))
-      .then((d) => { if (d) { setAdvent(d.advent ?? []); setHolyWeek(d.holyWeek ?? []); } })
+      .then((d) => { if (d) setSeasonal({ thanksgiving: d.thanksgiving ?? [], advent: d.advent ?? [], holyWeek: d.holyWeek ?? [] }); })
       .catch(() => {});
   }, []);
 
   const tabs: { id: Tab; label: string; count: number }[] = useMemo(() => [
-    { id: "weekly", label: "Weekly (a year)", count: weekly.length },
-    { id: "advent", label: "Advent", count: advent.length },
-    { id: "holyWeek", label: "Holy Week", count: holyWeek.length },
-  ], [weekly.length, advent.length, holyWeek.length]);
+    { id: "weekly" as Tab, label: "Weekly (a year)", count: weekly.length },
+    ...(Object.keys(SEASONS) as Season[])
+      .filter((s) => seasonal[s].length > 0)
+      .map((s) => ({ id: s as Tab, label: SEASONS[s].label, count: seasonal[s].length })),
+  ], [weekly.length, seasonal]);
 
   const Accordion = ({ id, eyebrow, title, children }: { id: string; eyebrow: string; title: string; children: React.ReactNode }) => {
     const isOpen = open === id;
@@ -79,13 +88,13 @@ export default function FamilyDevotions() {
     <p style={{ fontFamily: "var(--F)", fontSize: "15px", fontStyle: "italic", lineHeight: 1.7, color: "var(--ink-muted)", borderLeft: "2px solid var(--mustard)", paddingLeft: "14px" }}>{text}</p>
   );
 
-  const list = tab === "weekly" ? weekly : tab === "advent" ? advent : holyWeek;
+  const list = tab === "weekly" ? weekly : seasonal[tab];
 
   return (
     <Layout>
       <SEOMeta
-        title="Family Devotions — A Year of Devotions, Advent, and Holy Week"
-        description="A full year of family devotions to do together, plus daily Advent and Holy Week devotionals — each with a passage, a question, an activity, and a prayer."
+        title="Family Devotions: A Year of Devotions, Thanksgiving, Advent, and Holy Week"
+        description="A full year of family devotions to do together, plus daily devotionals for Thanksgiving week, Advent, and Holy Week, each with a passage, a question, and a prayer."
         url="https://www.livewellbyjamesbell.co/family/devotions"
       />
 
@@ -98,7 +107,7 @@ export default function FamilyDevotions() {
             A year of devotions, together.
           </h1>
           <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.78)", maxWidth: "62ch" }}>
-            A devotion for every week of the year, plus daily readings to walk your family through Advent and Holy Week. Each one is short, a passage and a question and something to do together and a prayer, made for the table or the couch.
+            A devotion for every week of the year, plus daily readings to walk your family through Thanksgiving week, Advent, and Holy Week. Each one is short, a passage and a question and something to do together and a prayer, made for the table or the couch.
           </p>
         </div>
       </section>
@@ -145,14 +154,14 @@ export default function FamilyDevotions() {
               <a href="/downloads/tools/family-cards-a4.pdf" style={{ color: "var(--mustard-text)", fontWeight: 600 }}>A4</a>
             </p>
           )}
-          {(tab === "advent" || tab === "holyWeek") && (
+          {tab !== "weekly" && (
             <p style={{ fontFamily: "var(--U)", fontSize: "15px", lineHeight: 1.6, color: "var(--ink)", margin: "0 0 var(--s-3)" }}>
-              Print the whole {tab === "advent" ? "Advent" : "Holy Week"} booklet, one day to a page, with each passage in full from the Berean Standard Bible:{" "}
-              <a href={`/downloads/seasonal/${tab === "advent" ? "advent" : "holy-week"}-family-letter.pdf`} style={{ color: "var(--mustard-text)", fontWeight: 600 }}>US Letter</a>{" · "}
-              <a href={`/downloads/seasonal/${tab === "advent" ? "advent" : "holy-week"}-family-a4.pdf`} style={{ color: "var(--mustard-text)", fontWeight: 600 }}>A4</a>
+              Print the whole {SEASONS[tab].label} booklet, one day to a page, with each passage in full from the Berean Standard Bible:{" "}
+              <a href={`/downloads/seasonal/${SEASONS[tab].file}-family-letter.pdf`} style={{ color: "var(--mustard-text)", fontWeight: 600 }}>US Letter</a>{" · "}
+              <a href={`/downloads/seasonal/${SEASONS[tab].file}-family-a4.pdf`} style={{ color: "var(--mustard-text)", fontWeight: 600 }}>A4</a>
             </p>
           )}
-          {(tab === "advent" || tab === "holyWeek") && (list as Daily[]).map((d) => (
+          {tab !== "weekly" && (list as Daily[]).map((d) => (
             <Accordion key={`${tab}-${d.day}`} id={`${tab}-${d.day}`} eyebrow={d.label} title={d.title}>
               <Verse passage={d.passage} text={d.passageText} />
               <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "var(--ink-muted)", marginBottom: "16px" }}>{d.reflection}</p>

@@ -25,6 +25,7 @@ import { CrisisBlock, type CrisisTopic } from "@/components/CrisisBlock";
 import { QuickExit } from "@/components/QuickExit";
 import { EditorialIndex, type IndexItem } from "@/components/editorial/EditorialIndex";
 import { LoadFailed } from "@/components/LoadFailed";
+import { TakeItWithYou } from "@/components/TakeItWithYou";
 import { fetchJson } from "@/lib/fetch-json";
 import { studyBibleHref } from "@/lib/needs";
 import { isPublicEssayHref } from "@/lib/shelf";
@@ -87,6 +88,17 @@ function Section({ id, eyebrow, title, tone = "bone", children }: { id: string; 
 
 const listStyle = { fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.65, color: "var(--ink)", paddingLeft: "1.2em", margin: "0 0 18px", maxWidth: "64ch" } as const;
 const subhead = { fontFamily: "var(--F)", fontSize: "23px", fontWeight: 500, lineHeight: 1.25, color: "var(--ink)", margin: "var(--s-4) 0 10px" } as const;
+
+/** The hero's jump list: the practical sections sit far down a long page on a phone. */
+const JUMPS = [
+  { href: "#this-week", label: "What to do this week" },
+  { href: "#more-help", label: "When to get more help" },
+  { href: "#helping", label: "If you're helping someone" },
+  { href: "#go-deeper", label: "Go deeper" },
+  { href: "#print", label: "Print it" },
+] as const;
+const jumpPill = { display: "inline-flex", alignItems: "center", minHeight: "44px", padding: "8px 14px", border: "1px solid var(--charcoal-line)", borderRadius: "var(--radius-pill)", color: "var(--charcoal-fg)", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 500, textDecoration: "none", whiteSpace: "nowrap" } as const;
+const fileButton = { display: "inline-flex", alignItems: "center", minHeight: "44px", padding: "0 14px", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", background: "var(--card)", color: "var(--mustard-text)", textDecoration: "none" } as const;
 
 /** The printables scripts/lib/help-printables.mjs builds for every care page. */
 const PRINTABLES = [
@@ -233,10 +245,12 @@ export default function CarePage() {
             {data.title}
           </h1>
           <Prose text={data.answer} light />
-          <nav aria-label="On this page" style={{ display: "flex", flexWrap: "wrap", gap: "6px 20px", fontFamily: "var(--U)", fontSize: "14px", lineHeight: 1.6, color: "var(--charcoal-fg)", marginTop: "8px" }}>
-            <a href="#this-week" style={{ color: "inherit", whiteSpace: "nowrap" }}>What to do this week</a>
-            <a href="#more-help" style={{ color: "inherit", whiteSpace: "nowrap" }}>When to get more help</a>
-            <a href="#helping" style={{ color: "inherit", whiteSpace: "nowrap" }}>If you're helping someone</a>
+          <nav aria-label="On this page" style={{ display: "flex", flexWrap: "wrap", gap: "8px", marginTop: "12px" }}>
+            {JUMPS.map((j) => (
+              <a key={j.href} href={j.href} style={jumpPill}>
+                {j.label}
+              </a>
+            ))}
           </nav>
         </div>
       </section>
@@ -248,6 +262,13 @@ export default function CarePage() {
           </div>
         </section>
       )}
+
+      {/* Keep the page: to the reader's phone, into My Library, or onto paper. */}
+      <section className="no-print" style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) 0" }}>
+        <div style={column}>
+          <TakeItWithYou title={data.title} kind="Find Help" summary={data.description} print />
+        </div>
+      </section>
 
       <Section id="whats-going-on" title="What's going on">
         <Prose text={data.happening} />
@@ -348,9 +369,9 @@ export default function CarePage() {
                 <span style={{ display: "block", fontFamily: "var(--F)", fontSize: "21px", color: "var(--ink)" }}>{p.label}</span>
                 <span style={{ display: "block", fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.55, color: "var(--ink-muted)" }}>{p.note}</span>
               </span>
-              <span style={{ display: "flex", gap: "14px", fontFamily: "var(--U)", fontSize: "15px", fontWeight: 600 }}>
-                <a href={`/downloads/help/${data.slug}-${p.kind}-letter.pdf`} style={{ color: "var(--mustard-text)" }}>Letter<span className="sr-only"> PDF, {p.label}</span></a>
-                <a href={`/downloads/help/${data.slug}-${p.kind}-a4.pdf`} style={{ color: "var(--mustard-text)" }}>A4<span className="sr-only"> PDF, {p.label}</span></a>
+              <span style={{ display: "flex", gap: "8px", fontFamily: "var(--U)", fontSize: "15px", fontWeight: 600 }}>
+                <a href={`/downloads/help/${data.slug}-${p.kind}-letter.pdf`} target="_blank" rel="noopener" style={fileButton}>Letter<span className="sr-only"> PDF, {p.label}</span></a>
+                <a href={`/downloads/help/${data.slug}-${p.kind}-a4.pdf`} target="_blank" rel="noopener" style={fileButton}>A4<span className="sr-only"> PDF, {p.label}</span></a>
               </span>
             </li>
           ))}
