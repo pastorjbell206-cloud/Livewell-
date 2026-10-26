@@ -1,7 +1,7 @@
 From 3e74994a9f15103c396e7a5828aed62dc6b02883 Mon Sep 17 00:00:00 2001
 From: Claude <noreply@anthropic.com>
 Date: Mon, 26 Oct 2026 21:40:43 +0000
-Subject: [PATCH] U14: study primitives Sheet, Stepper and PageHead; /study
+Subject: [PATCH 1/2] U14: study primitives Sheet, Stepper and PageHead; /study
  opens on PageHead
 
 Three primitives the next units build on (MASTER-PLAN 8.1, 8.2):
