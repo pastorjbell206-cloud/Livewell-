@@ -1,0 +1,1128 @@
+From e9545965be673b77d7a6dfa5f88b013270f38cc9 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Mon, 26 Oct 2026 21:05:45 +0000
+Subject: [PATCH] One Scripture reference parser for the site and the scripts
+ (U09)
+
+client/src/lib/scripture-ref.ts is the site's one reader of references
+("John 3:16", "jn 3 16", "1 cor 13", "Romans 13", "Ps 23:1-3",
+"Philippians 4:6-7"; null for an unknown book or a chapter or verse that
+cannot exist). It is built from scripts/lib/bsb.mjs's logic, extended with
+the abbreviations people write, loose spacing, "." between chapter and
+verse, chapters joined by semicolons, and one-chapter books cited by verse
+("Jude 3"). The book table and abbreviations live once, in
+client/src/data/scripture-books.json, which both runtimes read.
+
+scripts/lib/bsb.mjs gets readRef, the same grammar line for line (parseRef
+now wraps it and still throws), and finds its root with fileURLToPath so
+Vite-run tests can import it. scripture-ref.test.ts runs both parsers on one
+fixture list and on every reference in the Study Bible's guides, doctrine
+studies, and Find Help pages, and fails on any disagreement; it also holds
+the book table to /bible/books.json and each alias to one book.
+
+Retired onto it: refHref in lib/bible-notes.ts (doctrine key texts, guide
+"Read:" lines, verse notes), studyBibleHref in lib/needs.ts (care pages'
+"Read the whole chapter"), and refChapters' own alias table (related
+content on Study Bible chapters). The books argument those needed is gone,
+and the guides page no longer fetches books.json. The OSIS parser in
+lib/bible.ts stays for the Study Bible's internal codes.
+
+Checked against the old code on every reference string the site's data
+feeds these functions: 13,772 give the same link or chapters; 6 differ, all
+catalogue lines that now resolve (Jude 3, Philemon 15-16) or no longer
+borrow a chapter from another book. The bsb-based validators print
+byte-identical output, and the 441 references they read name the same
+verses.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01JuCQ8kZ25i9zRwNgk6bh4e
+---
+ client/src/data/scripture-books.json          |  68 +++++++
+ client/src/lib/bible-notes.test.ts            |  55 +++---
+ client/src/lib/bible-notes.ts                 |  89 +++-------
+ client/src/lib/needs.test.ts                  |  15 +-
+ client/src/lib/needs.ts                       |  10 --
+ client/src/lib/scripture-ref.test.ts          | 167 ++++++++++++++++++
+ client/src/lib/scripture-ref.ts               | 150 ++++++++++++++++
+ client/src/pages/StudyBible.tsx               |  12 +-
+ client/src/pages/StudyBibleDoctrines.tsx      |   4 +-
+ client/src/pages/StudyBibleGuides.tsx         |  12 +-
+ client/src/pages/help/CarePage.tsx            |   6 +-
+ client/src/pages/study-bible/ChapterNotes.tsx |   4 +-
+ client/src/pages/study-bible/VerseNotes.tsx   |  15 +-
+ scripts/lib/bsb.mjs                           | 122 +++++++++----
+ 14 files changed, 550 insertions(+), 179 deletions(-)
+ create mode 100644 client/src/data/scripture-books.json
+ create mode 100644 client/src/lib/scripture-ref.test.ts
+ create mode 100644 client/src/lib/scripture-ref.ts
+
+diff --git a/client/src/data/scripture-books.json b/client/src/data/scripture-books.json
+new file mode 100644
+index 0000000..85e1910
+--- /dev/null
++++ b/client/src/data/scripture-books.json
+@@ -0,0 +1,68 @@
++[
++  {"code": "Gen", "slug": "genesis", "name": "Genesis", "testament": "OT", "chapters": 50, "aliases": ["gen", "ge", "gn"]},
++  {"code": "Exo", "slug": "exodus", "name": "Exodus", "testament": "OT", "chapters": 40, "aliases": ["exod", "exo", "ex"]},
++  {"code": "Lev", "slug": "leviticus", "name": "Leviticus", "testament": "OT", "chapters": 27, "aliases": ["lev", "lv"]},
++  {"code": "Num", "slug": "numbers", "name": "Numbers", "testament": "OT", "chapters": 36, "aliases": ["num", "nm", "nb"]},
++  {"code": "Deu", "slug": "deuteronomy", "name": "Deuteronomy", "testament": "OT", "chapters": 34, "aliases": ["deut", "dt"]},
++  {"code": "Jos", "slug": "joshua", "name": "Joshua", "testament": "OT", "chapters": 24, "aliases": ["josh"]},
++  {"code": "Jdg", "slug": "judges", "name": "Judges", "testament": "OT", "chapters": 21, "aliases": ["judg", "jg", "jdgs"]},
++  {"code": "Rut", "slug": "ruth", "name": "Ruth", "testament": "OT", "chapters": 4, "aliases": ["rth"]},
++  {"code": "1Sa", "slug": "1-samuel", "name": "1 Samuel", "testament": "OT", "chapters": 31, "aliases": ["1 sam", "1 sm"]},
++  {"code": "2Sa", "slug": "2-samuel", "name": "2 Samuel", "testament": "OT", "chapters": 24, "aliases": ["2 sam", "2 sm"]},
++  {"code": "1Ki", "slug": "1-kings", "name": "1 Kings", "testament": "OT", "chapters": 22, "aliases": ["1 kgs", "1 kin"]},
++  {"code": "2Ki", "slug": "2-kings", "name": "2 Kings", "testament": "OT", "chapters": 25, "aliases": ["2 kgs", "2 kin"]},
++  {"code": "1Ch", "slug": "1-chronicles", "name": "1 Chronicles", "testament": "OT", "chapters": 29, "aliases": ["1 chr", "1 chron"]},
++  {"code": "2Ch", "slug": "2-chronicles", "name": "2 Chronicles", "testament": "OT", "chapters": 36, "aliases": ["2 chr", "2 chron"]},
++  {"code": "Ezr", "slug": "ezra", "name": "Ezra", "testament": "OT", "chapters": 10, "aliases": []},
++  {"code": "Neh", "slug": "nehemiah", "name": "Nehemiah", "testament": "OT", "chapters": 13, "aliases": []},
++  {"code": "Est", "slug": "esther", "name": "Esther", "testament": "OT", "chapters": 10, "aliases": ["esth"]},
++  {"code": "Job", "slug": "job", "name": "Job", "testament": "OT", "chapters": 42, "aliases": ["jb"]},
++  {"code": "Psa", "slug": "psalms", "name": "Psalms", "testament": "OT", "chapters": 150, "aliases": ["psalm", "ps", "pss", "psm"]},
++  {"code": "Pro", "slug": "proverbs", "name": "Proverbs", "testament": "OT", "chapters": 31, "aliases": ["prov", "prv"]},
++  {"code": "Ecc", "slug": "ecclesiastes", "name": "Ecclesiastes", "testament": "OT", "chapters": 12, "aliases": ["eccl", "eccles", "qoh", "qoheleth"]},
++  {"code": "Sng", "slug": "song-of-solomon", "name": "Song of Solomon", "testament": "OT", "chapters": 8, "aliases": ["song of songs", "song", "canticles", "cant", "sos"]},
++  {"code": "Isa", "slug": "isaiah", "name": "Isaiah", "testament": "OT", "chapters": 66, "aliases": []},
++  {"code": "Jer", "slug": "jeremiah", "name": "Jeremiah", "testament": "OT", "chapters": 52, "aliases": ["jr"]},
++  {"code": "Lam", "slug": "lamentations", "name": "Lamentations", "testament": "OT", "chapters": 5, "aliases": []},
++  {"code": "Ezk", "slug": "ezekiel", "name": "Ezekiel", "testament": "OT", "chapters": 48, "aliases": ["ezek", "eze"]},
++  {"code": "Dan", "slug": "daniel", "name": "Daniel", "testament": "OT", "chapters": 12, "aliases": ["dn"]},
++  {"code": "Hos", "slug": "hosea", "name": "Hosea", "testament": "OT", "chapters": 14, "aliases": []},
++  {"code": "Jol", "slug": "joel", "name": "Joel", "testament": "OT", "chapters": 3, "aliases": ["jl"]},
++  {"code": "Amo", "slug": "amos", "name": "Amos", "testament": "OT", "chapters": 9, "aliases": []},
++  {"code": "Oba", "slug": "obadiah", "name": "Obadiah", "testament": "OT", "chapters": 1, "aliases": ["obad"]},
++  {"code": "Jon", "slug": "jonah", "name": "Jonah", "testament": "OT", "chapters": 4, "aliases": ["jnh"]},
++  {"code": "Mic", "slug": "micah", "name": "Micah", "testament": "OT", "chapters": 7, "aliases": []},
++  {"code": "Nam", "slug": "nahum", "name": "Nahum", "testament": "OT", "chapters": 3, "aliases": ["nah"]},
++  {"code": "Hab", "slug": "habakkuk", "name": "Habakkuk", "testament": "OT", "chapters": 3, "aliases": []},
++  {"code": "Zep", "slug": "zephaniah", "name": "Zephaniah", "testament": "OT", "chapters": 3, "aliases": ["zeph"]},
++  {"code": "Hag", "slug": "haggai", "name": "Haggai", "testament": "OT", "chapters": 2, "aliases": []},
++  {"code": "Zec", "slug": "zechariah", "name": "Zechariah", "testament": "OT", "chapters": 14, "aliases": ["zech"]},
++  {"code": "Mal", "slug": "malachi", "name": "Malachi", "testament": "OT", "chapters": 4, "aliases": []},
++  {"code": "Mat", "slug": "matthew", "name": "Matthew", "testament": "NT", "chapters": 28, "aliases": ["matt", "mt"]},
++  {"code": "Mrk", "slug": "mark", "name": "Mark", "testament": "NT", "chapters": 16, "aliases": ["mk"]},
++  {"code": "Luk", "slug": "luke", "name": "Luke", "testament": "NT", "chapters": 24, "aliases": ["lk"]},
++  {"code": "Jhn", "slug": "john", "name": "John", "testament": "NT", "chapters": 21, "aliases": ["jn", "joh"]},
++  {"code": "Act", "slug": "acts", "name": "Acts", "testament": "NT", "chapters": 28, "aliases": []},
++  {"code": "Rom", "slug": "romans", "name": "Romans", "testament": "NT", "chapters": 16, "aliases": ["rm"]},
++  {"code": "1Co", "slug": "1-corinthians", "name": "1 Corinthians", "testament": "NT", "chapters": 16, "aliases": ["1 cor"]},
++  {"code": "2Co", "slug": "2-corinthians", "name": "2 Corinthians", "testament": "NT", "chapters": 13, "aliases": ["2 cor"]},
++  {"code": "Gal", "slug": "galatians", "name": "Galatians", "testament": "NT", "chapters": 6, "aliases": []},
++  {"code": "Eph", "slug": "ephesians", "name": "Ephesians", "testament": "NT", "chapters": 6, "aliases": ["ephes"]},
++  {"code": "Php", "slug": "philippians", "name": "Philippians", "testament": "NT", "chapters": 4, "aliases": ["phil", "philip"]},
++  {"code": "Col", "slug": "colossians", "name": "Colossians", "testament": "NT", "chapters": 4, "aliases": []},
++  {"code": "1Th", "slug": "1-thessalonians", "name": "1 Thessalonians", "testament": "NT", "chapters": 5, "aliases": ["1 thess", "1 thes"]},
++  {"code": "2Th", "slug": "2-thessalonians", "name": "2 Thessalonians", "testament": "NT", "chapters": 3, "aliases": ["2 thess", "2 thes"]},
++  {"code": "1Ti", "slug": "1-timothy", "name": "1 Timothy", "testament": "NT", "chapters": 6, "aliases": ["1 tim", "1 tm"]},
++  {"code": "2Ti", "slug": "2-timothy", "name": "2 Timothy", "testament": "NT", "chapters": 4, "aliases": ["2 tim", "2 tm"]},
++  {"code": "Tit", "slug": "titus", "name": "Titus", "testament": "NT", "chapters": 3, "aliases": []},
++  {"code": "Phm", "slug": "philemon", "name": "Philemon", "testament": "NT", "chapters": 1, "aliases": ["philem", "phlm"]},
++  {"code": "Heb", "slug": "hebrews", "name": "Hebrews", "testament": "NT", "chapters": 13, "aliases": []},
++  {"code": "Jas", "slug": "james", "name": "James", "testament": "NT", "chapters": 5, "aliases": ["jas", "jm"]},
++  {"code": "1Pe", "slug": "1-peter", "name": "1 Peter", "testament": "NT", "chapters": 5, "aliases": ["1 pet", "1 pt"]},
++  {"code": "2Pe", "slug": "2-peter", "name": "2 Peter", "testament": "NT", "chapters": 3, "aliases": ["2 pet", "2 pt"]},
++  {"code": "1Jn", "slug": "1-john", "name": "1 John", "testament": "NT", "chapters": 5, "aliases": ["1 jhn", "1 joh"]},
++  {"code": "2Jn", "slug": "2-john", "name": "2 John", "testament": "NT", "chapters": 1, "aliases": ["2 jhn", "2 joh"]},
++  {"code": "3Jn", "slug": "3-john", "name": "3 John", "testament": "NT", "chapters": 1, "aliases": ["3 jhn", "3 joh"]},
++  {"code": "Jud", "slug": "jude", "name": "Jude", "testament": "NT", "chapters": 1, "aliases": ["jd"]},
++  {"code": "Rev", "slug": "revelation", "name": "Revelation", "testament": "NT", "chapters": 22, "aliases": ["rev", "rv", "revelations"]}
++]
+diff --git a/client/src/lib/bible-notes.test.ts b/client/src/lib/bible-notes.test.ts
+index a77f47d..c4f81ea 100644
+--- a/client/src/lib/bible-notes.test.ts
++++ b/client/src/lib/bible-notes.test.ts
+@@ -1,37 +1,37 @@
+ import { describe, it, expect } from "vitest";
+ 
+-import type { BibleBook } from "./bible";
+ import type { CatalogueItem } from "./catalogue";
+-import { flattenStory, itemsForPassage, noteForVerse, paragraphs, refChapters, refHref, spreadKinds, storyPlace, translationHref, verseRange, type Story, type VerseNote } from "./bible-notes";
+-
+-const BOOKS: BibleBook[] = [
+-  { code: "Gen", slug: "genesis", name: "Genesis", testament: "OT", chapters: 50 },
+-  { code: "Psa", slug: "psalms", name: "Psalms", testament: "OT", chapters: 150 },
+-  { code: "Sng", slug: "song-of-solomon", name: "Song of Solomon", testament: "OT", chapters: 8 },
+-  { code: "Dan", slug: "daniel", name: "Daniel", testament: "OT", chapters: 12 },
+-  { code: "Rom", slug: "romans", name: "Romans", testament: "NT", chapters: 16 },
+-  { code: "1Co", slug: "1-corinthians", name: "1 Corinthians", testament: "NT", chapters: 16 },
+-];
++import { flattenStory, itemsForPassage, noteForVerse, paragraphs, refChapters, spreadKinds, storyPlace, translationHref, verseRange, type Story, type VerseNote } from "./bible-notes";
+ 
+ describe("refChapters", () => {
+   it("reads the site's reference styles, including singular Psalm and Song of Songs", () => {
+-    expect(refChapters("Psalm 139:1-4", BOOKS)).toEqual({ slug: "psalms", chapters: [139] });
+-    expect(refChapters("Song of Songs 2", BOOKS)).toEqual({ slug: "song-of-solomon", chapters: [2] });
+-    expect(refChapters("1 Cor. 13", BOOKS)).toEqual({ slug: "1-corinthians", chapters: [13] });
+-    expect(refChapters("Genesis 3:19", BOOKS)).toEqual({ slug: "genesis", chapters: [3] });
++    expect(refChapters("Psalm 139:1-4")).toEqual({ slug: "psalms", chapters: [139] });
++    expect(refChapters("Song of Songs 2")).toEqual({ slug: "song-of-solomon", chapters: [2] });
++    expect(refChapters("1 Cor. 13")).toEqual({ slug: "1-corinthians", chapters: [13] });
++    expect(refChapters("Genesis 3:19")).toEqual({ slug: "genesis", chapters: [3] });
+   });
+ 
+   it("expands chapter ranges and 'and', but not verse ranges", () => {
+-    expect(refChapters("Romans 8–9", BOOKS)?.chapters).toEqual([8, 9]);
+-    expect(refChapters("Romans 8:18-28", BOOKS)?.chapters).toEqual([8]);
+-    expect(refChapters("Romans 7:24-8:2", BOOKS)?.chapters).toEqual([7, 8]);
+-    expect(refChapters("Daniel 1 and 6", BOOKS)?.chapters).toEqual([1, 6]);
++    expect(refChapters("Romans 8–9")?.chapters).toEqual([8, 9]);
++    expect(refChapters("Romans 8:18-28")?.chapters).toEqual([8]);
++    expect(refChapters("Romans 7:24-8:2")?.chapters).toEqual([7, 8]);
++    expect(refChapters("Daniel 1 and 6")?.chapters).toEqual([1, 6]);
++    expect(refChapters("Proverbs 16:33 and 21:1")?.chapters).toEqual([16, 21]);
++  });
++
++  it("reads the reference a catalogue line opens with, and stops where it leaves the book", () => {
++    expect(refChapters("Acts 2 (Pentecost and Peter's sermon)")).toEqual({ slug: "acts", chapters: [2] });
++    expect(refChapters("Genesis 1:5, the day with evening and morning")).toEqual({ slug: "genesis", chapters: [1] });
++    expect(refChapters("Matthew 23:37 and Ezekiel 18:23")).toEqual({ slug: "matthew", chapters: [23] });
++    expect(refChapters("Mark 10:6 and the genealogies of Genesis 5 and 11")).toEqual({ slug: "mark", chapters: [10] });
++    expect(refChapters("Jude 14-15 with Jude 9")).toEqual({ slug: "jude", chapters: [1] });
+   });
+ 
+   it("returns null for anything that isn't a Bible reference", () => {
+-    expect(refChapters("Chapter 3", BOOKS)).toBeNull();
+-    expect(refChapters("Genesis 51", BOOKS)).toBeNull();
+-    expect(refChapters("Genesis", BOOKS)).toBeNull();
++    expect(refChapters("Chapter 3")).toBeNull();
++    expect(refChapters("Genesis 51")).toBeNull();
++    expect(refChapters("Genesis")).toBeNull();
++    expect(refChapters("Wisdom 2:12-20")).toBeNull();
+   });
+ });
+ 
+@@ -60,8 +60,8 @@ describe("related writing", () => {
+ 
+   it("finds items by the chapters their references touch", () => {
+     const items = [item("Essay", "a", ["Psalm 23:1"]), item("Essay", "b", ["Psalms 22"]), item("Wisdom", "c", ["Romans 8:28"])];
+-    expect(itemsForPassage(items, BOOKS, "psalms", 23).map((i) => i.title)).toEqual(["a"]);
+-    expect(itemsForPassage(items, BOOKS, "psalms").map((i) => i.title)).toEqual(["a", "b"]);
++    expect(itemsForPassage(items, "psalms", 23).map((i) => i.title)).toEqual(["a"]);
++    expect(itemsForPassage(items, "psalms").map((i) => i.title)).toEqual(["a", "b"]);
+   });
+ 
+   it("keeps at most two of a kind and drops duplicates", () => {
+@@ -91,11 +91,4 @@ describe("verse notes", () => {
+     expect(noteForVerse(notes, 5)?.context).toBe("c");
+     expect(noteForVerse(notes, 6)).toBeNull();
+   });
+-  it("links cross-references to the verse in the Study Bible", () => {
+-    expect(refHref("Romans 3:21-26", BOOKS)).toBe("/study/bible/romans/3#v21");
+-    expect(refHref("Psalm 23", BOOKS)).toBe("/study/bible/psalms/23");
+-    expect(refHref("1 Corinthians 13:4", BOOKS)).toBe("/study/bible/1-corinthians/13#v4");
+-    expect(refHref("Song of Solomon 2:1", BOOKS)).toBe("/study/bible/song-of-solomon/2#v1");
+-    expect(refHref("Hezekiah 1:1", BOOKS)).toBeNull();
+-  });
+ });
+diff --git a/client/src/lib/bible-notes.ts b/client/src/lib/bible-notes.ts
+index efb07fe..378d504 100644
+--- a/client/src/lib/bible-notes.ts
++++ b/client/src/lib/bible-notes.ts
+@@ -11,7 +11,7 @@
+  */
+ import { fetchJson } from "@/lib/fetch-json";
+ import { readStoredJSON, writeStoredJSON } from "@/lib/storage";
+-import type { BibleBook } from "@/lib/bible";
++import { parseScriptureRef, type ScriptureRef } from "@/lib/scripture-ref";
+ import type { CatalogueItem } from "@/lib/catalogue";
+ 
+ export interface BookIntro {
+@@ -209,14 +209,6 @@ export function noteForVerse(notes: VerseNote[], verse: number): VerseNote | nul
+   }) ?? null;
+ }
+ 
+-/** "John 3:16", "Psalm 23", "Romans 1:18-3:20" → a Study Bible link, or null. */
+-export function refHref(ref: string, books: BibleBook[]): string | null {
+-  const m = ref.match(/^((?:[1-3] )?[A-Za-z]+(?: of [A-Za-z]+)?) (\d+)(?::(\d+))?/);
+-  if (!m) return null;
+-  const name = m[1].toLowerCase() === "psalm" ? "psalms" : m[1].toLowerCase();
+-  const b = books.find((x) => x.name.toLowerCase() === name);
+-  return b ? `/study/bible/${b.slug}/${m[2]}${m[3] ? `#v${m[3]}` : ""}` : null;
+-}
+ export const fetchNotesIndex = () => cached("/bible/notes-index.json", isIndex);
+ 
+ // ── the story path ───────────────────────────────────────────────────────────
+@@ -262,70 +254,45 @@ export function setRead(key: string, read: boolean): boolean {
+ 
+ // ── Scripture references in the rest of the site ────────────────────────────
+ 
+-const ALIASES: Record<string, string> = {
+-  psalm: "psalms", ps: "psalms", psa: "psalms",
+-  "song of songs": "song-of-solomon", "song of solomon": "song-of-solomon", song: "song-of-solomon", canticles: "song-of-solomon",
+-  qoheleth: "ecclesiastes", eccl: "ecclesiastes", eccles: "ecclesiastes",
+-  gen: "genesis", ex: "exodus", exod: "exodus", lev: "leviticus", num: "numbers", deut: "deuteronomy",
+-  josh: "joshua", judg: "judges", isa: "isaiah", jer: "jeremiah", lam: "lamentations", ezek: "ezekiel", dan: "daniel",
+-  hos: "hosea", obad: "obadiah", mic: "micah", nah: "nahum", hab: "habakkuk", zeph: "zephaniah", hag: "haggai",
+-  zech: "zechariah", mal: "malachi", matt: "matthew", mt: "matthew", mk: "mark", lk: "luke", jn: "john",
+-  rom: "romans", gal: "galatians", eph: "ephesians", phil: "philippians", col: "colossians", heb: "hebrews",
+-  jas: "james", rev: "revelation", revelations: "revelation", philem: "philemon",
+-};
+-
+-/** Book-name → slug, built once from the Study Bible's table of contents. */
+-function bookLookup(books: BibleBook[]): Map<string, string> {
+-  const m = new Map<string, string>();
+-  for (const b of books) {
+-    m.set(b.name.toLowerCase(), b.slug);
+-    m.set(b.slug.replace(/-/g, " "), b.slug);
++/** The longest opening stretch of the text that reads as a reference. */
++function leadingRef(text: string): ScriptureRef | null {
++  const s = text.trim();
++  for (let end = s.length; end > 0; end--) {
++    if (end < s.length && !/[\s,;(]/.test(s[end])) continue;
++    const r = parseScriptureRef(s.slice(0, end));
++    if (r) return r;
+   }
+-  for (const [k, v] of Object.entries(ALIASES)) m.set(k, v);
+-  // "1 Sam", "2 Cor", "1 Jn"
+-  const numbered: Record<string, string> = { sam: "samuel", kgs: "kings", ki: "kings", chr: "chronicles", chron: "chronicles", cor: "corinthians", thess: "thessalonians", thes: "thessalonians", tim: "timothy", pet: "peter", pt: "peter", jn: "john" };
+-  for (const n of ["1", "2", "3"]) for (const [k, v] of Object.entries(numbered)) if (m.has(`${n} ${v}`)) m.set(`${n} ${k}`, m.get(`${n} ${v}`)!);
+-  return m;
++  return null;
+ }
+ 
+-let lookupFor: BibleBook[] | null = null;
+-let lookup: Map<string, string> = new Map();
+-
+ /**
+  * "Psalm 139:1-4", "Daniel 1 and 6", "Romans 8–9", "1 Cor. 13" → the book's
+- * slug and every chapter the reference touches. Null when it isn't a
+- * reference to a book of the Bible.
++ * slug and every chapter the reference touches. A catalogue line can run on
++ * into prose ("Acts 2 (Pentecost)") or a second reference ("Proverbs 16:33
++ * and 21:1"): the reference it opens with names the book, and each "and" that
++ * goes on in the same book adds its chapters. Null when it does not open with
++ * a reference (read by lib/scripture-ref.ts).
+  */
+-export function refChapters(ref: string, books: BibleBook[]): { slug: string; chapters: number[] } | null {
+-  if (lookupFor !== books) {
+-    lookup = bookLookup(books);
+-    lookupFor = books;
++export function refChapters(ref: string): { slug: string; chapters: number[] } | null {
++  const [head, ...more] = ref.split(/\s+and\s+/);
++  const lead = leadingRef(head);
++  if (!lead) return null;
++  const spans = [...lead.parts];
++  for (const piece of more) {
++    const next = /^\d/.test(piece) ? leadingRef(`${lead.book.name} ${piece}`) : null;
++    if (!next) break;
++    spans.push(...next.parts);
+   }
+-  const s = ref.toLowerCase().replace(/\./g, "").replace(/[–—]/g, "-").replace(/\s+/g, " ").trim();
+-  const m = s.match(/^((?:[1-3] )?[a-z]+(?: of [a-z]+)?)\s+(\d+)(.*)$/);
+-  if (!m) return null;
+-  const slug = lookup.get(m[1]);
+-  if (!slug) return null;
+-  const book = books.find((b) => b.slug === slug);
+-  if (!book) return null;
+-  const first = +m[2];
+-  const chapters = new Set<number>([first]);
+-  const rest = m[3];
+-  // A chapter range "8-9" (not a verse range "8:1-4"), or "1 and 6".
+-  const range = rest.match(/^-(\d+)(?!:)/);
+-  if (range && !rest.startsWith(":")) for (let c = first + 1; c <= +range[1]; c++) chapters.add(c);
+-  const cross = rest.match(/^:\d+\s*-\s*(\d+):\d+/);
+-  if (cross) for (let c = first + 1; c <= +cross[1]; c++) chapters.add(c);
+-  for (const a of Array.from(rest.matchAll(/\band (\d+)\b/g))) chapters.add(+a[1]);
+-  const valid = Array.from(chapters).filter((c) => c >= 1 && c <= book.chapters).sort((a, b) => a - b);
+-  return valid.length ? { slug, chapters: valid } : null;
++  const chapters = new Set<number>();
++  for (const p of spans) for (let c = p.c1; c <= p.c2; c++) chapters.add(c);
++  return { slug: lead.book.slug, chapters: Array.from(chapters).sort((a, b) => a - b) };
+ }
+ 
+ /** Catalogue items whose Scripture references touch this book (and chapter, when given). */
+-export function itemsForPassage(items: CatalogueItem[], books: BibleBook[], slug: string, chapter?: number): CatalogueItem[] {
++export function itemsForPassage(items: CatalogueItem[], slug: string, chapter?: number): CatalogueItem[] {
+   return items.filter((it) =>
+     (it.scripture ?? []).some((ref) => {
+-      const r = refChapters(ref, books);
++      const r = refChapters(ref);
+       return r !== null && r.slug === slug && (chapter === undefined || r.chapters.includes(chapter));
+     })
+   );
+diff --git a/client/src/lib/needs.test.ts b/client/src/lib/needs.test.ts
+index 31111d2..dd83319 100644
+--- a/client/src/lib/needs.test.ts
++++ b/client/src/lib/needs.test.ts
+@@ -1,10 +1,10 @@
+ /**
+  * The Find Help search has one job: meet a reader in their own words. These
+- * pin that everyday phrasing finds the right need, that nothing matches on
+- * filler words alone, and that Scripture references open the right chapter.
++ * pin that everyday phrasing finds the right need and that nothing matches on
++ * filler words alone. (Scripture links are scripture-ref.test.ts.)
+  */
+ import { describe, it, expect } from "vitest";
+-import { searchNeeds, studyBibleHref, type NeedEntry } from "./needs";
++import { searchNeeds, type NeedEntry } from "./needs";
+ 
+ const need = (slug: string, title: string, askedAs: string[], rank: number): NeedEntry => ({
+   slug, title, summary: title, askedAs, states: ["carrying"], sensitivity: "ordinary", page: true, rank,
+@@ -29,12 +29,3 @@ describe("searchNeeds", () => {
+     expect(searchNeeds("what does the bible say", NEEDS)).toEqual([]);
+   });
+ });
+-
+-describe("studyBibleHref", () => {
+-  it("opens the chapter in the Study Bible", () => {
+-    expect(studyBibleHref("Psalm 23:4")).toBe("/study/bible/psalms/23");
+-    expect(studyBibleHref("1 John 4:18")).toBe("/study/bible/1-john/4");
+-    expect(studyBibleHref("Song of Songs 8:6")).toBe("/study/bible/song-of-solomon/8");
+-    expect(studyBibleHref("not a reference")).toBeNull();
+-  });
+-});
+diff --git a/client/src/lib/needs.ts b/client/src/lib/needs.ts
+index 48b86fb..75da0c8 100644
+--- a/client/src/lib/needs.ts
++++ b/client/src/lib/needs.ts
+@@ -104,16 +104,6 @@ export function searchNeeds(query: string, needs: NeedEntry[]): NeedEntry[] {
+     .map((s) => s.n);
+ }
+ 
+-/** "Psalm 23:4" -> "/study/bible/psalms/23"; null when the reference will not parse. */
+-export function studyBibleHref(ref: string): string | null {
+-  const m = ref.trim().match(/^((?:[1-3]\s)?[A-Za-z][A-Za-z ]*?)\s+(\d+)/);
+-  if (!m) return null;
+-  let book = m[1].toLowerCase().replace(/\s+/g, " ");
+-  if (book === "psalm") book = "psalms";
+-  if (book === "song of songs") book = "song of solomon";
+-  return `/study/bible/${book.replace(/ /g, "-")}/${m[2]}`;
+-}
+-
+ /**
+  * Library pages on heavy subjects carry the compact help block
+  * (docs/grow/GROW-PROMPT.md, Wave 0): the life pages and study guides a
+diff --git a/client/src/lib/scripture-ref.test.ts b/client/src/lib/scripture-ref.test.ts
+new file mode 100644
+index 0000000..c140cc4
+--- /dev/null
++++ b/client/src/lib/scripture-ref.test.ts
+@@ -0,0 +1,167 @@
++/**
++ * One Scripture reference parser, in two runtimes: the site's
++ * (lib/scripture-ref.ts) and the build scripts' (scripts/lib/bsb.mjs readRef).
++ * Both read data/scripture-books.json; these tests hold them to one answer on
++ * one fixture list and on the references the site's data already carries (the
++ * shelf.ts and scripts/lib/shelf.mjs precedent). A grammar change goes in both
++ * files and passes here, or it does not land.
++ */
++import { describe, it, expect } from "vitest";
++import fs from "node:fs";
++import path from "node:path";
++
++import BOOK_TABLE from "@/data/scripture-books.json";
++import { SCRIPTURE_BOOKS, bookKey, findBook, formatRef, parseScriptureRef, refHref, type ScriptureRef } from "./scripture-ref";
++import { bookKey as nodeBookKey, readRef, passage } from "../../../scripts/lib/bsb.mjs";
++
++const ROOT = path.resolve(__dirname, "../../..");
++const readJson = (p: string) => JSON.parse(fs.readFileSync(path.join(ROOT, p), "utf8"));
++
++/** What a parse names, in a form both runtimes can be compared on. */
++const shape = (r: { book: { slug: string }; parts: ScriptureRef["parts"] } | null) =>
++  r && { slug: r.book.slug, parts: r.parts };
++const both = (ref: string) => ({ site: shape(parseScriptureRef(ref)), scripts: shape(readRef(ref)) });
++
++const WHOLE = Infinity;
++
++/** The card's references (master plan U09), then the edges of the grammar, then things that are not references. */
++const FIXTURES = [
++  "John 3:16", "jn 3 16", "1 cor 13", "Romans 13", "Ps 23:1-3", "Philippians 4:6-7",
++  "JOHN 3:16", "  John   3 : 16 ", "John 3.16", "Jn 3:16-18", "jn 3 16-18", "1Cor 13:4-7", "1 Cor. 13:4",
++  "I Corinthians 13", "First Corinthians 13:13", "2nd Timothy 3:16", "III John 4", "Song of Songs 2:1",
++  "Song of Solomon 8:6", "song 2", "Psalm 23", "Psalms 23", "Ps. 23:1", "psa 119:105", "Qoheleth 3:1",
++  "Revelations 21:4", "Philem 6", "Gen 1:1", "Ex 20:1-17", "Deut 6:4-9", "Matt 5:3", "mk 1:15", "lk 15:20",
++  "Rom 8:28", "Gal 5:22-23", "Eph 2:8-9", "1 Thess 5:16-18", "Heb 11:1", "Jas 1:2", "1 Pet 3:15", "1 Jn 4:8",
++  "Rev 21:4", "Jhn.3.16",
++  "Romans 8–9", "Romans 8 - 9", "Romans 8\u20149", "Genesis 1:1-2:3", "Romans 7:24-8:1, 5", "Psalm 71:9, 17-18",
++  "Psalm 73:2-3,13,16-17,21-23", "Romans 5:1; 8:28", "Psalm 23; 139", "Job 1-2", "John 3:16 ",
++  "Jude 3", "Jude 1", "Jude 1:3", "Jude 24-25", "Philemon 15-16", "3 John 1:4", "Obadiah 1",
++  "Hezekiah 1:1", "Wisdom 2:12-20", "2 Maccabees 12:39-45", "Genesis", "Genesis 51", "Genesis 0", "John 0:1",
++  "John 3:0", "John 3:18-16", "John 4-3", "Jude 2:1", "John 3:16 and 17", "Acts 2 (Pentecost)", "John 3:16.",
++  "John 3:16,", "3:16", "", "not a reference", "is 53", "1 Corinthians (Christ crucified)", "4 John 1:1",
++];
++
++describe("the two parsers", () => {
++  it("read the card's references the same way, and exactly", () => {
++    const expected: Record<string, { slug: string; parts: ScriptureRef["parts"] }> = {
++      "John 3:16": { slug: "john", parts: [{ c1: 3, v1: 16, c2: 3, v2: 16 }] },
++      "jn 3 16": { slug: "john", parts: [{ c1: 3, v1: 16, c2: 3, v2: 16 }] },
++      "1 cor 13": { slug: "1-corinthians", parts: [{ c1: 13, v1: 1, c2: 13, v2: WHOLE }] },
++      "Romans 13": { slug: "romans", parts: [{ c1: 13, v1: 1, c2: 13, v2: WHOLE }] },
++      "Ps 23:1-3": { slug: "psalms", parts: [{ c1: 23, v1: 1, c2: 23, v2: 3 }] },
++      "Philippians 4:6-7": { slug: "philippians", parts: [{ c1: 4, v1: 6, c2: 4, v2: 7 }] },
++    };
++    for (const [ref, want] of Object.entries(expected)) {
++      expect(both(ref), ref).toEqual({ site: want, scripts: want });
++    }
++  });
++
++  it("return null for an unknown book", () => {
++    for (const ref of ["Hezekiah 1:1", "Wisdom 2:12-20", "2 Maccabees 12:39-45", "4 John 1:1"]) {
++      expect(both(ref), ref).toEqual({ site: null, scripts: null });
++    }
++  });
++
++  it("agree on every fixture", () => {
++    for (const ref of FIXTURES) {
++      const { site, scripts } = both(ref);
++      expect(site, ref).toEqual(scripts);
++    }
++  });
++
++  it("agree on every reference the Study Bible's guides, doctrine studies, and Find Help pages carry", () => {
++    const refs = new Set<string>();
++    const dir = (p: string) => fs.readdirSync(path.join(ROOT, p)).filter((f) => f.endsWith(".json") && f !== "index.json");
++    for (const f of dir("client/public/bible/guides"))
++      for (const s of readJson(`client/public/bible/guides/${f}`).sections ?? []) for (const r of s.refs ?? []) refs.add(r);
++    for (const f of dir("client/public/bible/doctrines"))
++      for (const k of readJson(`client/public/bible/doctrines/${f}`).keyTexts ?? []) refs.add(k.ref);
++    for (const f of dir("client/public/needs"))
++      for (const p of readJson(`client/public/needs/${f}`).scripture?.passages ?? []) refs.add(p.ref);
++    expect(refs.size).toBeGreaterThan(100);
++    for (const ref of Array.from(refs)) {
++      const { site, scripts } = both(ref);
++      expect(site, ref).toEqual(scripts);
++      expect(site, `${ref} should read as a reference`).not.toBeNull();
++    }
++  });
++
++  it("store book names the same way", () => {
++    for (const s of ["1 Cor.", "1cor", "I Corinthians", "II Kings", "iii john", "First Peter", "2nd Timothy", "Song  of Songs", "PS"]) {
++      expect(bookKey(s), s).toBe(nodeBookKey(s));
++    }
++  });
++
++  it("keep what the scripts quote: a parse names verses the Bible text has", () => {
++    expect(passage("jn 3 16").verses.map((v: { c: number; v: number }) => `${v.c}:${v.v}`)).toEqual(["3:16"]);
++    expect(passage("Jude 3").verses).toHaveLength(1);
++    expect(() => passage("Hezekiah 1:1")).toThrow(/Cannot read reference/);
++  });
++});
++
++describe("the book table", () => {
++  it("is the Study Bible's table of contents, in order", () => {
++    expect(SCRIPTURE_BOOKS).toEqual(readJson("client/public/bible/books.json"));
++  });
++
++  it("gives every name and abbreviation to exactly one book", () => {
++    const owner = new Map<string, string>();
++    for (const row of BOOK_TABLE) {
++      for (const a of [row.name, row.slug.replace(/-/g, " "), row.code, ...row.aliases]) {
++        const k = bookKey(a);
++        expect(owner.get(k) ?? row.slug, `"${a}" names ${owner.get(k)} and ${row.slug}`).toBe(row.slug);
++        owner.set(k, row.slug);
++      }
++    }
++  });
++
++  it("knows the abbreviations people write", () => {
++    const cases: Record<string, string> = {
++      Gen: "genesis", Ex: "exodus", Lev: "leviticus", Num: "numbers", Deut: "deuteronomy", Josh: "joshua", Judg: "judges",
++      "1 Sam": "1-samuel", "2 Kgs": "2-kings", "1 Chr": "1-chronicles", Neh: "nehemiah", Esth: "esther", Ps: "psalms",
++      Prov: "proverbs", Eccl: "ecclesiastes", Song: "song-of-solomon", Isa: "isaiah", Jer: "jeremiah", Lam: "lamentations",
++      Ezek: "ezekiel", Dan: "daniel", Hos: "hosea", Obad: "obadiah", Mic: "micah", Nah: "nahum", Hab: "habakkuk",
++      Zeph: "zephaniah", Hag: "haggai", Zech: "zechariah", Mal: "malachi", Matt: "matthew", Mt: "matthew", Mk: "mark",
++      Lk: "luke", Jn: "john", Rom: "romans", "1 Cor": "1-corinthians", "2 Cor": "2-corinthians", Gal: "galatians",
++      Eph: "ephesians", Phil: "philippians", Col: "colossians", "1 Thess": "1-thessalonians", "2 Tim": "2-timothy",
++      Titus: "titus", Philem: "philemon", Heb: "hebrews", Jas: "james", "1 Pet": "1-peter", "1 Jn": "1-john",
++      "3 Jn": "3-john", Jude: "jude", Rev: "revelation",
++    };
++    for (const [abbr, slug] of Object.entries(cases)) expect(findBook(abbr)?.slug, abbr).toBe(slug);
++    expect(findBook("Hezekiah")).toBeNull();
++  });
++});
++
++describe("formatRef", () => {
++  it("prints a parse the way the site cites Scripture", () => {
++    const f = (ref: string) => formatRef(parseScriptureRef(ref)!);
++    expect(f("jn 3 16")).toBe("John 3:16");
++    expect(f("Ps 23:1-3")).toBe("Psalm 23:1–3");
++    expect(f("psalms 23-24")).toBe("Psalms 23–24");
++    expect(f("1 cor 13")).toBe("1 Corinthians 13");
++    expect(f("Romans 7:24-8:1, 5")).toBe("Romans 7:24–8:1, 5");
++    expect(f("Romans 5:1; 8:28")).toBe("Romans 5:1; 8:28");
++    expect(f("Psalm 71:9, 17-18")).toBe("Psalm 71:9, 17–18");
++    expect(f("Psalm 23; 139")).toBe("Psalms 23; 139");
++    expect(f("Jude 3")).toBe("Jude 1:3");
++  });
++});
++
++describe("refHref", () => {
++  it("opens the Study Bible at the chapter, and the verse when there is one", () => {
++    expect(refHref("Romans 3:21-26")).toBe("/study/bible/romans/3#v21");
++    expect(refHref("Psalm 23")).toBe("/study/bible/psalms/23");
++    expect(refHref("1 Corinthians 13:4")).toBe("/study/bible/1-corinthians/13#v4");
++    expect(refHref("Song of Solomon 2:1")).toBe("/study/bible/song-of-solomon/2#v1");
++    expect(refHref("jn 3 16")).toBe("/study/bible/john/3#v16");
++    expect(refHref("Jude 3")).toBe("/study/bible/jude/1#v3");
++    expect(refHref("Hezekiah 1:1")).toBeNull();
++  });
++
++  it("opens the chapter's top for 'Read the whole chapter'", () => {
++    expect(refHref("Psalm 23:4", { verse: false })).toBe("/study/bible/psalms/23");
++    expect(refHref("1 John 4:18", { verse: false })).toBe("/study/bible/1-john/4");
++    expect(refHref("Song of Songs 8:6", { verse: false })).toBe("/study/bible/song-of-solomon/8");
++    expect(refHref("not a reference", { verse: false })).toBeNull();
++  });
++});
+diff --git a/client/src/lib/scripture-ref.ts b/client/src/lib/scripture-ref.ts
+new file mode 100644
+index 0000000..63da5be
+--- /dev/null
++++ b/client/src/lib/scripture-ref.ts
+@@ -0,0 +1,150 @@
++/**
++ * The site's one Scripture reference parser (master plan 7.1).
++ *
++ *   parseScriptureRef("jn 3 16")      -> John, [{ c1: 3, v1: 16, c2: 3, v2: 16 }]
++ *   parseScriptureRef("1 cor 13")     -> 1 Corinthians, [{ c1: 13, v1: 1, c2: 13, v2: Infinity }]
++ *   parseScriptureRef("Hezekiah 1:1") -> null
++ *
++ * It reads "Book C", "Book C-C", "Book C:V", "Book C:V-V", "Book C:V-C:V",
++ * verse lists within a chapter ("Psalm 71:9, 17-18"), chapters joined by
++ * semicolons ("Romans 5:1; 8:28"), loose spacing ("jn 3 16"), "." between
++ * chapter and verse ("John 3.16"), and a lone number in a one-chapter book as
++ * a verse ("Jude 3"). Book names come from data/scripture-books.json with the
++ * abbreviations people write (jn, rom, 1 cor, ps, prov, gen, matt, mk, lk).
++ * Anything else, or a chapter or verse that cannot exist, is null.
++ *
++ * scripts/lib/bsb.mjs reads the same book table with the same grammar, and
++ * scripture-ref.test.ts runs both on one fixture list: change one, change both.
++ * The Study Bible's own codes ("Jhn.3.16") stay with parseRef in lib/bible.ts.
++ */
++import BOOK_TABLE from "@/data/scripture-books.json";
++import { chapterHref, type BibleBook } from "@/lib/bible";
++
++type BookRow = BibleBook & { aliases: string[] };
++
++/** One stretch of text, from c1:v1 through c2:v2; v2 is Infinity when it runs to the chapter's end. */
++export interface RefSpan {
++  c1: number;
++  v1: number;
++  c2: number;
++  v2: number;
++}
++
++export interface ScriptureRef {
++  book: BibleBook;
++  parts: RefSpan[];
++}
++
++/** The sixty-six books in canon order, the same table as /bible/books.json. */
++export const SCRIPTURE_BOOKS: readonly BibleBook[] = (BOOK_TABLE as BookRow[]).map((r) => ({
++  code: r.code,
++  slug: r.slug,
++  name: r.name,
++  testament: r.testament,
++  chapters: r.chapters,
++}));
++
++/** A book name as the alias table stores it: "1 Cor." and "I Corinthians" become "1 cor" and "1 corinthians". */
++export function bookKey(name: string): string {
++  return name
++    .toLowerCase()
++    .replace(/\./g, " ")
++    .replace(/\s+/g, " ")
++    .trim()
++    .replace(/^(?:first|1st|i) /, "1 ")
++    .replace(/^(?:second|2nd|ii) /, "2 ")
++    .replace(/^(?:third|3rd|iii) /, "3 ")
++    .replace(/^([1-3])(?=[a-z])/, "$1 ");
++}
++
++const BY_KEY = new Map<string, BibleBook>();
++(BOOK_TABLE as BookRow[]).forEach((row, i) => {
++  for (const a of [row.name, row.slug.replace(/-/g, " "), row.code, ...row.aliases]) BY_KEY.set(bookKey(a), SCRIPTURE_BOOKS[i]);
++});
++
++/** "Ps", "1 cor", "Song of Songs" -> the book; null when no book goes by that name. */
++export function findBook(name: string): BibleBook | null {
++  return BY_KEY.get(bookKey(name)) ?? null;
++}
++
++/** The book (letters, with an optional 1-3 in front), then everything from the first digit after it. */
++const SPLIT = /^(.*?[a-z][a-z.]*)\s*(\d[\s\S]*)$/i;
++const CHAPTERS = /^(\d+)(?:-(\d+))?$/;
++const VERSES = /^(\d+)(?:-(?:(\d+):)?(\d+))?$/;
++
++/** A Scripture reference -> its book and the stretches of text it names; null when it is not one. */
++export function parseScriptureRef(input: string): ScriptureRef | null {
++  if (typeof input !== "string") return null;
++  const m = input.trim().replace(/[‐-―−]/g, "-").match(SPLIT);
++  if (!m) return null;
++  const book = findBook(m[1]);
++  if (!book) return null;
++  const loc = m[2]
++    .replace(/\s*([:.,;-])\s*/g, "$1")
++    .replace(/^(\d+)\s+(?=\d)/, "$1:")
++    .replace(/(\d)\.(?=\d)/g, "$1:");
++  if (/[^\d:,;-]/.test(loc)) return null;
++  const parts: RefSpan[] = [];
++  for (const seg of loc.split(";")) {
++    const colon = seg.indexOf(":");
++    if (colon < 0) {
++      const r = seg.match(CHAPTERS);
++      if (!r) return null;
++      const a = Number(r[1]);
++      const b = r[2] ? Number(r[2]) : a;
++      // A one-chapter book is cited by verse: "Jude 3" is Jude 1:3, "Jude 1" the whole letter.
++      if (book.chapters === 1 && seg !== "1") parts.push({ c1: 1, v1: a, c2: 1, v2: b });
++      else parts.push({ c1: a, v1: 1, c2: b, v2: Infinity });
++      continue;
++    }
++    const chap = seg.slice(0, colon);
++    if (!/^\d+$/.test(chap)) return null;
++    let c = Number(chap);
++    for (const v of seg.slice(colon + 1).split(",")) {
++      const r = v.match(VERSES);
++      if (!r) return null;
++      const v1 = Number(r[1]);
++      const c2 = r[2] ? Number(r[2]) : c;
++      const v2 = r[3] ? Number(r[3]) : v1;
++      parts.push({ c1: c, v1, c2, v2 });
++      c = c2;
++    }
++  }
++  for (const p of parts) {
++    if (p.c1 < 1 || p.c2 > book.chapters || p.c2 < p.c1 || p.v1 < 1 || p.v2 < 1) return null;
++    if (p.c2 === p.c1 && p.v2 < p.v1) return null;
++  }
++  return parts.length ? { book, parts } : null;
++}
++
++/** A parsed reference as the site prints it: "John 3:16", "Psalm 23:1–3", "Romans 7:24–8:1, 5". */
++export function formatRef(ref: ScriptureRef): string {
++  const { book, parts } = ref;
++  const oneChapter = parts.every((p) => p.c1 === parts[0].c1 && p.c2 === parts[0].c1);
++  const name = book.slug === "psalms" && oneChapter ? "Psalm" : book.name;
++  let out = "";
++  let at = 0; // the chapter the last verse span ended in; 0 after a whole chapter
++  for (const p of parts) {
++    if (p.v2 === Infinity) {
++      out += `${out ? "; " : ""}${p.c1}${p.c2 > p.c1 ? `–${p.c2}` : ""}`;
++      at = 0;
++      continue;
++    }
++    const end = p.c2 !== p.c1 ? `–${p.c2}:${p.v2}` : p.v2 !== p.v1 ? `–${p.v2}` : "";
++    out += !out ? `${p.c1}:${p.v1}${end}` : p.c1 === at ? `, ${p.v1}${end}` : `; ${p.c1}:${p.v1}${end}`;
++    at = p.c2;
++  }
++  return `${name} ${out}`;
++}
++
++/**
++ * The Study Bible page for a reference: its first chapter, at its first verse
++ * when it names one (`verse: false` for the chapter's top). Null when it is
++ * not a reference.
++ */
++export function refHref(ref: string | ScriptureRef, opts: { verse?: boolean } = {}): string | null {
++  const r = typeof ref === "string" ? parseScriptureRef(ref) : ref;
++  if (!r) return null;
++  const p = r.parts[0];
++  return chapterHref(r.book.slug, p.c1, opts.verse === false || p.v2 === Infinity ? undefined : p.v1);
++}
+diff --git a/client/src/pages/StudyBible.tsx b/client/src/pages/StudyBible.tsx
+index 405037c..3d44d69 100644
+--- a/client/src/pages/StudyBible.tsx
++++ b/client/src/pages/StudyBible.tsx
+@@ -115,7 +115,7 @@ export default function StudyBible() {
+       ) : book && Number.isFinite(chapterNum) ? (
+         <Reader books={books} book={book} chapter={chapterNum} />
+       ) : book ? (
+-        <BookPage books={books} book={book} />
++        <BookPage book={book} />
+       ) : (
+         <BookIndex books={books} />
+       )}
+@@ -213,7 +213,7 @@ function BookIndex({ books }: { books: BibleBook[] }) {
+ 
+ // ── a book ───────────────────────────────────────────────────────────────────
+ 
+-function BookPage({ books, book }: { books: BibleBook[]; book: BibleBook }) {
++function BookPage({ book }: { book: BibleBook }) {
+   const { data: intro } = useLoad<BookIntro>(`intro-${book.slug}`, () => fetchIntro(book.slug));
+   const { data: index } = useLoad("notes-index", fetchNotesIndex);
+   const { data: act } = useLoad(`act-${book.slug}`, () =>
+@@ -224,7 +224,7 @@ function BookPage({ books, book }: { books: BibleBook[]; book: BibleBook }) {
+     })
+   );
+   const { data: related } = useLoad(`book-related-${book.slug}`, () =>
+-    fetchCatalogue().then((c) => spreadKinds(itemsForPassage(c.items, books, book.slug), 8))
++    fetchCatalogue().then((c) => spreadKinds(itemsForPassage(c.items, book.slug), 8))
+   );
+   const { data: doctrines } = useLoad("doctrines", fetchDoctrines);
+   const titles = index?.titles[book.slug] ?? [];
+@@ -747,10 +747,10 @@ function VerseStudy({ books, book, chapter, verse, lang, setSel, data, verseNote
+   useEffect(() => {
+     let stale = false;
+     fetchCatalogue()
+-      .then((c) => { if (!stale) setRelated(itemsForPassage(c.items, books, book.slug, chapter).slice(0, 8)); })
++      .then((c) => { if (!stale) setRelated(itemsForPassage(c.items, book.slug, chapter).slice(0, 8)); })
+       .catch(() => { if (!stale) setRelated([]); });
+     return () => { stale = true; };
+-  }, [books, book.slug, chapter]);
++  }, [book.slug, chapter]);
+ 
+   const script = lang === "H" ? HEB : GRK;
+   const refLabel = `${book.name} ${chapter}:${verse.v}`;
+@@ -763,7 +763,7 @@ function VerseStudy({ books, book, chapter, verse, lang, setSel, data, verseNote
+       {entry && (
+         <>
+           <div style={panelH}>Study notes{entry.v.includes("-") ? ` on ${chapter}:${entry.v.replace("-", "–")}` : ""}</div>
+-          <VerseEntry entry={entry} books={books} doctrines={doctrines} data={data} lang={lang} onWord={(v, i) => setSel({ kind: "word", verse: v, index: i })} />
++          <VerseEntry entry={entry} doctrines={doctrines} data={data} lang={lang} onWord={(v, i) => setSel({ kind: "word", verse: v, index: i })} />
+         </>
+       )}
+ 
+diff --git a/client/src/pages/StudyBibleDoctrines.tsx b/client/src/pages/StudyBibleDoctrines.tsx
+index 591feb3..6208d0e 100644
+--- a/client/src/pages/StudyBibleDoctrines.tsx
++++ b/client/src/pages/StudyBibleDoctrines.tsx
+@@ -23,7 +23,6 @@ import {
+   fetchLoci,
+   fetchNotesIndex,
+   fetchStudy,
+-  refHref,
+   spreadKinds,
+   type Doctrine,
+   type DoctrineStudy,
+@@ -32,6 +31,7 @@ import {
+   type NotesIndex,
+ } from "@/lib/bible-notes";
+ import { buildIndex, fetchCatalogue, search, type CatalogueItem } from "@/lib/catalogue";
++import { refHref } from "@/lib/scripture-ref";
+ import { Band, Credits, H2, H3, Hero, Lede, Prose, RelatedList, Status, card, kicker, quietLink, useLoad, wrap } from "@/pages/study-bible/shared";
+ 
+ type Data = { doctrines: Doctrine[]; loci: Locus[]; index: NotesIndex; books: BibleBook[] };
+@@ -215,7 +215,7 @@ function DoctrinePage({ data, id }: { data: Data; id: string }) {
+           <Section id="texts" tone={tone()} title="Key texts">
+             <ol style={{ listStyle: "none", margin: 0, padding: 0, display: "grid", gap: "10px", maxWidth: "72ch" }}>
+               {study.keyTexts.map((k) => {
+-                const href = refHref(k.ref, data.books);
++                const href = refHref(k.ref);
+                 return (
+                   <li key={k.ref} style={{ ...card, padding: "12px var(--s-4)" }}>
+                     <div style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 700, marginBottom: "4px" }}>{href ? <Link href={href} style={quietLink}>{k.ref}</Link> : k.ref}</div>
+diff --git a/client/src/pages/StudyBibleGuides.tsx b/client/src/pages/StudyBibleGuides.tsx
+index 29174ed..fae84d3 100644
+--- a/client/src/pages/StudyBibleGuides.tsx
++++ b/client/src/pages/StudyBibleGuides.tsx
+@@ -10,13 +10,13 @@ import { Link, useRoute } from "wouter";
+ import Layout from "@/components/Layout";
+ import { SEOMeta } from "@/components/SEOMeta";
+ import { LoadFailed } from "@/components/LoadFailed";
+-import { fetchBooks, type BibleBook } from "@/lib/bible";
+-import { fetchGuide, fetchGuideIndex, refHref, type Guide, type GuideIndex } from "@/lib/bible-notes";
++import { fetchGuide, fetchGuideIndex, type Guide, type GuideIndex } from "@/lib/bible-notes";
++import { refHref } from "@/lib/scripture-ref";
+ import { Band, Credits, H2, Hero, Lede, Prose, Status, card, kicker, quietLink, useLoad, wrap } from "@/pages/study-bible/shared";
+ 
+ export default function StudyBibleGuides() {
+   const [, params] = useRoute("/study/bible/guides/:id");
+-  const { data, retry } = useLoad("guides-page", () => Promise.all([fetchGuideIndex(), fetchBooks()]).then(([index, books]) => ({ index, books })));
++  const { data, retry } = useLoad("guides-page", () => fetchGuideIndex().then((index) => ({ index })));
+   return (
+     <Layout>
+       {!params && (
+@@ -33,7 +33,7 @@ export default function StudyBibleGuides() {
+       ) : data === undefined ? (
+         <Status>Opening the guides…</Status>
+       ) : params ? (
+-        <GuidePage id={params.id} index={data.index} books={data.books} />
++        <GuidePage id={params.id} index={data.index} />
+       ) : (
+         <GuideIndexPage index={data.index} />
+       )}
+@@ -70,7 +70,7 @@ function GuideIndexPage({ index }: { index: GuideIndex }) {
+   );
+ }
+ 
+-function GuidePage({ id, index, books }: { id: string; index: GuideIndex; books: BibleBook[] }) {
++function GuidePage({ id, index }: { id: string; index: GuideIndex }) {
+   const { data: guide, retry } = useLoad<Guide>(`guide-${id}`, () => fetchGuide(id));
+   const group = index.groups.find((g) => g.guides.some((x) => x.id === id));
+   const all = index.groups.flatMap((g) => g.guides);
+@@ -119,7 +119,7 @@ function GuidePage({ id, index, books }: { id: string; index: GuideIndex; books:
+             <p style={{ margin: "var(--s-3) 0 0", fontFamily: "var(--U)", fontSize: "13.5px", lineHeight: 1.9, color: "var(--ink-muted)" }}>
+               Read:{" "}
+               {s.refs.map((r, k) => {
+-                const href = refHref(r, books);
++                const href = refHref(r);
+                 return (
+                   <span key={r}>
+                     {href ? <Link href={href} style={quietLink}>{r}</Link> : r}
+diff --git a/client/src/pages/help/CarePage.tsx b/client/src/pages/help/CarePage.tsx
+index cae5c60..c95f19d 100644
+--- a/client/src/pages/help/CarePage.tsx
++++ b/client/src/pages/help/CarePage.tsx
+@@ -27,7 +27,7 @@ import { EditorialIndex, type IndexItem } from "@/components/editorial/Editorial
+ import { LoadFailed } from "@/components/LoadFailed";
+ import { TakeItWithYou } from "@/components/TakeItWithYou";
+ import { fetchJson } from "@/lib/fetch-json";
+-import { studyBibleHref } from "@/lib/needs";
++import { refHref } from "@/lib/scripture-ref";
+ import { isPublicEssayHref } from "@/lib/shelf";
+ import { SKEPTIC_TRACK_LIVE } from "@/lib/skepticTrack";
+ import type { CarePageData, NeedsIndex } from "@/lib/needs";
+@@ -284,8 +284,8 @@ export default function CarePage() {
+             </blockquote>
+             <figcaption style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted)", margin: "10px 0 14px 22px" }}>
+               {p.ref} (BSB).{" "}
+-              {studyBibleHref(p.ref) && (
+-                <Link href={studyBibleHref(p.ref)!} style={{ color: "var(--mustard-text)", fontWeight: 600 }}>Read the whole chapter</Link>
++              {refHref(p.ref, { verse: false }) && (
++                <Link href={refHref(p.ref, { verse: false })!} style={{ color: "var(--mustard-text)", fontWeight: 600 }}>Read the whole chapter</Link>
+               )}
+             </figcaption>
+             <Prose text={p.reading} />
+diff --git a/client/src/pages/study-bible/ChapterNotes.tsx b/client/src/pages/study-bible/ChapterNotes.tsx
+index 186d86f..6af5bd2 100644
+--- a/client/src/pages/study-bible/ChapterNotes.tsx
++++ b/client/src/pages/study-bible/ChapterNotes.tsx
+@@ -137,7 +137,7 @@ export function ChapterNotesBody(props: {
+   const { data: passages } = useLoad("notes-index", fetchNotesIndex);
+   const { data: related } = useLoad<CatalogueItem[]>(doctrines === undefined ? null : `related-${key}`, () =>
+     fetchCatalogue().then((c) => {
+-      const direct = itemsForPassage(c.items, books, book.slug, chapter);
++      const direct = itemsForPassage(c.items, book.slug, chapter);
+       const idx = buildIndex(c.items);
+       const topical = note.doctrines.flatMap((d) => search(idx, doctrines?.find((x) => x.id === d.id)?.terms ?? d.id).results.slice(0, 4));
+       return spreadKinds([...direct, ...topical], 6);
+@@ -229,7 +229,7 @@ export function ChapterNotesBody(props: {
+       </Section>
+       {verseNotes && verseNotes.length > 0 && (
+         <Section title="Verse by verse: context, language, history, doctrine" id="verse-by-verse">
+-          <VerseByVerse notes={verseNotes} book={book} chapter={chapter} books={books} doctrines={doctrines} data={data} onVerse={onVerse} onWord={onWord} />
++          <VerseByVerse notes={verseNotes} book={book} chapter={chapter} doctrines={doctrines} data={data} onVerse={onVerse} onWord={onWord} />
+         </Section>
+       )}
+       <Section title={lang === "H" ? "How it points to Christ" : "What it shows of Christ"}>
+diff --git a/client/src/pages/study-bible/VerseNotes.tsx b/client/src/pages/study-bible/VerseNotes.tsx
+index 10277af..66c620e 100644
+--- a/client/src/pages/study-bible/VerseNotes.tsx
++++ b/client/src/pages/study-bible/VerseNotes.tsx
+@@ -9,7 +9,8 @@ import { useMemo, useState, type CSSProperties } from "react";
+ import { Link } from "wouter";
+ 
+ import type { BibleBook, BibleChapter, BibleVerse, BibleWord } from "@/lib/bible";
+-import { paragraphs, refHref, verseRange, type Doctrine, type VerseNote } from "@/lib/bible-notes";
++import { paragraphs, verseRange, type Doctrine, type VerseNote } from "@/lib/bible-notes";
++import { refHref } from "@/lib/scripture-ref";
+ import { kicker, quietLink } from "@/pages/study-bible/shared";
+ 
+ const HEB: CSSProperties = { fontFamily: '"SBL Hebrew", "Ezra SIL", "Taamey Frank CLM", "Times New Roman", serif', direction: "rtl" };
+@@ -34,14 +35,13 @@ function Paras({ text }: { text: string }) {
+ /** One entry's layers. `only` narrows it to one layer (context always shows). */
+ export function VerseEntry(props: {
+   entry: VerseNote;
+-  books: BibleBook[];
+   doctrines: Doctrine[] | null | undefined;
+   data: BibleChapter | null;
+   lang: "H" | "G";
+   only?: Layer;
+   onWord?: (v: BibleVerse, i: number) => void;
+ }) {
+-  const { entry, books, doctrines, data, lang, only = "all", onWord } = props;
++  const { entry, doctrines, data, lang, only = "all", onWord } = props;
+   const show = (l: Layer) => only === "all" || only === l;
+   const [a, z] = verseRange(entry.v);
+   const script = lang === "H" ? HEB : GRK;
+@@ -110,7 +110,7 @@ export function VerseEntry(props: {
+           <div key={k}>
+             <div style={label}>{k === "ot" ? "The Old Testament behind it" : "Where the New Testament takes it up"}</div>
+             {entry[k]!.map((x) => {
+-              const href = refHref(x.ref, books);
++              const href = refHref(x.ref);
+               return (
+                 <p key={x.ref} style={body}>
+                   {href ? <Link href={href} style={{ ...quietLink, fontWeight: 600 }}>{x.ref}</Link> : <strong>{x.ref}</strong>}. {x.note}
+@@ -124,7 +124,7 @@ export function VerseEntry(props: {
+         <p style={{ margin: "8px 0 0", fontFamily: "var(--U)", fontSize: "13px", lineHeight: 1.9, color: "var(--ink-muted)" }}>
+           Parallel accounts:{" "}
+           {entry.parallels.map((r, i) => {
+-            const href = refHref(r, books);
++            const href = refHref(r);
+             return (
+               <span key={r}>
+                 {href ? <Link href={href} style={quietLink}>{r}</Link> : r}
+@@ -138,7 +138,7 @@ export function VerseEntry(props: {
+         <p style={{ margin: "8px 0 0", fontFamily: "var(--U)", fontSize: "13px", lineHeight: 1.9, color: "var(--ink-muted)" }}>
+           See also:{" "}
+           {entry.refs.map((r, i) => {
+-            const href = refHref(r, books);
++            const href = refHref(r);
+             return (
+               <span key={r}>
+                 {href ? <Link href={href} style={quietLink}>{r}</Link> : r}
+@@ -161,7 +161,6 @@ export function VerseByVerse(props: {
+   notes: VerseNote[];
+   book: BibleBook;
+   chapter: number;
+-  books: BibleBook[];
+   doctrines: Doctrine[] | null | undefined;
+   data: BibleChapter | null;
+   onVerse: (v: BibleVerse) => void;
+@@ -196,7 +195,7 @@ export function VerseByVerse(props: {
+                   <a href={`#v${a}`} onClick={() => onVerse(verse)} style={{ ...quietLink, fontFamily: "var(--U)", fontSize: "14px", fontWeight: 700 }}>{book.name} {chapter}:{e.v.replace("-", "–")}</a>
+                 ) : `${book.name} ${chapter}:${e.v.replace("-", "–")}`}
+               </h3>
+-              <VerseEntry entry={e} books={props.books} doctrines={props.doctrines} data={data} lang={lang} only={layer} onWord={props.onWord} />
++              <VerseEntry entry={e} doctrines={props.doctrines} data={data} lang={lang} only={layer} onWord={props.onWord} />
+             </li>
+           );
+         })}
+diff --git a/scripts/lib/bsb.mjs b/scripts/lib/bsb.mjs
+index c115b40..61c74f3 100644
+--- a/scripts/lib/bsb.mjs
++++ b/scripts/lib/bsb.mjs
+@@ -7,28 +7,39 @@
+  *   import { passage, parseRef, normalize } from "./lib/bsb.mjs";
+  *   passage("Philippians 4:6-7")   -> { ref, verses: [{ c, v, t }], text }
+  *
+- * Supported references: "Book C", "Book C:V", "Book C:V-V", "Book C:V-C:V",
+- * and comma lists within one chapter ("Psalm 23:1,4"). Book names follow the
+- * site's usage ("Psalm" or "Psalms", "Song of Songs", "1 John").
++ * References are read by readRef, with the same grammar and book table as the
++ * site's parser (client/src/lib/scripture-ref.ts; scripture-ref.test.ts holds
++ * the two together): "Book C", "Book C-C", "Book C:V", "Book C:V-V",
++ * "Book C:V-C:V", verse lists within a chapter ("Psalm 23:1,4"), chapters
++ * joined by semicolons ("Romans 5:1; 8:28"), loose spacing ("jn 3 16"), and
++ * the abbreviations in client/src/data/scripture-books.json ("Ps", "1 Cor").
+  */
+ import { readFileSync } from "node:fs";
+-import { join } from "node:path";
++import { dirname, join } from "node:path";
++import { fileURLToPath } from "node:url";
+ 
+-const ROOT = new URL("../..", import.meta.url).pathname;
++// Not new URL("../..", import.meta.url): Vite rewrites that form, and the
++// site's tests import this file through Vite (scripture-ref.test.ts).
++const ROOT = join(dirname(fileURLToPath(import.meta.url)), "../..");
+ const BIBLE = join(ROOT, "client/public/bible");
+-const books = JSON.parse(readFileSync(join(BIBLE, "books.json"), "utf8"));
++const BOOK_TABLE = JSON.parse(readFileSync(join(ROOT, "client/src/data/scripture-books.json"), "utf8"));
+ 
+-const ALIASES = new Map();
+-for (const b of books) {
+-  ALIASES.set(b.name.toLowerCase(), b);
+-  ALIASES.set(b.slug.replace(/-/g, " "), b);
+-  ALIASES.set(b.code.toLowerCase(), b);
++/** A book name as the alias table stores it: "1 Cor." and "I Corinthians" become "1 cor" and "1 corinthians". */
++export function bookKey(name) {
++  return name
++    .toLowerCase()
++    .replace(/\./g, " ")
++    .replace(/\s+/g, " ")
++    .trim()
++    .replace(/^(?:first|1st|i) /, "1 ")
++    .replace(/^(?:second|2nd|ii) /, "2 ")
++    .replace(/^(?:third|3rd|iii) /, "3 ")
++    .replace(/^([1-3])(?=[a-z])/, "$1 ");
+ }
+-ALIASES.set("psalm", ALIASES.get("psalms"));
+-const song = books.find((b) => b.slug === "song-of-solomon");
+-if (song) {
+-  ALIASES.set("song of songs", song);
+-  ALIASES.set("song of solomon", song);
++
++const ALIASES = new Map();
++for (const { aliases, ...book } of BOOK_TABLE) {
++  for (const a of [book.name, book.slug.replace(/-/g, " "), book.code, ...aliases]) ALIASES.set(bookKey(a), book);
+ }
+ 
+ const chapters = new Map();
+@@ -40,31 +51,66 @@ function chapter(slug, c) {
+   return chapters.get(key);
+ }
+ 
+-/** "Philippians 4:6-7" -> { book, parts: [{ c1, v1, c2, v2 }] } or throws. */
+-export function parseRef(ref) {
+-  const m = ref.trim().match(/^((?:[1-3]\s)?[A-Za-z][A-Za-z ]*?)\s+(\d.*)$/);
+-  if (!m) throw new Error(`Cannot read reference "${ref}"`);
+-  const book = ALIASES.get(m[1].toLowerCase().replace(/\s+/g, " "));
+-  if (!book) throw new Error(`Unknown book in "${ref}"`);
+-  const loc = m[2].replace(/\s+/g, "");
++/** The book (letters, with an optional 1-3 in front), then everything from the first digit after it. */
++const SPLIT = /^(.*?[a-z][a-z.]*)\s*(\d[\s\S]*)$/i;
++const CHAPTERS = /^(\d+)(?:-(\d+))?$/;
++const VERSES = /^(\d+)(?:-(?:(\d+):)?(\d+))?$/;
++
++/**
++ * "Philippians 4:6-7" -> { book, parts: [{ c1, v1, c2, v2 }] } (v2 is
++ * Infinity when a part runs to the chapter's end), or null when it is not a
++ * reference to a chapter and verse that can exist. The same rules, line for
++ * line, as parseScriptureRef in client/src/lib/scripture-ref.ts.
++ */
++export function readRef(ref) {
++  if (typeof ref !== "string") return null;
++  const m = ref.trim().replace(/[‐-―−]/g, "-").match(SPLIT);
++  if (!m) return null;
++  const book = ALIASES.get(bookKey(m[1]));
++  if (!book) return null;
++  const loc = m[2]
++    .replace(/\s*([:.,;-])\s*/g, "$1")
++    .replace(/^(\d+)\s+(?=\d)/, "$1:")
++    .replace(/(\d)\.(?=\d)/g, "$1:");
++  if (/[^\d:,;-]/.test(loc)) return null;
+   const parts = [];
+-  if (!loc.includes(":")) {
+-    const [a, b] = loc.split("-").map(Number);
+-    for (let c = a; c <= (b || a); c++) parts.push({ c1: c, v1: 1, c2: c, v2: Infinity });
+-    return { book, parts };
++  for (const seg of loc.split(";")) {
++    const colon = seg.indexOf(":");
++    if (colon < 0) {
++      const r = seg.match(CHAPTERS);
++      if (!r) return null;
++      const a = Number(r[1]);
++      const b = r[2] ? Number(r[2]) : a;
++      // A one-chapter book is cited by verse: "Jude 3" is Jude 1:3, "Jude 1" the whole letter.
++      if (book.chapters === 1 && seg !== "1") parts.push({ c1: 1, v1: a, c2: 1, v2: b });
++      else parts.push({ c1: a, v1: 1, c2: b, v2: Infinity });
++      continue;
++    }
++    const chap = seg.slice(0, colon);
++    if (!/^\d+$/.test(chap)) return null;
++    let c = Number(chap);
++    for (const v of seg.slice(colon + 1).split(",")) {
++      const r = v.match(VERSES);
++      if (!r) return null;
++      const v1 = Number(r[1]);
++      const c2 = r[2] ? Number(r[2]) : c;
++      const v2 = r[3] ? Number(r[3]) : v1;
++      parts.push({ c1: c, v1, c2, v2 });
++      c = c2;
++    }
+   }
+-  const [chap, rest] = loc.split(/:(.*)/s);
+-  let c = Number(chap);
+-  for (const seg of rest.split(",")) {
+-    const range = seg.match(/^(\d+)(?:-(?:(\d+):)?(\d+))?$/);
+-    if (!range) throw new Error(`Cannot read verses "${seg}" in "${ref}"`);
+-    const v1 = Number(range[1]);
+-    const c2 = range[2] ? Number(range[2]) : c;
+-    const v2 = range[3] ? Number(range[3]) : v1;
+-    parts.push({ c1: c, v1, c2, v2 });
+-    c = c2;
++  for (const p of parts) {
++    if (p.c1 < 1 || p.c2 > book.chapters || p.c2 < p.c1 || p.v1 < 1 || p.v2 < 1) return null;
++    if (p.c2 === p.c1 && p.v2 < p.v1) return null;
+   }
+-  return { book, parts };
++  return parts.length ? { book, parts } : null;
++}
++
++/** readRef for callers that stop on a reference they cannot read: the parts, or throws. */
++export function parseRef(ref) {
++  const r = readRef(ref);
++  if (!r) throw new Error(`Cannot read reference "${ref}" (an unknown book, or a chapter or verse that cannot exist)`);
++  return r;
+ }
+ 
+ /** The verses a reference names, in order, with the joined text. */
+-- 
+2.43.0
+

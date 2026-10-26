@@ -1,0 +1,344 @@
+From e4e2f316b9d55ea26231bba6f530f4916845d8ea Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Mon, 26 Oct 2026 21:44:34 +0000
+Subject: [PATCH 2/2] Essay gate review fixes (U03)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+- Block quotes: a ">" line that interrupts a paragraph starts a block quote
+  (as react-markdown reads it), and a block quote's attribution line
+  ("> — Amos 3:2") stays prose, so its em-dash is caught; a dash
+  attribution with a reference counts as the reference beside the quote.
+- Rulebook leakage: "steel manufacturing" no longer reads as "steelman";
+  "self implication" without the hyphen is caught.
+- Links: a link to this site by its full address fails with the path to
+  use, so a retired or redirected essay cannot slip through as "external".
+- An H1 underlined with "=" fails like "# Title".
+- Clearer messages: an unpaired quotation mark suggests a block quote for a
+  quotation longer than a paragraph; an off-shelf essay link may also be a
+  newer post the gate cannot see.
+- essay-text.mjs finds the repo root with fileURLToPath; CRLF paragraph
+  breaks split correctly.
+- ci.yml: the gate sits beside validate-no-emdash, away from U10's
+  insertion after validate-family, so both patches apply without a
+  three-way merge; CLAUDE.md lists it in the same place.
+- Two new tests cover these edges (16 in the file).
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01JuCQ8kZ25i9zRwNgk6bh4e
+---
+ .github/workflows/ci.yml       |  2 +-
+ CLAUDE.md                      |  6 +--
+ client/public/essays/README.md |  2 +-
+ scripts/lib/essay-text.mjs     | 89 ++++++++++++++++++++++------------
+ scripts/validate-essays.mjs    | 17 +++++--
+ server/essay-gate.test.ts      | 24 ++++++++-
+ 6 files changed, 97 insertions(+), 43 deletions(-)
+
+diff --git a/.github/workflows/ci.yml b/.github/workflows/ci.yml
+index 50dbaf6..5a9b424 100644
+--- a/.github/workflows/ci.yml
++++ b/.github/workflows/ci.yml
+@@ -36,6 +36,7 @@ jobs:
+           node scripts/validate-theology.mjs
+           node scripts/validate-politics.mjs
+           node scripts/validate-no-emdash.mjs
++          node scripts/validate-essays.mjs
+           node scripts/validate-content-integrity.mjs
+           node scripts/validate-skeptic-track.mjs
+           node scripts/validate-answers.mjs
+@@ -48,7 +49,6 @@ jobs:
+           node scripts/validate-workbooks.mjs
+           node scripts/validate-family.mjs
+           node scripts/validate-grow-voice.mjs
+-          node scripts/validate-essays.mjs
+           node scripts/validate-verse-guides.mjs
+           pnpm exec tsx scripts/validate-catalogue.mjs
+           node scripts/validate-bible.mjs
+diff --git a/CLAUDE.md b/CLAUDE.md
+index 04bc0da..83b1d6f 100644
+--- a/CLAUDE.md
++++ b/CLAUDE.md
+@@ -490,9 +490,9 @@ be set before the Vercel build. Auth model: bcrypt password → HMAC-SHA256
+ 
+ On every PR, five blocking steps: `pnpm check` → the content-gates step (23
+ validators: scripture, life, studyguides, pathways, theology, politics,
+-no-emdash, content-integrity, skeptic-track, answers, argument-cases, links,
+-needs (pages and drafts), grow-links, plans, workbooks, family, grow-voice,
+-essays, verse-guides, catalogue, bible, bible-notes) → `pnpm test` →
++no-emdash, essays, content-integrity, skeptic-track, answers, argument-cases,
++links, needs (pages and drafts), grow-links, plans, workbooks, family,
++grow-voice, verse-guides, catalogue, bible, bible-notes) → `pnpm test` →
+ `pnpm build` → the canonical audit (sitemap +
+ prerender + `audit:canonicals`). A separate, non-blocking `quality` job runs
+ Lighthouse + axe against the built site. Keep all five blocking steps green.
+diff --git a/client/public/essays/README.md b/client/public/essays/README.md
+index 2f164ca..2eeae9f 100644
+--- a/client/public/essays/README.md
++++ b/client/public/essays/README.md
+@@ -1,3 +1,3 @@
+ Rewritten essays live here as `<slug>.json` ({ slug, title, excerpt, body (Markdown), updated }), one per shelf essay; after adding one, run `node scripts/build-essays-index.mjs`.
+ 
+-Then run `node scripts/validate-essays.mjs` (a CI gate). It holds every file to the shape above and to the house rules: no Forbidden Language and no rulebook leakage ("steelman," "verdict," "indictment," "self-implication," "both-sidesism") in our own prose; no em-dash in our own prose ("---", "--", and a spaced en-dash count too), and none at all in the title or excerpt; an exclamation point only inside quoted Scripture with its reference beside it; internal links only to public pages, never through a redirect; at least one Scripture reference; sections under `##`, since the page sets the title as the only H1; and Closing Texts written as *"Quote."* (Reference) on one line. A quotation, in double quotation marks or a `>` block quote, keeps its own words and punctuation.
++Then run `node scripts/validate-essays.mjs` (a CI gate). It holds every file to the shape above and to the house rules: no Forbidden Language and no rulebook leakage ("steelman," "verdict," "indictment," "self-implication," "both-sidesism") in our own prose; no em-dash in our own prose ("---", "--", and a spaced en-dash count too), and none at all in the title or excerpt; an exclamation point only inside quoted Scripture with its reference beside it; internal links only to public pages, by path (/writing/<slug>, not the full address), never through a redirect; at least one Scripture reference; sections under `##`, since the page sets the title as the only H1; and Closing Texts written as *"Quote."* (Reference) on one line. A quotation, in double quotation marks or a `>` block quote, keeps its own words and punctuation; an attribution under a block quote is ours, so it reads (Reference), never a dash and the reference.
+diff --git a/scripts/lib/essay-text.mjs b/scripts/lib/essay-text.mjs
+index 16f9d8e..61982c0 100644
+--- a/scripts/lib/essay-text.mjs
++++ b/scripts/lib/essay-text.mjs
+@@ -12,9 +12,11 @@
+  * exclamation point may stand only inside quoted Scripture.
+  *
+  * A quotation is text between double quotation marks, straight or curly,
+- * inside one paragraph, or a Markdown block quote (a paragraph that opens
+- * with ">"). Single quotation marks are a quotation inside a quotation and
+- * need no pairing of their own.
++ * inside one paragraph, or a Markdown block quote (from a line that opens
++ * with ">" to the end of its paragraph, as the renderer reads it). A block
++ * quote's attribution line ("> — Amos 3:2") is ours, not the quotation's, so
++ * it stays prose. Single quotation marks are a quotation inside a quotation
++ * and need no pairing of their own.
+  *
+  * Scripture references are recognized by shape here (a book name from
+  * client/public/bible/books.json, then chapter and verse), not parsed. The
+@@ -22,9 +24,37 @@
+  * with a real parse.
+  */
+ import { readFileSync } from "node:fs";
+-import { join } from "node:path";
++import { dirname, join } from "node:path";
++import { fileURLToPath } from "node:url";
+ 
+-const ROOT = new URL("../..", import.meta.url).pathname;
++const ROOT = join(dirname(fileURLToPath(import.meta.url)), "../..");
++
++// ── Scripture references, by shape ─────────────────────────────────────────
++const bookNames = JSON.parse(readFileSync(join(ROOT, "client/public/bible/books.json"), "utf8")).map((b) => b.name);
++const BOOKS = [...new Set([...bookNames, "Psalm", "Song of Songs"])]
++  .sort((a, b) => b.length - a.length)
++  .map((n) => n.replace(/ /g, "\\s"));
++const VERSES = String.raw`\d{1,3}:\d{1,3}[a-c]?(?:[-–](?:\d{1,3}:)?\d{1,3}[a-c]?)?(?:,\s?\d{1,3}[a-c]?(?:[-–]\d{1,3}[a-c]?)?)*`;
++const CHAPTERS = String.raw`\d{1,3}(?:[-–]\d{1,3})?`;
++/** A Scripture reference by shape: "Luke 19:41–42", "1 Peter 2:9", "Psalm 23", "Hebrews 11:13, 16". */
++export const SCRIPTURE_REF_SOURCE = String.raw`(?<![A-Za-z0-9])(?:${BOOKS.join("|")})\.?\s(?:${VERSES}|${CHAPTERS})(?!\d|:\d)`;
++const REF = new RegExp(SCRIPTURE_REF_SOURCE);
++
++/** Does the text carry a Scripture reference anywhere? */
++export function hasScriptureRef(text) {
++  return REF.test(text);
++}
++
++/** A dash typed to attribute a quotation ("— Amos 3:2"). */
++const ATTRIBUTION_DASH = String.raw`(?:—|–|--)`;
++/**
++ * The end of a block quote that attributes it rather than quotes: a last line
++ * opening with a dash ("> — Amos 3:2"), or a dash and a Scripture reference
++ * closing the last line ("> … earth. — Amos 3:2").
++ */
++const BLOCK_ATTRIBUTION = new RegExp(
++  String.raw`(?:\n[ \t]{0,3}(?:>[ \t]?)?[ \t]*${ATTRIBUTION_DASH}[^\n]*|[ \t]+${ATTRIBUTION_DASH}[ \t]*${SCRIPTURE_REF_SOURCE}[^\n]*)$`
++);
+ 
+ /** A character-for-character copy with [start, end) blanked (newlines kept). */
+ function blank(chars, start, end) {
+@@ -57,28 +87,35 @@ export function maskQuotations(text) {
+   const unbalanced = [];
+   // Paragraphs are separated by blank lines; with one capture group, split()
+   // puts the separators at the odd indexes.
+-  const parts = text.split(/(\n[ \t]*\n)/);
++  const parts = text.split(/(\n[ \t\r]*\n)/);
+   let offset = 0;
+   for (let p = 0; p < parts.length; p++) {
+     const block = parts[p];
+     const base = offset;
+     offset += block.length;
+     if (p % 2 === 1 || !block.trim()) continue;
+-    const lead = block.length - block.trimStart().length;
+-    if (block[lead] === ">") {
+-      // A block quote (lazy continuation lines included): someone else's words.
+-      const end = block.trimEnd().length;
+-      quotes.push({ start: base + lead, end: base + end, text: block.slice(lead, end).replace(/^[ \t]*>[ \t]?/gm, ""), block: true });
+-      blank(chars, base + lead, base + end);
+-      continue;
++
++    // A block quote runs from a line that opens with ">" to the end of the
++    // paragraph (lazy continuation lines included); it may also interrupt a
++    // paragraph of prose. Someone else's words, less any attribution line.
++    const bq = /(?:^|\n)[ \t]*>/.exec(block);
++    const proseEnd = bq ? bq.index : block.length;
++    if (bq) {
++      const start = bq.index + bq[0].length - 1;
++      let end = block.trimEnd().length;
++      const attribution = BLOCK_ATTRIBUTION.exec(block.slice(start, end));
++      if (attribution) end = start + attribution.index;
++      quotes.push({ start: base + start, end: base + end, text: block.slice(start, end).replace(/^[ \t]*>[ \t]?/gm, ""), block: true });
++      blank(chars, base + start, base + end);
+     }
++
+     let open = -1;
+     const close = (i) => {
+       quotes.push({ start: base + open, end: base + i + 1, text: block.slice(open + 1, i), block: false });
+       blank(chars, base + open, base + i + 1);
+       open = -1;
+     };
+-    for (let i = 0; i < block.length; i++) {
++    for (let i = 0; i < proseEnd; i++) {
+       const c = block[i];
+       if (c === "“") {
+         if (open < 0) open = i;
+@@ -104,24 +141,9 @@ export function readEssayText(text) {
+   return maskQuotations(maskLinkTargets(text));
+ }
+ 
+-// ── Scripture references, by shape ─────────────────────────────────────────
+-const bookNames = JSON.parse(readFileSync(join(ROOT, "client/public/bible/books.json"), "utf8")).map((b) => b.name);
+-const BOOKS = [...new Set([...bookNames, "Psalm", "Song of Songs"])]
+-  .sort((a, b) => b.length - a.length)
+-  .map((n) => n.replace(/ /g, "\\s"));
+-const VERSES = String.raw`\d{1,3}:\d{1,3}[a-c]?(?:[-–](?:\d{1,3}:)?\d{1,3}[a-c]?)?(?:,\s?\d{1,3}[a-c]?(?:[-–]\d{1,3}[a-c]?)?)*`;
+-const CHAPTERS = String.raw`\d{1,3}(?:[-–]\d{1,3})?`;
+-/** A Scripture reference by shape: "Luke 19:41–42", "1 Peter 2:9", "Psalm 23", "Hebrews 11:13, 16". */
+-export const SCRIPTURE_REF_SOURCE = String.raw`(?<![A-Za-z0-9])(?:${BOOKS.join("|")})\.?\s(?:${VERSES}|${CHAPTERS})(?!\d|:\d)`;
+-const REF = new RegExp(SCRIPTURE_REF_SOURCE);
+-
+-/** Does the text carry a Scripture reference anywhere? */
+-export function hasScriptureRef(text) {
+-  return REF.test(text);
+-}
+-
+ const REF_PAREN = new RegExp(String.raw`\([^()]*${SCRIPTURE_REF_SOURCE}[^()]*\)`);
+ const REF_AFTER = new RegExp(String.raw`^[*_.,;:!?\s]{0,6}\(([^()]{1,80})\)`);
++const REF_ATTRIBUTED = new RegExp(String.raw`^[*_.,;:!?\s]{0,6}(?:>[ \t]?)?[ \t]*${ATTRIBUTION_DASH}[ \t]*${SCRIPTURE_REF_SOURCE}`);
+ const REF_BEFORE = new RegExp(String.raw`${SCRIPTURE_REF_SOURCE}\)?[*_]*[,:.]?\s*[*_]*$`);
+ 
+ /**
+@@ -129,11 +151,14 @@ const REF_BEFORE = new RegExp(String.raw`${SCRIPTURE_REF_SOURCE}\)?[*_]*[,:.]?\s
+  * parenthetical reference right after the closing mark ("…" (Luke 19:41–42),
+  * *"…"* (Amos 3:2)), or a reference right before the opening one
+  * (Psalm 33:12: "…"). A block quote may also end on its parenthetical
+- * reference.
++ * reference. A dash attribution after it ("— Amos 3:2") names the reference
++ * too, though the dash itself still fails the em-dash rule.
+  */
+ export function hasReferenceBeside(text, quote) {
+-  const after = text.slice(quote.end, quote.end + 100).match(REF_AFTER);
++  const following = text.slice(quote.end, quote.end + 100);
++  const after = following.match(REF_AFTER);
+   if (after && REF.test(after[1])) return true;
++  if (REF_ATTRIBUTED.test(following)) return true;
+   if (REF_BEFORE.test(text.slice(Math.max(0, quote.start - 100), quote.start))) return true;
+   if (quote.block) {
+     const lines = quote.text.trimEnd().split("\n");
+diff --git a/scripts/validate-essays.mjs b/scripts/validate-essays.mjs
+index 357b3ef..7d34226 100644
+--- a/scripts/validate-essays.mjs
++++ b/scripts/validate-essays.mjs
+@@ -54,10 +54,10 @@ export const ESSAY_FIELDS = ["slug", "title", "excerpt", "body", "updated"];
+  * thing is done, never announced.
+  */
+ const RULEBOOK = [
+-  /\bsteel[- ]?m[ae]n\w*/gi,
++  /\bsteel[- ]?man(?:s|ned|ning|ed|ing)?\b/gi,
+   /\bverdicts?\b/gi,
+   /\bindictments?\b/gi,
+-  /\bself-implicat\w*/gi,
++  /\bself[- ]implicat\w*/gi,
+   /\bboth-?sides-?ism\b/gi,
+   /\bthe fair place to begin\b/gi,
+   /\bdeserves to be stated the way\b/gi,
+@@ -77,7 +77,7 @@ function proseProblems(field, text, strictDashes) {
+   const { prose, quotes, unbalanced } = readEssayText(text);
+ 
+   for (const i of unbalanced)
+-    out.push(`${at(i)}: a quotation mark with no partner in its paragraph ${near(i)}; the gate cannot tell the quotation from the prose`);
++    out.push(`${at(i)}: a quotation mark with no partner in its paragraph ${near(i)}; the gate cannot tell the quotation from the prose (a quotation longer than a paragraph goes in a > block quote)`);
+   for (const m of setAsideAllowed(prose).matchAll(forbiddenRe))
+     out.push(`${at(m.index)}: Forbidden Language "${m[1]}" ${near(m.index)}`);
+   for (const re of RULEBOOK)
+@@ -95,8 +95,12 @@ function proseProblems(field, text, strictDashes) {
+   return out;
+ }
+ 
++/** The site by its full address (CLAUDE.md Decision Log: the www host, and the apex that 301s to it). */
++const OWN_SITE = /^https?:\/\/(?:www\.)?livewellbyjamesbell\.com?(?=[/?#]|$)/i;
++
+ /** Does an internal link reach a public page directly? null when it does. */
+ function linkProblem(href, shelf) {
++  if (OWN_SITE.test(href)) return `link ${href} names this site by its full address; use the path alone (${href.replace(OWN_SITE, "") || "/"}) so the gate can check it`;
+   if (/^[a-z][a-z0-9+.-]*:/i.test(href)) return null; // https:, mailto: (off the site)
+   if (href.startsWith("#")) return null;
+   if (!href.startsWith("/") || href.startsWith("//")) return `link "${href}" is not a site path (internal links start with /)`;
+@@ -113,7 +117,7 @@ function linkProblem(href, shelf) {
+     if (seen === "shelf") return null;
+     const r = resolveHref(path);
+     if (r.status === "redirect") return `link ${href} redirects to ${r.to}; link there directly`;
+-    return `link ${href} is not a public essay (${seen === "pending" ? "on the shelf with no rewrite yet" : "not on the shelf, so retired"})`;
++    return `link ${href} is not a public essay (${seen === "pending" ? "on the shelf with no rewrite yet" : "not on the shelf: retired, or a newer post the gate cannot see"})`;
+   }
+   const r = resolveHref(path);
+   if (r.status === "ok") return null;
+@@ -127,8 +131,11 @@ function bodyProblems(body, excerpt, shelf) {
+   const out = [];
+   const at = (i) => `body line ${lineAt(body, i)}`;
+ 
+-  for (const m of body.matchAll(/^[ \t]{0,3}#[ \t]/gm))
++  for (const m of body.matchAll(/^[ \t]{0,3}#(?:[ \t]|$)/gm))
+     out.push(`${at(m.index)}: an H1 heading; the page sets the title as the only H1, so sections use ##`);
++  // The other way to write an H1: a line underlined with "=".
++  for (const m of body.matchAll(/^[ \t]{0,3}[^\s>#-][^\n]*\n[ \t]{0,3}=+[ \t]*$/gm))
++    out.push(`${at(m.index)}: an H1 heading (underlined with =); the page sets the title as the only H1, so sections use ##`);
+ 
+   const plain = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+   const first = body.split(/\n[ \t]*\n/).map((b) => b.trim()).find((b) => b && !b.startsWith("#"));
+diff --git a/server/essay-gate.test.ts b/server/essay-gate.test.ts
+index e0cf7f1..42857db 100644
+--- a/server/essay-gate.test.ts
++++ b/server/essay-gate.test.ts
+@@ -18,7 +18,8 @@ import {
+   maskQuotations,
+   readEssayText,
+ } from "../scripts/lib/essay-text.mjs";
+-import { checkEssayFiles } from "../scripts/validate-essays.mjs";
++import { checkEssayFiles, essayProblems } from "../scripts/validate-essays.mjs";
++import { loadEssayShelf } from "../scripts/lib/shelf.mjs";
+ 
+ const ROOT = path.resolve(import.meta.dirname, "..");
+ const run = (script: string, ...args: string[]) =>
+@@ -135,6 +136,15 @@ describe("essay-text helpers", () => {
+   it("never reads a link target as prose", () => {
+     expect(readEssayText("See [this](/writing/the-journey-home).").prose).not.toContain("journey");
+   });
++
++  it("reads a block quote that interrupts a paragraph, and keeps its attribution line as prose", () => {
++    const t = "Paul wrote:\n> as a beloved brother—especially to me\n> — Philemon 16";
++    const { prose, quotes } = readEssayText(t);
++    expect(quotes).toHaveLength(1);
++    expect(quotes[0].text).not.toContain("Philemon");
++    expect(dashesIn(prose).map((d) => prose.slice(d.index, d.index + 12))).toEqual(["— Philemon 1"]);
++    expect(hasReferenceBeside(t, quotes[0])).toBe(true);
++  });
+ });
+ 
+ describe("validate-essays", () => {
+@@ -181,6 +191,18 @@ describe("validate-essays", () => {
+     expect(checkEssayFiles([path.join(dir, `${PENDING}.json`)]).problems).toEqual([]);
+   });
+ 
++  it("holds the edges: ordinary words pass, the full site address and an underlined H1 fail", () => {
++    const shelf = loadEssayShelf();
++    const problems = (body: string) => essayProblems(essay(`Read John 3:16 slowly. ${body}`), shelf).join("\n");
++    expect(problems("The steel manufacturing towns of Ohio emptied.")).toBe("");
++    expect(problems("That is self implication.")).toContain('rulebook leakage "self implication"');
++    expect(problems("Steelmanning it would help.")).toContain('rulebook leakage "Steelmanning"');
++    expect(problems(`Read [it](https://www.livewellbyjamesbell.co/writing/${LIVE}).`)).toContain(`use the path alone (/writing/${LIVE})`);
++    expect(problems("\n\nA Second Title\n=====\n\nMore.")).toContain("underlined with =");
++    expect(problems("\n\n> You only have I known.\n> — Amos 3:2")).toContain("em-dash");
++    expect(problems("\n\n> You only have I known!\n> (Amos 3:2)")).toBe("");
++  });
++
+   it("fails an essay that cites no Scripture by reference", () => {
+     const { problems } = checkEssayFiles([path.join(dirs.noRef, `${PENDING}.json`)]);
+     expect(problems.join("\n")).toContain("cites no Scripture by reference");
+-- 
+2.43.0
+

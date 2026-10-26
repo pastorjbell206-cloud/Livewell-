@@ -1,8 +1,8 @@
 From fd183402a70cb33b2d5e321e5594cac6e04c7351 Mon Sep 17 00:00:00 2001
 From: Claude <noreply@anthropic.com>
 Date: Mon, 26 Oct 2026 20:37:33 +0000
-Subject: [PATCH] Essay gate: validate-essays.mjs, and the em-dash and voice
- ratchets cover client/public/essays (U03)
+Subject: [PATCH 1/2] Essay gate: validate-essays.mjs, and the em-dash and
+ voice ratchets cover client/public/essays (U03)
 
 A rewrite turns a pending shelf essay public the moment its file lands, so
 every file in client/public/essays now passes a gate before readers see it.
