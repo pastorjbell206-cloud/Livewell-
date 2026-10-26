@@ -659,6 +659,39 @@ h1, h2, h3 { text-wrap: balance; }
 .quote-share__btn{display:inline-flex;align-items:center;gap:7px;margin-top:1.1em;background:transparent;border:none;padding:0;cursor:pointer;font-family:var(--U);font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.14em;color:var(--mustard-text);transition:opacity .2s}
 .quote-share__btn:hover{opacity:.65}
 
+/* The essay page (ArticleDetail, U04). Desktop keeps its air; on a phone the
+   essay's first sentence is on the first screen: a 16px gutter, a smaller
+   standfirst, less space between the parts, and the reading tools in one row
+   (the visible "Text size" word goes; the group keeps it as its name). */
+.essay-back{padding:8px var(--s-4)}
+.essay-head{padding:clamp(var(--s-4),8vw,var(--s-6)) var(--s-4) var(--s-4)}
+.essay-kicker{margin-bottom:24px}
+.essay-title{margin-bottom:24px}
+.essay-title--alone{margin-bottom:28px}
+.essay-dek{font-size:22px;line-height:1.5;margin:0 auto 28px}
+.essay-rule{margin:0 auto 20px}
+.essay-actions{margin-top:24px}
+.essay-main{padding:var(--s-6) var(--s-4)}
+.essay-tools{margin:0 auto var(--s-3)}
+.essay-contents{margin:0 auto var(--s-5)}
+/* An essay that opens on a section heading starts at the top of the column. */
+.essay-main .article-body > :first-child{margin-top:0}
+@media (max-width:760px){
+  .essay-back{padding:0 var(--s-2)}
+  /* No bottom padding: save and send (TakeItWithYou), the head's last
+     child, already carries its own space below. */
+  .essay-head{padding:var(--s-3) var(--s-2) 0}
+  .essay-kicker,.essay-title,.essay-title--alone,.essay-rule{margin-bottom:16px}
+  .essay-dek{font-size:19px;line-height:1.45;margin-bottom:20px}
+  .essay-actions{margin-top:20px}
+  .essay-main{padding:var(--s-3) var(--s-2) var(--s-6)}
+  .essay-tools{margin-bottom:var(--s-2)}
+  .essay-contents{margin-bottom:var(--s-3)}
+}
+@media (max-width:480px){
+  .essay-tools .text-size__label{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+}
+
 /* Eyebrow utility — small all-caps label with mustard rule */
 .eyebrow{display:inline-flex;align-items:center;gap:12px;font-family:var(--U);font-size:12px;font-weight:600;color:var(--mustard-text);text-transform:uppercase;letter-spacing:.18em}
 .eyebrow::before{content:"";width:32px;height:1px;background:var(--mustard)}
