@@ -1,0 +1,23 @@
+{
+  "_readme": "Grandfathered hardcoded-hex counts per file. A ratchet: CI fails if a file exceeds its count or a file without an entry gains any. Lower it with `node scripts/validate-design.mjs --update`. Never raise it by hand. See the header of scripts/validate-design.mjs.",
+  "hardcodedHex": {
+    "client/src/components/CrisisFaq.tsx": 2,
+    "client/src/components/GeneratedCover.tsx": 11,
+    "client/src/components/PillarLanding.tsx": 2,
+    "client/src/pages/landing/ChurchHistory.tsx": 7,
+    "client/src/pages/landing/ChurchHurt.tsx": 4,
+    "client/src/pages/landing/Deconstruction.tsx": 5,
+    "client/src/pages/landing/FaithCrisis.tsx": 5,
+    "client/src/pages/landing/Grief.tsx": 6,
+    "client/src/pages/landing/HonestQuestions.tsx": 6,
+    "client/src/pages/landing/MarriageCrisis.tsx": 6,
+    "client/src/pages/landing/ParentingStruggles.tsx": 7,
+    "client/src/pages/landing/PastoralBurnout.tsx": 6,
+    "client/src/pages/landing/PostChristian.tsx": 4,
+    "client/src/pages/leadership/FormationInventory.tsx": 6,
+    "client/src/pages/life/WholeLifeAssessment.tsx": 6,
+    "client/src/pages/tools/DeepBibleCompanion.tsx": 81,
+    "client/src/pages/tools/FamilyDevotionBuilder.tsx": 8,
+    "client/src/pages/tools/PastorBurnout.tsx": 6
+  }
+}

@@ -488,8 +488,8 @@ be set before the Vercel build. Auth model: bcrypt password → HMAC-SHA256
 
 ### CI gates (`.github/workflows/ci.yml`)
 
-On every PR, five blocking steps: `pnpm check` → the content-gates step (22
-validators: scripture, life, studyguides, pathways, theology, politics,
+On every PR, five blocking steps: `pnpm check` → the content-gates step (23
+validators: scripture, design, life, studyguides, pathways, theology, politics,
 no-emdash, content-integrity, skeptic-track, answers, argument-cases, links,
 needs (pages and drafts), grow-links, plans, workbooks, family, grow-voice,
 verse-guides, catalogue, bible, bible-notes) → `pnpm test` →
@@ -602,7 +602,7 @@ new work must keep:
 Real failure modes here, each framed as a guardrail.
 
 - **The parity trap.** A procedure added to `server/routers.ts` works in dev and 404s in prod. Mirror it in `api/index.ts`; run `api-parity.test.ts`. If it needs per-user `ctx.user.id`, record it in `KNOWN_PROD_GAPS` rather than ship a half.
-- **Hardcoded hex.** Breaks dark mode, the admin light scope, and every future brand change. Reference the `:root` token; add the token first for a new value.
+- **Hardcoded hex.** Breaks dark mode, the admin light scope, and every future brand change. Reference the `:root` token; add the token first for a new value. `scripts/validate-design.mjs` fails CI when a file in `client/src` holds more hex than its entry in `scripts/design-baseline.json`; after paying debt down, lock the gain in with `--update`.
 - **Mustard creep.** Mustard is punctuation, under 8% of any viewport — never a background or body color.
 - **White page backgrounds.** Cream is the room; white is for cards and inputs that must feel lifted.
 - **Bullet sludge.** Prose is the default; lists are for things that are genuinely a list.
