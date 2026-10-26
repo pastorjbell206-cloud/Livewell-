@@ -203,6 +203,14 @@ describe("validate-essays", () => {
     expect(problems("\n\n> You only have I known!\n> (Amos 3:2)")).toBe("");
   });
 
+  it("reads every reference with the shared parser (U09)", () => {
+    const shelf = loadEssayShelf();
+    const problems = (body: string) => essayProblems(essay(`Read John 3:16 slowly. ${body}`), shelf).join("\n");
+    expect(problems("Romans 3:23b, Psalm 23, 1 Peter 2:9, and Song of Songs 2:1 all exist.")).toBe("");
+    expect(problems("Psalm 151:1 does not.")).toContain('cannot read the Scripture reference "Psalm 151:1"');
+    expect(problems("Nor does John 3:18-16.")).toContain('cannot read the Scripture reference "John 3:18-16"');
+  });
+
   it("fails an essay that cites no Scripture by reference", () => {
     const { problems } = checkEssayFiles([path.join(dirs.noRef, `${PENDING}.json`)]);
     expect(problems.join("\n")).toContain("cites no Scripture by reference");

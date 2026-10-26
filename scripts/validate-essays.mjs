@@ -19,12 +19,14 @@
  *               beside it;
  *   links       every internal link reaches a public page directly: a public
  *               shelf essay, or a live route that is not a redirect;
- *   references  the essay cites Scripture by reference at least once, and a
+ *   references  the essay cites Scripture by reference at least once, each
+ *               reference names a chapter and verse its book has, and a
  *               Closing Texts line reads *"Quote."* (Reference) on one line.
  *
  * Quotations keep their own words and punctuation (scripts/lib/essay-text.mjs).
- * References are recognized by shape, not yet parsed; the shared reference
- * parser (U09) and the quotation verifier (U27) tighten this gate later.
+ * References are found by shape and read by the shared reference parser
+ * (U09, readRef in scripts/lib/bsb.mjs); the quotation verifier (U27)
+ * tightens this gate later.
  *
  *   node scripts/validate-essays.mjs                  every essay file (CI gate)
  *   node scripts/validate-essays.mjs <file|dir> ...   only these (a draft, or the seeded-file test)
@@ -35,6 +37,7 @@ import { pathToFileURL } from "node:url";
 import { ROOT, OVERRIDES_DIR, createShelf, loadEssayShelf, overrideProblems } from "./lib/shelf.mjs";
 import { resolveHref } from "./lib/site-routes.mjs";
 import { forbiddenRe, setAsideAllowed } from "./lib/forbidden-language.mjs";
+import { readRef } from "./lib/bsb.mjs";
 import {
   SCRIPTURE_REF_SOURCE,
   around,
@@ -153,6 +156,9 @@ function bodyProblems(body, excerpt, shelf) {
 
   if (!hasScriptureRef(body))
     out.push("body: cites no Scripture by reference (Book chapter:verse); a quotation travels with its reference");
+  // Each reference is read by the shared parser (U09): a chapter or verse the book does not have fails here.
+  for (const m of body.matchAll(new RegExp(SCRIPTURE_REF_SOURCE, "g")))
+    if (!readRef(m[0])) out.push(`${at(m.index)}: cannot read the Scripture reference "${m[0]}" (a chapter or verse the book does not have)`);
   for (const m of body.matchAll(ITALIC_QUOTE_LINE)) {
     const trailer = m[2];
     // A line that goes on in prose after the italic quotation is not a Closing Text.
