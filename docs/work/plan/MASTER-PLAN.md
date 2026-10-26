@@ -1143,7 +1143,7 @@ U08 owns it.
 | `verify-sources.mjs` | Every excerpt is in its stored public-domain text under `scripts/data/history-sources/`; provenance present | U07 |
 | `validate-history.mjs` | Registry integrity, citations, the page threshold, session completeness, slug and view-name collisions, generated legacy files unchanged on regeneration | U30 |
 | Quotation verifier | Section 9.4 | U27 |
-| `check-payload-budget.mjs` | Per-route JSON and JS budgets (one chapter plus the shards it opens; no unrelated indexes); warning first, blocking once green | U33 |
+| `check-payload-budget.mjs` | Per-route JSON and JS budgets (one chapter plus the shards it opens; no unrelated indexes); warning first, blocking once green | U35 |
 
 ### 9.3 The route checklist
 
@@ -1223,7 +1223,7 @@ which is why `ci.yml` audits only `/` today). Non-blocking at first.
 U08 diagnoses the home Lighthouse failure before U18 touches Home (candidates,
 unverified: the portrait served from the legacy CloudFront host,
 render-blocking CSS) and brings the portrait and other CloudFront references
-in-house. U33 makes the Study Bible's payload rule ("its own chapter and the
+in-house. U35 makes the Study Bible's payload rule ("its own chapter and the
 shards it opens") the rule for every study page, with budgets. History stops
 loading 300 KB of unrelated indexes (U31).
 
@@ -1304,9 +1304,12 @@ by writing and checking, not code.
 ### 10.3 The units, in priority order
 
 `roadmap.json` holds the same list with scope, files, dependencies, size, and
-whether a unit can run beside others. A James gate is named in the card; a
-gated unit does not start its gated part until the answer is in
-`docs/work/james/ANSWERS.md`.
+whether a unit can run beside others. `priority` there is this table's order.
+`parallelizable: false` marks the four units that rewrite shared structure
+(U01, U19, U42, U66): each runs alone in its lane and never beside the units its
+card names. Every dependency points to an earlier unit, so the list is a valid
+order to work in. A James gate is named in the card; a gated unit does not
+start its gated part until the answer is in `docs/work/james/ANSWERS.md`.
 
 | ID | Unit | Lane | Size | Depends on | Target |
 |---|---|---|---|---|---|
@@ -1973,7 +1976,7 @@ pointed. These were modified or declined:
     fold in the same PR, since the first draft had already judged them
     no-decision duplicates, with the redirects that land on `/parenting` today
     re-pointed to stay one hop.
-12. **U35's shared shell (§4.14).** Took the critique's other option: the page
+12. **The first draft's U35 shared shell (§4.14).** Took the critique's other option: the page
     head sweep is scoped to the ten most-used tools and the self-checks, and
     other pages change only when a unit touches them.
 13. **"The history essays are superseded by the course" (§4.4).** Wording
