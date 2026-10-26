@@ -1,7 +1,7 @@
 From eb4ec913a9b9f4202d9226e5b469265b4ee0947c Mon Sep 17 00:00:00 2001
 From: Claude <noreply@anthropic.com>
 Date: Mon, 26 Oct 2026 21:08:58 +0000
-Subject: [PATCH] Cleanup that needs no decision (U06)
+Subject: [PATCH 1/2] Cleanup that needs no decision (U06)
 
 Archive hazard: delete client/src/data/*-articles*.ts (20 files) and
 devotionals.ts, devotionals-2.ts. Nothing imports them (grep, then pnpm
