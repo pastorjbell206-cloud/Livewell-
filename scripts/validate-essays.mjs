@@ -54,10 +54,10 @@ export const ESSAY_FIELDS = ["slug", "title", "excerpt", "body", "updated"];
  * thing is done, never announced.
  */
 const RULEBOOK = [
-  /\bsteel[- ]?m[ae]n\w*/gi,
+  /\bsteel[- ]?man(?:s|ned|ning|ed|ing)?\b/gi,
   /\bverdicts?\b/gi,
   /\bindictments?\b/gi,
-  /\bself-implicat\w*/gi,
+  /\bself[- ]implicat\w*/gi,
   /\bboth-?sides-?ism\b/gi,
   /\bthe fair place to begin\b/gi,
   /\bdeserves to be stated the way\b/gi,
@@ -77,7 +77,7 @@ function proseProblems(field, text, strictDashes) {
   const { prose, quotes, unbalanced } = readEssayText(text);
 
   for (const i of unbalanced)
-    out.push(`${at(i)}: a quotation mark with no partner in its paragraph ${near(i)}; the gate cannot tell the quotation from the prose`);
+    out.push(`${at(i)}: a quotation mark with no partner in its paragraph ${near(i)}; the gate cannot tell the quotation from the prose (a quotation longer than a paragraph goes in a > block quote)`);
   for (const m of setAsideAllowed(prose).matchAll(forbiddenRe))
     out.push(`${at(m.index)}: Forbidden Language "${m[1]}" ${near(m.index)}`);
   for (const re of RULEBOOK)
@@ -95,8 +95,12 @@ function proseProblems(field, text, strictDashes) {
   return out;
 }
 
+/** The site by its full address (CLAUDE.md Decision Log: the www host, and the apex that 301s to it). */
+const OWN_SITE = /^https?:\/\/(?:www\.)?livewellbyjamesbell\.com?(?=[/?#]|$)/i;
+
 /** Does an internal link reach a public page directly? null when it does. */
 function linkProblem(href, shelf) {
+  if (OWN_SITE.test(href)) return `link ${href} names this site by its full address; use the path alone (${href.replace(OWN_SITE, "") || "/"}) so the gate can check it`;
   if (/^[a-z][a-z0-9+.-]*:/i.test(href)) return null; // https:, mailto: (off the site)
   if (href.startsWith("#")) return null;
   if (!href.startsWith("/") || href.startsWith("//")) return `link "${href}" is not a site path (internal links start with /)`;
@@ -113,7 +117,7 @@ function linkProblem(href, shelf) {
     if (seen === "shelf") return null;
     const r = resolveHref(path);
     if (r.status === "redirect") return `link ${href} redirects to ${r.to}; link there directly`;
-    return `link ${href} is not a public essay (${seen === "pending" ? "on the shelf with no rewrite yet" : "not on the shelf, so retired"})`;
+    return `link ${href} is not a public essay (${seen === "pending" ? "on the shelf with no rewrite yet" : "not on the shelf: retired, or a newer post the gate cannot see"})`;
   }
   const r = resolveHref(path);
   if (r.status === "ok") return null;
@@ -127,8 +131,11 @@ function bodyProblems(body, excerpt, shelf) {
   const out = [];
   const at = (i) => `body line ${lineAt(body, i)}`;
 
-  for (const m of body.matchAll(/^[ \t]{0,3}#[ \t]/gm))
+  for (const m of body.matchAll(/^[ \t]{0,3}#(?:[ \t]|$)/gm))
     out.push(`${at(m.index)}: an H1 heading; the page sets the title as the only H1, so sections use ##`);
+  // The other way to write an H1: a line underlined with "=".
+  for (const m of body.matchAll(/^[ \t]{0,3}[^\s>#-][^\n]*\n[ \t]{0,3}=+[ \t]*$/gm))
+    out.push(`${at(m.index)}: an H1 heading (underlined with =); the page sets the title as the only H1, so sections use ##`);
 
   const plain = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
   const first = body.split(/\n[ \t]*\n/).map((b) => b.trim()).find((b) => b && !b.startsWith("#"));

@@ -12,9 +12,11 @@
  * exclamation point may stand only inside quoted Scripture.
  *
  * A quotation is text between double quotation marks, straight or curly,
- * inside one paragraph, or a Markdown block quote (a paragraph that opens
- * with ">"). Single quotation marks are a quotation inside a quotation and
- * need no pairing of their own.
+ * inside one paragraph, or a Markdown block quote (from a line that opens
+ * with ">" to the end of its paragraph, as the renderer reads it). A block
+ * quote's attribution line ("> — Amos 3:2") is ours, not the quotation's, so
+ * it stays prose. Single quotation marks are a quotation inside a quotation
+ * and need no pairing of their own.
  *
  * Scripture references are recognized by shape here (a book name from
  * client/public/bible/books.json, then chapter and verse), not parsed. The
@@ -22,9 +24,37 @@
  * with a real parse.
  */
 import { readFileSync } from "node:fs";
-import { join } from "node:path";
+import { dirname, join } from "node:path";
+import { fileURLToPath } from "node:url";
 
-const ROOT = new URL("../..", import.meta.url).pathname;
+const ROOT = join(dirname(fileURLToPath(import.meta.url)), "../..");
+
+// ── Scripture references, by shape ─────────────────────────────────────────
+const bookNames = JSON.parse(readFileSync(join(ROOT, "client/public/bible/books.json"), "utf8")).map((b) => b.name);
+const BOOKS = [...new Set([...bookNames, "Psalm", "Song of Songs"])]
+  .sort((a, b) => b.length - a.length)
+  .map((n) => n.replace(/ /g, "\\s"));
+const VERSES = String.raw`\d{1,3}:\d{1,3}[a-c]?(?:[-–](?:\d{1,3}:)?\d{1,3}[a-c]?)?(?:,\s?\d{1,3}[a-c]?(?:[-–]\d{1,3}[a-c]?)?)*`;
+const CHAPTERS = String.raw`\d{1,3}(?:[-–]\d{1,3})?`;
+/** A Scripture reference by shape: "Luke 19:41–42", "1 Peter 2:9", "Psalm 23", "Hebrews 11:13, 16". */
+export const SCRIPTURE_REF_SOURCE = String.raw`(?<![A-Za-z0-9])(?:${BOOKS.join("|")})\.?\s(?:${VERSES}|${CHAPTERS})(?!\d|:\d)`;
+const REF = new RegExp(SCRIPTURE_REF_SOURCE);
+
+/** Does the text carry a Scripture reference anywhere? */
+export function hasScriptureRef(text) {
+  return REF.test(text);
+}
+
+/** A dash typed to attribute a quotation ("— Amos 3:2"). */
+const ATTRIBUTION_DASH = String.raw`(?:—|–|--)`;
+/**
+ * The end of a block quote that attributes it rather than quotes: a last line
+ * opening with a dash ("> — Amos 3:2"), or a dash and a Scripture reference
+ * closing the last line ("> … earth. — Amos 3:2").
+ */
+const BLOCK_ATTRIBUTION = new RegExp(
+  String.raw`(?:\n[ \t]{0,3}(?:>[ \t]?)?[ \t]*${ATTRIBUTION_DASH}[^\n]*|[ \t]+${ATTRIBUTION_DASH}[ \t]*${SCRIPTURE_REF_SOURCE}[^\n]*)$`
+);
 
 /** A character-for-character copy with [start, end) blanked (newlines kept). */
 function blank(chars, start, end) {
@@ -57,28 +87,35 @@ export function maskQuotations(text) {
   const unbalanced = [];
   // Paragraphs are separated by blank lines; with one capture group, split()
   // puts the separators at the odd indexes.
-  const parts = text.split(/(\n[ \t]*\n)/);
+  const parts = text.split(/(\n[ \t\r]*\n)/);
   let offset = 0;
   for (let p = 0; p < parts.length; p++) {
     const block = parts[p];
     const base = offset;
     offset += block.length;
     if (p % 2 === 1 || !block.trim()) continue;
-    const lead = block.length - block.trimStart().length;
-    if (block[lead] === ">") {
-      // A block quote (lazy continuation lines included): someone else's words.
-      const end = block.trimEnd().length;
-      quotes.push({ start: base + lead, end: base + end, text: block.slice(lead, end).replace(/^[ \t]*>[ \t]?/gm, ""), block: true });
-      blank(chars, base + lead, base + end);
-      continue;
+
+    // A block quote runs from a line that opens with ">" to the end of the
+    // paragraph (lazy continuation lines included); it may also interrupt a
+    // paragraph of prose. Someone else's words, less any attribution line.
+    const bq = /(?:^|\n)[ \t]*>/.exec(block);
+    const proseEnd = bq ? bq.index : block.length;
+    if (bq) {
+      const start = bq.index + bq[0].length - 1;
+      let end = block.trimEnd().length;
+      const attribution = BLOCK_ATTRIBUTION.exec(block.slice(start, end));
+      if (attribution) end = start + attribution.index;
+      quotes.push({ start: base + start, end: base + end, text: block.slice(start, end).replace(/^[ \t]*>[ \t]?/gm, ""), block: true });
+      blank(chars, base + start, base + end);
     }
+
     let open = -1;
     const close = (i) => {
       quotes.push({ start: base + open, end: base + i + 1, text: block.slice(open + 1, i), block: false });
       blank(chars, base + open, base + i + 1);
       open = -1;
     };
-    for (let i = 0; i < block.length; i++) {
+    for (let i = 0; i < proseEnd; i++) {
       const c = block[i];
       if (c === "“") {
         if (open < 0) open = i;
@@ -104,24 +141,9 @@ export function readEssayText(text) {
   return maskQuotations(maskLinkTargets(text));
 }
 
-// ── Scripture references, by shape ─────────────────────────────────────────
-const bookNames = JSON.parse(readFileSync(join(ROOT, "client/public/bible/books.json"), "utf8")).map((b) => b.name);
-const BOOKS = [...new Set([...bookNames, "Psalm", "Song of Songs"])]
-  .sort((a, b) => b.length - a.length)
-  .map((n) => n.replace(/ /g, "\\s"));
-const VERSES = String.raw`\d{1,3}:\d{1,3}[a-c]?(?:[-–](?:\d{1,3}:)?\d{1,3}[a-c]?)?(?:,\s?\d{1,3}[a-c]?(?:[-–]\d{1,3}[a-c]?)?)*`;
-const CHAPTERS = String.raw`\d{1,3}(?:[-–]\d{1,3})?`;
-/** A Scripture reference by shape: "Luke 19:41–42", "1 Peter 2:9", "Psalm 23", "Hebrews 11:13, 16". */
-export const SCRIPTURE_REF_SOURCE = String.raw`(?<![A-Za-z0-9])(?:${BOOKS.join("|")})\.?\s(?:${VERSES}|${CHAPTERS})(?!\d|:\d)`;
-const REF = new RegExp(SCRIPTURE_REF_SOURCE);
-
-/** Does the text carry a Scripture reference anywhere? */
-export function hasScriptureRef(text) {
-  return REF.test(text);
-}
-
 const REF_PAREN = new RegExp(String.raw`\([^()]*${SCRIPTURE_REF_SOURCE}[^()]*\)`);
 const REF_AFTER = new RegExp(String.raw`^[*_.,;:!?\s]{0,6}\(([^()]{1,80})\)`);
+const REF_ATTRIBUTED = new RegExp(String.raw`^[*_.,;:!?\s]{0,6}(?:>[ \t]?)?[ \t]*${ATTRIBUTION_DASH}[ \t]*${SCRIPTURE_REF_SOURCE}`);
 const REF_BEFORE = new RegExp(String.raw`${SCRIPTURE_REF_SOURCE}\)?[*_]*[,:.]?\s*[*_]*$`);
 
 /**
@@ -129,11 +151,14 @@ const REF_BEFORE = new RegExp(String.raw`${SCRIPTURE_REF_SOURCE}\)?[*_]*[,:.]?\s
  * parenthetical reference right after the closing mark ("…" (Luke 19:41–42),
  * *"…"* (Amos 3:2)), or a reference right before the opening one
  * (Psalm 33:12: "…"). A block quote may also end on its parenthetical
- * reference.
+ * reference. A dash attribution after it ("— Amos 3:2") names the reference
+ * too, though the dash itself still fails the em-dash rule.
  */
 export function hasReferenceBeside(text, quote) {
-  const after = text.slice(quote.end, quote.end + 100).match(REF_AFTER);
+  const following = text.slice(quote.end, quote.end + 100);
+  const after = following.match(REF_AFTER);
   if (after && REF.test(after[1])) return true;
+  if (REF_ATTRIBUTED.test(following)) return true;
   if (REF_BEFORE.test(text.slice(Math.max(0, quote.start - 100), quote.start))) return true;
   if (quote.block) {
     const lines = quote.text.trimEnd().split("\n");

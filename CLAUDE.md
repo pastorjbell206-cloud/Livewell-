@@ -490,9 +490,9 @@ be set before the Vercel build. Auth model: bcrypt password → HMAC-SHA256
 
 On every PR, five blocking steps: `pnpm check` → the content-gates step (23
 validators: scripture, life, studyguides, pathways, theology, politics,
-no-emdash, content-integrity, skeptic-track, answers, argument-cases, links,
-needs (pages and drafts), grow-links, plans, workbooks, family, grow-voice,
-essays, verse-guides, catalogue, bible, bible-notes) → `pnpm test` →
+no-emdash, essays, content-integrity, skeptic-track, answers, argument-cases,
+links, needs (pages and drafts), grow-links, plans, workbooks, family,
+grow-voice, verse-guides, catalogue, bible, bible-notes) → `pnpm test` →
 `pnpm build` → the canonical audit (sitemap +
 prerender + `audit:canonicals`). A separate, non-blocking `quality` job runs
 Lighthouse + axe against the built site. Keep all five blocking steps green.

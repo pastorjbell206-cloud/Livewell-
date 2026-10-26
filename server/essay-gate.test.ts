@@ -18,7 +18,8 @@ import {
   maskQuotations,
   readEssayText,
 } from "../scripts/lib/essay-text.mjs";
-import { checkEssayFiles } from "../scripts/validate-essays.mjs";
+import { checkEssayFiles, essayProblems } from "../scripts/validate-essays.mjs";
+import { loadEssayShelf } from "../scripts/lib/shelf.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const run = (script: string, ...args: string[]) =>
@@ -135,6 +136,15 @@ describe("essay-text helpers", () => {
   it("never reads a link target as prose", () => {
     expect(readEssayText("See [this](/writing/the-journey-home).").prose).not.toContain("journey");
   });
+
+  it("reads a block quote that interrupts a paragraph, and keeps its attribution line as prose", () => {
+    const t = "Paul wrote:\n> as a beloved brother—especially to me\n> — Philemon 16";
+    const { prose, quotes } = readEssayText(t);
+    expect(quotes).toHaveLength(1);
+    expect(quotes[0].text).not.toContain("Philemon");
+    expect(dashesIn(prose).map((d) => prose.slice(d.index, d.index + 12))).toEqual(["— Philemon 1"]);
+    expect(hasReferenceBeside(t, quotes[0])).toBe(true);
+  });
 });
 
 describe("validate-essays", () => {
@@ -179,6 +189,18 @@ describe("validate-essays", () => {
     const dir = fs.mkdtempSync(path.join(tmp, "prose-"));
     fs.writeFileSync(path.join(dir, `${PENDING}.json`), JSON.stringify({ ...data, body: `${data.body}\n${line}\n` }));
     expect(checkEssayFiles([path.join(dir, `${PENDING}.json`)]).problems).toEqual([]);
+  });
+
+  it("holds the edges: ordinary words pass, the full site address and an underlined H1 fail", () => {
+    const shelf = loadEssayShelf();
+    const problems = (body: string) => essayProblems(essay(`Read John 3:16 slowly. ${body}`), shelf).join("\n");
+    expect(problems("The steel manufacturing towns of Ohio emptied.")).toBe("");
+    expect(problems("That is self implication.")).toContain('rulebook leakage "self implication"');
+    expect(problems("Steelmanning it would help.")).toContain('rulebook leakage "Steelmanning"');
+    expect(problems(`Read [it](https://www.livewellbyjamesbell.co/writing/${LIVE}).`)).toContain(`use the path alone (/writing/${LIVE})`);
+    expect(problems("\n\nA Second Title\n=====\n\nMore.")).toContain("underlined with =");
+    expect(problems("\n\n> You only have I known.\n> — Amos 3:2")).toContain("em-dash");
+    expect(problems("\n\n> You only have I known!\n> (Amos 3:2)")).toBe("");
   });
 
   it("fails an essay that cites no Scripture by reference", () => {
